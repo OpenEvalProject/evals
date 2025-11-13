@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.29222.001 Eye movements provide insights about a wide range of brain functions, from sensorimotor integration to cognition; hence, the measurement of eye movements is an important tool in neuroscience research. We describe a method, based on magnetic sensing, for measuring eye movements in head-fixed and freely moving mice. A small magnet was surgically implanted on the eye, and changes in the magnet angle as the eye rotated were detected by a magnetic field sensor. Systematic testing demonstrated high resolution measurements of eye position of <0.1°. Magnetic eye tracking offers several advantages over the well-established eye coil and video-oculography methods. Most notably, it provides the first method for reliable, high-resolution measurement of eye movements in freely moving mice, revealing increased eye movements and altered binocular coordination compared to head-fixed mice. Overall, magnetic eye tracking provides a lightweight, inexpensive, easily implemented, and high-resolution method suitable for a wide range of applications.
+Eye movements provide insights about a wide range of brain functions, from sensorimotor integration to cognition; hence, the measurement of eye movements is an important tool in neuroscience research. We describe a method, based on magnetic sensing, for measuring eye movements in head-fixed and freely moving mice. A small magnet was surgically implanted on the eye, and changes in the magnet angle as the eye rotated were detected by a magnetic field sensor. Systematic testing demonstrated high resolution measurements of eye position of <0.1°. Magnetic eye tracking offers several advantages over the well-established eye coil and video-oculography methods. Most notably, it provides the first method for reliable, high-resolution measurement of eye movements in freely moving mice, revealing increased eye movements and altered binocular coordination compared to head-fixed mice. Overall, magnetic eye tracking provides a lightweight, inexpensive, easily implemented, and high-resolution method suitable for a wide range of applications.
 
 ## Introduction
 
@@ -33,9 +33,17 @@ A promising alternative to the eye coil and video-oculography techniques is an a
 
 We developed a system for measuring eye movements in mice using magnetic sensing technology. A powerful neodymium magnet was surgically implanted beneath the conjunctiva so that it rotated with the eye, and a magnetic field sensor was used to detect the resulting changes in the angle of the magnetic field.
 
-## Magnetic sensor performance outside the animal
+### Magnetic sensor performance outside the animal
 
 The performance of the magnetic eye tracking system was first tested outside the mouse, where the position of the magnet and sensor could be precisely controlled, allowing systematic comparison of different magnet-sensor alignments. Initially, a 0.75 × 2 mm cylinder magnet was positioned directly below and adjacent to the sensor, with the N-S axis of the magnet parallel to the plane of the sensor, and the magnet’s axis of rotation aligned to the center of the sensor (Figure 1A, left, with δ = 0 mm). When the magnet was rotated ±90° about an axis perpendicular to the plane of the sensor, the magnetic sensor produced a voltage that depended on the angle of the magnet (Figure 1A, center, black traces).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/29222/elife-29222-fig1-v1.jpg)
+
+**Figure 1.:** (A) Output of the magnetic sensor when a 0.75 × 2 mm cylinder magnet was rotated by a servo-controlled motor. Left, Schematic showing the relative position and orientation of the magnet and sensor, the axis of magnet rotation (dashed line and arrow) and the dimension along which magnet position was varied (δ, red arrow). Middle, Output from each channel of the magnetic sensor as vertical distance (δ) between the magnet and the surface of the sensor was varied from 0 mm (black) to 5 mm (light grey) (n = 5 repeated measurements). Right, Sensitivity of each channel of the magnetic sensor at each distance from the magnet. In this and all panels, SEM for repeated measurements was smaller than the symbol size. (B) Same as in (A), but the magnet was offset horizontally (δ) from both its axis of rotation and the center of the sensor. Vertical distance was fixed at 3 mm. (C) Same as in (B), but the sensor was offset horizontally from the center of the magnet, which rotated about its center. (D) Same as in (B), but comparing horizontal orientation of the magnet as in (A) with a 45° tilt relative to the plane of the sensor (p=0.168, n = 5 repeated measurements, two sample t-test). Vertical distance between the center of the magnet and the sensor was fixed at 3 mm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/29222/elife-29222-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Output of the magnetic sensor when a 1.5 × 0.5 mm disc magnet was rotated by a servo-controlled motor. Left, schematic of magnet-sensor orientation. Middle, output from each channel of the magnetic sensor as the vertical distance (δ) between the magnet and the surface of the sensor was varied from 0 mm (black) to 5 mm (light grey) (n = 5 repeated measurements). Right, sensitivity of each channel of the magnetic sensor at each distance from the magnet. (B) Same as in (A), but the magnet was horizontally offset (δ) from both its axis of rotation and the center of the sensor.
 
 The magnetic sensor we used has two channels, which relay output from two sets of magnetoresistive elements at a 45° orientation relative to each other, so that the position tuning of the two channels is offset by 45° (Figure 1A, center). Hence, during normal eye movements in mice, which are typically within ±10–20° (van Alphen et al., 2010), at least one of the two channels should operate close to its range of greatest sensitivity and linearity (near 0° for Channel 1, and 45° for Channel 2 in Figure 1A, center).
 
@@ -45,7 +53,7 @@ In addition to characterizing how sensitivity varied with the vertical distance 
 
 Finally, we tested the effect of tilting the N-S axis of the magnet relative to the plane of the sensor, which also may occur during implantation. Tilting the magnet by 45° did not affect sensitivity (127.8 ± 4 mV/° no tilt, 128.0 ± 2.0 mV/° with 45° tilt, Figure 1D).
 
-## Magnetic tracking of eye movements in mice
+### Magnetic tracking of eye movements in mice
 
 After characterizing the performance of the magnetic eye tracking system outside the mouse, we implemented magnetic eye tracking in head-fixed mice. A cylinder magnet was surgically implanted beneath the conjunctiva on the temporal margin of one eye, with the N-S axis aligned so that it created a rotating magnetic field during horizontal (nasal-temporal) eye movements (Figure 2A; see Materials and methods). A magnetic sensor was affixed to the skull in a plane roughly parallel to the nasal-temporal axis of the eye. The head was restrained, via a surgically implanted head post, with the nasal-temporal axis of the eye in an earth-horizontal plane.
 
@@ -57,7 +65,7 @@ The ability of the magnetic eye tracking system to detect eye movements was test
 
 The magnetic eye tracking approach was also effective at detecting visually-driven eye movements in head-fixed mice. The optokinetic reflex (OKR) drives image-stabilizing eye movements in response to motion of a visual stimulus, in mice (Iwashita et al., 2001; Katoh et al., 1998) as in other species. Accordingly, when a striped drum was rotated around the mouse, the magnetic sensor detected robust eye movements driven by the OKR, at all stimulus frequencies tested (0.2 Hz–5 Hz; Figure 2C). Thus, the magnetic eye tracking system can detect both vestibularly- and visually-driven eye movements in head-fixed mice.
 
-## Calibration of magnetic eye tracking using dual-angle video-oculography
+### Calibration of magnetic eye tracking using dual-angle video-oculography
 
 To convert the raw output of the magnetic sensor (in volts) to eye position (in degrees), we developed an inexpensive yet accurate calibration system based on video-oculography. A major motivation for developing magnetic eye tracking in mice was to overcome the limitations of video-oculography, such as its limited spatial resolution and the incompatibility with free motion of the animal, which restrict its use for certain applications. However, these limitations do not preclude the use of video-oculography for calibration of the magnetic sensor.
 
@@ -79,9 +87,9 @@ An alternative method of calibration can be used in applications in which eye ve
 
 To assess the robustness of magnetic eye tracking over time, eight mice were repeatedly calibrated each day for a week, using the velocity method. The reciprocal of the calibration factor represents the in vivo sensitivity of the magnetic sensor in mV/° (the slope in Figure 4B, left). On average, the sensitivity of the magnetic sensor decreased by only 4.2% after one week (Figure 4E, left). Even after many months, the magnetic implants were remarkably robust. In a population of ten mice recorded 5–7 months after implantation, only two had unusable eye movement signals. In the remainder, sensitivity was lower than on the first day it was measured, but still suitable for eye tracking measurements (Figure 4E, right).
 
-Although the implants were robust over many months, the calibration factors could fluctuate from day to day in individual mice. To quantify this, the absolute value of the percent change in the calibration factor k, relative to the calibration factor value on Day 1, was calculated for each day in each mouse: Δkn=|kn−k1|k1⋅100%, where kn is the calibration factor on Day n. On average, there was gradual drift in the calibration factors from their original values over time (Δkn increased with the number of days since original calibration; Figure 4F), indicating that regular recalibration is important to maintain accuracy.
+Although the implants were robust over many months, the calibration factors could fluctuate from day to day in individual mice. To quantify this, the absolute value of the percent change in the calibration factor k, relative to the calibration factor value on Day 1, was calculated for each day in each mouse: $Δk_{n}=\frac{|k_{n}−k_{1}|}{k_{1}}⋅100%$, where $k_{n}$ is the calibration factor on Day n. On average, there was gradual drift in the calibration factors from their original values over time ($Δk_{n}$ increased with the number of days since original calibration; Figure 4F), indicating that regular recalibration is important to maintain accuracy.
 
-## Linearity and spatial resolution of the magnetic eye tracking system
+### Linearity and spatial resolution of the magnetic eye tracking system
 
 We benchmarked magnetic eye tracking against the well-established eye coil technique, by quantifying the linearity and spatial resolution of each technique. Because the dual-angle video-oculography system reports eye position with a high degree of linearity (Figure 3C), the linearity of the magnetic and eye coil systems was assessed by regressing each signal against video-derived eye position, recorded simultaneously during vestibularly-driven eye movements in the light. Both eye coil and magnetic systems were highly correlated with the video system, and the correlation coefficient for the magnetic system was comparable to that for the eye coil system (Figure 5A), indicating a similar level of linearity.
 
@@ -93,11 +101,23 @@ The spatial resolution of the magnetic and eye coil systems was also compared. 
 
 There has been controversy about whether eye coil implants alter eye movements in mice (Boyden et al., 2006; Stahl et al., 2000; van Alphen et al., 2001). To evaluate whether the magnet implant has any effect on eye movements, video-oculography was used to compare the eye movements measured one day before versus six days after implantation of the magnet and sensor. Eye movement responses to vestibular stimuli at a range of stimulus frequencies were measured in the dark. Because the eye movements driven by the vestibulo-ocular reflex (VOR) in the dark are open-loop, they should provide a particularly sensitive measure of any disruption of normal oculomotor dynamics. Neither the gain nor the phase of the eye movement responses were altered after magnet implantation (Figure 6). Likewise, the eye movements elicited by combined vestibular and visual inputs were unaltered by magnet implantation (Figure 6—figure supplement 1). The gain and phase of the VOR measured with magnetic eye tracking (Figure 6, dashed, blue lines) were in the range reported previously in mice by our laboratory (Kimpo and Raymond, 2007) and other laboratories (Iwashita et al., 2001; van Alphen et al., 2001), as were the gain and phase of the visually driven eye movements elicited by an optokinetic stimulus at a range of frequencies (Figure 6—figure supplement 2; Iwashita et al., 2001; Kimpo and Raymond, 2007; Tabata et al., 2010; van Alphen et al., 2001, 2009, 2010). Thus, magnet implantation had no detectable effect on oculomotor behavior.
 
-## Bilateral eye movement recordings
+![Figure 6.](https://cdn.elifesciences.org/articles/29222/elife-29222-fig6-v1.jpg)
+
+**Figure 6.:** The gain (left) and phase (right) of the eye movement responses to vestibular stimuli, before (black) and six days after (blue) implantation of the magnet and sensor, measured using video-oculography with infrared illumination in otherwise complete darkness (solid lines). There was no effect of magnet implantation on either the gain or the phase of the VOR (p=0.725 gain, p=0.350 phase, for main effect of pre- vs post-implantation; p=0.497 gain, p=0.469 phase, for interaction with vestibular stimulus frequency; two-way repeated measures ANOVA, n = 8 mice). The gain and phase of the VOR measured simultaneously with magnetic eye tracking (post-implantation) are shown as well (blue, dashed lines).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/29222/elife-29222-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The gain (left) and phase (right) of the eye movement responses to the combined vestibular and visual input provided by head rotations in an illuminated visual surround was measured using video-oculography (solid lines) before (black) and after (black) implantation of the magnet and sensor. There was no effect of magnet implantation on either the gain or the phase of the eye movements (p=0.447 gain, p=0.794 phase, for main effect of pre- vs post-implantation; p=0.618 gain, p=0.488 phase, for interaction with vestibular stimulus frequency; two-way repeated measures ANOVA, n = 8 mice). The gain and phase of the eye movements measured simultaneously with magnetic eye tracking (post-implantation) are shown also (blue, dashed lines). The visual input included both a mouse-stationary video apparatus, which would tend to suppress the eye movements driven by the vestibular stimulus, and an earth-stationary visual surround, which would tend to enhance the eye movements driven by the vestibular stimulus.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/29222/elife-29222-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** The gain (left) and phase (right) of the OKR elicited by rotation of a random checkerboard patterned drum around the mouse, measured using the magnetic eye tracking system (n = 6 mice).
+
+### Bilateral eye movement recordings
 
 The coordination of movements of the two eyes can influence visual experience. We assessed the suitability of magnetic eye tracking for simultaneously measuring the movements of both eyes of a mouse. Specifically, we tested whether there was interference created by the magnet in one eye influencing the sensor over the opposite eye. In three mice, a magnet was implanted in only one eye, while sensors were implanted above both eyes. The signals from both sensors were recorded during eye movements elicited by a sinusoidal vestibular stimulus (1 Hz, ±10°/s). The amplitude of the signal in the sensor contralateral to the eye with the magnet was only 2.7 ± 0.9% of that in the ipsilateral sensor, indicating limited crosstalk. Therefore, magnetic eye tracking allows simultaneous recording from both eyes, making it possible to analyze binocular coordination in mice.
 
-## Eye movement recordings in freely moving mice
+### Eye movement recordings in freely moving mice
 
 The small size and weight of the magnetic eye tracking system provided an opportunity to record eye movements in freely moving mice. Horizontal eye movements were recorded bilaterally for 5–10 min as mice explored a 12" arena surrounded by a stationary, vertically-striped visual stimulus. The eye movements recorded in this freely moving condition were compared with the eye movements recorded in the same mice while they were restrained in the center of the arena using their surgically implanted headpost. Overall, mice moved their eyes more when unrestrained, as evident in raw eye position traces (Figure 7A) and in scatterplots of eye position and eye velocity (Figure 7B,D) from individual mice. On average, freely moving mice displayed a two-fold increase in the standard deviation of eye position (Figure 7C), as well as a four-fold increase in the mean speed of the eye (Figure 7E) compared to head-fixed mice.
 
@@ -115,7 +135,7 @@ Not only were the motion statistics of individual eyes altered in freely moving 
 
 Magnetic eye tracking opens up exciting new scientific opportunities by providing a high-resolution (<0.1°) method for measuring eye movements that overcomes the challenging physical constraints of small and freely moving animals. The methods described here extend previous reports of magnetic eye tracking (Rodríguez et al., 2001; Salas et al., 1999; Schwarz et al., 2013) by miniaturizing the implant for use in mice, increasing the resolution, assessing tolerance for various magnet-sensor alignments, and improving the calibration procedure. Magnetic eye tracking has important advantages over the commonly used eye coil and video-oculography techniques, and hence could replace these older techniques in many current applications. We developed the magnetic eye tracking system in mice due to the widespread use of this species, but there are no obvious barriers to extending this technique into larger species, such as rats or monkeys. A larger eye and orbit may require that the sensor be implanted farther away from the magnet, however, this should be offset by the ability to implant a larger magnet.
 
-## Comparison to the eye coil
+### Comparison to the eye coil
 
 Magnetic eye tracking achieved performance similar to that of the eye coil technique, which is widely considered the gold standard for measuring eye movements (Robinson, 1963). The spatial resolution of magnetic eye tracking (0.098°) was comparable to the resolution of the eye coil technique in mice, as measured by our lab (0.091°; Figure 5B) and other labs (0.09°, Stahl et al., 2000), and was also comparable to the resolution of the eye coil technique in larger species such as monkeys (<0.1°, Kimmel et al., 2012) and humans (0.096°, Houben et al., 2006). Further, the linearity of magnetic eye tracking was indistinguishable from that of the eye coil technique (Figure 5A).
 
@@ -129,7 +149,7 @@ We replicated the general finding of an increase in VOR gain and decrease in OKR
 
 Magnetic eye tracking has many advantages, but also some disadvantages relative to the eye coil method. One current limitation is that the magnet-sensor configuration we used measures angular eye position about only one axis. A single axis is sufficient for many applications (Iwashita et al., 2001; Kimpo et al., 2014; Koyama et al., 2004; Medrea and Cullen, 2013; Prusky et al., 2004; Wurtz, 1968), moreover further development to incorporate either a second sensor or a 3D magnetic field sensor should enable simultaneous measurement of eye movements along multiple axes simultaneously. A second disadvantage of magnetic eye tracking is that it requires a separate calibration device, whereas the eye coils can be calibrated by rotating the external magnetic field coils relative to the mouse. Early efforts at magnetic eye tracking employed an invasive calibration method involving physical rotation of the eye using a needle under a microscope (Rodríguez et al., 2001; Salas et al., 1999). We have minimized the difficulty of the calibration step by developing a rapid (<10 min), accurate, noninvasive calibration procedure using an improved video-oculography method, which can be performed in awake mice.
 
-## Dual-angle video-oculography
+### Dual-angle video-oculography
 
 Standard video-oculography approaches are challenging in mice and other afoveates because of the difficulty in estimating Rp (the distance from the plane of the pupil to the center of corneal curvature), which is typically used to determine angular eye position from video images. Rp has been approximated as the average radius of the eye in a species (Katoh et al., 1998; Mangini et al., 1985; Schwarz et al., 2013). However, this is an imperfect measure of Rp because the curvature of the cornea is different from the rest of the eye, and because the eye does not rotate exactly about its center (Stahl et al., 2000). In addition, a single Rp value doesn’t account for variation across age, gender, genotype, or individuals (Stahl et al., 2000; Wisard et al., 2010). Methods have been devised for estimating Rp in individual animals (Stahl et al., 2000; Zoccolan et al., 2010), but these methods extend the time the animal must be head-restrained for an experimental session. Most notably, the above methods assume that Rp is constant over time, whereas Rp is known to change rapidly with shifts in arousal or light intensity (Kaufman, 2002; Kimmel et al., 2012; McCamy et al., 2015; Reimer et al., 2014), which introduces inaccuracies.
 
@@ -137,7 +157,7 @@ Dual-angle video-oculography eliminates the need to estimate Rp, by calculating 
 
 Despite the improvements in video-oculography achieved by the dual-angle technique, magnetic eye tracking provides key advantages that make it preferable to video-oculography for many applications. First, the spatial resolution of magnetic eye tracking (0.1°) is superior to what has been reported for video-oculography in rodents (0.23°, Stahl et al., 2000; ~1°, Wallace et al., 2013), in monkeys (video resolution 2‒3 × worse than eye coil, Kimmel et al. (2012); McCamy et al., 2015) and in humans (0.56°, Houben et al., 2006). Second, magnetic eye tracking achieves high temporal resolution with less expense. Although some video-oculography systems can sample at 1,000 Hz, they are costly and typically sacrifice image resolution. Since the dual-angle system is used only for calibration, high-speed cameras are not required. Third, removal of the bulky video-oculography equipment after calibration allows free, unobstructed interaction of the animal with the environment during eye tracking. Technological advances have reduced the size of cameras to fit on the head of a rat (Wallace et al., 2013), but the hardware required for magnetic eye tracking is more than an order of magnitude lighter (0.05 cm3 and 0.180 g total) and is therefore trivial for a mouse to carry, allowing much greater mobility than possible with video-oculography (Kretschmer et al., 2017). Also, either the video cameras themselves, or the edges of infrared-reflective mirrors, are visible to the animal during video-oculography, limiting experimental control of the visual environment. Thus, magnetic eye tracking is preferable for experiments in which spatial resolution, low cost, unobstructed vision, or compatibility with free motion is a priority.
 
-## Applications
+### Applications
 
 Magnetic eye tracking makes it possible to obtain reliable, high-resolution measurements of eye movements in small, freely moving animals, thereby creating new opportunities for studies of sensation, motor control, and cognition under more natural conditions. Neuroscientists are increasingly interested in studying the neural basis of behavior under conditions where the animal is free to move, particularly in rodents (e.g., Licata et al., 2017; Davidson et al., 2009; Kepecs et al., 2008; Erlich et al., 2011; Jaramillo and Zador, 2014). Free motion allows animals to perform orienting movements, which are a key part of any animal’s behavioral repertoire. During visually guided behaviors, coordinated movements of the trunk, head, and eyes can direct the animal’s gaze towards relevant visual stimuli (Belton and McCrea, 1999; Erlich et al., 2011; Fang et al., 2015; Freedman and Sparks, 1997; Fuller, 1992; Mather and Baker, 1980). Body location and head direction are routinely measured during visually guided behaviors such as navigation, and have been shown to be encoded by the activity of neurons in relevant circuits (Fyhn et al., 2008; Hardcastle et al., 2017; Yoder and Taube, 2009). However, the technical challenges associated with measuring eye movements have limited the analysis of gaze control in freely moving animals. Our finding of robust eye movements in freely moving mice (Figure 7) suggests that gaze direction deviates substantially from head direction, as previously reported in rats (Wallace et al., 2013). Therefore, gaze direction may be an additional variable represented and controlled by the relevant neural circuits.
 
@@ -145,11 +165,11 @@ The magnetic eye tracking system facilitates investigation of many open question
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Magnetic eye tracking and video-oculography were performed in 35 C57BL/6 mice and two hybrid C57BL/6 × 129S1/SvImJ F2 mice. Eye coil and video-oculography recordings were made in an additional nine C57BL/6 mice. All procedures were approved by Stanford University’s Administrative Panel on Laboratory Animal Care.
 
-## Surgery
+### Surgery
 
 A plastic head post was secured to the skull with three screws and dental cement, for use in immobilizing the head. In most animals, a magnet was implanted in one or both eyes. Different magnets were assessed. Most mice were implanted with two neodymium magnets of size 0.75 × 1 mm (diameter × height, grade N50, axially magnetized, SuperMagnetMan.com), which were stacked end-to-end for a total size of 0.75 × 2 mm (weight: 6.8 mg). These magnets were coated in the biocompatible polymer parylene. The magnetic force firmly held the two magnets together, and the resulting shape is referred to as the ‘cylinder magnet’. Cylinder magnets were implanted in a single eye in 24 mice, and bilaterally in an additional seven mice. Mice were excluded from the analysis if reliable video-oculography was not possible following implantation due to scarring on the surface of the eye, or if an eye movement gain of less than 0.1 was recorded by the magnetic sensor during calibration, suggesting that the magnet-sensor alignment was inadequate. A 1.5 × 0.5 mm disc magnet was implanted in four additional mice, and performed similarly (data not shown). In pilot experiments, a smaller, 1.0 × 0.5 mm disc magnet was implanted in two mice, however, because the signals recorded using these magnets were very small (data not shown), we discontinued their use. Magnets were implanted following a procedure similar to that described previously for eye coil implantation (Boyden and Raymond, 2003). The conjunctiva was blunt dissected to form a pocket on the temporal side of the eye, slightly dorsal to the midline of the eye and anterior to the lateral rectus muscle. The magnet was inserted into this pocket using non-magnetic forceps (Dumoxel #5, FST) and the pocket was sealed shut with VetBond. To minimize any chance of obstructing or otherwise affecting vision, care was taken to implant the magnet well away from the cornea and to restrict the VetBond to the area surrounding the magnet. The cylinder magnet was implanted with the N-S axis aligned roughly perpendicular to the axis about which the eye rotates during horizontal (nasal-temporal) eye movements (Figure 2A). The disc magnet was implanted flat on the surface of the eye, with the N-S axis pointing towards the eye’s center.
 
@@ -161,19 +181,19 @@ In seven mice, magnets and magnetic sensors were implanted in both eyes. To asse
 
 In nine mice, eye coil implantation was performed as described previously (Boyden and Raymond, 2003). Recordings from all mice were made after at least five days of recovery from surgery.
 
-## Data acquisition
+### Data acquisition
 
 Differential outputs from the two magnetic sensor channels were amplified 60x by a custom preamplifier (David Profitt Engineering Services, Los Altos, CA), then digitized and stored using a Power1401 A-D converter with Spike2 software (Cambridge Electronic Design, Cambridge, England). Connections from the sensor to the amplifier were formed via an 8-pin right angle connector (Digi-Key: 609-3694-1-ND, pins; 609-3705-1-ND, socket), which could be rapidly soldered to the sensor without the need for extra wiring (total weight of sensor, solder, and connector: 180.4 mg). Magnet and eye coil data were digitally filtered with an identical 100 Hz low-pass Butterworth filter.
 
-## Magnetic sensor testing outside the animal
+### Magnetic sensor testing outside the animal
 
 Performance of different magnet-sensor configurations was first assessed outside the mouse. Magnet angle was precisely controlled using a servo-controlled turntable (angular resolution 0.053°, standard deviation at rest), and the position of the magnet relative to the sensor was controlled with a micromanipulator (Figure 1). Repeated measurements were performed by removing the magnet from the apparatus and then repositioning it. Signal strength was compared across magnet-sensor configurations by calculating the sensitivity of the magnetic sensor to the angular position of the magnet, in mV/°. For each channel of the magnetic sensor, sensitivity was averaged in a ± 22.5° range around each zero crossing of that channel’s output.
 
-## Magnetic eye tracking in head-fixed mice
+### Magnetic eye tracking in head-fixed mice
 
 To assess performance of the magnet-sensor system after implantation in mice, eye movements were elicited with vestibular and visual stimuli in head-fixed mice. The head of the mouse was restrained, via the surgically implanted head post, in a natural position with the nose tilted down approximately 30° relative to the stereotaxic plane, which put the nasal-temporal axis of the eye in a roughly earth-horizontal plane. To elicit horizontal eye movements, vestibular stimuli were delivered by a servo-controlled turntable (Ideal Aerosmith, Inc.) that rotated the mouse about an earth-vertical axis. During the freely moving experiments (Figure 7), the stationary drum surrounding the animal had black and white stripes, each subtending 7° of visual angle. For OKR measurements (Figure 6—figure supplement 2), the drum was patterned with a random checkerboard, each square colored black or white with 50% probability and subtending 3° of visual angle. The vestibular and visual stimuli had sinusoidal motion profiles, at frequencies of 0.2, 0.5, 1, 2, or 5 Hz, with ±10°/s peak velocity. The gain of the eye movements driven by the vestibular and visual stimuli was calculated by dividing the amplitude of a sinusoidal fit to the eye velocity response by the amplitude of the stimulus (10°/s).
 
-## Magnetic sensor calibration
+### Magnetic sensor calibration
 
 Magnetic eye tracking requires calibration to convert the raw voltage signals from the magnetic sensor into eye position in degrees. Calibration was performed for each mouse by comparing signals from the magnetic sensor with eye movements recorded using a dual-angle video-oculography system developed for this purpose and described below. Once calibrated, the magnetic sensor could then be used alone, without the video system, allowing for testing in complete darkness, with higher temporal resolution, and while the mouse was freely moving.
 
@@ -183,33 +203,49 @@ Eye position data derived from the video recordings were upsampled to match the 
 
 The signals from the magnetic sensor were calibrated by comparing them with either eye position or eye velocity signals derived from the video recordings. To calibrate using eye position, the eye position recorded by the video was linearly regressed on the voltage signals from the magnetic sensor. Three possible choices for the set of explanatory variables in the regression were compared (Figure 4B,C).
 
-The simplest option was to estimate eye position using each of the two magnetic sensor channels, one at a time:(1)e1^(t)=k1,1m1(t)+k2,1 and e^2(t)=k1,2m2(t)+k2,2
+The simplest option was to estimate eye position using each of the two magnetic sensor channels, one at a time:
 
-where e^1(t) and e^2(t) are the calibrated eye positions estimated fromy each channel, m1(t) and m2(t) are the voltages recorded by the two magnetic sensor channels, and k1,1, k1,2, k2,1, k2,2 are the model parameters. k1,1 and k1,2 correspond to the calibration factor for each channel, and k2,1 and k2,2 to the offset. The channel that was more strongly correlated with the video-derived eye position was then selected for further analysis.
+$$
+e_{1}^(t)=k_{1,1}m_{1}(t)+k_{2,1} and e^_{2}(t)=k_{1,2}m_{2}(t)+k_{2,2}
+$$
 
-A second method for calibrating the eye position-related signals from the magnetic sensor was to fit the video-derived eye position using both magnetic sensor channels simultaneously:(2)e^(t)=k1m1(t)+k2m2(t)+k3
+where $e^_{1}(t)$ and $e^_{2}(t)$ are the calibrated eye positions estimated fromy each channel, $m_{1}(t)$ and $m_{2}(t)$ are the voltages recorded by the two magnetic sensor channels, and $k_{1,1}, k_{1,2}, k_{2,1}, k_{2,2}$ are the model parameters. $k_{1,1}$ and $k_{1,2}$ correspond to the calibration factor for each channel, and $k_{2,1}$ and $k_{2,2}$ to the offset. The channel that was more strongly correlated with the video-derived eye position was then selected for further analysis.
 
-To avoid overfitting, given the likelihood of correlated signals between the two channels, an L2 regularization penalty was applied to penalize model parameters with large weight (ridge regression). Ten-fold cross-validation was used to select the regularization parameter that minimized squared error on the held-out data. Once the regularization parameter was thus obtained, the regression was then run on all calibration data to yield the final model parameters k1,k2, and k3.
+A second method for calibrating the eye position-related signals from the magnetic sensor was to fit the video-derived eye position using both magnetic sensor channels simultaneously:
 
-A third method for converting the signals from the magnetic sensor to an estimate of eye position included quadratic terms, to try to improve the fit should the eye position fall in a non-linear portion of the output from both channels of the sensor:(3)e^(t)=k1m1(t)+k2m2(t)+k3m1(t)2+k4m2(t)2+k5
+$$
+e^(t)=k_{1}m_{1}(t)+k_{2}m_{2}(t)+k_{3}
+$$
+
+To avoid overfitting, given the likelihood of correlated signals between the two channels, an L2 regularization penalty was applied to penalize model parameters with large weight (ridge regression). Ten-fold cross-validation was used to select the regularization parameter that minimized squared error on the held-out data. Once the regularization parameter was thus obtained, the regression was then run on all calibration data to yield the final model parameters $k_{1},k_{2}$, and $k_{3}$.
+
+A third method for converting the signals from the magnetic sensor to an estimate of eye position included quadratic terms, to try to improve the fit should the eye position fall in a non-linear portion of the output from both channels of the sensor:
+
+$$
+e^(t)=k_{1}m_{1}(t)+k_{2}m_{2}(t)+k_{3}m_{1}(t)_{}^{2}+k_{4}m_{2}(t)_{}^{2}+k_{5}
+$$
 
 This quadratic regression was cross-validated with ridge regression as described above.
 
-The recordings from the magnetic sensor could also be calibrated using signals related to eye velocity rather than eye position. The video and magnetic sensor signals related to eye position were differentiated using a 50 ms sliding window and then fit by sine waves, yielding a video-derived signal amplitude Avid (in units of °/s), and magnetic sensor-derived amplitudes Amag (in units of mV/s) for each sensor channel. The sensor channel with the higher r2 from the fit to a sine wave was selected, and its differentiated output m˙(t) was converted to eye velocity e˙^(t) using a calibration factor obtained from the ratio of Avid and Amag:(4)e˙^(t)=AvidAmagm˙(t)
+The recordings from the magnetic sensor could also be calibrated using signals related to eye velocity rather than eye position. The video and magnetic sensor signals related to eye position were differentiated using a 50 ms sliding window and then fit by sine waves, yielding a video-derived signal amplitude $A_{vid}$ (in units of °/s), and magnetic sensor-derived amplitudes $A_{mag}$ (in units of mV/s) for each sensor channel. The sensor channel with the higher r2 from the fit to a sine wave was selected, and its differentiated output $m˙(t)$ was converted to eye velocity $e˙^(t)$ using a calibration factor obtained from the ratio of $A_{vid}$ and $A_{mag}$:
+
+$$
+e˙^(t)=\frac{A_{vid}}{A_{mag}}m˙(t)
+$$
 
 Overall, the calibration procedure added less than 10 min, and typically less than 5 min, to the experiment. The procedure includes placing the mouse in the head restraint (1–2 min), positioning the video cameras (1–3 min), data collection (1–3 min), and adjustment of video-oculography software parameters (0–2 min). Once calibration was complete, the video cameras were removed from the experimental setup.
 
-## Analysis of spatial resolution
+### Analysis of spatial resolution
 
 To compare the spatial resolution of the magnetic eye tracking and eye coil techniques, calibrated eye position signals were recorded while the mouse was head-fixed in the light. Two-second epochs when the eye movements were minimal were selected for analysis. Spatial resolution was calculated as the standard deviation of eye position during each stationary epoch, with three epochs selected and averaged for each mouse.
 
-## Magnetic eye tracking in freely moving mice
+### Magnetic eye tracking in freely moving mice
 
 Seven mice implanted bilaterally with magnets and sensors were allowed to freely explore a 12" circular arena for 10–15 min (Figure 7). The stationary arena was surrounded by a stationary, illuminated, vertically-striped drum. To quantify whether the mouse’s body was actively moving or relatively still, an overhead video acquired infrared images of the mouse in the arena. A motion index was calculated by first subtracting an average background image from all frames, and then quantifying the mean absolute difference in pixel values between each frame and the next. The resulting motion trace was smoothed with a 2 s moving average to create a motion index. The upper third of motion index values were classified as ‘Active’, and the lower third were classified as ‘Still’. Eye position variability and mean eye speed measured in both eyes of a given mouse were first averaged together before comparing the population means.
 
 To measure head movements in freely moving mice, a lightweight (1.8 g) six degree-of-freedom inertial measurement unit (SEN-10121, Sparkfun Electronics) was attached to the mouse’s headpost with a screw. Roll, pitch, and yaw angles were converted into analog signals using an Arduino Mega (Arduino AG) and recorded simultaneously with eye position in Spike2.
 
-## Dual-angle video-oculography
+### Dual-angle video-oculography
 
 We developed a dual-angle video-oculography system for use in calibrating the magnetic eye tracking system. This system was designed to improve upon previous video-oculography systems in terms of accuracy, cost, and speed of use. The infrared-blocking filter was removed from two web cameras (Logitech C310) and replaced with a visible light-blocking filter. Small infrared LEDs (875 nm, radiant power 20 mW, angle of half intensity 20°, TSHA4400, Digi-Key) were positioned above each camera to create two corneal reflections (CRs), one for each camera, appearing along the radius of the cornea parallel to the axis of the camera.
 
@@ -219,20 +255,42 @@ The pupil was visualized by illuminating the cornea with infrared light, which c
 
 Images were acquired in MATLAB (The MathWorks, Inc., Natick, MA) at 30 frames per second, and were analyzed offline. The locations of the pupil center (P) and CRs in the images were extracted using modified code from OpenEyes, an open source eye tracking library (www.‌thirtysixthspan.com‌/openEyes). OpenEyes uses the Starburst algorithm to locate the pupil edges (Li and Parkhurst, 2006). We modified the code by employing a Hough transform, a feature extraction technique, to provide more accurate CR localization. The CRs were then masked before processing the pupil image to avoid false detection of pupil edges. Code is available at https://github.com/hpay/eyetrack (copy archived at https://github.com/elifesciences-publications/eyetrack).
 
-The locations of the pupil and reference CRs in the images were used to calculate eye position by leveraging the geometry of the dual-angle setup. In each camera’s image, motion of the pupil location is due to both rotation and translation of the eye relative to the camera. The component of this motion attributable to rotation alone can be isolated by subtracting the CR location from the pupil location, to yield the distances Δ1 and Δ2 (Figure 3A,B). Because the CR always appears on the radius of the cornea parallel to the axis of the camera, Δ1 and Δ2 are invariant to translations of the eye relative to the camera (Stahl et al., 2000).
+The locations of the pupil and reference CRs in the images were used to calculate eye position by leveraging the geometry of the dual-angle setup. In each camera’s image, motion of the pupil location is due to both rotation and translation of the eye relative to the camera. The component of this motion attributable to rotation alone can be isolated by subtracting the CR location from the pupil location, to yield the distances $Δ_{1}$ and $Δ_{2}$ (Figure 3A,B). Because the CR always appears on the radius of the cornea parallel to the axis of the camera, $Δ_{1}$ and $Δ_{2}$ are invariant to translations of the eye relative to the camera (Stahl et al., 2000).
 
-The distances between the pupil and the reference CRs are related to angular eye position by:(5a)Δ1=Rpsin(θ1)(6b)Δ2=Rpsin(θ2)
+The distances between the pupil and the reference CRs are related to angular eye position by:
 
-where θ1andθ2 are the angles from the axis of the respective camera to the axis of the pupil (the line connecting the center of the pupil (P) to the center of corneal curvature (C); θ1andθ2 both defined to be positive as drawn in Figure 3A), and Rp is the distance from the plane of the pupil to the center of corneal curvature (point C in Figure 3A). Taking the ratio of the two distances eliminates Rp:(7)Δ1Δ2=sin(θ1)sin(θ2)
+$$
+Δ_{1}=R_{p}sin(\theta_{1})
+$$
 
-Since θ1+θ2=40°,(8)Δ1Δ2=sin(40∘−θ2)sin(θ2)
 
-Using the trigonometric identity for angle subtraction and rearranging yields a formula for calculating angular eye position:(9)θ2=atan(sin⁡(40∘)Δ1/Δ2+cos⁡(40∘))
+
+$$
+Δ_{2}=R_{p}sin(\theta_{2})
+$$
+
+where $\theta_{1}and\theta_{2}$ are the angles from the axis of the respective camera to the axis of the pupil (the line connecting the center of the pupil (P) to the center of corneal curvature (C); $\theta_{1}and\theta_{2}$ both defined to be positive as drawn in Figure 3A), and $R_{p}$ is the distance from the plane of the pupil to the center of corneal curvature (point C in Figure 3A). Taking the ratio of the two distances eliminates Rp:
+
+$$
+\frac{Δ_{1}}{Δ_{2}}=\frac{sin(\theta_{1})}{sin(\theta_{2})}
+$$
+
+Since $\theta_{1}+\theta_{2}=40°$,
+
+$$
+\frac{Δ_{1}}{Δ_{2}}=\frac{sin(40^{∘}−\theta_{2})}{sin(\theta_{2})}
+$$
+
+Using the trigonometric identity for angle subtraction and rearranging yields a formula for calculating angular eye position:
+
+$$
+\theta_{2}=atan(\frac{sin⁡(40^{∘})}{Δ_{1}/Δ_{2}+cos⁡(40^{∘})})
+$$
 
 In lieu of two cameras, a similar procedure could be implemented with a single camera, by using either angled mirrors or prisms to capture images of the eye from two distinct angles.
 
 The video system was validated by anesthetizing two mice with ketamine (60 mg/kg)+dexmedetomidine (1 mg/kg) and physically rotating the two-camera platform via a mechanical arm that rotated about a vertical axis aligned with the mouse’s eye. At each location, five frames were captured and the resulting measurements were averaged (Figure 3C).
 
-## Statistical analysis
+### Statistical analysis
 
 Mean ± SEM is reported for all confidence intervals. Statistical tests were conducted using Matlab. All tests were two-tailed. Two sample t-tests were used to determine if there was a difference between two groups. Paired t-tests were used to determine if a significant change occurred at different times or behavioral conditions within the same animal. To assess changes in oculomotor responses after magnet implantation, a two-way repeated measures ANOVA was conducted, with stimulus frequency and time (before vs. after magnet implantation) as factors (Figure 6). The significance level for all statistical tests was set at p<0.05. The Lilliefors test (Matlab) was used to assess normality of the data. Based on this test, all data included in the statistical tests were deemed to have been sampled from a normal distribution.

@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.06074.001 Bruton's tyrosine kinase (Btk), a Tec-family tyrosine kinase, is essential for B-cell function. We present crystallographic and biochemical analyses of Btk, which together reveal molecular details of its autoinhibition and activation. Autoinhibited Btk adopts a compact conformation like that of inactive c-Src and c-Abl. A lipid-binding PH-TH module, unique to Tec kinases, acts in conjunction with the SH2 and SH3 domains to stabilize the inactive conformation. In addition to the expected activation of Btk by membranes containing phosphatidylinositol triphosphate (PIP 3 ), we found that inositol hexakisphosphate (IP 6 ), a soluble signaling molecule found in both animal and plant cells, also activates Btk. This activation is a consequence of a transient PH-TH dimerization induced by IP 6 , which promotes transphosphorylation of the kinase domains. Sequence comparisons with other Tec-family kinases suggest that activation by IP 6 is unique to Btk. DOI: http://dx.doi.org/10.7554/eLife.06074.001
+Bruton's tyrosine kinase (Btk), a Tec-family tyrosine kinase, is essential for B-cell function. We present crystallographic and biochemical analyses of Btk, which together reveal molecular details of its autoinhibition and activation. Autoinhibited Btk adopts a compact conformation like that of inactive c-Src and c-Abl. A lipid-binding PH-TH module, unique to Tec kinases, acts in conjunction with the SH2 and SH3 domains to stabilize the inactive conformation. In addition to the expected activation of Btk by membranes containing phosphatidylinositol triphosphate (PIP3), we found that inositol hexakisphosphate (IP6), a soluble signaling molecule found in both animal and plant cells, also activates Btk. This activation is a consequence of a transient PH-TH dimerization induced by IP6, which promotes transphosphorylation of the kinase domains. Sequence comparisons with other Tec-family kinases suggest that activation by IP6 is unique to Btk.
 
 ## Introduction
 
@@ -31,15 +31,15 @@ Activation of B- and T-lymphocytes relies on a chain of tyrosine phosphorylation
 
 Btk is present in all hematopoietic cells, except for T-cells and natural killer cells (Tsukada et al., 1993; Lindvall et al., 2005). It is also part of several other receptor-mediated signaling networks, including those initiated by Toll-like receptors (Jefferies et al., 2003), Fc receptors (Kawakami et al., 1994), and G-protein coupled receptors (Tsukada et al., 1994; Bence et al., 1997). Btk is critical for the generation of calcium flux in response to receptor activation, because it activates phospholipase C-γ2 (PLC-γ2), which produces the second messengers diaceylglycerol (DAG) and inositol (1,4,5)-trisphosphate (IP3). Btk dysfunction is the cause of X-linked agammaglobulinemia, a severe disease of primary immunodeficiency (Tsukada et al., 1993).
 
-The Tec family kinases have a lipid-interaction module attached to the N terminus of a Src-like module (i.e., concatenation of an SH3 domain, an SH2 domain and a tyrosine kinase domain) (
+The Tec family kinases have a lipid-interaction module attached to the N terminus of a Src-like module (i.e., concatenation of an SH3 domain, an SH2 domain and a tyrosine kinase domain) (Figure 1A). Like the non-receptor tyrosine kinase c-Abl, the Tec kinases lack a C-terminal tyrosine phosphorylation site that in Src kinases engages the SH2 domain in an autoinhibitory interaction (Sicheri et al., 1997; Xu et al., 1997; Nagar et al., 2003). The lipid-interaction module of the Tec kinases is an extended plekstrin homology (PH) domain fused to a Tec homology (TH) domain (Hyvönen and Saraste, 1997). The PH-TH binds PIP3 in membranes, or the soluble head group of PIP3, inositol tetrakisphosphate (IP4), in solution. A flexible linker connects the PH-TH module to the Src-like module; its length varies from 26 residues in Itk, the Tec family kinase in T-cells, to 45 residues in Btk.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/06074/elife-06074-fig1-v2.jpg)
 
-**Figure 1.:** (A) Domain architectures of Btk, c-Abl, and c-Src. (B) Model for the Src-like module of Btk, based on the crystal structure of the domain-swapped dimer. (C) Comparison of the Src-like modules of Btk and c-Abl (PDB: 1OPK) (Nagar et al., 2003), superimposed on the C lobes of the kinase domains. There is a relative rotation of about 15° for the SH2 domains and 20° for the SH3 domains for the two structures. (D) Details of the SH3/SH2-kinase linker interface and the kinase catalytic cleft in Btk. Left panel: a cluster of hydrophobic residues on the SH3 domain packs against the polyproline type-II helix formed by the SH2-kinase linker. This type of interaction is seen in most SH3-peptide ligand complexes. Right panel: the activation loop of Btk folds into the mouth of the catalytic cleft, blocking part of the ATP-binding cleft. Glu 445, in helix αC, forms an ion pair with Lys 430 in the active conformation but is prevented from doing so in this inactive conformation by the activation loop and helix αC.DOI: http://dx.doi.org/10.7554/eLife.06074.00310.7554/eLife.06074.017Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.06074.017
+**Figure 1.:** (A) Domain architectures of Btk, c-Abl, and c-Src. (B) Model for the Src-like module of Btk, based on the crystal structure of the domain-swapped dimer. (C) Comparison of the Src-like modules of Btk and c-Abl (PDB: 1OPK) (Nagar et al., 2003), superimposed on the C lobes of the kinase domains. There is a relative rotation of about 15° for the SH2 domains and 20° for the SH3 domains for the two structures. (D) Details of the SH3/SH2-kinase linker interface and the kinase catalytic cleft in Btk. Left panel: a cluster of hydrophobic residues on the SH3 domain packs against the polyproline type-II helix formed by the SH2-kinase linker. This type of interaction is seen in most SH3-peptide ligand complexes. Right panel: the activation loop of Btk folds into the mouth of the catalytic cleft, blocking part of the ATP-binding cleft. Glu 445, in helix αC, forms an ion pair with Lys 430 in the active conformation but is prevented from doing so in this inactive conformation by the activation loop and helix αC.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/06074/elife-06074-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) The Src-like module of Btk forms a domain-swapped dimer in the crystal lattice, with one molecule per asymmetric unit. The SH3 domain and the kinase domain are intact, but the SH2 domain forms a domain-swapped dimer with another molecule. (B) Molecular details of the domain-swapped SH2 dimer in Btk and Grb2 (Schiering et al., 2000). The SH2 domain opens up at a position within the β-sheet, so that helix αB of one polypeptide chain packs against the β-sheet of the other. (C) Interactions between the SH2-kinase linker and the kinase domain. Leu 390 of the linker stabilizes the inactive conformation of the kinase domain by being sandwiched between residues Trp 421 and Tyr 461 in the kinase domain. (D) The ‘electrostatic switch’ in the Btk kinase domain. The active conformation of the Btk kinase domain is modeled from the crystal structure of Lck (PDB: 3LCK) (Yamaguchi and Hendrickson, 1996) using Modeller (Eswar et al., 2006). Activation entails a shuffling of salt-bridge and polar hydrogen-bond partners.DOI: http://dx.doi.org/10.7554/eLife.06074.004
+**Figure 1—figure supplement 1.:** (A) The Src-like module of Btk forms a domain-swapped dimer in the crystal lattice, with one molecule per asymmetric unit. The SH3 domain and the kinase domain are intact, but the SH2 domain forms a domain-swapped dimer with another molecule. (B) Molecular details of the domain-swapped SH2 dimer in Btk and Grb2 (Schiering et al., 2000). The SH2 domain opens up at a position within the β-sheet, so that helix αB of one polypeptide chain packs against the β-sheet of the other. (C) Interactions between the SH2-kinase linker and the kinase domain. Leu 390 of the linker stabilizes the inactive conformation of the kinase domain by being sandwiched between residues Trp 421 and Tyr 461 in the kinase domain. (D) The ‘electrostatic switch’ in the Btk kinase domain. The active conformation of the Btk kinase domain is modeled from the crystal structure of Lck (PDB: 3LCK) (Yamaguchi and Hendrickson, 1996) using Modeller (Eswar et al., 2006). Activation entails a shuffling of salt-bridge and polar hydrogen-bond partners.
 
 Tyrosine phosphorylation controls Btk activity. B-cell activation leads to rapid phosphorylation of Tyr 551 in the kinase domain and Tyr 223 in the SH3 domain of Btk (Park et al., 1996; Rawlings et al., 1996). Tyr 551 corresponds to the canonical phosphorylation site in the activation loop of tyrosine kinases; as expected, its phosphorylation increases Btk catalytic activity (Rawlings et al., 1996). Phosphorylation of Tyr 223 has been reported to have no apparent influence on Btk catalytic activity (Park et al., 1996; Middendorp et al., 2003). It lies within the peptide-binding groove of the SH3 domain, and its phosphorylation alters SH3 domain selectivity among binding partners (Morrogh et al., 1999; Middendorp et al., 2003).
 
@@ -53,11 +53,326 @@ We show that Btk activation by IP6 is a consequence of a transient, IP6-induced 
 
 ## Results and Discussion
 
-## Structural analysis of Btk
+### Structural analysis of Btk
 
-We have determined four crystal structures as part of this work. Two of these structures help explain how Btk is autoinhibited. These are the structures of the Btk SH3-SH2-kinase module (determined at 2.6 Å resolution) and of the PH-TH-kinase unit (determined at 1.7 Å resolution). The other two structures are of the isolated PH-TH module bound to IP6 (determined at 2.3 Å resolution) and the isolated kinase domain with mutations in the activation loop (determined at 1.6 Å). The details of the crystallographic experiments are given in Tables 1, 2.10.7554/eLife.06074.005Table 1.Data collection and refinement statisticsDOI: http://dx.doi.org/10.7554/eLife.06074.005Src-like module of mouse Btk (217-659)PH-TH-kinase unit of bovine BtkBtk PH-TH module bound to IP6Btk kinase domain with mutations in the activation loopPDB ID4XI24Y934Y944Y95Data collectionKAu(CN)2NativeNativeNative Wavelength (Å)0.94741.0001.0001.000 Space groupP 31 2 1P 2 21 21P 1P 1 a,b,c (Å)132.2, 132.2, 107.678.6, 38.3, 157.637.2, 64.0, 80.050.9, 79.0, 79.2 α,β,γ (°)90.0, 90.0, 120.090.0, 90.0, 90.082.0, 88.8, 89.890.7, 89.9, 90.0 Resolution (Å)43.2–2.650–1.743.9–2.347.9–1.6 Rsym (%)8.7 (>100)12.2 (79.7)6.0 (53.8)5.1 (71.7) I/σ(I)10.6 (1.1)17.0 (3.5)10.8 (1.2)13.2 (3.2) Completeness (%)91.9 (69.6)99.2 (98.5)94.9 (71.8)96.9 (94.7) Redundancy4.8 (3.5)7.8 (7.4)2.0 (1.7)24.4 (3.1) Wilson B factor72.815.752.318.1Refinement Resolution43.2–2.650–1.746.5–2.347.9–1.6 Reflections57,643(30,933)53,35730,516157,562 Rfree reflections1525200020252009 Rwork/Rfree0.237/0.2520.167/0.1950.236/0.2540.155/0.187 No. atoms  Protein3459697050538911  Ligands280216961  Water052539737 Average B factors  Protein114.427.762.122.5  SolventN/A33.066.230.1 Root mean square deviation from ideality  Bonds (Å)0.0060.0050.0030.014  Angles (°)1.110.9770.7641.571 Ramachandran statistics  Favored (%)9198.5898.297.11  Disallowed (%)2.40.00.00.18  MolProbity clash score9.62.85.162.66The CC1/2 values for the PH-TH-kinase dataset, IP6-bound PH-TH dataset and the kinase domain with mutations in the activation loop dataset are 99.9 (86.5), 99.9 (55.4) and 99.9 (90.7), respectively.10.7554/eLife.06074.006Table 2.Data statistics for the Src-like module of BtkDOI: http://dx.doi.org/10.7554/eLife.06074.006Src-like module of mouse Btk (217-659)Data collectionKAu(CN)2DMAAu2(NO3)3native Wavelength (Å)0.94740.94740.94740.9474 Space groupP31 2 1P31 2 1P31 2 1P31 2 1 a,b,c (Å)132.2, 132.2, 107.6132.5, 132.5, 107.3131.9, 131.9, 107.6131.8, 131.8, 107.0 α,β,γ (°)90.0, 90.0, 120.090.0, 90.0, 120.090.0, 90.0, 120.090.0, 90.0, 120.0 Resolution (Å)43.2–2.641.7–3.541.7–3.440–4.0 Rsym (%)8.7(>100)8.7 (32.7)7.5 (32.5)5.1 (71.7) I/σ(I)10.6 (1.1)9.7 (3.0)12.1 (3.6)18.4 (12.3) Completeness (%)91.9 (69.6)92.4 (94.2)94.5 (95.9)92.3 (100) Redundancy4.8 (3.5)4.34.1N/A Wilson B factor72.858.870.867.3
+We have determined four crystal structures as part of this work. Two of these structures help explain how Btk is autoinhibited. These are the structures of the Btk SH3-SH2-kinase module (determined at 2.6 Å resolution) and of the PH-TH-kinase unit (determined at 1.7 Å resolution). The other two structures are of the isolated PH-TH module bound to IP6 (determined at 2.3 Å resolution) and the isolated kinase domain with mutations in the activation loop (determined at 1.6 Å). The details of the crystallographic experiments are given in Tables 1, 2.
 
-## Crystal structure of the Btk SH3-SH2-kinase module
+**Table 1.**
+ Data collection and refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Src-like module of mouse Btk (217-659)</th>
+      <th>PH-TH-kinase unit of bovine Btk</th>
+      <th>Btk PH-TH module bound to IP6</th>
+      <th>Btk kinase domain with mutations in the activation loop</th>
+    </tr>
+    <tr>
+      <th>PDB ID</th>
+      <th>4XI2</th>
+      <th>4Y93</th>
+      <th>4Y94</th>
+      <th>4Y95</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Data collection</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>KAu(CN)2</td>
+      <td>Native</td>
+      <td>Native</td>
+      <td>Native</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9474</td>
+      <td>1.000</td>
+      <td>1.000</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 31 2 1</td>
+      <td>P 2 21 21</td>
+      <td>P 1</td>
+      <td>P 1</td>
+    </tr>
+    <tr>
+      <td>a,b,c (Å)</td>
+      <td>132.2, 132.2, 107.6</td>
+      <td>78.6, 38.3, 157.6</td>
+      <td>37.2, 64.0, 80.0</td>
+      <td>50.9, 79.0, 79.2</td>
+    </tr>
+    <tr>
+      <td>α,β,γ (°)</td>
+      <td>90.0, 90.0, 120.0</td>
+      <td>90.0, 90.0, 90.0</td>
+      <td>82.0, 88.8, 89.8</td>
+      <td>90.7, 89.9, 90.0</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>43.2–2.6</td>
+      <td>50–1.7</td>
+      <td>43.9–2.3</td>
+      <td>47.9–1.6</td>
+    </tr>
+    <tr>
+      <td>Rsym (%)</td>
+      <td>8.7 (&gt;100)</td>
+      <td>12.2 (79.7)</td>
+      <td>6.0 (53.8)</td>
+      <td>5.1 (71.7)</td>
+    </tr>
+    <tr>
+      <td>I/σ(I)</td>
+      <td>10.6 (1.1)</td>
+      <td>17.0 (3.5)</td>
+      <td>10.8 (1.2)</td>
+      <td>13.2 (3.2)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>91.9 (69.6)</td>
+      <td>99.2 (98.5)</td>
+      <td>94.9 (71.8)</td>
+      <td>96.9 (94.7)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>4.8 (3.5)</td>
+      <td>7.8 (7.4)</td>
+      <td>2.0 (1.7)</td>
+      <td>24.4 (3.1)</td>
+    </tr>
+    <tr>
+      <td>Wilson B factor</td>
+      <td>72.8</td>
+      <td>15.7</td>
+      <td>52.3</td>
+      <td>18.1</td>
+    </tr>
+    <tr>
+      <td colspan="5">Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution</td>
+      <td>43.2–2.6</td>
+      <td>50–1.7</td>
+      <td>46.5–2.3</td>
+      <td>47.9–1.6</td>
+    </tr>
+    <tr>
+      <td>Reflections</td>
+      <td>57,643(30,933)</td>
+      <td>53,357</td>
+      <td>30,516</td>
+      <td>157,562</td>
+    </tr>
+    <tr>
+      <td>Rfree reflections</td>
+      <td>1525</td>
+      <td>2000</td>
+      <td>2025</td>
+      <td>2009</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.237/0.252</td>
+      <td>0.167/0.195</td>
+      <td>0.236/0.254</td>
+      <td>0.155/0.187</td>
+    </tr>
+    <tr>
+      <td colspan="5">No. atoms</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>3459</td>
+      <td>6970</td>
+      <td>5053</td>
+      <td>8911</td>
+    </tr>
+    <tr>
+      <td>Ligands</td>
+      <td>2</td>
+      <td>80</td>
+      <td>216</td>
+      <td>961</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>525</td>
+      <td>39</td>
+      <td>737</td>
+    </tr>
+    <tr>
+      <td colspan="5">Average B factors</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>114.4</td>
+      <td>27.7</td>
+      <td>62.1</td>
+      <td>22.5</td>
+    </tr>
+    <tr>
+      <td>Solvent</td>
+      <td>N/A</td>
+      <td>33.0</td>
+      <td>66.2</td>
+      <td>30.1</td>
+    </tr>
+    <tr>
+      <td colspan="5">Root mean square deviation from ideality</td>
+    </tr>
+    <tr>
+      <td>Bonds (Å)</td>
+      <td>0.006</td>
+      <td>0.005</td>
+      <td>0.003</td>
+      <td>0.014</td>
+    </tr>
+    <tr>
+      <td>Angles (°)</td>
+      <td>1.11</td>
+      <td>0.977</td>
+      <td>0.764</td>
+      <td>1.571</td>
+    </tr>
+    <tr>
+      <td colspan="5">Ramachandran statistics</td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>91</td>
+      <td>98.58</td>
+      <td>98.2</td>
+      <td>97.11</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>2.4</td>
+      <td>0.0</td>
+      <td>0.0</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>MolProbity clash score</td>
+      <td>9.6</td>
+      <td>2.8</td>
+      <td>5.16</td>
+      <td>2.66</td>
+    </tr>
+  </tbody>
+</table>
+
+_The CC1/2 values for the PH-TH-kinase dataset, IP6-bound PH-TH dataset and the kinase domain with mutations in the activation loop dataset are 99.9 (86.5), 99.9 (55.4) and 99.9 (90.7), respectively._
+
+**Table 2.**
+ Data statistics for the Src-like module of Btk
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Src-like module of mouse Btk (217-659)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Data collection</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>KAu(CN)2</td>
+      <td>DMA</td>
+      <td>Au2(NO3)3</td>
+      <td>native</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>0.9474</td>
+      <td>0.9474</td>
+      <td>0.9474</td>
+      <td>0.9474</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P31 2 1</td>
+      <td>P31 2 1</td>
+      <td>P31 2 1</td>
+      <td>P31 2 1</td>
+    </tr>
+    <tr>
+      <td>a,b,c (Å)</td>
+      <td>132.2, 132.2, 107.6</td>
+      <td>132.5, 132.5, 107.3</td>
+      <td>131.9, 131.9, 107.6</td>
+      <td>131.8, 131.8, 107.0</td>
+    </tr>
+    <tr>
+      <td>α,β,γ (°)</td>
+      <td>90.0, 90.0, 120.0</td>
+      <td>90.0, 90.0, 120.0</td>
+      <td>90.0, 90.0, 120.0</td>
+      <td>90.0, 90.0, 120.0</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>43.2–2.6</td>
+      <td>41.7–3.5</td>
+      <td>41.7–3.4</td>
+      <td>40–4.0</td>
+    </tr>
+    <tr>
+      <td>Rsym (%)</td>
+      <td>8.7(&gt;100)</td>
+      <td>8.7 (32.7)</td>
+      <td>7.5 (32.5)</td>
+      <td>5.1 (71.7)</td>
+    </tr>
+    <tr>
+      <td>I/σ(I)</td>
+      <td>10.6 (1.1)</td>
+      <td>9.7 (3.0)</td>
+      <td>12.1 (3.6)</td>
+      <td>18.4 (12.3)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>91.9 (69.6)</td>
+      <td>92.4 (94.2)</td>
+      <td>94.5 (95.9)</td>
+      <td>92.3 (100)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>4.8 (3.5)</td>
+      <td>4.3</td>
+      <td>4.1</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Wilson B factor</td>
+      <td>72.8</td>
+      <td>58.8</td>
+      <td>70.8</td>
+      <td>67.3</td>
+    </tr>
+  </tbody>
+</table>
+
+### Crystal structure of the Btk SH3-SH2-kinase module
 
 We determined the structure of a construct of mouse Btk spanning residues 214 to 659, which starts just before the SH3 domain and ends at the C terminus of full-length Btk. The structure resembles those described previously for autoinhibited, Src-like, non-receptor tyrosine kinases, with the SH2-kinase linker sandwiched between the SH3 domain and the small domain of the kinase (the N lobe of the kinase) (Figure 1B). The crystal structure has two molecules of Btk in the asymmetric unit, intertwined as a domain-swapped dimer in which each SH2 domain has pieces from two molecules (Figure 1—figure supplement 1A). The domain-swapped SH2 domain packs against the large domain of the kinase (the C lobe of the kinase), but Btk lacks a Src-like C-terminal tail to stabilize this interaction.
 
@@ -77,45 +392,45 @@ A network of polar interactions present in the autoinhibited forms of c-Src and 
 
 The structure just described demonstrates that the SH3-SH2 domain in a Tec-family member can assemble into a regulatory clamp, just as it does in other Src-like kinases. In the crystal structures of c-Src, Hck, and c-Abl, a latch is present—either in the form of a phosphorylated C-terminal tail (c-Src, Hck) or a myristoyl group bound in a pocket on the C lobe of the kinase domain (c-Abl). In both cases, the latch secures the SH2-domain/C lobe contact, precisely the interface that appears to be poorly formed in our Btk crystals. As we show below, the latch in Btk is provided by the PH-TH module.
 
-## Structure of a PH-TH-kinase construct of Btk
+### Structure of a PH-TH-kinase construct of Btk
 
-We expressed a ‘PH-TH-kinase’ construct of bovine Btk that contains the PH-TH module connected to the kinase domain by the 13-residue SH2-kinase linker. We replaced six residues in the activation loop of Btk with the corresponding ones in Itk, shown previously to stabilize the activation loop of the Btk kinase domain (
+We expressed a ‘PH-TH-kinase’ construct of bovine Btk that contains the PH-TH module connected to the kinase domain by the 13-residue SH2-kinase linker. We replaced six residues in the activation loop of Btk with the corresponding ones in Itk, shown previously to stabilize the activation loop of the Btk kinase domain (Joseph et al., 2013). This improved the poorly ordered crystals obtained with the unmutated form, leading to a structure of the PH-TH-kinase with a bound ATP-competitive inhibitor (CGI1746, [Di Paolo et al., 2011]) at 1.7 Å resolution (Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/06074/elife-06074-fig2-v2.jpg)
 
-**Figure 2.:** (A) Crystal structure of the PH-TH-kinase construct. The PH-TH module is connected to the kinase domain via a 13-residue linker from the SH2-kinase linker of Btk. The kinase domain is bound to the inhibitor CGI1746 (Di Paolo et al., 2011). The canonical PIP3/IP4 binding pocket of the PH domain is located distal to the interface with the kinase, and the peripheral binding site for IP6 is indicated. (B) The interface between the PH-TH module and the kinase domain of Btk.DOI: http://dx.doi.org/10.7554/eLife.06074.007
+**Figure 2.:** (A) Crystal structure of the PH-TH-kinase construct. The PH-TH module is connected to the kinase domain via a 13-residue linker from the SH2-kinase linker of Btk. The kinase domain is bound to the inhibitor CGI1746 (Di Paolo et al., 2011). The canonical PIP3/IP4 binding pocket of the PH domain is located distal to the interface with the kinase, and the peripheral binding site for IP6 is indicated. (B) The interface between the PH-TH module and the kinase domain of Btk.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/06074/elife-06074-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Crystal structure of the isolated Btk kinase domain with mutations in the activation loop. These mutations (L542M, S543T, V555T, R562K, S564A, and P565S) are based on a previous study (Joseph et al., 2013), and they improved the quality of the crystals of the PH-TH-kinase construct. The structure of the mutant kinase is very similar to that of the wild-type Btk kinase domain (PDB: 3OCS). (B) Comparison of the Btk PH-TH-kinase structure (left) and the Akt1 PH-kinase structure (right). In Akt1, The PH domain is docked between the N lobe and the C lobe of the kinase domain, and it blocks substrate access to the catalytic cleft. The lipid-binding site on the PH domain is buried at the PH-kinase interface, and binding of PIP3/IP4 breaks the PH-kinase interface and activates Akt1 (Wu et al., 2010; Calleja et al., 2009).DOI: http://dx.doi.org/10.7554/eLife.06074.008
+**Figure 2—figure supplement 1.:** (A) Crystal structure of the isolated Btk kinase domain with mutations in the activation loop. These mutations (L542M, S543T, V555T, R562K, S564A, and P565S) are based on a previous study (Joseph et al., 2013), and they improved the quality of the crystals of the PH-TH-kinase construct. The structure of the mutant kinase is very similar to that of the wild-type Btk kinase domain (PDB: 3OCS). (B) Comparison of the Btk PH-TH-kinase structure (left) and the Akt1 PH-kinase structure (right). In Akt1, The PH domain is docked between the N lobe and the C lobe of the kinase domain, and it blocks substrate access to the catalytic cleft. The lipid-binding site on the PH domain is buried at the PH-kinase interface, and binding of PIP3/IP4 breaks the PH-kinase interface and activates Akt1 (Wu et al., 2010; Calleja et al., 2009).
 
 The overall conformation of the kinase domain, as well as the specific conformation of the activation loop, is very similar in the two structures we have determined (Figure 2—figure supplement 1A). We also determined the structure of the isolated Btk kinase domain with the six mutations described above and found by comparing it to wild-type Btk that the mutations do not introduce major perturbations in the structure (Figure 2—figure supplement 1A). Details of expression, purification, crystallization, and structure determination are in the ‘Materials and methods’.
 
 The PH-TH module contacts the kinase N lobe. The interface differs substantially from the one found in Akt1, another PH-domain regulated kinase (Wu et al., 2010) (Figure 2—figure supplement 1B). In Akt1, the PH domain sits in front of the catalytic cleft of the kinase, blocking peptide substrate binding. In Btk, the PH-kinase interface does not directly occlude the active site. The interface combines a set of hydrophobic contacts with a hydrogen-bond network (Figure 2B). In particular, Tyr 134 at the C terminus of helix α2 of the PH-TH packs into a groove between Trp 395 at the linker-kinase junction and helix αC in the kinase N lobe. We expect these interactions to stabilize the inactive conformation of the kinase, by hindering the shift in helix αC that accompanies kinase activation. Experiments confirming these expectations are described below, in the section on ‘Autoinhibition’.
 
-## A structural model for full-length Btk
+### A structural model for full-length Btk
 
-We combined the two structures just described to build a model for full-length Btk (
+We combined the two structures just described to build a model for full-length Btk (Figure 3A). Aligning the kinase domains in the two structures gives some local overlap between helix α2 in the PH-TH module and the β3/β4 loop in the SH3 domain, but otherwise compatible positions for the regulatory domains (Figure 3—figure supplement 1A). We therefore carried out molecular dynamics simulations of the two component structures and of the composite assembly, to determine whether energetically minor adjustments could resolve the remaining clashes. The trajectories ranged in length from 60 to 150 ns (see ‘Materials and methods’ for computational details).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/06074/elife-06074-fig3-v2.jpg)
 
-**Figure 3.:** (A) A composite model for full-length Btk. The PH-TH domain sits on top of the kinase domain and the SH3 domain, serving as a ‘latch’ that presumably stabilizes the Src-like module in the autoinhibited conformation. The 45-residue linker between the PH-TH module and the SH3 domain is represented by the dotted brown line. Two orthogonal views of an instantaneous structure at 360 ns from a molecular dynamics trajectory for the composite model are shown. (B) Inter-domain interactions in an instantaneous structure at 360 ns from a simulation of the composite model. The SH2/kinase interface and the PH-TH /SH3 interface are formed and remain stable during the molecular dynamics simulation.DOI: http://dx.doi.org/10.7554/eLife.06074.00910.7554/eLife.06074.010Figure 3—source data 1.The structures are taken every 20 ns from a 360 ns molecule dynamic simulation of the composite model. See ‘Materials and methods’ for the details of simulations.DOI: http://dx.doi.org/10.7554/eLife.06074.010
+**Figure 3.:** (A) A composite model for full-length Btk. The PH-TH domain sits on top of the kinase domain and the SH3 domain, serving as a ‘latch’ that presumably stabilizes the Src-like module in the autoinhibited conformation. The 45-residue linker between the PH-TH module and the SH3 domain is represented by the dotted brown line. Two orthogonal views of an instantaneous structure at 360 ns from a molecular dynamics trajectory for the composite model are shown. (B) Inter-domain interactions in an instantaneous structure at 360 ns from a simulation of the composite model. The SH2/kinase interface and the PH-TH /SH3 interface are formed and remain stable during the molecular dynamics simulation.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/06074/elife-06074-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Overlay of the crystal structures of the Btk Src-like module and the PH-TH-kinase construct, using the kinase domain C lobe as the reference. Sidechain clashes (circled) are observed between helix α2 in the PH-TH module and the β3/β4 loop segment in the SH3 domain. (B) Fluctuations in the Btk Src-like module occurred during a 100 ns molecular dynamics simulation. An instantaneous structure (t = 89 ns) from the simulation is overlaid on the crystal structure of the Src-like module. (C) Fluctuations in the Btk PH-TH-kinase construct during a 100 ns molecular dynamics simulation. An instantaneous structure (t = 12 ns) from the simulation is overlaid on the crystal structure of the PH-TH-kinase construct using the kinase domain N lobe as the reference. The PH-TH module pivots (black arrow) about an apparent anchor point at the C terminus of helix α2. (D) Steps used to generate a composite model for full-length Btk. An instantaneous structure (t = 89 ns) of the Src-like module and an instantaneous structure (t = 12 ns) of the PH-TH-kinase construct from the molecular dynamics trajectory are overlaid, using the kinase domain C-lobe as the reference. In contrast to a corresponding overlay of the crystal structures, there are no sidechain clashes between helix α2 in the PH-TH module and the loop in the SH3 domain. A model for full-length Btk is obtained by combining the PH-TH module with the Src-like module in the two instantaneous structures, and is subject to further molecular dynamics simulation.DOI: http://dx.doi.org/10.7554/eLife.06074.011
+**Figure 3—figure supplement 1.:** (A) Overlay of the crystal structures of the Btk Src-like module and the PH-TH-kinase construct, using the kinase domain C lobe as the reference. Sidechain clashes (circled) are observed between helix α2 in the PH-TH module and the β3/β4 loop segment in the SH3 domain. (B) Fluctuations in the Btk Src-like module occurred during a 100 ns molecular dynamics simulation. An instantaneous structure (t = 89 ns) from the simulation is overlaid on the crystal structure of the Src-like module. (C) Fluctuations in the Btk PH-TH-kinase construct during a 100 ns molecular dynamics simulation. An instantaneous structure (t = 12 ns) from the simulation is overlaid on the crystal structure of the PH-TH-kinase construct using the kinase domain N lobe as the reference. The PH-TH module pivots (black arrow) about an apparent anchor point at the C terminus of helix α2. (D) Steps used to generate a composite model for full-length Btk. An instantaneous structure (t = 89 ns) of the Src-like module and an instantaneous structure (t = 12 ns) of the PH-TH-kinase construct from the molecular dynamics trajectory are overlaid, using the kinase domain C-lobe as the reference. In contrast to a corresponding overlay of the crystal structures, there are no sidechain clashes between helix α2 in the PH-TH module and the loop in the SH3 domain. A model for full-length Btk is obtained by combining the PH-TH module with the Src-like module in the two instantaneous structures, and is subject to further molecular dynamics simulation.
 
 In simulations of the SH3-SH2-kinase module, the initial and final conformations of the SH3 and kinase domains had r.m.s. deviations in Cα positions of only ∼3.0 and ∼2.0 Å, respectively, after first aligning the C lobe of the kinase domain (Figure 3—figure supplement 1B). The SH2 domain shifted by ∼6 Å, with a roughly 10° rotation that brought it closer to the C lobe of the kinase domain and closer to its position in the inactive forms of c-Src, Hck, and c-Abl. Some adjustment of the SH2 domain in these simulations was expected, as the domain swap in the crystals probably perturbed the domain to some extent, and the starting structure for the simulations was therefore itself an approximation.
 
 In simulations of the PH-TH-kinase construct, the interface with the kinase domain remained intact, but the PH-TH module wobbled back and forth through a rotation of about 20° (Figure 3—figure supplement 1C). The averaged r.m.s. deviation between the crystal structure and structures from the end of the trajectories, aligned on the kinase domain, was ∼4 Å for the PH-TH module. The PH-TH module pivots about an apparent anchor point at the C terminus of helix α2, at the center of the autoinhibitory contact (Figure 3—figure supplement 1C).
 
-The fluctuations in the PH-TH orientation generate transient structures in which there would be essentially no clashes between the SH3 domain and the PH-TH module in the merged structures. We initiated multiple MD trajectories from such a composite model (
+The fluctuations in the PH-TH orientation generate transient structures in which there would be essentially no clashes between the SH3 domain and the PH-TH module in the merged structures. We initiated multiple MD trajectories from such a composite model (Figure 3A). The inhibitory interactions between each of the regulatory modules and the kinase domain were preserved, but various intra-domain rearrangements occurred during the course of these trajectories. The overall conformation of Btk at the end of the trajectories is very similar to the initial structure. The averaged r.m.s. deviations of the PH-TH module and the SH3 domain between the crystal structures and the end of trajectories, aligned on the Src-like module of the kinase, were ∼4 Å and ∼2.5 Å, respectively. The former is comparable to the value found in simulations of the PH-TH-kinase, but the latter is larger than in simulations of the Src-like module, probably because the SH3 domain reorients with respect to the kinase domain. The SH3 rotation results in a polar interface between SH3 and PH-TH, with good electrostatic complementarity, which preserves the interactions between the SH3 domain, the linker and the N lobe of the kinase (Figure 4B). In these simulations, the r.m.s. deviations of the SH2 domain and the kinase N lobe are ∼2.6 Å and 2.0 Å, respectively, after 360 ns, similar to those of the Src-like module simulations. We emphasize, however, that restrictions in the time scale of the simulations allow only qualitative conclusions and do not give a high-resolution picture of the intact molecule. Structures from several time points in the simulation of the composite model are deposited on the eLife website (Figure 3—source data 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/06074/elife-06074-fig4-v2.jpg)
 
-**Figure 4.:** (A) Activation of full-length bovine Btk (residues 1 to 659, 2 μM). Reactions are carried out in the presence of 10 mM Mg2+, 150 mM NaCl, 1 mM ATP, 25 mM Tris-HCl pH 8.0. The level of autophosphorylation is assayed by immunoblotting an SDS-PAGE gel with a non-specific, anti-phosphotyrosine antibody (4G10, EMD Millipore) (upper panel). The amount of total protein loaded on the gel is measured by coomassie-blue staining. The kinase activity of Btk is assayed by a continuous kinase-coupled colorimetric assay, in the presence of 1 mM PLC-γ2 peptide substrate. See methods for detailed experimental procedures. (B) Comparison of the activation of the Btk Src-like module (residues 217 to 659), SH2-kinase (residues 270 to 659), and the kinase domain (residues 394 to 659). The SH2-kinase construct activates substantially faster than full-length Btk and the Src-like module of Btk. Activated full-length Btk degrades to a small extent over time, which results in some lower molecule-weight bands being detected on the western blot. (C) Activation of full-length Btk with mutations Y223A and Y268A. Tyr 223 and Tyr 268 are on the SH3/SH2-linker interface, and the two mutants activate faster than wild-type Btk. (D) Activation of full-length Btk with a double mutation (R134E/Y133E). Arg 134 and Tyr 133 are located at the PH-TH/kinase interface.DOI: http://dx.doi.org/10.7554/eLife.06074.012
+**Figure 4.:** (A) Activation of full-length bovine Btk (residues 1 to 659, 2 μM). Reactions are carried out in the presence of 10 mM Mg2+, 150 mM NaCl, 1 mM ATP, 25 mM Tris-HCl pH 8.0. The level of autophosphorylation is assayed by immunoblotting an SDS-PAGE gel with a non-specific, anti-phosphotyrosine antibody (4G10, EMD Millipore) (upper panel). The amount of total protein loaded on the gel is measured by coomassie-blue staining. The kinase activity of Btk is assayed by a continuous kinase-coupled colorimetric assay, in the presence of 1 mM PLC-γ2 peptide substrate. See methods for detailed experimental procedures. (B) Comparison of the activation of the Btk Src-like module (residues 217 to 659), SH2-kinase (residues 270 to 659), and the kinase domain (residues 394 to 659). The SH2-kinase construct activates substantially faster than full-length Btk and the Src-like module of Btk. Activated full-length Btk degrades to a small extent over time, which results in some lower molecule-weight bands being detected on the western blot. (C) Activation of full-length Btk with mutations Y223A and Y268A. Tyr 223 and Tyr 268 are on the SH3/SH2-linker interface, and the two mutants activate faster than wild-type Btk. (D) Activation of full-length Btk with a double mutation (R134E/Y133E). Arg 134 and Tyr 133 are located at the PH-TH/kinase interface.
 
-## Autoinhibition
+### Autoinhibition
 
 We probed the significance of the interactions seen in the crystal structures by studying how various mutations affect the rate of autophosphorylation and enzymatic activity. We avoided the heterogenous phosphorylation that accompanies expression in eukaryotic cells by using bovine Btk expressed in bacteria, which gives a pure, unphosphorylated product with good yield. Bovine Btk is 98.8% identical to human Btk in sequence, with only eight amino-acid differences over the entire protein. The mass of the bacterially expressed full-length Btk (76,379 Da), as determined by mass spectrometry, is consistent with the calculated molecular weight (76,381.2 Da).
 
@@ -127,21 +442,21 @@ The autoactivation rate of the complete Src-like module of Btk is lower than tha
 
 Mutations expected to disrupt the PH-TH-kinase interface likewise increase the autoactivation rate of full-length Btk, consistent with our inferences from examining the interface between the PH-TH and the kinase N lobe (Figure 4D). Removal of the entire PH-TH module, while retaining the Src-like regulatory components, increases the rate of autoactivation about threefold, as estimated from the slopes of the activity curves in Figure 4.
 
-## Activation of Btk by membrane recruitment
+### Activation of Btk by membrane recruitment
 
-We studied the effect on Btk activity of PIP
+We studied the effect on Btk activity of PIP3 in small unilamellar vesicles (SUVs). SUVs containing 75% DOPC, 20% DOPS, and 5% PIP3 produce a rapid and substantial activation of Btk (Figure 5A). At a Btk concentration of 2 μM, robust phosphorylation can be detected within the first 5 min of reaction in the presence of these vesicles. The extent of activation depends on the concentration of PIP3 in the vesicles, presumably because increasing the PIP3 fraction increases the surface density of Btk on the lipid vesicles and thereby increases the rate of trans-autophosphorylation (Figure 5A). An estimate of the surface density of PIP3 on these vesicles suggests that the local concentration of Btk on the vesicle surface is in the millimolar range, that is, 100-fold greater than in bulk solution (see ‘Materials and methods’ for detailed calculations).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/06074/elife-06074-fig5-v2.jpg)
 
-**Figure 5.:** (A) Activation of full-length Btk on membranes. Left panel: Btk (1 μM) autophosphorylates rapidly on lipid vesicles (total lipid concentration, 1 mM) containing 75% DOPC, 20% DOPS and 5% PIP3. Right panel: end-point autophosphorylation assay of Btk in the presence of lipid vesicles. The molar concentration of DOPC is kept at 75%, and the lipid fractions of PIP3 is 0%, 2%, 5%, and 10%, with the remaining lipid fraction filled with DOPS. The measurements are performed after 2 min incubation with lipid vesicles in the presence of ATP/Mg2+. (B) End-point autophosphorylation assays of Btk in solution in the presence of inositol phosphates. Upper panel: Btk (2 μM) autophosphorylates rapidly in the presence of 100 μM IP6 in solution, with the results after the first 5 min of incubation shown here. Essentially no phosphorylation is detected in Btk samples incubated with IP3, IP4 or I(1,3,4,5,6)P5, and very low phosphorylation is detected in Btk samples incubated with I(1,2,3,5,6)IP5 and I(2,3,4,5,6)IP5 in the same experiment. Lower panel: the assay is repeated with other inositol phosphates at a higher protein concentration (4 μM) and longer incubation time (10 min), and the gel was exposed for a longer time. There is a small amount of degraded Btk in the sample, as judged by the coomassie staining, leading to multiple bands in the western blot shown here and in panel C. (C) Activation of full-length Btk (2 μM) in the presence of IP6 (100 μM). (D) Activation of full-length Btk (2 μM) with increasing concentrations of IP6.DOI: http://dx.doi.org/10.7554/eLife.06074.013
+**Figure 5.:** (A) Activation of full-length Btk on membranes. Left panel: Btk (1 μM) autophosphorylates rapidly on lipid vesicles (total lipid concentration, 1 mM) containing 75% DOPC, 20% DOPS and 5% PIP3. Right panel: end-point autophosphorylation assay of Btk in the presence of lipid vesicles. The molar concentration of DOPC is kept at 75%, and the lipid fractions of PIP3 is 0%, 2%, 5%, and 10%, with the remaining lipid fraction filled with DOPS. The measurements are performed after 2 min incubation with lipid vesicles in the presence of ATP/Mg2+. (B) End-point autophosphorylation assays of Btk in solution in the presence of inositol phosphates. Upper panel: Btk (2 μM) autophosphorylates rapidly in the presence of 100 μM IP6 in solution, with the results after the first 5 min of incubation shown here. Essentially no phosphorylation is detected in Btk samples incubated with IP3, IP4 or I(1,3,4,5,6)P5, and very low phosphorylation is detected in Btk samples incubated with I(1,2,3,5,6)IP5 and I(2,3,4,5,6)IP5 in the same experiment. Lower panel: the assay is repeated with other inositol phosphates at a higher protein concentration (4 μM) and longer incubation time (10 min), and the gel was exposed for a longer time. There is a small amount of degraded Btk in the sample, as judged by the coomassie staining, leading to multiple bands in the western blot shown here and in panel C. (C) Activation of full-length Btk (2 μM) in the presence of IP6 (100 μM). (D) Activation of full-length Btk (2 μM) with increasing concentrations of IP6.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/06074/elife-06074-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (A) End-point autophosphorylation assay for full-length Btk, the Src-like module, the SH2-kinase construct and the kinase domain in the presence/absence of IP6. The measurements are carried out after incubating proteins (2 μM) with and without IP6 (100 μM) for 2 min in the presence of ATP/Mg2+. (B) End-point autophosphorylation assay for Btk PH-TH-kinase constructs of various linker lengths in the presence/absence of IP6 (100 μM). The measurements are carried out after incubating proteins (2 μM) with and without IP6 (100 μM) for 2 min at the presence of ATP/Mg2+. (C) Activation of the PH-TH-kinase construct (2 μM) with a 13-residue linker in the presence and absence of IP6 (100 μM). (D) Activation of full-length Btk (2 μM) with mutations R133E/Y134E in the presence and absence of IP6 (100 μM). Arg 133 and Tyr 134 are located at the PH-TH/kinase interface.DOI: http://dx.doi.org/10.7554/eLife.06074.014
+**Figure 5—figure supplement 1.:** (A) End-point autophosphorylation assay for full-length Btk, the Src-like module, the SH2-kinase construct and the kinase domain in the presence/absence of IP6. The measurements are carried out after incubating proteins (2 μM) with and without IP6 (100 μM) for 2 min in the presence of ATP/Mg2+. (B) End-point autophosphorylation assay for Btk PH-TH-kinase constructs of various linker lengths in the presence/absence of IP6 (100 μM). The measurements are carried out after incubating proteins (2 μM) with and without IP6 (100 μM) for 2 min at the presence of ATP/Mg2+. (C) Activation of the PH-TH-kinase construct (2 μM) with a 13-residue linker in the presence and absence of IP6 (100 μM). (D) Activation of full-length Btk (2 μM) with mutations R133E/Y134E in the presence and absence of IP6 (100 μM). Arg 133 and Tyr 134 are located at the PH-TH/kinase interface.
 
 We next studied the effect of inositol phosphates, the soluble headgroups of various phosphatidylinositol phosphate lipids, on Btk activity. The purpose of these studies was to see whether interactions with the soluble headgroups might activate Btk independent of membrane localization, as is the case with Akt (Calleja et al., 2009; Wu et al., 2010). The soluble headgroup of PIP3 is IP4, and so this was included in our study, as were several other inositol phosphates (Figure 5B). IP4 itself has no effect on the rate of Btk activation in solution, demonstrating that the role of PIP3 is to recruit Btk to the membrane without necessarily triggering an allosteric effect.
 
-## Activation of Btk by IP6 in solution
+### Activation of Btk by IP6 in solution
 
 We tested the effect of 10 other inositol phosphates on the activity of Btk (Figure 5B). Quite unexpectedly, we discovered that inositol hexakisphosphate (IP6) promotes Btk autophosphorylation strongly at 2 μM protein concentration, substantially enhancing Btk catalytic activity within the first 5 min after addition (Figure 5C). We also saw a milder activation with certain inositol pentakisphosphates (IP5), but these required higher protein concentration and longer times for appreciable autophosphorylation than did IP6 (Figure 5B).
 
@@ -151,29 +466,78 @@ By comparing constructs, we determined which domains in Btk are responsible for 
 
 IP6 has no effect on activation of the isolated kinase domain of Btk, suggesting that it is not a direct allosteric activator of the enzyme. The protein kinase CK2 is activated by IP6, which binds to the kinase domain and dislodges an inhibitory interaction between CK2 and the protein Nopp140 (Lee et al., 2013). It seems unlikely that IP6 works by displacing an inhibitory interaction between the kinase and the PH-TH module, because the Src-like module (lacking the PH-TH module) activates only slightly faster than full-length Btk in the absence of IP6. Nevertheless, in order to test this possibility, we introduced two mutations (Y133E and R134E) at the PH-TH-kinase interface that are expected to disrupt the inhibitory docking of the PH-TH module on the kinase domain. Full-length Btk bearing these two mutations retains activation by IP6, showing that IP6 does not act by dislodging the interactions seen in the crystal structure (Figure 5—figure supplement 1D).
 
-## The canonical lipid-binding pocket of the PH-TH module is not critical for IP6-mediated Btk activation
+### The canonical lipid-binding pocket of the PH-TH module is not critical for IP6-mediated Btk activation
 
 The structure of the PH-TH-kinase construct does not provide direct clues about how IP6 might activate Btk. The IP4-binding site on the PH-TH module (the ‘canonical binding site’) is located ∼15 Å from the kinase-interacting surface of the PH-TH module (Figure 2A). The structure of the PH-TH-kinase construct, in which no inositol phosphates are bound, resembles closely that of the liganded PH domain (Baraldi et al., 1999) in the vicinity of the PH-kinase interface, consistent with the failure of IP4 to activate Btk.
 
-We used isothermal titration calorimetry (ITC) to study the interaction between IP
+We used isothermal titration calorimetry (ITC) to study the interaction between IP6 and various constructs of Btk (Figure 6A). The ITC measurements show that among the four domains in Btk, only the PH-TH module interacts with IP6. At 150 mM NaCl concentration, the titration curve for IP6 binding to the PH-TH module can be fit by a one-site model for binding, with a dissociation constant, Kd, of 250 nM (Table 3). We introduced two mutations, R28C and N24E, at the canonical binding site in the PH-TH module. Arg 28 and Asn 24 have been shown previously to be critical for IP4 binding (Hyvönen and Saraste, 1997; Baraldi et al., 1999). IP4 binds to the PH-TH module with a Kd value of 30 nM, and the R28C/N24E mutation in the PH-TH module reduces IP4 binding to an undetectable level (Table 3). The ITC signal of IP6 binding to the R28C/N24E mutant is reduced greatly but not completely abolished, and the residual signal corresponds to a dissociation constant between 5 μM and 10 μM.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/06074/elife-06074-fig6-v2.jpg)
 
-**Figure 6.:** 4 and IP6 to the Btk PH-TH module.(A) Representative isothermal titration calorimetry data for the Btk PH-TH module and its R28C/N24D variant binding to IP4 or IP6. The protein concentration is 20 μM and that of the inositol phosphates goes up to 300 μM. Experiments are performed at 20°C. Titration curves are shown with the baseline-corrected raw data. The parameters from fitting a one-site binding model are listed in Table 3. (B) Activation of full-length Btk N24D/R28C mutant (2 μM) in the presence and absence of IP6 (100 μM). Asn 24 and Arg 28 are critical residues for PIP3/IP4 binding in the canonical lipid-binding pocket of the PH-TH module.DOI: http://dx.doi.org/10.7554/eLife.06074.015
+**Figure 6.:** (A) Representative isothermal titration calorimetry data for the Btk PH-TH module and its R28C/N24D variant binding to IP4 or IP6. The protein concentration is 20 μM and that of the inositol phosphates goes up to 300 μM. Experiments are performed at 20°C. Titration curves are shown with the baseline-corrected raw data. The parameters from fitting a one-site binding model are listed in Table 3. (B) Activation of full-length Btk N24D/R28C mutant (2 μM) in the presence and absence of IP6 (100 μM). Asn 24 and Arg 28 are critical residues for PIP3/IP4 binding in the canonical lipid-binding pocket of the PH-TH module.
+
+**Table 3.**
+ Thermodynamic parameters for Btk PH-TH module binding to IP6 and IP4
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Ligand</th>
+      <th>N</th>
+      <th>Ka (×106)</th>
+      <th>Kd (nM)</th>
+      <th>ΔH (Kcal/mol)</th>
+      <th>ΔS (cal/mol/deg)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Wild-type PH-TH</td>
+      <td>IP6</td>
+      <td>1.1 ± 0.1</td>
+      <td>4.2 ± 0.3</td>
+      <td>238 ± 32</td>
+      <td>−1.1 ± 0.2</td>
+      <td>26.7</td>
+    </tr>
+    <tr>
+      <td>Wild-type PHTH</td>
+      <td>IP4</td>
+      <td>0.9 ± 0.1</td>
+      <td>39 ± 11</td>
+      <td>26 ± 6</td>
+      <td>4.4 ± 0.1</td>
+      <td>49.5</td>
+    </tr>
+    <tr>
+      <td>PH-TH R28C/D24N</td>
+      <td>IP6</td>
+      <td>0.7 ± 0.2</td>
+      <td>0.21 ± 0.03</td>
+      <td>4760 ± 700</td>
+      <td>−1.7 ± 0.6</td>
+      <td>17.5</td>
+    </tr>
+  </tbody>
+</table>
+
+_The integrated heat from representative isothermal titration calorimetry experiments was fit with a one-binding site model. See methods for the details of data analysis._
 
 Although the residual binding of IP6 to the IP4-binding deficient mutant is relatively weak, the observed affinity is consistent with the EC50 value of 20 μM for IP6 activation, as determined in our activation assays (Figure 5C). We observed no significant activation when the IP6 concentration was lower than 5 μM, a level still high enough to saturate the canonical binding site. We also found that the R28C/N24E mutant that is deficient in IP4 binding remains highly responsive to IP6 stimulation, with only a slight reduction in the activation kinetics as compared to the wild-type protein (Figure 6B). These observations imply that the canonical binding site of the PH-TH module may not play a major role in the IP6-mediated activation of Btk.
 
-## Structure of the IP6-bound PH-TH module
+### Structure of the IP6-bound PH-TH module
 
-We determined a crystal structure of the Btk PH-TH module bound to IP
+We determined a crystal structure of the Btk PH-TH module bound to IP6 at 2.3 Å (Figure 7). There are four PH-TH modules in the asymmetric unit of the crystal, which form two dimers, similar to those seen in other structures of the Btk PH-TH module (Figure 7D) (Hyvönen and Saraste, 1997; Baraldi et al., 1999). The only structural changes in the IP6-bound PH-TH module, relative to the apo- or IP4-bound PH-TH module, are in the loop regions (Figure 7—figure supplement 1B).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/06074/elife-06074-fig7-v2.jpg)
 
-**Figure 7.:** 6.(A) Structure of the PH-TH module bound to two IP6 molecules. One IP6 molecule is in the canonical lipid-binding site and the other IP6 molecule is in the peripheral binding site formed by strands β3 and β4. The β1/β2 loop (dotted lines) is disordered in this structure. (B) IP6 coordination in the canonical binding site and in the peripheral binding site. (C) Activation of the Btk R52S/K49S mutant (2 μM) in the presence and absence of IP6 (100 μM). Arg 52 and Lys 49 are two residues interacting with IP6 in the peripheral binding site. (D) A dimer assembly of the Btk PH-TH module in the crystal structure of the IP6-bound PH-TH module. The canonical binding site and the peripheral binding site are shown in blue and magenta circle, respectively. We refer to this dimer as the ‘Saraste dimer’ (Hyvönen and Saraste, 1997). (E) An electron density map, using σA-weighted 2m|Fo| − D|Fc| coefficients (Read, 1986) for IP6 at the peripheral binding site, contoured at 1.5 σ.DOI: http://dx.doi.org/10.7554/eLife.06074.018
+**Figure 7.:** (A) Structure of the PH-TH module bound to two IP6 molecules. One IP6 molecule is in the canonical lipid-binding site and the other IP6 molecule is in the peripheral binding site formed by strands β3 and β4. The β1/β2 loop (dotted lines) is disordered in this structure. (B) IP6 coordination in the canonical binding site and in the peripheral binding site. (C) Activation of the Btk R52S/K49S mutant (2 μM) in the presence and absence of IP6 (100 μM). Arg 52 and Lys 49 are two residues interacting with IP6 in the peripheral binding site. (D) A dimer assembly of the Btk PH-TH module in the crystal structure of the IP6-bound PH-TH module. The canonical binding site and the peripheral binding site are shown in blue and magenta circle, respectively. We refer to this dimer as the ‘Saraste dimer’ (Hyvönen and Saraste, 1997). (E) An electron density map, using σA-weighted 2m|Fo| − D|Fc| coefficients (Read, 1986) for IP6 at the peripheral binding site, contoured at 1.5 σ.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/06074/elife-06074-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** 6 to Btk.(A) An open-ended chain of PH-TH dimers in the crystal lattice, mediated by IP6 at the pheripheral site. IP6 is bound at the peripheral site in such a way that only one IP6 molecule occupies the two sites at each interface. (B) Structure superposition of the IP6-bound PH-TH module with apo- and the IP4-bound PH-TH module. The β1/β2 loop, which coordinates IP4 binding, adopts a different conformation in the apo-structure, and is partially disordered in the IP6-bound structure. (C) IP6 coordination in the peripheral binding site by a crystal symmetry mate of the PH-TH module in the crystal structure of IP6-bound PH-TH module. IP6 and the residues involved in coordination are shown in sticks. The hydrogen bonds are shown in dotted lines. This is a detailed view of the interfacial sites shown in the schematic diagram in Panel A. (D) Isothermal titration calorimetry data for Btk PH-TH mutant R52E/K49E/R28C/N24D titrated with IP6. Arg 52 and Lys 49 are critical residues coordinating IP6 binding in the peripheral site. Arg 28 and Asn 24 are critical residues coordinating IP6 binding in the canonical site. Note that IP6 does not bind to this mutant form of the PH-TH module. (E) Activation of full-length Btk, Btk R52S/K49S mutant, and Btk R28C/N24D mutant in the presence of IP6 (100 μM).DOI: http://dx.doi.org/10.7554/eLife.06074.019
+**Figure 7—figure supplement 1.:** (A) An open-ended chain of PH-TH dimers in the crystal lattice, mediated by IP6 at the pheripheral site. IP6 is bound at the peripheral site in such a way that only one IP6 molecule occupies the two sites at each interface. (B) Structure superposition of the IP6-bound PH-TH module with apo- and the IP4-bound PH-TH module. The β1/β2 loop, which coordinates IP4 binding, adopts a different conformation in the apo-structure, and is partially disordered in the IP6-bound structure. (C) IP6 coordination in the peripheral binding site by a crystal symmetry mate of the PH-TH module in the crystal structure of IP6-bound PH-TH module. IP6 and the residues involved in coordination are shown in sticks. The hydrogen bonds are shown in dotted lines. This is a detailed view of the interfacial sites shown in the schematic diagram in Panel A. (D) Isothermal titration calorimetry data for Btk PH-TH mutant R52E/K49E/R28C/N24D titrated with IP6. Arg 52 and Lys 49 are critical residues coordinating IP6 binding in the peripheral site. Arg 28 and Asn 24 are critical residues coordinating IP6 binding in the canonical site. Note that IP6 does not bind to this mutant form of the PH-TH module. (E) Activation of full-length Btk, Btk R52S/K49S mutant, and Btk R28C/N24D mutant in the presence of IP6 (100 μM).
 
 The four PH-TH modules in the asymmetric unit have six bound IP6 molecules, each with clearly resolved electron density. Four of the IP6 molecules are in the canonical binding sites on each module. At those sites, residues Asn 24, Tyr 39, Arg 28, and Lys 12 coordinate phosphate groups on the 2, 3, and 4 positions of the myo-inositol ring; these are also the key residues involved in IP4 binding (Baraldi et al., 1999) (Figure 7B). The loop between strands β1 and β2, which is important for IP4 binding, is largely disordered in our structure (Figure 7A). There are fewer interactions at the canonical site between the PH-TH module and IP6 than seen for IP4, consistent with the relative affinities of the two ligands (Figure 6A).
 
@@ -181,7 +545,7 @@ The two other IP6 molecules in the crystallographic asymmetric unit are bound at
 
 A feature of the crystallographic lattice is that IP6 bound at the peripheral site is sandwiched between two PH-TH modules, interacting with the peripheral sites on both (Figure 7—figure supplement 1A,C). The majority of interactions are with one subunit. Residues Arg 49, Lys 52, Lys 36, and Tyr 40 at the peripheral binding site of one subunit (Figure 7—figure supplement 1C) coordinate phosphate groups at the 1, 2, 3, and 4 positions of the myo-inositol ring. A subset of these residues, Lys 52 and Lys 36, on the other PH-TH module interact from the opposite side of the myo-inositol ring with the phosphate group at position 3 (Figure 7—figure supplement 1C). The bridging interactions provided by IP6 generate an open-ended chain of PH-TH dimers in the crystal lattice (Figure 7—figure supplement 1A). Based on the limited interactions across this crystallographic interface, we do not believe that this open-ended chain is relevant to the function of Btk.
 
-## The peripheral binding site is critical for IP6-mediated Btk activation
+### The peripheral binding site is critical for IP6-mediated Btk activation
 
 We mutated Arg 49 and Lys 52, in the peripheral binding site of the PH-TH module, to serine in full-length Btk. This Btk variant autophosphorylates slowly, as does wild-type Btk, and it has very little response to IP6 (Figure 7C). In ITC experiments, we saw no detectable binding when we added IP6 to a PH-TH module with mutations at both the canonical and the peripheral sites, further confirming that the residual binding of IP6 to the IP4-binding deficient mutant is at the peripheral binding site (Figure 7—figure supplement 1E).
 
@@ -189,21 +553,21 @@ The disposition of the IP6 molecule can be determined unambiguously from the ele
 
 In the cell, the only known enzyme that can add a phosphate to the hydroxyl group at position 2 of a myo-inositol ring is inositol 1,3,4,5,6-pentakisphosphate 2-kinase (York et al., 1999), which produces IP6. As a consequence, IP6, and inositol pyrophosphates, such as IP7 and IP8, may be the only cellular phosphates that can interact with the peripheral site in the Btk PH-TH module.
 
-## A dimer of the PH-TH module is critical for IP6-mediated Btk activation
+### A dimer of the PH-TH module is critical for IP6-mediated Btk activation
 
 Strong activation of Btk by concentration on PIP3-containing membranes suggests that IP6 might promote dimerization or oligomerization of Btk in solution. Neither multi-angle light scattering nor size exclusion chromatography gave convincing evidence for IP6-induced association, at Btk concentrations up to 30 μM. Nevertheless, we found it striking that in every crystal structure of the Btk PH-TH module, as well as in our structure of the PH-TH-kinase construct, the module forms very similar crystallographic dimers (Figure 7D) (PDB entry: 1BTK [Hyvönen and Saraste, 1997]; PDB entry:1B55 and 1BWN [Baraldi et al., 1999]; see also PDB entry: 2Z0P). This dimer was first identified and discussed by Marko Hyvönen and the late Matti Saraste; we refer to it as the ‘Saraste dimer’.
 
-The Saraste dimer is formed by symmetric interactions between helix α1 and strands β3 and β4 of the PH-TH module (
+The Saraste dimer is formed by symmetric interactions between helix α1 and strands β3 and β4 of the PH-TH module (Figure 7A). The largely hydrophobic dimer interface has a buried surface area of ∼1000 Å2 on each molecule. Phe 44 and Tyr 42 on strand β3, Ile 9 on strand β1 and IIe 95 on helix α1 create a hydrophobic patch in one subunit of the dimer that packs tightly against the corresponding patch on the other subunit (Figure 8A).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/06074/elife-06074-fig8-v2.jpg)
 
-**Figure 8.:** 6.(A) Molecular details of the Saraste dimer interface in the crystal structure of the IP6-bound PH-TH module. (B) End-point autophosphorylation assays for wild-type Btk, Btk L29R/I9R mutant, Btk I94R/I95R mutant, and Btk Y42R/F44R mutant in the presence and absence of IP6 (100 μM). The measurements were made after incubating the proteins with and without IP6 in the presence of ATP/Mg2+ for 5 min. Residues Leu 29, Ile 9, IIe 94, IIe 95 Tyr 42 and Phe 44 are located in the Saraste dimer interface, as shown in panel A. Activation of the Btk Y42R/F44R mutant is shown in the lower panel. (C) Activation of the Btk-Abl fusion construct (1 μM) and that of a variant of this fusion protein in which the Btk PH-TH module is mutated (Y42R/F44R). Measurements were made with 1 μM protein in the presence and absence of IP6 (100 μM).DOI: http://dx.doi.org/10.7554/eLife.06074.020
+**Figure 8.:** (A) Molecular details of the Saraste dimer interface in the crystal structure of the IP6-bound PH-TH module. (B) End-point autophosphorylation assays for wild-type Btk, Btk L29R/I9R mutant, Btk I94R/I95R mutant, and Btk Y42R/F44R mutant in the presence and absence of IP6 (100 μM). The measurements were made after incubating the proteins with and without IP6 in the presence of ATP/Mg2+ for 5 min. Residues Leu 29, Ile 9, IIe 94, IIe 95 Tyr 42 and Phe 44 are located in the Saraste dimer interface, as shown in panel A. Activation of the Btk Y42R/F44R mutant is shown in the lower panel. (C) Activation of the Btk-Abl fusion construct (1 μM) and that of a variant of this fusion protein in which the Btk PH-TH module is mutated (Y42R/F44R). Measurements were made with 1 μM protein in the presence and absence of IP6 (100 μM).
 
 To test whether the Saraste dimer interface is important for IP6-mediated Btk activation, we made three mutants in which we replaced hydrophobic residues at the Saraste dimer interface with arginines and compared their autophosphorylation rates and their response to IP6 with those of wild-type Btk. All three sets of mutant proteins showed little or no response to IP6 (Figure 8B). These mutations do not affect the autophosphorylation rate of Btk in the absence of IP6. We conclude that the Saraste dimer interface promotes Btk association in the presence of IP6.
 
 The activation of Class I Histone Deacetylases (HDACs) requires the formation of a multi-subunit co-repressor complex, in which Ins(1,4,5,6)P4 serves as an intermolecular glue that cements the complex together (Watson et al., 2012; Millard et al., 2013). The mechanism of IP6-induced transient Btk dimerization is fundamentally different, in that the peripheral IP6 binding site is just outside the Saraste dimer interface, and IP6 does not participate in any interactions between the two Btk subunits in that dimer.
 
-## Fusing the Btk PH-TH module to the catalytic module of c-Abl promotes autophosphorylation of c-Abl in the presence of IP6
+### Fusing the Btk PH-TH module to the catalytic module of c-Abl promotes autophosphorylation of c-Abl in the presence of IP6
 
 If the effect of IP6 arises from its ability to promote dimerization of the PH-TH module, fusion of a Btk PH-TH module with the catalytic domain of another kinase that autophosphorylates slowly should impart activation by IP6. A good example of such a kinase is c-Abl. Indeed, in chronic myelogenous leukemia, a chromosomal translocation results in fusion of a coiled-coil oligomerization domain with c-Abl, leading to hyper-activation of the BCR-Abl fusion protein by autophosphorylation. Several other fusion variants involving c-Abl, in which different oligomerization domains are present, are associated with hematological malignancies (De Braekeleer et al., 2011).
 
@@ -213,19 +577,43 @@ The Btk and c-Abl kinase domains are 46% identical in sequence, but most of the 
 
 Our preliminary studies indicate that the IP6-induced dimerization of the Btk PH-TH module is very weak, with a dissociation constant that is likely to be greater than 100 μM. It might appear counter-intuitive that IP6 can markedly accelerate activation at 2 μM Btk concentration, well below the dissociation constant. A simple calculation shows that even a modest increase in a small dimer population can lead to a sharp change in the rate of activation because the reaction is autocatalytic. The initial production of phosphorylated Btk drives the further production of this species at an accelerating rate (Figure 9—figure supplement 1B).
 
-## Speculations about the mechanism of IP6 activation
+### Speculations about the mechanism of IP6 activation
 
 Our failure to detect stable dimers of the Btk PH-TH module or of full-length Btk in the presence of IP6 suggests that the monomeric PH-TH module has a conformation different from the one seen in crystal structures, which all show the same dimer contact. The high protein concentration in the crystal lattice (∼30 mM) presumably drives the formation of the Saraste dimer, which is otherwise not favored.
 
-Molecular dynamics simulations suggest that the conformation of the PH-TH module seen in the Saraste dimer is unstable when the protein is monomeric. We initiated molecular dynamics trajectories using a monomeric PH-TH module from a crystal structure which contained neither IP
+Molecular dynamics simulations suggest that the conformation of the PH-TH module seen in the Saraste dimer is unstable when the protein is monomeric. We initiated molecular dynamics trajectories using a monomeric PH-TH module from a crystal structure which contained neither IP6 nor IP4. Within the first 30 ns of simulation, the β3-β4 hairpin bent towards the core of the PH-TH module (Figure 9A and Figure 9—figure supplement 1A), and Phe 44, at the heart of the Saraste dimer interface, changed its conformation and packed against the other three interfacial residues, Tyr 42, Ile 9, and IIe 95 (Figure 9A). This conformational change closed the dimer interface, burying the interfacial residues.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/06074/elife-06074-fig9-v2.jpg)
 
-**Figure 9.:** 6.(A) Fluctuations of the PH-TH module during a molecular dynamic simulation. An instantaneous structure (t = 100 ns) from a 100 ns simulation of the PH-TH module shows a conformational change that closes the Saraste dimer interface (middle panel). Replacing these hydrophobic residues (IIe 9, Tyr 42, Phe 44 and Ile 95) with alanine prevents the dimer interface from closing in the simulations (lower panel). Although the β3/β4 loop becomes more dynamic, it remains open (see Figure 9–figure supplement 1). Binding of IP6 may shift the equilibrium between open and closed conformations. (B) Activation of the Btk R52E/K49E mutant (2 μM). Arg 52 and Lys 49 are two residues in the peripheral binding site. Mutation of these two residues to glutamate reduces the local charge at the peripheral site by a net four units, and results in Btk activation.DOI: http://dx.doi.org/10.7554/eLife.06074.021
+**Figure 9.:** (A) Fluctuations of the PH-TH module during a molecular dynamic simulation. An instantaneous structure (t = 100 ns) from a 100 ns simulation of the PH-TH module shows a conformational change that closes the Saraste dimer interface (middle panel). Replacing these hydrophobic residues (IIe 9, Tyr 42, Phe 44 and Ile 95) with alanine prevents the dimer interface from closing in the simulations (lower panel). Although the β3/β4 loop becomes more dynamic, it remains open (see Figure 9–figure supplement 1). Binding of IP6 may shift the equilibrium between open and closed conformations. (B) Activation of the Btk R52E/K49E mutant (2 μM). Arg 52 and Lys 49 are two residues in the peripheral binding site. Mutation of these two residues to glutamate reduces the local charge at the peripheral site by a net four units, and results in Btk activation.
 
 ![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/06074/elife-06074-fig9-figsupp1-v2.jpg)
 
-**Figure 9—figure supplement 1.:** (A) Fluctuations in the β3/β4 loop of the wild-type PH-TH module and its I9A/Y42A/F44A/I95A variant. Each trajectory was sampled every 1 ns. The instantaneous structures are aligned using the crystal structure as the reference. The r.m.s. deviation was calculated for the backbone of residues 36 through 57 of the PH-TH domain. (B) Simulations of the kinetics of Btk autophosphorylation. We consider a very simple two-step Michaelis–Menten model for autophosphorylation, in which two Btk molecules first form an encounter complex, followed by phosphorylation of one of the two molecules in the complex. We assume that the rate of complex formation increases if IP6 is bound, and that the catalytic rate constant for phosphorylation of the other increases if one of the two Btk molecules is phosphorylated. This model is described by the following reaction scheme:(1)Btk+Btk⇌k−1k1Btk·Btk,(2)Btk·Btk→k2pBtk+Btk,(3)pBtk+Btk⇌k−3k3pBtk·pBtk,The on-rate for a diffusion-limited encounter between two proteins is in the range of 10(4)pBtk·Btk→k4pBtk+pBtk.8 to 107 M−1s−1. We assume that in the absence of IP6 the on-rate for Btk dimer formation is much slower than this (k1 = k3 = 104 M−1s−1) and that IP6 binding increases the on-rate by 10-fold (k1 = k3 = 105 M−1s−1). The dissociation rate constant is chosen so that the dissociation constant is 2 mM and 200 μM in the absence and presence of IP6, respective (k-1 = k-3 = 20 s−1). The catalytic constant (k4) for activated Btk is set to 1.0 s−1, comparable to the values determined for other tyrosine kinases, such as Src and ZAP70 (Mukherjee et al., 2013). We assume that the catalytic constant is 10-fold smaller for unphosphorylated Btk (k2 = 0.1 s−1). To compare with our experimental data, the initial concentration of Btk was set at 1 μM. The integration of the differential kinetic equations was done using BerkeleyMadonna (http://www.berkeleymadonna.com/). As shown in the diagram, the autophosphorylation kinetics generated by this simple reaction scheme is consistent with the experimentally observed kinetics.DOI: http://dx.doi.org/10.7554/eLife.06074.022
+**Figure 9—figure supplement 1.:** (A) Fluctuations in the β3/β4 loop of the wild-type PH-TH module and its I9A/Y42A/F44A/I95A variant. Each trajectory was sampled every 1 ns. The instantaneous structures are aligned using the crystal structure as the reference. The r.m.s. deviation was calculated for the backbone of residues 36 through 57 of the PH-TH domain. (B) Simulations of the kinetics of Btk autophosphorylation. We consider a very simple two-step Michaelis–Menten model for autophosphorylation, in which two Btk molecules first form an encounter complex, followed by phosphorylation of one of the two molecules in the complex. We assume that the rate of complex formation increases if IP6 is bound, and that the catalytic rate constant for phosphorylation of the other increases if one of the two Btk molecules is phosphorylated. This model is described by the following reaction scheme:
+
+$$
+Btk+Btk⇌k_{−1}k_{1}Btk·Btk,
+$$
+
+
+
+$$
+Btk·Btk→k_{2}pBtk+Btk,
+$$
+
+
+
+$$
+pBtk+Btk⇌k_{−3}k_{3}pBtk·pBtk,
+$$
+
+
+
+$$
+pBtk·Btk→k_{4}pBtk+pBtk.
+$$
+
+The on-rate for a diffusion-limited encounter between two proteins is in the range of 108 to 107 M−1s−1. We assume that in the absence of IP6 the on-rate for Btk dimer formation is much slower than this (k1 = k3 = 104 M−1s−1) and that IP6 binding increases the on-rate by 10-fold (k1 = k3 = 105 M−1s−1). The dissociation rate constant is chosen so that the dissociation constant is 2 mM and 200 μM in the absence and presence of IP6, respective (k-1 = k-3 = 20 s−1). The catalytic constant (k4) for activated Btk is set to 1.0 s−1, comparable to the values determined for other tyrosine kinases, such as Src and ZAP70 (Mukherjee et al., 2013). We assume that the catalytic constant is 10-fold smaller for unphosphorylated Btk (k2 = 0.1 s−1). To compare with our experimental data, the initial concentration of Btk was set at 1 μM. The integration of the differential kinetic equations was done using BerkeleyMadonna (http://www.berkeleymadonna.com/). As shown in the diagram, the autophosphorylation kinetics generated by this simple reaction scheme is consistent with the experimentally observed kinetics.
 
 The hydrophobicity of the dimer interface drove the observed conformational change. Molecular dynamics simulations initiated from crystal structures but with the four interfacial residues substituted by alanine reduced the extent of conformational change in this area (Figure 9A). The peripheral binding site for IP6 is adjacent to the β3-β4 hairpin that folds in and closes the dimer interface in the simulation. Thus, one effect of IP6 binding may be to stabilize the open form of the hairpin.
 
@@ -235,19 +623,19 @@ We introduced two charge-reversal mutations at the peripheral IP6-binding site (
 
 We suggest that there are two barriers to the dimerization of the PH-TH module of Btk. First, the dimer interface of the PH domain is probably closed in the monomeric protein. Second, an electrostatic repulsion between PH domains further impedes dimerization. IP6 binding might stabilize the open form of the PH-TH module allosterically, while also alleviating the electrostatic repulsion.
 
-## Conclusions
+### Conclusions
 
 Our studies on Btk have revealed the structural basis for its autoinhibition. One key finding is that the Src-like module of Btk adopts a compact and autoinhibited form that resembles the autoinhibited structures of the Src kinases and c-Abl, in which the SH3 domain binds to the SH2-kinase linker and holds the kinase domain in an inactive conformation. Our structure of the PH-TH-kinase construct of Btk shows that the PH-TH module stablizes the inactive conformation of the kinase domain, as well as the assembled conformation of the Src-like module of Btk.
 
-A second, and quite unexpected, finding is that IP
+A second, and quite unexpected, finding is that IP6 can activate Btk strongly by binding to a newly identified site on the PH domain, probably by promoting transient dimerization of the PH-TH module. Because IP6 synthesis requires the precursor molecule IP3, which is itself produced as a result of Btk activation, a transient elevation of IP6 may create a positive feedback loop for Btk activation, either on the membrane or in the cytoplasm. Formation of the Saraste dimer interface is compatible with the simultaneous engagement of PIP3 by both PH domains in the dimer, raising the possibility that IP6 can stimulate dimerization of membrane-tethered Btk (Figure 10). IP6 binding to the peripheral binding site may also enhance PIP3 affinity in the canonical binding site and sensitize Btk to PIP3 levels. The linker connecting the PH-TH unit to the SH3 domain promotes dimerization of Btk by interacting with the SH3 domain of a second molecule, providing an additional mechanism for Btk dimerization at high local concentration (Laederach et al., 2002). High levels of IP6 may down-regulate the amount of Btk on membranes by competing for PIP3 binding in the canonical binding site, as proposed for Akt1 regulation by IP7 (Chakraborty et al., 2010).
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/06074/elife-06074-fig10-v2.jpg)
 
-**Figure 10.:** (A) The PH-TH module stabilizes the assembled conformation of the Src-like module of Btk in its inactive conformation. The activation of Btk involves formation of a transient dimer through the PH-TH module, which promotes trans-autophosphorylation and activates Btk. The stimulation of dimerization could occur at the membrane or in solution, as in our experiments. (B) IP6 may stimulate membrane-tethered Btk. Formation of the Saraste dimer is compatible with the simultaneous engagement of PIP3 by both PH domains in the dimer, and is compatible with the binding of IP6 at the peripheral binding site. This raises the possibility that IP6 can stimulate dimerization of the membrane-tethered Btk.DOI: http://dx.doi.org/10.7554/eLife.06074.023
+**Figure 10.:** (A) The PH-TH module stabilizes the assembled conformation of the Src-like module of Btk in its inactive conformation. The activation of Btk involves formation of a transient dimer through the PH-TH module, which promotes trans-autophosphorylation and activates Btk. The stimulation of dimerization could occur at the membrane or in solution, as in our experiments. (B) IP6 may stimulate membrane-tethered Btk. Formation of the Saraste dimer is compatible with the simultaneous engagement of PIP3 by both PH domains in the dimer, and is compatible with the binding of IP6 at the peripheral binding site. This raises the possibility that IP6 can stimulate dimerization of the membrane-tethered Btk.
 
 ![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/06074/elife-06074-fig10-figsupp1-v2.jpg)
 
-**Figure 10—figure supplement 1.:** The alignment was performed using ClustalW2 (Larkin et al., 2007) and visualized by Espript3 (Robert and Gouet, 2014). The alignment shows that the adoption of the compact autoinhibited conformation by the Src-like module, seen in our crystal structures, is likely to be conserved in Itk. In contrast, residues at the Saraste dimer interface and at the peripheral IP6 binding site in Btk are not conserved in Itk.DOI: http://dx.doi.org/10.7554/eLife.06074.024
+**Figure 10—figure supplement 1.:** The alignment was performed using ClustalW2 (Larkin et al., 2007) and visualized by Espript3 (Robert and Gouet, 2014). The alignment shows that the adoption of the compact autoinhibited conformation by the Src-like module, seen in our crystal structures, is likely to be conserved in Itk. In contrast, residues at the Saraste dimer interface and at the peripheral IP6 binding site in Btk are not conserved in Itk.
 
 The Src-like modules of Btk and Itk have 55% sequence identity, with all the residues critical for maintaining the assembled and autoinhibited Src-like conformation of Btk conserved in Itk (Figure 10—figure supplement 1). The Src-like module of Itk is therefore likely also to adopt the assembled Src-like conformation when inactive.
 
@@ -255,9 +643,9 @@ The roles of the PH-TH module in regulating Btk activity are not likely to be co
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
-## Insect cell expression, purification, and characterization of mouse Btk
+#### Insect cell expression, purification, and characterization of mouse Btk
 
 DNA for mouse Btk (residues 214 to 659; the Src-like module) was used to prepare baculovirus. Infected Sf21 cells were harvested by centrifugation 72 hr post-infection, then frozen in liquid nitrogen for storage. Cells were later thawed, resuspended in 25 mM Tris·Cl, pH 8.0, 50 mM NaCl, 5 mM DTT, 5 mM benzamidine, and complete protease inhibitor tablets (Roche Diagnostics, Switzerland), and lysed mechanically by Dounce homogenization followed by brief sonication. All remaining steps were carried out at 4°C. Cellular debris was cleared by centrifugation at 96,000×g for 1 hr, after which the supernatant was passed through a 0.45-μm filter. Cleared supernatant was loaded on to DEAE sepharose pre-equilibrated with 25 mM Tris·Cl, pH 8.0, 25 mM NaCl, and 5 mM DTT. Protein was eluted by a linear gradient to 25 mM Tris·Cl, pH 8.0, 0.35 M NaCl, 5 mM DTT over 3.7 column volumes, with the Src-like module of Btk eluting at approximately 2.6 column volumes.
 
@@ -267,7 +655,7 @@ Fractions containing significant amounts of the Src-like module of Btk, identifi
 
 Peaks A and B were definitively identified as the Src-like module of Btk monomer and dimer, respectively, by chemical cross-linking using disuccinimidyl glutarate (Pierce Biotechnology, Waltham MA) and PAGE analysis (results not shown). All column media and pre-packed columns were purchased from Amersham Biosciences.
 
-## Bacterial expression and purification of full-length bovine Btk and the PH-TH-kinase construct
+### Bacterial expression and purification of full-length bovine Btk and the PH-TH-kinase construct
 
 DNA encoding bovine Btk (residues 1 to 659) was cloned into pET-28 expression plasmid yielding N-terminally 6-histidine-tagged SUMO-fusion protein. The hexahistidine-SUMO tag was cleavable by Ulp-1 SUMO-specific protease. For protein expression, the plasmid was transformed into BL21 DE3* (Novagen, Australia) cells that also contain the expression plasmids for GroES/GroEL and phosphatase YopH (Seeliger et al., 2005), and then grown in Terrific Broth (TB) media supplemented with 50 mg/l kanamycin, 50 mg/l streptomycin, and 50 mg/l chloramphenicol at 37°C. At a cell density corresponding to an absorbance of 1.5 at 600 nm, the temperature was reduced to 18°C, and protein production was induced by mixing the bacterial culture with equal volume of 4°C TB media supplemented with 1 mM IPTG, 100 μM ZnCl2, 50 mg/l Kanamycin, 50 mg/l streptomycin, and 50 mg/l chloramphenicol. After 16 hr, cells were harvested by centrifugation, resuspended in Ni-NTA buffer A (500 mM NaCl, 20 mM imidazole, 25 mM Tris pH 8.5, 5% glycerol, and 1 mM DTT), and flash-frozen in liquid nitrogen. Cells were then thawed on ice and supplemented with a mixture of protease inhibitors (aprotinin 2 μg/ml, benzamidine 15 μg/ml, leupeptin 2 μg/ml, PMSF 1 mM, pepstatin A, 1 μg/ml).
 
@@ -275,9 +663,9 @@ After cell lysis by French press and removal of cell debris by centrifugation, c
 
 The Src-like module (residues 217 to 659), SH2-kinase module (residues 270 to 659), and the kinase domain (residues 394 to 659) of bovine Btk, various bovine Btk PH-TH-kinase constructs and the PH-TH-Abl fusion construct (BTK residues 1 to 216 fused to human c-Abl residues 140 to 518) were all expressed and purified using the same protocol. The PH-TH module of bovine Btk (residues 1 to 172) was prepared in the same way as described above expect that the co-expression of GroEL/GroES and YopH is not necessary.
 
-## Crystallization and structure determination
+### Crystallization and structure determination
 
-## The Src-like module of mouse Btk
+#### The Src-like module of mouse Btk
 
 The crystals of the dimeric protein (peak B) were grown using hanging-drop vapor diffusion at 4°C by mixing purified protein at 5 mg/ml in 25 mM Tris·Cl, pH 8.5, 10 mM NaCl, 5 mM DTT with an equal volume of the precipitant solution, 100 mM Tris·Cl, pH 8.5, 200 mM Na·acetate, 7.5% PEG 4000. Wedge-shaped crystals grew to approximately 0.1 mm on a side after a period of 2 weeks. These crystals could be frozen by first transferring them, in four sequential steps, to a solution of 100 mM Tris·Cl, pH 8.5, 200 mM Na·acetate, 15% PEG 4000, followed by transfer in six sequential steps to a solution containing 100 mM Tris·Cl, pH 8.5, 200 mM Na·acetate, 15% PEG 4000, 30% glucose. The monomeric protein (peak A) did not yield crystals.
 
@@ -289,7 +677,7 @@ We generated a homology model for the SH2 domain from the SH2 domains present in
 
 The structure was refined using alternating cycles of manual rebuilding in the program O (Jones et al., 1991) and torsional simulated annealing and grouped B-factor refinement against data to 2.8 Å using the program CNS_SOLVE (Brunger et al., 1998; Brunger, 2007). A final refinement of the model was performed using PHENIX (Adams et al., 2002) to incorporate TLS as three groups, defined as residues 214–260, 261–391, and 392–657. These groups were identified by the automated TLS group search procedure and agreed well with the character of the experimental maps. In all refinement runs in which the SH2 domain was present, an initial temperature factor was refined for the entire SH2 domain, and then the SH2 domain was fixed. SH2 domain geometry is thus strictly a result of the geometry of the initial homology model. Data collection and refinement statistics are summarized in Table 2. Illustrations were made in Pymol (DeLano Scientific, New York NY).
 
-## Structure of the PH-TH-kinase construct of bovine Btk
+#### Structure of the PH-TH-kinase construct of bovine Btk
 
 The bovine PH-TH-kinase construct (residues 1 to 170 connected to residues 384 to 659) was thawed on ice and mixed with twofold excess IP3 (Avanti lipid) and inhibitor CGI1746 (Selleck Inc, Houston TX), and was incubated at 4°C for 30 min before setting up trays. IP3 binds to the protein, but does not activate it. Although present in the crystallization mix, it is not visible in the final electron density (see below). Needle clusters of crystals were obtained by sitting drop vapor diffusion by mixing equal volume of protein solutions at 15 mg/ml with reservoir solution containing 200 mM NaCl, 50 mM MgCl2, and 20% PEG3350. To prepare seeds for microseeding, needle clusters were harvested and combined from 20 drops and transferred into a 1.5-ml eppendorf tube.
 
@@ -297,29 +685,29 @@ The bovine PH-TH-kinase construct with activation loop mutations (Joseph et al.,
 
 Data were collected at the Lawrence Berkeley National Laboratory, Advanced Light Source (ALS), beamline 8.2.1. Data reduction was carried out with the software package HKL2000 (Otwinowski and Minor, 1997). The structure was determined by molecular replacement using PHENIX (Adams et al., 2002) with two search models. These were the structure of the Btk kinase domain that has mutations in the activation loop (see below) and the structure of the PH-TH module. Refinement in PHENIX and COOT (Emsley and Cowtan, 2004) yielded the final models. No density for IP3 is seen in difference electron density maps, even at low contour levels (2σ above the mean in σ weighted |Fo| − |Fc| difference maps). Data collection and refinement statistics are summarized in Table 1. Illustrations were made in Pymol (DeLano Scientific).
 
-## Structure of the Btk PH-TH module bound to IP6
+#### Structure of the Btk PH-TH module bound to IP6
 
 The bovine Btk PH-TH module (residues 1 to 172) sample was thawed at room temperature and was incubated with fivefold excess IP6 (Sigma) for 10 min. Plate-like crystals were obtained by sitting drop vapor diffusion by mixing equal volume of protein sample solution and the reservoir solution containing 25% PEG1500 and 0.1 M DL-malic acid pH 5.5. Crystals were then transferred to cryo-protection solution, which is the reservoir solution supplemented with 30% glycerol and 3 mM IP6.
 
 Data were collected at the Lawrence Berkeley National Laboratory, Advanced Light Source (ALS), beamline 8.2.1. Data reduction was carried out with the software package HKL2000 (Otwinowski and Minor, 1997). The structure was determined by molecular replacement using PHENIX (Adams et al., 2002) with the structure of the PH-TH module as the search model (PDB: 1BTK) (Hyvönen and Saraste, 1997). Refinement in PHENIX and COOT (Emsley and Cowtan, 2004) yielded the final models. The structural restraint file for IP6 was generated using REEL in PHENIX (Adams et al., 2002) based on the conformation of IP6 seen in the structure of Auxin receptor TIR1 (PDB: 2P1P) (Tan et al., 2007). Data collection and refinement statistics are summarized in Table 1. Illustrations were made in Pymol (DeLano Scientific).
 
-## Structure of the Btk kinase domain activation loop mutant
+#### Structure of the Btk kinase domain activation loop mutant
 
 Btk kinase domain (residues 395 to 659) with the activation loop mutations (L542M, S543T, V555T, R562K, S564A, and P565S) (Joseph et al., 2013) was thawed at room temperature and was incubated with twofold excess CGI1746 (Selleck Inc) and fivefold excess IP6 (Sigma) for 10 min. Crystals were obtained by sitting drop evaporation methods by mixing equal volume of protein sample solution and the reservoir solution containing 0.2 M ammonium citrate dibasic and 20% PEG 3350. Crystals were then transferred to cryo-protection solution which is the reservoir solution supplemented with 30% glycerol and 3 mM IP6.
 
 Data were collected at the Lawrence Berkeley National Laboratory, Advanced Light Source (ALS), beamline 8.2.1. Data reduction was carried out with the software package HKL2000 (Otwinowski and Minor, 1997). The structure was determined by molecular replacement using PHENIX (Adams et al., 2002) with the structure of wild-type Btk kinase domain (PDB: 3OCS) (Di Paolo et al., 2011). Refinement in PHENIX and COOT (Emsley and Cowtan, 2004) yielded the final models. No density can be located for IP6 in crystals. Data collection and refinement statistics are summarized in Table 1.
 
-## Preparation of autophosphorylated Btk
+### Preparation of autophosphorylated Btk
 
 Btk samples were diluted to 4 μM using the buffer that contains 150 mM NaCl, 25 mM Tris, pH 7.5, and 5% glycerol. For experiments involving lipid vesicles and inositol phosphates, additional 500 μM lipid and 200 μM inositol phosphates are supplemented into the dilution buffer, respectively, followed by a 10-min incubation at room temperature.
 
 The diluted samples were mixed with equal volume of the reaction buffer that contains 150 mM NaCl, 20 mM MgCl2, 2 mM ATP, 25 mM Tris, pH 7.5, 2 mM sodium vandate, and 5% glycerol and incubated at room temperature. The final concentration of Btk samples is 2 μM. At each time point, the samples were either frozen in liquid nitrogen and stored at −80°C for the coupled kinase assays, or mixed with equal volume of quench buffer that contains 2X SDS-PAGE buffer supplemented with 100 mM EGTA, followed by incubating at 95°C in a heat block for 15 min for western blot assays.
 
-## Coupled kinase assay
+### Coupled kinase assay
 
 A continuous pyruvate-kinase coupled assay was performed to measure the kinase activity of the proteins as described (Barker et al., 1995), with minor modifications. The ATP concentration was kept at 1 mM in all the assays. The buffer used contains 150 mM NaCl, 10 mM MgCl2, 25 mM Tris, pH 7.5, 2 mM sodium vandate. The protein concentrations were kept at 1 μM for all Btk constructs. The peptide sequence is ERDINSLYDVSRMYVDPSEIN, which was derived from residues 746 to 766 of PLC-γ2. The Km value for phosphorylated full-length Btk for this peptide is 925 ± 117 μM, and the peptide concentration was kept at 1 mM in all experiments. The reactions were performed in a 96-well plate and were monitored by SpectraMax (Molecular Devices, Sunnyvale CA). The ATP turn-over rate (v0: min−1) was calculated by fitting the data acquired from first 150 s using a linear regression model.
 
-## Western blot
+### Western blot
 
 The levels of autophosphorylation of purified Btk samples were monitored using non-specific anti-phosphortyrosine antibody 4G10 (EMDMillipore). The total amount of Btk was monitored using coomassie-blue stained SDS-PAGE. For each set of experiments, 10 μl of each Btk sample was loaded on two 12% SDS-PAGE gels. The two gels were run at 250 V, 400 mA for 35 min at room temperature.
 
@@ -327,34 +715,58 @@ One gel was transferred to 50 ml fixing buffer containing 50% ethanol and 10% ac
 
 The other gel was transferred into western blot transfer buffer that contains 25 mM Tris at pH 7.4, 192 mM glycine, and 20% methanol and was incubated at room temperature for 15 min. Protein samples were then transferred to PVDF membranes from the gel using the semi-dry transfer device TRANS-BLOT (Bio-Rad). The membranes were then blocked for 1 hr in TBST buffer (20 mM Tris pH 7.5, 150 mM NaCl, 0.1% Tween-20) supplemented with 5% dry milk, and incubated with primary antibody 4G10 (1:2000 dilution) at 4°C overnight. The membranes were then washed three times in TBST buffer, and incubated with HRP-linked anti-mouse IgG antibody (1:5000 dilution) in TBST buffer at room temperature for 1 hr. The membranes were then washed three times in TBST buffer, incubated with 0.5 ml WesternBright Quantum (Advansta, Menlo Park CA) for 1 min, and were imaged using ImageLab (Bio-Rad). The western blots were reproduced at least three times and the most representative ones were chose to present.
 
-## Small unilamellar vesicle preparation
+### Small unilamellar vesicle preparation
 
 Three lipids, 18:1 DOPS, 18:1 (Δ9-Cis)(DOPC), and 18:1 PI(3,4,5) P3 (Avanti, Alabaster AL) were dissolved in chloroform and stored at −20°C. For liposome preparations, the three lipids are mixed in a test tube at the desired molar ratio (10:75:5); chloroform was evaporated under a nitrogen atmosphere for 15 min; the samples were transferred to a vacuum desiccator and dried overnight at room temperature. Dry films were hydrated in buffer containing 25 mM Tris-HCl (pH 7.4) and 100 mM NaCl to a concentration of 10 mg/ml.
 
 The hydrated liposomes are heterogeneous in size and the diameters of the liposomes vary from ∼50 nm to ≥ 1 μm. To prepare small unilamellar vesicles, hydrated liposomes were subject to seven freeze–thaw cycles using liquid nitrogen, followed by extrusion through 100-nm filters (Avestin, Canada). The liposomes prepared using this method have diameters around 100 nm, as measured using negative staining electron microscopy (data not shown).
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 The isothermal titration calorimetry experiments were performed using MicroCal-autoITC 200 (GE Healthcare). Various Btk samples are diluted in the binding buffer containing 150 mM NaCl, 25 mM Tris, pH 7.5, and 5% glycerol to a final concentration of 20 μM. IP4 and IP6 were diluted using the same buffer to a final concentration of 300 μM. Each set of ITC experiments included three samples: 420 μl of Btk protein sample in the cell, 150 μl of IP4 or IP6 at a concentration 300 μM in the syringe, and 500 μl of binding buffer. All samples are stored at 4°C before the titration experiments.
 
 The ITC experiments were performed at 20°C. An initial injection of 0.5 μl was excluded from data analysis, followed by 14 injections of 3 μl each, separated by 180 s with a filter period of 5 s. The protein solution was stirred at 500 rpm over the course of titration. Titration curves were fit with a one-site binding model. The three fitting parameters are stoichiometry, N, association constant, Ka and binding enthalpy, ΔH. The binding entropy is then calculated using formula: ΔS = (ΔH + RTlnKa)/T. Thermodynamic parameters for various Btk constructs binding to IP4 and IP6 are listed in Table 1.
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 Molecular dynamics trajectories were generated using the Gromacs 4.6.2 package (Pronk et al., 2013) using the ff99SB-ILDN force field (Lindorff-Larsen et al., 2010). All simulations were in water, using the TIP3P water model; appropriate counterions (Na+ and Cl−) were added to neutralize the net charges. After initial energy minimization, the systems were subjected to 100 ps of constant number, volume and temperature (NVT) equilibration, during which the system was heated to 300 K. This was followed by a short equilibration at constant number, pressure, and temperature (NPT, 100 ps). Finally, the production simulations were performed under NPT conditions, with v-rescale thermostats in Gromacs 4.6.2, respectively, in the absence of positional restraints. Periodic boundary conditions were imposed, and particle-mesh Ewald summations were used for long-range electrostatics and the van der Waals cut-off is set at 10 Å. A time step of 2 fs was employed and the structures were stored every 2 ps. His 143, Cys 154, Cys 155, and Cys 165, which coordinate Zn2+ in the PH domain were set to be deprotonated. No additional positional restrains are applied to the Zn2+ ion, and its sp3 tetrahedral coordination remains intact during all MD simulations.
 
 The visual molecular dynamics (VMD) analysis toolkit (Humphrey et al., 1996) was used to make some of the root mean square deviation (RMSD) measurements, others were done using PyMol.
 
-## Homology modeling
+### Homology modeling
 
 The active conformation of the Btk kinase domain was modeled based on that of the Lck kinase domain (PDB: 3LCK) (Sicheri et al., 1997), using Modeller (Eswar et al., 2006). The sequence of the kinase domains of Lck and Btk were aligned by ClustalW (Larkin et al., 2007). We chose the model with the lowest Discrete Optimized Protein Energy (DOPE: −0.84) as representative of the active conformation of Btk.
 
-## Estimate of membrane-bound Btk concentration
+### Estimate of membrane-bound Btk concentration
 
-We estimated the effective concentration (C) of Btk on a lipid vesicle by the following equation:C=NV×Na.
+We estimated the effective concentration (C) of Btk on a lipid vesicle by the following equation:
 
-N is the number of Btk molecules on a lipid vesicle, Na is the Avogadro number, and V is the effective volume in which Btk moves on a lipid N0=AA0 vesicle. An estimate for V is given by:V=A×L.
+$$
+C=\frac{N}{V\timesN_{a}}.
+$$
 
-Here, A is the surface area of a lipid vesicle and L is the length of a Btk molecule, ∼ 100 Å, as measured from the composite model of full-length Btk. Assuming all the PIP3 molecules (molar fraction, f) are bound to Btk, then,N=f×N0,where N0 is the total number of lipids on a vesicle. This is given by,N0=AA0,in which A0 is the surface area of a lipid molecule. We assume all lipids have the same surface area for their headgroups, which is roughly 0.6 nm2 (Gulik-Krzywicki et al., 1967). Therefore C is given by:C=NV×N0=f×AA0A×L×Na=fA0×L×Na.
+N is the number of Btk molecules on a lipid vesicle, Na is the Avogadro number, and V is the effective volume in which Btk moves on a lipid $N_{0}=\frac{A}{A_{0}}$ vesicle. An estimate for V is given by:
+
+$$
+V=A\timesL.
+$$
+
+Here, A is the surface area of a lipid vesicle and L is the length of a Btk molecule, ∼ 100 Å, as measured from the composite model of full-length Btk. Assuming all the PIP3 molecules (molar fraction, f) are bound to Btk, then,
+
+$$
+N=f\timesN_{0},
+$$
+
+where N0 is the total number of lipids on a vesicle. This is given by,
+
+$$
+N_{0}=\frac{A}{A_{0}},
+$$
+
+in which A0 is the surface area of a lipid molecule. We assume all lipids have the same surface area for their headgroups, which is roughly 0.6 nm2 (Gulik-Krzywicki et al., 1967). Therefore C is given by:
+
+$$
+C=\frac{N}{V\timesN_{0}}=\frac{f\times\frac{A}{A_{0}}}{A\timesL\timesN_{a}}=\frac{f}{A_{0}\timesL\timesN_{a}}.
+$$
 
 In our experiments, f = 0.05, A0 = ∼60 Å2, Na = 6.03 × 1023 mol−1, and L = ∼100 Å, giving a value of 12 mM for C.

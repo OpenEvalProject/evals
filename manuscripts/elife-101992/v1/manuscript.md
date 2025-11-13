@@ -8,11 +8,11 @@
 
 ### Affiliations
 
-1. https://ror.org/031z8pr38 Neuroscience & Behavior Program, Mount Holyoke College South Hadley United States
-2. https://ror.org/031z8pr38 Department of Mathematics & Statistics, Mount Holyoke College South Hadley United States
-3. https://ror.org/0072zz521 Neuroscience & Behavior Program, University of Massachusetts Amherst United States
-4. https://ror.org/0072zz521 Department of Psychological & Brain Sciences, University of Massachusetts Amherst United States
-5. https://ror.org/0072zz521 Institute of Applied Life Sciences, University of Massachusetts Amherst United States
+1. Neuroscience & Behavior Program, Mount Holyoke College South Hadley United States ([ROR:031z8pr38](https://ror.org/031z8pr38))
+2. Department of Mathematics & Statistics, Mount Holyoke College South Hadley United States ([ROR:031z8pr38](https://ror.org/031z8pr38))
+3. Neuroscience & Behavior Program, University of Massachusetts Amherst United States ([ROR:0072zz521](https://ror.org/0072zz521))
+4. Department of Psychological & Brain Sciences, University of Massachusetts Amherst United States ([ROR:0072zz521](https://ror.org/0072zz521))
+5. Institute of Applied Life Sciences, University of Massachusetts Amherst United States ([ROR:0072zz521](https://ror.org/0072zz521))
 
 † Corresponding author
 
@@ -26,7 +26,7 @@ Over the past three decades, accumulating evidence supports the role of sleep ne
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/101992/elife-101992-fig1-v1.jpg)
 
-**Figure 1.:** (A) The origin of neural oscillations during sleep. SO slow oscillation, SP sleep spindle, SWR sharp wave ripple. In each subgraph, the vertical line indicates the typical amplitude of that sleep wave, while the horizontal line indicates the typical frequency and duration. Note that SPs also propagate along the cortex, and the figure only displays the origin. (B) Electrophysiology representation diagram of the SO-SP coupling. SO and SP amplitudes are normalized. The phase of SOs when SPs are at their maximum instantaneous amplitude is recorded as the coupling phase. The occurrence of SPs and SO-SP coupling is not necessarily continuous as shown in the diagram. (C) Coupling preferred phase and strength diagram. (Left) The phase and strength used in the circular plot are simulated data from existing dataset for visualization purposes only. At the group level, the mean circular direction shows the preferred SO phase, while the mean vector length shows the strength of the precise coupling. (Right) The phase of SO peaks is noted as 0, while the phase of SO troughs is noted as .±π\begin{document}$\pm\pi$\end{document}
+**Figure 1.:** (A) The origin of neural oscillations during sleep. SO slow oscillation, SP sleep spindle, SWR sharp wave ripple. In each subgraph, the vertical line indicates the typical amplitude of that sleep wave, while the horizontal line indicates the typical frequency and duration. Note that SPs also propagate along the cortex, and the figure only displays the origin. (B) Electrophysiology representation diagram of the SO-SP coupling. SO and SP amplitudes are normalized. The phase of SOs when SPs are at their maximum instantaneous amplitude is recorded as the coupling phase. The occurrence of SPs and SO-SP coupling is not necessarily continuous as shown in the diagram. (C) Coupling preferred phase and strength diagram. (Left) The phase and strength used in the circular plot are simulated data from existing dataset for visualization purposes only. At the group level, the mean circular direction shows the preferred SO phase, while the mean vector length shows the strength of the precise coupling. (Right) The phase of SO peaks is noted as 0, while the phase of SO troughs is noted as $\pm\pi$.
 
 Given that non-invasive recordings (e.g.; EEG) cannot accurately detect SWRs in deep brain structures, electrophysiological studies in humans primarily focus on the role of SOs and SPs in memory consolidation. Consistent evidence indicates that, following intensive learning, SP density and its co-occurrence with SOs significantly increase compared to baseline nights and control groups (Gais et al., 2002; Mölle et al., 2009; Mölle et al., 2004; Schmidt et al., 2006; Solano et al., 2022). Correspondingly, measures of SPs and their coupling with SOs predict over-sleep retention performance of newly acquired memories (Holz et al., 2012; Nicolas et al., 2022; Kumral et al., 2023; Kurdziel et al., 2013; Rodheim et al., 2023).
 
@@ -74,163 +74,532 @@ The purpose of the current meta-analysis and review is to aggregate studies of S
 
 ## Results
 
-## Study characteristics
+### Study characteristics
 
 In the final dataset of 23 studies included in the data analysis, the participants had an average age of 24.8 years, ranging from 7.3 to 78.0. The average female representation among participants was 49.5%. The average sample size for each study was 31.7 participants, ranging from 10 to 151. Each study contributed four effect sizes for each coupling measure on average. The included studies consist of 17 overnight and 6 nap studies, in which a total of 19 tasks for declarative memory and 6 tasks for procedural memory were measured. In addition, we assessed the risk of bias for each study before conducting data analysis (see Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/101992/elife-101992-fig3-v1.jpg)
 
-**Figure 3.:** Sterne et al., 2016).The most significant heterogeneity is revealed in the measurement of outcome, while the overall assessment indicated a moderate risk of bias across studies after requesting unreported results and data transformation. Based on the complexity of the type of measures involved in phase-amplitude coupling analysis, we believe that this degree of risk of bias is acceptable. Specific evaluations for each study were reported in Appendix 1.
+**Figure 3.:** The most significant heterogeneity is revealed in the measurement of outcome, while the overall assessment indicated a moderate risk of bias across studies after requesting unreported results and data transformation. Based on the complexity of the type of measures involved in phase-amplitude coupling analysis, we believe that this degree of risk of bias is acceptable. Specific evaluations for each study were reported in Appendix 1.
 
-## Coupling phase
+### Coupling phase
 
 We first assessed the association between the preferred phase of SO-SP coupling and memory retention following sleep. 23 studies (k = 90) were included in the Bayesian hierarchical model. We transformed the circular-linear correlation to standardized coefficients (see Methods: Standardized circular-linear correlation coefficient). Forest and regression plots for overall and moderation models are reported in Figure 4. In addition, the results of hypothesis tests for the overall and moderator models are reported in Table 1 using the Bayes factor and posterior probability. Consistent with the funnel plot (Appendix 4—figure 1A), neither Egger’s regression (p = 0.59) nor rank correlation test (p = 0.52) found the existence of publication bias.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/101992/elife-101992-fig4-v1.jpg)
 
-**Figure 4.:** (A) Overall model forest plot at study-level. Dashed lines indicate the 95% credible interval (CrI) of the pooled effect size. The black point and error bar for each study show the adjusted estimation of effect size and 95% CrI combining data and prior information. The gray dots under each distribution show raw effect sizes of each study. Effect size-level plots can be found in Supplementary file 3. (B) Meta regression plot with age as moderator. Blue lines represent 200 overplotted spaghetti fit lines to visualize predictions. (C) Moderator-level forest plot. Each box represents a type of moderator. Mixed effect sizes with mixed conditions from different factor levels listed above. Weight Stacked weight of each moderation model in the paired model performance comparison between the moderator and overall (intercept-only) model. The stacked weight of the overall model in each pair of comparisons can be calculated as 1 - weight of the moderation model.Figure 4—source data 1.
+**Figure 4.:** (A) Overall model forest plot at study-level. Dashed lines indicate the 95% credible interval (CrI) of the pooled effect size. The black point and error bar for each study show the adjusted estimation of effect size and 95% CrI combining data and prior information. The gray dots under each distribution show raw effect sizes of each study. Effect size-level plots can be found in Supplementary file 3. (B) Meta regression plot with age as moderator. Blue lines represent 200 overplotted spaghetti fit lines to visualize predictions. (C) Moderator-level forest plot. Each box represents a type of moderator. Mixed effect sizes with mixed conditions from different factor levels listed above. Weight Stacked weight of each moderation model in the paired model performance comparison between the moderator and overall (intercept-only) model. The stacked weight of the overall model in each pair of comparisons can be calculated as 1 - weight of the moderation model.
 
-## Overall model
+**Table 1.**
+ Result of directional hypothesis tests for each pair of factor levels (conditions) in overall and each moderation model of the coupling phase-memory association.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Moderator</th>
+      <th>Overall</th>
+      <th colspan="3">Memory Task</th>
+      <th>Age</th>
+      <th>Spindle</th>
+      <th colspan="3">PSG Channel</th>
+      <th>Stage</th>
+      <th>Bout</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Condition</td>
+      <td>H1</td>
+      <td>Verbal</td>
+      <td>Emotional</td>
+      <td>Spatial</td>
+      <td>Younger</td>
+      <td>Fast</td>
+      <td>Frontal</td>
+      <td>Frontal</td>
+      <td>Central</td>
+      <td>N2</td>
+      <td>Night</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>H0</td>
+      <td>Motor</td>
+      <td>Motor</td>
+      <td>Motor</td>
+      <td>Older</td>
+      <td>Slow</td>
+      <td>Central</td>
+      <td>Posterior</td>
+      <td>Posterior</td>
+      <td>SWS</td>
+      <td>Nap</td>
+    </tr>
+    <tr>
+      <td>BF10</td>
+      <td>58.35</td>
+      <td>1.30</td>
+      <td>1.09</td>
+      <td>0.07</td>
+      <td>160.94</td>
+      <td>11.39</td>
+      <td>13.58</td>
+      <td>6.13</td>
+      <td>0.86</td>
+      <td>1.74</td>
+      <td>2.23</td>
+    </tr>
+    <tr>
+      <td>Probability</td>
+      <td>0.98</td>
+      <td>0.57</td>
+      <td>0.52</td>
+      <td>0.06</td>
+      <td>0.99</td>
+      <td>0.92</td>
+      <td>0.93</td>
+      <td>0.86</td>
+      <td>0.46</td>
+      <td>0.63</td>
+      <td>0.69</td>
+    </tr>
+  </tbody>
+</table>
+
+_Condition conditions hypothesized to be associated with stronger phase-memory association than other factor levels; Control Variables hypothesized to be associated with weaker phase-memory association; BF10 Bayes factor in favor of H1 over H0; N2 nREM2 stage; SWS slow-wave sleep._
+
+#### Overall model
 
 The analysis of a random effect model on the overall phase-memory association revealed that, without considering moderating factors, very strong and consistent evidence supports a small-sized association between the preferred coupling phase and memory consolidation across studies, rz,pooled = 0.07 [0.01, 0.13], BF10 = 58.35, probability = 0.98. This implies that the likelihood of H1 is over 58 times greater than H0, covering approximately 98% of posterior samples.
 
 Multilevel model analysis indicates a heterogeneity similar to typical correlational meta-analyses (Van Erp et al., 2017) (Mg = 0.13), including a between-study heterogeneity of g = 0.07 [0.00, 0.16], as well as a within-study heterogeneity of g = 0.04 [0.00, 0.11]. Focal analysis showed no difference from the original overall model, with an effect size rz,pooled = 0.07 [−0.06, 0.19]. Sensitivity analysis regarding prior robustness also revealed similar results (see Appendix 3—table 1).
 
-## Moderator and sensitivity models
+#### Moderator and sensitivity models
 
 Sufficient evidence shows that moderators including memory tasks, age, spindle types, and PSG channels provide additional predictive power with strong favor for each hypothesis (all contain BF10≤ 0.1 or ≥ 10). Figure 4C indicates that most mixed conditions have a considerably higher uncertainty compared to other normal conditions.
 
-## Memory task
+##### Memory task
 
 Contrary to the assumption, there is no evidence to support a difference of phase-memory association between motor memory (k = 36) and verbal memory retention (k = 35, rz = Δ0.01, BF10 = 1.30 , probability = 0.57), as well as between motor and emotional memory retention (k = 12, rz = Δ0.01, BF10 = 1.09, probability = 0.52). However, strong evidence supports that spatial tasks have a considerably lower phase-memory association compared to motor tasks (k = 7, rz = Δ0.19, BF10 = 0.07, probability = 0.06). The task model has a weight of 0.29, which indicates that the moderator effect of memory task is relatively weak and the task model performed worse than the overall model.
 
-## Participant age
+##### Participant age
 
-As shown in Figure 4B, extremely strong evidence supports that with the increase of age, the slope of correlation exhibits a strongly decreasing trend (rzβ=Δ−0.006[−0.010,−0.001]\begin{document}$r_{z\beta}=\Delta-0.006$\end{document} [-0.010, -0.001], BF10=160.94\begin{document}$BF_{10}=160.94$\end{document}, probability = 0.99). Each ten-year increase in age is associated with a decrease in effect size of 0.06, which is consistent with our hypothesis that precise SO-SP coupling becomes less predictive of memory retention with the increase of age. The moderator effect of age becomes less pronounced during development after excluding the older adult data that represent aging effects, rzβ=Δ−0.005[−0.013,0.004]\begin{document}$r_{z\beta}=\Delta-0.005$\end{document} [-0.013, 0.004], BF10=5.51\begin{document}$BF_{10}=5.51$\end{document}, showing a moderate effect. Accounting for the factor of age group significantly increased the predictive power compared to the intercept-only model, given a stacked weight of 1.00.
+As shown in Figure 4B, extremely strong evidence supports that with the increase of age, the slope of correlation exhibits a strongly decreasing trend ($r_{z\beta}=Δ−0.006[−0.010,−0.001]$ [-0.010, -0.001], $BF_{10}=160.94$, probability = 0.99). Each ten-year increase in age is associated with a decrease in effect size of 0.06, which is consistent with our hypothesis that precise SO-SP coupling becomes less predictive of memory retention with the increase of age. The moderator effect of age becomes less pronounced during development after excluding the older adult data that represent aging effects, $r_{z\beta}=Δ−0.005[−0.013,0.004]$ [-0.013, 0.004], $BF_{10}=5.51$, showing a moderate effect. Accounting for the factor of age group significantly increased the predictive power compared to the intercept-only model, given a stacked weight of 1.00.
 
-## Spindle frequency
+##### Spindle frequency
 
-Moderation model with SP frequency range highlights a stronger association between memory retention and SO-fast SP coupling phase (k=43)\begin{document}$(k=43)$\end{document} rather than slow SPs (k=28\begin{document}$k=28$\end{document}, rz=Δ−0.07\begin{document}$r_{z}=\Delta-0.07$\end{document}, BF10=11.39\begin{document}$BF_{10}=11.39$\end{document}, probability = 0.92), consistent with the hypothesis based on studies comparing the role of different SP types on the memory retention (Bastian et al., 2022; Mölle and Born, 2011b). The SP model performed as well as the overall model, weight = 0.48.
+Moderation model with SP frequency range highlights a stronger association between memory retention and SO-fast SP coupling phase $(k=43)$ rather than slow SPs ($k=28$, $r_{z}=Δ−0.07$, $BF_{10}=11.39$, probability = 0.92), consistent with the hypothesis based on studies comparing the role of different SP types on the memory retention (Bastian et al., 2022; Mölle and Born, 2011b). The SP model performed as well as the overall model, weight = 0.48.
 
-## PSG channel
+##### PSG channel
 
-The strongest pooled correlation was observed in the frontal electrode clusters (k=29)\begin{document}$(k=29)$\end{document}, compared to the central (k=36\begin{document}$k=36$\end{document}, rz=Δ−0.08\begin{document}$r_{z}=\Delta-0.08$\end{document}, BF10=13.58\begin{document}$BF_{10}=13.58$\end{document}, probability = 0.93), and posterior channels (k=22\begin{document}$k=22$\end{document}, rz=Δ−0.07\begin{document}$r_{z}=\Delta-0.07$\end{document}, BF10=6.13\begin{document}$BF_{10}=6.13$\end{document}, probability = 0.86), which represents a moderate-to-strong moderation effect. The frontal area has the largest phase-memory association, rz=0.12[0.03,0.21]\begin{document}$r_{z}=0.12$\end{document} [0.03, 0.21]. Effect sizes in posterior areas do not differ from central areas (rz=Δ−0.01\begin{document}$r_{z}=\Delta-0.01$\end{document}, BF10=0.86\begin{document}$BF_{10}=0.86$\end{document}, probability = 0.46).
+The strongest pooled correlation was observed in the frontal electrode clusters $(k=29)$, compared to the central ($k=36$, $r_{z}=Δ−0.08$, $BF_{10}=13.58$, probability = 0.93), and posterior channels ($k=22$, $r_{z}=Δ−0.07$, $BF_{10}=6.13$, probability = 0.86), which represents a moderate-to-strong moderation effect. The frontal area has the largest phase-memory association, $r_{z}=0.12[0.03,0.21]$ [0.03, 0.21]. Effect sizes in posterior areas do not differ from central areas ($r_{z}=Δ−0.01$, $BF_{10}=0.86$, probability = 0.46).
 
-## Sleep stage and bout
+##### Sleep stage and bout
 
-The sleep stage appeared to be a weak predictor with a weight of 0.00, in which the nREM2 stage (k=18)\begin{document}$(k=18)$\end{document} could not predict a higher phase-memory association than SWS (k=30\begin{document}$k=30$\end{document}, rz=Δ−0.03\begin{document}$r_{z}=\Delta-0.03$\end{document}, BF10=1.74\begin{document}$BF_{10}=1.74$\end{document}, probability = 0.63). The sleep bout also revealed no difference in phase-memory association between overnight sleep (k=73)\begin{document}$(k=73)$\end{document} and nap condition (k=17\begin{document}$k=17$\end{document}, rz=Δ−0.03\begin{document}$r_{z}=\Delta-0.03$\end{document}, BF10=2.23\begin{document}$BF_{10}=2.23$\end{document}, probability = 0.69), with no predictive role (weight = 0.00) compared to the overall model.
+The sleep stage appeared to be a weak predictor with a weight of 0.00, in which the nREM2 stage $(k=18)$ could not predict a higher phase-memory association than SWS ($k=30$, $r_{z}=Δ−0.03$, $BF_{10}=1.74$, probability = 0.63). The sleep bout also revealed no difference in phase-memory association between overnight sleep $(k=73)$ and nap condition ($k=17$, $r_{z}=Δ−0.03$, $BF_{10}=2.23$, probability = 0.69), with no predictive role (weight = 0.00) compared to the overall model.
 
-## Spatiotemporal analysis of coupling phase
+### Spatiotemporal analysis of coupling phase
 
-By aggregating individual-level data across studies, we found that phase of SO-fast SP coupling has a significant quadratic association with memory retention in frontal regions (see Figure 5A), r=0.26\begin{document}$r=0.26$\end{document}, rz=0.20\begin{document}$r_{z}=0.20$\end{document}, p<0.01\begin{document}$p \lt 0.01$\end{document}. However, this association is not significant in either central (r=0.11\begin{document}$r=0.11$\end{document}, rz=0.05\begin{document}$r_{z}=0.05$\end{document}, p=0.22\begin{document}$p=0.22$\end{document}) or posterior regions (r=0.08\begin{document}$r=0.08$\end{document}, rz=0.01\begin{document}$r_{z}=0.01$\end{document}, p=0.47\begin{document}$p=0.47$\end{document}).
+By aggregating individual-level data across studies, we found that phase of SO-fast SP coupling has a significant quadratic association with memory retention in frontal regions (see Figure 5A), $r=0.26$, $r_{z}=0.20$, $p<0.01$. However, this association is not significant in either central ($r=0.11$, $r_{z}=0.05$, $p=0.22$) or posterior regions ($r=0.08$, $r_{z}=0.01$, $p=0.47$).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/101992/elife-101992-fig5-v1.jpg)
 
-**Figure 5.:** (A) Quadratic regression of the phase-memory association under different regions of PSG channels aggregated from studies included in the meta-analysis. 0 peak of SO upstate; ±π trough of SO downstate; r circular-linear correlation coefficient; r standardized circular-linear correlation coefficient. Bars represent the mean memory retention scores per zπ/4 radian (45°). The dashed vertical line represents the mean preferred phase across studies. The colored quadratic fit line represents the direction of the relationship. The direction of their relationship gradually flips as the PSG channel moves from the front to the posterior area. Only under the frontal and central channels do fit lines display a quadratic relationship, with a peak of memory score near the up-state peak of SOs. In posterior channels, in contrast, the relationship is convex, although it is not significant. Non-significant quadratic regressions between SO-slow SP coupling and memory are reported in Appendix 6. (B) Posterior distributions of mean preferred phases from the Bayesian circular mixed-effect model. The circular posterior distribution is shown in the top-right corner, and the area between two black lines is projected on a linear scale in the main graph. The vertical line reflects the up-state peak of SOs. Points and error bars denote the mean and 95% credible intervals of phases detected from each channel cluster. Phase values are reported as radians. (C) Circular plot of the preferred coupling phase. From top to bottom, frontal, central, and posterior. The direction of each colored dot represents the preferred coupling phase of each subject recorded from PSG channels in each cluster. The direction of the mean resultant vector indicates the mean preferred coupling phase across subjects, the width indicates the 95% credible interval of the mean coupling phase, the length from 0 (center) to 1 (circumference) indicates the consistency of coupling phase across subjects.
+**Figure 5.:** (A) Quadratic regression of the phase-memory association under different regions of PSG channels aggregated from studies included in the meta-analysis. 0 peak of SO upstate; ±π trough of SO downstate; r circular-linear correlation coefficient; rz standardized circular-linear correlation coefficient. Bars represent the mean memory retention scores per π/4 radian (45°). The dashed vertical line represents the mean preferred phase across studies. The colored quadratic fit line represents the direction of the relationship. The direction of their relationship gradually flips as the PSG channel moves from the front to the posterior area. Only under the frontal and central channels do fit lines display a quadratic relationship, with a peak of memory score near the up-state peak of SOs. In posterior channels, in contrast, the relationship is convex, although it is not significant. Non-significant quadratic regressions between SO-slow SP coupling and memory are reported in Appendix 6. (B) Posterior distributions of mean preferred phases from the Bayesian circular mixed-effect model. The circular posterior distribution is shown in the top-right corner, and the area between two black lines is projected on a linear scale in the main graph. The vertical line reflects the up-state peak of SOs. Points and error bars denote the mean and 95% credible intervals of phases detected from each channel cluster. Phase values are reported as radians. (C) Circular plot of the preferred coupling phase. From top to bottom, frontal, central, and posterior. The direction of each colored dot represents the preferred coupling phase of each subject recorded from PSG channels in each cluster. The direction of the mean resultant vector indicates the mean preferred coupling phase across subjects, the width indicates the 95% credible interval of the mean coupling phase, the length from 0 (center) to 1 (circumference) indicates the consistency of coupling phase across subjects.
 
 Another important finding is a considerable shift of the preferred coupling phase from frontal to posterior regions, similar to Kurz et al., 2021. After taking into account the repeated measurement, the frontal area has a preferred phase around 0.13 rad [0.00, 0.27], which is the closest to the peak of SO (0 rad). The coupling consistently happened earlier when moving towards further dorsally, reflected by the phase in central (−0.27 rad [−0.37, −0.18]) and posterior area (−0.41 rad [−0.54,−0.27]).
 
-Extremely strong evidence supports a considerable difference of the preferred coupling phase between frontal and central areas, Δ=−0.40\begin{document}$\Delta=-0.40$\end{document} rad, BF10=+∞\begin{document}$BF_{10}=+\infty$\end{document}, probability = 1.00; between frontal and posterior areas, Δ=−0.54\begin{document}$\Delta=-0.54$\end{document} rad, BF10=+∞\begin{document}$BF_{10}=+\infty$\end{document} (An ‘infinite’ BF10 value indicates that all posterior samples are overwhelmingly compatible with H1, given the data and priors. It reflects a reporting convention where BF10 becomes unbounded as the likelihood under H0 approaches zero.), probability = 1.00; and between central and posterior areas, Δ=−0.14\begin{document}$\Delta=-0.14$\end{document} rad, BF10=34.4\begin{document}$BF_{10}=34.4$\end{document}, probability = 0.97. Differences can be observed from the shift of the posterior distribution in Figure 5B and the location of data clusters in Figure 5C. Moreover, the consistency of coupling phase across subjects also decreases from frontal (z=0.69\begin{document}$z=0.69$\end{document}, p<0.05\begin{document}$p \lt 0.05$\end{document}, Rayleigh test) to posterior areas (z=0.59\begin{document}$z=0.59$\end{document}, p<0.05\begin{document}$p \lt 0.05$\end{document}, Rayleigh test). The differences in coupling phase can explain part of the discrepancy of the timing of coupling occurrence among previous studies (Bastian et al., 2022; Hahn et al., 2020; Muehlroth et al., 2019; Joechner et al., 2023).
+Extremely strong evidence supports a considerable difference of the preferred coupling phase between frontal and central areas, $Δ=−0.40$ rad, $BF_{10}=+∞$, probability = 1.00; between frontal and posterior areas, $Δ=−0.54$ rad, $BF_{10}=+∞$ (An ‘infinite’ BF10 value indicates that all posterior samples are overwhelmingly compatible with H1, given the data and priors. It reflects a reporting convention where BF10 becomes unbounded as the likelihood under H0 approaches zero.), probability = 1.00; and between central and posterior areas, $Δ=−0.14$ rad, $BF_{10}=34.4$, probability = 0.97. Differences can be observed from the shift of the posterior distribution in Figure 5B and the location of data clusters in Figure 5C. Moreover, the consistency of coupling phase across subjects also decreases from frontal ($z=0.69$, $p<0.05$, Rayleigh test) to posterior areas ($z=0.59$, $p<0.05$, Rayleigh test). The differences in coupling phase can explain part of the discrepancy of the timing of coupling occurrence among previous studies (Bastian et al., 2022; Hahn et al., 2020; Muehlroth et al., 2019; Joechner et al., 2023).
 
 In summary, we observed that SO-fast SP coupling in the frontal region occurred at the latest phase observed across all regions, characterized by the highest precision and strength of phase-locking. We also found the strongest phase-memory association in frontal regions following a typical quadratic relationship.
 
-## Spindle amplitude
+### Spindle amplitude
 
-We next assessed the association between the amplitude/power of SP and memory retention during the learning night. 18 original studies (k=78)\begin{document}$(k=78)$\end{document} were included in the Bayesian hierarchical model. The mean amplitude of fast SPs (in μV) is 33.99 [26.44,41.55], while the mean amplitude of slow SPs is 39.41 [33.61, 45.22]. Forest and regression plots for the overall and moderation models are reported in Figure 6. In addition, the results of hypothesis tests for the overall and moderator models are reported in Table 2. The publication bias of the amplitude-memory association studies is unclear but potentially provides evidence of asymmetry. Egger’s regression test (p=0.02)\begin{document}$(p=0.02)$\end{document} indicated potential publication bias, whereas the rank correlation test (p=0.11)\begin{document}$(p=0.11)$\end{document} and funnel plot (Appendix 4—figure 1C) did not suggest significant bias.
+We next assessed the association between the amplitude/power of SP and memory retention during the learning night. 18 original studies $(k=78)$ were included in the Bayesian hierarchical model. The mean amplitude of fast SPs (in μV) is 33.99 [26.44,41.55], while the mean amplitude of slow SPs is 39.41 [33.61, 45.22]. Forest and regression plots for the overall and moderation models are reported in Figure 6. In addition, the results of hypothesis tests for the overall and moderator models are reported in Table 2. The publication bias of the amplitude-memory association studies is unclear but potentially provides evidence of asymmetry. Egger’s regression test $(p=0.02)$ indicated potential publication bias, whereas the rank correlation test $(p=0.11)$ and funnel plot (Appendix 4—figure 1C) did not suggest significant bias.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/101992/elife-101992-fig6-v1.jpg)
 
-**Figure 6.:** (A) Overall model forest plot at study-level. The solid vertical line represents the mean Pearson correlation coefficient under the null hypothesis. Dashed lines indicate the 95% credible interval (CrI) of the pooled effect size. The black point and error bar for each study show the adjusted estimation of effect size and 95% CrI combining data and prior information. The gray dots under each distribution show raw effect sizes of each study. Effect size-level plots can be found in Supplementary file 3. (B) Meta regression plot with age as moderator. Blue lines represent 200 overplotted spaghetti fit lines to visualize predictions. (C) Moderator-level forest plot. Each box represents a type of moderator. Mixed effect sizes with mixed conditions from different factor levels listed above. Weight Stacked weight of each moderation model in the paired model performance comparison between the moderator and overall (intercept-only) model. The stacked weight of the overall model in each pair of comparisons can be calculated as 1 weight of the moderation model.Figure 6—source data 1.
+**Figure 6.:** (A) Overall model forest plot at study-level. The solid vertical line represents the mean Pearson correlation coefficient under the null hypothesis. Dashed lines indicate the 95% credible interval (CrI) of the pooled effect size. The black point and error bar for each study show the adjusted estimation of effect size and 95% CrI combining data and prior information. The gray dots under each distribution show raw effect sizes of each study. Effect size-level plots can be found in Supplementary file 3. (B) Meta regression plot with age as moderator. Blue lines represent 200 overplotted spaghetti fit lines to visualize predictions. (C) Moderator-level forest plot. Each box represents a type of moderator. Mixed effect sizes with mixed conditions from different factor levels listed above. Weight Stacked weight of each moderation model in the paired model performance comparison between the moderator and overall (intercept-only) model. The stacked weight of the overall model in each pair of comparisons can be calculated as 1 weight of the moderation model.
 
-## Overall model
+**Table 2.**
+ Result of directional hypothesis tests for each pair of factor levels (conditions) in overall and each moderation model of the SP amplitude-memory association.
 
-We observed that without accounting for moderation effects, there was moderate evidence supporting a positive association between SP peak-to-trough amplitude and memory consolidation, rpooled=0.07[−0.04,0.18]\begin{document}$r_{\text{pooled}}=0.07\ [-0.04,\ 0.18]$\end{document}, BF10=8.28\begin{document}$BF_{10}=8.28$\end{document}, probability = 0.89. The likelihood of our hypothesis being true is about 8 times greater than the null, covering approximately 89% of posterior samples. However, the pooled posterior distribution spans a wide range due to a large standard error, 95% credible intervals of most studies, and the pooled effect size including 0. Three-level analysis has found a relatively high between-study heterogeneity of g=0.20[0.12,0.32]\begin{document}$g=0.20\ [0.12,\ 0.32]$\end{document}, and a normal level of within-study heterogeneity of g=0.04[0.00,0.12]\begin{document}$g=0.04\ [0.00,\ 0.12]$\end{document}. The focal model indicated a slightly larger effect size compared to the overall model, with a pooled effect size rpooled=0.12[−0.03,0.29]\begin{document}$r_{\text{pooled}}=0.12\ [-0.03,\ 0.29]$\end{document}. Prior sensitivity analysis did not reveal different patterns of the association (see Appendix 3—table 2).
 
-## Moderator and sensitivity models
+<table>
+  <thead>
+    <tr>
+      <th>Moderator</th>
+      <th>Overall</th>
+      <th colspan="3">Memory Task</th>
+      <th>Age</th>
+      <th>Spindle</th>
+      <th colspan="3">PSG Channel</th>
+      <th>Stage</th>
+      <th>Bout</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Condition</td>
+      <td>H1</td>
+      <td>Verbal</td>
+      <td>Emotional</td>
+      <td>Spatial</td>
+      <td>Younger</td>
+      <td>Fast</td>
+      <td>Frontal</td>
+      <td>Frontal</td>
+      <td>Central</td>
+      <td>N2</td>
+      <td>Night</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>H0</td>
+      <td>Motor</td>
+      <td>Motor</td>
+      <td>Motor</td>
+      <td>Older</td>
+      <td>Slow</td>
+      <td>Central</td>
+      <td>Posterior</td>
+      <td>Posterior</td>
+      <td>SWS</td>
+      <td>Nap</td>
+    </tr>
+    <tr>
+      <td>BF10</td>
+      <td>8.28</td>
+      <td>22.19</td>
+      <td>1.50</td>
+      <td>9.30</td>
+      <td>3.70</td>
+      <td>12.21</td>
+      <td>1.88</td>
+      <td>24.67</td>
+      <td>13.65</td>
+      <td>5.37</td>
+      <td>2.54</td>
+    </tr>
+    <tr>
+      <td>Probability</td>
+      <td>0.89</td>
+      <td>0.96</td>
+      <td>0.60</td>
+      <td>0.90</td>
+      <td>0.79</td>
+      <td>0.92</td>
+      <td>0.65</td>
+      <td>0.96</td>
+      <td>0.93</td>
+      <td>0.84</td>
+      <td>0.72</td>
+    </tr>
+  </tbody>
+</table>
 
-Although evidence shows that memory type, spindle type, and PSG channel location modulates the magnitude of correlation between SP amplitude and memory (BF10≤0.1\begin{document}$BF_{10}\leq 0.1$\end{document} or ≥10\begin{document}$\geq 10$\end{document}), it is worth noting that all moderation models did not provide enough additional information to increase the performance of model prediction relative to the overall model (all weights ≤0.31\begin{document}$\leq 0.31$\end{document}).
+_Condition conditions hypothesized to be associated with stronger amplitude-memory association than other factor levels; Control Variables hypothesized to be associated with weaker amplitude-memory association; BF10 Bayes factor in favor of H1 over H0; N2 nREM2 stage; SWS slow-wave sleep._
 
-## Memory task
+#### Overall model
 
-The result of memory task moderation model shows that overnight retention of declarative tasks, including verbal tasks (k = 34, r = Δ0.21, BF10 = 22.19, probability = 0.96); emotional tasks (k = 12, r = Δ0.04, BF10 = 1.50, probability = 0.06); and spatial tasks (k = 14, r = Δ0.19, BF10 = 9.30, probability= 0.90), have a higher association with the SP amplitude compared to the motor memory retention (k=36)\begin{document}$(k=36)$\end{document}. It is worth noting that two types of hippocampus-dependent memory, including verbal and spatial memory, both have larger estimates compared to the non-hippocampus-dependent memory. However, only the comparison between verbal and motor tasks provided strong favor for our hypothesis. Strong evidence supports a positive association between the SP amplitude and verbal declarative memory retention, r=0.15[0.01,0.29]\begin{document}$r=0.15\ [0.01,\ 0.29]$\end{document}.
+We observed that without accounting for moderation effects, there was moderate evidence supporting a positive association between SP peak-to-trough amplitude and memory consolidation, $r_{pooled}=0.07[−0.04,0.18]$, $BF_{10}=8.28$, probability = 0.89. The likelihood of our hypothesis being true is about 8 times greater than the null, covering approximately 89% of posterior samples. However, the pooled posterior distribution spans a wide range due to a large standard error, 95% credible intervals of most studies, and the pooled effect size including 0. Three-level analysis has found a relatively high between-study heterogeneity of $g=0.20[0.12,0.32]$, and a normal level of within-study heterogeneity of $g=0.04[0.00,0.12]$. The focal model indicated a slightly larger effect size compared to the overall model, with a pooled effect size $r_{pooled}=0.12[−0.03,0.29]$. Prior sensitivity analysis did not reveal different patterns of the association (see Appendix 3—table 2).
 
-## Spindle frequency
+#### Moderator and sensitivity models
 
-The model results using the SP type as the moderator indicate a stronger positive relationship between fast SP amplitude (k=36)\begin{document}$(k=36)$\end{document} and memory retention compared to slow SP amplitude (k=20,r=Δ−0.09,BF10=12.21,probability=0.92)\begin{document}$(k=20,\ r=\Delta-0.09,\ BF_{10}=12.21,\ \text{probability}=0.92)$\end{document}. A higher fast SP amplitude tends to be associated with a higher memory retention ability, r=0.1[−0.04,0.23]\begin{document}$r=0.1\ [-0.04,\ 0.23]$\end{document}.
+Although evidence shows that memory type, spindle type, and PSG channel location modulates the magnitude of correlation between SP amplitude and memory ($BF_{10}\leq0.1$ or $\geq10$), it is worth noting that all moderation models did not provide enough additional information to increase the performance of model prediction relative to the overall model (all weights $\leq0.31$).
 
-## PSG channel
+##### Memory task
 
-Strong evidence supports differences of pooled correlation between the frontal (k=29)\begin{document}$(k=29)$\end{document} and posterior region (k=16,r=Δ−0.13,BF10=24.67,probability=0.96)\begin{document}$(k=16,\ r=\Delta-0.13,\ BF_{10}=24.67,\ \text{probability}=0.96)$\end{document}, as well as between the central (k=30)\begin{document}$(k=30)$\end{document} and posterior region (r=Δ−0.11,BF10=13.65,probability=0.93)\begin{document}$(r=\Delta-0.11,\ BF_{10}=13.65,\ \text{probability}=0.93)$\end{document}, which is consistent with our assumptions. Frontal regions have the strongest positive amplitude-memory association, r=0.11[−0.02,0.25]\begin{document}$r=0.11\ [-0.02,\ 0.25]$\end{document}. In contrast, we did not observe a notable difference in amplitude-memory association between frontal and central regions (r=Δ−0.02, BF10=1.88, probability=0.65)\begin{document}$(r=\Delta-0.02,\ BF_{10}=1.88,\ \text{probability}=0.65)$\end{document}.
+The result of memory task moderation model shows that overnight retention of declarative tasks, including verbal tasks (k = 34, r = Δ0.21, BF10 = 22.19, probability = 0.96); emotional tasks (k = 12, r = Δ0.04, BF10 = 1.50, probability = 0.06); and spatial tasks (k = 14, r = Δ0.19, BF10 = 9.30, probability= 0.90), have a higher association with the SP amplitude compared to the motor memory retention $(k=36)$. It is worth noting that two types of hippocampus-dependent memory, including verbal and spatial memory, both have larger estimates compared to the non-hippocampus-dependent memory. However, only the comparison between verbal and motor tasks provided strong favor for our hypothesis. Strong evidence supports a positive association between the SP amplitude and verbal declarative memory retention, $r=0.15[0.01,0.29]$.
 
-## Other moderates
+##### Spindle frequency
 
-There is moderate evidence supporting a difference in the amplitude-memory association between N2 and SWS stage (r=Δ−0.12,BF10=5.37,probability=0.84\begin{document}$r=\Delta -0.12, BF_{10}=5.37, \text{probability}=0.84$\end{document}), but no reliable difference between overnight and nap conditions (r=Δ−0.07,BF10=2.54,probability=0.72\begin{document}$r=\Delta -0.07,BF_{10}=2.54,\text{probability}=0.72$\end{document}). Also, the effect of age on the prediction of amplitude-memoryassociation is highly limited (rβ=Δ−0.002[−0.007,0.003],BF10=3.70,probability=0.79\begin{document}$r_{\beta}=\Delta-0.002[-0.007,0.003],BF_{10}=3.70,\text{probability}=0.79$\end{document}).
+The model results using the SP type as the moderator indicate a stronger positive relationship between fast SP amplitude $(k=36)$ and memory retention compared to slow SP amplitude $(k=20,r=Δ−0.09,BF_{10}=12.21,probability=0.92)$. A higher fast SP amplitude tends to be associated with a higher memory retention ability, $r=0.1[−0.04,0.23]$.
 
-## Coupling strength
+##### PSG channel
 
-Next, we measured the association between coupling strength and memory retention. 21 original studies (k=86)\begin{document}$(k=86)$\end{document} were included in the Bayesian hierarchical model. The mean SO-fast SP coupling strength measured by mean vector length is 0.33 [0.27, 0.39], while the mean SO-slow SP coupling strength is 0.23 [0.19, 0.27]. Forest and regression plots for the overall and moderation models are reported in Figure 7. In addition, the results of hypothesis tests for the overall and moderation models are reported in Table 3. Neither Egger’s regression (p=0.53)\begin{document}$(p=0.53)$\end{document} nor rank correlation test (p=0.67)\begin{document}$(p=0.67)$\end{document} showed evidence of potential publication biases.
+Strong evidence supports differences of pooled correlation between the frontal $(k=29)$ and posterior region $(k=16,r=Δ−0.13,BF_{10}=24.67,probability=0.96)$, as well as between the central $(k=30)$ and posterior region $(r=Δ−0.11,BF_{10}=13.65,probability=0.93)$, which is consistent with our assumptions. Frontal regions have the strongest positive amplitude-memory association, $r=0.11[−0.02,0.25]$. In contrast, we did not observe a notable difference in amplitude-memory association between frontal and central regions $(r=Δ−0.02, BF_{10}=1.88, probability=0.65)$.
+
+##### Other moderates
+
+There is moderate evidence supporting a difference in the amplitude-memory association between N2 and SWS stage ($r=Δ−0.12,BF_{10}=5.37,probability=0.84$), but no reliable difference between overnight and nap conditions ($r=Δ−0.07,BF_{10}=2.54,probability=0.72$). Also, the effect of age on the prediction of amplitude-memoryassociation is highly limited ($r_{\beta}=Δ−0.002[−0.007,0.003],BF_{10}=3.70,probability=0.79$).
+
+### Coupling strength
+
+Next, we measured the association between coupling strength and memory retention. 21 original studies $(k=86)$ were included in the Bayesian hierarchical model. The mean SO-fast SP coupling strength measured by mean vector length is 0.33 [0.27, 0.39], while the mean SO-slow SP coupling strength is 0.23 [0.19, 0.27]. Forest and regression plots for the overall and moderation models are reported in Figure 7. In addition, the results of hypothesis tests for the overall and moderation models are reported in Table 3. Neither Egger’s regression $(p=0.53)$ nor rank correlation test $(p=0.67)$ showed evidence of potential publication biases.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/101992/elife-101992-fig7-v1.jpg)
 
-**Figure 7.:** (A) Overall model forest plot at study-level. The solid vertical line represents the mean Pearson correlation coefficient under the null hypothesis. Dashed lines indicate the 95% credible interval (CrI) of the pooled effect size. The black point and error bar for each study show the adjusted estimation of effect size and 95% CrI combining data and prior information. The gray dots under each distribution show raw effect sizes of each study. Effect size-level plots can be found in Supplementary file 3. (B) Meta regression plot with age as moderator. Blue lines represent 200 overplotted spaghetti fit lines to visualize predictions. (C) Moderator-level forest plot. Each box represents a type of moderator. Mixed effect sizes with mixed conditions from different factor levels listed above. Weight Stacked weight of each moderation model in the paired model performance comparison between the moderator and overall (intercept-only) model. The stacked weight of the overall model in each pair of comparisons can be calculated as 1 weight of the moderation model.Figure 7—source data 1.
+**Figure 7.:** (A) Overall model forest plot at study-level. The solid vertical line represents the mean Pearson correlation coefficient under the null hypothesis. Dashed lines indicate the 95% credible interval (CrI) of the pooled effect size. The black point and error bar for each study show the adjusted estimation of effect size and 95% CrI combining data and prior information. The gray dots under each distribution show raw effect sizes of each study. Effect size-level plots can be found in Supplementary file 3. (B) Meta regression plot with age as moderator. Blue lines represent 200 overplotted spaghetti fit lines to visualize predictions. (C) Moderator-level forest plot. Each box represents a type of moderator. Mixed effect sizes with mixed conditions from different factor levels listed above. Weight Stacked weight of each moderation model in the paired model performance comparison between the moderator and overall (intercept-only) model. The stacked weight of the overall model in each pair of comparisons can be calculated as 1 weight of the moderation model.
 
-## Overall model
+**Table 3.**
+ Result of directional hypothesis tests for each pair of factor levels (conditions) in overall and each moderation model of the coupling strength-memory association.
 
-Consistent with results of the overall phase-memory association, extremely strong evidence supports a positive coupling strength-memory association in the intercept-only model (rpooled=0.08 [0.02,0.15],BF10=111.04,probability=0.99)\begin{document}$(r_{\text{pooled}}=0.08\ [0.02,\, 0.15],\, BF_{10}=111.04,\, \text{probability}= 0.99)$\end{document}, which strongly favors our hypothesis. The likelihood of data under our hypothesis is over 110 times greater than the negative direction, covering above 99% of posterior samples.
 
-Similar to typical correlational meta-analyses, the overall model consists of a between-study heterogeneity of g=0.08[0.01,0.17]\begin{document}$g=0.08\ [0.01,\ 0.17]$\end{document}, and a within-study heterogeneity of g=0.05[0.00,0.14]\begin{document}$g=0.05\ [0.00,\ 0.14]$\end{document}. The result of focal analysis showed no difference from the overall model but has a wider credible interval due to a smaller number of effect sizes, rpooled=0.09[−0.02,0.20]\begin{document}$r_{\text{pooled}}=0.09\ [-0.02,\ 0.20]$\end{document}. Sensitivity analysis regarding prior robustness revealed consistent results with the overall model (see Appendix 3—table 3).
+<table>
+  <thead>
+    <tr>
+      <th>Moderator</th>
+      <th>Overall</th>
+      <th colspan="3">Memory Task</th>
+      <th>Age</th>
+      <th>Spindle</th>
+      <th colspan="3">PSG Channel</th>
+      <th>Stage</th>
+      <th>Bout</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Condition</td>
+      <td>H1</td>
+      <td>Verbal</td>
+      <td>Emotional</td>
+      <td>Spatial</td>
+      <td>Younger</td>
+      <td>Fast</td>
+      <td>Frontal</td>
+      <td>Frontal</td>
+      <td>Central</td>
+      <td>N2</td>
+      <td>Night</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>H0</td>
+      <td>Motor</td>
+      <td>Motor</td>
+      <td>Motor</td>
+      <td>Older</td>
+      <td>Slow</td>
+      <td>Central</td>
+      <td>Posterior</td>
+      <td>Posterior</td>
+      <td>SWS</td>
+      <td>Nap</td>
+    </tr>
+    <tr>
+      <td>BF10</td>
+      <td>111.04</td>
+      <td>2.77</td>
+      <td>10.62</td>
+      <td>1.10</td>
+      <td>9.97</td>
+      <td>1.91</td>
+      <td>2.81</td>
+      <td>1.57</td>
+      <td>0.70</td>
+      <td>0.33</td>
+      <td>2.66</td>
+    </tr>
+    <tr>
+      <td>Probability</td>
+      <td>0.99</td>
+      <td>0.73</td>
+      <td>0.91</td>
+      <td>0.52</td>
+      <td>0.91</td>
+      <td>0.66</td>
+      <td>0.74</td>
+      <td>0.61</td>
+      <td>0.41</td>
+      <td>0.25</td>
+      <td>0.73</td>
+    </tr>
+  </tbody>
+</table>
 
-## Moderator and sensitivity models
+_Condition conditions hypothesized to be associated with stronger strength-memory association than other factor levels; Control Variables hypothesized to be associated with weaker strength-memory association; BF10 Bayes factor in favor of H1 over H0; N2 nREM2 stage; SWS slow-wave sleep._
 
-Surprisingly, there is not enough evidence supporting a difference between each pair of factor levels for almost all moderators (all 0.1<BF10<10\begin{document}$0.1 \lt BF_{10} \lt 10$\end{document}, except emotional versus motor tasks), and there was no single moderator model that had better performance than the intercept-only model (all weights <0.5\begin{document}$\lt 0.5$\end{document}). This result represents a relatively consistent strength-memory association, regardless of the impact of moderators.
+#### Overall model
 
-## Memory task
+Consistent with results of the overall phase-memory association, extremely strong evidence supports a positive coupling strength-memory association in the intercept-only model $(r_{pooled}=0.08 [0.02,0.15],BF_{10}=111.04,probability=0.99)$, which strongly favors our hypothesis. The likelihood of data under our hypothesis is over 110 times greater than the negative direction, covering above 99% of posterior samples.
 
-With the exception of the emotional task condition (k=12)\begin{document}$(k=12)$\end{document} which predicts a larger strength-memory association than the motor task condition (k=32,r=Δ−0.20,BF10=10.62,probability=0.91)\begin{document}$(k=32,\ r=\Delta-0.20,\ BF_{10}=10.62,\ \text{probability}=0.91)$\end{document}, the type of memory task only had a weak impact on the association (all other 0.33<BF10<3\begin{document}$0.33 \lt BF_{10} \lt 3$\end{document}). In addition, given the emotional task condition has a relatively small number of effect sizes, the evidence of group differences also needs to be interpreted with caution.
+Similar to typical correlational meta-analyses, the overall model consists of a between-study heterogeneity of $g=0.08[0.01,0.17]$, and a within-study heterogeneity of $g=0.05[0.00,0.14]$. The result of focal analysis showed no difference from the overall model but has a wider credible interval due to a smaller number of effect sizes, $r_{pooled}=0.09[−0.02,0.20]$. Sensitivity analysis regarding prior robustness revealed consistent results with the overall model (see Appendix 3—table 3).
 
-## Age model
+#### Moderator and sensitivity models
 
-The strongest predictive power among moderation models has been found with participants’ age, and performs similarly in the trade-off between complexity and power with the intercept-only model (weight = 0.44). As the age increases, the slope of the correlation exhibits a decreasing trend that is nearly in strong favor of our hypothesis (rβ=Δ−0.003[−0.007,0.001],BF10=9.97,probability=0.91)\begin{document}$(r_{\beta}=\Delta-0.003\ [-0.007,\ 0.001],\ BF_{10}=9.97,\ \text{probability}= 0.91)$\end{document}. The strength-memory association becomes weaker with the increase of age. The effect of age remains moderate after removing older adults from the analysis, rβ=Δ−0.005[−0.015,0.008],BF10=4.05\begin{document}$r_{\beta}=\Delta-0.005\ [-0.015,\ 0.008],\ BF_{10}=4.05$\end{document}.
+Surprisingly, there is not enough evidence supporting a difference between each pair of factor levels for almost all moderators (all $0.1<BF_{10}<10$, except emotional versus motor tasks), and there was no single moderator model that had better performance than the intercept-only model (all weights $<0.5$). This result represents a relatively consistent strength-memory association, regardless of the impact of moderators.
 
-## Other moderators
+##### Memory task
 
-There was no strong evidence of a difference in strength-memory association between the fast (k=41)\begin{document}$(k=41)$\end{document} and slow SPs (k=26,r=Δ−0.02,BF10=1.91,probability=0.66)\begin{document}$(k=26,\ r=\Delta-0.02,\ BF_{10}=1.91,\ \text{probability}=0.66)$\end{document}. Also, there is no evidence for a group difference among any pair of conditions of PSG channels, sleep stages, or sleep bout type (all 0.33<BF10<3\begin{document}$0.33 \lt BF_{10} \lt 3$\end{document}). However, consistent with the results for the coupling phase and SP amplitude, the largest positive strength-memory association moderated by PSG channels was still found in frontal channels (r=0.10[0.00,0.19])\begin{document}$(r=0.10\ [0.00,\ 0.19])$\end{document}.
+With the exception of the emotional task condition $(k=12)$ which predicts a larger strength-memory association than the motor task condition $(k=32,r=Δ−0.20,BF_{10}=10.62,probability=0.91)$, the type of memory task only had a weak impact on the association (all other $0.33<BF_{10}<3$). In addition, given the emotional task condition has a relatively small number of effect sizes, the evidence of group differences also needs to be interpreted with caution.
 
-## Coupling percentage
+##### Age model
 
-The last part of our analysis focused on the association between the percentage of SPs coupled with SOs and memory consolidation. 11 studies (k=43)\begin{document}$(k=43)$\end{document} were included in the Bayesian hierarchical model. The mean SO-fast SP coupling percentage (%) is 21.17 [15.95, 26.39], while the SO-slow SP coupling percentage (%) is 24.07 [17.59, 30.56]. Forest and regression plots for the overall and moderator models are reported in Figure 8. In addition, the results of hypothesis tests for the overall and moderator models are reported in Table 4. Consistent with the funnel plot (Appendix 4—figure 1E), both Egger’s regression (p=0.78)\begin{document}$(p=0.78)$\end{document} and rank correlation test (p=0.87)\begin{document}$(p=0.87)$\end{document} showed no publication bias.
+The strongest predictive power among moderation models has been found with participants’ age, and performs similarly in the trade-off between complexity and power with the intercept-only model (weight = 0.44). As the age increases, the slope of the correlation exhibits a decreasing trend that is nearly in strong favor of our hypothesis $(r_{\beta}=Δ−0.003[−0.007,0.001],BF_{10}=9.97,probability=0.91)$. The strength-memory association becomes weaker with the increase of age. The effect of age remains moderate after removing older adults from the analysis, $r_{\beta}=Δ−0.005[−0.015,0.008],BF_{10}=4.05$.
+
+##### Other moderators
+
+There was no strong evidence of a difference in strength-memory association between the fast $(k=41)$ and slow SPs $(k=26,r=Δ−0.02,BF_{10}=1.91,probability=0.66)$. Also, there is no evidence for a group difference among any pair of conditions of PSG channels, sleep stages, or sleep bout type (all $0.33<BF_{10}<3$). However, consistent with the results for the coupling phase and SP amplitude, the largest positive strength-memory association moderated by PSG channels was still found in frontal channels $(r=0.10[0.00,0.19])$.
+
+### Coupling percentage
+
+The last part of our analysis focused on the association between the percentage of SPs coupled with SOs and memory consolidation. 11 studies $(k=43)$ were included in the Bayesian hierarchical model. The mean SO-fast SP coupling percentage (%) is 21.17 [15.95, 26.39], while the SO-slow SP coupling percentage (%) is 24.07 [17.59, 30.56]. Forest and regression plots for the overall and moderator models are reported in Figure 8. In addition, the results of hypothesis tests for the overall and moderator models are reported in Table 4. Consistent with the funnel plot (Appendix 4—figure 1E), both Egger’s regression $(p=0.78)$ and rank correlation test $(p=0.87)$ showed no publication bias.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/101992/elife-101992-fig8-v1.jpg)
 
-**Figure 8.:** (A) Overall model forest plot at study-level. The solid vertical line represents the mean Pearson correlation coefficient under the null hypothesis. Dashed lines indicate the 95% credible interval (CrI) of the pooled effect size. The black point and error bar for each study show the adjusted estimation of effect size and 95% CrI combining data and prior information. The gray dots under each distribution show raw effect sizes of each study. Effect size-level plots can be found in Supplementary file 3. (B) Meta regression plot with age as moderator. Blue lines represent 200 overplotted spaghetti fit lines to visualize predictions. (C) Moderator-level forest plot. Each box represents a type of moderator. Mixed effect sizes with mixed conditions from different factor levels listed above. Weight Stacked weight of each moderation model in the paired model performance comparison between the moderator and overall (intercept-only) model. The stacked weight of the overall model in each pair of comparisons can be calculated as 1 weight of the moderation model.Figure 8—source data 1.
+**Figure 8.:** (A) Overall model forest plot at study-level. The solid vertical line represents the mean Pearson correlation coefficient under the null hypothesis. Dashed lines indicate the 95% credible interval (CrI) of the pooled effect size. The black point and error bar for each study show the adjusted estimation of effect size and 95% CrI combining data and prior information. The gray dots under each distribution show raw effect sizes of each study. Effect size-level plots can be found in Supplementary file 3. (B) Meta regression plot with age as moderator. Blue lines represent 200 overplotted spaghetti fit lines to visualize predictions. (C) Moderator-level forest plot. Each box represents a type of moderator. Mixed effect sizes with mixed conditions from different factor levels listed above. Weight Stacked weight of each moderation model in the paired model performance comparison between the moderator and overall (intercept-only) model. The stacked weight of the overall model in each pair of comparisons can be calculated as 1 weight of the moderation model.
 
-## Overall model
+**Table 4.**
+ Results of directional hypothesis tests for each pair of factor levels (conditions) in overall and each moderation model of the coupling percentage–memory association.
 
-Compared to all other coupling measures, we observed a weak association between coupling percentage and memory consolidation (rpooled=−0.03[−0.15,0.07],BF10=0.38,probability=0.28)\begin{document}$(r_{\text{pooled}}=-0.03\, [-0.15,\, 0.07],\, BF_{10}=0.38,\, \text{probability}=0.28)$\end{document}. The overall model consists of a moderate between-study heterogeneity of g=0.11[0.01,0.25]\begin{document}$g=0.11\, [0.01,\, 0.25]$\end{document}, and a within-study heterogeneity of g=0.05[0.00,0.14]\begin{document}$g=0.05\, [0.00,\, 0.14]$\end{document}. 95% credible intervals of all studies and the pooled effect size include 0. Due to the limited number of effect sizes, we did not perform a focal analysis. Prior sensitivity analysis revealed consistent results with the overall model (see Appendix 3—table 4).
 
-## Moderator and sensitivity models
+<table>
+  <thead>
+    <tr>
+      <th>Moderator</th>
+      <th>Overall</th>
+      <th colspan="3">Memory Task</th>
+      <th>Age</th>
+      <th>Spindle</th>
+      <th colspan="3">PSG Channel</th>
+      <th>Stage</th>
+      <th>Bout</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Condition</td>
+      <td>H1</td>
+      <td>Verbal</td>
+      <td>Emotional</td>
+      <td>Spatial</td>
+      <td>Younger</td>
+      <td>Fast</td>
+      <td>Frontal</td>
+      <td>Frontal</td>
+      <td>Central</td>
+      <td>N2</td>
+      <td>Night</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td>H0</td>
+      <td>Motor</td>
+      <td>Motor</td>
+      <td>Motor</td>
+      <td>Older</td>
+      <td>Slow</td>
+      <td>Central</td>
+      <td>Posterior</td>
+      <td>Posterior</td>
+      <td>SWS</td>
+      <td>Nap</td>
+    </tr>
+    <tr>
+      <td>BF10</td>
+      <td>0.38</td>
+      <td>0.05</td>
+      <td>0.17</td>
+      <td>0.22</td>
+      <td>2.16</td>
+      <td>0.28</td>
+      <td>5.15</td>
+      <td>3.38</td>
+      <td>1.24</td>
+      <td>2.02</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <td>Probability</td>
+      <td>0.28</td>
+      <td>0.05</td>
+      <td>0.14</td>
+      <td>0.18</td>
+      <td>0.68</td>
+      <td>0.22</td>
+      <td>0.84</td>
+      <td>0.77</td>
+      <td>0.55</td>
+      <td>0.67</td>
+      <td>0.31</td>
+    </tr>
+  </tbody>
+</table>
 
-Few moderators had an influential impact on the percentage-memory association (All 0.1<BF10<10\begin{document}$0.1 \lt BF_{10} \lt 10$\end{document}, except verbal versus motor tasks, all weights <0.40\begin{document}$\lt 0.40$\end{document}), which is not surprising given the weak association in the overall model. For memory types, we observed a moderate trend of declarative memory retention towards a negative association with coupling percentage, in contrast to the positive trend of percentage-motor memory association. Therefore, the association measured by motor memory tasks (k=13)\begin{document}$(k=13)$\end{document} is considerably higher than verbal tasks, k=13,r=Δ−0.25,BF10=0.05,probability=0.05\begin{document}$k=13,\ r=\Delta-0.25,\ BF_{10}=0.05,\ \text{probability}=0.05$\end{document}. All other moderators did not trend toward a specific direction, and all 95% credible intervals include 0.
+_Condition conditions hypothesized to be associated with stronger percentage-memory association than other factor levels; Control Variables hypothesized to be associated with weaker percentage memory association; BF10 Bayes factor in favor of H1 over H0; N2 nREM2 stage; SWS slow-wave sleep._
+
+#### Overall model
+
+Compared to all other coupling measures, we observed a weak association between coupling percentage and memory consolidation $(r_{pooled}=−0.03[−0.15,0.07],BF_{10}=0.38,probability=0.28)$. The overall model consists of a moderate between-study heterogeneity of $g=0.11[0.01,0.25]$, and a within-study heterogeneity of $g=0.05[0.00,0.14]$. 95% credible intervals of all studies and the pooled effect size include 0. Due to the limited number of effect sizes, we did not perform a focal analysis. Prior sensitivity analysis revealed consistent results with the overall model (see Appendix 3—table 4).
+
+#### Moderator and sensitivity models
+
+Few moderators had an influential impact on the percentage-memory association (All $0.1<BF_{10}<10$, except verbal versus motor tasks, all weights $<0.40$), which is not surprising given the weak association in the overall model. For memory types, we observed a moderate trend of declarative memory retention towards a negative association with coupling percentage, in contrast to the positive trend of percentage-motor memory association. Therefore, the association measured by motor memory tasks $(k=13)$ is considerably higher than verbal tasks, $k=13,r=Δ−0.25,BF_{10}=0.05,probability=0.05$. All other moderators did not trend toward a specific direction, and all 95% credible intervals include 0.
 
 ## Discussion
 
 As the first meta-analysis focusing on the coupling between slow oscillation and spindle events, our results, combining 297 effect sizes, provide reliable evidence for the involvement of thalamocortical SO-SP coupling in memory consolidation. In particular, the precision and strength of coupling, represented by the preferred phase and coupling strength, showed significant effect sizes in their correlation with memory retention performance. Moderators, including age, memory type, cortical area, and SP frequency, modulated the magnitude of these associations. The conclusive results are summarized in Table 5.
 
-## Precision and strength of SO-SP coupling as strong predictors of memory consolidation
+**Table 5.**
+ Descriptive table of the meta-analysis result of measures of SO-SP coupling characteristics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th>n</th>
+      <th>k</th>
+      <th>Pooled Effect Size</th>
+      <th>BF10</th>
+      <th>Influential Moderators</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Coupling Phase</td>
+      <td>23</td>
+      <td>90</td>
+      <td>0.07 [0.01, 0.13]</td>
+      <td>58.35</td>
+      <td>Memory Type, Age, Channel, Spindle</td>
+    </tr>
+    <tr>
+      <td>Spindle Amplitude</td>
+      <td>18</td>
+      <td>78</td>
+      <td>0.07 [−0.04, 0.18]</td>
+      <td>8.28</td>
+      <td>Memory Type, Age, Channel, Spindle</td>
+    </tr>
+    <tr>
+      <td>Coupling Strength</td>
+      <td>22</td>
+      <td>86</td>
+      <td>0.08 [0.02, 0.15]</td>
+      <td>111.04</td>
+      <td>Age</td>
+    </tr>
+    <tr>
+      <td>Coupling Percentage</td>
+      <td>11</td>
+      <td>43</td>
+      <td>−0.03 [−0.15, 0.07]</td>
+      <td>0.38</td>
+      <td>None</td>
+    </tr>
+  </tbody>
+</table>
+
+_n number of studies included; k number of effect sizes included; BF10 Bayes factor in favor of H1 over H0 (see Table 8 for the interpretation)._
+
+### Precision and strength of SO-SP coupling as strong predictors of memory consolidation
 
 In previous meta-analyses focusing on spindle events, the amplitude and power of SPs have been considered the most predictive measures for memory consolidation (Kumral et al., 2023) and cognitive abilities (Ujma, 2021). However, our findings indicate that the SP amplitude-memory association is subject to high variability. Only the association between fast SP amplitude and hippocampal-dependent memory consolidation is supported by strong evidence. In contrast, the precision and strength of coupling between the fast SP peak amplitude and the up-state peak of SOs are more crucial indicators for predicting memory retention performance. Our result confirmed the importance of cross-frequency coupling in the hierarchical temporal nesting within the hippocampus-thalamus-cortex information transmission loop, proposed in the active system consolidation theory (Klinzing et al., 2019; Staresina et al., 2015; Born and Wilhelm, 2012; Klinzing et al., 2016). Together with other studies included in the review (Hahn et al., 2020; Helfrich et al., 2018; Niknazar et al., 2015; Muehlroth et al., 2019; Mölle and Born, 2011b), our results suggest a crucial role of coupling but did not support the role of spindle events alone in memory consolidation.
 
 Moreover, we found that the phase and strength of coupling between fast SPs and SOs retain strong predictive ability for memory retention performance in most sub-groups of the moderator analysis. This result confirms the robustness of the connection between coupled SO-fast SP phase and memory consolidation as a general physiological mechanism. Similar results were not observed with slow SPs. Since we did not find publication bias in both analyses regarding coupling phase and strength, it reduces the likelihood of overestimating true effect sizes. Given we have identified predictive powers for memory retention in both coupling phase and strength, and Weiner et al., 2024 reported a synergistic interaction between phase and strength, future studies are necessary to further investigate the relationship between these phase-amplitude level measures.
 
-## The modulation role of cortical area and oscillation frequency
+### The modulation role of cortical area and oscillation frequency
 
-Most of the studies included in the meta-analysis supported the significance of the association between the coupling phase and memory consolidation. However, conflicting conclusions have been reported regarding the direction of the phase. In terms of the preferred coupling phase, we find two predominant views, with a subset of studies reporting that coupling events are concentrated before the up-state peak (−π/2\begin{document}$-\pi/2$\end{document} to 0) of SOs (Cox et al., 2018; Kurz et al., 2021; Niknazar et al., 2015; Perrault et al., 2019; Ladenbauer et al., 2021; Schreiner et al., 2021). Other authors found that the preferred phase is when fast SPs are precisely coupled with the up-state peak (0) (Hahn et al., 2020; Halonen et al., 2021; Helfrich et al., 2018; Mikutta et al., 2019; Mylonas et al., 2020; Mylonas et al., 2022). In either case, however, most of the studies agreed that coupling occurring closer to the up-state peak of SOs could predict better memory retention performance.
+Most of the studies included in the meta-analysis supported the significance of the association between the coupling phase and memory consolidation. However, conflicting conclusions have been reported regarding the direction of the phase. In terms of the preferred coupling phase, we find two predominant views, with a subset of studies reporting that coupling events are concentrated before the up-state peak ($−\pi/2$ to 0) of SOs (Cox et al., 2018; Kurz et al., 2021; Niknazar et al., 2015; Perrault et al., 2019; Ladenbauer et al., 2021; Schreiner et al., 2021). Other authors found that the preferred phase is when fast SPs are precisely coupled with the up-state peak (0) (Hahn et al., 2020; Halonen et al., 2021; Helfrich et al., 2018; Mikutta et al., 2019; Mylonas et al., 2020; Mylonas et al., 2022). In either case, however, most of the studies agreed that coupling occurring closer to the up-state peak of SOs could predict better memory retention performance.
 
 In addition to differences in signal processing approaches and age leading to discrepancies in phases reported, we believe that another reason is different PSG electrodes and SP frequencies filtered to detect coupling events. Research found that fast SPs occur more frequently in centroparietal regions, while slow SPs are predominantly in frontal regions (Mölle et al., 2011a; Anderer et al., 2001; De Gennaro and Ferrara, 2003; Urakami, 2008). This evidence led some research to apply this conclusion to coupling studies and detecting fast SPs only from centro-parietal electrodes or slow SPs only from frontal electrodes (Bastian et al., 2022; Niknazar et al., 2015; Perrault et al., 2019; Schreiner et al., 2021). However, we suspect that this approach restricts researchers from considering the origin and spread of oscillations. The prefrontal cortex has been proposed to be responsible for the generation of posterior-propagating global SOs (Staresina et al., 2015; Massimini et al., 2004; Marshall et al., 2006; Achermann and Borbély, 1997), while global SPs, the majority of SP events, propagate in a rotating direction following gradients (Dickey et al., 2021; Muller et al., 2016; O’Reilly and Nielsen, 2014). The significance of this dynamic interaction of oscillations for spatiotemporal coordination remains poorly understood.
 
 SO-SP coupling can be widely detected across the frontoparietal cortex (Fernandez and Lüthi, 2020), and the interaction between centroparietal-dominated fast SPs and frontal-dominated SOs, along with their propagations, is proposed to be crucial for long-range transmission of memory-related information from thalamus to neocortex (Maingret et al., 2016; Marshall et al., 2006; Helfrich et al., 2019; Hahn et al., 2020; Baena et al., 2023). Our spatiotemporal analysis provides extremely strong evidence that the post-peak SO-fast SP coupling phase recorded from frontal regions occurs significantly closer to the up-state peak of SOs and considerably later than the pre-peak phase in centro-parietal regions, which supports phase shifts across electrodes found in previous studies (Cox et al., 2018; Denis et al., 2022; Denis et al., 2021), emphasizing the importance of coupling precision but not intensity. Moderator models of all four coupling measures consistently indicate that coupling detected from frontal regions has the largest association with memory consolidation. Moreover, a significant quadratic phase-memory relationship is only observed in frontal regions. In addition, the frontal region has the strongest and most active SOs as its origin site (Massimini et al., 2004; Kurth et al., 2017; Malerba et al., 2019; Niethard et al., 2018), which may contribute to the role of frontal coupling. To the best of our knowledge, our study is the first to provide consistent evidence supporting that successful memory consolidation is modulated by spatiotemporal specificity, emphasizing the precise coupling of frontal fast SPs targeting the up-state peak of SOs.
 
-## Further moderation through memory types, aging, and sleep conditions
+### Further moderation through memory types, aging, and sleep conditions
 
 The predictive ability of coupling for memory consolidation has been studied across various types of memory, including emotional, spatial, verbal, and motor tasks. Surprisingly, our results indicate that the coupling phase has a widespread predictive role for both declarative and procedural memory. In contrast, evidence only supports a correlation between coupling strength and hippocampus-dependent memory. In addition, Hahn et al., 2022 and Hahn et al., 2020 provided a region-specific view, claiming significant associations of SO-SP coupling with declarative and procedural memory exist in the frontal lobe and motor cortex, respectively. Therefore, it is worthwhile for future research to study both shared mechanisms and region specificity of coupling across different memory types, including those traditionally considered non-hippocampus-dependent. However, we must exercise caution that the number of effect sizes extracted for emotional and spatial tasks is limited, making it susceptible to the influence of any single study.
 
@@ -238,19 +607,19 @@ One disadvantage in our analysis of age as a moderator is the limited number of 
 
 However, evidence did not support the moderation role of stage conditions, including sleep stages and bouts, in the coupling-memory association, which is somewhat surprising. SOs are predominant in SWS (Dang-Vu et al., 2008), while sleep SPs are the primary oscillation feature in N2 (De Gennaro and Ferrara, 2003). Our included studies showed that the co-occurrence rate of SO-SP coupling is higher during SWS compared to N2. One possible explanation, as suggested by our meta-analysis results, is that the precision and strength of coupling is more predictive of memory consolidation than the coupling percentage. Thus, considering the contribution of different stages to memory consolidation through co-occurrence rates may not be meaningful. Regarding sleep bouts (naps versus overnight sleep), no differences were found in any coupling measures between overnight sleep and naps, consistent with the results of a meta-analysis focusing on spindle-memory association (Kumral et al., 2023; Schmid et al., 2020). It implies the potential benefits of napping in memory consolidation and the clearance of hippocampal traces for storing new knowledge during the daytime.
 
-## Challenges of current statistical approaches in measuring EEG-behavior associations
+### Challenges of current statistical approaches in measuring EEG-behavior associations
 
 One of the crucial factors limiting further interpretation of our results is the variation in statistical methods across studies, including differences in the definition of behavioral and physiological measures, the event detection and analysis methods employed, and limitations in estimating nonlinear relationships. Firstly, we agree with (McConnell et al., 2021) that there has been confusion in previous studies, where the term “slow spindle” is inconsistently used to refer to either frontal SPs (∼10–14 Hz) or low-frequency slow SPs (∼7–11 Hz). Compounding this issue, individual differences in spindle frequency are often overlooked, leading to challenges in reliably distinguishing between slow and fast spindles. Our result reveals that frontal fast SPs (∼10–14 Hz) occurring near the up-state peak of frontal-predominant global SOs with lower frequency than the centro-parietal fast SPs (∼14–17 Hz), which becomes predominant with development (Hahn et al., 2019; Shinomiya et al., 1999; McConnell et al., 2022; McConnell et al., 2021). Some studies have also reported difficulty in separating these two types of spindles (Hahn et al., 2020). In contrast, slow SP occurs before the trough of the SO down-state. Our findings support a detailed categorization of SP types proposed in previous studies (McConnell et al., 2021; Bernardi et al., 2018; McConnell et al., 2022; Siclari et al., 2014), involving separate measures between pre-peak early-fast SPs, post-peak (or peak) late-fast SPs (see Figure 5C), and pre-trough slow SPs (see Appendix 6—figure 1C). Alternatively, an effective approach could involve extracting signals from electrodes across different cortical areas for each type of SP for comparison. In addition, the current definition of moderators is also quite vague and conflicted. Some studies conducted analyses across mixed conditions, including using a global frequency range (e.g., 10–16 Hz) for SP detection, as well as reporting only one shared effect size for all conditions.
 
 Moreover, we observed significant between-study differences in the measures for memory retention performance. Specifically, multiple retention measures already exist when solely considering verbal tasks for measuring declarative memory, including (1) the value difference in the number of correctly recalled words (Post-sleep – Pre-sleep number of correct words) (Weiner et al., 2024; Niknazar et al., 2015; Perrault et al., 2019); (2) the value difference in the percentage of correctly recalled words (Post-sleep – Pre-sleep % of correct words) (Hahn et al., 2020; Zhang et al., 2020; Ladenbauer et al., 2021); and (3) the ratio difference in the percentage of correctly recalled words (Post-sleep / Pre-sleep % of correct words) (Denis et al., 2021; Mikutta et al., 2019; Schreiner et al., 2021). Similar situations exist in measures for other memory retention tasks. When we tested the sleep-memory association using these three formulas separately, we found that in some extreme cases, different measures could even alter the direction of the association. Thus, we strongly suggest the consistency in memory retention measures in future studies (Németh et al., 2024).
 
-In addition, misinterpretation of phase-memory associations in some studies poses a threat to the validity of results. Most studies use circular-linear correlation to measure this association, but we observed a prevalence of exaggeration when explaining the effect size. Circular-linear correlations lack directionality (Mardia, 1976), making it challenging to precisely estimate the improvement or decay of memory consolidation at specific SO phases. It is likely to be influenced by fluctuations in memory scores in any segment of SO phases, so associating it with hypotheses targeting specific phases might lead to incorrect conclusions. An effective solution is to visualize the regression and superimpose quadratic fit lines to assess whether it follows a typical quadratic relationship around the global maximum or minimum. In addition, through simulation studies (see Appendix 5), we observed that circular-linear correlation coefficients exhibit weak robustness and severe deviation from normal distribution for small to medium sample sizes (n<100\begin{document}$n \lt 100$\end{document}), commonly encountered limitations in PSG studies.
+In addition, misinterpretation of phase-memory associations in some studies poses a threat to the validity of results. Most studies use circular-linear correlation to measure this association, but we observed a prevalence of exaggeration when explaining the effect size. Circular-linear correlations lack directionality (Mardia, 1976), making it challenging to precisely estimate the improvement or decay of memory consolidation at specific SO phases. It is likely to be influenced by fluctuations in memory scores in any segment of SO phases, so associating it with hypotheses targeting specific phases might lead to incorrect conclusions. An effective solution is to visualize the regression and superimpose quadratic fit lines to assess whether it follows a typical quadratic relationship around the global maximum or minimum. In addition, through simulation studies (see Appendix 5), we observed that circular-linear correlation coefficients exhibit weak robustness and severe deviation from normal distribution for small to medium sample sizes ($n<100$), commonly encountered limitations in PSG studies.
 
 To suppress the bias introduced by non-linear relationships, we believe there are two available solutions: (1) Hahn et al., 2020 calculated the absolute distance of the preferred phase of each participant from the upstate peak (0), while Kurz et al., 2023 and Weiner et al., 2024 applied this method to transform the phase-memory association into a linear relationship for subsequent testing. Our results provided solid support for using SO up-state peaks as the center of transformation. (2) We developed a method to standardize the circular-linear correlation coefficient by transforming the sampling distribution of correlation to be normally distributed and centered at 0 under null, which takes into account the sample size to eliminate the overestimation of effect sizes and becomes comparable with Pearson’s correlation to enhance the comparability across studies (see Methods: Standardized circular-linear correlation coefficient).
 
 In reporting results, despite the tendency to introduce multiple comparison issues due to the presence of multiple time points and electrodes during PSG recording (Yang et al., 2018), less than half of the included studies conducted corrections for multiple comparisons. We suggest that researchers adopt a combination of cluster-based permutation, hierarchical models, surrogate testing (Cox and Fell, 2020), and ROI to address the complexity of data structures across temporal, spectral, and spatial domains, and report both corrected and uncorrected results. Furthermore, we found that the majority of studies tend to selectively report results for significant electrodes, memory types, or coupling measures. These practices increase the likelihood of false positives and the overestimation of effect size (Ioannidis et al., 2014). We advocate for the standardization in reporting (1) all three coupling metrics, including coupling phase, strength, and prevalence, (2) their interactions with each other, and (3) their associations with memory performance. Each metric captures a distinct property of the coupling process and may interact with one another (Weiner et al., 2024), so it is necessary to provide a more comprehensive understanding of the coupling mechanism. We suggest that researchers should at least report exact values of effect sizes (e.g. correlation coefficients, standardized mean differences, or odds ratios), sample sizes, test statistics, p-values, and standard errors or confidence intervals for both significant and insignificant results to allow effective comparisons between studies. While only 2 out of the 23 studies included in our analysis disclosed all processed data and analysis code in their publication, we appreciate the responses of almost all authors who provided valid data or clarifications upon email requests that helped us mitigate heterogeneity and publication bias in subsequent analyses.
 
-## Limitations and future research directions
+### Limitations and future research directions
 
 The between-study discrepancy in measuring cross-frequency coupling presents a potential challenge to the comprehensive inclusion of studies. Due to methodological disparities and the limited prevalence of PETH studies, our current analysis only included studies using the preferred phase to measure the precision of coupling. Additionally, due to the expectation of high heterogeneity, we excluded gray literature without peer review and memory measures with low comparability to other studies, such as the targeted memory reactivation (Hu et al., 2020). While the inclusion of a restricted number of published studies may introduce a potential publication bias, we effectively addressed this concern through data requests, focal and sensitivity analysis, and meta-regression, finally constraining the overall risk of bias of most studies to a small to moderate level.
 
@@ -260,7 +629,7 @@ Besides our suggestion for the classification of memory types and SP frequency, 
 
 Finally, efforts must be made in future sleep research towards open science. To the best of our knowledge, as the first meta-analysis conducted on cross-frequency couplings, we have made our analysis code and data publicly available. Our posterior parameters predicted for each coupling measure can serve as priors in future meta-analyses, allowing for the integration of new data to update the model. We recommend that future sleep research should complete pre-registration on platforms such as OSF and clearly delineate pre-registered analyses from exploratory analyses in their reports to enhance methodological consistency and reproducibility. We also encourage original studies to share individual-level data and code. These efforts will contribute to enhancing reproducibility and comprehensive inclusion of results in future meta-analyses.
 
-## Conclusion
+### Conclusion
 
 This meta-analysis revealed the crucial role of the precise and strong SO-fast SP cross-frequency coupling in promoting memory consolidation with data demonstrating sufficient statistical power for the first time. By aggregating effect sizes of associations between four commonly used coupling measures and memory retention performance, we observed very strong evidence that the precision and strength of coupling can both predict enhanced memory retention scores across almost all conditions as a general physiological mechanism, while fast SP amplitudes detected in the frontal lobe also showed associations with memory consolidation. Although the effect sizes of the main models are relatively small, our moderator analyses demonstrated the dynamic nature of coupling-memory relationships. Stronger associations were observed in subgroups including young adults, frontal regions, fast spindles, and declarative memory, all of which have historically demonstrated relationships with better memory performance. Therefore, our results provide important information regarding complex memory consolidation mechanisms.
 
@@ -268,57 +637,177 @@ This evidence provides insights for future research on how the contribution of c
 
 ## Methods
 
-## Literature search
+### Literature search
 
 The retrieval and screening of relevant studies were conducted in accordance with the 2020 PRISMA statement (Page et al., 2021). The PRISMA checklist is reported in Supplementary file 1. A comprehensive literature search was performed in three databases based on the retrieval qualities evaluation (Gusenbauer and Haddaway, 2020; Martín-Martín et al., 2021): PubMed, Web of Science, and PsycINFO, covering the period up to July 1, 2023. Only studies that have undergone peer review and have been published were included in the meta-analysis. Boolean operators were utilized to combine the following search terms, (sleep OR nap) AND (slow oscillat* OR slow wave OR sleep oscillat* OR slow-wave OR SO) AND (spindle OR sigma OR SP) AND (coupl* OR pair* OR lock* OR coordinat* OR interact* OR synchro*) AND (motor learning OR memory OR cogniti*). After filtering the papers based on inclusion criteria, a citation search was conducted and all papers identified from article citations underwent manual screening.
 
-## Inclusion criteria
+### Inclusion criteria
 
 We applied the following criteria (Meline, 2006) to identify articles eligible for the meta-analysis as of July 1, 2023. Studies were included if the study (1) had memory encoding task before and recall measures after a sleep interval; (2) was published in English; (3) measured at least one of the standard SO-SP coupling measures (coupling phase, strength, percentage, and or SP amplitude) by phase-amplitude coupling (PAC) or comparable methods; (4) assessed the correlation between memory retention and SO-SP coupling during N2 and or SWS stage(s); (5) was published as an original research paper in a peer-reviewed journal. Studies were excluded if they (1) only measured SO-SP coupling influenced by the impact of medication or interventions (e.g. brain stimulation method) with no control condition; (2) only included non-human subjects, patient groups, or clinical groups (no control healthy group); (3) were a group under the wake condition. If a study included both groups that met the inclusion and exclusion criteria and those that did not, only data from the group(s) that met the criteria (e.g. control condition, control group) were included in the following analysis.
 
-## Study selection
+### Study selection
 
 For the study selection, data retrieved from the three databases listed above were imported into EndNote 21 for automatic and manual duplication removal. The screening process is reported in Figure 9. After preliminary screening for titles, abstracts, and article types, 105 original research papers were screened by independent full-text review. Reviewers discussed all papers with discrepancies regarding their inclusion and ultimately achieved consistency. Finally, we included 23 eligible studies in the meta-analysis, comprising a total of 297 effect sizes from four types of coupling measurements with 730 samples.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/101992/elife-101992-fig9-v1.jpg)
 
-## Data extraction
+### Data extraction
 
 In the studies included in the meta-analysis, relevant effect sizes and specified study characteristics were extracted by two reviewers independently in accordance with PRISMA guidelines (Page et al., 2021) to minimize the bias introduced by subjective judgments. The consistency of data extraction between reviewers is 99.6%, and all discrepancies were resolved through discussion. Four specific measures of SO-SP coupling (Figure 1) were examined for their association with memory retention performance: (1) preferred coupling phase; (2) SP peak-to-trough amplitude; (3) coupling strength; and (4) coupling percentage. After extracting effect sizes, phase-radian alignment was corrected (Figure 1C). Extracted study characteristics included: (1) sample size, age, gender distribution; (2) pre-specified moderators (see Methodological characteristics and moderators for more details); (3) publication details. A summary of the main information for each study is outlined in Appendix 2—table 2. The detailed data for each effect size can be found in Source data 1 (study-level), source data of Figures 4, 6—8 (effect size-level), and the publicly available repository, https://osf.io/9mh5d/. The overall quality of studies is assessed in accordance with the Robins-I (Jüni, 2016; Sterne et al., 2016) and NIH criteria (National Heart, Lung, and Blood Institute, 2019), with adjustments (detailed in Appendix 1—table 1) made to accommodate the specific attributes of the study.
 
 Due to the relatively large heterogeneity and discrepancies in methodology and results reported between studies, as well as the non-parametric nature of the direction in circular-linear correlations, we improved comparability and credibility across studies by requesting both unreported effect sizes and processed individual-level memory and physiological data to reduce the publication bias. If a study measured relevant sleep and memory features but either (1) did not report any extractable or convertible effect sizes; (2) reported imprecise p-values due to insignificance; (3) reported only one effect size for cross-group data; (4) reported effect sizes that were not comparable to other studies, coupled with the absence of data in supplementary material, we requested missing data or processed individual data from corresponding authors via email. 21 out of 23 authors responded positively and provided the requested data. Studies without a response after two months or declined our requests were excluded or partially excluded from the meta-analysis for the part where insufficient information was provided for calculating effect sizes. For studies reporting correlations only through scatterplots, linear correlations were estimated using software from the ShinyDigitise package (Pick et al., 2019; Ivimey‐Cook et al., 2023) in R, while circular-linear correlations were first assessed by extracting estimated individual data from the plots by the online software WebPlotDigitizer (Rohatgi, 2014), followed by the circular-linear correlation analysis in R. Additionally, key missing study characteristic data was requested via email at the same time to broaden the scope of moderator analysis.
 
-## Effect size calculations
+### Effect size calculations
 
-To standardize effect sizes for comparability across studies, we chose to standardize the bounded circular-linear correlation coefficient (Mardia, 1976; Fisher, 1995) to unbounded rz\begin{document}$r_{z}$\end{document} to examine the association between coupling phase (in radians) and memory consolidation. We used the Pearson product-moment correlation coefficient r (Lipsey and Wilson, 2001) (hereinafter referred to as Pearson’s r) and transformed Fisher’s z to report the linear relationships between SP amplitude (in μV), coupling strength (mean vector length or modulation index), coupling percentage (%), with memory consolidation separately. All transformable effect size measures including t-statistic, p-value, β statistic, and η2\begin{document}$\eta^{2}$\end{document}, were extracted and converted to Pearson’s r. In cases where effect measures were reported as non-parametric correlation including Spearman’s rho (ρ\begin{document}$\rho$\end{document}, i.e. rs\begin{document}$r_{s}$\end{document}) and no author response could reanalyze for parametric correlation, we used it as an imperfect estimation of Pearson’s r (Myers and Sirois, 2014) and excluded from sensitivity analyses.
+To standardize effect sizes for comparability across studies, we chose to standardize the bounded circular-linear correlation coefficient (Mardia, 1976; Fisher, 1995) to unbounded $r_{z}$ to examine the association between coupling phase (in radians) and memory consolidation. We used the Pearson product-moment correlation coefficient r (Lipsey and Wilson, 2001) (hereinafter referred to as Pearson’s r) and transformed Fisher’s z to report the linear relationships between SP amplitude (in μV), coupling strength (mean vector length or modulation index), coupling percentage (%), with memory consolidation separately. All transformable effect size measures including t-statistic, p-value, β statistic, and $η^{2}$, were extracted and converted to Pearson’s r. In cases where effect measures were reported as non-parametric correlation including Spearman’s rho ($ρ$, i.e. $r_{s}$) and no author response could reanalyze for parametric correlation, we used it as an imperfect estimation of Pearson’s r (Myers and Sirois, 2014) and excluded from sensitivity analyses.
 
-## Pearson product-moment correlation coefficient
+#### Pearson product-moment correlation coefficient
 
-The constrained range of values between −1 and 1 measured by Pearson’s r restricts the selection of an ideal unbounded prior distribution for Bayesian hierarchical models (Thompson and Semma, 2020; discussed in Statistical analysis). The deviation of its sampling distribution from the assumptions of normal, especially when the effect size is large, might provide an inaccurate estimation for the sampling variance (Fisher, 1921). To address this limitation, we used the metafor package (Viechtbauer, 2010) in R to transform Pearson’s r into normalized and unbounded Fisher’s z by formula (Fisher, 1921):z=12ln(1+r1−r)=tanh−1⁡r\begin{document}$$\displaystyle z\,=\,\dfrac{1}{2}\ln\!\left(\frac{1+r}{1-r}\right)\,=\,\tanh^{-1}r$$\end{document}
+The constrained range of values between −1 and 1 measured by Pearson’s r restricts the selection of an ideal unbounded prior distribution for Bayesian hierarchical models (Thompson and Semma, 2020; discussed in Statistical analysis). The deviation of its sampling distribution from the assumptions of normal, especially when the effect size is large, might provide an inaccurate estimation for the sampling variance (Fisher, 1921). To address this limitation, we used the metafor package (Viechtbauer, 2010) in R to transform Pearson’s r into normalized and unbounded Fisher’s z by formula (Fisher, 1921):
 
-When reporting and interpreting the results, we reversed the transformation from Fisher’s z back to Pearson’s r\begin{document}$r$\end{document} to present each estimated effect size and credible interval (CrI) by formula:r=(e2z−1e2z+1)=tanh⁡z\begin{document}$$\displaystyle r\,=\,\left(\frac{e^{2z}-1}{e^{2z}+1}\right)\,=\,\tanh z$$\end{document}
+$$
+z=\frac{1}{2}ln(\frac{1+r}{1−r})=tanh^{−1}⁡r
+$$
 
-## Standardized circular-linear correlation coefficient
+When reporting and interpreting the results, we reversed the transformation from Fisher’s z back to Pearson’s $r$ to present each estimated effect size and credible interval (CrI) by formula:
 
-Meanwhile, the circular-linear correlation coefficient r (hereinafter referred to as circlin r) is a type of Pearson correlation coefficient (PCC) distributed from 0 to 1 without direction, achieved by transforming the phase into sin⁡θ\begin{document}$\sin\theta$\end{document} and cos⁡θ\begin{document}$\cos\theta$\end{document} to create linear parameters (Mardia, 1976; Fisher, 1995), to assess the relationship between a random unit vector and another linear random variable:circlin r=r122+r132−2⋅r12⋅r13⋅r231−r232\begin{document}$$\displaystyle {circlin} \ r=\,\sqrt{\frac{r_{12}^{2}+r_{13}^{2}-2\cdot r_{12}\cdot r_{13}\cdot r_{23}}{1-r_{23}^{2}}}$$\end{document}r12=corr⁢(x,cos⁡θ),r13=corr⁢(x,sin⁡θ),r23=corr⁢(cos⁡θ,sin⁡θ)\begin{document}$$\displaystyle r_{12}=\mathrm{corr}(x,\cos\theta),\ r_{13}=\mathrm{corr}(x,\sin\theta),\ r_{23}=\mathrm{corr}(\cos\theta,\sin\theta)$$\end{document}
+$$
+r=(\frac{e^{2z}−1}{e^{2z}+1})=tanh⁡z
+$$
 
-Since there is no existing method to standardize the circlin r, we developed an approximation approach to transform the bounded and non-linear distribution to an unbounded standardized normal distribution N(0,1)\begin{document}$N(0,1)$\end{document}. The verification and performance can be found in Appendix 5.
+#### Standardized circular-linear correlation coefficient
 
-The population distribution of circular-linear correlation ρ\begin{document}$\rho$\end{document} with n\begin{document}$n$\end{document} samples can be approximated by a chi-square distribution with 2 degrees of freedom (Fisher et al., 1993), χ22\begin{document}$\chi^{2}_{2}$\end{document}. We derived that the circular-linear correlation coefficient has the following mean and variance in an approximate form and verified in R,𝔼⁢(ρ)=π2⁢n,Var⁢(ρ)=4-π2⁢n, 0≤r≤1,n≥2\begin{document}$$\displaystyle \mathbb{E}(\rho)\,=\,\sqrt{\frac{\pi}{2n}},\ \ \mathrm{Var}(\rho)\,=\,\frac{4-\pi}{2n},\ \ 0\leq r\leq 1,\ n\geq 2$$\end{document}
+Meanwhile, the circular-linear correlation coefficient r (hereinafter referred to as circlin r) is a type of Pearson correlation coefficient (PCC) distributed from 0 to 1 without direction, achieved by transforming the phase into $sin⁡\theta$ and $cos⁡\theta$ to create linear parameters (Mardia, 1976; Fisher, 1995), to assess the relationship between a random unit vector and another linear random variable:
 
-We can observe that different from Pearson’s r, which always has a population mean H0:ρ=0\begin{document}$H_{0}:\, \rho=0$\end{document} under the null hypothesis, the circlin r has a population mean between 0 and 1, which tends to approach 1 and display left-skewness as the sample size n decreases, while approach 0 and exhibiting right-skewness as the n increases (also see Appendix 5—figure 1). The sampling distribution of correlated circlin r also shows the same property of skewness when approaching lower and upper bounds (Appendix 5—figure 2). Therefore, it is clearly not appropriate to use raw coefficients in the meta-analysis.
+$$
+circlin r=\sqrt{\frac{r_{12}^{2}+r_{13}^{2}−2⋅r_{12}⋅r_{13}⋅r_{23}}{1−r_{23}^{2}}}
+$$
 
-To transform its sampling distribution to be unbounded, normally distributed, and centered at 0 for our meta-analysis, we first scaled the circlin r as a form of nr2\begin{document}$nr^{2}$\end{document} to approximate the χ22\begin{document}$\chi^{2}_{2}$\end{document} distribution (Fisher et al., 1993). Here, the sample size has been weighted to eliminate the bias introduced by large r\begin{document}$r$\end{document} under small sample sizes. We can find the quantile of circlin r in the upper tail,Pr⁡(n⁢r2≤n⁢ρ2)= 1-e-n⁢r2/2,0≤r<1\begin{document}$$\displaystyle \Pr\!\left(nr^{2}\leq n\rho^{2}\right)\,=\,1-e^{-nr^{2}/2},\quad 0\leq r \lt 1$$\end{document}
 
-Finally, by transforming non-normal chi-square deviates to standardized normal distribution and scaling the distribution by the sample size, circlin r can be transformed into a standardized normal scale rz\begin{document}$r_{z}$\end{document},Φ⁢(rz⁢n)=Pr⁡(n⁢r2≤n⁢ρ2)=12⁢π⁢∫-∞rz⁢ne-y2/2⁢𝑑y\begin{document}$$\displaystyle \Phi\!\left(r_{z}\sqrt{n}\right)\,=\,\Pr\!\left(nr^{2}\leq n\rho^{2}\right)\,=\,\frac{1}{\sqrt{2\pi}}\int_{-\infty}^{\,r_{z}\sqrt{n}}e^{-y^{2}/2}\,dy$$\end{document}
 
-The sampling distribution of the transformed circlin rz approximates a normal distribution when n>15\begin{document}$n \gt 15$\end{document}. For n<15\begin{document}$n \lt 15$\end{document}, the distribution is slightly right-skewed. Its population distribution can be approximated by Pearson’s r, and it is bounded between −1 (null) and 1 (alternative). The interpretation of the strength of rz\begin{document}$r_{z}$\end{document} is comparable with Pearson’s r (see Table 6), and now rz\begin{document}$r_{z}$\end{document} can also be transformed to Fisher’s z and included in the meta-analysis. It is worth noting that small effect sizes are common in neuroscience and meta-analyses due to the complexity of underlying mechanisms and the presence of numerous confounding variables and hierarchical structures, so small correlations may carry substantial and meaningful information to interpret. Monte Carlo simulation results and the code used for transformations were also reported in Appendix 5.
+$$
+r_{12}=corr⁢(x,cos⁡\theta),r_{13}=corr⁢(x,sin⁡\theta),r_{23}=corr⁢(cos⁡\theta,sin⁡\theta)
+$$
 
-## Methodological characteristics and moderators
+Since there is no existing method to standardize the circlin r, we developed an approximation approach to transform the bounded and non-linear distribution to an unbounded standardized normal distribution $N(0,1)$. The verification and performance can be found in Appendix 5.
+
+The population distribution of circular-linear correlation $ρ$ with $n$ samples can be approximated by a chi-square distribution with 2 degrees of freedom (Fisher et al., 1993), $χ_{2}^{2}$. We derived that the circular-linear correlation coefficient has the following mean and variance in an approximate form and verified in R,
+
+$$
+𝔼⁢(ρ)=\sqrt{\frac{\pi}{2⁢n}},Var⁢(ρ)=\frac{4-\pi}{2⁢n}, 0\leqr\leq1,n\geq2
+$$
+
+We can observe that different from Pearson’s r, which always has a population mean $H_{0}:ρ=0$ under the null hypothesis, the circlin r has a population mean between 0 and 1, which tends to approach 1 and display left-skewness as the sample size n decreases, while approach 0 and exhibiting right-skewness as the n increases (also see Appendix 5—figure 1). The sampling distribution of correlated circlin r also shows the same property of skewness when approaching lower and upper bounds (Appendix 5—figure 2). Therefore, it is clearly not appropriate to use raw coefficients in the meta-analysis.
+
+To transform its sampling distribution to be unbounded, normally distributed, and centered at 0 for our meta-analysis, we first scaled the circlin r as a form of $nr^{2}$ to approximate the $χ_{2}^{2}$ distribution (Fisher et al., 1993). Here, the sample size has been weighted to eliminate the bias introduced by large $r$ under small sample sizes. We can find the quantile of circlin r in the upper tail,
+
+$$
+Pr⁡(n⁢r^{2}\leqn⁢ρ^{2})= 1-e^{-n⁢r^{2}/2},0\leqr<1
+$$
+
+Finally, by transforming non-normal chi-square deviates to standardized normal distribution and scaling the distribution by the sample size, circlin r can be transformed into a standardized normal scale $r_{z}$,
+
+$$
+Φ⁢(r_{z}⁢\sqrt{n})=Pr⁡(n⁢r^{2}\leqn⁢ρ^{2})=\frac{1}{\sqrt{2⁢\pi}}⁢\int_{-∞}^{r_{z}⁢\sqrt{n}}e^{-y^{2}/2}⁢𝑑y
+$$
+
+The sampling distribution of the transformed circlin rz approximates a normal distribution when $n>15$. For $n<15$, the distribution is slightly right-skewed. Its population distribution can be approximated by Pearson’s r, and it is bounded between −1 (null) and 1 (alternative). The interpretation of the strength of $r_{z}$ is comparable with Pearson’s r (see Table 6), and now $r_{z}$ can also be transformed to Fisher’s z and included in the meta-analysis. It is worth noting that small effect sizes are common in neuroscience and meta-analyses due to the complexity of underlying mechanisms and the presence of numerous confounding variables and hierarchical structures, so small correlations may carry substantial and meaningful information to interpret. Monte Carlo simulation results and the code used for transformations were also reported in Appendix 5.
+
+**Table 6.**
+ Interpretation of the standardized circular-linear correlation coefficient.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>rz</th>
+      <th>Strength</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lt;0</td>
+      <td>No Effect</td>
+    </tr>
+    <tr>
+      <td>0</td>
+      <td>Null</td>
+    </tr>
+    <tr>
+      <td>0.1</td>
+      <td>Small</td>
+    </tr>
+    <tr>
+      <td>0.3</td>
+      <td>Moderate</td>
+    </tr>
+    <tr>
+      <td>0.5</td>
+      <td>Strong</td>
+    </tr>
+  </tbody>
+</table>
+
+### Methodological characteristics and moderators
 
 In previous studies, researchers have applied different experimental designs to investigate coupling and summarized divergent conclusions regarding each coupling parameter. To develop a more systematic understanding of the heterogeneity of approaches, six moderators were selected in the moderator analysis. Appendix 2—table 2 provides a complete list of moderators in each study, and categories that define moderators are listed below, the range represents the number of effect sizes included in the analysis across four types of coupling measures:
 
-## Statistical analysis
+**Table 7.**
+ Summary of memory tasks.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Memory Task Domain</th>
+      <th>Memory Task Modality</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Verbal Tasks (n=12)</td>
+      <td>Word-Pair (WP)</td>
+    </tr>
+    <tr>
+      <td>Word List</td>
+    </tr>
+    <tr>
+      <td>Novel Metaphor</td>
+    </tr>
+    <tr>
+      <td>Word-Image Pair (WIP)</td>
+    </tr>
+    <tr>
+      <td>Emotional Task (n=3)</td>
+      <td>Picture-recognition (IMG)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Spatial Tasks (n=4)</td>
+      <td>Spatial Memory</td>
+    </tr>
+    <tr>
+      <td>2D Object Location (2DL)</td>
+    </tr>
+    <tr>
+      <td>Visuo-spatial (VS)</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Motor Tasks (n=6)</td>
+      <td>Motor Sequence (MST)</td>
+    </tr>
+    <tr>
+      <td>Gross-motor Juggle</td>
+    </tr>
+    <tr>
+      <td>Mirror-tracing Task (MTT)</td>
+    </tr>
+    <tr>
+      <td>Visuomotor Adaptation (VMA)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical analysis
 
 We chose to fit overall and subgroup (moderator) models using Bayesian hierarchical random-effects and mixed-effects models, respectively, due to the common occurrence of multiple effect sizes for the same set of participants reported within the same study, violating the assumption of independence of effect sizes, as well as the limited and unequal group size and potential high heterogeneity. In comparison to frequentist models, Bayesian models incorporate prior probabilities for each parameter by considering likelihood information (i.e. the effect sizes we extracted) to establish a model for predicting the posterior probability distribution of parameters, which provides transparent inferences with lower risks of false positives. In the posterior distribution, confidence intervals (CIs) reported by frequentist methods are replaced by credible intervals (CrI), which can be interpreted as ‘there is a 95% probability that the parameter lies within the interval’, thereby providing a more precise prediction of true probabilities. Additionally, Bayesian methods could more effectively build models that account for multiple sources of heterogeneity and allow the analysis of the impact of moderator variables representing different measures and participant groups on the pooled effect size (Sutton and Abrams, 2001). As Kruschke and Liddell, 2018 described, the shrinkage property of Bayesian models helps prevent false alarms by pulling extreme values toward the group mean, which is especially valuable when accounting for potentially outlying estimates. This explains the observed differences between model distributions and the raw effect sizes in our forest plots. All statistical analyses for Bayesian models were conducted in R using the brms package (Bürkner, 2017) along with supporting packages bayesplot (Gabry et al., 2019), metaviz (Wagner et al., 2018), and customized codes for visualization. Contrary to the misconception that Bayesian models are overly complex or opaque, they are increasingly valued for their accuracy and transparent inferences (Kruschke and Liddell, 2018). We also recognize that some researchers may prefer frequentist approaches. To support transparency and comparability, we also provided the traditional meta-analytic results in Supplementary file 5, which demonstrate consistency with our Bayesian findings.
 
@@ -326,34 +815,127 @@ For each overall and subgroup model (Appendix 2—table 1), we applied the Marko
 
 Convergence of the MCMC was checked following the suggestion of WAMBS-Checklist (Depaoli and van de Schoot, 2017) through 1. graphical posterior predictive checks to evaluate how well the model-predicted data replicated the observed data; 2. trace plots; and 3. the Gelman-Rubin diagnostic to assess convergence of the Markov chains. Ideally, the posterior distribution should overlap with the distribution of the test data generated, the trace plot distribution should resemble a uniformly undulating wave with high overlap between chains, and the Potential Scale Reduction Factor (Rˆ) should be less than 1.1. Autocorrelation plots were used to ensure low temporal dependency between successive samples. Examples of diagnostic plots were reported in Supplementary file 2. Any non-convergence at the aforementioned stages led to reconfiguration of chains and iterations for analysis. Estimation of each intercept, moderator, and heterogeneity in the posterior distribution was extracted, and the estimation of mean, distribution, and 95% credible interval of each effect size and the pooled effect size were reported in forest plots.
 
-## Overall model
+#### Overall model
 
-We fitted random-effects models that predict the relationships between coupling phase, SP amplitude, coupling strength, and coupling percentage with memory consolidation, considering only heterogeneity and sampling errors. The three-level Bayesian model superimposed random effects for sampling error (first level), between-study heterogeneity (second level), and within-study heterogeneity (third level):z∣σz∼ 1+(1∣Effect)+(1∣Study)\begin{document}$$\displaystyle z\mid\sigma_{z}\ \sim\ 1+(1\mid\mathrm{Effect})+(1\mid\mathrm{Study})$$\end{document}
+We fitted random-effects models that predict the relationships between coupling phase, SP amplitude, coupling strength, and coupling percentage with memory consolidation, considering only heterogeneity and sampling errors. The three-level Bayesian model superimposed random effects for sampling error (first level), between-study heterogeneity (second level), and within-study heterogeneity (third level):
 
-By introducing priors and likelihood information to model intercept and heterogeneity parameters, our random-effects model can be represented using the following formula:θ^∼N⁢(θi⁢j,σi⁢j2)\begin{document}$$\displaystyle \hat{\theta}\sim N(\theta_{ij},\sigma_{ij}^{2})$$\end{document}θi⁢j∼N⁢(θi,σi2)\begin{document}$$\displaystyle \theta_{ij}\sim N(\theta_{i},\sigma_{i}^{2})$$\end{document}θi∼N⁢(μθ,τ2)\begin{document}$$\displaystyle \theta_{i}\sim N(\mu_{\theta},\tau^{2})$$\end{document}θ^∼N⁢(μθ,σi⁢j2+σi2+τ2)\begin{document}$$\displaystyle \hat{\theta}\sim N(\mu_{\theta},\ \sigma_{ij}^{2}+\sigma_{i}^{2}+\tau^{2})$$\end{document}(μθ,τ2,σi2)∼p⁢(⋅),τ2,σi2>0\begin{document}$$\displaystyle (\mu_{\theta},\tau^{2},\sigma_{i}^{2})\sim p(\cdot),\quad\tau^{2},\sigma_{i}^{2} \gt 0$$\end{document}μθ∼N⁢(zmean,zsd)\begin{document}$$\displaystyle \mu_{\theta}\sim N(z_{\mathrm{mean}},z_{\mathrm{sd}})$$\end{document}τ,σi∼H⁢C⁢(zl⁢p,zs⁢p)\begin{document}$$\displaystyle \tau,\sigma_{i}\sim HC(z_{lp},z_{sp})$$\end{document}
+$$
+z∣\sigma_{z}∼ 1+(1∣Effect)+(1∣Study)
+$$
 
-where z represents the fisher’s z-transformed correlation coefficient, τ2\begin{document}$\tau^{2}$\end{document} represents between-study heterogeneity, σi2\begin{document}$\sigma_{i}^{2}$\end{document} represents within-study heterogeneity, and σij2\begin{document}$\sigma_{ij}^{2}$\end{document} represents sampling error. Since the distribution of Fisher’s z and heterogeneity (Röver et al., 2021) all follow certain probability functions, and non-informative priors could not provide reasonable estimates, we selected weak informative priors in the model to trade off between allowing collected real data to influence posterior distributions and excluding extreme outliers. For the intercept of all models, we chose a standardized normal distribution N(0,1) as the prior distribution, assuming no effect to control false positives.
+By introducing priors and likelihood information to model intercept and heterogeneity parameters, our random-effects model can be represented using the following formula:
 
-The prior for heterogeneity used the Half-Cauchy distribution, known for its heavy-tailed property, improving it to be more tolerant of high heterogeneity (Williams et al., 2018). Also, half-Cauchy truncated at 0, which is consistent with the fact that heterogeneity cannot be less than 0. For between-study heterogeneity τ2\begin{document}$\tau^{2}$\end{document}, we obtained a mean between-study heterogeneity of μ=0.13\begin{document}$\mu=0.13$\end{document} from a dataset of heterogeneity reported in 498 correlational meta-analyses (Van Erp et al., 2017) using Fisher’s z or Pearson’s r\begin{document}$r$\end{document} as the measure of effect size, which represents a replication of the methodology by McKinney et al., 2021 regarding prior selection. Additionally, due to differences in measurement methods and memory tasks across studies, we held a prior belief in some degree of between-study heterogeneity. For reasons discussed above, we set the prior using half-Cauchy distribution HC(0,0.5)\begin{document}$HC(0,0.5)$\end{document} by extending the scale parameter from 0.13 to 0.5 to account for more extreme heterogeneity. Lastly, the prior for within-study heterogeneity is also set as to be HC(0,0.5)\begin{document}$HC(0,0.5)$\end{document} to balance the uncertainty arising from different measurement approaches or sample groups. This combination of priors reduced the risk of overestimation, accounted for substantial uncertainty, and increased transparency by explicitly encoding all assumptions.
+$$
+\theta^∼N⁢(\theta_{i⁢j},\sigma_{i⁢j}^{2})
+$$
 
-## Moderator models
 
-For moderator analysis, we introduced continuous and categorical variables into the overall model as fixed effects, forming a following mixed-effects model:z∣σz∼ 1+Moderator+(1∣Effect)+(1∣Study)\begin{document}$$\displaystyle z\mid\sigma_{z}\ \sim\ 1+\mathrm{Moderator}+(1\mid\mathrm{Effect})+(1\mid\mathrm{Study})$$\end{document}θ^∼N⁢(μθ+∑k=1nβk⋅Xi⁢j⁢k,σi⁢j2+σi2+τ2)\begin{document}$$\displaystyle  \hat{\theta}\sim N\!\left(\mu_{\theta}+\sum_{k=1}^{n}\beta_{k}\cdot X_{ijk},\,\sigma_{ij}^{2}+\sigma_{i}^{2}+\tau^{2}\right)$$\end{document}
 
-in which X\begin{document}$X$\end{document} denotes random variables for moderators, k is the random variable of moderators, and n represents the number of moderators specified in the model. In the subgroup model, we chose to use the weak informative prior N(0,1)\begin{document}$N(0,1)$\end{document} for each moderator as fixed effects to account for the uncertainty in the magnitude of the aggregate effects caused by moderators. In the meta-regression model accounting for the effect of age, we chose N(0,0.1)\begin{document}$N(0,0.1)$\end{document} to model the change over years. Except for the exploratory analysis, all statistical models used in data analysis are summarized in Appendix 2—table 1. All posterior distributions of the moderators are reported in Supplementary file 6.
+$$
+\theta_{i⁢j}∼N⁢(\theta_{i},\sigma_{i}^{2})
+$$
 
-To assess directional hypotheses proposed for each moderator model, we conducted non-linear hypothesis testing within the Bayesian framework, obtaining Bayesian Factors (BF10\begin{document}$BF_{10}$\end{document}, defined as Evidence Ratio, ER, in the package brms) for different levels within each model, which performed tests of evidence for the ratio of marginal likelihoods between two levels. In addition, we conducted hypothesis testing on the overall model compared to the null. Table 8 presents the strength of evidence represented by different Bayesian Factors, which is analogous to the one-tailed t-test in the interpretation. In directional hypotheses, BF10=3\begin{document}$BF_{10}=3$\end{document} means the hypothesis is three times more likely than the alternative. Additionally, we used the posterior probability, also defined as credibility score (Cox et al., 2023), to report the percentage of posterior samples consistent with the direction of the hypothesis. A posterior probability of 1 indicates that all posterior sample draws align with the hypothesis.
+
+
+$$
+\theta_{i}∼N⁢(\mu_{\theta},\tau^{2})
+$$
+
+
+
+$$
+\theta^∼N⁢(\mu_{\theta},\sigma_{i⁢j}^{2}+\sigma_{i}^{2}+\tau^{2})
+$$
+
+
+
+$$
+(\mu_{\theta},\tau^{2},\sigma_{i}^{2})∼p⁢(⋅),\tau^{2},\sigma_{i}^{2}>0
+$$
+
+
+
+$$
+\mu_{\theta}∼N⁢(z_{mean},z_{sd})
+$$
+
+
+
+$$
+\tau,\sigma_{i}∼H⁢C⁢(z_{l⁢p},z_{s⁢p})
+$$
+
+where z represents the fisher’s z-transformed correlation coefficient, $\tau^{2}$ represents between-study heterogeneity, $\sigma_{i}^{2}$ represents within-study heterogeneity, and $\sigma_{ij}^{2}$ represents sampling error. Since the distribution of Fisher’s z and heterogeneity (Röver et al., 2021) all follow certain probability functions, and non-informative priors could not provide reasonable estimates, we selected weak informative priors in the model to trade off between allowing collected real data to influence posterior distributions and excluding extreme outliers. For the intercept of all models, we chose a standardized normal distribution N(0,1) as the prior distribution, assuming no effect to control false positives.
+
+The prior for heterogeneity used the Half-Cauchy distribution, known for its heavy-tailed property, improving it to be more tolerant of high heterogeneity (Williams et al., 2018). Also, half-Cauchy truncated at 0, which is consistent with the fact that heterogeneity cannot be less than 0. For between-study heterogeneity $\tau^{2}$, we obtained a mean between-study heterogeneity of $\mu=0.13$ from a dataset of heterogeneity reported in 498 correlational meta-analyses (Van Erp et al., 2017) using Fisher’s z or Pearson’s $r$ as the measure of effect size, which represents a replication of the methodology by McKinney et al., 2021 regarding prior selection. Additionally, due to differences in measurement methods and memory tasks across studies, we held a prior belief in some degree of between-study heterogeneity. For reasons discussed above, we set the prior using half-Cauchy distribution $HC(0,0.5)$ by extending the scale parameter from 0.13 to 0.5 to account for more extreme heterogeneity. Lastly, the prior for within-study heterogeneity is also set as to be $HC(0,0.5)$ to balance the uncertainty arising from different measurement approaches or sample groups. This combination of priors reduced the risk of overestimation, accounted for substantial uncertainty, and increased transparency by explicitly encoding all assumptions.
+
+#### Moderator models
+
+For moderator analysis, we introduced continuous and categorical variables into the overall model as fixed effects, forming a following mixed-effects model:
+
+$$
+z∣\sigma_{z}∼ 1+Moderator+(1∣Effect)+(1∣Study)
+$$
+
+
+
+$$
+\theta^∼N⁢(\mu_{\theta}+\sumk=1n\beta_{k}⋅X_{i⁢j⁢k},\sigma_{i⁢j}^{2}+\sigma_{i}^{2}+\tau^{2})
+$$
+
+in which $X$ denotes random variables for moderators, k is the random variable of moderators, and n represents the number of moderators specified in the model. In the subgroup model, we chose to use the weak informative prior $N(0,1)$ for each moderator as fixed effects to account for the uncertainty in the magnitude of the aggregate effects caused by moderators. In the meta-regression model accounting for the effect of age, we chose $N(0,0.1)$ to model the change over years. Except for the exploratory analysis, all statistical models used in data analysis are summarized in Appendix 2—table 1. All posterior distributions of the moderators are reported in Supplementary file 6.
+
+To assess directional hypotheses proposed for each moderator model, we conducted non-linear hypothesis testing within the Bayesian framework, obtaining Bayesian Factors ($BF_{10}$, defined as Evidence Ratio, ER, in the package brms) for different levels within each model, which performed tests of evidence for the ratio of marginal likelihoods between two levels. In addition, we conducted hypothesis testing on the overall model compared to the null. Table 8 presents the strength of evidence represented by different Bayesian Factors, which is analogous to the one-tailed t-test in the interpretation. In directional hypotheses, $BF_{10}=3$ means the hypothesis is three times more likely than the alternative. Additionally, we used the posterior probability, also defined as credibility score (Cox et al., 2023), to report the percentage of posterior samples consistent with the direction of the hypothesis. A posterior probability of 1 indicates that all posterior sample draws align with the hypothesis.
+
+**Table 8.**
+ Interpretation of Bayes Factor (BF10) for the strength of evidence.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>BF10</th>
+      <th>Direction</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>&lt;0.1</td>
+      <td>Strong, Favor alternative</td>
+    </tr>
+    <tr>
+      <td>0.1–0.33</td>
+      <td>Moderate, Favor alternative</td>
+    </tr>
+    <tr>
+      <td>0.33–1</td>
+      <td>Weak, Favor alternative</td>
+    </tr>
+    <tr>
+      <td>1–3</td>
+      <td>Weak, Favor hypothesis</td>
+    </tr>
+    <tr>
+      <td>3–10</td>
+      <td>Moderate, Favor hypothesis</td>
+    </tr>
+    <tr>
+      <td>&gt;10</td>
+      <td>Strong, Favor hypothesis</td>
+    </tr>
+  </tbody>
+</table>
 
 The predictive power of models was compared in pairs by computing model weights via leave-one-out (LOO) stacking of posterior predictive distributions (Vehtari et al., 2017), including the comparison between the overall model and a single moderator model, as well as a single moderator model and a moderator model with an additional moderator and interaction term. Models with additional predictor(s) that had higher stacked weights indicate that it enhanced the overall predictive power of the model. This approach could help identify moderators that influence the correlation between SO-SP coupling and memory retention. Model weights have also been computed via the Pseudo-BMA method as the controlled analysis.
 
-## Sensitivity analysis
+#### Sensitivity analysis
 
 Finally, in sensitivity testing, we conducted separate assessments for (1) publication bias; (2) focal models excluding studies that introduced significant heterogeneity; and (3) the impact of priors. Regarding publication bias, although efforts were made to minimize potential controllable biases through the data request (especially for effect size computed but not reported by studies), effect size transformation, and multi-level models, differences in data analysis approaches and experimental conditions could not be fully addressed at the meta-analysis level. Therefore, we additionally used a frequentist approach by using Restricted Maximum Likelihood (REML) with the metafor package (Viechtbauer, 2010) to fit three-level models to extract data for generating funnel plots and quantifying publication bias. Frequentist results of each model were also reported in Supplementary file 5 for readers unfamiliar with Bayesian statistics. Besides the Egger’s regression test and rank correlation test, we chose counter-enhanced funnel plot (Kossmeier et al., 2019) and superimposed the Egger’s regression line. We also performed the time lag bias test to quantify the impact of heterogeneity and effects of the year of publication.
 
-In the focal analysis, we excluded studies focused only on non-declarative memory tasks, those with a high risk of bias (see Appendix 1) or significant methodological differences, those only tested post-sleep memory retention, or with a Pareto k\begin{document}$k$\end{document} diagnostic value larger than 0.7. Pareto k\begin{document}$k$\end{document} for each effect size is reported in Supplementary file 4. We also removed studies that adopted modulation index as their measures in the focal model of coupling strength. In addition, the method of prior sensitivity test, as well as the posterior predictive check, was reported in Supplementary file 2.
+In the focal analysis, we excluded studies focused only on non-declarative memory tasks, those with a high risk of bias (see Appendix 1) or significant methodological differences, those only tested post-sleep memory retention, or with a Pareto $k$ diagnostic value larger than 0.7. Pareto $k$ for each effect size is reported in Supplementary file 4. We also removed studies that adopted modulation index as their measures in the focal model of coupling strength. In addition, the method of prior sensitivity test, as well as the posterior predictive check, was reported in Supplementary file 2.
 
-## Phase spatiotemporal analysis
+#### Phase spatiotemporal analysis
 
-The non-negative and nonlinear distribution of circular-linear correlation makes it impossible to determine the direction of correlation. This is one of the reasons why we have requested individual-level processed data from most of the authors of included studies, in addition to requesting the effect size. By standardizing memory scores of each individual in each study using z\begin{document}$z$\end{document}-scores, we overlaid the data from comparable studies to fit and visualize the nonlinear relationship between the coupling phase and memory consolidation using the best fit second degree quadratic line for the combination of each SP type and channel location. It could effectively improve the interpretation of nonlinear relationships and circular direction of the SO-SP coupling phase across studies.
+The non-negative and nonlinear distribution of circular-linear correlation makes it impossible to determine the direction of correlation. This is one of the reasons why we have requested individual-level processed data from most of the authors of included studies, in addition to requesting the effect size. By standardizing memory scores of each individual in each study using $z$-scores, we overlaid the data from comparable studies to fit and visualize the nonlinear relationship between the coupling phase and memory consolidation using the best fit second degree quadratic line for the combination of each SP type and channel location. It could effectively improve the interpretation of nonlinear relationships and circular direction of the SO-SP coupling phase across studies.
 
 For the comparison of coupling phase across PSG channel clusters, we used the Bayesian circular mixed-effects model (Cremers and Klugkist, 2018) with 12,000 iterations to account for repeated measurement and differences of sample sizes between channels. PSG channel location has been set as a fixed effect, while subject has been taken into account as a random effect. A 95% credible interval and the posterior distribution of each circular direction was reported in the circular plot to compare the timing of occurrence of SO-SP coupling across different cortical areas. Similar to the main analysis, the Bayes factor and posterior probability have been used to evaluate evidence for the circular mean difference. In addition, the inconsistency of the coupling phase has been assessed by the Rayleigh test.

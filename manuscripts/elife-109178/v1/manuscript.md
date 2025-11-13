@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00afp2z80 Laboratory of Molecular Regulation of Neurogenesis, GIGA Institute, University of Liège Liège Belgium
+1. Laboratory of Molecular Regulation of Neurogenesis, GIGA Institute, University of Liège Liège Belgium ([ROR:00afp2z80](https://ror.org/00afp2z80))
 2. WELBIO department, WEL Research Institute Wavre Belgium
 
 † Corresponding author

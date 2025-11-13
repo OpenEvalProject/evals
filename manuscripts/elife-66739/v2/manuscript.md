@@ -32,6 +32,14 @@ In plants, the role of Gro/TLE-type corepressors is played by TOPLESS (TPL), TOP
 
 We have previously demonstrated the recapitulation of the auxin response pathway in Saccharomyces cerevisiae (yeast) by porting individual components of the Arabidopsis auxin nuclear response (Pierre-Jerome et al., 2014). In this Arabidopsis thaliana Auxin Response Circuit in Saccharomyces cerevisiae (AtARCSc; Figure 1A), an auxin-responsive transcription factor (ARF) binds to a promoter driving a fluorescent reporter. In the absence of auxin, the ARF protein activity is repressed by interaction with a full-length Aux/IAA protein fused to the N-terminal domain of TPL. Upon the addition of auxin, the TPL-IAA fusion protein is targeted for degradation through interaction with a member of the Auxin Signaling F-box protein family and releases the transcriptional repression of the fluorescent reporter. Reporter activation can be quantified after auxin addition by microscopy or flow cytometry (Pierre-Jerome et al., 2014). In the original build and characterization of AtARCSc, it was noted that the two N-terminal truncations of TPL (N100 or N300) behave differently (Pierre-Jerome et al., 2014). While both truncations are able to repress the function of a transcriptional activator fused to an Aux/IAA, only the TPLN100 fusion shows alleviation of repression after auxin addition. TPLN300 fusions to Aux/IAAs maintain strong durable repression even under high concentrations of auxin. This disparity is not due to differential rates of protein degradation as both proteins appear to be turned over with equal efficiency after auxin addition (Pierre-Jerome et al., 2014).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66739/elife-66739-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of the ARCSc. The auxin-responsive promoter driving the fluorescent protein Venus carries binding sites for the auxin-responsive transcription factor (ARF). In the absence of auxin, the IAA-TPL-N fusion protein is bound to the ARF and maintains the circuit in a repressed state. Upon addition of auxin, the IAA-TPL protein is targeted for ubiquitination and subsequent protein degradation, activating transcription of the fluorescent reporter. (B) TPL domains are LisH (LIS1 homology motif, blue), CTLH (C-terminal LisH motif, orange), CRA (CT11-RanBPM; red, dimerization; green, foldback), and two WD40, beta-propeller motifs (purple). N-terminal domains are indicated on the solved structure of the first 202 amino acids (Martin-Arevalillo et al., 2017, 5NQS). The termini of the TPLN100 truncation used in the original ARCSc studies is indicated. (C) Diagram indicating the structure of constructs analyzed in experiments shown in subsequent panels. For constructs with identical behavior (H1-H3, H1-H5, H1-H6, H1-H7), we included only a representative member (H1-H7) for simplicity. Repression Index (Rep.) is a scaled measure of repression strength with 0 set to the level of repression observed with IAA3 and 10 set to the level of repression by TPLN188. Auxin induction level (Aux. ind.) indicates the fold change difference between reporter expression before auxin addition (time zero) and at the end of an experiment (~500 min). (D-F) Helix 1 and the CRA domain (Helix 3–Helix 8) can act independently to repress transcription. Each panel represents two independent time-course flow cytometry experiments of the TPL helices indicated, all fused to IAA3. Every point represents the average fluorescence of 5–10,000 individually measured yeast cells (a.u.: arbitrary units). Auxin (IAA-10 µM) was added at the indicated time (gray bar, +Aux).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66739/elife-66739-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Each color represents two independent time-course flow cytometry experiments of the TPL helices indicated, all fused to IAA3 or IAA3 alone (black line). Every point represents the average fluorescence of 5–10,000 individually measured yeast cells (a.u.: arbitrary units). Auxin (IAA-10 µM) was added at the indicated time (gray bar, +Aux).
+
 The conservation of TPL’s repressive function in yeast suggests that the protein partners that enact repression are conserved across eukaryotes. Consistent with this speculation, the series of alpha-helices that form the N-terminal portion of TPL (Figure 1B; Martin-Arevalillo et al., 2017) is highly reminiscent of naturally occurring truncated forms of mammalian TLE (Gasperowicz and Otto, 2005), such as Amino-terminal Enhancer of Split (AES) (Zhang et al., 2010), the Groucho ortholog LSY-22 (Flowers et al., 2010), and the unrelated mouse repressor protein MXI1 (Schreiber-Agus et al., 1995). Gro/TLE family members are generally considered to repress by recruiting histone deacetylases (HDACs) to control chromatin compaction and availability for transcription (Chen and Courey, 2000; Long et al., 2006). An alternative hypothesis has been described for Tup1 in yeast, where Tup1 blocks the recruitment of RNA polymerase II (Pol II) (Wong and Struhl, 2011), possibly through contacts with Mediator complex subunits Med21 or Med3 (Gromöller and Lehming, 2000; Papamichos-Chronakis et al., 2000). However, like many of these family members, multiple repression mechanisms have been described for TPL at different genetic loci. For example, TPL has been found to recruit the repressive CDK8 Mediator complex (Ito et al., 2016), chromatin remodeling enzymes such as Histone Deacetylase 19 (HD19) (Long et al., 2006), and directly bind to histone proteins (Ma et al., 2017).
 
 Here, we leveraged the power of yeast genetics to interrogate the mechanism of TPL repression. Using AtARCSc, we discovered that the N-terminal domain of TPL contains two distinct repression domains that can act independently. We mapped the first, weaker repression domain to the first 18 amino acids of the LisH domain (Helix 1), and the second, more potent domain to Helix 8, which falls within the CRA domain. Full repression by Helix 8 required the Mediator complex, specifically direct interaction with Med21 and Med10. The Med21 residues that interact with TPL are the same ones required for transcriptional repression by the yeast corepressor Tup1. In addition, we found that multimerization of TPL was not required for repression in yeast or in plants. Our yeast results were validated with plant assays and extended to include evidence that interaction with the middle domain of Mediator was required for TPL repression of the auxin-regulated development program giving rise to lateral roots. Our findings point to a conserved functional connection between Tup1/TPL corepressors and the Mediator complex that together create a repressed state poised for rapid activation.
@@ -45,6 +53,18 @@ We started by identifying a shorter truncation, TPLN188, which behaved identical
 To identify the minimal domain required for Helix 8-based repression, we generated additional deletions (Figure 1C, F, Figure 1—figure supplement 1). Helix 8 and the following linker were not sufficient for repression (Figure 1F), and removal of Helix 9 or of the linker between Helix 8 and Helix 9 slightly increased sensitivity to auxin compared to TPLN188 (H1-H8Δ8L, Figure 1—figure supplement 1). A deletion that removed both the LisH and Helix 8 repression domains (H3-H7) was only able to weakly repress reporter expression (Figure 1—figure supplement 1). These results demonstrate that Helix 8, in combination with the linker between Helix 8 and Helix 9 (which folds over Helix 1), was required for maintaining repression following addition of auxin. Moreover, the repressive activity of Helix 8 and the linker were only functional in the context of the larger Helix 3-Helix 8 truncation that carries the CTLH domain and a portion of the CRA domain.
 
 To determine which of the many known or predicted TPL-binding partners could mediate the repression activity of Helix8, we identified known interactors with either TPL or other Gro/TLE co-repressors, and then introduced the Arabidopsis homologs of these genes into the cytoplasmic split-ubiquitin system (cytoSUS) (Asseck and Grefen, 2018). We chose cytoSUS over yeast two-hybrid because in cytoSUS the interaction between target proteins takes place in the cytoplasm, and we had observed that the TPL N-terminus could repress activation of yeast two hybrid prototrophy reporters (Figure 2—figure supplement 1A). Putative direct interactors include HDACs (AtHDAC9, AtHDAC6; Long et al., 2006), Histone proteins (Histone H3, Histone H4; Ma et al., 2017), and the Mediator components MED13 (AtMED13; Ito et al., 2016) and MED21, which has been demonstrated to interact with Tup1, the yeast homolog of TPL (Gromöller and Lehming, 2000). We did not observe any interactions between TPLN188 and the HDACs HDA6 and HDA9; the histone protein AtHIS4; or the Mediator subunit AtMED13 (Figure 2A, Figure 2—figure supplement 1B). HDAC interaction with TPL has been previously hypothesized to occur through indirect interactions with partner proteins (Krogan et al., 2012); however, direct interactions with histones and MED13 have been detected (Ito et al., 2016; Ma et al., 2017). The absence of interaction between TPLN188 and these proteins may be due to differences between methods or interaction interfaces in the C-terminal WD40 repeats.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/66739/elife-66739-fig2-v2.jpg)
+
+**Figure 2.:** (A–C, E) Cytoplasmic split-ubiquitin system (CytoSUS) assays with candidate interacting proteins. Nub-3xHA is the N-terminal fragment of ubiquitin expressed with no fusion protein and is used as a negative control. Each prey protein is from Arabidopsis. -WL, -ADE: dropout lacking Trp, Leu, and Ade (growth control); -WLMH, -ADE: dropout lacking Trp, Leu, His, Met, and Ade (selective media). The plating for each panel was performed at the same day, white lines are provided when plates were cropped for clarity. (B) Alignments of the Arabidopsis (At) and Saccharomyces (Sc) MED21 proteins are shown above cytoSUS assays with the same bait shown in (A). Western blots below the colonies indicated that AtMED21 N-terminal Δ3 and Δ5 are well expressed in assay conditions. (C) CytoSUS assays with selected Mediator proteins in the middle module. (D) The TPL-ProteinA-TF fusion protein can pull down TPL, AtMED21, and AtMED10B from yeast extracts using IgG-beads. Detection of the VP16 transcriptional activator demonstrates enrichment of the fusion protein (αVP16). Each prey protein is detected via the 3xHA tag (αHA), and efficacy of purification was judged by PGK1 depletion (αPGK1). (E) A TPL-N truncation lacking the LisH domain (TPLH2-H9) could still interact with the AtMED21-N31 truncation. This bait construct interacted with IAA3, but only minimally with the negative control (free Nub-3xHA). (F) Yeast Mediator (bottom, 5N9J) and AtTPL (top, 5NQV) manually juxtaposed to compare relative domain sizes and feasibility of a TPL-MED21-MED10B interaction. TPL Helix 8–9 is colored green. MED21 is colored aqua, with the N-terminus colored red, and the IAA27 EAR peptide in orange. MED10 is colored teal, with the C-terminus colored purple. The dotted line indicates the border between TPL and Mediator structures.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66739/elife-66739-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Identifying TPL-N terminal domain interactor proteins through yeast two hybrid screening identifies TPL as a problematic bait protein as it may silence the activation despite successful binding of a prey protein (see second row from bottom where N188 and MED21 show very weak reporter activity on 3AT). 3AT: 3-amino-1,2,4-triazole. Plates were measured after 3 days to allow TPL-MED21 interactions to grow. (B) Identifying TPL-N terminal domain interactor proteins through cytoplasmic split ubiquitin protein interaction assay. We tested the N-terminal and C-terminal portions of MED13 separately and divided the coding sequence at amino acid 967 (MED13N = aa1-967, MED13C = aa968-1908). Each bait tested is the Arabidopsis homolog cloned from cDNA from the Col-0 accession, with the exception of AtMED13, which was synthesized de novo via Twist (https://www.twistbioscience.com/). Plates were scanned at 3 days after plating to allow weaker interactions to develop if they were present. (C) TPL interacts with MED21 through an interaction within Helices 8–9. Plates were scanned at 2 days after plating. (D) The Helix 8 Quadruple mutation (V145A, E146A, K148A, K149A) does not affect AtMED10B binding to TPL. Plates were scanned at 3 days after plating. (B–D) The relative position of the N-terminal portion of ubiquitin (Nub) is indicated for each bait protein.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/66739/elife-66739-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Protein alignment of selected MED21 homologs from various species. Dr: Drosophila melanogaster; Tr: Takifugu rubripes; Ms: Mus musculus; Gg: Gallus gallus; Hs: Homo sapiens; Sp: Strongylocentrotus purpuratus; Sc: Saccharomyces cerevisiae; At: Arabidopsis thaliana; Os: Oryza sativa; Sm: Selaginella moellendorffii; Pp: Physcomitrella patens. Alignment was performed in CLC sequence viewer 7 using a neighbor joining method. (B) Protein levels of AtMED21 cytoplasmic split-ubiquitin system (cytoSUS) constructs in yeast. Two different exposure times are shown to demonstrate the lower abundance of the truncation with only the first 31 amino acids of the AtMED21 (N31). Asterisks indicate the size predicted for the indicated protein. (C, D) Structure of the MED21 (cyan) and MED7 (blue) hetero dimer, adapted from 1YKH (Baumli et al., 2005). The amino acids in the N-terminus that were solved are highlighted in red up to the 7th amino acid of the yeast MED21. (C) The cartoon visualization (D) Surface visualization. (E) Core mediator (5N9J, Nozawa et al., 2017) with the location of MED21 and MED7 indicated with the same colors from (C, D). In this structure, the location of the MED21 N-terminus is again indicated in red, demonstrating its close proximity to the Knob region (dotted circle).
 
 Strong interaction was detected between TPLN188 and AtMED21, a component of the Mediator middle domain (Figure 2A). MED21 is one of the most highly conserved Mediator subunits (Bourbon, 2008) and has a particularly highly conserved N-terminus (Figure 2—figure supplement 2A, C–E). In yeast, Tup1 interacts with the first 31 amino acids of ScMed21, with the first 7 amino acids being absolutely required for interaction and transcriptional repression (Gromöller and Lehming, 2000). We observed that the equivalent truncation of AtMED21 (AtMED21-N31) was sufficient for interaction with TPLN188 (Figure 2A). We next created truncations of the N-terminal domain of AtMED21 to closely match those that had been made in yeast (Figure 2B) where deletion of the first five amino acids of ScMed21 (ScΔ5Med21) severely reduce the ability of the Mediator complex to co-purify with Pol II and CDK8 kinase complex (Sato et al., 2016). Interaction between TPLN188 and AtMED21 similarly required the first five amino acids of AtMED21 (Figure 2B), and, as in yeast, this was not a result of destabilization of the AtMED21 protein (Figure 2B). In fact, N-terminal Med21 deletions increased protein levels with no interaction with TPLN188; this results in high confidence that the Med21 N-terminus is required for interaction. AtMED21 interaction was specific to the Helix8-based repression domain as it interacted with TPLH3-H9 (Figure 2E), and not TPLH1-H7 (Figure 2—figure supplement 1C). Further screening of middle domain Mediator components identified an additional interaction with AtMED10B, the predominantly expressed MED10 isoform in Arabidopsis (Klepikova et al., 2016; Figure 2C). Interactions between TPLN188 and both AtMED21 and AtMED10B were confirmed by immunoprecipitation (Figure 2D).
 
@@ -60,6 +80,26 @@ The large Mediator complex stabilizes the pre-initiation complex (PIC) enabling 
 
 To avoid these complications, we turned to the well-established Anchor Away system for inducible protein depletion (Haruki et al., 2008) and combined it with quantification of transcriptional activity at the synthetic locus in the AtARCS (Figure 4A, B). However, AtARCSc integrates components at four genomic locations using prototrophic markers that are not compatible with those needed for Anchor Away. To overcome this limitation, we re-created the ARC on a single plasmid (we refer to this plasmid as SPARC) using the Versatile Genetic Assembly System (VEGAS, Mitchell et al., 2015). SPARC behaved with similar dynamics to the original AtARCSc on both solid and liquid growth conditions (Figure 4—figure supplement 1A–C). As a first test of the Anchor Away system with SPARC, we fused Tup1 and its partner protein Cyc8 to two copies of the FKBP12-rapamycin-binding (FRB) domain of human mTOR (Haruki et al., 2008). Rapamycin treatment of strains targeting either of these proteins caused no release of repression on the SPARC reporter, providing confirmation of orthogonality of the synthetic system in yeast (Figure 4—figure supplement 1D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/66739/elife-66739-fig4-v2.jpg)
+
+**Figure 4.:** (A) Model of the proposed interaction between the TPL N-terminus with Mediator, where TPL interaction with Mediator 21 and 10 inhibits the recruitment of Pol II. Proteins in this complex that were tested by Anchor Away are listed on the right. (B) Schematic of AtARCSc combined with methods for inducible expression and nuclear depletion of MED21. In Anchor Away, the yeast ribosomal protein 13A (RPL13A) is fused to the rapamycin-binding protein FKBP. Addition of rapamycin induces dimerization between FKBP and any target protein fused to 2xFRB, resulting in removal of the target protein from the nucleus. For these experiments, AtARCSc was assembled into a single plasmid (SPARC) rather than being integrated into separate genomic loci (Figure 4—figure supplement 1). (C) 2xHA-TPLN188-IAA3 and MED21-FRB association with the ARC and the ScSUC2 and ScPMA1 promoters. ChIP was performed with αHA and αFRB before qPCR was used to quantify enrichment at specified loci. (D) Association of FRB-tagged components of Mediator and the transcriptional machinery with the SPARC plasmid and the ScSUC2 promoters. ChIP was performed with αFRB, and qPCR was used to quantify enrichment at specified loci. (E–I) Time-course flow cytometry analysis of SPARCN188 in Mediator Anchor Away yeast strains with rapamycin (orange bar, +Rapa). Two Med21 strains were compared in the Middle domain (E), 21 (generated in this study) and 21* (generated in Petrenko et al., 2017). Both 21 and 21* demonstrated similar increases in reporter expression. (J) Quantification of Venus fluorescence from SPARCN188 in wild-type and N-terminal ScMed21 deletions with and without auxin. The x-axis indicates strain and which FRB fusion protein is being tested. Yeast was grown for 48 hr on synthetic drop out (SDO) media with or without auxin, and colony fluorescence was quantified and plotted with the auxin-responsive SPARCH1-H5 in wild type as a reference. Background: red autofluorescence was used as a reference for total cell density. (K) Time-course flow cytometry analysis of SPARCN188 in wild-type and N-terminal ScMed21 deletions with and without rapamycin. Genotypes are indicated in the colored key inset into the graph. For (E–I, K) a.u.: arbitrary units. Rapamycin was added at the indicated time (orange bar, +Rapa). Every point represents the average fluorescence of 5–10,000 individually measured yeast cells. (L) Association of MED21-FRB or Δ5-MED21-FRB with SPARC plasmids. ChIP was performed with αFRB, and qPCR was used to quantify enrichment at specified loci. (C, D, L) A region of the ACT1 gene body or a gene-free region of chromosome V (Chr.V) was arbitrarily defined as background, and data is presented as fold enrichment over the control gene. Averages and standard errors of four replicates are shown.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66739/elife-66739-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Design schematic of the approach utilized to create the SPARC through a Versatile Genetic Assembly System (VEGAS) assembly approach. Each individual transcriptional unit (TU) was checked to replace promoters or terminators that utilized identical sequences and replaced with an alternative sequence indicated by a purple underline. These TUs were assembled into level 1 plasmids by Golden Gate reaction. Subsequently, they were amplified by PCR using primers specific for the VEGAS Adaptor (VA) sequences specific for their TU cassette. For example, for the first repressor/substrate TU the TU was amplified using primers for VA1 and VA3 and purified by a PCR cleanup column (NEB). The acceptor plasmid was cut with EcoRI, and both TU and acceptor plasmid were transformed into yeast and recombinant plasmids were selected on synthetic drop out (SDO) plates lacking leucine. (B) Primary SPARC transformants were struck out onto fresh SDO -Leu and imaged for Venus expression, demonstrating varying levels of reporter expression that correlate with TPL repressor domains. Plasmid DNA was purified from these strains and sequenced to confirm the proper recombination of TU cassettes. (C) Time-course flow cytometry of SPARC strains following auxin addition. For all cytometry experiments, the indicated TPL construct is fused to IAA14 because this IAA works better in haploid yeast strains that IAA3. Every point represents the average fluorescence of 5–10,000 individually measured yeast cells (a.u.: arbitrary units). Auxin (IAA-10 µM) was added at the indicated time (gray bar, +Aux). Four independent experiments are shown for each construct. (D) The yeast TPL homolog Tup1 and its partner protein Cyc8 do not repress the SPARC. Quantified fluorescence from the SPARC introduced into Tup1 and Cyc8 Anchor Away lines demonstrates no increased fluorescence from the reporter upon depletion of Tup1 or Cyc8 from the nucleus. Anchor Away depletion of Tup1 or Cyc8 results in slower yeast growth. To normalize for this disparity in growth, Venus fluorescence was normalized to red autofluorescence, where each pixel was normalized to the corresponding red autofluorescence collected for that position and plotted as a boxplot. Two individual biological replicates (two separate experiments) were evaluated, and the data was pooled. (E, F) Med21 N terminal deletions are viable in Saccharomyces and demonstrate altered SPARC transcriptional states. (E) A representative grayscale image of fellow fluorescence of spot plates of yeast strains carrying SPARC plasmids in Med21 N-terminal deletions. Each is plated at an OD600 of 0.1 on SDO with or without auxin (10 µM IAA). (F) Venus fluorescence from (E) was normalized to red background (autofluorescence), where each pixel was normalized to the corresponding red autofluorescence collected for that position and plotted as a boxplot. Two individual biological replicates (two separate experiments) were evaluated, and the data was pooled and is presented as boxplots.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66739/elife-66739-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Cartoon schematic of the ARC reporter. The primers flanking the ARF binding site (A) and Venus gene body (B) are highlighted. The B primer set is ~500 bp downstream of the A primer set. The position of the TATA box element is also shown. (B) The percent input and fold enrichment calculated from the percent input are shown from the integrated ARC locus that is repressed by TPLN188. These ChIPs highlight the wide fragment size (~500 bp) generated in our chromatin preparation protocol. (C) The optimization of two ChIP analyses for a positive control (PMA1, Mediator enriched) gene and a gene-free region on chromosome V (Chr.V), shown as both percent IP and as fold enrichment over background. ChIP was performed with αFRB or αHA, and qPCR was used to quantify enrichment at specified loci. (D) ChIP analysis of active (non-repressed) SPARC plasmids shows strong enrichment of mediator subunits MED18, MED14, and the TATA box binding protein TBP1, as well as a striking increase in RNA Pol II binding. ChIP was performed with αFRB, and qPCR was used to quantify enrichment at specified loci. A region of the ACT1 gene body or a gene-free region of chromosome V (Chr.V) was arbitrarily defined as background, and data is presented as fold enrichment over the control gene. (B–D) Averages and standard errors of four replicates are shown.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/66739/elife-66739-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Time-course flow cytometry analysis of SPARCH1-H5 in wild-type and n-terminal ScMed21 deletions with and without auxin. Genotypes are indicated in the colored key inset into the graph. Auxin (IAA-10 µM) was added at the indicated time (gray bar, +Aux). (B) Conversion of the first five amino acids of ScMed21 to the corresponding sequence from AtMED21 results in an identical repression profile. Time-course flow cytometry of single locus auxin-response circuit (SPARC) strains following auxin addition. For all cytometry experiments, the indicated TPL construct is fused to IAA14 because this IAA performs better in haploid yeast strains than IAA3. Every point represents the average fluorescence of 5–10,000 individually measured yeast cells (a.u.: arbitrary units). Auxin (IAA-10 µM) was added at the indicated time (gray bar, +Aux). Two independent experiments are shown for each construct. (C) Cell growth of the strains in (B) indicates the swap of the N-terminal region had no effect on yeast growth or viability. Data presented is events per microliter over the time course of the cytometry experiments.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/66739/elife-66739-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Depletion of nuclear ScMed21 by rapamycin increased cell size even in short time courses, consistent with its essential role in many core pathways. Scatterplots of side scatter area by forward scatter height (SSC.A × FSC.H) indicate large-scale increases in cell size in populations of yeast with (blue) or without (red) rapamycin treatment. (B) Schematic of AtARCSc combined with methods for inducible expression and nuclear depletion of MED21. In Anchor Away, the yeast ribosomal protein 13A (RPL13A) is fused to the rapamycin-binding protein FKBP. Addition of rapamycin induces dimerization between FKBP and any target protein fused to FRB, resulting in removal of the target protein from the nucleus. For these experiments, AtARCSc was assembled into a single plasmid (single locus auxin-response circuit [SPARC]) rather than being integrated into separate genomic loci (Figure 4—figure supplement 1). Estradiol-inducible ScMed21 (iMed21) made it possible to replace wild-type MED21 with targeted deletions or mutations. (C) Inducible Med21 (iMed21) wild-type and variants cell size were examined before (red) and after (blue) treatment with rapamycin and β-estradiol to simultaneously deplete the wild-type Med21-FRB fusion and induce the transcription of the Med21 variant. Scatterplots of side scatter area by forward scatter height (SSC.A × FSC.H) demonstrate a less disrupted cell size compared to Anchor Away strains in (A). (D) Rapid replacement of Med21-FRB with inducible Med21-FLAG demonstrated the requirement for the ScMed21 N-terminus in TPL repression. iMed21 isoforms were induced by addition of β-estradiol (20 µM) for 4 hr followed by rapamycin addition. Fluorescence was quantified by cytometry after 300 min. Lowercase letters indicate significant difference (ANOVA and Tukey HSD multiple comparison test; p<0.001). (E, F) Protein abundance of ScMed21 variants was tested by SDS-PAGE and western blot (E) Stably integrated Med21-FRB variants. (F) Induced iMed21-FLAG variants. (G, H) Histograms of Venus fluorescence in inducible Med21 (iMed21) strains demonstrate that populations were evenly distributed around a single mean, suggesting that we were observing the immediate effects of the Med21 deletions. The histograms were built using ggplots density function to create a visualization of count distribution. These samples were tested at 300 min (as in Figure 4D) and plotted to visualize cells at the equivalent stage of growth, Med21 depletion, and induction.
+
 Before testing repressive function, we first performed chromatin immunoprecipitation using the Anchor Away FRB tag to ask whether Mediator proteins or specific Mediator modules were detectable at the promoters of TPL-repressed genes. We began by assaying the integrated AtARCSc locus and comparing it to a Tup1-repressed locus, SUC2 (Carlson and Botstein, 1982; Fleming and Pennings, 2007; Trumbly, 1992), and to an active locus enriched for Mediator, PMA1 (Petrenko et al., 2017; Schmitt et al., 2006; Serrano et al., 1986). We generated a yeast strain with an integrated MED21-FRB fusion protein and an integrated AtARCSc locus with a 2xHA epitope-tagged TPLN188-IAA3 repressor protein. We observed enrichment of both MED21-FRB and the 2xHA-TPLN188-IAA3 fusion protein at the AtARCSc locus (Figure 4C, Figure 4—figure supplement 2A–C). We also observed a modest enrichment of MED21-FRB at the SUC2 promoter (approximately twofold) and higher enrichment of MED21-FRB at the active PMA1 promoter (approximately eightfold). Next, we introduced the fully repressed SPARC plasmid containing TPLN188 (SPARCN188) into a library of Anchor Away yeast strains that allow specific depletion of Mediator components (see Figure 4A, B; Haruki et al., 2008; Petrenko et al., 2017). We tested representatives of the mediator complex (tail – Med15, head – Med18, middle – Med21 and Med14, kinase – CDK8, general transcription factors – TBP1, TFIIA, and RNA Pol II – Rpb1) by ChIP-qPCR. We observed enrichment of all tested core mediator complex members, as well as general transcription factors, at both the SPARC and the SUC2 loci, with very little enrichment of RNA Pol II (Figure 4D). In general, MED21 was detected in lower levels at repressed loci than at the active PMA1 promoter (Figure 4D). Consistent with this observation, Mediator is highly enriched at the SPARC promoter when TPL is absent (Figure 4—figure supplement 2D). Higher enrichment of members of the middle module at repressed promoters (i.e., Med21, Med14, Figure 4D) may point to these subunits nucleating assembly of the entire complex.
 
 We next tested whether the association of Mediator complex components was required for TPL-mediated repression (Figure 4A, B). Nuclear depletion of Mediator components from the tail, head, and middle domain triggered clear activation of the SPARCN188 reporter (Figure 4E–I). Depletion of the Mediator kinase module component CDK8 had a more modest effect (Figure 4H). One caveat to this approach is that nuclear depletion of components that are absolutely required for transcriptional activation, such as RNA Pol II Anchor Away (Rpb1; Figure 4I), cannot be assayed for impacts on repression using transcription of the reporter as the output.
@@ -72,6 +112,14 @@ To minimize any possible off-target impact of ScMed21 deletions, we introduced e
 
 Several lines of evidence suggest that, in addition to interactions with other partners, homomultimerization modulates TPL repression potential. First, structures of the N-terminal domains of TPL (Martin-Arevalillo et al., 2017) and a rice homolog OsTPR2 (Ke et al., 2015) reveal high conservation of residues that coordinate formation of homotetramers and connect tetramer formation to Aux/IAA binding. Second, the dominant TPL mutant tpl-1 altered a single amino acid in the ninth helix of the TPL-N terminus (N176H) that induces aggregation of TPL and its homologs (TPR1-4), reducing total activity (Long et al., 2006; Ma et al., 2017). Third, TPL recruitment motifs found in the rice strigolactone signaling repressor D53 induce higher-order oligomerization of the TPL N-terminus, which increases histone binding and transcriptional repression (Ma et al., 2017). Our studies in yeast suggest that there may be a more complex relationship between tetramer formation and repression as we have measured strong repressive activity in several constructs that are unlikely (TPLN100; Pierre-Jerome et al., 2014) or unable (H1, H3-8; Figure 1C) to form tetramers (compare Figure 1B with Figure 5A). To quantify the potential for interaction among our constructs, we used the cytoSUS assay (Asseck and Grefen, 2018). Helix 8 was required for strongest interaction between TPL constructs (Figure 5—figure supplement 1A), although this assessment was complicated by the fact that some of the shorter constructs accumulated to significantly lower levels (Figure 5—figure supplement 1B). The weak interaction we could observe between full-length TPL-N and the Helix 1 through Helix 3 construct (H1-3) indicated that the TPL LisH domain is sufficient for dimerization. Therefore, while auxin-insensitive repression may require multimeric TPL, this higher-order complex was not required for auxin-sensitive repression mediated by Helix 1 (Figure 1E).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/66739/elife-66739-fig5-v2.jpg)
+
+**Figure 5.:** (A) TPL can form a homotetramer via the CRA (red) and LisH (blue) domains. Asterisks indicate mutations that block or diminish these interactions. (B, C) Locations of critical positions in Helix 1 are highlighted for two interacting TPL monomers (shown in light and dark blue). Interacting amino acids share the same color (adapted from 5NQV). (D–G) Time-course flow cytometry analysis of TPLN-IAA3 fusion proteins carrying selected single point mutations in N188-LDimer-IAA3 (D) and the TPLH1-2 truncation (E). The F15Y mutation had little effect on repression activity for either TPL construct. Double mutations (F15Y, L8S in LDimer) (F) or the quadruple Monomer mutations (S5A, L8S, F15Y, E19S in LDimer) (G) showed repression activity that was indistinguishable from LDimer or wild-type N188 fused to IAA3. For all cytometry experiments, the indicated TPL construct is fused to IAA3. Every point represents the average fluorescence of 5–10,000 individually measured yeast cells (a.u.: arbitrary units). Auxin (IAA-10 µM) was added at the indicated time (gray bar, +Aux). At least two independent experiments are shown for each construct. (H) Size exclusion chromatography on TPLN188 wild-type (green), LDimer (purple), and Monomer (orange) tetramerization mutants. (I) Cytoplasmic split-ubiquitin system (CytoSUS) on TPL tetramerization mutants.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/66739/elife-66739-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Cytoplasmic split-ubiquitin interaction (cytoSUS) assay on serial deletions of TPL. Interaction of bait and prey proteins reconstitutes split ubiquitin, releasing a synthetic transcription factor that allows growth on media lacking histidine and adenine. The expression level of the bait protein can be repressed through increased methionine in the media. (B) Protein levels of Nub-TPL fusions were tested by PAGE and western blotting for the c-terminal 3xHA epitope tag included in all constructs. Deletions longer than H1-4 are detectable at higher levels (left panel), whereas shorter isoforms required longer exposure times to detect (right panel). Total protein loading levels were tested by the housekeeping gene PGK1 (bottom panel). (C) Protein expression analysis by western blotting of tetramerization mutants expressed in yeast for cytoSUS interaction assay in Figure 5I. Prey constructs are C-terminally fused to 2xHA. Total protein loading levels were tested by blotting against the housekeeping gene PGK1 (bottom panel).
+
 To avoid any potential artifacts from analysis of truncated forms of the N-terminus, we next generated site-specific mutations that disrupted multimerization in the context of TPLN188. Martin-Arevalillo et al. had previously identified a quadruple mutation (K102S-T116A-Q117S-E122S) that abrogated the ability of the CRA domain (Helix 6 and Helix 7) to form inter-TPL interactions (Martin-Arevalillo et al., 2017). As this mutant form of TPL is only capable of dimerizing through its LisH domain, we refer to it here as LDimer (Figure 5A). The LDimer mutations in TPLN188 retained the same auxin-insensitive repression behavior as wild-type TPLN188 (Figure 5D), supporting the finding from the deletion series.
 
 To make a fully monomeric form of TPL, we introduced mutations into the dimerization interface of the LisH domain in the context of LDimer. We first mutated one of a pair of interacting residues (F15) to a series of amino acids (tyrosine – Y, alanine – A, arginine – R, or aspartic acid – D) in the context of either LDimer (Figure 5D), or H1-2 (Figure 5B, E). Conversion of F15 to the polar and charged aspartic acid (D) completely abolished repression activity, while the positively charged arginine was better tolerated (Figure 5D, E). The conversion of F15 to tyrosine had no effect on LDimer (Figure 5D), and only a minimal increase in auxin sensitivity in the context of H1-2 (Figure 5E). We then combined LDimer-F15Y with a mutation of the coordinating residue L8 to serine with the intention of stabilizing the now solvent-facing residues. The repressive behavior of this mutant was indistinguishable from that of LDimer (Figure 5F).
@@ -79,6 +127,18 @@ To make a fully monomeric form of TPL, we introduced mutations into the dimeriza
 To further push the LDimer towards a monomeric form, we introduced two additional mutations (S5A, E19S, Figure 5C, G). Size-exclusion chromatography confirmed that this combination of mutations (S5A-L8S-F15Y-E19S-K102S-T116A-Q117S-E122S, hereafter called Monomer) successfully shifted the majority of the protein into a monomeric state (Figure 5H); however, this shift had no observable impact on repression strength before or after auxin addition (Figure 5G). To test whether these mutations had a similar impact on in vivo TPL complexes, we introduced the LDimer and Monomer mutations into the cytoSUS assay. In contrast to the in vitro chromatography results with purified proteins, Monomer expressed in yeast retained measurable interaction with wild-type TPL, LDimer or Monomer, albeit at a reduced level than what was observed between wild-type TPLN188 constructs (Figure 5I). A caveat to this apparent difference between assays is that the Monomer mutations led to a striking increase in protein concentration in yeast (Figure 5—figure supplement 1C), likely partially compensating for the decrease in affinity.
 
 To ascertain which of our findings about TPL required the sensitivity and simplicity of the synthetic context and which could be observed in the full complexity of intact plant systems, we performed a set of experiments in Nicotiana benthamiana (tobacco) and Arabidopsis. Bimolecular fluorescence complementation (BiFC) confirmed the interaction between TPL and MED21 (Figure 6A), which was further validated by co-immunoprecipitation using tobacco extracts (Figure 6B). We were also able to pull down MED21 and TPL using MED10B (Figure 6—figure supplement 1A). BiFC also confirmed the importance of the same TPL Helix 8 residues for the TPL-AtMed21 interaction (Figure 6A, TPLH8QuadA). Similarly, the Δ5AtMED21 N-terminal truncation eliminated interaction with full-length TPL (Figure 6A). We next developed a quantitative repression assay based on UAS/GAL4-VP16 (Brand and Perrimon, 1993; Figure 6C). To block potentially confounding interactions with endogenous TPL/TPRs or TIR1/AFBs, we engineered a variant of IAA14 with mutations in the two EAR domains (EARAAA) and in the degron (P306S) (IAA14mED; Figure 6C). After prototyping the system in yeast (Figure 6—figure supplement 1B, C), we quantified repression strength of constructs carrying TPLN-IAA14mED variants using the well-characterized synthetic auxin-responsive promoter DR5 (Ulmasov et al., 1997). As expected, DR5 was strongly induced by co-transformation with AtARF19, and this induction was sharply reduced by the inclusion of UAS-TPLN188-IAA14mED and GAL4-VP16 (Figure 6—figure supplement 1D). Overall, we observed strong correlation in repression activity between what was observed in yeast and in tobacco.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/66739/elife-66739-fig6-v2.jpg)
+
+**Figure 6.:** (A) Bimolecular fluorescence complementation assay performed in tobacco. Each image is an epi-fluorescent micrograph taken at identical magnification from tobacco epidermal cells at 2 days post injection. The YFP image is colored green (left panel). p35S:H2B-RFP was used as a control and is false-colored magenta (right panel). (B) Co-immunoprecipitation of MED21 and TPL from tobacco leaves. MED21-YFP-HA was immunoprecipitated using anti-HA, and YFP-TPL was detected using the YFP fusion. Actin was used to demonstrate that the purification had removed non-specific proteins. Numbers on the left of blots indicate sizes of protein standards in kilodaltons. (C) Design of UAS-TPL-IAA14mED and UAS-MED21 constructs. Mutation of the conserved lysine residues in the EAR domain disrupted potential interactions with endogenous TPL/TPR proteins. The IAA14 degron has been mutated (P306S) to render it auxin insensitive. UAS: upstream activating sequence; ttRBCS: Rubisco terminator sequence. (D) Auxin-induced degradation of IAA14 is absolutely required for initiation of lateral root development (cartoon, left). An enhancer trap line (J0121) expresses GAL4-VP16 and UAS-GFP in in xylem pole pericycle cells. (E) N-terminal domains of TPL were sufficient to repress the development of lateral roots in Arabidopsis seedlings. The density of emerged lateral roots was measured in T1 seedlings at 14 days after germination. (F) N-terminal deletions in AtMED21 were sufficient to dominantly increase the development of lateral roots in Arabidopsis seedlings. The density of emerged lateral roots was measured in T1 seedlings at 14 days after germination. (E, F) Lowercase letters indicate significant difference (ANOVA and Tukey HSD multiple comparison test; p<0.001).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/66739/elife-66739-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) MED21 and TPL co-immunoprecipitated with AtMED10B from tobacco extracts. Each construct was expressed under the viral 35S promoter, and tissues were harvested after 2 days of injection. MED10B was purified by incubation with IgG sepharose beads (see Materials and methods), and the presence of interacting proteins was determined by western blotting. (B, C) Engineering and prototyping a variant of TPLN-IAA14mED, which carries mutations in the EAR domain (EARAAA) and in the degron (P306S) in yeast. (B) Cartoon schematic of the mutations tested during prototyping of the TPLN188-IAA14mED construct. In each case, the identical glycine-serine linker (GS) was used as the flexible linker between the 2xHA-TPLN188 protein and the portion of IAA14 retained in the construct. (C) Time-course flow cytometry of TPLN-IAA14mED strains following auxin addition. Strains containing the TPLN-IAA14mEDwere tested in both haploid and diploid strains and demonstrated similar repression profiles. Every point represents the average fluorescence of 5–10,000 individually measured yeast cells (a.u.: arbitrary units). Auxin (IAA-10 µM) was added at the indicated time (gray bar, +Aux). Two independent experiments are shown for each construct. (D) Transient expression of indicated TPL constructs in tobacco. DR5:Venus: the synthetic DR5 auxin promoter (Ulmasov et al., 1997) driving Venus; ARF19: p35S:AtARF19-1xFLAG; GAL4:VP16: pUBQ10:GAL4-VP16, TPLN-X-UAS-TPL-IAA14mED with various TPL truncations or mutations. (E, F) The TPL-N terminus functions as a repressor independently of the MED13 component of the Mediator CDK8 kinase module in Arabidopsis. The GAL4:UAS-driven dominant lateral root repression constructs (UAS-TPLN188-IAA14, UAS-Monomer-IAA14) and the dominant slr mutant were crossed to the med13 mutant (gct-5, a.k.a. mab2-2, SAIL_1169 H11). We performed time-course lateral root density assays and genotyped the progeny in the F1 and F2 generations. We observed an ~1% transmission rate of gct-5 homozygotes. (E) Time course of the mean of lateral root density over days 10–14 post germination ± standard error. (F) Boxplots of lateral root density for day 14 (E). Lowercase letters indicate significant difference (ANOVA and Tukey HSD multiple comparison test; p<0.001).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/66739/elife-66739-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Identification and characterization of a novel CAS9-based insertional mutation in MED21. The MED21 genomic locus (AT4G04780) is shown as a cartoon, with a zoom-in on the beginning of the coding sequence highlighted with the amino acid sequence. The location of the med21/MED21 mutant (WiscDsLox461-464K13, see triangle) and the sgRNA we employed (see green annotation and NGG PAM site) is highlighted. The insertion of a G at nucleotide position +214 after the transcriptional start site abrogates the sgRNA site (red annotation above with i214G). A representative sequencing trace demonstrates the position where the heterozygote carries i215G, and the predicted effect to the coding sequence is shown at the top right – a red arrow indicates the first codon affected by the i214G mutation. The inset pictures at the top left demonstrate the embryo lethality phenotype in med21i214G/MED21 heterozygote siliques. White asterisks indicate the embryos that have begun to degenerate. These aborted seeds are visibly brown, indicating that fertilization took place allowing the seed coat to form before development failed. (B) Med21/MED21 heterozygotes are haplo-sufficient for lateral root development. Lateral root density (number of lateral roots/primary root length) was calculated at 10 days post germination. Lowercase letters indicate significant difference (ANOVA and Tukey HSD multiple comparison test; p<0.005). (C) MED21-CAS9 repressors targeted to MED21 display increased lateral root densities. Lateral root density (number of lateral roots/primary root length) was calculated at 10 days post germination. Numbers below boxplots are p-values for pairwise comparisons with control using a Wilcoxon rank-sum test. (D) Ratio of lateral root lengths to total root lengths (lateral root lengths + primary root length) in dCAS9 repressor lines targeting MED21 calculated at 10 days post germination. Statistical tests (ANOVA and Wilcox test) are reported above the graph. (E) Representative root traces of dCAS9 repressor lines targeting MED21 calculated at 10 days post germination.
 
 To connect the observed differences in repression strength to a developmental context, we generated transgenic Arabidopsis lines where the UAS-TPL-IAA14mED constructs were activated in the cells where IAA14 normally acts to regulate the initiation of lateral root primordia (Figure 6D; Gala et al., 2021; Laplaze et al., 2005). Expression of functional TPL-IAA14mED fusion proteins in these xylem pole pericycle cells should strongly suppress production of lateral roots, phenocopying the solitary root (slr) mutant, which carries an auxin-resistant form of IAA14 (Fukaki et al., 2002). Indeed, TPLN188 fusion constructs sharply decreased lateral root density (Figure 6E), while transformants expressing either IAA14mED (with no TPL fusion) or TPLN188 (with no IAA14 fusion) had no effect on lateral root production (Figure 6E). TPLH3-H9 decreased lateral root density albeit not as effectively as TPLN188, suggesting that Helix 1 is required for full repression in a native context (Figure 6E). Both LDimer and Monomer constructs (Figure 6E) were able to repress lateral root development to the same extent as TPLN188, meaning that multimer formation is not required for TPL-mediated repression in this context. The fusion containing the Helix 8 quadruple mutant demonstrated a clear loss of repression, indicating that the TPL-MED21 interaction is critical for repression when expressed in lateral root-forming cells (Figure 6E).
 
@@ -100,52 +160,279 @@ As suggested by Ito and colleagues (Ito et al., 2016) and supported by our synth
 
 The conserved interaction of both TPL and Tup1 with Mediator has implications for modeling eukaryotic transcription (e.g., Estrada et al., 2016). By stabilizing the Mediator complex, TPL (and by extension Tup1) may create a ‘pre-paused’ state that allows rapid recruitment of Pol II and activation once TPL is removed. This would be compatible with the multiple repression mechanisms described for TPL at different genetic loci. TPL recruitment of the repressive CDK8 Mediator complex (Ito et al., 2016), chromatin remodeling enzymes such as HD19 (Long et al., 2006), and contact with histone proteins (Ma et al., 2017) would be removed with TPL upon relief of repression. It will be critical in the future to understand how these various forms of repression interact, and especially to map the dynamics of assembly and disassembly of complexes as loci transition from repressed to active states and back to repressed once again.
 
-## Code availability statement
+### Code availability statement
 
 All codes are available through Github: https://github.com/achillobator/TPL_Structure_Function/ (Leydon, 2021 copy archived at swh:1:rev:141d7d05fe0c23be55af5050563d160f019d6d65).
 
 ## Materials and methods
 
-## Cloning
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>TOPLESS, TPL</td>
+      <td>GenBank</td>
+      <td>AT1G15750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>MEDIATOR 21, MED21</td>
+      <td>GenBank</td>
+      <td>AT4G04780</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>Anchor Away strains</td>
+      <td>EURO- SCARF euroscarf.de</td>
+      <td>HHY168</td>
+      <td>See Yeast Strain list (Supplementary file 3)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>cytoSUS strains</td>
+      <td>Asseck and Grefen, 2018</td>
+      <td>THY.AP4, THY.AP5</td>
+      <td>See Yeast Strain list (Supplementary file 3)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Rosetta 2 strain</td>
+      <td>Sigma-Aldrich</td>
+      <td>71400</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Nicotiana benthamiana)</td>
+      <td>Nicotiana benthamiana (wild-type)</td>
+      <td>GenBank</td>
+      <td>NCBI: txid4100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Agrobacterium tumefaciens)</td>
+      <td>GV3101</td>
+      <td>GenBank</td>
+      <td>NCBI: txid358</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>J0121 (in Col-0 accession)</td>
+      <td>Gala et al., 2021</td>
+      <td>J0121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>slr</td>
+      <td>TAIR</td>
+      <td>SLR-1, AT4G14550</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>med21-1</td>
+      <td>Arabidopsis Biological Resource Center</td>
+      <td>WiscDsLox461-464K13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>med21i214G</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA-HRP (Rat Monoclonal)</td>
+      <td>Roche/Millipore Sigma</td>
+      <td>RRID:AB_390917, REF-12013819001, Clone 3F10</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (Mouse Monoclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>RRID:AB_259529, F3165</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FRB (Rabbit Polyclonal)</td>
+      <td>Enzo Life Sciences, (Haruki et al., 2008)</td>
+      <td>RRID:AB_2051920, ALX-215-065-1</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VP16 (1-21) (Mouse Monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>RRID:AB_628443, sc-7545</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rabbit Polyclonal)</td>
+      <td>AbCam</td>
+      <td>RRID:AB_303395, ab290</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MYC (Rabbit Monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>RRID:AB_490778, 71d10, 2278S</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PGK1 (Mouse Monoclonal)</td>
+      <td>AbCam</td>
+      <td>RRID:AB_10861977, ab113687</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RPL13A-FKBP fusion proteins</td>
+      <td>Haruki et al., 2008</td>
+      <td></td>
+      <td>See Plasmid list (Supplementary file 2)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TPL-6xH</td>
+      <td>This paper</td>
+      <td>TPL-6xHis tagged fusion proteins</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA Sequencing</td>
+      <td>Genewiz</td>
+      <td>Genewiz.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>LC Laboratories</td>
+      <td>R-5000</td>
+      <td>1 µM for Anchor Away</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>β-estradiol</td>
+      <td>Sigma</td>
+      <td>E2758-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Auxin</td>
+      <td>plantMedia, plantmedia.com</td>
+      <td>CAT#705490</td>
+      <td>(IAA-10 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Geneticin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>G418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CLC Sequence Viewer 7</td>
+      <td>QIAGEN</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Studio</td>
+      <td>rstudio.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>Schneider et al., 2012</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SmartRoot</td>
+      <td>Jülich Research Centre and ROot and Soil/Shoot Interactions virtual group</td>
+      <td>https://smartroot.github.io/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NeuronJ</td>
+      <td>Erik Meijering</td>
+      <td>https://imagescience.org/meijering/software/neuronj/manual/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning
 
 Construction of TPL-IAA3 and TPL-IAA14 fusion proteins was performed by Golden Gate cloning as described in Pierre-Jerome et al., 2014. Variant and deletion constructs were created using PCR-mediated site-directed mutagenesis. Site-directed mutagenesis primers were designed using NEBasechanger and implemented through Q5 Site-Directed Mutagenesis (NEB, Cat #E0554S). TPL interactor genes were amplified as cDNAs from wild-type Col-0 RNA using reverse transcriptase (SuperScript IV Reverse Transcriptase, Invitrogen) and gene-specific primers from IDT (Coralville, IA), followed by amplification with Q5 polymerase (NEB). These cDNAs were subsequently cloned into plasmids for cytoSUS using a Gibson approach (Gibson et al., 2009) through the Aquarium Biofabrication facility (Ben Keller et al., 2019). The coding sequence of the genes of interest was confirmed by sequencing (Genewiz; South Plainfield, NJ). For UAS-driven constructs, the TPLN188-IAA14 coding sequence was amplified with primers containing engineered BsaI sites and introduced into the pGII backbone with the UAS promoter and RBSC terminator (Siligato et al., 2016) using Golden Gate cloning (Weber et al., 2011). Subsequent mutations were performed on this backbone using PCR-mediated site-directed mutagenesis (see above). Construction of C-terminal 2xFRB fusions for Anchor Away was done as described in Haruki et al., 2008. Inducible MED21 was constructed as described in McIsaac et al., 2013. For cell type-specific knockdown mediated by dCas9-TPLN300, Gibson cloning was used to modify the pHEE401E plasmid, replacing the egg-specific promoter and Cas9 from pHEE401E (Wang et al., 2015) with the GAL4-UAS promoter and dCas9-TPLN300 fusion protein (Khakhar et al., 2018). The resulting plasmid is used as starting point to clone three sgRNAs targeting the AtMED21 promoter (identified using CHOP-CHOP Labun et al., 2019). (sgRNAs: GACGCAGAGTCTGTTGGGTGTGG, TTTAAAATGGGCTTTTAAGGTGG, AACACTGAAGTAGAATTGGGTGG ranging from −170 to +90 region from the TSS) using PCR and Golden Gate cloning strategy described in Wang et al., 2015.
 
-## Flow cytometry
+### Flow cytometry
 
 Fluorescence measurements were taken using a Becton Dickinson (BD) special order cytometer with a 514 nm laser exciting fluorescence that is cut off at 525 nm prior to photomultiplier tube collection (BD, Franklin Lakes, NJ). Events were annotated, subset to singlet yeast using the FlowTime R package (Wright et al., 2019). A total of 10,000–20,000 events above a 400,000 FSC-H threshold (to exclude debris) were collected for each sample and data exported as FCS 3.0 files for processing using the flowCore R software package and custom R scripts (Supplementary file 1; Havens et al., 2012; Pierre-Jerome et al., 2017). Data from at least two independent replicates were combined and plotted in R (ggplots2).
 
-## Yeast methods
+### Yeast methods
 
 Standard yeast drop-out and yeast extract–peptone–dextrose plus adenine (YPAD) media were used, with care taken to use the same batch of synthetic complete (SC) media for related experiments. A standard lithium acetate protocol (Gietz and Woods, 2002) was used for transformations of digested plasmids. All cultures were grown at 30°C with shaking at 220 rpm. Anchor Away approaches were followed as described in Haruki et al., 2008, and Anchor Away strains were obtained from EURO-SCARF (euroscarf.de). Endogenous genomic fusions of ScMed21-FRB were designed by fusing MED21 homology to the pFA6a-FRB-KanMX6 plasmid for chromosomal integration into the parental Anchor Away strain as in Petrenko et al., 2017, selectable through G418 resistance (G418, Geneticin, Thermo Fisher Scientific). Tup1-FRB and Cyc8-FRB were constructed as described in Wong and Struhl, 2011. Mediator Anchor Away strains were created in Petrenko et al., 2017 and kindly donated by Dr. Kevin Struhl. SPARC construction required a redesign of promoters and terminators used in the AtARCSc to eliminate any repetitive DNA sequences (see Figure 4—figure supplement 1), using a Golden Gate cloning approach into level 1 vectors. Subsequent assembly of individual transcriptional units into a larger plasmid utilized VEGAS assembly, which was performed as described in Mitchell et al., 2015. To create an acceptor plasmid for the assembled transcriptional units, we synthesized a custom vector containing VA1 and VA2 homology sites for recombination (Twist Bioscience, South San Francisco, CA). In between these sites, we incorporated a pLac:mRFP cassette to allow identification of uncut destination plasmid in Escherichia coli, flanked by EcoRI sites for linearization. Finally, the CEN6/ARSH4 was transferred from pRG215 (Addgene #64525) into the acceptor plasmid by Golden Gate reaction using designed BsmBI sites engineered into the acceptor plasmid and the primers used to amplify the CEN/ARS (see Figure 4—figure supplement 1). For the cytoplasmic split-ubiquitin protein-protein interaction system, bait and prey constructs were created using the plasmids pMetOYC and pNX32, respectively (Addgene, https://www.addgene.org/Christopher_Grefen/). Interaction between bait and prey proteins was evaluated using a modified version of the split ubiquitin technique (Asseck and Grefen, 2018). After 2 days of growth on control and selection plates, images were taken using a flatbed scanner (Epson America, Long Beach, CA). Inducible ScMed21 strains (iMed21) were grown overnight, and then diluted back to 100 events per microliter as determined by flow cytometry and grown at 30°C with 250 rpm in a deepwell 96-well plate format. Strains were supplemented with β-estradiol (20 µM) for 4 hr followed by rapamycin addition. Samples were analyzed by flow cytometry throughout these growth experiments.
 
-## Western blot
+### Western blot
 
 Yeast cultures that had been incubated overnight in SC media were diluted to OD600 = 0.6 and incubated until cultures reached OD600 ∼1. Cells were harvested by centrifugation. Cells were lysed by vortexing for 5 min in the presence of 200 µl of 0.5 mm diameter acid washed glass beads and 200 µl SUMEB buffer (1% SDS, 8 M urea, 10 mM MOPS, pH 6.8, 10 mM EDTA, 0.01% bromophenol blue, 1 mM PMSF) per 1 OD unit of original culture. Lysates were then incubated at 65° for 10 min and cleared by centrifugation prior to electrophoresis and blotting. Antibodies: anti-HA-HRP (REF-12013819001, Clone 3F10, Roche/Millipore Sigma, St. Louis, MO), anti-FLAG (F3165, Monoclonal ANTI-FLAG M2, Millipore Sigma, St. Louis, MO), anti-FRB (ALX-215-065-1, Enzo Life Sciences, Farmingdale, NY; Haruki et al., 2008), anti-VP16 (1-21) (sc-7545, Santa Cruz Biotechnology, Dallas TX), anti-GFP (ab290, AbCam, Cambridge, UK), anti-MYC (71d10, 2278S, Cell Signaling, Danvers, MA), and anti-PGK1 (ab113687, AbCam).
 
-## Protein expression and purification
+### Protein expression and purification
 
 All multimer-deficient TPL proteins were expressed in E. coli Rosetta 2 strain. Bacteria cultures were grown at 37°C until they achieved an OD600 nm of 0.6–0.9. Protein expression was induced with isopropyl-β-D-1-thyogalactopiranoside (IPTG) at a final concentration of 400 μM at 18°C overnight. Bacteria cultures were centrifuged and the pellets were resuspended in the buffer A (CAPS 200 mM pH 10.5, NaCl 500 mM, TCEP 1 mM), where cells were lysed by sonication. His-tagged AtTPL188 (wt and mutants) bacteria pellets were resuspended in buffer A with EDTA-free antiprotease (Roche). The soluble fractions recovered after sonication were passed through a Ni-sepharose (GE Healthcare) column previously washed with buffer A, and the bound proteins were eluted with buffer A with 250 mM imidazole. A second purification step was carried out on Gel filtration Superdex 200 10/300 GL (GE Healthcare) equilibrated with buffer A.
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 Co-IP from yeast was performed using the cytoSUS strains. Cultures were grown to OD600 0.5 (~1E7 cells/ml) using selective media, harvested, and resuspended in 200 μl extraction buffer (1% SDS, 10 mM MOPS, pH 6.8, 10 mM EDTA) with protease inhibitors. Cells were lysed by vortexing 3 × 1 min full speed with 100 μl of 0.5 mm Acid Washed Glass Beads, clarified by centrifugation (1 min, 1000 rpm), and supernatant was mixed with 1 ml IP buffer (15 mM Na2HPO4, mw 142; 150 mM NaCl, mw 58; 2% Triton X-100, 0.1% SDS, 0.5% DOC, 10 mM EDTA, 0.02% NaN3) with protease inhibitors and incubated with 100 μl of IgG sepharose at 25°C for 2 hr with rotation. The beads were washed 1× with IP buffer and 2× with IP-wash buffer (50 mM NaCl, mw58; 10 mM TRIS, mw 121; 0.02% NaN3) with protease inhibitors. Protein was eluted with 50 μl of SUME (1% SDS, 8 M urea, 10 mM MOPS, pH 6.8, 10 mM EDTA) buffer +0.005% bromophenol blue by incubation at 65°C for 10 min and run on handmade 12% acrylamide SDS-PAGE gels, and western blotted accordingly. Co-IPs from tobacco were performed on leaves 2 days after injection as described in Song et al., 2014 using 35S:MED21-YFP-HA, 35S:TPL-YFP (full length), and 35S:MED10B-MEC-ProtA constructs. For co-IPs with HA, extracts were incubated with Anti-HA-Biotin (High Affinity [3F10], Sigma, 12158167001) and Streptavidin conjugated magnetic beads (Life Technologies, Dynabeads M-280 Streptavidin, 112.05D). For co-IPs with MED10B-MEC-ProtA, we used IgG Sepharose 6 Fast Flow (Sigma, GE17-0969-01) beads and increased washing steps (1× IP buffer, 5× wash buffer, six total). The only modification to buffers was an addition of the detergent NP-40 at 0.1% in the IP and wash buffer. Samples were run on handmade 10% acrylamide SDS-PAGE gels and western blotted accordingly.
 
-## Bimolecular fluorescence complementation
+### Bimolecular fluorescence complementation
 
 BiFC experiments were performed on 3‐week‐old N. benthamiana plants grown at 22°C under long days (16 hr light/8 hr dark) on soil (Sunshine #4 mix) as per Martin et al., 2009. pSITE vectors were used to generate BiFC constructs for MED21, Δ5-MED21, TPL, and TPLH8QuadA – proteins (Martin et al., 2009). In all cases, the combinations are N‐terminal fusions of either the nEYFP or cEYFP to the cDNA of MED21 or TPL. RFP fused Histone H2B was used as a nuclear marker (Goodin et al., 2002). Injection of Agrobacterium strains into tobacco leaves was performed as in Goodin et al., 2002, but the OD600 of the Agrobacterium culture used was adjusted to 0.5. Two days after transfection, plant leaves were imaged using an epifluorescence microscope (Leica Biosystems, model: DMI 3000B).
 
-## Chromatin immunoprecipitation and qPCR
+### Chromatin immunoprecipitation and qPCR
 
 Yeast were inoculated in liquid YPD and grown at 30°C with shaking at 225 rpm. After 18 hr of growth, cultures were diluted 1:50 in fresh YPD to a final volume of 200 ml. 4 hr post-dilution, cells were treated with 20 ml of fix solution (11% [vol/vol] formaldehyde, 0.1 M NaCl, 1 mM EDTA, 50 mM HEPES–KOH) for 20 min at room temperature with shaking. Cultures were further treated with 36 ml of 2.5 M glycine for 5 min to quench the cross-linking. Cells were then pelleted at 4°C, washed twice with ice-cold TBS, and flash-frozen in liquid nitrogen. Cells were lysed in breaking buffer (100 mM Tris, pH 8.0, 20% [vol/vol] glycerol, and 1 mM PMSF) on a bead beater before sonication. Samples were processed in a Bioruptor Plus sonication device at 50% for 30 cycles. Following centrifugation (to pellet cellular debris), the supernatant was used for the IP reaction. Biotin-conjugated Anti-HA (High Affinity [3F10], Sigma, 12158167001) coupled to Streptavidin-coated Dynabeads Streptavidin conjugated magnetic beads (Life Technologies, Dynabeads M-280 Streptavidin, 112.05D) was used to probe for HA-tagged TPLN188. Anti-FRB coupled to Protein A Dynabeads (Life Technologies, 100.02D) was used for ChIP on FRB-tagged yeast proteins. Following elution from the beads, samples were incubated overnight at 65°C to reverse cross-links. DNA was purified using a Monarch PCR purification kit (NEB). qPCR for three independent replicates was performed using iQ SYBR Green Supermix (Biorad) in a C100 thermocycler fitted with a CFX96 Real-Time Detection System (Biorad). To calculate fold enrichment, the delta CT (dCT) between input and IP was calculated for each sample for both the control locus (Either ACT1 3′ gene body or a new control primer from a well-characterized gene-free region on Sc chromosome V; Wong and Struhl, 2011) and the target locus (i.e., the ARF binding site of the ARC). The delta delta CT (ddCT) was then identified for the (Ct IP) – (Ct control locus) to create the non-specific adjustment. Then the fold enrichment is calculated (2-DDCt).
 
-## Protein alignments
+### Protein alignments
 
 The MED21 protein sequence was aligned to homologs using CLC Sequence Viewer 7, a tree was constructed using a neighbor-joining method, and bootstrap analysis performed with 10,000 replicates.
 
-## Plant growth
+### Plant growth
 
 For synthetic repression assays in tobacco, Agrobacterium-mediated transient transformation of N. benthamiana was performed as per Yang et al., 2000. 5 ml cultures of Agrobacterium strains were grown overnight at 30°C shaking at 220 rpm, pelleted, and incubated in MMA media (10 mM MgCl2, 10 mM MES pH 5.6, 100 µM acetosyringone) for 3 hr at room temperature with rotation. Strain density was normalized to an OD600 of 1 for each strain in the final mixture of strains before injection into tobacco leaves. Leaves were removed, and eight different regions were excised using a hole punch, placed into a 96-well microtiter plate with 100 µl of water. Each leaf punch was scanned in a 4 × 4 grid for yellow and red fluorescence using a plate scanner (Tecan Spark, Tecan Trading AG, Switzerland). Fluorescence data was quantified and plotted in R (ggplots). For Arabidopsis thaliana experiments using the GAL4-UAS system (Laplaze et al., 2005), J0121 was introgressed eight times into Col-0 accession from the C24 accession and rigorously checked to ensure root growth was comparable to Col-0 before use. UAS-TPL-IAA14mED constructs were introduced to J0121 introgression lines by floral dip method (Clough and Bent, 1998). T1 seedlings were selected on 0.5× LS (Caisson Laboratories, Smithfield, UT)+ 25 µg/ml Hygromycin B (company) + 0.8% phytoagar (Plantmedia; Dublin, OH). Plates were stratified for 2 days, exposed to light for 6 hr, and then grown in the dark for 3 days following a modification of the method of Harrison et al., 2006. Hygromycin-resistant seedlings were identified by their long hypocotyl, enlarged green leaves, and long root. Transformants were transferred by hand to fresh 0.5× LS plates + 0.8% Bacto agar (Thermo Fisher Scientific) and grown vertically for 14 days at 22°C. Plates were scanned on a flatbed scanner (Epson America, Long Beach, CA) at day 14. slr and med21/MED21 (WiscDsLox461-464K13) seeds were obtained from the Arabidopsis Biological Resource Center (Columbus, OH). CRISPR/CAS9-based mutations in AtMED2 were generated as described in Wang et al., 2015. We created a novel mutation in AtMED21 that introduces a single base-pair insertion of G at nucleotide 214 after the A of the start codon (i214G). This mutation alters the amino acid sequence starting at residue 25 and creates an early stop codon after 11 random amino acids (Figure 6—figure supplement 1D).
 
-## Data submissions
+### Data submissions
 
 All flow cytometry data will be deposited at https://flowrepository.org/. All plasmids will be deposited through Addgene at https://www.addgene.org/Jennifer_Nemhauser/.

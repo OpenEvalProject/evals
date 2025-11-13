@@ -44,45 +44,433 @@ We identify karyopherin-α (Kap-α/importin-α), as both a dosage suppressor of 
 
 ## Results
 
-## Host background modulates CidB toxicity in yeast
+### Host background modulates CidB toxicity in yeast
 
 Ectopic expression of CidBwPip in Saccharomyces cerevisiae causes strong temperature-sensitive growth inhibition (Beckmann et al., 2017). We sought to identify yeast factors modulating CidBwPip toxicity. As a first step, we determined whether yeast host background altered toxicity of CidBwPip and also tested other Wolbachia CI toxins for growth inhibition. Different CI-inducing Wolbachia strains have distinct Cif repertoires (we follow Beckmann et al., 2019a in using the Cif term to designate any general CI factor). We previously distinguished three biochemical toxin types (Beckmann et al., 2019a). Cid toxins are DUBs, Cin toxins are predicted nucleases, and Cnd toxins have both nuclease and DUB domains (Beckmann et al., 2019a; Beckmann et al., 2017; Gillespie et al., 2018).
 
 When expressing cidBwPip in two different yeast backgrounds, BY4741 (Brachmann et al., 1998) and W303-1A (Thomas and Rothstein, 1989), we noticed greater sensitivity to its expression in W303-1A (Figure 1a). Differential sensitivity was also observed with expression of two previously uncharacterized toxin alleles, cidBwHa (wHa infects D. simulans) and cndBwStr (wStr infects planthoppers). FLAGcidBwPip had the strongest toxicity, and FLAGcndBwStr (truncated after the DUB domain) the weakest. Protein levels of FLAGCndBwStr showed that variance in toxicity was not simply attributable to differences in protein expression (Figure 1—figure supplement 1). Our previous study demonstrated cognate-specific rescue with two cif operons (Beckmann et al., 2017). Here we observed that the Cid-class operon from wHa also showed cognate-specific rescue (Figure 1b). When cidBwHa was co-expressed with non-cognate cifA genes, either no rescue or even enhanced toxicity was seen. Expression of the CifA proteins alone induced no growth defects (Figure 1c, Figure 1—figure supplement 1b). These data suggest that yeast genetic background modulates Cif toxicity. This is congruent with observed variance in toxicity in natural CI within insects.
 
-## Yeast dosage suppressors of cidB toxicity
+![Figure 1.](https://cdn.elifesciences.org/articles/50026/elife-50026-fig1-v1.jpg)
+
+**Figure 1.:** (a) Five-fold dilutions of yeasts BY4741 and W303-1A carrying galactose-inducible epitope-tagged Wolbachia genes on pRS416GAL1. Three Cif homologs from Wolbachia strains wPip, wHa, and wStr showed strong to mild toxicity. All three showed increased toxicity in W303-1A compared to BY4741 (three replicates). (b) Toxin-antidote behavior was exhibited by the cidABwHa operon. FLAGCidBwHa exhibited toxicity at 36°C when expressed from pRS416GAL1. Co-expression of cognate partner FLAGCidAwHa from the 2-micron plasmid pRS425GAL1 rescues growth. Non-cognate partners did not rescue. Conversely, expression of FLAGCinAwNo from a bidirectionally incompatible Wolbachia strain wNo, enhanced toxicity of FLAGCidBwHa (four replicates). (c) CifA expression alone was nontoxic (three replicates).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50026/elife-50026-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Western blots of total yeast extracts show that some CidB orthologs are not expressed well (three replicates). However, the weakly toxic truncated FLAGCndBwStr(1–1085) is readily detected. Ponceau S staining indicates relative sample loading. (b) CifA orthologs express well and are detected by anti-FLAG Western blots (three replicates). His6CidAwPip serves as negative control. (c) Serial dilutions comparing effects of recombinant protein tags on CidBwPip. FLAG and 3xFLAG tags weaken toxicity of CidB whereas an HA tag enhances toxicity. His6-CidB phenocopies wildtype (untagged). None of these proteins could be detected, except the 3xFLAG-tag which gave sporadic detection and also weakened the phenotypic penetrance (representative of 4 replicates; pictures taken on day 3). All orthologs were expressed from a Gal1 promoter on the CEN vector pRS416GAL1.
+
+### Yeast dosage suppressors of cidB toxicity
 
 The poor relative growth of the W303-1A yeast strain in the presence of CidB might reflect strain-specific differences in the activities of targets or mediators of CidB toxicity. For example, there may be lower levels in W303-1A compared to BY4741 of a key ubiquitin-protein conjugate that is essential for growth and targeted by the CidB DUB. We therefore sought to identify yeast genes from a high-copy, tiled genomic library that were capable of suppressing cidBwPip toxicity (Jones et al., 2008). After rescreening the initial set of isolates (Supplementary file 1a; Figure 2—figure supplements 1 and 2), seven library plasmids showed suppression of toxicity (Figure 2a–b). A plasmid with the endogenous URA3 gene served effectively as a positive control for plasmid coverage in the screen inasmuch as yeast transformants with this plasmid no longer needed to retain the URA3-based His6cidBwPip plasmid to grow on plates lacking uracil. The URA3 plasmid was identified 16 times, suggesting ~16 fold library coverage.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/50026/elife-50026-fig2-v1.jpg)
+
+**Figure 2.:** (a) Seven library plasmids were high-copy suppressors of CidBwPip toxicity. Red genes suppressed when individually sub-cloned. Library plasmid YGPM25o01 includes URA3 and measures screen efficiency since it is an expected suppressor; Backslashes and brackets denote ORF truncations. (b) Five-fold serial dilutions of yeast (W303-1A) with recovered suppressing library plasmids co-transformed with pRS416GAL1-CidB3xFLAG-wPip. Library plasmid suppression varied. Suppression by YGPM25o01 (URA3 control), YGPM26g16, and YGPM32e11 was strong and consistent (three replicates). Plasmids YGPM12h13, YGPM21f02, YGPM32b05, and YGPM11h18, showed weaker and less consistent suppression across four replicates. (c) Individual yeast genes SRP1, RTT103, and HRP1 suppressed CidBwPip toxicity (three replicates). (d) Immunoblot analysis confirmed that suppressor plasmids do not reduce CidB expression. CidB and suppressors were controlled by GAL1 and endogenous promoters, respectively. Asterisk, an unknown cross-reacting yeast protein. Ponceau S staining indicated relative sample loading.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50026/elife-50026-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Plasmids are named YGPMxxxx. (a) Five-fold serial dilution comparing three false positive suppressor plasmids (pulled directly from the screen; red) to the cognate plasmids (pulled directly from the source library; black) showed suppression only after passage through yeast during the screen. Lack of suppression by the original plasmids suggested the screening procedure could produce false positive artifacts (three replicates). Yeast background is BY4741. (b) Restriction digests comparing a false positive with the originating library plasmid. DNAs were simultaneously cleaved with XhoI, ApaI, and XcmI. Differences in banding patterns indicated the pGP564 plasmid backbone had increased the size of the 3.9 and 0.5 kb fragments (one experiment). (c) Sequencing the plasmid revealed that the URA3 marker in pRS416GAL1-His6CidBwPip had recombined into the LEU2 library plasmid (pGP564). This unique recombination event occurred independently in 13 false-positive library plasmids. The recombination event produces a false positive by allowing yeast to lose the CidB toxin plasmid through equivalent growth support on media lacking uracil by the recombinant URA3 marker in the library plasmid. We culled hits with this recombination from our final list.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/50026/elife-50026-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** These data include all the originally isolated plasmids that were then re-screened in our analysis. Colored plasmids show results that were not reproducible between experiments.
+
 Individual genes from each genomic insert were subcloned to identify the responsible suppressor. Plasmids with SRP1, RTT103, HRP1, or FET4 alone suppressed cidB3xFLAG-wPip-induced toxicity (Figure 2b,c); FET4 was the only gene on the weakly suppressing YGPM32b05 plasmid, so it was not subcloned further (Figure 2a). To rule out suppression of CidB3xFLAG-wPip protein levels by the high-copy plasmids, we overexpressed SRP1 and RTT103 in yeast cotransformants and found no reduction of CidB3xFLAG-wPip (Figure 2d). Based on the incomplete RTT103 sequence present on one suppressing plasmid, codons 335–409 were sufficient for suppression (Figure 2c). HRP1 encodes an RNA-binding protein involved in processing the 3’-ends of mRNA precursors and mRNA export (Kessler et al., 1997). RTT103 is a transcription termination factor for RNA polymerase II (Nemec et al., 2017). FET4 is an iron transporter (Dix et al., 1997). SRP1/KAP60 encodes the yeast karyopherin-α protein (Loeb et al., 1995). SRP1 was the most robust suppressor (followed by HRP1); thus, we focused on this gene.
 
-## SRP1 suppression of CidB relies on nuclear import
+### SRP1 suppression of CidB relies on nuclear import
 
 Srp1 has functions beyond nuclear import (Chen and Madura, 2014). Specific functions can be differentially inactivated by specific point mutations. The mutation S116F (srp1-31 allele) disrupts binding between Srp1 and substrate NLS elements, while the E145K mutation (srp1-49 allele) inhibits its function in co-translational protein degradation (Chen and Madura, 2014; Loeb et al., 1995). Only the NLS-binding mutation (S116F) impaired the ability of high-copy SRP1 to suppress cidBwPip toxicity (Figure 3a). All Srp1 proteins were expressed similarly, so variance in protein abundance cannot account for variation in suppression (Figure 3b). Conversely, the srp1-S116F mutation in the lone chromosomal copy of SRP1 increased cidB toxicity; this synthetic growth defect was most clearly seen with the cidBwHa toxin (Figure 3c). High-copy SRP1 suppression appeared to be specific to Cid (DUB) toxins insofar as SRP1 did not suppress the growth impairment caused by the cinBwPip paralog (Figure 3d). These results demonstrate a functional link between cidB toxicity and nuclear protein import in yeast.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/50026/elife-50026-fig3-v1.jpg)
 
-**Figure 3.:** SRP1 suppression of CidBwPip toxicity in yeast.(a) Differential impact of mutations affecting distinct Srp1 functions. An srp1 mutation impairing NLS binding (S116F) weakened suppression in W303-1A. E145K, which inhibits cotranslational protein degradation, did not impact suppression (three replicates). (b) Immunoblot analysis showed equivalent protein levels in srp1 mutants. Ponceau S staining demonstrated similar loading (three replicates). (c) The srp1-S116F mutation sensitized W303-1A yeast to FLAGCidBwHa-induced toxicity in 6/7 replicates. Wild-type SRP1 complemented the mutation (5th row). Red * indicates an inactive DUB catalytic mutant control (6th row). Blank columns are empty vectors. (d) High-copy SRP1 did not suppress CinBwPip toxicity in BY4741 yeast (three replicates).
+**Figure 3.:** (a) Differential impact of mutations affecting distinct Srp1 functions. An srp1 mutation impairing NLS binding (S116F) weakened suppression in W303-1A. E145K, which inhibits cotranslational protein degradation, did not impact suppression (three replicates). (b) Immunoblot analysis showed equivalent protein levels in srp1 mutants. Ponceau S staining demonstrated similar loading (three replicates). (c) The srp1-S116F mutation sensitized W303-1A yeast to FLAGCidBwHa-induced toxicity in 6/7 replicates. Wild-type SRP1 complemented the mutation (5th row). Red * indicates an inactive DUB catalytic mutant control (6th row). Blank columns are empty vectors. (d) High-copy SRP1 did not suppress CinBwPip toxicity in BY4741 yeast (three replicates).
 
-## CidB-Drosophila protein interactome implicates nuclear transport and nucleosome assembly
+### CidB-Drosophila protein interactome implicates nuclear transport and nucleosome assembly
 
 We created a recombinant expression construct for purification of a catalytically inactive wPip His6CidB derivative bearing a C1025A active-site mutation (Beckmann et al., 2017). Similarly inactivated DUBs often bind substrates more tightly than their wild-type counterparts (Morrow et al., 2018). This protein, His6CidB*, was expressed in E. coli and bound to a cobalt-affinity resin. Lysates from adult D. melanogaster flies (both sexes) were passed over the His6CidB* resin. Enriched proteins were eluted and identified by liquid chromatography-tandem mass spectrometry (LC-MS/MS). Samples were compared to eluates from mock control columns lacking His6CidB* (Figure 4a). From two biological replicates, 169 proteins were enriched on His6CidB* (Supplementary file 1b); this was reduced to 45 proteins based on biological triplicates (Figure 4b; Supplementary file 1c). We classified these top hits into functional categories (Figure 4—figure supplement 1) (Baldridge et al., 2017). The largest functional category from the screen was ‘ribosome structure/biogenesis/translation’ with 31% of hits. The second largest category was ‘DNA replication/repair/packaging/cell division’ with 13%. To identify the most robust hits, we subjected these raw data to peptide spectral analysis (described in Materials and methods).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/50026/elife-50026-fig4-v1.jpg)
+
+**Figure 4.:** (a) Experimental pipeline for defining CidA and CidB interactomes. Soluble lysates from Drosophila adults were passed over columns bound to the indicated recombinant proteins and washed. Remaining proteins were eluted and subjected to in-solution LC-MS/MS analysis. (b) Venn diagram of protein identifications from raw biological triplicate measurements. The His6CidB* interactome was dramatically changed when it was bound to FLAGCidA. The interactome of His6CidA itself was modest and showed no overlap with the Drosophila proteins bound to either CidB* or the CidA-CidB* complex.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50026/elife-50026-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Pie chart showing functional categories of protein hits. (b) 45 triplicate-enrichment hits ranked according to peptide frequency F.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/50026/elife-50026-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Pie chart showing functional categories of protein hits. (b) 67 triplicate-enrichment hits ranked according to peptide frequency F.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/50026/elife-50026-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (a) Pie chart showing functional categories of protein hits. (B) 15 triplicate-enrichment hits ranked according to peptide frequency F.
+
 The refined CidB* interactome is given in Table 1a. Eluates were enriched for ubiquitin, which served as a positive control for the DUB substrate trap. The top two hits with the strongest peptide frequency values were both karyopherins, Kap-α2 (a karyopherin-α ortholog of yeast SRP1) and Moleskin/Imp-7, a karyopherin-β paralog (which does not associate with karyopherin-α). The His6CidB* resin also enriched two proteins that function in protamine removal and nucleosome assembly, P32/TAP and, to a lesser degree, Nap1.
 
-## CidA scrambles the CidB-Drosophila protein interactome
+**Table 1.**
+ Final refined interactomes of CidB*wPip, CidB*/CidAwPip, and CidAwPip ranked by F-Score.Peptide spectral matches (PSM) of the top enriched proteins are reported. PSMs are reported as the average of three biological replicates, each a summation of 2 technical replicates; (six total samples, three biological replicates). Mock is an E. coli negative control without plasmid. P-values were calculated by two sample T-test assuming unequal variances of the replicates. Ubiquitin served as an intrinsic positive control.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="7">a His6CidB* Interactome</th>
+    </tr>
+    <tr>
+      <th>Protein</th>
+      <th>kDa</th>
+      <th>UniProt</th>
+      <th>F-Score</th>
+      <th>CidB* PSM</th>
+      <th>Mock PSM</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kap-α2</td>
+      <td>58</td>
+      <td>IMA_DROME</td>
+      <td>1.00</td>
+      <td>10.7</td>
+      <td>0</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Moleskin (Kap-β)</td>
+      <td>119</td>
+      <td>Q9VSD6_DROME</td>
+      <td>0.85</td>
+      <td>36</td>
+      <td>7.7</td>
+      <td>0.042</td>
+    </tr>
+    <tr>
+      <td>Modulo</td>
+      <td>60</td>
+      <td>A0A0B4K7G4_DROME</td>
+      <td>0.83</td>
+      <td>53.3</td>
+      <td>11.3</td>
+      <td>0.048</td>
+    </tr>
+    <tr>
+      <td>P32</td>
+      <td>29</td>
+      <td>Q7JXC4_DROME</td>
+      <td>0.76</td>
+      <td>21</td>
+      <td>2.7</td>
+      <td>0.036</td>
+    </tr>
+    <tr>
+      <td>Vitellogenin-2</td>
+      <td>50</td>
+      <td>VIT2_DROME</td>
+      <td>0.54</td>
+      <td>37.3</td>
+      <td>20</td>
+      <td>0.092</td>
+    </tr>
+    <tr>
+      <td>Cdep</td>
+      <td>132</td>
+      <td>A0A0C4DHA1_DROME</td>
+      <td>0.48</td>
+      <td>14.3</td>
+      <td>9</td>
+      <td>0.121</td>
+    </tr>
+    <tr>
+      <td>l(3)72Ab</td>
+      <td>245</td>
+      <td>U520_DROME</td>
+      <td>0.47</td>
+      <td>22.7</td>
+      <td>5.7</td>
+      <td>0.051</td>
+    </tr>
+    <tr>
+      <td>14-3-3zeta</td>
+      <td>28</td>
+      <td>A0A0B4KEH0_DROME</td>
+      <td>0.45</td>
+      <td>5</td>
+      <td>2</td>
+      <td>0.015</td>
+    </tr>
+    <tr>
+      <td>Ubiquitin</td>
+      <td>18</td>
+      <td>RS27A_DROME</td>
+      <td>0.44</td>
+      <td>6.7</td>
+      <td>3</td>
+      <td>0.065</td>
+    </tr>
+    <tr>
+      <td>Nap1</td>
+      <td>43</td>
+      <td>Q9W1G7_DROME</td>
+      <td>0.21</td>
+      <td>20.3</td>
+      <td>11</td>
+      <td>0.122</td>
+    </tr>
+    <tr>
+      <td colspan="7">b His6CidB* + FLAGCidA Interactome</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>kDa</td>
+      <td>UniProt</td>
+      <td>F-Score</td>
+      <td>CidB*/A PSM</td>
+      <td>Mock PSM</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>Pkcdelta</td>
+      <td>207</td>
+      <td>Q9VYN1_DROME</td>
+      <td>0.91</td>
+      <td>14.3</td>
+      <td>2</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>TfIIFalpha</td>
+      <td>64</td>
+      <td>T2FA_DROME</td>
+      <td>0.82</td>
+      <td>12.7</td>
+      <td>2.7</td>
+      <td>0.024</td>
+    </tr>
+    <tr>
+      <td>La-related</td>
+      <td>161</td>
+      <td>Y1505_DROME</td>
+      <td>0.80</td>
+      <td>7.3</td>
+      <td>2.3</td>
+      <td>0.081</td>
+    </tr>
+    <tr>
+      <td>Bunched</td>
+      <td>125</td>
+      <td>BUN2_DROME</td>
+      <td>0.79</td>
+      <td>8</td>
+      <td>1.7</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td>AP-3 subunit beta</td>
+      <td>127</td>
+      <td>Q9W4K1_DROME</td>
+      <td>0.74</td>
+      <td>60</td>
+      <td>19</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>AP-3 subunit delta</td>
+      <td>115</td>
+      <td>AP3D_DROME</td>
+      <td>0.71</td>
+      <td>56.7</td>
+      <td>16.3</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Sals</td>
+      <td>101</td>
+      <td>Q58CJ5_DROME</td>
+      <td>0.67</td>
+      <td>28</td>
+      <td>14</td>
+      <td>0.127</td>
+    </tr>
+    <tr>
+      <td>CG4069</td>
+      <td>56</td>
+      <td>Q9VTZ7_DROME</td>
+      <td>0.65</td>
+      <td>25.3</td>
+      <td>5.7</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Ssrp</td>
+      <td>82</td>
+      <td>SSRP1_DROME</td>
+      <td>0.65</td>
+      <td>43</td>
+      <td>18</td>
+      <td>0.014</td>
+    </tr>
+    <tr>
+      <td>Chrac-14</td>
+      <td>14</td>
+      <td>Q9V444_DROME</td>
+      <td>0.65</td>
+      <td>4</td>
+      <td>2</td>
+      <td>0.058</td>
+    </tr>
+    <tr>
+      <td>Dre4</td>
+      <td>128</td>
+      <td>SPT16_DROME</td>
+      <td>0.63</td>
+      <td>62.3</td>
+      <td>22</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>AP-3mu</td>
+      <td>47</td>
+      <td>O76928_DROME</td>
+      <td>0.61</td>
+      <td>18.7</td>
+      <td>4.7</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Shaggy</td>
+      <td>78</td>
+      <td>A8JUV9_DROME</td>
+      <td>0.58</td>
+      <td>27</td>
+      <td>11.3</td>
+      <td>0.025</td>
+    </tr>
+    <tr>
+      <td>CG2025-RA</td>
+      <td>133</td>
+      <td>Q9VYT3_DROME</td>
+      <td>0.55</td>
+      <td>80</td>
+      <td>43.7</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>Mical</td>
+      <td>526</td>
+      <td>A0A0B4K703_DROME</td>
+      <td>0.48</td>
+      <td>39.3</td>
+      <td>20.7</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>Bsf</td>
+      <td>157</td>
+      <td>Q9VJ86_DROME</td>
+      <td>0.45</td>
+      <td>187</td>
+      <td>105</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Purple</td>
+      <td>19</td>
+      <td>PTPS_DROME</td>
+      <td>0.32</td>
+      <td>33</td>
+      <td>21.7</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>CG11444</td>
+      <td>23</td>
+      <td>Q9W4J4_DROME</td>
+      <td>0.26</td>
+      <td>12.3</td>
+      <td>8.3</td>
+      <td>0.014</td>
+    </tr>
+    <tr>
+      <td colspan="7">c His6CidA Interactome</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>kDa</td>
+      <td>UniProt</td>
+      <td>F-Score</td>
+      <td>CidA PSM</td>
+      <td>Mock PSM</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>Roe1</td>
+      <td>24</td>
+      <td>GRPE_DROME</td>
+      <td>0.97</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Pi3K92E</td>
+      <td>127</td>
+      <td>P91634_DROME</td>
+      <td>0.36</td>
+      <td>4</td>
+      <td>2.3</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>CG17271</td>
+      <td>33</td>
+      <td>Q9VDI5_DROME</td>
+      <td>0.30</td>
+      <td>10</td>
+      <td>7</td>
+      <td>0.095</td>
+    </tr>
+    <tr>
+      <td>Alas</td>
+      <td>59</td>
+      <td>O18680_DROME</td>
+      <td>0.29</td>
+      <td>10.7</td>
+      <td>6.3</td>
+      <td>0.043</td>
+    </tr>
+    <tr>
+      <td>CG6984</td>
+      <td>31</td>
+      <td>Q7K1C3_DROME</td>
+      <td>0.10</td>
+      <td>8.3</td>
+      <td>6.3</td>
+      <td>0.07</td>
+    </tr>
+  </tbody>
+</table>
+
+### CidA scrambles the CidB-Drosophila protein interactome
 
 CidA factors bind specifically to cognate CidB proteins and suppress CidB or Wolbachia toxicity in the yeast and insect CI models (Beckmann et al., 2017; Shropshire et al., 2018). We hypothesized that CidA ‘rescue’ is due to CidA association changing CidB interactions with its substrates or cofactors. To test this idea, we repeated the substrate-trap experiments with His6CidB* bound to the cognate FLAGCidA from wPip. With two biological replicates, 239 proteins were enriched on the CidA-CidB* column (Supplementary file 1d); this was reduced to 67 proteins following analysis of a third replicate (Supplementary file 1e; Figure 4b). These top hits were also sorted into functional categories (Supplementary file 1e; Figure 4—figure supplement 2). In support of the hypothesis that CidA disrupts the CidB interactome, the proteins bound to CidB* alone and to the CidA-CidB* complex were completely different except for three proteins, Dek, Non2, and BSF (Figure 4b; Supplementary file 1c cross referenced with Supplementary file 1e). Importantly, the nuclear transporters Kap-α2 and Moleskin as well as the histone chaperones P32 and Nap1 were no longer enriched when CidAwPip was bound to CidBwPip. These data are consistent with CidA blocking CidB access to its substrates or cofactors.
 
-## The CidA-Drosophila protein interactome
+### The CidA-Drosophila protein interactome
 
 We also identified a Drosophila protein interactome for His6CidAwPip by itself (Figure 4b; Supplementary file 1f and 1g; Figure 4—figure supplement 3). CI-relevant targets of the CidB DUB would be predicted to be absent. Indeed, none of His6CidA-Drosophila protein interactions identified were part of the CidB* or CidA-CidB* interactomes (cross referencing Supplementary file 1g, 1e and 1c). Surprisingly few robust His6CidA interactions were identified (Table 1c). The three statistically significant hits were a predicted nucleotide exchange factor Roe1, a lipid kinase Pi3K92E, (Leevers et al., 1996) and aminolevulinic acid synthase, Alas (de Mena et al., 1999). Whether any of these interactions is relevant to CI physiology is unknown. It is possible that CidA has few strong interactions with host proteins by itself, with its main function being tight association with CidB in order to remodel the latter’s protein interactome.
 
-## Overexpressed Drosophila karyopherins and protamine-histone chaperones suppress CI
+### Overexpressed Drosophila karyopherins and protamine-histone chaperones suppress CI
 
 Because both the yeast CidB suppressor screen and the Drosophila interactome screen identified karyopherin-α, we determined whether increased dosage of karyopherin-α genes might suppress CI in fruit flies, similar to observed results in yeast. D. melanogaster has four paralogous karyopherin-α genes (α1, α2, α3, α4) (Phadnis et al., 2012; Pieper et al., 2018). Two of them, Kap-α1 and Kap-α2, were chosen because the first is the closest in sequence to yeast SRP1 and the second was the top CidB* interactome hit. In order to test these genes for CI suppression, we switched operons from cidABwPip to cidABwMel as cidABwPip is too toxic and kills all embryos resulting from transgenic male flies. The cidABwMel operon effect is weaker. Suppression in fruit flies was expected to be incomplete, and the CI effects must be weak enough to detect suppression. wMel is also native to D. melanogaster.
 
 We first optimized transgenic cidABwMel-induced CI under the Gal4/UAS system. CI induction was strongly temperature dependent (Figure 5a; Supplementary file 1h). Although higher growth temperatures caused greater reductions in egg hatch rates, we found 22°C was the optimal temperature for observing partial suppressive effects on CI (Figure 5b). Expression of either Drosophila karyopherin-α paralog in the female germline partially suppressed CI caused by transgenic expression of CidA-BwMel in males; yeast SRP1 did not. When transgenic GFP was used as a negative control, however, it also caused a partial suppression that was not statistically distinguishable from the karyopherin-α suppression. We tried to boost maternal expression in order to increase the relative magnitude of the karyopherin-α effects, but when we switched to the stronger maternal triple driver (MTD), karyopherin-α overexpression in females caused embryos to die independent of CI (Figure 5c). Thus, the data in Figure 5b must be interpreted in the context of Figure 5c. The suppression effects were significant but relatively small because we utilized a weaker driver (NGT) to limit maternal toxicity.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/50026/elife-50026-fig5-v1.jpg)
+
+**Figure 5.:** (a) Transgenic CI was temperature sensitive. (b) Yeast SRP1 and HRP1 did not suppress CI in Drosophila and serve as negative controls. At 22°C, overexpression of D.m.Kap-α1, S.c.Rtt103, GFP, D.m.Nap1, D.m.Kap-α2, D.m.P32 and CidAwMel suppressed transgenic CI relative to the control. Both D.m.P32 and CidAwMel suppression were still highly significant when compared to the GFP control. (c) CI suppressive effects of karyopherin overexpression were countered by its maternal toxicity. (d) D.m. Karyopherins and D.m.P32 significantly suppressed bacterial (wMel) CI; GFP did not. Error bars represent means ± s.d. *p<0.05, **p<0.01, ****p<0.0001 by ANOVA with multiple comparison between all groups and Tukey’s post-hoc analysis; four outliers (x) removed by ROUT analysis.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/50026/elife-50026-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** VirD4 is a conserved Wolbachia gene. Amplification of the Drosophila melanogaster Histone three gene served as a positive control. NGT is the Nanos-Gal4-Tubulin driver (three replicates).
 
 We next tested whether maternal overproduction of P32 or Nap1 (also identified as a potential CidB substrates or cofactors; Table 1) could suppress transgenic CI and found that overexpression of P32 showed highly significant suppression relative to the GFP control, increasing egg hatch rates by ~30% (Figure 5b). Suppression was equivalent to the rescue observed with transgenic expression of the actual CidA antidote. Importantly, when we measured the suppressive effects of karyopherin-α and P32 overexpression in the female germline in matings with male flies carrying wMel bacterial infections, partial but highly significant suppression was observed for both P32 and karyopherin-α but not for GFP (Figure 5d). We conclude that the suppression by karyopherin-α and P32 was relevant to natural CI and that the weak suppression by GFP was an artifact of the transgenic CI induction model.
 
@@ -92,13 +480,13 @@ The Wolbachia CidA and CidB proteins were recently found to be central to CI, bu
 
 Notably, CidB-associated proteins such as Kap-α, P32, and Nap1 disappear when affinity purifications are performed in the presence of the antidote CidA. Instead, the CidA-CidB heterodimer has robust interactions with a number of other proteins, many that are not in the nucleus. For example, three of the four subunits of the AP-3 clathrin adaptor complex were identified; AP-3 regulates vesicle trafficking to lysosomes (Park and Guo, 2014). These interactions of the complex might tether CidB at sites away from nuclear CI induction targets. The dramatic changes in the CidB-Drosophila protein interactome if CidB is bound to CidA suggest the rescue function of CidA acts through alteration of CidB localization or access to key target proteins.
 
-## Comparison of model fly and yeast CI systems
+### Comparison of model fly and yeast CI systems
 
 An important question regarding Cid and Cin growth effects in yeast is whether the observed toxicity and suppression occur through mechanisms similar or identical to CI induction and rescue in insects. To date, our data show a striking concordance between the yeast and Drosophila analyses, suggesting mechanistic insights into CI can indeed be inferred from yeast studies. First, different yeast strain backgrounds diverge markedly in their sensitivity to the CidB toxin, similar to the wide differences in CI penetrance among various insect host strains (Cooper et al., 2017; Reynolds and Hoffmann, 2002; Merçot and Charlat, 2004). Second, the specific suppression by the CidAwHa antidote of the CidBwHa toxin in yeast lends further support to the cognate specificity predicted from previous analysis of cif operons (Beckmann et al., 2017; Beckmann et al., 2019a; Beckmann et al., 2019b). The enhanced toxicity caused by noncognate CidA factors when coexpressed with CidBwHa may also contribute to incompatibilities in natural populations, although we do not know the mechanism. Third, CidA suppression of CidB toxicity (‘rescue’) in yeast is now paralleled by analogous observations in transgenic flies (Figure 5). Females expressing CidAwMel alone suppress the incompatibility of males with either transgenic cidABwMel operons or wMel infections. This supports and extends previous studies that demonstrated similar rescue effects with transgenic expression of CidAwMel or CinAwPip in females (Chen et al., 2019; Shropshire et al., 2018; Shropshire and Bordenstein, 2019). Finally, overexpression of Kap-α both suppressed CidB toxicity in yeast and suppressed wMel-induced CI in flies. We conclude that CI targets conserved pathways in the S. cerevisiae and Drosophila models.
 
 The fact that GFP weakly suppressed transgenic CI but not wild CI suggests that experiments utilizing the Gal4/UAS systems can produce nonspecific suppression. Cytological studies suggest that CI might have multiple stages. Most embryos die following the first zygotic nuclear division, but escapees die at later stages (Beckmann et al., 2017; Callaini et al., 1996). One possible explanation of the weak nonspecific suppression could be that crosses to mothers with a UAS-driven transgene alleviate a later, secondary stage of CI killing by reducing embryonic expression of the transgenic CidB toxin in older embryos. This might result from binding of the Gal4 transcription factor to the maternal UAS insertions, titrating it from the transgenic UAS-cidB gene.
 
-## Mechanistic models of CI induction and rescue
+### Mechanistic models of CI induction and rescue
 
 It is not yet clear if the top hits in our screens, such as Kap-α and P32, are deubiquitylated by the CidB enzyme or how this could help account for their functions in CI. Srp1/Kap-α (and Hrp1, another top hit) are known to be ubiquitylated in yeast based on proteomic surveys (Swaney et al., 2013). One highly speculative model invokes CidB cleavage of ubiquitin from both Kap-α and histone chaperones such as P32 (or the histones themselves), reducing their functionality. Histone H2A and H2B are well characterized as ubiquitylated proteins, and histone H2B was identified in our CidB*-binding screen (Figure 4—figure supplement 1). Its ubiquitylation may promote histone H3.3 loading and nucleosome formation. There is evidence for ubiquitin-H2B and histone chaperones cooperating in replication-independent nucleosome assembly (Wu et al., 2017).
 
@@ -112,21 +500,21 @@ Based on our fly protein interactome data (Figure 4), we view "rescue" as an exc
 
 In general, Nuclear transport as a target of CI is tantalizing because it suggests divergent selfish reproductive manipulators converge on related embryonic processes. Segregation Distorter (SD) was also linked to nuclear import disruption (Merrill, 1999; Larracuente and Presgraves, 2012). SD is a meiotic driver in natural D. melanogaster populations involving two autosomal loci. The Sd driver locus encodes a truncated but catalytically active RanGAP (nuclear transport regulator) that mislocalizes to the nucleus (Kusano et al., 2002), and the responder (Rsp) locus is a large block of satellite DNA. During spermiogenesis, Sd-RanGAP alters the histone-to-protamine transition, culling drive-sensitive spermatids. Phylogenomic analysis of karyopherins in Drosophila also suggested frequent gain and loss of Kap-α genes, consistent with selection targeting nuclear transport for host protection against genetic conflicts (Phadnis et al., 2012). Independently, a Drosophila testes-specific X-linked Kap-α gene was found to be duplicated and overexpressed in response to a sex-ratio driver (SR) that selectively blocks maturation of Y chromosome-bearing sperm (Pieper et al., 2018). Hence, the molecular features of SD and SR show remarkable parallels with the processes we have linked to CI, particularly nuclear transport (Kap-α, Moleskin) and the protamine-to-histone transition (P32 and Nap1).
 
-## Host suppression of CI
+### Host suppression of CI
 
 Host suppression of reproductive parasitism has been documented in multiple Wolbachia systems involving CI (Cooper et al., 2017) and male killing (Hornett et al., 2006; Reynolds et al., 2019). Theory predicts that CI will progressively evolve to weaker incompatibilities (Turelli, 1994; Prout, 1994). However specific suppressor gene loci have never been identified. Genetic suppressors of CI are important for two reasons. First, they provide hints toward pathways targeted by CI. Secondly, they might co-evolve as resistance factors to CI. Importantly, suppression of CI in vectors will reduce the effectiveness of global mosquito control efforts harnessing Wolbachia and CI. We note that Kap-α and P32 were both robust dosage suppressors of transgenic and natural CI (Figure 5) and both are maternally deposited (Emelyanov et al., 2014; Emelyanov and Fyodorov, 2016; Mason et al., 2002). Therefore, these proteins could well be important factors in the evolution of host resistance to Wolbachia-induced CI.
 
 ## Materials and methods
 
-## Nucleic acid sources and construct preparation
+### Nucleic acid sources and construct preparation
 
 Yeast genomic DNA was purified by lysing cells by glass bead disruption, followed by phenol/chloroform extraction and ethanol precipitation (Hoffman and Winston, 1987). Wolbachia DNA was purified by homogenizing 10 whole infected insects in lysis buffer and recovering DNA with organic extraction following referenced protocols (Beckmann et al., 2017; Beckmann and Fallon, 2012). Drosophila melanogaster and D. simulans lines infected with wMel, wRi, and wHa were used as PCR template sources. In some cases, genes from wNo and wMel were subcloned from synthesized constructs (Genscript). Genomic wStr DNA was a gift from Ann Fallon and was derived from infected cell cultures. PCR amplicons were produced with primers listed in Supplementary file 1i. High fidelity Phusion polymerase (New England Biolabs) was used to amplify DNA, which was then restriction enzyme digested, gel-purified and ligated into various plasmid vectors (Supplementary file 1j). Plasmids were sequenced and confirmed at the Yale Keck Foundation DNA sequencing facility. Point mutations were introduced by QuikChange site-directed mutagenesis (Stratagene). Other modifications such as truncations or tag additions/swaps were created by site-directed ligase-independent mutagenesis (SLIM) (Chiu et al., 2004).
 
-## Yeast methods
+### Yeast methods
 
 Yeast strain backgrounds used were W303-1A and BY4741. BY4741 was discontinued after Figure 1a because W303-1A exhibited stronger sensitivity to CI factors. All other serial dilution and Western blotting data used W303-1A except Figure 3d which was BY4741. Yeast were transformed with plasmids by standard methods (Gietz and Schiestl, 2007). In general, cifB gene toxins were expressed from low-copy CEN vectors under control of the GAL1 promoter. When testing co-expression with cifA genes or suppressors we placed these latter genes in high-copy 2-micron plasmids, with the cifA genes also under control of the GAL1 promoter. Suppressors were always expressed under endogenous promoters. For specific plasmid descriptions see the construct database, Supplementary file 1j. Five-fold serial dilutions and plating of yeast cultures were described previously (Beckmann et al., 2017). SDS-PAGE and Western blotting analysis of yeast protein extracts was performed precisely as detailed in our prior work (Beckmann et al., 2017). All serial dilution and Western blot data are representative of at least three biological triplicate experiments.
 
-## Yeast suppressor screens
+### Yeast suppressor screens
 
 Plasmids from a yeast high-copy ordered genomic library were purified from E. coli (Qiagen) and stored at −80°C (Jones et al., 2008). His6CidBwPip was cloned into the pRS416GAL1 plasmid using BamHI-5’ and XhoI-3’ restriction sites. This low-copy CEN plasmid has a galactose-inducible promoter and a URA3 cassette. Suppressor screens were performed in the BY4741 yeast background. BY4741 [pRS416GAL1-His6CidBwPip] yeast were streaked out on synthetic defined (SD) glucose medium lacking uracil (SD-ura). An overnight liquid starter culture (5–10 ml) was inoculated in SD-ura medium at 30°C. The following day, cultures were diluted and allowed to grow to OD600 0.8 in SD-ura at 30°C. Cells were pelleted by centrifugation, washed in sterile water and transformed using lithium acetate transformation with 17 sublibrary plasmid minipreps (Gietz and Schiestl, 2007).
 
@@ -134,23 +522,23 @@ Transformed cells were plated directly on selective medium (synthetic defined ga
 
 After plating on selective media, colonies were allowed to grow for 3–7 days, which helped colony sizes diverge according to suppressive capability. Potential suppressors were then re-streaked under the same selective conditions. Yeast colonies were then inoculated into 2 ml of yeast peptone dextrose (YPD) liquid medium and allowed to grow for two days to high density. Cultures were used for ‘smash-n-grab’ plasmid recovery (Hoffman and Winston, 1987). Recovered DNA was electroporated into electrocompetent Top10F’ E. coli and plated on LB plates containing kanamycin. The ends of the recovered plasmid inserts were sequenced with primers JFB 146 and 147 (Supplementary file 1i). Sequencing data were cross referenced with the S. cerevisiae genome using NCBI BLAST (Figure 2a, Supplementary file 1a). Identified plasmids were re-transformed back into yeast and tested by serial dilution to confirm suppression (Figure 2b). To identify individual suppressor genes from these library plasmids, we sub-cloned each gene individually into the library vector pGP564. These clones were then transformed into yeast and tested by serial dilution (Figure 2c).
 
-## Recombinant protein expression and substrate trapping interactomes
+### Recombinant protein expression and substrate trapping interactomes
 
 All recombinant protein expression constructs and isolation protocols were described previously (Beckmann et al., 2017). We used similar protocols with some minor modifications listed here. Recombinant proteins were expressed in BL21-AI (ThermoFisher). N-terminally His6-tagged proteins expressed from an arabinose inducible promoter in the plasmid pBAD (ThermoFisher) were purified by affinity chromatography using HisPur cobalt resin (Qiagen). Three constructs were used to produce three interactomes in (Figure 4): His6CidAwPip, His6CidB*wPip (C1025A), and FLAGCidAwPip. Drosophila melanogaster lysates (male and female adults) were run over the column to enrich for insect proteins capable of binding the recombinant proteins. For detailed expression, purification, and pull-down protocols, see below. In-solution LC-MS/MS analysis was performed at the Yale Keck Foundation in close association with the authors (for details see below).
 
-## Transgenic Drosophila and transgenic CI crosses
+### Transgenic Drosophila and transgenic CI crosses
 
 DNA for the cidA-T2A-cidBwMel operon (Beckmann et al., 2017), in addition to D.m.Kap-α1 were codon optimized for Drosophila and ordered from Genscript. Some constructs were purchased from Genscript Drosophila cDNA libraries. Transgenes were sub-cloned from the pUC57 vector into pUASp-attB (Rørth, 1998; Takeo et al., 2012). This vector appends the K10 3’ UTR, which is known to localize transcripts to the Drosophila oocyte (Serano and Cohen, 1995). Final constructs were either fully sequenced or sequenced on ends and verified by restriction enzyme digests. Cloning and construct specifics are in Supplementary file 1j. BestGene Inc was contracted for embryo microinjection of D. melanogaster #9744 (attP site on chromosome three) and ΦC31 integrase-mediated transgene insertion. We verified that all fly lines were free of Wolbachia using PCR and primers recognizing a conserved region in the Wolbachia VirD4 gene (Figure 5—figure supplement 1). As a positive control, we amplified the D. melanogaster histone H3 gene. Crossing of cidA-T2A-cidBwMel operon-transformed male flies with females from strain #4442 carrying the nanos-Gal4-tubulin 3’ untranslated region (NGT) driver induced CI (Figure 5a). This served as a phenotypic confirmation of transgene expression and accords with previous results (Beckmann et al., 2017; LePage et al., 2017).
 
 Flies were maintained on a standard diet, and temperature was stringently controlled as outlined in Figure 5. For CI analysis, F0 crosses were initiated by crossing homozygous Gal4 driver females to homozygous UAS-transgene males. F0 crosses were kept at the temperatures indicated in Figure 5 to control for any temperature-dependent maternal effects. Temperature was only temporarily lowered to 18°C for overnight virgin collection. F1 flies, which were heterozygous for both the NGT driver and the Gal4-UAS-transgene, were aged 3–4 days at restrictive temperature and crossed one to one, male and female, in arenas with apple juice plates and yeast paste. After 12 hr, we discarded the original apple juice plate and allowed flies to oviposit for 24 hr before removing the plate. Eggs were given 36 hr to hatch while being incubated at the respective temperatures. Hatch rates were evaluated by microscopy and by counting hatched and unhatched egg totals. One-way ANOVA with multiple comparison was performed using Graphpad Prism seven with outliers removed by the ROUT method. Flies used in this study were white Canton-S (wCS; WT); nanos-Gal4-tubulin, #4442; MTD-Gal4, #31777, which has multiple GAL4 inserts on all three large chromosomes, including nanos-Gal4, nanos-Gal4:VP16, and otu-Gal4 and is infected with Wolbachia; and UASp-Kap-α2, #25400 (Mason et al., 2002). Fly lines were created by us, obtained from the Bloomington Stock Center, or were gifts.
 
-## Rationale for dual CidA and CidB transgenic CI expression
+### Rationale for dual CidA and CidB transgenic CI expression
 
 The cidBwPip gene alone was not successfully inserted into flies in >600 embryo microinjections (Beckmann et al., 2017). Our interpretation of this observation was that CidBwPip might be toxic by itself and was killing the injected flies. In order to build a transgenic fly that expressed CidBwPip, we reasoned that co-expressing it with the upstream CidAwPip protein might alleviate this toxicity. We built the fusion ORF cidAwPip –T2A–cidBwPip, where T2A encodes a viral peptide that causes ribosomal skipping and translation of the upstream and downstream polypeptides at roughly 1:1 stoichiometry. This worked. Importantly, this system mimics what would occur in a normal Wolbachia infection and other natural toxin-antidote systems in which both proteins are expressed simultaneously. Toxicity in most known toxin-antidote systems occurs only after rapid degradation of the antidote in cells that no longer synthesize it. This activates the toxin. We hypothesized that the reason CI was induced was because there was a similar rapid degradation of CidA antidote in the fertilized egg, although this remains to be shown experimentally (Beckmann et al., 2019a; Beckmann et al., 2017).
 
 In LePage et al. (2017) CI factors from another Wolbachia strain were used, namely CidA-CidBwMel. The CI system of wMel has traits making it different from the wPip system described above. It is a much weaker CI inducer. In that publication, a transgenic fly line with cidBwMel alone was generated and did not induce CI. Only when combined with an insertion of cidAwMel on another chromosome was CI induced. The requirement for both proteins for CI in these transgenic models could either be that both are needed for interference with embryonic nuclear division or, as suggested above, that CidA promotes CI indirectly by preventing premature toxicity of CidB in the male and/or promoting CidB packaging into sperm. Because this dual expression system was able to induce transgenic CI, we replicated it with the wMel operon in this study except via a T2A peptide mechanism.
 
-## Detailed protein expression, purification, and pull-down analysis
+### Detailed protein expression, purification, and pull-down analysis
 
 Bacterial starter cultures were grown overnight and used to inoculate 4 liters of Luria Broth (LB) plus ampicillin. An additional 4-liter culture of BL21-AI cells was always grown in tandem to serve as an internal mock negative control with which to rule out non-specific interactions from copurification analyses; the mock control and experimental samples were treated equivalently. Cultures were grown at 37°C with vigorous shaking to an optical density at 600 nm of 0.5 and induced with 0.02% arabinose. Immediately after induction, we shifted the cultures to 18°C and incubated overnight. The following morning cells were pelleted by centrifugation and resuspended in 15 ml of 50 mM Tris pH 8.0, 250 mM NaCl, 10% glycerol, 2 mM β-mercaptoethanol. We added 100 μl of 100 mM PMSF in isopropanol and one cOmplete, Mini, EDTA-free Protease Inhibitor Cocktail tablet (Roche).
 
@@ -158,18 +546,24 @@ Cells were lysed by incubation with a pinch of chicken egg-white lysozyme on ice
 
 Protein pellets were resuspended in wash buffer (50 mM sodium phosphate pH 8.0, 300 mM NaCl, 0.01% Tween-20, 5 mM β-mercaptoethanol, 10 mM imidazole) and run over a 10 ml disposable chromatography column containing 1 ml of fresh HisPur cobalt resin at 4°C to bind recombinant His6-tagged proteins. The columns were washed with 20 column volumes (20 ml) of wash buffer. A peristaltic pump was used to aid column flow. Drosophila lysates made from male and female adults were then run through the column. To prepare Drosophila lysates, 10 ml of fly bodies were collected and stored in −80°C. Bodies were ground to powder in liquid nitrogen by mortar and pestle and 25 ml of pull-down buffer (3.25 mM Sodium-phosphate, pH 7.4, 70 mM NaCl, 0.01% Tween-20) was added. Fly cuticle and insoluble material were pelleted by centrifugation at 4700 x g for 15 min in a Thermo Sorvall Lynx 600 F9−6 × 1000 LEX centrifuge and the supernatant was passed through a 5-micron filter (Amicon), loaded on the HisPur-recombinant protein column, and allowed to pass through the column by gravity for 1 hr. The column was then washed with 50 column volumes (50 ml) of wash buffer. Proteins were eluted with 5 ml of elution buffer (300 mM imidazole, 50 mM Sodium-phosphate pH 8.0, 300 mM NaCl, 0.01% Tween-20). Eluates were concentrated to 250 µl in an Amicon 3000 molecular weight cutoff centrifugal filter. Concentrated eluates were then subjected to in-solution proteome analysis as described below. In the case of the bound His6CidB*wPip/FLAGCidAwPip interactome, FLAGCidAwPip was added as a bacterial extract, followed by an additional wash with 20 column volumes wash buffer, and then immediate addition of the fly lysate.
 
-## Protein digestion
+### Protein digestion
 
 Proteins were precipitated from the eluates with acetone using established protocols. Protein pellets were dissolved and denatured in 8 M urea, 0.4 M ammonium bicarbonate, pH 8. The proteins were reduced by the addition of 1/10 vol of 45 mM dithiothreitol (Pierce Thermo Scientific #20290) and incubation at 37°C for 30 min, then alkylated with the addition of 1/10 vol of 100 mM iodoacetamide (Sigma-Aldrich #I1149) with incubation in the dark at room temperature for 30 min. The urea concentration was adjusted to 2 M by the addition of water prior to enzymatic digestion at 37°C with trypsin (Promega Seq. Grade Mod. Trypsin, # V5113) for 16 hr. Protease:protein ratios were estimated at 1:50. Samples were acidified by the addition of 1/40 vol of 20% trifluoroacetic acid, then desalted using C18 MacroSpin columns (The Nest Group, #SMM SS18V) following the manufacturer’s directions. Peptides were eluted with 0.1% TFA, 80% acetonitrile. Eluted peptides were dried in a Speedvac and dissolved in MS loading buffer (2% aceotonitrile, 0.2% trifluoroacetic acid). Protein concentrations were determined using a Thermo Scientific Nanodrop 2000 UV-Vis Spectrophotometer. Each sample was then further diluted with MS loading buffer to 0.08 µg/µl, with 0.4 µg (5 µl) injected for LC-MS/MS analysis.
 
-## LC-MS/MS
+### LC-MS/MS
 
 LC-MS/MS analysis was performed on a Thermo Scientific Orbitrap Fusion equipped with a Waters nanoAcquity UPLC system (Yale Keck Center) utilizing a binary solvent system (Buffer A: 100% water, 0.1% formic acid; Buffer B: 100% acetonitrile, 0.1% formic acid). Trapping was performed at 5 µl/min, 97% Buffer A for 3 min using a Waters Symmetry C18 180 µm x 20 mm trap column. Peptides were separated using an ACQUITY UPLC PST (BEH) C18 nanoACQUITY Column 1.7 µm, 75 µm x 250 mm (37°C) and eluted at 300 nl/min with the following gradient: 3% buffer B at initial conditions; 5% B at 5 min; 20% B at 90 min; 35% B at 125 min; 97% B at 130 min; 97% B at 135 min; and return to initial conditions at 136–150 min. Mass spectra were acquired in the Orbitrap in profile mode over the 300–1,500 m/z range using quadrapole isolation, one microscan, 120,000 resolution, AGC target of 4E5, and a maximum injection time of 60 ms. MS/MS data were collected in top speed mode with a 3 s cycle time on species with an intensity threshold of 5E4, charge states 2–8, peptide monoisotopic precursor selection preferred. Dynamic exclusion was set to 30 s. Data-dependent MS/MS were acquired in the Orbitrap in centroid mode using quadropole isolation (window 1.6 m/z), HCD activation with a collision energy of 28%, one microscan, 60,000 resolution, AGC target of 1E5, maximum injection time of 110 ms.
 
-## Peptide identification
+### Peptide identification
 
 Data were analyzed using Proteome Discoverer software v2.2 (Thermo Scientific). Data searching was performed using the Mascot algorithm (version 2.6.1) (Matrix Science) against a custom database containing protein sequences for CidA and CidB* as well as proteomes for Escherichia coli, Saccharomyces cerevisiae, Wolbachia pipientis, and Drosophila melanogaster proteomes (35,536 sequences total). The search parameters included tryptic digestion with up to two missed cleavages, 10 ppm precursor mass tolerance and 0.02 Da fragment mass tolerance, and variable (dynamic) modifications of methionine by oxidation and carbamidomethylated cysteine. Normal and decoy database searches were run, with the confidence level set to 95% (p<0.05). Scaffold (version Scaffold_4.8.9, Proteome Software Inc, Portland, OR) was used to validate MS/MS-based peptide and protein identifications. Peptide identifications were accepted if they could be established at greater than 95.0% probability by the Scaffold Local FDR algorithm. Protein identifications were accepted if they could be established at greater than 99.0% probability and contained at least two identified peptides.
 
-## Interactome data analysis
+### Interactome data analysis
 
-Samples were each run in technical duplicate with three independent biological replicate interactome pulldowns constituting a complete interactome dataset. Proteomic datasets were viewed in Scaffold Proteome Software and the raw datasets of identified peptide spectral matches were transitioned into Microsoft Excel. Protein ‘enrichment’ was measured in comparison to an internal mock control lacking recombinant protein. We ranked protein hits based on normalization of the frequency of detecting their peptide spectra in the experimental pulldown compared to the mock control. The peptide frequency (F) for any protein hit was calculated by the formula:F=C-MCwhere C equals the total number of peptide spectral matches for any protein X detected in the CidB* sample (i.e., recombinant protein sample) and M is equal to the total peptide spectral matches for the same protein X detected in the mock (negative control) sample. By this calculation, protein hits with spectra uniquely present in a CidB* pull-down and also completely absent in the control have a perfect value of 1. If there is no difference in spectra and no enrichment the value will equal 0. Thus, proteins enriched can be ranked on a scale of 0 - 1 and anything not enriched will be less than or equal to zero. Proteins enriched in at least two of three replicates were compiled in Excel (Supplementary file 1b, d and f). We then iteratively subjected these lists to peptide spectral analysis. In this order, we culled the lists to proteins identified as enriched (F ≥ 0) in all three biological replicates for each interactome (Supplementary files 1c, e, g). Next, we classified these hits based on predicted protein functional categories (Figure 4—figure supplements 1, 2, and 3). Then we a) eliminated hits where averages covered up inconsistencies in the technical replicates; such hits may have had multiple peptides in one technical replicate, but zero in another; b) removed hits with standard deviations in their F-scores greater than that of our positive control, ubiquitin; c) removed ribosomal subunits (though these hits are still visible in Supplementary file 1c, e and g); and d) manually inspected the tandem spectra verifying that they all contained at least three consecutive ions, ie., b5, b6, b7 and that all peaks above background were assigned to the peptide. This process produced final interactomes (Table 1). Proteins were not reported in any table if the combination of technical replicate enrichment was not ≥ 2. Under these stringent reporting conditions, the false discovery rate (FDR) of the interactomes is zero. P-values were calculated (comparing peptide spectral matches in C to M) by a two sample T-test assuming unequal variances of the total replicates.
+Samples were each run in technical duplicate with three independent biological replicate interactome pulldowns constituting a complete interactome dataset. Proteomic datasets were viewed in Scaffold Proteome Software and the raw datasets of identified peptide spectral matches were transitioned into Microsoft Excel. Protein ‘enrichment’ was measured in comparison to an internal mock control lacking recombinant protein. We ranked protein hits based on normalization of the frequency of detecting their peptide spectra in the experimental pulldown compared to the mock control. The peptide frequency (F) for any protein hit was calculated by the formula:
+
+$$
+F=\frac{C-M}{C}
+$$
+
+where C equals the total number of peptide spectral matches for any protein X detected in the CidB* sample (i.e., recombinant protein sample) and M is equal to the total peptide spectral matches for the same protein X detected in the mock (negative control) sample. By this calculation, protein hits with spectra uniquely present in a CidB* pull-down and also completely absent in the control have a perfect value of 1. If there is no difference in spectra and no enrichment the value will equal 0. Thus, proteins enriched can be ranked on a scale of 0 - 1 and anything not enriched will be less than or equal to zero. Proteins enriched in at least two of three replicates were compiled in Excel (Supplementary file 1b, d and f). We then iteratively subjected these lists to peptide spectral analysis. In this order, we culled the lists to proteins identified as enriched (F ≥ 0) in all three biological replicates for each interactome (Supplementary files 1c, e, g). Next, we classified these hits based on predicted protein functional categories (Figure 4—figure supplements 1, 2, and 3). Then we a) eliminated hits where averages covered up inconsistencies in the technical replicates; such hits may have had multiple peptides in one technical replicate, but zero in another; b) removed hits with standard deviations in their F-scores greater than that of our positive control, ubiquitin; c) removed ribosomal subunits (though these hits are still visible in Supplementary file 1c, e and g); and d) manually inspected the tandem spectra verifying that they all contained at least three consecutive ions, ie., b5, b6, b7 and that all peaks above background were assigned to the peptide. This process produced final interactomes (Table 1). Proteins were not reported in any table if the combination of technical replicate enrichment was not ≥ 2. Under these stringent reporting conditions, the false discovery rate (FDR) of the interactomes is zero. P-values were calculated (comparing peptide spectral matches in C to M) by a two sample T-test assuming unequal variances of the total replicates.

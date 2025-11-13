@@ -14,10 +14,10 @@
 
 ### Affiliations
 
-1. https://ror.org/045c7t348 VIB-KU Leuven Center for Brain and Disease Research, KU Leuven Leuven Belgium
-2. https://ror.org/05f950310 Laboratory of Computational Biology, Department of Human Genetics, KU Leuven Leuven Belgium
-3. https://ror.org/05f950310 Aix Marseille University, CNRS, IBDM, Turing Centre for Living Systems Marseille France
-4. https://ror.org/05f950310 VIB Center for AI & Computational Biology, KU Leuven Leuven Belgium
+1. VIB-KU Leuven Center for Brain and Disease Research, KU Leuven Leuven Belgium ([ROR:045c7t348](https://ror.org/045c7t348))
+2. Laboratory of Computational Biology, Department of Human Genetics, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+3. Aix Marseille University, CNRS, IBDM, Turing Centre for Living Systems Marseille France ([ROR:05f950310](https://ror.org/05f950310))
+4. VIB Center for AI & Computational Biology, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
 
 † Corresponding author
 
@@ -39,21 +39,53 @@ Here, we applied Molecular Cartography (MC, Resolve Biosciences), a multiplexed 
 
 ## Results
 
-## Creation of a comprehensive spatial dataset of the fly body and its head
+### Creation of a comprehensive spatial dataset of the fly body and its head
 
 In analogy to the FCA strategy (Li et al., 2022), we intended to map the spatial expression of a selected gene panel across the entire adult fly body and, in a separate set of experiments, across the adult head. Based on expression data from the FCA (Li et al., 2022; Pech et al., 2024) we selected 50 genes for the fly body samples, and 100 genes for the head samples given the large heterogeneity of neurons. These genes were carefully chosen to label the most important known cell types of the adult fly, and to include some unknown ones, suggested from the atlas data. They cover a wide range of expression levels, from high to very low expressed genes (Supplementary file 1, Supplementary file 2, Figure 1—figure supplement 1). Adult fly samples were frozen, sectioned, attached to slides, and fixed (see Methods), after which they were profiled using MC (Figure 1a). Using this workflow, we detected on average 190,622 mRNA molecules for the head samples (min = 101,548, max = 260,989), ranging from 56 (Poxn) to 23,439 (trio) mRNA molecules per gene (Figure 1—figure supplement 2A, B) and an average of 1.5 million mRNA molecules for the body samples (min = 1,448,593, max = 1,727,479), ranging from 112 (MsR1) to 510,619 (Act88F) mRNA molecules per gene (Figure 1—figure supplement 3A, B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig1-v1.jpg)
+
+**Figure 1.:** (A) Overview of the spatial transcriptomics workflow: adult flies were sectioned, sections were analyzed with Molecular Cartography and data were annotated using cell segmentation, rasterization (i.e. grid), and neighborhood embedding (see Methods). (B, C) Three examples of adult head sections showing various positions in the brain along the anterior-posterior axis (B). Three examples of male whole-body sections were taken from the same male (C). mRNAs from each gene are represented in a different color. The combination of colors reveals the different cell types. Scale bars represent 100 µm. Background stain labels DAPI.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Heatmap showing expression in standardized log(CPM) of the 100 marker genes used in the head dataset in the single-cell clusters. (B) Density plot showing levels of gene expression detected in scRNA-seq (Pech et al., 2024). Blue: all genes, red: genes used in the spatial study. (C) Heatmap showing expression in standardized log(CPM) of the 50 marker genes used for body dataset in the Fly Cell Atlas (FCA) single-cell clusters. (D) Density plot showing levels of gene expression detected in scRNA-seq (FCA, Li et al., 2022). Blue: all genes, red: genes used in the spatial study.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) All detected mRNA molecules color-coded in all 13 head samples used in the analysis. Scale bars represent 100 µm. Background stain labels DAPI. (B) Boxplot showing gene expression (number of detected mRNA molecules) in each of the head samples. Boxplot shows the median (center line), upper and lower quartiles (box limits), and 1.5x interquartile range (whiskers). All data points are shown. (C) Heatmap showing Pearson correlation between the individual head section samples and to the scRNA data from the fly cell atlas (FCA).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) All detected mRNA molecules color-coded for all body samples used in the analysis. Sections are from the same male. Anterior is to the left, dorsal is up on each section and the section are ordered (top to bottom). Scale bars represent 100 µm. Background stain labels DAPI. (B) Boxplot showing gene expression (number of detected mRNA molecules) in each of the body samples. Boxplot shows the median (center line), upper and lower quartiles (box limits), and 1.5x interquartile range (whiskers). All data points are shown. (C) Heatmap showing Pearson correlation between the individual samples and the scRNA data from the fly cell atlas (FCA).
+
 For the head samples, we aimed to image as many different neuronal populations as possible. Thus, we performed coronal sections at different depths in the head (13 sections, 12 animals, mixed sex, Supplementary file 3), along the anterior-posterior axis (Figure 1B, Figure 1—figure supplement 2A, C). For the body samples, sagittal sections were performed through the middle of the animal (5 sections from one male) (Figure 1C, Figure 1—figure supplement 3A). These sagittal sections show only small structural differences in the abdomen; overall they are very similar to each other, showing the reproducibility of our data (Figure 1—figure supplement 3C, see Methods).
 
-## Spatial transcriptomics allows the identification of cell types in the body
+### Spatial transcriptomics allows the identification of cell types in the body
 
 The genes for the body datasets were selected to cover a wide range of different cell types. Neurons in the central and peripheral nervous system were identified using expression of elav and Syt1 (Figure 2A). The glial marker repo shows the location of glial cells across the body (Figure 2A). The expression of different trypsin isoforms is unique to the digestive system. Interestingly, α- and β-Trypsin show distinct patterns, with β-Trypsin localized to the inner side of the gut, while α-Trypsin is more distal, suggesting a subcellular localization of these trypsin isoforms coding mRNAs to apical or basal regions of the gut enterocytes (Figure 2A). Using the fat body marker AkhR and the oenocyte marker FASN2, different populations of fat tissue and oenocytes were identified in the abdomen of the fly at the expected locations. The hemocyte marker Hml shows distinct local enrichments in the head, thorax, and abdomen (Figure 2A). In addition, LanB1, which codes for LamininB1, an important component of the extracellular matrix present around many tissues (Yarnitzky and Volk, 1995), is widely produced in different cell types and not only in hemocytes. While co-expression of LanB1 with Hml in hemocytes is detected as reported (Matsubayashi et al., 2017) (15.5%) (Figure 2A), surprisingly most of LanB1 overlaps with epithelial cells (grh (13.4%) and pain (28.0%)) or muscle cells (Mlp84B (40.9%) and Mp20 (25.4%) (see Methods)). Next, we used esg to mark adult stem cell populations. The expression of esg in our sections is mostly limited to the gut, matching its reported expression in the intestinal stem cells (Jiang and Edgar, 2011) and the somatic cyst stem cells (Sênos Demarco et al., 2022; Figure 2A). Furthermore, Mhc and sls were used to label all muscle cells, while TpnC4 and Act88F specifically label the IFMs (Figure 2A). Interestingly, in the IFMs we also detect expression of VGlut and other neuronal markers, consistent with glutamatergic neuromuscular junctions (Schuster, 2006; Figure 2—figure supplement 1). Finally, we used grh, hth, svp, and pain to identify epithelial cells and their subtypes (Figure 2A). Together, these data show that our spatial transcriptomics data can identify the spatial location of most known large classes of cell types of the adult fly, while also detecting unexpected subcellular mRNA localizations in some cell types.
 
-## Molecular Cartography is highly specific
+![Figure 2.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig2-v1.jpg)
+
+**Figure 2.:** (A) Major cell types of adult males identified by marker genes. Scale bars represent 100 µm. Inset for gut shows zoom-ins of different regions (a: apical, b: basal). Inset for flight muscle, shows the percentage of marker gene molecules detected within the outlined area in the section shown. (B) Gene set scores for the main classes of cell types, quantified using 5 µm × 5 µm grid. Scale bar represents 100 µm. The class assignment shown on the right is based on the maximum score across classes. Genes used: neurons (elav, Syt1, Sh, acj6, ey, VAChT, Gad1, VGlut, nAChRα7); male reproductive system (Awh, eyg, svp); epithelia (grh, αTry, βTry, hth); heart (tin, Hand); muscle (Mhc); hemocyte (Hml); glia (repo); fat cells (AkhR); oenocytes (FASN2). (C) UMAP showing clustering of 5 µm × 5 µm grid spots. (D) Spatial location of grid clusters. (E) tSNE from male accessory glands from fly cell atlas (FCA) showing expression of marker genes for main gland cells. (F, F’) Molecular Cartography (MC) of the main gland cells marker genes highlights several defined populations of cells. Scale bar represents 100 µm. Detailed view shown in F’. Background stain labels DAPI.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A, B) Two different thorax sections are shown on the left and on the right. Molecular Cartography of neuronal markers in flight muscles (A). Molecular Cartography of neurotransmitter genes in flight muscles (B). (VAChT: cholinergic, VGlut: glutamatergic, Gad1: GABAergic). Scale bars represent 100 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Composite heatmap showing gene-gene co-expression based on Pearson correlation. Bottom triangle calculated on spatial datasets (using grid-based 5 µm squares). Top triangle calculated using single-cell data. (B) Gene-gene correlation measured across grid-based 5 µm squares and cells.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Overview of colocalization algorithm. For each mRNA spot a disk of 4 µm diameter was used as search space. Overlaps in the disk area were then used to calculate proximity between genes as defined by the formula in the figure. (B) Heatmap displaying proximity estimation of genes with each other. The genes displayed vertically correspond to RNA1 and the genes displayed horizontally correspond to RNA2 as used in the formula introduced in A. (C) Ward’s clustering of gene-gene proximities. (left) Dendrogram clustering of genes. (right) Spatial location of gene clusters. Colors in the dendrogram are used to show the expression of the respective genes on the fly section.
+
+### Molecular Cartography is highly specific
 
 Most marker genes used in this study were selected based on FCA data to be highly specific for one particular cell type or present at one body location. Hence, their expression can be used to estimate the specificity of the mRNA detection method and determine false-positive rates of mRNA spots. For this specificity analysis, we chose to work with marker genes linked to muscle cells. We used the expression of Act88F and TpnC4, both of which are almost exclusively expressed in the IFMs (and possibly in muscles around the ejaculatory bulb) (Fyrberg et al., 1983; Agianian et al., 2004; Sarov et al., 2016). We segmented the flight muscles (Figure 2A) and calculated the percentage of marker genes detected in the segmented area compared to the entire imaged area. We find that 99.1% of TpnC4 and 99.7% of Act88F mRNA spots are detected in the expected regions of all body sections (Figure 2A), with negligible off-target signal. This highlights the specificity of the transcriptomics method and the reliability of detected mRNA signals with MC.
 
-## Building a spatial tissue atlas of the fly body
+### Building a spatial tissue atlas of the fly body
 
 Cell types can often only be reliably identified by a combination of several marker genes. Therefore, we investigated co-expression signatures of known cell type marker genes in the spatial transcriptomics data. This may also help identify more rare cell types or specific cell states. To implement this idea on our spatial data, we computationally assigned every mRNA molecule to a 5 µm by 5 µm square in a square-grid fashion and summed the signal, creating pseudo-bulk samples. All squares in this grid were then scored for mRNA signatures of different cell classes and assigned to the highest-scoring cell class (Figure 2B, see Methods). This signature-based method annotated all major cell types or tissues of the adult reliably, including muscles, neurons, glia, fat and epithelial cells, oenocytes, and the male reproductive organ (Figure 2B). In addition, cell populations with more sparse gene expression like the heart (combination of Hand and tin) or the male reproductive tract (combination of Awh, eyg, and svp) were newly identified. In conclusion, the major cell types of the adult fly could be localized using combined sets of marker genes identified by their spatial proximity.
 
@@ -65,21 +97,53 @@ Furthermore, we inspected whether co-expression of genes is maintained between S
 
 In conclusion, we present the first SRT dataset of the adult fly body, with high specificity and high reproducibility across body sections. We show how the SRT data can unambiguously identify the major cell types in both supervised and unsupervised techniques. Finally, SRT data can be used to describe gene-gene interactions.
 
-## Subcellular localization of mRNA in muscle cells
+### Subcellular localization of mRNA in muscle cells
 
 Unsupervised clustering revealed the presence of multiple spatial niches in the muscles, especially in the IFMs (Figure 2C and D). Muscle cells form polynucleated syncytia, with more than 500 nuclei in one IFM cell (Chaturvedi et al., 2017; Kaya-Çopur et al., 2021). Thus, spatial niches could represent heterogenous nuclei or subcellular mRNA localization patterns, resulting from directed mRNA transport or anchoring (Das et al., 2021). To investigate this in more detail, we segmented the three main types of adult muscles (head, leg, and indirect flight muscles) to look at spatial gene expression in them.
 
 Amongst the 50 genes we had selected were six genes that code for sarcomere protein components, four of which are specifically expressed in different muscle groups: Act88F and TpnC4 in IFMs, Act79B, and TpnC41C in leg muscles (Figure 3A). First, we investigated if mRNA species have different nuclear proximities by quantifying the distance of every mRNA molecule to its closest nucleus (see Methods, the localization precision of mRNAs is about 0.14 µm). This identified genes whose mRNAs are nucleus-enriched (sls) or nucleus-depleted (TpnC4) (Figure 3B and C, see also Figure 4—figure supplement 1A). We found a similar difference in leg and head muscles with sls staying in proximity or within the nuclei, in contrast to the nuclei-depleted TpnC41C (Figure 3—figure supplement 1A, B). Previously, mRNA distributions in cultured mammalian skeletal muscles were linked to mRNA sizes, with large mRNAs spreading further from the nuclei than small mRNAs (Pinheiro et al., 2021). This does not seem to apply to our selected genes, as sls mRNAs are significantly longer (isoform lengths: 15,263–56,489 nt) compared to TpnC4 (longest isoform: 859 nt) or TpnC41C mRNAs (longest isoform: 1,880 nt).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig3-v1.jpg)
+
+**Figure 3.:** (A) Molecular Cartography (MC) visualization of marker genes of muscle subtypes. White boxes mark zoom-in regions shown in (B) and Figure 3—figure supplement 1. (B) Zoom-in on flight, leg, and head muscles. Left, labels are the same as in (A); right, DAPI-labeled nuclei. (C). Density plots show the distance of each mRNA molecule of the indicated genes to its nearest nucleus. Red dotted lines mark the peak density, and black dotted lines the median distance. Scale bars represent 50 µm in (A) and 10 µm in (B). Background stain labels DAPI.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Molecular Cartography of sls, Act79B, Tpn41C and Mhc mRNAs in leg muscles, showing nuclei enrichment for sls mRNA and proximity of Act79B mRNA to leg muscle nuclei. (B) Molecular Cartography of sls and Mhc mRNAs in head muscles, showing nuclei enrichment for sls mRNAs. Scale bars represent 10 µm. Background stain labels DAPI.
+
 Furthermore, the nuclear enrichment of sls mRNA is not homogeneous across all nuclei, particularly in the IFMs, where sls mRNA forms large assemblies around nuclei close to the muscle-tendon junctions (Figure 4A–C). We confirmed these results by localizing sls mRNA using hybridization chain reaction technology (HCR-FISH) (Choi et al., 2018) in the thoraces from three adult males (Figure 4D–F, see Methods for details). We observed some small differences between MC and HCR, with sls mRNA enriched in broader regions around the muscle nuclei close to the tendons when detected with MC. This may be due to differences in fixation timing (pre-sectioning fixation for HCR, post-sectioning fixation for MC) or in image generation (direct imaging of hybridization events in HCR vs detecting, localizing, and combining multiplexed hybridization events in MC). Similarly enriched localizations of mRNA in muscles were reported in mammals close to the muscle-tendon junctions and the neuromuscular junctions (Dix and Eisenberg, 1990; Sanes et al., 1991). In mammals, this local enrichment correlates with an accumulation of nuclei (Bruusgaard et al., 2003), however, we do not detect a significant correlation between the sls enrichment at the IFM ends and the nuclear DAPI signal (Figure 4—figure supplement 1) and thus speculate that the terminal nuclei express higher levels of sls RNA than the central muscle nuclei.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig4-v1.jpg)
+
+**Figure 4.:** (A) Molecular Cartography visualization of sls mRNA (yellow) as pan muscle maker (same section as in Figure 3). White boxes mark zoom-in regions shown in (B) and (C). (B, C) Zoom-in on indirect flight muscles showing colocalization of sls mRNAs and DAPI stained nuclei in anterior (B) or central (C) regions of the flight muscle. (D) Hybridization chain reaction-fluorescence in situ hybridization (HCR-FISH) imaging of sls mRNA in an adult thorax. White boxes mark zoom-in regions shown in (E) and (F). (E, F) Zoom-ins on flight muscle at anterior (E) or middle (F) regions. Note the sls mRNA and DAPI co-localization (tracheal cells show background stain in the DAPI channel). Scale bars represent 50 µm in (A) and (D), and 10 µm in (B), (C), (E), and (F). Background stain labels DAPI.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Molecular Cartography of sparsely expressed genes (salm and CG32121) at the anterior (right) and middle (left) flight muscle regions labeled in Figure 4A (see also the quantification of nuclear proximity for both genes shown in Figure 3C). Note the proximity of both mRNAs to the nuclei but no mRNA enrichment in anterior regions. (B) Hybridization chain reaction-fluorescence in situ hybridization (HCR-FISH) imaging of sls mRNAs (yellow) in an adult thorax. The dashed line marks the region in which the intensity measurement was achieved. The scale bar represents 50 µm. (C) Quantification of sls mRNA localization: intensity profile plots of DAPI (left) and sls mRNAs (right) along the anteroposterior axis for three sections from three different flies indicated in different colors. The positions along the anteroposterior axis were normalized. Note the homogenous DAPI distribution but the terminal sls mRNA enrichment. Scale bars represent 10 µm in (A) and 50 µm in (B).
 
 In addition to nucleus-enriched or -depleted mRNA species, MC revealed mRNAs coding for several sarcomere proteins to be concentrated in longitudinal stripes in the muscles. Most prominently in the IFMs, Act88F mRNA is enriched in the inter-myofibril space, where most nuclei, endoplasmic reticulum, and Golgi are located, while TpnC4 and Mhc mRNAs appear enriched in complementary stripes at the location of the myofibrils and mitochondria (Figure 5A and B). This suggests a spatial subdivision of the flight muscles that correlates with their intracellular architecture (Avellaneda et al., 2021; Luis and Schnorrer, 2021). A similar division was found in leg muscles, with central stripes of Act79B mRNA close to the nuclei while Mhc and TpnC41C mRNAs were enriched in the myofibril regions (Figure 3—figure supplement 1B). To validate these observations, we performed HCR-FISH. This partially confirmed the anticorrelated expression patterns between Act88F and TpnC4 in IFMs: Act88F mRNA was found enriched in stripes along the rows of nuclei, consistent with the MC data. However, TpnC4 mRNA was also found enriched in a few cases around nuclei (Figure 5C, D, Figure 5—figure supplement 1). Additionally, HCR-FISH detected that Mhc mRNAs are enriched in proximity to the nuclei and not in proximity to the myofibrils as suggested by MC (Figure 5E and F). Overall, these data suggest that the main observations obtained here with MC are reliable, however, a systematic validation of SRT techniques with classical FISH is recommended.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig5-v1.jpg)
+
+**Figure 5.:** (A) Molecular Cartography visualization of TpnC4, Act88F, and Mhc mRNAs on an adult fly section (same section as in Figure 3). The white box marks the zoom-in region shown in (B). (B) Zoom-in on the flight muscle showing the striped patterns of TpnC4, Act88F (blue in overlay), and Mhc mRNAs in the indirect flight muscle. (C) Hybridization chain reaction-fluorescence in situ hybridization (HCR-FISH) of TpnC4 and Act88F mRNAs in an adult thorax. The white box marks zoom-in the region shown in (D). (D) Zoom-in on the flight muscle of HCR-FISH labeling TpnC4 and Act88F mRNAs (same section as in Figure 4D). (E) HCR-FISH of Mhc mRNAs in an adult thorax. The white box marks the zoom-in region shown in (F). (F) Zoom-in on the flight muscle of HCR-FISH labeling Mhc mRNAs. Scale bars represent 50 µm in (A), (C), (E). and 10 µm in (B), (D), (F). Background stain labels DAPI.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) HCR-FISH of TpnC4, Act88F, and sls mRNAs in an adult fly thorax. The white box marks the zoom-in region shown in (B). (B) Zoom-in of HCR-FISH of TpnC4, Act88F (blue in overlay), and sls mRNAs in an adult indirect flight muscle. Note that Act88F and TpnC4 mRNAs largely overlap in this example. The scale bar represents 50 µm in (A) and 10 µm in (B).
+
 To conclude, we found three main types of mRNA localization in the IFMs: nuclei-enriched patterns, complementary striped bands, and concentrations at the terminal nuclei, close to the muscle attachment sites. To our knowledge, none of these patterns had been identified before.
 
-## Spatial transcriptomics allows the localization of cell types in the head and brain
+### Spatial transcriptomics allows the localization of cell types in the head and brain
 
 To investigate the localization of cell types in the adult Drosophila head, we investigated the 13 sections of different fly heads sectioned across the longitudinal direction, covering most regions of the fly head. The diversity between sections originating from different brain regions is represented by lower correlations between the samples (Figure 1—figure supplement 2C). Using the marker genes para (neurons), alrm (astrocytes), and ninaC (photoreceptors), we were able to annotate different classes of cells (Figure 6A). ninaE, a second photoreceptor marker was too highly expressed, leading to optical crowding, and was removed from the analysis.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig6-v1.jpg)
+
+**Figure 6.:** (A) tSNE showing expression of photoreceptor (ninaC), neuronal (para) and glial (repo) markers (left). Molecular Cartography of the same marker genes (right). (B, C) Molecular Cartography of marker genes for olfactory projection neurons (OPN), in an anterior head slice (B) and of perineurial glia of the blood-brain barrier (BBB) in a more central brain slice (C). (D, E) Using Molecular Cartography to localize uncharacterized clusters found in scRNA-seq data. (F) UMAP showing clustering of 5 µm × 5 µm grid spots (top). Spatial location of grid clusters in the brain (bottom). (G) Differential expression of central brain (CB), optic lobe (OL) and photoreceptor regions (PR). (H) Molecular Cartography of pros and scro in the brain. (I) tSNE showing split in optic lobe clusters by expression of Wnt4 and Wnt10. Insert shows Molecular Cartography of Wnt4 and Wnt10, spatially localized in ventral and dorsal brain regions, respectively. Scale bars represent 100 µm. Background stain labels DAPI.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Gene-gene correlation measured across grid-based 5 µm squares and cells. Example mismatches shown in red, matching co-expression in green. (B) Composite heatmap showing gene-gene co-expression based on Pearson correlation. Bottom triangle calculated on spatial datasets (using grid-based 5 µm squares). Top triangle calculated using single-cell data. (C) Molecular Cartography showing high co-expression of pros and dati. (D) Molecular Cartography showing co-expression of Indy and disco. (E) Molecular Cartography showing expression of Vmat and DAT. Zoom shows non-overlapping expression and expression of Vmat outside of nuclei marked by white DAPI. (F) Molecular Cartography showing expression of mRNA coding for neuropeptides Ilp2 and Pdf. Zooms show expression outside of nuclei marked by white DAPI signal. (G) Stacked barplot showing sample composition based on Leiden 1 clustering. Background stain labels DAPI. Scale bars represent 100 µm in (C-F) and 50 µm in the zoomed regions of (E, F).
 
 First, we made use of our annotated scRNA-seq atlas of the fly brain (Davie et al., 2018; Li et al., 2022; Pech et al., 2024), using colocalization of marker genes to identify cell types with known anatomical locations. We used the expression of C15, acj6, Oaz, caup, and unpg, markers for olfactory projection neurons (OPNs). OPNs relay information from the antennal lobe to downstream processing centers, including the mushroom body and the lateral horn. The co-expression of OPN markers is only detected in the most anterior samples, as expected (Figure 6B). Next, we looked at repo, moody, Indy, Vmat, all of which are markers for perineurial glia that form the blood-brain barrier (BBB), and found them expressed at the periphery of the brain, consistent with the known location of the BBB (Figure 6C).
 
@@ -95,11 +159,19 @@ Previously, it was shown that some scRNA-seq clusters in the OL could be divided
 
 Altogether, our MC data of the fly brain allows the identification of clusters and cell types. We also showed how SRT can be used to identify and localize unknown clusters of scRNA data, serving as a potential link between morphology data and single-cell data. Finally, SRT can be used for the discovery and confirmation of regional marker genes by performing region-based differential expression.
 
-## Automated cell type annotation of SRT using scRNA-seq data
+### Automated cell type annotation of SRT using scRNA-seq data
 
 One of the key prospects for SRT, is to be able to identify unlabeled clusters and infer their spatial location. This requires the integration of SRT data with scRNA-seq data. Multiple methods have been developed for this purpose so far, including Tangram (Biancalani et al., 2021) and SpaGE (Abdelaal et al., 2020).
 
 Here, we used and compared three different approaches to represent SRT data: 5 μm-spaced grid rasterization, neighborhood embedding, and nuclei segmentation (Figure 7A). The grid and neighborhood embedding are both spatially unaware of the cell’s location. In the grid method, automatic segmentation takes place over the entire sample by grouping mRNA molecules together every 5 µm, while neighborhood embedding is segmentation-free and models every mRNA molecule independently. This makes it possible to also visualize spatial patterns at subcellular resolution, but leads to a very large dataset and heavy computational load (Partel and Wählby, 2021). While the grid-based approach can be run in several hours, neighborhood embedding takes several days. Finally, we segmented the nuclei and assigned mRNA molecules to each nucleus. While this is the most intuitive method, several challenges occur in the fly head. To start, different densities of nuclei require imaging with different parameters to visualize both sparse and dense nuclei regions. In addition, the dense nuclei regions at the edge of the OL and CB are very difficult to segment with normal imaging techniques, with a strong overlap of cells and different cell types (Figure 7B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig7-v1.jpg)
+
+**Figure 7.:** (A) Overview of different spatial analysis methods which were used to annotate Molecular Cartography with labels from single-cell RNA-seq: grid-based, neighborhood embedding and nuclei segmentation. Scale bar represents 100 µm. (B) Zoom-in on a high-density region with corresponding segmented nuclei. Scale bar represents 10 µm. (C-F) Comparison of annotation of spatial data with single-cell RNA-seq for three different quantification methods. Grid-based squares/neighborhoods/nuclei are colored based on matching single-cell clusters for (C) glia, (D) optic lobe, (E) central brain, and (F) four uncharacterized clusters. In (E) two brain slices are shown at different depths: central (top) and posterior (bottom). NE: neighborhood embedding.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/92618/elife-92618-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A-D) Comparison of annotation of spatial data with single-cell RNA-seq. Grid-based squares are colored based on mapped single-cell cluster labels for (A) glia, (B) optic lobe, (C) central brain, and (D) uncharacterized clusters using Tangram. In (F) two brain slices are shown at different depths: central (top) and posterior (bottom). (E) Effect of manually adjusted thresholds on Tangram score for nuclei segmentation (left) and grid-based quantification (right) for central brain clusters: 98%-quantile for assigning Pdf-neurons and 99%-quantile for IPC labels. (F) Molecular Cartography showing expression of mirr. (G) Molecular Cartography showing expression of caup. Scale bars represent 100 µm. Background stain labels DAPI.
 
 To compare label transfer methods we applied lasso regression, Tangram, and SpaGE. We found that regression-based integration in the grid method and SpaGE in the neighborhood embedding method can match the blood-brain barrier and the chiasm glia in the optic lobe very well, together with astrocytes and ensheathing glia in the central brain (Figure 7C). In contrast, the nuclei segmentation method performs poorly for matching glial subtypes, since most of the glial nuclei are not detected, leading to the removal of most glial mRNAs (Figure 7C). Therefore, we also ran Tangram on the grid-quantification, leading to the detection of different glial types (Figure 7—figure supplement 1A–D). This shows a disadvantage of nuclei-aware methods compared to methods that take all mRNA spots into account.
 
@@ -131,59 +203,174 @@ To conclude, we have shown that medium throughput SRT on entire fly head and bod
 
 ## Materials and methods
 
-## Full fly sectioning for MC
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (Drosophila melanogaster)</td>
+      <td>Luminy</td>
+      <td>Loreau et al., 2023</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Drosophila melanogaster)</td>
+      <td>sls</td>
+      <td>http://flybase.org/reports/FBgn0086906</td>
+      <td>FBgn0086906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Drosophila melanogaster)</td>
+      <td>Act88F</td>
+      <td>http://flybase.org/reports/FBgn0000047</td>
+      <td>FBgn0000047</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Drosophila melanogaster)</td>
+      <td>Act88F</td>
+      <td>http://flybase.org/reports/FBgn0000047</td>
+      <td>FBgn0000047</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Drosophila melanogaster)</td>
+      <td>TpnC4</td>
+      <td>http://flybase.org/reports/FBgn0033027</td>
+      <td>FBgn0033027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Drosophila melanogaster)</td>
+      <td>Mhc</td>
+      <td>http://flybase.org/reports/FBgn0264695</td>
+      <td>FBgn0264695</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>OCT</td>
+      <td>VWR</td>
+      <td>00411243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Gelatin</td>
+      <td>Merck</td>
+      <td>porcine skin, 300 g Bloom Type A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>SCANPY</td>
+      <td>Wolf et al., 2018; https://github.com/scverse/scanpy</td>
+      <td>RRID:SCR_018139Version: v.1.8.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Tangram</td>
+      <td>Biancalani et al., 2021; https://github.com/broadinstitute/Tangram</td>
+      <td>Version: v1.0.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>SpaGE</td>
+      <td>Abdelaal et al., 2020; https://github.com/tabdelaal/SpaGE</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Spage2Vec</td>
+      <td>Partel and Wählby, 2021; https://github.com/wahlby-lab/spage2vec</td>
+      <td>Version: v2.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Cellprofiler</td>
+      <td>Stirling et al., 2021; https://cellprofiler.org/</td>
+      <td>RRID:SCR_007358Version: v4.0.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>SpatialNF</td>
+      <td>https://github.com/aertslab/SpatialNF</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Full fly sectioning for MC
 
 To ensure full adult development, adult male Luminy flies were isolated and left for 3 d at 25 °C. After this step, the flies were put on ice for 15 min, and their wings were clipped. Flies were then transferred to a freezing mold alive, embedded in optimal cutting temperature compound (OCT compound, VWR), and frozen in liquid nitrogen. Flies were sectioned with a cryostat (Leica CM 3050 S, Leica Biosystems, Germany). 10 µm sections were transferred to coverslips coated with gelatin (porcine skin, 300 g Bloom Type A, Merck) and stored at –80 °C. Five body sections from one male were imaged with MC.
 
-## Fly head sectioning for MC
+### Fly head sectioning for MC
 
 Adult flies (male and females) were anesthetized on a fly pad using CO2 gas, to cut off their heads with a scalpel. Heads were then placed on a pre-cooled metal surface on dry ice and covered with a drop of OCT. Frozen OCT blocks were stored at –80 °C until sectioning. Head sections of 10 µm thickness were produced with a Leica CM3050 S cryostat and placed on uncoated coverslips, which were stored at –80 °C. 13 head sections from 12 different flies were imaged with MC.
 
-## Molecular Cartography (MC)
+### Molecular Cartography (MC)
 
-## Gene selection and probe design
+#### Gene selection and probe design
 
 Guided by the fly cell atlas, 150 genes were selected to be the most informative for spatial transcriptomics, 50 genes for the whole-body samples (Supplementary file 1) and 100 genes for the head samples (Supplementary file 2). These genes were selected based on different criteria including: marking specific cell populations, strong single-cell co-expression, marking uncharacterized cell populations, or showing broad expression.
 
 The probes for the selected genes were designed using Resolve Biosciences’ proprietary design algorithm. To speed up the process, the calculation of computationally expensive parts, especially the off-target searches, the selection of probe sequences was not performed randomly, but limited to sequences with high success rates. To filter highly repetitive regions, the abundance of k-mers was obtained from the background transcriptome using Jellyfish (Marçais and Kingsford, 2011). Every target sequence was scanned once for all k-mers and those regions with rare k-mers were preferred as seeds for full probe design. A probe candidate was generated by extending a seed sequence until a certain target stability was reached. A set of simple rules was applied to discard sequences that were found experimentally to cause problems. After these fast screens, every kept probe candidate was mapped to the background transcriptome using ThermonucleotideBLAST (Gans and Wolinsky, 2008), and probes with stable off-target hits were discarded. Specific probes were then scored based on the number of on-target matches (isoforms), which were weighted by their associated APPRIS level (Rodriguez et al., 2018), favoring principal isoforms over others. A bonus was added if the binding site was inside the protein-coding region. From the pool of accepted probes, the final set was composed by greedily picking the highest-scoring probes. Catalog numbers for the specific probes are available upon request at Resolve Biosciences.
 
-## Molecular Cartography
+#### Molecular Cartography
 
 Samples were then sent to Resolve Biosciences on dry ice for analysis. Upon arrival, tissue sections were thawed and rehydrated with isopropanol, followed by 1 min washes in 95% ethanol and then 70% ethanol at room temperature. The samples were used for Molecular Cartography (100-plex combinatorial single-molecule fluorescence in situ hybridization) according to the manufacturer’s instructions (protocol v.1.3; available for registered users), starting with the aspiration of ethanol and the addition of buffer DST1 followed by tissue priming and hybridization. Briefly, tissues were primed for 30  min at 37 °C followed by overnight hybridization of all probes specific for the target genes (see below for probe design details and target list). Samples were washed the next day to remove excess probes and fluorescently tagged in a two-step color development process. Regions of interest were imaged as described below and fluorescent signals were removed during decolorization. Color development, imaging, and decolorization were repeated for multiple cycles to build a unique combinatorial code for every target gene that was derived from raw images as described below.
 
-## Imaging
+#### Imaging
 
 Samples were imaged on a Zeiss Celldiscoverer 7, using the 50x Plan Apochromat water immersion objective with an NA of 1.2 and the 0.5x magnification changer, resulting in a 25x final magnification. Standard CD7 LED excitation light source, filters, and dichroic mirrors were used together with customized emission filters optimized for detecting specific signals. Excitation time per image was 1000 ms for each channel (4,6-diamidino-2-phenylindole (DAPI) was 20 ms). A z-stack was taken at each region with a distance per z-slice according to the Nyquist–Shannon sampling theorem. The custom CD7 CMOS camera (Zeiss Axiocam Mono 712) was used. For each region, a z-stack per fluorescent color (two colors) was imaged per imaging round. A total of eight imaging rounds were conducted for each position, resulting in 16 z-stacks per region. The completely automated imaging process per round (including water immersion generation and precise relocation of regions to image in all three dimensions) was realized by a custom Python script using the scripting API of the Zeiss ZEN software (open application development).
 
-## Spot segmentation
+#### Spot segmentation
 
 The algorithms for spot segmentation were written in Java and are based on the ImageJ library functionalities. The iterative closest point algorithm is written in C++ based on the libpointmatcher library (https://github.com/ethz-asl/libpointmatcher, copy archived at Pomerleau et al., 2024).
 
-## Preprocessing
+#### Preprocessing
 
 As a first step, all images were corrected for background fluorescence. A target value for the allowed number of maxima was determined based on the area of the slice in µm² multiplied by the factor 0.5. This factor was empirically optimized. The brightest maxima per plane were determined, based upon an empirically optimized threshold. The number and location of the respective maxima were stored. This procedure was conducted for every image slice independently. Maxima that did not have a neighboring maximum in an adjacent slice (called a z group) were excluded. The resulting maxima list was further filtered in an iterative loop by adjusting the allowed thresholds for (Babs - Bback) and (Bperi - Bback) to reach a feature target value (Babs: absolute brightness; Bback: local background; Bperi: background of periphery within one pixel). These feature target values were based on the volume of the three-dimensional (3D) image. Only maxima still in a z-group of at least two after filtering were passing the filter step. Each z-group was counted as one hit. The members of the z-groups with the highest absolute brightness were used as features and written to a file. They resemble a 3D point cloud.
 
-## Final signal segmentation and decoding
+#### Final signal segmentation and decoding
 
 To align the raw data images from different imaging rounds, images had to be corrected. To do so, the extracted feature point clouds were used to find the transformation matrices. For this purpose, an iterative closest-point cloud algorithm was used to minimize the error between two-point clouds. The point clouds of each round were aligned to the point cloud of round one (the reference point cloud). The corresponding point clouds were stored for downstream processes. Based on the transformation matrices, the corresponding images were processed by a rigid transformation using trilinear interpolation. The aligned images were used to create a profile for each pixel consisting of 16 values (16 images from two color channels in eight imaging rounds). The pixel profiles were filtered for variance from zero normalized by the total brightness of all pixels in the profile. Matched pixel profiles with the highest score were assigned as an ID to the pixel. Pixels with neighbors having the same ID were grouped. The pixel groups were filtered by group size, number of direct adjacent pixels in the group, and number of dimensions with a size of two pixels. The local 3D maxima of the groups were determined as potential final transcript locations. Maxima was filtered by the number of maxima in the raw data images where a maximum was expected. Remaining maxima were further evaluated by the fit to the corresponding code. The remaining maxima were written to the results file and considered to resemble transcripts of the corresponding gene. The ratio of signals matching to codes used in the experiment and signals matching to codes not used in the experiment were used as an estimate for specificity (false positives).
 
 From Resolve Biosciences, the authors received the raw DAPI signal containing tiff image files, with gene localization count tables.
 
-## Gene visualization
+#### Gene visualization
 
 Genes were plotted using Python scripts. Marker sizes were scaled by gene density to increase the visibility of patterns.
 
-## Hybridization chain reaction on fly thoraces
+### Hybridization chain reaction on fly thoraces
 
-## Thorax preparation for HCR-FISH
+#### Thorax preparation for HCR-FISH
 
 Five day old Luminy males, raised at 25 °C, were put on ice for 15 min before clipping their wings, head, and abdomen. Thoraces were then transferred in PAXgene fixative (Resolve Biosciences) for 1 hr at room temperature, followed by 2 hr in stabilization buffer (Resolve Biosciences) at room temperature and overnight in 30% sucrose in 1 x PBS at 4 °C. The next day, thoraces were transferred to OCT (VWR) and immediately frozen in liquid nitrogen. Fly thoraces were sectioned with a cryostat (Leica CM 3050 S, Leica Biosystems, Germany). 16 µm sections were transferred to slides coated with gelatin (porcine skin, 300 g Bloom Type A, Merck).
 
-## Probe design
+#### Probe design
 
 Pairs of DNA 25-mer oligos were designed to hybridize on Act88F, TpnC4, sls and Mhc transcripts. Except for TpnC4, for which we designed 12 pairs of oligos, 20 pairs were designed for each mRNA, following the principles presented by Choi et al., 2018. Sequences are provided in Supplementary file 4.
 
-## Hybridization chain reaction protocol
+#### Hybridization chain reaction protocol
 
 We followed the plated-cells protocol presented in Choi et al., 2018 with slight modifications to apply it on fly sections.
 
@@ -195,63 +382,75 @@ Day 3: wash 4×5 min with 300 µL of ‘30% probe wash buffer’ (Molecular Inst
 
 Day 4: wash 1 x with 300 µL of 5 x SSCT 5 min, stain with DAPI for 30 min, and wash for 5 min with 300 µL of 5 x SSCT at room temperature and mount in glycerol DABCO.
 
-## Imaging of fly thoraces
+#### Imaging of fly thoraces
 
 Thoraces were imaged with a point scanning confocal microscope (Leica SP8) using a 20×0.75 NA glycerol immersion objective (Leica HC CS2 Plan Apo 20x0.75 NA Imm).
 
-## Clustering analysis of mRNA species based on proximity
+### Clustering analysis of mRNA species based on proximity
 
 Based on the observation that groups of mRNA species appeared to cluster into separated regions of sections, we devised a simple method to automatically extract these regions based on the proximity of different mRNA. mRNA species that were identified as being close were then gathered into the same cluster.
 
-In practice, we first computed the proximity of mRNA species by pair (see Figure 2—figure supplement 3). Each localization of two mRNA species was transformed into disks of fixed diameters, each disk being centered on a given mRNA localization; the diameter used here was 4 µm. To generate one surface for a species and avoid counting multiple times the same area, disks of a given mRNA species were merged if they were overlapping. We then computed their overlap surface from the surfaces obtained from two different mRNA species. The proximity of one mRNA species (mRNA1) versus the other one (mRNA2) was defined as the ratio between the overlap surface and the surface of the second mRNA species (mRNA2):ProximitymRNA1in2=OverlapmRNA1and2SurfacemRNA2
+In practice, we first computed the proximity of mRNA species by pair (see Figure 2—figure supplement 3). Each localization of two mRNA species was transformed into disks of fixed diameters, each disk being centered on a given mRNA localization; the diameter used here was 4 µm. To generate one surface for a species and avoid counting multiple times the same area, disks of a given mRNA species were merged if they were overlapping. We then computed their overlap surface from the surfaces obtained from two different mRNA species. The proximity of one mRNA species (mRNA1) versus the other one (mRNA2) was defined as the ratio between the overlap surface and the surface of the second mRNA species (mRNA2):
 
-Reciprocally,ProximitymRNA2in1=OverlapmRNA1and2SurfacemRNA1
+$$
+ProximitymRNA_{1in2}=\frac{OverlapmRNA_{1and2}}{SurfacemRNA_{2}}
+$$
 
-The calculation of proximity then allowed us to define a distance between two mRNA species:DistancemRNA1and2=2−(ProximitymRNA1in2+ProximitymRNA2in1)
+Reciprocally,
+
+$$
+ProximitymRNA_{2in1}=\frac{OverlapmRNA_{1and2}}{SurfacemRNA_{1}}
+$$
+
+The calculation of proximity then allowed us to define a distance between two mRNA species:
+
+$$
+DistancemRNA_{1and2}=2−(ProximitymRNA_{1in2}+ProximitymRNA_{2in1})
+$$
 
 mRNA species that show perfect overlap get a distance of 0 in this metric, whereas mRNA species that do not show any overlap would get a distance of 2.
 
 Finally, this metric was used in a hierarchical clustering analysis using Ward’s method. Clusters were then extracted from this analysis.
 
-## 5 µm × 5 µm grid analysis
+### 5 µm × 5 µm grid analysis
 
-## Quantification
+#### Quantification
 
 Samples were rasterized in a square grid of 36 by 36 pixels (1 pixel = 0.138 µm, 36 pixels = 4.968 µm). All counts within this area were summed up. This led to a square by gene matrix, with for every square the mean x and y spatial coordinates of the square’s dimensions.
 
-## SCANPY body
+#### SCANPY body
 
 All body samples (5) were analyzed together in SCANPY (1.9.3) (Wolf et al., 2018). An increment of 1000 was added to both spatial x- and y-coordinates to arrange all samples together. Only squares with more than three counts were kept, leading to 132,642 squares with information for 50 genes. The data was subsequently normalized with 10,000 as size factor and log transformed. This matrix was then used as input for PCA, after which 40 components were retained by evaluating variance ratio plots. Harmony was then used to correct for batch effects between samples. 30 PCs were used to calculate neighbors, Leiden clustering (resolutions 0.2, 0.5, 1, and 2) and UMAP embeddings.
 
-## SCANPY head
+#### SCANPY head
 
 All head samples (13) were analyzed together in SCANPY (1.9.3) (Wolf et al., 2018). An increment of 1000 was added to both spatial x- and y-coordinates to arrange all samples together. Only squares with more than three counts were kept, leading to 83,064 squares with information for 99 genes (ninaE was discarded from most samples due to optical crowding). The data was subsequently normalized with 10,000 as size factor and log transformed. This matrix was then used as input for PCA, after which 30 components were retained by evaluating variance ratio plots. Harmony was then used to correct for batch effects between samples. 25 PCs were used to calculate neighbors, Leiden clustering (resolutions 0.2, 0.5, 1, and 2) and UMAP embeddings.
 
-## Head OL vs CB vs PR differential expression
+#### Head OL vs CB vs PR differential expression
 
 Leiden resolution 1 was used to create average gene expression profiles for clusters. Clusters with mean expression of para >0.05 were selected as neuronal clusters. These were subsequently manually assigned to either Photoreceptor (PR), Optic lobe (OL), or Central brain (CB) regions based on location. Next, the rank_genes_groups function from SCANPY was used to calculate differential genes for the regions based on a t-test.
 
-## Gene set enrichment
+#### Gene set enrichment
 
 In the body, we selected marker genes that were assigned to several categories. We then summed the expression of genes belonging to the same category to derive gene set signatures. The following gene sets were used: muscle (Mhc, sls, CG32121), neurons (elav, Syt1, Sh, acj6, ey, VAChT, Gad1, VGlut, nAChRalpha7), glia (repo, alrm), epithelia (pure: grh, hth, gut: alphaTry, betaTry), heart (tin, Hand), fat body (AkhR, FASN2), oenocyte (FASN2), male reproductive system (Awh, eyg, svp) and hemocytes (Hml). Spots in the grid were assigned to a category based on Z-scores. If z-normalized expression >1, the spot was assigned to the category. When conflicts arose, the following hierarchy was used: muscle > epithelia > glia > neurons > male reproductive system > fat body > oenocyte > hemocyte > heart.
 
-## Lasso matching
+#### Lasso matching
 
 We used lasso regression as implemented in sklearn (1.2.2). Averaged gene expression profiles of single-cell clusters were matched with expression profiles of the grid-based squares. The regression model was run using Lasso (alpha = 1, positive = True), forcing all coefficients to be positive, with all genes. Higher weights for the single-cell clusters correspond to a higher similarity between the cluster and the square. We only used weights >0.2 as confident matches. Spots were then assigned to the cluster based on the highest weight.
 
-## Nuclei segmentation
+### Nuclei segmentation
 
 Nuclei in DAPI images were segmented with Cellprofiler (version 4.0.7) (Stirling et al., 2021). Features of the DAPI images were enhanced (EnhanceOrSuppressFeatures, Enhance, Speckles) using a feature size of 100 pixels. Initial nuclei were detected using a size of 10–100 pixels, global Otsu thresholding with two classes, intensity for distinguishing clumped objects, propagate for drawing dividing lines. Initial nuclei were extended by 25 pixels. We then collected all transcripts inside a segmented cell to compute counts of each gene per segmented cell.
 
-## Tangram
+### Tangram
 
 Tangram (version 1.0.2) (Biancalani et al., 2021) was used to project cell type labels from single-cell data. Here, we used the cell mapping mode to map single-cell data to each spatial slice separately. The mapping was computed on a NVIDIA A100-SXM4-80GB GPU. Prior to computing the mapping, segmented cells with less than three expressed genes and genes that were expressed in less than three cells were removed. Single cells and segmented cells were log-normalized in SCANPY (Wolf et al., 2018) with a target-sum of 104. All genes that are shared between the spatial data and single-cell data after filtering were used for the mapping. Cell type labels for fly head samples were assigned separately for glia, optic lobe (OL), central brain (CB), and unknown clusters (UNK) by considering only the subset cell types that we grouped into the category. A cell type label was assigned to a segmented cell based on the 95%-quantile of the mapping scores for a cell type (unless stated otherwise) if this resulted in a unique label assignment. Cell type labels for the grid rasterized spatial data were assigned in the same manner as we did for the segmented cells. The only exception being, that we down-sampled the number of cells to a maximum of 5000 cells per cell type in the single-cell data to limit the amount of required video memory.
 
-## Neighborhood embedding and SpaGE
+### Neighborhood embedding and SpaGE
 
 Segmentation-free analysis of fly head and body SRT datasets have been carried out using spage2vec (Partel and Wählby, 2021). Briefly, spatial graphs of all mRNAs are first constructed for each different sample. Then, a graph convolution neural network trained in a self-supervised fashion projects each mRNA into an embedding space based on its spatial neighborhood composition. Thus, mRNAs that share similar neighbors are mapped close together in the embedding space. Downstream clustering or visualization of mRNA embeddings unveil spatial gene expression patterns described by specific combinations of genes at subcellular resolution. Pseudo-cell counts have been generated for each mRNA by aggregating counts of k neighboring mRNAs (i.e. k=100) in the embedding space. Finally, integration of reference scRNA-seq datasets with spatial pseudo-cell counts has been implemented by projecting both datasets into a common shared space using SpaGE (Abdelaal et al., 2020). Thereafter, cell type labels have been transferred from scRNA-seq cells to spatial pseudo-cells by kNN imputation (with k=100).
 
-## mRNA localization in muscle - distance to nuclei
+### mRNA localization in muscle - distance to nuclei
 
 For every detected mRNA molecule, the distance to the closest nucleus was calculated. First, we calculated a mask to segment the indirect flight muscle using Act88F mRNA spots. Using opencv2, we performed a Gaussian blur (ksize = 5 5, sigma = 1), followed by two erosion steps (5×5 and 4×4) to remove sparse signals. Then, the spots were dilated thrice (50×50), followed by a final Gaussian blur (ksize = 5×5, sigma = 1). Only other mRNA species that overlap with this mask were kept for the distance analysis.
 

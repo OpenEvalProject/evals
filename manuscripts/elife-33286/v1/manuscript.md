@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.33286.001 Caenorhabditis elegans produces ascaroside pheromones to control its development and behavior. Even minor structural differences in the ascarosides have dramatic consequences for their biological activities. Here, we identify a mechanism that enables C. elegans to dynamically tailor the fatty-acid side chains of the indole-3-carbonyl (IC)-modified ascarosides it has produced. In response to starvation, C. elegans uses the peroxisomal acyl-CoA synthetase ACS-7 to activate the side chains of medium-chain IC-ascarosides for β-oxidation involving the acyl-CoA oxidases ACOX-1.1 and ACOX-3. This pathway rapidly converts a favorable ascaroside pheromone that induces aggregation to an unfavorable one that induces the stress-resistant dauer larval stage. Thus, the pathway allows the worm to respond to changing environmental conditions and alter its chemical message without having to synthesize new ascarosides de novo. We establish a new model for biosynthesis of the IC-ascarosides in which side-chain β-oxidation is critical for controlling the type of IC-ascarosides produced.
+Caenorhabditis elegans produces ascaroside pheromones to control its development and behavior. Even minor structural differences in the ascarosides have dramatic consequences for their biological activities. Here, we identify a mechanism that enables C. elegans to dynamically tailor the fatty-acid side chains of the indole-3-carbonyl (IC)-modified ascarosides it has produced. In response to starvation, C. elegans uses the peroxisomal acyl-CoA synthetase ACS-7 to activate the side chains of medium-chain IC-ascarosides for β-oxidation involving the acyl-CoA oxidases ACOX-1.1 and ACOX-3. This pathway rapidly converts a favorable ascaroside pheromone that induces aggregation to an unfavorable one that induces the stress-resistant dauer larval stage. Thus, the pathway allows the worm to respond to changing environmental conditions and alter its chemical message without having to synthesize new ascarosides de novo. We establish a new model for biosynthesis of the IC-ascarosides in which side-chain β-oxidation is critical for controlling the type of IC-ascarosides produced.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ Here, we show that the role of the acyl-CoA synthetase ACS-7 is not to attach th
 
 ## Results
 
-## Attachment of the IC group during ascaroside biosynthesis
+### Attachment of the IC group during ascaroside biosynthesis
 
 Previously, it has been shown that daf-22 worms, which cannot make any short- or medium-chain ascarosides, can attach the IC group to exogenously provided synthetic asc-C9 to produce IC-asc-C9 (structures shown in Figure 1A,B and Figure 2A) (von Reuss et al., 2012). It was also shown that daf-22 worms can attach the IC group to exogenously provided asc-ΔC9 (ascr#3) to produce IC-asc-ΔC9 (von Reuss et al., 2012). To determine whether C. elegans could attach the IC group to other ascarosides, we cultured daf-22 worms with ascarosides of various side-chain lengths (Figure 2A). These data suggest that the unknown enzyme that attaches the IC group specifically prefers ascarosides with side chains of 8–11 carbons in length (Figure 2B). Recently, Panda et al. indicated that they were also able to detect the conversion by daf-22 worms of asc-C7 (ascr#1) to IC-asc-C7 (icas#1) (Panda et al., 2017). Although we were also able to detect a peak on the LC-MS representing this conversion, the amount of IC-asc-C7 produced was so small relative to background that it could not be quantified. Thus, we conclude that C. elegans does not preferentially attach the IC group to ascarosides with C5 or C7 side chains. On the other hand, C. elegans can make the corresponding IC-ascarosides, IC-asc-C5 and IC-asc-C7. Therefore, we speculated that these short chain IC-ascarosides could potentially be made from medium-chain IC-ascarosides, such as IC-asc-C9, which have their side chains shortened through β-oxidation.
 
@@ -45,7 +45,7 @@ Previously, it has been shown that daf-22 worms, which cannot make any short- or
 
 **Figure 2.:** (A) Possible attachment of the IC group to ascarosides with different side-chain lengths (C5–C13). (B) Percent conversion of each ascaroside to the corresponding IC-ascaroside by daf-22(m130) worms. Data represent the mean ± SD of three independent experiments.
 
-## Role of ACS-7 in activating medium-chain IC-ascarosides
+### Role of ACS-7 in activating medium-chain IC-ascarosides
 
 The acyl-CoA synthetase ACS-7 has been reported to be required for biosynthesis of the short-chain IC-ascaroside, IC-asc-C5. Panda et al. hypothesized that this enzyme was involved in direct attachment of the IC group to the 4’-position of the ascarylose sugar of asc-C5 (Figure 1A) (Panda et al., 2017). They were able to show that ACS-7 activates ICA as the AMP-ester, IC-AMP (Figure 1A). However, they were not able to show that ACS-7 promotes conversion of IC-AMP to the corresponding CoA-thioester, IC-CoA, or that it leads to the reaction of IC-CoA with asc-C5 (Figure 1A). Furthermore, the KM of ACS-7 for ICA (in the one-step reaction to produce IC-AMP) is 270 ± 90 μM (Panda et al., 2017), which is much higher than the KM values of acyl-CoA synthetases from other organisms (in the two-step reaction to produce an acyl-CoA) that are generally in the low μM range (Hall et al., 2003; Van Horn et al., 2005).
 
@@ -59,21 +59,49 @@ ACS-7 showed very little activity towards ICA, the putative substrate reported b
 
 To determine the substrate specificity of ACS-7, we tested it against a panel of substrates, including IC-ascarosides (IC-asc-C5, IC-asc-C7, IC-asc-ΔC9, and IC-asc-C9), ascarosides (asc-C7, asc-ΔC9, and asc-C9), and fatty acids (fatty acid-C7 and fatty acid-C9). These data show that ACS-7 strongly prefers IC-modified ascarosides over simple ascarosides, demonstrating that it is specifically involved in activation of IC-modified ascarosides for β-oxidation (Figure 3D). ACS-7 activates the longer-chain substrates (IC-asc-C7 and IC-asc-C9), but not short-chain substrates (IC-asc-C5), consistent with its role in shortening the longer-chain substrates. ACS-7 can activate fatty acids with medium-length side chains, but not short side chains. Although it is unclear whether the reaction of ACS-7 with fatty acids is physiologically relevant, it could potentially indicate that ACS-7 also plays a role in fatty-acid metabolism, in addition to ascaroside biosynthesis. The KM of ACS-7 for IC-asc-C9 is 14.5 ± 3.0 μM, the kcat is 0.53 ± 0.08 s−1, and the kcat/KM is 36,300 ± 9,200 M−1 s−1.
 
-## Role of acox-1.1 and acox-3 in processing of IC-ascarosides
+### Role of acox-1.1 and acox-3 in processing of IC-ascarosides
 
 Analysis of ascaroside production in acyl-CoA oxidase mutants suggests that β-oxidation does play a role in production of the IC-ascarosides. We have shown that ACOX-1.1 and ACOX-3 work together in the β-oxidation cycles that shorten ascarosides with 15-carbon and 13-carbon side chains (Zhang et al., 2018). Analysis of the ascarosides produced by acox-1.1 and acox-3 mutant worms indicates that these acyl-CoA oxidases also play a role in biosynthesis of short-chain IC-ascarosides. The amounts of the ascarosides and corresponding IC-ascarosides in wild-type, acox-1.1, acox-3, and acox-1.1;acox-3 worms suggest that production of these two groups of ascarosides does not always correlate (Figure 4). Thus, it is unlikely that the IC group is directly added to short-chain ascarosides to make the corresponding IC-ascarosides. The acox-1.1(ok2257) deletion mutant shows an accumulation of IC-asc-C7, indicating that ACOX-1.1 may function in the β-oxidation cycle that shortens a seven-carbon IC-ascaroside to a five-carbon IC-ascaroside (Figure 4). The acox-3(tm4033) deletion mutant shows decreased production of IC-asc-C5, but increased accumulation of IC-asc-C7 and IC-asc-ΔC9 (Figure 4, Figure 4—figure supplement 1). Thus, like ACOX-1.1, ACOX-3 may function in the β-oxidation cycle that shortens a seven-carbon IC-ascaroside to a five-carbon IC-ascaroside. The ascaroside profile of the acox-1.1(ok2257);acox-3(tm4033) double deletion mutant is quite striking in that production of IC-asc-C5 is completely abolished, while the amount of IC-asc-C7 is increased relative to wild type (Figure 4). The amount of IC-asc-C7 is increased despite the amount of asc-C7 being decreased, indicating that production of the ascarosides and IC-ascarosides are independently regulated. These data thus provide further evidence that ACOX-1.1 and ACOX-3 participate in a β-oxidation cycle that shortens IC-asc-C7 to IC-asc-C5.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/33286/elife-33286-fig4-v1.jpg)
+
+**Figure 4.:** Comparison of ascaroside and corresponding IC-ascaroside production in wild type, the acox-1.1(ok2257) deletion mutant, the acox-3(tm4033) deletion mutant, and the acox-1.1(ok2257);acox-3(tm4033) double deletion mutant. Data represent the mean ± SD of three independent experiments. Two-tailed, unpaired t-tests were used to determine statistical significance (*p≤0.05, **p≤0.01, ***p≤0.001).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33286/elife-33286-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Log ratio of ascaroside production in wild type and mutants, relative to wild type. For ascarosides that could not be detected, their peak area was set at the detection limit of the LC-MS. Data represent the mean ± SD of three independent experiments.
+
 We used CRISPR-Cas9 to generate an acox-1.1(reb2[E434A]) catalytic mutant strain, in which the ACOX-1.1 enzyme is mutated in a glutamate in the active site that is important for catalytic activity (Zhang et al., 2018). This strain shows an accumulation of IC-asc-C7, indicating that ACOX-1.1’s catalytic activity contributes to the shortening of IC-ascarosides (Figure 4—figure supplement 1). In addition to ACOX-1.1 and ACOX-3, ACOX-1.4 may also contribute to the β-oxidation of IC-ascarosides. An acox-1.4(reb6[E433A]) catalytic mutant strain that we generated through CRISPR-Cas9, as well as an acox-1.4(tm6415) deletion mutant strain and an acox-1.4(gk892586) nonsense mutant strain, did not show defects in IC-ascaroside biosynthesis. However, examination of the acox-1.1(reb2[E434A]);acox-1.4(reb6[E433A]);acox-3(tm4033) triple mutant shows that all three genes contribute to the β-oxidation cycle that shortens IC-asc-C9 to IC-asc-C7, as well as the β-oxidation cycle that shortens IC-asc-C7 to IC-asc-C5 (Figure 4—figure supplement 1).
 
-## In vitro activity of ACOX-1.1 and ACOX-3 in β-oxidation of IC-ascarosides
+### In vitro activity of ACOX-1.1 and ACOX-3 in β-oxidation of IC-ascarosides
 
 To provide direct evidence for the role of ACOX-1.1 and ACOX-3 in biosynthesis of the IC-ascarosides, the two enzymes were expressed in E. coli and purified to assay their activity. Unfortunately, ACOX-1.4 could not be expressed in E. coli despite repeated attempts. In an LC-MS-based activity assay, the acyl-CoA oxidases, as well as MAOC-1, DHS-28, and DAF-22, were incubated with IC-asc-C9-CoA (Figure 5A,B; Figure 5—figure supplement 1). ACOX-1.1 and ACOX-3 both enabled the conversion of IC-asc-C9-CoA to IC-asc-C5-CoA. On the other hand, ACOX-1.2, which has a small active site and strictly prefers short-chain substrates (Zhang et al., 2015; Zhang et al., 2016), was inactive in this assay (Figure 5A). Under the assay conditions, the CoA-thioester bond was gradually cleaved, and thus, in the control and ACOX-1.2 reactions, unreacted IC-asc-C9-CoA substrate was gradually hydrolyzed to IC-asc-C9. Conversely, in the ACOX-1.1 and ACOX-3 reactions, IC-asc-C9-CoA was converted to IC-asc-C5-CoA, which was partially hydrolyzed to IC-asc-C5 (Figure 5A).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/33286/elife-33286-fig5-v1.jpg)
+
+**Figure 5.:** (A) Reaction of IC-asc-C9-CoA with ACOX-1.1, ACOX-1.2, or ACOX-3, in the presence of the additional β-oxidation enzymes, MAOC-1, DHS-28, and DAF-22, as monitored by LC-MS. Chemical structures are shown in (B). Data represent the mean ± SD of three independent experiments. Two-tailed, unpaired t-tests were used to determine statistical significance (*p≤0.05, **p≤0.01, ***p≤0.001). (B) Proposed role for ACOX-1.1 and ACOX-3 in the β-oxidation of IC-asc-C9-CoA to IC-asc-C5-CoA. (C) Activity of ACOX-1.1 in a coupled enzyme assay against the CoA-thioesters of fatty acids (fatty acid-C9-CoA and fatty acid-C12-CoA), ascarosides (asc-C9-CoA and asc-C13-CoA), and IC-modified ascarosides (IC-asc-C7-CoA and IC-asc-C9-CoA). Data represent the mean ± SD of three independent experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33286/elife-33286-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Structures with key product ions indicated (left) and MS-MS spectrum (right) for IC-asc-C7-CoA (A), IC-asc-C9-CoA (B), and asc-C13-CoA (C).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/33286/elife-33286-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Activity was monitored using the peroxidase-coupled in vitro activity assay. Data represent the mean ± SD of three independent experiments.
+
 To further investigate the substrate preferences of the acyl-CoA oxidases, the enzymes were assayed in an enzyme-coupled assay in the presence of peroxidase, which can use the H2O2 produced by the reaction to generate a UV-active product. ACOX-1.1 was almost as active towards IC-asc-C7-CoA as it was towards its preferred ascaroside substrate, asc-C9-CoA (Figure 5C; Figure 5—figure supplement 1). It also showed activity towards IC-asc-C9-CoA, but less than towards IC-asc-C7-CoA. Unfortunately, ACOX-3 showed low activity towards all substrates tested in this assay, including another one of its preferred ascaroside substrates, asc-C13-CoA (Zhang et al., 2018). This result may suggest that ACOX-3 requires other β-oxidation enzymes to be fully active (Figure 5—figure supplement 2).
 
-## Expression pattern of ACS-7, ACOX-1.1, and ACOX-3 in C. elegans
+### Expression pattern of ACS-7, ACOX-1.1, and ACOX-3 in C. elegans
 
 It has been shown previously that ACS-7 is expressed in the lysosome, where it was thought to contribute to IC-ascaroside biosynthesis (Panda et al., 2017). Because our data show that ACS-7 activates the side chains of medium-chain IC-ascarosides for peroxisomal β-oxidation, we hypothesized that ACS-7 must be expressed in the peroxisome. Indeed, ACS-7 has a PTS1-type peroxisomal localization signal. Furthermore, when we tested the enzymatic activity of ACS-7, we found that the enzyme was active at neutral pH, but not at the pH found in the lysosome (pH 5.0). To determine the localization pattern of ACS-7, we generated translational reporter constructs for ACS-7, ACOX-3, as well as ACOX-1.1, which was previously shown to be localized to the peroxisome (Joo et al., 2010). Co-injection of these constructs into wild-type C. elegans showed that all three proteins are expressed in a punctate pattern in the intestine (Figure 6A,B). In addition, the intestinal expression pattern of ACS-7 overlaps with that of ACOX-1.1 and ACOX-3 (Figure 6A,B). Some GFP signal is occasionally seen in LROs, especially in older worms (Figure 6—figure supplement 1A,B). However, we believe that this GFP signal is caused by autofluorescence of the LROs (Hermann et al., 2005) because (1) it only becomes prominent on prolonged bleaching of the worms under the fluorescent microscope, and (2) it is also observed in wild-type (N2) worms that have not been injected with the Pasc-7::gfp::acs-7 reporter. (Figure 6—figure supplement 1C–E). RNAi against prx-13, which is a component of the peroxisomal import machinery (Thieringer et al., 2003), leads to a diffuse pattern of expression for ACOX-1.1 and ACS-7 in the intestine, providing further evidence that these enzymes are localized to the peroxisome (Figure 6C,D). Thus, ACS-7 likely participates in biosynthesis of the IC-ascarosides in the peroxisome rather than lysosome.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/33286/elife-33286-fig6-v1.jpg)
+
+**Figure 6.:** (A) Co-injection of plasmids containing Pacox-1.1::mcherry::acox-1.1 and Pacs-7::gfp::acs-7 into wild-type worms shows that ACOX-1.1 and ACS-7 co-localize in a punctate pattern in the intestine. (B) Co-injection of plasmids containing Pacox-1.1::mcherry::acox-1.1 and Pacox-3::gfp::acox-3 into wild-type worms shows that ACOX-1.1 and ACOX-3 co-localize in a punctate pattern in the intestine. (C) RNAi using the control plasmid L4440 in Pacox-1.1::mcherry::acox-1.1;Pacs-7::gfp::acs-7 worms gives a punctate pattern of expression in the intestine. (D) RNAi against prx-13 in Pacox-1.1::mcherry::acox-1.1; Pacs-7::gfp::acs-7 worms gives a diffuse pattern of expression in the intestine. In (A–D), L4 to young adult stage worms were imaged. Scale bar = 20 μm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/33286/elife-33286-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Staining of Pacs-7::gfp::acs-7 L4 worms with LysoTracker Red dye. (B) Staining of Pacs-7::gfp::acs-7 adult worms with LysoTracker Red dye. (C,D) Staining of Pacs-7::gfp::acs-7 adult worms with LysoTracker Red dye, before (C) and after (D) bleaching the GFP signal under the fluorescent microscope. Bleaching in (C) selectively eliminates peroxisomal GFP while making lysosomal autofluoresence more prominent. (E) Staining of wild-type (N2) worms with LysoTracker Red dye. In (A–E), peroxisomes are indicated with arrows and lysosomes are indicated with triangles. In (A), L3 worms are imaged, and in (B–E), L4 to adult worms are imaged. Scale bar = 20 μm.
 
 ## Discussion
 
@@ -87,35 +115,336 @@ In contrast to previous reports that suggested ACS-7 is localized to the lysosom
 
 ## Materials and methods
 
-## C. elegans strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="11">Gene (C. elegans)</td>
+      <td>acox-1.1</td>
+      <td></td>
+      <td>WBGene00008564</td>
+      <td>Other names: CELE_F08A8.1, acox-1</td>
+    </tr>
+    <tr>
+      <td>acox-1.2</td>
+      <td></td>
+      <td>WBGene00008565</td>
+      <td>Other names: CELE_F08A8.2, acox-2, drd-100</td>
+    </tr>
+    <tr>
+      <td>acox-1.3</td>
+      <td></td>
+      <td>WBGene00008566</td>
+      <td>Other names: CELE_F08A8.3, acox-3</td>
+    </tr>
+    <tr>
+      <td>acox-1.4</td>
+      <td></td>
+      <td>WBGene00008567</td>
+      <td>Other names: CELE_F08A8.4, acox-4</td>
+    </tr>
+    <tr>
+      <td>acox-1.5</td>
+      <td></td>
+      <td>WBGene00008167</td>
+      <td>Other names: CELE_C48B4.1, acox-5, drd-51</td>
+    </tr>
+    <tr>
+      <td>acox-1.6</td>
+      <td></td>
+      <td>WBGene00010336</td>
+      <td>Other names: CELE_F59F4.1, acox-6</td>
+    </tr>
+    <tr>
+      <td>acox-3</td>
+      <td></td>
+      <td>WBGene00019060</td>
+      <td>Other names: CELE_F58F9.7, acox-6</td>
+    </tr>
+    <tr>
+      <td>acs-7</td>
+      <td></td>
+      <td>WBGene00007228</td>
+      <td>Other name: CELE_C01G6.7</td>
+    </tr>
+    <tr>
+      <td>maoc-1</td>
+      <td></td>
+      <td>WBGene00017123</td>
+      <td>Other name: CELE_E04F6.3</td>
+    </tr>
+    <tr>
+      <td>dhs-28</td>
+      <td></td>
+      <td>WBGene00000991</td>
+      <td>Other name: CELE_M03A8.1</td>
+    </tr>
+    <tr>
+      <td>daf-22</td>
+      <td></td>
+      <td>WBGene00013284</td>
+      <td>Other name: CELE_Y57A10C.6</td>
+    </tr>
+    <tr>
+      <td>Gene (M. tuberculosis)</td>
+      <td>fadD6</td>
+      <td></td>
+      <td>Gene ID: 887549</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="17">Strains (C. elegans)</td>
+      <td>N2</td>
+      <td>CGC</td>
+      <td>RRID:WB-STRAIN:N2_(ancestral)</td>
+      <td>wild type (Bristol)</td>
+    </tr>
+    <tr>
+      <td>RAB1</td>
+      <td>doi: 10.1021/acschembio.7b01021</td>
+      <td></td>
+      <td>backcrossed VC1785 acox-1.1(ok2257)I</td>
+    </tr>
+    <tr>
+      <td>RAB21</td>
+      <td>doi: 10.1021/acschembio.7b01021</td>
+      <td></td>
+      <td>backcrossed acox-1.4(tm6415)I</td>
+    </tr>
+    <tr>
+      <td>VC40449</td>
+      <td>CGC</td>
+      <td>RRID:WB-STRAIN:VC40449</td>
+      <td>acox-1.4(gk892586)I</td>
+    </tr>
+    <tr>
+      <td>RAB22</td>
+      <td>doi: 10.1021/acschembio.7b01021</td>
+      <td></td>
+      <td>backcrossed acox-3(tm4033)IV</td>
+    </tr>
+    <tr>
+      <td>DR476</td>
+      <td>CGC</td>
+      <td>RRID:WB-STRAIN:DR476</td>
+      <td>daf-22(m130)II</td>
+    </tr>
+    <tr>
+      <td>RAB24</td>
+      <td>doi: 10.1021/acschembio.7b01021</td>
+      <td></td>
+      <td>acox-1.1(reb2[E434A])I</td>
+    </tr>
+    <tr>
+      <td>RAB28</td>
+      <td>doi: 10.1021/acschembio.7b01021</td>
+      <td></td>
+      <td>acox-1.4(reb6[E433A])I</td>
+    </tr>
+    <tr>
+      <td>RAB30</td>
+      <td>doi: 10.1021/acschembio.7b01021</td>
+      <td></td>
+      <td>acox-1.1(ok2257)I; acox-3(tm4033)IV</td>
+    </tr>
+    <tr>
+      <td>RAB31</td>
+      <td>doi: 10.1021/acschembio.7b01021</td>
+      <td></td>
+      <td>acox-1.1(reb2[E434A])I; acox-1.4(reb6[E433A])I</td>
+    </tr>
+    <tr>
+      <td>RAB32</td>
+      <td>doi: 10.1021/acschembio.7b01021</td>
+      <td></td>
+      <td>acox-1.1(reb2[E434A])I; acox-3(tm4033)IV</td>
+    </tr>
+    <tr>
+      <td>RAB35</td>
+      <td>this paper</td>
+      <td></td>
+      <td>acox-1.4(reb6[E433A])I; acox-3(tm4033)IV</td>
+    </tr>
+    <tr>
+      <td>RAB36</td>
+      <td>this paper</td>
+      <td></td>
+      <td>acox-1.1(reb2[E434A])I; acox-1.4(reb6[E433A])I; acox-3(tm4033)IV</td>
+    </tr>
+    <tr>
+      <td>RAB37</td>
+      <td>this paper</td>
+      <td></td>
+      <td>rebEx11 (Pacs-7::gfp::acs-7)</td>
+    </tr>
+    <tr>
+      <td>RAB38</td>
+      <td>this paper</td>
+      <td></td>
+      <td>rebEx12 (Pacox-1.1::mcherry::acox-1.1; Pacs-7::gfp::acs-7)</td>
+    </tr>
+    <tr>
+      <td>RAB39</td>
+      <td>this paper</td>
+      <td></td>
+      <td>rebEx13 (Pacox-1.1::mcherry::acox-1.1; Pacox-3::gfp::acox-3)</td>
+    </tr>
+    <tr>
+      <td>RAB40</td>
+      <td>this paper</td>
+      <td></td>
+      <td>rebEx14 (Pacox-1.1::mcherry::acox-1.1; Pacs-7::gfp::acs-7)</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Plasmids for protein expression</td>
+      <td>pET-22b-acs-7</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'ACS-7 expression and mutagenesis'</td>
+    </tr>
+    <tr>
+      <td>pET-22b-acs-7(E339A)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'ACS-7 expression and mutagenesis'</td>
+    </tr>
+    <tr>
+      <td>pET-22b-acs-7(E339A,S186A,S187A)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'ACS-7 expression and mutagenesis'</td>
+    </tr>
+    <tr>
+      <td>pET-16b-acox-1.1a</td>
+      <td>doi: 10.1073/pnas.1423951112</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pET-16b-acox-1.2</td>
+      <td>doi: 10.1073/pnas.1423951112</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pET-16b-acox-3</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'β-oxidation enzyme expression'</td>
+    </tr>
+    <tr>
+      <td>pACYCDuet-1-maoc-1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'β-oxidation enzyme expression'</td>
+    </tr>
+    <tr>
+      <td>pACYCDuet-1-dhs-28Δscp-2</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'β-oxidation enzyme expression'</td>
+    </tr>
+    <tr>
+      <td>pET-16b-daf-22</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'β-oxidation enzyme expression'</td>
+    </tr>
+    <tr>
+      <td>pET-28a-fadD6</td>
+      <td>doi: 10.1021/acschembio.7b01021</td>
+      <td></td>
+      <td>Cloning described in 'Synthesis of CoA-thioesters'</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Plasmids for generating transgenic strains</td>
+      <td>pPD114.108-Pacox-1.1::mcherry::acox-1.1</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'ACOX-1.1, ACOX-3, and ACS-7 localization and RNAi'</td>
+    </tr>
+    <tr>
+      <td>pPD114.108-Pacs-7::gfp::acs-7</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'ACOX-1.1, ACOX-3, and ACS-7 localization and RNAi'</td>
+    </tr>
+    <tr>
+      <td>pPD114.108-Pacox-3::gfp::acox-3</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Cloning described in 'ACOX-1.1, ACOX-3, and ACS-7 localization and RNAi'</td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Q5 Site-Directed Mutagenesis Kit</td>
+      <td>New England Biolabs</td>
+      <td>E0554S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Commercial enzymes</td>
+      <td>adenylate kinase</td>
+      <td>Sigma</td>
+      <td>M3003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pyruvate kinase and lactate dehydrogenase</td>
+      <td>Sigma</td>
+      <td>P0294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial compounds</td>
+      <td>LysoTracker Red (Deep Red)</td>
+      <td>Thermo Fisher</td>
+      <td>L12492</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans strains
 
 The following strains were used: wild-type (N2, Bristol), RAB1 acox-1.1(ok2257) I, RAB24 acox-1.1(reb2[E434A]) I, RAB28 acox-1.4(reb6[E433A]) I, RAB21 acox-1.4(tm6415) I, VC40944 acox-1.4(gk892586) I, RAB22 acox-3(tm4033) IV, RAB30 acox-1.1(ok2257);acox-3(tm4033), RAB31 acox-1.1(reb2[E434A]);acox-1.4(reb6[E433A]), RAB32 acox-1.1(reb2[E434A]);acox-3(tm4033), RAB35 acox-1.4(reb6[E433A]);acox-3(tm4033), RAB36 acox-1.1(reb2[E434A]);acox-1.4(reb6[E433A]); acox-3(tm4033), DR476 daf-22(m130) II. The acox-1.1(ok2257), acox-1.4(tm6415), and acox-3(tm4033) strains were backcrossed four or six times. The acox-1.1(reb2[E434A]), acox-1.4(reb6[E433A]), and acox-1.1(reb2[E434A]);acox-1.4(reb6[E433A]) mutants were generated using CRISPR-Cas9 and backcrossed two to six times (Zhang et al., 2018). All CRISPR-Cas9 mutants were made using the Fire laboratory’s marker-free CRISPR protocol (Arribere et al., 2014; Kim et al., 2014; Cong and Zhang, 2015; Farboud and Meyer, 2015).
 
-## In vivo attachment of the IC group to ascarosides
+### In vivo attachment of the IC group to ascarosides
 
 Cultures were grown similar to a previously published method (von Reuss et al., 2012), but with modifications. daf-22(m130) worms from one 10 cm NGM plate (seeded with 0.75 mL 25X OP50) were collected after the bacteria were completely consumed and transferred to a 25 mL pre-culture, feeding with 10 mL 25X OP50 on day 1 and day 3. On day 4, 1.25 mL of the pre-culture was transferred to 3.75 mL fresh S medium to start the ascaroside-supplemented cultures. Each of the 5 mL cultures were supplemented with 10 μL of 3 mM asc-C5, asc-C6, asc-C7, asc-C8, asc-C9, asc-C11, or asc-C13. 10 μL of ethanol was used for control. The supplemented cultures were fed with 1 mL of 25X OP50 each day for 4 days, and the culture medium was collected on the fifth day. 1 mL of the culture medium was lyophilized and extracted with 100 μL 50% methanol/water, and 10 μL of the supernatant was analyzed by LC-MS (Zhang et al., 2013). Given that detection of IC-ascarosides in culture medium by LC-MS suffers from ion suppression, a calibration curve of pure, synthetic IC-asc-ΔC9 in culture medium extract was generated as follows: 2.8 μL 600 μM IC-asc-ΔC9 standard was mixed with 57.2 μL daf-22 culture medium extract (in 50% MeOH/water) to make a 28 μM stock. A series of 1:2 diluted standards was generated by mixing the stock 1:1 with daf-22 culture medium extract. 5 μL of the standards (each containing 4.4, 8.8, 17.5, 35, 70, or 140 pmol IC-asc-ΔC9, respectively) were injected into the LC-MS on the same day of sample analysis. Trend lines describing the relationship between peak area and IC-asc-ΔC9 amount were used to analyze the molar amount of all IC-ascarosides present in the supplemented daf-22 cultures. Three independent experiments were performed using worms cultured at three different times.
 
-## ACS-7 expression and mutagenesis
+### ACS-7 expression and mutagenesis
 
 acs-7 was cloned from a C. elegans cDNA library by PCR and ligated into pET-22b using the NdeI and XhoI restriction sites. To engineer an appropriate negative control for enzyme assays, catalytic mutants of ACS-7 were designed through sequence alignment with ttLC-FACS (Hisanaga et al., 2004) from Thermus thermophiles. pET-22b-acs-7(E339A) was obtained via Q5 Site-Directed Mutagenesis Kit (New England Biolabs, Ipswich, MA) using pET-22b-acs-7 as the template, and it was then further modified by the kit to generate pET-22b-acs-7(E339A,S186A,S187A). Wild-type ACS-7 and the mutants were expressed in BL21 (DE3) cells by inducing with 0.3 mM IPTG at 16°C for 42 hr. The enzymes were purified by lysing the cells in lysis buffer (50 mM KPO4 pH 7.4, 100 mM KCl) using a microfluidizer, incubating the lysate with Ni-NTA resin (Thermo Fisher, Waltham, MA), and eluting the resin with lysis buffer containing 500 mM imidazole. The enzymes were further purified through FPLC on a HiLoad 16/600 Superdex 200 column (GE Healthcare, Chicago, IL).
 
-## LC-MS-based ACS-7 activity assay
+### LC-MS-based ACS-7 activity assay
 
 Purified ACS-7, ACS-7(E339A), and ACS-7(E339A,S186A,S187A) were concentrated to 2 mg/mL. 2 μL of the 2 mg/mL enzyme was used in each 50 μL reaction mixture, which gave a 1.57 μM final concentration. The reaction mixture contained 100 mM KPO4 pH 7.0, 5 mM ATP, 5 mM MgCl2, 5 mM CoA, and 100 μM IC-asc-C9 or ICA as substrates. Reaction mixtures were incubated at 25°C for 10 min, 1 hr, or 2 hr. 50 μL of methanol was added to the reaction mixtures to quench them, and 5 μL of the 100 μL 1:1 reaction/methanol mixture was analyzed by LC-MS directly. LC-MS analysis was performed with an Agilent 6130 single quadrupole mass spectrometer, operating in both positive and negative modes, using a method adapted from a previously published one (Zhang et al., 2013). The LC conditions were holding for 2 min at 95% solvent A (water with 10 mM ammonium acetate) and 5% solvent B (acetonitrile), followed by gradually ramping up to 100% solvent B over 24 min. The MS was operated in full-scan mode (m/z 150–1500) with a fragmentor voltage of 125 V, peak width of 0.15 min, and cycle length of 2.20 s/cycle.
 
-## ACS-7-coupled enzyme assay
+### ACS-7-coupled enzyme assay
 
 The enzyme kinetics of ACS-7 were determined through an enzyme-coupled spectrophotometric assay that measures the release of AMP (Tanaka et al., 1979; Hisanaga et al., 2004). Each 100 μL assay mixture contained 0.1 M Tris-HCl pH 7.4, 5 mM dithiothreitol, 1.6 mM Triton X-100, 10 mM MgCl2, 7.5 mM ATP, 0.2 mM phosphoenol pyruvate, 0.15 mM NADH, 2 μL of adenylate kinase solution (Sigma M3003, prepared according to the manufacturer’s protocol), 2 μL of pyruvate kinase and lactate dehydrogenase mixture stock (Sigma P0294), 4 μg of ACS-7, and the tested substrates with concentrations from 5 to 250 μM. 1 mM final concentration of CoA was added to the assay mixture to start the reaction. The reaction was run at 22°C, and the UV absorbance at 340 nm was measured to determine the activity of ACS-7. Three independent experiments were performed using protein purified at three different times.
 
-## Ascaroside analysis of large-scale cultures
+### Ascaroside analysis of large-scale cultures
 
 Large-scale (150 mL) non-synchronized worm cultures were fed E. coli (HB101) and grown for 9 d, and extracts were generated from the culture medium, as described (Zhang et al., 2013). Three independent experiments were performed using worms cultured at three different times. LC-MS/MS analysis of ascarosides from extracts was performed as described (Zhang et al., 2015), but with some modifications. A Phenomenex Kinetex 2.6 μM C18 100 Å (100 × 2.1 mm) column was attached to an Accela UHPLC and a Thermo TSQ Quantum Max mass spectrometer, operating in negative ion, heated (H)-ESI, precursor scanning mode (selecting for a product ion of m/z 73.0). Quantitation of ascarosides by LC-MS/MS was done by generating a calibration curve using synthetic standards. All ascarosides were quantified using their corresponding synthetic standard, except for IC-asc-C7 and IC-asc-C9, which were quantitated using synthetic IC-asc-ΔC9.
 
-## Ascaroside analysis of small-scale cultures
+### Ascaroside analysis of small-scale cultures
 
 For Figure 4—figure supplement 1, small-scale (5 mL) non-synchronized worm cultures were started with worms from one 6 cm NGM-agar plate, fed E. coli (HB101), and grown for 7 days. Three independent experiments were performed using worms cultured at three different times. 5 mL of culture was centrifuged (800 g for 2 min), the worms at the bottom were removed, and the supernatant was centrifuged again (3500 rpm for 10 min). 1 mL of this supernatant was lyophilized and resuspended in 100 μL of 50% methanol in water, and the ascarosides were analyzed by LC-MS as described (Zhang et al., 2013). LC-MS analysis of ascarosides was performed on a Phenomenex Luna 5 μm C18 2 100 Å (100 × 4.6 mm) column attached to an Agilent 1260 infinity binary pump and Agilent 6130 single quad mass spectrometer with API-ES source, operating in dual negative/positive single-ion monitoring mode, as previously described (Zhang et al., 2015). In general, all ascarosides were detected by LC-MS using the [M-H]- ion.
 
-## Synthesis of CoA-thioesters
+### Synthesis of CoA-thioesters
 
 Ascarosides and IC-ascarosides were synthesized as previously described (Hollister et al., 2013), except that for the IC-ascarosides, the final reaction products were purified by Agilent 1200 Series HPLC on a Supelco Discovery 10 μm C18 (250 × 10 mm) column. A water (with 0.1% formic acid) and acetonitrile (with 0.1% formic acid) solvent gradient was used, starting from 5% acetonitrile, ramping to 100% acetonitrile over 25 min, and then holding at 100% acetonitrile for 4 min, with a flow rate of 2 mL / min.
 
@@ -123,18 +452,18 @@ CoA-thioesters of fatty acids and short- and medium-chain ascarosides were synth
 
 To synthesize the CoA-thioesters of long-chain ascarosides or IC-ascarosides, a chemoenzymatic approach was taken using the fatty acyl-CoA ligase FadD6 (Arora et al., 2005) or ACS-7. The fadD6 gene was cloned from a Mycobacterium tuberculosis​ H37Ra genomic library (a gift from Peilan Zhang and Prof. Yousong Ding) and expressed as described (Zhang et al., 2015; Zhang et al., 2018). FadD6 reaction conditions were similar to previously described conditions (Arora et al., 2005) with some modifications. For a 200 μL total reaction volume, ~300 μM asc-C13, IC-asc-C7, or IC-asc-C9, 5 mM CoA, 15 mM ATP and 20 μg FadD6 protein were added to reaction buffer (100 mM Tris, 8 mM MgCl2, pH 7.5), and the reaction was incubated at 30°C for 1 hr. The asc-C13-CoA, IC-asc-C7-CoA, and IC-asc-C9-CoA were purified by Agilent 1200 Series HPLC on a Phenomenex Luna 5 μm C18 2 100 Å (100 × 4.6 mm) column. A water (with 10 mM ammonium acetate) and acetonitrile solvent gradient was used, starting from 0% acetonitrile, ramping to 100% acetonitrile over 20 min, and then holding at 100% acetonitrile for 2 min, with a flow rate of 0.7 mL / min. Purified asc-C13-CoA, IC-asc-C7-CoA, and IC-asc-C9-CoA were then dried with a speedvac. Although FadD6 was initially used in the chemoenzymatic synthesis of these molecules, once we identified the substrate preferences of ACS-7, we subsequently used it to make IC-asc-C7-CoA and IC-asc-C9-CoA, as it was much faster and far more consistent than FadD6 at making these compounds.
 
-## Characterization of CoA-thioesters
+### Characterization of CoA-thioesters
 
 The structures of synthetic IC-asc-C7-CoA, IC-asc-C9-CoA, and asc-C13-CoA were confirmed by LC-MS/MS, using a Nano LCMS Solutions 3 μM 200 Å (0.3 × 150 mm) ProtoSIL C18AQ + column attached to an UltiMate 3000 RSLCnano System and a Bruker Impact II QTOF mass spectrometer, operating in positive ion, heated (H)-ESI mode. A water (with 100 mM ammonium acetate) and acetonitrile (with 0.1% formic acid) solvent gradient was used for separation, starting from 2% acetonitrile for 7 min, ramping to 98% acetonitrile over 31 min, and then holding at 98% acetonitrile for 10 min, with a flow rate of 5 µL / min. HR-MS/MS analysis was applied to all three samples with collision energy set at 45 eV. Characteristic fragmentation was observed, such as a neutral loss of 507 (Magnes et al., 2005) (Figure 5—figure supplement 1). IC-asc-C7-CoA, HR-ESIMS (m/z): [M + H]+ calcd. for C43H64N8O22P3S 1169.3068, found 1169.3105. IC-asc-C9-CoA, HR-ESIMS (m/z): [M + H]+ calcd. for C45H68N8O22P3S 1197.3382, found 1197.3390. asc-C13-CoA, HR-ESIMS (m/z): [M + H]+ calcd. for C40H71N7O21P3S 1110.3637, found 1110.3712.
 
-## β-oxidation enzyme expression
+### β-oxidation enzyme expression
 
 The cloning and expression conditions for the ACOX-1.1a (the longest splice variant of ACOX-1.1) homodimer were described previously (Zhang et al., 2015). Acox-3 was cloned by PCR from a C. elegans (N2) cDNA library and was inserted into a modified pET-16b vector at the NheI/NotI restriction sites (resulting in a C-terminal His tag). The plasmid was transformed into BL21(DE3) cells, and a culture was grown at 37°C until the OD600 reached 0.7, at which point expression was induced overnight at 25°C using 0.6 mM IPTG. The cells were resuspended in buffer (25 mM Tris, pH 7.5, 500 mM NaCl, 20 μM FAD) and lysed using a microfluidizer, and the protein was purified with Ni-NTA resin (Thermo Fisher). After the protein was concentrated with a 10 KDa cut-off centricon (MilliporeSigma, Burlington, MA), it was further purified through FPLC on a HiLoad 16/600 Superdex 200 column (GE Healthcare) and concentrated again to 1 mg/mL for assay. maoc-1, dhs-28, and daf-22 genes were cloned by PCR from a C. elegans (N2) cDNA library. The maoc-1 gene was inserted into the pACYCDuet-1 vector at the EcoRI/NotI sites (resulting in an N-terminal His tag) to generate pACYCDuet-1-maoc-1 plasmid. The dhs-28 gene was inserted into the pACYCDuet-1 vector at the EcoRI/NotI sites (resulting in an N-terminal His tag) to generate pACYCDuet-1-dhs-28Δscp-2. This construct lacks the dhs-28 sequence encoding the SCP-2 (Sterol Carrier Protein-2) domain because of its interference with protein expression and lack of relevance for enzymatic activity. The daf-22 gene was inserted into a modified pET-16b vector at the NcoI/NotI sites (resulting in a C-terminal His tag) to generate pET-16b-daf-22 plasmid. MAOC-1, DHS-28ΔSCP-2, and DAF-22 were expressed and purified using a similar method as that used for ACOX-3, except that expression was induced with 0.8 mM IPTG and FAD was not included in protein lysis and purification buffer.
 
-## Acyl-CoA oxidase activity assays
+### Acyl-CoA oxidase activity assays
 
 For the LC-MS-based assay, 40 μM IC-asc-C9-CoA, 20 μM FAD, 20 μM NAD+, 200 μM CoA, 8 μg of ACOX protein (ACOX-1.1, ACOX-1.2, or ACOX-3), and 4 μg of other three β-oxidation enzymes (MAOC-1, DHS-28, and DAF-22) were added to the reaction buffer (100 mM Tris, 8 mM MgCl2, pH 7.5), for a total reaction volume of 50 μL. The control reaction contained all of the above except the ACOX proteins. Reactions were performed at 30°C for 1 hr. Then 50 μL of MeOH was added to quench the reaction. Samples were heated at 95˚C for 5 min and centrifuged at 13000 rpm for 5 min. 10 μL of the supernatant was used for LC-MS analysis. Retention times of the substrate and products were confirmed with synthetic standards IC-asc-C9, IC-asc-C7, IC-asc-C5, IC-asc-C9-CoA, and IC-asc-C7-CoA. The retention time of IC-asc-C5-CoA was predicted using the linear relationship between the retention times of IC-asc-C5-CoA and IC-asc-C7-CoA and IC-asc-C9-CoA. The coupled enzyme assay for acyl-CoA oxidase activity was performed as described previously (Zhang et al., 2015), with several modifications. Specifically, reactions were performed at room temperature (~23°C), and the substrate concentration was 24 µM. Three independent experiments were performed using protein purified at three different times.
 
-## ACOX-1.1, ACOX-3, and ACS-7 localization and RNAi
+### ACOX-1.1, ACOX-3, and ACS-7 localization and RNAi
 
 To generate Pacs-7::gfp::acs-7, 2.2 kb of the acs-7 promoter and the acs-7 gene plus 3’-UTR were inserted into the AscI/NotI and NgoMIV/AatII sites, respectively, of pPD114.108 (from Andy Fire, via Addgene). 120 ng/µL of Pacs-7::gfp::acs-7 was injected into wild-type worms to give RAB37 rebEx11 (Pacs-7::gfp::acs-7). To generate Pacox-1.1::mcherry::acox-1.1, 1.4 kb of the acox-1.1 promoter and the acox-1.1 gene plus 3’-UTR were inserted into the SalI/NotI and NgoMIV/ApaI sites, respectively, of pPD114.108. The GFP sequence in the vector was replaced with the mCherry sequence amplified from pMC10-mCherry (gift of Piali Sengupta) using the AgeI/NheI sites. To generate Pacox-3::gfp::acox-3, 3 kb of the acox-3 promoter and the acox-3 gene plus 3’-UTR were inserted into the SalI/NotI and NheI/ApaI sites, respectively, of pPD114.108. 60 ng/µL of Pacox-1.1::mcherry::acox-1.1 was co-injected with either 60 ng/µL of Pacs-7::gfp::acs-7 or Pacox-3::gfp::acox-3 into wild-type worms to give RAB38 rebEx12 (Pacox-1.1::mcherry::acox-1.1; Pacs-7::gfp::acs-7) and RAB39 rebEx13 (Pacox-1.1::mcherry::acox-1.1; Pacox-3::gfp::acox-3), respectively. Alternatively, 10 ng/µL of Pacox-1.1::mcherry::acox-1.1 was co-injected with 120 ng/µL of Pacs-7::gfp::acs-7 into wild-type worms to give RAB40 rebEx14 (Pacox-1.1::mcherry::acox-1.1; Pacs-7::gfp::acs-7). Imaging was conducted on a Zeiss Axiovert.A1 microscope equipped with ZEN lite 2012 camera. In the RNAi feeding assay, E. coli strain HT115 (DE3) carrying L4440 (control) or L4440-prx-13 (from Julie Ahringer RNAi strain library) was cultured in LB medium (with 150 μg/mL ampicillin) at 37°C at 225 rpm for 5 hr followed by induction with 4 mM IPTG for 1 hr. 200 μL of the bacterial cultures were then seeded onto individual NGM agar plates (with 1 mM IPTG, 25 μg/mL carbenicillin) and the plates were dried overnight. On the next day, two Pacs-7::gfp::acs-7; Pacox-1.1::mcherry::acox-1.1 worms at the L4 stage were transferred onto each plate. Adults were removed from the plates 2 days later (on day 3), and on day 5, the progeny were imaged. To make LysoTracker Red plates, 6 μL of the LysoTracker Deep Red (Thermo L12492, 1 mM stock in DMSO) were added to each 3 cm plate (containing 3 mL NGM-agar per plate) to obtain a final concentration of 2 μM. After the agar plates solidified, 50 μL of OP50 (freshly inoculated culture in LB medium, 37°C, 225 rpm, 6 hr) were added to the center of each plate. Plates with bacteria were dried in a sterile hood in the dark for about 20 min. Twenty RAB37 rebEx11 (Pacs-7::gfp::acs-7) worms or wild-type worms were transferred to each plate while minimizing exposure to light under the microscope. The plates were kept in the dark for 24 hr before imaging.

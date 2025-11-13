@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02ttsq026 University of Colorado Boulder Boulder United States
-2. https://ror.org/00te3t702 University of Georgia Athens United States
+1. University of Colorado Boulder Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))
+2. University of Georgia Athens United States ([ROR:00te3t702](https://ror.org/00te3t702))
 
 † Corresponding author
 

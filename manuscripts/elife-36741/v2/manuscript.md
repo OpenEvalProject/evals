@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.36741.001 The ‘pitchers’ of carnivorous pitcher plants are exquisite examples of convergent evolution. An open question is whether the living communities housed in pitchers also converge in structure or function. Using samples from more than 330 field-collected pitchers of eight species of Southeast Asian Nepenthes and six species of North American Sarracenia , we demonstrate that the pitcher microcosms, or miniature ecosystems with complex communities, are strikingly similar. Compared to communities from surrounding habitats, pitcher communities house fewer species. While communities associated with the two genera contain different microbial organisms and arthropods, the species are predominantly from the same phylogenetic clades. Microbiomes from both genera are enriched in degradation pathways and have high abundances of key degradation enzymes. Moreover, in a manipulative field experiment, Nepenthes pitchers placed in a North American bog assembled Sarracenia -like communities. An understanding of the convergent interactions in pitcher microcosms facilitates identification of selective pressures shaping the communities.
+The ‘pitchers’ of carnivorous pitcher plants are exquisite examples of convergent evolution. An open question is whether the living communities housed in pitchers also converge in structure or function. Using samples from more than 330 field-collected pitchers of eight species of Southeast Asian Nepenthes and six species of North American Sarracenia, we demonstrate that the pitcher microcosms, or miniature ecosystems with complex communities, are strikingly similar. Compared to communities from surrounding habitats, pitcher communities house fewer species. While communities associated with the two genera contain different microbial organisms and arthropods, the species are predominantly from the same phylogenetic clades. Microbiomes from both genera are enriched in degradation pathways and have high abundances of key degradation enzymes. Moreover, in a manipulative field experiment, Nepenthes pitchers placed in a North American bog assembled Sarracenia-like communities. An understanding of the convergent interactions in pitcher microcosms facilitates identification of selective pressures shaping the communities.
 
 ## Introduction
 
@@ -41,33 +41,57 @@ To test for convergence between the microcosms of North American Sarracenia and 
 
 ## Results
 
-## The species richness and evenness of North American and Southeast Asian pitcher plant microcosms converge
+### The species richness and evenness of North American and Southeast Asian pitcher plant microcosms converge
 
 To compare the microbial communities within Sarracenia and Nepenthes pitchers, we analyzed DNA samples from pitchers and their surrounding environments using an amplicon sequencing approach, separately characterizing bacteria and eukaryotes (Figure 1A, Supplementary file 1 Table S2, Supplementary file 2 Dataset S1). Communities from Southeast Asian and North American pitchers were defined as converging if the communities were more similar to each other than to the communities of the environments immediately surrounding the plants, even despite the vast geographic distance between them. In fact, the Nepenthes and Sarracenia pitcher communities were distinct from and had fewer Operational Taxonomic Units (OTUs, clustered at 97% sequence similarity; a proxy for species) than communities in surrounding bog water or soil (Figure 1B and C, and Supplementary file 1 Table S3). The pattern held for both bacteria and eukaryotes, and was unaffected by sample volume (no correlation of observed OTUs with sample volume; for bacteria: R = −0.003, p=0.984, and for eukaryotes: R = −0.003, p=0.812). Pitcher samples also had significantly lower Shannon diversities (Mann-Whitney U Test, p<0.001 in all comparisons) than surrounding environments (Figure 1B), and this pattern also held when we controlled for extraction volume (by analyzing a subset of 155 samples, each extracted from the same volume; Supplementary file 1 Table S3). Overall, pitcher communities were characterized by both decreased richness and evenness as compared to communities from their immediate environments.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/36741/elife-36741-fig1-v2.jpg)
+
+**Figure 1.:** (A) Geography of sampled Sarracenia and Nepenthes and experimental approach. (B) The species richness (displayed as rarefaction plots) and Shannon diversity (inset beanplots) of both bacterial (i, top) and eukaryotic (ii, bottom) communities was lower in pitchers than in surrounding soil and bog water. Error bars are standard deviations. (C) Community composition using the unweighted UniFrac metric for bacteria (i, top) and eukaryotes (ii, bottom). NMDS stress and dimensions (k) are listed, and the center of each cluster is the category’s median value.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/36741/elife-36741-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** NMDS plots of bacterial (A) and eukaryotic (B) communities in different habitats in Southeast Asia.
+
 The composition of pitcher communities was also significantly different from the community composition of surrounding bog water or soil (Figure 1C, Supplementary file 1 Table S4. Bacteria: envfit: R2 = 0.31, p<0.001, adonis: R2 = 0.08, p<0.001; Eukaryota: envfit: R2 = 0.38, p<0.001, adonis: R2 = 0.08, p<0.001). To understand differences in community composition across just one region, we separately tested and analyzed Southeast Asian samples from pitchers, bog water, soil, plastic tubes, or cupped, dead leaves filled with water and sitting on the ground. The communities in water from leaves or from plastic tubes were more similar to pitcher fluid communities than bog water or soil communities (Figure 1—figure supplement 1).
 
-## Organisms found in Nepenthes and Sarracenia pitcher microcosms are typically from the same phylogenetic clades
+### Organisms found in Nepenthes and Sarracenia pitcher microcosms are typically from the same phylogenetic clades
 
 To compare the phylogenetic structures among pitcher communities, we mapped OTUs present in at least 10% of our field (not experimental) Nepenthes or Sarracenia samples onto bacterial and eukaryotic phylogenetic trees, together with all OTUs found in bog water and soil (Figure 2 and associated Figure 2—figure supplement 1). Organisms repeatedly colonizing Nepenthes or Sarracenia pitchers in North America and Southeast Asia tended to be from similar clades of bacteria or eukaryotes (Figure 2). The pattern was most pronounced in bacteria, and shared families included Microbacteriaceae, Gordoniaceae, Chitinophagaceae, Sphingobacteriaceae, Bradyrhizobiaceae, Rhizobiaceae, Sphingomonadaceae, Burkholderiaceae, Comamonadaceae, Oxalobacteriaceae, Neisseriaceae, Enterobacteriaceae, Moraxellaceae, and Xanthomonadaceae. Across eukaryotes shared clades included dipteran insects, mites, and rotifers.
 
-## Within each genus, pitcher species, acidity, form, and volume correlate with community composition
+![Figure 2.](https://cdn.elifesciences.org/articles/36741/elife-36741-fig2-v2.jpg)
+
+**Figure 2.:** Phylogeny of bacterial and eukaryotic OTUs found in soil and bog samples (brown); and OTUs present in at least 10% of field collected Nepenthes (red) or Sarracenia (blue) samples. The height of the colored bars surrounding each tree corresponds to the natural log of the relative abundance of reads from each OTU, normalized across the samples in each category. Labels designate monophyletic clades where high proportions of OTUs are shared between Nepenthes and Sarracenia samples. Gray dots mark branches leading to nodes with bootstrap support of 0.7 or higher. The bacterial tree is rooted in Archaea and the eukaryotic tree is rooted in Streptophyta.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36741/elife-36741-fig2-figsupp1-v2.jpg)
+
+### Within each genus, pitcher species, acidity, form, and volume correlate with community composition
 
 To investigate drivers of community composition among pitchers of each genus, we had recorded species identity and measured the pH and total volume of pitcher fluid associated with each sample. As we extracted DNA from each sample, we recorded DNA concentrations; a proxy for the living biomass within a pitcher (Marstorp et al., 2000). In both the Sarracenia and Nepenthes systems, pitcher communities differed significantly among host species (Figure 3, Supplementary file 1 Table S4). For bacteria, the effect of host species was similar in Sarracenia (envfit R2 = 0.40, p<0.001; adonis R2 = 0.14, p<0.001) and Nepenthes (envfit R2 = 0.38, p<0.001; adonis R2 = 0.18, p<0.001) species; however, for eukaryotes, pitcher host species explained more of the observed variation in Sarracenia species (envfit R2 = 0.42, p<0.001; adonis R2 = 0.20, p<0.001) as compared to Nepenthes species (envfit R2 = 0.22, p<0.001; adonis R2 = 0.15, p<0.001).
 
 Pitchers of different species maintain different levels of acidity, although these differences are more pronounced in the genus Nepenthes than in the genus Sarracenia. Certain Nepenthes species can actively raise or lower the acidity of individual pitchers by pumping protons into or out of pitcher fluid (An et al., 2001; Moran et al., 2010). In our sampling of natural populations, we measured values below pH 4 in N. rafflesiana, N. gracilis, and N. stenophylla. But low-pH pitcher fluid does not seem to correlate with the Nepenthes phylogeny: low-pH species are in different clades, separated by species with higher average pH levels (Meimberg and Heubl, 2006). Furthermore, each species with low pH pitchers also had pitchers with higher pH levels. The large pH gradient across the Nepenthes fluids in our samples was strongly correlated with bacterial community composition, and explained most of the observed variation (Figure 3A. ordisurf R2 = 0.74, p<0.001; mantel r = 0.63, p<0.001). This result supports a recent study that also noted a correlation between pitcher fluid pH and Nepenthes bacteria (Kanokratana et al., 2016). But the strong effect of pH on bacterial community composition is not driven by Nepenthes species differences per se; significant, high correlations between pH and bacterial community composition are also found within each of the three species with very low pH values when the data of each species are analyzed alone (Mantel tests: N. gracilis r = 0.46, p<0.001; N. rafflesiana r = 0.68, p<0.001; N. stenophylla r = 0.85, p<0.001). Eukaryotic community composition in Nepenthes was more weakly correlated with pH, and pH explained a smaller portion of the variation (ordisurf R2 = 0.20, p<0.001; mantel r = 0.14, p<0.001). In the genus Sarracenia, bacterial (but not eukaryotic) community composition correlated with pH (bacteria: ordisurf R2 = 0.15, p<0.001, mantel r = 0.11, p=0.010). For both the Nepenthes and Sarracenia bacterial communities, the relationship of pH with Shannon alpha diversity appeared to be quadratic: Shannon diversity peaked around pH 5.5 and was lower at both lower and higher pH levels (Figure 3—figure supplement 1). The correlation was much stronger for Nepenthes samples (R2 = 0.67, p<0.001), but still significant for Sarracenia samples (R2 = 0.07, p=0.002).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/36741/elife-36741-fig3-v2.jpg)
+
+**Figure 3.:** NMDS ordinations of pitcher samples, colored by host species. Ordisurf vectors with correlations greater than 0.3 are mapped onto the ordinations: pH in (Ai) and volume in (Bi).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36741/elife-36741-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Diversity peaks around pH 5.5 for samples from both genera.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/36741/elife-36741-fig3-figsupp2-v2.jpg)
+
 Shape emerges as a potential strong influence among the Sarracenia species, but is confounded with species identity: S. purpurea and S. rosea pitchers grow with a shorter, more cylindrical shape, while pitchers of S. alata, S. flava, S. leucophylla and S. rubra grow to a taller, more tapered shape. Although our samples of S. purpurea and S. rosea were collected in Massachusetts and Florida, respectively, the two species are very closely related (Ellison et al., 2012). The taller, tapered Sarracenia pitchers have an aspect ratio of width to height below 0.2; while the shorter, more cylindrical Sarracenia have an aspect ratio above 0.2, as do the Nepenthes pitchers from this study. Because growth form is confounded with Sarracenia host species identity and phylogeny, we could not analyze it as a separate variable. But pitchers from species of Sarracenia with shorter, wider pitchers tended to have a larger volume of fluid than the taller pitchers, and volume was strongly correlated with Sarracenia bacterial community composition (ordisurf R2 = 0.31, p<0.001, mantel r = 0.15, p=0.006) and eukaryotic community composition (ordisurf R2 = 0.18, p<0.001, mantel r = 0.17, p<0.001).
 
 Collection site also significantly influenced Sarracenia communities; however, the effect was weaker when we controlled for the fact that not all species grow at all sites (Supplementary file 1 Table S4). DNA concentration was significantly correlated with Sarracenia bacterial community composition (ordisurf R2 = 0.22, p<0.001, mantel r = 0.11, p=0.035). There was also a weak, but marginally significant correlation between DNA concentration and the Shannon diversity of Sarracenia bacterial communities, which was driven by a few Sarracenia samples with very cloudy fluid and high relative abundances of Enterobacteriaceae OTUs (Figure 3—figure supplement 2).
 
-## Relocated Nepenthes converge on Sarracenia-like communities
+### Relocated Nepenthes converge on Sarracenia-like communities
 
 In a manipulative experiment, we relocated Nepenthes pitcher plants (propagated in Southeast Asia and purchased through a commercial U.S. nursery) to a Sarracenia bog in North America to test whether relocated Nepenthes pitchers would acquire communities similar in community structure and phylogenetic composition to those of local Sarracenia. All Nepenthes placed into the Sarracenia habitat were maintained in pots with soil material purchased in the U.S., and the plants were removed after experiments concluded. We included potted S. purpurea as a control to explore whether growth in a pot influenced community assembly. Target pitchers approaching maturity were manually opened in the bog on Day 1 of each experiment. The experiment also included cylindrical, round-bottomed 50 mL sterile glass tubes, either with or without sterilized insect material (‘prey’) added as a nutrient control (Figure 4A). During the experiment, we also recorded whether pitchers contained larvae of the pitcher plant mosquito, Wyeomyia smithii, a specialized insect that completes its lifecycle only within Sarracenia purpurea pitchers (Figure 4B). W. smithii larvae regularly colonized their native S. purpurea pitchers (whether they were growing in the ground or in a pot). Surprisingly, they also colonized pitchers of Nepenthes bicalcarata and N. ampullaria, albeit in lower proportions (Figure 4B). The mosquitoes never colonized the more acidic N. gracilis and N. rafflesiana species, nor the experimental glass-tube pitchers.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/36741/elife-36741-fig4-v2.jpg)
 
-**Figure 4.:** Nepenthes pitchers in a Sarracenia habitat assemble Sarracenia-like microcosms.(A) Experimental treatments: Spb = Sarracenia purpurea bog; Spp = S. purpurea pot; Na = Nepenthes ampullaria; Nb = N. bicalcarata; Ng = N. gracilis; Nr = N. rafflesiana; Gt = glass tube; Gtp = glass tube with sterilized prey. (B) Wyeomyia smithii (pitcher plant mosquito) larvae colonized their native S. purpurea hosts, as well as foreign Nepenthes species with average pH > 4, but not pitcher-shaped glass tubes. Numbers of samples are listed above each category, and average pH values are listed below. (C) Natural microcosms of Nepenthes and Sarracenia pitchers sampled in SE Asia or North America house different organisms (Ci and Cii). (D) However, experimentally-relocated Nepenthes converge on Sarracenia-like communities and differ from those of natural Nepenthes (Di and Dii), except for bacterial communities sampled from Nepenthes in which pH < 4 (Di). Glass tubes (with or without added prey) of a pitcher-like form assemble communities that are similar to those of experimental pitchers (Di and Dii).
+**Figure 4.:** (A) Experimental treatments: Spb = Sarracenia purpurea bog; Spp = S. purpurea pot; Na = Nepenthes ampullaria; Nb = N. bicalcarata; Ng = N. gracilis; Nr = N. rafflesiana; Gt = glass tube; Gtp = glass tube with sterilized prey. (B) Wyeomyia smithii (pitcher plant mosquito) larvae colonized their native S. purpurea hosts, as well as foreign Nepenthes species with average pH > 4, but not pitcher-shaped glass tubes. Numbers of samples are listed above each category, and average pH values are listed below. (C) Natural microcosms of Nepenthes and Sarracenia pitchers sampled in SE Asia or North America house different organisms (Ci and Cii). (D) However, experimentally-relocated Nepenthes converge on Sarracenia-like communities and differ from those of natural Nepenthes (Di and Dii), except for bacterial communities sampled from Nepenthes in which pH < 4 (Di). Glass tubes (with or without added prey) of a pitcher-like form assemble communities that are similar to those of experimental pitchers (Di and Dii).
 
 To compare the biodiversity of entire communities, we first re-plotted our beta-diversity results from natural Nepenthes versus natural Sarracenia pitchers (Figure 4C), and found that community composition was significantly different for the two genera. Bacterial assemblages were more similar between the two genera than eukaryotic assemblages, and correspondingly, host genus explained less variation in bacterial than in eukaryotic community composition (Bacteria: envfit R2 = 0.33, p<0.001, adonis R2 = 0.09, p<0.001; Eukaryota: envfit R2 = 0.55, p<0.001, adonis R2 = 0.14, p<0.001).
 
@@ -75,7 +99,7 @@ We next compared the beta-diversity results of wild Nepenthes to our experimenta
 
 Communities of bacteria and eukaryotes in our experimental pitchers were different from bog water communities (not shown), but partially clustered with the organisms colonizing the glass tube pitchers (Figure 4D). NMDS plots indicate glass tubes with added prey did not assemble communities more similar to the experimental pitcher communities than glass tubes without added prey. Only a very small portion of the variation in community composition was explained in analyses of pitchers vs. glass tubes; however, the differences were highly significant (bacteria: envfit R2 = 0.05, p<0.001, adonis R2 = 0.02, p<0.001; eukaryotes: envfit R2 = 0.09, p<0.001, adonis R2 = 0.03, p<0.001). The analysis suggests a sterile, pitcher-shaped form is almost, but not quite entirely, sufficient for acquiring a pitcher plant-like microcosm (Figure 4D).
 
-## Nepenthes and Sarracenia microbiomes are enriched in gene pathways for degradation; both have high relative abundances of chitinases and key nitrogen mineralization enzymes
+### Nepenthes and Sarracenia microbiomes are enriched in gene pathways for degradation; both have high relative abundances of chitinases and key nitrogen mineralization enzymes
 
 To investigate the functional potential of pitcher microbiomes, we generated metagenomes from 24 field-collected (not experimentally relocated) pitcher samples (16 Nepenthes and 8 Sarracenia). When compared with other published metagenomes for soil, lake, and phyllosphere samples (Supplementary file 1 Table S5), pitcher plant community metagenomes were more enriched in gene pathways for fatty acid degradation, fermentation, and the biosynthesis of cell wall materials and non-proteinogenic amino acids, while non-pitcher metagenomes were more enriched in gene pathways for metabolic precursors (the biosynthesis of proteinogenic amino acids, tRNA charging, glycolysis, Calvin cycle and folate transformations) (Figure 5A).
 
@@ -101,23 +125,82 @@ The concept of convergent interactions can be used to better understand the sele
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MoBio PowerClean kit</td>
+      <td>Qiagen/MoBio</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quant-iT High-Sensitivity dsDNA Assay Kit</td>
+      <td>Invitrogen/ThermoFisher</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq DNA PCR Free HT Kit</td>
+      <td>Illumina</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA LTP Library Prep Kit</td>
+      <td>Roche</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA Library Quantification Kit</td>
+      <td>Roche</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PerfeCta NGS Library Quantification Kit</td>
+      <td>Quanta Biosciences/VWR</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Collections and experiments took place from 2012 to 2014 at field sites along the U.S. Gulf Coast, at Harvard Forest in Massachusetts, in Singapore, and in the Maliau Basin of Borneo (Figure 1A). In total, we sampled and sequenced communities collected in the field from more than 330 pitchers from 8 species of Nepenthes and 6 species of Sarracenia (for more details about the species, see Supplementary file 1 Table S1), and 70 environmental samples. The experimental data included samples from 60 experimental pitchers of natural and potted S. purpurea and 4 species of potted Nepenthes, and 16 glass tubes. R code and data for our analyses are available via the Harvard Dataverse: https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/QYUBN2.
 
-## Field collections and background information
+### Field collections and background information
 
 Nepenthes pitchers from three co-occurring species (N. ampullaria, N. gracilis and N. rafflesiana) were sampled from three sites in Singapore (Kent Ridge Park, Bukit Timah Nature Preserve, and between Lower and Upper Peirce Reservoir Park) in January 2012. Additional pitchers from the same species and sites were sampled in March 2013 and March 2014. Pitchers from an additional five co-occurring species (N. veitchii, N. tentaculata, N. stenophylla, N. reinwardtiana, and N. hirsuta) were sampled from the Maliau Basin, Borneo in March 2014.
 
 Sarracenia pitchers from five species (S. alata, S. flava, S. leucophylla, S. rosea and S. rubra) were sampled from thirteen sites from Mississippi to Florida along the U.S. Gulf Coast in June 2014 and a sixth species (S. purpurea) was sampled from Harvard Forest in Massachusetts in July 2014. For details of which species were sampled from which sites see Supplementary file 1 Table S1. Sites were considered different if separated by more than 0.1 degree of latitude or longitude.
 
-## Sampling pitcher fluid
+### Sampling pitcher fluid
 
 Contents of each pitcher were collected with sterile, single-use plastic transfer pipettes and placed into empty, sterile plastic tubes. Fluids were mixed within each pitcher using the pipette before collecting to homogenize any differences by depth. Volumes and pH levels of all pitcher fluids were recorded, except for our first collection in Singapore in 2012 (for more detail on Singapore sampling see [Bittleston et al., 2016a]). The pitchers of some species can have large volumes (e.g. 100–500 mLs); for higher volume samples, we estimated total volume and collected a well-mixed subsample from the pitcher. We measured pH with colorpHast strips (EMD Millipore) by removing small amounts of fluid with additional sterile pipettes. To preserve DNA, we added cetyltrimethylammonium bromide and salt solution (hereafter ‘CTAB’; final concentrations: 2% CTAB, 1.4 M NaCl, 20 mM EDTA, 100 mM Tris pH 8) to each sample in the same volume as the collected fluid. All samples were processed the same day as collection, except for Maliau Basin samples that were refrigerated overnight and processed the next morning, due to time constraints. After CTAB addition, samples were transported at room temperature to Harvard University, and subsequently frozen.
 
-## Sampling the surrounding environment
+### Sampling the surrounding environment
 
 Protocols reflected pitcher plant habitats (Figure 1A). When wet, we collected bog samples from the surrounding environment, and when dry, we collected soil samples and water either from fallen leaves or from sterile tubes placed in the environment, as follows: Singapore, March 2013—soil, Gulf Coast, June 2014—soil and bog water; Massachusetts, July 2014—bog water; Singapore, February 2014—sampling from plastic tubes left out for one month to collect rainwater and acquire microbial communities; Maliau Basin, January 2014—sampling from soil and water held in fallen leaves. All soil samples were collected from the surface organic layer in approximately 7 mL volumes. See Dataset S1 for sample details.
 
-## Experimental relocation of Nepenthes spp. to a New England bog
+### Experimental relocation of Nepenthes spp. to a New England bog
 
 In summer 2013 we set up experiments to manipulate Nepenthes within a Sarracenia habitat, the Tom Swamp bog at Harvard Forest in Petersham, MA (USA). Four different species of Nepenthes (N. ampullaria, N. bicalcarata, N. gracilis and N. rafflesiana) were purchased from Borneo Exotics via the ExoticPlantsPlus nursery in New York. Nepenthes plants were maintained in a greenhouse for two months after arriving from Southeast Asia, and then a growth chamber for a few weeks while pitchers were maturing for use in the field. Sarracenia purpurea plants were purchased from Meadowview Biological Research Station in Virginia, potted using purchased sphagnum peat and perlite, maintained in a greenhouse for three months, and used in the experiments as a control for whether growth in a pot influenced community assembly.
 
@@ -125,19 +208,19 @@ Experiment I had six treatments: S. purpurea growing naturally in the bog, S. pu
 
 To sample, we collected 750 uL of fluid from experimental pitchers and tubes using sterile transfer pipettes, as described above. At sampling, we also noted the presence or absence of pitcher plant mosquito larvae (Wyeomyia smithii) in pitchers. On the last day of each experiment, we collected entire pitcher contents. On the last days of Experiments II and III, we collected samples of bog water. All samples were stored in small tubes in a cooler with ice, and brought back to the laboratory, where they were frozen the same day. Subsequent analyses target only the last day’s sample from each pitcher or tube, so that no pitcher or tube is included more than once in the dataset.
 
-## Sample processing, DNA extraction, amplification and sequencing
+### Sample processing, DNA extraction, amplification and sequencing
 
 Once we had collected samples, we turned our attention to DNA extraction and sequencing. When removing fluid for DNA extraction, we took care to avoid macroscopic organisms. We concentrated sample fluid by filtration or isopropanol precipitation and centrifugation. Concentration protocol did not affect community composition (samples processed by different techniques clustered together).
 
 We extracted DNA by bead-beating concentrated materials with buffer and phenol-chloroform, and then proceeding with a standard phenol-chloroform extraction (Sambrook and Russell, 2001). We included a negative control with each set of extractions, and discarded the samples from one extraction set found to have measurable amounts of DNA in the negative control. We measured DNA quantity, and then re-extracted DNA from a few samples with very low DNA amounts, using a larger initial volume. DNA extracts with dark coloration (suggesting high levels of polyphenols) were cleaned using a MoBio Powerclean kit. DNA concentrations of successful extractions were fluorometrically quantified a final time using a Quant-iT High-Sensitivity dsDNA Assay Kit (Invitrogen). Samples were sent to Argonne National Laboratories for Illumina MiSeq next-generation amplicon sequencing. The Earth Microbiome Project’s barcoded 16S and 18S primers (Amaral-Zettler et al., 2009; Caporaso et al., 2012) were used to amplify DNA in separate runs, with PCR amplification and sequencing executed according to the Earth Microbiome Project protocols (http://www.earthmicrobiome.org/emp-standard-protocols). The 16S primers target the V4 region of the ribosomal RNA gene and are used to characterize prokaryotic communities, while the 18S primers target the V9 region and are used to characterize eukaryotes. The amplicon sequencing datasets can be accessed from the Sequence Read Archive as NCBI BioProject PRJNA448553.
 
-## Shotgun metagenomics
+### Shotgun metagenomics
 
 To explore functional gene diversity in pitcher plant microbiomes, we conducted shotgun metagenomic sequencing with 24 of our pitcher samples. Sixteen samples were sequenced at the High Impact Research Institute in Malaysia (HIR) at the University of Malaya, and eight at the Bauer Core Facility (RRID:SCR:001031) at Harvard University. The HIR set targeted two samples from each of four different species of both Nepenthes and Sarracenia. DNA was extracted as described above, but 2–4 extractions were done for each sample and resulting DNA was pooled to increase the amount available for sequencing. DNA was sheared with a Covaris at settings aiming for average lengths of 350 base pairs (bp), and libraries were prepared using a TruSeq DNA PCR Free HT Kit. DNA library concentrations were measured using a KAPA Library Quantification Kit, and the qualities were tested with a Bioanalyzer. DNA libraries were then pooled in equal concentrations and sequenced on the Illumina HiSeq 2500 platform in four Rapid Run, paired-end,100 bp lanes.
 
 The Bauer Core Facility set included eight additional Nepenthes samples (two samples from each of four different species). Here, we used the same DNA extractions as previously used for metabarcoding. DNA samples were sheared with a Covaris at 500 bp, and prepared with a KAPA LTP Library Prep Kit. Due to lower initial DNA quantities, the samples were subject to 2–9 cycles of PCR before final quantification using a PerfeCta NGS Library Quantification Kit, quality testing with a Bioanalyzer, and pooling of samples in equal concentrations. These libraries were sequenced in one-third of an Illumina HiSeq 150 bp paired-end Rapid Run lane. Shotgun metagenomic data can be accessed via the Argonne National Laboratory metagenomics server MG-RAST (RRID:SCR:004814): http://www.mg-rast.org/linkin.cgi?project=mgp15454.
 
-## Analyses of 16S and 18S diversity
+### Analyses of 16S and 18S diversity
 
 To generate Operational Taxonomic Units (OTUs), amplicon data were clustered using QIIME (Quantitative Insights Into Microbial Ecology, RRID:SCR:001905) versions 1.8 and 1.9 (Caporaso et al., 2010) on Harvard University’s Odyssey computing cluster. We joined forward and reverse reads using fastq-join, then split libraries with a PHRED quality cut-off of 20 to remove low-quality sequences, and used UCLUST (version 1.2.21q) open-reference clustering to form groups of sequences into OTUs with 97% similarity. Resulting numbers of sequences and OTUs are summarized in Supplementary file 1 Table S2. Phylogenetic trees were generated using QIIME default settings for 16S; when generating the18S alignment and tree we set the allowed gap fraction to 0.8 and the entropy threshold to 0.0005. We assigned taxonomy with the greengenes version 13_8 (Greengenes Database Consortium) and SILVA version 111 databases for 16S and 18S, respectively. For 18S, we used the BLAST method to assign taxonomy, as UCLUST assignment was poor. For subsequent analyses of 18S sequences, we used only OTUs assigned to Eukaryota.
 
@@ -147,6 +230,6 @@ To explore beta diversity among samples, we first removed any observation of an 
 
 To examine phylogenetic patterns among Nepenthes pitchers, Sarracenia pitchers, and environmental samples, we chose to focus on relatively common OTUs, removing OTUs containing fewer than 100 sequences across all our samples as well as those not present in at least 10% of either Nepenthes or Sarracenia microbiome samples. We then subsampled the OTU table for each category to 2000 sequences per sample, combined all observations of the OTUs by category (e.g. Nepenthes, Sarracenia or environment), and normalized by the number of samples in each category. We filtered our previously generated 16S and 18S phylogenetic trees using the resulting OTU tables and plotted them with the Interactive Tree of Life (iToL) program(Letunic and Bork, 2011) (Figure 2). The bacterial tree was rooted with Archaea, and the eukaryotic tree was rooted in Streptophyta (land plants and most green algae). We added barcharts along the outer edge of the trees, displaying the natural log of the abundance for each OTU in each category, and gray dots to each branch with bootstrap support of 0.7 or higher (Figure 2). The same trees, with branch lengths and tree scales included, are shown in Figure 2—figure supplement 1. The branches of the figure supplement trees were colored by either phylum (for bacteria) or by broad taxon levels (for eukaryotes).
 
-## Functional analyses
+### Functional analyses
 
 For the shotgun metagenomic data, we combined forward and reverse reads from all lanes for each sample, and used Trimmomatic to remove barcodes and low-quality sequences. We used HUMAnN2 (HMP Unified Metabolic Analysis Network 2, [Abubucker et al., 2012]) on Harvard University’s Odyssey computing cluster to identify individual reads by comparing and annotating reads to reads of known function, build profiles of identified functional genes for each sample, and normalize numbers of sequences across samples. We next compared our metagenomes to publicly available metagenomes from soil, lake, and phyllosphere habitats using MG-RAST (Glass et al., 2010; RRID:SCR:004814) and the NCBI’s Sequence Read Archive (SRA; RRID:SCR:004891; accession numbers are listed in Supplementary file 1 Table S5). We analyzed these metagenomes in the same way as our own data, also using HUMAnN2. To detect differentially abundant gene pathways in pitcher plants vs. the other metagenomes, we subset gene pathways to those with abundances and variances in the top 50% of the dataset, and used LEfSe (Linear Discriminant Analysis Effect Size, Segata et al., 2011) to identify statistically significant features. We reported the pathways with the five largest linear discriminant values for each group (Figure 5). We made NMDS plots of KO functional matrices with Bray-Curtis distances and a beanplot of chitinases using the vegan and beanplot (Kampstra, 2008) packages in R. We tested for differences in gene family abundances between pitcher plant and comparison metagenomes using Mann-Whitney U tests (function wilcox.test in R) and we adjusted P-values to control for false discoveries using the Benjamini-Hochberg procedure (Benjamini and Hochberg, 1995) (Figure 5).

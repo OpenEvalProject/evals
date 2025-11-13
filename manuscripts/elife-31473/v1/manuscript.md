@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.31473.001 Defining mechanisms of direct-acting antivirals facilitates drug development and our understanding of virus function. Heteroaryldihydropyrimidines (HAPs) inappropriately activate assembly of hepatitis B virus (HBV) core protein (Cp), suppressing formation of virions. We examined a fluorophore-labeled HAP, HAP-TAMRA. HAP-TAMRA induced Cp assembly and also bound pre-assembled capsids. Kinetic and spectroscopic studies imply that HAP-binding sites are usually not available but are bound cooperatively. Using cryo-EM, we observed that HAP-TAMRA asymmetrically deformed capsids, creating a heterogeneous array of sharp angles, flat regions, and outright breaks. To achieve high resolution reconstruction (<4 Å), we introduced a disulfide crosslink that rescued particle symmetry. We deduced that HAP-TAMRA caused quasi-sixfold vertices to become flatter and fivefold more angular. This transition led to asymmetric faceting. That a disordered crosslink could rescue symmetry implies that capsids have tensegrity properties. Capsid distortion and disruption is a new mechanism by which molecules like the HAPs can block HBV infection.
+Defining mechanisms of direct-acting antivirals facilitates drug development and our understanding of virus function. Heteroaryldihydropyrimidines (HAPs) inappropriately activate assembly of hepatitis B virus (HBV) core protein (Cp), suppressing formation of virions. We examined a fluorophore-labeled HAP, HAP-TAMRA. HAP-TAMRA induced Cp assembly and also bound pre-assembled capsids. Kinetic and spectroscopic studies imply that HAP-binding sites are usually not available but are bound cooperatively. Using cryo-EM, we observed that HAP-TAMRA asymmetrically deformed capsids, creating a heterogeneous array of sharp angles, flat regions, and outright breaks. To achieve high resolution reconstruction (<4 Å), we introduced a disulfide crosslink that rescued particle symmetry. We deduced that HAP-TAMRA caused quasi-sixfold vertices to become flatter and fivefold more angular. This transition led to asymmetric faceting. That a disordered crosslink could rescue symmetry implies that capsids have tensegrity properties. Capsid distortion and disruption is a new mechanism by which molecules like the HAPs can block HBV infection.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ Here, we used cryo-electron microscopy (cryo-EM) as a means to look at capsids i
 
 ## Results
 
-## HAP-TAMRA is a probe of core protein and CpAM interaction
+### HAP-TAMRA is a probe of core protein and CpAM interaction
 
 To better understand the relationship between CpAMs and core protein, we synthesized a fluorescent CpAM, HAP-TAMRA (Figure 1). HAP-TAMRA’s HAP13 core (Bourne et al., 2008) was extended with a three-carbon linker appended with a tetramethylrhodamine (TAMRA) dye. As the HAP13 core used in this synthesis was a racemic mixture, only half the compound is expected to be active (Deres et al., 2003). We anticipated the TAMRA moiety to extend into the capsid lumen from the HAP-binding pocket and cause minimal disruption to interactions between the HAP and protein. To verify the activity of HAP-TAMRA, we examined its effect on purified dimeric assembly domain, Cp149. We observed that assembly reactions of purified core protein in the presence of HAP-TAMRA produced large aberrant products that are characteristic of HAP-induced assembly (Figure 2b). For reference, assembly reactions without CpAMs (Figure 2b) led to particles morphologically consistent with an icosahedral shell.
 
@@ -63,13 +63,13 @@ This absorbance signal change is also visible in samples that are not purified 
 
 **Figure 4.:** (a) A cryo-micrograph shows a section of a field of Cp149 capsids treated with HAP-TAMRA. Particles appear asymmetric and have marked angles. None have the spherical cross-section typical of Cp149 capsids. (b–d) Cryo-micrographs of capsids were subject to 2D class averaging to identify their major characteristics. In each case, the classes are sorted by descending class distribution, (b) For apo-capsids of Cp149, lacking any HAP-TAMRA, all classes have a circular cross-section and a periphery of spikes. These seven classes encompass more than 80% of the Cp149 capsid particles sampled. (c) For micrographs of Cp149 particles soaked with HAP-TAMRA the most common class has an elliptical cross-section. Other classes have distinct and asymmetric faceting. The data in panels a and c are independent acquisitions of the same experimental conditions, demonstrating the repeatability of the effect. (d) The fourteen most populated classes from a micrograph of cysteine cross-linked Cp150 capsids treated with HAP-TAMRA resemble those of apo-Cp149 in panel b.
 
-## HAP-TAMRA distorts capsids
+### HAP-TAMRA distorts capsids
 
 Previous structural studies of HAPs with HBV core protein have depended on crystallography, which selects for regular complexes. Thus, when we looked at cryo-EM 2D class averages of HAP-TAMRA-saturated capsids we anticipated a field of isometric particles similar to apo-capsids (drug free) (Figures 2a and 4b). However, in both raw micrographs and 2D class averages, the heterogeneity of particle shapes with bound HAP was evident (Figure 4a,c): many particles had sharp corners, facets, and irregular outlines. To distinguish ‘distorted’ from the normal capsids, we performed 2-D class averaging to compare particles from Cp149-apo (Figure 4b) and Cp149+HAP TAMRA (Figure 4c) datasets. In this technique, particles are grouped based on dominant features of the microscopic image, rotationally oriented, and presented as an average. Apo-capsids (Figure 4b) had a round cross section with obvious spikes and distinct internal features. The capsids with HAP-TAMRA had a broad distribution of asymmetric shapes with ellipsoidal character and distinct faceting.
 
 Because of the structural irregularity of these capsids, they would be of limited use in pursuit of a high-resolution reconstruction. Therefore, we examined Cp150 capsids; Cp150 is a variant of Cp149 with an engineered disulfide bond linking the disordered C-terminal tails when in capsid form (Lee et al., 2017). Our rationale was that the inter-dimer disulfides would provide a soft positional restraint on the capsid, and prevent it from adopting conformations with extreme asymmetry due to bound probe. The 2D class averages of Cp150 capsids incubated with HAP-TAMRA (Figure 4c) showed regular and approximately spherical particles; suitable for further detailed structural analysis.
 
-## Cryo-EM structures of T = 4 and T = 3 capsids bound to HAP-TAMRA
+### Cryo-EM structures of T = 4 and T = 3 capsids bound to HAP-TAMRA
 
 To examine HAP-bound capsids, we reconstructed T = 4 and T = 3 Cp150-HAP-TAMRA capsids to 4.0 Å and 3.7 Å resolution, respectively, from a single dataset (Figures 5 and 6; Table 1). The resolution was sufficient to position and rebuild molecular models of protein and HAP-TAMRA (Video 1). These structures are, to our knowledge, the first instance of using cryo-EM to visualize a drug bound to a virus capsid and to show that T = 3 capsids bind CpAMs (Video 2). Cryo-EM also allowed high resolution analysis of changes to quaternary structure without the potential bias of crystallographic packing constraints. The T = 4 capsids were slightly larger than crystallographic structures, though each crystal structure has shown unique features (Venkatakrishnan and Zlotnick, 2016). The comparison to the T = 3 capsid, in particular, shows commonalities and differences in Cp–Cp interactions.
 
@@ -80,6 +80,152 @@ To examine HAP-bound capsids, we reconstructed T = 4 and T = 3 Cp150-HAP-TAMRA c
 ![Figure 6.](https://cdn.elifesciences.org/articles/31473/elife-31473-fig6-v1.jpg)
 
 **Figure 6.:** (a) Fourier shell correlation for the T = 4 and T = 3 reconstruction in green and purple, respectively. The dashed line indicates a correlation of 0.143. (b) The most populated 2D class averages from the T = 4 dataset reconstructed in Figure 5a. (c) The most populated 2D class averages from the T = 3 dataset reconstructed in Figure 5c.
+
+**Table 1.**
+ Image reconstruction statistics.The table summarizes the statistics for data collection, structure determination, and refinement.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Collection/Refinement Parameters</th>
+      <th>T=3</th>
+      <th>T=4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Microscope</td>
+      <td>FEI Titan Krios</td>
+      <td>FEI Titan Krios</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Dose (e- / Å2)</td>
+      <td>33</td>
+      <td>33</td>
+    </tr>
+    <tr>
+      <td>Detector</td>
+      <td>Gatan K2 Summit</td>
+      <td>Gatan K2 Summit</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.285</td>
+      <td>1.285</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td>0.5-3.5</td>
+      <td>0.5-3.5</td>
+    </tr>
+    <tr>
+      <td>Reconstruction (RELION)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Micrographs</td>
+      <td>679</td>
+      <td>679</td>
+    </tr>
+    <tr>
+      <td>Particle number (Initial)</td>
+      <td>15,066</td>
+      <td>24,823</td>
+    </tr>
+    <tr>
+      <td>Particle number (Final)</td>
+      <td>13,746</td>
+      <td>16,008</td>
+    </tr>
+    <tr>
+      <td>Symmetry</td>
+      <td>Icosahedral</td>
+      <td>Icosahedral</td>
+    </tr>
+    <tr>
+      <td>Box size (pixels)</td>
+      <td>380</td>
+      <td>380</td>
+    </tr>
+    <tr>
+      <td>Accuracy of rotations</td>
+      <td>0.434°</td>
+      <td>0.432°</td>
+    </tr>
+    <tr>
+      <td>Accuracy of translations (pixels)</td>
+      <td>0.50</td>
+      <td>0.60</td>
+    </tr>
+    <tr>
+      <td>Sharpening B-factor (Å2)</td>
+      <td>-140.93</td>
+      <td>-182.60</td>
+    </tr>
+    <tr>
+      <td>Final resolution (Å)</td>
+      <td>3.67</td>
+      <td>3.97</td>
+    </tr>
+    <tr>
+      <td>EMDB accession code</td>
+      <td>7295</td>
+      <td>7294</td>
+    </tr>
+    <tr>
+      <td>Model Refinement (PHENIX)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cross correlation (Whole Volume)</td>
+      <td>0.764</td>
+      <td>0.776</td>
+    </tr>
+    <tr>
+      <td>Cross correlation (Masked)</td>
+      <td>0.844</td>
+      <td>0.819</td>
+    </tr>
+    <tr>
+      <td>Ramachandran Plot</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Outliers</td>
+      <td>0.00%</td>
+      <td>0.00%</td>
+    </tr>
+    <tr>
+      <td>Allowed</td>
+      <td>4.3%</td>
+      <td>7.8%</td>
+    </tr>
+    <tr>
+      <td>Favored</td>
+      <td>95.7%</td>
+      <td>92.2%</td>
+    </tr>
+    <tr>
+      <td>PDB accession code</td>
+      <td>6BVN</td>
+      <td>6BVF</td>
+    </tr>
+  </tbody>
+</table>
 
 Besides the difference in diameter and the differing number of component Cp dimers, the local difference in T = 4 and T = 3 architecture is that quasi-sixfold vertices have twofold and threefold symmetry, respectively. A T = 4 quasi-sixfold has two repeats (B, C, D, B’, C’, and D’) subunits and in T = 3 there are three repeats (B, C, B’, C’, B’', and C’') (Figure 5). In T = 4 capsids, quasi-sixfold hexamers have four HAP-TAMRA molecules, while the T = 3 quasi-sixfold hexamers accommodate three HAP-TAMRA molecules. The HAP13 portion of the probe is nestled in the pocket between two adjacent dimers with the linker extending from the pocket, positioning the TAMRA near the center of the quasi-sixfold pore. In the T = 4 quasi-sixfold, the HAPs are in B, C, B’, and C’ pockets, which are respectively capped by C, D, C’ and D’ subunits (Figure 5b). In the T = 3 particles, HAPs are in B pockets capped by C subunits (Figure 5d). These results place the HAP moiety of HAP-TAMRA in the same pocket associated with other CpAMs HAP1, AT130, HAP18, and sulfamoyl benzamides.(Bourne et al., 2006; Venkatakrishnan et al., 2016; Zhou et al., 2017) No small molecule density was observed at the corresponding A (fivefold) and D sites, which are occluded by A and B subunits, respectively. The pocket of the T = 3 C subunit is occluded by the neighboring B subunit, resembling the interaction of the T = 4 D subunit with its neighboring B subunit.
 
@@ -93,7 +239,7 @@ Despite the quaternary differences between T = 3 and T = 4 capsids, the local en
 
 **Figure 8.:** T = 3 (a,b) and T = 4 (c,d) capsids are color coded by resolution. Spike tips are the lowest resolution features at 4.5–5 Å resolution. The interdimer interfaces near the HAP pockets and hydrophobic cores (i.e. the dimer chassis subdomain) at the intradimer interfaces are the highest resolution regions of both capsids. Variation of resolution is analogous to differences in crystallographic B factor.
 
-## HAPs promote increased faceting of the capsid
+### HAPs promote increased faceting of the capsid
 
 When comparing T = 3 to T = 4, and T = 4 CpAM-bound to T = 4 apo structures, we found that local similarities in protein structure do not translate to similarities one or two dimers away. Long range differences in quaternary structure were apparent when overlaying entire hexamers, for example overlaying T = 3 and T = 4 quasi-sixfold hexamers based on one set of AB dimers (Figure 9). The next subunit around the quasi-sixfold, the D subunit (T = 4) or C subunit (T = 3), show pronounced differences while the dimer on the far side of quasi-sixfold is completely misaligned. The dramatic effect arises because the small angular differences are amplified by distance. Another relevant example is the assembly-inactive core protein mutant Y132A.(Packianathan et al., 2010; Zhou et al., 2017; Klumpp et al., 2015; Qiu et al., 2017) The Y132A mutation disrupts normal interdimer interaction allowing crystal contacts that form hexagonal layers reminiscent of but distinct from subunit interactions in capsids. In this cryo-EM structure, density for Y132 is well-resolved (Figure 7e). While the Y132 mutant supports high resolution crystallography (Packianathan et al., 2010; Klumpp et al., 2015), it is impossible to predict CpAM effects to a capsid in that context. Such CpAM-induced quaternary differences between HBV capsids do not appear arise from changes in the binding to the HAP pocket. Rather, they arise from the way the capping subunit overlays the pocket and how these differences propagate across a capsid.
 
@@ -135,31 +281,39 @@ Binding kinetics also suggests some degree of cooperativity. We would expect to 
 
 In a broad sense, our results reaffirm the view that virus capsids are not inert containers. It is likely that some of the most important biological functions of icosahedral capsids may occur when they become non-icosahedral. We have demonstrated that non-icosahedral states of HBV capsids can be induced using CpAMs. Indeed, CpAMs can deform and even disrupt intact capsids, which suggest modes of action beyond the established mechanisms of assembly activation and misdirection. A molecule which simultaneously affects two or more stages of the lifecycle would reduce the impact of escape mutations, and increases the likelihood of clearing an infection.
 
+![Video 1.](https://cdn.elifesciences.org/articles/31473/elife-31473-video1.mp4.jpg)
+
+**Video 1.:** Intact surface-shaded capsids, contoured at 3.6 sigma, are shown with the AB dimers surrounding fivefold vertices shaded in dark grey, quasi-sixfold are alternating dark and light gray. HAP-TAMRA is red. An asymmetric unit is colored, disrupting the color scheme of one fivefold and one quasi-sixfold. For the T=4 capsid, the AB dimer is light blue and the CD dimer is dark blue. The quasi-sixfold has two B-C-D repeats. A quasi-sixfold is then extracted from the capsid and then the grey subunits and extra HAP-TAMRAs removed from the asymmetric unit. Density and then models are removed from the C HAP-TAMRA and CD dimer. The AB dimer with the B HAP-TAMRA are trimmed to show only the HAP pocket to show that density is evident for the residues that nestle the HAP moiety. Note that the linker and part of the TAMRA show clear density even at this high contour level.
+
+![Video 2.](https://cdn.elifesciences.org/articles/31473/elife-31473-video2.mp4.jpg)
+
+**Video 2.:** As with the T=4 move, intact surface-shaded capsids, contoured at 3.6 sigma. The AB dimers surrounding fivefold vertices shaded in dark grey, quasi-sixfold are alternating dark and light gray. HAP-TAMRA is red. An asymmetric unit is colored, disrupting the color scheme of one fivefold and one quasi-sixfold. For the T=3 capsid the AB dimer is light purple and the C subunit is dark purple. The quasi-sixfold has alternating B and C subunits. A quasi-sixfold is then extracted from the capsid and then the grey subunits and extra HAP-TAMRAs removed from the asymmetric unit. Density and then models are removed from the C HAP-TAMRA and CD dimer. In the T=3 movie this operation is repeated with the C subunit. The AB dimer with the B HAP-TAMRA are trimmed to show only the HAP pocket to show that density is evident for the residues that nestle the HAP moiety. Note that the linker and part of the TAMRA show clear density even at this high contour level.
+
 ## Materials and methods
 
-## HBV sample preparation
+### HBV sample preparation
 
 The Hepatitis B subtype adyw core protein assembly domain and the Cp150 mutant, in which three native cysteine are mutated to alanine and an additional C-terminal cysteine appended, were expressed in E. coli and purified by size exclusion as previously described (Zlotnick et al., 2007). Cp149 and Cp150 capsids were prepared for preliminary Cryo-EM from purified dimer by initiating assembly at 10 μM dimer concentration in 300 mM NaCl, 50 mM HEPES, pH 7.5 and allowing the reaction to proceed overnight. Residual un-assembled dimer was removed by purifying the fresh capsids via size exclusion. Purified capsids were then incubated with HAP-TAMRA at a molar excess overnight. For cryo-EM, capsids were then concentrated to >10 mg/ml.
 
-## Synthesis of HAP-TAMRA
+### Synthesis of HAP-TAMRA
 
 Synthesis of HAP13 (Bourne et al., 2008) and HAP-TAMRA are described in the patent literature (Zlotnick et al., 2014). Analysis of the product by HPLC at the 280 nm and 555 nm wavelengths showed a product with ~99% purity; ESI-TOF MS: calculated for C51H50ClFN8O7, m/z 940.35; M+ + H, m/z 941.36; Found, m/z 941.3; calculated for M+ + Na, m/z 963.4; Found, m/z 963.3.
 
-## Negative stain electron microscopy
+### Negative stain electron microscopy
 
 Samples from Figure 2a,b represent Cp149 assembly reactions at 50 mM HEPES, 300 mM NaCl, and 10 μM dimer. The reaction in Figure 2b was initiated in the presence of 40 μM HAP-TAMRA. Both samples were adsorbed to the surface of EMS carbon film 300 mesh coper grids, washed with water, and stained with 2% uranyl acetate. Samples were imaged with a JEOL 3200-FS electron microscope operated at 300kV.
 
-## Cryo-electron microscopy and image processing
+### Cryo-electron microscopy and image processing
 
 Samples for Cryo-EM were applied to a glow-discharged Quantifoil holey-carbon grids (R2/2). The grids were blotted with filter paper for 4 s before automated plunging into liquid ethane using an FEI vitrobot. The Cp149+HAP TAMRA data from Figure 11 and Figure 4 panel a were imaged using a JEOL 3200-FS electron microscope operated at 300kV with an in-column energy filter. Images were recorded at a nominal magnification of 80,000X, with a pixel size of 1.5 Å, maintaining less than 35e- Å2 dose, recorded on a Gatan Ultrascan 4000 4k × 4 k CCD detector. The 2D class averages shown in Figure 4 panels b, c, and d were collected on the same JEOL 3200-FS microscope, but with a Direct Electron DE-12 detector, with an image sampling rate of 1.01 Å/pixel. For the high-resolution 3D structure determination, first presented in Figure 5, samples were imaged on a FEI Titan Krios operated at 300 kV at a nominal magnification of 22,500. Images were recorded on a Gatan K2 Summit detector operating in ‘super-resolution’ mode, resulting in a pixel size of 0.65 Å with a dose of ~33 e- Å2. Each exposure was 8 s long, and was collected as 35 individual frames. The data collection process was semi-automated using the Leginon system.(Suloway et al., 2005) The final maps are deposited in the EMDB database as 7295 for the T = 3 map and 7294 for the T = 4 map (Table 1).
 
 Cryo-EM classification and reconstruction was implemented using standard protocols of the EMAN2, Motioncorr2, and Relion software programs (Kimanius et al., 2016; Zheng et al., 2016; Tang et al., 2007). Upon convergence of the 3D structures, each map was sharpened by applying a negative B-factor which was obtained using the Guinier fitting procedure implemented in Relion (Rosenthal and Henderson, 2003). To assess the local variability in the quality of the structure a local resolution analysis was employed, also implemented in Relion. The local resolution procedure determined local FSC with a sampling window of 10 Å, using the same negative B-factor obtained at the end of refinement.
 
-## Model determination
+### Model determination
 
 The crystal structures of both apo capsid (1qgt)(Wynne et al., 1999b) and HAP18 bound capsid (5d7y)(Venkatakrishnan et al., 2016) were used as starting points for flexible model refinement imposing icosahedral non-crystallographic symmetry constraints, and using the PHENIX and eLBOW software programs (Afonine et al., 2012; Moriarty et al., 2009; Emsley et al., 2010). The model validation statistics we report were obtained from the final output of the Phenix real space refinement tool. To refine the pixel size of the map, we fit the model of the asymmetric unit into density and measured cross-correlation across pixel sizes. The optimal pixel size was determined to be 1.285 Å, compared to 1.30 Å as determined by the microscope calibration. The final maps and models reflect this change. Structural comparisons and figure creation were carried out in UCSF Chimera. The final structure coordinates are deposited in the protein data bank as 6BVN for the T = 3 structure and 6BVF for the T = 4 structure.
 
-## Detection of binding in solution
+### Detection of binding in solution
 
 The final buffer conditions for all binding assays were 300 mM NaCl, 20 mM Tris, 1% DMSO, and pH 7.5 with varying protein and HAP-TAMRA. Size exclusion chromatography assays were performed using a superose 6 30/10 column plumbed into a Shimadzu HPLC equipped with a diode array detector. The HAP-TAMRA absorbance eluting in the capsid fractions was attributed to the capsid bound population. All HAP-TAMRA absorbance eluting later was attributed to free ligand. It is important to note that because the HAP-TAMRA probe is synthesized as a racemic mixture, and because only a single enantiomer is known to bind the HAP pocket, we expected to see at least half of the input HAP-TAMRA eluting as free ligand. When plotting the increase in 520 nm signal in the capsid fraction (Figure 2d), the A520 at 7.5 ml was used, corresponding to the pre-established center of the capsid elution volume.
 

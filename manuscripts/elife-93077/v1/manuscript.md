@@ -9,16 +9,16 @@
 
 ### Affiliations
 
-1. https://ror.org/057q4rt57 Developmental and Stem Cell Biology Program, The Hospital for Sick Children Toronto Canada
-2. https://ror.org/03dbr7087 Department of Molecular Genetics, University of Toronto Toronto Canada
-3. https://ror.org/002shna07 Knight Cancer Institute, Oregon Health & Science University Portland United States
-4. https://ror.org/009avj582 Department of Pediatrics, Papé Research Institute, Oregon Health & Science University Portland United States
+1. Developmental and Stem Cell Biology Program, The Hospital for Sick Children Toronto Canada ([ROR:057q4rt57](https://ror.org/057q4rt57))
+2. Department of Molecular Genetics, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+3. Knight Cancer Institute, Oregon Health & Science University Portland United States ([ROR:002shna07](https://ror.org/002shna07))
+4. Department of Pediatrics, Papé Research Institute, Oregon Health & Science University Portland United States ([ROR:009avj582](https://ror.org/009avj582))
 
 † Corresponding author
 
 ## Abstract
 
-High-throughput vertebrate animal model systems for the study of patient-specific biology and new therapeutic approaches for aggressive brain tumors are currently lacking, and new approaches are urgently needed. Therefore, to build a patient-relevant in vivo model of human glioblastoma, we expressed common oncogenic variants including activated human EGFR vIII and PI3KCA H1047R under the control of the radial glial-specific promoter her4.1 in syngeneic tp53 loss-of-function mutant zebrafish. Robust tumor formation was observed prior to 45 days of life, and tumors had a gene expression signature similar to human glioblastoma of the mesenchymal subtype, with a strong inflammatory component. Within early stage tumor lesions, and in an in vivo and endogenous tumor microenvironment, we visualized infiltration of phagocytic cells, as well as internalization of tumor cells by mpeg1.1 :EGFP+ microglia/macrophages, suggesting negative regulatory pressure by pro-inflammatory cell types on tumor growth at early stages of glioblastoma initiation. Furthermore, CRISPR/Cas9-mediated gene targeting of master inflammatory transcription factors irf7 or irf8 led to increased tumor formation in the primary context, while suppression of phagocyte activity led to enhanced tumor cell engraftment following transplantation into otherwise immune-competent zebrafish hosts. Altogether, we developed a genetically relevant model of aggressive human glioblastoma and harnessed the unique advantages of zebrafish including live imaging, high-throughput genetic and chemical manipulations to highlight important tumor-suppressive roles for the innate immune system on glioblastoma initiation, with important future opportunities for therapeutic discovery and optimizations.
+High-throughput vertebrate animal model systems for the study of patient-specific biology and new therapeutic approaches for aggressive brain tumors are currently lacking, and new approaches are urgently needed. Therefore, to build a patient-relevant in vivo model of human glioblastoma, we expressed common oncogenic variants including activated human EGFRvIII and PI3KCAH1047R under the control of the radial glial-specific promoter her4.1 in syngeneic tp53 loss-of-function mutant zebrafish. Robust tumor formation was observed prior to 45 days of life, and tumors had a gene expression signature similar to human glioblastoma of the mesenchymal subtype, with a strong inflammatory component. Within early stage tumor lesions, and in an in vivo and endogenous tumor microenvironment, we visualized infiltration of phagocytic cells, as well as internalization of tumor cells by mpeg1.1:EGFP+ microglia/macrophages, suggesting negative regulatory pressure by pro-inflammatory cell types on tumor growth at early stages of glioblastoma initiation. Furthermore, CRISPR/Cas9-mediated gene targeting of master inflammatory transcription factors irf7 or irf8 led to increased tumor formation in the primary context, while suppression of phagocyte activity led to enhanced tumor cell engraftment following transplantation into otherwise immune-competent zebrafish hosts. Altogether, we developed a genetically relevant model of aggressive human glioblastoma and harnessed the unique advantages of zebrafish including live imaging, high-throughput genetic and chemical manipulations to highlight important tumor-suppressive roles for the innate immune system on glioblastoma initiation, with important future opportunities for therapeutic discovery and optimizations.
 
 ## Introduction
 
@@ -34,9 +34,25 @@ Complex intercellular communication in glioblastoma highlights the importance of
 
 ## Results
 
-## Oncogenic MAPK/AKT pathway activation drives glial-derived tumor formation in syngeneic tp53 mutant zebrafish
+### Oncogenic MAPK/AKT pathway activation drives glial-derived tumor formation in syngeneic tp53 mutant zebrafish
 
 To generate a patient-relevant brain tumor model in zebrafish, we used the zebrafish her4.1 promoter to simultaneously over-express constitutively active human EGFR (EGFRvIII) and PI3KCA (PI3KCAH1047R) variants in neural progenitors and radial glia of syngeneic tp53 loss-of-function mutant larvae (Ignatius et al., 2018; Takke et al., 1999; Than-Trong et al., 2020). Co-injection of linearized her4.1:EGFRvIII + her4.1:PI3KCAH1047R + her4.1:mScarlet transgenes into syngeneic (CG1) tp53-/- mutant embryos at the one-cell stage led to broad transient mScarlet expression for 5–6 days followed by rare mosaic expression in the anterior CNS (henceforth referred to as p53EPS, Figure 1A), as expected from a transient mosaic injection strategy used to express stable concatemers of DNA vectors (Langenau et al., 2008). At 15 days post fertilization (dpf), this transgene combination led to visible mScarlet-positive brain lesions in the anterior CNS of live zebrafish (Figure 1B–D). Injections of single linearized vector and vector combinations resulted in a maximum incidence of approximately 15–20% affected zebrafish induced by the p53EPS combination, by 45 dpf (Figure 1D). Intertumoral variability was observed among p53EPS mosaic-injected zebrafish, with tumors of variable size arising in different brain regions including the telencephalon and diencephalon regions (8/29=27.5%, from three independent tumor screens), and the optic tectum/mesencephalon region (21/29=72.5%, from three independent tumor screens) (Figure 1—figure supplement 1). To further define the tissue of origin of zebrafish p53EPS CNS lesions, we co-injected linearized gfap:EGFP (Don et al., 2017) and visualized EGFP expression in 100% of brain masses at 30–40 dpf (Figure 1A and B), supporting glial identity and a novel in vivo model of malignant glioma.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/93077/elife-93077-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of modeling strategy where linearized transgene vectors with the zebrafish her4.1 promoter driving human EGFRvIII, human PI3KCAH1047R, and mScarlet fluorescent proteins are co-injected at the one-cell stage into syngeneic (CG1 strain) tp53-/- mutant zebrafish embryos. Starting at 15 days post fertilization (dpf), mosaic-injected zebrafish were screened for CNS tumor formation, indicated by mScarlet expression in the brain region of live zebrafish. Co-injection of gfap:GFP linearized transgene is used to assess glial-specific cell fate specification in vivo. (B) her4.1:mScarlet and gfap:GFP expression in the anterior CNS of mosaic-injected syngeneic (CG1 strain) tp53-/- zebrafish at 30 dpf. (C) Whole brain dissected from a p53EPS mosaic-injected zebrafish at 30 dpf. (D) Cumulative frequencies of mScarlet+ CNS lesions in syngeneic tp53-/- mutant (CG1tp53-/-) and wild-type (CG1) zebrafish injected at the one-cell stage with her4.1:EGFRvIII (E), her4.1:PI3KCAH1047R (P), and/or her4.1:mScarlet (S). (E) Syngeneic (CG1 strain) zebrafish at 30 dpf engrafted with her4.1:mScarlet+/gfap:GFP+ brain tumor cells, following primary transplantation (1T) at 2 dpf into the embryonic brain ventricle. (F) Whole brain dissected from engrafted syngeneic host (CG1) zebrafish at 30 dpf. (G) Fluorescence-activated cell sorting (FACS) plot of bulk syngeneic host brain following primary transplant (1T) of her4.1:EGFRvIII + her4.1:PI3KCAH1047R + her4.1:mScarlet + gfap:GFP brain tumor cells. (H–O) Histological staining of uninjected control (H–K) and p53EPS tumor-burdened brains (L–O). (H, L) Hematoxylin and eosin (H&E) staining of coronal sections highlighting telecephalon and diencephalon regions of representative control (H) and p53EPS (L) brains. (I, M) Proliferating cell nuclear antigen (PCNA) staining of control (I) and p53EPS (M) brain sections. (J, N) Phosphorylated-ERK (p-ERK) staining and quantifications reveal increased MAPK signaling pathway activation in p53EPS tumors (p<0.001, n=3 independent tumor sections). (K, O) Phosphorylated-Akt (p-Akt) staining and quantifications reveal increased Akt signaling pathway activity in p53EPS tumors (p=0.007, n=3 independent tumor sections). Scare bars represent 50 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93077/elife-93077-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Sample screens of p53EPS-injected fish showing distinct tumor initiation sites and varying degrees of mScarlet fluorescent intensity. Tumors predominantly arise in the optic tectum/mesencephalon region with a subset appearing in the telencephalon/diencephalon region. Distinct tumors did not arise in the cerebellum/rhombencephalon regions over the course of our experiments.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93077/elife-93077-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Scale bars represent 50 μm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/93077/elife-93077-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) her4.1:mScarlet and gfap:GFP expression in the anterior CNS of 30 days post fertilization (dpf) syngeneic (CG1) tp53-/- zebrafish injected at the one-cell stage with linearized her4.1:KRASG12D + her4.1:PI3KCAH1047R + her4.1:EGFP + gfap:mScarlet transgenes. (B) Whole brain dissected from mosaic-injected her4.1:KRASG12D + her4.1:PI3KCAH1047R + her4.1:EGFP zebrafish at 30 dpf. (C) Cumulative frequencies of EGFP+ brain lesions in syngeneic tp53-/- mutant (CG1tp53-/-) and wild-type (CG1) zebrafish injected at the one-cell stage with her4.1:KRASG12D (K), her4.1:PI3KCAH1047R (P), and/or her4.1:EGFP (G). (D) Immunohistochemical staining of proliferating cell nuclear antigen (PCNA), phosphorylated-ERK (p-ERK), and phosphorylated-AKT (p-AKT) on her4.1:KRASG12D + her4.1:PI3KCAH1047R + her4.1:EGFP tumor section. Quantification of p-ERK and p-AKT positive cells within total field. Scale bars represent 50 μm.
 
 To test for transformation of p53EPS cells from primary mosaic-injected animals, we harvested bulk tissue from dissected zebrafish brains and transplanted dissociated cells into the hindbrain ventricles of 2 dpf syngeneic tp53 wild-type (CG1) zebrafish (Mizgireuv and Revskoy, 2006). At approximately 18 days post-transplant (18 dpt, or 20 dpf), we screened for mScarlet+ fluorescence and visualized her4.1+/gfap+ tumor cell outgrowth in 16–25% of transplanted hosts (n=3 independent screens, Figure 1E and F), supporting oncogenic transformation and malignant growth in vivo of p53EPS cells. Fluorescence-activated cell sorting (FACS) revealed fluorescently labeled tumor cells in un-labeled syngeneic host brains and co-expression of her4.1:mScarlet/gfap:EGFP (Figure 1G), further supporting tumor growth from a glial-derived progenitor cell, which was expected from her4.1-specific oncogene activation during zebrafish development (Than-Trong et al., 2020).
 
@@ -44,9 +60,21 @@ We performed serial sectioning of uninjected control and primary p53EPS zebrafis
 
 To assess oncogenic signaling pathway activation, we stained unaffected and p53EPS tumor-positive brain sections for phosphorylated-ERK (p-ERK) and phosphorylated-AKT (p-AKT), indicators of activated MAPK and AKT signaling pathways, respectively (Figure 1J–K and N–O). Compared to normal brains, we found increased p-ERK and p-AKT staining within tumor lesions, consistent with elevated MAPK and AKT activation driving malignant transformation (Figure 1N–O). To further validate effects of relevant downstream signaling pathway activation, we also co-injected linearized her4.1:KRASG12D + her4.1:PI3KCAH1047R + her4.1:EGFP into tp53-/- embryos (p53KPG). At 15–20 dpf, we visualized tumor onset and penetrance comparable to p53EPS (Figure 1—figure supplement 3), suggesting a dominant role for MAPK/AKT pathway activation downstream of RTK signaling in driving tumor formation, and a flexible oncogenic strategy for inducing robust brain tumor formation in zebrafish.
 
-## Gene set enrichment analyses reveal gene expression patterns consistent with human mesenchymal glioblastoma and inflammation
+### Gene set enrichment analyses reveal gene expression patterns consistent with human mesenchymal glioblastoma and inflammation
 
 To further characterize our novel zebrafish brain tumor models, we performed bulk RNA sequencing (RNAseq) of three independent p53EPS tumor-burdened brains, three independent p53KPS tumor-burdened brains, and three age-matched, control-injected zebrafish brains that remained tumor-free at the time of harvesting tissue. Using hierarchical clustering on normalized gene expression, our tumor-free control samples clustered together and apart from p53EPS and p53KPS tumor brains, which displayed a recognizable level of transcriptional variability across principal components (Figure 2A). Interestingly, p53EPS and p53KPS samples failed to cluster according to oncogenic drivers (Figure 2A), suggesting molecular similarities as well as inter-tumor heterogeneity reflecting differences in tumor location, size, and contribution of tumor cells to total sample inputs.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/93077/elife-93077-fig2-v1.jpg)
+
+**Figure 2.:** (A) Principal component analysis (PCA) of mRNA sequencing from whole control-injected brains (CTRL), p53EPS, and p53KPS tumor-burdened brains. (B) Heatmap of normalized counts for genes upregulated in p53EPS tumor-burdened brains (log2foldChange>2, padj<0.05), compared to whole control-injected brains (CTRL). A selected list of upregulated transcripts is indicated. (C) Gene set enrichment analysis (GSEA) plots of published gene signatures for mesenchymal subtype glioblastoma for genes differentially regulated in p53EPS compared to control-injected brains (McLendon et al., 2008; Wang et al., 2017). Normalized enrichment scores (NES) and nominal p-values are indicated. (D) Bar plot of NES from GSEA of Hallmark gene sets (Villanueva et al., 2011). (E) Volcano plots of differentially expressed genes between sorted mScarlet+ p53EPS tumor cells and control-injected whole brain tissue (CTRL WB), as well as between sorted mScarlet-negative cells from p53EPS tumor-burdened brains and control-injected whole brains (CTRL WB). (F) her4.1:mScarlet and rag2:EGFP expression in live zebrafish with a p53EPS tumor at 30 days post fertilization (dpf). (G) Fluorescence-activated cell sorting (FACS) plot of p53EPS brain with rag2:EGFP co-expression from (F). (H, I) her4.1:mScarlet and mpeg1.1:EGFP expression in live zebrafish with a p53EPS tumor at 30 dpf.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93077/elife-93077-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Normalized enrichment scores (NES) and nominal p-values are indicated.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/93077/elife-93077-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Gene expression in pooled her4.1:mScarlet+/gfap:EGFP+ fluorescence-activated cell sorting (FACS)-sorted cells relative to non-tumor control brain tissue. *p<0.01, **p<0.001, Student’s t-test.
 
 Given the relevance of our p53EPS driver combination to human glioblastoma, we chose to focus the remainder of our molecular analyses on p53EPS samples. Using differential gene expression analysis, we identified a conserved set of differentially expressed (DE) genes in p53EPS tumor brains, with 236 significantly upregulated and 28 downregulated genes, compared to control-injected brains at 20–30 dpf (2>log2foldChange>–2, adjusted p-value<0.05, Supplementary file 1, Supplementary file 2, Figure 2B). Using human orthologs of DE genes, we performed gene set enrichment analysis (GSEA) (Mootha et al., 2003; Subramanian et al., 2005), comparing our p53EPS zebrafish model to published expression patterns for human glioblastoma subtypes, as well as embryonal brain tumors including designated subtypes of medulloblastoma (Cavalli et al., 2017; McLendon et al., 2008; Wang et al., 2017). Among these gene sets, we found a significant enrichment for the mesenchymal subtype of human glioblastoma in p53EPS DE genes (Figure 2C, Supplementary file 3; McLendon et al., 2008; Wang et al., 2017). In contrast, while certain genes for other glioblastoma and/or medulloblastoma subtypes were upregulated in p53EPS samples, no significant enrichment was found for these specific gene expression signatures (Figure 2—figure supplement 1, Supplementary file 3; Cavalli et al., 2017; McLendon et al., 2008; Wang et al., 2017).
 
@@ -54,25 +82,57 @@ To assess potential underlying molecular mechanisms involved in p53EPS formation
 
 Given the in vivo context and contribution of tumor and non-tumor cell types to our bulk RNAseq analysis, we decided to assess RNA expression in FACS-sorted her4.1:mScarlet-positive tumor cells, as well as her4.1:mScarlet-negative bulk stromal cells, compared to non-tumor whole brain tissue (Figure 2E, Supplementary file 5). Interestingly, we observed increased immune cell and inflammatory gene expression in both p53EPS tumor and stromal cell fractions compared to control unaffected whole brain tissue, including transcripts associated with myeloid cell types (mpeg1, irf7, irf8), lymphoid progenitor and specific subtype regulators (rag1, rag2, lck), stat1a/b, fas cell surface death receptor, and Toll-like receptor 4b (tlr4bb), among other genes involved in immune responses (adjusted p-value<0.0001, Figure 2E, Supplementary file 5). We validated a selection of genes from RNAseq using RT-PCR (Figure 2—figure supplement 2), as well as transient co-injection of linearized transgene with our EPS mix to assess tumor cell-specific expression of lymphoid rag2:EGFP and myeloid mpeg1.1:EGFP at 30 dpf (Figure 2F–I). Interestingly, we observed co-expression of her4.1:mScarlet/rag2:EGFP and her4.1:mScarlet/mpeg1.1:EGFP in p53EPS tumors (Figure 2F–I), suggesting promoter activity at certain immune-associated genes within established p53EPS tumor cells in vivo. These data suggest inflammation-associated gene expression in both zebrafish glioblastoma-like cells and the TME and is consistent with inflammatory gene expression in tumor cells associated with immune evasion and in vivo growth in other models (Gangoso et al., 2021; Yang et al., 2022). Altogether, our in vivo expression data supports p53EPS zebrafish as a comparable and relevant model system to study glioblastoma tumor biology, as well as intercellular interactions within an endogenous TME.
 
-## Zebrafish mesenchymal glioblastoma-like tumors recruit activated mononuclear phagocytes at early stages of tumor formation
+### Zebrafish mesenchymal glioblastoma-like tumors recruit activated mononuclear phagocytes at early stages of tumor formation
 
 Given that p53EPS tumor-burdened brains displayed strong enrichment for transcriptional signatures associated with inflammatory signaling, we were interested in the role for innate immune cells in the earliest stages of p53EPS tumor formation. Myeloid cells including microglia and macrophages are recruited in many different subtypes of primary brain tumors and in brain metastases (Gutmann and Kettenmann, 2019; Khan et al., 2023). However, how phagocyte populations affect glioblastoma initiation is less well understood given that most studies utilize established tumor cell models and/or patient-derived tissue xenograft transplantations into immune-compromised host animals. To first determine whether myeloid-derived phagocytic cell lineages are enriched in p53EPS lesions at early stages of tumor initiation, we used neutral red staining that labels lysosomal-rich phagocytes, irrespective of cell type (Figure 3A–C; Herbomel et al., 2001; Shiau et al., 2015). At 10 dpf, we observed enrichment of neutral red-positive foci in regions of her4.1:mScarlet+ fluorescent intensity (Figure 3B and C), suggesting phagocyte infiltration during p53EPS initiation, prior to typical observation of macroscopic tumor masses (Figure 1D). To assess the activation state of phagocytes in and surrounding p53EPS tumors, we co-injected our oncogene combination into tp53-/- embryos carrying a Tg(tnfa:EGFP) transgenic marker of activated and pro-inflammatory phagocytes (Hao et al., 2012; Nguyen-Chi et al., 2015), and observed enrichment of tnfa:EGFP single-positive cells in her4.1:mScarlet+ lesions (Figure 3D and E). We also performed GSEA against immunologic signature gene sets from the MSigDB (Villanueva et al., 2011; Mootha et al., 2003; Subramanian et al., 2005), and identified multiple enriched gene expression signatures associated with inflammation and inflammatory cell types in p53EPS tumor-burdened brains (Supplementary file 6). p53EPS displayed features of both pro- and anti-inflammatory gene expression, which is consistent with a mixed immune activation/suppressive state in glioblastoma known to play an important role in tumor progression in patients (Biswas et al., 2008; Karimi et al., 2023; Quail and Joyce, 2017; Ren et al., 2023). However, p53EPS tissues more significantly enriched for gene expression associated with activated and pro-inflammatory phagocytes including classical M1 macrophages, compared to alternative M2 polarized macrophages, and genes typically downregulated during M2 polarization following macrophage colony stimulating factor treatment (Figure 3—figure supplement 1, Supplementary file 6), further suggesting strong promotion of inflammation within the TME.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/93077/elife-93077-fig3-v1.jpg)
+
+**Figure 3.:** (A–C) Neutral red staining of p53EPS mScarlet tumor-negative (A) and mScarlet tumor-positive brains (B, C) at 10 days post fertilization (dpf). Neutral red foci in early-stage lesions are highlighted with arrows and are indicative of phagocytic cells. (D) Whole brain with p53EPS-induced tumor in a transgenic Tg(tnfa:EGFP) zebrafish at 20 dpf. (E) Z-stack projection of live confocal imaging of p53EPS tumor in transgenic Tg(tnfa:EGFP) background. (F–K) Z-stack projections of control uninjected (F–H) and p53EPS brains (I–K) at 5 dpf (F ,I), 7 dpf (G, J), and 9 dpf (H, K) in transgenic Tg(mpeg1.1:EGFP) background. White arrows highlight an early-stage p53EPS lesion and associated mpeg:EGFP+ cells. (L) Z-stack projections of two independent p53EPS brains at 12 dpf in transgenic Tg(mpeg1.1:EGFP) background. (M) Quantification of tumor-associated mpeg1.1:EGFP+ cells with overlapping and/or internalized her4.1:mScarlet+ punctae (n=3 independent tumors).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93077/elife-93077-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** GSEA plots of macrophage-specific gene expression at early (DAY3 UP) and late (DAY3 Down) time points of stimulation with macrophage colony stimulating factor (MCSF). Normalized enrichment scores (NES) and nominal p-values are indicated.
 
 Given enrichment for tnfa:EGFP+ phagocytes and signatures associated with pro-inflammatory macrophages in our glioblastoma model, we decided to investigate microglia/macrophages cell dynamics in vivo using live confocal imaging following co-injection of the linearized transgene combination into tp53-/-; Tg(mpeg1.1:EGFP) zebrafish (Ellett et al., 2011). We first looked at a time-course of lesion formation at 5, 7, and 9 dpf relative to microglia in the zebrafish brain (Figure 3F–K), which colonize the zebrafish neural retina by 48 hpf, and the optic tectum by 84 hpf (Herbomel et al., 2001). At 5 dpf (120 hpf), we observed comparable levels of mpeg1.1:EGFP+ microglia throughout the cephalic region and in the brain in both control and p53EPS-injected zebrafish (Figure 3F, I). p53EPS-injected zebrafish brains displayed mosaic cellular expression of her4.1:mScarlet; however, cells were sparse and diffuse, and no large intensely fluorescent tumor-like clusters were detected at this stage (Figure 3I, n=12/12 tumor negative). At 7 dpf, we detected small clusters of her4.1:mScarlet+ cells (Figure 3J, n=5/9), indicative of early lesion formation. Interestingly, these lesions were surrounded and/or infiltrated by mpeg1.1:EGFP+ microglia, while at 9 dpf her4.1:mScarlet+ expression became highly specific to tumor lesions, and these lesions were consistently associated with mpeg1.1:EGFP+ microglia/macrophages (Figure 3K, n=8/8 tumor-positive zebrafish).
 
 At 12 dpf in p53EPS zebrafish with established tumors, we observed fluorescent mpeg1.1:EGFP+ cells surrounding and within regions of concentrated her4.1:mScarlet+ fluorescence (Figure 3L, Video 1). Microglia/macrophages outside of early-stage her4.1:mScarlet+ lesions displayed highly ramified morphologies, with several processes that were extended and retracted, indicative of environmental surveillance (Figure 3L, Video 1; Nimmerjahn et al., 2005). mpeg1.1:EGFP+ microglia/macrophages infiltrated into dense her4.1:mScarlet+ regions displayed more rounded and amoeboid-like morphology, supporting their activation in association with p53EPS oncogenic cells (Karperien et al., 2013). Interestingly, mpeg1.1:EGFP+ microglia/macrophages dynamically interacted with her4.1:mScarlet+ cells (Video 1, Video 2), and in p53EPS oncogenic masses, mpeg1.1:EGFP+ microglia/macrophages associated closely with and often displayed internalized her4.1:mScarlet+ punctate cells (Figure 3L and M), suggesting engulfment and removal of p53EPS cells during tumor formation in vivo. Together with our expression data, visualization of infiltrating myeloid-derived immune cells in p53EPS glioblastoma-like lesions, dynamic mpeg+ microglia/macrophages-p53EPS interactions, and tumor cell engulfment suggests anti-tumoral activity at early stages that could negatively affect tumor formation in vivo.
 
-## Inflammation-associated irf7 and irf8 are required to inhibit p53EPS tumor formation in vivo
+![Video 1.](https://cdn.elifesciences.org/articles/93077/elife-93077-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/93077/elife-93077-video2.mp4.jpg)
+
+### Inflammation-associated irf7 and irf8 are required to inhibit p53EPS tumor formation in vivo
 
 Interferon regulatory factor (Irf) proteins regulate transcription of interferon genes and support a variety of different immune reposes. Irf7 and Irf8 are critical for global activation of the type I IFN response following stimulation and for myeloid cell development, respectively (Günthner and Anders, 2013; Ning et al., 2011; Shiau et al., 2015). Irf8 is a conserved determinant of macrophage cell fate, as well as dendritic cell survival and function, and irf8 mutant zebrafish lack microglia/macrophages in the brain up to 31 dpf (Shiau et al., 2015; Sichien et al., 2016). Irf7 also drives differentiation of macrophages; however, in zebrafish and other systems, Irf7 is more broadly activated in immune cells in response to infection, with evidence also supporting non-immune cell-related functions during development and cancer progression (Feng et al., 2016; Gangoso et al., 2021; Günthner and Anders, 2013; Hu et al., 2022; Ning et al., 2011; Yang et al., 2022). Interestingly, we observed upregulation of several interferon regulatory factor (Irf) family members including irf7 and irf8 in p53EPS tumor-burdened brains (Figure 2B, Supplementary file 1, Supplementary file 2), suggesting potential roles for these master regulators of inflammation on immune-related responses during p53EPS tumorigenesis in vivo. Therefore, to assess functional roles for Irf7 and Irf8 in p53EPS formation, we used a transient CRISPR/Cas9 gene targeting approach to knock down irf7 or irf8 genes prior to p53EPS tumor formation using co-injection of two to three guide RNAs (gRNAs) each targeting irf7 or irf8 (Supplementary file 7), together with Cas9 protein and linearized EPS into one-cell stage tp53-/- embryos. At 2–5 dpf, we extracted DNA from a subset of injected embryos and observed a gene targeting efficiency of >90% and >65% INDELS at the irf7 or irf8 loci, respectively (ICE Analysis, https://ice.synthego.com/#/, Synthego, 2019). Gene transcript knock-down was also verified using RT-PCR (Figure 4—figure supplement 1). Consistent with previous reports, irf8 knock-down resulted in significant reductions in neutral red-positive phagocytes at 8–10 dpf (Figure 4—figure supplement 2; Shiau et al., 2015), and while no significant differences in neutral red-positive phagocyte number were observed following irf7 gene targeting, irf7 CRISPR/Cas9-injected animals displayed early mortality un-related to brain tumor formation, with ~80% of CRISPR-injected animals displaying illness prior to 2 months of age, consistent with a broad requirement for Irf7 in immune responses, among other functions.
 
 Remarkably, following irf7 or irf8 gene knock-down with p53EPS, we observed robust tumor formation, with 65% of irf7-targeted and 42% of irf8-targeted p53EPS zebrafish developing tumors by 30 dpf, compared to 20% p53EPS incidence (Figure 4A–D, irf7 p<0.0001, irf8 p=0.0155, Fisher’s exact test), suggesting an important inhibitory role for irf7 and irf8 in p53EPS tumor initiation. In p53EPS tumor brains with irf7 and irf8 knock-down, we observed reduced expression of genes associated with our inflammation signature in p53EPS tumor-burdened brains, including immune evasion-associated transcripts like suppressor of cytokine signaling 1a (socs1a) (Figure 4—figure supplement 1), suggesting reduced tumor-specific inflammation and associated immune evasion mechanisms, which were previously shown to be upregulated in response to anti-tumor cell infiltration (Gangoso et al., 2021). To further validate gene targeting and assess the spatial localization of irf7 expression within the TME, we performed fluorescent in situ hybridization (FISH) in control and irf7 knock-down tumors and detected robust transcript expression within early-stage p53EPS lesions at 8 dpf (Figure 4E). In animals co-injected with irf7 CRISPR, we detected p53EPS tumor formation, albeit with reduced irf7 in and surrounding tumor cells (Figure 4E), suggesting potential roles for irf7 in inhibiting p53EPS initiation in tumor cells and/or within the TME.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/93077/elife-93077-fig4-v1.jpg)
+
+**Figure 4.:** (A–C) Primary (1°) control (A), irf7 CRISPR/Cas9 (B), and irf8 CRISPR/Cas9 (C) injected p53EPS at 30 days post fertilization (dpf). (D) p53EPS incidence at 30 dpf in control (n=3 independent experiments, 108 zebrafish), irf7 CRISPR/Cas9 (***p<0.0001, Fisher’s exact test, n=2 independent experiments, 31 zebrafish), and irf8 CRISPR/Cas9 (*p=0.0155, Fisher’s exact test, n=2 independent experiments, 36 total injected zebrafish). (E) Representative fluorescent in situ hybridization (FISH) images of whole mount control p53EPG (E) EGFRvIII + PI3KCAH1047 + EGFP and p53EPG + irf7 CRISPR/Cas9-injected zebrafish at 8 dpf. p53EPG (EGFP, magenta) and irf7 (green) images represent Z-stack projections through tumor lesions (11 optical sections each). Merged images represent single optical sections at two spatially separated levels within control and irf7 knock-down tumors. DAPI staining (blue) is used to label nuclei. White arrowheads highlight irf7 expression specific to the tumor microenvironment (TME). Scale bars represent 10 μm. (F) Tg(her4.1:Cas9-2A-EGFP) expression at 30 dpf. (G) mScarlet+ p53EPS at 30 dpf in Tg(her4.1:Cas9-2A-EGFP) injected with irf7 guide RNAs (gRNAs) at the one-cell stage. (H) p53EPS incidence at 30 dpf in Tg(her4.1:Cas9-2A-EGFP)-negative gRNA-injected control siblings, and Tg(her4.1:Cas9-2A-EGFP) zebrafish injected at the one-cell stage with irf7 or irf8 gRNAs. n.s. not significant, Fisher’s exact test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/93077/elife-93077-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Gene expression is represented relative to control p53EPS tumor-burdened whole brains. At least five tumor-burdened brains were pooled for each cohort and expression was normalized to mScarlet mRNA expression to account for differences in tumor size. *p<0.01, Student’s t-test.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/93077/elife-93077-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A, B) Images of neutral red staining in control (A) and irf8 CRISPR/Cas9-injected (B) zebrafish larvae at 8 days post fertilization (dpf), A’ and B’ highlight boxed regions. Black arrows highlight examples of neutral red foci. (C) Quantification of neutral red foci. *p<0.01, n=4 fish for each cohort, Student’s t-test.
+
 Given broad Irf gene expression in p53EPS tumors (Figure 2E, Figure 2—figure supplement 2, Figure 4—figure supplement 1, Supplementary file 5), as well as reports of IRF7 gene expression in human glioblastoma tumor cells, association with worsened patient outcome, and potential roles in tumor stem cell biology (Jin et al., 2012; Yang et al., 2022), we decided to investigate tumor cell-specific roles for Irf genes in p53EPS initiation. To specifically knock down irf7 in p53EPS tumor cells, we generated a transgenic Tg(her4.1:Cas9-2A-EGFP);tp53-/- zebrafish strain and co-injected embryos with linearized EPS + gRNAs targeting irf7 (Figure 4F). Despite a gene targeting efficiency of ~28% in pooled tumor cells from five tumor-burdened animals, we did not observe any significant changes in p53EPS tumor formation in Cas9-2A-EGFP-positive zebrafish compared to Cas9-2A-EGFP-negative control-injected siblings (Figure 4F–H). We observed similar effects following co-injection of gRNAs targeting irf8 (Figure 4G), suggesting that increased p53EPS tumor initiation following Irf gene knock-down is a consequence of irf7 and irf8 loss-of-function in the TME.
 
-## Phagocyte activity suppresses p53EPS engraftment following transplant into syngeneic host zebrafish
+### Phagocyte activity suppresses p53EPS engraftment following transplant into syngeneic host zebrafish
 
 Given conserved roles for Irf8 across species in the specification and function of different phagocyte populations (Shiau et al., 2015), our functional data suggested an anti-tumor role for irf/phagocyte activity in the TME during p53EPS tumor initiation. To assess the role more specifically for phagocyte populations within the TME, we decided to transplant p53EPS tumor cells into the hindbrain ventricle of syngeneic host embryos at 2 dpf. Importantly, serial transplantation of tumor cells is commonly used as an experimental surrogate to assess relapse potential (Blackburn et al., 2011; Hayes et al., 2018; Ignatius et al., 2017; Smith et al., 2010), allowing us to use p53EPS engraftment and re-growth to study the tumor propagating properties of p53EPS within different TMEs. To test the role for phagocytes in engraftment, we transplanted dissociated bulk tumor cells into syngeneic embryos along with Clodronate (Clodronate liposomes, Clodrosomes), a chemical used to eliminate phagocytes in vivo, and microglia following intracerebral injection (Andreou et al., 2017; Hanlon et al., 2019; Yan et al., 2019; Yang et al., 2021). At 18 dpt (20 dpf), we observed 50% p53EPS tumor cell engraftment in host animals co-injected with Clodronate liposomes, compared to 23% injected with vehicle control liposomes (p=0.0048, Fisher’s exact test, Figure 5A–C). Interestingly, while p53EPS engrafted brains maintained inflammatory gene expression patterns like primary p53EPS tumor-burdened brains (Figure 5—figure supplement 1), co-transplantation with Clodronate liposomes inhibited inflammatory gene expression in bulk tissue (Figure 5—figure supplement 1, normalized to mScarlet expression to control for differences in tumor size), suggesting that reduced phagocyte-driven inflammation supports p53EPS tumor cell engraftment and growth. We also performed p53EPS bulk tumor cell transplantations into the hindbrain ventricles of irf8 CRISPR/Cas9-injected syngeneic host zebrafish embryos at 2 dpf and observed 46% p53EPS tumor cell engraftment at 20 dpf, compared to 19% engraftment in irf8 wild-type host zebrafish (p=0.0002, Fisher’s exact test, Figure 5D), further supporting an inhibitory role for phagocytes within the TME. Altogether, our modeling data using patient-relevant oncogene combination in tp53 loss-of-function background demonstrates an important role for inflammation in glioblastoma initiation and relapse including inhibitory roles for Irf-dependent signaling pathways, which in part may be attributed to anti-tumoral phagocyte activity within the TME.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/93077/elife-93077-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) CG1 syngeneic host zebrafish at 20 days post fertilization (dpf) engrafted with p53EPS tumor cells transplanted with vehicle control (A) or Clodronate liposomes (B) at 2 dpf. (C–E) Quantification of p53EPS control engrafted and p53EPS tumors engrafted into CG1 host embryos with (C) Clodronate liposomes (p=0.0048, Fisher’s exact test, n=2 independent experiments, total 56 transplanted vehicle control and 50 transplanted Clodrosome-injected hosts), (D) engrafted into irf8 CRISPR/Cas9-injected into CG1 syngeneic host embryos (p=0.0002, Fisher’s exact test, n=2 independent experiments, total 100 transplanted control and 74 transplanted irf8 CRISPR/Cas9-injected hosts).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/93077/elife-93077-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Quantitative real-time PCR analysis of neural stem cell (NSC) genes and inflammation genes in non-tumor control brains, pooled p53EPS-burdened brains, and pooled brains engrafted with p53EPS tumor cells at 20 days post fertilization (dpf). *p<0.01 compared to non-tumor control whole brain tissue, Student’s t-test. (B) Quantitative real-time PCR analysis of NSC genes and inflammation genes at 20 dpf in primary transplanted (1T) p53EPS-burdened brains injected with vehicle control liposomes (1T p53EPS) and Clodrosomes at 2 dpf. At least five tumor-burdened brains were pooled for each cohort and expression was normalized to mScarlet mRNA expression to account for differences in tumor size. *p<0.01 compared to 1T p53EPS, Student’s t-test.
 
 ## Discussion
 
@@ -90,48 +150,219 @@ Finally, it is well known that the type of glioma affects immune responses, impl
 
 All materials created in this study are available upon request to madeline.hayes@sickkids.ca.
 
-## Zebrafish husbandry and care
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (zebrafish)</td>
+      <td>CG1</td>
+      <td>Mizgireuv and Revskoy, 2006 PMID:16540662</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (zebrafish)</td>
+      <td>CG1tp53-/-</td>
+      <td>Ignatius et al., 2018 PMID:30192230</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (zebrafish)</td>
+      <td>Tg(mpeg1.1:EGFP)</td>
+      <td>Ellett et al., 2011 PMID:21084797</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (zebrafish)</td>
+      <td>Tg(tnfa:EGFP)</td>
+      <td>Nguyen-Chi et al., 2015 PMID:26154973</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid, injected)</td>
+      <td>her4.1:PI3KCAH1047R</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gateway cloning using 5' zebrafish her4.1 promoter construct (Yeo et al., 2007, PMID:17134690), middle entry PI3KCA(H1047R) ORF, and 3' polyA into a Tol2-compatible Destination vector (Tol2kit, Kwan et al., 2007, PMID:17937395). Plasmid was linearized for injection using Xho1 restriction enzyme.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid, injected)</td>
+      <td>her4.1: mScarlet</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gateway cloning using 5' zebrafish her4.1 promoter construct (Yeo et al., 2007, PMID:17134690), middle entry mScarlet ORF, and 3' polyA into a Tol2-compatible Destination vector (Tol2kit, Kwan et al., 2007, PMID:17937395). Plasmid was linearized for injection using Xho1 restriction enzyme.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid, injected)</td>
+      <td>her4.1:EGFRvIII</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gateway cloning using 5' zebrafish her4.1 promoter construct (Yeo et al., 2007, PMID:17134690), middle entry EGFR(vIII) ORF, and 3' polyA into a Tol2-compatible Destination vector (Tol2kit, Kwan et al., 2007, PMID:17937395). Plasmid was linearized for injection using Xho1 restriction enzyme.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid, injected)</td>
+      <td>her4.1:KRASG12D</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gateway cloning using 5' zebrafish her4.1 promoter construct (Yeo et al., 2007, PMID:17937395), middle entry KRAS(G12D) ORF, and 3' polyA into a Tol2-compatible Destination vector (Tol2kit, Kwan et al., 2007, PMID:17937395). Plasmid was linearized for injection using Xho1 restriction enzyme.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid, injected)</td>
+      <td>her4.1:EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gateway cloning using 5' zebrafish her4.1 promoter construct (Yeo et al., 2007, PMID:17134690), middle entry EGFP ORF, and 3' polyA into a Tol2-compatible Destination vector (Tol2kit, Kwan et al., 2007, PMID:17937395). Plasmid was linearized for injection using Xho1 restriction enzyme.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid, injected)</td>
+      <td>her4.1:Cas9-2A-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gateway cloning using 5' zebrafish her4.1 promoter construct (Yeo et al., 2007, PMID:17134690), middle entry Cas9 ORF, and 3' 2A-EGFP into a Tol2-compatible Destination vector (Tol2kit, Kwan et al., 2007, PMID:17937395). Plasmid was injected with Tol2 transposase mRNA to establish stable transgenic lines.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid, injected)</td>
+      <td>gfap:EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gateway cloning using 5' zebrafish gfap promoter construct (Don et al., 2017, PMID:27631880), middle entry EGFP ORF, and 3' polyA into a Tol2-compatible Destination vector (Tol2kit, Kwan et al., 2007, PMID:17937395). Plasmid was linearized for injection using Cla1 restriction enzyme.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid, injected)</td>
+      <td>gfap: mScarlet</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Gateway cloning using 5' zebrafish gfap promoter construct (Don et al., 2017, PMID:27631880), middle entry mScarlet ORF, and 3' polyA into a Tol2-compatible Destination vector (Tol2kit, Kwan et al., 2007, PMID:17937395). Plasmid was linearized for injection using Cla1 restriction enzyme.</td>
+    </tr>
+    <tr>
+      <td>Transfected Construct (plasmid, injected)</td>
+      <td>mpeg1.1:EGFP</td>
+      <td>Ellett et al., 2011 PMID:21084797</td>
+      <td></td>
+      <td>Plasmid was linearized for injection using Xho1 restriction enzyme.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (plasmid, injected)</td>
+      <td>rag2:EGFP</td>
+      <td>Langenau et al., 2007 PMID:17510286</td>
+      <td></td>
+      <td>Plasmid was linearized for injection using Xho1 restriction enzyme.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PCNA(rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>D3H8P</td>
+      <td>Antibody was used for IHC at 1/200 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-p44/42 MAPK (Erk1/2) (Thr202/Tyr204)(rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>9101</td>
+      <td>Antibody was used for IHC at 1/200 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-AKT (Ser473)(rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>9271</td>
+      <td>Antibody was used for IHC at 1/300 dilution</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>EGFP HCR probe</td>
+      <td>Clontech</td>
+      <td>MolecularInstruments</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Irf7 HCR probe</td>
+      <td>Sigma-Aldrich</td>
+      <td>Molecular Instruments</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Cas9 protein with NLS</td>
+      <td>PNA-Bio</td>
+      <td>CP01-200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay of kit</td>
+      <td>In vitro sgRNA synthesis kit</td>
+      <td>New England Biolabs</td>
+      <td>E3322V</td>
+      <td>Individual sgRNA target sites are indicated in Supplementary file 7</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clodronate lipsomes (Clodrosomes)</td>
+      <td>Encapsula Nano Sciences</td>
+      <td>CLD-8901</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish husbandry and care
 
 Animals were raised in accordance with Canadian Council on Animal Care (CCAC) guidelines and all experiments were approved under an Animal Use Protocol established with the Animal Care Committee at the Hospital for Sick Children Research Institute (AUP #1000051391 and #1000064586). Previously described zebrafish strains including syngeneic CG1 (Mizgireuv and Revskoy, 2006), CG1tp53del (Ignatius et al., 2018), Tg(mpeg1.1:EGFP) (Ellett et al., 2011), and Tg(tnfa:EGFP) (Nguyen-Chi et al., 2015) were used as indicated in the manuscript.
 
-## Preparation and injection of linearized DNA for tumorigenesis
+### Preparation and injection of linearized DNA for tumorigenesis
 
 her4.1:PI3KCAH1047R, her4.1:mScarlet, her4.1:EGFRvIII, her4.1:KRASG12D, her4.1:EGFP her4.1:Cas9-2A-EGFP, gfap:EGFP, and gfap:mScarlet transgene expression constructs were cloned using previously described her4.1 sequence (Yeo et al., 2007), gfap entry plasmid (Don et al., 2017), standard Tol2 Gateway plasmids and protocols (Kwan et al., 2007). rag2:EGFP and mpeg1.1:EGFP expression plasmids were previously described (Ellett et al., 2011; Langenau et al., 2007). Circular her4.1 expression plasmids were linearized using XhoI restriction enzyme (New England Biolabs, R0146S) while gfap:EGFP was linearized using ClaI (New England Biolabs, R0197S), according to the manufacturer’s protocol. Restriction enzymes were heat inactivated and linearized vector purified utilizing an EZ-10 Spin Column PCR Products Purification Kit (Bio Basic, BS364). Injection mixtures such as EPS (her4.1:EGFRvIII, her4.1:PI3KCAH1047R, her4.1:mScarlet) or KPG (her4.1:KRAS, her4.1:PI3KCAH1047R, her4.1:GFP) were prepared at 2:1:1 molar ratios in 50% TE Buffer (Invitrogen, 12090-015) with KCl (final concentration 0.1 M) and phenol red (final concentration 5%, Sigma-Aldrich, P0290). CG1 or CG1tp53del embryos were microinjected with 0.5–1 nL of injection mixture at the one-cell stage and monitored for tumor development, starting at 10–15 dpf.
 
-## gRNA synthesis and CRISPR-Cas9-mediated gene targeting
+### gRNA synthesis and CRISPR-Cas9-mediated gene targeting
 
 CRISPR/Cas9 sequence targets and gRNA oligos were designed using CHOPCHOP (Labun et al., 2019). gRNAs were in vitro synthesized using the EnGen sgRNA Synthesis Kit (New England Biolabs, E3322V) according to the manufacturer’s recommendation. Cas9 protein with NLS (PNA Bio, CP01-200) was resuspended in 20% glycerol/water to a concentration of 1 mg/mL. Cas9/gRNA microinjection mixture was prepared at a final concentration of 0.3 mg/mL Cas9+30–50 ng/µL of each gRNA. 0.5–1 nL of injection mixture injected into zebrafish embryos of the indicated genotype, at the one-cell stage. CRISPR/Cas9 targeting efficiency was measured following PCR-based locus amplification, Sanger sequencing, and Synthego ICE Analysis (ICE Analysis, Synthego, https://ice.synthego.com/; Synthego, 2019). All gRNA sequences and PCR oligos are indicated in Supplementary file 7.
 
-## Brain dissection and dissociation
+### Brain dissection and dissociation
 
 Animals were euthanized with a lethal 300 mg/L dose of Tricaine (Sigma-Aldrich, E10521) ~10–20 min before dissection. Fish were decapitated posterior of the gills and the head transferred to sterile-filtered PBS (Wisent Inc, 311-010-CL). Using fine-tipped forceps, brains were carefully extracted from the skull and transferred to a microcentrifuge tube and kept in PBS at 28°C until further processing. 5–10 brains were transferred to 1 mL of 28°C pre-warmed Accutase (STEMCELL Technologies, 07920), followed by incubation at 28°C with gentle rocking for a total of ~50 min. Every 10 min, brains were mechanically dissociated with gentle pipetting 15–30 times using a 1 mL filter tip. Dissociated tissues were passed through a 40 µm Cell Strainer (Corning, 352340) into a 50 mL conical tube to achieve single-cell suspensions. Strained cells were pelleted at approximately 1000 × g for 5 min at room temperature and resuspended in PBS.
 
-## Bulk tumor cell transplantation
+### Bulk tumor cell transplantation
 
 Cell suspensions were maintained at 28°C during the transplantation procedure. 2 dpf CG1 strain syngeneic zebrafish larvae were injected with 1–2 nL of cell suspension into the hindbrain ventricle, as previously described (Casey et al., 2017). Cells were injected alone or in combination with 1% total volume Clodrosomes (Encapsula Nano Sciences, CLD-8901) or vehicle control liposomes.
 
-## Immunohistochemistry and FISH
+### Immunohistochemistry and FISH
 
 Zebrafish were fixed overnight in 4% PFA and stored in methanol at –20°C before paraffin embedding and sectioning at the Centre for Phenogenomics Pathology Core Facility. Animal sections were deparaffinized with 2×5 min washes of xylenes. Sections were rehydrated with sequential 2×10 min washes in 100%, 90%, 70% ethanol before sequential rinsing with ddH2O, 3% H2O2, and ddH2O. Slides were then boiled in 1× citrate buffer (Sigma-Aldrich, C999) within a standard microwave and rinsed in ddH2O, after cooling for 30 min. Sections were blocked with TBST/5% Normal Goat Serum for 1 hr at room temperature before overnight incubation with primary antibody diluted in Diluent CST (Cell Signaling Technology, 8112) at 4°C. The following day slides were washed once with 3×5 min with TBS, TBST, and TBS. Samples were then incubated with secondary antibody (Cell Signaling Technology, 8114) for half an hour at room temperature, followed by another 3×5 min TBS/T wash. Standard DAB development (Thermo Scientific, 34002) was performed for 5–7 min, followed by water termination. Samples were Hematoxylin (VWR, 10143-146) stained with a 1:6 diluted solution for 3–5 s and rinsed 5× with tap water. Slides were dehydrated sequentially with 70%, 90%, 100% ethanol washes followed by 2×5 min xylene washes before being mounted with glass cover slips and Permount (Fisher Scientific, SP15-100). Primary antibodies raised against proliferating cell nuclear antigen (PCNA, Cell Signaling, D3H8P), p-ERK (Cell Signaling, #9101), and p-AKT (Cell Signaling, #9271) were used.
 
 Whole mount FISH was performed on fixed larvae using EGFP and irf7-specific antisense probes (Molecular Instruments) and HCR protocol, according to the manufacturer’s recommendations.
 
-## Bulk RNAseq library preparation, quantification, and differential gene expression analysis
+### Bulk RNAseq library preparation, quantification, and differential gene expression analysis
 
 Three p53KPG, p53EPS, and control-injected brains (from non-tumor forming injected siblings) were harvested at 20–30 dpf and immediately placed into 1 mL of TRIzol Reagent (Invitrogen, 15596026). mScarlet+ tumor cells were also sorted from bulk (non-fluorescent) tissue from pooled brains at the SickKids-UHN Flow Cytometry Core Facility on a Sony MA900 VBYR cell sorter, before pelleting and lysis in TRIzol Reagent. Total RNA was purified for all samples using a Monarch RNA Cleanup Kit (New England Biolabs, T2040L), according to the manufacturer’s recommendations. Sequence ready polyA-enriched libraries were prepared using the NEB Ultra II Directional mRNA prep kit for Illumina (NEB, E7760), according to the manufacturer’s recommendations. Single-end 150 bp sequencing at a targeted depth of ~30–60 million reads/sample was performed using an Illumina NovaSeq S1 flowcell, at the Centre for Applied Genomics (TCAG). Raw .fastq data was processed using Salmon quantification of transcripts for each sample. A ‘decoy-aware’ index was built with the Danio rerio transcriptome and genome using the GRCz11 assembly with a k-mers length of 23. Samples were then quantified with the following arguments: -r, --seqBias, --mp –3, --validateMappings, --rangeFactorizationBins 4. Sequencing data is available from GEO under accession code GSE246295.
 
-## Human ortholog conversion and GSEA
+### Human ortholog conversion and GSEA
 
 Normalized counts output from DESeq2 for the above processed data were utilized for GSEA without any further trimming or processing, as recommended by the GSEA user guide (Mootha et al., 2003; Subramanian et al., 2005). Zebrafish transcripts were assigned known or high-confidence human orthologs using Ensembl BioMart, as previously described (Demirci et al., 2022). Bulk sequencing data from her4.1:KRASG12D or her4.1:EGFRvIII-driven tumors, or sorted cells derived from such, were compared with non-tumour control brains under default conditions (1000 permutations, gene set). Expression signatures were compared against published glioblastoma (McLendon et al., 2008; Wang et al., 2017), medulloblastoma (Cavalli et al., 2017), Hallmark, and/or C7: immunologic signature gene sets (Villanueva et al., 2011), as indicated in the manuscript.
 
-## Neutral red staining and quantification
+### Neutral red staining and quantification
 
 Zebrafish were treated with neutral red, as previously described (Shiau et al., 2013). Animals were then anesthetized in Tricaine and oriented on their sides in 3% methylcellulose before an image stack of approximately 120–150 µm depth was taken beginning from the surface of the otic vesicle into the fish. Neutral red stained foci were counted using Zen Lite Software (version 3.3) in an area bounded by the posterior edge of the eye and the posterior edge of the otic vesicle for each fish.
 
-## Image acquisition
+### Image acquisition
 
 Fluorescence and bright-field image acquisition of whole animals and dissected tumor-burdened brains was performed using a Zeiss Axiozoom V16 macroscope. High-resolution confocal microscopy was performed using a Nikon 1AR confocal microscope, with image processing and Z-stack compression performed using ImageJ software. IHC slides were imaged on a Pannoramic Flash II.
 
-## RT-qPCR and analysis
+### RT-qPCR and analysis
 
 Total RNA was extracted from tumor-burdened brains using TRIzol reagent, as described above, and reverse-transcribed using the High-Capacity DNA Reverse Transcriptase Kit (Thermo Fisher, 4368814), as per the manufacturer’s recommendations. RT-qPCR was performed using the SYBR Green I Master kit (Roche, 04887352001) following the manufacturer’s recommended protocol and a Bio-Rad CFX96 qPCR Real-Time PCR Module with C1000 Touch Thermal Cycler Unit. All primers used to amplify genes of interest are indicated in Supplementary file 7. At least five brain samples were pooled for each sample, with gene expression normalized to 18s. Where indicated, gene expression was normalized to mScarlet expression to control for differences in overall tumor size.

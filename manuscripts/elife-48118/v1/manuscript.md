@@ -46,7 +46,7 @@ Spurred by the relative lack of knowledge about the pharmacology of N-type chann
 
 ## Results
 
-## Voltage-dependent inhibition of Cav2.2 channels by neutral NNCB-2
+### Voltage-dependent inhibition of Cav2.2 channels by neutral NNCB-2
 
 Our strategy was to design a neutral compound with reasonably potent N-channel blocking activity that could be readily derivatized into a cationic molecule. Figure 1 (inset) shows the neutral molecule that we designed for this purpose. Its structure is based on a scaffold of a family of molecules with blocking activity against N-type calcium channels described by Seko et al. (2001), although it is not identical to any of the compounds they described. This molecule, which we call NNCB-2 (‘NNCB’ for ‘neutral N-type calcium channel blocker’) has a secondary amine group that can be readily converted to a quaternary form to form a cationic molecule, which we call CNCB-2 (‘CNCB’ for ‘cationic N-type calcium channel blocker’). We first examined the efficacy with which the neutral compound inhibits cloned N-type calcium channels (Figure 1). We found effective and dose-dependent inhibition, with 10 µM NNCB-2 inhibiting calcium channel current by about 60% and 100 µM NNCB-2 producing complete inhibition in about 30 s, when applied at a holding potential of −70 mV, near typical neuronal resting potentials.
 
@@ -56,7 +56,7 @@ Our strategy was to design a neutral compound with reasonably potent N-channel b
 
 Inhibition by NNCB-2 was voltage-dependent. Compared to inhibition when applied at −70 mV, application at a holding potential of −100 mV produced weaker inhibition that developed more slowly (Figure 1C).
 
-## Inhibition of Cav2.2 channels with external application of cationic CNCB-2
+### Inhibition of Cav2.2 channels with external application of cationic CNCB-2
 
 Studying the cationic molecule CNCB-2, we first tested external application (Figure 2). CNCB-2 inhibited Cav2.2 channels effectively with external application. Inhibition by CNCB-2 was slower than with the same concentration of the neutral compound, with 100 µM CNCB-2 requiring about 3 min to produce complete inhibition. Similar to inhibition by NNCB-2, inhibition by CNCB-2 was enhanced when channels were activated from a resting potential of −70 mV compared to a resting potential of −100 mV, consistent with state-dependent binding.
 
@@ -64,7 +64,7 @@ Studying the cationic molecule CNCB-2, we first tested external application (Fig
 
 **Figure 2.:** (A) Time course of inhibition of Cav2.2 current by external CNCB-2 applied at concentrations from 10 to 300 µM. Current carried by 5 mM Ba2+ current was evoked by 50-millisecond steps from −70 to +10 mV delivered every 3 s. Data points show mean ± SEM (n = 4). Inset: Structure of CNCB-2 ([2-Cyclopentylmethylsulfanyl-1-(4-methoxy-benzylcarbamoyl)-ethyl]−(3,3-dimethyl-butyl)-dimethyl-ammonium, chloride salt). (B) Inhibition by 30 µM CNCB-2 of Cav2.2 current with current evoked from a holding potential of −70 mV (top) or −100 mV (bottom). (C) Minimal reversal of CNCB-2 inhibition by washing following exposure for 1 min, using 50 ms test pulses to +10 mV from a holding potential of either −70 mV (n = 9) or −100 mV (n = 7). Source data can be found in Source data 1.
 
-## Inhibition by external CNCB-2 does not require channel opening
+### Inhibition by external CNCB-2 does not require channel opening
 
 One possible interpretation of the slower inhibition by CNCB-2 compared to NNCB-2 would be that the charged compound can only interact with channels when channels are activated, for example if the cationic molecule enters the channel through the open pore. We examined this possibility by testing whether channel opening is necessary for inhibition to develop, by applying the compound in the absence of depolarizing pulses to open the channel (Figure 3). We found that both NNCB-2 and CNCB-2 were able to inhibit effectively even in the absence of any channel opening. Application of 100 µM CNCB-2 for 3 min in the absence of stimulation resulted in a decrease of current to 33 ± 5% of control (n = 4, measured during the first depolarizing pulse after the 3 min application). Thus, inhibition by CNCB-2 can occur in the absence of channel opening. However, the degree of inhibition produced by a 3 min application of 100 µM CNCB-2 in the absence of depolarizing pulses was less than the inhibition produced when depolarizing pulses were given during the application (50-millisecond steps from −70 to +10 mV delivered every 3 s, Figure 2), where a 3 min application reduced current to 5 ± 2% of control (n = 4). This is consistent with drug binding being accelerated when channels are open or inactivated, but clearly binding can also occur effectively even in the absence of channel opening. We saw similar effects with application of the neutral NNCB-2: a 3 min application of 30 µM NNCB-2 in the absence of stimulation reduced current to 33 ± 11% of control (n = 4), while application in the presence of stimulation reduced current to 5 ± 1% of control of control (n = 3).
 
@@ -72,23 +72,23 @@ One possible interpretation of the slower inhibition by CNCB-2 compared to NNCB-
 
 **Figure 3.:** (A) Calcium channel inhibition by NNCB-2 or CNCB-2 does not require channel opening. Ba2+ current was elicited in a whole-cell recording by 50-millisecond steps from −70 to + 10 mV delivered every 10 s. Five pulses were applied in control solution, then NNCB-2 (n = 4) or CNCB-2 (n = 4 to 5) was applied for 3 min with no activation of channels and then depolarizing pulses were resumed for 50 s (in the continuing presence of drug). Then, the cell was perfused with drug-free solution for 3 min without stimulation and then depolarizing pulses were resumed for 50 s to assay recovery. (B) Slow inhibition of N-type Ca2+ channels by intracellularly applied CNCB-2. 300 µM CNCB-2 applied in the pipette solution (green triangles) produced inhibition that developed relatively slowly over several minutes (green triangles, mean ± SEM, n = 3). The time course of inhibition was similar to that of 100 µM CNCB-2 applied externally (black circles, mean ± SEM, n = 4) and slower than 300 µM CNCB-2 applied externally (red circles, mean ± SEM, n = 4); data points for external application from Figure 2. Source data can be found in Source data 1.
 
-## Slow recovery from CNCB-2 inhibition
+### Slow recovery from CNCB-2 inhibition
 
 A major difference between the inhibition produced by the cationic and neutral compounds was that recovery from CNCB-2 inhibition was much slower than from NNCB-2 when the agent was removed (Figure 3A). With 3 min of wash-out after exposure to 100 µM NNCB-2, current recovered from −1 ± 11% to 81 ± 10% (n = 4) of the initial control value before compound was applied. However, with 3 min of wash-out after exposure to 100 µM CNCB-2, current recovered much less, from 11 ± 6% to 28 ± 4% (n = 4). Thus, although inhibition by CNCB-2 develops somewhat more slowly than that by NNCB-2, CNCB-2 binding to the channel appears to be tighter and reverses more slowly.
 
-## Internal application of CNCB-2
+### Internal application of CNCB-2
 
 We next tested internal application of CNCB-2. Applying CNCB-2 internally by inclusion in the pipette solution produced inhibition of Cav2.2 calcium channel current that developed over the first several minutes of dialysis (Figure 3B). However, inhibition by internal CNCB-2 developed more slowly than with external application. With 300 µM CNCB-2 applied internally, current was reduced to 20% of the initial control value after 114 s, while the same reduction took only 27 s with external application of 300 µM CNCB-2. In fact, the time course of inhibition by internally-applied 300 µM CNCB-2 was similar to the time course of inhibition by 100 µM CNCB-2 applied externally.
 
-## Inhibition of native calcium channels
+### Inhibition of native calcium channels
 
 To examine whether CNCB-2 applied externally can inhibit native N-type calcium channels in neurons as well as cloned N-type channels expressed in HEK cells, we tested its effects on calcium channels in mouse superior cervical ganglion (SCG) sympathetic neurons, a neuronal type in which ~ 80–90% of the overall voltage-dependent calcium current is carried by N-type calcium channels (Regan et al., 1991). Externally applied CNCB-2 was effective in inhibiting calcium channel current in SCG neurons, with an IC50 near 3 µM (Figure 4). As for heterologously expressed channels, inhibition was long-lasting, with very little reversal of inhibition over several minutes of washing with drug-free solution.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/48118/elife-48118-fig4-v1.jpg)
 
-**Figure 4.:** 2+ channels in mouse sympathetic neurons by CNCB-2 applied extracellularly.(A) Time course of inhibition by 10 µM CNCB-2. Current carried by 5 mM Ba2+ was evoked by 50 ms steps from −70 to +10 mV delivered every 3 s. The external solution contained 5 μM nimodipine to block L-type calcium channels and 1 μM TTX to block sodium channels. Inset: Current before and after application of CNCB-2. Tail currents in control trace are truncated. (B) Current remaining in CNCB-2 applied at 3, 10, or 30 µM (mean ± SEM, n = 5 for 3 and 10 μM CNCB-2, n = 6 for 30 µM CNCB-2). Experiments performed at 37°C. Source data can be found in Source data 1.
+**Figure 4.:** (A) Time course of inhibition by 10 µM CNCB-2. Current carried by 5 mM Ba2+ was evoked by 50 ms steps from −70 to +10 mV delivered every 3 s. The external solution contained 5 μM nimodipine to block L-type calcium channels and 1 μM TTX to block sodium channels. Inset: Current before and after application of CNCB-2. Tail currents in control trace are truncated. (B) Current remaining in CNCB-2 applied at 3, 10, or 30 µM (mean ± SEM, n = 5 for 3 and 10 μM CNCB-2, n = 6 for 30 µM CNCB-2). Experiments performed at 37°C. Source data can be found in Source data 1.
 
-## Inhibition of Nav1.7 channels
+### Inhibition of Nav1.7 channels
 
 We expected that CNCB-2 would have selectivity for N-type calcium channels, because the parent compound was based on a family described as being selective N-type calcium channel inhibitors (Seko et al., 2001). Surprisingly, however, we found that CNCB-2 also inhibits sodium channels with external application, acting even more potently on sodium channels than on N-type calcium channels. Figure 5A shows the effect of 3 µM CNCB-2 applied to Nav1.7 sodium channels expressed in a stable cell line. With a holding potential of −70 mV and 10-msec depolarizing steps to 0 mV delivered every 5 s, 3 µM CNCB-2 inhibited sodium current to 31 ± 5% of control with application for 10 min (n = 5). Inhibition of Nav1.7 channels by CNCB-2 was voltage-dependent, with more potent inhibition from more depolarized holding potentials, in a manner suggesting higher-affinity binding to inactivated states of the sodium channel. Using a protocol in which various holding voltages were established for 2 s in a staircase-like manner, 3 µM CNCB-2 produced equal inhibition at holding voltages of −120 mV and −100 mV (to 67 ± 5% of control at −120 mV and to 67 ± 4% of control at −100 mV), where channels are in the resting state, but much more effective inhibition at more depolarized voltages where more channels are in inactivated states, inhibiting to 12 ± 4% of control from a holding potential of −60 mV where ~ 55% of channels are in the inactivated state under control conditions (n = 5 for all measurements). The relationship of channel availability to voltage with and without CNCB-2 can be used to estimate the binding affinity of CNCB-2 to resting and inactivated channels, using the relation ΔVh = k*ln[(1+C/KR)/(1+C/KI)], where ΔVh is the shift in the midpoint of channel availability produced by the compound, k is the slope factor of the Boltzmann availability curve, C is the concentration of CNCB-2, and KR and KI are the equilibrium constants for CNCB-2 binding to the resting and inactivated states, respectively (Bean et al., 1983). Making this calculation (and using the inhibition at −120 mV where channels are all in the resting state to estimate KR) results in estimates of KR = 5.6 µM and KI = 0.71 µM. This can be compared to the estimates of KR = 440 µM and KI = 10 µM for lidocaine binding to sodium channels (Bean et al., 1983), implying much tighter binding of CNCB-2 than lidocaine to both resting and inactivated states of the channel.
 
@@ -104,7 +104,7 @@ Inhibition of Nav1.7 channels by CNCB-2 was strongly-use-dependent. Both the rat
 
 As for Cav2.2 channels, CNCB-2 applied internally had weaker effects on Nav1.7 channels than when applied externally. In three cells, CNCB-2 applied internally at 3 µM produced very little inhibition even with 2–3 series of 2 min stimulation at 10 Hz. However, when 3 µM CNCB-2 was then applied externally, it immediately produced inhibition during the stimulation at 10 Hz, exactly as when external 3 µM CNCB-2 was applied in the absence of internal CNCB-2. Thus, it appears that CNCB-2 accesses its binding sites on both Nav1.7 and Cav2.2 channels most easily from the external surface of the membrane.
 
-## Inhibition of sensory neuron excitability
+### Inhibition of sensory neuron excitability
 
 The inhibition of Nav1.7 channels suggests that CNCB-2 may reduce electrical excitability of primary sensory neurons, where Nav1.7 channels contribute to overall TTX-sensitive sodium current (Shields et al., 2012). We tested this possibility using dissociated dorsal root ganglion neurons, focusing on a population of small diameter DRG neurons that express both TTX-sensitive and TTX-resistant sodium channels, most of which correspond to C-fiber nociceptors. We found that CNCB-2 potently inhibits action potential firing in these neurons. Figure 7A shows a typical example, in which the neuron fired multiple large-amplitude action potentials during depolarizing current injections in control conditions but only a single action potential of reduced size after application of 3 µM CNCB-2, even with large current injections. In addition to dramatically depressing action potential firing, application of CNCB-2 produced a depolarization of the resting potential of the neurons, from −76 ± 2 mV in control to −62 ± 3 mV (n = 5) after application of 3 µM CNCB-2. This depolarization of the resting potential was never enough to stimulate firing of the neurons (which had an average threshold voltage of −32 ± 1 mV, n = 8). Because the depression of action potential firing could in principle be partly due to inactivation of sodium channels as a result of the more depolarized resting potential, we also did a series of experiments in which the resting potential of the neurons was adjusted by steady holding current to the same voltage as in control. The action potential firing was also strongly inhibited in these neurons. On average, the number of action potentials evoked by a 1 s 80 pA current injection was reduced from 18 ± 8 in control to 0.6 ± 0.2 after application of 3 µM CNCB-2 (n = 5), similar to the depression of firing in an earlier series in which resting potential was not adjusted (13 ± 2 spikes in control to 2 ± 1 after application of 3 µM CNCB-2, n = 5).
 
@@ -114,7 +114,7 @@ The inhibition of Nav1.7 channels suggests that CNCB-2 may reduce electrical exc
 
 In addition to the reduction in the number of action potentials evoked by current injection, CNCB-2 dramatically depressed the peak of the action potential (from +30 ± 3 mV in control to −2 ± 2 mV in 3 µM CNCB-2, n = 4, holding potential adjusted in CNCB-2).
 
-## Inhibition of TTX-resistant sodium channels
+### Inhibition of TTX-resistant sodium channels
 
 The action potential in small diameter nociceptive DRG neurons is mediated by a combination of TTX-sensitive sodium current, which helps initiate the action potential, and TTX-resistant sodium current, carried mainly by Nav1.8 channels, which generally provides the majority of total sodium current during the action potential (Renganathan et al., 2001; Blair and Bean, 2002). The dramatic reduction in the magnitude of the action potential by CNCB-2 suggested that CNCB-2 might inhibit TTX-resistant as well as TTX-sensitive sodium channels. We tested this in voltage clamp experiments and found that CNCB-2 effectively inhibited both TTX-sensitive and TTX-resistant components of sodium current in DRG neurons. In a first series of experiments, we found that 30 µM CNCB-2 inhibited overall sodium current in small DRG neurons nearly completely (reduction to 4 ± 1% of control, n = 10, CNCB-2 applied for 2.5–5 min). We then examined TTX-resistant sodium current in isolation and tested lower concentrations of CNCB-2 (Figure 8). At 3 µM, CNCB-2 inhibited TTX-resistant sodium current to 23 ± 6% of control (n = 6) and 10 µM CNCB-2 inhibited TTX-resistant sodium current to 10 ± 3% of control (n = 4).
 
@@ -122,7 +122,7 @@ The action potential in small diameter nociceptive DRG neurons is mediated by a 
 
 **Figure 8.:** (A) Time-course of inhibition of TTX-resistant sodium current in a small mouse DRG neuron by 3 µM CNCB-2. TTX-resistant sodium current was isolated by solutions containing 300 nM TTX. Current was evoked by a 10-msec step depolarization from −80 mV to −10 mV delivered once every 5 s. Inset: currents before and after CNCB-2. (B) Collected results showing current after application of 3 µM CNCB-2 (n = 6) or 10 µM CNCB-2 (n = 4) for long enough to reach steady-state (10–15 min for 3 µM CNCB-2 and 5–10 min for 10 µM CNCB-2). Experiments at 37°C. Source data can be found in Source data 1.
 
-## Effects in a paw incision model of post-operative pain
+### Effects in a paw incision model of post-operative pain
 
 The efficacy with which CNCB-2 inhibited sodium channels and action potential firing in DRG neurons suggests that it could be an effective analgesic. We tested CNCB-2 in several in vivo rodent models of pain. We first tested it in the rodent paw incision model of post-operative pain (Brennan et al., 1996; Song et al., 2018; Cowie and Stucky, 2019) which produces hyperalgesia mimicking many features of human post-operative pain, including mechanical hypersensitivity, and responds in a similar manner to many pharmacological interventions (Whiteside et al., 2004; Brennan, 2011). Based on the more potent action of CNCB-2 to produce use-dependent sodium channel inhibition compared to bupivacaine, we tested injections of CNCB-2 at concentrations of 15 mM or 30 mM in a 10 μL volume of injectant and compared their effect with that of 30 mM bupivacaine (~0.5%, the usual concentration of bupivacaine used clinically). Twenty-four hours after the incision, a single injection of 10 μL of either 15 mM or 30 mM CNCB-2 directly adjacent to the incision resulted in a reduction of mechanical sensitivity that lasted for at least 8 hr (Figure 9A). In contrast, 30 mM bupivacaine produced no remaining analgesic effect 1 hr after injection, in marked contrast to the long-lasting effects of CNCB-2. The short duration of action of bupivacaine in this model is consistent with a previous study in which bupivacaine injected alone without norepinephrine (generally co-applied with bupivacaine in clinical settings to produce vasoconstriction and thereby slow washout of bupivacaine by blood flow) had effects lasting only 25 min (Grant et al., 1997).
 
@@ -130,19 +130,19 @@ The efficacy with which CNCB-2 inhibited sodium channels and action potential fi
 
 **Figure 9.:** (A) Inhibition of paw withdrawal in paw incision model of post-operative pain. Threshold for response to von Frey filaments tested 1, 4 and 8 hr after injection of CNCB-2 into an injured paw 24 hr after the incisional injury (5 mm incision). Mean ± SEM for 50% withdrawal threshold (n = 8 for each group). (B) Inhibition by CNCB-2 of paw withdrawal in the zymosan model of inflammatory pain. Either 10 μL of CNCB-2 (30 mM) or vehicle (5% DMSO in normal saline) was injected in hind paw. One hour later the same paw was injected subcutaneously with 20 μL of zymosan (5 mg/ml in saline) and tested 4 hr after the zymosan injection by the von Frey test (Mean ± SEM for 50% withdrawal threshold, n = 5 for each group). (C) Direct analgesic effect of CNCB-2: inhibition of paw withdrawal by 10 μL of CNCB-2 (30 mM) injected into uninjured paws (n = 8 for each group). Source data can be found in Source data 1.
 
-## Zymosan model of inflammatory pain
+### Zymosan model of inflammatory pain
 
 We also tested CNCB-2 in a widely-used mouse model of inflammatory pain, in which intraplantar injection of zymosan into the footpad induces inflammation and mechanical and thermal hypersensitivity, mimicking human inflammatory pain (Meller and Gebhart, 1997; Chiu, 2018). CNCB-2 was exceptionally effective in this model (Figure 9B), increasing the 50% withdrawal threshold from 0.20 ± 0.08 grams to 3.6 ± 0.2 grams (n = 5) of pressure.
 
-## Analgesia of uninjured tissue
+### Analgesia of uninjured tissue
 
 The cationic lidocaine derivative QX-314 can inhibit signaling by nociceptors if applied together with activators of TRPV1 or TRPA1 channels (Binshtok et al., 2007; Lennertz et al., 2012; Nakagawa and Hiura, 2013), which have pores large enough to allow entry of QX-314 into neurons. Because CNCB-2 inhibits sodium channels directly from the outside of the cell, there should be no requirement for co-administration with TRPV1 or TRPA1 activators or for endogenous activation of these channels such as might occur during tissue damage or inflammation. We therefore tested the ability of CNCB-2 to inhibit pain signaling when injected into uninjured paws. CNCB-2 produced effective analgesia when injected in paws of naïve mice, with analgesia lasting for at least 4 hr (Figure 9C).
 
-## Inhibition of neuropeptide release from cultured DRG neurons
+### Inhibition of neuropeptide release from cultured DRG neurons
 
 Calcium entry through N-type calcium channels triggers release of neuropeptides from primary sensory neurons by activating vesicular release (Holz et al., 1988; Evans et al., 1996; Chi et al., 2009; Amrutkar et al., 2011; Takasusuki and Yaksh, 2011). We therefore tested the ability of the charged and uncharged inhibitors to reduce release of CGRP, a peptide implicated in pain, migraine and inflammation, from dorsal root ganglion neurons. Studying release of CGRP from cultured DRG neurons induced by depolarization (exposure to 50 mM KCl), we found that both NNCB-2 and CNCB-2 were able to reduce CGRP release, with greater efficacy of inhibition by CNCB-2. CGRP release in this model likely involves calcium entry through L-type (Evans et al., 1996) as well as N-type (Chi et al., 2009) calcium channels and possibly calcium entry through P-type and R-type calcium channels that are also present in DRG neurons (Regan et al., 1991). Further analysis of the calcium entry pathways mediating CGRP release would be required to interpret the greater efficacy of CNCB-2 in this system.
 
-## Action on allergic lung inflammation
+### Action on allergic lung inflammation
 
 Release of pro-inflammatory peptides from primary sensory neurons is part of a neuro-immune positive feedback cycle involved in a number of inflammatory processes with a neurogenic component (Chiu et al., 2012; Foster et al., 2017), including a mouse model of asthma (Talbot et al., 2015). In this model, an allergic reaction to ovalbumin is induced, after which a challenge by nebulized ovalbumin produces airway inflammation, which can be assayed by quantification of immune cells present in bronchoalveolar lavage fluid. Lung inflammation in this model has a strong neurogenic component and can be greatly reduced either by ablation of primary sensory neurons or by blocking their excitability by QX-314 entry through large-pore channels activated during inflammation (Talbot et al., 2015). We tested whether local administration of CNCB-2 could resolve inflammation after it was induced in this model, with the idea that on-going neuropeptide release from the peripheral terminals of sensory neurons may underlie the inflammation. Based on the ability of 30 µM CNCB-2 to reduce peptide release from sensory neurons in vitro, we tested this concentration of CNCB-2 in vivo, applied after lung inflammation had been produced by ovalbumin sensitization and 4 days of daily exposure to nebulized ovalbumin. At this point (day 18 of protocol shown in time-line, Figure 10B), lung inflammation is near its peak. With the expectation that reducing neuropeptide release could produce a long-lasting reduction in the neurogenic component of inflammation, the effect of the CNCB-2 exposure was measured 3 days after the CNCB-2 exposure by assaying immune cells in bronchoalveolar lavage fluid. Exposure to 30 µM CNCB-2 dramatically reduced lung inflammation compared to exposure to vehicle, with a reduction of CD3+ cells (lymphocytes) to ~20% of the levels with no CNCB-2 exposure and reductions to 25–35% for the other inflammation-associated immune cell types tested (Figure 10B). We compared the effect of 30 µM CNCB-2 with that of 100 µM NNCB-2, selecting a higher concentration based on the lesser efficacy of the neutral compound in the in vitro experiments with CGRP release in Figure 10A. In keeping with a greater efficacy of CNCB-2 in this model, the effects of 100 µM NNCB-2 were quantitatively very similar to those of 30 µM CNCB-2. We conclude that topical administration of CNCB-2 is an effective way to inhibit the neurogenic component of allergic inflammation in a long-lasting manner.
 
@@ -176,7 +176,248 @@ The recent scientific and patent literature has reported a wide range of uncharg
 
 ## Materials and methods
 
-## Cav2.2 recordings
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>Swiss Webster CFW</td>
+      <td>Charles River</td>
+      <td>Cat#024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>C57BL6/J</td>
+      <td>Jackson Lab</td>
+      <td>000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mus musculus)</td>
+      <td>BALB/c</td>
+      <td>Jackson Lab</td>
+      <td>001026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>rat Cav2.2 tsA201 cell line</td>
+      <td>PMID: 15201306</td>
+      <td>Line #201719</td>
+      <td>Dr. Diane Lipscombe, Brown University</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>human Nav1.7 HEK cell line</td>
+      <td>PMID: 22442564</td>
+      <td></td>
+      <td>Dr. Sooyeon Jo, Harvard Medical School</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC anti-mouse CD45</td>
+      <td>BD Biosciences</td>
+      <td>Cat 553079 RRID:AB_394609</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PR anti-mouse Siglec-F</td>
+      <td>BD Biosciences</td>
+      <td>Cat 552126 RRID:AB_394341</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-mouse GR-1</td>
+      <td>Thermo Fisher</td>
+      <td>Cat 17-5931-81 RRID:AB_469475</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-Cy7 anti-mouse CD3e</td>
+      <td>Thermo Fisher</td>
+      <td>Cat 25-0031-81 RRID:AB_469571</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP anti-mouse F4/80</td>
+      <td>Biolegend</td>
+      <td>Cat 123125 RRID:AB_893495</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MycoAlert PLUS Mycoplasma Detection Kit</td>
+      <td>Lonza</td>
+      <td>LT07-703</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Rat CGRP Enzyme Immunoassay Kit</td>
+      <td>Bertin Pharma/Cayman Chemical</td>
+      <td>#589001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>NNCB-2 (3-Cyclopentylmethylsulfanyl-2-(3,3-dimethyl-butylamino)-N-(4-methoxy-benzyl)-propionamide)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Synthesized by Sundia MediTech, structure verified by NMR and mass spectrometry.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>CNCB-2 ([2-Cyclopentylmethylsulfanyl-1-(4-methoxy-benzylcarbamoyl)-ethyl]−(3,3-dimethyl-butyl)-dimethyl-ammonium; chloride salt)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Synthesized by Sundia MediTech, structure verified by NMR and mass spectrometry.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Papain</td>
+      <td>Worthington Biochemical</td>
+      <td>LS003126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Collagenase Type I</td>
+      <td>Sigma</td>
+      <td>10103578001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Dispase Type II</td>
+      <td>Sigma</td>
+      <td>4942078001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>L-15</td>
+      <td>Invitrogen</td>
+      <td>11415–064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Nerve growth factor</td>
+      <td>Invitrogen</td>
+      <td>13290–010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Neurobasal A Medium</td>
+      <td>Invitrogen</td>
+      <td>10888–022</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>B-27</td>
+      <td>Invitrogen</td>
+      <td>17504–010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Penicillin-Streptomycin</td>
+      <td>Invitrogen</td>
+      <td>15140–122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Fetal calf serum</td>
+      <td>Invitrogen</td>
+      <td>10082–147</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Minimal Essential Medium</td>
+      <td>American Tissue Type Collection</td>
+      <td>EMEM 30–2003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Hank's Balanced Salt Solution</td>
+      <td>Gibco</td>
+      <td>14170–112</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>DMEM/F12</td>
+      <td>Gibco</td>
+      <td>11330–032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Tetrodotoxin w/citrate</td>
+      <td>Abcam</td>
+      <td>Ab120055</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Zymosan</td>
+      <td>Sigma</td>
+      <td>Z4250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Clampex</td>
+      <td>Molecular Devices</td>
+      <td>Versions 9.2, 10.3.1.5 RRID:SCR_011323</td>
+      <td>https://www.moleculardevices.com</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Igor Pro</td>
+      <td>Wavemetrics</td>
+      <td>Version 6.12A RRID:SCR_000325</td>
+      <td>https://www.wavemetrics.com</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>DataAccess</td>
+      <td>Bruxton Corporation</td>
+      <td></td>
+      <td>http://www.bruxton.com/DataAccess/index.html</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GraphPad Prism</td>
+      <td>Graph Pad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Version 5</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cav2.2 recordings
 
 Recordings were made from a cell line stably expressing rat Cav2.2 together with the β3 subunit and the α2δ−1 subunit (line #201719, Lin et al., 2004) generously provided by Dr. Diane Lipscombe (Brown University, Providence, RI). Cells were maintained in Dulbecco’s modified Eagle’s medium supplemented with 10% fetal bovine serum, penicillin/streptomycin, 25 μg/ml zeocin, 5 μg/ml blasticidin, and 25 μg/ml hygromycin (Lin et al., 2004) under 5% CO2 at 37°C. Cell line properties were authenticated by electrophysiology (large voltage-dependent calcium channel currents with kinetic properties expected of this Cav2.2 splice variant, Lin et al., 2004) and pharmacology (inhibition by 1 μM ω-conotoxin GVIA). The cell line tested negative for mycoplasma in tests performed every six months (Lonza MycoAlert PLUS Mycoplasma Detection Kit).
 
@@ -184,19 +425,19 @@ Whole-cell recordings were made at room temperature 24–48 hr after plating cel
 
 Currents were recorded with an Axopatch 200A amplifier, filtered at 5 kHz with a low-pass Bessel filter, and digitized at 10 kHz using a Digidata 1440A data acquisition interface controlled by pClamp10 software (Axon Instruments) and analyzed using Clampfit10, Prizm5, Sigmaplot 10, and Igor Pro 4.0 (Wavemetrics, Lake Oswego, OR). Voltage-activated barium currents were corrected for linear capacitative and leak currents determined using 5 mV hyperpolarizations delivered from the resting potential (usually −70 or −100 mV) and then appropriately scaled and subtracted. Data are given as mean ± SEM.
 
-## Mouse SCG recordings
+### Mouse SCG recordings
 
 Cell preparation. Dissociated neurons from the mouse SCG were prepared by enzymatic dissociation. SCGs were removed from Swiss Webster (CFW) mice (postnatal day 13–16, either sex), cut in half and treated for 20 min at 37°C with 20 U/ml papain (Worthington Biochemical, Lakewood, NJ) and 5 mM dl-cysteine in a Ca2+, Mg2+–free (CMF) Hank’s solution (Gibco, Grand Island, NY) containing (in mM): 136.9 NaCl, 5.4 KCl, 0.34 Na2HPO4, 0.44 KH2PO4, 5.55 glucose, 5 HEPES, 0.005% phenol red, pH 7.4. Ganglia were then treated for 20 min at 37°C with 3 mg/ml collagenase (Type I, Sigma-Aldrich, St. Louis, MO) and 4 mg/ml dispase II (Boehringer Mannheim, Indianapolis, IN) in CMF Hank’s solution. Cells were dispersed by trituration with a fire-polished glass Pasteur pipette in a solution composed of two media combined in a 2:1 ratio: Leibovitz's L-15 medium (Invitrogen, Grand Island, NY) supplemented with 5 mM HEPES, and DMEM/F12 medium (Invitrogen); this solution also had added 100 ng/ml nerve growth factor (NGF) (Invitrogen). Cells were then plated on glass coverslips and were incubated at 37°C (95% O2, 5% CO2) for 2 hr, after which Neurobasal medium (Invitrogen) containing B-27 supplement (Invitrogen), penicillin and streptomycin (Sigma, St. Louis, MO), and 100 ng/ml NGF was added to the petri dish. Storing the neurons at 4°C inhibited the growth of neurites, so that cells could be voltage clamped with fast settling of the capacity transient, enabling accurate recording of currents on the fast time scale of the action potential.
 
 Recordings were made using electrodes with resistances of 2–3.5 MOhm when filled with an internal solution containing (in mM): 117 mM CsCl, 4.5 mM MgCl2, 9 mM EGTA, 9 mM HEPES, 14 mM creatine phosphate (tris salt), 4 mM MgATP, and 0.3 mM GTP (tris salt), 9 mM HEPES, pH adjusted to 7.2 with CsOH. Pipette tips were wrapped with thin strips of parafilm to reduce capacitance. Seals were formed in an external solution containing (in mM): 150 mM TEA-Cl, 5 mM BaCl2, 1 mM MgCl2, 10 mM HEPES, and 10 mM Glucose, pH adjusted to 7.4 with TEA-OH. After establishing whole-cell recording, cells were lifted off the bottom of the recording chamber and placed in front of an array of quartz flow pipes (250 μm internal diameter, 350 μm external) using the same external solution with addition of 5 μM nimodipine to block L-type calcium channels and 1 mM TTX to block sodium channels. Experiments were done at 37°C, using a feedback controller system (Warner Instruments TC-344C) to control the temperature of the flow pipes, which were glued to a rectangular aluminum rod. Voltage clamp recordings were made using a Multiclamp 700B amplifier (Molecular Devices) with currents and voltages controlled and sampled using a Digidata 1322A interface using pClamp 9.2 software (Molecular Devices). Series resistance was compensated by 40–60%. Current and voltage records were filtered at 5–10 kHz and digitized at 100 kHz. Analysis was performed with Igor Pro (Wavemetrics, Lake Oswego, OR) using DataAccess (Bruxton Software) to import pClamp data. Voltage-activated barium currents were corrected for linear capacitative and leak currents determined using 5 mV hyperpolarizations delivered from the resting potential (usually −70 or −100 mV) and then appropriately scaled and subtracted. Data are given as mean ± SEM.
 
-## Nav1.7 recordings
+### Nav1.7 recordings
 
 Recordings of Nav1.7 currents were made from a cell line stably expressing human Nav1.7 channels previously made in the lab (Liu et al., 2012). Cells were grown in Minimum Essential Medium (ATCC) containing 10% fetal bovine serum (Sigma), penicillin/streptomycin (Sigma), and 800 μg/ml G418 (Sigma) under 5% CO2 at 37°C. Cell line properties were authenticated by electrophysiology (large voltage-dependent sodium channel currents) and pharmacology (inhibition by the Nav1.7-selective inhibitor PF-05089771 with previously-reported kinetics and voltage-dependence; Theile et al., 2016). The cell line tested negative for mycoplasma in tests performed every six months (Lonza MycoAlert PLUS Mycoplasma Detection Kit). For electrophysiological recording, cells were grown on coverslips for 1 to 6 hr after plating.
 
 Whole-cell recordings were obtained using patch pipettes with resistances of 2–3.5 MΩ when filled with the internal solution, consisting of 61 mM CsF, 61 mM CsCl, 9 mM NaCl, 1.8 mM MgCl2, 9 m M EGTA, 14 mM creatine phosphate (tris salt), 4 mM MgATP, and 0.3 mM GTP (tris salt), 9 mM HEPES, pH adjusted to 7.2 with CsOH. The shank of the electrode was wrapped with Parafilm to reduce capacitance and allow optimal series resistance compensation without oscillation. After establishing whole-cell recording in Tyrode’s solution (155 mM NaCl, 3.5 mM KCl, 1.5 mM CaCl2, 1 mM MgCl2, 10 mM HEPES, 10 mM glucose, pH adjusted to 7.4 with NaOH) cells were lifted off the bottom of the recording chamber and placed in front of flow pipes. Recordings were made using a base external solution of Tyrode’s solution with 10 mM TEACl. Series resistance was compensated by 40–60%. Recordings were made at 37°C using a Multiclamp 700B amplifier and procedures for recording and analysis followed those for SCG neuron experiments.
 
-## Mouse DRG recordings
+### Mouse DRG recordings
 
 Cell preparation. Acutely dissociated DRG neurons were prepared as previously described (Liu et al., 2017; Zheng et al., 2019). Briefly, DRG neurons were removed from Swiss Webster mice (CFW) of either sex (P11-P13), treated for 20 min at 37°C with 20 U/ml papain (Worthington Biochemical, Lakewood, NJ) in calcium- and magnesium-free (CMF) Hank’s solution (Gibco, Grand Island, NY) containing 137 mM NaCl, 5.36 mM KCl, 0.33 mM Na2HPO4, 0.44 mM KH2PO4, 5.55 mM glucose, 4.17 mM NaHCO30.02 mM phenol red, pH 7.40 adjusted with NaOH; 300 ~ 310 mOsm. Ganglia were then treated for 20 min at 37°C with 3 mg/ml collagenase (Type I, Sigma-Aldrich, St. Louis, MO) and 4 mg/ml dispase II (Boehringer Mannheim, Indianapolis, IN) in CMF Hank’s solution. Cells were dispersed by trituration with a fire-polished glass Pasteur pipette in a solution composed of two media combined in a 1:1 ratio: Leibovitz's L-15 medium (Invitrogen, Grand Island, NY) supplemented with 5 mM HEPES, and DMEM/F12 medium (Invitrogen); this solution also had added 100 ng/ml nerve growth factor (NGF) (Invitrogen). Cells were then plated on glass coverslips and incubated at 37°C (95% O2, 5% CO2) for 2 hr, after which Neurobasal medium (Invitrogen) containing B-27 supplement (Invitrogen), penicillin and streptomycin (Sigma, St. Louis, MO), and 100 ng/ml NGF was added to the petri dish. Cells were stored at 4°C and used within 48 hr.
 
@@ -206,24 +447,24 @@ Recordings were performed at 37°C using an Axon Instruments Multiclamp 700B Amp
 
 Experiments were done using small diameter DRG neurons (15–30 µm). In voltage clamp experiments, neurons were confirmed to express TRPV1 channels or TTX-resistant sodium currents or both, by testing for currents activated by capsaicin or for sodium currents resistant to 300 nM TTX or for sodium currents with the signature slow inactivation and relatively depolarized steady-state inactivation curves (Blair and Bean, 2002). Such tests were not always possible in current clamp experiments but these cells had the wide action potentials with shoulders typical of neurons with TTX-resistant sodium channels.
 
-## Paw incision model
+### Paw incision model
 
 Methods were based on those previously described (Brennan et al., 1996; Song et al., 2018; Cowie and Stucky, 2019). Adult (10–12 weeks old) male C57Bl6/J mice (Jackson Laboratories, Bar Harbor, Maine, USA) were housed in groups of 5 for one week prior to use under controlled conditions (lights on 07:00-19:00 hr; humidity 30–50%; temperature 22–23°C) with food and water available ad libitum. Mice were anesthetized with 3–4% isoflurane and surgery performed under maintenance anesthesia with 1.5–2% isoflurane. Following aseptic preparation with alternating washes of the plantar surface of the paw with 10% povidone-iodine solution and 70% alcohol, a 5 mm longitudinal incision was made on the plantar surface of the right paw with a number 11 surgical blade. The underlying muscles were elevated with forceps to confirm that the muscles and tendons were not damaged by the procedure. The skin was closed with two single sutures of 6–0 nylon. Twenty-four hours after the paw incision, mice were gently restrained in a cloth pocket and received a 10 μL bolus injection of either 15 or 30 mM CNCB-2, 30 mM bupivacaine, or vehicle (5% DMSO) in normal saline to the injured paw adjacent to the incision. Each group consisted of 8 mice, based on previous experiments showing sufficient power to detect significance with 95% confidence. Dosing of compounds was performed by an individual different to the person testing for mechanical hypersensitivity, to ensure blinding. The von Frey testing was performed at 1, 4, and 8 hr after drug injection.
 
 Mechanical hypersensitivity was assessed using the von Frey test as previously described (Latremoliere et al., 2015). After animals were habituated to the test cage (7.5 × 7.5×15 cm) with a mesh bottom for 45 min for 2 days, baseline responses were measured using nine von Frey filaments (bending force of 0.04, 0.07, 0.16, 0.4, 0.6, 1, 1.4, 2, and 4 g). Based on the baseline measurement, the mice were assigned to each group so that the baseline mechanical sensitivity among the groups was similar; the test order was randomized. Each filament was applied to the paw three times with 10 s intervals; a withdrawal response was scored if least two of the filament applications elicited flinching or licking of the paw. The up-down method was used to determine the 50% withdrawal threshold following the algorithm of Gonzalez-Cano et al. (2018).
 
-## Intraplantar zymosan injection model
+### Intraplantar zymosan injection model
 
 Inflammatory pain was induced by zymosan injection (Meller and Gebhart, 1997). Either 10 μL of CNCB-2 (30 mM) or vehicle (5% DMSO in normal saline) was injected subcutaneously in the left hind paw of 8-week-old C57Bl6/J female mice (n = 5 each, based on the paw incision results showing sufficient power to detect significance with 95% confidence). One hour later the same paw was injected subcutaneously with 20 μL of zymosan (5 mg/ml in saline; Sigma, Z4250). Four hours after the zymosan injection, the von Frey test was performed by a blinded investigator.
 
-## CGRP release from DRG neurons
+### CGRP release from DRG neurons
 
 For the CGRP release assay, DRGs were dissected from C57Bl6/J mice into Hank’s balanced salt solution, incubated for 90 min at 37°C with 1 mg/ml collagenase A and 2.4 U /ml dispase II (Roche Applied Sciences) in HEPES-buffered saline (Sigma), and then mechanically triturated using glass Pasteur pipettes. DRGs were then centrifuged over a 10% BSA gradient and plated on laminin-coated 96 well plates at approximately 5,000 cells per well. A plate was prepared from each of two mice, each plate with DRGs in 10 wells. DRGs were cultured 48 hr before conducting a CGRP release assay in B27-supplemented neurobasal-A medium plus 50 ng/ml NGF, 2 ng/ml GDNF, 10 µM arabinocytidine and penicillin/streptomycin. The DRG neurons were exposed to 50 mM KCl with vehicle (2 wells of each plate), 50 mM KCl in the presence of 30 µM NNCB-2 (two wells/plate), or 50 mM KCl in the presence of 30 µM CNCB-2 (four wells/plate), with two wells/plate serving as controls with no KCl depolarization (4 mM KCl), for 10 min at 37°C. The supernatants were collected and analyzed using the Rat CGRP Enzyme Immunoassay Kit (Bertin Pharma/Cayman Chemical, #589001). Plates were read at 405 nm for 0.1 s on a Wallac Victor 1420 Multilabel Counter (Perkin Elmer) and data was analyzed using GraphPad Prism. Data are shown as raw values of absorbance and bars and error bars indicate mean ± SEM.
 
-## Allergic airway inflammation
+### Allergic airway inflammation
 
 Allergic airway inflammation was studied in an ovalbumin-based model of type two allergic airway disease (Haworth et al., 2011; Talbot et al., 2015). On day 0 and day 7, 8-week-old mice (BALB/c, stock number: 001026) were sensitized by a 200 µl i.p. injection of a solution containing 1 mg/ml ovalbumin and 5 mg/ml aluminum hydroxide in phosphate-buffered saline (PBS). On days 14–17 (10:00 am) mice were exposed daily to 6% ovalbumin aerosol for 25 min to produce airway inflammation. On day 18 (near the peak of inflammation in this model), mice were anesthetized using isoflurane and 30 μM CNCB-2 or 100 μM NNCB-2 in PBS was applied intra-nasally as a 50 μL aliquot. On day 21, mice were anesthetized by an intraperitoneal injection of urethane (200 μl i.p., 35%) and a 20G sterile catheter inserted longitudinally into the trachea. To harvest bronchoalveolar lavage fluid, 2 ml of ice cold PBS containing protease inhibitors (Roche) was injected into the lung, harvested and stored on ice. Bronchoalveolar lavage fluid then underwent a 400 g centrifugation (15 min; 4°C), the supernatant was discarded and cells resuspended in 200 µl in FACS buffer (PBS, 2% FCS, EDTA), and incubated with Fc block (0.5 mg/ml, 10 min; BD Biosciences). Cells were then stained with monoclonal antibodies (FITC anti-mouse CD45, BD Biosciences, cat no: 553079, PE anti-mouse Syglec-F, BD Biosciences, cat no: 552126; APC anti-mouse GR-1, eBiosciences, cat no: 17-5931-81; PE-Cy7 anti-mouse CD3e, cat no: 25-0031-81; PerCP anti-mouse F4/80, BioLegend, cat no: 123125; 45 min, 4°C on ice) before data acquisition on a FACS Canto II (BD Biosciences). A leukocyte differential count was determined during flow cytometry analysis of cells expressing the common leukocyte antigen CD45 (BD Pharmigen; cat no: 553079). Specific cell populations were identified as follows: macrophages as F4/80Hi-Ly6gNeg, eosinopohils as F4/80Int-Ly6gLo-SiglecFHi, neutrophils as F4/80Lo-Ly6gHi-SiglecFNeg, and lymphocytes as F4/80Neg-Ly6gNeg-CD3Pos. Total BAL cell counts were performed using a standard hemocytometer, with absolute cell numbers calculated as total BAL cell number multiplied by the percentage of cell subpopulation as determined by FACS (Haworth et al., 2011). Data are shown as raw values of cell counts (with outliers included); bars and error bars indicate mean ± SEM.
 
-## Chemicals
+### Chemicals
 
 NNCB-2 (3-Cyclopentylmethylsulfanyl-2-(3,3-dimethyl-butylamino)-N-(4-methoxy-benzyl)-propionamide) and CNCB-2 ([2-Cyclopentylmethylsulfanyl-1-(4-methoxy-benzylcarbamoyl)-ethyl]−(3,3-dimethyl-butyl)-dimethyl-ammonium; chloride salt) were designed based on the scaffold described by Seko et al. (2001) and custom synthesized (Sundia MediTech Co, Ltd.). Structures were verified by NMR and liquid chromatography mass spectrometry. An early series of exploratory experiments was done with the iodide salt of CNCB-2 (synthesized by Acesys Pharmatech), which gave similar effects as the chloride salt. For in vitro experiments, compounds were prepared as stock solutions of 30 mM in DMSO; stability of CNCB-2 in the DMSO stock solution was verified by liquid chromatography mass spectrometry. For the in vivo paw pad injection experiments where injection of a small volume (10 μL) was necessary to ensure absorption into the tissue, a stock solution of 600 mM CNCB-2 in DMSO was used to enable use as a final concentration of 30 mM in the 10 μL injectant.

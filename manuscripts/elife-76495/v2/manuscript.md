@@ -14,20 +14,20 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Helen Diller Family Comprehensive Cancer Center, University of California, San Francisco San Francisco United States
-2. https://ror.org/05t8khn72 Institute for Molecular Biology of Barcelona, Consejo Superior de Investigaciones Científicas Barcelona Spain
-3. https://ror.org/02qs1a797 Centro Nacional de Investigaciones Cardiovasculares Madrid Spain
-4. https://ror.org/05rrcem69 UC Davis MIND Institute, University of California Davis Sacramento United States
-5. https://ror.org/05rrcem69 Department of Pediatrics, University of California Davis Sacramento United States
-6. https://ror.org/043mz5j54 Department of Anatomic Pathology, University of California San Francisco San Francisco United States
-7. https://ror.org/0371hy230 Institució Catalana de Recerca i Estudis Avançats (ICREA) Barcelona Spain
-8. https://ror.org/0190ak572 Department of Biochemistry and Molecular Pharmacology, New York University Grossman School of Medicine New York United States
+1. Helen Diller Family Comprehensive Cancer Center, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Institute for Molecular Biology of Barcelona, Consejo Superior de Investigaciones Científicas Barcelona Spain ([ROR:05t8khn72](https://ror.org/05t8khn72))
+3. Centro Nacional de Investigaciones Cardiovasculares Madrid Spain ([ROR:02qs1a797](https://ror.org/02qs1a797))
+4. UC Davis MIND Institute, University of California Davis Sacramento United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+5. Department of Pediatrics, University of California Davis Sacramento United States ([ROR:05rrcem69](https://ror.org/05rrcem69))
+6. Department of Anatomic Pathology, University of California San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+7. Institució Catalana de Recerca i Estudis Avançats (ICREA) Barcelona Spain ([ROR:0371hy230](https://ror.org/0371hy230))
+8. Department of Biochemistry and Molecular Pharmacology, New York University Grossman School of Medicine New York United States ([ROR:0190ak572](https://ror.org/0190ak572))
 
 † Corresponding author
 
 ## Abstract
 
-RAS GTPases are highly conserved proteins involved in the regulation of mitogenic signaling. We have previously described a novel Cullin 3 RING E3 ubiquitin ligase complex formed by the substrate adaptor protein LZTR1 that binds, ubiquitinates, and promotes proteasomal degradation of the RAS GTPase RIT1. In addition, others have described that this complex is also responsible for the ubiquitination of classical RAS GTPases. Here, we have analyzed the phenotypes of Lztr1 loss-of-function mutants in both fruit flies and mice and have demonstrated a biochemical preference for their RIT1 orthologs. Moreover, we show that Lztr1 is haplosufficient in mice and that embryonic lethality of the homozygous null allele can be rescued by deletion of Rit1 . Overall, our results indicate that, in model organisms, RIT1 orthologs are the preferred substrates of LZTR1.
+RAS GTPases are highly conserved proteins involved in the regulation of mitogenic signaling. We have previously described a novel Cullin 3 RING E3 ubiquitin ligase complex formed by the substrate adaptor protein LZTR1 that binds, ubiquitinates, and promotes proteasomal degradation of the RAS GTPase RIT1. In addition, others have described that this complex is also responsible for the ubiquitination of classical RAS GTPases. Here, we have analyzed the phenotypes of Lztr1 loss-of-function mutants in both fruit flies and mice and have demonstrated a biochemical preference for their RIT1 orthologs. Moreover, we show that Lztr1 is haplosufficient in mice and that embryonic lethality of the homozygous null allele can be rescued by deletion of Rit1. Overall, our results indicate that, in model organisms, RIT1 orthologs are the preferred substrates of LZTR1.
 
 ## Introduction
 
@@ -41,21 +41,45 @@ LZTR1 has been reported to regulate the protein stability of other RAS GTPases b
 
 The RAS family of GTPase proteins has been previously shown to be well-conserved across species and LZTR1 has been proposed to regulate a subset of these proteins (Rojas et al., 2012). Therefore, to understand how LZTR1 has evolved in comparison with other RAS GTPases, we performed protein alignment analysis of the human orthologs of KRAS, RIT1, and LZTR1 orthologs from human and common model organisms. Consistent with previous studies, KRAS was highly conserved in less complex organisms, including fission yeast (Ras1; 60% protein identity) (Figure 1a). In contrast, we found that RIT1 rapidly diverged in less complex organisms and a mildly conserved protein in Drosophila melanogaster (RIC; 60% protein identity) was the most distant ortholog that could be found in these laboratory model species. LZTR1 followed a similar pattern as RIT1; we could identify an ortholog in fruit flies (CG3711/LZTR1; 60% protein identity), but not in the roundworm Caenorhabditis elegans (Figure 1a). These analyses suggest that RIT1 and LZTR1 are more likely to have functionally co-evolved than KRAS and LZTR1. To further assess the biochemical relationship between these proteins across model organisms, we generated recombinant proteins for the KRAS, RIT1, and LZTR1 orthologs from mouse (Mus musculus), zebrafish (Danio rerio), and fruit fly (Drosophila melanogaster) and tested their ability to interact in pull down assays. All LZTR1 orthologs preferentially interacted with RIT1 orthologs (Figure 1b, Figure 1—figure supplement 1), indicating that this interaction that we previously reported for human proteins is also conserved in less complex model organisms.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/76495/elife-76495-fig1-v2.jpg)
+
+**Figure 1.:** (a) Phylogenetic trees of KRAS, RIT1, and LZTR1 orthologs based on multiple protein sequence alignments performed with Clustal Omega (Figure 1—source data 1). Orthologs were searched in the following model organisms: chimpanzee (Pan troglodytes), pig (Sus scrofa), chicken (Gallus gallus), mouse (Mus musculus), African clawed frog (Xenopus laevis), zebrafish (Danio rerio), fruit fly (Drosophila melanogaster), roundworm (Caenorhabditis elegans), and budding yeast (Saccharomyces cerevisiae). (b) Pull-down assays using GST-tagged KRAS and RIT1 or their mouse, zebrafish, or fruit fly orthologs produced recombinantly in bacteria. Recombinant proteins were incubated with lysates from HEK-293T cells expressing their corresponding species’ HA-tagged LZTR1 ortholog. Representative results from three biological replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76495/elife-76495-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Note that SOScat domain does not interact with RIT1 orthologs. Representative results from two biological replicates.
+
 To better understand the role of the LZTR1 ortholog in Drosophila melanogaster, we isolated Lztr1 loss-of-function mutations by using two independent CRISPR/Cas9 gene editing approaches. One resulting allele, Lztr11, causes a frameshift at the beginning of the second exon and encodes a short, truncated product. Another allele, Lztr12, lacks all coding sequences and is, therefore, a null mutation (Figure 2a). Lztr1 null flies were normal and fertile and did not display any obvious phenotype. A previous study showed that flies expressing RNA interference constructs against Lztr1 displayed minor defects in wing vein patterning (Bigenzahn et al., 2018); however, we did not find consistent vein defects in our null mutants (Figure 2b).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/76495/elife-76495-fig2-v2.jpg)
 
-**Figure 2.:** Drosophila Lztr1 regulates Ric stability.(a) A schematic representation of the Drosophila CG3711/Lztr1 gene locus is shown. Coding exons are represented in blue. Two CRISPR/Cas9-mediated approaches were used to isolate the Lztr1 loss-of-function alleles, Lztr1 and 1Lztr1. (2b) Wing vein patterning is not affected in Lztr1 null flies (upper panel), with very few individuals exhibiting small ectopic veinlets in two or three points (asterisks; lower panel) (n = 209 flies). (c) Estimated normalized protein abundance expressed as mean log2 fold change in Lztr1 vs 2yw (control) comparison. Corresponding single-protein standard error (SE) and t-test p-values are listed. (d) Immunoblot analysis of protein extracts isolated from the indicated transgenic adult flies in a yw or Lztr1 background. ns: non-specific band. (2e) Same as panel (d) with protein extracts isolated from third-instar larvae. Representative results from three biological replicates.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (a) A schematic representation of the Drosophila CG3711/Lztr1 gene locus is shown. Coding exons are represented in blue. Two CRISPR/Cas9-mediated approaches were used to isolate the Lztr1 loss-of-function alleles, Lztr11 and Lztr12. (b) Wing vein patterning is not affected in Lztr1 null flies (upper panel), with very few individuals exhibiting small ectopic veinlets in two or three points (asterisks; lower panel) (n = 209 flies). (c) Estimated normalized protein abundance expressed as mean log2 fold change in Lztr12 vs yw (control) comparison. Corresponding single-protein standard error (SE) and t-test p-values are listed. (d) Immunoblot analysis of protein extracts isolated from the indicated transgenic adult flies in a yw or Lztr12 background. ns: non-specific band. (e) Same as panel (d) with protein extracts isolated from third-instar larvae. Representative results from three biological replicates.
 
 Next, we undertook label-free proteomics to quantify the levels of Ras family proteins in head extracts from Lztr12 and background matched control (yw) flies. Ric levels were upregulated ~11 times in Lztr12 fly heads relative to the control, while Ras85D (the HRAS, KRAS, and NRAS ortholog, hereafter referred to as Ras) levels were only modestly altered in both backgrounds (~1.5-fold difference) (Figure 2c). Similarly, Ras64D (the MRAS ortholog) was only upregulated ~1.6-fold in Lztr12 mutant heads. To validate these results, we generated Drosophila transgenic lines carrying N-terminally HA tagged Ric or Ras genes under the control of their natural genomic sequences, thereby facilitating detection of both products at their endogenous levels. Both transgenes were then placed in the Lztr12 mutant background to assess the effect of Lztr1 depletion on Ric and Ras protein stability. Consistent with our mass spectrometry results, HA-Ric levels were elevated in the absence of Lztr1, while HA-Ras levels remained barely altered in either mutant adult flies or third-instar larvae (Figure 2d–e). Altogether, these experiments show that Drosophila Lztr1 preferentially regulates Ric rather than Ras levels, as seen with the corresponding mammalian orthologs.
 
 Given the absence of a phenotype in fruit flies, we examined the effect of Lztr1 deletion in mice. Steklov et al had previously reported that Lztr1 heterozygous knockout mice display typical features of NS, suggestive of haploinsufficiency (Steklov et al., 2018). In humans, NS-associated variants are most commonly found as bi-allelic loss-of-function variants that are inherited in an autosomal recessive manner; although there are few heterozygous variants that segregate as autosomal dominant, these are single nucleotide variants that likely act as dominant negatives (Johnston et al., 2018; Yamamoto et al., 2015; Motta et al., 2019). Hence, we further analyzed the potential NS-like phenotype of heterozygous Lztr1 deletion in the mouse as previously described in other mouse models (Araki et al., 2004; Wu et al., 2011; Hernández-Porras et al., 2014; Castel et al., 2019). Heterozygous mice did not exhibit significant changes in body weight and, overall, their morphology appeared normal (Figure 3a, Figure 3—figure supplement 1). The morphology of the skull, which generally shows dysmorphic features in mouse models of NS (round skull, blunt snout, and hypertelorism), was assessed using micro-computed tomography (µCT) and did not have significant differences when compared to wild-type littermates (Figure 3b). In addition, we assessed whether heterozygous mice displayed either cardiomegaly or splenomegaly, as these signs have been observed in other NS-like mouse models, but we failed to observe differences with wild-type animals (Figure 3c–d). No significant changes in RAS GTPases levels were seen either in tissue extracts from these mice (Figure 3—figure supplement 1). These results indicate that Lztr1 heterozygous mice do not exhibit the typical features seen in other NS mouse models and indicate that Lztr1 is haplosufficient for this phenotype. In support of these observations in mice, NS families carrying LZTR1 alleles generally exhibit an autosomal recessive inheritance pattern and bi-allelic inactivation of LZTR1 is required to exhibit a NS phenotype (Johnston et al., 2018). In addition, analysis of LZTR1 variants in the genome aggregation database (gnomAD) shows that many loss-of-function variants are observed in healthy individuals (pLI = 0; o/e = 2.28) (Karczewski et al., 2020). This indicates that these heterozygous loss-of-function variants are tolerated and are found in non-syndromic individuals. Thus, these data suggest haploinsufficiency of LZTR1 in humans is unlikely to lead to NS.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/76495/elife-76495-fig3-v2.jpg)
+
+**Figure 3.:** (a) Weight (left panel) and length (right panel) of 4-week-old male Lztr1 wild type (n = 18) and heterozygous mutant (n = 20) mice. (b) Representative µCT imaging of the skull of an 8-week-old male Lztr1 wild type and heterozygous mutant mouse. The indicated values show the average measurement (mm) of length, width, and inner intercanthal distance in Lztr1 wild type (n = 5) and heterozygous mutant (n = 5) mice. Mann-Whitney p values were not significant for all the measurements. (c) Heart weight was similar between 8-week-old male Lztr1 wild type (n = 8) and heterozygous mutant (n = 6) mice, as assessed by heart to body weight ratio (HW/BW). Mann-Whitney test p value was not significant. (d) Same as panel (c), for the spleen of these mice. (e) Pie charts indicate the percentage of obtained genotypes upon weaning (21 days of age) the offspring of Lztr1 heterozygous mutant intercrosses. Each pie chart represents a different strain background and/or mixed background. (f) Representative image of female littermates with the indicated Lztr1 genotypes (C57BL/6N-129Sv F3 background). Note the decreased size, round skull, and proptosis of the homozygous Lztr1 knockout mouse. (g) Immunoblot analysis of RIT1, RAS, and Tubulin proteins isolated from the indicated tissues of Lztr1 wild type, heterozygous, and homozygous mice (C57BL/6N-129Sv F3 background). Protein lysates from two different mice were used for each genotype.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76495/elife-76495-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Weight (left panel) and length (right panel) of 4-week-old female Lztr1 wild type (n = 16) and heterozygous knockout (n = 24) mice. (b) µCT measurements of the skull of 8-week-old male and female Lztr1 wild type and heterozygous knockout mice. The indicated values show the average measurement (mm) of length, width, and inner intercanthal distance, as well as the standard deviation (SD). Mann-Whitney p values are indicated and were not significant for any of the measurements. (c) Heart weight was similar between 8-week-old female Lztr1 wild type (n = 9) and heterozygous mutant (n = 7) mice, as assessed by heart to body weight ratio (HW/BW). Mann-Whitney test p value was not significant. (d) Same as panel c, for the spleen of these mice. (e) Immunoblot analysis of lung and liver protein extracts isolated from Lztr1 wild type (n = 4) and heterozygous knockout (n = 4) mice. Arrowhead indicates Lztr1 band.
 
 We and others have previously shown that Lztr1 knockout mice are embryonically lethal (Steklov et al., 2018; Castel et al., 2019); however, the reason for such lethality remains largely unknown. A previous study showed that Lztr1-associated embryonic lethality can be rescued by administering a MEK1/2 inhibitor to pregnant females, indicating that the phenotype is largely dependent on MAPK hyperactivation (Steklov et al., 2018). In fact, in other murine NS models, excessive activation of MAPK during embryonic development results in lethality, as seen in the KrasV14I model (Hernández-Porras et al., 2014). Interestingly, this phenotype appears to be more prominent in certain mouse background strains, such as C57BL/6 N, and more permissive in 129Sv (Araki et al., 2004; Hernández-Porras et al., 2015). Since our Lztr1 mutant mice are in the C57BL/6 N strain, we hypothesized that mouse background affects embryonic lethality. Backcrossing our mice to 129Sv females yielded heterozygous Lztr1 mutant mice in a 50% mixed background. After one backcross (referred to as F1), using a heterozygous x heterozygous breeding scheme, we obtained 1/55 (~1.8%) homozygous viable mice. At F2, we obtained 3/45 (~6.7%) homozygous viable mice. At F3, we obtained 3/34 (~8.8%) homozygous viable mice (Figure 3e). In contrast, mice in the 129Sv pure background did not yield any homozygous viable mice, suggesting that a combination of strain-specific genetic modifiers is likely required to tolerate Lztr1 deletion. In Raf1 D486N NS mice, a potential gene modifier was mapped at chromosome 8 of the 129Sv strain (Wu et al., 2012); however, we hypothesize that in the context of Lztr1, a negative gene modifier is also likely to be located in the Y chromosome of the 129Sv strain, given that we do not yield any homozygous viable mice after Y-chromosome fixing.
 
 The limited number of viable homozygous Lztr1 knockout mice prevented us from undertaking quantitative phenotyping; however, when compared to wild type littermates, Lztr1 knockout mice appeared smaller, displayed characteristic dysmorphic facial features (round snout, hypertelorism, low set of ears, and proptosis), and exhibited cardiomegaly, consistent with other mouse models of NS (Figure 3f). In addition, Lztr1 knockout mice exhibited increased levels of Rit1 in all the tissues that we analyzed, while RAS levels remained mostly unchanged (Figure 3g).
 
 Next, we sought to investigate the cause of embryonic lethality in Lztr1 knockout mice. We and others had previously shown that many embryos survive to late developmental stages (i.e. embryonic day (E)17.5–19.5), therefore, we harvested embryos on day E18.5. Most embryos display extensive hemorrhages (Figure 4a) and, consistent with this observation, conditional deletion of Lztr1 in blood vessels has been previously shown to cause vascular leakage (Sewduth et al., 2020). Since many NS alleles that cause lethality in mice have been related to cardiovascular dysfunction, we analyzed the heart phenotype of E18.5 embryos. Valve leaflets and endocardial cushions were normal, in contrast to the previous Ptpn11 NS-associated alleles (Araki et al., 2004). In Lztr1 knockout embryos, the ventricular myocardial wall showed defects that are compatible with ventricular noncompaction cardiomyopathy, similar to that seen in the Ptpn11 Q79R transgenic mouse model (Nakamura et al., 2007). Detailed analysis of compact and trabecular myocardial thickness showed significant differences in mutant embryos (Figure 4b). In addition, we observed interventricular septal defects in ~20% mutant hearts. Although the heart phenotype is striking, it is likely that embryonic lethality results from a combination of vascular and cardiac defects during development.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/76495/elife-76495-fig4-v2.jpg)
+
+**Figure 4.:** (a) Gross morphology of Lztr1+/+ (wild type) and Lztr1-/- (knockout) embryos at E13.5 and E18.5. Note the presence of extensive hemorrhage in knockout embryos (yellow arrows). (b) Histological characterization of E18.5 hearts shows highly penetrant defects in ventricular wall thickness at both outflow tract (OFT) and atrioventricular canal (AVC) levels, as well as septal defects (arrows) in ~20% Lztr1-/- embryos. Quantification of ventricular wall thickness in both CM (yellow) and TM (green) and CM/TM index are shown in the graphs (n = 5). Rv: right ventricle; lv: left ventricle; ivs: interventricular septum; CM: compact myocardium; TM: trabecular myocardium. p Values were calculated using Student’s t-test. (c) Immunoblot analysis of different tissues isolated from Rit1+/+ (wild type), Rit1+/- (heterozygous), and Rit1-/- (knockout) adult mice. (d) Percentage of Lztr1 genotypes obtained upon weaning (21 days of age) the offspring of Lztr1 heterozygous mutant intercrosses in either a Rit1+/+ (n = 19) or Rit1-/- (n = 85) background. All these mice were maintained in a C57BL/6 N background. (e) Histological analysis of the heart of Lztr1; Rit1 double knockout E18.5 embryos (n = 3). (f) Immunoblot analysis of lysates isolated from primary MEF with the indicated genotypes. (g) Primary MEF derived from wild type, Lztr1 knockout, Rit1 knockout, and Lztr1; Rit1 double knockout were starved overnight and stimulated with 10% FBS during the indicated times. Protein lysates were immunoblotted as indicated. Immunoblots represent a representative result from two biological replicates. (h) Quantitative PCR analysis of Spry2 and Dusp6 mRNA levels in primary MEF with the indicated genotypes stimulated for 1 hr with 10% FBS (n = 3 biological replicates). p Values were calculated using Student’s t-test. p values: * (p < 0.05); ** (p < 0.01); *** (p < 0.005).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76495/elife-76495-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Weight of 4-week-old male (left) female (right) Rit1 knockout (male: n = 14; female: n = 13) and Lztr1/Rit1 double knockout (male: n = 24; female: n = 14) mice. (b) µCT measurements of the skull of eight-week-old male and female Rit1 knockout and Lztr1/Rit1 double knockout mice. The indicated values show the average measurement (mm) of length, width, and inner intercanthal distance, as well as the standard deviation (SD). Mann-Whitney p values are indicated and were not significant for any of the measurements. (c) Heart weight was similar between eight-week-old male (left) and female (right) Rit1 knockout (male: n = 11; female: n = 8) and Lztr1/Rit1 double knockout (male: n = 12; female: n = 11) mice, as assessed by heart to body weight ratio (HW/BW). Mann-Whitney test p value was not significant. (d) Quantification of ventricular wall thickness in both CM and TM and CM/TM index are shown in the graphs (n = 3). Lztr1 genotype for embryos is indicated and were all in the Rit1-/- background. CM: compact myocardium; TM: trabecular myocardium. p Values were calculated using Student’s t-test. p values: ns (p > 0.05); * (p < 0.05).
 
 Lztr1 embryonic lethality provides a unique model to undertake a genetic epistatic rescue experiment to assess which RAS GTPase is the critical downstream substrate of the CRL3LZTR1 complex. We have previously shown that at the biochemical level CRL3LZTR1 complex preferentially binds and promotes degradation of RIT1. Therefore, we generated Rit1 knockout mice to test whether Rit1 depletion can rescue Lztr1-mediated embryonic lethality. To avoid potential heterosis, we generated Rit1 knockouts in the C57BL6/N background; mice were born at expected Mendelian ratios, were fertile, and did not exhibit any visible phenotype, similar to a previous Rit1 null mouse strain (Cai et al., 2011). We confirmed the elimination of Rit1 by immunoblot in different tissues, including brain, lung, and heart (Figure 4c). Next, we crossed Rit1 knockout mice with Lztr1 heterozygous mice to obtain both Lztr1-/+/Rit1+/+ and Lztr1-/+/Rit1-/- progeny. As previously shown, a heterozygous breeding scheme with Lztr1-/+/Rit1+/+ mice did not yield any viable Lztr1 knockout mice (Figures 3e and 4d; Sewduth et al., 2020). In contrast, when Lztr1-/+/Rit1-/- breeders were used, we obtained 13/85 (~15.3%) mice that were double knockout (DKO) for both Lztr1 and Rit1 (Figure 4d). This result shows that Rit1 deletion can rescue the embryonic lethality caused by Lztr1 deletion in mice, indicating that Rit1 is the critical substrate of the CRL3LZTR1 complex during embryonic development. The resulting DKO mice appeared normal, were fertile, and were absent of any detectable phenotype that resembled other NS mouse models, as assessed by size, heart weight, and cranial morphology (Figure 4—figure supplement 1). In addition, Lztr1/Rit1 DKO embryos harvested at E18.5 showed a complete rescue of the cardiac phenotype, which were indistinguishable from Rit1 KO embryos (Figure 4e, Figure 4—figure supplement 1e). To assess whether the Rit1 dependency established by Lztr1/Rit1 DKO mice is correlated to a rescue of MAPK pathway hyperactivation, we isolated primary mouse embryonic fibroblasts (MEF) from wild type, Lztr1 KO, Rit1 KO, and Lztr1/Rit1 DKO embryos (Figure 4f). We then subjected these MEFs to FBS stimulation and observed a noticeable decrease in MAPK signaling in cells devoid of both LZTR1 and RIT1 compared to LZTR1 KO cells, both by immunoblot and using the two well-characterized MAPK-regulated transcriptional targets Spry2 and Dusp6 (Figure 4g–h). This indicated that, in our MEF cells, MAPK pathway hyperactivation is mediated by RIT1 protein stabilization in the absence of CRL3LZTR1 regulation.
 
@@ -67,41 +91,352 @@ While other RAS GTPases have cognate GAPs and GEFs that regulate their activity,
 
 ## Materials and methods
 
-## DNA constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>NEB</td>
+      <td>C2527H</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Lztr11</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CG3711/Lztr1 knockout</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Lztr12</td>
+      <td>This paper</td>
+      <td></td>
+      <td>CG3711/Lztr1 knockout</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>RasHA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Transgene of HA-Ras at attP-86Fb landing site</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>RicHA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Transgene of HA-Ric at attP-86Fb landing site</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Lztr1-/-</td>
+      <td>EUCOMM</td>
+      <td>Lztr1tm1a(EUCOMM)Wtsi; RRID: IMSR_EM:06794</td>
+      <td>Lztr1 knockout</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rit1-/-</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Rit1 knockout</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Lztr1-/-;Rit1-/-</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lztr1 and Rit1 double knockout</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>129S1/Svlmj</td>
+      <td>Jackson Laboratories</td>
+      <td>002448; RRID:IMSR_JAX:002448</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-DEST-Flag-SOScat (H. sapiens)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector to express Flag-SOS1 (residues 564–1049) in mammalian cells.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-DEST-HA-LZTR1 (H. sapiens)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector to express HA-LZTR1 in mammalian cells.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-DEST-HA-LZTR1 (M. musculus)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector to express HA-LZTR1 in mammalian cells.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-DEST-HA-LZTR1 (D. rerio)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector to express HA-LZTR1 in mammalian cells.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-DEST-HA-LZTR1 (D. melanogaster)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector to express HA-LZTR1 in mammalian cells.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6P-DEST-KRAS (H. sapiens)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector to express GST-KRAS in E. coli cells.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6P-DEST-RIT1 (H. sapiens)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector to express GST-RIT1 in E. coli cells.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6P-DEST-KRAS (M. musculus)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector to express GST-KRAS in E. coli cells.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6P-DEST-RIT1 (M. musculus)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector to express GST-RIT1 in E. coli cells.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6P-DEST-KRAS (D. rerio)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector to express GST-KRAS in E. coli cells.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6P-DEST-RIT1 (D. rerio)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector to express GST-RIT1 in E. coli cells.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6P-DEST-RAS (D. melanogaster)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector to express GST-KRAS in E. coli cells.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6P-DEST-RIC (D. melanogaster)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector to express GST-RIT1 in E. coli cells.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (Rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#: 3724; RRID: AB_1549585</td>
+      <td>WB (1:3,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag (Rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#: 14793; RRID: AB_2572291</td>
+      <td>WB (1:3,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-ERK1/2 (Rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#: 4370; RRID: AB_2315112</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ERK1/2 (Rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#: 4696; RRID: AB_390780</td>
+      <td>WB (1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p-MEK1/2 (Rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#: 9154; RRID: AB_2138017</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MEK1/2 (Mouse monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#: 4694; RRID: AB_10695868</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RIT1 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab53720; RRID: AB_882379</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-b-Actin (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: A2228; RRID: AB_476697</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-a-Tubulin (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: T6199; RRID: AB_477583</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-KRAS (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: WH0003845M1; RRID: AB_1842235</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ras (Rabbit monoclonal)</td>
+      <td>Cell Signalling Technology</td>
+      <td>Cat#: 4370; RRID: AB_2910195</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NRAS (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#: sc-31; RRID: AB_628041</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HRAS (Rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#: sc-520; RRID: AB_631670</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LZTR1 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat#: sc-390166X; RRID: AB_2910196</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dusp6_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TCCTATCTCGGATCACTGGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dusp6_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCTGATACCTGCCAAGCAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Spry2_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CATCGCTGGAAGAAGAGGAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Spry2_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CATCAGGTCTTGGCAGTGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tbp_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCTTGTACCCTTCACCAATGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tbp_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACAGCCAACATTCACGGTAGA</td>
+    </tr>
+  </tbody>
+</table>
+
+### DNA constructs
 
 Human, mouse (Mus musculus), zebrafish (Danio rerio), and fruit fly (Drosophila melanogaster) RIT1 and KRAS orthologs were synthesized as E. coli codon-optimized gene blocks (IDT) and cloned into pDONR221 using Gateway BP cloning. SOScat was subcloned from human SOS1 (residues 564–1049) into pDONR221. Gateway LR reaction was used to generate a pGEX-6P destination vector for bacterial expression. Human, mouse (Mus musculus), zebrafish (Danio rerio), and fruit fly (Drosophila melanogaster) LZTR1 orthologs were synthesized as H. sapiens codon-optimized gene blocks (IDT) and cloned into pDONR221. Gateway LR reaction was used to generate either pcDNA3-HA or pcDNA3-Flag-tagged destination vectors for mammalian expression. All plasmids were verified by Sanger sequencing.
 
-## Recombinant proteins
+### Recombinant proteins
 
 GST-tagged recombinant proteins were expressed in BL21 (DE3) E. coli cells and expression was induced with 0.2 mM IPTG for 14–16 hr at 18 °C. Cells were lysed by sonication in 50 mM Tris-HCl (pH 8.0), 300 mM NaCl, 5% glycerol, 1 mM DTT. Proteins were immobilized on Glutathione Sepharose 4B beads (Cytiva Life Sciences), washed extensively, and stored as a 50% glycerol bead suspension at −20 °C. HA- or Flag-tagged recombinant proteins were expressed in HEK-293T cells by transient transfection and collected in lysates after 24 hr.
 
-## Immunoblot
+### Immunoblot
 
 Protein samples were prepared from frozen mouse tissues using RIPA buffer and a Dounce tissue homogenizer. Drosophila samples were prepared from either frozen L3 instar larvae, adults, or isolated fly heads and were lysed in RIPA lysis buffer with a Dounce homogenizer. Protein lysates were cleared by centrifugation. For immunoblot detection, samples were separated by SDS-PAGE (NuPAGE) and transferred onto nitrocellulose membranes using iBlot2. Membranes were blocked using 2.5% skimmed milk in TBS-T buffer for 1 hr at room temperature and incubated with appropriate primary antibodies overnight. Detection was performed using HRP-linked secondary antibodies and developed with Amersham ECL (Cytiva Life Sciences) and X-ray films.
 
 Antibodies used in this work were: HA (Cell Signaling Technologies, Cat #3724; 1:3,000), β-Actin (Sigma-Aldrich, Cat #A2228; 1:10,000), ɑ-Tubulin (Sigma-Aldrich, Cat #T6199; 1:10,000), LZTR1 (Santa Cruz Biotechnology, Cat #sc-390166X; 1:1,000), RIT1 (Abcam, Cat #ab53720; 1:1,000), p-ERK (Cell Signaling Technologies, Cat #4370; 1:1000), ERK1/2 (Cell Signaling Technologies, Cat #4696; 1:2000), p-MEK (Cell Signaling Technologies, Cat #9154; 1:1000), MEK1/2 (Cell Signaling Technologies, Cat #4694; 1:1000), panRAS (Cell Signaling Technologies, Cat # 67648; 1:1000), NRAS (Santa Cruz Biotechnology, Cat #sc-31; 1:1,000), HRAS (Santa Cruz Biotechnology, Cat #sc-520; 1:500), and KRAS (Sigma-Aldrich, Cat # WH0003845M1; 1:500).
 
-## Mice
+### Mice
 
 The Lztr1 allele (Lztr1tm1a(EUCOMM)Wtsi) was previously described (Castel et al., 2019). Briefly, frozen sperm was obtained from the Knockout Mouse Project and IVF was performed on C57BL/6NTac eggs. Heterozygous mice were maintained in C57BL/6NTac congenic background. Every six months, new C57BL/6NTac males (Taconic) were introduced to our colony to avoid genetic drift. Homozygous knockout Lztr1 embryos (E18.5) were obtained from timed pregnancies using a heterozygous x heterozygous breeding scheme. 129S1/Svlmj mice were purchased at the Jackson Laboratories. Mixed C56BL/6 N-129S1 mice were obtained by crossing Lztr1 heterozygous male C56BL/6 N mice with 129S1 females for the first 5 backcrossings. Then,129S1 males were introduced for Y-chromosome fixing. Knockout Lztr1 mice were considered to be in a pure 129S1 background after at least eight backcrosses. Rit1 knockout mice were generated by Cyagen using CRISP/Cas9-mediated large homology arm recombination in C57BL/6NTac fertilized eggs. Briefly, a cassette containing a loxP-STOP-loxP was engineered to be located at the first coding exon of Rit1 and was microinjected with appropriate gRNA and Cas9 mRNA into zygotes and transferred into the oviducts of pseudopregnant females. Mice with germline transmission of the Rit1 allele were used as founders to establish the Rit1 knockout homozygous colony. This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All of the animals were handled according to approved institutional animal care and use committee (IACUC) protocols (#AN165444 and #AN179937) of the University of California San Francisco.
 
-## Mouse phenotyping
+### Mouse phenotyping
 
 Noonan syndrome-like phenotypes in mice were analyzed as previously reported (Castel et al., 2019). Briefly, mice were weaned at 3 weeks of age, weighted at 4 weeks, skull CT was performed at 8 weeks and then mice were euthanized for heart measurements. Sample size was calculated based on anticipated values from our previous phenotyping experiments using a Rit1M90I Noonan syndrome mouse model (Castel et al., 2019). For skull morphometry, sample size was determined to be at least n = 5 to achieve an alpha of 0.05 with a power of 80%. For body weight, sample size was determined to be at least n = 13, and for organ-to-body weight measurements, sample size was determined to be at least n = 6, following the same statistical parameters described above.
 
 For E18.5 embryos, trunks were fixed overnight in 10% buffered formalin, dehydrated with ethanol, and embedded in paraffin. For cardiac analysis, the whole trunk was sectioned transversely at 6 μm and H&E staining was performed following standard protocols at the Histology Core Facility of the National Center for Cardiovascular Research (CNIC). Ventricular wall measurements were obtained from H&E-stained sections. The length of at least 4 lines from a minimum of 8 sections obtained from 3 different embryos was measured with Ruler tool (NDP.View 2 Software). Statistical analyses were carried out using Prism 7 (GraphPad). Data are presented as mean ± SEM unless stated otherwise. Statistical significance was determined by performing 2-tailed, unpaired Student’s t tests when comparing 2 groups. p Values of less than 0.05 are considered significant. At least three independent dissections were performed to obtain E18.5 embryos.
 
-## RT-qPCR
+### RT-qPCR
 
 Total RNA from MEFs was isolated using the RNeasy kit (Qiagen) according to the manufacturer’s instructions. cDNA was obtained by reverse transcription (RT) of 1 µg RNA using qScript XLT cDNA SuperMix (QuantaBio; 95161). Ten ng of cDNA was diluted in nuclease-free water and ran in technical triplicates using PowerUp SYBR Green Master Mix (Applied Biosystems) on a QuantStudio 5 (Thermo Fisher Scientific). Tbp (TATA-box binding protein) was used as an endogenous control.
 
 Primer sequences were:
 
-## Drosophila strains and crosses
+### Drosophila strains and crosses
 
 Flies were maintained on standard food medium under a 12:12 light:dark cycle at 25 °C. The Lztr11 allele was generated by CRISPR-Cas9-mediated mutagenesis using transgenic nanos-Cas9 (Kondo and Ueda, 2013; Ren et al., 2013) and guide RNA (gRNA) lines. Briefly, a double gRNA expression construct directed against the following protospacer sequences, 5´- GAAGCAAGCACACAGTGG-3’ and 5´-GATGCGATGTTTGTATTCGG-3’ (both corresponding to the upper strand), was generated in vector pBFv-U6.2B (Kondo and Ueda, 2013) and inserted via ΦC31 integrase-mediated transformation at the attP40 landing site (Bischof et al., 2007). The resulting line was then crossed to nanos-Cas9-expressing flies to isolate Lztr1 mutations, including Lztr11. Lztr12 was obtained via CRISPR-Cas9 engineering by GenetiVision Corporation and verified by PCR amplification and sequencing. HA-tagged Ric- and Ras-expressing constructs were ordered as custom genes from GenScript and transferred into the pattB vector (Bischof et al., 2013). Both contain the corresponding Ric and Ras genomic sequences including their respective 5’ and 3’ regulatory regions, with the HA coding sequence inserted after the initiation codon. Transgenic lines for each construct were established by ΦC31-mediated integration at the attP-86Fb landing site. Both homozygous lines are viable and fertile and were placed in the Lztr12 mutant background by standard crosses.
 
-## Quantification of protein abundance by mass spectrometry
+### Quantification of protein abundance by mass spectrometry
 
 Drosophila head lysates (~300 μg in 100 μL per sample) were precipitated with acetone by adding 400 μL of ice-cold acetone, vortexing the lysates briefly, incubating the lysates at –20 °C for 1 hr, centrifuging at 15,000 x g for 10 min and decanting the supernatants. The protein pellets were then dissolved in 20 μL of 50 mM Tris-HCl buffer, pH 8.0 containing 8 M urea with vortexing. The samples were reduced by adding 1.2 μL of 100 mm dithiothreitol and vortexing for 30 min at room temperature (RT), followed by alkylation with added 3.5 μL of 100 mM iodoacetamide and gentle vortexing for 30 min in the dark for 30 min at RT. One μL from each sample was used to quantify protein amounts using BCA protein assay kit (Thermo Fisher Scientific, USA) according to the manufacturer’s protocol. The samples were diluted by adding 90 μL of 50 mM Tris-HCl buffer, pH 8.0 containing 1 mM CaCl2 and digested with 6 μg trypsin overnight at 37 °C with agitation. The samples were then acidified by adding 1 μL of formic acid, and the digested peptides were desalted using Sep-Pak C18 Classic Cartridges (Waters, USA) using the manufacturer’s protocol.
 

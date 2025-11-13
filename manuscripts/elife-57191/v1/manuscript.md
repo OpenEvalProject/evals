@@ -25,7 +25,7 @@
 
 ## Abstract
 
-Laboratory studies have suggested oncogenic roles of lipids, as well as anticarcinogenic effects of statins. Here we assess the potential effect of statin therapy on cancer risk using evidence from human genetics. We obtained associations of lipid-related genetic variants with the risk of overall and 22 site-specific cancers for 367,703 individuals in the UK Biobank. In total, 75,037 individuals had a cancer event. Variants in the HMGCR gene region, which represent proxies for statin treatment, were associated with overall cancer risk (odds ratio [OR] per one standard deviation decrease in low-density lipoprotein [LDL] cholesterol 0.76, 95% confidence interval [CI] 0.65–0.88, p=0.0003) but variants in gene regions representing alternative lipid-lowering treatment targets ( PCSK9 , LDLR , NPC1L1 , APOC3 , LPL ) were not. Genetically predicted LDL-cholesterol was not associated with overall cancer risk (OR per standard deviation increase 1.01, 95% CI 0.98–1.05, p=0.50). Our results predict that statins reduce cancer risk but other lipid-lowering treatments do not. This suggests that statins reduce cancer risk through a cholesterol independent pathway.
+Laboratory studies have suggested oncogenic roles of lipids, as well as anticarcinogenic effects of statins. Here we assess the potential effect of statin therapy on cancer risk using evidence from human genetics. We obtained associations of lipid-related genetic variants with the risk of overall and 22 site-specific cancers for 367,703 individuals in the UK Biobank. In total, 75,037 individuals had a cancer event. Variants in the HMGCR gene region, which represent proxies for statin treatment, were associated with overall cancer risk (odds ratio [OR] per one standard deviation decrease in low-density lipoprotein [LDL] cholesterol 0.76, 95% confidence interval [CI] 0.65–0.88, p=0.0003) but variants in gene regions representing alternative lipid-lowering treatment targets (PCSK9, LDLR, NPC1L1, APOC3, LPL) were not. Genetically predicted LDL-cholesterol was not associated with overall cancer risk (OR per standard deviation increase 1.01, 95% CI 0.98–1.05, p=0.50). Our results predict that statins reduce cancer risk but other lipid-lowering treatments do not. This suggests that statins reduce cancer risk through a cholesterol independent pathway.
 
 ## Introduction
 
@@ -39,21 +39,202 @@ Here we investigate the relationship between HMGCR inhibition and the risk of o
 
 ## Results
 
-## Participant characteristics and power calculations
+### Participant characteristics and power calculations
 
 Baseline characteristics of the participants in the UK Biobank and numbers of outcomes are provided in Table 1. In total, 75,037 of the participants had a cancer event, of which 48,674 participants had one of the 22 defined site-specific cancers. Power calculations for the various analyses are presented in Figure 1 (site-specific cancers) and Supplementary file 1 (overall cancer). The number of cases ranged from 324 for liver cancer to 13,666 for breast cancer with an overall median number of 1462 cases across cancer sites. Gene-specific analyses were only well-powered for overall cancer. Polygenic analyses were well-powered to detect moderate effects for overall cancer and common site-specific cancers but less well-powered for less common site-specific cancers.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/57191/elife-57191-fig1-v1.jpg)
 
-## Gene-specific analyses for HMGCR and other drug proxy variants
+**Table 1.**
+ Baseline characteristics of the UK Biobank participants included in this study and the numbers of outcome events.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristic or cancer site/type</th>
+      <th>Mean (SD) or N (%)†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sample size</td>
+      <td>367,703 (100)</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>198,904 (54.1)</td>
+    </tr>
+    <tr>
+      <td>Age at baseline</td>
+      <td>57.2 (8.1)</td>
+    </tr>
+    <tr>
+      <td>Body mass index</td>
+      <td>27.3 (4.8)</td>
+    </tr>
+    <tr>
+      <td>Systolic blood pressure</td>
+      <td>137.6 (18.6)</td>
+    </tr>
+    <tr>
+      <td>Diastolic blood pressure</td>
+      <td>82.0 (10.1)</td>
+    </tr>
+    <tr>
+      <td>Smoking status (current/ex/ never)*</td>
+      <td>37,866 (10.3)/185,704 (50.5)/143,777 (39.1)</td>
+    </tr>
+    <tr>
+      <td>Alcohol status (current/ex/ never)*</td>
+      <td>342,797 (93.2)/12,732 (3.5)/11,646 (3.2)</td>
+    </tr>
+    <tr>
+      <td>History of type 2 diabetes</td>
+      <td>15,834 (4.3)</td>
+    </tr>
+    <tr>
+      <td>Overall cancer</td>
+      <td>75,037 (20.4)</td>
+    </tr>
+    <tr>
+      <td>Breast</td>
+      <td>13,666 (6.9)</td>
+    </tr>
+    <tr>
+      <td>Prostate</td>
+      <td>7872 (4.7)</td>
+    </tr>
+    <tr>
+      <td>Lung</td>
+      <td>2838 (0.8)</td>
+    </tr>
+    <tr>
+      <td>Bowel</td>
+      <td>5486 (1.5)</td>
+    </tr>
+    <tr>
+      <td>Melanoma</td>
+      <td>4869 (1.3)</td>
+    </tr>
+    <tr>
+      <td>Non-Hodgkin’s lymphoma</td>
+      <td>2296 (0.6)</td>
+    </tr>
+    <tr>
+      <td>Kidney</td>
+      <td>1310 (0.4)</td>
+    </tr>
+    <tr>
+      <td>Head/neck</td>
+      <td>1615 (0.4)</td>
+    </tr>
+    <tr>
+      <td>Brain</td>
+      <td>810 (0.2)</td>
+    </tr>
+    <tr>
+      <td>Bladder</td>
+      <td>2588 (0.7)</td>
+    </tr>
+    <tr>
+      <td>Pancreas</td>
+      <td>1264 (0.3)</td>
+    </tr>
+    <tr>
+      <td>Uterus</td>
+      <td>1931 (1.0)</td>
+    </tr>
+    <tr>
+      <td>Leukaemia</td>
+      <td>1403 (0.4)</td>
+    </tr>
+    <tr>
+      <td>Esophagus</td>
+      <td>843 (0.2)</td>
+    </tr>
+    <tr>
+      <td>Ovaries</td>
+      <td>1520 (0.8)</td>
+    </tr>
+    <tr>
+      <td>Gastric</td>
+      <td>736 (0.2)</td>
+    </tr>
+    <tr>
+      <td>Liver</td>
+      <td>324 (0.1)</td>
+    </tr>
+    <tr>
+      <td>Myeloma</td>
+      <td>656 (0.2)</td>
+    </tr>
+    <tr>
+      <td>Thyroid</td>
+      <td>375 (0.1)</td>
+    </tr>
+    <tr>
+      <td>Biliary</td>
+      <td>387 (0.1)</td>
+    </tr>
+    <tr>
+      <td>Cervix</td>
+      <td>1928 (1.0)</td>
+    </tr>
+    <tr>
+      <td>Testes</td>
+      <td>735 (0.4)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Excluding 356 participants with smoking status absent and 528 participants with alcohol consumption status absent.†For sex-specific cancers, this is the percentage of individuals of the relevant sex._
+
+### Gene-specific analyses for HMGCR and other drug proxy variants
 
 Associations for specific gene regions representing targets of lipid-lowering drugs are displayed in Figure 2 and Figure 2—figure supplements 1–6. For overall cancer, there was evidence of association for variants in the HMGCR gene region (odds ratio [OR] 1.32, 95% confidence interval [CI] 1.13–1.53, p=0.0003) but not for other gene regions: for PCSK9 (OR 1.03, 95% CI 0.92–1.14, p=0.66), for LDLR (OR 0.99, 95% CI 0.92–1.07, p=0.86), for NPC1L1 (OR 0.87, 95% CI 0.73–1.04, p=0.13), for APOC3 (OR 1.08, 95% CI 0.98–1.19, p=0.15), or for LPL (OR 1.03, 95% CI 0.95–1.13, p=0.45). The association of variants in the HMGCR gene region with overall cancer remained broadly similar when restricting outcomes to the 48,674 individuals who had one of the 22 site-specific cancers (OR 1.29, 95% CI 1.08–1.54, p=0.005) and when excluding outcomes that were self-reported only (70,734 remaining cases, OR 1.30, 95% CI 1.12–1.52, p=0.0007).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/57191/elife-57191-fig2-v1.jpg)
+
+**Figure 2.:** Estimates are scaled to a one standard deviation increase in LDL-cholesterol for the HMGCR, PCSK9, LDLR, and NPC1L1 regions, and a one standard deviation increase in triglycerides for the APOC3 and LPL regions. A: associations with overall cancer for each gene region in turn. B: associations with site-specific cancers for variants in the HMGCR gene region.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57191/elife-57191-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57191/elife-57191-fig2-figsupp2-v1.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/57191/elife-57191-fig2-figsupp3-v1.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/57191/elife-57191-fig2-figsupp4-v1.jpg)
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/57191/elife-57191-fig2-figsupp5-v1.jpg)
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/57191/elife-57191-fig2-figsupp6-v1.jpg)
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/57191/elife-57191-fig2-figsupp7-v1.jpg)
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/57191/elife-57191-fig2-figsupp8-v1.jpg)
+
 For site-specific cancers, the HMGCR gene region showed positive associations for five of the six most common cancer sites (breast, prostate, melanoma, lung, and bladder; not for bowel), although none of these results individually reached a conventional level of statistical significance. Similar results were observed for analyses of site-specific cancers when excluding individuals with solely self-reported outcomes from the analysis (Figure 2—figure supplement 7) and when individuals with a cancer diagnosis other than the site-specific cancer under analysis were omitted from the analysis rather than treated as a control (Figure 2—figure supplement 8); estimates were generally slightly higher, but findings were unchanged. There was little evidence for associations in site-specific analyses for other lipid-lowering drug targets.
 
-## Polygenic analyses for all lipid-related variants
+### Polygenic analyses for all lipid-related variants
 
 Polygenic Mendelian randomization estimates are displayed in Figure 3 for HDL-cholesterol, LDL-cholesterol, and triglycerides (see also Supplementary file 1), and Figure 4 for total cholesterol. For overall cancer, the OR per one standard deviation increase in genetically-predicted levels of the risk factor was 1.01 (95% CI 0.98–1.05, p=0.50) for LDL-cholesterol, 0.99 (95% CI 0.95–1.03, p=0.54) for HDL-cholesterol, 1.00 (95% CI 0.95–1.05, p=0.85) for triglycerides, and 1.01 (95% CI 0.98–1.05; p=0.57) for total cholesterol. Results for the lipid subfractions were similar using the multivariable MR-Egger method (Supplementary file 1). Similar results were observed when omitting self-reported outcomes from the analysis (Supplementary file 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/57191/elife-57191-fig3-v1.jpg)
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57191/elife-57191-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/57191/elife-57191-fig3-figsupp2-v1.jpg)
+
+![Figure 4.](https://cdn.elifesciences.org/articles/57191/elife-57191-fig4-v1.jpg)
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57191/elife-57191-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/57191/elife-57191-fig4-figsupp2-v1.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/57191/elife-57191-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Error bars represent 95% confidence intervals. Solid diagonal line represents the inverse-variance weighted estimate.
 
 For site-specific cancers, there were positive associations between risk of bowel cancer and genetically predicted levels of total cholesterol (OR 1.18, 95% CI 1.06–1.32, p=0.002) and LDL-cholesterol (OR 1.16, 95% CI 1.04–1.29, p=0.006). Compared to primary analyses, results were attenuated in robust methods (Supplementary file 1). While these robust methods are univariable analyses, evidence for a causal effect is most reliable when it is supported by multiple methods that make different assumptions, which was not the case here. No other associations were statistically significant at p<0.01. Again, similar results were observed when omitting self-reported outcomes from the analysis (Figure 3—figure supplement 1 and Figure 4—figure supplement 1), and when omitting individuals with a different cancer diagnosis from the analysis (Figure 3—figure supplement 2 and Figure 4—figure supplement 2). The exception was for liver cancer, where estimates for LDL-cholesterol (OR 0.52, 95% CI 0.30–0.0.88, p=0.016) and total cholesterol (OR 0.54, 95% CI 0.31–0.94, p=0.028) became stronger on the omission or exclusion of individuals with solely self-reported outcomes. The numbers of events that were self-reported only for each outcome are reported in Supplementary file 1. Heterogeneity I (Crosbie et al., 2013) statistics were around 40% for the analysis of overall cancer, and generally lower for site-specific cancers (Supplementary file 1). The burden of heterogeneity was shared amongst several genetic variants; there were no striking outliers and hence no specific variants strongly driving heterogeneity (see Figure 4—figure supplement 3 for scatterplot of genetic associations with total cholesterol and overall cancer).
 
@@ -79,7 +260,7 @@ In conclusion, our findings suggest that HMGCR inhibition may have a chemopreven
 
 ## Materials and methods
 
-## Study design and data sources
+### Study design and data sources
 
 We performed two-sample Mendelian randomization analyses, taking genetic associations with risk factors (i.e. serum lipid levels) from one dataset, and genetic associations with cancer outcomes from an independent dataset, as performed previously for cardiovascular diseases (Allara et al., 2019b).
 
@@ -87,15 +268,15 @@ We obtained genetic associations with serum lipid concentrations (total choleste
 
 We estimated genetic associations with cancer outcomes on 367,703 unrelated individuals of European ancestry from the UK Biobank, a population-based cohort recruited between 2006 and 2010 at 22 assessment centers throughout the UK and followed-up until 31st March 2017 or their date of death (recorded until 14th February 2018; Sudlow et al., 2015). We defined cancer outcomes for overall cancer and for the 22 most common site-specific cancers in the UK (Supplementary file 1). Outcomes were based on electronic health records, hospital episode statistics data, national cancer registry data, and death certification data, which were all coded according to ICD-9 and ICD-10 diagnoses. Further cancer outcomes were captured by self-reported information validated by an interview with a trained nurse and from cancer histology data in the national cancer registry. To obtain genetic association estimates for each outcome, we conducted logistic regression with adjustment for age, sex, and 10 genomic principal components using the snptest software program. For sex-specific cancers (breast, uterus, and cervix for women; prostate and testes for men), analyses were restricted to individuals of the relevant sex. For overall cancer, each individual could contribute to the analysis as a case once. For site-specific cancers, an individual could contribute to the analysis of multiple cancers. Controls were defined as individuals without the disease outcome under consideration. Hence an individual with one cancer could be a control for analyses of another cancer. We also performed sensitivity analyses excluding individuals with solely self-reported cancer outcomes from the analyses, and for site-specific cancers, excluding individuals with a cancer diagnosis other than the site-specific cancer under analysis (so that controls were only those without any cancer diagnosis).
 
-## Gene-specific analyses for HMGCR and other drug proxy variants
+### Gene-specific analyses for HMGCR and other drug proxy variants
 
 We performed targeted analyses for variants in the HMGCR gene region that can be considered as proxies for statin therapy. Additionally, we conducted separate analyses for the PCSK9, LDLR, NPC1L1, APOC3, and LPL gene regions, mimicking other lipid-altering therapies (Supplementary file 1). These regions were chosen as they contain variants that explain enough variance in lipids to perform adequately powered analyses. Variants in each gene region explained 0.4% (HMGCR), 1.2% (PCSK9), 1.0% (LDLR), 0.2% (NPC1L1), 0.1% (APOC3), and <0.1% (LPL) of the variance in LDL-cholesterol. The APOC3 and LPL variants also explained 1.0% and 0.9% of the variance in triglycerides, respectively. Variants were chosen based on their associations with the relevant lipid trait from a conditional analysis in the GLGC (Supplementary methods). We performed the inverse-variance weighted method accounting for correlations between the variants using generalized weighted linear regression (Burgess et al., 2016). This was implemented using the ‘correl’ option in the MendelianRandomization package (Yavorska and Burgess, 2017). Estimates for the HMGCR, PCSK9, LDLR, and NPC1L1 gene regions are scaled to a one standard deviation increase in LDL-cholesterol, whereas estimates for the APOC3 and LPL gene regions are scaled to a one standard deviation increase in triglycerides.
 
-## Selection of variants for gene-specific analyses
+### Selection of variants for gene-specific analyses
 
 Variants for the gene-specific analyses were selected to match the choice in a parallel analysis of cardiovascular diseases (Allara et al., 2019a). Variants in the HMGCR and PCSK9 regions were originally selected by Ference et al., 2016. Variants in the LPL region were originally selected by Lotta et al., 2016. Variants in the NPC1L1 region were originally selected by Ference et al., 2015. Variants in the LDLR and APOC3 regions were selected by Do et al., 2013. All variants were chosen based on their associations with lipid levels in conditional analyses using data from the GLGC. Variants are all conditionally associated with the relevant lipid trait (either LDL-cholesterol or triglycerides) and not strongly correlated (r2 <0.4). The variants are listed in Supplementary file 1.
 
-## Polygenic analyses for all lipid-related variants
+### Polygenic analyses for all lipid-related variants
 
 We carried out polygenic analyses based on 184 genetic variants previously demonstrated to be associated with at least one of total cholesterol, LDL-cholesterol, HDL-cholesterol, or triglycerides at a genome-wide level of significance (p < 5 × 10−8) in the GLGC (Do et al., 2013). These variants explained 15.0% of the variance in total cholesterol, 14.6% in LDL-cholesterol, 13.7% in HDL-cholesterol, and 11.7% in triglycerides in the GLGC. Variants were reported as uncorrelated in the original publication by the GLGC, but some pairs of correlated variants remained in the analysis.
 

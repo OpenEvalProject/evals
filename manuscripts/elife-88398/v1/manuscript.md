@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/048a87296 Department of Ecology and Genetics, Evolutionary Biology Centre and Science for Life Laboratory, Uppsala University Uppsala Sweden
-2. https://ror.org/02yy8x990 Department of Plant Biology, Swedish University of Agricultural Sciences Uppsala Sweden
-3. https://ror.org/02feahw73 UMR CNRS 6553 ECOBIO, Campus Beaulieu Rennes France
+1. Department of Ecology and Genetics, Evolutionary Biology Centre and Science for Life Laboratory, Uppsala University Uppsala Sweden ([ROR:048a87296](https://ror.org/048a87296))
+2. Department of Plant Biology, Swedish University of Agricultural Sciences Uppsala Sweden ([ROR:02yy8x990](https://ror.org/02yy8x990))
+3. UMR CNRS 6553 ECOBIO, Campus Beaulieu Rennes France ([ROR:02feahw73](https://ror.org/02feahw73))
 
 † Corresponding author
 
@@ -41,29 +41,41 @@ Resynthesized allopolyploids are the closest approximation to the early stage of
 
 ## Results
 
-## The selfing syndrome was observed in natural C. bursa-pastoris but not in resynthesized allotetraploids
+### The selfing syndrome was observed in natural C. bursa-pastoris but not in resynthesized allotetraploids
 
 The breakdown of self-incompatibility in allotetraploid Capsella can directly result from hybridizing with the self-fertilizing species (Bachmann et al., 2021; Duan et al., 2023). We explored to what extent the development of a selfing syndrome was instantly achieved after allopolyploidization or, instead, developed later on by comparing phenotypes of resynthesized allotetraploids (groups Sd and Sh), natural C. bursa-pastoris (Cbp) and the diploid parental species, C. grandiflora (Cg2) and C. orientalis (Co2). The resynthesized allotetraploids were generated with individuals from one population of each diploid parental species (Figure 1), and the Sd (‘WGD-first‘) and Sh (‘hybridization-first’) groups only differed in the order of WGD and hybridization (Duan et al., 2023). There were six ‘lines’ in each of the five plant groups. For the Sd and Sh groups, each line represented an independent allopolyploidization event, while the six lines of natural C. bursa-pastoris were from six different populations (Figure 1c and Figure 1—source data 1), representing three major genetic clusters of the wild C. bursa-pastoris (Kryvokhyzha et al., 2016). For diploid parental groups, a line referred to a full-sibling family resulting from self-fertilization (Co2) or one controlled cross (Cg2). Phenotypes of the five groups were measured in a growth chamber on about 36 individuals per plant group (6 individuals × 6 lines).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig1-v1.jpg)
 
-**Figure 1.:** (a) Five groups of Capsella plants. Diploid species (Co2 and Cg2 groups) and the second generation of resynthesized allotetraploids (Sd and Sh groups) were from Duan et al., 2023. Samples of natural allotetraploids, C. bursa-pastoris, were added to the present study. (b) Phylogenetic relationship of the three natural species used in the present study, modified from Douglas et al., 2015; C. bursa-pastoris originated from the hybridization between the ancestral population of C. orientalis and the (C. grandiflora + C. rubella) lineage, and C. rubella were omitted from the figure; kya: thousand years ago. (c) Geographic origin of the Capsella samples.Figure 1—source data 1.Capsella plants used in the present study.
+**Figure 1.:** (a) Five groups of Capsella plants. Diploid species (Co2 and Cg2 groups) and the second generation of resynthesized allotetraploids (Sd and Sh groups) were from Duan et al., 2023. Samples of natural allotetraploids, C. bursa-pastoris, were added to the present study. (b) Phylogenetic relationship of the three natural species used in the present study, modified from Douglas et al., 2015; C. bursa-pastoris originated from the hybridization between the ancestral population of C. orientalis and the (C. grandiflora + C. rubella) lineage, and C. rubella were omitted from the figure; kya: thousand years ago. (c) Geographic origin of the Capsella samples.
 
 Resynthesized and natural allotetraploids had distinct floral morphologies (Figure 2a–g). Indeed, natural allotetraploids had significantly shorter and narrower petals, sepals and pistils and shorter stamina than resynthesized allotetraploids (one-way ANOVA, F4,160 > 78 and p<0.001 in all seven tests; Tukey’s HSD test, α=0.01). Pollen and seed production was also affected. Natural allotetraploids had fewer pollen grains per flower (Figure 2i). While the number of pollen grains in resynthesized allotetraploids was intermediate between the two parental species, the number of pollen grains of the natural allotetraploid group was now similar to that of the Co2 group (one-way ANOVA, F4,137 = 164.6, p<0.001; Tukey’s HSD test, α=0.01). Moreover, the number of seeds per fruit in natural allotetraploids was much larger than in resynthesized allotetraploids. The resynthesized allotetraploid groups had a similar number of seeds in 10 fruits to that of the Cg2 group, whereas the number of seeds in 10 fruits in the natural allotetraploid group was even higher than that of the Co2 group (Figure 2j; one-way ANOVA, F4,146 = 152.5, p<0.001; Tukey’s HSD test, α=0.01).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig2-v1.jpg)
 
-**Figure 2.:** Capsella groups.Co2: diploid C. orientalis; Cg2: diploid C. grandiflora; Sd: whole-genome-duplication-first resynthesized allotetraploids; Sh: hybridization-first resynthesized allotetraploids; Cbp: natural allotetraploid C. bursa-pastoris. The measured traits were (a) petal length, (b) sepal length, (c) pistil length, (d) stamen length, (e) petal width, (f) sepal length, (g) pistil width, (h) length of the longest stem, (i) number of pollen grains per flower, (j) number of seeds in ten fruits, (k) number of days from germination to the opening of the first flower, (l) proportion of viable pollen grains, and (m) proportion of normal seeds in ten fruits. Sample sizes are shown above the groups.Figure 2—source data 1.
+**Figure 2.:** Co2: diploid C. orientalis; Cg2: diploid C. grandiflora; Sd: whole-genome-duplication-first resynthesized allotetraploids; Sh: hybridization-first resynthesized allotetraploids; Cbp: natural allotetraploid C. bursa-pastoris. The measured traits were (a) petal length, (b) sepal length, (c) pistil length, (d) stamen length, (e) petal width, (f) sepal length, (g) pistil width, (h) length of the longest stem, (i) number of pollen grains per flower, (j) number of seeds in ten fruits, (k) number of days from germination to the opening of the first flower, (l) proportion of viable pollen grains, and (m) proportion of normal seeds in ten fruits. Sample sizes are shown above the groups.
 
 The architecture and phenology of the whole plant were affected too. The stem length of natural Cbp was shorter than in resynthesized allotetraploids but was similar to the stem length of the Co2 group (Figure 2h; one-way ANOVA, F4,166 = 84.5, p<0.001; Tukey’s HSD test, α=0.01). Finally, plants of the Cbp group flowered earlier than those of the Sd group, but at a similar time as those of the Sh group (Figure 2k; one-way ANOVA with hc3 White’s correction, F4,165 = 49.2, p<0.001; Tukey’s HSD test, α=0.01).
 
-## Pollen viability and seed quality improved in natural Capsella allotetraploids
+### Pollen viability and seed quality improved in natural Capsella allotetraploids
 
 Pollen viability and the proportion of normal seeds were compared between resynthesized and natural allotetraploids. For both traits, we observed a decrease in pollen viability in resynthesized allotetraploids followed by recovery in natural Cbp. Both Sd and Sh groups had lower proportions of viable pollen than the diploid parental species, but the proportion of viable pollen in natural Cbp was similar to that of the diploid parental species (Figure 2l; GLM, quasi binomial, F4,137 = 24.4, p<0.001; Tukey’s HSD test, α=0.01). The resynthesized allotetraploids generated a higher proportion of abnormal seeds than the three natural species (Figure 2m; GLM, quasi binomial, F4,146 = 59.2, p<0.001; Tukey’s HSD test, α=0.01). The average percentage of normal seeds was 69.6±4.3% in the Sd group and 77.5±2.2% in the Sh group. In contrast, the natural Cbp had almost no abnormal seeds, with a percentage of normal seeds of 99.6±0.8%.
 
-## A two-step evolution of the global expression pattern of natural allopolyploid Cbp
+### A two-step evolution of the global expression pattern of natural allopolyploid Cbp
 
 To compare the gene expression pattern of the five plant groups, RNA-sequencing was conducted for one individual per line and six lines per group, using young inflorescences (flowers) and leaves. Expression levels were determined for 21,937 genes in flower samples and 18,999 genes in leaf samples after excluding genes with CPM >1 in less than two samples. The overall gene expression pattern was visualized with multi-dimensional scaling (MDS) analysis (Figure 3a and b). For unphased gene expression, the resynthesized allotetraploids lay between the diploid parental species in both flowers and leaves. Natural Cbp samples were also intermediate between parental species in the first dimension but were far from the resynthesized allotetraploids in the other dimension, showing the effect of long-term evolution in Cbp and possibly also the divergence between extant diploid species and the real progenitors.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig3-v1.jpg)
+
+**Figure 3.:** Down-sampled gene expressions were used to compare gene expression patterns of the five plant groups in either flowers (a) or leaves (b). The five groups of Capsella plants are: diploid parental species C. grandiflora (Cg2) and C. orientalis (Co2), hybridization-first (Sh) and whole-genome-duplication-first (Sd) resynthesized allotetraploids, and natural allotetraploid C. bursa-pastoris (Cbp). Separated homoeolog expressions in allotetraploids were then compared with rescaled gene expression of diploid groups in both flowers (c) and leaves (d). All the MDS analyses used genes with count-per-million (CPM) >1 in at least two samples, and expression levels were normalized with the trimmed mean of M-values (TMM) method.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Genes with expression (CPM >1) in at least two samples were used for the differential expression (DE) analysis. DE analysis was conducted with the R package edgeR (version 3.28.1; Robinson et al., 2010), using TMM normalized unphased gene expression levels. Genes with fold-change >2 and false discovery rate <0.05 were considered significant DEGs.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The number of up-regulated and down-regulated differentially expressed genes (DEGs) in each group pair were annotated on plots. DE analysis was performed on 21,937 genes in flowers and 18,999 genes in leaves, with a threshold of FC >2 and FDR <0.05. Gene expression levels were normalized with the trimmed mean of M-values (TMM) method.
 
 The expression levels of separate homoeologs in allotetraploids were determined with the diagnostic SNPs between the two diploid species. For the Sd, Sh, and Cbp groups, 52.8%, 53.7%, and 44.7% of the mapped reads could be assigned to one of the homoeologs, respectively. The expression pattern of each allotetraploid subgenome was more similar to the corresponding diploid progenitor (Figure 3c and d). The pattern of expression of resynthesized allotetraploids was intermediate between those of diploid progenitors and natural Cbp.
 
@@ -71,17 +83,25 @@ Differential expression analysis was performed among the five plant groups, usin
 
 Although we could not make a clear expectation for gene ontology (GO) terms that would be overrepresented in DEGs between resynthesized and natural allopolyploids, we are not the only study that compared newly resynthesized and established allopolyploids, and GO terms that were repeatedly revealed by exploratory analysis may give a hint for future studies. For this reason, we further performed a GO enrichment analysis, using genes that were differentially expressed in both Cbp-Sd and Cbp-Sh contrasts as the test set, and all expressed genes with GO annotations as the background set. In flowers or leaves, the top 10 most-enriched GO terms for biological processes were related to proteolysis, xenobiotic transport, regulation of translational fidelity, telomere maintenance and organization, DNA geometric change and duplex unwinding, cellular response to toxic substance, aminoacylation, peptidyl-lysine methylation, and heterochromatin formation and organization (Supplementary file 3). But after adjusting p-values with the Benjamini-Hochberg procedure, only GO term proteolysis (GO:0006508) was significantly overrepresented in DEGs between resynthesized and natural allotetraploids in leaves (Fisher’s exact test, adjusted p-value = 0.0175).
 
-## Both short- and long-term mechanisms contributed to expression level dominance in natural Cbp, but transgressive expressions were mainly from long-term evolution
+### Both short- and long-term mechanisms contributed to expression level dominance in natural Cbp, but transgressive expressions were mainly from long-term evolution
 
 Non-additive gene expression shared by natural allotetraploids may be triggered right after allopolyploidization by short-term deterministic mechanisms, such as intergenomic interactions of regulatory elements. Alternatively, non-additive expression may have been caused by mechanisms with stochastic effects or arose later during long-term evolution. We explored to what extent the non-additive expression shared by natural allotetraploids could reflect short-term deterministic mechanisms. By comparing gene expression levels in allotetraploids and diploid species, 21,647 genes in flowers and 18,758 genes in leaves were classified into one of the 10 expression categories, using the results of DE analysis on unphased gene expression (FC >2 and FDR <0.05). We focused on complete ELD and TREs: complete ELD is obtained when the gene expression level in an allopolyploid group is similar to that in one diploid group but not to the expression in the other diploid group, and TRE is detected when the gene expression level in an allopolyploid group is either higher or lower than in both diploid groups.
 
 The percentage of genes showing complete ELD was altogether limited but doubled in natural allotetraploids relative to resynthesized allotetraploids (5.5% of genes in resynthesized allotetraploids and 10.2% in natural allotetraploids. Figure 4a and b and Figure 4—source data 1). Genes with ELD and the directions of ELD were highly shared between the two resynthesized allotetraploid groups (Figure 4c, Figure 4—figure supplement 1). The majority of these shared ELD were retained in natural allotetraploids (63.3% in flowers and 72.2% in leaves), suggesting that short-term deterministic mechanism contributed to ELD in natural allotetraploids. However, Cbp-specific ELD was also abundant, comprising more than half of the cases found in natural allotetraploids (56.6% in flowers and 60.8% in leaves), thereby showing the effects of long-term evolution.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig4-v1.jpg)
+
+**Figure 4.:** Sd: whole-genome-duplication-first resynthesized allotetraploids; Sh: hybridization-first resynthesized allotetraploids; Cbp: natural allotetraploid C. bursa-pastoris. (a) Number of genes that showed additive expression (ADD, including partial expression level dominance [ELD]), complete ELD, and transgressive expression (TRE) in each allotetraploid group. (b) Genes with complete ELD or TRE were further classified by whether they were up- or down-regulated in allotetraploids, and whether the expression level in allotetraploids was similar to C. grandiflora (Cg-ELD) or C. orientalis (Co-ELD). (c) Venn diagram of genes with complete ELD of the three allotetraploid groups in flowers, separated by directions of ELD.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Venn diagram of genes showed ELD of the three allotetraploid groups in leaves, separated by directions of ELD.
+
 The direction of ELD shifted between the resynthesized and natural allotetraploids (Figure 4a and b and Figure 4—source data 1). In resynthesized allotetraploids, most cases of ELD were up-regulated, and the number of genes with ELD toward C. grandiflora (Cg-ELD) was about twice of that toward C. orientalis (Co-ELD). Natural allotetraploids still had more up-regulated ELD than down-regulated ones, but the proportion of down-regulated cases increased. The proportion of Co-ELD had also increased in natural allotetraploids. In flowers, natural allotetraploids had more Co-ELD (1101) than Cg-ELD (938), and the number of Cg- and Co-ELDs were similar in leaves (Cg-ELD: 854, Co-ELD: 839).
 
 Almost no TRE was found in resynthesized allotetraploids (less than five genes in either Sd or Sh group and in either tissue, Figure 4a and b, and Figure 4—source data 1). In contrast, about 1.3% of genes in Cbp showed TRE in both flowers and leaves.
 
-## Segregation and recombination of homoeologous chromosomes were a major source of homoeolog expression bias variation in resynthesized Capsella allotetraploids
+### Segregation and recombination of homoeologous chromosomes were a major source of homoeolog expression bias variation in resynthesized Capsella allotetraploids
 
 HEB of genes in an allotetraploid individual was measured by the ratio of expression of the C. grandiflora-origin homoeolog (cg) to the total expression of both homoeologs (cg/(cg +co)). To obtain a reliable gene expression ratio, lowly expressed genes (CPM(cg +co)<1 in any allotetraploid individual) were excluded from this analysis. Eventually, the homoeolog expression ratio was calculated for 18,255 genes in flowers, and 15,581 genes in leaves.
 
@@ -89,11 +109,55 @@ Overall, none of the three allotetraploid groups showed a strong average HEB. In
 
 Among resynthesized allotetraploids, although the average homoeolog expression ratio was not systematically biased toward Cg or Co, HEB showed great variation among chromosomes and individuals (Figure 5a and b, Figure 5—figure supplements 1 and 2). The distribution of HEB in some chromosomes had peaks around 0, 0.25, 0.75, or 1, but the shape of the distribution was almost identical between flower and leaf samples. When HEB of genes was plotted along chromosomal positions, we found that the extra peaks in the distribution of HEB can be further explained by large genomic segments separated by a sudden change of average HEB (Figure 5c, Figure 5—figure supplements 3–6). Altogether, the pattern suggested that some chromosomes or chromosomal regions in resynthesized allotetraploids had an unbalanced number of cg- and co-homoeologs (not 2:2), which were likely caused by the segregation and recombination of homoeologous chromosomes. Both the segregation and recombination of homoeologous chromosomes are outcomes of homoeologous synapsis (synapsis between homoeologous chromosomes during meiosis), which reflects polysomic or mixed inheritance in resynthesized allopolyploids. For short, we refer to both segregation and recombination of homoeologous chromosomes as homoeologous synapsis.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig5-v1.jpg)
+
+**Figure 5.:** Sd: whole-genome-duplication-first resynthesized allotetraploids; Sh: hybridization-first resynthesized allotetraploids; Cbp: natural allotetraploid C. bursa-pastoris. Gene-wise HEB was calculated as the expression level of cg-homoeolog divided by the total expression level of both cg- and co- homoeologs (cg/(cg +co)). For each individual, HEB was calculated for 18,255 genes, which had count-per-million>1 in all flower samples. The distribution of HEB was shown by (a) individuals and (b) chromosomes. (c) HEB was also plotted along chromosome positions to show the sudden change of average HEB between genomic blocks, taking individual Sd-6–4 as an example. The number of cg-homoeologs at each gene estimated by the five-state Hidden Markov Model (HMM) was indicated by five colors. Dark green, light green, grey, light purple, and dark purple represent (0, 1, 2, 3, 4) cg-homoeologs and (4, 3, 2, 1, 0) co-homoeologs, respectively.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Distribution of gene HEB of each allotetraploid individual in flowers (upper panel) and leaves (lower panel). For each gene, HEB was estimated as the expression of C. grandiflora-derived homoeolog divided by the total expression of both C. grandiflora- and C. orientalis-derived homoeolog (cg/(cg +co)). HEBs were calculated for 18,255 genes in flowers and 15,581 genes in leaves.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** The distribution of gene HEB of resynthesized and natural Capsella allotetraploids was showed by eight major chromosomes in leaves.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** The number of cg-homoeologs at each gene estimated by the five-state Hidden Markov Model (HMM) was indicated by five colors. Dark green, light green, grey, light purple, and dark purple represent (0, 1, 2, 3, 4) cg-homoeologs and (4, 3, 2, 1, 0) co-homoeologs, respectively.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** The number of cg-homoeologs at each gene estimated by the five-state Hidden Markov Model (HMM) was indicated by five colors. Dark green, light green, grey, light purple, and dark purple represent (0, 1, 2, 3, 4) cg-homoeologs and (4, 3, 2, 1, 0) co-homoeologs, respectively.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** The number of cg-homoeologs at each gene estimated by the five-state Hidden Markov Model (HMM) was indicated by five colors. Dark green, light green, grey, light purple, and dark purple represent (0, 1, 2, 3, 4) cg-homoeologs and (4, 3, 2, 1, 0) co-homoeologs, respectively.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig5-figsupp6-v1.jpg)
+
+**Figure 5—figure supplement 6.:** The number of cg-homoeologs at each gene estimated by the five-state Hidden Markov Model (HMM) was indicated by five colors. Dark green, light green, grey, light purple, and dark purple represent (0, 1, 2, 3, 4) cg-homoeologs and (4, 3, 2, 1, 0) co-homoeologs, respectively.
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig5-figsupp7-v1.jpg)
+
+**Figure 5—figure supplement 7.:** The number of breakpoints between chromosome segments with distinct average homoeologous expression bias (HEB) per chromosome was estimated with a five-state Hidden Markov Model for inflorescence and leaf sample of the 12 resynthesized allotetraploid individuals (groups Sd and Sh). Each dot represents the estimation of one chromosome in one individual. Quartiles and median were shown by boxes and thicker bars.
+
 The effect of possessing an unbalanced number of homoeologs largely increased the variation of HEB in resynthesized allotetraploids. The breakpoint between segments with distinct average HEB and the copy number of cg-homoeolog on each segment were estimated with a five-state Hidden Markov Model (HMM), using HEB along chromosomes (Figure 5c, Figure 5—figure supplement 7). Among the 96 chromosome quartets (two pairs of homologous chromosomes) from the 12 resynthesized allotetraploid individuals, only 39 chromosome quartets showed no sign of homoeologous synapsis, that is no breakpoint was identified and the estimated number of cg-homoeolog across the chromosome was two. On average 0.833±0.097 (mean ± se) breakpoint was identified for each chromosome quartet, and 31.0% of genes were estimated to have different numbers of cg- and co-homoeologs. Finally, for resynthesized allotetraploids, the estimated copy number of homoeologs was able to explain 48.4% and 46.8% of the variance of HEB in flowers and leaves, respectively (GLM with quasi-binomial error distribution, p<0.001 in both tissues).
 
 In contrast to resynthesized allotetraploids, the distribution of HEB of natural Cbp was similar among individuals and chromosomes (Figure 5a and b, Figure 5—figure supplement 2), although the distribution of HEB of some chromosomes of Cbp also showed weak bumps around 0, 0.25, 0.75, or 1 (Figure 5b, Figure 5—figure supplement 2). We could not confidently estimate the number of homoeologs or the breakpoint of segments for Cbp with only RNA-sequencing data, as segments resulting from homoeologous exchanges could be shorter in natural Cbp, and the signals of copy number could be blurred by the variance of regulatory divergence. Nevertheless, the HMM segmentation algorithm also identified some candidate segments of which the average HEB strongly deviated from 0.5. Some candidate segments were only shared by individuals from the same population (Figure 6, Figure 6—figure supplements 1 and 2).
 
-## Most resynthesized allotetraploids had less homoeolog expression loss than natural Cbp, but with extreme outliers
+![Figure 6.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig6-v1.jpg)
+
+**Figure 6.:** The number of cg-homoeologs estimated by the five-state Hidden Markov Model was indicated by five colors. The two chromosome quartets in the same row are from the two individuals of the same major genetic cluster of natural C. bursa-pastoris (Kryvokhyzha et al., 2016), showing that some estimated segments with an unbalanced number of cg- and co-homoeologs were shared between the individuals from the same genetic cluster.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The number of cg-homoeologs at each gene estimated by the five-state Hidden Markov Model (HMM) was indicated by five colors. Dark green, light green, grey, light purple, and dark purple represent (0, 1, 2, 3, 4) cg-homoeologs and (4, 3, 2, 1, 0) co-homoeologs, respectively.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** The number of cg-homoeologs at each gene estimated by the five-state Hidden Markov Model (HMM) was indicated by five colors. Dark green, light green, grey, light purple, and dark purple represent (0, 1, 2, 3, 4) cg-homoeologs and (4, 3, 2, 1, 0) co-homoeologs, respectively.
+
+### Most resynthesized allotetraploids had less homoeolog expression loss than natural Cbp, but with extreme outliers
 
 Loss of homoeolog expression is a common phenomenon in allopolyploid species, which can be caused by homoeolog loss or silencing (Buggs et al., 2009; Cox et al., 2014; Lashermes et al., 2016). Loss of homoeolog expression may quickly arise after allopolyploidy, or alternatively, reflect a gradual biased gene fractionation during diploidization. We compared the extent of loss of homoeolog expression between resynthesized and natural Capsella allotetraploids, and among allotetraploid individuals.
 
@@ -103,9 +167,17 @@ The loss of homoeolog expression was identified from genes with medium to high e
 
 **Figure 7.:** The number of genes with the expression loss of C. orientalis-homoeolog (a,c) or C. grandiflora-homoeolog (b,d) per individual was compared among the three groups of allotetraploids in flowers (a,b) or leaves (c,d). Homoeologous genes that had obvious expression (count per million >5) in all individuals of the corresponding diploid species but almost no expression (count per million <0.5) in one allotetraploid individual were considered cases of homoeolog expression loss.
 
-## Expression level dominance is caused by different mechanisms in resynthesized and natural allotetraploids
+### Expression level dominance is caused by different mechanisms in resynthesized and natural allotetraploids
 
 As homoeologous synapsis seemed to be a major cause of HEB and homoeolog-specific expression loss in resynthesized allotetraploids, we assessed whether it could have also played a role in the evolution of ELD. To do so, we explored the mechanism of ELD in resynthesized allotetraploids by comparing the gene expression change of separate homoeologs relative to the corresponding gene in diploid groups (log2FC(cg/Cg2) and log2FC(co/Co2)) among non-additive gene expression categories (Figure 8).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig8-v1.jpg)
+
+**Figure 8.:** (a) Expected patterns of homoeolog expression change in each scenario that may explain the cause of expression level dominance (ELD) in resynthesized allotetraploids. (b) Observed homoeolog expression change among genes with ELD in resynthesized allotetraploids (Sd and Sh). (c) Observed homoeolog expression change among genes with Cbp-specific non-additive expression.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/88398/elife-88398-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Gene (homoeolog) expression levels were normalized with the trimmed mean of M-values (TMM) method. (a) Homoeolog expression change among genes with ELD in resynthesized allotetraploids. (b) Homoeolog expression change among genes with Cbp-specific non-additive expression.
 
 For ELD in resynthesized allotetraploids, different non-exclusive short-term mechanisms would produce different patterns of average expression change of EL-dominant (homoeolog derived from the diploid progenitor to which the total expression of both homoeologs was similar) and EL-recessive homoeologs (the opposite homoeolog), among genes with significant ELD: (i) If ELD was mainly caused by possessing more than two copies of the EL-dominant homoeolog (due to the segregation or recombination of homoeologous chromosomes), we would expect on average the expression of EL-dominant homoeolog to increase, and EL-recessive homoeolog to decrease, in both up- and down-regulated cases of ELD. (ii) If ELD was mainly caused by mechanisms with random effects, such as TE transposition, on average, there should be no large difference between the expression changes of EL-dominant and EL-recessive homoeologs. Because the occurrence and regulatory effects of new TE transpositions do not depend on the original relative expression level of the two homoeologs, that is the highly and lowly expressed homoeologs are equally likely to be up- or down-regulated by new TE transpositions. (iii) Predictions for new intergenomic interactions of regulatory elements can be complex, but under a simple scenario (Hu and Wendel, 2019), ELD may be caused by divergent trans-acting factors. In allopolyploids, stronger trans-acting factors act on the cis-regulatory elements of the opposite homoeolog, causing a similar regulatory effect if transcription rate were not limited by the concentration of these trans-regulators. If this mechanism were the main cause of ELD, on average the EL-recessive homoeolog should have the larger expression change in all categories of ELD, while the expression of EL-dominant homoeolog is not expected to change. In all other cases, we would not have direct inference on the exact mechanism of ELD, but at least the three mechanisms listed above could not be the predominant cause of ELD.
 
@@ -123,7 +195,7 @@ Besides, the mating system of the real parental populations of C. bursa-pastoris
 
 Another limitation of using resynthesized allotetraploids is that we could not completely exclude the effect of colchicine treatment, even though we used second-generation allotetraploids (Münzbergová, 2017). Colchicine treatment could affect pollen and seed quality and the rate of homoeologous synapsis in resynthesized allotetraploids. Spontaneous Capsella allotetraploids have been repeatedly found among diploid hybrids that were not treated with colchicine solution (Bachmann et al., 2021 own unpublished results). For future studies, these spontaneous allotetraploids would be excellent materials for accurately estimating the rate of homoeologous synapsis in newly formed Capsella allotetraploids. Nevertheless, the reported influence of colchicine treatments on the second generation of synthetic polyploids was either trivial (Husband et al., 2016) or not in the same direction as our results (Münzbergová, 2017). Hence, the observed pollen and seed quality reduction and rampant homoeologous synapsis were unlikely pure artifacts from colchicine treatment.
 
-## Resynthesized and natural Capsella allotetraploids had distinct phenotypes
+### Resynthesized and natural Capsella allotetraploids had distinct phenotypes
 
 The most noticeable morphological difference between resynthesized and natural Capsella allotetraploids was related to the selfing syndrome. Compared to second-generation resynthesized allotetraploids, natural C. bursa-pastoris had smaller floral organs, more pollen per flower, and a shorter stem length (Figure 1). In particular, trait values of petal size and stamen length of the resynthesized allotetraploids had almost no overlap with natural C. bursa-pastoris but were similar to the outcrossing progenitor C. grandiflora. The shorter stem length in natural C. bursa-pastoris may reflect a shorter lifespan, which is also a feature of self-fertilizing species (Duminil et al., 2009; Lesaffre and Billiard, 2020). If natural C. bursa-pastoris indeed originated from the hybridization between C. grandiflora-like outcrossing plants and C. orientalis-like self-fertilizing plants, the selfing syndrome in C. bursa-pastoris does not reflect the instant dominance effect of the C. orientalis alleles, but evolved afterward. A remaining question is whether the genetic basis of the selfing syndrome in C. bursa-pastoris is the same as in C. orientalis. Did the pre-existing selfing syndrome-related alleles from C. orientalis facilitate the evolution of selfing syndrome in C. bursa-pastoris? Was the selfing syndrome of C. bursa-pastoris established by silencing/replacing the C. grandiflora alleles or new regulations on both C. orientalis and C. grandiflora homoeologs?
 
@@ -131,7 +203,7 @@ Although the selfing syndrome in natural C. bursa-pastoris was most likely an ad
 
 Apart from the selfing-syndrome-related traits, newly resynthesized Capsella allotetraploids had lower proportions of viable pollen (Figure 1l) and normal seeds (Figure 1m). In contrast, pollen and seed quality in natural C. bursa-pastoris were much higher and as good as in diploid species. The higher pollen and seed quality in natural C. bursa-pastoris was possibly achieved by improving meiotic behaviors. Meiotic stabilization is another important aspect of adaptation to an allopolyploid state (Blasio et al., 2022). Newly resynthesized allopolyploids suffer more often than natural allopolyploids, from frequent and severe meiotic abnormalities, which are associated with lower pollen viability and fertility in resynthesized allopolyploids (Szadkowski et al., 2010; Zhang et al., 2013; Henry et al., 2014). The molecular basis of improved meiotic synapsis in natural allopolyploids is not completely clear, but several loci that suppress homoeologous synapsis or recombination are essential for the process (Jenczewski et al., 2003; Nicolas et al., 2009; Greer et al., 2012; Martín et al., 2017). The exact mechanism of meiotic stabilization in natural C. bursa-pastoris needs further investigation.
 
-## The emergence of non-additive gene expression in allotetraploids was a two-stage process
+### The emergence of non-additive gene expression in allotetraploids was a two-stage process
 
 Non-additive gene expression in allotetraploid Capsella was altogether limited and neither a complete relict of short-term genomic interactions nor entirely due to gradual divergence. We found that about 40% of the cases of ELD in natural C. bursa-pastoris could already be found in the second generation of resynthesized allotetraploids (relict ELDs). Most of these relict ELDs and their directions were shared by the two resynthesized allotetraploid groups (Figure 4c, Figure 4—figure supplement 1), suggesting that most relict ELDs were repeatable alterations. On the other hand, about 60% of the cases of ELD were specific to natural C. bursa-pastoris (Cbp-specific ELDs, Figure 4c, and Figure 4—figure supplement 1), revealing the contributions from long-term evolution.
 
@@ -143,7 +215,7 @@ In addition, although unbalanced homoeolog content (not 2:2) caused by homoeolog
 
 As for transgressive gene expression, we found almost no TRE genes in resynthesized allotetraploids, but a mere 1.3% TRE genes in natural C. bursa-pastoris, with a threshold of FC >2 (Figure 4—source data 1). In agreement with several previous observations (Flagel and Wendel, 2010; Yoo et al., 2013; Zhang et al., 2016b), the results in Capsella suggest that transcriptional novelties in allopolyploids were not an instant outcome of allopolyploidization but mainly arose during long-term evolution and remained altogether rather limited.
 
-## Homoeologous synapsis was common in resynthesized Capsella allotetraploids, and may still be a source of variation in natural Cbp
+### Homoeologous synapsis was common in resynthesized Capsella allotetraploids, and may still be a source of variation in natural Cbp
 
 Disomic inheritance in allopolyploid species is not established all at once (Henry et al., 2014), and strict disomic inheritance may have never been achieved in some allopolyploid species. In contrast to the disomic inheritance and the low level of homoeolog expression loss in natural C. bursa-pastoris, we found abundant traces of homoeologous segregation or recombination in all 12 lines of resynthesized Capsella allotetraploids, after only one meiosis. The observation is in line with many recent studies in which abundant homoeologous exchanges were found in allopolyploids (Lloyd et al., 2018; Pelé et al., 2018). The contrast between resynthesized and natural allotetraploids suggested that preferential synapsis was rapidly improved in natural C. bursa-pastoris, and/or a balanced number of homoeologs was strongly preferred by selection, otherwise, we would expect a much higher proportion of homoeolog replacement (having four copies of the same homoeolog) after 100,000 year recurrent self-fertilization with tetrasomic/heterosomic inheritance.
 
@@ -151,13 +223,13 @@ Homoeologous synapsis was the major mechanism for the variation of HEB and homoe
 
 For established natural allotetraploids, occasional homoeologous synapsis may still be an important source of genetic variation, even long after the allopolyploidization event. Although an earlier allozymic study (Hurka et al., 1989) and an approximate Bayesian computation (ABC) with high throughput sequencing data (Roux and Pannell, 2015) suggest that natural C. bursa-pastoris exhibits disomic inheritance, neither analysis could reject homoeologous synapsis at a lower rate. A very small proportion of homoeologous synapsis may be negligible for inferring the dominant mode of inheritance, but in terms of causing homoeologous gene loss and creating genetic variation, homoeologous synapsis can still be more influential than point mutations. Due to the inevitable technical variation of RNA-seq and expression variation across genes, we were unable to confidently resolve smaller blocks of unbalanced homoeolog content. Despite the small sample size and the low resolution of RNA-seq data, we noticed that some small genomic blocks with homoeolog replacement were shared by the individuals of the same population but varied among populations of natural C. bursa-pastoris (Figure 6, Figure 6—figure supplements 1 and 2), suggesting that homoeologous synapsis still contribute to expressional variation in natural C. bursa-pastoris. Apart from homoeolog synapsis in a single-origin allopolyploid species, unbalanced content of homoeologs could also arise from secondary introgression from diploid parental species. Detailed demographic modeling would be needed for distinguishing the two scenarios.
 
-## Conclusion
+### Conclusion
 
 In conclusion, together with Duan et al., 2023, the present study shows that both short- and long-term mechanisms contributed to transcriptomic and phenotypic changes in natural allotetraploids. However, the initial gene expression changes were largely reshaped during long-term evolution leading to more pronounced morphological changes. Resource limitations and/or adaptation to self-fertilization also, drive flowers' evolution after polyploidization.
 
 ## Materials and methods
 
-## Plant material
+### Plant material
 
 The present study used five Capsella plant groups (Figure 1, Figure 1—source data 1), including diploid C. orientalis (Co2), diploid C. grandiflora (Cg2), two types of resynthesized allotetraploids (Sd and Sh), and natural allotetraploids, C. bursa-pastoris (Cbp). RNA-sequencing data and most phenotypic data (except floral morphologic traits) of Co2, Cg2, Sd, and Sh groups were from Duan et al., 2023. The Sd and Sh allotetraploids only differed in the order of hybridization and whole genome duplication. Allotetraploids of the Sd group were generated by crossing synthetic autotetraploid C. orientalis with autotetraploid C. grandiflora, whereas the Sh group was generated by inducing WGD in the first generation of diploid hybrids of C. orientalis×C. grandiflora. In all interspecific crosses, C. orientalis served as maternal plants, mimicking the formation of the natural allotetraploid species, C. bursa-pastoris (Hurka et al., 2012). All C. orientalis plants used in the experiment are descendants of one wild C. orientalis individual, and all the C. grandiflora plants are descendants of three individuals from one C. grandiflora population (Figure 1c and Figure 1—source data 1).
 
@@ -167,7 +239,7 @@ Each of the five plant groups was represented by six ‘lines’, and each line 
 
 Plants used in the present study and a previously published work (Duan et al., 2023) were different subsets of a single experiment. The entire experiment had eight plant groups, including the five plant groups used in the present study (Groups Cg2, Co2, Sh, Sd, and Cbp; 5 groups x 6 lines x 6 individuals = 180 plants), and other three groups that were only used in Duan et al., 2023, Groups F, Co4 and Cg4; 3 groups x 6 lines x 6 individuals = 108 plants. All these plants were grown in 36 trays placed on six shelves inside the same growth chamber. Each tray had exactly one plant from each of the eight groups, and the positions of the eight plants within each tray (A-H) were randomized with random.shuffle() method in Python (Supplementary file 1). The position of the 36 trays inside the growth room (1-36) was also random and the positions of all trays were shuffled once again 28 days after germination (randomized with RAND() and sorting in Microsoft Excel Spreadsheet).
 
-## Phenotyping
+### Phenotyping
 
 Floral morphological traits were measured for all five groups on 165 plants 7–14 days after the first flower opened. The rest 15 plants were not measured due to technical errors. Two fully opened young flowers were dissected for each plant, and the floral organs were scanned with a photo scanner (Epson Perfection V370) at 3200 dpi. Seven floral morphological traits were measured on the digital images with Fiji, an open-source platform for biological-image analysis (Schindelin et al., 2012), including sepal width, sepal length, petal width, petal length, pistil width, pistil length, and stamen length. For each plant, two flowers were examined. Three sepals, petals and stamina, and one pistil were measured for each flower.
 
@@ -175,13 +247,13 @@ Stem length (total sample size n=171), flowering time (n=170), pollen traits (n=
 
 General linear models (for non-ratio data) or generalized linear models with quasi-binomial error distribution and a logit link function (for pollen viability and seed quality) were fit to each phenotypic trait. The difference in phenotypic traits among the five plant groups was tested with one-way analyses of variance (ANOVA, trait value ~plant group, type-III tests), using R package ‘car’ version 3.1–2 (Fox and Weisberg, 2019). A two-way ANOVA (trait value ~plant group +tray ID, type-III tests) was also tried to test the positional effect. When plant group had a significant effect on a trait, groups with different means were identified by Tukey’s HSD test using R packages ‘agricolae’ version 1.3–6 (de Mendiburu and Yaseen, 2020) and ‘multcomp’ version 1.4–25 (Hothorn et al., 2008).
 
-## RNA-sequencing
+### RNA-sequencing
 
 RNA-sequencing was conducted for the five plant groups (Co2, Cg2, Sd, Sh, and Cbp). For each line, leaf and young inflorescence (flower) samples from one randomly chosen individual were sequenced, resulting in 60 RNA-sequencing samples (5 groups × 6 lines × 2 tissues). RNA-sequencing data of the Co2, Cg2, Sd, and Sh groups were from Duan et al., 2023. Data from the Cbp group was added to the present study, but the Cbp samples were collected and sequenced simultaneously with the other four plant groups in 2019. The 8th and 9th leaves were harvested at the emergence of the 11th leaf, and 2–4 inflorescences with only unopened flower buds were collected 7–14 days after the first flower opened. The collected tissue was frozen in liquid nitrogen and stored at –80 °C.
 
 Total RNA was extracted from leaf and flower samples with a cetyl-trimethyl-ammonium-bromide (CTAB)-based method (Duan et al., 2023). DNA contamination was further removed by the RNase-Free DNase Set (QIAGEN). RNA libraries were prepared with Illumina TruSeq Stranded mRNA (poly-A selection) kits and sequenced with pair-end reads of 150 bp on three NovaSeq 6000 S4 lanes, by the SNP&SEQ Technology Platform in Uppsala, Sweden. One sequencing library was generated for each diploid sample, and two libraries were generated for each allotetraploid sample.
 
-## Gene and homoeolog expression
+### Gene and homoeolog expression
 
 Raw RNA-seq reads were mapped to the reference genome of Capsella rubella (Slotte et al., 2013) using Stampy v.1.0.32 (Lunter and Goodson, 2011). The expected divergence between reference and query sequences was set to 0.02, 0.04, and 0.025 for C. grandiflora, C. orientalis, and allotetraploids, respectively. Mapping quality was inspected by Qualimap v. 2.2.1 (Okonechnikov et al., 2016). The number of reads mapped to each gene was counted by HTSeq v.0.12.4 (Anders et al., 2015), using the mode ‘union’ (hereinafter referred to as ‘unphased gene expression’). The average number of mapped reads was 38.4±2.4 and 70.0±3.5 for the diploid and tetraploid samples, respectively (Supplementary file 2). For all analyses on unphased gene expression, the mapped reads were downsampled with a custom Python script (Duan et al., 2023), so that all five groups had a similar average number of mapped reads.
 
@@ -191,15 +263,83 @@ After partitioning the homoeolog expression, the average library size of allotet
 
 The overall gene expression pattern of five plant groups in each tissue was visualized by MDS analysis, using the R package ‘edgeR’ (version 3.28.1; Robinson et al., 2010) in the R software environment version 3.6.3 (R Core Team, 2020). For both phased and unphased gene expression data, genes with count-per-million (CPM) over one in at least two samples were used for the MDS analysis, and expression levels were normalized with the trimmed mean of M-values (TMM) method.
 
-## Differential expression (DE) analysis
+### Differential expression (DE) analysis
 
 DE analysis was conducted on both unphased and phased gene expression data with the R package ‘edgeR’ (version 3.28.1; Robinson et al., 2010), using TMM normalized gene expression levels. A negative binomial generalized linear model (GLM) was fitted to each dataset. Pairwise group contrasts were then made for each GLM model, and gene-wise quasi-likelihood F-tests were conducted to detect expression changes in each contrast. For unphased data, pairwise contrasts were made among the original five groups (Co2, Cg2, Sd, Sh, and Cbp). For phased data, allopolyploid subgenomes were treated as separate groups (Sd_co, Sd_cg, Sh_co, Sh_cg, Cbp_co, and Cbp_cg) and were compared with the two diploid groups (Co2, Cg2). Genes with an expression fold-change (FC) larger than two and a false discovery rate (FDR) less than 0.05 were considered significant DEGs.
 
-## Expression level dominance and transgressive expression
+### Expression level dominance and transgressive expression
 
 To measure the extent of non-additive expression in allotetraploids, genes were classified into ten expression categories (Table 1), by comparing the total expression of both homoeologs in an allotetraploid group to the gene expression level in a diploid group. The 10 categories were modified from the classification by Zhang et al., 2016a. Results of DE analysis on unphased gene expression (FC >2 and FDR <0.05) were used for the classification.
 
-## Homoeolog expression bias
+**Table 1.**
+ Classification of additive and non-additive gene expression pattern in allotetraploids.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Group</th>
+      <th>Description</th>
+      <th>Classification criteria*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>a</td>
+      <td>Additive expression with no parental differentiation</td>
+      <td>Cgi = xij = Coi</td>
+    </tr>
+    <tr>
+      <td>b</td>
+      <td>Partial ELD or additive expression with parental differentiation</td>
+      <td>(Cgi &lt;xij &lt; Coi) or(Coi &lt;xij &lt; Cgi) or(Cgi ≠ Coi and xij = Cgi and xij = Coi)</td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td>Up-regulated ELD toward Cg2</td>
+      <td>xij = Cgi and xij &gt;Coi</td>
+    </tr>
+    <tr>
+      <td>d</td>
+      <td>Down-regulated ELD toward Cg2</td>
+      <td>xij = Cgi and xij &lt;Coi</td>
+    </tr>
+    <tr>
+      <td>e</td>
+      <td>Up-regulated ELD toward Co2</td>
+      <td>xij = Coi and xij &gt;Cgi</td>
+    </tr>
+    <tr>
+      <td>f</td>
+      <td>Down-regulated ELD toward Co2</td>
+      <td>xij = Coi and xij &lt;Cgi</td>
+    </tr>
+    <tr>
+      <td>g</td>
+      <td>Up-regulated TRE with no parental differentiation</td>
+      <td>Cgi = Coi and xij &gt;Cgi and xij &gt;Coi</td>
+    </tr>
+    <tr>
+      <td>h</td>
+      <td>Up-regulated TRE with parental differentiation</td>
+      <td>Cgi ≠ Coi and xij &gt;Cgi and xij &gt;Coi</td>
+    </tr>
+    <tr>
+      <td>i</td>
+      <td>Down-regulated TRE with no parental differentiation</td>
+      <td>Cgi = Coi and xij &lt;Cgi and xij &lt;Coi</td>
+    </tr>
+    <tr>
+      <td>j</td>
+      <td>Down-regulated TRE with parental differentiation</td>
+      <td>Cgi ≠ Coi and xij &lt;Cgi and xij &lt;Coi</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Cgi: expression level of gene i in the Cg2 group; Coi: expression level of gene i in the Co2 group; xij: expression level of gene i in allotetraploid group j, and j∈(Sd, Sh, Cbp); ELD: expression level dominance; TRE: transgressive expression; The significance of differential expression between groups were determined by results of differential expression analysis on unphased gene expression, with a threshold of fold-change >2 and false discovery rate <0.05._
+
+### Homoeolog expression bias
 
 HEB of gene i in allotetraploid individual j was measured by the proportion of cg-homoeolog expression (cgij) in the total expression of both homoeologs (cgij/(cgij +coij)). The distribution of HEB was then viewed by individuals, chromosomes, or along genomic coordinates. Signs of the segregation or recombination of homoeologous chromosomes were revealed in resynthesized allopolyploids by the distribution of HEB along genomic coordinates.
 
@@ -209,10 +349,10 @@ The effect of homoeologous segregation and recombination on HEB in resynthesized
 
 The relationship between non-additive gene expression and homoeolog expression was explored by comparing the estimated expression fold change of each homoeolog among additive and different non-additive expression categories. The expression fold change of homoeologs was measured by homoeolog expression of gene i in allotetraploid group k divided by expression of gene i in the corresponding diploid group, that is log2FC(cgik/Cg2i) or log2FC(coik/Co2i), using the estimated FC from DE analysis on phased data. The difference of expression fold change between EL-dominant and EL-recessive homoeologs was tested by Welch’s two-sample t-tests.
 
-## Loss of homoeolog expression
+### Loss of homoeolog expression
 
 The most extreme HEB occurs when one homoeolog is silenced or lost in allotetraploids. To explore the timing and mechanism of the loss of homoeolog expression in Capsella, the number of genes with homoeolog expression loss was counted for each resynthesized or natural allotetraploid. Lowly or occasionally expressed genes were excluded from the analysis to reduce noise from sequencing and phasing. Specifically, if one homoeologous gene had obvious expression (CPM >5) in all six individuals of the corresponding diploid species, but had almost no expression in one allotetraploid individual (CPM <0.5), the case was considered a loss of homoeologous expression.
 
-## Gene ontology (GO) enrichment analysis
+### Gene ontology (GO) enrichment analysis
 
 GO enrichment analysis was performed with R package ‘topGO’ version 2.52.0 (Alexa and Maintainer, 2023), using results of DE analysis on unphased gene expression and GO annotations of C. rubella downloaded from PlantRegMap (Tian et al., 2020). Genes that were differentially expressed in both Cbp-Sd and Cbp-Sh comparisons (FC >1.5 and FDR < 0.05; 578 genes in flowers and 345 in leaves) were used as the test set, and all genes with GO annotation and CPM > 1 in at least two samples were used as the background set (17,718 genes in flowers and 15,631 genes in leaves). GO terms were scored with the ‘classic’ algorithm and Fisher’s exact tests, and p-values were adjusted with the Benjamini-Hochberg procedure in R. GO terms with less than 10 annotated genes were excluded from the analysis.

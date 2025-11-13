@@ -17,20 +17,20 @@
 
 ### Affiliations
 
-1. https://ror.org/03xjacd83 Lerner College of Medicine, Cleveland Clinic Cleveland United States
-2. https://ror.org/051fd9666 Case Western Reserve University School of Medicine Cleveland United States
-3. https://ror.org/03xjacd83 Department of Translational Hematology and Oncology Research, Cleveland Clinic Cleveland United States
+1. Lerner College of Medicine, Cleveland Clinic Cleveland United States ([ROR:03xjacd83](https://ror.org/03xjacd83))
+2. Case Western Reserve University School of Medicine Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))
+3. Department of Translational Hematology and Oncology Research, Cleveland Clinic Cleveland United States ([ROR:03xjacd83](https://ror.org/03xjacd83))
 4. Hawken School Gates Mills United States
-5. https://ror.org/051fd9666 Department of Physics, Case Western Reserve University Cleveland United States
-6. https://ror.org/002pd6e78 Department of Pathology, Massachusetts General Hospital Boston United States
-7. https://ror.org/04b6nzv94 Department of Pathology, Brigham & Women’s Hospital Boston United States
-8. https://ror.org/042nb2s44 Cancer Program, Broad Institute of Harvard and MIT Cambridge United States
-9. https://ror.org/043jzw605 Centre for Evolution and Cancer, Institute of Cancer Research London United Kingdom
-10. https://ror.org/051fd9666 Integrated Circuits and Sensor Physics Lab, Case Western Reserve University School of Engineering Cleveland United States
-11. https://ror.org/01vrybr67 Louis Stokes Cleveland Department of Veteran Affairs Medical Center Cleveland United States
-12. https://ror.org/051fd9666 Departments of Medicine, Pharmacology, Molecular Biology and Microbiology, Biochemistry, and Proteomics and Bioinformatics, Case Western Reserve University School of Medicine Cleveland United States
+5. Department of Physics, Case Western Reserve University Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))
+6. Department of Pathology, Massachusetts General Hospital Boston United States ([ROR:002pd6e78](https://ror.org/002pd6e78))
+7. Department of Pathology, Brigham & Women’s Hospital Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
+8. Cancer Program, Broad Institute of Harvard and MIT Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+9. Centre for Evolution and Cancer, Institute of Cancer Research London United Kingdom ([ROR:043jzw605](https://ror.org/043jzw605))
+10. Integrated Circuits and Sensor Physics Lab, Case Western Reserve University School of Engineering Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))
+11. Louis Stokes Cleveland Department of Veteran Affairs Medical Center Cleveland United States ([ROR:01vrybr67](https://ror.org/01vrybr67))
+12. Departments of Medicine, Pharmacology, Molecular Biology and Microbiology, Biochemistry, and Proteomics and Bioinformatics, Case Western Reserve University School of Medicine Cleveland United States ([ROR:051fd9666](https://ror.org/051fd9666))
 13. CWRU-Cleveland VAMC Center for Antimicrobial Resistance and Epidemiology Cleveland United States
-14. https://ror.org/03xjacd83 Department of Radiation Oncology, Cleveland Clinic Cleveland United States
+14. Department of Radiation Oncology, Cleveland Clinic Cleveland United States ([ROR:03xjacd83](https://ror.org/03xjacd83))
 
 † Corresponding author
 
@@ -58,23 +58,23 @@ The EVE is functionally similar to other small, automated bioreactors (Toprak et
 
 **Figure 1.:** Schematic illustration of the EVE hardware and software architecture. (A) Reservoirs containing permissive (i.e., drug-free) and selective growth media are each connected to a culture unit (CU) through silicone tubing. Peristaltic pumps control the rate at which the media are added to the evolving bacterial population, and an additional pump removes waste. Multiple CUs can fit into an incubator, allowing users to simultaneously evolve several independent replicate populations. (B) A Raspberry Pi interfaces with a custom printed circuit board (PCB) to monitor culture growth and coordinate the addition and removal of growth media and waste. The user controls the EVE hardware with a web application. (C) The PCB chips measure voltage and temperature. These voltage measurements are proportional to optical density and thus are a way to estimate population size. The chips also control the fluidic pumps, diodes, onboard indicators, and stirring speed. The PCB diagram illustrates where these chips are located on the board.
 
-## Hardware and software
+### Hardware and software
 
 The EVE uses a primary onboard Raspberry Pi microcomputer to execute the software and serve as a bridge between the user interface and a PCB (Figure 1B, C). This design keeps costs low while allowing the device to be self-contained in environments without internet access. One can also construct the EVE with a breadboard. Breadboards give users more flexibility to modify the hardware but require prior experience and come at the cost of increased assembly time and device footprint. In either case, circuit diagrams, 3D-printed component files, complete build instructions, and a part list are in our GitHub repository (Gopalakrishnan, 2022).
 
 One may access population growth and temperature measurements, edit configuration files, define experimental parameters, and monitor and control experiments remotely with our free, open-source software run inside any web browser. Users install this software by downloading the pre-compiled Raspberry Pi image or executing the installation script directly from our GitHub repository. Data can be saved to network locations mounted to the Pi’s file system or an attached USB device.
 
-## Comparisons to alternative bioreactors
+### Comparisons to alternative bioreactors
 
 The EVE differs from other bioreactors, including the eVOLVER (Wong et al., 2018) and Flexostat (Takahashi et al., 2014), in its design philosophy and customization capabilities. The EVE and eVOLVER software are hosted on a Raspberry Pi and written in Python, a common programming language with a broad user base and community support. This combination of hardware and software allows for fast code execution and the Linux operating system facilitates customization. In contrast, other automated culture systems use proprietary or third-party software that may be inaccessible or cost-prohibitive for educators (Toprak et al., 2012).
 
 One does not need to be familiar with Python to install the software, edit experimental parameters, or run the pre-configured control algorithms. However, working knowledge of this language is necessary to create custom algorithms, for which we uniquely provide design instructions in our GitHub repository. Moreover, the EVE uses a more modern serial connection between the motherboard and the Pi than the eVOLVER, which permits the use of more up-to-date software packages. Lastly, the Flexostat and the EVE have a similar broadly open software license that permits unrestricted use of the software.
 
-## Production cost
+### Production cost
 
 We designed the EVE to be cost-effective. The total cost varies between $115 and $200 to build a system that performs simple growth or evolution experiments in triplicate with a negative control. These estimates include all parts except the incubator, glassware, and 3D printer. The circuit board design can be downloaded from our repository and sent to a PCB manufacturer for printing and assembly; in our case, we purchased fully assembled PCBs for approximately $42 per board, including the power supply. Users may further decrease costs and increase accessibility in low-resource classrooms by incubating bacterial cultures at room temperature and using a pressure cooker to sterilize growth media instead of an autoclave.
 
-## Validation
+### Validation
 
 We validated the EVE in two ways. First, we examined voltage measurement variability across seven independent culture units and compared these results with previously reported measurements (Toprak et al., 2012). Voltage is the raw measurement that is used to estimate optical density (i.e., population size). Smaller voltage measurement variability between individual culture units indicates better construct and internal validity. Variability in measurements is introduced due to subtle differences when printing the vial holder, leading to slightly altered positioning of the diodes responsible for voltage measurements. The average variability was 8.0% (mean ± sd = 2.93±0.23), comparable to the 7.5% of Toprak and colleagues.
 

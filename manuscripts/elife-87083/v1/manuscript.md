@@ -18,13 +18,13 @@
 
 ### Affiliations
 
-1. https://ror.org/00nvvw130 Université Paris Cité, Inserm, CEA, Stabilité Génétique Cellules Souches et Radiations, LRP/iRCM Fontenay-aux-Roses France
-2. https://ror.org/00nvvw130 Université Paris-Saclay, Inserm, CEA, Stabilité Génétique Cellules Souches et Radiations, LRP/iRCM Fontenay-aux-Roses France
-3. https://ror.org/03z3mg085 Spinal Cord Injury and Tissue Regeneration Center Salzburg (SCI-TReCS), Paracelsus Medical University Salzburg Austria
-4. https://ror.org/03z3mg085 Institute of Experimental Neuroregeneration, Paracelsus Medical University Salzburg Austria
-5. https://ror.org/052f3yd19 Austrian Cluster for Tissue Regeneration Vienna Austria
-6. https://ror.org/01c2cjg59 Inserm, ARTbio Bioinformatics Analysis Facility, Sorbonne Université, CNRS, Institut de Biologie Paris Seine Paris France
-7. https://ror.org/01c2cjg59 ARTbio Bioinformatics Analysis Facility, Sorbonne Université, CNRS, Institut de Biologie Paris Seine Paris France
+1. Université Paris Cité, Inserm, CEA, Stabilité Génétique Cellules Souches et Radiations, LRP/iRCM Fontenay-aux-Roses France ([ROR:00nvvw130](https://ror.org/00nvvw130))
+2. Université Paris-Saclay, Inserm, CEA, Stabilité Génétique Cellules Souches et Radiations, LRP/iRCM Fontenay-aux-Roses France ([ROR:00nvvw130](https://ror.org/00nvvw130))
+3. Spinal Cord Injury and Tissue Regeneration Center Salzburg (SCI-TReCS), Paracelsus Medical University Salzburg Austria ([ROR:03z3mg085](https://ror.org/03z3mg085))
+4. Institute of Experimental Neuroregeneration, Paracelsus Medical University Salzburg Austria ([ROR:03z3mg085](https://ror.org/03z3mg085))
+5. Austrian Cluster for Tissue Regeneration Vienna Austria ([ROR:052f3yd19](https://ror.org/052f3yd19))
+6. Inserm, ARTbio Bioinformatics Analysis Facility, Sorbonne Université, CNRS, Institut de Biologie Paris Seine Paris France ([ROR:01c2cjg59](https://ror.org/01c2cjg59))
+7. ARTbio Bioinformatics Analysis Facility, Sorbonne Université, CNRS, Institut de Biologie Paris Seine Paris France ([ROR:01c2cjg59](https://ror.org/01c2cjg59))
 
 † Corresponding author
 
@@ -50,21 +50,201 @@ Studies of SVZ neural progenitors have been essentially focused on the character
 
 ## Results
 
-## Regenerative potential and multipotency of sorted iNB in vitro and in vivo
+### Regenerative potential and multipotency of sorted iNB in vitro and in vivo
 
 We have previously shown that s-iNB, which expressed the neuroblast markers CD24 and DCX (Daynac et al., 2013) and markers of neural progenitors such as Mash1 (Daynac et al., 2013), Dlx2 and SOX2 (Figure 1—figure supplement 1) had a clonogenic potential and were able to proliferate in vitro for weeks in normoxic conditions (20%O2) unlike s-mNB (Daynac et al., 2013). However, s-iNB exhibited reduced clonogenic potential compared to that of s-aNSC and s-TAP (Figure 1A). It has been previously reported that hypoxic conditions promoted SVZ NSC proliferation and neurogenesis (Li et al., 2021; Ross et al., 2012). Hypoxic conditions (4%O2) had no effects on s-mNB, but increased the proliferation capacities of s-aNSC, s-TAP and s-iNB, which reached similar growth rates, making them undistinguishable based on this endpoint (Figure 1A). Hypoxic conditions also increased the clonogenic potentials of both s-TAP and s-iNB but not that of s-aNSC (Figure 1B). In these conditions, the clonogenic potential of s-TAP reached similar values as s-aNSC, but that of s-iNB was still lower (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/87083/elife-87083-fig1-v1.jpg)
+
+**Figure 1.:** (A) Population doublings (PD). Data were obtained from three independent experiments (n=8). (B) Clonogenicity assay. Results were obtained from two independent experiments. The number inside the bars indicated the number of microplate wells analyszed (mean ± SEM). (C) Differentiation assay. Representative images of immunofluorescence of freshly sorted iNB cells cultured in oligodendrocyte, astrocyte, or neuronal differentiation medium, and stained for NG2 and CNPase, GFAP and CD133 or βIII-Tubulin and doublecortin (DCX) expressions, respectively. *p<0.05, **p<0.01, ***p<0.001 (Mann-Whitney U-test). Scale bar: 20 µm. (D) EGFP-positive s-iNB were isolated from β−actin:eGFP mice and transplanted unilaterally at three injection points at proximity of the dSVZ/RMS of recipient C57Bl/6 J mice. Transplanted brains were analyszed 5 weeks later by immunostaining. (a) Detection of eGFP + cells in the granule cell layer and the external cell layer of the olfactory bulb of a mouse transplanted. (a1–a2) a2 high magnification of the inset (dotted line in a) showing eGFP + NeuN + cells (white arrows). (b–c) Detection of eGFP+ GFAP+ DCX+ cells (yellow arrows) and eGFP +GFAP + (white arrows) in the dorsal (b2) and lateral (c2) SVZ. GCL:granule cell layer, EPL: external plexiform layer, GL: glomerular layer, lSVZ: lateral SVZ, dSVZ: dorsal SVZ, Scale bars = 40 µm or 100 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87083/elife-87083-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** s-aNSC, s-TAP, s-iNB, and s-mNB cells were sorted from the SVZ of 2-month-old C57Bl/6 mice, fixed and stained with antibodies against DLX2, a marker of proliferating progenitors (Doetsch et al., 2002) and SOX2 that plays an essential role in the maintenance of neural progenitors (Zhu et al., 2014) Quantifications of sorted SVZ cells (s-aNSC/s-TAP n=81, s-iNB=154, s-mNB=62) expressing DLX2 (A) and SOX2 (B). *p<0.05, **p<0.01, ***p<0.001 (Mann -Whitney U-test).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87083/elife-87083-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Immunofluorescence of mouse brains transplanted unilaterally in 3 injection points near the dSVZ/RMS with eGFP+iNB cells isolated from β-actin:eGFP mice. Transplanted brains were analyszed 5 weeks later. (A) Example of EGFP+iNB cell (white arrow) that has reached the rostral migratory stream and expressed DCX (inset a3), but not GFAP (inset a2). Insets are high magnification panels. (B) eGFP+ cells persisting at IS expressing astrocyte or oligodendrocyte markers. High magnifications of the inset1 (dotted line in A) showing eGFP+ GFAP+ cells (white arrow) (a2) and eGFP+DCX+ cells (white arrow) (a3). High magnifications of the inset2 (dotted line in B) showing eGFP+ CNPase+ (yellow arrow) and eGFP+CNPase- (white arrow). Scale bars = 100 µm. (C) Quantitative analysis of GFAP, CNPase or DCX antibodies staining of GFP-positive cells persisting at IS (where high number of grafted cells were found) in (A, B, C). This was performed by using the NIS software measuring eGFP-, GFAP-, CNPase- and DCX-positive areas, n = 7-8 mice brains. The intersections between each marker and eGFP areas were determined as a percentage of staining. The results showed that approximately one third of eGFP + cells expressed GFAP or DCX. The quantitative analysis of CNPase expression specific to eGFP + cells was complicated by host cells, but an overexpression in eGFP-positive areas clearly revealed the expression of CNPase by a significant faction of these cells.
 
 Quite surprisingly, freshly isolated s-iNB had the capacity to generate the three neural lineages, neurons, astrocytes and oligodendrocytes, when plated for 5–7 days in the appropriate differentiation media, similarly as s-aNSC and s-TAP (Figure 1C).
 
 Thus, to assess the regenerative potential of these immature neuroblasts in vivo, eGFP+ iNB were sorted from β−actin:eGFP mice, transplanted into the left striatum of recipient C57Bl/6 mice and compared to eGFP+s-mNB and eGFP+s-NSC/TAP. Five weeks after transplantation, eGFP+ cells were detected in different regions of interest (Table 1) in the brains of mice transplanted with eGFP+s-NSC/TAP or eGFP+s-iNB, whereas no eGFP +were observed after transplantation of eGFP+s-mNB even at the injection site (IS) (Table 1). Excepted in one out of three, animals transplanted with eGFP+s-iNB presented high levels of eGFP+ cells in the OB with levels equivalent or superior to animals transplanted with eGFP+s-NSC/TAP or eGFP+s-iNB (Figure 1D). EGFP+ cells were detected in the RMS (Figure 1—figure supplement 2) as well as in the granular cell layer (GCL) and the external plexiform layer (EPL) of the OB where they differentiated into ΝeuN+ neurons in 2/3 animals transplanted with eGFP+s-iNB (Figure 1Da) and in 3/3 animals transplanted with EGFP+s-NSC/TAP (Table 1).
 
+**Table 1.**
+ Transplantations of eGFP+s-iNB, eGFP-s-iNB and eGFP+s-mNB freshly isolated from β-actin:eGFP mice model.Table recapitulating the immunohistological analyses of the numbers of eGFP+ cells in different regions in recipient C57Bl6/J mice brains, 5 weeks after transplantation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">IS</th>
+      <th colspan="2">SVZ</th>
+      <th colspan="2">CC</th>
+      <th colspan="2">OB</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Nb eGFP + cells</td>
+      <td>%</td>
+      <td>Nb eGFP + cells</td>
+      <td>%</td>
+      <td>Nb eGFP + cells</td>
+      <td>%</td>
+      <td>Nb eGFP + cells</td>
+      <td>%</td>
+      <td>Total eGFP + cells</td>
+    </tr>
+    <tr>
+      <td>s-aNSC/s-TAP</td>
+      <td>Animal 1</td>
+      <td>271</td>
+      <td>62.6</td>
+      <td>17</td>
+      <td>3.9</td>
+      <td>55</td>
+      <td>12.7</td>
+      <td>90</td>
+      <td>20.8</td>
+      <td>433</td>
+    </tr>
+    <tr>
+      <td>1.3–1.5x104</td>
+      <td>Animal 2</td>
+      <td>300</td>
+      <td>31.9</td>
+      <td>79</td>
+      <td>8.4</td>
+      <td>47</td>
+      <td>5.0</td>
+      <td>515</td>
+      <td>54.7</td>
+      <td>941</td>
+    </tr>
+    <tr>
+      <td>eGFP + engrafted cells</td>
+      <td>Animal 3</td>
+      <td>95</td>
+      <td>37.1</td>
+      <td>73</td>
+      <td>28.5</td>
+      <td>22</td>
+      <td>8.6</td>
+      <td>66</td>
+      <td>25.8</td>
+      <td>256</td>
+    </tr>
+    <tr>
+      <td>s-iNB</td>
+      <td>Animal 1</td>
+      <td>1025</td>
+      <td>65.2</td>
+      <td>16</td>
+      <td>1.0</td>
+      <td>49</td>
+      <td>3.1</td>
+      <td>483</td>
+      <td>30.7</td>
+      <td>1573</td>
+    </tr>
+    <tr>
+      <td>2x104</td>
+      <td>Animal 2</td>
+      <td>196</td>
+      <td>15.5</td>
+      <td>41</td>
+      <td>3.2</td>
+      <td>41</td>
+      <td>3.2</td>
+      <td>989</td>
+      <td>78.1</td>
+      <td>1267</td>
+    </tr>
+    <tr>
+      <td>eGFP + engrafted cells</td>
+      <td>Animal 3</td>
+      <td>240</td>
+      <td>84.8</td>
+      <td>43</td>
+      <td>15.2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>283</td>
+    </tr>
+    <tr>
+      <td>s-aNSC/s-TAP</td>
+      <td>Animal 1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>1.3–1.5x104</td>
+      <td>Animal 2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>eGFP + engrafted cells</td>
+      <td>Animal 3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_IS = Injection Site; CC = Corpus callosum; SVZ = Subventricular zone; OB = Olfactive bulb._
+
 Importantly, eGFP+ cells were present in the SVZ of all the animals transplanted with eGFP+s-iNB and eGFP+s-NSC/TAP (Figure 1Db, Figure 1Dc), some of them expressing GFAP indicating the generation of astrocytes, and therefore possibly NSC (Figure 1Db3, Figure 1Dc2). Plasticity of s-iNB was also shown at the IS by the detection of eGFP+ cells expressing markers of astrocytes (GFAP) and oligodendrocytes (CNPase; Figure 1—figure supplement 2B and C).
 
 Overall, these results demonstrate the plasticity of s-iNB in vitro, making them very similar to s-NSC/TAP, questioning the exact nature of this abundant SVZ cell populations that express neuroblast markers.
 
-## s-iNB are a molecularly distinct class of proliferating SVZ progenitors
+### s-iNB are a molecularly distinct class of proliferating SVZ progenitors
 
 We characterized the transcriptomic profiles of each SVZ populations sorted from 2-month-old C57Bl/6 mice using Clariom D mouse microarrays that provides intricate transcriptome-wide gene- and exon-level expression profiles (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/87083/elife-87083-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematic illustration of our strategy of flow cytometry cell sorting of the five major neurogenic populations (s-qNSC, s-aNSC, s-TAP, s-iNB, s-mNB) of SVZ microdissected from adult mouse brains. (B) Pseudotime analysis showing the lineage progression of sorted cell populations based on the highly dispersed genes between s-qNSC, s-aNSC, s-TAP, s-iNB, and s-mNB. (C) Pseudotime analysis after exclusion of s-qNSC based to further discriminate s-aNSC and s-TAP. (D) Heatmap representation of RSR genes differentially expressed among s-aNSC, s-TAP, s-iNB, s-mNB (FDR p-value <0.05).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87083/elife-87083-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Comparisons of individual transcriptome signatures with various Gene Ontology gene sets and Biological pathways using the g:Profiler software highlight significant stage-dependant changes. S-qNSCs expressed genes related to Metabolism of lipids, Transport of small molecules. S-aNSC expressed genes involved in Glyoxylate and decarboxylate metabolism. S-TAP significantly displayed genes involved in Mitotic G1 phase and G1/S transition and S Phase. S-iNB specifically expressed Cell Cycle and Mitotic genes in contrast to s-mNB which are characterised by the expression of Axon guidance and Nervous system development genes.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87083/elife-87083-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Comparisons of individual mRNA splicing isoforms with the Gene Ontology Biological pathway sets using the Gene Set Enrichment Analysis (GSEA) interface. This analysis clearly revealed splicing in genes involved in neuron development and neurogenesis in all SVZ cells. Interestingly, this also showed that s-qNSC logically differed from the other cell types by splicing in genes involved in mitosis and cell cycle. More importantly, GO annotations in differentially spliced isoforms emphasized the close proximity of s-aNSC and s-TAP on one hand and s-iNB and s-mNB on the other hand confirming than s-iNB are closer to s-mNB than s-TAP.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/87083/elife-87083-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Violin diagrams representing the expression of selected clusters from published sc-RNAseq analysis in our Clariom microarray(14,17,32). S-qNSC perfectly matched the expression of Glial markers (Class III)(32), qNSC(17) and Quiescent B cells (clusters 5 and 14)(14). In contrast, s-aNSC poorly matched with Lipid biosynthesis (Class III) and Cell cycle (Class IV)(32), aNSC(17) and Activated B cells (Cluster 13)(14). Similarly, s-TAP poorly matched with TAP(17) and C cells (Cluster 12)(14). S-iNB perfectly fit with Mitosis (Class VI), mitotic TAP (mTAP) (Zywitza et al., 2018) and Mitosis (Cluster 8, 10,16 and 17)(14). s-mNB overlapped genes related to Neuron differentiation (Class VII), Late NBs (17) and A cells (clusters 0, 1 and 4).
 
 Pseudotime analysis (TSCAN; Ji and Ji, 2016) based on 3679 highly dispersed genes between the five sorted cell populations confirmed the lineage progression from s-qNSC (cluster1), then s-aNSC and s-TAP within a single cluster (cluster2), followed by s-iNB (cluster3) and finally s-mNB (cluster4; Figure 2B). Another pseudotime analysis excluding s-qNSC, based on 1481 highly dispersed genes, delineated two distinct clusters for s-aNSC and s-TAP (Figure 2C), highlighting their molecular differences.
 
@@ -78,13 +258,25 @@ We then focused on the differentially expressed genes (adjusted p-value ≤0.05)
 
 Altogether, these data confirm at the molecular level that s-iNB comprises cycling progenitors at the transition between s-TAP and s-mNB that undergo important molecular switches, which include major changes in the expression of some RSR genes leading to a major increase in the number of DSG occurring at the final maturation of s-mNB.
 
-## s-iNB correspond to specific SVZ cell clusters identified by single-cell RNA sequencing (scRNAseq)
+### s-iNB correspond to specific SVZ cell clusters identified by single-cell RNA sequencing (scRNAseq)
 
 We compared our microarray datasets to published scRNAseq datasets from adult mouse SVZ (Cebrian-Silla et al., 2021; Zywitza et al., 2018; Llorens-Bobadilla et al., 2015). Violin plots show that s-qNSC and s-mNB perfectly matched with the corresponding populations identified in these studies, which was less obvious for s-aNSC and s-TAP (Figure 2—figure supplement 3). s-iNB matched with the clusters termed ‘Mitosis’ (Class VI) in the study of Llorens-Bobadilla et al., 2015 and ‘Mitotic TAP’ in that of Zywitza et al., 2018, and with clusters 8, 10, 17, 16 linked to ‘Mitosis’, but also with clusters 6 and 15 described as DCX+Ki67+ neuroblasts in the study by Cebrian-Silla et al., 2021. These comparisons thus confirm that s-iNB comprise cycling SVZ cells exhibiting both TAP and NB features, which illustrates the difficulties to determine the exact nature of cell clusters identified by scRNAseq.
 
 We have previously reported (Daynac et al., 2013) that after brain exposure to ionizing radiation, proliferating progenitors are highly radiation-sensitive and rapidly eliminated after irradiation. On the contrary qNSC that are radiation resistant repopulate the different SVZ neurogenic cell populations successively the following days after irradiation. We therefore used this model and our transcriptomic signatures of SVZ stem and progenitor cells to gain new insights on the nature and the hierarchical ordering of neural progenitor clusters identified by sc-RNAseq.
 
 TenX Genomics droplet-based single-cell transcriptomic analyses were performed on SVZ cells from two mice, 5 days after irradiation (4 Gy, SVZ only) and from two non-irradiated control mice after removal of myelin and red blood cells (Figure 3A). Based on a filtering criterion of 1500 genes/cell to exclude low-quality sequenced cells, 17,343 cells were retained for analysis, divided into 11,529 non-irradiated cells and 5814 irradiated cells (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/87083/elife-87083-fig3-v1.jpg)
+
+**Figure 3.:** (A) Experimental design. (B) Uniform Manifold Approximation and Projection (UMAP) of the 17343 high-quality sequenced cells annotated with corresponding cell type, combining scRNA-seq datasets of non-irradiated mice and 4 Gy irradiated mice. Clustering analysis at resolution 1.2 segregated cells into 33 clusters that were matched with corresponding cell types determined with marker expression in (C). Among them, 14 clusters (dotted lines rectangle) corresponded to the clusters of astrocytes and neurogenic cells (ANC). (C) Violin diagrams illustrating the expression level of known cell markers in the 33 clusters according to the literature. (D) Violin diagrams representing the expression level of selected markers specific to neurogenic cells and astrocyte from ANC clusters at the resolution 1.2. (E) UMAP focusing on the ANC subset. (F) UMAP of the top UCell score for the top 100 highly expressed genes of each neurogenic cell sorted population in the ANC clusters (Figure 2—figure supplement 1—source data 1). (G) Chord diagram illustrating the correspondence of cell clusters with cell top score. Cluster 10 matched with both s-TAP and s-iNB and clusters 8 and 19 both to s-iNB and to s-mNB. (H) Feature plot of cell cycle scoring (I, J) UMAP representation of ANC clusters in the unirradiated (I) and irradiated (J) samples. (K) Barplot showing the recovery ratios of each ANC cluster in irradiated brains calculated as the number of cells per clusters from irradiated brains /control brains normalized to the respective numbers of s-qNSC (cluster 4). Taking into account UCell score results, s-iNB clusters overlapped the cluster 10 and 8 containing s-TAP and s-mNB, respectively.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87083/elife-87083-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Quality controls of scRNA-seq on whole SVZ tissues (A) Violin diagrams of the nCount_RNA, the nFeature_RNA and the mitochondrial percentage (Percent.mito) before applying cut-offs adapted to each non-irradiated and irradiated samples. (B) Proportion of cells from the 4 samples in the 33 clusters.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87083/elife-87083-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) UMAP at the resolution 1.2 combining scRNA-seq datasets of unirradiated and 4Gy irradiated cells segregated into 33 clusters. (B) Violin diagrams illustrating the expression level of known cell markers in the 33 clusters according to the literature. (C) UMAP of top normalized UCellScore Astrocyte- and the B-cell-specific genes described by Cebrian-Silla et al., 2021 for cells from clusters 4 and 13.
 
 Non-irradiated and irradiated samples were combined and integrated using the SCTransform workflow. After integration, PCA was performed and 50 PCs were used for Uniform-manifold approximation (UMAP). Leiden graph-based clustering, with a resolution of 1.2, identified 33 clusters (Figure 3—figure supplement 1A). These clusters were first annotated based on the expression of known cell markers (Figure 3—figure supplement 1B). Nineteen clusters gathering more than half SVZ-residing cells corresponded to non-neurogenic cells (ordered by decreasing abundance): microglia (expressing P2ry12 Gómez Morillas et al., 2021), ependymal cells (expressing both S100b and Slc1a3 Berger and Hediger, 1998), endothelial cells (expressing Flt1 Sawano et al., 2001), oligodendrocyte progenitors (OPC, expressing Pdgfra Zhu et al., 2014), Myelin forming oligodendrocytes (MFOL, expressing Mog Zywitza et al., 2018) and pericytes (expressing both Vtn and Pcam1 (Sohn et al., 2015; Lertkiatmongkol et al., 2016), and dopamine neurons (expressing Slc17a6 Kouwenhoven et al., 2020). The 14 other clusters corresponded to astrocytes and neurogenic cells (Figure 3B–C–D). The clusters 4 and 13 that expressed S100b were further identified as qNSC (cluster 4) and astrocytes (cluster 13) based on the transcriptomic signatures described by Cebrian-Silla et al., 2021; Figure 3—figure supplement 2; Figure 2—figure supplement 3). Cluster 17, was identified as aNSC based on Gfap, Thbs4, S100a6, Egfrlow and Ascl1 expressions (Cebrian-Silla et al., 2021), and cluster 20 as TAP based on Egfr and Ascl1 expressions (Kim et al., 2011). Clusters 10, 5, 15, 12, and 8 were defined as cycling progenitors based on the expression of proliferative markers such as Top2a, Mki67, Ascl1. Clusters 1, 3, 7, and 9 were identified as mNB due to the loss of Mki67, Top2 a and Ascl1 expressions and the expression of Robo2 and Dcx. Cluster 19 did not expressed Ascl1 but Top2a and Mki67 as well as with Robo2 and Dcx, was therefore positioned at the transition between iNB and mNB.
 
@@ -98,9 +290,21 @@ We next addressed the expression of RSR genes in each cluster (Figure 4). Not al
 
 **Figure 4.:** Violin diagrams illustrating the expression of the RSR genes increasing (A) or decreasing (B) with neurogenesis.
 
-## The Dcx status identifies two molecularly distinct subpopulations in s- iNB
+### The Dcx status identifies two molecularly distinct subpopulations in s- iNB
 
 We have previously shown by immunofluorescence that not all the s-iNB were positive for doublecortin (Dcx) expression, a common marker of neuroblasts (Daynac et al., 2013). Violin plot (Figure 3D) and feature plot (Figure 5A) show that Dcx expression was restrained to s-mNB and to clusters related to s-iNB in which it increased consistently with their hierarchical ordering we defined above. Variations in Dcx expression among iNB-related clusters led us to analysze separately Dcxlow and Dcxhigh cells in these clusters (Figure 5—figure supplement 1). The ratios of numbers of cells per cluster indicated a greater recovery of Dcxlow cells as compared to Dcxhigh cells in s-iNB-related clusters from irradiated brains (Figure 5B), reflecting their temporal ordering.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/87083/elife-87083-fig5-v1.jpg)
+
+**Figure 5.:** (A) Feature plot. (B) Barplot representations of the recovery ratios of Dcxlow (left) and DcxHigh (right) in the iNB clusters of the irradiated brains, calculated as in Figure 3K. Violin diagrams illustrating the expression level of RSR genes decreasing (C) and increasing (D) with neurogenesis in Dcxlow and DcxHigh in neurogenic cell clusters.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/87083/elife-87083-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Violin diagram of the expression of Dcx in cells from neurogenic clusters illustrating two populations of iNB: iNB DcxHiigh and iNB DcxLow cells.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/87083/elife-87083-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Violin diagrams illustrating the expression of the RSR genes increasing (A) or decreasing (B) with neurogenesis.
 
 Characterization of differentially expressed genes according to the Dcx status in these clusters showed 588 unique genes expressed in the Dcxlow cells and 98 genes specifically expressed in the Dcxhigh cells. Functional enrichment profiling using the g:Profiler software illustrates biological differences between both populations: genes related to metabolism of RNA were overrepresented in the Dcxlow cells, whereas genes linked to GABAergic synapse, neuronal system were rather overexpressed in the Dcxhigh cells (Figure 5—source data 1). Notably, 55% of Dcxhigh cell specific genes were s-mNB genes (e.g. Robo2, Gap43, Nav3). Further analysis of RSR genes expression in function of the Dcx status, clearly confirms that progressive transcriptomic changes occurred between Dcxlow and Dcxhigh cells (Figure 5C and D). However, RSR gene profiles of Dcxlow cells in clusters related to s-iNB were obviously different from that related to both s-TAP and s-NSC, and that of Dcxhigh cells from that of s-mNB. Similar results were obtained with cells from irradiated brains (Figure 5—figure supplement 2).
 
@@ -110,9 +314,153 @@ We next took advantage of the DCX-CreERT2::CAG-floxed-eGFP mice model, allowing 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/87083/elife-87083-fig6-v1.jpg)
 
-**Figure 6.:** of Dcx iNB in vitro.High(A) Clonogenic potential of FACS-isolated eGFP+iNB and eGFP-iNB, and recombined eGFP+mNB isolated from DCX-CreERT2::CAG-floxed-eGFP mice, 7 days after the first injection of tamoxifen. (B) Population doublings (PD) of FACS-isolated eGFP+iNB and eGFP-iNB, eGFP+mNB cells and total iNB cells (regardless of eGFP status). No statistical difference was found in the growth rate of the different isolated populationss, Mann-Whitney U-test., (n=8) (C) Representative images of immunofluorescence of freshly sorted eGFP+iNB cells cultured in oligodendrocyte,astrocyte, or neuronal differentiation medium, and stained for NG2 and CNPase, GFAP and CD133, βIII-Tubulin and DCX, respectively. Scale: 10 µm. (D) Quantification of the percentage of eGFP+ iNB among DAPI cells cultured in differentiation media that differentiate in either neurons (βIII-tubulin), oligodendrocytes (NG2) or astrocytes (GFAP).
+**Figure 6.:** (A) Clonogenic potential of FACS-isolated eGFP+iNB and eGFP-iNB, and recombined eGFP+mNB isolated from DCX-CreERT2::CAG-floxed-eGFP mice, 7 days after the first injection of tamoxifen. (B) Population doublings (PD) of FACS-isolated eGFP+iNB and eGFP-iNB, eGFP+mNB cells and total iNB cells (regardless of eGFP status). No statistical difference was found in the growth rate of the different isolated populationss, Mann-Whitney U-test., (n=8) (C) Representative images of immunofluorescence of freshly sorted eGFP+iNB cells cultured in oligodendrocyte,astrocyte, or neuronal differentiation medium, and stained for NG2 and CNPase, GFAP and CD133, βIII-Tubulin and DCX, respectively. Scale: 10 µm. (D) Quantification of the percentage of eGFP+ iNB among DAPI cells cultured in differentiation media that differentiate in either neurons (βIII-tubulin), oligodendrocytes (NG2) or astrocytes (GFAP).
 
 By contrast, when eGFP+iNB were transplanted into the brain of C57Bl/6 J mice, no eGFP+ cells persisted at long-term (5 weeks; Table 2), suggesting that the in vivo plasticity and regenerative properties of s-iNB was rather associated to Dcxlow iNB.
+
+**Table 2.**
+ Transplantations of eGFP+s-iNB, eGFP-s-iNB and eGFP+s-mNB freshly isolated from DCX-CreERT2::CAG-floxed-eGFP mice model.Table recapitulating the immunohistological analyses of the numbers of eGFP+ cells in different regions in recipient C57Bl6/J mice brains, 5 weeks after transplantation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2"></th>
+      <th></th>
+      <th colspan="2">IS</th>
+      <th colspan="2">SVZ</th>
+      <th colspan="2">CC</th>
+      <th colspan="2">OB</th>
+      <th>Total eGFP + cells</th>
+    </tr>
+    <tr>
+      <th>eGFP + engrafted cells</th>
+      <th>NbeGFP + cells</th>
+      <th>%</th>
+      <th>NbeGFP + cells</th>
+      <th>%</th>
+      <th>NbeGFP + cells</th>
+      <th>%</th>
+      <th>NbeGFP + cells</th>
+      <th>%</th>
+      <th>0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>s-iNB eGFP +</td>
+      <td>Animal1</td>
+      <td></td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>s-iNB eGFP+</td>
+      <td>Animal2</td>
+      <td></td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>s-iNB eGFP + /eGFP-</td>
+      <td>Animal1</td>
+      <td></td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>s-iNB eGFP+ /eGFP-</td>
+      <td>Animal2</td>
+      <td></td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>s-iNB eGFP +eGFP-</td>
+      <td>Animal3</td>
+      <td></td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>s-mNB eGFP+</td>
+      <td>Animal1</td>
+      <td></td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>s-mNB eGFP +</td>
+      <td>Animal2</td>
+      <td></td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>s-mNB eGFP +</td>
+      <td>Animal3</td>
+      <td></td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+      <td>0.0%</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -142,15 +490,473 @@ To conclude, we have characterized the molecular features of iNB cells, a relati
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>β-actin:eGFP</td>
+      <td>The Jackson Laboratory (Okabe et al., 1997)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (mouse)</td>
+      <td>DCX-CreERT2::CAG-CAT-eGFP</td>
+      <td>kindly given by Pr Couillard-Despres Sebastien (Zhang et al., 2010)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-rat Anti-mouse monoclonal CD24 (clone 1/69)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#307567;RRID:AB_2034001</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC-rat Anti-mouse monoclonal CD15 (clone MMA)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#340703;RRID:AB_400103</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421-mouse monoclonal anti-human CD15(Clone W6D3)</td>
+      <td>BioLegend</td>
+      <td>Cat#323039;RRID:AB_2566519</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa647-conjugated epidermal growth factor (EGF) ligand(clone 30H45L48)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#MA7-00308-A647; RRID:AB_2662334</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-GFP</td>
+      <td>Abcam</td>
+      <td>Cat#ab6673; RRID:AB_305643</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal Anti-GFP</td>
+      <td>Abcam</td>
+      <td>Cat#ab290</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-mouse O4(clone 81)</td>
+      <td>Merck Millipore</td>
+      <td>Cat#MAB345; RRID:AB_2313768</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-mouse NG2</td>
+      <td>Merck Millipore</td>
+      <td>Cat#AB5320, RRID:AB_91789</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse Dcx C-18</td>
+      <td>Santa Cruz</td>
+      <td>Cat#sc-8066, RRID:AB_2088494</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-mouse Dcx</td>
+      <td>Cell Signaling</td>
+      <td>Cat#4604, RRID:AB_561007</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-mouse Tubulin b3 (TUBB3)</td>
+      <td>Covance</td>
+      <td>Cat#PRB-435P, RRID:AB_29163</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-mouse Gfap (clone GA5)</td>
+      <td>Merck Millipore</td>
+      <td>Cat#MAB3402, RRID:AB_94844</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-mouse Gfap</td>
+      <td>Merck Millipore</td>
+      <td>Cat#G9269, RRID:AB_477035</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-CD133 (clone 13A4)</td>
+      <td>Merck Millipore</td>
+      <td>Cat#MAB4310</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-mouse CNPase (clone 11-5B)</td>
+      <td>Merck Millipore</td>
+      <td>Cat#MAB326</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse Olig2</td>
+      <td>Biotechne</td>
+      <td>Cat#AF2418, RRID:AB_2157554</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-mouse NeuN (clone A60)</td>
+      <td>Merck Millipore</td>
+      <td>Cat#MAB377, RRID:AB_2298772</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594_ donkey polyclonal anti-Mouse IgG (H+L) Secondary Antibody</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#A21203, RRID:AB_141633</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647_ donkey polyclonal anti-mouse IgG (H+L) Secondary Antibody</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#A21202A-31571, RRID:AB_162542</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647_ donkey polyclonal anti-mouse IgG (H+L) Secondary Antibody</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#A32787, RRID:AB_2762830</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Percoll</td>
+      <td>MerckMillipore</td>
+      <td>Cat#9048-46-8</td>
+      <td>22%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-L-ornithine solution</td>
+      <td>Merck Millipore</td>
+      <td>P4957</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-D-lysine solution</td>
+      <td>MerckMillipore</td>
+      <td>25988-63-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NeuroCult Basal medium</td>
+      <td>STEMCELL Technologies</td>
+      <td>Cat#05700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Heparin Solution</td>
+      <td>STEMCELL Technologies</td>
+      <td>Cat#07980</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Epidermal Growth Factor Protein, human recombinant</td>
+      <td>MerckMillipore</td>
+      <td>Cat#GF144</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fibroblast growth Factor basic, human recombinant</td>
+      <td>MerckMillipore</td>
+      <td>Cat#GF003AF</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM:F12 medium</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>31331028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>B-27-Supplement Minus Antioyxidants (AO)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#10889038</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal Bovine serum</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#10082139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Papain</td>
+      <td>Worthington Biochemical</td>
+      <td>Cat#LK003150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#T5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-(+)-Glucose</td>
+      <td>Merck Millipore</td>
+      <td>Cat#G7021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium bicarbonate</td>
+      <td>Merck Millipore</td>
+      <td>Cat#S5761</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES sodium salt</td>
+      <td>Merck Millipore</td>
+      <td>Cat#H3784</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insulin from bovine pancreas</td>
+      <td>Merck Millipore</td>
+      <td>Cat#I1882</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Apo-Transferrin human</td>
+      <td>Merck Millipore</td>
+      <td>Cat#T2252</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Progesterone</td>
+      <td>Merck Millipore</td>
+      <td>Cat#P6149</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Putrescine</td>
+      <td>Merck Millipore</td>
+      <td>Cat#P7505</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium selenite</td>
+      <td>Merck Millipore</td>
+      <td>Cat#S9133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Papain</td>
+      <td>Worthington Biochemical</td>
+      <td>Cat#LK003150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Red blood Cell lysis solution</td>
+      <td>Milteny Biotec</td>
+      <td>Cat#130-094-183</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dead Cell Removal Kit</td>
+      <td>Milteny Biotec</td>
+      <td>Cat#130-090-101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Micro Kit</td>
+      <td>QIAGEN</td>
+      <td>Cat#74004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNase-Free DNase Set</td>
+      <td>QIAGEN</td>
+      <td>Cat#79254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agilent High Sensitivity DNA Kit</td>
+      <td>LabChip</td>
+      <td>Cat#5067–4626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Next GEM Chip G Single Cell Kit</td>
+      <td>10 X GENOMICS</td>
+      <td>Cat#PN-1000127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual Index Kit Plate TT Set A</td>
+      <td>10 X GENOMICS</td>
+      <td>Cat#PN-1000215</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>RStudio</td>
+      <td>https://www.rstudio.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Transcriptome Analysis Console (TAC 4.0)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>limma</td>
+      <td>Ritchie et al., 2015; Smyth et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EventPointer</td>
+      <td>Romero et al., 2016a; Romero et al., 2016b</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Sigma-Aldrich</td>
+      <td>D1306</td>
+      <td>Materials and methods &gt;Immunolabeling1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst 33258</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#H3569</td>
+      <td>Materials and methods&gt;Cell sorting1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Propidium iodide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#P4170</td>
+      <td>Materials and methods&gt;Cell sorting1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Corn oil</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#C8267</td>
+      <td>Tamoxifen solution40 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Solution de paraformaldéhyde, 4% en PBS</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#15670799</td>
+      <td>Materials and methods &gt;Tissue processing</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Triton X-100</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 11332481001</td>
+      <td>Materials and methods &gt;Immunolabeling0.1%</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>70 µm cell strainer</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#10788201</td>
+      <td>Materials and methods &gt; Single cell library preparation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2.5 µl, Model 62 RN SYR, Small Removable NDL, 22 s ga, 2 in, point style 3</td>
+      <td>Hamilton</td>
+      <td>Cat#87942</td>
+      <td>Materials and methods &gt; Transplants</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Small Hub 33 G</td>
+      <td>Hamilton</td>
+      <td>Cat#074750</td>
+      <td>Materials and methods &gt; Transplants</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All experimental procedures complied with European Directive 2010/63/EU and the French regulations. The protocols were approved by our institutional ethical committee (CEtEA 44) and authorized by the « Research, Innovation and Education Ministry » under registration number APAFIS#25978–2020061110358856 v1. Adult male C57BL/6 J were obtained from Janvier Laboratories. Adult male β−actin:eGFP (Okabe et al., 1997) and DCX-CreERT2::CAG-CAT-eGFP mice kindly given by Pr Couillard-Despres Sebastien (Zhang et al., 2010). Experiments were performed with male animals aged 8 and 10 weeks. Tamoxifen (TAM, T-5648, Sigma-Aldrich) was dissolved in corn oil (C-8267, Sigma-Aldrich) at 40 mg/ml. To analysze the expression of the Dcx reporter gene, 20 mg TAM/g body weight was administered twice daily by gavage over a period of 5 consecutive days.
 
-## Cell sorting
+### Cell sorting
 
 Lateral ventricle walls of the SVZ were microdissected and dissociated as previously described (Daynac et al., 2015; Daynac et al., 2013; Daynac et al., 2016) with the modification that cells were centrifuged at 250 × g for 20 min at 4 °C without brake on a 22% Percoll gradient (GE Healthcare) to remove myelin prior to singlecell suspension labelling. The antibodies to distinct cell populations were anti-CD24 phycoerythrin [PE]-conjugated (Rat IGg2b; BD Biosciences, 1:50, RRID:AB_2034001), CD15/LeX flurorescein isothiocyanate-[FITC] conjugated (clone MMA, mouse IgM; BD Biosciences, 1:50, RRID:AB_400103), CD15/LeX- Brilliant violet-421-[BV421] (Mouse IgG1, κ; BioLegend, 1:50, RRID:AB_2566519) and Alexa647-conjugated epidermal growth factor (EGF) ligand (Clone 30H45L48, Thermo Fisher Scientific, 1:200, RRID:AB_2662334). Cells were gated following the fluorescence minus one (FMO) control. Immediately prior to FACs sorting, propidium iodide (PI) or Hoechst 33258 was added to a final concentration of 1 µg/ml to label the dead cells. Cells were sorted on an INFLUX cell sorter equipped with an 86 µm nozzle at 40 psi (BD Biosciences). All the data were analyszed using FlowJo software (Tree Star, Ashland, OR).
 
-## Cell culture expansion and differentiation
+### Cell culture expansion and differentiation
 
 Clonogenicity assay and population doublings: FACs-purified populations were collected in NeuroCult medium complemented with the proliferation supplement (STEMCELL Technologies), 2 µg/mL heparin, 20 ng/mL EGF and 10 ng/mL FGF-2, at a density of 1x103 cells/well in 96-well tissue culture plates coated with poly-D-lysine (Merck Millipore).
 
@@ -160,13 +966,13 @@ Neurospheres were then mechanically dissociated and sub-cultured in 24-well plat
 
 Differentiation assays: just after sorting, cells were placed on Poly-L-ornithine (P4957, Merck Millipore) coated 24-well culture plates at 40,000 cells/ml in DMEM:F12 with several supplementation according to the lineage: astroglial: 2% B27 MAO (minus antioxidant, Thermo Fisher Scientific) and 2% fetal bovine serum (10082139, Thermo Fisher Scientific), oligodendroglial: 10 ng/mL FGF-2, a defined hormone mix including Glucose (G-7021, Sigma-Aldrich 50 gm/l) /NaHCO3 (S-5761, Sigma-Aldrich, 10 mg/l) / HEPES (H-3784, Sigma-Aldrich, 1.3 mM), insulin (I-1882, Sigma-Aldrich, 22.5 mg/l), Apo transferrin (T-2252, Sigma-Aldrich, 0.09 g/l), progesterone (P-6149, Sigma-Aldrich, 18 µM), putrescine (P-7505, Sigma-Aldrich, 8.7 mg/l), and sodium selenite (S-9133, Sigma-Aldrich, 4.7 µM), and neuronal: 2% B27 MAO. Cultures in hypoxic conditions (4%O2) at 37 °C for 5 (oligodendroglial or astrocytic differentiations) or 7 days (neuronal differentiation).
 
-## Transplants
+### Transplants
 
 Three injections of 1 µl of freshly sorted eGFP+ cells from β−actin:eGFP or DCX-CreERT2:CAG-CAT-eGFP mice were performed in the striatum at proximity of SVZ of wild-type C57Bl6/J recipient mice using the following coordinates: (Obernier and Alvarez-Buylla, 2019) AP, 0.0; L, 1.4; V, –2.1; (Codega et al., 2014) AP, 0.5; L,1.1; V, –2.2; (Tong et al., 2015) AP, 1.0; L, 1.0; V, –2.5 mm relative to bregma, as described before by Codega et al., 2014. For CD1 mouse transplants with freshly sorted eGFP+ cells from DCX-CreERT2:CAG-CAT-eGFP mice the injection coordinates were redefined from the ratio of the distance bregma to lambda for the C57Bl6/J model over the distance bregma to lambda for the CD1 model.
 
 The transplantations were performed using a small animal stereotaxic apparatus (Kopf model 900) with a 2.5 µl Hamilton syringe (Hamilton, Bonaduz, Switzerland). Recipient mice were sacrificed 5 weeks after transplantation.
 
-## Tissue processing, immunolabeling, and microscopy
+### Tissue processing, immunolabeling, and microscopy
 
 Deeply anaesthetized animals received a transcardial perfusion of 4% paraformaldehyde. Brains were post-fixed overnight in 4% PFA and cryoprotected in 30% sucrose/PBS. Serial coronal cryostat sections were made at 14 µm of thickness (Leica CM3050S). For each brain, all the sections from the hippocampus to olfactive bulb were deposited on a set of 14 slides with a 150 µm step. Sections underwent permeabiliszation in phosphate buffered saline (PBS) containing 0.3% Triton X100 and 1% of Bbovine Sserum Aalbumin 1 hr at room temperature. Sections were incubated with primary antibodies PBS containing 0.1% Triton X100 overnight at 4 °C. Secondary antibodies used were Alexa 594, 488, and 647 and were applied at 1:400 (Thermo Fisher Scientific) for 2 hr at room temperature. Each staining was replicated in at least three slides from different mice.
 
@@ -176,11 +982,11 @@ The following antibodies used were: rabbit anti-eGFP (Abcam, ab290, 1:300), goat
 
 Brightfield and fluorescent images were captured through Plan Apo X20 /Numerical Aperture (NA):1.3 oil objective and Plan Apo X40 /NA:0.75 dry objective using hybrid detection technology on a laser scanning confocal (Leica Microsystems SP8), Nikon A1R confocal laser scanning microscope system attached to an inverted ECLIPSE Ti (Nikon Corp., Tokyo, Japan).
 
-## SVZ irradiation
+### SVZ irradiation
 
 Animals were anesthetized with isoflurane (3% induction for 5 min) and 1.5–2% when the mice were placed in Small Animal Radiation Research Platform (SARRP, XSTRAHL, LTD Company). First, a Cone Beam Computer Scanning (CBCT) was performed to target the SVZ and to set up the treatment planning system. Mice were placed on their stomach and two fields (–45° and +45°) were used to be homogeneous on the irradiation target. The size of the irradiation field was adapted with a multivariable collimator 10*6 mm. The SVZ received a 4 Gy dose distributed 50% by each beam and the dose output was around 3.64 Gy/min depending of the size of the field. The X-ray configuration was 220 kV, 13 mA and 0.15 mm of Copper in these conditions.
 
-## Single-cell library preparation for single-cell RNA sequencing
+### Single-cell library preparation for single-cell RNA sequencing
 
 SVZ lateral ventricle walls were dissected from two non-irradiated mice brains (2-month-old) and two 5 days post-irradiation 4Gy-irradiated mice brains (2-month-old).
 
@@ -190,17 +996,17 @@ Blood cells were lysed using the Red blood Cell lysis solution (Milteny Biotec, 
 
 Single-cell suspensions of two replicates of each sample (unirradiated, 4 Gy) were adjusted to 2000 cells/µl and 10,000 non-irradiated cells and 6000 irradiated cells were loaded per channel onto Chromium Next GEM Chip Single Cell kit (ref: 1000127). Library preparation was performed using the Dual Index Kit TT (ref: 1000215) according to manufacturer’s recommendations (10 x Genomics, Pleasanton, CA). Quality and quantification of libraries were done using the High Sensitivity DNA LabChip kit (ref: 5067–4626). Sequencing NGS Standard Illumina was carried out with the NovaSeq6000-S1 flow cell (ICM platform, Paris).
 
-## Whole-genome microarrays
+### Whole-genome microarrays
 
 mRNA were isolated with the RNeasy Micro Kit with DNase treatment (QIAGEN) and sample quality was controlled using the Agilent Bioanalyser. MTA-1.0 arrays (Clariom D Affymetrix technology) were performed according to the manufacturer’s protocol (Thermo Fisher). PCA and pseudotime ordering was performed using TSCAN online user interface (Ji and Ji, 2016). The data were analyszed with the freeware software Transcriptome Analysis Console (TAC) applying the RMA algorithm normalization. Functional profiling were generated using REACTOME and KEGG datasets obtained from the g:Profiler interface (https://biit.cs.ut.ee/gprofiler/gost).
 
 Signatures and unique mRNA splicing isorforms of cell sorted populations were delineated using Venn diagrams comparing the five populations of neural progenitors (s-qNSC, s-aNSC, s-TAP, s-iNB, and s-mNB; https://bioinformatics.psb.ugent.be/cgibin/liste/Venn/calculate_venn.htpl).
 
-## sc-RNAseq and microarray dataset comparisons
+#### sc-RNAseq and microarray dataset comparisons
 
 Published genelists were matched with microarray data raw data using aggregated Z-scores. For each gene in a genelist, gene expression amongst all samples was normalized between 0 and 1, then mean expression among samples was calculated for each population. Plots represent the distribution of mean normalized gene expression for all genes in the genelist.
 
-## Single-cell RNA control quality and analysis
+### Single-cell RNA control quality and analysis
 
 ScRNA-seq data were aligned to the GRCm38 - mm10 reference genome (cellranger-6.1.2). Data were analysed in R (version 4.1.0) using Seurat (v4.1.1). This work benefited from equipment and services from the iGenSeq core facility, at ICM.
 
@@ -208,16 +1014,16 @@ Quality control removed outlier cells with fewer than 1200–1,500 genes per cel
 
 The PrepSCTFindMarkers function was used to normalize gene expression for differential gene expression analysis among clusters, which was performed using FindAllMarkers on the SCT assay, with significance determined using a Wilcoxon rank sum test (p_val_adj <0.05) and log(Fold-Change) threshold of 0.1. A histogram representation of Dcx (ENSMUSG00000031285) expression in the clusters corresponding to astrocytes and neural progenitors allowed us to place a threshold expression at 1. Cells with an expression lower than or equal to 1 correspond to DcxLow cells and cells with an expression strictly higher than 1 to DcxHigh cells. Then, we reapplied PrepSCTFindMarkers and FindAllMarkers to find differentially expressed genes between DcxLow and DcxHigh iNB.
 
-## Gene expression score
+### Gene expression score
 
 We used AddModuleScore_Ucell (Package UCell version 1.3.1) to score cells based on the expression of predefined specific gene lists of sorted s-qNSC, s-aNSC, s-TAP, s-iNB and s-mNB determined by microarrays using the Mann-Whitney U statistic (Andreatta and Carmona, 2021). Each cell was then assigned an identity corresponding to the highest score amongst the signatures tested. Repartition of classes among clusters was visualized using the Circlize package 58(Gu et al., 2014).
 
 For astrocyte and B-cell classification, we used the lists of Astrocyte and B-cell markers provided by Cebrian-Silla et al., 2021 to score cells from the clusters 4 and 13 between 0 (min) and 1 (max). Cells were assigned to the highest score amongst both signatures.
 
-## Gene enrichment analysis
+#### Gene enrichment analysis
 
 Comparisons of the specific gene lists of DcxHigh s-iNB and DcxLow s-iNB were performed with Biological pathways using the g:Profiler interface (https://biit.cs.ut.ee/gprofiler/gost).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Non-parametric Mann-Whitney test was conducted using Prism 8.1.2 (GraphPad Software Inc, La Jolla, CA, RRID:SCR_002798). The statistical significance was set at p<0.05. The data are expressed as the mean ± SEM.

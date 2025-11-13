@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/012zs8222 University at Albany, State University of New York Albany United States
-2. https://ror.org/04a9tmd77 Department of Cell, Developmental, and Regenerative Biology, Black Family Stem Cell Institute, Icahn School of Medicine at Mount Sinai New York United States
+1. University at Albany, State University of New York Albany United States ([ROR:012zs8222](https://ror.org/012zs8222))
+2. Department of Cell, Developmental, and Regenerative Biology, Black Family Stem Cell Institute, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
 
 † Corresponding author
 

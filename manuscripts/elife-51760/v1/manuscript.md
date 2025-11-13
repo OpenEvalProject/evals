@@ -63,7 +63,7 @@ In this study we used whale-borne tags equipped with inertial sensors to quantif
 
 ## Results
 
-## Kinematics of breaching
+### Kinematics of breaching
 
 We recorded a total of 187 breaches (Figure 1, Table 1) from 28 individual humpback whales (n = 152), two minke whales (n = 22), one Bryde’s whale (n = 2), one gray whale (n = 1), three sperm whales (n = 6), and two right whales (n = 4). 125 of the breaches were classified as 'full breaches', where > 40% of the whale emerged from the water (Whitehead, 1985b); 52 of the breaches were classified as 'partial breaches' (<40% emergence); and 10 were undetermined. The majority of breaches in our dataset were recorded from 28 humpback whales (152 breaches), including three juveniles which were the most prolific breaching whales in our study (106 breaches). For one of the juvenile whales, the shortest time between consecutive breaches was 6.5 s. Humpback whale breaches were highly variable (Figure 2, Figure 3), with the start of the upward acceleration ranging in depth from 4 m to 52 m and using a variety of trajectories (Table 2). Humpback whale breaches featured a wide range of exit speeds (1.1–8.9 m/s), exiting pitch angles (14°−82°), exiting roll angles (2°−178° left or right), and emergence percentages (105 full, 39 partial breaches). At the beginning of the ascent, the flippers are extended to an elevated and protracted position for steering and stability (Segre et al., 2019).
 
@@ -75,13 +75,232 @@ We recorded a total of 187 breaches (Figure 1, Table 1) from 28 individual humpb
 
 **Figure 3.:** Four representative trajectories illustrating U, V, I, and J-shaped breaching profiles are highlighted, showing both the beginning of the upwards acceleration (solid line) and the 16 s prior to the breach, provided for context (dotted line).
 
+**Table 1.**
+ Performance and kinematics of breaching whales.Mean ± standard deviation are presented along with maximum and minimum values, shown in parentheses. It was not always possible to measure all of the metrics for each breach. Velocity for the gray whale and Bryde’s whale breaches were measured using the accelerometer vibrations, while all other velocities were measured using the orientation corrected depth rate.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Humpback whale</th>
+      <th>Humpback juvenile</th>
+      <th>Minke whale</th>
+      <th>Bryde’s whale</th>
+      <th>Gray whale</th>
+      <th>Sperm whale</th>
+      <th>Right whale</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td># individuals</td>
+      <td>25</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td># events (full, partial breaches)</td>
+      <td>46 (39, 6)</td>
+      <td>106 (66, 33)</td>
+      <td>22 (11, 10)</td>
+      <td>2 (2, 0)</td>
+      <td>1 (1, 0)</td>
+      <td>6 (5, 0)</td>
+      <td>4 (1, 3)</td>
+    </tr>
+    <tr>
+      <td>depth (m)</td>
+      <td>24 ± 12 (4, 52)</td>
+      <td>9 ± 8 (2, 54)</td>
+      <td>7 ± 5 (2, 21)</td>
+      <td>12 ± 1 (12, 13)</td>
+      <td>5</td>
+      <td>20 ± 6 (12, 29)</td>
+      <td>21 ± 11 (10, 31)</td>
+    </tr>
+    <tr>
+      <td>duration (s)</td>
+      <td>7.9 ± 2.3 (4.4, 13.7)</td>
+      <td>5.2 ± 2.4 (1.9, 17.6)</td>
+      <td>7.5 ± 3.8 (2.9, 18.2)</td>
+      <td>5.3 ± 2.2 (3.8, 6.9)</td>
+      <td>7.9</td>
+      <td>7.3 ± 1.8 (5.0, 10.2)</td>
+      <td>8.8 ± 2.2 (6.9, 11.5)</td>
+    </tr>
+    <tr>
+      <td># strokes</td>
+      <td>4.1 ± 1.5 (1.7, 6.7)</td>
+      <td>2.8 ± 1.6 (1.1, 10.7)</td>
+      <td>3.8 ± 1.8 (1.7, 7.5)</td>
+      <td>-</td>
+      <td>2.8</td>
+      <td>3.8 ± 1.2 (2.1, 5.6)</td>
+      <td>3.6 ± 1.7 (2.0, 5.4)</td>
+    </tr>
+    <tr>
+      <td>stroke frequency (Hz)</td>
+      <td>0.4 ± 0.1 (0.2, 0.7)</td>
+      <td>0.5 ± 0.2 (0.2, 1.1)</td>
+      <td>0.5 ± 0.1 (0.3, 0.7)</td>
+      <td>-</td>
+      <td>0.3</td>
+      <td>0.5 ± 0.1 (0.3, 0.6)</td>
+      <td>0.4 ± 0.1 (0.3, 0.4)</td>
+    </tr>
+    <tr>
+      <td>exit speed (m/s)</td>
+      <td>6.1 ± 1.8 (2.6, 8.9)</td>
+      <td>3.6 ± 1.4 (1.1, 7.6)</td>
+      <td>2.7 ± 0.6 (1.6, 3.4)</td>
+      <td>5.3 ± 0.6 (4.8, 5.7)</td>
+      <td>3.7</td>
+      <td>5.4 ± 1.1 (4.2, 6.5)</td>
+      <td>3.0 ± 0.8 (2.2, 3.8)</td>
+    </tr>
+    <tr>
+      <td>exit pitch (°)</td>
+      <td>56 ± 13 (14, 80)</td>
+      <td>52 ± 13 (19, 82)</td>
+      <td>52 ± 10 (26, 66)</td>
+      <td>42 ± 25 (24, 59)</td>
+      <td>23</td>
+      <td>49 ± 18 (20, 70)</td>
+      <td>49 ± 14 (36, 68)</td>
+    </tr>
+    <tr>
+      <td>exit roll (°)</td>
+      <td>119 ± 57 (4, 178)</td>
+      <td>84 ± 58 (2, 179)</td>
+      <td>132 ± 39 (37, 177)</td>
+      <td>83 ± 116 (1, 165)</td>
+      <td>4</td>
+      <td>88 ± 37 (39, 140)</td>
+      <td>80 ± 67 (2, 163)</td>
+    </tr>
+    <tr>
+      <td>emergence (%)</td>
+      <td>63 ± 19 (26, 100)</td>
+      <td>55 ± 23 (20, 120)</td>
+      <td>39 ± 9 (20, 53)</td>
+      <td>68 ± 24 (51, 85)</td>
+      <td>58</td>
+      <td>65 ± 13 (49, 82)</td>
+      <td>33 ± 9 (24, 46)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Breaching trajectories were broadly categorized based on their shape.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Trajectory</th>
+      <th>Starting location</th>
+      <th>Characteristics</th>
+      <th>Species</th>
+      <th># events</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">U-shape</td>
+      <td rowspan="4">surface</td>
+      <td rowspan="4">horizontal acceleration slightly below the surface; rapid upward pitch change to emerge from water (Whitehead, 1985a)</td>
+      <td>humpback</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>humpback, juv.</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>minke</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>grey</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="6">V-shape</td>
+      <td rowspan="6">surface</td>
+      <td rowspan="6">powered or unpowered descent; abrupt, upward change of direction to start ascent</td>
+      <td>humpback</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>humpback, juv.</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>minke</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Bryde’s</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>sperm</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>right</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td rowspan="3">J-shape</td>
+      <td rowspan="3">depth</td>
+      <td rowspan="3">slow ascent from depth; abrupt rapid acceleration towards surface</td>
+      <td>humpback</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>humpback, juv.</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>sperm</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="4">I-shape</td>
+      <td rowspan="4">depth</td>
+      <td rowspan="4">holding station at depth; abrupt, rapid acceleration towards surface</td>
+      <td>humpback</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>humpback, juv.</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>minke</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>right</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
 Although there is notable flipper movement during the course of the breach it is not clear whether this represents propulsive flapping (Segre et al., 2017) or is a stabilizing reaction to the fluke strokes. Breaches can be further characterized by how the whale exits the water, right-side up or upside-down. The videos show that if the whale emerges from the water right-side up, it may arch its back to attain a more vertical position than the shallow exit angle may imply. The videos further suggest that there are two ways that the whale can emerge from the water in an upside-down orientation: (1) the whale does a ‘backflip’ by increasing its pitch angle past the vertical, or (2) the whale performs a long-axis roll prior to exiting the water. These two maneuvers are not mutually exclusive and can be used together. We did not directly measure rolling velocity, due to the limitations of an accelerometer-based orientation framework. However, the on-board videos suggest that, when employed, rolling can be initiated at different times. With shallow trajectories, the roll is often initiated immediately before the whale breaks the surface of the water: the extended flippers rotate contra-laterally and the whale spins about its long axis. With deeper trajectories, the roll can be initiated much earlier. In both cases, the angular momentum continues the roll after the whale breaks the surface of the water (Fish et al., 2006).
 
 We recorded 22 breaches from two minke whales, all of which had shallow U-shaped and shallow V-shaped trajectories (depth 2–21 m, average 7 m, Table 2). For the majority of the U-shaped breaches the whales moved at high speeds just below the surface with a last minute upward pitching maneuver, followed by a roll, to take them out of the water (Figure 4A shows a deeper version of this maneuver). During these maneuvers, the maximum speed occurs while the whale is moving horizontally and the whale slows once the upward pitching begins. Exit velocities were relatively low (1.6–3.4 m/s) and so emergence percentage was also low (11 full, 10 partial breaches). In 19 of the breaches the whale emerged from the water upside down (roll >90° to either side) and from the videos this seems to come from a combination of backflips (pitching past vertical) and rolls.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/51760/elife-51760-fig4-v1.jpg)
 
-**Figure 4.:** A), a Bryde’s whale (B), a gray whale (C), a sperm whale (D), and a right whale (E).Three metrics of pitch are shown: the pitch changes of the body (red), pitch oscillations due to the fluke stroke (orange), and the sum of the two (blue). Two measurements of speed are shown: speed calculated from orientation corrected depth rate (purple), and speed calculated from the accelerometer vibrations (blue). Depth is also shown (black). The graphs show the 12 s before the whale emerges from the water, with gray shaded areas representing time before the breaching maneuver begins.
+**Figure 4.:** Three metrics of pitch are shown: the pitch changes of the body (red), pitch oscillations due to the fluke stroke (orange), and the sum of the two (blue). Two measurements of speed are shown: speed calculated from orientation corrected depth rate (purple), and speed calculated from the accelerometer vibrations (blue). Depth is also shown (black). The graphs show the 12 s before the whale emerges from the water, with gray shaded areas representing time before the breaching maneuver begins.
 
 The two recorded breaches from Bryde’s whales came from a single individual. Both breaches featured high emergence levels and distinctive V-shaped trajectories with the whale starting at the surface and quickly diving to 12 m before pitching upwards and initiating the ascent (Figure 4B). The high velocities (4.8 m/s and 5.7 m/s) started before the previous surfacing and were maintained throughout the descent and ascent. One breach had a very low exit angle (24°), while the other had a relatively high exit angle (59°), a steeper ascent rate, and the whale emerged upside-down (177° roll), probably having done an underwater backflip during the ascent. These breaches occurred at dusk and were not captured using the on-board cameras so we do not know if the whale rolled while exiting the water.
 
@@ -95,9 +314,7 @@ Across all breaches there was a strong positive correlation between exit speed a
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/51760/elife-51760-fig5-v1.jpg)
 
-**Figure 5.:** A) and average stroke frequency (B), but not with breaching pitch (C), or breaching roll angle (D).Figure 5—source data 1.
-
-## Energetics of breaching
+### Energetics of breaching
 
 The energetic costs of breaching were calculated for five humpback whales with known body dimensions and high-emergence breaches. Both the total energy expended and maximum mechanical power required to breach increased with body mass (Equations 25-27; Table 3). The mass-specific energetic cost of breaching also increased with body mass (range: 7000 kg, 130 kJ/kg to 46000 kg, 220 kJ/kg; Table 3; Figure 6A). This increase in energetic expenditure was driven by the increase in breaching speed with mass (range: 6.2 m/s to 8.2 m/s; Table 3; Figure 6B), and the mass-specific power output required to attain these higher speeds also increased with body mass (range: 7 W/kg to 11 W/kg; Figure 6C). Rorqual whales feed by rapidly accelerating, opening their mouths, and engulfing large volumes of prey-laden water. Although the trajectories used for feeding lunges are highly variable (Cade et al., 2016; Simon et al., 2012), lunges are common behaviors that require a rapid acceleration similar to that used for breaching. For each of the five humpback whales, the cost of breaching was higher than the cost of accelerating to perform their highest-speed lunge.
 
@@ -105,21 +322,132 @@ The energetic costs of breaching were calculated for five humpback whales with k
 
 **Figure 6.:** (A) The mass-specific energy expenditure required to perform high-emergence breaches (blue) and high-performance lunges (red) is shown for five humpback whales of different sizes. Because the whales breached with different percentages of their bodies emerging from the water (dark blue numbers), the expected relationship between mass and the energetic cost of breaching with 80% body emergence, is shown for comparison (light blue line). The modeled breaches were calculated using average parameters from the trajectories of the five individuals shown (65° pitch; body width = 18% of length; 1.75 m/s starting velocity; 0.65 m/s2 acceleration; no plateau phase). Both the model and the data show that the mass-specific cost of breaching increases with body size. (B) This pattern is largely driven by the higher speeds that larger whales need to emerge from the water. (C) To attain the higher speeds required to emerge from the water, larger whales need to generate higher mass-specific mechanical power outputs or extend the duration of their trajectories (green numbers).
 
+**Table 3.**
+ Kinematic and energetic parameters for five breaches and five high performance lunges performed by five humpback whales spanning a range of sizes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Length (m)</th>
+      <th>Mass (kg)</th>
+      <th>Emergence (%)</th>
+      <th colspan="2">Duration (secs)</th>
+      <th colspan="2">Final velocity (m/s)</th>
+      <th colspan="2">Stroke freq (Hz)</th>
+      <th colspan="2">Energy (MJ)</th>
+      <th colspan="2">Max power (kW)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Breach</th>
+      <th>Breach</th>
+      <th>Lunge</th>
+      <th>Breach</th>
+      <th>Lunge</th>
+      <th>Breach</th>
+      <th>Lunge</th>
+      <th>Breach</th>
+      <th>Lunge</th>
+      <th>Breach</th>
+      <th>Lunge</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>7.8</td>
+      <td>7000</td>
+      <td>86</td>
+      <td>8.0</td>
+      <td>6.8</td>
+      <td>6.2</td>
+      <td>5.3</td>
+      <td>0.7</td>
+      <td>0.5</td>
+      <td>0.9</td>
+      <td>0.7</td>
+      <td>5</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>10.5</td>
+      <td>17000</td>
+      <td>79</td>
+      <td>8.1</td>
+      <td>4.7</td>
+      <td>7.1</td>
+      <td>5.0</td>
+      <td>0.6</td>
+      <td>0.4</td>
+      <td>2.8</td>
+      <td>1.2</td>
+      <td>15</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>12.7</td>
+      <td>30000</td>
+      <td>61</td>
+      <td>9.1</td>
+      <td>2.9</td>
+      <td>6.0</td>
+      <td>5.0</td>
+      <td>0.4</td>
+      <td>0.3</td>
+      <td>3.7</td>
+      <td>1.6</td>
+      <td>23</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>14.7</td>
+      <td>46000</td>
+      <td>84</td>
+      <td>8.5</td>
+      <td>3.3</td>
+      <td>8.2</td>
+      <td>4.8</td>
+      <td>0.5</td>
+      <td>0.3</td>
+      <td>9.8</td>
+      <td>2.6</td>
+      <td>50</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>14.8</td>
+      <td>46000</td>
+      <td>82</td>
+      <td>12.7</td>
+      <td>6.1</td>
+      <td>8.1</td>
+      <td>5.4</td>
+      <td>0.5</td>
+      <td>0.2</td>
+      <td>10.3</td>
+      <td>3.6</td>
+      <td>38</td>
+      <td>23</td>
+    </tr>
+  </tbody>
+</table>
+
 Relative to daily Field Metabolic Rate (FMRdaily), the cost of breaching increased with increasing mass and was always higher than the cost of accelerating for a high-speed feeding lunge (Supplementary file 1A). This pattern held regardless of which equation was used for predicting FMRdaily of large whales. However, the Williams and Maresh (2015) equation for scaling of FMRdaily resulted in a higher cost of breaching (Equation 28; range: 0.5% to 2.3% of FMRdaily) than the modified Nagy (2005) equation (Equation 29; 0.08% to 0.20% of FMRdaily).
 
 ## Discussion
 
 The considerable power needed for large whales to leap out of the water may represent the single most expensive burst maneuver found in nature. However, the mechanics and energetic costs associated with the breaching behaviors of large whales remain poorly understood. In this study we first examined the underwater trajectories that large cetaceans use for breaching to determine if historical hypotheses about underwater movement were correct. Next, we used a hydrodynamic model to estimate the energetic costs of breaching and how it scales with body size. It has been hypothesized that extended breaching sequences can serve as an honest signal of fitness (Whitehead, 1985b); however, this depends on whether breaching is an energetically expensive behavior. Finally, we test the hypothesis that energetic or physical constraints impose fundamental limits on the breaching behaviors of the largest whales. It is possible that for large whales the energetic cost of breaching is prohibitively high. Alternatively, it may be hypothesized that physical limitations of muscle contractile properties and hydrodynamics constrain the effectiveness of breaching in the largest of animals.
 
-## How do large whales breach?
+### How do large whales breach?
 
 The underwater trajectories that allow whales to leap out of the water have been the subject of much speculation, largely because the bio-logging equipment that makes the quantitative study of underwater locomotor performance possible has only recently been developed and widely adopted (Goldbogen et al., 2017; Johnson and Tyack, 2003). Our data show that the underwater breaching trajectories are variable, even within species. Whitehead (Whitehead, 1985b) described humpback whale breaching trajectories as having a shallow horizontal approach before pitching-up and leaving the water, and Payne described similar trajectories for right whales (see Waters and Whitehead, 1990). We did find many examples of this trajectory in humpback and right whales, and we also found this trajectory used by minke and gray whales. In addition, it has been suggested that sperm whales require long ascents to breach (70–110 m; Whitehead, 2003 p. 176), but we demonstrate that they can breach even from relatively shallow depths (12–29 m) using only a few fluke strokes (2–6 strokes). We also found that humpbacks, minkes, sperm, and right whales used other types of trajectories while breaching: starting at the surface and diving, holding station, and ascending to the starting depth before beginning the breaching ascent. We had too few breaches from Bryde’s whales and gray whales to uncover any diversity in the trajectories. We did find support for Whitehead’s observations that adult humpback whales generally emerge right-side up or upside-down (Figure 5D), although we found some adults that emerged on their sides. Our video data suggest a mechanism for this pattern: adult humpback whales appear to incorporate less long-axis angular velocity into their breaching trajectories. Instead, they often emerge right-side up or pitch upwards, past vertical and emerge upside-down. In contrast, juvenile humpback whales often leave the water with a distinct rolling velocity, which results in a more unpredictable roll angle as they emerge (Figure 5D). Since both adults and juveniles often rotate their flippers contra-laterally before emerging, it is not clear whether the difference is behavioral or the result of the larger adults having to overcome their higher rotational inertia.
 
-## Maximal swimming performance during breaching events
+### Maximal swimming performance during breaching events
 
 Breaching events can uniquely shed light on maximal locomotor performance of large animals, at the extremes of body size, which is a topic that has remained elusive (Gough et al., 2019). For most of the species examined in this study, our ability to discuss maximal performance is influenced by low sample sizes. However, for humpback whales we measured large numbers of breaches (152) from many individuals (28), and data from our fastest breaches match well with previous observations and theoretical predictions. Most data on the maximal swimming speeds of rorquals have been anecdotal (Hirt et al., 2017), relying on observations of whales as they swam away from moving boats. Lockyer (1981) reported that humpback whales could swim up to 7.5 m/s when alarmed. Using speeds calculated from photographs of humpback whales breaching, Whitehead (1985a) reported a top speed of 8.2 m/s, although he suggested that this may have been an overestimate. Both of these estimates were very close to our results: we measured seven breaches from seven individual adult humpback whales which achieved top breaching exit speeds of over 8 m/s, with a maximum of 8.9 m/s. Our examination of humpback whales with known body lengths (and calculated body masses) registered accelerations ranging from 0.5 to 0.75 m/s2, and suggests that top swimming speed increases (Table 3; Figure 6B) and stroke frequency decreases (Table 3) with body size.
 
-## Is breaching energetically expensive?
+### Is breaching energetically expensive?
 
 In absolute terms, the amount of energy required for a large whale to leap out of the water is extraordinary. For a 7.8 m humpback whale, the cost of performing a single full breach is 0.9 MJ but for a 14.8 m whale the cost increases to 10.3 MJ (Table 3), which is equivalent to the energy required for a 60 kg runner to complete a marathon (Margaria et al., 1963). Furthermore, because breaches happen so quickly, the mechanical power required to breach is also extremely high. The second largest humpback whale in this study (14.7 m, 46,000 kg) produced an average mechanical power output of 300 kW over the course of its 8.5 s breach, or approximately the maximum pulling power of 25 draft horses (Collins and Caine, 1926). The energetic expenditure of this breach was also roughly equivalent to the energetic cost of the largest blue whale in our database performing its fastest lunge (25.2 m, 5.7 m/s, 9.5 MJ, unpublished data) in spite of the humpback whale having half the mass of the blue whale. Thus a breach is much more energetically expensive than a high-speed predatory lunge.
 
@@ -127,7 +455,7 @@ In relative terms, the cost of breaching is less clear. If the relationship betw
 
 Many of the individual whales we tracked performed multiple, sequential breaches. One juvenile humpback performed at least 69 breaches and a series of other aerial behaviors over the course of two days (17 during a 6.75 hr deployment on the first day; 52 during a 4.5 hr deployment on the second day). In many animals, the energetic cost of performing even trivial, but frequently repeated behaviors can be substantial (Dudley and Milton, 1990). Regardless of which scaling regime is used to calculate metabolic rates, the cost of repeated breaching represents a significant energetic expenditure for whales. While at their calving grounds, capital breeding females in a fasting state maintain low metabolic rates in order to devote most of their energy to nursing their calves (Bejder et al., 2019). In spite of this, repeated breaching is commonly observed, often with the mothers and calves breaching side-by-side. Thus, the energy expended breaching cannot be put towards lactation (for mothers) or storing blubber (for the calves). Unlike feeding lunges, which are relatively less expensive but are also used to acquire energy, the cost of breaching on the breeding grounds will not be recouped until the whales return to their feeding grounds, several months later (Christiansen et al., 2016). This suggests that repeated breaching has a social purpose important enough to warrant the high energetic expense, perhaps serving a developmental function for juveniles or an honest signal of fitness for adults.
 
-## Does body size limit breaching performance?
+### Does body size limit breaching performance?
 
 On a mass-specific basis, the cost of breaching also increases with body size (Figure 6A) and this increase is largely driven by the higher speeds required to emerge from the water (Figure 6B). In turn, the locomotor muscles must generate higher power outputs to accelerate to these higher speeds (Figure 6C), even though maximum mass-specific force production decreases with body size (Arthur et al., 2015). This suggests that there may be an upper size limit to breaching ability based on the limitations of muscle power-generating capabilities. The mass-specific power outputs that we measured during the last second of each breaching acceleration are all slightly lower than previously reported values for smaller cetaceans swimming at high speeds (22 W/kg - 31 W/kg, Fish, 1998). Additionally, the second largest humpback whale of our study generated approximately 85 W/kg of locomotor muscle mass (~13.2% of body mass, Arthur et al., 2015) during the last second of its acceleration. Although little is known about power-generating capabilities of cetacean muscles, this value is near the limits muscle performance in other vertebrate taxa (Jackson and Dial, 2011; Marden, 1994). Since power is time dependent, a large whale could decrease its power requirements by extending the length of its breaching trajectory, which explains some of the variation in Figure 6C. The largest whale in this analysis took a long time (12.7 secs vs 8.5 secs for the second largest whale) to accelerate slowly (Table S1B) to its exit speed, expending more energy but decreasing its maximum power output (Table 3). However, this strategy likely has its limits, since the duration of a trajectory may be constrained by the onset of muscle fatigue. Our model (blue line, Figure 6A–C) suggests that the largest of whales would require even higher speeds to emerge from the water, but that their muscles may not be able to generate enough power or sustain a swimming trajectory long enough to attain these speeds.
 
@@ -141,9 +469,13 @@ In conclusion, our results suggest an underlying biomechanical explanation for t
 
 Between 2009 and 2018 we deployed suction-cup attached bio-loggers on humpback (Megaptera novaeangliae; several locations worldwide), minke (Balaenoptera bonaerensis; Antarctica), inshore Bryde’s (Balaenoptera edeni; Plettenberg Bay, South Africa), gray (Eschrichtius robustus; Puget Sound, WA), sperm (Physeter macrocephalus; Azores), and right whales (Eubalaena glacialis; Cape Cod Bay, MA). We used two types of bio-logging tags (DTAG2: Johnson and Tyack, 2003; CATS: [Cade et al., 2016; Goldbogen et al., 2017]) that differed in specifications, but were equipped with depth and temperature sensors (DTAGS: 50 Hz; CATS: 10 Hz), three-axis accelerometers (DTAG: 50 Hz; CATS: 400 Hz), and three-axis magnetometers (DTAG: 50 Hz; CATS: 50 Hz), all 16 bit. The DTAGs were deployed on sperm, right, and humpback whales. The CATS bio-loggers were also equipped with cameras and were deployed on humpback, minke, Bryde’s, and gray whales. Bio-loggers were also deployed on three juvenile humpback whales: CATS tags were deployed on two smaller animals in their feeding grounds, and a DTAG was deployed using a special protocol designed to minimize disturbance, on a calf in the breeding grounds (Stimpert et al., 2012). We identified breaches (Figure 1) by watching the onboard videos (CATS tags, Figure 2, Video 1), using surface observation data, or manually examining the data for rapid ascents that were followed by sections where the depth sensors abruptly emerged from the water (0 m depth; Figure 2). We only included breaches where the suction-cups did not slip throughout the ascent, and where we could confidently estimate the orientation of the tag on the whale (Johnson and Tyack, 2003). Deployments that contained breaches represented a small subset of larger datasets collected for different projects.
 
+![Video 1.](https://cdn.elifesciences.org/articles/51760/elife-51760-video1.mp4.jpg)
+
+**Video 1.:** The trajectory of this breach is shown in Figure 2.
+
 Once we identified breaching events, the raw data were downsampled to 5, 10, or 25 Hz depending on the original dataset. We applied a zero-lag Butterworth filter designed to remove sampling error from the accelerometer and magnetometer data (low pass, cutoff frequency: 1 Hz) and calculated the orientation of the whale using the standard pitch, roll, and heading framework (Johnson and Tyack, 2003). We then applied another series of zero-lag Butterworth filters to the pitch signal to separate the contribution of the body orientation (low pass, cutoff frequency: 0.2 Hz) from the contribution of the fluke strokes (high pass, cutoff frequency: 0.2 Hz) to the overall pitch (Martín López et al., 2015). For each breach we identified the start of the maneuver as the time when the body pitched upwards past horizontal and began the ascent towards the surface. In some cases, when the whale was already ascending from a dive, we defined the start of the breaching ascent by manually finding the time when the fluke strokes began or intensified. The depth sensors clearly showed when the tag exited the water, but often the tag placement was distal enough that by the time the tag broke the surface, the whale was already falling out of the air. Therefore, to accurately measure the underwater trajectories associated with breaching, we estimated the time when whale broke the surface, using the depth sensor and the pitch angle as a guide to ensure the whale had not already started its abrupt downward, aerial trajectory. We estimated speed using two methods. (1) At high pitch angles (>30°) we used the orientation-corrected depth rate (Miller et al., 2004). This method is only valid at high pitch angles, and was used to calculate most of the exit velocities reported in Table 1. (2) For the CATS tag deployments we calibrated the measurements of the background, high frequency accelerometer vibrations (sampled from the 400 Hz data) with the orientation-corrected depth rate (Cade et al., 2018). At high speeds this method may underestimate velocity due to clipping of the accelerometer signal, and therefore we only used it to calculate exit speeds of the gray whale and the Bryde’s whale breaches, where exiting pitch angles were low. We used a combination of both methods to calculate the velocity profiles of the humpback breaches and lunges used for the energetic analysis.
 
-## Kinematic analysis
+### Kinematic analysis
 
 The breaching trajectories were broadly classified by shape (Table 2). From the breaching data we calculated a series of performance metrics including the depth at the start of the breach, the duration of the breach, the pitch when the whale exited the water, and the roll when the whale exited the water (if the pitch was <80°, to avoid gimbal lock). The sinusoidal fluke strokes were not always visible in the data, particularly when the tag was placed anteriorly. When possible (167 breaches), we counted the number of fluke strokes (upstroke to upstroke or downstroke to downstroke) per breach, by using the zero-crossings of the high-pass filtered pitch signal. We did not include the last half-stroke as the whale emerged, but we did include the part of the first stroke that occurred as the breach began - expressed as a fraction. We calculated the average stroke frequency over the course of the breach.
 
@@ -151,63 +483,203 @@ We also calculated a rough estimate of the percentage of the whale that emerged 
 
 To examine the relationships between kinematic variables associated with breaching we used a linear mixed effects model with nested random effects (individuals nested within species). We calculated a pseudo-R2 designed for use with Bayesian regression models: the variance of the predicted values divided by the variance of predicted values plus the variance of the errors (Gelman et al., 2019). Statistics were performed using the Statsmodels package in Python.
 
-## Energetic analysis
+### Energetic analysis
 
 We estimated the energetic cost of breaching using breaches from five individual humpback whales of different sizes (7.8 m to 14.8 m, as measured by unmanned aerial photogrammetry; Table 3; Durban et al., 2016; Johnston, 2019). For each individual we selected a high-performance breach (60–90% emergence) with a stereotypical acceleration profile (starting at a low speed and rapidly accelerating to the surface). As a comparison, for each individual we also selected the fastest lunge (individuals had between 12 to 342 lunges) with a stereotypical acceleration profile (also starting at low speed and rapidly accelerating; Figure 3). We measured the speed at the start of the maneuver using the accelerometer vibration method, because the pitch was often below the 30° threshold required for calculating orientation-corrected depth rate. We measured the velocity at the end of the maneuver using orientation-corrected depth rate to avoid any accelerometer clipping that may occur during the highest accelerations.
 
 The energetics of breaching and lunging were estimated using a two-step process. First, the mechanical work of the system was calculated by adding the work done against drag to the change in kinetic energy. Second, the metabolic energy spent by the muscles to perform the work was estimated using metabolic efficiency coefficients (Blake, 1983; Fish, 1993; Fish, 1998; Webb, 1971; Webb, 1975). These calculations represent the cost of accelerating and do not include estimates of basal metabolic rate.
 
-## Parameters from bio-loggers and aerial photography
+#### Parameters from bio-loggers and aerial photography
 
 Using data from the bio-loggers, each breach and lunge was split into two phases: an acceleration phase where the velocity increased from the initial velocity (Ui) to the final velocity (Uf) over the duration of Tacc seconds, and a plateau phase where the velocity stayed constant at Uf for the duration of Tplat seconds (Supplementary file 1 - Table S1B). When there was no plateau phase, Tplat was set to zero. We did not include costs incurred after breaking the water (for breaching) or after opening the mouth (for lunge feeding), and so this analysis functionally compares the approach phase of a breach to the approach phase of a high-performance lunge. For simplicity we assumed a neutral buoyancy given that the forces involved differ with species, body condition, and air stored in the lungs (Miller et al., 2004; Nowacek et al., 2001), and remain poorly understood. Body length (Lbody) and maximum body width (wmax) were estimated from aerial photographs (Johnston, 2019). Body mass (Mbody) was estimated from body length using the equations from Lockyer (1976).
 
-## Mechanical energy required for swimming
+#### Mechanical energy required for swimming
 
-A moving whale producing thrust by fluking must perform enough mechanical work to overcome drag. The relationship between work performed by fluking (WThrust), the work that is required to overcome drag (WDrag), and the change in kinetic energy of the whale is given by the work-energy theorem:(1)12MbodyUf2-Ui2 = Wthrust-Wdrag
+A moving whale producing thrust by fluking must perform enough mechanical work to overcome drag. The relationship between work performed by fluking (WThrust), the work that is required to overcome drag (WDrag), and the change in kinetic energy of the whale is given by the work-energy theorem:
 
-Rearranged this becomes:(2)Wthrust = 12MbodyUf2-Ui2 + Wdrag
+$$
+\frac{1}{2}M_{body}U_{f}^{2}-U_{i}^{2}=W_{thrust}-W_{drag}
+$$
 
-This equation can be used to calculate the mechanical work produced during either the acceleration phase or the plateau phase. To calculated the total work produced the two are added together. During the plateau phase velocity is constant (ΔU = 0) and so the kinetic energy is zero, leaving:(3)Wthrust,total=12Mbody(Uf2−Ui2)+Wdrag,acc+Wdrag,plat
+Rearranged this becomes:
 
-The work required to overcome drag is calculated from the time integral:(4)Wdrag,accorplat=∫xinitialxfinalFdrag(t)dx=∫tinitialtfinalFdrag(t)U(t)dtwhere the differential of distance is substituted with the differential of time through the relationship U(t)=dx/dt.
+$$
+W_{thrust}=\frac{1}{2}M_{body}U_{f}^{2}-U_{i}^{2}+W_{drag}
+$$
 
-## Drag incurred at constant speed
+This equation can be used to calculate the mechanical work produced during either the acceleration phase or the plateau phase. To calculated the total work produced the two are added together. During the plateau phase velocity is constant (ΔU = 0) and so the kinetic energy is zero, leaving:
 
-During the plateau phase, velocity is constant (U(t)=Uf). The drag force also remains constant over time, since it depends on velocity (as will be shown below), and therefore Equation 4 becomes:(5)Wdrag,plat=∫tinitialtfinalFdrag(t)U(t)dt=FdragUfTplat
+$$
+W_{thrust,total}=\frac{1}{2}M_{body}(U_{f}^{2}−U_{i}^{2})+W_{drag,acc}+W_{drag,plat}
+$$
 
-The drag force is calculated as:(6)Fdrag = 12ρwSwetCDUt2 = 12ρwSwetCDUf2where ρ is the density of seawater (ρ = 1027 kg/m3); Swet is the surface area of the body that is in contact with the water (Fish, 1993; Fish, 1998; Woodward et al., 2006) calculated as:(7)Swet = 0.08Mbody0.65
+The work required to overcome drag is calculated from the time integral:
 
-The coefficient of drag (CD) is estimated using an expression inspired by empirical testing of airship aerodynamics (Blevins, 1984 p. 353; Fish and Rohr, 1999; Gleiss et al., 2015; Gleiss et al., 2017; Hoerner, 1965 p. 6–17; Kooyman, 2012 p. 131):(8)CD=F~[0.072(Re)0.2]⏟viscous friction[1+1.5[wmaxLbody]1.5+7.0[wmaxLbody]3]⏟pressure gradientwhich is dependent on velocity (U) and accounts for the friction between the body and its boundary layer, and the pressure gradient caused by the near-wake turbulence (Goldbogen et al., 2015). The friction adjustment assumes that the whale is moving in a high Reynolds number flow regime (Re > 106), and it depends on the Reynolds number:(9)Re = LbodyUtν = LbodyUfνwhere ν is the kinematic viscosity of the water. The pressure gradient adjustment depends on the body length and width. Finally, F̃ is an amplification factor used to correct for the extra drag created by the heaving tail and body. Studies of thrust production in dolphins (Fish, 1993; Fish, 1998) suggest that at Re ~ 107, F̃ is between 1 and 3 and therefore we use F̃=2. When swimming horizontally near the surface, CD includes another amplification factor (γ) to account for wave drag created by the body. However, during most breaching accelerations the body is pitched steeply upwards as the whale swims upwards and therefore no wave drag is created at the surface and γ is not included in the equation.
+$$
+W_{drag,accorplat}=\int_{x_{initial}}^{x_{final}}F_{drag}(t)dx=\int_{t_{initial}}^{t_{final}}F_{drag}(t)U(t)dt
+$$
 
-Finally, combining Equations 5-9 results in the equation for the mechanical work required to overcome drag, when velocity is constant (Wdrag, plat):(10)Wdrag,plat=F∼12ρSwet[0.072(ReatUf)0.2][1+1.5[wmaxLbody]1.5+7.0[wmaxLbody]3]Uf3Tplat
+where the differential of distance is substituted with the differential of time through the relationship U(t)=dx/dt.
 
-## Drag incurred at constant acceleration
+#### Drag incurred at constant speed
 
-During the acceleration phase, velocity increases with time (U(t), from Ui to Uf). The drag force depends on velocity and Equation 4 cannot be simplified:(11)Wdrag, acc = ∫tinitialtfinalFdragtUtdt
+During the plateau phase, velocity is constant (U(t)=Uf). The drag force also remains constant over time, since it depends on velocity (as will be shown below), and therefore Equation 4 becomes:
 
-The drag force is calculated as:(12)Fdrag = 12ρwSwetCDUt2 + MaddeddUdtwhere the first term is similar to Equation 6. The second term is the acceleration reaction force (Denny, 1993 p. 43), which accounts for entrained water that must be accelerated with the body. Madded is the mass of the entrained water approximated with the following equation:(13)Madded = kMbody = 0.045Mbody
+$$
+W_{drag,plat}=\int_{t_{initial}}^{t_{final}}F_{drag}(t)U(t)dt=F_{drag}U_{f}T_{plat}
+$$
 
-Where k is the added mass coefficient calculated from inviscid hydrodynamic theory and is approximated as 0.045 for a whale-shaped object (Gleiss et al., 2017; Lamb, 1932 p. 154–155). Combining Equation 11 with Equation 12 gives:(14)Wdrag,acc=∫tinitialtfinal12ρwSwetCDU(t)2U(t)dt\ +∫tinitialtfinalMaddeddUdtU(t)dtintegrating the second term results in:(15)12MaddedUf2-Ui2
+The drag force is calculated as:
 
-Assuming that the whale stays in a high Reynolds number flow regime (Re > 106) for the entire acceleration, the first term combined with Equations 8 and 9 becomes:(16) ∫tinitialtfinal12ρwSwetCDU(t)2U(t)dt=∫tinitialtfinalF∼12ρSwet[0.072[νLbodyU(t)]0.2][1+1.5[wmaxLbody]1.5+7.0[wmaxLbody]3]U(t)3dtrearranged this is:(17)F~12ρSwet0.072νLbody0.21+1.5wmaxLbody1.5+7.0wmaxLbody3 ∫tinitialtfinalUt2.8dt
+$$
+F_{drag}=\frac{1}{2}ρ_{w}S_{wet}C_{D}Ut^{2}=\frac{1}{2}ρ_{w}S_{wet}C_{D}U_{f}^{2}
+$$
 
-The velocity (U(t)) is calculated using the average acceleration (aavg):(18)Ut = Ui+aavgt = Ui+Uf-UiTacct
+where ρ is the density of seawater (ρ = 1027 kg/m3); Swet is the surface area of the body that is in contact with the water (Fish, 1993; Fish, 1998; Woodward et al., 2006) calculated as:
 
-The derivative of velocity with respect to time is:(19)dUdt = Uf-UiTaccrearranged:(20)dt = dUTaccUf-Uiwhich can be substituted into Equation 18 in order to obtain the integral with respect to velocity:(21)F~12ρSwet0.072νLbody0.21+1.5wmaxLbody1.5+7.0wmaxLbody3 ∫UinitialUfinalUt2.8TaccUf-UidUevaluating the integral:(22)F∼12ρSwet[0.072[νLbody]0.2][1+1.5[wmaxLbody]1.5+7.0[wmaxLbody]3]13.8U(t)3.8|UiUfTacc(Uf−Ui)or:(23)F~12ρSwet0.072νLbody0.21+1.5wmaxLbody1.5+7.0wmaxLbody3Uf3.8-Ui3.83.8Uf-UiTaccto reintroduce the Reynolds number, multiply by Uf0.2/Uf0.2:(24)F~12ρSwet0.072νLbodyUf0.21+1.5wmaxLbody1.5+7.0wmaxLbody3Uf3.8-Ui3.83.8Uf-UiUf0.2Tacc
+$$
+S_{wet}=0.08M_{body}^{0.65}
+$$
 
-The equation for the work done against drag during the acceleration phase (Equation 14) becomes:(25)Wdrag,acc=F∼12ρSwet[0.072(Re at Uf)0.2][1+1.5[wmaxLbody]1.5+7.0[wmaxLbody]3][(Uf3.8−Ui3.8)3.8(Uf−Ui)Uf0.2Tacc]+12Madded(Uf2−Ui2)
+The coefficient of drag (CD) is estimated using an expression inspired by empirical testing of airship aerodynamics (Blevins, 1984 p. 353; Fish and Rohr, 1999; Gleiss et al., 2015; Gleiss et al., 2017; Hoerner, 1965 p. 6–17; Kooyman, 2012 p. 131):
 
-## Metabolic expenditure
+$$
+C_{D}=F~[\frac{0.072}{(R_{e})^{0.2}}]⏟viscous friction[1+1.5[\frac{w_{max}}{L_{body}}]^{1.5}+7.0[\frac{w_{max}}{L_{body}}]^{3}]⏟pressure gradient
+$$
 
-To convert from mechanical energy expenditure to metabolic energy expenditure, the mechanical work done by fluking is multiplied by coefficients to account for energy lost due to metabolic (ηmetab = 0.25) and propulsive (ηprop = 0.75) efficiency. Equation 3 becomes:(26)Wmetab,total=1ηmetabηprop[12Mbody(Uf2−Ui2)+Wdrag,acc+Wdrag,plat]
+which is dependent on velocity (U) and accounts for the friction between the body and its boundary layer, and the pressure gradient caused by the near-wake turbulence (Goldbogen et al., 2015). The friction adjustment assumes that the whale is moving in a high Reynolds number flow regime (Re > 106), and it depends on the Reynolds number:
 
-Combining Equation 26 with Equations 10 and 25 yields the final equation for calculating the metabolic work needed for a whale to accelerate from Ui to Uf in time Tacc, and maintain the final velocity for Tplat:(27)Wmetab,total=1ηmetabηprop12Mbody(Uf2−Ui2)+1ηmetabηpropF∼12ρSwet[0.072(Re \ at \ Uf)0.2][1+1.5[wmaxLbody]1.5+7.0[wmaxLbody]3][(Uf3.8−Ui3.8)3.8(Uf−Ui)Uf0.2Tacc]+1ηmetabηprop12Madded(Uf2−Ui2)\ +1ηmetabηpropF∼12ρSwet[0.072(ReatUf)0.2][1+1.5[wmaxLbody]1.5+7.0[wmaxLbody]3]Uf3Tplat
+$$
+R_{e}=\frac{L_{body}Ut}{ν}=\frac{L_{body}U_{f}}{ν}
+$$
 
-## The relative costs of breaching and lunging
+where ν is the kinematic viscosity of the water. The pressure gradient adjustment depends on the body length and width. Finally, F̃ is an amplification factor used to correct for the extra drag created by the heaving tail and body. Studies of thrust production in dolphins (Fish, 1993; Fish, 1998) suggest that at Re ~ 107, F̃ is between 1 and 3 and therefore we use F̃=2. When swimming horizontally near the surface, CD includes another amplification factor (γ) to account for wave drag created by the body. However, during most breaching accelerations the body is pitched steeply upwards as the whale swims upwards and therefore no wave drag is created at the surface and γ is not included in the equation.
 
-The costs of breaching and lunging were compared with estimates of daily field metabolic rate (FMRdaily) of humpback whales. The metabolic rates of large whales are poorly understood and therefore we used two separate estimates of FMRdaily that represent possible lower and upper bounds of daily energy usage. The lower bound was calculated using the scaling relationship put forth by Williams and Maresh (2015):(28)FMRWM=3511×m0.45
+Finally, combining Equations 5-9 results in the equation for the mechanical work required to overcome drag, when velocity is constant (Wdrag, plat):
 
-Where FMRdaily is kJ/day and m is mass in kilograms. The upper bound was calculated using the scaling relationship provided by Nagy (2005) for terrestrial mammals, multiplied by 1.5 to account for the purported elevated metabolic rate of marine mammals.(29)FMRWM=1.5×2.25×1000×m0.808
+$$
+W_{drag,plat}=F∼\frac{1}{2}ρS_{wet}[\frac{0.072}{(R_{eatUf})^{0.2}}][1+1.5[\frac{w_{max}}{L_{body}}]^{1.5}+7.0[\frac{w_{max}}{L_{body}}]^{3}]U_{f}^{3}T_{plat}
+$$
+
+#### Drag incurred at constant acceleration
+
+During the acceleration phase, velocity increases with time (U(t), from Ui to Uf). The drag force depends on velocity and Equation 4 cannot be simplified:
+
+$$
+W_{drag, acc}=\int_{t_{initial}}^{t_{final}}F_{drag}tUtdt
+$$
+
+The drag force is calculated as:
+
+$$
+F_{drag}=\frac{1}{2}ρ_{w}S_{wet}C_{D}Ut^{2}+M_{added}\frac{dU}{dt}
+$$
+
+where the first term is similar to Equation 6. The second term is the acceleration reaction force (Denny, 1993 p. 43), which accounts for entrained water that must be accelerated with the body. Madded is the mass of the entrained water approximated with the following equation:
+
+$$
+M_{added}=kM_{body}=0.045M_{body}
+$$
+
+Where k is the added mass coefficient calculated from inviscid hydrodynamic theory and is approximated as 0.045 for a whale-shaped object (Gleiss et al., 2017; Lamb, 1932 p. 154–155). Combining Equation 11 with Equation 12 gives:
+
+$$
+W_{drag,acc}=\int_{t_{initial}}^{t_{final}}\frac{1}{2}ρ_{w}S_{wet}C_{D}U(t)^{2}U(t)dt\ +\int_{t_{initial}}^{t_{final}}M_{added}\frac{dU}{dt}U(t)dt
+$$
+
+integrating the second term results in:
+
+$$
+\frac{1}{2}M_{added}U_{f}^{2}-U_{i}^{2}
+$$
+
+Assuming that the whale stays in a high Reynolds number flow regime (Re > 106) for the entire acceleration, the first term combined with Equations 8 and 9 becomes:
+
+$$
+ \int_{t_{initial}}^{t_{final}}\frac{1}{2}ρ_{w}S_{wet}C_{D}U(t)^{2}U(t)dt=\int_{t_{initial}}^{t_{final}}F∼\frac{1}{2}ρS_{wet}[0.072[\frac{ν}{L_{body}U(t)}]^{0.2}][1+1.5[\frac{w_{max}}{L_{body}}]^{1.5}+7.0[\frac{w_{max}}{L_{body}}]^{3}]U(t)^{3}dt
+$$
+
+rearranged this is:
+
+$$
+F~\frac{1}{2}ρS_{wet}0.072\frac{ν}{L_{body}}^{0.2}1+1.5\frac{w_{max}}{L_{body}}^{1.5}+7.0\frac{w_{max}}{L_{body}}^{3}\int_{t_{initial}}^{t_{final}}Ut^{2.8}dt
+$$
+
+The velocity (U(t)) is calculated using the average acceleration (aavg):
+
+$$
+Ut=U_{i}+a_{avg}t=U_{i}+\frac{U_{f}-U_{i}}{T_{acc}}t
+$$
+
+The derivative of velocity with respect to time is:
+
+$$
+\frac{dU}{dt}=\frac{U_{f}-U_{i}}{T_{acc}}
+$$
+
+rearranged:
+
+$$
+dt=dU\frac{T_{acc}}{U_{f}-U_{i}}
+$$
+
+which can be substituted into Equation 18 in order to obtain the integral with respect to velocity:
+
+$$
+F~\frac{1}{2}ρS_{wet}0.072\frac{ν}{L_{body}}^{0.2}1+1.5\frac{w_{max}}{L_{body}}^{1.5}+7.0\frac{w_{max}}{L_{body}}^{3}\int_{U_{initial}}^{U_{final}}Ut^{2.8}\frac{T_{acc}}{U_{f}-U_{i}}dU
+$$
+
+evaluating the integral:
+
+$$
+F∼\frac{1}{2}ρS_{wet}[0.072[\frac{ν}{L_{body}}]^{0.2}][1+1.5[\frac{w_{max}}{L_{body}}]^{1.5}+7.0[\frac{w_{max}}{L_{body}}]^{3}]\frac{1}{3.8}U(t)^{3.8}|_{U_{i}}^{U_{f}}\frac{T_{acc}}{(U_{f}−U_{i})}
+$$
+
+or:
+
+$$
+F~\frac{1}{2}ρS_{wet}0.072\frac{ν}{L_{body}}^{0.2}1+1.5\frac{w_{max}}{L_{body}}^{1.5}+7.0\frac{w_{max}}{L_{body}}^{3}\frac{U_{f}^{3.8}-U_{i}^{3.8}}{3.8U_{f}-U_{i}}T_{acc}
+$$
+
+to reintroduce the Reynolds number, multiply by Uf0.2/Uf0.2:
+
+$$
+F~\frac{1}{2}ρS_{wet}0.072\frac{ν}{L_{body}U_{f}}^{0.2}1+1.5\frac{w_{max}}{L_{body}}^{1.5}+7.0\frac{w_{max}}{L_{body}}^{3}\frac{U_{f}^{3.8}-U_{i}^{3.8}}{3.8U_{f}-U_{i}}U_{f}^{0.2}T_{acc}
+$$
+
+The equation for the work done against drag during the acceleration phase (Equation 14) becomes:
+
+$$
+W_{drag,acc}=F∼\frac{1}{2}ρS_{wet}[\frac{0.072}{(R_{e at Uf})^{0.2}}][1+1.5[\frac{w_{max}}{L_{body}}]^{1.5}+7.0[\frac{w_{max}}{L_{body}}]^{3}][\frac{(U_{f}^{3.8}−U_{i}^{3.8})}{3.8(U_{f}−U_{i})}U_{f}^{0.2}T_{acc}]+\frac{1}{2}M_{added}(U_{f}^{2}−U_{i}^{2})
+$$
+
+#### Metabolic expenditure
+
+To convert from mechanical energy expenditure to metabolic energy expenditure, the mechanical work done by fluking is multiplied by coefficients to account for energy lost due to metabolic (ηmetab = 0.25) and propulsive (ηprop = 0.75) efficiency. Equation 3 becomes:
+
+$$
+W_{metab,total}=\frac{1}{η_{metab}η_{prop}}[\frac{1}{2}M_{body}(U_{f}^{2}−U_{i}^{2})+W_{drag,acc}+W_{drag,plat}]
+$$
+
+Combining Equation 26 with Equations 10 and 25 yields the final equation for calculating the metabolic work needed for a whale to accelerate from Ui to Uf in time Tacc, and maintain the final velocity for Tplat:
+
+$$
+W_{metab,total}=\frac{1}{η_{metab}η_{prop}}\frac{1}{2}M_{body}(U_{f}^{2}−U_{i}^{2})+\frac{1}{η_{metab}η_{prop}}F∼\frac{1}{2}ρS_{wet}[\frac{0.072}{(R_{e \ at \ Uf})^{0.2}}][1+1.5[\frac{w_{max}}{L_{body}}]^{1.5}+7.0[\frac{w_{max}}{L_{body}}]^{3}][\frac{(U_{f}^{3.8}−U_{i}^{3.8})}{3.8(U_{f}−U_{i})}U_{f}^{0.2}T_{acc}]+\frac{1}{η_{metab}η_{prop}}\frac{1}{2}M_{added}(U_{f}^{2}−U_{i}^{2})\ +\frac{1}{η_{metab}η_{prop}}F∼\frac{1}{2}ρS_{wet}[\frac{0.072}{(R_{eatUf})^{0.2}}][1+1.5[\frac{w_{max}}{L_{body}}]^{1.5}+7.0[\frac{w_{max}}{L_{body}}]^{3}]U_{f}^{3}T_{plat}
+$$
+
+#### The relative costs of breaching and lunging
+
+The costs of breaching and lunging were compared with estimates of daily field metabolic rate (FMRdaily) of humpback whales. The metabolic rates of large whales are poorly understood and therefore we used two separate estimates of FMRdaily that represent possible lower and upper bounds of daily energy usage. The lower bound was calculated using the scaling relationship put forth by Williams and Maresh (2015):
+
+$$
+FMR_{WM}=3511\timesm^{0.45}
+$$
+
+Where FMRdaily is kJ/day and m is mass in kilograms. The upper bound was calculated using the scaling relationship provided by Nagy (2005) for terrestrial mammals, multiplied by 1.5 to account for the purported elevated metabolic rate of marine mammals.
+
+$$
+FMR_{WM}=1.5\times2.25\times1000\timesm^{0.808}
+$$
 
 Both of these scaling relationships accurately predict the FMRdaily of harbor porpoises (Rojano-Doñate et al., 2018), but which one applies to larger cetaceans remains unknown.
 

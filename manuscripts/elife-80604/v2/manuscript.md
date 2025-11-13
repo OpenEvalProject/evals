@@ -12,8 +12,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03qryx823 Department of Molecular Microbiology, B. Rappaport Faculty of Medicine, Technion - Israel Institute of Technology Haifa Israel
-2. https://ror.org/03qryx823 Bioinformatics Knowledge Unit, Technion - Israel Institute of Technology Haifa Israel
+1. Department of Molecular Microbiology, B. Rappaport Faculty of Medicine, Technion - Israel Institute of Technology Haifa Israel ([ROR:03qryx823](https://ror.org/03qryx823))
+2. Bioinformatics Knowledge Unit, Technion - Israel Institute of Technology Haifa Israel ([ROR:03qryx823](https://ror.org/03qryx823))
 
 † Corresponding author
 
@@ -37,7 +37,7 @@ Heme utilization in C. albicans requires, in addition to the CFEM hemophores, co
 
 ## Results
 
-## Phylogenetic profiling for identification of new heme-iron acquisition genes
+### Phylogenetic profiling for identification of new heme-iron acquisition genes
 
 Analysis of genomes from species related to C. albicans indicated that many carry CFEM proteins related to Pga7, Rbt5, and Csa2 (Nasser et al., 2016). We found that across fungal genomes of the Ascomycete clades most closely related to C. albicans, distinct relatives of Rbt5, Pga7, and Csa2 can be identified in almost every genome (Figure 1—figure supplement 1 shows a proximity tree of Rbt5-related proteins from 14 Saccharomycetales genomes). One exception is Meyerozyma (Candida) guilliermondii, which completely lacks any coding sequence related to these CFEM proteins, unlike equally distant relatives of C. albicans such as Debaryomyces hansenii (Kurtzman and Suzuki, 2010). In order to identify additional proteins involved in heme uptake, we applied phylogenetic profiling or pathway co-evolution analysis. Briefly, this method is based on the assumption that, as organisms can acquire new functions and evolve new pathways by gene duplication, acquisition and modification, organisms can similarly lose functions, and their associated genes, when they are no longer required. Genes encoding a single functional pathway are thus expected to be preserved or eliminated in a correlated fashion across genomes, according to whether the function is present or absent in a given organism (Li et al., 2014; Pellegrini et al., 1999). Sequenced fungal genomes currently number well over one thousand, including many tens of Saccharomycetales (Butler et al., 2009; Grigoriev et al., 2014). Two genes whose presence was best correlated with the presence of Rbt5-related CFEM genes were FRP1and FRP2 (see Materials and methods for details).
 
@@ -45,9 +45,29 @@ C. albicans Frp1 and Frp2 were previously classified as FREs (Almeida et al., 20
 
 Frp1 and Frp2 are 36% identical, and out of 13 Saccharomycetales listed in the Candida Gene Order Browser database (cgob3.ucd.ie; Fitzpatrick et al., 2010; Maguire et al., 2013) that have Frp homologs, 12 have an Frp1 ortholog, and 10 have an Frp2 ortholog. Interestingly, FRP1 and FRP2 are adjacent to two CFEM protein genes in the C. albicans genome, FRP1 to PGA7 and FRP2 to CSA1. In both cases, the adjacent genes are arranged head-to-head and share a promoter region. This synteny is conserved across most genomes (75% for FRP1-PGA7 and 70% for FRP2-CSA1; Figure 1—figure supplement 3).
 
-## Frp1 and Frp2 are required for heme-iron utilization
+### Frp1 and Frp2 are required for heme-iron utilization
 
 To directly examine the role of Frp1 and Frp2 in heme-iron acquisition, their genes were deleted and the hemoglobin-iron utilization phenotypes were analyzed by growth on YPD plates supplemented with 1 mM bathophenanthroline disulfonate (BPS), an iron chelator, and hemoglobin as iron source. As shown in Figure 1A, the frp1-/- strain was unable to form colonies on the plate with hemoglobin as the sole iron source. Reintegration of a wild-type FRP1 allele completely reverted the growth defect. In contrast, the frp2-/- strain showed no growth defect. We next performed this assay in medium buffered to pH 8.5. On the alkaline plates, we found that the frp1-/- strain was still unable to form colonies, whereas the frp2-/- strain showed a partial defect in heme-iron utilization, and reintegration of the FRP2 wild-type allele complemented this growth defect (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/80604/elife-80604-fig1-v2.jpg)
+
+**Figure 1.:** (A) Fivefold dilutions of cultures of the indicated strains were spotted on YPD or YPD pH 8.5, with the indicated supplements, and incubated for 3 days (Hb and BPS plates) or 2 days (YPD plates) at 30°C. WT = KC2, FRP1+/-=KC859, frp1-/-=KC870, frp1-/-<FRP1 >= KC1024, FRP2+/-=KC901, frp2-/-=KC912, frp2-/-<FRP2 >= KC1379. (B) The strains with indicated genotypes in the ccc2-/- background were grown in triplicates in YPD or YPD pH 8.5 media supplemented with 1 mM ferrozine and the indicated amounts of hemoglobin, and incubated at 30°C for 3 days. Each result is the average of three cultures. Standard deviations are indicated by vertical bars. WT = KC811, frp1-/-=KC1146, frp2-/-=KC1414, frp1-/- frp2-/-=KC1412, frp1-/-<FRP1 >= KC1146, frp2-/-<FRP2>=KC1411. (C) The frp1-/- and frp2-/- heme-iron utilization phenotype was compared to that of the CFEM protein mutants rbt5-/- and pga7-/-. The strains were grown in YPD or YPD pH 8.5, with 1 mM ferrozine and the indicated concentrations of hemoglobin or hemin, and grown and measured as in B. Wild type = KC68, rbt5-/-=KC139, pga7-/-=KC485, frp1-/-=KC923, frp2-/-=KC913. All strains in B and C carry a deletion of the CCC2 gene, which causes a defect in high-affinity iron import and prevents growth in the presence of ferrozine.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80604/elife-80604-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The genomes of ascomycete species were screened for sequences similar to Candida albicans Rbt5 by BLAST. Eighty-six sequences were aligned using the MAFFT G-INS-i algorithm (Katoh et al., 2005) and a tree was built on this alignment using the NJ method. The 46 Candiaceae CFEM proteins from 14 species (green lines) cluster in three groups, with homology to Rbt5, Csa2, and Pga7, respectively. Species prefixes of proteins in the three clusters most similar to C. albicans Rbt5, Csa2, and Pga7: no prefix – C. albicans; Cp – Candida parapsilosis; Ct – Candida tropicalis; Dh – Debaryomyces hansenii; Lelon – Lodderomyces elongisporus; Pstip – Pichia stipitis; Ctan – Candida tanzawaensis; Spas – Spathaspora passalidarum; Ctenuis – Candida tenuis; Clus – Candida lusitaniae; Mbicus – Metschnikowia bicuspidate; Milfar – Millerozyma farinosa; Cmal – Candida maltosa; Hburt – Hypopichia burtonii. Eight species show one apparent ortholog each of Rbt5, Csa2, and Pga7, 4 species show orthologs of two of the three at least, and two species show orthologs of only one. Additional CFEM proteins (bottom part of the figure) are from more distantly related species and may not participate in heme acquisition.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/80604/elife-80604-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Proximity tree of Candida albicans ferric reductase-related protein sequences. Seventeen protein sequences most related to Fre10 were aligned using the MAFFT G-INS-i algorithm (Katoh et al., 2005) and a tree was built on this alignment using the NJ method with bootstrap resampling to estimate the confidence of each branching (indicated as percentages near each node). (B) Schematic alignment of the 17 C. albicans ferric reductase-like protein sequences. The level of sequence conservation is color-coded red-blue-gray from highest to lowest. The alignment was obtained using NCBI’s ‘Cobalt’ multiple alignment tool. The conserved domains are indicated on top. They were assigned using NCBI’s conserved domains database. The standard orf19 names of the named proteins are: FRP1 – orf19.5634; FRP2 – orf19.7112; CFL4 – orf19.1932; FRE10 – orf19.1415; CFL1 – orf19.1263; FRE3 – orf19.1270; FRE6 – orf19.6138; CFL5 – orf19.1930; FRE7 – orf19.7077; CFL11 – orf19.701; CFL2 – orf19.1264; FRE9 – orf19.3538; FRE4 – orf19.1844; FRE30-7 is the combined reading frames of orf19.6139 and orf19.6140, which were alternatively assigned a single or two distinct ORFs in different versions of the C. albicans genome database. Our re-sequencing indicates that they in fact form a single ORF.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/80604/elife-80604-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Both regions are syntenic in Candida albicans, Candida dubliniensis, Candida parapsilosis, Candida orthopsilosis, Lodderomyces elongisporus and Scheffersomyces stipitis, and only FRP1-PGA7 in Candida lusitaniae. FRP1 is absent in Spathaspora passalidarum, FRP2 is absent in Debaryomyces hansenii, Candida tenuis, and Candida auris. Both are absent in Meyerozyma guilliermondii. Overall, the FRP1-PGA7 synteny is conserved in 75% and the CSA1-FRP2 synteny in 70% of genomes where they are present. Note that RBT5, encoding another CFEM protein that participates in heme acquisition, is also part of the FRP1-PGA7 region.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/80604/elife-80604-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (Top) The frp1-/- mutant strain KC870 was transformed either with the vector plasmid BES116, with the FRP1-containing plasmid KB2546 or with an FRP2 open reading frame fused to the FRP1 promoter, KB2575. The cells were spotted on YPD, on YPD with 1 mM BPS, with or without 1 μM hemoglobin, as indicated. (Bottom) The frp2-/- mutant strain KC912 was transformed either with the vector plasmid BES116, with the FRP2-containing plasmid KB2576, or with an FRP2 open reading frame fused to the FRP1 promoter, KB2575. The cells were spotted on YPD, on YPD with 1 mM BPS, with or without 1 μM hemoglobin, all at pH 8.5, as indicated.
 
 The heme-iron utilization was also tested in liquid medium, using a set of frp1-/-, frp2-/-, and frp1-/-frp2-/- double deletion strains introduced in a background made defective in high-affinity iron acquisition by deletion of the copper transporter CCC2 (Weissman et al., 2002), which makes the cells unable to grow in the presence of the iron chelator ferrozine. Growth of the mutants was assayed in the presence of increasing concentrations of hemoglobin. In unbuffered YPD (pH ~ 6.5), the same picture was seen as on plates, with the frp1-/- mutant unable to utilize hemoglobin-iron and the frp2-/- mutant unaffected (Figure 1B). In alkaline YPD (pH 8.5), the frp1-/- mutant failed to grow, whereas the frp2-/- mutant exhibited reduced growth, suggesting that this mutant is able to utilize hemoglobin, but at a reduced rate (Figure 1B). Reintegration of the wild-type FRP1 and FRP2 genes in the respective mutant backgrounds restored wild-type growth in unbuffered YPD, but did not completely restore growth at pH 8.5. This could be due to haploinsufficiency or to reduced expression of the reintegrated allele under these conditions.
 
@@ -55,7 +75,7 @@ We also compared growth of the frp1-/- and frp2-/- mutants to that of the CFEM p
 
 Since compared to the established FREs, Frp1 and Frp2 are relatively similar to each other, we asked whether differential expression of FRP2 was the reason that it could not replace FRP1, that is, that the frp1-/- strain is unable to utilize hemoglobin even though FRP2 is present in these cells. To answer this, we placed the FRP2 open reading frame under the control of the FRP1 promoter and transformed the resulting plasmid into the frp1-/- and frp2-/- strains. The FRP1p-FRP2 construct could complement the frp2-/- but not the frp1-/- mutant (Figure 1—figure supplement 4), indicating that differential expression is not the reason that Frp2 is inactive in hemoglobin-iron utilization in unbuffered medium. Rather, this suggests that the Frp1 and Frp2 proteins are functionally distinct.
 
-## Frp1 and Frp2 mediate heme uptake into the cytoplasm
+### Frp1 and Frp2 mediate heme uptake into the cytoplasm
 
 To monitor heme uptake by the frp1 and frp2 mutants more directly, we took advantage of a recently developed cytoplasmic heme sensor system, based on a heme-quenchable GFP-cytochrome fusion. In this detection system, an mKATE2 red fluorescent domain linked to the GFP-cytochrome fusion serves as an internal fluorescence control. The ratio of GFP to mKATE2 fluorescence gives a measure of available cytoplasmic heme, with lower ratios indicating stronger GFP quenching due to higher cytochrome occupancy, that is, higher cytoplasmic heme concentrations. To expand the range of testable concentrations, a lower-affinity cytochrome domain mutant (M7A) can be used alongside the high-affinity original sensor (HS1) (Hanna et al., 2016; Weissman et al., 2021).
 
@@ -63,11 +83,23 @@ Wild-type, frp1-/-, frp2-/-, and frp1-/- frp2-/-double mutant cells expressing t
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/80604/elife-80604-fig2-v2.jpg)
 
-**Figure 2.:** frp1 and -/-frp2 mutants are defective in heme uptake from the cytoplasm.-/-The high-affinity HS1 and low-affinity M7A ratiometric heme sensors were used to monitor heme influx into the cytoplasm in the wild-type (KC2), frp1(KC870), -/-frp2(KC912), and -/-frp1 strains (KC1410) grown for 4 hr in YPD medium at pH 8.5 with 1 mM ferrozine, and with the indicated concentrations of hemin chloride. Each data point is the average of three different cultures, each measured twice. Vertical bars indicate standard deviations, and the asterisks indicate measurements that are significantly different from the 0 μM hemin reading with p≤0.0001.-/- frp2-/-Figure 2—source data 1.Figure 2C.
+**Figure 2.:** The high-affinity HS1 and low-affinity M7A ratiometric heme sensors were used to monitor heme influx into the cytoplasm in the wild-type (KC2), frp1-/-(KC870), frp2-/-(KC912), and frp1-/- frp2-/- strains (KC1410) grown for 4 hr in YPD medium at pH 8.5 with 1 mM ferrozine, and with the indicated concentrations of hemin chloride. Each data point is the average of three different cultures, each measured twice. Vertical bars indicate standard deviations, and the asterisks indicate measurements that are significantly different from the 0 μM hemin reading with p≤0.0001.
 
-## FRP1 and FRP2 are differentially required for non-iron metalloprotoporphyrin uptake and toxicity
+### FRP1 and FRP2 are differentially required for non-iron metalloprotoporphyrin uptake and toxicity
 
 The non-iron metalloprotoporphyrins (MPPs) are synthetic heme derivatives that have a non-iron metal atom instead of the iron at the center of the porphyrin ring structure. Many MPPs are toxic to bacteria, and this toxicity depends on the bacterial heme-import pathways (Hijazi et al., 2017; Mitra et al., 2017; Olczak et al., 2012; Stojiljkovic et al., 2001; Wakeman et al., 2014). Two MPPs, Ga3+- protoporphyrin IX (Ga-PPIX) and Mn3+-protoporphyrin IX (Mn-PPIX) were also found to be toxic to the pathogenic fungus C. neoformans, and their toxicity depended on some of the same factors required for heme uptake in that organism (Bairwa et al., 2019; Hu et al., 2015). We tested toxicity of these two MPPs as well as of Co3+-protoporphyrin IX (Co-PPIX) and Zn2+- protoporphyrin IX (Zn-PPIX) in YPD medium supplemented with 1 mM ferrozine to induce the heme-uptake pathway, and found that all of them are toxic to C. albicans. To investigate the roles of Frp1 and Frp2 in uptake of these compounds, we then tested the frp1-/-, frp2-/-, and double mutants for Ga-PPIX, Mn-PPIX, Co-PPIX, and Zn-PPIX sensitivity in regular YPD medium and in YPD medium buffered to pH 7.5 (Figure 3A). In regular YPD medium, the frp1-/- mutant showed increased resistance to all of the MPPs tested except Ga-PPIX. The frp2-/- mutant showed increased resistance to Zn-PPIX and to a lesser extent to Mn-PPIX but not to Co-PPIX or to Ga-PPIX. At pH 7.5, the frp2-/- strain but not the frp1-/- strain showed increased resistance to Ga-PPIX. The frp2-/- strain also showed increased resistance to Mn-PPIX and Zn-PPIX, and to a lesser extent, so did the frp1-/- strain (Co-PPIX was not toxic at pH 7.5). In summary, Frp1 and Frp2 were required for full toxicity of at least some of the MPPs in either unbuffered YPD medium (pH ~ 6.5) or in medium buffered to pH 7.5, with Frp1 being more important for toxicity in unbuffered medium and Frp2 for toxicity at pH 7.5.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/80604/elife-80604-fig3-v2.jpg)
+
+**Figure 3.:** (A) FRP1 and FRP2 are differentially required for sensitivity to toxic heme homologs. The indicated strains were diluted in YPD medium with different concentrations of metal-protoporphyrin IX compounds, as indicated, and grown in 96-well plates at 30°C for 2 days. The graph points indicate the averages of triplicate cultures, and the standard deviations are indicated by vertical bars. The strains used are KC590 (WT), KC966 (frp1-/-), KC1053 (frp2-/-), KC1061 (frp1-/- frp2-/-). (B) Expression of either FRP1 or FRP2 is sufficient to enable ZnMP uptake. Wild-type strain KC2 (WT), strain KC1080 that has a single FRP1 gene under the SSB1 promoter (SSB1p-FRP1) and strain KC1244 that has a single FRP2 gene under the SSB1 promoter (SSB1p-FRP2) were grown in YPD to log phase, then exposed to 1 mM ZnMP for 10 min, washed and visualized by epifluorescence microscopy. Scale bar = 5 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80604/elife-80604-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** A pga7-/- strain was transformed with either a vector plasmid (KC646) or with a PGA7-containing plasmid (KC647). The strains were diluted in YPD medium supplemented with 1 mM ferrozine, and with the MPP at the indicated concentrations, and grown in triplicate cultures at 30°C. Each datapoint indicates the average of the triplicate cultures, and the vertical bars indicate the standard deviations.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/80604/elife-80604-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** A wild-type strain was grown for 4 hr in YPD + 1 mM ferrozine to induce expression of the heme uptake system, then the cells were exposed for 10 min to 1 μM zinc-mesoporphyrin, without or with the indicated amounts of hemin. The cells were then washed twice in phosphate-buffered saline and visualized by epifluorescence microscopy with a rhodamine filter set. Scale bar = 5 μm.
 
 In view of the essential role of the CFEM hemophore Pga7 in heme acquisition, and of the fact that CFEM hemophores can bind GaPPIX, MnPPIX, and to some extent CoPPIX (our unpublished data), we tested whether Pga7 is required for MPP toxicity. As shown in Figure 3—figure supplement 1, no difference could be detected in the sensitivity of pga7-/- vs. PGA7 cells, indicating that Pga7 is not involved in the uptake of these compounds.
 
@@ -75,15 +107,27 @@ Next, we checked if Frp1 and Frp2 can mediate uptake of Zn2+-mesoporphyrin (ZnMP
 
 Since in cells growing in regular iron-replete medium, ZnMP uptake is negligible, presumably due to lack of expression of the heme-uptake system genes, we could ask whether Frp1 or Frp2 alone were sufficient to mediate ZnMP uptake by ectopically expressing them under these conditions. FRP1 and FRP2 were placed under the promoter of SSB1, a gene that is strongly expressed under different growth conditions (Ofir et al., 2012), and ZnMP uptake was monitored in these cells. Both SSB1p-FRP1- and SSB1p-FRP2-harboring cells showed a strong intracellular ZnMP signal (Figure 3B). This indicates that Frp1 and Frp2 are each sufficient to mediate uptake of ZnMP.
 
-## Frp1 and Frp2 relocalize to the cell surface in the presence of heme
+### Frp1 and Frp2 relocalize to the cell surface in the presence of heme
 
 FREs are typically located on the plasma membrane, where they reduce extracellular iron (Lesuisse et al., 1987; Shatwell et al., 1996; Yun et al., 2001). To determine the subcellular localization of Frp1 and Frp2, we constructed an Frp1-GFP and an Frp2-GFP fusion under the control of their endogenous promoters. These fusion proteins retained heme uptake activity, as evidenced by their ability to support growth on hemoglobin (Figure 4—figure supplement 1). Both the Frp1-GFP and Frp2-GFP signals became visible after induction by iron starvation and were localized at the cell surface and at the endoplasmic reticulum (ER), and the GFP signals also accumulated in the vacuole (Figure 4A). Identification of the vacuole and perinuclear ER membrane was verified with CMAC, a fluorophore specific for the vacuole and Hoechst 33342, a nuclear stain, respectively (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/80604/elife-80604-fig4-v2.jpg)
+
+**Figure 4.:** (A) The cells (Frp1-GFP=KC914, Frp2-GFP=KC1405) were grown in iron-limited medium for 3 hr. Left panels: Localization of the Frp-GFP proteins vs. the nuclear stain Hoechst 33324. Right panels: Localization of the Frp-GFP proteins vs. the vacuole stain CMAC. Scale bars = 5 μm. (B) Location of Frp1-GFP and Frp2-GFP after induction by iron starvation, without and with added 50 μM hemin. The cells were grown to late-log phase in YPD, then shifted to the indicated media, and visualized at the indicated times by epifluorescence microscopy. Scale bar = 5 μm. (C) Kinetics of Frp1/2-GFP relocation after exposure to hemin. The cells were grown in iron-limited medium for 3 hr and then 50 µM hemin was added. The graphs describe quantitation of subcellular localization of the Frp1-GFP and Frp2-GFP signals after exposure to hemin. At least 100 cells were observed for each timepoint, and the signal intensity at each subcellular location was assigned a value from 0 to 3. The graph indicates the average intensities at each of four cellular locations. Note that ‘ER’ denotes location on the perinuclear membrane and its projections, whereas ‘plasma membrane’ could possibly also include cortical ER, which cannot be differentiated at this level of resolution. The asterisks indicate the plasma membrane values that differ statistically from t=0’ with p<0.00001 by Mann-Whitney’s U test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80604/elife-80604-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The strains (FRP1+/-=KC859, FRP1+/--GFP=KC916, frp1-/-=KC870, FRP2+/-=KC901, FRP2+/--GFP=KC1245, frp2-/-=KC912) were spotted on YPD, on YPD with 1 mM BPS, with or without 1 μM hemoglobin, for FRP1. For FRP2 the cells were spotted on YPD pH 8.5, on YPD pH 8.5 with 1 mM BPS, with or without 1 μM hemoglobin as indicated, and incubated for 3 days (Hb and BPS plates) or 2 days (YPD plates) at 30°C.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/80604/elife-80604-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) The cultures depicted in Figure 4B were sampled at the same timepoints for protein extraction. Equal protein amounts were loaded on gels, and the GFP fusion proteins were detected after Western blotting with a rabbit anti-GFP antibody. The time after shift to YPD+1 mM ferrozine±50 μM hemin (Frp1-GFP) or to YPD pH 8.5+1 mM ferrozine ±50 μM hemin, as indicated, is indicated above the lanes. U=uninduced starting culture, C=control strain without GFP. (B) The same strains were grown overnight in iron-limited medium (Frp1: YPD+1 mM ferrozine, Frp2: YPD pH 8.5+1 mM ferrozine), diluted and grown another 2 hr in the same media, then washed and resuspended in iron satiation medium (YPD). The indicated timepoints are after shift to YPD. To detect decay rather than dilution of the protein pool present at the shift, each lane contains the same volume of cell culture.
 
 Induction of Frp1-GFP and Frp2-GFP was monitored by shifting log-phase cells growing in YPD to YPD+ferrozine (Frp1-GFP) or to YPD pH 8.5+ferrozine (Frp2-GFP), without or with added hemin. Samples were removed 1, 2, and 3 hr after induction for microscopic observation and for protein analysis by Western blot. By microscopic observation, the GFP signal increased with time, and in the absence of hemin, was mostly detected in the vacuole. In the presence of hemin, the plasma membrane signal became much more prominent (Figure 4B). In addition, Frp2-GFP expression appeared higher, and more prominently vacuolar, compared to Frp1-GFP. Analysis of the proteins by Western blot also showed induction of Frp1-GFP and Frp2-GFP in iron-limited medium (Figure 4—figure supplement 2A), and showed decay of the protein upon shift back to YPD medium (Figure 4—figure supplement 2B). This analysis furthermore indicated that Frp2-GFP expression is higher than Frp1-GFP. Under all conditions, only full-length GFP fusion proteins were detectable, suggesting that the GFP signals visible on the micrographs represent full-length, potentially active protein.
 
 In order to measure the kinetics of relocalization of Frp1-GFP and Frp2-GFP to the cell surface in the presence of hemin, cells induced as above for 3 hr were exposed to hemin, and the GFP signal localization was monitored every 10 min. A significant increase in cell surface GFP signal was detectable for both proteins after 30 min exposure to hemin (Figure 4C).
 
-## Expression of Frp1 in S. cerevisiae promotes heme uptake in the presence of Pga7
+### Expression of Frp1 in S. cerevisiae promotes heme uptake in the presence of Pga7
 
 The data shown above indicate that Frp1 and Frp2 are able to mediate the uptake of metal-substituted heme analogs even in the absence of the extracellular hemophore cascade, represented by the membrane-bound hemophore Pga7 (Figure 3A, Figure 3—figure supplement 1). The CFEM hemophores are however necessary for heme uptake. To better characterize the minimal requirements for Frp1-mediated heme uptake, we attempted to reconstitute it in S. cerevisiae, an organism lacking an efficient heme uptake system, using FRP1 expressed under the strong H2B histone gene promoter. In order to assess the requirement of the extracellular hemophore cascade in Frp1-mediated heme uptake in S. cerevisiae, FRP1 was expressed either in the presence or absence of PGA7 under the adjacent H2A histone gene promoter. To monitor heme uptake, we used a hem1Δ mutant, unable to synthesize heme. The S. cerevisiae hem1Δ strain is usually maintained in the presence of the Hem1 product δ-aminolevulinic acid (ALA) in the medium, however it can also grow when supplied with a high enough hemin concentrations in the medium.
 
@@ -91,11 +135,23 @@ As shown in Figure 5A, expression of Frp1 together with Pga7 promoted better gro
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/80604/elife-80604-fig5-v2.jpg)
 
-**Figure 5.:** (A) Saccharomyces cerevisiae hem1Δ cells (KY1498) were transformed with a vector plasmid, or with plasmids HTB2p-FRP1 (KB2569), HTA2p-PGA7(KB2789) or HTB2p-FRP1 HTA2p-PGA7 (KB2566) and drop-diluted on SC-HIS plates supplemented with either 0.2 μM hemin or 50 μg/ml δ-aminolevulinic acid (ALA), as indicated. The plates were incubated for 2 days at 30°C. (B) The same strains were diluted in SC-HIS medium supplemented with the indicated amounts of hemin, and incubated at 30°C for 2 or 3 days, as indicated. For each plasmid, three independent transformant colonies were grown. The data indicate the average of the three cultures, and the error bars indicate the standard deviations. Statistically significant differences compared to vector control are indicated with one asterisk (p<0.05) or two asterisks (p<0.001) (Student’s t-test).Figure 5—source data 1.Figure 5B.
+**Figure 5.:** (A) Saccharomyces cerevisiae hem1Δ cells (KY1498) were transformed with a vector plasmid, or with plasmids HTB2p-FRP1 (KB2569), HTA2p-PGA7(KB2789) or HTB2p-FRP1 HTA2p-PGA7 (KB2566) and drop-diluted on SC-HIS plates supplemented with either 0.2 μM hemin or 50 μg/ml δ-aminolevulinic acid (ALA), as indicated. The plates were incubated for 2 days at 30°C. (B) The same strains were diluted in SC-HIS medium supplemented with the indicated amounts of hemin, and incubated at 30°C for 2 or 3 days, as indicated. For each plasmid, three independent transformant colonies were grown. The data indicate the average of the three cultures, and the error bars indicate the standard deviations. Statistically significant differences compared to vector control are indicated with one asterisk (p<0.05) or two asterisks (p<0.001) (Student’s t-test).
 
-## Homology between CFEM proteins and the FRE N-terminal domains
+### Homology between CFEM proteins and the FRE N-terminal domains
 
 The structure of Csa2, a CFEM hemophore with high sequence homology to Pga7, indicated, at the time when it was solved, that it assumes a new protein fold, lacking any structural homologs in the 3D protein structure database (Nasser et al., 2016). We took advantage of the recent availability, through the Alphafold project (Jumper et al., 2021), of high-quality structure predictions of all C. albicans proteins, to search again for CFEM structural homologs. Remarkably, beyond the five related CFEM hemophore proteins, six out of the eight closest structural homologs to Csa2 were C. albicans FREs (Supplementary file 1). Alignment of the regions of homology showed that they correspond to the predicted extracellular N-termini of these FREs (Figure 6—figure supplement 1). Despite the low sequence homology between these proteins and Csa2, six of the eight canonical CFEM cysteine residues, forming three out of the four disulfide bonds in the CFEM structure, are nonetheless conserved and similarly spaced in the predicted FRE N-termini, and indeed are predicted to form disulfide bonds in the predicted structures (Figure 6—figure supplement 1). We next extended the sequence comparison to all other C. albicans FREs. Of the 12 FRE homologs that have an extended N-terminal domain (Figure 1—figure supplement 2), 10 have six cysteines with conserved CFEM alignment, whereas two have only four of the six cysteines conserved (Figure 6). An additional key residue of the CFEM domain, the heme iron-coordinating aspartic acid (Nasser et al., 2016), is conserved in four FREs and is replaced by asparagine in six others. Taken together, this analysis suggests that the substrate-binding N-terminal domain of fungal FREs assumes the CFEM fold.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/80604/elife-80604-fig6-v2.jpg)
+
+**Figure 6.:** The alignment with Csa2 was superimposed based on the structural alignment shown in Figure 6—figure supplement 1. The eight CFEM cysteines are highlighted in yellow and numbered below the sequence. The orange linkers connect between the cysteines that form disulfide bonds in the Csa2 structure. The Csa2 heme iron-coordinating Asp residue and its homologs in ferric reductases (FREs) are highlighted in green, and the corresponding Asn residues in blue.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/80604/elife-80604-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Alignment of the Csa2 sequence with the six FREs that appear in Supplementary file 1. The eight CFEM cysteines are highlighted and numbered above the sequence. The orange linkers connect between the cysteines that form disulfide bonds in the Csa2 structure and the FRE N-terminus predicted structures. (B) Alignment of a ribbon representation of the Csa2 structure (PDB 4y7s; purple) with that of the Cfl11 N-terminus predicted structure (Alphafold PDB Q59PZ9; red) (Varadi et al., 2022). The cysteines are rendered as spheres, and the sulfur atoms are yellow. The numbering is the same as in A. The two views of the structure are rotated 180°. The structures were aligned and rendered with Chimera (Pettersen et al., 2004).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/80604/elife-80604-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** The structures were aligned and rendered with Chimera (Pettersen et al., 2004).
 
 ## Discussion
 
@@ -103,7 +159,7 @@ C. albicans can utilize external heme as both an iron source and a heme source, 
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/80604/elife-80604-fig7-v2.jpg)
 
-**Figure 7.:** Candida albicans.See Discussion for details.
+**Figure 7.:** See Discussion for details.
 
 FRP1 and FRP2 have been previously identified as genes that are highly induced under iron starvation conditions by the Hap43/Cap2-Sfu1 system, as well as under alkaline conditions by the Rim101 transcription factor (Baek et al., 2008; Bensen et al., 2004; Chen et al., 2011; Lan et al., 2004; Liang et al., 2009; Singh et al., 2011). Indeed, in some reports, FRP1 is the highest-induced gene under iron starvation conditions, together with the CFEM hemophore gene RBT5 (Lan et al., 2004). Here, we identified FRP1 and FRP2 by phylogenetic profiling as genes that co-segregate with CFEM hemophore genes across fungal genomes. The function of these genes was confirmed experimentally: we showed here that FRP1 is essential for heme uptake under all conditions tested, and that FRP2 contributes to heme uptake under alkaline conditions. Interestingly, a predicted FRE, CnFre2/CNAG_06821, was identified in the distantly related basidiomycete fungal pathogen C. neoformans, as being required for optimal growth on hemin as well (Saikia et al., 2014). However, unlike Frp1/2, CnFre2 is not required for sensitivity to toxic heme analogs (Saikia et al., 2014), and CnFre2’s N-terminal domain lacks the cysteine arrangement found in CFEM proteins and in C. albicans FRE N-terminal domains. It is thus unclear at this point whether CnFre2 and Frp1/2 share a common mechanism.
 
@@ -121,23 +177,856 @@ To conclude, we have identified two FRE-related membrane proteins, Frp1 and Frp2
 
 ## Materials and methods
 
-## Media and chemicals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>WT</td>
+      <td>Fonzi and Irwin, 1993</td>
+      <td>KC2=CAF3-1</td>
+      <td>ura3Δ::imm434/ura3Δ::imm434</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>ccc2-/-</td>
+      <td>Weissman et al., 2002</td>
+      <td>KC68</td>
+      <td>KC2 ccc2Δ::hisG/ccc2Δ::hisG</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida. albicans)</td>
+      <td>rbt5-/-</td>
+      <td>Weissman and Kornitzer, 2004</td>
+      <td>KC139</td>
+      <td>KC68 rbt5Δ/rbt5Δ</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida. albicans)</td>
+      <td>pga7-/-</td>
+      <td>Kuznets et al., 2014</td>
+      <td>KC485</td>
+      <td>KC68 pga7Δ/pga7Δ</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>WT</td>
+      <td>Fonzi and Irwin, 1993</td>
+      <td>KC590=CAI4</td>
+      <td>ura3Δ::imm434/ura3Δ::imm434</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>pga7-/-</td>
+      <td>Kuznets et al., 2014</td>
+      <td>KC646</td>
+      <td>KC590 pga7Δ/pga7Δ ADE2/ade2::URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida. albicans)</td>
+      <td>pga7-/- PGA7 URA3</td>
+      <td>Kuznets et al., 2014</td>
+      <td>KC647</td>
+      <td>KC590 pga7Δ/pga7Δ ADE2/ade2::PGA7 URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>pga7-/- URA3</td>
+      <td>This work</td>
+      <td>KC811</td>
+      <td>KC68 ADE2/ade2::URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>FRP1+/-</td>
+      <td>This work</td>
+      <td>KC859</td>
+      <td>KC2 FRP1/frp1Δ</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp1-/-</td>
+      <td>This work</td>
+      <td>KC870</td>
+      <td>KC2 frp1Δ/frp1Δ</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>FRP1+/-</td>
+      <td>This work</td>
+      <td>KC901</td>
+      <td>KC2 FRP2/frp2Δ</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp2-/-</td>
+      <td>This work</td>
+      <td>KC912</td>
+      <td>KC2 frp2Δ/frp2Δ</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp2-/-</td>
+      <td>This work</td>
+      <td>KC913</td>
+      <td>KC68 frp2Δ/frp2Δ</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>FRP1-GFP</td>
+      <td>This work</td>
+      <td>KC914</td>
+      <td>KC2 FRP1/FRP1-GFP URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>FRP1-GFP</td>
+      <td>This work</td>
+      <td>KC916</td>
+      <td>KC2 frp1Δ/FRP1-GFP URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp1-/-</td>
+      <td>This work</td>
+      <td>KC923</td>
+      <td>KC68 frp1Δ/frp1Δ</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp1-/-</td>
+      <td>This work</td>
+      <td>KC966</td>
+      <td>KC590 frp1Δ/frp1Δ</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp1-/- URA3</td>
+      <td>This work</td>
+      <td>KC1023</td>
+      <td>KC870 ADE2/ade2::URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp1-/- FRP1 URA3</td>
+      <td>This work</td>
+      <td>KC1024</td>
+      <td>KC870 ADE2/ade2::FRP1 URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp2-/-</td>
+      <td>This work</td>
+      <td>KC1053</td>
+      <td>KC590 frp2Δ/frp2Δ</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp1-/- frp2-/-</td>
+      <td>This work</td>
+      <td>KC1061</td>
+      <td>KC590 frp1Δ/frp1D frp2Δ/frp2Δ</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp1-/- FRP1p-FRP2</td>
+      <td>This work</td>
+      <td>KC1064</td>
+      <td>KC870 ADE2/ade2::FRP1p-FRP2 URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>SSB1p-FRP1</td>
+      <td>This work</td>
+      <td>KC1080</td>
+      <td>KC870 ADE2/ade2::SSB1p-FRP1 URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp1-/- URA3</td>
+      <td>This work</td>
+      <td>KC1146</td>
+      <td>KC923 ADE2/ade2::URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>SSB1p-FRP2</td>
+      <td>This work</td>
+      <td>KC1244</td>
+      <td>KC912 ADE2/ade2::SSB1p-FRP2 URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>FRP2-GFP</td>
+      <td>This work</td>
+      <td>KC1245</td>
+      <td>KC912 frp2Δ/FRP2-GFP URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp2-/- URA3</td>
+      <td>This work</td>
+      <td>KC1246</td>
+      <td>KC912 ADE2/ade2::URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp2-/- FRP2 URA3</td>
+      <td>This work</td>
+      <td>KC1379</td>
+      <td>KC912 ADE2/ade2::FRP2 URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>FRP2-GFP</td>
+      <td>This work</td>
+      <td>KC1405</td>
+      <td>KC2 FRP2/FRP2-GFP URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp1-/- frp2-/-</td>
+      <td>This work</td>
+      <td>KC1410</td>
+      <td>KC2 frp1Δ/frp1D frp2Δ/frp2Δ</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp2-/- FRP2 URA3</td>
+      <td>This work</td>
+      <td>KC1411</td>
+      <td>KC913 ADE2/ade2::FRP2 URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp2-/- URA3</td>
+      <td>This work</td>
+      <td>KC1412</td>
+      <td>KC923 frp2Δ/frp2Δ::hisG-URA3-hisG</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp2-/- URA3</td>
+      <td>This work</td>
+      <td>KC1414</td>
+      <td>KC913 ADE2/ade2::URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Candida albicans)</td>
+      <td>frp2-/- FRP1p-FRP2</td>
+      <td>This work</td>
+      <td>KC1447</td>
+      <td>KC912 ADE2/ade2:: FRP1p-FRP2 URA3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Sandida cerevisiae)</td>
+      <td>hem1</td>
+      <td>This work</td>
+      <td>KY1498</td>
+      <td>ura3-1 can1-100 GAL+leu2-3,112 trp1-1 ade2-1 his3-11,15 hem1Δ::KanMX</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat # ab290</td>
+      <td>Use at 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG, HRP-conjugated (Goat polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat # A9169</td>
+      <td>Use at 1:5000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FRP1 blaster plasmids</td>
+      <td>This work</td>
+      <td>KB2392KC2393</td>
+      <td>Digest SacI-KpnI for transformation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FRP2 blaster plasmids</td>
+      <td>This work</td>
+      <td>KB2395KB2396</td>
+      <td>Digest SacI-KpnI for transformation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FRP1 reintegrant</td>
+      <td>This work</td>
+      <td>KB2546</td>
+      <td>Contains the FRP1 region from –395 to +1877</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FRP2 reintegrant</td>
+      <td>This work</td>
+      <td>KB2576</td>
+      <td>Contains the FRP2 region from –895 to +1982</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FRP1-GFP</td>
+      <td>This work</td>
+      <td>KB2431</td>
+      <td>Contains FRP1 (+3 to+1662) fused to eGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FRP2-GFP</td>
+      <td>This work</td>
+      <td>KB2695</td>
+      <td>Contains FRP2 (–969 to +1776) fused to eGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FRP1p-FRP2</td>
+      <td>This work</td>
+      <td>KB2575</td>
+      <td>Contains the FRP1 promoter (−395 to –1) fused to the FRP2 (+1 to +1878)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SSB1p-FRP1</td>
+      <td>This work</td>
+      <td>KB2450</td>
+      <td>Contains FRP1 (–2 to +1826) under SSB1 promoter (−400 to –1)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>SSB1p-FRP2</td>
+      <td>This work</td>
+      <td>KB2696</td>
+      <td>Contains FRP2 (–3 to +1933) under SSB1 promoter (−400 to –1)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PGA7 FRP1</td>
+      <td>This work</td>
+      <td>KB2566</td>
+      <td>H2Ap-PGA7, H2Bp-FRP1 codon corrected</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FRP1</td>
+      <td>This work</td>
+      <td>KB2569</td>
+      <td>H2Bp-FRP1 codon corrected</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PGA7</td>
+      <td>This work</td>
+      <td>KB2789</td>
+      <td>H2Ap-PGA7</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FRP1 codon-corrected</td>
+      <td>This work</td>
+      <td>B35984-1/M131416</td>
+      <td>FRP1 codon-corrected in pUC57</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SacI-FRP1 5’ (–795)</td>
+      <td>This work</td>
+      <td>PCR primer 1503</td>
+      <td>GCGAGCTCCCAGCAGCACTTCCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FRP1 5’ (–1) – SpeI</td>
+      <td>This work</td>
+      <td>PCR primer 1504</td>
+      <td>ggactaGTTGAAAGTTAAACTTGGTTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HindIII-FRP1 3’ (+1662)</td>
+      <td>This work</td>
+      <td>PCR primer1505</td>
+      <td>GGGAAGCTTAGGGTATATAGGATAAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FRP1 3’ (+2258) - KpnI</td>
+      <td>This work</td>
+      <td>PCR primer 1506</td>
+      <td>gcggtACCCAAATGCATGGGTAAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FRP1 test (–810)</td>
+      <td>This work</td>
+      <td>PCR primer 1507</td>
+      <td>CACTTGCACTACCAGTTTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SacI-FRP2 5’ (–730)</td>
+      <td>This work</td>
+      <td>PCR primer 1508</td>
+      <td>GGGAGCTCGGAAAATAAGTTGTTCTTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FRP2 5’ (+3) – SpeI</td>
+      <td>This work</td>
+      <td>PCR primer 1509</td>
+      <td>CGACTAGTCCATGGCTGATAAGTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HindIII-FRP2 3’ (+1753)</td>
+      <td>This work</td>
+      <td>PCR primer 1510</td>
+      <td>GGGAAGCTTCTATAACGAGTCGTACGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FRP2 3’ (+2394) – KpnI</td>
+      <td>This work</td>
+      <td>PCR primer 1511</td>
+      <td>CCGGTACCTGATCCTTGGATGCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FRP2 test (–750)</td>
+      <td>This work</td>
+      <td>PCR primer 1512</td>
+      <td>GTAACAAACCCGAGAACACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RI-FRP1</td>
+      <td>This work</td>
+      <td>PCR primer 1513</td>
+      <td>CCGAATTCAACCATGGCTATTCCAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FRP1(+1740)-XhoI</td>
+      <td>This work</td>
+      <td>PCR primer 1514</td>
+      <td>cgctcgaGGTGTGTCCTTACGTACAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RI-FRP2</td>
+      <td>This work</td>
+      <td>PCR primer 1515</td>
+      <td>gcGAATTCCATGGACGAAGAACTTCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FRP2 (+1872)-XhoI</td>
+      <td>This work</td>
+      <td>PCR primer 1516</td>
+      <td>ggctcGAGAGTGCTGTGAGGTTATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>BamHI-FRP1(+3)</td>
+      <td>This work</td>
+      <td>PCR primer 1522</td>
+      <td>gcggatccgctattccatttgatcaacag</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FRP1(+1662)-XhoI</td>
+      <td>This work</td>
+      <td>PCR primer 1523</td>
+      <td>cgctcgagaaacgactctgtataacaatac</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SpeI-FRP1 5' (–395)</td>
+      <td>This work</td>
+      <td>PCR primer 1541</td>
+      <td>ccACTAGTCGTAATCAGCAGCAGATAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FRP1 3' (+1877) - KpnI</td>
+      <td>This work</td>
+      <td>PCR primer 1542</td>
+      <td>ccGGTACCGCACAAGCGGGTACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FRP1 (+1550)-XhoI</td>
+      <td>This work</td>
+      <td>PCR primer 1543</td>
+      <td>GGCTCGAGTTTGTGAATGATGGCGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PGA7 (+1087)-HindIII</td>
+      <td>This work</td>
+      <td>PCR primer 1544</td>
+      <td>GCAAGCTTGGCATACTCAATTTGATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>5’-F1HEM1</td>
+      <td>This work</td>
+      <td>PCR primer</td>
+      <td>CCCTCAATAATCATAACAGTACTTAGGTTTTTTTTTCAGTCGGATCCCCGGGTTAATTAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>3’-R1HEM1</td>
+      <td>This work</td>
+      <td>PCR primer</td>
+      <td>CCTTGTACCTCTATCTCAGCCCATGCATATATTGGTTGTTGAATTCGAGCTCGTTTAAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Promoter 5’ (HTA2)</td>
+      <td>This work</td>
+      <td>PCR primer</td>
+      <td>TATATATTAAATTTGCTCTTGTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Promoter 3’ (HTB2)</td>
+      <td>This work</td>
+      <td>PCR primer</td>
+      <td>TAGTTGTAGAGTAAGTTGTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SacI-HTB2p –684</td>
+      <td>This work</td>
+      <td>PCR primer</td>
+      <td>gcgaGCTCTTGTTCTGTACTTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PGA7 5’</td>
+      <td>This work</td>
+      <td>PCR primer</td>
+      <td>GAACAAGAGCAAATTTAATATATAATGCATTTCATATTCTACTTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pga7-SacI (+697)</td>
+      <td>This work</td>
+      <td>PCR primer</td>
+      <td>Pga7-SacI (+697)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FRP1 5’</td>
+      <td>This work</td>
+      <td>PCR primer</td>
+      <td>CAACAACTTACTCTACAACTAATGGCTATTCCATTTGATCAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FRP1-SalI</td>
+      <td>This work</td>
+      <td>PCR primer</td>
+      <td>Ccccgtcgacggtatcga</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hemin</td>
+      <td>Frontier Scientific</td>
+      <td>H651-9</td>
+      <td>Hemin chloride</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bovine hemoglobin</td>
+      <td>Sigma-Aldrich</td>
+      <td>H2500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ferrozine</td>
+      <td>Sigma-Aldrich</td>
+      <td>P9762</td>
+      <td>3-(2-Pyridyl)–5,6-diphenyl-1,2,4-triazine-4’,4”-disulfonic acid sodium salt</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BPS</td>
+      <td>Sigma-Aldrich</td>
+      <td>B1375</td>
+      <td>Bathophenanthroline sulfonate</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ALA</td>
+      <td>Merck</td>
+      <td>08339</td>
+      <td>δ-Aminolevulinic acid</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GaPPIX</td>
+      <td>Frontier Scientific</td>
+      <td>P40167</td>
+      <td>Ga3+-protoporphyrin IX chloride</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CoPPIX</td>
+      <td>Frontier Scientific</td>
+      <td>Co654-9</td>
+      <td>Co3+-protoporphyrin IX chloride</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MnPPIX</td>
+      <td>Frontier Scientific</td>
+      <td>MnP562-9</td>
+      <td>Mn3+-protoporphyrin IX chloride</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ZnPPIX</td>
+      <td>Frontier Scientific</td>
+      <td>Zn625-9</td>
+      <td>Zn2+-protoporphyrin IX</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ZnMP</td>
+      <td>Chem-Cruz</td>
+      <td>Sc-396862</td>
+      <td>Zn2+-mesoporphyrin</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Alignment summary of 40 saccharomycetales species for phylogenetic profiling</td>
+      <td>This work</td>
+      <td></td>
+      <td>github.com/BKU-Technion/FRP</td>
+    </tr>
+  </tbody>
+</table>
+
+### Media and chemicals
 
 Cells were grown in YPD medium (1% yeast extract, 2% bacto-peptone, 2% glucose, tryptophan 150 mg/l) or in Synthetic Complete (SC) medium lacking specific amino acids, as indicated. SC medium contains, per liter, Yeast Nitrogen Base (USBiological) 1.7 g, (NH4)2SO4 5 g, the 20 amino acids, adenine and uridine, 0.1 g each except leucine, 0.2 g, glucose 20 g, and 0.2 mM inositol. YPD pH 7.5 or pH 8.5 were made by adding 0.1 M Tris-Cl from a 1 M stock of appropriate pH. Media were supplemented with the iron chelators ferrozine or BPS (Sigma) at 1 mM, hemin as indicated from a 2 mM stock in 50 mM NaOH, or bovine hemoglobin from a 0.5 mM stock in phosphate-buffered saline (Dulbecco’s PBS; Biological Industries, Israel). ALA (Merck) was added to 50 μg/ml in the medium to maintain the hem1 cells. Hemin, Ga3+-protoporphyrin IX, Co3+-protoporphyrin IX, Mn3+-protoporphyrin IX, Zn2+-protoporphyrin IX, and ZnMP were obtained from Frontier Scientific, and bovine hemoglobin from Sigma (H2500). ZnMP was added from a 6 mM stock made fresh in 10% ethanolamine, and Ga3+-protoporphyrin IX, Co3+-protoporphyrin IX, Mn3+-protoporphyrin IX, Zn2+-protoporphyrin IX were added from a 50 mM stock made fresh in DMSO.
 
-## Strains and plasmids
+### Strains and plasmids
 
 Candida albicans strains used are listed in Table 1. The FRP1 and FRP2 ‘blaster’ deletion plasmids, KB2392, -3 and KB2395, -6 were built by introducing 500 nt adjacent to the 5’ and 3’ ends of each gene into plasmids KB985 and KB986 (Atir-Lande et al., 2005). They were used to build strains KC859, KC870, KC901, KC912, KC913, KC923, KC966, KC1053, KC1061, KC1410, KC1412. KB2546 contains the FRP1 region (from –395 to +1877) cloned SpeI-KpnI into BES116 (Feng et al., 1999). It was used to make the FRP1 reintegrant strain KC1024. KB2576 contains the FRP2 region (from –895 to +1982) cloned SpeI-ApaI into BES116. It was used to make the FRP2 reintegrant strains KC1379, 1411. Vector BES116 was used to make strains KC811, 1023, 1146, 1246, 1414. KB2431 contains FRP1 (+3 to +1662, BamHI-XhoI) and KB2695 contains FRP2 (–969 to +1776, SpeI-XhoI) fused to the eGFP sequence of KB2430 (Bar-Yosef et al., 2018). They were used to construct KC914+KC916 and KC1245+KC1405, respectively. KC2575 contains the FRP1 promoter (−395 to –1) cloned in BES116 and then fused to the FRP2 open reading frame and 3’ region (+1 to +1878). It was used to make KC1064, KC1447. KB2450 and KB2696, containing FRP1 (–2 to +1826) and FRP2 (–3 to +1933), respectively, cloned SpeI-KpnI in KB2448, were used to make KC1080 and KC1244, respectively. KB2448 is BES116 with the SSB1 promoter region (−400 to –1) cloned NotI-SpeI. S. cerevisiae strain KY1498 is ura3-1 can1-100 GAL+leu2-3,112 trp1-1 ade2-1 his3-11,15 hem1Δ::KanMX. It was constructed by transforming strain W303-1A (Wallis et al., 1989) with a KanMX marker amplified from pFA6-kanMX6 (Longtine et al., 1998) using primers with 40 bp homology at each end to HEM1 adjacent sequences. To express FRP1 and PGA7 in S. cerevisiae, we first ordered a synthetic version of the FRP1 coding sequence (Hy-labs, Rehovot, Israel) with all ambiguous CTG codons changed to other leucine codons. We then amplified this gene, PGA7, and the promoter region located between the 5’ ends of the adjacent S. cerevisiae histone genes HTA2 and HTB2. Fusion PCR was used to fuse the three fragments, which were then cloned SacI-SalI in the vector p413GAL1 (Mumberg et al., 1994) (removing the GAL1 promoter) to generate KB2566. The HTA2-HTB2 promoter fragment was also fused to FRP1 alone and cloned likewise to generate KB2569. To generate KB2789, FRP1 was removed from KB2566 by digestion with EcoRV-NcoI, filling in and re-ligation.
 
-## Growth assays
+**Table 1.**
+ List of Candida albicans strains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Genotype</th>
+      <th>Origin</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>KC2=CAF3-1</td>
+      <td>ura3Δ::imm434/ura3Δ::imm434</td>
+      <td>Fonzi and Irwin, 1993</td>
+    </tr>
+    <tr>
+      <td>KC68</td>
+      <td>KC2 ccc2Δ::hisG/ccc2Δ::hisG</td>
+      <td>Weissman et al., 2002</td>
+    </tr>
+    <tr>
+      <td>KC139</td>
+      <td>KC68 rbt5Δ/rbt5Δ</td>
+      <td>Weissman and Kornitzer, 2004</td>
+    </tr>
+    <tr>
+      <td>KC485</td>
+      <td>KC68 pga7Δ/pga7Δ</td>
+      <td>Kuznets et al., 2014</td>
+    </tr>
+    <tr>
+      <td>KC590=CAI4</td>
+      <td>ura3Δ::imm434/ura3Δ::imm434</td>
+      <td>Fonzi and Irwin, 1993</td>
+    </tr>
+    <tr>
+      <td>KC646</td>
+      <td>KC590 pga7Δ/pga7Δ ADE2/ade2::URA3</td>
+      <td>Kuznets et al., 2014</td>
+    </tr>
+    <tr>
+      <td>KC647</td>
+      <td>KC590 pga7Δ/pga7Δ ADE2/ade2::PGA7 URA3</td>
+      <td>Kuznets et al., 2014</td>
+    </tr>
+    <tr>
+      <td>KC811</td>
+      <td>KC68 ADE2/ade2::URA3</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC859</td>
+      <td>KC2 FRP1/frp1Δ</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC870</td>
+      <td>KC2 frp1Δ/frp1Δ</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC901</td>
+      <td>KC2 FRP2/frp2Δ</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC912</td>
+      <td>KC2 frp2Δ/frp2Δ</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC913</td>
+      <td>KC68 frp2Δ/frp2Δ</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC914</td>
+      <td>KC2 FRP1/FRP1-GFP URA3</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC916</td>
+      <td>KC2 frp1Δ/FRP1-GFP URA3</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC923</td>
+      <td>KC68 frp1Δ/frp1Δ</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC966</td>
+      <td>KC590 frp1Δ/frp1Δ</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC1023</td>
+      <td>KC870 ADE2/ade2::URA3</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC1024</td>
+      <td>KC870 ADE2/ade2::FRP1 URA3</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC1053</td>
+      <td>KC590 frp2Δ/frp2Δ</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC1061</td>
+      <td>KC590 frp1Δ/frp1Δ frp2Δ/frp2Δ</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC1064</td>
+      <td>KC870 ADE2/ade2::FRP1p-FRP2 URA3</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC1080</td>
+      <td>KC870 ADE2/ade2::SSB1p-FRP1 URA3</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC1146</td>
+      <td>KC923 ADE2/ade2::URA3</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC1244</td>
+      <td>KC912 ADE2/ade2::SSB1p-FRP2 URA3</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC1245</td>
+      <td>KC912 frp2Δ/FRP2-GFP URA3</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC1246</td>
+      <td>KC912 ADE2/ade2::URA3</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC1379</td>
+      <td>KC912 ADE2/ade2::FRP2 URA3</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC1405</td>
+      <td>KC2 FRP2/FRP2-GFP URA3</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC1410</td>
+      <td>KC2 frp1Δ/frp1Δ frp2Δ/frp2Δ</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC1411</td>
+      <td>KC913 ADE2/ade2::FRP2 URA3</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC1412</td>
+      <td>KC923 frp2Δ/frp2Δ::hisG-URA3-hisG</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC1414</td>
+      <td>KC913 ADE2/ade2::URA3</td>
+      <td>This work</td>
+    </tr>
+    <tr>
+      <td>KC1447</td>
+      <td>KC912 ADE2/ade2:: FRP1p-FRP2 URA3</td>
+      <td>This work</td>
+    </tr>
+  </tbody>
+</table>
+
+### Growth assays
 
 For hemoglobin utilization, overnight cultures grown in YPD were diluted in the morning into a series of twofold dilutions of hemoglobin in YPD+ferrozine or BPS. Cells were inoculated in ﬂat-bottomed 96-well plates at OD600=0.00001, 150 µl per well. Plates were incubated at 30°C on an orbital shaker at 60 rpm and growth was measured by optical density (OD600) after 2 and 3 days with an ELISA reader. Cells were resuspended with a multi-pipettor before each reading. Each culture was done in triplicate. For MPP sensitivity, cells were inoculated in ﬂat-bottomed 96-well plates in YPD+1 mM ferrozine at OD600=0.0001, 150 µl per well. Plates were incubated at 30°C on an orbital shaker at 60 rpm and growth was measured by optical density (OD600) after 2 days with an ELISA reader. All experiments shown were performed more than once with similar results. The heme-iron utilization phenotypes were tested in different background strains (CCC2+/+, ccc2-/-) with similar results.
 
-## Heme sensor-binding assays
+### Heme sensor-binding assays
 
 The protocol was as described (Weissman et al., 2021). Briefly, each strain to be tested was transformed with the sensor plasmids KB2636 (WT HS1), KB2669 (M7A), as well as a vector plasmid. Overnight cultures were diluted to OD 600 = 0.2 and grown for 4 hr in the indicated hemin concentrations. For fluorescence measurements, cells were pelleted, washed once with PBS, resuspended to OD 600 = 5, and 0.2 ml were placed in duplicate in a black 96-well flat-bottom plates (Nunc Fluorotrac). Fluorescence was measured with a Tecan infinite 200 Pro reader, with eGFP: ex. 480 nm (9 nm bandwidth), em. 520 nm (20 nm bandwidth), and mKATE2 ex. 588 nm (9 nm bandwidth), em. 620 nm (20 nm bandwidth). Each strain was represented by three independent cultures, and each culture was measured twice (technical duplicate), the vector-only culture reading was substracted from all other readings, and the ratio of eGFP to mKATE2 was calculated. The experiment shown was preceded by four experiments with different strain combinations and media, all showing reduced heme intake in the frp1-/- and frp2-/- mutants compared to the wild-type. Statistical analysis: To test the effect of genotype and hemin concentration on the ratio, we used two-way ANOVA followed by Tukey’s honestly significant difference test, which controls for multiple comparisons. For each clone we report the results of pairwise comparisons between each hemin concentration and no hemin. The analysis was performed using R.
 
-## Microscopy
+### Microscopy
 
 Cells were imaged with a Zeiss Axioskop Imager epifluorescence microscope equipped with DIC optics, using a ×100 objective. For visualizing Frp1-GFP and Frp2-GFP, the GFP filter set was used with an exposure time of 6 s. Cells were inoculated a day before in YPD medium to reach late-log phase (OD600 = 5–8) in the morning before induction. For quantitation of subcellular localization, at least 100 cells were scored for each datapoint and each cell was given a score between 0 and 3 for each location. The scoring was done blind, on pictures taken by a different operator and given an arbitrary coding. The experiment shown was performed after a preliminary experiment with fewer timepoints that yielded similar results.
 
@@ -147,14 +1036,14 @@ CMAC vacuolar stain: CMAC was added to a logarithmically growing culture to 5 μ
 
 Hoechst 33342 nuclear stain: Hoechst 33342 was added to a logarithmically growing culture to 10 μg/ml from a 1 mg/ml stock in water and the cells were incubated a further 30 min at 30°C prior to microscopy visualization. For visualizing Hoechst 33342 by epifluorescence microscopy, the DAPI filter was used with an exposure time of 1 s.
 
-## Protein analysis
+### Protein analysis
 
 Protein extracts were obtained by resuspending three OD600 of cells in 120 μM of protein loading buffer, mixing the suspension with glass beads and shaking the suspension in a bead-beater (Next Advance Bullet Blender 24) for 5 min at 4°C. The supernatants were heated to 37°C for 5 min and loaded on Bio-Rad 4–20% pre-cast mini-gels. After Western transfer, the membranes were reacted with a rabbit anti-GFP polyclonal antibody (Abcam ab290) and with an anti-rabbit horseradish peroxidase-conjugated secondary antibody (Sigma A9169). Luminescence signals were visualized with a Vilber Fusion FX Spectra imager.
 
-## Phylogenetic profiling
+### Phylogenetic profiling
 
 Building the profiles: we performed a BLAST search (tblastn) with all C. albicans proteins as query and 40 Saccharomycotina genomes (reflecting 40 species) downloaded from the Joint Genome Institute site (https://mycocosm.jgi.doe.gov/mycocosm/home) and the Candida Genome Database site (http://www.candidagenome.org/) in May 2015. An alignment summary of each C. albicans protein with each of the 40 other species can be downloaded from https://github.com/BKU-Technion/FRP; BKU-Technion, 2022. For each protein we recorded the best score in each genome. We first looked at the profiles of Pga7/Rbt5/Csa2 and found that they are detectable in nine species out of this set of 40, including the more distant Blastobotrys (Arxula) adeninivorans and Trichomonascus petasosporus but excluding the more closely related Candida guilliermondii. We next looked at patterns of conservation of homologous proteins that mirror those of the CFEM proteins, that is, that are present in all nine species containing CFEM proteins and absent from all other genomes. Only Frp1/2 fulfilled this condition, that is, presence in the nine species containing Pga7/Rbt5/Csa2 homologs and absence in the other species, including C. guilliermondii.
 
-## Materials availability statement
+### Materials availability statement
 
 All strains and all plasmids are available upon request with no restrictions.

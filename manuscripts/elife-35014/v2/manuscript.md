@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.35014.001 Little is known about venom in young developmental stages of animals. The appearance of toxins and stinging cells during early embryonic stages in the sea anemone Nematostella vectensis suggests that venom is already expressed in eggs and larvae of this species. Here, we harness transcriptomic, biochemical and transgenic tools to study venom production dynamics in Nematostella . We find that venom composition and arsenal of toxin-producing cells change dramatically between developmental stages of this species. These findings can be explained by the vastly different interspecific interactions of each life stage, as individuals develop from a miniature non-feeding mobile planula to a larger sessile polyp that predates on other animals and interact differently with predators. Indeed, behavioral assays involving prey, predators and Nematostella are consistent with this hypothesis. Further, the results of this work suggest a much wider and dynamic venom landscape than initially appreciated in animals with a complex life cycle.
+Little is known about venom in young developmental stages of animals. The appearance of toxins and stinging cells during early embryonic stages in the sea anemone Nematostella vectensis suggests that venom is already expressed in eggs and larvae of this species. Here, we harness transcriptomic, biochemical and transgenic tools to study venom production dynamics in Nematostella. We find that venom composition and arsenal of toxin-producing cells change dramatically between developmental stages of this species. These findings can be explained by the vastly different interspecific interactions of each life stage, as individuals develop from a miniature non-feeding mobile planula to a larger sessile polyp that predates on other animals and interact differently with predators. Indeed, behavioral assays involving prey, predators and Nematostella are consistent with this hypothesis. Further, the results of this work suggest a much wider and dynamic venom landscape than initially appreciated in animals with a complex life cycle.
 
 ## Introduction
 
@@ -35,41 +35,61 @@ During the Nematostella life cycle, females release a gelatinous egg package and
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/35014/elife-35014-fig1-v2.jpg)
 
-**Figure 1.:** Nematostella development and tissues.(A) The life cycle of N. vectensis. (B) Dissected Nematostella female polyp. (C) Discharged planula nematocysts found in the medium after an encounter with A. salina nauplii. (D) Nematocysts of Nematostella planula pinned in the cuticle of an A. salina nauplii. (E–F) Heat maps of the nCounter differential expression levels of genes encoding toxins and other nematocyst proteins in various developmental stages and adult female tissues. (G) A graph at a logarithmic scale of the nCounter normalized expression levels of the genes encoding NEP3, NvePTx1 and Nv1 at each developmental stage. Each point is the average of three biological replicates and the error bars represent standard deviation. (H) A graph at a logarithmic scale of the mass spectrometry-measured iBAQ (Intensity-Based Absolute Quantification) values of the peptides NEP3, NvePTx1 and Nv1 at five developmental stages. Each point is the average of four technical replicates and the error bars represent standard deviation. Key for panels E and G: UE = Unfertilized Egg; B = Blastula; G = Gastrula; EP = Early Planula; LP = Late Planula; M = metamorphosis; PP = Primary Polyp; JP = Juvenile Polyp; MA = Mixed Adults; AM = Adult Male; AF = Adult Female. Key for panel F: M = Mesenteries; Px = Pharynx; Pa = Physa; T = Tentacles.
+**Figure 1.:** (A) The life cycle of N. vectensis. (B) Dissected Nematostella female polyp. (C) Discharged planula nematocysts found in the medium after an encounter with A. salina nauplii. (D) Nematocysts of Nematostella planula pinned in the cuticle of an A. salina nauplii. (E–F) Heat maps of the nCounter differential expression levels of genes encoding toxins and other nematocyst proteins in various developmental stages and adult female tissues. (G) A graph at a logarithmic scale of the nCounter normalized expression levels of the genes encoding NEP3, NvePTx1 and Nv1 at each developmental stage. Each point is the average of three biological replicates and the error bars represent standard deviation. (H) A graph at a logarithmic scale of the mass spectrometry-measured iBAQ (Intensity-Based Absolute Quantification) values of the peptides NEP3, NvePTx1 and Nv1 at five developmental stages. Each point is the average of four technical replicates and the error bars represent standard deviation. Key for panels E and G: UE = Unfertilized Egg; B = Blastula; G = Gastrula; EP = Early Planula; LP = Late Planula; M = metamorphosis; PP = Primary Polyp; JP = Juvenile Polyp; MA = Mixed Adults; AM = Adult Male; AF = Adult Female. Key for panel F: M = Mesenteries; Px = Pharynx; Pa = Physa; T = Tentacles.
 
 Using an integrated and comparative approach, we carefully quantify and characterize the spatiotemporal expression of known and novel Nematostella toxins across different developmental stages and employ transgenesis to understand the dynamics of venom production in a species with a complex life cycle. We correlate the dynamics of toxin expression in life stages with organismal-level behavior experiments that highlight differential responses of prey and predators when exposed to these stages.
 
 ## Results
 
-## Nematostella larvae are venomous
+### Nematostella larvae are venomous
 
 To assay the venomous potential of Nematostella larvae we incubated 4 days old swimming planulae with nauplii of the brine shrimp Artemia salina. Strikingly, within 10 min from the start of the incubation 3 out of 8 Artemia were paralyzed or dead, and within 90 min 7 of 8 were dead (Video 1), whereas in a control group without planulae all Artemia were alive. This experiment revealed that Nematostella planulae are capable of rapidly killing a crustacean that is larger than themselves. The relatively rapid effect and the size difference suggest that venom is involved in the process. Numerous discharged nematocysts were found in the water around the dead nauplii as well as in their cuticle (Figure 1C–D), further suggesting that the stinging capsules are involved in the envenomation process.
 
-## Distinct and dynamic expression patterns of toxin genes in Nematostella
+![Video 1.](https://cdn.elifesciences.org/articles/35014/elife-35014-video1.mp4.jpg)
+
+**Video 1.:** The panulae are rapidly paralyzing the nauplii after physical interaction. This movie is related to Figure 1.
+
+### Distinct and dynamic expression patterns of toxin genes in Nematostella
 
 To accurately measure the expression levels of known toxin genes, putative toxins and genes encoding nematocyst structural proteins we used the medium-throughput nCounter platform (see materials and methods), which was previously shown to exhibit high sensitivity and precision similar to that of real-time quantitative PCR (Prokopec et al., 2013). We assayed the RNA expression levels of the genes encoding the sodium channel modulator neurotoxin Nv1 (Moran et al., 2008a), the putative toxins NvePTx1, NEP3, NEP3-like, NEP4, NEP8 and NEP16 (Moran et al., 2013; Orts et al., 2013), the putative metallopeptidases NEP6 and NEP14 (Moran et al., 2013), NvLysin1b, a cytolytic toxin which may also serve for food digestion (Moran et al., 2012a), and the structural components of the nematocyst capsule Ncol1, Ncol3 and Ncol4 (David et al., 2008; Zenkert et al., 2011), as well as the putative nematocyst structural component NR2 (Moran et al., 2014). The RNA measurements were performed on nine developmental stages (Figure 1E), adults of each sex and four dissected tissues of an adult female (Figure 1F; Supplementary file 1). The nCounter analysis revealed that many of the genes form informative clusters (Figure 1E–F). It is noticeable that the expression patterns of NEP3, NEP3-like and NEP4 strongly clustered with those of genes encoding structural nematocyst components in both the developmental and tissue analyses (Figure 1E–F), which is consistent with the finding that these putative toxins are produced in nematocytes and are released from the capsule upon discharge (Moran et al., 2013). Other toxins such as Nv1, which was shown to be expressed in polyp ectodermal gland cells (Moran et al., 2012b), or Nvlysin1b, produced by large gland cells in the pharynx and mesenteries beginning in early developmental stages (Moran et al., 2012a), had different expression patterns in the nCounter analysis and did not form large clusters (Figure 1E–F). Expression levels of NEP3, Nv1 and NvePTx1 were strikingly distinct across development (Figure 1G). The expression of Nv1 is relatively low in early developmental stages and then sharply peaks in the juvenile and adult polyps to extraordinary levels that are higher by almost two orders of magnitude compared to the other toxins (Figure 1G). These expression levels can be explained by the fact that the Nematostella genome contains more than a dozen gene copies encoding Nv1 (Moran et al., 2008b) and the peak in transcriptional expression late in development is consistent with earlier observations at the protein level (Moran et al., 2012b). In contrast to Nv1, NEP3 is expressed at high levels already at gastrulation, peaks in the early planula and remains roughly stable throughout the rest of development into adulthood. Unlike the other toxins, the expression of NvePTx1 peaks at the unfertilized egg, drops sharply across development and rises again in the adult female (Figure 1G).
 
 As significant variations between toxin expression at the transcriptional level and protein level were recently reported (Madio et al., 2017), we complemented the expression of toxin genes in Nematostella using shotgun proteomics (tandem mass spectrometry MS/MS). We performed these quantifications in four replicates on lysates from four distinct developmental stages, as well as the separate sexes of the adult polyps (Figure 1H; Supplementary file 2). The dynamic expression patterns we observed at the protein level correlated well with the dynamics we observe at the transcriptomic level.
 
-## NvePTx1 is a maternally deposited toxin
+### NvePTx1 is a maternally deposited toxin
 
 NvePTx1 was originally identified as a homolog of the type five potassium channel blocker BCsTx3 from the sea anemone Bunodosoma caissarum (Orts et al., 2013). We also identified bioinformatically several homologous sequences in the sea anemones Anthopleura elegantissima and Metridium senile, and the hydrozoan Hydractinia symbiolongicarpus (Figure 2A). This suggests that this peptide family was already present in the last common ancestor of all Cnidaria but was lost multiple times in various cnidarian lineages.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/35014/elife-35014-fig2-v2.jpg)
 
-**Figure 2.:** Nematostella eggs.(A) Sequence alignment of NvePTx1 and its homologs from other cnidarian species. The arrowhead represents the proteolysis site that separates the mature toxin from the signal peptide. Accession numbers appear near each sequence. Nve = Nematostella vectensis; Bcs = Bunodosoma caissarum; Ael = Anthopleura elegantissima; Mse = Metridium senile; Hsy = Hydractinia symbiolongicurpus. (B–C) Zebrafish larvae 16 hr after incubation in NvePTx1 and BSA control. (D) Detection of NvePTx1 expression by ISH. From the blastula stage on, the oral pole is to the right. Close up on planula large elongated (E–F) and small round (G) gland cells stained by ISH for NvePTx1. Gland cells, which are discernible by their round vesicles are free of stain, scale bar is 10 µm. (H–I) An adult F0 female polyp that as a zygote was injected by an NvePTx1::mOrange2 construct. mOrange2 expression is noticeable in the gonads. Panel G is a close up of the region indicated in panel H by the yellow dotted box. Scale bar is 1000 µm (J) An egg package laid by the female from panel H. Many of eggs express mOrange2. Scale bar is 1000 µm. (K–M) Large elongated and (N–P) small round gland cells stained by anti mCherry. Scale bar is 10 µm.
+**Figure 2.:** (A) Sequence alignment of NvePTx1 and its homologs from other cnidarian species. The arrowhead represents the proteolysis site that separates the mature toxin from the signal peptide. Accession numbers appear near each sequence. Nve = Nematostella vectensis; Bcs = Bunodosoma caissarum; Ael = Anthopleura elegantissima; Mse = Metridium senile; Hsy = Hydractinia symbiolongicurpus. (B–C) Zebrafish larvae 16 hr after incubation in NvePTx1 and BSA control. (D) Detection of NvePTx1 expression by ISH. From the blastula stage on, the oral pole is to the right. Close up on planula large elongated (E–F) and small round (G) gland cells stained by ISH for NvePTx1. Gland cells, which are discernible by their round vesicles are free of stain, scale bar is 10 µm. (H–I) An adult F0 female polyp that as a zygote was injected by an NvePTx1::mOrange2 construct. mOrange2 expression is noticeable in the gonads. Panel G is a close up of the region indicated in panel H by the yellow dotted box. Scale bar is 1000 µm (J) An egg package laid by the female from panel H. Many of eggs express mOrange2. Scale bar is 1000 µm. (K–M) Large elongated and (N–P) small round gland cells stained by anti mCherry. Scale bar is 10 µm.
 
 First, to test if NvePTx1 is indeed a toxin we expressed it in a recombinant form and incubated 20 zebrafish (Danio rerio) larvae with 0.5 mg/ml of highly pure recombinant peptide (assayed by reverse phase chromatography) for 20 hr. Upon the addition of the toxin, the fish reacted rapidly, with an increase in swimming speed. After 2 hr of incubation 10 fish larvae had died, with the remaining fish dying over the next 18 hr (at which point the experiment had ended) (Figure 2B). The control group (incubated in 5 mg/ml bovine serum albumin) behaved normally throughout the experiment and all larvae were alive after a 20-hr incubation (Figure 2C). To complement the nCounter experiment, we assayed the spatiotemporal expression pattern of NvePTx1 by in situ hybridization (ISH). We observed that while NvePTx1 is expressed uniformly throughout the unfertilized egg and early post-fertilization stages, in the gastrula the expression becomes spatially-localized and seems to be absent from the oral and aboral poles (Figure 2D). In the planula, the expression is clearly observed in the ectoderm in packed gland cells absent from the two body poles, and upon metamorphosis, the expression diminishes (Figure 2D–E). The ISH reveals two types of gland cells, one large and elongated (Figure 2E–F) and another small and round (Figure 2G). The results of the ISH and nCounter experiments indicated that NvePTx1 is maternally deposited at the RNA level. Further, we could detect NvePTx1 peptide hits in our MS/MS analyses data (Figure 1H) as well as in supplementary datasets available from previous proteomic studies of Nematostella eggs (Lotan et al., 2014; Levitan et al., 2015), suggesting maternal deposition also at the protein level. To directly test this, we have injected into Nematostella zygotes a transgenesis construct that carries the gene encoding the fluorescent reporter mOrange2 (Shaner et al., 2004) fused to an NvePTx1 signal peptide downstream of a putative NvePTx1 promoter. Noticeably, several females of the injected first generation (F0) exhibited strong expression of mOrange2 in round structures in their mesenteries, which are most probably the ovaries where the eggs are formed (Figure 2H–I). This observation is congruent with the fact that the mesentery is the only female adult tissue where high NvePTx1 transcript levels are detected at high levels by the nCounter analysis (Figure 1F). Further, upon induction of spawning, the female polyps with the fluorescent mesenterial tissue released egg packages harboring plenty of fluorescent eggs (Figure 2J), strongly supporting maternal deposition of NvePTx1. Next, by performing an immunostaining assay on F1 transgenic animals we were able to verify the presence of two distinct types of ectodermal gland cells as identified by the ISH results (Figure 2K–M).
 
-## Phylogeny, primary structure and activity of NEP3
+### Phylogeny, primary structure and activity of NEP3
 
 The NEP3, NEP4, and NEP8 gene products were previously detected by MS/MS to be released from Nematostella nematocysts upon discharge and hence were hypothesized to be putative toxins (Moran et al., 2013). We detected an additional gene encoding a NEP3 homolog in the Nematostella genome and named it NEP3-like. The four nucleotide sequences were translated in silico and were suggested to encode precursors of secretory proteins equipped with typical signal peptides (according to SignalP online tool) (Petersen et al., 2011). An additional search in the Pfam database (Finn et al., 2010) showed that each precursor contains three ShKT sequence motives (PF01549, Figure 3A) typical for several potent cnidarian toxins (Aneiros et al., 1993; Castañeda and Harvey, 2009). Based on these common features and their sequence similarity, we designated NEP3, NEP3-like, NEP4, and NEP8 as the ‘NEP3 family’. We searched publicly available transcriptomic shotgun assembly databases and identified several sequences of homologs from the sea anemones Edwardsiella lineata, Aiptasia pallida and Anthopleura elegantissima as well as the stony corals Acropora digitifera and Stylophora pistillata, showing significant sequence similarity and identical domain structure to the NEP3 family members in Nematostella (Figure 3—figure supplement 1). A phylogenetic analysis revealed that each of NEP3, NEP4 and NEP8 from Nematostella formed a strongly supported (bootstrap values > 0.5) clade with a highly similar protein from Edwardsiella (Figure 3B), indicating orthology. Thus, the new sequences from Edwardsiella were named according to their Nematostella orthologs. As Nematostella and Edwardsiella are members of the basally branching sea anemone family Edwardsiidae (Rodríguez et al., 2014; Stefanik et al., 2014) and possess NEP3, NEP4 and NEP8, we can infer that those three proteins probably originated in the last common ancestor of the Edwardsiidae. Other cnidarian species bear more distantly related NEP3 family members, and their exact orthologous or paralogous nature could not be determined due to low bootstrap values (Figure 3B). However, their presence in stony corals suggests that those proteins already appeared 500 million years ago in the last common ancestor of stony corals and sea anemones (Shinzato et al., 2011), but were lost in multiple hexacorallian lineages.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/35014/elife-35014-fig3-v2.jpg)
+
+**Figure 3.:** (A) The primary structure of the NEP3 precursor. (B) A maximum-likelihood tree of the NEP3 family. Accession numbers appear near each sequence and bootstrap values (fraction of 1000 bootstraps) appear near each node. Nve = Nematostella vectensis; Eli: Edwardsiella lineata; Ael = Anthopleura elegans; Apa = Aiptasia pallida; Spi = Stylophora pistillata; Adi = Acropora digitifera. (C) Western blot with rat Anti-NEP3 antibody. Samples are discharged nematocyst extract (NE), native purified toxin (PT) and recombinant toxin (RT). (D–E) Zebrafish larvae after 16 hr incubation in NEP3 and BSA control. Arrowheads are pointing at twitched tails.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35014/elife-35014-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Accession numbers appear near each sequence. Nematostella sequences are in red.
+
 To check whether NEP3 serves as a toxin, we planned to express it in a recombinant form. However, it was initially not clear in what native form this protein is found in the animal as we detected a potential Lys-Arg tandem, which is a prominent cleavage signal in nematocyst proteins (Anderluh et al., 2000), between the first and second domains of NEP3. Hence, we decided to first explore the primary structure of the native mature NEP3. For this aim, we discharged lyophilized nematocysts and analyzed the molecular weight of NEP3 making part of the ejected protein mixture by western blot with custom polyclonal antibodies against the first NEP3 ShKT domain. However, the western blot resulted in two major bands (~10 and 12 kDa) (Figure 3C). A gradual three-step FPLC procedure of gel filtration, anion exchange and reverse phase chromatography was applied to purify the dominant NEP3 fragment, and at each stage we carried on with the fraction with the strongest western blot signal. This procedure yielded a nearly pure fraction of mature NEP3 fragment with molecular weight ~10 kDa. Comparison of the electrophoretic mobility of the native mature NEP3 and a recombinant peptide corresponding to the first domain showed that the two peptides possess highly similar molecular weights (Figure 3C). Thus, we conclude that a native peptide composed of only the first domain of NEP3 is found in Nematostella and is released from the nematocyst upon discharge. Following this finding we carried out a toxicity test where we incubated zebrafish larvae with 0.5 mg/ml recombinant mature NEP3. While in the control group (incubated for 20 hr in 5 mg/ml bovine serum albumin) all the 20 fish survived (Figure 3D), all 17 Danio fish larvae in the NEP3-treated group died within 5 hr and the larvae exhibited pronounced contraction and tail twitching (Figure 3E) suggesting that the mature NEP3 peptide might be neurotoxic.
 
-## Different nematocytes express different NEP3 family members
+### Different nematocytes express different NEP3 family members
 
 To gain improved resolution of the expression of the four NEP3 family members, we employed ISH to localize their expression in five developmental stages. All four genes are expressed in nematocytes on the surface of the early planula (Figure 4A; Figure 4—figure supplement 1). However, beginning at the late planula stage the expression of NEP8 shifts to only a handful of nematocytes in the lower pharynx (Figure 4A). In contrast to NEP8, the three other family members, NEP3, NEP3-like and NEP4 are expressed throughout the ectoderm in nematocytes, with high concentration of expressing cells in the oral pole. In the primary polyp, expression of NEP3, NEP3-like and NEP4 is noticeable in nematocytes in the body wall and physa ectoderm and in the upper and lower pharynx (Figure 4A). Further, in tentacle tips, which are very rich with nematocytes, there are large numbers of nematocytes expressing the three toxins, fitting well our nCounter results (Figure 1F). A superficial look on these results may give the impression that in Nematostella there is one small population of pharyngeal nematocytes that express NEP8 and another very large population of nematocytes that express NEP3, NEP3-like and NEP4 in much of the ectoderm. However, we decided to use double fluorescent ISH (dFISH) to check if this is truly the case.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/35014/elife-35014-fig4-v2.jpg)
+
+**Figure 4.:** (A) Expression of the NEP3 family members in five developmental stages of Nematostella as determined by ISH. (B) Expression of the NEP3 family members in planulae and polyps of Nematostella as determined by dFISH. In all panels, the oral pole is to the right.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/35014/elife-35014-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Scale bars are 20 µm.
 
 In the dFISH experiments, we localized the mRNA combinations of NEP3 with Ncol3, NEP3 with NEP3-like, NEP3 with NEP4, and NEP3-like with Ncol3. Unexpectedly, all the combinations showed only limited overlap in their expression, with NEP3-like and Ncol3 showing the highest overlap and NEP3 and NEP4 showing the lowest (Figure 4B). This result can be explained by two non-exclusive explanations: the first is that the nematogenesis (production nematocysts) is a highly dynamic process that requires different genes to be expressed at different times along the nematocyst maturation process; the second is that the three family members are mostly expressed in different nematocyte populations and only few nematocytes express all family members.
 
@@ -83,19 +103,78 @@ Next, we dissociated tentacles of transgenic F1 animals by a mixture of commerci
 
 However, at that point there was a possibility that the mOrange2 is noticeable only in developing nematocytes and that mature capsules are not glowing due to various technical limitations such as the mature capsule wall obstructing light. In order to test whether there are mature mOrange2-positive capsules in our transgenic line, we challenged the F1 polyps with Artemia nauplii and zebrafish larvae. We then took the attacked prey items and visualized them with fluorescent microscopy. Strikingly, mOrange2-positive capsules with glowing tubules were pinned in the crustacean and fish cuticle or skin, respectively (Figure 5P–Q), indicating that those are mature capsules. However, these capsules were accompanied by other capsules that were mOrange2-negative, strongly suggesting once again that only a certain nematocyte subpopulation in Nematostella is expressing NEP3.
 
-## Interaction between Nematostella and potential predators and prey
+### Interaction between Nematostella and potential predators and prey
 
 At different developmental stages Nematostella inhabits various ecological niches, and consequently its interaction with predators and prey may change throughout the life cycle. Here, we tested Nematostella interactions with the grass shrimp Palaemonetes sp. and the killifish Fundulus heteroclitus at egg, planula, primary polyp, and adult life stages (Table 1). Grass shrimps are reportedly predators of Nematostella (Kneib, 1985; Kneib, 1988), however, in our observations, when encountering the tentacles of adult polyps of Nematostella burrowed in substrate, shrimps immediately ‘jumped’ away from the tentacles (Video 2). In contrast, in the absence of the typical mud substrate, shrimps in an environment lacking food would consume adult polyps by starting to feed at the side of their body column, avoiding contact with the tentacles. These results are in agreement with a previous study that found that shrimps can generally prey on Nematostella polyps, but not when they are burrowed in the substrate (Posey and Hines, 1991). The response of grass shrimp to tentacle contact correlates well with the high sensitivity (LD50 = 1.25 ng/100 mg shrimp) of this species to Nv1 toxin, which is highly expressed in tentacles starting from the juvenile polyp stage.
+
+**Table 1.**
+ Interaction of Nematostella vectensis with potential predators, Palaemonetes sp. and Fundulus heteroclitus, at different life stages. ++ readily eats/eats when food is restricted for at least 2 days,+eats when food is restricted for at least 7 days, - does not consume or consider a food source, -- attempted to consume, but exhibited an adverse reaction in all treatments, NA not available. *Only when the eggs are treated with cysteine.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Egg package</th>
+      <th>Individual eggs</th>
+      <th>Planulae</th>
+      <th>Primary polyps</th>
+      <th>Adults (body exposed)</th>
+      <th>Adults burrowed in the substrate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Grass shrimp</td>
+      <td>++</td>
+      <td>++</td>
+      <td>-</td>
+      <td>+</td>
+      <td>+</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>Fish larvae</td>
+      <td>--</td>
+      <td>++*</td>
+      <td>--</td>
+      <td>--</td>
+      <td>--</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Fish adults</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+</td>
+      <td>-</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 2.](https://cdn.elifesciences.org/articles/35014/elife-35014-video2.mp4.jpg)
+
+**Video 2.:** Only the Nematostella tentacles are exposed and can be encountered by the shrimp. The shrimp readily jumps away once it comes into contact with the tentacles.
 
 Our results do indicate that Nematostella may be a potential food source for grass shrimp at earlier developmental stages (disassociated eggs, egg packages, planulae larvae, and primary polyps). Grass shrimp kept in an environment without food for more than 2 days consumed disassociated eggs and egg packages, which may be due to young embryonic stages not expressing Nv1. Further, injections of embryonically-expressed NvePTx1 and NEP3 (50 ng/100 mg shrimp) did not produce noticeable symptoms in grass shrimp. We did not observe any planulae larvae being consumed by grass shrimp. However, it is likely that grass shrimp do not regularly encounter planulae larvae as they have the potential to disperse away from the substrate in which the shrimp usually feed. When grass shrimps were provided with primary polyps they were consumed after 7 days when no other food sources were provided, suggesting that this food source is likely not preferred, but is ingested.
 
 Fundulus is omnivorous, and was reported to feed on a large variety of benthic organisms (James-Pirri et al., 2001; McMahon et al., 2005) and possibly prey on Nematostella (Wiltse et al., 1984). In the lab, adult fish did not attempt to eat adult polyps, nor did they attempt to eat disassociated eggs or planulae larvae, which may be due to their small size relative to the adult fish and may not even be recognized as a potential food source. Surprisingly, the fish larvae did feed on eggs when separated from the gelatinous portion of the egg package by cysteine treatment, but ejected from their mouths eggs that were separated from the package mechanically (Video 3). This suggests that the eggs might carry defensive compounds that are removed or inactivated by the cysteine. Fish do not eat eggs if encased within the egg package and attempted to remove the gelatinous egg package from their tails following coincidental encounters (Video 3). When provided planulae as a prey item, Fundulus larvae attempted to swallow the larvae but immediately released them and swam away (Video 4).
 
+![Video 3.](https://cdn.elifesciences.org/articles/35014/elife-35014-video3.mp4.jpg)
+
+**Video 3.:** Upon contact with the egg package, Fundulus reacts swiftly and escapes.
+
+![Video 4.](https://cdn.elifesciences.org/articles/35014/elife-35014-video4.mp4.jpg)
+
+**Video 4.:** Fundulus actively expels planulae from their mouths, if they were erroneously perceived as food.
+
 In the lab, Fundulus larvae (1–3 days post hatching) were consumed by adult Nematostella without substrate, but managed to avoid predation by Nematostella when substrate was present, however, this is likely due to the added vertical space provided to the fish larvae within the dishes containing substrate and anemones. Given more time, a coincidental encounter may occur, resulting in predation of the Fundulus larvae. Fundulus larvae actively avoid primary polyps, however, adults will consume them when food is limited (Table 1). To test the significance of this observation we exposed fish larvae to three treatments: dead Artemia (food source), silica beads (inert treatment), and primary polyps. Fundulus larvae spent more time in the bottom of the aquarium than the top when silica beads or Artemia were present and spent more time at the top than the bottom when the primary polyps were present (Figure 6). Time spent at each location was significantly different in our one way ANOVA analysis for top (p value = 0.035) and bottom (p value = 0.01) for each location, with the Tukey analysis indicating that the significant difference was found between primary polyps and the other two treatments, but not when comparing silica beads and Artemia at both locations (Figure 6). Thus, we can conclude that Fundulus larvae tend to avoid interactions with Nematostella primary polyps.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/35014/elife-35014-fig6-v2.jpg)
 
-**Figure 6.:** Artemia (red), silica beads (black), or Nematostella primary polyps (blue) in the top (open symbols) or bottom (closed symbols) third of the aquarium.Statistically significant differences between treatments identified using separate one way ANOVAs and the Tukey post hoc test are noted with an asterisk.
+**Figure 6.:** Statistically significant differences between treatments identified using separate one way ANOVAs and the Tukey post hoc test are noted with an asterisk.
 
 ## Discussion
 
@@ -107,7 +186,7 @@ Because venom in planulae is used purely for defense, whereas the venom in polyp
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/35014/elife-35014-fig7-v2.jpg)
 
-**Figure 7.:** Nematostella.This illustration summarizes the current work as well as previous works (Moran et al., 2012a; Moran et al., 2012b; Moran et al., 2013). The degree of expression overlap of NEP8 with other toxins is currently unknown.
+**Figure 7.:** This illustration summarizes the current work as well as previous works (Moran et al., 2012a; Moran et al., 2012b; Moran et al., 2013). The degree of expression overlap of NEP8 with other toxins is currently unknown.
 
 Chemical protection of the eggs was reported in several animals such as black widow spiders (Buffkin et al., 1971; Lei et al., 2015), snails (Dreon et al., 2013), octopuses and some fishes and amphibians (Bane et al., 2014). Our data on Nematostella NvePTx1 expressed in eggs and embryonic stages further support the idea of ecological importance of chemical defense in early life stages across the animal kingdom.
 
@@ -119,15 +198,15 @@ Variation in expression patterns of the NEP3 family members and the fact that at
 
 ## Materials and methods
 
-## Sea anemone culture
+### Sea anemone culture
 
 Nematostella embryos, larvae and juveniles were grown in 16‰ sea salt water at 22°C. Adults were grown in the same salinity but at 17°C. Polyps were fed with Artemia nauplii three times a week. Induction of gamete spawning was performed according to a published protocol (Genikhovich and Technau, 2009b).
 
-## nCounter analysis
+### nCounter analysis
 
 Total RNA from different developmental stages and body parts of adult female Nematostella was extracted with Tri-Reagent (Sigma-Aldrich, St. Louis, MO) according to manufacturer’s protocol, treated with Turbo DNAse (Thermo Fisher Scientific, Waltham, MA) and then re-extracted with Tri-Reagent. RNA quality was assessed on Bioanalyzer Nanochip (Agilent, Santa Clara, CA) and only samples with RNA Integrity Number (RIN) ≥8.0 were used. Each sample was prepared from dozens of specimens (adult polyps and their tissues) or from hundreds of specimens (all younger developmental stages) in order to normalize for any individual variation. Those samples were analyzed on the nCounter platform (NanoString Technologies, Seattle, WA, USA; performed by Agentek Ltd., Israel) in technical triplicates, each made from a different batch of specimens following a previously described protocol (Geiss et al., 2008). In brief, for each transcript to be tested, two probes were generated and hybridized to the respective mRNA. The mRNAs were immobilized on a cartridge and the barcodes on one of the probes were counted by an automated fluorescent microscope. For normalization we used a geometric mean of the expression levels of 5 reference genes with stable expression across development. The genes were selected as follows: we calculated the Shannon entropy (as described in [Schug et al., 2005]) for each of 23,041 Nematostella genes based on normalized transcript abundance estimates for six time-points of Nematostella development (Helm et al., 2013). We then ranked the genes by entropy, which indicates minimal temporal change in abundance, and from the top 20 chose five genes (NCBI Reference Sequences XM_001629766.1, XM_001628650.1, XM_001625670.1, XM_001640487.1 and XM_001624235.1) with complete gene models and mean abundance levels spanning the expected experimental range. Probe sequences, entropy scores and all raw and normalized nCounter read data are available in Supplementary file 1.
 
-## Semi-quantitative MS/MS analysis
+### Semi-quantitative MS/MS analysis
 
 Hundreds of unfertilized eggs, 4 days old planulae, 9 days old primary polyps, adult males (five individuals), and adult females (five individuals) were lysed in 8M urea, 400 mM ammonium bicarbonate solution and centrifuged (22000 × g, 20 min, 4°C). Protein concentrations were measured with BCA Protein Assay Kit (Thermo Fisher Scientific). Ten µg of protein were reduced with DTT and alkylated with iodoacetamide. Tryptic digestion (0.3 µg trypsin/sample) was performed overnight at 37°C, followed by addition of 0.05% ProteaseMAX Surfactant (Promega Corp., USA) and further incubation for 1 hr at 37°C. The tryptic peptides were desalted on self-made C18 StageTips (Rappsilber et al., 2007). A total of 1.25 µg of peptides from each sample were injected into the mass spectrometer.
 
@@ -135,31 +214,31 @@ MS analysis was performed in four technical replicates using a Q Exactive Plus m
 
 Mass spectra data were processed using the MaxQuant computational platform, version 1.5.3.12 (Cox and Mann, 2008). Peak lists were searched against translated coding sequences of gene models from N. vectensis. The search included cysteine carbamidomethylation as a fixed modification and oxidation of methionine and N-terminal acetylation as variable modifications. Peptides with minimum of seven amino-acid length were considered and the required FDR was set to 1% at the peptide and protein level. Protein identification required at least two unique or razor peptides per protein group. The dependent-peptide and match-between-runs options were used. Relative protein quantification was performed using iBAQ values. MS/MS raw files as well results of MaxQuant analysis were deposited to the ProteomeXchange Consortium via the PRIDE (Vizcaíno et al., 2016) partner repository with the data identifier PXD008218.
 
-## In situ hybridization (ISH)
+### In situ hybridization (ISH)
 
 Single and double ISH were performed as previously described (Genikhovich and Technau, 2009a; Moran et al., 2013). dFISH was performed also according to published protocols (Nakanishi et al., 2012; Wolenski et al., 2013) with tyramide conjugated to Dylight 488 and Dylight 594 fluorescent dyes (Thermo Fisher Scientific). In ISH and FISH, embryos older than 4 days were treated with 2 u/µl T1 RNAse (Thermo Fisher Scientific) after probe washing in order to reduce background. Stained embryos and larvae were visualized with an Eclipse Ni-U microscope equipped with a DS-Ri2 camera and an Elements BR software (Nikon, Tokyo, Japan). For each gene at least 20 specimens from each developmental stage were tested.
 
-## Transgenesis
+### Transgenesis
 
 To generate transgenic constructs, we replaced the mCherry gene with mOrange2 (Shaner et al., 2004) and replaced the promoter sequence of the pNvT-MHC::mCH plasmid (Renfer et al., 2010). For the NEP3 gene, we inserted to the plasmid 920 bp upstream of the transcription start site as well as the non-coding first exon, first intron and the part of the second exon that encodes the signal peptide of NEP3 (scaffold_7:1,219,288–1,221,320 of the Nematostella genome). For the NvePTX1 gene, we inserted to the plasmid 1033 bp upstream of the transcription start site as well as the non-coding first exon, first intron and the region of the second exon that encodes the signal peptide (scaffold_14:1,246,079–1,247,853 of the Nematostella genome). The constructs were injected with the yeast meganuclease I-SceI (New England Biolabs, Ipswich, MA) to facilitate genomic integration (Renfer et al., 2010). Transgenic animals were visualized under an SMZ18 stereomicroscope equipped with a DS-Qi2 camera (Nikon).
 
-## Immunostaining
+### Immunostaining
 
 Immunostaining was performed according to a previously described protocol (Moran et al., 2012b), employing a commercially-available rabbit polyclonal antibody against mCherry (Abcam) diluted to 1:400 and DAPI (Thermo Fisher Scientific) diluted to 1:500.
 
-## Phylogenetics
+### Phylogenetics
 
 Sequences of NEP and NvePTx1 protein families were retrieved using BLAST searches (Altschul et al., 1990) against NCBI’s non-redundant nucleotide sequence database and the EdwardsiellaBase (Stefanik et al., 2014). Maximum-likelihood analysis was employed for the reconstruction of the molecular evolutionary histories. Trees were generated using PhyML 3.0 (Guindon et al., 2010), and node support was evaluated with 1000 bootstrapping replicates.
 
-## Tentacle dissociation
+### Tentacle dissociation
 
 Tentacles of Nematostella were dissociated using a combination of papain (2 mg/ml; Sigma-Aldrich: P4762), collagenase (2 mg/ml; Sigma-Aldrich: C9407) and pronase (4 mg/ml; Sigma-Aldrich: P5147) in DTT (1.3 mM) and PBS solution (1.8 mM NaH2PO4, 8.41 mM Na2HPO4, 175 mM NaCl, pH 7.4). The tentacles were incubated with the protease mixture at 22°C overnight. The tissues were then dissociated into single cells by flicking the tubes gently and then by centrifugation at 400 × g for 15 min at 4°C, followed by resuspension in PBS.
 
-## Purification of NEP3 from nematocysts
+### Purification of NEP3 from nematocysts
 
 Lyophilized nematocysts were obtained from Monterey Bay Labs (Caesarea, Israel). 2.5 g of the nematocysts were discharged by incubation with 80 ml of 1% sodium triphosphate (Sigma-Aldrich). Following centrifugation (21,000 × g, 20 min), the crude extract was concentrated with Amicon centrifugal filters with 3 kDa cut off (Merck Millipore, Billerica, MA) to 2 ml volume, filtered through Amicon centrifugal filters with 50 kDa cut off (Merck Millipore) and used for further purification. At the first step, the extract was fractionated by size exclusion FPLC on a calibrated Superdex 75 column (60 × 1.6 cm, GE Healthcare, Little Chalfont, UK) in PBS buffer. Protein fractions with molecular weight less than 17.6 kDa were pooled and the PBS buffer was exchanged to 20 mM ethanolamine pH nine using Amicone centrifugal filters, cut off 3 kDa. At the second step, the SEC fractions were separated by anion exchange FPLC using a HiTrapQ HP column (1 ml, GE Healthcare) and a NaCl concentration gradient (0–750 mM NaCl in 30 column volumes, 20 mM ethanolamine pH 9.0). Fractions were analyzed by western blot with anti-Nep3 antibodies and positive ones were pooled. At the last step, Nep3 fragment was purified by reverse phase FPLC on a Resource RPC column (3 ml, GE Healthcare) using acetonitrile concentration gradient (8–60% CH3CN in 25 column volumes, 0.1% trifluoracetic acid). Fractions corresponding to individual peaks were collected and analyzed by western blot with anti-NEP3 antibodies.
 
-## Recombinant expression and purification of toxins
+### Recombinant expression and purification of toxins
 
 A synthetic DNA fragment encoding the full NEP3 polypeptide was purchased from GeneArt (Regensburg, Germany). The fragment corresponding to the first domain of NEP3 between the Lys-Arg cleavage sites was amplified by PCR, cloned and expressed as a His6-thioredoxin fusion protein in Shuffle T7 Escherichia coli strain (New England Biolabs).
 
@@ -167,11 +246,11 @@ Nv1 and NvePTx1 synthetic DNA fragments were purchased from Integrated DNA Techn
 
 The polyhistidine tag of the fusion proteins was used for purification from the E. coli lysate by nickel affinity FPLC. Purified fusion proteins were cleaved into two fragments by Tobacco Etch Virus (TEV) protease (room temperature, overnight) at a TEV protease cleavage site upstream the toxin fragments. The recombinant toxins were then purified by reverse phase FPLC on a Resource RPC column (GE Healthcare) using an acetonitrile concentration gradient in 0.1% trifluoroacetic acid.
 
-## Western blot
+### Western blot
 
 Custom polyclonal antibodies specific to the first domain of NEP3 were purchased from GenScript (Piscataway, NJ). Synthetic peptide containing the amino acid positions 47–91 was used as an antigen for immunization of two rats. The antibodies were affinity purified on a column coated with the antigen. Proteins were separated by electrophoresis on 10–20% gradient Tris-tricine gels (Bio-Rad, Hercules, CA) and consequently transferred to 0.2 um PVDF membranes (Bio-Rad). Membranes were blocked by 5% skim milk in TBST buffer (50 mM Tris base, 150 mM NaCl, 0.1% Tween 20, pH 7.6) and incubated with anti-NEP3 antibodies (1 ug/ml) in 5% Bovine serum albumin (BSA) in TBST buffer (4°C, overnight). This was followed by incubation with goat anti-rat IgG antibodies conjugated with horseradish peroxidase (0.1 ug/ml; Jackson ImmunoResearch, West Grove, PA) in 5% skim milk in TBST (room temperature, overnight). ECL reagent (GE Healthcare) was used for visualization of the protein bands interacting with anti-NEP3 antibodies. Chemiluminescence was recorded with an Odyssey Fc imaging system (LI-COR Biosciences, Lincoln, NE) and fluorescent size marker (Bio-Rad) was imaged on the same system.
 
-## Animals for prey-predator and toxicity assays
+### Animals for prey-predator and toxicity assays
 
 Danio rerio larvae younger than 120 hr were generously provided by Dr. Adi Inbal (The Hebrew University Medical School). The usage of such young larvae does not require ethical permits according to the European and Israeli laws.
 
@@ -179,13 +258,13 @@ Fertilized Fundulus eggs from Kings Creek, VA (37°18 16.2"N 76°24 58.9"W) and 
 
 The first batch of grass shrimps and adult Fundulus were collected at an estuary near Georgetown, SC (33°21'01.0"N 79°11'26.1"W). A second collection of grass shrimps were collected at Sippewissett Marsh, MA (41°35'22.9"N 70°38'17.0"W). Animals were transported to the lab and kept in 15 ‰ ASW until use. Interaction experiments were conducted in 15 ‰ ASW in 24-well plates or Pyrex bowls (~150 ml water, ~10 cm diameter), depending on size of animals and interactions being recorded. Grass shrimps were fed every day with either mussels or TetraMin tropical fish food (Tetra Holding, USA). Fundulus were fed twice daily with Artemia reared in the lab.
 
-## Toxicity assays
+### Toxicity assays
 
 To assess the toxicity of NEP3 and NvePTx1 on fish, 4 days old D. rerio larvae were incubated with 0.5 mg/ml peptides in 500 µl well. Each experiment was conducted in duplicates. 5 mg/ml BSA was used as a negative control. Three replicates were performed per treatment and each replicate included 5–7 larvae. Effect was filmed and monitored under an SMZ18 (Nikon) stereomicroscope after 5 min, 15 min, 1 hr, and 15–17 hr of incubation.
 
 To assess the toxicity on grass shrimps, Nv1, NEP3, and NvePTx1 were dissolved in PBS buffer to 2.5–50 ng/µl concentration and 1 µl was injected into the abdomen from the ventral side for every 200 mg of shrimp mass. Ten shrimps were injected at each concentration.
 
-## Interaction assays between different Nematostella life stages and potential prey and predator species
+### Interaction assays between different Nematostella life stages and potential prey and predator species
 
 For testing the interaction of Fundulus with Nematostella, fish larvae were put in 24 well plates and preliminary screenings involving duplicate experimental observations were conducted for 5–10 isolated eggs, planula larva, and primary polyps of Nematostella. Based on these initial observations, we conducted additional observational experiments in triplicates, with each well containing five Fundulus larvae interacting with several egg packages or dozens of planula larvae. For each assay, the fish were observed with portions of their interaction recorded to document how the fish responded to the egg packages or planula larvae. Additionally, for the isolated eggs, observational experiments were conducted with a single Fundulus larva in each well along with 10–15 eggs. The number of eggs were noted at the start of the experiment and observed every 2 hr over an 8 hr period. Observational experiments involving two Fundulus larvae and two adult Nematostella were conducted in duplicates using small Pyrex dishes (~50 ml of ASW) over a 2-day period, with and without substrate. For the adult Fundulus, observational experiments involving a single adult alongside eggs (>100), egg packages (4-5), larvae (>100), primary polyps (>100), and adult Nematostella polyps (3) were conducted over 48 hr in small Pyrex dishes (~200 ml water, ~10 cm diameter). Interactions were assayed in triplicates for shrimps, with a single shrimp interacting with different life stages: three egg packages, >100 eggs, >100 planula larvae, >100 primary polyps, and three adult Nematostella (with and without substrate). Across all observational experiments similar behavioral patterns were observed across experimental replicates, however, we were unable to identify exactly how many instances of an adverse reaction occurred during our observations. It was sometimes difficult to discern between the fish exhibiting sporadic swimming patterns, which we could not confidently link with them interacting with Nematostella.
 

@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.04288.001 The proteostasis network has evolved to support protein folding under normal conditions and to expand this capacity in response to proteotoxic stresses. Nevertheless, many pathogenic states are associated with protein misfolding, revealing in vivo limitations on quality control mechanisms. One contributor to these limitations is the physical characteristics of misfolded proteins, as exemplified by amyloids, which are largely resistant to clearance. However, other limitations imposed by the cellular environment are poorly understood. To identify cell-based restrictions on proteostasis capacity, we determined the mechanism by which thermal stress cures the [ PSI + ]/Sup35 prion. Remarkably, Sup35 amyloid is disassembled at elevated temperatures by the molecular chaperone Hsp104. This process requires Hsp104 engagement with heat-induced non-prion aggregates in late cell-cycle stage cells, which promotes its asymmetric retention and thereby effective activity. Thus, cell division imposes a potent limitation on proteostasis capacity that can be bypassed by the spatial engagement of a quality control factor. DOI: http://dx.doi.org/10.7554/eLife.04288.001
+The proteostasis network has evolved to support protein folding under normal conditions and to expand this capacity in response to proteotoxic stresses. Nevertheless, many pathogenic states are associated with protein misfolding, revealing in vivo limitations on quality control mechanisms. One contributor to these limitations is the physical characteristics of misfolded proteins, as exemplified by amyloids, which are largely resistant to clearance. However, other limitations imposed by the cellular environment are poorly understood. To identify cell-based restrictions on proteostasis capacity, we determined the mechanism by which thermal stress cures the [PSI+]/Sup35 prion. Remarkably, Sup35 amyloid is disassembled at elevated temperatures by the molecular chaperone Hsp104. This process requires Hsp104 engagement with heat-induced non-prion aggregates in late cell-cycle stage cells, which promotes its asymmetric retention and thereby effective activity. Thus, cell division imposes a potent limitation on proteostasis capacity that can be bypassed by the spatial engagement of a quality control factor.
 
 ## Introduction
 
@@ -30,63 +30,106 @@ To identify cell-based limitations on proteostasis capacity, we focused on the m
 
 ## Results
 
-## Sup35 amyloid is resolubilized by Hsp104 following thermal stress
+### Sup35 amyloid is resolubilized by Hsp104 following thermal stress
 
 Under normal growth conditions, [PSI+] propagates faithfully (Cox, 1965; Derkatch et al., 1996). However, at elevated temperatures where the PQC capacity is increased, [PSI+] becomes destabilized in a Sup35 conformation-specific manner. For example, the more thermodynamically stable but less efficiently propagated [PSI+]Weak variant is quantitatively ‘cured’ (i.e. converted to the non-prion [psi−] state) at elevated temperature in comparison with [PSI+]Strong, whose propagation is unaltered under the same conditions (Cox et al., 1988; Derkatch et al., 1996; Jung et al., 2000; Tanaka et al., 2006; Newnam et al., 2011). This curing of [PSI+]Weak was linked to the inhibition of the molecular chaperone Hsp104 (Newnam et al., 2011), an observation that is seemingly counter to the idea that proteostasis capacity increases in response to stress (Morimoto, 2011). However, in this study, stationary phase cultures were only briefly diluted into fresh medium to re-establish exponential growth before exposure to elevated temperature (Newnam et al., 2011). Because stationary phase alters chaperone expression and blocks [PSI+] curing at elevated temperature (Gasch et al., 2000; Newnam et al., 2011), residual effects from the growth phase switch could alter the interaction between Sup35 aggregates and PQC factors. Therefore, we revisited the effects of elevated temperature on [PSI+] propagation, beginning with exponentially growing cultures.
 
-To monitor transitions from the prion [
+To monitor transitions from the prion [PSI+] to the non-prion [psi−] state, we used yeast strains encoding a premature termination codon (PTC) in the ADE1 gene. In [PSI+] strains, Sup35 is functionally compromised, leading to stop-codon read-through and the formation of white or pink colonies on rich medium, but in [psi−] strains, termination is faithful at the PTC, leading to the formation of red colonies on rich medium (Chernoff et al., 1995). Transiently elevating the growth temperature from 30°C to 40°C had no effect on viability (Figure 1—figure supplement 1A) or on [PSI+]Strong propagation (Figure 1A) but induced [PSI+]Weak curing (Figure 1A,B). Notably, both fully red and sectored colonies were observed, indicating that curing happened during both the thermal stress and subsequent recovery (Figure 1B). Thus, [PSI+]Weak propagation is similarly sensitive to elevated temperature in exponentially growing cultures and in those that have recently exited stationary phase.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/04288/elife-04288-fig1-v1.jpg)
 
-**Figure 1.:** (A) [PSI+]Strong (SLL2606) and [PSI+]Weak (SLL2600) cultures were incubated for 30 min at the indicated temperatures before plating on rich medium at 30°C to analyze curing by colony color phenotype, as described in the text. (B) Quantification of [PSI+]Weak (SLL2600) colony color phenotypes following treatment as described in (A). Colonies were scored as completely [psi−] (black), or sectored (partially [psi−], white). Data represent averages; error bars represent standard deviations; n = 3. (C) Semi-native lysates of [psi−] (SLL2119), [PSI+]Weak (SLL2600), and [PSI+]Strong (SLL2606) cultures were analyzed by semi-denaturing detergent agarose gel electrophoresis (SDD-AGE) and immunoblotting for Sup35 after treatment as described in (A). (D) Sup35 released from amyoid aggregates in a [PSI]+Weak strain (SLL2600) following treatment as described in (A) and recovery at 30°C in the presence of cycloheximide was determined by treating lysates with 2% SDS at 53°C, followed by SDS-PAGE and quantitative immunoblotting for Sup35. Lines represent medians; boxes represents upper and lower quartiles, and whiskers represent maximum and minimum; n = 5; *p = 0.02, **p = 0.01 by paired t-test.DOI: http://dx.doi.org/10.7554/eLife.04288.003
+**Figure 1.:** (A) [PSI+]Strong (SLL2606) and [PSI+]Weak (SLL2600) cultures were incubated for 30 min at the indicated temperatures before plating on rich medium at 30°C to analyze curing by colony color phenotype, as described in the text. (B) Quantification of [PSI+]Weak (SLL2600) colony color phenotypes following treatment as described in (A). Colonies were scored as completely [psi−] (black), or sectored (partially [psi−], white). Data represent averages; error bars represent standard deviations; n = 3. (C) Semi-native lysates of [psi−] (SLL2119), [PSI+]Weak (SLL2600), and [PSI+]Strong (SLL2606) cultures were analyzed by semi-denaturing detergent agarose gel electrophoresis (SDD-AGE) and immunoblotting for Sup35 after treatment as described in (A). (D) Sup35 released from amyoid aggregates in a [PSI+]Weak strain (SLL2600) following treatment as described in (A) and recovery at 30°C in the presence of cycloheximide was determined by treating lysates with 2% SDS at 53°C, followed by SDS-PAGE and quantitative immunoblotting for Sup35. Lines represent medians; boxes represents upper and lower quartiles, and whiskers represent maximum and minimum; n = 5; *p = 0.02, **p = 0.01 by paired t-test.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/04288/elife-04288-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A). Exponentially growing [PSI+]Weak cultures (SLL2600) were incubated at 30°C, 37°C, 40°C, or 37°C before 40°C for 30 min and plated to YPD at 30°C to quantify colony forming units. Data represent means; error bars represent standard deviations; n ≥ 3. (B) [PSI+]Weak cultures (SLL2600) grown exponentially for 2 hr after dilution from a saturated overnight culture (left) or for at least 24 hr (right) were incubated at 40°C for 30 min and allowed to recover for 2 hr at 30°C. Lysates isolated from these cultures were analyzed by SDD-AGE and immunoblotting for Sup35.DOI: http://dx.doi.org/10.7554/eLife.04288.004
+**Figure 1—figure supplement 1.:** (A). Exponentially growing [PSI+]Weak cultures (SLL2600) were incubated at 30°C, 37°C, 40°C, or 37°C before 40°C for 30 min and plated to YPD at 30°C to quantify colony forming units. Data represent means; error bars represent standard deviations; n ≥ 3. (B) [PSI+]Weak cultures (SLL2600) grown exponentially for 2 hr after dilution from a saturated overnight culture (left) or for at least 24 hr (right) were incubated at 40°C for 30 min and allowed to recover for 2 hr at 30°C. Lysates isolated from these cultures were analyzed by SDD-AGE and immunoblotting for Sup35.
 
-At the normal growth temperature, large Sup35 aggregates are fragmented into smaller complexes by Hsp104 (
+At the normal growth temperature, large Sup35 aggregates are fragmented into smaller complexes by Hsp104 (Chernoff et al., 1995; Eaglestone et al., 2000; Ness et al., 2002; Satpute-Krishnan et al., 2007; Kawai-Noma et al., 2009). In a culture that recently exited stationary phase, the size of SDS-resistant Sup35 aggregates increased, as assessed by semi-denaturing detergent agarose gel electrophoresis (SDD-AGE) (Kryndushkin et al., 2003), following incubation at 40°C and a 2 hr recovery at 30°C (Figure 1—figure supplement 1B, left) (Newnam et al., 2011), consistent with an inhibition of fragmentation (Newnam et al., 2011). In contrast, SDS-resistant Sup35 aggregates were immediately reduced in size (Figure 1C, Figure 1—figure supplement 1B) and completely lost after recovery (Figure 1—figure supplement 1B, right) following identical treatment of an exponentially growing [PSI+]Weak strain, a progression suggesting the resolution of existing Sup35 aggregates. To test this possibility, we incubated a [PSI+]Weak culture at 40°C, returned the culture to 30°C in the presence of cycloheximide to repress new protein synthesis, and monitored the conversion of existing Sup35 from the amyloid [PSI+] state (i.e. SDS-resistant) to the non-amyloid [psi−] state (i.e. SDS-sensitive) (Serio et al., 2000; Satpute-Krishnan and Serio, 2005). In a control culture at 30°C, very little pre-existing Sup35 transitioned to an SDS-sensitive state despite the inhibition of new protein synthesis (Figure 1D), as expected (DiSalvo et al., 2011). However, following incubation at 40°C, over 70% of SDS-resistant Sup35 became detergent sensitive during recovery at 30°C (Figure 1D), indicating disassembly of existing Sup35 amyloid. To determine if the prion curing resulting from this disassembly was mediated by Hsp104, we chemically inhibited this factor with guanidine HCl (GdnHCl) treatment or reduced its dosage by creating a heterozygous disruption in a diploid strain (Eaglestone et al., 1999; Jung and Masison, 2001; Grimminger et al., 2004; Kummer et al., 2013; Tariq et al., 2013; Zeymer et al., 2013), and in both cases, [PSI+]Weak curing was reduced by more than 50% relative to the wild-type untreated strain (Figure 2A,B). Thus, Hsp104 promotes the disassembly of existing Sup35 amyloid in a [PSI+]Weak strain following thermal stress.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/04288/elife-04288-fig2-v1.jpg)
 
-**Figure 2.:** (A) [PSI+]Weak cultures (SLL2600) were incubated at 40°C for 30 min in the absence (untreated) or presence of guanidine HCl (GdnHCl) and plated on YPD to quantify prion loss by colony color phenotype. Data represent means; error bars represent standard deviations; n = 3; p = 0.0004 by unpaired t-test. (B) A WT (HSP104/+; SY945) and a heterozygous disruption (HSP104/Δ; SY591) [PSI]+Weak diploid strain were incubated at 40°C for 90 min and plated on YPD to quantify prion loss by colony color phenotype. Data represent means; error bars represent standard deviations; n = 3; p < 0.0001 by unpaired t-test. (C) [PSI+]Strong strains expressing an extra copy of either WT (SY1646) or G58D (SY1648) Sup35 were incubated at 40°C for 90 min and plated on YPD to quantify prion loss by colony color phenotype. Data represent means; error bars represent standard deviations; n = 4; p < 0.0001 by unpaired t-test. (D) A WT (SUP35/+; SLL3071) and a heterozygous disruption (SUP35/Δ; SY957) diploid [PSI+]Strong strain were incubated at 40°C for 90 min and plated on YPD to quantify prion loss by colony color phenotype. Data represent means; error bars represent standard deviations; n = 3; p < 0.0001 by unpaired t-test.DOI: http://dx.doi.org/10.7554/eLife.04288.005
+**Figure 2.:** (A) [PSI+]Weak cultures (SLL2600) were incubated at 40°C for 30 min in the absence (untreated) or presence of guanidine HCl (GdnHCl) and plated on YPD to quantify prion loss by colony color phenotype. Data represent means; error bars represent standard deviations; n = 3; p = 0.0004 by unpaired t-test. (B) A WT (HSP104/+; SY945) and a heterozygous disruption (HSP104/Δ; SY591) [PSI+]Weak diploid strain were incubated at 40°C for 90 min and plated on YPD to quantify prion loss by colony color phenotype. Data represent means; error bars represent standard deviations; n = 3; p < 0.0001 by unpaired t-test. (C) [PSI+]Strong strains expressing an extra copy of either WT (SY1646) or G58D (SY1648) Sup35 were incubated at 40°C for 90 min and plated on YPD to quantify prion loss by colony color phenotype. Data represent means; error bars represent standard deviations; n = 4; p < 0.0001 by unpaired t-test. (D) A WT (SUP35/+; SLL3071) and a heterozygous disruption (SUP35/Δ; SY957) diploid [PSI+]Strong strain were incubated at 40°C for 90 min and plated on YPD to quantify prion loss by colony color phenotype. Data represent means; error bars represent standard deviations; n = 3; p < 0.0001 by unpaired t-test.
 
 At elevated temperature, we noted that the size of SDS-resistant Sup35 aggregates is reduced in a [PSI+]Strong strain (Figure 1C), although curing does not occur (Figure 1A). Because [PSI+]Strong propagates more efficiently than [PSI+]Weak, the former may be protected from curing at elevated temperature if the rate of Sup35 assembly continued to outpace the rate of its disassembly, a scenario that should be reversed by reducing the efficiency of [PSI+]Strong propagation. To test this idea, we subjected [PSI+]Strong diploid strains heterozygous for either a Sup35 mutant (G58D) or for a Sup35 disruption, which both reduce propagation efficiency (Derdowski et al., 2010; DiSalvo et al., 2011), to thermal stress. At 30°C, [PSI+] propagation is stable in both of these strains (Figure 2C,D); however at 40°C, both were now efficiently cured (e.g. ∼100% for WT/G58D, ∼60% for SUP35/Δ) (Figure 2C,D). These observations not only provide additional support for Sup35 amyloid disassembly as the mechanism of prion curing in response to thermal stress but also reveal that the inability of chaperones to resolve amyloid in vivo results from both the physical characteristics of these aggregates and cell-based limitations, which are bypassed in the distinct proteostasis niche created at elevated temperature.
 
-## The asymmetric retention of Hsp104 is required for curing
+### The asymmetric retention of Hsp104 is required for curing
 
 Elevated temperature induces protein misfolding, and the cell responds to this stress by elevating the expression of PQC factors (Morimoto, 2011). To deconvolute the contributions of each of these events to [PSI+]Weak curing, we took advantage of the fact that we could modulate the efficiency of curing with variations in temperature. For example, while exposure to 40°C induced quantitative [PSI+]Weak curing, pretreatment at 37°C prior to exposure to 40°C slightly reduced curing (Figure 1A,B, compare proportion of fully cured colonies), and incubation at 37°C did not induce curing at all (Figure 1A,B). This failure to destabilize [PSI+]Weak at 37°C corresponded to an increase in aggregate size (Figure 1C) and a decrease in Sup35 solubilization (Figure 1D) relative to growth at 40°C alone, indicating a temperature-dependent modulation of amyloid resolution.
 
-To determine the molecular basis of these differences in curing efficiency, we first monitored the levels of Sup35, Hsp104, Ssa1/2 (Hsp70), and Sis1 (Hsp40) proteins, which have all been implicated in Sup35 amyloid fragmentation (
+To determine the molecular basis of these differences in curing efficiency, we first monitored the levels of Sup35, Hsp104, Ssa1/2 (Hsp70), and Sis1 (Hsp40) proteins, which have all been implicated in Sup35 amyloid fragmentation (Cox, 1965; Chernoff et al., 1995; Song et al., 2005; Higurashi et al., 2008; Tipton et al., 2008; Derdowski et al., 2010). By quantitative immunoblotting, neither Sup35 (Figure 3—figure supplement 1A) nor chaperone levels (Figure 3A, Figure 3—figure supplement 1B) correlated with curing efficiency (Figure 1A), indicating that [PSI+]Weak curing could not be explained by simple changes in protein expression. Indeed, the specific overexpression of Hsp104 alone from a galactose-inducible promoter to levels that parallel those achieved during thermal stress (Figure 3A and Figure 3—figure supplement 1C) induces ∼40% [PSI+]Weak curing (Figure 3—figure supplement 1D, 1.5 gen) in comparison with the ∼95% [PSI+]Weak curing induced by thermal stress (Figure 1B) (DiSalvo et al., 2011, Wegrzyn et al., 2001). Moreover, Hsp104 overexpression alone leads to an increase in the size of SDS-resistant Sup35 aggregates isolated from a [PSI+]Weak strain (Kryndushkin et al., 2003), as previously reported for [PSI+]Strong (Figure 3—figure supplement 1E) (Kryndushkin et al., 2003), but this outcome is in obvious contrast to the disassembly of Sup35 amyloid that we observe upon thermal stress (Figure 1C,D). Thus, thermal stress and chaperone overexpression induce distinct changes in prion propagation.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/04288/elife-04288-fig3-v1.jpg)
 
-**Figure 3.:** (A) A [PSI+]Weak strain (SLL2600) was incubated at 30°C, 37°C, 40°C, or 37°C before 40°C for 30 min, and lysates were prepared and analyzed by SDS-PAGE and quantitative immunoblotting for Hsp104 (black), Ssa1 (gray), and Sis1 (white). Data represent means; error bars represent standard deviations; n ≥ 3. (B) Aggregates from lysates of a [PSI+]Weak strain (SLL2600) following treatment as described in (A) were prepared and analyzed by differential centrifugation and Bradford assay. Data represent means; error bars represent standard error; n = 6; *p = 0.0014, **p = 0.0052 by paired t-test.DOI: http://dx.doi.org/10.7554/eLife.04288.006
+**Figure 3.:** (A) A [PSI+]Weak strain (SLL2600) was incubated at 30°C, 37°C, 40°C, or 37°C before 40°C for 30 min, and lysates were prepared and analyzed by SDS-PAGE and quantitative immunoblotting for Hsp104 (black), Ssa1 (gray), and Sis1 (white). Data represent means; error bars represent standard deviations; n ≥ 3. (B) Aggregates from lysates of a [PSI+]Weak strain (SLL2600) following treatment as described in (A) were prepared and analyzed by differential centrifugation and Bradford assay. Data represent means; error bars represent standard error; n = 6; *p = 0.0014, **p = 0.0052 by paired t-test.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/04288/elife-04288-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Lysates were isolated from [PSI+]Weak strains (SLL2600) incubated at 30°C, 37°C, 40°C, or 37°C before 40°C for 30 min and analyzed by SDS-PAGE and quantitative immunoblotting for Sup35. Data represent means; error bars represent standard deviations; n = 4. (B) Lysates were isolated from [PSI+]Weak strains (SLL2600) incubated at 30°C, 37°C, 40°C, or 37°C before 40°C for 30 min and analyzed by SDS-PAGE and quantitative immunoblotting for Hsp104, Ssa1, Sis1 or phosphoglycerate kinase (PGK) as a loading control (representative blot; see Figure 3A for quantification). (C) Lysates were isolated from a [PSI+]Weak strain containing a galactose-inducible HSP104 at the endogenous locus (SY1749) after galactose treatment and Hsp104 protein was quantified by SDS-PAGE and immunoblotting. Data represent means; error bars represent standard deviations; n = 3. (D) Galactose-inducible HSP104 [PSI+]Weak strains (SY1749) were grown in the presence of galactose for various times and plated on YPD for analysis of [PSI+] phenotype. Data represent means; error bars represent standard deviation; n = 3. (E) Lysates isolated from galactose-inducible HSP104 [PSI+]Strong (SY1748) or [PSI+]Weak (SY1749) cultures treated as described in (D) were analyzed by SDD-AGE and immunoblotting for Sup35. (F) Lysates were isolated from [PSI+]Strong (black) (SLL2606) and [psi−] (white) (SLL2119) strains that were treated as described in (B), and heat-induced protein aggregates were quantified following differential centrifugation and Bradford assay. Data represent means; error bars represent standard errors; n ≥ 5. (G) Lysates were isolated from a [PSI+]Weak strain (SLL2600) that was incubated at 30°C or 40°C for 30 min in the absence (untreated) or presence of GdnHCl, and heat-induced protein aggregates were quantified following differential centrifugation and Bradford assay. Data represent means; error bars represent standard error; n = 3.DOI: http://dx.doi.org/10.7554/eLife.04288.007
+**Figure 3—figure supplement 1.:** (A) Lysates were isolated from [PSI+]Weak strains (SLL2600) incubated at 30°C, 37°C, 40°C, or 37°C before 40°C for 30 min and analyzed by SDS-PAGE and quantitative immunoblotting for Sup35. Data represent means; error bars represent standard deviations; n = 4. (B) Lysates were isolated from [PSI+]Weak strains (SLL2600) incubated at 30°C, 37°C, 40°C, or 37°C before 40°C for 30 min and analyzed by SDS-PAGE and quantitative immunoblotting for Hsp104, Ssa1, Sis1 or phosphoglycerate kinase (PGK) as a loading control (representative blot; see Figure 3A for quantification). (C) Lysates were isolated from a [PSI+]Weak strain containing a galactose-inducible HSP104 at the endogenous locus (SY1749) after galactose treatment and Hsp104 protein was quantified by SDS-PAGE and immunoblotting. Data represent means; error bars represent standard deviations; n = 3. (D) Galactose-inducible HSP104 [PSI+]Weak strains (SY1749) were grown in the presence of galactose for various times and plated on YPD for analysis of [PSI+] phenotype. Data represent means; error bars represent standard deviation; n = 3. (E) Lysates isolated from galactose-inducible HSP104 [PSI+]Strong (SY1748) or [PSI+]Weak (SY1749) cultures treated as described in (D) were analyzed by SDD-AGE and immunoblotting for Sup35. (F) Lysates were isolated from [PSI+]Strong (black) (SLL2606) and [psi−] (white) (SLL2119) strains that were treated as described in (B), and heat-induced protein aggregates were quantified following differential centrifugation and Bradford assay. Data represent means; error bars represent standard errors; n ≥ 5. (G) Lysates were isolated from a [PSI+]Weak strain (SLL2600) that was incubated at 30°C or 40°C for 30 min in the absence (untreated) or presence of GdnHCl, and heat-induced protein aggregates were quantified following differential centrifugation and Bradford assay. Data represent means; error bars represent standard error; n = 3.
 
 We next assessed the accumulation of misfolded proteins following shifts in temperature to determine if this event correlated with [PSI+]Weak curing efficiency. By differential centrifugation, protein aggregates accumulated independent of prion status at all elevated temperatures (Figure 3B, Figure 3—figure supplement 1F), but in contrast to chaperone expression (Figure 3A, Figure 3—figure supplement 1B), the severity of this accumulation was impacted by growth temperature. At 37°C, protein aggregation increased by less than 10% in comparison with a culture maintained at 30°C (Figure 3B, column 1), but in cultures treated at 37°C followed by 40°C or directly at 40°C, this level rose to ∼20% or ∼40%, respectively (Figure 3B, columns 3 and 2). Thus, the accumulation of protein aggregates (Figure 3B) correlates directly with curing efficiency at the various temperatures (Figure 1A).
 
-We noted, however, that this correlation was not observed for a [
+We noted, however, that this correlation was not observed for a [PSI+]Weak culture treated with GdnHCl during a 40°C incubation, which strongly reduced curing efficiency (Figure 2A) but did not reduce the accumulation of protein aggregates (Figure 3—figure supplement 1G). Nevertheless, numerous studies have reported the localization of chaperones to cytoplasmic quality control foci upon exposure to proteotoxic stresses (Aguilaniu et al., 2003; Erjavec et al., 2007; Kaganovich et al., 2008; Specht et al., 2011; Wolfe et al., 2013), and GdnHCl blocks the association of Hsp104 with at least one substrate (Winkler et al., 2012). To determine if Hsp104 localization to heat-induced aggregates rather than their accumulation per se determined prion-curing efficiency, we replaced endogenous HSP104 with an HSP104-GFP fusion, which supports [PSI+] propagation (Figure 4—figure supplement 1A). At 40°C, this strain exhibited time-dependent [PSI+]Weak curing (Figure 4—figure supplement 1B) and accumulated protein aggregates (Figure 4—figure supplement 1C) and Hsp104-GFP to wild-type levels, albeit with slightly delayed kinetics (Figure 4—figure supplement 1D). At elevated temperatures, we observed an increase Hsp104-interacting proteins as assessed by co-immunocapture (Figure 4A) and the localization of Hsp104-GFP to cytoplasmic foci (Figure 4B,C), which also contain the model substrate firefly luciferase-mCherry (Figure 4—figure supplement 1E). The amount of co-immunocaptured proteins (Figure 4A [2.5-fold increase at 37°C and 4.2-fold increase at 40°C relative to 30°C]) and the number and intensity of Hsp104-GFP fluorescent foci (Figure 4C) corresponded to both the accumulation of heat-induced protein aggregates (Figure 3B) and the efficiency of curing (Figure 1A). Notably, the Hsp104-GFP fluorescence pattern was unaltered in a non-prion [psi−] strain (Figure 4B), indicating that Hsp104-GFP was engaged with non-prion substrates. Treatment of a [PSI+]Weak culture with GdnHCl during an incubation at 40°C, which strongly reduces Hsp104-GFP association with heat-induced interacting proteins (Figure 4A [1.7-fold decrease relative to 40°C in the absence of GdnHCl]) and localization to cytoplasmic foci (Figure 4—figure supplement 1F), also reduces the efficiency of curing (Figure 2A, Figure 4—figure supplement 1G). Thus, the specific engagement of Hsp104 with heat-induced aggregates, rather than simply their presence, correlates with curing at elevated temperature.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/04288/elife-04288-fig4-v1.jpg)
 
-**Figure 4.:** (A) A [PSI+]Weak strain with a GFP-tagged endogenous Hsp104 (SY2126) was incubated at 30°C, 37°C, 40°C, or 40°C with GdnHCl for 30 min, and immunocapture in the presence (+) or absence (−) of anti-GFP antibodies (Ab) was performed on native lysates. Proteins were analyzed by SDS-PAGE and general protein staining (Flamingo, top), or immunoblotting for GFP (bottom). (B) [PSI+]Weak (SY2126) or [psi−] (SY2125) HSP104GFP strains were incubated at 30°C, 37°C, 40°C, or 37°C before 40°C for 90 min, and the pattern of Hsp104-GFP fluorescence was examined by microscopy. Scale bar = 1 μm. (C) Quantification of Hsp104-GFP fluorescence pattern in [PSI+]Weak (SY2126) cells, treated as described in (B): no localization (white); single dot (light gray); faint aggregate (medium gray); bright aggregate (dark gray); multiple bright aggregates (black); n > 25.DOI: http://dx.doi.org/10.7554/eLife.04288.008
+**Figure 4.:** (A) A [PSI+]Weak strain with a GFP-tagged endogenous Hsp104 (SY2126) was incubated at 30°C, 37°C, 40°C, or 40°C with GdnHCl for 30 min, and immunocapture in the presence (+) or absence (−) of anti-GFP antibodies (Ab) was performed on native lysates. Proteins were analyzed by SDS-PAGE and general protein staining (Flamingo, top), or immunoblotting for GFP (bottom). (B) [PSI+]Weak (SY2126) or [psi−] (SY2125) HSP104GFP strains were incubated at 30°C, 37°C, 40°C, or 37°C before 40°C for 90 min, and the pattern of Hsp104-GFP fluorescence was examined by microscopy. Scale bar = 1 μm. (C) Quantification of Hsp104-GFP fluorescence pattern in [PSI+]Weak (SY2126) cells, treated as described in (B): no localization (white); single dot (light gray); faint aggregate (medium gray); bright aggregate (dark gray); multiple bright aggregates (black); n > 25.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/04288/elife-04288-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** (A) [PSI+]Weak (SLL2600) and [PSI+]Weak HSP104GFP (SY2126) strains were grown at 30°C, plated on YPD, and incubated at 30°C for analysis of [PSI+] colony color phenotype. (B) [PSI+]Weak (SLL2600, gray) and [PSI+]Weak HSP104GFP (SY2126, white) strains were incubated at 40°C for the indicated times and plated on YPD at 30°C for analysis of prion curing by colony color phenotype. Data represent means; error bars represent standard deviations; n = 3.(C) Lysates were isolated from WT (SLL2600) or HSP104GFP (SY2126) [PSI+]Weak strains that were incubated at 30°C or 40°C for 30 min, and heat-induced protein aggregates were quantified by differential centrifugation and Bradford assay. Data represent means; error bars represent standard error; n = 3. (D) Quantitative western blotting for Hsp104 was performed on lysates from [PSI+]Weak (SLL2600) and [PSI+]Weak HSP104GFP (SY2126) strains after incubation at 40°C for the indicated times. Data represent means; error bars represent standard deviations; n = 3. (E) Hsp104GFP and an mCherry-tagged firefly-luciferase (FFLmCh) reporter were visualized in a [PSI+]Weak strain (SY2802) by microscopy following incubation at 30°C or after a 30-min recovery from an incubation at 40°C for 90 min (30°C→40°C). Scale bar = 1 μm. (F) Hsp104GFP was visualized in a [PSI+]Weak strain (SY2126) by microscopy after a 90-min recovery from incubation at 40°C for 90 min in the absence (40°C) or presence of GdnHCl added before (GdnHCl→40°C) or after (40°C→GdnHCl) heat treatment. Scale bar = 1 μm. (G) [PSI+]Weak HSP104GFP cultures (SY2126) treated as described in (F) were plated on YPD and incubated at 30°C for analysis of [PSI+] colony color phenotype. Data represent means; error bars represent standard deviations; n = 3; *p = 0.0001,**p = 0.0089.DOI: http://dx.doi.org/10.7554/eLife.04288.009
+**Figure 4—figure supplement 1.:** (A) [PSI+]Weak (SLL2600) and [PSI+]Weak HSP104GFP (SY2126) strains were grown at 30°C, plated on YPD, and incubated at 30°C for analysis of [PSI+] colony color phenotype. (B) [PSI+]Weak (SLL2600, gray) and [PSI+]Weak HSP104GFP (SY2126, white) strains were incubated at 40°C for the indicated times and plated on YPD at 30°C for analysis of prion curing by colony color phenotype. Data represent means; error bars represent standard deviations; n = 3.(C) Lysates were isolated from WT (SLL2600) or HSP104GFP (SY2126) [PSI+]Weak strains that were incubated at 30°C or 40°C for 30 min, and heat-induced protein aggregates were quantified by differential centrifugation and Bradford assay. Data represent means; error bars represent standard error; n = 3. (D) Quantitative western blotting for Hsp104 was performed on lysates from [PSI+]Weak (SLL2600) and [PSI+]Weak HSP104GFP (SY2126) strains after incubation at 40°C for the indicated times. Data represent means; error bars represent standard deviations; n = 3. (E) Hsp104GFP and an mCherry-tagged firefly-luciferase (FFLmCh) reporter were visualized in a [PSI+]Weak strain (SY2802) by microscopy following incubation at 30°C or after a 30-min recovery from an incubation at 40°C for 90 min (30°C→40°C). Scale bar = 1 μm. (F) Hsp104GFP was visualized in a [PSI+]Weak strain (SY2126) by microscopy after a 90-min recovery from incubation at 40°C for 90 min in the absence (40°C) or presence of GdnHCl added before (GdnHCl→40°C) or after (40°C→GdnHCl) heat treatment. Scale bar = 1 μm. (G) [PSI+]Weak HSP104GFP cultures (SY2126) treated as described in (F) were plated on YPD and incubated at 30°C for analysis of [PSI+] colony color phenotype. Data represent means; error bars represent standard deviations; n = 3; *p = 0.0001,**p = 0.0089.
 
-How does this chaperone engagement with heat-induced aggregates lead to the resolution of Sup35 amyloid? One possibility is that the asymmetric localization of Hsp104, resulting from its engagement with heat-induced protein aggregates (
+How does this chaperone engagement with heat-induced aggregates lead to the resolution of Sup35 amyloid? One possibility is that the asymmetric localization of Hsp104, resulting from its engagement with heat-induced protein aggregates (Erjavec et al., 2007), increases its accumulation in a subpopulation of cells beyond that which can be achieved by its transcriptional up-regulation. To test this possibility, we first monitored the partitioning of Hsp104-GFP during cell division following incubation at various temperatures using microfluidics and fluorescence microscopy. Starting with budded cells, mother cells accumulated ∼60% of Hsp104-GFP following the completion of cell division at 30°C (Figure 5A, gray), which is comparable to the accumulation of untagged GFP expressed from the same promoter (Figure 5—figure supplement 1A) and thus likely reflects the volume differences between mother and daughter cells. This baseline asymmetry progressively increased as the temperature was increased to 37°C (∼65% retention), 37°C followed by 40°C (∼73% retention), and finally 40°C (∼75% retention; Figure 5A, gray). Notably, both Ssa1-GFP and Sis1-GFP fusions also localized to cytoplasmic, and, in the case of Sis1, nuclear foci (Figure 5—figure supplement 1B,C), but neither was asymmetrically retained following incubation at 40°C (Figure 5—figure supplement 1D,E), although their levels were elevated relative to 30°C (Table 1) due to their enhanced expression (Figure 3A). Thus, curing efficiency (Figure 1A,B) correlates directly with the asymmetric retention of Hsp104 in cells at elevated temperature.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/04288/elife-04288-fig5-v1.jpg)
 
-**Figure 5.:** (A) A [PSI+]Weak HSP104GFP culture (SY2126) was imaged over time in a microfluidics chamber at 30°C after a 30 min incubation at 30°C, 37°C, 40°C, or 37°C before 40°C. Fluorescence intensity in daughter and mother cells was quantified at the first cell division in cells that were budded (gray) or unbudded (orange) after thermal stress. Lines represent medians; boxes represent upper and lower quartiles, and whiskers represent maximum and minimum. All pairwise comparisons are significantly distinct, with a p < 0.015, except where indicated (N.S.), by unpaired t-test; n ≥ 10. (B) A [PSI+]Weak HSP104GFP WT (SY2126, gray) or BNI1 deletion strain (Δbni1) (SY2486, green) was imaged over time in a microfluidics chamber at 30°C after a 30 min incubation at 40°C. Fluorescence intensity in daughter and mother cells was quantified at the first cell division. Lines represent medians; boxes represent upper and lower quartiles; and whiskers represent maximum and minimum; n ≥ 14; p = 0.0075 by unpaired t-test. (C) [PSI+]Weak WT (SLL2600) or Δbni1 strains (SY1888), treated as described in (B), were plated on YPD to analyze curing by colony color phenotype. Data represent means; error bars represent standard deviations; n = 3; p < 0.0001 by unpaired t-test. (D) A [PSI+]Weak HSP104GFP strain (SY2126) was imaged over time in a microfluidics chamber at 30°C after a 30 min incubation at 40°C and with GdnHCl added before or after the 40°C incubation. Fluorescence intensity in daughter and mother cells was quantified at the first cell division. Lines represent medians; boxes represent upper and lower quartiles; and whiskers represent maximum and minimum; n > 11; *p = 0.0003, **p = 0.0026 by unpaired t-test. (E) A [PSI+]Weak strain (SLL2600) was incubated at 40°C for 30 min and plated on rich medium. Mother and daughter pairs were separated by micromanipulation and allowed to form colonies, which were then dispersed to YPD for analysis of curing by colony color phenotype. n = 15. (F) A [PSI+]Weak HSP104GFP culture (SY2126) was incubated at 30°C (dotted) or at 40°C for 30 min and allowed to recover for 30 min at 30°C (solid) before analysis of GFP fluorescence intensity by flow cytometry. Based on these intensities, cells were sorted into four fractions (orange, blue, purple, red) by FACS. (G) Cells collected in (F) were plated on YPD to analyze curing by colony color phenotype. Data represent means; error bars represent standard deviations; n = 2; *p = 0.02 by paired t-test.DOI: http://dx.doi.org/10.7554/eLife.04288.010
+**Figure 5.:** (A) A [PSI+]Weak HSP104GFP culture (SY2126) was imaged over time in a microfluidics chamber at 30°C after a 30 min incubation at 30°C, 37°C, 40°C, or 37°C before 40°C. Fluorescence intensity in daughter and mother cells was quantified at the first cell division in cells that were budded (gray) or unbudded (orange) after thermal stress. Lines represent medians; boxes represent upper and lower quartiles, and whiskers represent maximum and minimum. All pairwise comparisons are significantly distinct, with a p < 0.015, except where indicated (N.S.), by unpaired t-test; n ≥ 10. (B) A [PSI+]Weak HSP104GFP WT (SY2126, gray) or BNI1 deletion strain (Δbni1) (SY2486, green) was imaged over time in a microfluidics chamber at 30°C after a 30 min incubation at 40°C. Fluorescence intensity in daughter and mother cells was quantified at the first cell division. Lines represent medians; boxes represent upper and lower quartiles; and whiskers represent maximum and minimum; n ≥ 14; p = 0.0075 by unpaired t-test. (C) [PSI+]Weak WT (SLL2600) or Δbni1 strains (SY1888), treated as described in (B), were plated on YPD to analyze curing by colony color phenotype. Data represent means; error bars represent standard deviations; n = 3; p < 0.0001 by unpaired t-test. (D) A [PSI+]Weak HSP104GFP strain (SY2126) was imaged over time in a microfluidics chamber at 30°C after a 30 min incubation at 40°C and with GdnHCl added before or after the 40°C incubation. Fluorescence intensity in daughter and mother cells was quantified at the first cell division. Lines represent medians; boxes represent upper and lower quartiles; and whiskers represent maximum and minimum; n > 11; *p = 0.0003, **p = 0.0026 by unpaired t-test. (E) A [PSI+]Weak strain (SLL2600) was incubated at 40°C for 30 min and plated on rich medium. Mother and daughter pairs were separated by micromanipulation and allowed to form colonies, which were then dispersed to YPD for analysis of curing by colony color phenotype. n = 15. (F) A [PSI+]Weak HSP104GFP culture (SY2126) was incubated at 30°C (dotted) or at 40°C for 30 min and allowed to recover for 30 min at 30°C (solid) before analysis of GFP fluorescence intensity by flow cytometry. Based on these intensities, cells were sorted into four fractions (orange, blue, purple, red) by FACS. (G) Cells collected in (F) were plated on YPD to analyze curing by colony color phenotype. Data represent means; error bars represent standard deviations; n = 2; *p = 0.02 by paired t-test.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/04288/elife-04288-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** (A) A [psi−] strain expressing heat-inducible untagged GFP (SY2091) was imaged over time in a microfluidics chamber at 30°C after 30 min incubation at 40°C (red) or 30°C (gray). Fluorescence intensity in daughter and mother cells was quantified at the first cell division in budded cells. Lines represent medians, boxes represent upper and lower quartiles, and whiskers represent maximum and minimum; n ≥ 11. (B) A [PSI+]Weak strain expressing a GFP-tagged endogenous Ssa1 and DsRedNLS (SY2659) was imaged after a 90 min incubation at 30°C, 37°C, 40°C, or 37°C before 40°C. Scale bar = 2 μm. (C) A [PSI+]Weak strain expressing a GFP-tagged endogenous Sis1 and DsRedNLS (SY2485) was imaged after a 90-min incubation at 30°C, 37°C, 40°C, or 37°C before 40°C. Scale bar = 2 μm. (D) A [PSI+]Weak SSA1GFP culture (SY2658) was imaged over time in a microfluidics chamber at 30°C after a 30 min incubation at 40°C (red) or 30°C (gray). Fluorescence intensity in daughter and mother cells was quantified at the first cell division in budded cells. Lines represent medians, boxes represent upper and lower quartiles, and whiskers represent maximum and minimum; n > 15. (E) A [PSI+]Weak SIS1GFP culture (SY2447) was imaged over time in a microfluidics chamber at 30°C after a 30 min incubation at 40°C (red) or 30°C (gray). Fluorescence intensity in daughter and mother cells was quantified at the first cell division in budded cells. Lines represent medians, boxes represent upper and lower quartiles, and whiskers represent maximum and minimum; n ≥ 7. (F) Quantitative immunoblotting for Hsp104 was performed on lysates from WT (SLL2600) or Δbni1 (SY1888) [PSI+]Weak cultures treated at 30°C (black) and 40°C (white) for 30 min following SDS-PAGE. Data represent means; error bars represent standard deviations; n = 3. (G) Lysates were isolated from WT (SLL2600) or Δbni1 (SY1888) [PSI+]Weak strains that were incubated at 30°C or 40°C for 30 min, and heat-induced protein aggregates were analyzed by differential centrifugation and Bradford assay. Data represent means; error bars represent standard error; n = 3.DOI: http://dx.doi.org/10.7554/eLife.04288.011
+**Figure 5—figure supplement 1.:** (A) A [psi−] strain expressing heat-inducible untagged GFP (SY2091) was imaged over time in a microfluidics chamber at 30°C after 30 min incubation at 40°C (red) or 30°C (gray). Fluorescence intensity in daughter and mother cells was quantified at the first cell division in budded cells. Lines represent medians, boxes represent upper and lower quartiles, and whiskers represent maximum and minimum; n ≥ 11. (B) A [PSI+]Weak strain expressing a GFP-tagged endogenous Ssa1 and DsRedNLS (SY2659) was imaged after a 90 min incubation at 30°C, 37°C, 40°C, or 37°C before 40°C. Scale bar = 2 μm. (C) A [PSI+]Weak strain expressing a GFP-tagged endogenous Sis1 and DsRedNLS (SY2485) was imaged after a 90-min incubation at 30°C, 37°C, 40°C, or 37°C before 40°C. Scale bar = 2 μm. (D) A [PSI+]Weak SSA1GFP culture (SY2658) was imaged over time in a microfluidics chamber at 30°C after a 30 min incubation at 40°C (red) or 30°C (gray). Fluorescence intensity in daughter and mother cells was quantified at the first cell division in budded cells. Lines represent medians, boxes represent upper and lower quartiles, and whiskers represent maximum and minimum; n > 15. (E) A [PSI+]Weak SIS1GFP culture (SY2447) was imaged over time in a microfluidics chamber at 30°C after a 30 min incubation at 40°C (red) or 30°C (gray). Fluorescence intensity in daughter and mother cells was quantified at the first cell division in budded cells. Lines represent medians, boxes represent upper and lower quartiles, and whiskers represent maximum and minimum; n ≥ 7. (F) Quantitative immunoblotting for Hsp104 was performed on lysates from WT (SLL2600) or Δbni1 (SY1888) [PSI+]Weak cultures treated at 30°C (black) and 40°C (white) for 30 min following SDS-PAGE. Data represent means; error bars represent standard deviations; n = 3. (G) Lysates were isolated from WT (SLL2600) or Δbni1 (SY1888) [PSI+]Weak strains that were incubated at 30°C or 40°C for 30 min, and heat-induced protein aggregates were analyzed by differential centrifugation and Bradford assay. Data represent means; error bars represent standard error; n = 3.
+
+**Table 1.**
+ Relative fluorescence intensity in mother cells
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Treatment (°C)</th>
+      <th>Hsp104 (Relative to 30°C)</th>
+      <th>Ssa1 (Relative to 30°C)</th>
+      <th>Sis1 (Relative to 30°C)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>30°→30°</td>
+      <td>1 ± 0.1 (24)</td>
+      <td>1 ± 0.2 (29)</td>
+      <td>1 ± 0.1 (18)</td>
+    </tr>
+    <tr>
+      <td>30°→37°</td>
+      <td>1.6 ± 0.2 (11)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>30°→40°</td>
+      <td>3.5 ± 0.6 (52)</td>
+      <td>2.7 ± 0.5 (18)</td>
+      <td>1.5 ± 0.1 (7)</td>
+    </tr>
+    <tr>
+      <td>37°→40°</td>
+      <td>3.4 ± 0.4 (46)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_[PSI+]Weak HSP104GFP(SY2126), SSA1GFP (SY2658), or SIS1GFP (SY2447) cultures were treated at indicated temperatures and were imaged over time at 30°C using microfluidics and fluorescence microscopy. Average fluorescence intensity in mother cells with indicated standard deviations (±), which originated from budded cells at the time of thermal stress, was measured at the first cell division. Number of cells analyzed is indicated in parentheses. p values are <0.001 for all comparisons to 30°C treatment._
 
 To determine if this correlation was a requirement, we next disrupted the asymmetric retention of Hsp104 and determined its effects on curing. Disruption of the formin BNI1 (Kohno et al., 1996) did not alter Hsp104 expression levels or the accumulation of protein aggregates at 30°C and 40°C relative to a wild-type strain, (Figure 5—figure supplement 1F,G) but, Hsp104 asymmetric retention was reduced (Figure 5B, green), as expected (Liu et al., 2010). Strikingly, curing was dramatically suppressed from ∼80% for a wild-type strain to ∼10% in the Δbni1 strain (Figure 5C). Likewise, GdnHCl treatment before thermal stress, which blocked both Hsp104 engagement with heat-induced aggregates (Figure 4—figure supplement 1F) and curing at elevated temperature (Figure 2A, Figure 4—figure supplement 1G), also reduced Hsp104-GFP asymmetric retention following exposure to 40°C (Figure 5D). Thus, the asymmetric retention of Hsp104 is required for curing.
 
@@ -94,35 +137,35 @@ Our single-cell analyses of Hsp104-GFP partitioning indicated that a relatively 
 
 But, is Hsp104 enzymatic activity required for this curing, or is its asymmetric localization alone sufficient? As noted above, when cells are treated with GdnHCl before thermal stress, Hsp104 localization to cytoplasmic foci and asymmetric retention are both reduced (Figure 5D, Figure 4—figure supplement 1F). However, we reasoned the Hsp104 association with its substrates would be dynamic and modulated by its ATPase cycle. Indeed, blocking the ATPase activity of Hsp104 after thermal stress with a 90-min treatment with GdnHCl failed to reduce Hsp104-GFP localization to cytoplasmic foci (Figure 4—figure supplement 1F) or its asymmetric retention (Figure 5D), presumably because the chaperone bound to heat-induced substrates but was unable to release them once inhibited with GdnHCl. Despite the asymmetric localization of Hsp104-GFP under these conditions, [PSI+]Weak curing was reduced by nearly 50% (Figure 4—figure supplement 1G). Thus, both Hsp104 asymmetric localization and activity are required to induce [PSI+]Weak curing following thermal stress.
 
-## Cell-cycle stage and substrate-chaperone dynamics impact amyloid resolution
+### Cell-cycle stage and substrate-chaperone dynamics impact amyloid resolution
 
-The distribution of Hsp104-GFP in a population of [
+The distribution of Hsp104-GFP in a population of [PSI+]Weak cells that had been exposed to 40°C was very complex in contrast to the normal distribution of Hsp104-GFP at 30°C (Figure 5F), suggesting that subpopulations of cells were differentially retaining the chaperone. One source of heterogeneity in the population was cell-cycle stage, as our experiments used asynchronous cultures (Figure 6A). To determine if cell-cycle stage at the time of thermal stress impacted Hsp104 partitioning and explained this heterogeneity, we arrested cells in G1 with α-factor or at the G2/M transition with nocodazole (Amon, 2002), exposed these cultures to 40°C incubation, and analyzed them by flow cytometry. Treatment with α-factor (Figure 6B) and nocodazole (Figure 6C) efficiently synchronized cultures at the non-budded or large-budded stages, respectively, and did not alter Hsp104 protein levels or localization relative to the asynchronous culture at 30°C (Figure 6—figure supplement 1A,B). At 40°C, Hsp104-GFP protein levels increased to similar extents in the asynchronous and arrested cultures (Figure 6—figure supplement 1A), and its localization to cytoplasmic foci was similar in all cases (Figure 6—figure supplement 1B). By flow cytometry, the distribution of Hsp104-GFP in the α-factor arrested culture remained normal (Figure 6D), but in the nocodazole-arrested culture, this distribution became bimodal (Figure 6E), indicating that Hsp104-GFP asymmetry is established immediately, even before cell division.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/04288/elife-04288-fig6-v1.jpg)
 
-**Figure 6.:** (A) Single cells from an asynchronous WT [PSI]+Weak culture (SLL2600) were scored for morphology following bright-field imaging by microscopy: unbudded (black), tiny bud (dark gray), small bud (gray), medium bud (light gray), large bud (white). n = 153. (B) α-factor-arrested cultures were analyzed as in (A) over time after release. n ≥ 250. (C) Nocodazole-arrested cultures were analyzed as in (A) over time after release. n ≥ 175. (D) A [PSI+]Weak HSP104GFP strain (SY2126) released from α-factor arrest was incubated at 40°C (solid black lines) for 30 min before analysis by flow cytometry. 100,000 cells were analyzed per sample. (E) A [PSI+]Weak HSP104GFP strain (SY2126) released from nocodazole arrest was incubated at at 40°C (black lines) for 30 min before analysis by flow cytometry. 100,000 cells were analyzed per sample. (F) α-factor-arrested cultures (SLL2600) were incubated at 40°C for 30 min immediately or 30 min after release, and curing was quantified by colony color phenotype after plating on YPD at 30°C. Data represent means; error bars represent standard deviations; n = 3; p = 0.0255 by unpaired t-test. (G) Nocodazole-arrested cultures (SLL2600) were incubated at 40°C for 30 min immediately or 30 min after release, and curing was quantified colony color phenotype after plating on YPD at 30°C. Data represent means; error bars represent standard deviations; n = 3; p = 0.0263 by unpaired t-test.DOI: http://dx.doi.org/10.7554/eLife.04288.013
+**Figure 6.:** (A) Single cells from an asynchronous WT [PSI+]Weak culture (SLL2600) were scored for morphology following bright-field imaging by microscopy: unbudded (black), tiny bud (dark gray), small bud (gray), medium bud (light gray), large bud (white). n = 153. (B) α-factor-arrested cultures were analyzed as in (A) over time after release. n ≥ 250. (C) Nocodazole-arrested cultures were analyzed as in (A) over time after release. n ≥ 175. (D) A [PSI+]Weak HSP104GFP strain (SY2126) released from α-factor arrest was incubated at 40°C (solid black lines) for 30 min before analysis by flow cytometry. 100,000 cells were analyzed per sample. (E) A [PSI+]Weak HSP104GFP strain (SY2126) released from nocodazole arrest was incubated at at 40°C (black lines) for 30 min before analysis by flow cytometry. 100,000 cells were analyzed per sample. (F) α-factor-arrested cultures (SLL2600) were incubated at 40°C for 30 min immediately or 30 min after release, and curing was quantified by colony color phenotype after plating on YPD at 30°C. Data represent means; error bars represent standard deviations; n = 3; p = 0.0255 by unpaired t-test. (G) Nocodazole-arrested cultures (SLL2600) were incubated at 40°C for 30 min immediately or 30 min after release, and curing was quantified colony color phenotype after plating on YPD at 30°C. Data represent means; error bars represent standard deviations; n = 3; p = 0.0263 by unpaired t-test.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/04288/elife-04288-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** (A) Lysates were isolated from asynchronous, α-factor-arrested, or nocodazole-arrested [PSI+]Weak cultures (SLL2600) following incubation at 30°C (black) or 40°C (white) for 30 min, and the levels of Hsp104 were determined by quantitative immunoblotting following SDS-PAGE. Data represent means; error bars represent standard deviations; n = 3. (B) Asynchronous, α-factor-arrested, and nocodazole-arrested [PSI+]Weak HSP104GFP (SY2126) cultures were treated for 90 min at 30°C or 40°C and imaged by microscopy. Scale bar = 2 μm.DOI: http://dx.doi.org/10.7554/eLife.04288.014
+**Figure 6—figure supplement 1.:** (A) Lysates were isolated from asynchronous, α-factor-arrested, or nocodazole-arrested [PSI+]Weak cultures (SLL2600) following incubation at 30°C (black) or 40°C (white) for 30 min, and the levels of Hsp104 were determined by quantitative immunoblotting following SDS-PAGE. Data represent means; error bars represent standard deviations; n = 3. (B) Asynchronous, α-factor-arrested, and nocodazole-arrested [PSI+]Weak HSP104GFP (SY2126) cultures were treated for 90 min at 30°C or 40°C and imaged by microscopy. Scale bar = 2 μm.
 
 We next assessed the impact of cell-cycle stage on [PSI+]Weak curing at elevated temperature. Arrest, without exposure to elevated temperature, did not induce curing (Figure 6F,G). In α-factor arrested cells, exposure to 40°C at release inefficiently cured [PSI+]Weak (∼15%; Figure 6F), but in nocodazole-arrested cells, curing was nearly quantitative (∼90%; Figure 6G) consistent with the asymmetric localization of Hsp104-GFP in the latter but not the former case (Figure 6D,E). These observations suggest that cells at the end of the cell cycle are more sensitive to curing at elevated temperature than those at the beginning of the cell cycle. To test this idea, we released cultures from arrest and, after 30 min of growth at 30°C, exposed them to 40°C. For the culture originally arrested with α-factor, sensitivity to curing at elevated temperature increased (Figure 6F) as cells progressed into the late stages of the cell cycle (Figure 6B), and for the culture originally arrested with nocodazole, this sensitivity declined (Figure 6G) with cell-cycle progression (Figure 6C). Thus, curing occurs most efficiently when cells at a late stage of the cell cycle are exposed to elevated temperature.
 
 Our earlier experiments linked curing to the asymmetric retention of Hsp104 at elevated temperature (Figure 5). To determine if cell-cycle stage impacts this asymmetry, we analyzed Hsp104-GFP distribution in mother–daughter pairs resulting from the growth and division of unbudded cells isolated from asynchronous cultures that were exposed to elevated temperatures. In comparison with budded cells, Hsp104-GFP retention was significantly reduced at all temperatures when unbudded cells were exposed to elevated temperature, but the magnitude of the effect was most severe for conditions that induced curing (30°C→40°C and 37°C→40°C; Figure 5A, orange), indicating a cell-cycle stage dependence on Hsp104-GFP retention at elevated temperature.
 
-Because cell-cycle stage did not obviously alter the engagement of Hsp104-GFP with protein aggregates accumulating at elevated temperature (
+Because cell-cycle stage did not obviously alter the engagement of Hsp104-GFP with protein aggregates accumulating at elevated temperature (Figure 6—figure supplement 1B), the more efficient partitioning of Hsp104-GFP and the reduced curing in unbudded cells could reflect the resolution of heat-induced protein aggregates and thereby the release of Hsp104-GFP during the extended time before cell division in comparison with budded cells. Indeed, nearly 100% of cells contained Hsp104-GFP foci immediately after thermal stress (Figure 7A) but only ∼80% still contained foci when cell division re-initiated ∼150 min after incubation at 40°C (Figure 7A). Thus, the relative timing of substrate release and cell division could contribute to Hsp104 asymmetric retention and thereby curing. Consistent with this idea, 60% of unbudded cells, which are inefficiently cured (Figure 6F), resolved Hsp104-GFP foci prior to cell division (Figure 7B [165–210 min], Figure 7C), allowing the partitioning of the chaperone (Figures 7B and 5A, orange). In budded cells, which are efficiently cured (Figure 6G), only ∼8% of cells had resolved heat-induced Hsp104-GFP foci by the time the cell divided (Figure 7B [105 min], Figure 7C), leading to the asymmetric retention of Hsp104-GFP (Figures 7B and 5A, gray). Together, these observations indicate that Hsp104 is retained in cells exposed to elevated temperature if it is unable to resolve its heat-induced substrates prior to cell division. Because sensitivity to curing at elevated temperature correlated with cell-cycle stage (Figure 6F,G) and Hsp104-GFP localization to these cytoplasmic foci (Figure 5), substrate–chaperone dynamics must create a temporal limitation on proteostasis capacity.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/04288/elife-04288-fig7-v1.jpg)
 
-**Figure 7.:** (A) The number of [PSI]+Weak HSP104GFP (SY2126) cells containing fluorescent foci was quantified in cultures recovering at 30°C over time following a 90 min incubation at 40°C (white). Colony forming units in these cultures were quantified by plating (black). Data represent means; error bars represent standard deviations; n = 3. (B) [PSI]+Weak HSP104GFP cells (SY2126) treated for 30 min at 40°C and imaged over time in a microfluidics chamber are shown. Cells that were budded at the time of thermal stress are outlined in white, while unbudded cells are outlined in orange. Solid lines mark mothers, and dotted lines mark daughters. Scale bar = 1 µm. (C) A [PSI]+Weak HSP104GFP strain (SY2126) was imaged over time in a microfluidics at 30°C after a 30 min incubation at 40°C chamber. Budded or unbudded cells were scored at the first cell division for the presence or absence of fluorescent aggregates. Data represent means; error bars represent standard deviations; n = 3; p = 0.0005 by unpaired t-test.DOI: http://dx.doi.org/10.7554/eLife.04288.015
+**Figure 7.:** (A) The number of [PSI+]Weak HSP104GFP (SY2126) cells containing fluorescent foci was quantified in cultures recovering at 30°C over time following a 90 min incubation at 40°C (white). Colony forming units in these cultures were quantified by plating (black). Data represent means; error bars represent standard deviations; n = 3. (B) [PSI+]Weak HSP104GFP cells (SY2126) treated for 30 min at 40°C and imaged over time in a microfluidics chamber are shown. Cells that were budded at the time of thermal stress are outlined in white, while unbudded cells are outlined in orange. Solid lines mark mothers, and dotted lines mark daughters. Scale bar = 1 µm. (C) A [PSI+]Weak HSP104GFP strain (SY2126) was imaged over time in a microfluidics at 30°C after a 30 min incubation at 40°C chamber. Budded or unbudded cells were scored at the first cell division for the presence or absence of fluorescent aggregates. Data represent means; error bars represent standard deviations; n = 3; p = 0.0005 by unpaired t-test.
 
 ## Discussion
 
-In
+In Saccharomyces cerevisiae, expression of the molecular chaperone Hsp104, even at its low basal level, reduces organismal fitness at the normal growth temperature; however, survival at elevated temperatures is absolutely dependent on Hsp104, whose expression is induced to high levels by heat shock (Sanchez et al., 1992; Escusa-Toret et al., 2013). Thus, cell-based limitations must finely tune proteostasis capacity not only to control protein misfolding induced by stress but also to allow normal protein folding in the absence of these challenges (Morimoto, 2008). Using the yeast prion [PSI+] as a model to understand the in vivo interactions between amyloid and PQC pathways, we have uncovered one such pathway. While [PSI+]Weak is mitotically stable at the normal growth temperature (∼3% loss) (Derkatch et al., 1996), a transient sub-lethal thermal stress induces quantitative curing (Figure 1 and Figure 8) through the disassembly of existing Sup35 amyloid by Hsp104 (Figures 1, 2 and 8). Our studies indicate that the increase in Hsp104 expression at elevated temperature alone is not sufficient to induce Sup35 amyloid resolution and [PSI+]Weak curing (Figures 1, 3). Rather, Hsp104 must engage heat-induced protein aggregates for a period that exceeds the time to the next cell division (Figures 7, 8). As a result, Hsp104 is asymmetrically localized to the cells that experienced the thermal stress (Figures 5, 8), and this increase in chaperone accumulation, along with its activity, promotes curing in the same cells (Figures 5, 8). Thus, chaperone spatial engagement, substrate processing dynamics, and partitioning during cell division represent cell based limitations on proteostasis capacity.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/04288/elife-04288-fig8-v1.jpg)
 
-**Figure 8.:** Upon thermal stress, cellular proteins (green) misfold and aggregate, leading to the induction and recruitment of Hsp104 (barrel). If thermal stress occurs in unbudded cells (1), these aggregates are resolved prior to cell division, allowing the partitioning of Hsp104 to both mother (black) and daughter (gray) cells (left). If thermal stress occurs in budded cells (2), heat-induced aggregates persist upon cell division (3), leading to the asymmetric retention of Hsp104 in mother cells. Both heat-induced aggregates (green) and Sup35 amyloid (blue corkscrews) are resolved in cells accumulating high levels of Hsp104, leading to curing (red, 4).DOI: http://dx.doi.org/10.7554/eLife.04288.016
+**Figure 8.:** Upon thermal stress, cellular proteins (green) misfold and aggregate, leading to the induction and recruitment of Hsp104 (barrel). If thermal stress occurs in unbudded cells (1), these aggregates are resolved prior to cell division, allowing the partitioning of Hsp104 to both mother (black) and daughter (gray) cells (left). If thermal stress occurs in budded cells (2), heat-induced aggregates persist upon cell division (3), leading to the asymmetric retention of Hsp104 in mother cells. Both heat-induced aggregates (green) and Sup35 amyloid (blue corkscrews) are resolved in cells accumulating high levels of Hsp104, leading to curing (red, 4).
 
 Metazoans lack an Hsp104 homolog (Torrente and Shorter, 2013), but disaggregase activity has also recently been linked to a multi-component system in yeast comprised of Hsp110, Hsp70, and Hsp40, and this activity is conserved in the C. elegans and human homologs of these chaperones (Shorter, 2011; Rampelt et al., 2012; Mattoo et al., 2013). This system is largely ineffective in the disaggregation of amyloid in vitro (Shorter, 2011) but can promote the slow disassembly of amyloid from fiber ends in the presence of small heat shock proteins, such as Hsp26 and Hsp42 from yeast or HspB5 from humans (Duennwald et al., 2012). Like Hsp104 in yeast, Hsp110 localizes to foci containing misfolded protein in human cells following thermal stress (Rampelt et al., 2012) and interacts with protein amyloids in vivo (Ishihara et al., 2003; Wang et al., 2009; Olzscha et al., 2011), raising the possibility that Hsp110 engagement with stress-induced substrates could also promote its activity toward amyloidogenic substrates in vivo.
 
@@ -138,22 +181,379 @@ Together, our observations suggest an alternative to the view that the physical 
 
 ## Materials and methods
 
-## Plasmid and strain construction
+### Plasmid and strain construction
 
-All plasmids used in this study were previously reported (Table 2) except for SB1013 (pRS306PGPD-FFL-mCherry), which contains firefly luciferase as an Xba1/BamHI fragment and mCherry as a BamHI/XhoI fragment, separated by a three-repeat glycine–serine linker. The ORFs were amplified by PCR using primers 5XbaI firefly/3BamHI firefly and 5BamHIGS3mCherry/3XhoImCherry, respectively (Table 3) and confirmed by sequencing. All strains of Saccharomyces cerevisiae used in this study are derivatives of 74-D694 (Table 4) (Chernoff et al., 1995). A WT [PSI+]Weak diploid strain (SY945) was generated by mating SY2600 with SLL3252 (Table 4). The diploid state was confirmed by sporulation. SY591, a [PSI+]Weak strain containing a heterozygous deletion of HSP104, was created by transformation of a PvuI-BamHI fragment of pYABL5 (a kind gift of S. Lindquist) into SY945 and selection on medium lacking leucine. Disruptions were verified by PCR and 2:2 marker segregation upon sporulation and dissection. SY957, a [PSI+]Strong diploid strain containing a heterozygous disruption of SUP35, was created by transforming a PCR-generated cassette using pFA6a-KanMX4 as a template with primers SD27 and SD28 (Table 3) into SLL3071 (Table 4). Integration was confirmed by PCR using primers Psup352/PTEFCH and Sup35 3′chk/pFa6 test (Table 3). The galactose-inducible HSP104 strains were made by integrating BstBI-linearized SB630 (Table 2) into SY197 (Table 4) and selecting transformants on medium lacking uracil. Galactose-inducible expression of Hsp104 was confirmed by western blotting. [PSI+]Strong and [PSI+]Weak were then cytoduced into this strain from SY1698 and SY1699, respectively, to create SY1748 and SY1749 (Table 4), respectively (Conde and Fink, 1976). Cytoductants were selected by growth on synthetic medium containing glycerol and lacking uracil and by colony color on YPD. The HSP104-GFP [psi−] strain (SY2125) was created by transforming a PCR-generated cassette using pFA6a-GFP(S65T)-KanMX6 as a template with primers HSP104-GFP F-A and HSP104-GFP R-A (Table 3) into WT [PSI+]Strong strains and selection on medium containing 300 μg/ml G418. Integration was confirmed by PCR using primers Hsp104for/GFP-R and pFa6 test/Hsp104 3 flank R (Table 3), and expression was confirmed by fluorescence microscopy. These strains were cured of the prion by growth on YPD plates containing 3 mM GdnHCl (Tuite et al., 1981). The [PSI+]Weak variant (SY2126) was generated by mating SY2125 to a WT [PSI+]Weak strain (SLL2600) and sporulation. Tetrads were dissected to recover haploids, and HSP104-GFP isolates were verified by G418 resistance, fluorescence microscopy, and quantitative immunoblotting for Hsp104. The heat inducible GFP strain (SY2091) was generated by transformation of a WT [psi−] strain (SLL2119) with Bsu36I-digested SB849 (Table 2). Expression was confirmed by fluorescence microscopy. SSA1-GFP (SY2658) and SIS1-GFP (SY2447) [PSI+]Weak strains were created by transforming PCR-generated cassettes using pFA6a-GFP(S65T)-KanMX6 as a template with primers GFP-GS-Ssa1-F/GFP-Ssa1-R or Sis1-GFP-F GS/Sis1-GFP-R (Table 3), respectively, into WT [PSI+]Strong strains and selection on medium containing 300 μg/ml G418. Expression was confirmed by fluorescence microscopy and quantitative immunoblotting for Ssa1/2 and Sis1, respectively. These strains were cured of the prion by growth on YPD plates containing 3 mM GdnHCl, mitochondrial loss was induced by growth in 25 μg/ml ethidium bromide, and [PSI+]Weak was transferred to them by cytoduction (Cox, 1965), using SY1699 as a donor strain. Cytoductants were selected by growth on glycerol medium and 300 μg/ml G418. SSA1-GFP and SIS1-GFP [PSI+]Weak strains containing a nuclear-localized fluorescent reporter protein (DsRed-NLS, SY2659, and SY485, respectively) were generated by transforming SY2658 or SY2447 with Bsu36I-digested SB503 (Table 2). Expression was confirmed by fluorescence microscopy. The Δbni1 [PSI+]Weak strain (SY1888) was created by transforming a PCR-generated cassette using pFA6a-KanMX4 as a template with primers AD-BNI1-f and AD-BNI1-r (Table 3) into a [PSI+]Weak diploid (SY782, a cross between SY2600 and SY86, Table 4). Transformants were selected on medium containing 300 μg/ml G418 and verified by PCR using primers AD-BNI1-fseq/PTEFCH and AD-BNI1-rseq/pFa6 test (Table 3). The haploid Δbni1 [PSI+]Weak strain was then generated by sporulation and tetrad dissection and verified by G418 resistance. The HSP104-GFP Δbni1 [PSI+]Weak strain (SY2486) was created by transforming SY2126 with a PCR-generated cassette using pFA6a-hphMX4 as a template with primers AD-BNI1-f and AD-BNI1-r (Table 3). Transformants were confirmed by PCR using primers AD-BNI1-fseq/PTEFCH and AD-BNI1-rseq/pFa6 test (Table 4) and growth on YPD plates containing 300 μg/ml hygromycin B.10.7554/eLife.04288.017Table 2.PlasmidsDOI: http://dx.doi.org/10.7554/eLife.04288.017NameDescriptionSB20pRS306-PSup35N(GS)3sGFP(GS)3MCSB503pRS304-PGPDGST-DsRED-NLSSB630pRS306-PGALHsp104SB657pRS306-PtetO2Sup35SB658pRS306-PtetO2Sup35(G58D)SB849pRS306-PHSEGFPSB1013pRS306-PGPDFFL-mCherry10.7554/eLife.04288.018Table 3.PrimersDOI: http://dx.doi.org/10.7554/eLife.04288.018NameSequence5XbaI firefly5′-TCTAGAATGGAAGATGCCAAAAACATTAAG-3′3BamHI firefly5′-GGATCCACCTTGAGACTGTGGTTGGAAAC-3′5BamHI GS3mCherry5′-GGATCCGGTAGTGGTAGTGGTAGTATGGTGAGCAAGGG CGAGGAG-3′3XhoI mCherry5′-CTCGAGTTACTTGTACAGCTCGTCCATGCCG-3′SD275′-ACTTGCTCGGAATAACATCTATATCTGCCCACTAGCAACA CAGCTGAAGCTTCGTACGC-3′SD285′-GGTATTATTGTGTTTGCATTTACTTATGTTTGCAAGAAATG CATAGGCCACTAGTGGATCTG-3′Psup3525′-GAGATGCTCATCAAGGG-3′PTEFCH5′-GCACGTCAAGACTGTCAAGG-3′Sup35 3′chk5′-TATTTACGAAGGAGACCCGGAG-3′pFa6 test5′-TGCCCAGATGCGAAGTTAAGTG-3′HSP104-GFP F-A5′-CGATAATGAGGACAGTATGGAAATTGATGATGACCTA GATCGGATCCCCGGGTTAATTAA-3′Hsp104-GFP R-A5′-TATTATATTACTGATTCTTGTTCGAAAGTTTTTAAAAATC GAATTCGAGCTCGTTTAAAC-3′Hsp104for5′-GGCACATCCTGATGTTTTGA-3′GFP-R5′-CCTTCACCCTCTCCACTGACAG-3′Hsp104 3 flank R5′-CCGTATTCTAATAATGGACCAATC-3′GFP-GS-Ssa1-F5′-AGCTCCAGAGGCTGAAGGTCCAACCGTTGAAGAAGTTG ATGGTTCTGGTTCTGGTTCTCGGATCCCCGGGTTAATTAA-3′GFP-Ssa1-R5′-ACCCAGATCATTAAAAGACATTTTCGTTATTATCAATTGC GAATTCGAGCTCGTTTAAAC-3′Sis1-GFP-F GS5′-ACTAAACGACGCTCAAAAACGTGCTATAGATGAAAATTT TGGTTCTGGTTCTGGTTCTCGGATCCCCGGGTTAATTAA-3′Sis1-GFP-R5′-ATTTATTTGAGTTTATAATTATATTTGCTTAGGATTACTAG AATTCGAGCTCGTTTAAAC-3′AD-BNI1-f5′-ATGTTGAAGAATTCAGGCTCCAAACATTCGAACTCAAAG GCAGCTGAAGCTTCGTACGC-3′AD-BNI1-r5′-TTATTTGAAACTTAGCCTGTTACCTGTCCTAGCCTCACCT GCATAGGCCACTAGTGGATCTG-3′AD-BNI1-fseq5′-GACATCGGTTAGAGGAAG-3′AD-BNI1-rseq5′-CACTGTGCTTGTCACTTA-3′10.7554/eLife.04288.019Table 4.Yeast strainsDOI: http://dx.doi.org/10.7554/eLife.04288.019StrainGenotypePlasmids integratedReferenceFigureSLL2119MATa [psi−] ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3, 112-Chernoff et al., 19951c, 3SfSLL2600MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3, 112-Derkatch et al., 19961, 2a, 3, 5ce, 6abcfg, 1S, 3Sabg, 4Sabcd, 5Sfg, 6SaSLL2606MATa [PSI+]Strong ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3, 112-Chernoff et al., 19951ac, 3SfSLL3071MATa/α [PSI+]Strong ade1-14/ade1-14 his3Δ200/his3Δ200 trp1-289/ trp1-289 ura3-52/ura3-52 leu2-3112/ leu2-3112-DiSalvo et al., 20112dSLL3252MATa [psi−] ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3, 112-Chernoff et al., 1995‘Materials and methods’SY86MATα [psi−] ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3, 112 sup35::N(GS)3GFP(GS)3MCSB20Derdowski et al., 2010‘Materials and methods’SY197MATa [psi−] ade1-14 his3-11,-15 trp1-1 ura3-1 leu2-3112 can1-100-J Weissman (YJW513)‘Materials and methods’SY591MATa/α [PSI+]Weak ade1-14/ade1-14 his3Δ200/his3Δ200 TRP/ trp1-289 ura3-52/ura3-52 leu2-3112/ leu2-3112 HSP104/hsp104::LEU2-This study2bSY782MATa/α [PSI+]Weak ade1-14/ade1-14 his3Δ200/his3Δ200 trp1-289/ trp1-289 ura3-52/ura3-52 leu2-3112/ leu2-3112 SUP35/sup35::N(GS)3GFP(GS)3MC-This study‘Materials and methods’SY945MATa/α [PSI+]Weak ade1-14/ade1-14 his3Δ200/his3Δ200 trp1-289/ trp1-289 ura3-52/ura3-52 leu2-3112/ leu2-3112-This study2bSY957MATa/α [PSI+]Strong ade1-14/ade1-14 his3Δ200/his3Δ200 trp1-289/ trp1-289 ura3-52/ura3-52 leu2-3112/ leu2-3112 SUP35/sup35::KANMX4-This study2dSY1646MATa/α [PSI+]Strong ade1-14/ade1-14 his3Δ200/his3Δ200 trp1-289/ trp1-289 ura3-52/ura3-52::URA3::PtetO2SUP35 leu2-3112/ leu2-3112 SUP35/sup35::KANMX4SB657DiSalvo et al., 20112cSY1648MATa/α [PSI+]Strong ade1-14/ade1-14 his3Δ200/his3Δ200 trp1-289/ trp1-289 ura3-52/ura3-52::URA3::PtetO2SUP35(G58D) leu2-3112/ leu2-3112 SUP35/sup35::KANMX4SB658DiSalvo et al., 20112cSY1698MATα [PSI+]Strong ade1-14 his3Δ200 ura3-52 leu2-3 kar1-d15 ConR CyhR-This study‘Materials and methods’SY1699MATα [PSI+]Weak ade1-14 his3Δ200 ura3-52 leu2-3 kar1-d15 ConR CyhR-This study‘Materials and methods’SY1748MATa [PSI+]Strong ade1-14 his3-11,-15 trp1-1 ura3-1::URA3::PGALHSP104 leu2-3112 can1-100SB630This study3SeSY1749MATa [PSI+]Weak ade1-14 his3-11,-15 trp1-1 ura3-1::URA3::PGALHSP104 leu2-3112 can1-100SB630This study3ScdeSY1888MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3, 112 Δbni1::KANMX4-This study5c, 5SfgSY2091MATa [psi−] ade1-14 his3Δ200 trp1-289 ura3-52::URA::PHSEGFP leu2-3, 112SB849This study5SaSY2125MATα [psi−] ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3112 HSP104GFP::KANMX6-This study4bSY2126MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3112 HSP104GFP::KANMX6-This study4, 5abdfg, 6de, 7, 4Sabcdfg, 6SbSY2447MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3112 SIS1GFP::KANMX6-This study5SeSY2485MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289::TRP::PGPDGST-DsRed-NLS ura3-52 leu2-3112 SIS1GFP::KANMX6SB503This study5ScSY2486MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3, 112 HSP104GFP::KANMX6 Δbni1::hphMX4-This study5bSY2658MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3112 SSA1GFP::KANMX6-This study5SdSY2659MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289::TRP::PGPDGST-DsRed-NLS ura3-52 leu2-3112 SSA1GFP::KANMX6SB503This study5SbSY2802MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289 ura3-52::URA::PGPDFirefly-mCherry leu2-3112 HSP104GFP::KANMX6SB1013This study4Se
+All plasmids used in this study were previously reported (Table 2) except for SB1013 (pRS306PGPD-FFL-mCherry), which contains firefly luciferase as an Xba1/BamHI fragment and mCherry as a BamHI/XhoI fragment, separated by a three-repeat glycine–serine linker. The ORFs were amplified by PCR using primers 5XbaI firefly/3BamHI firefly and 5BamHIGS3mCherry/3XhoImCherry, respectively (Table 3) and confirmed by sequencing. All strains of Saccharomyces cerevisiae used in this study are derivatives of 74-D694 (Table 4) (Chernoff et al., 1995). A WT [PSI+]Weak diploid strain (SY945) was generated by mating SY2600 with SLL3252 (Table 4). The diploid state was confirmed by sporulation. SY591, a [PSI+]Weak strain containing a heterozygous deletion of HSP104, was created by transformation of a PvuI-BamHI fragment of pYABL5 (a kind gift of S. Lindquist) into SY945 and selection on medium lacking leucine. Disruptions were verified by PCR and 2:2 marker segregation upon sporulation and dissection. SY957, a [PSI+]Strong diploid strain containing a heterozygous disruption of SUP35, was created by transforming a PCR-generated cassette using pFA6a-KanMX4 as a template with primers SD27 and SD28 (Table 3) into SLL3071 (Table 4). Integration was confirmed by PCR using primers Psup352/PTEFCH and Sup35 3′chk/pFa6 test (Table 3). The galactose-inducible HSP104 strains were made by integrating BstBI-linearized SB630 (Table 2) into SY197 (Table 4) and selecting transformants on medium lacking uracil. Galactose-inducible expression of Hsp104 was confirmed by western blotting. [PSI+]Strong and [PSI+]Weak were then cytoduced into this strain from SY1698 and SY1699, respectively, to create SY1748 and SY1749 (Table 4), respectively (Conde and Fink, 1976). Cytoductants were selected by growth on synthetic medium containing glycerol and lacking uracil and by colony color on YPD. The HSP104-GFP [psi−] strain (SY2125) was created by transforming a PCR-generated cassette using pFA6a-GFP(S65T)-KanMX6 as a template with primers HSP104-GFP F-A and HSP104-GFP R-A (Table 3) into WT [PSI+]Strong strains and selection on medium containing 300 μg/ml G418. Integration was confirmed by PCR using primers Hsp104for/GFP-R and pFa6 test/Hsp104 3 flank R (Table 3), and expression was confirmed by fluorescence microscopy. These strains were cured of the prion by growth on YPD plates containing 3 mM GdnHCl (Tuite et al., 1981). The [PSI+]Weak variant (SY2126) was generated by mating SY2125 to a WT [PSI+]Weak strain (SLL2600) and sporulation. Tetrads were dissected to recover haploids, and HSP104-GFP isolates were verified by G418 resistance, fluorescence microscopy, and quantitative immunoblotting for Hsp104. The heat inducible GFP strain (SY2091) was generated by transformation of a WT [psi−] strain (SLL2119) with Bsu36I-digested SB849 (Table 2). Expression was confirmed by fluorescence microscopy. SSA1-GFP (SY2658) and SIS1-GFP (SY2447) [PSI+]Weak strains were created by transforming PCR-generated cassettes using pFA6a-GFP(S65T)-KanMX6 as a template with primers GFP-GS-Ssa1-F/GFP-Ssa1-R or Sis1-GFP-F GS/Sis1-GFP-R (Table 3), respectively, into WT [PSI+]Strong strains and selection on medium containing 300 μg/ml G418. Expression was confirmed by fluorescence microscopy and quantitative immunoblotting for Ssa1/2 and Sis1, respectively. These strains were cured of the prion by growth on YPD plates containing 3 mM GdnHCl, mitochondrial loss was induced by growth in 25 μg/ml ethidium bromide, and [PSI+]Weak was transferred to them by cytoduction (Cox, 1965), using SY1699 as a donor strain. Cytoductants were selected by growth on glycerol medium and 300 μg/ml G418. SSA1-GFP and SIS1-GFP [PSI+]Weak strains containing a nuclear-localized fluorescent reporter protein (DsRed-NLS, SY2659, and SY485, respectively) were generated by transforming SY2658 or SY2447 with Bsu36I-digested SB503 (Table 2). Expression was confirmed by fluorescence microscopy. The Δbni1 [PSI+]Weak strain (SY1888) was created by transforming a PCR-generated cassette using pFA6a-KanMX4 as a template with primers AD-BNI1-f and AD-BNI1-r (Table 3) into a [PSI+]Weak diploid (SY782, a cross between SY2600 and SY86, Table 4). Transformants were selected on medium containing 300 μg/ml G418 and verified by PCR using primers AD-BNI1-fseq/PTEFCH and AD-BNI1-rseq/pFa6 test (Table 3). The haploid Δbni1 [PSI+]Weak strain was then generated by sporulation and tetrad dissection and verified by G418 resistance. The HSP104-GFP Δbni1 [PSI+]Weak strain (SY2486) was created by transforming SY2126 with a PCR-generated cassette using pFA6a-hphMX4 as a template with primers AD-BNI1-f and AD-BNI1-r (Table 3). Transformants were confirmed by PCR using primers AD-BNI1-fseq/PTEFCH and AD-BNI1-rseq/pFa6 test (Table 4) and growth on YPD plates containing 300 μg/ml hygromycin B.
 
-## Growth conditions and phenotypic analysis
+**Table 2.**
+ Plasmids
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SB20</td>
+      <td>pRS306-PSup35N(GS)3sGFP(GS)3MC</td>
+    </tr>
+    <tr>
+      <td>SB503</td>
+      <td>pRS304-PGPDGST-DsRED-NLS</td>
+    </tr>
+    <tr>
+      <td>SB630</td>
+      <td>pRS306-PGALHsp104</td>
+    </tr>
+    <tr>
+      <td>SB657</td>
+      <td>pRS306-PtetO2Sup35</td>
+    </tr>
+    <tr>
+      <td>SB658</td>
+      <td>pRS306-PtetO2Sup35(G58D)</td>
+    </tr>
+    <tr>
+      <td>SB849</td>
+      <td>pRS306-PHSEGFP</td>
+    </tr>
+    <tr>
+      <td>SB1013</td>
+      <td>pRS306-PGPDFFL-mCherry</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Primers
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>5XbaI firefly</td>
+      <td>5′-TCTAGAATGGAAGATGCCAAAAACATTAAG-3′</td>
+    </tr>
+    <tr>
+      <td>3BamHI firefly</td>
+      <td>5′-GGATCCACCTTGAGACTGTGGTTGGAAAC-3′</td>
+    </tr>
+    <tr>
+      <td>5BamHI GS3mCherry</td>
+      <td>5′-GGATCCGGTAGTGGTAGTGGTAGTATGGTGAGCAAGGG CGAGGAG-3′</td>
+    </tr>
+    <tr>
+      <td>3XhoI mCherry</td>
+      <td>5′-CTCGAGTTACTTGTACAGCTCGTCCATGCCG-3′</td>
+    </tr>
+    <tr>
+      <td>SD27</td>
+      <td>5′-ACTTGCTCGGAATAACATCTATATCTGCCCACTAGCAACA CAGCTGAAGCTTCGTACGC-3′</td>
+    </tr>
+    <tr>
+      <td>SD28</td>
+      <td>5′-GGTATTATTGTGTTTGCATTTACTTATGTTTGCAAGAAATG CATAGGCCACTAGTGGATCTG-3′</td>
+    </tr>
+    <tr>
+      <td>Psup352</td>
+      <td>5′-GAGATGCTCATCAAGGG-3′</td>
+    </tr>
+    <tr>
+      <td>PTEFCH</td>
+      <td>5′-GCACGTCAAGACTGTCAAGG-3′</td>
+    </tr>
+    <tr>
+      <td>Sup35 3′chk</td>
+      <td>5′-TATTTACGAAGGAGACCCGGAG-3′</td>
+    </tr>
+    <tr>
+      <td>pFa6 test</td>
+      <td>5′-TGCCCAGATGCGAAGTTAAGTG-3′</td>
+    </tr>
+    <tr>
+      <td>HSP104-GFP F-A</td>
+      <td>5′-CGATAATGAGGACAGTATGGAAATTGATGATGACCTA GATCGGATCCCCGGGTTAATTAA-3′</td>
+    </tr>
+    <tr>
+      <td>Hsp104-GFP R-A</td>
+      <td>5′-TATTATATTACTGATTCTTGTTCGAAAGTTTTTAAAAATC GAATTCGAGCTCGTTTAAAC-3′</td>
+    </tr>
+    <tr>
+      <td>Hsp104for</td>
+      <td>5′-GGCACATCCTGATGTTTTGA-3′</td>
+    </tr>
+    <tr>
+      <td>GFP-R</td>
+      <td>5′-CCTTCACCCTCTCCACTGACAG-3′</td>
+    </tr>
+    <tr>
+      <td>Hsp104 3 flank R</td>
+      <td>5′-CCGTATTCTAATAATGGACCAATC-3′</td>
+    </tr>
+    <tr>
+      <td>GFP-GS-Ssa1-F</td>
+      <td>5′-AGCTCCAGAGGCTGAAGGTCCAACCGTTGAAGAAGTTG ATGGTTCTGGTTCTGGTTCTCGGATCCCCGGGTTAATTAA-3′</td>
+    </tr>
+    <tr>
+      <td>GFP-Ssa1-R</td>
+      <td>5′-ACCCAGATCATTAAAAGACATTTTCGTTATTATCAATTGC GAATTCGAGCTCGTTTAAAC-3′</td>
+    </tr>
+    <tr>
+      <td>Sis1-GFP-F GS</td>
+      <td>5′-ACTAAACGACGCTCAAAAACGTGCTATAGATGAAAATTT TGGTTCTGGTTCTGGTTCTCGGATCCCCGGGTTAATTAA-3′</td>
+    </tr>
+    <tr>
+      <td>Sis1-GFP-R</td>
+      <td>5′-ATTTATTTGAGTTTATAATTATATTTGCTTAGGATTACTAG AATTCGAGCTCGTTTAAAC-3′</td>
+    </tr>
+    <tr>
+      <td>AD-BNI1-f</td>
+      <td>5′-ATGTTGAAGAATTCAGGCTCCAAACATTCGAACTCAAAG GCAGCTGAAGCTTCGTACGC-3′</td>
+    </tr>
+    <tr>
+      <td>AD-BNI1-r</td>
+      <td>5′-TTATTTGAAACTTAGCCTGTTACCTGTCCTAGCCTCACCT GCATAGGCCACTAGTGGATCTG-3′</td>
+    </tr>
+    <tr>
+      <td>AD-BNI1-fseq</td>
+      <td>5′-GACATCGGTTAGAGGAAG-3′</td>
+    </tr>
+    <tr>
+      <td>AD-BNI1-rseq</td>
+      <td>5′-CACTGTGCTTGTCACTTA-3′</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Yeast strains
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Genotype</th>
+      <th>Plasmids integrated</th>
+      <th>Reference</th>
+      <th>Figure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SLL2119</td>
+      <td>MATa [psi−] ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3, 112</td>
+      <td>-</td>
+      <td>Chernoff et al., 1995</td>
+      <td>1c, 3Sf</td>
+    </tr>
+    <tr>
+      <td>SLL2600</td>
+      <td>MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3, 112</td>
+      <td>-</td>
+      <td>Derkatch et al., 1996</td>
+      <td>1, 2a, 3, 5ce, 6abcfg, 1S, 3Sabg, 4Sabcd, 5Sfg, 6Sa</td>
+    </tr>
+    <tr>
+      <td>SLL2606</td>
+      <td>MATa [PSI+]Strong ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3, 112</td>
+      <td>-</td>
+      <td>Chernoff et al., 1995</td>
+      <td>1ac, 3Sf</td>
+    </tr>
+    <tr>
+      <td>SLL3071</td>
+      <td>MATa/α [PSI+]Strong ade1-14/ade1-14 his3Δ200/his3Δ200 trp1-289/ trp1-289 ura3-52/ura3-52 leu2-3112/ leu2-3112</td>
+      <td>-</td>
+      <td>DiSalvo et al., 2011</td>
+      <td>2d</td>
+    </tr>
+    <tr>
+      <td>SLL3252</td>
+      <td>MATa [psi−] ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3, 112</td>
+      <td>-</td>
+      <td>Chernoff et al., 1995</td>
+      <td>‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>SY86</td>
+      <td>MATα [psi−] ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3, 112 sup35::N(GS)3GFP(GS)3MC</td>
+      <td>SB20</td>
+      <td>Derdowski et al., 2010</td>
+      <td>‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>SY197</td>
+      <td>MATa [psi−] ade1-14 his3-11,-15 trp1-1 ura3-1 leu2-3112 can1-100</td>
+      <td>-</td>
+      <td>J Weissman (YJW513)</td>
+      <td>‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>SY591</td>
+      <td>MATa/α [PSI+]Weak ade1-14/ade1-14 his3Δ200/his3Δ200 TRP/ trp1-289 ura3-52/ura3-52 leu2-3112/ leu2-3112 HSP104/hsp104::LEU2</td>
+      <td>-</td>
+      <td>This study</td>
+      <td>2b</td>
+    </tr>
+    <tr>
+      <td>SY782</td>
+      <td>MATa/α [PSI+]Weak ade1-14/ade1-14 his3Δ200/his3Δ200 trp1-289/ trp1-289 ura3-52/ura3-52 leu2-3112/ leu2-3112 SUP35/sup35::N(GS)3GFP(GS)3MC</td>
+      <td>-</td>
+      <td>This study</td>
+      <td>‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>SY945</td>
+      <td>MATa/α [PSI+]Weak ade1-14/ade1-14 his3Δ200/his3Δ200 trp1-289/ trp1-289 ura3-52/ura3-52 leu2-3112/ leu2-3112</td>
+      <td>-</td>
+      <td>This study</td>
+      <td>2b</td>
+    </tr>
+    <tr>
+      <td>SY957</td>
+      <td>MATa/α [PSI+]Strong ade1-14/ade1-14 his3Δ200/his3Δ200 trp1-289/ trp1-289 ura3-52/ura3-52 leu2-3112/ leu2-3112 SUP35/sup35::KANMX4</td>
+      <td>-</td>
+      <td>This study</td>
+      <td>2d</td>
+    </tr>
+    <tr>
+      <td>SY1646</td>
+      <td>MATa/α [PSI+]Strong ade1-14/ade1-14 his3Δ200/his3Δ200 trp1-289/ trp1-289 ura3-52/ura3-52::URA3::PtetO2SUP35 leu2-3112/ leu2-3112 SUP35/sup35::KANMX4</td>
+      <td>SB657</td>
+      <td>DiSalvo et al., 2011</td>
+      <td>2c</td>
+    </tr>
+    <tr>
+      <td>SY1648</td>
+      <td>MATa/α [PSI+]Strong ade1-14/ade1-14 his3Δ200/his3Δ200 trp1-289/ trp1-289 ura3-52/ura3-52::URA3::PtetO2SUP35(G58D) leu2-3112/ leu2-3112 SUP35/sup35::KANMX4</td>
+      <td>SB658</td>
+      <td>DiSalvo et al., 2011</td>
+      <td>2c</td>
+    </tr>
+    <tr>
+      <td>SY1698</td>
+      <td>MATα [PSI+]Strong ade1-14 his3Δ200 ura3-52 leu2-3 kar1-d15 ConR CyhR</td>
+      <td>-</td>
+      <td>This study</td>
+      <td>‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>SY1699</td>
+      <td>MATα [PSI+]Weak ade1-14 his3Δ200 ura3-52 leu2-3 kar1-d15 ConR CyhR</td>
+      <td>-</td>
+      <td>This study</td>
+      <td>‘Materials and methods’</td>
+    </tr>
+    <tr>
+      <td>SY1748</td>
+      <td>MATa [PSI+]Strong ade1-14 his3-11,-15 trp1-1 ura3-1::URA3::PGALHSP104 leu2-3112 can1-100</td>
+      <td>SB630</td>
+      <td>This study</td>
+      <td>3Se</td>
+    </tr>
+    <tr>
+      <td>SY1749</td>
+      <td>MATa [PSI+]Weak ade1-14 his3-11,-15 trp1-1 ura3-1::URA3::PGALHSP104 leu2-3112 can1-100</td>
+      <td>SB630</td>
+      <td>This study</td>
+      <td>3Scde</td>
+    </tr>
+    <tr>
+      <td>SY1888</td>
+      <td>MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3, 112 Δbni1::KANMX4</td>
+      <td>-</td>
+      <td>This study</td>
+      <td>5c, 5Sfg</td>
+    </tr>
+    <tr>
+      <td>SY2091</td>
+      <td>MATa [psi−] ade1-14 his3Δ200 trp1-289 ura3-52::URA::PHSEGFP leu2-3, 112</td>
+      <td>SB849</td>
+      <td>This study</td>
+      <td>5Sa</td>
+    </tr>
+    <tr>
+      <td>SY2125</td>
+      <td>MATα [psi−] ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3112 HSP104GFP::KANMX6</td>
+      <td>-</td>
+      <td>This study</td>
+      <td>4b</td>
+    </tr>
+    <tr>
+      <td>SY2126</td>
+      <td>MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3112 HSP104GFP::KANMX6</td>
+      <td>-</td>
+      <td>This study</td>
+      <td>4, 5abdfg, 6de, 7, 4Sabcdfg, 6Sb</td>
+    </tr>
+    <tr>
+      <td>SY2447</td>
+      <td>MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3112 SIS1GFP::KANMX6</td>
+      <td>-</td>
+      <td>This study</td>
+      <td>5Se</td>
+    </tr>
+    <tr>
+      <td>SY2485</td>
+      <td>MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289::TRP::PGPDGST-DsRed-NLS ura3-52 leu2-3112 SIS1GFP::KANMX6</td>
+      <td>SB503</td>
+      <td>This study</td>
+      <td>5Sc</td>
+    </tr>
+    <tr>
+      <td>SY2486</td>
+      <td>MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3, 112 HSP104GFP::KANMX6 Δbni1::hphMX4</td>
+      <td>-</td>
+      <td>This study</td>
+      <td>5b</td>
+    </tr>
+    <tr>
+      <td>SY2658</td>
+      <td>MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289 ura3-52 leu2-3112 SSA1GFP::KANMX6</td>
+      <td>-</td>
+      <td>This study</td>
+      <td>5Sd</td>
+    </tr>
+    <tr>
+      <td>SY2659</td>
+      <td>MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289::TRP::PGPDGST-DsRed-NLS ura3-52 leu2-3112 SSA1GFP::KANMX6</td>
+      <td>SB503</td>
+      <td>This study</td>
+      <td>5Sb</td>
+    </tr>
+    <tr>
+      <td>SY2802</td>
+      <td>MATa [PSI+]Weak ade1-14 his3Δ200 trp1-289 ura3-52::URA::PGPDFirefly-mCherry leu2-3112 HSP104GFP::KANMX6</td>
+      <td>SB1013</td>
+      <td>This study</td>
+      <td>4Se</td>
+    </tr>
+  </tbody>
+</table>
+
+### Growth conditions and phenotypic analysis
 
 Unless otherwise specified, yeast cultures were grown in rich YPD medium supplemented with 0.3 mM adenine. Cultures were maintained at an OD600 of less that 0.5 at 30°C for at least 10 doublings to ensure exponential growth. Where indicated, cultures were then transferred to 37°C or 40°C for the specified period. Pretreatment of cultures at 37°C prior to shift to 40°C was for 30 min. To analyze colony color phenotype, aliquots of cultures were diluted in H2O as needed to ensure well-separated single colonies upon plating to solid YPD medium. After growth at 30°C, each colony was scored based on colony color phenotype: fully cured (completely red, [psi−]), sectored (part red and part white), or [PSI+] (completely white). Unless otherwise indicated, fully cured and sectored colonies were combined in the ‘cured’ category. For all colony counting assays, at least 150 colonies were counted for each experimental condition/timepoint. For the galactose-inducible Hsp104 experiments, cells were grown in rich YP medium containing 3% raffinose supplemented with 3% galactose during induction. α-factor and nocodazole arrests were performed in YPD liquid medium containing final concentrations of 5 μg/ml α-factor or 15 μg/ml nocodazole, respectively, for ∼2 hr. Following confirmation of arrest based on cell morphology by bright-field microscopy, cultures were washed three times with medium containing 1 mM DMSO followed by one wash in YPD before resuspension for indicated manipulation. GdnHCl treatment was performed at 3 mM final concentration in liquid YPD, and for experiments involving recovery, cultures were washed three times with medium before resuspension in YPD for indicated manipulation.
 
-## Protein analysis
+### Protein analysis
 
 SDS-PAGE and quantitative immunoblotting were performed as previously described (Pezza et al., 2009). Anti-Ssa1/2 rabbit serum was provided by E. Craig (U Wisconsin—Madison), and anti-Sis1 rabbit serum was provided by M. Tuite (U Kent, Canterbury, UK). Semi-native agarose gel electrophoresis (SDD-AGE) was performed as previously described (Kryndushkin et al., 2003). The cycloheximide SDS-sensitivity assay was performed as previously described (DiSalvo et al., 2011) with the following modifications: 1) cultures were treated at the various experimental temperatures for 30 min prior to the addition of cycloheximide to allow for the induction of chaperone proteins, and 2) after cycloheximide treatment, cultures were incubated with shaking at 30°C for 2 hr before lysis and analysis. For the aggregation analysis, native lysates were prepared as described previously (Kryndushkin et al., 2003). Lysates were pre-cleared for 1 min at 500×g and total protein content was quantified using the BioRad Bradford assay in triplicate. Lysates were subjected to 15,000×g centrifugation for 15 min, and pellets were washed with 10 mM sodium phosphate buffer (pH7.5) containing 2% NP-40 before being resuspended in 10 mM sodium phosphate buffer (pH7.5) and quantified again in triplicate using the Bradford assay. For the Hsp104 immunocapture, native lysates were prepared at 4°C in IP buffer (50 mM HEPES–NaOH (pH 7.5), 150 mM NaCl, 10 mM MgCl2, 1 mM EDTA, 1% NP-40, 0.25% Na-deoxycholate, and protease inhibitors (2 mM PMSF, 5 µg/ml pepstatin, complete protease inhibitor tablets (Pierce, Rockford, IL), protease inhibitor cocktail (Sigma-Aldrich, St. Louis, MO)). Lysates were pre-cleared for 1 min at 500×g, and then incubated for 1 hr with Protein G magnetic beads (NEB, Ipswich, MA) with nutation. Immunocapture was performed using Protein G magnetic beads and anti-GFP mouse monoclonal antibody (Roche, Switzerland). Beads were washed 4× with IP buffer and 1× with 50 mM HEPES–NaOH (pH 7.5), and protein was eluted by boiling in SDS sample buffer. Co-captured proteins were resolved by SDS-PAGE and analyzed by gel staining with Flamingo (Bio-Rad, Hercules, CA) and fluorescent scanning on a Typhoon imager (GE Lifesciences, Marlborough, MA) according to the manufacturer's instructions or by western blot for GFP.
 
-## Imaging and microfluidics
+### Imaging and microfluidics
 
 Static images were obtained on a Zeiss Axio Imager M2 fluorescence light microscope equipped with a 100× objective. Confocal images were obtained on a Zeiss LSM 510 Meta confocal microscope using a 100× objective. Microfluidics experiments were performed on a Zeiss Axio Observer Z1 using a CellAsics microfluidics plate with temperature controls and media flow of 2 psi on a Y0C4 yeast perfusion plate (channel size 3.5–5 μm). Imaging was performed in complete minimal medium supplemented with 2% glucose and 2.5 mM adenine. Fluorescence intensity was analyzed using the Zen software package (Zeiss, Germany).
 
-## Flow Cytometry
+### Flow Cytometry
 
 Flow cytometry and cell sorting was performed on a BD FACSAria fluorescence-activated cell sorter using a 488 nm laser and a FITC-A filter to measure GFP fluorescence intensity in single cells. Data were obtained at least in triplicate with representative spectra shown. Data were analyzed using the FlowJo software package (TreeStar Inc., Ashland, OR).

@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/012jban78 Department of Neuroscience, Medical University of South Carolina Charleston United States
-2. https://ror.org/012jban78 Department of Anesthesia and Perioperative Medicine, Medical University of South Carolina Charleston United States
+1. Department of Neuroscience, Medical University of South Carolina Charleston United States ([ROR:012jban78](https://ror.org/012jban78))
+2. Department of Anesthesia and Perioperative Medicine, Medical University of South Carolina Charleston United States ([ROR:012jban78](https://ror.org/012jban78))
 
 † Corresponding author
 
@@ -30,7 +30,7 @@ Adolescence marks a critical period of continuing development of the mPFC. This 
 
 The procedure for adolescent alcohol exposure used in this study is a well-characterized model designed to simulate the effects of repeated episodes of binge-like alcohol exposure. Rats were subjected to eight intermittent cycles of ethanol vapor from PD 28 to PD 54. Behavioral intoxication and blood ethanol concentrations (BECs) were assessed at the end of each cycle. The average behavioral intoxication score using the 5-point rating scale was 2.2 ± 0.1 for male rats in the AIE-saline treatment condition, 2.2 ± 0.1 for male rats in the AIE-carrageenan treatment condition, 2.2 ± 0.1 for female rats in the AIE-saline treatment condition, and 2.1 ± 0.1 for female rats in the AIE-carrageenan treatment condition, which represents a moderate level of intoxication. The corresponding BEC values were 196.4 ± 34.8 for male rats in the AIE-saline treatment condition, 240.0 ± 33.8 for male rats in the AIE-carrageenan treatment condition, 184.8 ± 38.8 for female rats in the AIE-saline treatment condition, and 177.7 ± 31.2 for female rats in the AIE-carrageenan treatment condition. Male rats had significantly higher intoxication scores than female rats (Wilcoxon rank-sum test: z = 1.967, p = 0.0492). There was no difference in average intoxication scores between rats assigned to the saline and carrageenan pain conditions (Wilcoxon rank-sum test: z = 0.450, p = 0.6529). There was no difference in BEC level between male and female rats (Wilcoxon rank-sum test: z = 1.365, p = 0.1724) or for rats assigned to the saline and carrageenan pain conditions (Wilcoxon rank-sum test: z = –0.955, p = 0.3395). Average intoxication scores and BEC levels were positively correlated (rs = 0.499, p = 0.0001).
 
-## AIE exposure augmented mechanical sensitivity
+### AIE exposure augmented mechanical sensitivity
 
 The first set of studies evaluated the impact of AIE on mechanical and thermal sensitivity from adolescence to early adulthood. Weekly assessments were conducted using electronic Von Frey and Hargreaves apparatuses. The initial evaluation was performed at PD 24 prior to the first cycle of ethanol vapor exposure, and the final assessment at PD 80, which was approximately 4 weeks after the last cycle of exposure.
 
@@ -38,11 +38,11 @@ For mechanical sensitivity, analysis of data from the electronic Von Frey test r
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/101667/elife-101667-fig1-v1.jpg)
 
-**Figure 1.:** Depiction of the effect of adolescent intermittent ethanol (AIE) exposure on mechanical sensitivity across adolescence and into early adulthood in male (A) and female (B) rats. (C) AIE exposure significantly reduced the average (PD 31–PD 80) electronic Von Frey (eVF) withdrawal threshold, indicating increased mechanical touch sensitivity. Depiction of the effect of AIE exposure on thermal sensitivity during adolescence and early adulthood in male (D) and female (E) rats. (F) AIE exposure did not significantly alter the average (PD 31–PD 80) Hargreaves test withdrawal latency, indicating no change in thermal sensitivity. Data represent the mean ± SEM. Source data for all panels is included in Figure 1—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), sex, and age (when applicable) as factors. * indicates a significant difference between the related conditions; p < 0.05; n = 29–30 rats/group.Figure 1—source data 1.
+**Figure 1.:** Depiction of the effect of adolescent intermittent ethanol (AIE) exposure on mechanical sensitivity across adolescence and into early adulthood in male (A) and female (B) rats. (C) AIE exposure significantly reduced the average (PD 31–PD 80) electronic Von Frey (eVF) withdrawal threshold, indicating increased mechanical touch sensitivity. Depiction of the effect of AIE exposure on thermal sensitivity during adolescence and early adulthood in male (D) and female (E) rats. (F) AIE exposure did not significantly alter the average (PD 31–PD 80) Hargreaves test withdrawal latency, indicating no change in thermal sensitivity. Data represent the mean ± SEM. Source data for all panels is included in Figure 1—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), sex, and age (when applicable) as factors. * indicates a significant difference between the related conditions; p < 0.05; n = 29–30 rats/group.
 
 For thermal sensitivity, analysis of data from the Hargreaves test indicated no significant effect of AIE on paw withdrawal latency (main effect of AIE: F(1,115) = 1.21, p = 0.2738; Figure 1D, E). Additionally, there were no significant sex differences or interactions with AIE (main effect of sex: F(1,115) = 0.59, p = 0.4446; AIE × sex interaction: F(1,115) = 1.85, p = 0.1767). Thermal sensitivity was found to decrease with age (main effect of age: F(8,920) = 11.45, p = 0.0000, partial η2 = 0.0906 [0.0520, 0.1197]). Furthermore, no significant interactions between age and AIE or sex were observed (AIE × age interaction: F(8,920) = 1.11, p = 0.3567; sex × age interaction: F(8,920) = 2.02, p = 0.0546; AIE × sex × age interaction: F(8,920) = 0.70, p = 0.6626). The data were also analyzed as the average paw withdrawal latency for each rat beginning after the first cycle of AIE (PD 31–PD 80). Consistent with the results from the full dataset, analysis of the averaged data showed no significant effect of AIE, sex, or interaction between the two on thermal sensitivity (main effect of AIE: F(1,115) = 1.09, p = 0.2977; main effect of sex: F(1,115) = 1.57, p = 0.2128; AIE × sex interaction: F(1,115) = 2.20, p = 0.1408; Figure 1F).
 
-## Carrageenan-induced inflammatory paw pain was unaltered by AIE exposure
+### Carrageenan-induced inflammatory paw pain was unaltered by AIE exposure
 
 As AIE was found to increase baseline mechanical sensitivity, the subsequent studies assessed its impact on carrageenan-induced hyperalgesia in adult rats. Carrageenan is a well-known proinflammatory agent that induces edema and transient hyperalgesia in the carrageenan-induced inflammatory paw pain model (Benitz and Hall, 1959; Neves et al., 2020; Vazquez et al., 2015; Winter et al., 1962; Yang and Tsaur, 2023).
 
@@ -50,11 +50,11 @@ Prior to administering carrageenan or saline into the hindpaw, baseline mechanic
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/101667/elife-101667-fig2-v1.jpg)
 
-**Figure 2.:** (A) Baseline mechanical touch sensitivity was greater in adolescent intermittent ethanol (AIE) exposed rats than in Air control rats. (B) There was no difference in baseline thermal sensitivity between AIE exposed and Air control rats. Male (C, D) and female (E, F) rats injected with carrageenan (CAR) in the right hindpaw displayed mechanical hypersensitivity. This hypersensitivity was not significantly altered by AIE exposure. Average paw withdrawal threshold combining all post-injection timepoints for males (C) and females (E). Paw withdrawal threshold expressed as a percentage of the baseline threshold at 2, 6, and 24 hr post-injection for males (D) and females (F). Similarly, male (G, H) and female (I, J) rats injected with CAR into the right hindpaw displayed thermal hyperalgesia, with no effect of AIE exposure on this hyperalgesia. Average paw withdrawal latency across all post-injection timepoints for male (G) and female (I) rats. Paw withdrawal latency as a percentage of the baseline latency at 2, 6, and 24 hr post-injection for male (H) and female (J) rats. Data represent the mean ± SEM. Source data for all panels is included in Figure 2—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), and sex as factors. * indicates a significant difference between the related conditions; p < 0.05; n = 13–15 rats/group.Figure 2—source data 1.
+**Figure 2.:** (A) Baseline mechanical touch sensitivity was greater in adolescent intermittent ethanol (AIE) exposed rats than in Air control rats. (B) There was no difference in baseline thermal sensitivity between AIE exposed and Air control rats. Male (C, D) and female (E, F) rats injected with carrageenan (CAR) in the right hindpaw displayed mechanical hypersensitivity. This hypersensitivity was not significantly altered by AIE exposure. Average paw withdrawal threshold combining all post-injection timepoints for males (C) and females (E). Paw withdrawal threshold expressed as a percentage of the baseline threshold at 2, 6, and 24 hr post-injection for males (D) and females (F). Similarly, male (G, H) and female (I, J) rats injected with CAR into the right hindpaw displayed thermal hyperalgesia, with no effect of AIE exposure on this hyperalgesia. Average paw withdrawal latency across all post-injection timepoints for male (G) and female (I) rats. Paw withdrawal latency as a percentage of the baseline latency at 2, 6, and 24 hr post-injection for male (H) and female (J) rats. Data represent the mean ± SEM. Source data for all panels is included in Figure 2—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), and sex as factors. * indicates a significant difference between the related conditions; p < 0.05; n = 13–15 rats/group.
 
 Following carrageenan or saline administration, mechanical and thermal sensitivity were evaluated, and data were averaged across assessments occurring at three timepoints – 2-, 6-, and 24-hr post-injection. The averaged data were expressed as a percentage of each rat’s pre-injection baseline score. Examination of paw withdrawal threshold revealed a carrageenan-induced increase in mechanical sensitivity (main effect of carrageenan: F(1,105) = 116.41, p = 0.0000, partial η2 = 0.5258 [0.3934, 0.6201]; Figure 2C–F). Analysis further indicated that female rats displayed a greater increase in sensitivity than males across both the saline and carrageenan treatments, with no significant effects of AIE, or interactions between AIE, sex, and carrageenan (main effect of sex: F(1,105) = 6.22, p = 0.0142, partial η2 = 0.0559 [0.0020, 0.1578]; main effect of AIE: F(1,105) = 0.93, p = 0.3366; AIE × sex interaction: F(1,105) = 0.03, p = 0.8706; AIE × carrageenan interaction: F(1,105) = 0.59, p = 0.4441; sex × carrageenan interaction: F(1,105) = 1.72, p = 0.1925; AIE × sex × carrageenan interaction: F(1,105) = 1.18, p = 0.2790). Similarly, examination of paw withdrawal latency revealed a carrageenan-induced increase in thermal sensitivity (main effect of carrageenan: F(1,105) = 132.70, p = 0.0000, partial η2 = 0.5583 [0.4308, 0.6470]; Figure 2G–J). No significant effects of AIE, sex, or interactions between AIE, sex, and carrageenan were observed (main effect of AIE: F(1,105) = 0.00, p = 0.9625; main effect of sex: F(1,105) = 0.00, p = 0.9510; AIE × sex interaction: F(1,105) = 0.23, p = 0.6307; AIE × carrageenan interaction: F(1,105) = 0.01, p = 0.9352; sex × carrageenan interaction: F(1,105) = 0.14, p = 0.7120; AIE × sex × carrageenan interaction: F(1,105) = 3.85, p = 0.0524).
 
-## AIE exposure and carrageenan enhanced the intrinsic excitability of PrLPAG neurons
+### AIE exposure and carrageenan enhanced the intrinsic excitability of PrLPAG neurons
 
 Subsequently, the impact of AIE exposure- and carrageenan-induced hyperalgesia on PrLPAG neuron intrinsic excitability was examined through current-clamp recordings of current evoked firing obtained from green retrobead labeled cells in the PrL cortex. Labeling with green retrobeads indicated that the neuron projected ipsilateral from the left hemisphere of the PrL cortex to the vlPAG (Figure 3). For each electrophysiological experiment, values are reported per animal and reflect the average value of 1–5 neurons recorded from each rat. Table 1 contains a summary of the biophysical properties of the recorded PrLPAG neurons. No significant differences between treatment conditions or sex were observed for these properties.
 
@@ -62,21 +62,92 @@ Subsequently, the impact of AIE exposure- and carrageenan-induced hyperalgesia o
 
 **Figure 3.:** (A) Experimental timeline displaying the age of animals at each phase in the study. (B) Diagram showing the viral and retrobead labeling approach used to identify and manipulate specific neuronal populations in the prelimbic (PrL) cortex. (C) Representative images showing injection sites in the PrL (left panel, AAV2-hSyn-DIO-mCherry), basolateral amygdala (BLA, center panel, AAV5-hSyn-hChR2(H134R)-EYFP), and ventrolateral periaqueductal gray (vlPAG, right panel, green retrobeads). (D) Representative images from the PrL cortex (from left to right) of BLA terminals, mCherry-tagged parvalbumin interneurons (PVINs), and green retrobead labeled PrLPAG neurons.
 
+**Table 1.**
+ Biophysical properties of PrLPAG neurons across treatment condition and sex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Sex</th>
+      <th>Vrest (mV)</th>
+      <th>Rinput (MΩ)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AIR: SAL</td>
+      <td>Male</td>
+      <td>–66.6 ± 0.9</td>
+      <td>75.3 ± 3.5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Female</td>
+      <td>–65.0 ± 1.7</td>
+      <td>76.3 ± 2.4</td>
+    </tr>
+    <tr>
+      <td>AIR: CAR</td>
+      <td>Male</td>
+      <td>–66.2 ± 1.4</td>
+      <td>83.2 ± 5.4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Female</td>
+      <td>–65.2 ± 1.5</td>
+      <td>83.9 ± 4.1</td>
+    </tr>
+    <tr>
+      <td>AIE: SAL</td>
+      <td>Male</td>
+      <td>–65.0 ± 1.4</td>
+      <td>86.9 ± 7.8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Female</td>
+      <td>–65.6 ± 1.5</td>
+      <td>76.6 ± 2.9</td>
+    </tr>
+    <tr>
+      <td>AIE: CAR</td>
+      <td>Male</td>
+      <td>–65.6 ± 1.0</td>
+      <td>88.6 ± 4.3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Female</td>
+      <td>–66.5 ± 1.2</td>
+      <td>83.4 ± 6.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Analysis of the firing data indicated that both AIE and carrageenan enhanced intrinsic excitability (main effect of AIE: F(1,72) = 7.24, p = 0.0089, partial η2=0.0914 [0.0059, 0.2292]; main effect of carrageenan: F(1,72) = 4.07, p = 0.0474, partial η2=0.0535 [0.0000, 0.1776]; Figure 4A–G). Moreover, the effect of AIE on intrinsic excitability became more pronounced with increasing current step size (AIE × current step interaction: F(20,1440) = 3.82, p = 0.0117, partial η2 = 0.0503 [0.0194, 0.0604]). Although the number of action potentials (APs) fired increased alongside the amount of injected current (main effect of current step: F(20,1440) = 230.22, p = 0.0000, partial η2 = 0.7618 [0.7404, 0.7747]), no other significant effects of sex or interactions between AIE, carrageenan, sex, or current step were observed (main effect of sex: F(1,72) = 1.78, p = 0.1861; AIE × carrageenan interaction: F(1,72) = 0.00, p = 0.9760; AIE × sex interaction: F(1,72) = 0.17, p = 0.6823; sex × carrageenan interaction: F(1,72) = 0.00, p = 0.9686; AIE × sex × carrageenan interaction: F(1,72) = 0.46, p = 0.4985; sex × current step interaction: F(20,1440) = 1.27, p = 0.2851; carrageenan × current step interaction: F(20,1440) = 1.13, p = 0.3377; AIE × sex × current step interaction: F(20,1440) = 0.66, p = 0.5694; AIE × carrageenan × current step interaction: F(20,1440) = 2.46, p = 0.0656; sex × carrageenan × current step interaction: F(20,1440) = 0.20, p = 0.8924; AIE × sex × carrageenan × current step interaction: F(20,1440) = 1.13, p = 0.3383).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/101667/elife-101667-fig4-v1.jpg)
 
-**Figure 4.:** PAG).(A) Electrophysiological recordings were obtained from PrLPAG neurons in the PrL cortex. Depiction of the relationship between injected current and action potential firing in male (B) and female (C) rats across treatment conditions. The cumulative number of action potentials fired across all current steps was increased by both adolescent intermittent ethanol (AIE) exposure and a carrageenan paw pain challenge (CAR) in male (D) and female (E) rats. Representative traces showing action potential spiking across treatment conditions in male (F) and female (G) rats. The action potential threshold of PrLPAG neurons was reduced in AIE exposed, CAR treated male (H) and female (I) rats. The rheobase of PrLPAG neurons was unaltered by AIE exposure or CAR treatment in male (J) and female (K) rats. Ih-dependent voltage sag was attenuated by carrageenan, with a larger reduction occurring in male rats (L) than in female rats (M). Afterhyperpolarization (mAHP) was attenuated by AIE exposure, with a smaller reduction occurring in male rats (N) than in female rats (O). Data represent the mean ± SEM. Source data for all panels is included in Figure 4—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), sex, and injected current (when applicable) as factors. * indicates a significant difference between the related conditions; p < 0.05; n = 10 rats/group.Figure 4—source data 1.PAG neurons.
+**Figure 4.:** (A) Electrophysiological recordings were obtained from PrLPAG neurons in the PrL cortex. Depiction of the relationship between injected current and action potential firing in male (B) and female (C) rats across treatment conditions. The cumulative number of action potentials fired across all current steps was increased by both adolescent intermittent ethanol (AIE) exposure and a carrageenan paw pain challenge (CAR) in male (D) and female (E) rats. Representative traces showing action potential spiking across treatment conditions in male (F) and female (G) rats. The action potential threshold of PrLPAG neurons was reduced in AIE exposed, CAR treated male (H) and female (I) rats. The rheobase of PrLPAG neurons was unaltered by AIE exposure or CAR treatment in male (J) and female (K) rats. Ih-dependent voltage sag was attenuated by carrageenan, with a larger reduction occurring in male rats (L) than in female rats (M). Afterhyperpolarization (mAHP) was attenuated by AIE exposure, with a smaller reduction occurring in male rats (N) than in female rats (O). Data represent the mean ± SEM. Source data for all panels is included in Figure 4—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), sex, and injected current (when applicable) as factors. * indicates a significant difference between the related conditions; p < 0.05; n = 10 rats/group.
 
 To better understand the observed changes in intrinsic excitability, additional analyses were performed to assess the effects of AIE, carrageenan, and sex on AP threshold, rheobase, voltage sag, and afterhyperpolarization in PrLPAG neurons. This analysis revealed that carrageenan reduced the AP threshold of PrLPAG neurons, with the largest reduction observed in AIE exposed rats (main effect of carrageenan: F(1,72) = 7.01, p = 0.0100, partial η2 = 0.0887 [0.0051, 0.2258]; AIE × carrageenan interaction: F(1,72) = 5.52, p = 0.0215, partial η2 = 0.0713 [0.0007, 0.2029]; Figure 4H, I). No additional effects of treatment condition or sex on the AP threshold were found (main effect of sex: F(1,72) = 3.23, p = 0.0764; main effect of AIE: F(1,72) = 3.48, p = 0.0662; AIE × sex interaction: F(1,72) = 0.17, p = 0.6794; sex × carrageenan interaction: F(1,72) = 0.15, p = 0.7004; AIE × sex × carrageenan interaction: F(1,72) = 1.31, p = 0.2561). Despite the observed change in AP threshold, there were no significant effects of treatment condition or sex on rheobase in these neurons (main effect of AIE: F(1,72) = 0.71, p = 0.4014; main effect of carrageenan: F(1,72) = 0.71, p = 0.4014; main effect of sex: F(1,72) = 0.13, p = 0.7186; AIE × carrageenan interaction: F(1,72) = 1.76, p = 0.1889; AIE × sex interaction: F(1,72) = 0.01, p = 0.9044; sex × carrageenan interaction: F(1,72) = 0.71, p = 0.4014; AIE × sex × carrageenan interaction: F(1,72) = 1.18, p = 0.2814; Figure 4J, K). Hyperpolarization-activated cation current (Ih) linked voltage sag was reduced by carrageenan (main effect of carrageenan: F(1,72) = 5.03, p = 0.0281, partial η2 = 0.0652 [0.0000, 0.1946]; Figure 4L, M), with the largest reduction occurring in male rats (sex × carrageenan interaction: F(1,72) = 5.20, p = 0.0256, partial η2 = 0.0673 [0.0000, 0.1975]). As a result, male carrageenan treated rats had smaller Ih-induced hyperpolarization sag than female rats (main effect of sex: F(1,72) = 20.92, p < 0.0001, partial η2 = 0.2252 [0.0758, 0.3746]). Afterhyperpolarization, in contrast, was reduced by AIE exposure (main effect of AIE: F(1,72) = 53.33, p < 0.0001, partial η2 = 0.4255 [0.2518, 0.5535]; Figure 4N, O) with the largest reduction occurring in females (AIE × sex interaction: F(1,72) = 21.94, p < 0.0001, partial η2 = 0.2335 [0.0817, 0.3827]). Notably, PrLPAG neurons from female rats displayed greater afterhyperpolarization than those from male rats in all treatment conditions except for AIE exposure paired with carrageenan (main effect of sex: F(1,72) = 12.92, p = 0.0006, partial η2 = 0.1522 [0.0310, 0.2998]; AIE × sex × carrageenan interaction: F(1,72) = 6.81, p = 0.0110, partial η2 = 0.0864 [0.0045, 0.2228]). The analysis revealed no further effects of treatment or sex on either hyperpolarization sag (main effect of AIE: F(1,72) = 0.03, p = 0.8528; AIE × carrageenan interaction: F(1,72) = 2.18, p = 0.1446; AIE × sex interaction: F(1,72) = 0.04, p = 0.8500; AIE × sex × carrageenan interaction: F(1,72) = 0.50, p = 0.4797) or afterhyperpolarization (main effect of carrageenan: F(1,72) = 0.04, p = 0.8333; AIE × carrageenan interaction: F(1,72) = 0.25, p = 0.6203; sex × carrageenan interaction: F(1,72) = 2.53, p = 0.1160).
 
-## AIE exposure enhanced the E/I balance at inputs from the BLA onto PrLPAG neurons
+### AIE exposure enhanced the E/I balance at inputs from the BLA onto PrLPAG neurons
 
 The next set of studies assessed the impact of AIE and carrageenan on synaptic function at BLA inputs to PrLPAG neurons. This involved recording from green retrobead labeled pyramidal neurons in the PrL cortex while optically stimulating terminals from the BLA (Figure 5A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/101667/elife-101667-fig5-v1.jpg)
 
-**Figure 5.:** PAG).(A) Electrophysiological recordings were obtained from PrLPAG neurons in the PrL cortex. The amplitude of optically evoked excitatory postsynaptic currents (oEPSCs) was not significantly altered by adolescent intermittent ethanol (AIE) exposure or a carrageenan paw pain challenge (CAR) in either male (B) or female (C) rats. In contrast, the amplitude of optically evoked inhibitory postsynaptic currents (oIPSCs) was significantly reduced in both male (D) and female (E) AIE exposed rats. Carrageenan enhanced the amplitude of oIPSCs, but this increase was attenuated in AIE exposed rats. Examination of the oEPSC/oIPSC (excitation/inhibition, E/I) ratios as a measure of excitatory–inhibitory balance at basolateral amygdala (BLA) inputs onto PrLPAG neurons revealed that in AIE exposed animals, the E/I balance was significantly increased in both male (F) and female (G) rats. (H) Representative traces of the oEPSC and oIPSC currents recorded from male rats across all treatment groups. (I) Representative traces of oEPSC and oIPSC currents recorded from female rats across all treatment groups. Data represent the mean ± SEM. Source data for all panels is included in Figure 5—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), and sex as factors. * indicates a significant difference between the related conditions; p < 0.05; n = 8–10 rats/group.Figure 5—source data 1.PAG neurons.
+**Figure 5.:** (A) Electrophysiological recordings were obtained from PrLPAG neurons in the PrL cortex. The amplitude of optically evoked excitatory postsynaptic currents (oEPSCs) was not significantly altered by adolescent intermittent ethanol (AIE) exposure or a carrageenan paw pain challenge (CAR) in either male (B) or female (C) rats. In contrast, the amplitude of optically evoked inhibitory postsynaptic currents (oIPSCs) was significantly reduced in both male (D) and female (E) AIE exposed rats. Carrageenan enhanced the amplitude of oIPSCs, but this increase was attenuated in AIE exposed rats. Examination of the oEPSC/oIPSC (excitation/inhibition, E/I) ratios as a measure of excitatory–inhibitory balance at basolateral amygdala (BLA) inputs onto PrLPAG neurons revealed that in AIE exposed animals, the E/I balance was significantly increased in both male (F) and female (G) rats. (H) Representative traces of the oEPSC and oIPSC currents recorded from male rats across all treatment groups. (I) Representative traces of oEPSC and oIPSC currents recorded from female rats across all treatment groups. Data represent the mean ± SEM. Source data for all panels is included in Figure 5—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), and sex as factors. * indicates a significant difference between the related conditions; p < 0.05; n = 8–10 rats/group.
 
 To evaluate the E/I balance at BLA inputs to PrLPAG neurons, voltage-clamp recordings of optically evoked excitatory postsynaptic currents (oEPSCs) and optically evoked inhibitory postsynaptic currents (oIPSCs) were obtained from green retrobead labeled cells in the PrL. Analysis of oEPSC peak amplitudes indicated no significant effects of AIE, carrageenan, or sex (main effect of AIE: F(1,69) = 2.36, p = 0.1294; main effect of carrageenan: F(1,69) = 0.35, p = 0.5572; main effect of sex: F(1,69) = 3.64, p = 0.0604; AIE × carrageenan interaction: F(1,69) = 0.00, p = 0.9757; AIE × sex interaction: F(1,69) = 1.45, p = 0.2334; sex × carrageenan interaction: F(1,69) = 0.00, p = 0.9617; AIE × sex × carrageenan interaction: F(1,69) = 0.76, p = 0.3851; Figure 5B, C).
 
@@ -84,39 +155,134 @@ Conversely, oIPSC amplitude was significantly reduced in AIE exposed rats (main 
 
 To quantify the resulting E/I balance at PrLPAG neurons, the ratios of oEPSCs to oIPSCs were compared. This revealed that AIE enhanced the E/I balance (main effect of AIE: F(1,69) = 52.48, p = 0.0000, partial η2 = 0.4320 [0.2545, 0.5611]; Figure 5F, G) and female rats exhibited larger E/I ratios than male rats (main effect of sex: F(1,69) = 5.21, p = 0.0255, partial η2 = 0.0703 [0.0000, 0.2045]). No significant effects of carrageenan or interactions between AIE, sex, and carrageenan were found (main effect of carrageenan: F(1,69) = 0.96, p = 0.3307; AIE × carrageenan interaction: F(1,69) = 0.01, p = 0.9158; AIE × sex interaction: F(1,69) = 0.05, p = 0.8190; sex × carrageenan interaction: F(1,69) = 1.72, p = 0.1935; AIE × sex × carrageenan interaction: F(1,69) = 0.08, p = 0.7741).
 
-## The AMPA/NMDA ratio at direct inputs from the BLA onto PrLPAG neurons was unaltered by AIE exposure or carrageenan
+### The AMPA/NMDA ratio at direct inputs from the BLA onto PrLPAG neurons was unaltered by AIE exposure or carrageenan
 
 To assess the AMPA/NMDA ratio at monosynaptic inputs from the BLA to PrLPAG neurons, voltage-clamp recordings of oAMPA and oNMDA currents were obtained from green retrobead labeled cells in the PrL during application of tetrodotoxin (TTX) and 4-aminopyridine (4-AP) (Figure 6A). Analysis of oAMPA current amplitude revealed no significant effects of AIE, carrageenan, or sex (main effect of AIE: F(1,72) = 0.50, p = 0.4817; main effect of carrageenan: F(1,72) = 0.31, p = 0.5806; main effect of sex: F(1,72) = 3.19, p = 0.0784; AIE × carrageenan interaction: F(1,72) = 0.03, p = 0.8652; AIE × sex interaction: F(1,72) = 0.20, p = 0.6576; sex × carrageenan interaction: F(1,72) = 0.29, p = 0.5889; AIE × sex × carrageenan interaction: F(1,72) = 0.26, p = 0.6122; Figure 6B, C). Likewise, evaluation of the amplitude of oNMDA currents revealed no effects of treatment condition or sex (main effect of AIE: F(1,72) = 1.25, p = 0.2680; main effect of carrageenan: F(1,72) = 0.29, p = 0.5932; main effect of sex: F(1,72) = 2.86, p = 0.0952; AIE × carrageenan interaction: F(1,72) = 0.34, p = 0.5635; AIE × sex interaction: F(1,72) = 0.42, p = 0.5204; sex × carrageenan interaction: F(1,72) = 1.55, p = 0.2176; AIE × sex × carrageenan interaction: F(1,72) = 2.40, p = 0.1257; Figure 6D, E). The resultant ratios of oAMPA to oNMDA currents were compared and also were found to be unaltered by AIE, carrageenan, or sex (main effect of AIE: F(1,72) = 1.34, p = 0.2513; main effect of carrageenan: F(1,72) = 1.00, p = 0.3199; main effect of sex: F(1,72) = 2.81, p = 0.0982; AIE × carrageenan interaction: F(1,72) = 0.25, p = 0.6173; AIE × sex interaction: F(1,72) = 0.75, p = 0.3907; sex × carrageenan interaction: F(1,72) = 0.01, p = 0.9328; AIE × sex × carrageenan interaction: F(1,72) = 1.30, p = 0.2582; Figure 6F, G).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/101667/elife-101667-fig6-v1.jpg)
 
-**Figure 6.:** PAG).(A) Electrophysiological recordings were obtained from PrLPAG neurons in the PrL cortex. The amplitude of optically evoked AMPA currents was not altered by adolescent intermittent ethanol (AIE) exposure or a carrageenan paw pain challenge (CAR) in either male (B) or female (C) rats. Similarly, the amplitude of optically evoked NMDA currents was unchanged across all treatment conditions in both male (D) and female (E) rats. The AMPA/NMDA ratio was also not significantly altered by AIE or CAR in male (F) or female (G) rats. (H) Representative traces of optically evoked AMPA and NMDA currents recorded from male rats across all treatment groups. (I) Representative traces of optically evoked AMPA and NMDA currents recorded from female rats across all treatment groups. Data represent the mean ± SEM. Source data for all panels is included in Figure 6—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), and sex as factors. n = 10 rats/group.Figure 6—source data 1.PAG neurons.
+**Figure 6.:** (A) Electrophysiological recordings were obtained from PrLPAG neurons in the PrL cortex. The amplitude of optically evoked AMPA currents was not altered by adolescent intermittent ethanol (AIE) exposure or a carrageenan paw pain challenge (CAR) in either male (B) or female (C) rats. Similarly, the amplitude of optically evoked NMDA currents was unchanged across all treatment conditions in both male (D) and female (E) rats. The AMPA/NMDA ratio was also not significantly altered by AIE or CAR in male (F) or female (G) rats. (H) Representative traces of optically evoked AMPA and NMDA currents recorded from male rats across all treatment groups. (I) Representative traces of optically evoked AMPA and NMDA currents recorded from female rats across all treatment groups. Data represent the mean ± SEM. Source data for all panels is included in Figure 6—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), and sex as factors. n = 10 rats/group.
 
-## Asynchronous excitatory postsynaptic currents at direct inputs from the BLA onto PrLPAG neurons were unaffected by AIE exposure or carrageenan
+### Asynchronous excitatory postsynaptic currents at direct inputs from the BLA onto PrLPAG neurons were unaffected by AIE exposure or carrageenan
 
 To examine pre- and postsynaptic alterations in glutamatergic neurotransmission at BLA inputs onto PrLPAG neurons, voltage-clamp recordings of optically evoked asynchronous excitatory postsynaptic currents (aEPSCs) were obtained from green retrobead labeled cells while bath applying TTX and 4-AP (Figure 7A). Analysis showed that female rats exhibited larger aEPSCs than male rats (main effect of sex: F(1,70) = 11.75, p = 0.0010, partial η2 = 0.1437 [0.0256, 0.2925]). No other significant effects of AIE, carrageenan, or any interactions on aEPSC amplitude were observed (main effect of AIE: F(1,70) = 0.25, p = 0.6200; main effect of carrageenan: F(1,70) = 0.08, p = 0.7733; AIE × carrageenan interaction: F(1,70) = 0.24, p = 0.6239; AIE × sex interaction: F(1,70) = 0.09, p = 0.7713; sex × carrageenan interaction: F(1,70) = 3.62, p = 0.0613; AIE × sex × carrageenan interaction: F(1,70) = 0.47, p = 0.4974; Figure 7B, C). Likewise, assessment of the aEPSC interevent interval revealed no significant effects of AIE, carrageenan, or sex (main effect of AIE: F(1,70) = 0.52, p = 0.4731; main effect of carrageenan: F(1,70) = 0.01, p = 0.9106; main effect of sex: F(1,70) = 0.03, p = 0.8678; AIE × carrageenan interaction: F(1,70) = 0.15, p = 0.7021; AIE × sex interaction: F(1,70) = 0.65, p = 0.4224; sex × carrageenan interaction: F(1,70) = 2.39, p = 0.1265; AIE × sex × carrageenan interaction: F(1,70) = 0.02, p = 0.8815; Figure 7D, E).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/101667/elife-101667-fig7-v1.jpg)
 
-**Figure 7.:** PAG).(A) Electrophysiological recordings were obtained from PrLPAG neurons in the PrL cortex. When compared across treatment conditions, there were no differences in either the amplitude (B, C) or interevent interval (D, E) of aEPSCs. (F) Representative traces of aEPSCs recorded from male rats across all treatment groups. (G) Representative traces of aEPSCs recorded from female rats across all treatment groups. Data represent the mean ± SEM. Source data for all panels is included in Figure 7—source data 1. On the current traces, a + indicates an asynchronous event. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), and sex as factors. n = 8–10 rats/group.Figure 7—source data 1.PAG neurons.
+**Figure 7.:** (A) Electrophysiological recordings were obtained from PrLPAG neurons in the PrL cortex. When compared across treatment conditions, there were no differences in either the amplitude (B, C) or interevent interval (D, E) of aEPSCs. (F) Representative traces of aEPSCs recorded from male rats across all treatment groups. (G) Representative traces of aEPSCs recorded from female rats across all treatment groups. Data represent the mean ± SEM. Source data for all panels is included in Figure 7—source data 1. On the current traces, a + indicates an asynchronous event. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), and sex as factors. n = 8–10 rats/group.
 
-## AIE exposure decreased and carrageenan increased the intrinsic excitability of PrL PVINs
+### AIE exposure decreased and carrageenan increased the intrinsic excitability of PrL PVINs
 
 After observing altered inhibition of PrLPAG neurons, the impact of AIE exposure- and carrageenan-induced hyperalgesia on PrL PVIN intrinsic excitability was evaluated through current-clamp recordings of current evoked firing obtained from mCherry-tagged cells in the PrL cortex. As expected, mCherry-tagged neurons were distributed throughout layers II/III and V/VI in the PrL, with the highest concentration observed in layer V. Table 2 contains a summary of the biophysical properties of the recorded PVINs. Analysis of these properties revealed a significant reduction in the AP threshold of PVINs from AIE exposed rats treated with carrageenan (AIE × carrageenan interaction: F(1,72) = 4.56, p = 0.0361, partial η2 = 0.0596 [0.0000, 0.1865]) as well as greater afterhyperpolarization in PVINs from male rats (main effect of sex: F(1,72) = 14.51, p = 0.0003, partial η2 = 0.1677 [0.0394, 0.3165]). No other significant differences between treatment conditions or sex were observed for these properties.
+
+**Table 2.**
+ Biophysical properties of parvalbumin interneurons (PVINs) across treatment condition and sex.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Sex</th>
+      <th>Vrest (mV)</th>
+      <th>Rinput (MΩ)</th>
+      <th>APThresh (mV)</th>
+      <th>Sag ratio (%)</th>
+      <th>AHP (mV)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AIR: SAL</td>
+      <td>Male</td>
+      <td>–74.3 ± 1.9</td>
+      <td>145.1 ± 5.1</td>
+      <td>–42.4 ± 0.7</td>
+      <td>2.6 ± 0.8</td>
+      <td>18.0 ± 0.9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Female</td>
+      <td>–72.6 ± 1.6</td>
+      <td>155.4 ± 8.8</td>
+      <td>–42.3 ± 1.6</td>
+      <td>2.7 ± 0.4</td>
+      <td>15.3 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>AIR: CAR</td>
+      <td>Male</td>
+      <td>–72.5 ± 1.9</td>
+      <td>138.1 ± 7.4</td>
+      <td>–42.0 ± 1.4</td>
+      <td>1.3 ± 0.5</td>
+      <td>19.4 ± 1.3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Female</td>
+      <td>–73.7 ± 1.6</td>
+      <td>135.4 ± 8.9</td>
+      <td>–41.2 ± 0.8</td>
+      <td>2.3 ± 0.6</td>
+      <td>12.0 ± 1.2</td>
+    </tr>
+    <tr>
+      <td>AIE: SAL</td>
+      <td>Male</td>
+      <td>–73.6 ± 1.3</td>
+      <td>155.7 ± 4.9</td>
+      <td>–40.4 ± 0.6</td>
+      <td>1.2 ± 0.5</td>
+      <td>16.0 ± 1.8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Female</td>
+      <td>–74.6 ± 1.8</td>
+      <td>147.0 ± 5.2</td>
+      <td>–41.4 ± 1.2</td>
+      <td>3.2 ± 0.8</td>
+      <td>14.1 ± 1.0</td>
+    </tr>
+    <tr>
+      <td>AIE: CAR</td>
+      <td>Male</td>
+      <td>–71.6 ± 2.1</td>
+      <td>153.2 ± 8.3</td>
+      <td>–44.3 ± 1.6*</td>
+      <td>2.6 ± 0.7</td>
+      <td>16.1 ± 1.2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Female</td>
+      <td>–74.0 ± 1.6</td>
+      <td>141.3 ± 5.9</td>
+      <td>–44.0 ± 2.0*</td>
+      <td>2.5 ± 0.7</td>
+      <td>14.6 ± 1.8</td>
+    </tr>
+    <tr>
+      <td colspan="7">* Denotes a significant difference; p &lt; 0.05.</td>
+    </tr>
+  </tbody>
+</table>
 
 Analysis of the firing of PrL PVINs revealed AIE reduced intrinsic excitability, with the magnitude of this reduction increasing with the amount of current injected (main effect of AIE: F(1,72) = 5.41, p = 0.0228, partial η2 = 0.0699 [0.0004, 0.2010]; AIE × current step interaction: F(20,1440) = 4.77, p = 0.0098, partial η2 = 0.0621 [0.0289, 0.0744]; Figure 8A–G). Additionally, carrageenan enhanced the number of evoked APs at large but not small current steps, although the main effect was not significant (main effect of carrageenan: F(1,72) = 2.26, P = 0.1374; carrageenan × current step interaction: F(20,1440) = 3.57, p = 0.0304, partial η2 = 0.0472 [0.0170, 0.0566]). There were no significant effects of sex, or interactions between treatment conditions, sex, and current step (main effect of sex: F(1,72) = 0.00, p = 0.9928; AIE × carrageenan interaction: F(1,72) = 0.08, p = 0.7720; AIE × sex interaction: F(1,72) = 0.18, p = 0.6685; sex × carrageenan interaction: F(1,72) = 0.01, p = 0.9110; AIE × sex × carrageenan interaction: F(1,72) = 0.00, p = 0.9700; sex × current step interaction: F(20,1440) = 0.43, p = 0.6532; AIE × sex × current step interaction: F(20,1440) = 0.80, p = 0.4510; AIE × carrageenan × current step interaction: F(20,1440) = 0.63, p = 0.5367; sex × carrageenan × current step interaction: F(20,1440)=0.27, p = 0.7654; AIE × sex × carrageenan × current step interaction: F(20,1440) = 0.44, p = 0.6468). However, the number of current evoked APs increased with the amount of current injected (main effect of current step: F(20,1440) = 181.06, p = 0.000, partial η2 = 0.7155 [0.6903, 0.7307]).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/101667/elife-101667-fig8-v1.jpg)
 
-**Figure 8.:** (A) Electrophysiological recordings were obtained from PVINs in the PrL cortex. (B) Depiction of the relationship between injected current and action potential firing in male rats across treatment conditions. (C) Depiction of the relationship between injected current and action potential firing in female rats across treatment conditions. (D) Adolescent intermittent ethanol (AIE) exposure reduced the cumulative number of action potentials fired across all current steps in male rats. (E) AIE exposure reduced the cumulative number of action potentials fired across all current steps in female rats. (F) Representative traces showing action potential spiking across treatment conditions in male rats. (G) Representative traces showing action potential spiking across treatment conditions in female rats. Data represent the mean ± SEM. Source data for all panels is included in Figure 8—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), sex, and injected current (when applicable) as factors. * indicates a significant difference between the related conditions; p < 0.05; n = 10 rats/group.Figure 8—source data 1.
+**Figure 8.:** (A) Electrophysiological recordings were obtained from PVINs in the PrL cortex. (B) Depiction of the relationship between injected current and action potential firing in male rats across treatment conditions. (C) Depiction of the relationship between injected current and action potential firing in female rats across treatment conditions. (D) Adolescent intermittent ethanol (AIE) exposure reduced the cumulative number of action potentials fired across all current steps in male rats. (E) AIE exposure reduced the cumulative number of action potentials fired across all current steps in female rats. (F) Representative traces showing action potential spiking across treatment conditions in male rats. (G) Representative traces showing action potential spiking across treatment conditions in female rats. Data represent the mean ± SEM. Source data for all panels is included in Figure 8—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), sex, and injected current (when applicable) as factors. * indicates a significant difference between the related conditions; p < 0.05; n = 10 rats/group.
 
-## AIE exposure decreased and carrageenan increased the E/I balance at inputs from the BLA onto PrL PVINs
+### AIE exposure decreased and carrageenan increased the E/I balance at inputs from the BLA onto PrL PVINs
 
 After assessing the intrinsic excitability of PVINs, the next set of experiments characterized the impact of AIE exposure- and carrageenan-induced hyperalgesia on synaptic function at BLA inputs to PrL PVINs. This involved recording from mCherry-tagged PVINs in the PrL cortex while optically stimulating terminals from the BLA (Figure 9A).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/101667/elife-101667-fig9-v1.jpg)
 
-**Figure 9.:** (A) Electrophysiological recordings were obtained from PVINs in the PrL cortex. The amplitude of optically evoked excitatory postsynaptic currents (oEPSCs) onto PVINs was found to be significantly reduced by adolescent intermittent ethanol (AIE) exposure in both (B) male and (C) female rats. Quantification of the amplitude of optically evoked inhibitory postsynaptic currents (oIPSCs) revealed that oIPSCs onto PVINs were altered by AIE in a sex-dependent manner, although post hoc analysis did not reveal a significant difference based on any combination of sex and AIE (D, E). Examination of the oEPSC/oIPSC (excitation/inhibition, E/I) ratios as a measure of excitatory–inhibitory balance at basolateral amygdala (BLA) inputs onto PVINs revealed that a carrageenan paw pain challenge (CAR) enhanced the E/I ratio at PVINs in both male (F) and female (G) rats, while AIE reduced the E/I ratio. The effect of AIE on E/I balance was greater in males (F) than in females (G). (H) Representative traces of the oEPSC and oIPSC currents recorded from male rats across all treatment groups. (I) Representative traces of oEPSC and oIPSC currents recorded from female rats across all treatment groups. Data represent the mean ± SEM. Source data for all panels is included in Figure 9—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), and sex as factors. * indicates a significant difference between the related conditions; p < 0.05; n = 10 rats/group.Figure 9—source data 1.
+**Figure 9.:** (A) Electrophysiological recordings were obtained from PVINs in the PrL cortex. The amplitude of optically evoked excitatory postsynaptic currents (oEPSCs) onto PVINs was found to be significantly reduced by adolescent intermittent ethanol (AIE) exposure in both (B) male and (C) female rats. Quantification of the amplitude of optically evoked inhibitory postsynaptic currents (oIPSCs) revealed that oIPSCs onto PVINs were altered by AIE in a sex-dependent manner, although post hoc analysis did not reveal a significant difference based on any combination of sex and AIE (D, E). Examination of the oEPSC/oIPSC (excitation/inhibition, E/I) ratios as a measure of excitatory–inhibitory balance at basolateral amygdala (BLA) inputs onto PVINs revealed that a carrageenan paw pain challenge (CAR) enhanced the E/I ratio at PVINs in both male (F) and female (G) rats, while AIE reduced the E/I ratio. The effect of AIE on E/I balance was greater in males (F) than in females (G). (H) Representative traces of the oEPSC and oIPSC currents recorded from male rats across all treatment groups. (I) Representative traces of oEPSC and oIPSC currents recorded from female rats across all treatment groups. Data represent the mean ± SEM. Source data for all panels is included in Figure 9—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), and sex as factors. * indicates a significant difference between the related conditions; p < 0.05; n = 10 rats/group.
 
 To evaluate the E/I balance at BLA inputs to PVINs, voltage-clamp recordings of oEPSCs and oIPSCs were obtained from mCherry-tagged neurons in the PrL. Analysis revealed that AIE significantly reduced oEPSC amplitude (main effect of AIE: F(1,72) = 14.80, p = 0.0003, partial η2 = 0.1705 [0.0409, 0.3194]; Figure 9B, C), with larger oEPSCs in females than males (main effect of sex: F(1,72) = 8.22, p = 0.0054, partial η2 = 0.1025 [0.0094, 0.2429]). No significant effects of carrageenan, or interactions between AIE, carrageenan, or sex were observed (main effect of carrageenan: F(1,72) = 1.33, p = 0.2520; AIE × carrageenan interaction: F(1,72) = 0.08, p = 0.7839; AIE × sex interaction: F(1,72) = 0.26, p = 0.6126; sex × carrageenan interaction: F(1,72) = 0.41, p = 0.5254; AIE × sex × carrageenan interaction: F(1,72) = 0.26, p = 0.6110).
 
@@ -124,25 +290,25 @@ Examination of oIPSC amplitudes uncovered a significant AIE × sex interaction (
 
 Comparisons of the oEPSC to oIPSC ratios indicated larger E/I ratios in females compared to males (main effect of sex: F(1,72) = 12.12, p = 0.0009, partial η2 = 0.1440 [0.0269, 0.2909]; Figure 9F, G). Additionally, AIE reduced the E/I ratio, with a more pronounced reduction observed in males than in females (main effect of AIE: F(1,72) = 15.60, p = 0.0002, partial η2 = 0.1781 [0.0453, 0.3273]; AIE × sex interaction: F(1,72) = 4.64, p = 0.0345, partial η2 = 0.0606 [0.0000, 0.1880]). In contrast, carrageenan augmented the E/I balance (main effect of carrageenan: F(1,72) = 7.48, p = 0.0079, partial η2 = 0.0941 [0.0067, 0.2326]). No further significant interactions between AIE, carrageenan, and sex were observed (AIE × carrageenan interaction: F(1,72) = 1.48, p = 0.2278; sex × carrageenan interaction: F(1,72) = 0.57, p = 0.4523; AIE × sex × carrageenan interaction: F(1,72) = 0.12, p = 0.7347).
 
-## AIE exposure blunted carrageenan-induced increases in the AMPA/NMDA ratio at direct inputs from the BLA onto PrL PVINs
+### AIE exposure blunted carrageenan-induced increases in the AMPA/NMDA ratio at direct inputs from the BLA onto PrL PVINs
 
 To assess the AMPA/NMDA ratio at monosynaptic BLA inputs onto PrL PVINs, voltage-clamp recordings of oAMPA and oNMDA currents were obtained from mCherry-tagged neurons in the PrL cortex during bath application of TTX and 4-AP (Figure 10A). Analysis revealed that AIE exposure attenuated oAMPA current amplitude, whereas carrageenan enhanced it (main effect of AIE: F(1,72) = 5.76, p = 0.0190, partial η2 = 0.0740 [0.0013, 0.2066]; main effect of carrageenan: F(1,72) = 4.44, p = 0.0385, partial η2 = 0.0581 [0.0000, 0.1844]; Figure 10B, C). No significant effects of sex or any interactions were observed (main effect of sex: F(1,72) = 0.28, p = 0.5974; AIE × carrageenan interaction: F(1,72) = 1.32, p = 0.2542; AIE × sex interaction: F(1,72) = 0.37, p = 0.5458; sex × carrageenan interaction: F(1,72) = 0.15, p = 0.7029; AIE × sex × carrageenan interaction: F(1,72) = 0.22, p = 0.6428).
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/101667/elife-101667-fig10-v1.jpg)
 
-**Figure 10.:** (A) Electrophysiological recordings were obtained from PVINs in the PrL cortex. The amplitude of optically evoked AMPA currents was increased by a carrageenan paw pain challenge (CAR) but decreased by adolescent intermittent ethanol (AIE) exposure in both male (B) and female (C) rats. Similarly, AIE reduced the amplitude of optically evoked NMDA currents in both male (D) and female (E) rats. Examination of the AMPA/NMDA ratios revealed that CAR enhanced the AMPA/NMDA ratio at BLA inputs onto PrL PVINs in both male (F) and female (G) rats. However, this increase was attenuated in AIE exposed rats. (H) Representative traces of optically evoked AMPA and NMDA currents recorded from male rats across all treatment groups. (I) Representative traces of optically evoked AMPA and NMDA currents recorded from female rats across all treatment groups. The rectification index was unchanged across treatment conditions in both male (J) and female (K) rats. Data represent the mean ± SEM. Source data for all panels is included in Figure 10—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), and sex as factors. * indicates a significant difference between the related conditions; p < 0.05; n = 10 rats/group.Figure 10—source data 1.
+**Figure 10.:** (A) Electrophysiological recordings were obtained from PVINs in the PrL cortex. The amplitude of optically evoked AMPA currents was increased by a carrageenan paw pain challenge (CAR) but decreased by adolescent intermittent ethanol (AIE) exposure in both male (B) and female (C) rats. Similarly, AIE reduced the amplitude of optically evoked NMDA currents in both male (D) and female (E) rats. Examination of the AMPA/NMDA ratios revealed that CAR enhanced the AMPA/NMDA ratio at BLA inputs onto PrL PVINs in both male (F) and female (G) rats. However, this increase was attenuated in AIE exposed rats. (H) Representative traces of optically evoked AMPA and NMDA currents recorded from male rats across all treatment groups. (I) Representative traces of optically evoked AMPA and NMDA currents recorded from female rats across all treatment groups. The rectification index was unchanged across treatment conditions in both male (J) and female (K) rats. Data represent the mean ± SEM. Source data for all panels is included in Figure 10—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), and sex as factors. * indicates a significant difference between the related conditions; p < 0.05; n = 10 rats/group.
 
 Similarly, the amplitude of oNMDA currents was reduced by AIE (main effect of AIE: F(1,72) = 7.32, p = 0.0085, partial η2 = 0.0923 [0.0062, 0.2303]; Figure 10D, E). However, neither carrageenan nor sex, nor any interaction between AIE, carrageenan, or sex was observed to impact oNMDA currents (main effect of carrageenan: F(1,72) = 0.08, p = 0.7814; main effect of sex: F(1,72) = 1.69, p = 0.1971; interaction AIE × carrageenan: F(1,72) = 2.37, p = 0.1279; interaction AIE × sex: F(1,72) = 0.04, p = 0.8458; interaction sex × carrageenan: F(1,72) = 1.80, p = 0.1836; interaction AIE × sex × carrageenan: F(1,72) = 0.10, p = 0.7493).
 
 After analyzing the oAMPA and oNMDA currents individually, ratios of oAMPA to oNMDA currents were compared. This revealed that carrageenan significantly enhanced the AMPA/NMDA ratio (main effect of carrageenan: F(1,72) = 6.28, p = 0.0145, partial η2 = 0.0802 [0.0029, 0.2148]; Figure 10F, G). The analysis also uncovered a significant interaction between AIE and carrageenan, reflecting a reduction in the effect of carrageenan on AIE exposed rats (AIE × carrageenan interaction: F(1,72) = 6.47, p = 0.0131, partial η2 = 0.0825 [0.0034, 0.2178]). No additional significant effects were detected (main effect of AIE: F(1,72) = 0.16, p = 0.6888; main effect of sex: F(1,72) = 2.21, p = 0.1411; AIE × sex interaction: F(1,72) = 2.90, p = 0.0928; sex × carrageenan interaction: F(1,72) = 1.00, p = 0.3203; AIE × sex × carrageenan interaction: F(1,72) = 0.73, p = 0.3953).
 
-## AIE exposure reduced the amplitude of aEPSCs at direct inputs from the BLA onto PrL PVINs
+### AIE exposure reduced the amplitude of aEPSCs at direct inputs from the BLA onto PrL PVINs
 
 To assess pre- and postsynaptic changes in glutamatergic neurotransmission at direct inputs from the BLA onto PVINs in the PrL cortex, voltage-clamp recordings were acquired from mCherry-tagged neurons during bath application of TTX and 4-AP (Figure 11A). Analysis revealed an AIE-induced reduction in amplitude (main effect of AIE: F(1,71) = 17.60, p = 0.0001, partial η2 = 0.1986 [0.0572, 0.3493]; Figure 11B, C). No additional effects of carrageenan, sex, or interactions between treatment condition and sex were detected (main effect of carrageenan: F(1,71) = 0.15, p = 0.6961; main effect of sex: F(1,71) = 1.38, p = 0.2441; AIE × carrageenan interaction: F(1,71) = 0.10, p = 0.7556; AIE × sex interaction: F(1,71) = 0.44, p = 0.5115; sex × carrageenan interaction: F(1,71) = 1.89, p = 0.1733; AIE × sex × carrageenan interaction: F(1,71) = 0.00, p = 0.9505). In contrast, evaluation of the interevent interval revealed female rats had smaller interevent intervals than male rats (main effect of sex: F(1,71) = 8.44, p = 0.0049, partial η2 = 0.1062 [0.0104, 0.2484]; Figure 11D, E), while finding no additional significant effects of AIE, carrageenan, or interactions between treatment conditions and sex (main effect of AIE: F(1,71) = 0.51, p = 0.4795; main effect of carrageenan: F(1,71) = 1.05, p = 0.3079; AIE × carrageenan interaction: F(1,71) = 1.00, p = 0.3196; AIE × sex interaction: F(1,71) = 0.46, p = 0.5009; sex × carrageenan interaction: F(1,71) = 0.00, p = 0.9530; AIE × sex × carrageenan interaction: F(1,71) = 0.29, p = 0.5943).
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/101667/elife-101667-fig11-v1.jpg)
 
-**Figure 11.:** (A) Electrophysiological recordings were obtained from PVINs in the PrL cortex. Adolescent intermittent ethanol (AIE) exposure was found to decrease the amplitude of aEPSCs from both male (B) and female (C) rats. The interevent interval of aEPSCs, however, was unaltered by either AIE or a carrageenan paw pain challenge (CAR) in male (D) and female (E) rats. (F) Representative traces of aEPSCs recorded from male rats across all treatment groups. (G) Representative traces of aEPSCs recorded from female rats across all treatment groups. Data represent the mean ± SEM. + indicates an asynchronous event. Source data for all panels is included in Figure 11—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), and sex as factors. * indicates a significant difference between the related conditions; p < 0.05; n = 9–10 rats/group.Figure 11—source data 1.
+**Figure 11.:** (A) Electrophysiological recordings were obtained from PVINs in the PrL cortex. Adolescent intermittent ethanol (AIE) exposure was found to decrease the amplitude of aEPSCs from both male (B) and female (C) rats. The interevent interval of aEPSCs, however, was unaltered by either AIE or a carrageenan paw pain challenge (CAR) in male (D) and female (E) rats. (F) Representative traces of aEPSCs recorded from male rats across all treatment groups. (G) Representative traces of aEPSCs recorded from female rats across all treatment groups. Data represent the mean ± SEM. + indicates an asynchronous event. Source data for all panels is included in Figure 11—source data 1. Data were analyzed using ANOVA, with exposure (AIR vs. AIE), treatment (CAR vs. SAL), and sex as factors. * indicates a significant difference between the related conditions; p < 0.05; n = 9–10 rats/group.
 
 ## Discussion
 
@@ -170,41 +336,142 @@ In conclusion, the present study examined the effects of AIE exposure and a carr
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Rattus norvegicus)</td>
+      <td>Parvalbumin-Cre on a Long-Evans background</td>
+      <td>Rat Resource and Research Center</td>
+      <td>RRID:RRRC_00773</td>
+      <td>Male and female</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV5-hSyn-hChR2(H134R)-EYFP</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_26973Cat#:26973-AAV5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV2-hSyn-DIO-mCherry</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_50459Cat#:50459-AAV2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>λ-Carrageenan (low viscosity)</td>
+      <td>Tokyo Chemical Industry</td>
+      <td>Cat#:C2871CAS#:9064-57-7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin</td>
+      <td>Ascent Scientific</td>
+      <td>Cat#:ASC-315CAS#:124-87-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Kynurenic acid sodium salt</td>
+      <td>Hello Bio</td>
+      <td>Cat#:HB0363CAS#:2439-02-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin (citrate)</td>
+      <td>Cayman Chemical</td>
+      <td>Cat#:14964CAS#:18660-81-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Aminopyridine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:A78403CAS#:504-24-5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DL-APV</td>
+      <td>Cayman Chemical</td>
+      <td>Cat#:14540CAS#:76326-31-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Axograph X</td>
+      <td>Axograph</td>
+      <td>RRID:SCR_014284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Stata 15.1</td>
+      <td>StataCorp</td>
+      <td>RRID:SCR_012763</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Green Retrobeads IX</td>
+      <td>Lumafluor</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Parvalbumin-Cre rats on a Long-Evans background were obtained from the Rat Resource and Research Center (line #00773) and bred to establish a colony at the Medical University of South Carolina. Rats were genotyped at postnatal day (PD) 14, with only hemizygote rats included in this study. On PD 21, rat pups were weaned, same sex group-housed (2–3 per cage) and assigned to one of four treatment groups: Air-saline (n = 30), Air-carrageenan (n = 30), AIE-saline (n = 30), or AIE-carrageenan (n = 29). Rats were housed in a temperature and humidity-controlled environment on a 12/12-hr light/dark cycle, with lights off from 09:00 to 21:00 each day. Teklad 2918 (Envigo, Indianapolis, IN) chow and water were provided to the rats ad libitum. All procedures were carried out in accordance with the National Research Council’s Guide for the Care and Use of Laboratory Animals (2011) and were approved by the Medical University of South Carolina Institutional Animal Care and Use Committee.
 
-## AIE exposure
+### AIE exposure
 
 AIE exposure was carried out as previously described (Chandler et al., 2022; Gass et al., 2014). All rats underwent eight cycles of intermittent ethanol vapor exposure beginning at PD 28 and continuing through PD 54. Each cycle consisted of 2 days of ethanol vapor exposure separated by 2 days of no ethanol exposure. The litter-matched Air rats received the same treatment except they were not exposed to ethanol vapor. On ethanol exposure days, rats were placed in the chambers at 18:00 and removed from the chambers at 08:00 on the following day. Upon removal from the chambers, the level of intoxication of each rat was rated on the following 5-point behavioral intoxication scale: 1 = no signs of intoxication; 2 = slightly intoxicated (slight motor impairment); 3 = moderately intoxicated (obvious motor impairment but able to walk); 4 = highly intoxicated (dragging abdomen, loss of righting reflex); 5 = extremely intoxicated (loss of righting reflex, and loss of eye blink reflex) (Barker et al., 2017; Gass et al., 2014; Glover et al., 2021). On the last day of each cycle, blood was collected from the tail vein and analyzed for BEC using an Analox alcohol analyzer (AM1, Analox Instruments, Stourbridge, GBR). Following the last exposure cycle, the rats remained group housed in the vivarium until undergoing surgery at ~PD 80, after which they were single housed until being sacrificed to obtain slices for experimental use.
 
-## Stereotaxic surgery
+### Stereotaxic surgery
 
 Rats undergoing stereotaxic surgery were induced and maintained under a surgical plane of anesthesia using isoflurane (2–3%). Intracranial injections were performed on a Kopf rat stereotaxic instrument (Kopf Instruments, Tujunga, CA, USA). A Micro4 (World Precision Instruments [WPI], Sarasota, FL, USA) controlled UMP3 microinjection pump (WPI) connected to a glass syringe (80100, Hamilton Company, Reno, NV) under stereotaxic control was used to inject 500 nl green retrobeads IX (Lumafluor Inc, Durham, NC) into the left vlPAG (from bregma: –8.4 mm AP, –0.7 mm ML, –6.3 mm DV), 500 nl of AAV5-hSyn-hChR2(H134R)-EYFP (26973-AAV5, Addgene, Watertown, MA) into the left BLA (from bregma: –2.7 mm AP, –5.1 mm ML, –8.8 mm DV), and 750 nl of AAV2-hSyn-DIO-mCherry (50459-AAV2, Addgene) into the left PrL cortex (from bregma: +2.8 mm AP, –0.6 mm ML, –3.8 mm DV). All injections occurred at 1 nl/s with the injector remaining in place for an additional 5 min following completion of the infusion. After surgery, a minimum of 4 weeks was given to allow the rats to recover and for retrograde transport and viral expression to occur.
 
-## Assessment of mechanical and thermal sensitivity
+### Assessment of mechanical and thermal sensitivity
 
 Mechanical and thermal sensitivity were assessed using the electronic Von Frey and Hargreaves tests, respectively. During the 3 days leading up to the first assessment rats were habituated to handling. On the day before the first assessment rats were acclimated to the testing apparatuses. This acclimation session consisted of 15-min exposure to the electronic Von Frey enclosure followed by 30-min exposure to the Hargreaves enclosure. Assessments began on PD 24 prior to initiation of ethanol vapor exposure on PD 28 and continued every 7 days until PD 80. Rats that subsequently underwent stereotaxic surgery followed by 4 weeks of recovery were reassessed for pain sensitivity. This was followed by injection with 100 µl of carrageenan (C2871, Tokyo Chemical Industry, Tokyo, JPN; 1% wt/vol in saline) or saline in the right hindpaw under brief isoflurane anesthesia. Subsequent pain sensitivity tests were conducted at 2-, 6-, and 24-hr post-injection, after which rats were sacrificed to obtain slices for experimental use.
 
-## Electronic Von Frey test for mechanical allodynia
+#### Electronic Von Frey test for mechanical allodynia
 
 On pain sensitivity test days, rats were placed in a 17″ × 8.5″ × 10″ Plexiglas enclosure with a metal mesh floor. After a 5-min acclimation period, the mechanical sensitivity of the right hindpaw was assessed using an electronic Von Frey unit (38450, Ugo Basile, Gemonio, ITA). This consisted of placing the electronic Von Frey filament perpendicular to the plantar surface of the hindpaw and applying force until a sharp withdrawal response was elicited. Mechanical sensitivity was assessed three times per session for each rat and the average gram-force required to elicit a withdrawal response was recorded.
 
-## Hargreaves test for thermal hyperalgesia
+#### Hargreaves test for thermal hyperalgesia
 
 Following assessment of allodynia, rats were placed in a 4″ × 8″ × 5.5″ plexiglass enclosure with a glass floor. After a 15-min habituation period, the right hindpaw was stimulated using an infrared emitter from Ugo Basile (37570; 60% maximum intensity) and the latency to hindpaw withdrawal was measured. A 30-s cutoff was used to prevent tissue damage in rats that were unresponsive to the thermal stimulus. In each session, the paw withdrawal latency was measured three times per rat and the average score was used to quantify the level of thermal sensitivity.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Acute slices were obtained from rats for electrophysiological recordings beginning at PD 110. Current-clamp experiments were performed as previously described (Trantham-Davidson et al., 2014; Trantham-Davidson et al., 2017). In brief, rats were anesthetized with isoflurane, and the brain was rapidly removed and placed into ice-cold cutting solution containing (in mM): 93 NMDG, 2.5 KCl, 1.2 NaH2PO4, 30 NaHCO3, 10 D-glucose, 20 HEPES, 2.5 C5H9NO3S, 5 ascorbic acid, 15 sucrose, 10 MgCl2, and 0.5 CaCl2. Following sectioning using a Leica vibratome (VT 1200S, Wetzlar, DEU), 280 μM thick slices were incubated for at least 60 min at 34°C in artificial cerebrospinal fluid (aCSF) containing (in mM): 92 NaCl, 2.5 KCl, 1.2 NaH2PO4, 30 NaHCO3, 10 D-glucose, 20 HEPES, 5 ascorbic acid, 10 MgCl2, and 0.5 CaCl2. After incubation, slices were transferred to a submerged recording chamber held at 34°C and constantly perfused with recording aCSF containing (in mM): 125 NaCl, 2.5 KCl, 25 NaHCO3, 10 D-glucose, 0.4 ascorbic acid, 1.3 MgCl2, and 2 CaCl2. Each of these solutions was pH adjusted (pH 7.3–7.43), with an osmolarity of 300–310 mOsm, and was continuously aerated with 95% O2/5% CO2.
 
 Recordings were performed using a Multiclamp 700B amplifier (Molecular Devices, San Jose, CA) connected to a Windows-PC running Axograph X software through an ITC-18 digital to analog converter (HEKA Instruments, Holliston, MA). A Sutter Instruments P-1000 micropipette puller (Novato, CA) was used to pull borosilicate glass electrodes. Tip resistances ranged from 4 to 8 MΩ. All recordings were obtained from visually identified green retrobead labeled PrLPAG neurons or mCherry-tagged PVINs in the left PrL. Cells were identified using a Zeiss Axio Examiner.A1 microscope (Oberkochen, DEU) equipped with a DIC filter and a filter for visualizing green retrobeads and mCherry. All internal solutions were adjusted to pH 7.4 and 285 mOsm. Series and membrane resistance were measured at the beginning and end of each recording, and if the series resistance exceeded 20 MΩ or changed by more than 10% then the cell was excluded from the analysis.
 
-## Current-clamp recordings
+#### Current-clamp recordings
 
 Electrodes were filled with an internal solution containing (in mM): 125 potassium gluconate, 20 KCl, 10 HEPES, 1 EGTA, 2 MgCl2, 2 Na2-ATP, 0.3 Tris-GTP, and 10 phosphocreatine. To assess intrinsic excitability, picrotoxin (100 µM) and kynurenic acid (2 mM) were added to the perfused aCSF and 1-s current steps were applied in 20 pA increments ranging from –100 to +400 pA. Recordings were digitized at 10 kHz, filtered at 2 kHz, and analyzed for the number of APs elicited by each current step.
 
-## Voltage-clamp recordings
+#### Voltage-clamp recordings
 
 Electrodes were filled with an internal solution containing (in mM): 125 cesium methanesulfonate, 10 CsCl, 4 NaCl, 10 HEPES, 1 EGTA, 2 MgCl2, 2 Na2-ATP, 0.5 Tris-GTP, 10 phosphocreatine, and 1 QX-314-Cl. All voltage-clamp recordings were digitized at 10 kHz and filtered at 2 kHz. Postsynaptic events were evoked by optically stimulating channelrhodopsin expressing terminals from the BLA in the PrL cortex. This involved using Axograph to trigger a 5-ms pulse of light from an MDL-III-447 diode blue laser collimated to fit the microscope. The optical stimulation intensity was varied to establish the stimulus–response relationship. Once determined, the intensity was set either to induce a half-maximal response (for E/I balance experiments) or a maximal response (for AMPA/NMDA ratio experiments).
 
@@ -214,6 +481,6 @@ For experiments measuring the AMPA/NMDA ratio at BLA inputs onto PrLPAG neurons,
 
 For experiments measuring optically evoked aEPSCs, TTX (1 µM) and 4-AP (100 µM) were added to the recording aCSF and SrCl2 (2 mM) was substituted for CaCl2. The substitution of strontium for calcium induces asynchronous neurotransmitter release after the initial release event. The resulting interevent interval and amplitude of the asynchronous events are commonly used to quantify pre- and postsynaptic function within defined circuits (Choi and Lovinger, 1997; Dodge et al., 1969; Xu-Friedman and Regehr, 2000). Recordings of aEPSCs were collected from neurons voltage clamped at –70 mV and analyzed within a 400-ms window beginning 50-ms poststimulation.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical analyses were performed using Stata 15.1 (StataCorp LLC, College Station, TX). Data were assessed for normality using the Wilks–Shapiro test and checked for outliers using the IQR rule. The experimental unit for this study was the individual animal. As such, while electrophysiological measures (e.g. E/I balance, intrinsic excitability) were obtained from multiple neurons within each animal, the data were averaged within each animal prior to analysis and reporting. Unless otherwise indicated, all data were analyzed using ANOVA models including all relevant factors. Repeated measures analyses used the Greenhouse–Geisser correction for sphericity. Post hoc tests were corrected for multiple comparisons using the Bonferroni method. All values reported are mean ± SEM. For purposes of statistical significance, p < 0.05 was considered significant.

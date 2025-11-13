@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 Department of Neuroscience, Physiology and Pharmacology, University College London London United Kingdom
+1. Department of Neuroscience, Physiology and Pharmacology, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
 
 † Corresponding author
 
@@ -27,25 +27,45 @@ Few studies have investigated how ischaemia affects renal pericytes (Kwon et al.
 
 ## Results
 
-## No-reflow after renal ischaemia and reperfusion
+### No-reflow after renal ischaemia and reperfusion
 
 Adult male Sprague-Dawley rats (P40-50), or NG2-dsRed male mice (P100-120) were used in this study. We used a combination of laser Doppler perfusion measurements, low magnification imaging of blood volume, and high magnification imaging that resolved individual capillaries, to assess the magnitude and cause of changes of renal perfusion after ischaemia. Ischaemia for 1 hr decreased perfusion of the renal medulla and cortex by ~90% (both P < 0.0001 vs. control; assessed with laser Doppler: Figure 1a and b). After 30 min reperfusion, blood flow recovered to 49% of control (significantly reduced, P = 0.005, Figure 1a) in the medulla, but to 75% in the cortex (P = 0.047, Figure 1b; Regner et al., 2009). Perfusion was stable in the contralateral kidney throughout (Figure 1a and b). After 60 min reperfusion, medullary perfusion remained compromised at 40% of the control level (P = 0.017, Figure 1—figure supplement 1a), but cortical perfusion had fully recovered (to ~20% above the control value, not significant, P = 0.092, Figure 1—figure supplement 1b). Despite this flow recovery, we show below that peritubular capillaries in the cortex can become blocked after ischaemia.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/74211/elife-74211-fig1-v2.jpg)
+
+**Figure 1.:** (a, b) Ischaemia and reperfusion (I/R) evoked changes of blood flow (measured by laser Doppler) in the rat renal (a) medulla (n = 4 animals) and (b) cortex (n = 10 animals). CONT indicates blood flow on the contralateral (non-ischaemic) side. Traces labelled +HF show the effect on recovery of perfusion of administering the Rho kinase inhibitor hydroxyfasudil (HF) immediately on reperfusion (I/R + HF) (n = 4 animals). (c–e) Top: low power views of kidney slices after perfusion in vivo with FITC-albumin gelatin, from (c) control (contralateral) kidney, (d) a kidney after ischaemia and 30 min reperfusion, and (e) a kidney 30 min after treatment with HF on reperfusion Bottom: regions of interest (ROIs) are shown in red and blue for the cortex and medulla. (f) Medullary perfusion (assessed in slices of fixed kidney as the total intensity of FITC-albumin summed over the ROIs) was reduced after 30 min of post-ischaemic reperfusion (51 stacks, 6 animals) by ~50% compared with control kidneys (52 stacks, 7 animals). Treatment with HF increased medullary perfusion 2.3-fold at this time compared with non-treated ischaemic kidneys (20 stacks, 4 animals). (g) Cortex perfusion (assessed as in c-e) after 30 min of reperfusion after ischaemia was reduced by ~23.5% compared with control kidneys. Treatment with HF (I/R + HF) increased cortex perfusion by 25% at this time compared with non-treated ischaemic kidneys (I/R). Data are mean ± s.e.m. P values are corrected for multiple comparisons. Statistical tests used the number of animals as the N value (not the stack number).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74211/elife-74211-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a, b) Ischaemia (I/R) evoked changes of blood flow (measured by laser Doppler) in the rat renal (a) medulla (n = 3 animals) and (b) cortex (n = 3 animals). CONT indicates blood flow on the contralateral (non-ischaemic) side. At 60 min following reperfusion, medullary perfusion remained compromised at 40% of its control value (P = 0.017), but cortical perfusion was fully recovered (to ~20% above the control value, although this did not reach significance, P = 0.092). (c) Hydroxyfasudil (3 mg/kg; i.v.) (n = 4 animals) treatment immediately after reperfusion (I/R + HF) induced a faster recovery to the pre-ischaemic value of of medullary blood flow than did BQ123 (0.5 mg/kg, i.v., given on reperfusion: I/R + BQ123) (n = 3 animals), a selective endothelin-A receptor antagonist. After 30 min reperfusion both agents resulted in blood flow that was not significantly different from control (P = 0.8 and P = 0.38, respectively) but was significantly different from ischaemia (P = 0.01 for both drugs). Valsartan (1 mg/kg i.v., given on reperfusion: I/R + VAL) (n = 2 animals), an angiotensin II type 1 (AT1) receptor antagonist, increased medullary perfusion by 52% after 30 min reperfusion compared with non-treated ischaemic kidneys, although this did not reach significance (P = 0.11 vs. I/R) and valsartan had not reversed medullary blood flow to the baseline level after 30 mins (P = 0.19 vs. CONT). (d) Recovery of cortical blood flow to its control level on reperfusion was faster in the presence of hydroxyfasudil (I/R + HF) (n = 4 animals). BQ123 (n = 4 animals) (P = 0.05 vs. I/R) and valsartan (n = 3 animals) (P = 0.04 vs. I/R) also promoted recovery of cortical blood flow at 30 min reperfusion compared with non-treated ischaemic kidneys (I/R). Statistical tests used the number of animals as the N value.
 
 After ischaemia and reperfusion in vivo, assessing the volume of perfused vessels in fixed kidney slices, as the summed FITC-albumin intensity over ROIs, also demonstrated that renal ischaemia and reperfusion led to no-reflow in the medulla compared with the non-ischaemic kidney’s medulla (the perfusing blood volume was reduced by ~50%, P = 0.002; Figure 1c, d and f). Microscopic analysis resolving individual capillaries showed that this blood volume reduction was associated with a large reduction in capillary perfusion (Figure 2). The total perfused capillary length in 100 µm deep confocal z-stacks (frame size 640.17 × 640.17 µm) was reduced by 35% (contralateral control 14689 ± 3477 µm vs. ischaemia 9527 ±1183 µm, P = 0.038), the number of perfused capillary segments was reduced by 54% (control 530 ± 82 vs. ischaemia 244 ± 30, P = 0.03), and the overall perfused microvascular volume fraction was reduced by 51% (control 0.116 ± 0.006 vs. ischaemia 0.057 ± 0.006, P = 0.003; Figure 2e–g).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/74211/elife-74211-fig2-v2.jpg)
 
-**Figure 2.:** (a) Representative images of slices after perfusion with FITC-albumin gelatin, showing the rat kidney microcirculation in 100 µm deep confocal z-stacks. Images depict renal cortical arterioles, the glomeruli and peritubular capillaries, as well as the vasa recta capillaries (VR) that supply blood to the renal medulla. (b–d) Representative images of the medullary microcirculation: (b) in control conditions (CONT), (c) after ischaemia and 30 min reperfusion (I/R), and (d) after ischaemia and reperfusion for 30 min with hydroxyfasudil (HF) applied during reperfusion (I/R + HF). Images show NG2-labelling of pericytes (red), FITC-albumin labeling (green) of vessels that are perfused, a merge of the NG2 and FITC-albumin images, and the analysed skeleton (yellow) of the perfused microvessels. (e–g) After ischaemia and reperfusion (12 stacks, 4 animals), the total perfused capillary length (e), the number of perfused capillary segments (f) and the overall volume fraction of vessels perfused (g) in 100 µm deep confocal z-stacks were reduced compared with control kidneys (14 stacks, 6–7 animals), and treatment with hydroxyfasudil immediately after reperfusion (10 stacks, 4 animals) increased all of these parameters.Data are mean ± s.e.m. P values are corrected for multiple comparisons. Statistical tests used the number of animals as the N value (not the stack number).Figure 2—source data 1.
+**Figure 2.:** (a) Representative images of slices after perfusion with FITC-albumin gelatin, showing the rat kidney microcirculation in 100 µm deep confocal z-stacks. Images depict renal cortical arterioles, the glomeruli and peritubular capillaries, as well as the vasa recta capillaries (VR) that supply blood to the renal medulla. (b–d) Representative images of the medullary microcirculation: (b) in control conditions (CONT), (c) after ischaemia and 30 min reperfusion (I/R), and (d) after ischaemia and reperfusion for 30 min with hydroxyfasudil (HF) applied during reperfusion (I/R + HF). Images show NG2-labelling of pericytes (red), FITC-albumin labeling (green) of vessels that are perfused, a merge of the NG2 and FITC-albumin images, and the analysed skeleton (yellow) of the perfused microvessels. (e–g) After ischaemia and reperfusion (12 stacks, 4 animals), the total perfused capillary length (e), the number of perfused capillary segments (f) and the overall volume fraction of vessels perfused (g) in 100 µm deep confocal z-stacks were reduced compared with control kidneys (14 stacks, 6–7 animals), and treatment with hydroxyfasudil immediately after reperfusion (10 stacks, 4 animals) increased all of these parameters.Data are mean ± s.e.m. P values are corrected for multiple comparisons. Statistical tests used the number of animals as the N value (not the stack number).
 
 In the cortex, perfusion was reduced less than in the medulla after ischaemia and reperfusion, that is by 23.5% compared with non-ischaemic kidneys (P = 0.0075, Figure 1c, d and g). Furthermore, although a small percentage of afferent and efferent arterioles, and glomeruli, were not perfused in control conditions, this percentage did not increase significantly after ischaemia (Figure 3a, b and g), and the arterioles’ diameter was not reduced compared with those in non-ischaemic kidneys (Figure 3a, b, h and i). Similarly, it has been reported that upstream arteries are not constricted after ischaemia (Yamamoto et al., 2002). In contrast, the total perfused peritubular capillary length in the 100 µm deep z-stacks (control 16441 ± 1577 µm vs. ischaemia 5411 ±2735 µm, reduced by 67%, P = 0.03), the number of perfused capillary segments (control 550 ± 32 µm vs. ischaemia 349 ±54, reduced by 36.5%, P = 0.01) and the overall perfused peritubular capillary volume fraction (control 0.12 ± 0.01 vs. ischaemia 0.06 ± 0.02, reduced by 50%, P = 0.01) were greatly reduced in the cortex when compared with non-ischaemic kidneys (Figure 3d–f). Thus, the effect of ischaemia and reperfusion is predominantly on the microvasculature, that is the peritubular cortical capillaries and the vasa recta, rather than on arteriolar segments of the kidney circulation. The Rho kinase inhibition data shown in Figure 3 are discussed below.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/74211/elife-74211-fig3-v2.jpg)
 
-**Figure 3.:** (a–c) Representative images of rat renal cortex slices containing arterioles, glomeruli and peritubular capillaries, after perfusion with FITC-albumin gelatin: (a) for control kidneys (CONT), (b) after ischaemia and reperfusion (I/R), and (c) after ischaemia with hydroxyfasudil (I/R + HF). NG2-labelling (red) is seen of arterioles (blue arrowheads) and pericytes (yellow arrowheads), while FITC-albumin labelling (green) shows vessels that are perfused. (d-f) After ischaemia and reperfusion (I/R) (12 stacks, 6 animals), the total perfused capillary length (d), the number of perfused segments (e), and the overall perfused microvascular volume fraction (f) were reduced compared with control kidneys (CONT) (14 stacks, 7 animals), and treatment with hydroxyfasudil immediately after reperfusion (I/R + HF) (10 stacks, 4 animals) increased cortical microvascular perfusion compared with non-treated ischaemic kidneys. (g) Percentage of afferent and efferent arterioles (blue arrowheads in a-c), and of glomeruli (white arrowheads), perfused after ischaemia, compared with control conditions. (h–i) Diameters of perfused (h) afferent and (i) efferent arterioles in the renal cortex for the three experimental conditions (15 arterioles, 4 animals for each group). Data are mean ± s.e.m. P values are corrected for multiple comparisons.Statistical tests used the number of animals as the N value (not the stack number).Figure 3—source data 1.
+**Figure 3.:** (a–c) Representative images of rat renal cortex slices containing arterioles, glomeruli and peritubular capillaries, after perfusion with FITC-albumin gelatin: (a) for control kidneys (CONT), (b) after ischaemia and reperfusion (I/R), and (c) after ischaemia with hydroxyfasudil (I/R + HF). NG2-labelling (red) is seen of arterioles (blue arrowheads) and pericytes (yellow arrowheads), while FITC-albumin labelling (green) shows vessels that are perfused. (d-f) After ischaemia and reperfusion (I/R) (12 stacks, 6 animals), the total perfused capillary length (d), the number of perfused segments (e), and the overall perfused microvascular volume fraction (f) were reduced compared with control kidneys (CONT) (14 stacks, 7 animals), and treatment with hydroxyfasudil immediately after reperfusion (I/R + HF) (10 stacks, 4 animals) increased cortical microvascular perfusion compared with non-treated ischaemic kidneys. (g) Percentage of afferent and efferent arterioles (blue arrowheads in a-c), and of glomeruli (white arrowheads), perfused after ischaemia, compared with control conditions. (h–i) Diameters of perfused (h) afferent and (i) efferent arterioles in the renal cortex for the three experimental conditions (15 arterioles, 4 animals for each group). Data are mean ± s.e.m. P values are corrected for multiple comparisons.Statistical tests used the number of animals as the N value (not the stack number).
 
-## Pericytes constrict descending vasa recta after ischaemia and reperfusion
+### Pericytes constrict descending vasa recta after ischaemia and reperfusion
 
 Higher magnification images demonstrated that, in control kidneys, only 9.7% of the descending vasa recta (DVR) capillaries were blocked (Figures 2b and 4d), that is were not perfused by FITC-albumin (Figures 2c and 4a–d). However, after ischaemia and 30 mins reperfusion, 78% of the DVR capillaries were blocked (Figures 2c and 4a–d). Some capillaries were fully perfused and some completely unperfused throughout the area assessed, whereas some exhibited an abrupt cessation of blood flow with a decrease of FITC-albumin intensity over a few microns (Figures 2c and 4a–c). At block sites, the diameter of the FITC-albumin lumenal labelling at the final position blood reached was significantly lower in ischaemic DVR capillaries compared with that at the much smaller number of block sites in non-ischaemic controls (control 6.5 ± 0.3 µm vs. ischaemia 3.5 ± 0.4 µm; P = 0.039, Figure 4e). Thus, an ischaemia-induced constriction of the DVR promotes blockage, which persists even after reperfusion.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/74211/elife-74211-fig4-v2.jpg)
+
+**Figure 4.:** (a) Descending vasa recta (DVR) in slices of rat renal medulla after perfusion with FITC-albumin gelatin (re-coloured red), and labelled for pericytes with antibody to the proteoglycan NG2 (green); FITC-albumin labelling shows perfused and blocked vessels. White arrow indicates flow direction; white lines indicate blocked vessels. (b–c) Representative images showing DVR capillaries blocked near pericyte somata. NG2-labelling of pericytes shows pericyte processes presumed to be constricting vessels at block site. (d) Percentage of DVR capillaries blocked in the renal medulla in control conditions (CONT) (127 capillaries, 12 stacks, 9 animals), after ischaemia and reperfusion (I/R) (77 capillaries, 10 stacks, 6 animals), and after ischaemia with hydroxyfasudil present in the reperfusion period (IR + HF) (60 capillaries, 8 stacks, 4 animals). Statistical tests used number of animals as the N value. (e) Diameter at block sites. (f) Probability distribution per 2.5 μm bin of distance from blockage to nearest pericyte soma after ischaemia and reperfusion (for 27 block sites), and of the distance between adjacent pericytes on DVR capillaries (for 118 pericyte pairs). (g) DVR diameter versus distance from pericyte somata (10 µm is approximately half the separation between pericytes) in the same three conditions as d (number of pericytes was 31, 20, and 17 respectively). P values by each point are from t-tests. Slope of the best-fit ISCH regression line is significantly greater than zero (P = 0.039) while that of the CONT line is not (P = 0.084). Data are mean ± s.e.m.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74211/elife-74211-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Red blood cells (RBCs, indicated by yellow arrowheads, labelled for glycophorin A) were associated with a small percentage of blockage sites (indicated by blue arrowheads) in ischaemic rat kidneys (5.8% of 85 blockages from 137 vessels analysed from two animals), and even where red blood cells were near the capillary blockages it did not always lead to a block of blood flow (as shown by FITC-albumin, re-coloured white, passing the red blood cells [purple arrow]). Note that the vasculature was perfused with PBS to remove loose RBCs before perfusing PFA and FITC-albumin, so the only RBCs remaining should be those bound to the vessel walls. (b) Percentage of DVR that were blocked, and percentage of blocked DVR that had an associated RBC. (c) Endothelial glycocalyx (eGCX) was labelled in vivo using wheat germ agglutinin-Alexa Fluor 647 (WGA, re-coloured green). White boxes show ROIs for measuring eGCX mean fluorescence intensities at different distances from the pericyte soma. (d) Plots of WGA signal across capillary at different distances from arrowed pericyte in (c). (e) eGCX is fairly evenly distributed along the vessel wall in normal kidneys (CONT), and also after ischaemia and reperfusion (I/R). Blockages (indicated by blue arrowheads) are highly associated with pericyte location (indicated by white arrowheads) in ischaemic kidneys (I/R). (f) Mean level of eGCX averaged across vessel at different distances from the pericyte soma in control kidney and after ischaemia with 30 min reperfusion. For the control condition, black P values compare the value at each position with that at the soma. Red P values compare the ischaemic and control groups for each position. (g) eGCX mean fluorescence averaged over all positions measured. (h) eGCX intensity and diameter have no correlation in control or ischaemic conditions. Data are mean ± s.e.m, 30 pericytes from two animals for each experimental condition. Statistical tests used the number of pericytes as the N value.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/74211/elife-74211-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Cortical pericyte showing longitudinal processes and a limited number of circumferential processes. (b) Medullary pericytes showing a large number of circumferential processes.
 
 Erythrocyte protein glycophorin A was labelled to assess if red blood cells were trapped at capillary regions of reduced diameter. Red blood cells were associated with only a small percentage of blockage sites in ischaemic kidneys (5.8% of 85 blockages in 137 vessels from two animals), and even where red blood cells were near the capillary blockages they did not always block blood flow because FITC-albumin could pass the red blood cells (Figure 4—figure supplement 1a, b).
 
@@ -57,41 +77,41 @@ To assess pericyte-mediated DVR constriction further, we measured the FITC-album
 
 We assessed whether the endothelial glycocalyx (eGCX) contributed to DVR blockages. Labelling showed that eGCX is fairly uniformly present along capillaries, and this was not altered after ischaemia (Figure 4—figure supplement 1f-g). There was no correlation between eGCX intensity and capillary diameter in control or ischaemic conditions (Figure 4—figure supplement 1h). Thus, eGCX is not particularly associated with pericytes (Figure 4—figure supplement 1f), so the co-location of diameter reduction and blockages with pericyte somata presumably reflects pericyte process contraction rather than obstruction by eGCX.
 
-## Pericytes constrict peritubular cortical capillaries in vivo after ischaemia and reperfusion
+### Pericytes constrict peritubular cortical capillaries in vivo after ischaemia and reperfusion
 
 Two-photon microscopy in vivo, of mice expressing dsRed in pericytes, revealed peritubular cortical pericytes constricting and blocking capillaries after ischaemia and reperfusion (Figure 5a–c). This reduced the mean capillary diameter (averaged over all positions measured) from 10.8 ± 0.2 to 8.1 ± 0.5 µm (P < 0.0001). To quantify whether ischaemia-evoked blockages occurred disproportionately close to pericytes, we measured the distance of 15 blockages to the nearest pericyte soma. This distance was 4.12 ± 0.39 µm, which is only 10% of the mean distance between peritubular cortical pericytes (41.3 ± 2.6 µm, from 103 pericyte pairs). A plot of capillary diameter versus distance from pericyte somata (Figure 5d) showed that ischaemia and reperfusion reduced the diameter by 40% at the somata (control 11.2 ± 0.5 vs. ischaemia 6.76 ± 1.05 µm, P = 0.001) with no significant effect on diameter far from the somata (control 10.3 ± 0.2 µm vs. ischaemia 9.6 ± 0.5 µm, P = 0.115). As in the medulla, the diameter increased significantly with distance from the pericyte somata after ischaemia (P = 0.046 comparing the slope of the best-fit regression line with zero) while in control conditions it did not (diameter decreased insignificantly with distance, P = 0.10). Thus, capillaries are constricted specifically near cortical pericytes.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/74211/elife-74211-fig5-v2.jpg)
 
-**Figure 5.:** (a) Overview two-photon in vivo imaging stack of the mouse renal cortex microcirculation, showing pericytes expressing NG2-DsRed (red), intraluminal FITC-albumin given intravenously (green), and Hoechst 33,342 labelling nuclei (blue, 1 mg/kg in 0.5 ml of sterile, isotonic saline was administered intravenously: Dunn et al., 2018). Images were acquired in a plane parallel to the cortical surface. (b, c) Higher magnification images showing apericyte on a cortical peritubular capillary in control conditions, and post-ischaemic capillary block (dashed lines show path of blocked vessel). (d) Capillary diameter versus distance from pericyte somata after ischaemia and reperfusion (I/R), and for control kidneys (CONT) (number of pericytes was 15 and 10 respectively from 10 stacks from three animals from each group). Slope of the best-fit ISCH regression line is significantly greater than zero (P = 0.046) while that of the CONT line is negative but not significantly different from zero (P = 0.10). Data are mean ± s.e.m. P values comparing data at each distance are corrected for multiple comparisons. Statistical tests used number of stacks as the N value.Figure 5—source data 1.
+**Figure 5.:** (a) Overview two-photon in vivo imaging stack of the mouse renal cortex microcirculation, showing pericytes expressing NG2-DsRed (red), intraluminal FITC-albumin given intravenously (green), and Hoechst 33,342 labelling nuclei (blue, 1 mg/kg in 0.5 ml of sterile, isotonic saline was administered intravenously: Dunn et al., 2018). Images were acquired in a plane parallel to the cortical surface. (b, c) Higher magnification images showing apericyte on a cortical peritubular capillary in control conditions, and post-ischaemic capillary block (dashed lines show path of blocked vessel). (d) Capillary diameter versus distance from pericyte somata after ischaemia and reperfusion (I/R), and for control kidneys (CONT) (number of pericytes was 15 and 10 respectively from 10 stacks from three animals from each group). Slope of the best-fit ISCH regression line is significantly greater than zero (P = 0.046) while that of the CONT line is negative but not significantly different from zero (P = 0.10). Data are mean ± s.e.m. P values comparing data at each distance are corrected for multiple comparisons. Statistical tests used number of stacks as the N value.
 
 The fact that pericyte constriction of capillaries reduces blood flow more in the medulla than in the cortex (Figure 1) may at least partly reflect differences in pericyte number and morphology in these two regions. The mean distance between pericytes in the medulla (23 μm, see above) is roughly half that in the cortex (41 μm, see above). Furthermore, in general the morphology of pericytes differs in these two regions, with DVR pericytes showing many circumferential processes around the capillaries, while cortical pericytes exhibit mainly longitudinal processes running along the capillary with only a small number of circumferential processes (Figure 4—figure supplement 2). The small number of vessel branches in the medullary DVR implies that the class of pericyte associated with branch points that is found in the brain vasculature will be less common here.
 
-## Rho kinase inhibition reduces pericyte constriction and no-reflow
+### Rho kinase inhibition reduces pericyte constriction and no-reflow
 
 The contractility of pericytes depends partly on Rho kinase activity (Durham et al., 2014; Hirunpattarasilp et al., 2019; Homma et al., 2014; Kutcher et al., 2007). The Rho kinase inhibitor, hydroxyfasudil (3 mg/kg; i.v.), applied at the time of reperfusion to mimic a possible therapeutic intervention, significantly inhibited the decrease of renal medullary perfusion seen after ischaemia-reperfusion (Figure 1a and e–f). In vivo, blood flow in the medulla (after 30 min reperfusion) was increased 3.8-fold compared to ischaemia without hydroxyfasudil (P = 0.002, Figure 1a). Hydroxyfasudil induced a faster recovery of medullary blood flow than BQ123 (0.5 mg/kg, i.v.), an endothelin-A receptor antagonist (Figure 1—figure supplement 1c), but both resulted in blood flow at 30 mins reperfusion that was not significantly different from the control value (P = 0.8 and 0.38, respectively) and was significantly higher than the flow seen after ischaemia without either drug (P = 0.01 for both drugs). In contrast, the angiotensin II type 1 (AT1) receptor antagonist valsartan (1 mg/kg i.v.) speeded the initial post-ischaemic recovery of medullary blood flow, but did not return it to baseline by 30 min reperfusion (Figure 1—figure supplement 1c). In the cortex, blood flow recovery on reperfusion was speeded by hydroxyfasudil and, after 30 min of reperfusion, was increased 1.48-fold compared to ischaemia alone (P = 0.02, Figure 1b).These data suggest that, in the medulla especially, activation of Rho kinase (in part downstream of ischaemia-evoked activation of endothelin-A receptors [Prakash et al., 2008; Wilhelm et al., 1999; Yamamoto et al., 2000]) contributes to ischaemia-evoked pericyte-mediated capillary constriction.
 
 Renal perfusion with post-ischaemic inhibition of Rho kinase was also assessedin slices of fixed kidney (see above). Treatment with hydroxyfasudil during post-ischaemic reperfusion prevented medullary no-reflow after ischaemia and reperfusion: the blood volume was increased 2.3-fold compared to ischaemia alone (P = 0.003, Figure 1e–f), so that it did not differ significantly from that in control kidney (P = 0.47). Hydroxyfasudil also increased ~2.9-fold the total perfused medullary capillary length (P = 0.043),~2.9 fold the number of perfused capillary segments (P = 0.02) and ~2-fold the perfused volume fraction (P = 0.0031) in medulla (Figure 2d–g). In the renal cortex, hydroxyfasudil given on reperfusion increased perfusion (blood volume)~1.25-fold (P = 0.0098; Figure 1e and g), and increased the total perfused length of capillaries, the number of perfused capillary segments and the blood volume fraction to values that were not significantly different from those in non-ischaemic kidneys (Figure 3c–f).
 
-## Improvements of renal blood flow by hydroxyfasudil are via pericytes, not arterioles
+### Improvements of renal blood flow by hydroxyfasudil are via pericytes, not arterioles
 
 Hydroxyfasudil might act on arteriolar smooth muscle or pericytes, or both. However, it had no effect on the diameter of afferent or efferent arterioles feeding and leaving the glomeruli (Figure 3h and i). In contrast, hydroxyfasudil reduced the constriction evoked at DVR pericyte somata by ischaemia and reperfusion, increasing the diameter from 4.5 ± 0.5 µm without hydroxyfasudil to 8.0 ± 0.4 µm with the drug (P < 0.0001) (Figure 4g), and reduced the percentage of DVR capillaries blocked from 78 ± 9% to 8 ± 5% (P = 0.023), both of which are not significantly different from the values in non-ischaemic kidneys (Figure 4d and f). Thus, ischaemia induces, and hydroxyfasudil decreases, medullary no-reflow by specifically acting on DVR capillary pericytes rather than on upstream arterioles.
 
-## Rho kinase inhibition reduces myosin light chain phosphorylation after ischaemia
+### Rho kinase inhibition reduces myosin light chain phosphorylation after ischaemia
 
 Rho kinase can inhibit, either directly or by inhibiting eNOS (Riddick et al., 2008; Wang et al., 2009; Versteilen et al., 2006), myosin light chain phosphatase (MLCP), thus increasing phosphorylation of myosin light chain (MLC) by myosin light chain kinase (MLCK) and increasing pericyte contraction, but it also has other functions. To investigate how Rho kinase inhibition has the effects described above, we labelled for phosphorylated MLC. After ischaemia and reperfusion, this was increased ~11-fold for medullary and five-fold for cortical pericytes (P = 0.0001 in both locations, Figure 6a–j). Hydroxyfasudil treatment after reperfusion reduced this increase so that the labelling was not significantly different from that in control kidneys (P = 0.95 and P = 0.56, respectively; Figure 6a–j). Thus, if pericyte contraction is via conventional smooth muscle actomyosin, the reduced MLC phosphorylation could explain the pericyte relaxation and increased blood flow evoked by Rho kinase inhibition. The data of Versteilen et al., 2006 suggest this is very largely mediated by inhibition of eNOS, which could be tested by quantifying the effect of eNOS block on the changes of MLC phosphorylation shown in Figure 6. Consistent with pericytes employing smooth muscle actomyosin, 56% of DVR pericytes near blockage sites labelled for the contractile protein α-SMA (Figure 6k–n; see also Park et al., 1997).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/74211/elife-74211-fig6-v2.jpg)
 
-**Figure 6.:** Representative images of the rat renal medulla containing descending vasa recta (DVR) pericytes (a–d) and cortical peritubular capillary pericytes (f–i), labelled with antibody to phosphorylated myosin light chain (p-MLC, green), Alexa Fluor 647-isolectin B4 which labels kidney tubules and pericytes (red), and DAPI which labels nuclei (blue). Labelling is shown for kidneys in control conditions (CONT) (a, f), after ischaemia and reperfusion (I/R) (b, d, g, i), and after ischaemia with hydroxyfasudil present during reperfusion (I/R + HF) (c, h). (e, j) Cortical (e) and medullary (j) p-MLC levels in pericytes for the three experimental conditions (10 stacks, 4 animals for each group). (k–m) DVR pericytes labelled for NG2 (purple), α-SMA (green), Alexa647-isolectin B4 (red) and DAPI (blue). (n) DVR blockage-associated pericyte labelled for α-SMA. Statistical tests used the numbers of animals for N values(not the stack number). Data are mean ± s.e.m. P values are corrected for multiple comparisons.Figure 6—source data 1.
+**Figure 6.:** Representative images of the rat renal medulla containing descending vasa recta (DVR) pericytes (a–d) and cortical peritubular capillary pericytes (f–i), labelled with antibody to phosphorylated myosin light chain (p-MLC, green), Alexa Fluor 647-isolectin B4 which labels kidney tubules and pericytes (red), and DAPI which labels nuclei (blue). Labelling is shown for kidneys in control conditions (CONT) (a, f), after ischaemia and reperfusion (I/R) (b, d, g, i), and after ischaemia with hydroxyfasudil present during reperfusion (I/R + HF) (c, h). (e, j) Cortical (e) and medullary (j) p-MLC levels in pericytes for the three experimental conditions (10 stacks, 4 animals for each group). (k–m) DVR pericytes labelled for NG2 (purple), α-SMA (green), Alexa647-isolectin B4 (red) and DAPI (blue). (n) DVR blockage-associated pericyte labelled for α-SMA. Statistical tests used the numbers of animals for N values(not the stack number). Data are mean ± s.e.m. P values are corrected for multiple comparisons.
 
-## Rho kinase inhibitor reduces reperfusion-induced acute kidney injury
+### Rho kinase inhibitor reduces reperfusion-induced acute kidney injury
 
 Kidney injury molecule-1 (Kim-1) is a sensitive and early diagnostic indicator of renal injury in rodent kidney injury models (Vaidya et al., 2010), and in pathology is localised at high levels on the apical membrane of the proximal tubule where the tubule is most affected (Amin et al., 2004; Ichimura et al., 1998). Kim-1 levels in the proximal tubules were elevated 81-fold by ischaemia and reperfusion (P = 0.0004, Figure 7a, b and d), and treatment with hydroxyfasudil during reperfusion halved the Kim-1 labelling (P = 0.03, Figure 7c and d).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/74211/elife-74211-fig7-v2.jpg)
 
-**Figure 7.:** (a–c) Images of the rat renal cortex containing proximal tubules, showing isolectin B4 labelling kidney tubules (red), DAPI labelling nuclei (blue), and kidney injury molecule-1 (Kim-1) labelling as an injury marker (white lines indicate examples of injured tubules labelled in green), for control conditions (CONT) (a), after ischaemia and reperfusion (I/R) (b), and after ischaemia with hydroxyfasudil present during reperfusion (I/R + HF) (c).(d) Kim-1 levels for the three experimental conditions (six stacks, 3 animals for each group). Data are mean ± s.e.m. P values are corrected for multiple comparisons. Statistical tests used the number of animals as the N value (not the stack number).Figure 7—source data 1.
+**Figure 7.:** (a–c) Images of the rat renal cortex containing proximal tubules, showing isolectin B4 labelling kidney tubules (red), DAPI labelling nuclei (blue), and kidney injury molecule-1 (Kim-1) labelling as an injury marker (white lines indicate examples of injured tubules labelled in green), for control conditions (CONT) (a), after ischaemia and reperfusion (I/R) (b), and after ischaemia with hydroxyfasudil present during reperfusion (I/R + HF) (c).(d) Kim-1 levels for the three experimental conditions (six stacks, 3 animals for each group). Data are mean ± s.e.m. P values are corrected for multiple comparisons. Statistical tests used the number of animals as the N value (not the stack number).
 
 ## Discussion
 
@@ -121,17 +141,181 @@ In the present study, we have shown that pericyte contraction contributes to red
 
 ## Materials and methods
 
-## Study approval
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain backgroundRattusnorvegicus (Sprague Dawley, male)</td>
+      <td>Rat</td>
+      <td>UCL Biological Services</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus/spretus, male)</td>
+      <td>NG2-DsRed mice</td>
+      <td>https://doi.org/10.1242/dev.004895</td>
+      <td>JAX 008241</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NG2 (mouse monoclonal)</td>
+      <td>AbCam</td>
+      <td>ab50009</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myosin light chain (phospho S20) (rabbit polyclonal)</td>
+      <td>AbCam</td>
+      <td>ab5694</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>kidney injury molecule-1 (Kim-1) (rabbit polyclonal)</td>
+      <td>NovusBiologicals</td>
+      <td>NBP1-76701</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-alpha smooth muscle actin (rabbit polyclonal)</td>
+      <td>AbCam</td>
+      <td>ab5694</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-glycophorin A (mouse monoclonal)</td>
+      <td>AbCam</td>
+      <td>ab9520</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 405 goat anti-rabbit (polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>A31556</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 555 donkey anti-rabbit (polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>A31572</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 555 donkey anti-mouse (polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>A31570</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>isolectin B4 - AlexaFluor 647</td>
+      <td>ThermoFisher</td>
+      <td>I32450</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>wheat germ agglutinin Alexa Fluor 647 conjugate</td>
+      <td>ThermoFisher</td>
+      <td>W32466</td>
+      <td>200 μl (1 mg/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst 33,342</td>
+      <td>ThermoFisher</td>
+      <td>H21492</td>
+      <td>1 mg/kg in 0.5 ml saline</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>gelatin</td>
+      <td>Sigma-Aldrich</td>
+      <td>G2625</td>
+      <td>5% in PBS</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FITC-albumin</td>
+      <td>Sigma-Aldrich</td>
+      <td>A9771</td>
+      <td>1:200 in 5% gelatin</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FITC-albumin</td>
+      <td>Sigma-Aldrich</td>
+      <td>A9771</td>
+      <td>(1 mg in 100 μl; i.v.)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydroxyfasudilhydrochloride</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-202176</td>
+      <td>(3 mg/kg; i.v.)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB R2015a</td>
+      <td>MathWorks, Inc.</td>
+      <td></td>
+      <td>in vivo data acquisition</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+      <td>imageanalysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPadPrism 6</td>
+      <td>GraphPad Software, Inc</td>
+      <td></td>
+      <td>statisticalanalysis</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Molecular Probes</td>
+      <td>D1306</td>
+      <td>200 μl (5 μg/ml)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Study approval
 
 Experiments were performed in accordance with European Commission Directive 2010/63/EU and the UK Animals (Scientific Procedures) Act (1986), with approval from the UCL Animal Welfare and Ethical Review Body.
 
-## Animal preparation for ischaemia experiments
+### Animal preparation for ischaemia experiments
 
 Due to the high density of kidney tissue, intravital microscopy is limited to superficial regions of the cortex <100 μm deep (Sandoval and Molitoris, 2017). As the renal medulla is inaccessible for in vivo imaging, we used laser Doppler flowmetry to assess blood flow changes of both kidneys or within the cortex and medulla of one kidney simultaneously. Additionally, we used FITC-albumin gelatin perfusion for measuring microvascular network perfusion (O’Farrell et al., 2017) in the renal cortex and medulla, supplemented with high-resolution images of individual capillaries to assess the mechanisms underlying blood flow changes.
 
 Adult male Sprague-Dawley rats (P40-50), or NG2-dsRed male mice (P100-120) expressing dsRed in pericytes to allow live pericyte imaging, were anesthetized with pentobarbital sodium (induction 60 mg/kg i.p.; maintenance 10–15 mg/kg/h i.v.). The femoral veins were cannulated to administer anesthetic and drugs. Stable kidney perfusion was confirmed using laser Doppler probes (OxyFlo Pro 2-channel laser Doppler, Oxford, United Kingdom) to measure blood flow in the contralateral kidney throughout the experiment, and anesthesia was monitored by the absence of a withdrawal response to a paw pinch. Body temperature was maintained at 37.0°C ± 0.5°C with a heating pad.
 
-## Renal ischaemia and reperfusion
+### Renal ischaemia and reperfusion
 
 Both kidneys were exposed, and the renal arteries and veins were dissected. Left kidneys were subjected to 60 min ischaemia by renal artery and vein cross-clamp, followed by 30 or 60 min reperfusion. This reperfusion duration was chosen to assess pericyte function soon after starting reperfusion. Right kidneys underwent the same procedures without vessel clamping. Two laser Doppler single-fibre implantable probes of 0.5 mm diameter (MSF100NX, Oxford Optronix, Oxford, United Kingdom) measured simultaneously the perfusion of both kidneys (or of the outer medulla and cortex of one kidney). Cortical and outer medullary perfusion were measured with the probe on or 2 mm below the kidney surface, respectively. Successful artery and vein occlusion was confirmed by a sudden fall of laser Doppler signal. Laser Doppler monitoring, which detects the movement of cells in the blood, is a widely used method for studies of microvascular perfusion in experimental and clinical studies and measures the total local microcirculatory blood perfusion in capillaries, arterioles, venules and shunting vessels (Fredriksson et al., 2009; Rajan et al., 2008). Laser Doppler is suitable for monitoring of relative renal microvascular blood flow changes in response to physiological and pharmacological stimuli in rodents (Lu et al., 1993; Vassileva et al., 2003).
 
@@ -139,21 +323,21 @@ Endothelial glycocalyx (eGCX) was labelled in vivo using wheat germ agglutinin (
 
 Hydroxyfasudil hydrochloride, a reversible cell-permeable inhibitor of Rho kinase (Santa Cruz Biotechnology sc-202176, Dallas, TX) which is expected to decrease pericyte contractility (Hartmann et al., 2021; Kutcher et al., 2007) was administered as a bolus (3 mg/kg i.v.), immediately on starting reperfusion. This protocol, rather than having the drug present during the ischaemic insult, better mimics a clinical situation where drugs could be given on reperfusion. Control and non-treated ischaemic animals received saline infusion with the same volume.
 
-## Animal perfusion and tissue preparation for imaging
+### Animal perfusion and tissue preparation for imaging
 
 After renal ischaemia/reperfusion, animals were overdosed with pentobarbital sodium and transcardially-perfused with phosphate-buffered saline (PBS) (200 ml) followed by 4% paraformaldehyde (PFA, 200 ml) fixative and then 5% gelatin (20 ml in PBS Sigma-Aldrich, G2625, Darmstadt, Germany) solution containing FITC-albumin (Sigma-Aldrich, A9771, Darmstadt, Germany), followed by immersion in ice for 30 min (adapted from Blinder et al., 2013). Kidneys were fixed overnight in 4% PFA, and 150 µm longitudinal sections made for immunohistochemistry. Rats have ~64 ml of blood per kg bodyweight, thus the FITC-albumin gelatin solution would suffice to fill the total blood volume. The gelatin sets when the body temperature falls and traps FITC-albumin in the perfused vessels; blocked vessels show no penetration of FITC-albumin past the block.
 
-## In vivo two-photon imaging
+### In vivo two-photon imaging
 
 NG2-DsRed mice (P100-120) were anesthetized using urethane (1.55 g/kg i.p., in two doses 15 min apart). Anesthesia was confirmed by the absence of a paw pinch withdrawal response. Body temperature was maintained at 36.8°C ± 0.3°C. A custom-built plate, attached to the kidney using superglue and agarose created a sealed well filled with phosphate-buffered saline during imaging, when the plate was secured under the objective on a custom-built stage.
 
 Peritubular capillary diameter was recorded during renal ischaemia/reperfusion using two-photon microscopy of the intraluminal FITC-albumin (1 mg in 100 μl of saline given intravenously). Two-photon excitation used a Newport-Spectra Physics Mai Tai Ti:Sapphire Laser pulsing at 80 MHz, and a (Zeiss LSM710, Oberkochen, Germany) microscope with a 20 × water immersion objective (NA 1.0). Fluorescence was excited using 920 nm wavelength for DsRed, and 820 nm for FITC-albumin and Hoechst 33,342. Mean laser power under the objective was <35 mW. Images were analysed using ImageJ. Vessel diameter was defined using a line drawn across the vessel as the width of the intraluminal dye fluorescence.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Pericytes were labelled by expression of DsRed under control of the NG2 promoter (in mice), or with antibodies to NG2 (1:200; Abcam ab50009, Cambridge, United Kingdom), α-smooth muscle actin (α-SMA) (1:100; Abcam ab5694, Cambridge, United Kingdom), or myosin light chain (phospho S20, 1:100, Abcam ab2480, Cambridge, United Kingdom), and the capillary basement membrane and pericytes were labelledwith isolectin B4-Alexa Fluor 647 (1:200, overnight; Molecular Probes, I32450, Thermo Fisher Scientific, Waltham, MA). Z-stacks of the cortex and outer medulla (frame size 640.17 × 640.17 µm) for cell counting were acquired confocally (Zeiss LSM 700, Oberkochen, Germany). Pericyte intersoma distance was calculated between pairs of pericytes on capillaries within the same imaging plane. Kidney damage was assessed using kidney injury molecule-1 (Kim-1) antibody (1:100, overnight; Novus Biologicals, NBP1-76701, Abingdon, United Kingdom). Red blood cells were labelled with antibody to glycophorin A (1:2000, AbCam ab9520, Cambridge, United Kingdom). Alexa Fluor conjugated secondary antibodies were added overnight (1:500; ThermoFisher, A31572, A31556, A31570, Waltham, MA).
 
-## Image analysis
+### Image analysis
 
 Regions of interest (ROIs) were drawn around the renal cortex and medulla (Figure 1). The cortex thickness, which ranges from 1.5 mm to 3 mm in rodents, was defined as the distance from the renal surface (capsule) to the base of the medullar pyramid (Andersen et al., 2020; Missbach-Guentner et al., 2018; Nogueira et al., 2016). The FITC-albumin perfusion coupled with image threshold application also helped to visualise the cortical vessels and medullary rays in order to define the corticomedullary boundary.The mean FITC-albumin signal intensity was measured for each ROI using ImageJ. This signal is assumed to provide an approximate measure of the amount of blood perfusing the tissue (conceivably downstream capillary constriction could lead to an upstream dilation and an increased blood volume being detected but, if this did occur, it would lead to an underestimate of the decrease of perfusion occurring). To gain a more accurate assessment of perfusion, we also used the ImageJ macro TubeAnalyst (Advanced Digital Microscopy Core Facility at IRB Barcelona) to measure the microvascular network ‘skeleton’ of the renal cortex and medulla and obtain the total perfused capillary length, the number of perfused capillary segments and the overall perfused microvascular volume fraction (Figure 2b–d). To quantify the percentage of perfused capillaries, we counted the number of filled (with FITC-albumin) and unfilled vessels that crossed a line drawn through the centre of each image perpendicular to the main capillary axis.
 
@@ -161,6 +345,6 @@ To assess whether pericytes cause flow blockages, we measured the distance along
 
 For quantification of the p-MLC levels in cortical and medullary pericytes, we selected regions of interest (ROIs) over pericytes after applying to maximum intensity projected stack images a lower and upper threshold, which was similar for all experimental groups (typically 50–150 in 8-bit images). Then, we used the ROIs thus selected to measure the mean fluorescence intensity over all the pericytes in each image. The background signal for each stack was obtained by placing a ROI in the parenchyma, away from but close to, the pericytes and the measured background fluorescence signal was subtracted from the mean intensity measured in the pericyte ROIs.
 
-## Statistics
+### Statistics
 
 Statistical analysis employed Graphpad Prism (San Diego, CA). Data normality was tested with Shapiro-Wilk tests. Normally distributed data were compared using Student’s 2-tailed t-tests or ANOVA tests. Data that were not normally distributed were analysed with Mann-Whitney or Kruskal-Wallis tests. P values were corrected for multiple comparisons using a procedure equivalent to the Holm-Bonferroni method or Dunn’s test (corrected P values are significant if they are less than 0.05).

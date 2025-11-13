@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Department of Biology, Johns Hopkins University Baltimore United States
-2. https://ror.org/046rm7j60 David Geffen School of Medicine, University of California Los Angeles United States
-3. https://ror.org/00za53h95 Solomon H. Snyder Department of Neuroscience, Johns Hopkins University Baltimore United States
+1. Department of Biology, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. David Geffen School of Medicine, University of California Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+3. Solomon H. Snyder Department of Neuroscience, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 
@@ -25,65 +25,133 @@ A central challenge with defining these possible state transitions is the stocha
 
 ## Results
 
-## Local-to-global behavioral transitions are inconsistently observed
+### Local-to-global behavioral transitions are inconsistently observed
 
 In López-Cruz et al., 2019, the foraging behaviors of individual worms were tracked for 45 min after being removed from food. As observed previously (Klein et al., 2017), the reorientation rate from this study followed an exponential decay (Figure 1a). It was reported that roughly half the worms appeared to make a sudden single switch from local to global search as observed in Calhoun et al., 2014, however, the other half appeared to produce no discernible change in search strategy or exhibited multiple switches (Figure 1b–d). Whether or not a worm performed a single decision was defined in López-Cruz et al., 2019 by fitting individual reorientation data to two lines using the MATLAB function findchangepts (Figure 1b; Killick et al., 2012). This function divides each trace into two regions that are defined by minimizing the sum of the residual squared error of two local linear regressions. The location of the transition point is varied until the total residual error attains a minimum (Figure 1b). A large change in slope indicates a sudden change in reorientation rate, and the intersection between the two lines determines the decision time (López-Cruz et al., 2019; Figure 1b). A worm was identified as making a sudden local-to-global foraging switch based on visually assessing the magnitude of the slope difference, therefore, the conclusion that 50% of the worms produced a single transition is fairly subjective. To evaluate this property more objectively, we assessed the distributions of slope differences (s1-s2) and transition times to see whether two densities were clearly distinguishable. The resulting distributions for the experimental data were continuous, with no clear boundary between deciders and non-deciders (Figure 1e).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/104972/elife-104972-fig1-v1.jpg)
 
-**Figure 1.:** C.elegans.(a) Average experimental population reorientation rate (black line) in a rolling 2 min window. Blue bins represent probability of observed reorientation rate. (b) Abrupt transitions were identified by performing two linear regressions on observed reorientation curves. Transition times (trans) were defined by the intersection of the regressions (dashed line). The slopes of the two regressions are s1 and s2. (c) An example of an experimental reorientation curve with an abrupt reorientation transition (marked by vertical line). (d) An example of an experimental reorientation curve that lacked an abrupt reorientation transition. (e) Distribution of slope differences and transition times from regressions fit to the experimental data. Individual data points are individual reorientation data for each worm. Insets are individual examples of experimental cumulative reorientation curves. Number of worms (N)=1631. Dashed line represents the median slope difference. All data curated from López-Cruz et al., 2019.
+**Figure 1.:** (a) Average experimental population reorientation rate (black line) in a rolling 2 min window. Blue bins represent probability of observed reorientation rate. (b) Abrupt transitions were identified by performing two linear regressions on observed reorientation curves. Transition times (trans) were defined by the intersection of the regressions (dashed line). The slopes of the two regressions are s1 and s2. (c) An example of an experimental reorientation curve with an abrupt reorientation transition (marked by vertical line). (d) An example of an experimental reorientation curve that lacked an abrupt reorientation transition. (e) Distribution of slope differences and transition times from regressions fit to the experimental data. Individual data points are individual reorientation data for each worm. Insets are individual examples of experimental cumulative reorientation curves. Number of worms (N)=1631. Dashed line represents the median slope difference. All data curated from López-Cruz et al., 2019.
 
 Why do some worms appear to make a decision, while others do not? In aggregate, the reorientation rate decays (Figure 1a). Despite the population average conforming to a gradual decay, individual trajectories produce a wide diversity of trajectories which sometimes conform to an apparent drop in reorientation rate (Figure 1c), while others do not (Figure 1d). If the worms are executing a decision, this would seem to indicate only a fraction of the worms decide to switch from local to global foraging strategies, while others use a different strategy. An alternative hypothesis is that sudden changes in reorientation are random events that do not occur due to an underlying change in strategy, but because of the inherently random nature of the behavior itself (Pierce-Shimomura et al., 1999; Zhao et al., 2003; Stephens et al., 2011; Flavell et al., 2013; Gordus et al., 2015; Roberts et al., 2016; Iino and Yoshida, 2009).
 
-## A stochastic model generates abrupt and gradual changes in search strategy
+### A stochastic model generates abrupt and gradual changes in search strategy
 
 We tested this hypothesis by modeling individual worms by stochastic sampling of a decaying reorientation rate with the Gillespie algorithm (Figure 2a), a common strategy used to model the kinetics of individual molecules (Gillespie, 1977). With this strategy, the time between chemical events is modeled by randomly sampling from the time-interval distributions defined by the reaction rates. Although the algorithm was originally developed to model discrete molecular events based on known kinetic parameters, it can be used to generate time trajectories for any discrete events when the kinetics are known. A behavioral example of this is the Lotka-Volterra predator-prey competition model where predator and prey populations fluctuate out of phase due to predation. Stochastic fluctuations of predator and prey populations can be modeled using the Gillespie algorithm (Palombi et al., 2020; Reichenbach et al., 2006; Constable and McKane, 2015).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/104972/elife-104972-fig2-v1.jpg)
 
-**Figure 2.:** C. elegans.(a) Outline of the Gillespie algorithm. Step 1: Two random numbers (r1 and r2) are drawn from a uniform distribution [0,1]. Step 2: The time interval for a new event (τ) is randomly assigned based on the total propensities (a0) and r. Step 3: The event 1i (either a decay of M (M←M-1) or a new reorientation (Ω←Ω+1)) at t + τ is determined by the probability (P(i)) of the event i occurring. This probability is determined by the relative propensity (a) of the event i/a0i. (b) (Top) The parameters α, β, and γ are assigned based on fitting a decay curve (red) to the observed average reorientation rate (blue). Dashed lines are + and – standard deviation. (Bottom) Average model population reorientation rate (black line) in a rolling 2 min window. Red bins represent the probability of observed reorientation rate. N=1631, α=1.49 min–1, β=0.1937 min–1, γ=0.11 min–1. (c) (Top) An example of a modeled abrupt reorientation transition. (Bottom) An example of a modeled reorientation curve that lacked an abrupt reorientation transition. Red data are cumulative reorientations and orange data are M. (d) Distribution of slope differences and transition times from regressions fit to the experimental (blue) and modeled (red) data. Individual data points are individual reorientation data for experimental (blue) or in silico (red) worms. Insets are individual examples of experimental and modeled cumulative reorientation curves. Dashed line represents the median experimental slope difference. (e) Examples of experimental (blue) and modeled (red) cumulative reorientation curves for individual worms, with similar stochastic dynamics. For each example drawn from experiments (blue), the in silico worm with the highest correlation from N=1631 iterations is shown (red). Sudden changes in rate are indicated with arrows. M for each example is shown in orange. (f) Examples of modeled data when the reorientation rate is constant (=1.5). Sudden changes in rate are indicated with arrows.α\begin{document}$\alpha $\end{document}
+**Figure 2.:** (a) Outline of the Gillespie algorithm. Step 1: Two random numbers (r1 and r2) are drawn from a uniform distribution [0,1]. Step 2: The time interval for a new event (τ) is randomly assigned based on the total propensities (a0) and r1. Step 3: The event i (either a decay of M (M←M-1) or a new reorientation (Ω←Ω+1)) at t + τ is determined by the probability (P(i)) of the event i occurring. This probability is determined by the relative propensity (ai/a0) of the event i. (b) (Top) The parameters α, β, and γ are assigned based on fitting a decay curve (red) to the observed average reorientation rate (blue). Dashed lines are + and – standard deviation. (Bottom) Average model population reorientation rate (black line) in a rolling 2 min window. Red bins represent the probability of observed reorientation rate. N=1631, α=1.49 min–1, β=0.1937 min–1, γ=0.11 min–1. (c) (Top) An example of a modeled abrupt reorientation transition. (Bottom) An example of a modeled reorientation curve that lacked an abrupt reorientation transition. Red data are cumulative reorientations and orange data are M. (d) Distribution of slope differences and transition times from regressions fit to the experimental (blue) and modeled (red) data. Individual data points are individual reorientation data for experimental (blue) or in silico (red) worms. Insets are individual examples of experimental and modeled cumulative reorientation curves. Dashed line represents the median experimental slope difference. (e) Examples of experimental (blue) and modeled (red) cumulative reorientation curves for individual worms, with similar stochastic dynamics. For each example drawn from experiments (blue), the in silico worm with the highest correlation from N=1631 iterations is shown (red). Sudden changes in rate are indicated with arrows. M for each example is shown in orange. (f) Examples of modeled data when the reorientation rate is constant ($\alpha$=1.5). Sudden changes in rate are indicated with arrows.
 
-Experimentally, reorientation rate is measured as the number of reorientation events that occurred in an observational window. However, these are discrete stochastic events, so we can describe them in terms of propensity, i.e., the probability of observing a transitional event in an infinitesimal time interval dt (in this case, a reorientation) is:(1)dP(Ω+1,t)dt=a1P(Ω,t)\begin{document}$$\displaystyle  \frac{d\mathrm{P}\left (\mathrm{\Omega }+1,\mathrm{t}\right)}{dt}=\mathrm{\, }a_{1}P\left (\mathrm{\Omega },t\right)$$\end{document}
+Experimentally, reorientation rate is measured as the number of reorientation events that occurred in an observational window. However, these are discrete stochastic events, so we can describe them in terms of propensity, i.e., the probability of observing a transitional event in an infinitesimal time interval dt (in this case, a reorientation) is:
 
-Here, Ω is cumulative reorientation number,  P(Ω + 1, t) is the probability of observing Ω + 1 cumulative reorientations at time t (i.e. the probability of observing the number of reorientations advance from Ω to Ω + 1), and a1 is the propensity for this event to occur, i.e., the likelihood that a particular reaction will occur in the next infinitesimal time interval. In bulk chemical kinetics, this is analogous to the rate of the reaction. Observationally, the frequency of reorientations observed decays over time. This means that the propensity is not constant, so we can define the propensity as decaying in time:(2)a1=αe−γt+β\begin{document}$$\displaystyle  a_{1}=\, \mathrm{\alpha }e^{-\gamma t}+\beta $$\end{document}
+$$
+\frac{dP(Ω+1,t)}{dt}=a_{1}P(Ω,t)
+$$
+
+Here, Ω is cumulative reorientation number,  P(Ω + 1, t) is the probability of observing Ω + 1 cumulative reorientations at time t (i.e. the probability of observing the number of reorientations advance from Ω to Ω + 1), and a1 is the propensity for this event to occur, i.e., the likelihood that a particular reaction will occur in the next infinitesimal time interval. In bulk chemical kinetics, this is analogous to the rate of the reaction. Observationally, the frequency of reorientations observed decays over time. This means that the propensity is not constant, so we can define the propensity as decaying in time:
+
+$$
+a_{1}=\alphae^{−\gammat}+\beta
+$$
 
 Where α + β is the initial propensity at t=0, and β is the propensity at t = ∞.
 
-The propensities for the Gillespie algorithm are state-dependent; the algorithm is modeling discrete events based on the current state of the system. A time-varying propensity implies it is coupled to a state variable that is changing in time. Since the propensity a1 decays exponentially, it implies it is coupled to a first-order decay process. We can model this decay as the reorientation propensity coupled to a decaying factor (M):(3)dP(M−1,t)dt=a2P(M,t)\begin{document}$$\displaystyle  \frac{dP\left (\mathrm{M}-1,\mathrm{t}\right)}{dt}=a_{2}P\left (M,t\right)$$\end{document}
+The propensities for the Gillespie algorithm are state-dependent; the algorithm is modeling discrete events based on the current state of the system. A time-varying propensity implies it is coupled to a state variable that is changing in time. Since the propensity a1 decays exponentially, it implies it is coupled to a first-order decay process. We can model this decay as the reorientation propensity coupled to a decaying factor (M):
 
-Where the propensity of this event (a2) is a first-order decay:(4)a2=−γM\begin{document}$$\displaystyle  a_{2}=\, -\gamma M$$\end{document}
+$$
+\frac{dP(M−1,t)}{dt}=a_{2}P(M,t)
+$$
 
-Since M is a first-order decay process, when integrated, the M observed at time t is:(5)M(t)=M(0)e−γt\begin{document}$$\displaystyle  {M\left (t\right)=M\left (0\right)e^{-\gamma t}\, }$$\end{document}
+Where the propensity of this event (a2) is a first-order decay:
 
-We can couple the probability of observing a reorientation to this decay by redefining a1 as:(6)a1=αM0M+β\begin{document}$$\displaystyle  {a_{1}=\, \frac{\alpha }{M_{0}}M\, +\beta }$$\end{document}
+$$
+a_{2}=−\gammaM
+$$
 
-In this way, the propensity a1 is explicitly tied to the state M, which is decaying, so that now:(7)dP(Ω+1,t)dt=(αe−γt+β)P(Ω,t)\begin{document}$$\displaystyle  {\frac{d\mathrm{P}\left (\mathrm{\Omega }+1,\mathrm{t}\right)}{dt}=\mathrm{\,}\left (\mathrm{\alpha }e^{-\gamma t}+\beta \right)P\left (\mathrm{\Omega },t\right)}$$\end{document}
+Since M is a first-order decay process, when integrated, the M observed at time t is:
+
+$$
+M(t)=M(0)e^{−\gammat}
+$$
+
+We can couple the probability of observing a reorientation to this decay by redefining a1 as:
+
+$$
+a_{1}=\frac{\alpha}{M_{0}}M+\beta
+$$
+
+In this way, the propensity a1 is explicitly tied to the state M, which is decaying, so that now:
+
+$$
+\frac{dP(Ω+1,t)}{dt}=(\alphae^{−\gammat}+\beta)P(Ω,t)
+$$
 
 A critical detail should be noted. While reorientations are modeled as discrete events, the amount of M at time t=0 is chosen to be large (M0 ← 1,000), so that over the timescale of 40 minutes, the decay in M is practically continuous. This ensures that sudden changes in reorientation rate are not due to sudden changes in M, but due to the inherent stochasticity of reorientations.
 
-To model both processes, we can create the master equation:(8)dP(Ω,M,t)dt=a1P(Ω−1,M,t)−a1P(Ω,M,t)+a2P(Ω,M+1,t)−a2P(Ω,M,t)\begin{document}$$\displaystyle  {\frac{d\mathrm{P}\left (\mathrm{\Omega },\mathrm{M},\mathrm{t}\right)}{dt}=\mathrm{\,}a_{1}P\left (\mathrm{\Omega }-1,\mathrm{M},t\right)-\, a_{1}P\left (\mathrm{\Omega },\mathrm{M},t\right)+a_{2}P\left (\mathrm{\Omega },M+1,t\right)-a_{2}P\left (\mathrm{\Omega },M,t\right)}$$\end{document}
+To model both processes, we can create the master equation:
 
-Since these are both Poisson processes, the probability density function for a state change i (Ω+1: i=1, M-1: i=2) occurring at time t is:(9)P(t|ai)=aie−ait\begin{document}$$\displaystyle  {P\left (t|a_{i}\right)=\, \, a_{i}e^{-a_{i}t}}$$\end{document}
+$$
+\frac{dP(Ω,M,t)}{dt}=a_{1}P(Ω−1,M,t)−a_{1}P(Ω,M,t)+a_{2}P(Ω,M+1,t)−a_{2}P(Ω,M,t)
+$$
 
-The probability that a state change will not occur for propensity ai in time interval τ is:(10)P(t>τ|ai)=∫τ∞P(t|ai)dt=e−aiτ\begin{document}$$\displaystyle  {P\left (t\gt \tau |a_{i}\right)=\, \int _{\tau }^{\infty }P\left (t|a_{i}\right)\, dt\, =e^{-a_{i}\tau }}$$\end{document}
+Since these are both Poisson processes, the probability density function for a state change i (Ω+1: i=1, M-1: i=2) occurring at time t is:
 
-The probability that no state changes will occur for ALL propensities in this time interval is:(11)P(t>τ|a1)P(t>τ|a2)=∏ie−aiτ=exp[−τ∑iai]\begin{document}$$\displaystyle  P\left (t\gt \tau |a_{1}\right)P\left (t\gt \tau |a_{2}\right)=\, \underset{i}{\prod }e^{-a_{i}\tau }=exp\left [-\tau \underset{i}{\sum }a_{i}\right ]$$\end{document}
+$$
+P(t|a_{i})=a_{i}e^{−a_{i}t}
+$$
 
-We can draw a random number (r1 ∈ [0,1]) that represents the probability of no events in time interval τ, so that this time interval can be assigned by rearranging Equation 11:(12)τ←−ln(r1)a0\begin{document}$$\displaystyle  {\tau \, \leftarrow \, \frac{-ln\left (r_{1}\right)}{a_{0}}}$$\end{document}
+The probability that a state change will not occur for propensity ai in time interval τ is:
 
-where:(13)a0=∑iai\begin{document}$$\displaystyle  a_{0}=\underset{i}{\sum }a_{i}$$\end{document}
+$$
+P(t>\tau|a_{i})=\int_{\tau}^{∞}P(t|a_{i})dt=e^{−a_{i}\tau}
+$$
 
-This is the time interval for any event (Ω+1 or M-1) happening at t + τ. The probability of which event occurs is proportional to its propensity:(14)P(eventi)=aia0\begin{document}$$\displaystyle  {P\left (event\, i\right)=\frac{a_{i}}{a_{0}}}$$\end{document}
+The probability that no state changes will occur for ALL propensities in this time interval is:
 
-We can draw a second number (r2 ∈ [0,1]) that represents this probability, so that which event occurs at time t + τ is determined by the smallest n that satisfies:(15)r2⋅a0≤∑i=1nai\begin{document}$$\displaystyle  r_{2}\cdot a_{0}\, \leq \, \sum \limits_{i=1}^{n}a_{i}$$\end{document}
+$$
+P(t>\tau|a_{1})P(t>\tau|a_{2})=\prodie^{−a_{i}\tau}=exp[−\tau\sumia_{i}]
+$$
 
-so that:(16)eventi←min{n|r2⋅a0≤∑i=1nai}\begin{document}$$\displaystyle  event\, i\leftarrow \, min\left \{n\, |\, r_{2}\cdot a_{0}\, \leq \, \sum \limits_{i=1}^{n}a_{i}\right \}$$\end{document}
+We can draw a random number (r1 ∈ [0,1]) that represents the probability of no events in time interval τ, so that this time interval can be assigned by rearranging Equation 11:
+
+$$
+\tau←\frac{−ln(r_{1})}{a_{0}}
+$$
+
+where:
+
+$$
+a_{0}=\sumia_{i}
+$$
+
+This is the time interval for any event (Ω+1 or M-1) happening at t + τ. The probability of which event occurs is proportional to its propensity:
+
+$$
+P(eventi)=\frac{a_{i}}{a_{0}}
+$$
+
+We can draw a second number (r2 ∈ [0,1]) that represents this probability, so that which event occurs at time t + τ is determined by the smallest n that satisfies:
+
+$$
+r_{2}⋅a_{0}\leq\sumi=1na_{i}
+$$
+
+so that:
+
+$$
+eventi←min{n|r_{2}⋅a_{0}\leq\sumi=1na_{i}}
+$$
 
 For example, if the propensity a1 is 10% of a0 at time t, then there is a 10% chance that the resulting reaction will occur at time t. The elegant efficiency of the Gillespie algorithm is twofold. First, it models all transitions simultaneously, not separately. Second, it provides floating-point time resolution. Rather than drawing a random number, and using a cumulative probability distribution of interval times to decide whether an event occurs at discrete steps in time, the Gillespie algorithm uses this distribution to draw the interval time itself. The time resolution of the prior approach is limited by step size, whereas the Gillespie algorithm’s time resolution is limited by the floating-point precision of the random number that is drawn.
 
 In this way, the Gillespie algorithm enables the simultaneous modeling of numerous reactions in parallel with machine-precision time resolution. To ensure the reorientation rate itself is a smooth decay, a large value of M is used to approximate a continuous function. The underlying assumptions are:
 
-In our approach, we fit the exponential curve in Equation 2 to the average reorientation rate from the experimental data from López-Cruz (López-Cruz et al., 2019; Figure 2b), and then used these parameters (α, β, γ) to model 1631 individual worms (the same number of animals in the experimental data). Even though the initial average rates of reorientation are ~1.5 events/minute, there is considerable variance in observed initial rates (Figure 1a). To address this variance, starting values of M were assigned based on randomly drawing a rate from the observed experimental rates at t=0, and adjusting M so that the starting rate for that in silico worm j matched the initial rate of the randomly drawn experimental worm:(17)Mj←M0(r−β)α\begin{document}$$\displaystyle  {M_{j}\leftarrow \, \frac{M_{0}\left (r-\beta \right)}{\alpha }}$$\end{document}
+In our approach, we fit the exponential curve in Equation 2 to the average reorientation rate from the experimental data from López-Cruz (López-Cruz et al., 2019; Figure 2b), and then used these parameters (α, β, γ) to model 1631 individual worms (the same number of animals in the experimental data). Even though the initial average rates of reorientation are ~1.5 events/minute, there is considerable variance in observed initial rates (Figure 1a). To address this variance, starting values of M were assigned based on randomly drawing a rate from the observed experimental rates at t=0, and adjusting M so that the starting rate for that in silico worm j matched the initial rate of the randomly drawn experimental worm:
+
+$$
+M_{j}←\frac{M_{0}(r−\beta)}{\alpha}
+$$
 
 where r is an initial rate randomly drawn from the experimental data.
 
@@ -95,19 +163,27 @@ This exception aside, modeling worm foraging behavior with a simple exponential 
 
 It is important to emphasize that the model was not explicitly designed to match the sudden changes in reorientation rates observed in the experimental data. Kinetic parameters were simply chosen to match the average population behavior. Sudden changes in reorientation rate were not due to sudden changes in the underlying model; stochastic behavior naturally produces sudden bunching of random events. Even if the reorientation rate is set to a constant value, stochastic sampling will still produce sudden changes in rate, even though the rate has no time-dependence (Figure 2f).
 
-## Discrete changes in M are inconsistent with experimental data
+### Discrete changes in M are inconsistent with experimental data
 
 A large initial value for M0 (M0=1000) was initially chosen to ensure a smooth change in reorientation rate, so that sudden changes in reorientation number were not necessarily due to sudden changes in M. To test how sensitive the model was to stochastic changes in M, the initial value of M was tested at M0=1000, 100, 10, or 1. On average, all values of M0 were sufficient to reproduce the average reorientation decay observed in experimental data (Figure 3a). The distributions of transition times and slope differences were also comparable for M0=1000, 100, or 10, indicating that the model is not particularly sensitive to initial values of M0.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/104972/elife-104972-fig3-v1.jpg)
 
-**Figure 3.:** C. elegans.(a) Average reorientation rates for experiments (blue), and models where M=1000 (red), 0M=100 (plum), 0M=10 (magenta), or 0M=1 (cyan). Dashed lines indicate standard deviation. (0b) Distribution of slope differences and transition times from regressions fit to the experimental data (blue), and models where M=1000 (red), 0M=100 (plum), 0M=10 (magenta), or 0M=1 (cyan). Number of worms for both experiment and models (N)=1631. Dashed line represents the median slope difference for the experimental data. (0c) The Jensen-Shannon divergence between the experimental distribution for slope difference and transition time in (b), and the distributions generated from models where M=1,000 (red), 0M=100 (plum), 0M=10 (magenta), or 0M=1 (cyan). Twenty distributions were generated for each M0 model. Quartiles represented by box and whiskers. P-values calculated using Tukey’s range test: <0.001: ***.0
+**Figure 3.:** (a) Average reorientation rates for experiments (blue), and models where M0=1000 (red), M0=100 (plum), M0=10 (magenta), or M0=1 (cyan). Dashed lines indicate standard deviation. (b) Distribution of slope differences and transition times from regressions fit to the experimental data (blue), and models where M0=1000 (red), M0=100 (plum), M0=10 (magenta), or M0=1 (cyan). Number of worms for both experiment and models (N)=1631. Dashed line represents the median slope difference for the experimental data. (c) The Jensen-Shannon divergence between the experimental distribution for slope difference and transition time in (b), and the distributions generated from models where M0=1,000 (red), M0=100 (plum), M0=10 (magenta), or M0=1 (cyan). Twenty distributions were generated for each M0 model. Quartiles represented by box and whiskers. P-values calculated using Tukey’s range test: <0.001: ***.
 
 However, despite producing a similar average decay in reorientation rates, the distribution of slope differences was distinctly bimodal for M0=1 (Figure 3b). This was not surprising, since when M0=1, the model is by definition a two-state system. Either the worm has a reorientation rate of α+β (M=1), or a reorientation rate of β (M=0). The probability of switching from M=1 to M=0 increases with a timescale of γ (γ=0.11 min–1). The bimodal slope and transition time distributions for M0=1 were distinctly different from those observed for the experimental or M0=1000, 100, 10 models.
 
-Since the slope and transition time distributions were generated from a recursive algorithm rather than a purely analytical model, the model distribution for these metrics was compared to the experimental distribution using the Jensen-Shannon divergence (JSD):(18)JSD(P||Q)=12D(P||M)+12D(Q||M)\begin{document}$$\displaystyle  JSD\left (P||Q\right)=\frac{1}{2}D\left (P||M\right)+\frac{1}{2}D\left (Q||M\right)$$\end{document}
+Since the slope and transition time distributions were generated from a recursive algorithm rather than a purely analytical model, the model distribution for these metrics was compared to the experimental distribution using the Jensen-Shannon divergence (JSD):
 
-where D is the Kullback-Leibler divergence:(19)D(P‖Q)=∑xP(x)ln⁡(P(x)Q(x))\begin{document}$$\displaystyle  D(P \| Q) = \sum_x P(x) \ln\left( \frac{P(x)}{Q(x)} \right)$$\end{document}
+$$
+JSD(P||Q)=\frac{1}{2}D(P||M)+\frac{1}{2}D(Q||M)
+$$
+
+where D is the Kullback-Leibler divergence:
+
+$$
+D(P‖Q)=\sumxP(x)ln⁡(\frac{P(x)}{Q(x)})
+$$
 
 and P(x) and Q(x) are the two probability distributions being compared. M(x) is a mixture distribution of P and Q. This metric provides a useful, parameter-free measure for comparing distributions using mutual information. A short distance between two distributions indicates they are more similar than two distributions separated by a longer distance.
 

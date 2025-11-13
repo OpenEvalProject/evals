@@ -56,7 +56,7 @@
 
 ## Abstract
 
-10.7554/eLife.18491.001 The threat of an influenza A virus pandemic stems from continual virus spillovers from reservoir species, a tiny fraction of which spark sustained transmission in humans. To date, no pandemic emergence of a new influenza strain has been preceded by detection of a closely related precursor in an animal or human. Nonetheless, influenza surveillance efforts are expanding, prompting a need for tools to assess the pandemic risk posed by a detected virus. The goal would be to use genetic sequence and/or biological assays of viral traits to identify those non-human influenza viruses with the greatest risk of evolving into pandemic threats, and/or to understand drivers of such evolution, to prioritize pandemic prevention or response measures. We describe such efforts, identify progress and ongoing challenges, and discuss three specific traits of influenza viruses (hemagglutinin receptor binding specificity, hemagglutinin pH of activation, and polymerase complex efficiency) that contribute to pandemic risk. DOI: http://dx.doi.org/10.7554/eLife.18491.001
+The threat of an influenza A virus pandemic stems from continual virus spillovers from reservoir species, a tiny fraction of which spark sustained transmission in humans. To date, no pandemic emergence of a new influenza strain has been preceded by detection of a closely related precursor in an animal or human. Nonetheless, influenza surveillance efforts are expanding, prompting a need for tools to assess the pandemic risk posed by a detected virus. The goal would be to use genetic sequence and/or biological assays of viral traits to identify those non-human influenza viruses with the greatest risk of evolving into pandemic threats, and/or to understand drivers of such evolution, to prioritize pandemic prevention or response measures. We describe such efforts, identify progress and ongoing challenges, and discuss three specific traits of influenza viruses (hemagglutinin receptor binding specificity, hemagglutinin pH of activation, and polymerase complex efficiency) that contribute to pandemic risk.
 
 ## Introduction
 
@@ -82,19 +82,163 @@ Despite these challenges, there has been tremendous interest and investment in m
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/18491/elife-18491-fig1-v2.jpg)
 
-**Figure 1.:** (A) A switch in receptor binding preference from avian-like (α2,3-linked sialic acid) to human-like (α2,6-linked sialic acid) receptors. The human form on the left shows the typical distribution of human adapted influenza viruses determined by their receptor binding preference for a2,6, linked SA that is predominantly expressed in the upper respiratory tract but also in the lungs. The human form on the right shows that infection with avian influenza viruses is concentrated in the lungs where their preferred a2,3 linked SA receptor is expressed. (B) Lower HA pH of activation and increased polymerase complex efficiency. Free-floating viruses that enter the human respiratory tract (upper part of figure) encounter mucus and a mildly acidic extracellular environment that act as innate barriers to virus infection. If NA is able to desialylate decoy receptors on mucus and HA has a sufficiently low pH of activation, then the virus particle may reach the apical surface of the respiratory epithelium intact. There through a multiplicity of interactions between HA and cell-surface sialic acid, the virus enters the target cell. After the virus is internalized, it passes through the endosomal pathway where the pH is progressively decreased. The low pH of the endosomal environment triggers an irreversible conformational change in HA that fuses the viral and endosomal membranes and ultimately results in the release of virus genetic material in the form of the viral ribonucleoprotein complex (vRNP) into the cell cytoplasm. The eight vRNPs are subsequently imported into the cell nucleus by interactions between the vRNPs and cellular nuclear import machinery. Inside the nucleus the virus polymerase complex replicates the virus genome in conjunction with co-opted cell proteins.DOI: http://dx.doi.org/10.7554/eLife.18491.005
+**Figure 1.:** (A) A switch in receptor binding preference from avian-like (α2,3-linked sialic acid) to human-like (α2,6-linked sialic acid) receptors. The human form on the left shows the typical distribution of human adapted influenza viruses determined by their receptor binding preference for a2,6, linked SA that is predominantly expressed in the upper respiratory tract but also in the lungs. The human form on the right shows that infection with avian influenza viruses is concentrated in the lungs where their preferred a2,3 linked SA receptor is expressed. (B) Lower HA pH of activation and increased polymerase complex efficiency. Free-floating viruses that enter the human respiratory tract (upper part of figure) encounter mucus and a mildly acidic extracellular environment that act as innate barriers to virus infection. If NA is able to desialylate decoy receptors on mucus and HA has a sufficiently low pH of activation, then the virus particle may reach the apical surface of the respiratory epithelium intact. There through a multiplicity of interactions between HA and cell-surface sialic acid, the virus enters the target cell. After the virus is internalized, it passes through the endosomal pathway where the pH is progressively decreased. The low pH of the endosomal environment triggers an irreversible conformational change in HA that fuses the viral and endosomal membranes and ultimately results in the release of virus genetic material in the form of the viral ribonucleoprotein complex (vRNP) into the cell cytoplasm. The eight vRNPs are subsequently imported into the cell nucleus by interactions between the vRNPs and cellular nuclear import machinery. Inside the nucleus the virus polymerase complex replicates the virus genome in conjunction with co-opted cell proteins.
+
+**Table 1.**
+ Influenza virus adaptations that appear to be required for human-to-human transmission.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Trait</th>
+      <th>Adaptation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HA receptor binding specificity</td>
+      <td>Preference for α2,6-linked mammalian sialic acid receptors over α2,3-linked avian ones (Russell et al., 2006)</td>
+    </tr>
+    <tr>
+      <td>HA pH of activation</td>
+      <td>HA avoids extracellular inactivation and undergoes conformational changes leading to membrane fusion at appropriate pH for human cells (5.0–5.4 or perhaps 5.5) (Russell, 2014)</td>
+    </tr>
+    <tr>
+      <td>Polymerase complex efficiency</td>
+      <td>Efficient replication in human cells (Cauldwell et al., 2014; Naffakh et al., 2008)</td>
+    </tr>
+    <tr>
+      <td>Virus morphology</td>
+      <td>Filamentous morphology associated with several adaptations to mammals (Seladi-Schulman et al., 2014; Seladi-Schulman et al., 2013; Campbell et al., 2014; Beale et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Length of NA stalk</td>
+      <td>Longer stalk of NA required to penetrate human mucus and deaggregate virions (Blumenkrantz et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>Antagonism of interferon production</td>
+      <td>Species-specific binding of the NS1 protein to host factors (Rajsbaum et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>HA-NA “balance”</td>
+      <td>Substrate selectivity and catalytic rate of NA are calibrated to “balance” avidity of HA for the cell-surface glycan receptor (Zanin et al., 2015; Baum and Paulson, 1991; Yen et al., 2011; Handel et al., 2014)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Hemagglutinin receptor binding preference and examples of viruses isolated from avian and human hosts showing preference for human or avian receptors, or mixed preference. Yellow-shaded cells show concordance between expected and observed properties.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Avian receptor preference</th>
+      <th>Mixed receptor preference</th>
+      <th>Human receptor preference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Expected sequence, trait. Hallmark residues HA 190, 225 (H1,H3), 226 (H3); many others</td>
+      <td>Preferential binding to α2,3 sialylated glycans. HA 190Glu, 225Gly, 226Gln</td>
+      <td>Similar binding to both classes of glycans</td>
+      <td>Preferential binding to α2,6 sialylated glycans. HA 190Asp, 225Glu, 226Leu</td>
+    </tr>
+    <tr>
+      <td>Found in avian isolates</td>
+      <td>Many examples: many avian isolates of subtypes H5N1 (Russell et al., 2012; Yamada et al., 2006), H2 (Connor et al., 1994) and H3 (Connor et al., 1994)</td>
+      <td>avian isolates of H5N5 (Li et al., 2015), North American H7 (Belser et al., 2008), H7N9 (Schrauwen et al., 2016), as well as examples from H2 (Connor et al., 1994; Liu et al., 2009) and H3 (Connor et al., 1994)</td>
+      <td>Some H9N2 avian isolates (Matrosovich et al., 2001; Li et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Found in human isolates</td>
+      <td>H5N1 zoonotic isolate (Imai et al., 2012; Yamada et al., 2006); one H1N1 isolate from 1957 (Rogers and D'Souza, 1989)*; some early H2N2 pandemic/seasonal isolates (Connor et al., 1994; Pappas et al., 2010; Matrosovich et al., 2000)*</td>
+      <td>Early H1N1 pandemic isolates from 2009(Childs et al., 2009) and 1918 (Stevens et al., 2006; Glaser et al., 2005); several H1N1 from the 1918-1956 period (Rogers and D'Souza, 1989)*; early H2N2 isolate from 1958 (Pappas et al., 2010); human isolate of zoonotic H7N9 (Xiong et al., 2013b)</td>
+      <td>Many examples: H1N1 post-1977 (Rogers and D'Souza, 1989); early H1N1 pandemic isolates from 2009 (Chen et al., 2011) and 1918 (Stevens et al., 2006; Glaser et al., 2005); most human H2 and H3 seasonal isolates (Connor et al., 1994; Matrosovich et al., 2000)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*These anomalous results are speculated by the authors to be possibly, or even probably the result of laboratory adaptation to egg passage and may not reflect the properties of the primary isolate. A possible counter to this interpretation is that it is seen only in the earliest isolates from human pandemic viruses, while nearly all isolates from after the pandemic year, which should also have been passaged in eggs, show human-adapted phenotypes._
+
+**Table 3.**
+ Hemagglutinin pH of acivation.Yellow-shaded cells show concordance between expected and observed properties.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Avian-adapted for transmissibility</th>
+      <th>Human-adapted for transmissibility</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Expected trait</td>
+      <td>pH of fusion &gt;5.4 (Reed et al., 2010)</td>
+      <td>pH of fusion 5.0-5.4 (5.5 for early H1N1pdm) (Russier et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>Found in avian isolates</td>
+      <td>Avian H1-H4, H11 isolates (Galloway et al., 2013; Russier et al., 2016; DuBois et al., 2011; Reed et al., 2010)</td>
+      <td>Avian H5, H8, H9,H10,H14,H15 isolates (Galloway et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>Found in human isolates</td>
+      <td>H5N1(Imai et al., 2012; Linster et al., 2014) and H7N9 (Schrauwen et al., 2016) human zoonotic isolates with pH ≥5.6. One human H1N1 (2008) isolate.</td>
+      <td>Human isolates of H1N1 (1918 and 2009 lineages), H2N2, H3N2 (Galloway et al., 2013)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Polymerase complex efficiency; entries list amino acid at PB2 627, though other residues are clearly relevant to this trait.Yellow-shaded cells show concordance between expected and observed properties.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Avian-adapted</th>
+      <th>Human-adapted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Expected trait</td>
+      <td>Low efficiency in mammals, PB2 590/591 G/Q, 627E, 701D</td>
+      <td>High efficiency in mammals, PB2 590/591 S/R, PB2 627K, 701N;</td>
+    </tr>
+    <tr>
+      <td>Found in avian isolates</td>
+      <td>Nearly all avian sequences in databases as of 2005 (Chen et al., 2006)</td>
+      <td>A few entries in databases show sequences associated with human adaptation as of 2005 (Chen et al., 2006)***</td>
+    </tr>
+    <tr>
+      <td>Found in human isolates</td>
+      <td>zoonotic H9N2 (Chen et al., 2006); some zoonotic H5N1 (de Jong et al., 2006; Chen et al., 2006); some zoonotic H7N9 (associated with milder course) (Sha et al., 2016); one zoonotic H5N6 (Zhang et al., 2016)**</td>
+      <td>Pandemic and seasonal H1N1, H2N2, H3N2 from 1918-2008 (Cauldwell et al., 2014); some zoonotic H5N1 (Chen et al., 2006); some zoonotic H7N9 (associated with more severe course) (Sha et al., 2016); H1N1pdm (Herfst et al., 2010)*; one zoonotic H5N6 and one zoonotic H10N8 (Zhang et al., 2016)</td>
+    </tr>
+  </tbody>
+</table>
+
+_* the role of amino acids 590 and 591 in adaptation was not recognized until after the 2009 strain had already emerged (Mehle and Doudna, 2009); it has the residues associated with avian adaptation at sites 627 and 701 that were known at that time (Herfst et al., 2010).** complete sequence information not given in the paper*** the rarity of these raises questions about possible sequencing errors._
 
 This review starts with a summary of our knowledge about the role of each of the three functional traits in conferring pandemic potential on a virus strain. Following these case studies, we draw some generalizations about the prospects of predicting pandemic risk from virus genotype or from assays of particular viral traits. For each trait we present a table showing the degree to which the sequence changes or phenotypic properties associated with avian or human adaptation are present in isolates from birds and humans, respectively. If the avian traits were always found in avian isolates and human traits always in human isolates, only the shaded cells on the main diagonal would be filled. In such a case, however, it is hard to see how viruses would ever make the jump from birds to humans, since so many traits would have to change simultaneously, and indeed the off-diagonal cells are not empty. Finding avian-adapted traits in viruses isolated from humans most often occurs in zoonotic cases, showing that not all human-adapted traits are required for the first human infection. In some cases there are also viruses isolated from humans after a pandemic starts that retain some degree of avian-like traits, and we discuss these in more detail in the text -- these represent the greatest challenge to use of genotypic or phenotypic information for pandemic prediction because they run the risk of false negatives. The other off-diagonal cell, which represents avian isolates with some human-like traits, simply shows that some circulation of viruses in birds is possible without the classical 'avian' phenotypes. How this happens is a phenomenon worthy of further study. We conclude with some recommendations for future research and for the practice of pandemic risk assessment.
 
 ## Trait 1: Hemagglutinin receptor binding specificity
 
-## A. Definition of the trait
+### A. Definition of the trait
 
 Attachment of an influenza virus to a host cell requires binding of the viral HA to a sialylated glycan receptor (sialic acid) on the surface of the host cell. Cells of the avian gut and a minority of cells in deep lung in mammals predominantly express receptors terminated with an α2,3-linked sialic acid: hereafter, α2,3 glycans or avian receptors (Russell et al., 2006; Gambaryan et al., 1997; van Riel et al., 2006; Shinya et al., 2006). By contrast, in humans and other mammals, upper respiratory epithelial cells express mainly glycan receptors terminated by α2,6-linked sialic acid: α2,6 glycans or human receptors (Stevens et al., 2006; Shinya et al., 2006; Chandrasekaran et al., 2008). The human upper respiratory epithelium is the primary target site for infection of human-adapted viruses, and infection at this site is thought to be a prerequisite for efficient human-to-human transmission via respiratory droplets. Thus, it appears that human adaptation of an HA is associated with a switch in its binding preference from avian to human receptors. Receptor binding is not either-or; human-adapted influenza virus HA may show some binding to avian receptors, and vice versa.
 
 Receptor binding preference is defined as the ratio of affinity (or avidity) of an HA molecule for an α2,6 glycan relative to that for an α2,3 glycan, with higher values associated with greater human adaptation. The evolution of receptor binding specificity is driven by the host environment, with selection for specificity during the infection process within a host and during the process of transmission. The error-prone replication of influenza genomes can facilitate rapid emergence of viruses with amino acid substitutions that alter the receptor binding characteristics of the HA (Lakdawala et al., 2015). Increased transmissibility may result from mammalian receptor adaptation, either because the virus shedding form the infected donor host is increased, or because the ability of virus to infect the recipient host at a low dose is enhanced, or for both of these reasons. Recent experimental evidence in ferrets implicates the soft palate as an important site of selection for α2,6 specificity (Lakdawala et al., 2015).
 
-## B. Genetic and structural determinants of hemagglutinin-receptor interactions
+### B. Genetic and structural determinants of hemagglutinin-receptor interactions
 
 Preference for binding human or avian glycan receptors is determined by the structure of the viral HA. Except for a few conserved amino acids in the sialic acid receptor binding pocket, the influenza HA has considerable structural plasticity to evolve variation at the rim of the pocket to engage different sialic acid linkages. Importantly, antigenic regions of the HA are located nearby regions that determine receptor-binding preference, meaning that selection for antigenic escape may be constrained by the need to maintain receptor preference (Koel et al., 2013). More speculatively, selection for changes in receptor preference might also alter recognition of the HA by host antibodies.
 
@@ -102,7 +246,7 @@ Conformation of hemagglutinin as a determinant of receptor binding preference. A
 
 Additional structural features involved in receptor binding preference. The cis and trans definition of glycan conformation does not fully describe HA binding to a range of structurally diverse glycans displayed on human respiratory cells and tissues (Chandrasekaran et al., 2008). This limitation motivated studies that revisited the definition of glycan conformation, extending the conformational analysis beyond the terminal sialic acid linkage to describe overall topology and dynamics of the glycan receptor upon binding to the receptor-binding site of avian and human-adapted HAs (Chandrasekaran et al., 2008; Xu et al., 2009). HA sequence determinants of preference for the “cone”-like topology of avian receptors, versus the “umbrella”-like topology of human receptors, are still being defined (Raman et al., 2014).
 
-## C. Experimental assays to measure hemagglutinin receptor binding specificity
+### C. Experimental assays to measure hemagglutinin receptor binding specificity
 
 Experimental evidence on differential binding of avian and human viruses to sialic acid receptors in avian and human conformations, respectively, was first obtained by hemagglutination assays with erythrocytes whose surfaces had been chemically modified to display glycans terminating with either homogeneous α2,3 or homogeneous α2,6-linked sialic acids (Paulson and Rogers, 1987). Subsequent analysis of the repertoire of glycan structures in erythrocytes of various animal species informed the use of cells from different species as probes of HA receptor binding preference in hemagglutination assays (Ito et al., 1997).
 
@@ -110,7 +254,7 @@ Greater precision and reproducibility has been achieved with the use of purified
 
 In summary, genetic and protein sequence analysis, glycan arrays, and X-ray crystallography studies provide complementary data towards understanding the sialoglycan interactions of emerging viruses, with tradeoffs of equipment and reagent costs and throughput against level of precision and detail provided.
 
-## D. Receptor binding preference as a predictor of host adaptation of influenza viruses and pandemic risk
+### D. Receptor binding preference as a predictor of host adaptation of influenza viruses and pandemic risk
 
 At present, estimating the contribution of receptor specificity to the pandemic risk posed by a novel virus relies primarily on the similarity between the receptor binding characteristics of the emerging virus and that of the most closely related HA with known transmissibility among humans or a surrogate animal model.
 
@@ -124,11 +268,11 @@ In summary, detection of a human receptor preference in a spillover virus may be
 
 ## Trait 2: Hemagglutinin pH of activation
 
-## A. Definition of the trait
+### A. Definition of the trait
 
 After entry into the cell, influenza viruses are internalized into endosomes, where the pH is progressively decreased. The pH of early and late endosomes, as well as lysosomes, varies between cell types, tissues, and host species. The HA must undergo a low-pH triggered conformational change to a state capable of fusing the viral and endosomal membranes. For human-adapted viruses, HA activation typically occurs between pH 5.0 to 5.5. HA variants that undergo this transition at a higher pH, as is typical for avian influenza isolates, are poorly adapted to infect human cells because the transition can happen prematurely, leading to extracellular inactivation in the mildly acidic mammalian respiratory tract (Di Lella et al., 2016; Zaraket et al., 2013a) The pH of activation can be defined as a continuous measurement representing the least acidic (highest) pH at which a particular HA molecule is triggered. Greater acid stability (lower pH of activation) is associated with greater human adaptation.
 
-## B. Functional, structural and genetic determinants of hemagglutinin pH of activation and its consequences
+### B. Functional, structural and genetic determinants of hemagglutinin pH of activation and its consequences
 
 The HA is synthesized and folded such that the fusion peptide is buried and inactive until specific activation signals are provided. The structural changes that expose the fusion peptide and lead to fusion have been described in detail (Skehel and Wiley, 2000). If the virion is exposed to sufficiently low pH outside of a host or host cell, the HA protein undergoes irreversible structural changes too early and is unable to mediate virus entry; such virions become inactivated. Thus the term acid stability is more broadly used to define the threshold for acidification that triggers membrane fusion (in the endosome) or inactivation (if triggered outside of the cell for an HA that is not sufficiently stable). During endocytosis, an influenza virion is exposed to sequentially lower pH values in early endosomes (pH 6.0–6.5), late endosomes (pH 5.0–5.5), and lysosomes (pH 4.6–5.0) (Mellman et al., 1986). If the HA is too stable, and fusion is not triggered in the acidic endosome of the host cell, further traffic into lysosomes results in virus inactivation by lysosomal proteases (Skehel and Wiley, 2000).
 
@@ -138,13 +282,13 @@ Consistent with observed patterns in natural isolates, some experimental evidenc
 
 Nearly 100 mutations have been described to alter the HA activation pH values of various influenza A virus subtypes (Russell, 2014; Mair et al., 2014). These acid stabilizing/destabilizing residues are located throughout the HA1 and HA2 subunits and tend to be positioned in regions of the molecule that undergo large-scale changes in structure during pH-activated protein refolding (Russell, 2014; Bullough et al., 1994; Wilson et al., 1981). Mutations that modify the activation pH do not appear to alter the prefusion HA protein backbone in X-ray crystal structures (DuBois et al., 2011; Weis et al., 1990; de Vries et al., 2014). Therefore, an experimental determination or modeling of intermediate structures may be required in order to reliably predict HA pH of activation. Further complicating genetic prediction of HA activation pH values are observations that the NA and M proteins can also modulate HA acid stability in some cases (Huang et al., 1980; Su et al., 2009; Reed et al., 2010; O'Donnell et al., 2014).
 
-## C. Experimental assays to measure hemagglutinin activation pH
+### C. Experimental assays to measure hemagglutinin activation pH
 
 A variety of experimental techniques have been developed to measure the activation pH of the HA protein, quantified as the highest pH at which the HA protein is activated to undergo the irreversible structural changes that mediate membrane fusion (Hamilton et al., 2012), or alternatively the highest pH at which, in the absence of a membrane with which to fuse, the HA protein is inactivated (inactivation pH). Classical membrane fusion assays have measured the property in bulk (Hoekstra et al., 1984). The pH of inactivation can be measured using aliquots of virions that are exposed to buffers of progressively lower pH and, after restoration to neutral pH, assayed for retention or loss of infectivity (Scholtissek, 1985). In many classical fusion assays, fluorescent probes are used to label virions, HA-expressing cells, and/or target liposomes or cells. In these in vitro assays, HA-bound target cells are typically exposed to buffers of various pH values and then lipid and/or contents mixing are measured by fluorescence (Loyter et al., 1988; Hoekstra and Klappe, 1993). Alternatively, cell monolayers expressing cleaved HA proteins can be pulsed by low-pH buffers and then incubated to readout HA-mediated cell-to-cell fusion either microscopically by syncytia formation or by reporter gene expression. If HA conformation-specific monoclonal antibodies are available for the subtype being studied, HA-expressing cells can be pulsed with low pH and then analyzed for conformational changes by flow cytometry (Reed et al., 2009). If such antibodies are lacking, HA-expressing cells can be assayed for trypsin susceptibility after low-pH exposure, with prefusion HA being resistant and postfusion HA susceptible to trypsin degradation (Steinhauer et al., 1996). Recently, methods have been developed to study HA activation and membrane fusion by individual virions, including single virion fusion using total internal reflection fluorescence microscopy (Hamilton et al., 2012).
 
 Although the biological trigger for HA’s conformational change is a drop in pH, HA refolding can also be triggered by other destabilizing agents such as heat and urea (Scholtissek, 1985; Ruigrok et al., 1986; Carr et al., 1997). Stability at a lower pH is associated with stability at higher temperatures and higher urea concentrations, permitting the use of these agents instead of, or in addition to, pH in assays of stability. Thermal stability has been determined by measuring the threshold temperature at which denatured HA protein loses its ability to bind erythrocytes and cause hemagglutination (Linster et al., 2014).
 
-## D. Role of hemagglutinin activation pH in pandemic risk prediction
+### D. Role of hemagglutinin activation pH in pandemic risk prediction
 
 Many questions remain regarding whether HA activation pH plays a similar role in all influenza subtypes isolated from a wide variety of avian species. For early isolates of the H1N1pdm lineage in 2009, the HA protein has an activation pH of 5.5, which appears intermediate between the canonical human (lower) and avian (higher) ranges. Subsequent H1N1pdm isolates have HA activation pH values ranging from 5.2–5.4, suggesting pH 5.5 may be the upper limit for human pandemic potential and a lower value may be preferred. Indeed, a destabilizing HA mutation in the background of H1N1pdm results in a loss-of-function of airborne transmissibility in ferrets and has been reported to be followed by re-gain-of-function by mutations that lower the HA activation pH to 5.3, a value representative of human-adapted H1N1pdm viruses (Russier et al., 2016). For the moment, it appears that while HA pH of activation that is shown experimentally to be suitable for human infection is highly typical of isolates from human pandemic and seasonal influenza (Table 3, bottom right) (Galloway et al., 2013), it is possible for humans to have symptomatic infection with (though not extensively transmit) viruses with activation pH closer to the range associated with terrestrial birds (Table 3, bottom left). Conversely (Table 3, top right), there are avian H9, H10, H14, and H15 isolates that display activation pH typical of human viruses (Galloway et al., 2013). The existence of these human-like avian viruses is perhaps unsurprising, as they may lack other essential adaptations for human transmission. As in the case of receptor binding, reliance on this trait to prioritize pandemic prevention measures should consider this property in conjunction with other properties associated with pandemic potential and will likely enrich the coverage of truly high-risk strains on average.
 
@@ -152,23 +296,23 @@ Systematic assessment of the predictive value of HA activation pH will require b
 
 ## Trait 3: Polymerase complex efficiency
 
-## A. Definition of the trait
+### A. Definition of the trait
 
 The heterotrimer of influenza polymerase subunits (PA, PB1, PB2 gene products, together forming the RNA-dependent RNA polymerase) and the nucleoprotein (NP gene product) is required to transcribe and replicate the viral genome (Huang et al., 1990). The polymerase genes of viruses isolated from avian hosts show a number of genetic differences from their counterparts in viruses isolated from humans (Chen et al., 2006), and avian virus polymerase typically performs inefficiently in replicating the viral genome in human cells (Cauldwell et al., 2014; Naffakh et al., 2008). Adaptation to efficient human-to-human transmission requires efficient activity of this complex of proteins, which we refer to as the polymerase complex, in human cells (Cauldwell et al., 2014; Naffakh et al., 2008).
 
-## B. Genetic basis of polymerase complex efficiency
+### B. Genetic basis of polymerase complex efficiency
 
-Some mutations in PB2 are consistently associated with efficient function of the polymerase complex in mammalian cells (
+Some mutations in PB2 are consistently associated with efficient function of the polymerase complex in mammalian cells (Figure 2). As long ago as 1977, it was shown that an avian influenza virus could achieve efficient replication in mammalian cells by acquiring mutations solely in the PB2 subunit of the viral polymerase (Spooner and Barry, 1977). The most famous of these mutations was later described as PB2 residue 627 (Subbarao et al., 1993), which is a glutamic acid (Glu) in avian influenza viruses but a lysine (Lys) in human-adapted viruses, including those that emerged in the pandemics of 1918, 1957 and 1968, and their seasonal descendants. An important exception is the virus that sparked the pandemic of 2009. In this virus, the PB2 segment had been introduced from an avian precursor into swine viruses in the 1990s, and mammalian adaptation had been achieved by a different set of PB2 mutations including changes at residues at 271, 590 and 591 (Mehle and Doudna, 2009). Now that the 3-dimensional structure of the viral polymerase has been elucidated, we can see that residue 627, 271, 590 and 591 lie on the same external surface. Mammalian-adapting mutations increase the positive charge of this domain, suggesting that they either adapt the virus for interaction with an enhancing host factor or enhance its ability to repel a restriction factor (Mehle and Doudna, 2009). Recently a host factor, ANP32A, that differs between mammals and flighted birds was shown to be a cofactor of the influenza polymerase, and the species specific difference could explain the inefficient function of avian virus polymerase and the stringent selection for the 627Glu->Lys adaptive mutation in mammals (Long et al., 2016).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/18491/elife-18491-fig2-v2.jpg)
 
-**Figure 2.:** Reich et al., 2014) consisting of PA (grey), PB1 (cyan), PB2 (green) and bound vRNA promoter (purple).Key host adaptation sites are indicated as red balls. Sites for importin-alpha interaction are shown as blue balls. Structure visualized with YASARA (Krieger and Vriend, 2014).DOI: http://dx.doi.org/10.7554/eLife.18491.010
+**Figure 2.:** Key host adaptation sites are indicated as red balls. Sites for importin-alpha interaction are shown as blue balls. Structure visualized with YASARA (Krieger and Vriend, 2014).
 
 Another residue implicated in mammalian adaptation of the polymerase is residue 701 of PB2, which lies close to but is distinct from the 627 cluster. It has been suggested that this mutation and others in this domain at residues 702 and 714 affect the interaction between PB2 and importin-alpha isoforms either in a way that enhances nuclear import of newly synthesized PB2 or that affects polymerase function once inside the nucleus, the site of viral RNA replication (Resa-Infante et al., 2008; Gabriel et al., 2005; Sediri et al., 2015). Other mutations have been described that adapt PB2 for the mammalian nucleus (for example the triplet threonines at positions 147, 339 and 588) but whether they affect interaction with ANP32A, importins or as yet unidentified host factors is not yet elucidated.
 
 The adaptive value of these mutations is shown by experimental or observational data in which a mammalian host is infected with a virus whose PB2 is not adapted for efficient mammalian replication, but such a mutation becomes common in the virus population over the course of infection. Such evolution has been observed in a fatal human case of influenza A/H7N7 (Jonges et al., 2014) and in mouse experiments following serial lung passage using an isolate from this outbreak (de Jong et al., 2013). Lys at position 627 has also been associated with greater severity in zoonotic H7N9 (Sha et al., 2016) and H5N1 (de Jong et al., 2006) cases However, reverse genetics experiments show that certain strains of avian influenza may be less able to accept these mutations than others (Long et al., 2013).
 
-## C. Experimental assays to measure polymerase complex efficiency in human cells
+### C. Experimental assays to measure polymerase complex efficiency in human cells
 
 Polymerase complex efficiency in human cells can be measured by an in situ assay in which the influenza polymerase is reconstituted from cloned cDNAs in plasmids and then coexpressed with “minigenome,” a viral-like RNA encoding a reporter, such as luciferase. By measuring the rate of reporter accumulation in the transfected human cell line, specific combinations of RNA sequences for the polymerase-complex viral genes can thereby be screened directly for their efficiency in producing the mRNA encoding the reporter gene product, providing a measure of human adaptation of the polymerase complex (Moncorgé et al., 2010).
 
@@ -178,7 +322,7 @@ Alternatively, polymerase activity could be measured in the context of viral inf
 
 Ultimately, it would be valuable to develop a simple screen to assess the ability of a viral polymerase to support replication and transmission in humans. This phenotype is influenced by at least 4 different viral genes and involves interactions with several different human host factors. If all the relevant host factors were enumerated, one could imagine quickly converting sequence information into an assay that tested for interactions that should support activity. Along these lines the recent description of a host factor, ANP32A that differs between flighted birds and mammals and explains the poor activity of avian polymerase in mammalian cells is a step forward (Long et al., 2016).
 
-## D. Role of polymerase complex efficiency in pandemic risk prediction
+### D. Role of polymerase complex efficiency in pandemic risk prediction
 
 The inefficient polymerase of avian influenza viruses in mammalian cells is one of the host-range barriers that likely diminishes pandemic risk. Unlike the requirement for adaptive mutation in the novel HA, this polymerase barrier can be rather readily overcome by reassortment in which an avian virus with novel antigenicity can acquire one or more polymerase genes from mammalian-adapted viruses. In addition, adaptation of avian virus polymerase by accumulation of adaptive mutations in either the polymerase genes or possibly in other viral genes such as the NS segment encoding NEP can enhance avian virus polymerase function sufficiently to support a host range jump.
 

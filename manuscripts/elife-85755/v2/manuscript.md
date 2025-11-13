@@ -8,15 +8,15 @@
 
 ### Affiliations
 
-1. https://ror.org/009eqmr18 Department of Physiology, Biophysics, and Neurosciences; Center for Research and Advanced Studies of the National Polytechnic Institute (Cinvestav) Mexico City Mexico
+1. Department of Physiology, Biophysics, and Neurosciences; Center for Research and Advanced Studies of the National Polytechnic Institute (Cinvestav) Mexico City Mexico ([ROR:009eqmr18](https://ror.org/009eqmr18))
 2. Interdisciplinary Polytechnic Unit of Biotechnology of the National Polytechnic Institute Mexico City Mexico
-3. https://ror.org/04gyf1771 Department of Developmental and Cell Biology and Center for Complex Biological Systems, University of California, Irvine Irvine United States
+3. Department of Developmental and Cell Biology and Center for Complex Biological Systems, University of California, Irvine Irvine United States ([ROR:04gyf1771](https://ror.org/04gyf1771))
 
 † Corresponding author
 
 ## Abstract
 
-Understanding the principles underlying the design of robust, yet flexible patterning systems is a key problem in developmental biology. In the Drosophila wing, Hedgehog (Hh) signaling determines patterning outputs using dynamical properties of the Hh gradient. In particular, the pattern of collier ( col ) is established by the steady-state Hh gradient, whereas the pattern of decapentaplegic ( dpp ), is established by a transient gradient of Hh known as the Hh overshoot. Here, we use mathematical modeling to suggest that this dynamical interpretation of the Hh gradient results in specific robustness and precision properties. For instance, the location of the anterior border of col , which is subject to self-enhanced ligand degradation is more robustly specified than that of dpp to changes in morphogen dosage, and we provide experimental evidence of this prediction. However, the anterior border of dpp expression pattern, which is established by the overshoot gradient is much more precise to what would be expected by the steady-state gradient. Therefore, the dynamical interpretation of Hh signaling offers tradeoffs between robustness and precision to establish tunable patterning properties in a target-specific manner.
+Understanding the principles underlying the design of robust, yet flexible patterning systems is a key problem in developmental biology. In the Drosophila wing, Hedgehog (Hh) signaling determines patterning outputs using dynamical properties of the Hh gradient. In particular, the pattern of collier (col) is established by the steady-state Hh gradient, whereas the pattern of decapentaplegic (dpp), is established by a transient gradient of Hh known as the Hh overshoot. Here, we use mathematical modeling to suggest that this dynamical interpretation of the Hh gradient results in specific robustness and precision properties. For instance, the location of the anterior border of col, which is subject to self-enhanced ligand degradation is more robustly specified than that of dpp to changes in morphogen dosage, and we provide experimental evidence of this prediction. However, the anterior border of dpp expression pattern, which is established by the overshoot gradient is much more precise to what would be expected by the steady-state gradient. Therefore, the dynamical interpretation of Hh signaling offers tradeoffs between robustness and precision to establish tunable patterning properties in a target-specific manner.
 
 ## Introduction
 
@@ -30,73 +30,161 @@ A study by Irons et al. compared the width of col expression in the wing disc as
 
 ## Results
 
-## Steady-state interpretation of morphogen gradients predicts identical robustness to morphogen dosage for all targets
+### Steady-state interpretation of morphogen gradients predicts identical robustness to morphogen dosage for all targets
 
-Prior work on morphogen robustness has relied on quantifying displacements of the overall gradient shape (Gurdon and Bourillot, 2001; Tabata and Takei, 2004) or a single-threshold location of a gradient (Eldar et al., 2003). Robustness can be measured by computing the displacement (Δx) of the pattern boundary defined by a given morphogen threshold concentration, T, as result of a specific perturbation:(1)Δx=|x(T)−x~(T)|,
+Prior work on morphogen robustness has relied on quantifying displacements of the overall gradient shape (Gurdon and Bourillot, 2001; Tabata and Takei, 2004) or a single-threshold location of a gradient (Eldar et al., 2003). Robustness can be measured by computing the displacement ($Δx$) of the pattern boundary defined by a given morphogen threshold concentration, $T$, as result of a specific perturbation:
 
-where x(T) and x~(T) are the positions defined by the concentration threshold T of the unperturbed and perturbed morphogen gradients, respectively. Since Equation 1 is an absolute measure of robustness, in practice, perfect robustness occurs when Δx is less than the diameter of a single cell.
+$$
+Δx=|x(T)−x~(T)|,
+$$
 
-To investigate robustness of different target genes, we first analyze robustness predicted by classical morphogen models, that is, in which territories are defined by different thresholds of the steady-state gradient. As a starting model, we consider a free-diffusion, linear-degradation model at the steady state:(2)d2Mdx2−1λ2M=0,
+where $x(T)$ and $x~(T)$ are the positions defined by the concentration threshold $T$ of the unperturbed and perturbed morphogen gradients, respectively. Since Equation 1 is an absolute measure of robustness, in practice, perfect robustness occurs when $Δx$ is less than the diameter of a single cell.
 
-where M is the concentration of the morphogen and λ2 is the square of the characteristic gradient length, defined by the ratio between the diffusion coefficient and the degradation rate of the ligand M, subject to the following boundary conditions:(3)B.C.1.M(0)=M0,B.C.2.limx→∞M(x)=0.
+To investigate robustness of different target genes, we first analyze robustness predicted by classical morphogen models, that is, in which territories are defined by different thresholds of the steady-state gradient. As a starting model, we consider a free-diffusion, linear-degradation model at the steady state:
 
-In this case, a perturbation in the morphogen source, M0→M~0, results in a uniform displacement of the gradient which is given by Δx=λln⁡(M~0/M0) (Eldar et al., 2003), showing that patterns established by different thresholds exhibit the same response to this perturbation. This occurs because the solution of the perturbed problem is just a constant shift of the morphogen profile (Figure 1b–d).
+$$
+\frac{d^{2}M}{dx^{2}}−\frac{1}{\lambda^{2}}M=0,
+$$
+
+where $M$ is the concentration of the morphogen and $\lambda^{2}$ is the square of the characteristic gradient length, defined by the ratio between the diffusion coefficient and the degradation rate of the ligand $M$, subject to the following boundary conditions:
+
+$$
+B.C.1.M(0)=M_{0},B.C.2.limx→∞M(x)=0.
+$$
+
+In this case, a perturbation in the morphogen source, $M_{0}→M~_{0}$, results in a uniform displacement of the gradient which is given by $Δx=\lambdaln⁡(M~_{0}/M_{0})$ (Eldar et al., 2003), showing that patterns established by different thresholds exhibit the same response to this perturbation. This occurs because the solution of the perturbed problem is just a constant shift of the morphogen profile (Figure 1b–d).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/85755/elife-85755-fig1-v2.jpg)
 
-**Figure 1.:** (a) Simple model of Hh signaling using a time-dependent step-wise degradation function. Diagrams displays a pre steady-state gradient that then retracts upon Hh-dependent ptc upregulation, resulting in a narrower gradient. (b, c) Plots of the analytical solution for the model in a using full (); (Hh(x=0)=1b, b’) or half (); (Hh(x=0)=0.5c, c’) Hh dosage. (d, d’) Displacements upon the above perturbation for the steady-state model with two thresholds (dotted horizontal lines corresponding to the locations of col and dpp) d; and for the dynamical interpretation model with a single-threshold readout (single dotted horizontal line) using the overshoot vs. the steady-state gradient predicts different shifts d’. The parameter values used for these plots are: , λover=21μm which approximately correspond to the anterior border positions of λSS=12μmcol and dpp, respectively. The color coding of dpp in red and col in green, will be used in the rest of the article.Figure 1—source code 1.Figure 1.
+**Figure 1.:** (a) Simple model of Hh signaling using a time-dependent step-wise degradation function. Diagrams displays a pre steady-state gradient that then retracts upon Hh-dependent ptc upregulation, resulting in a narrower gradient. (b, c) Plots of the analytical solution for the model in a using full ($Hh(x=0)=1$); (b, b’) or half ($Hh(x=0)=0.5$); (c, c’) Hh dosage. (d, d’) Displacements upon the above perturbation for the steady-state model with two thresholds (dotted horizontal lines corresponding to the locations of col and dpp) d; and for the dynamical interpretation model with a single-threshold readout (single dotted horizontal line) using the overshoot vs. the steady-state gradient predicts different shifts d’. The parameter values used for these plots are: $\lambda_{over}=21μm$, $\lambda_{SS}=12μm$ which approximately correspond to the anterior border positions of col and dpp, respectively. The color coding of dpp in red and col in green, will be used in the rest of the article.
 
-We then considered a very simple model of Hh signaling in the Drosophila wing. Since the expression of Ptc, the Hh receptor, is upregulated by Hh signaling and contributes to Hh degradation by binding the Hh ligand, we considered a model in which ligand degradation has different values within and beyond a presumptive Ptc expression domain:(4)∂Hh∂t=D∂2Hh∂x2+θ(x)αHh−β(x,t)Hh
+We then considered a very simple model of Hh signaling in the Drosophila wing. Since the expression of Ptc, the Hh receptor, is upregulated by Hh signaling and contributes to Hh degradation by binding the Hh ligand, we considered a model in which ligand degradation has different values within and beyond a presumptive Ptc expression domain:
 
-where θ(x)αHh represents the source of Hh in the posterior compartment of the wing disc (i.e., θ(x) is equal to 1 or 0, depending on whether x is a location in the posterior [x<0] or anterior compartment [x>0], respectively), and(5)β(x,t)=γHh_PtcPtc+βHh,
+$$
+\frac{∂Hh}{∂t}=D\frac{∂^{2}Hh}{∂x^{2}}+\theta(x)\alpha_{Hh}−\beta(x,t)Hh
+$$
 
-where γHh_Ptc is the mass action constant for Hh_Ptc binding. At the steady state, we expect that Ptc forms a uniform expression pattern over a stripe of anterior cells abutting the AP border (referred as Ptcss) and away from the stripe, Ptc is expressed at basal levels, Ptc0. Then, at the steady state βsteady-state(x) can be modeled as the step function(6)βsteady-state(x)={γHh_PtcPtcss+βHh,0<x<b,γHh_PtcPtc0+βHh,otherwise,
+where $\theta(x)\alpha_{Hh}$ represents the source of Hh in the posterior compartment of the wing disc (i.e., $\theta(x)$ is equal to 1 or 0, depending on whether $x$ is a location in the posterior [$x<0$] or anterior compartment [$x>0$], respectively), and
 
-where b is the width of the Ptc stripe. For x>0, the steady-state solution of Equation 4 is given by(7)Hh(x)={Hhstripe(x)=Aex/λ2+Be−x/λ2,0<x<bHhbeyondPtc(x)=Ce−x/λ1,x≥b.
+$$
+\beta(x,t)=\gamma_{Hh_Ptc}Ptc+\beta_{Hh},
+$$
 
-where λ1 and λ2 are the morphogens characteristic lengths within and beyond the Ptc stripe, and A, B, and C are constants determined by the boundary conditions. Upon a perturbation αHh→α~Hh, perturbed Hh concentrations are given by:(8)Hh~stripe(x)=Ae[x+1λ2ln⁡⟮α~HhαHh⟯]/λ2+Be−[x−1λ2ln⁡⟮α~HhαHh⟯]/λ2,
+where $\gamma_{Hh_Ptc}$ is the mass action constant for $Hh_Ptc$ binding. At the steady state, we expect that $Ptc$ forms a uniform expression pattern over a stripe of anterior cells abutting the AP border (referred as $Ptc_{ss}$) and away from the stripe, $Ptc$ is expressed at basal levels, $Ptc_{0}$. Then, at the steady state $\beta_{steady-state}(x)$ can be modeled as the step function
 
-and(9)Hh~beyondPtc(x)=Ce−[x−1λ1ln⁡⟮α~HhαHh⟯]/λ1.
+$$
+\beta_{steady-state}(x)={\gamma_{Hh_Ptc}Ptc_{ss}+\beta_{Hh},0<x<b,\gamma_{Hh_Ptc}Ptc_{0}+\beta_{Hh},otherwise,
+$$
 
-Note that once again, all territories defined by HhbeyondPtc are shifted by the same amount, λ1ln⁡(α~HhαHh), upon variations in αHh. Therefore, any two target genes whose borders are defined by different concentration thresholds will exhibit the same robustness response.
+where $b$ is the width of the Ptc stripe. For $x>0$, the steady-state solution of Equation 4 is given by
 
-## Dynamic models of Hh signaling using a single threshold for different targets predict differential robustness
+$$
+Hh(x)={Hh_{stripe}(x)=Ae^{x/\lambda_{2}}+Be^{−x/\lambda_{2}},0<x<bHh_{beyondPtc}(x)=Ce^{−x/\lambda_{1}},x\geqb.
+$$
 
-Previous work showed that Hh signaling in the Drosophila wing disc the anterior border of the Hh targets dpp and col are established by a single threshold at two time points during the formation of the Hh gradient; namely, at the overshoot and the steady state, respectively (Nahmad and Stathopoulos, 2009). To consider this dynamical patterning mechanism, we analyzed a simplified model which takes into accountx the temporal upregulation of ptc as a time-dependent switch function (Figure 1a). Following the overshoot model in Nahmad and Stathopoulos, 2009, we defined the overshoot gradient as the transient profile of maximum range. Since the timescale of Hh diffusion is much faster than the timescale of Ptc upregulation, we will assume that the Hh gradient reaches a pre-steady state with the first degradation rate, βearly, where the anterior border of dpp is approximately defined and then the real steady state with the second degradation rate, βlate (Figure 1b’). Under this simple model of Hh signaling, the shift in patterning borders defined by the overshoot (i.e., dpp) and the displacement at the steady state are related by the following simple equation:(10)ΔxSS=λSSλoverΔxover,
+where $\lambda_{1}$ and $\lambda_{2}$ are the morphogens characteristic lengths within and beyond the Ptc stripe, and A, B, and C are constants determined by the boundary conditions. Upon a perturbation $\alpha_{Hh}→\alpha~_{Hh}$, perturbed Hh concentrations are given by:
 
-where λover and λSS are the morphogen characteristic lengths before and after ptc upregulation, respectively (see Figure 1a). Since βearly<βlate, then λSS<λover and ΔxSS<Δxover, that is, overshoot-dependent targets are less robust than those established by the steady-state gradient. Then, in contrast to the steady-state model (Figure 1b–d), the overshoot model predicts differences in target gene displacement upon perturbation of morphogen dosages (Figure 1b’–d’), that is, robustness is target dependent, with higher robustness predicted for col patterning due to self-enhanced ligand degradation, than for dpp patterning (Figure 1d, d’). The ratio λSS/λover in Equation 10 may be written in terms of the kinetic parameters of Hh signaling (see Equation 6):(11)ΔxSS=βoverβSSΔover=γHh_PtcPtcSS+βHhγHh_PtcPtcover+βHhΔxover≈PtcSSPtcoverΔxover.
+$$
+Hh~_{stripe}(x)=Ae^{[x+\frac{1}{\lambda_{2}}ln⁡⟮\frac{\alpha~_{Hh}}{\alpha_{Hh}}⟯]/\lambda_{2}}+Be^{−[x−\frac{1}{\lambda_{2}}ln⁡⟮\frac{\alpha~_{Hh}}{\alpha_{Hh}}⟯]/\lambda_{2}},
+$$
 
-The last approximation, which assumes that Ptc-dependent Hh degradation is much faster than other means of Hh degradation, provides an estimate of the difference in robustess for overshoot and steady-state targets as a function of Ptc levels. Note that in Equation 11, the difference in Δx between the steady state and overshoot model is independent of the specific threshold at which the Hh gradient establishes positional information. Thus, this equation provides a way to experimentally relate pattern robustness to actual patterning outputs in the system, such as Ptc expression levels (see Discusion).
+and
 
-We then asked if these results also hold in a more explicit model of the Hh pathway (Nahmad and Stathopoulos, 2009):(12)∂Hh∂t=D∂2Hh∂x2+S+(x)αHh−γHh_PtcHh×Ptc−βHhHh,(13)∂ptc∂t=S−(x)αptc0+αptcSignalmkptcm+Signalm−βptcptc,(14)∂Ptc∂t=μPtcptc−γHh_PtcHh×Ptc−βPtcPtc,(15)∂Hh_Ptc∂t=γHh_PtcHh×Ptc−βHh_PtcHh_Ptc,(16)∂Signal∂t=S−(x)αSignal(Hh_PtcPtc)nkSignaln+(Hh_PtcPtc)n−βSignalSignal,
+$$
+Hh~_{beyondPtc}(x)=Ce^{−[x−\frac{1}{\lambda_{1}}ln⁡⟮\frac{\alpha~_{Hh}}{\alpha_{Hh}}⟯]/\lambda_{1}}.
+$$
 
-where Hh, ptc, Ptc, and Hh_Ptc are the concentrations of Hh, ptc (mRNA), Ptc (protein), and the Hh-Ptc complex, respectively. The coefficients α, β, γ, and μ represent the rates of synthesis, degradation, complex formation, and translation, respectively (see Figure 2-source data 6). We used a system of coordinates centered on the AP boundary with the anterior compartment on the negative side. S+(x) [alternatively, S−(x)] is a step function of the form S+(x)=1 if x>0 (alternatively, S−(x)=1 if x<0) and zero otherwise. Signal represents the intracellular response of Hh signaling activity that activates target gene expression. The system of Equations 12–16 is subject to the following boundary and initial conditions:(17)I.C. 1ptc(x,0)=S−(x)αptc0βptc,I.C. 2Ptc(x,0)=μPtcβPtcptc(x,0)=S−(x)αptc0μPtcβptcβPtc,B. C.∂Hh∂x|x=−100=∂Hh∂x|x=100=0.
+Note that once again, all territories defined by $Hh_{beyondPtc}$ are shifted by the same amount, $\lambda_{1}ln⁡(\frac{\alpha~_{Hh}}{\alpha_{Hh}})$, upon variations in $\alpha_{Hh}$. Therefore, any two target genes whose borders are defined by different concentration thresholds will exhibit the same robustness response.
 
-We solved Equations 12–16 numerically and computed Δx (as in Equation 1) for the overshoot and steady-state Signal gradients upon a range of perturbations of the wild-type Hh production rate, αHh0 (Figure 2a). In agreement with our previous result (Figure 1), we found that the steady-state outputs are more robust than the overshoot outputs (Figure 2a). Moreover, this result holds independently of the specific choice of model parameters (Figure 2b). We conclude that higher robustness is predicted for targets specified by the steady-state gradient (col), with respect to those specified by the overshoot profile (dpp).
+### Dynamic models of Hh signaling using a single threshold for different targets predict differential robustness
+
+Previous work showed that Hh signaling in the Drosophila wing disc the anterior border of the Hh targets dpp and col are established by a single threshold at two time points during the formation of the Hh gradient; namely, at the overshoot and the steady state, respectively (Nahmad and Stathopoulos, 2009). To consider this dynamical patterning mechanism, we analyzed a simplified model which takes into accountx the temporal upregulation of ptc as a time-dependent switch function (Figure 1a). Following the overshoot model in Nahmad and Stathopoulos, 2009, we defined the overshoot gradient as the transient profile of maximum range. Since the timescale of Hh diffusion is much faster than the timescale of Ptc upregulation, we will assume that the Hh gradient reaches a pre-steady state with the first degradation rate, $\beta_{early}$, where the anterior border of dpp is approximately defined and then the real steady state with the second degradation rate, $\beta_{late}$ (Figure 1b’). Under this simple model of Hh signaling, the shift in patterning borders defined by the overshoot (i.e., dpp) and the displacement at the steady state are related by the following simple equation:
+
+$$
+Δx_{SS}=\frac{\lambda_{SS}}{\lambda_{over}}Δx_{over},
+$$
+
+where $\lambda_{over}$ and $\lambda_{SS}$ are the morphogen characteristic lengths before and after ptc upregulation, respectively (see Figure 1a). Since $\beta_{early}<\beta_{late}$, then $\lambda_{SS}<\lambda_{over}$ and $Δx_{SS}<Δx_{over}$, that is, overshoot-dependent targets are less robust than those established by the steady-state gradient. Then, in contrast to the steady-state model (Figure 1b–d), the overshoot model predicts differences in target gene displacement upon perturbation of morphogen dosages (Figure 1b’–d’), that is, robustness is target dependent, with higher robustness predicted for col patterning due to self-enhanced ligand degradation, than for dpp patterning (Figure 1d, d’). The ratio $\lambda_{SS}/\lambda_{over}$ in Equation 10 may be written in terms of the kinetic parameters of Hh signaling (see Equation 6):
+
+$$
+Δx_{SS}=\frac{\beta_{over}}{\beta_{SS}}Δ_{over}=\frac{\gamma_{Hh_Ptc}Ptc_{SS}+\beta_{Hh}}{\gamma_{Hh_Ptc}Ptc_{over}+\beta_{Hh}}Δx_{over}≈\frac{Ptc_{SS}}{Ptc_{over}}Δx_{over}.
+$$
+
+The last approximation, which assumes that Ptc-dependent Hh degradation is much faster than other means of Hh degradation, provides an estimate of the difference in robustess for overshoot and steady-state targets as a function of Ptc levels. Note that in Equation 11, the difference in $Δx$ between the steady state and overshoot model is independent of the specific threshold at which the Hh gradient establishes positional information. Thus, this equation provides a way to experimentally relate pattern robustness to actual patterning outputs in the system, such as Ptc expression levels (see Discusion).
+
+We then asked if these results also hold in a more explicit model of the Hh pathway (Nahmad and Stathopoulos, 2009):
+
+$$
+\frac{∂Hh}{∂t}=D\frac{∂^{2}Hh}{∂x^{2}}+S^{+}(x)\alpha_{Hh}−\gamma_{Hh_Ptc}Hh\timesPtc−\beta_{Hh}Hh,
+$$
+
+
+
+$$
+\frac{∂ptc}{∂t}=S^{−}(x)\alpha_{ptc0}+\frac{\alpha_{ptc}Signal^{m}}{k_{ptc}^{m}+Signal^{m}}−\beta_{ptc}ptc,
+$$
+
+
+
+$$
+\frac{∂Ptc}{∂t}=\mu_{Ptc}ptc−\gamma_{Hh_Ptc}Hh\timesPtc−\beta_{Ptc}Ptc,
+$$
+
+
+
+$$
+\frac{∂Hh_Ptc}{∂t}=\gamma_{Hh_Ptc}Hh\timesPtc−\beta_{Hh_Ptc}Hh_Ptc,
+$$
+
+
+
+$$
+\frac{∂Signal}{∂t}=\frac{S^{−}(x)\alpha_{Signal}(\frac{Hh_Ptc}{Ptc})^{n}}{k_{Signal}^{n}+(\frac{Hh_Ptc}{Ptc})^{n}}−\beta_{Signal}Signal,
+$$
+
+where $Hh$, $ptc$, $Ptc$, and $Hh_Ptc$ are the concentrations of Hh, ptc (mRNA), Ptc (protein), and the Hh-Ptc complex, respectively. The coefficients $\alpha$, $\beta$, $\gamma$, and μ represent the rates of synthesis, degradation, complex formation, and translation, respectively (see Figure 2-source data 6). We used a system of coordinates centered on the AP boundary with the anterior compartment on the negative side. $S^{+}(x)$ [alternatively, $S^{−}(x)$] is a step function of the form $S^{+}(x)=1$ if $x>0$ (alternatively, $S^{−}(x)=1$ if $x<0$) and zero otherwise. $Signal$ represents the intracellular response of Hh signaling activity that activates target gene expression. The system of Equations 12–16 is subject to the following boundary and initial conditions:
+
+$$
+I.C. 1ptc(x,0)=S^{−}(x)\frac{\alpha_{ptc0}}{\beta_{ptc}},I.C. 2Ptc(x,0)=\frac{\mu_{Ptc}}{\beta_{Ptc}}ptc(x,0)=S^{−}(x)\frac{\alpha_{ptc0}\mu_{Ptc}}{\beta_{ptc}\beta_{Ptc}},B. C.\frac{∂Hh}{∂x}|_{x=−100}=\frac{∂Hh}{∂x}|_{x=100}=0.
+$$
+
+We solved Equations 12–16 numerically and computed $Δx$ (as in Equation 1) for the overshoot and steady-state $Signal$ gradients upon a range of perturbations of the wild-type Hh production rate, $\alpha_{Hh_{0}}$ (Figure 2a). In agreement with our previous result (Figure 1), we found that the steady-state outputs are more robust than the overshoot outputs (Figure 2a). Moreover, this result holds independently of the specific choice of model parameters (Figure 2b). We conclude that higher robustness is predicted for targets specified by the steady-state gradient (col), with respect to those specified by the overshoot profile (dpp).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/85755/elife-85755-fig2-v2.jpg)
 
-**Figure 2.:** (a)  (defined as in ΔxEquation 1, but for the  function, see Materials and Methods) for overshoot (red) vs. steady-state (green) outputs upon different perturbations in Signal using the values of the parameters reported in αHhNahmad and Stathopoulos, 2009 (Figure 2—source code 2 and 3 and Figure 2—source data 1, 2, and 6). (a’)  defined and color coded as in a, for different combinations of parameter runs, when all parameters (other than Δx) are varied through a random normal distribution around the mean value with a standard deviation of 10% of the mean value (αHhFigure 2—source data 2). (b) Same as a, but for perturbations in  (αptcFigure 2—source data 3). (b’) Comparison of  for different parameters runs as in a’ for steady-state outputs (light green dots) and when Δx (dark green empty circles; αptc=0Figure 2—source data 4). (c)  defined as in a, computed for the Δx gradient over time (SignalFigure 2—source data 5). Red and green vertical lines indicate the overshoot and steady-state values corresponding to the anterior borders of dpp and col, respectively (Figure 2—source code 1).Figure 2—source code 1.Figure 2.Figure 2—source code 2.Equation 18.Figure 2—source code 3.Equations 12–17.Figure 2—source data 1.Figure 2a.Figure 2—source data 2.Figure 2a’.Figure 2—source data 3.Figure 2b.Figure 2—source data 4.Figure 2b’.Figure 2—source data 5.Figure 2c.Figure 2—source data 6.Equations 12–17 (same values as in Nahmad and Stathopoulos, 2009).
+**Figure 2.:** (a) $Δx$ (defined as in Equation 1, but for the $Signal$ function, see Materials and Methods) for overshoot (red) vs. steady-state (green) outputs upon different perturbations in $\alpha_{Hh}$ using the values of the parameters reported in Nahmad and Stathopoulos, 2009 (Figure 2—source code 2 and 3 and Figure 2—source data 1, 2, and 6). (a’) $Δx$ defined and color coded as in a, for different combinations of parameter runs, when all parameters (other than $\alpha_{Hh}$) are varied through a random normal distribution around the mean value with a standard deviation of 10% of the mean value (Figure 2—source data 2). (b) Same as a, but for perturbations in $\alpha_{ptc}$ (Figure 2—source data 3). (b’) Comparison of $Δx$ for different parameters runs as in a’ for steady-state outputs (light green dots) and when $\alpha_{ptc=0}$ (dark green empty circles; Figure 2—source data 4). (c) $Δx$ defined as in a, computed for the $Signal$ gradient over time (Figure 2—source data 5). Red and green vertical lines indicate the overshoot and steady-state values corresponding to the anterior borders of dpp and col, respectively (Figure 2—source code 1).
 
-## Robustness of steady-state outputs depends on Hh-dependent Ptc regulation
+### Robustness of steady-state outputs depends on Hh-dependent Ptc regulation
 
-Since previous work suggests that Hh-dependent ptc upregulation determines the range of the signal (Chen and Struhl, 1996), we wanted to confirm that Hh-dependent ptc regulation is responsible for the difference in robustness of Hh outputs. We perturbed the ptc production rate, αptc, and noticed that Δx computed using the steady-state Signal profile is clearly reduced, but has little effect when computed with the overshoot Signal function (green vs. red dots in Figure 2b). Once again, this result is largely independent of the choice of parameters since robustness always improves compared to the case when αptc=0 (Figure 2b’). Therefore, we suggest that Hh-dependent Ptc upregulation is responsible for differential robustness in this system by making steady-state outputs more robust with respect to overshoot-defined outputs.
+Since previous work suggests that Hh-dependent ptc upregulation determines the range of the signal (Chen and Struhl, 1996), we wanted to confirm that Hh-dependent ptc regulation is responsible for the difference in robustness of Hh outputs. We perturbed the ptc production rate, $\alpha_{ptc}$, and noticed that $Δx$ computed using the steady-state $Signal$ profile is clearly reduced, but has little effect when computed with the overshoot $Signal$ function (green vs. red dots in Figure 2b). Once again, this result is largely independent of the choice of parameters since robustness always improves compared to the case when $\alpha_{ptc}=0$ (Figure 2b’). Therefore, we suggest that Hh-dependent Ptc upregulation is responsible for differential robustness in this system by making steady-state outputs more robust with respect to overshoot-defined outputs.
 
-Prior theoretical work suggests that when positional information is established before the steady state, it enhances robustness (Bergmann et al., 2007). This idea appears to contradicts our finding that overshoot-dependent patterning (which occurs prior to steady state) is less robust than steady-state-dependent patterning (Figure 2a, b). In order to understand the relative robustness of pre-steady-state gradients, we computed Δx, upon perturbations of αHh as a function of time in our model of Hh signaling. We found that early transient states exhibit the smallest Δx and therefore are the gradients that drive the more robust outputs, although they have a very limited range (Figure 2c), in agreement with the study of Bergmann et al., 2007. Then, Δx increases as the gradient approaches the overshoot when it reaches a maximum, before it starts to decrease again toward the steady state (Figure 2c).
+Prior theoretical work suggests that when positional information is established before the steady state, it enhances robustness (Bergmann et al., 2007). This idea appears to contradicts our finding that overshoot-dependent patterning (which occurs prior to steady state) is less robust than steady-state-dependent patterning (Figure 2a, b). In order to understand the relative robustness of pre-steady-state gradients, we computed $Δx$, upon perturbations of $\alpha_{Hh}$ as a function of time in our model of Hh signaling. We found that early transient states exhibit the smallest $Δx$ and therefore are the gradients that drive the more robust outputs, although they have a very limited range (Figure 2c), in agreement with the study of Bergmann et al., 2007. Then, $Δx$ increases as the gradient approaches the overshoot when it reaches a maximum, before it starts to decrease again toward the steady state (Figure 2c).
 
-## col expression is more robust than dpp expression in the Drosophila wing disc
+### col expression is more robust than dpp expression in the Drosophila wing disc
 
-We then proceeded to test experimentally whether Hh targets are diferentially robust to changes in Hh dosage as predicted by the overshoot model. Previous studies showed that the width of the col domain is largely unaffected in hh heterozygous wing discs (Irons et al., 2010; Hatori et al., 2021). To investigate if this robustness property also holds for dpp, which is established by the overshoot (Nahmad and Stathopoulos, 2009), we examined the patterns of col (using a Col antibody) and dpp (using a dpplacZ reporter) in discs carrying 1 or 2 copies of hh (referred as hh(+/−) and hh(+/+), respectively). We found that the width of the Col pattern in hh(+/−) mutant discs is reduced by 1.66 μm relative to hh(+/+) wild-type discs (Figure 3a, b, e). Although this difference is statistically significant, it is less than the average diameter of a single cell (about 2.5 μm) and therefore, it confirms previous experimental findings (Irons et al., 2010; Hatori et al., 2021). However, the pattern of dppLacZ is reduced by 4.44 μm in hh(+/−) discs relative to hh(+/+) controls (Figure 3c–e). This result does not depend on the size of the wing disc, since the pouch area in both, hh(+/−) and hh(+/+) discs are approximately the same (Figure 3—figure supplement 1), nor on the threshold used to measure the width of the patterns (see Figure 3—figure supplement 2). We conclude that, in agreement with the overshoot model of Hh signaling, but not with any of the steady-state models, the pattern width of Col is more robust than the pattern width of anterior dppLacZ.
+We then proceeded to test experimentally whether Hh targets are diferentially robust to changes in Hh dosage as predicted by the overshoot model. Previous studies showed that the width of the col domain is largely unaffected in hh heterozygous wing discs (Irons et al., 2010; Hatori et al., 2021). To investigate if this robustness property also holds for dpp, which is established by the overshoot (Nahmad and Stathopoulos, 2009), we examined the patterns of col (using a Col antibody) and dpp (using a dpplacZ reporter) in discs carrying 1 or 2 copies of hh (referred as hh(+/−) and hh(+/+), respectively). We found that the width of the Col pattern in hh(+/−) mutant discs is reduced by 1.66 $μm$ relative to hh(+/+) wild-type discs (Figure 3a, b, e). Although this difference is statistically significant, it is less than the average diameter of a single cell (about 2.5 μm) and therefore, it confirms previous experimental findings (Irons et al., 2010; Hatori et al., 2021). However, the pattern of dppLacZ is reduced by 4.44 μm in hh(+/−) discs relative to hh(+/+) controls (Figure 3c–e). This result does not depend on the size of the wing disc, since the pouch area in both, hh(+/−) and hh(+/+) discs are approximately the same (Figure 3—figure supplement 1), nor on the threshold used to measure the width of the patterns (see Figure 3—figure supplement 2). We conclude that, in agreement with the overshoot model of Hh signaling, but not with any of the steady-state models, the pattern width of Col is more robust than the pattern width of anterior dppLacZ.
 
-## The overshoot model predicts higher precision in the establishment of the dpp border than would be expected from the classical steady-state model
+![Figure 3.](https://cdn.elifesciences.org/articles/85755/elife-85755-fig3-v2.jpg)
 
-Our findings that the width of dpp is less robust than the width of col in agreement with the overshoot model is puzzling. Why would Hh patterning uses a dynamic mechanism that patterns dpp at the time of least robustness (Figure 2c)? Why would col and dpp have different robustness properties (Figures 1d, 2a, and 3)? We wondered if this dynamical model trades off one patterning advantage over another in a target-specific manner. Morphogen concentrations are naturally noisy, which may cause territories to have a diffuse border especially when the morphogen narrowly declines due to self-dependent ligand degradation (Lander et al., 2009). In particular, we noticed that if dpp had to be specified by the steady-state gradient subject to Ptc-dependent degradation, instead that with the overshoot gradient, it would have to be specified at a location where the Hh gradient is nearly flat (Figure 4a). But at this same location, the Hh gradient is not as flat (Figure 4b). Therefore, we predicted that the overshoot model would establish a more precise dpp anterior boundary compared to a steady-state model, suggesting that the dynamic interpretation of Hh signaling would trade off robustness for precision. Therefore, we analyzed the performance of the overshoot and steady-state models at specifying the sharpness of a pattern boundary. We defined a measure of precision, σx, for an experimental or simulated pattern boundary as the standard deviation of different measurements along the extension of the pattern (Figure 4c). Evidently, perfect precision occurs for σx=0, when the pattern would be completely sharp. In contrast, as σx increases, the less precise the pattern boundary is.
+**Figure 3.:** (a-d) Representative third-instar wild-type, hh(+/+) (a, c), and hh heterozygous hh(+/−) (b, d) wing discs immunostained with Col (a, b) and β-galactosidase (c, d) antibodies. Both hh(+/+) and hh(+/−) flies carry a transgene with a dppLacZ enhancer trap, so β-galactosidase marks the pattern of dpp expression. The scale bars in a, a’ apply to b, b’; c, c’; and d, d’ panels, respectively. (a’-d’) Enlarged areas of the white boxes shown in (a-d). (e) Widths of the col and dppLacZ patterns (color coded as in a–d) measured in the region marked by the white rectangle (see Figure 3—source data 1 and Figure 3—source code 1). The brackets on the right represent the difference between the medians of both groups. A non-parametric Mann–Whitney U test was applied in both cases (Figure 3—source data 1). Statistical p-values are $3.0\times10^{−4}$ for Col (**) and $6.0\times10^{−3}$ for dppLacZ (***). hh(+/−) discs (n = 14). hh(+/+) discs (n = 23). See Figure 3—source code 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85755/elife-85755-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The pouch area was calculated as the area enclosed by the hinge-pouch folds. Statistical p-value after a Student t-test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/85755/elife-85755-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Width of the gene patterns measured at different threshold concentrations measured as in Figure 3e (color coding is as in Figure 3). Numbers at the top are the differences between medians of both groups. **** indicates that p-values after a non-parametric Mann-Whitney U test are less than 0.00005.
+
+### The overshoot model predicts higher precision in the establishment of the dpp border than would be expected from the classical steady-state model
+
+Our findings that the width of dpp is less robust than the width of col in agreement with the overshoot model is puzzling. Why would Hh patterning uses a dynamic mechanism that patterns dpp at the time of least robustness (Figure 2c)? Why would col and dpp have different robustness properties (Figures 1d, 2a, and 3)? We wondered if this dynamical model trades off one patterning advantage over another in a target-specific manner. Morphogen concentrations are naturally noisy, which may cause territories to have a diffuse border especially when the morphogen narrowly declines due to self-dependent ligand degradation (Lander et al., 2009). In particular, we noticed that if dpp had to be specified by the steady-state gradient subject to Ptc-dependent degradation, instead that with the overshoot gradient, it would have to be specified at a location where the Hh gradient is nearly flat (Figure 4a). But at this same location, the Hh gradient is not as flat (Figure 4b). Therefore, we predicted that the overshoot model would establish a more precise dpp anterior boundary compared to a steady-state model, suggesting that the dynamic interpretation of Hh signaling would trade off robustness for precision. Therefore, we analyzed the performance of the overshoot and steady-state models at specifying the sharpness of a pattern boundary. We defined a measure of precision, $\sigma_{x}$, for an experimental or simulated pattern boundary as the standard deviation of different measurements along the extension of the pattern (Figure 4c). Evidently, perfect precision occurs for $\sigma_{x}=0$, when the pattern would be completely sharp. In contrast, as $\sigma_{x}$ increases, the less precise the pattern boundary is.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/85755/elife-85755-fig4-v2.jpg)
 
-**Figure 4.:** dpp than the steady-state model.(a, b). Representation of the steady-state (a) and overshoot (b) Hh gradients. At the location of the dpp anterior border, the slope of the gradient is steeper for the overshoot gradient than for the steady-state gradient. (c) Schematic representation of how we define our measure of precision for a patterning border (both in experimental and in simulated patterns). First, a box defines the region of interest (ROI) in the pattern. Then, this ROI is subdivided in  boxes, each of which define a position n. The measure of precision is the standard deviation of all the xi values. (xid, e) Representative Col (d) and dppLacZ (e) patterns in which the  for each ROI as defined in c is measured and marked with an asterisk along the anterior border. (xif) Quantification of  in several experimental (exp) and simulated (sim) patterns of σxcol (green) and dpp (red). In the simulated patterns, noise levels are adjusted so that the distributions of col are not statistically significant and these noise levels are used to computed the simulated  of σxdpp as determined by the steady state (ss) or overshot (over) models. exp sample sizes as in Figure 3. sim sample sizes is n = 50 in all cases. For the statistical comparison, a Mann–Whitney U tests were applied in all cases. Statistical p-value for col was . For experimental vs. overshoot p=0.42dpp:  (**), and for experimental vs. simulated steady-state p=1.0×10−3dpp:  (**).p=9.0×10−3Figure 4—source code 1.Figure 4.Figure 4—source data 1.Figure 4f.
+**Figure 4.:** (a, b). Representation of the steady-state (a) and overshoot (b) Hh gradients. At the location of the dpp anterior border, the slope of the gradient is steeper for the overshoot gradient than for the steady-state gradient. (c) Schematic representation of how we define our measure of precision for a patterning border (both in experimental and in simulated patterns). First, a box defines the region of interest (ROI) in the pattern. Then, this ROI is subdivided in $n$ boxes, each of which define a position $x_{i}$. The measure of precision is the standard deviation of all the $x_{i}$ values. (d, e) Representative Col (d) and dppLacZ (e) patterns in which the $x_{i}$ for each ROI as defined in c is measured and marked with an asterisk along the anterior border. (f) Quantification of $\sigma_{x}$ in several experimental (exp) and simulated (sim) patterns of col (green) and dpp (red). In the simulated patterns, noise levels are adjusted so that the distributions of col are not statistically significant and these noise levels are used to computed the simulated $\sigma_{x}$ of dpp as determined by the steady state (ss) or overshot (over) models. exp sample sizes as in Figure 3. sim sample sizes is n = 50 in all cases. For the statistical comparison, a Mann–Whitney U tests were applied in all cases. Statistical p-value for col was $p=0.42$. For experimental vs. overshoot dpp: $p=1.0\times10^{−3}$ (**), and for experimental vs. simulated steady-state dpp: $p=9.0\times10^{−3}$ (**).
 
-We first measured σx at the anterior border of col and dpp in hh(+/+) wing discs reported in Figure 3. We found that col is about twice more precise than dpp (Figure 4d–f). Then, we compared the precision of the anterior border in simulated patterns of col and dpp (as defined both by the overshoot and steady-state gradients). To do so, we introduced Gaussian noise in the threshold T at which the Signal function establishes a patterning position (see Materials and methods). Since the mechanism that sets the anterior border of the col pattern is the same in both the overshoot and steady-state interpretations, we fitted the extent of noise in the threshold T such that the precision of the simulated border of col is the same as the one we measured in the experimental pattern (σx = 1.23 μm). At this extent of noise in T, we compared the simulated border of dpp defined by the overshoot (dppover) and steady-state models (dppSS). We found that under the overshoot model, the anterior border of dpp is predicted to be more precise than under the steady-state model (Figure 4f). Indeed, the overshoot model predicts a sharper border to what is observed experimentally, but this is not biologically significant since σx is less than one cell diameter in both cases. However, the mean of σx for the simulated dpp border under the steady-state model is 4.36 μm, suggesting that if the anterior border of dpp was established by a steady-state gradient, it would have an imprecision of approximately two cell diameters, which could have some patterning impact in the adult wing (see Discussion).
+We first measured $\sigma_{x}$ at the anterior border of col and dpp in hh(+/+) wing discs reported in Figure 3. We found that col is about twice more precise than dpp (Figure 4d–f). Then, we compared the precision of the anterior border in simulated patterns of col and dpp (as defined both by the overshoot and steady-state gradients). To do so, we introduced Gaussian noise in the threshold $T$ at which the Signal function establishes a patterning position (see Materials and methods). Since the mechanism that sets the anterior border of the col pattern is the same in both the overshoot and steady-state interpretations, we fitted the extent of noise in the threshold $T$ such that the precision of the simulated border of col is the same as the one we measured in the experimental pattern ($\sigma_{x}$ = 1.23 $μm$). At this extent of noise in $T$, we compared the simulated border of $dpp$ defined by the overshoot ($dpp_{over}$) and steady-state models ($dpp_{SS}$). We found that under the overshoot model, the anterior border of $dpp$ is predicted to be more precise than under the steady-state model (Figure 4f). Indeed, the overshoot model predicts a sharper border to what is observed experimentally, but this is not biologically significant since $\sigma_{x}$ is less than one cell diameter in both cases. However, the mean of $\sigma_{x}$ for the simulated dpp border under the steady-state model is 4.36 μm, suggesting that if the anterior border of dpp was established by a steady-state gradient, it would have an imprecision of approximately two cell diameters, which could have some patterning impact in the adult wing (see Discussion).
 
 ## Discussion
 
@@ -106,32 +194,104 @@ Relative to the classical view of morphogen interpretation, in which different m
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/85755/elife-85755-fig5-v2.jpg)
 
-**Figure 5.:** In the steady-state interpretation, all the target genes are established with the same robustness () upon perturbations in the amount of ligand. In the overshoot model interpretation one of the target genes (red) is established with less robustness than the other (green). However, it allows the less robust gene to be defined with greater precision than the steady state would define it (compare the sharpness of the boundaries of these patterns).Δx
+**Figure 5.:** In the steady-state interpretation, all the target genes are established with the same robustness ($Δx$) upon perturbations in the amount of ligand. In the overshoot model interpretation one of the target genes (red) is established with less robustness than the other (green). However, it allows the less robust gene to be defined with greater precision than the steady state would define it (compare the sharpness of the boundaries of these patterns).
 
-The finding that the displacement of the anterior borders of Hh targets is more than twice for dpp than for col (≈2.65, from their median values; Figure 3e) provides a interesting prediction about the overshoot gradient. From Equation 11, it can be inferred that the overshoot occurs when Ptc expressions is about twice its basal levels in the anterior compartment, but estimates suggest that Ptc reaches about seven times its basal levels in Ptc domain (Casali and Struhl, 2004). This suggests that the overshoot occurs significantly earlier than Ptc reaches its steady-state levels and that Ptc is produced at much larger amounts than what actually is needed to control the range of the Hh gradient. But since unbound Ptc represses Hh signaling, perhaps the purpose of building very high levels of Ptc is to desensitize Hh signaling over time as has been proposed for the vertebrate neural tube (Dessaud et al., 2008).
+The finding that the displacement of the anterior borders of Hh targets is more than twice for dpp than for col ($≈2.65$, from their median values; Figure 3e) provides a interesting prediction about the overshoot gradient. From Equation 11, it can be inferred that the overshoot occurs when Ptc expressions is about twice its basal levels in the anterior compartment, but estimates suggest that Ptc reaches about seven times its basal levels in Ptc domain (Casali and Struhl, 2004). This suggests that the overshoot occurs significantly earlier than Ptc reaches its steady-state levels and that Ptc is produced at much larger amounts than what actually is needed to control the range of the Hh gradient. But since unbound Ptc represses Hh signaling, perhaps the purpose of building very high levels of Ptc is to desensitize Hh signaling over time as has been proposed for the vertebrate neural tube (Dessaud et al., 2008).
 
 Why does this patterning system is wired to ensure robustness for the col border, but favors precision over robustness for dpp? In the Drosophila wing, the expression of col defines directly a specific feature in the adult wing, the L3–L4 intervein area (Vervoort et al., 1999), which corresponds to the more central area of the wing, whereas the dpp pattern does not have a direct positional role in the adult wing, but it acts as the source of another morphogen. As suggested by prior theoretical work, the source where a morphogen is produced does not have a significant impact on patterning (Mizutani et al., 2006), so the robustness of the dpp pattern may not subject to strong selection pressure during evolution, or perhaps other mechanisms downstream of Hh signaling exist to provide robustness at the level of Dpp signaling (Aguilar-Hidalgo et al., 2018; Romanova-Michaelides et al., 2022). In contrast, in the adult wing of Drosophila, precision could have a direct role on the sharpness of vein patterning. Thus, robustness ensures the correct positioning of veins whereas precision may be related to ensure straight veins. While it is unclear if a more imprecise dpp pattern would impact the straightness of veins 2 and 5 which are positioned by Dpp signaling, it suggests that in general, the overshoot model ensures robust positioning close to the morphogen source, but prioritize straightness of stripe-like patterns over positioning in more distant locations. Given that Ptc-dependent Hh degradation is evolutionary conserved (Chen and Struhl, 1996), our findings could have implications for robust and precise patterning in other systems as well.
 
 ## Materials and methods
 
-## Fly stocks and crosses
+**Key resources table**
 
-Fly crosses were conducted at 25°C. For experiments using one copy of hh [hh(+/-)] (Figure 3), ry[506],hh[AC]/TM3,Sb[1] flies (Bloomington Drosophila Stock Center, BDSC, #1749) were crossed to cn[1],dpp10638/CyO (BDSC # 12379) flies at 25°C to obtain cn[1],dpp[10638]/+; ry[506],hh[AC]/ry[506] discs. hh[AC] is a lost of function hh allele and dpp10638 is a transgene containing a LacZ reporter that drives nuclear β-galactosidase in the location of the dpp gene. Control discs with two copies of hh [hh(+/+)] are obtained from crossing the dppLacZ reporter stock to wild-type flies.
 
-## Wing imaginal disc dissection and immunostaining
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (Drosophila melanogaster)</td>
+      <td>hh(+/−) allele</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>1749</td>
+      <td>ry[506] hh[AC]/TM3, Sb. hh[AC] is an amorphic allele</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (Drosophila melanogaster)</td>
+      <td>dppLacZ</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>12379</td>
+      <td>cn[1] dpp[10638]/CyO; ry[506]. dpp[10638] is a lacZ is a dpp enhancer trap.</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-Col (mouse monoclonal)</td>
+      <td>Gift from M. Crozatier Vervoort et al., 1999</td>
+      <td></td>
+      <td>1:250; overnight incubation</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-β-gal (rabbit polyclonal)</td>
+      <td>MP Biomedicals</td>
+      <td>Cat. # 55976</td>
+      <td>1:250; overnight incubation</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Python</td>
+      <td>this paper</td>
+      <td>pandas; numpy;OpenCV;matplotlib;seaborn;odeint;solve_bvp</td>
+      <td>Customized source codes (available from this paper)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks and crosses
+
+Fly crosses were conducted at 25°C. For experiments using one copy of hh [hh(+/-)] (Figure 3), ry[506],hh[AC]/TM3,Sb[1] flies (Bloomington Drosophila Stock Center, BDSC, #1749) were crossed to cn[1],dpp10638/CyO (BDSC # 12379) flies at 25°C to obtain cn[1],dpp[10638]/$+$; ry[506],hh[AC]/ry[506] discs. hh[AC] is a lost of function hh allele and dpp10638 is a transgene containing a LacZ reporter that drives nuclear β-galactosidase in the location of the dpp gene. Control discs with two copies of hh [hh(+/+)] are obtained from crossing the dppLacZ reporter stock to wild-type flies.
+
+### Wing imaginal disc dissection and immunostaining
 
 Wing imaginal discs were dissected from third-instar larvae. Third-instar larvae were dissected under a stereoscopic microscope and fixed in PEM-T (PEM with 0.1% of Triton X-100) with 4% paraformaldehyde, washed three times, and blocked in PEM-T with 0.5% of bovine serum albumin for 2 hr at room temperature. Then, samples were stained with primary antibodies at 4°C overnight at the following dilutions: monoclonal mouse anti-Col (a gift from M. Crozatier, 1:250), rabbit anti-β-gal (MP Biomedicals, Cat. # 55976, 1:250). Primary antibodies were detected with Alexa Fluor 488 anti-mouse and Alexa Fluor 555 anti-rabbit secondary antibodies (1:1000). Imaging was done in a Leica TC5 SP8 confocal microscope using a 40× oil-immersion objective.
 
-## Numerical simulations
+### Numerical simulations
 
-For computations in Figure 2, a Forward-in-Time-Centered-in-Space (FTCS) algorithm (using space and time steps of 1 μm and time steps of 0.5s, respectively) was implemented to solve Equations 12–16 in Python, using the parameters reported by Nahmad and Stathopoulos, 2009. At the steady state, the equations can be reduced to a single equation in each compartment (Nahmad and Stathopoulos, 2009):(18)Dd2HhSSdx2+S+(x)αHh−χS−(x)HhSSγHh_PtcHh+βPtc[αptc0+αptcHhSSnmηm(kn+HhSSnm)+S−(x)HhSSnm]−βHhHhSS=0,
+For computations in Figure 2, a Forward-in-Time-Centered-in-Space (FTCS) algorithm (using space and time steps of $1 μm$ and time steps of $0.5s$, respectively) was implemented to solve Equations 12–16 in Python, using the parameters reported by Nahmad and Stathopoulos, 2009. At the steady state, the equations can be reduced to a single equation in each compartment (Nahmad and Stathopoulos, 2009):
 
-wherek=kSignalβHh_PtcγHh_Ptc,η=kptcβSignalαSignal,χ=μPtcγHh_Ptcβptc.
+$$
+D\frac{d^{2}Hh_{SS}}{dx^{2}}+S^{+}(x)\alpha_{Hh}−\frac{χS^{−}(x)Hh_{SS}}{\gamma_{Hh_Ptc}Hh+\beta_{Ptc}}[\alpha_{ptc0}+\frac{\alpha_{ptc}Hh_{SS}^{nm}}{η^{m}(k^{n}+Hh_{SS}^{n}^{m})+S^{−}(x)Hh_{SS}^{nm}}]−\beta_{Hh}Hh_{SS}=0,
+$$
 
-The steady-state Equation 18 was solved using solve_bvp and solve_ivp from scipy.integrate Python package. Plots were made with matplotlib and seaborn libraries of Python (see Figure 3—source code 1 and Figure 4—source code 1). To compute Δx as defined in Equation 1 in Figure 2, we used 0.2 of the maximum value of the Signal function and numerically solved for corresponding location x.
+where
 
-For simulations of col and dppSS patterns in Figure 4, we considered an exponential decay gradient of Hh, like obtained with the simple model in Figure 1, evaluated on a matrix of 80×50. Patterns were determined by the position defined by the threshold T of 20% of the maximum Signal value (with a Gaussian noise with mean T and standard deviation determined in such a way that noise of simulated col coincides width background distribution noise of experimental col pattern, i.e., 1.23 μm). For dppover, we used numerical solution of Signal overshoot (i.e., the Signal function at the time of maximum range) to fit a Hill function, AHhnkn+Hhn, using the function fit_curve of scipy.optimize. We found A=0.2372, k=0.0483, and n=4.6212. Then, we used the approximation function of Signal overshoot to evaluate an exponential decay gradient of Hh overshoot and made an analysis analogous to what was done at the steady state. We measure the width of the pattern at 0.2 of the profile maximun obtained through a vertical projection of the simulated pattern.
+$$
+k=\frac{k_{Signal}\beta_{Hh_Ptc}}{\gamma_{Hh_Ptc}},
+$$
 
-## Image analysis
+
+
+$$
+η=\frac{k_{ptc}\beta_{Signal}}{\alpha_{Signal}},
+$$
+
+
+
+$$
+χ=\frac{\mu_{Ptc}\gamma_{Hh_Ptc}}{\beta_{ptc}}.
+$$
+
+The steady-state Equation 18 was solved using solve_bvp and solve_ivp from scipy.integrate Python package. Plots were made with matplotlib and seaborn libraries of Python (see Figure 3—source code 1 and Figure 4—source code 1). To compute $Δx$ as defined in Equation 1 in Figure 2, we used 0.2 of the maximum value of the $Signal$ function and numerically solved for corresponding location $x$.
+
+For simulations of col and $dpp_{SS}$ patterns in Figure 4, we considered an exponential decay gradient of Hh, like obtained with the simple model in Figure 1, evaluated on a matrix of $80\times50$. Patterns were determined by the position defined by the threshold $T$ of 20% of the maximum $Signal$ value (with a Gaussian noise with mean $T$ and standard deviation determined in such a way that noise of simulated col coincides width background distribution noise of experimental col pattern, i.e., 1.23 μm). For $dpp_{over}$, we used numerical solution of $Signal$ overshoot (i.e., the $Signal$ function at the time of maximum range) to fit a Hill function, $A\frac{Hh^{n}}{k^{n}+Hh^{n}}$, using the function fit_curve of scipy.optimize. We found $A=0.2372$, $k=0.0483$, and $n=4.6212$. Then, we used the approximation function of $Signal$ overshoot to evaluate an exponential decay gradient of Hh overshoot and made an analysis analogous to what was done at the steady state. We measure the width of the pattern at 0.2 of the profile maximun obtained through a vertical projection of the simulated pattern.
+
+### Image analysis
 
 For image analysis, we took the Z projection of the confocal images using ImageJ. 16-bit resolution images were saved in TIF format and then processed to measure the width of the fluorescence patterns using OpenCv library of Python. We normalized the intensity values after dividing them by the maximum intensity value and then we measured the width of each pattern domain at 0.2 of relative intensity (in Figure 3—figure supplement 2 we varied this threshold value from 0.1 to 0.6). Graphs were plotted with matplotlib and seaborn libraries of Python (see Source code for each panel of Figure 2). The same images were used to measure robustness (Figure 3) and precision (Figure 4).

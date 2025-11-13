@@ -27,7 +27,88 @@ Initial reports calling for the inclusion of females in research and which descr
 
 In 2009, Beery and Zucker conducted a bibliometric analysis of 841 articles from high-impact journals, across ten biological disciplines which quantified the extent of male-bias in research and a noted lack of sex-based analyses when males and females were both included as research subjects (Beery and Zucker, 2011). We recapitulated the work of Beery and Zucker utilizing a similar bibliometric analysis of 720 journal articles, corresponding to nine of the original disciplines and 34 journals surveyed in 2009 (Table 1).
 
-## Subject sex across disciplines
+**Table 1.**
+ Journals surveyed by subject area in 2009 and 2019.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Discipline</th>
+      <th>Journal A</th>
+      <th>Journal B</th>
+      <th>Journal C</th>
+      <th>Journal D</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PLoS Biology</td>
+      <td>Proceedings of the Royal Society B: Biological Sciences</td>
+      <td>Nature</td>
+      <td>Science</td>
+      <td>General Biology</td>
+    </tr>
+    <tr>
+      <td>Journal of Immunology</td>
+      <td>Infection and Immunity</td>
+      <td>Immunity</td>
+      <td>Vaccine</td>
+      <td>Immunology</td>
+    </tr>
+    <tr>
+      <td>Journal of Neuroscience</td>
+      <td>Neuroscience</td>
+      <td>The Journal of Comparative Neurology</td>
+      <td>Nature Neuroscience</td>
+      <td>Neuroscience</td>
+    </tr>
+    <tr>
+      <td>Journal of Physiology (London)</td>
+      <td>American Journal of Physiology – Renal Physiology</td>
+      <td>American Journal of Physiology – Gastrointestinal and Liver Physiology</td>
+      <td>American Journal of Physiology – Heart and Circulatory Physiology</td>
+      <td>Physiology</td>
+    </tr>
+    <tr>
+      <td>Neuropsycho- pharmacology</td>
+      <td>Journal of Psychopharma- cology</td>
+      <td>The Journal of Pharmacology and Experimental Therapeutics</td>
+      <td>British Journal of Pharmacology</td>
+      <td>Pharmacology</td>
+    </tr>
+    <tr>
+      <td>Biology of Reproduction</td>
+      <td>Reproduction</td>
+      <td></td>
+      <td></td>
+      <td>Reproduction</td>
+    </tr>
+    <tr>
+      <td>European Journal of Endocrinology</td>
+      <td>Journal of Neuroendo- crinology</td>
+      <td>Endocrinology</td>
+      <td>American Journal of Physiology – Endocrinology and Metabolism</td>
+      <td>Endocrinology</td>
+    </tr>
+    <tr>
+      <td>Journal of Comparative Psychology</td>
+      <td>Behavioral Neuroscience</td>
+      <td>Physiology and Behavior</td>
+      <td>Hormones and Behavior</td>
+      <td>Behavioral Physiology</td>
+    </tr>
+    <tr>
+      <td>Behavioral Ecology and Sociobiology</td>
+      <td>Animal Behaviour</td>
+      <td>Animal Cognition</td>
+      <td>Behavioral Ecology</td>
+      <td>Behavior</td>
+    </tr>
+  </tbody>
+</table>
+
+### Subject sex across disciplines
 
 In 2019, 49% (n = 356) of studies reported using both male and female research subjects, resulting in a significant increase in sex inclusion demographics compared to 28% of articles surveyed 2009 (n = 232, p<0.0001; Figure 1A). Six of the nine disciplines demonstrated a significant increase in the use of both sexes (Figure 1). Between 2009 and 2019, the largest increases in sex-inclusive studies were seen in the fields of neuroscience (29% vs. 63%, p<0.0001) and immunology (16% vs. 46%, p<0.0001), followed by endocrinology (30% vs. 56%, p=0.001), general biology (34% vs. 59%, p=0.002), physiology (13% vs. 36%, p=0.001), and behavioral physiology (43% vs. 61%, p=0.018). In reproduction, single-sex studies remained the norm, and studies of both males and females increased only marginally (10% vs. 14%, p=0.35), while the number of female only research studies increased, corresponding to a female to male subject ratio of 1.6:1 in 2009 to 3.6:1 in 2019. Behavior remained the most inclusive biological discipline with 70% and 81% of studies reporting the use of both sexes in 2009 and 2019, respectively, largely driven by sex-inclusive field studies. Pharmacology was the only field to trend downward with 29% of articles reporting the use of both sexes in 2019 compared to 33% in 2009 (p=0.607). Likewise, there was an increase in the male to female subject ratio from 5:1 in 2009 to 5.8:1 in 2019.
 
@@ -35,11 +116,11 @@ In 2019, 49% (n = 356) of studies reported using both male and female research
 
 **Figure 1.:** (A). The proportion of articles surveyed in 2009 and 2019 which utilized male subjects, female subjects, both male and female subjects, or those that did not specify the sex of the subjects. Data are presented by individual biological discipline as well as by the sum of all nine disciplines. (B). The percentage of articles surveyed in 2009 and 2019 which utilized both male and female subjects and conducted sex-based analyses, either by including sex as a covariate or by subgroup analyses. Data are presented by individual biological discipline as well as by the sum of all nine disciplines. The source data for this figure are in Supplementary file 1.
 
-## Sex based analyses by discipline
+### Sex based analyses by discipline
 
 For articles that reported the inclusion of both sexes in 2019, data were collected on whether or not the authors conducted sex-based analyses. Out of 356 of the journal articles which used both sexes in 2019, only 42% analyzed data by sex, compared to 50% in 2009 (n = 117, p=0.3; Figure 1B). Pharmacology was the only biological discipline to demonstrate a significant increase in sex-based analyses from 19% in 2009 to 48% in 2019 (p=0.033; Figure 1B).
 
-## Description of sample size by sex across disciplines
+### Description of sample size by sex across disciplines
 
 For articles that reported the inclusion of both sexes in 2019, data were collected on whether the authors provided a description of the sample size (n) by sex. Out of the 356 articles that used both sexes, 27% failed to provide a description of the sample size by sex (Figure 2A). Neuroscience articles failed to provide a description of the sample size by sex 52% (n = 26) of the time, along with general biology at 47% (n = 22) and immunology at 43% (n = 19).
 
@@ -47,7 +128,7 @@ For articles that reported the inclusion of both sexes in 2019, data were collec
 
 **Figure 2.:** (A). The percentage of articles which utilized both male and female subjects and provided a description of the sample size by sex. Data are presented by individual biological discipline as well as by the sum of all nine disciplines. (B). Categorization of articles which provided rationale for single sex-studies or the lack of sex-based analyses (n = 30) into seven distinct themes. Each theme includes representative rationale derived from the experimental methods. The source data for this figure are in Supplementary file 1.
 
-## Rationale for single sex studies or lack of sex-based analyses
+### Rationale for single sex studies or lack of sex-based analyses
 
 For all 720 articles analyzed in 2019, data were collected on whether the authors provided a justification for the use of a single sex or rationale for the lack of sex-based analyses. Thirty articles included a range of explanations related to sex-inclusion and sex-based analyses (Figure 2B). Justifications for single sex studies included: a priori knowledge of sex-differences or sex-specific effects (n = 9), the potential for increased experimental variability (n = 8), experimental conditions which limited the use of both sexes (n = 4) and difficulties in animal husbandry (n = 2). Rationale for the lack of sex-based analyses included: limited sample sizes to determine statistical significance (n = 4) or an inability to determine the sex of the subject (n = 3). Only two studies specified that the authors did not identify any sex differences, so the dataset was analyzed in aggregate.
 

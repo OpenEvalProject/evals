@@ -11,10 +11,10 @@
 
 ### Affiliations
 
-1. https://ror.org/013meh722 Wellcome-MRC Institute of Metabolic Science, University of Cambridge Cambridge United Kingdom
-2. https://ror.org/01nrxwf90 Centre for Discovery Brain Sciences, School of Biomedical Sciences, University of Edinburgh Edinburgh United Kingdom
-3. https://ror.org/01nrxwf90 Simons Initiative for the Developing Brain, University of Edinburgh Edinburgh United Kingdom
-4. https://ror.org/00dvg7y05 Rosamund Stone Zander Translational Neuroscience Center, F.M. Kirby Center, Boston Children’s Hospital, Harvard Medical School Boston United States
+1. Wellcome-MRC Institute of Metabolic Science, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+2. Centre for Discovery Brain Sciences, School of Biomedical Sciences, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+3. Simons Initiative for the Developing Brain, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+4. Rosamund Stone Zander Translational Neuroscience Center, F.M. Kirby Center, Boston Children’s Hospital, Harvard Medical School Boston United States ([ROR:00dvg7y05](https://ror.org/00dvg7y05))
 
 † Corresponding author
 
@@ -42,11 +42,11 @@ We first examined sex-specific differences in how the neocortex adapts to food r
 
 **Figure 1.:** (A) Animal weight across time. (B) Daily food intake (two-way analysis of variance [ANOVA]: CTR male vs. FR male; t = 4.81; df = 25; p < 0.0001; CTR male vs. CTR female; t = 0.013; df = 25; p = 0.99; CTR female vs. FR female; t = 6.59; df = 25; p < 0.0001; FR male vs. FR female; t = 1.93; df = 25; p = 0.07; n = 8 CTR males, 8 FR males, 7 CTR females, and 7 FR females). Percent reduction of food intake for food restriction is shown in red for each sex. (C) Animal weight (two-way ANOVA: CTR male vs. FR male; t = 11.36; df = 25; p < 0.0001; CTR female vs. FR female; t = 8.36; df = 25; p < 0.0001; n = 17 CTR males and 19 FR males; 23 CTR females and 11 FR females). (D) Serum leptin levels (two-way ANOVA: CTR male vs. FR male; t = 4.58; df = 66; p < 0.0001; CTR females vs. FR females; t = 1.00; df = 66; p = 0.32; n = 17 CTR males and 19 FR males; 23 CTR females and 11 FR females). (E) Left: AMP-activated protein kinase (AMPK) Thr172 phosphorylation, normalized by total AMPK, in primary visual cortex (V1) tissue (two-way ANOVA: CTR male vs. FR male; t = 2.28; df = 39; p = 0.022; CTR female vs. FR female; t = 0.64; df = 39; p = 0.11; n = 11 CTR males, 15 FR males, 11 CTR females, and 6 FR females). Right: Peroxisome proliferator-activated receptor alpha (PPARα) activity in V1 tissue, as assessed by levels of DNA binding, normalized to protein level (two-way ANOVA: CTR male vs. FR male; t = 4.81; df = 30; p = 0.013; CTR female vs. FR female; t = 0.0016; df = 30; p = 0.99; n = 5 CTR males, 11 FR males, n = 9 CTR females, and 9 FR females). ***p < 0.0001; *p < 0.05; n.s. = not significant. Error bars are standard error of the mean (SEM).
 
-## Sex-specific impact of food restriction on weight loss and fat mass-regulated hormone leptin
+### Sex-specific impact of food restriction on weight loss and fat mass-regulated hormone leptin
 
 Prior to food restriction, we found that both males and females consumed the same ad libitum daily food intake, despite females weighing approximately 80% of age-matched males (weight: male vs. female; 27.82 g [95% confidence interval, CI: 26.84–28.79 g] vs. 23.21 g [95% CI: 22.35–24.07 g]; t = 7.58; df = 66; p < 0.001; n = 8 male and 7 female mice). Critically, we found that to achieve a similar magnitude (15%) and rate of weight loss in both sexes we had to impose a 40% greater restriction of daily food intake in females (average of 39% of ad libitum intake; n = 7 mice) compared to males (27% of ad libitum intake; n = 8 mice) (Figure 1B, C). This is consistent with previous studies demonstrating that female mice are more resistant to weight loss than male (Andersson et al., 1991; Cortright and Koves, 2000; Volek et al., 2004; McCarthy and Berg, 2021; Tirosh et al., 2015; Suchacki et al., 2023). Moreover, for similar bodyweight loss (15%) maintained over 2–3 weeks, serum leptin levels, which reflect fat mass, were markedly and significantly decreased (−72%) in males (leptin: CTR male vs. FR male; 6.45 ng/ml [95% CI: 4.47–8.43 ng/ml] vs. 1.84 ng/ml [95% CI: 0.90–2.79 ng/ml]; t = 4.58; df = 66; p < 0.0001; n = 17 CTR males and 19 FR males), but only modestly and non-significantly decreased (−28%) in females (leptin: CTR females vs. FR females; 3.94 ng/ml [95% CI: 2.53–5.35 ng/ml] vs. 2.83 ng/ml [95% CI: 1.20–4.47 ng/ml]; t = 1.00; df = 66; p = 0.32; 23 CTR females and 11 FR females) (Figure 1D). This is in keeping with previous findings that female mice are more resistant to fat loss than males (Andersson et al., 1991; Cortright and Koves, 2000; Volek et al., 2004; McCarthy and Berg, 2021; Tirosh et al., 2015; Suchacki et al., 2023) and that weight loss arises from other tissues including those associated with reproductive functions (ovarian and uterine mass) (Boutwell et al., 1948; Ahima et al., 1996; Gill and Rissman, 1997).
 
-## Cellular energy-regulating pathways in cortex are significantly impacted by food restriction in males but not in females
+### Cellular energy-regulating pathways in cortex are significantly impacted by food restriction in males but not in females
 
 Decreased leptin levels are necessary for triggering energy-saving changes in the mouse visual cortex during food restriction (Padamsey et al., 2022). We therefore asked whether the absence of significant change in serum leptin in food-restricted females was associated with any change in V1 energy usage. We first assessed this at the molecular level by examining AMPK phosphorylation state. AMPK is a canonical cellular energy sensor activated by metabolic stress – such as food restriction, in part via decreased leptin signalling – through phosphorylation of threonine 172 (Thr172) (Garza-Lombó et al., 2018; Dagon et al., 2012; Dagon et al., 2005). Its activation results in reduced ATP expenditure, for example, through the inhibition of mTOR signalling (Garza-Lombó et al., 2018; Takei and Nawa, 2014), and regulation of mitochondrial oxidative phosphorylation (Herzig and Shaw, 2018; de la Cruz López et al., 2019). In V1, we found that AMPK Thr172 phosphorylation was markedly and significantly elevated (2.9-fold) with food restriction in males (AMPK Thr172 phosphorylation: CTR male vs. FR male; 13.19 AU/μg [95% CI: 7.68–18.71 AU/μg] vs. 38.21 AU/μg [95% CI: 16.50–59.93 AU/μg]; t = 2.28; df = 39; p = 0.022; n = 11 CTR males and 15 FR males), consistent with ATP savings, but only modestly increased (1.4-fold) in females; this increase was not statistically significant (AMPK Thr172 phosphorylation: CTR female vs. FR female; 20.94 AU/μg [95% CI: 9.42–32.46 AU/μg] vs. 29.52 AU/μg [95% CI: 8.52–50.53 AU/μg]; t = 0.64; df = 39; p = 0.11; 11 CTR females, and 6 FR females) (Figure 1E). We also examined the activity of PPARα, which is downstream of leptin signalling and is known to regulate fatty acid metabolism and energy homeostasis (Dagon et al., 2005; Unger et al., 1999). As with AMPK, we found that PPARα was significantly regulated by food restriction selectively in males, but not in females (Figure 1E; Poulsen et al., 2012; Wójtowicz et al., 2020).
 
@@ -58,19 +58,35 @@ To further investigate how energy-regulating cellular pathways are impacted by f
 
 Collectively, these findings reveal that food restriction strongly affects energy-regulating cellular pathways in the cortex of male, as opposed to female, mice.
 
-## ATP usage in V1 is significantly decreased under food restriction in males but not in females
+### ATP usage in V1 is significantly decreased under food restriction in males but not in females
 
 We next examined energy usage in visual cortex during visual processing using two-photon ATP imaging in V1 of awake, head-fixed Thy1-ATeam1.03YEMK mice, which express a Fluorescence Resonance Energy Transfer (FRET)-based ATP sensor (Trevisiol et al., 2017; Baeza-Lehnert et al., 2019; Figure 3A). In the presence of ATP synthesis inhibitors, focally applied over the visual cortex, ATP usage can be seen as a decay of the FRET signal during visual stimulation with natural stimuli (Padamsey et al., 2022; Figure 3A). Data obtained in females were compared to our previously published datasets obtained under similar conditions in male mice (Padamsey et al., 2022). As previously shown (Padamsey et al., 2022), food restriction robustly decreased the rate of cortical ATP usage in males (24% decrease) (half-time of FRET decay: CTR male vs. FR male; 8.48 min [95% CI: 7.59–9.37 min] vs. 10.51 min [95% CI: 9.08–11.93 min]; t = 2.87; df = 37; p = 0. 0067; n = 11 CTR males and 10 FR males) during visual stimulation; a more modest trend was observed in females (12% decrease), which was not significant compared to controls (half-time of FRET decay: CTR female vs. FR female; 8.66 min [95% CI: 7.49–9.84 min] vs. 9.66 min [95% CI: 8.92–10.39 min]; t = 1.36; df = 37; p = 0.18; n = 12 CTR females and n = 8 FR females) (Figure 3B, C). In the absence of visual stimulation (darkness), ATP usage was lower than during visual stimulation and unaffected by food restriction, for either sex (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/93052/elife-93052-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schemata of ATP imaging experiment. Top: Example field of view of V1 layer 2/3 neurons in the ATeam1.03YEMK transgenic mouse (scale bar: 10 μm). Bottom: ATP synthesis inhibitors were used to isolate ATP usage, recorded as a decrease in FRET signal during presentation of natural, outdoor scenes. (B) Normalized ATeam1.03YEMK FRET signal in males and during presentation of natural, outdoor scenes. ATP synthesis inhibitors (arrow) were added to isolate ATP usage. Inset: Time to 50% decay of the ATeam1.03YEMK FRET signal (two-way analysis of variance [ANOVA]: t = 2.87; df = 37; p = 0. 0067; n = 11 CTR males and 10 FR males). (C) As in (B) but for females (inset: two-way ANOVA: t = 1.36; df = 37; p = 0.18; n = 12 CTR females and n = 8 FR females). (D) Top: Schema of two-photon imaging and sample field of view of V1 layer 2/3 neurons expressing GCaMP6s (scale bar: 10 μm). Bottom: Sample fluorescent signals (grey) from a selected neuron (black circle) in response to 6 drifting gratings of varying orientations. Trial averages are in black. Horizontal bar denotes 2 s grating presentation. (E) Mean orientation tuning curves normalized to the response to the preferred orientation for CTR and FR males (data from Padamsey et al., 2022). Note that −90° and +90° conditions correspond to the same visual stimulus. Inset: Orientation selectivity index (OSI; two-way ANOVA: t = 3.75; df = 27; p = 0.0009; n = 8 CTR and 8 FR males). (F) As in (E) but for females (Inset: two-way ANOVA: t = 1.90; df = 27; p = 0.08; n = 7 CTR females and 9 FR females). **p < 0.01; ***p < 0.001; n.s. = not significant. Error bars are standard error of the mean (SEM). Data from male mice are from a previously published dataset obtained under similar conditions (Padamsey et al., 2022).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93052/elife-93052-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schemata of ATP imaging experiment in the absence of visual stimulation (dark screen). Top: Example field of view of V1 layer 2/3 neurons in the ATeam1.03YEMK transgenic mouse (scale bar: 10 μm). Bottom: ATP synthesis inhibitors were used to isolate ATP usage, recorded as a decrease in FRET signal. (B) Normalized ATeam1.03YEMK FRET signal in males in the absence of visual stimulation (dark screen). ATP synthesis inhibitors (arrow) were added to isolate ATP usage. Inset: Time to 50% decay of the ATeam1.03YEMK FRET signal (two-way analysis of variance [ANOVA]: t = 0.14; df = 24; p = 0.89; n = 8 CTR males and 6 FR males). (C) As in (B) but for females (inset: two-way ANOVA: t = 0.64; df = 37; p = 0.52; n = 8 CTR females and n = 8 FR females). n.s. = not significant. Error bars are standard error of the mean (SEM).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/93052/elife-93052-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Top: Sample camera image of pupil (red outline) during visual stimulation. Bottom: Pupil diameter during the presentation of drifting gratings. (B) Pupil diameter was comparable across sex and diet. To assess significance across sex, pupil data within a sex was pooled (across diet) (t-test: male vs. female; t = 0.82; df = 18; p = 0.42; n = 7 CTR males, 8 FR females, 1 CTR female, and 4 FR females). n.s. = not significant. Error bars are standard error of the mean (SEM). Data from male mice are from a previously published dataset obtained under similar conditions (Padamsey et al., 2022).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/93052/elife-93052-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Bayes factor (BF10) along with quantified effect size and 95% confidence intervals (CIs) are shown for males (green) and females (purple). Across parameters, BF10 and effect sizes are greater for males than females, meaning that food restriction induces a more robust effect on visual cortical function and energy usage in males than females.
+
 Altogether, these findings demonstrate that food restriction significantly impacts V1 energy usage during visual stimulation in males but not in females.
 
-## Orientation selectivity in V1 is significantly reduced under food restriction in males but not in females
+### Orientation selectivity in V1 is significantly reduced under food restriction in males but not in females
 
 We next examined how food restriction impacts visual cortical function. In male mice, reductions in energy usage in V1 during food restriction are associated with a decreased visual coding precision as evidenced by a reduction of orientation selectivity (Padamsey et al., 2022). Given the non-significant impact of food restriction on energy usage in female mice, we reasoned that orientation selectivity would also be less impacted. We analysed two-photon calcium imaging data of V1 GCaMP6s-labelled layer 2/3 neurons in female mice viewing drifting gratings (Figure 3D–F; n = 7 CTR male, n = 8 FR male, n = 7 CTR female, and n = 9 FR female mice). Data obtained in females were compared to our previously published datasets obtained under similar conditions in male mice (Padamsey et al., 2022). Consistent with our hypothesis, in contrast to males in which orientation selectivity was significantly reduced by 27% (orientation selectivity index [OSI]: CTR male vs. FR male; 0.58 [95% CI: 0.51–0.65] vs. 0.42 [95% CI: 0.36–0.49]; t = 3.75; df = 27; p = 0.0009), orientation selectivity was modestly (13%) and not significantly reduced by food restriction in females (OSI: CTR female vs. FR female; 0.60 [95% CI: 0.52–0.67] vs. 0.52 [95% CI: 0.45–0.58]; t = 1.90; df = 27; p = 0.08) (Figure 3E, F). Direction tuning, as measured by the direction selectivity index (DSI) was also significantly affected by food restriction in males, but not in females (Figure 3—figure supplement 3; males: CTR vs. FR; t = 2.16; p = 0.023; df = 12; n = 6 CTR males and 8 FR males; females: CTR vs. FR; t = 1.49; p = 0.16; df = 14; n = 7 CTR females and 9 CTR females).
 
 Altogether, our results show that energy usage and coding precision in the visual cortex are largely maintained in female mice under food restriction while they are robustly reduced in males. Such findings cannot be readily attributed to differences in behavioural or attentional state. All animals were imaged while in a cardboard tube, and therefore not locomoting. Moreover, we found no difference in pupil size during the presentation of visual stimuli (Figure 3—figure supplement 2).
 
-## Bayes factor analysis reveals statistically robust impact of metabolic stress on V1 energy usage and visual coding in males, but not females
+### Bayes factor analysis reveals statistically robust impact of metabolic stress on V1 energy usage and visual coding in males, but not females
 
 We used Bayes factor hypothesis testing to better assess the statistical impact of food restriction on visual cortical function and energy usage in male and female mice (Figure 3—figure supplement 3). Bayes factor analysis uses a Bayesian framework to quantify how much more likely the data is under the alternative hypothesis (i.e. there is an effect of food restriction) vs. the null hypothesis (i.e. there is no effect of food restriction), quantified by the Bayes factor (BF10) (van Doorn et al., 2021; Keysers et al., 2020). A BF10 >3, for example, means that the data are >3 times more likely under the alternative hypothesis than the null hypothesis. Critically, the BF10 allows for a more informative comparison of the effects of food restriction between sexes, as opposed to comparing p values, which can be misleading (van Doorn et al., 2021; Keysers et al., 2020). Across the parameters of energy usage and visual coding that we tested (Figures 1—3), BF10 for males was consistently several-fold greater than that for females. Thus, visual cortical function and energy usage were more robustly modulated by food restriction in males than in females.
 
@@ -82,23 +98,23 @@ Altogether, our results show that energy usage and coding precision in the visua
 
 Here, we find that in female mice, energy usage and visual coding in V1 are largely unchanged under food restriction. Using molecular analysis and RNA sequencing, we found that energy-regulating pathways were not significantly changed with food restriction in females, in contrast to males; these included pathways associated with AMPK, mTOR, and PPARα signalling, as well as oxidative phosphorylation. Consistent with this, we found that food restriction in females did not impact visual cortical ATP usage nor orientation selectivity, both of which were reduced by food restriction in males. Our findings suggest that the contribution of neocortex to energy-saving adaptations during food restriction is sex selective and more pronounced in males; females may rely on other energy-saving strategies, such as reducing reproductive function, to cope with food restriction.
 
-## Limitations of the study
+### Limitations of the study
 
 Our study focussed on the effects of a moderate food restriction protocol over 2–3 weeks on neocortical function and energy usage. This protocol is widely used in metabolic studies investigating the impact of caloric restriction on peripheral physiology, as well as in neuroscience studies to motivate rodents to perform specific behaviours (Suchacki et al., 2023; Guo et al., 2014; Goltstein et al., 2018; Toth and Gardiner, 2000). However, it remains unclear to what extent our findings generalize to other protocols of food restriction. Indeed, the duration, magnitude, and pattern of food restriction, as well as macronutrient composition are known to impact the physiological responses to dietary manipulations (Dagon et al., 2005; Collet et al., 2017; Cuevas-Cervera et al., 2022; Hofer et al., 2022). Moreover, while we focussed our study on the adult visual cortex, it remains unclear if the brain shows similar sex-specific energy-saving adaptations in other cortical areas, and how such adaptations change with age (Suchacki et al., 2023; Mitchell et al., 2016).
 
 A key strength of our study is that we consistently found, across a number of experimental methods, that changes in cortical function and energy usage were significant in males, but not in females. However, a critical limitation of our study is that we did not have the statistical power to directly compare the effect size of food restriction between the sexes (e.g. analysis of variance [ANOVA] interaction effects); to do so would require a substantial increase in experimental group sizes by several-fold. We addressed this limitation, in part, using Bayes factor analysis, which revealed that the impact of food restriction in males was indeed more robust than in females. This analysis also revealed that our study did not have sufficiently strong evidence to definitively rule out a smaller effect of food restriction in females, which may not have been statistically detectable.
 
-## Role of leptin and sex hormones in food restriction impact on cortical activity
+### Role of leptin and sex hormones in food restriction impact on cortical activity
 
 Consistent with past studies, we found that food-restricted female mice resisted weight loss, and therefore required a greater restriction of food to achieve similar weight loss (relative to baseline) as males. In addition, for the same relative weight loss as males, females exhibited minimal reductions in serum leptin levels (secreted by adipocytes), consistent with past studies showing that females resist fat loss during food restriction (Andersson et al., 1991; Cortright and Koves, 2000; Volek et al., 2004; Tirosh et al., 2015; Suchacki et al., 2023). Similar effects have been observed across several mammalian species, including humans, and is thought to reflect the differential importance of fat stores for reproductive success in males and females (Andersson et al., 1991; Cortright and Koves, 2000; Volek et al., 2004; McCarthy and Berg, 2021; Tirosh et al., 2015). Notably, we previously demonstrated that reductions in leptin levels during food restriction are necessary for driving energy-saving changes in visual cortical coding in male mice; leptin therefore acts as a critical signal linking the neocortex to fat stores (Padamsey et al., 2022). That leptin levels are not significantly affected by food restriction in females may explain the minimal impact food restriction has on cortical energy usage and coding precision in female mice.
 
 In addition to leptin, sex hormones likely contribute to sex-specific adaptations to food restriction (Kane et al., 2018). As with leptin, oestrogen suppresses food intake and promotes energy expenditure (Brown and Clegg, 2010), in part by augmenting leptin signalling by increasing leptin-induced phosphorylation of STAT3 (Gao and Horvath, 2008). Moreover, oestrogen can enhance ATP production by sensitizing insulin signalling, enhancing glycolysis, and oxidative phosphorylation, and along with progesterone, upregulating mitochondrial gene expression and function (Brown and Clegg, 2010; Irwin et al., 2008; Brinton, 2008). Interestingly, in our study, RNA sequencing revealed that oestrogen signalling pathways were significantly regulated in male visual cortex with food restriction, and were unchanged in females. Oestrogen may thus have overlapping effects with those induced by food restriction, thereby diminishing further responses to food restriction in females (Suchacki et al., 2023). Notably, it was recently shown that sex differences in calorie-restriction’s metabolic effects that are observed in young adult mice, are largely absent in older mice, when females’ oestrogen levels have declined (Suchacki et al., 2023). Further studies will be needed to explore whether the resilience of cortical function found in this study in young cycling adult females is also observed in non-cycling mice with reduced oestrogen levels, such as in aged mice.
 
-## Sex-specific regulation of cellular energy-regulating pathways
+### Sex-specific regulation of cellular energy-regulating pathways
 
 AMPK and mTOR signalling pathways are canonical regulators of cellular energy usage (Garza-Lombó et al., 2018; Takei and Nawa, 2014). We found these pathways, along with cortical ATP usage, to be significantly modulated by food restriction in male, but not female mice. AMPK is activated during metabolic stress, and saves energy by regulating oxidative phosphorylation (Herzig and Shaw, 2018; de la Cruz López et al., 2019), and inhibiting cellular pathways associated with energy usage, such as mTOR signalling (Garza-Lombó et al., 2018). mTOR signalling, by upregulating protein synthesis, increases ATP usage by promoting neuronal excitability, neurite outgrowth, ion channel expression, and synaptic plasticity (Takei and Nawa, 2014). mTOR signalling is therefore ideally situated to regulate how much ATP is used in neuronal function; its inhibition may underlie ATP savings and the associated loss of coding precision with food restriction in male mice. Notably, previous studies have found sex- and tissue-dependent regulation of AMPK and mTOR signalling, including in response to food restriction (Kane et al., 2018). For example, in skeletal muscle, mTOR signalling is enhanced by fasting selectively in male, but not female mice (Kane et al., 2018; Baar et al., 2016). Moreover, metabolic challenge by endurance training induces greater AMPK activity in cardiac tissue in male, as opposed to female mice (Brown et al., 2020). Our study extends the sex-specific regulation of these energy-regulating pathways to the neocortex.
 
-## Importance of biological sex on the impact of food restriction on cortical function
+### Importance of biological sex on the impact of food restriction on cortical function
 
 Food restriction protocols are widely used to motivate animals in behavioural studies examining cortical function (Guo et al., 2014; Goltstein et al., 2018; Toth and Gardiner, 2000). Our findings suggest that these protocols are likely to have greater impacts on basal neocortical function in males, as compared to females. Consistent with this, a recent study has found that food restriction in juvenile mice strongly impacts cognitive flexibility in learning and decision-making in adulthood, specifically for males but not females (Clemens et al., 2019; Lin et al., 2022). Such sex-specific impacts of food restriction on neocortical function are important to take into consideration in the design and interpretation of such studies.
 
@@ -108,19 +124,19 @@ In conclusion, we find that visual cortical coding and energy usage in females a
 
 ## Materials and methods
 
-## Resource availability
+### Resource availability
 
-## Lead contact
+#### Lead contact
 
 Further information and requests for resources and materials should be directed to and will be fulfilled by the lead contact Nathalie L. Rochefort (n.rochefort@ed.ac.uk).
 
-## Materials availability
+### Materials availability
 
 This study did not generate new unique reagents.
 
-## Data and code availability
+### Data and code availability
 
-## Experimental model and subject details
+### Experimental model and subject details
 
 Experiments were approved by the University of Edinburgh’s Animal Welfare and Ethical Review Board (AWERB) and carried out under Home Office (UK) approved project and personal licenses. All experiments conformed to the UK Animals (Scientific Procedures) Act 1986 and the European Directive 86/609/EEC and 2010/63/EU on the protection of animals used for experimental purposes.
 
@@ -128,96 +144,116 @@ This study used male and female C57BL/6J mice (RRID:IMSR_JAX:000664; Jackson Lab
 
 For data associated with in vivo recordings (Figure 3), data obtained in female mice were compared to our previously published datasets obtained under similar conditions in male mice (Padamsey et al., 2022).
 
-## Method details
+### Method details
 
-## Food restriction
+#### Food restriction
 
 Mice (7–9 weeks of age) either had ad libitum access to food (RM1 expanded pellets; DBM Scotland UK) or were food restricted for 2–3 weeks to 85% of their baseline bodyweight prior to experimentation as previously described (Padamsey et al., 2022). Briefly, for food restriction, one ration of food was given 4–8 hr prior to the end of the dark cycle, with the amount of food progressively reduced to achieve target weight. 1–2 hr prior to experimentation, all animals had ad libitum access to food until sated.
 
-## AAV injection and cranial window
+### AAV injection and cranial window
 
 For calcium imaging experiments, C57BL/6 were anesthetized using isoflurane, and given pre-operative analgesia (vetergesic: 0.1 mg/kg; carprieve: 5 mg/kg; rapidexon: 2 mg/kg) along with warm Ringer’s solution (25 ml/kg) subcutaneously; vetergesic jelly was additionally given orally post-operatively 24 hr later. Opaque eye cream was applied to the eyes (Bepanthen, Bayer, Germany). A craniotomy (2 × 2 mm) was applied over left V1 (centre at 2.5 mm mediolateral and 0.5 mm anterior to lambda). Flexed GCaMP6s (AAV1.Syn.Flex.GCaMP6s.WPRE.SV40; Addgene; RRID:Addgene_105558-AAV1) diluted 1:10 in saline, along with CaMKII-dependent Cre-recombinase (AAV1.CamKII 0.4.Cre.SV40; Addgene; RRID:Addgene_105558-AAV1) diluted 1:100 saline was injected at the centre of the craniotomy via a sharp glass pipette. Injections were targeted to layer 2/3, with 100 nl of virus solution injected (2.5 nl/30 s) at each of three depths (150, 250, and 350 μm) via a sharp glass pipette using a Nanoject III (Drummond Scientific). A glass window was then used to seal the craniotomy, and superglued in place. The window was made of one or two glass coverslips (Menzel-Glaser # 0), in the latter case the two cover slips were glued together with optically clear, UV-cured glue (Norland Optical Adhesive no. 60); the inner window was 2.0 mm × 2.0 mm, the outer window was 2.5 mm × 2.5 mm. A metal headplate was then fixed to the skull with super glue and dental cement (Paladur, Heraeus Kuzler). It took 3–6 weeks for viral expression prior to experimentation.
 
 For ATP imaging experiments, we used ATeam1.03YEMK mice (RRID:MGI:5882597; https://scicrunch.org/resources) that express a FRET-based sensor under the Thy1 promoter (Trevisiol et al., 2017). One the day of experimentation, animals were anesthetized with isoflurane and given pre-operative analgesia (Carprieve: 5 mg/kg) and 25 ml/kg of warm Ringer’s solution subcutaneously. A headplate was first fixed to the skull with superglue and dental cement, after which a small craniotomy (~0.5 mm × ~0.5 mm) was made over left V1 (centre at 2.5 mm mediolateral and 0.5 mm anterior to lambda), which was covered with agarose (1–2%) and silicone. Following recovery from anaesthesia (30–60 min) the animal was head fixed; the agarose and silicone were removed and replaced with HEPES-buffered Artificial cerebrospinal fluid, (ACSF) (in mM: 124 NaCl, 20 glucose, 10 HEPES, 2.5 KCl, 1.2 NaH2PO4, 2 CaCl2, and 1 CaCl2; pH 7.2–7.4).
 
-## Habituation and head fixation
+### Habituation and head fixation
 
 During imaging, mice were placed in a cardboard tube and head fixed. Prior to the imaging day, mice were handled daily for 2–3 weeks prior, and exposed to cardboard tubes, similar to the one on the experimental rig. They were also habituated to the rig via once daily, 10- to 15-min sessions for 2 days prior to recording. For ATP imaging, mice were habituated to the experimental setup without head fixation (10–15 min session/day for 1–2 days).
 
-## In vivo two-photon imaging
+### In vivo two-photon imaging
 
 ATP and calcium imaging were using a two-photon resonant scanning microscope, as previously described (Pakan et al., 2016; Pakan et al., 2018; Henschke et al., 2020), which was equipped with a Ti:Sapphire laser (Charmeleon Vision-S, Coherent, CA) and GaAsP photomultiplier tubes (Scientifica), and controlled with LabView (v8.2; National Instruments, UK). Time-series xy images were acquired at 40 Hz using a ×25 water-immersion objective (Nikon; CF175 Apo 25XC W; 1.1 NA) at depths between 160 and 280 μm below the pia. For GCaMP6s imaging, excitation was tuned to 920 nm. For ATP imaging (CFP/YFP FRET sensor), the laser was tuned to 850 nm for CFP excitation. CFP and YFP fluorescence were recorded simultaneously using a 515-nm long-pass dichroic mirror with the following emission filters: 485/70 nm for CFP and 535/45 nm for YFP (mirror and filter set: T515lpxr C156624; Scientifica). Imaging data were acquired during the presentation of visual stimuli, with at least 10 replicate trials for each visual stimulus. For ATP imaging, three trials were taken at baseline, then ACSF containing ATP synthesis inhibitors (1 mM oligomycin and 20 mM sodium iodoacetate) was applied over the open craniotomy isolate ATP usage. Thirty trials were successively performed immediately after drug application. For in vivo recordings, data obtained in females were compared to our previously published datasets obtained under similar conditions in male mice (Padamsey et al., 2022).
 
-## Visual stimuli
+### Visual stimuli
 
 MATLAB (Mathworks; RRID:SCR_001622; Psychophysics Toolbox; RRID:SCR_002881) was used to generate drifting grating stimuli. These were displayed on an LCD monitor (51 × 29 cm; Dell) placed 20 cm from the right eye, contralateral to the hemisphere with the cranial window. For food restriction experiments, on a given trial, 12 full-field drifting gratings (drift angle: 0, 30, 60, 90, 120, 180, 210, 240, 270, 300, and 330o; temporal frequency = 1 Hz), 2 s in duration, were presented in random order, interspersed with grey screens (4 s duration). Gratings within a trial were randomly assigned one common spatial frequency (0.02, 0.04, 0.16, or 0.32 cpd). For natural stimuli, a 60-s movie was presented of an outdoor movie of movement through a field and vegetation. For dark conditions, no visual stimulus was presented (screen off) and all sources of light were switched off.
 
-## Pupil measurements
+### Pupil measurements
 
 In some experiments the pupil was monitored using a USB camera (USB 2.0 monochrome camera; ImagingSource) with frames captured at 30 Hz.
 
-## Serum leptin measurements
+### Serum leptin measurements
 
 Serum leptin levels were analysed using ELISA kits (Mouse Leptin Quantikine Elisa Kit, R&D Systems, USA) according to the manufacturer’s instruction. For serum collection, trunk blood was collected from mice that were briefly anesthetized (isoflurane) prior to decapitation. Blood was allowed to clot at room temperature for 1–2 hr and then centrifuged for 20 min at 2000 × g. The serum was drawn off and stored at −80°C until used.
 
-## AMPK and PPARα measurements
+### AMPK and PPARα measurements
 
 Levels of total AMPK, phosphorylated AMPK (Thr172), and nuclear PPARα in V1 were measured using ELISA kits according to the manufacturer’s instructions (total AMPK: ab181422, Abcam, UK; phosphorylated AMPK: KHO0651, Thermo Fisher, UK; PPARα: ab133107, Abcam, UK). For tissue collection, mice were briefly anesthetized (isoflurane) and decapitated. The visual cortex was dissected out, snap frozen using dry ice, and stored at −80°C until used.
 
-## RNA sequencing
+### RNA sequencing
 
 Bulk RNA sequencing was performed on V1. V1 tissue was collected and snap frozen from mice that were briefly anesthetized (isoflurane) and decapitated. Tissue was homogenized using a bead mill (Bead Mill 24, Fisher Scientific) and RNA was isolated using an RNeasy kit (Qiagen) according to the manufacturer’s instructions. RNA integrity was confirmed (RIN >7) and mRNA was sequenced at the Oxford Genomics Centre using Illumina NovaSeq 6000.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Ca2+ imaging analysis
+#### Ca2+ imaging analysis
 
 Image analysis for calcium imaging was performed as previously described (Baar et al., 2016; Clemens et al., 2019; de Carvalho, 2022). For motion correct, a discrete Fourier 2D-based image alignment was used (SIMA 1.3.2) (Henschke et al., 2020). Regions of interest (ROI) were manually drawn around imaged neuronal soma using ImageJ software (NIH public domain; RRID:SCR_002285). Pixel fluorescence was then averaged within each ROI to generate a time series. For each ROI, baseline fluorescence (F0) was calculated by taking the 5th percentile of the smoothed time series (1 Hz lowpass, zero-phase, 60th-order Finite Impulse Response (FIR) filter). ΔF/F was then calculated as (F − F0/F0). The toolbox FISSA (Fast Image Signal Separation Analysis) was used to decontaminate the neuropil (Keemink et al., 2018). Subsequent analyses were performed using custom scripts in MATLAB (MathWorks) (Padamsey et al., 2022).
 
-## Drifting grating analysis
+#### Drifting grating analysis
 
 The visual response to drifting gratings was defined as the highest mean ΔF/F, averaged within a 2-s window, that occurred within a 4-s window (comprising the 2 s grating presentation plus the 2 s of the grey screen presentation which immediately followed the grating presentation). The visual response was subtracted by baseline ΔF/F, defined as the mean value within a 1-s window prior to the visual response.
 
 Responses to gratings of the same angle, but different drift directions were averaged together. Given that multiple spatial frequencies were used, only the spatial frequency with the largest response, meaned across all orientations, was selected for each neuron for subsequent analyses. A neuron’s preferred orientation was that which evoked the largest mean response.
 
-Grating-responsive neurons were defined as those for which grating responses were better fit with a double Gaussian curve (direction responses) than with a flat line at zero (null model), which was determined using Bayesian information criterion (BIC) (Padamsey et al., 2022). The double Gaussian curve was defined as:R(θ)=C+Rpe−angdir(θ−θpref)22σ2+Rne−angdir(θ−θpref)22σ2
+Grating-responsive neurons were defined as those for which grating responses were better fit with a double Gaussian curve (direction responses) than with a flat line at zero (null model), which was determined using Bayesian information criterion (BIC) (Padamsey et al., 2022). The double Gaussian curve was defined as:
 
-where R(θ) is the response at a given direction angle θ, C is an offset, Rp is the response to the preferred direction after subtracting the offset, θpref is the angle of the preferred direction, Rn is the response to the null direction after subtracting the offset, and angdir(x)=min(x,x−360,x+360), which constrains angular differences to 0–180o, and σ is the standard deviation of the curve.
+$$
+R(\theta)=C+R_{p}e^{\frac{−ang_{dir}(\theta−\theta_{pref})^{2}}{2\sigma^{2}}}+R_{n}e^{\frac{−ang_{dir}(\theta−\theta_{pref})^{2}}{2\sigma^{2}}}
+$$
 
-BIC was given by:BIC = nln(σ2¯)+kln (n)
+where R(θ) is the response at a given direction angle θ, C is an offset, Rp is the response to the preferred direction after subtracting the offset, θpref is the angle of the preferred direction, Rn is the response to the null direction after subtracting the offset, and $ang_{dir}(x)=min(x,x−360,x+360)$, which constrains angular differences to 0–180o, and σ is the standard deviation of the curve.
 
-where n is the number of responses, σ2¯ is the mean residual sum of squares of the model, and k is the number of free parameters used by the model, which was zero in the case of the null model. A neuron was considered significantly grating-responsive if the BICnull − BICGaussian ≥ 10, which provides strong evidence against the null model (Kass and Raftery, 1995).
+BIC was given by:
 
-## Orientation selectivity
+$$
+BIC = nln(\sigma^{2}¯)+kln (n)
+$$
 
-The OSI of grating-responsive neurons was calculated as:OSI=1−CirVar=abs(∑kR(θk)e2iθk∑kR(θk))
+where n is the number of responses, $\sigma^{2}¯$ is the mean residual sum of squares of the model, and k is the number of free parameters used by the model, which was zero in the case of the null model. A neuron was considered significantly grating-responsive if the BICnull − BICGaussian ≥ 10, which provides strong evidence against the null model (Kass and Raftery, 1995).
+
+#### Orientation selectivity
+
+The OSI of grating-responsive neurons was calculated as:
+
+$$
+OSI=1−CirVar=abs(\frac{\sumkR(\theta_{k})e^{2i\theta_{k}}}{\sumkR(\theta_{k})})
+$$
 
 where Cirvar is the circular variance and R(θk) is the mean response to the kth angle θ in orientation space, averaged across direction (see detailed description in Mazurek et al., 2014). Mean responses less than zero were set to zero. We used the median OSI values across neurons within an animal.
 
-## Direction selectivity
+#### Direction selectivity
 
-The DSI of grating-responsive neurons was calculated as:DSI=1−dirCirVar=abs(∑kR(θk)eiθk∑kR(θk))
+The DSI of grating-responsive neurons was calculated as:
+
+$$
+DSI=1−dirCirVar=abs(\frac{\sumkR(\theta_{k})e^{i\theta_{k}}}{\sumkR(\theta_{k})})
+$$
 
 where dirCirVar is the circular variance in direction space and R(θk) is the mean response to the kth angle θ in direction space (see detailed description in Mazurek et al., 2014). Mean responses less than zero were set to zero. We used the median DSI values across neurons within an animal.
 
-## Pupil analysis
+#### Pupil analysis
 
 Pupil diameter was quantified with custom scripts in MATLAB using functions from the Imaging Processing Toolbox, namely:
 
-The pupil diameter (d) was calculated from the fitted ellipsoid as:d=2semi-major axis*semi-minor axis
+The pupil diameter (d) was calculated from the fitted ellipsoid as:
 
-## ATP measurements
+$$
+d=2\sqrt{semi-major axis*semi-minor axis}
+$$
+
+#### ATP measurements
 
 For ATeam1.03YEMK imaging, CFP and YFP fluorescence was averaged across ROIs drawn around visible soma in the field of view, after background subtraction. FRET was calculated as a ratio of YFP/CFP fluorescence, and decayed as a function of time with visual stimulation in the presence of ATP synthesis inhibitors. The FRET signal was bound between 0 and 1 by first subtracting the mean FRET signal during the last three imaging trials (the FRET signal plateaued at this point), and then dividing by the mean FRET signal at baseline. The FRET decay half time was defined as the time required for the FRET to decay to 50% of its baseline value.
 
-## Differential gene expression analysis
+#### Differential gene expression analysis
 
-RNA sequencing reads were mapped, using STAR 2.4.oi, to the Mus musculus primary assembly (Ensembl v80) (Dobin et al., 2013). FeatureCounts 1.4.6-p2 was used to count reads uniquely aligned to annotated genes (Liao et al., 2014). Differential gene expression analysis was then conducted using DESeq2 1.12.4 (betaPrior = False) to normalize counts (Love et al., 2014). For each gene, a fold change in gene expression was defined as log2Normalized count under food restriction (FR)Normalized count under controlconditions (CTR) for males and females. GSEA was conducted using GSEA software (https://www.gsea-msigdb.org/gsea/index.jsp) using the Hallmarks Gene Sets (v7.5.1).
+RNA sequencing reads were mapped, using STAR 2.4.oi, to the Mus musculus primary assembly (Ensembl v80) (Dobin et al., 2013). FeatureCounts 1.4.6-p2 was used to count reads uniquely aligned to annotated genes (Liao et al., 2014). Differential gene expression analysis was then conducted using DESeq2 1.12.4 (betaPrior = False) to normalize counts (Love et al., 2014). For each gene, a fold change in gene expression was defined as $log_{2}\frac{Normalized count under food restriction (FR)}{Normalized count under controlconditions (CTR)}$ for males and females. GSEA was conducted using GSEA software (https://www.gsea-msigdb.org/gsea/index.jsp) using the Hallmarks Gene Sets (v7.5.1).
 
-## Statistics
+#### Statistics
 
 Statistical tests, p values, and the number and definition of independent units are stated in the figure legends. For all measures, the number of animals was taken as the statically independent, biological unit. All data came from at least two independent cohort of animals. All animals were randomly assigned to experimental groups. Sample size was determined by a priori based on calculations, with an aim of achieving 80% power on the basis of a 20% group difference and a significance threshold of p < 0.05. Group means and variances were taken from pilot data or previously published data (Padamsey et al., 2022). Where applicable, ANOVA was used to assess significance, followed by post hoc Fisher LSD tests to prevent loss of power. Statistical tests were carried out in Prism 6 (GraphPad Prism; RRID:SCR_002798). Averages denoted in figures represent means, with error bars representing the standard error of the means. We complemented our statistical analyses using Bayes factor hypothesis testing (Figure 3—figure supplement 3) as described in van Doorn et al., 2021; Keysers et al., 2020 using JASP software to calculates Bayes factor, effect size, and CIs (https://jasp-stats.org/). As recommended, we used a default, Cauchy distribution with a spread of 1/√2 as a prior distribution of effect size. A BF10 <0.33 is considered to be moderate evidence for the absence of an effect (van Doorn et al., 2021; Keysers et al., 2020).
 
-## Inclusion and diversity
+#### Inclusion and diversity
 
 One or more of the authors of this paper self-identifies as an underrepresented ethnic minority in science. One or more of the authors of this paper self-identifies as a member of the LGBTQ + community. While citing references scientifically relevant for this work, we also actively worked to promote gender balance in our reference list.

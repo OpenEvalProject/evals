@@ -8,15 +8,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01e3m7079 Department of Pharmacology, Physiology, and Neurobiology, University of Cincinnati College of Medicine Cincinnati United States
-2. https://ror.org/04qk6pt94 Department of Neuroscience, Cell Biology and Physiology, Boonshoft School of Medicine, Wright State University Dayton United States
-3. https://ror.org/04qk6pt94 Department of Neuroscience, Cell Biology and Physiology, Boonshoft School of Medicine and the College of Science and Mathematics, Wright State University Dayton United States
+1. Department of Pharmacology, Physiology, and Neurobiology, University of Cincinnati College of Medicine Cincinnati United States ([ROR:01e3m7079](https://ror.org/01e3m7079))
+2. Department of Neuroscience, Cell Biology and Physiology, Boonshoft School of Medicine, Wright State University Dayton United States ([ROR:04qk6pt94](https://ror.org/04qk6pt94))
+3. Department of Neuroscience, Cell Biology and Physiology, Boonshoft School of Medicine and the College of Science and Mathematics, Wright State University Dayton United States ([ROR:04qk6pt94](https://ror.org/04qk6pt94))
 
 † Corresponding author
 
 ## Abstract
 
-Following prolonged activity blockade, amplitudes of miniature excitatory postsynaptic currents (mEPSCs) increase, a form of plasticity termed ‘homeostatic synaptic plasticity’. We previously showed that a presynaptic protein, the small GTPase Rab3a , is required for full expression of the increase in miniature endplate current amplitudes following prolonged blockade of action potential activity at the mouse neuromuscular junction (NMJ) in vivo, where an increase in postsynaptic receptors does not contribute. It is unknown whether this form of Rab3a -dependent homeostatic plasticity at the NMJ shares any characteristics with central synapses. We show here that homeostatic synaptic plasticity of mEPSCs is impaired in mouse cortical neuron cultures prepared from Rab3a −/− and mutant mice expressing a single-point mutation of Rab3a , Rab3a Earlybird mice. To determine if Rab3a is involved in the well-established homeostatic increase in postsynaptic AMPA-type receptors (AMPARs), we performed a series of experiments in which electrophysiological recordings of mEPSCs and confocal imaging of synaptic AMPAR immunofluorescence were assessed within the same cultures. We found that the increase in postsynaptic AMPAR levels in wild-type cultures was more variable than that of mEPSC amplitudes, which might be explained by a presynaptic contribution, but we cannot rule out variability in the measurement. Finally, we demonstrate that Rab3a is acting in neurons because only selective loss of Rab3a in neurons, not glia, disrupted the homeostatic increase in mEPSC amplitudes. This is the first demonstration that a protein thought to function presynaptically is required for homeostatic synaptic plasticity of quantal size in central neurons.
+Following prolonged activity blockade, amplitudes of miniature excitatory postsynaptic currents (mEPSCs) increase, a form of plasticity termed ‘homeostatic synaptic plasticity’. We previously showed that a presynaptic protein, the small GTPase Rab3a, is required for full expression of the increase in miniature endplate current amplitudes following prolonged blockade of action potential activity at the mouse neuromuscular junction (NMJ) in vivo, where an increase in postsynaptic receptors does not contribute. It is unknown whether this form of Rab3a-dependent homeostatic plasticity at the NMJ shares any characteristics with central synapses. We show here that homeostatic synaptic plasticity of mEPSCs is impaired in mouse cortical neuron cultures prepared from Rab3a−/− and mutant mice expressing a single-point mutation of Rab3a, Rab3a Earlybird mice. To determine if Rab3a is involved in the well-established homeostatic increase in postsynaptic AMPA-type receptors (AMPARs), we performed a series of experiments in which electrophysiological recordings of mEPSCs and confocal imaging of synaptic AMPAR immunofluorescence were assessed within the same cultures. We found that the increase in postsynaptic AMPAR levels in wild-type cultures was more variable than that of mEPSC amplitudes, which might be explained by a presynaptic contribution, but we cannot rule out variability in the measurement. Finally, we demonstrate that Rab3a is acting in neurons because only selective loss of Rab3a in neurons, not glia, disrupted the homeostatic increase in mEPSC amplitudes. This is the first demonstration that a protein thought to function presynaptically is required for homeostatic synaptic plasticity of quantal size in central neurons.
 
 ## Introduction
 
@@ -34,13 +34,13 @@ We found that loss of Rab3a greatly impaired the homeostatic increase after acti
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/90261/elife-90261-fig1-v1.jpg)
 
-**Figure 1.:** Rab3a disrupted the TTX-induced increase in amplitudes of miniature excitatory postsynaptic currents (mEPSCs) recorded in cultured mouse cortical neurons; the increase in frequency was more variable but also appears to be reduced.(A) Ten-second example traces recorded at −60 mV in pyramidal cortical neurons from an untreated (CON) and TTX-treated (TTX) neuron in cultures prepared from Rab3a+/+ mice from the Rab3a+/− colony. (B) Ten-second example traces recorded at −60 mV in pyramidal cortical neurons from an untreated (CON) and TTX-treated (TTX) neuron in cultures prepared from Rab3a−/− mice. (C, D) Average traces for the recordings shown in A and B, respectively. (E) Box plots for average mEPSC amplitudes from untreated cells and TTX-treated cells in cultures prepared from Rab3a+/+ mice (Rab3a+/− colony; CON, N = 30 cells, 13.9 ± 0.7 pA; TTX, N = 23 cells, 18.2 ± 0.9 pA; from eleven cultures). (F) Box plots for average mEPSC amplitudes from untreated cells and TTX-treated cells in cultures prepared from Rab3a−/− mice (CON, N = 25 cells, 13.6 ± 0.7 pA; TTX, N = 26 cells, 14.3 ± 0.6 pA); from eleven cultures. (G) Box plots for average mEPSC frequency for same Rab3a+/+ cells as in (E) (CON, 2.26 ± 0.37 s–1; TTX, 4.62 ± 0.74 s–1). (H) Box plots for average mEPSC frequency for same Rab3a−/− cells as in (F) (CON, 2.74 ± 0.49 s–1; TTX, 3.23 ± 0.93 s–1). Box plot parameters: box ends, 25th and 75th percentiles; whiskers, 10th and 90th percentiles; open circles represent means from individual cells, bin size 0.1 pA, 0.5 s–1; line, median; dot, mean. p-values (shown on the graphs) are from Tukey’s post hoc test following a two-way ANOVA. For all p-values, * with underline indicates significance with p < 0.05.Figure 1—source data 1.Figure 1 to show loss of TTX effect in Rab3a-/- mouse cortical neuron cultures.
+**Figure 1.:** (A) Ten-second example traces recorded at −60 mV in pyramidal cortical neurons from an untreated (CON) and TTX-treated (TTX) neuron in cultures prepared from Rab3a+/+ mice from the Rab3a+/− colony. (B) Ten-second example traces recorded at −60 mV in pyramidal cortical neurons from an untreated (CON) and TTX-treated (TTX) neuron in cultures prepared from Rab3a−/− mice. (C, D) Average traces for the recordings shown in A and B, respectively. (E) Box plots for average mEPSC amplitudes from untreated cells and TTX-treated cells in cultures prepared from Rab3a+/+ mice (Rab3a+/− colony; CON, N = 30 cells, 13.9 ± 0.7 pA; TTX, N = 23 cells, 18.2 ± 0.9 pA; from eleven cultures). (F) Box plots for average mEPSC amplitudes from untreated cells and TTX-treated cells in cultures prepared from Rab3a−/− mice (CON, N = 25 cells, 13.6 ± 0.7 pA; TTX, N = 26 cells, 14.3 ± 0.6 pA); from eleven cultures. (G) Box plots for average mEPSC frequency for same Rab3a+/+ cells as in (E) (CON, 2.26 ± 0.37 s–1; TTX, 4.62 ± 0.74 s–1). (H) Box plots for average mEPSC frequency for same Rab3a−/− cells as in (F) (CON, 2.74 ± 0.49 s–1; TTX, 3.23 ± 0.93 s–1). Box plot parameters: box ends, 25th and 75th percentiles; whiskers, 10th and 90th percentiles; open circles represent means from individual cells, bin size 0.1 pA, 0.5 s–1; line, median; dot, mean. p-values (shown on the graphs) are from Tukey’s post hoc test following a two-way ANOVA. For all p-values, * with underline indicates significance with p < 0.05.
 
 We next examined homeostatic plasticity in cultures prepared from wild-type mice in the Rab3a+/Ebd colony. Example current traces of mEPSCs, and average mEPSC waveforms, are shown in Figure 2A and C, respectively, for cortical cultures prepared from wild-type mice in the Rab3a+/Ebd colony. Treatment with TTX for 48 hr led to a significant increase in the average mEPSC amplitude of 23 TTX-treated cells when compared to 20 untreated cells (Figure 2E, CON, 11.0 ± 0.6 pA; TTX, 15.1 ± 1.2 pA). We note here that while the two wild-type strains respond very similarly to activity blockade, the mean mEPSC amplitude in untreated cultures was different between the two strains, 13.9 ± 0.7 pA, wild type from Rab3a+/− colony; 11.0 ± 0.6 pA, wild type from Rab3a+/Ebd colony, but this difference did not reach statistical significance in a Tukey means comparison after a two-way ANOVA (p = 0.27).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/90261/elife-90261-fig2-v1.jpg)
 
-**Figure 2.:** Rab3a was required for TTX-induced homeostatic plasticity of miniature excitatory postsynaptic current (mEPSC) amplitudes in cultured mouse cortical neurons.(A) Ten-second example traces recorded at −60 mV in pyramidal cortical neurons from an untreated (CON) and TTX-treated (TTX) neuron in cultures prepared from Rab3a+/+ mice from the Rab3a colony. (+/EbdB) Ten-second example traces recorded at −60 mV in pyramidal cortical neurons from an untreated (CON) and TTX-treated (TTX) neuron in cultures prepared from Rab3a mice. (Ebd/EbdC, D) Average traces for the recordings shown in A and B, respectively. (E) Box plots for average mEPSC amplitudes from untreated cells and TTX-treated cells from cultures prepared from Rab3a+/+ mice (Rab3a colony; CON, +/EbdN = 20 cells, 11.0 ± 0.6 pA; TTX, N = 23 cells, 15.1 ± 1.2 pA; from six cultures). (F) Box plots for average mEPSC amplitudes from untreated cells and TTX-treated cells from cultures prepared from Rab3a mice (CON, Ebd/EbdN = 21 cells, 15.1 ± 1.0 pA; TTX, N = 22 cells, 14.6 ± 1.1 pA; from seven cultures). (G) Box plots for average mEPSC frequency for same Rab3a+/+ cells as in (E) (CON, 1.15 ± 0.19 s–1; TTX, 2.54 ± 0.55 s–1). (H) Box plots for average mEPSC frequency for same Rab3a cells as in (Ebd/EbdF) (CON, 1.71 ± 0.41 s–1; TTX, 3.05 ± 0.80 s–1). Box plot parameters: box ends, 25th and 75th percentiles; whiskers, 10th and 90th percentiles; open circles represent means from individual cells; bin size 0.1 pA, 0.5 s–1; line, median; dot, mean. p-values (shown on the graphs) are from a Tukey’s post hoc test following a two-way ANOVA. For all p-values, * with underline indicates significance with p < 0.05.Figure 2—source data 1.Figure 2 showing loss of TTX effect on mEPSC amplitude in Rab3a Ebd/Ebd cortical neuron cultures.
+**Figure 2.:** (A) Ten-second example traces recorded at −60 mV in pyramidal cortical neurons from an untreated (CON) and TTX-treated (TTX) neuron in cultures prepared from Rab3a+/+ mice from the Rab3a+/Ebd colony. (B) Ten-second example traces recorded at −60 mV in pyramidal cortical neurons from an untreated (CON) and TTX-treated (TTX) neuron in cultures prepared from Rab3aEbd/Ebd mice. (C, D) Average traces for the recordings shown in A and B, respectively. (E) Box plots for average mEPSC amplitudes from untreated cells and TTX-treated cells from cultures prepared from Rab3a+/+ mice (Rab3a+/Ebd colony; CON, N = 20 cells, 11.0 ± 0.6 pA; TTX, N = 23 cells, 15.1 ± 1.2 pA; from six cultures). (F) Box plots for average mEPSC amplitudes from untreated cells and TTX-treated cells from cultures prepared from Rab3aEbd/Ebd mice (CON, N = 21 cells, 15.1 ± 1.0 pA; TTX, N = 22 cells, 14.6 ± 1.1 pA; from seven cultures). (G) Box plots for average mEPSC frequency for same Rab3a+/+ cells as in (E) (CON, 1.15 ± 0.19 s–1; TTX, 2.54 ± 0.55 s–1). (H) Box plots for average mEPSC frequency for same Rab3aEbd/Ebd cells as in (F) (CON, 1.71 ± 0.41 s–1; TTX, 3.05 ± 0.80 s–1). Box plot parameters: box ends, 25th and 75th percentiles; whiskers, 10th and 90th percentiles; open circles represent means from individual cells; bin size 0.1 pA, 0.5 s–1; line, median; dot, mean. p-values (shown on the graphs) are from a Tukey’s post hoc test following a two-way ANOVA. For all p-values, * with underline indicates significance with p < 0.05.
 
 We found a complete disruption of homeostatic plasticity in cortical cultures prepared from Rab3aEbd/Ebd mice, as can be seen in viewing example mEPSC traces and average mEPSC waveforms (Figure 2B and D, respectively). The lack of TTX effect was confirmed in a comparison of mEPSC amplitude means for 21 untreated and 22 TTX-treated cells (Figure 2F, CON, 15.1 ± 1.0 pA vs. TTX, 14.6 ± 1.1 pA). There was a trend toward increased mEPSC frequency in TTX-treated cultures from this wild-type strain, but the difference was not as robust as for the wild-type cultures from the Rab3a+/− colony and did not reach statistical significance (Figure 2G, CON, 1.15 ± 0.19 s–1; TTX, 2.54 ± 0.55 s–1). This trend was not observed in neurons from cultures prepared from Rab3aEbd/Ebd mice, likely due to an increase in frequency in untreated cells—frequencies remained high in TTX-treated cells (Figure 2H, CON, 1.71 ± 0.41 s–1; TTX, 3.05 ± 0.80 s–1). Our results show that the homeostatic increase in mEPSC amplitude after activity blockade is disrupted in both Rab3a−/− and the Rab3aEbd/Ebd cortical neurons, strongly supporting a crucial role of functioning Rab3a in this process.
 
@@ -52,19 +52,169 @@ In some studies of homeostatic synaptic plasticity, it has been found that appli
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/90261/elife-90261-fig3-v1.jpg)
 
-**Figure 3.:** 2+-permeable AMPA receptors by NASPM (20 µm).(A) Box plot comparison of the TTX effect on mEPSC amplitudes in the same pyramidal neurons before and after application of 20 µM NASPM (N = 11 cells from three cultures; Pre-NASPM, CON: 12.9 ± 1.1 pA; TTX: 17.5 ± 0.9 pA; post-NASPM, CON: 11.9 ± 0.8 pA; TTX: 16.1 ± 1.0 pA). (B) Line series plot of mEPSC amplitudes before and after acute perfusion with 20 µM NASPM for untreated and TTX-treated pyramidal neurons; same cells as in (A); CON, pre-NASPM: 12.9 ± 1.1 pA; post-NASPM: 11.9 ± 0.8 pA; TTX, pre-NASPM: 17.5 ± 0.9 pA; post-NASPM: 16.1 ± 0.1 pA. (C) Line series plot of mEPSC frequency before and after acute perfusion with 20 µM NASPM for untreated and TTX-treated pyramidal neurons; same cells as in (A); CON, pre-NASPM: 1.84 ± 0.55 s–1; post-NASPM; 1.56 ± 0.53 s–1; TTX, pre-NASPM: 4.40 ± 1.06 s–1; post-NASPM, 2.68 ± 0.68 s–1. (D) A proposed mechanism for why NASPM had a robust effect on frequency without greatly affecting amplitude. A dendrite with spines (top) is expanded on three postsynaptic sites (middle) to show possible types of AMPA receptor distributions: left, at a site comprised only of Ca2+-permeable AMPA receptors (NASPM-sensitive, GluA2-lacking receptors (black)), NASPM would completely inhibit the mEPSC, causing a decrease in frequency to be measured in the overall population; right, at a site comprised only of Ca2+-impermeable AMPA receptors (NASPM-insensitive, GluA2-containing receptors (green)), NASPM would have no effect on mEPSC amplitude; middle, at a site comprised of a mix of Ca2+-permeable and Ca2+-impermeable AMPA receptors, NASPM would partially inhibit the mEPSC. Diagram was created using BioRender.com. Box plot parameters: box ends, 25th and 75th percentiles; whiskers, 10th and 90th percentiles; open circles represent means from individual cells; bin size 0.1 pA; line, median; dot, mean. p-values (shown on the graphs) are from Kruskal–Wallis test. Line series plot p-values are from Student’s paired t-test. For all p-values, * with underline indicates significance with p < 0.05.Figure 3—source data 1.
+**Figure 3.:** (A) Box plot comparison of the TTX effect on mEPSC amplitudes in the same pyramidal neurons before and after application of 20 µM NASPM (N = 11 cells from three cultures; Pre-NASPM, CON: 12.9 ± 1.1 pA; TTX: 17.5 ± 0.9 pA; post-NASPM, CON: 11.9 ± 0.8 pA; TTX: 16.1 ± 1.0 pA). (B) Line series plot of mEPSC amplitudes before and after acute perfusion with 20 µM NASPM for untreated and TTX-treated pyramidal neurons; same cells as in (A); CON, pre-NASPM: 12.9 ± 1.1 pA; post-NASPM: 11.9 ± 0.8 pA; TTX, pre-NASPM: 17.5 ± 0.9 pA; post-NASPM: 16.1 ± 0.1 pA. (C) Line series plot of mEPSC frequency before and after acute perfusion with 20 µM NASPM for untreated and TTX-treated pyramidal neurons; same cells as in (A); CON, pre-NASPM: 1.84 ± 0.55 s–1; post-NASPM; 1.56 ± 0.53 s–1; TTX, pre-NASPM: 4.40 ± 1.06 s–1; post-NASPM, 2.68 ± 0.68 s–1. (D) A proposed mechanism for why NASPM had a robust effect on frequency without greatly affecting amplitude. A dendrite with spines (top) is expanded on three postsynaptic sites (middle) to show possible types of AMPA receptor distributions: left, at a site comprised only of Ca2+-permeable AMPA receptors (NASPM-sensitive, GluA2-lacking receptors (black)), NASPM would completely inhibit the mEPSC, causing a decrease in frequency to be measured in the overall population; right, at a site comprised only of Ca2+-impermeable AMPA receptors (NASPM-insensitive, GluA2-containing receptors (green)), NASPM would have no effect on mEPSC amplitude; middle, at a site comprised of a mix of Ca2+-permeable and Ca2+-impermeable AMPA receptors, NASPM would partially inhibit the mEPSC. Diagram was created using BioRender.com. Box plot parameters: box ends, 25th and 75th percentiles; whiskers, 10th and 90th percentiles; open circles represent means from individual cells; bin size 0.1 pA; line, median; dot, mean. p-values (shown on the graphs) are from Kruskal–Wallis test. Line series plot p-values are from Student’s paired t-test. For all p-values, * with underline indicates significance with p < 0.05.
 
 Having established that homomeric Ca2+-permeable receptors are not contributing to the homeostatic increase in mEPSC amplitude, we turned to immunofluorescence and confocal imaging to assess whether GluA2 receptor expression, which will identify GluA2 homomers and GluA2 heteromers (the former unlikely to contribute to mEPSCs given their low conductance relative to heteromers; Swanson et al., 1997; Mansour et al., 2001), was increased in our wild-type mouse cortical cultures following 48 hr treatment with TTX. Since mEPSCs necessarily report synaptic levels of receptors, we used VGLUT1 immunofluorescence to identify synapses on pyramidal primary apical dendrites labeled with MAP-2 immunofluorescence. We focused on the primary dendrite of pyramidal neurons as a way to reduce variability that might arise from being at widely ranging distances from the cell body or from inadvertently sampling dendritic regions arising from inhibitory neurons. In addition, it has been shown that there is a clear increase in response to glutamate in this region (Turrigiano et al., 1998). Figure 4 (top) shows two pyramidal neurons, one from an untreated culture on the left, and one from a TTX-treated culture on the right, prepared from Rab3a+/+ mice. To measure characteristics of synaptically located GluA2 receptor clusters, we zoomed in on the primary dendrite (region in white rectangle). The zoomed regions for single confocal sections of the selected area are shown below and contain pairs of VGLUT1- and GluA2-immunofluorescent clusters indicated by white trapezoidal frames. A dendrite typically required ~10 confocal sections to be fully captured, and the total number of synaptic pairs for all the sections imaged on a dendrite averaged 20 (20.4 ± 6.5 (SD); range, 11–38) so this is an atypically high number of pairs within a single section; these particular dendrites and sections were selected for illustration purposes. In addition to the synaptic pairs, we observed many GluA2-immunofluorescent clusters not associated with VGLUT1 immunofluorescence (a few are indicated with white arrows), most probably extrasynaptic receptors. There were also GluA2-positive clusters present outside of MAP2-positive dendrites, which may be located on astrocytes (Fan et al., 1999). Finally, GluA2-immunofluorescent clusters close to VGLUT1 immunofluorescence but not located along any apparent MAP2-positive neurites suggest the presence of axon–axonal contacts, although VGLUT1 has also been detected in astrocytes (Ormel et al., 2012). Only sites that contained both VGLUT1 and GluA2 immunofluorescence close to the primary MAP2-positive dendrite or a secondary branch along this primary dendrite were selected for analyses. In the experiment from which these images were collected, we analyzed the distance from the cell body for each synapse. The average distance from the cell body, for dendrites from the untreated cell, was 38.5 ± 2.8 µm; for the TTX-treated cell, it was 42.4 ± 3.2 µm (p = 0.35, Kruskal–Wallis test). Since the greatest distance from the cell body is set by the outer limit of the zoom window, and that window was placed adjacent to the cell body, distances in other experiments would be in this same range.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/90261/elife-90261-fig4-v1.jpg)
 
-**Figure 4.:** Rab3a+/+ mice.(Top) Non-zoomed single confocal sections collected with a 60X oil immersion objective of recognizably pyramidal-shaped neurons, presumed to be excitatory neurons, selected for synaptic GluA2 analysis. A neuron was selected from an untreated coverslip (CON, left) and a TTX-treated coverslip (TTX, right) from the same culture prepared from Rab3a+/+ animals (=Rab3a+/+ Culture #2 in Figure 5). The white rectangular boxes indicate 5X zoomed areas shown in the images below. Note that the depth of the single confocal section of the non-zoomed neuron image is not at the same depth as the confocal section in the zoomed dendritic image, so some features are not visible in both images. Scale bar, 20 µm. (Bottom) 5X zoom single confocal sections selected for demonstration purposes because they had an unusually high number of identified synaptic pairs along the primary dendrite contained within a single confocal section. Synaptic pairs, highlighted with white trapezoids, were identified based on close proximity of GluA2 (red) and VGLUT1 (white) immunofluorescence, apposed to the MAP2 immunofluorescent primary dendrite (green). Some apparent synaptic pairs are not highlighted with a white trapezoid because there was a different confocal section in which the two immunofluorescent sites were maximally bright. There were GluA2-positive clusters located on the primary dendrites that were not apposed to VGLUT1-positive terminals (four of these non-synaptic GluA2 clusters are highlighted with white arrows in the MAP2-GluA2 and MAP2-GluA2-VGLUT1 panels). Scale bar, 10 µm. Images have been enhanced for visualization purposes only. No image manipulation was performed prior to signal quantification.
+**Figure 4.:** (Top) Non-zoomed single confocal sections collected with a 60X oil immersion objective of recognizably pyramidal-shaped neurons, presumed to be excitatory neurons, selected for synaptic GluA2 analysis. A neuron was selected from an untreated coverslip (CON, left) and a TTX-treated coverslip (TTX, right) from the same culture prepared from Rab3a+/+ animals (=Rab3a+/+ Culture #2 in Figure 5). The white rectangular boxes indicate 5X zoomed areas shown in the images below. Note that the depth of the single confocal section of the non-zoomed neuron image is not at the same depth as the confocal section in the zoomed dendritic image, so some features are not visible in both images. Scale bar, 20 µm. (Bottom) 5X zoom single confocal sections selected for demonstration purposes because they had an unusually high number of identified synaptic pairs along the primary dendrite contained within a single confocal section. Synaptic pairs, highlighted with white trapezoids, were identified based on close proximity of GluA2 (red) and VGLUT1 (white) immunofluorescence, apposed to the MAP2 immunofluorescent primary dendrite (green). Some apparent synaptic pairs are not highlighted with a white trapezoid because there was a different confocal section in which the two immunofluorescent sites were maximally bright. There were GluA2-positive clusters located on the primary dendrites that were not apposed to VGLUT1-positive terminals (four of these non-synaptic GluA2 clusters are highlighted with white arrows in the MAP2-GluA2 and MAP2-GluA2-VGLUT1 panels). Scale bar, 10 µm. Images have been enhanced for visualization purposes only. No image manipulation was performed prior to signal quantification.
 
 Variability in the magnitude of the homeostatic response from culture to culture is averaged out in physiological experiments by the pooling of data from many cells across many cultures. To reduce the necessity for many cultures, we chose to pair experiments in the same cultures by recording mEPSCs from one set of coverslips and processing another set of coverslips from the same culture for immunofluorescence. We also wanted to determine if the homeostatic response of mEPSC amplitudes varied from culture to culture, and if so, whether the GluA2 receptor levels varied in parallel. We completed this matched paradigm of physiology and immunofluorescence for three cultures prepared from Rab3a+/+ mice. We first present the results as means for each culture, for control and TTX-treated dishes, for mEPSC data (Figure 5A) and imaging data (Figure 5B). Levels of GluA2 immunofluorescence at synaptic sites were quantified by the size of the GluA2-immunofluorescent receptor cluster, because this showed the greatest response to activity blockade; the average intensity value, and the integral of intensity values across the area of the cluster, are included in a summary of the data in Table 1. Three of three cortical cultures showed an increase in mean mEPSC amplitude after TTX treatment. In contrast, one of the same three cultures showed a decrease in mean GluA2 receptor cluster size, suggesting that the decrease in receptor levels in Culture #3 was not due to a lack of homeostatic effect on mEPSC amplitudes in that culture. Because there was a clear trend toward increased GluA2 receptor cluster size, but the receptor response appears more variable, we performed immunofluorescence measurements on two additional cortical cultures, both of which showed modest increases after TTX treatment (Figure 5C). We confirmed that there was also not a consistent increase in GluA1 receptor levels in two matched cultures that showed robust homeostatic increases in mEPSC amplitudes (Figure 5—figure supplement 1A, culture mean mEPSC amplitudes; Figure 5—figure supplement 1B, culture mean GluA1 receptor cluster sizes).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/90261/elife-90261-fig5-v1.jpg)
+
+**Figure 5.:** (A) Culture averages of mEPSC amplitudes for untreated (CON) and TTX-treated coverslips (TTX) in each of three Rab3a+/+ mouse cortical co-cultures. Culture #1, CON, N = 6, 14.2 ± 2.2 pA; TTX, N = 6, 15.9 ± 1.9 pA; Culture #2, CON, N = 7, 13.8 ± 2.4 pA; TTX, N = 8, 17.7 ± 1.8 pA; Culture #3, CON, N = 10, 13.4 ± 0.8 pA; TTX, N = 9, 15.7 ± 1.0 pA. (B) Culture averages of GluA2 receptor cluster size in the same three cultures as shown in (A). Culture #1, CON, N = 10, 0.73 ± 0.09 µm2; TTX, N = 9, 0.89 ± 0.09 µm2; Culture #2, CON, N = 9, 0.91 ± 0.12 µm2; TTX, N = 9, 1.42 ± 0.24 µm2; Culture #3, CON, N = 10, 1.05 ± 0.11 µm2; TTX, N = 9, 0.95 ± 0.15 µm2. (C) Two additional culture averages are included that did not have corresponding mEPSC recordings. Culture #4, CON, N = 10, 0.58 ± 0.07 µm2; TTX, N = 10, 0.71 ± 0.04 µm2; Culture #5, CON, N = 10, 0.89 ± 0.05 µm2; TTX, N = 10, 0.95 ± 0.08 µm2. (D) Box plots of cell mean mEPSC amplitudes pooled from same three cultures as shown in (A). CON, N = 23 cells, 13.7 ± 0.9 pA; TTX, N = 24 cells, 16.4 ± 0.9 pA. (E) Box plots of dendrite mean GluA2 receptor cluster size pooled from same three cultures as shown in (A) and (B). CON, N = 29 dendrites, 0.90 ± 0.06 µm2; TTX, N = 28 dendrites, 1.08 ± 0.10 µm2. (F) Box plots of dendrite mean GluA2 receptor cluster size pooled from the same five cultures shown in (C). CON, N = 49 dendrites, 0.83 ± 0.04 µm2; TTX, N = 48 dendrites, 0.98 ± 0.07 µm2. Line series, Student’s paired t-test; box plots, Kruskal–Wallis test. Box plot parameters: box ends, 25th and 75th percentiles; whiskers, 10 and 90 percentiles; open circles indicate means of individual cells/dendrites; bin size 0.1 pA, 0.05 µm2; line, median; dot, mean. For all p-values, * with underline indicates significance with p < 0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/90261/elife-90261-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Culture averages of mEPSC amplitudes for untreated (CON) and TTX-treated coverslips (TTX) in each of two Rab3a+/+ mouse cortical co-cultures. Culture #2, CON, N = 7, 13.8 ± 2.4 pA; TTX, N = 8, 17.7 ± 1.8 pA (+28.3%); Culture #6, CON, N = 6, 13.0 ± 1.5 pA; TTX, N = 6, 18.5 ± 2.0 pA (+42.3%). (B) Culture averages of GluA1 receptor cluster size in the same two cultures as shown in (A). Culture #2, CON, N = 10, 0.37 ± 0.04 µm2; TTX, N = 10, 0.40 ± 0.06 µm2 (+8.1%) Culture #6, CON, N = 10, 0.35 ± 0.05 µm2; TTX, N = 10, 0.33 ± 0.04 µm2 (−5.7%) ‘Culture #2’ is the same Culture #2 depicted in Figure 5, different coverslips were processed for GluA1 immunofluorescence labeling. GluA1 receptor cluster intensity did not increase in Culture #2 (CON, 364 vs. TTX, 357) or Culture #6 (CON, 357 vs. TTX, 363). Live cultures were exposed to GluA1 antibody against the extracellular domain (ABN241, purchased from EMD Millipore, now available from Millipore Sigma) before being fixed and processed with secondary antibodies.
+
+**Table 1.**
+ Comparison of miniature excitatory postsynaptic current (mEPSC) amplitude and GluA2 receptor cluster characteristics in mouse cortical cultures prepared from Rab3a+/+ mice and Rab3a−/− mice.*p < 0.05, Kruskal–Wallis test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Rab3a+/+</th>
+      <th colspan="4">Rab3a−/−</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Quantity</td>
+      <td>CON, mean, SEM</td>
+      <td>TTX, mean, SEM</td>
+      <td>% change</td>
+      <td>p-value</td>
+      <td>CON, mean, SEM</td>
+      <td>TTX, mean, SEM</td>
+      <td>% change</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>mEPSC amplitude</td>
+      <td>13.7 ± 0.9 pA(23 cells,3 cultures)</td>
+      <td>16.4 ± 0.9 pA(24 cells,3 cultures)</td>
+      <td>+19.7</td>
+      <td>*0.02</td>
+      <td>14.9 ± 0.8 pA(21 cells,3 cultures)</td>
+      <td>13.5 ± 0.9 pA(21 cells,3 cultures)</td>
+      <td>−9.4</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>GluA2 cluster size</td>
+      <td>0.83 ± 0.04 µm2(49 cells,5 cultures)</td>
+      <td>0.98 ± 0.07 µm2(48 cells,5 cultures)</td>
+      <td>+18.1</td>
+      <td>0.21</td>
+      <td>0.93 ± 0.05 µm2(30 cells,3 cultures)</td>
+      <td>0.91 ± 0.05 µm2(29 cells,3 cultures)</td>
+      <td>−2.2</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td>GluA2 cluster intensity</td>
+      <td>733 ± 14 a.u.(49 cells,5 cultures)</td>
+      <td>738 ± 13 a.u.(48 cells,5 cultures)</td>
+      <td>+0.7</td>
+      <td>0.69</td>
+      <td>766 ± 12 a.u.(30 cells,3 cultures)</td>
+      <td>776 ± 15 a.u.(29 cells,3 cultures)</td>
+      <td>+1.3</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <td>GluA2 cluster integral</td>
+      <td>311,021 ± 19,282 a.u.(49 cells,5 cultures)</td>
+      <td>365,366 ± 27,080 a.u.(48 cells,5 cultures)</td>
+      <td>+17.4</td>
+      <td>0.22</td>
+      <td>369,436 ± 23,439 a.u.(30 cells,3 cultures)</td>
+      <td>364,237 ± 25,833 a.u.(29 cells,3 cultures)</td>
+      <td>−0.8</td>
+      <td>0.86</td>
+    </tr>
+  </tbody>
+</table>
 
 We next pooled data from the multiple cultures to examine effects of activity blockade on GluA2 receptors at the level of cell means. Because the average number of synaptic sites identified in the primary dendrites in three cultures was 20.4, we also took 20 mEPSC samples from each cell, the 21st to the 40th mEPSC recorded, to minimize any differences in variability between GluA2 receptors and mEPSCs that might be due to a difference in sampling. In the data pooled from the three matched experiments, neurons from Rab3a+/+ cultures showed a significant increase in mean mEPSC amplitudes following activity blockade (Figure 5D; Table 1). This result indicates that the homeostatic response averaged across the 3 cultures was very similar to, but slightly smaller than, that of the dataset presented in Figure 1. The mean for size of GluA2-immunofluorescent receptor clusters showed a trend toward higher values after activity blockade (18.1%) that was of similar magnitude to the mEPSC amplitude increase (19.7%), but did not reach statistical significance for three cultures (Figure 5E) or five cultures (Figure 5F; Table 1). As expected, mean mEPSC amplitude was not increased following activity blockade in the data pooled from a new set of three Rab3a−/− cultures (Table 1). For immunofluorescence results from the same Rab3a−/− cultures, no trend toward higher values was apparent for GluA2 receptor cluster characteristics (Table 1). However, given the variability of the GluA2 response in cultures from Rab3a+/+ mice, it would require a much higher number of Rab3a+/+ and Rab3a−/− cultures to make any firm conclusions about the role of Rab3a in the homeostatic response of GluA2 receptors.
 
 Having used VGLUT1 immunofluorescence to mark synaptic sites, we could also ask whether there was a presynaptic effect of activity blockade on the size, intensity, or integral of the VGLUT1 signal at sites apposed to the previously examined GluA2 postsynaptic sites. In the pooled data from cultures prepared from Rab3a+/+ mice, we found no change in the size of the VGLUT1-positive regions and trends toward reduced intensity and integral (Table 2). These data do not support the idea that activity blockade caused an increase in the amount of VGLUT1 per vesicle, although we cannot rule out that a simultaneous reduction in the number of vesicles obscured the effect, since we did not have an independent label for synaptic vesicles. In cultures prepared from Rab3a−/− mice, the size, intensity, and integral of the VGLUT1-positive regions did not significantly change (Table 2).
+
+**Table 2.**
+ Comparison of miniature excitatory postsynaptic current (mEPSC) amplitude and VGLUT1-positive presynaptic site characteristics in mouse cortical cultures prepared from Rab3a+/+ and Rab3a−/− mice.mEPSC data are identical to that in Table 1, reproduced here for comparison purposes. *p < 0.05, Kruskal–Wallis test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Rab3a+/+</th>
+      <th colspan="4">Rab3a−/−</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Quantity</td>
+      <td>CON, mean, SEM</td>
+      <td>TTX, mean, SEM</td>
+      <td>% change</td>
+      <td>p-value</td>
+      <td>CON, mean, SEM</td>
+      <td>TTX, mean, SEM</td>
+      <td>% change</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>mEPSC amplitude</td>
+      <td>13.9 ± 1.1 pA(23 cells,3 cultures)</td>
+      <td>16.7 ± 0.9 pA(24 cells,3 cultures)</td>
+      <td>+20.1</td>
+      <td>*0.01</td>
+      <td>14.9 ± 0.8 pA(21 cells,3 cultures)</td>
+      <td>13.5 ± 0.9 pA(21 cells,3 cultures)</td>
+      <td>−9.4</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>VGLUT1 site size</td>
+      <td>1.17 ± 0.08 µm2(29 cells,3 cultures)</td>
+      <td>1.07 ± 0.06 µm2(24 cells,3 cultures)</td>
+      <td>−8.5</td>
+      <td>0.97</td>
+      <td>0.89 ± 0.03 µm2(30 cells,3 cultures)</td>
+      <td>0.95 ± 0.04 µm2(29 cells,3 cultures)</td>
+      <td>+6.7</td>
+      <td>0.55</td>
+    </tr>
+    <tr>
+      <td>VGLUT1 site intensity</td>
+      <td>699 ± 39 a.u.(29 cells,3 cultures)</td>
+      <td>639 ± 31 a.u.(28 cells,3 cultures)</td>
+      <td>−8.6</td>
+      <td>0.28</td>
+      <td>554 ± 13 a.u.(30 cells,3 cultures)</td>
+      <td>570 ± 19 a.u.(29 cells,3 cultures)</td>
+      <td>+2.9</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>VGLUT1 site integral</td>
+      <td>430,787 ± 36,818 a.u.(29 cells,3 cultures)</td>
+      <td>351,653 ± 21,689 a.u.(28 cells,3 cultures)</td>
+      <td>−18.4</td>
+      <td>0.13</td>
+      <td>257,159 ± 18,265 a.u.(30 cells,3 cultures)</td>
+      <td>289,857 ± 18,521 a.u.(29 cells,3 cultures)</td>
+      <td>+12.7</td>
+      <td>0.21</td>
+    </tr>
+  </tbody>
+</table>
 
 We have demonstrated here for the first time that the synaptic vesicle protein Rab3a influences the homeostatic regulation of quantal amplitude. What are possible ways that Rab3a could exert its effect? It has previously been shown that exogenous addition of Tnfa to hippocampal cultures causes an increase in surface expression of GluA1 receptors (although not GluA2 receptors), and that the homeostatic increase in mEPSC amplitudes is abolished in cultures prepared from the Tnfa deletion mouse (Stellwagen et al., 2005; Stellwagen and Malenka, 2006). Furthermore, neurons from Tnfa+/+ mice plated on glial feeder layers derived from Tnfa−/− mice fail to show the increase in mEPSC amplitude after TTX treatment, indicating that the Tnfa inducing the receptor increases following activity blockade comes from the glial cells (Stellwagen and Malenka, 2006). It has recently been shown that the source of Tnfa is astrocytes rather than microglia (Heir et al., 2024).
 
@@ -72,7 +222,7 @@ Rab3a has been detected in astrocytes (Maienschein et al., 1999; Hong et al., 20
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/90261/elife-90261-fig6-v1.jpg)
 
-**Figure 6.:** Rab3a in neurons, not astrocytes, was required for full TTX-induced homeostatic plasticity.(A–C) Miniature excitatory postsynaptic current (mEPSC) amplitude (middle) and frequency (right) data from dissociated cortical neurons plated on an astrocyte feeder layer, each prepared separately from the type of mice depicted in the schema (left): (A) Neurons from Rab3a+/+ mice plated on astrocytes from Rab3a+/+ mice. Box plots for mEPSC amplitudes (CON, N = 17 cells, 13.3 ± 0.5 pA; TTX, N = 20 cells, 16.7 ± 1.2 pA) and mEPSC frequency in the same recordings (mean, CON, 2.54 ± 0.57 s–1; TTX, 3.48 ± 0.64 s–1); from four cultures. (B) Neurons from Rab3a+/+ mice plated on astrocytes from Rab3a−/− mice. Box plots for average mEPSC amplitude (CON, N = 11 cells, 13.3 ± 1.0 pA; TTX, N = 11 cells, 18.8 ± 1.4 pA) and average mEPSC frequency in the same recordings (CON, 2.01 ± 0.41 s–1; TTX, 4.47 ± 1.53 s–1); from two cultures. (C) Neurons from Rab3a−/− neurons plated on astrocytes from Rab3a+/+ mice. Box plots for average mEPSC amplitude (CON, N = 14 cells, 15.2 ± 1.1 pA; TTX, N = 11 cells, 16.9 ± 0.7 pA) and mEPSC frequency in the same recordings (CON, 4.47 ± 1.21 s–1; TTX, 3.02 ± 0.70 s–1); from three cultures. Box plot parameters: box ends, 25th and 75th percentiles; whiskers, 10th and 90th percentiles, bin size 0.1 pA; open circles represent means from individual cells; line, median; dot, mean. p-values (shown on the graphs) are from Tukey’s post hoc test following a two-way ANOVA. p-values denoted with * and underline indicate significance of p < 0.05.
+**Figure 6.:** (A–C) Miniature excitatory postsynaptic current (mEPSC) amplitude (middle) and frequency (right) data from dissociated cortical neurons plated on an astrocyte feeder layer, each prepared separately from the type of mice depicted in the schema (left): (A) Neurons from Rab3a+/+ mice plated on astrocytes from Rab3a+/+ mice. Box plots for mEPSC amplitudes (CON, N = 17 cells, 13.3 ± 0.5 pA; TTX, N = 20 cells, 16.7 ± 1.2 pA) and mEPSC frequency in the same recordings (mean, CON, 2.54 ± 0.57 s–1; TTX, 3.48 ± 0.64 s–1); from four cultures. (B) Neurons from Rab3a+/+ mice plated on astrocytes from Rab3a−/− mice. Box plots for average mEPSC amplitude (CON, N = 11 cells, 13.3 ± 1.0 pA; TTX, N = 11 cells, 18.8 ± 1.4 pA) and average mEPSC frequency in the same recordings (CON, 2.01 ± 0.41 s–1; TTX, 4.47 ± 1.53 s–1); from two cultures. (C) Neurons from Rab3a−/− neurons plated on astrocytes from Rab3a+/+ mice. Box plots for average mEPSC amplitude (CON, N = 14 cells, 15.2 ± 1.1 pA; TTX, N = 11 cells, 16.9 ± 0.7 pA) and mEPSC frequency in the same recordings (CON, 4.47 ± 1.21 s–1; TTX, 3.02 ± 0.70 s–1); from three cultures. Box plot parameters: box ends, 25th and 75th percentiles; whiskers, 10th and 90th percentiles, bin size 0.1 pA; open circles represent means from individual cells; line, median; dot, mean. p-values (shown on the graphs) are from Tukey’s post hoc test following a two-way ANOVA. p-values denoted with * and underline indicate significance of p < 0.05.
 
 In summary, in the absence of Rab3a from glia, the homeostatic plasticity of mEPSC amplitude following activity blockade was normal, whereas in the absence of Rab3a in neurons, homeostatic plasticity was greatly diminished. This result makes it highly unlikely that Rab3a is required for the release of Tnfa, or another factor from glia, that induces a homeostatic upregulation of postsynaptic receptors and thereby increases mEPSC amplitude following TTX treatment. Neuronal Rab3a appears to mediate the homeostatic increase in mEPSC amplitude following activity blockade.
 
@@ -80,7 +230,7 @@ In summary, in the absence of Rab3a from glia, the homeostatic plasticity of mEP
 
 We found that homeostatic synaptic plasticity of mEPSC amplitude in dissociated mixed cultures of mouse cortical neurons and glia behaved remarkably similar to the mouse NMJ in response to loss of Rab3a function: in cultures from Rab3a−/− mice, the increase in mEPSC amplitudes following prolonged network silencing by TTX was strongly diminished, and in cultures from Rab3aEbd/Ebd mice, basal mEPSC amplitude was increased compared to that of wild-type cultures and was not further modified by TTX treatment. These results suggest that normal function of the synaptic vesicle protein Rab3a is required for the homeostatic increase of mEPSC amplitude in cortical cultures.
 
-## Is Rab3a acting in the presynaptic cell to cause homeostatic increase in mEPSC amplitude?
+### Is Rab3a acting in the presynaptic cell to cause homeostatic increase in mEPSC amplitude?
 
 The impetus for our current study was two previous studies in which we examined homeostatic regulation of quantal amplitude at the NMJ. An advantage of studying the NMJ is that synaptic ACh receptors are easily identified with fluorescently labeled α-bungarotoxin, which allows for very accurate quantification of postsynaptic receptor density. We were able to detect a known change due to mixing 2 colors of α-bungarotoxin to within 1% (Wang et al., 2005). Using this model synapse, we showed that there was no increase in synaptic AChRs after TTX treatment, whereas mEPC increased 35% (Wang et al., 2005). We further showed that the presynaptic protein Rab3a was necessary for full upregulation of mEPC amplitude (Wang et al., 2011). These data strongly suggested Rab3a contributed to homeostatic upregulation of quantal amplitude via a presynaptic mechanism. With the current study showing that Rab3a is required for the homeostatic increase in mEPSC amplitude in cortical neuron cultures, one interpretation is that in both situations, Rab3a is required for an increase in the presynaptic quantum.
 
@@ -90,7 +240,7 @@ Another way to increase the presynaptic quantum is to increase levels of the tra
 
 Finally, the amount of transmitter released by a vesicle could be increased due to larger vesicle size. Larger vesicle diameter has been observed following activity disruption in multiple paradigms, including ocular deprivation, cortical ablation, and immobilization (Kawana et al., 1971; Lloret and Saavedra, 1975; Cheresharov et al., 1978). Loss of Rab3 family members is associated with increased vesicle size (Riedel et al., 2002; Schonn et al., 2010). An increase in volume has been shown to increase miniature endplate junctional current amplitude at the Drosophila NMJ (Karunanithi et al., 2002). Rab3a could be required for an activity-dependent increase in vesicle size, but the increase in diameter needed for a 25% increase in transmitter, and therefore mEPSC amplitude (~3%), would be difficult to detect.
 
-## Is Rab3a acting on postsynaptic receptors to cause an increase in mEPSC amplitude?
+### Is Rab3a acting on postsynaptic receptors to cause an increase in mEPSC amplitude?
 
 In neurons, the increase in mEPSC amplitude following block of activity was not due to increases in Ca2+-permeable GluA1 homomers because acute NASPM application was unable to reverse the TTX-induced increase in amplitude. While we found that the effect of TTX treatment on mEPSC amplitude and GluA2 receptor levels was of similar magnitude, the effect on GluA2 receptor levels was not statistically significant for the pooled datasets acquired in the same three cultures, nor in a larger dataset containing an additional two cultures. In light of the extensive literature documenting increases in GluA1 or GluA2 receptors, or both, after activity blockade, the less than convincing increase in GluA2 receptor levels in the current work came as a surprise. The reason for the lack of significance was that the increase in receptors was more variable. We are aware of three possible explanations for greater variability. (1) The number of synaptic sites sampled was smaller for the imaging dataset. This was because we limited our analysis to synaptic receptors on the primary dendrite, where a clear increase in sensitivity to exogenously applied glutamate was demonstrated (see Figure 3 in Turrigiano et al., 1998). To address this issue, we limited our sample size of mEPSCs in the matched experiments to the same number per cell as the mean sample size per cell for imaging, but there was still a discrepancy in the effect of TTX on mEPSCs versus receptors. (2) The small sample of only three cultures was not enough to reveal the increase in receptors. We attempted to address this by adding two more cultures. Although both additional cultures showed small increases in GluA2 receptor cluster size, when cells from these cultures were included in the pooled dataset, the p-value was not substantially improved. A remaining possibility is: (3) The complexity involved in processing cultures for immunofluorescence introduces variability that obscures the true effect. One can get around technical issues related to immunofluorescence processing by performing Western blots, but then any changes detected could be due to upregulation of extrasynaptic receptors.
 
@@ -98,54 +248,190 @@ What remains unclear is why our data were impacted by the variability inherent i
 
 Increased receptors likely contribute to increases in mEPSC amplitudes, but because we do not have a significant increase in GluA2 receptors in our experiments, it is impossible to conclude that the increase is lacking in cultures from Rab3a−/− neurons. Furthermore, without additional experiments targeting Rab3a deletion to the pre- or post-synaptic compartment, we cannot rule out that Rab3a is regulating homeostatic plasticity in mouse cortical cultures by acting postsynaptically on receptor trafficking. To our knowledge, there is no evidence localizing Rab3a to postsynaptic dendritic sites, although other presynaptic molecules, such as SNARE proteins, synaptotagmins, and NSF, have been identified in the postsynaptic compartment (Lledo et al., 1998; Nishimune et al., 1998; Osten et al., 1998; Song et al., 1998; Araki et al., 2010; Kennedy et al., 2010; Suh et al., 2010; Jurado et al., 2013; Hussain and Davanger, 2015; Gu et al., 2016; Wu et al., 2017). A recent report implicates Rab3a in the localization of plasma membrane proteins, including the EGF receptor, in rafts in HEK cells and Jurkat-T cells, which indicates Rab3a can be found in other specialized locations besides the presynaptic nerve terminal (Diaz-Rohrer et al., 2023).
 
-## Neuronal, not glial, Rab3a is required for homeostatic regulation of quantal amplitude
+### Neuronal, not glial, Rab3a is required for homeostatic regulation of quantal amplitude
 
 Astrocytic release of Tnfa was shown to mediate the increase in mEPSC amplitudes in prolonged TTX-treated cultures of dissociated hippocampal neurons and cultures of hippocampal slices (Stellwagen and Malenka, 2006; Heir et al., 2024). Tnfa accumulates after activity blockade, and directly applied to neuronal cultures, can cause an increase in GluA1 receptors, providing a potential mechanism by which activity blockade leads to the homeostatic upregulation of postsynaptic receptors (Beattie et al., 2002; Stellwagen et al., 2005; Stellwagen and Malenka, 2006). However, we found that loss of Rab3a in glia did not disrupt the increase in mEPSC amplitude after activity blockade, so it is unlikely that the Rab3a-dependent homeostatic increase in mEPSC amplitude is via the astrocytic-Tnfa pathway. Interestingly, we previously showed that the homeostatic increase in NMJ mEPC amplitude was completely normal in the absence of Tnfa (Wang et al., 2011), suggesting the possibility that neuronal Rab3a can act via a non-Tnfa mechanism to contribute to homeostatic regulation of quantal amplitude, although we have not ruled out a neuronal Rab3a-mediated Tnfa pathway in cortical cultures.
 
-## Is the lack of homeostatic plasticity in the Earlybird mutant due to occlusion?
+### Is the lack of homeostatic plasticity in the Earlybird mutant due to occlusion?
 
 We found that mEPSC amplitude was increased in untreated cultures prepared from Rab3aEbd/Ebd mice, compared to mEPSC amplitude in cultures from wild-type mice. If there is a limit to how large an mEPSC can become, it is possible that the mutant Rab3a does not affect homeostatic plasticity, only occludes it. Similar increases in mEPSC amplitude at baseline, combined with a failure to increase further after activity blockade, were noted in cultures prepared from mECP2, AKAP, Homer1a, and Arc/Arg3.1 deletion mice (Shepherd et al., 2006; Hu et al., 2010; Xu and Pozzo-Miller, 2017; Sanderson et al., 2018) as well as in cultures treated with ubiquitin proteasome inhibitors (Jakawich et al., 2010) or microRNA 186-5p (Silva et al., 2019), suggesting the possibility of a generalized phenomenon in which increased mEPSC amplitude is induced when homeostatic regulation is disrupted. Since we did not observe such an increase in mEPSC amplitude at baseline in cultures from Rab3a−/− mice, it remains a possibility that the point mutant may bind to novel partners, causing activities that would not be either facilitated or inhibited by Rab3a. Still, it is a strong coincidence that the novel activity of the mutant Earlybird Rab3a would affect mEPSC amplitude, the same characteristic that is modulated by activity blockade in a Rab3a-dependent manner. Although we cannot rule out occlusion, an alternate interpretation is that the presence of the mutant protein mimics the condition of activity blockade.
 
-## Rab3a is the first presynaptic function protein required for full homeostatic plasticity of mEPSC amplitude
+### Rab3a is the first presynaptic function protein required for full homeostatic plasticity of mEPSC amplitude
 
 The number of molecules shown to be required for homeostatic synaptic plasticity of quantal size in neuronal cultures may have surpassed ~20 (see Koesters et al., 2024 for a recent summary), but fall into two main categories: molecules involved in glutamate receptor expression or trafficking, and signaling molecules. To our knowledge, this is the first evidence that a presynaptic protein is participating in this process. Homeostatic synaptic plasticity is becoming increasingly implicated in essential normal functions such as sleep (Tononi and Cirelli, 2014; Diering et al., 2017; Torrado Pacheco et al., 2021), and pathological conditions such as epilepsy, neuropsychiatric disorders, Huntington’s, and alcohol use disorder (Trasande and Ramirez, 2007; Fernandes and Carvalho, 2016; Wang et al., 2017; Lovinger and Abrahao, 2018; Smith-Dijak et al., 2019; Lignani et al., 2020; Suzuki et al., 2021; Kavalali and Monteggia, 2023). Therefore, our identification of a novel Rab3a-dependent regulatory pathway in homeostatic synaptic plasticity may have important therapeutic implications. Our findings also further cement the importance of Rab3a in activity-dependent modulation of synaptic strength.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (include species and sex here)</td>
+      <td>Rab3A knockout strain, C57BL/6J; (Mus musculus, mixed sex)</td>
+      <td>The Jackson Laboratory</td>
+      <td>B6;129S-Rab3atm1Sud/J (strain #: 002443); RRID:IMSR_JAX:002443</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (include species and sex here)</td>
+      <td>Rab3A earlybird strain, C57BL/6J; C3HeJ (Mus musculus, mixed sex)</td>
+      <td>Kapfhamer et al., 2002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Escherichia coli)</td>
+      <td>Bsp1286I</td>
+      <td>New England Biolabs</td>
+      <td>Cat. #: R0120S</td>
+      <td>Restriction enzyme</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GluA (mouse, extracellular, monoclonal: clone 6C4)</td>
+      <td>Millipore</td>
+      <td>Cat. #: MAB397RRID:AB_2113875</td>
+      <td>1:40</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MAP2 (chicken, polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab5392RRID:AB_2138153</td>
+      <td>1:2500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-VGLUT1 (rabbit, polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat. #: 135 303RRID:AB_887875</td>
+      <td>1:4000</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>D8Mit31-F</td>
+      <td>This paper</td>
+      <td>Rab3A PCR Primers (forward)</td>
+      <td>TCC TGT GAC CTC CAA CTG TG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>D8Mit31-R</td>
+      <td>This paper</td>
+      <td>Rab3A PCR Primers (reverse)</td>
+      <td>GGC CCA AAA CTG AGC AAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RabF1</td>
+      <td>This paper</td>
+      <td>Rab3A ebd PCR Primers (forward)</td>
+      <td>TGA CTC CTT CAC TCC AGC CT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Dcaps3R</td>
+      <td>This paper</td>
+      <td>Rab3A ebd PCR Primers (reverse)</td>
+      <td>TGC ACT GCA TTA AAT GAC TCC T</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetrodotoxin (TTX)</td>
+      <td>Tocris</td>
+      <td>Cat. #: 1069</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-naphthyl acetylspermine (NASPM)</td>
+      <td>Tocris</td>
+      <td>Cat. #: 2766</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Picrotoxin</td>
+      <td>Sigma-Aldrich</td>
+      <td>P1675</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MiniAnalysis</td>
+      <td>Synaptosoft</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Papain</td>
+      <td>Worthington Biochemical</td>
+      <td>LK003178</td>
+      <td>Enzyme for neuronal cell dissociation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Neurobasal-A</td>
+      <td>Gibco</td>
+      <td>10888022</td>
+      <td>Neuronal cell culture media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>B27</td>
+      <td>Gibco</td>
+      <td>17504044</td>
+      <td>Serum-free culture media supplement</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All animal procedures were performed in accordance with the policies of the Institutional Animal Care and Use Committee of Wright State University (Animal User Protocols: 789, 901, 982, and 1082 for mouse breedings, and 796, 906, and 1011 for neuronal cultures). To determine the role of Rab3a in homeostatic plasticity in mouse cortical cultures, we employed two distinct genetic mouse strains with altered Rab3a function. Rab3a deletion mice were generated as follows: Rab3a+/− heterozygous mice descended from the Rab3a−/− strain obtained from Jackson Laboratories B6;129S-Rab3atm1Sud/J (strain #: 002443) were bred and genotyped as previously described (Kapfhamer et al., 2002; Wang et al., 2008), and maintained as a colony using multiple heterozygous breeding pairs. Homozygous Rab3a+/+ or Rab3a−/− mouse pups were obtained by breeding Rab3a+/+ pairs and Rab3a−/− pairs, respectively, so that the pups were the first-generation progeny of a homozygous mating. This protocol minimizes the tendency of multiple generations of Rab3a+/+ and Rab3a−/− homozygous breedings to produce progeny that are more and more genetically distinct. Rab3aEbd/Ebd mice were identified in an EU-mutagenesis screen of C57BL/6J mice, and after a cross to C3H/HeJ, were backcrossed for 3 generations to C57BL/6J (Kapfhamer et al., 2002). Rab3a+/Ebd heterozygous mice were bred at Wright State University and genotyped in a two-step procedure: (1) a PCR reaction (forward primer: TGA CTC CTT CAC TCC AGC CT; reverse primer: TGC ACT GCA TTA AAT GAC TCC T) followed by (2) a restriction digest with enzyme Bsp1286I (New England Biolabs) that distinguishes the Earlybird mutant by its different base-pair products. Rab3a+/− mice were backcrossed with Rab3a+/+ mice from the Earlybird heterozygous colony for 11 generations in an attempt to establish a single wild-type strain, but differences in mEPSC amplitude and adrenal chromaffin cell calcium currents persisted, likely due to genes that are close to the Rab3a site, resulting in two wild-type strains: (1) Rab3a+/+ from the Rab3a+/− colony, and (2) Rab3a+/+ from the Rab3a+/Ebd colony.
 
-## Primary culture of mouse cortical neurons
+### Primary culture of mouse cortical neurons
 
 Primary dissociated cultures of mixed neuronal and glia populations were prepared as previously described (Hanes et al., 2020). Briefly, postnatal day 0–2 (P0–P2) Rab3a+/+, Rab3a−/− or Rab3aEbd/Ebd neonates were euthanized by rapid decapitation, as approved by the Wright State University Institutional Animal Care and Use Committee, and brains were quickly removed. Each culture was prepared from the cortices harvested from two animals; neonates were not sexed. Cortices were collected in chilled Neurobasal-A media (Gibco) with osmolarity adjusted to 270 mOsm and supplemented with 40 U/ml DNAse I (Thermo Fisher Scientific). The tissues were digested with papain (Worthington Biochemical) at 20 U/ml at 37°C for 20 min followed by trituration with a sterile, fire-polished Pasteur pipette, then filtered through a 100-µm cell strainer and centrifuged at 1100 rpm for 2 min. After discarding the supernatant, the pellet was resuspended in room temperature Neurobasal-A media (270 mOsm), supplemented with 5% fetal bovine serum (FBS) for glia growth, and 2% B-27 supplement to promote neuronal growth (Gibco), L-glutamine, and gentamicin (Thermo Fisher Scientific). Neurons were counted and plated at 0.15 × 106 cells/coverslip onto 12 mm coverslips pre-coated with poly-L-lysine (BioCoat, Corning). This plating density produces a ‘high-density’ culture characterized by a complex mesh of neuronal processes criss-crossing the field of view, completely filling the space between cell bodies (see Figure 4). We found in preliminary experiments that an increase in mEPSC amplitude in mouse cortical cultures was inconsistent when cell density was low, likely due to lower levels of baseline activity, although it is a limitation of this study that we did not directly measure activity levels in cultures prepared from Rab3a+/+, Rab3a−/−, or Rab3aEbd/Ebd mice, and therefore do not know if differences in results are due to differences in activity levels. While unlikely for Rab3a+/+ and Rab3a−/− studies, given the mEPSC amplitude in untreated cultures was relatively small, it remains possible that in Rab3aEbd/Ebd studies, the larger mEPSC amplitude in untreated cultures was due to a loss of activity in these cultures. The culture media for the first day (0 DIV) was the same as the above Neurobasal-A media supplemented with FBS, B-27, L-glutamine, and gentamicin and was switched after 24 hr (1 DIV) to media consisting of Neurobasal-A (270 mOsm), 2% B-27, and L-glutamine without FBS to avoid its toxic effects on neuronal viability and health (Stellwagen and Malenka, 2006). Half of the media was changed twice weekly and experiments were performed at 13–14 DIV. Two days prior to experiments, tetrodotoxin (TTX) (500 nM; Tocris), a potent Na+ channel blocker, was added to some cultures to chronically silence all network activity and induce homeostatic synaptic plasticity mechanisms, while untreated sister cultures served as controls. Cultures prepared from mutant mice were compared with cultures from wild-type mice from their respective colonies. Note that the cultures comprising the Rab3a+/+ data here are a subset of the data previously published in Hanes et al., 2020. This smaller dataset was restricted to the time period over which cultures were also prepared from Rab3a−/− mice.
 
-## Preparation of glial feeder layers
+### Preparation of glial feeder layers
 
 Glial feeder layers were prepared from the cortices of P0–P2 Rab3a+/+ or Rab3a−/− mouse pups as described previously (Stellwagen and Malenka, 2006). Briefly, cortices were dissected and cells were dissociated as described above. Cell suspensions of mixed neuronal and glial populations were plated onto glass coverslips pre-coated with poly-L-lysine in Dulbecco’s modified Eagle media (Thermo Fisher Scientific) supplemented with 5% FBS (to promote glial proliferation and to kill neurons), L-glutamine, and gentamicin, and maintained in an incubator at 37°C, 5% CO2; cultures were maintained in this manner for up to 1 month to generate purely glial cultures (all neurons typically died off by 7 DIV). Culture media was replaced after 24 hr, and subsequent media changes were made twice weekly, replacing half of the culture media with fresh media. Feeder layers were not used for neuronal seeding until all native neurons were gone and glia approached 100% confluency (visually inspected).
 
-## Plating of neurons on glial feeder layers
+### Plating of neurons on glial feeder layers
 
 Cortical neurons were obtained as described above. The cell pellet obtained was resuspended in Neurobasal-A (osmolarity adjusted to 270 mOsm) containing B27 (2%, to promote neuronal growth), L-glutamine, and 5-fluorodeoxyuridine (FdU, a mitotic inhibitor; Sigma). Addition of FdU was used to prevent glial proliferation and contamination of the feeder layer with new glia, promoting only neuronal growth on the feeder layers (FdU-containing media was used for the maintenance of these cultures and all subsequent media changes). Glial culture media was removed from the feeder layer cultures, and the neuronal cell suspension was plated onto the glial feeder cultures. The culture strategy used to distinguish the relative roles of neuronal and glial Rab3a is outlined in Figure 6, Left. At 1 DIV, all of the culture media was removed and replaced with fresh Neurobasal-A media containing FdU described above, and half of the media was replaced twice per week for all subsequent media changes. Cultures were maintained in a 37°C, 5% CO2 incubator for 13–14 DIV.
 
-## Whole-cell voltage clamp to record mEPSCs
+### Whole-cell voltage clamp to record mEPSCs
 
 At 13–14 DIV, mEPSCs from TTX-treated and untreated sister cultures of Rab3a+/+ or Rab3a−/− neurons from the Rab3a+/− colony, or Rab3a+/+ or Rab3aEbd/Ebd neurons from the Rab3a+/Ebd colony, were recorded via whole-cell voltage clamp to assess the role of Rab3a in homeostatic synaptic plasticity. Recordings were taken from pyramidal neurons, which were identified visually by a prominent apical dendrite; images were taken of all cells recorded from. Cells were continuously perfused with a solution consisting of (in mM): NaCl (115), KCl (5), CaCl2 (2.5), MgCl2 (1.3), dextrose (23), sucrose (26), HEPES (4.2), pH = 7.2 (Stellwagen and Malenka, 2006). On the day of recording, the osmolarity of the media from the cultures was measured (normally 285–295 mOsm) and the perfusate osmolarity was adjusted to match the culture osmolarity to protect against osmotic shock to the neurons. To isolate glutamatergic mEPSCs, TTX (500 nM) and picrotoxin (50 μM) were included in the perfusion solution to block action potentials and GABAergic currents, respectively. The NMDA receptor antagonist, APV, was not included in the perfusion solution because in pilot studies, all mEPSCs were blocked by 10 µM CNQX and 50 µm picrotoxin, demonstrating no APV-sensitive mEPSCs were present (data not shown). Previous studies have described NMDA mEPSCs in neuronal cultures, but recordings were performed in 0 Mg2+ (Watt et al., 2000; Sutton et al., 2006). In our recordings, the presence of extracellular Mg2+ (1.3 mM) and TTX would mean that the majority of NMDA receptors are blocked by extracellular Mg2+ at resting Vm. Patch electrodes (3.5–5 MΩ) were filled with an internal solution containing (in mM): K-gluconate (130), NaCl (10), EGTA (1), CaCl2 (0.132), MgCl2 (2), HEPES (10), pH = 7.2. Osmolarity was adjusted to 10 mOsm less than the perfusion solution osmolarity, which we have found improves success rate of achieving low access resistance recordings. Neurons were clamped at a voltage of −60 mV using an Axopatch 200B patch-clamp (Axon Instruments), recorded from for 2–5 min, and data were collected with Clampex 10.0/10.2 (Axon Instruments).
 
-## NASPM application
+### NASPM application
 
 The antagonist of Ca2+-permeable AMPA receptors, N-naphthyl acetylspermine (NASPM, 20 µM; Tocris), was applied during recordings in a subset of experiments. NASPM is a synthetic analog of Joro Spider Toxin (JSTX) (Koike et al., 1997), and chemicals in this family block Ca2+-permeable glutamate receptors (Blaschke et al., 1993; Herlitze et al., 1993; Iino et al., 1996). The presence of the edited GluA2 subunit disrupts both the Ca2+ permeability and the sensitivity to JSTX and related substances (Blaschke et al., 1993; Bochet et al., 1994; Jonas and Burnashev, 1995). Therefore, 20 µM NASPM is expected to completely block AMPA receptors containing GluA1, GluA3, or GluA4 subunits (Hollmann et al., 1991; Burnashev et al., 1992), or the Kainate receptors containing GluA5 or GluA6 (Koike et al., 1997; Sun et al., 2009), but be ineffective against any heteromer or homomer containing GluA2 subunits. Because the effect of the spider toxins and their analogs is use-dependent (Herlitze et al., 1993; Iino et al., 1996; Koike et al., 1997), NASPM was applied with a depolarizing high K+ solution (25 mM KCl, 95 mM NaCl) which we expected to trigger release of glutamate and opening of glutamate-activated receptors, allowing entry of NASPM into the pore. Baseline recordings were performed for 2 min in our standard perfusate, followed by perfusion of NASPM + High K+ solution for 45 s, and then perfusion of a NASPM only solution for 5 min, after which recording was recommenced for 5 min (because we found in pilot experiments that frequency was reduced following NASPM application).
 
-## Analysis of mEPSCs
+### Analysis of mEPSCs
 
 mEPSCs were manually selected using Mini Analysis software (Synaptosoft), a standard program used for mEPSC event detection and analysis. Records were filtered at 2 kHz using a low-pass Butterworth filter prior to selection. The program detection threshold was set at 3 pA but the smallest mEPSC selected was 4.01 pA. A fully manual detection process means that the same criterion (‘does this look like an mEPSC?’) is applied to all events, not just the false positives or the false negatives, which prevents the bias from being primarily at one end or the other of the range of mEPSC amplitudes. It is important to note that when performing the MiniAnalysis process, the researcher did not know whether a record was from an untreated cell or a TTX-treated cell.
 
-## Immunofluorescence, microscopy, and data analysis
+### Immunofluorescence, microscopy, and data analysis
 
 Primary cultures of mouse cortical neurons were grown for 13–14 DIV. Antibodies to GluA2 (mouse ab against N-terminal, EMD Millipore) were added directly to live cultures at 1:40 dilution, and incubated at 37°C in a CO2 incubator for 45 min. Cultures were rinsed three times with PBS/5% donkey serum before being fixed with 4% paraformaldehyde. After 3 rinses in PBS/5% donkey serum, cultures were incubated in CY3-labeled donkey-anti-mouse secondary antibodies for 1 hr at room temperature, rinsed in PBS/5% donkey serum, permeabilized with 0.2% saponin, and incubated in chick anti-MAP2 (1:2500, AbCAM) and rabbit anti-VGLUT1 (1:4000, Synaptic Systems) for 1 hr at room temperature in PBS/5% donkey serum. After rinsing with PBS/5% donkey serum, coverslips were incubated with 488-anti chick and CY5-anti rabbit secondary antibodies for 1 hr at room temperature, rinsed, blotted to remove excess liquid, and inverted on a drop of Vectashield (Vector Labs). Coverslips were sealed with nail polish and stored at 4°C for <1 week before imaging. All secondary antibodies were from Jackson Immunoresearch and were used at 1:225 dilution.
 
 Coverslips were viewed on a Fluoview FV1000 laser scanning confocal microscope with a 60x oil immersion, 1.35 NA objective. Once a pyramidal neuron was identified and a single confocal section of the cell acquired (see top, Figure 4), Fluoview 2.1 software was used to zoom in on the primary dendrite (5X) and a series of confocal sections were taken every 0.5 µm. Images were analyzed offline with ImagePro 6 (Cybernetics). The composite image was used to locate synaptic sites containing both VGLUT1 and GluA2 immunoreactivity in close apposition to each other and to the primary dendrite or a secondary branch identified with MAP2 immunoreactivity. An area of interest (AOI) was manually drawn around the GluA2 cluster in the confocal section in which it was the brightest. The AOIs for a dendrite were saved in a single file; the AOI number and the confocal section it was associated with were noted for later retrieval. For quantification, AOIs were loaded, an individual AOI was called up on the appropriate section, and the count/measurement tool was used to apply a threshold. Multiple thresholds were used, 400–550, but we found that within a given experiment, the magnitude of the TTX effect was not altered by different thresholds; therefore, all data presented here use a threshold of 450. Pixels within the cluster that were above the threshold were automatically outlined, and size, average intensity, and integral of the outlined region saved to an Origin2020 (OriginLab) file for calculating mean values. For analyzing VGLUT1 sites, previous AOIs were examined, and if not directly over the VGLUT1 site, moved to encompass it (this happened when GluA2 and VGLUT1 were side by side rather than overlapping). The threshold was 200 for all VGLUT1 data except Rab3a+/+ Culture #1, where the threshold was 400. There was no threshold that worked for both that culture and the other cultures, with too much of the background regions being included for Culture #1 with a threshold of 200, and too little of the synaptic site area being included for the other cultures with a threshold of 400.
 
-## Statistics
+### Statistics
 
 In our previous publication (Hanes et al., 2020), we described the characteristics of homeostatic plasticity of mEPSC amplitudes in mouse cortical cultures using multiple mEPSC amplitude quantiles from each cell to create datasets with thousands of samples. We compared the cumulative distribution functions for mEPSC amplitudes in untreated versus TTX-treated cultures, as well as sorting the values from smallest to largest, and plotted TTX values versus control values in the rank order plot first described in Turrigiano et al., 1998 to demonstrate synaptic scaling. Finally, we plotted the ratio of TTX values/control values versus control values to show that the ratio, which represents the effect of TTX, increased with increasing control values, which we termed ‘divergent scaling’. Here, we wanted to avoid the inflation of sample size caused by pooling multiple mEPSCs per cell. To statistically compare the effects of TTX in cultures of wild-type mice, Rab3a−/− mice, and Rab3aEbd/Ebd mutant mice, or, WT–WT, WT–KO, and KO–WT neuron–glial cultures, we performed a two-way ANOVA, followed by a Tukey test, and used the p-value for each specific situation, for example, CON versus TTX for Rab3a+/+; CON versus TTX for Rab3a−/−, and so on. The overall means are presented ± SEM in the text, and p-values are displayed above each plot, with N = the number of cells. For the characteristics of synaptic GluA2 receptor clusters and VGLUT1 sites in imaging experiments, N = the number of dendrites (one dendrite was sampled for each cell), and statistical comparisons were made with the non-parametric Kruskal–Wallis test. Although we quantified three characteristics of the GluA2 clusters and VGLUT1 sites: size, average intensity, and integral, we have not corrected p-values for multiple comparisons. Means are presented as box plots + data, with the box at 25 and 75 percentiles, whiskers at 10 and 90 percentiles, a dot indicating the mean, and a line indicating the median. In Figure 3, mEPSC amplitudes were measured within the same cell before and after NASPM application, so a paired t-test was used to compare the pre- and post-NASPM mEPSC amplitudes. In Figure 5A–C, the mean mEPSC amplitude for untreated and TTX-treated coverslips in the same culture is compared with a paired t-test. Statistics were computed and plots were created using Origin2020 (OriginLab).

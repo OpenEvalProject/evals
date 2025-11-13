@@ -50,63 +50,79 @@ To define the interplay of translation and assembly of mitochondrial OXPHOS comp
 
 ## Results
 
-## Identification of TMEM223 and SMIM4 as mt-ribosome-associated proteins
+### Identification of TMEM223 and SMIM4 as mt-ribosome-associated proteins
 
 At the IMM, the mt-ribosome synthesizes 13 essential OXPHOS subunits in human. During translation, it associates with the OXA1L insertase and early assembly factors of the OXPHOS system (Itoh et al., 2021). To identify factors that are associated with the mt-ribosome and thereby contribute to OXPHOS biogenesis, we generated a human HEK293T cell line that enables inducible expression of a FLAG-tagged version of the ribosomal subunit mL62FLAG (Richter-Dennerlein et al., 2016). mL62 is a component of the 39S large ribosomal subunit (39S mtLSU) (Richter et al., 2010; Brown et al., 2014; Greber et al., 2014; Busch et al., 2019). To capture interactions of proteins with the mitochondrial translation machinery, we isolated mitochondria and performed co-immunoisolation experiments under mild solubilization conditions. Proteins that co-purified with mL62FLAG were subjected to sucrose gradient centrifugation and gradient fractions analyzed by western blotting. As expected, the gradient distribution of mL62FLAG revealed a free pool of mL62FLAG in fractions 1–3 (Figure 1A), a fraction of mL62FLAG that co-sedimented with the 39S mtLSU (fractions 7 and 8) and with the 55S mt-ribosome (fraction 10) as previously reported (Richter et al., 2010).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/68213/elife-68213-fig1-v1.jpg)
 
-**Figure 1.:** (A) Mitochondria isolated from cells expressing mL62FLAG were subjected to co-immunoprecipitation. Natively isolated complexes were separated by sucrose density gradient ultracentrifugation. Fractions (1–15) were analyzed by western blotting, using indicated antibodies against components of the 39S mtLSU (mL62, uL1m, uL3m, and uL23m) and 28S mtSSU (uS14m and bS16m) subunits. (B) Mitochondria were isolated from wild-type (WT) and mL62FLAG-expressing cells, cultured in SILAC-medium, and subjected to co-immunoisolation. Eluates were analyzed by quantitative mass spectrometry (LC-MS/MS) (n=4). Ribosomal proteins of the mtLSU and mtSSU are indicated in red and blue, respectively. Dashed lines indicate a p-value of 0.05 and mean mL62FLAG/WT ratios. (C) Scheme of proteins identified in (B). (D) Complexes containing mL62FLAG were purified as in (A) and (B) and analyzed by western blotting (Total, 0.75%; Eluate, 100%).Figure 1—source data 1.Figure 1A and D.
+**Figure 1.:** (A) Mitochondria isolated from cells expressing mL62FLAG were subjected to co-immunoprecipitation. Natively isolated complexes were separated by sucrose density gradient ultracentrifugation. Fractions (1–15) were analyzed by western blotting, using indicated antibodies against components of the 39S mtLSU (mL62, uL1m, uL3m, and uL23m) and 28S mtSSU (uS14m and bS16m) subunits. (B) Mitochondria were isolated from wild-type (WT) and mL62FLAG-expressing cells, cultured in SILAC-medium, and subjected to co-immunoisolation. Eluates were analyzed by quantitative mass spectrometry (LC-MS/MS) (n=4). Ribosomal proteins of the mtLSU and mtSSU are indicated in red and blue, respectively. Dashed lines indicate a p-value of 0.05 and mean mL62FLAG/WT ratios. (C) Scheme of proteins identified in (B). (D) Complexes containing mL62FLAG were purified as in (A) and (B) and analyzed by western blotting (Total, 0.75%; Eluate, 100%).
 
 To identify mt-ribosome-associated proteins in human mitochondria, we defined the interactome of mL62FLAG by quantitative mass spectrometry using stable isotope labeling with amino acids in cell culture (SILAC) (Figure 1B, Supplementary file 1). As expected, we recovered all components of the mt-ribosome with high enrichment factors (Figure 1B and C). In addition, we found proteins of mtDNA and mtRNA maintenance, mt-ribosome biogenesis factors, and known OXPHOS assembly factors in the mL62FLAG interactome (Figure 1C). Additionally, we identified the uncharacterized protein TMEM223 and the putative mt-ribosome interacting protein SMIM4 (Busch et al., 2019). To confirm the interaction of TMEM223 and SMIM4 with the mt-ribosome, we performed immunoisolations of mL62FLAG from solubilized mitochondria and subjected the eluates to western blot analysis (Figure 1D). TMEM223 (Figure 1D, left panel) and SMIM4 (Figure 1D, right panel) were readily detectable in the eluate together with the ribosomal proteins uL1m and uS14m. Accordingly, TMEM223 and SMIM4 represent so far uncharacterized interactors of the mt-ribosome.
 
-## TMEM223 is an inner mitochondrial membrane protein
+### TMEM223 is an inner mitochondrial membrane protein
 
 The identification of the uncharacterized TMEM223 as a new mt-ribosome interacting protein led us to investigate the function of this protein. TMEM223 displays two putative transmembrane spans but lacks a defined N-terminal targeting sequence (Figure 2A). To address the submitochondrial localization of TMEM223, we subjected mitochondria to hypo-osmotic swelling and carbonate extraction experiments (Figure 2B and C). To detect TMEM223, we used an antibody directed against the C-terminus of the protein. Upon Proteinase K treatment of mitoplasts, a faster migrating C-terminal fragment of TMEM223 was detected (Figure 2B). This finding indicates that the C-terminus was exposed to the mitochondrial matrix and that the fragment represents the second transmembrane domain and the C-terminus. As TMEM223 was resistant to carbonate extraction (Figure 2C), we concluded that TMEM223 is an integral protein of the IMM with its N- and C-termini facing the mitochondrial matrix.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/68213/elife-68213-fig2-v1.jpg)
+
+**Figure 2.:** (A) Membrane topology of TMEM223. The predicted transmembrane spans (TM1 and TM2) with corresponding amino acids (aa) are indicated. IMS: intermembrane space; IMM: inner mitochondrial membrane. (B) and (C) Submitochondrial localization of TMEM223. Wild-type (WT) mitochondria were treated with Proteinase K (PK) under iso-osmotic (Mito), hyper-osmotic conditions (swelling, MP), or solubilized with Triton X-100 (TX-100) (B). The unspecific band is marked with an asterisk. Mitochondrial proteins were extracted in sodium carbonate containing buffer at different pH (total, T; pellet, P; soluble fraction, S) (C). (D) Protein steady-state levels in TMEM223−/− cells. Mitochondrial lysates from WT and TMEM223−/− cells were analyzed by western blotting using indicated antibodies and protein amounts were quantified using ImageQuant software (mean ± SEM, n=3). (E) Isolated mitochondria from WT and TMEM223−/− cells were solubilized in DDM-containing buffer, separated on 2.5–10% (Complex I) or 4–13% (Complexes II–V) BN-PAGE and analyzed by western blotting. OXPHOS complexes were detected with indicated antibodies and amounts quantified using ImageQuant software(mean ± SEM, n=3).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68213/elife-68213-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) BN-PAGE loading control corresponding to Figure 2E. Isolated mitochondria were subjected to BN-PAGE analyses (Figure 2E) or to SDS-PAGE and western blotting to confirm equal loading of the BN-PAGE. (B) Isolated mitochondria from TMEM223−/− and control cells were solubilized using digitonin buffer, separated on 2.5–10% (complexes I, III and IV) or 4–13% (complex II) BN-PAGE, analyzed by western blotting, and complexes were detected with indicated antibodies (mean ± SEM, n=3). A fraction of the isolated mitochondria was subjected to SDS-PAGE and western blotting analysis as a loading control (right panel). (C) Steady-state protein analysis of selected cytochrome c reductase related proteins in TMEM223−/− cells. Mitochondria were isolated, subjected to western blotting, and probed with indicated antibodies (left panel). The steady-state amount of the indicated proteins was quantified using ImageQuant software (mean ± SEM, n=3). (D) Stability of cytochrome c reductase related proteins. Control cells and TMEM223−/− cells were treated with thiamphenicol (final 50 µg/ml) for 48 hr and cell lysates subjected to western blotting. Signals were quantified with ImageQuant software and graphed (mean ± SEM, n=3).
 
 To investigate the function of TMEM223, we generated a TMEM223 knockout cell line (TMEM223−/−) utilizing a CRISPR/Cas9 approach. For this, we targeted the TMEM223 gene (NM_001080501.3) and confirmed the genomic modification by sequencing. The TMEM223−/− cell line displayed multiple nucleotide exchanges that resulted in premature stop codons at codons encoding amino acids 36 and 38. Loss of TMEM223 was further confirmed by western blot analysis of purified mitochondria and the steady-state amounts of selected mitochondrial proteins investigated (Figure 2D). Quantifications of the signals revealed a reduction of the late assembling complex IV subunit COX6A, while COX4-1 (an early complex IV constituent) or the COX1 assembly factors C12ORF62 (COX14) and MITRAC12 (COA3) were not altered (Figure 2D). Also, proteins of other OXPHOS complexes, such as NDUFA9 (complex I), SDHA (complex II), or ATP5B (complex V), remained unaffected. Interestingly, we observed an increase of RIESKE, a core protein of complex III (Figure 2D).
 
 The reduction of COX6A prompted us to investigate mitochondrial OXPHOS complexes by Blue Native (BN)-PAGE (equal loading was confirmed by SDS-PAGE (Figure 2—figure supplement 1A)). Using n-Dodecyl-β-D-maltosid (DDM) for mitochondrial solubilization, we observed a selective reduction of the cytochrome c oxidase to 60% of the WT control (Figure 2E). However, while complexes I, II, and IV were only marginally more abundant, complex III showed an increase (approx. 165% of WT) in the TMEM223−/− cell line (Figure 2E) independent of the detergent used for solubilization (similar results were obtained using Digitonin; Figure 2—figure supplement 1B). To better understand the increase of complex III, we analyzed the steady-state levels of complex III associated proteins (Figure 2—figure supplement 1C) as well as the stability of the core subunit RIESKE and of the assembly factors UQCC1 and C12ORF73 (Figure 2—figure supplement 1D, Figure 5 and 6). For stability analysis, the amount of these proteins was determined 48 hr after inhibition of mitochondrial translation by thiamphenicol, since the synthesis of the mitochondrial-encoded complex III protein CYTB is required for RIESKE stability (Protasoni et al., 2020). Although we observed an increase in the steady-state levels of RIESKE (Figure 2D), UQCC2, and C12ORF73 in the absence of TMEM223 (Figure 2—figure supplement 1C), we did not detect a difference in stability of the tested proteins under these conditions (Figure 2—figure supplement 1D). We concluded that loss of TMEM223 leads to a reduction of cytochrome c oxidase.
 
-## TMEM223 is involved in cytochrome c oxidase biogenesis
+### TMEM223 is involved in cytochrome c oxidase biogenesis
 
 For a quantitative assessment, we measured cytochrome c oxidase activity using a colorimetric assay. In agreement with the BN-PAGE analyses (Figure 2E), the activity of the cytochrome c oxidase in TMEM223−/− cells was reduced to 62.5% of wild-type (WT) (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/68213/elife-68213-fig3-v1.jpg)
 
-**Figure 3.:** c oxidase biogenesis.(A) Cytochrome c oxidase activity was measured in cellular extracts from wild-type (WT) and TMEM223−/− photometrically (mean ± SEM, n=4). (B, C) Mitochondrial protein synthesis in TMEM223−/− (B) or siRNA mediated TMEM223 depleted (C) cells. Cells were grown in the presence of [35S]methionine for 1 hr to monitor synthesis of mitochondrial-encoded proteins. Cell lysates were subjected to SDS-PAGE and analyzed by digital autoradiography and western blotting (lower panel in (B)). Newly synthesized mitochondrial proteins were quantified, using the ImageQuant software, calculated as percentage of WT and internally standardized to ATP6 (mean ± SEM; n=3). (D–G) TMEM223 interacts with early cytochrome c oxidase assembly factors. Mitochondria isolated from WT, C12ORF62FLAG (D), MITRAC12FLAG (E), CMC1 (F), or MITRAC7FLAG (G) cells were subjected to co-immunoisolation and samples analyzed by western blotting (Total, 0.75%; Eluate, 100%).Figure 3—source data 1.Figure 3B, D, E, F, G.
+**Figure 3.:** (A) Cytochrome c oxidase activity was measured in cellular extracts from wild-type (WT) and TMEM223−/− photometrically (mean ± SEM, n=4). (B, C) Mitochondrial protein synthesis in TMEM223−/− (B) or siRNA mediated TMEM223 depleted (C) cells. Cells were grown in the presence of [35S]methionine for 1 hr to monitor synthesis of mitochondrial-encoded proteins. Cell lysates were subjected to SDS-PAGE and analyzed by digital autoradiography and western blotting (lower panel in (B)). Newly synthesized mitochondrial proteins were quantified, using the ImageQuant software, calculated as percentage of WT and internally standardized to ATP6 (mean ± SEM; n=3). (D–G) TMEM223 interacts with early cytochrome c oxidase assembly factors. Mitochondria isolated from WT, C12ORF62FLAG (D), MITRAC12FLAG (E), CMC1 (F), or MITRAC7FLAG (G) cells were subjected to co-immunoisolation and samples analyzed by western blotting (Total, 0.75%; Eluate, 100%).
 
 Since we identified TMEM223 as an mt-ribosome-associated protein and observed a reduction of the cytochrome c oxidase, we asked whether TMEM223 was required for translation of mitochondrial-encoded complex IV subunits. Therefore, we performed [35S]methionine labeling of mitochondrial translation products. These analyses revealed a significant decrease in the levels of newly synthesized COX1 in TMEM223−/− cells compared to WT while other mitochondrial-encoded proteins, including COX2 and COX3, displayed no differences (Figure 3B). We confirmed the reduced COX1 synthesis rate in the TMEM223−/− in a complementary approach. Using a [35S]methionine labeling approach in siRNA-mediated depleted TMEM223 cells, we observed a comparable reduction of COX1 synthesis to 61.23% (Figure 3C).
 
 Our data suggested an involvement of TMEM223 in the early stages of cytochrome c oxidase biogenesis. To address this, we performed immunoisolations using tagged constituents of the early COX1 assembly intermediates (MITRAC complexes), namely C12ORF62 (COX14) (Richter-Dennerlein et al., 2016; Weraarpachai et al., 2012; Figure 3D), MITRAC12 (COA3) (Mick et al., 2012; Figure 3E), and CMC1 (Horn et al., 2008; Mick et al., 2012; Timón-Gómez et al., 2018; Figure 3F). As a control, we used MITRAC7, a later stage assembly factor of COX1 (Dennerlein et al., 2015; Figure 3G). TMEM223 was recovered in the eluate of C12ORF62FLAG and MITRAC12FLAG, but was not present in CMC1FLAG purifications and we detected only marginal amounts in the eluate of MITRAC7FLAG (Figure 3D–G). These findings support the role of TMEM223 in the first steps of cytochrome c oxidase biogenesis and show that it interacts with early MITRAC complexes.
 
-## Protein interaction network of SMIM4
+### Protein interaction network of SMIM4
 
 Our mass spectrometric analysis identified the uncharacterized protein SMIM4 as a new mt-ribosome-associated protein (Figure 1B and D). SMIM4 displays one predicted transmembrane domain (amino acids 20–41) (Figure 4A). To investigate the localization and function of SMIM4, we generated a stable HEK293T cell line, allowing for inducible expression of a C-terminally FLAG-tagged variant of SMIM4 (SMIM4FLAG). We investigated the subcellular localization of SMIM4FLAG by STED super-resolution light microscopy using a FLAG-specific antibody. Comparison with a TOM22 specific antibody labeling showed that SMIM4FLAG localizes to mitochondria (Figure 4B). To investigate the submitochondrial localization of SMIM4, we performed hypo-osmotic swelling and carbonate extraction experiments. The C-terminal FLAG epitope of SMIM4 became accessible to Proteinase K digestion upon disruption of the outer mitochondrial membrane (Figure 4C). Furthermore, SMIM4 was resistant to carbonate extraction (Figure 4D) indicating that SMIM4 is an integral IMM protein facing its C-terminus to the intermembrane space (IMS).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/68213/elife-68213-fig4-v1.jpg)
 
-**Figure 4.:** c reductase and mitochondrial quality control proteins.(A) Schematic presentation of SMIM4 membrane topology. The predicted transmembrane domain (AA 20–41) is indicated. IMS: intermembrane space; IMM, inner mitochondrial membrane. (B) Immunofluorescence microscopy of HEK293T cells expressing SMIM4FLAG. Cells were induced with doxycycline for 24 hr (+Dox). SMIM4FLAG was labeled using a FLAG-specific antiserum. As a mitochondrial marker, a TOM22 specific antiserum was used. SMIM4FLAG and TOM22 were imaged with STED microscopy, PicoGreen by confocal microscopy. DNA was labeled via Quant-iT PicoGreen dsDNA reagent. Scale bars: 10 µm (overview), 500 nm (magnification). (C) Submitochondrial localization of SMIM4FLAG. Mitochondria isolated from SMIM4FLAG-expressing cells were treated with proteinase K (PK) either under iso-osmotic (Mito), hyperosmotic (swelling, mitoplasts [MP]) conditions. Unspecific band is marked with an asterisk. (D) SMIM4 is an integral membrane protein. Mitochondrial proteins were extracted using sodium carbonate (at indicated pH), or Triton X-100 (TX-100). Samples (total, T; pellet, P; soluble fraction, S) were analyzed by western blotting using antibodies. (E) Mitochondrial extracts from wild-type (WT) and SMIM4FLAG-expressing cells cultured in SILAC medium were subjected to native-immunoprecipitation, and analyzed by quantitative mass spectrometry (LC-MS/MS) (n=4). Cytochrome c reductase assembly factors and components of the mitochondrial quality control system are indicated in black. The dashed horizontal line indicates a p-value of 0.05, the solid vertical line a mean SMIM4FLAG/WT ratio of 10. (F) Samples obtained by co-immunoprecipitation of WT or SMIM4FLAG-containing mitochondrial lysates were analyzed by western blotting (Total, 1.5%; Eluate, 100 %).Figure 4—source data 1.Figure 4C, D, F.
+**Figure 4.:** (A) Schematic presentation of SMIM4 membrane topology. The predicted transmembrane domain (AA 20–41) is indicated. IMS: intermembrane space; IMM, inner mitochondrial membrane. (B) Immunofluorescence microscopy of HEK293T cells expressing SMIM4FLAG. Cells were induced with doxycycline for 24 hr (+Dox). SMIM4FLAG was labeled using a FLAG-specific antiserum. As a mitochondrial marker, a TOM22 specific antiserum was used. SMIM4FLAG and TOM22 were imaged with STED microscopy, PicoGreen by confocal microscopy. DNA was labeled via Quant-iT PicoGreen dsDNA reagent. Scale bars: 10 µm (overview), 500 nm (magnification). (C) Submitochondrial localization of SMIM4FLAG. Mitochondria isolated from SMIM4FLAG-expressing cells were treated with proteinase K (PK) either under iso-osmotic (Mito), hyperosmotic (swelling, mitoplasts [MP]) conditions. Unspecific band is marked with an asterisk. (D) SMIM4 is an integral membrane protein. Mitochondrial proteins were extracted using sodium carbonate (at indicated pH), or Triton X-100 (TX-100). Samples (total, T; pellet, P; soluble fraction, S) were analyzed by western blotting using antibodies. (E) Mitochondrial extracts from wild-type (WT) and SMIM4FLAG-expressing cells cultured in SILAC medium were subjected to native-immunoprecipitation, and analyzed by quantitative mass spectrometry (LC-MS/MS) (n=4). Cytochrome c reductase assembly factors and components of the mitochondrial quality control system are indicated in black. The dashed horizontal line indicates a p-value of 0.05, the solid vertical line a mean SMIM4FLAG/WT ratio of 10. (F) Samples obtained by co-immunoprecipitation of WT or SMIM4FLAG-containing mitochondrial lysates were analyzed by western blotting (Total, 1.5%; Eluate, 100 %).
 
 To assess the function of SMIM4, we first defined its interactome. For this, we analyzed SMIM4FLAG-containing protein complexes, purified from mitochondria following a SILAC-based quantitative mass spectrometry approach (Figure 4E, Supplementary file 2). SMIM4FLAG efficiently isolated components of the 28S mtSSU and 39S mtLSU supporting its interaction with the mt-ribosome (Figure 1C and D). Additionally, we identified in SMIM4FLAG complexes the cytochrome c reductase (complex III) assembly factors UQCC1, UQCC2, and C12ORF73 (Zhang et al., 2020; Tucker et al., 2013; Ndi et al., 2018; Fernandez-Vizarra and Zeviani, 2018) as well as components of the mitochondrial quality control system, such as the mAAA-protease (AFG3L2 and SPG7), the iAAA-protease (YME1L), the membrane scaffolds SLP2 and prohibitins (PHB1 and PHB2). In agreement with the mass spectrometric analysis, we detected YME1L, SLP2, AFG3L2 and PHB1, C12ORF73 and UQCC1 in the SMIM4FLAG eluate by immunoblotting (Figure 4F). Interestingly, proteins acting in later assembly steps of the cytochrome c reductase such as UQCC3 (not detected) or RIESKE and UQCRQ (Wanschers et al., 2014; Ndi et al., 2018; Fernandez-Vizarra and Zeviani, 2018) were less enriched in the SILAC analysis (Figure 4E). Furthermore, we could not detect UQCC3 or RIESKE by western blot (Figure 4F). In summary, SMIM4 is an integral protein of the IMM that interacts with the mitochondrial ribosome, the mitochondrial quality control machinery and preferentially early cytochrome c reductase biogenesis factors.
 
-## C12ORF73 and SMIM4 are involved in cytochrome c reductase maturation
+### C12ORF73 and SMIM4 are involved in cytochrome c reductase maturation
 
 C12ORF73 was recently found to contribute to cytochrome c reductase biogenesis. However, its function in the assembly process remains elusive. To define its role in cytochrome c reductase assembly, we generated an inducible C12ORF73FLAG-expressing HEK293T cell line. We confirmed mitochondrial localization of C12ORF73FLAG by STED super-resolution light microscopy, using antisera specific for the FLAG-tag and the outer mitochondrial membrane protein TOM22, respectively. (Figure 5—figure supplement 1A). The C12ORF73FLAG signal was superimposable with the mitochondrial marker TOM22 supporting mitochondrial localization of the protein in human cells. Biochemical analyses to determine the submitochondrial localization of C12ORF73FLAG showed that the protein was resistant to carbonate extraction and that its C-terminus was accessible to protease treatment when the outer membrane was disrupted by hypo-osmotic swelling (Figure 5—figure supplement 1B and C). These results confirmed that C12ORF73 represents a protein of the IMM that exposes its C-terminus into the IMS, which agrees with previous studies (Zhang et al., 2020).
 
 Since we found C12ORF73 together with early cytochrome c reductase assembly factors in the interactome of SMIM4FLAG (Figure 4E and F), we dissected the interaction of C12ORF73 with the cytochrome c reductase assembly machinery. To this end, we subjected mitochondrial extracts of C12ORF73FLAG-containing mitochondria to immunoisolations and analyzed the eluates by western blotting (Figure 5A). Similar to SMIM4 co-immunoisolations (Figure 4), we recovered UQCC1 and UQCC2, but not UQCC3 or RIESKE, co-isolating with C12ORF73FLAG (Figure 5A). Zhang et al., 2020 reported an interaction of C12ORF73 (BRAWNIN) with UQCRQ using transient co-transfection of C12ORF73HA and UQCRQFLAG. We repeated the transient transfection of UQCRQFLAG into HEK293T cells. Although we could isolate UQCRC2 and SMIM4, only marginal amounts of UQCC1 or C12ORF73 were co-isolated (Figure 5—figure supplement 1D). Hence, to support our conclusion that SMIM4 and C12ORF73 act early in cytochrome c reductase assembly, we performed immunoisolations using an antibody against the RIESKE protein. While we isolated UQCRC1 and UQCC3, the early cytochrome c reductase assembly factors UQCC1, C12ORF73, and SMIM4 were not co-isolated (Figure 5—figure supplement 1E). This analysis further supports the early role of C12ORF73 and SMIM4 in the biogenesis pathway of the cytochrome c reductase.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/68213/elife-68213-fig5-v1.jpg)
+
+**Figure 5.:** (A) FLAG-immunoisolation of C12ORF73FLAG. Samples were analyzed by SDS-PAGE and western blotting (Total, 1.5%; Eluate, 100 %). (B) Western blot analyses of SMIM4 or C12ORF73 depleted cells. HEK293T cells were treated with indicated siRNAs and cultured either in glucose- or galactose-containing media for 72 hr. Cell extracts were subjected to SDS-PAGE separation and western blotting. (C) Loss of SMIM4 or C12ORF73 affects cell growth. HEK293T cells were transfected with siRNAs as in Figure 6B. Cells were cultured either in glucose- or galactose-containing media for 72 hr; cell counts are presented as percentage relative to non-targeting siRNA-treated cells (siNT; indicated as dashed line) (mean ± SEM, n=3). (D, E) BN-PAGE analyses of mitochondrial protein complexes upon SMIM4 (B) or C12ORF73 ablation (C). Mitochondria were solubilized with DDM (N-Dodecyl-beta-Maltoside) and subjected to BN-PAGE followed by western blot analyses. OXPHOS complex levels were quantified using the ImageQuant software and graphed (mean ± SEM, n=3).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/68213/elife-68213-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) STED super-resolution light microcopy images of TOM22 and C12ORF73FLAG in HEK293T cells. TOM22 and C12ORF73FLAG were labeled by specific antisera. Detection via secondary antibodies custom labeled with the dyes ALEXA Fluor594 or Abberior STAR RED, respectively. Scale bars: 10 µm (overview), 500 nm (magnification). (B, C) Submitochondrial localization of C12ORF73. (B) Sodium carbonate buffers with indicated pH were used to extract mitochondrial membrane proteins (total, T; pellet, P; supernatant fraction, S). (C) Different amounts of Proteinase K (PK) were added under iso-osmotic (Mito), and hyper-osmotic (MP) conditions or during Triton X-100 (TX-100) treatment. (D, E) Immunoisolation of UQCRQFLAG or RIESKE. Purified mitochondria were solubilized in digitonin-containing buffer and subjected to immunoisolation with FLAG- (D) or anti-RIESKE antibodies, respectively (E). Eluted proteins were analyzed by western blotting using indicated antibodies (Total, 0.5%; Eluate, 100%). (F, G) BN-PAGE loading controls corresponding to Figure 5D and E. Isolated mitochondria of the BN-PAGE experiment were subjected to SDS-PAGE and western blotting.
+
 As SMIM4 (Figure 4E and F) and C12ORF73 (Figure 5A) isolated early cytochrome c reductase assembly factors, we determined the function of these proteins utilizing siRNA applications. Hence, we investigated protein levels in whole-cell extracts after siRNA-mediated depletion. SMIM4 was reduced in C12ORF73-depleted cells and vice versa SMIM4 ablation led to decreased C12ORF73 levels indicating an interdependency of these factors (Figure 5B). While we observed a subtle increase of UQCC3 in SMIM4-depleted cells, UQCC1 and UQCC2 were slightly reduced upon C12ORF73 knockdown (Figure 5B). To investigate cell viability upon SMIM4 or C12ORF73 depletion, we quantified cell numbers after 72 hr siRNA-mediated knockdown in glucose- or galactose-containing media (Figure 5C). In both cases, we observed a drastic reduction in cell growth to approximately 50% compared to the siNT-control treated cells.
 
 Considering the interaction of SMIM4 (Figure 4E and F) and C12ORF73 (Figure 5E) with cytochrome c reductase assembly factors and the growth phenotype upon 72 hr protein depletion (Figure 5C), we assessed mitochondrial OXPHOS complexes upon SMIM4 or C12ORF73 depletion by BN-PAGE analyses (equal loading was confirmed by SDS-PAGE) (Figure 5D and E, Figure 5—figure supplement 1F and G). While siRNA-mediated knockdown of SMIM4 led to a subtle increase of the ATP synthase, a significant reduction of the cytochrome c reductase to 62%, and to a minor but statistically not significant reduction of the NADH:ubiquinone oxidoreductase. However, other OXPHOS complexes remained unaffected (Figure 5D). Knockdown of C12ORF73 impaired slightly the level of the NADH:ubiquinone oxidoreductase, cytochrome c oxidase, and the ATP synthase; however, the cytochrome c reductase was, similar to SMIM4 knockdown, significantly reduced (Figure 5E).
 
-## SMIM4 and C12ORF73 participate in early steps of cytochrome c reductase assembly
+### SMIM4 and C12ORF73 participate in early steps of cytochrome c reductase assembly
 
 To define SMIM4- and C12ORF73-containing complexes in cytochrome c reductase biogenesis, we solubilized mitochondria under mild conditions and separated protein complexes by first dimension BN-PAGE followed by a second dimension SDS-PAGE (Figure 6A). UQCC1 and UQCC2 were detected in two complexes between 132 and 250 kDa and in a smaller complex of approximately 70 kDa. UQCC3 appeared in a complex that migrated slightly slower than the biggest complex of UQCC1 and UQCC2 as well as in a complex below 66 kDa. SMIM4- and C12ORF73-containing complexes mainly co-migrated with the largest UQCC1- and UQCC2-containing complex, but moderately faster than the biggest UQCC3 complex. These data supported the idea that SMIM4 and C12ORF73 are part of an early cytochrome c reductase assembly intermediate with UQCC1 and UQCC2. When we isolated C12ORF73FLAG-containing complexes from mitochondria and subjected these purified complexes to BN-PAGE followed by SDS-PAGE, C12ORF73FLAG isolated UQCC1, UQCC2, and SMIM4, all of which migrated in a single complex (Figure 6B). These results demonstrate that C12ORF73FLAG forms a complex with UQCC1, UQCC2, and SMIM4 but not with UQCC3. In agreement with this, SMIM4 and C12ORF73 were efficiently isolated with UQCC1FLAG and UQCC2FLAG but only in minor amounts with UQCC3FLAG. RIESKE was only present in the UQCC3FLAG eluate (Figure 6C).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/68213/elife-68213-fig6-v1.jpg)
 
-**Figure 6.:** c reductase assembly.(A) SMIM4 and C12ORF73 co-migrate with cytochrome c reductase assembly intermediates. Wild-type mitochondrial lysates were subjected to BN-PAGE, followed by second dimension SDS-PAGE and western blotting. (B) C12ORF73FLAG isolates cytochrome c reductase assembly intermediates. Mitochondria isolated from C12ORF73FLAG-expressing cells were solubilized and subjected to co-immunoisolation. Natively eluted complexes were separated by BN-PAGE and subjected to second dimension SDS-PAGE followed by western blot analyses using indicated antibodies. (C) Immunoprecipitations of UQCC1FLAG, UQCC2FLAG, and UQCC3FLAG. Eluates were analyzed by SDS-PAGE followed by western blotting with indicated antibodies. (D) Mitochondrial translation products were labeled with [35S]methionine for 1 hr prior to co-immunoprecipitation using anti-SMIM4, -C12ORF73, or control antibodies (αIgGcon). Eluates were separated by SDS-PAGE followed by western blotting, and analyzed by digital autoradiography (upper panel) and immunodetection (lower panel) (Total, 2%; Eluate, 100%). (E) Mitochondria isolated from control or C12ORF73-depleted cells were lysed in digitonin-containing buffer and complexes separated by BN-PAGE followed by second dimension SDS-PAGE. Cytochrome c reductase sub-assembly complexes were monitored with indicated antibodies (red arrow mark cytochrome c reductase subcomplexes in C12ORF73-deficient samples).Figure 6—source data 1.Figure 6A-E.
+**Figure 6.:** (A) SMIM4 and C12ORF73 co-migrate with cytochrome c reductase assembly intermediates. Wild-type mitochondrial lysates were subjected to BN-PAGE, followed by second dimension SDS-PAGE and western blotting. (B) C12ORF73FLAG isolates cytochrome c reductase assembly intermediates. Mitochondria isolated from C12ORF73FLAG-expressing cells were solubilized and subjected to co-immunoisolation. Natively eluted complexes were separated by BN-PAGE and subjected to second dimension SDS-PAGE followed by western blot analyses using indicated antibodies. (C) Immunoprecipitations of UQCC1FLAG, UQCC2FLAG, and UQCC3FLAG. Eluates were analyzed by SDS-PAGE followed by western blotting with indicated antibodies. (D) Mitochondrial translation products were labeled with [35S]methionine for 1 hr prior to co-immunoprecipitation using anti-SMIM4, -C12ORF73, or control antibodies (αIgGcon). Eluates were separated by SDS-PAGE followed by western blotting, and analyzed by digital autoradiography (upper panel) and immunodetection (lower panel) (Total, 2%; Eluate, 100%). (E) Mitochondria isolated from control or C12ORF73-depleted cells were lysed in digitonin-containing buffer and complexes separated by BN-PAGE followed by second dimension SDS-PAGE. Cytochrome c reductase sub-assembly complexes were monitored with indicated antibodies (red arrow mark cytochrome c reductase subcomplexes in C12ORF73-deficient samples).
 
 The interaction between SMIM4, C12ORF73, UQCC1, and UQCC2 as early cytochrome c reductase assembly factors implies that SMIM4 and C12ORF73 interact with newly synthesized cytochrome b (CYTB). Therefore, we performed [35S]methionine labeling of newly translated mitochondrial-encoded proteins and subjected cellular extracts to immunoisolation using antibodies against SMIM4 or C12ORF73 (Figure 6D). As expected, both immunoisolations clearly enriched newly synthesized CYTB.
 
@@ -128,7 +144,479 @@ In conclusion, we defined the interactome of the human mt-ribosome and identifie
 
 ## Materials and methods
 
-## Cell culture of HEK293T cells
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293-Flp-InTM T-RexTM (HEK293T) Cell Line</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:CVCL_U421</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293-Flp-InTM T-RexTM (HEK293T)-TMEM223−/−</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Cell line generated as described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pX330-TMEM223 gRNA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Cloning described in Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pEGFPN1</td>
+      <td>CloneTech</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pCDNA5-mL62-FLAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Construct generated by mutagenesis of pCDNA5-mL62-FLAG</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pCDNA5-MITRAC7-FLAG</td>
+      <td>Dennerlein et al., 2015 (Cell Rep.)</td>
+      <td>N/A</td>
+      <td>Construct generated by mutagenesis of pCDNA5-MITRAC7-FLAG</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pCDNA5-C12ORF62-FLAG</td>
+      <td>Richter-Dennerlein et al., 2016 (Cell)</td>
+      <td>N/A</td>
+      <td>Construct generated by mutagenesis of pCDNA5-C12ORF62-FLAG</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pCDNA5-MITRAC12- FLAG</td>
+      <td>Aich et al., 2018 (eLife)</td>
+      <td>N/A</td>
+      <td>Construct generated by mutagenesis of pCDNA5-MITRAC12-FLAG</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pCDNA5-C12ORF73- FLAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Construct generated by mutagenesis of pCDNA5-C12ORF73-FLAG</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pCDNA5-SMIM4-FLAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Construct generated by mutagenesis of pCDNA5-SMIM4-FLAG</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pCDNA5-UQCC1-FLAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Construct generated by mutagenesis of pCDNA5-UQCC1-FLAG</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pCDNA5-UQCC2-FLAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Construct generated by mutagenesis of pCDNA5-UQCC2-FLAG</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pCDNA5-UQCC3-FLAG</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Construct generated by mutagenesis of pCDNA5-UQCC3-FLAG</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TMEM223rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB4850</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SMIM4rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB5494</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mS40 (MRPS18B) rabbit polyclonal</td>
+      <td>ProteinTech</td>
+      <td>RRID:AB_2146368</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TMEM177rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB4988</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TIM44rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB5142</td>
+      <td>(1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>COX6A rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB3282</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SLIRP rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB3813</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CYTB rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB5151</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>C12ORF73rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB5105</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PHB1rabbit polyclonal</td>
+      <td>ProteinTech</td>
+      <td>RRID:AB_2164476</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>uL3m rabbit polyclonal</td>
+      <td>ProteinTech</td>
+      <td>RRID:AB_10639509</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>uS14m rabbit polyclonal</td>
+      <td>ProteinTech</td>
+      <td>RRID:AB_2878240</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>bS16m rabbit polyclonal</td>
+      <td>ProteinTech</td>
+      <td>RRID:AB_2180166</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>YME1L rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB5113</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SLP2rabbit polyclonal</td>
+      <td>ProteinTech</td>
+      <td>RRID:AB_2286822</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AFG3L2rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB5149</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MITRAC12rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB3761</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>C12ORF62rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB4844</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MITRAC7rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB4843</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>COX1rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB2035</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>COX4-1rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB1522</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>uL23m rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB1716</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>uL1m rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB4969</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TOM70rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB3280</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TACO1rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB3627</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MITRAC15rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB4814</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FLAG rabbit polyclonal</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID:AB_259529</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TIM21rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB3674</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SDHAMouse monoclonal</td>
+      <td>Self made</td>
+      <td>PRAB4978</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rieske rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB1512</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ATP5B rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB4826</td>
+      <td>(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TIM44rabbit polyclonal</td>
+      <td>ProteinTech</td>
+      <td>RRID:AB_2204679</td>
+      <td>(1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NDUFB8rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB3764</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NDUFA9rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB1524</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TIM23rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB1527</td>
+      <td>(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SCO2rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB4982</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FAM36A rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB4490</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SURF1rabbit polyclonal</td>
+      <td>Self made</td>
+      <td>PRAB1528</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>QuikChange Site-Directed Mutagenesis Kit</td>
+      <td>Agilent</td>
+      <td>210515</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>KOD Hot Start DNA Polymerase</td>
+      <td>Merck</td>
+      <td>71086-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>First Strand cDNA Synthesis Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>K1612</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human Complex IV Activity Kit</td>
+      <td>Abcam</td>
+      <td>ab109910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GeneJuice</td>
+      <td>Merck</td>
+      <td>70967-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anti-FLAG M2 Affinity Gel</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>Protein-A SepharoseTM CL-4B</td>
+      <td>GE Healthcare</td>
+      <td>17-0963-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>[35 S]methionine</td>
+      <td>Hartmann Analytic</td>
+      <td>SCM-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Emetine dihydrochloride hydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>219282</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageQuantTL 7.0 software</td>
+      <td>GE Healthcare</td>
+      <td>RRID:SCR_014246</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ 1.47v</td>
+      <td>NIH</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Geneious</td>
+      <td>Biomatters Ltd</td>
+      <td>RRID:SCR_010519</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism5</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_015807</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture of HEK293T cells
 
 Human embryonic kidney cell lines (HEK293-Flp-In T-Rex; HEK293T; Thermo Fisher Scientific) were cultured either in high glucose (4.5 mg/ml) or galactose (0.9 mg/ml) containing Dulbecco's modified Eagle’s medium (DMEM) media; supplemented with 10% (v/v) fetal bovine serum (FBS) (Capricorn Scientific), 1 mM sodium pyruvate, 2 mM L-glutamine, and 50 µg/ml uridine at 37°C under a 5% CO2 humidified atmosphere. Cell counts were performed by using the Neubauer counting chamber. For inhibition of cytosolic translation, DMEM was supplemented with 100 µg/ml emetine dihydrochloride hydrate (Sigma-Aldrich). Cells for SILAC analysis were cultured as previously described (Mick et al., 2012).
 
@@ -140,7 +628,7 @@ The knockout cell line of TMEM223 was generated as described previously (Aich et
 
 To inhibit mitochondrial translation WT cells were treated with thiamphenicol (TAP) with a final concentration of 50 µg/ml for 48 hr.
 
-## Cultivation and STED super-resolution light microscopy of HEK293T cells
+### Cultivation and STED super-resolution light microscopy of HEK293T cells
 
 HEK293T cells were cultivated in DMEM, containing 4.5 g/L Glucose and GlutaMAX additive (Thermo Fisher Scientific, Waltham, MA) supplemented with 1 mM sodium pyruvate (Sigma-Aldrich, St. Louis, MO/Merck Millipore, Burlington, MA) and 10% (v/v) FBS (Merck Millipore, Burlington, MA).
 
@@ -148,43 +636,43 @@ Prior microscopy, cells were cultivated on glass cover slides for 1–3 days at 
 
 The investigated proteins were labeled by antisera specific for TOM22 (Anti-Tom22, Rabbit, Merck Millipore/Sigma-Aldrich, HPA003037, Lot: B119406) and the FLAG-tag (Anti-FLAG, Mouse, Merck Millipore/Sigma-Aldrich, clone M2, F3165, Lot: SLBQ7119V), respectively. Detection was accomplished via secondary antibodies custom labeled with the dyes ALEXA Fluor594 (Thermo Fisher Scientific, Waltham, MA) or Abberior STAR RED (Abberior, Göttingen, Germany), respectively. DNA was labeled via Quant-iT PicoGreen dsDNA reagent (Thermo Fisher Scientific, Waltham, MA). The samples were mounted using Mowiol containing 1,4-Diazabicyclo[2.2.2]octan (DABCO). STED images were acquired using a quad scanning STED microscope (Abberior Instruments, Göttingen, Germany) equipped with a UPlanSApo 100×/1.40 Oil objective (Olympus, Tokyo, Japan). For excitation of the respective dyes, laser beams featuring wavelengths of 485 nm, 561 nm, and 640 nm were used. STED was performed applying a laser beam with a wavelength of 775 nm. For all images, a pixel size of 15 nm was utilized. Light microscopy data were linearly deconvolved using the Imspector software (Abberior Instruments).
 
-## siRNA constructs and application
+### siRNA constructs and application
 
 To generate knockdown cells, HEK293T WT cells were transiently transfected with siRNA oligonucleotides against SMIM4 (5′-GCA-GUC-AAU-AAA-GUC-AAU-A-3′) and C12orf73 (5′-ACA-CAA-ACC-UCA-AGU-UUC-U-3′) to a final concentration of 33 nM and non-targeting siRNA used as control (Eurogentec). siRNA targeting TMEM223 (GUU-CCU-UUG-AAG-CAG-GUA-U) was used in a final concentration of 16 nM (non-targeting control accordingly). Lipofectamine RNAi-MAX (Invitrogen) was used as transfection reagent, following the manufacturer’s protocol. Afterward, cells were incubated at 37°C under 5% CO2 atmosphere for 72 hr.
 
-## [35S]methionine labeling of newly synthesized mitochondrial-encoded proteins
+### [35S]methionine labeling of newly synthesized mitochondrial-encoded proteins
 
 HEK293T cells were starved with FCS/methionine-free media. After inhibition of cytosolic translation by adding 100 µg/ml emetine dihydrochloride hydrate (Sigma-Aldrich), cells were incubated for 1 hr with [35S]methionine in a concentration of 0.2 mCi/ml in fully supplemented DMEM without methionine. In case of puromycin treatment, samples were pulsed-labeled with [35S]methionine for 10 min before addition of 2 µg/ml puromycin for another 20 min incubation step.
 
 Subsequently, cells were harvested and washed with PBS, and used for further analysis on SDS-PAGE and autoradiography. Radioactive signals could be detected on Storage Phosphor Screens via a Typhoon FLA 7000 scanner (GE Healthcare) after several days of incubation.
 
-## Cytochrome c oxidase activity assay
+### Cytochrome c oxidase activity assay
 
 The activity of the cytochrome c oxidase was measured as described previously (Dennerlein et al., 2015). A cytochrome c oxidase specific activity microplate assay kit (Mitosciences, Abcam) was used, following the manufacturer’s protocol. The specific activity of the cytochrome c oxidase was measured according to the manufacturer’s instructions. In general, 15 mg of cell lysate was used per well. The oxidization of cytochrome c was measured at 550 nm, representing cytochrome c oxidase activity.
 
-## Isolation of mitochondria
+### Isolation of mitochondria
 
 Mitochondria were isolated according to a modified protocol (Panov and Orynbayeva, 2013). Cells were harvested using PBS and resuspended in cold TH-buffer (300 mM Trehalose, 10 mM KCl, 10 mM HEPES; pH7.4) with 2 mM PMSF and 0.1 mg BSA/ml. Subsequently, cells were gently homogenized two times using a Potter S Dounce Homogenizer (Sartorius) and pelleted at 400×g for 10 min at 4°C after each homogenization step. The supernatant was collected and remaining cell debris were removed by additional centrifugation (800×g, 8 min, 4°C). Afterward, mitochondria were pelleted at 11,000×g for 10 min at 4°C and pooled mitochondria pellets were washed with BSA-free TH-buffer and collected by centrifugation as described before. Finally, mitochondria were resuspended in BSA-free TH buffer and stored at –80°C or used right away.
 
-## Protein localization and protease protection assays
+### Protein localization and protease protection assays
 
 Carbonate extraction and mitochondrial swelling experiments were performed as previously described (Mick et al., 2012). For carbonate extraction, mitochondria were isolated as described and resuspended in buffer containing 10 mM 3-(N-morpholino) propanesulfonic acid (MOPS) (pH 7.2), 50 mM NaCl and either 1% Triton X-100 or 0.1 M carbonate at pH 10.5 or 11.8. Insoluble membranes were pelleted by 55,000 rpm at 4°C, 45 min in a TLA-55 rotor (Beckman Coulter). For submitochondrial localization, mitochondria were either suspended in SEM buffer (250 mM sucrose, 1 mM EDTA, and 10 mM MOPS [pH 7.2]), to osmotically stabilize mitochondria, or in EM buffer (1 mM EDTA, and 10 mM MOPS [pH 7.2]), to rupture the outer mitochondrial membrane. In the following, Proteinase K (PK) was added as indicated. Furthermore, mitochondria were lysed with 1% Triton X-100 in the presence of PK for positive control. All reactions were stopped after 10 min by addition of PMSF (2 mM final concentration), followed by trichloroacetic acid (TCA) precipitation.
 
-## Affinity purification of protein complexes
+### Affinity purification of protein complexes
 
 Isolated mitochondria or cells were lysed in solubilization buffer (150 mM NaCl, 10% glycerol (v/v), 20 mM MgCl2, 2 mM PMSF, 50 mM Tris-HCl, pH 7.4, 1% digitonin (v/w) protease inhibitor) in a ratio of 1–2 µg/µl for 30 min at 4°C and 850 rpm. Lysates were cleared by centrifugation (15 min, 16,000×g, 4°C) and transferred onto anti-FLAG M2 agarose beads (Sigma-Aldrich) for FLAG immunoprecipitation. After 1 hr binding at 4°C, beads were washed several times (10×) with washing buffer (50 mM Tris-HCl, pH 7.4, 150 mM NaCl, 10% glycerol (v/v), 20 mM MgCl2, 1 mM PMSF, 0.3% digitonin (v/w)) to remove unbound proteins. Bound proteins were eluted with FLAG peptide (Sigma-Aldrich) by a 30 min incubation step at 850 rpm at 4°C. Samples were analyzed via SDS-PAGE and immunoblotting or quantitative mass spectrometry.
 
 For antibody immunoprecipitation, same protocol was used as described above. Lysed mitochondria or cells were transferred onto protein A-Sepharose (PAS) containing crosslinked SMIM4 or C12orf73 antibody in a Mobicol spin column (MoBiTec). Bound proteins at PAS-anti SMIM4/C12orf73 columns were eluted by adding 0.1 M glycine, pH 2.8 for 6 min at 650 rpm at room temperature (RT).
 
-## Immunoblotting via western blot
+### Immunoblotting via western blot
 
 Proteins were separated using an SDS-PAGE and afterward transferred onto PVDF membrane (Millipore) by semidry blotting (Blotting buffer). Primary antibodies were incubated overnight at 4°C or 1 hr at RT. Secondary antibodies (rabbit or mouse) were incubated at RT for additional 1–2 hr. Signals were visualized on X-ray films using the enhanced chemiluminescence detection kit (GE Healthcare), and quantifications were performed using ImageQuant TL 7.0 software (GE Healthcare) with a rolling ball background subtraction.
 
-## Blue native and second dimension analysis
+### Blue native and second dimension analysis
 
 BN-PAGE was performed as described previously (Mick et al., 2012). Isolated mitochondria or cells were solubilized in a concentration of 1 µg/µl in BN-PAGE lysis buffer containing 1% digitonin or 1% DDM (20 mM Tris-HCl, pH 7.4, 0.1 mM EDTA, 50 mM NaCl, 10% glycerol (v/v), 1 mM PMSF). After a 20-min incubation step on ice, debris was removed by centrifugation for 15 min, 16.000×g at 4°C. The remaining supernatant was resuspended in BN-PAGE Loading dye (5% Coomassie Brilliant Blue G250 (v/w), 500 mM 6-aminocaproic acid, 100 mM Bis-Tris–HCl, pH 7.0) and applied to electrophoresis on a 4–13% or 2.5–10% gradient gel. Afterward, proteins were either transferred to a PVDF membrane by western blot method or subjected to 2D-PAGE analysis. In case of 2D-PAGE analysis, signal BN-PAGE stripes were cut out from gel and further used in SDS-PAGE separation.
 
-## Quantitative mass spectrometry and data analysis
+### Quantitative mass spectrometry and data analysis
 
 Affinity-purified SILAC-labeled mL62FLAG and SMIM4FLAG complexes were processed for quantitative LC-MS analysis following a gel-based approach. Reduction and alkylation of cysteine residues and subsequent tryptic in-gel digestion of proteins were performed as described before (Peikert et al., 2017). Peptides were desalted using StageTips, dried in vacuo, and reconstituted in 0.1% trifluoroacetic acid. LC-MS analyses were carried out using an UltiMate 3000 RSLCnano HPLC system (Thermo Fisher Scientific) coupled to an Orbitrap Elite mass spectrometer (Thermo Fisher Scientific). Peptides were separated on a C18 reversed-phase nano LC column (for mL62FLAG samples: Acclaim PepMap, 500 mm × 75 µm, 2 µm particle size, 100 Å packing density [Thermo Fisher Scientific], flow rate of 0.25 µl/min; for SMIM4FLAG samples: nanoEase M/Z HSS C18 T3, 250 mm × 75 µm, 1.8 µm particle size, 100 Å packing density [Waters], flow rate of 0.3 µl/min) using a binary solvent system consisting of 4% dimethyl sulfoxide/0.1% formic acid (solvent A) and 48% methanol/30% acetonitrile/4% dimethyl sulfoxide/0.1% formic acid (solvent B). The gradients employed for peptide elution were as follows: 1% solvent B for 5 min, 1–65% B in 50 min, 65–95% B in 5 min, 5 min at 95% B for mL62FLAG samples and 7% solvent B for 5 min, 7–65% B in 65 min, 65–80% B in 5 min, 5 min at 80% B for SMIM4FLAG samples.
 
@@ -194,6 +682,6 @@ MS raw data were analyzed with MaxQuant/Andromeda (version 1.4.1.2 for mL62FLAG 
 
 Experiments were performed in four biological replicates including label-switch. Lists of proteins identified in the analyses of mL62FLAG and SMIM4FLAG complexes are provided in Supplementary file 1 and Supplementary file 2, respectively.
 
-## Quantifications and statistical analysis
+### Quantifications and statistical analysis
 
 To measure signals for quantifications, the ImageQuant software of GE Healthcare was used. For statistical analysis, a one-sample t-test (https://www.graphpad.com) was used. Statistics were defined as *≤0.05, **≤ 0.01, and *** ≤ 0.001.

@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05qwgg493 Department of Mathematics and Statistics, Boston University Boston United States
-2. https://ror.org/03taz7m60 Department of Biology, University of Southern California Los Angeles United States
+1. Department of Mathematics and Statistics, Boston University Boston United States ([ROR:05qwgg493](https://ror.org/05qwgg493))
+2. Department of Biology, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
 
 † Corresponding author
 
@@ -30,7 +30,7 @@ The model reproduces the increase in the low theta after training that was found
 
 ## Results
 
-## Rhythms in the BLA can be produced by interneurons
+### Rhythms in the BLA can be produced by interneurons
 
 Brain rhythms are thought to be generated and propagated largely by interneurons (Whittington et al., 2000). Identified interneurons in BLA include VIP, SOM, and PV (Muller et al., 2006; Muller et al., 2007; Rainnie et al., 2006; Bienvenu et al., 2012; Krabbe et al., 2018; Krabbe et al., 2019), which can be further subdivided according to their electrophysiological dynamics (Sosulina et al., 2010; Spampanato et al., 2011). In the model, we show that some types of VIP, SOM, and PV can each contribute to the generation of a key rhythm involved in the BLA due to their specific intrinsic currents.
 
@@ -44,7 +44,7 @@ For SOM interneurons, we focus on the electrophysiologic behavior of type III BL
 
 Our model PV interneurons are fast-spiking interneurons (FSIs) with standard action potentials produced by Hodgkin-Huxley-type sodium and potassium conductances. They are silent at baseline condition (Figure 1B, bottom) and show similar behaviors to type IV interneurons (Sosulina et al., 2010) in response to depolarizing and hyperpolarizing currents (Figure 1A, bottom). However, when reciprocal connections are present between the PV interneuron and the excitatory projection neuron, these neurons form a PING rhythm (pyramidal-interneuron network gamma; Whittington et al., 2000), if the excitatory projection neuron receives enough excitation to fire (Figure 1C); this has been suggested as a possible mechanism for the basis of gamma rhythm generation in the BLA (Feng et al., 2019). The frequency of PING depends sensitively on the external input to the excitatory projection neuron and the PV’s decay time constant of inhibition (8.3 ms).
 
-## Interneurons interact to modulate fear neuron output
+### Interneurons interact to modulate fear neuron output
 
 Our BLA network consists of interneurons, detailed in the previous section, and excitatory projection neurons (Figure 2A). Both the fear-encoding neuron (F), an excitatory projection neuron, and the VIP interneuron are activated by the noxious stimulus US (Krabbe et al., 2019). The US input on the pyramidal cell and VIP interneuron is modeled as a Poisson spike train at ~50 Hz and an applied current, respectively. In the rest of the paper, we will use the words ‘US’ as shorthand for ‘the effects of US’. As shown in Figure 2A (top, right), VIP disinhibits F by inhibiting both SOM and PV, as suggested in Krabbe et al., 2019. We do not include connections from PV to SOM and VIP, nor connections from SOM to PV and VIP, since those connections have been shown to be significantly weaker than the ones included (Krabbe et al., 2019). The simplest network we consider is made of one neuron for each cell type. We introduce additional neurons for each cell type with some heterogeneity in the last two sections of the Results.
 
@@ -54,7 +54,7 @@ Our BLA network consists of interneurons, detailed in the previous section, and 
 
 Figure 2A shows a typical dynamic of the network before and after the US input onset. The network produces all the rhythms originating from the interneurons alone or through their interactions with the excitatory projection neuron (shown in Figure 1). Specifically, since VIP is active at low theta during both rest and upon the injection of US, it then modulates F at low theta cycles via SOM and PV. In the baseline condition, the VIP interneuron has short gamma bursts nested in a low theta rhythm. With US onset, VIP increases its burst duration and the frequency of the low theta rhythm. These longer bursts make the SOM cell silent for long periods of each low theta cycle, providing F with windows of disinhibition and contributing to the abrupt increase in the activity of F right after the US onset. Finally, in Figure 2A, PV lacks any external input and fires only when excited by F. Due to their reciprocal interactions, PV forms a PING rhythm with F, as depicted in Figure 1C.
 
-## Interneuron rhythms provide the fine timing needed for depression-dominated STDP to make the association between CS and fear
+### Interneuron rhythms provide the fine timing needed for depression-dominated STDP to make the association between CS and fear
 
 We now introduce another excitatory projection neuron (ECS), as shown in Figure 2B (top). ECS, unlike F, responds to the neutral stimulus CS, as does PV. Similarly to the US, in the rest of the paper, we will use the words ‘CS’ as shorthand for ‘the effects of CS’. In our simulations, CS is modeled as a Poisson spike train at ~50 Hz, independent of the US input. Thus, we hypothesize that the time structure of the inputs sometimes used for the training (e.g. a series of auditory pips) is not central to the formation of the plasticity in the network. Our CS input describes either the context or the cue in contextual and cued fear conditioning, respectively. For the context, the input may come from the hippocampus or other non-sensory regions, but this does not affect its role as input in the model. By the end of fear conditioning, CS consistently activates the neuron F, thus eliciting the network fear response. This happens because of the formation and strengthening of the synapse from ECS to F by means of synaptic plasticity. We now show how this network, with appropriate connection strengths among neurons, can make the timing of the interneurons confer pre-post timing to ECS and F, which is conducive to spike-timing-dependent plasticity potentiation suggested to be critical for associative aversive learning (Rogan et al., 1997; Nabavi et al., 2014); in particular, we need feedback inhibition (from PV to F) to be stronger than lateral inhibition (from PV to ECS) to promote ECS firing before F. The Hebbian plasticity rule that we use is characterized by a longer time constant of depression than potentiation (and equal maximal amplitudes) and considers the whole history of ECS and F spiking activity (see Materials and methods and Appendix 1—figure 2A for more details).
 
@@ -62,7 +62,7 @@ Figure 2B shows an example of the network dynamics with CS present for 2 seconds
 
 In the next sections, we will explore the role of each interneuron and its associated rhythm in shaping the network dynamics and allowing the association between CS and fear to be instantiated.
 
-## With the depression-dominated plasticity rule, all interneuron types are needed to provide potentiation during fear learning
+### With the depression-dominated plasticity rule, all interneuron types are needed to provide potentiation during fear learning
 
 We now show that, in the example used above, only the network endowed with all the interneurons and their associated rhythms leads to overall potentiation of the conductance from ECS to F in the timeframe used to induce the fear learning in experimental work. (See Discussion for other plasticity rules.) In general, experimental work finds successful learning after one or very few presentations of CS and US (lasting 1.5 or 2 s) interspersed with CS-only intervals lasting 30–40 s (e.g. see Davis et al., 2017; Krabbe et al., 2019). The 40 s interval we consider has both ECS and F, as well as VIP and PV interneurons, active during the entire period: an initial bout of US is known to produce a long-lasting fear response beyond the offset of the US (Hole and Lorens, 1975) and to induce the release of neuromodulators. The latter, in particular acetylcholine and dopamine that are known to be released upon US presentation (Harmer and Phillips, 1999; Suzuki et al., 2002; Rajebhosale et al., 2024), may induce more sustained activity in the ECS, F, VIP, and PV neurons during and after the presentation of US, thus ensuring a concomitant activation of those neurons necessary for STDP to take place (see ‘Assumptions and predictions of the model’ in the Discussion).
 
@@ -74,7 +74,7 @@ Figure 3A shows the evolution of the average ECS to F AMPA maximal conductance d
 
 We show in Figure 3C results in which F and VIP show an increased activity due to the US for only 15 seconds of the fear conditioning paradigm, thus relaxing the assumption of these neurons being active for the entire 40 seconds. We find that learning may still occur under this condition. The reason is that, after 15 seconds of enhanced network activity due to CS and US, ECS to F may have potentiated enough that ECS can drive F some of the time (although not all the time). This allows further potentiation to occur in the presence of CS alone. We find that, if the conductance from ECS to F is higher than a threshold value of 0.037 mS/cm3 after 15 s, then the network will become a learner after a further 30 seconds of CS alone; those network realizations that did not reach the threshold value are defined here as non-learners. Even with this more restrictive assumption, the large majority of network realizations were learners (19 out of 20 networks). This is in agreement with the experimental fear conditioning literature showing that most of the subjects learn the association between CS and fear after only one trial (Schafe et al., 2000).
 
-## Mechanisms by which interneurons contribute to potentiation during depression-dominated plasticity
+### Mechanisms by which interneurons contribute to potentiation during depression-dominated plasticity
 
 The PV cell is necessary to induce the correct pre-post timing between ECS and F needed for long-term potentiation of the ECS to F conductance. In our model, PV has reciprocal connections with F and provides lateral inhibition to ECS. Since the lateral inhibition is weaker than the feedback inhibition, PV tends to bias ECS to fire before F. This creates the fine timing needed for the depression-dominated rule to instantiate plasticity. If we used the classical Hebbian plasticity rule (Bi and Poo, 2001) with gamma frequency inputs, this fine timing would not be needed and ECS to F would potentiate over most of the gamma cycle, and thus we would expect random timing between ECS and F to lead to potentiation (Appendix 1—figure 4). In this case, no interneurons are needed (See Discussion ‘synaptic plasticity in our model’ for the potential necessity of the depression-dominated rule).
 
@@ -84,7 +84,7 @@ In the PV and projection cell network configuration, the pre-post timing for ECS
 
 **Figure 4.:** (A) Left, network with PV as the only interneuron. PV cell is at an excitation level that supports PING. Middle, dynamics of PV and F that reciprocally interact and generate PING. Right, PV and F entrain in PING (top), ECS and F activity (middle), and ECS to F conductance (bottom). (B) Left, network with both PV and VIP. Right, network dynamics (top, middle) followed by the evolution in time of the ECS to F AMPA conductance (bottom). The detailed mechanism behind the evolution of AMPA conductance in panels A and B is in Appendix 1, including Appendix 1—figure 2.
 
-## Network with multiple heterogeneous neurons can establish the association between CS and fear
+### Network with multiple heterogeneous neurons can establish the association between CS and fear
 
 To test the robustness of our single cell results to heterogeneity, we expand our BLA network to include three cells of each interneuron subtype and ten of each excitatory projection neuron (Figure 5A). Each neuron has independent noise and cellular parameters (see Materials and methods for details). We find that the network very robustly produces potentiation between the ECS and F affected by CS and US, respectively, during fear training.
 
@@ -94,7 +94,7 @@ To test the robustness of our single cell results to heterogeneity, we expand ou
 
 Figure 5B shows an example of the network dynamics during fear conditioning. As previously presented for the single neuron network (Figures 2–3), interneurons are crucial in conferring the correct pre-post spike timing to ECS and F. We assume all the VIP interneurons receive the same US; hence, the VIP neurons tend to approximately synchronize at low theta, allowing a coordinated disinhibition window for potentiation of ECS to F conductance (Figure 5B), as we have seen in the single cell model. The potentiation from ECS to F is specifically for the excitatory projection cells affected by CS and US, respectively (Figure 5C). The ECS cells not receiving CS are inhibited by ongoing PV activity during the disinhibition window (Figure 5B); they are constructed to be firing at 11 Hz in the absence of any connections from other cells. The lack of activity in those cells during fear conditioning implies that there is no plasticity from those ECS cells to the active F. Those cells are included for the calculation of the LFP (see below in ‘Increased low theta frequency is a biomarker of fear learning’). This larger network corroborates the results obtained for the single neuron network: only the realizations of the full network learn the association between CS and fear (Figure 5D, left) and all those network realizations become learners in less than 40 seconds (Figure 5D, right). Similarly, there is a striking failure of plasticity if any interneuron type is removed from the network; even partial plasticity does not arise.
 
-## Increased low theta frequency is a biomarker of fear learning
+### Increased low theta frequency is a biomarker of fear learning
 
 We find that fear conditioning leads to an increase in low theta frequency power of the network spiking activity compared to the pre-conditioned level (Figure 6A and B); there is no change in the high theta power. We also find that the LFP, modeled as the linear sum of all the AMPA, GABA, NaP-, D-, and H- currents in the network, similarly reveals a low theta power increase when considering the peak of the low theta power, and no significant variation in the high theta power again when considering the peak of the high theta power (Figure 6C, D and E). These results are consistent with the experimental findings in Davis et al., 2017. Specifically, the newly potentiated AMPA synapse from ECS to F ensures F is active after fear conditioning, thus generating strong currents in the PV cells to which it has strong connections (Figure 6F). It is the AMPA currents to the PV interneurons that are directly responsible for the low theta increase; it is the newly potentiated ECS to F synapse that paces the AMPA currents in the PV interneurons to go at low theta. Thus, the low theta increase is due to added excitation provided by the new learned pathway.
 
@@ -108,13 +108,13 @@ Although the experimental results in Davis et al., 2017 show an increase in low 
 
 ## Discussion
 
-## Overview
+### Overview
 
 Our study suggests that amygdalar rhythms play a crucial role in plasticity during fear conditioning. Prominent rhythms found in the BLA during fear conditioning include low theta (~3–6 Hz), high theta (~6–12 Hz), and gamma (>30 Hz) (Seidenbecher et al., 2003; Courtin et al., 2014b; Stujenske et al., 2014; Davis et al., 2017). Experimental work in rodents shows that the BLA undergoes more oscillatory firing at low theta frequency and gamma following fear conditioning, while high theta frequency remains unchanged compared to before fear conditioning (Courtin et al., 2014b; Davis et al., 2017).
 
 To examine the origin of these rhythmic changes and their functional role in fear conditioning, we implement a biophysically detailed model of the BLA. We show that VIP interneurons, PV interneurons, and SOM interneurons in the BLA may be centrally involved in producing the experimentally measured rhythms based on the biophysical properties of these interneurons. More specifically: the gamma oscillation is associated with PV cell interaction with excitatory cells to produce PING; VIP cells produce low theta due to their intrinsic D-current; SOM cells help produce the high theta rhythm due to persistent sodium current (NaP-current) and H-currents. Moreover, we show that the rhythmic dynamics produced by VIP and PV cells both play a crucial role in the instantiation of plasticity during associative learning by promoting the formation of a dedicated fear circuit shaped through spike-timing-dependence, and the removal of any of the interneuron types from the circuit leads to failure of the plasticity needed for associative fear learning. We note that the presence of SOM cells is crucial for plasticity in our model since they help to produce the necessary pauses in the excitatory projection cell activity. The BLA SOM cells do not necessarily have to be the only source of the high theta observed in the BLA during fear learning; the high theta detected in the LFP of the BLA also originates from the prefrontal cortex and/or the hippocampus (Stujenske et al., 2014; Stujenske et al., 2022). Finally, we replicate the experimental increase in the low theta after successful training (Davis et al., 2017) and determine that this is a biomarker of fear learning, that is the increase in low theta power does not appear in the absence of learning.
 
-## Synaptic plasticity in our model
+### Synaptic plasticity in our model
 
 Synaptic plasticity is the mechanism underlying the association between neurons that respond to the neutral stimulus CS (ECS) and those that respond to fear (F), which instantiates the acquisition and expression of fear behavior. One form of experimentally observed long-term synaptic plasticity is spike-timing-dependent plasticity (STDP), which defines the amount of potentiation and depression for each pair of pre- and postsynaptic neuron spikes as a function of their relative timing (Bi and Poo, 2001; Caporale and Dan, 2008). All forms of STDP require that there be an overlap in the firing of the pre- and post-synaptic cells. In some fear learning paradigms, the US and the CS do not overlap. We address this below under ‘Assumptions and predictions of the model’, showing how the effects of US and CS on the spiking of the relevant neurons can overlap even in the absence of overlap of US and CS.
 
@@ -124,13 +124,13 @@ With the classical Hebbian plasticity rule, we suggest that learning can occur w
 
 VIP cells may be important in establishing the kind of depression-dominated rule we are using in this model for the synapse between ECS and F. VIP cells are known to corelease the peptide VIP along with GABA (Bayraktar et al., 1997). The amount of the release is related to the amount of high frequency firing, that is the duty cycle of the gamma burst in each low theta cycle (Agoston et al., 1988; Agoston and Lisziewicz, 1989). The peptide VIP can act on second messenger pathways to inhibit potentiation; the pathways are complex and not fully understood, but in hippocampus they involve GABA transmission, NMDA activation, and CaMKII (Caulino-Rocha et al., 2022). The relevant VIP receptor VPAC1 is known to exist in the amygdala (Joo et al., 2005; Boucher et al., 2021). Thus, by inhibiting potentiation, VIP may change a Hebbian plasticity rule to a depression-dominated rule. (See Cunha-Reis and Caulino-Rocha, 2020 for details about VIP and plasticity). Since high theta is increased during fear extinction, but not learning, and our model suggests an amygdalar source of high theta is the SOM cells, we hypothesize that SST peptide may play some role in aiding the formation of networks involved in fear extinction. Also, the CCK peptide has been proposed to promote the switch between fear and safety states after fear extinction (Krabbe et al., 2018).
 
-## Involvement of other brain structures
+### Involvement of other brain structures
 
 Studies using fear conditioning as a model of associative learning reveal that learning and expression of fear are not limited to the amygdala but involve a distributed network including the amygdala, the medial prefrontal cortex, and the hippocampus (Seidenbecher et al., 2003; Bocchio and Capogna, 2014; Courtin et al., 2014a; Stujenske et al., 2014; Tovote et al., 2015; Karalis et al., 2016; Chen et al., 2021). In our model, the excitatory projection neurons and VIP and PV interneurons show sustained activity during and after the US presentation, thus allowing potentiation through STDP to take place. The medial prefrontal cortex and/or the hippocampus may provide the substrates for the continued firing of the BLA neurons after the 2 s US stimulation. We also discuss below that this network sustained activity may originate from neuromodulator release induced by US (see section ‘Assumptions and predictions of the model’ in the Discussion).
 
 Other brain structures may be involved in other aspects of fear responsiveness, such as fear extinction and prevention of generalization. It has been reported that the prelimbic cortex (PL) modulates the BLA SOM cells during fear retrieval, and the latter cells are crucial to discriminate non-threatening cues when desynchronized by the PL inputs (Stujenske et al., 2022). Also, brain structures such as the prefrontal cortex and hippocampus have been documented to play a crucial role in fear extinction, the paradigm following fear conditioning aimed at decrementing the conditioned fearful response through repeated presentations of the CS alone. As reported by several studies, fear extinction suppresses the fear memory through the acquisition of a distinct memory, instead of through the erasure of the fear memory itself (Harris et al., 2000; Bouton, 2002; Trouche et al., 2013; Thompson et al., 2018). Davis et al., 2017 found a high theta rhythm following fear extinction that was associated with the suppression of threat in rodents. Our model can be extended to include structures in the prefrontal cortex and the hippocampus to further investigate the role of rhythms in the context of discrimination of non-threatening cues and extinction. We hypothesize that a different population of PV interneurons plays a crucial role in mediating competition between fearful memories, associated with a low theta rhythm, and safety memories, associated with a high theta rhythm; supporting experimental evidence is in Lucas et al., 2016; Davis et al., 2017; Chen et al., 2022.
 
-## Where the rhythms originate, and by what mechanisms
+### Where the rhythms originate, and by what mechanisms
 
 A recent experimental paper (Antonoudiou et al., 2022) suggests that the BLA can intrinsically generate theta oscillations (3–12 Hz) detectable by LFP recordings when inhibition is totally removed due to gabazine application. They draw this conclusion in mice by removing the hippocampus, which can volume conduct to BLA, and noticing that other nearby brain structures did not display any oscillatory activity. In our model, we note that when inhibition is removed, both AMPA and intrinsic currents contribute to the network dynamics and the LFP. Thus, interneurons with their specific intrinsic currents (i.e. D-current in the VIP interneurons, and NaP- and H- currents in SOM interneurons) can indeed affect the model LFP and support the generation of theta and gamma rhythms (Figure 6G).
 
@@ -138,7 +138,7 @@ Another slice study, (Bratsch-Prince et al., 2024), shows that BLA is intrinsica
 
 Although the BLA can produce these rhythms, this does not rule out that other brain structures also produce the same rhythms through different mechanisms, and these can be transmitted to the BLA. Specifically, it is known that the olfactory bulb produces and transmits the respiratory-related low theta (4 Hz) oscillations to the dorsomedial prefrontal cortex, where it organizes neural activity (Bagur et al., 2021). Thus, the respiratory-related low theta may be captured by BLA LFP because of volume conduction or through BLA extensive communications with the prefrontal cortex. Furthermore, high theta oscillations are known to be produced by the hippocampus during various brain functions and behavioral states, including during spatial exploration (Vanderwolf, 1969) and memory formation/retrieval (Raghavachari et al., 2001), which are both involved in fear conditioning. Similarly to the low theta rhythm, the hippocampal high theta can manifest in the BLA. It remains to understand how these other rhythms may interact with the ones described in our paper. However, we emphasize that there is also evidence (as discussed above) that these rhythms arise within the BLA.
 
-## Assumptions and predictions of the model
+### Assumptions and predictions of the model
 
 The interneuron descriptions in the model were constrained by the electrophysiological properties reported in response to hyperpolarizing currents (Sosulina et al., 2010). Specifically, we modeled the three subtypes of VIP, SOM, and PV interneurons displaying bursting behavior, regular spiking with early spike-frequency adaptation, and regular spiking without spike-frequency adaptation, respectively. Focusing on VIP interneurons, we were able to model the bursting behavior by including the D-type potassium current. This current is thought to exist in the VIP interneurons in the cortex (Porter et al., 1998), but whether this current is also found in the BLA is still unknown. We modeled the SOM interneurons with NaP- and H-currents, similar to the OLM cells in the hippocampus. Due to these currents, the VIP and SOM cells are able to produce low- and high theta oscillations, respectively. The presence of these currents, and the neurons’ ability to exhibit oscillations in the theta range during fear conditioning and at baseline in BLA, which are assumptions of our model, should be tested experimentally. Our model predicts that blockade of D-current in VIP interneurons (or silencing VIP interneurons) will both diminish low theta and prevent fear learning. Finally, the model assumes the absence of significantly strong connections from the excitatory projection cells ECS to PV interneurons, unlike the ones from F to PV. Including those synapses would alter the PING rhythm created by the interactions between F and PV, which is crucial for fine timing between ECS and F needed for LTP.
 
@@ -152,7 +152,7 @@ Experimental recordings cannot speak to the rate of spiking of BLA neurons durin
 
 Hence, we suggest that a solution to the problem apparently posed by the non-overlap US and CS in some paradigms of auditory fear conditioning (Krabbe et al., 2019) may be solved by considering the roles of ACh and dopamine in the BLA. The model we have may be considered a “minimal” model that puts in by hand the overlap in activity due to the neuromodulation without explicitly modeling it. We have used the simplest way to model overlap without assumptions about timing specificity in the overlap. We note that, even though ECS and F neurons have the ability to fire continuously when ACh and dopamine are involved, the participation of the interneurons enforces periodic silence needed for the depression-dominated STDP.
 
-## Is STDP needed in fear conditioning?
+### Is STDP needed in fear conditioning?
 
 The study in Grewe et al., 2017 questions the validity of the Hebbian model in establishing associative learning during fear conditioning. There are several critiques we discuss here. The first critique is that Hebbian plasticity does not explain the experimental finding showing that both upregulation and downregulation of stimulus-evoked responses are present between coactive neurons. The upregulation is provided by our model, so the issue is the downregulation, which is not addressed by our model. However, our model highlights that coactivity alone does not create potentiation; the fine timing of the pre- and postsynaptic spikes determines whether there is potentiation or depression. Here, we find that PING networks are instrumental in setting up the fine timing for potentiation. We suggest that networks not connected to produce the PING may undergo depression when coactive.
 
@@ -162,7 +162,7 @@ The third critique raised by Grewe et al., 2017 is that Hebbian plasticity canno
 
 Overall, we agree with (Grewe et al., 2017) that neuromodulators play a crucial role in fear conditioning, especially in prolonging the US- and CS-encoding activity as discussed in (see section ‘Assumptions and predictions of the model’ in the Discussion), or even participating in changing the details of the plasticity rule. A possible follow-up of our work involves investigating how fear ensembles form and modify through fear conditioning and later stages. This follow-up work may involve using a tri-conditional rule, as suggested in Grewe et al., 2017, in which the potential role of neuromodulators is taken into account in the plasticity rule in addition to the pre- and postsynaptic neuron activity. Another direction is to investigate a possible relationship between neuromodulation and a depression-dominated Hebbian rule.
 
-## Comparison with other models
+### Comparison with other models
 
 Many computational models that study fear conditioning have been proposed in the last years; the list includes biophysically detailed models (e.g., Li et al., 2009; Kim et al., 2013), firing rate models (e.g. Krasne et al., 2011; Vlachos et al., 2011; Ball et al., 2012), and connectionist models (e.g. Edeline and Weinberger, 1992; Armony et al., 1997; Moustafa et al., 2013; for a review see Nair et al., 2016). Both firing rate models and connectionist models use an abstract description of the interacting neurons or regions. The omission of biophysical details prevents such models from addressing questions concerning the roles of dynamics and biophysical details in fear conditioning, which is the aim of our model. There are also biophysically detailed models (Li et al., 2009; Kim et al., 2013; Kim et al., 2016; Feng et al., 2019), which differ from ours in both the physiology included in the model and the description of how plastic changes take place. One main difference in the physiology is that we differentiated among types of interneurons, since the fine timing produced for the latter was key to our use of rhythms to produce spike-timing-dependent plasticity. The origin of the gamma rhythm (but not the other rhythms) was investigated in Feng et al., 2019, but none of these papers connected the rhythms to plasticity.
 
@@ -170,7 +170,7 @@ The most interesting difference between our work and that in Li et al., 2009; Ki
 
 The dynamics of the VIP cell play a central role in the plasticity we investigate. This is in contrast to the cortical model in Veit et al., 2023 for which VIP is essential for locally controlling gain and globally controlling coherence in gamma oscillations. In the model by Veit et al., 2023, the global control requires differences in long-range connectivity that are known to exist and are inserted in the model by hypothesis. Our paper shows how more detailed biophysics produces rhythms among the interneurons used in Veit et al., 2023 and how these rhythms can produce the plasticity needed to construct those differences in long-range connectivity. Thus, although Veit et al., 2023 shows that rhythms are not needed for some kinds of control once connectivity is established, our paper suggests that the same set of interneurons, with more detailed physiology, can support the establishment of appropriate connectivity as well as the control described in Veit et al., 2023. We note that Veit et al., 2023 deal with cortical networks, while our model describes BLA networks; however, it is known that these networks are structurally related (Sah et al., 2003; Tovote et al., 2015; Polepalli et al., 2020).
 
-## Limitations and caveats
+### Limitations and caveats
 
 LFPs recorded in the experiments are thought to be mainly created by transmembrane currents in neurons located around the electrode and depend on several factors, including the morphology of the arborization of contributing neurons and the location of AMPA and GABA boutons (Katzner et al., 2009; Lindén et al., 2011; Łęski et al., 2013; Mazzoni et al., 2015). Since our model has no spatial extension, we used an LFP proxy; this proxy was shown to reflect the rhythmic output of the network, which we believe to be the essential result (for more details see Results ‘Increased low theta frequency is a biomarker of fear learning’, and Appendix 1 ‘A higher low theta power increase emerges in LFP approximated with the sum of the absolute values of the currents compared to their linear sum’).
 
@@ -180,142 +180,434 @@ We do not explicitly model the biophysics of NMDA receptors. Rather, we model th
 
 Our model assumes that initial stages of fear learning can be accomplished entirely within the amygdala, though it is known that other structures in the brain are important for modulating networks related to fear. Much of the work involving the prefrontal cortex and the hippocampus relates to fear extinction, which is not addressed in this paper.
 
-## Summary
+### Summary
 
 We have shown how networks of amygdala neurons, including multiple types of interneurons, can work together to produce plasticity needed for fear learning. The coordination necessary to produce the plasticity requires the involvement of multiple rhythms. Thus, our paper both accounts for the experimental evidence showing such amygdala rhythms exist and points to their central role in the mechanisms of plasticity involved in associative learning. These mechanisms may be common to other types of associative learning, as similar interneuron subtypes and connectivity are ubiquitous in the cortex (Sah et al., 2003; Tovote et al., 2015; Polepalli et al., 2020).
 
 ## Materials and methods
 
-## Neuron model
+### Neuron model
 
-Our network is made of interacting single-compartment neurons modeled using conductance-based models with Hodgkin-Huxley-type dynamics. The temporal voltage change of each neuron is described by:cmdVdt=−∑Imembrane−∑Isynaptic+Iapp+Inoise,
+Our network is made of interacting single-compartment neurons modeled using conductance-based models with Hodgkin-Huxley-type dynamics. The temporal voltage change of each neuron is described by:
 
-where, cm is the membrane capacitance, and Imembrane are the intrinsic membrane currents, which include a fast sodium current (INa), a fast potassium current (IK), and a leak current (IL) for all neuron types. VIP interneurons additionally have a D-current, and SOM interneurons additionally have NaP and H-currents (Rotstein et al., 2005; Tort et al., 2007). All these currents are discussed in more detail below, where we describe each neuron individually. The synaptic currents (Isynaptic) take into account the input from the other neurons in the network and depend on the network connectivity and specific type of synaptic input, as discussed below. Finally, the background drive Iapp is a constant term that determines the background excitation of a neuron, and Inoise corresponds to a Gaussian noise input with mean zero, standard deviation 1, and a specific amplitude for each neuronal cell type (specified below). All the currents are expressed in units per area, rather than absolute units, to avoid making assumptions about the size of the neuron surface.
+$$
+c_{m}\frac{dV}{dt}=−\sumI_{membrane}−\sumI_{synaptic}+I_{app}+I_{noise},
+$$
 
-## Membrane currents
+where, $c_{m}$ is the membrane capacitance, and $I_{membrane}$ are the intrinsic membrane currents, which include a fast sodium current ($I_{Na}$), a fast potassium current ($I_{K}$), and a leak current ($I_{L})$ for all neuron types. VIP interneurons additionally have a D-current, and SOM interneurons additionally have NaP and H-currents (Rotstein et al., 2005; Tort et al., 2007). All these currents are discussed in more detail below, where we describe each neuron individually. The synaptic currents ($I_{synaptic}$) take into account the input from the other neurons in the network and depend on the network connectivity and specific type of synaptic input, as discussed below. Finally, the background drive $I_{app}$ is a constant term that determines the background excitation of a neuron, and $I_{noise}$ corresponds to a Gaussian noise input with mean zero, standard deviation 1, and a specific amplitude for each neuronal cell type (specified below). All the currents are expressed in units per area, rather than absolute units, to avoid making assumptions about the size of the neuron surface.
 
-The membrane currents INa, IK, and IL are modeled using Hodgkin-Huxley-type conductances formulated as:(1)INa(V,h)=g¯Nam∞3h(V−ENa)oralternativelyINa(V,h)=g¯Nam3h(V−ENa)IK(V,n)=g¯Kn4(V−EK)IL(V)=g¯L(V−EL)
+### Membrane currents
 
-Each membrane current has a constant maximal conductance g¯channel and a reversal potential Echannel (for channel= Na, K, or L). The activation (m and n) and inactivation (h) gating variables evolve in time according to:(2)dxdt=x∞−xτx,
+The membrane currents $I_{Na}$, $I_{K}$, and $I_{L}$ are modeled using Hodgkin-Huxley-type conductances formulated as:
 
-where x=m,n,h. The steady-state function (x∞) and the time constant of decay (τx), which are taken from previous models (Mainen and Sejnowski, 1996; Olufsen et al., 2003), are formulated as rate functions for each opening (αx) and closing (βx) of the ionic channel through:x∞=αxαx+βx(3)τx=1αx+βx.
+$$
+I_{Na}(V,h)=g¯_{Na}m_{∞}^{3}h(V−E_{Na})oralternativelyI_{Na}(V,h)=g¯_{Na}m^{3}h(V−E_{Na})I_{K}(V,n)=g¯_{K}n^{4}(V−E_{K})I_{L}(V)=g¯_{L}(V−E_{L})
+$$
+
+Each membrane current has a constant maximal conductance $g¯_{channel}$ and a reversal potential $E_{channel}$ (for $channel=$ Na, K, or L). The activation ($m$ and $n$) and inactivation ($h$) gating variables evolve in time according to:
+
+$$
+\frac{dx}{dt}=\frac{x_{∞}−x}{\tau_{x}},
+$$
+
+where $x=m,n,h$. The steady-state function ($x_{∞}$) and the time constant of decay ($\tau_{x}$), which are taken from previous models (Mainen and Sejnowski, 1996; Olufsen et al., 2003), are formulated as rate functions for each opening ($\alpha_{x}$) and closing ($\beta_{x})$ of the ionic channel through:
+
+$$
+x_{∞}=\frac{\alpha_{x}}{\alpha_{x}+\beta_{x}}
+$$
+
+
+
+$$
+\tau_{x}=\frac{1}{\alpha_{x}+\beta_{x}}.
+$$
 
 The specific functions and constants for each cell type in the network are given below.
 
-## Vasoactive intestinal peptide interneurons (VIP)
+#### Vasoactive intestinal peptide interneurons (VIP)
 
-The membrane currents (Imembrane) of the VIP interneurons consist of a fast sodium current (INa) (described as in the first formulation of INa in Equation 1), a fast potassium current (IK), a leak current (IL, as in Equation 1, and a potassium D-current [ID]). The formulations of these currents were derived from a previous model of cortical interneurons (Golomb et al., 2007) and subsequently used to model striatal fast spiking interneurons (Sciamanna and Wilson, 2011; Chartove et al., 2020), which are reported below.
+The membrane currents ($I_{membrane}$) of the VIP interneurons consist of a fast sodium current ($I_{Na}$) (described as in the first formulation of $I_{Na}$ in Equation 1), a fast potassium current ($I_{K}$), a leak current ($I_{L}$, as in Equation 1, and a potassium D-current [$I_{D}$]). The formulations of these currents were derived from a previous model of cortical interneurons (Golomb et al., 2007) and subsequently used to model striatal fast spiking interneurons (Sciamanna and Wilson, 2011; Chartove et al., 2020), which are reported below.
 
-The maximal sodium conductance is −gNa=112.5mS/cm2 and the sodium reversal potential is ENa=50mV. The steady state functions for the sodium current activation (m) and inactivation (h) variables and h time constant (τh) are described by:m∞=11+exp⁡[-(V+24)/11.5]h∞=11+exp[(V+58.3)/6.7]τh=0.5+141+exp[(V+60)/12].
+The maximal sodium conductance is $−g_{Na}=112.5mS/cm^{2}$ and the sodium reversal potential is $E_{Na}=50mV$. The steady state functions for the sodium current activation ($m$) and inactivation ($h$) variables and $h$ time constant ($\tau_{h}$) are described by:
 
-The maximal conductance for the fast potassium channel is −gK=225mS/cm2 and the potassium reversal potential is EK=−90mV. The fast potassium channel has no inactivation gates and two activation gates described as follows:n∞=11+exp[−(V+12.4)/6.8]τn=(0.087+11.41+exp⁡[(V+14.6)/8.6])(0.087+11.41+exp⁡[−(V−1.3)/18.7]).
+$$
+m_{∞}=\frac{1}{1+exp⁡[-(V+24)/11.5]}
+$$
 
-The leak current (IL) has no gating variables. The maximal leak conductance is −gL=0.25mS/cm2 and the leak channel reversal potential is EL=−70mV.
 
-The fast-activating, slowly inactivating potassium D-current ID is formulated as described in Golomb et al., 2007:ID(V,a,b)=g¯Da3b(V−EK)dadt=a∞−aτadbdt=b∞−bτb,
 
-with maximal conductance g¯D=3mS/cm2. The steady state functions for the activation (a) and inactivation (b) variables are described as follows:a∞=11+exp[−(V+50)/20]b∞=11+exp[(V+70)/6],
+$$
+h_{∞}=\frac{1}{1+exp[(V+58.3)/6.7]}
+$$
 
-while the time constant of the decay is τα=2ms for the activation gate and τβ=150ms for the inactivation gate.
 
-In the absence of US, the applied current Iapp is set to 4μA/cm2. When US is present, Iapp=5μA/cm2. The Gaussian noise (Inoise) has mean 0, standard deviation 1, and an amplitude of 5δt, where δt=0.05ms corresponds to the time step of integration in our simulations.
 
-## Somatostatin-positive interneurons (SOM)
+$$
+\tau_{h}=0.5+\frac{14}{1+exp[(V+60)/12]}.
+$$
 
-The membrane currents (Imembrane) of the SOM interneurons consist of a fast sodium current (INa) (described as in the second formulation of INa in Equation 1), a fast potassium current (IK), and a leak current (IL) as in Equation 1, along with an H-current (IH) and NaP-current (IP). The formulations of these currents were taken from previous models of the oriens lacunosum-moleculare (SOM-positive O-LM) cells in the hippocampus (Rotstein et al., 2005; Tort et al., 2007) and are reported below.
+The maximal conductance for the fast potassium channel is $−g_{K}=225mS/cm^{2}$ and the potassium reversal potential is $E_{K}=−90mV$. The fast potassium channel has no inactivation gates and two activation gates described as follows:
 
-The maximal sodium conductance is −gNa=52mS/cm2 and the sodium reversal potential is ENa=55mV. The rate functions for the sodium current activation (m) and inactivation (h) variables in Equations 2-3 are formulated as follows:αm=−0.1(V+23)exp[−0.1(V+23)−1]βm=4exp⁡[-(V+48)/18]αh=0.07exp⁡[-(V+37)/20]βh=1exp[−0.1(V+7)+1].
+$$
+n_{∞}=\frac{1}{1+exp[−(V+12.4)/6.8]}
+$$
 
-The maximal potassium conductance is −gK=11mS/cm2 and the potassium reversal potential is EK=−90mV. The rate functions for the potassium current activation variable (n) are formulated as follows:αn=−0.01(V+27)exp[−0.1(V+27)−1]βn=0.125exp[−(V+37)/80].
 
-The leak current (IL) has no gating variables. The maximal leak conductance is −gL=0.62mS/cm2 and the leak channel reversal potential is EL=−65mV.
 
-The slow hyperpolarization-activated mixed cation current IH is formulated as described in Rotstein et al., 2005:IH(V,hf,hs)=g−H(0.65hf+0.35hs)(V−EH)dhfdt=h∞f−hfτhfdhsdt=h∞s−hsτhs,
+$$
+\tau_{n}=(0.087+\frac{11.4}{1+exp⁡[(V+14.6)/8.6]})(0.087+\frac{11.4}{1+exp⁡[−(V−1.3)/18.7]}).
+$$
 
-with maximal conductance g¯H=1.45mS/cm2 and EH=−20mV. The steady state functions for the hf and hs variables and their time constant of decay are described as follows:h∞f=11+exp[(V+79.2)/9.78]τhf=0.51exp⁡[(V−1.7)/10]+−exp⁡[(V+340)/52]+1h∞s=11+exp⁡[(V+2.83)/15.9]58τhs=5.6exp⁡[(V−1.7)/14]+exp⁡[−(V+260)/43]+1
+The leak current ($I_{L})$ has no gating variables. The maximal leak conductance is $−g_{L}=0.25mS/cm^{2}$ and the leak channel reversal potential is $E_{L}=−70mV$.
 
-The persistent sodium current IP is formulated as described in Rotstein et al., 2005; Rotstein et al., 2006:IP=g-PpV-ENa.
+The fast-activating, slowly inactivating potassium D-current $I_{D}$ is formulated as described in Golomb et al., 2007:
 
-The maximal persistent sodium conductance is g¯P=0.5mS/cm2 and the sodium reversal potential is, as stated above, ENa=55mV. The steady state function for the persistent sodium current IP (p∞) and the time constant (τp) are described by:p∞=11+exp[−(V+38)/6.5]τp=0.15.
+$$
+I_{D}(V,a,b)=g¯_{D}a^{3}b(V−E_{K})
+$$
 
-Throughout all simulations, the applied current Iapp is set to 0.1μA/cm2. The Gaussian noise (Inoise) has mean 0, standard deviation 1, and an amplitude of 4δt, where δt=0.05ms corresponds to the time step of integration in our simulations. We note that the persistent sodium current can be replaced by an A-current to produce a high theta rhythm (Gloveli et al., 2005).
 
-## Parvalbumin-positive interneurons (PV)
 
-The membrane currents (Imembrane) of the PV interneurons consist of only a fast sodium current (INa; described as in the second formulation of INa in Equation 1), a fast potassium current (IK), and a leak current (IL), as in Equation 1.
+$$
+\frac{da}{dt}=\frac{a_{∞}−a}{\tau_{a}}
+$$
 
-The maximal sodium conductance is g¯Na=100mS/cm2 and the sodium reversal potential is ENa=50mV. The rate functions for the sodium current activation (m) and inactivation (h) variables are formulated as follows:αm=0.32(V+54)1−exp[−(V+54)/4]βm=0.28(V+27)exp⁡[(V+27)/5]−1αh=0.128exp[−(V+50)/18]βh=41+exp[−(V+27)/5].
 
-The maximal potassium conductance is g¯K=80mS/cm2 and the potassium reversal potential is EK=−100mV. The rate functions for the potassium current activation (n) variables are formulated as follows:αn=0.032(V+52)1−exp[−(V+52)/5]βn=0.5exp[−(V+57)/40].
 
-The leak current (IL) has no gating variables. The maximal leak conductance is g¯L=0.1mS/cm2 and the leak channel reversal potential is EL=−67mV. Throughout all the simulations, Iapp=0μA/cm2. The Gaussian noise (Inoise) has mean 0, standard deviation 1, and an amplitude of 4δt, where δt=0.05ms corresponds to the time step of integration in our simulations.
+$$
+\frac{db}{dt}=\frac{b_{∞}−b}{\tau_{b}},
+$$
 
-## Excitatory projection neurons (ECS and F)
+with maximal conductance $g¯_{D}=3mS/cm^{2}$. The steady state functions for the activation ($a$) and inactivation ($b$) variables are described as follows:
 
-The membrane currents (Imembrane) of ECS and F consist of a fast sodium current (INa) (described as in the first formulation of INa in Equation 1), a fast potassium current (IK), and a leak current (IL) as in Equation 1.
+$$
+a_{∞}=\frac{1}{1+exp[−(V+50)/20]}
+$$
 
-The maximal sodium conductance is g¯Na=100mS/cm2 and the sodium reversal potential is ENa=50mV. The rate functions for the sodium current activation (m) and inactivation (h) variables are formulated as follows:αm=0.1(V+35)1−exp[−(V+35)/10]βm=4exp⁡[-(V+60)/18]αh=0.07exp⁡[-(V+58)/20]βh=1exp⁡[−0.1(V+28)]+1.
 
-The maximal potassium conductance is g¯K=80mS/cm2 and the potassium reversal potential is EK=−100mV. The rate functions for the potassium current activation (n) variables are formulated as follows:αn=−0.01(V+34)exp⁡[−0.1(V+34)−1]βn=0.125exp[−(V+44)/80].
 
-The leak current (IL) has no gating variables. The maximal leak conductance is g¯L=0.1mS/cm2 and the leak channel reversal potential is EL=−67mV. The formulations of these currents were taken from the description of excitatory/inhibitory neurons presented in Zhou et al., 2018.
+$$
+b_{∞}=\frac{1}{1+exp[(V+70)/6]},
+$$
 
-When neither US nor CS are injected, the applied current Iapp,F is set to 0.35μA/cm2 and Iapp,ECS is set to 0.45μA/cm2. By contrast, Iapp,F is set to 0.5μA/cm2 when US is injected. For both ECS and F, the Gaussian noise (Inoise) has mean 0, standard deviation 1, and an amplitude of 4δt, where δt=0.05ms corresponds to the time step of integration in our simulations.
+while the time constant of the decay is $\tau_{\alpha}=2ms$ for the activation gate and $\tau_{\beta}=150ms$ for the inactivation gate.
 
-## Conditioned and unconditioned stimuli
+In the absence of US, the applied current $I_{app}$ is set to $4\muA/cm^{2}$. When US is present, $I_{app}=5\muA/cm^{2}$. The Gaussian noise ($I_{noise}$) has mean 0, standard deviation 1, and an amplitude of $5\sqrt{\deltat},$ where $\deltat=0.05ms$ corresponds to the time step of integration in our simulations.
 
-The conditioned (CS) and unconditioned (US) stimuli affect specific cell types according to the fear conditioning phase. CS consists of a Poisson spike train (λ=800) that excites an auxiliary excitatory neuron (described by the same equations used for ECS in the previous section). The auxiliary excitatory neuron excites both ECS and PV and makes them fire, in isolation, at ~50 Hz. The maximal AMPA conductance from the auxiliary excitatory neuron to PV and ECS is −ge=0.2mS/cm2 (see the next paragraph for a description of the AMPA synapses). Similarly, US (λ=800, independent of CS) affects an auxiliary excitatory neuron that makes F fire in isolation fires at ~50 Hz. The maximal AMPA conductance from the auxiliary excitatory neuron to F is −ge=0.2mS/cm2 (see the next paragraph for a description of the AMPA synapses). Finally, US influences VIP activity by increasing its Iapp set to 5μA/cm2. To make Appendix 1—figure 3, we also considered a variation of the model with PV interneurons affected by US, instead of CS, as reported in Krabbe et al., 2019.
+#### Somatostatin-positive interneurons (SOM)
 
-## Network connectivity and synaptic currents
+The membrane currents ($I_{membrane}$) of the SOM interneurons consist of a fast sodium current ($I_{Na}$) (described as in the second formulation of $I_{Na}$ in Equation 1), a fast potassium current ($I_{K}$), and a leak current ($I_{L})$ as in Equation 1, along with an H-current ($I_{H}$) and NaP-current ($I_{P}$). The formulations of these currents were taken from previous models of the oriens lacunosum-moleculare (SOM-positive O-LM) cells in the hippocampus (Rotstein et al., 2005; Tort et al., 2007) and are reported below.
+
+The maximal sodium conductance is $−g_{Na}=52mS/cm^{2}$ and the sodium reversal potential is $E_{Na}=55mV$. The rate functions for the sodium current activation ($m$) and inactivation ($h$) variables in Equations 2-3 are formulated as follows:
+
+$$
+\alpha_{m}=\frac{−0.1(V+23)}{exp[−0.1(V+23)−1]}
+$$
+
+
+
+$$
+\beta_{m}=4exp⁡[-(V+48)/18]
+$$
+
+
+
+$$
+\alpha_{h}=0.07exp⁡[-(V+37)/20]
+$$
+
+
+
+$$
+\beta_{h}=\frac{1}{exp[−0.1(V+7)+1]}.
+$$
+
+The maximal potassium conductance is $−g_{K}=11mS/cm^{2}$ and the potassium reversal potential is $E_{K}=−90mV$. The rate functions for the potassium current activation variable ($n$) are formulated as follows:
+
+$$
+\alpha_{n}=\frac{−0.01(V+27)}{exp[−0.1(V+27)−1]}
+$$
+
+
+
+$$
+\beta_{n}=0.125exp[−(V+37)/80].
+$$
+
+The leak current ($I_{L})$ has no gating variables. The maximal leak conductance is $−g_{L}=0.62mS/cm^{2}$ and the leak channel reversal potential is $E_{L}=−65mV$.
+
+The slow hyperpolarization-activated mixed cation current $I_{H}$ is formulated as described in Rotstein et al., 2005:
+
+$$
+I_{H}(V,h^{f},h^{s})=g−_{H}(0.65h^{f}+0.35h^{s})(V−E_{H})
+$$
+
+
+
+$$
+\frac{dh^{f}}{dt}=\frac{h_{∞}^{f}−h^{f}}{\tau_{h^{f}}}
+$$
+
+
+
+$$
+\frac{dh^{s}}{dt}=\frac{h_{∞}^{s}−h^{s}}{\tau_{h^{s}}},
+$$
+
+with maximal conductance $g¯_{H}=1.45mS/cm^{2}$ and $E_{H}=−20mV$. The steady state functions for the $h^{f}$ and $h^{s}$ variables and their time constant of decay are described as follows:
+
+$$
+h_{∞}^{f}=\frac{1}{1+exp[(V+79.2)/9.78]}
+$$
+
+
+
+$$
+\tau_{h^{f}}=\frac{0.51}{exp⁡[(V−1.7)/10]+−exp⁡[(V+340)/52]}+1
+$$
+
+
+
+$$
+h_{∞}^{s}=\frac{1}{1+exp⁡[(V+2.83)/15.9]^{58}}
+$$
+
+
+
+$$
+\tau_{h^{s}}=\frac{5.6}{exp⁡[(V−1.7)/14]+exp⁡[−(V+260)/43]}+1
+$$
+
+The persistent sodium current $I_{P}$ is formulated as described in Rotstein et al., 2005; Rotstein et al., 2006:
+
+$$
+I_{P}=g-_{P}pV-E_{Na}.
+$$
+
+The maximal persistent sodium conductance is $g¯_{P}=0.5mS/cm^{2}$ and the sodium reversal potential is, as stated above, $E_{Na}=55mV$. The steady state function for the persistent sodium current $I_{P}$ ($p_{∞}$) and the time constant ($\tau_{p}$) are described by:
+
+$$
+p_{∞}=\frac{1}{1+exp[−(V+38)/6.5]}
+$$
+
+
+
+$$
+\tau_{p}=0.15.
+$$
+
+Throughout all simulations, the applied current $I_{app}$ is set to $0.1\muA/cm^{2}$. The Gaussian noise ($I_{noise}$) has mean 0, standard deviation 1, and an amplitude of $4\sqrt{\deltat},$ where $\deltat=0.05ms$ corresponds to the time step of integration in our simulations. We note that the persistent sodium current can be replaced by an A-current to produce a high theta rhythm (Gloveli et al., 2005).
+
+#### Parvalbumin-positive interneurons (PV)
+
+The membrane currents ($I_{membrane}$) of the PV interneurons consist of only a fast sodium current ($I_{Na}$; described as in the second formulation of $I_{Na}$ in Equation 1), a fast potassium current ($I_{K}$), and a leak current ($I_{L})$, as in Equation 1.
+
+The maximal sodium conductance is $g¯_{Na}=100mS/cm^{2}$ and the sodium reversal potential is $E_{Na}=50mV$. The rate functions for the sodium current activation ($m$) and inactivation ($h$) variables are formulated as follows:
+
+$$
+\alpha_{m}=\frac{0.32(V+54)}{1−exp[−(V+54)/4]}
+$$
+
+
+
+$$
+\beta_{m}=\frac{0.28(V+27)}{exp⁡[(V+27)/5]−1}
+$$
+
+
+
+$$
+\alpha_{h}=0.128exp[−(V+50)/18]
+$$
+
+
+
+$$
+\beta_{h}=\frac{4}{1+exp[−(V+27)/5]}.
+$$
+
+The maximal potassium conductance is $g¯_{K}=80mS/cm^{2}$ and the potassium reversal potential is $E_{K}=−100mV$. The rate functions for the potassium current activation ($n$) variables are formulated as follows:
+
+$$
+\alpha_{n}=\frac{0.032(V+52)}{1−exp[−(V+52)/5]}
+$$
+
+
+
+$$
+\beta_{n}=0.5exp[−(V+57)/40].
+$$
+
+The leak current ($I_{L})$ has no gating variables. The maximal leak conductance is $g¯_{L}=0.1mS/cm^{2}$ and the leak channel reversal potential is $E_{L}=−67mV$. Throughout all the simulations, $I_{app}=0\muA/cm^{2}$. The Gaussian noise ($I_{noise}$) has mean 0, standard deviation 1, and an amplitude of $4\sqrt{\deltat},$ where $\deltat=0.05ms$ corresponds to the time step of integration in our simulations.
+
+#### Excitatory projection neurons (ECS and F)
+
+The membrane currents ($I_{membrane}$) of ECS and F consist of a fast sodium current ($I_{Na}$) (described as in the first formulation of $I_{Na}$ in Equation 1), a fast potassium current ($I_{K}$), and a leak current ($I_{L}$) as in Equation 1.
+
+The maximal sodium conductance is $g¯_{Na}=100mS/cm^{2}$ and the sodium reversal potential is $E_{Na}=50mV$. The rate functions for the sodium current activation ($m$) and inactivation ($h$) variables are formulated as follows:
+
+$$
+\alpha_{m}=\frac{0.1(V+35)}{1−exp[−(V+35)/10]}
+$$
+
+
+
+$$
+\beta_{m}=4exp⁡[-(V+60)/18]
+$$
+
+
+
+$$
+\alpha_{h}=0.07exp⁡[-(V+58)/20]
+$$
+
+
+
+$$
+\beta_{h}=\frac{1}{exp⁡[−0.1(V+28)]+1}.
+$$
+
+The maximal potassium conductance is $g¯_{K}=80mS/cm^{2}$ and the potassium reversal potential is $E_{K}=−100mV$. The rate functions for the potassium current activation ($n$) variables are formulated as follows:
+
+$$
+\alpha_{n}=\frac{−0.01(V+34)}{exp⁡[−0.1(V+34)−1]}
+$$
+
+
+
+$$
+\beta_{n}=0.125exp[−(V+44)/80].
+$$
+
+The leak current ($I_{L})$ has no gating variables. The maximal leak conductance is $g¯_{L}=0.1mS/cm^{2}$ and the leak channel reversal potential is $E_{L}=−67mV$. The formulations of these currents were taken from the description of excitatory/inhibitory neurons presented in Zhou et al., 2018.
+
+When neither US nor CS are injected, the applied current $I_{app,F}$ is set to $0.35\muA/cm^{2}$ and $I_{app,ECS}$ is set to $0.45\muA/cm^{2}$. By contrast, $I_{app,F}$ is set to $0.5\muA/cm^{2}$ when US is injected. For both ECS and F, the Gaussian noise ($I_{noise}$) has mean 0, standard deviation 1, and an amplitude of $4\sqrt{\deltat},$ where $\deltat=0.05ms$ corresponds to the time step of integration in our simulations.
+
+### Conditioned and unconditioned stimuli
+
+The conditioned (CS) and unconditioned (US) stimuli affect specific cell types according to the fear conditioning phase. CS consists of a Poisson spike train ($\lambda$=800) that excites an auxiliary excitatory neuron (described by the same equations used for ECS in the previous section). The auxiliary excitatory neuron excites both ECS and PV and makes them fire, in isolation, at ~50 Hz. The maximal AMPA conductance from the auxiliary excitatory neuron to PV and ECS is $−g_{e}=0.2mS/cm^{2}$ (see the next paragraph for a description of the AMPA synapses). Similarly, US ($\lambda$=800, independent of CS) affects an auxiliary excitatory neuron that makes F fire in isolation fires at ~50 Hz. The maximal AMPA conductance from the auxiliary excitatory neuron to F is $−g_{e}=0.2mS/cm^{2}$ (see the next paragraph for a description of the AMPA synapses). Finally, US influences VIP activity by increasing its $I_{app}$ set to $5\muA/cm^{2}$. To make Appendix 1—figure 3, we also considered a variation of the model with PV interneurons affected by US, instead of CS, as reported in Krabbe et al., 2019.
+
+### Network connectivity and synaptic currents
 
 We modeled the network connectivity as presented in Figure 2B, derived from the prominent functional, instead of structural, connections reported in Krabbe et al., 2019. We have a total of 9 types of projections between neurons: 6 inhibitory (VIP → PV, VIP → SOM, PV → F, PV → ECS, SOM → F, SOM → ECS), 3 excitatory (ECS → F, F → PV, F → VIP).
 
-All inhibitory synapses are described as GABAa currents (IGABAa) using a Hodgkin-Huxley-type conductance, as formulated in Olufsen et al., 2003:IGABAa=−gisi(V−Ei).
+All inhibitory synapses are described as GABAa currents ($I_{GABAa}$) using a Hodgkin-Huxley-type conductance, as formulated in Olufsen et al., 2003:
 
-The maximal GABAa conductance VIP → PV is g¯i=1/NVIPmS/cm2, VIP → SOM is g¯i=1/NSOMmS/cm2, PV → F is g¯i=0.5/NPVmS/cm2, PV → ECS is g¯i=0.4/NPVmS/cm2, SOM → F is g¯i=0.4/NSOMmS/cm2, and SOM → ECS is g¯i=0.4/NSOMmS/cm2, where NVIP,NPV,NSOM are the number of VIP, PV, and SOM cells, respectively, in the network. The GABAa current reversal potential (Ei) is set to −80mV, as common in the modeling literature (Jensen et al., 2005; Traub et al., 2005; Chartove et al., 2020). The variable si represents the gating variable for inhibitory GABAa synaptic transmission, where i stands for inhibitory synapse. The contribution of an inhibitory synapse to a specific postsynaptic inhibitory neuron j in the network takes the following form:(4)si=∑kSikij.
+$$
+I_{GABAa}=−g_{i}s_{i}(V−E_{i}).
+$$
 
-The contribution to a specific postsynaptic excitatory neuron m in the network, reads as follows:(5)si=∑kSikem,
+The maximal GABAa conductance VIP → PV is $g¯_{i}=1/N_{VIP}mS/cm^{2}$, VIP → SOM is $g¯_{i}=1/N_{SOM}mS/cm^{2}$, PV → F is $g¯_{i}=0.5/N_{PV}mS/cm^{2}$, PV → ECS is $g¯_{i}=0.4/N_{PV}mS/cm^{2}$, SOM → F is $g¯_{i}=0.4/N_{SOM}mS/cm^{2}$, and SOM → ECS is $g¯_{i}=0.4/N_{SOM}mS/cm^{2}$, where $N_{VIP},N_{PV},N_{SOM}$ are the number of VIP, PV, and SOM cells, respectively, in the network. The GABAa current reversal potential ($E_{i}$) is set to $−80mV$, as common in the modeling literature (Jensen et al., 2005; Traub et al., 2005; Chartove et al., 2020). The variable $s_{i}$ represents the gating variable for inhibitory GABAa synaptic transmission, where $i$ stands for inhibitory synapse. The contribution of an inhibitory synapse to a specific postsynaptic inhibitory neuron $j$ in the network takes the following form:
 
-where k indexes the presynaptic inhibitory neurons. The variable Sikij in Equation 4 describes the kinetics of the gating variables from the inhibitory presynaptic neuron kth to the inhibitory postsynaptic neuron j. This variable evolves in time according to:dSikijdt=gGABAa(Vk)(1−Sikij)−Sikijτik.
+$$
+s_{i}=\sumkS_{i_{k}i_{j}}.
+$$
 
-Similarly, the kinetics of the gating activation variable Sikem in Equation 5 from the kth interneuron to the postsynaptic excitatory neuron m is formulated as:dSikemdt=gGABAa(Vk)(1−Sikem)−Sikemτik.
+The contribution to a specific postsynaptic excitatory neuron $m$ in the network, reads as follows:
 
-The GABAa decay time constant (τIk) is a constant that depends on the type of presynaptic interneuron. The rate functions for the open state of the GABAa receptor (gGABAaVk) has a specific form based on the presynaptic cell type k. More specifically,Fork=VIP:gGABAa(Vk)=2(1+tanh⁡(Vk4)),τIk=10msFork=PV:gGABAa(Vk)=152(1+tanh⁡(Vk0.1)),τIk=8.3msFork=SOM:gGABAa(Vk)=52(1+tanh⁡(Vk0.1)),τIk=20ms.
+$$
+s_{i}=\sumkS_{i_{k}e_{m}},
+$$
 
-All excitatory synapses are described as AMPA currents (IAMPA) using a Hodgkin-Huxley-type conductance, as formulated in Olufsen et al., 2003:IAMPA=−gese(V−Ee).
+where $k$ indexes the presynaptic inhibitory neurons. The variable $S_{i_{k}i_{j}}$ in Equation 4 describes the kinetics of the gating variables from the inhibitory presynaptic neuron $k^{th}$ to the inhibitory postsynaptic neuron $j$. This variable evolves in time according to:
 
-At the beginning of the fear conditioning paradigm there is no connection from ECS to F, that is the maximal AMPA conductance ECS → F is g¯e=0mS/cm2. Since ECS to F is a plastic connection (see paragraph related to synaptic plasticity), it evolves over time up to a maximum of g¯e=0.18mS/cm2. The maximal AMPA conductance F → PV is g¯e=0.5mS/cm2 , and F → VIP is g¯e=0.01mS/cm2. In the case of the plastic F to VIP cell connections (see Appendix 1), the F → VIP conductances evolve over time up to a maximum of g¯e=0.04mS/cm2. The AMPA current reversal potential (Ee) is set to 0mV.
+$$
+\frac{dS_{i_{k}i_{j}}}{dt}=g_{GABAa}(V_{k})(1−S_{i_{k}i_{j}})−\frac{S_{i_{k}i_{j}}}{\tau_{i_{k}}}.
+$$
 
-The variable se represents the gating variable for excitatory AMPA synaptic transmission, where e stands for excitatory synapse. For a specific postsynaptic excitatory neuron m in the network:se=∑kSekem.
+Similarly, the kinetics of the gating activation variable $S_{i_{k}e_{m}}$ in Equation 5 from the $k^{th}$ interneuron to the postsynaptic excitatory neuron $m$ is formulated as:
 
-For a specific postsynaptic inhibitory neuron j in the network:si=∑kSekij,
+$$
+\frac{dS_{i_{k}e_{m}}}{dt}=g_{GABAa}(V_{k})(1−S_{i_{k}e_{m}})−\frac{S_{i_{k}e_{m}}}{\tau_{i_{k}}}.
+$$
 
-where k indexes the presynaptic excitatory neurons.
+The GABAa decay time constant ($\tau_{I_{k}}$) is a constant that depends on the type of presynaptic interneuron. The rate functions for the open state of the GABAa receptor ($g_{GABAa}V_{k}$) has a specific form based on the presynaptic cell type $k$. More specifically,
 
-The variable Sekem describes the kinetics of the gating variables from the excitatory presynaptic neuron kth to the excitatory postsynaptic neuron m. This variable evolves in time according to:dSekemdt=gAMPA(Vk)(1−Sekem)−Sekemτe.
+$$
+Fork=VIP:g_{GABAa}(V_{k})=2(1+tanh⁡(\frac{V_{k}}{4})),\tau_{I_{k}}=10ms
+$$
 
-Similarly, the kinetics of the synaptic activation variable of the kth excitatory neuron to the inhibitory neuron j is denoted by  Sekij and is formulated as:dSekijdt=gAMPA(Vk)(1−Sekij)−Sekijτe.
 
-The time-constant of decay for the AMPA synapse is τe=2ms. The rate functions for the open state of the AMPA receptor (gAMPAVk) follows the mathematical formulation:gAMPA(Vk)=5(1+tanh⁡(Vk4))k=FECS.
 
-## Synaptic plasticity
+$$
+Fork=PV:g_{GABAa}(V_{k})=\frac{15}{2}(1+tanh⁡(\frac{V_{k}}{0.1})),\tau_{I_{k}}=8.3ms
+$$
 
-Fear conditioning is a paradigm able to create associative learning between the neutral (CS) and the aversive (US) stimuli. Synaptic plasticity is thought to be at the basis of associative learning. In our work, synaptic plasticity takes the form of spike-timing-dependent plasticity (Song et al., 2000; Lee et al., 2009), where synaptic modifications are enforced at the synapse from ECS to F at each presynaptic (ECS) and postsynaptic (F) neuron spikes. Synaptic modification is generated in the model through two auxiliary functions: P, used for potentiation, and M, used for depression, as in standard STDP models. The major difference between our use of STDP and some others is that, for each pre-synaptic spike, we take into account all the post-synaptic spikes with which it could potentially interact; similarly for each post-synaptic spike, we take into account all presynaptic spikes. P and M are initialized at zero and are updated at each presynaptic and postsynaptic neuron spike, respectively. Between spikes, they exponentially decay to zero (see Appendix 1—figure 2 and Appendix 1—figure 4). The update is described as follows. At each postsynaptic neuron (F) spike, Mt is decremented by an amount A−=0.005, i.e., Mt=Mt-A-. At each presynaptic neuron (ECS) spike, Pt is incremented by an amount A+=0.005, i.e., Pt=Pt+A+. This Hebbian plasticity rule is depression-dominant when A+=A_ and τ+<τ−, as formulated in this work. The exponential decay is described by the following equations:τ−dMdt=−Mτ+dPdt=−P,
 
-with τ−=28ms and τ+=14 ms. Every time the synapse receives an ECS action potential at time t, its maximal conductance is weakened according to g¯=−g+M(t). If g¯<0, g¯ is set to zero. If F fires an action potential at time t, the synapse maximal conductance is strengthened according to −g=g¯+P(t). If this strengthening makes g¯>g¯max, then g¯ is set to −gmax=0.18mS/cm2 (see Appendix 1—figure 2A, right, for an example). See Appendix 1 for a visualization of M and P and consequences of the depression-dominated rule.
 
-In Appendix 1, we introduce a plastic connection from the fear neuron F to the VIP interneurons. For that specific synapse, A+=0.00065 and A_=0.0003, while the decay time constants are as above. In this case, the rule is not depression-dominant.
+$$
+Fork=SOM:g_{GABAa}(V_{k})=\frac{5}{2}(1+tanh⁡(\frac{V_{k}}{0.1})),\tau_{I_{k}}=20ms.
+$$
 
-## Model simulations
+All excitatory synapses are described as AMPA currents ($I_{AMPA}$) using a Hodgkin-Huxley-type conductance, as formulated in Olufsen et al., 2003:
+
+$$
+I_{AMPA}=−g_{e}s_{e}(V−E_{e}).
+$$
+
+At the beginning of the fear conditioning paradigm there is no connection from ECS to F, that is the maximal AMPA conductance ECS → F is $g¯_{e}=0mS/cm^{2}$. Since ECS to F is a plastic connection (see paragraph related to synaptic plasticity), it evolves over time up to a maximum of $g¯_{e}=0.18mS/cm^{2}$. The maximal AMPA conductance F → PV is $g¯_{e}=0.5mS/cm^{2}$ , and F → VIP is $g¯_{e}=0.01mS/cm^{2}$. In the case of the plastic F to VIP cell connections (see Appendix 1), the F → VIP conductances evolve over time up to a maximum of $g¯_{e}=0.04mS/cm^{2}$. The AMPA current reversal potential ($E_{e}$) is set to $0mV$.
+
+The variable $s_{e}$ represents the gating variable for excitatory AMPA synaptic transmission, where $e$ stands for excitatory synapse. For a specific postsynaptic excitatory neuron $m$ in the network:
+
+$$
+s_{e}=\sumkS_{e_{k}e_{m}}.
+$$
+
+For a specific postsynaptic inhibitory neuron $j$ in the network:
+
+$$
+s_{i}=\sumkS_{e_{k}i_{j}},
+$$
+
+where $k$ indexes the presynaptic excitatory neurons.
+
+The variable $S_{e_{k}e_{m}}$ describes the kinetics of the gating variables from the excitatory presynaptic neuron $k^{th}$ to the excitatory postsynaptic neuron $m$. This variable evolves in time according to:
+
+$$
+\frac{dS_{e_{k}e_{m}}}{dt}=g_{AMPA}(V_{k})(1−S_{e_{k}e_{m}})−\frac{S_{e_{k}e_{m}}}{\tau_{e}}.
+$$
+
+Similarly, the kinetics of the synaptic activation variable of the $k^{th}$ excitatory neuron to the inhibitory neuron $j$ is denoted by  $S_{e_{k}i_{j}}$ and is formulated as:
+
+$$
+\frac{dS_{e_{k}i_{j}}}{dt}=g_{AMPA}(V_{k})(1−S_{e_{k}i_{j}})−\frac{S_{e_{k}i_{j}}}{\tau_{e}}.
+$$
+
+The time-constant of decay for the AMPA synapse is $\tau_{e}=2ms$. The rate functions for the open state of the AMPA receptor ($g_{AMPA}V_{k}$) follows the mathematical formulation:
+
+$$
+g_{AMPA}(V_{k})=5(1+tanh⁡(\frac{V_{k}}{4}))k=FECS.
+$$
+
+### Synaptic plasticity
+
+Fear conditioning is a paradigm able to create associative learning between the neutral (CS) and the aversive (US) stimuli. Synaptic plasticity is thought to be at the basis of associative learning. In our work, synaptic plasticity takes the form of spike-timing-dependent plasticity (Song et al., 2000; Lee et al., 2009), where synaptic modifications are enforced at the synapse from ECS to F at each presynaptic (ECS) and postsynaptic (F) neuron spikes. Synaptic modification is generated in the model through two auxiliary functions: P, used for potentiation, and M, used for depression, as in standard STDP models. The major difference between our use of STDP and some others is that, for each pre-synaptic spike, we take into account all the post-synaptic spikes with which it could potentially interact; similarly for each post-synaptic spike, we take into account all presynaptic spikes. P and M are initialized at zero and are updated at each presynaptic and postsynaptic neuron spike, respectively. Between spikes, they exponentially decay to zero (see Appendix 1—figure 2 and Appendix 1—figure 4). The update is described as follows. At each postsynaptic neuron (F) spike, $Mt$ is decremented by an amount $A_{−}=0.005$, i.e., $Mt=Mt-A_{-}$. At each presynaptic neuron (ECS) spike, $Pt$ is incremented by an amount $A_{+}=0.005$, i.e., $Pt=Pt+A_{+}$. This Hebbian plasticity rule is depression-dominant when $A_{+}=A_{_}$ and $\tau_{+}<\tau_{−}$, as formulated in this work. The exponential decay is described by the following equations:
+
+$$
+\tau_{−}\frac{dM}{dt}=−M
+$$
+
+
+
+$$
+\tau_{+}\frac{dP}{dt}=−P,
+$$
+
+with $\tau_{−}=28ms$ and $\tau_{+}=14 ms$. Every time the synapse receives an ECS action potential at time $t$, its maximal conductance is weakened according to $g¯=−g+M(t)$. If $g¯<0$, $g¯$ is set to zero. If F fires an action potential at time $t$, the synapse maximal conductance is strengthened according to $−g=g¯+P(t)$. If this strengthening makes $g¯>g¯_{max}$, then $g¯$ is set to $−g_{max}=0.18mS/cm^{2}$ (see Appendix 1—figure 2A, right, for an example). See Appendix 1 for a visualization of M and P and consequences of the depression-dominated rule.
+
+In Appendix 1, we introduce a plastic connection from the fear neuron F to the VIP interneurons. For that specific synapse, $A_{+}=0.00065$ and $A_{_}=0.0003$, while the decay time constants are as above. In this case, the rule is not depression-dominant.
+
+#### Model simulations
 
 Our network models were programmed in C++and compiled using g++compiler (Apple clang version 14.0.0) on macOS Monterey version 12.5.1. The differential equations were integrated using a fourth-order Runge Kutta algorithm. The integration time step was 0.05ms. Model output is graphed and analyzed using MATLAB, Version R2022a. Simulation codes are made freely available (see Resource Availability section).
 
-## Local field potentials and spectral analysis
+### Local field potentials and spectral analysis
 
-## Modeling LFP
+#### Modeling LFP
 
 One measure of neuronal population activity in the BLA is the LFP. We considered as an LFP proxy as the linear sum of all the AMPA, GABA, NaP-, D-, and H- currents in the network. The D-current is in the VIP interneurons, and NaP-current and H-current are in SOM interneurons.
 
-## Spectral analysis
+##### Spectral analysis
 
 Stationarity of the network before and after fear conditioning is ensured after 2000ms. Thus, to ensure elimination of transients due to initial conditions, we discard the first 2000ms of LFP signals. LFP’s power spectra are calculated using the Thomson’s multitaper power spectral density estimate (MATLAB function pmtm; Bokil et al., 2007) for frequencies ranging from 0.1 to 70 Hz. Analysis codes are made freely available (see Resource Availability section).

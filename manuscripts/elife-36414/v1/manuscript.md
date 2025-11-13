@@ -29,7 +29,7 @@ The conflicting sets of studies differed in multiple aspects of their experiment
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/36414/elife-36414-fig1-v1.jpg)
 
-**Figure 1.:** A) Proliferation of MDA-MB-231, subjected to sgROSA26 (g1) or sgMELK (g6).Cas9-expressing MDA-MB-231 cells were seeded into 24-well plates at 250 or 25,000 cells per well, and imaged 11 or 3 days after seeding, respectively (Celigo Image Cytometry, Nexcelom Biosciences). Whole well images are shown with green pseudo coloring to visualize cell confluence. Graphs indicate mean ± SD (n = 4). Cas9-expressing MDA-MB-231 and lentiGuide constructs were generous gifts of Dr. Sheltzer. (B) Proliferation of MDA-MB-468 wild-type parental cells, MELK wild-type (E9) and MELK-knockout (E3, C7, and C9) clonal sub-lines under clonogenic growth conditions. Anti-MELK immunoblotting was visualized using the Odyssey CLx infrared imaging system (LI-COR Biosciences).
+**Figure 1.:** Cas9-expressing MDA-MB-231 cells were seeded into 24-well plates at 250 or 25,000 cells per well, and imaged 11 or 3 days after seeding, respectively (Celigo Image Cytometry, Nexcelom Biosciences). Whole well images are shown with green pseudo coloring to visualize cell confluence. Graphs indicate mean ± SD (n = 4). Cas9-expressing MDA-MB-231 and lentiGuide constructs were generous gifts of Dr. Sheltzer. (B) Proliferation of MDA-MB-468 wild-type parental cells, MELK wild-type (E9) and MELK-knockout (E3, C7, and C9) clonal sub-lines under clonogenic growth conditions. Anti-MELK immunoblotting was visualized using the Odyssey CLx infrared imaging system (LI-COR Biosciences).
 
 ## MELK function in parental cell lines and clonal sub-lines
 

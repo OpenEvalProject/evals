@@ -13,9 +13,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03s65by71 Department of Biomolecular Engineering and Santa Cruz Genomics Institute, University of California, Santa Cruz Santa Cruz United States
-2. https://ror.org/03s65by71 RNA Center and Department of Molecular, Cell & Developmental Biology, University of California, Santa Cruz Santa Cruz United States
-3. https://ror.org/03m2x1q45 Department of Pharmacy Practice & Science, College of Pharmacy, University of Arizona Tucson United States
+1. Department of Biomolecular Engineering and Santa Cruz Genomics Institute, University of California, Santa Cruz Santa Cruz United States ([ROR:03s65by71](https://ror.org/03s65by71))
+2. RNA Center and Department of Molecular, Cell & Developmental Biology, University of California, Santa Cruz Santa Cruz United States ([ROR:03s65by71](https://ror.org/03s65by71))
+3. Department of Pharmacy Practice & Science, College of Pharmacy, University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
 4. Colegio Santa Francisca Romana Bogotá Colombia
 5. Monta Vista High School Cupertino United States
 
@@ -37,11 +37,35 @@ Here, we demonstrate accurate, single molecule modification profiling of 13 dist
 
 ## Results
 
-## Profiling rRNA Modifications at Single Molecule Resolution
+### Profiling rRNA Modifications at Single Molecule Resolution
 
 To investigate the overall modification status of yeast rRNA on a single molecule level, we used nanopore current traces from Oxford Nanopore MinION flow cells (see Materials and methods) of complete rRNA transcripts to capture modification status at every modified position along individual molecules. To create these single molecule profiles, we trained signalAlign (Rand et al., 2017) by modeling wild type rRNA reads as ‘modified’ and in vitro transcribed (IVT) reads as ‘unmodified’ to detect all 110 annotated modifications in S. cerevisiae 18 S and 25 S rRNA (Figure 1—figure supplement 1 and file supplement 1) (see Materials and methods) (Stoiber et al., 2016; Taoka et al., 2016). For each rRNA read, the model estimates the probability of modification, regardless of modification type, at each annotated position and outputs a list of modification probabilities for each full-length rRNA read (Figure 1—figure supplement 2A).
 
 We wondered whether different genetic and environmental conditions would alter modification profiles to reveal distinct subpopulations of ribosomes. To test the ability of the trained model to capture single-molecule modification profiles, we examined yeast suffering catastrophic loss of snoRNA-guided rRNA modifications, by depleting either the C/D box (2´O-methylation) or H/ACA box (pseudouridylation) class of snoRNPs. In S. cerevisiae, 34 of the 37 18 S and 66 of the 73 25 S rRNA annotated modifications are guided by the C/D box (2´O-methylation) and H/ACA box (pseudouridylation) snoRNPs (Piekna-Przybylska et al., 2007; Tollervey and Kiss, 1997; Yang et al., 2016). To ablate these modifications en masse we used strains in which Nop58 (core component of C/D snoRNPs) or Cbf5 (H/ACA snoRNP pseudouridylase) can be depleted using a GAL1 promoter (Lafontaine and Tollervey, 1999; Watkins et al., 1998). Thus, in galactose-grown cells shifted to glucose medium, Nop58 (or Cbf5) expression will be repressed, leading to substantial loss of functional C/D box (or H/ACA box) snoRNPs, thus blocking modification (Lafontaine et al., 1998; Lafontaine and Tollervey, 1999). Under these conditions, single-molecule modification profiles produced by our model reveal accumulation of large numbers of rRNA molecules lacking most 2´O-methyl (Nm) (Nop58-depleted) or pseudouridine (Ψ) (Cbf5-depleted) modifications at snoRNA-guided positions in 18 S (Supplementary file 1B Figure 1—figure supplement 3) or 25 S rRNA (Figure 1).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig1-v3.jpg)
+
+**Figure 1.:** (A) Hierarchical clustering of 25 S yeast rRNA modification profiles of IVT, wild type, and both pseudouridine and 2´O methyl depletion experiments (1,000 reads/experiment). Each row is a full-length molecule, each column is a modified nucleotide and the color represents modification probability, see scale. (B) Fraction of reads from IVT, wild type and both depletion experiments in each cluster of 25 S rRNA. (C) UMAP visualization of 25 S yeast rRNA modification profiles of IVT, wild type, and both pseudouridine and 2´O methyl depletion experiments. UMAP color scheme is the same as the labels in panel A. (D,E) Change in Spearman correlations of 25 S reads in 2´O methyl depletion (D) and pseudouridine depletion (E) when compared to wild type. Stars represent significant changes when compared to wild-type correlation (see Materials and methods). Nucleotide positions are blue for 2´O-methyl, red for pseudouridine, and black for other (neither 2´O-methyl nor pseudouridine).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A,D) Per position, window averaged D-statistic plots from Tombo’s sample compare method for yeast 18 S (A) and 25 S (D) rRNA (Stoiber et al., 2016). The blue line represents the difference between the per-position distributions of the IVT sample vs the wild-type sample. The red markers are the location of each annotated modification on the corresponding rRNA (Taoka et al., 2016). (B,E) Per-position modification calling AUROC (Area Under the Receiver Operating Characteristic) curves for Tombo’s sample compare method comparing the IVT sample vs a wild-type sample for yeast 18 S (B) and 25 S (E) rRNA. (C,F) Modification window calling AUROC curves for Tombo’s sample compare method comparing the IVT sample vs the wild type sample for yeast 18 S (C) and 25 S (F) rRNA (see Materials and methods).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Analysis pipeline. (B–E) Testing accuracy metrics of the final model of supervised training. Both training protocol and testing metrics are described in detail in Materials and methods. (B) Receiver operating characteristic (ROC) curve and area under the ROC (0.93). (C) Calibration curve showing the fraction of true positives for several ranges of probabilities. The brier score (0.101) is a metric for determining how well a model is calibrated. (D) Precision-recall curve. (E) Per-position accuracy with corresponding modification annotation for each position (Taoka et al., 2016).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Hierarchical clustering of 18 S yeast rRNA modification profiles of IVT, wild type, and both pseudouridine and 2’O methyl depletion experiments. (B) Fraction reads from IVT, wild type and both depletion experiments (CBF5_GAL, NOP58_GAL) in each cluster of 18 S rRNA. (C) UMAP visualization of 18 S yeast rRNA modification profiles of IVT, wild type, and both pseudouridine and 2’O methyl depletion experiments. UMAP color scheme is the same as the labels in panel A. (D) Bioanalyzer of comparing levels of 18 S and 25 S rRNA in galactose-grown samples (CBF5_GAL, NOP58_GAL) compared to glucose-grown samples (CBF5_GLU, NOP58_GLU). (E/F) Change in Spearman correlations of 25 S reads in 2’O methyl depletion (E) and pseudouridine depletion (F) when compared to wild type. Stars represent significant changes when compared to wild-type correlation and significantly different from zero correlation (see Materials and methods).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Hierarchical clustering of 25 S yeast rRNA modification profiles of IVT, wild type, and both pseudouridine and 2’O methyl depletion experiments (1,000 reads in each experiment). Each row represents a full-length single read, each column represents a modified nucleotide and the scale represents the probability of being modified. (B–E) Hierarchical clustering of normalized event means aligned to the reference sequence from IVT, wild type, and both pseudouridine and 2’O methyl depletion experiments covering positions 1433–1457 (B), 2917–2932 (C), 1448–1450 (D), and 2921–2924 (E) (see Materials and methods and Supplementary Note 1).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** (A) Distribution of fraction modified for positions within or not within the functional centers of yeast rRNA. Distribution means are significantly (p-value = 0.0031) different via a two-sided Mann-Whitney U-test. (B–D) Crystal structure model of wild type S. cerevisiae 80 S (B), 40 S (C) and 60 S (D) rRNA highlighting modification frequency within functional centers. PDB: 4V88 (Ben-Shem et al., 2011).
 
 To examine subpopulations of modified rRNA molecules in these cells, we performed hierarchical clustering. After pooling profiles from the separate samples and clustering them, we observe clear separation of subpopulations representing wild type rRNA, IVTs, and molecules arising from the Nop58 or Cbf5-depleted cells (Figure 1A and Figure 1—figure supplement 3A). We used dimension reduction UMAP visualization (McInnes et al., 2018) of 18 S and 25 S rRNA modification profiles to confirm the presence of these distinct molecular populations (Figure 1C and Figure 1—figure supplement 3C). Comparing clusters 1 and 3 derived from cells depleted for either of the two different classes snoRNPs (Figure 1A and C) shows very little overlap in rRNA modification profiles, suggesting that 2´O methylation and pseudouridylation are largely independent of each other. Some molecules from snoRNP-depleted cells appear to be modified normally and are found in cluster 2 with wild type rRNA (Figure 1A and C), more often for 18 S rRNA than for 25 S rRNA (compare to Figure 1—figure supplement 3). This may reflect a more severe impact of modification loss on accumulation of 18 S rRNA (Lafontaine et al., 1998; Lafontaine and Tollervey, 1999), leading to higher residual ribosomes modified before depletion was complete. We conclude that clustering of single-molecule rRNA modification profiles reveals two large but distinct classes of undermodified rRNA molecules induced by depletion of each of the two main classes of snoRNPs.
 
@@ -53,23 +77,75 @@ We also observe a concerted change in loss of modification between the two N4-ac
 
 The concerted modifications in the peptidyl transferase center (PTC) (Um2921, Gm2922, Ψ2923) and the polypeptide exit tunnel (PET) (Am1449, Gm1450) occur on sequential nucleotides at each location. Given that our model incorporates information from sequential 5-mers that contain the position under consideration, pairs of modifications close in sequence share 5-mers, presenting a challenge to the prediction algorithm. To examine the extent to which the model may be affected by closely spaced modifications in these regions, we examined the underlying current signal directly, by clustering the single molecule signal means (see Materials and methods) (Ding et al., 2020). This test reveals that the concerted pattern of modifications predicted by the model agree with the underlying event means clustering, with the exception that modification of Ψ2923 may be slightly overestimated (Figure 1—figure supplement 4 and note supplement 1). We conclude that single-molecule modification profiling allows identification of subpopulations of individual rRNA molecules and captures concerted patterns of modification at functionally important sites in the ribosome.
 
-## Resolving subpopulations of ribosomes that differ at a single modified site
+### Resolving subpopulations of ribosomes that differ at a single modified site
 
 The global loss of modification by depletion of snoRNPs creates grossly undermodified rRNA molecules that are easily distinguished by profiling. To test the sensitivity of the method to resolve classes of ribosomes that differ by a single modification, we first estimated variation in wild-type rRNA profiles that could arise from a combination of experimental noise, behavior of the model, or biological variation in modification. For experiments where capture of a few thousand molecules in a test mutant or condition is sufficient for profiling, we used Flongle flow cells to acquire on average ~6000 full-length 18 S and 25 S rRNA reads. We calculated the variance of the predictions for each annotated modification for each of three wild type, biological replicates. Based on the largest variance (position 562 in 18 S, ~ 9%), we chose a conservative cutoff of a 10% change in modification to call any site affected by a given experimental perturbation (mutation or treatment, Figure 2—figure supplement 1). We consider this a very conservative threshold given that many sites were never observed to vary more than a few percent in any experiment. We also compared the predicted modification frequency at a given site in an experiment to its predicted frequency in wild type using a chi-square test (see Materials and methods, Supplementary file 1B). We sequenced rRNAs from strains containing individual snoRNA knockouts (snR80, snR83, snR87, snR4, and snR45) previously shown to completely lack modification at one or a few annotated sites in each case (Piekna-Przybylska et al., 2007), demonstrating significant decreases in modification at the appropriate site for each (p-values < 1e-04, chi-square test) (Figure 2—figure supplement 1B and E). As expected, signal distributions from snoRNA knockout kmers match the model’s canonical unmodified kmer distributions (Figure 2—figure supplement 2). This experiment confirms our ability to identify loss of modification at single locations with high confidence.
 
 To test the limits of our ability to deconvolute a heterogeneous mixture of ribosomes differing by single modifications, we pooled equal amounts of total RNA from three snoRNA knockout strains (snR80, snR83, and snR87) and wild type, and acquired single molecule modification profiles from the mixture (Figure 2). Hierarchical clustering of the profiles obtained from the mixture reveals four similarly sized main clusters of differently modified 18 S rRNA (Figure 2A and C) (see Materials and methods). We observe positive correlation changes between positions Ψ1290 and Ψ1415 (Figure 2B) (p-value = 6.4e-16, Fisher z-transform test), that likely arise from their shared dependence on snR83. Moreover, we observe negative correlation changes between all independent pairs of modification sites at Am436, Ψ759, and [Ψ1290+Ψ1415] only in the artificial mixture (Figure 2B and Supplementary file 1A) (p-value = 3.5e-08, Brown’s method). Since loss of modification at these positions in this test mixture arose independently in the separate samples that were mixed, the population would be extremely unlikely to have molecules with simultaneous loss of modification at any pair of these three locations, creating the negative correlation change. Together, this analysis establishes the ability of the method to resolve minority subpopulations of ribosomes with subtly different modification profiles.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig2-v3.jpg)
+
+**Figure 2.:** (A) Hierarchical clustering of 18 S modification of profiles from pooled wild type, snR80ᐃ, snR83ᐃ, and snR87ᐃ RNA (500 reads in each experiment). Each row is a full-length molecule, each column is a modified nucleotide and the color represents modification probability, see scale. (B) Change in Spearman correlations of 18 S reads in the mixture experiment when compared to wild type. Stars represent significant changes when compared to wild-type correlation and significantly different from zero correlation (see Materials and methods). (C) Fraction of wild type, snR80ᐃ, snR83ᐃ, and snR87ᐃ profiles in each cluster of 18 S rRNA. (D) Table of snoRNAs knocked down with the corresponding expected knocked down modifications. (E) Hierarchical clustering of 18 S yeast rRNA modification profiles from wild-type yeast (1000 reads). (F) Wild-type Spearman correlation of 18 S wild-type reads. Stars represent significantly different to IVT correlations and significantly different from zero. correlation. (G) Crystal structure model of wild-type S. cerevisiae 18 S rRNA highlighting significant correlated positions. PDB: 4V88 (Ben-Shem et al., 2011).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Heatmap of wild type, mixed sample, snR80ᐃ, snR83ᐃ, and snR87ᐃ, snR45ᐃ and snR4ᐃ modification profiles of 18 S (1,000 reads in each experiment). Each row represents a full length single read, each column represents a modified nucleotide and the scale represents the probability of being modified. (B) Mixed sample, snR80ᐃ, snR83ᐃ, and snR87ᐃ, snR45ᐃ and snR4ᐃ 18 S percent change in modification frequency when compared to wild type. Gray bars indicate the variance of wild type rRNA modification at each position and the black dotted lines represent the maximum variance found at any position. (C) Table of snoRNAs knocked down with the corresponding expected knocked down modifications. (D) Heatmap of wild type, mixed sample, snR80ᐃ, snR83ᐃ, and snR87ᐃ, snR45ᐃ and snR4ᐃ modification profiles of 25 S (1000 reads in each experiment). (E) Mixed sample, snR80ᐃ, snR83ᐃ, and snR87ᐃ, snR45ᐃ and snR4ᐃ 25 S percent change in modification frequency when compared to wild type.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Each figure has the model’s canonical kmer distribution, the model’s modified kmer distribution and the corresponding snoRNA knockout kernel density estimate (KDE) of all events aligned to that position (see Materials and methods). The rows show kmers covering position 759 in 18 S from snR80ᐃ, position 776 in 25 S from snR80ᐃ, position 1290 in 18 S from snR83ᐃ, position 1415 in 18 S from snR83ᐃ, position 436 in 18 S from snR87ᐃ, position 436 in 18 S from snR87ᐃ, position 1773 in 18 S from snR45ᐃ and position 1280 in 18 S from snR4ᐃ.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (A/B) Change in Spearman correlations of 18 S reads in snR83 KO (A) and snR4 KO (B) when compared to wild type. Stars represent significant changes when compared to wild type correlation and significantly different from zero correlation (see Materials and methods). (C) Cryo-EM structure model of wild type S. cerevisiae 18 S rRNA highlighting significant, concerted positions. PDB: 4V88 (Ben-Shem et al., 2011). (D) Table of percent modification of sites of interest in wild type and snoRNA KO experiments.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** (A–B) Comparison between the range of modification percentages called via mass spectrometry (Taoka et al., 2016), HPLC (Yang et al., 2016), and two RiboMeth-seq approaches (Birkedal et al., 2015; Marchand et al., 2016) vs signalAlign modification percentages of wild-type yeast in 18 S (A) and 25 S (B). (C–D) Comparison between RiboMeth-seq modification percentages (Aquino et al., 2021) and signalAlign modification percentages for the Dbp3 knockout strain in 18 S (C) and 25 S (D) yeast rRNA. For the combination of several detection approaches, we calculated the minimum, maximum and mean modification percentage from the four papers. For all plots, error bars represent the minimum or maximum percent modification called and circles represent the mean modification percentage.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig2-figsupp5-v3.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Hierarchical clustering of 25 S yeast rRNA modification profiles from wild-type yeast (1000 reads). Each row represents a full length single read, each column represents a modified nucleotide and the scale represents the probability of being modified. (B) Wild-type Spearman correlation of 25 S wild-type reads. Stars represent significantly different concerted positions compared to IVT and significantly different from zero correlation. (C) Crystal structure model of wild-type S. cerevisiae 25 S rRNA highlighting significant, concerted positions. PDB: 4V88 (Ben-Shem et al., 2011).
+
 Having observed correlated changes in modification within an artificial mixture of snoRNA knockouts, we asked if modifications not directly guided by the deleted snoRNA change in a concerted fashion in the absence of a particular snoRNA. We found significant and reciprocal changes in correlation in the absence of snR83 and snR4. Upon depletion of snR83 and loss of 18S-Ψ1290, position ac4C1280 (snR4/Kre33) shows a negative correlation change (Figure 2—figure supplement 3A), consistent with an increase in modification of ac4C1280 by ~9.2% when snR83 is absent. This suggests that the snoRNPs that guide Ψ1290 (snR83) and ac4C1290 (snR4/Kre33) modifications may compete for binding of the two closely spaced positions in which the binding sites of the two snoRNAs are predicted to overlap (Figure 2—figure supplement 3C,D; Piekna-Przybylska et al., 2007; Schattner et al., 2004; Sharma et al., 2017). In a reciprocal fashion, deletion of snR4 and loss of ac4C1280 produces a negative correlation change with position Ψ1290 (Figure 2—figure supplement 3B). However, the modification status of Ψ1290 does not appreciably change relative to wild type (Figure 2—figure supplement 3D). These results suggest a hierarchy in which Ψ1290 is modified by snR83 snoRNP prior to modification of ac4C1280, and in the absence of snR83 or Ψ1290, modification of ac4C1280 occurs more frequently. Loss of Ψ1290 also results in correlation changes with m1acp3Ψ1191, Gm1271, and Cm1639. Together, these results highlight relationships between modifications at different sites and provide testable models for future studies.
 
-## Correlated modification at distant sites on wild-type yeast ribosomes
+### Correlated modification at distant sites on wild-type yeast ribosomes
 
 By ensemble methods, most rRNA positions are almost completely ( > 95%) modified and cluster around functional centers, with a few that are partially modified (Figure 1—figure supplement 5; Birkedal et al., 2015; Marchand et al., 2016; Taoka et al., 2016; Yang et al., 2016). Taken one position at a time, our model arrives at very similar estimates (Figure 2—figure supplement 4). However, ensemble methods cannot detect heterogeneity in the modification pattern of whole molecules. To identify modification heterogeneity in wild-type yeast ribosomes, we searched for subpopulations of rRNA with single molecule modification profiles not expected by chance. Hierarchical clustering of wild type profiles shows no large classes of distinctly modified ribosomes. However, some smaller ( < 10% of total) subpopulations are apparent that have correlated pairs of unmodified nucleotides (Figure 2E and Figure 2—figure supplement 5A), confirmed by comparing wild type to IVT (Figure 2F and Figure 2—figure supplement 5B) (see Materials and methods). One pair of significantly correlated positions in 18 S, Ψ632 and Ψ766 (p-value = 1.3e-04, Fisher z-transform test) are guided by the same snoRNA, snR161, likely explaining the basis for this correlation.
 
 We observe a significant correlation between Am100 and Am436 (p-value = 3.1e-04, Fisher z-transform test) as well as between Cm1639 and ac4C1773 in 18 S (p-value = 4.5e-06, Fisher z-transform test) (Figure 2F), neither of which share a snoRNA or modification enzyme. Cm1639 (snR70) in the P-site is also correlated with Ψ999 (snR31, E-site, p-value = 1.7e-03, Fisher z-transform test), and ac4C1280 (Kre33, P-value = 3.9e-05, Fisher z-transform test) (Figure 2). Furthermore, ac4C1773 and m26A1782 (Dim1, intersubunit bridge, p-value = 1.7e-04, Fisher z-transform test) are correlated. Some correlated pairs lie close to each other (15–22 Å) in the three-dimensional structure of the mature ribosome (Figure 2G), suggesting a structural or functional basis for their coordinate modification status. In 25 S, the three U24-guided positions Cm1437, Am1449, and Gm1450 are all significantly more correlated with each other than expected (p-value = 1.0e-44, Brown’s method) (Figure 2—figure supplement 5), echoing our observations in the depletion experiment. Several of the significant long-range correlations in wild type show up in other experiments (see below), indicating that concerted modification at those positions is a feature of normal yeast ribosomes.
 
-## Loss of different RNA helicase-related functions result in distinct subpopulations of differently modified rRNA molecules
+### Loss of different RNA helicase-related functions result in distinct subpopulations of differently modified rRNA molecules
 
 Previous studies have connected helicase activities required for ribosome biogenesis with changes in 2´O methylation at single positions in ensembles of rRNA molecules (Martin et al., 2013). To explore how ATP-dependent RNA helicase functions implicated in ribosome biogenesis and snoRNP dynamics may influence single molecule patterns of rRNA modification, we profiled cells deficient in two proteins with distinct roles in ribosome biogenesis; Dbp3 (Weaver et al., 1997) and Prp43 (Combs et al., 2006; Leeds et al., 2006). Compared to wild-type control strains at 30 °C or 18 °C, we observe loss of 2´O methylation at specific locations in 18 S and 25 S rRNAs in the Dbp3 knockout strain (dbp3ᐃ) or the cold-sensitive Prp43 Q423N mutant (prp43-cs) grown at nonpermissive temperature (Figure 3A, Figure 3—figure supplements 1–3) consistent with previous ensemble studies (Figure 2—figure supplement 4C, D; Aquino et al., 2021). Despite the numerous locations at which modification is compromised, hierarchical clustering of 25 S rRNA single-molecule profiles reveals that just 2–3 distinct but related sets of modification profiles describe nearly all ribosomes in both experiments (Figure 3B). The triad of 2´O methylations guided by the snoRNA U24 at 25 S positions 1437, 1449, and 1450 surrounding the PET are often left unmodified in a highly concerted manner (Figure 3B), as observed in a minority of wild type 25 S rRNA molecules (Figure 2—figure supplement 5), and in the snoRNP depletion experiments (Figure 1). The pairwise correlations within this triad are significantly higher in both the dbp3ᐃ and the prp43-cs mutants relative to wild type (dbp3ᐃ p-value = 3.6e-68, prp43-cs 3.5e-11, Brown’s method) (Figure 4 and Figure 4—figure supplement 1D, E). To confirm the highly concerted modification of the closely spaced U24-dependent positions, we clustered the underlying raw signal event means from the dbp3ᐃ and prp43-cs mutants as above (see Materials and methods) (Ding et al., 2020). This reveals two clear subpopulations of reads distinguished by the signal means at positions C1437, A1449, and G1450 in both the dbp3ᐃ and prp43-cs mutants (Figure 3—figure supplement 4). Therefore, if the U24 snoRNP is unable to guide modification of any of these positions, then all 3 positions are left unmodified. Furthermore, both Dbp3 and Prp43 functions are required for the concerted modification of these nucleotides near the PET.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig3-v3.jpg)
+
+**Figure 3.:** (A) Barplots of the difference between wild-type modification frequency and dbp3ᐃ, prp43-cs, pxr1ᐃ, and sqs1ᐃ modification frequencies in 25 S yeast rRNA. Gray bars indicate the variance of wild type rRNA modification at each position and the black dotted lines represent the maximum variance observed at any site. (B) Hierarchical clustering of 25 S yeast rRNA modification profiles from wild type, dbp3ᐃ, prp43-cs, and pxr1ᐃ (1000 reads in each experiment). Each row is a full-length molecule, each column is a modified nucleotide and the color represents modification probability, see scale.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Barplots of the difference between wild-type modification frequency and dbp3ᐃ, prp43-cs, pxr1ᐃ, and sqs1ᐃ modification frequencies in 18 S yeast rRNA. Gray bars indicate the variance of wild type rRNA modification at each position and the black dotted lines represent the maximum variance. (B) Hierarchical clustering of 18 S yeast rRNA modification profiles from wild type, dbp3ᐃ, prp43-cs, and pxr1ᐃ (1000 reads in each experiment). Each row represents a full-length single read, each column represents a modified nucleotide and the scale represents the probability of being modified.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Barplots of the difference between 18 S yeast rRNA modification frequency of wild type cells grown at 30 °C and wild type, prp43-cs, and prp16-cs cells shifted to 18 °C for 1 hr. Gray bars indicate the variance of wild-type rRNA modification at each position and the black dotted lines represent the maximum variance. (B) Hierarchical clustering of 18 S yeast rRNA modification profiles from wild type 30 °C, wild type 18 °C, prp43-cs, and prp16-cs (1,000 reads in each experiment). Each row represents a full-length single read, each column represents a modified nucleotide and the scale represents the probability of being modified.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Barplots of the difference between 25 S yeast rRNA modification frequency of wild-type cells grown at 30 °C and wild type, prp43-cs, and prp16-cs cells shifted to 18 °C for 1 hr. Gray bars indicate the variance of wild type rRNA modification at each position and the black dotted lines represent the maximum variance. (B) Hierarchical clustering of 18 S yeast rRNA modification profiles from wild type 30 °C, wild type 18 °C, prp43-cs, and prp16-cs (1000 reads in each experiment). Each row represents a full-length single read, each column represents a modified nucleotide and the scale represents the probability of being modified.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig3-figsupp4-v3.jpg)
+
+**Figure 3—figure supplement 4.:** Hierarchical clustering of aligned standardized events from Dbp3 KO (A) and Prp43 cold mutant (B) covering the events from positions 1431–1455 (see Materials and methods). These positions cover the 3 2’O ribose methylations guided by the snoRNA U24 at positions 1437, 1449, and 1450.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig4-v3.jpg)
+
+**Figure 4.:** Graphical representation of modification correlation changes, significance, and location within the functional centers of the ribosome. Pairs of correlated nucleotide changes (nodes) are shown for each mutant (colored edges) relative to wild type yeast 25 S rRNA (A) and 18 S rRNA (B). In cases where correlated pairs show differential changes in correlation in different mutants (eg. U24 modifications), node color rings are fragmented with the appropriate mutant edge connecting to either the magenta (negative change in correlation relative to wild type) or black (positive change in correlation relative to wild type) portion of the node.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76562/elife-76562-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Change in Spearman correlations of 18 S (A–C) and 25 S (D–E) reads in dbp3ᐃ (A/D), prp43-cs (B/E), and pxr1ᐃ (C/F) when compared to wild type. Stars represent significant changes when compared to wild type correlation and significantly different from zero correlation.
 
 Prp43 interacts with a number of G-patch proteins that direct it to either the ribosome or the spliceosome (Chen et al., 2014; Heininger et al., 2016; Martin et al., 2002; Pertschy et al., 2009; Tanaka et al., 2007; Tsai et al., 2005). Two of these, Pxr1 and Sqs1, are important for correct pre-rRNA processing (Banerjee et al., 2015; Guglielmi and Werner, 2002; Pertschy et al., 2009). To discover the role of Pxr1 and Sqs1 in rRNA modification, we obtained modification profiles from strains deleted for each. Although deletion of Sqs1 had little effect on modification (see below), loss of Pxr1 produced modification profiles similar to the prp43-cs mutant, but with more extreme modification deficiencies (Figure 3A). All modifications affected by prp43-cs and all but two 18 S 2´O methylations affected by dbp3ᐃ (Figure 3—figure supplement 1A) are also affected in pxr1ᐃ. This suggests that loss of Prp43 activity guided by Pxr1, but not that guided by Sqs1, is responsible for the concerted changes in modification pattern observed in the prp43-cs strain.
 
@@ -77,7 +153,7 @@ Despite the similarities in modification patterns in the different mutants (Figu
 
 Together our data reveal distinct classes of ribosomes that result from a concerted network of modification losses, many of which reside in the functional centers of the ribosome (Figure 4). For example, loss of Prp43 and Pxr1 induce a concerted loss of modification of a set of nucleotides in the decoding site of the small subunit (green circles, Figure 4B). Loss of Pxr1 leads to concerted loss of a set of modifications in the peptidyl transfer center of the large subunit (blue circles, Figure 4A). And all three mutants create a complex set of correlated modification changes in the triad Cm1437, Am1449, and Gm1450 near the protein exit tunnel of the large subunit (purple circles, Figure 4A). Concerted modification of this triad is observed in wild type ribosomes (Figure 2—figure supplement 5) as well as in the snoRNP depletion experiments (Figure 1). As discussed above, a shared snoRNP (e.g. snR60, snR67) may explain part of the concerted modification phenomenon, however in many other cases the mechanisms that underlie concerted modification are not obvious.
 
-## Resilience of rRNA modification profiles to acute splicing perturbations and environmental treatments
+### Resilience of rRNA modification profiles to acute splicing perturbations and environmental treatments
 
 Ribosome biogenesis and splicing are connected processes in yeast. For example, Prp43 also mediates disassembly of spliceosomes (Combs et al., 2006; Leeds et al., 2006; Martin et al., 2002) aided by the G-patch protein Spp382 (also called Ntr1) (Christian et al., 2014; Fourmann et al., 2016; Pandit et al., 2006; Tanaka et al., 2007; Tsai et al., 2005). In addition, a number of snoRNAs are encoded within introns of genes important in ribosome biogenesis and translation, and their synthesis can be compromised by mutations that affect splicing (Ooi et al., 1998; Petfalski et al., 1998; Piekna-Przybylska et al., 2007; Vincenti et al., 2007). To determine if loss of splicing functions affect rRNA modification, we acquired single molecule modification profiles for ribosomes from an Spp382/Ntr1 mutant, a cold sensitive mutant of Prp16 (prp16-302) (Madhani and Guthrie, 1994; Tseng et al., 2011) that accumulates splicing intermediates, and a deletion of Dbr1 (Chapman and Boeke, 1991) that prevents debranching of the intron lariat, a reaction that promotes processing of some intronic snoRNAs, in particular U24 (Ooi et al., 1998).
 
@@ -99,11 +175,11 @@ To discover relationships and dependencies between distant modifications in rRNA
 
 **Figure 6.:** (A) Crystal structure model of yeast 25 S rRNA and ribosomal proteins uL4 and uL22 in surface view (PDB:4V88; Ben-Shem et al., 2011). rRNA domains are color coded according to the RiboVision Suite (Bernier et al., 2014). The distal end of the polypeptide exit tunnel is indicated. U24-guided modified nucleotides Cm1437, Am1449, and Gm1450 are shown in blue. (B) Focused view of the uL4 tunnel domain and the internal loop of uL22 forming the exit tunnel constriction sites. 25 S rRNA domain 0 is shown in black. 4.1Å and 4.4Å represent the distance between the indicated, modified nucleotide and the internal loops of uL4 and uL22 respectively. (C) Crystal structure model of yeast 18 S rRNA showing changes in concerted loss of modifications in prp43-cs, or pxr1ᐃ mutants when snR55 (Um1269, purple) is retained on the pre-ribosome in the absence of Prp43 (Bohnsack et al., 2009). Prp43 crosslinking sites are indicated in orange. (D) Model showing the hierarchical function of Dbp3 and Prp43, to promote concerted modification of 18 S rRNA nucleotides, during ribosome biogenesis. Circles and stars represent unmodified and modified positions, respectively. Modified nucleotides in the 5´ end of 18 S rRNA, proposed to occur early and co-transcriptionally, are represented as light gray stars. Color scheme is the same as panel C.
 
-## Concerted modification in the polypeptide exit tunnel
+### Concerted modification in the polypeptide exit tunnel
 
 Distinct subsets of 25 S rRNAs collectively missing 2´O-methyl modification at positions Cm1437, Am1449, and Gm1450 accumulate together and form a major subset of ribosomes in Pxr1, Prp43, and Dbp3 mutants (Figures 3 and 4). Importantly, wild type ribosomes show a similar pattern of concerted modification at these residues (Figure 2—figure supplement 5), suggesting that these are not exclusively a result of the mutations. The polypeptide exit tunnel (PET), acquires modification in a concerted fashion (Figures 3 and 4, Figure 2—figure supplement 5). These three nucleotides line the PET, where interactions with the nascent polypeptide chain can influence protein folding (Choi et al., 2018), within a few angstroms of conserved loops of ribosomal proteins uL4 (rpL4) and uL22 (rpL17) (Ben-Shem et al., 2011). These protein loops insert into the PET to form the constriction site and may act as an ‘exit gate’ (Figure 6A and B; Nakatogawa and Ito, 2002; Wilson et al., 2020; Zhang et al., 2013). Furthermore, these three positions are in domain 0 of ribosomal rRNA, which acts as a central hub around which the other six 25 S rRNA domains fold (Klinge and Woolford, 2019; Petrov et al., 2014). In the absence of Cm1437, Am1449, and Gm1450, the rRNA and the loops of uL4 and uL22 may not be properly positioned, affecting the structure and chemistry of the PET, translation, and protein folding. Future work will be necessary to assess the functional differences between the two populations of ribosomes we observe that differ by concerted modification of these PET nucleotides.
 
-## Distinct and overlapping helicase functions during ribosomes biogenesis
+### Distinct and overlapping helicase functions during ribosomes biogenesis
 
 At least 21 putative RNA helicases drive yeast ribosome biogenesis forward by enabling pre-rRNA rearrangements and releasing snoRNPs (Martin et al., 2013). Recent work (Aquino et al., 2021) supports a model in which Dbp3 and Prp43 release certain snoRNPs to allow subsequent modification of adjacent sites by a second snoRNP. Here, we identify concerted changes in modifications over much longer distances in rRNA when the activity of Dbp3 or Prp43 is compromised, suggesting the regulation of these helicases is not only important for locally overlapping modified positions, but also for modifications separated by large stretches of sequence (Figure 3, Figure 3—figure supplements 1–3). Furthermore, our work shows that Pxr1, but not Sqs1, is the main G-patch protein important for Prp43 function during rRNA modification.
 
@@ -115,7 +191,7 @@ The Prp43-Q423N mutant also leads to undermodification of other nucleotides near
 
 Prp43 is present in multiple, consecutive pre-ribosomal particles and is thought to bind to different positions along the pre-rRNA (Bohnsack et al., 2009; Lebaron et al., 2005), providing opportunity for hierarchical relationships in modification at other locations. During its function in the termination of pre-mRNA splicing, Prp43 is proposed to bind the 3´ end of U6 snRNA and translocate along it, resulting in removal of U6 from the spliceosome (He et al., 2017; Toroney et al., 2019). Because many biochemical principles are shared between the spliceosome and the ribosome (Staley and Woolford, 2009), we propose that Prp43 acts in an analogous manner to release certain snoRNPs from the pre-ribosome upon completion of modification. Since other modification sites in 25 S rRNA are affected by loss of Prp43 activity, it seems likely that Prp43 binding at multiple locations promotes release of snoRNPs from the pre-ribosome. Thus, hubs of concerted loss of modification in the Prp43 mutant might reflect critical points in ribosome biogenesis where Prp43 removes key snoRNAs.
 
-## Is U24 snoRNP-dependent methylation distributive or processive?
+### Is U24 snoRNP-dependent methylation distributive or processive?
 
 The exact mechanism by which snoRNPs bind to and are released from the pre-ribosomal particles during assembly is still unknown. Models must account for the fact that many snoRNP binding sites overlap in both the linear rRNA sequence and the three-dimensional spaces of the assembling ribosome. In this work, we document concerted modification at several sets of locations, some distant on the sequence but near in space in the mature ribosome, and others that may or may not share a snoRNA guide (Figures 1—4, Figure 1—figure supplement 3, Figure 2—figure supplement 5, and Figure 4—figure supplement 1). The most striking example of concerted modifications are the U24-guided modifications at Cm1437, Am1449, and Gm1450 in the PET. The depletion experiments (Figure 1) provide clear evidence that most ribosomes are either fully modified or completely unmodified at those three sites, and the loss of modification in the Dbp3 and Prp43 mutants for this group is similar (Figure 3 and Figure 4—figure supplement 1).
 
@@ -123,7 +199,7 @@ Does one U24 binding event lead to all three modifications? Or does each modific
 
 The diameter of a snoRNP may approach 100 Å (Duan et al., 2009; Lin et al., 2011), whereas the yeast ribosome is approximately 250 Å in diameter. Thus, if two different snoRNPs have overlapping binding sites that guide two closely spaced modifications, they almost certainly must act sequentially. In this instance, concerted loss of modification could occur if the pre-rRNA substrate fails to adopt a conformation that renders the local region containing both sites accessible. However, this may be inadequate to explain concerted modification of closely spaced nucleotides by the same snoRNP, such as the U24-guided modifications at Cm1437, Am1449, and Gm1450 (Figure 3 and Figure 2—figure supplement 5). In this case if the site is inaccessible, all three positions would be unmodified. However, if the site is accessible and modification proceeds distributively then intermediates representing partial modification should be observed, in particular under depletion of C/D box snoRNPs (Figure 1) or loss of Dbp3 (Figure 3; Aquino et al., 2021). Instead, two main populations of ribosomes are observed, all modified or all unmodified at these locations, opening the possibility that modification of these sites by U24 snoRNP is highly processive. In this view, when the site is accessible all three sites become methylated without dissociation of the U24 snoRNP from the pre-ribosome. In Dbp3 mutants and wild-type cells, most U24 is associated with the pre-ribosome (Aquino et al., 2021), suggesting that either (1) there are three high-affinity binding sites at which release and rebinding of U24 occurs distributively at a rate that prevents detection of partially modified intermediates, or (2) there is a single binding site at which the target nucleotides are bound and methylated processively after a single U24 snoRNP-binding event.
 
-## Prospects and limitations
+### Prospects and limitations
 
 We developed a hidden Markov model-based approach that allows (1) single-molecule profiling and clustering of RNAs to visualize high-level relationships between features in a population of complete molecules, (2) the ability to test for changes in correlations between any given pair of modifications on the same molecule, and (3) a way to estimate the fraction of modification of each site. We used wild-type rRNA as our fully modified training example, with the clear understanding that not all wild-type molecules are fully modified (Taoka et al., 2016). In several instances, we confirmed that this assumption had little effect on performance of the model (Figure 1—figure supplement 2). Positions where the signal-to-noise ratio between unmodified and modified nucleotides is small are less accurately predicted compared to other positions. A sense of this limitation can be observed as occasional miscalling of positions as modified in the in vitro transcripts (red positions in the IVT heatmap of Figure 1A; per position accuracy is shown in Figure 1—figure supplement 2E). This limitation is a function of the sequence context with which the modification occurs and vagaries of nanopore electronic signal variation. Another limitation arises when the training samples do not have enough information to resolve dense clusters of modifications. Where this was a concern, we validated patterns of modification by clustering the raw signal means (Figure 1—figure supplement 4 and Figure 3—figure supplement 4). While there is some evidence that unknown modified kmer distributions can be estimated using known kmer distributions (Ding et al., 2021), generating more specific modification training data sets that contain all combinations of partially modified closely spaced clusters of nucleotides may be required to produce more accurate and general modification detection algorithms. This is especially true if de novo detection of modifications within complex sequences is the goal (Leger et al., 2019; Stoiber et al., 2016).
 
@@ -131,63 +207,227 @@ While our analysis focuses on mature, full-length rRNA, the capture of and profi
 
 ## Materials and methods
 
-## Growth of yeast strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>Saccharomyces cerevisiae, various strains and genetic backgrounds</td>
+      <td></td>
+      <td></td>
+      <td>See Supplementary file 1D</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>XL1 Blue</td>
+      <td>In-house</td>
+      <td></td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-18S</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HindIII digested, run-off in vitro transcription (see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>T7-25S</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HindIII digested, run-off in vitro transcription (see Materials and methods)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sequencing adapter</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Sequencing adapter – Supplementary file 1E</td>
+      <td>/PHOS/GGCTTCTTCTTGCTCTTAGGTAGTAGGTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>s.c. 18 S splint</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Sequencing adapter splint – Supplementary file 1E</td>
+      <td>CCTAAGAGCAAGAAGAAGCCTAATGATCCTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>s.c. 25 S splint</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Sequencing adapter splint – Supplementary file 1E</td>
+      <td>CCTAAGAGCAAGAAGAAGCCACAAATCAGACAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>s.c. IVT 18 S splint</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Sequencing adapter splint – Supplementary file 1E</td>
+      <td>CCTAAGAGCAAGAAGAAGCCAGCTTTAATGATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>s.c. IVT 25 S splint</td>
+      <td>Integrated DNA Technologies</td>
+      <td>Sequencing adapter splint – Supplementary file 1E</td>
+      <td>CCTAAGAGCAAGAAGAAGCCAGCTTACAAATCA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gibson Assembly Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>E2611L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MEGAscript T7 transcription kit</td>
+      <td>Invitrogen</td>
+      <td>AM1334</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MinION Mk1B Sequencing Device</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>MIN-101B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Flongle Adapter</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>ADP-FLG001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct RNA Sequencing Kit</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>SQK-RNA002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Flow Cell (R9.4.1)</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>FLO-MIN106D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Flongle Flow Cell (R9.4.1)</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>FLO-FLG001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Flow Cell Priming Kit</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>EXP-FLP002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Flongle Sequencing Expansion</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>EXP-FSE001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rapamycin</td>
+      <td>Research Products International</td>
+      <td>R64500-0.001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium acetate</td>
+      <td>EMD Millipore</td>
+      <td>PX1330-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Sigma</td>
+      <td>C7698-1G</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Growth of yeast strains
 
 Yeast strains GAL-NOP58 and GAL-CBF5 are described in Lafontaine et al., 1998; Lafontaine and Tollervey, 1999. Cells were grown at 30 °C in YEPgal liquid medium (2% galactose, 2% peptone, 1% yeast extract) or shifted to liquid YEPD (2% dextrose, 2% peptone, 1% yeast extract) to mid-log phase (OD600 = 0.25–0.5) for 16 hr to repress expression of Nop58 or Cbf5. Cells were harvested by centrifugation and RNA was isolated. Unless indicated, all other strains were grown in YEPD at 30 °C to mid-log phase. Cells exposed to various environmental conditions were treated as follows: 1% KOAc (1 hr, 30 °C), cycloheximide (1 µg/ml for 1 hr), or rapamycin (200 ng/ml for 1 or 5 hr). Stationary phase cells were grown to an OD600 = 10. Strains carrying prp16-302 (Madhani and Guthrie, 1994) and prp43-Q423N (Leeds et al., 2006) mutations, and wild type (Schattner et al., 2004) were grown to mid log phase at 30 °C and shifted to 18 °C for 1 hr by addition of an equal volume of 6 °C YEPD. The spp382-1 strain is described in Pandit et al., 2006. The pxr1Δ strain is described in Banerjee et al., 2015. The strains deleted for the SNR80 (YWD448a), SNR83 (YWD451a), or SNR87 (YWD452a) genes are described in Schattner et al., 2004. Yeast strains deleted for the SNR4 and SNR45 genes are described in Parker et al., 2018. The dbr1Δ, dbp3Δ, and sqs1Δ deletion strains were obtained from Open BioSystems. All yeast strains and genotypes can be found in (Supplementary file 1D).
 
-## RNA isolation
+### RNA isolation
 
 RNA was extracted from approximately five total OD600 of cells (usually 10 ml culture at OD600 = 0.5 for mid log cells, 0.5 ml of stationary cells at OD600 = 10) using a hot phenol protocol 1 described in Ares, 2012.
 
-## In vitro synthesis of 18S and 25S rRNA
+### In vitro synthesis of 18S and 25S rRNA
 
 Unmodified yeast 18 S and 25 S rRNAs were transcribed in vitro from plasmids encoding T7-18S and T7-25S sequences using T7 RNA polymerase. PCR products encoding 18 S and 25 S rDNA were amplified from the plasmid pWL155 which contains the RDN1-1 gene fused with the GAL promoter at the 5´ end (Liang and Fournier, 1997 a kind gift from Jelena Jakovlievic) and cloned into a T7 promoter-containing plasmid digested with EcoRI and HindIII using Gibson Assembly (NEB). The resulting plasmids were then digested with HindIII and run-off transcription was performed using the MEGAscript T7 kit (Invitrogen) following the manufacturer’s instructions. T7-18S and –25 S in vitro transcription reactions were evaluated by gel electrophoresis for bands of correct size that correspond to 18 S and 25 S rRNAs. Transcription reactions were extracted and purified with phenol:chloroform:isoamyl alcohol (25:24:1), ethanol precipitated and resuspended in nuclease-free H2O. Purified T7-18S and –25 S rRNA transcripts were then quantified on a NanoDrop spectrophotometer and pooled in equimolar ratios for sequencing library preparation. The T7 run-off transcription reactions terminate in a 3´ end generated by HindIII digestion and thus include an additional AAGCU sequence not present in endogenous 18 S and 25 S rRNAs. Therefore, T7-18S and T7-25S splint oligonucleotides were used to capture the 3´ end of T7 transcribed rRNAs (see below, Supplementary file 1E).
 
-## Sequencing library preparation
+### Sequencing library preparation
 
 Direct RNA sequencing libraries were constructed using the SQK-RNA002 (Oxford Nanopore Technologies) kit following the manufacturer’s protocol with the following modifications. Briefly, 750 ng of total yeast RNA was used as input material. To facilitate ligation of sequencing adapters to endogenous yeast 18 S and 25 S rRNA, 1 µl of 10 pmol/µl custom oligonucleotide duplexes complementary to the 3´ ends of 18 S and 25 S rRNA and the 5´ end of the ONT RMX sequencing adapter were used instead of the kit provided RTA adapter (Supplementary file 1E). To create duplexes, 100 pmol of either 18 S or 25 S splint oligo was incubated with 100 pmol of sequencing adapter and nuclease free H20 in a total volume of 10 µl. Reactions were heated to 95 °C for 2 min and gradually cooled at 65 °C for 10 min, 48 °C for 10 min, room temperature for 10 min and then placed on ice. Annealed oligonucleotide duplexes targeting 18 S and 25 S rRNAs were then pooled in equimolar ratio and 1 µl of the pool was used for sequencing library preparation. In the case of T7 rRNA sequencing libraries, T7-18S splint and T7-25S splint oligos were used to capture the 3´ end generated by HindIII digestion and run-off transcription. To enhance ligation efficiency during library preparation, the first and second ligation steps were increased from 10 min to 15 min and performed at room temperature. Reverse transcription was omitted. Sequencing-adapted libraries were eluted in 21 µl of elution buffer.
 
-## Nanopore sequencing
+### Nanopore sequencing
 
 RNAs extracted from GAL-NOP58 and GAL-CBF5 strains, and in vitro transcribed RNA were sequenced on the MinION Mk1B sequencer using MinION FLO-MIN106D R9.4.1 flow cells (Oxford Nanopore Technologies) following the manufacturer’s instructions. Twenty µl of Sequencing libraries was mixed with 17.5 µl of H20 and 37.5 µl of RRB buffer. A total of 75 µl of the prepared sequencing library was loaded onto a flushed and primed flow cell and sequenced for 12–48 hr depending on the lifetime of active pores. RNAs extracted from all other strains and growth conditions were sequenced on the MinION Mk1B sequencer using Flongle FLO-FLG001 R9.4.1 flow cells. Flongle flow cells were flushed and primed with 120 µl of flush buffer mix (117 ul FLB and 3 ul FLT). Thirty µl of prepared sequencing library (described above) was loaded onto the flow cell and sequenced for 8–24 hr. Sequencing experiments were controlled using the MinKNOW software (Oxford Nanopore Technologies). Technical replicates, where libraries prepared from the same RNA sample but run on different flow cells, and biological replicates, where the full experiment was repeated, can be found in (Supplementary file 1F).
 
-## Data preprocessing
+### Data preprocessing
 
 Basecalling was done using the RNA model from Guppy v3.1.5 + 781ed57. To analyze specific subsets of reads more efficiently, we split the multi-fast5 reads into individual reads using the `multi_to_single_fast5` command from https://github.com/nanoporetech/ont_fast5_api. We then created an index file matching a fast5 to a fastq entry using `nanopolish index` from https://github.com/jts/nanopolish (Simpson et al., 2017). The reference sequence for the S. cerevisiae 18 S and 25 S rRNA came from Engel et al., 2014. Initial basecalled sequence to reference alignment was done via minimap2 version 2.17-r943-dirty from https://github.com/lh3/minimap2 using the --MD flag which speeds up processing of signalAlign (Li, 2018). Alignment files were sorted and filtered using samtools version 1.9 by flag `-F 2308` which filters out unmapped reads, non-primary alignment reads and supplementary alignment reads (Li et al., 2009). Given that nanopore sequencing with RNA is 3´–5´, in order to filter for ‘full length’ reads we used `samtools view` to select for reads that covered the first 15 bases of either 18 S or 25 S rRNAs (Li et al., 2009). Read information and quality control metrics in (Supplementary file 1F) were gathered using pycoQC version v2.5.0.23 (Leger and Leonardi, 2019).
 
-## SignalAlign pipeline
+### SignalAlign pipeline
 
-## Model definition
+#### Model definition
 
 We initialized the transition probabilities from previous signalAlign r9.4 models. The initialized kmer distributions were defined in `r9.4_180 mv_70bps_5mer_RNA` from ONT https://github.com/nanoporetech/kmer_models. Unlike previous kmer model modification detection algorithms, we chose to model modifications independently from other modifications of the same class in order to maintain the same informational inputs to each modification position. So, we iteratively redefined shared kmers with unused kmers from the model until all modifications were covered by unique kmers (see Code availability). For all kmers outside of modification branch points, we used the default RNA kmer distributions from ONT (r9.4_180 mv_70bps_5mer_RNA).
 
-## Training configuration
+#### Training configuration
 
 SignalAlign v1.0.0 uses a variable-order hidden Markov model (HMM) which allows the number of paths through the HMM to be correctly constructed when ambiguous positions are defined (see Code availability) (Rand et al., 2017). Recent updates to signalAlign allow for relatively easy model definition and variant site selection which allows a user to define modifications, set prediction site locations and train a model. We defined all modified positions in the IVT sample as canonical and all positions in the wild type as modified. The locations of modified positions were determined by Taoka et al., 2016 via mass spectrometry. For supervised training, all potential modified positions were defined as either canonical (IVT) or modified (wild type). Modifications within the first 15 nucleotides from the 5´ end of 18 S or 25 S cannot be called because the signal from that part of the sequence is not captured by standard nanopore sequencing. This limitation does not affect our experiments because there are no modifications in yeast which are within the first 15 nucleotides from the 5´ end of 18 S or 25 S.
 
 We used 500 reads from both wild type and IVT reads and ran 30 rounds of training. For each round of training, we generated alignments between events and the reference sequence. Then, we generated new event Gaussian distributions for all kmers covering modified positions. The mean of the gaussian distribution was defined as the median of the empirical kmer distribution and the standard deviation was defined as the median absolute deviation of the empirical kmer distribution. Similar to another study, we have seen that the median is less susceptible to being influenced by outliers (Ding et al., 2020). To train the model, we used `trainModels.py` from signalAlign (see Code availability).
 
-## Inference and accuracy metrics
+#### Inference and accuracy metrics
 
 In order to test our results, we used ‘runSignalAlign.py’ and a trained model to predict modification status on all positions of 500 hold out IVT reads and 500 hold out wild-type reads (see Code availability). SignalAlign produced posterior probabilities of event alignments to both canonical kmers and modified kmers. We used `embed_main sa2bed` to decode the posterior probabilities from the signalAlign output into the probability of a position being modified (Rand et al., 2017). These probabilities are used for the receiver operating characteristic curve, precision-recall curve, calibration curve of Figure 1—figure supplement 2. A probability cutoff of 0.5 is used for the confusion matrix as well as the quantification of percent modified for any position.
 
 We also compared accuracy on our test set to several snoRNA knockouts. Again, assuming snoRNA knockouts completely ablate target modifications and modifications are 100% present at all other positions, the average balanced accuracy over the snoRNA knockout positions is 85.1% and the expected balanced accuracy is 87.1% (Supplementary file 1B,C). Average balanced accuracy is calculated by getting the average of all balanced accuracies across all snoRNA knockout positions. Balanced accuracy for one position is calculated by adding the specificity to the sensitivity and dividing by two.
 
-## Percent modification change
+#### Percent modification change
 
 For every experiment and each modification position, we perform several chi-square two sample tests comparing the three wild type replicates modification frequencies to all experiment repeats’ modification frequency (Pearson, 1900). We then select the highest p-value and correct for multiple tests using the Benjamani-Hochberg procedure (Benjamini and Hochberg, 1995). We also control for batch effects by filtering out positions which fall below the maximum change in modification frequency between the replicates of the wild type. All sample modification percentages, p-values from chi-square two sample tests compared to wild type replicates and IVT, and Benjamani-Hochberg corrected p-values can be found in (Supplementary file 1B).
 
-## Hierarchical clustering analysis
+### Hierarchical clustering analysis
 
-## Dendrogram creation procedure
+#### Dendrogram creation procedure
 
 In order to determine any subclusters of reads based on a modification profile, we used hierarchical clustering on the modification profiles we generated from the inference step (Pedregosa, 2011; Waskom, 2020). We generated the dendrogram using Ward’s method and euclidean distance as the distance metric (Ward, 1963). Before clustering analysis, we filter out reads which do not cover every modification site. UMAP dimension reduction was done using the umap python package and visualization using matplotlib (Hunter, 2007; McInnes et al., 2018).
 
-## Cluster partitioning
+#### Cluster partitioning
 
 To determine the number of reads in a set of N clusters we simply cut the dendrogram to create N subclusters and calculated the fraction of reads within each branch.
 
-## Modification correlations
+#### Modification correlations
 
 To calculate correlations between modified positions, we first filter out reads which did not cover all modifications and select the set of probabilities associated with each position. We then calculate the Spearman rank correlation between all pairwise combinations of modification positions on the same molecule. We use Spearman rank correlation to study the relationship between two probabilities because pairs of probabilities do not follow a bivariate normal distribution. p-Values were calculated using a two sided t-test and multiple tests corrected via the Benjamani-Hochberg procedure (Benjamini and Hochberg, 1995; Student, 1908).
 
@@ -197,49 +437,49 @@ For higher order claims which require aggregating information from several hypot
 
 Spearman correlation values, original two sided t-test p-values, corrected two sided t-test p-values, Fisher z-transform test comparison p-values, and corrected Fisher z-transform tests p-values can be found in (Supplementary file 1A).
 
-## Event visualization
+#### Event visualization
 
 Using a similar procedure outlined in a previous study (Ding et al., 2020), we gather the kmer to reference mapping generated from signalAlign and extract the most probable event to kmer alignment path using the maximum expected accuracy alignment (Durbin et al., 1998; Rand et al., 2017). For each read, we standardize the raw signal and calculate event means. Prior to clustering and visualization, we combine all reads together and standardize events by column. We generate the dendrogram using the same procedure as hierarchical clustering of modification profiles, Ward’s method and euclidean distance (Ward, 1963).
 
 For kmer distributions seen in Figure 2—figure supplement 2, we plot the kernel density estimate of all events aligning to the corresponding kmer with a probability greater than 0.5. We then simply plot the corresponding kmer distributions from the final trained kmer model.
 
-## Sample compare site detection
+### Sample compare site detection
 
-## Tombo pipeline
+#### Tombo pipeline
 
-Using Tombo version 1.5.1, initial embedding of fastq data into the raw fast5s was done with the `tombo preprocess annotate_raw_with_fastqs` and signal to reference alignment with `tombo resquiggle` (Stoiber et al., 2016). Finally, `tombo detect_modifications level_sample_compare` was used to generate windowed means of individual position Kolmogorov–Smirnov tests comparing the IVT sample position signal distributions to the wild-type sample (WT_YPD) position signal distributions (Stoiber et al., 2016). For a given position i, the windowed mean D-statistic is wi=∑i-1i+1di3 where d is the D-statistic for a given position and w is the final reported statistic plotted in Figure 1—figure supplement 1A, D.
+Using Tombo version 1.5.1, initial embedding of fastq data into the raw fast5s was done with the `tombo preprocess annotate_raw_with_fastqs` and signal to reference alignment with `tombo resquiggle` (Stoiber et al., 2016). Finally, `tombo detect_modifications level_sample_compare` was used to generate windowed means of individual position Kolmogorov–Smirnov tests comparing the IVT sample position signal distributions to the wild-type sample (WT_YPD) position signal distributions (Stoiber et al., 2016). For a given position i, the windowed mean D-statistic is $w_{i}=\frac{\sum_{i-1}^{i+1}d_{i}}{3}$ where d is the D-statistic for a given position and w is the final reported statistic plotted in Figure 1—figure supplement 1A, D.
 
-## Accuracy of modification site prediction
+#### Accuracy of modification site prediction
 
 Using the D-statistic generated from Tombo, we calculated the per-position modification location detection AUROC (Area Under the Receiver Operating Characteristic) for yeast 18 S (0.924) and 25 S (0.934) rRNA (Figure 1—figure supplement 1B, E, see Supplementary Methods).
 
 We also wanted to see if peaks corresponded with modifications, not just raw D-statistic values. So, we identified peaks and considered a peak within 2 nucleotides of a modification as a true positive. We then calculated the AUROC for this less stringent method on yeast 18 S (0.984) and 25 S (0.986) rRNA (Figure 1—figure supplement 1C, F, see Supplementary Methods).
 
-## Modification labels and frequency
+#### Modification labels and frequency
 
 Underlying labels for modification and frequency for the S. cerevisiae 18 S and 25 S rRNA came from Taoka et al., 2016. Expected changes in modification frequency in the Dbp3 deletion experiment came from Aquino et al., 2021. SnoRNA modification sites on yeast rRNA come from the UMASS Amherst Yeast snoRNA database (Piekna-Przybylska et al., 2007).
 
-## Data availability
+#### Data availability
 
 Fastq files from all direct RNA sequencing runs and signalAlign modification calls are publicly available in NCBI’s Gene Expression Omnibus (GEO) and are accessible through GEO Series accession number GSE186634 (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE186634). Fast5 and fastq files for all direct RNA sequencing are available in the European Nucleotide Archive (ENA) at EMBL-EBI under accession number PRJEB48183 (https://www.ebi.ac.uk/ena/browser/view/PRJEB48183). A detailed description of the datasets used and sequenced in this work with their corresponding ENA or GEO IDs can be found in (Supplementary file 1G).
 
-## Code availability
+#### Code availability
 
 Documentation, install requirements, and analysis scripts for all work specific to this paper can be found at https://github.com/adbailey4/yeast_rrna_modification_detection (Bailey, 2022a). SignalAlign v1.0.0 can be found at https://github.com/UCSC-nanopore-cgl/signalAlign (Bailey et al., 2022c) and embed_fast5 1.0.0 can be found https://github.com/adbailey4/embed_fast5 (Bailey, 2022b).
 
-## Supplementary methods
+### Supplementary methods
 
-## Tombo pipeline
+#### Tombo pipeline
 
 Using Tombo version 1.5.1, initial embedding of fastq data into the raw fast5s was done with the `tombo preprocess annotate_raw_with_fastqs` and signal to reference alignment with `tombo resquiggle` (Stoiber et al., 2016). Finally, `tombo detect_modifications level_sample_compare` was used to generate windowed means of individual position Kolmogorov–Smirnov tests comparing the IVT sample position signal distributions to the wild type sample (WT_YPD) position signal distributions (Stoiber et al., 2016). For a given position i, the windowed mean D-statistic is wi = i-1i + 1di3 where d is the D-statistic for a given position and w is the final reported statistic plotted in Figure 1—figure supplement 1.
 
-## Accuracy of modification site prediction
+#### Accuracy of modification site prediction
 
 In order to get a general view of how all of the modifications are affecting the current signal we analyzed the signal shift between in vitro transcribed (IVT) and one wild type sample (WT_YPD) using Tombo (Stoiber et al., 2016). The signal difference of 18 S and 25 S strands using Tombo is shown in Supplementary Fig. S1A and S1B, respectively. There is a clear correlation between annotated modified positions and signal deviation but in order to quantify the relative accuracy of both approaches, we naively labeled the per-position deviations with the corresponding windowed mean D-statistic. As shown in Figure 1—figure supplement 1C, D, the per-position modification calling detection AUROC (Area Under the Receiver Operating Characteristic) was 0.924 for 18 S and 0.934 for 25 S. However, if a canonical position is directly next to a modified position, it is very likely the underlying current is going to be shifted for that position. Also, the uncertainty of which specific nucleotide in the pore gives rise to the most significant signal shift makes site selection for kmer based sample compare frameworks very difficult (Ding et al., 2020; Leger et al., 2019; Stoiber et al., 2016). Therefore, instead of evaluating Tombo on the per-position modification calling accuracy, we used a less stringent metric of modification window calling accuracy.
 
 We looked to see if a peak was within a window of a specific modification and disregarded large differences in signal in the neighboring 2 bases of a modification. Specifically, for each modification, we took the maximum corresponding statistic value of a window of 5 positions covering that modification. For example, if pos 20 was modified, the corresponding statistic for position 20 was the maximum value for positions 18, 19, 20, 21 and 22. Then, we removed the 2 upstream and downstream values from being classified. So, positions 18, 19, 21 and 22 will not be classified as true negatives or false positives. This approach allows for uncertainty of where the modification is within a small window of 5 positions and greatly reduces the false positive rate. As seen in Figure 1—figure supplement 1C, D, by decreasing the stringency of our accuracy metric we see a marked improvement of modification detection to an AUROC of 0.984 for 18 S and 0.986 for 25 S.
 
-## Supplementary note
+#### Supplementary note
 
 The most accurate prediction of partially modified, closely spaced clusters of nucleotides would employ models trained with all examples of such clusters, however such a collection of samples for training does not exist and would be prohibitively expensive to create. Instead, we rely on prior information, experimental design expectations and signal comparisons to determine confidence in signalAlign predictions of modification clusters. Specifically, for high interest modification clusters, we validate modification profiles for clusters found using signalAlign by using nanopore signal patterns and clustering the underlying event means (see Materials and methods) (Ding et al., 2020). In Figure 1—figure supplement 4, we focus on interesting patterns of modifications positions located in the peptidyl transfer center (PTC) (Um2921, Gm2922, Ψ2923) and positions targeted by U24 (Cm1437, Am1449, Gm1450).
 

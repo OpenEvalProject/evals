@@ -14,7 +14,7 @@
 
 ## Abstract
 
-Upon exposure to harmful microorganisms, hosts engage in protective molecular and behavioral immune responses, both of which are ultimately regulated by the nervous system. Using the nematode Caenorhabditis elegans , we show that ingestion of Enterococcus faecalis leads to a fast pathogen avoidance behavior that results in aversive learning. We have identified multiple sensory mechanisms involved in the regulation of avoidance of E. faecalis. The G-protein coupled receptor NPR-1-dependent oxygen-sensing pathway opposes this avoidance behavior, while an ASE neuron-dependent pathway and an AWB and AWC neuron-dependent pathway are directly required for avoidance. Colonization of the anterior part of the intestine by E. faecalis leads to AWB and AWC mediated olfactory aversive learning. Finally, two transient receptor potential melastatin (TRPM) channels, GON-2 and GTL-2, mediate this newly described rapid pathogen avoidance. These results suggest a mechanism by which TRPM channels may sense the intestinal distension caused by bacterial colonization to elicit pathogen avoidance and aversive learning by detecting changes in host physiology.
+Upon exposure to harmful microorganisms, hosts engage in protective molecular and behavioral immune responses, both of which are ultimately regulated by the nervous system. Using the nematode Caenorhabditis elegans, we show that ingestion of Enterococcus faecalis leads to a fast pathogen avoidance behavior that results in aversive learning. We have identified multiple sensory mechanisms involved in the regulation of avoidance of E. faecalis. The G-protein coupled receptor NPR-1-dependent oxygen-sensing pathway opposes this avoidance behavior, while an ASE neuron-dependent pathway and an AWB and AWC neuron-dependent pathway are directly required for avoidance. Colonization of the anterior part of the intestine by E. faecalis leads to AWB and AWC mediated olfactory aversive learning. Finally, two transient receptor potential melastatin (TRPM) channels, GON-2 and GTL-2, mediate this newly described rapid pathogen avoidance. These results suggest a mechanism by which TRPM channels may sense the intestinal distension caused by bacterial colonization to elicit pathogen avoidance and aversive learning by detecting changes in host physiology.
 
 ## Introduction
 
@@ -26,27 +26,63 @@ Here, we present evidence that C. elegans avoids Enterococcus faecalis faster th
 
 ## Results
 
-## E. faecalis elicits fast avoidance in C. elegans
+### E. faecalis elicits fast avoidance in C. elegans
 
 C. elegans is a free-living nematode that feeds on organic material rich in microorganisms, and therefore frequently encounters pathogenic bacteria. It has developed behavioral strategies to minimize exposure to these threats. For example, it avoids the pathogenic P. aeruginosa bacteria slowly, taking between 12 and 24 hr to execute aerotactic and olfactory aversive learning processes depending on the bacterial growth conditions used (Singh and Aballay, 2019a; Zhang et al., 2005). In contrast, we previously reported that animals quickly avoid the lawns of the Gram-positive pathogens E. faecalis, E. faecium, and S. aureus (Singh and Aballay, 2019b). Examining this in more detail, we found that animals displayed strong, fast avoidance of monoaxenic lawns of E. faecalis, E. faecium, or S. aureus grown on brain–heart infusion (BHI) media (Figure 1A,B, Figure 1—figure supplement 1). While population avoidance levels peaked at 4 hr for E. faecalis, wild-type animals first leave E. faecalis lawns at around 19 min on average (Figure 1C). Interestingly, we observed animals frequently exiting and entering the bacterial lawns over time. Quantification of these events revealed a slight imbalance favoring exiting events as early as 1 hr, with this difference growing larger in the 3–4 hr window due to a decrease in the entry events (Figure 1D).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65935/elife-65935-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic of avoidance assays (top) and representative photomicrographs (bottom) of C. elegans on lawns of E. coli OP50, P. aeruginosa PA14, or E. faecalis OG1RF at 0 hr (left) and 4 hr (right) on BHI media. Individual animals are outlined in red. Scale bar, 5 mm. (B) Occupancy index of N2 animals after 4 hr of incubation on E. coli, P. aeruginosa, E. faecalis, E. faecium, or S. aureus. One-way ANOVA with subsequent comparison to E. coli as the control group was performed. Occupancy Index = (number of animals on bacterial lawn)/(total number of animals). (C) Individual animals were tracked on lawns of E. faecalis and the time that they first left the lawn after transfer was recorded. Wild-type (WT, N2 Bristol) animals showed an average first leave time of 19.20 min while tax-2(p671) animals showed an average first leave time of 61.98 min. An unpaired t-test between the groups was performed. (D) N2 animals on standard avoidance assays plates with E. faecalis were observed for 10 min during two different time windows (0–1 hr and 3–4 hr) and the number of times the animals left and entered the bacteria lawns was counted. One-way ANOVA with subsequent comparisons between all groups was performed. (E) Occupancy index of N2 animals after 24 hr incubation on P. aeruginosa PA14 lawns or E. coli OP50 lawns supplemented with isolated total RNA from E. coli (E.c. RNA), P. aeruginosa (P.a. RNA), or E. faecalis (E.f. RNA). One-way ANOVA with subsequent comparison to E. coli RNA as the control group was performed.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65935/elife-65935-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Occupancy index time course of N2 animals on either E. faecalis, E. faecium, or S. aureus. N = 3 for each point. Points represent the mean. (B) Response index of N2 animals to dry drops of E. coli, E. faecalis, E. faecium, BHI, LB, or 0.6 mM SDS buffer. Response Index = number of responses/total number of drops.
+
 The fast exiting events induced by E. faecalis are reminiscent of a C. elegans rapid aversive behavior elicited by exposure to a dry drop of dodecanoic acid, a toxin secreted by Streptomyces (Tran et al., 2017). However, implementing this dry-drop assay with E. faecalis or E. faecium did not induce an aversive response (Figure 1—figure supplement 1), indicating that direct contact with live replicating bacteria is required for the rapid avoidance of E. faecalis or E. faecium. Rapid aversion alone also cannot explain the re-entry events. Instead, it is likely that there is a balance of attraction and aversion to E. faecalis that changes over the course of exposure. Thus, the animals learn to avoid E. faecalis quickly after exposure. This process likely involves sensory pathways, as animals with loss-of-function mutations in tax-2, a subunit of a cGMP-gated-ion-channel important for sensory neuron function (Coburn and Bargmann, 1996), show slowed avoidance (Figure 1C). Because it has recently been suggested that the sensation of a bacterial sRNAs is at least partly responsible for learned P. aeruginosa avoidance (Kaletsky et al., 2020), we examined whether RNA from E. faecalis may also elicit avoidance. Unlike RNA from P. aeruginosa, RNA from E. faecalis fails to induce avoidance (Figure 1E). The fact that exposure to bacterial sRNAs only accounts for ~25% of the avoidance of P. aeruginosa, and that they have no role in avoidance of E. faecalis, suggests that another pathway is required to induce pathogen avoidance.
 
-## Avoidance of E. faecalis follows anterior intestinal distention and is independent of virulence
+### Avoidance of E. faecalis follows anterior intestinal distention and is independent of virulence
 
 Two other potential pathways for induction of avoidance are sensation of intestinal distention or bacterial metabolites. The bacterial metabolite serrawettin W2 is responsible for the avoidance of S. marcescens (Pradel et al., 2007). Even though secondary metabolites phenazine-1-carboxamide and pyochelin produced by P. aeruginosa are insufficient for the elicitation of pathogen avoidance (Singh and Aballay, 2019a), they are sensed by C. elegans as they elicit induction of DAF-7/TGF-β in ASJ neurons (Meisel et al., 2014). However, E. faecalis does not increase expression of DAF-7 in the ASJ neurons (Meisel et al., 2014), further strengthening the idea that direct contact with this pathogen rather than metabolite sensing induces avoidance.
 
 To determine whether intestinal distention plays a role in avoidance of E. faecalis, we measured the diameter of the intestinal lumen of animals fed either E. coli, P. aeruginosa, or E. faecalis grown on BHI. There was significant expansion of the anterior part of the intestine of animals feeding on E. faecalis compared to E. coli even at 1 hr, with distention persisting at 4 hr (Figure 2A,B). The medial part of the intestine was not significantly distended at 1 hr compared to animals fed E. coli, but was distended at 2 and 4 hr. The anterior part of the intestine was slightly distended in animals feeding on P. aeruginosa compared to E. coli at 4 hr, but was otherwise not distended. Both parts of the intestine, but especially the anterior portion, were filled with live E. faecalis, as determined through the use of an E. faecalis strain expressing GFP, while the intestine of animals fed E. coli or P. aeruginosa expressing GFP were relatively empty and not distended (Figure 2C). Because we first measured the anterior intestinal diameter at 1 hr, it was not clear whether distention preceded avoidance or vice versa. To explore this, we tracked animals until they left a lawn of E. faecalis and measured their anterior intestines (Figure 2—figure supplement 1). These animals had significantly larger anterior intestines compared to animals that remained on the E. faecalis lawn. It is therefore likely that fast accumulation of E. faecalis in the anterior intestine induces an aversive response to the pathogen, leading to avoidance.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65935/elife-65935-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative photomicrographs of animals at 4 hr on BHI media with E. coli (left), P. aeruginosa (middle), or E. faecalis (right). Red arrows point to the borders of the anterior intestine while blue arrows point the borders of the medial intestine. (B) Quantification of the anterior (top) and medial (bottom) intestinal lumen diameter of animals on E. coli, P. aeruginosa, or E. faecalis at 1, 2, and 4 hr. Two-way ANOVA was performed with comparison to the E. coli group at each time point. For E. coli, N = 11, 13, and 17 at 1, 2, and 4 hr, respectively. For P. aeruginosa, N = 18, 14, and 18. For E. faecalis, N = 13, 18, and 16. Points are the mean of each group and error bars are standard deviation. (C) Representative photomicrographs with fluorescent and brightfield images merged of E. coli, P. aeruginosa, and E. faecalis expressing GFP in the intestinal lumen of animals at 4 hr. (D) Occupancy index on E. faecalis at 4 hr of WT animals compared to either RNAi-mediated knockdown of nol-6 or a loss-of-function mutation in nol-6. One-way ANOVA was performed with subsequent comparison to the WT group as the control. (E) A representative photomicrograph of a nol-6(ac1) animal after exposure to E. faecalis for 4 hr. Red arrows point to the borders of the anterior intestine, and blue arrows point to the borders of the medial intestine. (F) Quantification of anterior and medial intestinal lumen diameter of nol-6(ac1) animals at 0 and 4 hr on E. faecalis. Two-way ANOVA was performed with comparison to the 0 hr groups for both anterior and medial quantifications.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65935/elife-65935-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative photomicrographs of wild-type animals taken from inside (top) or outside (bottom) a lawn of E. faecalis. Outside animals were picked immediately after they left the lawn, with animals inside the lawn picked at the same time. Scale bar, 50 μm. (B) Quantification of anterior intestinal diameter of animals as represented in (A). An unpaired t-test was performed.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65935/elife-65935-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Quantification of anterior and medial intestinal lumen diameter of nol-6(ac1) animals after 0 and 24 hr on P. aeruginosa. (B) Occupancy index of WT and nol-6(ac1) animals on P. aeruginosa at 24 hr. An unpaired t-test was performed. (C) Quantification of anterior intestinal lumen diameter of nol-6 RNAi animals at 0 and 4 hr on E. faecalis. An unpaired t-test was performed. (D) Quantification of medial intestinal lumen diameter of nol-6 RNAi animals at 0 and 4 hr on E. faecalis. An unpaired t-test was performed.
+
 RNA interference (RNAi)-mediated knockdown of nol-6, a nucleolar RNA-associated protein, reduces colonization and distention of the intestine by microbial pathogens (Fuhrman et al., 2009). Furthermore, knockdown of nol-6 delays avoidance of P. aeruginosa by delaying intestinal distention (Singh and Aballay, 2019a; Figure 2—figure supplement 2). Therefore, we tested both nol-6 RNAi and a nol-6 loss-of-function (lf) mutant (nol-6(ac1)) for avoidance of E. faecalis. Avoidance for both the mutant and nol-6 RNAi remained at wild-type levels (Figure 2D). Interestingly, while anterior intestinal distension was observed in both nol-6(ac1) and nol-6 RNAi animals fed E. faecalis at 4 hr, the middle part of the intestine did not display significant distention (Figure 2E,F, Figure 2—figure supplement 2). This suggests that the anterior, but not medial, intestinal distention triggers avoidance of E. faecalis.
 
 To determine whether bacterial virulence is required for anterior intestine distention-induced avoidance of E. faecalis, we used a strain of E. faecalis lacking the fsrB gene (E. faecalis ΔfsrB), a gene important for quorum sensing, which displays significantly reduced virulence across multiple animal models (Garsin et al., 2001; Mylonakis et al., 2002; Sifri et al., 2002). Surprisingly, this avirulent strain also elicits avoidance (Figure 3A) and causes anterior intestinal distention (Figure 3B). Lending further evidence to the notion that virulence plays no role in avoidance, E. faecium, a related enterococcal species that is non-pathogenic to C. elegans (Garsin et al., 2001; Yuen and Ausubel, 2018), also elicits avoidance (Figure 1B). While E. faecium is non-pathogenic to C. elegans, it does cause an innate immune response (Yuen and Ausubel, 2018), raising the possibility that an early immune response may be responsible for alerting the animal to avoid E. faecalis and related species upon ingestion.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/65935/elife-65935-fig3-v2.jpg)
+
+**Figure 3.:** (A) Occupancy index of N2 animals on virulent E. faecalis OG1RF and avirulent E. faecalis OG1RF ΔfsrB at 4 hr. An unpaired t-test was performed. (B) Quantification of anterior intestinal diameter of N2 animals on E. faecalis strain OG1RF or OG1RF ΔfsrB at 4 hr. An unpaired t-test was performed. (C) Representative fluorescent micrographs of clec-60p::GFP (top) and ilys-3p::GFP (bottom) animals at 0, 4, and 24 hr on E. faecalis. Scale bar, 200 µm. (D) Quantification of clec-60::GFP at 0, 4, and 24 hr on E. faecalis. One-way ANOVA was performed with comparisons to the 0 hr group as the control. (E) Quantification of ilys-3p::GFP at 0, 4, and 24 hr on E. faecalis. One-way ANOVA was performed with comparisons to the 0 hr group as the control.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65935/elife-65935-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Occupancy index for wild-type, pmk-1(km25), fshr-1(ok778), and bar-1(ga80) on E. faecalis at 4 hr. One-way ANOVA with comparison to the WT group was performed.
+
 Therefore, we examined the in vivo expression of two immune pathway markers, clec-60 (Irazoqui et al., 2010; Yuen and Ausubel, 2018) and ilys-3 (Gravato-Nobre et al., 2016; Irazoqui et al., 2010; Yuen and Ausubel, 2018), to determine whether an immune response was mounted at these early time points. While a later immune response could be observed, there was no evidence of an immune response at time points where early avoidance of E. faecalis is observed (Figure 3C–E). Furthermore, loss-of-function mutants for three key immune signaling genes, pmk-1, fshr-1, and bar-1, displayed wild-type levels of avoidance of E. faecalis (Figure 3—figure supplement 1). Altogether, these results suggest that virulence and immune pathway activation is not necessary for anterior distension and avoidance of E. faecalis, differentiating this avoidance mechanism further from that induced by P. aeruginosa, which requires virulence and intestine-wide distension (Kumar et al., 2019; Singh and Aballay, 2019a; Singh and Aballay, 2019b).
 
-## TAX-2/4 pathways regulate avoidance of E. faecalis and P. aeruginosa
+### TAX-2/4 pathways regulate avoidance of E. faecalis and P. aeruginosa
 
 NPR-1, known to play a role in C. elegans survival and behavior on pathogens (Meisel and Kim, 2014; Reddy et al., 2009; Styer et al., 2008), is responsible for the intestinal distention-induced avoidance behavior on P. aeruginosa. We hypothesized that NPR-1 would also play a role in avoidance of E. faecalis. As a first step to test this, we measured avoidance of E. faecalis in two npr-1 (lf) mutants and found that both displayed decreased avoidance compared to wild-type animals (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/65935/elife-65935-fig4-v2.jpg)
+
+**Figure 4.:** (A) Occupancy index of WT animals compared to npr-1(ad609) and npr-1(ok1447) after 4 hr on E. faecalis. One-way ANOVA with subsequent comparison to WT animals as the control group was performed. (B) Occupancy index of WT, npr-1(ad609) and npr-1(ok1447) on lawns of E. faecalis in atmospheric oxygen or a chamber containing 8% oxygen. Two-way ANOVA with subsequent comparison to WT animals of each respective oxygen condition was performed. (C) Occupancy index of WT, npr-1(ad609), and npr-1(ok1447) in an 8% oxygen chamber at 1, 2, 3, and 4 hr, and 1 hr after removal from the chamber (vertical dashed line). Two-way ANOVA with subsequent comparison at each time point to WT animals was performed. N = 9 for all animals. Points are the mean of each group and error bars are standard deviation. (D) Occupancy index for WT and double loss-of-function mutants for gcy-35, tax-2, or tax-4, and npr-1 on E. faecalis for 4 hr and P. aeruginosa for 24 hr. Two-way ANOVA with subsequent comparisons to WT animals for each bacterium were performed. (E) Diagram of the neurons affected by tax-2(p694) and tax-4(p678). The latter allele covers all tax-2 expressing sensory neurons, while the former covers a subset. (F) Occupancy index for WT and single loss-of-function mutants for tax-2 or tax-4 on E. faecalis for 4 hr and P. aeruginosa for 24 hr. Two-way ANOVA as in with subsequent comparisons to WT animals for each bacterium were performed.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65935/elife-65935-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Occupancy index of WT animals compared to ocr-2(ak47) and osm-9(yz6) animals on E. faecalis at 4 hr. One-way ANOVA with subsequent comparison to WT animals was performed. (B) Occupancy index time course for WT animals compared to ocr-2(ak47) and osm-9(yz6) on E. faecalis. Two-way ANOVA with comparison to WT animals at each time point was performed. N = 9 for each point. Points represent the mean and error bars are the standard deviation.
 
 Inhibition of NPR-1 elicits avoidance of high oxygen (de Bono and Bargmann, 1998; Chang et al., 2006; Rogers et al., 2003), resulting in suppression of P. aeruginosa avoidance (Reddy et al., 2009; Styer et al., 2008), as the bacterial lawns have low oxygen due to microbial metabolism (Reddy et al., 2011). To test whether that is the case with avoidance of E. faecalis, wild-type and npr-1 (lf) animals were placed into hypoxia (8% oxygen) chambers and scored for avoidance. In this low oxygen environment, both npr-1(ad609) and npr-1(ok1447) displayed wild-type levels of avoidance (Figure 4B). Furthermore, when animals were taken out of the low oxygen environment and allowed to roam at atmospheric oxygen levels for 1-hr, wild-type animals remained off the E. faecalis lawns, while both npr-1(lf) strains migrated back onto the lawns (Figure 4C), indicating that hyperoxia avoidance is a more potent aversive stimulus than E. faecalis in npr-1(lf) animals.
 
@@ -54,35 +90,55 @@ Hyperoxia avoidance in npr-1(lf) animals requires the transient receptor potenti
 
 We next tested the role of TAX-2 and TAX-4 in the NPR-1-mediated avoidance of P. aeruginosa using double mutants for tax-2 or tax-4 and npr-1. Surprisingly, and in contrast to avoidance of E. faecalis, tax-2 but not tax-4 mutation suppressed the avoidance of P. aeruginosa of npr-1(ad609) animals (Figure 4D). The discrepancy between the double mutants is that the tax-2(p694) allele used only affects a subset of the tax-2 expressing neurons (Harris et al., 2014). The tax-4(p678) allele, in contrast, affects all tax-4-expressing neurons (Figure 4E). Thus, the neurons affected by the tax-4(p678) allele, but spared by the tax-2(p694) allele, most likely play a role in avoidance of P. aeruginosa independent from the oxygen-sensing pathway. The results from the E. faecalis experiments, on the other hand, suggest that the tax-2(p694) allele covers additional neurons that regulate avoidance of that bacteria. To confirm this, we used single loss-of-function mutants for tax-2 and tax-4, including a strain carrying an allele that affects expression in all tax-2 expressing neurons (tax-2(p671)). We indeed found that all strains tested displayed decreased avoidance of E. faecalis compared to wild-type animals, while only tax-2(p671) and tax-4(p678) mutants displayed decreased avoidance of P. aeruginosa (Figure 4F).
 
-## ASE, AWB, and AWC neurons mediate avoidance of E. faecalis
+### ASE, AWB, and AWC neurons mediate avoidance of E. faecalis
 
 We turned our attention to uncovering the specific neurons in the TAX-2/TAX-4-dependent pathway that regulate avoidance of both E. faecalis and P. aeruginosa. To identify the neuron(s) responsible for E. faecalis avoidance, we employed two strategies. First, we asked whether tax-2 expression in individual neurons would rescue the lack of pathogen avoidance of tax-2(p694) animals. This revealed that tax-2 expression in ASE neurons was sufficient for pathogen avoidance, while tax-2 expression in the AQR, PQR, and URX neurons had no effect (Figure 5A). Second, we used animals lacking ASE neurons and the individual AWB, AWC, and ASI neurons, which are spared by the tax-2(p694) allele. The results confirmed the involvement of ASE neurons in E. faecalis avoidance and showed that AWB and AWC neurons are also necessary (Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/65935/elife-65935-fig5-v2.jpg)
 
-**Figure 5.:** E. faecalis.(A) Occupancy index on E. faecalis at 4 hr for WT, tax-2(p694) and animals with tax-2 expression in ASE neurons (flp-6p::tax-2) or AQR, PQR, or URX neurons (gcy-32p::tax-2) in the tax-2(p694) background. One-way ANOVA with subsequent comparison to wild-type (WT) animals was performed. (B) Occupancy index of WT animals and animals with ablated neurons on E. faecalis at 4 hr and P. aeruginosa at 24 hr. Ablation of sensory neurons either by mutation (che-1(p680) = ASE(−)) or by caspase expression (sra-6p::mCasp-1=ASH(−); gpa-4p::TU#813 + gcy-27p::TU#814 = ASI(−); str-1p::mCasp-1 = AWB(−); ceh-36p::TU#813 + ceh-36p::TU#814 = AWC(−)). Two-way ANOVA with subsequent comparisons to WT groups for each respective bacterium were performed. (C) Occupancy index at 1 hr for WT and ASI(−) animals on P. aeruginosa lawns. Animals were trained on E. coli OP50 lawns supplemented with either E. coli or P. aeruginosa RNA for 24 hr. Two-way ANOVA with subsequent comparison with WT control groups was performed. (D) Choice index after 1 hr for WT and ASI(−) animals choosing between E. coli and P. aeruginosa lawns. Two-way ANOVA with subsequent comparison with WT control groups was performed. Choice Index = (number of animals on E. coli – number of animals on P. aeruginosa)/(number of animals on E. coli + number of animals on P. aeruginosa). (E) Model for avoidance of P. aeruginosa (top) and E. faecalis (bottom) Avoidance of P. aeruginosa depends on both an ASI neuron-mediated bacterial sRNA pathway along with intestine-wide distention. The latter requires the NPR-1-dependent hyperoxia avoidance pathway along with AWB and AWC olfactory neurons. Avoidance of E. faecalis also depends on intestinal distention, though this is confined to the anterior intestine. This anterior intestinal distention-induced avoidance also requires AWB and AWC olfactory neurons, but also requires ASE chemosensory neurons. NPR-1-dependent hyperoxia avoidance opposes E. faecalis avoidance and depends on functional TAX-2/4.
+**Figure 5.:** (A) Occupancy index on E. faecalis at 4 hr for WT, tax-2(p694) and animals with tax-2 expression in ASE neurons (flp-6p::tax-2) or AQR, PQR, or URX neurons (gcy-32p::tax-2) in the tax-2(p694) background. One-way ANOVA with subsequent comparison to wild-type (WT) animals was performed. (B) Occupancy index of WT animals and animals with ablated neurons on E. faecalis at 4 hr and P. aeruginosa at 24 hr. Ablation of sensory neurons either by mutation (che-1(p680) = ASE(−)) or by caspase expression (sra-6p::mCasp-1=ASH(−); gpa-4p::TU#813 + gcy-27p::TU#814 = ASI(−); str-1p::mCasp-1 = AWB(−); ceh-36p::TU#813 + ceh-36p::TU#814 = AWC(−)). Two-way ANOVA with subsequent comparisons to WT groups for each respective bacterium were performed. (C) Occupancy index at 1 hr for WT and ASI(−) animals on P. aeruginosa lawns. Animals were trained on E. coli OP50 lawns supplemented with either E. coli or P. aeruginosa RNA for 24 hr. Two-way ANOVA with subsequent comparison with WT control groups was performed. (D) Choice index after 1 hr for WT and ASI(−) animals choosing between E. coli and P. aeruginosa lawns. Two-way ANOVA with subsequent comparison with WT control groups was performed. Choice Index = (number of animals on E. coli – number of animals on P. aeruginosa)/(number of animals on E. coli + number of animals on P. aeruginosa). (E) Model for avoidance of P. aeruginosa (top) and E. faecalis (bottom) Avoidance of P. aeruginosa depends on both an ASI neuron-mediated bacterial sRNA pathway along with intestine-wide distention. The latter requires the NPR-1-dependent hyperoxia avoidance pathway along with AWB and AWC olfactory neurons. Avoidance of E. faecalis also depends on intestinal distention, though this is confined to the anterior intestine. This anterior intestinal distention-induced avoidance also requires AWB and AWC olfactory neurons, but also requires ASE chemosensory neurons. NPR-1-dependent hyperoxia avoidance opposes E. faecalis avoidance and depends on functional TAX-2/4.
 
 For avoidance of P. aeruginosa, we also employed the genetic ablation strategy, which revealed the requirement of AWB and AWC neurons (Figure 5B). Confirming the results of the tax-2 experiments, ASE neurons were not required for avoidance of P. aeruginosa. We also confirmed a previous report that ASI neurons, but not ASH neurons, are required for avoidance of P. aeruginosa (Cao et al., 2017), while showing that neither is required for avoidance of E. faecalis (Figure 5B). Using a two-choice assay where, unlike the pathogen avoidance assay that only uses P. aeruginosa, animals are given a choice between E. coli and P. aeruginosa, it was shown that ASI neurons respond to P. aeruginosa RNAs by eliciting avoidance (Kaletsky et al., 2020). Using both avoidance and choice assays, we found that animals lacking ASI neurons fail to avoid P. aeruginosa after total RNA exposure (Figure 5C,D). These results are consistent with the idea that ASI neurons are capable of sensing P. aeruginosa RNAs and that E. faecalis RNAs do not induce avoidance (Figure 1E). Altogether, these results suggest that regulation of behavioral immunity is pathogen specific (Figure 5E).
 
-## AWB and AWC neurons are necessary for aversive olfactory learning following ingestion of E. faecalis
+### AWB and AWC neurons are necessary for aversive olfactory learning following ingestion of E. faecalis
 
 Our data suggested that avoidance of E. faecalis represented an aversive learning process (Figure 1D), but we tested this directly. AWB and AWC neurons are known to play a role in odor preference and olfactory aversive learning in C. elegans in the context of P. aeruginosa (Ha et al., 2010; Harris et al., 2014). Because AWB and AWC neurons are also involved in avoidance of E. faecalis, we hypothesized that odor preference and olfactory aversive learning may also play a role in avoidance of E. faecalis. We first set out to establish the naïve preference of C. elegans when given the choice between E. coli and E. faecalis. We used a two-choice assay in which animals were able to roam for 1 hr on test plates containing E. coli and E. faecalis lawns on opposite sides of the plates before scoring animals based on lawn occupancy. Under this condition, animals showed a preference for E. coli over E. faecalis; however, if animals were instead paralyzed upon approaching the lawns, they displayed a preference for E. faecalis (Figure 6A). We hypothesized that there is an initial attraction to E. faecalis that is quickly overcome after feeding on it, such that animals go toward the familiar E. coli lawn instead. Paralyzing animals on lawn arrival captures the initial choice, while allowing them to freely roam captures the aversive learning behavior. We further hypothesized that this attraction-aversion dynamic was at least partly olfactory, based on neuron ablation results (Figure 5), and evidence that tax-2(lf) leads to significantly delayed lawn exiting (Figure 1C).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/65935/elife-65935-fig6-v2.jpg)
 
-**Figure 6.:** E. faecalis.(A) Schematic of the choice assay (top) and quantification (bottom) of choice index for N2 animals choosing between E. coli and E. faecalis lawns and either free to move for 1 hr (Free to move) or paralyzed upon arrival at a bacterial lawn (Paralyzed). An unpaired t-test between the groups was performed. (B) Schematic of the lid choice assay (top) and quantification of naïve and trained choice index (bottom, left) and learning index (bottom, right) for WT, tax-4(p678), tax-2(p671), tax-2(p694), AWB(−), and AWC(−) animals. To train animals, young adult animals were placed on E. faecalis lawns for 4 hr before the choice assay was performed. For choice index, two-way ANOVA with subsequent comparisons to the naïve and trained WT groups as controls were performed. For learning index, one-way ANOVA with comparison to the WT group as control was performed. (C) Schematic of the paired olfactory choice assay. (D) Quantification of choice index for naïve and trained WT, AWC(−), and AWB(−) animals, choosing between 1:200 benzaldehyde and ethanol. Two-way ANOVA with subsequent comparisons between naïve and trained groups and between WT and neuron ablated animals was performed. (E) Quantification of the learning index for WT, AWC(−), and AWB(−) animals from (D). One-way ANOVA with comparison to the WT group as control was performed. Learning index = (naïve choice index) – (trained choice index).
+**Figure 6.:** (A) Schematic of the choice assay (top) and quantification (bottom) of choice index for N2 animals choosing between E. coli and E. faecalis lawns and either free to move for 1 hr (Free to move) or paralyzed upon arrival at a bacterial lawn (Paralyzed). An unpaired t-test between the groups was performed. (B) Schematic of the lid choice assay (top) and quantification of naïve and trained choice index (bottom, left) and learning index (bottom, right) for WT, tax-4(p678), tax-2(p671), tax-2(p694), AWB(−), and AWC(−) animals. To train animals, young adult animals were placed on E. faecalis lawns for 4 hr before the choice assay was performed. For choice index, two-way ANOVA with subsequent comparisons to the naïve and trained WT groups as controls were performed. For learning index, one-way ANOVA with comparison to the WT group as control was performed. (C) Schematic of the paired olfactory choice assay. (D) Quantification of choice index for naïve and trained WT, AWC(−), and AWB(−) animals, choosing between 1:200 benzaldehyde and ethanol. Two-way ANOVA with subsequent comparisons between naïve and trained groups and between WT and neuron ablated animals was performed. (E) Quantification of the learning index for WT, AWC(−), and AWB(−) animals from (D). One-way ANOVA with comparison to the WT group as control was performed. Learning index = (naïve choice index) – (trained choice index).
 
 To directly test the idea of an initial odor attraction, we modified the choice assay by attaching plugs of agar with bacterial lawns on opposite sides of the lids of empty test plates (Figure 6B, schematic), preventing the animals from getting direct contact with the bacteria. We then placed the anesthetic sodium azide on the test plate surface underneath the bacteria plugs and placed animals in the center of the plate, allowing them to migrate toward one side or the other. This revealed a naïve preference for the odor of E. faecalis over E. coli (Figure 6B, left). Both tax-2(p671) and tax-4(p678) mutants displayed decreased naïve odor preferences but tax-2(p694) did not. This result is consistent with the idea that the tax-2 and tax-4 expressing neurons AWB and AWC are responsible for establishing the naïve odor preference. Indeed, ablating them also resulted in a decreased preference (Figure 6B, left). We next asked whether trained animals that were allowed to ingest E. faecalis would switch their odor preference. The animals were trained by exposing them to E. faecalis for 4 hr using the same plate setup that had been used for the avoidance assays. Then, the trained animals were transferred to the lid-choice testing plates. A marked shift in preference was observed for trained wild-type animals that was not seen in tax-2(p671), tax-4(p678), or AWB- and AWC-ablated strains (Figure 6B, left). The tax-2(p694) mutants, on the other hand, behaved like wild-type animals. The learning index for each strain also highlights that aversive olfactory learning takes place in wild-type and tax-2(p694) animals but not in tax-2(p671) or tax-4(p678) mutants or AWB- and AWC-ablated strains (Figure 6B, right). Thus, the tax-2 and tax-4 expressing AWB and AWC neurons are necessary both for establishing a naïve preference and for aversive olfactory learning following ingestion of E. faecalis over a period of 4 hr.
 
 To strengthen the idea that avoidance of E. faecalis involves aversive learning, we paired an attractive odorant, benzaldehyde, with lawns of E. faecalis and exposed animals to this pairing for 4 hr (Figure 6C). Animals were then transferred to a choice plate, spotted with the attractive odorant on one side and ethanol on the other, and were allowed to roam for 1 hr before scoring. Results were compared to a naïve group that had no exposure to the odorant. Naïve animals displayed a strong attraction to benzaldehyde that was significantly reduced upon training (Figure 6D,E). As benzaldehyde is primarily sensed by AWC neurons, ablation of these cells led to a decrease in naïve attraction, with training leading to no additional decrease. Interestingly, animals with ablated AWB neurons displayed wild-type levels of naïve attraction but did not show a decrease in attraction upon training, indicating that AWB neurons may be required for this aversive learning process.
 
-## The TRPM channels gon-2 and gtl-2 are required for distention-induced pathogen avoidance
+### The TRPM channels gon-2 and gtl-2 are required for distention-induced pathogen avoidance
 
 It remains unclear how C. elegans senses intestinal distention in order to execute pathogen avoidance, either for P. aeruginosa or for E. faecalis. Because TRP channels could be mechanoreceptors (Xiao and Xu, 2011) capable of sensing the intestinal distension caused by microbial colonization, we screened animals with loss-of-function mutations in five TRP-encoding genes for avoidance of E. faecalis and found that two members of the TRPM subfamily, gon-2 and gtl-2, negatively affected avoidance of E. faecalis (Figure 7—figure supplement 1). Because gon-2 mutants are known to have abnormal gonad development, and the germline has previously been shown to be involved in pathogen avoidance and immunity (Kaletsky et al., 2020; Moore et al., 2019; TeKippe and Aballay, 2010), we tested whether the effect of gon-2(lf) mutations on pathogen avoidance was due to perturbed gonad development. We took advantage of the fact that the Gon phenotype is temperature sensitive (high penetrance at 25°C and low penetrance at 15°C) and compared avoidance results for both E. faecalis and P. aeruginosa at both temperatures. For P. aeruginosa, gon-2(lf) animals raised at 25°C failed to avoid, while animals raised at 15°C avoided like wild-type animals (Figure 7A,B). For E. faecalis, gon-2(lf) animals failed to avoid at both temperatures (Figure 7A,B), suggesting that the germline does not play a role in the control of avoidance of this pathogen. Furthermore, glp-1(e2141) mutants, which lack most germline cells due to defects in mitotic and meiotic division (Austin and Kimble, 1987; Crittenden et al., 1994), behave similarly to gon-2(lf) mutant animals on both pathogens (Figure 7A,B). This suggests that gon-2(lf) animals fail to avoid P. aeruginosa specifically because of a lack of gonad development, while for E. faecalis the effect on avoidance is independent of the germline. Unlike gon-2(lf), gtl-2(n2618) animals failed to avoid E. faecalis, but not P. aeruginosa (Figure 7A,B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/65935/elife-65935-fig7-v2.jpg)
+
+**Figure 7.:** (A) Occupancy index for wild-type, gtl-2(n2618), gon-2(q362), gon-2(q388), and glp-1(e2141) animals on E. faecalis at 4 hr or P. aeruginosa at 24 hr. Animals were grown to the young adult stage at 15°C. Two-way ANOVA with comparisons to the respective WT group for each bacterium were performed. (B) Occupancy index for wild-type, gtl-2(n2618), gon-2(q362), gon-2(q388), and glp-1(e2141) animals on E. faecalis at 4 hr or P. aeruginosa at 24 hr. Animals were grown to the young adult stage at 25°C. Two-way ANOVA with comparisons to the respective WT group for each bacterium were performed. (C) Occupancy index for wild-type, gon-2(q388), self-promoter rescue (gon-2(q388);gon-2p::gon-2), and intestine specific rescue (gon-2(q388);ges-1p::gon-2) animals on E. faecalis at 4 hr. One-way ANOVA with comparison to the wild-type group as control was performed. (D) Occupancy index for wild-type, gtl-2(tm1463), self-promoter rescue (gtl-2(tm1463);gtl-2p::gtl-2), and excretory cell specific rescue (gtl-2(tm1463);sulp-4p::gtl-2) animals on E. faecalis at 4 hr. One-way ANOVA with comparison to the wild-type group as control was performed.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/65935/elife-65935-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Occupancy index of WT animals on E. faecalis at 4 hr compared to five different TRP channel mutants: gon-2(q362), gon-2(q388), gtl-2(n2618), and gtl-2(tm1643). One-way ANOVA with subsequent comparison to WT animals was performed.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/65935/elife-65935-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Representative micrographs of each rescue strain are shown. Top left: gon-2(q388); gon-2p::gon-2(cDNA)::SL2::GFP. Bottom left: gon-2(388);ges-1p::gon-2(cDNA)::SL2::GFP. Top right: gtl-2(tm1463);gtl-2p::gtl-2(cDNA)::SL2::GFP. Bottom right: gtl-2(tm1463);sulp-4p::gtl-2(cDNA)::SL2::GFP. Scale bars in order: 50 μm, 50 μm, 50 μm, and 10 μm.
 
 In addition to gonadal expression, gon-2 is known to exhibit intestinal expression (Teramoto et al., 2005). To confirm this, we generated a strain expressing gon-2::GFP under the gon-2 promoter, which revealed expression in the gonads and intestine (Figure 7—figure supplement 2). We therefore hypothesized that driving gon-2 expression to the intestines of gon-2(q388) mutants would rescue the pathogen avoidance defect of the mutants. As shown in Figure 7C, gon-2(q388) animals expressing gon-2 under its own promoter or an intestine specific promoter (ges-1p) displayed wild-type levels of avoidance of E. faecalis. We also sought to uncover the site of action of gtl-2 for the pathogen avoidance behavior. It was previously reported that gtl-2 is functionally expressed in the excretory cell, with additional expression in the pharyngeal muscle (Kwan et al., 2008; Teramoto et al., 2010). We constructed a strain expressing gtl-2::GFP under its own promoter and found that this was indeed the case (Figure 7—figure supplement 2). Furthermore, gtl-2(tm1463) mutants expressing gtl-2 under its own promoter or under a promoter that drives expression only to the excretory cell (sulp-4p) displayed wild-type levels of avoidance (Figure 7D). Together, these results indicate that gon-2 expression in the intestine and gtl-2 expression in the excretory cell is sufficient for C. elegans avoidance of E. faecalis.
 
 Because gon-2(lf) and gtl-2(lf) animals display wild-type levels of anterior intestinal distention (Figure 8—figure supplement 1), we hypothesized that the effect observed in these animals was due to an inability to sense intestinal distention either directly or indirectly. It was previously shown that knockdown of aex-5 leads to defects in the defecation motor program and subsequent intestinal distention by the accumulation of bacteria, resulting in increased avoidance of even non-pathogenic E. coli (Singh and Aballay, 2019a). Interestingly, gon-2(lf) mutants failed to exhibit such avoidance on E. coli HT115 after knockdown of aex-5, while gtl-2(n2618) mutants behaved like wild-type animals (Figure 8A). These results are consistent with the different types of distention caused by E. faecalis and P. aeruginosa, with the former causing a more severe but localized distention of the anterior intestine and the latter causing a distention along the entire length of the intestine, which seems to require the germline to elicit avoidance. As shown in Figure 8B, both gon-2 and gtl-2 mutants suppressed the aex-5 knockdown avoidance phenotype on E. faecalis, suggesting that both TRPM channels might be involved in the process of sensing the anterior intestinal distention caused by E. faecalis. However, TRPM channels display many distinct functions in various settings, including the absorption of calcium and magnesium ions by TRPM6 and TRPM7 in the human colon, TRPM7-mediated pacemaker activity of interstitial cells of Cajal, and colonic nociception by mouse TRPM8 (Holzer, 2011; Mueller-Tribbensee et al., 2015). Thus, it remains unclear how exactly GON-2 and GTL-2 function in pathogen avoidance.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/65935/elife-65935-fig8-v2.jpg)
+
+**Figure 8.:** (A) Occupancy index for WT, gon-2(q388), and gtl-2(n2618) animals with either RNAi-mediated knockdown of aex-5 or an empty vector (EV) control on the E. coli HT115 lawns these animals were raised on. Two-way ANOVA with subsequent comparison between all groups was performed. (B) Occupancy index for WT, gon-2(q388), and gtl-2(n2618) animals with either RNAi-mediated knockdown of aex-5 or an EV control on E. faecalis lawns at 4 hr. Two-way ANOVA with subsequent comparison between all groups was performed. (C) Choice index for wild-type, gtl-2(n2618), gtl-2(tm1463), gon-2(q362), and gon-2(q388) animals between E. faecalis and E. coli using the lid choice assay. Two-way ANOVA with comparison to the naïve and trained WT group was performed. (D) Quantification of learning index for animals from (C). One-way ANOVA with comparison to the WT group was performed. (E) Model for avoidance of P. aeruginosa (top) and E. faecalis (bottom), as in Figure 5E, with the addition of a germline role in avoidance of P. aeruginosa, GON-2 and GTL-2 regulation of avoidance of E. faecalis, and the contribution of odor sensing pathways to avoidance of both bacteria.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/65935/elife-65935-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A–C) Representative photomicrographs of the anterior intestines of gtl-2(n2618), gtl-2(tm1463), and gon-2(q388) animals after 4 hr on E. faecalis. Scale bar, 50 μm. (D) Quantification of the anterior intestinal diameters of animals represented in (A–C). One-way ANOVA with subsequent comparison to WT animals was performed.
 
 If these TRPM channels are somewhat involved in sensing anterior intestinal distention caused by E. faecalis infection, their loss should leave naïve olfactory preferences to E. faecalis intact while diminishing negative associative learning. Testing gon-2(lf) and gtl-2(lf) mutants on olfactory choice assays with and without prior exposure to E. faecalis revealed that this was indeed the case (Figure 8C,D). All gon-2 and gtl-2 mutants displayed wild-type levels of naïve preference to E. faecalis versus E. coli. After training by exposure to E. faecalis for 4 hr, gon-2(lf) and gtl-2(lf) mutants displayed significantly reduced preference switching compared to wild-type animals (Figure 8C). This results in significantly lower learning indices for the mutants (Figure 8D). Altogether, these findings indicate that GON-2 and GTL-2 are required for the learned avoidance of E. faecalis, though their exact mechanistic role remains to be determined (Figure 8E).
 
@@ -100,58 +156,429 @@ The discovery of gon-2 and gtl-2 playing a role in pathogen avoidance is novel. 
 
 ## Materials and methods
 
-## Bacterial strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>OP50</td>
+      <td>Caenorhabditis Genetics Center (CGC)</td>
+      <td>OP50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>OP50-GFP</td>
+      <td>CGC</td>
+      <td>OP50-GFP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>HT115</td>
+      <td>Source BioScience</td>
+      <td>HT115</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Pseudomonas aeruginosa)</td>
+      <td>PA14</td>
+      <td>Frederick M. Ausubel laboratory</td>
+      <td>PA14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (P. aeruginosa)</td>
+      <td>PA14-GFP</td>
+      <td>Frederick M. Ausubel laboratory</td>
+      <td>PA14-GFP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Enterococcus faecalis)</td>
+      <td>OG1RF</td>
+      <td>Danielle A. Garsin laboratory</td>
+      <td>OG1RF</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. faecalis)</td>
+      <td>OG1RF-GFP</td>
+      <td>Danielle A. Garsin laboratory</td>
+      <td>OG1RF-GFP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. faecalis)</td>
+      <td>OG1RF ΔfsrB</td>
+      <td>Danielle A. Garsin laboratory</td>
+      <td>OG1RF ΔfsrB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. faecium)</td>
+      <td>E007</td>
+      <td>Danielle A. Garsin laboratory</td>
+      <td>E007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Staphylococcus aureus)</td>
+      <td>NCTC8325</td>
+      <td>National Collection of Type Cultures</td>
+      <td>NCTC8325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>N2 Bristol</td>
+      <td>CGC</td>
+      <td>N2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>npr-1(ad609)</td>
+      <td>CGC</td>
+      <td>DA609</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>npr-1(ok1447)</td>
+      <td>CGC</td>
+      <td>RB1330</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>ocr-2(ak47)</td>
+      <td>CGC</td>
+      <td>CX4544</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>osm-9(ky10)</td>
+      <td>CGC</td>
+      <td>CX10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>gcy-35(ok769); npr-1(ad609)</td>
+      <td>Aballay laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>tax-2(p694); npr-1(ad609)</td>
+      <td>Aballay laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>tax-4(p678); npr-1(ad609)</td>
+      <td>Aballay laboratory</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>tax-2(p671)</td>
+      <td>CGC</td>
+      <td>PR671</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>tax-2(p694)</td>
+      <td>CGC</td>
+      <td>PR694</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>tax-4(p678)</td>
+      <td>CGC</td>
+      <td>PR678</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>tax-2(p694); lin-15 and lin-15A(n765); dbEx723[gcy-32p::tax-2(cDNA)::SL2::GFP + lin-15(+)]</td>
+      <td>CGC</td>
+      <td>AX2159</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>tax-2(p694); lin-15 and lin-15A(n765); dbEx724[flp-6p::tax-2(cDNA)::SL2::GFP + lin-15(+)]</td>
+      <td>CGC</td>
+      <td>AX2161</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>che-1(p680)</td>
+      <td>CGC</td>
+      <td>PR680</td>
+      <td>ASE(−)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>peIs1713 [sra-6p::mCasp-1+unc-122p::mCherry]</td>
+      <td>CGC</td>
+      <td>JN1713</td>
+      <td>ASH(−)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>oyIs84 [gpa-4p::TU#813 + gcy-27p::TU#814 + gcy-27p::GFP + unc-122p::DsRed]</td>
+      <td>CGC</td>
+      <td>PY7505</td>
+      <td>ASI(−)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>peIs1715 [str-1p::mCasp-1+unc-122p::GFP]</td>
+      <td>CGC</td>
+      <td>JN1715</td>
+      <td>AWB(−)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>oyIs85 [ceh-36p::TU#813 + ceh-36p::TU#814 + srtx-1p::GFP + unc-122p::DsRed]</td>
+      <td>CGC</td>
+      <td>PY7502</td>
+      <td>AWC(−)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>agIs26 [clec-60p::GFP + myo-2p::mCherry]</td>
+      <td>CGC</td>
+      <td>JIN810</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-119(ed3); eEx650 [ilys-3p::GFP + unc-119(+)]</td>
+      <td>CGC</td>
+      <td>CB6710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>pmk-1(km25)</td>
+      <td>CGC</td>
+      <td>KU25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>fshr-1(ok778)</td>
+      <td>CGC</td>
+      <td>RB911</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>bar-1(ga80)</td>
+      <td>CGC</td>
+      <td>EW15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>nol-6(ac1)</td>
+      <td>CGC</td>
+      <td>AY1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>gtl-2(n2618)</td>
+      <td>CGC</td>
+      <td>CZ9957</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>gon-2(q362)</td>
+      <td>CGC</td>
+      <td>EJ26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>gon-2(q388)</td>
+      <td>CGC</td>
+      <td>EJ1158</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>glp-1(e2141)</td>
+      <td>CGC</td>
+      <td>CB4037</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>gtl-1(ok375)</td>
+      <td>CGC</td>
+      <td>VC244</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>gtl-2(tm463)</td>
+      <td>CGC</td>
+      <td>LH202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>trpa-1(ok999)</td>
+      <td>CGC</td>
+      <td>RB1052</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>trpa-2(ok3189)</td>
+      <td>CGC</td>
+      <td>TQ233</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>gon-2(q388); gon-2p::gon-2(cDNA)::SL2::GFP</td>
+      <td>This Study</td>
+      <td>AY157</td>
+      <td>gon-2 expression, own promoter</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>gon-2(q388); ges-1p::gon-2(cDNA)::SL2::GFP</td>
+      <td>This Study</td>
+      <td>AY158</td>
+      <td>gon-2 expression, intestine specific promoter</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>gtl-2(n2618); gtl-2p::gtl-2(cDNA)::SL2::GFP</td>
+      <td>This Study</td>
+      <td>AY159</td>
+      <td>gtl-2 expression, own promoter</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>gtl-2(n2618); sulp-4p::gtl-2(cDNA)::SL2:GFP</td>
+      <td>This Study</td>
+      <td>AY160</td>
+      <td>gtl-2 expression excretory cell promoter</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad Software</td>
+      <td></td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td></td>
+      <td>https://imagej.nih.gov/ij/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leica LAS v4.6</td>
+      <td>Leica</td>
+      <td></td>
+      <td>https://www.leica-microsystems.com/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hypoxia chamber</td>
+      <td>STEMCELL Technologies</td>
+      <td>CAT# 27310</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains
 
 The following bacterial strains were used: Enterococcus faecalis OG1RF, E. faecalis OG1RF ΔfsrB, E. faecalis OG1RF-GFP, E. faecium E007, Escherichia coli OP50, E. coli OP50-GFP, E. coli HT115(DE3), Pseudomonas aeruginosa PA14, P. aeruginosa PA14-GFP, and Staphylococcus aureus NCTC8325. E. coli and P. aeruginosa bacterial strains were grown in Luria-Bertani (LB) broth at 37°C, while the rest were grown in brain-heart infusion (BHI) broth at 37°C. All sources are listed in the Key Resources Table.
 
-## C. elegans strains and growth conditions
+### C. elegans strains and growth conditions
 
 C. elegans hermaphrodites were maintained on E. coli at 20°C unless otherwise indicated. Bristol N2 was used as the wild-type control unless otherwise indicated. All other strains and their sources are listed in the Key Resources Table.
 
-## Construction of transgenic strains
+### Construction of transgenic strains
 
 The following transgenic lines were generated in this study:
 
 The transgenic strains were generated by micro-injecting the DNA of an expression plasmid (50 ng/μL for the first three and 5 ng/μL for the last), along with a co-injection marker plasmid (coel::RFP, 50 ng/μL). The plasmids were maintained as extrachromosomal arrays. The expression plasmids consisted of a promoter region and full-length cDNA subcloned into pPD95.77 (Fire Lab C. elegans Vector Kit; Addgene) containing an SL2::GFP region (Cao et al., 2017) via SphI-XmaI restriction sites. The gon-2 promoter region used was 3.5 kbp upstream from the gon-2 gene, the ges-1 promoter region used was 3.3 kbp upstream from the ges-1 gene, the gtl-2 promoter region used was 2.9 kbp upstream from the start codon of F54D1.5, and the sulp-4 promoter was 4.4 kbp upstream from the start codon of K12G11.1. Full-length gon-2 and gtl-2 cDNA were 6099 and 4221 bp, respectively.
 
-## RNA interference
+### RNA interference
 
 RNAi was used to generate loss-of-function RNAi phenotypes by feeding nematodes E. coli strain HT115(DE3) expressing double-stranded RNA (dsRNA) homologous to a target gene (Fraser et al., 2000; Timmons and Fire, 1998). RNAi was carried out as described previously (Singh and Aballay, 2017). Briefly, E. coli with the appropriate vectors were grown in LB broth containing ampicillin (100 μg/mL) and tetracycline (12.5 μg/mL) at 37°C overnight and plated onto NGM plates containing 100 μg/mL ampicillin and 3 mM isopropyl β-d-thiogalactoside (RNAi plates). RNAi-expressing bacteria were allowed to grow for 2 days at 20°C. Gravid adults were transferred to RNAi-expressing bacterial lawns and allowed to lay eggs for 5 hr. The gravid adults were removed, and the eggs were allowed to develop at 20°C to young adults for subsequent assays. The RNAi clones were from the Ahringer RNAi library.
 
-## Lawn avoidance assays
+### Lawn avoidance assays
 
 Bacterial cultures were grown by inoculating individual bacterial colonies into 2 mL of either LB or BHI broth and growing them for 5–6 hr on a shaker at 37°C. Then, 20 μL of the culture was plated onto the center of 3.5-cm-diameter BHI or standard slow-killing (SK) plates (modified NGM agar plates [0.35% instead of 0.25% peptone]) as indicated. The plates were then incubated overnight at 37°C. The plates were cooled to room temperature for at least 30 min before seeding with animals. Synchronized young gravid adult hermaphroditic animals grown on E. coli OP50 were transferred outside the indicated bacterial lawns, and the numbers of animals on and off the lawns were counted at the specified times for each experiment. Three 3.5-cm-diameter plates were used per trial in every experiment. Occupancy index was calculated as (Non lawn/Ntotal). For first exiting events, individual animals were monitored and the time that the animal first left the lawn was recorded. For exploratory events, entry and exiting events were recorded for 10 min at 50 min and 3 hr and 50 min after transfer.
 
-## Avoidance assays at 8% oxygen
+### Avoidance assays at 8% oxygen
 
 Avoidance assays as described above were carried out in a hypoxia chamber. Briefly, after young gravid adult hermaphroditic animals were transferred to the avoidance plates, the plates were placed in the hypoxia chamber and the lids of the plates were removed. The chamber was purged with 8% oxygen (balanced with nitrogen) for 5 min at a flow rate of 25 L/min. The chamber was then sealed, and assays were carried out. Control plates were incubated at ambient oxygen.
 
-## Avoidance assays with bacterial RNA
+### Avoidance assays with bacterial RNA
 
 RNA from bacterial pellets was isolated and used for avoidance assays as previously described (Kaletsky et al., 2020). Briefly, bacteria for RNA collection were grown on SK or BHI plates overnight at 37°C. Bacterial lawns were collected from the surface of the plates using 1 mL of M9 buffer and a cell scraper. The resulting suspension was transferred to a 15 mL conical tube. PA14, OG1RF, or OP50 from 15 lawns was pooled in each tube and pelleted at 5000 g for 10 min at 4°C. The supernatant was discarded, and the pellet was resuspended in 1 mL of Trizol LS for every 100 μL of bacterial pellet recovered. The pellet was resuspended by vortexing and subsequently frozen at −80°C until RNA isolation. Two hundred and forty micrograms of total RNA was placed directly onto OP50 lawns and allowed to dry at room temperature before transferring worms over for avoidance assays.
 
-## Aversive training
+### Aversive training
 
 Training plates of 3.5 cm diameter containing either E. coli OP50 on SK agar or E. faecalis OG1RF on BHI agar were made as described above for avoidance assays. For RNA training assays, SK plates containing E. coli OP50 were spotted with the appropriate isolated RNA. Young gravid adult hermaphroditic animals grown on E. coli OP50 were transferred to the training plates and allowed to roam for 4 hr for E. faecalis training or 24 hr for RNA training. They were then transferred to the appropriate assay plates.
 
-## Two-choice preference assays
+### Two-choice preference assays
 
-Bacterial cultures were grown as indicated in the lawn avoidance assays above. Then, 20 μL of each inoculum was plated on opposite sides of a 6-cm-diameter BHI or SK plate and incubated overnight at 37°C. The plates were cooled to room temperature for at least 30 min before seeding with animals. For the ‘Paralyzed’ condition, 1 μL of 1M sodium azide was spotted onto each bacterial lawn. Young gravid adult hermaphroditic animals grown on E. coli OP50 were transferred to the center of plates equidistant from both the lawns. The numbers of animals on both lawns were counted at the specified times for each experiment. Three 6-cm-diameter plates were used per trial in every experiment. The E. faecalis choice index (E. faecalis CI) was calculated as follows:E.faecalisCI[(No.ofwormsonE.faecalis)−(No.ofwormsonE.coli)][(No.ofwormsonE.faecalis)+(No.ofwormsonE.coli)]
+Bacterial cultures were grown as indicated in the lawn avoidance assays above. Then, 20 μL of each inoculum was plated on opposite sides of a 6-cm-diameter BHI or SK plate and incubated overnight at 37°C. The plates were cooled to room temperature for at least 30 min before seeding with animals. For the ‘Paralyzed’ condition, 1 μL of 1M sodium azide was spotted onto each bacterial lawn. Young gravid adult hermaphroditic animals grown on E. coli OP50 were transferred to the center of plates equidistant from both the lawns. The numbers of animals on both lawns were counted at the specified times for each experiment. Three 6-cm-diameter plates were used per trial in every experiment. The E. faecalis choice index (E. faecalis CI) was calculated as follows:
+
+$$
+E.faecalisCI\frac{[(No.ofwormsonE.faecalis)−(No.ofwormsonE.coli)]}{[(No.ofwormsonE.faecalis)+(No.ofwormsonE.coli)]}
+$$
 
 Choice indices to other bacteria were similarly calculated.
 
-## Two-choice odor preference assays (lid choice assays)
+### Two-choice odor preference assays (lid choice assays)
 
 A modified version of the two-choice preference assays was carried out as previously described (Worthy et al., 2018) to assess odor preference alone. To do this, bacterial cultures were grown and plated as indicated in the two-choice preference assays above. Then, agar plugs with the bacterial lawns were cut from the plates and transferred to the lids of new 6-cm-diameter BHI agar plates without any bacteria, so that the bacteria on the agar plugs faced down toward the plate surface on opposite sides of the plate. Two microliters of 1 M sodium azide was spotted on the surface below each agar plug. Young gravid adult hermaphroditic animals grown on E. coli OP50 (naïve) or from E. faecalis OG1RF training plates were transferred to the center of plates equidistant from both agar plugs. The numbers of animals paralyzed under each agar plug were counted after 1 hr. Three 6-cm-diameter plates were used per trial in every experiment. The choice index was calculated as indicated above.
 
-## Dry-drop assay
+### Dry-drop assay
 
 The dry-drop assay was carried out as previously described (Tran et al., 2017). Using a capillary, a dry drop of either SDS (positive control), BHI or LB (negative control), or E. faecalis or E. faecium cultures was placed on a dry SK plate in front of a forward-moving animal. A response was counted if an animal initiated backward movement. Response Index = number of responses/total number of drops.
 
-## Imaging and quantification
+### Imaging and quantification
 
 Fluorescence imaging was carried out as described previously (Singh and Aballay, 2017) with slight modifications. Briefly, the animals were anesthetized using an M9 salt solution containing 50 mM sodium azide and mounted onto 2% agar pads. The animals were then visualized using a Leica M165 FC fluorescence stereomicroscope. For quantification of intestinal lumen distention, brightfield images were acquired at each time point using the Leica LAS v4.6 software, and the diameter of the intestinal lumen was measured using ImageJ software. For quantification of fluorescent immune reporters, fluorescent images were acquired using the Leica LAS v4.6 software in grayscale as presented, and the fluorescence intensity was measured and averaged across three points in the intestine of each animal at the indicated time points using ImageJ software.
 
-## Statistical analysis
+### Statistical analysis
 
 The statistical analysis was performed with Prism 8 (GraphPad). For box-and-whisker plots, the center line depicts the median, and the box range depicts the first and third quartile, while the whiskers depict the minimum and maximum data points. For all box plots, individual dots represent individual trials. For time course figures, the mean and standard deviation of nine trials is depicted at each time point. All experiments were performed in triplicate on three separate days. Unpaired t-tests, one-way or two-way ANOVA with subsequent group comparisons were performed as indicated in the figure legends. In the figures, ns denotes not significant, and asterisks (*) denote statistical significance as follows: *p≤0.05; **p≤0.01; ***p≤0.001; ****p≤0.0001, as compared with the appropriate controls.

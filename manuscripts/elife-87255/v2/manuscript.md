@@ -21,8 +21,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00pprn321 Denali Therapeutics South San Francisco United States
-2. https://ror.org/017zqws13 Department of Pharmaceutics, University of Minnesota Minneapolis United States
+1. Denali Therapeutics South San Francisco United States ([ROR:00pprn321](https://ror.org/00pprn321))
+2. Department of Pharmaceutics, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
 
 † Corresponding author
 
@@ -40,31 +40,67 @@ Here, we identify Rab12 as a novel regulator of LRRK2 activity. Rab12 regulates 
 
 ## Results
 
-## siRNA-based screen identifies Rab12 as a key regulator of LRRK2 kinase activity
+### siRNA-based screen identifies Rab12 as a key regulator of LRRK2 kinase activity
 
 Although a subset of 14 Rab GTPases has been clearly established as LRRK2 substrates, increasing data suggest a reciprocal relationship exists in which Rab proteins may also contribute to LRRK2 membrane association and activation (Vides et al., 2022; Liu et al., 2018; Purlyte et al., 2018; Gomez et al., 2019). Previous studies have shown that overexpression of one such LRRK2 substrate, Rab29, can increase LRRK2-dependent phosphorylation of Rab10 by promoting its membrane association at the Golgi complex (Liu et al., 2018; Purlyte et al., 2018; Gomez et al., 2019). However, additional work in RAB29 KO models demonstrated that LRRK2 activity was minimally impacted by loss of Rab29, suggesting Rab29 does not regulate LRRK2 activity under physiological conditions (Kalogeropulou et al., 2020). To determine whether any LRRK2-Rab substrates were required for LRRK2 kinase activity, we performed a targeted siRNA screen on 14 Rab genes in human A549 cells that endogenously express both LRRK2 and Rab10. Rab10 phosphorylation was chosen as the endpoint to assess LRRK2 activation as it is an established readout of LRRK2 kinase activity that has been routinely used in preclinical and clinical settings (Wang et al., 2021; Fan et al., 2018; Jennings et al., 2022). The levels of Rab10 phosphorylation were measured using a previously described quantitative Meso Scale Discovery (MSD)-based assay (Wang et al., 2021). Greater than 50% knockdown of gene expression of each target was demonstrated using RT-qPCR-based analysis, and we confirmed that knockdown of the positive controls LRRK2 and RAB10 attenuated the phospho-Rab10 signal as expected (Figure 1A and B and Figure 1—figure supplement 1). RAB12 was the only hit gene whose knockdown significantly reduced Rab10 phosphorylation (Figure 1A). We confirmed that RAB12 knockdown reduced gene expression and led to a reduction in Rab12 protein levels (Figure 1C–E). RAB12 knockdown did not impact the levels of LRRK2 or Rab10, suggesting that Rab12 mediates Rab10 phosphorylation by regulating LRRK2’s activity rather than the stability of LRRK2 or Rab10 (Figure 1B, D, and F and Figure 1—figure supplement 1). We also confirmed previous observations that Rab29 does not regulate LRRK2 activity under endogenous expression conditions as RAB29 knockdown or genetic deletion did not impact Rab10 phosphorylation in A549 cells (Figure 1A and Figure 1—figure supplement 1). Together, these data identify Rab12 as a novel regulator of LRRK2 kinase activity.
 
-## Rab12 deletion attenuates LRRK2-dependent phosphorylation of Rab10
+![Figure 1.](https://cdn.elifesciences.org/articles/87255/elife-87255-fig1-v2.jpg)
+
+**Figure 1.:** (A and B) A549 cells were transfected with siRNA targeting LRRK2 and its Rab substrates, lysed 3 days after transfection, and the levels of pT73 Rab10 and LRRK2 were quantified using Meso Scale Discovery (MSD)-based analysis. The MSD signal was normalized to the protein concentration, and data are shown on a log2 scale as the mean ± SEM; n=3 independent experiments, and statistical significance was determined using one-way analysis of variance (ANOVA) with Dunnett’s multiple comparison test. (C) RAB12 mRNA levels were quantified using RT-qPCR-based analysis and normalized to GAPDH following transfection with siRNAs targeting a scramble sequence or RAB12. Data are shown as the mean ± SEM; n=3 independent experiments, and statistical significance was determined using paired t-test. (D) The levels of pT73 Rab10, Rab10, Rab12, LRRK2, and Rab8a following siRNA-mediated knockdown of LRRK2 and its Rab substrates were assessed in A549 cells by western blot analysis. Shown is a representative immunoblot with GAPDH as a loading control. (E and F) The immunoblot signals from multiple experiments were quantified, and the Rab12 and Rab10 signal was normalized to GAPDH, normalized to the median within each batch and expressed as a fold change compared to the scramble control; data are shown as the mean ± SEM; n=3 independent experiments. Statistical significance was determined using unpaired t-test. *p<0.05, **p<0.01, ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87255/elife-87255-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A549 cells were transfected with siRNA targeting LRRK2 and its Rab substrates, lysed 3 days after transfection, and knockdown was confirmed by qPCR-based analysis. The expression of each gene assessed was normalized to GAPDH expression, and then normalized to the expression observed with a scramble siRNA sequence. n=3 independent experiments. Data are shown as the mean ± SEM, with p values based on paired t-test. (B) A549 cells were transfected with a scramble siRNA sequence or siRNA targeting RAB12, and the levels of pT73 Rab10, Rab10, and LRRK2 were assessed by western blot analysis. GAPDH was used as a loading control. (C) Wildtype (WT) and RAB29 KO A549 cells were treated with L-leucyl-L-leucine methyl ester (LLOMe) (1 mM) for 2 hr, and the levels of pT73 Rab10 were assessed by meso scale discovery (MSD)-based analysis. The MSD signal was normalized for protein input, then normalized to the median within each batch and expressed as a fold change compared to WT untreated A549 cells; data are shown as the mean ± SEM; n=4 independent experiments. Statistical significance was determined using one-way analysis of variance (ANOVA) with Sidak’s multiple comparison test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+### Rab12 deletion attenuates LRRK2-dependent phosphorylation of Rab10
 
 To confirm that Rab12 regulates LRRK2-dependent Rab10 phosphorylation, we performed MSD and western blot analysis in RAB12 KO A549 cells. We demonstrated that loss of Rab12 significantly impairs Rab10 phosphorylation at T73, showing a comparable reduction to that observed with loss of LRRK2 (Figure 2A and B and Figure 2—figure supplement 1). Total Rab10 levels were not reduced with RAB12 deletion and, in fact, were elevated in two out of three RAB12 KO clones assessed, confirming that the impact of loss of Rab12 on Rab10 phosphorylation cannot be explained by an effect on the protein levels of Rab10 (Figure 2C). Rab12 is itself a substrate for LRRK2, and we next explored whether LRRK2-mediated phosphorylation of Rab12 contributed to LRRK2 activation. To assess this, we generated doxycycline-inducible stable cell lines in the RAB12 KO cell background to allow overexpression of wildtype (WT) or a phospho-deficient mutant Rab12 in which the LRRK2 phosphorylation site (S106) was converted to an alanine (Figure 2D). Overexpression of either WT Rab12 or Rab12 S106A restored Rab10 phosphorylation at T73 and did not impact LRRK2 levels (Figure 2E and F). This finding was further confirmed using Rab12 S106A KI cells generated using CRISPR-Cas9 (Figure 2—figure supplement 1).
 
-## Rab12 promotes LRRK2 activation by PD-linked genetic variants or lysosomal damage
+![Figure 2.](https://cdn.elifesciences.org/articles/87255/elife-87255-fig2-v2.jpg)
+
+**Figure 2.:** (A) The levels of Rab12, pS106 Rab12, pT73 Rab10, and Rab10 were assessed in wildtype (WT), RAB12 KO, and LRRK2 KO A549 cells by western blot analysis. Shown is a representative immunoblot with GAPDH as a loading control. (B) The levels of pT73 Rab10 were measured using a Meso Scale Discovery (MSD)-based assay. The MSD signal was normalized for protein input and expressed as a fold change compared to WT A549 cells; data are shown as the mean ± SEM; n=4 independent experiments, and statistical significance was determined using one-way analysis of variance (ANOVA) with Dunnett’s multiple comparison test. (C) Immunoblot signals from multiple experiments were quantified, and the Rab10 signal was normalized to GAPDH and expressed as a fold change compared to WT A549 cells. Data are shown as the mean ± SEM; n=4 independent experiments. Statistical significance was determined using one-way ANOVA with Dunnett’s multiple comparison test. (D–F) RAB12 KO A549 cells with doxycycline-inducible expression of WT RAB12 or a phospho-deficient variant of RAB12 (S106A) were treated with increasing concentrations of doxycycline for 3 days, and the levels of Rab12, pS106 Rab12, pT73 Rab10, and LRRK2 were measured. (D) A representative immunoblot is shown assessing Rab12 and pS106 Rab12 protein levels following doxycycline-induced expression of WT or RAB12 S106A, and GAPDH was used as a loading control. (E and F) The levels of pT73 Rab10 and LRRK2 were measured using MSD-based assays. MSD signals were normalized for protein concentration, and data were then normalized to the median within each batch and to the signals from the control group (RAB12 KO cells with inducible expression of WT Rab12 without doxycycline treatment). Data are shown as mean ± SEM; n=3–4 independent experiments, and statistical significance was determined using unpaired t-test on log transformed data. (G) The impact of Rab12 knockdown was measured in WT, LRRK2 R1441G KI, and VPS35 D620N KI A549 cells. Cells were transfected with siRNA targeting RAB12, and pT73 Rab10 levels were measured by MSD-based analysis 3 days after transfection. The MSD signal was normalized for protein input and then normalized to the median within each batch and is expressed as a fold change compared to WT A549 cells transfected with scramble siRNA. Data are shown as the mean ± SEM; n=5 independent experiments. Statistical significance was determined using one-way ANOVA with Tukey’s multiple comparison test on log transformed data. (H) WT, RAB12 KO, and LRRK2 KO A549 cells were treated with vehicle or L-leucyl-L-leucine methyl ester (LLOMe) (1 mM) for 2 hr, and the impact of LLOMe treatment on pT73 Rab10 levels was measured by MSD-based analysis. The MSD signal was normalized for protein input and is expressed as a fold change compared to WT A549 cells treated with vehicle. Data are shown as the mean ± SEM; n=4 independent experiments. Statistical significance was determined using two-way ANOVA with Sidak’s multiple comparison test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87255/elife-87255-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The levels of Rab12 were measured in cell lysate from wildtype (WT) or three clones of RAB12 KO A549 cells by western blot analysis. The Rab12 signal was quantified and normalized to the GAPDH signal and expressed as a fold change compared to WT cells. Data are shown as the mean ± SEM; n=4 independent experiments. Statistical significance was determined using one-way analysis of variance (ANOVA) with Dunnett’s multiple comparisons test. (B) The levels of pT73 Rab10 were measured in cell lysates from WT, three clones of RAB12 KO A549 cells, or LRRK2 KO A549 cells by meso scale discovery (MSD)-based analysis and were normalized to the levels of Rab10 (measured by western blot analysis). Data are shown as the mean ± SEM; n=4 independent experiments. Statistical significance was determined using one-way ANOVA with Dunnett’s multiple comparisons test. (C–G) The levels of pS106 Rab12, Rab12, pT73 Rab10, and Rab10 were measured in cell lysates from WT, three clones of RAB12 S106A KI A549, or RAB12 KO cells by western blot analysis, and GAPDH was used as a loading control. The pS106 Rab12 signal (C), Rab12 signal (D), pT73 Rab10 signal (E), and Rab10 signal (F) were measured and normalized to the GAPDH signal and expressed as a fold change compared to WT cells. pT73 Rab10 levels (measured by MSD-based assay) were normalized to total Rab10 levels (measured by western blot) and expressed as a fold change compared to WT cells (G). Data are shown as the mean ± SEM; n=4 independent experiments. Statistical significance was determined using one-way ANOVA with Dunnett’s multiple comparison test. (H) Total LRRK2 levels were reduced in LRRK2 R1441G cells compared to WT cells. LRRK2 levels were measured in cell lysates from WT and LRRK2 R1441G KI A549 cells treated with scramble siRNA or siRNA against RAB12 by MSD-based analysis and normalized for protein input. Data are shown as the mean ± SEM; n=5 independent experiments. **p<0.01, ***p<0.001, ****p<0.0001.
+
+### Rab12 promotes LRRK2 activation by PD-linked genetic variants or lysosomal damage
 
 Previous studies have established that pathogenic PD-linked variants and lysosomal membrane disruption can lead to increased LRRK2 kinase activity (Bonet-Ponce et al., 2020; Eguchi et al., 2018; Mir et al., 2018; Wang et al., 2021). We next explored whether Rab12 might mediate LRRK2 activity in the context of either a pathogenic variant in LRRK2 (R1441G) or VPS35 (D620N). Rab10 phosphorylation was significantly reduced with RAB12 knockdown in LRRK2 R1441G KI and VPS35 D620N KI A549 cells (Figure 2G, Figure 2—figure supplement 1). Lysosomal membrane damage also increases LRRK2’s kinase activity, as treatment with L-leucyl-L-leucine methyl ester (LLOMe), a lysosomotropic agent that condenses into membranolytic polymers and ruptures the lysosomal membrane, has been shown to increase LRRK2-dependent phosphorylation of its Rab substrates (Bonet-Ponce et al., 2020; Eguchi et al., 2018). We confirmed that LLOMe treatment led to a significant increase in Rab10 phosphorylation in WT cells and demonstrated this effect was abolished in RAB12 KO cells (Figure 2H). Together, these data demonstrate that Rab12 is required to mediate LRRK2 activation in response to specific genetic variants associated with PD and lysosomal stress more broadly.
 
-## Rab12 regulates LRRK2-dependent phosphorylation of Rab10 on lysosomes
+### Rab12 regulates LRRK2-dependent phosphorylation of Rab10 on lysosomes
 
 Lysosomal membrane permeabilization has been shown to increase the levels of LRRK2 and pT73 Rab10 associated with lysosomes using overexpression systems (Bonet-Ponce et al., 2020; Eguchi et al., 2018). Our data suggested that Rab12 may play a key role in facilitating the recruitment of LRRK2 and ultimate phosphorylation of Rab10 on lysosomes in response to lysosomal damage. To assess this, we employed an established lysosome immunoprecipitation (Lyso-IP) method that enables the rapid isolation of lysosomes (Abu-Remaileh et al., 2017). Lysosomes isolated from WT and RAB12 KO A549 cells treated with vehicle or LLOMe (1 mM) for 2 hr displayed increased levels of endogenous galectin-3 (Gal3), validating that LLOMe treatment induced lysosomal membrane rupture and exposed beta-galactosides normally present in the lumen of lysosomes (Figure 3A; Jia et al., 2020; Maejima et al., 2013; Paz et al., 2010). While LLOMe treatment reduced the levels of lysosomal-associated membrane protein 1 (LAMP1) in isolated lysosomes, the levels and localization of TMEM192-3x-HA, the lysosomal membrane protein used to isolate lysosomes, were not significantly impacted by LLOMe treatment (Figure 3A and Figure 3—figure supplement 1). We did not observe a loss of LAMP1 signal by immunofluorescence analysis, suggesting that LAMP1 may dissociate or be degraded from ruptured lysosomal membranes upon immunopurification. These data suggest that while LLOMe treatment results in lysosomal membrane damage, sufficient lysosomal integrity remains to enable purification of this subcellular compartment using TMEM192.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/87255/elife-87255-fig3-v2.jpg)
+
+**Figure 3.:** (A) Lysosomes were isolated from wildtype (WT) and RAB12 KO A549 cells treated with vehicle or L-leucyl-L-leucine methyl ester (LLOMe) (1 mM) for 2 hr. The levels of pT73 Rab10, total Rab10, pS106 Rab12, galectin-3 (Gal3), lysosomal-associated membrane protein 1 (LAMP1), and HA were assessed by western blot analysis, and shown is a representative immunoblot. Fluorescence signals of immunoblots from multiple experiments were quantified. The pT73 Rab10 signal was normalized to the HA signal, then was normalized to the median within each experimental replicate and expressed as a fold change compared to lysosomes isolated from WT A549 cells treated with vehicle. n=6 independent experiments. Data are shown as the mean ± SEM, and statistical significance was determined using one-way analysis of variance (ANOVA) with Tukey’s multiple comparison test. (B) WT, RAB12 KO, and LRRK2 KO A549 cells were treated with vehicle or LLOMe (1 mM) for 2 hr, and the signals of pT73 Rab10 and LAMP1 were assessed by immunostaining. Scale bar, 20 μm. pT73 Rab10 (shown in magenta) and LAMP1 (shown in cyan) double positive puncta (i.e. overlap of magenta and cyan and shown in white) were quantified per cell from n=3 independent experiments. Data are shown as the mean ± SEM with and statistical significance was determined using two-way ANOVA with Sidak’s multiple comparison test. (C) Lysosomal Rab12 levels were assessed by western blot analysis from lysosomes isolated from WT and RAB12 KO A549 cells treated with vehicle or LLOMe (1 mM) for 2 hr. The Rab12 signals were normalized to the HA signals, then were normalized to the median within each experimental replicate and expressed as a fold change compared to lysosomes isolated from WT A549 cells treated with vehicle. n=6 independent experiments. Data are shown as the mean ± SEM, and statistical significance was determined using one-way ANOVA with Tukey’s multiple comparison test. (D) HEK293T cells expressing mCherry-Rab12 were treated with vehicle or LLOMe (1 mM) for 2 hr, fixed, and stained using an antibody against LAMP1. Colocalization of Rab12 and LAMP1 was assessed by measuring the Pearson’s correlation coefficient between mCherry-Rab12 (shown in magenta) and LAMP1 (shown in cyan); nocodazole (25 μΜ for 2 hr) treatment was included as a control to confirm colocalization. Scale bar, 10 μm. n=3 independent experiments. Data are shown as the mean ± SEM, and statistical significance was determined using repeated measures one-way ANOVA with Sidak’s multiple comparison test. (E) WT and LRRK2 KO A549 cells transiently expressing mCherry-Rab12 were treated with vehicle or LLOMe (1 mM) for 2 hr, and the LAMP1 levels were assessed by immunostaining. Scale bar, 20 μm. The intensity of mCherry-Rab12 signals (shown in magenta) in LAMP1 (shown in cyan)-positive region were quantified per cell from mCherry-Rab12 expressing cells (n=20 cells per condition, with cellular intensity between 2000 and 5000 fl. units) and averaged across wells (~4–6 wells per condition). n=3 independent experiments. The Rab12 signal was normalized to the median within each experimental replicate, and then expressed as a fold change compared to WT cells treated with vehicle. Data are shown as the mean ± SEM, and statistical significance was determined using one-way ANOVA with Sidak’s multiple comparison test. (F) HEK293T cells stably expressing eGFP-LRRK2 were transfected with mCherry-Rab12 and treated with LLOMe (1 mM) for 2 hr. Colocalization of mCherry-Rab12 (shown in magenta) and eGFP-LRRK2 (shown in cyan) was assessed by measuring the Pearson’s correlation coefficient in LLOMe-responding cells (n=10 cells per condition); nocodazole (25 μΜ) treatment was included to confirm colocalization. Scale bar, 10 μm. n=3 independent experiments. (G) HEK293T cells stably expressing eGFP-LRRK2 were treated with vehicle or LLOMe (1 mM) for 2 hr, fixed, and stained using an antibody against LAMP1. Colocalization of LRRK2 and LAMP1 was assessed by measuring the Pearson’s correlation coefficient between eGFP-LRRK2 (shown in cyan) and LAMP1 (shown in magenta); nocodazole (25 μΜ) treatment was included to confirm colocalization. Scale bar, 10 μm. n=3 independent experiments. Data are shown as the mean ± SEM, and statistical significance was determined using repeated measures one-way ANOVA with Sidak’s multiple comparison test. **p<0.01, ***p<0.001, and ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87255/elife-87255-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Wildtype (WT) A549 cells stably expressing TMEM192-3x-HA were treated with vehicle or L-leucyl-L-leucine methyl ester (LLOMe) (1 mM) for 2 hr, and HA (to detect TMEM192-3x-HA) and lysosomal-associated membrane protein 1 (LAMP1) signals were assessed by immunostaining. Scale bar, 20 μm. Percentage of HA (shown in magenta) and LAMP1 (shown in cyan) double positive puncta (i.e. overlap of magenta and cyan and shown in white) over total HA puncta were quantified per cell from n=3 independent experiments. Data are shown as the mean ± SEM. (B) Representative immunoblot from analysis of isolated lysosomes (IP: HA) and the post-nuclear supernatant (PNS) fraction (corresponding to Figure 3A) in WT and Rab12 KO A549 cells treated with vehicle or LLOMe (1 mM) for 2 hr. (C) Lysosomal Rab10 levels were assessed by western blot analysis from lysosomes isolated from WT and RAB12 KO A549 cells treated with vehicle or LLOMe (1 mM) for 2 hr. Rab10 levels were then normalized to the HA signal, then were normalized to the median within each experimental replicate and expressed as a fold change compared to lysosomes isolated from WT cells treated with vehicle (corresponding to Figure 3A); n=6 independent experiments. (D) pT73 Rab10 signals were assessed by immunostaining of WT, RAB12 KO, and LRRK2 KO A549 cells treated with vehicle or LLOMe (1 mM) for 2 hr (corresponding to Figure 3B). The sum intensity of puncta per cell was quantified from n=3 independent experiments. Data are shown as the mean ± SEM, and statistical significance was determined using two-way analysis of variance (ANOVA) with Sidak’s multiple comparison test. (E) Percentage of pT73 Rab10 puncta colocalized with LAMP1 were quantified from WT A549 cells treated with vehicle or LLOMe (1 mM) for 2 hr. Data are shown as the mean ± SEM, n=3 independent experiments. (F) Representative immunoblot from analysis of isolated lysosomes (IP: HA) and PNS (corresponding to Figure 3C) from WT and Rab12 KO A549 cells treated with vehicle or LLOMe (1 mM) for 2 hr. (G) HEK293T cells transiently expressing mCherry-Rab12 were treated with vehicle or LLOMe (1 mM) for 2 hr, fixed, and stained using an antibody against GM130 as a marker of the Golgi. Colocalization of Rab12 and GM130 was measured using the Pearson’s correlation coefficient between mCherry-Rab12 (shown in magenta) and GM130 (shown in yellow); nocodazole (25 μΜ) treatment was included to confirm colocalization. Scale bar, 10 μm. n=3 independent experiments. Data are shown as the mean ± SEM, and statistical significance was determined using repeated measures one-way ANOVA with Sidak’s multiple comparison test.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87255/elife-87255-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Lysosomal Rab12 levels were assessed by western blot analysis from lysosomes isolated from wildtype (WT), LRRK2 R1441G, and LRRK2 KO A549 cells treated with vehicle or L-leucyl-L-leucine methyl ester (LLOMe) (1 mM) for 2 hr. The Rab12 signals were normalized to the median within each experimental replicate and expressed as a fold change compared to lysosomes isolated from WT A549 cells treated with vehicle. n=3 independent experiments. Data are shown as the mean ± SEM and statistical significance was determined using one-way analysis of variance (ANOVA) with Tukey’s multiple comparison test. (B) Representative live-cell images show the recruitment of Rab12 and LRRK2 upon LLOMe (1 mM) treatment. HEK293T cells were transfected with mCherry-Rab12 and eGFP-LRRK2, and images were acquired every 10 min. Scale bar, 5 μm. (C–E) Normalized mean intensity of mCherry-Rab12 (C) and eGFP-LRRK2 (D) were quantified over time in segmented cells (n=24 cells). (E) Pearson’s correlation coefficient (PCC) between normalized eGFP-LRRK2 and mCherry-Rab12 were quantified over time in segmented cells (n=24 cells); n=3 experiments. Data are shown as mean ± SEM. (F) HEK293T cells stably expressing eGFP-LRRK2 were treated with vehicle or LLOMe (1 mM) for 2 hr, fixed, and stained using an antibody against the Golgi marker GM130. Colocalization of LRRK2 and GM130 was assessed by measuring the PCC between eGFP-LRRK2 (shown in cyan) and GM130 (shown in yellow); nocodazole (25 μΜ) treatment was included to confirm colocalization. Scale bar, 10 μm; n=3 independent experiments. Data are shown as the mean ± SEM, and statistical significance was determined using repeated measures one-way ANOVA with Sidak’s multiple comparison test. (G) The percentage of total Rab12 and LRRK2 localized to lysosomes was assessed using western blot analysis of lysosomes isolated from A549 cells treated with vehicle or LLOMe and estimated based on the signals of Rab12 and LRRK2 in the lysosomal fraction normalized to the signals in the post-nuclear supernatant (PNS) fraction. Our analysis of total HA recovery from isolated lysosomes confirmed that not all of the HA-labeled lysosomes were captured, suggesting that the estimated lysosomal LRRK2 and Rab12 levels using this method are likely an underestimate; n=4–6 experiments. Data are shown as the mean ± SEM, and statistical significance was determined using unpaired t-test. (H) The percentage of Rab12 and LRRK2 localized to lysosomes was assessed using imaging-based analysis. HEK293T cells transfected with either mCherry-Rab12 or eGFP-LRRK2 were treated with vehicle or LLOMe, fixed, and stained using an antibody against lysosomal-associated membrane protein 1 (LAMP1). The percentage of Rab12 and LRRK2 localized to lysosomes was quantified using the sum intensity of Rab12 or LRRK2 in the LAMP1-positive region normalized to the sum intensity of Rab12 or LRRK2 in the whole cell region. n=3–4 experiments. The data were normalized to the median within each experiment. Data are shown as the mean ± SEM, and statistical significance was determined using unpaired t-test. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
 Using this method, we showed that LLOMe treatment increased phosphorylation of Rab10 on isolated lysosomes from WT cells but failed to increase Rab10 phosphorylation on lysosomes from RAB12 KO cells, demonstrating that Rab12 is a critical regulator of Rab10 phosphorylation on lysosomes following lysosomal damage (Figure 3A and Figure 3—figure supplement 1). While Rab10 has been reported to primarily localize to the Golgi and endosomes, our data show that a proportion of Rab10 is localized to lysosomes basally and in response to lysosomal damage (Berndsen et al., 2019; Wang et al., 2010). To further explore the effect of Rab12 on the lysosomal levels of phospho-Rab10, we visualized phosphorylated Rab10 on lysosomes following LLOMe treatment in WT and RAB12 KO cells. LLOMe treatment significantly increased colocalization between pT73 Rab10 and LAMP1 in WT cells but had no effect in RAB12 KO cells, confirming that Rab12 is required for Rab10 phosphorylation on lysosomes in response to membrane rupture (Figure 3B and Figure 3—figure supplement 1).
 
-## Rab12 increases Rab10 phosphorylation by facilitating LRRK2 recruitment to lysosomes
+### Rab12 increases Rab10 phosphorylation by facilitating LRRK2 recruitment to lysosomes
 
 We hypothesized that lysosomal membrane permeabilization may increase Rab12 recruitment to damaged lysosomes and that increased Rab12 levels on lysosomes may facilitate the lysosomal association of LRRK2 upon damage. Consistent with this idea, treatment with LLOMe significantly increased the levels of Rab12 on lysosomes assessed by western blot analysis from isolated lysosomes and by confocal imaging (Figure 3C–E and Figure 3—figure supplement 1). Further imaging analysis revealed that LLOMe treatment significantly increased the colocalization of Rab12 with the lysosomal marker LAMP1, but not with the Golgi marker GM130, as quantified by Pearson’s correlation coefficient (PCC), and this colocalization was preserved upon nocodazole-induced microtubule depolymerization (Figure 3D and Figure 3—figure supplements 1 and 2). Rab12 recruitment to damaged lysosomes was not impacted by LRRK2 deletion as Rab12 levels were similarly increased on lysosomes from WT and LRRK2 KO cells following lysosomal membrane permeabilization (Figure 3E and Figure 3—figure supplement 2). These data demonstrate that lysosomal membrane damage increases Rab12 localization to lysosomes and that this occurs in an LRRK2-independent manner, supporting the idea that Rab12 is an upstream regulator of LRRK2’s lysosomal localization and activity. Western blot analysis of isolated lysosomes showed that approximately 1% of total Rab12 was present on lysosomes at baseline and that this increased to approximately 1.5% following LLOMe treatment, while our imaging-based analysis revealed that approximately 12% of overexpressed Rab12 was present on lysosomes at baseline and increased to approximately 14% upon LLOMe treatment (Figure 3—figure supplement 2). These results suggest that a small percentage of Rab12 and LRRK2 are present on lysosomes at baseline and that lysosomal damage leads to a significant increase in the localization of both proteins to the lysosome (Figure 3—figure supplement 2), but precise quantification of the amount of Rab12 and LRRK2 on lysosomes under these conditions is difficult and warrants further study.
 
 To gain additional insight around the dynamics of Rab12 and LRRK2 recruitment following lysosomal membrane permeabilization, we performed live-cell imaging of HEK293T cells overexpressing mCherry-tagged Rab12 and eGFP-tagged LRRK2 and assessed Rab12 and LRRK2 localization over time. Rab12 and LRRK2 showed a diffuse localization under baseline conditions, while LLOMe treatment increased the recruitment of Rab12 and LRRK2 to vesicular structures (Figure 3—figure supplement 2). Rab12 colocalization with LRRK2 increased over time following LLOMe treatment, supporting potential coordinated recruitment of these proteins to lysosomes upon damage (Figure 3F and Figure 3—figure supplement 2). LLOMe treatment also significantly increased the colocalization of LRRK2 with the lysosomal marker LAMP1 but not with the Golgi marker GM130 (Figure 3G and Figure 3—figure supplement 2). Together, these data demonstrate that Rab12 and LRRK2 both associate with lysosomes following membrane rupture.
 
 To more directly assess whether Rab12 regulates the recruitment of LRRK2 to lysosomes upon lysosomal damage, we next examined the impact of RAB12 deletion on the lysosomal recruitment of LRRK2 upon lysosomal membrane permeabilization. Lysosomes were isolated from WT and RAB12 KO cells, and the endogenous levels of LRRK2 on lysosomes were quantified by western blot analysis. Lysosomal levels of LRRK2 were increased by approximately 2.5-fold following treatment with LLOMe in WT cells, and loss of Rab12 abrogated this LLOMe-induced increase (Figure 4A). These data show that Rab12 is required to facilitate LRRK2 localization to lysosomes following membrane damage.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/87255/elife-87255-fig4-v2.jpg)
+
+**Figure 4.:** (A) To analyze lysosomal LRRK2 levels, lysosomes were isolated from wildtype (WT) and RAB12 KO A549 cells treated with vehicle or L-leucyl-L-leucine methyl ester (LLOMe) (1 mM) for 4 hr. The levels of LRRK2, HA, lysosomal-associated membrane protein 1 (LAMP1), and galectin-3 (Gal3) were assessed by western blot analysis, and shown is a representative immunoblot. Fluorescence signals of immunoblots from multiple experiments were quantified, LRRK2 signal was normalized to the HA signal, then normalized to the median within each experiment, and expressed as a fold change compared to lysosomes isolated from WT A549 cells treated with vehicle. Data are shown as the mean ± SEM; n=4 independent experiments. Statistical significance was determined using one-way analysis of variance (ANOVA) with Tukey’s multiple comparison test with a single pooled variance. (B–C) To analyze lysosomal pRab10 levels, lysosomes were isolated from WT and LRRK2 R1441G KI (B) or VPS35 D620N KI (C) A549 cells treated with vehicle or LLOMe (1 mM) for 2 hr, and the levels of pT73 Rab10, Rab10, and LAMP1 were assessed by western blot analysis. Immunoblot signals from multiple experiments were quantified, and the pT73 Rab10 signal was expressed as a fold change compared to lysosomes isolated from WT A549 cells treated with vehicle. Data are shown as the mean ± SEM; n=3 independent experiments (B) and n=8 independent experiments (C). Statistical significance was determined using unpaired t-test. (D) Lysosomes were isolated from WT, LRRK2 R1441G KI, and VPS35 D620N KI A549 cells treated with vehicle or LLOMe (1 mM) for 4 hr. The levels of LRRK2, HA, LAMP1, and Gal3 were assessed by western blot analysis and shown is a representative immunoblot. Fluorescence signals of immunoblots from multiple experiments were quantified, the LRRK2 signal was normalized to the HA signal, then normalized to the median within each experiment, and expressed as a fold change compared to lysosomes isolated from WT A549 cells treated with vehicle. Data are shown as the mean ± SEM; n=7 independent experiments. Statistical significance was determined using one-way ANOVA with Dunnett’s multiple comparison test. *p<0.05, ***p<0.001, ****p<0.0001. (E) Model for proposed mechanism by which Rab12 promotes LRRK2 activation. Under steady-state conditions, LRRK2 localizes primarily to the cytoplasm. Lysosomal damage prompts the recruitment of Rab12, and Rab12 regulates the recruitment of LRRK2 to damaged lysosomes. An elevated local concentration of LRRK2 on lysosomes increases the likelihood for interactions with Rab GTPases localized on the lysosomal membrane, promoting LRRK2-dependent phosphorylation of its Rab substrates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87255/elife-87255-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Lysosomes were isolated from wildtype (WT) and RAB12 KO A549 cells treated with vehicle or L-leucyl-L-leucine methyl ester (LLOMe) (1 mM) for 4 hr, and the immunopurified lysosomal fraction and PNS was collected. The levels of LRRK2, HA, lysosomal-associated membrane protein 1 (LAMP1), and galectin-3 (Gal3) were assessed by western blot analysis, and shown is a representative immunoblot. (B–C) Lysosomes were isolated from WT and LRRK2 R1441G KI (B) or VPS35 D620N KI (C) A549 cells treated with vehicle or LLOMe (1 mM) for 2 hr, and the immunopurified lysosomal fraction and PNS was collected. The levels of pT73 Rab10, Rab10, and LAMP1 were assessed by western blot analysis, and shown is a representative immunoblot. (D) Lysosomes were isolated from WT, LRRK2 R1441G KI, and VPS35 D620N KI A549 cells treated with vehicle or LLOMe (1 mM) for 4 hr, and the immunopurified lysosomal fraction and PNS was collected. The levels of LRRK2, HA, LAMP1, and Gal3 were assessed by western blot analysis and shown is a representative immunoblot.
 
 Enhanced recruitment of LRRK2 to lysosomes may promote Rab phosphorylation by effectively increasing the local concentration of LRRK2 in proximity to its Rab substrates, and we hypothesized that such a mechanism might explain LRRK2 activation observed in additional contexts beyond lysosomal damage. We next examined whether two PD-linked genetic variants associated with increased LRRK2 kinase activity, LRRK2 R1441G and VPS35 D620N, also had increased levels of LRRK2 on lysosomes. Lysosomes were isolated from WT, LRRK2 R1441G KI, and VPS35 D620N KI A549 cells at baseline and following LLOMe treatment, and the levels of total and phospho-Rab10 and LRRK2 were subsequently assessed by western blot analysis. Expression of LRRK2 R1441G or VPS35 D620N led to an increase in Rab10 phosphorylation on isolated lysosomes at baseline, and the phosphorylation of Rab10 on lysosomes was further increased following LLOMe treatment (Figure 4B and C). The levels of LRRK2 on lysosomes were significantly increased in untreated LRRK2 R1441G KI cells and VPS35 D620N KI cells, suggesting that enhanced localization of LRRK2 to lysosomes and proximity to its Rab substrates may contribute to the elevated Rab10 phosphorylation observed on lysosomes at baseline in these cells (Figure 4D). Rab10 phosphorylation was increased on lysosomes in response to LLOMe treatment while the levels of LRRK2 were not significantly impacted on lysosomes isolated from LRRK2 R1441G and VPS35 D620N KI cells, suggesting additional mechanisms beyond LRRK2 localization may also contribute to LRRK2 activation in response to lysosomal damage in these cells. Together, these results suggest that Rab12 regulates LRRK2 localization to lysosomes upon damage and that this may be a conserved mechanism also employed to contribute to LRRK2 activation in response to PD-linked variants.
 
@@ -76,63 +112,695 @@ Our findings provide key insight into the mechanism by which LRRK2 activity is i
 
 ## Materials and methods
 
-## Generation of CRISPR KO and KI cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>pT73 Rab10 (rabbit monoclonal)</td>
+      <td>Denali</td>
+      <td>19-4</td>
+      <td>WB: 1:500; MSD 1 ug/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pT73 Rab10 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab241060RRID:AB_2884876</td>
+      <td>ICC: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rab10 (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab104859RRID:AB_10711207</td>
+      <td>WB: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rab10 (rabbit monoclonal)</td>
+      <td>CST</td>
+      <td>8127RRID:AB_10828219</td>
+      <td>ICC: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rab10 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab181367</td>
+      <td>MSD: 2 ug/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pS106 Rab12 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab256487RRID:AB_2884880</td>
+      <td>WB: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rab12 (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>18843–1-APRRID:AB_10603469</td>
+      <td>WB: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rab8a (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab188574RRID:AB_2814989</td>
+      <td>WB: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HA (rabbit monoclonal)</td>
+      <td>CST</td>
+      <td>3724RRID:AB_1549585</td>
+      <td>WB: 1:2000ICC: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gal3 (mouse monoclonal)</td>
+      <td>BD</td>
+      <td>556904RRID:AB_396531</td>
+      <td>WB: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LAMP1 (rabbit monoclonal)</td>
+      <td>CST</td>
+      <td>9091RRID:AB_2687579</td>
+      <td>WB: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LAMP1 (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab25630RRID:AB_470708</td>
+      <td>WB: 1:1000ICC: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LRRK2 (mouse monoclonal)</td>
+      <td>UC Davis/NIH NeuroMab Facility</td>
+      <td>N241A/34RRID:AB_2877351</td>
+      <td>WB: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LRRK2 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>808201RRID:AB_2564739</td>
+      <td>MSD: 1 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LRRK2</td>
+      <td>Biolegend</td>
+      <td>844401RRID:AB_2565614</td>
+      <td>MSD: 0.5 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pS935 LRRK2 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab133450RRID:AB_2732035</td>
+      <td>WB: 1:500MSD: 0.5 μg/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GAPDH (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab8245RRID:AB_2107448</td>
+      <td>WB: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Actin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>A2228RRID:AB_476697</td>
+      <td>WB: 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GM130 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab52649RRID: AB_880266</td>
+      <td>ICC: 1:200</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T cells</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>A549 cells</td>
+      <td>ATCC</td>
+      <td>CCL-185</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Rab29 KO A549 cells</td>
+      <td>Dr. Dario Alessi</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Rab12 KO A549 cells</td>
+      <td>Denali</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>LRRK2 R1441G KI A549 cells</td>
+      <td>Denali</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>VPS35 D620N KI A549 cells</td>
+      <td>Denali</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>eGFP-LRRK2 HEK293T cells</td>
+      <td>Denali</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVX-TMEM192-3x-HA</td>
+      <td>Denali</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-eGFP-LRRK2</td>
+      <td>Denali</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1-mCherry-Rab12</td>
+      <td>Denali</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>LLOMe</td>
+      <td>Sigma-Aldrich</td>
+      <td>L7393</td>
+      <td>1 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Nocodazole</td>
+      <td>Sigma-Aldrich</td>
+      <td>M1404</td>
+      <td>25 μΜ</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>PMID:29187165</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>Version 9.5.1</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio Lite</td>
+      <td>Version 5.2.5</td>
+      <td>RRID:SCR_013715</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Harmony</td>
+      <td>Versions 4.9 and 5.1</td>
+      <td>RRID:SCR_018809</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python Programming Language</td>
+      <td>v3.10.8</td>
+      <td>RRID:SCR_008394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SciPy</td>
+      <td>v1.9.3</td>
+      <td>RRID:SCR_008058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Napari</td>
+      <td>v0.4.17</td>
+      <td>RRID:SCR_022765</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>scikit-image</td>
+      <td>v0.19.3</td>
+      <td>RRID:SCR_021142</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NumPy</td>
+      <td>v1.24.2</td>
+      <td>RRID:SCR_008633</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of CRISPR KO and KI cell lines
 
 Cell line engineering of A549 cells to generate homozygous LRRK2 R1441G (CGC/GGC) knock-in, homozygous LRRK2 KO, homozygous RAB12 KO, and homozygous VPS35 D620N (GAT/ATT) knock-in was performed using CRISPR/Cas9. Sequence information for generating targeting gRNA, ssODN donor, and PCR primers are as follows:
 
+<table>
+  <thead>
+    <tr>
+      <th>LRRK2 R1441G knock-in (A549)</th>
+      <th>Sequences</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>sgRNA</td>
+      <td>AAGAAGAAGCGCGAGCCUGG</td>
+    </tr>
+    <tr>
+      <td>Donor sequence</td>
+      <td>AAATGTGTGCCAACGAGAATCACAGGGGAAGAAGAAGCGCCAGCCTGGAGGGAAAGACACAAAACCCTCTTGTGTTTGCTTTCAAA</td>
+    </tr>
+    <tr>
+      <td>Forward PCR primer (5'–3')</td>
+      <td>AGGCATGAAGATGGGAAAGGA</td>
+    </tr>
+    <tr>
+      <td>Reverse PCR primer (5'–3')</td>
+      <td>GGAACCCTCGCTTATTCAGGA</td>
+    </tr>
+    <tr>
+      <td>LRRK2 knock-out (A549)</td>
+      <td>Sequences</td>
+    </tr>
+    <tr>
+      <td>sgRNA 1</td>
+      <td>GGGGACTGTCGACGGTGATCGGT</td>
+    </tr>
+    <tr>
+      <td>sgRNA 2</td>
+      <td>GGTCCTAAACCTGGTCGCAAAGA</td>
+    </tr>
+    <tr>
+      <td>Donor sequence</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>Forward PCR primer (5'–3')</td>
+      <td>AGTCCGCTGAGTCAGTTTCTTC</td>
+    </tr>
+    <tr>
+      <td>Reverse PCR primer (5'–3')</td>
+      <td>GGGCTCTTCATCCCGTTTACA</td>
+    </tr>
+    <tr>
+      <td>VPS35 D620N knock-in (A549)</td>
+      <td>Sequences</td>
+    </tr>
+    <tr>
+      <td>sgRNA</td>
+      <td>GAUGGCAGCUAGCUGUGCUU</td>
+    </tr>
+    <tr>
+      <td>Donor sequence</td>
+      <td>TGTTCACTAGGCATTTTCTCTGTATGAAGATGAAATCAGCAATTCAAAAGCACAGCTAGCTGCCATCACCTTGATCATTGGCACTTTTGA</td>
+    </tr>
+    <tr>
+      <td>Forward PCR primer (5'–3')</td>
+      <td>GGCCATGACAACTGATCCCT</td>
+    </tr>
+    <tr>
+      <td>Reverse PCR primer (5'–3')</td>
+      <td>GAGAGGGTGCAGCATGTTCT</td>
+    </tr>
+    <tr>
+      <td>Rab12 knock-out (A549)</td>
+      <td>Sequences</td>
+    </tr>
+    <tr>
+      <td>sgRNA</td>
+      <td>AUCAAACUGUAGAGCUAAG</td>
+    </tr>
+    <tr>
+      <td>Donor sequence</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>Forward PCR primer (5'–3')</td>
+      <td>GGGAGGTTATAGACACTGGTGC</td>
+    </tr>
+    <tr>
+      <td>Reverse PCR primer (5'–3')</td>
+      <td>AACTGCTCCCCATGTGCAAG</td>
+    </tr>
+  </tbody>
+</table>
+
 CRISPR/Cas9-mediated knockout of LRRK2 or RAB12 and CRISPR/Cas9-mediated knock-in of LRRK2 R1441G or VPS35 D620N in A549 cells was performed by Synthego Corporation (Redwood City, CA, USA). To generate these cells, ribonucleoproteins containing the Cas9 protein and synthetic chemically modified sgRNA produced at Synthego were electroporated into the cells using Synthego’s optimized protocol. Editing efficiency was assessed upon recovery, 48 hr post electroporation. Specifically, genomic DNA was extracted from a portion of the cells, PCR amplified, and sequenced using Sanger sequencing. The resulting chromatograms are processed using Synthego Inference of CRISPR edits software (ice.synthego.com). To isolate monoclonal cell populations, edited cell pools were seeded at 1 cell/well using a single cell printer into 96- or 384-well plates. All wells were imaged every 3 days to ensure expansion from a single-cell clone. Clonal populations were screened and identified using the PCR-Sanger-ICE genotyping strategy described above.
 
-## Lyso-IP cell line generation
+### Lyso-IP cell line generation
 
 To enable the rapid isolation of lysosomes using immunopurification, WT human A549 cells and different CRISPR A549 cells (including LRRK2 KO, LRRK2 R1441G, RAB12 KO, and VPS35 D620N) were transduced with lentivirus carrying the transgene cassette for expression of TMEM192-3x-HA. A synthetic cDNA encoding TMEM192-3x-HA was cloned into pLVX-IRES-hygromycin lentiviral vector containing the CMV promoter. Stably expressing cells were selected using resistance to Hygromycin B (Thermo Fisher Scientific, Waltham, MA, USA, #10687010) supplied in growth medium at 200 μg/mL for 21 days. Following selection, cells were screened for the stable expression of TMEM192-3x-HA in lysosomes by quantifying the percentage of cells with colocalization of anti-HA and anti-LAMP1 by immunofluorescence, and by monitoring cell lysates for expression TMEM192-3x-HA (~30 kDa) by western blot.
 
-## Antibodies
+### Antibodies
 
 For ICC, the following secondary antibodies (Thermo Fisher) were used at 1:1000 dilution: goat anti-mouse Alexa-Fluor 488 (A32723), goat anti-rabbit Alexa-Fluor 568 (A11036).
 
 For western blot analysis, the following secondary antibodies (LI-COR Biosciences, Lincoln, NE, USA) were used at 1:20,000 dilution: IRDyes 800CW donkey anti-rabbit IgG (#926-32213), 680RD donkey anti-mouse IgG (#926-68072).
 
-## siRNA-mediated KD of LRRK2 and Rab GTPases
+### siRNA-mediated KD of LRRK2 and Rab GTPases
 
 A549 cells were transfected with Dharmacon SMARTpool siRNA targeting 14 Rab GTPases, LRRK2 and non-targeting scramble control (Horizon Discovery, Cambridge, UK), using DharmaFECT 1 (Horizon, T-2001-01). Cells were collected 3 days after transfection for protein or mRNA analysis.
 
-## RT-qPCR-based analysis of Rab expression
+<table>
+  <thead>
+    <tr>
+      <th>Targets</th>
+      <th>Catalog number</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ON-TARGETplus Non-targeting Control</td>
+      <td>D-001810-10</td>
+      <td>UGGUUUACAUGUCGACUAA</td>
+    </tr>
+    <tr>
+      <td>RAB3A</td>
+      <td>L-009668-00</td>
+      <td>GAAGAUGUCCGAGUCGUUG</td>
+    </tr>
+    <tr>
+      <td>RAB3B</td>
+      <td>L-008825-00</td>
+      <td>GGACACAGACCCGUCGAUG</td>
+    </tr>
+    <tr>
+      <td>RAB3C</td>
+      <td>L-008520-00</td>
+      <td>UGAGCGAGGUCAACAUUUA</td>
+    </tr>
+    <tr>
+      <td>RAB3D</td>
+      <td>L-010822-00</td>
+      <td>GUUCAAACUGCUACUGAUA</td>
+    </tr>
+    <tr>
+      <td>RAB5A</td>
+      <td>L-004009-00</td>
+      <td>GCAAGCAAGUCCUAACAUU</td>
+    </tr>
+    <tr>
+      <td>RAB5B</td>
+      <td>L-004010-00</td>
+      <td>GGAGCGAUAUCACAGCUUA</td>
+    </tr>
+    <tr>
+      <td>RAB5C</td>
+      <td>L-004011-00</td>
+      <td>UCAUUGCACUCGCGGGUAA</td>
+    </tr>
+    <tr>
+      <td>RAB8A</td>
+      <td>L-003905-00</td>
+      <td>CAGGAACGGUUUCGGACGA</td>
+    </tr>
+    <tr>
+      <td>RAB8B</td>
+      <td>L-008744-00</td>
+      <td>GCAAUUGACUAUGGGAUUA</td>
+    </tr>
+    <tr>
+      <td>RAB10</td>
+      <td>L-010823-00</td>
+      <td>GCAAGGGAGCAUGGUAUUA</td>
+    </tr>
+    <tr>
+      <td>RAB12</td>
+      <td>L-023375-02</td>
+      <td>CAUUUGAUGAUUUGCCGAA</td>
+    </tr>
+    <tr>
+      <td>RAB29</td>
+      <td>L-010556-00</td>
+      <td>GAGAACGGUUUCACAGGUU</td>
+    </tr>
+    <tr>
+      <td>RAB35</td>
+      <td>L-009781-00</td>
+      <td>GAUGAUGUGUGCCGAAUAU</td>
+    </tr>
+    <tr>
+      <td>RAB43</td>
+      <td>L-028161-01</td>
+      <td>GGAUGAGAGGGCACCGCAA</td>
+    </tr>
+    <tr>
+      <td>LRRK2</td>
+      <td>L-006323-00</td>
+      <td>GAAAUUAUCAUCCGACUAU</td>
+    </tr>
+  </tbody>
+</table>
+
+### RT-qPCR-based analysis of Rab expression
 
 The total RNA was extracted from cells using RNeasy Plus Micro Kit (QIAGEN, Hilden, Germany, #74034). cDNA was synthesized from 1 to 2 μg of RNA using Superscript IV VILO master mix (Thermo Fisher #11756050). The cDNA was diluted threefold and 1 μL of diluted cDNA was used as template. To measure the relative expression levels of mRNAs by RT-qPCR, Taqman Fast Advanced Master Mix (Thermo Fisher #4444557) was used, together with gene-specific primers using TaqMan Assays (Thermo Fisher). GAPDH was used as the housekeeping gene. The PCR was run using QuantStudio 6 Flex Real-Time PCR System, 384-well (Thermo Fisher). Gene expression was analyzed using 2^(delta-delta Ct) method with GAPDH as internal controls.
 
-## MSD-based analysis of pT73 Rab10, total and pSer935 LRRK2
+<table>
+  <thead>
+    <tr>
+      <th>Taqman assay ID</th>
+      <th>Gene name</th>
+      <th>Dye</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hs00923221_m1</td>
+      <td>RAB3A</td>
+      <td>FAM-MGB</td>
+    </tr>
+    <tr>
+      <td>Hs01001137_m1</td>
+      <td>RAB3B</td>
+      <td>FAM-MGB</td>
+    </tr>
+    <tr>
+      <td>Hs00384846_m1</td>
+      <td>RAB3C</td>
+      <td>FAM-MGB</td>
+    </tr>
+    <tr>
+      <td>Hs00758197_m1</td>
+      <td>RAB3D</td>
+      <td>FAM-MGB</td>
+    </tr>
+    <tr>
+      <td>Hs00702360_s1</td>
+      <td>RAB5A</td>
+      <td>FAM-MGB</td>
+    </tr>
+    <tr>
+      <td>Hs05027271_g1</td>
+      <td>RAB5B</td>
+      <td>FAM-MGB</td>
+    </tr>
+    <tr>
+      <td>Hs00904926_g1</td>
+      <td>RAB5C</td>
+      <td>FAM-MGB</td>
+    </tr>
+    <tr>
+      <td>Hs00180479_m1</td>
+      <td>RAB8A</td>
+      <td>FAM-MGB</td>
+    </tr>
+    <tr>
+      <td>Hs00213006_m1</td>
+      <td>RAB8B</td>
+      <td>FAM-MGB</td>
+    </tr>
+    <tr>
+      <td>Hs00794658_m1</td>
+      <td>RAB10</td>
+      <td>FAM-MGB</td>
+    </tr>
+    <tr>
+      <td>Hs01391604_m1</td>
+      <td>RAB12</td>
+      <td>FAM-MGB</td>
+    </tr>
+    <tr>
+      <td>Hs01026316_m1</td>
+      <td>RAB29</td>
+      <td>FAM-MGB</td>
+    </tr>
+    <tr>
+      <td>Hs00199284_m1</td>
+      <td>RAB35</td>
+      <td>FAM-MGB</td>
+    </tr>
+    <tr>
+      <td>Hs03006628_gH</td>
+      <td>RAB43</td>
+      <td>FAM-MGB</td>
+    </tr>
+    <tr>
+      <td>Hs01115057_m1</td>
+      <td>LRRK2</td>
+      <td>FAM-MGB</td>
+    </tr>
+    <tr>
+      <td>Hs99999905_m1</td>
+      <td>GAPDH</td>
+      <td>VIC</td>
+    </tr>
+  </tbody>
+</table>
+
+### MSD-based analysis of pT73 Rab10, total and pSer935 LRRK2
 
 LRRK2, pS935 LRRK2, and pT73-Rab10 MSD assays were previously established (Wang et al., 2021). Briefly, capture antibodies were biotinylated using EZ-Link NHS-LC-LC-Biotin (Thermo Fisher, #21343), and detection antibodies were conjugated using Sulfo-TAG NHS-Ester (Meso Scale Discovery [MSD], Rockville, MD, USA, R31AA-1). 96-well MSD GOLD Small Spot Streptavidin plates (MSD, L45SSA-1) were coated with 25 µL of capture antibody diluted in Diluent 100 (MSD, R50AA-2) for 1 hr at room temperature with 700 rpm shaking. After three washes with TBST, 25 µL samples were added each well and incubated at 4°C overnight with agitation at 700 rpm. After three additional washes with TBST, 25 µL of detection antibodies were added to each well diluted in TBST containing 25% MSD blocker A (MSD, R93AA-1) together with rabbit (Rockland Immunochemicals, Pottstown, PA, USA, D610-1000) and mouse gamma globin fraction (Rockland, D609-0100). After a 1 hr incubation at room temperature at 700 rpm and three washes with TBST, 150 µL MSD read buffer (MSD R92TC, 1:1 diluted with water) was added, and plates were read on the MSD Sector S 600.
 
-## Cell lysis and immunoblotting
+<table>
+  <thead>
+    <tr>
+      <th>Assay</th>
+      <th>Antibody type</th>
+      <th>Targets</th>
+      <th>Vendor</th>
+      <th>Catalog number</th>
+      <th>Concentration (μg/mL)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">pS935 LRRK2</td>
+      <td>Capture</td>
+      <td>pS935 LRRK2</td>
+      <td>Abcam</td>
+      <td>ab133450</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Detection</td>
+      <td>Total LRRK2</td>
+      <td>BioLegend</td>
+      <td>808201</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Total LRRK2</td>
+      <td>Capture</td>
+      <td>Total LRRK2</td>
+      <td>BioLegend</td>
+      <td>844401</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>Detection</td>
+      <td>Total LRRK2</td>
+      <td>BioLegend</td>
+      <td>808201</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">pT73 Rab10</td>
+      <td>Capture</td>
+      <td>pT73 Rab10</td>
+      <td>Denali</td>
+      <td>19-4</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Detection</td>
+      <td>Total Rab10</td>
+      <td>Abcam</td>
+      <td>ab181367</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lysis and immunoblotting
 
 Cells were lysed in lysis buffer (Cell Signaling Technology [CST], Danvers, MA, USA, #9803) supplemented with cOmplete tablet (Roche, Penzburg, Germany, #04693159001), phosSTOP (Roche #04906837001), and Benzonase nuclease (Sigma-Aldrich, St. Louis, MO, USA, E1014). Cell lysates were prepared by incubating with NuPage LDS Sample Buffer (Thermo Fisher, NP0007) and NuPAGE Sample Reducing Agent (Thermo Fisher, NP0004) for 5 min at 95°C to denature samples. Lysates were loaded onto NuPAGE 4–12% Bis-Tris gels (Thermo Fisher). Proteins were transferred to nitrocellulose membranes (Bio-Rad, Hercules, CA, USA) using Trans-Blot Turbo Transfer System (Bio-Rad). Membranes were blocked with Rockland blocking buffer at room temperature for 1 hr (Rockland Immunochemicals, Pottstown, PA, USA), incubated with primary antibody (diluted in Blocking Buffer) overnight at 4°C, and then with secondary antibodies (1:20,000 diluted in Blocking Buffer, LI-COR) for 1 hr at room temperature. Odyssey CLx Infrared Imaging System (LI-COR) was used for western blot detection and quantitation.
 
-## Cell culture and treatment
+### Cell culture and treatment
 
 HEK293T cells and A549 cells were cultured in DMEM media (Thermo Fisher #11965-092) containing 1% Pen/Strep and 10% FBS (VWR International, Radnor, PA, USA, #97068-085). For LLOMe treatment, LLOMe (Sigma-Aldrich, #L7393) was added at 1 mM for 2 hr or 4 hr prior to fixation or lysing cells for downstream analysis. Nocodazole (Sigma-Aldrich, #M1404) was added at 25 μΜ for 2 hr prior to fixation or live-cell imaging. Cells were routinely screened to confirm the absence of mycoplasma contamination.
 
-## Generation of Dox-inducible cell lines expressing Rab12
+### Generation of Dox-inducible cell lines expressing Rab12
 
 Doxycycline-inducible cell lines were generated to stably express WT Rab12 or a phospho-deficient mutant of Rab12 (S106A) in RAB12 KO A549 cells. Briefly, lentiviral constructs were generated by cloning 3XFLAG-RAB12 (or RAB12 S106A) into the pLVX-TetOne-Puro vector. Lentivirus was produced by transfecting the plasmids in HEK293T cells using Lenti-X Packaging Single Shots (Takara Bio, Kusatsu, Shiga, Japan, #631278). The media containing lentivirus were collected from transfected cells and were further concentrated by 50-fold using Lenti-X Concentrator (Takara, #631231). RAB12 KO A549 cells were infected with lentivirus expressing WT 3XFLAG-RAB12 or 3XFLAG-RAB12 S106A mutant. Cells carrying the lentiviral vectors were selected with puromycin (1 μg/mL). To enable the expression of WT Rab12 or the Rab12 S106A mutant, doxycycline (0.1, 0.5, and 1 μg/mL) was added in the cell culture for 3 days.
 
-## Immunoprecipitation of lysosomes using TMEM192-HAx3
+### Immunoprecipitation of lysosomes using TMEM192-HAx3
 
 Lysosomes were isolated by immunoprecipitation from cells expressing the TMEM192-HAx3 transgene as described previously (Abu-Remaileh et al., 2017) with the following modifications. Cells were plated in 15 cm culture dishes such that they reached full confluency on the day of the experiment. All subsequent steps were performed at 4°C or on ice with pre-chilled reagents, unless otherwise noted. Media was removed and monolayers were rinsed with KPBS buffer (136 mM KCl, 10 mM KH2PO4, pH 7.25), harvested by scraping into fresh KPBS and pelleted via centrifugation. Cell pellets were resuspended in KPBS + buffer (KPBS supplemented with 3.6% [wt/vol] iodixanol [OptiPrep; Sigma-Aldrich], cOmplete protease inhibitor [Roche], and PhosStop phosphatase inhibitor [Roche]), and cells were fractionated by passing the suspension through a 21 G needle five times followed by centrifugation at 800 × g for 10 min. Post-nuclear supernatant (PNS) was harvested and incubated with anti-HA magnetic beads (pre-blocked with BSA and washed with KPBS buffer; Thermo Fisher) for 15 min with end-over-end rotation. Lysosome-bound beads were washed three times with KPBS + buffer, and samples used for immunoblotting were eluted from beads by heating to 95°C for 10 min in 1× NuPAGE LDS Sample Buffer (Thermo Fisher).
 
-## Analysis of total and pRab10 and total and pRab12 levels on isolated lysosomes from WT, RAB12 KO, and PD-linked variant KI A549 cell models
+### Analysis of total and pRab10 and total and pRab12 levels on isolated lysosomes from WT, RAB12 KO, and PD-linked variant KI A549 cell models
 
 For analysis of pRab10 levels on isolated lysosomes, one confluent 15 cm plate of cells was used per experimental condition. Cells were treated with 1 mM LLOMe (or vehicle) for 2 hr at 37°C prior to isolation of lysosomes via anti-HA immunoprecipitation as described above. Lyso-IP were performed with 60 µL of anti-HA magnetic bead slurry per condition. Immunoblotting for pRab10 and pRab12 levels was performed in parallel with analysis of total Rab10 and Rab12 levels, as detailed above, using 20% of total immunoprecipitated material per condition. pT73 Rab10, pS106 Rab12, total Rab10, total Rab12, and HA band intensities were quantified from immunoblots using ImageStudio Lite software (LI-COR), and the phospho- and total Rab band intensities were normalized to HA band intensity within each experimental condition. Data were normalized to the median value within each replicate and was then normalized to the mean value of vehicle-treated WT samples across replicates. Calculations for the total fraction of Rab12 present on immunoprecipitated lysosomes were performed by extrapolating the quantitated western blot signal of both the IP and PNS fractions out to 100%, and then calculating the percent of total estimated Rab12 signal captured in the IP divided by the total estimated Rab12 signal present in the PNS sample.
 
-## Analysis of LRRK2 levels on isolated lysosomes from A549 cell models
+### Analysis of LRRK2 levels on isolated lysosomes from A549 cell models
 
 For analysis of LRRK2 levels on isolated lysosomes, three confluent 15 cm plates of cells (seeded 24 hr prior to the assay start) were used per experimental condition. Cells were treated with 1 mM LLOMe (or vehicle) for 4 hr at 37°C and then lysosomes were isolated via anti-HA immunoprecipitation as described above. Lyso-IP were performed with 150 µL of anti-HA magnetic bead slurry per condition. For immunoblot detection of endogenous LRRK2, 25% of the total immunoprecipitated material (per condition) was loaded onto a 3–8% Tris-Acetate gel (Thermo Fisher), fully resolved gels were transferred to nitrocellulose membranes, probed overnight at 4°C with a 1/500 dilution of mouse anti-LRRK2 (clone N241A/34; UC Davis/NIH NeuroMab Facility, Davis, CA, USA), and imaged using standard immunoblotting protocol detailed above. LRRK2 and HA band intensity was quantified from immunoblots using ImageStudio Lite software (LI-COR), LRRK2 intensity was normalized to HA band intensity within each experimental condition, data was normalized to the median value within each replicate, and then was normalized to the mean value of vehicle-treated WT samples across replicates. Calculations for the total fraction of LRRK2 present on immunoprecipitated lysosomes were performed as for Rab12 (see above).
 
-## Immunostaining of pT73 Rab10, Rab10, HA, and LAMP1 and image analysis
+### Immunostaining of pT73 Rab10, Rab10, HA, and LAMP1 and image analysis
 
 WT, RAB12 KO, and LRRK2 KO A549 cells were seeded in 96-well plates (Revvity, Waltham, MA, USA, Phenoplate, #6055302), and then treated with vehicle or LLOMe (1 mM). After 2 hr, cells were fixed with 4% PFA for 15 min, permeabilized and blocked with blocking buffer (5% Normal Donkey Serum/0.05% Triton X-100/PBS) for 1 hr at room temperature. Primary antibodies were diluted in blocking buffer and incubated overnight at 4°C. pT73 Rab10 antibody (Abcam, ab241060, 1:100), Rab10 antibody (CST, 8127, 1:100), LAMP1 antibody (Abcam, ab25630, 1:100), and HA antibody (CST, 3724, 1:100) were used in the study. After three washes with PBS/0.05% Triton X-100, secondary fluorescently labeled antibodies were diluted in blocking buffer and incubated for 1 hr at room temperature. DAPI (1:1000) and cell mask deep red (1:5000, Thermo Fisher, C10046) were diluted in PBS/0.05% Triton X-100 and incubated for 10 min. After three washes with PBS/0.05% Triton X-100, the cell plates were imaged on an automated confocal high-content imaging system (Revvity, Opera Phenix Plus High-Content Screening System) using a 63× water immersion objective lens with excitation lasers (405 nm, 488 nm, 561 nm, 640 nm) and preset emission filters. Channels were separated to avoid fluorescence crosstalk. A custom analysis was developed in the Harmony 4.9 image analysis software (Revvity) to enable image analysis. For analysis of puncta intensity, pT73 Rab10 or total Rab10 spots were defined using ‘Finding Spots’ building blocks, and the sum of corrected spot intensity per cell was used to measure puncta signals. The colocalization between pT73 Rab10 or TMEM192-HA puncta and LAMP1-positive lysosomes were measured with object-based analysis. Briefly, pT73 Rab10 or TMEM192-HA and LAMP1 spots were independently defined using separate ‘Find Spots’ building blocks. Colocalized pT73 Rab10 and LAMP1 spots or TMEM192-HA and LAMP1 spots were identified using the geometric center overlap method within the ‘Select Population’ tool. The average number of colocalized spots were calculated per cell from 16 fields per well (for pT73 Rab10 and LAMP1 analysis) or 20 fields per well (for HA and LAMP1 analysis) and averaged across the well.
 
-## Image analysis of the localization of Rab12 and LRRK2 to lysosomes and Golgi
+### Image analysis of the localization of Rab12 and LRRK2 to lysosomes and Golgi
 
 For the colocalization analysis of Rab12 and organelle markers, HEK293T cells were transfected with mCherry-Rab12 plasmid (pcDNA3.1 vector) using Lipofectamine LTX with Plus Reagent (Thermo Fisher #15338100), and cells were plated onto poly-lysine-coated 96-well plates (Revvity, Waltham, MA, USA, Phenoplate, #6055302). Two days after transfection, cells were treated with vehicle or LLOMe (1 mM), with or without nocodazole (25 μΜ). After 2 hr, cells were fixed and immunostained with a LAMP1 antibody (Abcam, ab25630, 1:100) or GM130 antibody (Abcam ab52649). Cell plates were imaged on an automated confocal high-content imaging system (Revvity, Opera Phenix Plus High-Content Screening System) using a 40× water immersion objective lens. For the colocalization analysis of LRRK2 and organelle markers, HEK293T cells stably expressing eGFP-LRRK2 were used. For the colocalization analysis of LRRK2 and Rab12, HEK293T cells stably expressing eGFP-LRRK2 were transfected with mCherry-Rab12 plasmid. After LLOMe and nocodazole treatment, cell plates were imaged using a 63× water immersion objective lens.
 
@@ -142,17 +810,17 @@ For Rab12-LRRK2 colocalization, the number of Rab12-LRRK2 co-expressing cells wa
 
 Calculation of the percentage of Rab12 and LRRK2 in lysosomes was performed using the Harmony image analysis software (versions 5.1 and 4.9, Revvity) to determine the percentage of mCherry-Rab12 intensity in lysosomes compared to the whole cell. From Rab12-positive cells, lysosomes were segmented using the LAMP1 channel. mCherry-Rab12 sum intensity from lysosomes was calculated and divided by the total sum mCherry-Rab12 intensity within the entire cell. Values were calculated on a per-cell basis, averaged across ~30 fields per well, and across three independent biological replicates. A similar image analysis process was adapted for calculating the percentage of LRRK2 within lysosomes.
 
-## Image analysis of Rab12 in WT and LRRK2 KO cells
+### Image analysis of Rab12 in WT and LRRK2 KO cells
 
 WT and LRRK2 KO A549 cells were transfected with mCherry Rab12 plasmid (pcDNA3.1 vector) using Lipofectamine LTX with Plus Reagent (Thermo Fisher #15338100), and cells were plated onto poly-lysine-coated 96-well plates (Revvity, Waltham, MA, USA, Phenoplate, #6055302). Two days after transfection, cells were treated with vehicle or LLOMe (1 mM). After 2 hr, cells were fixed and immunostained with LAMP1 antibody (Abcam, ab25630, 1:100). Cell plates were imaged on an automated confocal high-content imaging system (Revvity, Opera Phenix Plus High-Content Screening System) using a 63× water immersion objective lens.
 
 For the image analysis, cells were identified through a nuclear stain (DAPI) and lysosomes were segmented with LAMP1 staining using the ‘Find Image Region’ building block in the Harmony 5.1 analysis software (Revvity). The total mCherry-Rab12 levels present in lysosomes were determined by calculating the mean fluorescence intensity of the 568 nm channel within the LAMP1 area. Values were measured from mCherry-Rab12 expressing cells (n=20 cells per condition, with cellular intensity between 2000 and 5000 fl. units) and averaged across wells (~4–6 wells per condition).
 
-## Live-cell imaging of Rab12 and LRRK2 in HEK293T cells
+### Live-cell imaging of Rab12 and LRRK2 in HEK293T cells
 
 HEK293T cells were transfected with eGFP-LRRK2 and mCherry-Rab12 plasmids (pcDNA3.1 vectors) using Lipofectamine LTX with Plus Reagent (Thermo Fisher #15338100), and cells were plated onto poly-lysine-coated 96-well plates (Corning Inc, Corning, NY, USA, BioCoat plates, #354640). Two days after transfection, cells were incubated with Hoechst 33342 (1 μg/mL, Thermo Fisher #62249) and CellMask Deep Red Plasma membrane Stain (1:2000, Thermo Fisher C10046) for 10 min. After replacing the cell culture media containing 1 mM LLOMe, the cell plates were immediately started for live-cell imaging on an automated spinning-disk confocal high-content imaging system (Revvity, Opera Phenix) using a 40× water immersion objective lens under 5% CO2 and 37°C condition. The confocal images were taken every 10 min for 90 min in total.
 
-## Time lapse cell segmentation analysis
+### Time lapse cell segmentation analysis
 
 Fields of view containing cells co-transfected for eGFP-LRRK2 and mCherry-Rab12 were manually selected from the time lapse dataset across three independent experiments. For each field, channel, and timepoint, the z-stack was converted to a 2D image by maximum intensity projection, then the background intensity was estimated by smoothing the image with a Gaussian filter with a kernel standard deviation of 50 pixels (~14.8 μm) using the ndimage module in scipy v1.9.3 (Virtanen et al., 2020). The background was subtracted from the original image and all pixels below the background intensity were set to zero. Background subtracted images were loaded into napari v0.4.17 (Sofroniew et al., 2022) as 2D+time images for segmentation.
 
@@ -160,10 +828,10 @@ To better visualize cells co-expressing low levels of LRRK2 and Rab12, the contr
 
 For each cell, the non-background subtracted LRRK2 and Rab12 signals were extracted and normalized to between 0.0 and 1.0 by subtracting 200 AU and then dividing by 800 AU. Values above 1.0 or below 0.0 were set to 1.0 or 0.0, respectively. For all pixels under the cell mask, the PCC I was calculated between the normalized LRRK2 and Rab12 signals using the pearsonr function in the scipy.stats module. Cell properties such as area, perimeter, and mean intensity in each channel were extracted for each timepoint using the regionprops function in scikit-image v0.19.3 (van der Walt et al., 2014). Cells were filtered for quality by fitting a least squares line to the mean intensity of both LRRK2 and Rab12 signal for each and excluding any cells where the slopes were negative (n=31 cells excluded), resulting in 24 validated cell traces. Normalized intensity and correlation coefficients were plotted as mean of all 24 traces ± standard error (SEM) using Prism Version 9.5.1 (GraphPad).
 
-## Statistical analysis
+### Statistical analysis
 
 Data are shown as mean ± SEM, and all statistical analysis was performed in GraphPad Prism 9. Unpaired (or paired) t-tests were used for statistical analyses of experiments with two treatment groups. For more than two groups, analysis was performed using one-way analysis of variance (ANOVA) with Tukey’s multiple comparison, one-way ANOVA with Sidak’s multiple comparison test, one-way ANOVA with Dunnett’s multiple comparison test, repeated measures one-way ANOVA with Dunnett’s multiple comparison or two-way ANOVA with Sidak’s test, as indicated in figure legends. Comparisons were considered significant where *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001.
 
-## Materials availability
+### Materials availability
 
 The pT73 Rab10 antibody used in these studies is available from the corresponding author upon reasonable request.

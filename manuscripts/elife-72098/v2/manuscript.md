@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02bfwt286 Australian Regenerative Medicine Institute (ARMI), Monash University Victoria Australia
-2. https://ror.org/02feahw73 Institut NeuroMyoGène (INMG), University Claude Bernard Lyon1, CNRS UMR Lyon France
-3. https://ror.org/02bfwt286 Monash Micro Imaging, Monash University Clayton Australia
+1. Australian Regenerative Medicine Institute (ARMI), Monash University Victoria Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
+2. Institut NeuroMyoGène (INMG), University Claude Bernard Lyon1, CNRS UMR Lyon France ([ROR:02feahw73](https://ror.org/02feahw73))
+3. Monash Micro Imaging, Monash University Clayton Australia ([ROR:02bfwt286](https://ror.org/02bfwt286))
 
 † Corresponding author
 
@@ -44,9 +44,25 @@ This study underlines the importance of developing novel strategies to generate 
 
 ## Results and discussion
 
-## Generation of the 12xTFd2GFP and 16xTF-VNP transgenic quail lines
+### Generation of the 12xTFd2GFP and 16xTF-VNP transgenic quail lines
 
 To generate the 12xTF-d2GFP line (TgT2[12TCF/LEF:d2EGFP]), we modified a TCF/β-catenin transcriptional reporter we previously generated, which was intended for in vivo electroporation in chicken embryos (Rios et al., 2010; Sieiro et al., 2016) by inserting Tol2 (T2) transposable elements 5′ and 3′ of the construct, thus allowing its stable integration into the quail genome (Figure 1A). We used the direct injection technique as described in Serralbo et al., 2020; Tyack et al., 2013 to transfect in vivo the blood-circulating primordial germ cells (PGCs). Fifty wild-type embryos at stage HH16 (E2.5) were injected in the dorsal aorta with a mix of lipofectamine 2000, the 12xTF-d2GFP plasmid and a pCAG-Transposase construct. Four founders were selected, of which one male was used as founder. It was mated with wild-type females and their embryos were used for the experiments. The transmission of the transgene to the offspring presented a Mendelian distribution, suggesting a single insertion.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/72098/elife-72098-fig1-v2.jpg)
+
+**Figure 1.:** (A) Vectors used to generate the 12xTFd2GFP line and (B) the 16xTF-VNP line. (C) An E3.5 12xTFd2GFP embryo and (D) an E3 16xTF-VNP embryo cleared with the 3DISCO method, showing an overview of the TCF/β-catenin reporter activities in these lines. Embryos stained for Pax7 (blue), MyHC (red), and GFP or mVenus (green). Scale bar 100 µm. AER, apical ectodermal ridge.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72098/elife-72098-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) Transverse sections of an E2.5 chick embryo electroporated in the NT with a DNA mix containing a CAG-TagBFP construct as a marker for electroporated cells, and the 16xTF-VNP construct. The sections were immunostained for BFP (blue), mVenus (green), and Pax7 (red). It shows that the reporter activity is weaker in the dorsal NT and sharply increases in the migrating NC cells. Scale bar = 30 µm. S, somite; NT, neural tube. (E–G) Confocal stack of a dorsal view of an E2.5 chick embryo electroporated in the NT with a DNA mix containing a CAG-TagBFP construct as a marker for electroporated cells (internal control) and the 16xTFVNP construct. Scale bar 10 µm. (H–J) Confocal stack of a dorsal view of an E2.5 chick embryo electroporated in the NT with a DNA mix containing a CAG-TagBFP construct as a marker for electroporated cells (internal control), the 16xTFVNP construct and the dominant negative (DN) form of LEF1 transcription cofactor. Scale bar 10 µm. (K–M) Confocal stack of a dorsal view of an E2.5 chick embryo electroporated in the NT with a DNA mix containing a CAG-TagBFP construct as a marker for electroporated cells (internal control), the 16xTFVNP construct and the Wnt-inhibiting molecule Axin2. Scale bar 10 µm. (N) Quantification of the mVenus+ cells out of the total BFP+ cells in each electroporated embryo. The quantifications demonstrate a 9-fold decrease in the number of mVenus+/BFP+ cells in embryos co-electroporated with CAG-TagBFP, 16xTF-VNP, and DN-LEF1 and a 3.8-fold decrease in the number of mVenus+/BFP+ cells in embryos co-electroporated with CAG-TagBFP, 16xTF-VNP, and Axin2. *p-value ≤ 0.05. N = 6.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/72098/elife-72098-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–C) Confocal stack of a dorsal view of an E2.5 chick embryo electroporated in the NT with a DNA mix containing a CAG-TagBFP construct as a marker for electroporated cells and the 12xTFd2GFP. (D–F) Confocal stack of a dorsal view of an E2.5 chick embryo electroporated in the NT with a DNA mix containing a CAG-TagBFP construct as a marker for electroporated cells and the 16xTFVNP construct without the IVS/Syn21 and p10 translation enhancer sequences, termed here – 16xTF-VNP plain. (G–I) Confocal stack of a dorsal view of an E2.5 chick embryo electroporated in the NT with a DNA mix containing a CAG-TagBFP construct as a marker for electroporated cells and the 16xTF-VNP. (J) A quantification of the fluorescence levels (as measured in pixels) of the GFP+ or mVenus+ cells, normalized to the fluorescence levels of BFP+ cells. Results demonstrate an 11-fold increase in fluorescence levels between the 12xTFd2GFP and the 16xTF-VNP plain constructs, while a 17-fold increase is shown when comparing the 12xTFd2GFP to the 16xTF-VNP construct. An increase of about 1.5-fold is demonstrated between the 16xTH-VNP plain and the 16xTF-VNP constructs. **p-value 0.001–0.01; *p-value ≤ 0.05 N = 5 embryos per treatment. Scale bar 10 µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/72098/elife-72098-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A–D) An HH23 12xTFd2GFP embryo immunostained for GFP (green), neurofilament (blue), and MyHC (red), showing the TCF/β-catenin reporter in the pharyngeal arches, maxilla, AER, and the ventrolateral border of trunk somites (VLL). Scale bar 500 µm. (E–H) An HH23 16xTF-VNP embryo immunostained for mVenus (green), neurofilament (blue), and MyHC (red), showing the TCF/β-catenin reporter in the head, maxilla, pharyngeal arches, AER, neural tube, migrating neural crest cells, and the somite VLL. Note also the GFP expression in the eye, driven by the β-crystallin promoter for easier screening of transgenic embryos. Scale bar 400 µm. Embryonic structure legend as indicated in Figure 1.
 
 To further improve the TCF/β-catenin reporter sensitivity, we generated the 16xTF-VNP line (TgT2[16TCF/LEF:Syn21-Venus-NLS-PEST-p10, Gga.CRYBB1:GFP]). For this, we synthesized and cloned 16 TCF/LEF repeats upstream of the TK minimal promoter, followed by IVS and Syn21 sequences (Pfeiffer et al., 2012), directly abutting the ATG initiation codon of Venus (Figure 1B). The IVS (Intervening Sequence) is a 67 bp long sequence from Drosophila myosin heavy chain, which facilitates mRNA export to the cytoplasm (Pfeiffer et al., 2012). Syn21 is an AT-rich 43 bp consensus translation initiation sequence made of elements derived from Drosophila, and from the Malacosoma neustria nucleopolyhedrovirus polyhedrin gene. We chose a nuclear, destabilized form of the EYFP variant Venus as reporter (1.8 hr half-life; Abranches et al., 2013), as it displays a 156% increase in relative brightness compared to EGFP (Nagoshi et al., 2004). It was followed by the p10 sequence, which is a 606 bp terminator sequence from the Autographa californica nuclear polyhedrosis baculovirus (Pfeiffer et al., 2012). A CrystallGFP selection mini-gene, consisting of the promoter of the βB1crystallin gene (active exclusively in the lens) upstream of EGFP was added to the construct to ease the selection of transgenic birds at hatching (Serralbo et al., 2020). Finally, Tol2 sites were added for stable integration into the quail genome.
 
@@ -56,9 +72,33 @@ To test the added value of translation enhancers in a vertebrate environment, we
 
 We used the same technique as above to generate transgenic quails with this reporter. One female was selected as the transgenic founder using the CrystallGFP marker and crossed with a WT male to expand the transgenic line. The transmission of the transgene to the offspring presented a Mendelian distribution, suggesting a single insertion.
 
-## TCF/β-catenin transcriptional activities in early embryos
+### TCF/β-catenin transcriptional activities in early embryos
 
 To characterize TCF/β-catenin transcriptional activity during embryonic development, we analyzed and compared the activity of the two reporters in the two lines we generated, in whole mount preparations of immunostained embryos, on immunostained sections and in live tissues at different developmental stages. Whole mount preparations of HH21 (E3.5; 12xTF-d2GFP) and HH20 (E3; 16xTF-VNP) transgenic quail embryos immunostained for GFP or mVenus, Pax7 and Myosin Heavy Chain (MyHC), clarified by the ‘3DISCO’ technique (Belle et al., 2017) and imaged using LaVision BioTec UltraMicroscope II, provide an overview of the sites of high reporter activities. It shows conspicuous reporter activity in the apical ectodermal ridge (AER), mesenchymal limb bud cells, the pharyngeal arches (particularly the maxillary), the somites, and migrating neural crest (Figure 1C, D; Videos 1 and 2). This initial examination also indicated that the 16xTF-VNP reporter line is more sensitive to TCF/β-catenin transcriptional activity than the 12xTF-d2GFP, as it shows reporter activity in places that are not readily detected in the 12xTF-d2GFP line (e.g. the cephalic neural crest; Figure 1D). This observation was seen also in HH23 (E4) 12xTFd2GFP and 16xTF-VNP embryos immunostained for GFP or mVenus, Neurofilament and MyHC, clarified by the ‘3DISCO’ technique (Belle et al., 2017) and imaged as mentioned above (Figure 1—figure supplement 3). While such technique is attractive, as it gives a general overview of the reporter’s activity in all tissues within a developing embryo, it lacks the sensitivity that can be obtained with more classical approaches, such as immunohistochemistry on sections. We therefore performed transverse sections of E3 12xTF-d2GFP and 16xTF-VNP embryos stained for GFP, Pax7, and MyHC which confirmed that TCF/β-catenin transcriptional activity was generally more prominent in the 16xTF-VNP than in the 12xTF-d2GFP (Figure 2). For instance, reporter activity was observed throughout the dermomyotome (stronger in the medial and lateral border, DML and VLL, respectively) in the 16xTF-VNP, while it was visible only in the DML and VLL in the 12xTF-d2GFP (Figure 2A–D). In both reporter lines, significant reporter expression was present in mesenchymal cells within the limb bud, and strong activity was observed in the AER (Figure 2A, C).
+
+![Video 1.](https://cdn.elifesciences.org/articles/72098/elife-72098-video1.mp4.jpg)
+
+**Video 1.:** The embryo is stained for GFP (green), Pax7 (blue), and MyHC (red).
+
+![Video 2.](https://cdn.elifesciences.org/articles/72098/elife-72098-video2.mp4.jpg)
+
+**Video 2.:** The embryo is stained for GFP (green), Pax7 (blue), and MyHC (red).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/72098/elife-72098-fig2-v2.jpg)
+
+**Figure 2.:** Transverse sections at the levels of the front limb (A, C) and the trunk (B,D) of E3 12xTF-d2GFP (A–B) and 16xTF-VNP (C–D) transgenic embryos stained for GFP or mVenus (green), Pax7 (blue), MyHC (red), and DAPI (gray). Inserts show the levels at which the sections were made. Scale bar 50 µm (A,C,D) or 30 µm (B). S, somite; NT, neural tube; LB, limb bud.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72098/elife-72098-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The image details the different channels for Figure 2. Scale bar 50 µm. S, somite; NT, neural tube; LB, limb bud; AER, apical ectodermal ridge.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/72098/elife-72098-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Transverse sections of E3 (HH19) 16xTF-VNP stained for mVenus (green; A,D), HNK1 (red; B,D), and DAPI (blue; C,D). The TCF/β-catenin reporter is significantly upregulated in emerging NC cells and is rapidly decreased as the NC proceed along their dorso-ventral migration path. Scale bar 50µm. NT, neural tube; NC, neural crest cells; S, somite.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/72098/elife-72098-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** In situ hybridization of Wnt1 (A,B) and Wnt3a (C,D) in E3.5 quail embryos. Both Wnt1 and Wnt3a mRNA transcripts are presented in the NT (A,B,D). Wnt3a mRNA transcript is also present in the AER (C). Scale bar 200µm. NT, neural tube; AER, apical ectodermal ridge.
 
 We made surprising observations in the neural tube and neural crest (NC). We observed that the activity of the reporter was not detected in the dorsal neural tube in the 12xTF-d2GFP (Figure 2A, B and Figure 2—figure supplement 1A-J) and weakly active in the more sensitive 16xTF-VNP line (Figure 2C, D and Figure 2—figure supplement 1K-T). In contrast, migrating NC strongly upregulated the reporter as they left the neural tube en route to their sites of differentiation (this is particularly visible in the 16xTF-VNP; Figure 2C, D and Figure 2—figure supplement 2A-D).
 
@@ -72,9 +112,21 @@ A similar gradient of reporter activity was observed in somites, since it was ac
 
 Thus, the use of destabilized fluorescent reporters to generate these quail lines allows the detection of dynamic changes (increase and decrease) in reporter activity throughout embryonic development that could not be appreciated with stable reporters, such as the BAT-gal mouse line (Maretto et al., 2003).
 
-## TCF/β-catenin activity during early embryonic development
+### TCF/β-catenin activity during early embryonic development
 
 To characterize TCF/β-catenin activity during early embryonic development, we performed immunostaining on sections and on whole mount embryos, coupled with classical confocal microscopy. We observed that the reporters were first detected at the posterior end of a gastrulating embryo (stage HH4, about E1) in the 16xTF-VNP embryos (Figure 4—figure supplement 1) and two stages later (HH6) for the 12xTFd2GFP (data not shown). We then examined embryos at developmental stage HH12 (E2, Figure 4 and Figure 4—figure supplement 2). It is visible that the reporter is expressed similarly in both lines but more conspicuously in the 16xTF-VNP line. For instance, the fluorescent signal is barely visible in the tailbud of the 12xTFd2GFP while it extends anteriorly along one-third of the presomitic mesoderm (PSM) region in the 16xTF-VNP line. Similarly, migrating cephalic neural crest cells (e.g. around the otic vesicle) were more prominently labeled in the 16xTF-VNP line than in the 12xTFd2GFP. These observations further illustrate the improvement brought about by the 16xTF-VNP construct over the 12xTFd2GFP construct. The similarity of the reporter expression in both lines also supports the premise that there is little if any positional effect due to the insertion sites of the transgenes.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/72098/elife-72098-fig4-v2.jpg)
+
+**Figure 4.:** Whole-mount view of HH12 12xTFd2GFP (A–C) and 16xTF-VNP (D–F) embryos immunostained for GFP or mVenus (green) and Pax7 (Red). Both embryos present strong TCF/β-catenin reporter activity in migrating cephalic neural crest in the head area, somites, the posterior neural tube and the tail bud area. Scale bar 500 µm. OV, otic vesicle; PSM, presomitic mesoderm; TB, tail bud.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72098/elife-72098-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The TCF/β-catenin reporter activity is strongly expressed in the posterior half of the gastrulating embryo. Scale bar 200 µm. PS, primitive streak.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/72098/elife-72098-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** This embryo presents strong TCF/β-catenin reporter activity in migrating cephalic neural crest in the head area, pharyngeal arches, somites, the posterior neural tube, PSM and the tail bud area. Scale bar 500 µm (left panel), 150 µm (middle panel), and 200 µm (right panel). Embryonic structure legend as indicated in Figure 4.
 
 To gain a cellular resolution of the 16xTF-VNP reporter activity, we prepared transverse sections of HH14 (E2.5) embryos at the level of cervical somites, somite I (the newly formed somite) and the PSM, and stained for mVenus, Acetylated Tubulin and DAPI (Figure 5). These sections show the nuclear localization of the VNP, and further demonstrate the dynamic changes of the reporter in the developing embryo. At the PSM level (Figure 5I-L), the reporter was strongly expressed in ectodermal cells, and in the entire NT. Few cells were positive for VNP in the segmental plate mesoderm. In somite I (Figure 5E-H) conspicuous expression of the reporter was observed in the dorsal NT, while its activity was absent in the ventral part of the NT. A salt-and-pepper expression was observed in the dorsal part of somite I with high and low levels of expression in individual cells. The reporter was active in ectodermal cells, particularly dorsal to the lateral plate mesoderm cells. In the cervical somite level (Figure 5A-D), the reporter expression pattern was similar to that in somite I. However, its activity in the dorsal NT was reduced at a time when the first, strongly labeled neural crest cells emanate from the neural tube.
 
@@ -82,7 +134,7 @@ To gain a cellular resolution of the 16xTF-VNP reporter activity, we prepared tr
 
 **Figure 5.:** Transverse sections at the level of the cervical somites (A–D), somite I (E–H), and the anterior PSM (I–L) of a 14HH 16xTF-VNP embryo, immunostained for mVenus (green), Acetylated Tubulin (red), and DAPI (blue). At the PSM level, Venus is expressed in the entire neural tube, in individual ectodermal cells and at low level in the PSM. At somite I level, mVenus is observed in the dorsal neural tube, the dorsal part of the somite, the ectoderm and the lateral plate mesoderm. At the level of cervical somites, mVenus expression is faint in the dorsal neural tube and it is stronger in migrating neural crest cells. The nuclear localization of mVenus is detectable by its colocalization with DAPI. Inserts show the levels at which the sections were made. Scale bar 20 µm (A–D), 50 m µm (E–H), or 30 µm (I–L). NT, neural tube; S, somite; LPM, lateral plate mesoderm.
 
-## TCF/β-catenin activity during late organogenesis
+### TCF/β-catenin activity during late organogenesis
 
 We also analyzed the activity of the reporters at 9 days of development (HH35; Figure 6). Tissues that displayed strong TCF/β-catenin transcriptional activity include the egg tooth (Figure 6A, F), the liver (Figure 6B, F), the feather buds (Figure 6C), the embryonic vertebrae (Figure 6D), as well as the limb bone growth zones (Figure 6E). While the significance of the conspicuous reporter activity in egg tooth formation is unknown, Wnt functions in liver, feather follicles and bone formation during organogenesis are well documented. Wnt/β-catenin was shown to promote hepatocyte proliferation in mice (Perugorria et al., 2019), to initiate the formation of hair and feather follicle placodes in mouse and chicken (DasGupta and Fuchs, 1999; Fuchs, 2016; Noramly et al., 1999; Olivera-Martinez et al., 2001) and to favor osteoblast differentiation over chondrocyte differentiation, thereby determining whether mesenchymal progenitors become osteoblasts or chondrocytes (Baron et al., 2006; Day et al., 2005).
 
@@ -90,32 +142,40 @@ We also analyzed the activity of the reporters at 9 days of development (HH35; F
 
 **Figure 6.:** Native TCF/β-catenin signaling reporter activity in E9 12xTF-d2GFP (panels A,B,D,E) and E8 16xTF-VNP embryos (C,F). In the 12xTFd2GFP embryo the TCF/β-catenin reporter is strongly expressed in the egg tooth (ET, panel A), liver (L; panel B), AER (panel E) and differentiating bones (vertebrae, V, panel D) and digits, panel (E). In the 16xTF-VNP embryo, the reporter activity is also observed in the feather follicles (FB; panel C), the egg tooth and the liver (panel F). The transgenic embryo Crystallin-EGFP marker is also visible in the lens of the 16xTF-VNP embryo. Scale bar 300µm.
 
-## Dynamic TCF/β-catenin transcriptional activity in live tissues
+### Dynamic TCF/β-catenin transcriptional activity in live tissues
 
 TCF/β-catenin spatiotemporal activity is highly dynamic, both on a cellular level and throughout development, a feature that has been difficult to study due to lack of reliable destabilized reporters. By using the 12xTF-d2GFP and the 16xTF-VNP transgenic lines, we followed the dynamics of TCF/β-catenin transcriptional activity in vivo. Observation of early somites showed a strong activation of the 12xTF-d2GFP reporter activity in single cells located in the DML (Video 3, arrowheads; see also Video 3 – Figure 4—figure supplement 1). The timeline of this movie shows that the increase of signal (from lowest to highest) takes place over a period of 5–6 hr. This is coherent with our previous studies, which showed that single epithelial cells within the DML, receiving Delta signals from incoming migrating neural crest cells, respond by activating the myogenic program through a NOTCH/β-catenin-dependent/Wnt-independent signaling module (Rios et al., 2011; Sieiro et al., 2016). The in vivo analysis presented here suggests that the entry of DML cells into myogenesis can be monitored through an increase in TCF/β-catenin reporter activity and their behavior followed live using the quail lines we generated.
+
+![Video 3.](https://cdn.elifesciences.org/articles/72098/elife-72098-video3.mp4.jpg)
+
+**Video 3.:** The movie shows a single Z-plane of the somite (10 μm) and focuses on two cells in the dorsal DML which increase the TCF/β-catenin reporter activity (magenta arrowheads). We also show a cell division event in the caudal DML (white arrowheads).
 
 A possible limitation of the TCF/β-catenin reporters we designed resides in the half-life of the chromophores we used (i.e. d2EGFP and VNP), which has been estimated to be about 2 hr (Li et al., 1998; Abranches et al., 2013). This suggests that dynamic changes in Wnt signaling close to, or below, 2 hr will be difficult to detect with these tools.
 
 An interesting finding of this study was the intense TCF/β-catenin-response in the fore- and hindlimb AER. The AER remained strongly labeled throughout limb growth (up to E9, where it was still detected at the fingertips, Figure 6E). Interestingly, the reporter-positive cells were found scattered in a wide region of early limb ectoderm (Video 4 and Figure 5 right panel), intermingled with reporter-negative cells. As the limbs grew, reporter-positive cells migrated toward and coalesced to form the AER, suggesting that they constitute a population of AER progenitors. The AER is crucial to limb formation, which serves as a signaling center that regulates dorso-ventral patterning of the limb and its proximo-distal growth (Fernandez-Teran and Ros, 2008; Zeller et al., 2009). Interestingly, lineage analyses performed in chicken embryos had shown that the AER is derived from cells located on a wide region of early ectoderm (Altabef et al., 1997; Michaud et al., 1997) and had suggested that AER progenitors were intermingled with non-ridge progenitor, an observation coherent with our finding. Wnt3a in the chicken embryo follows a similar pattern to that of the reporter, widely expressed throughout the dorsal ectoderm in early developing limb buds, and later condensing to the AER region (Fernandez-Teran and Ros, 2008; Kengaku et al., 1998; Zeller et al., 2009). While it is possible that AER progenitors (recognized by their expression of the TCF/β-catenin reporter) are specified and/or respond to the Wnt3a signal, a recent study suggested that mechanical tensions from the underlying growing limb mesenchyme participate in the activation of TCF/β-catenin response (and therefore in the specification of AER progenitors) in the overlying ectoderm in a Wnt-independent manner (Lau et al., 2015). In this context, it will be interesting to determine whether Wnt3a acts as a directional cue in the migration of AER progenitors toward the AER anlage.
 
+![Video 4.](https://cdn.elifesciences.org/articles/72098/elife-72098-video4.mp4.jpg)
+
+**Video 4.:** Ectodermal cells, strongly expressing the TCF/β-catenin reporter, are seen as they migrate toward the AER region where they condensate.The migrating NC and somitic cells are also highly visible.
+
 In summary, we have generated two transgenic quail lines suitable for the study of the dynamic behavior of TCF/β-catenin signaling, with the 16xTF-VNP being the most sensitive. Both lines allow to overcome previous limitations in the study of the Wnt/TCF/β-catenin signaling, particularly in vivo and their availability opens new routes of investigation into dynamic signaling activity of this pathway throughout development.
 
 ## Materials and methods
 
-## Generating transgenic quail by direct injection
+### Generating transgenic quail by direct injection
 
 The direct injection technique was performed as described in Serralbo et al., 2020; Tyack et al., 2013. The injection mix contained 0.6 μg of Tol2 plasmid, 1.2 μg of CAG-Transposase plasmid, 3 μl of lipofectamin 2000 CD in 90 μl of Optipro. About 1 μl of injection mix was injected in the dorsal aorta of 2.5-day-old embryos. After the injection, eggs were sealed and incubated until hatching. Hatchlings were grown for 6 weeks until they reached sexual maturity. Semen from males was collected using a female teaser and the massage technique as described in Chełmońska et al., 2008. The genomic DNA from semen was extracted and PCR was performed to test for the presence of the transgene in semen. Males showing a positive band in semen DNA were crossed with wild type females. Offspring were selected directly after hatching by PCR genotyping 5 days after hatching by plucking a feather. For the 16xTF-VNP birds, the CrystallGFP expression was also used for easy screening of transgenic birds. This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the Monash University. All of the animals were handled according to approved institutional animal care and use committee of Monash University (Research Ethics & Compliance numbers: ERM#27128 and ERM#18809).
 
-## Whole-mount and sections immunochemistry and confocal analyses,and statistics
+### Whole-mount and sections immunochemistry and confocal analyses,and statistics
 
 Embryos were dissected under a Leica fluorescent stereomicroscope and fixed up to 1 hr in 4% formaldehyde at RT. In the case that native fluorescence was required (i.e. no antibody staining), embryos were washed in PBS, incubated in 80% glycerol and directly (i.e. less than 24 hr after fixation) examined. To image native fluorescence expression, the detection spectrum for each fluorophore was set, using a Leica sp5 confocal microscope. The imaging parameters were set according to the sample with the strongest fluorescence to avoid over expression, and sample bleaching. These acquisition parameters were then left the same for the rest of the samples in the same experiment. For section preparations, embryos were embedded in 15% sucrose/7.5% gelatine/PBS solution and sectioned with Leica cryostat at 20 µm. Antibody staining was performed as described in Serralbo and Marcelle, 2014. The following primary antibodies were used: anti-GFP chicken polyclonal (ab13970, Abcam;1/1000), anti-Pax7 IgG1 mouse monoclonal (Hybridoma Bank; 1/10), anti-Myosin heavy Chain (MF20) IgG2b (Hybridoma bank; 1/10), anti-Neurofilament IgGIIa (Invitrogen; 1/400), Acetylated Tubulin IgGIIb (T6793, Sigma; 1/500), and anti-HNK1 IgGM (Hybridoma bank; 1/10). Images of native fluorescence and immunostained sections were acquired with a Leica SP5 confocal microscope and an UV-corrected HCX PL APO CS 40x/NA 1.25 Oil immersion objective (WD 0.1 mm), combined with tile scan acquisition. For whole-mount samples, a CARL ZEISS LSM 980 Airyscan 2 confocal microscope on inverted Axio Observer stand was used, with UV-IR corrected PL APO 40x/1.3 oil immersion objective (WD 0.20 mm). Images of native reporter activity in E9 embryos were taken under a Leica 3D Fluorescent microscope with a 4× dry objective.
 
 Mann–Whitney two-tailed non-parametric tests were applied on the entire population of counted cells to evaluate significance of each treatment. **p-value 0.001–0.01; * p-value ≤ 0.05.
 
-## 3DISCO clearing
+### 3DISCO clearing
 
 Performed as described in Belle et al., 2017. In short, embryos were dissected under a Leica fluorescent stereomicroscope and fixed for 1 hr in 4% formaldehyde at RT. The embryos were immunostained as described above. Following immunostaining, embryos were dehydrated by immersion in 50, 70, 80, and 100% tetrahydrofurane (THF; in milli-Q water). After dehydration the embryos were rinsed in dichlormethane (DCM) and finally in dibenzyl ether (DBE) to match the refractive index of tissue and surrounding medium leading to transparent sample. Images were acquired on LaVision BioTec UltraMicroscope II based on upright Olympus MVX10 macro zoom microscope with MVPLAPO 2 XC objective (NA 0.50, WD 20 mm) with 2× optical zoom. Overall stack thickness is 3 µm.
 
-## Time-lapse imaging
+### Time-lapse imaging
 
 For time-lapse imaging, embryos were incubated and cultured in custom-made egg incubator described in Serralbo et al., 2020, QuailNet database http://quailnet.geneticsandbioinformatics.eu/. Embryos were imaged using Leica SP8 confocal microscope on upright DM6000 stand with HCX APO L 20x/1.00 water dipping (WD 2.00 mm). Z-stack images were taken every 15 min for 9 hr (Video 3). Wider field of view time-lapse imaging were acquired every 10 min for 9 hr (Video 4) using Leica Thunder Image Model Organism. Images stitched together using the ImageJ software with drift correction plugin.

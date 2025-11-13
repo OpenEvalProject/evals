@@ -9,7 +9,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02k7v4d05 Department of Physiology, University of Bern Bern Switzerland
+1. Department of Physiology, University of Bern Bern Switzerland ([ROR:02k7v4d05](https://ror.org/02k7v4d05))
 
 † Corresponding author
 
@@ -25,73 +25,117 @@ In this study, we use both analytical calculations and numerical simulations of 
 
 ## Results
 
-## Normative theories suggest uncertainty-modulated prediction errors (UPEs)
+### Normative theories suggest uncertainty-modulated prediction errors (UPEs)
 
 In a complex, uncertain, and hence partly unpredictable world, it is impossible to avoid prediction errors. Some prediction errors will be the result of this variability or noise, other prediction errors will be the result of a change in the environment or new information. Ideally, only the latter should be used for learning, that is updating the current model of the world. The challenge our brain faces is to learn from prediction errors that result from new information, and less from prediction errors that result from noise. Hence, intuitively, if we learned that a kind of stimulus or context is very variable (high uncertainty), then a prediction error should have only little influence on our model. Consider a situation in which a person waits for a bus to arrive. If they learned that the bus is not reliable, another late arrival of the bus does not surprise them and does not change their model of the bus (Figure 1A). If, on the contrary, they learned that the kind of stimulus or context is not very variable (low uncertainty), a prediction error should have a larger impact on their model. For example, if they learned that buses are reliable, they will notice that the bus is late and may use this information to update their model of the bus (Figure 1A). This intuition of modulating prediction errors by the uncertainty associated with the stimulus or context is supported by both behavioural studies and normative theories of learning. Here we take the view that uncertainty is computed and represented on each level of the cortical hierarchy, from early sensory areas to higher level brain areas, as opposed to a task-specific uncertainty estimate at the level of decision-making in higher level brain areas (Figure 1B) [see this review for a comparison of these two accounts: Koblinger et al., 2021].
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/95127/elife-95127-fig1-v1.jpg)
 
-**Figure 1.:** (A) A person who learned that buses are unreliable has a prior expectation, which can be described by a wide Gaussian distribution of expected bus arrival times. When the bus does not arrive at the scheduled time, this person is not surprised and remains calm, as everything happens according to their model of the world. On the other hand, a person who learned that buses are punctual, which can be described by a narrow distribution of arrival times, may notice that the bus is late and get nervous, as they expected the bus to be punctual. This person can learn from this experience. If they always took this particular bus, and their uncertainty estimate is accurate, the prediction error could indicate that the bus schedule changed. (B) Models of uncertainty representation in cortex. Some models suggest that uncertainty is only represented in higher level areas concerned with decision-making (left). In contrast, we propose that uncertainty is represented at each level of the cortical hierarchy (right, shown is the visual hierarchy as an example). (C) A mouse learns the association between a sound () and a whisker deflection (a). The posterior parietal cortex (PPC) receives inputs from both somatosensory and auditory cortex. (sD) The whisker stimulus intensities are drawn from a Gaussian distribution with mean μ and standard deviation . (σE) Negative (left) and positive (right) prediction error circuit consisting of three cell types: layer 2/3 pyramidal cells (triangle), somatostatin-positive interneurons (SST, circle) and parvalbumin-positive interneurons (PV). SSTs represent the mean prediction in the postive circuit and the stimulus in the negative circuit, and PVs represent the variance.
+**Figure 1.:** (A) A person who learned that buses are unreliable has a prior expectation, which can be described by a wide Gaussian distribution of expected bus arrival times. When the bus does not arrive at the scheduled time, this person is not surprised and remains calm, as everything happens according to their model of the world. On the other hand, a person who learned that buses are punctual, which can be described by a narrow distribution of arrival times, may notice that the bus is late and get nervous, as they expected the bus to be punctual. This person can learn from this experience. If they always took this particular bus, and their uncertainty estimate is accurate, the prediction error could indicate that the bus schedule changed. (B) Models of uncertainty representation in cortex. Some models suggest that uncertainty is only represented in higher level areas concerned with decision-making (left). In contrast, we propose that uncertainty is represented at each level of the cortical hierarchy (right, shown is the visual hierarchy as an example). (C) A mouse learns the association between a sound ($a$) and a whisker deflection ($s$). The posterior parietal cortex (PPC) receives inputs from both somatosensory and auditory cortex. (D) The whisker stimulus intensities are drawn from a Gaussian distribution with mean μ and standard deviation $\sigma$. (E) Negative (left) and positive (right) prediction error circuit consisting of three cell types: layer 2/3 pyramidal cells (triangle), somatostatin-positive interneurons (SST, circle) and parvalbumin-positive interneurons (PV). SSTs represent the mean prediction in the postive circuit and the stimulus in the negative circuit, and PVs represent the variance.
 
-Before we suggest how cortical circuits compute such uncertainty-modulated prediction errors, we consider the normative solution to a simple association that a mouse can learn. The setting we consider is to predict a somatosensory stimulus based on an auditory stimulus. The auditory stimulus a is fixed, and the subsequent somatosensory stimulus s is variable and sampled from a Gaussian distribution (s∼N(μ,σ), Figure 1C and D). The optimal (maximum-likelihood) prediction is given by the mean of the stimulus distribution. Framed as an optimisation problem, the goal is to adapt the internal model of the mean μ^ such that the probability of observing samples s from the true distribution of whisker deflections is maximised given this model.
+Before we suggest how cortical circuits compute such uncertainty-modulated prediction errors, we consider the normative solution to a simple association that a mouse can learn. The setting we consider is to predict a somatosensory stimulus based on an auditory stimulus. The auditory stimulus a is fixed, and the subsequent somatosensory stimulus $s$ is variable and sampled from a Gaussian distribution ($s∼N(\mu,\sigma)$, Figure 1C and D). The optimal (maximum-likelihood) prediction is given by the mean of the stimulus distribution. Framed as an optimisation problem, the goal is to adapt the internal model of the mean $\mu^$ such that the probability of observing samples $s$ from the true distribution of whisker deflections is maximised given this model.
 
-Hence, stochastic gradient ascent learning on the log-likelihood suggests that with each observation s, the prediction (corresponding to the internal model of the mean) should be updated as follows to approach the maximum likelihood solution:(1)Δμ^∝∂∂μ^(log⁡L)=1σ2(s−μ^),
+Hence, stochastic gradient ascent learning on the log-likelihood suggests that with each observation $s$, the prediction (corresponding to the internal model of the mean) should be updated as follows to approach the maximum likelihood solution:
 
-where L is the likelihood. According to this formulation, the update for the internal model should be the prediction error scaled inversely by the variance σ2. Therefore, we propose that prediction errors should be modulated by uncertainty.
+$$
+Δ\mu^∝\frac{∂}{∂\mu^}(log⁡L)=\frac{1}{\sigma^{2}}(s−\mu^),
+$$
 
-## Computation of UPEs in cortical microcircuits
+where L is the likelihood. According to this formulation, the update for the internal model should be the prediction error scaled inversely by the variance $\sigma^{2}$. Therefore, we propose that prediction errors should be modulated by uncertainty.
 
-How can cortical microcircuits achieve uncertainty modulation? Prediction errors can be positive or negative, but neuronal firing rates are always positive. Because baseline firing rates are low in layer 2/3 pyramidal cells [e.g., (Niell and Stryker, 2008)], positive and negative prediction errors were suggested to be represented by distinct neuronal populations (Keller and Mrsic-Flogel, 2018; Rao and Ballard, 1999), which is in line with experimental data (Jordan and Keller, 2020). We, therefore, decompose the UPE into a positive UPE+ and a negative UPE− component (Figure 1C and D):(2)UPE=UPE+−UPE−=1σ2⌊s−μ⌋+−1σ2⌊μ−s⌋+,
+### Computation of UPEs in cortical microcircuits
 
-where ⌊...⌋+ denotes rectification at 0.
+How can cortical microcircuits achieve uncertainty modulation? Prediction errors can be positive or negative, but neuronal firing rates are always positive. Because baseline firing rates are low in layer 2/3 pyramidal cells [e.g., (Niell and Stryker, 2008)], positive and negative prediction errors were suggested to be represented by distinct neuronal populations (Keller and Mrsic-Flogel, 2018; Rao and Ballard, 1999), which is in line with experimental data (Jordan and Keller, 2020). We, therefore, decompose the UPE into a positive UPE+ and a negative UPE− component (Figure 1C and D):
 
-It has been suggested that error neurons compute prediction errors by subtracting the prediction from the stimulus input (or vice versa) (Attinger et al., 2017). The stimulus input can come from local stimulus-encoding layer 2/3 cells (Raltschev et al., 2023). Inhibitory interneurons provide the subtraction, resulting in an excitation-inhibition balance when they match (Hertäg and Sprekeler, 2020). To represent a UPE, error neurons need additionally be divisively modulated by the uncertainty. Depending on synaptic properties, such as reversal potentials, inhibitory neurons can have subtractive or divisive influences on their postsynaptic targets. Therefore, we propose that an inhibitory cell type that divisively modulates prediction error activity represents the uncertainty. We hypothesise, first, that in positive prediction error circuits, inhibitory interneurons with subtractive inhibitory effects represent the mean μ of the prediction. They probably either inherit the mean prediction or calculate it locally. Second, we hypothesise that inhibitory interneurons with divisive inhibitory effects represent the uncertainty σ2 of the prediction (Figure 1C and D), which they calculate locally. A layer 2/3 pyramidal cell that receives these sources of inhibition then reflects the uncertainty-modulated prediction error (Figure 1E).
+$$
+UPE=UPE^{+}−UPE^{−}=\frac{1}{\sigma^{2}}⌊s−\mu⌋^{+}−\frac{1}{\sigma^{2}}⌊\mu−s⌋^{+},
+$$
+
+where $⌊...⌋^{+}$ denotes rectification at 0.
+
+It has been suggested that error neurons compute prediction errors by subtracting the prediction from the stimulus input (or vice versa) (Attinger et al., 2017). The stimulus input can come from local stimulus-encoding layer 2/3 cells (Raltschev et al., 2023). Inhibitory interneurons provide the subtraction, resulting in an excitation-inhibition balance when they match (Hertäg and Sprekeler, 2020). To represent a UPE, error neurons need additionally be divisively modulated by the uncertainty. Depending on synaptic properties, such as reversal potentials, inhibitory neurons can have subtractive or divisive influences on their postsynaptic targets. Therefore, we propose that an inhibitory cell type that divisively modulates prediction error activity represents the uncertainty. We hypothesise, first, that in positive prediction error circuits, inhibitory interneurons with subtractive inhibitory effects represent the mean μ of the prediction. They probably either inherit the mean prediction or calculate it locally. Second, we hypothesise that inhibitory interneurons with divisive inhibitory effects represent the uncertainty $\sigma^{2}$ of the prediction (Figure 1C and D), which they calculate locally. A layer 2/3 pyramidal cell that receives these sources of inhibition then reflects the uncertainty-modulated prediction error (Figure 1E).
 
 More specifically, we propose, first, that the SSTs are involved in the computation of the difference between predictions and stimuli, as suggested before (Attinger et al., 2017). This subtraction could happen on the apical dendrite. Second, we propose that the PVs provide the uncertainty modulation. In line with this, prediction error neurons in layer 2/3 receive subtractive inhibition from somatostatin (SST) and divisive inhibition from parvalbumin (PV) interneurons (Wilson et al., 2012). However, SSTs can also have divisive effects, and PVs can have subtractive effects, dependent on circuit and postsynaptic properties (Seybold et al., 2015; Lee et al., 2012; Dorsett et al., 2021).
 
 In the following, we investigate circuits of prediction error neurons and different inhibitory cell types. We start by investigating in local positive and negative prediction error circuits whether the inhibitory cell types can locally learn to predict means and variances, before combining both subcircuits into a recurrent circuit consisting of both positive and negative prediction error neurons.
 
-## Local inhibitory cells learn to represent the mean and the variance given an associative cue
+### Local inhibitory cells learn to represent the mean and the variance given an associative cue
 
 As discussed above, how much an individual sensory input contributes to updating the internal model should depend on the uncertainty associated with the sensory stimulus in its current context. Uncertainty estimation requires multiple stimulus samples. Therefore, our brain needs to have a context-dependent mechanism to estimate uncertainty from multiple past instances of the sensory input. Let us consider the simple example from above, in which a sound stimulus represents a context with a particular amount of uncertainty. In terms of neural activity, the context could be encoded in a higher level representation of the sound. Here, we investigate whether the context representation can elicit activity in the PVs that reflects the expected uncertainty of the situation. To investigate whether the context provided by the sound can cause activity in SSTs and PVs that reflects the mean and the variance of the whisker stimulus distribution, respectively, we simulated a rate-based circuit model consisting of pyramidal cells and the relevant inhibitory cell types. This circuit receives both the sound and the whisker stimuli as inputs.
 
-## SSTs learn to estimate the mean
+### SSTs learn to estimate the mean
 
-With our circuit model, we first investigate whether SSTs can learn to represent the mean of the stimulus distribution. In this model, SSTs receive whisker stimulus inputs s, drawn from Gaussian distributions (Figure 2B), and an input from a higher level representation of the sound a (which is either on or off, see Equation 9 in Methods). The connection weight from the sound representation to the SSTs is plastic according to a local activity-dependent plasticity rule (see Equation 10). The aim of this rule is to minimise the difference between the activation of the SSTs caused by the sound input (which has to be learned) and the activation of the SSTs by the whisker stimulus (which nudges the SST activity in the right direction). The learning rule ensures that the auditory input itself causes SSTs to fire at the desired rate. After learning, the weight and the average SST firing rate reflect the mean of the presented whisker stimulus intensities (Figure 2C–F).
+With our circuit model, we first investigate whether SSTs can learn to represent the mean of the stimulus distribution. In this model, SSTs receive whisker stimulus inputs $s$, drawn from Gaussian distributions (Figure 2B), and an input from a higher level representation of the sound a (which is either on or off, see Equation 9 in Methods). The connection weight from the sound representation to the SSTs is plastic according to a local activity-dependent plasticity rule (see Equation 10). The aim of this rule is to minimise the difference between the activation of the SSTs caused by the sound input (which has to be learned) and the activation of the SSTs by the whisker stimulus (which nudges the SST activity in the right direction). The learning rule ensures that the auditory input itself causes SSTs to fire at the desired rate. After learning, the weight and the average SST firing rate reflect the mean of the presented whisker stimulus intensities (Figure 2C–F).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/95127/elife-95127-fig2-v1.jpg)
 
 **Figure 2.:** Illustration of the changes in the positive prediction error circuit. Thicker lines denote stronger weights. (B) Two different tones (red, orange) are associated with two somatosensory stimulus distributions with different means (red: high, orange: low). (C) SST firing rates (mean and std) during stimulus input. (D) SST firing rates over time for low (orange) and high (red) stimulus means. (E) Weights (mean and std) from sound a to SST for different values of μ. (F) SST firing rates (mean and std) for different values of μ. Mean and std were computed over 1000 data points from timestep 9000–10,000.
 
-## PVs learn to estimate the variance context-dependently
+### PVs learn to estimate the variance context-dependently
 
-We next addressed whether PVs can estimate and learn the variance locally. To estimate the variance of the whisker deflections s, the PVs have to estimate σ2[s]=Es[(s−E[s])2]=Es[(s−μ)2]. To do so, they need to have access to both the whisker stimulus s and the mean μ. PVs in PPC respond to sensory inputs in diverse cortical areas [S1:Sachidhanandam et al., 2016] and are inhibited by SSTs in layer 2/3, which we assumed to represent the mean. Finally, for calculating the variance, these inputs need to be squared. PVs were shown to integrate their inputs supralinearly (Cornford et al., 2019), which could help PVs to approximately estimate the variance.
+We next addressed whether PVs can estimate and learn the variance locally. To estimate the variance of the whisker deflections $s$, the PVs have to estimate $\sigma^{2}[s]=E_{s}[(s−E[s])^{2}]=E_{s}[(s−\mu)^{2}]$. To do so, they need to have access to both the whisker stimulus $s$ and the mean μ. PVs in PPC respond to sensory inputs in diverse cortical areas [S1:Sachidhanandam et al., 2016] and are inhibited by SSTs in layer 2/3, which we assumed to represent the mean. Finally, for calculating the variance, these inputs need to be squared. PVs were shown to integrate their inputs supralinearly (Cornford et al., 2019), which could help PVs to approximately estimate the variance.
 
-In our circuit model, we next tested whether the PVs can learn to represent the variance of an upcoming whisker stimulus based on a context provided by an auditory input (Figure 3A). Two different auditory inputs (Figure 3B purple, green) are paired with two whisker stimulus distributions that differ in their variances (green: low, purple: high). PVs receive both the stimulus input as well as the inhibition from the SSTs, which subtracts the prediction of the mean (Equation 11). The synaptic connection from the auditory input to the PVs is plastic according to the same local activity-dependent plasticity rule as the connection to the SSTs (Equation 13). With this learning rule, the weight onto the PV becomes proportional to σ (Figure 3C), such that the PV firing rate becomes proportional to σ2 on average (Figure 3D). The average PV firing rate is exactly proportional to σ2 assuming a quadratic activation function ϕPV(x) (Figure 3D–F and H) and monotonically increasing with σ2 with other choices of activation functions (Figure 3—figure supplement 1), both when the sound input is presented alone (Figure 3D, E and H) or when paired with whisker stimulation (Figure 3F). Notably, a single PV neuron is sufficient for encoding variances of different contexts because the context-dependent σ is stored in the connection weights.
+In our circuit model, we next tested whether the PVs can learn to represent the variance of an upcoming whisker stimulus based on a context provided by an auditory input (Figure 3A). Two different auditory inputs (Figure 3B purple, green) are paired with two whisker stimulus distributions that differ in their variances (green: low, purple: high). PVs receive both the stimulus input as well as the inhibition from the SSTs, which subtracts the prediction of the mean (Equation 11). The synaptic connection from the auditory input to the PVs is plastic according to the same local activity-dependent plasticity rule as the connection to the SSTs (Equation 13). With this learning rule, the weight onto the PV becomes proportional to $\sigma$ (Figure 3C), such that the PV firing rate becomes proportional to $\sigma^{2}$ on average (Figure 3D). The average PV firing rate is exactly proportional to $\sigma^{2}$ assuming a quadratic activation function $ϕ_{PV}(x)$ (Figure 3D–F and H) and monotonically increasing with $\sigma^{2}$ with other choices of activation functions (Figure 3—figure supplement 1), both when the sound input is presented alone (Figure 3D, E and H) or when paired with whisker stimulation (Figure 3F). Notably, a single PV neuron is sufficient for encoding variances of different contexts because the context-dependent $\sigma$ is stored in the connection weights.
 
-To estimate the variance, the mean needs to be subtracted from the stimulus samples. A faithful mean subtraction is only ensured if the weights from the SSTs to the PVs (wPV,SST) match the weights from the stimuli s to the PVs (wPV,s). The weight wPV,SST can be learned to match the weight wPV,s with a local activity-dependent plasticity rule (see Figure 3—figure supplement 2 and Appendix).
+![Figure 3.](https://cdn.elifesciences.org/articles/95127/elife-95127-fig3-v1.jpg)
+
+**Figure 3.:** (A) Illustration of the changes in the positive prediction error circuit. Thicker lines denote stronger weights. (B) Two different tones (purple, green) are associated with two somatosensory stimulus distributions with different variances (purple: high, green: low). (C) Weights from sound a to PV over time for two different values of stimulus variance (high: $\sigma=0.8$ [purple], low: $\sigma=0.4$ [green]). (D) PV firing rates over time given sound input (without whisker stimulus input) for low (green) and high (purple) stimulus variance. (E) PV firing rates (mean and std) given sound input and whisker stimuli for low and high stimulus variance. (F) PV firing rates (mean and std) during sound and stimulus input. (G) Weights (mean and std) from sound $a$ to PV for different values of $\sigma$. (H) PV firing rates (mean and std) given sound input for different values of $\sigma^{2}$. Mean and std were computed from 150,000 data points from timestep 450,000–600,000.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/95127/elife-95127-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Learning the variance in the positive prediction error circuit with PVs with a power activation function (exponent = 3.0). (A, B) are analogous to Figure 3G and H, and the circuit is the same except that the activation function of the PVs ($ϕ_{PV}(x)$) has an exponent of 3.0 instead of 2.0. (C, D) are zoomed-out versions of (A, B).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/95127/elife-95127-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Plastic weights from SST to PV learn to match weights from $s$ to PV.With inhibitory plasticity, weights from SST to PV can be learned. This figure shows that the weight from SST to PV ($w_{PV,SST}$) is equal to the weight from $s$ to PV ($w_{PV,s}$). The inhibitory plasticity rule is described in the Appendix.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/95127/elife-95127-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Illustration of the changes in the negative prediction error circuit. Thicker lines denote stronger weights. (B) Two different tones (purple, green) are associated with two somatosensory stimulus distributions with different variances (purple: high, green: low). (C) Weights from sound $a$ to PV over time for two different values of stimulus variance (high: $\sigma=0.8$ [purple], low: $\sigma=0.4$ [green]). (D) PV firing rates over time given sound input (without stimulus input) for low (green) and high (purple) stimulus variance. (E) PV firing rates (mean and std) given sound input for low and high stimulus variance. (F) PV firing rates (mean and std) during sound and stimulus input. (G) Weights from sound $a$ to PV for different values of $\sigma$ (mean and std). (H) PV firing rates given sound input for different values of $\sigma^{2}$ (mean and std).
+
+To estimate the variance, the mean needs to be subtracted from the stimulus samples. A faithful mean subtraction is only ensured if the weights from the SSTs to the PVs ($w_{PV,SST}$) match the weights from the stimuli $s$ to the PVs ($w_{PV,s}$). The weight $w_{PV,SST}$ can be learned to match the weight $w_{PV,s}$ with a local activity-dependent plasticity rule (see Figure 3—figure supplement 2 and Appendix).
 
 The PVs can similarly estimate the uncertainty in negative prediction error circuits (Figure 3—figure supplement 3). In these circuits, SSTs represent the current sensory stimulus, and the mean prediction is an excitatory input to both negative prediction error neurons and PVs.
 
-## Calculation of the UPE in layer 2/3 error neurons
+### Calculation of the UPE in layer 2/3 error neurons
 
-Embedded in a circuit with subtractive and divisive interneuron types, layer 2/3 pyramidal cells could first compute the difference between the prediction and the stimulus in their dendrites, before their firing rate is divisively modulated by inhibition close to their soma. Layer 2/3 pyramidal cell dendrites can generate NMDA and calcium spikes, which cause a nonlinear integration of inputs. Hence, we took this into account and modelled the integration of dendritic activity as Idend=⌊wUPE,ss−wUPE,SSTrSST⌋k with k determining the non-linearity. The total activity of prediction error neurons was modelled by(3)τEdrUPEdt=−rUPE+ϕ(IdendI0+wUPE,PVrPV).
+Embedded in a circuit with subtractive and divisive interneuron types, layer 2/3 pyramidal cells could first compute the difference between the prediction and the stimulus in their dendrites, before their firing rate is divisively modulated by inhibition close to their soma. Layer 2/3 pyramidal cell dendrites can generate NMDA and calcium spikes, which cause a nonlinear integration of inputs. Hence, we took this into account and modelled the integration of dendritic activity as $I_{dend}=⌊w_{UPE,s}s−w_{UPE,SST}r_{SST}⌋^{k}$ with $k$ determining the non-linearity. The total activity of prediction error neurons was modelled by
+
+$$
+\tau_{E}\frac{dr_{UPE}}{dt}=−r_{UPE}+ϕ(\frac{I_{dend}}{I_{0}+w_{UPE,PV}r_{PV}}).
+$$
 
 The nonlinear integration of inputs is beneficial when the mean input changes and the current prediction differs strongly from the new mean of the stimulus distribution.
 
 For example, if the mean input increases strongly, the PV firing rate will increase for larger errors and inhibit error neurons more strongly than indicated by the learned variance estimate. The pyramidal nonlinearity compensates for this increased inhibition by PVs, such that in the end, layer 2/3 cell activity reflects an uncertainty-modulated prediction error (Figure 4D–F) in both negative (Figure 4A) and positive (Figure 4C) prediction error circuits. A stronger nonlinearity (Figure 4G–I) has the effect that error neurons elicit larger responses to larger prediction errors.
 
-To ensure a comparison between the stimulus and the prediction, the inhibition from the SSTs needs to match the excitation, which it is compared to, in the UPE neurons: In the positive PE circuit, the weights from the SSTs representing the prediction to the UPE neurons need to match the weights from the stimulus s to the UPE neurons. In the negative PE circuit, the weights from SSTs representing the stimulus to the negative UPE neurons need to match the weights from the mean representation to the UPE neurons, respectively. In line with previous proposals, error neuron activity signals the breaking of EI balance (Hertäg and Sprekeler, 2020; Barry and Gerstner, 2024). With inhibitory plasticity (target-based, see Appendix), the weights from the SSTs can learn to match the incoming excitatory weights (Figure 4—figure supplement 1).
+![Figure 4.](https://cdn.elifesciences.org/articles/95127/elife-95127-fig4-v1.jpg)
 
-## Interactions between representation neurons and error neurons
+**Figure 4.:** (A) Illustration of the negative prediction error circuit. (B) Distributions with different standard deviations $\sigma$. (C) Illustration of the positive prediction error circuit. (D) Firing rate of the error neuron in the negative prediction error circuit (UPE) as a function of $\sigma$ for two values of $|s−\mu|$ after learning μ and $\sigma$. (E) Rates of both UPE+ and UPE−-representing error neurons with a nonlinear activation function, where $k=2.0$, as a function of the difference between the stimulus and the mean ($s−\mu$). (F) Firing rate of the error neuron in the positive prediction error circuit (UPE+) as a function of $\sigma$ for two values of $|s−\mu|$ after learning μ and $\sigma$. (G-I) same as (D-F) for error neurons with $k=2.5$ with the same legend as in (D-F).
 
-The theoretical framework of predictive processing includes both prediction error neurons and representation neurons, the activity of which reflects the internal representation and should hence be compared to the sensory information. To make predictions for the activity of representation neurons, we expand our circuit model with this additional cell type. We first show that a representation neuron R can learn a representation of the stimulus mean given inputs from L2/3 error neurons. The representation neuron receives inputs from positive and negative prediction error neurons and from a higher level representation of the sound a (Figure 5A). It sends its current mean estimate to the error circuits by either targeting the SSTs (in the positive circuit) or the pyramidal cells directly (in the negative circuit). Hence in this recurrent circuit, the SSTs inherit the mean representation instead of learning it. After learning, the weights wR,a from the sound representation to the representation neuron and the average firing rate of this representation neuron reflects the mean of the stimulus distribution (Figure 5B and C).
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/95127/elife-95127-fig4-figsupp1-v1.jpg)
 
-As discussed earlier, pyramidal cells tend to integrate their dendritic inputs nonlinearly due to NMDA spikes. We here show that a circuit with prediction error neurons with a dendritic nonlinearity (as in Figure 4) approximates an idealised circuit, in which the PV rate perfectly represents the variance (Figure 5D and E, see inset for comparison of the two models). The dendritic nonlinearity can hence compensate for PV neuron dynamics. Also in this recurrent circuit, PVs learn to reflect the variance, as the weight from the sound representation a is learned to be proportional to σ (Figure 5—figure supplement 1).
+**Figure 4—figure supplement 1.:** This figure shows that the weights from the SSTs to the UPEs in both the positive (left) and the negative (right) prediction error circuit can be learned with inhibitory plasticity to match the weights from the stimulus representation $s$ to the UPEs. The inhibitory plasticity rule is described in the Appendix.
 
-## Predictions for different cell types
+To ensure a comparison between the stimulus and the prediction, the inhibition from the SSTs needs to match the excitation, which it is compared to, in the UPE neurons: In the positive PE circuit, the weights from the SSTs representing the prediction to the UPE neurons need to match the weights from the stimulus $s$ to the UPE neurons. In the negative PE circuit, the weights from SSTs representing the stimulus to the negative UPE neurons need to match the weights from the mean representation to the UPE neurons, respectively. In line with previous proposals, error neuron activity signals the breaking of EI balance (Hertäg and Sprekeler, 2020; Barry and Gerstner, 2024). With inhibitory plasticity (target-based, see Appendix), the weights from the SSTs can learn to match the incoming excitatory weights (Figure 4—figure supplement 1).
 
-Our model makes predictions for the activity of different cell types for positive and negative prediction errors (e.g. when a mouse receives whisker stimuli that are larger (Figure 6A, black) or smaller (Figure 6G, grey) than expected) in contexts associated with different amounts of uncertainty (e.g. the high-uncertainty (purple) versus the low-uncertainty (green) context are associated with different sounds). Our model suggests that there are two types of interneurons that provide subtractive inhibition to the prediction error neurons (presumably SST subtypes): in the positive prediction error circuit (SST+), they signal the expected value of the whisker stimulus intensity (Figure 6B and H). In the negative prediction error circuit (SST−) they signal the whisker stimulus intensity (Figure 6C, I). We further predict that interneurons that divisively modulate prediction error neuron activity represent the uncertainty (presumably PVs). Those do not differ in their activity between positive and negative circuits and may even be shared across the two circuits: in both positive and negative prediction error circuits, these cells signal the variance (Figure 6D and J). L2/3 pyramidal cells that encode prediction errors signal uncertainty-modulated positive prediction errors (Figure 6E) and uncertainty-modulated negative prediction errors (Figure 6L), respectively. Finally, the existence of so-called internal representation neurons has been proposed (Keller and Mrsic-Flogel, 2018). In our case, those neurons represent the predicted mean of the associated whisker deflections. Our model predicts that upon presentation of an unexpected whisker stimulus, those internal representation neurons adjust their activity to represent the new whisker deflection depending on the variability of the associated whisker deflections: they adjust their activity more (given equal deviations from the mean) if the associated whisker deflections are less variable (see the next section and Figure 7).
+### Interactions between representation neurons and error neurons
+
+The theoretical framework of predictive processing includes both prediction error neurons and representation neurons, the activity of which reflects the internal representation and should hence be compared to the sensory information. To make predictions for the activity of representation neurons, we expand our circuit model with this additional cell type. We first show that a representation neuron R can learn a representation of the stimulus mean given inputs from L2/3 error neurons. The representation neuron receives inputs from positive and negative prediction error neurons and from a higher level representation of the sound $a$ (Figure 5A). It sends its current mean estimate to the error circuits by either targeting the SSTs (in the positive circuit) or the pyramidal cells directly (in the negative circuit). Hence in this recurrent circuit, the SSTs inherit the mean representation instead of learning it. After learning, the weights $w_{R,a}$ from the sound representation to the representation neuron and the average firing rate of this representation neuron reflects the mean of the stimulus distribution (Figure 5B and C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/95127/elife-95127-fig5-v1.jpg)
+
+**Figure 5.:** (A) Illustration of the circuit. A representation neuron (turquoise) receives input from both positive and negative prediction error circuits (UPE+ and UPE−) and projects back to them. The UPE− has a negative impact on the firing rate of the representation neuron ($r_{R}$). A weight $w_{R,a}$ from the higher level representation of the context given by sound $a$ is learned. (B) Weights $w_{R,a}$ over time for different values of μ ($\mu\in[1,3,5]$). (C) R firing rates given sound input for different values of μ (mean and std over 50,000 data points from timestep 50,000–100,000,, the end of the simulation). (D) Activity of the different cell types (PV: light green, R: turquiose, UPE: black) and whisker stimulus samples (grey dots) over time. Learning the mean representation with PVs (light green) reflecting the MSE at the beginning, which is compensated by nonlinear activation of L2/3 neurons (black). The evolution of the mean rate of neuron $R$ (turquoise) is similar to the perfect case in (E). (E) Same colour code as in (D). Inset shows comparison to (D) Learning the mean representation assuming PVs (light green) perfectly represent the variance.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/95127/elife-95127-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Weights from $a$ to PV as a function of $\sigma$ in the positive (A) and negative (C) prediction error subcircuit. PV firing rates as a function of $\sigma^{2}$ in the positive (B) and negative (D) prediction error circuit.
+
+As discussed earlier, pyramidal cells tend to integrate their dendritic inputs nonlinearly due to NMDA spikes. We here show that a circuit with prediction error neurons with a dendritic nonlinearity (as in Figure 4) approximates an idealised circuit, in which the PV rate perfectly represents the variance (Figure 5D and E, see inset for comparison of the two models). The dendritic nonlinearity can hence compensate for PV neuron dynamics. Also in this recurrent circuit, PVs learn to reflect the variance, as the weight from the sound representation $a$ is learned to be proportional to $\sigma$ (Figure 5—figure supplement 1).
+
+### Predictions for different cell types
+
+Our model makes predictions for the activity of different cell types for positive and negative prediction errors (e.g. when a mouse receives whisker stimuli that are larger (Figure 6A, black) or smaller (Figure 6G, grey) than expected) in contexts associated with different amounts of uncertainty (e.g. the high-uncertainty (purple) versus the low-uncertainty (green) context are associated with different sounds). Our model suggests that there are two types of interneurons that provide subtractive inhibition to the prediction error neurons (presumably SST subtypes): in the positive prediction error circuit ($SST^{+}$), they signal the expected value of the whisker stimulus intensity (Figure 6B and H). In the negative prediction error circuit ($SST^{−}$) they signal the whisker stimulus intensity (Figure 6C, I). We further predict that interneurons that divisively modulate prediction error neuron activity represent the uncertainty (presumably PVs). Those do not differ in their activity between positive and negative circuits and may even be shared across the two circuits: in both positive and negative prediction error circuits, these cells signal the variance (Figure 6D and J). L2/3 pyramidal cells that encode prediction errors signal uncertainty-modulated positive prediction errors (Figure 6E) and uncertainty-modulated negative prediction errors (Figure 6L), respectively. Finally, the existence of so-called internal representation neurons has been proposed (Keller and Mrsic-Flogel, 2018). In our case, those neurons represent the predicted mean of the associated whisker deflections. Our model predicts that upon presentation of an unexpected whisker stimulus, those internal representation neurons adjust their activity to represent the new whisker deflection depending on the variability of the associated whisker deflections: they adjust their activity more (given equal deviations from the mean) if the associated whisker deflections are less variable (see the next section and Figure 7).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/95127/elife-95127-fig6-v1.jpg)
 
@@ -99,33 +143,45 @@ Our model makes predictions for the activity of different cell types for positiv
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/95127/elife-95127-fig7-v1.jpg)
 
-**Figure 7.:** (A, B) Firing rate over time of the representation neuron in a circuit with uncertainty-modulated prediction errors (gold) and in a circuit with unmodulated errors (black) in a low uncertainty setting (A) and a high uncertainty setting (B). (C) Standard deviation of the firing rate of the representation neuron in the low uncertainty setting (inset has a different scale, outer axis scale matches the one in D). (D) Standard deviation of the firing rate of the representation neuron in the high uncertainty setting. (E) Standard deviation of the firing rate  as a function of the standard deviation of the presented stimulus distribution rR. Standard deviations were computed over 100,000 data points from timestep 100,000–200,000.σs
+**Figure 7.:** (A, B) Firing rate over time of the representation neuron in a circuit with uncertainty-modulated prediction errors (gold) and in a circuit with unmodulated errors (black) in a low uncertainty setting (A) and a high uncertainty setting (B). (C) Standard deviation of the firing rate of the representation neuron in the low uncertainty setting (inset has a different scale, outer axis scale matches the one in D). (D) Standard deviation of the firing rate of the representation neuron in the high uncertainty setting. (E) Standard deviation of the firing rate $r_{R}$ as a function of the standard deviation of the presented stimulus distribution $\sigma_{s}$. Standard deviations were computed over 100,000 data points from timestep 100,000–200,000.
 
 The following experimental results are compatible with our predictions: First, putative inhibitory neurons (narrow spiking units) in the macaque anterior cingulate cortex increased their firing rates in periods of high uncertainty (Banaie Boroujeni et al., 2021). These inhibitory neurons could correspond to the PVs in our model. Second, prediction error activity seems to decrease in less predictable, and hence more uncertain, contexts: in mice reared in a predictable environment [where locomotion and visual flow match (Keller et al., 2012)], error neuron responses to mismatches in locomotion and visual flow decreased with each day of experiencing these unpredictable mismatches. Third, the responses of SSTs and PVs to mismatches between locomotion and visual flow (Attinger et al., 2017) are in line with our model (note that in this experiment the mismatches are negative prediction errors as visual flow was halted despite ongoing locomotion): In this study, SST responses decreased during mismatch, that is when the visual flow was halted, and there was no difference between mice reared in a predictable or unpredictable environment. In line with these observations, the authors concluded that SST responses reflected the actual visual input. In our model negative PE circuit, SSTs also reflect the actual stimulus input, which in our case was a whisker stimulus (SST rates in Figure 6C, I reflect the stimuli (black and grey bar) in A and G, respectively) and SST rates are the same for high and low uncertainty (corresponding to mice reared in a predictable or unpredictable environment). In the same study, PV responses were absent towards mismatches in animals reared in an unpredictable environment (Attinger et al., 2017). The authors argued that mice reared in an unpredictable environment did not learn to form a prediction. In our model, the missing prediction corresponds to missing predictive input from the auditory domain (e.g. due to undeveloped synapses from the predictive auditory input). If we removed the predictive input in our model, PVs in the negative PE circuit would also be silent as they would not receive any of the excitatory predictive inputs.
 
-## The effective learning rate is automatically adjusted with UPEs
+### The effective learning rate is automatically adjusted with UPEs
 
 To test whether UPEs can automatically adjust the effective learning rate of a downstream neural population, we looked at two contexts that differed in uncertainty and compared how the mean representation evolves with and without UPEs. Indeed, in a low-uncertainty setting, a new mean representation can be learned faster with UPEs (in comparison to unmodulated, Figure 7A and C). In a high-uncertainty setting, the effective learning rate is smaller, and the mean representation is less variable than in the unmodulated case (Figure 7B and D). The standard deviation of the firing rate increases only sublinearly with the standard deviation of the inputs (Figure 7E). In summary, uncertainty-modulation of prediction errors enables an adaptive learning rate modulation.
 
-## UPEs ensure uncertainty-based weighting of prior and sensory information
+### UPEs ensure uncertainty-based weighting of prior and sensory information
 
-Behavioural studies suggest that during perception humans integrate priors or predictions (p) and sensory information (s) in a Bayes-optimal manner (Ashourian and Loewenstein, 2011; Petzschner and Glasauer, 2011). This entails that an internal neural representation (r, which determines perception, is achieved by weighting the two according to their uncertainties:(4)r=1c(1σs2s+1σp2p),
+Behavioural studies suggest that during perception humans integrate priors or predictions ($p$) and sensory information ($s$) in a Bayes-optimal manner (Ashourian and Loewenstein, 2011; Petzschner and Glasauer, 2011). This entails that an internal neural representation ($r$, which determines perception, is achieved by weighting the two according to their uncertainties:
 
-where c=1σs2+1σp2, σs2 is the uncertainty of the sensory information, and σp2 is the uncertainty of the prior.
+$$
+r=\frac{1}{c}(\frac{1}{\sigma_{s}^{2}}s+\frac{1}{\sigma_{p}^{2}}p),
+$$
 
-To obtain this weighting in the steady state, prediction errors from the lower area, the sensory prediction error (s−r), and from the local area, the representation prediction error (r−p), can be used to update the current representation [as in Rao and Ballard, 1999]. Maximising the log-likelihood (Equation 22 in Methods and Equation 35 in SI) yields an update of the representation by the difference between the bottom-up and top-down prediction errors.(5)r˙=1σs2(s−r)−1σp2(r−p)
+where $c=\frac{1}{\sigma_{s}^{2}}+\frac{1}{\sigma_{p}^{2}}$, $\sigma_{s}^{2}$ is the uncertainty of the sensory information, and $\sigma_{p}^{2}$ is the uncertainty of the prior.
 
-From this we obtain Equation 4 by setting r˙=0. Translating the update in Equation 5 into our framework of UPE circuits reads as(6)r˙=(UPEs+−UPEs−)−(UPEp+−UPEp−),
+To obtain this weighting in the steady state, prediction errors from the lower area, the sensory prediction error ($s−r$), and from the local area, the representation prediction error ($r−p$), can be used to update the current representation [as in Rao and Ballard, 1999]. Maximising the log-likelihood (Equation 22 in Methods and Equation 35 in SI) yields an update of the representation by the difference between the bottom-up and top-down prediction errors.
+
+$$
+r˙=\frac{1}{\sigma_{s}^{2}}(s−r)−\frac{1}{\sigma_{p}^{2}}(r−p)
+$$
+
+From this we obtain Equation 4 by setting $r˙=0$. Translating the update in Equation 5 into our framework of UPE circuits reads as
+
+$$
+r˙=(UPE_{s}^{+}−UPE_{s}^{−})−(UPE_{p}^{+}−UPE_{p}^{−}),
+$$
 
 illustrated in Figure 8A.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/95127/elife-95127-fig8-v1.jpg)
 
-**Figure 8.:** (A) Illustration of the hierarchical two-area model. A representation neuron () in area r receives positive and negative UPEs from the area ℓ below (sensory prediction error, as in ℓ−1Figure 5), and positive and negative UPEs from the same area (representation prediction error) with different signs, see Equation 5. In this example, the uncertainty in area  corresponds to the sensory uncertainty ℓ−1, and the uncertainty in the area σs2 above, corresponds to the prior uncertainty ℓ. Both uncertainties are represented by PV activity in the respective area. (σp2B, C) The simulation results from the hierarchical circuit model yield an uncertainty-based weighting of prior and sensory information as in Equation 4. (B) The activity  of the representation neuron as a function of the stimulus r for different amounts of prior uncertainty s, when the sensory uncertainty is fixed σp2. The histograms show the distribution of the sensory stimulus samples (grey) and the distribution of the activity of the representation neuron (green). (σs2=0.5C) The activity of the representation neuron as a function of the stimulus for different amounts of sensory uncertainty , when the prior uncertainty is fixed σs2.σp2=0.5
+**Figure 8.:** (A) Illustration of the hierarchical two-area model. A representation neuron ($r$) in area $ℓ$ receives positive and negative UPEs from the area $ℓ−1$ below (sensory prediction error, as in Figure 5), and positive and negative UPEs from the same area (representation prediction error) with different signs, see Equation 5. In this example, the uncertainty in area $ℓ−1$ corresponds to the sensory uncertainty $\sigma_{s}^{2}$, and the uncertainty in the area $ℓ$ above, corresponds to the prior uncertainty $\sigma_{p}^{2}$. Both uncertainties are represented by PV activity in the respective area. (B, C) The simulation results from the hierarchical circuit model yield an uncertainty-based weighting of prior and sensory information as in Equation 4. (B) The activity $r$ of the representation neuron as a function of the stimulus $s$ for different amounts of prior uncertainty $\sigma_{p}^{2}$, when the sensory uncertainty is fixed $\sigma_{s}^{2}=0.5$. The histograms show the distribution of the sensory stimulus samples (grey) and the distribution of the activity of the representation neuron (green). (C) The activity of the representation neuron as a function of the stimulus for different amounts of sensory uncertainty $\sigma_{s}^{2}$, when the prior uncertainty is fixed $\sigma_{p}^{2}=0.5$.
 
-In our circuit, the representation neuron (green) receives the bottom-up errors, which are modulated by sensory uncertainty σs2, as in the recurrent circuit model from the previous section. In addition, it receives errors between its current activity and a prior (a higher level expectation of the representation). The prior is set to the learned mean of the stimulus distribution and the errors are modulated by the learned prior uncertainty σp2. We simulated this circuit, to which we presented stimuli drawn from Gaussian distributions as before. We varied the PV activity reflecting the sensory and prior uncertainty, and measured the activity of the representation neuron r to each stimulus. The higher the uncertainty of the prior information σs, the more the representation reflects the current stimulus (Figure 8B, see also Equation 4). The higher the uncertainty of the sensory information σs, the more the representation reflects the prior mean (Figure 8C). This is a common behavioural effect, which is often referred to as central tendency effect or contraction bias (Hollingworth, 1910; Jazayeri and Shadlen, 2010; Akrami et al., 2018; Meirhaeghe et al., 2021).
+In our circuit, the representation neuron (green) receives the bottom-up errors, which are modulated by sensory uncertainty $\sigma_{s}^{2}$, as in the recurrent circuit model from the previous section. In addition, it receives errors between its current activity and a prior (a higher level expectation of the representation). The prior is set to the learned mean of the stimulus distribution and the errors are modulated by the learned prior uncertainty $\sigma_{p}^{2}$. We simulated this circuit, to which we presented stimuli drawn from Gaussian distributions as before. We varied the PV activity reflecting the sensory and prior uncertainty, and measured the activity of the representation neuron $r$ to each stimulus. The higher the uncertainty of the prior information $\sigma_{s}$, the more the representation reflects the current stimulus (Figure 8B, see also Equation 4). The higher the uncertainty of the sensory information $\sigma_{s}$, the more the representation reflects the prior mean (Figure 8C). This is a common behavioural effect, which is often referred to as central tendency effect or contraction bias (Hollingworth, 1910; Jazayeri and Shadlen, 2010; Akrami et al., 2018; Meirhaeghe et al., 2021).
 
-To give a simple example how the prior uncertainty could come about in a dynamical environment, imagine noisy Gaussian sensory inputs with a fixed variance σs2, and step changes in the mean, as in Figure 7. On the lowest level 0, after faithful learning, the learned variance σ02 will represent the variance of the sensory input σs2 for a given mean. If in addition, the mean of the sensory input varies (as in Figure 7), then on the level above σ12 will reflect how much the mean varies. The former corresponds to the sensory uncertainty, the latter to the environmental volatility, which increases the uncertainty about the prediction for the mean (σp2).
+To give a simple example how the prior uncertainty could come about in a dynamical environment, imagine noisy Gaussian sensory inputs with a fixed variance $\sigma_{s}^{2}$, and step changes in the mean, as in Figure 7. On the lowest level 0, after faithful learning, the learned variance $\sigma_{0}^{2}$ will represent the variance of the sensory input $\sigma_{s}^{2}$ for a given mean. If in addition, the mean of the sensory input varies (as in Figure 7), then on the level above $\sigma_{1}^{2}$ will reflect how much the mean varies. The former corresponds to the sensory uncertainty, the latter to the environmental volatility, which increases the uncertainty about the prediction for the mean ($\sigma_{p}^{2}$).
 
 ## Discussion
 
@@ -155,109 +211,586 @@ To compare predictions and stimuli in a subtractive manner, the encoded predicti
 
 To enable the comparison between predictions and sensory information via subtractive inhibition, we pointed out that the weights of those inputs on the postsynaptic neuron need to match. This essentially means that there needs to be a balance of excitatory and inhibitory inputs. Such an EI balance has been observed experimentally (Tan and Wehr, 2009). And it has previously been suggested that error responses are the result of breaking this EI balance (Hertäg and Sprekeler, 2020; Barry and Gerstner, 2024). Heterosynaptic plasticity is a possible mechanism to achieve EI balance (Field et al., 2020). For example, spike pairing in pre- and postsynaptic neurons induces long-term potentiation at co-activated excitatory and inhibitory synapses with the degree of inhibitory potentiation depending on the evoked excitation (D’amour and Froemke, 2015), which can normalise EI balance (Field et al., 2020).
 
-## Conclusion
+### Conclusion
 
 To conclude, we proposed that prediction error activity in layer 2/3 circuits is modulated by uncertainty and that the diversity of cell types in these circuits achieves the appropriate scaling of the prediction error activity. The proposed model is compatible with Bayes-optimal behaviour and makes predictions for future experiments.
 
 ## Methods
 
-## Derivation of the UPE
+### Derivation of the UPE
 
-The goal is to learn μ^ to maximise the log-likelihood:log⁡L=log⁡p(s|μ^,σ)=log⁡∏n=1NN(sn|μ^,σ)=−12σ2∑n=1N(sn−μ^)2−N2log⁡(2πσ2)
+The goal is to learn $\mu^$ to maximise the log-likelihood:
 
-We consider the log-likelihood for one sample s of the stimulus distribution:log⁡p(s|μ^,σ)=−12σ2(s−μ^)2−12log⁡(2πσ2)
+$$
+log⁡L=log⁡p(s|\mu^,\sigma)
+$$
 
-Stochastic gradient ascent on the log-likelihood gives the update for μ^:Δμ^∝∂∂μ^(log⁡p(s|μ^,σ))=∂∂μ^(−12σ2(s−μ^)2−12log⁡(2πσ2))=1σ2(s−μ^).
 
-## Circuit model
 
-## Prediction error circuit
+$$
+=log⁡\prodn=1NN(s_{n}|\mu^,\sigma)
+$$
+
+
+
+$$
+=−\frac{1}{2\sigma^{2}}\sumn=1N(s_{n}−\mu^)^{2}−\frac{N}{2}log⁡(2\pi\sigma^{2})
+$$
+
+We consider the log-likelihood for one sample $s$ of the stimulus distribution:
+
+$$
+log⁡p(s|\mu^,\sigma)=−\frac{1}{2\sigma^{2}}(s−\mu^)^{2}−\frac{1}{2}log⁡(2\pi\sigma^{2})
+$$
+
+Stochastic gradient ascent on the log-likelihood gives the update for $\mu^$:
+
+$$
+Δ\mu^∝\frac{∂}{∂\mu^}(log⁡p(s|\mu^,\sigma))
+$$
+
+
+
+$$
+=\frac{∂}{∂\mu^}(−\frac{1}{2\sigma^{2}}(s−\mu^)^{2}−\frac{1}{2}log⁡(2\pi\sigma^{2}))
+$$
+
+
+
+$$
+=\frac{1}{\sigma^{2}}(s−\mu^).
+$$
+
+### Circuit model
+
+#### Prediction error circuit
 
 We modelled a circuit consisting of excitatory prediction error neurons in layer 2/3, and two inhibitory populations, corresponding to PV and SST interneurons.
 
-Layer 2/3 pyramidal cells receive divisive inhibition from PVs (Wilson et al., 2012). We, hence, modelled the activity of prediction error neurons as(7)τEdrUPEdt=−rUPE+ϕ(IdendI0+wUPE,PVrPV),
+Layer 2/3 pyramidal cells receive divisive inhibition from PVs (Wilson et al., 2012). We, hence, modelled the activity of prediction error neurons as
 
-where ϕ(x) is the activation function defined as:(8)ϕ(x)={0if x≤0xif 0<x<xmaxrmaxif x≥xmax,
+$$
+\tau_{E}\frac{dr_{UPE}}{dt}=−r_{UPE}+ϕ(\frac{I_{dend}}{I_{0}+w_{UPE,PV}r_{PV}}),
+$$
 
-Idend=⌊wUPE,ss−wUPE,SSTrSST⌋k is the dendritic input current to the positive prediction error neuron (see section Neuronal dynamics below for rx and for the negative prediction error neuron, and Table 1 for wx). The nonlinearity in the dendrite is determined by the exponent k, which is by default k=2, unless otherwise specified as in Figure 4G–J. I0>1 is a constant ensuring that the divisive inhibition does not become excitatory, when σ<1.0. All firing rates are rectified to ensure that they remain positive.
+where $ϕ(x)$ is the activation function defined as:
 
-In the positive prediction error circuit, in which the SSTs learn to represent the mean, the SST activity is determined by(9)τIdrSST+dt=−rSST++ϕ((1−β)wSST+,ara+βs).
+$$
+ϕ(x)={0if x\leq0xif 0<x<x_{max}r_{max}if x\geqx_{max},
+$$
 
-The SST activity is influenced (nudged with a factor β) by the somatosensory stimuli s, which provide targets for the desired SST activity. The connection weight from the sound representation to the SSTs wSST,a is plastic according to the following local activity-dependent plasticity rule (Urbanczik and Senn, 2014):(10)ΔwSST,a=η(rSST−ϕ(wSST,ara))ra,
+$I_{dend}=⌊w_{UPE,s}s−w_{UPE,SST}r_{SST}⌋^{k}$ is the dendritic input current to the positive prediction error neuron (see section Neuronal dynamics below for $r_{x}$ and for the negative prediction error neuron, and Table 1 for $w_{x}$). The nonlinearity in the dendrite is determined by the exponent $k$, which is by default $k=2$, unless otherwise specified as in Figure 4G–J. $I_{0}>1$ is a constant ensuring that the divisive inhibition does not become excitatory, when $\sigma<1.0$. All firing rates are rectified to ensure that they remain positive.
 
-where η is the learning rate, ra is the pre-synaptic firing rate, rSST is the post-synaptic firing rate of the SSTs, ϕ(x) is a rectified linear activation function of the SSTs.
+**Table 1.**
+ Parameters of the network.
 
-The learning rule ensures that the auditory input alone causes SSTs to fire at their target activity. As in the original proposal (Urbanczik and Senn, 2014), the terms in the learning rule can be mapped to local neuronal variables, which could be represented by dendritic (wSST,ara) and somatic (rSST) activity.
 
-The PV firing rate is determined by the input from the sound representation (wPV+,ara) and the whisker stimuli, from which their mean is subtracted (wPV+,ss−wPV+,SST+rSST+, where the mean is given by rSST+). The mean-subtracted whisker stimuli serve as a target for learning the weight from the sound representation to the PV η. The PV firing rate evoles over time according to:(11)τIdrPV+dt=−rPV++ϕPV((1−β)wPV+,ara+β(wPV+,ss−wPV+,SST+rSST+)))
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>wPV+,SST+</td>
+      <td>2−ββ</td>
+      <td>Weight from SST+ to PV+</td>
+    </tr>
+    <tr>
+      <td>wPV+,s</td>
+      <td>2−ββ</td>
+      <td>Weight from s to PV+</td>
+    </tr>
+    <tr>
+      <td>wPV−,SST−</td>
+      <td>2−ββ</td>
+      <td>Weight from SST− to PV−</td>
+    </tr>
+    <tr>
+      <td>wPV−,R</td>
+      <td>2−ββ</td>
+      <td>Weight from R to PV−</td>
+    </tr>
+    <tr>
+      <td>wSST+,R</td>
+      <td>1.0</td>
+      <td>Weight from R to SST+</td>
+    </tr>
+    <tr>
+      <td>wSST−,s</td>
+      <td>1.0</td>
+      <td>Weight from s to SST−</td>
+    </tr>
+    <tr>
+      <td>wUPE+,SST+</td>
+      <td>1.0</td>
+      <td>Weight from SST+ to UPE+</td>
+    </tr>
+    <tr>
+      <td>wUPE+,s</td>
+      <td>1.0</td>
+      <td>Weight from s to UPE+</td>
+    </tr>
+    <tr>
+      <td>wUPE−,R</td>
+      <td>1.0</td>
+      <td>Weight from R to UPE−</td>
+    </tr>
+    <tr>
+      <td>wUPE−,SST−</td>
+      <td>1.0</td>
+      <td>Weight from SST− to UPE−</td>
+    </tr>
+    <tr>
+      <td>wR,UPE+</td>
+      <td>0.1(1.0)</td>
+      <td>Weight from UPE+ to R (Figure 6)</td>
+    </tr>
+    <tr>
+      <td>wR,UPE−</td>
+      <td>0.1(1.0)</td>
+      <td>Weight from UPE− to R (Figure 6)</td>
+    </tr>
+    <tr>
+      <td>xmax</td>
+      <td>20</td>
+      <td>Limits neuronal activity</td>
+    </tr>
+    <tr>
+      <td>β</td>
+      <td>0.1</td>
+      <td>Nudging parameter</td>
+    </tr>
+  </tbody>
+</table>
 
-where ϕPV(x) is a rectified quadratic activation function, defined as follows:(12)ϕPV(x)={0if x≤0x2if 0<x<xmaxrmaxif x≥xmax.
+In the positive prediction error circuit, in which the SSTs learn to represent the mean, the SST activity is determined by
 
-The connection weight from the sound representation to the PVs wPV,a is plastic according to the same local activity-dependent plasticity rule as the SSTs (Urbanczik and Senn, 2014):(13)wPV,a=η(rPV−ϕPV(wPV,ara))ra.
+$$
+\tau_{I}\frac{dr_{SST^{+}}}{dt}=−r_{SST^{+}}+ϕ((1−\beta)w_{SST^{+},a}r_{a}+\betas).
+$$
 
-The weight from the sound representation to the PV wPV+,a approaches σ (instead of μ as the weight to the SSTs), because the PV activity is a function of the mean-subtracted whisker stimuli (instead of the whisker stimuli as the SST activity), and for a Gaussian-distributed stimulus s∼N(s|μ,σ), it holds that E[⌊s−μ⌋+]∝σ.
+The SST activity is influenced (nudged with a factor $\beta$) by the somatosensory stimuli $s$, which provide targets for the desired SST activity. The connection weight from the sound representation to the SSTs $w_{SST,a}$ is plastic according to the following local activity-dependent plasticity rule (Urbanczik and Senn, 2014):
 
-## Recurrent circuit model
+$$
+Δw_{SST,a}=η(r_{SST}−ϕ(w_{SST,a}r_{a}))r_{a},
+$$
 
-In the recurrent circuit, shown in Figure 5, we added an internal representation neuron to the circuit with firing rate rR. In this circuit, the SSTs in the positive PE circuit inherit the mean representation from the representation neuron instead of learning it themselves, that is why they receive an input wPV+,a. The SSTs in the negative circuit inherit the stimulus representation and hence receive an input wSST−,ss In this recurrent circuit, the firing rate of each population ri where i∈[SST+,SST−,PV+,PV−,UPE+,UPE−,R] evolves over time according to the following neuronal dynamics. ϕ denotes a rectified linear activation function with saturation, ϕPV denotes a rectified quadratic activation function with saturation, defined in the section below. All firing rates are rectified to ensure that they remain positive.(14)τIdrSST+dt=−rSST++ϕ(wSST+,RrR),(15)τIdrPV+dt=−rPV++ϕPV((1−β)wPV+,ara+β(wPV+,ss−wPV+,SST+rSST+))),(16)τEdrUPE+dt=−rUPE++ϕ(⌊wUPE,ss−wUPE,SST+rSST+⌋kI0+wUPE,PV+rPV+),(17)τIdrSST−dt=−rSST−+ϕ(wSST−,ss),(18)τIdrPV−dt=−rPV−+ϕPV((1−β)wPV−,ara+β(wPV−,RrR−wPV−,SST−rSST−))),(19)τEdrUPE−dt=−rUPE−+ϕ(⌊wUPE,RrR−wUPE,SST−rSST−⌋kI0+wUPE,PV−rPV−),(20)τEdrRdt=−rR+ϕ(wR,ara+wR,UPE+rUPE+−wR,UPE−rUPE−)).
+where $η$ is the learning rate, $r_{a}$ is the pre-synaptic firing rate, $r_{SST}$ is the post-synaptic firing rate of the SSTs, $ϕ(x)$ is a rectified linear activation function of the SSTs.
 
-## Hierarchical predictive coding
+The learning rule ensures that the auditory input alone causes SSTs to fire at their target activity. As in the original proposal (Urbanczik and Senn, 2014), the terms in the learning rule can be mapped to local neuronal variables, which could be represented by dendritic ($w_{SST,a}r_{a}$) and somatic ($r_{SST}$) activity.
 
-The idea behind hierarchical predictive coding is that the brain infers or represents the causes of its sensory inputs using a hierarchical generative model (Friston, 2005). Each level of the cortical hierarchy provides a prior for the mean of the lower level representation, with the top level representation rL being determined by the context.
+The PV firing rate is determined by the input from the sound representation ($w_{PV^{+},a}r_{a}$) and the whisker stimuli, from which their mean is subtracted ($w_{PV^{+},s}s−w_{PV^{+},SST^{+}}r_{SST^{+}}$, where the mean is given by $r_{SST^{+}}$). The mean-subtracted whisker stimuli serve as a target for learning the weight from the sound representation to the PV $η$. The PV firing rate evoles over time according to:
 
-Noise enters in the sensory area by sampling a stimulus s=r0. In the sensory area, the variance σ02 is learned to match the variability of the external stimulus σs2.
+$$
+\tau_{I}\frac{dr_{PV^{+}}}{dt}=−r_{PV^{+}}+ϕ_{PV}((1−\beta)w_{PV^{+},a}r_{a}+\beta(w_{PV^{+},s}s−w_{PV^{+},SST^{+}}r_{SST^{+}})))
+$$
 
-The goal is to infer the set of latent representations r=(r1,..,rL−1), given the synaptic weights wℓ of the internal model and the top activity rL, that best reproduces the sensory inputs s. To this end, we minimise the following energy: (21)E=12∑ℓ=0L−11σℓ2‖rℓ−ρ(wℓrℓ+1)‖22
+where $ϕ_{PV}(x)$ is a rectified quadratic activation function, defined as follows:
 
-where ρ is a transfer function.
+$$
+ϕ_{PV}(x)={0if x\leq0x^{2}if 0<x<x_{max}r_{max}if x\geqx_{max}.
+$$
 
-We obtain the update for rℓ with gradient descent on the energy with respect to rℓ:(22)rℓ˙=−∂E∂rℓ=1σℓ−12(rℓ−1−ρ(wℓ−1rℓ))wℓ−1ρ′(rℓ)−1σℓ2(rℓ−ρ(wℓrℓ+1))=1σℓ−12ρ′(wℓ−1rℓ)eℓ−1−1σℓ2eℓ
+The connection weight from the sound representation to the PVs $w_{PV,a}$ is plastic according to the same local activity-dependent plasticity rule as the SSTs (Urbanczik and Senn, 2014):
 
-In our model, wℓ are scalars as they denote single weights.
+$$
+w_{PV,a}=η(r_{PV}−ϕ_{PV}(w_{PV,a}r_{a}))r_{a}.
+$$
 
-We obtain the steady-state representation rℓ by setting its derivative in Equation 21 to 0:(23)0=!wℓ−1ρ′(wℓ−1rℓ)σℓ−12(rℓ−1−ρ(wℓ−1rℓ))−1σℓ2(rℓ−ρ(wℓrℓ+1))
+The weight from the sound representation to the PV $w_{PV^{+},a}$ approaches $\sigma$ (instead of μ as the weight to the SSTs), because the PV activity is a function of the mean-subtracted whisker stimuli (instead of the whisker stimuli as the SST activity), and for a Gaussian-distributed stimulus $s∼N(s|\mu,\sigma)$, it holds that $E[⌊s−\mu⌋^{+}]∝\sigma$.
 
-We next consider, for simplicity, a threshold-linear transfer function ρ(wℓ−1rℓ) such that if wℓ−1rℓ<0, then ρ(wℓ−1rℓ)=0 and its derivative ρ′=0 or if wℓ−1rℓ≥0 then ρ(wℓ−1rℓ)=wℓ−1rℓ and ρ′=1.
+### Recurrent circuit model
 
-Solving Equation 24 for rℓ and assuming rℓ≥0, we get:(24)rℓ=wℓ−12σℓ−12wℓ−12σℓ−12+1σℓ2rℓ−1wℓ−1+1σℓ2wℓ−12σℓ−12+1σℓ2wℓrℓ+1.
+In the recurrent circuit, shown in Figure 5, we added an internal representation neuron to the circuit with firing rate $r_{R}$. In this circuit, the SSTs in the positive PE circuit inherit the mean representation from the representation neuron instead of learning it themselves, that is why they receive an input $w_{PV^{+},a}$. The SSTs in the negative circuit inherit the stimulus representation and hence receive an input $w_{SST^{−},s}s$ In this recurrent circuit, the firing rate of each population $r_{i}$ where $i\in[SST^{+},SST^{−},PV^{+},PV^{−},UPE^{+},UPE^{−},R]$ evolves over time according to the following neuronal dynamics. $ϕ$ denotes a rectified linear activation function with saturation, $ϕ_{PV}$ denotes a rectified quadratic activation function with saturation, defined in the section below. All firing rates are rectified to ensure that they remain positive.
+
+$$
+\tau_{I}\frac{dr_{SST^{+}}}{dt}=−r_{SST^{+}}+ϕ(w_{SST^{+},R}r_{R}),
+$$
+
+
+
+$$
+\tau_{I}\frac{dr_{PV^{+}}}{dt}=−r_{PV^{+}}+ϕ_{PV}((1−\beta)w_{PV^{+},a}r_{a}+\beta(w_{PV^{+},s}s−w_{PV^{+},SST^{+}}r_{SST^{+}}))),
+$$
+
+
+
+$$
+\tau_{E}\frac{dr_{UPE^{+}}}{dt}=−r_{UPE^{+}}+ϕ(\frac{⌊w_{UPE,s}s−w_{UPE,SST^{+}}r_{SST^{+}}⌋^{k}}{I_{0}+w_{UPE,PV^{+}}r_{PV^{+}}}),
+$$
+
+
+
+$$
+\tau_{I}\frac{dr_{SST^{−}}}{dt}=−r_{SST^{−}}+ϕ(w_{SST^{−},s}s),
+$$
+
+
+
+$$
+\tau_{I}\frac{dr_{PV^{−}}}{dt}=−r_{PV^{−}}+ϕ_{PV}((1−\beta)w_{PV^{−},a}r_{a}+\beta(w_{PV^{−},R}r_{R}−w_{PV^{−},SST^{−}}r_{SST^{−}}))),
+$$
+
+
+
+$$
+\tau_{E}\frac{dr_{UPE^{−}}}{dt}=−r_{UPE^{−}}+ϕ(\frac{⌊w_{UPE,R}r_{R}−w_{UPE,SST^{−}}r_{SST^{−}}⌋^{k}}{I_{0}+w_{UPE,PV^{−}}r_{PV^{−}}}),
+$$
+
+
+
+$$
+\tau_{E}\frac{dr_{R}}{dt}=−r_{R}+ϕ(w_{R,a}r_{a}+w_{R,UPE^{+}}r_{UPE^{+}}−w_{R,UPE^{−}}r_{UPE^{−}})).
+$$
+
+### Hierarchical predictive coding
+
+The idea behind hierarchical predictive coding is that the brain infers or represents the causes of its sensory inputs using a hierarchical generative model (Friston, 2005). Each level of the cortical hierarchy provides a prior for the mean of the lower level representation, with the top level representation $r_{L}$ being determined by the context.
+
+Noise enters in the sensory area by sampling a stimulus $s=r_{0}$. In the sensory area, the variance $\sigma_{0}^{2}$ is learned to match the variability of the external stimulus $\sigma_{s}^{2}$.
+
+The goal is to infer the set of latent representations $r=(r_{1},..,r_{L−1})$, given the synaptic weights $w_{ℓ}$ of the internal model and the top activity $r_{L}$, that best reproduces the sensory inputs $s$. To this end, we minimise the following energy:
+
+$$
+E=\frac{1}{2}\sumℓ=0L−1\frac{1}{\sigma_{ℓ}^{2}}‖r_{ℓ}−ρ(w_{ℓ}r_{ℓ+1})‖_{2}^{2}
+$$
+
+where $ρ$ is a transfer function.
+
+We obtain the update for $r_{ℓ}$ with gradient descent on the energy with respect to $r_{ℓ}$:
+
+$$
+r_{ℓ}˙=−\frac{∂E}{∂r_{ℓ}}=\frac{1}{\sigma_{ℓ−1}^{2}}(r_{ℓ−1}−ρ(w_{ℓ−1}r_{ℓ}))w_{ℓ−1}ρ^{′}(r_{ℓ})−\frac{1}{\sigma_{ℓ}^{2}}(r_{ℓ}−ρ(w_{ℓ}r_{ℓ+1}))=\frac{1}{\sigma_{ℓ−1}^{2}}ρ^{′}(w_{ℓ−1}r_{ℓ})e_{ℓ−1}−\frac{1}{\sigma_{ℓ}^{2}}e_{ℓ}
+$$
+
+In our model, $w_{ℓ}$ are scalars as they denote single weights.
+
+We obtain the steady-state representation $r_{ℓ}$ by setting its derivative in Equation 21 to 0:
+
+$$
+0=!\frac{w_{ℓ−1}ρ^{′}(w_{ℓ−1}r_{ℓ})}{\sigma_{ℓ−1}^{2}}(r_{ℓ−1}−ρ(w_{ℓ−1}r_{ℓ}))−\frac{1}{\sigma_{ℓ}^{2}}(r_{ℓ}−ρ(w_{ℓ}r_{ℓ+1}))
+$$
+
+We next consider, for simplicity, a threshold-linear transfer function $ρ(w_{ℓ−1}r_{ℓ})$ such that if $w_{ℓ−1}r_{ℓ}<0$, then $ρ(w_{ℓ−1}r_{ℓ})=0$ and its derivative $ρ^{′}=0$ or if $w_{ℓ−1}r_{ℓ}\geq0$ then $ρ(w_{ℓ−1}r_{ℓ})=w_{ℓ−1}r_{ℓ}$ and $ρ^{′}=1$.
+
+Solving Equation 24 for $r_{ℓ}$ and assuming $r_{ℓ}\geq0$, we get:
+
+$$
+r_{ℓ}=\frac{\frac{w_{ℓ−1}^{2}}{\sigma_{ℓ−1}^{2}}}{\frac{w_{ℓ−1}^{2}}{\sigma_{ℓ−1}^{2}}+\frac{1}{\sigma_{ℓ}^{2}}}\frac{r_{ℓ−1}}{w_{ℓ−1}}+\frac{\frac{1}{\sigma_{ℓ}^{2}}}{\frac{w_{ℓ−1}^{2}}{\sigma_{ℓ−1}^{2}}+\frac{1}{\sigma_{ℓ}^{2}}}w_{ℓ}r_{ℓ+1}.
+$$
 
 See appendix for the general case with any transfer function and weight matrix.
 
-## Hierarchical circuit model
+### Hierarchical circuit model
 
-In the hierarchical circuit model, the representation neuron does not only receive UPEs from the area below, but also from the current area.(25)τEdrRdt=−rR+ϕ(wR,ara+wR,UPEℓ−1+rUPEℓ−1+−wR,UPEℓ−1−rUPEℓ−1−−wR,UPEℓ+rUPEℓ++wR,UPEℓ−rUPEℓ−).
+In the hierarchical circuit model, the representation neuron does not only receive UPEs from the area below, but also from the current area.
 
-The UPEs from the area below are as defined in the recurrent circuit model, and the UPEs from the current area are defined accordingly as:(26)τEdrUPE+ℓdt=−rUPE+ℓ+ϕ(⌊wUPE,rRR−wUPE,SST+rSST+⌋kI0+wUPE,PV+rPV+),(27)τEdrUPEℓ−dt=−rUPEℓ−+ϕ(⌊wUPE,priorμprior−wUPE,SST−rSST−⌋kI0+wUPE,PV−rPV−),
+$$
+\tau_{E}\frac{dr_{R}}{dt}=−r_{R}+ϕ(w_{R,a}r_{a}+w_{R,UPE_{ℓ−1}^{+}}r_{UPE_{ℓ−1}^{+}}−w_{R,UPE_{ℓ−1}^{−}}r_{UPE_{ℓ−1}^{−}}−w_{R,UPE_{ℓ}^{+}}r_{UPE_{ℓ}^{+}}+w_{R,UPE_{ℓ}^{−}}r_{UPE_{ℓ}^{−}}).
+$$
+
+The UPEs from the area below are as defined in the recurrent circuit model, and the UPEs from the current area are defined accordingly as:
+
+$$
+\tau_{E}\frac{dr_{UPE^{+}_{ℓ}}}{dt}=−r_{UPE^{+}_{ℓ}}+ϕ(\frac{⌊w_{UPE,r_{R}}R−w_{UPE,SST^{+}}r_{SST^{+}}⌋^{k}}{I_{0}+w_{UPE,PV^{+}}r_{PV^{+}}}),
+$$
+
+
+
+$$
+\tau_{E}\frac{dr_{UPE_{ℓ}^{−}}}{dt}=−r_{UPE_{ℓ}^{−}}+ϕ(\frac{⌊w_{UPE,prior}\mu_{prior}−w_{UPE,SST^{−}}r_{SST^{−}}⌋^{k}}{I_{0}+w_{UPE,PV^{−}}r_{PV^{−}}}),
+$$
 
 The computations and parameters in each area are the same as for the recurrent circuit model above and in Figure 5.
 
-Synapses from the higher level representation of the sound a to R were plastic according to the following activity-dependent plasticity rules (Urbanczik and Senn, 2014).(28)ΔwR,a=ηR(rR−ϕ(wR,ara))ra,
+Synapses from the higher level representation of the sound $a$ to R were plastic according to the following activity-dependent plasticity rules (Urbanczik and Senn, 2014).
 
-where ηPV=0.01ηR.
+$$
+Δw_{R,a}=η_{R}(r_{R}−ϕ(w_{R,a}r_{a}))r_{a},
+$$
 
-## Estimating the variance correctly
+where $η_{PV}=0.01η_{R}$.
 
-The PVs estimate the variance of the sensory input from the variance of the teaching input (s−μ), which nudges the membrane potential of the PVs with a nudging factor β. The nudging factor reduces the effective variance of the teaching input, such that in order to correctly estimate the variance, this reduction needs to be compensated by larger weights from the SSTs to the PVs (wPV,SST) and from the sensory input to the PVs (wPV,s). To determine how strong the weights ws=wPV,SST=wPV,s need to be to compensate for the downscaling of the input variance by β, we require that E[wa]2=σ2 when the average weight change E[Δw]=0. The learning rule for w is as follows:Δw=η[rPV−ϕ(wa)]a=η[ϕ((1−β)wa+βwss~)−ϕ(wa)]a
+### Estimating the variance correctly
 
-where s~=(s−μ)∼N(0,σ) and s~=(s−μ)∼N(0,σ).
+The PVs estimate the variance of the sensory input from the variance of the teaching input $(s−\mu)$, which nudges the membrane potential of the PVs with a nudging factor $\beta$. The nudging factor reduces the effective variance of the teaching input, such that in order to correctly estimate the variance, this reduction needs to be compensated by larger weights from the SSTs to the PVs ($w_{PV,SST}$) and from the sensory input to the PVs ($w_{PV,s}$). To determine how strong the weights $w_{s}=w_{PV,SST}=w_{PV,s}$ need to be to compensate for the downscaling of the input variance by $\beta$, we require that $E[wa]^{2}=\sigma^{2}$ when the average weight change $E[Δw]=0$. The learning rule for $w$ is as follows:
 
-Using that ϕ(u)=u2, the average weight change becomes:E[Δw]=E[η((1−β)2w2a2+β2ws2s~2+2(1−β)waβwss~−w2a2)a]=E[η((1+β2−2β)w2a2+β2ws2s~2+2(1−β)waβwss~−w2a2)a]|E[s~]=0=E[η(β2w2a2−2βw2a2+β2ws2s~2)a]=E[ηβ(βw2a2−2w2a2+βws2s~2)a]=ηβ((β−2)E[(wa)2]+βws2E[s~2])a|E[s~2]=E[(s−μ)2]=σ2=ηβ((β−2)E[(wa)2]+βws2σ2)a
+$$
+Δw=η[r_{PV}−ϕ(wa)]a
+$$
 
-Given our objective E[(wa)2]=σ2, we can write:E[Δw]=ηβ((β−2)σ2+βws2σ2)a
 
-Then for E[Δw]=0:0=β−2+βws2⇒ws=2−ββ
 
-Here, we assumed that ϕ(u)=u2 instead of ϕ(u)=⌊u⌋2. To test how well this approximation holds, we simulated the circuit for different values of β and hence ws, and plotted the PV firing rate rPV(a) given the sound input a and the weight from a to PV, wPV,a, for different values of β (Figure 9). This analysis shows that the approximation holds for small β up to a value of β=0.2.
+$$
+=η[ϕ((1−\beta)wa+\betaw_{s}s~)−ϕ(wa)]a
+$$
+
+where $s~=(s−\mu)∼N(0,\sigma)$ and $s~=(s−\mu)∼N(0,\sigma)$.
+
+Using that $ϕ(u)=u^{2}$, the average weight change becomes:
+
+$$
+E[Δw]=E[η((1−\beta)^{2}w^{2}a^{2}+\beta^{2}w_{s}^{2}s~^{2}+2(1−\beta)wa\betaw_{s}s~−w^{2}a^{2})a]
+$$
+
+
+
+$$
+=E[η((1+\beta^{2}−2\beta)w^{2}a^{2}+\beta^{2}w_{s}^{2}s~^{2}+2(1−\beta)wa\betaw_{s}s~−w^{2}a^{2})a]|E[s~]=0
+$$
+
+
+
+$$
+=E[η(\beta^{2}w^{2}a^{2}−2\betaw^{2}a^{2}+\beta^{2}w_{s}^{2}s~^{2})a]
+$$
+
+
+
+$$
+=E[η\beta(\betaw^{2}a^{2}−2w^{2}a^{2}+\betaw_{s}^{2}s~^{2})a]
+$$
+
+
+
+$$
+=η\beta((\beta−2)E[(wa)^{2}]+\betaw_{s}^{2}E[s~^{2}])a|E[s~^{2}]=E[(s−\mu)^{2}]=\sigma^{2}
+$$
+
+
+
+$$
+=η\beta((\beta−2)E[(wa)^{2}]+\betaw_{s}^{2}\sigma^{2})a
+$$
+
+Given our objective $E[(wa)^{2}]=\sigma^{2}$, we can write:
+
+$$
+E[Δw]=η\beta((\beta−2)\sigma^{2}+\betaw_{s}^{2}\sigma^{2})a
+$$
+
+Then for $E[Δw]=0$:
+
+$$
+0=\beta−2+\betaw_{s}^{2}
+$$
+
+
+
+$$
+⇒w_{s}=\sqrt{\frac{2−\beta}{\beta}}
+$$
+
+Here, we assumed that $ϕ(u)=u^{2}$ instead of $ϕ(u)=⌊u⌋^{2}$. To test how well this approximation holds, we simulated the circuit for different values of $\beta$ and hence $w_{s}$, and plotted the PV firing rate $r_{PV}(a)$ given the sound input $a$ and the weight from $a$ to PV, $w_{PV,a}$, for different values of $\beta$ (Figure 9). This analysis shows that the approximation holds for small $\beta$ up to a value of $\beta=0.2$.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/95127/elife-95127-fig9-v1.jpg)
 
-**Figure 9.:** , and β, the weight from ws=2−ββ to PV approaches a and the PV firing rate approaches σ.σ2
+**Figure 9.:** For small $\beta$, and $w_{s}=\sqrt{\frac{2−\beta}{\beta}}$, the weight from $a$ to PV approaches $\sigma$ and the PV firing rate approaches $\sigma^{2}$.
 
-We initialised the circuits with the initial weight configuration in Table 1 and Table 2, and neural firing rates were initialised to be 0 (ri(0)=0 with i∈[SST+,SST−,PV+,PV−,UPE+,UPE−,R]). We then paired a constant tone input with N samples from the whisker stimulus distribution, the parameters of which we varied and are indicated in each Figure. Each whisker stimulus intensity was presented for D timesteps (see Table 3). Parameters of the plasticity rules can be found in Table 4. All simulations were written in Python. Differential equations were numerically integrated with a time step of dt=0.1. Parameters of the simulations can be found in Tables 5 and 6.
+We initialised the circuits with the initial weight configuration in Table 1 and Table 2, and neural firing rates were initialised to be 0 ($r_{i}(0)=0$ with $i\in[SST^{+},SST^{−},PV^{+},PV^{−},UPE^{+},UPE^{−},R]$). We then paired a constant tone input with N samples from the whisker stimulus distribution, the parameters of which we varied and are indicated in each Figure. Each whisker stimulus intensity was presented for $D$ timesteps (see Table 3). Parameters of the plasticity rules can be found in Table 4. All simulations were written in Python. Differential equations were numerically integrated with a time step of $dt=0.1$. Parameters of the simulations can be found in Tables 5 and 6.
+
+**Table 2.**
+ Additional parameters of the hierarchical network.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>wR,UPEℓ+</td>
+      <td>1.0</td>
+      <td>Weight from UPEℓ+ to R</td>
+    </tr>
+    <tr>
+      <td>wR,UPEℓ−</td>
+      <td>1.0</td>
+      <td>Weight from UPEℓ− to R</td>
+    </tr>
+    <tr>
+      <td>wUPEℓ−,R</td>
+      <td>1.0</td>
+      <td>Weight from R to UPEℓ−</td>
+    </tr>
+    <tr>
+      <td>wUPE−,prior</td>
+      <td>1.0</td>
+      <td>Weight from R to UPE−</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Inputs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>a</td>
+      <td>{0.0, 1.0}</td>
+      <td>Auditory stimulus (on/off)</td>
+    </tr>
+    <tr>
+      <td>s</td>
+      <td>∼N(μ,σ)</td>
+      <td>Somatosensory (whisker) stimulus</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>1000–20,000</td>
+      <td>Number of whisker stimulus samples</td>
+    </tr>
+    <tr>
+      <td>D</td>
+      <td>{10, 100}</td>
+      <td>Stimulus duration (Figures 1—5 and 7)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Parameters of the plasticity rules.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ηSST</td>
+      <td>0.1</td>
+      <td>Learning rate for wSST+/−,a</td>
+    </tr>
+    <tr>
+      <td>ηPV</td>
+      <td>0.01∗ηR=0.001</td>
+      <td>Learning rate for wPV+/−,a</td>
+    </tr>
+    <tr>
+      <td>ηR</td>
+      <td>0.1</td>
+      <td>Learning rate for wR,a</td>
+    </tr>
+    <tr>
+      <td>wSST,ainitial</td>
+      <td>0.01</td>
+      <td>Initial value for wSST+/−,a</td>
+    </tr>
+    <tr>
+      <td>wPV,ainitial</td>
+      <td>0.01</td>
+      <td>Initial value for dt=0.1</td>
+    </tr>
+    <tr>
+      <td>wR,ainitial</td>
+      <td>0.01</td>
+      <td>Initial value for wR,a</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ Parameters of simulations in Figures 2—5.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td>N∗D</td>
+      <td>Simulation time</td>
+    </tr>
+    <tr>
+      <td>dt</td>
+      <td>0.1</td>
+      <td>Simulation time step</td>
+    </tr>
+    <tr>
+      <td>τE</td>
+      <td>1.0</td>
+      <td>Excitatory membrane time constant</td>
+    </tr>
+    <tr>
+      <td>τI</td>
+      <td>1.0</td>
+      <td>Inhibitory membrane time constant</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 6.**
+ Parameters of the simulation in Figure 6.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>T</td>
+      <td>N∗D</td>
+      <td>Simulation time</td>
+    </tr>
+    <tr>
+      <td>dt</td>
+      <td>0.1</td>
+      <td>Simulation time step</td>
+    </tr>
+    <tr>
+      <td>τE</td>
+      <td>10.0</td>
+      <td>Excitatory membrane time constant</td>
+    </tr>
+    <tr>
+      <td>τI</td>
+      <td>2.0</td>
+      <td>Inhibitory membrane time constant</td>
+    </tr>
+    <tr>
+      <td>ηR</td>
+      <td>0.01</td>
+      <td>Learning rate of wR,A</td>
+    </tr>
+  </tbody>
+</table>
 
 Eliciting responses to mismatches (Figure 4 and Figure 6).
 
-We first trained the circuit with 10,000 stimulus samples to learn the variances in the a-to-PV weights. Then we presented different mismatch stimuli to calculate the error magnitude for each mismatch of magnitude s−μ.
+We first trained the circuit with 10,000 stimulus samples to learn the variances in the a-to-PV weights. Then we presented different mismatch stimuli to calculate the error magnitude for each mismatch of magnitude $s−\mu$.
 
 Comparing the UPE circuit with an unmodulated circuit (Figure 7).
 

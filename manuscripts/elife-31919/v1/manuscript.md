@@ -20,11 +20,17 @@
 
 ## Abstract
 
-10.7554/eLife.31919.001 Human dengue viruses emerged from primate reservoirs, yet paradoxically dengue does not reach high titers in primate models. This presents a unique opportunity to examine the genetics of spillover versus reservoir hosts. The dengue virus 2 (DENV2) - encoded protease cleaves human STING, reducing type I interferon production and boosting viral titers in humans. We find that both human and sylvatic (reservoir) dengue viruses universally cleave human STING, but not the STING of primates implicated as reservoir species. The special ability of dengue to cleave STING is thus specific to humans and a few closely related ape species. Conversion of residues 78/79 to the human-encoded ‘RG’ renders all primate (and mouse) STINGs sensitive to viral cleavage. Dengue viruses may have evolved to increase viral titers in the dense and vast human population, while maintaining decreased titers and pathogenicity in the more rare animals that serve as their sustaining reservoir in nature.
+Human dengue viruses emerged from primate reservoirs, yet paradoxically dengue does not reach high titers in primate models. This presents a unique opportunity to examine the genetics of spillover versus reservoir hosts. The dengue virus 2 (DENV2) - encoded protease cleaves human STING, reducing type I interferon production and boosting viral titers in humans. We find that both human and sylvatic (reservoir) dengue viruses universally cleave human STING, but not the STING of primates implicated as reservoir species. The special ability of dengue to cleave STING is thus specific to humans and a few closely related ape species. Conversion of residues 78/79 to the human-encoded ‘RG’ renders all primate (and mouse) STINGs sensitive to viral cleavage. Dengue viruses may have evolved to increase viral titers in the dense and vast human population, while maintaining decreased titers and pathogenicity in the more rare animals that serve as their sustaining reservoir in nature.
 
 ## Introduction
 
 Dengue viruses cause clinical disease in approximately 100 million individuals each year and are found in over 100 countries (Bhatt et al., 2013). Yet, to date no vaccine exists that conveys cross-protection against all human dengue viruses (Scherwitzl et al., 2017). Dengue viruses are positive sense RNA viruses in the family Flaviviridae, and are related to yellow fever virus, Zika virus, and West Nile virus (Best, 2016). These viruses are primarily transmitted between humans in highly populated areas by Aedes aegypti and Aedes albopictus mosquitoes, in what are referred to as human (or ‘urban’) transmission cycles (Diamond and Pierson, 2015; Hanley et al., 2013; Vasilakis et al., 2011). Sylvatic (i.e. forest) dengue virus transmission cycles, which are separate from the human transmission cycles, exist in Asia and Africa and involve nonhuman primates and forest-dwelling Aedes mosquitos (Vasilakis et al., 2011; Wang et al., 2000; Rico-Hesse, 1990). While the exact nonhuman primate species that serve as the sustaining natural reservoirs for sylvatic dengue viruses are unknown, the global distribution of both dengue viruses and their transmitting mosquitoes could be consistent with a significant number of primate species being involved (Figure 1—figure supplement 1) (Hanley et al., 2013; Vasilakis et al., 2011). Primarily, dengue viruses have been associated with monkeys (rather than apes) found in Africa and Asia (Figure 1). Human dengue viruses cluster into four phylogenetically distinct clades referred to as DENV1, 2, 3, and 4 (Vasilakis and Weaver, 2008). These clades have sylvatic dengue virus isolates at their bases, supporting zoonotic origins of the four dengue viruses that now circulate in humans (Wang et al., 2000; Pyke et al., 2016; Weaver and Vasilakis, 2009). Human dengue viruses have now become uncoupled from the sylvatic reservoir and require only humans and mosquitoes to be sustained (Mayer et al., 2017).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/31919/elife-31919-fig1-v1.jpg)
+
+**Figure 1.:** (A) A phylogeny of select primate species, showing the three main simian clades: apes, Old World monkeys, and New World monkeys (Perelman et al., 2011). The primate species from which STING is tested in this study are shown with purple arrows. Possible primate reservoir hosts for sylvatic dengue viruses, based on virus isolation from sentinel monkeys, or antibody detection, are shown in red (Africa) and green (Asia). The current evidence for these primate reservoir hosts is reviewed in the discussion section. (B) 293T cells were cotransfected with plasmids encoding STING-HA, and the NS2B3-Flag protease complex with or without the S135 inactivating mutation. Whole cell lysate isolated 24 hr post transfection was run on a protein gel and immunoblotted with anti-Flag or anti-HA antibodies. The encoded NS2B-NS3-Flag polyprotein auto-processes into the NS2B3 protease complex if the protease is active, as seen in the anti-Flag blot where in some samples the NS3-Flag protein has been liberated through cleavage. We sometimes see lower bands underneath the full-length mouse STING, but conclude that they are endogenous degradation products since they are equal in intensity in the presence of the active or dead protease.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31919/elife-31919-fig1-figsupp1-v1.jpg)
 
 In side-by-side experiments, sylvatic and human dengue viruses replicate similarly in human cells (Vasilakis et al., 2007; Vasilakis et al., 2008). These results have been interpreted to mean that there is little or no adaptive barrier for the emergence of sylvatic dengue viruses into human populations, and the view that dengue viruses are generalists capable of infecting a wide range of primate species including humans. Thus, a paradox exists in understanding why human dengue viruses are so difficult to model in nonhuman primates. Chimpanzees (Pan troglodytes) (Scherer et al., 1978), rhesus macaques (Macaca mulatta) (Halstead et al., 1973; Hickey et al., 2013), marmosets (multiple Callithrix species) (Moi et al., 2013; Ferreira et al., 2014), and other nonhuman primate species (Althouse et al., 2014) have been explored as possible primate models for studying dengue virus pathogenesis and for vaccine challenge. In general, it has been observed that dengue does not replicate to high titers in these models, and little or no overt disease pathology is observed (Cassetti et al., 2010; Zompi and Harris, 2012). If human and sylvatic viruses are the same in their properties, we speculated that there must instead be something special about the replication of these viruses in the human host.
 
@@ -34,19 +40,39 @@ In this study, we show that the NS2B3 proteases of human (DENV1-4) and sylvatic 
 
 ## Results
 
-## The protease of human dengue virus, DENV2, cleaves only human STING
+### The protease of human dengue virus, DENV2, cleaves only human STING
 
 To begin, we cloned STING from chimpanzee (Pan troglodytes, Genbank XM_016953921), rhesus macaque (Macaca mulatta, Genbank MF622060), and the common marmoset (Callithrix jacchus, Genbank MF622061). These species have been explored as animal models of dengue infection, and also represent the three major clades of simian primates: apes (represented by chimpanzee), Old World monkeys (represented by macaque), and New World monkeys (represented by marmoset; Figure 1A). Most suspected dengue virus reservoir hosts belong to the Old World monkey clade (red and green type in Figure 1A). On the other hand, New World monkeys (such as marmosets), which reside exclusively in the Americas, have presumably never been exposed to sylvatic dengue viruses since sylvatic cycles do not exist in the New World. We also included human (Genbank MF622062) and mouse (Mus musculus, Genbank MF622063) STING in our studies as positive and negative controls, since it was previously shown that human but not mouse STING is sensitive to DENV2 NS2B3 cleavage (Aguirre et al., 2012; Yu et al., 2012).
 
 The dengue virus NS2B3 protease complex is composed of the viral non-structural proteins NS2B and NS3 (Preugschat et al., 1990; Zhang et al., 1992; Falgout et al., 1991). In the dengue virus genome, the NS2B and NS3 genes sit adjacent and are cotranslated as part of a single long viral polyprotein (Perera and Kuhn, 2008; Chambers et al., 1990). When the NS2B - NS3 region is expressed from a plasmid, the region is translated into a small polyprotein that then auto-cleaves itself to become the functional protease complex (Yusof et al., 2000; Bera et al., 2007). We used a plasmid expressing the NS2B-NS3 region, including a 3x Flag tag at the C-terminus of NS3, from the New Guinea C isolate of DENV2 (see methods). As a control, a mutation was created at the active-site serine, changing it to an alanine (S135A), which renders the protease inactive (Rodriguez-Madoz et al., 2010). We then used a previously established cotransfection assay (Aguirre et al., 2012; Yu et al., 2012) to determine if the dengue virus protease could cleave primate STING orthologs. Plasmids encoding primate or mouse STING, and either active or S135A (dead) NS2B3 dengue proteases, were cotransfected into 293T cells. STING cleavage was assessed 24 hr later by western blot. The inactivity of the S135A protease can be seen in the anti-Flag blot, where the NS2B-NS3 polyprotein does not self-cleave when this mutation is present (Figure 1B). We see only a fraction of the human STING being cleaved, but this is consistent with previous publications and is presumably exacerbated by the overexpression of STING achieved in transfection experiments (Aguirre et al., 2012; Yu et al., 2012). Unexpectedly, none of the nonhuman primate STINGs tested were susceptible to cleavage (Figure 1B). Remarkably, the DENV2 protease could not even cleave chimpanzee STING, which differs from human STING at only three amino acid positions.
 
-## Mapping the dengue virus cleavage determinants in STING
+### Mapping the dengue virus cleavage determinants in STING
 
 The dengue virus cleavage site in STING was previously mapped to between the 95th and 96th residues (Aguirre et al., 2012; Yu et al., 2012). Some uncertainty existed, though, because in the previous studies it was noted that the human residues around 95/96 were not sufficient to convey cleavage susceptibility to mouse STING. Indeed, human and chimpanzee STING proteins have the exact same amino acid sequence at these positions (Figure 2A). Human and chimpanzee STING differ at only three amino acid positions, residues 78, 230, and 232. We found that mutating the human STING to encode the chimpanzee residue at site 78 (78W) caused it to become resistant to cleavage by DENV NS2B3 (Figure 2B). Likewise, mutating the chimpanzee STING at residue 78 to the human amino acid (78R) rendered the chimpanzee STING susceptible to cleavage (Figure 2B). We saw no effect of mutations at a second site, 230, either alone or in combination with residue 78 (Figure 2B). Previously, it had been shown that STING site 78 may be important for retention in the endoplasmic reticulum (ER) (Sun et al., 2009). To ensure that ER retention was not disrupted by the mutations that we tested, we disrupted both copies of STING in A549 cells using CRISPR-Cas9 targeting, and then stably re-complemented them with wildtype or 78W (cleavage resistant) human STING (Figure 2—figure supplement 1). Both the wildtype and mutant STING similarly localized to the ER (Figure 2—figure supplement 2). It is logical that the 78W substitution would not affect ER-localization of STING, since 78W is naturally occurring in the chimpanzee STING protein. Therefore, we can conclude that position 78R is a critical determinant for dengue virus cleavage, either as a binding site or a cleavage site for the dengue protease. It was previously estimated that STING is cleaved in a way that divides the protein into approximately 25% and 75% of its original molecular weight, with the N-terminus of the protein representing the smaller portion (Yu et al., 2012). This would place the cleavage site in the vicinity of the 78th residue. In addition, the 78/79 ‘RG’ motif is in good agreement with what is known about the preferences of NS2B3, where glycine (G) often lies directly downstream of the peptide cleavage site, and an arginine (R) directly upstream (Li et al., 2005a).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/31919/elife-31919-fig2-v1.jpg)
+
+**Figure 2.:** (A) A domain diagram of human STING is shown, as defined in (Wu et al., 2014). An alignment of human and chimpanzee STING in the region of the newly identified cleavage determinant (78/79) and the one previously determined (95/96) (Aguirre et al., 2012; Yu et al., 2012). (B) Site-directed mutagenesis was performed on either human or chimpanzee STING at position 78, substituting the residue at this position in human (R) with that in chimpanzee (W) and vice versa. Plasmids encoding the NSB3 protease complex and STING were cotransfected into 293T cells, and 48 hr later lysates were collected and analyzed by anti-FLAG western blot. In this experiment, both the protease and STING are tagged with FLAG. Data presented are representative of at least two experiments. (C) (bottom) 293T cells were transfected with plasmids expressing the DENV2 NS2B3 protease and wildtype (wt) or mutated (78W or 78R) STING. IRF3 and phosphorylated IRF3 (pIRF3) were detected by western blot in lysates harvested 48 hr later. (top) The identical experiment, but performed in biological triplicate and with the addition of plasmids encoding a firefly luciferase gene driven by the interferon beta (IFNb) promoter, and a renilla luciferase gene driven by a CMV promoter. The relative luciferase activity (Y-axis) was calculated by normalizing the luciferase signal to the renilla signal in each replicate. A Welch’s T-test was used to compare the levels of luciferase produced in the presence of active versus dead protease. Data is representative of at least two experiments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31919/elife-31919-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) A depiction of the insertion induced in the first exon of STING in A549 cells. Below, a Sanger sequencing chromatogram from a this genomic locus shows the homozygous insertion. (B) Both wildtype (wt) A549 cells and A549 cells that were knocked out for STING were probed by western blot for Actin or STING. An antibody recognizing the endogenous STING was used (anti-STING; Abcam 92605). (C) STING-KO A549 cells were re-complimented with HA-tagged versions of STING using lentiviral transduction. Cell lines were generated to express either wildtype (wt) or mutant STING from human or chimpanzee. A mutation was made in human STING to render it cleavage-resistant (78W). A mutation was made in chimpanzee STING to make it cleavage-susceptible (78R). Western blots where performed with antibodies against GAPDH or STING.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/31919/elife-31919-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Immunofluorescence imaging was performed on STING and the ER-resident protein BiP. A549 cells knocked out for STING were reconstituted with either wildtype human STING (top) or human STING 78W (cleavage resistant) by retroviral transduction (as shown in Figure 2—figure supplement 1). These cells were fixed in a 4% paraformaldehyde solution. Antibodies against the HA epitope tag (STING) or BiP were incubated with the fixed cells. Cells were imaged at 40x magnification on the Nikon A1R confocal microscope.
 
 Next we wished to ensure that the cleavage of STING alters its ability to signal in the interferon induction pathway. Transfection of plasmids encoding STING into cells is sufficient to activate the interferon induction pathway (Ishikawa and Barber, 2008). We again performed cotransfection of plasmids encoding STING and the dengue virus protease. 48 hr after transfection, cell lysates were probed in western blots for phosphorylated IRF3 (pIRF3) and for total IRF3. We found that pIRF3 was reduced when human or chimpanzee STING was susceptible to NS2B3 cleavage, and not reduced when STING was resistant to cleavage (Figure 2C, bottom). We also monitored the activation of the interferon-beta (IFNb) promoter. We performed an identical cotransfection assay with plasmids encoding STING and NS2B3, only in triplicate, and with two additional plasmids: one encoding a firefly luciferase reporter gene downstream of the IFNb promoter, and another encoding a renilla luciferase reporter gene downstream of a CMV promoter (used to normalize transfection efficiencies between samples, by taking the ratio of firefly:renilla luciferase). With human STING and the version of chimpanzee STING rendered sensitive to cleavage (78R), there was a significant reduction in firefly luciferase production in the presence of active NS2B3, in comparison to the catalytically dead version of the protease (Figure 2C, top). This reduction is not observed with chimpanzee STING, or with human STING rendered resistant to cleavage by the 78W mutation.
 
 We then verified these results with infection experiments. We stably re-complemented our A549 STING knockout cells, using retroviral transduction, to express various forms of STING: chimpanzee or human 78W (both cleavage resistant), human or chimpanzee 78R (both cleavage susceptible), or cells were complemented with an empty vector (Figure 2—figure supplement 1). These cells were infected with dengue virus 2 (strain 16681) at MOI 0.3. At 24 and 48 hr post infection, supernatant was harvested and viral content was quantified by plaque assay on BHK21 cells, and at the same time cells were harvested and lysed for western blot. We found that A549 cells re-complemented with STING, regardless of the version, produced less dengue virus than the STING knockout cell line that was not re-complemented (Figure 3). However, cells re-complemented with a cleavage-resistant STING produced less virus than those re-complemented with a cleavage-susceptible STING (Figure 3). In fact, cell lines in this experiment that differ by only a single amino acid in STING demonstrate as much as a 176-fold change in infectious virus produced at 24 hr post-infection, according to the titration experiments (human versus human 78W STING). The difference remains significant at 48 hr post-infection. This suggests that cleavage of STING is critically important for dengue virus replication, and has a large impact on viral titers. The STING cleavage product was not visible in the western blots performed during these experiments. This cleavage product is typically only detectable when cells are treated with MG132 proteasome inhibitor for several hours before cell lysis. While our transfection-based cleavage assays typically incorporate MG132 treatment (see Materials and methods), it was not used in the infection experiments shown here in order to not perturb infectious virus produced. In a separate experiment performed in the presence of MG132, we do see the cleavage of STING during infections (Figure 3—figure supplement 1). Further, the cleavage of endogenous STING during dengue infection was previously demonstrated under other conditions (Aguirre et al., 2012; Yu et al., 2012).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/31919/elife-31919-fig3-v1.jpg)
+
+**Figure 3.:** The endogenous copies of STING in A549 cells were knocked out using the Cas9 nuclease (see Figure 2—figure supplement 1). These cells were re-complemented by retroviral transduction with no gene (pLPCX-empty), wildtype human STING, cleavage-resistant human STING (human 78W), wildtype chimpanzee STING, or cleavage-susceptible chimpanzee STING (chimp 78R). These cell lines were infected at MOI of 0.3 with dengue virus 2 (DENV2 16681). After 24 and 48 hr the virus supernatant was removed and titrated on BHK21 cells. At the same time, cells were collected in RIPA buffer, lysed, and run on a gel for western blotting using antibodies against STING, dengue virus NS3, and GAPDH (loading control). A Tukey's multiple comparisons test indicated significant differences in infectious virus in the presence of each mutant STING compared to wildtype STING, as shown (****=p < 0.0001), after significant one-way ANOVA. Data are representative of at least two independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31919/elife-31919-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The indicated A549 cells lines (wild-type, STING knockout, or re-complemented) were plated in F-12K media with 10% FBS. Dengue virus 2 (16681) was diluted in F-12K media with 2% FBS, added to cells at an MOI of 5, and allowed to attach to cells for 1 hr at room temperature. Uninfected wells were incubated with F-12K media with 2% FBS not containing virus. F-12K media with 10% FBS was added to cells and they were maintained at 37°C with 5% CO2. After 20 hr the media in all wells was replaced with F-12K media with 2% FBS containing 20 μM proteasome inhibitor MG-132 (Sigma-Aldrich M7449). 4 hr following MG-132 treatment (24 hr following infection) the cells were collected and lysed in RIPA buffer supplemented with protease inhibitor (Roche, 4693159001). Protein concentration was calculated using the Bradford method. 15% 37.5:1 Acrylamide/Bisacrylamide gels were used to separate 30 μg of whole cell lysate for each sample. Protein was transferred overnight at 30 volts onto a nitrocellulose membrane. Blocking was performed with a 10% milk solution in tris-buffered saline supplemented with 0.1% TWEEN20. Primary antibodies were used against HA (3F10 clone Sigma 11867423001) and β-actin (Santa Cruz Biotechnology Sc47778).
 
 We next wanted to determine if our newly identified cleavage determinant could explain the resistance to STING cleavage seen in other species. The dengue protease also cannot cleave rhesus macaque, marmoset, or mouse STING (Figure 1B), all of which deviate from the ‘RG’ motif found in human STING (highlighted green in Figure 4A). We next performed site-directed mutagenesis to alter either the 78th or 79th residue in STING of these species. We found that, in all cases, mutations that restored this motif to the human ‘RG’ restored susceptibility to cleavage (Figure 4B). Consistent with previous studies (Aguirre et al., 2012; Yu et al., 2012), mutation of residues 93–96 in mouse STING to match the human ‘LRRG’ did not confer susceptibility to cleavage by NS2B3 (Figure 4B). Overall, these results further support the conclusion that sites 78 and 79 are critical determinants for cleavage by the DENV NS2B3 protease. An ‘RG’ motif at these two positions is both necessary and sufficient to make primate and rodent STING susceptible to cleavage by the DENV2 protease.
 
@@ -54,9 +80,15 @@ We next wanted to determine if our newly identified cleavage determinant could e
 
 **Figure 4.:** (A) A phylogeny and multiple sequence alignment of STING from various primate species and mouse. Shown in green is the 78/79 motif in STING that is mutated in panel B. Shown in red is the motif changed in mouse STING, only, in panel B. (B) Site directed mutagenesis was performed on human, rhesus macaque, marmoset, or mouse STING at sites 78/79 or 93–96 (mouse only). 293T cells were cotransfected with mammalian expression plasmids encoding STING along with wildtype or mutant NS2B3. 24 hr after transfection, whole-cell lysate was harvested and probed for FLAG or HA by western blot. Data presented are representative of at least two experiments.
 
-## The 78–79 RG motif in STING is a universal cleavage determinant for the proteases of human and sylvatic dengue viruses
+### The 78–79 RG motif in STING is a universal cleavage determinant for the proteases of human and sylvatic dengue viruses
 
 To test whether these results are generalizable to other dengue viruses endemic in humans, we cloned the region encoding the NS2B3 protease complex from three additional DENV isolates (one from each endemic human virus): DENV1 (Hawaii), DENV3 (Philippines/H887/1956), and DENV4 (H241). While some of these proteases expressed better than others, all were able to cleave wildtype human STING far more efficiently than human STING bearing the 78W mutation (Figure 5A). This data indicates that the 78/79 RG motif of STING is recognized (i.e. bound or cleaved) by the NS2B3 proteases of all endemic human dengue viruses. If residues 78/79 in fact constitute the actual cleavage site for the protease, this would be in line with biochemical studies showing that the proteases of all four endemic human dengue viruses have similar cleavage motif preferences (Li et al., 2005a).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/31919/elife-31919-fig5-v1.jpg)
+
+**Figure 5.:** (A) 293T cells were cotransfected with plasmids encoding NS2B3 from DENV1-4 along with human STING with or without a mutation at site 78. Western blotting was performed on lysate harvested 24 hr post transfection to detect NS2B3 (anti-FLAG) or STING (anti-HA). Data presented are representative of at least two experiments. (B) 293T cells were cotransfected with plasmids encoding the indicated STING and the NS2B3 from a sylvatic isolate of dengue virus (DakAr-141069). 24 hr post transfection, lysates where harvested, run on a gel, and western blotting was performed with an anti-HA antibody to detect STING. All data presented are representative of at least two experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31919/elife-31919-fig5-figsupp1-v1.jpg)
 
 We next cloned the NS2B3 protease from a sylvatic dengue strain (DakAr-141069). This virus was first isolated from an Ae. luteocephalus mosquito in Senegal in 1999 (Vasilakis et al., 2008). We find that this viral protease also cleaves human STING, but not the STING of chimpanzee, rhesus macaque, or marmoset (Figure 5B). Further, the restoration of the ‘RG’ motif at positions 78/79 again renders all of these STING proteins susceptible to cleavage (Figure 5B), indicating that the sylvatic protease is targeting (i.e. binding or cleaving) the same cleavage determinant as the proteases from human dengue viruses. This is consistent with the high degree of similarity between human and sylvatic proteases, as can be seen in alignment of the two (Figure 5—figure supplement 1).
 
@@ -86,7 +118,703 @@ Like other viruses, dengue viruses remodel their host cellular environment in nu
 
 ## Materials and methods
 
-## Plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>gene (Homo sapiens)</td>
+      <td>STING; TMEM173</td>
+      <td>NA</td>
+      <td>GENBANK:NM_198282</td>
+      <td>GENBANK:MF622062</td>
+    </tr>
+    <tr>
+      <td>gene (Homo sapiens)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF622062</td>
+    </tr>
+    <tr>
+      <td>gene (Pan troglodytes)</td>
+      <td>STING; TMEM173</td>
+      <td>NA</td>
+      <td>GENBANK:XM_016953921</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Pan paniscus)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF616339</td>
+    </tr>
+    <tr>
+      <td>gene (Gorilla gorilla)</td>
+      <td>STING; TMEM173</td>
+      <td>NA</td>
+      <td>GENBANK:XM_0040426</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Pongo abelii)</td>
+      <td>STING; TMEM173</td>
+      <td>NA</td>
+      <td>GENBANK:XM_002815952</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Hylobates agilis)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF616342</td>
+    </tr>
+    <tr>
+      <td>gene (Symphalangus syndactylus)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF616343</td>
+    </tr>
+    <tr>
+      <td>gene (Nomascus leucogenys)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF616344</td>
+    </tr>
+    <tr>
+      <td>gene (Hylobates lar)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF616341</td>
+    </tr>
+    <tr>
+      <td>gene (Rhinopithecus roxellana)</td>
+      <td>STING; TMEM173</td>
+      <td>NA</td>
+      <td>GENBANK:XM_010388119</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Rhinopithecus bieti)</td>
+      <td>STING; TMEM173</td>
+      <td>NA</td>
+      <td>GENBANK:XM_017895026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Trachypithecus francoisi)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF616352</td>
+    </tr>
+    <tr>
+      <td>gene (Colobus guereza)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF616351</td>
+    </tr>
+    <tr>
+      <td>gene (Chlorocebus sabaeus)</td>
+      <td>STING; TMEM173</td>
+      <td>NA</td>
+      <td>GENBANK:XM_008014636</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Cercopithecus wolfi)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF616350</td>
+    </tr>
+    <tr>
+      <td>gene (Miopithecus talapoin)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF616349</td>
+    </tr>
+    <tr>
+      <td>gene (Macaca nemestrina)</td>
+      <td>STING; TMEM173</td>
+      <td>NA</td>
+      <td>GENBANK:XM_011716377</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Macaca mulatta)</td>
+      <td>STING; TMEM173</td>
+      <td>NA</td>
+      <td>GENBANK:XM_015141010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Macaca mulatta)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF622060</td>
+    </tr>
+    <tr>
+      <td>gene (Macaca fascicularis)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF616346</td>
+    </tr>
+    <tr>
+      <td>gene (Papio papio)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF616348</td>
+    </tr>
+    <tr>
+      <td>gene (Lophocebus albigena)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF616347</td>
+    </tr>
+    <tr>
+      <td>gene (Cercocebus atys)</td>
+      <td>STING; TMEM173</td>
+      <td>NA</td>
+      <td>GENBANK:XM_012090448</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Mandrillus leucophaeus)</td>
+      <td>STING; TMEM173</td>
+      <td>NA</td>
+      <td>GENBANK:XM_011997224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Aloutta sara)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF616355</td>
+    </tr>
+    <tr>
+      <td>gene (Callicebus cupreus)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF616354</td>
+    </tr>
+    <tr>
+      <td>gene (Callithrix jacchus)</td>
+      <td>STING; TMEM173</td>
+      <td>NA</td>
+      <td>GENBANK:XM_00898588</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Callithrix jacchus)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF622061</td>
+    </tr>
+    <tr>
+      <td>gene (Cebus capucinus imitator)</td>
+      <td>STING; TMEM173</td>
+      <td>NA</td>
+      <td>GENBANK:XM_017536735</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Samiri boliviensis)</td>
+      <td>STING; TMEM173</td>
+      <td>NA</td>
+      <td>GENBANK:XM_003933913</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Saimiri sciureus)</td>
+      <td>STING; TMEM173</td>
+      <td>this study</td>
+      <td></td>
+      <td>GENBANK:MF616353</td>
+    </tr>
+    <tr>
+      <td>gene (Mus musculus)</td>
+      <td>STING; TMEM173</td>
+      <td>NA</td>
+      <td>GENBANK:NM_001289591</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Sus scrofa)</td>
+      <td>STING; TMEM173</td>
+      <td>NA</td>
+      <td>GENBANK:XP_005661761</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Heterocephalus glaber)</td>
+      <td></td>
+      <td>NA</td>
+      <td>GENBANK:JAO02071</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Chinchilla lanigera)</td>
+      <td></td>
+      <td>NA</td>
+      <td>GENBANK:XP_005382124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Neotoma lepida)</td>
+      <td></td>
+      <td>NA</td>
+      <td>GENBANK:OBS58238</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>gene (Dengue viurs 2)</td>
+      <td>NS2B3</td>
+      <td>NA</td>
+      <td>GENBANK:M29095</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>293T cells</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>A549 cells</td>
+      <td>ATCC</td>
+      <td>CCL-185</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rat anti-HA-HRP (3F10)</td>
+      <td>Sigma</td>
+      <td>11867423001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse anti-Flag (M2)</td>
+      <td>Sigma</td>
+      <td>F3165</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-pIRF3</td>
+      <td>abcam</td>
+      <td>ab76493</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-IRF3</td>
+      <td>Santa Cruz Biotech</td>
+      <td>sc-9082</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-GAPDH</td>
+      <td>Cell Signaling</td>
+      <td>14C10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Rabbit anti-STING</td>
+      <td>abcam</td>
+      <td>ab92605</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Mouse anti-Actin (C4)</td>
+      <td>Santa Cruz Biotech</td>
+      <td>Sc47778</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>DENV2 NS2B3 WT (plasmid)</td>
+      <td>PMID: 1642612</td>
+      <td></td>
+      <td>Progenitors: DENV2 NGC (GENBANK:M29095), pCR3.1</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>DENV2 NS2B3 S135A (plasmid)</td>
+      <td>PMID: 1642612</td>
+      <td></td>
+      <td>Progenitors: DENV2 NS2B3 WT pCR3.1 plasmid, SDM</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>DENV1 (Hawaii) cDNA</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: World Reference Center for Emerging Viruses and Arboviruses (WRCEVA) Catalog number NR-4287</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>DENV2 (New Guinea C) cDNA</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: World Reference Center for Emerging Viruses and Arboviruses (WRCEVA) Catalog number NR-4288</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>DENV3 (Philippines/ H87/1956) cDNA</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: World Reference Center for Emerging Viruses and Arboviruses (WRCEVA) Catalog number NR-2771</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>DENV4 (H241) cDNA</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: World Reference Center for Emerging Viruses and Arboviruses (WRCEVA) Catalog number NR-4289</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>DENV1 (Hawaii) NS2B3 WT (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: DENV1 (Hawaii) cDNA, pCR3.1</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>DENV2 (New Guinea C) NS2B3 WT (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: DENV2 (New Guinea C) cDNA, pCR3.1</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>DENV3 (Philippines/ H87/1956) NS2B3 WT (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: DENV3 (Philippines/H87/1956) cDNA, pCR3.1</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>DENV4 (H241) NS2B3 WT (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: DENV4 (H241) cDNA, pCR3.1</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Sylvatic (DakAr-141069) Dengue NS2B3 Protease (WT)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: DakAr-141069 NS2B3 sequence (GenBank EF105389)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>Sylvatic (DakAr-141069) Dengue NS2B3 Protease (S135A)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: Sylvatic (DakAr-141069) Dengue NS2B3 Protease (WT) SDM product</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>human cDNA</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: A549 cell line (ATCC CCL-185)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>chimpanzee cDNA</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: Coriell PR00748</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>rhesus macaque cDNA</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: Mm265-95</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>marmoset cDNA</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: Coriell PR07404</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>mouse cDNA</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: RNA extracted from mouse liver</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>human STING-HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: human cDNA, pcDNA3.1 plasmid</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>human STING-HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: human cDNA, pLPCX plasmid</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>human STING(R78W)-HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: human STING-HA pcDNA3.1 SDM product</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>human STING(R78W)-HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: human STING-HA pLPCX SDM product</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>human STING(R79D)-HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: human STING-HA pcDNA3.1 SDM product</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>human STING(R78Q)-HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: human STING-HA pcDNA3.1 SDM product</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>chimpanzee STING-HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: chimpanzee cDNA, pcDNA3.1 plasmid</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>chimpanzee STING-HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: chimpanzee cDNA, pLPCX plasmid</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>chimpanzee STING(W78R)-HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: chimpanzee STING-HA pcDNA3.1 SDM product</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>chimpanzee STING(W78R)-HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: chimpanzee STING-HA pLPCX SDM product</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>rhesus macaque STING-HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: rhesus macaque cDNA, pcDNA3.1 plasmid</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>rhesus macaque STING(D79G)-HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: rhesus macaque STING-HA pcDNA3.1 SDM product</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>marmoset STING-HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: marmoset cDNA, pcDNA3.1 plasmid</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>marmoset STING(Q78R)-HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: marmoset STING-HA pcDNA3.1 SDM product</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>mouse STING-HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: mouse cDNA, pcDNA3.1 plasmid</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>mouse STING(Q78R)-HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: mouse STING-HA pcDNA3.1 SDM product</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>mouse STING(93LRRG96)-HA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: mouse STING-HA pcDNA3.1 SDM product</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>human STING-3xFLAG (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: human cDNA, pLPCX plasmid</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>human STING(R78W)-3xFLAG (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: human STING-3xFLAG pLPCX SDM product</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>human STING(G230A)-3xFLAG (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: human STING-3xFLAG pLPCX SDM product</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>human STING (R78W, G230A)-3xFLAG (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: human STING-3xFLAG pLPCX SDM product</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>chimpanzee STING-3xFLAG (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: chimpanzee cDNA, pLPCX plasmid</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>chimpanzee STING (W78R)-3xFLAG (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: chimpanzee STING-3xFLAG pLPCX SDM product</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>chimpanzee STING(A230G)-3xFLAG (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: chimpanzee STING-3xFLAG pLPCX SDM product</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>chimpanzee STING(W78R, A230G)-3xFLAG (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Progenitors: chimpanzee STING-3xFLAG pLPCX SDM product</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>IFN-ß1-luc (plasmid)</td>
+      <td>PMID: 21512573</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pRL-CMV (plasmid)</td>
+      <td>Promega: AF025843</td>
+      <td></td>
+      <td>Progenitors: pRL-null</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Dual-Glo Luciferase Assay System</td>
+      <td>Promega</td>
+      <td>Cat#E2920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Superscript III First-Strand Synthesis System</td>
+      <td>Thermo Scientific</td>
+      <td>Cat#18080051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>MEGA7</td>
+      <td></td>
+      <td></td>
+      <td>http://www.megasoftware.net/</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>ImageJ version 1.43u</td>
+      <td></td>
+      <td></td>
+      <td>http://rsb.info.nih.gov/ij</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Python 2.7.11</td>
+      <td></td>
+      <td></td>
+      <td>https://www.python.org</td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Sequencher</td>
+      <td></td>
+      <td></td>
+      <td>https://www.genecodes.com</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids
 
 DENV2 NS2B3, expressed from the pCR3.1 plasmid, was a gift from Yi-Ling Lin. This plasmid, and all DENV1-4 protease-expressing plasmids described below, include a 3x FLAG tag at the C-terminus of NS3. For the experiment where proteases from human dengue viruses DENV1-4 are compared, primers were designed at the 5’ end of NS2B
 
@@ -106,26 +834,26 @@ DENV3: TGCTTAgtcgacaCTTTCTGCCAGCTGCAAAATCCTTG,
 
 DENV4: TGCTTAgtcgacaCTTTCTTCCACTGGCAAACTCCTTG) to amplify the NS2B + NS3 genomic region in one fragment. In this experiment, the protease from DENV2 was re-cloned so that the structure of the four protease clones was identical in all four cases. The PCR templates were cDNAs created from RNA obtained through the World Reference Center for Emerging Viruses and Arboviruses (WRCEVA) (Cat# NR-32847). DENV1 (Hawaii, NR-4287), DENV2 (New Guinea C, NR-4288), DENV3 (Philippines/H87/1956, NR-2771), and DENV4 (H241, NR-4289). The PCR products, and the plasmid containing the DENV2 protease mentioned above (gift from Yi-Ling Lin), were both digested with HindIII and Sal1. The PCR products were ligated into this plasmid and transformed into DH5α chemically competent E.coli. The sylvatic NS2B3 (DakAr141069) was synthesized (without an epitope tag) using the sequence information deposited on NCBI (Genbank accession EF105389). STING genes used for functional analysis were amplified from cDNA libraries constructed from the following cell lines: human (A549), chimpanzee/bonobo (STING sequence identical for these two species, clone amplified from Coriell, PR00748), rhesus macaque (Mm265-95, a gift from Welkin Johnson), marmoset (Coriell, PR07404), and mouse (generated from RNA extracted from whole liver). Either an HA or 3xFlag tag were engineered onto the 3' end of the gene sequences, separated from the coding sequence by a 3xGlycine-Alanine (GAGAGA) linker region (nucleotide sequence = GGTGCTGGTGCTGGTGCT). These sequences were cloned into the pcDNA3.1 expression vector with a 5' Kozak sequence (GCCACC). Rodent STING constructs were synthesized (Quintarabio) to include a Kozak sequence, C-terminal HA-tag, and flanking linkers that were used for Gibson cloning into the pLPCX mammalian expression plasmid.
 
-## STING cleavage assays
+### STING cleavage assays
 
 293 T cells (mycoplasma negative) were grown at 37°C in DMEM supplemented with 10% FBS, Pen/Strep, and L-glutamine. 24 hr prior to transfection, cells were plated at a density of 4.5 × 105 cells per well in a 12-well dish in antibiotic free media. Wells were transfected with 800 ng plasmid encoding STING and 800 ng plasmid encoding NS2B3 using TransIT 293 reagent (Mirus MIR 2704). For most experiments (Figures 1B, 3B, 5A and B), cells were treated with 10uM MG132 for 8 hr prior to harvesting for western blot.
 
-## Western blotting
+### Western blotting
 
 Cells were lysed in RIPA buffer supplemented with protease inhibitor (Roche, 4693159001). Protein concentration was calculated using the Bradford method. 10% 37.5:1 Acrylamide/Bisacrylamide gels were used to run 30 ug of whole cell lysate for each sample. Protein was transferred overnight at 30 volts onto a polyvinyl membrane. Blocking was performed with a 10% milk solution in tris-buffered saline supplemented with 0.1% TWEEN20. Primary antibodies used were used against HA (3f10 clone Sigma 11867423001), Flag (M2 clone Sigma F3165), GAPDH (CellSignaling 14C10), STING (Abcam 92605), actin (Santa Cruz Biotech Sc47778), and dengue virus NS3 (mouse polyclonal antibody raised against purified full-length NS3 from dengue 2 strain 16681 [Heaton et al., 2010]). Secondary antibodies used were goat-anti-mouse-HRP (Thermo 62–6520) and goat-anti-rabbit (Thermo 65–6120). Blots were developed using ECL Prime (Amersham RPN2232) and imaged using ImagQuant LAS 4000 (Amersham 28-9558-10).
 
-## CRISPR-Cas9 mediated disruption of STING, and stable re-complementation with primate orthologs
+### CRISPR-Cas9 mediated disruption of STING, and stable re-complementation with primate orthologs
 
 A549 cells (mycoplasma negative) were transfected with the pSPCAS9(BB)-P2A-eGFP (PX458) with the guide RNA sequence 5’ AGAGCACACTCTCCGGTACC 3’. GFP-positive cells were single-cell sorted into a 96-well dish and colonies were grown up. Cloned A549 cells were screened for homozygous mutations that disrupted the coding sequence of STING as follows. 10,000 cells were used to prep whole genomic DNA. The region surrounding the guide RNA was amplified using the following primers: 5’ GTCCCCAAGGGTTCTTGGTT 3’ and 5’ AACCAGTCCCACTCCCAGTA 3’. Amplified genomic DNA was Sanger sequenced to determine the nature of the CRISPR-CAS9-mediated genomic disruption. A cell line with confirmed homozygous disruption of STING (Figure 2—figure supplement 1) was then re-complemented with primate orthologs of STING. Four different C-terminally HA-tagged versions of STING were cloned into the pLPCX retroviral vector: wildtype human STING, R78W human STING, wildtype chimpanzee STING, and W78R chimpanzee STING. These were packaged into retroviral particles by cotransfecting into 293T cells (mycoplasma negative) each pLPCX-STING construct with plasmids expressing NB-tropic murine leukemia virus (MLV) Gag-Pol and VSV-G. As a control, we also made virus to complement with an empty pLPCX vector. Supernatants were collected and used to transduce 10^5 A549 cells in the presence of 10 ug/mL polybrene. 24 hr post transduction, cells were selected in 0.75 ug/mL puromycin.
 
-## Immunofluorescence
+### Immunofluorescence
 
 24 hr after plating, cells were fixed with 4% paraformaldehyde and permeabilized with 1% TritonX100 in PBS. Blocking was performed with 3% BSA solution in PBS. Primary antibodies used were rabbit-anti-GRP78 (BiP) (Abcam ab21685) and mouse-anti-HA (clone 16B12 abcam ab130275). Secondary antibodies used were donkey-anti-rabbit conjugated to AlexaFluor594 (Invitrogen A21207) and donkey-anti-mouse conjugated to AlexaFluor488 (Invitrogen A21202). Cells were mounted using VECTASHIELD hardset mounting media (VectorLabs H-1400).
 
-## Dengue infection assays
+### Dengue infection assays
 
 The indicated STING knockout and re-complemented cell lines were plated out in F-12K media with 10% FBS, after 24 hr the cells were counted. An MOI of 0.3 was calculated for each well and dengue virus 2 (16681) was allowed to attach to cells for 1 hr at room temperature. Unattached virus was then removed from cells, 2%serum in F-12K media was added to cells and they were maintained at 37°C with 5% CO2. After 24 and 48 hr the virus supernatant was removed for downstream titration on BHK21 cells. At the same time, cells were removed for downstream western blotting.
 
-## Sequencing STING from other primate species
+### Sequencing STING from other primate species
 
 The following STING sequences were collected from GenBank: chimpanzee (Pan troglodytes, XM_016953921.1), gorilla (Gorilla gorilla gorilla, XM_004042612.1), Sumatran orangutan (Pongo abelii, XM_002815952.2), golden snub-nosed monkey (Rhinopithecus roxellana, XM_010388119.1), black snub-nosed monkey (Rhinopithecus bieti, XM_017895026.1), African green monkey (Chlorocebus sabaeus, XM_008014636.1), pigtail macaque (Macaca nemestrina, XM_011716377.1), rhesus macaque (Macaca mulatta, XM_015141010.1), sooty mangabey (Cercocebus atys, XM_012090448.1), drill (Mandrillus leucophaeus, XM_011997224.1), marmoset (Callithrix jacchus, XM_00898588.2), capuchin monkey (Cebus capucinus imitator, XM_017536735.1), black-capped squirrel monkey (Saimiri boliviensis, XP_003933962.1). The remaining STING gene sequences were obtained by direct sequencing of cDNA libraries produced from the following primary or immortalized primate fibroblast cell lines: Bonobo (Pan paniscus, Coriell PR00748), Bornean orangutan (Pongo pygmaeus, Coriell PR00650), white-handed gibbon (Hylobates lar, Coriell PR01131), agile gibbon (Hylobates agilis, Coriell PR00773), siamang (Symphalagus syndactylus, Coriell PR00722), white-cheeked gibbon (Nomascus leucogenys, Coriell PR01037), leaf monkey (Trachypithecus francoisi, Coriell PR01099), colobus monkey (Colobus guereza, Coriell PR00980), Wolf’s guenon (Cercopithecus wolfi, Coriell PR01241), talapoin (Miopithecus talapoin, Coriell PR00716), crab-eating macaque (Macaca fasicularis, 103–06, gift from Welkin Johnson), olive baboon (Papio anubis, Coriell PR00978), grey-cheeked mangabey (Lophocebus albigena, Coriell PR01215), Bolivian red howler monkey (Alouatta sara, Coriell PR00708), red titi monkey (Callicebus (or Plecturocebus) cupreus, Coriell PR00793), common squirrel monkey (Saimiri sciureus, Coriell PR00603). Briefly, cells were grown in DMEM (Cellgro) supplemented with 15% FBS (Gibco) at 37°C and 5% CO2. RNA was extracted using the AllPrep DNA/RNA extraction kit (QIAGEN). cDNA libraries were generated using SuperScript III first strand synthesis kit (Invitrogen). PCR was performed using PCR SuperMix High Fidelity (Invitrogen). PCR products were directly sequenced. Each primate sequence was used as a query to search the human genome, and human STING gene was returned as the top hit. STING gene sequences generated in this study have been deposited in GenBank (accession numbers MF616339-MF616355).

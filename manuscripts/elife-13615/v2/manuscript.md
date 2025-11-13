@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.13615.001 In animal-based biomedical research, both the sex and the age of the animals studied affect disease phenotypes by modifying their susceptibility, presentation and response to treatment. The accurate reporting of experimental methods and materials, including the sex and age of animals, is essential so that other researchers can build on the results of such studies. Here we use text mining to study 15,311 research papers in which mice were the focus of the study. We find that the percentage of papers reporting the sex and age of mice has increased over the past two decades: however, only about 50% of the papers published in 2014 reported these two variables. We also compared the quality of reporting in six preclinical research areas and found evidence for different levels of sex-bias in these areas: the strongest male-bias was observed in cardiovascular disease models and the strongest female-bias was found in infectious disease models. These results demonstrate the ability of text mining to contribute to the ongoing debate about the reproducibility of research, and confirm the need to continue efforts to improve the reporting of experimental methods and materials. DOI: http://dx.doi.org/10.7554/eLife.13615.001
+In animal-based biomedical research, both the sex and the age of the animals studied affect disease phenotypes by modifying their susceptibility, presentation and response to treatment. The accurate reporting of experimental methods and materials, including the sex and age of animals, is essential so that other researchers can build on the results of such studies. Here we use text mining to study 15,311 research papers in which mice were the focus of the study. We find that the percentage of papers reporting the sex and age of mice has increased over the past two decades: however, only about 50% of the papers published in 2014 reported these two variables. We also compared the quality of reporting in six preclinical research areas and found evidence for different levels of sex-bias in these areas: the strongest male-bias was observed in cardiovascular disease models and the strongest female-bias was found in infectious disease models. These results demonstrate the ability of text mining to contribute to the ongoing debate about the reproducibility of research, and confirm the need to continue efforts to improve the reporting of experimental methods and materials.
 
 ## Introduction
 
@@ -41,49 +41,92 @@ Previously we have shown that important experimental details are repeatedly omit
 
 ## Results
 
-## System evaluation and data
+### System evaluation and data
 
-We evaluated the text mining system on a set of 50 full-text articles randomly selected from our corpus of study (Supplementary file 1) by comparing its performance with the manual annotations of the same papers performed by two biomedical experts. The F-scores that resulted from this evaluation were around 92% for both sex and age (Table 1), which indicates good quality of the results (Ananiadou et al., 2006).10.7554/eLife.13615.002Table 1.Evaluation of the performance of the text mining system.DOI: http://dx.doi.org/10.7554/eLife.13615.002CharacteristicsTrue- positivesTrue- negativesFalse- positivesFalse- negativesPrecision (%)Recall (%)F-score (%)Sex29163290.693.592.0Age31141496.888.592.4A total of 50 articles were used as the data set to evaluate the performance of the text mining system (Supplementary file 2D). The precision (P), calculated as TP/(TP+FP), determines the accuracy of the system in recognizing desirable terms. The recall (R), calculated as TP/(TP+FN), produces the coverage of the system. F-score is the harmonic mean of precision and recall and it is calculated as 2*P*R/(P+R).
+We evaluated the text mining system on a set of 50 full-text articles randomly selected from our corpus of study (Supplementary file 1) by comparing its performance with the manual annotations of the same papers performed by two biomedical experts. The F-scores that resulted from this evaluation were around 92% for both sex and age (Table 1), which indicates good quality of the results (Ananiadou et al., 2006).
 
-A total of 15,311 full-text articles from the PubMed Central Open Access subset as of February 2015 were processed in this study. These articles correspond to 7.15% and 27.85% of mouse experimentation articles retrieved by the same query in PubMed and PubMed Central, respectively. This corpus of documents were published between 1994 and 2014, of which 50.1% were published after 2011 (n= 7,671) (
+**Table 1.**
+ Evaluation of the performance of the text mining system.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Characteristics</th>
+      <th>True- positives</th>
+      <th>True- negatives</th>
+      <th>False- positives</th>
+      <th>False- negatives</th>
+      <th>Precision (%)</th>
+      <th>Recall (%)</th>
+      <th>F-score (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sex</td>
+      <td>29</td>
+      <td>16</td>
+      <td>3</td>
+      <td>2</td>
+      <td>90.6</td>
+      <td>93.5</td>
+      <td>92.0</td>
+    </tr>
+    <tr>
+      <td>Age</td>
+      <td>31</td>
+      <td>14</td>
+      <td>1</td>
+      <td>4</td>
+      <td>96.8</td>
+      <td>88.5</td>
+      <td>92.4</td>
+    </tr>
+  </tbody>
+</table>
+
+_A total of 50 articles were used as the data set to evaluate the performance of the text mining system (Supplementary file 2D). The precision (P), calculated as TP/(TP+FP), determines the accuracy of the system in recognizing desirable terms. The recall (R), calculated as TP/(TP+FN), produces the coverage of the system. F-score is the harmonic mean of precision and recall and it is calculated as 2*P*R/(P+R)._
+
+A total of 15,311 full-text articles from the PubMed Central Open Access subset as of February 2015 were processed in this study. These articles correspond to 7.15% and 27.85% of mouse experimentation articles retrieved by the same query in PubMed and PubMed Central, respectively. This corpus of documents were published between 1994 and 2014, of which 50.1% were published after 2011 (n= 7,671) (Figure 1). Seventy journals out of the 628 analyzed covered 30 or more articles of the corpus (Figure 1—figure supplement 1), which corresponds to 81.05% of papers retrieved. PLOS ONE contained the highest number of articles (n= 5,574; 36.41%), followed by Journal of Experimental Medicine (n= 931; 6.08%), and Journal of Cell Biology (n= 363; 2.37%).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/13615/elife-13615-fig1-v2.jpg)
 
-**Figure 1.:** Pie-chart (a) showing an overview of the reporting and non-reporting (none) of sex only, age, or both sex and age in a set of 15,311 studies published between 1994 and 2014 by stating the number and percentage of articles in each portion. The chronological change of the reporting and non-reporting is displayed both in a stacked area plot (b) and a scatter plot after normalization [per articles/year] (c). The chronological changes show that most of the articles assessed were published during the last decade (b), and that the improvement of reporting of these two biological factors started before, and not after, the US Institute of Medicine report in 2001 (Wizemann and Pardue, 2001) [indicated with a vertical red line] or the introduction of ARRIVE guideline (Kilkenny et al., 2010) [indicated with a vertical black dashed line] (c). Bar-chart (d) showing the number and percentage of articles reporting/not reporting of sex by sex [females only, males only, or both sexes either by mixing or separating them] or age. The chronological change of the reporting and non-reporting of sex by sex (e), and age (f), is displayed in scatter plots after normalization [per articles/year].DOI: http://dx.doi.org/10.7554/eLife.13615.00310.7554/eLife.13615.004Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.13615.00410.7554/eLife.13615.005Figure 1—source data 2.DOI: http://dx.doi.org/10.7554/eLife.13615.005
+**Figure 1.:** Pie-chart (a) showing an overview of the reporting and non-reporting (none) of sex only, age, or both sex and age in a set of 15,311 studies published between 1994 and 2014 by stating the number and percentage of articles in each portion. The chronological change of the reporting and non-reporting is displayed both in a stacked area plot (b) and a scatter plot after normalization [per articles/year] (c). The chronological changes show that most of the articles assessed were published during the last decade (b), and that the improvement of reporting of these two biological factors started before, and not after, the US Institute of Medicine report in 2001 (Wizemann and Pardue, 2001) [indicated with a vertical red line] or the introduction of ARRIVE guideline (Kilkenny et al., 2010) [indicated with a vertical black dashed line] (c). Bar-chart (d) showing the number and percentage of articles reporting/not reporting of sex by sex [females only, males only, or both sexes either by mixing or separating them] or age. The chronological change of the reporting and non-reporting of sex by sex (e), and age (f), is displayed in scatter plots after normalization [per articles/year].
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/13615/elife-13615-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** The figure shows the top 70 journals from a total of 628 journals in which were published 30 or more articles of the corpus; corresponding to 81.05% of papers assessed. The journals are organised in descending order of the reporting of sex or age (i.e. at least one) as experimental variables. *Journals that endorsed ARRIVE and ~Journals that stated the reporting of sex and age in the author guidelines.DOI: http://dx.doi.org/10.7554/eLife.13615.006
+**Figure 1—figure supplement 1.:** The figure shows the top 70 journals from a total of 628 journals in which were published 30 or more articles of the corpus; corresponding to 81.05% of papers assessed. The journals are organised in descending order of the reporting of sex or age (i.e. at least one) as experimental variables. *Journals that endorsed ARRIVE and ~Journals that stated the reporting of sex and age in the author guidelines.
 
-## Reporting of sex and age
+### Reporting of sex and age
 
 The general and historical reporting of sex and age as experimental variables in mouse models is presented in Figure 1. Overall, from 1994 to 2014, about a fifth of papers did not report either the sex or the age of the mouse used in the study (Figure 1a and 1b). Figure 1c shows that the frequency of articles reporting sex and/or age in mice models has increased steadily during the last two decades, whereas missing information about these two experimental variables showed an important drop from 100% (no papers reported the sex and age of the mice in 1994 and 1995) to about 15% following a slope of approximately -0.045. Nevertheless, since 2012, the percentage of articles reporting both factors had reached only about 50% of the papers published in those years.
 
 When the sex of the mouse model is stated in the article, experiments performed with female mice were more frequently reported than experiments performed with male mice (31.84% vs. 23.38%, Binomial test p< 0.001; 95% IC: 56.60 – 58.71) (Figure 1d). Our results showed that, historically, female mice have been reported more often than male mice, reaching a plateau of about 33% since the last decade (2004 – 2014) (Figure 1e). In addition, the use of both sexes in mice experiments stratified by sex showed the lowest improvement over time (Figure 1e); with a maximum of about 10% of the articles since 2006. Reporting of mouse age improved steadily from 1999 to 2006 (Figure 1f), at which point age is reported more than 50% of the time; since 2010 age reporting has plateaued, with between 65 and 70% of articles each year mentioning the age of mice.
 
-In order to identify whether there are general features common on reporting sex and age as experimental variables to any biomedical field, we assessed six main preclinical research topics as defined by their impact on human health (
+In order to identify whether there are general features common on reporting sex and age as experimental variables to any biomedical field, we assessed six main preclinical research topics as defined by their impact on human health (WHO, 2014), including: cardiovascular diseases; cancer; diabetes mellitus; lung diseases; infectious diseases; and neurological disorders. A two-way ANOVA without replication was performed to assess the difference in reporting sex and age for each field. Our results showed statistically significant differences, p < 0.05, indicating that the reporting of these experimental factors varies across biomedical fields (Figure 2). In identifying the sex and age of the mouse, for instance, studies on diabetes showed the highest frequency (68%), whereas studies on cancer showed the lowest frequency (48%) (Figure 2a). Studies on cancer reported the worst results regarding missing information about sex (33%) or age (37%) of the mice used (Figure 2b and 2c). Overall, the best results in reporting sex and age were achieved by the studies on neurological disorders (Figure 2a, 2b and 2c).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/13615/elife-13615-fig2-v2.jpg)
 
-**Figure 2.:** The reporting of these variables was assessed for six groups of diseases from the top 10 causes of death according to the W.H.O. This analysis was performed in the set of 14,225 articles published from 2001, when the US Institute of Medicine report was published (Wizemann and Pardue, 2001) and when the non-reporting of sex and age together dropped about 50% –avoiding misinterpretations [Figure 1c], to 2014. The distribution is presented in stacked bar charts that illustrate the percentage of the reporting and non-reporting for both biological variables overall (a) and discriminated by variable: sex (b) and age (c); stating the number of articles corresponding to each percentage inside the stacks. A two-way ANOVA without replication was performed to assess the difference in reporting of the sex [p = 0.005] and age [p = 0.028] for each disease, indicating that the reporting and non-reporting of these biological factors varies across these diseases.DOI: http://dx.doi.org/10.7554/eLife.13615.007
+**Figure 2.:** The reporting of these variables was assessed for six groups of diseases from the top 10 causes of death according to the W.H.O. This analysis was performed in the set of 14,225 articles published from 2001, when the US Institute of Medicine report was published (Wizemann and Pardue, 2001) and when the non-reporting of sex and age together dropped about 50% –avoiding misinterpretations [Figure 1c], to 2014. The distribution is presented in stacked bar charts that illustrate the percentage of the reporting and non-reporting for both biological variables overall (a) and discriminated by variable: sex (b) and age (c); stating the number of articles corresponding to each percentage inside the stacks. A two-way ANOVA without replication was performed to assess the difference in reporting of the sex [p = 0.005] and age [p = 0.028] for each disease, indicating that the reporting and non-reporting of these biological factors varies across these diseases.
 
-For a more detailed analysis of sex-based reporting, the six groups of diseases were divided into four subgroups according to the characterization of the disease models via genetics, immunology, physiopathology and therapy. Our results suggest that there is a preference for studying the immunology of these diseases by using female mouse models, whereas there is a tendency to use male mouse models for studying their genetic basis (
+For a more detailed analysis of sex-based reporting, the six groups of diseases were divided into four subgroups according to the characterization of the disease models via genetics, immunology, physiopathology and therapy. Our results suggest that there is a preference for studying the immunology of these diseases by using female mouse models, whereas there is a tendency to use male mouse models for studying their genetic basis (Figure 3a and 3b). Both in physiopathology and in therapy subgroups, male mice were more frequently studied in models of cardiovascular diseases, diabetes and neurological disorders, and female mice in models of cancer, lung diseases and infectious diseases (Figure 3c and 3d).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/13615/elife-13615-fig3-v2.jpg)
 
-**Figure 3.:** The reporting of sex was assessed for each disease by the topic of research whether genetics (a), immunology (b), physiopathology (c), or therapy (d). This analysis was performed in the set of 14,225 articles published from 2001, when the US Institute of Medicine report was published (Wizemann and Pardue, 2001) [Figure 1c], to 2014. The distribution is presented in stacked bar charts that illustrate the percentage of the reporting and non-reporting for the sex; stating the number of articles corresponding to each percentage inside the stacks. A two-way ANOVA without replication was performed to assess the difference in reporting of the sex for genetics [p = 0.0009], immunology [p = 0.0074], physiopathology [p < 0.0001], and therapy [p = 0.1165], indicating that the reporting and non-reporting of these biological factors varies across most of these biomedical approaches.DOI: http://dx.doi.org/10.7554/eLife.13615.008
+**Figure 3.:** The reporting of sex was assessed for each disease by the topic of research whether genetics (a), immunology (b), physiopathology (c), or therapy (d). This analysis was performed in the set of 14,225 articles published from 2001, when the US Institute of Medicine report was published (Wizemann and Pardue, 2001) [Figure 1c], to 2014. The distribution is presented in stacked bar charts that illustrate the percentage of the reporting and non-reporting for the sex; stating the number of articles corresponding to each percentage inside the stacks. A two-way ANOVA without replication was performed to assess the difference in reporting of the sex for genetics [p = 0.0009], immunology [p = 0.0074], physiopathology [p < 0.0001], and therapy [p = 0.1165], indicating that the reporting and non-reporting of these biological factors varies across most of these biomedical approaches.
 
-In order to further test whether the observations about the reporting of sex in the experimental mouse models were conserved even in specific cases, we focused the analysis on one particular disease per group as follows: myocardial ischemia (cardiovascular disease); diabetes mellitus type 2 (diabetes); chronic obstructive pulmonary disease (lung disease); Alzheimer's (neurological disorder). Three diseases were included in the case of infectious diseases that are among the most frequently reported causes of death world-wide (
+In order to further test whether the observations about the reporting of sex in the experimental mouse models were conserved even in specific cases, we focused the analysis on one particular disease per group as follows: myocardial ischemia (cardiovascular disease); diabetes mellitus type 2 (diabetes); chronic obstructive pulmonary disease (lung disease); Alzheimer's (neurological disorder). Three diseases were included in the case of infectious diseases that are among the most frequently reported causes of death world-wide (WHO, 2014), i.e. tuberculosis, HIV and malaria. Melanoma was included for the cancer group since it is a highly aggressive and notoriously chemoresistant form of cancer; making it a widely used tumor model (Herlyn and Fukunaga-Kalabis, 2010). Overall, our results suggest that in most cases there is a similar pattern of reporting as that found for the biomedical fields assessed to which these diseases belong (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/13615/elife-13615-fig4-v2.jpg)
 
-**Figure 4.:** The graph shows the reporting in particular diseases. All these diseases that are among the most frequently reported causes of death world-wide or commonly used models. The distribution is presented in stacked bar charts that illustrate the percentage of the reporting and non-reporting for the sex; stating the number of articles corresponding to each percentage inside the stacks. This analysis was performed in a set of 791 articles; see Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.13615.009
+**Figure 4.:** The graph shows the reporting in particular diseases. All these diseases that are among the most frequently reported causes of death world-wide or commonly used models. The distribution is presented in stacked bar charts that illustrate the percentage of the reporting and non-reporting for the sex; stating the number of articles corresponding to each percentage inside the stacks. This analysis was performed in a set of 791 articles; see Figure 1—source data 1.
 
-Bibliometric parameters were used to determine if they were associated with the quality of method reporting. We used as journal metrics both the journal impact factor from the Institute for Scientific Information (ISI) Web of Knowledge’s Journal Citation Report (2014), and h-index from the SCImago Journal and Country Rank (2014). No correlation was observed between the reporting of sex or age as experimental variables and the journal impact factor and h-index of the 70 journals that covered 30 or more articles of the corpus (
+Bibliometric parameters were used to determine if they were associated with the quality of method reporting. We used as journal metrics both the journal impact factor from the Institute for Scientific Information (ISI) Web of Knowledge’s Journal Citation Report (2014), and h-index from the SCImago Journal and Country Rank (2014). No correlation was observed between the reporting of sex or age as experimental variables and the journal impact factor and h-index of the 70 journals that covered 30 or more articles of the corpus (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/13615/elife-13615-fig5-v2.jpg)
 
-**Figure 5.:** Journal impact factor in which the papers were published (a) and h-index of journals (b). Spearman’s rank correlation coefficient r square is shown alongside the regression lines. The scatter plots show that there is no correlation between the reporting and impact factor [r =0.002, p = 0.984] data from the Journal Citation Report (year 2014) and journal h-index [r =-0.215, p = 0.073] data from the SCImago Journal and Country Rank (year 2014). Analysis conducted on the 70 journals that published 30 or more articles of the 15,311 studies returned by searching the PubMed Central Open Access subset as of February 2015.DOI: http://dx.doi.org/10.7554/eLife.13615.010
+**Figure 5.:** Journal impact factor in which the papers were published (a) and h-index of journals (b). Spearman’s rank correlation coefficient r square is shown alongside the regression lines. The scatter plots show that there is no correlation between the reporting and impact factor [r =0.002, p = 0.984] data from the Journal Citation Report (year 2014) and journal h-index [r =-0.215, p = 0.073] data from the SCImago Journal and Country Rank (year 2014). Analysis conducted on the 70 journals that published 30 or more articles of the 15,311 studies returned by searching the PubMed Central Open Access subset as of February 2015.
 
 ## Discussion
 
@@ -103,7 +146,7 @@ We hope that our text mining strategy can be used to explore other aspects of ho
 
 ## Methods
 
-## Search strategy and data
+### Search strategy and data
 
 A literature search was carried out in Medline via PubMed in order to identify research articles that deal with mouse experimentation. The database was searched in March 2015 for articles that were published between 1st January, 1994 and 31st December, 2014 using the terms as they appear in Figure 1—source data 1. To ensure maximum specificity in the search, searching was limited to articles where the MeSH (Medical Subject Headings) “Mouse” term indicated the major focus of the article; moreover the keywords “Mouse” or “Mice” had to be stated in the title. This also prevented articles that made only passing references to mouse work from entering the dataset and ensured a high quality corpus for analysis. The search was restricted to English language papers and to research articles (excluding review articles). In addition, to obtain full text articles, we restricted the PubMed search to include only those in PubMed Central by adding the special term “pubmed pmc[sb]” in the query. The PubMed Identifiers (PMID) were then converted to the respective PubMed Central (PMC) reference numbers which were acquired by querying the PubMed Central Open Access subset as of February 2015, which contains over one million full-text articles to date.
 
@@ -111,7 +154,7 @@ In order to assess particular areas in which there is strong scientific interest
 
 In 2001 the US Institute of Medicine report (Wizemann and Pardue, 2001) concluded that sex matters in diseases and response to therapy; we therefore decided to explore any changes before and after the report by selecting articles between 1994 and 2014. This time span allows us to assess the impact of this report on the reporting of this experimental factor. In order to avoid misinterpretation due to low number of papers prior to 2001, the analysis for groups and subgroups was applied to articles published after 1st January 2001.
 
-## Sex and Age identification: data sets
+### Sex and Age identification: data sets
 
 The text mining approach involved the design and implementation of generic rule-based patterns, which identify age and sex mentions in text. The rules were based on lexical patterns engineered from a sample of 40 full-text articles manually selected from PubMed through a thematic query of interest as follows: "Mice"[Mesh] AND (mouse[ti] OR mice[ti]) AND "animals"[MeSH Terms:noexp] AND Journal Article[ptyp] AND English[lang]. The first 40 papers that mentioned the sex and/or age of the mice were selected (Supplementary file 2A).
 
@@ -123,9 +166,58 @@ The results generated by text mining were then integrated at the document level.
 
 Since our method focuses on the recognition of age and sex at the mention level per document, we hypothesize that it is highly unlikely for researchers to report key information about animal models that they did not use. In order to further support this hypothesis, 40 full-text articles were randomly selected from our corpus and through manual inspection, we concluded that indeed, if there are mentions in text (particularly in the Method section) of specific age and sex (together) these are attributed to the mice used in the animal experiments and no further mentions were reported (Supplementary file 2B). The randomness was modelled by using the “=RANDBETWEEN()” function in Microsoft Office Excel for Windows version 2013 as follows: according to the text mining results, each paper of the corpus of articles with a positive mention of the sex and/or age of the mice was assign a random number from 1 to 40. The first 40 papers identified with the random number 1 were selected.
 
-Finally, to further enhance the performance of the rules, we applied this strategy to a development set of 70 full-text documents (Supplementary file 3C). These articles were randomly selected from our corpus by using the “=RANDBETWEEN()” function in Microsoft Office Excel for Windows version 2013; assigning to each paper a random number from 1 to 5. After sorting by the “Year” column, the first five papers identified with the random number 1 were selected by each year group. The mentions of age and sex in both corpus were manually identified and reviewed by the first author, who has a background in the field of biomedical research. A summary of the data sets used in this study is presented in Table 2.10.7554/eLife.13615.011Table 2.Summary of the data sets used in this study.DOI: http://dx.doi.org/10.7554/eLife.13615.011Sets of articlesNumber of articlesTaskFileData 115,311Corpus for assessing reporting of the sex and age of the miceSupplementary file 1*Data 240Creating the text-mining rulesSupplementary file 2AData 340Manual inspection for finding the location of the mention of the sex and age of the miceSupplementary file 2BData 470Enhancing the performance of the text-mining rulesSupplementary file 2CData 550Evaluating the text-mining systemSupplementary file 2D*Supplementary file 1 also contains data sets of the six groups of diseases analyzed (cardiovascular diseases; cancer; diabetes mellitus; lung diseases; infectious diseases; and neurological disorders), as well as of the different approaches to assess the disease models (i.e. genetics, immunology, physiopathology and therapy), and the disease example for each of the six disease groups.
+Finally, to further enhance the performance of the rules, we applied this strategy to a development set of 70 full-text documents (Supplementary file 3C). These articles were randomly selected from our corpus by using the “=RANDBETWEEN()” function in Microsoft Office Excel for Windows version 2013; assigning to each paper a random number from 1 to 5. After sorting by the “Year” column, the first five papers identified with the random number 1 were selected by each year group. The mentions of age and sex in both corpus were manually identified and reviewed by the first author, who has a background in the field of biomedical research. A summary of the data sets used in this study is presented in Table 2.
 
-## System evaluation
+**Table 2.**
+ Summary of the data sets used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sets of articles</th>
+      <th>Number of articles</th>
+      <th>Task</th>
+      <th>File</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data 1</td>
+      <td>15,311</td>
+      <td>Corpus for assessing reporting of the sex and age of the mice</td>
+      <td>Supplementary file 1*</td>
+    </tr>
+    <tr>
+      <td>Data 2</td>
+      <td>40</td>
+      <td>Creating the text-mining rules</td>
+      <td>Supplementary file 2A</td>
+    </tr>
+    <tr>
+      <td>Data 3</td>
+      <td>40</td>
+      <td>Manual inspection for finding the location of the mention of the sex and age of the mice</td>
+      <td>Supplementary file 2B</td>
+    </tr>
+    <tr>
+      <td>Data 4</td>
+      <td>70</td>
+      <td>Enhancing the performance of the text-mining rules</td>
+      <td>Supplementary file 2C</td>
+    </tr>
+    <tr>
+      <td>Data 5</td>
+      <td>50</td>
+      <td>Evaluating the text-mining system</td>
+      <td>Supplementary file 2D</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Supplementary file 1 also contains data sets of the six groups of diseases analyzed (cardiovascular diseases; cancer; diabetes mellitus; lung diseases; infectious diseases; and neurological disorders), as well as of the different approaches to assess the disease models (i.e. genetics, immunology, physiopathology and therapy), and the disease example for each of the six disease groups._
+
+### System evaluation
 
 The performance of the text mining system was evaluated at the document level by considering whether the returned mentions were correctly the sex and age of the mice studied. In order to create an evaluation dataset, 50 full-text articles were randomly selected from our corpus of study (Supplementary file 3D) and were manually double-annotated for both the age and the sex by the first and fourth authors due to their biomedical expertise. There was no disagreement between the manual annotations performed by two biomedical experts. The randomness was modelled by using the “=RANDBETWEEN()” function in Microsoft Office Excel for Windows version 2013 as follows: a random number from 1 to 50 was assigned to each paper. The first 50 papers identified with the random number 1 were selected.
 
@@ -137,6 +229,6 @@ On the other hand, the application of a dictionary approach generated interestin
 
 Although our text mining protocol does produce reliable results, the returned results are merely an indication of how text mining can be used to improve issues such as the under-reporting of key information in mouse based studies. There is room to improve the applied text mining strategy. Crafting more flexible rules for the capture of age and including more specific ones for the recognition of sex could improve the generated results and reveal a clearer picture of the reporting of these variables in the biomedical field. While the variety of the observed common lexical patterns was not wide in the training and development sets (Supplementary files 2A and 2C), a larger set could reveal other patterns that could help increase the recall. Nevertheless, the F-measure of 92% (Table 1) gives enough confidence in using this automated method to assess the incidence of reporting sex and age in biomedical articles.
 
-## Statistical analysis
+### Statistical analysis
 
 The frequencies of reporting of sex and age by articles were determined in Microsoft Office Excel 2013 for Windows. Differences in reporting of sex and age of mice in multiple models of diseases, as well as the use of each sex by the topic of research for each disease were assessed by two-way ANOVA without replication. An index of the reporting for each journal was calculated by dividing the number of articles that report the sex and/or age of the mouse by the number of articles that do not report any of these biological variables. Spearman’s rank correlations were calculated between the reporting index and impact factor from the Journal Citation Report, and h-index journal from the SCImago Journal and Country Rank. All statistical analysis was performed by using the GraphPad Prism software for Windows version 6.05, La Jolla CA, (www.graphpad.com). Graphical representation of the data was performed using Microsoft Office Excel for Windows version 2013.

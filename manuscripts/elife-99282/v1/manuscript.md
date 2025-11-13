@@ -15,14 +15,14 @@
 
 ### Affiliations
 
-1. https://ror.org/0278r4c85 Department of Tuberculosis, The First Affiliated Hospital of Xinxiang Medical University Weihui China
-2. https://ror.org/038hzq450 Department of Pathogenic Biology, School of Basic Medical Science, Xinxiang Medical University Xinxiang China
+1. Department of Tuberculosis, The First Affiliated Hospital of Xinxiang Medical University Weihui China ([ROR:0278r4c85](https://ror.org/0278r4c85))
+2. Department of Pathogenic Biology, School of Basic Medical Science, Xinxiang Medical University Xinxiang China ([ROR:038hzq450](https://ror.org/038hzq450))
 
 † Corresponding author
 
 ## Abstract
 
-Increasing researches reveal gut microbiota was associated with the development of tuberculosis (TB). How to prevent or reduce Mycobacterium tuberculosis colonization in the lungs is a key measure to prevent TB. However, the data on gut microbiota preventing Mycobacterium colonization in the lungs were scarce. Here, we established the clindamycin-inducing intestinal microbiome dysbiosis and fecal microbial transplantation models in mice to identify gut microbiota’s effect on Mycobacterium ’s colonization in the mouse lungs and explore its potential mechanisms. The results showed that clindamycin treatment altered the diversity and composition of the intestinal bacterial and fungal microbiome, weakened the trans-kingdom network interactions between bacteria and fungi, and induced gut microbiome dysbiosis in the mice. Gut microbiota dysbiosis increases intestinal permeability and enhances the susceptibility of Mycobacterium colonization in the lungs of mice. The potential mechanisms were gut microbiota dysbiosis altered the lung transcriptome and increased Nos2 expression through the ‘gut–lung axis’. Nos2 high expression disrupts the intracellular antimicrobial and anti-inflammatory environment by increasing the concentration of nitric oxide, decreasing the levels of reactive oxygen species and Defb1 in the cells, and promoting Mycobacteria colonization in the lungs of mice. The present study raises a potential strategy for reducing the risks of Mycobacteria infections and transmission by regulating the gut microbiome balance.
+Increasing researches reveal gut microbiota was associated with the development of tuberculosis (TB). How to prevent or reduce Mycobacterium tuberculosis colonization in the lungs is a key measure to prevent TB. However, the data on gut microbiota preventing Mycobacterium colonization in the lungs were scarce. Here, we established the clindamycin-inducing intestinal microbiome dysbiosis and fecal microbial transplantation models in mice to identify gut microbiota’s effect on Mycobacterium’s colonization in the mouse lungs and explore its potential mechanisms. The results showed that clindamycin treatment altered the diversity and composition of the intestinal bacterial and fungal microbiome, weakened the trans-kingdom network interactions between bacteria and fungi, and induced gut microbiome dysbiosis in the mice. Gut microbiota dysbiosis increases intestinal permeability and enhances the susceptibility of Mycobacterium colonization in the lungs of mice. The potential mechanisms were gut microbiota dysbiosis altered the lung transcriptome and increased Nos2 expression through the ‘gut–lung axis’. Nos2 high expression disrupts the intracellular antimicrobial and anti-inflammatory environment by increasing the concentration of nitric oxide, decreasing the levels of reactive oxygen species and Defb1 in the cells, and promoting Mycobacteria colonization in the lungs of mice. The present study raises a potential strategy for reducing the risks of Mycobacteria infections and transmission by regulating the gut microbiome balance.
 
 ## Introduction
 
@@ -36,45 +36,133 @@ Based on our previous studies and other reports, we found the effect of Mtb infe
 
 ## Results
 
-## Clindamycin increases Mycobacterium smegmatis colonization in the lungs of mice
+### Clindamycin increases Mycobacterium smegmatis colonization in the lungs of mice
 
 According to Figure 1a procedure, we established a clindamycin-treated mice model to assess the effects of clindamycin-associated gut dysbiosis on Mycobacterium smegmatis (MS) colonization in the lungs of mice. The results showed that the mice with clindamycin treated presented a significantly higher colonization of MS in the lungs than that of control mice (Figure 1b, Figure 1—source data 1). The size of the cecum of CL-treated mice was markedly more dilated compared with the control groups (Figure 1c, Figure 1—source data 1). To assess the effect of CL on gut mucosal damage and permeability, the intestinal fatty acid binding protein (i-FABP, a marker of enterocyte death) and lipopolysaccharides (LPS, an endotoxin, as a marker of gut permeability) in serum were investigated with enzyme-linked immunosorbent assay (ELISA) technology. The results showed that the levels of i-FABP and LPS were significantly higher in the CL group than in the control group (CON) (Figure 1d, e, Figure 1—source data 1). Pathological sections of intestinal tissue showed the intestinal epithelial tissues of mice with no obvious alteration after clindamycin treatment vs the CON group (Figure 1—figure supplement 1). H&E staining of paraffin-embedded lung sections revealed that there was more diffused inflammation and inflammatory cell infiltration in the CL-treated mice compared with that of the CON group animals after infecting with MS (Figure 1—figure supplement 1). All these results indicated that CL treatment damages the enterocyte, increases gut permeability, promotes the fermentation of cecum contents, and increases MS colonization in the lungs of mice.
 
-## Altered the diversity and composition of the gut microbiome in mice
+![Figure 1.](https://cdn.elifesciences.org/articles/99282/elife-99282-fig1-v1.jpg)
+
+**Figure 1.:** (a) The experimental procedures of clindamycin-inducing gut microbiota dysbiosis model in mice. (b) The colonization of MS in the lungs of mice after infection at 72 hr. (c) The length of cecum after clindamycin treatment. (d) The level of iFABP in serum. (e) LPS concentration in serum. CL: clindamycin treatment group (n = 8), CON: control group (n = 8). MS: Mycobacterium smegmatis, iFABP: intestinal fatty acid binding protein, LPS: lipopolysaccharides. *p < 0.05, **p < 0.01, ***p < 0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/99282/elife-99282-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Pathological sections of intestinal tissue showed the intestinal epithelial tissues of mice with no obvious alteration after CL treatment vs the CON group, ×20 magnification. (B) Representative histological images of murine intestine and lung infected with Mycobacterium smegmatis (MS) infection, show diffused inflammation and inflammatory cell infiltration. CL: clindamycin treatment, CON: control group, left figure: ×20 magnification; right figure: ×100 magnification. Magnification numerical scale bars are marked with red in the figures.
+
+### Altered the diversity and composition of the gut microbiome in mice
 
 To assess the effect of CL treatment on the gut microbiome of mice, we investigated the alteration of gut microbiota (bacterial) and mycobiota (fungi) by 16S rRNA and ITS2 amplicon sequencing, respectively. For the gut bacterial analysis, the α-diversity was significantly decreased in the CL group compared with the CON group (Figure 2a, Figure 2—source data 1). The β-diversity based on the weighted UniFrac distance showed that the CL group samples were separated from the CON group (R = 0.8488, p = 0.001) (Figure 2b). It indicated that the intestinal bacterial microbial community structure was a significant difference between the CL-treated mice and the control mice. At the phylum level, we observed a remarkable decrease of Bacteroidota and a significant increase of Firmicutes and Proteobacteria in the CL group compared to the control group (Figure 2c, Supplementary file 1). At the genus level, the CL group had a significantly higher relative abundance of Bacteroides, Lactobacillus, Escherichia–Shigella, and Faecalibaculum, and a lower abundance of Dubosiella, Alloprevotella, Akkermansia, and Bifidobacterium compared with that in the CON group (Figure 2d, Supplementary file 1).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/99282/elife-99282-fig2-v1.jpg)
+
+**Figure 2.:** (a) Chao1 and inverse Simpson indices of gut microbiota. (b) Principal coordinate analysis (PCoA) of gut microbiota based on weighted Unifrac distance. (c) The composition distribution of gut microbiome (bacteria and fungi) at the phylum level. (d) The linear discriminant analysis effect size (LEfSe) analysis of the differentially abundant gut microbiota between the CL and CON groups at the genera level (linear discriminant analysis [LDA] > 4, p < 0.05). CL: clindamycin treatment group (n = 8), CON: control group (n = 8). **p < 0.01, ****p < 0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/99282/elife-99282-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** CL: CL treatment group, CON: control group. *p < 0.05, **p < 0.01, ***p < 0.001.
+
 For the fungal mycobiota analysis, the Chao1 and inverse Simpson indices of the CL group was significantly increased compared to that of the CON group (Figure 2a). The principal coordinate analysis (PCoA) showed that the samples were significantly distinguished between two groups (R = 0.6038, p = 0.001) (Figure 2b), which suggested that the community of intestinal mycobiota in the two groups is different. At the phylum level, the fungal microbiota was dominated by the Ascomycota and Basidiomycota in two groups, and Ascomycota showed no obvious differences between the two groups. However, the relative abundance of Basidiomycota significantly increases in the CL group compared with the CON group (Figure 2c, Supplementary file 1). The LEfSe analysis at the genus level showed that the relative abundance of Aspergillus, Penicillium, Cladosporium, and Alternaria was enriched in the CL group vs the CON group (Figure 2d, Supplementary file 1). These results are consistent with the Wilcoxon rank-sum test analysis (Figure 2—figure supplement 1). Taken together, all these data indicated that CL treatment altered the diversity and composition of the intestinal microbiome (including bacterial and fungi) in the mice and induced gut microbiome dysbiosis.
 
-## Clindamycin weakens the trans-kingdom networks construction of gut bacterial and fungi
+### Clindamycin weakens the trans-kingdom networks construction of gut bacterial and fungi
 
 To evaluate the effect of clindamycin treatment on gut microbiome balance, we analyzed the fungi-to-bacteria species ratio with ITS/16S. The results show that the ITS/16S ratio of the CL group was significantly increased compared with the CON group (Figure 3a, Figure 3—source data 1). We also assessed the alterations in the ratio of the dominant phyla in the gut microbiome. The results showed that the ratio of Firmicutes/Bacteroidota in the CL group was increased, and Ascomycota/Basidiomycota was significantly decreased compared with that of the CON group (Figure 3b, c, Figure 3—source data 1). These results revealed that clindamycin treatment not only disturbed the intestinal equilibrium between bacteria and fungi but also destroyed the balance among the dominant bacteria (or fungi). Then, to assess the interplay between bacteria and fungi, we performed the trans-kingdom networks analysis at the genus level. The results showed that the trans-kingdom networks were altered in the CL group vs that in the CON group. In the control group, the bacteria and fungi were closely related to each other, gathering in a cluster and forming a more complex network (Figure 3d). There were 154 nodes including 45 fungi and 109 bacteria, and 810 edges; the relative connectedness was 5.26 (Table 1). However, the complexity of the trans-kingdom network in the CL group was dramatically decreased, and the interplay between bacteria and fungi was also weakened (Figure 3e). A total of 110 nodes including 62 fungi and 48 bacteria gathered into clusters in this network. The edges decreased to 357 and the relative connectedness was 3.25 in the CL group network (Table 1). We also found that the interplay ratio between fungi in the CL group was 52.10%, which was much higher than that of the CON group (7.53%) (Table 1). All these results indicated that clindamycin treatment not only altered the proportion of bacteria and fungi, but also weakened the trans-kingdom networks, changed the interactions between bacteria and fungi, and resulted in gut microbiome dysbiosis.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/99282/elife-99282-fig3-v1.jpg)
 
-**Figure 3.:** (a) The ratio of ITS2/16S at the genus level. (b) The relative abundant ratio of Firmicutes/Bacteroidota. (c) The relative abundant ratio of Ascomycota/Basidiomycota. (d) The trans-kingdom correlation networks of the CON at the genus level. (e) The trans-kingdom correlation networks of the CL at the genus level. CL: clindamycin treatment group (n = 8), CON: control group (n = 8). *p < 0.05; ***p < 0.001.Figure 3—source data 1.
+**Figure 3.:** (a) The ratio of ITS2/16S at the genus level. (b) The relative abundant ratio of Firmicutes/Bacteroidota. (c) The relative abundant ratio of Ascomycota/Basidiomycota. (d) The trans-kingdom correlation networks of the CON at the genus level. (e) The trans-kingdom correlation networks of the CL at the genus level. CL: clindamycin treatment group (n = 8), CON: control group (n = 8). *p < 0.05; ***p < 0.001.
 
-## Fecal microbial transfer from clindamycin-treated mice donors to antibiotics-treated conventional mice enhances MS colonization
+**Table 1.**
+ Parameters of the trans-kingdom abundance correlation networks.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>CON group</th>
+      <th>CL group</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Nodes (n) (fungi/bacteria)</td>
+      <td>154 (45/109)</td>
+      <td>110 (62/48)</td>
+    </tr>
+    <tr>
+      <td>Edges (n)</td>
+      <td>810</td>
+      <td>357</td>
+    </tr>
+    <tr>
+      <td>Relative connectedness*</td>
+      <td>5.26</td>
+      <td>3.25</td>
+    </tr>
+    <tr>
+      <td>Bacteria–bacteria (%)</td>
+      <td>78.77</td>
+      <td>22.69</td>
+    </tr>
+    <tr>
+      <td>Bacteria–fungi (%)</td>
+      <td>13.70</td>
+      <td>25.21</td>
+    </tr>
+    <tr>
+      <td>Fungi–fungi (%)</td>
+      <td>7.53</td>
+      <td>52.10</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The relative connectedness of the network was calculated as the ratio of edges (the number of significant interactions) and nodes (the number of genera)._
+
+### Fecal microbial transfer from clindamycin-treated mice donors to antibiotics-treated conventional mice enhances MS colonization
 
 We performed an FMT model to further verify the relationship of gut microbiota dysbiosis with the susceptibility to MS infection in the mice’s lungs. The experimental design for the FMT is shown in Figure 4a. First, we analyzed the α-diversity of gut bacterial and fungal microbiota after FMT with the Chao1 and inverse Simpson indices. The results show that the α-diversity of gut bacterial microbiota was significantly decreased, and the α-diversity of gut fungal microbiota was significantly increased in the CL-FMT group compared with that in the CON-FMT group (Figure 4—figure supplement 1, Figure 4—figure supplement 1—source data 1). Then we performed PCoA analysis to distinguish the gut microbiome alteration between CL- and CON-recipient mice. The results show a significant separation of gut bacterial and fungal microbiota between CT- and AD-recipient samples (p = 0.007 and p = 0.042, Figure 4b). The fungal-to-bacterial species ratio was significantly increased in the CL- vs the CON-recipient groups (p < 0.05, Figure 4c, Figure 4—source data 1). To calculate the changes of the dominant phyla in the gut microbiome, the results show that Firmicutes/Bacteroidota in the CL-FMT group was decreased, and Ascomycota/Basidiomycota was no obvious different compared with that of the CON-FMT group (Figure 4d, e, Figure 4—source data 1). The trans-kingdom network analyses between bacteria and fungi showed the complexity of the microbiome network was significantly reduced and the interactions between bacteria and fungi were also weakened in the CL-FMT vs the CON-FMT groups (Figure 4f). The above results showed that the trends of the gut microbiome in recipient mice were consistent with those in the donor mice. Then, the Venn diagram was used to assess the gut microbiome profile of FMT mice at the genus level. The results showed that 85.11% (40/47) of bacterial genera and 52.38% (33/63) of fungi genera present in the CL inocula were successfully transferred to the CL-recipient mice, and 91.45% (107/117) of bacteria genera and 56.36% (31/55) of fungi genera in the CON inocula were also successfully transferred to the CON-recipient mice, respectively (Figure 4g). These results indicated that the FMT model was successfully established, and the CL-recipient mice showed similar characteristics of gut microbiota dysbiosis with the CL group.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/99282/elife-99282-fig4-v1.jpg)
+
+**Figure 4.:** (a) The experimental procedures of the feces microbiota transplantation. (b) The principal coordinate analysis (PCoA) of gut microbiota based on weighted Unifrac distance. (c) The ITS2/16S diversity ratio at the genus level. (d) The relative abundant ratio of Firmicutes/Bacteroidota. (e) The relative abundant ratio of Ascomycota/Basidiomycota. (f) The trans-kingdom correlation networks of CON-FMT and CL-FMT groups at the genus level. (g) The Venn diagram of gut bacteria and gut fungi in different groups at the genus level. (h) The load of MS in the lungs of mice after infection at 72 hr. FMT: fecal microbiota transplantation, CON-FMT: the fecal microbiota of the control group was transplanted (n = 6), CL-FMT: the fecal microbiota of the clindamycin treatment group was transplanted (n = 6). MS, Mycobacterium smegmatis. *p < 0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/99282/elife-99282-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Compared Chao1 index (a) and inverse Simpson index (b) between the CL-FMT and CON-FMT groups (unpaired Student’s t-tests). CL-FMT: the fecal microbiota of the CL group was transplanted, CON-FMT: the fecal microbiota of the CON group was transplanted. *p < 0.05.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/99282/elife-99282-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (a) Compared length of cecum after clindamycin treatment between two groups (unpaired Student’s t-tests). (b) Compared levels of intestinal fatty acid binding protein (iFABP) and lipopolysaccharides (LPS) in serum between two groups (unpaired Student’s t-tests). (c) Compared pathological change between the two groups. Magnification numerical scale bars are marked with red in the figures, ×100 magnification. CL-FMT: the fecal microbiota of the CL group was transplanted, CON-FMT: the fecal microbiota of the CON group was transplanted. ****p < 0.0001.
+
 Then, we assessed the susceptibility of MS in the lungs of FMT mice, the results showed that the burden of MS in the lungs of CL-recipient mice was significantly rise than that in the CON-recipient mice after 72 hr of MS infection (Figure 4h, Figure 4—source data 1). However, the size of the cecum showed no significant differences between the two groups (Figure 4—figure supplement 2, Figure 4—figure supplement 1—source data 1). The level of iFABP and LPS also significantly increased in the CL-recipient mice compared with the CON-recipient mice after FMT (Figure 4—figure supplement 2, Figure 4—figure supplement 1—source data 1). The pathological sections of intestinal tissue showed the intestinal epithelial tissues of mice have no significant damage after FMT (Figure 4—figure supplement 2, Figure 4—figure supplement 1—source data 1). Altogether, our data suggested that gut microbiota dysbiosis increases intestinal permeability and enhances the susceptibility of MS colonization in the lungs of mice.
 
-## The gut microbiota dysbiosis altered the lung transcriptome and increased Nos2 expression
+### The gut microbiota dysbiosis altered the lung transcriptome and increased Nos2 expression
 
 To further explore the potential mechanisms by which intestinal microbiota dysbiosis affects MS colonization in the lungs of mice, we performed a transcriptome analysis of the mice’s lung tissue. The results showed that there were 1191 upregulated differentially expressed genes (DEGs) and 1013 downregulated DEGs in the CL vs the CON groups (false discovery rate [FDR] <0.05, and fold change [FC] >1, Figure 5—figure supplement 1). Compared with the CON-FMT group, 274 DEGs were upregulated and 32 DEGs were downregulated in the CL-FMT group (Figure 5—figure supplement 1). Then, we screened the overlapping DEGs between the two comparison sets including CL vs CON and CL-MFT vs CL-FMT. The Venn diagram showed that 93 upregulating DEGs and 5 downregulating DEGs were commonly expressed among these groups (Figure 5a). Subsequently, Gene Ontology (GO) and Kyoto Encyclopedia of Genes and Genomes (KEGG) pathway enrichment analyses were performed to clarify the function of these 98 DEGs. The top 30 biological processes enriched by GO showed that CL and CL-FMT groups mainly affected the immune response and inflammatory response, including ‘defense response’, ‘response to bacterium’, ‘cellular response to interleukin-1’, and ‘cellular response to lipopolysaccharide’ (Figure 5b). The enriched molecular functions of these DEGs were some cytokine and protease involving the immune defense response, including ‘cytokine activity’, ‘chemokine activity’, ‘nitric-oxide synthase binding’, and ‘CXCR chemokine receptor binding’ (Figure 5b).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/99282/elife-99282-fig5-v1.jpg)
+
+**Figure 5.:** (a) The Venn diagram of DEGs in the different groups. (b) The top 30 Gene Ontology (GO) enrichment analyses of DEGs. (c) The top 20 Kyoto Encyclopedia of Genes and Genomes (KEGG) enrichment analyses of DEGs. (d) Interaction network analysis of selected DEGs and significant KEGG pathways related to human diseases. (e) The expression levels of Nos2, Ctsd, Cd74, and Tnf with RT-qPCR and RNA-seq. DEGs: differentially expressed genes, CL: clindamycin treatment group, CON: control group; CON-FMT: the fecal microbiota of the control group was transplanted, CL-FMT: the fecal microbiota of the clindamycin treatment group was transplanted. *p < 0.05, **p < 0.01, **** p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/99282/elife-99282-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Compared differentially expressed genes between CL and CON groups. (b) Compared differentially expressed genes between CL-FMT and CON-FMT groups. CL: CL treatment group, CON: control group, CL-FMT: the fecal microbiota of the CL group was transplanted, CON-FMT: the fecal microbiota of the CON group was transplanted.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/99282/elife-99282-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** RNA-seq detected the expression levels of the DEGs. CL: CL treatment group, CON: control group, CL-FMT: the fecal microbiota of the CL group was transplanted, CON-FMT: the fecal microbiota of the CON group was transplanted. *p < 0.05; **p < 0.01.
 
 The top 20 KEGG pathways enrichment analyses at classification level 1 indicated that these DEGs are mainly involved in environmental information processing, human diseases, and organismal systems (Figure 5c and Supplementary file 2). At classification level 2 of the KEGG analysis, we found six pathways relating to infectious disease, and seven pathways involving the immune system among the enrichment top 20 pathways (Figure 5c and Supplementary file 2). Interestingly, among the six pathways of infectious disease, there were three pathways involving bacterial infectious disease, including TB, legionellosis, and pertussis (Figure 5c). In addition, the pathway of ‘graft-versus-host disease’ is also enriched in these DEGs (Figure 5c).
 
 For the future screening of the potential regulatory genes correlated with TB, nine KEGG pathways related to human disease were selected for interaction network analysis with DEGs. The results showed that eight genes were strongly associated with TB (Figure 5d). Among those genes, seven genes including Nos2, Cd14, Tnf, Cd74, Clec4e, Ctsd, and Il6 are upregulating expression and the Cd209a gene is the downregulating expression in the CL and CL-FMT groups (Figure 5—figure supplement 2, Figure 5—figure supplement 1—source data 1). It is worth noting that the Nos2 gene was an enriched expression in both GO and KEGG analyses. Then, we performed an RT-qPCR to assess the validity of the transcriptome. The results revealed that the genes of Nos2, Ctsd, Cd74, and Tnf were increased in CL-FMT and CL groups compared with that in control groups (Figure 5e, Figure 5—source data 1), which indicated that the RNA-seq data is reliable. In summary, our data revealed that gut microbiota dysbiosis significantly altered the transcriptomic profiling in the lung tissue of mice, and increased the expression of Nos2 genes.
 
-## Nos2 regulates the expression of nitric oxide, reactive oxygen species, and Defb1
+### Nos2 regulates the expression of nitric oxide, reactive oxygen species, and Defb1
 
 Based on the above transcriptomic results, we speculate that the upregulating expression of Nos2 induced by gut microbiota dysbiosis may play an important role in MS pulmonary colonization in mice. Hence, an overexpression Nos2 vector, Nos2-pcDNA3.1, was constructed and transfected into A549 cells. Then the cells were infected with MS to verify the effect of Nos2 overexpression on MS colonization ability. The results showed that the expression level of Nos2 was significantly raised in A549 cells after transfection with the Nos2-pcDNA3.1 plasmid (Figure 6a, Figure 6—source data 1). MS colonization density was significantly increased in A549 cells with Nos2-pcDNA3.1 plasmid after infection MS 6, 12, and 24 hr (Figure 6b, Figure 6—source data 1), which suggested that Nos2 overexpression increases the infection susceptibility of MS to A549 cells.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/99282/elife-99282-fig6-v1.jpg)
 
-**Figure 6.:** Nos2 regulates the expression of nitric oxide (NO), reactive oxygen species (ROS), and Defb1.(a) The expression levels of the Nos2 in the A549 cells. (b) The load of Mycobacterium smegmatis (MS) in the A549 cells at different times. (c) The NO concentration in the A549 cells. (d) The concentration of ROS in the A549 cells. (e) The expression levels of Defb1 in A549. A: A549 cells control, AP: transfected A549 cells with blank pcDNA3.1plasmid, AN: transfected A549 cells with Nos2-pcDNA3.1 plasmid. *p < 0.05, **p < 0.01, ***p < 0.001, "****" p<0.0001.Figure 6—source data 1.
+**Figure 6.:** (a) The expression levels of the Nos2 in the A549 cells. (b) The load of Mycobacterium smegmatis (MS) in the A549 cells at different times. (c) The NO concentration in the A549 cells. (d) The concentration of ROS in the A549 cells. (e) The expression levels of Defb1 in A549. A: A549 cells control, AP: transfected A549 cells with blank pcDNA3.1plasmid, AN: transfected A549 cells with Nos2-pcDNA3.1 plasmid. *p < 0.05, **p < 0.01, ***p < 0.001, "****" p<0.0001.
 
 Subsequently, we explored the potential molecular mechanism by which Nos2 overexpression increased MS colonization ability. Nos2 is a key enzyme required for nitric oxide (NO) synthesis, so we detected the level of NO in A549 cells. The results showed that the NO level significantly increased in the A549 cells with transfection of the Nos2-pcDNA3.1 plasmid (Figure 6c, Figure 6—source data 1). Reactive oxygen species (ROS) play an important role in pathogens invade and colonize host organs (André et al., 2022). To explore whether Nos2 regulates ROS production in A549 cells, ROS concentration in cells was detected by the fluorescent probe 2',7'-dichlorodihydrofluorescein diacetate (DCFH-DA). As fluorescence microscopy shown in Figure 6d, ROS concentration in A549 cells transfected with Nos2-pcDNA3.1 was significantly lower than that in the control A549 and A549 cells transfected with pcDNA3.1 empty vector (Figure 6d, Figure 6—source data 1). In addition, we also detected the expression of human β-defensin-1 (Defb1), an important antimicrobial peptide (Zhu et al., 2003), by RT-qPCR. The results showed that Nos2 overexpression significantly reduced the level of Defb1 in A549 cells (Figure 6e, Figure 6—source data 1). Taken together, our results revealed that Nos2 overexpression disrupts the intracellular antimicrobial and anti-inflammatory environment by increasing the concentration of NO, decreasing the levels of ROS and Defb1, and resulting in the enhancement of MS pulmonary colonization capacity in mice.
 
@@ -102,64 +190,186 @@ Altogether, the crosstalk between the gut microbiome and the lungs through the �
 
 **Figure 7.:** Gut microbiome dysbiosis and gut permeability-increasing disrupt the lung transcriptome, and increase Nos2 expression through the ‘gut–lung axis’. Nos2 high expression weakens the intracellular antimicrobial and anti-inflammatory environment by increasing the concentration of NO, decreasing the levels of ROS and Defb1 in the cells, and promoting MS colonization in the lungs of mice. MS: Mycobacterium smegmatis.
 
-## Study limitations
+### Study limitations
 
 This study has some limitations that need to be mentioned. First, due to the lack of experimental conditions in our laboratory that meet biosafety standards, we did not choose a wild-type Mtb strain to develop a mouse infection model, which may lead to the failure of the establishment of TB granuloma and other TB pathology icons and these also weaken the clinical significance of this study. Second, alveolar epithelial cells are one of the early contacting cells in Mtb infection, we only select alveolar epithelial cells (A549) to explore the colonization mechanism of intestinal microbiota affecting MS in vivo. This study lacks the choice of Mtb infection target cells–alveolar macrophages as the research object. Hence, future studies need to choose wild-type Mtb to establish animal infection models and alveolar macrophages for in vitro experiments to explore the regulation function of Nos2 expression on NO, ROS, and Defb1, which will resolve these limitations of the study.
 
-## Conclusions
+### Conclusions
 
 In conclusion, the present study reveals that (1) clindamycin treatment induces gut microbiome dysbiosis, disturbs the gut equilibrium between bacteria and fungi, reduces the interactions among bacterial–fungal trans-kingdom, and increases intestinal permeability. (2) The intestinal microbiome dysbiosis alters the lung transcriptome, increases Nos2 expression, and enhances MS colonization in the lungs of mice. (3) Intestinal microbiota could promote the pulmonary colonization of MS in mice by regulating the expression of NO, ROS, and Defb1 through Nos2-associated pathways, and changing the intracellular antimicrobial and anti-inflammatory environment. Hence, regulating the gut microbiome balance may be a potential strategy for reducing the risks of Mtb infections and transmission.
 
 ## Materials and methods
 
-## Mouse husbandry and antibiotic treatment
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mycobacterium smegmatis)</td>
+      <td>Mycobacterium smegmatis; MS</td>
+      <td>ATCC</td>
+      <td>ATCC 19420Cat#700084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Human alveolar basal epithelial cell (A549)</td>
+      <td>Servieebio Biochemical Technology Co., Ltd</td>
+      <td>RRID:CVCL_0023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mouse)</td>
+      <td>pcDNA3.1-Nos2</td>
+      <td>Youbio Biochemical Technology Co., Ltd</td>
+      <td>NCBI GenBank accession No: NM_010927</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>All-in-One Script RT premix</td>
+      <td>Kryptoner Mei Biotechnology Co., Ltd</td>
+      <td>#MR0502-2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TB Green Premix Ex Taq II</td>
+      <td>TaKaRa Biotechnology Co., Ltd</td>
+      <td>#RR820A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nitric Oxide (NO) assay kit</td>
+      <td>Nanjing Jiancheng Biotechnology Research Institute Co., Ltd</td>
+      <td>#A012-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Reactive oxygen species (ROS) detection kit</td>
+      <td>Beyotime Biotechnology Co., Ltd</td>
+      <td>#S0033S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>The commercial ELISA kits of iFABP</td>
+      <td>Shanghai Enzyme-linked Biotechnology Co., Ltd</td>
+      <td>#TW9968</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>The commercial ELISA kits of LPS</td>
+      <td>Shanghai Enzyme-linked Biotechnology Co., Ltd</td>
+      <td>#TW12543</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clindamycin</td>
+      <td>Dalian Meilun Biotechnology Co., Ltd</td>
+      <td>CAS: 18323-44-9</td>
+      <td>1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ampicillin</td>
+      <td>Shanghai Maclin Biochemical Technology Co., Ltd</td>
+      <td>CAS: 69-52-3</td>
+      <td>1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Metronidazole</td>
+      <td>Shanghai Maclin Biochemical Technology Co., Ltd</td>
+      <td>CAS: 443-48-1</td>
+      <td>1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Neomycin</td>
+      <td>Shanghai Maclin Biochemical Technology Co., Ltd</td>
+      <td>CAS: 1405-10-3</td>
+      <td>1 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vancomycin</td>
+      <td>Shanghai Maclin Biochemical Technology Co., Ltd</td>
+      <td>CAS: 1404-90-6</td>
+      <td>0.05 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Middlebrook 7H9/7H10</td>
+      <td>Qingdao Haibo Biotechnology Co., Ltd</td>
+      <td>#HB6270/HB9128</td>
+      <td>Mycobacterium culture media</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse husbandry and antibiotic treatment
 
 Specific pathogen-free (SPF) C57BL/6 mice (6–8 weeks) were purchased from SiBeiFu (Beijing) Biotechnology Co., Ltd (No. SCXK (Beijing) 2019-0010). The mice were reared in an animal laboratory with a temperature of 22 ± 2°C and a relative humidity of 50 ± 5%, for 1 week before the model started. After adaptive feeding, mice were randomly divided into two groups, including a control group (CON) and a clindamycin group (CL), each group had 10 mice. During the experimental procedure, the CON group was fed with phosphate buffer saline (PBS). Whereas the CL group received 10 mg/kg clindamycin by oral gavage once a day for 14 days. Each oral gavage treatment did not exceed 200 μl, and treatment was stopped 2 days before the mycobacteria infection. All animal experiments were conducted according to the Declaration of Helsinki and were approved by the Animal Care and Use Ethics Committee of Xinxiang Medical University (No. EC-023-098).
 
-## Bacterial strains and infection
+### Bacterial strains and infection
 
 Due to the strong infectivity of Mtb, MS, a model strain for the study of TB, was used in the present experiments. MS was grown in Middlebrook 7H9 liquid medium supplemented with glycerin 0.5% and Tween 80 0.05%. After 18–24 hr of cultivation in a shaking incubator at 37°C, MS were centrifuged at 5000 rpm for 5 min, and the resulting pellet was suspended in sterile PBS to the concentration of 2 × 107 CFU per ml. Figure 1a shows the experiment design procedure. For infection, mice were anesthetized by injection of 4% chloral hydrate (7 μl/g) and infected intranasally with 107 CFU of MS. The mice were euthanized after infection 72 hr, and the left lung of each mouse was extracted and homogenized in PBS with 0.1% Tween 20. Tenfold serial dilutions were made in PBS with 0.1% Tween 20 and plated on Middlebrook 7H10 Agar plates, and colonies of MS were counted after 5 days of incubation at 37°C.
 
-## Fecal sample DNA extraction, 16S rRNA, and ITS sequencing
+### Fecal sample DNA extraction, 16S rRNA, and ITS sequencing
 
 Fresh stool samples from each mouse were collected aseptically and the total genomic DNA from fecal samples was extracted using the Quick-DNA Kit for feces (QIAGEN, Germany) according to the manufacturer’s instructions. The quality and concentration of DNA were determined using NanoDrop ND-2000 spectrophotometer (Thermo Scientific Inc, USA) and 1.0% agarose gel electrophoresis. Each DNA sample amplifies the hypervariable V3–V4 regions of the bacterial 16S rRNA genes using the primers 338F (5′-ACTCCTACGGAGGCAGCAGCAGCA-3′) and 806R (5′-GGACTACHVGGTWTAAT-3′). The ITS2 regions of the fungi were amplified using primers ITS3F (5′-GCATCGATGAAGAACGCAGC-3′) and ITS4R (5′-TCCTCCGCTTATTGATATGC-3′). The PCR products were purified with the AxyPrep DNA Gel Extraction Kit (Axygen Biosciences, Union City, CA, USA) and quantified using Quantus Fluorometer (Promega, USA). Purified amplicons were pooled in equimolar amounts, and paired-end sequenced on an Illumina MiSeq PE300 platform (Illumina, San Diego, USA) according to the standard protocols by Majorbio Bio-Pharm Technology Co. Ltd (Shanghai, China).
 
-## Serum iFABP and LPS measurement
+### Serum iFABP and LPS measurement
 
 The blood samples of all mice were collected via Eyeball, and the serum was separated by centrifugation at 1000 × g for 20 min. Then, ELISA technology was used to measure the iFABP and LPS, according to the manufacturer’s instructions. The commercial ELISA kits were obtained from Shanghai Enzyme-linked Biotechnology Co., Ltd (Shanghai, China) including iFABP (catalog number TW9968) and LPS (catalog number TW12543).
 
-## Fecal microbial transplantation
+### Fecal microbial transplantation
 
 To establish the gut microbiota depletion mouse model, SPF mice were treated with a cocktail of antibiotics (1 mg/ml ampicillin, 1 mg/ml metronidazole, 1 mg/ml neomycin, and 0.5 mg/ml vancomycin) by oral gavage daily for 14 days. All mice were randomly separated into two groups, the CON-recipient group (n = 10) and the CL-recipient group (n = 10). Each group of mice was randomly housed in two cages with five mice in each cage. The fecal microbial transplantation procedure is shown in Figure 4a. Fecal samples from mice of the CON and CL groups were collected in sterile containers. Then 1 g fecal sample was suspended in 5 ml sterile PBS, followed by the vortexes, sedimentation, and filtrate with a 100-μm cell strainer. The suspension of the same group was mixed as microbiota donors and immediately administered to the mice by oral gavage. 200 μl of the supernatant containing fecal microbiota from either CON or CL donors was transferred to microbiota-depleted mice by oral gavage every day, for 14 days. All recipient mice were infected intranasally with 107 CFU MS after stopping FMT 2 days, and 3 days later of the infection, all mice were sacrificed, and the colonic contents and lung tissue samples were collected for further analysis.
 
-## Lung histological assessment
+### Lung histological assessment
 
 After the MS-infected mice were sacrificed, the lung tissues were perfused with sterile PBS and fixed in 4% paraformaldehyde for 3 days, followed by paraffin embedding. For histopathological analysis, 5 μm sections were cut and stained using a standard H&E protocol. Motic EasyScan whole-slide scanner was used for scanning histological sections and images were analyzed using Matic DSAaaistant Lite.
 
-## Lung tissue RNA extraction and RNA sequencing
+### Lung tissue RNA extraction and RNA sequencing
 
 The lung tissue from each mouse was separated aseptically and quickly stored in liquid nitrogen for subsequent RNA extraction. Total RNA was extracted from lung tissue using TRIzol reagent (Dingguo Changsheng Biotechnology Co., Ltd, Beijing, China) according to the manufacturer’s protocol. RNA quantity and quality were determined using the NanoDrop 2000 Spectrophotometer (Thermo Scientific, USA). The Agilent 2100 Bioanalyzer (Agilent Technologies, Santa Clara, CA, USA) was used to assess RNA integrity. RNA-seq libraries were prepared using VAHTS Universal V6 RNA-seq Library Prep Kit following the manufacturer’s recommendations. Then the paired-end RNA-seq libraries were sequenced with the Illumina HiSeq X Ten platform (2 × 150 bp read length) by OE Biotech Co., Ltd (Shanghai, China). After the quality control, clean reads performed bioinformatics analysis.
 
-## Quantification of gene expression using RT-qPCR
+### Quantification of gene expression using RT-qPCR
 
 Total RNA was extracted from mouse lungs or A549 cells using the Trigol (Dingguo Changsheng Biotechnology Co., Ltd, Beijing, China) according to the manufacturer’s protocol, and was reversed transcribed using the kit from All-in-One Script RTpremix (Kryptoner Mei Co., Ltd, Zhengzhou, China). Then RT-qPCR was performed with TB Green Premix Ex Taq II (TaKaRa Biotechnology, China) to evaluate the amount of mRNA expression according to the manufacturer’s recommendations. Subsequently, PCR products were detected on a sequence detection system. The primer sequences of RT-qPCR are listed in Supplementary file 2 in this study. The relative gene expression levels were calculated using the 2−ΔΔCt method.
 
-## Construction of Nos2 overexpression plasmid and transfection into A549 cells
+### Construction of Nos2 overexpression plasmid and transfection into A549 cells
 
 Human alveolar basal epithelial cell lines (A549) were purchased from Servieebio Biochemical Technology Co., Ltd (Wuhan), and cell lines have been authenticated with STR Short Tandem Repeat (STR) profiling. All the cell culture supernatants were found to be negative for mycoplasma contamination. To enhance Nos2 expression levels in A549 cells, the recombinant plasmid Nos2-pcDNA3.1 was constructed. Based on the nucleotide sequences of Nos2 (GenBank accession No: NM_010927), the forward and reverse primers Nos2F/Nos2R (Supplementary file 2) were used for cloning the open reading frame and inserted into pcDNA3.1 expression vector. The insert orientation was confirmed by separate XhoI and BamHI digests followed by agarose gel electrophoresis. The Nos2-pcDNA3.1 plasmid was mixed with lipo 8000 (Beyotime, Shanghai, China) and then transfected into A549 cells via electroporation. Twenty-four hours post-transfection, transfection efficiency was determined using RT-qPCR to ensure Nos2 overexpression in A549 cells.
 
-## MS infects in A549 cells
+### MS infects in A549 cells
 
 A549, a human alveolar basal epithelial cell, was used to assess the infection capacity of MS. A549 cells were inoculated into 24-well plates with a density of 2 × 105 cells per well, and were cultured in RPMI1640 medium (Gibco Laboratories, USA) supplemented with 10% fetal bovine serum (Sangon Biotech Co., Ltd, Shanghai, China) and 100 U/ml penicillin/streptomycin (Beyotime, Shanghai, China) at 37°C. Nos2-pcDNA3.1 was transfected into A549 cells when the cell density reached 70–80%. After 24 hr, the supernatant was replaced with fresh medium containing MS and cultured for 6, 12, and 24 hr. Then the wells were washed three times with PBS to remove unattached bacteria. Subsequently, A549 cells were lysed with 1 ml 0.1% Triton X-100 (Shanghai Beyotime Biotechnology Co., Ltd, Shanghai, China) per well to prepare appropriate dilutions, which were plated on MiddleBrook7H10 Agar plates cultured for standard colony counts.
 
-## Detection of NO, ROS, and Defb1
+### Detection of NO, ROS, and Defb1
 
 Generation of NO in the A549 cells was detected by Nitric Oxide (NO) assay kit (Nanjing Jiancheng Biotechnology Research Institute Co., Ltd, Nanjing, China). Briefly, Cells were seeded into 24-well plates at a density of 2 × 105 cells per well, and Nos2-pcDNA3.1 was transfected into A549 cells when the cell density reached 70–80%. After 24 hr, the cells were harvested by trypsinization and centrifuged at 1000 rpm for 10 min. Then NO concentration was detected with the spectrophotometric method according to the manufacturer’s protocols. ROS levels were measured using the DCFH-DA. Briefly, after 24 hr post-transfection of Nos2-pcDNA3.1, DCFH-DA was added to the culture medium at a final concentration of 10 μmol/ml, and incubated for 1 hr at 37°C. The cells were washed twice with PBS and then stained with 10 μmol/ml DCFH-DA at 25°C for 30 min in the dark room. Images were acquired by a confocal microscope (Nikon, Japan). For ROS quantification, A549 cells were collected, rinsed twice with PBS, and suspended in 10 μmol/ml DCFH-DA for 30 min. After incubation, fluorescence was detected at 485 nm (excitation) and 530 nm (emission) using a microplate reader. All these analyses were conducted in three replicates. The expression of Defb1 was detected using RT-qPCR, and the primer sequences of RT-qPCR are listed in Supplementary file 2.
 
-## Bioinformatics analysis
+### Bioinformatics analysis
 
 For microbiome analysis, the bioinformatics data were analyzed using the Majorbio Cloud platform (https://cloud.majorbio.com). The α-diversity at the genus level was assessed according to the Chao1 and inverse Simpson indices. The β-diversity was calculated by PCoA. A permutational analysis of variance was performed to assess the variation in the taxonomic structure of microbiota communities between groups. The Wilcoxon rank-sum test was used to assess the different structures of microbiota communities between groups. LEfSe analyses were performed to compare different biomarkers between groups. The trans-kingdom network figures were built using the package igraph (version 1.2.6). For transcriptomic analysis, the bioinformatics data were analyzed using the OE Cloud platform (https://www.oebiotech.com). Differential expression analysis was performed using the DESeq2 q value <0.05 and foldchange >2 was set as the threshold for significantly DEGs. Venn diagram and volcano plot of DEGs were performed to explore gene expression patterns. The functional enrichment of the above DEGs was conducted using the GO database (http://www.geneontology.org/) and the KEGG (http://www.genome.jp/kegg/).
 
-## Statistical analysis
+### Statistical analysis
 
 All statistics were performed using GraphPad Prism 8.0. If the data followed a normal distribution, unpaired Student’s t-tests were used to compare various parameters between the two groups. If the data did not follow a normal distribution, a non-parametric Mann–Whitney U test, and Wilcoxon rank-sum test were used to compare the results. One-way analysis of variance was used for three or more groups of data. The graphs were made with GraphPad Prism 8.0 or R package (version 3.6.2). p-values of <0.05 were set as a threshold for statistical significance.

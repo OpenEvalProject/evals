@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/033n3pw66 Department of Molecular Biology and Genetics, Faculty of Science, University of South Bohemia České Budějovice Czech Republic
+1. Department of Molecular Biology and Genetics, Faculty of Science, University of South Bohemia České Budějovice Czech Republic ([ROR:033n3pw66](https://ror.org/033n3pw66))
 
 † Corresponding author
 
@@ -33,7 +33,7 @@ Upon subsequent viral infection, the CRISPR locus is transcribed, producing CRIS
 
 A similar phenomenon is observed in the adaptive immune system of jawed vertebrates, where the enzymes responsible for somatic recombination (Rag1 and Rag2) in T and B lymphocytes are derived from the Transib family of retrotransposons (Huang et al., 2016). Another example, which will be discussed in detail later in this review, is the adaptive antiviral immunity in insects. In this system, endogenous transposons Ty1 and Ty3 play a central role in acquiring copies of viral nucleic acids and integrating them into the genome, thus creating a long-lasting and heritable immune memory (Saleh et al., 2009; Tassetto et al., 2017). These examples reveal intriguing parallels in the convergent evolution of mechanisms of acquired immunity (Eaglesham and Kranzusch, 2024), all of which exploit the enzymatic activities of genes acquired from domesticated retrotransposons to establish immune memory by modifying host genomic information. Comparative and evolutionary immunology may offer valuable insights into the discovery of as-yet-unidentified mechanisms of immune memory.
 
-## Insect immune system
+### Insect immune system
 
 Insects are the most abundant group of animals on Earth (Stork, 2018), and like other animals, they are exposed to a wide range of pathogens throughout their lifetimes, including viruses, bacteria, fungi, protozoa, nematodes, and parasitoids (Federici, 2009). While certain pathogens can cause significant declines in entire insect populations, others are tolerated to varying degrees. In such cases, insects can act as reservoirs for these pathogens, serving as vectors that facilitate their amplification and transmission, including to humans (St Leger, 2021).
 
@@ -87,25 +87,25 @@ Female TgIP is in agreement with parental investment theory, according to which 
 
 Evidence of TgIP has also been found against viral pathogens. Offspring of Indian meal moth (Plodia interpunctella) parents exposed to a low dose of their natural DNA virus during the larval stage were less susceptible to viral challenge (Tidbury et al., 2011). Further insights into TgIP were provided by a study published by Mondotte and colleagues, which clearly demonstrated that the acquired immune protection is both virus- and sequence-specific, persisting across generations. Using D. melanogaster and A. aegypti as models, the authors revealed that the offspring of immune-challenged parents inherit viral DNA and exhibit upregulation of genes related to chromatin and DNA binding (Mondotte et al., 2020). Similar results were obtained in a recent study by Rodriguez-Andres and colleagues, who documented that A. aegypti mosquitoes infected with arboviruses can transmit specific immunity to their offspring (Rodriguez-Andres et al., 2024). Additionally, alterations in the epigenetic landscape, specifically DNA methylation and histone acetylation, were detected in the F1 generation of parents fed non-pathogenic E. coli or the entomopathogen Serratia entomophila (Gegner et al., 2019). These findings highlight the role of epigenetic mechanisms in TgIP.
 
-## Mechanisms of insect immune memory
+### Mechanisms of insect immune memory
 
 In the preceding paragraphs, we presented experimental evidence demonstrating that immune memory occurs across a wide range of insect species, spanning all major insect orders. Moreover, immune memory appears to persist through developmental stages and may even be passed on to subsequent generations. To explore the potential mechanisms underlying immune memory formation in insects, we can draw inspiration from the previously well-characterized processes of antiviral adaptive immunity in prokaryotes and adaptive immunity in mammals, and infer general principles that any immune memory mechanism must follow. However, the particular components of antiviral and antibacterial immune memory likely differ significantly as CRISPR-based immunity has not been identified in any eukaryotes and insects lack T- and B-lymphocytes, as well as the genes coding for antibodies.
 
-## Acquired immune memory can be in general divided into three phases
+### Acquired immune memory can be in general divided into three phases
 
-## Antigen acquisition
+#### Antigen acquisition
 
 During the initial encounter with a pathogen, pathogen-specific antigenic molecules must be captured and distributed to other immune cells throughout the body.
 
-## Development of immune specificity
+#### Development of immune specificity
 
 These acquired antigens serve as templates for the formation of antigen- or sequence-specific immune memory.
 
-## Maintenance of immune memory
+#### Maintenance of immune memory
 
 The immune system retains these molecules to enable the efficient and specific recognition of the pathogen in future encounters, ensuring its rapid elimination.
 
-## Insect’s adaptive antiviral immunity
+### Insect’s adaptive antiviral immunity
 
 Insects frequently face infections from various DNA and RNA viruses (Bruner-Montero et al., 2023). The life cycle of insect viruses does not differ significantly from that of viruses infecting other eukaryotes. Upon entry into a host cell, viruses hijack the host’s transcription and translation machinery with the goal of replicating their genetic material and synthesizing proteins for the capsid, facilitating further viral propagation (Wang et al., 2024). Once a cell is infected, it activates several cell-autonomous antiviral immune mechanisms, relying primarily on RNAi, stalled translation, nucleotide-based antiviral strategies, induction of autophagy, and ultimately, apoptosis (Tafesh-Edwards and Eleftherianos, 2020). Although these antiviral strategies significantly reduce virus replication in infected cells, they are not sufficient to make individuals fully resistant to viral infection.
 
@@ -125,7 +125,7 @@ In some of these species, EVE transcription gives rise not only to siRNA but als
 
 Evidence of sequence-based adaptive immune memory in insects raises the question of whether an analogous antiviral strategy may also occur also in mammals. Although experimental evidence for such a mechanism is currently lacking, there are indications that a similar mechanism might exist in mammals but is overshadowed by other dominant antiviral immune systems. Recent findings highlight the importance of cellular immunity, specifically the RNAi cascade, in antiviral defense mechanisms (Berkhout, 2018). Studies have documented that in mice viral infections are accompanied by the systemic spread of virus-derived small interfering RNAs via extracellular vesicles, which provide recipient cells with acquired resistance to subsequent viral infections (Zhang et al., 2022). However, contradictory findings in mammals suggest that Dicer exhibits negligible enzymatic activity in virus-infected cells, and its knockdown does not substantially affect viral load (Berkhout, 2018; Wang and Li, 2024). This phenomenon certainly warrants further investigation.
 
-## Insect’s adaptive antibacterial immunity
+### Insect’s adaptive antibacterial immunity
 
 While the mechanism of antiviral immune memory formation is relatively well understood, the mechanisms underlying antibacterial immune memory remain more elusive. Nevertheless, we can assume that the formation of antibacterial immune memory would still involve phases of antigen acquisition, development of specificity, and memory maintenance.
 
@@ -135,7 +135,7 @@ A crucial step in forming immune memory is the recognition of pathogen surface a
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/105011/elife-105011-fig5-v1.jpg)
 
-**Figure 5.:** Drosophila Dscam1 gene.(A) Schematic representation of the Dscam1 genomic region, highlighting the hypervariable exons 4, 6, and 9. (B) Diversity in the immunoglobulin domains of Dscam1 arises through mutually exclusive alternative splicing of these hypervariable exons, exemplified here by exon 4. This splicing process is tightly regulated by serine/arginine-rich (SR) proteins and heterogeneous nuclear ribonucleoproteins (hnRNPs). (C) A single Dscam1 gene can generate thousands of isoforms, which may exist as full-length, membrane-bound proteins or as truncated, soluble variants circulating in the hemolymph. (D) The DSCAM protein structure consists of 10 immunoglobulin domains, 6 fibronectin type III (FNIII) repeats, a transmembrane domain, and a cytoplasmic tail involved in signaling and regulatory functions. This figure was created using BioRender.com.
+**Figure 5.:** (A) Schematic representation of the Dscam1 genomic region, highlighting the hypervariable exons 4, 6, and 9. (B) Diversity in the immunoglobulin domains of Dscam1 arises through mutually exclusive alternative splicing of these hypervariable exons, exemplified here by exon 4. This splicing process is tightly regulated by serine/arginine-rich (SR) proteins and heterogeneous nuclear ribonucleoproteins (hnRNPs). (C) A single Dscam1 gene can generate thousands of isoforms, which may exist as full-length, membrane-bound proteins or as truncated, soluble variants circulating in the hemolymph. (D) The DSCAM protein structure consists of 10 immunoglobulin domains, 6 fibronectin type III (FNIII) repeats, a transmembrane domain, and a cytoplasmic tail involved in signaling and regulatory functions. This figure was created using BioRender.com.
 
 Drosophila Dscam is the gene with the highest number of alternative transcripts in animals, drawing significant scientific attention to the mechanisms regulating such a complex process. Inclusion of a single variant from a multivariant exon is achieved through the pairing of a ‘docking sequence’ at the end of the previous exon with a ‘selector sequence’ preceding each variant in the specific multivariable exon (Graveley, 2005). While the docking sequence interacts with a serine-arginine protein (SR-protein) to initiate the inclusion of the following exon, selector sequences are occupied by heterogeneous nuclear ribonucleoproteins (hnRNPs), which inhibit the inclusion of specifically occupied variants through steric hindrance (Olson et al., 2007). This process is further complicated by the influence of intronic RNA secondary structures called ‘inclusion RNA stem-loops’ (iStems) (Kreahling and Graveley, 2005). Moreover, it seems that each of the three multivariant exons shows specific characteristics in the alternative splicing mechanism (Ustaoglu et al., 2019; McManus and Graveley, 2011), which aligns with recent identification of more than twelve RNA-binding proteins involved in Dscam alternative splicing in S2 cells (Brooks et al., 2015).
 
@@ -161,15 +161,91 @@ Anchoring DSCAM receptors to the plasmatocyte membrane may increase the immune s
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/105011/elife-105011-fig6-v1.jpg)
 
-**Figure 6.:** Dscam-based antibacterial immune memory in insects.The recognition of pathogenic bacteria by plasmatocytes triggers the activation of key classical immune pathways, leading to the production of humoral immune factors, increased cell motility, and metabolic polarization (1). Additionally, changes in epigenetic regulators, including serine-arginine protein (SR-protein) and heterogeneous nuclear ribonucleoproteins (hnRNPs), induce high variability in the alternative splicing of the Dscam gene, resulting in the production of a diverse repertoire of DSCAM molecules (2). DSCAM proteins are produced both as circulating opsonization factors and as membrane-bound receptors (3). When a specific DSCAM variant exhibits high affinity for pathogen surface antigens, signaling through the DSCAM receptor is initiated via serine/threonine kinases (MAPK, JNK, ERK). (5). This leads to the stabilization of alternative splicing, ensuring the production of only DSCAM variants that specifically recognize the pathogen (6). Subsequently, the DSCAM receptor undergoes proteolytic cleavage by ADAM metalloproteases and γ-secretase, releasing its cytosolic domain (7). This cleaved cytosolic domain translocates to the nucleus, where it directly participates in the regulation of gene transcription involved in cell persistence, maintenance, and proliferation (8). These processes contribute to the long-term persistence of immune-activated cells and the maintenance of immune memory (9). While a significant portion of this hypothetical model is supported by robust scientific data, further experimental validation is required to confirm its mechanisms. This figure was created using BioRender.com.
+**Figure 6.:** The recognition of pathogenic bacteria by plasmatocytes triggers the activation of key classical immune pathways, leading to the production of humoral immune factors, increased cell motility, and metabolic polarization (1). Additionally, changes in epigenetic regulators, including serine-arginine protein (SR-protein) and heterogeneous nuclear ribonucleoproteins (hnRNPs), induce high variability in the alternative splicing of the Dscam gene, resulting in the production of a diverse repertoire of DSCAM molecules (2). DSCAM proteins are produced both as circulating opsonization factors and as membrane-bound receptors (3). When a specific DSCAM variant exhibits high affinity for pathogen surface antigens, signaling through the DSCAM receptor is initiated via serine/threonine kinases (MAPK, JNK, ERK). (5). This leads to the stabilization of alternative splicing, ensuring the production of only DSCAM variants that specifically recognize the pathogen (6). Subsequently, the DSCAM receptor undergoes proteolytic cleavage by ADAM metalloproteases and γ-secretase, releasing its cytosolic domain (7). This cleaved cytosolic domain translocates to the nucleus, where it directly participates in the regulation of gene transcription involved in cell persistence, maintenance, and proliferation (8). These processes contribute to the long-term persistence of immune-activated cells and the maintenance of immune memory (9). While a significant portion of this hypothetical model is supported by robust scientific data, further experimental validation is required to confirm its mechanisms. This figure was created using BioRender.com.
 
 Although Dscam signaling plays a crucial role in pathogen recognition and opsonization, other immune responses, such as phagocytosis, the production of ROS, antimicrobial peptides, and melanization, also contribute to pathogen elimination. However, there is no experimental evidence suggesting that these responses are triggered in a pathogen-specific manner. Consequently, they are unlikely to serve as the primary mechanisms of immune memory formation but may function as important complementary processes. For instance, cytokine-like molecules could act as co-stimulatory factors during immune memory formation.
 
-## Might Drosophila reveal the mechanism of insect immune memory?
+### Might Drosophila reveal the mechanism of insect immune memory?
 
 As discussed in the previous section, our understanding of the mechanisms underlying insect immune memory still has considerable gaps. This may be partly due to inconsistencies in infection assays used by different research teams and the ambiguous use of terms like ‘immune priming’, ‘immune training’, and ‘immune memory’ (Divangahi et al., 2021).
 
 A common outcome in studies of insect-acquired immunity is the observation of a stronger and faster immune response that leads to increased resistance to infection. While these findings provide valuable evidence supporting the existence of immune memory in insects, they offer little insights into the mechanisms of antigen acquisition, the formation of specific memory, or the maintenance of specific immunity until a secondary encounter with the pathogen. Research on these specific processes remains limited, leaving many questions about the underlying mechanisms unanswered (Table 1).
+
+**Table 1.**
+ Key questions regarding insect immune memory to be explored in future research.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Questions to be addressed in future research</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">General mechanisms</td>
+      <td>Why do certain pathogens induce immune memory formation while others lead to tolerance?</td>
+    </tr>
+    <tr>
+      <td>Are there specific subpopulations of hemocytes dedicated to the formation of immune memory?</td>
+    </tr>
+    <tr>
+      <td>Why does inherited immune memory persist for only a few generations?</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="5">Antiviral immune memory</td>
+      <td>How is retrotransposon activity controlled upon viral infection?</td>
+    </tr>
+    <tr>
+      <td>What triggers the production of siRNA and piwiRNA from the EVE genomic region?</td>
+    </tr>
+    <tr>
+      <td>How does the cell distinguish between viral nucleic acids and secondary viral nucleic acids?</td>
+    </tr>
+    <tr>
+      <td>How is the infection-activated production of exosomes regulated?</td>
+    </tr>
+    <tr>
+      <td>If antiviral immune memory is inherited, does the incorporation of viral DNA fragments into germ cells occur?</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="8">Antibacterial immune memory</td>
+      <td>Do individual hemocytes express all DSCAM isoforms, or only a limited subset?</td>
+    </tr>
+    <tr>
+      <td>Is the binding of circulatory DSCAM to membrane-bound DSCAM strictly homodimeric?</td>
+    </tr>
+    <tr>
+      <td>Do circulating DSCAM isoforms bind to other phagocytic receptors?</td>
+    </tr>
+    <tr>
+      <td>How exactly does infection induce Dscam splicing, and how is the pathogen-specific DSCAM isoform stabilized?</td>
+    </tr>
+    <tr>
+      <td>Is the activating signal of membrane-bound, DSCAM isoform transduced into the expression of its soluble form?</td>
+    </tr>
+    <tr>
+      <td>Do hemocytes expressing the pathogen-specific DSCAM isoform undergo expansion?</td>
+    </tr>
+    <tr>
+      <td>Can hemocytes share the pathogen-specific DSCAM isoform to instruct other hemocytes in the body?</td>
+    </tr>
+    <tr>
+      <td>How can antibacterial immune memory be transmitted to progeny?</td>
+    </tr>
+  </tbody>
+</table>
+
+_EVE, endogenous viral element; piRNA, Piwi-interacting RNA; siRNA, small interfering RNA._
 
 Many of these questions may be answered in the future by using the exceptional insect model organism, D. melanogaster. Drosophila offers unparalleled genetic tools for manipulating the expression of investigated genes as well as a broad variety of reporter strains (Tolwinski, 2017; Rajan and Perrimon, 2011). The primary strength of Drosophila lies in the ability to induce tissue-specific, precisely regulated gene expression using the Gal4-UAS system (Rajan and Perrimon, 2011). This system allows researchers to control gene expression in particular cells, such as immune cells, without affecting other tissues. Furthermore, by combining the Gal4-UAS system with the Gal4 inhibitor Gal80, gene expression can be regulated by external factors, like temperature or hormone administration, in a technique known as a ‘gene switch’ (Duffy, 2002; McClure et al., 2022). This enables researchers to knock down any selected gene exclusively during the primary contact with the pathogen, when immune memory is being formed, without affecting the immune response to a secondary pathogen challenge. Such an approach can help identify genes critical for immune memory formation and provide insights into the underlying mechanisms.
 

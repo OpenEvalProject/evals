@@ -8,10 +8,10 @@
 
 ### Affiliations
 
-1. https://ror.org/05gq02987 Department of Cognitive, Linguistic, and Psychological Sciences, Brown University Providence United States
-2. https://ror.org/04j1n1c04 RIKEN Center for Brain Science Wako Japan
-3. https://ror.org/0293rh119 Department of Psychology, University of Oregon Eugene United States
-4. https://ror.org/05gq02987 Carney Institute for Brain Science, Brown University Providence United States
+1. Department of Cognitive, Linguistic, and Psychological Sciences, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
+2. RIKEN Center for Brain Science Wako Japan ([ROR:04j1n1c04](https://ror.org/04j1n1c04))
+3. Department of Psychology, University of Oregon Eugene United States ([ROR:0293rh119](https://ror.org/0293rh119))
+4. Carney Institute for Brain Science, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
 
 † Corresponding author
 
@@ -41,7 +41,7 @@ To preview our results, response times (RTs) and errors indicated that participa
 
 ## Results
 
-## Behavior
+### Behavior
 
 The pattern of behavioral results confirmed that the high-priority action led to more efficient action selection (Figure 2). When the high-priority action was tested as opposed to the low-priority action, participants responded significantly faster, F(1,23) = 40.31, MSE = 962, p<0.001, M=371 ms, SE = 8.7 ms for high priority and M=428 ms, SE = 8.7 ms for low priority, and produced fewer errors, F(1,23) = 31.81, MSE <.001, p<0.001, M=.11, SE = .01 for high priority and M=.22, SE = .01 for low priority. Likewise, a trial-wise adaptive cutoff (i.e. response deadline) was significantly shorter for high-priority action, F(1,23) = 33.72, MSE = 7479, p<0.001, M=823 ms, SE = 13 ms for high priority and M=968 ms, SE = 13ms for low priority.
 
@@ -51,19 +51,170 @@ The pattern of behavioral results confirmed that the high-priority action led to
 
 Most errors were responses corresponding to the untested action plan rather than random responses. This suggests that participants encoded, and likely maintained, both action plans until the test period but then occasionally selected the wrong plan. Such swapping errors occurred at significantly higher probability when the low-priority action was tested, again consistent with participants prioritizing the high-priority action during maintenance, F(1,23) = 12.59, MSE <.001, p=0.002, M=.74, SE = .01 for high priority and M=.81, SE = .01 for low priority. Therefore, the behavioral results indicate that both of the required actions were prepared, yet the action associated with the high test probability was prioritized over the other action.
 
-## Action representations during early encoding and preparation phase
+### Action representations during early encoding and preparation phase
 
 To assess how two planned actions are maintained and selected via retro-cues, we decoded the representations of action features (i.e. stimuli, rules, responses, and conjunctions for each action) from the time-resolved patterns of EEG activity using RSA. Then, we used a mixed-effect model to assess the effect of priority on the quality of representations and subsequent selection performance at the level of single trials.
 
 The RSA revealed unique temporal trajectories for the individual features of high- and low-priority action plans (Figure 3). During the encoding phase, a mixed-effect model revealed that representations of two stimuli for each action were encoded, t(1,23) = 7.45, beta = .183, 95% CI [.136.230] for high priority; t(1,23) = 6.92, beta = .168, 95% CI [.121.216] for low priority; and they quickly decayed yet remained active during the preparation phase, t(1,23) = 3.65, beta = .036, 95% CI [.016.052] for high priority; t(1,23) = 3.20, beta = .017, 95% CI [.006.027] for low priority. During the preparation phase, the cued rule context shared by both plans was specified and maintained robustly, t(1,23) = 6.59, beta = .144, 95% CI [.101.186]. Furthermore, distinguishable conjunctive representations for both required actions emerged, t(1,23) = 2.61, beta = .142, 95% CI [.004.025] for high priority; t(1,23) = 2.10, beta = .008, 95% CI [0.001.016] for low priority. In contrast, the information about required responses was not reliably decodable during the preparation phase, t(1,23) = –.514, beta = .002, 95% CI [–.010.006] for high priority; t(1,23) = –1.57, beta = –.008, 95% CI [–.017.002] for low priority.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/80153/elife-80153-fig3-v2.jpg)
+
+**Figure 3.:** Average, single-trial t-values associated with each of the basic features (rule, stimulus, and response) and their conjunction derived from the representational similarity analysis (RSA), separately for high-priority (bold colors) action and low-priority action (faint colors). Shaded regions specify the 95% within-subject standard errors.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80153/elife-80153-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The representational similarity analysis scores of individual subjects using EEG signals in specific frequency ranges (1–3 Hz for the delta-band, 4–7 Hz for the theta-band, 8–12 Hz for the alpha-band, 13–30 Hz for the beta-band, 31–35 Hz for the gamma-band, and 1–35 Hz for all). EEG signals were averaged over encoding (0–750 ms), maintenance (750–1500 ms), and selection (1500–2200 ms) time intervals before decoding analysis.
+
 Before the test phase, none of these representations is significantly modulated by different test probability values, t(1,23) <1.62, suggesting that neither action plan was selectively prioritized during preparation. Nonetheless, these results indicate early encoding and maintenance of conjunctive representations during the preparation phase and preceding the response. Note that in principle, candidate motor responses could have been fully prepared. Yet, action plans were maintained as conjunctive representations instead of response representations during the preparatory phase.
 
-## Output gating of action representations during the test phase
+### Output gating of action representations during the test phase
 
 In the test phase, participants were explicitly cued which prepared actions to select and made their response prior to the deadline (Figure 1A). We hypothesized that prioritization would modulate the states of selected and non-selected action representations. Specifically, we predicted that when a prepared conjunction is prioritized, this should facilitate selection of that plan, whereas a high-priority plan that is not selected should interfere with the execution of the one that is selected.
 
 Although, on average, representations of individual features of high- and low-priority actions mostly became decodable only when they were cued as an output (Table 1), conjunctive representations were significantly modulated by the selection demand (i.e. cued as an output or not) dependent on their priority (Figure 4; see Table 2 for the main effects). Specifically, high-priority items were more active than low-priority items when they were cued, but the reverse was the case when low-priority items were cued.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/80153/elife-80153-fig4-v2.jpg)
+
+**Figure 4.:** Average, single-trial t-values associated with the stimulus, conjunction, and response derived from the representational similarity analysis (RSA), separately for high-priority (red) action and low-priority action (black). The left panels show RSA scores when the high-priority action was tested, whereas the right panels show the result for the low-priority action. Shaded regions specify the within-subject standard errors. On the right side panels, the gray bars at the top show clusters with a significant interaction effect between the priority and the test type of actions after cluster-based correction (cluster-forming threshold, p<0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80153/elife-80153-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Average, single-trial t-values associated with the stimulus, conjunction, and response derived from the representational similarity analysis (RSA), separately for high-priority (red) action and low-priority action (black). The left panels show RSA scores when the high-priority action was tested, whereas the right panels show the result for the low-priority action. Shaded regions specify the within-subject standard errors. On the right side panels, the gray bars at the top show clusters with a significant interaction effect between the priority and the test type of actions, the black bars indicate the difference in low-priority conjunctions in each test context, and the red bars indicate the difference in high-priority conjunctions in each text context (cluster-forming threshold, p<0.05).
+
+**Table 1.**
+ Trial-by-trial representational similarity analysis scores of high- and low-priority actions in each test probability context during the test phase.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Decoded features</th>
+      <th colspan="2">Tested high priority</th>
+      <th colspan="2">Tested low priority</th>
+    </tr>
+    <tr>
+      <th>beta (CI)</th>
+      <th>t-Value</th>
+      <th>beta (CI)</th>
+      <th>t-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rule</td>
+      <td>0.071 (.05.09)</td>
+      <td>6.08***</td>
+      <td>0.069 (.04.09)</td>
+      <td>4.76**</td>
+    </tr>
+    <tr>
+      <td>Stimulus (high priority)</td>
+      <td>0.034 (.01.05)</td>
+      <td>3.41*</td>
+      <td>0.021 (.01.03)</td>
+      <td>2.9*</td>
+    </tr>
+    <tr>
+      <td>Conjunction (high priority)</td>
+      <td>0.021 (.01.04)</td>
+      <td>3.57*</td>
+      <td>0.007 (–.01.02)</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <td>Response (high priority)</td>
+      <td>0.034 (.02.05)</td>
+      <td>5.04**</td>
+      <td>0.009 (–.01.03)</td>
+      <td>1.04</td>
+    </tr>
+    <tr>
+      <td>Stimulus (low priority)</td>
+      <td>0.011 (.01.02)</td>
+      <td>2.20*</td>
+      <td>0.014 (–.01.03)</td>
+      <td>1.30</td>
+    </tr>
+    <tr>
+      <td>Conjunction (low priority)</td>
+      <td>0.003 (–.01.01)</td>
+      <td>0.61</td>
+      <td>0.001(–.01.02)</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>Response (low priority)</td>
+      <td>0.008 (–.01.02)</td>
+      <td>1.61</td>
+      <td>0.015(–.01.03)</td>
+      <td>1.82</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: *, **, ***, and a dot indicate p<0.05, p<0.01, p<.001._
+
+**Table 2.**
+ Cluster-level statistics for the main effects of the interaction model between test type and priority regressed on the representational similarity analysis (RSA) scores.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>RSA scores</th>
+      <th>Effect</th>
+      <th>Time (ms)</th>
+      <th>Cluster T-value</th>
+      <th>Cluster p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stimulus</td>
+      <td>Priority</td>
+      <td>1566–1598</td>
+      <td>20.11</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Priority</td>
+      <td>1846–1866</td>
+      <td>12.45</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Conjunction</td>
+      <td>Test type</td>
+      <td>1898–2050</td>
+      <td>98.36</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Response</td>
+      <td>Priority</td>
+      <td>1738–1794</td>
+      <td>38.70</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Test type</td>
+      <td>1858–1894</td>
+      <td>22.94</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Test type</td>
+      <td>2014–2110</td>
+      <td>67.02</td>
+      <td>&lt;0.01</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: The clusters were identified from the model that included the effect of priority and test type and their interaction using a cluster-forming threshold, p<0.05. The interaction effect is shown in Figure 4._
 
 Notably, the pattern of results in Figure 4 seems to indicate that the interaction for the conjunctive representation arises later than the representation for the response, particularly when the low-priority item is tested. This would be unexpected if the conjunctive representation informs encoding and selection of the response. Thus, we performed exploratory analyses to test the timing of the interaction effect.
 
@@ -119,11 +270,11 @@ Understanding cognitive flexibility requires answering how action plans are repr
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Twenty-six participants (16 females; mean age: 23.2 years) were recruited from the University of Oregon student body. All participants had normal or corrected-to-normal vision, and had no history of neurological or psychiatric disorders. They were compensated $10 per hour plus additional performance-based incentives (see Behavioral procedure section). Participants underwent informed consent using procedures approved by the Human Subjects Committee at the University of Oregon. After preprocessing the EEG data, two participants were removed and were not analyzed further due to excessive amounts of artifacts (i.e. more than 25% of trials; see EEG recordings and preprocessing for detail).
 
-## Behavioral procedure
+### Behavioral procedure
 
 For each trial, participants were instructed to prepare two possible actions for upcoming tests by applying the single shared rule to two independent stimuli (Figure 1a). The required two actions on each trial were selected from the shared action constellations or S-R mappings shown in Figure 1b.
 
@@ -135,17 +286,17 @@ In order to manipulate priority, participants were explicitly instructed to prep
 
 There were two practice blocks and 180 experimental blocks. Each block lasted 25 s, during which participants were instructed to complete as many trials as possible. Trials that were initiated within the 25-s block duration but extended beyond it were allowed to finish. Throughout the experimental session, participants were reminded to respond as accurately and fast as possible within adaptive cutoff intervals. Feedback about overall accuracy and the amount of performance-based incentives accrued was provided at the end of each block. All stimuli were generated in Matlab (Mathworks) using the Psychophysics Toolbox (Brainard, 1997) and were presented on a 17-inch CRT monitor (refresh rate: 60 Hz) at a viewing distance of 100 cm.
 
-## EEG recordings and preprocessing
+### EEG recordings and preprocessing
 
 We recorded scalp EEG activities using 20 tin electrodes on an elastic cap (Electro-Caps) using the international 10/20 system. The 10/20 sites F3, Fz, F4, T3, C3, Cz, C4, T4, P3, PZ, P4, T5, T6, O1, and O2 were used along with five nonstandard sites: OL halfway between T5 and O1; OR halfway between T6 and O2; PO3 halfway between P3 and OL; PO4 halfway between P4 and OR; and POz halfway between PO3 and PO4. Electrodes placed ~1 cm to the left and right of the external canthi of each eye recorded horizontal electrooculogram (EOG) to measure horizontal saccades. To detect blinks, vertical EOG was recorded from an electrode placed beneath the left eye. The left mastoid was used as reference for all recording sites, and data were re-referenced off-line to the average of all scalp electrodes.
 
 The scalp EEG and EOG were amplified with an SA Instrumentation amplifier with a bandpass of 0.01–80 Hz, and signals were digitized at 250 Hz in LabView 6.1 running on a PC. EEG data was first segmented into 27.5-s intervals to include all trials within a block. After time-frequency decomposition was performed, these epochs were further segmented into smaller epochs for each trial using the time interval of –200–2200 ms relative to the onset of stimuli (Figure 1a). The trial-to-trial epochs including blinks (>250 μv, window size = 200 ms, window step = 50 ms), large eye movements (>1°, window size = 200 ms, window step = 10 ms), blocking of signals (range = –0.01–0.01 μv, window size = 200 ms) were excluded from subsequent analyses. Using these criteria, we excluded 268 trials (15%) of trials in each subject on average. We retained an average of 1100 trials for the condition where the high-priority action was tested, and 472 trials for the low-priority action test condition (60 or 25% of the original data, respectively).
 
-## Time-frequency analysis
+### Time-frequency analysis
 
 Temporal-spectral profiles of single-trial EEG data were computed via complex wavelet analysis (Cohen, 2014) by applying time-frequency analysis to preprocessed EEG data epoched for the entire block (>27.5 s to exclude the edge artifacts). The power spectrum was convolved with a series of complex Morlet wavelets, where t is the time, f is the frequency increased from 1 to 35 Hz in 35 logarithmically spaced steps, and σ defines the width of each frequency band, set according to n/2pft, where n increased from 3 to 10. We used logarithmic scaling to keep the width across frequency band approximately equal, and the incremental number of wavelet cycles was used to balance temporal and frequency precision as a function of frequency of the wavelet. After convolution was performed in the frequency domain, we took an inverse of the Fourier transform, resulting in complex signals in the time domain. A frequency band-specific estimate at each time point was defined as the squared magnitude of the convolved signal for instantaneous power.
 
-## Representational similarity analysis
+### Representational similarity analysis
 
 We decoded action-relevant information in a time-resolved manner following our previously reported method with a few modifications (Kikumoto and Mayr, 2020). As the first step, separate linear decoders were trained to classify all possible action constellations (Figure 1b) for each independently planned action at every sample in trial-to-trial epochs. Specifically, we performed a penalized linear discriminant analysis using the caret package in R (Hastie et al., 1995; Kuhn, 2008). For each action, the 12 unique action constellations were defined by the combination of 3 rules and 4 stimulus positions (Figure 1b). This step produced a graded profile of classification probabilities (i.e. a confusion matrix) for each action constellation, reflecting the multivariate distance of neural patterns between action plans.
 
@@ -153,6 +304,6 @@ Decoders were trained with the instantaneous power of rhythmic EEG activity, whi
 
 We next performed RSA on the graded classification probabilities to assess the underlying similarity structure. Each RSA model matrix uniquely represents a potential, underlying representation (e.g. rules, stimuli, responses, and conjunctions), which makes unique predictions for different action plans. Specifically, for independent decoding results of each of the action plans, we regressed the vector of logit-transformed classification probabilities onto RSA model vectors. To estimate the unique variance explained by competing models, we regressed all model vectors simultaneously, resulting in coefficients for each of the four model vectors. We also included subject-specific regressors of z-scored, average RTs, and accuracies in each action constellation to reduce potential biases in decoding of conjunctions. These coefficients, expressed in their corresponding t-values, reflect the quality of action representations at the level of single trials, which was later related to variability in behavior. We excluded t-values that exceeded five SDs from means for each sample point, which excluded less than 1% of the entire samples. The resulting t-values were averaged over 40 ms non-overlapping time windows for visualization (Figure 3).
 
-## Multilevel modeling and cluster-based permutation test
+### Multilevel modeling and cluster-based permutation test
 
 We used multilevel models to further assess the decoded representations (Figure 4; Table 1) and relate them to trial-to-trial variability in behavior (Figure 5). For these analyses, we used time-resolved and time-averaged RSA scores of both the basic action features and the conjunctions. For the results of time-resolved regression (Figure 4), we used non-parametric permutation tests to evaluate the decoding results in the time domain (Maris and Oostenveld, 2007). First, we performed a series of regression analysis over time and identified samples that exceeded threshold for cluster identification (cluster-forming threshold, p<0.05). Then, empirical cluster-level statistics were obtained by taking the sum of t-values in each identified cluster with consecutive time points. Finally, nonparametric statistical tests were performed by computing a cluster-level p-value (cluster-significance threshold, p<0.05, two-tailed) from the distributions of cluster-level statistics, which were obtained by Monte Carlo iterations of regression analysis with shuffled condition labels. When we regressed trial-to-trial response times and accuracies on RSA scores of action features, the coefficients were averaged across three time windows (as described in Behavioral procedure) that were selected a priori: the encoding period, the preparation period, and the test period. These periods occurred 0–750 ms, 750–1500 ms, and 1500–2200 ms relative to the onset to the stimuli, respectively, were used as predictors in the regression model. For all models, subject-specific intercept and slopes were included as random effects. We report the test statistics, coefficients (beta), and confidence intervals as a metric of statistical reliability because the appropriate way to calculate degrees of freedom in multilevel models is still being debated. For models predicting accuracies, we used multilevel logistic regression. For models predicting response times, error trials were excluded.

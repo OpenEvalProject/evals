@@ -8,13 +8,13 @@
 
 ### Affiliations
 
-1. https://ror.org/03151rh82 Department of Biochemistry and Molecular Biology Louisiana State University Health Sciences Center Shreveport United States
+1. Department of Biochemistry and Molecular Biology Louisiana State University Health Sciences Center Shreveport United States ([ROR:03151rh82](https://ror.org/03151rh82))
 
 † Corresponding author
 
 ## Abstract
 
-In insects and mammals, 3D genome topology has been linked to transcriptional states yet whether this link holds for other eukaryotes is unclear. Using both ligation proximity and fluorescence microscopy assays, we show that in Saccharomyces cerevisiae , Heat Shock Response ( HSR ) genes dispersed across multiple chromosomes and under the control of Heat Shock Factor (Hsf1) rapidly reposition in cells exposed to acute ethanol stress and engage in concerted, Hsf1-dependent intergenic interactions. Accompanying 3D genome reconfiguration is equally rapid formation of Hsf1-containing condensates. However, in contrast to the transience of Hsf1-driven intergenic interactions that peak within 10–20 min and dissipate within 1 hr in the presence of 8.5% (v/v) ethanol, transcriptional condensates are stably maintained for hours. Moreover, under the same conditions, Pol II occupancy of HSR genes, chromatin remodeling, and RNA expression are detectable only later in the response and peak much later (>1 hr). This contrasts with the coordinate response of HSR genes to thermal stress (39°C) where Pol II occupancy, transcription, histone eviction, intergenic interactions, and formation of Hsf1 condensates are all rapid yet transient (peak within 2.5–10 min and dissipate within 1 hr). Therefore, Hsf1 forms condensates, restructures the genome and transcriptionally activates HSR genes in response to both forms of proteotoxic stress but does so with strikingly different kinetics. In cells subjected to ethanol stress, Hsf1 forms condensates and repositions target genes before transcriptionally activating them.
+In insects and mammals, 3D genome topology has been linked to transcriptional states yet whether this link holds for other eukaryotes is unclear. Using both ligation proximity and fluorescence microscopy assays, we show that in Saccharomyces cerevisiae, Heat Shock Response (HSR) genes dispersed across multiple chromosomes and under the control of Heat Shock Factor (Hsf1) rapidly reposition in cells exposed to acute ethanol stress and engage in concerted, Hsf1-dependent intergenic interactions. Accompanying 3D genome reconfiguration is equally rapid formation of Hsf1-containing condensates. However, in contrast to the transience of Hsf1-driven intergenic interactions that peak within 10–20 min and dissipate within 1 hr in the presence of 8.5% (v/v) ethanol, transcriptional condensates are stably maintained for hours. Moreover, under the same conditions, Pol II occupancy of HSR genes, chromatin remodeling, and RNA expression are detectable only later in the response and peak much later (>1 hr). This contrasts with the coordinate response of HSR genes to thermal stress (39°C) where Pol II occupancy, transcription, histone eviction, intergenic interactions, and formation of Hsf1 condensates are all rapid yet transient (peak within 2.5–10 min and dissipate within 1 hr). Therefore, Hsf1 forms condensates, restructures the genome and transcriptionally activates HSR genes in response to both forms of proteotoxic stress but does so with strikingly different kinetics. In cells subjected to ethanol stress, Hsf1 forms condensates and repositions target genes before transcriptionally activating them.
 
 ## Introduction
 
@@ -32,13 +32,13 @@ Here, we investigate activation of the HSR in yeast exposed to 8.5% ethanol (eth
 
 ## Results
 
-## Thermal stress and ethanol stress elicit distinct proteotoxic responses in yeast
+### Thermal stress and ethanol stress elicit distinct proteotoxic responses in yeast
 
 Saccharomyces cerevisiae in the wild metabolizes glucose and other sugars into ethanol, which the yeast secretes into the environment to suppress microbial competition. Therefore, it is likely that yeast has evolved mechanisms to contend with ethanol toxicity. Indeed, a common laboratory strain (W303) retains viability when cultivated in the presence of 8.5% ethanol, although its ability to proliferate is diminished (Figure 1A and B). As assessed by the presence of Hsp104-containing foci (a measure of protein aggregation; Liu et al., 2010), the rate of cytosolic protein aggregation is similar in cells exposed to either 8.5% ethanol or 39°C thermal stress (Figure 1D and E; see Figure 1C for experimental design). However, it is notable that the number and volume of Hsp104 foci, and by extension protein aggregation, is substantially higher in cells subjected to ethanol stress.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig1-v1.jpg)
 
-**Figure 1.:** (A) Growth curve of strain W303-1B grown in liquid culture (YPDA). Mid-log phase cultures were diluted to OD600=0.4 and shifted to different conditions: no stress (NS, 25°C), heat shock (HS, 39°C), or ethanol stress (ES, 8.5% v/v, 25°C). OD600 was monitored over time. Means and SD are shown. N=2. (B) Viability assay of W303-1B cells following exposure to heat shock (25° to 39°C upshift for the indicated time) or ethanol stress (8.5% v/v ethanol for the indicated time at 25°C). An aliquot was taken from each condition at the indicated stress timepoints and diluted in rich media. Cells were spread on YPDA plates and grown at 30°C for 3 days. Colony forming units (CFUs) were determined using ImageJ/FIJI. Plotted are percentages of CFUs of stressed cells normalized to those of the 0 min control. Graphs depict means + SD. N=2. (C) Experimental strategy for imaging Hsp104 foci. Cells were attached to a concanavalin A (ConA)-coated surface, followed by heat shock or ethanol stress treatment (see Materials and Methods). Synthetic complete media (SDC) was supplemented with ethanol to a final concentration of 8.5% for ES samples. Scale bar: 2 µm. (D) Both heat shock and ethanol stress induce formation of Hsp104 foci. DPY1561 haploid cells were attached to a VAHEAT substrate using Concanavalin A and subjected to an instantaneous heat shock (25° to 39°C) or to ethanol stress (25°C, 8.5% v/v). The 0 min control was kept at 25°C without stress. Hsp104-mTagBFP2 foci were visualized by confocal microscopy. Shown are maximal projections of 11 z-planes, taken with an interplanar distance of 0.5 µm. Scale bar: 2 µm. (E) Cells subjected to the above treatments were assayed for Hsp104 puncta number and volume. Violin plots summarizing this analysis are depicted. An average of 200 cells per timepoint per condition was quantified using Imaris image analysis software (v.10.0.1). For this analysis, we made the assumption that the diffuse Hsp104 clusters seen in HS cells are comparable to the compact Hsp104 foci in ES cells. N=2. Significance was determined by Mann Whitney test, stress vs. no stress (0 min). ***, p<0.001; ****, p<0.0001; ns, not significant.Figure 1—source data 1.Figure 1E).
+**Figure 1.:** (A) Growth curve of strain W303-1B grown in liquid culture (YPDA). Mid-log phase cultures were diluted to OD600=0.4 and shifted to different conditions: no stress (NS, 25°C), heat shock (HS, 39°C), or ethanol stress (ES, 8.5% v/v, 25°C). OD600 was monitored over time. Means and SD are shown. N=2. (B) Viability assay of W303-1B cells following exposure to heat shock (25° to 39°C upshift for the indicated time) or ethanol stress (8.5% v/v ethanol for the indicated time at 25°C). An aliquot was taken from each condition at the indicated stress timepoints and diluted in rich media. Cells were spread on YPDA plates and grown at 30°C for 3 days. Colony forming units (CFUs) were determined using ImageJ/FIJI. Plotted are percentages of CFUs of stressed cells normalized to those of the 0 min control. Graphs depict means + SD. N=2. (C) Experimental strategy for imaging Hsp104 foci. Cells were attached to a concanavalin A (ConA)-coated surface, followed by heat shock or ethanol stress treatment (see Materials and Methods). Synthetic complete media (SDC) was supplemented with ethanol to a final concentration of 8.5% for ES samples. Scale bar: 2 µm. (D) Both heat shock and ethanol stress induce formation of Hsp104 foci. DPY1561 haploid cells were attached to a VAHEAT substrate using Concanavalin A and subjected to an instantaneous heat shock (25° to 39°C) or to ethanol stress (25°C, 8.5% v/v). The 0 min control was kept at 25°C without stress. Hsp104-mTagBFP2 foci were visualized by confocal microscopy. Shown are maximal projections of 11 z-planes, taken with an interplanar distance of 0.5 µm. Scale bar: 2 µm. (E) Cells subjected to the above treatments were assayed for Hsp104 puncta number and volume. Violin plots summarizing this analysis are depicted. An average of 200 cells per timepoint per condition was quantified using Imaris image analysis software (v.10.0.1). For this analysis, we made the assumption that the diffuse Hsp104 clusters seen in HS cells are comparable to the compact Hsp104 foci in ES cells. N=2. Significance was determined by Mann Whitney test, stress vs. no stress (0 min). ***, p<0.001; ****, p<0.0001; ns, not significant.
 
 We next investigated the subcellular localization of the Hsp70 co-chaperone, Sis1, in cells exposed to ethanol versus thermal stress. Previous work has shown that Sis1 is diffusely localized within the nucleus under control conditions where it promotes binding of Hsp70 to Hsf1, thereby repressing the HSR (Feder et al., 2021). In response to acute HS, Sis1 relocates to nucleolus where it forms a perinucleolar ring, and to the cytoplasm where it forms cytosolic clusters that colocalize with Hsp104 and spatially associate with the endoplasmic reticulum (Feder et al., 2021). Consistent with these previous observations, we observed rapid relocalization of Sis1 in response to a 39°C HS. It formed a ring-like structure within 2.5 min consistent with a perinuclear location. Such relocalization lasted at least 60 min and spatially separated Sis1 from Hsf1 (Figure 2A and B). A similar result was obtained when cells were exposed to 42°C. In response to ES, Sis1 remained largely co-localized with Hsf1 within the nucleoplasm although some enrichment at the nuclear periphery was evident. This was the case whether cells were exposed to 5% or 8.5% ethanol (Figure 2A and B). In addition, a 60 min exposure to 8.5% ethanol resulted in the formation of prominent cytosolic Sis1 puncta that were less evident in the HS sample (Figure 2A). These observations suggest that these two stressful treatments elicit a qualitatively distinct response. Experiments described below provide further support for this possibility.
 
@@ -46,15 +46,43 @@ We next investigated the subcellular localization of the Hsp70 co-chaperone, Sis
 
 **Figure 2.:** (A) Live cell confocal microscopy of the diploid strain LRY033 expressing Sis1-mKate, Hsf1-mNeonGreen, and Hsp104-mTagBFP2. Cells were treated as in Figure 1D. 11 z-planes were captured with an interplanar distance of 0.5 µm. Shown is a representative plane for each timepoint. (B) Subcellular localization analysis of Sis1, Hsf1, and Hsp104 in cells subjected to no stress (25°C), heat shock (at 39° or 42°C), or ethanol stress (at 5% or 8.5% v/v [25°C]) for 10 min. Cells from strain LRY033 were treated as described in Figure 1D. A representative plane is shown for each condition. Line profiles are plotted for each channel on the right. Arrows were drawn to bisect the nucleus. Scale bar: 2 µm.
 
-## Ethanol stress induces transcriptional activation of Hsf1-dependent genes but with delayed kinetics and reduced expression compared to thermal stress
+### Ethanol stress induces transcriptional activation of Hsf1-dependent genes but with delayed kinetics and reduced expression compared to thermal stress
 
 To gain further insight into the mechanism by which S. cerevisiae contends with ethanol-induced proteotoxicity, we assessed the kinetics of transcriptional activation of HSR genes in cells exposed to ethanol stress. Cells were cultivated to early log phase in rich YPD medium, then ethanol was added to a final concentration of 8.5% and cell aliquots were removed at 0-, 10-, 20-, and 60 min. Transcription was terminated through addition of sodium azide (see Materials and methods). A parallel culture was exposed to an instantaneous 30° to 39°C heat shock and cells were removed at the corresponding time points. Transcription was terminated as above.
 
 While cells exposed to heat shock displayed a rapid and substantial increase in HSR mRNA levels (typically >10 fold increase within 10 min of thermal upshift), those exposed to ethanol stress only weakly induced the same cohort of genes (Figure 3A). However, while HS induced a transient increase in RNA expression, ES induced a sustained increase that was evident at all Hsf1-dependent genes tested (see also Figure 3—figure supplements 1 and 2). A corresponding immunoblot analysis of two Hsf1 targets, Hsp104 and Btn2, strengthens the notion that HS induces a rapid yet transient response, whereas ES induces a delayed, yet far more sustained increase in gene expression (Figure 3—figure supplement 3). In the case of HSP12 and HSP26, whose transcription is under the dual regulation of Msn2 and Hsf1, exposure to heat shock resulted in a high level of induction as previously observed (Chowdhary et al., 2019) yet exposure to 8.5% ethanol failed to cause detectable activation during the first 20 min (Figure 3B; Figure 3—figure supplement 1). Nonetheless, as described below, both HSP12 and HSP26 respond to acute ethanol stress but do so through their inducible and dramatic 3D genomic repositioning.
 
-## Pol II recruitment and histone eviction are delayed in ethanol-stressed cells and this correlates with a transient, widespread increase in nucleosome density
+![Figure 3.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig3-v1.jpg)
+
+**Figure 3.:** (A) RNA abundance of Hsf1-dependent HSR genes was determined by Reverse Transcription-qPCR in strain W303-1B. Heat shock was performed at 39°C; ethanol stress was done using 8.5% (v/v) ethanol at 25°C. Insets display transcript abundance using a zoomed-in scale. Depicted are means + SD. N=2, qPCR = 4. Statistical analysis: T-test, one-tailed, no stress vs. stress conditions. *, p<0.05; **, p<0.01, ***; p<0.001. (B) As in (A), but the Hsf1-, Msn2-dual regulated genes HSP12 and HSP26 were evaluated. *, p<0.05; ***, p<0.001; ****, p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) RNA abundance of Hsf1-dependent genes was determined as in Figure 3. Cells were exposed to 8.5% (v/v) ethanol at 25°C for the indicated times. Depicted are means + SD. N=2, qPCR=4. (B) As in (A), but the Hsf1-, Msn2-dual regulated genes HSP12 and HSP26 were evaluated. (C) Quantification of SCR1 RNA levels used for normalization of transcripts, analyzed by RT-qPCR. N=2, qPCR=4. A one-way ANOVA test (GraphPad Prism 8.0) was performed. ns (not significant), p>0.05.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Abundance of HSR mRNAs was determined by RT-qPCR. The experiment was conducted as described in Figure 3 except longer time points were evaluated. Depicted are means + SD. N=2, qPCR=4.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Analysis of chaperone levels by Immunoblot. Strain W303-1B was exposed to constant heat shock or ethanol stress conditions for different timepoints. Levels of histone H3, Hsp104, and Btn2 were monitored using antibodies against endogenous proteins. Histone H3 serves as the loading control. (B) Quantification of Hsp104 and Btn2 protein levels. Samples were treated as described in (A). Protein levels were normalized to histone H3 and 0 min timepoints. Shown are means + SD. N=2.
+
+### Pol II recruitment and histone eviction are delayed in ethanol-stressed cells and this correlates with a transient, widespread increase in nucleosome density
 
 The delayed transcriptional response of HSR genes in ES- versus HS-treated cells prompted us to investigate occupancy of Hsf1, RNA Pol II and histones at these genes over a time course. A possible explanation for the delay in activation in cells exposed to ethanol stress is less rapid (or reduced) Hsf1 binding to the genes’ upstream regulatory regions. To explore this possibility, we exposed cells to either thermal or chemical stress and processed them for chromatin immunoprecipitation (ChIP) analysis. As previously observed (Kim and Gross, 2013; Pincus et al., 2018; Sekinger and Gross, 2001), occupancy of Hsf1 at its target loci increases many-fold following a brief heat shock (Figure 4B, left, dark red; see Figure 4A for location of primers). Hsf1 occupancy typically declines after 60 min of continuous thermal stress and in the case of TMA10, dissociation begins much sooner. In response to ethanol stress, Hsf1 occupancy steadily increased, in most cases reaching maximal levels by 20 min and plateauing thereafter (Figure 4B, left, black). These results suggest that ethanol stress induces binding of Hsf1 to its cognate HSEs to a degree similar to heat shock, yet such binding is more gradual. Moreover, given the above, Hsf1’s binding to these sites fails to elicit a corresponding transcriptional response.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig4-v1.jpg)
+
+**Figure 4.:** (A) Map of a representative HSR gene depicting locations of primers used for chromatin immunoprecipitation (ChIP) analysis. Heat shock: shades of red and pink. Ethanol stress: shades of blue. (B) ChIP analysis of Hsf1, Pol II (Rpb1) and histone H3 occupancy to the enhancer (UAS), promoter and coding regions of the indicated genes. Mid-log cultures of strain BY4741 were subjected to the indicated times of heat shock (39°C) or ethanol stress (8.5% v/v, 25°C). Time points evaluated for all three factors: 0-, 2.5-, 10-, 20-, and 60 min. Antibodies raised against full-length Hsf1, CTD of Rbp1 or the globular domain of histone H3 were used (see Materials and methods). ChIP signals were normalized to input. Shown are means + SD. N=2, qPCR = 4.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Pol II ChIP and RT-qPCR data of the indicated HSR genes in cells exposed to HS are co-plotted to allow comparison of the occupancy of Pol II (over ORF) versus the corresponding transcript levels. Data derived from Figures 3A and 4B. (B) As above, except cells were exposed to 8.5% (v/v) ethanol.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) ChIP analysis of histone H3 occupancy at inducible (PGM2), constitutive (ACT1, TUB1), and inactive/silenced loci (ARS504, HMLα1, YFR057W). Experiment was carried out and data quantified as in Figure 4B. Shown are means + SD. N=2, qPCR=4. (B) Live cell confocal fluorescence microscopy of the diploid strain DBY1447. Histone H2A-mCherry was used to measure chromatin volume in cells cultivated in SDC medium at 25°C and then subjected to thermal (39°C) or ethanol stress (8.5% v/v) for the times indicated. VAHEAT device was used for heat shock (see Materials and methods). Imaging was done across 11 z-planes with 0.5 µm of interplanar distance. Representative single plane images are shown. Scale bar: 2 µm. (C) Violin plots depicting H2A-mCherry volume measurements of DBY1447 cells treated as in (B). An average of 100 cells per timepoint, per condition, were evaluated. H2A-mCherry volume was determined using 3D Objects Counter in ImageJ/Fiji (v. 1.54 f). Statistical significance between no stress (0 min) and stress (2.5–180 min) samples was determined using Mann Whitney U Test. N=2. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001; ns, not significant.
 
 In light of this disconnect between Hsf1 binding and HSR mRNA production, we evaluated abundance of the large subunit of Pol II at representative genes over the same time course. In response to heat shock, Rpb1 is rapidly recruited to the promoters and coding regions of each HSR gene, peaking within 2.5 min and then gradually declining over the next ~60 min (Figure 4B, middle, red and pink traces). By contrast, its occupancy is noticeably delayed in cells exposed to ethanol stress (blue traces), consistent with reduced transcript levels (Figure 4—figure supplement 1B). The increase in HSR mRNA in heat-shocked cells parallels, yet consistently lags, the abundance of Pol II within HSR gene coding regions (Figure 4—figure supplement 1A). This delay in reaching peak accumulation may reflect contributions beyond RNA synthesis, such as transient enhanced stability of HSR transcripts during the acute phase of heat shock.
 
@@ -62,37 +90,73 @@ To obtain further insight into the chromatin landscape present during the two st
 
 In agreement with this idea, chromatin volume (as assessed by the signal arising from an H2A-mCherry protein fusion) decreases upon exposure of cells to ethanol stress (and much more transiently to heat stress; Figure 4—figure supplement 2[B, C]). These data suggest that the increase in nucleosome density antagonizes Pol II recruitment and its subsequent release into the coding regions of HSR genes in ES cells. Once Pol II has been stably recruited, elongation and concomitant histone eviction ensues (Figure 4B, light blue). Altogether, our ChIP data indicate that Hsf1 binds to its target enhancers less readily in ethanol-stressed than in thermally stressed cells. This impediment to Hsf1 occupancy is magnified by a corresponding, and more severe, hindrance to Pol II recruitment resulting in a pronounced delay in HSR gene transcription.
 
-## Acute ethanol stress induces rapid and profound 3D genomic repositioning of HSR loci
+### Acute ethanol stress induces rapid and profound 3D genomic repositioning of HSR loci
 
 An intriguing feature of HSR genes is the fact that they coalesce into discrete intranuclear foci in response to heat shock. Such interactions have been documented using both molecular (Chromosome Conformation Capture [3C]) and imaging (fluorescence microscopy) approaches (Chowdhary et al., 2017; Chowdhary et al., 2019; Chowdhary et al., 2022; Rubio and Gross, 2023). Moreover, such physical interactions specifically involve Hsf1 targets irrespective of their location in the genome. Other loci, including adjacent, transcriptionally active genes, show little or no tendency to interact with Hsf1-dependent genes. Such cis- and trans-interactions principally involve gene coding regions and are highly dynamic, typically peaking at 2.5 min and dissipating by 30- to 60 min. The kinetics of HS-induced coalescence often, although not always, correlate with kinetics of transcriptional induction; they also parallel the formation of Hsf1 condensates (Chowdhary et al., 2017; Chowdhary et al., 2019; Chowdhary et al., 2022) as discussed further below.
 
 Given these previous observations, we wished to know if ethanol stress induced similar 3D genome restructuring. It seemed unlikely that such topological changes would occur during the initial phase of ES since only weak Pol II occupancy and low HSR transcript levels are observed (Figures 3 and 4). However, as shown in Figure 5, exposure to 8.5% ethanol triggered frequent intergenic interactions between Hsf1 targets during the first 10 min as revealed by Taq I-3C, a highly sensitive, quantitative version of 3C (Chowdhary et al., 2020) (see Figure 5—figure supplement 1 for location of 3C primers). Both intra- and interchromosomal interactions can be detected. Moreover, the interaction frequencies following this exposure in most cases equaled, and in some instances exceeded, those detected in cells heat-shocked for 2.5 min (Figure 5A and B), when peak 3C interactions occur in thermally stressed cells (Chowdhary et al., 2017). A detailed kinetic analysis revealed that intergenic interactions elicited by ethanol stress, similar to those induced by thermal stress, are highly dynamic: detectable within 2.5 min, peak shortly thereafter (within 10–20 min) and largely attenuate by 60 min (Figures 5 and 6A).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig5-v1.jpg)
+
+**Figure 5.:** (A) Intrachromosomal (cis) interactions between HSR genes were analyzed by Taq I-3C. W303-1B cells were instantaneously shifted from 30° to 39°C for 2.5 min (HS) or exposed to 8.5% v/v ethanol at 30°C for 10 or 20 min (ES). No stress samples were kept at 30°C. Location of Taq I coordinates are provided in Figure 5—figure supplement 1. F (forward) primers are positioned near the indicated Taq I restriction site. 3C signals were normalized to the 3C signal derived from using a naked genomic DNA template. Graphs depict means + SD; N=2; qPCR=4. (B) Interchromosomal (trans) interactions between HSR genes were detected as in (A).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Taq I restriction sites are numbered relative to the ATG (+1) codon. Coding regions are represented by grey boxes. Locations of Hsf1 binding sites (Heat Shock Elements [HSEs]) are shown as triple black vertical lines. Stress Response Elements (STREs) (Msn2 binding sites) are shown as green vertical lines (shown only for select genes). The primers used to analyze 3C interactions are represented as arrows. TSS, Transcription Start Site. TTS, Transcription Termination Site.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Comparison of HSP104 intragenic interactions (left) with HSP104 mRNA levels (right). Samples from strain W303-1B were exposed to thermal (HS, 39°C) or ethanol stress (ES, 8.5%) for the indicated times. Intragenic interactions were analyzed by Taq I-3C; mRNA data are from Figure 3A. Locations of Taq I restriction sites are in Figure 5—figure supplement 1. Depicted are means + SD. N=2, qPCR=4. Taq I-3C analysis of intragenic interactions of the indicated Hsf1 target genes. Analysis and symbols as in (A).
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig6-v1.jpg)
 
-**Figure 6.:** HSR gene interactions are detectable by 2.5 min but typically dissipate within 60 min.(A) Taq I-3C analysis of intergenic interactions occurring during ethanol stress was conducted as described in Figure 5. All samples were kept at 25°C. Plotted are means + SD. N=2, qPCR=4. (B) As in (A), but for intragenic interactions.Figure 6—source data 1.Figure 6).
+**Figure 6.:** (A) Taq I-3C analysis of intergenic interactions occurring during ethanol stress was conducted as described in Figure 5. All samples were kept at 25°C. Plotted are means + SD. N=2, qPCR=4. (B) As in (A), but for intragenic interactions.
 
 It has been previously suggested that a functional link exists between gene looping and transcriptional activation (Ansari and Hampsey, 2005; O’Sullivan et al., 2004). Indeed, gene loops and other intragenic interactions (Chowdhary et al., 2017) are readily detected within HSR genes in cells exposed to ethanol. However, as is the case with intergenic interactions, these topological changes are kinetically uncoupled from both transcription and Pol II occupancy. They are detected quite early (within 2.5 min), peak soon thereafter (at 10 min) and attenuate by 60 min (Figure 6B and Figure 5—figure supplement 2). Taken together, our 3C and expression analyses indicate that 3D genomic repositioning and intragenic looping of HSR genes precedes the maxima of transcript levels and Pol II occupancy. Moreover, for certain loci (e.g. HSP12 and HSP26), they argue that neither transcription nor Pol II recruitment is required to drive 3D topological changes in these genes. Further evidence in support of this is provided below.
 
-## Live cell imaging reveals that HSR genes coalesce to a similar degree under ethanol stress and heat stress conditions
+### Live cell imaging reveals that HSR genes coalesce to a similar degree under ethanol stress and heat stress conditions
 
 To provide an orthogonal line of evidence for HSR gene interaction, we employed fluorescence microscopy to image live cells bearing LacO-tagged HSP104 and TetO-tagged TMA10 loci in cells expressing GFP-LacI and TetR-mCherry fusion proteins. Both genes are located on Chromosome XII, on opposite arms, and are physically separated by the nucleolus (100–200 rDNA repeats) that lies between them (Duan et al., 2010) (schematically depicted in Figure 7—figure supplement 1A). In the absence of stress, fluorescence signals representing these two genes are typically well-separated (Figure 7—figure supplement 1B, 0 min). Upon heat shock, they rapidly converge, usually within 2.5 min. Upon exposure to ethanol, gene convergence is also observed, albeit less rapidly (Figure 7—figure supplement 1B; see also below). Despite the slight delay, these results demonstrate that HSP104 and TMA10 coalesce in ethanol stressed cells and do so with similar frequency as in thermally stressed cells (Figure 7—figure supplement 1C), consistent with the 3C analysis described above.
 
 Having confirmed the physical interaction of Hsf1-dependent genes under ethanol stress, we assessed the transcriptional status of coalesced genes. Our RT-qPCR analysis indicated that the increase in HSR mRNA levels in ES-induced cells is delayed compared to HS-induced cells (Figure 3). To obtain insight into HSR gene transcription kinetics in single cells, we integrated a stem loop array (24xMS2) upstream of HSP104, allowing production of a chimeric transcript visualized upon binding of the MCP-mCherry fusion protein (Haim et al., 2007). This strain also harbored LacO-tagged HSP104 and HSP12 genes and expressed GFP-LacI (schematically illustrated in Figure 7A). We were unable to detect an MCP-mCherry focus adjacent to HSP104 under no stress conditions (Figure 7B; 0 min), consistent with very low HSP104 basal transcript levels (Figure 3A). Heat shock induced rapid coalescence between HSP104 and HSP12, as well as transcription from HSP104. These phenomena were detectable by 2.5 min as a merged signal of the chimeric transcript and the two GFP-labeled genes (Figure 7B). This visualization method allowed us to quantify the percentage of the population that is actively engaged in transcription, revealing that during heat shock, transcription, and coalescence are positively correlated (Figure 7C and F).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig7-v1.jpg)
+
+**Figure 7.:** (A) HSP12 and HSP104 are flanked by LacO arrays in the heterozygous diploid strain VPY705. In addition, HSP104 has a 24xMS2 loop array integrated within its 5’-UTR. MCP-mCherry binds to the nascent chimeric HSP104 transcript and is visualized as a red dot adjacent to the gene which appears as a green dot. (B) Live cell confocal fluorescence microscopy of strain VPY705 heat-shocked at 39°C using a VAHEAT device or exposed to 8.5% ethanol at 25°C for the indicated times. An Olympus spinning disk confocal microscope system was used for imaging. Scale bar: 2 µm. (C) Quantification of VPY705 cells treated as above and scored for the coalescence of HSP104-HSP12 and the presence of chimeric MS2x24-HSP104 mRNA. Cells were scored positive for coalescence only when a single green dot could be visualized in the nucleus across the 11 z-planes. Transcription was scored as positive only when a red dot above background could be seen near the large green dot (HSP104). Approximately 40 cells were scored per timepoint, per condition. Graphs represent means + SD. N=2. (D) Single cell analysis of HSP12-HSP104 coalescence (green) and HSP104 transcription (blue) at discrete timepoints over a heat shock time course. Each row in the transcription analysis corresponds to the same cell in the coalescence analysis. Blue gradient represents the intensity of mCherry signal (HSP104 transcript) in each cell, as quantified by ImageJ/Fiji (v. 1.54f). (E) As in (D) but for ethanol stress. (F) Pearson correlation coefficient analysis showing the correlation (r) between percent of cells positive for transcription and percent of cells positive for coalescence under HS and ES conditions (derived from Figure 7—figure supplement 1D). Each plotted value corresponds to a different stress timepoint.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Relative location of HSP104 and TMA10 on Chr. XII in the diploid strain ASK727. One allele of HSP104 is flanked by an integrated LacO256 array and one allele of TMA10 is flanked by an integrated TetO200 array. As indicated, these labeled alleles are located on the same chromosome (Chowdhary et al., 2019). ASK727 also expresses GFP-LacI and TetR-mCherry (N- and C-terminal fusion, respectively) to allow visualization of the two genes as a green and red dot, respectively. Live cell widefield fluorescence microscopy of ASK727. Cells were immobilized onto ConA-coated coverslips and exposed to either heat shock (25°C to 38°C upshift) or ethanol stress (8.5% v/v; 25°C) for the indicated times (see Materials and methods). 11 z-planes with 0.5 µm interplanar distance were captured for each condition. A representative z-plane is shown per condition. Scale bar: 2 µm. (B) ASK727 cells, treated as in B, were scored for colocalization of HSP104 and TMA10 upon exposure to either heat shock or ethanol stress. A cell was scored as positive when the highest intensity signal from both genes overlapped in the same z-plane. An average of 70 cells were evaluated per condition, per timepoint. Displayed are means + SD. N=2. A one-tailed t-test was performed to assess significance. *, p<0.05. Note: we interpret HSP104-TMA10 coalescence observed at T=0 min to principally reflect coincidental overlap given absence of 3C signal under the no stress condition. A similar consideration applies to the HSP104-HSP12 gene pair analyzed below. (C) VPY705 cells were subjected to heat shock (39°C; VAHEAT device) or ethanol stress (8.5%) for the indicated times and imaged using an Olympus Spinning Disk Microscope System. Imaging was acquired over 11 z-planes, with 0.5 µm of distance between planes. Left: Percentage of cells showing coalescence between GFP-labeled alleles of HSP104 and HSP12 (Note that the theoretical ceiling for coalescence of these tagged alleles is 25% given their heterozygous state). Right: Percentage of cells in the population displaying an mCherry dot (MCP-mCherry bound HSP104 transcripts) colocalizing with the GFP-labeled HSP104 gene. An average of 40 cells per timepoint per condition was scored. Graphs depict means + SD. N=2.
+
 A detailed live cell analysis supports the strong spatiotemporal correlation between HSR gene coalescence and transcription in heat-shocked cells (Figure 7D). In contrast, under ethanol stress, HSP104 RNA was not detected in most cases until 10 min even though HSP12 and HSP104 coalesced as early as 2.5 min (Figure 7E; Figure 7—figure supplement 1D). Indeed, such an analysis suggests temporal uncoupling between HSR gene coalescence and HSR gene transcription in ethanol stressed cells (Figure 7F). Underscoring the disconnect between 3D genome repositioning and transcription is the fact that in ethanol stressed cells, enhanced HSP12 mRNA levels were undetectable until 60 min (Figure 3B and Figure 3—figure supplement 1). Collectively, our RT-qPCR, 3C and imaging data argue that ethanol stress induces striking topological changes in HSR genes within the first 10–20 min, yet these are accompanied by a minimal increase in transcript levels. This provides a sharp contrast to heat-shocked cells where there exists a strong temporal correlation between HSR gene transcription and HSR gene repositioning (Figure 7F).
 
-## Ethanol stress induces formation of long-lived Hsf1 condensates
+### Ethanol stress induces formation of long-lived Hsf1 condensates
 
 Recently, TF condensates have been proposed as a mechanism for transcriptional regulation (Boija et al., 2018; Cho et al., 2018; Hnisz et al., 2017; Nair et al., 2019; Sabari et al., 2018). Heat shock-activated Hsf1 forms small nuclear condensates (diameter of ≤300 nm) that localize at HSR gene loci in both human (Zhang et al., 2022) and budding yeast cells (Chowdhary et al., 2022), and their presence positively correlates with HSR gene transcriptional activity. The tendency of Hsf1 to form condensates may be linked to its extensive intrinsically disordered structure (Figure 8A), a feature proposed to be critical for the biomolecular condensation of proteins (reviewed in Alberti et al., 2019; Banani et al., 2017). Additionally, nuclear stress bodies comprised of HSF1 bound to satellite III DNA repeats in human cells have been described (Jolly et al., 1997; Jolly et al., 2002), although formation of these large foci (diameter of several µm) is independent of the sites of active Heat Shock Response genes and their presence may repress HSR gene activation (Gaglia et al., 2020).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig8-v1.jpg)
+
+**Figure 8.:** (A) Hsf1 is a transcription factor bearing N- and C-terminal domains with high disorder tendency (determined by IUPRED2). NTA, N-terminal activator; DBD, DNA binding domain; 3-mer, trimerization domain; CE2, conserved element 2 (Hsp70 binding site); CTA, C-terminal activator. (B) Hsf1-GFP condensates form in response to ethanol stress. Diploid cells expressing Hsf1-GFP (ASK741) were grown in synthetic complete medium supplemented with adenine (SDC +Ade) and mounted onto ConA-coated coverslips. Live cell widefield microscopy was performed on cells exposed to either heat shock (38°C) or ethanol stress (8.5% v/v) or left untreated (25°C). A representative plane is shown for each condition out of 11 z-planes imaged (interplanar distance of 0.5 µm). Scale bar: 2 µm. (C) ASK741 cells were subjected to a 38°C heat shock for the indicated times and scored for the presence of Hsf1 condensates. A cell was scored as positive if it contained at least one clearly defined puncta. Approximately 200 cells were evaluated per timepoint. A one-tailed t-test was used to assess significance (stress versus no stress condition). N=2. **, p<0.01; ***, p<0.001.(D) ASK741 cells were exposed to 8.5% v/v ethanol for the indicated times and the presence of Hsf1 condensates were scored from a total of 200 cells per timepoint. Significance was determined as in (C).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Visualization of Hsf1-mNeonGreen (LRY040 haploid strain) exposed to heat shock (39°C) or ethanol stress (8.5% or 5% v/v, 25°C). Control (0 min) was kept at 25°C. Single plane is shown, from an 11 z-planes stack taken with 0.5 µm of interplanar distance. Dashed box represents zoom-in of a representative cell for that time point (continuous box). Scale bar: 2 µm (B) Cells treated as in (A) were scored for the presence of Hsf1-mNeonGreen foci using Imaris software (v.10.0.0; see Materials and methods). Depicted is the percentage of cells in the population displaying ≥1 Hsf1 puncta. An average of 150 cells were scored per condition, per timepoint. N=2. Shown are means + SD.
 
 Given the temporal link between Hsf1 condensation and transcription established in heat-shocked yeast cells, we anticipated that the appearance of Hsf1 condensates in ethanol-stressed cells would be delayed relative to what is seen in heat-shocked cells. However, we found that ethanol stress induced formation of Hsf1-GFP condensates as rapidly as did heat shock. These were visible in virtually all ES cells as early as 2.5 min, paralleling their rapid appearance in HS cells (Figure 8B–D). However, in contrast to the rapid dissolution of condensates in HS cells, those formed in cells exposed to 8.5% ethanol showed no evidence of dissipating even after 60 min of continuous exposure (Figure 8B and D). An independent analysis of Hsf1 tagged with a monomeric GFP, mNeonGreen, gave virtually identical results:>90% of cells exhibited Hsf1 puncta as early as 2.5 min and such puncta were stably maintained for 150 min (Figure 8—figure supplement 1). Moreover, in an independent analysis they remained visible at 5.5 hr (data not shown). Therefore, in 8.5% ethanol-stressed cells, formation of Hsf1 condensates is uncoupled from HSR gene transcription and their maintenance is uncoupled from HSR gene repositioning. An important implication is that although condensates may initiate or promote HSR gene repositioning, they cannot maintain the 3D restructured state of the genome.
 
 Does the enhanced stability of ES-induced puncta arise from the nature of the stress or its intensity? To test this, we examined the behavior of yeast cells exposed to a lower concentration of ethanol. As shown in Figure 8—figure supplement 1, Hsf1 puncta formed in >95% of 5% ethanol-treated cells within 2.5 min, resembling what was seen in cells exposed to either 8.5% ethanol or 39°C HS. Yet such puncta dissipated in a majority of 5% ES cells within 30 min, resembling the case with HS but strongly contrasting to what was seen with 8.5% ethanol. Therefore, although 5% and 8.5% ES elicit a similar pattern of Sis1 subcellular relocalization, one that is distinct from that caused by either a 39° or 42°C HS (Figure 2), it is the greater intensity of 8.5% ethanol stress, not its intrinsic nature, that most closely correlates with the stability of Hsf1 condensates.
 
-## Hsf1 and Pol II are required for HSR gene interactions in response to both heat shock and ethanol stress
+### Hsf1 and Pol II are required for HSR gene interactions in response to both heat shock and ethanol stress
 
 The above analyses reveal several unexpected differences in the way yeast responds to ethanol stress versus heat stress. Given these differences, we asked whether either Hsf1 or RNA Pol II are required for the repositioning of HSR genes in response to ethanol stress; both have been shown to be necessary for 3D genome restructuring in response to heat shock (Chowdhary et al., 2019; Chowdhary et al., 2022). To do so, we used the auxin-induced degradation system to conditionally degrade Hsf1 and the Rpb1 subunit of RNA Pol II in appropriately engineered strains. As schematically summarized in Figure 9A, cells expressing degron-tagged Hsf1 or Rpb1 were pre-treated with 1 mM indole-3-acetic acid (IAA) for 30–40 min, at which time each protein was >90% degraded (Figure 9—figure supplement 1A). Although minimal short-term growth defects were detectable, loss of Rpb1 and Hsf1 resulted in loss of cell viability at all temperatures (Figure 9—figure supplement 1B, C).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig9-v1.jpg)
+
+**Figure 9.:** (A) Experimental strategy. Degron-tagged cells were treated with 1 mM IAA at 25°C for 30–40 min prior to exposure to either heat shock (HS, 39°C for 2.5 min) or ethanol stress (ES, 8.5% v/v ethanol for 10 min) followed by HCHO crosslinking and 3C analysis. (B) Strains LRY016 (W303-1B; OsTIR1), LRY100 (LRY016; Hsf1-mAID), and LRY102 (LRY016; Rpb1-mAID) were subjected to the above protocol and physical interactions between the indicated chromosomal loci were detected by Taq I-3C as in Figure 5. Representative interchromosomal interactions are shown. Graphs represent means + SD. Statistical significance between the indicated interaction frequencies was determined using a one-tailed t-test. *, p<0.05; **, p<0.01; ns, not significant. A no stress sample, maintained at 30°C for 10 min following IAA treatment and then crosslinked, was handled in parallel. No signal above background was detected for any pairwise test.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Analysis of protein degradation. Strains LRY100 and LRY102 (Hsf1-mAID and Rpb1-mAID, respectively) were grown in YPDA to mid-log phase and subjected to 1 mM IAA treatment for different lengths of time. Cells were harvested and processed by Western blot. cMyc antibody was used to visualize mAID tagged proteins, endogenous Pgk1 serves as the loading control. Quantification of mAID tagged protein levels is shown on the right. Normalization was done to Pgk1 and 0 min samples. Shown are means + SD. N=2. (B) Growth curve assay of LRY100 and LRY102 cells exposed to 1 mM IAA. Cells were pre-grown in YPDA to mid-log phase, then diluted with equivalent volume of YPDA +IAA in ethanol (vehicle) for a final concentration of 1 mM IAA and 1.7% ethanol or just 1.7% ethanol (vehicle-treated control). Samples were incubated with shaking at 25°C, aliquots were removed to monitor OD600 at the indicated times. Plots depict means + SD. N=2. (C) Spot dilution analysis of cells from the indicated strains. Cells were pre-grown to early log phase, diluted to OD600=0.5 in autoclaved distilled water, then serially diluted 1:3. A 6x8 applicator was used to spot cells on YPDA or YPDA +1 mM IAA plates. Incubation was done at the indicated temperatures for 3 days.
 
 Consistent with previous observations (Chowdhary et al., 2019), intergenic interactions between HSR genes, located on the same or different chromosomes, were nearly obviated in cells conditionally depleted of either Hsf1 or Rpb1 and then heat shocked (Figure 9B and data not shown). While a similar strong dependence on Hsf1 is observed in 8.5% ethanol-treated cells, residual HSR-HSR gene interactions are retained in Rpb1-depleted cells for certain loci. Particularly noteworthy is the inducible interaction between HSP12 and HSP26, genes co-regulated by Msn2 and Hsf1. Neither is detectably activated following a 10 min exposure to ethanol (Figure 3B), yet the genes engage in an intergenic interaction that is unaffected by prior degradation of Rpb1 (Figure 9B). Together with the kinetic uncoupling of HSR gene repositioning with Pol II recruitment/transcription and the relative permanence of Hsf1 condensates described above, these observations raise the possibility that 8.5% (v/v) ethanol-induced Hsf1 condensates are compositionally different from those formed in response to heat shock and drive HSR gene repositioning and transcription in a mechanistically distinct way (see Figure 10 for model).
 
@@ -102,7 +166,7 @@ Consistent with previous observations (Chowdhary et al., 2019), intergenic inter
 
 ## Discussion
 
-## Ethanol stress induces HSR gene transcription, HSR gene coalescence and formation of Hsf1 condensates
+### Ethanol stress induces HSR gene transcription, HSR gene coalescence and formation of Hsf1 condensates
 
 Here we have shown that exposure of budding yeast to a high, but sub-lethal, concentration of ethanol strongly stimulates the binding of Hsf1 to the upstream regulatory regions of HSR genes. Unexpectedly, such binding – which is evident as early as 2.5 min – does not lead to concurrent recruitment of Pol II and transcription of HSR genes. Instead, Pol II recruitment and transcription are delayed, typically for 10 min or longer. As exposure to 8.5% ethanol causes a global yet transient increase in H3 occupancy – which we interpret as an increase in the compaction of chromatin (see below) – the increase in nucleosome density may present a barrier to both Pol II recruitment and elongation. In addition, another feature of heat shocked-induced Hsf1 activation, repositioning of HSR genes within the 3D genome, is observed in cells exposed to ethanol. However, unlike transcription, this phenomenon occurs rapidly and is transient, resembling what is observed in heat shocked cells. The lack of temporal linkage between HSR gene transcription and HSR intergenic interactions is consistent with the idea that HSR gene coalescence and transcription are distinct phenomena and that Hsf1 can instigate long-range changes in 3D genome structure independently of inducing transcription. Thus, Hsf1 represents an example of a gene-specific TF that has functions independent of regulating transcription (discussed further below).
 
@@ -110,21 +174,301 @@ It has recently been demonstrated that in response to heat shock, inducible tran
 
 Additional features might account for the way in which these two proteotoxic stresses elicit the HSR in budding yeast. For example, while ethanol denatures proteins similar to thermal stress (Furutani and Izawa, 2022; Kato et al., 2011), it impacts the cell at other levels. Actively growing yeast preferentially consume sugars and even in the presence of oxygen can produce ethanol (Dashko et al., 2014). Once glucose is depleted, cells start consuming ethanol as an alternative carbon source. This change in carbon source, termed the diauxic shift, is marked by a reduction in growth rate due to the less efficient generation of energy as well as accumulation of waste products and depletion of nutrients (Herman, 2002). Consistent with activation of the HSR, this physiological adjustment is accompanied by increased chaperone synthesis (Piper, 1995; Piper et al., 1994) as well as an increase in the activity of alcohol metabolism-related enzymes. Such an adaptation likely takes time. In contrast to the gradual increase in ethanol that occurs under natural conditions, here we have imposed an instantaneous ethanol shock. The addition of ethanol elicits the heat shock transcriptional response and synthesis of chaperones. The cell growth arrest seen here (Figure 1A) may arise as part of the adaptive program deployed upon encountering ethanol stress, such as a transition into quiescence. However, we fail to see activation of Msn2 targets, a signature of quiescence (Breeden and Tsukiyama, 2022), early in the exposure to ES at a time when Hsf1 itself is activated (Figure 3B). While other possibilities exist, our results suggest that the activation of programs involved in proteome protection are likely the first line of defense against sudden ethanol stress. Salient differences by which yeast cells respond to heat versus ethanol stress are summarized in Table 1; a graphical summary highlighting such differences is presented in Figure 10A. A model of the Hsf1 transcriptional response suggested by the data presented here and elsewhere is provided in Figure 10B.
 
-## Exposure to ethanol transiently induces the global compaction of chromatin
+**Table 1.**
+ Kinetics of select nuclear phenomena in response to heat shock and ethanol stress.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Heat Shock (39°C)</th>
+      <th>Ethanol Stress (8.5% v/v)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hsf1 binding to HSEs</td>
+      <td>Rapid, peak at 2.5 min</td>
+      <td>Slight delay, peak at 10 min</td>
+    </tr>
+    <tr>
+      <td>Pol II recruitment to HSR genes</td>
+      <td>Rapid, peak at 2.5 min</td>
+      <td>Severely delayed, detection starts at 10 min</td>
+    </tr>
+    <tr>
+      <td>Histone H3 occupancy at HSR genes</td>
+      <td>Rapid depletion</td>
+      <td>Transient increase, followed by gradual depletion</td>
+    </tr>
+    <tr>
+      <td>Genome compaction*</td>
+      <td>Transient</td>
+      <td>Sustained</td>
+    </tr>
+    <tr>
+      <td>HSR gene transcription</td>
+      <td>Rapid</td>
+      <td>Delayed</td>
+    </tr>
+    <tr>
+      <td>HSR gene coalescence</td>
+      <td>Rapid, transient</td>
+      <td>Slightly delayed, transient</td>
+    </tr>
+    <tr>
+      <td>Hsf1 condensates</td>
+      <td>Rapidly induced, transient, well defined</td>
+      <td>Rapidly induced, stable, poorly defined</td>
+    </tr>
+  </tbody>
+</table>
+
+_*As inferred from enhanced H3 ChIP signal at non-Hsf1 regulated loci._
+
+### Exposure to ethanol transiently induces the global compaction of chromatin
 
 An important observation is that exposure of cells to 8.5% ethanol leads to a widespread increase in H3 ChIP signal that we interpret as increased compaction of chromatin. Although this effect is temporary, both euchromatic and heterochromatic regions are impacted, and this is consistent with measurements of total chromatin volume that reveal a decrease lasting nearly 60 min. A similar outcome was recently reported for both yeast and mammalian cells exposed to aliphatic di-alcohols (Itoh et al., 2021; Meduri et al., 2022). It is probable that the effect of ethanol exposure is nearly instantaneous since, as discussed above, ethanol is known to denature proteins (Kato et al., 2019), likely by dehydration (disruption of biomolecules’ hydration shell). While such denaturation may contribute to chromatin compaction, the effect is reversible, possibly due to refolding / renaturation mediated by Hsp70 and other molecular chaperones whose intracellular concentration increases during ethanol exposure. As mentioned above, this temporary increased density of chromatin could suppress Pol II recruitment and subsequent elongation. Also not ruled out is a direct effect of 8.5% ethanol on one or more components of the Pol II machinery. Possible advantages of chromatin compaction could be to downregulate global transcription, as well as to limit chromatin damage by reactive oxygen species or other potentially damaging molecules present in the cell during ethanol stress (Bradley et al., 2021; Costa et al., 1997; Davidson et al., 1996; Davidson and Schiestl, 2001; Shen et al., 2020; Voordeckers et al., 2020).
 
-## A novel function for a TF that is uncoupled from regulating the transcription of its target gene
+### A novel function for a TF that is uncoupled from regulating the transcription of its target gene
 
 A key finding is that in response to ethanol stress, HSR genes reposition and Hsf1 condensates form well before transcription of Hsf1-dependent genes peaks, and in certain cases, is even detected. This suggests that Hsf1 has a function distinct from transactivating its target genes: it drives HSR gene repositioning that culminates in their physical coalescence. Likewise, deletion of the N-terminal IDR (NTA, amino acids 2–146; see Figure 8A) was observed to have little effect on HSR gene transcription during an acute heat shock yet formation of Hsf1 condensates and intergenic 3C interactions were suppressed (Chowdhary et al., 2022). Furthermore, as discussed above, recruitment of Hsf1 to its target HSEs is delayed in response to ES versus HS. Nevertheless, formation of Hsf1 condensates occurs with similar kinetics under both conditions, well prior to the peak of Hsf1 DNA binding in ES cells. This suggests the possibility that two types of Hsf1 clusters exist: one that is DNA-bound (detected by ChIP) and the other that hovers over the HSR genes (detected by imaging). It is possible that this cloud-forming Hsf1 cluster aids in target searching, by analogy with Gal4 that can also form clusters without binding DNA (Meeussen et al., 2023).
 
-## Conclusion
+### Conclusion
 
 While Hsf1 is known to induce interactions between transcriptionally active HSR genes in response to heat shock, here we have demonstrated a similar role for this transcription factor in response to ethanol stress. Despite minimal HSR gene transcription during the initial 10 min exposure to ethanol, HSR genes engage in robust physical interactions, rivaling those seen for 2.5 min HS. This interaction correlates with an increase in definition of Hsf1 condensates yet is not accompanied by concurrent recruitment of Pol II to promoters, perhaps due to the compaction of chromatin in ethanol-stressed cells. Hsf1 therefore forms condensates and drives 3D repositioning of its target genes without appreciably activating these genes. Furthermore, Hsf1 does this through formation of condensates that may be materially different than those that form in response to HS. Our results thus argue that Hsf1 condensate formation, while sufficient for TF DNA binding and 3D genome restructuring, is not sufficient to drive transcription. Additional factors and/or activities – such as the opening of chromatin – are necessary. Further research into the biophysical properties, molecular regulation, and functional consequences of HSF1 condensates will deepen our understanding of how cells respond to both thermal and chemical stress and maintain cellular homeostasis.
 
 ## Materials and methods
 
-## Yeast strain construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (S. cerevisiae)</td>
+      <td>BY4741</td>
+      <td>Research Genetics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (S. cerevisiae)</td>
+      <td>W303-1B</td>
+      <td>Rodney Rothstein</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFA6a-link-ymNeonGreen-SpHis5 plasmid</td>
+      <td>Addgene</td>
+      <td>Cat# 125704RRID:Addgene_125704</td>
+      <td>PMID:30783202</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGZ154 plasmid</td>
+      <td>C.K. Govind, University of Oakland</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHyg-AID*–9myc</td>
+      <td>Addgene</td>
+      <td>Cat# 99518RRID:Addgene_99518</td>
+      <td>PMID:23836714</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Indole-3-acetic acid (IAA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# I3750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium azide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# S2002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethanol</td>
+      <td>Decon Labs</td>
+      <td>Cat# 04-355-223</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phenylmethylsulfonyl fluoride (PMSF)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P7626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Phenol:Chloroform:Isoamyl Alcohol mixture</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 77617</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formaldehyde</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# 14-650-250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycine</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1610724</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Protein A-Sepharose beads</td>
+      <td>GE Healthcare (Cytiva)</td>
+      <td>Cat# 17096303</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High-Capacity cDNA Reverse Transcription Kit</td>
+      <td>Applied Biosystems</td>
+      <td>Cat# 4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iTaq Universal SYBR Green Supermix</td>
+      <td>BioRad Laboratories</td>
+      <td>Cat# 1725125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Btn2 (rabbit polyclonal)</td>
+      <td>Bernd Bukau, University of Heidelberg</td>
+      <td></td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cMyc (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-40RRID:AB_627268</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Histone H3 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab1719</td>
+      <td>WB (1:1000)ChIP (1 µL/rxn)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Hsf1 (rabbit polyclonal)</td>
+      <td>PMID:8943356</td>
+      <td></td>
+      <td>ChIP (1.5 µL/rxn); Gross Lab</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Hsp104 (rabbit polyclonal)</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat# ADI-SPA-1040-FRRID:AB_11181448</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pgk1 (mouse monoclonal)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Cat# 459250RRID:AB_2532235</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rpb1 (rabbit polyclonal)</td>
+      <td>PMID:16199876</td>
+      <td></td>
+      <td>ChIP (1.5 µL/rxn); Gross Lab</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse, Horseradish peroxidase conjugated (goat)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-2005RRID:AB_631736</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Concanavalin A</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C2010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TaqI restriction enzyme</td>
+      <td>New England Biolabs</td>
+      <td>Cat# R0149L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick Ligation Kit</td>
+      <td>New England Biolabs</td>
+      <td>Cat# M2200L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI/ImageJ</td>
+      <td>https://imagej.net/software/fiji/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>https://imaris.oxinst.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IUPRED2</td>
+      <td>https://iupred2a.elte.hu/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>VAHEAT device</td>
+      <td>Interherence GmbH</td>
+      <td></td>
+      <td>Temperature controller for live cell imaging</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strain construction
 
 The HSF1-mNeonGreen (HSF1-mNG) diploid strain LRY033 expressing a yeast-optimized version of mNeonGreen, derived from Branchiostoma lanceolatum (Shaner et al., 2013), and co-expressing Sis1-mKate and Hsp104-BFP (Blue Fluorescent Protein; mTagBFP2) was created as follows. First, DPY1561 (Feder et al., 2021) was crossed to W303-1B to create strain LRY031. This diploid was sporulated and a strain homozygous for HSF1 and retention of one allele each of SIS-mKate and HSP104-mTagBFP2 was obtained after back crossing. The resultant diploid was named LRY032. LRY032 was transformed with a PCR amplicon containing 50 bp of homology sequences flanking the HSF1 stop codon, targeting the mNG tag to HSF1 at its C-terminus flanked by the HIS3 selectable marker. The plasmid template for this amplification was pFA6a-link-ymNeonGreen-SpHis5 (Botman et al., 2019). LRY033 is heterozygous for HSF1-mNG, SIS1-mKate and HSP104-mTagBFP2.
 
@@ -132,53 +476,51 @@ Other strains were created as follows. LRY037 was constructed using the HSF1-tar
 
 A complete list of strains as well as plasmids and primers used in strain construction are listed in Supplementary file 1a, b, and c.
 
-## Yeast culture and treatment conditions
+### Yeast culture and treatment conditions
 
 Cells were grown at 30°C in YPDA (1% w/v yeast extract, 2% w/v peptone, 2% w/v dextrose and 20 mg/L adenine) to mid-log density (OD600=0.6–0.8). For ethanol stress, the cell culture was mixed with an equal volume of YPDA containing 17% v/v ethanol (yielding a final concentration of 8.5%) and incubated at 25°C for different lengths of time as indicated in the figures. For heat shock, the mid-log culture was mixed with an equal volume of 55°C YPDA medium to achieve an instantaneous temperature upshift to 39°C, and the culture was maintained at 39°C for the indicated times. The no stress samples were diluted with an equivalent volume of YPDA and maintained at 25°C. Samples were kept at their respective temperatures using a water bath with constant shaking.
 
-## Cell viability and growth assays
+### Cell viability and growth assays
 
-## Cell viability assay
+#### Cell viability assay
 
 Cells were grown at 30°C in YPDA to OD600=0.6 and then diluted to OD600=0.4 using an equivalent volume of medium as described above for ethanol stress, heat shock or the no stress control (YPDA at 25°C). Cells were kept under these conditions for 3 hr; during this time aliquots were taken at different timepoints and diluted 1:26,000 for plating onto YPDA. Plates were incubated at 30°C for 3 days then scanned. Colonies were quantified using ImageJ/Fiji (v. 1.53t) (Schindelin et al., 2012) - ‘Analyze Particles’ option. The number of colony-forming units (CFUs) obtained in stress samples were normalized to the no stress samples and expressed as a percentage of the number of CFUs obtained in the no stress sample.
 
-## Growth assay
+### Growth assay
 
 Cells were grown in liquid culture and subjected to the same treatments as described above. OD600 readings of each sample were taken at intervals over 3 hr (see Figure 1). The average OD600 from two samples was plotted versus time.
 
-## Spot dilution
+### Spot dilution
 
 Spot dilution was conducted as described previously (Rubio and Gross, 2023).
 
-## Auxin-induced degradation
+### Auxin-induced degradation
 
 Cells expressing the F-box protein osTIR1 in combination with a degron-tagged protein were grown in YPDA medium to mid-log phase and indole-3-acetic acid (IAA) was then added to a final concentration of 1 mM. IAA stocks (10 mg/mL [57 mM]) were prepared fresh in 95% ethanol and filter-sterilized before use. For immunoblot analysis, cells were treated for varying times up to 1 hr prior to metabolic arrest achieved through addition of sodium azide to a final concentration of 20 mM, followed by cell harvesting. 0 min control samples were treated with vehicle alone (1.7% v/v ethanol). For growth curve analysis, samples were kept at 30°C with constant shaking and aliquots were removed at various timepoints to monitor OD600. For 3C analysis, cells were similarly grown in YPDA to OD600=0.6, then treated with 1 mM IAA for either 30 min (LRY016 and LRY100) or 40 min (LRY102) prior to cell cross-linking and subsequent cell harvesting.
 
-## Reverse transcription-qPCR (RT-qPCR)
+### Reverse transcription-qPCR (RT-qPCR)
 
 RT-qPCR was conducted as previously described using 25 mL cell culture aliquots (Rubio and Gross, 2023). Transcription was terminated via addition of sodium azide to a final concentration of 20 mM (Lee and Garrard, 1991). PCR primers used are listed in Supplementary file 1d.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Immunoblotting was performed as previously reported using 20 mL cell culture aliquots (Rubio and Gross, 2023).
 
-## Chromatin immunoprecipitation
+### Chromatin immunoprecipitation
 
 Chromatin immunoprecipitation was performed as previously described (Chowdhary et al., 2019) with modifications. Briefly, cells from a 50 mL mid-log culture were exposed to 8.5% v/v ethanol for 0, 2.5, 10, 20 or 60 min and then fixed using 3.01% formaldehyde (HCHO), resulting in a net concentration of 1%. Glycine was then added to 0.363 M to quench excess formaldehyde. We note that HCHO is consumed in a reaction with ethanol. Since 8.5% ethanol equals 1.46 M, acetal formation at 1:2 stoichiometry consumes 0.730 M (2.01%) of HCHO, leaving an effective concentration of 0.363 M (1%). The reaction resulting in formation of an acetal is illustrated in Figure 11.
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/92464/elife-92464-fig11-v1.jpg)
 
-**Figure 11.:** McMurry, 2012).
-
 For heat shock, cells from a 50 mL mid-log culture were fixed with 1% (0.363 M) formaldehyde following 39°C upshift for the times indicated (Figure 4; Figure 4—figure supplements 1 and 2). Glycine was then added at a final concentration of 0.363 M to quench unreacted formaldehyde. Chromatin lysates, prepared as previously described (Chowdhary et al., 2019), were incubated using 20% of the lysate with one of the following antibodies: 1.5 µL of anti-Hsf1 (Erkine et al., 1996), 1.5 µL anti-Rpb1 antiserum (Zhao et al., 2005), or 1 µL of H3 antibody (Abcam, ab1791). Incubation of lysate with antibody was done for 16 hr at 4°C. Chromatin fragments bound to antibody were captured on Protein A-Sepharose beads (GE Healthcare) for 16 hr at 4°C. Wash, elution, and DNA purification were conducted as described (Chowdhary et al., 2019). The ChIP DNA template was quantified by qPCR (7900HT Fast Real Time PCR System, Applied Biosystems). A standard curve was generated using genomic DNA and ChIP DNA quantities were deduced by interpolation. The qPCR signal for each primer combination was normalized relative to the corresponding signal arising from the input DNA. Primers used in ChIP analysis are listed in Supplementary file 1e.
 
-## Taq I chromosome conformation capture (Taq I-3C)
+### Taq I chromosome conformation capture (Taq I-3C)
 
 TaqI-3C was performed as previously described (Rubio and Gross, 2023). A master cell culture was grown at 30°C in YPDA from OD600=0.15 to a final OD600=0.8. Aliquots of 50 mL were used for each condition. Heat shock and ethanol stress were conducted as described above. Primers for analysis of 3C templates are listed Supplementary file 1f.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
-## Widefield fluorescence microscopy
+#### Widefield fluorescence microscopy
 
 For Figure 7—figure supplement 1B, C and Figure 8, cells were grown at 30°C in Synthetic Complete Dextrose (SDC) medium supplemented with 0.1 mg/mL adenine to early log phase. From this culture, 90 µL were removed and cells were immobilized onto a concanavalin A (ConA, Sigma Aldrich, 100 μg/mL in ddH2O)-coated coverslip for 20 min. For ethanol stress, the medium was then removed and replaced by either SDC or SDC +8.5% v/v ethanol. The coverslip was mounted onto a concave microscope slide to reduce media evaporation (2-Well Concavity Slide, Electron Microscopy Sciences). Images were acquired using an AX70 Olympus epifluorescence microscope across 11 z-planes with 0.5 µm of interplanar distance. Filter set 89021 (Chroma Technology) and a Photometrics Prime 95B camera were used to image GFP and mCherry. SlideBook Software version 6.0.15 (Intelligent Imaging Innovations) was used for image capturing and z-axis stepping motor operation (Ludl Electronic products).
 
@@ -186,18 +528,18 @@ For heat shock, no stress (NS) control images were taken using an Olympus Ach 10
 
 In the HSP104-TMA10 coalescence analysis, cells in which the fluorophore-tagged genes had undergone replication (two green or two red fluorescent spots, indicative of late S/G2 phase) were excluded from the analysis. The locations of the two tagged loci were analyzed over 11 different z-planes, encompassing the whole nucleus. Cells were deemed coalescence positive if they displayed colocalized, non-resolvable fluorophore signals with a distance of <0.4 µm between centroids.
 
-## Spinning disk confocal microscopy
+#### Spinning disk confocal microscopy
 
 For all other imaging, cells were grown as described above and image acquisition was done using an UPlan Apo 100 x/1.50 NA objective in an Olympus Yokogawa CSU W1 Spinning Disk Confocal System coupled to sCMOS cameras (Hamamatsu Fusion) controlled by cellSens Dimension software. A 50 µm pinhole disk was used for imaging in combination with 10% of laser power employed for excitation using 405 nm, 488 nm, and 561 nm lasers. Z-stacks were captured as for widefield fluorescence. For heat shock, cells were attached to a VAHEAT substrate (Interherence GmbH, Germany) (Icha et al., 2022) using ConA as above. The substrate was mounted onto the VAHEAT holder and control images were captured before heat was applied. Samples were instantaneously heated to 39° or 42°C. The substrate reservoir was covered with a coverslip to prevent media evaporation. Imaging was done over multiple timepoints as indicated in the figures. For ethanol stress, cells were mounted onto a coverslip as above, petroleum jelly was used to hold the coverslip against the concave slide and to reduce media evaporation. The slide was inverted and placed on the stage for visualization at room temperature.
 
-Image reconstruction and analysis were done using FIJI/ImageJ (v. 1.53t) (Schindelin et al., 2012). Hsp104-BFP (LRY033) and Hsf1-mNeonGreen (LRY040) foci count were performed using the ‘Cells’ feature in Imaris (v.10.0.0). The background fluorescence was used to delimit the region of interest (ROI). This ROI was then used to quantify the number of foci per cell. For Hsp104, the ROI (whole cell) was delimited to volumes between 20 and 140 μµm3 (Uchida et al., 2011). Foci size was measured to an average of 0.4 μµm in diameter, which was used to train Imaris to recognize foci of distinct sizes (‘Different Spot Sizes [Region Growing]’ option). A similar approach was taken to identify the nucleus (as the cell) and the Hsf1 foci (as nucleus) using the ‘Cells’ feature in Imaris. Nuclei with volume of 10 μµm3 ±3.7 μµm3 were used for the analysis (Larson et al., 2011). Data obtained from these analyses were plotted using GraphPad Prism 8. Plot profile for signal arising from Hsf1-mNeonGreen, Sis1-mKate, and Hsp104-BFP was done using FIJI/ImageJ (v. 1.53t).
+Image reconstruction and analysis were done using FIJI/ImageJ (v. 1.53t) (Schindelin et al., 2012). Hsp104-BFP (LRY033) and Hsf1-mNeonGreen (LRY040) foci count were performed using the ‘Cells’ feature in Imaris (v.10.0.0). The background fluorescence was used to delimit the region of interest (ROI). This ROI was then used to quantify the number of foci per cell. For Hsp104, the ROI (whole cell) was delimited to volumes between 20 and 140 μ$µm^{3}$ (Uchida et al., 2011). Foci size was measured to an average of 0.4 μ$µm$ in diameter, which was used to train Imaris to recognize foci of distinct sizes (‘Different Spot Sizes [Region Growing]’ option). A similar approach was taken to identify the nucleus (as the cell) and the Hsf1 foci (as nucleus) using the ‘Cells’ feature in Imaris. Nuclei with volume of 10 μ$µm^{3}$ ±3.7 μ$µm^{3}$ were used for the analysis (Larson et al., 2011). Data obtained from these analyses were plotted using GraphPad Prism 8. Plot profile for signal arising from Hsf1-mNeonGreen, Sis1-mKate, and Hsp104-BFP was done using FIJI/ImageJ (v. 1.53t).
 
 For analysis of transcription, 24xMS2-HSP104 mRNA was visualized using the signal arising from MCP-mCherry binding to the chimeric transcript. Cells were interrogated for transcription by assaying the presence of an mCherry focus adjacent to HSP104-LacO256 bound by LacI-GFP. The brightest voxel next to HSP104 was used as a proxy for the intensity of transcription and plotted for each cell over the different timepoints. Intensity was measured using FIJI/ImageJ (v. 1.53t) and plotted employing GraphPad Prism 8.
 
-## Statistical tests
+### Statistical tests
 
 The statistical significance of the differences in mean values for a variety of assays was determined as specified in the figure legends using GraphPad Prism 8.
 
-## Materials availability statement
+### Materials availability statement
 
 Yeast strains, plasmids and antibodies are available upon request. All data generated in this study are presented in the manuscript, source data, and supplementary files.

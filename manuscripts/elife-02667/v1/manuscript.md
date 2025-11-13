@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.02667.001 We elucidate the molecular mechanisms of two distinct activation strategies (autophosphorylation and TPX2-mediated activation) in human Aurora A kinase. Classic allosteric activation is in play where either activation loop phosphorylation or TPX2 binding to a conserved hydrophobic groove shifts the equilibrium far towards the active conformation. We resolve the controversy about the mechanism of autophosphorylation by demonstrating intermolecular autophosphorylation in a long-lived dimer by combining X-ray crystallography with functional assays. We then address the allosteric activation by TPX2 through activity assays and the crystal structure of a domain-swapped dimer of dephosphorylated Aurora A and TPX2 1−25 . While autophosphorylation is the key regulatory mechanism in the centrosomes in the early stages of mitosis, allosteric activation by TPX2 of dephosphorylated Aurora A could be at play in the spindle microtubules. The mechanistic insights into autophosphorylation and allosteric activation by TPX2 binding proposed here, may have implications for understanding regulation of other protein kinases. DOI: http://dx.doi.org/10.7554/eLife.02667.001
+We elucidate the molecular mechanisms of two distinct activation strategies (autophosphorylation and TPX2-mediated activation) in human Aurora A kinase. Classic allosteric activation is in play where either activation loop phosphorylation or TPX2 binding to a conserved hydrophobic groove shifts the equilibrium far towards the active conformation. We resolve the controversy about the mechanism of autophosphorylation by demonstrating intermolecular autophosphorylation in a long-lived dimer by combining X-ray crystallography with functional assays. We then address the allosteric activation by TPX2 through activity assays and the crystal structure of a domain-swapped dimer of dephosphorylated Aurora A and TPX21−25. While autophosphorylation is the key regulatory mechanism in the centrosomes in the early stages of mitosis, allosteric activation by TPX2 of dephosphorylated Aurora A could be at play in the spindle microtubules. The mechanistic insights into autophosphorylation and allosteric activation by TPX2 binding proposed here, may have implications for understanding regulation of other protein kinases.
 
 ## Introduction
 
@@ -30,37 +30,37 @@ A second puzzling result has also been reported recently. It was shown that in v
 
 ## Results and discussion
 
-## Phosphorylation of T288 in Aurora A or TPX2 binding results in comparable increases in catalytic activity
+### Phosphorylation of T288 in Aurora A or TPX2 binding results in comparable increases in catalytic activity
 
-While it is generally accepted that phosphorylation of a Ser/Thr in the activation loop activates Ser/Thr kinases, this regulation has not been characterized quantitatively. Part of the difficulty consists in obtaining a dephosphorylated protein, since
+While it is generally accepted that phosphorylation of a Ser/Thr in the activation loop activates Ser/Thr kinases, this regulation has not been characterized quantitatively. Part of the difficulty consists in obtaining a dephosphorylated protein, since Escherichia coli-produced kinases are heavily phosphorylated due to autophosphorylation and phosphorylation by E. coli kinases during expression (Enami and Ishihama, 1984) (Figure 1A).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/02667/elife-02667-fig1-v1.jpg)
 
-**Figure 1.:** 1−45 drastically accelerates the kinetics of the dephosphorylated form of Aurora A kinase.(A) Mass spectrometry data of heavily phosphorylated (P) and dephosphorylated (deP) Aurora A. The dephosphorylated protein was obtained after treatment of heavily phosphorylated, Escherichia coli-produced Aurora A with λ-protein phosphatase (λPP). (B) AP phosphorylation by dephosphorylated (, 0.01 ± 0.005 s−1) or T288V mutant Aurora A (, 0.05 ± 0.002 s−1) is increased by up to 50-fold (, 0.5 ± 0.1 s−1) and 25-fold (, 1.2 ± 0.1 s−1), respectively, in the presence of TPX21−45. This rate is comparable to the kinetics of phosphorylated Aurora A in the absence of TPX21−45 (, 1.0 ± 0.2 s−1). Phosphorylated Aurora A shows up to a twofold increase in AP kinetics in the presence of TPX21−45 (, 2.3 ± 0.2 s−1). Reactions are carried out in the presence of 1 μM protein, 50 μM TPX21−45, 5 mM ATP, and 1 mM AP in assay buffer (20 mM TrisHCl, 200 mM NaCl, 20 mM MgCl2, 3% (vol/vol) glycerol, 1 mM TCEP, pH 7.50) at 25°C. Phosphorylated peptide production was monitored by reverse phase-high performance liquid chromatography (RP-HPLC).DOI: http://dx.doi.org/10.7554/eLife.02667.003
+**Figure 1.:** (A) Mass spectrometry data of heavily phosphorylated (P) and dephosphorylated (deP) Aurora A. The dephosphorylated protein was obtained after treatment of heavily phosphorylated, Escherichia coli-produced Aurora A with λ-protein phosphatase (λPP). (B) AP phosphorylation by dephosphorylated (, 0.01 ± 0.005 s−1) or T288V mutant Aurora A (, 0.05 ± 0.002 s−1) is increased by up to 50-fold (, 0.5 ± 0.1 s−1) and 25-fold (, 1.2 ± 0.1 s−1), respectively, in the presence of TPX21−45. This rate is comparable to the kinetics of phosphorylated Aurora A in the absence of TPX21−45 (, 1.0 ± 0.2 s−1). Phosphorylated Aurora A shows up to a twofold increase in AP kinetics in the presence of TPX21−45 (, 2.3 ± 0.2 s−1). Reactions are carried out in the presence of 1 μM protein, 50 μM TPX21−45, 5 mM ATP, and 1 mM AP in assay buffer (20 mM TrisHCl, 200 mM NaCl, 20 mM MgCl2, 3% (vol/vol) glycerol, 1 mM TCEP, pH 7.50) at 25°C. Phosphorylated peptide production was monitored by reverse phase-high performance liquid chromatography (RP-HPLC).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/02667/elife-02667-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** To ensure peptide and nucleotide would not be rate-limiting, (A) the KM for AP was determined to be 116 ± 70 μM for phosphorylated Aurora A (left) and 320 ± 150 μM for dephosphorylated-mimic, T288V mutant Aurora A (right) and (B) the kinetics of 10 μM Aurora A T288V were monitored under 1 mM AP at 5 mM ATP (, 0.0054 s−1) and 15 mM ATP (, 0.0055 s−1) as well as 2 mM AP and 15 mM ATP (, 0.0056 s−1). In each case, the kinetics of AP phosphorylation were identical within experimental error. Since the KM for ATP for WT Aurora A is about 10 μM (Kelly et al., 2011), all following kinetic reactions were run at 5 mM ATP (20 mM TrisHCl, 200 mM NaCl, 20 mM MgCl2, 3% [vol/vol] glycerol, 1 mM TCEP, pH 7.50) at 25°C. Phosphorylated peptide production was monitored by reverse phase-high performance liquid chromatography (RP-HPLC).DOI: http://dx.doi.org/10.7554/eLife.02667.004
+**Figure 1—figure supplement 1.:** To ensure peptide and nucleotide would not be rate-limiting, (A) the KM for AP was determined to be 116 ± 70 μM for phosphorylated Aurora A (left) and 320 ± 150 μM for dephosphorylated-mimic, T288V mutant Aurora A (right) and (B) the kinetics of 10 μM Aurora A T288V were monitored under 1 mM AP at 5 mM ATP (, 0.0054 s−1) and 15 mM ATP (, 0.0055 s−1) as well as 2 mM AP and 15 mM ATP (, 0.0056 s−1). In each case, the kinetics of AP phosphorylation were identical within experimental error. Since the KM for ATP for WT Aurora A is about 10 μM (Kelly et al., 2011), all following kinetic reactions were run at 5 mM ATP (20 mM TrisHCl, 200 mM NaCl, 20 mM MgCl2, 3% [vol/vol] glycerol, 1 mM TCEP, pH 7.50) at 25°C. Phosphorylated peptide production was monitored by reverse phase-high performance liquid chromatography (RP-HPLC).
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/02667/elife-02667-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** The rates are 0.93 s−1 and 0.97 s−1, respectively. To obtain singly phosphorylated Aurora A (1P_AurA) , dephosphorylated protein was autophosphorylated in the presence of ATP and a final concentration of 1 μM of this protein was used for the assay described here. Aurora A phosphorylated on multiple sites (mP_AurA) was obtained through classic expression in Escherichia coli cells (see Figure 1A). Reactions were carried out in the presence of 5 mM ATP and 1 mM AP in assay buffer at 25°C.DOI: http://dx.doi.org/10.7554/eLife.02667.005
+**Figure 1—figure supplement 2.:** The rates are 0.93 s−1 and 0.97 s−1, respectively. To obtain singly phosphorylated Aurora A (1P_AurA) , dephosphorylated protein was autophosphorylated in the presence of ATP and a final concentration of 1 μM of this protein was used for the assay described here. Aurora A phosphorylated on multiple sites (mP_AurA) was obtained through classic expression in Escherichia coli cells (see Figure 1A). Reactions were carried out in the presence of 5 mM ATP and 1 mM AP in assay buffer at 25°C.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/02667/elife-02667-fig1-figsupp3-v1.jpg)
 
-**Figure 1—figure supplement 3.:** 1−45.In the experiments aimed at measuring activity of AP phosphorylation of dephosphorylated Aurora A (Figure 1B), autophosphorylation can occur during the time-course of the reaction. Therefore autophosphorylation of 1 μM Aurora A in the presence of 1 mM AP and 5 mM ATP and in the absence or presence of 50 μM TPX21−45 was monitored simultaneously with AP phosphorylation. Densitometry analysis (left) of raw Western blot data (right) is shown. To account for Aurora A's dynamic range, time points up to 300 s were diluted 50× and the rest of the time points were diluted 225×. The amount of phosphorylated protein made during the reaction accounts for only 10% of the detected rate acceleration of AP phosphorylation in the presence of TPX2.DOI: http://dx.doi.org/10.7554/eLife.02667.006
+**Figure 1—figure supplement 3.:** In the experiments aimed at measuring activity of AP phosphorylation of dephosphorylated Aurora A (Figure 1B), autophosphorylation can occur during the time-course of the reaction. Therefore autophosphorylation of 1 μM Aurora A in the presence of 1 mM AP and 5 mM ATP and in the absence or presence of 50 μM TPX21−45 was monitored simultaneously with AP phosphorylation. Densitometry analysis (left) of raw Western blot data (right) is shown. To account for Aurora A's dynamic range, time points up to 300 s were diluted 50× and the rest of the time points were diluted 225×. The amount of phosphorylated protein made during the reaction accounts for only 10% of the detected rate acceleration of AP phosphorylation in the presence of TPX2.
 
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/02667/elife-02667-fig1-figsupp4-v1.jpg)
 
-**Figure 1—figure supplement 4.:** 1−45 drastically accelerates the kinetics of the dephosphorylated-like Aurora A species irrespective of the nature of the peptide used.TPX2 increases the kinetics of the dephosphorylated-protein mimic (T288V mutant) towards the peptides AP (APSSRRTTLCGTL) (left), Kemptide (LRRASLG) (middle), and Lats2373−387 (ATLARRDSLQKPGLE) (right) between 20- and 30-fold. Lats2 is an Aurora A substrate important in centrosome maturation, and Kemptide is a synthetic construct generally used as a substrate of cAMP-dependent protein kinase A (PKA), a protein closely related to Aurora A. Reactions are carried out in the presence of 5 mM ATP and 1 mM peptide in assay buffer at 25°C. A longer TPX2 variant (TPX21−147) was used as control to ensure full capture of TPX2 activity by the shorter variant (TPX21−45). P: phosphorylated.DOI: http://dx.doi.org/10.7554/eLife.02667.007
+**Figure 1—figure supplement 4.:** TPX2 increases the kinetics of the dephosphorylated-protein mimic (T288V mutant) towards the peptides AP (APSSRRTTLCGTL) (left), Kemptide (LRRASLG) (middle), and Lats2373−387 (ATLARRDSLQKPGLE) (right) between 20- and 30-fold. Lats2 is an Aurora A substrate important in centrosome maturation, and Kemptide is a synthetic construct generally used as a substrate of cAMP-dependent protein kinase A (PKA), a protein closely related to Aurora A. Reactions are carried out in the presence of 5 mM ATP and 1 mM peptide in assay buffer at 25°C. A longer TPX2 variant (TPX21−147) was used as control to ensure full capture of TPX2 activity by the shorter variant (TPX21−45). P: phosphorylated.
 
 ![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/02667/elife-02667-fig1-figsupp5-v1.jpg)
 
-**Figure 1—figure supplement 5.:** These traces (A) show well resolved non-phosphorylated and phosphorylated peptide peaks at different reaction time points. (B) Screenshot of time traces for AP_T287E (left) and AP_T288E (right) phosphorylation show that Aurora A selectively phosphorylates AP on T288. Assays were carried out in the presence of 1 μM phosphorylated Aurora A, 1 mM AP or 1 mM AP_T287E or AP_T288E, 5 mM ATP, at 25°C in kinase assay buffer (20 mM TrisHCl, 200 mM NaCl, 20 mM MgCl2, 3% glycerol, 1 mM TCEP, pH 7.50).DOI: http://dx.doi.org/10.7554/eLife.02667.008
+**Figure 1—figure supplement 5.:** These traces (A) show well resolved non-phosphorylated and phosphorylated peptide peaks at different reaction time points. (B) Screenshot of time traces for AP_T287E (left) and AP_T288E (right) phosphorylation show that Aurora A selectively phosphorylates AP on T288. Assays were carried out in the presence of 1 μM phosphorylated Aurora A, 1 mM AP or 1 mM AP_T287E or AP_T288E, 5 mM ATP, at 25°C in kinase assay buffer (20 mM TrisHCl, 200 mM NaCl, 20 mM MgCl2, 3% glycerol, 1 mM TCEP, pH 7.50).
 
 ![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/02667/elife-02667-fig1-figsupp6-v1.jpg)
 
-**Figure 1—figure supplement 6.:** 1−147 on the phosphorylation kinetics of AP by Aurora A T288V.The calculated KA = 1.0 ± 0.5 μM compared well with the KD = 1.1 ± 0.1 μM obtained from ITC data (Figure 7A). Assays were carried out in the presence of 1 μM Aurora A T288V, 1 mM AP, increasing concentrations of TPX21−147, 5 mM ATP, at 25°C in kinase assay buffer (20 mM TrisHCl, 200 mM NaCl, 20 mM MgCl2, 3% glycerol, 1 mM TCEP, pH 7.50).DOI: http://dx.doi.org/10.7554/eLife.02667.009
+**Figure 1—figure supplement 6.:** The calculated KA = 1.0 ± 0.5 μM compared well with the KD = 1.1 ± 0.1 μM obtained from ITC data (Figure 7A). Assays were carried out in the presence of 1 μM Aurora A T288V, 1 mM AP, increasing concentrations of TPX21−147, 5 mM ATP, at 25°C in kinase assay buffer (20 mM TrisHCl, 200 mM NaCl, 20 mM MgCl2, 3% glycerol, 1 mM TCEP, pH 7.50).
 
 Aurora A was co-expressed with the generic Ser/Thr/Tyr phosphatase lambda (λPP) and treated again with λPP after purification to ensure complete dephosphorylation (Figure 1A). We then measured the enzymatic activity of phosphorylated versus dephosphorylated Aurora A towards AP, a peptide encompassing residues 281–293 of the kinase's activation segment. The experiments were conducted under saturating conditions of peptide, ATP, and Mg2+, and we ensured that the singly and heavily phosphorylated kinases exhibited similar kinetics (Figure 1—figure supplement 1 and 2).
 
@@ -68,13 +68,161 @@ Phosphorylated Aurora A catalyzes AP phosphorylation 100-fold faster than the de
 
 Does TPX2 activate Aurora A to the same extent as phosphorylation or are both activation mechanisms additive? We used TPX21−45 in our studies since this fragment was shown to be sufficient for kinase activation (Bayliss et al., 2003; Brunet et al., 2004). Our data suggest the first scenario since AP phosphorylation is stimulated by 50- and 25-fold by TPX21−45 for the dephosphorylated Aurora A and T288V Aurora A, respectively (Figure 1B). The rates of dephosphorylated Aurora A plus TPX21−45 are comparable to that of phosphorylated Aurora A alone. Addition of TPX2 to phosphorylated Aurora A results in only a twofold increase in kcat. This effect is independent of the nature of the peptide used (Figure 1–figure supplement 4).
 
-## Dephosphorylated Aurora A kinase is in the active conformation when bound to TPX21−45
+### Dephosphorylated Aurora A kinase is in the active conformation when bound to TPX21−45
 
-Having shown kinetically that TPX2 is sufficient to activate dephosphorylated Aurora A similarly to T288 phosphorylation, we next studied the underlying molecular mechanism. We first solved the crystal structure of dephosphorylated Aurora A in the absence and presence of TPX2
+Having shown kinetically that TPX2 is sufficient to activate dephosphorylated Aurora A similarly to T288 phosphorylation, we next studied the underlying molecular mechanism. We first solved the crystal structure of dephosphorylated Aurora A in the absence and presence of TPX21−45 and bound to an ATP-mimic (β,γ-methyleneadenosine 5′ triphosphate, AMPPCP). The AMPPCP-bound, dephosphorylated Aurora A is monomeric and in an inactive conformation, similar to previously solved structures of the same protein bound to adenosine (PDB ID 1MUO [Cheetham et al., 2002]) or AMPPNP (PDB ID 2C6D [Heron et al., 2006]). In contrast, the TPX2-bound Aurora A structure reveals a dimer made by two molecules of Aurora A, TPX2, and AMPPCP in the asymmetric unit (Figure 2A, Table 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/02667/elife-02667-fig2-v1.jpg)
 
-**Figure 2.:** 1−45.(A) Dephosphorylated Aurora A + TPX21−45 + AMPPCP and (B) superposition of Aurora A moieties. (C) A detailed view of structural elements that define an active Aurora A kinase: the nucleotide binding region (top inset) and the regulatory spine (bottom inset). Dephosphorylated (deP) Aurora A in the presence of TPX2 (red, PDB ID 4C3P) superposes very well to the phosphorylated (P) Aurora A either in the absence (orange, PDB ID 1OL7) or presence of TPX2 (yellow, PDB ID 1OL5). For comparison, dephosphorylated Aurora A alone (light blue, PDB ID 4C3R) shows the characteristic features of an inactive kinase.DOI: http://dx.doi.org/10.7554/eLife.02667.010
+**Figure 2.:** (A) Dephosphorylated Aurora A + TPX21−45 + AMPPCP and (B) superposition of Aurora A moieties. (C) A detailed view of structural elements that define an active Aurora A kinase: the nucleotide binding region (top inset) and the regulatory spine (bottom inset). Dephosphorylated (deP) Aurora A in the presence of TPX2 (red, PDB ID 4C3P) superposes very well to the phosphorylated (P) Aurora A either in the absence (orange, PDB ID 1OL7) or presence of TPX2 (yellow, PDB ID 1OL5). For comparison, dephosphorylated Aurora A alone (light blue, PDB ID 4C3R) shows the characteristic features of an inactive kinase.
+
+**Table 1.**
+ Data collection and refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>deP Aurora A + AMPPCP</th>
+      <th>deP Aurora A + AMPPCP + TPX2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P 61 2 2</td>
+      <td>P 21 21 21</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>83.47, 83.47, 172.63</td>
+      <td>49.93, 86.72, 153.55</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 90, 120</td>
+      <td>90, 90, 90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>86.3–2.79 (2.87–2.79)</td>
+      <td>86.7–2.69 (2.76–2.69)</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>0.08 (2.08)</td>
+      <td>0.26 (3.51)</td>
+    </tr>
+    <tr>
+      <td>I/σ</td>
+      <td>19.8 (1.8)</td>
+      <td>8.0 (2.3)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>100 (100)</td>
+      <td>100 (100)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>15.7 (16.7)</td>
+      <td>6.9 (7.2)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>55.4–2.79 (2.87–2.79)</td>
+      <td>47.5–2.69 (2.76–2.69)</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>8459</td>
+      <td>18104</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.221/0.306 (0.327/0.451)</td>
+      <td>0.201/0.289 (0.284/0.400)</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>2074</td>
+      <td>4574</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>31</td>
+      <td>67</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>0</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>B-factors</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>100.3</td>
+      <td>54.6</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>109.1</td>
+      <td>62.5</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>NA</td>
+      <td>43.3</td>
+    </tr>
+    <tr>
+      <td>R.m.s deviations</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.010</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.54</td>
+      <td>1.53</td>
+    </tr>
+    <tr>
+      <td>PDB ID</td>
+      <td>4C3R</td>
+      <td>4C3P</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values in parentheses correspond to the highest-resolution shell.deP: dephosphorylated; PBD, Protein Data Bank._
 
 Since the classic bilobal fold of protein kinases is by now well known from many elegant structural studies (Cheetham, 2002; Bayliss et al., 2003), and our structure in the absence of TPX2 does not provide new information, we will only discuss novel insights gained from the TPX2-bound dephosphorylated Aurora A dimer.
 
@@ -84,17 +232,17 @@ First, binding of TPX2 causes a slight rotation of the αC-helix towards the cat
 
 Second, movement of F275 initiates a cascade of side chain interactions that result in the completion of the regulatory spine originating from the αF-helix (R-spine; Figure 2C, bottom inset). Identification of the completed R-spine, a hallmark of an active kinase, is based on the Local Spatial Patterns (LSP) alignment, a bioinformatics tool developed by the Taylor laboratory (Kornev et al., 2008). From these structural features it appears that Aurora A, despite being dephosphorylated, is in an active conformation when bound to TPX2. We note that Bayliss et al. (2003) propose that the structure of phosphorylated Aurora A represents a partially active state because the authors interpret the activation segment to be in an inactive conformation as defined by the exposure of pThr288 to the solvent (Bayliss et al., 2003). We would rather interpret that structure as an active state based on all hallmarks for active kinases (Kornev et al., 2008), in agreement with our activity data (Figure 1B).
 
-## Does active, domain-swapped Aurora A dimer capture an enzyme/substrate complex for autophosphorylation?
+### Does active, domain-swapped Aurora A dimer capture an enzyme/substrate complex for autophosphorylation?
 
-The final signatures for an active state Ser/Thr kinase involve changes around the activation segment. Formation of the β6/β9 antiparallel β sheets, that are not present in the inactive kinase, prime the MgATP for catalysis together with the other conformational changes described above. Finally, the correct positioning of D256 for activating the hydroxyl of the substrate in active Aurora A is achieved by a hydrogen bond network to T292, which in turn H-bonds to K258 with distances shown in
+The final signatures for an active state Ser/Thr kinase involve changes around the activation segment. Formation of the β6/β9 antiparallel β sheets, that are not present in the inactive kinase, prime the MgATP for catalysis together with the other conformational changes described above. Finally, the correct positioning of D256 for activating the hydroxyl of the substrate in active Aurora A is achieved by a hydrogen bond network to T292, which in turn H-bonds to K258 with distances shown in Figure 3A. All these features are fully conserved among eukaryotic Ser/Thr kinases (Nolen and Taylor, 2004).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/02667/elife-02667-fig3-v1.jpg)
 
-**Figure 3.:** (A) Left: in the presence of TPX21−45, the N-terminal (β6 and β9 sheets) anchor point of the activation loop is present in both monomers whereas the C-terminal H-bond contacts typical for a fully active kinase (between D256/K258 and T292-OH) are only visible for the enzyme monomer in red, which we therefore define as the enzyme molecule. Right: for comparison, in the absence of TPX21−45, the N- and C-terminal anchor points are not present and the protein is in an inactive state. Interactions that further stabilize the swapped dimer (W313-P297/P298 and R371-E299) are shown in the bottom inset, highlighting that these intermolecular interactions (left) are identical to the corresponding intramolecular interactions (right). (B) The loop spanning residues 283–288 in monomer II, for which there was too weak electron density, was remodeled using the software Modeller and biased molecular dynamics. The loop can be arranged by TMD so that the distance between T288 of monomer II and γ-phosphate of AMPPCP of monomer I is compatible with phosphoryl transfer.DOI: http://dx.doi.org/10.7554/eLife.02667.012
+**Figure 3.:** (A) Left: in the presence of TPX21−45, the N-terminal (β6 and β9 sheets) anchor point of the activation loop is present in both monomers whereas the C-terminal H-bond contacts typical for a fully active kinase (between D256/K258 and T292-OH) are only visible for the enzyme monomer in red, which we therefore define as the enzyme molecule. Right: for comparison, in the absence of TPX21−45, the N- and C-terminal anchor points are not present and the protein is in an inactive state. Interactions that further stabilize the swapped dimer (W313-P297/P298 and R371-E299) are shown in the bottom inset, highlighting that these intermolecular interactions (left) are identical to the corresponding intramolecular interactions (right). (B) The loop spanning residues 283–288 in monomer II, for which there was too weak electron density, was remodeled using the software Modeller and biased molecular dynamics. The loop can be arranged by TMD so that the distance between T288 of monomer II and γ-phosphate of AMPPCP of monomer I is compatible with phosphoryl transfer.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/02667/elife-02667-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** The activation loop and αEF-helix of one of the monomers nestle between the αF- and αG-helices of the other monomer in the dimer structures. Shown are SLK phosphorylated or non-phosphorylated (PDB IDs 2JFL and 2J51, respectively, both bound to triazole inhibitor DKI), Chk2 (PDB ID 2CN5 bound to ADP), LOK (PDB ID 2 J7T bound to SU11274), DAPK3 (PDB ID 2J90 bound to pyridone 6), p70S6K1 (PDB ID 3A60 bound to staurosporine), and OSR1 (PDB ID 3DAK bound to AMPPNP). One monomer is shown in surface representation and the other in ribbon representation with bound nucleotides shown as sticks (pink). Angles between the monomers and dimeric interface contacts vary significantly.DOI: http://dx.doi.org/10.7554/eLife.02667.013
+**Figure 3—figure supplement 1.:** The activation loop and αEF-helix of one of the monomers nestle between the αF- and αG-helices of the other monomer in the dimer structures. Shown are SLK phosphorylated or non-phosphorylated (PDB IDs 2JFL and 2J51, respectively, both bound to triazole inhibitor DKI), Chk2 (PDB ID 2CN5 bound to ADP), LOK (PDB ID 2 J7T bound to SU11274), DAPK3 (PDB ID 2J90 bound to pyridone 6), p70S6K1 (PDB ID 3A60 bound to staurosporine), and OSR1 (PDB ID 3DAK bound to AMPPNP). One monomer is shown in surface representation and the other in ribbon representation with bound nucleotides shown as sticks (pink). Angles between the monomers and dimeric interface contacts vary significantly.
 
 Curiously, the last two hallmarks of the active state are created by a swap of the activation segments of Aurora A resulting in a dimer conformation that has not been previously reported for this protein. In the C-lobe, W313 that would typically interact with P297 and P298 in monomeric Aurora A, now interacts with the identical Pro residues of the other Aurora A monomer. Lastly, the E299–R371 salt bridge is also domain swapped (Figure 3A).
 
@@ -104,53 +252,53 @@ In contrast we find an asymmetric dimer within the unit cell with monomer I show
 
 As a first (and only crude) test of this hypothesis, we used targeted MD (TMD) simulations to model the target hydroxyl for autophosphorylation of the domain-swapped activation segment towards the γ-phosphate of AMPPCP (Figure 3B) to address the question whether it is even physically possible that the hydroxyl can approach the γ-phosphate of AMPPCP. Only T288 of monomer II (proposed as the substrate molecule above) with a more flexible activation loop segment can be rearranged at a close distance to the γ-phosphate of AMPPCP without displacing the AMPPCP from its original position (Figure 3B).
 
-## Functional evidence for intermolecular autophosphorylation within the swapped dimer
+### Functional evidence for intermolecular autophosphorylation within the swapped dimer
 
-Neither the crystallographic dimer nor the TMD simulations are compelling evidence for intermolecular autophosphorylation within such a swapped dimer. To answer the first obvious question whether a swapped dimer exists in solution, we performed small-angle X-ray scattering (SAXS) and sedimentation velocity analytical ultracentrifugation (AUC) experiments on dephosphorylated Aurora A in the absence and presence of TPX2 (
+Neither the crystallographic dimer nor the TMD simulations are compelling evidence for intermolecular autophosphorylation within such a swapped dimer. To answer the first obvious question whether a swapped dimer exists in solution, we performed small-angle X-ray scattering (SAXS) and sedimentation velocity analytical ultracentrifugation (AUC) experiments on dephosphorylated Aurora A in the absence and presence of TPX2 (Figure 4). A significant amount of dimer was detected for Aurora A and the relative concentration was independent of the presence of TPX2. Importantly, the fact that separate peaks for the dimer and monomer were observed in a sedimentation velocity run reveals a slow interconversion rate between dimer and monomer. Fitting of the SAXS data required inclusion of 9% dimer of the shape of our X-ray structure, supporting the notion that the swapped dimer seen in X-ray crystallography exists in solution in agreement with the AUC data. Protein solubility prohibited determination of the KD, but from both the concentration dependence observed in AUC as well as SAXS experiments one can estimate that the KD is above 300 μM.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/02667/elife-02667-fig4-v1.jpg)
 
-**Figure 4.:** (A) Sedimentation velocity analytical ultracentrifugation data show discrete peaks for monomer and dimer. TPX21−25 does not increase the percentage of Aurora A dimer in solution. It is unclear why there is an increased dimer concentration for the kinase-dead Aurora A D274A mutant. (B) Small-angle X-ray scattering (SAXS) data show an increase in dimer concentration with increased Aurora A amounts. All data were collected in the presence of 500 μM AMPPCP in kinase assay buffer. deP, dephosphorylated.DOI: http://dx.doi.org/10.7554/eLife.02667.014
+**Figure 4.:** (A) Sedimentation velocity analytical ultracentrifugation data show discrete peaks for monomer and dimer. TPX21−25 does not increase the percentage of Aurora A dimer in solution. It is unclear why there is an increased dimer concentration for the kinase-dead Aurora A D274A mutant. (B) Small-angle X-ray scattering (SAXS) data show an increase in dimer concentration with increased Aurora A amounts. All data were collected in the presence of 500 μM AMPPCP in kinase assay buffer. deP, dephosphorylated.
 
-The existence of the dimer in solution is essential but not sufficient for an intermolecular autophosphorylation mechanism. To directly investigate the mechanism, functional assays were performed. First, we designed two Aurora A constructs that differed in activity and length. D274A is a kinase-impaired version (
+The existence of the dimer in solution is essential but not sufficient for an intermolecular autophosphorylation mechanism. To directly investigate the mechanism, functional assays were performed. First, we designed two Aurora A constructs that differed in activity and length. D274A is a kinase-impaired version (Wan et al., 2008) that is unable to autophosphorylate within our reaction time frame (Figure 5A, middle panel). Since the N- and C-terminal truncations do not affect activity (Figure 5–figure supplement 1), this trick allowed for easy simultaneous detection of wild type and kinase-impaired Aurora A. While Aurora A125−392 D274A cannot phosphorylate itself, equal concentrations of dephosphorylated wild type Aurora A122−403 and Aurora A125−392 D274A lead to comparable phosphorylation rates for both proteins, demonstrating an intermolecular autophosphorylation mechanism for Aurora A (Figure 5A, right panel).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/02667/elife-02667-fig5-v1.jpg)
 
-**Figure 5.:** (A) The kinetics of autophosphorylation was monitored by SDS-PAGE and Western blot of 25 μM Aurora A122−403 WT or 25 μM Aurora A125−392 D274A. WT Aurora A can phosphorylate catalytically dead D274A Aurora A intermolecularly. To account for Aurora A's dynamic range, time points up to 300 s were diluted 50-fold and the rest of the time points were diluted 225-fold. (B) Dilution to 1 μM protein from a stock solution of 200 μM Aurora A ± TPX2 shows much faster autophosphorylation kinetics than from a lower concentrated stock solution (20 μM ± TPX2) revealing that autophosphorylation occurs within the long-lived dimer. All experiments were carried out at 25°C in kinase assay buffer in the presence of 5 mM ATP.DOI: http://dx.doi.org/10.7554/eLife.02667.015
+**Figure 5.:** (A) The kinetics of autophosphorylation was monitored by SDS-PAGE and Western blot of 25 μM Aurora A122−403 WT or 25 μM Aurora A125−392 D274A. WT Aurora A can phosphorylate catalytically dead D274A Aurora A intermolecularly. To account for Aurora A's dynamic range, time points up to 300 s were diluted 50-fold and the rest of the time points were diluted 225-fold. (B) Dilution to 1 μM protein from a stock solution of 200 μM Aurora A ± TPX2 shows much faster autophosphorylation kinetics than from a lower concentrated stock solution (20 μM ± TPX2) revealing that autophosphorylation occurs within the long-lived dimer. All experiments were carried out at 25°C in kinase assay buffer in the presence of 5 mM ATP.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/02667/elife-02667-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** 125−392 can autophosphorylate as efficiently as Aurora A122−403.SDS-PAGE and Western blot of 25 μM Aurora A122−403 WT or 25 μM Aurora A125−392 show that both proteins can autophosphorylate to similar extents, suggesting that impaired kinetics in Figure 5A are due to the D274A mutation and not the length of the protein construct. To account for Aurora A's dynamic range, time points up to 300 s were diluted 50× and the rest of the time points were diluted 225×. All experiments were carried out as described in Figure 5A. deP: dephosphorylated; P: phosphorylated.DOI: http://dx.doi.org/10.7554/eLife.02667.016
+**Figure 5—figure supplement 1.:** SDS-PAGE and Western blot of 25 μM Aurora A122−403 WT or 25 μM Aurora A125−392 show that both proteins can autophosphorylate to similar extents, suggesting that impaired kinetics in Figure 5A are due to the D274A mutation and not the length of the protein construct. To account for Aurora A's dynamic range, time points up to 300 s were diluted 50× and the rest of the time points were diluted 225×. All experiments were carried out as described in Figure 5A. deP: dephosphorylated; P: phosphorylated.
 
 The fact that the dimer is long lived as identified by AUC triggered a second independent test of the functional relevance of this swapped dimer. The rate of autophosphorylation was measured for samples of 1 μM Aurora A prepared by dilution from 200 μM and 20 μM stock solutions. Although the final protein concentration in both samples is the same, much faster autophosphorylation was detected for the sample diluted from the more highly concentrated stock solution (Figure 5A). Since the latter sample contains a higher concentration of this slowly dissociating dimer, this experiment directly demonstrates dimer-dependent autophosphorylation. TPX2 strongly accelerates autophosphorylation, in agreement with previous reports (Eyers et al., 2003), and as seen for peptide phosphorylation (Figure 1B and Figure 1–figure supplement 4). Notably, this intermolecular autophosphorylation again proceeds via the long-lived swapped dimer (Figure 5B). We note that although necessary, the dimer is not sufficient for autophosphorylation, because the catalytically impaired D274A mutant shows a high percentage of dimer (Figure 4A). Clearly, TPX2 triggers a conformational change that results in a catalytically active dimer.
 
-As the third line of evidence, we aimed at designing a mutation that would weaken the swapped dimer formation and therefore autophosphorylation without compromising the kinase activity of the phosphorylated monomer towards peptides. Realization of this thought experiment is challenging because most of the intermolecular interactions for the dimer are present as corresponding intramolecular contacts in the monomer (
+As the third line of evidence, we aimed at designing a mutation that would weaken the swapped dimer formation and therefore autophosphorylation without compromising the kinase activity of the phosphorylated monomer towards peptides. Realization of this thought experiment is challenging because most of the intermolecular interactions for the dimer are present as corresponding intramolecular contacts in the monomer (Figure 3A). We rationalized that a C290A mutation could work because C290 of one monomer contacts Y334 of the αG-helix of the other monomer, while in phosphorylated monomeric Aurora A, C290 contacts K143, W277, L289, and G291 (Figure 6A,B). The C290A mutation indeed results in a primarily monomeric form (Figure 6C) that also has severely impaired autophosphorylation activity (Figure 6D). However, once phosphorylated, C290A has nearly normal catalytic activity towards the AP substrate (Figure 6E), buttressing the functional role of the swapped WT dimer for autophosphorylation. Particularly striking is the observation that in a 1:1 mixture of dephosphorylated WT and C290A mutant, WT autophosphorylation precedes C290A phosphorylation in the early reaction time course (Figure 6D, right and inset) but phosphorylation kinetics are identical at later time points. Such kinetic behavior is expected for a model of initial autophosphorylation between two dephosphorylated molecules within the swapped dimer and the subsequent taking over of intermolecular autophosphorylation by newly phosphorylated enzyme molecules. This latter reaction is much faster, suggesting atomistic differences in comparison to the swapped dimer reaction. The C290A mutant is incapable of forming a hybrid swapped dimer between one molecule each of dephosphorylated C290A and WT protein, explaining the lag in its phosphorylation kinetics relative to WT.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/02667/elife-02667-fig6-v1.jpg)
 
-**Figure 6.:** (A) C290 of monomer I (light pink spheres) packs against Y334 of the αG-helix of monomer II. Other residues within a 4.5 Å radius of C290 in monomer I are shown as red spheres. (B) In the monomeric, phosphorylated Aurora A (PDB ID 1OL7), C290 (light orange) does not contact the αG-helix (contact residues within a 4.5 Å radius are shown as orange spheres). (C) Sedimentation velocity analytical ultracentrifugation of 100 μM dephosphorylated (deP) Aurora A C290A + 500 μM AMPPCP in kinase assay buffer shows that this protein is predominately monomeric in solution. (D) The kinetics of autophosphorylation was monitored by SDS-PAGE and Western blot of 25 μM Aurora A122−403 WT or 25 μM Aurora A125−392 C290A as described in Figure 5. C290A mutant has impaired autophosphorylation, but is readily phosphorylated by WT Aurora A. (E) Activity of the phosphorylated (P), monomeric C290A towards AP peptide (0.7 ± 0.1 s−1) is comparable to that of the WT protein (1.0 ± 0.2 s−1).DOI: http://dx.doi.org/10.7554/eLife.02667.017
+**Figure 6.:** (A) C290 of monomer I (light pink spheres) packs against Y334 of the αG-helix of monomer II. Other residues within a 4.5 Å radius of C290 in monomer I are shown as red spheres. (B) In the monomeric, phosphorylated Aurora A (PDB ID 1OL7), C290 (light orange) does not contact the αG-helix (contact residues within a 4.5 Å radius are shown as orange spheres). (C) Sedimentation velocity analytical ultracentrifugation of 100 μM dephosphorylated (deP) Aurora A C290A + 500 μM AMPPCP in kinase assay buffer shows that this protein is predominately monomeric in solution. (D) The kinetics of autophosphorylation was monitored by SDS-PAGE and Western blot of 25 μM Aurora A122−403 WT or 25 μM Aurora A125−392 C290A as described in Figure 5. C290A mutant has impaired autophosphorylation, but is readily phosphorylated by WT Aurora A. (E) Activity of the phosphorylated (P), monomeric C290A towards AP peptide (0.7 ± 0.1 s−1) is comparable to that of the WT protein (1.0 ± 0.2 s−1).
 
-## TPX21−25 is necessary and sufficient for binding to Aurora A
+### TPX21−25 is necessary and sufficient for binding to Aurora A
 
 TPX21−43 had been identified as essential for Aurora A activation and protection from PP1, PP2A, or λPP-directed dephosphorylation (Eyers et al., 2003; Tsai et al., 2003; Satinover et al., 2004). This finding was further substantiated by an X-ray structure of TPX21−43 bound to phosphorylated Aurora A (Bayliss et al., 2003) (Figure 7–figure supplement 1). In this structure, TPX26−23 was seen in an extended conformation, whereas TPX230−43 formed a regular helix that was proposed to be crucial in protecting Aurora A from phosphatase-mediated T288 dephosphorylation. Surprisingly, in our dimer structure, we could only visualize TPX24/6−20/22 (Figure 2A,B and Figure 7–figure supplement 1), and the previously seen helical part was completely missing.
 
-To investigate this unexpected result, we designed and functionally characterized the interplay between two peptides, TPX2
+To investigate this unexpected result, we designed and functionally characterized the interplay between two peptides, TPX21−25 and TPX225−45, and Aurora A. First, isothermal titration calorimetry (ITC) showed that TPX21−25 bound to Aurora A with the same affinity as longer versions (TPX21−147 or TPX21−45) and did not discriminate between the phosphorylated and dephosphorylated states of the protein (Figure 7A). On the other hand, no signal was detected for TPX225−45 with Aurora A in ITC. Second, TPX21−25 binding could trigger an increase in activity of dephosphorylated Aurora A towards peptides and autophosphorylation (data not shown). In contrast, TPX225−45 had no effect on Aurora A activity. Third, TPX21−25 could protect Aurora A from λPP-directed dephosphorylation as well as TPX21−45, whereas no protection was found for TPX225−45 (Figure 7B). These functional data suggest that the first 25 amino acids of TPX2 are primarily responsible for both activation of the enzyme and protection from dephosphorylation.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/02667/elife-02667-fig7-v1.jpg)
 
-**Figure 7.:** 1−25 is the minimal region needed for binding to Aurora A.(A) Isothermal titration calorimetry (ITC) measurements conducted with various TPX2 constructs show that TPX2 binds with similar affinity to either the phosphorylated (P) or the dephosphorylated (deP) Aurora A and that the minimal length required for binding encompasses the first 25 residues of TPX2. (B) At the functional level, TPX21−25 can protect Aurora A from λ protein phosphatase (λPP)-directed dephosphorylation to the same extent as TPX21−45.DOI: http://dx.doi.org/10.7554/eLife.02667.018
+**Figure 7.:** (A) Isothermal titration calorimetry (ITC) measurements conducted with various TPX2 constructs show that TPX2 binds with similar affinity to either the phosphorylated (P) or the dephosphorylated (deP) Aurora A and that the minimal length required for binding encompasses the first 25 residues of TPX2. (B) At the functional level, TPX21−25 can protect Aurora A from λ protein phosphatase (λPP)-directed dephosphorylation to the same extent as TPX21−45.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/02667/elife-02667-fig7-figsupp1-v1.jpg)
 
-**Figure 7—figure supplement 1.:** Superposition of TPX2 from the dephosphorylated Aurora A (red) + TPX2 (light pink) and the phosphorylated Aurora A (not shown) + TPX2 (magenta) (PDB ID 1OL5) shows that the N-terminal half of TPX2 binds similarly to both proteins whereas the C-terminal half of TPX2 only binds to phosphorylated Aurora A that is monomeric in the X-ray structure, but not to the dimeric, dephosphorylated Aurora A. The dotted line represents missing electron density for residues TPX223−29.DOI: http://dx.doi.org/10.7554/eLife.02667.019
+**Figure 7—figure supplement 1.:** Superposition of TPX2 from the dephosphorylated Aurora A (red) + TPX2 (light pink) and the phosphorylated Aurora A (not shown) + TPX2 (magenta) (PDB ID 1OL5) shows that the N-terminal half of TPX2 binds similarly to both proteins whereas the C-terminal half of TPX2 only binds to phosphorylated Aurora A that is monomeric in the X-ray structure, but not to the dimeric, dephosphorylated Aurora A. The dotted line represents missing electron density for residues TPX223−29.
 
 ![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/02667/elife-02667-fig7-figsupp2-v1.jpg)
 
-**Figure 7—figure supplement 2.:** (A) Y8 and Y10 of TPX2 make extensive contacts with residues lining αB- and αC-helices in Aurora A. (B) Superposition of TPX2 bound to Aurora A with the C-terminal tails of several AGC kinases reveals equivalent positioning of Phe of the FxxF hydrophobic motifs in the conserved kinases’ hydrophobic pockets. Right: a zoom into this highly conserved protein/protein interaction motif used for allosteric regulation. We note that while for most AGC kinases this interaction occurs via its own C-terminal tails, in the evolutionarily younger Aurora A kinase, this regulation is mediated by interaction with a second binding partner, TPX2 (Davis et al., 2008).DOI: http://dx.doi.org/10.7554/eLife.02667.020
+**Figure 7—figure supplement 2.:** (A) Y8 and Y10 of TPX2 make extensive contacts with residues lining αB- and αC-helices in Aurora A. (B) Superposition of TPX2 bound to Aurora A with the C-terminal tails of several AGC kinases reveals equivalent positioning of Phe of the FxxF hydrophobic motifs in the conserved kinases’ hydrophobic pockets. Right: a zoom into this highly conserved protein/protein interaction motif used for allosteric regulation. We note that while for most AGC kinases this interaction occurs via its own C-terminal tails, in the evolutionarily younger Aurora A kinase, this regulation is mediated by interaction with a second binding partner, TPX2 (Davis et al., 2008).
 
 The functional role for the first 25 residues in TPX2 makes sense from a comparison to the regulation of other human protein kinases (Gold et al., 2006; Kannan et al., 2007; Keshwani et al., 2012; Arencibia et al., 2013). This specific interaction between a hydrophobic groove at the junction of the αB/αC-helices in the N-lobe of kinases and a short sequence called ‘the hydrophobic motif’ (Tyr/Phe-X(X)-Tyr/Phe) from either another partner or from its own C-terminal tail, seems to be a conserved regulatory mechanism across the AGC family (Figure 7–figure supplement 2) (Zhang et al., 1994). For CMGC kinases, the hydrophobic groove is occupied by activating cyclin proteins, as originally reported for cyclin binding to the N-lobe of Cdk2 which leads to reorientation of the activation loop and αC-helix into an active conformation (Jeffrey et al., 1995) similar to the effect of TPX2 on Aurora A. In MAPK, activity is increased by binding of the proteins’ own C-terminal tails into this hydrophobic groove (Baumli et al., 2008). In the tyrosine kinase (TK) family, an N-terminal fragment that precedes the kinase domain of c-KIT, MET, and Ephrin nestles inside the hydrophobic pocket, and autoinhibits the kinases (Chan et al., 2003; Mol et al., 2003, 2004; Davis et al., 2008; Eathiraj et al., 2011). In the EGFR members of the TK family, this hydrophobic motif is used as a docking point for kinase activation through dimerization (Zhang et al., 2006; Jura et al., 2011). This striking conservation of a very specific recognition mechanism across evolutionarily divergent kinase families suggests that Y8 and Y10 of TPX2 nestled inside the hydrophobic αB/αC pocket in Aurora A are likely the key triggers for kinase activation (Figure 7–figure supplement 2).
 
-## Conclusions
+### Conclusions
 
 In this work, we characterized two distinct molecular activation mechanisms of Aurora A: autophosphorylation and allosteric activation through TPX2 binding. Because of the controversy about the autophosphorylation mechanism of protein kinases (Oliver et al., 2006, 2007; Pike et al., 2008; Lee et al., 2009; Lochhead, 2009; Dodson et al., 2013; Hu et al., 2013), we felt the need for multiple lines of evidence. Our aim was to determine the structure of a dephosphorylated enzyme/substrate complex ‘ready for autophosphorylation’. The swapped dimer is indeed asymmetric, with one monomer playing the role of the enzyme and the other that of the substrate. In the substrate molecule, the hydroxyl group of T288 is in principle capable of reaching the γ-phosphate of AMPPCP bound to the enzyme monomer as shown by TMD simulations. Domain-swapped dimers have been solved for a number of protein kinases and questioned for their relevance or crystal artifacts (Dodson et al., 2013). To address such a critique directly, we showed a long-lived dimer in solution. Importantly, using three biochemical tricks of (i) a mixture between wild type and dead mutant and (ii) a serial dilution, and (iii) a C290A mutant with severely impaired dimer formation and autophosporylation but nearly normal peptide phosphorylation activity in its phosphorylated monomeric state, we could directly demonstrate an intermolecular autophosphorylation mechanism within this long-lived dimer.
 
@@ -168,7 +316,7 @@ We finally want to raise the question whether Aurora A autophosphorylation is ph
 
 ## Materials and methods
 
-## Cloning and purification of Aurora A kinase
+### Cloning and purification of Aurora A kinase
 
 TEV-cleavable, His6-tagged Aurora A kinase, either long (122–403) or short (125–392) constructs, were cloned into pET28a and expressed in Rosetta 2 (DE3) E. coli cells (Stratagene) for 13–15 h at 21°C. Cells were centrifuged at 5000 rpm for 15 min, resuspended in buffer A, and sonicated in the presence of EDTA-free protease inhibitor cocktail and DNAse for 4 min (20 s on, 20 s off, 3.0 V). Lysates thus obtained were filtered using a 0.22 μm filtering unit and passed through a NiNTA column. The protein was eluted at 20% buffer B and Aurora A kinase fractions were pooled and TEV-cleaved overnight at 4°C in a 5 kDa dialysis cassette that was exchanged against buffer C. Cleaved Aurora A was passed through another nickel column to remove any uncleaved reactants and His6-TEV-protease, and then purified to homogeneity through a 26/60 S200 size exclusion column. Protein thus produced was aliquoted and flash-frozen before being stored at −80°C and used for kinase assays. Mutant Aurora A122−403 T288V was also purified the same way. The phosphorylation of all Aurora A samples including mutant forms used here were quantitatively confirmed by mass spectrometry (MS).
 
@@ -178,33 +326,33 @@ The buffers used were:Buffer A: 50 mM TrisHCl (pH 8.0), 300 mM NaCl, 40 mM imida
 
 Typical yields were 8–10 mg of phosphorylated Aurora A and 45–50 mg of dephosphorylated Aurora A (expressed in the presence of λPP) per liter of E. coli culture.
 
-## Mass spectrometry
+### Mass spectrometry
 
 The LCMS system consisted of an Agilent 1200 series HPLC connected to an Agilent series 6520 ESI Q-TOF. Protein samples (10 µM) dissolved in a 5% acetonitrile–0.1% formic acid buffer were separated on a C18 Poroshell 300SB column (1 mm × 75 mm × 5 µm) at 0.5 mL min−1 using a linear gradient of 5–70% acetonitrile in 0.1% formic acid. MS data were collected up to 3000 m/z and raw spectra were deconvoluted using the maximum entropy algorithm of Agilent Masshunter version B.03.01 software. External mass calibration was performed using a mixture of purine (121 m/z) and HP-0921 (922 m/z) immediately prior to measuring protein samples.
 
-## In vitro kinase assays
+### In vitro kinase assays
 
 Aurora A, either phosphorylated/dephosphorylated wild type or mutant protein, was mixed with either AP (APSSRRTTLCGTL), Kemptide (LRRASLG), or Lats2 (ATLARRDSLQKPGLE), in the absence or presence of 50 μM TPX2 in kinase buffer (20 mM TrisHCl, 200 mM NaCl, 3% [vol/vol] glycerol, 20 mM MgCl2, 1 mM TCEP, pH 7.50). These substrates comprise the consensus sequence for Aurora A ([R/K/N]-R-X-[S/T]-B where B is any hydrophobic residue with the exception of Pro) (Ferrari et al., 2005; Ohashi et al., 2006; Sardon et al., 2010). Peptides were ordered through Genscript. The reaction was initiated with the addition of 5 mM ATP. Then 5 μl time points were collected, resuspended in 10 μl 6% (vol/vol) trichloroacetic acid (in water) to quench the reaction, and neutralized with 50 μl 100 mM KH2PO4, pH 8.0 to provide the appropriate pH for nucleotide separation. The mixture was then passed through a 0.22 μm SpinX column to remove any protein precipitation. Reverse phase-high performance liquid chromatography (RP-HPLC) and an ACE 5 C18-AR, 100 Å pore size column, were used to separate nucleotides as well as peptides. For nucleotide runs, 2 μl of the aforementioned mixture was sufficient for analysis, whereas for the peptide runs the optimal injection volume was 20 μl. Nucleotide runs were routinely performed to ensure no unproductive hydrolysis was occurring during the experiment. An isocratic elution run in 100 mM KH2PO4, pH 6.0 was performed for this purpose. For the peptide runs, a gradient of 0–30% of elution buffer lasting 10 min at 0.4 mL/min was sufficient to separate phosphorylated from non-phosphorylated species. The running buffer was 0.1% TFA (vol/vol) in water, while the elution buffer was 100% acetonitrile. Representative peptide RP-HPLC traces are shown in Figure 1–figure supplement 5. Lastly, to ensure full saturation of Aurora A by TPX2 and test these proteins were well behaved, a dose-dependence curve of the effect of TPX2 on Aurora A as shown in Figure 1–figure supplement 6 was obtained.
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 All titrations were carried out using Nano ITC (TA Instruments) and analyzed via the NanoAnalyze software using the independent fit model. Injectant was added in 1 μl volume, every 180 s, with a constant stirring speed at 350 rpm and at 25°C. Prior to ITC titration, both protein and peptide were dialyzed/resuspended in 20 mM TrisHCl, 200 mM NaCl, 3% (vol/vol) glycerol, 1 mM TCEP, pH 7.50. The concentrations used for each of the runs in Figure 7A were: 35 μM dephosphorylated (deP) A122−403 + 280 μM TPX21−147, 48 μM deP A122−403 + 680 μM TPX21−45, 13 μM deP A122−403 + 250 μM TPX21−25, 18 μM deP A122−403 + 250 μM TPX225−45, 20 μM phosphorylated (P) A122−403 + 280 μM TPX21−147, 90 μM P A122−403 + 940 μM TPX21−45, 20 μM P A122−403 + 300 μM TPX21−25, and 18 μM P A122−403 + 300 μM TPX225−45.
 
-## Crystallographic methods
+### Crystallographic methods
 
 Crystals of dephosphorylated Aurora A122−403 in complex with AMPPCP and TPX21−45 were grown at 18°C by vapor diffusion and the hanging drop method. A 2:1 ratio of protein mixture:mother liquor was obtained by combining 300 μM (10 mg/ml) deP Aurora A122−403 + 1.5 mM AMPPCP + 300 μM TPX21−45 with 0.2 M lithium sulfate monohydrate, 0.1 M BisTris, pH 5.5, 25% PEG3350. Similarly, crystals of dephosphorylated Aurora A122−403 in complex with AMPPCP were obtained by mixing a 2:1 ratio of 570 μM (18 mg/ml) deP Aurora A122−403 + 1 mM AMPPCP with mother liquor (0.2 M ammonium sulfate, 0.2 M TrisHCl, pH 7.50, 30% (wt/vol) PEG3350). These latter crystals were also grown at 18°C by vapor diffusion and the hanging drop method. The protein, peptide, and nucleotide were originally stored in 20 mM TrisHCl, 200 mM NaCl, 10% (vol/vol) glycerol, 20 mM MgCl2, 1 mM TCEP, pH 7.50.
 
 Diffraction data were collected at 100 K at Advanced Light Source (Lawrence Berkeley National Laboratory) beamlines (8.2.1 and 8.2.2). The details of data collections are listed in Table 1. Data were processed with the automated data reduction program Xia2 (Winter, 2010) that is part of the CCP4 suite (Winn et al., 2011) and uses iMOSFLM (Battye et al., 2011) for integration and Scala (Evans, 2006) for scaling. Initial phases were obtained by molecular replacement (CCP4 program Molrep [Vagin, 1997]) by using an Aurora A kinase structure (PDB ID 1MQ4) as a search model. The refinement was carried out with REFMAC5 (Murshudov et al., 2011) and phenix.refine (Adams et al., 2010), followed by manual rebuilding in Coot (Emsley and Cowtan, 2004; Emsley et al., 2010).
 
-## Analytical ultracentrifugation
+### Analytical ultracentrifugation
 
 Sedimentation velocity runs were performed on a Beckman Optima XL-A Analytical Ultracentrifuge at 50,000 rpm and 18°C (same as crystallization temperature). Sedimentation of 100 μM deP Aurora A122−403 (or 150 μM deP Aurora A122−403, or 160 μM Aurora A125−392 D274A, or 100 μM Aurora A125−392 C290A) + 500 μM AMPPCP and/or 100 μM TPX21−25 was followed at three different wavelengths (285 nm, 290 nm, and 295 nm). Data were analyzed using the SEDFIT software (Schuck, 2000; Dam and Schuck, 2004) and the continuous size-distribution option.
 
-## Small-angle X-ray scattering (SAXS)
+### Small-angle X-ray scattering (SAXS)
 
 All SAXS experiments were done on a BioSAXS-1000 system at Brown University, Providence, RI, USA (camera length 480.3 mm, Pilatus 100 K detector). SAXS data were recorded for Aurora A at concentrations between 0.33 and 6.6 mg/ml at 20°C with 1 mg/mL TPX21−25 each. The momentum transfer axis (s = 4πsinθ/λ, where 2θ represents the scattering vector s and λ = 1.54187 nm) was calibrated by using silver behenate as standard. The experiment time was between 15 min and 6 h per sample, depending on the protein concentration. Data reduction of the raw image files and conversion into scattering curves was done with the SAXSLab software (Rigaku). The SAXS curves were further processed (buffer subtraction, correction for unbound TPX2) with the program Primus (Konarev et al., 2003). We used calculated SAXS curves (program Crysol [Svergun, 1995]) from the X-ray structures of this study as reference for the monomeric and dimeric state. The amount of dimers was calculated by using a script based on the least squares method calculations.
 
-## Targeted molecular dynamics simulations
+### Targeted molecular dynamics simulations
 
 The crystal structure of dephosphorylated Aurora A bound to AMPPCP and TPX2 (PDB ID 4C3P) was used as the starting point for building the model presented in Figure 3B. The electron density for the amino acids in the region 283–288 of monomer II was not distinguishable from noise. We used the tools in the software package Modeller 9.11 (Eswar et al., 2006) to model the missing residues. The lowest energy model was then used as the starting point for a molecular dynamics simulation run, in which the distance between the oxygen in the sidechain hydroxyl group of T288 and the γ-phosphate of the AMPPCP moiety bound to monomer I was reduced to 3 Å. To achieve this, the structure was parameterized with the CHARMM 22-protein all-atom force field with the CMAP backbone energy correction (MacKerell et al., 1998, 2001). The system was solvated in a rectangular box with TIP3 water molecules and neutralized with NaCl counterions. The final simulation box contained approximately 65,000 atoms. Periodic boundary conditions were applied to the simulation box.
 

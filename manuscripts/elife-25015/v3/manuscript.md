@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.25015.001 The synthesis of cholesterol and fatty acids (FA) in the liver is independently regulated by SREBP-2 and SREBP-1c, respectively. Here, we genetically deleted Srebf-2 from hepatocytes and confirmed that SREBP-2 regulates all genes involved in cholesterol biosynthesis, the LDL receptor, and PCSK9; a secreted protein that degrades LDL receptors in the liver. Surprisingly, we found that elimination of Srebf-2 in hepatocytes of mice also markedly reduced SREBP-1c and the expression of all genes involved in FA and triglyceride synthesis that are normally regulated by SREBP-1c. The nuclear receptor LXR is necessary for Srebf-1c transcription. The deletion of Srebf-2 and subsequent lower sterol synthesis in hepatocytes eliminated the production of an endogenous sterol ligand required for LXR activity and SREBP-1c expression. These studies demonstrate that cholesterol and FA synthesis in hepatocytes are coupled and that flux through the cholesterol biosynthetic pathway is required for the maximal SREBP-1c expression and high rates of FA synthesis. DOI: http://dx.doi.org/10.7554/eLife.25015.001
+The synthesis of cholesterol and fatty acids (FA) in the liver is independently regulated by SREBP-2 and SREBP-1c, respectively. Here, we genetically deleted Srebf-2 from hepatocytes and confirmed that SREBP-2 regulates all genes involved in cholesterol biosynthesis, the LDL receptor, and PCSK9; a secreted protein that degrades LDL receptors in the liver. Surprisingly, we found that elimination of Srebf-2 in hepatocytes of mice also markedly reduced SREBP-1c and the expression of all genes involved in FA and triglyceride synthesis that are normally regulated by SREBP-1c. The nuclear receptor LXR is necessary for Srebf-1c transcription. The deletion of Srebf-2 and subsequent lower sterol synthesis in hepatocytes eliminated the production of an endogenous sterol ligand required for LXR activity and SREBP-1c expression. These studies demonstrate that cholesterol and FA synthesis in hepatocytes are coupled and that flux through the cholesterol biosynthetic pathway is required for the maximal SREBP-1c expression and high rates of FA synthesis.
 
 ## Introduction
 
@@ -44,49 +44,409 @@ To bypass the embryonic lethality, here we used albumin-driven, Cre-mediated rec
 
 ## Results
 
-The vector and targeting strategy used to conditionally disrupt
+The vector and targeting strategy used to conditionally disrupt Srebf-2 is shown in Figure 1A and B. Mice homozygous for the floxed Srebf-2 allele, were bred to transgenic mice that express Cre recombinase driven by the albumin promoter to obtain hepatocyte-specific gene deletion (hepatocyte-Srebf-2-/-). Littermates bearing two floxed Srebf-2 alleles with no albumin-cre were designated as wild type controls. Hepatocyte -Srebf-2-/- mice weighed slightly less than littermate controls but liver weights were unchanged (Table 1). In the absence of SREBP-2, plasma and liver cholesterol concentrations were reduced by 68% and 20%, respectively. Unexpectedly, plasma and liver TGs were also reduced by 50% and 76%, in hepatocyte -Srebf-2-/- mice (Table 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/25015/elife-25015-fig1-v3.jpg)
 
-**Figure 1.:** Srebf-2 allele.(A) Schematic of gene-targeting strategy. Cre-mediated excision of the sequences flanked by the loxP sites deletes 660 bp of the Srebf-2 promoter and exon 1, which includes the initiator methionine and residues encoding the NH2-terminal domain of Srebf-2. The positions of primers (P1 and P2, P3 and P4) used for PCR detection of homologous recombination are denoted by arrowheads. (B) Genotype analysis of the conditionally targeted Srebf-2 mice by PCR of tail-derived DNA. (C) Levels of proteins in the livers of WT and hepatocyte-Srebf-2 mice. Nuclear and membrane protein was made from each mouse liver described in -/-Table 1 and equal aliquots from each were pooled (total, 30 µg) and subjected to SDS-PAGE and immunoblot analysis was carried out for the indicated protein as described in ‘Materials and methods.’ The precursor and nuclear form of SREBPs were denoted as P and N, respectively.DOI: http://dx.doi.org/10.7554/eLife.25015.002
+**Figure 1.:** (A) Schematic of gene-targeting strategy. Cre-mediated excision of the sequences flanked by the loxP sites deletes 660 bp of the Srebf-2 promoter and exon 1, which includes the initiator methionine and residues encoding the NH2-terminal domain of Srebf-2. The positions of primers (P1 and P2, P3 and P4) used for PCR detection of homologous recombination are denoted by arrowheads. (B) Genotype analysis of the conditionally targeted Srebf-2 mice by PCR of tail-derived DNA. (C) Levels of proteins in the livers of WT and hepatocyte-Srebf-2-/- mice. Nuclear and membrane protein was made from each mouse liver described in Table 1 and equal aliquots from each were pooled (total, 30 µg) and subjected to SDS-PAGE and immunoblot analysis was carried out for the indicated protein as described in ‘Materials and methods.’ The precursor and nuclear form of SREBPs were denoted as P and N, respectively.
+
+**Table 1.**
+ Phenotypic comparison of WT and hepatocyte-Srebf-2-/- mice. Male mice 12–13 wks of age fed chow ad lib were sacrificed and blood and tissues obtained. Each value represents mean ± SEM.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameters</th>
+      <th>WT</th>
+      <th>Srebf-2-/-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Number of mice</td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Body weight (g)</td>
+      <td>33.1 ± 1.0</td>
+      <td>27.7 ± 1.0*</td>
+    </tr>
+    <tr>
+      <td>Liver weight (g)</td>
+      <td>1.32 ± 0.13</td>
+      <td>1.28 ± 0.09</td>
+    </tr>
+    <tr>
+      <td>Plasma cholesterol (mg/dl)</td>
+      <td>104 ± 12.3</td>
+      <td>33.7 ± 6.6*</td>
+    </tr>
+    <tr>
+      <td>Plasma TGs (mg/dl)</td>
+      <td>94.8 ± 12.5</td>
+      <td>47.7 ± 1. 4*</td>
+    </tr>
+    <tr>
+      <td>Liver cholesterol (mg/g)</td>
+      <td>2.21 ± 0.08</td>
+      <td>1.78 ± 0.06*</td>
+    </tr>
+    <tr>
+      <td>Liver TGs (mg/g)</td>
+      <td>12.4 ± 3.09</td>
+      <td>2.98 ± 0.72*</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Denotes the level of statistical significance of p<0.05 (Student’s t test) between WT and hepatocyte-Srebf-2-/- mice._
 
 Immunoblot analyses of SREBPs from livers of mice described in Table 1 are shown in Figure 1C. As expected, the precursor (P) and nSREBP-2 (N) protein were undetectable in hepatocyte-Srebf-2-/- livers. However, the SREBP-1 precursor and nuclear protein levels were also reduced by ~90% in hepatocyte-Srebf-2-/- livers. Calnexin and CREB were used as controls for membrane and nuclear proteins, respectively.
 
+Figure 2 shows the results of quantitative PCR assays that measured mRNA levels of lipid metabolism related genes in livers of mice described in Table 1. The mRNA levels of SREBP-2-regulated genes involved in cholesterol biosynthesis and uptake (HMG-CoA synthase, HMG-CoA reductase, farnesyl diphosphate synthase, squalene synthase, and PCSK9) were reduced by 60–80% in hepatocyte-Srebf-2-/- livers compared to controls. The mRNA for the LDLR was only reduced by 20%. SREBP-1c mRNA levels also were 90% lower than that measured in livers of wild type (WT) mice, while SREBP-1a mRNA levels remained unchanged. SREBP-1c-regulated genes in the FA biosynthetic pathway (ACC1), fatty acid synthase (FAS), ELOVL6, and stearoyl-CoA desaturase-1 (SCD1)) were reduced ~50 to>95% in hepatocyte-Srebf-2-/- livers; however, ACC2 expression, which is primarily regulated by SREBP-1a (Im et al., 2009), was only slightly lower. Srebf-1c transcription is regulated by LXR and by nSREBP-1c itself through a feed-forward loop (Repa et al., 2000). SREBP-1c mRNA levels were reduced by 90%, which explains the loss of SREBP-1 protein in hepatocyte-Srebf-2-/- livers. The mRNA levels of LXRα and β were unchanged but the mRNA levels of additional LXR-regulated genes, ABCG5 and ABCG8, were reduced by 60–70% (Supplementary file 2), suggesting that LXR activity was lower in the absence of SREBP-2.
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/25015/elife-25015-fig2-v3.jpg)
 
-**Figure 2.:** Srebf-2 mice.-/-Total RNA from livers of each mouse liver described in Table 1 was subjected to real-time RT-PCR as described in ‘Materials and methods.’ Apo B was used as the invariant control. Values represent the amount of mRNA relative to those in the wild-type mice, which are arbitrarily assigned a value of 1. (A) Genes involved in cholesterol homeostasis. (B) Genes involved in FA homeostasis.DOI: http://dx.doi.org/10.7554/eLife.25015.004
+**Figure 2.:** Total RNA from livers of each mouse liver described in Table 1 was subjected to real-time RT-PCR as described in ‘Materials and methods.’ Apo B was used as the invariant control. Values represent the amount of mRNA relative to those in the wild-type mice, which are arbitrarily assigned a value of 1. (A) Genes involved in cholesterol homeostasis. (B) Genes involved in FA homeostasis.
 
-To confirm that the reduced expression of cholesterol and FA synthesis genes in hepatocyte-
+To confirm that the reduced expression of cholesterol and FA synthesis genes in hepatocyte-Srebf-2-/- livers translated into lower rates of lipid synthesis, we measured the incorporation of tritiated water into newly synthesized sterols and FAs. In hepatocyte-Srebf-2-/- livers, rates of sterol and FA synthesis were decreased by 59% and 68%, respectively (Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/25015/elife-25015-fig3-v3.jpg)
 
-**Figure 3.:** Srebf-2 mice.-/-Six 4-month-old male WT and hepatocyte-Srebf-2 mice were injected intraperitoneally with 50 mCi -/-3H-labeled water and rates of hepatic sterol and FA synthesis were determined as described in ‘Materials and methods'.DOI: http://dx.doi.org/10.7554/eLife.25015.005
+**Figure 3.:** Six 4-month-old male WT and hepatocyte-Srebf-2-/- mice were injected intraperitoneally with 50 mCi 3H-labeled water and rates of hepatic sterol and FA synthesis were determined as described in ‘Materials and methods'.
 
-Inasmuch as the expression of LXRα and β were unaffected by deleting
+Inasmuch as the expression of LXRα and β were unaffected by deleting Srebf-2, we hypothesized that the loss of SREBP-1c expression and reduced FA synthesis in hepatocyte-Srebf-2-/- livers was due to the absence of a ligand for LXR that is either generated within or derived from the cholesterol biosynthetic pathway. To test this hypothesis, we first fed mice a synthetic ligand for LXR, T0901317. Administration of T0901317 to hepatocyte-Srebf-2-/- mice induced SREBP-1c mRNA and protein expression to levels similar to that measured in WT livers (Figure 4A,B). Increased SREBP-1c expression was associated with higher mRNA levels of ACC1 and FAS (Figure 4B). Inasmuch as LXR can independently transcriptionally activate the same FA synthesis genes, we verified that the induction of ACC1 and FAS was specifically due to SREBP-1c by feeding mice that lack all SREBPs as a result of the deletion of Scap the LXR agonist (Moon et al., 2012). Administration of T0901317 to mice with hepatocyte-specific deletion of Scap did not significantly change the mRNA levels of ACC1 or FAS (Figure 4—figure supplement 1). This suggests that LXR administration to the hepatocyte-Srebf-2-/- mice induced the mRNA levels of FA synthesis genes through the restoration of SREBP-1c expression and not through direct transcriptional activation by LXR.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/25015/elife-25015-fig4-v3.jpg)
 
-**Figure 4.:** Srebf-2mice fed chow diet supplemented with an LXR agonist.-/-Mice 7–11 weeks of age were fed ad libitum chow or chow supplemented with 25 mg/kg of a LXR agonist (T901317) for three weeks prior to study. (A) Liver membrane and nuclear extract protein was made from each mouse and equal aliquots were pooled (total, 30 µg) and subjected to SDS-PAGE and immunoblot analysis as described in ‘Materials and methods.’ The precursor and nuclear form of SREBPs are denoted as P and N, respectively. (B) Total RNA from each mouse liver was subjected to real-time RT-PCR as described in ‘Materials and methods.’ Apo B was used as the invariant control. Values represent the amount of mRNA relative to those in the WT mice, which are arbitrarily assigned a value of 1. The following figure supplements are available for Figure 4.DOI: http://dx.doi.org/10.7554/eLife.25015.006
+**Figure 4.:** Mice 7–11 weeks of age were fed ad libitum chow or chow supplemented with 25 mg/kg of a LXR agonist (T901317) for three weeks prior to study. (A) Liver membrane and nuclear extract protein was made from each mouse and equal aliquots were pooled (total, 30 µg) and subjected to SDS-PAGE and immunoblot analysis as described in ‘Materials and methods.’ The precursor and nuclear form of SREBPs are denoted as P and N, respectively. (B) Total RNA from each mouse liver was subjected to real-time RT-PCR as described in ‘Materials and methods.’ Apo B was used as the invariant control. Values represent the amount of mRNA relative to those in the WT mice, which are arbitrarily assigned a value of 1. The following figure supplements are available for Figure 4.
 
 ![Figure 4 —figure supplement 1.](https://cdn.elifesciences.org/articles/25015/elife-25015-fig4-figsupp1-v3.jpg)
 
-**Figure 4 —figure supplement 1.:** Scap mice fed chow diet supplemented with an LXR agonist.-/-DOI: http://dx.doi.org/10.7554/eLife.25015.007
-
-Cholesterol feeding leads to the production of oxysterols in the liver that can also activate LXR; therefore, we next fed mice diets supplemented with cholesterol to determine whether dietary cholesterol could restore SREBP-1c expression in hepatocyte-
+Cholesterol feeding leads to the production of oxysterols in the liver that can also activate LXR; therefore, we next fed mice diets supplemented with cholesterol to determine whether dietary cholesterol could restore SREBP-1c expression in hepatocyte-Srebf-2-/- livers. Dietary supplementation of 0.2% cholesterol increased liver cholesterol concentrations and SREBP-1c mRNA levels to that measured in WT mice fed chow (Figure 5A,C). As shown in Figure 5B, nSREBP-1c protein levels in hepatocyte-Srebf-2-/- livers were slightly lower than that in WT mice fed chow, but this was sufficient to restore the expression of mRNAs for FA biosynthetic genes to levels found in WT livers (Figure 5C). SREBP-2 regulated genes remained low and unaffected by cholesterol feeding (Figure 5C).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/25015/elife-25015-fig5-v3.jpg)
 
-**Figure 5.:** Srebf-2 mice fed chow or chow supplemented with cholesterol.-/-Mice 7–11 weeks of age were fed chow (n = 6–7) or chow supplemented with 0.2% cholesterol (n = 6–7) for six weeks prior to study. (A) Liver cholesterol and TG concentrations were measured as described in ‘Materials and methods.’ (B) Equal aliquots of nuclear and membrane protein from each mouse liver were pooled (total, 30 µg) and subjected to SDS-PAGE and immunoblot analysis for the indicated protein as described in ‘Materials and methods.’ The precursor and nuclear form of SREBPs were denoted as P and N, respectively. (C) Total RNA from the livers of each mouse was subjected to real-time RT-PCR as described in ‘Materials and methods.’ Apo B was used as the invariant control. Values represent the amount of mRNA relative to those in WT mice, which are arbitrarily assigned a value of 1. * denotes a level of statistical significance of p<0.05 (Student’s t test) between WT and hepatic-Srebf-2mice, ND denotes no significant difference between the indicated groups.-/-DOI: http://dx.doi.org/10.7554/eLife.25015.008
+**Figure 5.:** Mice 7–11 weeks of age were fed chow (n = 6–7) or chow supplemented with 0.2% cholesterol (n = 6–7) for six weeks prior to study. (A) Liver cholesterol and TG concentrations were measured as described in ‘Materials and methods.’ (B) Equal aliquots of nuclear and membrane protein from each mouse liver were pooled (total, 30 µg) and subjected to SDS-PAGE and immunoblot analysis for the indicated protein as described in ‘Materials and methods.’ The precursor and nuclear form of SREBPs were denoted as P and N, respectively. (C) Total RNA from the livers of each mouse was subjected to real-time RT-PCR as described in ‘Materials and methods.’ Apo B was used as the invariant control. Values represent the amount of mRNA relative to those in WT mice, which are arbitrarily assigned a value of 1. * denotes a level of statistical significance of p<0.05 (Student’s t test) between WT and hepatic-Srebf-2-/-mice, ND denotes no significant difference between the indicated groups.
 
 To identify the potential missing LXR ligand in hepatocyte-Srebf-2-/- mice, we performed LC-MS/MS to quantify the cholesterol biosynthetic intermediates and oxysterol concentrations in the liver. As shown in Supplementary file 1, the concentrations of intermediates in the cholesterol biosynthetic pathway were not consistently changed or slightly higher in livers of hepatocyte-Srebf-2-/- mice compared to controls. The cholesterol biosynthetic intermediate, desmosterol, has been previously identified as an LXR ligand (Yang et al., 2006); however, the concentration of this intermediate was actually higher in hepatocyte-Srebf-2-/- livers. Other reported ligands of LXR include: 20(S)-hydroxycholesterol, 22(R)-hydroxycholesterol, 24(S)-hydroxycholesterol, 24(S),25-epoxycholesterol, 25-hydroxycholesterol, and 27-hydroxycholesterol (Huang, 2014; Yang et al., 2006). Of these ligands, 20(S)-hydroxycholesterol and 22(R)-hydroxycholesterol were not detected and concentrations of 24(S)-hydroxycholesterol, 24(S),25-epoxycholesterol, 25-hydroxycholesterol, and 27-hydroxycholesterol. 20(S)-hydroxycholesterol and 22(R)-hydroxycholesterol were either not consistently changed or slightly higher in hepatocyte-Srebf-2-/- livers compared to controls, suggesting that the missing SREBP-2-dependent endogenous LXR ligand is not one previously identified (Supplementary file 1).
 
-In addition to LXR, Srebf-1c is transcriptionally activated by insulin, which is stimulated by feeding mice a high carbohydrate diet (Horton et al., 1998; Shimomura et al., 1999). To determine whether insulin-mediated activation of SREBP-1c was intact in hepatocyte-Srebf-2-/- livers, we subjected mice to a fasting/refeeding protocol using a high carbohydrate/low fat diet previously shown to induce SREBP-1c expression (Horton et al., 1998) (Table 2). In the fasted state, SREBP-1c levels are extremely low. As shown in Table 3, refeeding the high carbohydrate diet to fasted WT mice increased the expression of SREBP-1c mRNA in WT mice by 41-fold. In contrast, the SREBP-1c mRNA levels in livers from refed hepatocyte-Srebf-2-/- mice only increased to a level that was slightly higher than fasted WT mice. There were also blunted increases in the expression of FA synthesis genes in hepatocyte-Srebf-2-/- livers. The increase in FA synthesis mRNA expression that remained was likely mediated by ChREBP, a glucose-responsive transcription factor that can independently activate these genes (Ishii et al., 2004). These studies confirm that insulin-mediated induction of SREBP-1c requires intact LXR activity.10.7554/eLife.25015.009Table 2.Phenotypic parameters in fasted and refed WT and hepatocyte-Srebf-2-/- mice. Male mice 9–12 wks of age were subjected to fasting and refeeding as described in ‘Materials and methods.’ Each value represents the mean ± SEM.DOI: http://dx.doi.org/10.7554/eLife.25015.009ParameterWTSrebf-2-/-FastedRefedFastedRefedNumber6666Body weight (g)22.7 ± 1.425.8 ± 1.119.0 ± 1.321.7 ± 1.2*Liver weight (g)0.92 ± 0.071.53 ± 0.190.82 ± 0.101.23 ± 0.13Liver cholesterol (mg/g)1.80 ± 0.081.02 ± 0.031.03 ± 0.05*0.71 ± 0.07*Liver triglycerides (mg/g)52.6 ± 1110.3 ± 1.833.2 ± 4.83.0 ± 0.5*Plasma cholesterol (mg/dl)142 ± 9.090.2 ± 1563.3 ± 7.3*43.6 ± 6.1*Plasma triglyceride (mg/dl)142 ± 11122 ± 1658.5 ± 4.6*28.9 ± 3.8*Plasma insulin (ng/ml)0.07 ± 0.011.00 ± 0.300.08 ± 0.020.48 ± 0.17Plasma glucose (mg/dl)184 ± 28220 ± 14121 ± 14182 ± 16* denotes a level of statistical significance of p<0.05 (Student’s t test) between WT and hepatocyte-Srebf-2 -/- mice.10.7554/eLife.25015.010Table 3.Gene expression in the livers of fasted and refed WT and hepatocyte-Srebf-2-/- mice. Total RNA from livers of each mouse liver described in Table 2 was subjected to real-time RT-PCR as described in ‘Materials and methods.’ ApoB was used as the invariant control mRNA. Each value represents the amount of mRNA relative to that in fasted WT mice, which is arbitrarily defined as 1.DOI: http://dx.doi.org/10.7554/eLife.25015.010WTSrebf-2-/-FastedRefedFastedRefedSREBP PathwaySREBP-21.0 ± 0.11.4 ± 0.10.1 ± 0.00.5 ± 0.1SREBP-1a1.0 ± 0.12.6 ± 0.31.2 ± 0.14.7 ± 1.2SREBP-1c1.0 ± 0.141 ± 2.00.2 ± 0.02.7 ± 1.5Cholesterol MetabolismLDLR1.0 ± 0.03.0 ± 0.21.0 ± 0.12.3 ± 0.2HMG-CoA synthase1.0 ± 0.111 ± 1.80.7 ± 0.12.7 ± 0.8HMG-CoA reductase1.0 ± 0.011 ± 1.21.0 ± 0.14.1 ± 0.8Squalene synthase1.0 ± 0.14.3 ± 0.50.8 ± 0.11.1 ± 0.2Fatty Acid MetabolismAcetyl-CoA Carboxylase11.0 ± 0.118 ± 2.30.7 ± 0.06.9 ± 1.4Fatty acid synthase1.0 ± 0.192 ± 7.60.4 ± 0.016 ± 6.0ELOVL61.0 ± 0.155 ± 7.40.7 ± 0.110 ± 2.8Stearoyl-CoA desaturase 11.1 ± 0.231 ± 5.40.0 ± 0.01.8 ± 1.0PNPLA31.3 ± 0.5211 ± 431.9 ± 0.329 ± 7.8CHREBP1.0 ± 0.13.4 ± 0.20.7 ± 0.01.4 ± 0.2Glucose MetabolismGlucokinase1.2 ± 0.351 ± 3.31.8 ± 0.317 ± 3.2G6PD1.0 ± 0.110 ± 2.12.6 ± 0.48.4 ± 3.2PEPCK1.0 ± 0.10.0 ± 0.01.1 ± 0.10.1 ± 0.0ControlApoB1.0 ± 0.10.9 ± 0.01.0 ± 0.10.9 ± 0.1
+In addition to LXR, Srebf-1c is transcriptionally activated by insulin, which is stimulated by feeding mice a high carbohydrate diet (Horton et al., 1998; Shimomura et al., 1999). To determine whether insulin-mediated activation of SREBP-1c was intact in hepatocyte-Srebf-2-/- livers, we subjected mice to a fasting/refeeding protocol using a high carbohydrate/low fat diet previously shown to induce SREBP-1c expression (Horton et al., 1998) (Table 2). In the fasted state, SREBP-1c levels are extremely low. As shown in Table 3, refeeding the high carbohydrate diet to fasted WT mice increased the expression of SREBP-1c mRNA in WT mice by 41-fold. In contrast, the SREBP-1c mRNA levels in livers from refed hepatocyte-Srebf-2-/- mice only increased to a level that was slightly higher than fasted WT mice. There were also blunted increases in the expression of FA synthesis genes in hepatocyte-Srebf-2-/- livers. The increase in FA synthesis mRNA expression that remained was likely mediated by ChREBP, a glucose-responsive transcription factor that can independently activate these genes (Ishii et al., 2004). These studies confirm that insulin-mediated induction of SREBP-1c requires intact LXR activity.
 
-Deletion of SREBP-2 in the liver reduced the amount of LDLR mRNA by ~20% but there was an accompanying ~80% reduction in the mRNA level of PCSK9 (
+**Table 2.**
+ Phenotypic parameters in fasted and refed WT and hepatocyte-Srebf-2-/- mice. Male mice 9–12 wks of age were subjected to fasting and refeeding as described in ‘Materials and methods.’ Each value represents the mean ± SEM.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th colspan="2">WT</th>
+      <th></th>
+      <th colspan="2">Srebf-2-/-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Fasted</td>
+      <td>Refed</td>
+      <td></td>
+      <td>Fasted</td>
+      <td>Refed</td>
+    </tr>
+    <tr>
+      <td>Number</td>
+      <td>6</td>
+      <td>6</td>
+      <td></td>
+      <td>6</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Body weight (g)</td>
+      <td>22.7 ± 1.4</td>
+      <td>25.8 ± 1.1</td>
+      <td></td>
+      <td>19.0 ± 1.3</td>
+      <td>21.7 ± 1.2*</td>
+    </tr>
+    <tr>
+      <td>Liver weight (g)</td>
+      <td>0.92 ± 0.07</td>
+      <td>1.53 ± 0.19</td>
+      <td></td>
+      <td>0.82 ± 0.10</td>
+      <td>1.23 ± 0.13</td>
+    </tr>
+    <tr>
+      <td>Liver cholesterol (mg/g)</td>
+      <td>1.80 ± 0.08</td>
+      <td>1.02 ± 0.03</td>
+      <td></td>
+      <td>1.03 ± 0.05*</td>
+      <td>0.71 ± 0.07*</td>
+    </tr>
+    <tr>
+      <td>Liver triglycerides (mg/g)</td>
+      <td>52.6 ± 11</td>
+      <td>10.3 ± 1.8</td>
+      <td></td>
+      <td>33.2 ± 4.8</td>
+      <td>3.0 ± 0.5*</td>
+    </tr>
+    <tr>
+      <td>Plasma cholesterol (mg/dl)</td>
+      <td>142 ± 9.0</td>
+      <td>90.2 ± 15</td>
+      <td></td>
+      <td>63.3 ± 7.3*</td>
+      <td>43.6 ± 6.1*</td>
+    </tr>
+    <tr>
+      <td>Plasma triglyceride (mg/dl)</td>
+      <td>142 ± 11</td>
+      <td>122 ± 16</td>
+      <td></td>
+      <td>58.5 ± 4.6*</td>
+      <td>28.9 ± 3.8*</td>
+    </tr>
+    <tr>
+      <td>Plasma insulin (ng/ml)</td>
+      <td>0.07 ± 0.01</td>
+      <td>1.00 ± 0.30</td>
+      <td></td>
+      <td>0.08 ± 0.02</td>
+      <td>0.48 ± 0.17</td>
+    </tr>
+    <tr>
+      <td>Plasma glucose (mg/dl)</td>
+      <td>184 ± 28</td>
+      <td>220 ± 14</td>
+      <td></td>
+      <td>121 ± 14</td>
+      <td>182 ± 16</td>
+    </tr>
+  </tbody>
+</table>
+
+_* denotes a level of statistical significance of p<0.05 (Student’s t test) between WT and hepatocyte-Srebf-2 -/- mice._
+
+**Table 3.**
+ Gene expression in the livers of fasted and refed WT and hepatocyte-Srebf-2-/- mice. Total RNA from livers of each mouse liver described in Table 2 was subjected to real-time RT-PCR as described in ‘Materials and methods.’ ApoB was used as the invariant control mRNA. Each value represents the amount of mRNA relative to that in fasted WT mice, which is arbitrarily defined as 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">WT</th>
+      <th></th>
+      <th colspan="2">Srebf-2-/-</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Fasted</td>
+      <td>Refed</td>
+      <td></td>
+      <td>Fasted</td>
+      <td>Refed</td>
+    </tr>
+    <tr>
+      <td>SREBP Pathway</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SREBP-2</td>
+      <td>1.0 ± 0.1</td>
+      <td>1.4 ± 0.1</td>
+      <td></td>
+      <td>0.1 ± 0.0</td>
+      <td>0.5 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>SREBP-1a</td>
+      <td>1.0 ± 0.1</td>
+      <td>2.6 ± 0.3</td>
+      <td></td>
+      <td>1.2 ± 0.1</td>
+      <td>4.7 ± 1.2</td>
+    </tr>
+    <tr>
+      <td>SREBP-1c</td>
+      <td>1.0 ± 0.1</td>
+      <td>41 ± 2.0</td>
+      <td></td>
+      <td>0.2 ± 0.0</td>
+      <td>2.7 ± 1.5</td>
+    </tr>
+    <tr>
+      <td>Cholesterol Metabolism</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LDLR</td>
+      <td>1.0 ± 0.0</td>
+      <td>3.0 ± 0.2</td>
+      <td></td>
+      <td>1.0 ± 0.1</td>
+      <td>2.3 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>HMG-CoA synthase</td>
+      <td>1.0 ± 0.1</td>
+      <td>11 ± 1.8</td>
+      <td></td>
+      <td>0.7 ± 0.1</td>
+      <td>2.7 ± 0.8</td>
+    </tr>
+    <tr>
+      <td>HMG-CoA reductase</td>
+      <td>1.0 ± 0.0</td>
+      <td>11 ± 1.2</td>
+      <td></td>
+      <td>1.0 ± 0.1</td>
+      <td>4.1 ± 0.8</td>
+    </tr>
+    <tr>
+      <td>Squalene synthase</td>
+      <td>1.0 ± 0.1</td>
+      <td>4.3 ± 0.5</td>
+      <td></td>
+      <td>0.8 ± 0.1</td>
+      <td>1.1 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>Fatty Acid Metabolism</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Acetyl-CoA Carboxylase1</td>
+      <td>1.0 ± 0.1</td>
+      <td>18 ± 2.3</td>
+      <td></td>
+      <td>0.7 ± 0.0</td>
+      <td>6.9 ± 1.4</td>
+    </tr>
+    <tr>
+      <td>Fatty acid synthase</td>
+      <td>1.0 ± 0.1</td>
+      <td>92 ± 7.6</td>
+      <td></td>
+      <td>0.4 ± 0.0</td>
+      <td>16 ± 6.0</td>
+    </tr>
+    <tr>
+      <td>ELOVL6</td>
+      <td>1.0 ± 0.1</td>
+      <td>55 ± 7.4</td>
+      <td></td>
+      <td>0.7 ± 0.1</td>
+      <td>10 ± 2.8</td>
+    </tr>
+    <tr>
+      <td>Stearoyl-CoA desaturase 1</td>
+      <td>1.1 ± 0.2</td>
+      <td>31 ± 5.4</td>
+      <td></td>
+      <td>0.0 ± 0.0</td>
+      <td>1.8 ± 1.0</td>
+    </tr>
+    <tr>
+      <td>PNPLA3</td>
+      <td>1.3 ± 0.5</td>
+      <td>211 ± 43</td>
+      <td></td>
+      <td>1.9 ± 0.3</td>
+      <td>29 ± 7.8</td>
+    </tr>
+    <tr>
+      <td>CHREBP</td>
+      <td>1.0 ± 0.1</td>
+      <td>3.4 ± 0.2</td>
+      <td></td>
+      <td>0.7 ± 0.0</td>
+      <td>1.4 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>Glucose Metabolism</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Glucokinase</td>
+      <td>1.2 ± 0.3</td>
+      <td>51 ± 3.3</td>
+      <td></td>
+      <td>1.8 ± 0.3</td>
+      <td>17 ± 3.2</td>
+    </tr>
+    <tr>
+      <td>G6PD</td>
+      <td>1.0 ± 0.1</td>
+      <td>10 ± 2.1</td>
+      <td></td>
+      <td>2.6 ± 0.4</td>
+      <td>8.4 ± 3.2</td>
+    </tr>
+    <tr>
+      <td>PEPCK</td>
+      <td>1.0 ± 0.1</td>
+      <td>0.0 ± 0.0</td>
+      <td></td>
+      <td>1.1 ± 0.1</td>
+      <td>0.1 ± 0.0</td>
+    </tr>
+    <tr>
+      <td>Control</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ApoB</td>
+      <td>1.0 ± 0.1</td>
+      <td>0.9 ± 0.0</td>
+      <td></td>
+      <td>1.0 ± 0.1</td>
+      <td>0.9 ± 0.1</td>
+    </tr>
+  </tbody>
+</table>
+
+Deletion of SREBP-2 in the liver reduced the amount of LDLR mRNA by ~20% but there was an accompanying ~80% reduction in the mRNA level of PCSK9 (Figure 2A). PCSK9 is a secreted protein that degrades LDLRs in liver (Lagace et al., 2006). In livers of hepatocyte-Srebf-2-/- mice, the reduction in LDLR production was balanced by the reduction in PCSK9-mediated LDLR destruction, which ultimately led to no measurable change in steady-state LDLR protein levels (data not shown). Nevertheless, plasma cholesterol levels in hepatocyte-Srebf-2-/- mice were still 50% lower than those measured in WT mice (Table 1). To determine whether lower plasma cholesterol levels were a result of increased clearance of apoB-containing lipoproteins, we measured the 125I-labeled LDL clearance. LDL was isolated from LDL receptor knockout mice and labeled the apoB with 125I (Horton et al., 1999). As shown in Figure 6A, the clearance of LDL was identical in WT and hepatocyte-Srebf-2-/- mice. Therefore, the lower plasma and TG concentrations were likely a result of reduced VLDL production; therefore we measured rates of TG secretion in mice following the administration of Triton. As shown in Figure 6B and C, TG secretion rates from livers of hepatocyte-Srebf-2-/- mice reduced by 29%.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/25015/elife-25015-fig6-v3.jpg)
 
-**Figure 6.:** Srebf-2 mice.-/-(A) Eleven male mice (8 weeks of age) of each genotype were subjected to i.v. injection of 125I-labeled LDL (15 µg of protein, 496 cpm/ng protein). Blood was obtained at 30 s (time 0) and 10, 30, 60, 120, and 240 min for the quantification of plasma content of 125I-labeled apoB. Data were plotted as the percentage of 0 time value. (B) Five male mice (8 wks of age) of each genotype were fasted for 4 hr prior to the study. Each mouse was injected i.v. with 10% triton-saline solution at 500 mg/kg. Plasma TG accumulation of each mouse at 0, 0.5, 1, and 2 hr after the triton injection were measured. (C) Plasma TG secretion rate during a detergent block of lipolysis was calculated for each mouse from the linear regression analysis of the time vs. TG concentration.DOI: http://dx.doi.org/10.7554/eLife.25015.011
+**Figure 6.:** (A) Eleven male mice (8 weeks of age) of each genotype were subjected to i.v. injection of 125I-labeled LDL (15 µg of protein, 496 cpm/ng protein). Blood was obtained at 30 s (time 0) and 10, 30, 60, 120, and 240 min for the quantification of plasma content of 125I-labeled apoB. Data were plotted as the percentage of 0 time value. (B) Five male mice (8 wks of age) of each genotype were fasted for 4 hr prior to the study. Each mouse was injected i.v. with 10% triton-saline solution at 500 mg/kg. Plasma TG accumulation of each mouse at 0, 0.5, 1, and 2 hr after the triton injection were measured. (C) Plasma TG secretion rate during a detergent block of lipolysis was calculated for each mouse from the linear regression analysis of the time vs. TG concentration.
 
 ## Discussion
 
@@ -106,44 +466,44 @@ The current report represents the last in a series of studies that we have carri
 
 ## Materials and methods
 
-## General supplies and measurements
+### General supplies and measurements
 
 Plasma concentrations of cholesterol, TGs, insulin, glucose, and free FAs, and liver cholesterol and TGs contents were measured as previously described (Engelking et al., 2004; Ishibashi et al., 1993; Matsuda et al., 2001). Liver sterol concentrations were determined using high performance liquid chromatography mass spectrometry (McDonald et al., 2007).
 
-## Construction of a targeting vector for the conditional disruption of Srebf-2.
+### Construction of a targeting vector for the conditional disruption of Srebf-2.
 
 A conditional targeting vector of a replacement type was produced as follows. A loxP site was inserted into the promoter region of the Srebf-2~660 bp upstream of exon 1, and a loxp; frt-flanked pgk-neo-pA cassette was inserted into intron 1. Exon 1 encodes the first 29 amino acids of Srebf-2. The conditional targeting vector was constructed in five steps as follows: (1) A 1.1 kb fragment of intron 1 was generated by PCR from SM-1 ES cell genomic DNA with 5’ primers that contained a HindIII sequence and a loxP site, and a 3’ primer that contained a SalI sequence (5’ primer, 5’-AAAAAAGCTTATAACTTCGTATAATGTATGCTATACGAAGTTATCCCGAAGCGGGGCTGGGGGCGTCGCGAG-3’ and 3’ primer, 5’-AAAAAGTCGACTTGTCACACTGTCTGGATGACCAAAATG-3’). This fragment was used as the short arm. (2) The HindIII- SalI fragment of the short arm and a BamHI-HindIII fragment containing a loxP;frt flanked pgk-neo-pA cassette excised from pGEMFRTNEO (provided by Joachim Herz, UT Southwestern) were ligated into the BamHI-SalI sites of pGEM-11Zf(+) (Promega, Madison, WI), yielding plasmid pBP2-KO1. (3) The middle arm contained a loxP site, and ~660 bp promoter, exon 1 and ~230 bp intron 1 of Srebf-2. It was generated by PCR using 5’ primers that contained a NotI site and a loxP site, and 3’ primer that contained a BamHI site (5’ primer, 5’-AAAAAGCGGCCGCATAACTTCGTATAATGTATGCTATACGAAGTTATGATGCAGTGAGGTGACTGCAGGAGTGGG-3’) and 3’ primer, 5’-AAAAAGGATCCCCGCGGCGCCCACGACTCCTCAG-3’). The NotI-BamHI fragment of the middle arm was ligated into the NotI and BamHI sites of pBP2-KO1, yielding plasmid pBP2-KO2. (4) Two copies of hsv-tk cassette were inserted into the SalI site of pBP2-KO2, yielding pBP2-KO3. (5) The long arm is a 7 kb fragment upstream of the promoter region of the Srebf-2. It was prepared by PCR using TaKaRa LA Taq DNA polymerase (Takara Shuzo, Shiga, Japan). The following NotI-containing PCR primers were used for amplification: 5’ primer, 5’-AAAAAGCGGCCGCCTTGGTGAGGGCAGGCTGCAGGCCACTG-3’ and 3’ primer, 5’-AAAAAGCGGCCGCATCTTACAGGTAGTCGGTCACACTGCACAC-3’). The PCR fragment was digested with NotI and inserted into the NotI site of pBP2-KO3, resulting in the final Srebf-2 conditional targeting vector, designated pBP2-KO4. The integrity of all plasmids was confirmed by restriction analysis and DNA sequencing.
 
-## ES cell culture for the disruption of Srebf-2
+### ES cell culture for the disruption of Srebf-2
 
 Passage 8 SM-1 ES cells derived from 129S6/SvEv blastocysts were cultured on leukemia inhibitory factor-producing STO feeder cells (Shimano et al., 1997). On day 0, a total of 1 × 107 cells were transfected by electroporation (275 V, 330 µF, low resistance; GIBCO BRL Electroporator; Life Technologies, Gaithersburg, MD) with 50 µg of SfiI-linearized targeting vector and seeded onto γ-irradiated STO feeder cells. On day 2, ES cells were subjected to selection with 250 µg/ml of G418 (GIBCO BRL, NY). On day 4, ES cells were treated with 2.5 µM Ganciclovir (Bristol-Myers Squibb, Princeton, NJ) to select against random integration. G418 and Ganciclovir-resistant clones were isolated on day 10, and recombined clones were identified by PCR using P1 (5’-CCATCTTGTTCAATGGCCGATCCCAT-3’ from the 5’ coding region of the neo gene) and P2 (5’-ACTTTAGCCACTCCCACGTTCCAAGGAG-3’ from the intron 1 of the Srebf-2 gene outside of the targeting vector). The upstream loxP site in the promoter region was confirmed by PCR with primers P3 (5’-TGTACCTGATGCCTTACTGTGTTACTG-3’ located ~900 bp upstream of exon 1 and P4 (5’-CTTAACAAGGTCTTGAGATCACCTGAG-3’ located ~570 bp upstream of exon 1). The targeted clones were confirmed by Southern blot analysis using a 0.5 kb EcoRI-ApaI genomic DNA probe containing exon 1 and a 0.8 kb EcoRI-HindIII genomic DNA probe containing intron 1 sequence outside of the targeting vector.
 
-## Generation of Srebf-2f/+ and Srebf-2f/f; Albumin-Cre mice
+### Generation of Srebf-2f/+ and Srebf-2f/f; Albumin-Cre mice
 
 One targeted ES clone containing a single Srebf-2flox/+ allele was injected into C57BL/6J blastocysts, yielding chimeric males whose coat color (agouti) indicated a contribution of ES cells from 50–100%. All six chimeric males with 75–95% were fertile, two of which produced offspring that carried the Srebf-2flox/+ allele through the germline. One line was established and used for further breeding. Mice carrying the floxed Srebf-2 allele were genotyped by PCR using primers P3 and P4 (30 cycles, 94°C, 30 s; 60°C, 30 s; 72°C, 2 min). The WT allele produced a PCR product of 330 bp, and the floxed allele a product of 380 bp.
 
 To generate tissue-specific Srebf-2 deleted mice, mice heterozygous for the Srebf-2flox/+ allele (designated Srebf-2f/+) were bred with Albumin-Cre transgenic mice to produce Srebf-2f/+;albumin-Cre mice. The Srebf-2f/+;albumin-Cre mice were bred with Srebf-2f/+ mice to generate Srebf-2f/f;albumin-Cre mice. The albumin-Cre transgene was identified by PCR using primers 5’-GGCCCACACTGAAATGCTCAAATGGGAGAC-3’ and 5’-GGTTACCCACTTCATTTTGCCAGAGGCTAG-3’, which produces a 550 bp product. PCR conditions were the same as that for the genotyping of the floxed Srebf-2 allele.
 
-## Diet studies
+### Diet studies
 
 All mice were housed in colony cages and maintained on a 12 hr light/12 hr dark cycle and fed Teklad Mouse/Rat Diet 2018 from Harlan Teklad Premier Laboratory Diets (Envigo, Madison, WI). For the cholesterol supplementation experiments, mice of each genotype were fed for six weeks with Teklad Mouse/Rat Diet 2018 supplemented with 0.2% cholesterol. For the LXR agonist (T901317) (Cayman Chemical, Ann Arbor, MI) administration studies, mice were fed ad libitum a powdered diet (Teklad Mouse/Rat Diet 2018) containing sufficient T901317 to provide a daily dose of ~25 mg/kg, assuming a 30 g mouse consumes 5 g of chow per day. In fasting refeeding studies, mice were subjected to a fasting and refeeding with a high carbohydrate/low fat diet as described (Liang et al., 2002). Specifically, one group of mice were fasted for 12 hr and a second group was fasted for 12 hr and then refed a high-carbohydrate/low-fat diet (TD 88122; Harlan Teklad) for 12 hr prior to study. The starting times for the feeding regimens were staggered so that all mice were sacrificed at the same time, which was at the end of the dark cycle.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Total RNA was prepared from mouse livers with an RNA STAT-60 kit (Tel-Test, Friendswood, TX). cDNA was synthesized from 2 µg of DNase I-treated total RNA (DNA-free, DNA removal kit, Invitrogen, cat. no. 1906) using the Taqman reverse transcription reagents (Applied Biosystems, Carlsbad, CA) and random hexamer primers. Specific primers for each gene were designed by using PRIMER EXPRESS software (Applied Biosystems, Carlsbad, CA). The real-time RT-PCR contained, in a final volume of 20 µL, 20 ng of reverse-transcribed total RNA, 167 nM of the forward and reverse primers, and 10 µL of 2X SYBR Green PCR Master Mix Applied Biosystems, Carlsbad, CA). PCR reactions were carried out in 384-well plates using the ABI PRISM 7900HT Sequence Detection System (Applied Biosystems, Carlsbad, CA). All reactions were done in triplicate. The relative amount of all mRNAs was calculated using the comparative threshold cycle (CT) method. Mouse apo B mRNA was used as the invariant control. The primers for real-time PCR were described previously (Liang et al., 2002; Park et al., 2004; Yang et al., 2001).
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Membrane and nuclear proteins were prepared from frozen livers as described (Engelking et al., 2004; Moon et al., 2012). Equal aliquots (8 µg) of protein from individual livers were pooled (total, 40 µg) and the proteins were subjected to SDS-PAGE on 8% gels and transferred to nitrocellulose membrane (Bio-Rad, Hercules, CA). Immunoblot analyses were performed using polyclonal anti-mouse SREBP-1 and the monoclonal anti-mouse SREBP-2 antibody as described (Engelking et al., 2004; McFarlane et al., 2015; Moon et al., 2012) using rabbit monoclonal anti-SREBP-1 (IgG-20B12) and anti-SREBP-2 (IgG-22D5) antibodies that were generated against bacterially produced, His-tagged proteins containing amino acids 32–250 of mouse SREBP-1a or SREBP-2. Antibody-bound bands were detected using the SuperSignal West Pico Chemiluminescent Substrate system (ThermoScientific, cat. no. 34080). Anti-mouse CREB (cAMP response element binding protein, Invitrogen) and anti-dog Calnexin (Enzo Life Science, Farmingdale, NY) antibodies were used as loading controls for nuclear and membrane proteins, respectively.
 
-## In vivo hepatic lipid synthesis
+### In vivo hepatic lipid synthesis
 
 Rates of sterol and FA synthesis in liver were determined using 3H-labeled water as described (Shimano et al., 1996).
 
-## In vivo VLDL secretion
+### In vivo VLDL secretion
 
 Mice were fasted for 4 hr and injected with 10% Triton WR-1339/saline solution (Tyloxapol; Sigma-Aldrich) (500 mg/kg) via the retro-orbital vein. Blood was collected from the tail vein at 0, 0.5, 1, and 2 hr after the triton injection and assayed for plasma levels of TGs. The plasma TG secretion rate was calculated from the linear regression analysis of the time vs. TG concentration.
 
-## Plasma clearance of 125I-LDL
+### Plasma clearance of 125I-LDL
 
 Mouse LDL (density 1.019–1.063 g/ml) was obtained from pooled Ldlr-/- mouse plasma by sequential ultracentrifugation and radiolabeled with sodium 125I. Clearance of the labeled LDL from plasma was studied as previously described (Horton et al., 1999; Rashid et al., 2005). Briefly, recipient mice were anesthetized with sodium pentobarbital and received a bolus of 0.1 ml of saline containing 15 µg of 125I-LDL (496 cpm/ng protein; ~53% labeled on apo B) via the right jugular vein. Blood was collected from the left jugular vein at 0.5, 10, 30, 60, 120, and 240 min after the injection. Remaining plasma 125I-labeled apo B was determined by γ-scintillation spectrometry after isopropanol precipitation.

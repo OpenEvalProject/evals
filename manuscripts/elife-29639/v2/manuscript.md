@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.29639.001 Neuronal inhibition is crucial for temporally precise and reproducible signaling in the auditory brainstem. Previously we showed that for various synthetic stimuli, spherical bushy cell (SBC) activity in the Mongolian gerbil is rendered sparser and more reliable by subtractive inhibition (Keine et al., 2016). Here, employing environmental stimuli, we demonstrate that the inhibitory gain control becomes even more effective, keeping stimulated response rates equal to spontaneous ones. However, what are the costs of this modulation? We performed dynamic stimulus reconstructions based on neural population responses for auditory nerve (ANF) input and SBC output to assess the influence of inhibition on acoustic signal representation. Compared to ANFs, reconstructions of natural stimuli based on SBC responses were temporally more precise, but the match between acoustic and represented signal decreased. Hence, for natural sounds, inhibition at SBCs plays an even stronger role in achieving sparse and reproducible neuronal activity, while compromising general signal representation.
+Neuronal inhibition is crucial for temporally precise and reproducible signaling in the auditory brainstem. Previously we showed that for various synthetic stimuli, spherical bushy cell (SBC) activity in the Mongolian gerbil is rendered sparser and more reliable by subtractive inhibition (Keine et al., 2016). Here, employing environmental stimuli, we demonstrate that the inhibitory gain control becomes even more effective, keeping stimulated response rates equal to spontaneous ones. However, what are the costs of this modulation? We performed dynamic stimulus reconstructions based on neural population responses for auditory nerve (ANF) input and SBC output to assess the influence of inhibition on acoustic signal representation. Compared to ANFs, reconstructions of natural stimuli based on SBC responses were temporally more precise, but the match between acoustic and represented signal decreased. Hence, for natural sounds, inhibition at SBCs plays an even stronger role in achieving sparse and reproducible neuronal activity, while compromising general signal representation.
 
 ## Introduction
 
@@ -32,21 +32,233 @@ We find stimulus reconstructions based on the ANF input to be overall more accu
 
 We recorded from spherical bushy cells (SBCs) in the AVCN of anesthetized gerbils in vivo to understand the influence of neuronal inhibition on the encoding of complex acoustic sounds. For this purpose, we presented real environmental sounds (e.g. walking on gravel, singing birds), and performed an explicit population decoding which allows the analysis of the stimulus representation in its original form.
 
-## Modulation of SBC responses under natural acoustic stimulation
+### Modulation of SBC responses under natural acoustic stimulation
 
 To directly investigate the transformation at the ANF-SBC synapse, the neuronal response was separately analyzed for EPSPs which trigger an output spike (EPSPsucc) and EPSPs which fail to trigger SBC activity (EPSPfail) as described previously (Figure 1A) (Keine et al., 2016). As shown before, these failures of transmission are mostly caused by inhibition at the ANF-SBC junction (Kuenzel et al., 2011; Keine and Rübsamen, 2015; Keine et al., 2016). The acoustic stimulus was composed of seven different segments of varying spectral breadth and featuring rapid amplitude modulations (Figure 1B+C). First, we recorded the change in firing activity of ANF input and SBC output for simple pure tones at the units’ characteristic frequency. Both ANF input and SBC output rates increased during pure tone stimulation (ANFspont = 71.3 ± 31.8 Hz vs. ANFtone = 234.3 ± 53.9 Hz; Δ = 163 ± 59.3 Hz, p<0.001; SBCspont = 43.4 ± 18.3 Hz vs. SBCtone = 97.3 ± 33.9 Hz, Δ = 53.9 ± 27.9 Hz, p<0.001, see Table 1 for additional details of statistical tests, and Figure 1—source data 1, Figure 1Di). During natural acoustic stimulation, the ANF input firing rates also increased (ANFspont = 71.3 ± 31.8 Hz vs. ANFnatural = 129.7 ± 38.4 Hz, Δ = 58.4 ± 25.5 Hz, p<0.001), however, contrary to pure tone stimulation, the SBC output activity remained unchanged (SBCspont = 43.4 ± 18.3 Hz vs. SBCnatural = 43.1 ± 22.1 Hz, Δ = 0.3 ± 15.5 Hz, p=0.9, Figure 1C for representative trace and Figure 1Dii for population data). This effect was persisted when the different stimulus segments were analyzed separately (Figure 1Diii). While the increase in SBC firing rates for tones is consistent with previous studies using various synthetic stimuli (Kopp-Scheinpflug et al., 2002; Kuenzel et al., 2011; Keine and Rübsamen, 2015; Keine et al., 2016), the constancy for natural stimulation has not been demonstrated before.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/29639/elife-29639-fig1-v2.jpg)
 
-**Figure 1.:** (A) Representative voltage trace of SBC recording during acoustic stimulation. Voltage signals could be divided into EPSP followed by postsynaptic AP (blue dots) and EPSPs which fail to trigger an AP (gray dots). The sum of both types of events comprised the ANF input. (B) The acoustic stimulus was composed of a series of environmental sounds (i.e. rain falling, walking on gravel, bird singing, shoveling sand, ripping grass, walking through forest, walking on fallen leaves), containing naturally occurring frequency and amplitude modulations. Top: amplitude profile; bottom: spectrogram. The stimulus was presented at a mean sound pressure level of 40 dB SPL. PSD = power spectral density. (C) Firing rates of one representative cell during acoustic stimulation (CF = 2.6 kHz, bin size 0.1 s). Note that the firing rate fluctuations at the ANF level (orange) are higher than at the SBC level (blue). Arrows at the right indicate spontaneous firing rates in the absence of sound. (D) Population data on firing rate changes for ANF input and SBC output during pure tone and natural sound stimulation. (i) Pure tone stimulation at the units’ characteristic frequency resulted in a firing rate increase in both ANF input and SBC output. (ii) While during stimulation with natural sounds, the average ANF firing increased comparably to pure tone stimulation, the average SBC firing remains at the level of spontaneous activity. (iii) This effect was consistently observed throughout different stimulus segments of the natural sound stimulus. Horizontal lines indicate the average spontaneous firing rate in the absence of sound.10.7554/eLife.29639.003Figure 1—source data 1.Data are in Hz.
+**Figure 1.:** (A) Representative voltage trace of SBC recording during acoustic stimulation. Voltage signals could be divided into EPSP followed by postsynaptic AP (blue dots) and EPSPs which fail to trigger an AP (gray dots). The sum of both types of events comprised the ANF input. (B) The acoustic stimulus was composed of a series of environmental sounds (i.e. rain falling, walking on gravel, bird singing, shoveling sand, ripping grass, walking through forest, walking on fallen leaves), containing naturally occurring frequency and amplitude modulations. Top: amplitude profile; bottom: spectrogram. The stimulus was presented at a mean sound pressure level of 40 dB SPL. PSD = power spectral density. (C) Firing rates of one representative cell during acoustic stimulation (CF = 2.6 kHz, bin size 0.1 s). Note that the firing rate fluctuations at the ANF level (orange) are higher than at the SBC level (blue). Arrows at the right indicate spontaneous firing rates in the absence of sound. (D) Population data on firing rate changes for ANF input and SBC output during pure tone and natural sound stimulation. (i) Pure tone stimulation at the units’ characteristic frequency resulted in a firing rate increase in both ANF input and SBC output. (ii) While during stimulation with natural sounds, the average ANF firing increased comparably to pure tone stimulation, the average SBC firing remains at the level of spontaneous activity. (iii) This effect was consistently observed throughout different stimulus segments of the natural sound stimulus. Horizontal lines indicate the average spontaneous firing rate in the absence of sound.
+
+**Table 1.**
+ Summary of statistical comparisons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Source</th>
+      <th>Parameter</th>
+      <th>Group 1 (mean ± SD)</th>
+      <th>Group 2 (mean ± SD)</th>
+      <th>Test statistics</th>
+      <th>Statistical test</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="6">Figure 1</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Panel Di (pure tones)</td>
+      <td>Firing Rate ANF</td>
+      <td>Spont = 71.3 ± 31.8 Hz</td>
+      <td>Stim = 234.3 ± 53.9 Hz</td>
+      <td>t(df = 31) = –15.5, p=3.5e-16, U1=0.87</td>
+      <td>paired t test</td>
+    </tr>
+    <tr>
+      <td>Firing Rate SBC</td>
+      <td>Spont = 43.4 ± 18.3</td>
+      <td>Stim = 97.3 ± 33.9</td>
+      <td>t(31) = –10.9, p=3.5e-12, U1=0.59</td>
+      <td>paired t test</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Panel Dii (natural sounds)</td>
+      <td>Firing Rate ANF</td>
+      <td>Spont = 71.3 ± 31.8 Hz</td>
+      <td>Stim = 129.7 ± 38.4 Hz</td>
+      <td>t(31) = –12.9, p=4.9e-14, U1=0.3</td>
+      <td>paired t test</td>
+    </tr>
+    <tr>
+      <td>Firing Rate SBC</td>
+      <td>Spont = 43.4 ± 18.3</td>
+      <td>Stim = 43.1 ± 22.1</td>
+      <td>t(31) = 0.12, p=0.9, U1=0.03</td>
+      <td>paired t test</td>
+    </tr>
+    <tr>
+      <td colspan="6">Figure 2</td>
+    </tr>
+    <tr>
+      <td>Panel A</td>
+      <td>Threshold EPSP</td>
+      <td>Spont = 7.5 ± 2.4 V/s</td>
+      <td>Stim = 9 ± 2.8 V/s</td>
+      <td>t(31) = –10.2, p=1.8e-11, U1=0.1</td>
+      <td>paired t test</td>
+    </tr>
+    <tr>
+      <td>Panel B</td>
+      <td>Failure Fraction</td>
+      <td>Spont = 0.36 ± 0.2</td>
+      <td>Stim = 0.65 ± 0.17</td>
+      <td>t(31) = –16.3, p=9.1e-17, U1=0.28</td>
+      <td>paired t test</td>
+    </tr>
+    <tr>
+      <td>Panel Ci</td>
+      <td>Sparsity</td>
+      <td>ANF input = 0.09 ± 0.05</td>
+      <td>SBC output = 0.17 ± 0.07</td>
+      <td>t(31) = –6.9, p=8.2e-8, U1=0.17</td>
+      <td>paired t test</td>
+    </tr>
+    <tr>
+      <td>Panel Di</td>
+      <td>Reproducibility</td>
+      <td>ANF input = 0.13 ± 0.09</td>
+      <td>SBC output = 0.28 ± 0.18</td>
+      <td>Z(N=32) = –4.9, p=8.8e-7, U1=0.2</td>
+      <td>Wilcox. sig.-rank</td>
+    </tr>
+    <tr>
+      <td colspan="6">Figure 3</td>
+    </tr>
+    <tr>
+      <td rowspan="9">Panel K</td>
+      <td>Corr. Section</td>
+      <td>ANF = 0.66 ± 0.14</td>
+      <td>EPSP = 0.71 ± 0.11</td>
+      <td>Z(N=10) = –2.8, p=0.006*, U1=0.1</td>
+      <td>Wilcox. sig.-rank</td>
+    </tr>
+    <tr>
+      <td>Corr. Section</td>
+      <td>ANF = 0.66 ± 0.14</td>
+      <td>SBC = 0.56 ± 0.16</td>
+      <td>Z(N=10) = –2.8, p=0.006*, U1=0.1</td>
+      <td>Wilcox. sig.-rank</td>
+    </tr>
+    <tr>
+      <td>Corr. Section</td>
+      <td>EPSP = 0.71 ± 0.11</td>
+      <td>SBC = 0.56 ± 0.16</td>
+      <td>Z(N=10) = 2.8, p=0.006*, U1=0.35</td>
+      <td>Wilcox. sig.-rank</td>
+    </tr>
+    <tr>
+      <td>Corr. Time Section</td>
+      <td>ANF = 0.68 ± 0.14</td>
+      <td>EPSP = 0.71 ± 0.14</td>
+      <td>Z(N=10) = –2.7, p=0.0117*, U1=0.1</td>
+      <td>Wilcox. sig.-rank</td>
+    </tr>
+    <tr>
+      <td>Corr. Time Section</td>
+      <td>ANF = 0.68 ± 0.14</td>
+      <td>SBC = 0.58 ± 0.15</td>
+      <td>Z(N=10) = 2.7, p=0.0117*, U1=0.15</td>
+      <td>Wilcox. sig.-rank</td>
+    </tr>
+    <tr>
+      <td>Corr. Time Section</td>
+      <td>EPSP = 0.71 ± 0.14</td>
+      <td>SBC = 0.58 ± 0.15</td>
+      <td>Z(N=10) = 2.8, p=0.006*, U1=0.25</td>
+      <td>Wilcox. sig.-rank</td>
+    </tr>
+    <tr>
+      <td>Corr. Freq. Section</td>
+      <td>ANF = 0.45 ± 0.042</td>
+      <td>EPSP = 0.44 ± 0.071</td>
+      <td>Z(N=10) = 1.6, p=0.39*, U1=0.2</td>
+      <td>Wilcox. sig.-rank</td>
+    </tr>
+    <tr>
+      <td>Corr. Freq. Section</td>
+      <td>ANF = 0.45 ± 0.042</td>
+      <td>SBC = 0.34 ± 0.058</td>
+      <td>Z(N=10) = 2.8, p=0.006*, U1=0.85</td>
+      <td>Wilcox. sig.-rank</td>
+    </tr>
+    <tr>
+      <td>Corr. Freq. Section</td>
+      <td>EPSP = 0.44 ± 0.071</td>
+      <td>SBC = 0.34 ± 0.058</td>
+      <td>Z(N=10) = 2.8, p=0.006*, U1=0.5</td>
+      <td>Wilcox. sig.-rank</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Factor 1</td>
+      <td>Factor 2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Panel E</td>
+      <td>Autocorrelation</td>
+      <td>Height: p=2.9e-25</td>
+      <td>Response Type: p=0.002</td>
+      <td></td>
+      <td>ANOVA, 2-factor</td>
+    </tr>
+    <tr>
+      <td>Panel F</td>
+      <td>Spectra</td>
+      <td>Mod. Rate: p=1.7e-6</td>
+      <td>Response Type: p=2.1e-51</td>
+      <td></td>
+      <td>ANOVA, 2-factor</td>
+    </tr>
+    <tr>
+      <td>Panel G</td>
+      <td>Freq. XCorr</td>
+      <td>Delta Freq: p=1.1e-14</td>
+      <td>Response Type p=0.023</td>
+      <td></td>
+      <td>ANOVA, 2-factor</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p-values Bonferroni-corrected for N = 3 comparisons._
 
 The unchanged average firing rates of the SBC output during natural acoustic stimulation was accompanied by an increase in threshold EPSP (Spont = 7.5 ± 2.4 V/s vs. Stim = 9 ± 2.8 V/s, Δ = 1.4 ± 0.8 V/s, p<0.001, see Figure 2—source data 1) and failure fraction (Spont = 0.36 ± 0.2 vs. Stim = 0.65 ± 0.17, Δ = 0.29 ± 0.1, p<0.001, Figure 2A) (see also Keine et al., 2016). Together with previous results, this indicates a strong influence of inhibition, which limits the increase in average SBC firing and thereby effectively regulates the SBC output gain. The quality of the neuronal response was assessed by calculating the sparsity (Figure 2B) and response reproducibility (Figure 2C) for both the complete natural stimulus and the different stimulus segments individually. Consistent with our previous results using synthetic sounds, both sparsity and reproducibility of the SBC output were increased compared to the ANF input (sparsity: ANF input = 0.09 ± 0.05 vs. SBC output = 0.17 ± 0.07, Δ = 0.08 ± 0.06, p<0.001; reproducibility: ANF input = 0.13 ± 0.09 vs. SBC output = 0.28 ± 0.18, Δ = 0.14 ± 0.12, p<0.001). Notably, while the absolute values of sparsity and reproducibility were lower for natural sounds compared to the complex, but synthetic stimuli used previously (Keine et al., 2016), the relative increase of both metrics at the ANF-SBC junction was larger during natural acoustic stimulation (sparsity: natural = 105 ± 98% vs. synthetic = 48 ± 49%, p=0.004; reproducibility: natural = 118 ± 74% vs. synthetic = 80 ± 59%, p=0.024, t-test) (Keine et al., 2016).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/29639/elife-29639-fig2-v2.jpg)
+
+**Figure 2.:** (A) During acoustic stimulation the threshold EPSP for AP generation (left) was increased and consequently so was the failure fraction (right), indicating strong inhibition during acoustic stimulation with natural sounds. (B) (i) The sparsity of the neuronal response was separately calculated for the ANF input and the SBC output. The SBC output showed consistently higher sparsity than the ANF input. (ii) The increase in sparsity from the ANF input (orange) to the SBC output (blue) was consistently observed for the different stimulus segments. Simulated (subtractive) inhibition (ANF +SI, green) resulted in similar increases in sparsity. Notably, for conditions in which the sparsity of the ANF input was high (i.e. 'sand'), the SBC output did not increase further. (C) (i) Similar to sparsity, the reproducibility of the neuronal response increased at the SBC level. (ii) Again, this effect was consistent for the different stimulus segments and well approximated by simulating subtractive inhibition.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/29639/elife-29639-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic of the activity-dependent subtractive inhibition (ADSI) model. The PSTH of the ANF input was time-shifted and integrated with an exponential kernel with time-constant $\tau_{I}$ to obtain an intermediate representation AI(t). The resulting signal was passed through a static, sigmoid nonlinearity defined by the slope S, the instantaneous strength of inhibition I0, and the midpoint O. The resulting function is then subtracted from the experimental ANF input to obtain the PSTH with simulated inhibition (ANF +SI). The strength of inhibition was adjusted for each cell to match the experimentally observed failure rates. (B) Several models of inhibition could account for the observed responses, quantified as the failure fraction (ii), sparsity (iii), reproducibility (iv) and the RMSE. The quality of the ADSI model was then compared to three other models of inhibition: tonic subtractive inhibition (left column), tonic divisive inhibition (middle left), and an inverse activity-dependent inhibition (right). (i) PSTH sections of a representative cell (CF = 1.8 kHz) for the ANF input (orange), SBC output (blue) and the simulated SBC output after applying the respective inhibition model (ANF +SI, green). Both divisive (middle left) and ASDI (middle right) showed good overlap with the experimental SBC output and with a margin displayed the lowest absolute squared error (RMSE) between data and model. (ii) Divisive inhibition and ASDI matched the experimental failure rates well. Pure subtraction (left) resulted in slight overestimation and inverse activity-dependent inhibition failed to reach the experimentally observed failure rates. (iii) The increase in sparsity was best matched with the ASDI model. Tonic subtraction resulted in sparsity exceeding the experimental data, while divisive inhibition and inverted ASDI failed to increase sparsity. (iv) The increase in reproducibility was overestimated in the tonic subtraction model and underestimated in the divisive inhibition and inverse ASDI. The ASDI model showed on average a qualitatively good fit with the data, with some cells being under- or overestimated. Overall the ADSI model showed the best combination of match with the real data along the compared dimensions.
+
 These results corroborate that acoustically evoked inhibition significantly shapes the SBC output activity and results in sparser and more reproducible SBC firing compared to ANF input. Next, we simulated a rate-dependent subtractive inhibition (see Materials and methods and Figure 2 – supporting Figure 1 for details) and compared the simulation results to the experimental data. We found that the simulated response (Figure 2Bii, green) showed changes similar to the measured SBC output, suggesting that activity-dependent subtractive inhibition is a possible candidate mechanism in shaping SBC output activity during acoustic stimulation.
 
-## Dynamic stimulus reconstruction from population responses
+### Dynamic stimulus reconstruction from population responses
 
 While the gain control at the SBC output seems beneficial for the input to coincidence detector neurons in the MSO, this increase in precision and reproducibility might be achieved at the expense of overall stimulus representation. This is already indicated by the flattened rate-level curves in SBCs compared to ANFs (Keine et al., 2016, Figure 3). We therefore estimated how well the neuronal responses of ANFs, SBCs and also the failed EPSPs represent the acoustic stimulus.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/29639/elife-29639-fig3-v2.jpg)
+
+**Figure 3.:** (A) Stimulus reconstruction was performed by estimating linear reconstruction kernels (2) for ANF-, EPSPfail- and SBC responses (1), separately. The respective reconstructions were then used to predict stimulus reconstructions (3), which were then compared to the real stimulus used in the estimation (4). (B) Spectrogram of the real stimulus. The frequency range was reduced from its original range of 16 kHz (see Figure 1B) to the range represented in the ANFs’ receptive fields (0.3–4.4 kHz, CFs shown as blue dots on the left). Color scales are identical for all spectrograms. PSD = power spectral density. (C) The population response of the ANFs sorted by CF (top) and the ANF-reconstructed stimulus (bottom). The global structure and even the envelope fine-structure is preserved in the reconstruction. For more finely resolved spectrograms see Figure 4. (D) The rate of EPSPfail sorted as above (top) and the EPSPfail-reconstructed stimulus (bottom). Again, global structure and envelope fine-structure are preserved with inaccuracies in the overall range. (E) The SBC AP population response (top) and the SBC-reconstructed stimulus (bottom). While the envelope fine-structure appears again preserved, the range of the reconstruction is much more limited, i.e. relatively faint parts appear louder in the reconstruction louder than expected (e.g. around 9 s), and vice versa loud parts appear fainter (e.g. after 6 s). (F) The joint histogram across levels between real (abscissa) and reconstructed (ordinate) for ANF responses. The correlation between the two is evident (compare to grey diagonal representing x = y), with a slight deviation below −23 dB, were the reconstructed stimulus did not cover low enough levels (yellow line indicates linear regression). (G) The EPSPfail-based joint histogram with true level exhibits an overall similar shape as the SBCs (see panel J for detailed comparison). (H) The SBC-based joint histogram is more widely distributed around the diagonal and limited in range (see panel I for detailed comparison). (I) Subtraction of the SBC-based from the ANF-based histogram indicates an increase in width apparent by the negative (blue) margins and the positive (red) spine. (J) Subtracting instead the EPSPfail-based from the ANF-based histogram, leads to a much smaller difference with an even better correlation around the diagonal for EPSPfail (blue parts on diagonal) for low and high levels. (K) The correlation between the real and the reconstructed stimulus was significantly worse for SBCs compared with either ANF or EPSPfail. Correlation was mostly governed by temporal (middle), rather than spectral (right) variations for all three signals (n = 10 cross-validation sections, based on 32 neurons, *p<0.05, **p<0.01, see Table 1 for exact p-values).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/29639/elife-29639-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** We compared the stimulus reconstruction between the experimental SBC output and the ANF input subject to same subtractive inhibition as in Figure 2 (ANF + SI, see Materials and methods for details). (A) SBC responses and reconstructed spectrogram, same as Figure 3E, provided for direct comparison. (B) Subtractive inhibition applied to the ANF responses (ANF + SI) leads to similar responses and reconstructed spectrogram as for the SBC responses. (C) Joint histogram of reconstructed levels from SBC responses compared with the real levels (as in Figure 3H). (D) Joint level histogram comparing the ANF + SI to the real levels, take a similar shape with almost identical slope compared to the SBC responses. However, SBC responses have an even more restricted dynamic range for low levels. (E) Reconstruction quality measured by correlation coefficients did not differ significantly between SBC and ANF + SI for either total, time or frequency correlations (all p>0.05). (F) Variance of the reconstructed stimulus for ANF + SI was comparable to the experimental SBC output (p=0.23).
 
 Responses of sensory neurons covary with certain aspects of an externally presented stimulus. For single neurons, this covariation is thus often quantified in relation to certain stimulus properties (frequency, sound level, lag, etc.) establishing different types of receptive fields (as in Keine et al., 2016). While informative about single-cell properties, these analyses fail to provide a more complete understanding of the representation on the population level, which assesses the different stimulus aspects jointly. For this purpose, it is convenient to combine the population responses and relate them to the original stimulus representation. One general approach of this kind is stimulus reconstruction (Stanley et al., 1999; Mesgarani et al., 2009; Mesgarani and Chang, 2012), which performs a prediction of the stimulus based on a multitude of neural responses (see Figure 3A for illustration and Materials and methods for details).
 
@@ -54,7 +266,7 @@ Stimulus reconstruction based on the ANF responses (Figure 3C) provided a faithf
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/29639/elife-29639-fig4-v2.jpg)
 
-**Figure 4.:** (A) A 250 ms snippet of the real spectrogram (Figure 3B) zoomed in. The yellow box indicates a region for comparing the across frequency correlations across the different spectrograms (see G). (B) The reconstructed stimulus from the ANFs shows that temporal features of the stimulus can be reconstructed down to approximately 5–10 ms (visual estimate), which is coarser than the resolution of the spectrogram (2 ms). (C) The EPSPfail reconstruction appears similar to the ANF reconstruction, with an overall smoother appearance. (D) The SBC reconstruction appears more ‘vertical’, that is, with more correlation across frequencies (see G) and less modulation, but otherwise temporally sharp (see E). (E) The temporal precision of the different reconstructions was assessed by the width of the autocorrelation (inset: width of peak), resolved at multiple heights (inset: horizontal lines, black to red) relative to the correlation at Δt = 0 (inset: maximum). The SBC (blue) reconstruction was most precise, while the EPSPfail (grey) was least precise (2-way ANOVA with factors ‘relative height’ and ‘response type’, see panel for p-values, n = 10 stimulus sections). (F) The emphasis of the temporal modulations was overall similar with a significant overrepresentation of the 100–160 Hz in the SBC reconstruction (PSD = power spectral density, 2 SEM shown, however, very small variation, see panel for p-values, black dots indicate regions of significant deviation with False-Discovery-Rates at p<0.001, Benjamini and Hochberg, 1995). (G) The spectral correlation of SBC was larger than for ANFs and EPSPfail for large frequency separations (>2 kHz, see panel for p-values). Correlations were computed for different frequency separations (abscissa), but within each time-bin.10.7554/eLife.29639.012Figure 4—source data 1.fail activity.
+**Figure 4.:** (A) A 250 ms snippet of the real spectrogram (Figure 3B) zoomed in. The yellow box indicates a region for comparing the across frequency correlations across the different spectrograms (see G). (B) The reconstructed stimulus from the ANFs shows that temporal features of the stimulus can be reconstructed down to approximately 5–10 ms (visual estimate), which is coarser than the resolution of the spectrogram (2 ms). (C) The EPSPfail reconstruction appears similar to the ANF reconstruction, with an overall smoother appearance. (D) The SBC reconstruction appears more ‘vertical’, that is, with more correlation across frequencies (see G) and less modulation, but otherwise temporally sharp (see E). (E) The temporal precision of the different reconstructions was assessed by the width of the autocorrelation (inset: width of peak), resolved at multiple heights (inset: horizontal lines, black to red) relative to the correlation at Δt = 0 (inset: maximum). The SBC (blue) reconstruction was most precise, while the EPSPfail (grey) was least precise (2-way ANOVA with factors ‘relative height’ and ‘response type’, see panel for p-values, n = 10 stimulus sections). (F) The emphasis of the temporal modulations was overall similar with a significant overrepresentation of the 100–160 Hz in the SBC reconstruction (PSD = power spectral density, 2 SEM shown, however, very small variation, see panel for p-values, black dots indicate regions of significant deviation with False-Discovery-Rates at p<0.001, Benjamini and Hochberg, 1995). (G) The spectral correlation of SBC was larger than for ANFs and EPSPfail for large frequency separations (>2 kHz, see panel for p-values). Correlations were computed for different frequency separations (abscissa), but within each time-bin.
 
 We compared the dynamic range of the individual reconstructions by computing conditional level densities (CLD, see Methods for details). Each entry is a conditional probability Pcond (shown in grayscale) of a level in the reconstruction (ordinate), given that the same spectrotemporal bin in the real stimulus had a given level (abscissa). The CLDs (Figure 3F–H) reflected the differences in level representation (described above) by steeper slopes (yellow lines) for ANFs and EPSPfail. All three slopes were differed from each other, that is the 95% confidence intervals of the slopes are non-overlapping (ANF: [0.54 ,0.542], EPSPfail: [0.6 ,0.602], SBC: [0.427, 0.429]). To directly compare the CLDs, we subtracted pairs of CLDs for two response types (Figure 3I/J). Differences in level representation were particularly salient at the high and low-level edges (high and low level ends).
 
@@ -84,37 +296,49 @@ In summary, the present study using natural stimuli suggests a possible specific
 
 ## Materials and methods
 
-## Animals and surgical procedure
+### Animals and surgical procedure
 
 All experiments were performed at the Neurobiology Laboratories of the Faculty of Bioscience, Pharmacy and Psychology of the University of Leipzig (Germany), approved by the Saxonian District Government Leipzig (TVV 06/09) and conducted according to the European Communities Council Directive (86/609/EEC). Animals were housed in the animal facility of the Institute of Biology with 12 hr light/dark cycle and access to food and water ad libitum.
 
 In vivo loose-patch recordings were conducted as described previously (Keine et al., 2016). In brief, young adult Mongolian Gerbils aged 6–8 weeks were anesthetized by an intraperitoneal injection of a mixture of ketamine (140 μg/g body weight, Ketamin-Ratiopharm, Ratiopharm, Ulm, Germany) and xylazine hydrochloride (3 μg/g body weight, Rompun, Beyer, Leverkusen, Germany). The animal’s skull was exposed and a brass head post glued to the skull to fix the animal in a custom-built stereotactic apparatus in a prone position. Recording electrodes were pulled from borosilicate glass (GB150F-10, Science Products, Hofheim, Germany) to have impedance of 3–5 MΩ when filled with the pipette solution (in mM): 135 NaCl, 5.4 KCl, 1 MgCl2, 1.8 CaCl2, 5 HEPES, pH adjusted to 7.3 with NaOH. The recording electrode was lowered through a hole in the skull into the anterior portion of the ventral cochlear nucleus (AVCN). High-positive pressure was applied (200 mbar) when passing through non-auditory tissue and reduced to 30 mbar when entering the AVCN. When approaching a cell, the pressure was equalized or slight negative pressure (−5 mbar) applied. Single-units were recorded when exhibiting a positive AP amplitude of at least 2 mV and showing the characteristic complex waveform identifying them as large spherical bushy cells of the rostral AVCN (Pfeiffer, 1966; Winter and Palmer, 1990; Englitz et al., 2009; Typlt et al., 2010).
 
-## Acoustic stimulation
+### Acoustic stimulation
 
 Recordings were performed in a sound-attenuating and electrically isolated chamber (Type 400, Industrial Acoustics, Niederkrüchten, Germany). Acoustic stimuli were generated by custom-written Matlab (RRID:SCR_001622) functions and delivered via a custom-built earphone (DT48, Beyerdynamic, Heilbronn, Germany) positioned just in front of the ear canal. Acoustic stimuli were composed of environmental sounds and consisted of seven segments of length 3.46 s with cos2 amplitude transitions of 460 ms between consecutive segments to prevent unexpected transients (see Supplementary file 1 for the audio file containing the stimulus). The stimulus had a total length of 18.7 s and was presented at least 20 times for each cell at 40 dB SPL with maximal sound intensities of 85 dB SPL.
 
-## Data analysis
+### Data analysis
 
 Recorded voltage signals were digitized at 97.7 kHz (24 bit, RP2.1, Tucker-Davis Technologies) and filtered between 5 Hz and 7.5 kHz using a zero-phase digital IIR filter. Neuronal signals were detected by the fast upward stroke of the excitatory postsynaptic potential (EPSP) and separated into events which successfully trigger a postsynaptic AP (EPSPsucc) and events that fail to trigger a postsynaptic action potential (EPSPfail). Sparsity and reproducibility of the neuronal response were separately computed for the ANF input (EPSPsucc + EPSPfail) and the SBC output (EPSPsucc).
 
-The sparsity of the response rate was computed as the variance-based method described previously (Rolls and Tovee, 1995; Willmore and Tolhurst, 2001) with sparsity defined asS=1-rtt2 / r(t)2t
+The sparsity of the response rate was computed as the variance-based method described previously (Rolls and Tovee, 1995; Willmore and Tolhurst, 2001) with sparsity defined as
 
-where .t indicates an average over time. Its values range between 0 (maximally dense) and 1 (maximally sparse).
+$$
+S=1-rt_{t}^{2}/r(t)^{2}_{t}
+$$
+
+where $._{t}$ indicates an average over time. Its values range between 0 (maximally dense) and 1 (maximally sparse).
 
 The reproducibility of the neural response was computed in two steps. First, the raw cross-correlation was computed between two trials, divided by (S1 S2/Nbins), that is, the product of the number of spikes in each trial, divided by the number of time bins. Second, the cross-correlation was averaged across all pairs of non-identical trials, and then normalized by the number of such pairs, equal to N (N-1)/2, where N is the total number of trials. Finally, the cross-correlation at time 0 was chosen, and ‘1’ subtracted from it, in order to obtain a measure which equals 0 for a random process with fixed rate (aside from the centering around 0, it is thus very similar to the correlation index by Joris et al., 2006). Values > 0 indicate above chance correlation in the response between trials, beyond what would be expected based on correlation in rate alone. Importantly, reproducibility can attain values >1, with an upper limit determined by the firing rates in the different trials.
 
-## Stimulus reconstruction
+### Stimulus reconstruction
 
 The set of responses from all recorded neurons was used to re-estimate the stimulus spectrogram. A linear reconstruction approach was implemented, which amounts to a linear regression between the neural responses as predictors, and the spectrogram of the stimulus, computed as the absolute value of the short-term Fourier transform, as dependent variables (Mesgarani et al., 2009; Mesgarani and Chang, 2012). This kind of population-based approach allows a combination of the overall information available in the neural response for accurately re-estimating the stimulus. Explicit stimulus reconstruction provides a standardized way to compare stimulus representations along stages of a sensory system, here between the ANF, SBC, and failed EPSPs. Clearly, the brain may use different strategies internally to decode or transform this information, although the present approach has proven useful for approximating the resulting percept (Mesgarani et al., 2009; Mesgarani and Chang, 2012).
 
 For this purpose, both the response and the stimulus spectrogram were resampled at 2 kHz. For the stimulus this was achieved by allowing neighboring time-bins to overlap by multiple samples, concretely the stimulus was divided into overlapping sections of 512 samples, starting at round (it×SRsound/SRspectrogram) for each time step it, the acoustic stimulus’ sampling rate SRsound = 97.65625 kHz, and the desired spectrogram sampling rate of 2 kHz. Neighboring stimulus bins are thus not independent, but the match between stimulus and response sampling rate is required for the general estimation procedure. Based on the chosen stimulus representation, no phase-based fine-structure predictions are possible, therefore, all analyses relating to temporal precision thus relate to envelope fine-structure. All displayed spectrograms are shown in the same scale, dB scaled (10 log10).
 
-The reconstruction procedure was carried out as described in detail before (Mesgarani et al., 2009). Briefly, with the stimulus spectrogram denoted by S(t,f), the responses by R(t,n), and the reconstruction kernels per frequency band by gf(τ,n), the assumed response-stimulus relation can be written as(1)S^(t,f)= ∑τ∑ngf(τ,n)R(t−τ,n)
+The reconstruction procedure was carried out as described in detail before (Mesgarani et al., 2009). Briefly, with the stimulus spectrogram denoted by S(t,f), the responses by R(t,n), and the reconstruction kernels per frequency band by $g_{f}(\tau,n)$, the assumed response-stimulus relation can be written as
 
-The kernels gf can be estimated via the classical normal equation(2)gf=CRR-1+λ ICRSf
+$$
+S^(t,f)= \sum\tau\sumng_{f}(\tau,n)R(t−\tau,n)
+$$
 
-with the cross-correlation term CRSf=RSfT, and the response correlation matrix CRR=RRT, including a ridge regression term to avoid degeneracies in the inversion of CRR (see Mesgarani et al., 2009 for a more detailed derivation) with λ=0.1. During crossvalidation, Equation 1 is then used to reconstruct the stimulus from estimates of gf on the non-predicted stimulus sections. Each gf is based on the activity of all neurons n at a range of delays τ, and thus given by a matrix (see Figure 3A middle bottom for an example). The stimulus was constrained to 300–4400 Hz, slightly extending the range of the characteristic frequencies (CFs, [1.18, 3.05] kHz) of the present sample (see Figure 3B, blue dots indicate the CFs of all cells).
+The kernels $g_{f}$ can be estimated via the classical normal equation
+
+$$
+g_{f}=C_{RR}^{-1}+\lambdaIC_{RS_{f}}
+$$
+
+with the cross-correlation term $C_{RS_{f}}=RS_{f}^{T}$, and the response correlation matrix $C_{RR}=RR^{T}$, including a ridge regression term to avoid degeneracies in the inversion of $C_{RR}$ (see Mesgarani et al., 2009 for a more detailed derivation) with $\lambda=0.1$. During crossvalidation, Equation 1 is then used to reconstruct the stimulus from estimates of $g_{f}$ on the non-predicted stimulus sections. Each $g_{f}$ is based on the activity of all neurons n at a range of delays $\tau$, and thus given by a matrix (see Figure 3A middle bottom for an example). The stimulus was constrained to 300–4400 Hz, slightly extending the range of the characteristic frequencies (CFs, [1.18, 3.05] kHz) of the present sample (see Figure 3B, blue dots indicate the CFs of all cells).
 
 The quality of reconstruction was assessed using correlation coefficients between the original and the reconstructed stimulus. The displayed values (Figure 3) are averaged between the cross-validated (divided into 10 segments) and the insample estimates, based on considerations regarding the influence of noise on estimating model-performance (Ahrens et al., 2008). Further, the original stimulus and the reconstruction were compared using conditional level densities (see below, Figure 3), the width of the autocorrelation (Figure 4E), the frequency spectrum of the activations in the spectrogram (Figure 4F), and the spectral auto-correlation (Figure 4G).
 
@@ -122,16 +346,20 @@ The conditional level densities (CLD) were computed as the joint histogram acros
 
 The spectral autocorrelation was computed as a cross-correlation across frequencies at every timestep, averaged over the length of the stimulus (Figure 4G). It indicates how predictable the envelope level is across frequencies for the different reconstructions.
 
-## Simulation of subtractive inhibition
+### Simulation of subtractive inhibition
 
-We extended our simulation of subtractive inhibition to include an estimate of previous activity in order to match it more closely with the experimentally measured delay and temporal dynamics. Inhibition was modelled to depend on the recent history of ANF firing activity in this CF range: First the PSTH of a given ANF input was time shifted by a time ∆tc, and then integrated with an exponential kernel with a time-constant τI to obtain an intermediate representation AI(t). The resulting signal was passed through a static, sigmoidal nonlinearity given bySIt=I01+e-S (AIt-O)
+We extended our simulation of subtractive inhibition to include an estimate of previous activity in order to match it more closely with the experimentally measured delay and temporal dynamics. Inhibition was modelled to depend on the recent history of ANF firing activity in this CF range: First the PSTH of a given ANF input was time shifted by a time $\Deltat_{c}$, and then integrated with an exponential kernel with a time-constant $\tau_{I}$ to obtain an intermediate representation AI(t). The resulting signal was passed through a static, sigmoidal nonlinearity given by
 
-The sigmoid’s shape is controlled by I0, S and O, where I0 is the instantaneous rate of inhibition that is maximally subtracted, S is the (inverse) slope of activation, and O the value of the integrated signal AI, where the sigmoid reached 50% of I0, hence, controlling the horizontal offset. These three steps account for the integration (τI), nonlinear spike-elicitation (S, I0, O) and the conduction delay (∆tc). We manually estimated a set of parameters that accounted best for each SBC’s failure rates under spontaneous and natural stimulation, as well as the overall reconstruction quality and variance (see Figure 2—figure supplement 1 and Figure 3—figure supplement 1): The first three parameters were set fixed across all cells to ∆tc=0.5 ms, τI=3 ms,  S=5. The last two parameters were set individually per cell to match the experimentally observed failures rates (Figure 2—figure supplement 1). Automatic fitting was infeasible since there appeared to be many plateaus due to the discrete nature of the spikes.
+$$
+SIt=\frac{I_{0}}{1+e^{-S(AIt-O)}}
+$$
+
+The sigmoid’s shape is controlled by I0, S and O, where I0 is the instantaneous rate of inhibition that is maximally subtracted, S is the (inverse) slope of activation, and O the value of the integrated signal AI, where the sigmoid reached 50% of I0, hence, controlling the horizontal offset. These three steps account for the integration ($\tau_{I}$), nonlinear spike-elicitation ($S$, $I_{0}$, $O$) and the conduction delay ($\Deltat_{c}$). We manually estimated a set of parameters that accounted best for each SBC’s failure rates under spontaneous and natural stimulation, as well as the overall reconstruction quality and variance (see Figure 2—figure supplement 1 and Figure 3—figure supplement 1): The first three parameters were set fixed across all cells to $\Deltat_{c}=0.5ms$, $\tau_{I}=3ms$, $S=5$. The last two parameters were set individually per cell to match the experimentally observed failures rates (Figure 2—figure supplement 1). Automatic fitting was infeasible since there appeared to be many plateaus due to the discrete nature of the spikes.
 
 The resulting output of the model constitutes a rate of spikes and was then subtracted from the neurons instantaneous activity by deleting the corresponding number of spikes (randomly across trials) in this time bin. If the number of existing spikes per bin was lower than the number of spikes allocated to subtraction, the individual bin was set to 0.
 
 Prior to applying the subtractive inhibition, the spontaneous failure rate was accounted for by removing a random set of spikes, whose size was matched to the spontaneous failure rate of the cell.
 
-## Statistics
+### Statistics
 
 Data sets were tested for Gaussianity using the Shapiro-Wilk test (Shapiro and Wilk, 1965). Within-subject comparisons were performed by paired t-test (normally distributed) or Wilcoxon signed rank test (otherwise). For interpretation of all results, a p-value less than 0.05 was deemed significant, where p-values<10−5 are reported as p<0.001 in the text and figures. The effect size was calculated using the MES toolbox in Matlab (Hentschke and Stüttgen, 2011) and reported as Cohen’s U1. No statistical methods were used to pre-determine sample size. Exact p-values and test statistics are summarized in Table 1.

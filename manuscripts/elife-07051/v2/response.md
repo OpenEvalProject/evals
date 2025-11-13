@@ -158,9 +158,7 @@ Our interpretation of the results is clearly stated at the end of the Abstract (
 
 Extreme acidification will likely affect all cells… 8% CO2 is very high. This is OK and actually very good to show the absence of a chemoresponse, but then one would also like to know how sensitive these neurons are.
 
-We explored the pH sensitivity of the oscillating RTN neurons in E14.5 brainstem preparations. See Author response image 1.10.7554/eLife.07051.018Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.07051.018
-
-DOI: http://dx.doi.org/10.7554/eLife.07051.018
+We explored the pH sensitivity of the oscillating RTN neurons in E14.5 brainstem preparations. See Author response image 1.10.7554/eLife.07051.018Author response image 1.
 
 Left, average relationship between the burst discharge rate of the RTN, measured by calcium imaging at E14.5, and extracellular pH (n=12 preparations). Right, example F/F changes of the RTN region at different pH. On average RTN neurons increase their firing by one burst every 0.04 pH unit.
 

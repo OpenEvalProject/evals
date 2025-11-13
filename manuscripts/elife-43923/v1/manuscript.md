@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.43923.001 Reef-building corals depend on intracellular dinoflagellate symbionts that provide nutrients. Besides sugars, the transfer of sterols is essential for corals and other sterol-auxotrophic cnidarians. Sterols are important cell components, and variants of the conserved Niemann-Pick Type C2 (NPC2) sterol transporter are vastly up-regulated in symbiotic cnidarians. Types and proportions of transferred sterols and the mechanism of their transfer, however, remain unknown. Using different pairings of symbiont strains with lines of Aiptasia anemones or Acropora corals, we observe both symbiont- and host-driven patterns of sterol transfer, revealing plasticity of sterol use and functional substitution. We propose that sterol transfer is mediated by the symbiosis-specific, non-canonical NPC2 proteins, which gradually accumulate in the symbiosome. Our data suggest that non-canonical NPCs are adapted to the symbiosome environment, including low pH, and play an important role in allowing corals to dominate nutrient-poor shallow tropical seas worldwide.
+Reef-building corals depend on intracellular dinoflagellate symbionts that provide nutrients. Besides sugars, the transfer of sterols is essential for corals and other sterol-auxotrophic cnidarians. Sterols are important cell components, and variants of the conserved Niemann-Pick Type C2 (NPC2) sterol transporter are vastly up-regulated in symbiotic cnidarians. Types and proportions of transferred sterols and the mechanism of their transfer, however, remain unknown. Using different pairings of symbiont strains with lines of Aiptasia anemones or Acropora corals, we observe both symbiont- and host-driven patterns of sterol transfer, revealing plasticity of sterol use and functional substitution. We propose that sterol transfer is mediated by the symbiosis-specific, non-canonical NPC2 proteins, which gradually accumulate in the symbiosome. Our data suggest that non-canonical NPCs are adapted to the symbiosome environment, including low pH, and play an important role in allowing corals to dominate nutrient-poor shallow tropical seas worldwide.
 
 ## Introduction
 
@@ -27,6 +27,18 @@ Many plants and animals cultivate symbioses with microorganisms for nutrient exc
 ## Results and discussion
 
 To answer these questions, we took advantage of the availability of distinct strains of Symbiodiniaceae symbionts with different and complex sterol compositions (Bohlin et al., 1981; Withers et al., 1982; Ciereszko, 1989), and of various hosts. Besides the coral Acropora digitifera, we investigated different host lines of the symbiotic anemone Aiptasia, an emerging model system for coral-algal symbiosis (Tolleter et al., 2013; Neubauer et al., 2017). We used gas chromatography/mass spectrometry (GC/MS) to semi-quantitatively profile relative sterol abundances in three compatible symbiont strains (Xiang et al., 2013; Hambleton et al., 2014), and related this to sterol abundances in the coral and in three Aiptasia laboratory lines (Grawunder et al., 2015), with or without symbionts (Figure 1, Figure 1—source data 1). First, to validate our assay and to show that algal sterols are indeed transferred to host tissue, we determined the host sterol composition without symbionts (aposymbiotic), in symbiosis with recent dietary input (two weeks since last feeding, ‘intermediate’), and in symbiosis with essentially no dietary input (five weeks since last feeding, ‘symbiotic’). For the Aiptasia F003 host line, this revealed a gradual transition from an initial aposymbiotic, food-derived cholesterol profile to a cholesterol-reduced, algal sterol-enriched symbiotic profile that was also found in the symbiont-free eggs (and is thus present in host tissue) (Figure 1A). We also compared the sterol composition of coral symbiotic polyps collected from the wild to that of their symbiont-free eggs, which again proved nearly identical sterol compositions (Figure 1A) and unambiguously revealed symbiont-to-host tissue transfer. Taken together, this suggests that symbiont-derived sterols can functionally replace dietary cholesterol without any further chemical conversion by the host. Moreover, the sterol content of the hosts is highly plastic, and sterols are used flexibly as they become available from food and/or symbionts.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/43923/elife-43923-fig1-v1.jpg)
+
+**Figure 1.:** (A) Gas chromatography/mass spectrometry (GC/MS)-generated sterol profiles of the given organisms, with relative composition (%) of each sterol in key. Values, Figure 1—source data 1. Symbiont-free animals (‘aposymbiotic’) were fed Artemia brine shrimp comprising nearly only cholesterol (Tolosa et al., 2011). ‘Intermediate’ were symbiotic Aiptasia more recently starved of brine shrimp diet than ‘symbiotic’ animals. Aiptasia strain F003 hosts Symbiodiniaceae strains SSA01 and SSB01 (Grawunder et al., 2015). Acropora digitifera endogenous Symbiodiniaceae are uncultured but closely related to the cultured strain CCMP2466 (see Materials and methods). (B) GC/MS-generated sterol profiles of Symbiodiniaceae strains in culture (upper row) and in symbiosis with adults of different Aiptasia host lines (Grawunder et al., 2015) (lower row). (C) Sterol profiles of Aiptasia CC7 homogenate separated by centrifugation into symbiont-enriched (Pellet) and symbiont-depleted (Supernatant) fractions with the corresponding Symbiodiniaceae strain SSA01 in culture.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43923/elife-43923-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Symbiodiniaceae, like their dinoflagellate relatives, produce many sterols, including the unique gorgosterol with its unusual cyclopropyl group. Colors correspond to those in Figure 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/43923/elife-43923-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) compositions of the centrifugally separated homogenates of the indicated Aiptasia clonal line (CC7, F003) and Symbiodiniaceae strain (SSA01, SSB01) pairings. Shown are total number of particles (left) and sample composition (right) per size gate. Average values ± SEM (error bars) of technical duplicates. (B) GC/MS-generated sterol profiles, as in Figure 1, of the samples shown in A and Symbiodiniaceae strains in culture. Values, Figure 1—source data 1.
 
 We next focused on the sterol compositions in different symbiont-host pairings, to determine how these would change upon switching of either symbiont or host line. To this end, we investigated the same Aiptasia line CC7 hosting distinct symbionts (SSA01 or SSB01, see Materials and methods) with different symbiont profiles; and the same symbiont (SSB01) in two distinct host lines (CC7 and H2), as well the symbiont CCMP2466 similar to that in Acropora. We found that Aiptasia CC7 hosting Symbiodiniaceae strain SSA01 contained a large proportion of stigmasterol-like sterol (dark blue, Figure 1B) when compared to campesterol (light blue, Figure 1B). In contrast, the same Aiptasia line hosting strain SSB01 contained minimal stigmasterol-like derivatives compared to campesterol, as well as the unique sterol gorgosterol (light blue and pink, respectively, Figure 1B), characterized by an unusual cyclopropyl group (Ciereszko, 1989). (Figure 1—figure supplement 1). A very similar sterol profile was observed when the same symbiont (SSB01) infected the H2 host line, indicating that the host sterol profile was largely symbiont-driven. Likewise, in Aiptasia line F003 hosting both SSA01 and SSB01, the sterol proportions reflect both symbionts: a dominance of stigmasterol-like sterol (reflecting SSA01) together with gorgosterol (reflecting SSB01) (Figure 1A). We also compared the sterol profile of Acropora colonies collected from the wild to that of a closely related symbiont CCMP2466 in laboratory culture and found a strong enrichment for gorgosterol and campesterol at the expense of stigmasterol-like sterols – highly reminiscent of the trend previously observed in the SSB01/CC7 and SSB01/H2 pairings (Figure 1A). We thus observed two major patterns of sterol transfer in our symbiont-host combinations – one enriching for stigmasterol-like sterols (combinations SSA01/CC7 and SSA01 +SSB01/F003), and another one enriching for gorgosterol and campesterol (combinations SSB01/CC7; SSB01/H2; and CCMP2466/Acropora). This suggests that selective sterol transfer and/or accumulation by the host may occur.
 
@@ -40,9 +52,53 @@ To elucidate possible molecular mechanisms how symbiont-hosting cells may influe
 
 We next investigated the expression of all Aiptasia NPC2s in vitro and in vivo (Figure 3). As determined by qPCR and Western blotting using custom-made antibodies (Figure 3—figure supplement 1), two of the three non-canonical NPC2 homologues displayed substantially higher expression at the transcript and protein levels in symbiotic but not aposymbiotic animals (closed blue symbols; Figure 3A+B). The third non-canonical NPC2 homologue was highly expressed in both symbiotic and aposymbiotic animals, yet more so in symbiotic animals. Conversely, canonical NPC2s were highly expressed in both symbiotic and aposymbiotic animals (closed red symbols). Likewise, the non-symbiotic anemone Nematostella exhibited ubiquitously high expression of canonical NPC2 genes (open red symbols), whereas the non-canonical NPC2 gene was highly expressed only upon feeding (open blue symbols). Aposymbiotic embryos of the symbiotic coral Acropora, as well as Nematostella embryos, contained maternally provided canonical NPC2 transcripts, suggesting that these are required for development (Figure 3—figure supplement 2). Notably, several canonical NPC2s in Aiptasia (XM_021046710, XM_021041174) and Nematostella (XM_001635452) may be ‘in transition’ to becoming non-canonical: they were expressed at intermediate abundances between the two groups, and they responded to symbiosis (Aiptasia) or feeding (Nematostella) (red square and triangles, Figure 3A + 3B). Some of their intron/exon structures reflected those of the non-canonical group (red triangles, Figure 2A). Immunofluorescence analysis revealed that the non-canonical NPC2s decorated intracellular symbionts in Aiptasia in vivo (Figure 3C + D), consistent with previous data in Anemonia viridis (Dani et al., 2014; Dani et al., 2017). The NPC2 signal appears to be restricted to the symbiosome and absent from the cytoplasm of the symbiont-containing cell (Figure 3—figure supplement 3). We noted that non-canonical NPC2s decorate some but not all symbionts (Dani et al., 2014; Dani et al., 2017), suggesting that at any given time, symbiosomes are a dynamic group of specialized organelles. To gain further insight into the NPC2-decorated symbiosome dynamics, we measured the spatio-temporal regulation of non-canonical NPC2s in Aiptasia larvae establishing symbiosis (‘infection’) with Symbiodiniaceae strain SSB01 (Hambleton et al., 2014; Bucher et al., 2016). Indeed, non-canonical NPC2 slowly decorated intracellular symbionts over time (Figure 3E, Figure 3—figure supplement 4). This localization ranged from weak ‘grainy’ patterns to stronger ‘halos’ around symbionts (arrows, Figure 3C). We quantified infection rates, symbiont load of individual larvae, and non-canonical NPC2 signal intensity (Figure 3F, Figure 3—figure supplement 5). We found that infection rates remained steady after removal of symbionts from the environment, whereas the proportion of larvae showing non-canonical NPC2 signal continued to increase to eventually include the majority of infected larvae (Figure 3F). Concordantly, the proportion of symbionts within each larva surrounded by NPC2 signal also increased over time, as did the signal strength (Figure 3F). Finally, infected larvae displaying any NPC2 signal generally contained a higher symbiont load than their infected, unlabelled counterparts (Figure 3—figure supplement 5). Thus, non-canonical NPC2 is increasingly expressed and recruited to symbionts over time, suggesting that non-canonical NPC2 function becomes important primarily once symbiosomes become ‘mature’.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/43923/elife-43923-fig3-v1.jpg)
+
+**Figure 3.:** (A) Gene expression by RT-qPCR of canonical (red symbols) and non-canonical (blue symbols) NPC2s and 40S ribosomal subunit (RPS7, gray symbols). Filled symbols: Aiptasia. Open symbols: Nematostella. Average values ± SD (error bars). Statistical comparisons by Bayesian modeling (see Materials and methods), *p<0.05, **p<0.005. (B) Homogenates of aposymbiotic (A) or symbiotic (S) Aiptasia adults and cultured Symbiodiniaceae strain SSB01 (C) detected with affinity-purified antibodies to non-canonical Aiptasia NPC2 homologues. Asterisks, NPC2 glycoforms. (C) Immunofluorescence (IF) patterns of non-canonical NPC2 in 14 d post-fertilization (dpf) Aiptasia larvae containing intracellular symbionts of Symbiodiniaceae strain SSB01. Scale bar, 10 μm. (D) IF of several non-canonical Aiptasia NPC2s as in C. Merge channels: NPC2, secondary antibody Alexa488-anti-rabbit IgG; Nuclei, Hoechst; Symbionts, red autofluorescence of photosynthetic machinery. Control, secondary antibody only. Scale bar, 10 μm. (E) Time-course of immunofluorescence of non-canonical NPC2 in Aiptasia larvae infected with Symbiodiniaceae SSB01 from 2-5 dpf. Larvae oral opening facing up. Merge as in D. Scale bar, 25 μm. (F) Quantification of NPC2 IF time-course in E. Average value ± SEM (error bars). (G) Brightfield and fluorescence micrographs of symbiotic and aposymbiotic Aiptasia exposed to U18666A or DMSO negative control (vol. equiv. to 10 µM addition). Symbiont red autofluorescence as above. Scale bar, 1 mm. (H) Quantification of symbiont density in symbiotic anemones from G. Average values ± SEM (error bars).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43923/elife-43923-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) N-terminal-truncated aligned Aiptasia NPC2s, with gene symbols as in Figure 2A. Epitopes used for immunogenic peptides in antibody production. (B) Dot blots of the peptides in A at the given concentrations probed with the antibodies indicated at the top of each blot. (C) Western blots of symbiotic Aiptasia extract probed with the indicated antibodies as is (Unblock) or incubated together with the peptides in A at the given ratios. (D) Immunofluorescence of 14 dpf Aiptasia larvae infected with Symbiodiniaceae strain SSB01 from 2-5 dpf, either with the indicated antibodies as is (Unblock) or incubated together with the peptides in A (Peptide blocked). Peptide:antibody (mass:mass) ratios were 5:1 (XM_021052412, XM_021052381) or 50:1 (XM_021052404). Scale bar, 10 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/43923/elife-43923-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Expression in Nematostella vectensis adults and in embryos. From RNAseq regeneration/development dataset on NvERTx server (Warner et al., 2018; Fischer et al., 2014). (B) Expression in both Acropora digitifera parent colonies and their offspring immediately after spawning. Average value ± SD (error bars). Difference between non-canonical NPC2s in adults and embryos significant, Student’s paired t-test, p=0.007 (canonical, p=0.18).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/43923/elife-43923-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** NPC2 signal appears tightly localized around the symbiosome. Arrow, host cell cytoplasm within phalloidin-stained cell borders and near host cell nucleus (asterisk) showing absence of NPC2 signal. Scale bar, 10 μm.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/43923/elife-43923-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Immunofluorescence (IF) of non-canonical NPC2s in Aiptasia larvae containing intracellular symbionts of Symbiodiniaceae strain SSB01 at 3 and 14 dpf. Merge channels as in Figure 3. Control, secondary antibody only. Scale bar, 25 μm. (B) Example images for quantification of NPC2 IF time-course in Figure 3E + F and Figure 3—figure supplement 7, with strong and weak NPC2 staining indicated by arrows. Control, secondary antibody only.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/43923/elife-43923-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Quantification of NPC2 IF time-course in Figure 3E + F. n = triplicate samples of >50 larvae per time-point. Representative of two independent experiments. Average value ± SEM (error bars).
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/43923/elife-43923-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** Scale bar, 1 mm.
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/43923/elife-43923-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** Average values ± SEM (error bars). Statistical comparisons to DMSO negative control (Student’s t-test: *p<0.05, **p<0.005).
+
 As a first step towards elucidating NPC2 function during symbiosis, we investigated the effect of global sterol transport inhibition by treating symbiotic and aposymbiotic adult Aiptasia with the drug U18666A, a competitive inhibitor of the NPC2 binding partner NPC1 that is required for efficient cholesterol egress from lysosomes (Liscum and Faust, 1989; Cenedella, 2009; Vance, 2010; Lu et al., 2015). Because of the profound effect of this drug on all cells and thus anemone physiology, severe effects are to be expected. Accordingly, we found that both symbiotic and aposymbiotic anemones appear to lose tissue and shorten their tentacles in a dose- and duration-dependent manner. However, symbiotic anemones showed such effects on host physiology faster than their aposymbiotic counterparts (Figure 3G, Figure 3—figure supplement 6). Moreover, symbiont density decreased in response to U18666A treatment (Figure 3H). We observed similar effects with A. digitifera juvenile primary polyps stably hosting Symbiodiniaceae strain SSB01 when exposed to increasing concentrations of U18666A (Figure 3—figure supplement 7). This suggests that inhibition of sterol transport affects symbiosis stability and may lead to loss of symbionts (‘bleaching’). Further, the disruption of global sterol transport compromises host tissues in all cases, emphasizing the importance of sterols in tissue homeostasis.
 
 To test sterol-binding properties of Aiptasia NPC2, we compared the most conserved canonical NPC2 to the non-canonical NPC2 most up-regulated upon symbiosis (XM_021041171 to XM_021052404, respectively). We used lipidomics to quantify lipids bound by immunoprecipitated native or recombinant NPC2s (Figure 4, Figure 4—figure supplement 1) (after Li et al., 2010). Recombinant proteins were expressed in HEK 293T cells, after which cell lysates were mixed with Symbiodiniaceae SSB01 homogenates at either neutral conditions (pH 7) or acidic conditions reflecting the lysosome/symbiosome (pH 5). Under both conditions, canonical and non-canonical NPC2:mCherry fusion proteins bound symbiont-produced sterols significantly above the background levels of the control, mCherry alone (Figure 4A). The relative proportions of bound sterols generally exhibited equilibrium levels with the corresponding symbiont homogenate (Figure 4B). To validate sterol binding by non-canonical NPC2 in vivo, we also immunoprecipitated the native non-canonical NPC2 and bound sterols directly from homogenates of symbiotic Aiptasia. Again, we detected symbiont-produced sterols above background levels, validating our heterologous system and indicating that these proteins bind sterols in vivo during symbiosis (Figure 4C). These data indicate that, despite their evolutionary divergence, both types of Aiptasia NPC2s have the conserved function of binding sterols in lysosomal-like environments. Although we cannot rule out subtle differences in sterol binding dynamics between the two proteins, our results suggested no differential binding between canonical and non-canonical NPC2s, consistent with the observations that the sterol ligand and the residues lining the binding cavity tolerate considerable variations (Xu et al., 2007; Liou et al., 2006). Corroborating this, we were unable to detect any difference in the differential expression of canonical and non-canonical NPC2s between aposymbiotic and symbiotic state in three symbiont-Aiptasia pairings (Figure 4D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/43923/elife-43923-fig4-v1.jpg)
+
+**Figure 4.:** (A) Quantification of bound lipids in the eluates following IP of recombinant canonical and non-canonical NPC2:crmCherry:HA and negative control crmCherry:HA at pH 7 (Figure 4—figure supplement 1). Sterols comprising <1.5% were omitted for clarity. crmCherry, lysosome-stable cleavage-resistant mCherry (Huang et al., 2014) . Average values ± SD (error bars). Except ß-sitosterol, each NPC2 was significantly different to crmCherry negative control (Student’s t-test, p<0.01). (B) Relative proportions of NPC2-bound sterols and the corresponding symbiont extract at pH 5 and 7. Average values ± SD (error bars) (C) Immunoprecipitation (IP) of native non-canonical NPC2 from Aiptasia and quantification of eluted bound sterols. Control, identical reaction omitting antibody. Average values ± SEM (error bars). Statistical comparisons to control (Student’s t-test: *p<0.05, •p<0.09). (D) NPC2 gene expression by qPCR in the various Aiptasia/Symbiodiniaceae host/symbiont combinations in Figure 1B. (E) Recombinant NPC2s detected by mCherry antibody in the soluble fractions of HEK cell lysates. Lysate preparations were identical except for buffer pH; equivalent volumes loaded per lane. (F) Quantification of protein abundances from Western blots in E. Average values ± SEM (error bars). Student’s t-test, *p<0.05. (G) We propose a model in which symbiotic anthozoans have evolved non-canonical NPC2 homologues that are spatiotemporally regulated to specifically respond to symbiosis, including through adaptation to the acidic environment of the symbiosome, the lysosomal-like organelle in which symbionts reside. NPC2 proteins bind and transport symbiont-produced sterols, and such trafficking is essential for cellular homeostasis of the sterol-auxotrophic hosts.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/43923/elife-43923-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** HEK cell lysate input containing recombinant NPC2s or crmCherry control, and subsequent protein elutions of anti-HA IP reactions, in duplicate. After washing, lipids were eluted (Figure 4A + B) from IP reactions prior to protein elution shown here.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/43923/elife-43923-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Full Western blots from which the sections are shown in Figure 4E.
 
 With data suggesting both NPC2 types can bind symbiont-produced sterols, we were therefore left with the question: what is the functional advantage of localizing non-canonical NPC2s specifically in the symbiosome? The mature symbiosome, where non-canonical NPC2 appears to function, remains poorly understood; however, extreme acidity appears to be a unique characteristic of these specialized cellular compartments. Whereas lumenal pH of classic lysosomes can range from 4.7 to 6 (Johnson et al., 2016), recent work indicates that mature symbiosomes in steady-state symbiosis are even more acidic (pH ~4) to promote efficient photosynthesis (Barott et al., 2015). We therefore sought to compare the stability/solubility of representative canonical and non-canonical NPC2s at different pH (Figure 4E + F, Figure 4—figure supplement 2). Interestingly, the patterns of extracted soluble proteins vary among NPC2s: canonical NPC2 appears in one predominant form at both pH’s (Figure 4E, red arrowhead), whereas one of the symbiosis-responsive non-canonical NPC2s (XM_021052412; Figure 3A + B) always appears in two forms in both conditions (Figure 4E, arrowheads and asterisks). Strikingly, the pattern for the other symbiosis-specific non-canonical NPC2 (XM_021052404; Figures 3A–G and 4A–C) is distinct between pH 7 and pH 5, with a consistently occurring additional band at higher pH (Figure 4E, blue arrow). Although we cannot rule out that the additional bands reflect degradation products, we favor the interpretation that they most likely represent distinct glycoforms, which also occur in vivo (Figure 3B). When quantifying the protein variant common to all samples (Figure 4E, arrowheads), we found that at pH 5, the non-canonical NPC2s were consistently more abundant in the soluble fraction than the canonical counterpart (Figure 4F). For all proteins tested, the ratio of the predominant soluble protein variant at pH 7 to that at pH 5 was always >1, indicating more solubility at pH 7. However, the ratio was higher for Aiptasia canonical NPC2 than for the non-canonical NPC2s, indicating that the former is relatively less soluble at pH 5 (Figure 4F). Taken together, symbiosis-responsive non-canonical NPC2 appears to be more soluble/stable than canonical NPC2 at a lower pH, likely characteristic of the symbiosome. In line with this, all Aiptasia non-canonical NPC2 proteins harbored glycosylation sites and a glycine followed by a histidine residue (Figure 2B), which may contribute to protein stability in acidic environments (Rudd et al., 1994; Hanson et al., 2009; Culyba et al., 2011). However, pH-dependent protein stability is difficult to predict and functional experiments are required to determine whether such motifs (or others) play a role for the adaptation to the symbiosome or not.
 
@@ -50,102 +106,672 @@ In summary, our data reveal that the transfer of complex mixtures of symbiont-de
 
 ## Materials and methods
 
-## Computational methods
+**Key resources table**
 
-## NPC2 bayesian consensus phylogeny construction
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Exaiptasia pallida)</td>
+      <td>Aiptasia canonical NPC2 XM_021041171.1</td>
+      <td>NA</td>
+      <td>XM_021041171.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (E. pallida)</td>
+      <td>Aiptasia canonical NPC2 XM_021041174.1</td>
+      <td>NA</td>
+      <td>XM_021041174.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (E. pallida)</td>
+      <td>Aiptasia canonical NPC2 XM_021041173.1</td>
+      <td>NA</td>
+      <td>XM_021041173.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (E. pallida)</td>
+      <td>Aiptasia canonical NPC2 XM_021046710.1</td>
+      <td>NA</td>
+      <td>XM_021046710.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (E. pallida)</td>
+      <td>Aiptasia non-canonical NPC2 XM_021052412.1</td>
+      <td>NA</td>
+      <td>XM_021052412.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (E. pallida)</td>
+      <td>Aiptasia non-canonical NPC2 XM_021052404.1</td>
+      <td>NA</td>
+      <td>XM_021052404.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (E. pallida)</td>
+      <td>Aiptasia non-canonical NPC2 XM_021052381.1</td>
+      <td>NA</td>
+      <td>XM_021052381.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (E. pallida)</td>
+      <td>Aiptasia RPS7</td>
+      <td>NA</td>
+      <td>KXJ15968.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Nematostella vectensis)</td>
+      <td>Nematostella canonical NPC2 XM_001622824.1</td>
+      <td>NA</td>
+      <td>XM_001622824.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (N. vectensis)</td>
+      <td>Nematostella canonical NPC2 XM_001635452.1</td>
+      <td>NA</td>
+      <td>XM_001635452.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (N. vectensis)</td>
+      <td>Nematostella non-canonical NPC2 XM_001627305.1</td>
+      <td>NA</td>
+      <td>XM_001627305.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (N. vectensis)</td>
+      <td>Nematostella RPS7</td>
+      <td>NA</td>
+      <td>jgi|Nemve1|54581|gw.133.186.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Acropora digitifera)</td>
+      <td>Acropora canonical NPC2 XM_015898926.1</td>
+      <td>NA</td>
+      <td>XM_015898926.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (A. digitifera)</td>
+      <td>Acropora canonical NPC2 XM_015898919.1</td>
+      <td>NA</td>
+      <td>XM_015898919.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (A. digitifera)</td>
+      <td>Acropora canonical NPC2 XM_015910954.1</td>
+      <td>NA</td>
+      <td>XM_015910954.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (A. digitifera)</td>
+      <td>Acropora canonical NPC2 XM_015898921.1</td>
+      <td>NA</td>
+      <td>XM_015898921.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (A. digitifera)</td>
+      <td>Acropora non-canonical NPC2 XR_001561549.1</td>
+      <td>NA</td>
+      <td>XR_001561549.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (A. digitifera)</td>
+      <td>Acropora non-canonical NPC2 AD_NPC2_6</td>
+      <td>NA</td>
+      <td>AD_NPC2_6</td>
+      <td>see Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Gene (A. digitifera)</td>
+      <td>Acropora non-canonical NPC2 AD_NPC2_7</td>
+      <td>NA</td>
+      <td>AD_NPC2_7</td>
+      <td>see Supplementary file 1</td>
+    </tr>
+    <tr>
+      <td>Gene (A. digitifera)</td>
+      <td>Acropora RPS7</td>
+      <td>NA</td>
+      <td>XM_015898841.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Cladocopium goreaui)</td>
+      <td>Acropora digitifera resident Symbiodiniaceae symbionts, cp23S marker</td>
+      <td>NA</td>
+      <td>MK696595</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (C. goreaui)</td>
+      <td>CCMP2466 Symbiodiniaceae culture, cp23S marker</td>
+      <td>NA</td>
+      <td>MK696599</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Exaiptasia pallida)(male)</td>
+      <td>Aiptasia line CC7</td>
+      <td>DOI: 10.1038/srep15677</td>
+      <td></td>
+      <td>in DOI: 10.1186/1471-2164-10-258</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. pallida)(female)</td>
+      <td>Aiptasia line F003</td>
+      <td>DOI: 10.1038/srep15677</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. pallida)(female)</td>
+      <td>Aiptasia line H2</td>
+      <td>DOI: 10.1038/srep15677</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Nematostella vectensis)(male and female)</td>
+      <td>Nematostella</td>
+      <td>Prof. Dr. Thomas Holstein, Heidelberg University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Breviolum minutum)</td>
+      <td>Symbiodiniaceae strain SSB01</td>
+      <td>DOI: 10.1111/jpy.12055</td>
+      <td>GenBank:MK692539</td>
+      <td>Accession number for rDNA 28S LSU marker (DOI: 10.1016/j.cub.2018.07.008)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Symbiodinium linuchae)</td>
+      <td>Symbiodiniaceae strain SSA01</td>
+      <td>DOI: 10.1038/srep15677</td>
+      <td>GenBank:MK692538</td>
+      <td>Accession number for rDNA 28S LSU marker (DOI: 10.1016/j.cub.2018.07.008)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Symbiodinium necroappetens)</td>
+      <td>Symbiodiniaceae strain SSA02</td>
+      <td>DOI: 10.1111/jpy.12055</td>
+      <td>GenBank:MK692866</td>
+      <td>Accession number for rDNA 28S LSU marker (DOI: 10.1016/j.cub.2018.07.008)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Effrenium voratum)</td>
+      <td>Symbiodiniaceae strain SSE01</td>
+      <td>DOI: 10.1111/jpy.12055</td>
+      <td>GenBank:MK696597</td>
+      <td>Accession number for rDNA 28S LSU marker (DOI: 10.1016/j.cub.2018.07.008)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Cladocopium goreaui)</td>
+      <td>Symbiodiniaceae strain CCMP2466</td>
+      <td>National Center for Marine Algae and Microbiota (NCMA), Bigelow Laboratory for Ocean Sciences, Maine, USA</td>
+      <td>GenBank:MK696600</td>
+      <td>Accession number for rDNA 28S LSU marker (DOI: 10.1016/j.cub.2018.07.008)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Durusdinium trenchii)</td>
+      <td>Symbiodiniaceae strain CCMP2556</td>
+      <td>National Center for Marine Algae and Microbiota (NCMA), Bigelow Laboratory for Ocean Sciences, Maine, USA</td>
+      <td>GenBank: MK692915</td>
+      <td>Accession number for rDNA 28S LSU marker (DOI: 10.1016/j.cub.2018.07.008)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK 293T</td>
+      <td>Deutsche Sammlung von Mikroorganismen und Zellkulturen (DMSZ) from Dr. C. Niehrs and Dr. S. Acebrón</td>
+      <td>ACC 305</td>
+      <td>authenticated by DMSZ, confirmed mycoplasma-free</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Acropora digitifera)</td>
+      <td>Acropora digitifera</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Collected off Sesoko Island, Okinawa Prefecture, Japan (26°37'41"N, 127°51'38"E)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Aiptasia NPC2 XM_021052412</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Rabbit polyclonal, 0.3 mg/ml. (Westerns 1:500-1:1000, Dot Blot 1:1000, IF 1:200) BioScience GmbH.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Aiptasia NPC2 XM_021052404</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Rabbit polyclonal, 0.45 mg/ml. (Westerns 1:2000-1:4000, Dot Blot 1:5000, IF 1:100-1:750) BioScience GmbH.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Aiptasia NPC2 XM_021052381</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Rabbit polyclonal, 0.4 mg/ml (Westerns 1:500, Dot Blot 1:500, IF 1:200) BioScience GmbH.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-coupled anti-rabbit (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Jackson ImmunoResearch:111-035-144</td>
+      <td>(Western blot 1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-alpha-tubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:T9026</td>
+      <td>(Western blot 1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-coupled anti-mouse (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Jackson ImmunoResearch:115-035-044</td>
+      <td>(Western blot 1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IgG-Alexa488 (goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>Abcam:ab150089</td>
+      <td>(IF 1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mCherry (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:PA5-34974</td>
+      <td>(Western blot 1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>conformation-specific HRP-coupled anti-rabbit IgG (mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>CST:5127S</td>
+      <td>(Western blot 1:2000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NPC2 XM_021052412 for recombinant expression in HEK293T cells (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>NPC2-5P-crmCherry (DOI: 10.1371/journal.pone.0088893)−3xHA (YPYDVPDYA). Progenitors: PCR (cDNA), vector pCEP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NPC2 XM_021052404 for recombinant expression in HEK293T cells (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>NPC2-5P-crmCherry (DOI: 10.1371/journal.pone.0088893)−3xHA (YPYDVPDYA). Progenitors: PCR (cDNA), vector pCEP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NPC2 XM_021041171 for recombinant expression in HEK293T cells (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>NPC2-5P-crmCherry (DOI: 10.1371/journal.pone.0088893)−3xHA (YPYDVPDYA). Progenitors: PCR (cDNA), vector pCEP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>crmCherry:3xHA control for recombinant expression in HEK293T cells (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>crmCherry (DOI: 10.1371/journal.pone.0088893)−3xHA (YPYDVPDYA). Progenitors: PCR (cDNA), vector pCEP</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers for qPCR of Aiptasia, Acropora, Nematostella NPC2s</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Supplementary file 3 for all primer sequences</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>K-YGIDVFCDEIRIHLT</td>
+      <td>Custom peptide, INTAVIS Bioanalytical Instruments AG</td>
+      <td></td>
+      <td>Epitope for antibody against Aiptasia NPC2 XM_021052412</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>K-AKNDIFCNSIPFNLV</td>
+      <td>Custom peptide, INTAVIS Bioanalytical Instruments AG</td>
+      <td></td>
+      <td>Epitope for antibody against Aiptasia NPC2 XM_021052404</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>K-VQNNVLCGEVTLTLM</td>
+      <td>Custom peptide, INTAVIS Bioanalytical Instruments AG</td>
+      <td></td>
+      <td>Epitope for antibody against Aiptasia NPC2 XM_021052381</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy kit</td>
+      <td>Qiagen</td>
+      <td>Qiagen:74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR Hi-ROX qPCR master mix</td>
+      <td>Bioline</td>
+      <td>BIO-92005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NHS-activated Sepharose Fast Flow 4</td>
+      <td>GE Health Care Life Sciences</td>
+      <td>GE Healthcare Sciences:17090601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>anti-HA magnetic beads</td>
+      <td>Miltenyi Biotech</td>
+      <td>Miltenyi Biotech:130-091-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads Antibody Coupling Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:14311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Protein Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:23227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol</td>
+      <td>Life Technologies</td>
+      <td>Life Technologies:15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MSTFA (N-Methyl-N-(trimethylsilyl)trifluoroacetamide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:69479</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine2000</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cholesterol-D6</td>
+      <td>Cambridge Isotope Laboratories</td>
+      <td>Cambridge Isotope Laboratories:DLM2607</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetyl chloride in methylene chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:708496</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>U18666A</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:U3633</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNAlater</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific:AM7020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Geneious</td>
+      <td>DOI: 10.1093/bioinformatics/bts199</td>
+      <td></td>
+      <td>v. 9</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SignalP 4.0</td>
+      <td>DOI: 10.1038/nmeth.1701</td>
+      <td></td>
+      <td>v. 4.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MEGA</td>
+      <td>DOI: 10.1093/molbev/msw054</td>
+      <td></td>
+      <td>v. 7.10.8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MrBayes</td>
+      <td>DOI: 10.1093/bioinformatics/17.8.754</td>
+      <td></td>
+      <td>v. 3.2.6; plugin for Geneious</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DataMonkey server</td>
+      <td>DOI: 10.1093/bioinformatics/bti320</td>
+      <td></td>
+      <td>Datamonkey classic server</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HyPhy program suite</td>
+      <td>DOI: 10.1093/bioinformatics/bti079</td>
+      <td></td>
+      <td>accessed via DataMonkey classic server</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>single-likelihood ancestor counting (SLAC)</td>
+      <td>DOI: 10.1093/molbev/msi105</td>
+      <td></td>
+      <td>accessed via DataMonkey classic server</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>mixed effects models of evolution (MEME)</td>
+      <td>DOI: 10.1371/journal.pgen.1002764</td>
+      <td></td>
+      <td>accessed via DataMonkey classic server</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MCMC.qPCR</td>
+      <td>DOI: 10.1371/journal.pone.0071448</td>
+      <td></td>
+      <td>R library</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GCMS Postrun Analysis software</td>
+      <td>Shimadzu</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Analyst</td>
+      <td>SCIEX</td>
+      <td></td>
+      <td>v. 1.6.3. Control and analysis software for QTRAP 5500 MS</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LipidView</td>
+      <td>SCIEX</td>
+      <td></td>
+      <td>v. 1.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>DOI: 10.1038/nmeth.2019</td>
+      <td></td>
+      <td>v. 2.0.0-rc-67/1.52d</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phalloidin; Phalloidin-Atto 565</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:94072</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst; Hoechst 33258</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich:B2883</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Computational methods
+
+#### NPC2 bayesian consensus phylogeny construction
 
 Genomes and, if available, proteomes and transcriptomes (Supplementary file 2) were loaded into Geneious v.9 (Kearse et al., 2012). Proteomes and transcriptomes were searched with BLASTp and BLASTx (both v.2.8.0), respectively, with NPC2 homologues from Aiptasia, human, and related taxa as queries. Genomic loci were identified via discontinous Megablast. The top NPC2 BLASTp hits in the single-celled eukaryotic filasterian Capsaspora owczarzaki included two homologues of phospholipid transfer protein. With similar sizes to NPC2 and a shared predicted ML superfamily domain, these were included in analyses and one (XP_004344261.1) used as an outgroup during phylogenetic tree construction. Signal peptides were predicted using the SignalP4.0 server (Petersen et al., 2011) and, together with stop codons, removed from further analyses. 77 NPC2 homologue sequences were aligned by codon using MUSCLE with default parameters and manually trimmed in MEGA7 (v7.10.8) (Kumar et al., 2016), where the best model was calculated as GTR+G. Bayesian phylogenies were inferred using MrBayes v.3.2.6 (Huelsenbeck and Ronquist, 2001) plugin in Geneious, with the GTR model, gamma rate variation, and five gamma categories. The consensus tree was estimated from four chains (temperature 0.2) for 1,000,000 generations, sampling every 200th tree after 25% burn-in.
 
-## Adaptive evolution
+#### Adaptive evolution
 
 Evidence of selection was calculated using the DataMonkey server (http://classic.datamonkey.org) for the HyPhy program suite (Pond et al., 2005; Pond and Frost, 2005). Briefly, Aiptasia and Nematostella canonical and non-canonical NPC2 sequences were aligned by codon using MUSCLE in MEGA7 as above, and the best substitution models calculated. Bayesian phylogenies were inferred with MrBayes as above except for the following parameters: GTR+G+I, four gamma categories, 50,000 generations and sampling every 100th tree after 20% burn-in. Trees were uploaded on the DataMonkey server and analysed with: i) fixed effects likelihood (FEL); ii) random effects likelihood (REL); iii) single-likelihood ancestor counting (SLAC) (Kosakovsky Pond and Frost, 2005); and iv) mixed effects model of evolution (MEME) (Murrell et al., 2012), and results were concatenated with the ‘Integrative Selection Analysis’ tool.
 
-## Live organism culture and collection
+### Live organism culture and collection
 
-## Aiptasia adults
+#### Aiptasia adults
 
 Aiptasia were cultured as described (Grawunder et al., 2015); animals rendered aposymbiotic (Matthews et al., 2016) were kept so for over one year before experimentation. Animals were fed three times weekly with Artemia brine shrimp nauplii, shown to contain only cholesterol (Tolosa et al., 2011), and were starved for at least four weeks prior to sampling. For sampling, animals were removed from their tanks simultaneously around mid-day, blotted briefly on lab tissue to remove excess seawater, and then prepared for either qPCR or GC/MS. For qPCR, animals were added to 1 ml Trizol (15596026, Life Technologies), after which they were quickly homogenized with a homogenizer (Miccra D-1, Miccra GmbH) at setting 3 for 10–15 s and then frozen at −80°C until RNA extraction. For GC/MS, animals were added to 400 µl ultrapure water, homogenized, and immediately processed. For GC/MS separation experiments, animal homogenates were centrifuged at 800xg for 5 min, after which the supernatant was separated and the pellet resuspended in 400 µl ultrapure water and immediately processed. Cells in the supernatant and pellet fractions were quantified with a visual particle counter (TC20, BioRad).
 
-## Aiptasia eggs and larvae
+#### Aiptasia eggs and larvae
 
 Adults of strains F003 and CC7 were induced to spawn as described (Grawunder et al., 2015). For GC/MS, approx. 1000–3000 unfertilized eggs from female-only tanks were collected gently with transfer pipette within 2 hr of spawning, washed quickly in water and then in methanol, and resuspended in 750 µl methanol. For NPC2 immunofluorescence (IF) during symbiosis establishment, Aiptasia larvae 2 days post-fertilization (dpf) at a density of 300–500/ml FASW were exposed to Symbiodiniaceae strain SSB01 as described (Bucher et al., 2016) at 10,000 cells/ml. Larvae and algae were co-cultivated for 3 d, until at five dpf the larvae were filtered, washed, and resuspended in fresh FASW at a density of 300–500/ml. Larvae were fixed at the indicated time-points with 4% formaldehyde in filtered artificial seawater (FASW) rotating for 45 min at RT, washed twice with PBT (1x PBS pH 7.4 + 0.2% Triton-X), and stored in PBS at 4°C in the dark.
 
-## Nematostella adults
+#### Nematostella adults
 
 For qPCR, mixed-sex Nematostella were kept in 12:12 L:D at 26°C and fed weekly with Artemia nauplii. Animals were then separated and either starved or fed Artemia nauplii daily for 14 d with subsequent daily water changes; animals were then starved for a further 2 d and then sampled as for Aiptasia qPCR. For GC/MS, mixed-sex Nematostella were kept in constant dark at 16°C, fed once weekly with Artemia nauplii, and water changed the following day; animals were starved for 10 d and then sampled as for Aiptasia GC/MS.
 
-## Acropora digitifera adults, larvae, and primary polyps
+#### Acropora digitifera adults, larvae, and primary polyps
 
 Colonies of the coral Acropora digitifera were collected off Sesoko Island (26°37’41”N, 127°51’38”E, Okinawa, Japan) according to Okinawa Prefecture permits and CITES export and import permits (T-WA-17–000765). Corals were kept as described (Wolfowicz et al., 2016) at Sesoko Tropical Biosphere Research Center (University of Ryukyus, Okinawa, Japan). Colonies were isolated prior to spawning, and subsequently-spawned bundles of symbiont-free gametes were mixed for fertilization of defined crosses. The resulting planula larvae were maintained at approximately 1000 larvae/L in 10μm-filtered natural seawater (FNSW) exchanged daily. For GC/MS, samples were collected from adult parental colonies and their embryo offspring 19 and 24 hr post-fertilization (hpf), respectively, and immediately transferred to methanol. For qPCR, adults and their embryo offspring were simultaneously collected at the indicated hpf and immediately transferred into RNAlater (AM7020, Thermo Fisher Scientific). Samples were transferred to 4°C within hours and to −20°C within 2 d, where they were kept until processing. To generate juvenile primary polyps, larvae were induced to settle at six dpf and infected with Symbiodiniaceae strain SSB01 as described (Wolfowicz et al., 2016) for 4 d. Resident Symbiodiniaceae in adult parental colonies were typed with the chloroplast ribosomal DNA subunit 23S marker (cp23S) as previously described (Grawunder et al., 2015): 10 bacterial clones were sequenced per coral colony and all were identical (GenBank Accession MK696595), identified by BLASTn to the nr NCBI database as Symbiodiniaceae Clade C1.
 
-## Symbiodiniaceae cultures
+#### Symbiodiniaceae cultures
 
 Clonal and axenic Symbiodiniaceae strains were typed with the 28S large ribosomal subunit marker as described (LaJeunesse et al., 2018) (organism, GenBank Accession): SSB01 (Breviolum minutum, MK692539), SSA01 (Symbiodinium linuchae, MK692538), SSA02 (Symbiodinium necroappetens, MK692866), and SSE01 (Effrenium voratum, MK696597) (Xiang et al., 2013) as well as the non-clonal, non-axenic strains CCMP2466 (Cladocopium goreaui, MK696600) and CCMP2556 (Durusdinium trenchii, MK692915) purchased from the National Center for Marine Algae and Microbiota (NCMA, Bigelow Laboratory for Ocean Sciences, Maine, USA). All strains were cultured as described (Tolleter et al., 2013). For GC/MS, 2.6 × 107 cells were collected at mid-day by gentle centrifugation at RT, washed twice in FASW, and the cell pellet resuspended in ultrapure water and processed as described. For GC/MS separation experiments, 1.1 × 107 (SSA01) or 1.6 × 107 (SSB01) cells cultured in identical conditions as the anemones were used. Strain CCMP2466 was additionally typed with the cp23S marker as previously described (Grawunder et al., 2015); 10 bacterial clones contained an identical sequence (GenBank Accession 696599) with 1 bp different to that of the Acropora digitifera endogenous symbionts described above (GenBank Accession 696595).
 
-## Cell culture
+#### Cell culture
 
 Cells were obtained from Dr. Christoph Niehrs and Dr. Sergio Acebrón from the Deutsche Sammlung von Mikroorganismen und Zellkulturen GmbH (DSMZ) as HEK-293 cell line ACC 305, authenticated by multiplex PCR and IEF, and confirmed mycoplasma-free. Cells were transformed with SV40 T-antigen to generate HEK 293T cells and again confirmed to be mycoplasma-free in 2017. Cells were cultured in 1X DMEM medium (41966029, Gibco/Thermo Scientific) with 10% FBS and 1% pen/strep (100 µg/ml final concentrations). Cells were grown at 37°C with 5% carbon dioxide and passaged regularly.
 
-## Gene expression
+### Gene expression
 
-## RNA extraction and qPCR
+#### RNA extraction and qPCR
 
 RNA was extracted according to a hybrid protocol (Polato et al., 2011) with phenol-chloroform and the RNeasy kit (74104, Qiagen). RNA was qualitatively and quantitatively assessed via gel electrophoresis and NanoDrop spectrophotometry (Nanodrop1000), respectively, aliquoted and flash frozen in liquid nitrogen and stored at −80C. First strand cDNA synthesis was performed with the ReadyScript cDNA synthesis kit (RDRT, Sigma Aldrich) according to the manufacturer’s instructions. qPCR was performed in 96 well plate format, with each reaction containing 0.4 µm each primer, 50 ng cDNA, and 1X SensiFast SYBR Hi-ROX qPCR master mix (BIO-92005, Bioline) in 20 µl total; reactions were measured on a StepOnePlus (Applied Biosystems). The gene encoding 40S Ribosomal Protein S7 (RPS7) was chosen as a comparison/baseline gene due to its demonstrated stability in a previous study (Lehnert et al., 2014). Primers (Supplementary file 3) were validated by amplicon sequencing through either TOPO-TA cloning (450071, Thermo Fisher Scientific) according to the standard protocol or, for Acropora and Nematostella, direct sequencing of qPCR products, with at least three sequences per product. Melt curves performed after each qPCR run confirmed the existence of single products per reaction. Amplification efficiencies of each primer pair were determined by a 3- or 4-point dilution series. Output was analyzed with the Bayesian analysis pipeline MCMC.qPCR (Matz et al., 2013) run according to standard protocol (https://matzlab.weebly.com/data--code.html). For Acropora adults and embryos, the model was run with ‘naïve’ parameters. For comparative expression within symbiotic Aiptasia and fed Nematostella, the analysis was run with ‘informed’ parameters setting RPS7 as a reference gene. Log2 (fold change) and Log2 (transcript abundance) were determined from command ‘HPDsummary’ with and without ‘relative = TRUE’, respectively; p-values of differential expression were calculated with command ‘geneWise’ on the former.
 
-## Nematostella embryonic development
+#### Nematostella embryonic development
 
 Expression data on Nematostella embryonic development and comparative adults were obtained from NvERTx (Warner et al., 2018) (http://ircan.unice.fr/ER/ER_plotter/home). Transcripts were identified by BLAST search to the NvERTx database as the NPC2 homologues XM_001622824.1 (NvERTx.4.51280); XM_001627305.1 (NvERTx.4.192779); XM_001635452.1 (NvERTx.4.142169), and the RPS7 homologue jgi|Nemve1|54581|gw.133.186.1 (NvERTx.4.145315). Transcript abundance counts at 0 hpf (unfertilized) comprised duplicate samples of 300 embryos each (Fischer et al., 2014). As a baseline for typical gene expression in adults, transcript abundance counts of ‘uncut controls’ (UC) comprised triplicate samples of 300 untreated 6-week-old adults (Warner et al., 2018).
 
-## Sterol profiling with gas chromatography/mass spectrometry (GC/MS)
+### Sterol profiling with gas chromatography/mass spectrometry (GC/MS)
 
 Samples were extracted with a modified Bligh-Dyer method: briefly, either 300 µl aqueous Aiptasia or Nematostella homogenate was added to 750 µl HPLC-grade methanol, or 300 µl ultra-pure water was added to the Acropora sample already in 750 µl methanol or ethanol. After shaking at 70°C for 45 min, the mixture was extracted with 375 µl HPLC-grade chloroform and 300 µl ultra-pure water and centrifugation. The dried organic phase was then saponified with 500 µl of 5% KOH in a 9:1 methanol:water solution and incubating at 68°C for 1 hr. The mixture was then extracted with water and chloroform followed by centrifugation. Lipids in the dried organic phase were derivatized to trimethylsilyl ethers with 25–40 µl MSTFA (#69479, Sigma Aldrich) at 60°C for 0.5–1 hr and immediately analysed. 1 µl of each mixture was injected into a QP2010-Plus GC/MS (Shimadzu) and with a protocol (adapted from Schouten et al., 1998) as follows: oven temperature 60°C, increase to 130°C at 20 °C/min, then increase to 300°C at 4 °C/min and hold for 10 min. Spectra were collected between m/z 40 and 850 and were analysed in GCMS PostRun Analysis Software (Shimadzu) by comparison to the National Institute of Standards and Technology 2011 database. Relative sterol composition as percent of total sterols were calculated from integrated peak intensity on the total ion chromatograph for each sample.
 
-## Aiptasia-specific anti-NPC2 antibodies and testing by dot blot
+### Aiptasia-specific anti-NPC2 antibodies and testing by dot blot
 
 Antibodies were raised against the peptides K-YGIDVFCDEIRIHLT (XM_021052412), K-AKNDIFCNSIPFNLV (XM_021052404), and K-VQNNVLCGEVTLTLM (XM_021052381) coupled to the adjuvant keyhole limpet hemocyanin in rabbits (BioScience GmbH). Antibodies were affinity-purified from the antisera using the synthetic peptides (INTAVIS Bioanalytical Instruments AG) coupled to NHS-Activated Sepharose Fast Flow 4 (17090601, GE Health Care Life Sciences) according to the manufacturer’s protocols. In dot blots, peptides dissolved in DMSO or water were spotted onto nitrocellulose membranes and allowed to dry 1 hr in a dessicant chamber. Blots were blocked in 5% milk PBS-T for 2.5 hr at RT and then incubated at 4°C overnight with non-canonical NPC2 antibodies diluted in 5% milk PBS-T as follows: (XM_021052412 at 1:1000, XM_021052404 at 1:5000, and XM_021052381 at 1:500). Blots were then incubated with HRP-coupled anti-rabbit antibody and further processed as described below for ‘Western blots’.
 
-## Western blots of Aiptasia and Symbiodiniaceae homogenates
+### Western blots of Aiptasia and Symbiodiniaceae homogenates
 
 Two aposymbiotic or symbiotic adult Aiptasia polyps were homogenized in buffer A with 2X Halt Protease Inhibitor Cocktail (78430, Thermo Fisher Scientific) and then sonicated on ice (Sonifier 250, Branson Ultrasonics) with two rounds of 25 pulses at duty cycle 40%, output control 1.8. From cultured Symbiodiniaceae strain SSB01, 1.2 × 107 cells were collected by gentle centrifugation. After addition of buffer A and glass beads (425–600 µm), cells were disrupted by vortexing six times for 1 min each, with 1 min on ice in between each, then further disrupted by passage through a G23 needle. All homogenates were then centrifuged at 20,000xg for 10 min at 4°C, and three sets of identical volumes of the supernatants were resolved on a 12% Tricine-SDS-Page gel and transferred by Western blot onto nitrocellulose membranes. Membranes were blocked for 1 hr in 5% milk PBS-T and then incubated with antibodies raised against three different non-canonical Aiptasia NPC2s (XM_021052404 at 1:4000, XM_021052412 at 1:1000 and XM_021052381 at 1:500) in 5% milk PBS-T at 4°C overnight, followed by incubation with HRP-coupled anti-rabbit (Jackson ImmunoResearch) at 1:10000 in 5% milk PBS-T at RT for 1 hr, and then detection with ECL (GERPN2232, Sigma-Aldrich) and imaging on ECL Imager (ChemoCam, Intas). For peptide-blocked controls, 40 µg of homogenate supernatant per lane was resolved on a 10% Tris-tricine-SDS-Page gel and transferred and blocked as above. Antibodies were diluted in 5% milk PBS-T (XM_021052404 at 1:2000, XM_021052412 at 1:500 and XM_021052381 at 1:500) and the corresponding immunogenic peptides solubilized in DMSO or PBS at 0.5 mg/ml - 1 mg/ml were added at the indicated peptide:antibody (mass:mass) ratios. The peptide-antibody mixtures were rotated overnight at 4°C and then incubated with the blots at 4°C for approx. 60 hr, after which blots were incubated with anti-rabbit secondary antibody and processed as above. Blots were then re-blocked, incubated with anti-alpha-tubulin antibody (1:1000, T9026, Sigma-Aldrich), then HRP-coupled anti-mouse (1:10000, Jackson ImmunoResearch), and imaged as above.
 
-## Immunoprecipitation-lipidomics of NPC2-sterol binding
+### Immunoprecipitation-lipidomics of NPC2-sterol binding
 
-## Buffers
+#### Buffers
 
 A: 200 mM Ammonium Acetate, pH 7; B: 200 mM Ammonium Acetate, pH 5; C: 50 mM MES, 150 mM NaCl, 0.004% Nonidet P-40; D: 50 mM Tris, 150 mM NaCl, 0.004% Nonidet P-40, pH 7.5.
 
-## Cell culture lysates and symbiont extracts
+#### Cell culture lysates and symbiont extracts
 
 NPC2 proteins were cloned behind the cytomegalovirus promoter in a pCEP-based vector followed by a five-proline linker, cleavage-resistant mCherry (crmCherry) (Huang et al., 2014), and a 3xHA tag (YPYDVPDYA). A control vector contained only crmCherry:3xHA. Vectors were transiently transfected with Lipofectamine2000 (11668019, Invitrogen/Thermo Fisher Scientific) according to the manufacturer’s protocol into HEK 293T cells in 10 cm diameter dishes. After growth for 48 hr at 32°C, cells were rinsed with PBS and harvested in 1 ml of Buffer A, B, C, or D with Halt Protease Inhibitor Cocktail at 2X (78430, Thermo Fisher Scientific). Lysates were then sonicated on ice as above, centrifuged at 20,000xg for 20 min at 4°C, and supernatants used in binding assays. Approximately 2.5 × 108 cells of Symbiodiniaceae strain SSB01 approx. 7 d after passaging were collected by gentle centrifugation. Cells were washed in 10 ml of Buffer A, B, C, or D (per the corresponding HEK cell lysate), and then 5 ml buffer was added to the pellet and cells were sonicated twice for 5 min at duty cycle 80%, output control 3. During sonication, extracts were allowed to heat slightly but not boil. Extracts were centrifuged at 6000xg for 10 min at RT, and supernatants used in binding assays.
 
-## Immunoprecipitation
+#### Immunoprecipitation
 
 Cell lysates were incubated with symbiont extracts (450 µl and 500 µl, respectively) for 30 min at room temperature rotating, after which 25 µl anti-HA beads (130-091-122, Miltenyi Biotech) were added and the mixtures incubated rotating at RT for a further 30 min. Mixtures were then passed through magnetic columns on a magnetic plate (130-042-701, Miltenyi Biotech) pre-rinsed with 200 µl of the corresponding Buffer A, B, C, or D. Bound material on the column was rinsed four times with Buffer A, B, C, or D with protease inhibitor, and then once with the corresponding buffer half-diluted and without protease inhibitor. Lipids were eluted by application of 20 µl HPLC-grade methanol to the column for 5 min incubation, followed by 100 µl methanol and collected into HPLC glass bottles with glass inserts and Rubber/PTFE caps (Neochrom, NeoLab). Eluates were immediately transferred to ice and then −20°C until lipidomics processing on the same day. Proteins were then eluted by application of 20 µl loading dye (20 mM DTT, 60 mM Tris pH 6.8, 20% glycerol, 1% SDS, 0.01% Bromophenol blue) at 100°C to the column for 5 min incubation, followed by 50 µl loading dye and collection. Samples were then heated to 95°C for 3 min and then immediately resolved by SDS PAGE on 10% Tris-Glycine gels and transferred by Western blot onto nitrocellulose membranes. Membranes were blocked for 1 hr in 5% milk TBS-T and then incubated with anti-mCherry (PA5-34974, Thermo Fisher Scientific) at 1:3000 in 5% milk TBS-T at 4°C overnight, followed by incubation with conformation-specific HRP-coupled anti-rabbit (5127S, Cell Signaling Technology) at 1:2000 in 5% milk TBS-T at RT for 2 hr, and then detection with ECL (GERPN2232, Sigma-Aldrich) and imaging on ECL Imager (ChemoCam, Intas).
 
-## Immunoprecipitation from Aiptasia homogenates
+#### Immunoprecipitation from Aiptasia homogenates
 
 Purified polyclonal antibody against XM_021052404 (described above) was coupled to epoxy magnetic beads in the Dynabeads Antibody Coupling Kit (14311, Thermo Fisher Scientific) per the manufacturer’s instructions. Beads (1 mg per reaction) were incubated with Aiptasia CC7 homogenates for 16 hr rotating at 4°C; control reactions contained uncoupled beads. After washing, protein-lipid complexes were immunoprecipitated via magnetic separation and eluted from beads with 200 mM glycine, pH 2.3, then immediately neutralized with 0.1 M Tris-HCl, pH 8.5. An aliquot was taken for Western blot visualization of proteins; the remainder was extracted for lipids with a mixture of chloroform:methanol:water (final ratios 8:4:3). The dried organic phase was reconstituted with 100 µl methanol and collected into HPLC glass bottles with glass inserts and Rubber/PTFE caps (Neochrom, NeoLab). Eluates were immediately transferred to ice and then −20°C until lipidomics processing on the same day.
 
-## Lipidomics
+#### Lipidomics
 
 50 µl of each eluate was added to chloroform-rinsed glass tubes, followed by addition of 100 pmol cholesterol-D6 (DLM2607, Cambridge Isotope Laboratories) as an internal standard. Samples were dried under nitrogen, derivatized with addition of 50 µmol acetyl chloride in methylene chloride (708496, Sigma Aldrich) for 30 min at RT, and then dried under nitrogen again. Samples were finally dissolved in 100 µl of MS buffer (100 mM ammonium acetate in methanol). For analysis, samples were diluted 1 in 10 in MS buffer and loaded into 96-well plates (Z651400-25A, Sigma Aldrich) for analysis. A standard curve in duplicate of pmol cholesterol/stigmasterol at 50/25, 250/125, 500/250 was always processed in parallel. Samples were injected by a TriVersa NanoMate held at 10°C on positive polarity at 1.2 kV and 0.4 psi gas pressure through a D-Type nozzle chip with 4 µm nominal diameter. Samples were analysed on a QTRAP 5500 (SCIEX) Hybrid Triple-Quadrupole/Linear Ion Trap Mass Spectrometry system (MS) including SelexIon Differential Ion Mobility System (DMS). Analysis was run at an interface heater temperature of 60°C in positive ion and neutral loss scan mode (loss of acetate, 77.05 Da), with low Q1 resolution and high Q3 resolution at a scan speed of 200 Da/sec and 120 multiple acquisitions in the mass range 400–600 Da. Samples were run with a declustering potential (DP) of 55 V, entrance potential of 10 V, collision energy of 13 V, and collision cell exit potential of 14 V. The DMS ran at 60°C, medium pressure (24 psi), and a compensation voltage (COV) of 4.4 kV for the set separation voltage (SV) of 4000 V. In every run a pooled mixture of all samples was run with a COV ramp from 0 to 20 kV to confirm the appropriate COV. The instrument was driven by Analyst software version 1.6.3 (SCIEX), and data evaluation was performed using the software LipidView 1.2 (SCIEX) to detect and quantify sterols by peak intensities. Sterol concentrations were calculated by normalization to the cholesterol-D6 internal standard, subtraction of blank samples, and comparison to the standard curve.
 
-## Western blots of soluble NPC2 proteins at different pH
+### Western blots of soluble NPC2 proteins at different pH
 
 Supernatants of recombinant NPC2 proteins in 1 ml Buffer A or B were obtained as described above. Equal volumes of supernatant were mixed with loading dye and resolved by SDS PAGE and Western blotting as described for ‘Immunoprecipitation’. Quantification was performed in Fiji (Schindelin et al., 2012): for each band, the integrated density (ID) in a rectangular region-of-interest (ROI) around the band was calculated, less the background (ID of the same ROI above the band).
 
-## Immunofluorescence of NPC2 in Aiptasia larvae
+### Immunofluorescence of NPC2 in Aiptasia larvae
 
 Fixed larvae in PBS at 4°C were permeabilized in PBT for 2 hr at RT. Samples were then incubated in blocking buffer (5% normal goat serum and 1% BSA in PBT) overnight at 4°C and then with primary antibody diluted in block buffer for 4 hr at RT at the following concentrations: 4.5 µg/ml (XM_021052404), 1.5 µg/ml (XM_021052412), and 2 µg/ml (XM_021052381). Samples were then washed twice for 5 min with PBT at RT, twice for approx. 18 hr at 4°C, then incubated with secondary antibody (goat anti-rabbit IgG-Alexa488; ab150089, Abcam) diluted to 4 µg/ml in block buffer for approx. 5 hr at RT. Samples were then washed with PBT three times for 5 min each at RT, then approx. 18 hr at 4°C. When phalloidin staining was included, samples were then washed with 1% BSA in PBS and incubated with Phalloidin-Atto 565 (94072, Sigma-Aldrich) in 1% BSA in PBS overnight at 4°C. Samples were then incubated with Hoechst 33258 at 10 µg/ml in PBT for 1 hr at RT, washed 3x with PBT for 5 min each, and then washed into PBS at 4°C overnight. PBS was replaced with 95% glycerol with 2.5 mg/ml DABCO, and the larvae were mounted for microscopy. In peptide-blocked controls, the corresponding immunogenic peptides dissolved in PBS or DMSO at 0.5 mg/ml – 1 mg/ml were added to diluted primary antibodies (XM_021052412 at 1:200 [1.5 µg/ml], XM_021052404 at 1:750 [0.6 µg/ml], and XM_021052381 at 1:200 [2 µg/ml]) and rotated at 1 hr at RT before being added to samples, which were then processed as described.
 
-## U18666A exposure in Aiptasia and A. digitifera
+### U18666A exposure in Aiptasia and A. digitifera
 
 Symbiotic and aposymbiotic Aiptasia polyps were allowed to attach for 2 d in 6-well culture plates before exposure to U18666A (U3633, Sigma Aldrich) in DMSO at the indicated concentrations in FASW; final percentage of DMSO was <0.05%. Polyps were cultured at 26°C at 12:12 L:D and photographed daily, followed by wash and drug re-addition. Symbiont density per anemone was quantified by homogenization in 200 µl ultrapure water with 0.01% SDS using a 23G needle and 1 ml syringe, after which samples were quantified for cells by visual particle counter (TC20, BioRad) and for total protein by the Pierce BCA Protein Assay Kit (23227, Thermo Fisher Scientific). Acropora polyps hosting Symbiodiniaceae SSB01 were exposed to U18666A as described, except that they were cultured in FNSW.
 
-## Microscopy
+### Microscopy
 
 Confocal microscopy of NPC2 immunofluorescence was performed using a Leica SP8 system with an HC PL Apo CS2 63x/1.30 GLYC objective. Hoechst was excited at 405 nm and detected at 410–501 nm, and algal autofluorescence was excited at 633 nm and detected at 645–741 nm. In a second sequential scan, Alexa-488 (secondary antibody) was excited at 496 nm and detected at 501–541 nm. Z-stacks were collected with a step size of 0.5 µm and 3x line averaging. A zoom factor of 5 or, for whole larvae, 1.33, was used, and a pinhole of 1 Airy unit. Quantification and imaging NPC2 IF over a time-course was carried out using a Nikon Eclipse Ti epifluorescence compound microscope with a Plan Apo λ 40x objective, Sola light source, and GFP filter set. Images were captured with a Nikon DS-Qi2 with an exposure time of 1 s. Fluorescence microscopy of Aiptasia adults was carried out using a Nikon SMZ18 fluorescence stereoscope with a 0.5X objective; endogenous autofluorescence of symbiont photosynthetic antennae was visualized with a Texas Red filter set, and images were captured at magnification 15X with an Orca-Flash4.0 camera (C11440, Hamamatsu) at 300 ms exposure using Nikon Elements software and processed in Fiji (Schindelin et al., 2012). Acropora polyps were photographed as described (Wolfowicz et al., 2016), and fluorescence was quantified in Fiji (Schindelin et al., 2012) as total fluorescence in the polyp area minus adjacent background.
 
-## Statistical information
+### Statistical information
 
 In GC/MS-based sterol profiling, shown in Figure 1A are representatives of n = 3 (Aiptasia, SSB01) or n = 2 (Acropora, SSA01, CCMP2556) samples each, shown in Figure 1B are representatives of n = 3 samples each, and shown in Figure 1C and Figure 1—figure supplement 2 are averages (A) and representatives (B) of n = 2 samples each. In gene expression analyses by qPCR (Figure 3A), shown are average values of 6 samples per condition, six animals per sample, each in technical duplicate for Aiptasia. For Nematostella (Figure 3—figure supplement 2), shown are average values of 2 animals per sample, two samples per condition, each in technical duplicate. For Acropora (Figure 3—figure supplement 2), shown are averages of two biological replicates, each in technical duplicate. In NPC2 immunofluorescence in Aiptasia larvae (Figure 3F), shown is a representative of two independent experiments, each with triplicate samples of >50 larvae per time-point. In sterol-blocking U18666A pharmacological experiments, shown are representative images of n = 3 polyps per anemone type and condition, with all anemones shown in Figure 3—figure supplement 6; symbiotic representatives are from one of three replicate experiments (Figure 3G + H). Quantification of symbiont density (Figure 3H) in n = 3 anemones per condition, each in technical duplicate. Shown in Figure 3—figure supplement 7 are representative images of n = 5 polyps across duplicate wells (n = 4 for 10 µM). In immunoprecipitation-lipidomics experiments, shown are averages of duplicate samples, with representative experiments shown of two (Figure 4C) or three replicate experiments (Figure 4A + B). For experiments assessing soluble NPC2 at different pHs, ratios of ID at pH 7 divided by that at pH 5 were calculated from duplicate-loaded bands per protein per pH condition from a single blot, from three (canonical NPC2 XM_021041171; non-canonical NPC2 XM_021052404) or six (non-canonical NPC2 XM_021052412; crmCherry alone) replicate experiments (Figure 4F). Shown in Figure 4E are one pair of treatments in a representative experiment, from the aforementioned number of replicate experiments.

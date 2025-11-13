@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.43959.001 A newfound signaling pathway employs a GGDEF enzyme with unique activity compared to the majority of homologs associated with bacterial cyclic di-GMP signaling. This system provides a rare opportunity to study how signaling proteins natively gain distinct function. Using genetic knockouts, riboswitch reporters, and RNA-Seq, we show that GacA, the Hypr GGDEF in Geobacter sulfurreducens , specifically regulates cyclic GMP-AMP (3′,3′-cGAMP) levels in vivo to stimulate gene expression associated with metal reduction separate from electricity production. To reconcile these in vivo findings with prior in vitro results that showed GacA was promiscuous, we developed a full kinetic model combining experimental data and mathematical modeling to reveal mechanisms that contribute to in vivo specificity. A 1.4 Å-resolution crystal structure of the Geobacter Hypr GGDEF domain was determined to understand the molecular basis for those mechanisms, including key cross-dimer interactions. Together these results demonstrate that specific signaling can result from a promiscuous enzyme.
+A newfound signaling pathway employs a GGDEF enzyme with unique activity compared to the majority of homologs associated with bacterial cyclic di-GMP signaling. This system provides a rare opportunity to study how signaling proteins natively gain distinct function. Using genetic knockouts, riboswitch reporters, and RNA-Seq, we show that GacA, the Hypr GGDEF in Geobacter sulfurreducens, specifically regulates cyclic GMP-AMP (3′,3′-cGAMP) levels in vivo to stimulate gene expression associated with metal reduction separate from electricity production. To reconcile these in vivo findings with prior in vitro results that showed GacA was promiscuous, we developed a full kinetic model combining experimental data and mathematical modeling to reveal mechanisms that contribute to in vivo specificity. A 1.4 Å-resolution crystal structure of the Geobacter Hypr GGDEF domain was determined to understand the molecular basis for those mechanisms, including key cross-dimer interactions. Together these results demonstrate that specific signaling can result from a promiscuous enzyme.
 
 ## Introduction
 
@@ -42,7 +42,7 @@ Furthermore, we sought to understand the molecular mechanism for GacA by obtaini
 
 ## Results and discussion
 
-## GacA is necessary for Fe(III) particle-associated growth, but not electricity production at electrode surfaces
+### GacA is necessary for Fe(III) particle-associated growth, but not electricity production at electrode surfaces
 
 Geobacter isolates produce energy via contact-dependent electron transfer to extracellular metals, which exist as insoluble precipitates at neutral pH (Navrotsky et al., 2008). Stimulation of this biological metal reduction activity is useful for bioremediation of metal-rich sites and anaerobic oxidation of petroleum-based groundwater pollutants (Chang et al., 2005; Lovley et al., 2011; Rooney-Varga et al., 1999). Geobacter also can grow via electron transfer to electrode surfaces, where their biofilms produce electricity in bioelectrochemical devices that use wastewater or contaminated groundwater (Bond and Lovley, 2003; Logan and Rabaey, 2012; Lovley, 2012). The ability to transfer electrons to extracellular substrates requires multiple extracellular structures, including pili, polysaccharides, and cytochromes localized to the outer cell surface.
 
@@ -52,17 +52,17 @@ To assess the physiological role of cGAMP signaling in G. sulfurreducens, we con
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/43959/elife-43959-fig1-v1.jpg)
 
-**Figure 1.:** (A) G. sulfurreducens ΔgacA deletion strain is defective in the reduction of insoluble Fe(III) oxide particles (open triangles). Re-expressing gacA in the Tn7 site on the chromosome (filled triangles) restores Fe(III) reduction. An ΔesnD deletion strain (squares) exhibits no lag in Fe(III) oxide reduction compared to 2 d after inoculation for WT (circles). (B) Soluble Fe(III) citrate reduction is unaffected in either ΔgacA (triangles) and ΔesnD (squares) strains relative to WT (circles). (C) EsnD is required for robust electrode reduction (open squares) and re-expressing esnD in the Tn7 site on the chromosome (filled squares) restores electrode respiration to WT (circles) levels. GacA is not required for electrode respiration (triangles). (D) Strains containing riboswitches driving Nanoluc luciferase, reporting cellular levels of cGAMP (red bars) and cdiG (blue bars). The ΔgacA strains express GacA variants from the Tn7 chromosomal site (also see cartoon). Deleting gacA reduces cGAMP-dependent reporter levels by ~80% but has no effect on cdiG reporter levels. Deleting esnD reduces cdiG levels by ~20% and increases cGAMP levels to 3x WT. The Rec domain variant D52A produces cGAMP at levels comparable to WT, while the I-site variant R393A increases cGAMP levels to 30x WT. (E) Reduction of Fe(III) oxide particles in the ΔgacA deletion strain is rescued by re-expressing WT GacA and D52A variants, and exhibits significantly increased rate for the R393A variant that overproduces cGAMP. Representative biological replicates are shown for Fe(III) oxide reduction (n = 3), Fe(III) citrate reduction (n = 3), and electrode growth (n = 4). Nanoluc assays were performed in biological replicates (n = 3) in panel D. P values in panel D: ns > 0.05; **=0.001–0.01; ***<0.001. All error bars represent standard deviations.10.7554/eLife.43959.004Figure 1—source data 1.
+**Figure 1.:** (A) G. sulfurreducens ΔgacA deletion strain is defective in the reduction of insoluble Fe(III) oxide particles (open triangles). Re-expressing gacA in the Tn7 site on the chromosome (filled triangles) restores Fe(III) reduction. An ΔesnD deletion strain (squares) exhibits no lag in Fe(III) oxide reduction compared to 2 d after inoculation for WT (circles). (B) Soluble Fe(III) citrate reduction is unaffected in either ΔgacA (triangles) and ΔesnD (squares) strains relative to WT (circles). (C) EsnD is required for robust electrode reduction (open squares) and re-expressing esnD in the Tn7 site on the chromosome (filled squares) restores electrode respiration to WT (circles) levels. GacA is not required for electrode respiration (triangles). (D) Strains containing riboswitches driving Nanoluc luciferase, reporting cellular levels of cGAMP (red bars) and cdiG (blue bars). The ΔgacA strains express GacA variants from the Tn7 chromosomal site (also see cartoon). Deleting gacA reduces cGAMP-dependent reporter levels by ~80% but has no effect on cdiG reporter levels. Deleting esnD reduces cdiG levels by ~20% and increases cGAMP levels to 3x WT. The Rec domain variant D52A produces cGAMP at levels comparable to WT, while the I-site variant R393A increases cGAMP levels to 30x WT. (E) Reduction of Fe(III) oxide particles in the ΔgacA deletion strain is rescued by re-expressing WT GacA and D52A variants, and exhibits significantly increased rate for the R393A variant that overproduces cGAMP. Representative biological replicates are shown for Fe(III) oxide reduction (n = 3), Fe(III) citrate reduction (n = 3), and electrode growth (n = 4). Nanoluc assays were performed in biological replicates (n = 3) in panel D. P values in panel D: ns > 0.05; **=0.001–0.01; ***<0.001. All error bars represent standard deviations.
 
 The ∆gacA defect with Fe(III) oxides was the opposite of mutants in esn genes encoding chemosensory, histidine kinase, and diguanylate cyclase response regulator proteins. Mutants in esn genes reduce Fe(III) oxides similar to wild type, but show poor biofilm growth on electrodes (Chan et al., 2017). One of these esn genes, esnD (GSU3376), encodes a GGDEF diguanylate cyclase that produces only cdiG based on biosensor analysis (Hallberg et al., 2016). We compared growth of a mutant lacking cdiG-producing EsnD under the same conditions used to study the mutant lacking cGAMP-producing GacA. The ∆esnD mutant reduced Fe(III) oxides more rapidly than wild type, but showed a > 3 d lag in colonizing electrode surfaces and never reached current levels observed in wild type (Figure 1A and C). Re-expressing esnD as a single copy integrated into the chromosome restored biofilm growth on −0.1 V vs. SHE electrodes (Figure 1C). These data support that cdiG contributes to biofilm growth on electrodes, while cGAMP is involved in reduction of Fe(III) oxide particles. In addition, the enhanced growth of ∆esnD mutants with Fe(III) oxides suggests an antagonistic effect of cyclic di-GMP on Fe(III) oxide reduction.
 
-## GacA is essential for production of intracellular cyclic GMP-AMP (cGAMP)
+### GacA is essential for production of intracellular cyclic GMP-AMP (cGAMP)
 
 To test if deletion of gacA altered cGAMP levels within the cell, we developed a new luciferase-based reporter by cloning the cGAMP-specific pgcA riboswitch upstream of a nano-luciferase (NLuc) gene, then integrating this reporter as a single copy into the Tn7 insertion site of G. sulfurreducens. For these experiments, all constructs were grown under the same conditions to stationary phase under electron acceptor limitation. Luminescence in the cGAMP reporter strain declined over 80% when gacA was deleted, and recovered to wild type luminescence levels when gacA was re-expressed from its native promoter (Figures 1D, 2A and B). Over-expression of gacA from a constitutive promoter increased luminescence to 200% of wild type. This result links gacA to intracellular levels of cGAMP in Geobacter, and correlates with parallel LC/MS analysis of cell extracts, which also showed that cGAMP levels fell below the detection limit in the ∆gacA strain (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/43959/elife-43959-fig2-v1.jpg)
 
-**Figure 2.:** pgcA (GSU1761) expression in Geobacter sulfurreducens.(A) Expression of nanoluciferase is induced by binding of cyclic dinucleotides to GEMM-1b riboswitch. An A to G variant in nucleotide 20 in the Gmet_0970 GEMM-1b riboswitch changes cGAMP selectivity to cdiG. (B) The WT and A20G variant of Gmet_0970 GEMM-1b riboswitch are selective for cGAMP and cdiG over a 100-fold range of riboswitch RNA concentration, respectively. (C) LC-MS chromatogram traces for the ion extraction of cGAMP (m/z = 675) from cell lysates for G. sulfurreducens PCA WT or ΔgacA strains. (D) Single nucleotide polymorphisms (SNP) highlighted in red in GSUR3008 that cause cGAMP insensitive variants to demonstrate constitutive expression of pgcA (GSU1761). The C78U and 94 + G variants were isolated in a previous study selecting for increased rate of Fe(III) oxide reduction in G. sulfurreducens (Tremblay et al., 2011). The cGAMP insensitive C78U variant was further confirmed by in-line probing (Kellenberger et al., 2015). The cGAMP insensitive 93 + A variant is described in this study. (E) The GSUR3008 93 + A mutation in G. sulfurreducens eliminates the requirement for GacA or cGAMP for Fe(III) oxide reduction due to the over-expression of pgcA that was confirmed by RNAseq. No other gene expression changes were detected. Raw reads are deposited in the NCBI SRA database PRJNA290373.
+**Figure 2.:** (A) Expression of nanoluciferase is induced by binding of cyclic dinucleotides to GEMM-1b riboswitch. An A to G variant in nucleotide 20 in the Gmet_0970 GEMM-1b riboswitch changes cGAMP selectivity to cdiG. (B) The WT and A20G variant of Gmet_0970 GEMM-1b riboswitch are selective for cGAMP and cdiG over a 100-fold range of riboswitch RNA concentration, respectively. (C) LC-MS chromatogram traces for the ion extraction of cGAMP (m/z = 675) from cell lysates for G. sulfurreducens PCA WT or ΔgacA strains. (D) Single nucleotide polymorphisms (SNP) highlighted in red in GSUR3008 that cause cGAMP insensitive variants to demonstrate constitutive expression of pgcA (GSU1761). The C78U and 94 + G variants were isolated in a previous study selecting for increased rate of Fe(III) oxide reduction in G. sulfurreducens (Tremblay et al., 2011). The cGAMP insensitive C78U variant was further confirmed by in-line probing (Kellenberger et al., 2015). The cGAMP insensitive 93 + A variant is described in this study. (E) The GSUR3008 93 + A mutation in G. sulfurreducens eliminates the requirement for GacA or cGAMP for Fe(III) oxide reduction due to the over-expression of pgcA that was confirmed by RNAseq. No other gene expression changes were detected. Raw reads are deposited in the NCBI SRA database PRJNA290373.
 
 The new cGAMP reporter assay also allowed us to interrogate roles of conserved residues in GacA that are critical for activity in diguanylate cyclases. GacA has an N-terminal CheY-like receiver domain and a C-terminal GGDEF domain. In WspR, a Pseudomonas aeruginosa diguanylate cyclase with similar domain architecture, phosphorylation of a conserved aspartate in the receiver domain promotes dimerization, leading to an active enzyme (De et al., 2008; Huangyutitham et al., 2013). In a G. sulfurreducens ∆gacA background, expression of a GacAD52A variant with the phosphorylation site replaced by alanine produced similar levels of cGAMP as GacAWT. Expression of gacAD52A also restored Fe(III) oxide reduction to a ∆gacA mutant (Figure 1D and E). Thus, it appears that the conserved aspartate is not essential for GacA activation. Aspartate phosphorylation instead may deactivate GacA or the receiver domain may be activated through non-canonical mechanisms (Lin et al., 2009; Ocasio et al., 2015; Trajtenberg et al., 2014; Wang et al., 2009).
 
@@ -70,7 +70,7 @@ A second mechanism regulating canonical GGDEF domains involves a conserved allos
 
 The ΔesnD strain also reduced amorphous insoluble Fe(III)-oxides more rapidly than the wild type strain (Figure 1A), leading to a hypothesis that deletion of esnD increased cGAMP levels in G. sulfurreducens. Consistent with this hypothesis, activity of the cGAMP reporter was 3-fold higher when esnD was deleted (Figure 1D). Using a different reporter construct comprised of an engineered cdiG-responsive riboswitch (Figures 1D, 2A and B), we confirmed that deletion of esnD caused a detectable decrease in cdiG, while cdiG levels did not change significantly in ∆gacA. These results support cGAMP synthesis by GacA being inhibited by intracellular cdiG levels. Mutation of the I-site appears to relieve this allosteric inhibition, as does lowering of cdiG levels in the ∆esnD strain, triggering corresponding increases in Fe(III) oxide reduction rates.
 
-## The global transcriptional response to altered cGAMP levels is focused on riboswitch regulons
+### The global transcriptional response to altered cGAMP levels is focused on riboswitch regulons
 
 Many GEMM-I riboswitches from Geobacter selectively bind cGAMP over other cyclic dinucleotides such as cdiG and are the founding members of the GEMM-Ib subclass. For example, in-line probing showed the riboswitch upstream of pgcA used for our reporter analysis was ~1200 fold more selective for cGAMP over cdiG (Kellenberger et al., 2015), and similar results were reported in (Nelson et al., 2015). The correlation we observed between increased Fe(III) oxide reduction and increased cGAMP levels, combined with the in vitro activity of cGAMP riboswitches, suggests that cGAMP could be a global effector of genes crucial to metal reduction.
 
@@ -78,7 +78,7 @@ There are 17 GEMM-I riboswitches in G. sulfurreducens, and in several cases, two
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/43959/elife-43959-fig3-v1.jpg)
 
-**Figure 3.:** gacA deletion strain and upregulated in a ΔesnD deletion strain.Full RNAseq expression data are in Supplementary file 1 (A) Comparison of all genes expressed in WT vs ΔgacA deletion strain. Each dot represents expression of a gene; red dots highlight GEMM-1b regulated genes. Dotted and dashed lines indicate 2- and 4-fold expression differences. Most GEMM-1b regulated genes have at least 2–4 fold decrease in expression compared to WT. (B) Comparison of all genes expressed in WT vs. a ΔesnD deletion strain, labeled as in part A). Most GEMM-1b regulated genes have at least a 2-fold increase in expression compared to WT. (C) GEMM-1b riboswitch transcripts are decreased in a ΔgacA deletion and increased in a ΔesnD deletion compared to WT. GEMM-1b sequences are listed by the first gene locus tag they regulate. Some genes have tandem GEMM-1b sequences upstream, these are labeled by their locus tags followed by ‘a’ and ‘b’. (D) RNAseq reads from WT, ΔgacA, and ΔesnD mapped to the upstream region of GSU1761 (top) and GSU2885 (bottom). GSU2885 is an example of a gene that is regulated by tandem riboswitches. Genes are not drawn to scale with the riboswitch sequences. RNAseq data are generated from biological replicates (n = 2).10.7554/eLife.43959.007Figure 3—source data 1.
+**Figure 3.:** Full RNAseq expression data are in Supplementary file 1 (A) Comparison of all genes expressed in WT vs ΔgacA deletion strain. Each dot represents expression of a gene; red dots highlight GEMM-1b regulated genes. Dotted and dashed lines indicate 2- and 4-fold expression differences. Most GEMM-1b regulated genes have at least 2–4 fold decrease in expression compared to WT. (B) Comparison of all genes expressed in WT vs. a ΔesnD deletion strain, labeled as in part A). Most GEMM-1b regulated genes have at least a 2-fold increase in expression compared to WT. (C) GEMM-1b riboswitch transcripts are decreased in a ΔgacA deletion and increased in a ΔesnD deletion compared to WT. GEMM-1b sequences are listed by the first gene locus tag they regulate. Some genes have tandem GEMM-1b sequences upstream, these are labeled by their locus tags followed by ‘a’ and ‘b’. (D) RNAseq reads from WT, ΔgacA, and ΔesnD mapped to the upstream region of GSU1761 (top) and GSU2885 (bottom). GSU2885 is an example of a gene that is regulated by tandem riboswitches. Genes are not drawn to scale with the riboswitch sequences. RNAseq data are generated from biological replicates (n = 2).
 
 In contrast, cells lacking esnD showed a ~2 fold increase in expression of these same genes controlled by cGAMP-responsive riboswitches (Figure 3B). Every gene that showed a decrease in expression due to gacA deletion also showed an increase due to ∆esnD. The smallest effect was in the operon containing OmcST, which was previously reported to contain a riboswitch sensitive to both cGAMP and cdiG (Kellenberger et al., 2015). Interestingly, some hypothetical genes (GSU0919, GSU3250, and GSU3409), and the entire operon for the multiheme cytochrome OmcZ were downregulated in both ∆gacA and ∆esnD despite a lack of known riboswitch sequences, suggesting additional modes for cyclic dinucleotide regulation. As OmcZ is known to be essential for growth in electrode biofilms (Nevin et al., 2009), the unexpected decrease in OmcZ due to gacA deletion likely explains the lag in electrode growth seen in Figure 1C. This effect may be due to minor contribution by GacA to cdiG levels or from pleiotropic effects from cGAMP signaling or its many downstream effectors.
 
@@ -88,7 +88,7 @@ Previously published experiments selecting for faster Fe(III) oxide reduction ac
 
 These genetic and RNAseq experiments establish a unique phenotype controlled by 3’3’-cGAMP, and show that GacA is primarily responsible for formation of this second messenger. An opposing relationship for cGAMP and cdiG is established, with each cyclic dinucleotide enhancing extracellular electron transfer to a distinct type of surface. To our knowledge, this is the first time that these two contact-dependent electron transfer processes have been shown to be differentially regulated on a global scale. In this context, the signaling enzyme GacA presents an enigma: we previously discovered that this founding member of Hypr GGDEFs can produce mixtures of cdiG, cGAMP, and cdiA, depending on in vitro conditions (Hallberg et al., 2016). In the next sections, we employ biochemical analysis, mathematical modeling, and structural elucidation to determine how this homodimeric enzyme ‘breaks symmetry’ in several ways to produce the heterodimeric cGAMP signal in the cell. In addition, the role of several residues ultra-conserved across all GGDEF enzymes but with previously unassigned function is revealed.
 
-## GacA differs in mechanism from DncV and cGAS
+### GacA differs in mechanism from DncV and cGAS
 
 To date, two other enzymes have been discovered that produce cGAMP or the related compound, mixed linkage cGAMP: DncV from Vibrio cholerae, and cGAS in metazoans (Davies et al., 2012; Sun et al., 2013; Wu et al., 2013). Both enzymes have one active site per monomer and operate via a two-step mechanism, wherein a linear dinucleotide intermediate is formed, rotated in the active site, then cyclized. Importantly, DncV and cGAS differ in the order in which the nucleotide linkages are formed (Figure 4A). DncV initially produces pppA[3′,5′]pG, utilizing ATP as the nucleophile donor and GTP as the electrophile acceptor, whereas cGAS produces pppG[2′,5′]pA (Gao et al., 2013; Kranzusch et al., 2014). Thus, these two enzymes have opposite preferences for the first phosphodiester bond formed.
 
@@ -98,9 +98,83 @@ To date, two other enzymes have been discovered that produce cGAMP or the relate
 
 In contrast, GacA is a homodimeric enzyme that has one nucleotide substrate binding site per GGDEF domain, or half of the active site per monomer. We observed that GacA generates both types of linear intermediates in the presence of nonhydrolyzable analogs (Figure 4B), which means that both ATP and GTP can serve as donor and acceptor. This result reveals a marked difference between GacA and the other two dinucleotide cyclases, DncV and cGAS, and is consistent with the increased promiscuity of GacA to produce homodimeric products, for example cdiG and cdiA.
 
-## Kinetic analysis and mathematical modeling reveal the mechanisms for GacA to produce predominantly cGAMP in vivo
+### Kinetic analysis and mathematical modeling reveal the mechanisms for GacA to produce predominantly cGAMP in vivo
 
 To gain insight into how GacA preferentially produces cGAMP in vivo, it was necessary to establish a full kinetic model for the enzyme (Figure 5A). First, we measured initial rates for product formation with single substrates (ATP or GTP) using an enzyme-coupled assay for pyrophosphate detection (Burns et al., 2014). In these two cases, the kinetic model is greatly simplified because only one homodimeric product is generated, and this model has been validated for canonical GGDEF enzymes (Oliveira et al., 2015). Interestingly, kcat values are similar for production of cdiA and cdiG (0.03–0.04 sec−1). The main difference instead appears to be substrate binding, as GTP is the preferred substrate over ATP (Table 1). Second, to obtain values for the two heterodimeric equilibrium constants (e.g. KA|G, binding constant for ATP given GTP is pre-bound), we compared computationally modeled product ratios to experimental measurements to find KA|G and KG|A values that optimally fit the data (Figure 5B and C, Figure 5—figure supplement 1). In these models, kcat,AG was set conservatively to equal the catalytic rate constants determined for the homodimeric products (0.03 sec−1). This assumption is supported by the fact that ATP and GTP are equally competent as donor and acceptor (Figure 4B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/43959/elife-43959-fig5-v1.jpg)
+
+**Figure 5.:** (A) Left, reaction pathways for GacA modeled using Python. ‘E’ represents the active enzyme, which is a GacA homodimer. ‘E•N•[ ]’ and ‘E•[ ]•N’ represent enzyme with NTP bound in the first or second half-active sites, respectively, which are treated as equivalent states. ‘E•N•N’ represents enzyme with two NTPs bound. The dissociation constant for the first NTP binding event is K1N, the second binding event is K2N for homodimeric products, and the second binding event is KX|Y for XTP binding after YTP to produce cGAMP. For example, KG|A is the dissociation constant for GTP given GacA already has ATP bound. Right, schematic summarizing kinetic parameters favoring cGAMP production in vivo. (B) Numerical solution of KG|A and KA|G was obtained by varying them between 0–100 µM and minimizing the least squares error (shown) for the modeled product ratios versus the experimental values. The minimum is observed at KG|A = 10 µM and KA|G = 71 µM, giving the best-fit curve shown in (C). (C) Modeled (lines) versus experimental (points) product ratios for GacA at different ATP to GTP ratios. Data points shown are an average of independent technical replicates (n = 3). (D) Modeled product ratios assuming cellular homeostasis of ATP and GTP levels (d[ATP]/dt = d[GTP]/dt = 0). (E) As in (D), except modeled with kcat,AG nine-fold higher than kcat,cdiG or kcat,cdiA. With asymmetric activation, GacA could produce cGAMP almost exclusively.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/43959/elife-43959-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Related to Table 1. (A) LC-MS analysis of product ratios for endpoint reactions with 1 µM of 6xHis-MBP-tagged GacA R393A (I-site mutant) using varying ATP:GTP ratios, with [GTP] kept constant at 100 µM. ATP:GTP ratios are shown above each trace. Under these conditions, the cyclic dinucleotides were found to elute in the order of cdiG (10.23 ± 0.02 min), cGAMP (10.56 ± 0.02 min), and cdiA/pApA (11.09 ± 0.05 min). (B) Analysis of product ratios for GacA at different ATP to GTP ratios using Python modeling. Curves represent ratios obtained by fitting to either a noncooperative or cooperative (with KG|A=10 µM, and KA|G=71 µM) mechanism. Data points are an average of n = 3 experiments.
+
+**Table 1.**
+ Kinetic parameters for WT GacA using non-cooperative and cooperative models.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Non-cooperative</th>
+      <th>Cooperative</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>K1A, µM</td>
+      <td>80</td>
+      <td>343</td>
+    </tr>
+    <tr>
+      <td>K2A, µM</td>
+      <td>80</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>kcat,cdiA, sec−1</td>
+      <td>0.04</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>K1G, µM</td>
+      <td>25</td>
+      <td>39</td>
+    </tr>
+    <tr>
+      <td>K2G, µM</td>
+      <td>25</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>kcat,cdiG,sec−1</td>
+      <td>0.04</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>KA|G, µM</td>
+      <td>80</td>
+      <td>71</td>
+    </tr>
+    <tr>
+      <td>KG|A, µM</td>
+      <td>25</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>kcat,cGAMP, sec−1</td>
+      <td>0.04</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Model RMSD</td>
+      <td>4118</td>
+      <td>443</td>
+    </tr>
+  </tbody>
+</table>
 
 We found that the best-fit values to solve the full kinetic model were KA|G = 71 µM and KG|A = 10 µM (Table 1). This result shows that there is positive cooperativity (K1 > K2) facilitating binding of the second substrate for all reaction pathways. We also analyzed whether binding constants for the second nucleotide are different depending on whether enzyme first bound ATP or GTP, for example comparing KG|A to K2G and KA|G to K2A. This effect is termed selective cooperativity, as it affects the product ratios. Comparison of KG|A to K2G shows that there is a 2-fold enhancement of GTP binding to the A-bound vs. G-bound enzyme, which would lead to preferential cGAMP production (Figure 5A). Comparison of KA|G to K2A shows a 1.4-fold enhancement of ATP binding to the A-bound vs G-bound enzyme, but in this case the model fit is relatively insensitive to changes in KA|G value (Figure 5B), so this effect may or may not be significant. Taken together, the kinetic model provides support for selective cooperativity favoring cGAMP production by enhancing GTP binding to the A-bound enzyme. The A-bound form is favored under cellular conditions where ATP levels are typically 3-fold or more relative to GTP levels (Buckstein et al., 2008).
 
@@ -108,9 +182,17 @@ While performing the kinetic modeling, we observed that substrate depletion duri
 
 The kinetic model also allows us to estimate the impact of receiver (Rec) domain activation. While our data indicate that the traditional phosphorylation site D52 is not required for GacA activity in vivo (Figure 1D,E) and in vitro (Hallberg et al., 2016), alternative activation of Rec domains by S/T phosphorylation, kinase binding, or ligand binding has been shown (Lin et al., 2009; Ocasio et al., 2015; Trajtenberg et al., 2014; Wang et al., 2009). The low kcat values that we measured in vitro are in the range observed for other non-activated GGDEF enzymes (Wassmann et al., 2007), and activation has been shown to increase canonical GGDEF activity by up to 50-fold (Huangyutitham et al., 2013; Paul et al., 2007). While uniform effects on kcat values would not change product ratios, we used the kinetic model to simulate product ratios if kcat,AG was increased asymmetrically by activation more than kcat,diG or kcat,diA (Figure 5E). The result is that GacA can be almost fully selective (>90% cGAMP) if the proposed asymmetric activation leads to kcat,AG that is nine times kcat,diG or kcat,diA (Figure 5E), which would result from a difference in activation energy (ΔΔGo) of only 1.3 kcal/mol. Taken together, these results show how cooperative binding, including selective cooperativity induced by the first substrate bound, and tuning substrate affinities to cellular concentrations, could make GacA predominantly produce cGAMP. Mathematical modeling also led to the hypothesis that asymmetric activation could further favor GacA behaving exclusively as a cGAMP signaling enzyme in vivo.
 
-## X-ray crystal structure of Hypr GGDEF domain of G. metallireducens GacA bound to guanosine substrate
+### X-ray crystal structure of Hypr GGDEF domain of G. metallireducens GacA bound to guanosine substrate
 
 To gain insight into the molecular basis for function and mechanism of this signaling enzyme, we pursued structural characterization of the GacA GGDEF domain from Geobacter metallireducens in the presence of GTP, and obtained a 1.4 Å resolution x-ray crystal structure as an N-terminal fusion with T4 lysozyme (Table 2, Figures 6 and 7). The GacA GGDEF domain has a βααββαβαβ global topology that positions one guanosine substrate above the signature [G/A/S]G[D/E]E[F/Y] motif and can be overlaid with a canonical GGDEF domain with an RMSD value of 1.152 Å (Figures 6B and 8). A region behind the two alpha helices that support substrate binding is modified from a beta sheet to a helical/loop motif, and varies considerably between GGDEF structures (Chen et al., 2016; Dahlstrom et al., 2015; Deepthi et al., 2014; Yang et al., 2011). Electron density for three guanine nucleotides was found in the GacA structure, two in nucleotide-interacting regions that are conserved in other GGDEF domains (Figure 7) (Chan et al., 2004). One guanine nucleotide is bound near the canonical allosteric inhibitory site (I-site) (Chan et al., 2004; Christen et al., 2006) and the second nucleotide is bound in the active site above the GGDEF motif (Figures 6A and 7). For the latter, we were only able to find partial localized electron density for the alpha phosphate (Figure 7B). It is likely that GTP was hydrolyzed during crystallization but remained coordinated in the active site with density now visible for the guanosine and beta-gamma pyrophosphate (PPi). For clarity, we show both the original and modeled structures with the alpha phosphate. The final guanosine nucleotide binds at the T4 lysozyme-GGDEF interface and may act to stabilize the construct in a way that ATP cannot. To our knowledge, this is the first structure of a Hypr GGDEF domain.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/43959/elife-43959-fig6-v1.jpg)
+
+**Figure 6.:** (A) Active site of the GacA Hypr GGDEF from G. metallireducens (Gmet_1914) with guanosine:PPi bound or modeled GTP based on partial alpha phosphate density. (B) Superposition of x-ray crystal structures of G. metallireducens GacA Hypr GGDEF (blue) and the Idiomarina sp. A28L bacteriophytochrome GGDEF (grey, PDB 5LLX), each with bound guanine nucleotides. Key interacting residues are labeled and shown as sticks. (C) Schematic illustrating the Goldilocks model that explains why the Ser348/GGEEF combination is inactive. In contrast, the flexible Asp side chain at position 348 permits either GGDEF or GGEEF enzymes to remain active. (D) LC/MS analysis of E. coli cell extracts overexpressing G. sulfurreducens GacA WT or D374E* mutant (* indicates that the numbering used corresponds to the G. metallireducens GacA structure, because GsGacA is shorter by one amino acid). Shown are representative MS spectra from integrating the retention time region that would contain the three cyclic dinucleotides. Expected masses are labeled for cdiG (m/z = 691), cGAMP (m/z = 675), and cdiA (m/z = 659). The major peak observed for inactive variants (m/z = 664) is potentially NAD from the lysate.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/43959/elife-43959-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) LC-MS analysis of endpoint reactions with 6xHis-MBP-tagged GacA R393A (I-site mutant = WT) and additional mutants. * represents products that co-elute at similar retention times as cyclic dinuncleotides but that do not have masses assignable to cyclic dinucleotides. (B) Flow cytometry analysis of WspR wildtype and mutants. Average fluorescence measured by flow cytometry (n = 3, 10,000 cells per run) of E. coli BL21 (DE3) Star cells co-expressing the cdiG biosensor Dp-Spinach2 (grey) or cGAMP biosensor GM0970-p1-4delA-Spinach (blue) along with WT GacA (GSU1658), WT WspR, various WspR mutants, or empty vector (-). (C) Kinetic parameters of GacA mutants analyzed in part A for reactions with GTP alone. No significant turnover was observed with ATP alone. GacA R393A D373E was totally inactive with GTP or ATP. (D)-(E) Sequence logo generated from GGDEF domains containing (D) S/T347 (by GSU1658 numbering) or (E) D347. Image generated with WebLogo (Crooks et al., 2004).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/43959/elife-43959-fig7-v1.jpg)
 
@@ -120,7 +202,172 @@ To gain insight into the molecular basis for function and mechanism of this sign
 
 **Figure 8.:** (A) Overlay of Gmet_1914 GGDEF (blue) with the GGDEF domain of the I. marina light-activated GGDEF (Grey, PDB: 5LLX). (B) Active site of Gmet_1914 GGDEF in complex with GTP. Residues expected to interact with the GTP or Mg2+ cation are labeled. The alpha phosphate electron density was unable to be resolved, but was modeled into the structure. (C) Chemical scheme of active site interactions with GTP substrate. (D) LC-MS analysis of GacA with various unnatural NTP substrates. The structure of the purine base analog and the mass spectra of the homodimeric CDN produced are shown.
 
-## A Goldilocks model for substrate recognition by GGDEF domains
+**Table 2.**
+ Crystallographic statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>T4Lys-Gmet_1914</th>
+      <th>T4Lys-Gmet_1914 (S Anomalous)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Data Collection</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>35.75–1.35 (1.37–1.35)</td>
+      <td>48.35–2.72 (2.86–2.72)</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>1.11582</td>
+      <td>2.25418</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>C 21</td>
+      <td>C 21</td>
+    </tr>
+    <tr>
+      <td>Unit cell dimensions: a, b, c (Å)</td>
+      <td>70.68, 111.65, 55.34</td>
+      <td>71.33, 111.96, 55.66</td>
+    </tr>
+    <tr>
+      <td>Unit cell dimensions: α, β, γ (°)</td>
+      <td>90, 122.75, 90</td>
+      <td>90.0, 123.10, 90.0</td>
+    </tr>
+    <tr>
+      <td>Molecules per ASU</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>No. reflections: total</td>
+      <td>512201</td>
+      <td>61021</td>
+    </tr>
+    <tr>
+      <td>No. reflections: unique</td>
+      <td>77765</td>
+      <td>9235</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>97.8 (67.7)</td>
+      <td>94.0 (74.9)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>6.6 (3.1)</td>
+      <td>6.6 (5.6)</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>21.6 (2.9)</td>
+      <td>21.6 (13.8)</td>
+    </tr>
+    <tr>
+      <td>CC(1/2)1 (%)</td>
+      <td>99.9 (86.2)</td>
+      <td>99.4 (99.1)</td>
+    </tr>
+    <tr>
+      <td>Rpim2 (%)</td>
+      <td>1.7 (22.2)</td>
+      <td>2.5 (3.2)</td>
+    </tr>
+    <tr>
+      <td>No. sites</td>
+      <td></td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td colspan="3">Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>35.10–1.35</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Free reflections (%)</td>
+      <td>10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R-factor/R-free</td>
+      <td>15.9/17.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R.M.S. deviation: bond distances (Å)</td>
+      <td>0.016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>R.M.S. deviation: bond angles (°)</td>
+      <td>1.560</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3">Structure/Stereochemistry</td>
+    </tr>
+    <tr>
+      <td>No. atoms: nonhydrogen, protein</td>
+      <td>2783</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. atoms: ligand</td>
+      <td>71 (GTP, GMP, PPi)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>No. atoms: water</td>
+      <td>440</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Average B-factor: nonhydrogen, protein</td>
+      <td>18.7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Average B-factor: ligand</td>
+      <td>28.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Average B-factor: water</td>
+      <td>33.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot: most favored regions</td>
+      <td>97.7%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot: additionally allowed</td>
+      <td>2.3%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein Data Bank ID</td>
+      <td>5VS9</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### A Goldilocks model for substrate recognition by GGDEF domains
 
 Our structure of the Hypr GGDEF domain with bound guanosine plus PPi shows that two specific hydrogen-bonding interactions are made with the nucleobase, a Watson-Crick interaction with Ser348 and a sugar-face interaction with Asn339 (Figure 6B). The phosphate backbone is recognized via several specific interactions (Figure 8). In particular, a magnesium ion coordinates to the β and γ phosphates and is held in place by the side chain of Asp374 in the GGDEF motif.
 
@@ -134,9 +381,17 @@ Taken together, these observations support a ‘Goldilocks’ model for the GacA
 
 In support of this model, bioinformatics analysis shows that natural GGDEF enzymes with Ser/Thr at position 348 harbor the GGDE[F/Y] motif exclusively (Figure 6—figure supplement 1D), whereas GGDEF enzymes with Asp at position 348 are almost evenly divided between D and E at the central position of the motif (57% and 43%, respectively) (Figure 6—figure supplement 1E). To further demonstrate that the Goldilocks model applies to canonical GGDEF enzymes, we performed mutational analysis on WspR, a diguanylate cyclase from Pseudomonas aeruginosa (Hickman et al., 2005). The WspR mutants recapitulate the same activity trends that were shown for GacA (Figure 6—figure supplement 1B). Furthermore, the model explains our prior D-to-S mutagenesis results; the four inactive enzymes have a GGEEF motif, while the enzyme that retained activity, GSU3350, has a GGDEF motif.
 
-## Cross-dimer interactions affect GGDEF enzyme catalysis and cooperativity
+### Cross-dimer interactions affect GGDEF enzyme catalysis and cooperativity
 
 While the Hypr GGDEF monomer structure gave some insights into substrate binding, the enzyme functions as a homodimer, with one NTP binding site per monomer. To elucidate the function of other conserved residues, we superimposed our structure onto both GGDEF domains of the C2 symmetric enzyme dimer structure from Idiomarina sp. A28L (Gourinchas et al., 2017). In both dimer structures, the glutamate residue that is the fourth residue in GGDEF is close to the GTP/guanosine:PPi bound to the opposite monomer, and in the case of GacA, is oriented appropriately to deprotonate the 3’ hydroxyl group from the substrate (Figure 9A). This observation strongly suggests that this glutamate is the general base that activates the nucleophile donor.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/43959/elife-43959-fig9-v1.jpg)
+
+**Figure 9.:** (A) The modeled dimer of GacA GGDEF domains shows that the Glu375 residue from one monomer is poised to deprotonate the 3’-OH of GTP bound in the other half active site. The blue GTP is bound by the blue protein monomer, whereas the grey-blue GTP is bound by the grey-blue protein monomer. (B) and (C) Comparison of the crystallized GGDEF dimer (grey/dark grey, PDB 5LLX) and the modeled GacA dimer (blue/grey-blue) reveals another cross-dimer residue in the half active site that has a different identity between the canonical (D581) and Hypr (Y304’) GGDEFs. (D) Y304' was rotated 180 degrees about the alpha carbon bond from the crystallized structure. (E) LC/MS analysis of E. coli cell extracts overexpressing G. sulfurreducens GacA WT or cross-dimer mutants (* indicates that the numbering used corresponds to the G. metallireducens GacA structure, because GsGacA is shorter by one amino acid). Shown are representative MS spectra from integrating the retention time region that would contain the three cyclic dinucleotides. Expected masses are labeled for cdiG (m/z = 691), cGAMP (m/z = 675), and cdiA (m/z = 659). The major peak observed for inactive variants (m/z = 664) is potentially NAD from the lysate.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/43959/elife-43959-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Schematic of the interactions between substrate nucleobases adenine or guanine with either Hypr or canonical GGDEF domains. (B) LC-MS analysis of product ratios for endpoint reactions with 1 µM of 6xHis-MBP-tagged GacA R393A (I-site) and Y303R double mutant using varying ATP:GTP ratios, with [GTP] kept constant at 100 µM. ATP:GTP ratios are shown above each trace.
 
 This glutamate was among the ultra-conserved residues in GGDEF domains that had no previously assigned function (Schirmer, 2016). Mutating this residue to glutamine knocks out catalytic activity of GacA (Figure 9E), which is in line with prior experiments demonstrating that this residue is required for canonical GGDEF function (Malone et al., 2007). Identifying this glutamate as the general base provides molecular insight into the regulatory mechanisms for GGDEF enzymes. Some GGDEF enzymes are activated by shifting oligomeric states, from monomer to dimer or even to higher order oligomers (Huangyutitham et al., 2013; Paul et al., 2007). Monomers are inactive because each monomer binds only one NTP. However, other GGDEF enzymes are predicted to be activated by changing the dimer conformation (Gourinchas et al., 2017; Zähringer et al., 2013). In these cases, the orientation of the two monomers can affect whether the newly identified general base is poised to deprotonate the 3′ hydroxyl across the dimer.
 
@@ -144,7 +399,7 @@ We observed another cross-dimer interaction with the guanosine substrate that ha
 
 In support of this functional assignment, the corresponding Y304*R mutant was found to have a product ratio more skewed towards cdiG, which is consistent with the cation-π interaction favoring guanine over adenine (Figure 9E, Figure 9—figure supplement 1C). Also, an analysis of Hypr GGDEFs from different bacteria previously showed that two enzymes harboring an arginine produce more cdiG (Cabther_A1065 and Ddes1475), whereas enzymes harboring tyrosine, serine, alanine, or glutamine produce predominantly cGAMP (Hallberg et al., 2016). These results reveal that this cross-dimer interaction affects product distribution, leading us to propose a mechanism for the cooperative binding and putative asymmetric activation effects shown by kinetic modeling. As shown in the model, the status of one monomer, for example the identity of nucleotide substrate and/or Rec activation, can be communicated by residue(s) that make cross-dimer interactions to the substrate in the other monomer’s active site. For example, changes to the orientation of Tyr304 will tune the binding energy, possibly in a differential manner for guanosine or adenosine substrates. There may be other residues besides Tyr304 that are involved in this cross-dimer communication. Taken together, our analysis of the crystal structure shows that consideration of cross-dimer interactions may be key to unlocking residue functions for both Hypr and canonical GGDEFs.
 
-## Conclusions
+### Conclusions
 
 For bacteria, obtaining energy is key to niche survival, whether in a host or outside environment. In dynamic anaerobic environments, where oxygen is unavailable or limiting, microbes must seek alternative electron acceptors. One such strategy that profoundly impacts Earth’s biogeochemistry is the process of extracellular electron transfer to metals, surfaces, and other cells. Use of environmental metal oxides as terminal electron acceptors by Geobacter requires cell-metal contact to facilitate electron transfer, and while attachment to surfaces is typically regulated by cdiG signaling, our results demonstrate that a separate mechanism has emerged for metal particle attachment. In retrospect, permanent biofilm-like attachment as driven by cdiG signaling would be a poor choice for interacting with environmental metal oxides, as Fe(III) oxides are usually nanophase (<100 nm), and a single metal particle cannot provide enough energy to support cell division (Levar, 2013; Zacharoff et al., 2017). Thus, based on energetics and size, metal oxides present a conundrum for metal-reducing bacteria: a surface that requires transient, rather than permanent, contact.
 
@@ -164,11 +419,429 @@ From the broader perspectives of protein evolution and engineering, GacA provide
 
 ## Materials and methods
 
-## General reagents and oligonucleotides
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th colspan="2">Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td></td>
+      <td>Laboratory collection</td>
+      <td colspan="2">Cell line maintained in D. bond lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td>Tn7::cGAMP-nanoluc</td>
+      <td>this work</td>
+      <td colspan="2">Integrated using pCGAMP-9</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td>Tn7::cdiG-nanoluc</td>
+      <td>this work</td>
+      <td colspan="2">Integrated using pGGv2-2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td>ΔgacA</td>
+      <td>this work</td>
+      <td colspan="2">Deleted using pDGSU1658</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td>ΔgacA Tn7:: gacA OE</td>
+      <td>this work</td>
+      <td colspan="2">Integrated using pGSU1658-5</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td>ΔgacA Tn7::gacAWT</td>
+      <td>this work</td>
+      <td colspan="2">Integrated using pGSU1658-6</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td>ΔgacA Tn7::gacAD52A</td>
+      <td>this work</td>
+      <td colspan="2">Integrated using pGSU1658-7</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td>ΔgacA Tn7::gacAR393A</td>
+      <td>this work</td>
+      <td colspan="2">Integrated using pGSU1658-13</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td>ΔgacA Tn7::cAG-nanoluc</td>
+      <td>this work</td>
+      <td colspan="2">Integrated using pCGAMP-9</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td>ΔgacA Tn7::cdiG-nanoluc</td>
+      <td>this work</td>
+      <td colspan="2">Integrated using pGGv2-2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td>ΔgacA Tn7::cAG- nanoluc / pGacA+</td>
+      <td>this work</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td>ΔgacA Tn7::cAG -nanoluc/pGacAWT</td>
+      <td>this work</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td>ΔgacA Tn7::cAG- nanoluc / pGacAD52A</td>
+      <td>this work</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td>ΔgacA Tn7::cAG- nanoluc / pGacAR393A</td>
+      <td>this work</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td>ΔesnD</td>
+      <td>Chan et al. (2017)</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td>ΔesnD Tn7::esnDOE</td>
+      <td>this work</td>
+      <td colspan="2">Integrated using pGSU3376-4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td>ΔesnD Tn7::cAG-nanoluc</td>
+      <td>this work</td>
+      <td colspan="2">Integrated using pCGAMP-9</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (G. sulfurreducens)</td>
+      <td>ΔesnD Tn7::cdiG-nanoluc</td>
+      <td>this work</td>
+      <td colspan="2">Integrated using pGGv2-2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>S17-1; recA pro hsdR RP4-2-Tc::Mu-Km::Tn7</td>
+      <td>Simon et al. (1983)</td>
+      <td colspan="2">Donor strain</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MFDpir; RP4-2-Tc::[ΔMu1::aac(3)IV- ΔaphA-Δnic35-ΔMu2::zeo] ΔdapA::(erm-pir) ΔrecA</td>
+      <td>Ferrières et al. (2010)</td>
+      <td colspan="2">Donor strain for Tn7 integration</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>MFDpir/pTNS3; MFDpir with plasmid expressing tnsABCD</td>
+      <td>Choi et al. (2008)</td>
+      <td colspan="2">Used for integration downstream of glmS</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3) star</td>
+      <td>Life Technologies</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3) star pET31b-Dp17; pCOLADuet-GSU1658</td>
+      <td>Hallberg et al. (2016)</td>
+      <td colspan="2">For flow cytometry analysis</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3) star pET31b-Gm790p1-4delA; pCOLADuet-GSU1658</td>
+      <td>Hallberg et al. (2016)</td>
+      <td colspan="2">For flow cytometry analysis</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3) star pET31b-Dp17; pCOLADuet-WspR</td>
+      <td>this work</td>
+      <td colspan="2">For flow cytometry analysis</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3) star pET31b-Gm790p1-4delA; pCOLADuet-WspR</td>
+      <td>this work</td>
+      <td colspan="2">For flow cytometry analysis</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3) star pET31b-Dp17; pCOLADuet-WspR D226S</td>
+      <td>this work</td>
+      <td colspan="2">For flow cytometry analysis</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3) star pET31b-Gm790p1-4delA; pCOLADuet-WspR D226S</td>
+      <td>this work</td>
+      <td colspan="2">For flow cytometry analysis</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3) star pET31b-Dp17; pCOLADuet-WspR E370D</td>
+      <td>this work</td>
+      <td colspan="2">For flow cytometry analysis</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3) star pET31b-Gm790p1-4delA; pCOLADuet-WspR E370D</td>
+      <td>this work</td>
+      <td colspan="2">For flow cytometry analysis</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3) star pET31b-Dp17; pCOLADuet-WspR D226S/E370D</td>
+      <td>this work</td>
+      <td colspan="2">For flow cytometry analysis</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3) star pET31b-Gm790p1-4delA; pCOLADuet-WspR D226S/E370D</td>
+      <td>this work</td>
+      <td colspan="2">For flow cytometry analysis</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRK2-Geo2</td>
+      <td></td>
+      <td colspan="2">Geobacter expression vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTn7C146</td>
+      <td></td>
+      <td colspan="2">Tn7 integrative vector, derivative of pTJ1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGSU1658-1 (pGacA+)</td>
+      <td></td>
+      <td colspan="2">GSU1658 (gacA) in pRK2-Geo2 under the control of the acpP promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGSU1658-8 (pGacAWT)</td>
+      <td></td>
+      <td colspan="2">GSU1658 (gacA) in pRK2-Geo2 under the control of the native gacA promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGSU1658-9 (pGacAD52A)</td>
+      <td></td>
+      <td colspan="2">GSU1658 (gacAD52A) in pRK2-Geo2 under the control of the native gacA promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGSU1658-17 (pGacAR393A)</td>
+      <td></td>
+      <td colspan="2">GSU1658 (gacAR393A) in pRK2-Geo2 under the control of the native gacA promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGSU3376-1</td>
+      <td></td>
+      <td colspan="2">GSU3376 (esnDOE) in pRK2-Geo2 under the control of the acpP promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGSU1658-5</td>
+      <td>this work</td>
+      <td colspan="2">GSU1658 (gacAOE) under the control of the acpP promoter in Tn7 integrative vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGSU1658-6</td>
+      <td>this work</td>
+      <td colspan="2">GSU1658 (gacA) under the control of the native gacA promoter in Tn7 integrative vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGSU1658-7</td>
+      <td>this work</td>
+      <td colspan="2">GSU1658 (gacAD52A) under the control of the native gacA promoter in Tn7 integrative vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGSU1658-13</td>
+      <td>this work</td>
+      <td colspan="2">GSU1658 (gacAR393A) under the control of the native gacA promoter in Tn7 integrative vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGSU3376-4</td>
+      <td>this work</td>
+      <td colspan="2">GSU3376 (esnDOE) under the control of the acpP promoter in Tn7 integrative vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pK18mobsacB</td>
+      <td>Simon et al. (1983)</td>
+      <td colspan="2">sacB suicide vector for gene deletion</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDGSU1658</td>
+      <td>this work</td>
+      <td colspan="2">Flanking regions of GSU1658 in pK18mobsacB</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-MBP-GSU1658 R393A</td>
+      <td>Hallberg et al. (2016)</td>
+      <td colspan="2">Modified pET16a vector containing the GSU1658 R393A mutant with an N-terminal 6xHis-MBP tag under the control of the T7 promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-MBP-GSU1658 S347D/R393A</td>
+      <td>this work</td>
+      <td colspan="2">Modified pET16a vector containing the GSU1658 S347D/R393A mutant with an N-terminal 6xHis-MBP tag under the control of the T7 promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-MBP-GSU1658 D373E/R393A</td>
+      <td>this work</td>
+      <td colspan="2">Modified pET16a vector containing the GSU1658 D373E/R393A mutant with an N-terminal 6xHis-MBP tag under the control of the T7 promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-MBP-GSU1658 S347D/D373E/R393A</td>
+      <td>this work</td>
+      <td colspan="2">Modified pET16a vector containing the GSU1658 S347D/D373E/R393A mutant with an N-terminal 6xHis-MBP tag under the control of the T7 promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET24a T4Lysozyme- GmetGGDEF</td>
+      <td>this work</td>
+      <td colspan="2">pET24a vector containing the coding sequence for a chimeric protein consisting an N-terminal T4 lysozyme E11Q mutant followed by residues 294–459 of Gmet_1914</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET24a GSU1658</td>
+      <td>Hallberg et al. (2016)</td>
+      <td colspan="2">pET24a vector containing the WT GSU1658 coding sequence with a C-terminal 6xHis tag under the control of the T7 promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET24a GSU1658 D373E</td>
+      <td>this work</td>
+      <td colspan="2">pET24a vector containing the GSU1658 D373E coding sequence with a C-terminal 6xHis tag under the control of the T7 promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET24a GSU1658 E374Q</td>
+      <td>this work</td>
+      <td colspan="2">pET24a vector containing the GSU1658 E374Q coding sequence with a C-terminal 6xHis tag under the control of the T7 promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET24a GSU1658 Y303R</td>
+      <td>this work</td>
+      <td colspan="2">pET24a vector containing the Y303R GSU1658 coding sequence with a C-terminal 6xHis tag under the control of the T7 promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCOLADuet-1 GSU1658</td>
+      <td>Hallberg et al. (2016)</td>
+      <td colspan="2">pCOLADuet-1 vector containing the WT GSU1658 coding sequence between the NdeI and XhoI restriction sites.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCOLADuet-1 WspR</td>
+      <td>this work</td>
+      <td colspan="2">pCOLADuet-1 vector containing the codon-optimized WT WspR coding sequence between the NdeI and XhoI restriction sites.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCOLADuet-1 WspR D226S</td>
+      <td>this work</td>
+      <td colspan="2">pCOLADuet-1 vector containing the codon-optimized D226S WspR coding sequence between the NdeI and XhoI restriction sites.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCOLADuet-1 WspR E370D</td>
+      <td>this work</td>
+      <td colspan="2">pCOLADuet-1 vector containing the codon-optimized E370 WspR coding sequence between the NdeI and XhoI restriction sites.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCOLADuet-1 WspR D226S/E370D</td>
+      <td>this work</td>
+      <td colspan="2">pCOLADuet-1 vector containing the codon-optimized D226S/E370D WspR coding sequence between the NdeI and XhoI restriction sites.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>(pCGAMP-1)</td>
+      <td>this work</td>
+      <td colspan="2">The promoter of GSU1761 with cAG selective GEMM-1b riboswitch cloned upstream of nanoluciferase in pTOPO2.1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>(pCGAMP-9)</td>
+      <td>this work</td>
+      <td colspan="2">cAG reporter-nanoluc fusion in pTn7C146, subcloned from pCAG-1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGGv2-1</td>
+      <td>this work</td>
+      <td colspan="2">A cdiG selective variant (A20G) GEMM-1b of Gmet_0970 replaced the GSU1761 GEMM-1b riboswitch cloned upstream of nanoluciferase in pTOPO2.1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGGv2-2</td>
+      <td>this work</td>
+      <td colspan="2">cdiG reporter-nanoluc fusion in pTn7C146 subcloned from pGGv2-1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET31b-Gm790p1-4delA</td>
+      <td>Kellenberger et al. (2015)</td>
+      <td colspan="2">pET31b vector expressing the Spinach1-GM790p1-4delA (cAG-selective) biosensor</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET31b-Dp17</td>
+      <td>Wang et al. (2016)</td>
+      <td colspan="2">pET31b vector expressing the Spinach2-Dp17 (cdiG-selective) biosensor</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Codon-optimized WspR (oligonucleotide)</td>
+      <td>IDT</td>
+      <td colspan="2">ATGCATAATCCGCATGAATCAAA GACGGACCTGGGAGCTCCACTT GACGGAGCCGTGATGGTTTTATT AGTGGACGACCAGGCGATGATCG GTGAGGCGGTCCGCCGTTCTCTG GCTTCTGAAGCGGGCATCGACTTC CATTTTTGCTCCGATCCGCAGCAA GCGGTAGCGGTAGCCAATCAAATT AAGCCCACGGTTATCCTGCAGGAT CTGGTCATGCCTGGCGTGGATGG GCTGACATTGTTAGCAGCTTATCG CGGAAACCCTGCAACACGCGACAT TCCGATCATTGTGCTGAGTACCAA GGAGGAACCCACTGTTAAGTCAGC TGCATTTGCAGCCGGGGCGAATG TGCATTTGCAGCCGGGGCGAATG ACTACCTGGTCAAACTTCCAGATG CGATCGAATTAGTTGCTCGCATCC GCTACCACAGTCGCAGCTACATCG CGCTTCAGCAACGCGATGAAGCCT ACCGCGCCTTGCGCGAATCCCAGC AGCAGCTTCTTGAAACGAACCTGG TTTTGCAGCGTCTGATGAACTCCG ACGGTTTAACGGGTTTGTCTAATC GCCGTCATTTTGATGAATACTTAG AGATGGAATGGCGTCGTAGTTTGC GTGAACAATCTCAGTTGTCATTACT TATGATCGACGTCGACTACTTTAAA TCGTACAACGATACCTTCGGCCATG TAGCGGGTGACGAAGCATTACGTC AAGTCGCTGGCGCGATCCGTGAAGG GTGCTCCCGTTCTTCTGACCTTGCG GCTCGCTATGGTGGAGAGGAGTTTG CAATGGTTCTGCCTGGGACATCACCG GGGGGCGCTCGCCTGTTGGCTGAGA AAGTGCGTCGCACGGTGGAAAGTTTG CAGATCTCGCATGATCAACCGCGTCCA GGCTCGCATTTAACGGTGTCGATCGGC GTATCCACCTTGGTTCCTGGAGGTGGA GGCCAGACCTTTCGCGTTTTGATCGAA ATGGCTGACCAGGCATTATACCAGGCC AAAAATAATGGACGTAATCAGGTGGGA TTGATGGAACAACCAGTACCTCCGGCA CCTGCTGGA</td>
+    </tr>
+  </tbody>
+</table>
+
+### General reagents and oligonucleotides
 
 All oligonucleotides were purchased from Elim Biopharmaceuticals (Hayward, CA) or IDT (Coralville, IA). The codon-optimized WspR gene was purchased from IDT as a gBlock (See Key Resources Table). Cyclic dinucleotide standards were purchased from Axxora (Farmingdale, NY) or enzymatically synthesized. NTP stocks were purchased from New England Biolabs (Boston, MA).
 
-## Growth and medium conditions
+### Growth and medium conditions
 
 All strains and plasmids used in this study are listed in the Key Resources Table. Antibiotics were used in the following concentration for E. coli; kanamycin 50 µg/mL; spectinomycin 50 µg/mL, chloramphenicol 25 µg/mL, carbenicillin 50 µg/mL, and ampicillin 100 µg/mL. For G. sulfurreducens; kanamycin 200 µg/mL and spectinomycin 50 µg/mL. G. sulfurreducens strains and mutants were grown in anoxic medium with excess acetate (20 mM) and limiting fumarate (40 mM) as described (Chan et al., 2015). Agar (1.5%) was added to the acetate-fumarate medium to culture for clonal isolates on semisolid surface in a H2:CO2:N2 (5:20:75) atmosphere in an anaerobic workstation (Don Whitley). All growth analyses were initiated by picking a single colony from acetate-fumarate agar using freshly streaked, −80°C culture stocks. When electrodes were used as the electron acceptor, fumarate was replaced with 50 mM NaCl to maintain a similar ionic strength.
 
@@ -176,102 +849,226 @@ When insoluble Fe(III) oxide or soluble Fe(III) citrate was used as the electron
 
 Three-electrode bioreactors with a working volume of 15 ml were assembled as previously described (Marsili et al., 2008). The potential of the polished graphite working electrode with a surface area of 3 cm2 was maintained at −0.10 V vs. standard hydrogen electrode (SHE) using a VMP3 multichannel potentiostat (Biologic), a platinum counter electrode and calomel reference. This potential mimics Fe(III) oxides used in parallel experiments. Reactors were inoculated as previously described (Chan et al., 2017). Bioreactors were maintained at 30°C under a constant stream of humidified N2:CO2 (80:20) scrubbed free of oxygen by passage over a heated copper furnace. In prior work, the oxygen concentration in the headspace of these reactors has been shown to be ~1 ppm.
 
-## Strain construction
+### Strain construction
 
 The sucrose-SacB counter-selection strategy was used to generate a scarless gacA or esnD deletion strain (Chan et al., 2015). Supplementary file 2 lists primers and restriction enzymes used to generate the ~750 bp flanking fragments of the gacA or esnD sequences to ligate into pK18mobsacB. The E. coli S17-1 donor strain mobilized plasmids into G. sulfurreducens. To integrate downstream of the glmS gene using Tn7 (Damron et al., 2013), derivatives of E. coli MFDpir carrying pTNS3 (encoding the Tn7 transposase TnsABCD) and MFDpir carrying a modified suicide vector pTJ1 with the sequence of interest cloned between the n7L and n7R sites was combined with G. sulfurreducens recipient strains by centrifugation in the anoxic glovebox, then incubation of the cell mixture on top of a filter paper disk (Millipore GPWP04700) placed on 1.5% agar with acetate-fumarate plates for 4 hr before plating on spectinomycin selective medium. Amplification and sequencing of the insertion junction revealed that TnsABCD mediated Tn7 integration is site specific in G. sulfurreducens and is 25 bp downstream of the glmS (GSU0270) stop codon.
 
-## Plasmid and reporter construction
+### Plasmid and reporter construction
 
 Plasmids expressing gacA and gacA site variants were cloned into pRK2-Geo2 (Chan et al., 2015) with the native promoter (replacing the acpP promoter) or over-expressed from the acpP promoter in pRK2-Geo2. The native gacA promoter was fused to gacA and gacA variants by extending two oligos coding for the gacA promoter with gacA PCR fragments using overlap PCR. The cGAMP selective riboswitch controlling GSU1761 was fused to the Nanoluc gene with overlap PCR and cloned into pTOPO2.1. The luminescent reporter provided a strong signal even at low levels of expression compared to GFP, and allowed us to circumvent the problem of high autofluorescence in crude protein lysates due to the abundance of cytochromes in G. sulfurreducens. The reporter was made by fusing the natural cGAMP-specific GSU1761 riboswitch upstream of the Nanoluc gene (pNL1.1, Promega). Analysis of the riboswitch expression platform suggests that cGAMP binding stabilizes anti-terminator formation and thus turns on expression of the Nanoluc reporter gene. The cGAMP selective GSU1761 riboswitch was replaced with a mutant Gmet_0970 riboswitch using Gibson assembly to generate a cdiG selective Nanoluc fusion. The cdiG selectivity of this mutant GEMM riboswitch is confirmed using gel-shift analysis (Figure 2). Tn7 integrative plasmids expressing gacA, gacA mutants, esnD and Nanoluc fusions were sub-cloned with either the native promoter or the acpP promoter into a derivative of pTJ1 (Damron et al., 2013) from the pRK2-Geo2 backbone by sequential digest with NheI and blunted with Klenow enzyme before digesting with AscI. Genes under the native promoter or acpP promoter were then ligated into the AscI and PmeI site into the pTJ1 derivative Tn7 integration plasmid. Cyclic dinucleotide Nanoluc fusion plasmids were subcloned into pRK2-Geo2 and Tn7 integrative plasmids to report cGAMP or cdiG levels in G. sulfurreducens strains.
 
 For the crystallography construct, the T4 lysozyme sequence containing an E11Q inactivating mutation without stop codon was placed upstream of the Hypr GGDEF domain of Gmet_1914 (residues 294–459) sequence. This chimeric protein coding sequence was inserted between the NdeI and XhoI restriction sites of pET24a using restriction digest-ligation techniques. For in vitro analysis of mutants, site-directed-mutagenesis with the around-the-horn mutagenesis technique [https://openwetware.org/wiki/%27Round-the-horn_site-directed_mutagenesis] was used on a previously reported plasmid for expression of MBP-tagged R393A GSU1658 (Hallberg et al., 2016) to generate GacA mutant constructs. For WspR constructs used in flow cytometry assays, codon-optimized WspR (Key Resources Table) was inserted between the NdeI and XhoI restriction sites of pCOLADuet-1 using restriction digest-ligation techniques. This wild-type sequence was used as the template for round-the-horn mutagenesis. All primers and restriction enzyme used are listed in Supplementary file 2.
 
-## Nanoluc assay
+### Nanoluc assay
 
 G. sulfurreducens strains with either the cdiG- or the cGAMP-Nanoluc reporter integrated into the Tn7 site were grown to mid-log fumarate-limited medium (40 mM acetate and 80 mM fumarate), the same ratio of acetate:fumarate as in RNA-seq conditions, and lysed at room temperature for 5 min in a phosphate-buffered saline (PBS) solution containing 1 × BugBuster (Novagen) and 0.3 mg/ml DNase. 10 μl of the Nanoglo reagent (Promega) and 10 μl of the cell lysate were combined in a white-bottom, 96 well plate and luminescence was detected at 461 nm (Molecular Devices). Biological replicates (n = 3) were assayed. In assays where the luminescence exceeded the linear range of the spectrophotometer or deviated from steady-state, lysates were diluted in PBS before combining with the Nanoglo reagent.
 
-## RNA-seq
+### RNA-seq
 
 Total RNA was extracted from 10 mL of G. sulfurreducens electron acceptor limited culture grown to mid-log (0.25–0.3 OD). Cell pellets were washed in RNAprotect (Qiagen) and frozen at −80°C before RNA extraction using RNeasy with on column DNase treatment (Qiagen). Ribosomal RNA was depleted using RiboZero (Illumina) by the University of Minnesota Genomics Center before stranded synthesis and sequenced on Illumina HiSeq 2500, 125 bp pair-ended mode. Residual ribosomal RNA sequences (<1%) were removed before analysis using Rockhopper, an RNAseq analysis program specifically designed to analyze bacterial transcriptomes (McClure et al., 2013). Duplicate biological samples were analyzed for each strain. Each replicate had between 13–14 M passing filter reads. Rockhopper aligned the rRNA depleted reads to our laboratory re-sequenced and re-annotated G. sulfurreducens genome, then normalized read counts from each experimental replicate by the upper quartile gene expression before they are compared. Raw reads and re-sequenced genome data have been deposited to the NCBI SRA database PRJNA290373 (Chan et al., 2015). Full RNA-seq expression data are in Supplementary file 1.
 
-## Overexpression and purification of dinucleotide cyclase enzymes
+### Overexpression and purification of dinucleotide cyclase enzymes
 
 Full-length proteins with N-terminal His6-MBP tags encoded in pET16-derived plasmids (cGAS and DncV plasmids are from (Kranzusch et al., 2014), WT GacA is from (Hallberg et al., 2016), and mutants are from this study) and the T4 lysozyme-Gmet_1914294-459 GGDEF chimera protein with C-terminal His6 tag encoded in pET24a were overexpressed in E. coli BL21 (DE3) Star cells harboring the pRARE2 plasmid encoding human tRNAs (Novagen). Briefly, an aliquot of the overnight starter culture was re-inoculated into LB with antibiotics (LB/Carb/Chlor for pET16, LB/Kan/Chlor for pET24a) and grown to an OD600 ~0.7, after which cultures were induced with 1 mM IPTG for 10 hr. After centrifugation to isolate the cell pellet, cells were lysed by sonication in lysis buffer (25 mM Tris-HCl (pH 8.2), 500 mM NaCl, 20 mM imidazole, and 5 mM beta-mercaptoethanol). Lysate was then clarified by centrifugation at 10,000 × g for 45 min at 4°C. Clarified lysate was bound to Ni-NTA agarose (Qiagen), and resin was washed with 3 × 20 mL lysis buffer prior to elution with lysis buffer supplemented with 500 mM imidazole. Purified proteins were dialyzed overnight at 4°C into storage buffer (20 mM HEPES-KOH (pH 7.5), 250 mM KCl, 1 mM TCEP, and 5% (v/v) glycerol). Proteins purified in this way were concentrated to ~5–10 mg/mL, flash frozen in liquid nitrogen, and stored at −80°C. Protein purity was assessed by SDS-PAGE.
 
 The crystallization fusion construct, T4lysozyme-Gmet_1914294-459-His6, was further purified by size-exclusion chromatography on a Superdex 200 16/60 column in gel-filtration buffer (20 mM HEPES-KOH (pH 7.5), 250 mM KCl, 1 mM TCEP, and 5% (v/v) glycerol), and eluted protein was concentrated to 10 mg/mL. Purified protein was used immediately for x-ray crystallography or flash frozen in liquid nitrogen and stored at −80°C for biochemical experiments.
 
-## In vitro activity assay of dinucleotide cyclases using radiolabeled NTPs
+### In vitro activity assay of dinucleotide cyclases using radiolabeled NTPs
 
 In vitro activity assays were performed as previously described (Kranzusch et al., 2014) as independent technical replicates (n = 3, assays used the same stock enzyme preparation in separate reaction mixtures), with the following modifications. Enzyme (10 µM) was incubated in reaction buffer (50 mM Tris-HCl (pH 7.5), 100 mM NaCl, 10 mM MgCl2, and 5 mM dithiothreitol) with 100 µM each NTP substrate and/or nonhydrolyzable analog, and ~0.1 µCi radiolabeled [α-32P]-ATP or [α-32P]-GTP (Perkin Elmer) at 28°C for 1 hr. After the reaction, the mixture was treated with 20 U of Calf Intestinal Alkaline Phosphatase (NEB) at 28°C for 30 min to digest unincorporated NTPs, followed by heating to 95°C for 30 s to terminate the reaction. The reaction mixture (1 µL) was spotted onto a PEI-cellulose F thin layer chromatography plate (Millipore), and allowed to dry for 15 min at room-temperature. TLC plates were developed using 1 M KH2PO4 (pH 3.6) as the mobile phase. Plates were dried overnight and radiolabeled products were detected using a phosphor-imager screen (GE Healthcare) and Typhoon Trio +scanner (GE Healthcare).
 
-## In vitro activity assay of dinucleotide cyclases using pyrophosphatase assay
+### In vitro activity assay of dinucleotide cyclases using pyrophosphatase assay
 
 In vitro activity assays were performed as previously described for diguanylate cyclases (Burns et al., 2014) as independent technical replicates (n = 3, assays used the same stock enzyme preparation in separate reaction mixtures), with the following modifications. The EnzChek pyrophosphate kit (Life Technologies) was used according to the manufacturer’s instructions except the buffer was supplemented with KCl to a final concentration of 100 mM and MgCl2 to a final concentration of 10 mM, and the reactions were initiated with addition of ATP or GTP. Assays were performed in triplicate in Corning Costar 96 well black, clear-bottomed plates containing 1 µM protein and varying NTP concentrations (0–10 mM). Absorbance at 360 nm in each well was measured using a SpectraMax i3x plate reader (Molecular Devices) and SoftMax Pro 6.5.1 software. Subsequent analyses to determine enzymatic rates were performed using the Excel Solver package.
 
-## In vitro activity assay of dinucleotide cyclases using LC-MS
+### In vitro activity assay of dinucleotide cyclases using LC-MS
 
 Activity assays with ATP, GTP, or mixtures of ATP and GTP were performed as described previously (Burhenne and Kaever, 2013; Hallberg et al., 2016) in independent technical replicates (n = 3, assays used the same stock enzyme preparation in separate reaction mixtures). For unnatural substrates, the reactions were performed using 5 μM GacA and 200 μM of unnatural NTP at 37°C for 16–20 hr. Prior to LC-MS analysis, samples were treated with a 60°C incubation as in ref. (Gentner et al., 2012) to ensure all analyzed CDN samples were monomeric. LC-MS analysis of enzyme reactions was performed using an Agilent 1260 Quadrupole LC-MS with an Agilent 1260 Infinity HPLC equipped with a diode array detector. Sample volumes of 10 µL were separated on a Poroshell 120 EC C18 column (50 mm length ×4.6 mm internal diameter, 2.7 µm particle size, Agilent) at a flow rate of 0.4 mL/min. For analysis of enzyme reactions, an elution program consisting of 0% B for 5 min, followed by linear elution of 0% to 10% B over 1.5 min, isocratic elution at 10% B for 2 min, linear elution of 10% to 30% B over 2.5 min, linear elution from 30% to 0% B over 10 min, and isocratic elution of 0% B for 4 min, 50 s was used. Solvent A was 10 mM ammonium acetate/0.1% acetic acid and solvent B was HPLC-grade methanol. Under these conditions, the retention times are 10.23 ± 0.02 min for cdiG, 10.56 ± 0.02 min for cGAMP, and 11.09 ± 0.05 min for cdiA. The assignment of cyclic dinucleotide identity was confirmed through analysis of the mass spectra in the positive ion mode using m/z range = 150 to 1000. Product ratios were quantified using peak integrations at 254 nm by comparison to standard curves generated for each cyclic dinucleotide at known concentrations.
 
-## Computational modeling of dinucleotide cyclase activity
+### Computational modeling of dinucleotide cyclase activity
 
 We develop our mathematical derivation from the scheme presented in Figure 5A. This kinetic scheme assumes that the active dimer (E) remains at a constant total concentration throughout the reaction compared to inactive monomeric enzyme, which is not included in the model. The model also assumes that the rate-determining step is the production of the linear intermediate, which implies that the intermediate is efficiently converted to the cyclic dinucleotide. While the linear intermediate (pppGpG) is sometimes observed for diguanylate cyclases in vitro (Skotnicka et al., 2016), this may be due to the characterization of non-activated enzymes in vitro. We do not see significant buildup of any linear intermediates for in vitro or in vivo reactions with GacA, which supports our model.
 
-With this assumption, our kinetic model contains 14 equations, describing the change in concentration of each relevant compound in the reaction: (1)d[E]/dt=kn1G[EnG]−k1G[E][G]+kn1G[EGn]−k1G[E][G]+kn1A[EAn]−k1A[E][A]+kn1A[EnA]−k1A[E][A]+kcat[EGG]+kcat[EGA]+kcat[EAA]+kcat[EAG](2)d[EnG]/dt=k1G[E][G]−kn1G[EnG]−k2G[EnG][G]+kn2G[EGG]+knA|G[EAG]−kA|G[EnG][A](3)d[EGn]/dt=k1G[E][G]−kn1G[EGn]+kn2G[EGG]−k2G[EGn][G]+knA|G[EGA]−kA|G[EGn][A](4)d[EnA]/dt=k1A[E][A]−kn1A[EnA]+knG|A[EGA]−kG|A[EnA][G]+kn2A[EAA]−k2A[EnA][A](5)d[EAn]/dt=k1A[E][A]−kn1A[EAn]+kn2A[EAA]−k2A[EAn][A]+knG|A[EAG]−kG|A[Ean][G](6)d[EGG]/dt=k2G[EnG][G]−kn2G[EGG]+k2G[EGn][G]−kn2G[EGG]−kcat[EGG](7)d[EGA]/dt=kA|G[EGn][A]−knA|G[EGA]+kG|A[EnA]][G]−knG|A[EGA]−kcat[EGA](8)d[EAG]/dt=kA|G[EnG][A]−knA|G[EAG]+kG|A[EAn][G]−knG|A[EAG]−kcat[EAG](9)d[EAA]/dt=k2A[EnA][A]−kn2A[EAA]+k2A[EAn][A]−kn2A[EAA]−kcat[EAA](10)d[cdiA]/dt=kcat,cdiA[EAA](11)d[cdiG]/dt=kcat,cdiG[EGG](12)d[cAG]/dt=kcat,cAG[EAG]+kcat,cAG[EGA](13)d[A]/dt=−k1A[E][A]+kn1A[EAn]−k1A[E][A]+kn1A[EnA]−kA|G[EGn][A]+knA|G[EGA]−k2A[EnA][A]+kn2A[EAA]−k2A[EAn][A]+kn2A[EAA]−kA|G[EnG][A]+knA|G[EAG](14)d[G]/dt=−k1G[E][G]+kn1G[EnG]−k1G[E][G]+kn1G[EGn]−k2G[EnG][G]+kn2G[EGG]−k2G[EGn][G]+kn2G[EGG]−kG|A[EnA][G]+knG|A[EGA]−kG|A[EAn][G]+knG|A[EAG]
+With this assumption, our kinetic model contains 14 equations, describing the change in concentration of each relevant compound in the reaction: 
+
+$$
+d[E]/dt=k_{n1G}[EnG]−k_{1G}[E][G]+k_{n1G}[EGn]−k_{1G}[E][G]+k_{n1A}[EAn]−k_{1A}[E][A]+k_{n1A}[EnA]−k_{1A}[E][A]+k_{cat}[EGG]+k_{cat}[EGA]+k_{cat}[EAA]+k_{cat}[EAG]
+$$
+
+
+
+$$
+d[EnG]/dt=k_{1G}[E][G]−k_{n1G}[EnG]−k_{2G}[EnG][G]+k_{n2G}[EGG]+k_{nA|G}[EAG]−k_{A|G}[EnG][A]
+$$
+
+
+
+$$
+d[EGn]/dt=k_{1G}[E][G]−k_{n1G}[EGn]+k_{n2G}[EGG]−k_{2G}[EGn][G]+k_{nA|G}[EGA]−k_{A|G}[EGn][A]
+$$
+
+
+
+$$
+d[EnA]/dt=k_{1A}[E][A]−k_{n1A}[EnA]+k_{nG|A}[EGA]−k_{G|A}[EnA][G]+k_{n2A}[EAA]−k_{2A}[EnA][A]
+$$
+
+
+
+$$
+d[EAn]/dt=k_{1A}[E][A]−k_{n1A}[EAn]+k_{n2A}[EAA]−k_{2A}[EAn][A]+k_{nG|A}[EAG]−k_{G|A}[Ean][G]
+$$
+
+
+
+$$
+d[EGG]/dt=k_{2G}[EnG][G]−k_{n2G}[EGG]+k_{2G}[EGn][G]−k_{n2G}[EGG]−k_{cat}[EGG]
+$$
+
+
+
+$$
+d[EGA]/dt=k_{A|G}[EGn][A]−k_{nA|G}[EGA]+k_{G|A}[EnA]][G]−k_{nG|A}[EGA]−k_{cat}[EGA]
+$$
+
+
+
+$$
+d[EAG]/dt=k_{A|G}[EnG][A]−k_{nA|G}[EAG]+k_{G|A}[EAn][G]−k_{nG|A}[EAG]−k_{cat}[EAG]
+$$
+
+
+
+$$
+d[EAA]/dt=k_{2A}[EnA][A]−k_{n2A}[EAA]+k_{2A}[EAn][A]−k_{n2A}[EAA]−k_{cat}[EAA]
+$$
+
+
+
+$$
+d[cdiA]/dt=k_{cat,cdiA}[EAA]
+$$
+
+
+
+$$
+d[cdiG]/dt=k_{cat,cdiG}[EGG]
+$$
+
+
+
+$$
+d[cAG]/dt=k_{cat,cAG}[EAG]+k_{cat,cAG}[EGA]
+$$
+
+
+
+$$
+d[A]/dt=−k_{1A}[E][A]+k_{n1A}[EAn]−k1A[E][A]+k_{n1A}[EnA]−k_{A|G}[EGn][A]+k_{nA|G}[EGA]−k_{2A}[EnA][A]+k_{n2A}[EAA]−k_{2A}[EAn][A]+k_{n2A}[EAA]−k_{A|G}[EnG][A]+k_{nA|G}[EAG]
+$$
+
+
+
+$$
+d[G]/dt=−k_{1G}[E][G]+k_{n1G}[EnG]−k_{1G}[E][G]+k_{n1G}[EGn]−k_{2G}[EnG][G]+k_{n2G}[EGG]−k_{2G}[EGn][G]+k_{n2G}[EGG]−k_{G|A}[EnA][G]+k_{nG|A}[EGA]−k_{G|A}[EAn][G]+k_{nG|A}[EAG]
+$$
 
 Where each variable is:
 
-E, active enzyme
+$E$, active enzyme
 
-A and G, ATP and GTP
+$A$ and $G$, $ATP$ and $GTP$
 
-EnG, enzyme with binding pocket 1 empty and binding pocket 2 with GTP
+$EnG$, enzyme with binding pocket 1 empty and binding pocket 2 with $GTP$
 
-EGn, enzyme with binding pocket 1 with GTP, binding pocket 2 empty
+$EGn$, enzyme with binding pocket 1 with $GTP$, binding pocket 2 empty
 
-EnA, as EnG, except with ATP
+$EnA$, as $EnG$, except with $ATP$
 
-EAn, as EGn, except with ATP
+$EAn$, as $EGn$, except with $ATP$
 
-EGG, enzyme with two GTP bound
+$EGG$, enzyme with two $GTP$ bound
 
-EAA, enzyme with two ATP bound
+$EAA$, enzyme with two $ATP$ bound
 
-EAG, enzyme with ATP in binding pocket 1, GTP in binding pocket 2
+$EAG$, enzyme with $ATP$ in binding pocket 1, $GTP$ in binding pocket 2
 
-EGA, enzyme with GTP in binding pocket 1, ATP in binding pocket 2
+$EGA$, enzyme with $GTP$ in binding pocket 1, $ATP$ in binding pocket 2
 
-And where reverse rate constants of a reaction are denoted by ‘n’ (i.e. k1G is the forward rate constant for the first GTP binding event, whereas kn1G is the rate constant for GTP dissociating). Thus, the equilibrium constant values shown in Figure 3A are related to on/off rates by the following equations:(15)K1A=kn1A/k1A(16)K2A=kn2A/k2A(17)K1G=kn1G/k1G(18)K2G=kn2G/k2G(19)KA|G=knA|G/kA|G(20)KG|A=knG|A/kG|A
+And where reverse rate constants of a reaction are denoted by ‘n’ (i.e. $k_{1G}$ is the forward rate constant for the first $GTP$ binding event, whereas $k_{n1G}$ is the rate constant for $GTP$ dissociating). Thus, the equilibrium constant values shown in Figure 3A are related to on/off rates by the following equations:
 
-For the single-substrate case, we utilize the exact solution provided by Oliveira et al. to obtain all dissociation constants for the first and second binding events, as well as the catalytic rate constant. Importantly, this only gives dissociation constants, which we convert to on and off rate constants using an arbitrary assignment of kno. Because KD=koff/kon, and because the kcat values are <<1 sec−1, we arbitrarily set kon values to 1 µM−1sec−1. Thus, k1A,k2A,k1G,k2G,kA|G,andkG|A are all set to 1 µM−1sec−1.
+$$
+K_{1A}=k_{n1A}/k_{1A}
+$$
 
-To calculate endpoint product ratios, we performed numerical integration (using the Python ODEint solver package in NumPy) of the system of differential equations using the starting concentrations over an hour-long time course — equivalent in length to our experimental procedures — using 1 s intervals. As stated in the main text, the value of kcat,AG was set conservatively to the same value as kcat,diG (0.03 sec−1). The values for KA|G and KG|A were tested between 1 and 100 µM (corresponding to varying kno between 1 and 100 µM sec−1) using a step size of 1 µM. Thus, for each combination of KA|G and KG|A tested (10,000 possible combinations), we performed linear updates over 3,600 1 s steps of the 14 analytes, using the generic equation:(21)[Analyte]t+1=[Analyte]t+t∗d[Analyte]/dt
+
+
+$$
+K_{2A}=k_{n2A}/k_{2A}
+$$
+
+
+
+$$
+K_{1G}=k_{n1G}/k_{1G}
+$$
+
+
+
+$$
+K_{2G}=k_{n2G}/k_{2G}
+$$
+
+
+
+$$
+K_{A|G}=k_{nA|G}/k_{A|G}
+$$
+
+
+
+$$
+K_{G|A}=k_{nG|A}/k_{G|A}
+$$
+
+For the single-substrate case, we utilize the exact solution provided by Oliveira et al. to obtain all dissociation constants for the first and second binding events, as well as the catalytic rate constant. Importantly, this only gives dissociation constants, which we convert to on and off rate constants using an arbitrary assignment of $k_{no}$. Because $K_{D}=k_{off}/k_{on}$, and because the $k_{cat}$ values are <<1 sec−1, we arbitrarily set $k_{on}$ values to 1 µM−1sec−1. Thus, $k_{1A},k_{2A},k_{1G},k_{2G},k_{A|G},andk_{G|A}$ are all set to 1 µM−1sec−1.
+
+To calculate endpoint product ratios, we performed numerical integration (using the Python ODEint solver package in NumPy) of the system of differential equations using the starting concentrations over an hour-long time course — equivalent in length to our experimental procedures — using 1 s intervals. As stated in the main text, the value of $k_{cat,AG}$ was set conservatively to the same value as $k_{cat,diG}$ (0.03 sec−1). The values for $K_{A|G}$ and $K_{G|A}$ were tested between 1 and 100 µM (corresponding to varying $k_{no}$ between 1 and 100 µM sec−1) using a step size of 1 µM. Thus, for each combination of $K_{A|G}$ and $K_{G|A}$ tested (10,000 possible combinations), we performed linear updates over 3,600 1 s steps of the 14 analytes, using the generic equation:
+
+$$
+[Analyte]_{t+1}=[Analyte]_{t}+t∗d[Analyte]/dt
+$$
 
 ![Scheme 1.](https://cdn.elifesciences.org/articles/43959/elife-43959-fig11-v1.jpg)
 
 Because we do not include any noise in these equations, the simulation gives the same result each time.
 
-The ratio of each cyclic dinucleotide, which was calculated for the 1 hr endpoint, is:(22)ratioCDN=[CDN]1h/([cdiG]1h+[cAG]1h+[cdiA]1h)
+The ratio of each cyclic dinucleotide, which was calculated for the 1 hr endpoint, is:
 
-We calculated the model error as the sum of the least squares difference between the experimental product ratios and modeled results (Equation 22) for each starting ATP/GTP ratio. The best fit values for KA|G and KG|A were the combination that gave the lowest model error (Figure 3B). Parameter values for the best fit kinetic model are shown below (also see Table 1):
+$$
+ratioCDN=[CDN]_{1h}/([cdiG]_{1h}+[cAG]_{1h}+[cdiA]_{1h})
+$$
+
+We calculated the model error as the sum of the least squares difference between the experimental product ratios and modeled results (Equation 22) for each starting ATP/GTP ratio. The best fit values for $K_{A|G}$ and $K_{G|A}$ were the combination that gave the lowest model error (Figure 3B). Parameter values for the best fit kinetic model are shown below (also see Table 1):
 
 ![Scheme 2.](https://cdn.elifesciences.org/articles/43959/elife-43959-fig12-v1.jpg)
 
 To model cellular homeostasis as shown in Figure 5D and E, the numerical integration program was run with d[A]/dt and d[G]/dt (Equations 13 and 14) set to zero.
 
-## Liquid culture growth of E. coli BL21 (DE3) Star for Nucleotide Extraction
+### Liquid culture growth of E. coli BL21 (DE3) Star for Nucleotide Extraction
 
 BL21 (DE3) Star cells containing the pRARE2 plasmid (Novagen) and pET24a plasmid encoding synthase enzyme constructs were inoculated into LB/kan/chlor at 37°C with shaking at 250 rpm overnight. An aliquot of the starter culture was re-inoculated into LB/kan/chlor media and grown to an OD600 ~0.3, after which cultures were induced with 1 mM IPTG at 28°C for 4 hr. Cells were harvested by centrifugation at 4,700 rpm for 15 min at 4°C, and pellets were stored at −80°C.
 
-## Cell extraction and LC-MS analysis of E. coli.
+### Cell extraction and LC-MS analysis of E. coli.
 
 Cyclic dinucleotides were extracted as described previously (Hallberg et al., 2016) from two biological replicates. LC-MS analysis of E. coli cell extracts was performed as described previously (Hallberg et al., 2016).
 
-## Crystallization and structure determination of T4Lys-Gmet_1914
+### Crystallization and structure determination of T4Lys-Gmet_1914
 
 Prior to crystallization, T4Lysozyme-Gmet_1914294–459 protein was incubated for 10 min at rt at a concentration of 6.5 mg ml−1 in the presence of 10 mM GTP and 10 mM MgCl2. The T4Lysozyme-Gmet_1914294–459–Guanosine nucleotide complex was crystallized in a hanging-drop vapor diffusion format using the final optimized crystallization conditions of 30 mM HEPES-KOH (pH 7.5), 300 mM Na(OAc), and 26% PEG-4000. Crystals were grown in Easy-Xtal 15-well trays (Qiagen) in 2 μl hanging drops with a 1:1 (protein:reservoir) ratio over 350 μl of reservoir solution. Crystals required incubation at 18°C for 2–4 days for complete growth, and then were transferred with a nylon loop to a new drop containing reservoir solution supplemented with 10% glycerol as a cryoprotectant and incubated for 30 s before flash-freezing in liquid nitrogen. Native and anomalous data were collected under cryogenic conditions at the Lawrence Berkeley National Laboratory Advanced Light Source (Beamline 8.3.1).
 
 X-ray diffraction data were processed with XDS and AIMLESS (Kabsch, 2010) in the monoclinic spacegroup C 2. Phase information was determined with a combination of molecular replacement and sulfur single-wavelength anomalous dispersion (SAD). Briefly, iterative sulfur-SAD data sets were collected at ~7,235 eV and merged from independent portions of a large T4Lysozyme-Gmet_1914294–459 crystal as previously described (Lee et al., 2016a). A minimal core of T4-Lysozyme (PDB 5JWS) (Lee et al., 2016b) was used a search model for molecular replacement and sub-structure determination. The placed T4-Lysozyme fragment was then used to guide SAD identification of 17 sites with HySS in PHENIX (Adams et al., 2010) corresponding to 12 sulfur atoms in T4Lysozyme-Gmet_1914294–459 and 5 solvent ion positions. SOLVE/RESOLVE (Terwilliger, 1999) was used to extend phases to the native T4Lysozyme-Gmet_1914294–459 data processed to ~1.35 Å and model building and refinement were completed with Coot (Emsley and Cowtan, 2004) and PHENIX (Table 2).
 
-## Bioinformatic analysis of GGDEF variants
+### Bioinformatic analysis of GGDEF variants
 
 A Python-based program was developed to extract alignment data for a library of 139,801 putative GGDEF domain-containing proteins from the Uniprot database (obtained through Pfam, accession PF00990, http://pfam.xfam.org/, accessed 06/05/2014). In particular, positions critical for catalytic activity (i.e. the GG[D/E]EF sequence) and selectivity (i.e. positions 347 and 303 in GsGacA) were identified and analyzed for each sequence. Given previous results with some DGCs possessing altered signature motifs, we assigned any diguanylate cyclase with a [G/A/S]G[D/E][F/Y] motif to be active.

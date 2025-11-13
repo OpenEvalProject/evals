@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.07253.001 Sterol traffic between the endoplasmic reticulum (ER) and plasma membrane (PM) is a fundamental cellular process that occurs by a poorly understood non-vesicular mechanism. We identified a novel, evolutionarily diverse family of ER membrane proteins with StART-like lipid transfer domains and studied them in yeast. StART-like domains from Ysp2p and its paralog Lam4p specifically bind sterols, and Ysp2p, Lam4p and their homologs Ysp1p and Sip3p target punctate ER-PM contact sites distinct from those occupied by known ER-PM tethers. The activity of Ysp2p, reflected in amphotericin-sensitivity assays, requires its second StART-like domain to be positioned so that it can reach across ER-PM contacts. Absence of Ysp2p, Ysp1p or Sip3p reduces the rate at which exogenously supplied sterols traffic from the PM to the ER. Our data suggest that these StART-like proteins act in trans to mediate a step in sterol exchange between the PM and ER. DOI: http://dx.doi.org/10.7554/eLife.07253.001
+Sterol traffic between the endoplasmic reticulum (ER) and plasma membrane (PM) is a fundamental cellular process that occurs by a poorly understood non-vesicular mechanism. We identified a novel, evolutionarily diverse family of ER membrane proteins with StART-like lipid transfer domains and studied them in yeast. StART-like domains from Ysp2p and its paralog Lam4p specifically bind sterols, and Ysp2p, Lam4p and their homologs Ysp1p and Sip3p target punctate ER-PM contact sites distinct from those occupied by known ER-PM tethers. The activity of Ysp2p, reflected in amphotericin-sensitivity assays, requires its second StART-like domain to be positioned so that it can reach across ER-PM contacts. Absence of Ysp2p, Ysp1p or Sip3p reduces the rate at which exogenously supplied sterols traffic from the PM to the ER. Our data suggest that these StART-like proteins act in trans to mediate a step in sterol exchange between the PM and ER.
 
 ## Introduction
 
@@ -34,73 +34,73 @@ Here, we identified a large new protein family distantly related to StART protei
 
 ## Results
 
-## A family of membrane anchored StART-like proteins includes Ysp1p, Ysp2p and Sip3p
+### A family of membrane anchored StART-like proteins includes Ysp1p, Ysp2p and Sip3p
 
 To identify novel sterol transfer proteins, we used StART domains to seed the homology tool HHpred (Soding et al., 2005). This has been successfully used in structural alignments to identify remote homologs for other LTPs, including TULIPs in tricalbins, and PRELI domains in Ups1-3p (Kopec et al., 2010; Connerth et al., 2012; Schauder et al., 2014).
 
-We found a large family of eukaryotic proteins containing StART-like domains (
+We found a large family of eukaryotic proteins containing StART-like domains (Figure 1 and Figure 1—figure supplement 1), which are distantly related to other domains in the StART superfamily, such as MLN64, CERT, Coq10p and Bet-v1 (Figure 1—figure supplement 2A). In terms of sequence alone there are few conserved residues (Figure 1B), so alignment requires inclusion of predicted secondary structure (Figure 1—figure supplement 2B). The StART-like domain is present in three human proteins (GramD1a-c), and six proteins in budding yeast (Ysp1p, Ysp2p, Sip3p, Lam4p, Lam5p and Lam6p). Because Saccharomyces cerevisiae duplicated its genome ∼10 million years ago, related fungi have just three family members, one each for the pairs of paralogs Ysp1p/Sip3p, Ysp2p/Lam4p and Lam5p/Lam6p (Figure 1A). The StART-like domains in Ysp1p and Sip3p are divergent compared to those of Ysp2p, Lam4–6p and GramD1a-c (Figure 1—figure supplement 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig1-v2.jpg)
 
-**Figure 1.:** (A) StART-like domains are found in the predicted cytoplasmic domains of three human proteins and six yeast proteins, which are three pairs of paralogs. Proportions of identical residues in recently duplicated domains are indicated. Previous identifications were limited to GRAM domains in the pleckstrin homology superfamily (PHg) and transmembrane domains (T, in Lam4p the TMD is weakly predicted*). We identify Bin/amphiphysin/RVS (BAR), and other pleckstrin-homology (PH) superfamily domains. Predicted topology places most regions in the cytoplasm except short luminal regions (pink). Scale bar is 200 aa. (B) Alignment of yeast and human StART-like domains with Bet-v1 and seven human StARTs, with CLUSTALX coloring of conserved residues, together with secondary structure (above, sheets—blue arrows, helices—red) and quality of alignment (below). The C-terminal helix contains a glycine residue (*) predicted to interact with the omega-1 loop, hence affecting opening/closing of the lipid binding pocket. Arrows point to tryptophans present in Ysp2S1/2 and Lam4S1/2, black: in all 4 domains, blue: in Ysp2S1 only. A two residue insertion is omitted from the final loop of GramD1b.DOI: http://dx.doi.org/10.7554/eLife.07253.003
+**Figure 1.:** (A) StART-like domains are found in the predicted cytoplasmic domains of three human proteins and six yeast proteins, which are three pairs of paralogs. Proportions of identical residues in recently duplicated domains are indicated. Previous identifications were limited to GRAM domains in the pleckstrin homology superfamily (PHg) and transmembrane domains (T, in Lam4p the TMD is weakly predicted*). We identify Bin/amphiphysin/RVS (BAR), and other pleckstrin-homology (PH) superfamily domains. Predicted topology places most regions in the cytoplasm except short luminal regions (pink). Scale bar is 200 aa. (B) Alignment of yeast and human StART-like domains with Bet-v1 and seven human StARTs, with CLUSTALX coloring of conserved residues, together with secondary structure (above, sheets—blue arrows, helices—red) and quality of alignment (below). The C-terminal helix contains a glycine residue (*) predicted to interact with the omega-1 loop, hence affecting opening/closing of the lipid binding pocket. Arrows point to tryptophans present in Ysp2S1/2 and Lam4S1/2, black: in all 4 domains, blue: in Ysp2S1 only. A two residue insertion is omitted from the final loop of GramD1b.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** An unrooted phylogenetic tree of 143 highly diverse of StART-like sequences was drawn by PHYML, showing species and Uniprot accession numbers. 10 sequence groups are bracketed to show the mixture of taxa in different parts of the tree. Four parts of the tree include yeast or human sequences (black background), showing that Ysp1p/Sip3p are more distant from Ysp2p/Lam4–6p than are human GramD1a-c. The 7 domains labelled in blue are shown in the context of their full-length proteins in Figure 1—figure supplement 2C.DOI: http://dx.doi.org/10.7554/eLife.07253.004
+**Figure 1—figure supplement 1.:** An unrooted phylogenetic tree of 143 highly diverse of StART-like sequences was drawn by PHYML, showing species and Uniprot accession numbers. 10 sequence groups are bracketed to show the mixture of taxa in different parts of the tree. Four parts of the tree include yeast or human sequences (black background), showing that Ysp1p/Sip3p are more distant from Ysp2p/Lam4–6p than are human GramD1a-c. The 7 domains labelled in blue are shown in the context of their full-length proteins in Figure 1—figure supplement 2C.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** (A) Each row shows E-values of sequence alignments obtained with the HMM alignment tool HHblits (Remmert et al., 2012). Each row was seeded with the sequence indicated on the left, and the strength of hit to each target is expressed as log10. (B) As A, but reporting HHpred results. Values indicate the probabilities of sharing the same structure (%). For both A and B squares are colored to indicate if the hit is above (red) or below (blue) the thresholds for significance: 90% in A, −3 (=log10, i.e., 0.001) in B. HHpred is more sensitive than HHblits, identifying many more links between known StART domains and new StART-like proteins. (C) Selected proteins with StART-like domains show a diverse range of accessory domains. Despite variation in the positioning of TMD(s), most of each protein is in the cytoplasm. Accessory domains (pink) are typically implicated in membrane targeting (see key).DOI: http://dx.doi.org/10.7554/eLife.07253.005
+**Figure 1—figure supplement 2.:** (A) Each row shows E-values of sequence alignments obtained with the HMM alignment tool HHblits (Remmert et al., 2012). Each row was seeded with the sequence indicated on the left, and the strength of hit to each target is expressed as log10. (B) As A, but reporting HHpred results. Values indicate the probabilities of sharing the same structure (%). For both A and B squares are colored to indicate if the hit is above (red) or below (blue) the thresholds for significance: 90% in A, −3 (=log10, i.e., 0.001) in B. HHpred is more sensitive than HHblits, identifying many more links between known StART domains and new StART-like proteins. (C) Selected proteins with StART-like domains show a diverse range of accessory domains. Despite variation in the positioning of TMD(s), most of each protein is in the cytoplasm. Accessory domains (pink) are typically implicated in membrane targeting (see key).
 
 Importantly, most proteins in the wider family combine the StART-like domain with different accessory domains that mediate interactions with membranes, particularly GRAM domains in the pleckstrin-homology (PH) superfamily and predicted transmembrane domains (TMDs) (Figure 1A and Figure 1—figure supplement 2C). The presence of a TMD is a key observation for a proposed LTP, because the TMD will anchor the protein to one membrane, so if the LTP is to traffic a lipid to another compartment, it must act at an MCS where the gap can be bridged by a single protein or protein complex (Olkkonen and Levine, 2004).
 
-## StART-like domains in Ysp2p and Lam4p all solubilize sterol
+### StART-like domains in Ysp2p and Lam4p all solubilize sterol
 
-The overriding property of any StART-like domain is specific binding to a lipid or other hydrophobic ligand. To determine if the regions we identified as StART-like domains bind lipid, we expressed the predicted yeast and human domains in bacteria. The only StART-like domains that we could express as soluble proteins in bacteria were the four StART-like domains of Ysp2p and Lam4p (
+The overriding property of any StART-like domain is specific binding to a lipid or other hydrophobic ligand. To determine if the regions we identified as StART-like domains bind lipid, we expressed the predicted yeast and human domains in bacteria. The only StART-like domains that we could express as soluble proteins in bacteria were the four StART-like domains of Ysp2p and Lam4p (Figure 1A), the most soluble being the second domain of Lam4p (called Lam4S2), so we tested if Lam4S2 binds eukaryotic lipids. We incubated purified protein with permeabilized human cells in which all lipids had been radiolabelled with [14C]-acetate. Re-purified protein contained a single labelled lipid that co-migrated with cholesterol by TLC, but no phospholipids were co-purified (Figure 2A and Figure 2—figure supplement 1A). Sterol binding by Lam4S2 during re-purification indicates a high affinity interaction that solubilizes the hydrophobic lipid, similar to known StART domains.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig2-v2.jpg)
 
-**Figure 2.:** (A) The second StART-like domain of Lam4p (Lam4S2) binds cholesterol. Human leukemic cells (HL60) in which all lipids were labelled with 14C-acetate were semi-permeabilized and incubated with bacterially expressed Lam4S2 and two control proteins: Pdr16(EE) which binds cholesterol (Holic et al., 2014) and GFP-PH-OSBP (negative control). Lipid extracts of re-isolated proteins were separated by TLC. Positions of major identifiable lipids were ascertained from total lipids (arrows, SM = sphingomyelin, PC = phosphatidylcholine, PI = phosphatidylinositol, PS = phosphatidylserine, PE = phosphatidylethanolamine, CL = cardiolipin). Arrowheads indicate origin. (B) FRET between Ysp2S1 or Ysp2S2 and dehydroergosterol (DHE). Tryptophan fluorescence (excitation at 295 nm) with purified protein either on its own or incubated with DHE. (C) Tryptophan-DHE FRET of Lam4S2 (1.05 µM) incubated with increasing concentrations of liposomes containing 30% DHE at the final concentrations indicated. The best fitting one saturable site binding curve (dashed line) indicates that Kd for binding = 0.5 µM DHE. (D) Effect on DHE FRET signal of adding non-fluorescent sterols (chol—cholesterol, erg—ergosterol) added at the same concentration as DHE and one of four StART-like domains from Ysp2p and Lam4p. ‘n.c.’ = no competitor, signal defined as 1; lipids added in methanol.DOI: http://dx.doi.org/10.7554/eLife.07253.006
+**Figure 2.:** (A) The second StART-like domain of Lam4p (Lam4S2) binds cholesterol. Human leukemic cells (HL60) in which all lipids were labelled with 14C-acetate were semi-permeabilized and incubated with bacterially expressed Lam4S2 and two control proteins: Pdr16(EE) which binds cholesterol (Holic et al., 2014) and GFP-PH-OSBP (negative control). Lipid extracts of re-isolated proteins were separated by TLC. Positions of major identifiable lipids were ascertained from total lipids (arrows, SM = sphingomyelin, PC = phosphatidylcholine, PI = phosphatidylinositol, PS = phosphatidylserine, PE = phosphatidylethanolamine, CL = cardiolipin). Arrowheads indicate origin. (B) FRET between Ysp2S1 or Ysp2S2 and dehydroergosterol (DHE). Tryptophan fluorescence (excitation at 295 nm) with purified protein either on its own or incubated with DHE. (C) Tryptophan-DHE FRET of Lam4S2 (1.05 µM) incubated with increasing concentrations of liposomes containing 30% DHE at the final concentrations indicated. The best fitting one saturable site binding curve (dashed line) indicates that Kd for binding = 0.5 µM DHE. (D) Effect on DHE FRET signal of adding non-fluorescent sterols (chol—cholesterol, erg—ergosterol) added at the same concentration as DHE and one of four StART-like domains from Ysp2p and Lam4p. ‘n.c.’ = no competitor, signal defined as 1; lipids added in methanol.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Lam4S2 binding to cellular lipids (see Figure 2A). TOP: His6-tagged proteins (1) Pdr16(EE) (Holic et al., 2014), (2) Lam4S2, (3) GFP-PHOSBP were re-isolated after incubation with radiolabelled cells, separated by SDS-PAGE and stained by Coomassie (MW markers indicated). BOTTOM: Bound lipids that ran near the solvent front in the first TLC (Figure 2A) were scraped and re-separated to distinguish between cholesterol and other neutral lipids triacyl- and diacyl-glycerol (TG and DG). (B) Lam4S2 (966–1136) was modelled using SAM-T08 (Karplus, 2009), colored in a spectrum from N-terminus (blue) to C-terminus (green). Also shown: two conserved tryptophans either inside (yellow) or outside (pink) the pocket, a conserved glycine in the C-terminal helix (white = G1205 in Ysp2p, G1119 in Lam4p). (C) Stock solution of BSA and aliquots of the indicated purified StART-like domains (x1 and x1/2 volume compared to BSA) were run on a 15% SDS-PAGE gel that was stained by Coomassie. (D) FRET between Lam4S1 or Lam4S2 and DHE. Tryptophan fluorescence (excitation at 295 nm) with purified protein either on its own or incubated with DHE. (E) Tryptophan emission spectrum of Lam4S2 with and without DHE (as in panel C) but in the presence of 7 M guanidinium to denature the protein. This shows that DHE is only slightly fluorescent when stimulated at 295 nm.DOI: http://dx.doi.org/10.7554/eLife.07253.007
+**Figure 2—figure supplement 1.:** (A) Lam4S2 binding to cellular lipids (see Figure 2A). TOP: His6-tagged proteins (1) Pdr16(EE) (Holic et al., 2014), (2) Lam4S2, (3) GFP-PHOSBP were re-isolated after incubation with radiolabelled cells, separated by SDS-PAGE and stained by Coomassie (MW markers indicated). BOTTOM: Bound lipids that ran near the solvent front in the first TLC (Figure 2A) were scraped and re-separated to distinguish between cholesterol and other neutral lipids triacyl- and diacyl-glycerol (TG and DG). (B) Lam4S2 (966–1136) was modelled using SAM-T08 (Karplus, 2009), colored in a spectrum from N-terminus (blue) to C-terminus (green). Also shown: two conserved tryptophans either inside (yellow) or outside (pink) the pocket, a conserved glycine in the C-terminal helix (white = G1205 in Ysp2p, G1119 in Lam4p). (C) Stock solution of BSA and aliquots of the indicated purified StART-like domains (x1 and x1/2 volume compared to BSA) were run on a 15% SDS-PAGE gel that was stained by Coomassie. (D) FRET between Lam4S1 or Lam4S2 and DHE. Tryptophan fluorescence (excitation at 295 nm) with purified protein either on its own or incubated with DHE. (E) Tryptophan emission spectrum of Lam4S2 with and without DHE (as in panel C) but in the presence of 7 M guanidinium to denature the protein. This shows that DHE is only slightly fluorescent when stimulated at 295 nm.
 
 We next quantitatively studied the sterol binding properties of StART-like domains using the fluorescent sterol dehydroergosterol (DHE). DHE closely mimics ergosterol, the major yeast sterol (Georgiev et al., 2011; Maxfield and Wustner, 2012) and acts as FRET acceptor for tryptophan with a Förster radius of 1.6 nm (Loura et al., 2010). One of the tryptophans in Lam4S2 and related sequences is in the predicted binding pocket (Figure 2—figure supplement 1B). All four StART-like domains that expressed as soluble proteins (Ysp2S1 and YspS2 from Ysp2p, Lam4S1 and Lam4S2 from Lam4p) were purified to >95% purity (Figure 2—figure supplement 1C), and these proteins all produced strong FRET signals with DHE (Figure 2B and Figure 2—figure supplement 1D). This was not observed with denatured Lam4S2 or with a control protein (soybean trypsin inhibitor) (Figure 2—figure supplement 1E, and data not shown). The dissociation constant for binding was estimated at 0.5 µM (±0.1) from a binding curve with DHE added in liposomes, as measured from the FRET signal (Figure 2C). All four purified StART-like domains bound both cholesterol (the predominant sterol in mammals) and ergosterol (the predominant sterol in yeast) with similar affinity to DHE, as seen by a reduction in FRET of approximately 50% when DHE was mixed with an equal concentration of non-fluorescent sterol (Figure 2D). The sub-micromolar affinity for sterol is similar to other sterol transfer proteins such as Osh4p and Pry1p (Im et al., 2005; Choudhary and Schneiter, 2012).
 
 From analysis of the chromatography plate in Figure 2A, we found that Lam4S2 extracted cholesterol but no other lipids from labelled HL60 cells (relative recovery compared to cholesterol of all identifiable phospholipids ≤0.3%). In contrast, PITPα present in the same experiment extracted phosphatidylcholine (PC) and phosphatidylinositol (PI) but not cholesterol (data not shown). Therefore, the lack of recovery of the major phospholipids, including PC, PI, phosphatidylserine (PS) and phosphatidylethanolamine (PE), by Lam4S2 indicates that if it does bind phospholipids non-specifically (Schrick et al., 2014), such binding can only be weak (Kd >100 µM).
 
-## Ysp1p, Ysp2p, Sip3p and Lam4p target punctate ER-PM membrane contacts
+### Ysp1p, Ysp2p, Sip3p and Lam4p target punctate ER-PM membrane contacts
 
-To understand the physiological role of the StART-like proteins we investigated their locations. While Ysp2p was detectable when expressed from its own promoter (
+To understand the physiological role of the StART-like proteins we investigated their locations. While Ysp2p was detectable when expressed from its own promoter (Figure 3A), Sip3p expression from its own promoter was so weak as to be almost undetectable (Figure 3—figure supplement 1A), so we used a stronger promoter instead (Figure 3B). Both proteins targeted puncta in the cell periphery in wild-type strains; identical patterns were seen in strains lacking the endogenous proteins (data not shown). Their paralogs Lam4p and Ysp1p showed the same pattern, also at low levels of expression (Figure 3—figure supplement 1B,C). These peripheral puncta might either be on the PM or on the cortical ER (cER). In contrast to these four peripheral proteins, both Lam5p and Lam6p showed complex intracellular targeting to multiple MCSs, including the NVJ and ER-mitochondrial contacts (Figure 3—figure supplement 2). These localizations imply that Ysp1p, Ysp2p, Sip3p and Lam4p are involved in similar or overlapping functions, while Lam5p and Lam6p have a different function.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig3-v2.jpg)
 
-**Figure 3.:** (A and B) GFP-Ysp2p and GFP-Sip3p (PHO5 promoter) in cells co-expressing RFP-ER, showing separate channels (inverted grey-scale) and merges. Arrowheads indicate nuclear envelopes containing GFP-Sip3p. (C) Confocal sections of a ∆tether cell expressing GFP-Ysp2p and RFP-ER (top), with high contrast inverted grey-scale images of RFP-ER (bottom) to visualize endoplasmic reticulum (ER) strands extending to Ysp2p-positive peripheral puncta (arrowheads). (D) Cells co-expressing GFP-Sip3p and RFP-Ysp2 at low levels, with separate channels as inverted grey-scale images and the merge, showing colocalization in most puncta. (E) As D, but showing cells with high levels of GFP-Sip3p, which accumulates internally with delocalized internal RFP-Ysp2p.DOI: http://dx.doi.org/10.7554/eLife.07253.008
+**Figure 3.:** (A and B) GFP-Ysp2p and GFP-Sip3p (PHO5 promoter) in cells co-expressing RFP-ER, showing separate channels (inverted grey-scale) and merges. Arrowheads indicate nuclear envelopes containing GFP-Sip3p. (C) Confocal sections of a ∆tether cell expressing GFP-Ysp2p and RFP-ER (top), with high contrast inverted grey-scale images of RFP-ER (bottom) to visualize endoplasmic reticulum (ER) strands extending to Ysp2p-positive peripheral puncta (arrowheads). (D) Cells co-expressing GFP-Sip3p and RFP-Ysp2 at low levels, with separate channels as inverted grey-scale images and the merge, showing colocalization in most puncta. (E) As D, but showing cells with high levels of GFP-Sip3p, which accumulates internally with delocalized internal RFP-Ysp2p.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A, B, C): Cells expressing plasmid borne N-terminally GFP-Sip3p, GFP-Ysp1p and GFP-Lam4p with their own promoters (inverted grey-scale). In A, Sip3p puncta are highlighted by arrowheads and also shown superimposed on DIC images of the same cells.DOI: http://dx.doi.org/10.7554/eLife.07253.009
+**Figure 3—figure supplement 1.:** (A, B, C): Cells expressing plasmid borne N-terminally GFP-Sip3p, GFP-Ysp1p and GFP-Lam4p with their own promoters (inverted grey-scale). In A, Sip3p puncta are highlighted by arrowheads and also shown superimposed on DIC images of the same cells.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** (A–D): LEFT panels: GFP-Lam5p (A and B) and GFP-Lam6p (C and D) in cells co-expressing MIDDLE panels: RFP-ER (A and C) or RFP-mitochondrial outer membrane (Tom6p) (B and D). RIGHT = merged images. Targeting by either GFP-tagged protein is indicated: NVJ (black filled arrowheads); mitochondrial outer membrane, sometimes seen as parallel lines (white filled arrowheads); generic ER (faint): nuclear envelope (asterisks), periphery (arcs).DOI: http://dx.doi.org/10.7554/eLife.07253.010
+**Figure 3—figure supplement 2.:** (A–D): LEFT panels: GFP-Lam5p (A and B) and GFP-Lam6p (C and D) in cells co-expressing MIDDLE panels: RFP-ER (A and C) or RFP-mitochondrial outer membrane (Tom6p) (B and D). RIGHT = merged images. Targeting by either GFP-tagged protein is indicated: NVJ (black filled arrowheads); mitochondrial outer membrane, sometimes seen as parallel lines (white filled arrowheads); generic ER (faint): nuclear envelope (asterisks), periphery (arcs).
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** (A) GFP-Ysp2p expressed from the GAL1 promoter after induction in galactose for 8 hr. The distribution is largely unaffected by massive overexpression. (B) ∆tether cells expressing GFP-Ysp2p and GFP-Sip3p including the DIC channel to show where puncta are at cell peripheries. (C) ∆tether cells expressing RFP-ER and GFP-tagged Ysp1p/Sip3p/Lam4p. UPPER panels: colored merges; LOWER panels: inverted grey-scale images of RFP channel to indicate the extent of the ER. Arrows indicate all GFP +ve peripheral puncta, white if there is coincident RFP-ER, or black if not. ER was seen in ∼70% of GFP puncta, which underestimates the degree of colocalization as GFP puncta are seen in more sections than the faint ER strands (see Figure 3C).DOI: http://dx.doi.org/10.7554/eLife.07253.011
+**Figure 3—figure supplement 3.:** (A) GFP-Ysp2p expressed from the GAL1 promoter after induction in galactose for 8 hr. The distribution is largely unaffected by massive overexpression. (B) ∆tether cells expressing GFP-Ysp2p and GFP-Sip3p including the DIC channel to show where puncta are at cell peripheries. (C) ∆tether cells expressing RFP-ER and GFP-tagged Ysp1p/Sip3p/Lam4p. UPPER panels: colored merges; LOWER panels: inverted grey-scale images of RFP channel to indicate the extent of the ER. Arrows indicate all GFP +ve peripheral puncta, white if there is coincident RFP-ER, or black if not. ER was seen in ∼70% of GFP puncta, which underestimates the degree of colocalization as GFP puncta are seen in more sections than the faint ER strands (see Figure 3C).
 
 ![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig3-figsupp4-v2.jpg)
 
-**Figure 3—figure supplement 4.:** (A) Cells expressing the six indicated Ysp2 constructs, all with N-terminal GFP. TOP: diagram of constructs and degree of targeting to peripheral puncta. Domains are identified as in Figure 1A, along with the N-terminus (residues 1–608), which is predicted to be unstructured. BOTTOM: LEFT: low level expression. Construct 6 (∆CT) lacks the TMD and is diffuse in the cytoplasm and nucleus. RIGHT high level expression of constructs 1–4. Ysp2-carboxy terminus (CT = 194 aa, incl. TMD and luminal domain) is sufficient for targeting to peripheral puncta, but the construct is in general ER (incl. nuclear envelope) when highly expressed. (B) Co-expression of GFP-Ysp2p with RFP-Ysp2CT, with separate channels (grey scale) and merge showing almost 100% colocalization.DOI: http://dx.doi.org/10.7554/eLife.07253.012
+**Figure 3—figure supplement 4.:** (A) Cells expressing the six indicated Ysp2 constructs, all with N-terminal GFP. TOP: diagram of constructs and degree of targeting to peripheral puncta. Domains are identified as in Figure 1A, along with the N-terminus (residues 1–608), which is predicted to be unstructured. BOTTOM: LEFT: low level expression. Construct 6 (∆CT) lacks the TMD and is diffuse in the cytoplasm and nucleus. RIGHT high level expression of constructs 1–4. Ysp2-carboxy terminus (CT = 194 aa, incl. TMD and luminal domain) is sufficient for targeting to peripheral puncta, but the construct is in general ER (incl. nuclear envelope) when highly expressed. (B) Co-expression of GFP-Ysp2p with RFP-Ysp2CT, with separate channels (grey scale) and merge showing almost 100% colocalization.
 
 ![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig3-figsupp5-v2.jpg)
 
-**Figure 3—figure supplement 5.:** sec18-1 blockade to SNARE-mediated transport.(A and B) sec18-1 cells (RSY271) expressing GFP-Ysp2CT from the GAL1 promoter. (A): growth at 37°C for 10 min, then 120 min induction (addition 1% galactose); (B): induction for 50 min with 1% galactose at the permissive temperature (25°C), then cells were washed into dextrose containing growth medium (to stop transcription) and grown for 10 min further at 25°C before temperature shift to 37°C for 60 min. (C and D) As A and B respectively, except expressing GFP-Sso1p. In all panels, the lower images show GFP falsely coloured yellow superimposed on DIC images of cells to indicate the relationship between puncta and the cell periphery. GFP-Ysp2CT reached peripheral puncta when expressed after the temperature shift blocked secretion (A), and its expression levels were lower when the induction period was shorter (B). In contrast GFP-Sso1p was found in the ER (including nuclear envelope and cortical patches) when expressed after blocking Sec18-mediated secretion (C), but otherwise reached the plasma membrane (with some punctate internal staining) and was expressed at higher levels despite the shorter induction (D), indicating that Sso1p destabilized by the sec18-1 block.DOI: http://dx.doi.org/10.7554/eLife.07253.013
+**Figure 3—figure supplement 5.:** (A and B) sec18-1 cells (RSY271) expressing GFP-Ysp2CT from the GAL1 promoter. (A): growth at 37°C for 10 min, then 120 min induction (addition 1% galactose); (B): induction for 50 min with 1% galactose at the permissive temperature (25°C), then cells were washed into dextrose containing growth medium (to stop transcription) and grown for 10 min further at 25°C before temperature shift to 37°C for 60 min. (C and D) As A and B respectively, except expressing GFP-Sso1p. In all panels, the lower images show GFP falsely coloured yellow superimposed on DIC images of cells to indicate the relationship between puncta and the cell periphery. GFP-Ysp2CT reached peripheral puncta when expressed after the temperature shift blocked secretion (A), and its expression levels were lower when the induction period was shorter (B). In contrast GFP-Sso1p was found in the ER (including nuclear envelope and cortical patches) when expressed after blocking Sec18-mediated secretion (C), but otherwise reached the plasma membrane (with some punctate internal staining) and was expressed at higher levels despite the shorter induction (D), indicating that Sso1p destabilized by the sec18-1 block.
 
 ![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig3-figsupp6-v2.jpg)
 
-**Figure 3—figure supplement 6.:** (A) Co-expression of GFP-Lam4p with RFP-Ysp2CT, with separate channels as inverted grey-scale images, and the merge. ∼50% of puncta with Ysp2CT contained Lam4p and vice versa, indicating partial but significant overlap. (B) Wild-type cells co-expressing Tcb2-GFP and RFP-Lam2CT, shown as single channels (inverted grey-scale) and merge. Lam2CT + ve puncta (middle panels) are marked with arrowheads: filled if Tcb2-GFP is also enriched at that site, otherwise empty. ∼33% of Ysp2CT puncta also contained Tcb2-GFP. The proportion of the periphery overall that contained Tcb2-GFP was ≥25%, so the co-localization between the two proteins was not significant.DOI: http://dx.doi.org/10.7554/eLife.07253.014
+**Figure 3—figure supplement 6.:** (A) Co-expression of GFP-Lam4p with RFP-Ysp2CT, with separate channels as inverted grey-scale images, and the merge. ∼50% of puncta with Ysp2CT contained Lam4p and vice versa, indicating partial but significant overlap. (B) Wild-type cells co-expressing Tcb2-GFP and RFP-Lam2CT, shown as single channels (inverted grey-scale) and merge. Lam2CT + ve puncta (middle panels) are marked with arrowheads: filled if Tcb2-GFP is also enriched at that site, otherwise empty. ∼33% of Ysp2CT puncta also contained Tcb2-GFP. The proportion of the periphery overall that contained Tcb2-GFP was ≥25%, so the co-localization between the two proteins was not significant.
 
 Because we knew the lipid specificity for Ysp2p and Lam4p, we decided to focus on these proteins as well as Sip3/Ysp1p that are also found in peripheral puncta. First we considered the effect of over-expression. For Ysp2p, high expression had little effect on its distribution (Figure 3—figure supplement 3A). However, in cells highly expressing Sip3p, protein accumulated in the ER (Figure 3B). This suggests that Sip3p, and by extension Ysp1p, Ysp2p and Lam4p, target a saturable punctate subdomain of the cER. However, additional information is required to make a precise assignment because cER occupies a high proportion of the periphery in yeast, so co-localization with cER could be coincidental. To refine the localization data, we therefore genetically reduced the amount of cER using a strain lacking 90% of cER. In this ‘∆tether’ strain six proteins involved in ER-PM tethering are deleted, and the proportion of PM with cER is reduced from 40% to 4% with ER accumulation in the center of cells (Manford et al., 2012). In ∆tether cells GFP-Ysp2p and GFP-Sip3p were still found in peripheral puncta, although these were less numerous compared to wild-type (Figure 3C and Figure 3—figure supplement 3B). All puncta with GFP-Ysp2p were in close proximity to a strand of ER extending into the periphery, although each ER strand appeared in fewer confocal sections than the associated punctum (Figure 3C, arrows). The same was found for Ysp1p, Sip3p and Lam4p (Figure 3—figure supplement 3C), indicating that all four proteins target ER-PM contacts that are distinct from those mediated by the six tether proteins previously identified.
 
@@ -110,17 +110,17 @@ Finally we asked if Ysp2p is colocalized with other cER proteins. We first found
 
 In summary, Ysp2p and its homologs are ER proteins strongly enriched at puncta in the cER that may define a sub-class of ER-PM contact site.
 
-## Ysp2p function correlates with sterol binding to its StART-like domain
+### Ysp2p function correlates with sterol binding to its StART-like domain
 
-Since we know the lipid binding specificity of Ysp2p and Lam4p, we next looked for sterol-related phenotypes associated with loss of these genes. While
+Since we know the lipid binding specificity of Ysp2p and Lam4p, we next looked for sterol-related phenotypes associated with loss of these genes. While ∆lam4 has no known phenotype, ∆ysp2 induces sensitivity to the polyene antifungals amphotericin B (AmB) and nystatin, which function by extracting ergosterol from membranes (Anderson et al., 2014). ∆ysp2 is 30th most sensitive out of 4130 single gene deletion strains tested with AmB and nystatin, while ∆ysp1 and ∆sip3 are even more sensitive (11th and 3rd/4130) (Hillenmeyer et al., 2008). Deletion strains that we re-made for the six yeast StART-like proteins accurately reproduced the published sensitivities to polyenes (AmB Figure 4A and Nystatin Figure 4—figure supplement 1A). ∆ysp1 and ∆sip3 were both highly sensitive and ∆ysp2 was moderately sensitive, while ∆lam4, ∆lam5 and ∆lam6 were as wildtype. The same pattern of sensitivities was found with natamycin, another polyene (data not shown).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig4-v2.jpg)
 
-**Figure 4.:** S) phenotypes and rescue by StART-like domains that bind sterol.(A) Dilutions of cells with single gene deletions were compared with the wild-type parental strain (WT) for ability to grow at two concentrations (moderate and high) of AmB, with AmB = 0 to control for cell number. (B) Effect of AmBS growth by ∆ysp2 cells from GFP-Ysp2p under its own promoter with individual domains deleted. (C) Rescue of ∆ysp2 by domains of Ysp2p (S1/S2/CT), Lam4S1/S2, and StART-like domains of Lam5p Lam6p and human GramD1a. All plasmids had the PHO5 promoter for moderately high expression, except Y2S2LO had the weakly expressing YSP2 promoter. (D) Growth by ∆ysp2 cells expressing Ysp2p or the G > R mutant under the YSP2 promoter ± AmB. ‡ indicates that Ysp2S2 in both plasmids was substituted by Lam4S2 (53% identical, 72% homologous). (E) Growth ± AmB by ∆sip3 cells overexpressing human LTP domains of MLN64, PCTP and ceramide transfer protein (CERT) (TPI1 promoter).DOI: http://dx.doi.org/10.7554/eLife.07253.015
+**Figure 4.:** (A) Dilutions of cells with single gene deletions were compared with the wild-type parental strain (WT) for ability to grow at two concentrations (moderate and high) of AmB, with AmB = 0 to control for cell number. (B) Effect of AmBS growth by ∆ysp2 cells from GFP-Ysp2p under its own promoter with individual domains deleted. (C) Rescue of ∆ysp2 by domains of Ysp2p (S1/S2/CT), Lam4S1/S2, and StART-like domains of Lam5p Lam6p and human GramD1a. All plasmids had the PHO5 promoter for moderately high expression, except Y2S2LO had the weakly expressing YSP2 promoter. (D) Growth by ∆ysp2 cells expressing Ysp2p or the G > R mutant under the YSP2 promoter ± AmB. ‡ indicates that Ysp2S2 in both plasmids was substituted by Lam4S2 (53% identical, 72% homologous). (E) Growth ± AmB by ∆sip3 cells overexpressing human LTP domains of MLN64, PCTP and ceramide transfer protein (CERT) (TPI1 promoter).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A) Nystatin sensitivities of WT, and single deletions in ∆ysp1/∆ysp2/∆sip3/∆lam4—6 grown with and without nystatin (30 µg/ml). (B) Diagram of domain boundaries in Ysp2 constructs used in Figure 4B,C. (C) AmB sensitivities of WT, ∆ysp1 and ∆sip3 cells with plasmids expressing GFP alone or GFP tagged to seven StART-like domains (Lam2S1, Lam2S2, Lam4S1, Lam4S2, domains from Lam5, Lam6, and human GramD1a). LEFT: control plates to show cell number; RIGHT: plates with AmB 125 ng/ml. All domains were active except Lam4S1, which was less active in ∆ysp2. (D) Tryptophan-DHE FRET with constant concentration of wild-type or mutant (G1119R) Lam4S2 (1.05 µM) incubated with increasing concentrations of liposomes containing 30% DHE.DOI: http://dx.doi.org/10.7554/eLife.07253.016
+**Figure 4—figure supplement 1.:** (A) Nystatin sensitivities of WT, and single deletions in ∆ysp1/∆ysp2/∆sip3/∆lam4—6 grown with and without nystatin (30 µg/ml). (B) Diagram of domain boundaries in Ysp2 constructs used in Figure 4B,C. (C) AmB sensitivities of WT, ∆ysp1 and ∆sip3 cells with plasmids expressing GFP alone or GFP tagged to seven StART-like domains (Lam2S1, Lam2S2, Lam4S1, Lam4S2, domains from Lam5, Lam6, and human GramD1a). LEFT: control plates to show cell number; RIGHT: plates with AmB 125 ng/ml. All domains were active except Lam4S1, which was less active in ∆ysp2. (D) Tryptophan-DHE FRET with constant concentration of wild-type or mutant (G1119R) Lam4S2 (1.05 µM) incubated with increasing concentrations of liposomes containing 30% DHE.
 
 Since loss of Ysp2p causes AmB sensitivity, we used this phenotype to identify which aspects of the protein are critical for its function. Firstly, plasmid-borne GFP-tagged Ysp2p expressed from its own promoter restored AmB resistance (Figure 4B), showing that the construct localized to cER puncta is functional. Next, we looked for active domains within Ysp2p. By deleting regions of Ysp2p (Figure 4—figure supplement 1B), we found that rescue of AmB-sensitive growth was affected most upon removing either the C-terminal anchor or the second StART-like domain (Figure 4B). On the other hand, deletion of Ysp2S1 had no effect. This indicated that both the C-terminus and the second StART-like domain are necessary for Ysp2p function. We next determined which domains are sufficient for rescue. The C-terminus was inactive, even though it is sufficient for punctate cER localization, (Figure 4C, Figure 3—figure supplement 4B). In contrast, both Ysp2S1 and Ysp2S2 rescued AmBs growth, although these required over-expression (Figure 4C), possibly because the constructs are diffusely cytoplasmic (data not shown). Therefore Ysp2S2 is the only component that is both necessary and sufficient, but it requires overexpression if it is cytoplasmic rather than membrane anchored.
 
@@ -128,35 +128,35 @@ To investigate the activity of YspS2 in rescuing AmB sensitivity, we compared it
 
 To investigate the role of sterol binding, we made a non-sterol-binding mutant by mutating a conserved glycine residue in the C-terminal helix predicted to interact with the omega-1 loop (Figure 1B and Figure 2—figure supplement 1B). Replacing G1205 in Ysp2p with alanine, threonine and arginine successively reduced the ability of Ysp2S2 to rescue AmB-sensitive growth (data not shown). Mutating the equivalent residue in Lam4S2 (G1119R) completely inhibited sterol binding in vitro (Figure 4—figure supplement 1D), showing that this residue is indeed critical. Substitution of this G → R mutated domain abolished rescue of AmB sensitivity by Ysp2p (Figure 4D), supporting a correlation between Ysp2p function and sterol binding by Ysp2S2. We next tested if the AmB-sensitive phenotype of ∆ysp2 cells could be rescued by a heterologous StART domain with very little sequence similarity to Ysp2S2, as was previously done for PITP/Sec14 (Skinner et al., 1993). For this we expressed StART domains of human MLN64 (sterol-specific), PCTP (phosphatidylcholine-specific) and CERT (ceramide-specific) (Figure 1B and Figure 1—figure supplement 2B). The StART domain of MLN64 produced significant rescue, but the StART domains of PCTP and CERT did not (Figure 4E). This strongly supports the idea the function of Ysp2p resides in its interaction with sterol, rather than a specific protein–protein interaction.
 
-## Ysp2p function correlates with the ability of its StART-like domain to reach across ER-PM contacts
+### Ysp2p function correlates with the ability of its StART-like domain to reach across ER-PM contacts
 
-Without its C-terminus, Ysp2p loses both targeting and function (
+Without its C-terminus, Ysp2p loses both targeting and function (Figure 3—figure supplement 2 and Figure 4C). To examine the importance of anchoring further, we used the AmB resistance assay to determine the role of intracellular localization of Ysp2S2 by anchoring it to the cytoplasmic face of different organelles (Figure 5A). Ysp2S2 activity was completely inhibited when anchored to either mitochondria or the vacuole. It was slightly activated by anchoring throughout the ER, and greatly activated by anchoring either to ER-PM contacts (with Ysp2CT) or to the PM as a whole. Thus, Ysp2S2 is activated by anchoring to either side of ER-PM contacts, especially to the contacts themselves, but inhibited by anchoring elsewhere.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig5-v2.jpg)
 
-**Figure 5.:** (A) Anchoring at different locations. AmBs growth of ∆sip3 cells transformed with plasmids weakly expressing (YSP2 promoter) Ysp2S2-RFP(dimeric) followed either by nothing (cytoplasmic) or by anchors for specific sites: vacuole (Nyv1p, all), mitochondria (Tom6p, all), own anchor (Ysp2 1249–1438), generic ER (Scs2: 220–244), and plasma membrane (PM) (Sso1p, all). WT and ∆sip3 cells carrying empty plasmids were included as controls. (B and C) Varying the length of the linker. AmBs growth of ∆ysp2 cells carrying an empty plasmid or weakly expressing (YSP2 promoter) Ysp2S2 anchored to the ER by the TMD of Scs2 (residues 226–244) with intervening linkers of 5, 10, 40, 71 or 103 residues. Cells in B were grown on plates with moderate AmB (63 ng/ml AmB). In C, cells with 40, 71 and 103 aa linker constructs were grown at higher stringency (125 ng/ml AmB). Diagrams indicate the variable sites for each experiment in blue. Equal cells were plated, as shown on control plates (Figure 5—figure supplement 1).DOI: http://dx.doi.org/10.7554/eLife.07253.017
+**Figure 5.:** (A) Anchoring at different locations. AmBs growth of ∆sip3 cells transformed with plasmids weakly expressing (YSP2 promoter) Ysp2S2-RFP(dimeric) followed either by nothing (cytoplasmic) or by anchors for specific sites: vacuole (Nyv1p, all), mitochondria (Tom6p, all), own anchor (Ysp2 1249–1438), generic ER (Scs2: 220–244), and plasma membrane (PM) (Sso1p, all). WT and ∆sip3 cells carrying empty plasmids were included as controls. (B and C) Varying the length of the linker. AmBs growth of ∆ysp2 cells carrying an empty plasmid or weakly expressing (YSP2 promoter) Ysp2S2 anchored to the ER by the TMD of Scs2 (residues 226–244) with intervening linkers of 5, 10, 40, 71 or 103 residues. Cells in B were grown on plates with moderate AmB (63 ng/ml AmB). In C, cells with 40, 71 and 103 aa linker constructs were grown at higher stringency (125 ng/ml AmB). Diagrams indicate the variable sites for each experiment in blue. Equal cells were plated, as shown on control plates (Figure 5—figure supplement 1).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (A) and (B): Cells from parts A and B of Figure 5 were also plated on control plates (no AmB) to indicate whether the cell number was equal throughout.DOI: http://dx.doi.org/10.7554/eLife.07253.018
+**Figure 5—figure supplement 1.:** (A) and (B): Cells from parts A and B of Figure 5 were also plated on control plates (no AmB) to indicate whether the cell number was equal throughout.
 
 Ysp2p is anchored to the ER membrane, which at contact sites is separated from the PM by a gap of ∼30 nm (range 15–60 nm) (West et al., 2011). This distance is large compared to the size of the StART-like domain itself (diameter 2.5 nm). While Ysp2p may act to extract or sense ER sterol, that is, function in cis, we wondered if its function requires it to act in trans by reaching across ER-PM contacts. Since unstructured peptide chains can extend up to 0.38 nm per residue (Pillardy et al., 2001), a linker between Ysp2S2 and a TMD anchor would need to be ≥40 aa to allow Ysp2S2 to cross the minimal 15 nm gap. We expressed constructs with Ysp2S2 linked to the generic ER anchor by unstructured linkers of varying length. Linkers of up to 10 aa (≤4 nm) completely inhibited Ysp2S2. In contrast, YspS2 was active when the linker was 40 aa (≤15 nm) or longer (Figure 5B). More stringent testing, achieved using a higher concentration of AmB, showed that the 40 aa linker was only partially active, and that Ysp2S2 with linkers of 71 aa (≤27 nm) and 103 aa (≤39 nm) was progressively more active (Figure 5C). This suggests that Ysp2p is only active when its StART-like domain can reach across the ER-PM contact to the other side.
 
-## Elimination of Ysp1p, Ysp2p and Sip3p slows transport of exogenously supplied sterols to the ER
+### Elimination of Ysp1p, Ysp2p and Sip3p slows transport of exogenously supplied sterols to the ER
 
 We have shown that (i) Ysp2p is localized to puncta in the cER, (ii) Ysp2p can bind ergosterol via its StART-like domain, (iii) the function of Ysp2 and related genes can be partially rescued by an evolutionarily distant sterol transfer domain, and (iv) expression of Ysp2p variants can rescue the AmB-sensitivity of ∆ysp2 cells only when the StART-like domain is attached to a linker capable of spanning the ER-PM contact distance. Thus Ysp2p is positioned either to mediate sterol exchange between the ER and PM at a MCS or to act as a sterol-sensor that transmits information on lipid composition/organization between the ER and PM. Although we know less about the other members of the yeast StART-like family, we have established that Sip3p and Ysp1p localize to peripheral ER puncta and have overlapping functions, so we are interested in these other proteins alongside Ysp2p.
 
 First we measured the anterograde transport of ergosterol between the ER and PM (Georgiev et al., 2011). This is a direct transport assay that measures the appearance in the PM of a pulse of radiolabelled ergosterol generated in the ER. We metabolically labeled cells with [3H-methyl]-methionine for 4 min and either stopped the reaction immediately or chased the cells in excess unlabelled methionine for 15 min. At both time points we measured the ratio of radioactive ergosterol to total ergosterol (specific radioactivity, or SR) in purified PM fractions (SRPM) and in unfractionated extracts (SRcell). The amount of newly synthesized sterol in the PM was expressed as the relative specific ratio (RSR) = SRPM: SRcell. At long time points (90 min) RSR typically tends to 1, but even by the end of the pulse, RSR was 0.38 (s.d. 0.035, n = 5) in wild-type cells, which is similar to values achieved previously (Georgiev et al., 2011). RSR increased to 0.61 (s.d. 0.072, n = 5) after 15 min chase. Deletion of YSP2 alone produced no significant change in traffic during the pulse or after the chase (0.33 and 0.63, range for both ±0.032, n = 2). This results rules out that Ysp2p is the sole transporter of sterol between ER and PM. However, because the assay has a rapid first phase (pulse period >t1/2), we cannot determine whether loss of Ysp2p causes a partial defect that would be undetectable in our protocol.
 
-To test for more subtle effects that Ysp2p and homologs might play in sterol transport, we deployed two assays to measure the transport of exogenously supplied sterols (DHE and cholesterol) from the PM to the ER (
+To test for more subtle effects that Ysp2p and homologs might play in sterol transport, we deployed two assays to measure the transport of exogenously supplied sterols (DHE and cholesterol) from the PM to the ER (Georgiev et al., 2011). Both assays require cells to be permissive for sterol uptake, which was achieved for DHE by reversibly inducing hypoxia (Georgiev et al., 2011), and for cholesterol by using upc2-1 strains (Crowley et al., 1998). Key mechanistic steps that generate the eventual read-out of the assays are the insertion of sterol into the PM (requiring the ABC transporters Aus1p and Pdr11p), non-vesicular movement from PM to ER, and esterification at the ER requiring the ACAT enzymes Are1p and Are2p (Figure 6A) (Raychaudhuri et al., 2006).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig6-v2.jpg)
 
-**Figure 6.:** (A) Diagram of retrograde traffic pathway for exogenous sterols. Apart from the hypothesized sterol transfer protein (double headed arrow), other steps include insertion into the PM by ABC transporters Aus1p and Pdr11p, and esterification in the ER by ACAT enzymes Are1p and Are2p prior to storage in lipid droplets (LD). (B) Retrograde traffic of DHE in four single delete strains of the yeast StART-like family were compared to wildtype controls. DHE ester formation was followed by HPLC during redistribution of DHE away from the PM. (C) Retrograde traffic of cholesterol in wildtype and two delete strains (∆ysp2 and ∆sip3) as determined from esterification of cholesterol added exogenously. Strains were created in a WPY361 (upc2-1) background to allow cholesterol uptake.DOI: http://dx.doi.org/10.7554/eLife.07253.019
+**Figure 6.:** (A) Diagram of retrograde traffic pathway for exogenous sterols. Apart from the hypothesized sterol transfer protein (double headed arrow), other steps include insertion into the PM by ABC transporters Aus1p and Pdr11p, and esterification in the ER by ACAT enzymes Are1p and Are2p prior to storage in lipid droplets (LD). (B) Retrograde traffic of DHE in four single delete strains of the yeast StART-like family were compared to wildtype controls. DHE ester formation was followed by HPLC during redistribution of DHE away from the PM. (C) Retrograde traffic of cholesterol in wildtype and two delete strains (∆ysp2 and ∆sip3) as determined from esterification of cholesterol added exogenously. Strains were created in a WPY361 (upc2-1) background to allow cholesterol uptake.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/07253/elife-07253-fig6-figsupp1-v2.jpg)
 
-**Figure 6—figure supplement 1.:** (A) ACAT activity producing sterol esters was measured in microsomes prepared from cell homogenates of the indicated strains over a 20 min period. Activity was marginally increased in ∆ysp1 and ∆sip3 cells. (B) Ergosterol was measured in PM fractions obtained by sucrose gradient centrifugation of lysates from the indicated strains. PM ergosterol was not significantly changed in ∆ysp1, ∆ysp2 and ∆sip3 strains compared to wild-type. (C) The proportion of total cellular sterol that partitions into detergent–insoluble complexes was measured. This was unaltered in ∆ysp1, ∆ysp2 and ∆sip3 strains compared with wild-type cells.DOI: http://dx.doi.org/10.7554/eLife.07253.020
+**Figure 6—figure supplement 1.:** (A) ACAT activity producing sterol esters was measured in microsomes prepared from cell homogenates of the indicated strains over a 20 min period. Activity was marginally increased in ∆ysp1 and ∆sip3 cells. (B) Ergosterol was measured in PM fractions obtained by sucrose gradient centrifugation of lysates from the indicated strains. PM ergosterol was not significantly changed in ∆ysp1, ∆ysp2 and ∆sip3 strains compared to wild-type. (C) The proportion of total cellular sterol that partitions into detergent–insoluble complexes was measured. This was unaltered in ∆ysp1, ∆ysp2 and ∆sip3 strains compared with wild-type cells.
 
 We first assayed the rate of DHE esterification in wild-type cells and single delete strains. DHE was loaded into the PM under hypoxic conditions and transport was initiated by exposing the cells to air. DHE esterification commenced after an initial lag period of 1 hr that was common to all strains tested. The rate of DHE esterification was reduced by ∼40–50% in all of ∆ysp1, ∆ysp2 and ∆sip3 cells, but not affected by ∆lam4, ∆lam5 or ∆lam6 (Figure 6B and data not shown). We next assayed cholesterol import in the upc2-1 strain background. The use of this background avoided the lengthy hypoxic induction used for DHE uptake, and because cholesterol is poorly tolerated in the yeast PM its flux through the import pathway leading to esterification is more rapid than for DHE (Li and Prinz, 2004). Compared with the upc2-1 parental strain, the rate of cholesterol esterification was reduced by 30–35% in both ∆ysp2 and ∆sip3 single deletes (Figure 6C). This indicates that similar defects exist for retrograde traffic of both exogenous sterols we tested.
 
@@ -176,44 +176,386 @@ An important point to make is that we have not yet established how Ysp1p, Ysp2p 
 
 ## Materials and methods
 
-## Chemicals
+### Chemicals
 
 Unless otherwise stated chemicals were obtained from Sigma–Aldrich, UK. Lipids were obtained from: Avanti Polar Lipids, Alabaster, Alabama (cholesterol, DOPE); Lipid Products, UK (PC, PS); MP Biomedicals, Santa Ana, California (ergosterol) and Sigma (DHE).
 
-## Plasmids and strains
+### Plasmids and strains
 
-All plasmids are listed in Table 1. Deletion strains were obtained either from freezer stocks of the yeast deletion collection (BY4741/2, and KanMX) or were made by the PCR method with heterologous markers, as listed in Table 2.10.7554/eLife.07253.021Table 1.Plasmids used in this studyDOI: http://dx.doi.org/10.7554/eLife.07253.021Bacterial expressionConstructs all start: MGGSHHHHHHGMASHHHHHARA His-Ysp2S1+ PVMT + Ysp2 829-1027 + R His-Ysp2S2+ PVMT + Ysp2 1027-1244 + R His-Lam4S1+ M + Lam4 731-938 + DV His-Lam4S2+ M + Lam4 946-1155 + DV His-Lam4S2(G > R)as His-Lam4S2, G1119 > RYeast expressionunless stated pRS series, 405 = integrating LEU2, 406 = integrating URA3, 316 and 416 = CEN URA3; unless stated PHO5 promoter {168} GFP-Ysp2p416: GFP + Ydr326c/Ysp2p ORF [1438], with 2 extra residues to facilitate cloning in five sections: K828 > KT and S1244 > SR GFP-Ysp1p/Sip3p/Lam4p416: GFP + whole ORFs: Yhr155w/Ysp1p [1228], Ynl257c/Sip3p [1229], Yhr080cp/Lam4p [1348] GFP-Lam5/6p*406: GFP + whole ORFs: Yfl042cp/Lam5p M1 > S [674], Ylr072wp/Lam6p M1 > S [693] GFP-Ysp1p/Ysp2p/Sip3p/Lam4p: own promotersas above for GFP-ORF, except replace PHO5 promoter with: YSP1 {951}, YSP2 {459}, SIP3 {360}, LAM4 {701} RFP-ER405: dimeric dsRed tdimer2(12) [464] + RNSKP (linker) + ENESSS•MGIFILVALLILVLGWFY•R = Scs2p 220–244 = linker[6] + TMD[18] + lumen[1] RFP-Tom6pas RFP-ER, but after RNSKP: G + Tom6p [61] RFP-Ysp2p406: dimeric dsRed tdimer2(12) [464] + Ysp2 K828 > KT and S1244 > SR GAL > GFP-Ysp2pas for GFP-Ysp2p, except 406, and replace PHO5 promoter with GAL1 {807} GFP-Ysp2∆N416 YSP2 prom.: GFP + Ysp2 611-1438 GFP-Ysp2∆PH416 YSP2 prom.: GFP + Ysp2 1-610 + 829-1438 GFP-Ysp2∆S1416 YSP2 prom.: GFP + Ysp2 1-828 + T + 1028-1438 GFP-Ysp2∆S2416 YSP2 prom.: GFP + Ysp2 1-1027 + R + 1245-1438 GFP-Ysp2S1S2CT416 YSP2 prom.: GFP + Ysp2 829-1438 GFP-Ysp2S2CT416 YSP2 prom.: GFP + Ysp2 1028-1438 GFP-Ysp2CT416 YSP2 prom.: GFP + Ysp2 1245-1438 GFP-Ysp2∆extremeC416 YSP2 prom.: GFP + Ysp2 1-1319 GFP-Ysp2∆CT416 YSP2 prom.: GFP + Ysp2 1-1246 RFP-Ysp2CTas RFP-ER, but after RNSK: LGSAPVMSR + Ysp2 1245-1438 GFP only416: GFP + GFP GFP-Ysp2S1416: GFP + Ysp2 829-1028 GFP-Ysp2S2416: GFP + Ysp2 1027-1244 + R GFP-Lam4S1416: GFP + Ysp2 759-929 GFP-Lam4S2416: GFP + Lam4 968-1140 GFP-Lam5S416: GFP + Lam5 381-586 + AS GFP-Lam6S416: GFP + myc tag + Lam6 374-582 + DV GFP-GramD1aS416: GFP + GramD1a 359-547 + DV GFP-Ysp2S2sw4416 YSP2 prom.: GFP + Ysp2 1-1044 + Lam4 S953-V1161 + SR + Ysp2 1245-1438 GFP-Ysp2S2sw4G > Ras GFP-Ysp2S2sw4 G1119 > R GFP-StART-MLN64406: TPI1 prom. {412}: GFP + MLN64 216-445 GFP-StART-PCTP406: TPI1 prom.: GFP + PCTP [214] GFP-StART-CERT406: TPI1 prom.: GFP + CERTl 397-624 Ysp2S2-RFP405 YSP2 prom.: M + Ysp2 1022-1244 + 40 aa linker + RFP + 27 aa linker + RFP + HLFLRNSK + final 8aa: LGSQSMFD Ysp2S2-RFP-Vacuoleas Ysp2S2-RFP; final 8 aa → PGASYQ + Nyv1p [253] Ysp2S2-RFP-Mitoas Ysp2S2-RFP; final 8 aa → PG + Tom6p [61] Ysp2S2-RFP-own CTas Ysp2S2-RFP; final 8 aa → LGSAPVMSR + Ysp2 1245-1438 Ysp2S2-RFP-ERas Ysp2S2-RFP; final 8 aa → P + Scs2p 220-244 (see RFP-ER, above) Ysp2S2-RFP-PMas Ysp2S2-RFP; final 8 aa → PGAS + Sso1p [290] Ysp2S2-5aa-ER405 YSP2 prom.: M + Ysp2 1057-1224 + linker SRLE + Scs2 225-244 = linker [1] + TMD[18] + lumen [1] (S•MGIFILVALLILVLGWFY•R). Total linker = 5 aa Ysp2S2-10aa-ERas Ysp2S2-5aa-ER; after SRLE insert extra 5 aa: Scs2 220-224 Ysp2S2-40aa-ERas Ysp2S2-5aa-ER; after SRLE insert extra 35 aa: Scs2 190-224 Ysp2S2-71aa-ERas Ysp2S2-5aa-ER; after SRLE insert extra 66 aa: Scs2 159-224 Ysp2S2-103aa-ERas Ysp2S2-5aa-ER; after SRLE insert extra 98 aa: KL + Scs2 129-224 Pdr11p-GFP†pWP1251. 316: PDR11 prom.: Pdr11p-GFP Aus1p-GFP†pWP1220. 316: AUS1 prom.: Aus1p-GFPCloned regions are from S. cerevisiae (S288c) or human I.M.A.G.E. clones; size of whole proteins/promoters are in brackets, for protein [aa] and DNA {bp}; promoters are regions of genome just prior to open reading frame starts; ranges within proteins are not in brackets; changes in natural residues are written as ‘X123 > Z’; specific amino acid sequences (e.g., linkers) are underlined.Plasmids were received as kind gifts from*Sean Munro.†Will Prinz.10.7554/eLife.07253.022Table 2.Strains used in this studyDOI: http://dx.doi.org/10.7554/eLife.07253.022StrainGenotypeReferenceBY4741(Euroscarf) MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0Euroscarf∆ysp1BY4741 YHR155W::KANMX4Euroscarf∆ysp2BY4741 YDR326C::KANMX4Euroscarf∆sip3BY4741 YNL257C::KANMX4Euroscarf∆lam4BY4741 YHR080C::KANMX4Euroscarf∆lam5BY4741 YFL042C::KANMX4Euroscarf∆lam6BY4741 YLR072W::KANMX4EuroscarfWPY361 (upc2-1)MATa upc2-1 ura3-1 his3-11,-15 leu2-3,-112 trp1-1(Li and Prinz, 2004)Upc2-1 ∆ysp2WPY361 (upc2-1) YDR326C::KanMX4This studyUpc2-1 ∆sip3WPY361 (upc2-1) YNL257C::HYGRORThis studyRS453CMATα ade2-1 his3-11,15 ura3-52 leu2-3112 trp1-1(Levine and Munro, 2001)∆ysp1RS453C YHR155W::HIS5 S.p.This study∆ysp2RS453C YDR326C::HIS5 S.p.This study∆sip3RS453C YNL257C::HIS5 S.p.This study∆lam4RS453C YHR080C::HIS5 S.p.This study∆lam5RS453C YFL042C::HIS5 S.p.This study∆lam6RS453C YLR072W::HIS5 S.p.This studyTcb2-GFPRS453C TCB2-EGFP::HIS5 S.p.This studySEY6210MATa leu2-3,-112 ura3-52 his3Δ200 trp1Δ901 lys2-801 suc2-Δ9 GAL(Manford et al., 2012)ANDY198 (Δtether) *SEY6210 ist2Δ::HISMX6 scs2Δ::TRP1 scs22Δ::HISMX6 tcb1Δ::KANMX4 tcb2Δ::KANMX46 tcb3Δ::HISMX6RSY271 sec18-1†MATa sec18-1 ura3-52 his4-619(Novick et al., 1980)Lnp1-GFP‡SFNY 2092, MAT a, ura3-52, leu2-3,112, his3Δ200, LNP1-3xGFP::URA3(Chen et al., 2012)Kind gifts of strains:*Chris Stefan.†Mike Lewis.‡Susan Ferro-Novick.
+All plasmids are listed in Table 1. Deletion strains were obtained either from freezer stocks of the yeast deletion collection (BY4741/2, and KanMX) or were made by the PCR method with heterologous markers, as listed in Table 2.
 
-## Bioinformatics
+**Table 1.**
+ Plasmids used in this study
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Bacterial expression</td>
+      <td>Constructs all start: MGGSHHHHHHGMASHHHHHARA</td>
+    </tr>
+    <tr>
+      <td>His-Ysp2S1</td>
+      <td>+ PVMT + Ysp2 829-1027 + R</td>
+    </tr>
+    <tr>
+      <td>His-Ysp2S2</td>
+      <td>+ PVMT + Ysp2 1027-1244 + R</td>
+    </tr>
+    <tr>
+      <td>His-Lam4S1</td>
+      <td>+ M + Lam4 731-938 + DV</td>
+    </tr>
+    <tr>
+      <td>His-Lam4S2</td>
+      <td>+ M + Lam4 946-1155 + DV</td>
+    </tr>
+    <tr>
+      <td>His-Lam4S2(G &gt; R)</td>
+      <td>as His-Lam4S2, G1119 &gt; R</td>
+    </tr>
+    <tr>
+      <td>Yeast expression</td>
+      <td>unless stated pRS series, 405 = integrating LEU2, 406 = integrating URA3, 316 and 416 = CEN URA3; unless stated PHO5 promoter {168}</td>
+    </tr>
+    <tr>
+      <td>GFP-Ysp2p</td>
+      <td>416: GFP + Ydr326c/Ysp2p ORF [1438], with 2 extra residues to facilitate cloning in five sections: K828 &gt; KT and S1244 &gt; SR</td>
+    </tr>
+    <tr>
+      <td>GFP-Ysp1p/Sip3p/Lam4p</td>
+      <td>416: GFP + whole ORFs: Yhr155w/Ysp1p [1228], Ynl257c/Sip3p [1229], Yhr080cp/Lam4p [1348]</td>
+    </tr>
+    <tr>
+      <td>GFP-Lam5/6p*</td>
+      <td>406: GFP + whole ORFs: Yfl042cp/Lam5p M1 &gt; S [674], Ylr072wp/Lam6p M1 &gt; S [693]</td>
+    </tr>
+    <tr>
+      <td>GFP-Ysp1p/Ysp2p/Sip3p/Lam4p: own promoters</td>
+      <td>as above for GFP-ORF, except replace PHO5 promoter with: YSP1 {951}, YSP2 {459}, SIP3 {360}, LAM4 {701}</td>
+    </tr>
+    <tr>
+      <td>RFP-ER</td>
+      <td>405: dimeric dsRed tdimer2(12) [464] + RNSKP (linker) + ENESSS•MGIFILVALLILVLGWFY•R = Scs2p 220–244 = linker[6] + TMD[18] + lumen[1]</td>
+    </tr>
+    <tr>
+      <td>RFP-Tom6p</td>
+      <td>as RFP-ER, but after RNSKP: G + Tom6p [61]</td>
+    </tr>
+    <tr>
+      <td>RFP-Ysp2p</td>
+      <td>406: dimeric dsRed tdimer2(12) [464] + Ysp2 K828 &gt; KT and S1244 &gt; SR</td>
+    </tr>
+    <tr>
+      <td>GAL &gt; GFP-Ysp2p</td>
+      <td>as for GFP-Ysp2p, except 406, and replace PHO5 promoter with GAL1 {807}</td>
+    </tr>
+    <tr>
+      <td>GFP-Ysp2∆N</td>
+      <td>416 YSP2 prom.: GFP + Ysp2 611-1438</td>
+    </tr>
+    <tr>
+      <td>GFP-Ysp2∆PH</td>
+      <td>416 YSP2 prom.: GFP + Ysp2 1-610 + 829-1438</td>
+    </tr>
+    <tr>
+      <td>GFP-Ysp2∆S1</td>
+      <td>416 YSP2 prom.: GFP + Ysp2 1-828 + T + 1028-1438</td>
+    </tr>
+    <tr>
+      <td>GFP-Ysp2∆S2</td>
+      <td>416 YSP2 prom.: GFP + Ysp2 1-1027 + R + 1245-1438</td>
+    </tr>
+    <tr>
+      <td>GFP-Ysp2S1S2CT</td>
+      <td>416 YSP2 prom.: GFP + Ysp2 829-1438</td>
+    </tr>
+    <tr>
+      <td>GFP-Ysp2S2CT</td>
+      <td>416 YSP2 prom.: GFP + Ysp2 1028-1438</td>
+    </tr>
+    <tr>
+      <td>GFP-Ysp2CT</td>
+      <td>416 YSP2 prom.: GFP + Ysp2 1245-1438</td>
+    </tr>
+    <tr>
+      <td>GFP-Ysp2∆extremeC</td>
+      <td>416 YSP2 prom.: GFP + Ysp2 1-1319</td>
+    </tr>
+    <tr>
+      <td>GFP-Ysp2∆CT</td>
+      <td>416 YSP2 prom.: GFP + Ysp2 1-1246</td>
+    </tr>
+    <tr>
+      <td>RFP-Ysp2CT</td>
+      <td>as RFP-ER, but after RNSK: LGSAPVMSR + Ysp2 1245-1438</td>
+    </tr>
+    <tr>
+      <td>GFP only</td>
+      <td>416: GFP + GFP</td>
+    </tr>
+    <tr>
+      <td>GFP-Ysp2S1</td>
+      <td>416: GFP + Ysp2 829-1028</td>
+    </tr>
+    <tr>
+      <td>GFP-Ysp2S2</td>
+      <td>416: GFP + Ysp2 1027-1244 + R</td>
+    </tr>
+    <tr>
+      <td>GFP-Lam4S1</td>
+      <td>416: GFP + Ysp2 759-929</td>
+    </tr>
+    <tr>
+      <td>GFP-Lam4S2</td>
+      <td>416: GFP + Lam4 968-1140</td>
+    </tr>
+    <tr>
+      <td>GFP-Lam5S</td>
+      <td>416: GFP + Lam5 381-586 + AS</td>
+    </tr>
+    <tr>
+      <td>GFP-Lam6S</td>
+      <td>416: GFP + myc tag + Lam6 374-582 + DV</td>
+    </tr>
+    <tr>
+      <td>GFP-GramD1aS</td>
+      <td>416: GFP + GramD1a 359-547 + DV</td>
+    </tr>
+    <tr>
+      <td>GFP-Ysp2S2sw4</td>
+      <td>416 YSP2 prom.: GFP + Ysp2 1-1044 + Lam4 S953-V1161 + SR + Ysp2 1245-1438</td>
+    </tr>
+    <tr>
+      <td>GFP-Ysp2S2sw4G &gt; R</td>
+      <td>as GFP-Ysp2S2sw4 G1119 &gt; R</td>
+    </tr>
+    <tr>
+      <td>GFP-StART-MLN64</td>
+      <td>406: TPI1 prom. {412}: GFP + MLN64 216-445</td>
+    </tr>
+    <tr>
+      <td>GFP-StART-PCTP</td>
+      <td>406: TPI1 prom.: GFP + PCTP [214]</td>
+    </tr>
+    <tr>
+      <td>GFP-StART-CERT</td>
+      <td>406: TPI1 prom.: GFP + CERTl 397-624</td>
+    </tr>
+    <tr>
+      <td>Ysp2S2-RFP</td>
+      <td>405 YSP2 prom.: M + Ysp2 1022-1244 + 40 aa linker + RFP + 27 aa linker + RFP + HLFLRNSK + final 8aa: LGSQSMFD</td>
+    </tr>
+    <tr>
+      <td>Ysp2S2-RFP-Vacuole</td>
+      <td>as Ysp2S2-RFP; final 8 aa → PGASYQ + Nyv1p [253]</td>
+    </tr>
+    <tr>
+      <td>Ysp2S2-RFP-Mito</td>
+      <td>as Ysp2S2-RFP; final 8 aa → PG + Tom6p [61]</td>
+    </tr>
+    <tr>
+      <td>Ysp2S2-RFP-own CT</td>
+      <td>as Ysp2S2-RFP; final 8 aa → LGSAPVMSR + Ysp2 1245-1438</td>
+    </tr>
+    <tr>
+      <td>Ysp2S2-RFP-ER</td>
+      <td>as Ysp2S2-RFP; final 8 aa → P + Scs2p 220-244 (see RFP-ER, above)</td>
+    </tr>
+    <tr>
+      <td>Ysp2S2-RFP-PM</td>
+      <td>as Ysp2S2-RFP; final 8 aa → PGAS + Sso1p [290]</td>
+    </tr>
+    <tr>
+      <td>Ysp2S2-5aa-ER</td>
+      <td>405 YSP2 prom.: M + Ysp2 1057-1224 + linker SRLE + Scs2 225-244 = linker [1] + TMD[18] + lumen [1] (S•MGIFILVALLILVLGWFY•R). Total linker = 5 aa</td>
+    </tr>
+    <tr>
+      <td>Ysp2S2-10aa-ER</td>
+      <td>as Ysp2S2-5aa-ER; after SRLE insert extra 5 aa: Scs2 220-224</td>
+    </tr>
+    <tr>
+      <td>Ysp2S2-40aa-ER</td>
+      <td>as Ysp2S2-5aa-ER; after SRLE insert extra 35 aa: Scs2 190-224</td>
+    </tr>
+    <tr>
+      <td>Ysp2S2-71aa-ER</td>
+      <td>as Ysp2S2-5aa-ER; after SRLE insert extra 66 aa: Scs2 159-224</td>
+    </tr>
+    <tr>
+      <td>Ysp2S2-103aa-ER</td>
+      <td>as Ysp2S2-5aa-ER; after SRLE insert extra 98 aa: KL + Scs2 129-224</td>
+    </tr>
+    <tr>
+      <td>Pdr11p-GFP†</td>
+      <td>pWP1251. 316: PDR11 prom.: Pdr11p-GFP</td>
+    </tr>
+    <tr>
+      <td>Aus1p-GFP†</td>
+      <td>pWP1220. 316: AUS1 prom.: Aus1p-GFP</td>
+    </tr>
+  </tbody>
+</table>
+
+_Cloned regions are from S. cerevisiae (S288c) or human I.M.A.G.E. clones; size of whole proteins/promoters are in brackets, for protein [aa] and DNA {bp}; promoters are regions of genome just prior to open reading frame starts; ranges within proteins are not in brackets; changes in natural residues are written as ‘X123 > Z’; specific amino acid sequences (e.g., linkers) are underlined.Plasmids were received as kind gifts from*Sean Munro.†Will Prinz._
+
+**Table 2.**
+ Strains used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Genotype</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BY4741</td>
+      <td>(Euroscarf) MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0</td>
+      <td>Euroscarf</td>
+    </tr>
+    <tr>
+      <td>∆ysp1</td>
+      <td>BY4741 YHR155W::KANMX4</td>
+      <td>Euroscarf</td>
+    </tr>
+    <tr>
+      <td>∆ysp2</td>
+      <td>BY4741 YDR326C::KANMX4</td>
+      <td>Euroscarf</td>
+    </tr>
+    <tr>
+      <td>∆sip3</td>
+      <td>BY4741 YNL257C::KANMX4</td>
+      <td>Euroscarf</td>
+    </tr>
+    <tr>
+      <td>∆lam4</td>
+      <td>BY4741 YHR080C::KANMX4</td>
+      <td>Euroscarf</td>
+    </tr>
+    <tr>
+      <td>∆lam5</td>
+      <td>BY4741 YFL042C::KANMX4</td>
+      <td>Euroscarf</td>
+    </tr>
+    <tr>
+      <td>∆lam6</td>
+      <td>BY4741 YLR072W::KANMX4</td>
+      <td>Euroscarf</td>
+    </tr>
+    <tr>
+      <td>WPY361 (upc2-1)</td>
+      <td>MATa upc2-1 ura3-1 his3-11,-15 leu2-3,-112 trp1-1</td>
+      <td>(Li and Prinz, 2004)</td>
+    </tr>
+    <tr>
+      <td>Upc2-1 ∆ysp2</td>
+      <td>WPY361 (upc2-1) YDR326C::KanMX4</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Upc2-1 ∆sip3</td>
+      <td>WPY361 (upc2-1) YNL257C::HYGROR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>RS453C</td>
+      <td>MATα ade2-1 his3-11,15 ura3-52 leu2-3112 trp1-1</td>
+      <td>(Levine and Munro, 2001)</td>
+    </tr>
+    <tr>
+      <td>∆ysp1</td>
+      <td>RS453C YHR155W::HIS5 S.p.</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>∆ysp2</td>
+      <td>RS453C YDR326C::HIS5 S.p.</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>∆sip3</td>
+      <td>RS453C YNL257C::HIS5 S.p.</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>∆lam4</td>
+      <td>RS453C YHR080C::HIS5 S.p.</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>∆lam5</td>
+      <td>RS453C YFL042C::HIS5 S.p.</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>∆lam6</td>
+      <td>RS453C YLR072W::HIS5 S.p.</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Tcb2-GFP</td>
+      <td>RS453C TCB2-EGFP::HIS5 S.p.</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>SEY6210</td>
+      <td>MATa leu2-3,-112 ura3-52 his3Δ200 trp1Δ901 lys2-801 suc2-Δ9 GAL</td>
+      <td rowspan="2">(Manford et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>ANDY198 (Δtether) *</td>
+      <td>SEY6210 ist2Δ::HISMX6 scs2Δ::TRP1 scs22Δ::HISMX6 tcb1Δ::KANMX4 tcb2Δ::KANMX46 tcb3Δ::HISMX6</td>
+    </tr>
+    <tr>
+      <td>RSY271 sec18-1†</td>
+      <td>MATa sec18-1 ura3-52 his4-619</td>
+      <td>(Novick et al., 1980)</td>
+    </tr>
+    <tr>
+      <td>Lnp1-GFP‡</td>
+      <td>SFNY 2092, MAT a, ura3-52, leu2-3,112, his3Δ200, LNP1-3xGFP::URA3</td>
+      <td>(Chen et al., 2012)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Kind gifts of strains:*Chris Stefan.†Mike Lewis.‡Susan Ferro-Novick._
+
+### Bioinformatics
 
 HHpred (at toolkit.tuebingen.mpg.de) was used online and seeded with sequences of StART domains only (170–210 aa) using HHblits and with maximum accuracy alignment on. HHblits was used with the following settings: 8 rounds, E-value threshold for inclusion = 0.01 (Remmert et al., 2012). For the alignment with StARTs, sequences aligned by HHpred seeded with Ysp4S2 were exported into JalView, and edited by hand to eliminate redundant and incomplete sequences and add the sequence of GramD1b, which is missing from the database. For tree drawing, 888 StART-like sequences were reduced to 143 using a non-redundancy filter (PISCES at dunbrack.fccc.edu/) and then the best tree inferred with PHYML (http://www.trex.uqam.ca/) (Guindon and Gascuel, 2003). For structural modelling, the sequence of Lam4S2 was submitted to SAM-T08 (Karplus, 2009).
 
 Joint sensitivity of strains to AmB and nystatin was obtained by rank ordering the 4130 deletants that were tested with both drugs by Hillenmeyer et al. (2008) according to the sensitivities to the two different drugs (data downloaded from Yeast Fitness Database at http://chemogenomics.pharmacy.ubc.ca/fitdb/fitdb2.cgi).
 
-## Lipid binding in HL60 cells
+### Lipid binding in HL60 cells
 
 Binding to cellular lipids was carried out as described (Holic et al., 2014). In summary, 107 HL60 cells were labelled with 1 µCi/ml [14C]-acetate and then permeabilized with Streptolysin-O, prior to incubation with 200 µg of the indicated His-tagged proteins at 37°C for 20 min, recapture of proteins on nickel beads, and then extraction of total lipids. Lipids were resolved by thin layer chromatography on a Whatman Silica Gel 60 TLC plate developed using chloroform:methanol:acetic acid:water 75:45:3:1 (vol/vol). The chromatogram was imaged using a Fuji PhosphorImager screen. Bands that migrated near the solvent front were scraped and re-chromatographed using hexane:diethylether:acetic acid 155:45:2 (vol/vol). For data analysis in ImageJ, background was estimated from the adjacent negative control lane loaded with repurified GFP-PHOSBP.
 
-## Protein expression and purification
+### Protein expression and purification
 
 Polyhistidine tagged proteins were expressed on plasmids based on pTrcHis (Life Technologies) in BL21(DE3) Escherichia coli, which were induced at 37°C with 0.2 mM IPTG for 6 hr. After lysis in 25 mM TrisHCl pH 8.0, 300 mM NaCl, 5 mM imidazole, 1× complete EDTA-free protease inhibitor cocktail (Roche) and clearing by centrifugation, lysate was loaded onto Ni-NTA agarose beads and washed repeatedly before eluting with the same buffer with 300 mM imidazole. Eluted protein was desalted into 20 mM PIPES, 137 mM NaCl, 3 mM KCl, pH 6.8 and evaluated by Coomassie staining of SDS-PAGE gels. All preparations were >95% pure.
 
-## Tryptophan/DHE FRET
+### Tryptophan/DHE FRET
 
 For binding to DHE alone, lipid was pre-incubated with fivefold molar excess of methyl β-cyclodextrin prior to mixing with protein. For competitive binding between DHE and other sterols, lipids (3 µM) were mixed together in methanol and added to protein (2 µM), with a final methanol concentration of 0.2%. Titration of DHE binding to Lam4S2 (WT and G1119R, 1.1 µM) was carried out by incubation with 100 nm diameter liposomes composed of 40% PC, 20% DOPE, 10% PS and 30% DHE. In all cases protein was incubated with lipids for up to 30 min and fluorescence measured with excitation of 295 nm (slit 5 nm). The FRET response was calculated after deducting DHE alone background, as the ratio between the DHE emission peak (373 nm) and the tryptophan emission peak (340 nm). Curve fitting was carried out using Prism software.
 
-## Microscopy
+### Microscopy
 
 Cells were grown at 30°C to mid log phase in synthetic medium +2% dextrose containing the appropriate amino acids and bases for plasmid maintenance. Live cells were immobilized between slide and coverslip, and visualized on a confocal microscope (either Leica AOBS SP2 or Zeiss LSM 700) at room temperature. Two color images were obtained using line-by-line switching, and single labelled cells with full range of GFP/RFP expression were used to ensure lack of bleed through between channels.
 
-## Growth assay
+### Growth assay
 
 Sensitivity to AmB was determined by spotting yeast from log-phase cultures at 20-fold dilutions (e.g., 2000/100/5 cells per spot) on freshly made up plates with AmB added from a 250 µg/ml stock. Final concentrations of AmB were higher for yeast peptone medium (range 125–500 ng/ml) than synthetic defined medium (range 63–250 ng/ml), with BY4741-derived strains sensitive at the top of these ranges and RS453–derived strains at lower concentrations. Growth was for 48–72 hr at 30°C.
 
-## Sterol transport assays
+### Sterol transport assays
 
 Procedures for hypoxic incubation of yeast cells, quantification of DHE, DHE esters and ergosterol by reversed phase HPLC, quantification of radiolabeled cholesterol and cholesteryl esters by TLC, and sucrose gradient fractionation to measure transport of ergosterol from the ER to the PM were carried out as described previously (Georgiev et al., 2011) with the following modifications. For assays of the retrograde transport of DHE, cells were inoculated at OD600 = 0.005 and incubated in a hypoxic chamber for 36 hr prior to initiating the aerobic chase. For anterograde transport of [3H]-ergosterol, the breaking buffer (Georgiev et al., 2011) additionally contained 10% (wt/vol) sucrose.
 
-## Other assays
+### Other assays
 
 ACAT assays and isolation of detergent–insoluble complexes was carried out as described previously (Georgiev et al., 2011).

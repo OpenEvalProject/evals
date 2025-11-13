@@ -13,7 +13,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00zat6v61 Department of Obstetrics and Gynecology, Obstetrics; Guangdong Provincial Key Laboratory of Major Obstetric Diseases; Guangdong Provincial Clinical Research Center for Obstetrics and Gynecology; Guangdong-Hong Kong-Macao Greater Bay Area Higher Education Joint Laboratory of Maternal-Fetal Medicine; The Third Affiliated Hospital, Guangzhou Medical University Guangzhou China
+1. Department of Obstetrics and Gynecology, Obstetrics; Guangdong Provincial Key Laboratory of Major Obstetric Diseases; Guangdong Provincial Clinical Research Center for Obstetrics and Gynecology; Guangdong-Hong Kong-Macao Greater Bay Area Higher Education Joint Laboratory of Maternal-Fetal Medicine; The Third Affiliated Hospital, Guangzhou Medical University Guangzhou China ([ROR:00zat6v61](https://ror.org/00zat6v61))
 
 † Corresponding author
 
@@ -31,19 +31,260 @@ Recent GWASs have highlighted the pivotal role of the ACVR2A gene in the develop
 
 ## Results
 
-## Downregulated expression of ACVR2A in PE tissues reveals a significant correlation
+### Downregulated expression of ACVR2A in PE tissues reveals a significant correlation
 
 Several studies have established significant correlations between ACVR2A gene polymorphisms and the susceptibility to PE in different populations. Table 1 summarizes the key findings from these studies, highlighting the associations between various SNPs in the ACVR2A gene and the incidence of PE. These correlations suggest that genetic variations in ACVR2A may play a crucial role in the pathogenesis of PE.
+
+**Table 1.**
+ ACVR2A gene polymorphisms and pre-eclampsia risk summary.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study participants</th>
+      <th>Associated SNPs</th>
+      <th>p-value</th>
+      <th>OR</th>
+      <th>Nature of variant (s)</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">150 PE cases and 175 controls;Philippine women</td>
+      <td>rs1014064</td>
+      <td>0.556</td>
+      <td>0.8699</td>
+      <td>Intronic</td>
+      <td rowspan="3">Amosco et al., 2019</td>
+    </tr>
+    <tr>
+      <td>rs2161983</td>
+      <td>0.4717</td>
+      <td>0.8921</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>Rs1014064, Age, BMI</td>
+      <td>0.005</td>
+      <td></td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td rowspan="4">443 PE cases and 693 controls; Brazil women; association with early-onset pre-eclampsia found after grouping in accordance to gestational age at delivery</td>
+      <td>rs1424954</td>
+      <td>0.002</td>
+      <td>1.86</td>
+      <td>Promoter region</td>
+      <td rowspan="4">Ferreira et al., 2015</td>
+    </tr>
+    <tr>
+      <td>rs1014064</td>
+      <td>0.004</td>
+      <td>1.77</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>rs2161983</td>
+      <td>0.008</td>
+      <td>1.70</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>rs3768687</td>
+      <td>0.039</td>
+      <td>1.52</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td rowspan="5">176 PE cases, 20 eclampsia and 90 controls; Australian/New Zealand women</td>
+      <td>rs10497025</td>
+      <td>0.025</td>
+      <td></td>
+      <td>Intronic</td>
+      <td rowspan="5">Fitzpatrick et al., 2009</td>
+    </tr>
+    <tr>
+      <td>rs13430086</td>
+      <td>0.010</td>
+      <td></td>
+      <td>3′UTR</td>
+    </tr>
+    <tr>
+      <td>LF004</td>
+      <td>0.018</td>
+      <td></td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>LF013</td>
+      <td>0.018</td>
+      <td></td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>LF020</td>
+      <td>0.018</td>
+      <td></td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td rowspan="6">1139 PE cases and 2269 controls;Norwegian women</td>
+      <td>rs1014064</td>
+      <td>0.0184</td>
+      <td>0.86</td>
+      <td>Intronic</td>
+      <td rowspan="6">Roten et al., 2009</td>
+    </tr>
+    <tr>
+      <td>rs17742134</td>
+      <td>0.0214</td>
+      <td>1.17</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>rs1424941</td>
+      <td>0.0171</td>
+      <td>1.18</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>rs2161983</td>
+      <td>0.0196</td>
+      <td>0.86</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>rs3768687</td>
+      <td>0.0214</td>
+      <td>0.86</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>rs3764955</td>
+      <td>0.0327</td>
+      <td>0.87</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td rowspan="3">121 PE cases and 71 controls;Australian/New Zealand women</td>
+      <td>rs1424954</td>
+      <td>0.007</td>
+      <td></td>
+      <td>Promoter region</td>
+      <td rowspan="3">Moses et al., 2006</td>
+    </tr>
+    <tr>
+      <td>rs1364658</td>
+      <td>0.04</td>
+      <td></td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>rs1895694</td>
+      <td>0.05</td>
+      <td></td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td rowspan="6">140 PE cases and 380 controls;Northern Chinese women</td>
+      <td>rs1424954</td>
+      <td>0.013</td>
+      <td>0.687</td>
+      <td>Promoter region</td>
+      <td rowspan="6">Yanan et al., 2020</td>
+    </tr>
+    <tr>
+      <td>rs1014064</td>
+      <td>0.016</td>
+      <td>0.693</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>rs1128919</td>
+      <td>0.018</td>
+      <td>0.536</td>
+      <td>Synonymous</td>
+    </tr>
+    <tr>
+      <td>rs3768687</td>
+      <td>0.019</td>
+      <td>0.701</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>rs3764955</td>
+      <td>0.024</td>
+      <td>1.784</td>
+      <td>Intronic</td>
+    </tr>
+    <tr>
+      <td>rs13430086</td>
+      <td>0.029</td>
+      <td>0.729</td>
+      <td>3′UTR</td>
+    </tr>
+    <tr>
+      <td rowspan="3">94 PE cases and 116 controls;Turkish women</td>
+      <td>rs1128919</td>
+      <td>0.02</td>
+      <td>0.44</td>
+      <td>Synonymous</td>
+      <td rowspan="3">Zeybek et al., 2013</td>
+    </tr>
+    <tr>
+      <td>rs13430086</td>
+      <td>0.02</td>
+      <td>0.28</td>
+      <td>3′UTR</td>
+    </tr>
+    <tr>
+      <td>rs10497025</td>
+      <td>0.025</td>
+      <td>0.010</td>
+      <td>Intronic</td>
+    </tr>
+  </tbody>
+</table>
 
 These findings underscore the significance of ACVR2A gene variants in the initiation of PE. In this study, placental samples were obtained from 40 patients, and the detailed clinical attributes are presented in Supplementary file 1. No significant differences in age and pre-pregnancy BMI were observed between the PE group and the normal control (NC) group (p > 0.05). However, the average birth weight of infants delivered by mothers in the PE group was markedly lower than that in the control group (p < 0.05).
 
 Analysis of transcriptome data from a public database (GSE114691) confirmed a marked reduction in ACVR2A expression in the PE group, consistent with its potential involvement in impaired placental function (Figure 1A). Figure 1B shows a heatmap of differentially expressed genes, with a focus on those enriched in the WNT signaling pathway. These genes were identified based on significant differential expression and pathway enrichment analyses using KEGG and Gene Set Enrichment Analysis (GSEA).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/101236/elife-101236-fig1-v1.jpg)
+
+**Figure 1.:** (A) Comparison of the RNA-seq volcano maps of all genes in the placenta of normal control (NC) and patients with PE evidently showed that the expression of the ACVR2A gene significantly decreased in patients with PE. (B) Heatmap of differentially expressed genes in PE versus control placental samples. Genes were selected based on significant differential expression (false discovery rate [FDR] <0.05, |log2(fold change)| ≥1) and their involvement in the WNT signaling pathway, as determined through KEGG and GSEA analyses. ACVR2A is highlighted alongside other genes of interest to illustrate its association with the molecular landscape of PE. (C) Western blot analysis demonstrated reduced levels of ACVR2A in PE placental tissue (n = 20) compared with control placentas. (D) RT-qPCR was employed to assess the ACVR2A mRNA expression in placental tissues of NC (n = 10) and patients with PE (n = 10). (E) Immunohistochemical staining was conducted using rabbit IgG anti-human ACVR2A antibody on sections from NC and PE placentas. Sections were counterstained with hematoxylin. The ACVR2A levels were markedly lower in patients with PE (n = 10) than in NC. (F) Immunofluorescence co-localization of rabbit IgG anti-human ACVR2A antibodies and HLA-G antibodies (a marker of extrachorionic trophoblastic cells) was performed in NC and PE maternal placenta. The expression pattern of the ACVR2A antibody closely resembles that of the HLA-G antibody, primarily expressed in extravillous trophoblast (EVT) cells (****p < 0.0001 compared with NC group).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101236/elife-101236-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Western blot analysis demonstrated reduced levels of ACVR2A in pre-eclampsia placental tissue (n = 20) compared to control placentas. (B) Immunohistochemical staining using rabbit IgG anti-human ACVR2A antibody on sections from normal control pregnant women and pre-eclampsia placentas. Sections were counterstained with hematoxylin. ACVR2A levels were markedly lower in patients with pre-eclampsia (n = 10) compared to normal control subjects (****p < 0.0001 compared with NC group).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/101236/elife-101236-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Immunofluorescence co-localization of rabbit IgG anti-human ACVR2A antibodies and HLA-G antibodies (a marker of extrachorionic trophoblastic cells) in normal control and pre-eclampsia maternal placenta. The expression pattern of the ACVR2A antibody closely resembles that of the HLA-G antibody, primarily expressed in extravillous trophoblast (EVT) cells.
+
 Western blot and RT-PCR analyses validated these findings, showing significantly reduced ACVR2A protein and mRNA levels in PE placental samples compared to controls (p < 0.001, Figure 1C, D, Figure 1—figure supplement 1A). Immunohistochemical (IHC) staining revealed lower signal intensity of ACVR2A in PE placentas compared to NC placentas, with positive staining observed in both extravillous trophoblasts (EVTs) and syncytiotrophoblasts. In Figure 1E, EVTs are indicated with arrows in the higher magnification image to improve clarity, and additional examples are provided in Figure 1—figure supplement 1. Experimental evidence has indicated predominant expression of HLA-G in trophoblast cells of EVTs, a critical site at the maternal–fetal interface, where trophoblast cells closely interact with the maternal uterine wall (Ferreira et al., 2017). Consequently, immunofluorescence focused on the placental maternal surface, with concurrent staining for ACVR2A and HLA-G. Immunofluorescence analysis revealed a diminished signal of ACVR2A in PE placentas compared to NC placentas, with predominant expression observed in trophoblast cells (Figure 1F, Figure 1—figure supplement 2). To provide additional context, lower magnification images showing the location of the anchoring villi are included in Figure 1—figure supplement 2, while Figure 1F highlights ACVR2A staining in EVTs at higher magnification to better visualize its expression patterns. ACVR2A was primarily localized to the cell surface, consistent with its role as a membrane receptor.
 
-## Precision genome surgery: ACVR2A knockout via CRISPR/Cas9
+### Precision genome surgery: ACVR2A knockout via CRISPR/Cas9
 
 Preliminary experiments confirmed the expression of ACVR2A in trophoblast cells. The expression of ACVR2A in trophoblast cells was verified through RT-qPCR conducted in our laboratory, as shown in Figure 2A. Data from NCBI and the Human Protein Atlas were used to support our findings and provide broader context regarding ACVR2A expression patterns across different cell types. The mRNA levels were analyzed using RT-PCR in various cell types, including HTR8/SVneo, JAR, HCoEpiC (human normal colon epithelial cells), 293 human embryonic kidney cells, MEG-01 (human megakaroblastic leukemia cells), Huh-7 (human liver cancer cells), NCI-H358 (human non-small cell lung cancer cells), HaCaT (human immortal epidermal cells), induced pluripotent stem (iPS) cells, A427 (human lung cancer cells), and A549 (human non-small cell lung cancer cells), to understand the expression of ACVR2A in different cell lines. In Figure 2A, the mRNA levels of 293 and iPS cells were lower than those of the other cell lines, whereas the mRNA expression levels of HTR8/SVneo and JAR cells resembled those of other cancer cells. Notably, the mRNA expression of JAR cells was significantly higher than that of the other cancer cell lines.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/101236/elife-101236-fig2-v1.jpg)
+
+**Figure 2.:** (A) RT-qPCR was employed to assess the ACVR2A mRNA expression across various cell lines. The expression of ACVR2A in HTR8/SVneo and JAR was comparable to that in multiple cancer cell lines, with JAR exhibiting a higher ACVR2A expression. (B) DNA sequence of ACVR2A and target sequence site information of sgRNA-1 and sgRNA-2. (C) The knockout efficiency of the ACVR2A gene in HTR8/SVneo and JAR cell lines was assessed through polymeric primer PCR, confirmed by agarose gel electrophoresis, and reconfirmed through four rounds of monoclonal cell communities. The specific experimental results are shown in Figure 2—figure supplement 1. (D) The ACVR2A mRNA levels were measured in HTR8/SVneo and JAR cell lines, and the normal control group was compared with the two ACVR2A-KO cell lines after three rounds of validation . (E) Western blot analysis showing ACVR2A protein levels in wild-type (WT) and knockout (KO) HTR8/SVneo and JAR cell lines. The ACVR2A protein is significantly absent in KO cell lines compared to WT, confirming successful knockout of the ACVR2A gene. (F) Sanger sequencing confirmed the expression of ACVR2A in ACVR2A-KO monoclonal cell lines and successfully knocked out the DNA fragment between the ACVR2A gene sgRNA-1 and sgRNA-2. The specific experimental results are shown in Figure 2—figure supplements 2 and 3.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101236/elife-101236-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Identification of the first batch of ACVR2A gene knockout monoclonal cell lines in the HTR8/SVneo cell line. (B) Identification of the first batch of ACVR2A gene knockout monoclonal cell lines in the JAR cell line. (C) Identification of the second batch of ACVR2A gene knockout monoclonal cell lines in the HTR8/SVneo cell line. (D) Identification of the second batch of ACVR2A gene knockout monoclonal cell lines in the JAR cell line. (E) Identification of the third batch of ACVR2A gene knockout monoclonal cell lines in the HTR8/SVneo cell line. (F) Identification of the third batch of ACVR2A gene knockout monoclonal cell lines in the JAR cell line. (G) Identification of the fourth batch of ACVR2A gene knockout monoclonal cell lines in the HTR8/SVneo cell line. (H) Identification of the fourth batch of ACVR2A gene knockout monoclonal cell lines in the JAR cell line.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/101236/elife-101236-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The Sanger sequencing technique was employed to validate the successful knockout (KO) of the ACVR2A gene in these specific trophoblast cell lines. Each lane corresponds to a distinct monoclonal cell line: HTR8/SVneo wild type (A), HTR8/SVneo KO-1 (B), HTR8/SVneo KO-2 (C), and HTR8/SVneo KO-3 (D). The electropherograms provide a visual representation of the DNA fragments, confirming the precise and targeted deletion of the ACVR2A gene in the knockout cell lines. The distinct peaks and patterns in the electropherograms indicate the specific alterations made during the gene editing process. These sequencing results validate the efficacy of CRISPR/Cas9-mediated ACVR2A gene knockout in the HTR8/Svneo trophoblast cell lines.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/101236/elife-101236-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Each lane corresponds to a specific monoclonal cell line: JAR wild type (A), JAR KO-1 (B), JAR KO-2 (C), and JAR KO-3 (D). The electropherograms capture the unique DNA fragment patterns generated during the gene editing process, confirming the successful deletion of the ACVR2A gene in the knockout cell lines. The distinctive peaks and sequences in the electropherograms offer a visual validation of the precision and accuracy of the CRISPR/Cas9 gene editing technique in inducing targeted genetic changes. These sequencing results serve as a crucial verification step, establishing the reliability of the JAR-ACVR2A-KO monoclonal cell lines for subsequent investigations into the functional implications of ACVR2A in trophoblast cells and its potential relevance to conditions such as pre-eclampsia.
 
 We hypothesized a potential association between ACVR2A expression and trophoblast cell behavior. To test this, we compared ACVR2A mRNA expression levels across various cell lines, including trophoblast-derived (HTR8/SVneo, JAR) and non-trophoblast cell lines (e.g., A549, Huh7). As shown in Figure 2A, ACVR2A expression was significantly higher in trophoblast-derived cell lines, particularly in JAR cells, highlighting its potential role in trophoblast-specific functions such as invasion and migration. In addition, ACVR2A expression in placental tissues from PE patients and normotensive controls showed a marked reduction in PE placentas. Together, these findings underscore the importance of ACVR2A in trophoblast behavior and its potential contribution to PE pathogenesis.
 
@@ -53,7 +294,7 @@ JAR cell lines derived from placental tissue exhibited heightened sensitivity to
 
 We employed CRISPR/Cas9 technology to delete the ACVR2A gene in HTR8/SVneo and JAR cell lines. The successful knockout was confirmed through Sanger sequencing, DNA agarose gel electrophoresis, and RT-PCR. This allowed us to investigate the effect of ACVR2A deletion on trophoblast cell behavior (Jinek et al., 2012). By employing the CRISPR/Cas9 conditional knockout system, two single-guide RNAs (sgRNAs) were designed to induce the knockout of the ACVR2A gene in two cell lines through electroporation (Figure 2B). The genotypic fragment resulting from the double sgRNA knockout was 775 bp, and the genotypic fragment of the wild type (WT) measured 1750 bp (Figure 2—figure supplement 1). To establish ACVR2A double-knockout cell lines, CRISPR/Cas9 genome editing was performed, followed by monoclonal culture and rigorous screening. Genotyping through PCR amplification and sequencing confirmed the successful incorporation of indels at the ACVR2A target loci, identifying specific monoclonal clones with double-allele mutations. RT-qPCR and western blotting further validated the absence of ACVR2A expression at both transcript and protein levels in these clones, confirming the successful establishment of ACVR2A double-knockout monoclonal cell lines for downstream functional studies (Figure 2C–E, p < 0.001). Subsequent Sanger sequencing confirmed this outcome, revealing the successful knockout of the gene segment between the two sgRNAs (Figure 2F, Figure 2—figure supplements 2 and 3). These experiments helped further investigate the complex process of ACVR2A’s involvement in trophoblast function and reveal its potential regulatory role in trophoblast proliferation and invasion. The use of advanced gene manipulation techniques, such as CRISPR/Cas9, ensured the accuracy and validity of the experimental approach, ensuring the successful deletion of ACVR2A in the target cell line. This provides a foundation for further study of the downstream effects and molecular mechanisms of ACVR2A on trophoblastic function.
 
-## ACVR2A knockout diminishes in vitro cell migration and invasion
+### ACVR2A knockout diminishes in vitro cell migration and invasion
 
 Cells at the periphery of the scratch could progressively migrate into the void, facilitating the healing of the scratch. The knockout of ACVR2A markedly impeded the migration of HTR8/SVneo and JAR cells in comparison to NCs (p < 0.001, Figure 3A). As illustrated in Figure 3B, the ACVR2A gene knockout markedly suppressed the proliferation rate of HTR8/SVneo cells and JAR cells in comparison to NC (p < 0.001, Figure 3B). Transwell invasion assays further demonstrated reduced invasive capabilities (p < 0.001, Figure 3C). Colony formation assays revealed a significant decrease in clonogenicity in ACVR2A knockout cells (p < 0.001, Figure 3D). The experiments established that ACVR2A plays a crucial role in regulating fundamental cell functions, and its knockout markedly hinders cell migration, proliferation, invasion, and clonal formation. The results hold important implications for comprehending the role of ACVR2A in cellular biology and the development of diseases.
 
@@ -61,7 +302,7 @@ Cells at the periphery of the scratch could progressively migrate into the void,
 
 **Figure 3.:** (A) Cell scratch assay was conducted in a 6-well plate to assess alterations in the migration ability of HTR8/SVneo and JAR cells following ACVR2A gene knockout. Three visual fields were randomly selected under a 100×microscope for continuous observation, calculation, and difference analysis. Scale bar: 100 µm. (B) CCK-8 method was employed to assess the proliferation of HTR8/SVneo and JAR cells after ACVR2A gene knockout. (C) Cell invasion was quantified by counting cells in five randomly selected fields of view at ×300 magnification. Images shown in the figure were captured at lower magnification (×100) to provide an overview of the experimental and control groups. Scale bar: 200 µm. (D) Colony formation was detected by single-cell clone assay. Colony formation assay conducted in a 6-well plate to assess changes in the individual cell proliferation capacity of HTR8/SVneo and JAR cells following ACVR2A gene knockout. Colony formation assays were repeated independently at least 10 times to ensure reproducibility. The results are expressed as the mean ± SD of these replicate experiments (*p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001 compared with normal control group).
 
-## RNA-seq unveils ACVR2A-mediated regulation of trophoblast cell migration and invasion via Wnt pathway
+### RNA-seq unveils ACVR2A-mediated regulation of trophoblast cell migration and invasion via Wnt pathway
 
 Transcriptome sequencing, also known as RNA-seq, is the latest sequencing technology for comprehensive and rapid transcriptome analysis, providing gene sequence and transcriptomic data for specific cells or tissues of a given species. ACVR2A has been shown to regulate the expression of numerous genes in its proximity. Comprehensive RNA sequencing was performed on both ACVR2A knockout (ACVR2A-KO) and WT cells to uncover the intricate mechanisms through which ACVR2A regulates HTR8/SVneo and JAR cell function. In the JAR knockout group, the deletion of ACVR2A led to the upregulation of 144 genes and the downregulation of 240 genes. By contrast, in the HTR8/SVneo cells, 99 genes were upregulated, and 73 genes were downregulated (Figures 4A and 5A). GSEA is a computational approach that facilitates the evaluation of the enrichment of predefined gene sets within a sequenced gene list. GSEA serves as a powerful tool that aids researchers in gaining profound insights into genomic data and elucidating crucial genes and pathways involved in biological processes.
 
@@ -75,7 +316,7 @@ Transcriptome sequencing, also known as RNA-seq, is the latest sequencing techno
 
 GSEA was employed to elucidate the effect of ACVR2A gene knockout on critical genes and biological pathways in cellular systems, and the canonical pathways from the Cancer Genome Project (CGP) database were investigated. The results suggested modifications in several biological pathways. Information from the KEGG website was integrated with the analysis data of this study, uncovering substantial variations in the Wnt signaling pathway. In JAR cells, the NES value was −1.67, with a p-value of 1.03E−04, whereas in HTR8/SVneo cells, the NES value was −1.45, with a p-value of 0.6E−02 (Figures 4B and 5B). Dotplot and centplot visualizations were created, highlighting the connections among at least 10 pathways associated with cell migration and invasion (Figures 4C and 5C). These plots provide insights into the critical genes and biological pathways that ACVR2A may regulate in cellular processes. Detailed gene analysis of specific, related biological pathways is presented in Figures 4D and 5D. Additionally, Figures 4E and 5E visually represent the differentially expressed genes within the Wnt signaling pathway.
 
-## ACVR2A regulates the migration and invasion of trophoblast cells through TCF7/c-JUN pathway
+### ACVR2A regulates the migration and invasion of trophoblast cells through TCF7/c-JUN pathway
 
 Previous experiments have confirmed the pivotal role of ACVR2A in regulating the fundamental functions of trophoblast cells. Knocking out ACVR2A significantly hindered the migration, proliferation, invasion, and clonal formation of trophoblast cells. The results of RNA-seq analysis showed that ACVR2A knockout resulted in aberrations in multiple signaling pathways, including cell migration, TGF-β, and Wnt. By integrating information from the KEGG website with the analytical data in this study, ACVR2A was identified to potentially regulate the fundamental biological functions of trophoblastic cells through the TCF7/c-JUN signaling pathway. Relevant genes enriched in the TCF7/c-JUN pathway, such as Wnt3, Wnt4, c-JUN, CCND1, TCF7, and TCF7L1, were selected for detailed investigation to further validate the effect of ACVR2A on specific gene expression. The RT-PCR results demonstrated that the mRNA expression levels at tissue and cell levels significantly decreased following ACVR2A knockout compared with the NC group (p < 0.001, Figure 6A–C). Additionally, IHC analysis was employed to assess the protein expression levels of TCF7, TCF7L1, and c-JUN in clinical placental samples from PE patients and NCs. As depicted in Figure 6D–I, the expression levels of these proteins were significantly reduced in the placental tissues from PE patients compared to NCs. Western blot analysis further validated the findings obtained from IHC analysis. As shown in Figure 7A, the expression levels of ACVR2A, SMAD4, SMAD1/5, and their phosphorylated forms (pSMAD1/5/9) were significantly lower in PE placentas compared to normotensive controls (P<0.05). Similarly, downstream targets of the TCF7/c-JUN pathway, including TCF7L1 and TCF7L2, also exhibited reduced protein expression in PE tissues. These results align with the transcriptomic data and suggest a functional impairment of the ACVR2A-TCF7/c-JUN axis in PE.
 
@@ -85,7 +326,7 @@ Previous experiments have confirmed the pivotal role of ACVR2A in regulating the
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/101236/elife-101236-fig7-v1.jpg)
 
-**Figure 7.:** (A) Western blot analysis showing reduced expression of ACVR2A, SMAD4, SMAD1/5, pSMAD1/5/9, TCF7L1, and TCF7L2 in PE placental tissues compared to normotensive controls. GAPDH was used as a loading control. Densitometric analysis quantifying protein expression levels is shown in the accompanying bar graphs. Data are presented as mean ± SD (n = 10 for each group). Statistical significance was determined using a two-tailed Student’s t-test (****p < 0.0001). (B) Schematic illustration of the proposed mechanisms by which ACVR2A regulates trophoblast cell function in normal and pre-eclampsia conditions. (Colors: green indicates normal conditions and functional pathways, while red highlights abnormalities or disrupted pathways in pre-eclampsia. Arrows: solid dark brown arrows: normal signaling pathways and interactions. Bold red arrows: disrupted or abnormal signaling pathways in pre-eclampsia.) In normal placentas, ACVR2A activates the SMAD1/5-SMAD4 axis, promoting trophoblast invasion, migration, and spiral artery remodeling via the TCF7/c-JUN pathway. In pre-eclampsia, reduced ACVR2A expression impairs SMAD signaling, leading to downregulation of TCF7 and its downstream targets (e.g., CCND1 and JUN), contributing to poor placentation. (draw by FigDraw).Figure 7—source data 1.Figure 7A western blot (labelled).Figure 7—source data 2.Figure 7A western blot.Figure 7—source data 3.Figure 7A western blot.
+**Figure 7.:** (A) Western blot analysis showing reduced expression of ACVR2A, SMAD4, SMAD1/5, pSMAD1/5/9, TCF7L1, and TCF7L2 in PE placental tissues compared to normotensive controls. GAPDH was used as a loading control. Densitometric analysis quantifying protein expression levels is shown in the accompanying bar graphs. Data are presented as mean ± SD (n = 10 for each group). Statistical significance was determined using a two-tailed Student’s t-test (****p < 0.0001). (B) Schematic illustration of the proposed mechanisms by which ACVR2A regulates trophoblast cell function in normal and pre-eclampsia conditions. (Colors: green indicates normal conditions and functional pathways, while red highlights abnormalities or disrupted pathways in pre-eclampsia. Arrows: solid dark brown arrows: normal signaling pathways and interactions. Bold red arrows: disrupted or abnormal signaling pathways in pre-eclampsia.) In normal placentas, ACVR2A activates the SMAD1/5-SMAD4 axis, promoting trophoblast invasion, migration, and spiral artery remodeling via the TCF7/c-JUN pathway. In pre-eclampsia, reduced ACVR2A expression impairs SMAD signaling, leading to downregulation of TCF7 and its downstream targets (e.g., CCND1 and JUN), contributing to poor placentation. (draw by FigDraw).
 
 These findings support the hypothesis that reduced ACVR2A expression is associated with altered TCF7/c-JUN pathway activity in PE placental tissues. These findings further illuminate the intricate mechanisms by which ACVR2A regulates the biological functions of trophoblast cells. In conclusion, the diminished expression of ACVR2A significantly influences the proliferation, invasion, and migration of trophoblastic cells in women with PE.
 
@@ -111,58 +352,62 @@ Another potential mechanism for ACVR2A in PE involves its role in the endometriu
 
 ## Materials and methods
 
-## Collection of placenta and decidua specimens/subject recruitment and placental sampling
+### Collection of placenta and decidua specimens/subject recruitment and placental sampling
 
 This study was approved by the Hospital Ethics Committee (SWYX:NO2021-352). Between October 2022 and October 2024, 20 PE patients and 20 normal pregnant women admitted to the Third Affiliated Hospital of Guangzhou Medical University for cesarean section were randomly selected. The exclusion criteria included gestational diabetes, cardiovascular disease, history of thyroid disease, history of autoimmune disease, history of hypertension, intrahepatic cholestasis of pregnancy, anemia, infectious disease, drug use, recent acute or chronic infectious disease, and incomplete information recording. The control group consisted of 20 non-hypertensive healthy pregnant women who underwent cesarean section due to breech and cicatricial uterus. In accordance with the guidelines from the American College of Obstetricians and Gynecologists (ACOG Publications, 2020), PE is diagnosed as hypertension (systolic blood pressure ≥140 mmHg or diastolic blood pressure ≥90 mmHg on at least two occasions) in combination with one or more of the following: proteinuria (≥300 mg/24 hr urine collection or protein/creatinine ratio ≥0.3), thrombocytopenia, elevated serum creatinine, elevated liver enzymes, pulmonary edema, or new-onset headache unresponsive to treatment (ACOG Publications, 2020). In this study, we included 40 participants, comprising 20 PE patients and 20 normal pregnancies. To minimize potential confounding factors, only PE patients without any comorbidities, such as gestational diabetes, chronic hypertension, or other pregnancy-related complications, were included. This strict selection criterion was designed to ensure that the observed differences in ACVR2A expression are specifically associated with PE. All patients in the PE group met these diagnostic criteria, and detailed clinical characteristics are provided in Supplementary file 1.
 
 All specimens were collected during cesarean sections. Within 5 min after placental delivery, tissue samples measuring approximately 1 × 1 × 1 cm were vertically excised at the junction between the center of the placenta and the umbilical cord. Obvious abnormal regions, such as areas with bleeding, infarction, or calcification, were carefully avoided to ensure sample integrity. The tissue was repeatedly rinsed with sterile saline under aseptic conditions to remove residual blood, then cut into small fragments. The fragments were immediately placed into cryogenic tubes, flash-frozen in liquid nitrogen, and subsequently transferred to a −8°C freezer within 24 hr to preserve RNA and protein integrity for downstream analyses.
 
-## Cell culture
+### Cell culture
 
 All cell lines used in this study were purchased from established suppliers. HTR8/SVneo cells were obtained from the U.S. Typical Culture Preservation Center, and JAR cells were purchased from Wuhan Punosei Life Technology. Other cell lines, including A549, Huh7, MEG-01, and NCI-H358, were similarly sourced from commercial suppliers. All cell lines were cultured following standard protocols recommended by the suppliers. No other cell contamination was identified by STR. HTR8/SVneo and JAR cells were maintained in RPMI-1640 medium (Gibco) supplemented with 10% fetal bovine serum (FBS, Gibco) and 1% penicillin/streptomycin (Servicebio, China). Cancer cell lines such as A549 and Huh7 were cultured in DMEM or RPMI-1640 medium (Gibco) supplemented with 10% FBS and 1% penicillin/streptomycin. Cells were incubated at 37°C in a humidified atmosphere with 5% CO2, and routine testing for mycoplasma contamination was performed every 2 weeks to ensure the reliability of experimental results.
 
-## CRISPR/Cas9-targeted deletion of ACVR2A
+### CRISPR/Cas9-targeted deletion of ACVR2A
 
 ACVR2A sgRNAs were designed using the online tool provided by the Broad Institute (https://portals.broadinstitute.org/gppx/crispick/public). Two sgRNA sequences were selected based on their high predicted on-target efficiency and low off-target potential (forward: 5ʹ-GAA GGC ACA TCC TGA CTT GT-ʹ; reverse: 5ʹ-GAT GAC ACA ATCTTCTGCAC-3ʹ). Potential off-target sites were further assessed using Cas-OFFinder (http://www.rgenome.net/cas-offinder/). The sgRNAs were synthesized in vitro by transcription and individually combined with a gRNA scaffold to form functional sgRNAs. These sgRNAs were then complexed with Cas9 protein to assemble ribonucleoprotein (RNP) complexes. The RNP complexes were delivered into HTR8/SVneo and JAR cell lines via electroporation using the Celetrix system, following the manufacturer’s protocol. The electroporation was performed with an sgRNA–Cas9 mixture in OPTI-MEM buffer. After electroporation, cells were cultured in RPMI 1640 medium containing 10% FBS for 24 hr. Successful incorporation of the RNP complex was confirmed through PCR and sequencing. ACVR2A deletion in single monoclonal cell lines was validated through a multistep process, including Sanger sequencing, agarose gel electrophoresis, and RT-PCR. Primers specifically designed for ACVR2A knockout verification were used during this process (Supplementary file 4). This rigorous validation ensures the reliability of the generated knockout cell lines for downstream functional studies.
 
-## RT-qPCR
+### RT-qPCR
 
 Total RNA was isolated from cells using a Total RNA Extraction Kit (TIANGEN, China) following the manufacturer’s instructions. The extracted RNA was reverse-transcribed into complementary DNA (cDNA) using a cDNA Synthesis Kit (Takara, Japan) according to the protocol provided by the manufacturer. Primers used for quantitative analysis were synthesized by Takara (Japan), and their sequences are listed in Supplementary file 2. The mRNA levels were quantified by SYBR Green (Roche, Germany), and dissolution curve analysis was performed to ensure amplification specificity. The PCR protocol consisted of 40 cycles: initial denaturation at 95°C for 10 min, followed by denaturation at 95°C for 5 s, annealing at 63.3°C for 30 s, and extension at 72°C for 10 s. Dissociation curve analysis was performed post-amplification to confirm the specificity of the PCR products. Cycle threshold (Ct) values were used for relative quantification, and all reactions achieved an amplification efficiency between 95% and 100%. These results ensure both the reliability and reproducibility of the quantification process.
 
-## Western blot analysis
+### Western blot analysis
 
 Cells were harvested using a cell scraper and resuspended in RIPA buffer supplemented with a protease inhibitor cocktail and phosphatase inhibitor (Sigma-Aldrich, USA). The cell suspension was incubated on ice for 30 min to ensure complete lysis. After incubation, the lysates were centrifuged at 12,000 rpm for 15 min at 4°C to remove cell debris. The supernatant containing protein lysates was collected, and the protein concentration was determined using a BCA protein assay kit (Thermo Fisher Scientific, USA). For tissue samples, placental tissues were homogenized in RIPA buffer containing the same supplements (protease and phosphatase inhibitors). The homogenate was incubated on ice for 30 min and centrifuged at 12,000 rpm for 15 min at 4°C to remove debris. The supernatant containing protein lysates was collected, and protein concentration was similarly determined using the BCA protein assay kit. Equal amounts of protein (20–30 µg per sample) were separated by SDS–PAGE (12% resolving gel, 5% stacking gel) and electro-transferred onto a PVDF membrane (EMD Millipore, Germany). The membrane was blocked with 5% BSA in TBST (TBS, pH 7.4, 0.2% Tween-20) at room temperature for 1 hr and incubated overnight at 4°C with primary antibodies against ACVR2A (Thermo Fisher Scientific, USA) and GAPDH (Santa Cruz, USA) at specified dilutions. On the following day, the membrane was washed three times with TBST and incubated in darkness for 2 hr with Dylight 680-conjugated secondary antibodies (KPL, USA). Images of the membrane were acquired using a Li-Cor Odyssey Clx Infrared Imaging System (LI-Cor Biotechnology, Lincoln, NE, USA). Densitometry analysis of protein bands was performed using ImageJ software, with GAPDH used as the internal control for normalization.
 
-## IHC staining and data analysis
+### IHC staining and data analysis
 
 IHC staining was conducted on 4 μm paraffin sections, which were dried for 30 min at 60°C, dewaxed using an environmentally friendly solution, and gradually dehydrated through an alcohol gradient. Antigen retrieval was performed at 98°C in EDTA (pH 9.0) for 15 min, and endogenous peroxidase activity was quenched with 3% H2O2 at room temperature for 25 min. Sections were incubated overnight at 4°C with primary antibodies at appropriate concentrations (details in Supplementary file 4), followed by PBS washing and 50 min incubation with HRP-labeled secondary antibodies at room temperature. The immunoperoxidase signal was visualized using a 3,3ʹ-diaminobenzene (DAB) solution, followed by hematoxylin counterstaining.
 
 For quantification, IHC staining was assessed across the entire tissue section to capture global expression patterns, with representative regions from anchoring villous areas selected for detailed comparison between NC and PE groups. Images were captured under identical magnifications and lighting conditions. The DAB signal (brown, protein-specific) and hematoxylin signal (blue, nuclear staining) were separated using ImageJ’s color deconvolution plugin. The DAB signal was quantified as integrated optical density (OD) within the selected regions. To ensure consistency, all samples were processed under identical conditions, including the same antibody dilution, incubation times, and DAB development durations. Negative controls (without primary antibody) were included to monitor background staining, and the DAB reaction was stopped simultaneously for all samples. Quantified signal intensities were normalized to the area of the regions analyzed, and comparisons between NC and PE groups were performed using statistical tests (e.g., t-test).
 
-## CCK-8 assay for cell proliferation
+### CCK-8 assay for cell proliferation
 
 The wild-type cells (WT group) and ACVR2A-knockout cells (ACVR2A-KO group) were seeded into 96-well plates at a density of 10,000 cells per well in 100 μl of RPMI 1640 medium supplemented with 10% FBS. The cells were incubated overnight at 37°C in a humidified incubator with 5% CO2. Cell proliferation was assessed using the CCK-8 assay (CAT: G4103-1ML, Servicebio) according to the manufacturer’s protocol. At 24, 48, and 72 hr after seeding, 10 μl of CCK-8 reagent was added to each well. After incubating the plates at 37°C for 2 hr the OD of the samples was measured at 450 nm using a microplate reader. The cell growth curve was generated based on the average OD values from three independent biological replicates. Background OD values from wells containing only medium and CCK-8 reagent were subtracted before analysis. Statistical comparisons of proliferation rates between the WT and ACVR2A-KO groups were performed using a Student’s t-test.
 
-## Wound healing assay
+### Wound healing assay
 
-The ability of ACVR2A to enhance cell migration in JAR and HTR8/SVneo cells was evaluated using wound healing (scratch) assays. The cell lines were seeded into 6-well culture plates and cultured until they reached approximately 90% confluence. A sterile 200 μl pipette tip was used to create a single scratch in the cellular monolayer. Detached cells and debris were removed by rinsing with PBS, 1640 medium supplemented with 1% FBS was added to each well to minimize proliferation during the assay. Images of the cells were captured at 0, 24, 48, and 72 hr using a phase-contrast microscope. The migratory capability of the cells was determined at 24, 48, and 72 hr post-scratch by measuring the width of the wound in three randomly selected fields simultaneously. The migration index was computed using the following formula, with T representing time (24, 48, or 72 hr):HealingRate(%)=(OHscratcharea−THscratchareaOHscratcharea)×100%
+The ability of ACVR2A to enhance cell migration in JAR and HTR8/SVneo cells was evaluated using wound healing (scratch) assays. The cell lines were seeded into 6-well culture plates and cultured until they reached approximately 90% confluence. A sterile 200 μl pipette tip was used to create a single scratch in the cellular monolayer. Detached cells and debris were removed by rinsing with PBS, 1640 medium supplemented with 1% FBS was added to each well to minimize proliferation during the assay. Images of the cells were captured at 0, 24, 48, and 72 hr using a phase-contrast microscope. The migratory capability of the cells was determined at 24, 48, and 72 hr post-scratch by measuring the width of the wound in three randomly selected fields simultaneously. The migration index was computed using the following formula, with T representing time (24, 48, or 72 hr):
+
+$$
+HealingRate(%)=(\frac{OHscratcharea−THscratcharea}{OHscratcharea})\times100%
+$$
 
 The data represent the mean ± SD of three independent experiments. Statistical significance between groups was determined using a Student’s t-test.
 
-## Transwell invasion assays
+### Transwell invasion assays
 
 First, the upper chamber of a 12-well Transwell insert with an 8-μm pore size (Corning, USA) was coated with 50 μl of Matrigel (diluted 1:3 in serum-free medium) and allowed to polymerize at 37°C for 30 min. Next, 1.5 × 10⁵ cells from each cell line were suspended in 200 μl of serum-free medium and seeded into the upper chamber. The lower chamber was filled with 800 μl of growth medium containing 10% FBS to serve as a chemoattractant. The Transwell plates were incubated at 37°C in a humidified incubator with 5% CO2 for 24 hr. After incubation, the non-migrating cells on the upper side of the Transwell membrane were carefully removed with a cotton swab. The cells that had migrated to the bottom surface of the membrane were fixed with 4% paraformaldehyde (PFA) at room temperature for 15 min, then stained with 1% crystal violet for 20 min. Excess dye was removed by washing the inserts with PBS, and the migrated cells were counted under a light microscope in five randomly selected fields per insert. The invading cells were quantified by randomly selecting 5 fields of view per sample under ×300 magnification. Images shown in the figure were captured at lower magnification (×100) to provide a comprehensive visual comparison between experimental and control groups. Each experiment was independently repeated at least 10 times to ensure consistency and reliability of the results.
 
-## Plate cloning formation assay
+### Plate cloning formation assay
 
 Colony formation assays were conducted using ACVR2A knockout JAR and HTR8/SVneo cell lines. For each group, the cells were seeded at a density of 1000 cells/well in a 6-well plate (NEST) containing 15% FBS supplemented with 1640 medium and cultured for 14 days. The medium was changed every 3 days. When the majority of cell clones expanded to more than 100 cells, the cells were washed with PBS, fixed with 4% PFA for 20 min, and stained with 1% crystal violet for 20 min at room temperature. The excess crystal violet was washed away with PBS, and the dishes were air dried. The cell clones were manually counted under a dissecting microscope. The statistical data on colony formation were derived from three independent experiments and expressed as mean ± SD.
 
-## Transcriptomic analysis
+### Transcriptomic analysis
 
 RNA was extracted from four cell lines (ACVR2A KO-JAR, WT-JAR, ACVR2A KO-HTR8/SVneo, and WT-HTR8/SVneo) using TRIzol reagent (Invitrogen, USA) following the manufacturer’s guidelines. RNA quality, purity, and concentration were assessed with a NanoDrop 2000 (Thermo Fisher, USA) and the RNA Nano 6000 Assay Kit (Agilent Bioanalyzer 2100, Agilent, USA). Transcriptomic analysis was conducted by Biomker Technologies (Guangzhou, China). Differential gene expression was analyzed using the DESeq2 R package (version 1.10.1). Benjamini and Hochberg’s method was applied to control the false discovery rate (FDR), with genes meeting the thresholds of FDR <0.05 and |log2(fold change) |≥1 considered significant. Pathway enrichment analysis of differentially expressed genes was performed using KOBAS (version 3.0) software.
 
 Public RNA-seq data (GSE114691) from the GEO database, comprising 20 PE and 21 control placental samples, were analyzed to assess ACVR2A expression and identify differentially expressed genes. PE and control groups were defined based on clinical criteria, including hypertension (systolic blood pressure ≥140 mmHg or diastolic blood pressure ≥90 mmHg) and proteinuria (≥300 mg/24 hr urine collection or protein/creatinine ratio ≥0.3). The gestational ages for these samples ranged from 34 to 38 weeks. Differential gene expression analysis was conducted using the DESeq2 R package (version 1.10.1), with thresholds set at FDR <0.05 and |log2(fold change) |≥1. GSEA was performed to identify enriched pathways, with a specific focus on the WNT signaling pathway.
 
-## Statistical analysis
+### Statistical analysis
 
 All figures were generated using GraphPad Prism (version 10) software. Data are expressed as the mean ± SD. For data following a normal distribution, parametric tests such as the two-tailed unpaired Student’s t-test and one-way ANOVA followed by Tukey’s post hoc test were used. For comparisons involving two independent variables, two-way ANOVA was applied with Bonferroni correction for multiple comparisons. For non-normally distributed data, non-parametric tests such as the Mann–Whitney U test were utilized. Normality was assessed using the Shapiro–Wilk test. The suitability of parametric tests was verified by checking the assumptions of normality and homogeneity of variances. When these assumptions were not met, appropriate non-parametric alternatives were used. Specific statistical tests used for each figure and table are detailed in the respective legends and captions. For example, the Mann–Whitney U test was applied in Supplementary file 2 due to the non-normal distribution of the data. A significance level of p < 0.05 was considered statistically significant. All experimental conditions were performed in triplicate unless otherwise specified.

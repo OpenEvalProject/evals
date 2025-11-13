@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.34055.001 Cdc48 is a AAA+ ATPase that plays an essential role for many cellular processes in eukaryotic cells. An archaeal homologue of this highly conserved enzyme was shown to directly interact with the 20S proteasome. Here, we analyze the occurrence and phylogeny of a Cdc48 homologue in Actinobacteria and assess its cellular function and possible interaction with the bacterial proteasome. Our data demonstrate that Cdc48-like protein of actinobacteria (Cpa) forms hexameric rings and that the oligomeric state correlates directly with the ATPase activity. Furthermore, we show that the assembled Cpa rings can physically interact with the 20S core particle. Comparison of the Mycobacterium smegmatis wild-type with a cpa knockout strain under carbon starvation uncovers significant changes in the levels of around 500 proteins. Pathway mapping of the observed pattern of changes identifies ribosomal proteins as a particular hotspot, pointing amongst others toward a role of Cpa in ribosome adaptation during starvation.
+Cdc48 is a AAA+ ATPase that plays an essential role for many cellular processes in eukaryotic cells. An archaeal homologue of this highly conserved enzyme was shown to directly interact with the 20S proteasome. Here, we analyze the occurrence and phylogeny of a Cdc48 homologue in Actinobacteria and assess its cellular function and possible interaction with the bacterial proteasome. Our data demonstrate that Cdc48-like protein of actinobacteria (Cpa) forms hexameric rings and that the oligomeric state correlates directly with the ATPase activity. Furthermore, we show that the assembled Cpa rings can physically interact with the 20S core particle. Comparison of the Mycobacterium smegmatis wild-type with a cpa knockout strain under carbon starvation uncovers significant changes in the levels of around 500 proteins. Pathway mapping of the observed pattern of changes identifies ribosomal proteins as a particular hotspot, pointing amongst others toward a role of Cpa in ribosome adaptation during starvation.
 
 ## Introduction
 
@@ -33,21 +33,41 @@ In this study, we characterize the Cdc48-like protein of actinobacteria (Cpa) by
 
 ## Results
 
-## Phylogeny of Cdc48-like protein from actinobacteria (Cpa)
+### Phylogeny of Cdc48-like protein from actinobacteria (Cpa)
 
 Actinobacteria encode a number of AAA+ proteins that were shown to be involved in protein degradation pathways, amongst them the chaperone complexes of the Clp protease system, ClpX and ClpC, as well as the energy-dependent proteasome activator Mpa in mycobacteria (Laederach et al., 2014). As Cdc48 in eukaryotes and archaea is amongst other functions also tied to protein degradation, we set out to investigate if its homolog might have an analogous function in actinobacteria. The Mycobacterium tuberculosis (Mtb) Cpa protein Rv0435c is annotated in the UniProt database as Cdc48 based on sequence homology to the eukaryotic Cdc48 (p97 or VCP) (The UniProt Consortium, 2017). In order to gain a better understanding of the position of the actinobacterial homolog within the family of Cdc48-like proteins we performed a multiple sequence alignment of 1167 sequences including members of five previously identified eukaryotic Cdc48 families (PEX1/6, NSF, Spaf, Spaf-like, p97) as well as archaeal and actinobacterial Cdc48-like proteins using the ClustalO algorithm. The alignment was used for construction of a phylogenetic tree using the approximately-maximum-likelihood method of the FastTree software (Price et al., 2010). As expected, all the sequences cluster into subgroups according to their previously assigned classification (Figure 1A). Interestingly, mycobacterial Rv0435c, as well as its actinobacterial orthologs, form an independent cluster in the Cdc48-family tree (Figure 1A, blue branch). In contrast, sporadically occurring Cdc48 homologs of bacterial species outside of the phylum Actinobacteria do not cluster with their actinobacterial counterparts, but rather with archaeal Cdc48 family members (Figure 1A, grey branches within the green archaeal branch and lime-green group in Figure 1—figure supplement 1B). This, in combination with their infrequent occurrence in bacterial genomes would indicate that these bacteria acquired the cdc48 gene by means of horizontal gene transfer from Archaea while the actinobacterial homolog Cpa is a descendant from a common Cdc48 ancestor.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/34055/elife-34055-fig1-v2.jpg)
+
+**Figure 1.:** (A) Phylogenetic relationships of different members of the Cdc48 protein family to the novel actinobacterial homolog. The peroxisome biogenesis factor 1 and 6 families (PEX1 and PEX6) are depicted in magenta, spermatogenesis-associated factor (Spaf) and Spaf-like families are colored grey, the archaeal Cdc48 homolog family is shown in green and N-ethylmaleimide-sensitive fusion protein (NSF) family in red. The Cdc48-like protein of actinobacteria (Cpa) forms a separate tight cluster (blue), while sporadically occurring homologs in other bacteria fall within the archaeal cluster (grey branches within the green cluster). (B) Occurrence and arrangement of the cpa gene locus in selected actinobacterial genomes. (C) Domain arrangment of Cdc48-like protein. The protein features an N-terminal domain (N-domain, grey) followed by two consecutive AAA modules (D1 and D2, blue). Each of the modules can be further subdivided into a P-loop NTPase domain and an α-helical subdomain. Conserved motifs are abbreviated as: A – Walker A motif, B – Walker B motif, SN – sensor asparagine, R – arginine finger. Organism names are abbreviated as follows: Mtub – Mycobacterium tuberculosis, Rery – Rhodococcus erythropolis, Sery – Saccharopolyspora erythraea, Stro – Salinispora tropica, Mcar – Micromonospora carbonacea, Scoe – Streptomyces coelicolor, Tfus – Thermobifida fusca, Mlut – Micrococcus luteus, Bado – Bifidobacterium adolescentis, Krhi – Kocuria rhizophila.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/34055/elife-34055-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) 80% of the total variance between sequences can be explained by the first 10 principal components (PCs). The fraction of variance explained by distinct PCs is shown as a bar diagram (in blue) and the cumulative variance is shown as a red line. (B) PCA scores plot of the first two components. Cdc48 family proteins group into discrete clusters in accordance with their previously assigned category. The first principal component allows for the best distinction between NSF and Spaf types of sequences from the rest of the family members, while the second PC can be used to best distinguish between eukaryotic p97, archaeal/bacterial Cdc48(-like) sequences, PEX1 and PEX6 as well as Spaf-like proteins. (C) PCA loadings plot of the first two principal components. The dots colored in red represent the alignment positions for which the distance to 0 on the second PC loading exceeded the cutoff of 30% of the maximum distance (positions with most variance) while the dots colored in blue represent positions where the cutoff was set to 10% and lower (positions with least variance). (D) Structural model of the rhodococcal Cpa generated using human p97 as a template. Positions with most variance (as shown in panel C) are colored red and positions with least variance (most conserved) are colored in blue. The Walker A and B motifs, as well as arginine finger and sensor asparagine are shown using stick representation and colored green when considered conserved and red when considered variable. Top: protomer view with locations of the N-domain, D1- and D2-modules indicated. Bottom: hexamer view (the front protomer not shown). R – arginine finger, sN – sensor asparagine, A – alanine. The designation X→Y denotes substitution of amino acid X to amino acid Y in the original sequence.
 
 To assess the possibility of Rv0435c acting in the context of the proteasome, we analyzed the occurrence of the cpa gene with respect to the proteasomal subunit genes prcA and prcB across the actinobacterial phylum (Figure 1B). Interestingly, none of the actinobacteria lacking proteasomal subunit genes encode a Cdc48 ortholog. In other words, where Cpa is present in actinobacteria, it co-occurs with the 20S proteasome. This observation supports the possibility that Cpa could be another proteasomal interactor, as it was shown for the eukaryotic and archaeal homologs (Barthelme and Sauer, 2013).
 
 Analysis of the sequence alignment of 76 representative actinobacterial orthologs together with the recently solved crystal structure of the mycobacterial Cpa monomer show that Cpa features the canonical domain structure of tandem AAA-module proteins (Unciuleac et al., 2016). A small N-terminal domain (referred to as N-domain), usually responsible for binding adaptors and/or substrates, is followed by two consecutive canonical AAA modules (D1 and D2, respectively). To visualize the location of the domains and residues within a predicted hexameric ring, we built a structural homology model for the rhodococcal Cpa sequence using human p97 as a template, for which a structure of the assembled complex was available (Hänzelmann and Schindelin, 2016) (Figure 1—figure supplement 1D). The AAA modules each contain Walker A and B motifs required for ATP binding and hydrolysis; however, only the D2 module carries the so-called sensor asparagine (assisting the Walker B motif in coordinating water molecules) and arginine finger (stimulating the ATPase activity) (Figure 1C and Figure 1—figure supplement 1D) (Unciuleac et al., 2016). The alignment around the Walker A and B motifs shows strict conservation of the motifs in the D2 module, while the D1 module exhibits mild degeneration of the motifs (sequence logos in Figure 1C). To assess the sequence conservation more quantitatively and in context of the aforementioned Cdc48-like families, we employed the method described by Wang and Kennedy (2014) using principal component analysis to estimate the variance between the sequences being analyzed (Figure 1—figure supplement 1A–C). This analysis confirms that actinobacterial Cdc48-like proteins form a separate, tight cluster rather than clustering together with any specific other group (Figure 1—figure supplement 1B). Analysis of the second component loadings, which showcase the separation between the different families, revealed that the N-domains are the main distinguishing feature between the members of the different families, while the ATPase modules are highly conserved across the families (Figure 1—figure supplement 1D).
 
-## Cpa forms hexameric rings upon nucleotide binding
+### Cpa forms hexameric rings upon nucleotide binding
 
 Proteasomal activator complexes usually feature a ring-shaped architecture and associate with the 20S cylinder faces by a ring-stacking interaction aligning the activator ring pore with the 20S entry pore to form a conduit for substrate translocation. A crystal structure was recently determined for the Mycobacterium smegmatis (Msm) Cpa (Msm0858) in its monomeric form and the study concludes that Msm0858 does not form the canonical hexameric ring structures but rather acts as a monomer in solution (Unciuleac et al., 2016). As interaction with the 20S cylinder would require a ring-shaped complex, we hypothesized that actinobacterial Cdc48 homologs also assemble into hexamers like their eukaryotic and archaeal homologs. To perform size-exclusion experiments to test this hypothesis, we used recombinantly produced Cpa from Rhodococcus erythropolis due to its higher solubility compared to mycobacterial Cpa. In the absence of nucleotide, RerCpa eluted in one main peak at an elution volume equivalent to a monomer/dimer assembly state (Figure 2A, black profile). Incubation of RerCpa with the ATP-hydrolysis transition state analog ADP-AlFx prior to size exclusion resulted in a shift of the monomer/dimer elution peak to a position equivalent to just above 500 kDa (as indicated by the molecular weight standards), which is in good agreement with a hexameric assembly state (expected molecular weight: 450 kDa). An additional, smaller fraction elutes even earlier, at a position equivalent to larger than 700 kDa. In order to overcome the limitation of column calibration and obtain an accurate assessment of complex size, we also performed size exclusion chromatography with multi-angle light scattering detection (SEC-MALS). The light scattering signal revealed the mass of the assembled species in the main peak to correspond to 430 ± 39 kDa. This is in good agreement with the molecular weight of six monomers (75 kDa) in a hexameric assembly (Figure 2B). A fraction in Figure 2A eluted at an earlier position which corresponds to the molecular weight of a dodecameric assembly (943 kDa) and is likely due to the high protein concentration which was used for this experiment. To assess the shape of the assembled complex, we recorded electron micrographs of negatively stained Cpa particles. A double Walker B variant of the rhodococcal enzyme (D312N, E566Q) capable of nucleotide binding but not hydrolysis was used in this experiment to allow observation of the complex in the presence of ATP rather than ADP-AlFx. The evenly distributed particles display as spherical shapes, most of which appear to be top views (Figure 2C and Figure 2—figure supplement 1). The 2D classification of the imaged particles revealed that most of the classes represent hexameric assemblies (Figure 2—figure supplement 1). Some of the particles, however, look slightly distorted, suggesting either high flexibility (presumably of the N-domains) or ring instability leading to ring opening in some of the 2D classes. Nevertheless, the diameter of the particles is rather uniform with roughly 150 Å and the appearance and dimensions of the particles agree well with hexameric ring assemblies that were observed previously for archaeal or eukaryotic Cdc48.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/34055/elife-34055-fig2-v2.jpg)
+
+**Figure 2.:** (A) Gel filtration profiles of 30 µM rhodococcal Cpa in absence of nucleotide (black line) and in presence of 2 mM ADP-AlFx (red line). The peak at ~16 ml corresponds to a monomer while the peak at ~13.5 ml corresponds to a hexameric assembly. (B) SEC-MALS profile of rhodococcal Cpa in presence of 2 mM ADP-AlFx. The red line represents refractive index, the black line corresponds to the light scattering signal and dark-blue triangles represent the fitting of the molar mass. (C) A representative negative-staining electron micrograph of a double Walker B mutant of Cpa shows ring-shaped particles in the presence of ATP. Upper right panel shows a 2D class average of Cpa particles with a hexameric ring structure. Scale bar represents 150 Å.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/34055/elife-34055-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** 2D class averages of Cpa particles show predominantly ring-shaped particles. Scale bar represents 150 Å.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/34055/elife-34055-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Gel filtration profiles of 24 µM MsmCpa in absence of nucleotide (black line) and in presence of 2 mM ADP-AlFx (red line). Similarly to the rhodococcal protein, the peak at ~16 ml corresponds to a monomer/dimer mixture while the peak at ~13.5 ml corresponds to a hexameric assembly. (B) ATPase activity of mycobacterial Cpa is five times higher at 37°C compared to 28°C. At 37°C the enzyme hydrolyzed ATP with a turnover number of 42.5 ± 3.2 min−1 hexamer−1 while at 28°C only 7.9 ± 2.9 min−1 hexamer−1 are turned over. Mean ± SEM of three replicates are shown.
+
 To test whether the mycobacterial Cpa can also form hexameric rings like the rhodococcal protein, we repeated the size-exclusion experiment described in the previous paragraph using MsmCpa incubated in the presence of ADP-AlFx (Figure 2—figure supplement 1). The elution profile clearly shows that mycobacterial Cpa also forms hexamers in the presence of nucleotide. Additionally, we tested the ATPase activity of the mycobacterial enzyme at two different temperatures (28°C – temperature at which activity for the rhodococcal enzyme was determined, and 37°C – optimum growth temperature of Msm) (Figure 2—figure supplement 2B). Although mycobacterial Cpa exhibits low ATPase activity at 28°C, we observed a five-fold increase in activity when the temperature was increased to 37°C (change from 7.9 ± 2.9 to 42.5 ± 3.2 min−1 hexamer−1). Since the rhodococcal enzyme showed an overall better behaviour in vitro, subsequent in vitro experiments were performed using this homologue.
 
-## ATPase activity of Cpa exhibits a strong dependence on pH and ionic strength
+### ATPase activity of Cpa exhibits a strong dependence on pH and ionic strength
 
 As demonstrated by the size-exclusion analysis, Cpa, like many of the AAA+ proteins that feature tandem AAA-modules, assembles into the hexamer only upon nucleotide binding. ATPase activity for these complexes is usually dependent on the formation of the assembled, hexameric ring (Kress et al., 2007). We therefore explored the dependence of ATPase activity on buffer conditions by varying pH and salt concentration, both factors known to affect assembly of AAA proteins. For example, ClpB/Hsp104 requires low-salt concentrations for assembly of the ring in vitro (Wendler et al., 2012). The rhodococcal Cpa exhibited a strong dependence of its ATPase activity on both, pH and KCl concentration, where increasing pH and decreasing salt concentration led to an increase in the measured enzyme activity by up to sevenfold (Figure 3A). We hypothesized that this strong dependence of the ATPase activity on salt was the result of enhanced ring formation under those conditions rather than a direct effect on the ATPase activity. To test this, we recorded assembly time courses at different salt concentrations (0–400 mM KCl) while keeping the pH constant at 7.8. Assembly was triggered by addition of Cpa into the assembly buffer at the given salt concentration and containing ADP-AlFx as nucleotide to avoid complications from ATP turnover. Aliquots were taken from the assembly reaction and subjected to size exclusion to determine the elution peak area of assembled Cpa. Interestingly, increasing the salt concentration from 0 to 400 mM led to a strong deceleration of ring formation (Figure 3B). When no salt was present in the sample the oligomerization was complete within a few minutes, while at the highest KCl concentration only 40% of Cpa was assembled into rings after 5 hr of incubation. This result indicates that during the time frame in which the ATPase assay is performed the assembly is still slowly ongoing with its velocity dependent on the initial KCl concentration. Therefore, the measured activity reports mainly on the protein assembly state and indicates that ring formation is indeed strongly dependent on ionic strength.
 
@@ -55,9 +75,17 @@ As demonstrated by the size-exclusion analysis, Cpa, like many of the AAA+ prot
 
 **Figure 3.:** (A) ATPase activity is enhanced with increasing pH and decreasing KCl concentration. The activity was measured at 28°C using 1.5 µM RerCpa (protomer). For readability reasons, the errors of the measurements are not shown – in all cases the error did not exceed 5% of the measured value. (B) Increasing ionic strength slows down Cpa complex formation. Assembly reactions were prepared using 9 µM RerCpa in a buffer containing increasing KCl concentrations (0–400 mM), incubated at 18°C and injected onto a SEC column at the indicated time points.
 
-## Cpa interacts with the 20S proteasome
+### Cpa interacts with the 20S proteasome
 
 Having established that Cpa is capable of hexameric ring formation, we were interested in testing whether the protein could interact with the 20S proteasome. To test for interaction between Cpa and the proteasome core particle, we employed the bacterial adenylate cyclase two-hybrid assay previously used for identifying interaction between the actinobacterial proteasome and another activator, Bpa (Battesti and Bouveret, 2012; Delley et al., 2014). The assay is based on the reconstitution of adenylate cyclase activity from the individually inactive T25 and T18 adenylate cyclase subdomains, which are tethered to the two potential interaction partners. In this case, Cpa from Mtb (Rv0435c) was fused to the T25 subdomain, while the T18 subdomain was fused to the α subunit of the 20S proteasome. Plasmids encoding the two respective fusion constructs were co-transformed into an E. coli strain deficient in adenylate cyclase activity. In case the two subdomain-carrying proteins, MtbCpa and Mtb20S proteasome, physically interact, the active adenylate cyclase complex can be reconstituted from the two subdomains, leading to production of cyclic AMP (cAMP) that in turn activates the lac operon (Figure 4A). To test for cAMP production, we therefore performed a β-galactosidase assay on cells permeabilized with SDS/chloroform. In addition to the wild type MtbCpa we also tested a variant where five C-terminal amino acids were removed. Although Cpa orthologs do not carry the classical HbYX proteasome interaction motif at their C-terminus, the C-terminus itself might nevertheless contribute to this interaction. Figure 4B shows the results of the β-galactosidase assay, including the negative (T25 against T18-CP) control. The activity of around 60 pmol 4-methylumbelliferone produced per min per OD unit indicates that the full-length mycobacterial Cpa is capable of directly interacting with the proteasomal core particle in the context of a bacterial cell. Additionally, we observe that removal of the C-terminal amino acids does not change the interaction strength between Cpa and the 20S core particle, indicating that those residues do not significantly mediate this interaction. A milder contribution cannot be excluded on the basis of this assay due to the inherent positive feedback circuit that precludes precise quantification.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/34055/elife-34055-fig4-v2.jpg)
+
+**Figure 4.:** (A) Principle of the bacterial adenylate cyclase two-hybrid system. The cpa gene was fused to the T25 subdomain of adenylate cyclase while the proteasome was fused to the adenylate cyclase T18 subdomain. Interaction of the two complexes in E. coli ΔcyaA gives rise to increased β-galactosidase activity. (B) Both MtbCpa wt as well as MtbCpa lacking the five C-terminal residues when coexpressed with CP produce an increase of β-galactosidase activity as compared to the negative control, suggesting Cpa-CP complex formation (statistical significance was tested using two-way ANOVA). (C) Electron micrograph of negatively stained Cpa particles and 20S proteasomes. White arrows indicate side views of stacked complexes between Cpa and the 20S proteasome, blue arrows point at free Cpa rings and yellow arrows indicate uncapped 20S CP side views.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/34055/elife-34055-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** White arrows indicate side views of stacked complexes between Cpa and the 20S proteasome.
 
 To probe for the interaction between Cpa and the proteasome in vitro, negatively stained EM micrographs of RerCpa rings pre-formed in the presence of ADP-AlFx and purified by size exclusion chromatography were recorded in presence of rhodococcal closed-gate proteasomes. We observed a small fraction of coaxial Cpa-proteasome complexes in side view (Figure 4C and Figure 4—figure supplement 1, white arrows) next to uncapped 20S cylinders (Figure 4C, yellow arrows) and free Cpa rings (Figure 4C, blue arrows).
 
@@ -71,23 +99,51 @@ Finally, to quantify the interaction strength, we employed microscale thermophor
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/34055/elife-34055-fig6-v2.jpg)
 
-**Figure 6.:** RerCpa and Mtb20S CP.(A) Binding curves of RerCpa vs. closed- (red) and open-gate (black) MtbCP in presence of ATP. The gray triangles represent a dataset recorded for Cpa and open-gate proteasome in absence of nucleotide. (B) Dissociation constants and Hill coefficients for the two measured datasets.
+**Figure 6.:** (A) Binding curves of RerCpa vs. closed- (red) and open-gate (black) MtbCP in presence of ATP. The gray triangles represent a dataset recorded for Cpa and open-gate proteasome in absence of nucleotide. (B) Dissociation constants and Hill coefficients for the two measured datasets.
 
-## Disruption of cpa in Mycobacterium smegmatis causes a growth defect under carbon starvation
+### Disruption of cpa in Mycobacterium smegmatis causes a growth defect under carbon starvation
 
 In order to gain insight into the potential cellular function of mycobacterial Cpa, we generated an Msm cpa knockout strain by means of homologous recombination (Msm Δcpa) and confirmed the absence of the protein using antibodies raised against MsmCpa produced recombinantly in E. coli. (Figure 7—figure supplement 1). The knockout strain exhibited no growth defect compared to the parent strain under standard culture conditions (Middlebrook 7H9 medium with glycerol and Tween 80 at 37°C) (Figure 7A). However, transfer of the parent and knockout strain cultures grown in minimal medium supplemented with glycerol (adapted from (Elharar et al., 2014)) to a medium devoid of glycerol as the main carbon source reveals a growth defect in the knockout strain (Figure 7B). The wild-type Msm cells undergo two to three divisions during the first 72 hr after transfer, while the Msm ∆cpa cells stop dividing already after 24 hr. Once cell division has ceased, both strains can persist for at least 2 weeks and can be recovered when plated on 7H10 solid medium (data not shown). This result might point to a role of Cpa in adaptation of Msm to nutrient starvation stress.
 
-## Cpa is encoded in an operon together with two other genes
+![Figure 7.](https://cdn.elifesciences.org/articles/34055/elife-34055-fig7-v2.jpg)
+
+**Figure 7.:** (A) Msm parent and knockout cells were cultured in Middlebrook 7H9 medium at 37°C and cell density was measured at 600 nm at the indicated time points. Both strains showed identical growth behavior indicating that Cpa is dispensable during standard cell culture conditions. (B) cpa-knockout cells show impaired growth in the same medium devoid of glycerol as a main carbon source. Both strains were cultured in a minimal medium in absence of glycerol at 37°C. Both growth curves are representative of three or more independent experiments with the mean values ± SD plotted.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/34055/elife-34055-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** An anti-MsmCpa antibody (bottom) was used to show the presence (left lane, wild-type M. smegmatis) or the absence (Msm ∆cpa) of the Cpa protein in the two Msm strains used in this study. An antibody against the E. coli RNA polymerase subunit β was used as a loading control (top).
+
+### Cpa is encoded in an operon together with two other genes
 
 Since bacterial operonic arrangement can give indications about the functional context in which a gene is required, we analyzed the genomic cpa locus across actinobacteria. As is evident from the phylogenetic tree shown in Figure 1A, the actinobacterial cdc48 homolog cluster consists of three distinct branches based on their sequence alignment. Careful investigation of the genomic context in the three branches shows that in branches 1 and 2 (Figure 1A and B) cpa is encoded in a putative operon together with two other genes: psd (phosphatidylserine decarboxylase proenzyme) and pssA (phosphatidylserine synthase), two consecutively acting enzymes responsible for the synthesis of phosphatidylethanolamine from CDP-diacylglycerol and serine. In the genomes of those two branches, the proteasomal genes are usually located within a relatively fixed distance from the cpa locus. In the actinobacteria belonging to the third branch, the psd/pssA genes exist, but are not located in the same operon as or in close proximity of the cpa gene. To probe if psd, pssA and cpa are co-transcribed, we designed six pairs of primers spanning different regions of the polycistronic RNA expected in case of co-transcription (Figure 8A). We used total RNA extracted from wild-type Msm to generate a single cDNA using a primer specific to the end of the cpa gene. In case the genes are transcribed from a single promoter placed upstream of the psd gene, we should generate all amplification products from the six primer pairs (labeled A-F in Figure 8A). Consistent with a single mRNA generated from the three genes, all six amplification products were present: two probes spanning joints between psd/pssA and pssA/cpa (probes A and B), a cpa-specific probe (probe C) as well as three longer probes, spanning two or three genes at the same time (probes D, E and F). Evidently, the psd, pssA and cpa genes are expressed together from a polycistronic operon.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/34055/elife-34055-fig8-v2.jpg)
+
+**Figure 8.:** (A) Organization of the cpa gene locus in Msm and design of probes used to test for gene co-transcription. (B) Visualization of all six probes amplified from cDNA produced from total RNA using a cpa-specific primer (middle of the gel). A set of reactions without reverse transcriptase was included to test for presence of contaminating genomic DNA (NTC – no template control; left part of the gel) as well as standard PCR with genomic DNA as a template to visualize the expected length of all probes (right part of the gel).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/34055/elife-34055-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Light microscopy images of M. smegmatis wild-type and ∆cpa cells during growth in presence (top) and absence (bottom) of glycerol as a main carbon source. (B) Statistical analysis of the average cell length during carbon starvation. A histogram depicting the distribution of cell length (in pixels) is shown on the left and the average cell length for both strains is shown on the right. The error bars represent standard error of the mean (SEM). The cell length difference is statistically significant at the p-value of 0.0001 (unpaired two-tailed t-test).
+
 Considering that phosphatidylethanolamine has been implicated in membrane curvature determination as well as cell division in some organisms (Mileykovskaya et al., 1998) and that the genes responsible for its synthesis are co-expressed with the cpa gene, we were interested to see whether removal of Cpa from the cell would influence the shape of starved cells. To test this, we grew Msm cultures of wt and cpa-knockout strains to the end of exponential phase (using medium with and without glycerol, as described above) and subsequently analyzed cell morphology using light microscopy (Figure 8—figure supplement 1). Since mycobacterial cells typically tend to form bigger cell aggregates in standard culture and individual cells are difficult to discern, we only inspected the cells visually without measuring individual cell lengths – no differences were apparent. Under carbon starvation, the cells did not form as many clumps and they were generally shorter compared to those grown in the presence of glycerol. To test whether the cells differ in length between the two strains we estimated the average cell length using light microscopy images. The knockout cells were longer by approximately 13% compared to the wild-type cells. The difference, albeit statistically significant, seems too small to conclude that Cpa is involved in the regulation of cell division, although it cannot be excluded that Cpa could influence cell shape in a different way.
 
-## Quantitative comparison of proteomic profiles of M. smegmatis wild-type with cpa-disrupted strains
+### Quantitative comparison of proteomic profiles of M. smegmatis wild-type with cpa-disrupted strains
 
 In order to assess the effects of Cpa activity on the Msm proteome, we carried out differential proteomic analysis of the wild-type and ∆cpa Msm strains. To this end both strains were grown under standard culture conditions as well as under carbon starvation to the early stationary phase, when the cells were harvested and the soluble proteomes (enriched with membrane proteins; see Materials and methods section) of both strains determined using label-free quantification mass spectrometry (LFQ-MS). The relative protein changes together with their statistical significance are depicted in ‘volcano’ plots in Figure 7A. We observed 45 proteins during normal growth and 251 proteins during carbon starvation that were at least 1.5 times more abundant in the wild type strain compared to Msm ∆cpa. Likewise, 49 proteins were found to accumulate in the knockout cells during normal growth and 254 proteins during carbon starvation compared to Msm wt. Consequently, while during standard growth the differences are rather mild, exposing the cells to starvation stress led to significantly higher accumulation or depletion of a larger number of proteins in the cpa knockout strain. This observation strengthens the notion of Cpa playing a role during adaptation to nutrient-limited conditions. In order to gain a general understanding of the process in which Cpa may be involved directly, we classified the significantly changed proteins into functional classes using the Clusters of Orthologous Groups (COG) classification system (Figure 7B). We observed that in both cases (cells starved and non-starved), the class with most of the changed proteins was ‘transcription’. Due to the low number of changes during standard growth, many COG classes under this condition were represented by only one or two proteins. This changed, however, when the cells were starved for carbon. We found that many changes occurred in classes like ‘transcription’ (most represented, similarly to standard growth), ‘energy production and conversion’, ‘amino acid transport and metabolism’ and ‘lipid transport and metabolism’. From the perspective of Cpa acting in a protein degradation context, those proteins accumulating in the knockout strain could under the most simplistic interpretation be degradation substrate candidates. However, the fact that equal number of proteins accumulated as were depleted in the knockout strain suggests that this view is too simplistic. For example, degradation of a transcription factor that is present in the cell only with low abundance, could lead to significant proteomic changes. Indeed, as mentioned above, the most represented class in both our datasets is ‘transcription’, which could explain the observed changes in both directions.
 
 To identify functional connections within the accumulating proteome, we performed a pathway enrichment analysis using STRING and DAVID tools (Huang et al., 2009; Szklarczyk et al., 2017). The result of this analysis showed an unusually high number of structural components of the ribosome (Figure 9—figure supplements 1 and 2) accumulating in the cpa-knockout cells. In fact, COG class J, encompassing proteins connected to translation and ribosome, was one of the very few classes that contained mostly proteins accumulating in the knockout cells and few with decreased levels (Figure 7B).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/34055/elife-34055-fig9-v2.jpg)
+
+**Figure 9.:** (A) Results of protein abundance comparison between the wt and the cpa-knockout strain using LFQ-MS (see Figure 9—source data 1). To filter the statistically-significant proteins, the p-value threshold was set to 0.05 (horizontal dashed line) and the fold-change threshold to 1.5 (vertical dashed lines). Under standard growth conditions (left plot), 49 proteins were found to accumulate (right side of the plot) and 45 proteins were found to be decreased (left side of the plot) in the knockout cells. Under carbon starvation (right plot), 254 proteins accumulated and 251 proteins were depleted in the knockout cells. (B) Those identified proteins for which a functional association was known or predicted, classification into functional classes using the COG classification system was carried out. Class abbreviations are as follows: C – energy production and conversion, D – cell cycle control and cell division, E – amino acid metabolism and transport, F – nucleotide metabolism and transport, G – carbohydrate metabolism and transport, H – coenzyme metabolism, I – lipid metabolism, J – translation/ribosomal structure and biogenesis, K – transcription, L – replication/recombination/repair, M – cell wall/membrane/envelope biogenesis, O – post-translational modification/protein turnover/chaperone functions, P – inorganic ion transport and metabolism, Q – secondary metabolites biosynthesis and catabolism, T – signal transduction, V – defense mechanisms. Proteins without an assigned class or assigned to class S (function unknown) were not included in the plot.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/34055/elife-34055-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** The blue circles represent ribosomal proteins and the red circles correspond to membrane proteins. The entire network represents proteins identified by LFQ-MS as having increased levels in the cpa-knockout strain under carbon limitation. Edge thickness of lines between the protein nodes corresponds to interaction confidence, according to STRING confidence scores.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/34055/elife-34055-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** (A) Proteins colored green belong to the 50S subunit of the ribosome, while the blue ones belong to the 30S subunit. Red color indicates proteins that accumulated in the cpa-knockout strain during carbon starvation. For clarity, rRNA is shown in semi-transparent grey cartoon representation. The figure was generated using the recent structure of the 70S ribosome from M. smegmatis (PDB: 5O61, (Hentschel et al., 2017)). (B) Depiction of accumulating ribosomal proteins (red) in the context of the KEGG pathway map for the assembled ribosome (Kanehisa et al., 2016). Boxes framed in bold represent proteins identified in at least two out of three replicates of the co-immunoprecipitation experiment.
 
 Finally, we were interested in testing whether some of the identified proteins could be Cpa binders in vivo under carbon starvation stress. For this purpose, we performed a co-immunoprecipitation (co-IP) experiment using an anti-MsmCpa antibody and wild-type M. smegmatis cells (with Msm ∆cpa strain as a control for nonspecific binding to the beads/antibody). Using shotgun LC-MS/MS, we could identify a few dozen proteins in at least two out of three co-IP replicates that were specific to the presence of Cpa (i.e. did not bind to the antibody in the cpa-knockout lysate). We also submitted the results of the pull-down experiment to pathway enrichment analysis by STRING and DAVID tools and observed that again ribosomal proteins (indicated by bold rectangles in Figure 9—figure supplement 2) comprise a significantly enriched fraction of the immunoprecipitated protein mixture (see Figure 9—source data 2 for the full list of identified binders).
 
@@ -105,29 +161,263 @@ At the same time, it is difficult to speculate about the substrate clientele bas
 
 ## Materials and methods
 
-## Alignment, phylogenetic tree construction and analysis of gene co-occurrence
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene</td>
+      <td>mKO2</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>NCBI accession: AB359188</td>
+      <td>GeneArt synthetic construct</td>
+    </tr>
+    <tr>
+      <td>Strain (Escherichia coli)</td>
+      <td>E. coli Tuner(DE3)</td>
+      <td>EMD-Millipore</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (Mycobacterium  smegmatis mc(2) 155)</td>
+      <td>Wild-type strain (Msm WT)</td>
+      <td>ATCC</td>
+      <td>ATCC: 700084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mycobacterium smegmatis mc(2) 155)</td>
+      <td>Msm ∆cpa</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Unmarked cpa deletion strain</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-RpoBEc</td>
+      <td>BioLegend</td>
+      <td>BioLegend clone: 8RB13</td>
+      <td>Antibody against beta-subunit of RNA polymerase from E. coli; used at dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-CpaMsm</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Rabbit polyclonal antibody against full-length Cpa from M. smegmatis mc(2) 155; produced by BioGenes GmbH; used at dilution 1:40000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-His6- TEV-RerCpa</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for expression of rhodococcal Cpa</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-His6- TEV-MsmCpa</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for expression of mycobacterial Cpa</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-His6-TEV-Rer Cpa_D312N_E566Q</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for expression of double Walker B mutant of rhodococcal Cpa</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-His6-TEV -mKO2-RerCpa</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for expression of mKO2-Cpa fusion protein used in MST experiments</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pETDuet-RerPrcA -PrcB∆pro</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for expression of rhodococcal proteasome (closed-gate variant)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pETDuet-RerPrcA∆7 -PrcB∆pro</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for expression of rhodococcal proteasome (open-gate variant)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-His6-TEV-RerArc</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for expression of rhodococcal Arc</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pETDuet-MtbPanB-Strep</td>
+      <td>PMID: 20203624</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTrc99-MtbMpa</td>
+      <td>PMID: 20203624</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET20-His6-Trx- TEV-MtbPup-GFPuv</td>
+      <td>PMID: 20203624</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKT25</td>
+      <td>Euromedex</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUT18</td>
+      <td>Euromedex</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKT25-zip</td>
+      <td>Euromedex</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUT18C-zip</td>
+      <td>Euromedex</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKT25-MtbCpa</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Bacterial two-hybrid plasmid: T25-Cpa fusion</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKT25-MtbCpa∆C5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Bacterial two-hybrid plasmid: T25-Cpa fusion where Cpa is C-terminally truncated by five residues</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUT18-MtbPrcA- PrcB∆pro</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Bacterial two-hybrid plasmid: mycobacterial proteasome with the T18 subdomain fused to the C-terminus of PrcA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Monolith NT.115 Premium Coated Capillaries</td>
+      <td>NanoTemper Technologies</td>
+      <td>MO-K005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Methylumbelliferone</td>
+      <td>Sigma-Aldrich</td>
+      <td>M1381</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Methylumbelliferyl β-D-galactopyranoside</td>
+      <td>Sigma-Aldrich</td>
+      <td>M1633</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STRING</td>
+      <td>PMID: 27924014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DAVID</td>
+      <td>PMID: 22543366</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastTree</td>
+      <td>PMID: 20224823</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SWISS-MODEL</td>
+      <td>PMID: 28874689</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrödinger, LLC</td>
+      <td>http://www.pymol.org</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Alignment, phylogenetic tree construction and analysis of gene co-occurrence
 
 All sequences were taken from the NCBI database (see Supplementary file 1 for a full list of accession numbers) and aligned using the ClustalO multiple sequence alignment algorithm (Sievers et al., 2011). The resulting alignment was used to construct a phylogenetic tree with FastTree 2.1.1 (Price et al., 2010) applying default parameters. The results were visualized with FigTree 1.4.3.
 
 Gene co-occurrence was investigated using the STRING tool (Szklarczyk et al., 2017) and verified by searching selected actinobacterial genomes for the presence of bpa, pup-prcAB, arc, psd and pssA genes with the help of BLAST (Altschul et al., 1990). Walker A/B sequence logos were generated from 76 Cpa (Cdc48-like protein of actinobacteria) sequences using WebLogo 2.8.2 (Crooks et al., 2004).
 
-## Principal component analysis (PCA) of protein sequences
+### Principal component analysis (PCA) of protein sequences
 
 The multiple sequence alignment (described above) was used as an input for the principal component analysis as described by (Wang and Kennedy, 2014). Briefly, all the amino acid positions were ranked according to their occurrence at a given position and amino acids with the same occurrence were ranked according to their alphabetical order. The original residues were replaced with calculated ranks and the resulting table was used to perform PCA. All the calculations were carried out using a Python script (available at https://github.com/misialq/pca-protein-analysis; copy archived at https://github.com/elifesciences-publications/pca-protein-analysis).
 
 A structural model of the rhodococcal Cpa was obtained using the SWISS-MODEL homology-modeling server where structure of the human p97 (PDB-ID: 5C1A) served as a template (Biasini et al., 2014). Sequence conservation was plotted according to the PCA loadings of the second principal component: positions whose PCA loadings exceeded 30% of the maximal PC2 loading were colored in red (variable) and those below 10% were colored in blue (conserved). Structure drawing was done in PyMOL 1.5 (Schrödinger, LLC).
 
-## Bacterial strains and growth conditions
+### Bacterial strains and growth conditions
 
 Mycobacterium smegmatis mc(2) 155 (Msm) was grown in liquid Middlebrook 7H9 medium (Difco) supplemented with 0.025% (w/v) Tween 80 and 0.2% (w/v) glycerol, unless otherwise stated. The cells were grown at 37°C with shaking at 180 rpm. For carbon starvation, the cells were first cultured small-scale in minimal medium (adapted from (Elharar et al., 2014) containing: 40 mM K2HPO4, 22 mM KH2PO4, 15 mM (NH4)2SO4, 1.7 mM sodium citrate, 0.4 mM MgSO4, 0.05% (w/v) Tween 80 and 0.4% (w/v) glycerol. Washed cells from the small-scale culture were transferred into a large-scale culture in the same medium but lacking glycerol.
 
-## Cloning, expression and protein purification
+### Cloning, expression and protein purification
 
 The genes encoding Rv0435c (MtbCpa), MSMEG_0858 (MsmCpa) and RER_15150 (RerCpa) were amplified from genomic DNA (M. tuberculosis – Mtb, M. smegmatis – Msm and R. erythropolis – Rer, respectively) by PCR using Q5 DNA polymerase (New England Biolabs; NEB) and cloned into a pET28a expression vector using Gibson assembly (NEBuilder HiFi DNA Assembly Kit; NEB). The double Walker B (D312N, E566Q) mutant of RerCpa was cloned into the same backbone by Gibson assembly using gene pieces containing mutations introduced into PCR primers and amplified from rhodococcal genomic DNA. A His6-tag followed by a Tobacco Etch Virus (TEV) protease cleavage site preceded the N-terminus of either protein. Constructs were transformed into E. coli Tuner(DE3) cells for heterologous expression which was carried out in ZYP-5052 autoinduction medium as described by Studier (2005) with minor modifications: the expression culture was inoculated to an OD600 = 0.025 using an overnight preculture and incubated at 30°C/180 rpm for 6 hr. After that time, the temperature was reduced to 18°C and the cells were harvested after an additional 14 hr. Cells were lysed in buffer A (50 mM HEPES-NaOH pH 7.8 at 8°C, 300 mM NaCl, 40 mM imidazole) using a high-pressure homogeniser (Microfluidics) and the cleared lysate was loaded onto Ni2+-IMAC Sepharose 6 FF resin. After washing the resin with 15 column volumes of buffer A, the protein was eluted using buffer B containing 250 mM imidazole. Protein-containing fractions were pooled and dialysed for 30 min at 4°C against buffer C (50 mM HEPES-NaOH pH 7.8 at 8°C, 150 mM NaCl, 5 mM β-mercaptoethanol). The N-terminal hexahistidine tag was cleaved by addition of TEV protease and further dialysis for 14 hr. TEV protease was removed via Ni2+ affinity chromatography, and Cpa was further purified by size exclusion chromatography using a Superdex 200 column in buffer C without β-mercaptoethanol. PrcAB, Arc/Mpa, PanB-Pup and Pup-GFP were purified as described previously (Striebel et al., 2010; Striebel et al., 2009).
 
 To test for interaction between Cpa and the 20S proteasome using a bacterial adenylate cyclase two-hybrid assay (BACTH), the Mtb cpa full-length gene, as well as its variant with the last five C-terminal residues removed, was fused to the C-terminus of the T25 adenylate cyclase subdomain. The cpa gene (Rv0435c) was amplified from Mtb genomic DNA using Q5 DNA polymerase (NEB) and cloned into the pKT25 vector using Gibson assembly (NEB). The prcAB genes were cloned into the pUT18 vector where prcA was fused to the N-terminus of the T18 subdomain of adenylate cyclase. The lac promoter region was duplicated in this vector downstream of the prcA-T18 fusion followed by the prcB∆pro gene (propeptide residues 1–57 were removed). Empty pKT25 and pUT18 backbones, as well as T18-zip and T25-zip leucine zipper gene fusions (used as positive control), were obtained from Euromedex.
 
-## Analytical size exclusion chromatography (SEC) and multi-angle light scattering (MALS)
+### Analytical size exclusion chromatography (SEC) and multi-angle light scattering (MALS)
 
 Analytical SEC was performed on a Superose 6 Increase 10/300 GL column (GE Healthcare) connected to an Agilent 1260 Infinity HPLC system. All runs were performed at 23°C at a flowrate of 1 ml min−1 in 50 mM HEPES-KOH pH7.8, 25 mM KCl, 20 mM MgCl2. RerCpa was injected at a concentration of 30 µM (protomer) in a volume of 15 µl and was detected by following absorption at 280 nm. Molecular weight standards were run under the same conditions. The sample with ADP-AlFx contained additionally 2 mM ADP, 2 mM Al(NO3)3 and 12 mM NaF.
 
@@ -135,44 +425,44 @@ For the assembly time trace, each sample was placed in the HPLC autosampler set 
 
 To determine the molecular weight of the rhodococcal Cpa, 10 µl of 130 µM (protomer) protein solution were loaded onto a Superdex 200 Increase 10/300 GL column (GE Healthcare). The sample was analyzed by refractive index using an Optilab T-rEX differential refractometer (Wyatt Technology) and by MALS using a miniDAWN TREOS light scattering detector (Wyatt Technology).
 
-## Electron microscopy and image analysis
+### Electron microscopy and image analysis
 
 RerCpa-D312N,E566Q sample (300 nM) was incubated for 10 min at room temperature in the presence of ATP (2 mM) in 50 mM HEPES-KOH pH7.8, 25 mM KCl, 20 mM MgCl2. After incubation, sample was diluted to final concentration of 75 nM and 8 μL were applied to Quantifoil grids R2/2 freshly coated with a thin layer of carbon and incubated for 2 min. Excess liquid was blotted away and the grids were stained with 2% uranyl acetate for 2 min. Images were collected on FEI F20 electron microscope operated at 200 keV equipped with Faclon II direct electron detector (FEI Company) at x 82,350 magnification with a dose of 30 electron per Å2, defocus value of −2 μm, and a pixel size of 1.7 Å per pixel. Particles were selected semi-automatically with BOXER implemented in the EMAN package (Ludtke et al., 1999). Particles (17,375) were extracted using RELION (Scheres, 2012) and binned three-fold resulting in a pixel size of 5.1 Å per pixel. Two-dimensional (2D) maximum-likelihood classification was performed with the RELION package (Scheres, 2012) using K = 30 and was run for 15 iterations.
 
 To image Cpa-proteasome interaction, 75 nM RerCpa rings in the presence of ADP-AlFx and 30 nM 20S closed-gate rhodococcal proteasome were incubated at room temperature in 50 µl reactions and then applied to Quantifoil grids R2/2 freshly coated with a thin layer of carbon followed by staining with 2% uranyl acetate similarly as described above. The samples were then imaged using a FEI Morgagni 268 transmission electron microscope operating at 100 keV.
 
-## ATPase activity assay
+### ATPase activity assay
 
 ATPase activity was determined using an ATPase assay coupled to pyruvate kinase and lactate dehydrogenase (Nørby, 1988). Reactions were performed in 96-well plates at 28°C (or 37°C for MsmCpa), and absorption at 340 nm was monitored using a Synergy 2 plate reader (BioTek). The assay was performed in 50 mM HEPES-KOH, 2.5 mM phosphoenolpyruvate, 1 mM NADH, 40 U ml−1 of both pyruvate kinase and lactate dehydrogenase, 20 mM MgCl2 and 2 mM DTT, where pH was varied in the range of pH 7 to pH 8 and KCl was varied from 0 to 200 mM. The total reaction volume was 100 µl, and the assay was carried out with 1 mM ATP and 1.5 µM RerCpa (or 3 µM MsmCpa) enzyme. The rate of ATP hydrolysis was calculated using an extinction coefficient of 6.22 mM−1 cm−1 at 340 nm for NADH.
 
-## Protein interaction analysis using BACTH
+### Protein interaction analysis using BACTH
 
 To test the interaction between MtbPrcAB and MtbCpa, a bacterial adenylate cyclase two-hybrid (BACTH) assay was performed as described by Battesti and Bouveret with some modifications (Battesti and Bouveret, 2012). Briefly, E. coli BTH101 ∆cya cells were co-transformed with the pKT25 and pUT18 fusion constructs described above. As a negative control, bacteria were co-transformed with empty pKT25 vector. Co-transformants were plated on LB agar plates supplemented with 100 µg ml−1 ampicillin and 50 µg ml−1 kanamycin and incubated for 72 hr at 30°C. Several clones were grown for 20 hr at 30°C in liquid LB medium containing both antibiotics and 0.5 mM IPTG. 100 µl of the overnight cultures were transferred into 400 µl of buffer Z (44.7 mM Na2HPO4, 45.3 NaH2PO4, 10 mM KCl, 1 mM MgSO4, 38.5 mM β-mercaptoethanol; pH 7), followed by addition of 25 µl 0.01% SDS and 50 µl chloroform and vigorous mixing. 20 µl of each cell extract were transferred to a 96-well nonbinding plate (Corning), and the β-galactosidase reaction was started by addition of 30 µl 0.83 mM 4-methylumbelliferyl β-D-galactopyranoside (Sigma-Aldrich). After 20 min of incubation at room temperature, the reactions were stopped by addition of 50 µl 1 M Na2CO3 and the fluorescence was measured in a Synergy 2 plate reader (BioTek) using a 360/40 excitation filter and a 460/40 emission filter. The amount of released 4-methylumbelliferone was determined using a standard curve prepared the same day (Sigma-Aldrich). The β-galactosidase activity was normalized to OD600 of the overnight cultures used for the assay. The final activity is expressed as pmol of 4-methylumbelliferone min-1 OD unit-1.
 
-## Proteasome competition assay
+### Proteasome competition assay
 
 The gel-based competition assay with Mpa was performed as described previously (Delley et al., 2014) with minor modifications. MtbPanB-Pup (4 µM protomer) was pre-incubated for 15 min at 30°C with Mtb∆7PrcAB (0.1 µM complex), 5 mM ATP, 40 mM phosphocreatine, 0.5 U ml−1 creatine phosphokinase and 1 mM DTT in buffer M2 (50 mM HEPES-KOH pH 7.5 at 23°C, 100 mM KCl, 20 mM MgCl2, 10% glycerol) in presence or absence of RerCpa (12 µM protomer). The degradation reaction was started by addition of 0.2 µM Mpa (hexamer). Aliquots were withdrawn at the indicated time points, and the reactions were stopped by addition of Laemmli sample buffer. The aliquots were analyzed by SDS-PAGE followed by staining with Coomassie Brilliant Blue.
 
 For the assay with a fluorescent GFP readout, RerPup-GFP (0.5 µM) was pre-incubated for 15 min at 30°C with Rer∆7PrcAB (25 nM complex), 5 mM ATP, 40 mM phosphocreatine, 0.5 U ml−1 creatine phosphokinase and 1 mM DTT in buffer M2 in presence or absence of RerCpa (0.6, 1.5 or 3 µM protomer). The degradation reaction was started by addition of 50 nM RerArc (hexamer). The decrase in fluorescence (Ex485/20, Em528/20) was monitored using a Synergy 2 plate reader (BioTek) at 28°C.
 
-## Microscale thermophoresis (MST)
+### Microscale thermophoresis (MST)
 
 For MST experiments, rhodococcal Cpa was N-terminally fused to the orange fluorescent protein mKO2 (monomeric Kusabira-Orange 2), expressed and purified as described for the wild-type Cpa. 20S mycobacterial proteasomes (closed- and open-gate variant) were titrated to 50 nM mKO2-RerCpa using a 1.5x dilution series between 0.09 and 3.5 µM in 50 mM HEPES-KOH, 50 mM NaCl, 0.005% Tween 20 (and 5 mM ATP, 20 mM MgCl2 in the samples containing ATP) in a total of 16 µl. After 5 min of incubation at room temperature, the samples were transferred to Monolith NT.115 premium coated capillaries (NanoTemper Technologies) and MST traces were recorded at 25°C in a Monolith NT.115 instrument (NanoTemper Technologies; LED power 60%, MST power 20%). All measurements were performed in three independent replicates.
 
 The MST data were fitted using the T-Jump section of the traces using the Hill equation: y = U + (B – U)(Sh/(Kdh + Sh)), where U is the signal from the unbound state, B is the signal from the bound state, S is the concentration of the titrated species, Kd is the dissociation constant and h is the Hill coefficient. Fitting was performed using GraphPad Prism 7.
 
-## Disruption of cpa (MSMEG_0858) in M. smegmatis mc(2) 155
+### Disruption of cpa (MSMEG_0858) in M. smegmatis mc(2) 155
 
 A targeted allelic exchange of the MSMEG_0858 gene was performed by application of a two-step selection with the p2NIL/pGOAL system (Gopinath et al., 2015). First, the competent Msm WT cells were transformed with the suicide knockout plasmid p∆cpa and plated on 7H10 medium supplemented with 20 µg ml−1 kanamycin and 50 µg ml−1 hygromycin B to select for single-crossover mutants. An ‘X-Gal underlay’ was performed to visualize the clones that were successful recombinants: 200 µl of 0.4% X-Gal solution were pipetted under the agar, and the plate was incubated for an additional 1–2 days. Blue clones were used to inoculate fresh Middlebrook 7H9 medium containing kanamycin and hygromycin and incubated for several days at 37°C. To select for double-crossover mutants, the cells were plated onto Middlebrook 7H10 agar medium supplemented with 2% sucrose and control medium without sucrose and incubated at 37°C for several days. The ‘X-gal underlay’ was repeated and several sucrose-resistant white clones were picked and re-plated onto fresh Middlebrook 7H10 agar plates with and without kanamycin. Several kanamycin-sensitive clones were picked, and absence of the cpa gene was confirmed by colony PCR using OneTaq polymerase (NEB) and primers flanking the disruption site. The resulting mutant strain (referred to as Msm ∆cpa) was additionally confirmed by PCR amplification of the whole psd-pssA-∆cpa locus using Q5 polymerase (NEB) followed by sequencing of the resulting fragment, as well as western blot detection of the protein product using a rabbit polyclonal antibody (Biogenes, Germany) raised against recombinant MsmCpa expressed and purified from E. coli.
 
-## Test for co-transcription of psd, pssA and cpa
+### Test for co-transcription of psd, pssA and cpa
 
 Total RNA isolated from Msm SMR5 was used as a template for synthesis of cDNA with a primer specific to the 3’ end of the cpa mRNA. cDNA synthesis was performed with 200 U of Maxima Reverse Transcriptase (Thermo Fisher Scientific) in the presence of 20 U of the RiboLock RNase Inhibitor (Thermo Fisher Scientific) using a step-wise temperature gradient: 50°C for 30 min, 55°C for 15 min and 65°C for 30 min. The resulting cDNA was used directly in a PCR reaction with OneTaq polymerase (NEB) using six primer pairs for amplification of different regions of the transcript: two pairs for joints between psd/pssA and pssA/cpa genes, one cpa-specific pair, two pairs spanning more than one gene and one pair spanning all three genes of interest. To control for genomic DNA contamination, a set of samples was prepared where the reverse transcriptase was omitted. Additionally, to check the expected correct size of all the fragments, PCR reactions were also performed directly with genomic DNA where no RNA was present. PCR products were later analyzed using a 1% agarose gel and visualized in the presence of ethidium bromide.
 
-## Label-free quantification mass spectrometry
+### Label-free quantification mass spectrometry
 
 To obtain information about the relative proteome changes in the wild-type compared to the ∆cpa Msm strain we used the label-free quantification mass spectrometry approach. For this purpose WT and knockout cells were grown in pentaplicates in minimal medium (described above) in a similar way as during growth curve determination, to an OD600 = 2 for cultures with glycerol and OD600 = 0.12–0.25 for cultures without glycerol. Cells were harvested by centrifugation and washed three times with 1x PBS. Cell pellets were resuspended in 1 ml of 1x PBS/2 mM EDTA (containing 1x Halt Protease Inhibitor Cocktail; Thermo Fisher Scientific) and transferred to 2 ml screw-cap tubes containing ~ 0.5 g of 0.15 mm zirconium oxide beads (Next Advance). The cells were lysed by bead-beating two times for 30 s at maximum speed with a 1 min cooling pause in a Minilys homogeniser (Bertin Instruments). Intact cells were removed by centrifuging twice at 3000 g at 4°C for 15 min. Resulting supernatants were transferred to fresh tubes and membrane fractions were recovered by centrifugation at 100000 g at 4°C for 4 hr. The supernatant (soluble fraction) was transferred to a new tube and the pellet was gently washed with 200 µl of 1x PBS/2 mM EDTA and spun down again at 100000 g at 4°C for 50 min. Subsequently, washed pellets were resuspended in 200 µl of 50 mM NH4HCO3 by incubation in an ultrasonic bath for 1 hr (SONOREX 10 P, 70% power, 4°C). Membrane proteins were solubilised by addition of 250 µl of 2% SDS (final concentration of 1.1%) and an overnight incubation at room temperature. Insoluble material was spun down at 21000 g for 30 min at room temperature and the pellet was resuspended in 2% SDS. After an additional 1 hr incubation, the sample was centrifuged again and the supernatant was combined with the supernatant from the previous step (solubilised membrane proteins). The proteins were precipitated by addition of 5 volumes of ice-cold acetone, followed by an overnight incubation at −20°C. Precipitated proteins were collected by centrifugation at 21000 g at 4°C for 30 min, the pellets were air-dried and resuspended in 100 µl of 3 M urea. Protein concentration was determined using the BCA method with bovine serum albumin (BSA) as a standard. The soluble fraction was mixed with the membrane fraction in a ratio 2:1 for a total concentration of 0.75 mg ml−1. Equal amounts of protein were analysed by SDS-PAGE followed by immunoblot with an antibody against MsmCpa (see above) or EcoliRpoB as a loading control. Cell lysates were submitted for LFQ-MS analysis to the Functional Genomics Center Zurich (FGCZ).
 
-## Co-immunoprecipitation (co-IP) using anti-Cpa antibody
+### Co-immunoprecipitation (co-IP) using anti-Cpa antibody
 
 For the α-Cpa co-IP experiment, 100 ml cultures of Msm wild-type and ∆cpa cells were grown in absence of glycerol as described in the previous section. Following harvesting, cell pellets were resuspended in 1 ml of 1x PBS/2 mM EDTA and lysed as described above. The lysates were then spun down at 20000 g at 4°C for 10 min and the supernatants were kept on ice. Anti-MsmCpa antibody was immobilized on 50 µl (per sample) DynabeadsTM Protein A (Thermo Fisher Scientific) and crosslinked using BS3 crosslinker, following manufacturer instructions. The beads were then mixed with 600 µl of the lysate, supplied with 5 mM ATP and 15 mM MgCl2 and incubated at 30°C for 15 min with gentle agitation. Next, the beads were washed three times with 200 µl of 1x PBS/5 mM ATP/15 mM MgCl2 and the immobilized proteins were eluted with 50 µl of 0.2 M glycine pH 2.1 and immediately neutralized by addition of 10 µl of 1 M NaOH. 25 µl of each elution were analyzed using shotgun LC-MS/MS at the Functional Genomics Center Zurich (FGCZ). Co-immunoprecipitations were performed in triplicate.

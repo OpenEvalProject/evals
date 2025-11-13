@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.28974.001 The existence of abnormal connectivity patterns between resting state networks in neuropsychiatric disorders, including Autism Spectrum Disorder (ASD), has been well established. Traditional treatment methods in ASD are limited, and do not address the aberrant network structure. Using real-time fMRI neurofeedback, we directly trained three brain nodes in participants with ASD, in which the aberrant connectivity has been shown to correlate with symptom severity. Desired network connectivity patterns were reinforced in real-time, without participants’ awareness of the training taking place. This training regimen produced large, significant long-term changes in correlations at the network level, and whole brain analysis revealed that the greatest changes were focused on the areas being trained. These changes were not found in the control group. Moreover, changes in ASD resting state connectivity following the training were correlated to changes in behavior, suggesting that neurofeedback can be used to directly alter complex, clinically relevant network connectivity patterns.
+The existence of abnormal connectivity patterns between resting state networks in neuropsychiatric disorders, including Autism Spectrum Disorder (ASD), has been well established. Traditional treatment methods in ASD are limited, and do not address the aberrant network structure. Using real-time fMRI neurofeedback, we directly trained three brain nodes in participants with ASD, in which the aberrant connectivity has been shown to correlate with symptom severity. Desired network connectivity patterns were reinforced in real-time, without participants’ awareness of the training taking place. This training regimen produced large, significant long-term changes in correlations at the network level, and whole brain analysis revealed that the greatest changes were focused on the areas being trained. These changes were not found in the control group. Moreover, changes in ASD resting state connectivity following the training were correlated to changes in behavior, suggesting that neurofeedback can be used to directly alter complex, clinically relevant network connectivity patterns.
 
 ## Introduction
 
@@ -32,7 +32,7 @@ Further evidence that covert neurofeedback can change networks, and that these c
 
 ## Results
 
-## Selection of training targets
+### Selection of training targets
 
 We used previously collected resting state data on large groups of ASD and TD participants (N = 56 ASD, 62 TD) to identify two target brain regions that showed large under-connectivity in ASD compared with TD individuals, while also being physically distant from each other, and belonging to separate networks (Figure 1): target1 in superior temporal sulcus (STS) and target2 in somatosensory cortex, both of which have been consistently implicated in social processing (Allison et al., 2000; Frith and Frith, 2010; Adolphs, 2009; Damasio et al., 2000), and have previously been found to be under-connected and atypically activated in ASD (Chen et al., 2015; Gotts et al., 2012; Müller et al., 2001; Tuttle et al., 2016; Khan et al., 2015; Khan et al., 2013). This dataset is an expansion of previously reported data (Gotts et al., 2012), which found very similar aberrant connectivity patterns, matching results from other studies using large datasets (Cheng et al., 2015). As in the previously published subset of the dataset, we found that under-connectivity between these two networks (STS and somatosensory) in ASD was significant in both this large dataset (p<4.3×10−5) and in the 17 participants recruited for the neurofeedback study (p=0.002), as well as significantly correlated to social symptom severity, as measured by the Social Responsiveness Scale (SRS) (r = −0.35 p<0.009 without regressors, r = −0.31, p<0.026, using age and motion as regressors, r values represent Pearson’s correlation, p-values determined by permutation tests). The SRS is a parent filled questionnaire, which is designed to be a continuous, cardinal measure of social symptom severity in ASD, and has been shown to correlate with functional brain connectivity measures in multiple studies (Anderson et al., 2011; Di Martino et al., 2009b). This result indicates that connectivity between these two networks is clinically relevant, i.e. the lower the connectivity, the more severe the social symptoms (higher score on the SRS). The first goal of the training was therefore to increase the connectivity between target1 in STS, and target2 in somatosensory cortex.
 
@@ -42,9 +42,25 @@ We used previously collected resting state data on large groups of ASD and TD pa
 
 In order to ascertain that we would only be reinforcing connectivity between our two targets, rather than global changes that cause an overall increase in correlations across the entire brain in an undifferentiated manner, we selected a third control region (in the inferior parietal lobule or IPL, part of the default mode network), which was chosen for being uncorrelated to the two target regions in our dataset of TD participants during resting state. IPL was significantly over-correlated to STS target1 in the ASD cohort participating in this study (Figure 1C). This combination of under-connectivity between STS and somatosensory with over-connectivity to the default mode network, is in line with recent evidence of reduced within-network cohesion coupled with reduced between-network differentiation (Hahamy et al., 2015; Keown et al., 2016). The goal of the neurofeedback training was therefore to induce greater differentiation between these three regions of interest (ROIs) in participants with ASD, so as to bring connectivity levels between those three networks closer to those of TD individuals. This meant increasing connectivity between the two target regions, while simultaneously decoupling the two target-control pairs. To this end, we came up with the composite difference measure, combining the target-target and target-control correlations (see Materials and methods). This measure was also significantly different between the ASD group and the TD group in both the previous large dataset (p=0.001), and in our cohort (p<1×10−4), Figure 1B–C). All p values were calculated through permutation tests, maintaining the original number of participants for each group.
 
-## Training paradigm
+### Training paradigm
 
 For the initial part of the study, 17 patients with ASD participated in four training sessions, over the course of 8 days (two sessions of two consecutive days each, a week apart). Each session consisted of two rest scans, followed by four neurofeedback training scans, and finally two more rest scans (Each scan was 9 min in duration. See Figure 2). During the neurofeedback scans, participants started with a blank screen, and were instructed to attempt to reveal the picture hidden underneath (see Figure 2—figure supplement 1 for an example). This was described to them as a puzzle task. No further instructions were given. Parents filled out behavioral questionnaires before training began, and two weeks after the last training session. An additional follow up study was then carried out, in which 15 of the 17 original participants returned for a final, slightly shorter training session. The interval between the original training and the follow up varied greatly between subjects, and ranged from 5 to 56 weeks.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig2-v3.jpg)
+
+**Figure 2.:** (A) Timeline. (B) Location of ROIs, and network being trained. (C) Feedback session. Data was collected and analyzed in real-time, and a decision whether to present feedback (reveal a square of the picture +positive sound) was made based on the change in signal from one time (t-1) to the next (t) in the three ROIs. Feedback was given if the direction of change in the two targets was the same, and opposite from the direction of change in the control ROI. See.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Participants were asked to attempt to reveal the picture, and feedback was presented in the form of a picture square becoming visible, coupled with a positive tone. There were 25 squares per ‘puzzle’, and a new puzzle began as soon as the previous one had been completed, until the end of the scan when the current and high score for that day were presented.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Overall composite difference correlation measure for each scan, plotted against the number of feedback responses when the same data is run through the real-time algorithm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** The diagram shows the direction of training in the TD control group. As with the ASD group, participants were rewarded for the ‘correct’ network configuration by revelation of a piece of the puzzle, coupled with a short upbeat auditory sound. The three network nodes also remained the same, the only difference was in their designation as ‘targets’ or ‘control’. While the STS node remained a target, the somatosensory node became the control, and the IPL was the second target. Participants were therefore trained to increase connectivity between STS and IPL, while reducing their connectivity with the somatosensory node.
 
 One of the barriers to carrying out connectivity-based rt-fMRI-nf has been the slow timescale of fMRI recordings, making online calculations of correlations very limited. We therefore developed a method that can approximate the correlations using only two time points: every two seconds, for each TR (time to repetition), the signals from the three ROIs were analyzed in real-time (see Materials and methods), and the trend in the signal compared to the previous TR was noted for each of the three ROIs (increase/decrease). Positive feedback, in the form of revealing a part of the picture accompanied by an upbeat sound, was given whenever the network was deemed to have reached its desired state. As our goal was to increase correlation between the two target regions, and decrease correlations between the target and the control regions, feedback (i.e. revealing a part of the picture) was given whenever the signal trend in the two target ROIs was the same, and opposite from the trend in the control ROI (Figure 2, Materials and methods). This ‘two-point’ method was validated as being a good proxy for correlation analysis by comparing the results from this to standard Pearson’s correlation offline (r = 0.61, p<1×10−4 permutation test, Figure 2—figure supplement 2). We carried out simulations using more time points (2–6 TRs) to evaluate if longer time scales would lead to connectivity estimates for neurofeedback that better resemble actual correlations computed offline. We did not find any significant increase in the correlation of these extended measures to the whole series Pearson’s correlations, which were our ‘gold standard’. We therefore chose to provide feedback on just two time points, to minimize the timescale of the feedback.
 
@@ -52,17 +68,120 @@ At the end of each neurofeedback scan, participants were presented with their sc
 
 Participants were blind to the purpose of the study, as well as to the mechanism of the neurofeedback, and even to the fact that it was neurofeedback. This was ascertained by exit questionnaires at the end of the last day of scanning, in which participants were interviewed regarding their thoughts on the study, their motivation, and their strategies during the training (see Table 1 for responses). Responses as to the perceived nature of the ‘puzzle task’ varied widely, as did reported strategies, but none held any resemblance to the neurofeedback algorithm. Strategies mostly revolved around different ways of looking at the picture, as it was being revealed. Despite not knowing what they were supposed to do, most participants were highly motivated to solve the puzzles, with only 3 of the 11 participants for which responses are available reporting a motivation score of less than 5 (on a scale of 1–10, see Table 1).
 
-## Control group
+**Table 1.**
+ Exit questionnaires
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>1. what did you think the study was about?</th>
+      <th>2. what were you doing during the scans? (Ask about each day if applicable)</th>
+      <th>3. how hard were you trying to solve the puzzles, on a scale of 1–10, for each day?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Really don’t know. Figure out how long it takes my brain to figure out where all the pieces go.</td>
+      <td>Laying back, relaxing, thinking about random things. Same all days.</td>
+      <td>5, 5, 5, 5</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>MRIs, puzzle study</td>
+      <td>Day1: just think, Day 2: just think, Day 3: stay awake, Day4: stay awake</td>
+      <td>9, 9, 9, 9</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Pictures and the emotional responses they elicit. Definitely tied to emotions. Thought he had to be less excited for pieces to come up</td>
+      <td>Thinking about memories, things to pass the time</td>
+      <td>10, 10, 9, 8</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Measuring the thought processes of where certain processes take place in the game. Stress test</td>
+      <td>Day1: eye movement, control heart rate, close eyes; Day2: nothing, relaxed; day3: relax, day4: nothing</td>
+      <td>5, 1, 1, 2</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>About focus</td>
+      <td>Trying to focus on certain areas of the screen</td>
+      <td>5, 8, 10, 2</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>What exactly is autism and how the brain is related to it? The puzzles can show how fast different people's brains work.</td>
+      <td>Nothing different really. Today was thinking about an English assignment. Was really just looking at them, wanted to see the picture. Didn't think ‘oh I have to do this now’. Wasn’t trying hard to solve at all. Either it comes or it doesn’t. You can't really rush your brain</td>
+      <td>1, 1, 1, 1</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>I don’t know</td>
+      <td>Breathing in patterns, blinking, gave up</td>
+      <td>7, 4, 5, 10</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>About first level visual processing?</td>
+      <td>Most math, computation</td>
+      <td>5, 2, 2, 2</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>Multitasking, and being able to keep still and look in the same place for a consistent period.</td>
+      <td>Tried different ways to solve more pieces. Today, for example, tried to keep still and look at a similar spot consistently. Yesterday, tried multitasking, breathing and blinking on different rhythmic scales (helped the most). Last week, kept looking around in various directions, mostly at squares that werent filled in yet.</td>
+      <td>6, 6, 7, 8</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>How humans see stuff and how the brain reacts. Ie sight</td>
+      <td>Staring at whatever space he could to put the puzzle together</td>
+      <td>Same each day</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>Don’t know, detecting how hard my brain works on puzzles</td>
+      <td>Trial and error, look at different parts of screen, try different techniques</td>
+      <td>9, 7, 9, 8</td>
+    </tr>
+  </tbody>
+</table>
+
+### Control group
 
 An additional control group of 10 TD participants completed the same initial 4 day training regimen, following the same protocol as the above. This group received feedback on the same three nodes, but in a different network configuration: target1 in the STS remained the same, but somatosensory target2 and the IPL control region switched roles, so that feedback was given whenever STS (target1) and IPL (now target2) were co-modulated, and were opposite to somatosensory cortex (now control), see Figure 2—figure supplement 3. This provided feedback orthogonal to that given to the ASD group. Another key difference is that this feedback was antithetical to the normal connectivity patterns found in the typically developing brain, as STS and somatosensory are well correlated in the typically developing brain, whereas the IPL region used in this study was explicitly chosen to be as uncorrelated as possible with STS in TDs during rest (Figure 1B–C). This control therefore served a dual purpose: in terms of the network that the ASD participants were being trained on, which rewarded increased connectivity between STS and somatosensory and decoupling of these from IPL, this was random feedback. That is to say, the feedback given to the TD participants was uncorrelated with the feedback they would have received had they been trained on the same network configuration as the ASD participants. This served as a control for any changes in connectivity in that direction being driven by something other than the feedback. At the same time, this control also examined whether it is possible to modulate any network, regardless of the native connectivity.
 
-## Learning
+### Learning
 
 To assess whether any learning took place over the course of these initial four training days, we examined the correlations between the two target regions (which had been trained to increase connectivity), the two target-control pairs (which were trained to decrease connectivity), as well as the composite difference measure. Figure 3 shows the results of this analysis for the ASD group. As can be seen, over the course of the four training days, correlations between the two target regions steadily increased (with a significant difference between most days, p=4×10−4 between day1 and day4, mean change in correlation = 0.11, Figure 3A), while correlations between target1 and control decreased (significant difference between day1 and all other days, p=8×10−4 between day1 and day4 mean change = −0.13, Figure 3B). Though there is an overall decrease between target2 and control, this does not reach significance and the mean change is small (Figure 3C). This is in line with the lack of differentiation between the ASD group and the TD group in target2-control correlations (Figure 1C), suggesting neurotypical network connectivity is more resilient to change. Figure 3D shows the overall composite difference measure, taking into account all three correlation pairs, where there is a strong and consistent increase between day1 and day4 (p<2×10−4, mean change = 0.19). 15 of the 17 participants showed a positive change in this measure (14/17 had a positive change in target1-target2 correlations, as well as a negative change in target1-control correlations). The TD control group on the other hand, showed no significant changes between days in any of the three pairwise combinations, or in the composite difference measure. Only 4/10 participants in this group showed a change in the trained direction in the composite measure, within the range of chance, and the magnitude of change was minimal relative to the change seen in the ASD participants. Figure 4A shows these data for all the individual ASD participants, while Figure 4B shows the individual TD participants. The full results for all individual participants, for all days, are displayed in Figure 4—figure supplement 1. To further ensure that the null result in the TD group was truly different from the significant result in the ASD group, and not simply due to lower statistical power because of the smaller sample size, we re-calculated the change in correlations for each of the possible subsets of 10 participants from our ASD group, and found that the significant difference between day1 and day4 was maintained for all subsets in the target-target correlations (range of mean change 0.03–0.17, p-value range 0.046 to 1 × 10−4), for 83% of possible subsets in the target1-control correlations range of mean change −0.02 to −0.19, 0.22 < p < ,1 × 10−4 and for all possible subsets in the composite correlation difference measure (range of mean change 0.1–0.23, p<0.007 for all subsets). To test for interaction between the TD and ASD groups, we carried out a two sample t-test (without assuming equal variance to control for different sample size) between the change in composite correlations in the ASD group vs. the change in composite correlations in the TD group. A significant difference (p=9.2×10−4) was found between the learning seen in the TD and ASD groups in this analysis. This significant difference between the groups was maintained even when we chose the ASD subset of 10 participants with the smallest change (p=0.013).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig3-v3.jpg)
+
+**Figure 3.:** (A) Correlations between the two target regions per day, averaged across all four neurofeedback scans per day. Blue bars represent the subject mean, cyan error bars mark ± SEM. Red dots represent each individual subject. The difference in correlations between day1 and days 3 and 4 and the follow up is significant (p=0.05, p=4×10−4, p=0.05 respectively), as is the difference between day2 and day4 (p=0.016). (B) Correlations between Target1 and Control. There is a significant change between day1 and all other days (p=0.005, p=5×10−4, p=8×10−4 for days 2, 3 and 4, p=0.015 for the follow up). (C) Correlations between Target2 and Control. (D) Composite difference measure, showing the difference between target-target and target-control correlation pairs (see Materials and methods). Day1 correlations are significantly different from all other days (p=0.003, p=0.01, and p=2×10−4, p=0.007 respectively), and day2 is significant different from day4 (p=0.0017). In all panels N = 17 for days 1–4, N = 15 for the follow up. All p-values for differences between days were determined by permutation tests.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Change in the composite difference measure averaged across the two neurofeedback runs during the follow up experiment and the same measure on day1 of the training, vs. time from the original experiment to the follow up, in weeks. No significant correlation was found between the two (r = −0.12) suggesting that our neurofeedback procedure induced a stable change that did not dissipate over time. N = 15, the number of participants who returned for the follow up scan.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** As the follow up experiment had only two neurofeedback runs as opposed to the four neurofeedback runs in the original experiment (all 9 min), and only 15/17 participants, we repeated the same analysis shown in Figure 3 using just the first two neurofeedback runs for the original 4 days, and the 15 participants that were included in the follow up. This did not impact the results, and significant changes between days stayed the same as before.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig4-v3.jpg)
+
+**Figure 4.:** (A) Difference in the composite difference correlation from day1 to day4, for each of the 17 individual ASD participants averaged across all four neurofeedback scans per day, presented chronologically in order of scanning. (B) Same analysis for each of the 10 TD participants, presented chronologically. Note that the composite difference measure is comprised of target-target correlations minus the target-control pairs, and that the definition of targets and control differed between the two groups.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/28974/elife-28974-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Full correlation data for all four days for each individual participant. Top half shows ASD data, bottom half TD control group data. Blue bars denote day1, cyan day2, yellow day3 and red day4. Note that 15/17 ASD participants show an increase in the composite difference score from day1 to day4, 14/17 show an increase in Target1, Target2 correlations, and 14/17 show a decrease in the correlation between Target1 and Control. In contrasts, 5/10 TDs show an increase in Target1, Target2 correlations, 4/10 show a decrease in correlations between Target1 and Control, and 5/10 show a decrease in correlations between Target2 and Control, exactly at chance level.
+
 We next set out to test how long this learning would be maintained. To address this question, we called back the participants for a follow up study, in which they returned for another, shorter round of training. To get a good indication of the persistence of the training effect, participants were called back in a staggered manner, from as little as 5 weeks and up to 56 weeks from their original training. Our results indicate that the learning was mostly, though not fully, preserved, even after such an extended time period (Figure 3A–D, follow up). In fact, although there was variation between subjects in the degree of retention, there was no correlation between the time that had elapsed and the rate of retention (see Figure 3—figure supplement 1). Since there were only two feedback runs in this follow up scan, we also compared them to just the first two feedback runs for the first four days, in order to account for any differences arising from the different number of runs. The results using just the first two runs for the first four days were not in any way different from the results using the full data (see Figure 3—figure supplement 2).
 
-## Whole brain analysis
+### Whole brain analysis
 
 So far we had only considered what happens in the regions that were trained. In order to get a more comprehensive picture of the effects of the training on the brain, we conducted a whole brain analysis, which looked for changes during the training period (i.e. from day1 to day4). We calculated three maps, one for target1, one for target2, and one for the control region, with each map showing the change from day1 to day4 in the correlation of each voxel in the brain to the corresponding region. We then carried out a t-test across all participants for each of these three analyses, and the resulting maps for the ASD group are displayed in Figure 5. The changes were exactly as predicted by the training: the strongest positive change in correlation to target1 over the training period was in the somatosensory cortex (with a peak at target2), and the strongest negative change was in the control region. Changes to correlations with target2 were seen in the STS with a peak in target1, and negative changes in correlation to control were seen in bilateral STS (Figure 5A). Since we were training a network of three nodes, rather than a simple connection between two regions, we next calculated the composite change: for each voxel, the change between day1 and day4 in its correlation to target1 minus its correlation to control (Figure 5B), and the same change in its correlation to target2 minus control (Figure 5C). This analysis yielded similar but far stronger results. The maps of the composite correlations were corrected at a very conservative cluster threshold determined by random permutation testing, in accordance with recent statistical recommendations for analyses utilizing cluster size (Eklund et al., 2016) (see Materials and methods). These results support a causative role for the feedback itself, as the specific relationship that was trained between the two targets and the control came up in completely independent, whole-brain analysis. That is, using target1 relative to the control seed, the largest change in the whole brain was found in target2, even though that region was not pre-selected and the analyses did not constrain this to happen, and vice-versa using target2 and control. Note that we do not expect to find changes between day1 and day4 in either target1 or control in the target1-control map, as these regions did not change in relation to themselves. Rather, this analysis highlights all the other areas, outside of those two regions, which changed their correlation over the course of training in relation to target1 (increasing) and to control (decreasing), finding the peak of this change in target2. The same is true for the target2-control map, which shows an even greater effect focused on target1, consistent with the ROI analysis results showing a greater decoupling of target1 from control than target2 from control. Note that Figure 5 shows results only for the ASD group, as no significant peaks were identified in any of the target or control regions for the TD control group, and no voxels survived the cluster correction threshold.
 
@@ -70,7 +189,7 @@ So far we had only considered what happens in the regions that were trained. In 
 
 **Figure 5.:** (A) Top left: change in correlations to target1, between day1 and day4, t-test across participants. High values represent voxels that showed a consistent change between day1 and day4, such that on day4 they were more correlated to target1 than they were on day1. Note the positive peak in target2, and the negative peak in the control region. Top right: change in correlations to target2, between day1 and day4, t-test across participants. Note the positive peak in target1. Bottom: change in correlations to the control region, between day1 and day4, t-test across participants. Note the negative peak in target1 and bilateral STS. (B) Change in differential correlation to the target1 and control ROIs, between day1 and day4, t-test across participants. High values represent voxels that showed a consistent change between day1 and day4, such that on day4 they were more correlated to target1 and less correlated to control than they were on day1. Inset shows the same analysis at a higher threshold. (C) Same as (B), for target2 and control. Note that for both maps, the other target, which was not included in the analysis, emerges as the area of greatest change across training days. Maps corrected through permutation tests (see Materials and methods).
 
-## Transfer to resting state following training
+### Transfer to resting state following training
 
 The training-related changes we have demonstrated to this point were during the neurofeedback scans themselves. To be of any potential clinical value, these changes must also generalize beyond the training sessions, to the resting state scans, which reflect the baseline connectivity of the brain when not engaged in a specific task. In order to obtain as accurate an estimate of baseline as possible and to avoid any contamination by the task, only the two rest scans prior to the neurofeedback were used for this analysis. Changes were overall smaller than those seen during the training, but significant changes were found between day1 and day4 (target1-target2 correlations mean change = 0.07, p<0.038, composite correlations measure mean change = 0.1, p<2×10−4), and between day1 and the follow up (target1-target2 mean change = 0.09, p<0.011, composite correlations measure mean change = 0.11, p<2×10−4). Change in rest was significantly correlated to change during the neurofeedback scans (r = 0.42, p<0.04, permutation test). Moreover, 14/15 participants who came in for the follow up showed an increase in the composite correlation measure (Figure 6A). To assess whether the changes seen in the follow up could simply be a function of the elapsed time, we examined data from all participants in the previous study (used to define the training regions) which had at least two resting state scans from two different time points, and evaluated the change in connectivity seen between the sessions. 19 participants had two such data points, and the average time between the sessions was 13.2 months. The change however was not significant for any of the pairwise correlations, or the composite correlation measure (Figure 6A). We next looked at the composite measure for the 10 participants from our study who had also participated in the previous resting state experiment (and in the follow up), and compared change from the previous experiment to the first rest sessions on day1, before any training, and in this subset also the change from day1 of the training to day4 and to the follow up (Figure 6B). While there was no significant change from the previous experiment to day1 (mean time interval = 38.3 months, mean change = −0.04), there was significant change to day4 (mean change = 0.1, p<0.019) and to the follow up (mean change = 0.11, p<0.003). Taken together, these analyses provide strong evidence that the changes we observed were not a function of elapsed time but rather occurred as a direct result of our neurofeedback regime.
 
@@ -78,7 +197,7 @@ The training-related changes we have demonstrated to this point were during the 
 
 **Figure 6.:** (A) Left panel shows the changes in resting state composite difference correlations for the 19 participants for which two previous data points were available from a previous study, prior to neurofeedback (average time between sessions 13.2 months). The right panel shows the change in resting state composite difference correlations from the very first pre-training rest sessions on the first day of neurofeedback, to the rest sessions collected in the follow up session (also before the neurofeedback training sessions that day), for the 15 participants who took part in the follow up session. Average time between sessions for this group was 6.2 months. (B) Changes in resting state composite difference correlations for the 10 participants who had data from both the previous study, and the follow up session. Change between neurofeedback day1 and neurofeedback day4 as well as neurofeedback follow up, are significant (p=0.019, p=0.003 respectively). All correlations are taken from the resting state scans at the beginning of the relevant session. NF = neurofeedback.
 
-## Behavioral relevance
+### Behavioral relevance
 
 Finally, we asked whether the changes we see as a result of the training are in any way correlated to behavior. To this end, we looked at changes in behavior as measured by the behavioral questionnaires filled out by the parents prior to training, and two weeks after the end of the initial training set. These behavioral results included two statistical outliers who were removed from the analysis (definition of outliers was based on change scores greater than 3 standard deviation from that seen in an independent data set, see Materials and methods). We compared the change in these behavioral questionnaires to the change in correlations between the final resting state scans on the last day (following neurofeedback), and the resting state scans on the first day. There were two measures of behavior: the first, the Social Responsiveness Scale (SRS), has previously been found to correlate with functional connectivity in this network (see section on target selection), and therefore the change in this rating was expected to correlate with the change in the network. The second, the Behavior Rating Inventory of Executive Function (BRIEF), measures executive function rather than social abilities, and though patients with ASD show deficits on this measure (Baron et al., 2000), it is expected to reflect prefrontal functioning, and we expected that changes on this measure would not correlate to changes in the social network being trained (Anderson et al., 2002; Anderson et al., 2005; Mahone et al., 2009). Indeed, although there was no significant change in the mean SRS score across participants, with the mean score actually slightly (though not significnatly) increasing instead of decreasing as predicted (mean SRS before training = 69.8, mean SRS after training = 71.6, p=0.11), there was a significant correlation between changes in the resting state network and the change in SRS (pre training minus post training, so that a positive change corresponds to a reduction in symptoms, r = 0.56, p=0.016, Figure 7). There was no significant correlation between the baseline SRS score and the change in SRS seen during training (r = 0.14, p=0.29), or the baseline rest and the change in rest (r = −0.22, p=0.2). The partial correlation between change in rest vs. change in SRS, after controlling for baseline SRS and baseline rest, was higher (r = 0.62 p=0.014).
 
@@ -108,49 +227,53 @@ Since the lack of an explicit strategy allows covert neurofeedback to be used to
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 19 Males aged 15–25 (mean age = 20.93) who met the DSM-IV criteria for autistic disorder, an autism cut-off score for social symptoms on the Autism Diagnostic Review (ADR) and/or an ASD cutoff score from social +communication symptoms on the Autism Diagnostic Observation Schedule (ADOS), all administered by a trained, research-reliable clinician, were recruited for this experiment. Additionaly, 11 age matched typically developing males were recruited for the control group. All participants had normal to corrected to normal vision. IQ scores were obtained for all participants, and all full-scale IQ scores were ≥85 as measured by the Wechsler Abbreviated Scale of Intelligence, the Wechsler Adult Intelligence Scale-III, or the Wechsler Intelligence Scale for Children-IV. Participant groups did not differ in terms of full-scale IQ.
 
 one ASD participant was removed due to discomfort in scanner on day1, and another ASD participant was removed on day two due to anxiety. 1 TD participant was removed after day1 for excessive motion. 17 ASD and 10 TD participants completed all four days of neurofeedback training. 15 ASD participants returned for the follow up experiment. The experiment was approved by the NIMH Institutional Review Board (protocol 10_M-0027). Written informed consent was obtained from all participants.
 
-## Definition of ROIs
+### Definition of ROIs
 
 Three Regions of Interest (ROIs) were selected for training: two targets and one control. The targets were chosen according to previous research as those with a large degree of reduced connectivity in Autism Spectrum Disorder compared with typically developing (TD) controls, based on between group analysis as explained in (Gotts et al., 2012). For this analysis, we used an expansion of the dataset published in (Gotts et al., 2012), N = 56 ASD, 62 TD. Of the 56 ASDs in this dataset, 11 participated in the neurofeedback study. Additional constraints placed on the choice of ROIs was for them to be physically distant from each other, and in different networks (see (Gotts et al., 2012) for details). All ROIs were defined as spheres of 4 mm radius surrounding the focal points: Target1 - left Superior Temporal Sulcus (Talairach coordinates: −49,–29, 0), Target2 - left somatosensory cortex (Talairach coordinates: −54, 14, 39), and Control - right Inferior Parietal Lobe (chosen to be as uncorrelated with these two targets as possible in the TD dataset, Talairach coordinates: 49,–50, 42). Figure 1 shows the between group difference in the correlations between the ROIs.
 
-## Imaging data collection and MRI parameters
+### Imaging data collection and MRI parameters
 
 All scans were collected at the Functional Magnetic Resonance Imaging Core Facility on an 8 channel coil GE 3T (GE Signa HDxT 3.0T) magnet and receive-only head coil, with online slice time correction and motion correction. The scans included a 5 min structural scan (MPRAGE) for anatomical co-registration, which had the following parameters: TE = 2.7, Flip Angle = 12, Bandwidth = 244.141, FOV = 30 (256 × 256), Slice Thickness = 1.2, axial slices. EPI was conducted with the following parameters: TR = 2 s, Voxel size 3.2*3.2*3.2, Flip Angle: 60, TE = 30 ms, Matrix = 72×72, Total TRs = 270, Slices: 37. All scans used an accelerated acquisition (GE's ASSET) with a factor of 2 in order to prevent gradient overheating.
 
-## Neurofeedback experiment
+### Neurofeedback experiment
 
 The initial neurofeedback experiment consisted of 4 training sessions over 8 days. There were 2 consecutive training days, a 6 day delay, then a final set of 2 consecutive training days. Each training day had 2 initial rest scans, 4 neurofeedback sessions, and 2 final rest scans. All scans were 9 min long. Participants were instructed to maintain an eyes-open rest and look at the blank screen. Neuropsychological tests were administered at two timepoints: on the first training day before scanning, and two weeks following the last training day.
 
-## Follow-Up experiment
+### Follow-Up experiment
 
 Follow up scans were conducted 5–56 weeks after the final training day and consisted of a single, abbreviated neurofeedback session with two rest scans followed by two neurofeedback sessions.
 
-## Online real-time data collection
+### Online real-time data collection
 
 Regions of Interest (ROIs) were defined in Talairach space as described above. The standard Talairach brain was then co-registered to the structural scan collected that day, which was in turn co-registered to a short (10 TRs) functional echo-planar imaging scan (setup EPI) collected for that purpose each day before the first resting state session, to bring the ROIs into the native space during neurofeedback processing. All coregistration was carried out with the AFNI (Analysis of Functional Neuro-Images) software package (Cox, 1996).
 
-## Real-time fMRI algorithm
+### Real-time fMRI algorithm
 
 During online processing of the data, 3D motion correction and slice time correction were carried out on all functional images. BOLD signal was extracted from each voxel in the ROIs and the mean signal was calculated for each ROI.
 
-Feedback decisions were determined by a difference measure, taking into account both the changes in the trend between the two target ROIs and the control ROI. This difference measure was calculated for each TR and for each of the three ROIs. Our rt-fMRI algorithm calculated the difference between the mean signal in the current TR minus the signal in the preceding TR, giving the signal trend in each ROI (increasing or decreasing). If the trend in the two targets was the same, and opposite from the trend in the control ROI, then feedback was given, meaning both conditions had to be fulfilled for feedback to be given:ms(Target1(TR=t))−ms(Target1(TR=t−1))ms(Target2(TR=t))−ms(Target2(TR=t−1))>0&ms(Target1(TR=t))−ms(Target1(TR=t−1))ms(Control(TR=t))−ms(Control(TR=t−1))<0
+Feedback decisions were determined by a difference measure, taking into account both the changes in the trend between the two target ROIs and the control ROI. This difference measure was calculated for each TR and for each of the three ROIs. Our rt-fMRI algorithm calculated the difference between the mean signal in the current TR minus the signal in the preceding TR, giving the signal trend in each ROI (increasing or decreasing). If the trend in the two targets was the same, and opposite from the trend in the control ROI, then feedback was given, meaning both conditions had to be fulfilled for feedback to be given:
+
+$$
+\frac{ms(Target1(TR=t))−ms(Target1(TR=t−1))}{ms(Target2(TR=t))−ms(Target2(TR=t−1))}>0&\frac{ms(Target1(TR=t))−ms(Target1(TR=t−1))}{ms(Control(TR=t))−ms(Control(TR=t−1))}<0
+$$
 
 (ms = mean signal)
 
-## Neurofeedback procedure
+### Neurofeedback procedure
 
 Each training session had four neurofeedback training scans. The scans started out with a uniformly grey screen. Participants were told that there is a picture hidden underneath, and were instructed to try to unveil the image during what was described as the puzzle task. Importantly, no further cognitive strategies or suggestions were given to the participant for the duration of the experiment. Participants were not informed that their performance on the puzzle task was determined by brain activation.
 
-## Neurofeedback stimuli
+### Neurofeedback stimuli
 
 Participants received two forms of positive reinforcement whenever the real-time algorithm determined that the network requirements had been met: a ‘puzzle piece’, i.e. a square of the hidden picture, would become visible on the screen with a concomitant sound of positive valence. This feedback was chosen to maximize engagement with the paradigm during the scan by providing a complex and interesting visual stimulus in a game-like setting, and the auditory stimulus was paired to ensure that participants would be aware of positive feedback independent of their visual attendance.
 
-## Visual stimuli
+### Visual stimuli
 
 During rest scans participants were shown a uniformly grey screen.
 
@@ -160,28 +283,32 @@ At the end of each 9 min training round, participants viewed a scoreboard which 
 
 Post-hoc signal preprocessing was conducted in AFNI. The first four EPI volumes from each run were removed to ensure remaining volumes were at magnetization steady state, and remaining large transients were removed through a squashing function (AFNI's 3dDespike). Volumes were slice-time corrected and motion parameters were estimated with rigid body transformations. Volumes were coregistered to the anatomical scan. Volumes were smoothed with 6 mm blurring and normalized by the mean signal intensity of each voxel. The AFNI ANATICOR procedure was then applied to remove nuisance physiological and nonphysiological artifacts from the data (Jo et al., 2010). The anatomical scan was segmented into tissue compartments with Freesurfer (Fischl et al., 2002), Ventricle and white-matter masks were created and applied to the volume-registered EPI. Prior to smoothing, these masks gave pure nuisance times series for the ventricles and local estimates of the BOLD signal in white matter, averaged within a 15 mm radius. The measured respiration and heart rate signals were used to create Retroicor (Glover et al., 2000) and respiration volume per time (RVT) regressors (Birn et al., 2008). All nuisance time series in every run (average ventricle time series, average local white matter time series, 6 parameter estimates for head motion, and thirteen RVT and Retroicor regressors) were detrended with fourth-order polynomials before least-squares model fit to each voxel time series. No other filtering of the data was done. All participant data was aligned by affine registration to AFNI’s TT-N27 template in standardized Talairach and Tournoux (Talairach and Tournoux, 1988) space.
 
-## Neuropsychological tests
+### Neuropsychological tests
 
 Baseline neuropsychological tests were conducted before the initial training session, and post-experiment surveys were collected two weeks after the final neurofeedback session. Parents filled out the Social Behavior Scale (SRS) to identify common social behaviors in autism, as well as the Behavioral Rating Inventory of Executive Function (BRIEF). The ‘informant’ report (filled in by a parent) was used as it has been shown to be more accurate (McMahon and Solomon, 2015). An independent dataset of ASD subjects who did not participate in this experiment but had SRS test-retest data was used to determine change reliability. Data points that were beyond three standard deviations from the mean as determined by this analysis were excluded as outliers.
 
-## Cognitive strategy questionnaire
+### Cognitive strategy questionnaire
 
 We developed a cognitive strategy questionnaire that was completed by 11 of the 17 participants. Following their final scan session on day4 of the training, each of these participants was asked what they thought the experiment was about. Participants were then asked what they were doing during the scans, and if they used a particular cognitive strategy.
 
 Finally, participants were asked to rate on a scale of 1–10 how hard they had been trying to solve the puzzles each day, how satisfied they felt when a new puzzle piece came up, and if there were differences between days. The first six participants did not complete this questionnaire, but were interviewed after the final scan and reported no knowledge of the objective of the task, and similar cognitive strategies to those later reported in the questionnaire. See Table 1 for the data from these questionnaires.
 
-## Data analysis
+### Data analysis
 
-All data were analyzed with in-house software written in Matlab, as well as the AFNI software package. Data on the cortical surface were visualized with SUMA (SUrface MApping) (Saad et al., 2004). The composite difference measure was computed by subtracting the average correlation of the two target/control pairs, from the target/target correlation:corrTarget1,Target2-12(corrTarget1,Control+ corrTarget2,Control)
+All data were analyzed with in-house software written in Matlab, as well as the AFNI software package. Data on the cortical surface were visualized with SUMA (SUrface MApping) (Saad et al., 2004). The composite difference measure was computed by subtracting the average correlation of the two target/control pairs, from the target/target correlation:
+
+$$
+corrTarget1,Target2-\frac{1}{2}(corrTarget1,Control+corrTarget2,Control)
+$$
 
 All p-values for the changes in correlation between days were computed through permutation tests, randomly permuting the days for 5000 iterations.
 
-## Whole-brain analysis
+### Whole-brain analysis
 
 For each participant, for each neurofeedback scan on day1 and day4, we first transformed the correlation values with Fisher’s z-transform to improve normality, then calculated a difference measure per voxel: corr(voxel time series, avg. Target1 time series) - corr(voxel time series, avg. Control time series). The resulting maps held information regarding each voxel’s differential correlation to the Target1 vs. Control ROIs. We then averaged the maps for each participant across all four neurofeedback scans for each of the two days, and subtracted the average day1 map from the average day4 map. Each voxel in the resulting map now signified the change in correlation from day1 to day4, in the differential correlation to the Target1 ROI vs. the Control ROI, where a positive value means that this voxel was differentially more correlated to Target1 than to Control on day4 compared with day1. Normality of these data were ascertained using Lilliefor’s goodness of fit test. We then carried out a t-test across the 17 participants, to identify voxels with a consistent change across subjects. Maps were corrected using a permutation test to determine significant cluster size, with day1 and day4 randomly permuted for each participant across 5000 permutations (as suggested by [Eklund et al., 2016]). These permutations were carried out at p-value thresholds of 0.05, 0.01, 0.005, 0.001 and 0.0005, and a mask was created of voxels that survived any of these corrections. The mask was then applied to the map shown in Figure 5A, which was set at a p-value threshold of 0.05.
 
 The same procedure was carried out for the Target2 minus Control differential correlation, and the resulting map is shown in Figure 5B.
 
-## Data availability
+### Data availability
 
 Data is available via the XNAT platform https://central.xnat.org/app/template/Index.vm (dataset title 'Direct modulation of aberrant brain network connectivity through real-time neurofeedback' with ID number ASD_NF). As some of the participants in the experiment signed an older version of the consent form, which does not explicitly allow for data sharing, we are currently working on re-consenting all the participants with a new version. Hence for now, users will need to request access through the system. This can be done by creating a XNAT user account and pressing the request access link.

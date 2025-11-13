@@ -38,45 +38,89 @@ In this study, we attempt to elucidate the molecular pathways that are governed 
 
 ## Results
 
-## Trrap deletion in Purkinje cells results in cerebellar degeneration
+### Trrap deletion in Purkinje cells results in cerebellar degeneration
 
 To study the role of histone acetylation and Trrap in postmitotic neurons, we generated two mouse models. First we crossed mice carrying the Trrap floxed allele (Trrapf/f) (Herceg et al., 2001) with Pcp2-Cre mice (Tg(Pcp2-cre)2Mpin) (Barski et al., 2000), to delete Trrap in Purkinje cells (Trrap-PCΔ). Trrap+/f mice with the Cre transgene, or Trrapf/f without the Cre transgene, were phenotypically normal, and thus they were used as controls. Trrap-PCΔ mice were born healthy and exhibited normal (in rotarod tests) or mild defective (in beam balance) motor coordination at young age (1–2 months). However, they displayed an evident miscoordination at mid age (3–6 months), which became more severe after 9 months (old group) (Figure 1A). By the age of 1 year, Trrap-PCΔ mice developed an age-dependent locomotor dysfunction characterized by signs of ataxia, namely impaired coordination and unsteady gait (data not shown).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/61531/elife-61531-fig1-v3.jpg)
+
+**Figure 1.:** (A) The rotarod test and the beam balance were used to assess the motor coordination of control and Trrap-PCΔ mice. The left panel depicts the time that the mice stayed in the rod before falling off. The right panel shows the quantification of the time taken by mice to cross the beam. (N) Indicates the number of mice analyzed. Young: 1–2 months; mid age: 3–6 months; old: 9–12 months. (B) Immunostaining of the cerebellar sections of 9-month-old mice using an antibody against calbindin (red, Purkinje cells). ml: molecular layer; gcl: granule cell layer; PCl: Purkinje Cell layer. (C) The quantification of the number of Purkinje cells in the cerebellum at the indicated ages. The mm of the Purkinje cell layer analyzed are indicated in the table. Young: 1–2 months; mid age: 3–6 months; old: 9–12 months. (D) The representative of the western blot analysis for markers for Purkinje cells (calbindin), astrocytes (GFAP), oligodendrocytes (CNPase), and activated microglia (Galectin-3). (E) The quantification of western blots of the cerebellum (from D). Signal intensities are normalized to α-Tubulin. The numbers inside the bars indicate the number of mice analyzed. Young: 1 month; mid age: 4 months; old: 9 months. Co.: control; PCΔ: Trrap-PCΔ. Mean ± standard error of the mean is shown. Two-way ANOVA and Holm–Sidak test was performed for statistical analysis in (A), (B) and Student's t-test or one-way ANOVA for (C), (E). n.s.: not significant. *p≤0.05, **p≤0.01, ***p≤0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61531/elife-61531-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Immunostaining of sagittal sections using TUNEL reaction (red, cell death) and antibodies against calbindin (green, Purkinje Cells) and GFAP (red, astrocytes), and counterstained with DAPI. A representative image from 9-month-old mice shows a marked reduction in Purkinje cell numbers (green) in Trrap-PCΔ samples accompanied by reactive astrogliosis (red) in all layers of the cerebellar lobes and an increase in cell death in all cerebellar areas. The cerebellar lobes are numbered I–X. (b) High magnification of the areas highlighted in (a). Note a thinner molecular layer of 9-month-old cerebella (see quantification in Figure 2G). PCl: Purkinje cell layer, ml: molecular layer, gcl: granule cell layer. Co.: control; PCΔ: Trrap-PCΔ.
+
 Immunostaining of the Purkinje cell marker calbindin revealed a progressive loss of Purkinje cells in Trrap-PCΔ cerebella – starting from 3 months old mice – which became severe at 9 months (Figure 1B,C). Western blot analysis of mutant brains of different ages confirmed a progressive Purkinje cell loss, as judged by the downregulation of calbindin (Figure 1D,E). While there was no significant change in the expression of the oligodendrocyte marker CNPase, a progressive increase of the astrocyte marker GFAP, namely astrogliosis, and the activated microglia marker Galectin-3 were evident in mutant cerebella, both of which are hallmarks of neurodegeneration (Figure 1D,E). Immunostaining of the cerebella of 2-month-old and 9-month-old mice confirmed a loss of Purkinje cells and a great increase of astrocytes (GFAP+ signals), a sign of astrogliosis, in Trrap-PCΔ cerebella at old age, whereas Trrap-PCΔ cerebella of young mice were normal (Figure 1—figure supplement 1a,b). Also, TUNEL staining detected more cell death in all cerebellar lobes of old mice (Figure 1—figure supplement 1a,b). The microglia activation and astrogliosis could be due to a homeostatic response to Purkinje cell loss, but they closely resemble neurodegeneration.
 
-## Trrap deleted Purkinje cells exhibit age-dependent axonal swellings and dendrite retraction
+### Trrap deleted Purkinje cells exhibit age-dependent axonal swellings and dendrite retraction
 
 To examine the neurodegenerative process, we analyzed Trrap-deleted Purkinje cells during early postnatal life. Immunostaining of brain sections using antibodies against calbindin and myelin-binding protein (MBP) detected axonal swellings of Trrap-deleted Purkinje cells readily at 1 month of age, prior to Purkinje cell loss (Figure 2A). Axonal swellings were generally myelinated at this age (Figure 2A), although a loss of myelination was observed occasionally in a few severe cases (data not shown). Furthermore, transmission electron microscopy (TEM) revealed the myelination index of Purkinje cell axons as normal in young (1-month-old) mice, but significantly lower, as judged by a higher g-ratio, in mid age (6-month-old) Trrap-PCΔ mice compared to controls (Figure 2B,C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/61531/elife-61531-fig2-v3.jpg)
+
+**Figure 2.:** (A) Cerebellar sections from 1-month-old mice were stained with antibodies against Calbindin (green, Purkinje cells) and myelin-binding protein (MBP, red, Myelin sheets) and counterstained with DAPI. White arrows indicate axonal swellings. (B) Representative images of electromicrographs showing axon myelination in the cerebellar white matter of 6-month-old control and Trrap-PCΔ mice. M: Myelin sheet. (C) The quantification of the myelination index at the indicated ages by g-ratio, which is measured by ImageJ as ag-factor (the square-root of the area of the inner surface of an axon divided by the area of the outer surface including the myelin). Thus, a high g-ratio indicates a low myelination index. (D) Single Purkinje cells were analyzed by tracing the expression of the Confetti transgene (RFP). Representative Purkinje cell images of maximum intensity projection (MIP) from Z-stacks (upper panel) of 10-month-old mice are shown after reconstruction (lower panel) based on RFP expression in Trrap-PCΔ mice. (E) The quantification of the maximum radius after Sholl analysis, at the indicated ages, demonstrating that Purkinje cells retract their dendrites in Trrap-PCΔ mice. Young: 1–4 months; old: 10 months. (F) The graph shows the critical value measured by the Sholl analysis, at the indicated ages, indicative of the complexity of Purkinje cells. (G) The quantification of the molecular layer thickness of all cerebellar lobes. Young: 1–4 months; old: 10 months. Co.: control; PCΔ:Trrap-PCΔ. N: the number of mice analyzed. The numbers inside the bars indicate the number of cells analyzed. Mean ± standard error of the mean is shown. Student's t-test or one-way ANOVA was performed for statistical analysis. n.s.: not significant. *p≤0.05, **p≤0.01, ***p≤0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61531/elife-61531-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Scheme of Sholl analysis. Concentric circles are drawn around a given Purkinje cell and the number of times the cell crosses the circles is scored. (b) The graph shows the results of the Sholl analysis indicating that Purkinje cells at indicated age (old, 10 months; young, 1–4 months) retract their dendrites in Trrap-PCΔ mice. N: number of mice; n: cells.
+
 To quantify the morphological changes of Trrap-deleted Purkinje cells, we generated Trrap-PCΔ mice expressing a Confetti transgene (B6.Cg-Tg(Thy1-Brainbow1.0)HLich/J) (thereafter Trrap-PCΔ-Confetti), which enables individual Purkinje cells to stochastically express one of four fluorescent proteins upon Cre expression (Snippert et al., 2010). This allows distinguishing single neuron morphology from adjacent cells and reconstructing the dendritic trees of individual Purkinje cells (Figure 2D). A Sholl analysis (Figure 2—figure supplement 1a) of Trrap-deleted Purkinje cells at young age (1–4 months) and at old age (10 months) showed a progressive decrease in the size of their dendritic trees without great effects on their complexity as judged by the critical value (Figure 2E,F, Figure 2—figure supplement 1b). Consistent with the Sholl analysis data, the molecular layer became thinner at older age compared to young age (Figure 2G, Figure 1—figure supplement 1b). These observations indicate that Trrap deletion does not affect arborization, but rather causes a retraction of already formed dendrites of neurons.
 
-## Trrap deletion changes transcriptional programs in neurons
+### Trrap deletion changes transcriptional programs in neurons
 
 The scarcity of Purkinje cell neurons in the Trrap-PCΔ cerebellar model limited the searching for the molecular mechanism related to the Trrap-HAT function. To gain a feasible approach, we devised another mouse model in which Trrap was deleted in a large subset of neurons, which would facilitate the molecular analysis of the HAT function in the brain. To this end, we crossed Trrapf/f mice with Camk2-Cre transgenic mice (Tg(Camk2a-cre/ERT2)2Gsc) to generate mice with a Trrap deletion in pyramidal neurons in the cortex and striatum of the forebrain (designated as Trrap-FBΔ). Trrap-FBΔ brains were normal and had an efficient deletion of Trrap already at day 10 of the postnatal life (P10) (Figure 3A, see below for protein analysis in Figure 4A,B, and for qPCR analysis Figure 4—figure supplement 1f). We then carried out RNA-seq and proteomic analyses using cortices and striata from P10 Trrap-FBΔ and control mice. Trrap deletion resulted in highly reproducible changes in the transcriptome of cortices and striata with 5090 and 4389 differentially expressed genes (DEGs) respectively (cutoff adjusted, p<0.05) (Figure 3B, Figure 3—figure supplement 1a, Supplementary file 1). The Trrap-FBΔ cortex and striatum shared 2695 common DEGs, corresponding to 52.9% and 61.4% of the respective tissues. The directionality of the changes was conserved in 99.3% of the genes (Figure 3C, Supplementary file 1). Among the common DEGs, 1122 upregulated and 1554 downregulated genes were overlapping between these two parts of the brain (Figure 3C). These results strongly suggest that similar mechanisms operate in the neurons from both brain regions. Gene ontology (GO) analyses of the common DEGs in RNA-seq data sets of both the cortex and striatum revealed alterations in multiple signaling pathways important for neuronal processes (Figure 3D, Source data 1A, Supplementary file 1). Intriguingly, about a half of the Top50 pathways were linked with microtubule dynamics and its related cellular processes (Figure 3D).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/61531/elife-61531-fig3-v3.jpg)
+
+**Figure 3.:** (A) Nissl staining of the coronal session of Trrap-FBΔ brain at postnatal day 0 (P0) and 10 (P10). Ctx: cortex; str: striatum; v: ventricle. (B) The Venn diagram depicts the overlap between the differentially expressed genes (DEGs) measured by RNA-seq in the cortex and striatum. The numbers refer to the DEGs in the indicated data sets. (C) Log2 of the fold changes of the 2695 common DEGs in Trrap-FBΔ cortex and striatum. (D) Top50 GO terms of the 2695 overlapping hits identified in the RNA-seq data set of the cortex and striatum. Note that microtubule dynamics related processes are highlighted in red. (E) Transcription factor binding site (TFBS) enrichment analysis of the 1261 common DEGs in aNSCs, the cortex, and the striatum identified by RNA-seq. (F) Luciferase assays using a Sp1-responsive construct. The graph shows the luciferase activity normalized by Bradford assay. N: the number of cell lines analyzed; Mock: empty vector, Sp1: overexpression; luc: luciferase. Co.: control; aNSCsΔ: Trrap-aNSCsΔ. n: the number of cell lines analyzed. Mean ± standard error of the mean is shown. Unpaired t-test was performed for statistical analysis. n.s.: not significant; *p≤0.05, **p≤0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61531/elife-61531-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (a) The table summarizes the different genome-wide approaches used to analyze the function of Trrap in different cell types and the general results obtained. For all analyses, four to five biological replicates were used. (b) The Venn diagram depicts the overlap between the differentially expressed genes (DEGs) measured by RNA-seq and protein changes measured by mass spectrometry (cutoff, q ≤ 0.1) in Trrap-FBΔ cortices. The numbers refer to common DEGs/DEP (differentially expressed proteins) in the indicated data sets. (c) The Venn diagram depicts the log2 of the fold changes of the 104 common DEGs/proteins in Trrap-FBΔ cortices.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61531/elife-61531-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** (a) The experimental workflow of the Trrap deletion in aNSCs in culture by 4-OHT followed by experiments at indicated day post 4-OHT treatment (DPO). (b) Western blot analysis of the Trrap deletion in aNSC at 5DPO. GAPDH is a loading control. Quantification of the Trrap protein levels from three animals (N = 3) after normalization to GAPDH is shown on the left. Co.: control; aNSCΔ: Trrap-aNSCΔ. (c) The Venn diagram depicts the overlap between the differentially expressed genes (DEGs) measured by RNA-seq in the cortex, striatum, and aNSCs. The numbers refer to DEGs in the indicated data sets. (d) Log2 of the fold changes of the 2120 common DEGs in Trrap-FBΔ cortex and Trrap-aNSCΔ aNSCs. (e) Transcription factor binding site (TFBS) enrichment analysis of the 1261 common DEGs in aNSCs, cortex, and striatum identified by RNA-seq. (f) A list of the Sp1 targets based on published ChIP-seq results was obtained from the Harmonizome database (Rouillard et al., 2016) and compared with our RNA-seq results to determine the amount of Sp1 targets in each data set. (g) Top50 GO terms of the processes regulated by Sp1. Note that microtubule dynamics related processes are highlighted in red.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/61531/elife-61531-fig4-v3.jpg)
+
+**Figure 4.:** (A) Western blot analysis of the Trrap deletion and expression of STMNs in the forebrain of indicated genotype at postnatal day 10 (P10). β-actin is a loading control. Co: control; FBΔ: Trrap-FBΔ. (B) The quantification of the expression of the indicated proteins in mutant forebrains measured by western blots are related value to adjacent controls after normalization to β-actin. N: the number of mice analyzed. The error bar presents the standard error. Paired t-test was used for statistical analysis. *p≤0.05, **p≤0.01. (C and D) Sagittal sections of 4-month-old Trrap-PCΔ mice were stained against STMN3 (green, C) and STMN4 (green, D), the Purkinje cell marker Calbindin (red) and counterstained with DAPI (blue). The right panel shows the average intensity of STMN3 or STMN4 in Purkinje cells normalized by the intensity in the neighboring cells (not Trrap-deleted). n: the number of cells analyzed; N = 4 mice analyzed. (E) ChIP analysis on the STMN3 and STMN4 promoters in control striata using antibodies against Sp1, AcH4, and IgG. qPCR analysis was performed to quantify the binding of the indicated factors to the promoter. The binding enrichment was calculated as fold enrichment over IgG. N = 3 mice analyzed. The primers that contain the Sp1 site for ChIP assays are marked in Figure 4—figure supplement 1g. (F and G) ChIP analysis on the proximity of STMN3 (F) and STMN4 (G) promoters in control and TrrapΔ aNSCs. Protein binding value is presented in percentage of input. The large error bars in Oct4 ChIP are due to an inclusion of a high value from one pair of samples. N = 3–4 mice analyzed. (H) Western blot analysis of STMN3 and STMN4 expression after siRNA-mediated knockdown of Sp1 in aNSCs. Oct4 is an Sp1 independent transcription factor control and β-actin controls loading. (C–H) Mean ± standard error of the mean is shown. Unpaired t-test was performed for statistical analysis. *p≤0.05, **p≤0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61531/elife-61531-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (a) The scheme depicts the overlap between the common differentially expressed genes (DEGs) measured in the RNA-seq analyses of the cortex and striatum of Trrap-FBΔ mice and acetylated histone depleted peaks in aNSCs. The numbers refer to common genes identified in the indicated data sets. (b) Level of histone acetylation across SP1-motif in the whole genome. Box plot shows the distribution of lower quartile 25% and upper quartile 75%. RPKM: Fragment per kb pair region per million sequence reads. Whiskers present minimal to maximal value. Unpaired t-test was performed for statistical analysis. *p≤0.05. (c) Level of histone acetylation across SP1-motif in the genome at Trrap DEGs. Box plot shows the distribution of lower quartile 25% and upper quartile 75%. Whiskers present minimal to maximal value. ‘Up’ indicates the acetylated histone peak among genes that are upregulated after Trrap-deletion, ‘down’ indicates those which are downregulated. Unpaired t-test was performed for statistical analysis. *p≤0.05, **p≤0.01. (d) Genes overlapping in RNA-seq from cortices and striatum and AcH3 ChIP-seq in aNSCs. The log2 of the fold changes in RNA-seq of cortices and AcH3 ChIP-seq of the 282 genes where decreased AcH3 was observed concomitant with changes in RNA levels. STMN3 and STMN4 are targets analyzed in this study and related to neuronal homeostasis. (e) Genes overlapping in RNA-seq from cortices and striatum and AcH4 ChIP-seq in aNSCs. Log2 of the fold changes in RNA-seq of cortices and AcH4 ChIP-seq of the 136 genes where decreased AcH4 was observed concomitant with changes in RNA levels. STMN4 is a target analyzed in this study and related to neuronal homeostasis. (f) Quantitative PCR (q-PCR) analysis of Sp1 target genes in Trrap-FBΔ cortex and striatum. N = 4, the number of mice analyzed. Unpaired t-test was performed for statistical analysis. *p≤0.05; ***p≤0.001; n.s.: not significant. (g) Genomic view of the Stmn3 and Stmn4 gene showing the levels of histone H3 and H4 acetylation in control and mutant aNSCs from ChIP-seq data sets (Supplementary file 5). The primers used for ChIP assays are located in the promoter proximity of respective genes. Lower panels depict the sequence of both ChIP probes, in which Sp1 consensus is shown.
+
 Whole proteomic analysis of P10 Trrap-FBΔ cortices identified 122 out of 6919 proteins to be significantly altered after Trrap deletion (cutoff, q < 0.1) (Figure 3B, Figure 3—figure supplement 1b, Supplementary file 2). Notably, a comparison between RNA-seq and proteomics data sets showed that 85% of the proteins altered by Trrap deletion, i.e., 33 upregulated and 71 downregulated genes, were altered in the same way at the RNA level, which resembled 100% directionality (Figure 3B, Figure 3—figure supplement 1c, Supplementary file 2). These results indicate that most changes in the proteome were due to changes in the transcriptome.
 
-## Trrap deletion alters Sp1 pathway
+### Trrap deletion alters Sp1 pathway
 
 TRRAP is a cofactor interacting with various transcription factors and recruits HAT activity to their target gene promoters. To understand through which transcription factors Trrap was mediating its function, we performed a transcription factor binding site (TFBS) enrichment analysis on the common DEGs in Trrap-deleted cortices and striata. We found that most of these transcriptional changes after Trrap deletion were mediated mainly by limited transcription factors, among which transcription factors Sp1 and TCFs appeared to be the most relevant upstream factors (Figure 3E, Supplementary file 3). They mediated Trrap-dependent changes not only upstream of the common DEGs, but also upstream of the DEGs from each data set of cortices and striata (Supplementary file 3). Transcription factors TCF1, TCF3, and NFAT are known effectors of the Wnt signaling pathways (Cadigan and Waterman, 2012) and were indeed downstream of the Sp1-mediated transcription regulation upon Trrap deletion (Supplementary file 1). Hence, our data suggest that Sp1 is likely the main regulator for all these changes in Trrap-deleted brains.
 
-## The Sp1 pathway is a conserved transcriptomic network in Trrap-deleted neural cells
+### The Sp1 pathway is a conserved transcriptomic network in Trrap-deleted neural cells
 
 Sp1 is a key transcription factor capable of regulating many cellular processes, including proliferation, cell differentiation, apoptosis, immune responses, DNA damage responses, and chromatin remodeling (Li and Davie, 2010). We attempted to analyze the transcriptional activity of Sp1 in the absence of Trrap. To achieve this, we had to adopt an in vitro culture approach and used replicating adult neural stem cells (aNSCs) from Trrapf/f mice expressing the CreERT2 transgene (Rosa26-CreERT2 Gt(ROSA)26Sortm1(cre/ERT2)Tyj) (designated as Trrap-iΔ). Addition of 4-hydroxytamoxifen (4-OHT) in cultured Trrap-iΔ NSCs induced an efficient deletion of Trrap (Figure 3—figure supplement 2a,b). We first validated the transcriptome of aNSCs in comparison with that of Trrap-FBΔ cortex and striatum and found 1261 common DEGs among these three samples. The directionality is very conserved in 93.1% between the cortex and aNSCs (Figure 3—figure supplement 2c,d, Supplementary file 1). Intriguingly, TFBS analysis revealed a remarkable commonality of DEGs among Trrap-deleted cortices, striata, and aNSCs as the transcriptional targets of Sp1 (Figure 3—figure supplement 2e, Supplementary file 3). Thus, Trrap-HAT regulates a very conserved transcriptomic network in different brain regions as well as in NSCs. Using these cells, we then performed a luciferase reporter assay to investigate whether Sp1 is directly regulated by Trrap and detected a dramatic decrease in Sp1 activity in Trrap-deleted NSCs, compared to control cells. Strikingly, ectopic overexpression of Sp1 in Trrap-deleted cells failed to activate the Sp1-reporter (Figure 3F). These data indicate that Trrap is indeed required for Sp1-mediated transcriptional activation.
 
-## Alteration of Sp1-targets after Trrap deletion
+### Alteration of Sp1-targets after Trrap deletion
 
 RNA-seq analysis suggests that Trrap ablation leads to changes of the Sp1-dependent transcription regulation of its downstream targets in various neurological processes (Source data 1A). We then compared the Sp1 targets identified in our transcriptome (DEGs) analyses (Supplementary file 1) with Sp1 targets identified by ChIP-seq from the Harmonizome database (Rouillard et al., 2016) (https://amp.pharm.mssm.edu/Harmonizome/gene_set/SP1/ENCODE+Transcription+Factor+Targets). We found that a high degree of the DEGs from Trrap-deleted brains as well as aNSCs were putative Sp1 targets (Figure 3—figure supplement 2f, Supplementary file 4). GO analysis of the common DEGs revealed that more than 30% of the Top50 pathways under the control of Sp1 were linked with microtubule dynamics-related cellular processes (Figure 3—figure supplement 2g, Supplementary file 4).
 
 To further examine how Trrap affects HATs at target gene promoters, we performed a ChIP-seq study of acetylated histones H3 and H4 using Trrap-deleted aNSCs. Depletion of Trrap led to a downregulation of 2274 AcH3 and 1355 AcH4 peaks that were associated with coding genes (equivalent to 10% of the most depleted regions in TrrapΔ versus controls) (Figure 4—figure supplement 1a, Supplementary file 5). Only 12.6% and 10.2% respectively of these depleted peaks correlated with changes in the RNA level of the corresponding genes in Trrap-FBΔ brains (Figure 4—figure supplement 1a, Supplementary file 5). ChIP-seq analyses revealed no significant difference of AcH3 on Sp1-site between control and Trrap-deleted aNSCs, whereas H4Ac on Sp1-site in control (mean = 12.37) is slightly lower than in Trrap mutants (mean = 12.54) (Figure 4—figure supplement 1b). Interestingly, the downregulated genes had a significantly lower acetylation level of H3 and H4 in the Sp1 promoter area in Trrap deleted cells (Figure 4—figure supplement 1c). Twenty-two genes exhibited downregulated histone H3 and H4 acetylation and were also downregulated in the RNA-seq from brains. Among them, 11 genes were Sp1 targets according to the Harmonizome database (Supplementary file 5). The microtubule dynamics proteins STMN3 (SCLIP) and STMN4 (RB3) are of special interest (Figure 4—figure supplement 1d,e), because microtubule dynamics have been proposed to be involved in brain homeostasis (Chauvin and Sobel, 2015; Dubey et al., 2015) and defects in microtubule dynamics often cause axonal swellings and dendrite retraction in postmitotic neurons (Dubey et al., 2015; Voelzmann et al., 2016). Together with the high incidence of the dysregulated processes associated with microtubule dynamics, which are regulated by Sp1 (Figure 3E, Figure 3—figure supplement 2f), the finding of these two microtubule destabilizing proteins postulates this particular cellular process as the main route affected by Trrap deletion in the brain.
 
-## Trrap-HAT mediates Sp1 transcriptional control of microtubule dynamic genes
+### Trrap-HAT mediates Sp1 transcriptional control of microtubule dynamic genes
 
 The microtubule destabilizing proteins STMN3 and STMN4 are members of the Stathmin protein family (Chauvin and Sobel, 2015). STMNs 3 and 4 were found within the Top30 changes in our RNA-seq and proteomics data sets of brain samples (Source data 1B and C, Supplementary file 2). qPCR analysis confirmed a great downregulation of these genes in Trrap deleted cells of forebrain tissues (Figure 4—figure supplement 1f). Western blot analysis also confirmed a great reduction of both STMN3 and STMN4 proteins in Trrap-deleted forebrains at P10 (Figure 4A,B). We next turned our analysis to our neurodegeneration model Trrap-PCΔ mice. Co-staining of STMN3 or STMN4 with calbindin in the brain sections detected a significant decrease of both proteins in Trrap-deleted Purkinje cells compared to controls (Figure 4C,D). To explore the mechanism, ChIP-seq was performed and showed that the level of AcH3 and AcH4 at the promoters of these genes was greatly reduced (Figure 4—figure supplement 1g). To validate the RNA-seq and ChIP-seq data, we performed ChIP experiments in brain samples and found both Sp1 binding and histone H4 acetylation were enriched at the STMN3 and STMN4 promoters in controls (Figure 4E). Upon Trrap deletion there was a dramatic decrease in Sp1 binding, as well as in the acetylation of histone H4 in the STMN3 and STMN4 promoters (Figure 4F,G). We also noted that Trrap deletion did not change the H3K4m2 level in the STMN3 promoter, yet decreased mildly in the STMN4 promoter. Moreover, Trrap deficiency did not compromise binding of Sp1-unrelated transcription factor Oct4 at the promoter proximities of these STMNs genes (Figure 4F,G). These data together indicate an essentiality of Trrap for loading Sp1 and HATs to the promoters of these Sp1 target genes. Furthermore, siRNA-mediated Sp1 knockdown indeed decreased expression of STMN3 and STMN4 proteins (Figure 4H). These results demonstrate that the Trrap-HAT-Sp1 axis directly controls the expression of STMN3 and STMN4 in neurons.
 
-## Functional test of STMNs in neuronal defects by Trrap deficiency
+### Functional test of STMNs in neuronal defects by Trrap deficiency
 
 Stathmin family proteins STMN3 and STMN4 are mostly or exclusively expressed in the nervous system where they control microtubule dynamics, an essential process for neuronal differentiation, morphogenesis, and functionality (Chauvin and Sobel, 2015; Dubey et al., 2015). To investigate if Trrap deficiency especially affecting neuronal homeostasis was indeed mediated by STMNs, first we knocked down Trrap by siRNAs in primary neurons isolated from wild-type E16.5 cortex (Figure 5—figure supplement 1a), co-transfected with GFP or STMNs 3- or 4-expressing vectors at day 6 in vitro culture (DIV6), designated day 0 post transfection (DPT0), and analyzed the neuronal phenotype at DPT6 (Figure 5—figure supplement 1b). Immunofluorescence analysis revealed that the Trrap knockdown evidently reduced the neurite length and the branching numbers of neurons (Figure 5A–C). This was also confirmed by the IncuCyte assay at DPT6 (Figure 5—figure supplement 1c,d), which allows scoring a large number of cells. These findings indicate that Trrap deficiency also compromises neuronal arborization in vitro. To examine whether the downregulation of STMNs is indeed responsible for the neuropathies of Trrap deleted neurons, we ectopically expressed STMN3 in Trrap knockdown neurons (Figure 5—figure supplement 1e). Intriguingly, ectopic expression of STMN3 is sufficient to rescue these neuronal defects caused by Trrap knockdown (Figure 5A,B). Similarly, ectopic expression of STMN4 also corrected the neurite length and branching defects in Trrap knockdown primary neurons (Figure 5A,C). Interestingly, we note a co-upregulation of both STMNs when either STMN3 or STMN4 was overexpressed (Figure 5—figure supplement 1e), which suggests a co-stabilization or cooperative action of both STMNs in microtubule dynamics in the brain; yet the underlying mechanism requires further investigation. Taken together, these experiments demonstrate that Trrap prevents neuropathy by regulating Stathmin associated with microtubule dynamics.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/61531/elife-61531-fig5-v3.jpg)
+
+**Figure 5.:** (A) Immunofluorescent images of primary neurons isolated from E16.5 forebrains at 6 days post co-transfection of siRNA (siScramble, siTrrap-4) with GFP, or with the GFP-STMN3, or with GFP-STMN4 expressing vector. (B) The neurite length after the Trrap knockdown and rescue by the STMN3 or STMN4 overexpression was analyzed at 6 days post co-transfection of the indicated siRNA with the GFP-, STMN3-, or STMN4-expressing vector. The neurite length is measured with NeuronJ (ImageJ plug-in). Only GFP-positive neurons (indicative of transfection) were analyzed. Each bar represents the data from four to six mouse embryos; the experiments were repeated more than three times. Unpaired t-test was performed for statistical analysis. **p≤0.01, ***p≤0.001, n.s., not significant. (C) The neurite branching after the Trrap knockdown and rescue by STMN3 or STMN4 overexpression was analyzed at 6 days post co-transfection of the indicated siRNA with the GFP, STMN3-, or STMN4-expressing vector. The neurite length is measured with NeuronJ (ImageJ software). Only GFP-positive neurons were scored and are shown. Each bar represents the data from four to six mouse embryos; the experiments were repeated more than three times. Unpaired t-test was performed for statistical analysis. *p≤0.05, **p≤0.01, ***p≤0.001, n.s., not significant. (D) Working model of Trrap-HAT-Sp1 in brain homeostasis and neurodegeneration. The Trrap deletion compromises HAT to acetylate histones resulting in insufficient binding of Sp1 and the subsequent downregulation of target genes involved in microtubule dynamics (STMNs). The dysregulation of STMNs provokes the axonal swelling, declines of neurite lengths and branching of postmitotic neurons, ultimately, leading to defective neuronal homeostasis and neurodegeneration.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61531/elife-61531-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Western blot analysis of the siRNA mediated Trrap knockdown in N2A cells. Various siRNAs against Trrap (−1,–2, −3,–4) and siScramble (as a control) are shown. The efficiency of the Trrap knockdown was determined by ImageJ software and is shown on the top of the blot. The Trrap level is normalized to the non-treated sample after correction to GAPDH. The error bar presents the standard error. Unpaired t-test was used for statistical analysis. *p≤0.05, **p≤0.01. (b) Scheme of primary neuron transfection and analysis. The primary neurons were isolated from E16.5 murine cortical tissue and cultured for 6 days (DIV) prior to transfection. Six days post-transfection (DPT), the neuronal culture was subject to analysis. (c) The neurite length was acquired and analyzed by IncuCyte at DPT6. The total neurite length (mm) was divided by the number of the cell-body cluster in the whole culture plate. Only GFP-positive (indicative of transfection) neurons were scored. The mouse embryo number: N = 6. The error bar represents the standard deviation. Unpaired t-test was used for a statistical analysis. *p≤0.05. (d) The neuronal culture was imaged by IncuCyte at DPT6 and the neurite branching number per cell-body cluster is shown. The neurite branching was scored manually on all GFP-positive only neurons. The mouse embryo number: N = 6. The error bar represents the standard deviation. Unpaired t-test was used for statistical analysis. ***p≤0.001.
 
 ## Discussion
 
@@ -92,67 +136,742 @@ Very recently, human patients carrying de novo mutations of TRRAP are reported t
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Trrap</td>
+      <td>Genebank</td>
+      <td>MGI:MGI:2153272</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Sp1</td>
+      <td>Genebank</td>
+      <td>MGI:MGI:98372</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>STMN3</td>
+      <td>Genebank</td>
+      <td>MGI:MGI:1277137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>STMN4</td>
+      <td>Genebank</td>
+      <td>MGI:MGI:1931224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Trrapf/f; Pcp2-Cre</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Trrap deletion in Purkinje cells; M. musculus, male and female; Please refer to ‘Materials and methods’ in the paper, Section ‘Mice’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Trrapf/f; Camk2-Cre</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Trrap deletion in forebrain; M. musculus, male and female; Please refer to ‘Materials and methods’ in this paper, Section ‘Mice’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Trrapf/+; Rosa26-CreERT2 Trrapf/f; Rosa26-CreERT2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Trrapf/+ acts as a control to Trrapf/f Trrap deletion in adult neural stem cells; M. musculus, male and female; Please refer to ‘Materials and methods’ in this paper, Section ‘Mice’</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>B6.Cg-Tg(Thy1-Brainbow1.0)HLich/J (R26R-Confetti); Trrapf/f; Pcp2-Cre</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Tracing of the single Purkinje cells; M. musculus, male and female; Please refer to ‘Materials and methods’ in this paper, Section ‘Mice’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 11668027</td>
+      <td>siTrrap and Plasmid co-transfection; M. musculus</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Lipofectamine RNAiMAX</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 13778075</td>
+      <td>siSp1 transfection; M. musculus</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Trrap-aNSC</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primary cell line; M. musculus; Please refer to ‘Materials and methods’ in this paper, Section ‘aNSC cell culture’.</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>E16.5 cortical neuron</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Primary cell line; M. musculus; Please refer to ‘Materials and methods’ in the paper, Section ‘Isolation and culture of murine primary neurons’.</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Neuro-2a Neuroblastoma cells</td>
+      <td>PMID:4534402</td>
+      <td>ATCC CCL-131</td>
+      <td>Cell line; M. musculus</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>ON-TARGETplus siRNA Reagents -Mouse (siScramble)</td>
+      <td>Horizon Discovery</td>
+      <td>Cat#: D-001810-10-05</td>
+      <td>UGGUUUACAUGUCGACUAA; M. musculus</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>siTrrap-1</td>
+      <td>Horizon Discovery</td>
+      <td>Cat#: LQ-051873-01-0005</td>
+      <td>CAAAAGUAGUGAACCGCUA; M. musculus</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>siTrrap-2</td>
+      <td>Horizon Discovery</td>
+      <td>Cat#: LQ-051873-01-0005</td>
+      <td>CCUACAUUGUGGAGCGGUU; M. musculus</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>siTrrap-3</td>
+      <td>Horizon Discovery</td>
+      <td>Cat#: LQ-051873-01-0005</td>
+      <td>GCCAACUGUCAGACCGUAA; M. musculus</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>siTrrap-4</td>
+      <td>Horizon Discovery</td>
+      <td>Cat#: LQ-051873-01-0005</td>
+      <td>CGUACCUGGUCAUGAACGA; M. musculus</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Calbindin (Mouse Monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat#:C9848 RRID:AB_476894</td>
+      <td>IF:1:300 WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFAP (Mouse Monoclonal)</td>
+      <td>Agilent</td>
+      <td>Cat#:G3893 RRID:AB_477010</td>
+      <td>IF:1:300 WB: 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MBP (Mouse Monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#:MAB384 RRID:AB_240837</td>
+      <td>IF:1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rabbit Monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#:2956 RRID:AB_1196615</td>
+      <td>IF: 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Mouse Monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#:sc-390394</td>
+      <td>IF:1:200 WB: 1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sp1 (Mouse Monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#:sc-17824 RRID:AB_628272</td>
+      <td>IF: 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sp1 (Rabbit Polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#:07–645 RRID:AB_310773</td>
+      <td>WB:1:1000 ChIP: 1:80</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-STMN3 (Rabbit Polyclonal)</td>
+      <td>Proteintech,</td>
+      <td>Cat#:11311–1-AP RRID:AB_2197399</td>
+      <td>IF:1:100 WB:1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-STMN4 (Mouse Monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#:sc-376829</td>
+      <td>IF:1:100 WB:1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tuj1(Mouse Monoclonal)</td>
+      <td>Covance</td>
+      <td>Cat#: MMS-435P RRID:AB_2313773</td>
+      <td>IF:1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CNPase (Mouse Monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat#: SAB4200693</td>
+      <td>IF:1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Galectin3 (Rat Monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Cat#:14-5301-82 RRID:AB_837132</td>
+      <td>WB:1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-a-tubulin (Mouse Monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat#:sc-32293 RRID:AB_628412</td>
+      <td>WB: 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TRRAP (Mouse) clone TRR-2D5</td>
+      <td>Euromedex</td>
+      <td>ID: IG-TRR-2D5</td>
+      <td>WB:1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TRRAP (Mouse) clone TRR-1B3</td>
+      <td>Euromedex</td>
+      <td>ID: IG-TRR-1B3</td>
+      <td>ChIP: 1:40</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin (Mouse Monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat#:A5441 RRID:AB_476744</td>
+      <td>WB:1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AcH3 (Rabbit Polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#:06–599 RRID:AB_2115283</td>
+      <td>ChIP: 1:150</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AcH4 (Rabbit Polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#:06–866 RRID:AB_310270</td>
+      <td>ChIP: 1:150</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3K4me2(Rabbit Polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab7766 RRID:AB_2560996</td>
+      <td>ChIP: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H3 (Rabbit Monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab1791 RRID:AB_302613</td>
+      <td>ChIP: 1:150</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>H4 (Rabbit Polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: ab7311 RRID:AB_305837</td>
+      <td>ChIP: 1:150</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Oct-4 (Rabbit Monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 2840 RRID:AB_2167691</td>
+      <td>ChIP: 1:80 WB:1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IgG (Rabbit Polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat#: I8140 RRID:AB_1163661</td>
+      <td>ChIP: 1:1500 (2 µg antibody)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EF1a-GFP-P2A-STMN3-Poly(A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>STMN3 overexpression plasmid; M. musculus; Please refer to‘Materials and methods’ in this paper, Section ‘Construction of STMNs expression vectors’.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EF1a-GFP-Poly(A)-EF1a-STMN4-Poly(A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>STMN4 overexpression plasmid; M. musculus; Please refer to ‘Materials and methods’ in this paper, Section ‘Construction of STMNs expression vectors’.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>−111 hTF m3</td>
+      <td>Addgene</td>
+      <td>Cat#: 15450</td>
+      <td>Sp1 activity reporter; H. sapiens</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pN3-Sp1FL</td>
+      <td>Addgene</td>
+      <td>Cat#: 24543</td>
+      <td>Sp1 overexpression reporter; H. sapiens</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sp1 primer</td>
+      <td>PrimerBank</td>
+      <td>ID 7305515a1</td>
+      <td>Fwd, 5’-GCCGCCTTTTCTCAGACTC-3’; Rev, 5’-TTGGGTGACTCAATTCTGCTG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>STMN3 primer</td>
+      <td>PrimerBank</td>
+      <td>ID 6677873a1</td>
+      <td>Fwd, 5’-CAGCACCGTATCTGCCTACAA-3’; Rev, 5’-GTAGATGGTGTTCGGGTGAGG-3’;</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>STMN4 primer</td>
+      <td>PrimerBank</td>
+      <td>ID 9790189a1</td>
+      <td>Fwd, 5’-ATGGAAGTCATCGAGCTGAACA-3’; Rev, 5’-GGGAGGCATTAAACTCAGGCA-3’.</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>STMN3 promoter primer</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Fwd, 5’-CTTGCTACTGCATCAGGCGA-3’; Rev, 5’-AGCCTAGGGGATCATGGGAC-3’;</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>STMN4 promoter primer</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Fwd, 5’-TCGCTTTGGAAACCGGACTG-3’; Rev, 5’-TTTGTTTAAAACCCCCGCCC-3’.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Incucyte S3</td>
+      <td>Sartorius AG</td>
+      <td>Product Code: 4695</td>
+      <td>For neurite detection and quantification</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Lipid Tissue Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat #: 74804</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat #: 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LightCycler 480 Real-Time PCR System</td>
+      <td>Roche</td>
+      <td>Product No. 05015243001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA 6000 nano kit</td>
+      <td>Agilent</td>
+      <td>Cat #: 5067–1511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq Stranded mRNA Kit</td>
+      <td>Illumina</td>
+      <td>Cat #: 20020594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual-Glo Luciferase Assay System</td>
+      <td>Promega</td>
+      <td>Cat# E2920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QiaQuick PCR Purification Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 28106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fragment Analyzer</td>
+      <td>Agilent</td>
+      <td>Cat#: M5310AA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NextSeq500 platform</td>
+      <td>Illumina</td>
+      <td>RRID:SCR_014983</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq ChIP Sample Preparation Kit</td>
+      <td>Illumina</td>
+      <td>Cat#: IP-202–1024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Epoxy resin ‘Epon’</td>
+      <td>SERVA</td>
+      <td></td>
+      <td>Glycid ether 100 for electron microscopy</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete, Mini, EDTA-free</td>
+      <td>Roche</td>
+      <td>Cat#: 04693159001</td>
+      <td>Protease Inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PhosSTOP</td>
+      <td>Roche</td>
+      <td>Cat#: PHOSS-RO</td>
+      <td>Phosphatase Inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>protein-A-conjugated magnetic beads</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 10003D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>protein-G-conjugated magnetic beads</td>
+      <td>Invitrogen</td>
+      <td>10001D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Platinum SYBR Green qPCR SuperMix-UDG</td>
+      <td>Qiagen</td>
+      <td>11733046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NeuronJ Plug-in by ImageJ software</td>
+      <td>National Institutes of Health</td>
+      <td></td>
+      <td>Neurite tracing and quantification</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji plugins Simple Neurite Tracing</td>
+      <td>National Institutes of Health</td>
+      <td></td>
+      <td>Sholl analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>bcl2FastQ</td>
+      <td>Illumina</td>
+      <td>RRID:SCR_015058</td>
+      <td>Version 1.8.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>PMID:23104886</td>
+      <td>RRID:SCR_015899</td>
+      <td>Version 2.5.4b; RNA sequence mapping parameters: --alignIntronMax 100000 --outSJfilterReads Unique --outSAMmultNmax 1 --outFilterMismatchNoverLmax 0.04</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FeatureCounts</td>
+      <td>PMID:24227677</td>
+      <td>RRID:SCR_012919</td>
+      <td>Version 1.5.0; parameters: metafeature mode, stranded mode ‘2’, Ensembl 92 annotation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ENSEMBL annotation</td>
+      <td>PMID:31691826</td>
+      <td>RRID:SCR_002344</td>
+      <td>Release 92 for Mus musculus</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MultiQC</td>
+      <td>PMID:27312411</td>
+      <td>RRID:SCR_014982</td>
+      <td>Version 1.6; RNA sequence quality assessment of the raw input data, the read mapping and assignment steps</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package DESeq2</td>
+      <td>PMID:25516281</td>
+      <td>RRID:SCR_015687</td>
+      <td>Version 1.20.0; Analysis of differential expressed genes in pairwise comparisons.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package VennDiagram</td>
+      <td>PMID:21269502</td>
+      <td>RRID:SCR_002414</td>
+      <td>Version 1.6.20</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Database for Annotation, Visualization and Integrated Discovery (DAVID) programs</td>
+      <td>https://david.ncifcrf.gov/home.jsp</td>
+      <td></td>
+      <td>DAVID v6.7; Gene ontology (GO) and KEGG pathway enrichment analyses</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TFBS enrichment analysis</td>
+      <td>UC San Diego, Broad Institute, USA</td>
+      <td>GSEA 4.1.0</td>
+      <td>Based on GSEA database or Harmonizome database for Sp1 targets</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ingenuity Pathway Analysis (IPA) program</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td>Analysis of Sp1 targets affected by Trrap deletion</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package AnnotationDbi</td>
+      <td>Bioconductor</td>
+      <td>DOI: 10.18129/B9.bioc.AnnotationDbi</td>
+      <td>Version 1.42.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R package org.Mm.eg.db</td>
+      <td>Bioconductor</td>
+      <td>DOI: 10.18129/B9.bioc.org.Mm.eg.db</td>
+      <td>Version 3.6.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC</td>
+      <td>Babraham Bioinformatics, UK</td>
+      <td>RRID:SCR_014583</td>
+      <td>Version 0.11.5</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie</td>
+      <td>http://bowtie-bio.sourceforge.net</td>
+      <td>RRID:SCR_005476</td>
+      <td>Version 1.1.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS14</td>
+      <td>https://bio.tools/macs</td>
+      <td>RRID:SCR_013291</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org/</td>
+      <td>RRID:SCR_001905</td>
+      <td>Version 3.4.4</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Beam walking</td>
+      <td>Homemade</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Mouse Rota-rod</td>
+      <td>Ugo Basile</td>
+      <td>Cat#: 47600</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>Cat#: D1306</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bioruptor</td>
+      <td>Diagenode</td>
+      <td>N/A</td>
+      <td>Sonication</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>vibrating microtome HM 650 V</td>
+      <td>Thermo Scientific Microm</td>
+      <td></td>
+      <td>Sagittal section cutting</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Reichert Ultracut S</td>
+      <td>Leica</td>
+      <td></td>
+      <td>Ultrathin section cutting</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>JEM 1400 electron microscope</td>
+      <td>JEOL</td>
+      <td></td>
+      <td>Electron microscopic imaging</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Orius SC 1000 CCD-camera</td>
+      <td>GATAN</td>
+      <td></td>
+      <td>Electron microscopic imaging</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bioanalyzer 2100</td>
+      <td>Agilent</td>
+      <td></td>
+      <td>Quality check and quantification of RNA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 Mice carrying the conditional (floxed; Trrapf/f) allele (Herceg et al., 2001) were crossed with Pcp2-Cre transgenic mice (Tg(Pcp2-cre)2Mpin) (Barski et al., 2000), Camk2-Cre (Tg(Camk2a-cre/ERT2)2Gsc), or Rosa26-CreERT2 Gt(ROSA)26Sortm1(cre/ERT2)Tyj, to generate mice with a specific deletion in Purkinje cells (Trrap-PCΔ) and forebrain glutamatergic neurons (Trrap-FBΔ), or an inducible deletion in all tissues (Trrap-iΔ). To trace the single cell morphology of Purkinje cells, B6.Cg-Tg(Thy1-Brainbow1.0)HLich/J (R26R-Confetti) knock-in mice were crossed with Trrap-PCΔ mice. The double-fluorescent reporter mT/mG knock-in mice (Muzumdar et al., 2007) were intercrossed with Trrap-aNSCΔ mice, to identify Trrap-deleted cells. The Trrap, Cre, mT/mG, and Confetti genotypes of mice were determined by PCR on DNA extracted from tail tissue, as previously described (Loizou et al., 2009). Animal experiments were conducted according to German animal welfare legislation, and the protocol is approved by Thüringen Landesamt für Verbraucherschutz (TLV) (03-042/16), Germany.
 
-## Histology
+### Histology
 
 Tissues for histology were fixed in 4% paraformaldehyde (PFA), cryoprotected in 30% sucrose and frozen in Richard-Allan Scientific Neg-50 Frozen Section Medium (Thermo Scientific, Waltham, MA, USA). The sections (thickness of 5–20 µm) were later used for immunofluorescence staining.
 
-## Construction of STMNs expression vectors
+### Construction of STMNs expression vectors
 
 The EF1a-GFP-P2A-STMN3-Poly(A) plasmid was generated by subcloning the RV-Cre2A-GFP (kindly provided by Xiaobing Qing) and the STMN3 protein coding region into the EF1a-GFP construct (Li et al., 2015). For the EF1a-GFP-Poly(A)-EF1a-STMN4-Poly(A) vector, EF1a-promoter, STMN4 protein coding region, and Poly(A) sequence were subcloned into the EF1a-GFP construct. The DNA fragments were assembled with Gibson Assembly Master Mix (New England Biolabs, Massachusetts, USA). The STMN3 and STMN4 protein coding regions were amplified from cDNA library of the murine 10 days postnatal forebrain samples.
 
-## siRNA sequences
+### siRNA sequences
 
-## Isolation and culture of murine primary neurons
+#### Isolation and culture of murine primary neurons
 
 Murine neurons were isolated from mouse embryos at embryonic stage E16.5 (E16.5). The cortex was removed and was first incubated with 0.05% trypsin under 37°C for 15 min. The tissue was then mechanically disintegrated with 1 ml Eppendorf pipettes in an incubation medium (Eagle's minimal essential medium (MEM) supplemented with 1× FCS, 1× B-27 Supplements, 500 μM L-glutamine, 1 mM sodium pyruvate, 1× penicillin–streptomycin, 10 mM HEPES). The suspension was filtered through a cell strainer (40 μm porosity). After centrifugation (630 rpm for 5 min) the neurons in supernatant were seeded into poly-L-lysine coated multiple well plates at the indicated number (6 × 104 cells/well in 24-well plate, 3 × 105 cells/well in 6-well plate) and cultured in the Neurobasal medium (Thermo Fisher Scientific, Waltham, Massachusetts, USA) supplemented with 1 × B-27 Supplements, 500 μM L-glutamine, and 10 mM HEPES until further use.
 
-## Motor coordination tests
+### Motor coordination tests
 
 Beam walking: Mice were trained to run along a 1 m long beam (3 cm thick) to their home cage. The test was performed on five consecutive days on a 2 cm thick beam, with three runs each day. The mice were video-taped and timed crossing the beam.
 
 Rotarod test: Mice were habituated to the test situation by placing them on a rotarod (Ugo Basile, Gemonio, Italy) with constant rotation (5 rpm) for 5 min the day prior to the test. In the test phase, two trials per mouse were performed with accelerating rotation (2–50 rpm within 4 min) and maximum duration of 5 min, with the time measured until mice fell off the rod.
 
-## N2A cell culture
+### N2A cell culture
 
 N2A cells were cultured in DMEM supplemented with 1× FCS, 1× penicillin–streptomycin, and 10 mM HEPES. When the N2A culture reached ~70% confluency, the cells were trypsinized and the cell suspension was centrifuged. The cells were seeded in 1.5 × 105 cells/well onto 6-well plate.
 
-## Transfection of primary neurons or N2A cells
+### Transfection of primary neurons or N2A cells
 
 Primary neurons were transfected on day 6 in vitro (DIV6) and N2A cells on day 1 after passage using lipofectamin 2000 in Opti-MEM (0.4 μg plasmid + 0.8 μl lipofectamine 2000 in 100 μl Opti-MEM/well in 24-well plate, 1.2 μg plasmid + 2.4 μl lipofectamine 2000 in 300 μl Opti-MEM/well in 6-well plate, and/or 25 μM siRNA). After 30 min incubation under 37°C with the Neurobasal medium supplemented with 500 μM L-glutamine (300 μl/well in 24-well plate, 1.2 ml/well in 6-well plate), the plasmid/siRNA-Lipofectamine mix was replaced by the neuronal culture medium.
 
-## IncuCyte quantification
+### IncuCyte quantification
 
 The primary neuron culture was placed into Incucyte S3 (Sartorius AG, Göttingen, Germany) for imaging acquisition of phase contrast and GFP signals (10× magnification, 36 images/well in 24-well plate, and 144 images/well in 6-well plate). The image analysis and the neurite detection parameter were determined for each plate separately through IncuCyte NeuroTrack Software Module for S3 or ZOOM.
 
-## Immunofluorescent staining and quantification
+### Immunofluorescent staining and quantification
 
 Prior to immunostaining, primary neurons on coverslips were fixed with 4% PFA and incubated with 0.7% Triton in PBS for 15 min. The fixed samples were incubated with primary antibodies under 4°C overnight. After incubation with secondary antibody in 1:5000 DAPI, the samples were conserved by ProLong Gold Antifade reagent (Thermo Fisher Scientific). Images were captured by the ApoTome microscope (Zeiss Jena, Germany) under 20× or 40× objectives. The neurite branching, neurite length, and axonal swelling were then scored with NeuronJ Plug-in by ImageJ software and validated manually.
 
-## qRT-PCR analysis
+### qRT-PCR analysis
 
 The total RNA was isolated from tissues or aNSCs using the RNeasy Lipid Tissue Mini Kit (Qiagen) and an RNAeasy Mini Kit (Qiagen) respectively and following the manufacturer’s instructions. cDNA was synthesized using the SuperScript III Reverse Transcriptase (Thermo Fischer Scientific). qPCRs were performed using Platinum SYBR Green qPCR SuperMix-UDG (Thermo Fischer Scientific) and a LightCycler 480 Real-Time PCR System (Roche). The Trrap and Actin primers used for amplification were previously described (Tapias et al., 2014). The remaining primer sequences were obtained from the PrimerBank (Spandidos et al., 2010; Spandidos et al., 2008; Wang, 2003) and were as follows: Sp1 (PrimerBank ID 7305515a1): Fwd, 5’-GCCGCCTTTTCTCAGACTC-3’; Rev, 5’-TTGGGTGACTCAATTCTGCTG −3’; STMN3 (PrimerBank ID 6677873a1): Fwd, 5’- CAGCACCGTATCTGCCTACAA-3’; Rev, 5’-GTAGATGGTGTTCGGGTGAGG-3’; STMN4 (PrimerBank ID 9790189a1): Fwd, 5’- ATGGAAGTCATCGAGCTGAACA-3’; Rev, 5’- GGGAGGCATTAAACTCAGGCA-3’. Quantification of the qPCR data was performed by the ΔΔCp method using actin as an internal control. Gene expression values were expressed relative to the gene expression in control tissues or aNSCs.
 
-## TUNEL reaction and immunofluorescence staining in brain sections
+### TUNEL reaction and immunofluorescence staining in brain sections
 
 Immunofluorescence and TUNEL staining were performed on cryosections prepared from PFA-fixed brains of the indicated ages, as previously described (Tapias et al., 2014), using the following antibodies: mouse anti-Calbindin (1:300, Sigma), rabbit anti-GFAP (1:300, Agilent, Santa Clara, USA), mouse anti-MBP (1:300, Millipore, Burlington, USA), rabbit anti-Calbindin (1:300, Swant, Marly, Switzerland), rabbit anti-GFP (1:200, Cell Signaling Technology, Danvers, USA) mouse anti-GFP (1:200, Santa Cruz), rabbit anti-Sp1 (1:50, Santa Cruz), mouse anti-STMN4 (1:100, Santa Cruz), rabbit anti-STMN3 (1:100, Proteintech, Rosemont, USA), and mouse anti-Tuj1 (1:400, Covance).
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Total protein lysates were prepared from brain tissue or aNSCs using the RIPA buffer (50 mM Tris-HCl, pH 7.4, 150 mM NaCl, 1% NP40, 0.25% Na-deoxycholate, 1 mM EDTA, 1 mM PMSF), and complete mini protease inhibitor cocktail (Roche Applied Science, Penzberg, Germany). N2A cells or neuron lysates were prepared as follows: the culture was treated with 0.25% trypsin for 5 min under 37°C, resuspend with DMEM medium supplemented with 1× FCS and centrifuged under 1100 rpm for 5 min. The resulting pellets were washed once with PBS and lysed with the RIPA buffer. Immunoblotting was performed as described previously (Tapias et al., 2014), using the following antibodies: mouse anti-Calbindin (1:1000, Sigma), rabbit anti-GFAP (1:1000, Dako-Agilent), mouse anti-CNPase (1:1000, Sigma), rat anti-galectin3 (1:1000, eBioscience, Affymetrix, Santa Clara, USA), mouse anti-α-tubulin (1:5000, Sigma), mouse anti-TRRAP (1;1000, Euromedex, Souffelweyersheim, France), rabbit anti-Sp1 (1:1000, Millipore), mouse anti-RB3/STMN4 (1:1000, Santa Cruz), rabbit anti-STMN3 (1:1000, Proteintech), mouse anti-GAPDH (1:1000, Sigma), mouse anti-β-actin (1:5000, Sigma), mouse anti-GFP (1:400, Santa Cruz), and rabbit anti-Oct4 (1:1000, Cell Signaling).
 
-## Dendritic tree analysis
+### Dendritic tree analysis
 
 The tissues were fixed in 4% paraformaldehyde (PFA) and embedded in 4% low-melting agarose. 200 μm sagittal sections were obtained using a vibrating microtome HM 650 V (Thermo Scientific Microm) and mounted in slides. Imaging was performed using a Zeiss LSM 710 Confocal three microscope (Zeiss) and the Sholl analysis (Kroner et al., 2014; Sholl, 1953) achieved using the Fiji plugins Simple Neurite Tracing (Longair et al., 2011).
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 Mice were sacrificed using CO2 and perfused intracardially with cold fixative (3% glutaraldehyde, 1% paraformaldehyde, 0.5% acrolein, 4% sucrose, 0.05 M CaCl2 in 0.1 M cacodylate buffer, pH 7.3). The cerebellum was isolated and postfixed for a minimum of 1 day. For a secondary fixation, the samples were incubated in 2% OsO4/1% potassium ferrocyanide in 0.1 M cacodylate buffer for 3 hr at 4°C in the dark, followed by dehydration in an ascending water/acetone series – then embedded in epoxy resin ‘Epon’ (glycid ether 100, SERVA, Heidelberg, Germany). The resin was allowed to polymerize for 2 days at 60°C in flat embedding molds. Ultrathin sections (50 nm) were produced using an ultramicrotome (Reichert Ultracut S; Leica, Wetzlar, Germany) and electron micrographs taken on a JEM 1400 electron microscope (JEOL, Akishima, Japan), using an accelerating voltage of 80 kV coupled with Orius SC 1000 CCD-camera (GATAN, Pleasanton, USA).
 
-## Transcriptomics
+### Transcriptomics
 
 The total RNA was isolated from tissues or cultured aNSCs using an RNeasy Lipid Tissue Mini Kit (Qiagen, Venlo, The Netherlands) and an RNAeasy Mini Kit (Qiagen) respectively, per manufacturer’s instructions. The sequencing of RNA samples was done using Illumina’s next-generation sequencing methodology (Bentley et al., 2008) – the quality check and quantification of the total RNA were completed using the Agilent Bioanalyzer 2100 in combination with the RNA 6000 nano kit (Agilent Technologies). For library preparation 3 µg of tissue total RNA or 800 ng of aNSC total RNA were introduced to the TruSeq Stranded mRNA Kit (Illumina, San Diego, USA), per manufacturer’s description. The quantification and quality check of the libraries were conducted using the Agilent Bioanalyzer 2100 in combination with the DNA 7500 kit. For sequencing of tissues, pools of four libraries were compiled and each pool was loaded on one lane of a HiSeq2500 machine running in 51cycle/single-end/high-output mode. For the sequencing of aNSCs, all libraries were pooled and loaded on three lanes of a HiSeq2500 machine running in 51 cycle/single-end/high-output mode. The sequence information was extracted in FastQ format using Illumina’s bcl2FastQ v1.8.4. The sequencing resulted in around 55mio and 37mio reads per sample for tissues and aNSCs, respectively.
 
@@ -162,26 +881,59 @@ Read counts per gene were subjected to the R package DESeq2 (version 1.20.0) (Lo
 
 GO and KEGG pathway enrichment analyses were performed by supplying the gene lists of DEG overlaps into the database for annotation, visualization, and integrated discovery (DAVID) programs (Huang et al., 2009a; Huang et al., 2009b). TFBS enrichment analysis was performed by supplying the different lists of DEGs into the gene set enrichment analysis (GSEA) database (Subramanian et al., 2005; Mootha et al., 2003). A list of the Sp1 targets was extracted from the Harmonizome database (Rouillard et al., 2016) and compared with the RNA-seq data sets. The lists of Sp1 targets affected by the Trrap deletion was then analyzed using the Ingenuity Pathway Analysis (IPA) program (Qiagen).
 
-## Sample preparation for MS proteomics
+### Sample preparation for MS proteomics
 
 First, homogenates of the cortex tissues were prepared using the bead-beating device (24 tissue homogenizer) from Precellys (Montigny-le-Bretonneux, France). Frozen tissue was transferred on ice to bead-beating tubes (Precellys CKMix, 0.5 ml) containing ice-cold PBS with Protease and a Phosphatase Inhibitor cocktail (Roche) and beaten for 2 cycles of 20 s at 6000 rpm, with a 30 s break at 4°C. Homogenates were prepared at an estimated protein concentration of 10 µg/µl; based on 5% protein content of fresh brain tissues by weight. A volume of homogenate corresponding to approximately 500 µg protein was transferred to 1.5 ml Eppendorf tubes and taken for lysis. Lysis was carried out by resuspension of the homogenate in lysis buffer (final concentration 4% SDS, 0.1 M HEPES [pH 8], 50 mM DTT) to a final protein concentration of 1 µg/µl, followed by a sonication in a Bioruptor (Diagenode, Seraing, Belgium) (10 cycles, 1 min ON/30 s OFF, 20°C). The samples were heated (95°C, 10 min), and sonication steps repeated. The lysates were clarified by brief centrifugation, incubated with iodacetamide, (15 mM) at RT, in the dark. Each sample was treated with four volumes ice-cold acetone to precipitate the proteins (overnight, −20°C). The samples were centrifuged at 20,800 g (30 min, 4°C). The supernatant was removed and the pellets washed twice with 400 µl of ice-cold 80% acetone/20% water. The pellets were air-dried before dissolving in a digestion buffer (3 M urea in 0.1 M HEPES, pH 8) at 1 µg/µl. A 1:100 w/w amount of LysC (Wako, Richmond, USA; sequencing grade) was added to each sample before incubation (4 hr, 37°C, 1000 rpm). The samples were diluted 1:1 with milliQ water and incubated with a 1:100 w/w amount of trypsin (Promega, Madison, USA; sequencing grade) (overnight, 37°C, 650 rpm). The digests were acidified with 10% trifluoroacetic acid and desalted with Waters Oasis HLB µElution Plate 30 µm (Waters, Milford, USA) in the presence of a slow vacuum, to manufacturer’s instructions. The eluates were dried down with the speed vacuum centrifuge. Peptide labeling with TMT and subsequent high pH fractionation and LC-MS were conducted as detailed previously (Buczak et al., 2018). Briefly, the peptide samples obtained from the digestion were labeled with TMT-10plex isobaric mass tags (Thermo Fischer Scientific) per manufacturer’s instructions. Equal amounts of the labeled peptides from the 10 samples (five replicates each condition) were mixed, desalted, and pre-fractionated into 16 fractions using high pH reverse phase fractionation on an Agilent Infinity 1260 HPLC, then each fraction was measured individually by nano-LC-MS on an Orbitrap Fusion Lumos employing SPS-MS3 data acquisition (Thermo Fischer Scientific). Subsequently, the fraction data were searched together in Mascot 2.5.1 (Matrix Science, Boston, USA) using Proteome Discoverer 2.0 (Thermo Fischer Scientific) against the Swissprot Mus musculus database (2016; 16,756 entries) and a list of common contaminants. Reporter ion intensity values for the PSMs were exported and processed using in-house written R scripts to remove common contaminants and decoy hits. Only PSMs having reporter ion intensities above 1 × 103 in all the relevant TMT channels were retained for a quantitative analysis, as described in Buczak et al., 2018. Briefly, the reporter ion (TMT) intensities were log2-transformed and normalized. Peptide-level data were summarized into their respective protein groups by taking the median value. For differential protein expression, the five replicates of the two conditions respectively within the TMT10-plex were taken together. Protein ratios were calculated for all protein groups quantified with at least two peptides. To compare DEP in the cortex obtained by RNA-seq to protein DEP (differentially expressed proteins) obtained by mass spectrometry, Ensembl gene IDs were mapped to Uniprot IDs with the R packages AnnotationDbi (1.42.1) and org.Mm.eg.db (3.6.0), while only genes/proteins present in both analyses were considered. When for a single Uniprot ID multiple Ensembl IDs are known, the proteomics measurement is duplicated and all different transcriptomics results assigned to this entry.
 
-## aNSC cell culture
+### aNSC cell culture
 
 The SVZ of 2–4 months old mice were isolated, minced, and digested with DMEM/F-12 medium supplemented with 20 U/ml papain, 240 µg/ml cysteine, and 400 µg/ml DNAse I type IV. After 1 hr, the digestion was stopped by ovomucoid trypsin inhibitor. The homogenized aNSCs were then cultured in suspension medium (DMEM/F-12 medium supplemented with 1× B-27 Supplements, 1× penicillin–streptomycin, 20 ng/ml EGF, 20 ng/ml bFGF). To induce Trrap deletion, aNSCs were treated with 1 µM 4-hydroxytamoxifen (4-OHT) for 3 days, followed by incubation in fresh medium for another 2 days.
 
-## Transfection, Sp1 knockdown, and luciferase assay
+### Transfection, Sp1 knockdown, and luciferase assay
 
 2 × 105 aNSCs were plated in 50 μg/ml PLL and 10 μg/ml laminin pre-coated 24-well plates in Neurobasal Medium (NEM) supplemented with 1× B-27 Supplements, 2 mM L-glutamine, 1× N-2 Supplement, 1× penicillin–streptomycin, 20 ng/ml EGF, and 20 ng/ml bFGF. The transfection was performed after overnight culture using Lipofectamine 2000. For luciferase assay of Sp1 activity, the vector −111 hr TF m3 was used as Sp1 reporter plasmid – gifted by Nigel Mackman (Addgene plasmid # 15450; http://n2t.net/addgene:15450; RRID:Addgene_15450). Guntram Suske gifted the vector pN3-Sp1FL used to overexpress Sp1 (Addgene plasmid # 24543; http://n2t.net/addgene:24543; RRID:Addgene_24543). 24 hr later, transfection cells were collected to measure the luciferase activity using a Dual-Glo Luciferase Assay System (Promega), per manufacturer’s instructions. For Sp1 knockdown, aNSC in adherent conditions was supplemented with 30 nM siRNA against Sp1 mixed with RNAiMAX reagent (Thermo Fischer Scientific). After 48 hr, transfection cells were collected for immunoblot analysis.
 
-## Chromatin preparation for ChIP and ChIP-seq
+### Chromatin preparation for ChIP and ChIP-seq
 
 2 × 106 aNSCs were cross-linked by adding formaldehyde 1% for 10 min at room temperature, quenched with 0.125 M glycine for 5 min at room temperature, then washed three times in phosphate-buffered saline (PBS) before freezing. Pellets were suspended in 0.25 ml SDS lysis buffer (50 mM HEPES-KOH, 140 mM NaCl, 1 mM EDTA, 0.1% Triton X-100, 0.1% sodium deoxycholate, 1% SDS, 10 mM NaB, and protease inhibitors), incubated on a rotator for 30 min at 4°C, sonicated for 20 min at 4°C, then centrifuged at 14,000 rpm for 10 min at 4°C. Supernatants were diluted 10-fold with a ChIP dilution buffer (1% Triton X-100, 2 mM EDTA, 20 mM Tris-HCl, 150 mM NaCl, 10 µM NaB, and protease inhibitors) (25 µl retained as input) and incubated overnight in gentle rotation at 4°C with 4 µg of antibody. The following antibodies were used: rabbit anti-SP1 (Millipore), rabbit anti-acetyl-Histone 3 (Millipore), mouse anti-TRRAP (Euromedex), rabbit anti-acetyl-Histone 4 (Millipore), rabbit anti-H3K4me2 (Abcam), rabbit anti-H3 (Abcam), rabbit anti-H4 (Abcam), rabbit anti-Oct4 (Cell Signaling), and rabbit anti-IgG (Sigma). After that, 40 µl of preblocked protein-G-conjugated magnetic beads (DYNAL, Thermo Fischer) were added and incubated for 2 hr in a rotator at 4°C. The immunoprecipitated complexes were washed three times in low-salt wash buffer (0.1% SDS,1% Triton X-100, 2 mM EDTA, 20 mM Tris-HCl, 150 mM NaCl), once in high-salt wash buffer (0.1% SDS, 1% Triton X-100, 2 mM EDTA, 20 mM Tris-HCl, 500 mM NaCl) and once in TE buffer. The complexes were eluted by adding 0.2 ml of Elution buffer (TE 1×, 1% SDS, 150 mM NaCl, 5 mM DTT) for 30 min in rotation at room temperature. The de-cross-linking was performed overnight at 65°C. The de-cross-linked DNA was purified using a QiaQuick PCR Purification Kit (Qiagen) according to the manufacturer’s instruction.
 
-## ChIP-seq
+### ChIP-seq
 
 For the library preparation, approximately 10 ng of purified ChIP DNA was end-repaired, dA-tailed, and adaptor-ligated using the TruSeq ChIP Sample Preparation Kit (illumina), to manufacturer’s instructions. The size of the library was checked using Fragment Analyzer (Agilent) and the library sequenced on the NextSeq500 platform (illumina). The Fastq files quality check was performed with FastQC (v0.11.5). Fastq files mapping to mm9 genome was performed by using Bowtie (v1.1.2) with --best --strata -m one parameters. Duplicate reads were removed using a custom script. For peak calling, macs14 (v1.4.2) was used with --nolambda parameter and two different p-value cutoffs (1e-3 for histone modifications and 1e-5 for SP1). Other downstream analyses were done using R (v3.4.4). For a RPM (Read Per Million) calculation, the peaks were merged using the Peakreference function (TCseq_1.2.0 package). The merged peaks were used as the reference for the calculation of RPM for each sample by using a custom script. 10% or 30% of the most depleted regions in mutant versus control samples for histone modifications and Sp1 respectively were used as cutoff for defining differentially regulated regions. Differentially regulated regions were assigned to the nearest gene (ENSEMBL annotation), where the distance of the region was less than ±5 Kb to the TSS (Transcription Start Site).
 
 ChIP qRT-PCR was performed using the Platinum SYBR Green qPCR SuperMix-UDG (Thermo Fischer Scientific) and a LightCycler 480 Real-Time PCR System (Roche). All experiment values were subtracted by those obtained with a rabbit nonimmune serum (IgG) and divided by input, as indicated in the literature (Neri et al., 2012). The following primers were used for amplification: STMN3: Fwd, 5’-CTTGCTACTGCATCAGGCGA-3’; Rev, 5’-AGCCTAGGGGATCATGGGAC-3’; STMN4: Fwd, 5’-TCGCTTTGGAAACCGGACTG-3’; Rev, 5’-TTTGTTTAAAACCCCCGCCC-3’.
 
-siRNASequence (5’→ 3’)siScrambleUGGUUUACAUGUCGACUAAsiTrrap-1CAAAAGUAGUGAACCGCUAsiTrrap-2CCUACAUUGUGGAGCGGUUsiTrrap-3GCCAACUGUCAGACCGUAAsiTrrap-4CGUACCUGGUCAUGAACGAsiSp1GGAUGGUUCUGGUCAAAUAtt
+<table>
+  <thead>
+    <tr>
+      <th>siRNA</th>
+      <th>Sequence (5’→ 3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>siScramble</td>
+      <td>UGGUUUACAUGUCGACUAA</td>
+    </tr>
+    <tr>
+      <td>siTrrap-1</td>
+      <td>CAAAAGUAGUGAACCGCUA</td>
+    </tr>
+    <tr>
+      <td>siTrrap-2</td>
+      <td>CCUACAUUGUGGAGCGGUU</td>
+    </tr>
+    <tr>
+      <td>siTrrap-3</td>
+      <td>GCCAACUGUCAGACCGUAA</td>
+    </tr>
+    <tr>
+      <td>siTrrap-4</td>
+      <td>CGUACCUGGUCAUGAACGA</td>
+    </tr>
+    <tr>
+      <td>siSp1</td>
+      <td>GGAUGGUUCUGGUCAAAUAtt</td>
+    </tr>
+  </tbody>
+</table>

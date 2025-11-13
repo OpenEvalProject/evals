@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.49188.001 Voltage-gated potassium channels (K v s) are gated by transmembrane voltage sensors (VS) that move in response to changes in membrane voltage. K v 10.1 or Eag1 also has three intracellular domains: PAS, C-linker, and CNBHD. We demonstrate that the Eag1 intracellular domains are not required for voltage-dependent gating but likely interact with the VS to modulate gating. We identified specific interactions between the PAS, CNBHD, and VS that modulate voltage-dependent gating and provide evidence that VS movement destabilizes these interactions to promote channel opening. Additionally, mutation of these interactions renders Eag1 insensitive to calmodulin inhibition. The structure of the calmodulin insensitive mutant in a pre-open conformation suggests that channel opening may occur through a rotation of the intracellular domains and calmodulin may prevent this rotation by stabilizing interactions between the VS and intracellular domains. Intracellular domains likely play a similar modulatory role in voltage-dependent gating of the related K v 11-12 channels.
+Voltage-gated potassium channels (Kvs) are gated by transmembrane voltage sensors (VS) that move in response to changes in membrane voltage. Kv10.1 or Eag1 also has three intracellular domains: PAS, C-linker, and CNBHD. We demonstrate that the Eag1 intracellular domains are not required for voltage-dependent gating but likely interact with the VS to modulate gating. We identified specific interactions between the PAS, CNBHD, and VS that modulate voltage-dependent gating and provide evidence that VS movement destabilizes these interactions to promote channel opening. Additionally, mutation of these interactions renders Eag1 insensitive to calmodulin inhibition. The structure of the calmodulin insensitive mutant in a pre-open conformation suggests that channel opening may occur through a rotation of the intracellular domains and calmodulin may prevent this rotation by stabilizing interactions between the VS and intracellular domains. Intracellular domains likely play a similar modulatory role in voltage-dependent gating of the related Kv11-12 channels.
 
 ## Introduction
 
@@ -29,7 +29,7 @@ In addition to voltage-dependent gating, Eag1 is also gated by the calcium senso
 
 ## Results
 
-## Role of the Eag1 intracellular domains in voltage-dependent gating
+### Role of the Eag1 intracellular domains in voltage-dependent gating
 
 Based on the previous structure of Eag1, we proposed that membrane hyperpolarization causes S4 to interact with and rotate the C-linker to close the pore. To test this hypothesis, we characterized an Eag1 channel in which the PAS, C-linker, and CNBHD were deleted (Eag1TM). The C-terminal assembly domain (887-962) was included in Eag1TM as this domain is needed for tetramer assembly (Ludwig et al., 1997). Eag1TM forms functional channels that are voltage dependent (Figure 2a,b), indicating that the intracellular domains are not essential for voltage-dependent gating and that an interaction between the S4 and C-linker is not required to close the potassium pore. However, the intracellular domains do modify the gating kinetics, which was demonstrated by both the Eag1TM construct and the Eag1/hErg chimera where the PAS, C-linker and CNBHD from hErg were inserted onto Eag1TM (Figure 2a,b). Eag1TM had a right shifted V0.5 of 46 mV (zero-slope on the activation curve was not reached up to 100 mV and therefore an accurate value for V0.5 could not be measured) compared to the WT Eag1 (19 mV). In addition, the Eag1/hErg chimera has a V0.5 (2.5 mV) that is in between that of WT Eag1 and hErg (−22 mV) and exhibits slow rates of channel closure (deactivation), a characteristic of hErg channels. We also recorded the Cole-Moore effect for each construct by holding the cell at increasing holding potentials, from −190 mV to the voltage of channel activation, and stepping to the same depolarized voltage (Figure 2c). To compare the Cole-Moore effect from different mutants we plotted holding potential as a function of current at 10 ms following the depolarization step. Then we fit the plot with a Boltzmann function (defined in the Materials and methods) to estimate the holding potential that produces half maximal rates of activation (V0.5CM) (Figure 2d). Neither mutant channel exhibits a Cole-Moore effect (Figure 2c), which, along with the slow deactivation of the Eag1/hErg chimera and the shifted V0.5 of both channels, demonstrates that the intracellular domains influence voltage-dependent gating kinetics. In addition, this result suggests that the Cole-Moore effect may arise from an interaction between the transmembrane and intracellular domains.
 
@@ -37,15 +37,31 @@ Based on the previous structure of Eag1, we proposed that membrane hyperpolariza
 
 **Figure 2.:** (A) Voltage family current trace of WT Eag1, Eag1TM, and the Eag1/hErg chimera with the voltage-pulse protocol shown above. (B) Normalized tail current vs. depolarization voltage plot for WT Eag1 (black square, n = 6), Eag1TM (green circle, n = 4), and the Eag1/hErg chimera (red triangle, n = 4) with V0.5 values (mean ± sd). Eag1TM did not reach saturation up to 100 mV. (C) Cole-Moore effect of WT Eag1, Eag1TM, and the Eag1/hErg chimera with the voltage-pulse protocol shown above. (D) Plot of normalized current at 10 ms following the depolarization step vs holding potential for WT Eag1 (Cole-Moore I-V plot). The Cole-Moore I-V plot was fit with a Boltzmann function to estimate the holding potential that produces half maximal rates of activation (V0.5CM﻿ = −126 ± 0.9 mV, mean ± sd, n = 6).
 
-## Interactions between the voltage sensor and intracellular domains
+### Interactions between the voltage sensor and intracellular domains
 
 To search for contacts between the intracellular domains and the transmembrane domains that influence gating properties we searched for mutations that modified or resulted in the loss of the Cole-Moore effect in Eag1. Using the structures of Eag1 and hErg as a guide, we first modified by alanine scanning mutagenesis the C-terminus of S4 and the S4-S5 linker (residues 343–348), which are near the PAS loop in both structures (Figure 1b, Figure 3, and Figure 3—figure supplement 1a,b) (Gianulis et al., 2013; Wang et al., 1998). These results suggest that the S4-S5 linker plays a role in voltage-dependent gating as we observed both negative (H343A, Y344A) and positive (D342A, I345A, E346A) shifted V0.5 values. Furthermore, H343A, Y344A, I345A, E346A, and Y347A all exhibit a Cole-Moore effect with both negative (H343A, I345A) and positive (E346A, Y347A) shifts in the V0.5CM (Figure 3—figure supplement 1c,d). We note that only mutation of Asp 342 to Ala (D342A) results in complete loss of the Cole-Moore effect, suggesting that Asp 342 may interact with the intracellular domains (Figure 3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig3-v1.jpg)
+
+**Figure 3.:** (A) Voltage family current trace for D342A, R7A/R8A, and Δ3–9 with the voltage-pulse protocol shown above. (B) Normalized tail current vs. depolarization voltage plot of WT Eag1 (black square, n = 6), D342A (green triangle, n = 5), R7A/R8A (orange circle, n = 5), and Δ3–9 (red diamond, n = 5) with V0.5 values (mean ± sd). D342A, R7A/R8A, and Δ3–9 did not reach saturation up to 100 mV. (C) Cole-Moore effect of D342A, R7A/R8A, and Δ3–9 with the voltage-pulse protocol shown above. (D) Cole-Moore I-V plot for WT Eag1 (black square, n = 6), R7A/R8A (orange cirlce, n = 5), and Δ3–9 (red diamond, n = 5) with V0.5CM values (mean ± sd).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Voltage family current trace for H343A, Y344A, I345A, E346A, and Y347A with the voltage-pulse protocol shown above. (B) Normalized tail current vs. depolarization voltage plot of WT Eag1 (black square, n = 6), H343A (cyan triangle, n = 4), Y344A (green triangle, n = 5), I345A (red diamond, n = 5), E346A (orange circle, n = 6), and Y347A (blue unfilled square, n = 5) with V0.5 values (mean ± sd). (C) Cole-Moore effect of H343A, Y344A, I345A, E346A, and Y347A with the voltage-pulse protocol shown above. (D) Cole-Moore I-V plot for WT Eag1 (black square, n = 6), H343A (cyan triangle n = 3), Y344A (green triangle, n = 5), I345A (red diamond, n = 4), E346A (orange circle, n = 4), and Y347A (blue unfilled square, n = 5) with V0.5CM values (mean ± sd).
+
 Asp 342 is located at the C-terminus of S4 and is highly conserved in Kvs 10–12. In the closed conformation of Eag1, Asp 342 does not interact with the intracellular domains (Figure 1b) (Whicher and MacKinnon, 2016). However, in the open conformation of hErg the homologous Asp is near (~6 Å) two Arg residues in the PAS loop (Figure 1c) (Wang and MacKinnon, 2017). In all Kvs 10–12 the PAS loop has at least one positively charged residue. In Eag1, the corresponding Arg residues are Arg 7 and 8. We mutated the Arg residues to Ala (R7A/R8A) and deleted residues 3–9 (Δ3–9) (Figure 3). The V0.5 of R7A/R8A and Δ3–9 are right shifted to a similar extent as Eag1TM and the D342A mutant. Therefore, Arg 7 and 8 promote channel opening, like Asp 342, and mutation of these residues has a similar effect on V0.5 as loss of the intracellular domains. In addition, the R7A/R8A and Δ3–9 mutations result in a right-shifted V0.5CM, indicating that more depolarized holding potentials are required for fast activation of these mutants than WT Eag1. The right shifted V0.5 and the modified Cole-Moore effect of R7A/R8A and Δ3–9 suggest that Arg 7 and 8 might form a functional interaction with Asp 342. Furthermore, since mutation of Arg 7 and 8 did not result in complete loss of the Cole-Moore effect, Asp 342 likely interacts with additional residues on the intracellular domains. Taken together, the functional data along with the proximity of the PAS loop and Asp 342 in the open conformation of hErg suggest that an interaction between Asp 342 and the PAS loop may occur in the open conformation to promote channel opening.
 
-## Implications for voltage-dependent gating
+### Implications for voltage-dependent gating
 
 How might an interaction between the PAS loop and Asp 342 promote channel opening? One hypothesis is that the interaction between the PAS loop and Asp 342 stabilizes the depolarized state of the voltage sensor. This hypothesis would explain why deletion of the intracellular domains (Eag1TM) and mutation of Asp 342 and Arg 7 and 8 disfavors channel opening as indicated by a right shift in the voltage-dependence of activation. However, further analysis of PAS loop residues that are adjacent to Arg 7 and 8, Leu 10, Val 11, Ala 12, and Pro 13, revealed an additional function of the PAS loop in voltage-dependent gating. Leu 10, Val 11, Ala 12, and Pro 13 interact with Tyr 639, a conserved residue in Kvs 10–12 that is located on the CNBHD, and Tyr 213, a Phe, Tyr or Cys in Kvs 10–12 that is located on the loop before S1 of the VS (Figure 1b) (Whicher and MacKinnon, 2016). In this position, residues 10–13 link the VS and the intracellular CNBHD. To study the functional consequences of altering this region of contact, we generated Tyr 213 to Ala (Y213A) and Tyr 639 to Arg (Y639R) mutant channels and PAS loop mutant channels with successive deletions of residues 10–13 (Δ3–10, Δ3–11, Δ3–12, and Δ3–13). These mutants show inactivation and hooked tail currents at more depolarized potentials (40–100 mV), as was previously shown (Terlau et al., 1997) (Figure 4a,b and Figure 4—figure supplement 1a,b). These mutants also produce channels that open at more negative (hyperpolarized) potentials than WT Eag1 (−80 mV) and exhibit slow deactivation, demonstrating that the interaction between residues 10–13, Tyr 213, and Tyr 639 promotes the closed state of Eag1.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig4-v1.jpg)
+
+**Figure 4.:** (A) Voltage family current trace for the Δ3–13, Y213A, and Y639R with the voltage-pulse protocol shown above. (B) Normalized tail current vs. depolarization voltage plot of WT Eag1 (black square, n = 6), Δ3–13 (orange triangle, n = 5), Y213A (green circle, n = 5), and Y639R (cyan diamond, n = 5) (mean ± sd). (C) Cole-Moore effect of Δ3–13, Y213A, and Y639R with the voltage-pulse protocol shown above.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Voltage family current trace for Δ3–10, Δ3–11, and Δ3–12 with the voltage-pulse protocol shown above. (B) Normalized tail current vs. depolarization voltage plot of WT Eag1 (black square, n = 6), Δ3–10 (orange circle, n = 5), Δ3–11 (red diamond, n = 3), and Δ3–12 (blue triangle, n = 3). (C) Cole-Moore effect of Δ3–10, Δ3–11, and Δ3–12 with the voltage-pulse protocol shown above (mean ± sd).
 
 Based on these data, the PAS loop can be divided into two functionally distinct segments: the N-terminus (residues 1–9; not observed in the Eag1 structure) and the C-terminus (residues 10–13) (Figure 1c). The N-terminus seems to promote channel opening and may interact with Asp 342 of the S4-S5 linker. The C-terminus seems to promote channel closure and interacts with the CNBHD. Furthermore, in the open state structure of hErg the PAS loop C-terminus does not interact with either Tyr 403 (equivalent to Tyr 213 in Eag1) or Tyr 827 (equivalent to Tyr 639 in Eag1) (Figure 1c) suggesting that destabilization of this interface might be necessary for channel opening (Wang and MacKinnon, 2017). Therefore, we propose that the following structural interactions take place in association with voltage dependent gating. Upon depolarization, Asp 342 interacts with the PAS loop N-terminus to stabilize the open state of the VS and destabilize the interaction between the PAS loop C-terminus, Tyr 213, and Tyr 639 to promote channel opening (Figure 1c). When the VS is hyperpolarized, movement of the S4 disrupts the interaction between Asp 342 and the PAS loop N-terminus, allowing the interaction between the PAS loop C-terminus, Tyr 213, and Tyr 639 to form and promote channel closing (Figure 1b).
 
@@ -55,9 +71,29 @@ Two experiments support this hypothesis for the role of the intracellular domain
 
 **Figure 5.:** Voltage family current trace for the L341 split (A), D342A L341 split (B), and Δ3–9 L341 split (C) with the voltage-pulse protocol shown above. (D) Normalized current vs depolarization voltage for L341 split (black square, n = 11), D342A L341 split (red diamond, n = 7), and Δ3–9 L341 split (orange circle, n = 7) (mean ± sd).
 
-## Structure of constitutively open Eag1
+### Structure of constitutively open Eag1
 
 To better understand how the channel opens and how CaM inhibits opening we sought to determine the structure of an open Eag1 channel. In the presence of Ca2+/CaM, Eag1 Δ3–13 remains open at hyperpolarized voltages (Figure 6a). Therefore, we determined the Cryo-EM structure of Eag1 Δ3–13 in the presence of calcium and bound to CaM (Eag1 Δ3–13/CaM) (Figure 6b,c and Figure 6—figure supplements 1, 2, 3 and 4). Two different conformations were identified for Eag1 Δ3–13/CaM: conformation 1 at 3.7 Å and conformation 2 at 4.0 Å resolution. In both conformations, the S4 helices adopt a depolarized conformation and intracellular domains are rotated in a counterclockwise direction when viewed from the extracellular side of the membrane, but in conformation two the extent of the rotation is larger (2.4° degrees for conformation 1 and 8.6° degrees for conformation 2) (Figure 6b,c and Figure 6—figure supplement 4). The rotation observed in these conformations is in a similar direction as the intracellular domains in the open conformation structure of hErg (Wang and MacKinnon, 2017) (Figure 6d). However, the extent of the rotation of the Eag1 intracellular domains is not as large as the 20° rotation observed in hErg and the S6 helices remain closed (Figure 6d,e). As a result, we believe that conformation 1 and conformation 2 represent pre-open conformations of Eag1 on the pathway from closed to fully open.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig6-v1.jpg)
+
+**Figure 6.:** (A) Left, Voltage family current trace for Eag1 Δ3–13 in the presence of 1 mM CaCl2 with the voltage-pulse protocol shown above. Right, normalized current vs depolarization voltage for Eag1 Δ3–13 in the presence of 1 mM CaCl2 (black square, n = 3) with reversal potential (Erev) (mean ± sd). (B) Structural superposition of Eag1 Δ3–13/CaM conformation 1 (cyan) and Eag1/CaM (PDB-5K7L, (gray) using the selectivity filter. Only the intracellular domains are shown from an extracellular view and the location of the S6 helices are indicated with spheres. Degree of rotation is indicated by the arrow. (C) Structural superposition of Eag1 Δ3–13/CaM conformation 2 (green) and Eag1/CaM (gray) using the selectivity filter with the same view as (B). (D) Structural superposition of Eag1 Δ3–13/CaM conformation 2 (green C, red O, blue N), Eag1/CaM (gray C, red O, blue N), and hErg (PDB-5VA2, yellow C, red O, blue N) using the selectivity filter. Location of the intracellular gate Gln (Q476 for Eag1 and Q664 for hErg) are shown as ball and stick. (E) Plot of pore diameter for Eag1 Δ3–13/CaM conformation 2 (green), Eag1 (gray), and hErg (yellow). The location of the selectivity filter and intracellular gate are indicated and the dashed gray line at 6 Å indicates the diameter of hydrated potassium.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) SDS-PAGE gel of fractions from the final gel filtration column of Eag1 Δ3–13/CaM (molecular weight standards are in kDa). (B) Representative micrograph of Eag1 Δ3–13/CaM in vitreous ice (scale bar = 500 Å). (C) Representative class averages from 2D classification (scale bar = 100 Å). (D) Gold standard FSC of conformation 1 (green) and conformation 2 (black) of Eag1 Δ3–13 bound to CaM. The dotted line indicates the 0.143 FSC cutoff which corresponds to the indicated resolutions. Orientation distribution of particles in the final reconstruction of conformation 1 (E) and conformation 2 (F) of Eag1 Δ3–13 bound to CaM. Each column indicates one view and the number of particles in each view is indicated by the size and color of the column (larger columns colored red contain a higher number of particles).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Cryo-EM maps of conformation 1 (A) and conformation 2 (B) colored based on local resolution estimated by ResMap. Slices of the transmembrane domain (top panel) and intracellular domains (bottom panel) colored by local resolution are shown on the right.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** ( A) FSC cross validation between the Eag1 Δ3–13/CaM model and the full map used for refinement for conformation 1 (green) and conformation 2 (black). (B). Collection parameters and refinement statistics for Eag1 Δ3–13/CaM conformation 1 and 2.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/49188/elife-49188-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Side view of conformation 1 of Eag1 Δ3–13 bound to CaM. Position of the membrane is indicated by gray lines and domain coloring is as follows: PAS-orange, VS-yellow, S5-S6-green, C-linker-red, CNBHD-cyan, and CaM-purple. Black trace indicates the subunit shown in (B) and (C). (B) Structural superposition of the intracellular domains of Eag1 Δ3–13/CaM conformation 1 (colored) and Eag1/CaM (PDB-5K7L, gray) using the selectivity filter for alignment. (C) Structural superposition of the intracellular domains of Eag1 Δ3–13/CaM conformation 1 (colored) and Eag1/CaM (gray) using the intracellular domains for alignment. (D) Side view of conformation 2 of Eag1 Δ3–13 bound to CaM. Position of the membrane is indicated by gray lines and domain coloring is the same as in (A). Black trace indicates the subunit shown in (E) and (F). (E) Structural superposition of the intracellular domains of Eag1 Δ3–13/CaM conformation 2 (colored) and Eag1/CaM (gray) using the selectivity filter for alignment. (F) Structural superposition of the intracellular domains of Eag1 Δ3–13/CaM conformation 2 (colored) and Eag1/CaM (gray) using the intracellular domains for alignment.
 
 A hypothesis for why the pore remains closed in the structure of Eag1 Δ3–13/CaM is that, compared to hErg, Eag1 might be more stable in a closed conformation. This hypothesis is consistent with a number of observations on the function. First, insertion of the intracellular domains of hErg onto Eag1 (Eag1/hErg chimera) causes a 20 mV left shift in the V0.5 (Figure 2a,b). Second, the V0.5 of Eag1 is right-shifted by 40 mV compared with hErg and Eag1TM is right shifted by 80 mV when compared to a hErg channel lacking the intracellular domains (Figure 2a,b) (Hausammann and Grütter, 2013; Wang and MacKinnon, 2017). What might cause Eag1 to be more stable in a closed conformation? In Eag1, Phe 475 and Gln 477 are located at the interface of the S6 helices on either side of Gln 476, the intracellular gate. In Kv11 and Kv12, which have a left shifted V0.5 compared to Eag1, these residues are Ile and Arg respectively (Bauer and Schwarz, 2018). The Eag1 double mutant F475I/Q477R causes a 50 mV left shift in the V0.5 to −20 mV when introduced into the full-length channel and a 16 mV left shift in the V0.5 to 30 mV when introduced into Eag1TM (Figure 7a,b,c). In addition, when the F475I/Q477R mutation is introduced into the Eag1/hErg chimera the channel remains open at hyperpolarized potentials (Figure 7d). Taken together, these data suggest that the intracellular domains and Phe 475 and Gln 477 cause Eag1 to be more stable in a closed conformation. Therefore, we propose that the Eag1 intracellular domains, when viewed from the extracellular side, rotate in a counterclockwise direction to promote the opening of the pore. However, due to the stability of Eag1 in a closed conformation and the conditions under which the Cryo-EM structure was determined we suspect that pore opening is transient and thus not observed in the Eag1 Δ3–13/CaM structure.
 
@@ -65,7 +101,7 @@ A hypothesis for why the pore remains closed in the structure of Eag1 Δ3–13/C
 
 **Figure 7.:** (A) Phe 475 and Gln 477 (shown as green sticks, with red O, and blue N) are at the interface of the S6 helices (green). C-linker is shown in red. (B) Voltage family current trace for F475I/Q477R and Eag1TM F475I/Q477R with the voltage-pulse protocol shown above. (C) Normalized tail current vs. depolarization voltage plot of WT Eag1 (black square, n = 6), F475I/Q477R (green triangle, n = 7), and Eag1TM F475I/Q477R (red diamond, n = 6) with V0.5 values (mean ± sd). (D) Top, Voltage family current trace for Eag1/hErg chimera F475I/Q477R with the voltage-pulse protocol shown above. Bottom, normalized current vs depolarization voltage for Eag1/hErg chimera F475I/Q477R (black square, n = 5) with reversal potential (Erev) (mean ± sd).
 
-## CaM inhibition
+### CaM inhibition
 
 Rotation of the intracellular domains observed in the different conformations of Eag1 Δ3–13/CaM occurs with CaM bound to the channel in the same orientation as observed in the WT structure (Figure 6—figure supplement 4) (Whicher and MacKinnon, 2016). This finding suggests that binding of CaM does not clamp the PAS and CNBHD domains together to prevent rotation of the intracellular domains and channel opening as we previously proposed. Instead, we think that more likely CaM binding to the channel helps to stabilize the hydrophobic interaction between the PAS loop C-terminus, Tyr 213, and Tyr 639. As discussed above, this interaction seems to be important for channel closure. Thus, by stabilizing this interaction CaM can inhibit the channel. In support of this hypothesis, deletion of this interaction by removing residues 3–13 results in a channel that is no longer inhibited by CaM (Figure 6a). In addition, a similar effect was observed in Eag1 mutants that lack the PAS cap (residues 1–26) or the entire PAS domain (27-135) (Lörinczi et al., 2016).
 
@@ -79,34 +115,176 @@ These interactions also help to understand the gating of related channels. For h
 
 ## Materials and methods
 
-## Cloning of Eag1 constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Rattus norvegicus)</td>
+      <td>Kv10.1/Eag1/Kcnh1</td>
+      <td>Synthetic</td>
+      <td>Uniprot: Q63472</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>Calmodulin</td>
+      <td>Synthetic</td>
+      <td>Uniprot: P0DP24</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293S GnTI-</td>
+      <td>ATCC</td>
+      <td>ATCC: CRL-3022 RRID:CVCL_A785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Spodopterafrugiperda)</td>
+      <td>Sf9</td>
+      <td>ATCC</td>
+      <td>ATCC: CRL-1711 RRID:CVCL_0549</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>Chinese Hamster Ovary cells</td>
+      <td>Sigma</td>
+      <td>RRID: CVCL_0213</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEG Bacmam</td>
+      <td>doi: https://doi.org/10.1038/nprot.2014.173</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEM-T vector</td>
+      <td>Promega</td>
+      <td>Catalog number: A1360</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pClampfit 10.5</td>
+      <td>Molecular Devices</td>
+      <td>RRID: SCR_011323</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>doi: 10.1038/nmeth.4193</td>
+      <td>RRID: SCR_016499</td>
+      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFIND4</td>
+      <td>doi: 10.1016/j.jsb.2015.08.008</td>
+      <td>RRID: SCR_016732</td>
+      <td>http://grigoriefflab.janelia.org/ctffind4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION-3</td>
+      <td>doi: 10.1016/j.jsb.2012.09.006</td>
+      <td>RRID: SCR_016274</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page</td>
+    </tr>
+    <tr>
+      <td>Ssoftware, algorithm</td>
+      <td>ResMap</td>
+      <td>doi: 10.1038/nmeth.2727</td>
+      <td></td>
+      <td>http://resmap.sourceforge.net</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>doi: 10.1107/S0907444910007493</td>
+      <td>RRID: SCR_014222</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>doi: 10.1107/S0907444909052925</td>
+      <td>RRID: SCR_014224</td>
+      <td>http://phenix-online.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pymol</td>
+      <td>PyMOL Molecular Graphics System, Schrödinger, LLC</td>
+      <td>RRID: SCR_000305</td>
+      <td>http://www.pymol.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>UCSF Resource for Biocomputing, Visualization,and Bioinformatics</td>
+      <td>RRID: SCR_004097</td>
+      <td>http://plato.cgl.ucsf.edu/chimera/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HOLE</td>
+      <td>doi:10.1016/S0263-7855(97)00009-X</td>
+      <td></td>
+      <td>http://www.holeprogram.org</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning of Eag1 constructs
 
 Cloning of rat Eag1 into the BacMam (Goehring et al., 2014) expression vector with a C-terminal green fluorescent protein (GFP)-His6 tag was described previously (Whicher and MacKinnon, 2016). All constructs presented here are in the BacMam vector except for the L341 split constructs. For the Eag1TM construct, residues 197–481 (S1-S6) were fused to residues 887–962 (C-terminal tetramer assembly domain). For the Eag1/hErg1 chimera, residues 1–389 (PAS) and 670–1159 (C-linker, CNBHD, and C-terminal assembly domain) of hErg were fused to the N- and C-termini of Eag1 residues 197–481 (S1-S6), respectively. For the L341 split, the N-terminal half (1-341) and C-terminal half (342-963) were each cloned into a pGEM vector for oocyte expression. Mutagenesis and deletions were performed with standard protocols and constructs were confirmed by sequencing. Calmodulin (CaM) was cloned into a BacMam vector as described previously (Whicher and MacKinnon, 2016).
 
-## Electrophysiological recordings of Eag1 constructs in CHO cells
+### Electrophysiological recordings of Eag1 constructs in CHO cells
 
-All recordings of Eag1 constructs in BacMam vectors were from Chinese hamster ovary (CHO) cells. CHO cells cultured in DMEM-F12 (Gibco) with 10% FBS were transfected with the Eag1 construct using the FuGENE HD transfection reagent (Promega). 48 hr following transfection, the media was replaced with bath solution (10 mM HEPES pH 7.4, 60 mM KCl, 95 mM NaCl, 1 mM CaCl2) and experiments were performed at room temperature using the whole cell patch clamp technique. Polished borosilicate glass pipettes with resistance between 2–4 MΩ were filled with 10 mM HEPES pH 7.4, 165 mM KCl, 5 mM EDTA. To record Eag1 Δ3–13 in the presence of calcium, the 5 mM EDTA was replaced with 1 mM CaCl2 in the pipette solution. Voltage-family recordings were measured by holding the cells at −100 mV, stepping to depolarized voltages up to 100 mV in 20 mV steps, and then stepping back to −80 mV. To determine the V0.5 value, normalized tail current vs. voltage was plotted and fit with a Boltzmann function. Cole-Moore effect recordings were measured by holding cells for 500 ms at increasing holding potentials from −190 mV to the voltage of channel activation (either −110 mV, −50 mV or −30 mV depending on the construct) in 20 mV steps followed by a step to 40 mV. To estimate the holding potential that produces half maximal rates of activation (V0.5CM), we plotted holding potential vs normalized current at 10 ms following the depolarization step and fit the plot with a Boltzmann function:(I−Imin)/(Imax−Imin)=1/1+exp(−ZF/RT(V−V0.5cm))where (I-Imin )/(Imax -Imin ) is the normalized current at 10 ms following the depolarization step, V is the hyperpolarization voltage preceding the depolarization step, V0.5cm is the hyperpolarization voltage that produces half maximal rates of activation, F is the Faraday’s constant, R is the gas constant, T is the absolute temperature, and Z is the apparent valence of voltage dependence.
+All recordings of Eag1 constructs in BacMam vectors were from Chinese hamster ovary (CHO) cells. CHO cells cultured in DMEM-F12 (Gibco) with 10% FBS were transfected with the Eag1 construct using the FuGENE HD transfection reagent (Promega). 48 hr following transfection, the media was replaced with bath solution (10 mM HEPES pH 7.4, 60 mM KCl, 95 mM NaCl, 1 mM CaCl2) and experiments were performed at room temperature using the whole cell patch clamp technique. Polished borosilicate glass pipettes with resistance between 2–4 MΩ were filled with 10 mM HEPES pH 7.4, 165 mM KCl, 5 mM EDTA. To record Eag1 Δ3–13 in the presence of calcium, the 5 mM EDTA was replaced with 1 mM CaCl2 in the pipette solution. Voltage-family recordings were measured by holding the cells at −100 mV, stepping to depolarized voltages up to 100 mV in 20 mV steps, and then stepping back to −80 mV. To determine the V0.5 value, normalized tail current vs. voltage was plotted and fit with a Boltzmann function. Cole-Moore effect recordings were measured by holding cells for 500 ms at increasing holding potentials from −190 mV to the voltage of channel activation (either −110 mV, −50 mV or −30 mV depending on the construct) in 20 mV steps followed by a step to 40 mV. To estimate the holding potential that produces half maximal rates of activation (V0.5CM), we plotted holding potential vs normalized current at 10 ms following the depolarization step and fit the plot with a Boltzmann function:
+
+$$
+(I−I_{min})/(I_{max}−I_{min})=1/1+exp(−ZF/RT(V−V_{0.5cm}))
+$$
+
+where (I-Imin )/(Imax -Imin ) is the normalized current at 10 ms following the depolarization step, V is the hyperpolarization voltage preceding the depolarization step, V0.5cm is the hyperpolarization voltage that produces half maximal rates of activation, F is the Faraday’s constant, R is the gas constant, T is the absolute temperature, and Z is the apparent valence of voltage dependence.
 
 To determine reversal potential, we plotted normalized outward current vs depolarization voltage and determined the X intercept. All recordings were measured with pClamp10.5 software (Molecular Devices), an Axopatch 200B amplifier (Molecular Devices), and an Axon digidata 1550 digitizer (Molecular Devices). Recordings were filtered at 1 kHz and sampled at 10 kHz. No leak current was subtracted from the current traces.
 
-## Electrophysiological recordings of Eag1 L341 split constructs in oocytes
+### Electrophysiological recordings of Eag1 L341 split constructs in oocytes
 
 The mMessage mMachine T7 transcription kit (Ambion) was used to produce cRNA of the Eag1 split constructs linearized with NdeI. The MEGAclear kit was used to purify cRNAs, which were injected into oocytes. A total of 10 ng of cRNA was injected per oocyte at a ratio of 1:1 N-terminal half:C-terminal half. Oocytes were stored at 18°C for 24–48 hr after injection in ND96 (96 mM NaCl, 2 mM KCl, 1.8 mM CaCl2, 1.0 mM MgCl2, 5 mM HEPES pH 7.6 with NaOH, 50 μg/ml gentamycin) and used for recordings. The bath solution was 55 mM NaCl, 60 mM KCl, 1.8 mM CaCl2, and 10 mM HEPES pH 7.2 with NaOH and the pipette solution was 3M KCl. The voltage family protocol was as follows: hold at −20 mV, step to depolarized voltages from −120 to 100 mV in 20 mV steps, and then step back to −80 mV. All recordings were measured at room temperature with pClamp10.5 software (Molecular Devices), Gene Clamp 500 amplifier (Molecular Devices), and an Axon digidata 1440A digitizer (Molecular Devices) in two electrode voltage-clamp configuration. The recorded signal was filtered at 1 kHz and sampled at 10 kHz. No leak or capacitive currents were subtracted from the current traces.
 
-## Expression and purification of Eag1 Δ3–13/CaM
+### Expression and purification of Eag1 Δ3–13/CaM
 
 The C-terminal unstructured region (773-886) of the Eag1 Δ3–13 was removed as described previously to improve expression and stability. This mutation does not affect the functional properties of the channel (Whicher and MacKinnon, 2016). Baculovirus for Eag1 Δ3–13 and CaM, were produced by transfecting bacmids into SF9 cells in Grace’s media supplemented with 10% FBS with the cellfectin II reagent (Invitrogen). Then the baculovirus was amplified in 1L suspension cultures of SF9 cells at 27°C. 1L cultures of HEK293S GnTI- at 3 × 106 cells/mL in Freestyle 293 media (Gibco) supplemented with 2% FBS were infected with both Eag1 Δ3–13 and CaM baculovirus at a 4:1 Eag1 Δ3–13:CaM ratio. Following infection, the cells were incubated at 37°C for 18 hr, induced by adding 10 μM sodium butyrate, incubated at 30°C for 48 hr, and harvested.
 
 4L of cell pellet was resuspended in lysis buffer (20 mM Tris pH 8, 1 mM CaCl2, 1 μg/ml leupepetin, 1 μg/ml pepstatin, 1 mM benzamidine, 1 μg/ml aprotonin, 0.01 mg/ml DNase, 1 mM PMSF), incubated at RT with stirring for 20 min, and centrifuged for 40 min at 35,000xg. Pellets were resuspended in extraction buffer (50 mM Tris pH 8, 300 mM KCl, 1 mM CaCl2, 8 mM Lauryl Maltose Neopentyl Glycol (LMNG), 2 mM Cholesteryl hemisuccinate (CHS), 1 μg/ml leupepetin, 1 μg/ml pepstatin, 1 mM benzamidine, 1 μg/ml aprotonin, 0.01 mg/ml DNase, 1 mM PMSF), incubated at 4°C for 2 hr with stirring, and centrifuged for 90 min at 35,000xg. The supernatant was incubated for 2 hr at 4°C with CNBR-activated sepharose beads (GE healthcare) coupled to a nanobody with high affinity for GFP (GFP-NB) (Kirchhofer et al., 2010). The beads were washed with superose 6 buffer (20 mM Tris pH 8, 300 mM KCl, 1 mM CaCl2, 0.05% Digitonin) first with and then without 10 mM MgCl2 and 5 mM adenosine triphosphate (ATP) to remove bound heat shock proteins. The washed beads were incubated overnight at 4°C with PreScission protease (10:1 w/w ratio) to remove the GFP tag from Eag1 Δ3–13. The protein was eluted with wash buffer, concentrated, and purified on a superose 6 column (GE healthcare) equilibrated with superose 6 buffer. Peak fractions of Eag1 Δ3–13 bound to CaM (Eag1 Δ3–13/CaM) (Figure 6—figure supplement 1a) were pooled and concentrated to 5 mg/ml for single particle Cryo-EM structure determination.
 
-## EM sample preparation and imaging of Eag1 Δ3–13/CaM
+### EM sample preparation and imaging of Eag1 Δ3–13/CaM
 
 In a Vitrobot Mark IV (FEI), 3.5 μl of 5 mg/ml Eag1 Δ3–13/CaM was pipetted onto Quantifoil R1.2/1.3 gold holey carbon grids (Quantifoil) with 400 mesh that were glow-discharged for 10 s. The grids were blotted for 4 s at 100% humidity and frozen in liquid nitrogen cooled liquid ethane. Images were collected in a 300keV Titan Krios (FEI) with a Gatan K2 Summit direct electron detector (Gatan) with Serial EM (Mastronarde, 2005) in super-resolution counting mode, with a super resolution pixel size of 0.5 Å, and a defocus range of 1.2 to 2.4 μm. Data were collected with a dose of 8 electrons per physical pixel per second (pixel size of 1.0 Å at the specimen) and images were recorded with a 10 s exposure and 200 ms subframes (50 total frames) to give a total dose of 80 electrons per Å2 (1.6 electrons per Å2 per subframe).
 
-## Image processing and map generation
+### Image processing and map generation
 
 Dose fractionated subframes were binned by 2 (giving a pixel size of 1.0 Å), aligned, and summed using MotionCor2 (Zheng et al., 2017) with 5 × 5 patches (Figure 6—figure supplement 1b). The contrast transfer function was estimated for each summed image using CTFFIND4 (Rohou and Grigorieff, 2015). Three projection averages from the previous structure of Eag1 bound to CaM (Whicher and MacKinnon, 2016) were used as templates for automated picking in RELION (Scheres, 2012). The automatically selected particles were manually inspected to remove false positives and subjected to 2D classification in RELION specifying 200 classes (Figure 6—figure supplement 1c). The lowest populated classes were removed resulting in a data set of 378,000 particles. 3D classification of this data set, with Eag1/CaM as a reference (Whicher and MacKinnon, 2016), resulted in five classes with similar numbers of particles and resolution. Therefore, all 378,000 particles were combined for 3D refinement, with C4 symmetry imposed, producing a map at 4.5 Å resolution estimated by gold standard FSC at the 0.143 cutoff criteria (Scheres and Chen, 2012). The refined particles were subjected to further rounds of 3D classification without image alignment, which produced 2 subsets of particles: conformation 1 and conformation 2. Conformation 1 of Eag1 Δ3–13/CaM has 43,137 particles and a similar overall structure to Eag1/CaM (Whicher and MacKinnon, 2016). Conformation 2 of Eag1 Δ3–13/CaM has 54,530 particles and the intracellular domains are rotated with respect to the transmembrane domains. Bayesian particle polishing and 3D refinement, with C4 symmetry imposed, of the particle subsets in RELION resulted in 3.67 Å for conformation 1 and 4 Å for conformation 2. Gold standard FSC curves were calculated with a mask that excludes the detergent micelle and resolution values were estimated with the FSC = 0.143 cutoff criteria (Figure 6—figure supplement 1d–f) (Scheres and Chen, 2012). Local resolutions were estimated by ResMap (Figure 6—figure supplement 2) (Kucukelbir et al., 2014).
 
-## Model building
+### Model building
 
 The models of conformation 1 and conformation 2 were built in Coot (Emsley et al., 2010). For both conformations, first the S1-S6 and then the intracellular domains (PAS, C-linker, CNBHD, and CaM) from the structure of Eag1/CaM (Whicher and MacKinnon, 2016) (pdb-5K7L) were placed into the density as a rigid body. Following rigid body fitting, the model was manually inspected to fix regions that did not agree with the map or delete regions where there was no density. In conformation 1, we did not observe density for residues 244–246 (S1-S2 linker), 305–322 (S3-S4 linker), 407–411, 697–703, and 721-C-terminus. In conformation 2, we did not observe density for residues 202–213, 243–246 (S1-S2 linker), 274–283 (S2-S3 linker), 305–323 (S3-S4 linker), 407–411, 697–705, and 721-C-terminus. The side chains were modeled as alanine in lower resolution regions. Phenix real space refinement was used to refine the tetramer model of conformation 1 and conformation 2. Final models were validated using MolProbity and by comparing FSCs between the refined model and the EM map (Figure 6—figure supplement 3). Figures were generated with Chimera (Pettersen et al., 2004), Pymol (The PyMOL Molecular Graphics System, Version 1.8 Schrödinger, LLC.), HOLE (Smart et al., 1996), and structure calculations were performed with the SBgrid suite of programs (Morin et al., 2013).

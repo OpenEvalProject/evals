@@ -43,47 +43,95 @@ Here, we sought to determine the molecular mechanism by which BAP1 regulates tro
 
 ## Results
 
-## BAP1 is highly expressed in undifferentiated trophoblast and downregulated as cells enter the TGC lineage
+### BAP1 is highly expressed in undifferentiated trophoblast and downregulated as cells enter the TGC lineage
 
 To gain insight into the role of Bap1 in trophoblast development, we first examined BAP1 expression in mTSCs. This unique stem cell type is derived from the trophectoderm of the blastocyst or from extraembryonic ectoderm (ExE) of early post-implantation conceptuses. mTSCs retain the capacity to self-renew and to differentiate into all trophoblast subtypes under appropriate culture conditions (Tanaka et al., 1998). Immunofluorescence analysis of BAP1 in mTSCs showed strong nuclear staining (Figure 1A, B and C). We noticed that mTSC colonies containing areas of spontaneous differentiation, identified by decreased ESRRB stem cell marker expression, displayed a concomitant reduction in BAP1 staining intensity, suggesting that BAP1 is downregulated as soon as trophoblast cells start to differentiate (Figure 1B). In line with these observations, differentiation of mTSCs in vitro revealed a significant reduction in BAP1 protein levels at days 3 and 6 of differentiation compared to stem cell conditions, as shown by immunofluorescence staining and Western blot (WB) analysis (Figure 1C and D). The strongest downregulation was seen at 6 days when giant cells are the prevailing differentiated cell type (Murray et al., 2016; Perez-Garcia et al., 2018). However, Bap1 mRNA levels did not significantly change across this differentiation time course, indicating that the functional regulation of BAP1 takes place at the post-transcriptional level (Figure 1E).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/63254/elife-63254-fig1-v2.jpg)
+
+**Figure 1.:** (A, B) Immunofluorescence staining of mouse trophoblast stem cells (mTSCs) in the stem cell state for BAP1 and the stem cell marker ESRRB. The strong nuclear BAP1 staining observed in mTSCs is slightly reduced in partially differentiated, ESRRB-low cells (arrows). Representative images of four replicates. Scale bar: 100 µm. (C) Immunofluorescence staining for BAP1 and F-actin with phalloidin of mTSCs, and of mTSCs differentiated for 3 and 6 days. BAP1 is downregulated as cells reorganize their cytoskeleton during trophoblast differentiation. Representative images of three replicates. Scale bar: 100 µm. (D) Western blot for BAP1 on mTSCs in the stem cell state and upon 3 days (3d) and 6 days (6d) of differentiation, confirming the downregulation of BAP1. Quantification of band intensities of six independent experiments is shown in the graph below. Data are normalized against ACTIN and represented relative to stem cell conditions (0d); mean ± SEM; ***p<0.001 (one-way ANOVA with Dunnett’s multiple comparisons test). (E) RT-qPCR analysis of Bap1 expression during a 6-day time course of mTSC differentiation shows that Bap1 mRNA levels remain stable throughout the differentiation process. Expression is normalized to Sdha and displayed relative to stem cell conditions (0d). Data are mean of five replicates ± SEM (one-way ANOVA with Dunnett’s multiple comparisons test).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/63254/elife-63254-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Whole-mount immunostaining of E6.5 conceptuses for BAP1 and CDH1. Bap1 is highly expressed in the epiblast (Epi) and extraembryonic ectoderm (ExE). The ectoplacental cone (EPC) shows a reduced and diffuse staining (highlighted by arrows) as differentiation progresses. Representative images of n = 9 embryos. Scale bar: 100 µm. (B) Scatter plot showing BAP1 fluorescence intensity per cell in the EPC compared to ExE of the embryo shown in A. (C) Quantification graph representing the average BAP1 fluorescence intensity in the ExE and EPC of each embryo. Data are mean of nine biological replicates ± SD; **p<0.001 (Student’s t-test). (D) Immunohistochemistry analysis of E9.5 placenta for BAP1. Red arrows highlight trophoblast giant cells. The dotted lines separate the decidual tissue (upper part) from the fetal portion of the placenta. Image is representative of three biological replicates. Scale bar: 100 µm.
 
 To further corroborate these results, we performed BAP1 immunostainings on mouse conceptuses at day (E) 6.5 of gestation, a time window when the ExE is actively proliferating and differentiating into the ectoplacental cone (EPC). While ExE will go on to develop predominantly into the labyrinth at later stages of development, EPC cells will give rise to the placental hormone-producing spongiotrophoblast layer and to invasive TGCs (Simmons et al., 2007; Woods et al., 2018). Immunofluorescence analysis revealed strong nuclear BAP1 staining in the embryo proper (epiblast, Epi) and in the ExE. However, differentiating EPC showed a significantly reduced staining intensity (Figure 1—figure supplement 1A, B and C). In E9.5 placentae, BAP1 immunoreactivity was prominent in the developing labyrinth and spongiotrophoblast layer as well as in maternal decidual cells, but was markedly less pronounced in TGCs, again suggesting that BAP1 is specifically downregulated as trophoblast cells differentiate into TGCs (Figure 1—figure supplement 1D).
 
 Overall, these results indicate that BAP1 is highly expressed in undifferentiated trophoblast of the ExE in vivo and in mTSCs in vitro. BAP1 is downregulated at the protein level specifically as cells enter the TGC lineage, suggesting a potential function of BAP1 in regulating trophoblast differentiation and invasiveness, a key property of TGCs.
 
-## BAP1 deletion does not impair the stem cell gene-regulatory network
+### BAP1 deletion does not impair the stem cell gene-regulatory network
 
 The proliferative and self-renewal capacity of mTSCs depends on FGF and Tgfβ1/activin A signalling pathways (Tanaka et al., 1998; Erlebacher et al., 2004). To further explore the main growth factor signals involved in regulating BAP1 protein levels, mTSCs were subjected to 3 days of differentiation in the presence of either FGF or conditioned medium (CM), which provides the main source of Tgfβ1/activin A in the complete TSC media. WB analysis showed that after 3 days of differentiation under standard differentiation conditions (base medium) or in the presence of CM, BAP1 was markedly downregulated. However, the presence of FGF alone maintained high BAP1 protein levels, indicating that FGF signalling is the main pathway driving BAP1 expression in stem cell conditions (Figure 2A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/63254/elife-63254-fig2-v2.jpg)
+
+**Figure 2.:** (A) Western blot analysis of mouse trophoblast stem cells (mTSCs) grown in stem cell conditions (Stem) and upon 3 day differentiation in standard base medium (Base), or in base medium supplemented with FGF or conditioned medium (CM). (B) Western blot analysis assessing the dynamic changes in the stem cell markers CDX2 and ESRRB across a short-term differentiation time course in vector control compared to Bap1-mutant mTSCs (stem cell conditions = 0 h, and differentiation at 4, 8, and 24 hours (h)). Blots are representative of two independent replicates. (C) Proliferation assay of control and Bap1-/- mTSCs over 4 consecutive days. Bap1-/- mTSCs exhibit a significant increase in the proliferation rate compared to vector control cells (mean ± SEM; n = 3). p=0.0093; two-way ANOVA with Holm-Sidak’s multiple comparisons test. (D) RT-qPCR analysis of control and Bap1-/- mTSCs for stem cell and early differentiation marker genes. Stem cell markers are increased and the upregulation of differentiation markers delayed in Bap1-mutant mTSCs. Data are normalized to Sdha and displayed as mean of three biological replicates (i.e. independent clones) ± SEM; *p<0.05, **p<0.01 (two-way ANOVA with Sidak’s multiple comparisons test).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63254/elife-63254-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) RT-qPCR analysis to assess the effect of Bap1 ablation on the stem cell state and early differentiation of mouse trophoblast stem cells (mTSCs). Data are normalized to Sdha and are displayed as mean of three biological replicates (i.e. independent clones) ± SEM; *p<0.05, **p<0.01 (two-way ANOVA with Sidak’s multiple comparisons test).
+
 This raises the question whether the absence of BAP1 affects stem cell fate. The transcription factors CDX2 and ESRRB represent primary targets and direct mediators of FGF signalling in mTSCs (Latos et al., 2015) that are essential to keep mTSCs in a highly proliferative, undifferentiated state. Both factors are rapidly downregulated upon trophoblast differentiation (Latos et al., 2015; Luo et al., 1997; Strumpf et al., 2005). Previously, we reported that Bap1 deletion in mTSCs resulted in an upregulation of Cdx2 and Esrrb mRNA levels (Perez-Garcia et al., 2018). To further investigate the effect of BAP1 on stem cells markers, we assessed CDX2 and ESRRB protein levels in Bap1-/- mTSCs compared to (empty vector) control cells across 24 hr of differentiation (0h = stem cell conditions; 4h, 8h, 24h = hours upon differentiation). The absence of BAP1 resulted in increased ESRRB and CDX2 protein levels, thus confirming our previous observations. Bap1 deficiency also increased proliferation rates in stem cell conditions (Figure 2B and C). The higher residual expression of ESRRB and CDX2 proteins detected after 24h of differentiation may indicate a potential delay in mTSC differentiation (Figure 2B). Indeed, analysis of the mRNA expression dynamics of the trophoblast stem cell markers Cdx2, Esrrb, Egr1, and Zpf382 indicated that Bap1-mutant mTSCs differentiated more slowly than control counterparts during the initial 24h of differentiation (Figure 2D and Figure 2—figure supplement 1A). In line with these results, we also observed that the upregulation of early mTSC differentiation markers such as Gcm1, L1cam, Id1, and Rnf44b was delayed in Bap1-/- mTSCs compared to control cells (Figure 2D and Figure 2—figure supplement 1A).
 
-## Bap1-/- mTSCs undergo EMT
+### Bap1-/- mTSCs undergo EMT
 
 The appearance of Bap1-/- TSCs under phase contrast revealed a phase bright, refractile, and loosely associated morphology with poor cell-cell contacts. This was in contrast to the colonies of vector control cells, suggesting that they may have undergone an EMT-like transition (Figure 3A), known to occur when trophoblast differentiates towards the invasive TGC lineage (Sutherland, 2003). The morphology of Bap1-/- mTSC colonies led us to hypothesize that BAP1 affects EMT in trophoblast. To investigate this, we studied the global expression profile of Bap1-mutant mTSCs compared to control cells in stem cell conditions (0d) and upon 3 days of differentiation (3d). Unbiased clustering and principal component analysis (PCA) clearly showed that the differentially expressed genes (DEG) were determined by the absence of BAP1 and by the day of differentiation (Figure 3B and Figure 3—figure supplement 1A). Gene ontology analysis revealed an enrichment of genes involved in regulation of extracellular matrix, cell junction, and cell adhesion at both time points analysed, concordant with the marked change in morphology of Bap1-/- mTSCs (Figure 3C, Figure 3—figure supplement 1B and Supplementary file 1 and 2). In line with these results, Bap1-/- mTSCs exhibited a significant decrease in cell adhesion on tissue culture plastic (Figure 3D), which was even more obvious when Bap1-/- mTSCs were grown in 3D organoid-like trophospheres (Figure 3E; Rai and Cross, 2015).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/63254/elife-63254-fig3-v2.jpg)
+
+**Figure 3.:** (A) Colony morphology of wild-type (vector) and Bap1-mutant mouse trophoblast stem cells (mTSCs). Bap1-/- mTSCs show a fibroblast-like morphology with loss of cell-cell attachment compared to vector control mTSCs. Images are representative of five independent TSC clones each. Scale bar: 100 µm. (B) Principal component analysis of global transcriptomes of independent vector control (n = 3) and Bap1 knockout (KO) (n = 4) clones grown in stem cell conditions (0d) and after 3 days of differentiation (3d). (C) Gene ontology analyses of genes differentially expressed between vector and Bap1-mutant mTSCs in stem cell conditions. (D) Cell adhesion assay showing that Bap1-mutant mTSCs are less well attached to cell culture plastic compared to vector control cells. Data are mean of three independent replicates with three biological replicates ( = independent clones) per experiment. ***p<0.001 (Student’s t-test). (E) Morphology of 3D-trophospheres after 8 days of differentiation in low attachment conditions. Representative images of 2 independent vector control and Bap1 KO cell clones. Scale bar: 200 µm. (F) RT-qPCR analysis of EMT marker expression during a 6-day differentiation time course. Data are normalized to Sdha and displayed relative to vector in stem cell conditions (0d). Data are mean of five biological replicates (i.e. independent clones) ± SEM; *p<0.05, **p<0.01, ***p<0.001 (two-way ANOVA with Sidak’s multiple comparisons test). (G) Immunofluorescence analysis for CDH1 and F-actin (phalloidin) of vector control and Bap1-mutant mTSCs over 6 days of differentiation. Lack of BAP1 reduces cell-cell junctions (CDH1 staining) with a profound reorganization of the cytoskeleton (increased actin stress fibres). Data are representative of five independent vector control and Bap1 KO clones each. Scale bar: 100 µm. (H) Transwell invasion assay of vector control (V2, V4) and Bap1-mutant (clones A5, B10) mTSCs after 3 and 4 days of differentiation. Photographs of invasion filters show haematoxylin-stained cells that reached the bottom side of the filter after removal of the reconstituted basement membrane matrix (Matrigel). (I) Quantification of invaded cells, measured by colour intensity, normalized to 3-day controls. Data are mean of three independent replicates (three biological clones in each replicate) ± SEM; *p<0.05, **p<0.01** (two-way ANOVA with Sidak’s multiple comparisons test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63254/elife-63254-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Hierarchical clustering of global transcriptomes generated by RNA-seq from three independent vector control and four Bap1 knockout (KO) mouse trophoblast stem cell (mTSC) clones grown in stem cell conditions (0d) and after 3 days of differentiation (3d). (B) Gene ontology analysis of genes differentially expressed between 3-day differentiated vector-control and Bap1-mutant mTSCs. (C) Heatmap of mean row-centred log2 FPKM values of differentially expressed genes (DESeq2 and intensity difference). Arrows highlight deregulated genes essential for the stabilization of cell-cell contacts and epithelial integrity. (D) RT-qPCR analysis of 3D-trophospheres generated from vector control and Bap1-mutant mTSCs after 8 days of differentiation. Data are normalized to Sdha and are displayed as mean of three replicates ± SEM; *p<0.05, **p<0.01 (Student’s t-test). (E) Venn diagrams of genes deregulated in common in Bap1-mutant mTSCs (0 and 3 days) and Bap1-null melanocytes and mesothelial cells (He et al., 2019).
 
 At the molecular level, the reduction in cell adhesion correlated with a significant downregulation of E-cadherin (Cdh1), an epithelial hallmark, in Bap1-/- compared to vector control cells (Figure 3F, Figure 3—figure supplement 1D and Supplementary file 1 and 2). Stringent calling (DESeq2 and intensity difference analysis) of DEG revealed that several genes involved in the stabilization of cell-cell contacts and epithelial integrity (Claudin 4 [Cldn4], Claudin 7 [Cldn7], Desmoplakin [Dsp], and Serpine1) were downregulated in Bap1-mutant mTSCs (Figure 3—figure supplement 1C and Supplementary file 1). Concomitant with the downregulation of epithelial markers like Cdh1, mesenchymal markers including N-cadherin (Cdh2), Zeb2, and Vimentin (Vim) were upregulated in the absence of Bap1 (Figure 3F). These data indicate that Bap1-null mTSCs display a pronounced and precocious EMT phenotype.
 
 TGC formation is characterized by cytoskeletal rearrangements, exit from the cell cycle, DNA endoreduplication, and production of trophoblast-specific proteins such as placental prolactins. Thus, undifferentiated trophoblast cells exhibit little organized actin and few peripheral focal complexes, whereas TGCs show a highly organized cytoskeleton containing prominent actin stress fibres linked to gain in motility and invasiveness (Parast et al., 2001; El-Hashash et al., 2010). As expected from the mRNA expression analysis, Bap1-/- mTSCs showed a loss of membrane-associated CDH1 staining and disorganized cytoskeleton in stem cell conditions, with increased numbers of actin stress fibres upon differentiation, suggesting a more TGC-like and invasive phenotype compared to wild-type (vector) cells (Figure 3G). Indeed, Bap1-/- TSCs were also more invasive through extracellular basement membrane (Matrigel) compared to vector control mTSCs in Transwell invasion experiments (Figure 3H and I). In line with these results, the DEG in Bap1-/- mTSCs showed significant overlap with the gene expression signatures of tissues prone to form tumours such as Bap1-/- melanocytes and mesothelial cells (He et al., 2019; Figure 3—figure supplement 1E). Altogether, these results indicate that the lack of Bap1 triggers EMT in mTSCs that recapitulates critical aspects of early malignant transformation.
 
-## BAP1 downregulation is critical to trigger EMT during trophoblast differentiation
+### BAP1 downregulation is critical to trigger EMT during trophoblast differentiation
 
 In order to confirm that BAP1 is one of the main regulators of EMT during trophoblast differentiation, we overexpressed Bap1 using the CRISPR/gRNA-directed Synergistic Activation Mediator (SAM) technology (Konermann et al., 2015). One out of three single guide RNAs (sgRNAs) tested induced robust upregulation of Bap1 mRNA and BAP1 protein levels compared to mTSCs transduced with a non-targeting sgRNA (NT-sgRNA) (Figure 4A and Figure 4—figure supplement 1A). The upregulation of Bap1 resulted in tight epithelial mTSC colonies that proliferated at a slower rate than NT-sgRNA control mTSCs (Figure 4B and C). To gain insight into the global transcriptional response to Bap1 overexpression, we performed RNA-seq on mTSCs grown in stem cell conditions (0d) and after 3 days of differentiation (3d). PCA showed that, besides the growth conditions, samples clearly cluster by the levels of BAP1 within the cells (Figure 4—figure supplement 1B and C). A stringent assessment of the deregulated genes (DESeq2 and intensity difference filter) revealed that, in addition to Bap1, a cohort of 80 genes were significantly deregulated in stem cell conditions with a robust upregulation of genes involved in cell junction biology and maintenance of epithelial integrity – such as Plakophilin 2 (Pkp2), Keratin-7/8/19 (Krt7/8/19), Desmoplakin (Dsp), and Cingulin (Cgn) (Figure 4D and Supplementary file 3 and 4). In line with these observations, gene ontology analysis revealed an overrepresentation of extracellular matrix and cell adhesion molecules, suggesting an increase in epithelial features of BAP1-overexpressing cells compared to control cells (Figure 4E and Supplementary file 3 and 4). Intriguingly, there was substantial overlap between genes downregulated in Bap1 KO mTSCs and those upregulated in Bap1-overexpressing cells, and conversely also between genes upregulated in the KO and downregulated in the overexpressing cells. Thus, the two opposing models of Bap1 modulation (KO vs. overexpression) provided mirror-image results that pivoted around the biological processes of epithelial cell integrity, cell adhesion, and cytoskeletal organization (Figure 4—figure supplement 1E and Supplementary file 5).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/63254/elife-63254-fig4-v2.jpg)
+
+**Figure 4.:** (A) Western blot analysis to confirm the overexpression of Bap1 in mouse trophoblast stem cells (mTSCs) induced by transduction of the gene-activating single guide RNA one (sgRNA1) compared to non-targeting sgRNA (NT-sgRNA). TUBULIN was used as loading control. Graph shows the quantification of three independent replicates. Data are mean ± SEM; *p<0.05 (Student’s t-test). (B) Colony morphology of NT-sgRNA and sgRNA1-transduced mTSCs. Overexpression of BAP1 in sgRNA1 mTSCs increases epithelioid features of the cell colonies. (C) Proliferation assay of control NT-sgRNA and sgRNA1 Bap1-overexpressing mTSCs over 4 consecutive days. sgRNA1 mTSCs exhibit a significant decrease in the proliferation rate compared to NT-sgRNA control cells (mean ± SEM; n = 5 each). **p<0.01; two-way ANOVA with Holm-Sidak’s multiple comparisons test. (D) Heatmap of mean row-centred log2 RPKM values of differentially expressed genes (DESeq2 and intensity difference) in mTSCs transduced with NT-sgRNA compared to sgRNA1. Arrows point to Bap1 itself and to genes associated with the reinforcement of epithelial integrity. Three independent biological replicates per genotype were sequenced. (E) Gene ontology analysis of genes differentially expressed between sgRNA1 and NT-sgRNA mTSCs grown in stem cell conditions. (F) RT-qPCR analysis of epithelial and mesenchymal markers in NT-sgRNA control cells compared to sgRNA1 Bap1-overexpressing mTSCs. Data are normalized to Sdha and are displayed as mean of three replicates ± SEM; **p<0.01, ****p<0.0001 (Student’s t-test). (G) Analysis of NT-sgRNA and sgRNA1 mTSCs grown in self-renewal conditions (0d) or after differentiation for 3 and 6 days (d) assessed by RT-qPCR. Data are mean ± SEM of n = 4 independent replicates. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 (two-way ANOVA with Sidak’s multiple comparisons test). (H) Transwell invasion assays of NT-sgRNA control and Bap1-overexpressing mTSCs. Representative images are shown. Quantification of invaded cells, measured by the colour intensity, normalized to 3-day NT-sgRNA. Data are mean of four independent replicates ± SEM; *p<0.05, **p<0.01 (two-way ANOVA with Sidak’s multiple comparisons test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/63254/elife-63254-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) RT-qPCR analysis to determine the overexpression of Bap1 in mTSCs induced by the transduction of each single guide RNAs (sgRNAs) or in combination (Mix) compared to non-targeting sgRNA (NT-sgRNA). Stable overexpression of the Cas9 and Ms2 SAM components is also shown for each cell line generated compared to non-transduced mTSCs. Data are normalized to Sdha and are displayed as mean of three replicates ± SEM; **p<0.01, ****p<0.0001 (one-way ANOVA with Dunnett’s multiple comparisons test). (B) Hierarchical clustering analysis of global transcriptomes generated by RNA-seq from NT-gRNA and sgRNA1 mTSCs grown in stem cells conditions (0d) and after 3 days of differentiation (3d). Samples cluster according to the amount of BAP1 and day of differentiation. Three independent replicates were sequenced in each condition. (C) Principal component analysis of global transcriptomes. (D) Gene ontology analyses of genes differentially expressed between sgRNA1 and NT-sgRNA mTSCs differentiated for 3 days. (E) Venn diagrams of genes commonly downregulated in Bap1 knockout (KO) and upregulated in Bap1-overexpressing (OE) mTSCs, and conversely of genes commonly upregulated in Bap1 KO and downregulated in Bap1 OE mTSCs, as identified by DESeq2. Gene ontology analyses of genes in common are shown for each comparison. (F) Analysis of NT-sgRNA and sgRNA1 mTSCs grown in self-renewal conditions (0d) or after differentiation for 3 and 6 days (d) assessed by RT-qPCR. Data are mean ± SEM of n = 4 independent replicates. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 (two-way ANOVA with Sidak’s multiple comparisons test). (G) mTSCs transduced with GFP-empty control or GFP-BAP1 lentiviral particles were isolated by using fluorescence activated cell sorting (FACS), grown in stem cell conditions and examined by Western blot. TUBULIN was used as loading control. Graph shows the quantification of three independent replicates. Data are mean ± SEM; *p<0.05 (Student’s t-test). (H) RT-qPCR analysis of epithelial-mesenchymal transition (EMT) markers and trophoblast stem cell (TSC) markers in mTSCs as in G. Data are normalized to Sdha and are displayed as mean of three replicates ± SEM; **p<0.01, ****p<0.0001 (Student’s t-test).
+
 To corroborate these RNA-seq results, we validated several EMT markers by RT-qPCR and confirmed that the overexpression of Bap1 induced a significant upregulation of E-cadherin (Cdh1) with concomitant downregulation of N-cadherin (Cdh2) and Vimentin (Vim) (Figure 4F). In line with the re-acquisition of epithelial properties, Bap1-overexpressing mTSCs exhibited a delay in differentiation towards the invasive TGC lineage and lower invasive capacity through Matrigel compared to NT-sgRNA control cells (Figure 4G and H and Figure 4—figure supplement 1F). Finally, we corroborated the data obtained by CRISPR/Cas9-SAM overexpression by performing exogenous GFP-Bap1 overexpression experiments in mTSCs grown in stem cell conditions, which similarly resulted in a significant upregulation of Cdh1 and strong downregulation of Cdh2, Zeb1, Zeb2, Snai1, and Vim expression (Figure 4—figure supplement 1G and H). These results demonstrate that precise levels of BAP1 regulate mTSC morphology, and that modulation of BAP1 levels affects the extent and speed at which trophoblast cells undergo EMT. Altogether these results indicate that the downregulation of BAP1 is critical for triggering EMT and invasiveness of trophoblast cells.
 
-## BAP1 and ASXL1/2 complexes are co-regulated during trophoblast differentiation
+### BAP1 and ASXL1/2 complexes are co-regulated during trophoblast differentiation
 
 Interaction of BAP1 with ASXL proteins promotes its stability and enzymatic activity (Campagne et al., 2019). In order to investigate the role of the BAP1:ASXL complex in regulating trophoblast biology, we first examined gene expression of ASXL family members Asxl1 and Asxl2 over a 6-day differentiation time course. RT-qPCR and WB analysis showed that ASXL1 was highly expressed in mTSCs under stem cell conditions and strongly downregulated during trophoblast differentiation, in parallel to decreasing BAP1 protein levels. ASXL2 expression displayed the opposite trend with maximal levels in differentiated trophoblast (Figure 5A and B). This expression pattern was further validated by immunofluorescence (Figure 5—figure supplement 1A and B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/63254/elife-63254-fig5-v2.jpg)
+
+**Figure 5.:** (A) RT-qPCR analysis of Asxl1 and Asxl2 expression during a 6-day differentiation time course of mouse trophoblast stem cells (mTSCs). Data are normalized to Sdha and are displayed as mean of three replicates ± SEM; ***p<0.001 (one-way ANOVA with Dunnett’s multiple comparisons test). (B) Western blot analysis of ASXL1 and ASXL2 protein levels in mTSCs differentiating over 6 days (d). Blots shown are representative of three independent replicates. (C) Co-immunoprecipitation of endogenous BAP1 or ASXL1 proteins from mTSC whole cell extracts (WCE) (1 mg). WCE (20 μg) and immunoprecipitates (IP) were analysed by Western blot. Negative controls included protein A plus WCE (Ctr 1) and WCE plus protein A and isotype control Ab (Ctr 2). (D) siRNA-mediated knockdown of ASXL1 or ASXL2 followed by immunoblotting for the factors indicated. (E) Quantification of BAP1 levels (shown in D) normalized to ACTIN, displayed relative to the amounts in transfected control cells. Data are means ± SEM; n = 3. *p<0.05, ***p<0.001 (one-way ANOVA with Dunnett’s multiple comparisons test). (F) Analysis of Asxl1-/- and Asxl2-/- mTSCs grown in self-renewal conditions (0d) or after 3d and 6d of differentiation assessed by RT-qPCR. Data are mean ± SEM of n = 3 (control, scramble), n = 2 (Asxl1 KO), and n = 3 (Asxl2 KO) individual clones as independent replicates. **p<0.01 (two-way ANOVA with Sidak’s multiple comparisons test). (G) Schematic diagram of the differentiation defects observed in Asxl1-/- and Asxl2-/- mTSCs.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/63254/elife-63254-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Immunofluorescence analysis for additional sex combs-like-1 (ASXL1) on mTSCs in stem cell conditions (0d) and after 3 and 6 days (d) of differentiation. Data confirm that ASXL1 is downregulated during trophoblast differentiation. Scale bar: 100 µm. (B) ASXL2 immunostaining as in (A) shows that the levels of ASXL2 increase as mTSCs differentiate. Scale bar: 100 µm. Representative images of three replicates. (C) Co-immunoprecipitation of endogenous BAP1 or ASXL2 from mTSC whole cell extracts (WCE) (1 mg). WCE (20 μg) and immunoprecipitates (IP) were analysed by Western blot. Negative controls included protein A plus WCE (Ctr 1) and WCE plus protein A and isotype control Ab (Ctr 2). (D) Western blot analysis of ASXL1 and ASXL2 protein levels in vector control and Bap1-/- mTSCs grown in stem cell conditions. ACTIN was used as loading control. The graphs show the quantification of three independent biological (cell clones) replicates. Data are mean ± SEM; *p<0.05 (Student’s t-test). (E) Details of the CRISPR/Cas9 KO strategy for ablating Asxl1 and Asxl2 genes. RT–qPCR and genomic genotyping PCR analyses were performed on single-cell expanded mTSC clones to confirm homozygous KOs. Data are mean ± SEM of n = 3 technical replicates. (F) Additional RT-qPCR analyses of Asxl1 and Asxl2 KO mTSCs clones as in Figure 5. Data are mean ± SEM of n = 3 (wild-type, scramble), n = 2 (Asxl1 KO) and n = 3 (Asxl2 KO) individual clones as independent replicates; *p<0.05 (two-way ANOVA with Sidak’s multiple comparisons test).
 
 These results prompted us to investigate the nature of the BAP1-ASXL interaction in the mTSC context. To study the endogenous association of BAP1 and ASXL, we immunoprecipitated BAP1, ASXL1, and ASXL2 from extracts of mTSCs grown in stem cell conditions and tested for reciprocal interactions by WB. While we were not able to detect an association of BAP1 and ASXL2 in stem cell conditions, co-immunoprecipitation of BAP1 and ASXL1 revealed that BAP1:ASXL1 is the predominant complex in mTSCs (Figure 5C and Figure 5—figure supplement 1C). Then, we further analysed whether this interaction regulates the stability of the BAP1 and ASXL proteins. Whereas the absence of BAP1 did not affect the stability of ASXL1 and ASXL2 (Figure 5—figure supplement 1D), small interference RNA (siRNA)-mediated knockdown of either ASXL1 or ASXL2 resulted in a decrease of BAP1 protein levels (Figure 5D). This was particularly significant in the case of ASXL1 knockdown, in line with ASXL1 being the major complexing partner of BAP1 in stem cell conditions (Figure 5D).
 
 To gain further insight into the specific roles of BAP1’s interaction partners, we generated Asxl1 and Asxl2 KO mTSCs using CRISPR/Cas9 technology (Figure 5—figure supplement 1E). The deletion of Asxl1 or Asxl2 did not affect stemness. However, under differentiation conditions, Asxl1-/- and Asxl2-/- mTSCs failed to upregulate markers of syncytiotrophoblast, whereas the differentiation towards TGCs was promoted (Figure 5F and G and Figure 5—figure supplement 1F). This defect phenocopied the syncytiotrophoblast differentiation defect we had previously reported for Bap1-mutant cells (Perez-Garcia et al., 2018). Moreover, the absence of Asxl1 and Asxl2 induced an upregulation of EMT markers such Cdh2, Vim, Zeb1, and Zeb2, suggesting that ASXL1 and ASXL2 together with BAP1 contribute to the modulation of EMT as a critical process during trophoblast differentiation (Figure 5—figure supplement 1F).
 
-## BAP1 PR-DUB complex is also regulated during human trophoblast differentiation
+### BAP1 PR-DUB complex is also regulated during human trophoblast differentiation
 
 TGCs represent the invasive trophoblast cell type in mice whereas in humans, this function is exerted by extravillous trophoblast (EVT). As in mouse, the gain of invasive properties is accompanied by an EMT process (DaSilva-Arnold et al., 2015; E Davies et al., 2016; Vićovac and Aplin, 1996). Polycomb group complexes, including the BAP1 PR-DUB, are well conserved throughout evolution (Chittock et al., 2017), leading to the question whether BAP1 also functions to regulate trophoblast differentiation and invasion during human placentation.
 
 To determine the dynamics of BAP1 expression in human trophoblast, we first performed RT-qPCRs on placental villous biopsies across gestation. Despite some variability, BAP1 mRNA levels increased over the course of pregnancy (Figure 6A). The expression of BAP1 was also analysed in hTSCs and choriocarcinoma cell lines. Interestingly, among the placental choriocarcinoma cell lines, the most invasive cell line JEG-3 (Grümmer et al., 1994) showed lowest BAP1 expression levels compared to JAR and BeWo cell lines, suggesting that BAP1 may play a role in regulating trophoblast invasion also during placentation in humans (Figure 6B). In first trimester placentae, strong expression of BAP1 was observed in villous cytotrophoblast (VCT) and at the base of cytotrophoblast cell columns (CCC) compared to the very low signal in syncytiotrophoblast (Figure 6C). Of note, BAP1 staining became markedly weaker and more diffuse along the distal aspects of the CCC as cells undergo EMT and differentiate towards invasive EVT (Figure 6C). High expression of integrin alpha-5 (ITGA5), a marker of EVT, correlated with decreased staining intensity of BAP1, suggesting that BAP1 was downregulated during EVT differentiation (Figure 6—figure supplement 1A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/63254/elife-63254-fig6-v2.jpg)
+
+**Figure 6.:** (A) RT–qPCR analysis of BAP1 expression on human placental villous samples ranging from 7 weeks of gestation to term. Three independent term placental samples were investigated. An overall increase of BAP1 expression was observed over gestation. Expression is normalized to YWHAZ housekeeping gene. Data are mean of three replicates ± SEM. (B) RT-qPCR analysis of BAP1 expression in human trophoblast stem cells (hTSCs) and the choriocarcinoma cell lines JAR, JEG-3, and BeWo. Expression is normalized to GAPDH. Data are mean of three replicates ± SEM; *p<0.05, **p<0.01 (one-way ANOVA with Dunnett’s multiple comparisons test). (C) Immunohistochemistry for BAP1 on early (6–8 weeks [wk] of gestation) and late first trimester placentae (10–12 weeks of gestation). BAP1 staining is strong in proliferative villous cytotrophoblast (VCT) and cytotrophoblast cell columns (CCC) compared to syncytiotrophoblast (SCT). Notably, invasive extravillous trophoblast (EVT) shows a diffuse and weak staining as cells undergo EMT. Representative images of three biological replicates. Scale bar: 100 μm. (D) RT-qPCR analysis of BAP1, HLA-G, CDH1, and ASXL1-3 gene expression on hTSCs and in vitro-differentiated EVT cells after 8 days of differentiation. Expression is normalized to GAPDH. Data are mean of three independent replicates ± SEM; *p<0.05, ***p<0.001, ****p<0.0001 (Student’s t-test). (E) Western blot analysis of BAP1 protein levels in EVT compared to hTSCs. As in the mouse, BAP1 is strongly downregulated during trophoblast differentiation towards the invasive EVT lineage. Graph shows the quantification of three independent replicates. Data are mean ± SEM; *p<0.05 (Student’s t-test). (F) hTSCs transduced with GFP-empty control or GFP-BAP1 lentiviral particles were isolated by using fluorescence activated cell sorting (FACS), grown in stem cell conditions and examined by Western blotting. TUBULIN was used as loading control. Green arrows point to the exogenous GFP-BAP1 band after 5 and 30 seconds (sec) of film exposure. Black arrow points to endogenous BAP1. Graph shows the quantification of three independent replicates. Data are mean ± SEM; ****p<0.0001 (Student’s t-test). (G) RT-qPCR analysis of control and GFP-BAP1-transduced hTSCs grown in stem cell conditions. Expression is normalized to TBP housekeeping gene expression. Data are mean of six independent replicates ± SEM; *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 (Student’s t-test).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/63254/elife-63254-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Immunostaining of first trimester placenta for BAP1 combined with integrin alpha-5 (ITGA5). Dotted lines outline the area of extravillous trophoblast (EVT) demarcated by high expression of ITGA5. VC: villous core. Representative images of three biological replicates. Scale bar: 100 µm. (B) RT-qPCR analysis of control and GFP-BAP1-transduced human trophoblast stem cells (hTSCs) grown in stem cell conditions. Expression is normalized to TBP housekeeping gene expression. Data are mean of six independent replicates ± SEM; *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001 (Student’s t-test).
 
 To further corroborate these results, we differentiated hTSCs towards EVT for 8 days (Okae et al., 2018) and examined the expression of BAP1/ASXL complex components by RT-qPCR. We confirmed successful EVT differentiation by HLA-G expression and concomitant downregulation of CDH1. Although BAP1 mRNA expression levels remain unchanged, protein levels declined markedly upon EVT differentiation (Figure 6D and E), in line with the post-transcriptional regulation of BAP we had observed in the mouse (Figure 1D and E). In addition to ASXL1 and ASXL2, the ASXL3 family member was also expressed in hTSCs. Both ASXL1 and ASXL3 were significantly downregulated upon EVT differentiation (Figure 6D). To gain insight into the molecular function of BAP1 in human trophoblast, we performed overexpression experiments in hTSCs by lentiviral transduction of GFP-BAP1 compared to a GFP vector control plasmid (Figure 6F and G), and examined the expression of genes involved in stem cell self-renewal and EMT by WB and RT-qPCR. Whereas BAP1 overexpression did not affect hTSC genes such as GATA3, TEAD4, or ITGA2, the cytotrophoblast cell transcription factor ELF5 was upregulated (Lee et al., 2018; Okae et al., 2018; Hemberger et al., 2010). More significantly, however, the epithelial markers CDH1, CLDN2, TJP1, and VCL were significantly upregulated with a concomitant strong repression of mesenchymal marker genes CDH2 and ZEB2 (Figure 6F and G and Figure 6—figure supplement 1B). These data demonstrate that as in mouse, the levels of BAP1 are chief regulators of epithelial cell integrity and EMT progression in human trophoblast (Figure 6G and Figure 6—figure supplement 1B). Taken together, these results indicate that the molecular mechanism by which the BAP1/ASXL complexes regulate trophoblast differentiation and invasion may be conserved in human and in mice.
 
@@ -101,7 +149,360 @@ Finally, our data suggest that BAP1:ASXL1/2 regulate trophoblast differentiation
 
 ## Materials and methods
 
-## Cell culture and generation of mutant TSC lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Bap1</td>
+      <td>GenBank</td>
+      <td>MGI:1206586</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Asxl1</td>
+      <td>GenBank</td>
+      <td>MGI:2684063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Asxl2</td>
+      <td>GenBank</td>
+      <td>MGI:1922552</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>BAP1</td>
+      <td>GenBank</td>
+      <td>HGNC:950</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>Mouse trophoblast stem cell line</td>
+      <td>Prof. Rossant lab</td>
+      <td>TS-Rs26</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Human trophoblast stem cell line</td>
+      <td>Prof. Arima lab</td>
+      <td>BTS5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T: Human embryonic kidney cells</td>
+      <td>ATCC CRL-3216</td>
+      <td>HEK293T</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Choriocarcinoma cell line</td>
+      <td>ATCC HTB-36</td>
+      <td>JEG-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Choriocarcinoma cell line</td>
+      <td>ATCC HTB-144</td>
+      <td>JAR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Choriocarcinoma cell line</td>
+      <td>ATCC CCL-98</td>
+      <td>BeWo</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ACTIN (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab6276</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ASXL1 (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>#52519</td>
+      <td>WB (1:1000), IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ASXL1 (mouse monoclonal)</td>
+      <td>Abnova</td>
+      <td>H00171023-M05</td>
+      <td>WB (1:1000), IP (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ASXL2 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab106540</td>
+      <td>WB (1:1000), IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ASXL2 (rabbit polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>A302-037A</td>
+      <td>WB (1:1000), IP (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BAP1 (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>#13187</td>
+      <td>IF (1:200), WB (1:1000), IHC (1:100), IP (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-E-Cadherin (CDH1) (mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>610181</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CDX2 (mouse monoclonal)</td>
+      <td>Biogenex</td>
+      <td>MU392A-UC</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ESRRB (mouse monoclonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>H6707</td>
+      <td>WB (1:1000), IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GATA3 (mouse monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>MA5-15387</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HLAG (mouse monoclonal)</td>
+      <td>Bio-Rad</td>
+      <td>MCA2043</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ITGA5 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-376199</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TUBULIN (rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab6160</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG (H + L)-HRP (goat polyclonal)</td>
+      <td>Bio-Rad</td>
+      <td>170–6515</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG (H + L)-HRP (goat polyclonal)</td>
+      <td>Bio-Rad</td>
+      <td>170–6516</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit IgG (H + L), Alexa Fluor 488 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-11034</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG (H + L), Alexa Fluor 568 (donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A-10037</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Lenti dCas9-VP64-Blast (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_61425</td>
+      <td>Lentiviral plasmid to transfect HEK293T cells and package dCas9-VP64 viral particles</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Lenti MS2-p65-HSF1-Hygro (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_61426</td>
+      <td>Lentiviral plasmid to transfect HEK293T cells and package MS2-p65-HSF1 viral particles</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Lenti sgRNA (MS2)-puro (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_73795</td>
+      <td>Lentiviral plasmid to transfect HEK293T cells and package sgRNA viral particles</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>psPAX2 (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_12260</td>
+      <td>Lentiviral packaging plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMD2.G (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_12259</td>
+      <td>VSV-G envelope expressing plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSpCas9(BB)−2A-GFP (PX458) (plasmid)</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_48138</td>
+      <td>Plasmid to express Cas9 from Streptococcus pyogenes with 2A-EGFP, and cloning backbone for CRISPR-knockout sgRNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLV [Exp]-Puro- CMV &gt; EGFP: mBap1[NM_027088.2] (lentiviral particles)</td>
+      <td>VectorBuilder</td>
+      <td>Calves(VB210106-1179qkj)-C</td>
+      <td>Lentiviral particles to transduce and express mouse GFP-BAP1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLV [Exp]-Puro- CMV &gt; EGFP: hBAP1[NM_004656.4] (lentiviral particles)</td>
+      <td>VectorBuilder</td>
+      <td>Cat#LVS(VB210106-1177amh)-C</td>
+      <td>Lentiviral particles to transduce and express human GFP-BAP1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Stealth small interfering RNA (siRNA)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>1320003_MS23-25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Stealth small interfering RNA (siRNA)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>1320003_MS36-38</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Stealth RNAi siRNA Negative Control Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>12935100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Alexa Fluor 568 Phalloidin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A12380</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine RNAiMAX Transfection Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>13778</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000 Transfection Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Vybrant cell adhesion assay kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>V13181</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>StarDist</td>
+      <td>Schmidt et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TrackMate</td>
+      <td>Tinevez et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MorphoLibJ</td>
+      <td>Legland et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R studio</td>
+      <td>R studio software</td>
+      <td>http://www.rstudio.com</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 8</td>
+      <td>GraphPad software</td>
+      <td>http://www.graphpad.com</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture and generation of mutant TSC lines
 
 The wild-type TS-Rs26 TSC line (a kind gift of the Rossant lab, Toronto, Canada) and mutant TSC lines were grown as previously described (Tanaka et al., 1998). Briefly, mTSCs were cultured in standard mTSC conditions: 20% fetal bovine serum (FBS) (Thermo Fisher Scientific 10270106), 1 mM sodium pyruvate (Thermo Fisher Scientific 11360–039), 1× anti-mycotic/antibiotic (Thermo Fisher Scientific 15240–062), 50 μM 2-mercaptoethanol (Gibco 31350), 37.5 ng/ml bFGF (Cambridge Stem Cell Institute), and 1 μg/ml heparin in RPMI 1640 with L-glutamine (Thermo Fisher Scientific 21875–034), with 70% of the medium pre-conditioned on mouse embryonic fibroblasts (CM). The medium was changed every 2 days, and cells passaged before reaching confluency. Trypsinization (0.25% trypsin/EDTA) was carried out at 37°C for about 5 min. Differentiation medium consisted of unconditioned TSC medium without bFGF and heparin.
 
@@ -113,31 +514,31 @@ BTS5 blastocyst-derived hTSCs were obtained from Prof. Takahiro Arima and cultur
 
 The choriocarcinoma cell lines JEG-3 and JAR were cultured in RMPI-1640 (Thermo Fisher Scientific, Waltham, MA) supplemented with 10% (v/v) FBS, 2 mM glutamine, penicillin (10 U/ml), streptomycin (100 µg/ml), and gentamicin (2 mg/ml) (Thermo Fisher Scientific, Waltham, MA). BeWo cells were cultured in DMEM/F12 medium supplemented with 10% HI-FBS, penicillin (100 U/ml), and streptomycin (100 µg/ml) (Thermo Fisher Scientific, Waltham, MA). Culture medium was replaced every 2–3 days. Approximately 4–6 days after plating, cells were removed from tissue culture flasks with TrypLE (Gibco) to be either passaged at a ratio of 1:3 or collected for RNA extraction and RT-qPCR analysis. All cell lines used were proven mycoplasma-free.
 
-## Human samples
+### Human samples
 
 The placental samples from normal first and early second trimester, and normal term pregnancies used for this study were obtained with written informed consent from all participants in accordance with the guidelines in the Declaration of Helsinki 2000. Elective terminations of normal pregnancies were performed at Addenbrooke’s Hospital under ethical approval from the Cambridge Local Research Ethics Committee (04/Q0108/23). Samples were either snap-frozen for RNA isolation or embedded in formalin-fixed paraffin wax for tissue sections (4 µm).
 
-## Mice
+### Mice
 
 All animal experiments were conducted in full compliance with UK Home Office regulations (Animals Act 1986) and with approval of the local animal welfare committee (AWERB) at the Babraham Institute, and with the relevant project and personal licences in place. All conceptuses used in this study were dissected at E6.5 from C57BL/6Babr mice bred and maintained in the Babraham Institute Biological Support Unit.
 
-## Lentiviral transduction
+### Lentiviral transduction
 
 For the production of lentiviral particles, 106 HEK293T cells seeded in 100 mm plates were cotransfected (TransIT, Mirus BIO 2700) with 6.5 μg of psPAX2 (Addgene 12260), 3.5 μg of pMD2.G (Addgene 12259), and 10 μg of the appropriate lentiviral vector: dCas9-VP64_Blast (Addgene 61425), MS2-p65-HSF1_Hygro (Addgene 61426), sgRNA(MS2)-puro (Addgene 73795) cloned with an individual sgRNA. Forty-eight hours later, 10 ml of virus supernatant was filtered through a 0.45 μm filter (Sartorius, 16533) and supplemented with 8 μg/ml polybrene (Millipore, TR-1003-G). For the specific case of mouse and human GFP-BAP1 overexpression experiments, lentiviral particles were packaged by VectorBuilder and supplemented to the specific cell lines as before.
 
 Small interference RNA transfection mTSCs were transfected with Stealth small interfering RNA (siRNA) for Asxl1, Asxl2, and negative control siRNA (Thermo Fisher Scientific, 1320003MS23-25, 1320003MS36-38, and 12935100, respectively) using Lipofectamine RNAiMax (Thermo Fisher Scientific, 13778075). Following 72 hr of transfection, cells were collected for WB analysis.
 
-## WB and immunoprecipitation
+### WB and immunoprecipitation
 
 Cells were lysed in radioimmunoprecipitation assay buffer (20 mM Tris-HCl, pH 8.0, 137 mM NaCl, 1 mM MgCl2, 1 mM CaCl2, 10% glycerol, 1% NP-40, 0.5% sodium deoxycholate, 0.1% sodium dodecyl sulphate), containing a protease inhibitor cocktail (Sigma P2714), and incubated at 4°C for 1 hr, followed by centrifugation (9300× g, 10 min). Western blotting was performed as described previously (Pérez-García et al., 2014). Blots were probe against the antibodies anti-Bap11:1000 (Cell Signaling, D1W9B #13187), anti-beta-ACTIN 1:5000 (Abcam, ab6276), anti-TUBULIN 1:5000 (Abcam, ab6160), anti-CDX2 1:1000 (Biogenex, MU392A-UC), anti-ESRRB 1:1000 (R&D Systems, H6707), Anti-ASXl1 1:1000 (Cell Signaling, D1B6V #52519), Anti-ASXl1 1:1000 (Abnova, H00171023-M05), anti-ASXl2 1:1000 (Abcam, ab106540), anti-ASXl2 1:1000 (Bethyl Laboratories, MCA2043), anti-GATA3 1:1000 (Invitrogen, MA5-15387), and anti-HLA-G (Bio-Rad, MCA2043) followed by horseradish peroxidise-conjugated secondary antibodies anti-rabbit (Bio-Rad 170–6515), anti-mouse (Bio-Rad 170–6516, all 1:3000). Detection was carried out with enhanced chemiluminescence reaction (GE Healthcare RPN2209) on X-ray films. The intensity of the bands was quantified using ImageJ software.
 
 For optimal detection of the BAP1 and ASXL co-immunoprecipitation, cells were lysed in a detergent buffer (10 mM Tris-HCl [pH 7.4], 150 mM NaCl, 10 mM KCl, 0.5% Nonidet P-40) with a protease inhibitor cocktail (Sigma P2714) and incubated at 4°C for 1 hr, followed by centrifugation (9300× g, 10 min). The immunoprecipitation was performed as described previously (Pérez-García et al., 2014).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Immunohistochemistry on sections of E9.5 wild-type and Bap1 KO placentas from the DMDD collection (dmdd.org.uk) and first trimester placentas was performed as in Turco et al., 2018. Briefly, immunohistochemistry was carried out using heat-induced epitope retrieval buffers (A. Menarini) and Vectastain avidin-biotin-HRP reagents (Vector Laboratories PK-6100). Anti-BAP1 antibody (Cell Signaling, D1W9B #13187) was used at 1:200. For each experiment, a negative control was included in which the antibody was replaced with equivalent concentrations of isotype-matched rabbit IgG. Images were taken with an EVOS M5000 microscope (Thermo Fisher Scientific).
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Cells were fixed with 4% paraformaldehyde (PFA) in phosphate-buffered saline (PBS) for 10 min and permeabilized with PBS, 0.3% Triton X-100 for 10 min. Blocking was carried out with PBS, 0.1% Tween 20, 1% BSA (PBT/BSA) for 30 min, followed by antibody incubation for 60 min. Primary antibodies and dilutions (in PBT/BSA) were E-cadherin (CDH1) 1:200 (BD Biosciences, 610181), anti-BAP1 1:200 (Cell Signaling, D1W9B #13187), anti-ESRRB 1:200 (R&D Systems H6707), and phalloidin 1:500 (Thermo Fisher Scientific A12380).
 
@@ -145,35 +546,35 @@ Cryosections of placental villi from a total of three samples of 8 weeks of gest
 
 Whole-mount embryo staining was performed following a modification of the protocol previously described (Kalkan et al., 2019). Briefly, dissected E6.5 conceptuses were fixed for 1 hr in 4% PFA. After three washes (15 min) with PBS supplemented with 3 mg/ml poly-vinylpyrrolidone (Sigma, P0930), embryos were permeabilized with PBS containing 5% DMSO, 0.5% Triton X-100, 0.1% BSA, 0.01% Tween 20 for 1 hr. Then, embryos were blocked overnight at 4°C in permeabilization buffer, containing 2% donkey serum. Embryos were incubated overnight at 4°C with antibodies against E-cadherin (CDH1) at 1:200 (BD Biosciences, 610181) and BAP1 at 1:100 (Cell Signaling, D1W9B #13187) in blocking buffer, followed by three washes in blocking buffer for 1 hr. Then, conceptuses were incubated overnight with secondary Alexa Fluor 488 or 568 (Thermo Fisher Scientific) antibodies diluted 1:400 in blocking buffer. Lastly, embryos were washed three times for 1 hr in blocking buffer and nuclei were counter-stained with DAPI. For embryo mounting, samples were taken through a series of 25%, 50%, 75%, and 100% Vectashield (Vector Laboratories, H-1000) diluted in PBS. Embryos were mounted in Vectashield, surrounded by spacer drops of vaseline for the coverslip, to immobilize embryos. Images were taken with an Olympus BX61 epifluorescence microscope or a Zeiss LSM 780 confocal microscope. Images were processed and analysed with a custom analysis pipeline developed in Fiji (Schindelin et al., 2012). In brief, first nuclei in 3D image stacks were segmented using a combination of StarDist (Schmidt et al., 2018) and TrackMate (Tinevez et al., 2017) plugins, followed by manual correction where required. This was followed by analysis of the morphology and the fluorescence intensity in all three channels (DAPI, CDH1, and BAP1) within all segmented nuclei using the MorphoLibJ plugin (Legland et al., 2016). In addition, for all nuclei it was recorded whether they localized to the ExE or the EPC by creating 3D segmentation masks of the embryo, relying on the DAPI and CDH1 labelling. Post-processing and plotting of the data was done in R studio (http://www.rstudio.com). Student’s t-tests analysis was performed to calculate statistical significance of BAP1 staining differences (p<0.05) using GraphPad Prism 8.
 
-## Cell adhesion assay
+### Cell adhesion assay
 
 Adhesion capacity of vector control and Bap1-/- mTSCs was measured using the Vybrant cell adhesion assay kit (Thermo Fisher Scientific V13181) as previously described (Branco et al., 2016). Briefly, cells resuspended in serum-free RPMI medium were labelled with Calcein AM (5 μM) during 30 min at 37°C. Cells were washed twice with RPMI medium and 105 cells plated per well in a 96-well tissue culture plate and left to attach for 2 hr in serum-free RPMI medium. Finally, cells were washed three times and the remaining attached cells were detected measuring the fluorescence emission at 517 nm with a PHERAstar FS plate reader.
 
-## Trophosphere generation
+### Trophosphere generation
 
 Trophospheres were generated following a modification of a protocol described previously (Rai and Cross, 2015). In brief, 104wild-type and mutant cells resuspended in complete medium were cultured in Ultra-Low Attachment plates (Corning, Steuben County, NY). Forty-eight hours later, cells were collected, washed with PBS, and transferred back to Ultra-Low Attachment dishes with differentiation medium for another 7 days. Then, the trophospheres were collected for RNA analysis.
 
-## Trophoblast cell invasion
+### Trophoblast cell invasion
 
 The invasion assays were carried out following a modification of the protocol described in Hemberger et al., 2004. The Transwell filters (Sigma, CLS3422) were coated with 100 μl of a 1:20 dilution of cold Matrigel (Corning 356231) in RPMI 1640 medium. The Matrigel layer was allowed to dry overnight at room temperature and was rehydrated the next day with 100 μl of supplemented RPMI 1640 medium for 2 hr at 37°C under 95% humidity and 5% CO2. Confluent 60 mm dishes of TS cells were trypsinized and resuspended in RPMI at 106 cells/ml; 100 μl of this cell suspension (105 cells) was added to the top chamber, and the bottom chamber was filled with 800 μl of culture medium.
 
 After the specific times of incubation, Transwell inserts were fixed for 5 min in 4% PFA and washed with 1× PBS. Cells that remained on top of the filters as well as the Matrigel coating were scraped off. Filters were stained overnight with hematoxylin and excised under a dissecting microscope, removing all residual cells from the top of the filters. Filters were mounted with 20% glycerol in 1× PBS and photographs of each filter were quantified with ImageJ.
 
-## Proliferation assay
+### Proliferation assay
 
 Analysis of cell proliferation rate was performed as in Woods et al., 2017. In brief, 10,000 vector control and Bap1 KO mTSCs were plated in complete medium and collected every 24 hr over 4 days. After trypsinization, the number of viable cells was counted using the Muse Count and Viability Assay Kit (Merck Millipore MCH100102) and run on the Muse cell analyser (Merck Millipore), according to manufacturer’s instructions. Statistical analysis was performed using ANOVA followed by Holm-Sidak’s post hoc test.
 
-## RT-qPCR
+### RT-qPCR
 
 Total RNA was extracted using TRI reagent (Sigma T9424), DNase-treated, and 1 µg used for cDNA synthesis with RevertAid H-Minus reverse transcriptase (Thermo Fisher Scientific EP0451). Quantitative (q)PCR was performed using SYBR Green Jump Start Taq Ready Mix (Sigma S4438) and Intron-spanning primer pairs (Supplementary file 6) on a Bio-Rad CFX384 thermocycler. Normalized expression levels are displayed as mean relative to the vector control sample; error bars indicate standard error of the means (SEM) of at least three replicates. Where appropriate, Student’s t-tests or ANOVA were performed to calculate statistical significance of expression differences (p<0.05) using GraphPad Prism 8.
 
-## RNA-seq
+### RNA-seq
 
 For RNA-seq, total RNA was extracted with Trizol followed by DNase treatment using TURBO DNA-free kit (Life Technologies AM1907). For wild-type and Bap1 KO mTSC experiments, adapter indexed strand-specific RNA-seq libraries were generated from 1000 ng of total RNA following the dUTP method using the stranded mRNA LT sample kit (Illumina). Libraries were pooled and sequenced on Illumina HiSeq 2500 in 75 bp paired-end mode. FASTQ files were aligned to the Mus musculus GRCm38 genome reference genome using HISAT2 v2.1.0. Sequence data were deposited in ENA under accession ERP023265.
 
 For RNA-seq from SAM Bap1-overexpressing cells, RNA-seq libraries were generated from 500 ng using TruSeq Stranded mRNA library prep (Illumina, 20020594). Indexed libraries were pooled and sequenced on an Illumina HiSeq2500 sequencer in 100 bp single-end mode. FastQ data were map to M. musculus GRCm38 genome assembly using HISAT2 v2.1.0.
 
-## Bioinformatic analysis
+### Bioinformatic analysis
 
 Data were quantified using the RNA-seq quantitation pipeline in SeqMonk (http://www.bioinformatics.babraham.ac.uk) and normalized according to total read count (read per million mapped reads). Differential expression was calculated using DESeq2 and FPKM Fold Change ≥ 2 with p<0.05 and adjusted for multiple testing correction using the Benjamini-Hochberg method. Stringent differential expression was calculated combining DESeq2 and intensity difference filters in SeqMonk. Expression data from Bap1-mutant tumor cells were from (He et al., 2019).
 

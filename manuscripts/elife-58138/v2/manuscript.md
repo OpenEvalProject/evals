@@ -38,7 +38,7 @@ As proof of concept, we applied our developed multiscale imaging procedure to tw
 
 ## Results
 
-## Overview of multiscale imaging procedure
+### Overview of multiscale imaging procedure
 
 To achieve multiscale imaging, we followed a four-step protocol (see Figure 1; details in Materials and methods). Briefly, in Step 1 the heart was excised, homogeneously fixed and stained for micro-CT. Initial staining followed a modified ferrocyanide-reduced osmium–thiocarbohydrazide–osmium (ROTO) protocol (Hua et al., 2015; Malick and Wilson, 1975; Willingham and Rutherford, 1984) typically used for electron microscopy (EM) sample preparation. Three-dimensional micro-CT images (10 μm resolution) confirmed uniform ROTO staining of the whole heart and provided morphological cardiac details. At this time, the heart samples were stored until further processing, enabling selection of specific samples for full processing based on micro-CT scans. Step 2 finalized the preparation of the whole heart for SBF-SEM by post-staining the hearts with uranyl acetate and lead aspartate and then embedding them in a resin block. Uniform staining was confirmed on a semithin (250 nm) section of the block, which also determined ultrastructural quality and enabled registration to micro-CT images. In Step 3, a slab of the sample was cut and sectioned around a specific region of interest (ROI,~500×500 µm2) from which sub-ROIs for 3D SBF-SEM imaging (~40×60 μm2) were selected. In Step 4, 3D SBF-SEM datasets were acquired (10 nm lateral resolution and 40 nm depth resolution).
 
@@ -46,7 +46,7 @@ To achieve multiscale imaging, we followed a four-step protocol (see Figure 1; d
 
 **Figure 1.:** Columns depict the four steps employed. In Step 1, the heart is post-fixed with osmium tetroxide to provide contrast for 3D micro-CT images of the whole heart (middle row). Digital sections of the micro-CT scans (bottom row) reveal the heart’s interior and allow for cardiac phenotyping and assessment of stain penetration. In Step 2, contrast staining is finalized and the resin block in which the heart is embedded is sectioned to reach a plane of interest (bottom row). In Step 3, after cutting a slab of the sample, a region of interest (ROI) is sectioned from the slab, mounted, and then scanned by SEM backscattered imaging methods to aid in the selection of sub-ROIs (for example, the sub-ROI highlighted in green). In Step 4, the selected sub-ROI 3D SBF-SEM images are acquired by progressively sectioning and imaging layers that are 40-nm apart.
 
-## Whole heart imaging
+### Whole heart imaging
 
 We obtained 3D micro-CT images of the whole heart, featuring both external and internal structures at 20 µm resolution (Figure 2; Step 1 in Figure 1). Despite the relatively large dimensions of the heart (5-6 mm long), tissue contrast was uniform across the heart walls and septae and allowed us to visualize the microstructural details of the heart chambers, valves, and great arteries.
 
@@ -54,7 +54,7 @@ We obtained 3D micro-CT images of the whole heart, featuring both external and i
 
 **Figure 2.:** The contrast was achieved by following Step 1 of our correlative multiscale imaging protocol (Figure 1). From left to right: External 3D surface of the heart; cardiac section along the heart’s long axis (coronal section); cardiac section across the heart’s short axis (transverse section). Cardiac sections show uniform staining across cardiac walls, and reveal the heart internal and external microstructure. LA: left atrium; LV: left ventricle; RA: right atrium; RV: right ventricle. Scale bars 1 mm.
 
-## Cardiac structure analysis from 3D micro-CT images
+### Cardiac structure analysis from 3D micro-CT images
 
 Micro-CT images guided selection of two hearts for subsequent SBF-SEM imaging and analysis. We selected: (1) a normal heart and (2) a heart exhibiting TOF malformation. In a normal heart, blood in the left ventricle (LV) and right ventricle (RV) is separated by an interventricular septum; the pulmonary valve and pulmonary artery connect to the RV, which pumps blood to the lungs; and the aortic valve and aorta connect to the LV, which pumps blood to the body. TOF is characterized by a combination of four defects: (i) ventricular septal defect, which is a hole in the interventricular septum; (ii) overriding aorta, a change in the position of the aorta such that it sits in the middle of the two ventricles, on top of the ventricular septal defect; (iii) pulmonary stenosis or atresia, a narrowing or closure of the pulmonary artery or pulmonary valve; and (iv) RV hypertrophy, a thickening and enlargement of the RV wall. RV hypertrophy in TOF, however, develops over time as the stenosis of the pulmonary artery increases pressure in the RV after birth (Bailliard and Anderson, 2009) and was not present in the heart examined in this study (see Figure 3 for a comparison of the selected normal and TOF hearts). The TOF heart analyzed here featured supravalvular pulmonary stenosis, a ventricular septal defect, and an overriding aorta. The right ventricle was enlarged compared to the control heart (Figure 3). Further, the TOF heart was missing the left branch of the pulmonary artery. In humans, this rare condition, called unilateral absence of a pulmonary artery, is known to occur in conjunction with TOF or cardiac septal defects (Reading and Oza, 2012).
 
@@ -64,7 +64,7 @@ Micro-CT images guided selection of two hearts for subsequent SBF-SEM imaging an
 
 From micro-CT images of the two hearts, we quantified cardiac structural features for illustration purposes. It is important to mention, however, that these quantifications only pertain to the two hearts compared in this study, and thus are not necessarily representative of normal nor TOF heart populations. For the two hearts compared, we found that the LV volume was about the same in the normal, control (CON) heart and TOF hearts. However, in the CON heart the RV volume was 40% smaller than the LV volume (RV volume/LV volume ~0.6), while in the TOF heart RV volume was 30% larger than the LV volume (RV volume/LV volume ~1.3). Overall the volume of the TOF RV was about twice as big as the CON RV, suggesting functional impairment of the TOF RV.
 
-## Cardiac ultrastructural imaging
+### Cardiac ultrastructural imaging
 
 We chose to characterize the ultrastructural architecture of the selected hearts at approximately the transverse section at which the heart width (from LV to RV wall) is maximal, also referred to as the equatorial plane. Images of semithin cross-sections for each heart (Figure 4, top row; corresponding to Step 2 in Figure 1) show that staining was uniform, indicating successful stain penetration through the heart tissues. Please note that the transverse section of the TOF heart was below the ventricular septal defect and thus exhibits a continuous septum.
 
@@ -78,7 +78,7 @@ SEM images of semithin sections guided selection of ROIs from each heart. For th
 
 **Figure 5.:** The pictures depict small regions within the selected sub-ROIs from region A of the control (CON) and TOF hearts. Nuclear membranes (N) are intact, as well as myofibrils (Myo) and mitochondria (Mit). Finally, the extracellular space (EC) is also visible. Scale bars 2 µm.
 
-## 3D SBF-SEM image reconstruction
+### 3D SBF-SEM image reconstruction
 
 SBF-SEM image stacks provided 3D volumetric reconstructions of sub-ROIs. While volumetric image resolution was not isotropic (10 nm lateral resolution versus 40 nm depth resolution), ultrastructural features could be visualized from any angle of view within the reconstructed images (see Figure 6). Thus SBF-SEM images allowed us to visualize the orientation and organization of nuclei, myofibrils, and mitochondria (among other features) in heart tissue samples.
 
@@ -86,7 +86,7 @@ SBF-SEM image stacks provided 3D volumetric reconstructions of sub-ROIs. While v
 
 **Figure 6.:** xy is the imaging plane, acquired at 10 nm lateral resolution. z is the depth direction, with xy images acquired every 40 nm. xz and yz are reconstructed perpendicular planes that show the continuity of the ultrastructural features along the z-axis (depth), and thus alignment of the acquired images. Scale bars = 10 µm.
 
-## SBF-SEM image segmentation and quantification
+### SBF-SEM image segmentation and quantification
 
 To more easily visualize and quantify cardiac ultrastructure, we segmented (delineated) from SBF-SEM images the cell nuclei, myofibrils, mitochondria, and the extracellular space. To this end, we used a combination of deep learning algorithms and tools available on the Dragonfly 4.1 software (Object Research Systems, Quebec, Canada). When independently tested against carefully annotated images (two each from the CON and TOF hearts, region A), the segmentation accuracy from the deep learning algorithm was at least 90% for myofibrils, 94% for mitochondria, and 98% for nuclei. Additional manual segmentation ‘clean up’ was thus required to improve the accuracy of organelle depictions. These segmentations, however, reveal the detailed 3D ultrastructural architecture of the heart wall (e.g. see Figure 7).
 
@@ -98,7 +98,7 @@ Ultrastructural quantifications of the two hearts were performed for illustratio
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/58138/elife-58138-fig8-v2.jpg)
 
-**Figure 8.:** Selected images (n ≥ 10) from the SBF-SEM image stacks acquired at regions A and B were segmented and quantified. (A) Percentage of myocardial cells occupied by nuclei, myofibrils and mitochondria in regions A and B of the control (CON) heart and TOF heart. (B) Percentage of the images occupied by extracellular space. (C, D) 3D views of the segmented extracellular space in (C) control (CON) heart, region A; and (D) TOF heart, region A. The semitransparent 3D views show increased extracellular space for the TOF A sample, as quantified in (B). Detailed of calculations presented in (A) and (B) are included as supplementary material (Figure 8—source data 1).Figure 8—source data 1.Figure 8A and B plots.
+**Figure 8.:** Selected images (n ≥ 10) from the SBF-SEM image stacks acquired at regions A and B were segmented and quantified. (A) Percentage of myocardial cells occupied by nuclei, myofibrils and mitochondria in regions A and B of the control (CON) heart and TOF heart. (B) Percentage of the images occupied by extracellular space. (C, D) 3D views of the segmented extracellular space in (C) control (CON) heart, region A; and (D) TOF heart, region A. The semitransparent 3D views show increased extracellular space for the TOF A sample, as quantified in (B). Detailed of calculations presented in (A) and (B) are included as supplementary material (Figure 8—source data 1).
 
 Visualization of segmentations of the entire sub-ROIs from region A of the CON and TOF hearts revealed a slightly different orientation of myocardial cells between samples (Figure 9). Quantification of myofibril elliptical and transmural angle orientations (see Figure 10A) revealed that in the CON heart the myofibrils in the left ventricle were oriented at around 45° in the radial direction with respect to the circumferential directions (θ angle or transmural angle) with a standard deviation of approximately 32°. The myofibril elliptical angle, defined here as the angle between the circumferential and longitudinal directions (Φ angle) was around 70°, and exhibited a wide dispersion, with a standard deviation of 36° (Figure 10B). In contrast, the myofibrils in the TOF heart were oriented almost circumferentially in the transmural plane, with an average transmural θ angle of 7° (20° standard deviation); while the elliptical angle Φ was around 15° with a standard deviation of 15°. Thus in the TOF heart, at the sample location, myofibrils run closer to the circumferential direction than in the CON heart (see Figure 10C). It is important to notice that these quantifications and differences pertain only to the two hearts under consideration (and samples within the heart) and do not reflect population trends. A more detailed study including more animals is needed to infer population differences.
 
@@ -108,7 +108,7 @@ Visualization of segmentations of the entire sub-ROIs from region A of the CON a
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/58138/elife-58138-fig10-v2.jpg)
 
-**Figure 10.:** (A) Sketch showing approximate position of the SBF-SEM imaged planes (x-y planes), and image stacks (spanning the z-direction depth) with respect to the heart morphology. For the imaged transmural planes, the y-direction approximately corresponds to the radial direction in the left ventricle (LV), and the x-direction is approximately parallel to the LV wall boundary (circumferential direction). The stack depth direction (z-direction) corresponds to the heart longitudinal direction. Myofibril orientation angles were quantified for the x-y and x-z planes: the transmural angle θ is the myofibril angle in the x-y plane, with respect to the circumferential (x) direction (wall direction); the elliptical angle Φ is the orientation angle in the x-z plane with respect to the circumferential (x) direction. Segmentations of organelles on the x-y and x-z planes, together with frequency versus angle histograms, are shown in (B) for the control heart, ROI A (CON A); and (C) for the TOF heart, ROI A (TOF A). Each bar in the histogram represents a 10° range, hence there are 18 bars to represent 0° to 180° angles. Organelle segmentation is color-coded. Red: nuclei; Blue: mitochondria; Green: myofibrils. The extracellular matrix is shown in yellow. Scale bars: 10 µm. The details of the angle calculations are included as supplementary files (Figure 10—source datas 1–4).Figure 10—source data 1.Figure 10—source data 2.Figure 10—source data 3.Figure 10—source data 4.
+**Figure 10.:** (A) Sketch showing approximate position of the SBF-SEM imaged planes (x-y planes), and image stacks (spanning the z-direction depth) with respect to the heart morphology. For the imaged transmural planes, the y-direction approximately corresponds to the radial direction in the left ventricle (LV), and the x-direction is approximately parallel to the LV wall boundary (circumferential direction). The stack depth direction (z-direction) corresponds to the heart longitudinal direction. Myofibril orientation angles were quantified for the x-y and x-z planes: the transmural angle θ is the myofibril angle in the x-y plane, with respect to the circumferential (x) direction (wall direction); the elliptical angle Φ is the orientation angle in the x-z plane with respect to the circumferential (x) direction. Segmentations of organelles on the x-y and x-z planes, together with frequency versus angle histograms, are shown in (B) for the control heart, ROI A (CON A); and (C) for the TOF heart, ROI A (TOF A). Each bar in the histogram represents a 10° range, hence there are 18 bars to represent 0° to 180° angles. Organelle segmentation is color-coded. Red: nuclei; Blue: mitochondria; Green: myofibrils. The extracellular matrix is shown in yellow. Scale bars: 10 µm. The details of the angle calculations are included as supplementary files (Figure 10—source datas 1–4).
 
 ## Discussion
 
@@ -120,7 +120,7 @@ The correlative, multiscale imaging approach presented here was implemented and 
 
 The correlative multiscale imaging approach presented here could provide new insights into the underpinnings of heart development, and on cardiac mechanical changes in CHD. For example, analysis of multiscale cardiac images over developmental stages could be used to unravel how cardiac tissues progressively assemble and mature at diverse scales to form a functional heart. When cardiac development is perturbed (due to altered blood flow, hyperglycemia, hypoxia or any teratogen substance or changes in the environment) multiscale images can be used to reveal how the natural maturation and assembly of cardiac components (cells, extracellular matrix, organelles) are altered, sometimes in irreversible ways that lead to CHD. Multiscale images, furthermore, promise to reveal differences and similarities among CHD hearts with different phenotypes, as well as among hearts with similar phenotypes resulting from diverse insults. Moreover, the combination of morphological and ultrastructural cardiac imaging data can predict the mechanical function of the heart. Indeed myocardial disarray or marked reductions in myofibrils, for example, will decrease the contraction efficiency (and force) of cardiac tissues. In turn, decrease contractility affects cardiac efficiency, including compromised ejection fraction and stroke volume.
 
-## Our protocol in relation to previous works
+### Our protocol in relation to previous works
 
 Researchers have used EM techniques, including SEM, for decades to visualize the organization of organelles within cells (Malick and Wilson, 1975; Karnovsky, 1965). In the heart, studies using EM have revealed the ultrastructural architecture of mature myocardial cells (Hussain et al., 2018; Pinali and Kitmitto, 2014), and elucidated the maturation of myocardial ultrastructure during embryonic development (Fischman, 1967; Wainrach and Sotelo, 1961; Manasek, 1970). A few studies, moreover, have determined changes in ultrastructure due to pathophysiological conditions in the mature heart (Sanchez-Quintana et al., 1999; Pinali et al., 2015; Holzem et al., 2016).
 
@@ -132,7 +132,7 @@ The discrepancy in the scale at which we acquire micro-CT and SBF-SEM images int
 
 Applications combining micro-CT and EM technologies have recently begun to emerge, for example (Karreman, 2017; Morales et al., 2016; Sengle et al., 2013). However, several challenges remain in applying these methods to correlative, multiscale imaging of a relatively large organ like the heart (even the heart of a small animal). To achieve both EM and micro-CT high-quality imaging of the same sample, existing protocols have capitalized on heavy metal contrast in small tissue samples, which are fully processed prior to EM and micro-CT imaging, for example (Genoud et al., 2018; Karreman, 2017). However, achieving the uniform staining necessary for optimal imaging with both micro-CT and SEM becomes progressively challenging with increasing tissue sample size. This is mainly due to difficulties in achieving uniform and fast fixation (that preserves the ultrastructure), and uniform stain penetration (both for post-fixation purposes and to enhance contrast for SEM and micro-CT imaging). Modifications to the classic ROTO protocols (Hua et al., 2015; Malick and Wilson, 1975; Willingham and Rutherford, 1984) for EM tissue preparation have been quite successful in achieving strong and uniform staining of relatively large samples (Deerinck et al., 2010; Tapia et al., 2012). However, acceptable staining was typically only up to a depth of 200 μm, and more recently 500 μm (Hua et al., 2015) in dense brain tissues. In an attempt to stain whole brains for EM reconstruction of synapses, Mikula et al. developed the brain-wide reduced-osmium staining with pyrogallol-mediated amplification (BROPA) protocol (Mikula and Denk, 2015) for 3D SBF-SEM (no other heavy metals were used). While the protocol is compatible with both micro-CT and 3D SBF-SEM imaging, preparing a whole mouse brain (about 8–10 mm in diameter) using BROPA required 2–3 months. A fast BROPA protocol (fBROPA) was later developed and used to prepare whole brains from zebrafish in about 4 days (Genoud et al., 2018). Zebrafish brains, however, are significantly smaller than mouse brains (diameter of 1.1 mm vs 8–10 mm, respectively). For our hearts, we needed to achieve stain penetration of a relatively large sample (4–5 mm wide) and a fast preparation protocol was also desired. We found that preparing the heart for SBF-SEM and stopping the protocol after initial ROTO staining (1 day processing), was compatible with micro-CT and later SBF-SEM full sample processing and imaging. Further, full sample preparation compatible with SBF-SEM required and additional 3 days, making the entire heart processing around 4 days. To our knowledge, this is the first time that correlative micro-CT/SBF-SEM imaging is applied to the heart.
 
-## Protocol implementation
+### Protocol implementation
 
 Sample preparation for SBF-SEM required strong, immediate fixation to preserve the ultrastructure of the heart tissue. We used a modified Karnovsky’s fixative with equal parts glutaraldehyde and paraformaldehyde. The paraformaldehyde rapidly penetrated and temporarily stabilized the tissue, and the slower-penetrating glutaraldehyde, a superior cross-linker, more permanently preserved the tissue sample (Karnovsky, 1965). An obvious difficulty was to achieve uniform fixation of the whole heart sample. Homogenous fixation was achieved by perfusing fixative into the heart prior to excision and then promptly immersing the heart in fixative after excision, allowing the fixative to simultaneously penetrate the heart through the tissue’s internal and external surfaces. The hearts were then post-fixed with osmium tetroxide, a lipid cross-linker, which fully stabilized membrane structures while enhancing contrast for micro-CT and SBF-SEM imaging. For our heart samples, we could achieve uniform stain penetration using a variation of the ROTO protocol with extended staining timing (about 30% increase; see Materials and methods). The extended timing was sufficient for our hearts, even considering small size variations. We expect, however, that further time increases would apply to larger heart samples (for instance if we image embryos at a more advanced developmental stage, or other species are considered). For the chick embryos studied here, sample preparation after ROTO was adequate for micro-CT imaging of the whole heart (see Figure 2).
 
@@ -144,7 +144,7 @@ Due to the size of the hearts and slow diffusion (penetration) of heavy metals i
 
 While the focus of this study was to demonstrate homogeneous staining and fixation, our procedure enables correlative microscopy. One way to achieve accurate localization of ultrastructures within the heart structure, is to register semithin transverse sections to micro-CT images, and then SBF-SEM images to the semithin images (as done in Figure 4). Because sectioning of samples for SBF-SEM imaging is done after micro-CT images are acquired, sectioning is guided by the images of the whole heart, facilitating the selection of regions of interest. Registration can then be performed among the images themselves. This could be done directly, or by adding fiduciary markers in the resin/heart to facilitate image alignment. Our procedure allows imaging of ultrastructure at several regions of interest within the heart, enabling extensive ultrastructural mapping.
 
-## Comparison of control and TOF hearts and limitations of this study
+### Comparison of control and TOF hearts and limitations of this study
 
 We explored some possible analysis and quantification strategies enabled by our multiscale imaging procedure. We acknowledge that results from this study are very preliminary: Analysis of more heart samples is needed to reach conclusions applicable to CHD. In the future, combining echocardiography, which can acquire in vivo images of the heart for functional analysis (including blood flow) (Midgett et al., 2017a), together with 3D micro-CT and SEM, can reveal functional as well as detailed microstructural and ultrastructural characteristics of normal versus CHD hearts. Further, a combination of segmentation, quantification and other refined methods to interrogate images (at the functional, microstructural and ultrastructural levels) will elucidate similarities and differences between normal and malformed hearts, possibly informing therapeutic treatment strategies. To be biologically meaningful, however, these studies need to include more animals. The quantifications and comparisons presented here for one control and one TOF heart (thus n = 1) pertain only to these two hearts, and are presented as an illustration of possible ways of extracting information from the proposed multiscale imaging method.
 
@@ -156,13 +156,13 @@ We noticed differences in SBF-SEM image sharpness, which are attributable to exc
 
 While 2D EM images have been invaluable in deciphering ultrastructural features of myocardial cells and tissues, 3D images can unravel more details in the spatial organization of the ultrastructural architecture (Hussain et al., 2018; Pinali et al., 2015). As an example, segmentation and quantification of the 3D data revealed that myofibril alignment was slightly different between our TOF and control hearts (Figure 10). This is perhaps because the ROIs from the two hearts are not exactly corresponding, or due to the more extended trabecular architecture of the TOF heart, and warrants further investigation. For myocardial alignment quantification, it is also important to arrest the heart consistently (in diastole as done here, or systole) as myocardial cell orientation changes over the cardiac cycle (Omann et al., 2019; Sonnenblick et al., 1967). 3D SBF-SEM images also revealed a greater proportion of endocardial cells in TOF heart tissues than in control tissues, such that volumetric studies not focusing on myocardial cells show reductions in the myofibril density of the TOF heart (data not shown). When the analysis was focused exclusively on myocardial cells, however, we could not find any differences in the density of myofibrils or mitochondria (Figure 8). Outside the scope of this paper, but relevant to the comparison of normal versus CHD hearts, would be an extensive analysis of left and right ventricular wall microstructure and ultrastructure, including the distribution of lipid droplets, glycogen, and mitochondria with respect to the myofibrils. In addition, studies of the ultrastructural organization within myocardial, endocardial, fibroblast and conduction cells, in normal and CHD hearts, would be relevant to decipher the impact of CHD on cell and cardiac function. While outside the scope of this paper, future studies that include more animals should focus on elucidating ultrastructural cardiac differences in animal models of CHD as such differences can inform clinical studies and impact the lives of children and adults with congenital heart defects. Our proposed multiscale imaging methodology could certainly enable such studies.
 
-## Studies enabled by multiscale imaging
+### Studies enabled by multiscale imaging
 
 Previous studies have detailed the congenital heart anomalies associated with outflow tract banding (OTB) Gessner, 1966; Clark et al., 1984; Midgett et al., 2014 used in this study to induce TOF. Those studies found a spectrum of congenital heart defects after OTB, which originated from abnormalities in the outflow tract (conotruncal defects). These abnormalities included increased separation between the aortic and mitral valve annuli (altered aortic-mitral valve continuity), ventricular septal defects, abnormal position of the aorta, including TOF and double outlet right ventricle (DORV), in which both the aorta and pulmonary trunks emerge from the right ventricle. Meanwhile, neural crest cell ablation also leads to conotruncal anomalies in the chick embryo (Hutson and Kirby, 2003; Kirby et al., 1983). Cardiac neural crest cells are required for normal heart development (in the chick and mouse), and ablation of these cells leads to persistent truncus arteriosus (PTA), characterized by lack of separation of the aorta and pulmonary trunk, but also to TOF and DORV. Likewise, diverse genetic anomalies are also associated with conotruncal heart defects (Srivastava and Olson, 2000; Rugonyi, 2016). However, the mechanisms by which anomalous genes, neural crest cell ablation, and altered hemodynamics lead to conotruncal defects may differ, and these differences may impact myocardial and myofiber orientation and maturation. Multiscale imaging studies could reveal the impact of diverse interventions on cardiac microstructure and ultrastructure, both when the same or different phenotypes are obtained. This in turn could contribute to our understanding of the underpinnings of CHD and their functional and structural consequences.
 
 Direct application of the proposed multiscale imaging method to human hearts is limited. The method presented here is destructive, and thus can only be applied to human samples of deceased individuals. Moreover, the larger size of the human heart will lead to difficulties in attaining homogeneous fixation and staining. To circumvent fixation and stain homogeneity issues, increased timing for diffusion of fixative and heavy metal stains is certainly a possibility as is microwave steps (to accelerate diffusion). In addition, changes in processing, such as sectioning of hearts after micro-CT to facilitate diffusion of heavy metal stains and control imaging are also possible. As presented, using our methods, multiscale imaging of human hearts is limited.
 
-## Conclusions
+### Conclusions
 
 Our correlative, multiscale imaging procedure allowed us to acquire detailed micro-CT images of an entire embryonic chicken heart (see Figure 2), followed by ultrastructural 3D SBF-SEM images from the same heart (see Figures 5 and 6). The described approach allows the correlation of microstructural and ultrastructural architecture in selected regions of the heart. This is important when studying CHDs, as each malformation phenotype may be different and therefore may need to be analyzed separately to fully appreciate multiscale effects and to understand how phenotypes affect cardiac architecture at disparate levels. Furthermore, similar phenotypes that result from diverse insults (e.g. hemodynamics, neural crest cell ablation) could also lead to dissimilar cardiac ultrastructure and function. Importantly, multiscale studies can be used to decipher the imprints that early alterations in the environment in which the heart is growing have on cardiac formation and function. Other potential applications to CHD (and beyond) are determinations of extracellular matrix organization/disorganization, cardiac fibrosis, glycogen distribution and myxomatous degeneration of valve tissues in response to different insults and aging. The multiscale imaging approach presented here therefore could enable animal studies to inform how human cardiac anomalies, even when repaired, could subsequently lead to increased cardiac dysfunction and heart failure. For patients with CHD, such studies may further reveal associated pathologies in cardiac tissues that, if not properly treated, may have devastating implications for survival and long term cardiac health.
 
@@ -170,29 +170,130 @@ While our multiscale imaging approach was implemented and optimized using embryo
 
 ## Materials and methods
 
-## Ethical considerations
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Cacodylate</td>
+      <td>EMS</td>
+      <td>Cat#RT 12300</td>
+      <td>RT 12300 0.1M; pH 7.4</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tannic acid</td>
+      <td>EMS</td>
+      <td>Cat#21700</td>
+      <td>0.1% (w/v)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Osmium Tetroxide, OsO4</td>
+      <td>Ted Pella</td>
+      <td>Cat#18463</td>
+      <td>2% (v/v) final concentration</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium Ferricyanide, K₃[Fe(CN)₆]</td>
+      <td>EMS</td>
+      <td>Cat#20150</td>
+      <td>1.5% (w/v)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thiocarbohydrazide, TCH</td>
+      <td>Aldrich</td>
+      <td>Cat#223220</td>
+      <td>0.1% (w/v)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Uranyl acetate</td>
+      <td>Ted Pella</td>
+      <td>Cat# 19481</td>
+      <td>1% (w/v) working solution</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lead nitrate</td>
+      <td>EMS</td>
+      <td>Cat#17900</td>
+      <td>Used to prepare Lead Apartate</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aspartic acid</td>
+      <td>Aldrich</td>
+      <td>Cat#11195</td>
+      <td>Used to prepare Lead Apartate</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetone</td>
+      <td>EMS</td>
+      <td>Cat#10015</td>
+      <td>Glass Distilled</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Epoxy resin</td>
+      <td>EMS</td>
+      <td>Cat# RT 14900 Epon 812</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Amira 6.0</td>
+      <td>FEI, now ThermoFisher</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Dragonfly 4.1</td>
+      <td>Object Research Systems</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethical considerations
 
 Our research used chicken embryos. According to the US National Institutes of Health (NIH) Office of Laboratory Animal Welfare (ILAR News 1991; 33(4):68–70), the NIH’s ‘Office for Protection from Research Risks has interpreted ‘live vertebrate animal’ to apply to avians only after hatching.’ Our Institutional animal care and use committee (IACUC) follows NIH interpretation. Therefore, chicken embryos are not considered animals and our research did not require approval. Incubator logs in the lab were monitored daily to ensure there were no eggs near the hatching time of 21 incubation days. Nevertheless, we used the minimum possible number of embryos to achieve our goals.
 
-## Generation of cardiac defects
+### Generation of cardiac defects
 
 Our multiscale approach was implemented and optimized using fully formed embryonic chicken hearts (heart length ~ 5–6 mm), and applied to a chick animal model of congenital heart disease. Chicken embryos were prepared as described previously (Midgett et al., 2017a). Briefly, fertilized white Leghorn chicken eggs were incubated blunt end up at 38°C and 80% humidity for approximately 3 days (to Hamburger and Hamilton (HH) stage HH18 [Hamburger and Hamilton, 1992]). Control and treatment interventions were then performed as described below and the embryos were re-incubated for an additional 9 days (to HH38, when the heart has four chambers and valves). Two embryonic hearts were included in this study: (1) a control, normal heart; and (2) a malformed heart with tetralogy of Fallot (TOF). TOF was achieved by performing outflow tract banding (OTB) at HH18, wherein a 10–0 nylon suture was passed under the mid-section of the heart outflow tract and tied in a knot (band tightness 38%). The band was removed from the outflow tract ~ 24 hr after placement (HH24), and then the embryo was allowed to develop to HH38. The control heart was obtained by passing a 10–0 nylon suture under the heart outflow tract without knotting it, and subsequently allowing the embryo to develop to HH38. Embryo hearts were collected at HH38 for multiscale imaging.
 
-## Homogenous fixation of whole hearts
+### Homogenous fixation of whole hearts
 
 At HH38, embryonic whole hearts were excised and fixed as follows. The chest cavity was opened and the pericardial sac around the heart gently removed with forceps. Each heart was arrested by injecting 500 µL of chick ringer solution containing 60 mM KCl, 0.5 mM verapamil, and 0.5 mM EGTA (Tobita et al., 2005) into the left ventricle through the heart’s apex. Hearts were then immediately perfused with ~2 mL of ice-cold (0°C) modified Karnovsky’s fixative (2.5% Glutaraldehyde and 2.5% PFA in PBS (pH 7.4)) through the same injection site. All perfusions were performed with a 21 gauge needle. A transfer pipette was used to quickly apply ~ 1 mL of fixative to the heart’s exterior to ensure uniform fixation of the heart tissue. Next, the heart great vessels were cut with small spring scissors and hearts were placed in 1.5 mL fixative and stored at 4°C until further processing.
 
-## Cardiac processing enabling micro-CT imaging
+### Cardiac processing enabling micro-CT imaging
 
 In order to enable both whole-heart micro-CT imaging and subsequent SBF-SEM imaging of regions of interest (ROIs), we processed fixed hearts for micro-CT using the initial portion of a Renovo Neural, Inc (Cleveland, USA) protocol (Mukherjee, 2016) designed for SBF-SEM imaging (see Figure 1, Step 1). Each heart was placed in a 5 mL glass scintillation vial and we used 3 mL of solution per vial for each incubation/wash. First, the fixed hearts were washed in 0.1M Sodium Cacodylate (pH 7.4) for 20 min with 4 exchanges of fresh buffer. Next, the hearts were incubated in 0.1% (w/v) of tannic acid in 0.1M Sodium Cacodylate (pH 7.4) for 15 min at room temperature. Samples were then washed in 0.1M Sodium Cacodylate (pH 7.4) for 20 min with 4 exchanges of fresh buffer. Since the reducing agents used in subsequent steps (modified ROTO protocol) were light-sensitive, the sample vials were covered in aluminum foil from this point on. The whole hearts were post-fixed in 2% (v/v) Osmium Tetroxide (OsO4) and 1.5% (w/v) Potassium Ferricyanide (K₃[Fe(CN)₆]) in distilled water (dH2O) for 2 hr at room temperature on a rotating platform. The samples were then extensively washed in dH2O for 20 min with four exchanges of fresh dH2O. Next, the samples were immersed in 0.1% (w/v) Thiocarbohydrazide (TCH) solution in dH2O, placed in an oven, and incubated for 40 min at 60°C. This step was followed by another four exchanges of fresh dH2O over 20 min. Samples were then immersed in a 2% (v/v) OsO4 solution in dH2O for 2 hr at room temperature on a rotating platform. Finally, the hearts were washed extensively in dH2O over 20 min with four exchanges of fresh water. Each heart was stored in dH2O at 4°C until imaged by micro-CT. This preparation provided excellent contrast for micro-CT scans (see Results).
 
 Micro-CT images of whole hearts were acquired to assess the cardiac structure. We acquired high-resolution (~10 μm) 3D scans of each heart using a Caliper Quantum FX Micro-CT system (Perkin-Elmer, CLS140083) with 10 mm field of view, 140 μA current, 90 kV voltage, and a scan time of 3 min. We used the Amira 6.0 software platform (FEI Company) or Dragonfly 4.1 software (Object Research Systems, Quebec, Canada) to visualize these scans and identify cardiac defects. Hearts were then stored in double distilled water at 4°C until further processing. Please note that at this step in the processing (cardiac tissues fixed and post-fixed with OsO4) water does not damage the tissues.
 
-## Subsequent cardiac tissue processing enabling 3D SBF-SEM imaging
+### Subsequent cardiac tissue processing enabling 3D SBF-SEM imaging
 
 After whole hearts were imaged with micro-CT, sample preparation of selected hearts for 3D SBF-SEM imaging was finished (see Figure 1; Step 2), following the Renovo Neural, Inc protocol. In large samples, like the whole hearts described in this manuscript, it is necessary to extend most of the staining steps. Failure to extend the timing of staining resulted in a heterogenous stain distribution throughout the tissue (in our early iterations of the procedure). In our final, optimized procedure, we incubated the samples in 1% (w/v) aqueous uranyl acetate for 24 hr at 4°C, after which they were washed in dH2O for 30 min with 6 exchanges of fresh dH2O. We then incubated the samples in lead aspartate for 30 min at 60°C. The samples were then extensively washed in dH2O for 20 min with 4 exchanges of dH2O. Dehydration steps were done in a series of acetone-dH2O mixtures (50, 75, 85, 95, and 100%); each step was repeated twice for 5 min at room temperature. The whole heart sample was then embedded in an epoxy (Epon 812) resin for further manipulation and SBF-SEM sample preparation. The first infiltration step was done for 1 hr at room temperature in a mixture of 1:1 (v/v) acetone:epon followed by a 1:3 (v/v) acetone:epon incubation for 1 hr at room temperature. The hearts were subsequently incubated overnight in pure (100%) epon on a rotating platform. The following day the epoxy solution was exchanged four times, each time with 30 min incubation steps at room temperature. Samples were polymerized at 60°C for 48 hr in a conventional oven, leading to a whole heart sample embedded in an Epon block.
 
-## Selection of regions of interest (ROIs) and SBF-SEM image acquisition
+### Selection of regions of interest (ROIs) and SBF-SEM image acquisition
 
 Using the micro-CT images as reference, the Epon-embedded heart blocks were sectioned to reach a selected short axis (transverse) section using a diamond-wire jewelry saw. For this study we selected the mid cardiac transverse section, at a plane where the heart is wider (the equatorial plane). After this step, a semithin section (250 nm) was obtained using an ultramicrotome and mounted on a silicon chip previously glow discharged for 1 min at 15 mA (PELCO easyGlow, Ted Pella). Semithin section images were used to confirm the area of interest as well as to check for both the ultrastructural quality of the sample and the success of the staining procedure (see Figure 1; Step 2). This step is crucial since the SBF-SEM imaging requires samples with extremely good contrast. Semithin sections were imaged on a Teneo Volume Scope in low vacuum mode using a VS-DBS backscattered electron detector and the MAPS software (FEI Company). Imaging conditions used were 2.5 kV and 0.2 mA, dwell 3–5 µs. In some cases, the samples imaged using this method needed to be coated with a thin (5–8 nm) layer of carbon to minimize charging artifacts induced by the electron beam.
 
@@ -200,7 +301,7 @@ The same diamond-wire jewelry saw was then utilized to generate a slab (~1.5 mm)
 
 In the last step of our multiscale imaging procedure, 3D SBF-SEM images of sub-ROIs selected from the mounted sample were acquired (see Figure 1; Step 4). 3D image acquisition was done on a Teneo Volume Scope SBF-SEM in low vacuum mode (50 Pa) using a VS-DBS backscattered detector. Images were acquired at a lateral resolution of 10 nm/pixel and image sets included 800–1000 serial sections (with each section thickness measuring 40 nm in the z axis). SBF-SEM data sets were approximately 40 μm × 60 μm×32–40 μm.
 
-## Image analysis and segmentation
+### Image analysis and segmentation
 
 All registration, of SBF-SEM data was performed with Amira 6.0 (FEI Company). First, complete image stacks (800–1000 slices) from each ROI and sub-ROIs were automatically aligned to generate a continuous 3D volume. Next, a non-local means filter was applied to every 2D slice in order to improve the signal-to-noise ratio. Due to slight differences in the intrinsic properties of the tissue, sections from the TOF heart appeared slightly lighter compared to the control heart. We adjusted the intensity of the TOF sections during post-processing to match that of the control heart.
 

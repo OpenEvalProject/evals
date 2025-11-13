@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00a0jsq62 Department of Infection Biology, London School of Hygiene & Tropical Medicine London United Kingdom
+1. Department of Infection Biology, London School of Hygiene & Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
 
 † Corresponding author
 

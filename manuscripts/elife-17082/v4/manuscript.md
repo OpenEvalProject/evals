@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.17082.001 CpG dinucleotides are the main mutational hot-spot in most cancers. The characteristic elevated C>T mutation rate in CpG sites has been related to 5-methylcytosine (5mC), an epigenetically modified base which resides in CpGs and plays a role in transcription silencing. In brain nearly a third of 5mCs have recently been found to exist in the form of 5-hydroxymethylcytosine (5hmC), yet the effect of 5hmC on mutational processes is still poorly understood. Here we show that 5hmC is associated with an up to 53% decrease in the frequency of C>T mutations in a CpG context compared to 5mC. Tissue specific 5hmC patterns in brain, kidney and blood correlate with lower regional CpG>T mutation frequency in cancers originating in the respective tissues. Together our data reveal global and opposing effects of the two most common cytosine modifications on the frequency of cancer causing somatic mutations in different cell types. DOI: http://dx.doi.org/10.7554/eLife.17082.001
+CpG dinucleotides are the main mutational hot-spot in most cancers. The characteristic elevated C>T mutation rate in CpG sites has been related to 5-methylcytosine (5mC), an epigenetically modified base which resides in CpGs and plays a role in transcription silencing. In brain nearly a third of 5mCs have recently been found to exist in the form of 5-hydroxymethylcytosine (5hmC), yet the effect of 5hmC on mutational processes is still poorly understood. Here we show that 5hmC is associated with an up to 53% decrease in the frequency of C>T mutations in a CpG context compared to 5mC. Tissue specific 5hmC patterns in brain, kidney and blood correlate with lower regional CpG>T mutation frequency in cancers originating in the respective tissues. Together our data reveal global and opposing effects of the two most common cytosine modifications on the frequency of cancer causing somatic mutations in different cell types.
 
 ## Introduction
 
@@ -33,39 +33,39 @@ Since 5hmC has been shown to be most abundant in human brain (Li and Liu, 2011; 
 
 We compiled base-resolution maps of 5mC and 5hmC frequency in brain, kidney and myeloid cells from publicly available sources (Wen et al., 2014; Chen et al., 2015; Pacis et al., 2015). All three data sets are based on bisulfite (BS) and 'Tet-assisted bisulfite' (TAB) sequencing, respectively. BS-Seq detects any modified cytosine (i.e., does not distinguish 5mC and 5hmC) whereas TAB-Seq specifically detects 5hmC. The combination of the two methods allows an estimation of the levels of both 5mC and 5hmC for all sufficiently covered cytosines. As 5hmC predominantly occurs in a CpG context, we focussed the analysis on CpG sites. Sequencing reads come from heterogeneous populations of cells. Hence, a single locus usually cannot be assigned a single state (C, 5mC or 5hmC). Instead, we estimated the frequency of modification, hydroxymethylation and methylation per site using the percentage of BS-Seq reads that showed a modification (referred to as mod level), the percentage of TAB-Seq reads that showed hydroxymethylation (referred to as 5hmC level) and their difference (5mC level = mod level – 5hmC level), respectively.
 
-## 5hmC sites in brain exhibit lower frequency of CpG>T mutations than 5mC sites
+### 5hmC sites in brain exhibit lower frequency of CpG>T mutations than 5mC sites
 
-Since brain tissue has been shown to exhibit particularly high levels of 5hmC (
+Since brain tissue has been shown to exhibit particularly high levels of 5hmC (Figure 1A), we first investigated the relationship between the regional distribution of 5hmC, 5mC and mutagenesis in brain tumours. We reasoned that this approach would provide the highest sensitivity to detect any correlation between 5hmC and mutation frequency.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig1-v4.jpg)
 
-**Figure 1.:** (A) Distribution of 5hmC in a CpG context in brain compared to kidney and blood. (B) Frequency of SNVs in brain cancer exomes, stratified by sequence context, normalised by frequency of trinucleotides. (C) Distribution of single-nucleotide variants (whole genomes) in brain cancer according to type, context and modification state. (D) CpG>T mutation frequency (black), 5hmC (blue) and 5mC (orange) density in 100 kbp windows of chromosome 3, smoothed with a Gaussian filter (n = 50, sigma = 2.5). (E) Average fraction of mutated sites for 5mChigh vs. 5hmChigh over all patient samples (CpG sites only; ***p<0.001; **p< 0.01; *p< 0.05, see Materials and methods).DOI: http://dx.doi.org/10.7554/eLife.17082.003
+**Figure 1.:** (A) Distribution of 5hmC in a CpG context in brain compared to kidney and blood. (B) Frequency of SNVs in brain cancer exomes, stratified by sequence context, normalised by frequency of trinucleotides. (C) Distribution of single-nucleotide variants (whole genomes) in brain cancer according to type, context and modification state. (D) CpG>T mutation frequency (black), 5hmC (blue) and 5mC (orange) density in 100 kbp windows of chromosome 3, smoothed with a Gaussian filter (n = 50, sigma = 2.5). (E) Average fraction of mutated sites for 5mChigh vs. 5hmChigh over all patient samples (CpG sites only; ***p<0.001; **p< 0.01; *p< 0.05, see Materials and methods).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig1-figsupp1-v4.jpg)
 
-**Figure 1—figure supplement 1.:** CpG>T mutation frequency (black), 5 hmC (blue) and 5 mC (orange) density in 100 kbp windows, smoothed with a Gaussian filter (n = 50, sigma = 2.5).DOI: http://dx.doi.org/10.7554/eLife.17082.004
+**Figure 1—figure supplement 1.:** CpG>T mutation frequency (black), 5 hmC (blue) and 5 mC (orange) density in 100 kbp windows, smoothed with a Gaussian filter (n = 50, sigma = 2.5).
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig1-figsupp2-v4.jpg)
 
-**Figure 1—figure supplement 2.:** CpG>T mutation frequency (black), 5 hmC (blue) and 5 mC (orange) density in 100 kbp windows, smoothed with a Gaussian filter (n = 50, sigma = 2.5).DOI: http://dx.doi.org/10.7554/eLife.17082.005
+**Figure 1—figure supplement 2.:** CpG>T mutation frequency (black), 5 hmC (blue) and 5 mC (orange) density in 100 kbp windows, smoothed with a Gaussian filter (n = 50, sigma = 2.5).
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig1-figsupp3-v4.jpg)
 
-**Figure 1—figure supplement 3.:** CpG>T mutation frequency (black) and several genomic features in 100 kbp windows on chromosome 3, smoothed with a Gaussian filter (n = 50, sigma = 2.5).CGIs: density of CpG islands, EXONs: density of exons, GENEs: density of genes, CpG: density of CpGs, modCpG: density of CpGs with mod level ≥ 10%; and average modification levels: mod, 5 hmC, 5 mC, and 5 hmCrel.DOI: http://dx.doi.org/10.7554/eLife.17082.006
+**Figure 1—figure supplement 3.:** CpG>T mutation frequency (black) and several genomic features in 100 kbp windows on chromosome 3, smoothed with a Gaussian filter (n = 50, sigma = 2.5).CGIs: density of CpG islands, EXONs: density of exons, GENEs: density of genes, CpG: density of CpGs, modCpG: density of CpGs with mod level ≥ 10%; and average modification levels: mod, 5 hmC, 5 mC, and 5 hmCrel.
 
 We analysed 344370 somatic single nucleotide variants (SNVs) from 665 samples derived from exome and whole genome sequencing of the following cancer types: Glioblastoma (GBM), Glioma low grade (GLG), Neuroblastoma (NRB), Medulloblastoma (MDB) and Pilocytic astrocytoma (PA) (Alexandrov et al., 2013). The dominant point mutation type in these cancers were C>T transitions in a CpG context (Figure 1B,C), similar to what was observed in combined analyses of all cancer types (Alexandrov et al., 2013).
 
 Mutations and DNA modifications are not distributed uniformly along the chromosomes. Strikingly, 5hmC levels were visibly and significantly anti-correlated with the frequency of CpG>T (r=-0.71, chr3), while 5mC levels displayed a positive correlation (r=0.66, chr3, Figure 1D, Figure 1—figure supplements 1–2). This is not a simple consequence of the uneven distribution of genes, exons, CpG islands or levels of gene expression (Figure 1—figure supplement 3 and additional analyses below).
 
-Averaging over the entire genome, the frequency of C>T mutations differed substantially between 5mC
+Averaging over the entire genome, the frequency of C>T mutations differed substantially between 5mChigh (5mChigh: mod level > 10% and 5hmC level / mod level ≤ 0.3) and 5hmChigh (5hmChigh: mod level > 10% and 5hmC level / mod level ≥ 0.5) sites. The fraction of mutated 5hmChigh sites was significantly lower than the fraction of mutated 5mChigh sites (Figure 1E). The lower mutation frequency was consistently observed in data derived from both exome and whole genome sequencing projects (p<0.001, Wilcoxon signed-rank test). Moreover, all brain cancer types individually displayed a significant (28–53%, p<0.05 in all types) reduction of C>T mutations in 5hmChigh sites (Figure 2A,B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig2-v4.jpg)
 
-**Figure 2.:** (A) Average fraction of mutated CpG sites for 5mChigh vs. 5hmChigh computed separately for each cancer type. (B) Box plot of C>T mutation frequency, as shown in A. (C) Correlation of whole genome CpG>T mutation frequency with age at the time of diagnosis in patients with Medulloblastoma and Pilocytic Astrocytoma.DOI: http://dx.doi.org/10.7554/eLife.17082.007
+**Figure 2.:** (A) Average fraction of mutated CpG sites for 5mChigh vs. 5hmChigh computed separately for each cancer type. (B) Box plot of C>T mutation frequency, as shown in A. (C) Correlation of whole genome CpG>T mutation frequency with age at the time of diagnosis in patients with Medulloblastoma and Pilocytic Astrocytoma.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig2-figsupp1-v4.jpg)
 
-**Figure 2—figure supplement 1.:** >T mutations in 5hmChigh is relatively insensitive to varying definitions of 5mChigh and 5hmChigh.(A–F) Significance of a difference in mutation frequency in 5mChigh and 5hmChigh, for a range of values of threshold5mC and threshold5hmC (5mChigh is defined as sufficiently modified sites with 5hmCrel ≤ threshold5mC; 5hmChigh is defined as sufficiently modified sites with 5hmCrel ≥ threshold5hmC). One-sided paired Wilcoxon sign-rank test was used. Red colour represents a significant increase of mutation frequency in 5mChigh (right tail test) whereas blue colour represents elevated mutations in 5hmChigh (left tail test). (G–I) C>T mutation frequency for 5mChigh vs. 5hmChigh with threshold5mC =0.3 and threshold5hmC =0.7.DOI: http://dx.doi.org/10.7554/eLife.17082.008
+**Figure 2—figure supplement 1.:** (A–F) Significance of a difference in mutation frequency in 5mChigh and 5hmChigh, for a range of values of threshold5mC and threshold5hmC (5mChigh is defined as sufficiently modified sites with 5hmCrel ≤ threshold5mC; 5hmChigh is defined as sufficiently modified sites with 5hmCrel ≥ threshold5hmC). One-sided paired Wilcoxon sign-rank test was used. Red colour represents a significant increase of mutation frequency in 5mChigh (right tail test) whereas blue colour represents elevated mutations in 5hmChigh (left tail test). (G–I) C>T mutation frequency for 5mChigh vs. 5hmChigh with threshold5mC =0.3 and threshold5hmC =0.7.
 
 It has been shown that CpG>T mutations are one of the two mutational signatures correlating with age (Alexandrov et al., 2015), supporting the fact that these mutations were gathered during the entire lives of the patients, not only after the origin of cancer. Here we observed that this correlation is present in both methylated and hydroxymethylated sites (Figure 2C). Moreover, the slope for 5mC was steeper than for 5hmC, suggesting that even the mechanisms causing the difference of CpG>T mutability between 5mC and 5hmC were present in the pre-cancerous cell of origin.
 
@@ -73,95 +73,93 @@ We also compared the fraction of mutated 5mChigh and 5hmChigh sites for the othe
 
 We confirmed that C>T mutations are significantly depleted at 5hmC sites across a wide range of thresholds in definitions of 5mChigh and 5hmChigh (Figure 2—figure supplement 1A–F). In fact, more stringent definitions of 5hmC (e.g., 5hmChigh: 5hmC level / mod level ≥ 0.7) result in even greater differences (42–59%) in C>T mutation frequencies between 5mChigh and 5hmChigh sites (Figure 2—figure supplement 1G–I, Figure 3—figure supplement 1A–D), but these definitions would reduce the number of sites too much for our subsequent statistical analyses.
 
-## Reduced 5hmC mutability in brain is not accounted for by genomic regions or gene expression
+### Reduced 5hmC mutability in brain is not accounted for by genomic regions or gene expression
 
-We next examined whether the decreased frequency of C>T transitions at 5hmC vs. 5mC sites might be an indirect effect of 5hmC being associated with genomic regions of lower mutability. Levels of 5mC and 5hmC vary across genomic regions. For example, 5hmC density is elevated in highly expressed genes in brain (
+We next examined whether the decreased frequency of C>T transitions at 5hmC vs. 5mC sites might be an indirect effect of 5hmC being associated with genomic regions of lower mutability. Levels of 5mC and 5hmC vary across genomic regions. For example, 5hmC density is elevated in highly expressed genes in brain (Mellén et al., 2012; Yu et al., 2012; Lister et al., 2013; Wen et al., 2014). The observed decrease in C>T mutation frequencies might therefore be attributable to higher gene expression, which would correlate with higher transcription coupled repair. We therefore performed the analysis described above separately for regions with high vs. low gene expression in human brain (see Materials and methods). There was a lower overall mutation frequency in highly expressed genes (Figure 3A–B), but both highly and lowly expressed genes exhibited significantly lower C>T transition rates at 5hmC sites compared to 5mC sites (Figure 3A–D). This suggests that the observed effect is independent of transcription and thus not a result of transcription coupled repair.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig3-v4.jpg)
 
-**Figure 3.:** (A–B) Frequency of mutations in 5mChigh vs 5hmChigh sites within highly expressed (A) or lowly expressed (B) genes (see Materials and methods). (C–D) Boxplot visualisation of C>T mutation frequency for each cancer type. (E) For each patient sample, the overall difference in mutations in paired sites was calculated and compared using a Wilcoxon signed-rank test. Shown here is a histogram of samples by the difference in mutations for paired 5mC and 5hmC sites (negative values shown blue, positive in orange; see Materials and methods for details). Mutations in 5mC sites exceed paired 5hmC sites, causing a shift to the right. (F) Same as E but using a more stringent definition of 5mC (only sites with threshold5mC ≤ 0.2).DOI: http://dx.doi.org/10.7554/eLife.17082.009
+**Figure 3.:** (A–B) Frequency of mutations in 5mChigh vs 5hmChigh sites within highly expressed (A) or lowly expressed (B) genes (see Materials and methods). (C–D) Boxplot visualisation of C>T mutation frequency for each cancer type. (E) For each patient sample, the overall difference in mutations in paired sites was calculated and compared using a Wilcoxon signed-rank test. Shown here is a histogram of samples by the difference in mutations for paired 5mC and 5hmC sites (negative values shown blue, positive in orange; see Materials and methods for details). Mutations in 5mC sites exceed paired 5hmC sites, causing a shift to the right. (F) Same as E but using a more stringent definition of 5mC (only sites with threshold5mC ≤ 0.2).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig3-figsupp1-v4.jpg)
 
-**Figure 3—figure supplement 1.:** >T mutations in 5hmChigh is relatively insensitive to varying definitions of 5mChigh and 5hmChigh.(A–D) C>T mutation frequency for 5mChigh vs. 5hmChigh in highly vs. lowly expressed genes with threshold5mC =0.3 and threshold5hmC =0.7. (E–F) C>G mutation frequency with threshold5mC =0.0 and threshold5hmC =0.5. (G) Mutation frequency around aligned 5mC and 5hmC sites.DOI: http://dx.doi.org/10.7554/eLife.17082.010
+**Figure 3—figure supplement 1.:** (A–D) C>T mutation frequency for 5mChigh vs. 5hmChigh in highly vs. lowly expressed genes with threshold5mC =0.3 and threshold5hmC =0.7. (E–F) C>G mutation frequency with threshold5mC =0.0 and threshold5hmC =0.5. (G) Mutation frequency around aligned 5mC and 5hmC sites.
 
 Gene expression is only one of many possible region-related confounding factors. Hence, to correct for any regional variation, we performed the analysis on groups of sites generated by pairing the modified CpGs: each 5hmC site was paired with the nearest yet unpaired 5mC site from an equivalent genomic and sequence context (an approach adapted from Supek et al., 2014, see Materials and methods). Thereby we compared the mutation frequencies of two groups (one group comprising 5mC sites and one group comprising 5hmC sites) containing the same number of loci (6801374 cytosines in each group). As a result of this experimental setup, a substantial fraction of mutated 5mC sites were excluded, greatly reducing the statistical power of this 'paired' analysis. Nevertheless, the frequency of C>T mutations in 5hmC remained significantly lower than in 5mC in both exomes and genomes (Figure 3E–F), supporting that the difference between 5mC and 5hmC mutation frequency is not caused by regional differences.
 
 To ensure that there is no confounding bias in the spatial distribution of mutations around 5mC or 5hmC sites, respectively, we plotted mutation frequencies in a 2 kb radius up and downstream of modified loci (Figure 3—figure supplement 1G, Materials and methods). The mutation frequency differed substantially in the aligned positions of DNA modifications but was indistinguishable in the surrounding area. In conclusion, regional mutation rate variability is unlikely to account for the difference in C>T mutational load in 5mC and 5hmC sites.
 
-## Relative 5hmC correlates with CpG>T mutation frequency
+### Relative 5hmC correlates with CpG>T mutation frequency
 
-The 5mC and 5hmC frequency at each base reflect the prevalence of each modification within the sequenced cell population. We hypothesised that if 5hmC had a direct effect on C>T mutation likelihood, we would observe an increase in mutation frequency with decreasing 5hmC occupancy. To test this, we formally defined 5hmC
+The 5mC and 5hmC frequency at each base reflect the prevalence of each modification within the sequenced cell population. We hypothesised that if 5hmC had a direct effect on C>T mutation likelihood, we would observe an increase in mutation frequency with decreasing 5hmC occupancy. To test this, we formally defined 5hmCrel as the ratio of the proportion of reads supporting 5hmC, relative to the proportion of reads supporting any modification at a particular cytosine (5hmCrel = 5hmC level / mod level). We then divided brain CpG sites into bins according to their 5hmCrel level and computed the fraction of mutated sites in each bin (Figure 4A). We observed a clear linear relationship between 5hmCrel values and C>T mutation frequencies. Notably, the correlation was present in all the tested brain cancer types in exome- and whole genome-sequenced samples. A regression slope test confirmed significance of this relationship in all the cancer types. To confirm that the results are not influenced by an uneven distribution of information across bins, we performed quantile binning so that each bin contains an approximately equal number of positions (see Materials and methods). The results of quantile bins were equivalent to evenly spaced bins (Figure 4—figure supplement 1H).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig4-v4.jpg)
 
-**Figure 4.:** rel level per base.(A) Fraction of mutated CpG sites as a function of 5hmCrel levels by mutation and cancer type. Bins to the left represent sites predominantly methylated, while bins to the right contain increasingly hydroxymethylated sites. Black line denotes linear regression fit (F-test for coefficient deviation from 0, see Materials and methods). (B) Distribution of CpG>T mutation frequency by modification type. The top left bin contains cytosines that are mostly unmodified, the bottom left bin contains exclusively methylated cytosines and the top right bin contains cytosines that are mostly hydroxymethylated. (C) Top row of B, i.e. distribution of mutations in unmethylated sites. (D) First column of B, i.e. distribution of mutations in sites without 5hmC. (E) Diagonal of B, i.e. distribution of mutations in highly modified sites.DOI: http://dx.doi.org/10.7554/eLife.17082.011
+**Figure 4.:** (A) Fraction of mutated CpG sites as a function of 5hmCrel levels by mutation and cancer type. Bins to the left represent sites predominantly methylated, while bins to the right contain increasingly hydroxymethylated sites. Black line denotes linear regression fit (F-test for coefficient deviation from 0, see Materials and methods). (B) Distribution of CpG>T mutation frequency by modification type. The top left bin contains cytosines that are mostly unmodified, the bottom left bin contains exclusively methylated cytosines and the top right bin contains cytosines that are mostly hydroxymethylated. (C) Top row of B, i.e. distribution of mutations in unmethylated sites. (D) First column of B, i.e. distribution of mutations in sites without 5hmC. (E) Diagonal of B, i.e. distribution of mutations in highly modified sites.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig4-figsupp1-v4.jpg)
-
-**Figure 4—figure supplement 1.:** rel levels with equal binning (each bin contains approximately the same number of sites).DOI: http://dx.doi.org/10.7554/eLife.17082.012
 
 For comparison, we also evaluated the relationship between 5hmCrel and the frequency of C>A and C>G mutations (Figure 4A). Consistent with our previous results, an increase in 5hmCrel is associated with an increase in C>G mutations in whole genomes (from MDB and PA samples), but the relationship in other cancer types shows no significant trend. C>A mutations decrease with 5hmCrel levels in GBM but exhibit no significant signal in the remaining tumour types.
 
 This result supports the conclusion that the decrease in C>T mutation frequency at 5hmC sites is not an artefact of our chosen definition of 5mC or 5hmC. Even more importantly, it supports the notion that this decrease is directly caused by the properties of these DNA modifications.
 
-## Mutation load of 5hmC sites is similar to unmodified cytosines
+### Mutation load of 5hmC sites is similar to unmodified cytosines
 
 The findings reported so far could be attributed to an elevated mutation rate in 5mC, to a lowered mutagenicity of 5hmC or a combination of the two. To investigate this question, we compared mutation frequencies at 5mC and 5hmC sites to that of unmodified cytosines. We divided all the sequenced CpG sites into 9x9 bins according to their levels of 5mC and 5hmC. We observed that the mutation frequency of unmodified cytosine is similar to 5hmC, whereas 5mC exhibited much higher mutation frequency (Figure 4B). Further, we calculated the mutation frequency distribution in sites that exhibited almost no methylation or almost no hydroxymethylation, respectively. When methylated sites are excluded, the mutation frequency does not show any significant trend with increasing levels of 5hmC (Figure 4C). Conversely, excluding hydroxymethylated sites leads to a significant gradient in mutation frequency with increasing levels of 5mC (Figure 4D). When only fully modified sites (mod level ≥ 90%) are taken into account, increasing levels of 5hmC (i.e., decreasing levels of 5mC) are associated with a significant decrease in C>T mutation frequency (Figure 4E).
 
-## 5hmC is a predictor of CpG>T mutation frequency across the genome
+### 5hmC is a predictor of CpG>T mutation frequency across the genome
 
 To examine the exclusive impact of DNA modifications on regional frequencies of mutations, we split the genome into 100 kb windows and fitted a generalised linear model to explain the observed per-window CpG>T mutation frequency from a combination of features including average 5mC and 5hmC levels, 5hmCrel, gene density, CpG island density amongst others. Only whole genome sequencing data were used for this analysis. To compare the resulting models, we calculated their respective 'explained deviance' D2, a generalisation of explained variance that is more appropriate for comparing generalised linear models (see Materials and methods).
 
-The best individual predictor of CpG>T mutation frequency was 5hmC
+The best individual predictor of CpG>T mutation frequency was 5hmCrel (D2 = 0.11), outperforming all other features (Figure 5A). Interestingly, the sum of 5mC and 5hmC levels ('mod') performed worst, suggesting that bisulfite sequencing measurements alone are a poor predictor of mutagenicity. When combining all 11 features into one model, the total explained deviance for 100 kb windows was 16%.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig5-v4.jpg)
 
-**Figure 5.:** rel compared to other genomic features.(A) Prediction of CpG>T mutation frequency (using whole genome sequencing only) in 100 kbp genomic windows. Predictors are sorted according to the D2 in a univariate model. The height of the kth bar denotes the D2 of a model with the first k predictors. (B) Comparison of the nine predictors of CpG>T mutation features by D2 in a univariate models, in a range of window sizes. (C) Prediction of different types of mutation frequency in genes. Increase in D2 of a generalised linear model including 5hmCrel over gene expression (purple) or gene expression over 5hmCrel (green) (see Materials and methods). (D) Significance of observations in C (see Materials and methods).DOI: http://dx.doi.org/10.7554/eLife.17082.013
+**Figure 5.:** (A) Prediction of CpG>T mutation frequency (using whole genome sequencing only) in 100 kbp genomic windows. Predictors are sorted according to the D2 in a univariate model. The height of the kth bar denotes the D2 of a model with the first k predictors. (B) Comparison of the nine predictors of CpG>T mutation features by D2 in a univariate models, in a range of window sizes. (C) Prediction of different types of mutation frequency in genes. Increase in D2 of a generalised linear model including 5hmCrel over gene expression (purple) or gene expression over 5hmCrel (green) (see Materials and methods). (D) Significance of observations in C (see Materials and methods).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig5-figsupp1-v4.jpg)
 
-**Figure 5—figure supplement 1.:** rel compared to other genomic features.(A–C) Comparison of nine predictors of CpG>T mutation frequency in a range of window sizes by p-value of univariate generalised linear models (A), Spearman correlation (B), and Pearson correlation (C). (D) Effects of window size and patient numbers on D2 of GLM with one response variable (simulated mutation frequency) generated proportionally from a single ideal predictor (see Materials and methods for details).DOI: http://dx.doi.org/10.7554/eLife.17082.014
+**Figure 5—figure supplement 1.:** (A–C) Comparison of nine predictors of CpG>T mutation frequency in a range of window sizes by p-value of univariate generalised linear models (A), Spearman correlation (B), and Pearson correlation (C). (D) Effects of window size and patient numbers on D2 of GLM with one response variable (simulated mutation frequency) generated proportionally from a single ideal predictor (see Materials and methods for details).
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig5-figsupp2-v4.jpg)
 
-**Figure 5—figure supplement 2.:** rel levels on gene mutability.Data for GLM with Poisson distribution (the fitted curve is in green). Genes defined as outliers in at least one definition of mutation frequency (above the red line) are plotted in red. For convenience, the mutation frequency is plotted on log-scale.DOI: http://dx.doi.org/10.7554/eLife.17082.015
+**Figure 5—figure supplement 2.:** Data for GLM with Poisson distribution (the fitted curve is in green). Genes defined as outliers in at least one definition of mutation frequency (above the red line) are plotted in red. For convenience, the mutation frequency is plotted on log-scale.
 
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig5-figsupp3-v4.jpg)
 
-**Figure 5—figure supplement 3.:** rel levels on gene mutability.(A–B) GLM results fitted separately for 5hmCrel (purple) and gene expression (green) and both of them together (yellow). (C–D) Frequency of modC>T mutations of all genes (C) and gene density (D) in the space of 5hmCrel and gene expression. Briefly, for figures C and D the space was limited to [quantile(x, 0.05), quantile(x, 0.95)] on both axes and then binned into 100x100 bins. In each bin, the average mutation frequency (in the form of log(mutFreq + min(mutFreq(mutFreq>0)))) was computed. The resulting matrix was smoothed by applying a Gaussian filter (radius 5 bins, sigma 2) weighted by the number of genes in each bin (bins with ≥ 2/3 missing values in their neighbourhood were set to NaN) and plotted with pcolor (NaN bins are shown in black).DOI: http://dx.doi.org/10.7554/eLife.17082.016
+**Figure 5—figure supplement 3.:** (A–B) GLM results fitted separately for 5hmCrel (purple) and gene expression (green) and both of them together (yellow). (C–D) Frequency of modC>T mutations of all genes (C) and gene density (D) in the space of 5hmCrel and gene expression. Briefly, for figures C and D the space was limited to [quantile(x, 0.05), quantile(x, 0.95)] on both axes and then binned into 100x100 bins. In each bin, the average mutation frequency (in the form of log(mutFreq + min(mutFreq(mutFreq>0)))) was computed. The resulting matrix was smoothed by applying a Gaussian filter (radius 5 bins, sigma 2) weighted by the number of genes in each bin (bins with ≥ 2/3 missing values in their neighbourhood were set to NaN) and plotted with pcolor (NaN bins are shown in black).
 
 Varying the chosen window size (3 kbp – 3 Mbp; Figure 5B, Figure 5—figure supplement 1A–C) does not substantially change the comparison of the predictive power of the respective features. In all cases, 5mC and 5hmCrel were the two best predictors, with 5hmCrel performing slightly better with smaller windows. However, the total explained deviance increased with window size, reaching values as high as 45% for univariate models and 60% for models with all predictors. This led us to question whether the increasing predictive power of larger windows has a biological reason, or whether it is a consequence of the lower data density in small windows.
 
 Since many smaller windows contain no observed mutations, low D2 values could simply reflect a lack of data. To test this, we generated simulated mutations so that a 'perfect' predictor was linearly related to the mutation likelihood per window (see Materials and methods). We then measured the effect of window and sample size (number of patients) on the observed D2, repeating the simulations 10 times. The resulting curves of the explained deviance resemble those measured in the real data (Figure 5—figure supplement 1D). Moreover, in the simulated data, higher numbers of patients lead to higher D2 even for smaller window sizes, suggesting that lower D2 values in smaller windows indeed are a consequence of lower data density.
 
-## Level of genic 5hmC correlates with decrease of CpG>T
+### Level of genic 5hmC correlates with decrease of CpG>T
 
 It has been reported that 5hmC is enriched in gene bodies, and several brain cancer sequencing data sets. We therefore tested whether the relationship between 5hmC and mutations, which we observed across the whole genome, is also detectable in exonic regions alone.
 
 In line with our earlier results, we found that 5hmCrel significantly contributes to the deviance explained by the model, beyond covariation with gene expression (Figure 5C–D; F-test p<2e-100). We hypothesised that this effect should be most pronounced when using modC>T and CpG>T as the response variable, whereas it should decrease when using definitions of mutations that include a progressively wider range of loci (C>T, C>N, N>N). Indeed, the unique contribution of 5hmCrel to the explained gene mutation frequency decreased as the mutation sets became larger and more distant from modC>T (Figure 5C–D, Figure 5—figure supplements 2–3). Nevertheless, in all of the cases, 5hmCrel significantly improved the fit of the model. Conversely, we confirmed that 5hmCrel had no significant predictive power for the frequency of T>N mutations (Figure 5C–D; column T>N), supporting the hypothesis that 5hmCrel selectively affects mutations in modified cytosines.
 
-## Decreased CpG>T mutation frequency in 5hmC is not limited to brain tissue
+### Decreased CpG>T mutation frequency in 5hmC is not limited to brain tissue
 
 Two recently published datasets allowed us to address the question of mutational properties of 5mC and 5hmC also in two other tissues: kidney (Chen et al., 2015) and blood (Pacis et al., 2015). For blood we used 174 sequencing samples from Acute Myeloid Leukaemia (AML) as the cancer type closest to the blood dendritic cells in which the BS-Seq and TAB-Seq measurements were performed. For kidney we combined 585 samples from four distinct sequencing projects, covering Kidney Clear Cell, Kidney Papillary and Kidney Chromophobe carcinomas.
 
-Matching our findings in brain, 5hmC sites were mutated significantly less frequently than 5mC sites in both tissue types (
+Matching our findings in brain, 5hmC sites were mutated significantly less frequently than 5mC sites in both tissue types (Figure 6B), irrespective of whether genome or exome sequencing data were used. Moreover, a similar difference was present in all available replicates of the BS-Seq and TAB-Seq measurements (6 for blood, 2 for kidney, Figure 6—figure supplement 1A).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig6-v4.jpg)
 
-**Figure 6.:** (A) Predictions of CpG>T mutation frequency in whole genome cancers in blood (AML), kidney and brain using 5hmCrel maps from blood, kidney, brain and embryonic stem cells (ESC) in 100 kbp genomic windows. The values are z-score normalised per rows in order to normalise for different number of patients and mutations in each cancer type (the original D2 values are in parentheses); the higher values of D2 (green), the better predictions. (B) CpG>T mutation frequency in 5mC vs. 5hmC in kidney and blood. (C) Correlation of total 5hmCrel levels (measured with HPLC) with frequency of CpG>T mutations in modified cytosines normalised by the frequency in unmodified cytosines in different tissues (see Materials and methods).DOI: http://dx.doi.org/10.7554/eLife.17082.017
+**Figure 6.:** (A) Predictions of CpG>T mutation frequency in whole genome cancers in blood (AML), kidney and brain using 5hmCrel maps from blood, kidney, brain and embryonic stem cells (ESC) in 100 kbp genomic windows. The values are z-score normalised per rows in order to normalise for different number of patients and mutations in each cancer type (the original D2 values are in parentheses); the higher values of D2 (green), the better predictions. (B) CpG>T mutation frequency in 5mC vs. 5hmC in kidney and blood. (C) Correlation of total 5hmCrel levels (measured with HPLC) with frequency of CpG>T mutations in modified cytosines normalised by the frequency in unmodified cytosines in different tissues (see Materials and methods).
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig6-figsupp1-v4.jpg)
 
-**Figure 6—figure supplement 1.:** (A) CpG>T mutation frequency in 5mC compared to 5hmC in blood and kidney using modification maps from different replicates merged together (A) and used separately (B). (C) Predictions of CpG>T mutation frequency in whole genome cancers in blood (AML), kidney and brain using different replicates of 5hmCrel maps from blood, kidney, brain and embryonic stem cells (ESC) in 100 kbp genomic windows. The values are z-score normalised per rows in order to normalise for different number of patients and mutations in each cancer type (the original D2 values are in parentheses); the higher values of D2 (green colour), the better predictions.DOI: http://dx.doi.org/10.7554/eLife.17082.018
+**Figure 6—figure supplement 1.:** (A) CpG>T mutation frequency in 5mC compared to 5hmC in blood and kidney using modification maps from different replicates merged together (A) and used separately (B). (C) Predictions of CpG>T mutation frequency in whole genome cancers in blood (AML), kidney and brain using different replicates of 5hmCrel maps from blood, kidney, brain and embryonic stem cells (ESC) in 100 kbp genomic windows. The values are z-score normalised per rows in order to normalise for different number of patients and mutations in each cancer type (the original D2 values are in parentheses); the higher values of D2 (green colour), the better predictions.
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig6-figsupp2-v4.jpg)
 
-**Figure 6—figure supplement 2.:** Distribution of 5hmC values in each map and Pearson correlation of pairs of maps.DOI: http://dx.doi.org/10.7554/eLife.17082.019
+**Figure 6—figure supplement 2.:** Distribution of 5hmC values in each map and Pearson correlation of pairs of maps.
 
 ![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/17082/elife-17082-fig6-figsupp3-v4.jpg)
 
-**Figure 6—figure supplement 3.:** Average values with standard deviation of 5mC and 5hmC (as a percentage of total cytosine).DOI: http://dx.doi.org/10.7554/eLife.17082.020
+**Figure 6—figure supplement 3.:** Average values with standard deviation of 5mC and 5hmC (as a percentage of total cytosine).
 
 Genomic distribution of 5hmC differs substantially between the three tissue types (Figure 6—figure supplement 2). Consequently, we expected the association between mutation frequency and 5hmC to be highest when mutation and modification data are derived from matching tissue types. To test this hypothesis, we used a GLM on genomic windows of 100 kbp to predict CpG>T mutation rate from a combination of 5hmCrel maps of all three tissues. Strikingly, for each cancer type, the best predictor came from the same tissue type (Figure 6A), suggesting that tissue differences in 5hmC are reflected in the CpG>T mutation landscape. The same results were obtained in all available replicates of the 5hmCrel maps (Figure 6—figure supplement 1B). Finally, we added a 5hmCrel map derived from embryonic stem cells (ESC) as an additional predictor, to compare our findings to previously reported results (Supek et al., 2014). As we anticipated, the ESC-derived 5hmC levels have substantially lower predictive power on CpG>T mutation rate than any of the tissue-derived maps.
 
@@ -183,15 +181,15 @@ The strong correlation between relative 5hmC levels in a tissue and the mutabili
 
 ## Materials and methods
 
-## Code
+### Code
 
 Most of the analyses were performed using Matlab. Code and other required files are available on Figshare under doi 10.6084/m9.figshare.c.3249394 (Tomkova et al., 2016).
 
-## Mutation data
+### Mutation data
 
 Cancer somatic mutations (see Supplementary file 1b) were obtained from a dataset compiled by Alexandrov et al. (2013), complemented with whole genome samples from ICGC, (Wang et al., 2014), and TCGA. Briefly, aligned reads for 49 AML tumour and normal samples were downloaded from the UCSC CGHub website under TCGA access request #10140. Somatic variants were called using Strelka (Saunders et al., 2012) with default parameters. All variants were classified by the pyrimidine of the mutated Watson-Crick base pair (C or T) and the immediate 5’ and 3’ sequence context into 96 possible mutation types as described by Alexandrov et al. (2013).
 
-## Modification data
+### Modification data
 
 DNA modification information (see Supplementary file 1a) for brain was extracted from supplementary information provided by Wen et al. (2014). Only sites with more than 5 TAB-Seq reads were taken into account. 5hmChigh and 5mChigh sites were defined based on values of mod level (unconverted/total BS-Seq reads) and 5hmC level (unconverted/total TAB-Seq reads) per site:
 
@@ -199,48 +197,56 @@ Effects of the choice of both thresholds were explored and then the values of th
 
 To compute the number of modified sites inside the exome, the reference Illumina Truseq definition of exon loci was downloaded from the Illumina website. Overlapping exons were merged using bedtools so that each genomic site is covered by at most one exon. Two-sided paired Wilcoxon signed-rank test was used for testing significance between mutation frequency of 5mChigh and 5hmChigh sites. The same test was used for all the following statistics, if not stated otherwise.
 
-## Gene expression data
+### Gene expression data
 
 Gene expression (in FPKM) from RNAseq experiments on 630 brain tissue samples were downloaded from the GTEx human tissue expression project (http://www.gtexportal.org/home/).
 
-## Visualisation on genome
+### Visualisation on genome
 
 The following genomic features were computed in 100 kbp windows: average 5hmC, 5mC, 5hmCrel (all from the supplementary information provided by Wen et al. (2014), i.e. mod ≥ 10%), average log(1 + gene expression), gene density, exon density, CpG density, modCpG density, CpG island (CGI) density, and average modification level (from raw BS-Seq reads). These features and CpG>T mutation frequency (from MDB and PA whole-genome sequencing datasets) were z-score normalised and plotted per chromosome after Gaussian smoothing with parameters n = 50, sigma = 2.5.
 
-## Mutation frequency in highly and lowly expressed genes
+### Mutation frequency in highly and lowly expressed genes
 
 Genes were sorted according to their median expression values. The upper 50-percentile (9701 genes) were classified as highly expressed, the rest as lowly expressed. Introns were included only for whole genome samples.
 
-## Pairing of 5mC and 5hmC sites
+### Pairing of 5mC and 5hmC sites
 
 For each 5hmChigh site in random order, the nearest not previously selected 5mChigh site was selected such that the 5mC-5hmC pair fulfilled the following conditions: both 5hmChigh and 5mChigh sites are inside an exon or both are outside exons, and both share the same context (CG, CHG, and CHH, where H is T, A or C). This resulted in 6801374 pairs with a median distance of 1 and 25th and 75th quantiles of -177 and +177, respectively.
 
-## Mutation frequency around aligned 5mC and 5hmC
+### Mutation frequency around aligned 5mC and 5hmC
 
 Modified sites with no other modifications in a 2 kb radius were selected (374000 sites with 5mC and the same number of 5hmC sites), and the mutation frequency up to 2 kbp upstream and downstream (in bins without other modifications) was plotted.
 
-## Gradients analysis
+### Gradients analysis
 
 All modified cytosines (i.e., mod level > 10%) in the CpG context were divided into 9 right-open intervals according to their ratio of 5hmC level to mod level. The leftmost bin contained cytosines where the major modification is 5mC, while the rightmost bin contained cytosines where the major modification is 5hmC. In each bin, the frequency of mutations was computed and plotted. A linear regression model was fitted to the data (function fitlm in Matlab) and the significance of the linear coefficient was tested using F-test for the hypothesis that the regression coefficient is zero (function coefTest in Matlab). For gradients with equal binning each interval contained approximately the same number of sites (apart from the first bin, which included all values with 5hmCrel=0).
 
-## Prediction of mutation frequency in genomic windows
+### Prediction of mutation frequency in genomic windows
 
 CpG>T mutation frequency (response variable) and genomic features (predictors; same as above in Visualisation on genome) were computed in genomic windows of sizes 3 kbp–3 Mbp. Then a generalised linear model (fitglm) assuming Poisson distribution of the response variable was fitted with a linear model specification (i.e., intercept + linear term for each predictor) and DispersionFlag set to true. Model fits were compared in terms of D2 and p-value (model.devianceTest), as recommended, e.g., in Guisan and Zimmermann (2000), Mittlböck and Heinzl (2004).
 
-## Simulation of effects of number of patients on GLM
+### Simulation of effects of number of patients on GLM
 
-Each chromosome was split into windows of a given window size. For each window, all CpG sites were counted. A random predictor was generated in each window with a beta distribution (Beta(3,4)). For each patient, a random number of mutations in each window was generated asBinomial((n=windowSize(iWindow), p= predictor(iWindow)coefficient)
+Each chromosome was split into windows of a given window size. For each window, all CpG sites were counted. A random predictor was generated in each window with a beta distribution (Beta(3,4)). For each patient, a random number of mutations in each window was generated as
 
-where:coefficient= ∑iWindowwindowSize(iWindow)*predictor(iWindow)174
+$$
+Binomial((n=windowSize(iWindow), p= \frac{predictor(iWindow)}{coefficient})
+$$
+
+where:
+
+$$
+coefficient= \frac{\sum_{iWindow}windowSize(iWindow)*predictor(iWindow)}{174}
+$$
 
 The coefficient was set so that the expected total number of mutations per patient summed to 174, the observed average number of CpG>T mutations in brain WGS data. The response variable was set as the average CpG>T mutation frequency over all patients. A GLM was fit on the given predictor and response variable and D2 was measured. The process was repeated 10 times for each combination of window size and number of patients.
 
-## Gene-wise prediction of mutation frequency
+### Gene-wise prediction of mutation frequency
 
 Mutation frequency was modelled with two predictor variables: average 5hmCrel per gene and loge-transformed gene expression. The following response variables computed in exons of each gene were compared:
 
 Genes with missing values in at least one of the predictors and genes classified as outliers in at least one response variable were excluded from the analysis. Outliers were classified in the following way: y ≥ quantile(y, 0.999) + 2.5 * (quantile(y, 0.999) – quantile(y, 0.001)). Out of 17,605 genes, 10 were classified and removed as outliers: ASPN, BBOX1, CCL4, ESPN, FOLH1, HLA-DPB1, IDH1, NLRP6, S100P, and TP53. The same GLM model as above was used. To calculate the relative contribution of one predictor variable over the other, two models were fitted with either one or both predictor variables and the difference in D2 was used.
 
-## HPLC measurements of total 5hmC and 5mC in eight tissues
+### HPLC measurements of total 5hmC and 5mC in eight tissues
 
 10μg of genomic DNA (amsbio; D1234003, D1234004, D1234035, D1234086, D1234090, D1234122, D1234142, D1234148, D1234149, D1234152, D1234171, D1234188, D1234200, D1234206, D1234226, D1234227, D1234246, D1234248, D1234260, D1234274, HG-101) was treated with 1U RNase A (Thermo Scientific), purified by phenol chloroform ethanol precipitation and incubated overnight in hydrolysis solution (45 mM NaCl, 9 mM MgCl2, 9 mM Tris pH 7.9, ≥250 U/ml Benzonase (sigma), 50 mU/ml Phosphodiesterase I, ≥20 U/ml Alkaline phosphatase, 46.8 ng/ml EHNA hydrochloride, 8.64 µM deferoxamine). Protein components were removed by centrifugation through Amicon centrifugal filter unit (3 kDa cut-off, Millipore) before samples were lyophilised and resuspended in buffer A. Nucleosides were resolved with an Agilent UHPLC 1290 instrument fitted with Eclipse Plus C18 RRHD 1.8 μm (2.1 × 150 mm column) and detected and quantified with Agilent 1290 DAD fitted with a Max-Light 60 mm cell. Buffer A was 100 mM ammonium acetate, pH 6.5; buffer B was 40% acetonitrile, and the flow rate 0.4 ml min−1. The gradient was between 1.8–100% of 40% acetonitrile with the following steps: 1–2 min, 100% A; 2–16 min 98.2% A, 1.8% B; 16–18 min 70% A, 30% B; 18–20 min 50% A, 50% B; 20–21.5 min 25% A, 75% B; 21.5–22.5 min 100% B; 22.5–24.5 min 100% A. Relative abundance of 5mC and 5hmC were established by detection of adenosine at 280nm allowing determination of total cytosine by extinction coefficient calculation using standards.

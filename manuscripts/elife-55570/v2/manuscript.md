@@ -41,13 +41,13 @@ The central aim of our analysis is to assess the expected effectiveness of scree
 
 ## Results
 
-## Model for COVID-19 screening
+### Model for COVID-19 screening
 
 The core model has been described previously (Gostic et al., 2015), but to summarize briefly, it assumes infected travellers can be detained due to the presence of detectable symptoms (fever or cough), or due to self-reporting of exposure risk via questionnaires or interviews. These assumptions are consistent with WHO traveller screening guidelines (World Health Organization, 2020b; World Health Organization, 2020c). Upon screening, travellers fall into one of four categories: (1) symptomatic but not aware of exposure risk, (2) aware of exposure risk but without detectable symptoms, (3) symptomatic and aware that exposure may have occurred, and (4) neither symptomatic nor aware of exposure risk (Figure 1). Travellers in the final category are fundamentally undetectable, and travellers in the second category are only detectable if aware that they have been exposed and willing to self report.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/55570/elife-55570-fig1-v2.jpg)
 
-**Figure 1.:** Gostic et al. (2015).Infected travellers fall into one of five categories: (A) Cases aware of exposure risk and with fever or cough are detectable in both symptom screening and questionnaire-based risk screening. (B) Cases aware of exposure risk, but without fever or cough are only detectable using risk screening. (C) Cases with fever or cough, but unaware of exposure to SARS-CoV-2 are only detectable in symptom screening. (D–E) Subclinical cases who are unaware of exposure risk, and individuals that evade screening, are fundamentally undetectable.
+**Figure 1.:** Infected travellers fall into one of five categories: (A) Cases aware of exposure risk and with fever or cough are detectable in both symptom screening and questionnaire-based risk screening. (B) Cases aware of exposure risk, but without fever or cough are only detectable using risk screening. (C) Cases with fever or cough, but unaware of exposure to SARS-CoV-2 are only detectable in symptom screening. (D–E) Subclinical cases who are unaware of exposure risk, and individuals that evade screening, are fundamentally undetectable.
 
 In the model, screening for symptoms occurs prior to questionnaire-based screening for exposure risk, and detected cases do not progress to the next stage. This allows us to track the fraction of cases detected using symptom screening or risk screening at arrival or departure. Additionally, building on the four detectability classes explained above, the model keeps track of four ways in which screening can miss infected travellers: (1) due to imperfect sensitivity, symptom screening may fail to detect symptoms in travellers that display symptoms; (2) questionnaires may fail to detect exposure risk in travellers aware they have been exposed, owing to deliberate obfuscation or misunderstanding; (3) screening may fail to detect both symptoms and known exposure risk in travellers who have both and (4) travellers not exhibiting symptoms and with no knowledge of their exposure are fundamentally undetectable. Here, we only consider infected travellers who submit to screening. However, the supplementary app allows users to consider scenarios in which some fraction of infected travellers intentionally evade screening (Figure 1E).
 
@@ -55,39 +55,135 @@ The probability that an infected person is detectable in a screening program dep
 
 We used methods described previously to estimate the distribution of individual times since exposure in a growing or stable epidemic, given various values of the reproductive number R0 (Gostic et al., 2015). Briefly, early in the epidemic when the number of cases is still growing, the model draws on epidemiological theory to assume that the fraction of cases who are recently exposed increases with R0. The distribution of times since exposure is truncated at a maximum value, which corresponds epidemiologically to the maximum time from exposure to patient isolation, after which point we assume cases will not attempt to travel. (Isolation may occur due to hospitalization, or due to confinement at home in response to escalating symptoms or COVID-19 diagnosis. In the non-travel context, this would correspond to cases that have been hospitalized or otherwise diagnosed and isolated.) Here, we approximate the maximum time from exposure to isolation as the sum of the mean incubation time, and mean time from onset to isolation. To consider the epidemiological context of a stable epidemic in the source population we assume times since exposure follow a uniform distribution across the time period between exposure and isolation.
 
-## Parameters, uncertainty and sensitivity analyses
+### Parameters, uncertainty and sensitivity analyses
 
 As of February 20, 2020, COVID-19-specific estimates are available for most parameters, but many have been derived from limited or preliminary data and remain subject to considerable uncertainty. Table 1 and the Methods summarize the current state of knowledge. Here, we used two distinct approaches to incorporate parameter uncertainty into our analysis.
+
+**Table 1.**
+ Parameter values estimated in currently available studies, along with accompanying uncertainties and assumptions.Ranges in the final column reflect confidence interval, credible interval, standard error or range reported by each study referenced.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Best estimate (Used in Figure 2)</th>
+      <th>Plausible range (Used in Figure 3)</th>
+      <th>References and notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mean incubation period</td>
+      <td>5.5 days Sensitivity: 4.5 or 6.5 days</td>
+      <td>4.5–6.5 days</td>
+      <td rowspan="2">3–6 days, n = 4 (Chan et al., 2020)* 5.2 (4.1–7.0) days, n &lt; 425 (Li et al., 2020)† 5.2 (4.4–6.0) days, n = 101 (Lauer et al., 2020)† 6.5 (5.6–7.9) days, n = 88 (Backer et al., 2020)†</td>
+    </tr>
+    <tr>
+      <td>Incubation period distribution</td>
+      <td colspan="2">Gamma distribution with mean as above, and standard deviation = 2.25</td>
+    </tr>
+    <tr>
+      <td>Percent of cases subclinical (No fever or cough)</td>
+      <td colspan="2">Best case scenario: 5% Middle case scenario: 25% Worst case scenario: 50%</td>
+      <td>Clinical data: 83% fever, 67% cough, n = 6 (Chan et al., 2020) 83% fever, 82% cough, n = 99 (Chen et al., 2020) 98% fever, 76% cough, n = 41 (Huang et al., 2020) 43.8% fever at hospital admission, 88.7% fever during hospitalization, n = 1099 (Guan et al., 2020) Active monitoring after repatriation flights or on cruise ships: % asymptomatic at diagnosis 31.2% (111/355) (Japan Ministry of Health, Labor and Welfare, 2020) 65.2% (5 of 8) (Nishiura et al., 2020) 70.0% (7 of 10) (Dorigatti et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>R0</td>
+      <td>No effect in individual-level analysis.</td>
+      <td>1.5–4.0</td>
+      <td>2.2 (1.4–3.8) (Riou and Althaus, 2020) 2.2 (1.4–3.9) (Li et al., 2020) 2.6 (1.5–3.5) (Imai et al., 2020) 2.7 (2.5–2.9) (Wu et al., 2020) 4.5 (4.4-4.6) (Liu et al., 2020) 3.8 (3.6-4.0) (Read et al., 2020) 4.08 (3.37–4.77) (Cao et al., 2020) 4.7 (2.8–7.6) (Sanche et al., 2020) 6.3 (3.3-11.3) (Sanche et al., 2020) 6.47 (5.71–7.23) (Tang et al., 2020)</td>
+    </tr>
+    <tr>
+      <td>Percent of travellers aware of exposure risk</td>
+      <td>20%</td>
+      <td>5–40%</td>
+      <td>We assume a low percentage, as no specific risk factors have been identified, and known times or sources of exposure are rarely reported in existing line lists.</td>
+    </tr>
+    <tr>
+      <td>Sensitivity of infrared thermal scanners for fever</td>
+      <td>70%</td>
+      <td>60–90%</td>
+      <td>Most studies estimated sensitivity between 60–88% (Bitar et al., 2009; Priest et al., 2011; Tay et al., 2015). But a handful of studies estimated very low sensitivity (4–30%). In general, sensitivity depended on the device used, body area targeted and ambient temperature.</td>
+    </tr>
+    <tr>
+      <td>Probability that travellers self-report exposure risk</td>
+      <td>25%</td>
+      <td>5–25%</td>
+      <td>25% is an upper-bound estimate based on outcomes of past screening initiatives. (Gostic et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Time from symptom onset to patient isolation (After which we assume travel is not possible)</td>
+      <td>No effect in individual-level analysis.</td>
+      <td>3–7 days</td>
+      <td>Median 7 days from onset to hospitalization (n = 6) (Chan et al., 2020) Mean 2.9 days onset to patient isolation (n = 164) (Liu et al., 2020) Median 7 days from onset to hospitalization (n = 41) (Huang et al., 2020) As awareness increases, times to isolation may decline.</td>
+    </tr>
+  </tbody>
+</table>
+
+_* From family cluster.† Parametric distributions fit to cases with known dates of exposure or travel to and from Wuhan._
 
 First, to estimate the probability that an infected individual would be detected or missed we considered a range of plausible values for the mean incubation time, and the fraction of subclinical cases. We focus on the incubation period and subclinical fraction of cases because screening outcomes are particularly sensitive to their values. All other parameters were fixed to the best available estimates listed in Table 1.
 
 Second, we considered a population of infected travellers, each with a unique time of exposure, and in turn a unique probability of having progressed to the symptomatic stage. Here, the model used a resampling-based approach to simultaneously consider uncertainty from both stochasticity in any single individual’s screening outcome, and uncertainty as to the true underlying natural history parameters driving the epidemic. Details are provided in the methods, but briefly, we constructed 1000 candidate parameter sets, drawn using Latin hypercube sampling from plausible ranges for each parameter (Table 1). Using each parameter set, we simulated one set of screening outcomes for a population of 30 infected individuals. As of February 20, 2020, 30 approximates the maximum known number of cases imported to any single country (World Health Organization, 2020b), and thus our analysis incorporates a reasonable degree of binomial uncertainty. The actual number of infected travellers passing through screening in any given location may be higher or lower than 30, and will depend on patterns of global connectivity, and on the duration of the source epidemic (Chinazzi et al., 2020; de Salazar et al., 2020). Finally, we analysed the sensitivity of screening effectiveness (fraction of travellers detected) to each parameter, as measured by the partial rank correlation coefficient (PRCC) (Marino et al., 2008).
 
-## Individual probabilities of detection
+### Individual probabilities of detection
 
 First, the model estimated the probability that any single infected individual would be detected by screening as a function of the time between exposure and the initiation of travel (Figure 2). Incubation time is a crucial driver of traveller screening effectiveness; infected people are most likely to travel before the onset of symptoms. Here we considered three mean incubation times, which together span the range of most existing mean estimates: 4.5, 5.5 and 6.5 days (Table 1). Additionally, we considered three possible fractions of subclinical cases: 50% represents a worst-case upper bound, 5% represents a best-case lower bound, and 25% represents a plausible middle case. (Table 1, Materials and methods). Since resubmission, a new delay-adjusted estimate indicates that 34.6% of infections are asymptomatic (Mizumoto et al., 2020), intermediate between our middle and worst-case scenarios.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/55570/elife-55570-fig2-v2.jpg)
+
+**Figure 2.:** Columns show three possible mean incubation periods, and rows show best-case, middle-case and worst-case estimates of the fraction of subclinical cases. Here, we assume screening occurs at both arrival and departure; see Figure 2—figure supplement 1 and Figure 2—figure supplement 2 for departure or arrival screening only. The black dashed lines separate detected cases (below) from missed cases (above). Here, we assume flight duration = 24 hr, the probability that an individual is aware of exposure risk is 0.2, the sensitivity of fever scanners is 0.7, and the probability that an individual will truthfully self-report on risk questionnaires is 0.25. Table 1 lists all other input values.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55570/elife-55570-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55570/elife-55570-fig2-figsupp2-v2.jpg)
 
 Even within the narrow range tested, screening outcomes were sensitive to the incubation period mean. For longer incubation periods, we found that larger proportions of departing travellers would not yet be exhibiting symptoms – either at departure or arrival – which in turn reduced the probability that screening would detect these cases, especially since we assume few infected travellers will realize they have been exposed to COVID-19.
 
 A second crucial uncertainty is the proportion of subclinical cases, which lack detectable fever or cough even after the onset of symptoms. We considered scenarios in which 5%, 25% and 50% of cases are subclinical, representing a best, middle and worst-case scenario, respectively. The middle and worst-case scenarios have predictable and discouraging consequences for the effectiveness of traveller screening, since they render large fractions of the population undetectable by fever screening (Figure 2). Furthermore, subclinical cases who are unaware of their exposure risk are never detectable, by any means. This is manifested as the bright red ‘undetectable’ region which persists well beyond the mean incubation period. For a screening program combining departure and arrival screening, as shown in Figure 2, the greatest contributor to case detection is the departure fever screen. The arrival fever screen is the next greatest contributor, with its value arising from two factors: the potential to detect cases whose symptom onset occurred during travel, and the potential to catch cases missed due to imperfect instrument sensitivity in non-contact infrared thermal scanners used in traveller screening (Table 1). Considering the effectiveness of departure or arrival screening only (Figure 2—figures supplement 1, 2), we see that fever screening is the dominant contributor in each case, but that the risk of missing infected travellers due to undetected fever is substantially higher when there is no redundancy from two successive screenings.
 
-## Overall screening effectiveness in a population of infected travellers during a growing or stable epidemic
+### Overall screening effectiveness in a population of infected travellers during a growing or stable epidemic
 
 Next we estimated the overall effectiveness of different screening programs, as well as the uncertainties arising from the current partial state of knowledge about this recently-emerged virus. We modeled plausible population-level outcomes by tracking the fraction of 30 infected travellers detained, given a growing or stable epidemic and current uncertainty around parameter values. We separately consider the best, middle and worst-case scenarios for the proportion of infections that are subclinical, and for each scenario we compare the impact of departure screening only (or equivalently, any on-the-spot screening), arrival screening only, or programs that include both.
 
 The striking finding is that in a growing epidemic, even under the best-case assumptions, with just one infection in twenty being subclinical and all travellers passing through departure and arrival screening, the median fraction of infected travellers detected is only 0.30, with 95% interval extending from 0.10 up to 0.53 (Figure 3A). The total fraction detected is lower for programs with only one layer of screening, with arrival screening preferable to departure screening owing to the possibility of symptom onset during travel. Considering higher proportions of subclinical cases, the overall effectiveness of screening programs is further degraded, with a median of just one in ten infected travellers detected by departure screening in the worst-case scenario. The key driver of these poor outcomes is that even in the best-case scenario, nearly two thirds of infected travellers will not be detectable (as shown by the red regions in Figure 3B). There are three drivers of this outcome: (1) in a growing epidemic, the majority of travellers will have been recently infected and hence will not yet have progressed to exhibit any symptoms; (2) we assume that a fraction of cases never develop detectable symptoms; and (3) we assume that few people are aware of their exposure risk. As above, the dominant contributor to successful detections is fever screening.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/55570/elife-55570-fig3-v2.jpg)
+
+**Figure 3.:** (A) Violin plots of the fraction of infected travellers detected, accounting for current uncertainties by running 1000 simulations using parameter sets randomly drawn from the ranges shown in Table 1. Dots and vertical line segments show the median and central 95%, respectively. Text above each violin shows the median and central 95% fraction detected. (B) Mean fraction of travellers with each screening outcome. The black dashed lines separate detected cases (below) from missed cases (above). (C) Fraction of simulations in which screening successfully detects at least n cases before the first infected traveller is missed.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55570/elife-55570-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A-C) are as dscribed in Figure 3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55570/elife-55570-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Each line shows the probability density function of the gamma distribution with different plausible means and a standard deviation of 2.25. The parameter values were picked based on the best-fit gamma distributions reported in Backer et al. (2020) and Lauer et al. (2020).
+
 In an epidemic that is no longer growing (Figure 3—figures supplement 1), screening effectiveness is considerably higher, as a lower proportion of travellers will be recently exposed. This is shown by the smaller, red ‘undetectable’ region in Figure 3—figures supplement 1B. In a stable epidemic, under the middle-case assumption that 25% of cases are subclinical, we estimate that arrival screening alone would detect roughly one third (17–53%) of infected travelers, and that a combination of arrival and departure screening would detect nearly half (23–63%) of infected travellers. In short, holding all other things equal, screening effectiveness will increase as the source epidemic transitions from growing to stable, owing simply to changes in the distribution of ‘infection ages,’ or times since exposure.
 
 To assess the potential for screening to delay introduction of undiagnosed cases, we evaluated the fraction of simulations in which screening during a growing epidemic would detect the first n or more infected travellers (Figure 3C). Depending on the screening strategy (arrival, departure or both) and assumed subclinical fraction (5%, 25%, or 50%), the probability of detecting at least the first two cases ranged from 0.02 to 0.11, and the probability of detecting three or more cases was never better than 0.04 (Figure 3C). In all tested scenarios, more than half of simulations failed to detect the first imported case, consistent with probabilities of case detection in Figure 3A. Probabilities of detecting the first n consecutive cases were marginally higher in the stable epidemic context (Figure 3—figures supplement 1), but still the probability of detecting at least the first three cases was never better than 0.13, and the probability of detecting the first four cases was never better than 0.06 in any tested scenario. Taken together, these results indicate that screening in any context is very unlikely to delay case importation beyond the first 1–3 cases, and often will not delay the first importation at all. What duration of delay this yields will depend on the frequency of infected travellers.
 
-## Sensitivity analysis
+### Sensitivity analysis
 
 In the context of a growing epidemic, sensitivity analysis using the method of Latin hypercube sampling and partial rank correlation (Marino et al., 2008) showed that the fraction of travellers detected was moderately sensitive to all parameters considered -- most coefficient estimates fell between 0.1 and 0.3 in absolute value (Figure 4). Sensitivity to R0 was somewhat higher than sensitivity to other parameters, but the difference was not statistically remarkable. R0 and the mean incubation period were negatively associated with the fraction of cases detected. An increase in either of these parameters implies an increase in the probability an infected traveller will be undetectable, either because they have been recently exposed (R0), or have not yet progressed to the symptomatic stage (mean incubation time). The positive association between the fraction of cases detected and the sensitivity of thermal scanners, sensitivity of risk questionnaires, or the fraction of travellers aware of exposure risk is intuitive. Finally, the duration from onset to isolation effectively describes the window of time in which we assume a symptomatic individual could initiate travel. Here, a wider window is associated with increased screening effectiveness, because it will lead to a higher proportion of infected travellers who are symptomatic. Figure 4 shows results from the middle case scenario, in which 25% of cases are subclinical. Considering scenarios where more or fewer cases are subclinical, we see increased influence of the factors based on exposure risk (questionnaire sensitivity and the fraction of cases aware of their exposure) as the proportion of cases with detectable symptoms declines (Figure 4—figures supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/55570/elife-55570-fig4-v2.jpg)
+
+**Figure 4.:** Outcomes were obtained from 1000 simulations, each using a candidate parameter sets drawn using Latin hypercube sampling. Text shows PRCC estimate, and * indicates statistical significance after Bonferroni correction (threshold = 9e-4 for 54 comparisons).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55570/elife-55570-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (Middle panel is identical to Figure 4, but repeated for ease of comparison).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/55570/elife-55570-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** By construction, R0 has no impact in a flat epidemic. Small PRCC estimates for R0 arise from stochasticity in simulated outcomes, but are never significantly different from zero.
+
 In the context of a stable epidemic, a greater proportion of infected travellers will have progressed to show detectable symptoms, and so screening effectiveness was more sensitive to parameters that impact symptom screening efficacy (thermal scanner sensitivity, and to the time from symptom onset to isolation). Note that by construction, model outcomes are insensitive to parameter R0 in the stable epidemic context. As a result, R0 coefficient estimates are very small (non-zero due to stochasticity in simulation outcomes), and never significant. (Figure 4—figures supplement 2).
 
-## Interactive online app for public use
+### Interactive online app for public use
 
 We have developed an interactive web application using the R package Shiny (Chang et al., 2019) in which users can replicate our analyses using parameter inputs that reflect the most up-do-date information. The supplementary user interface can be accessed at https://faculty.eeb.ucla.edu/lloydsmith/screeningmodel. Please note that while the results in Figures 3 and 4 consider a range of plausible values for each parameter, the outputs of the Shiny app are calculated using fixed, user-specified values only.
 
@@ -117,34 +213,34 @@ Our analysis underscores the reality that respiratory viruses are difficult to d
 
 ## Materials and methods
 
-## Modeling strategy
+### Modeling strategy
 
 The model’s structure is summarized above (Figure 1), and detailed methods have been described previously (Gostic et al., 2015). Here, we summarize relevant extensions, assumptions and parameter inputs.
 
-## Extensions
+### Extensions
 
 Our previous model tracked all the ways in which infected travellers can be detected by screening (fever screen, or risk factor screen at arrival or departure). Here, we additionally keep track of the many ways in which infected travellers can be missed (i.e. missed given fever present, missed given exposure risk present, missed given both present, or missed given undetectable). Cases who have not yet passed the incubation period are considered undetectable by fever screening, even if they will eventually develop symptoms in the future. In other words, no traveller is considered ‘missed given fever present’ until they have passed the incubation period and show detectable symptoms. Infected travellers who progress to symptoms during their journey are considered undetectable by departure screening, but detectable by arrival screening.
 
 Additionally, we now provide a supplementary user interface, which allows stakeholders to test input parameters of interest using up-to-date information. Here, in addition to the analyses presented in this study, we implemented the possibility that some fraction of infected travellers deliberately evade screening.
 
-## Basic reproduction number, R0
+### Basic reproduction number, R0
 
 Existing point estimates for R0 span a wide range (2.2–6.47), but most fall between 2.0 and 4.0 (Table 1). The vast majority of these estimates are informed by data collected very early in the outbreak, before any control measures were in place. However, several studies already demostrate decreases in the reproductive number over time, as a consequence of social distancing behaviors, and containment measures (Kucharski et al., 2020; Liu et al., 2020). Realistically, R0 will vary considerably over time, and across locations, depending on the social context, resource availability, and containment policies. Our analysis considers a plausible range of R0 values spanning 1.5–4.0, with 4.0 representing a plausible maximum in the absence of any behavioral changes or containment efforts, and 1.5 reflecting a plausible lower bound, given containment measures may already be in place at the time of introduction.
 
-## Fraction of subclinical cases
+### Fraction of subclinical cases
 
 To estimate the upper-bound fraction of subclinical cases, we draw on data from active surveillance of passengers quarantined on a cruise ship off the coast of Japan, or passengers of repatriation flights. These data show that 50–70% of cases are asymptomatic at the time of diagnosis (Dorigatti et al., 2020; Nishiura et al., 2020; Schnirring, 2020c; Schnirring, 2020b). We estimate that 50% subclinical cases is a reasonable upper bound: due to intensive monitoring, cases in repatriated individuals or in cruise ship passengers will be detected earlier than usual in the course of infection--and possibly before the onset of symptoms. From clinical data (where severe cases are likely overrepresented), we estimate a lower bound of 5%: even among clinically attended cases, 2–15% lack fever or cough, and would be undetectable in symptom screening (Chan et al., 2020; Chen et al., 2020; The Novel Coronavirus Pneumonia Emergency Response Epidemiology Team, 2020; Huang et al., 2020). In addition to the upper and lower bound scenarios, we consider a plausible middle-case scenario in which 25% of cases are subclinical. A very recent delay-adjusted estimate indicates 30-40% of infections on the cruise ship quarantined off the coast of Japan are asymptomatic, so the truth may fall somewhere between our middle and worst-case scenarios (Mizumoto et al., 2020).
 
-## Incubation period distribution
+### Incubation period distribution
 
 We use a gamma distribution to model individual incubation times. We choose this form over the Weibull and lognormal distribution for ease of interpretation (gamma shape and scale parameters can be transformed easily to mean and standard deviation). So far, best-fit gamma distributions to COVID-19 data have had mean 6.5 and standard deviation 2.6 (Backer et al., 2020), or mean 5.46 and standard deviation 1.94 (Lauer et al., 2020). Here, to model uncertainty around the true mean incubation time, we fix the standard deviation to 2.25 (intermediate between the two existing estimates), and allow the mean to vary between 4.5 and 6.5 days (Figure 2—figure supplement 2). The 95th percentile of the distributions we consider fall between 8.7 and 10.6 days, slightly below the officially accepted maximum incubation time of 14 days, and consistent with existing estimates (Table 1; Backer et al., 2020; Lauer et al., 2020).
 
-## Effectiveness of exposure risk questionnaires
+### Effectiveness of exposure risk questionnaires
 
 The probability that an infected traveller is detectable using questionnaire-based screening for exposure risk will be highest if risk factors with high sensitivity and specificity are known. Currently, official guidance recommends asking whether travellers have visited a country with epidemic transmission, a healthcare facility with confirmed cases, or had close contact with a confirmed or suspected case (World Health Organization, 2020c). Given the relative anonymity of respiratory transmission, we assume that a minority of infected travellers would realize that they have been exposed before symptoms develop (20% in Figure 2, range 5–40% in Figure 3). Further, relying on a previous upper-bound estimate (Gostic et al., 2015) we assume that only 25% of travellers would self-report truthfully if aware of elevated exposure risk.
 
 Table 1 summarizes the state of knowledge about additional parameters, as of February 20, 2020.
 
-## Code and data availability
+### Code and data availability
 
 All code and source data used to perform analyses and generate figures is archived at https://github.com/kgostic/traveller_screening/releases/tag/v2.1. (Gostic, 2020; copy archived at https://github.com/elifesciences-publications/traveller_screening).

@@ -36,7 +36,7 @@
 
 ## Abstract
 
-Estrogen receptor alpha (ERα) activation by estrogens prevents atheroma through its nuclear action, whereas plasma membrane-located ERα accelerates endothelial healing. The genetic deficiency of ERα was associated with a reduction in flow-mediated dilation (FMD) in one man. Here, we evaluated ex vivo the role of ERα on FMD of resistance arteries. FMD, but not agonist (acetylcholine, insulin)-mediated dilation, was reduced in male and female mice lacking ERα ( Esr1 -/- mice) compared to wild-type mice and was not dependent on the presence of estrogens. In C451A-ERα mice lacking membrane ERα, not in mice lacking AF2-dependent nuclear ERα actions, FMD was reduced, and restored by antioxidant treatments. Compared to wild-type mice, isolated perfused kidneys of C451A-ERα mice revealed a decreased flow-mediated nitrate production and an increased H 2 O 2 production. Thus, endothelial membrane ERα promotes NO bioavailability through inhibition of oxidative stress and thereby participates in FMD in a ligand-independent manner.
+Estrogen receptor alpha (ERα) activation by estrogens prevents atheroma through its nuclear action, whereas plasma membrane-located ERα accelerates endothelial healing. The genetic deficiency of ERα was associated with a reduction in flow-mediated dilation (FMD) in one man. Here, we evaluated ex vivo the role of ERα on FMD of resistance arteries. FMD, but not agonist (acetylcholine, insulin)-mediated dilation, was reduced in male and female mice lacking ERα (Esr1-/- mice) compared to wild-type mice and was not dependent on the presence of estrogens. In C451A-ERα mice lacking membrane ERα, not in mice lacking AF2-dependent nuclear ERα actions, FMD was reduced, and restored by antioxidant treatments. Compared to wild-type mice, isolated perfused kidneys of C451A-ERα mice revealed a decreased flow-mediated nitrate production and an increased H2O2 production. Thus, endothelial membrane ERα promotes NO bioavailability through inhibition of oxidative stress and thereby participates in FMD in a ligand-independent manner.
 
 ## Introduction
 
@@ -54,13 +54,13 @@ In the present study, we investigated the role of ERα and its different subfunc
 
 ## Results
 
-## FMD is reduced in mice lacking ERα but unaffected by exogenous estrogens
+### FMD is reduced in mice lacking ERα but unaffected by exogenous estrogens
 
 In mice lacking ERα (see the scheme in Figure 1A), FMD was significantly reduced in resistance arteries isolated from male Esr1-/- mice compared to littermate Esr1+/+ mice (Figure 1B). Precontraction prior to FMD (Figure 1C) and arterial diameter (Figure 1D) were not significantly affected by the absence of ERα. Agonist-mediated endothelium-dependent (acetylcholine and insulin) and endothelium-independent (SNP) dilation were not significantly affected by the absence of ERα (Figure 1E–G).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/68695/elife-68695-fig1-v2.jpg)
 
-**Figure 1.:** FMD was measured in mesenteric resistance arteries isolated from male mice lacking ERα (Esr1-/-) and male wild-type littermates (Esr1+/+) (A). (B) FMD was determined in response to stepwise increases in luminal flow in male Esr1-/- and Esr1+/+ mice. (C) Precontraction with phenylephrine (Phe) before measurement of FMD. (D) Basal diameter of the arteries used for FMD measurment. Besides FMD, acetylcholine- (E), insulin- (F), and sodium nitroprusside- (SNP, G) mediated dilation was measured in mesenteric resistance arteries isolated from male Esr1-/- and Esr1+/+ mice. FMD was also measured in wild-type (WT) mice in the presence (20 min incubation) or absence of 17-β-estradiol (E2, 0.01 µmol/L, H), estetrol (E4, 1 µmol/L, H), ICI 182 780 (1 µmol/L, H) and the GPER antagonist G-36 (10 µM, I). (I) G-1 (10 µM)- and E2 (0.01 µM)-mediated dilation in the presence or absence of G-36 (1 µM). FMD was then measured in mesenteric arteries isolated from intact (K) and ovariectomized (OVX, L) female Esr1-/- and Esr1+/+ mice as well as in and uterine arteries from Esr1-/- and Esr1+/+ mice (M). Flow rate rate was 3, 6, 9, 12, 15, 30, and 50 µl/min corresponding to 0.8, 1.2, 2, 2.8, 4, 8, and 12 dyn/cm2. Means ± the SEM are shown (n = 7–18 mice per group). Two-way ANOVA for repeated measurements: p = 0.0072 (interaction: p < 0.0001, B), p = 0.0087 (interaction: p < 0.0001, K), p = 0.0030 (interaction: p < 0.0001, L), p = 0.0119 (interaction: 0.0107, M). NS: two-way ANOVA for repeated measurements, panel E to I. NS: Two-tailed Mann-Whitney test, panels C and D. See source data in Figure 1—source data 1.Figure 1—source data 1.Figure 1B—M.
+**Figure 1.:** FMD was measured in mesenteric resistance arteries isolated from male mice lacking ERα (Esr1-/-) and male wild-type littermates (Esr1+/+) (A). (B) FMD was determined in response to stepwise increases in luminal flow in male Esr1-/- and Esr1+/+ mice. (C) Precontraction with phenylephrine (Phe) before measurement of FMD. (D) Basal diameter of the arteries used for FMD measurment. Besides FMD, acetylcholine- (E), insulin- (F), and sodium nitroprusside- (SNP, G) mediated dilation was measured in mesenteric resistance arteries isolated from male Esr1-/- and Esr1+/+ mice. FMD was also measured in wild-type (WT) mice in the presence (20 min incubation) or absence of 17-β-estradiol (E2, 0.01 µmol/L, H), estetrol (E4, 1 µmol/L, H), ICI 182 780 (1 µmol/L, H) and the GPER antagonist G-36 (10 µM, I). (I) G-1 (10 µM)- and E2 (0.01 µM)-mediated dilation in the presence or absence of G-36 (1 µM). FMD was then measured in mesenteric arteries isolated from intact (K) and ovariectomized (OVX, L) female Esr1-/- and Esr1+/+ mice as well as in and uterine arteries from Esr1-/- and Esr1+/+ mice (M). Flow rate rate was 3, 6, 9, 12, 15, 30, and 50 µl/min corresponding to 0.8, 1.2, 2, 2.8, 4, 8, and 12 dyn/cm2. Means ± the SEM are shown (n = 7–18 mice per group). Two-way ANOVA for repeated measurements: p = 0.0072 (interaction: p < 0.0001, B), p = 0.0087 (interaction: p < 0.0001, K), p = 0.0030 (interaction: p < 0.0001, L), p = 0.0119 (interaction: 0.0107, M). NS: two-way ANOVA for repeated measurements, panel E to I. NS: Two-tailed Mann-Whitney test, panels C and D. See source data in Figure 1—source data 1.
 
 To directly investigate the influence of estrogens on FMD, mesenteric resistance arteries isolated from male WT mice were incubated (20 min) with E2, which activates both membrane-associated and nuclear ERα, or with another natural estrogen, estetrol (E4), which activates only nuclear ERα (Abot et al., 2014). These exogenous estrogens did not affect FMD (Figure 1H). Furthermore, the estrogen receptor downregulator and GPER agonist fulvestrant (ICI-182780) (Meyer et al., 2010; Jacenik et al., 2016) did not alter FMD after 20 min of incubation with isolated arteries (Figure 1H). Similarly, the GPER antagonist G-36 did not alter FMD (Figure 1I) although G-36 inhibited the dilation induced by both E2 and the GPER agonist G-1 (Figure 1J).
 
@@ -70,19 +70,27 @@ FMD was not altered by the inactivation of Esr2, encoding ERβ in mice (Figure 2
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/68695/elife-68695-fig2-v2.jpg)
 
-**Figure 2.:** (A to D) FMD, precontraction, basal diameter and acetylcholine-mediated dilation measured in male mice lacking ERβ (Esr2-/-) and their littermate control (Esr2). (+/+E to H) FMD, precontraction, basal diameter and acetylcholine-mediated dilation measured in TekCre/+:Esr1-/- male mice lacking endothelial ERα (EC-ERα) and TekCre/-:Esr1 their littermate controls (WT). Flow rate rate was 3, 6, 9, 12, 15, 30, and 50 µl/min corresponding to 0.8, 1.2, 2, 2.8, 4, 8, and 12 dyn/cmlox/lox2.+ source data 2. Means ± the SEM are shown (n = 6 or 7 mice per group). Two-way ANOVA for repeated measurements: p = 0.0273 (interaction: p = 0.0069**, E). NS: two-way ANOVA for repeated measurements, panel A, D, and H. NS: two-tailed Mann-Whitney test, B, C, F, and G. Data and analysis in Figure 2—source data 1.Figure 2—source data 1.Figure 2A—H.
+**Figure 2.:** (A to D) FMD, precontraction, basal diameter and acetylcholine-mediated dilation measured in male mice lacking ERβ (Esr2-/-) and their littermate control (Esr2+/+). (E to H) FMD, precontraction, basal diameter and acetylcholine-mediated dilation measured in TekCre/+:Esr1-/- male mice lacking endothelial ERα (EC-ERα) and TekCre/-:Esr1lox/lox their littermate controls (WT). Flow rate rate was 3, 6, 9, 12, 15, 30, and 50 µl/min corresponding to 0.8, 1.2, 2, 2.8, 4, 8, and 12 dyn/cm2.+ source data 2. Means ± the SEM are shown (n = 6 or 7 mice per group). Two-way ANOVA for repeated measurements: p = 0.0273 (interaction: p = 0.0069**, E). NS: two-way ANOVA for repeated measurements, panel A, D, and H. NS: two-tailed Mann-Whitney test, B, C, F, and G. Data and analysis in Figure 2—source data 1.
 
 As FMD depends on the response of the endothelium to shear stress, we next investigated FMD in mice lacking ERα in endothelial cells (TekCre/+: Esr1f/f mice). FMD was reduced in arteries isolated from these mice compared to littermate WT mice (Figure 2E). Arterial precontraction, basal diameter and acetylcholine-mediated dilation were not significantly affected by the absence of endothelial ERα (Figure 2F–H).
 
 Altogether, these results demonstrate a crucial role of ERα in FMD in both males and females and probably in a ligand independent manner. We, therefore, decided to use male mice for the remainder of the study.
 
-## FMD in mice lacking the nuclear activation function 2 (AF2) of ERα
+### FMD in mice lacking the nuclear activation function 2 (AF2) of ERα
 
 As the AF2 nuclear function mediates several protective effects of ERα on the vasculature (Guivarc’h et al., 2018), we first investigated FMD in AF20ERα mice (Figure 3A). The gene expression level of Esr1 (encoding ERα) in endothelial cells was not affected by invalidation of the AF2 function of ERα (Figure 3B). Quality of mRNA endothelial enrichissment was attested using analysis of Tek expression as a marker of endothelial cells and Cnn1 expression as a marker of smooth muscle cells (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/68695/elife-68695-fig3-v2.jpg)
+
+**Figure 3.:** Esr1 expression level in aortic endothelial cells (expression relative to the housekeeping genes Gapdh, Hprt and Gusb), flow-mediated dilation (FMD) acetylcholine-mediated dilation were measured in mesenteric resistance arteries isolated from AF2-WT and AF20ERα male mice (A to D), C451A-WT and C451A-ERα male mice (E to H) and R264A-WT and R264A-ERα male mice (I to L). Means ± the SEM is shown (n = 13 AF20ERα, n = 5 AF2-WT mice, n = 8 C451A-ERα, n = 6 C451A-WT mice, n = 9 R264A-WT and n = 10 R264A-ERα mice). Flow rate rate was 3, 6, 9, 12, 15, 30, and 50 µl/min corresponding to 0.8, 1.2, 2, 2.8, 4, 8, and 12 dyn/cm2. Two-way ANOVA for repeated measurements: panel C, p = 0.2681 (interaction: p = 07302), panel G, p = 0.0114 (interaction: p = 0.002), panel K, p = 0.0015 (interaction: p = 0.0002). Panels D, H, and L: NS. NS, two-tailed Mann-Whitney test (panels B, F and J).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68695/elife-68695-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Data and analysis in Figure 3—figure supplement 1—source data 1.
+
 We observed that FMD was not significantly reduced in mesenteric resistance arteries isolated from AF20ERα male mice compared to littermate AF20WT animals (Figure 3C). Acetylcholine-mediated dilation (Figure 3D) was not altered by loss of the nuclear AF2 function of ERα. Thus, we demonstrated that FMD was preserved despite the loss of AF2 nuclear function of ERα.
 
-## FMD in mice lacking membrane-located ERα effects
+### FMD in mice lacking membrane-located ERα effects
 
 We thus evaluated the role of the membrane ERα in FMD, thanks to two complementary models, C451A-ERα mice[24] and R264A-ERα mice (Adlanmerini et al., 2020), that allowed us to previously investigate the ERα membrane-initiated steroid signaling (MISS) pathway in the accelerative effect of E2 on re-endothelialization following arterial injury and in the acute dilation induced by E2 through rapid eNOS activation.
 
@@ -92,9 +100,17 @@ We then investigated FMD in R264A-ERα male mice that lack the capacity to activ
 
 Thus, we demonstrated that FMD was altered as a consequence of either the inactivation of palmitoylation site of ERα (C451A-ERα mice) or the impairment of the activation of the Gαi protein by ERα (R264A-ERα mice), thus preventing membrane-associated ERα activation of FMD in male mice.
 
-## Role of ERα in the activation of the NO pathway in FMD
+### Role of ERα in the activation of the NO pathway in FMD
 
 As NO produced by endothelial NOS plays a key role in endothelium-dependent dilation and thus in FMD, we investigated the effect of the inhibition of NO synthesis by L-NNA on FMD and acetylcholine-mediated dilation. FMD was significantly reduced by L-NNA in mesenteric resistance arteries of the four groups of littermate WT mice (Figure 4A–D), whereas L-NNA had no significant effect on FMD in Esr1-/- (Figure 4A), C451A-ERα (Figure 4B), and R264A-ERα mice (Figure 4C). In contrast, FMD was reduced to a similar extent by L-NNA in AF20ERα and WT mice (Figure 4D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68695/elife-68695-fig4-v2.jpg)
+
+**Figure 4.:** Flow-mediated dilation (FMD) was determined in pressurized mesenteric resistance arteries isolated from male Esr1+/+ and Esr1-/- (A), C451A-WT and C451A-ERα (B), R264A-WT and R264A-ERα (C), AF20WT and AF20ERα mice (D), before and after addition of the NO synthesis blocker L-NNA (100 µM, 30 min) and then of the combination of L-NNA plus indomethacin (indo, 10 µM, 30 min). Acetylcholine-mediated relaxation was measured in the same groups in the presence and in the absence of L-NNA and of L-NNA plus indomethacin (E to H). Flow rate rate was 3, 6, 9, 12, 15, 30, and 50 µl/min corresponding to 0.8, 1.2, 2, 2.8, 4, 8, and 12 dyn/cm2. Means ± the SEM are shown (n = 6–8 per group). ***p < 0.001, two-way ANOVA for repeated measurements, L-NNA or L-NNA+ indo versus untreated arteries within each group. Data and analysis in Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68695/elife-68695-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Data and analysis in Figure 4—figure supplement 1—source data 1.
 
 L-NNA strongly and similarly reduced acetylcholine-mediated relaxation in Esr1-/- (Figure 4E), C451A-ERα (Figure 4F), R264A-ERα (Figure 4G), AF20ERα (Figure 4H) and the corresponding littermate WT mice (Figure 4E–H), thus showing that the alteration of membrane ERα activation affected selectively the flow-mediated NO-dependent dilation, but not the acetylcholine-mediated NO-dependent dilation. The addition of either the inhibitor of cyclooxygenase indomethacin (Figure 4A–H) or the inhibitor epoxyeicosatrienoic acids (EETs) synthesis MSPPOH (Figure 4—figure supplement 1A–F) did not further reduced FMD or acetylcholine-mediated relaxation in all the groups.
 
@@ -102,31 +118,45 @@ Western-blot analysis of eNOS and phosphorylated eNOS was then performed on isol
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/68695/elife-68695-fig5-v2.jpg)
 
-**Figure 5.:** As illustrated on the scheme shown on the top of the figure, mesenteric resistance arteries were cannulated in vitro on glass micropipettes and perfused with physiological salt solution. Flow (50 µl/min or 12 dyn/cm2) was applied for 2 min before quick freezing of the artery. In control experiments no flow was applied. Western-blot analysis of eNOS, phospho (Ser1177)-eNOS (P-eNOS), Akt, phospho-Akt and β-actin in mesenteric arteries isolated from male C451A-ERα mice (C451A, A to C), R264A-ERα (R264A, D to F), AF20ERα (AF2, G to I) and their littermate control (WT) was then performed. The ratio of P-eNOS / eNOS is shown in A, D and G. The expression level of eNOS/β-actin in unstimulated arteries is shown in B, E and H. The ratio of P-Akt / Akt is shown in C, F and I. Means ± the SEM are shown (n = 6 C451A-WT, n = 9 C451A-ERα, n = 5 R264A-ERα, n = 5 R264A-WT, n = 6 AF20ERα and n = 4 AF2-WT mice). *p < 0.05 (panel C: p = 0.0374, panel D: p = 0.015, panel F: p = 0.0177, panel G: WT, p = 0.0234, AF2, p = 0.0465, panel I: p = 0.0152) and **p < 0.01 (panel A: p = 0.0045), two-tailed Mann-Whitney test. Data and analysis in Figure 5—source data 1.Figure 5—source data 1.Figure 5A–I.Figure 5—source data 2.Figure 5.
+**Figure 5.:** As illustrated on the scheme shown on the top of the figure, mesenteric resistance arteries were cannulated in vitro on glass micropipettes and perfused with physiological salt solution. Flow (50 µl/min or 12 dyn/cm2) was applied for 2 min before quick freezing of the artery. In control experiments no flow was applied. Western-blot analysis of eNOS, phospho (Ser1177)-eNOS (P-eNOS), Akt, phospho-Akt and β-actin in mesenteric arteries isolated from male C451A-ERα mice (C451A, A to C), R264A-ERα (R264A, D to F), AF20ERα (AF2, G to I) and their littermate control (WT) was then performed. The ratio of P-eNOS / eNOS is shown in A, D and G. The expression level of eNOS/β-actin in unstimulated arteries is shown in B, E and H. The ratio of P-Akt / Akt is shown in C, F and I. Means ± the SEM are shown (n = 6 C451A-WT, n = 9 C451A-ERα, n = 5 R264A-ERα, n = 5 R264A-WT, n = 6 AF20ERα and n = 4 AF2-WT mice). *p < 0.05 (panel C: p = 0.0374, panel D: p = 0.015, panel F: p = 0.0177, panel G: WT, p = 0.0234, AF2, p = 0.0465, panel I: p = 0.0152) and **p < 0.01 (panel A: p = 0.0045), two-tailed Mann-Whitney test. Data and analysis in Figure 5—source data 1.
 
 Western-blot analysis of Akt and phosphorylated Akt was then performed on the same samples and a similar pattern was observed (Figure 5C,F,I). All the blots are shown in Figure 5—source data 2.
 
 These results show that the absence of membrane-associated ERα affects flow-mediated eNOS activation pathway, at least in part, by preventing the activation of its upstream activator Akt/PKB.
 
-## Flow-mediated dilation and NO2/NO3 production in the isolated perfused kidney
+### Flow-mediated dilation and NO2/NO3 production in the isolated perfused kidney
 
 As the kidney is a well-known autoregulated organ with a dense microvascular network, we investigated flow-mediated responsiveness in perfused kidneys isolated from C451A-ERα and WT mice (Figure 6A). First, the flow-pressure relationship was shifted leftward in C451A-ERα mice compared to WT mice (Figure 6B), suggesting reduced endothelial responsiveness to flow. Acetylcholine-mediated dilation in perfused kidneys was equivalent in C451A-ERα and WT mice (Figure 6C), suggesting that the response to flow was probably selectively reduced in perfused kidney of C451A-ERα mice, as shown above for the mesenteric artery. Similarly, phenylephrine-mediated contraction was not affected by the absence of membrane-ERα (51.1 ± 2.9 vs 57.4% ± 5.7% contraction, C451A-ERα and WT mice, n = 5 per group, p > 0.9999, Mann-Withney test).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/68695/elife-68695-fig6-v2.jpg)
 
-**Figure 6.:** In the isolated and perfused kidney (A), the flow-pressure relationship was determined in C451A-ERα and WT mice (B). (C) Acetylcholine (1 µM)-mediated relaxation. The levels of nitrate-nitrite (D), ATP (E) and H2O2 (F) level were quantified in the perfusate collected from the kidney. Means ± the SEM are shown (n = 5 C451A-WT and 7 C451A -ERα mice). *p < 0.05, two-way ANOVA for repeated measurements (panel B, C451 vs WT: p = 0.0308 Interaction: p = 0.0008). Two-tailed Mann-Whitney tests (panels C to F: p > 0.999, p = 0.0317, p = 0.0079 and p = 0.0317, respectively). Data and analysis in Figure 6—source data 1.Figure 6—source data 1.Figure 6B–F.
+**Figure 6.:** In the isolated and perfused kidney (A), the flow-pressure relationship was determined in C451A-ERα and WT mice (B). (C) Acetylcholine (1 µM)-mediated relaxation. The levels of nitrate-nitrite (D), ATP (E) and H2O2 (F) level were quantified in the perfusate collected from the kidney. Means ± the SEM are shown (n = 5 C451A-WT and 7 C451A -ERα mice). *p < 0.05, two-way ANOVA for repeated measurements (panel B, C451 vs WT: p = 0.0308 Interaction: p = 0.0008). Two-tailed Mann-Whitney tests (panels C to F: p > 0.999, p = 0.0317, p = 0.0079 and p = 0.0317, respectively). Data and analysis in Figure 6—source data 1.
 
 Then, we measured nitrate and nitrite concentration in the kidney perfusate and found that it was reduced in C451A-ERα compared to WT mice (Figure 6D). Interestingly, ATP production measured in the kidney perfusate was also reduced in C451A-ERα mice (Figure 6E) whereas H2O2 production was higher in C451A-ERα than in WT mice (Figure 6F).
 
 Thus, these results suggest that FMD reduction due to the absence of membrane-ERα also affects the capacity of the renal vasculature to produce NO and ATP, whereas the increased H2O2 production suggests an excessive oxidative stress in response to flow in C451A-ERα mice.
 
-## Loss of membrane-associated ERα did not affect gene expression
+### Loss of membrane-associated ERα did not affect gene expression
 
 Finally, we analyzed in mesenteric resistance arteries the expression of 44 genes that may be involved in the rapid endothelial response to acute changes in flow (FMD). No significant difference was observed between C451A-ERα and WT mice (Figure 7—figure supplements 1 and 2), in line with the prominent or even exclusive role of rapid, non genomic, membrane-ERα.
 
-## Acute pharmacological ROS reduction restored FMD in C451A-ERα mice
+### Acute pharmacological ROS reduction restored FMD in C451A-ERα mice
 
 As the production of H2O2 in the kidneys from C451A-ERα mice was higher than in WT mice, we measured FMD in arteries from C451A-ERα and WT mice after pretreatment with various antioxidants. First, the addition of PEG-SOD plus catalase to the bath containing mesenteric resistance arteries isolated from WT mice did not alter FMD (Figure 7A). By contrast, PEG-SOD plus catalase enhanced FMD in arteries from C451A-ERα mice (Figure 7B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/68695/elife-68695-fig7-v2.jpg)
+
+**Figure 7.:** Flow-mediated dilation was determined in mesenteric resistance arteries isolated from male WT and C451A-ERα mice before and after addition of PEG-SOD and catalase (SOD-catalase, A and B), catalase (C and D) or Mito-Tempo (E and F). Flow rate was 3, 6, 9, 12, 15, 30, and 50 µl/min corresponding to 0.8, 1.2, 2, 2.8, 4, 8, and 12 dyn/cm2. Means ± the SEM are shown (n = 3–9 mice per group, see details in Figure 7—source data 1). *p < 0.05, two-way ANOVA for repeated measurements (panel A to F: p = 0.5887, p = 0.0321, p = 0.7170, p = 0.0311, p = 0.7641 and p0.0354, respectively).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/68695/elife-68695-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Data and analysis in Figure 7—figure supplement 1—source data 1.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/68695/elife-68695-fig7-figsupp2-v2.jpg)
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/68695/elife-68695-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Data and analysis in Figure 7—figure supplement 3—source data 1.
 
 Catalase alone did not alter FMD in arteries from WT mice (Figure 7C), whereas it reduced FMD in arteries from C451A-ERα mice (Figure 7D).
 
@@ -136,7 +166,7 @@ The acute response to ATP and to the Piezo1 agonist YODA-1 were not affected by 
 
 This pharmacological approach suggests that reactive oxygen species could reduce FMD in arteries from C451A-ERα, while H2O2 could maintain in part the dilatory response induced by flow in the absence of membrane ERα.
 
-## In vivo pharmacological ROS reduction restored FMD inC451A-ERα mice
+### In vivo pharmacological ROS reduction restored FMD inC451A-ERα mice
 
 As acute antioxidant drugs restored FMD in mesenteric arteries isolated from C451A-ERα mice, we further explored the involvement of oxidative stress in the alteration of FMD by the use of two different antioxidant treatments in vivo.
 
@@ -144,7 +174,7 @@ After 2 weeks of treatment with the antioxidant TEMPOL, there was no longer a di
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/68695/elife-68695-fig8-v2.jpg)
 
-**Figure 8.:** FMD was determined in mesenteric resistance arteries isolated from male WT and C451A-ERα mice treated for 2 weeks with the anti-oxidant TEMPOL (A to F) or with a combination of vitamin E and vitamin C for 4 weeks (G to L). At the end of the treatments arteries were collected and mounted in an arteriograph for the measurement of FMD (A and G), body weight (B and H), arterial diameter (C and I), phenylephrine (1 µM, D and J)- and KCl (80 mM, E and K)-mediated contraction and acetylcholine (1 µM)-mediated dilation (F and L). Flow rate was 3, 6, 9, 12, 15, 30, and 50 µl/min corresponding to 0.8, 1.2, 2, 2.8, 4, 8, and 12 dyn/cm2. Means ± the SEM are shown (n = 4 C451A-WT and 6 C451A-ERα mice treated with TEMPOL and n = 5 mice per group treated with vitamin E and vitamin C). NS, two-way ANOVA for repeated measurements (panel A: p = 0.6345 and G: p = 0.6482). NS, Two-tailed Mann-Whitney tests (panels B to F and H to L). Data and analysis in Figure 8—source data 1.Figure 8—source data 1.Figure 8A–L.
+**Figure 8.:** FMD was determined in mesenteric resistance arteries isolated from male WT and C451A-ERα mice treated for 2 weeks with the anti-oxidant TEMPOL (A to F) or with a combination of vitamin E and vitamin C for 4 weeks (G to L). At the end of the treatments arteries were collected and mounted in an arteriograph for the measurement of FMD (A and G), body weight (B and H), arterial diameter (C and I), phenylephrine (1 µM, D and J)- and KCl (80 mM, E and K)-mediated contraction and acetylcholine (1 µM)-mediated dilation (F and L). Flow rate was 3, 6, 9, 12, 15, 30, and 50 µl/min corresponding to 0.8, 1.2, 2, 2.8, 4, 8, and 12 dyn/cm2. Means ± the SEM are shown (n = 4 C451A-WT and 6 C451A-ERα mice treated with TEMPOL and n = 5 mice per group treated with vitamin E and vitamin C). NS, two-way ANOVA for repeated measurements (panel A: p = 0.6345 and G: p = 0.6482). NS, Two-tailed Mann-Whitney tests (panels B to F and H to L). Data and analysis in Figure 8—source data 1.
 
 A similar pattern was observed in mice treated for 4 weeks with vitamin E and vitamin C with no difference in FMD between WT and C451A-ERα mice (Figure 8G to L).
 
@@ -168,7 +198,7 @@ As FMD has a key role in blood flow delivery to organs (Hill et al., 2010), we i
 
 The reduction in NO-dependent FMD found in arteries from mice lacking membrane-ERα could be due to an excessive ROS production as the chronic treatment of C451A-ERα mice with an antioxidant treatment restored FMD to control level. In agreement, we found that H2O2 production by the kidney was higher in C451A-ERα than in WT mice. This observation is in agreement with a previous work that has shown that E2 increases the release of bioactive NO by inhibition of superoxide anion production in bovine endothelial cells (Arnal et al., 1996). Accordingly, we found that reducing total ROS or mitochondrial ROS production improved FMD in C451A-ERα mice. By contrast, catalase which eliminates H2O2 reduced FMD in C451A-ERα mice suggesting that an excessive ROS production due to the absence of membrane-associated ERα had a dual effect with (1) a reduction of NO bioavailability and (2) an increase in H2O2 production contributing to some vasodilating effect. Noteworthy, kidney perfusates showed higher levels of H2O2 in C451A-ERα mice. An excessive ROS production could also alter eNOS activation as previously shown through increased phosphatase activation (Ding et al., 2020). Previous studies have also shown that shear stress induces a more quiescent and less oxidative phenotype in endothelial cells (Doddaballapur et al., 2015; Wu et al., 2018), thus reducing the oxidative products of mitochondrial origin. Nevertheless, in a context of known dysfunctional FMD, a previous work has shown that H2O2 could mediate FMD in human coronary arteries from patients suffering coronary artery disease although H2O2 remains deleterious (Freed et al., 2014).
 
-## Conclusion
+### Conclusion
 
 To conclude, these data demonstrate for the first time a major role of ERα, and more precisely of non liganded endothelial membrane-located ERα for optimal FMD and thereby a potential role in local blood flow homeostasis. The mechanism appears to involve an optimization of NO activation and/or a decrease in ROS production as depicted in Figure 9. The functional consequences in terms of arteriolar and tissue protection should now be investigated.
 
@@ -178,7 +208,234 @@ To conclude, these data demonstrate for the first time a major role of ERα, and
 
 ## Materials and methods
 
-## Animal protocol
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background(Mus musculus, males and females)</td>
+      <td>Esr1-/-C57BL/6 J(Symbol: Esr1tm1.1Mma, Synonyme: ERalpha Knockout)</td>
+      <td>Mouse Clinical Inst., Strasbourg, France, Dupont et al., 2000</td>
+      <td></td>
+      <td>MGI:2386760</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus musculus, males)</td>
+      <td>AF2°ERα,C57BL/6 J(Symbol: Esr1tm1.1Ohl Synonym: ERalpha-AF2°)</td>
+      <td>Mouse Clinical Inst., Strasbourg, France, Billon-Galés et al., 2009</td>
+      <td></td>
+      <td>MGI:4950046</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus musculus, males)</td>
+      <td>C451A-ERα, C57BL/6 N(Symbol: Esr1tm1.1Ics Synonyme: C451A-ERalpha knock-in)</td>
+      <td>Mouse Clinical Inst., Strasbourg, France, Adlanmerini et al., 2014</td>
+      <td></td>
+      <td>MGI:5574591</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus musculus, males)</td>
+      <td>TekCre/+:Esr1f/f, C57BL/6(B6.Cg-Tg(Tek-cre)12Flv/J backcrossed with Esr1tm1.2MmaSynonym:Tie2Cre ERαlox/lox)</td>
+      <td>Esr1lox/lox: Mouse Clinical Institut, Strasbourg, France.TekCre: Jackson Lab (Bar Harbor, Me), Billon-Galés et al., 2009TekCre:Koni et al., 2001Esr1lox/lox:Dupont et al., 2000</td>
+      <td>TekCre:Esr1lox/lox:</td>
+      <td>MGI:3775510</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus musculus, males)</td>
+      <td>Esr2-/-,C57BL/6 J (Symbol: Esr2tm1MmaSynonym: ERbeta)</td>
+      <td>Mouse Clinical Inst., Strasbourg, France, Dupont et al., 2000</td>
+      <td></td>
+      <td>MGI:2386761</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus musculus, males)</td>
+      <td>R264A-ERα, C57BL/6 N</td>
+      <td>Mouse Clinical Inst., Strasbourg, France, Adlanmerini et al., 2020</td>
+      <td></td>
+      <td>No MGI ID yet</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-eNOS, (mouse monoclonal, clone3)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 610297, RRID:AB_397691</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-eNOS, pS1177 (Mouse monoclonal,Clone 19/eNOS/S1177)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 612392, RRID:AB_399750</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-beta-actin, (Mouse monoclonal, clone AC-74)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: 5316; RRID:AB_476743</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Akt Pan, (rabbit monoclonal, clone C67E7)</td>
+      <td>Cell signalling technologyOzyme</td>
+      <td>Cat#: 4691; RRID:AB_915783</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-Akt, S473, (rabbit monoclonal, clone D9E)</td>
+      <td>Cell signalling technology Ozyme</td>
+      <td>Cat#: 4060; RRID:AB_2315049</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG (H + L) Secondary antibody HRP (Goat polyclonal)</td>
+      <td>Thermo scientific</td>
+      <td>Cat#: 31430; RRID:AB_228307</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG(H + L) Secondary antibody HRP (Goat polyclonal)</td>
+      <td>Thermo scientific</td>
+      <td>Cat#: 31460; RRID:AB_228341</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>vitamin C</td>
+      <td>Sigma Aldrich Merck, Favre et al., 2011</td>
+      <td>A5960</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>vitamin E</td>
+      <td>Sigma Aldrich Merck, Favre et al., 2011</td>
+      <td>T3251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mito-tempo</td>
+      <td>Sigma Aldrich Merck, Freed et al., 2014</td>
+      <td>SML0737</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>catalase</td>
+      <td>Sigma Aldrich Merck, Bouvet et al., 2007</td>
+      <td>C3155</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PEG-superoxide dismutase (SOD)</td>
+      <td>Sigma Aldrich Merck, Bouvet et al., 2007</td>
+      <td>S9549</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Estetrol (E4)</td>
+      <td>Sigma Aldrich Merck, Abot et al., 2014</td>
+      <td>SML1523</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ICI 182 780</td>
+      <td>Tocris Biotechne, Meyer et al., 2010</td>
+      <td>1047</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>G-1 ((±)–1-[(3aR*,4S*,9bS*)–4-(6-Bromo-1,3-benzodioxol-5-yl)–3 a,4,5,9b-tetrahydro-3H-cyclopenta[c]quinolin-8-yl)]- ethanone</td>
+      <td>Cayman chemical Bertin Bioreagent, Meyer et al., 2010</td>
+      <td>10008933</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>G-36 ((±)-(3aR*,4S*,9bS*)–4-(6-Bromo-1,3-benzodioxol-5-yl)–3 a,4,5,9b-tetrahydro-8-(1-methylethyl))–3H-cyclopenta[c]quinoline</td>
+      <td>Cayman chemical Bertin Bioreagent, Meyer et al., 2016</td>
+      <td>14,397</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>N-(methylsulfonyl)–2-(2-propynyloxy)-benzenehexanamide (MSPPOH)</td>
+      <td>Cayman chemical Bertin Bioreagent, Dietrich et al., 2009</td>
+      <td>75,770</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Grammostola spatulata mechanotoxin 4 (GsMTx4)</td>
+      <td>Alomone Labs, John et al., 2018</td>
+      <td>STG-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>YODA1</td>
+      <td>Bertin Bioreagent, Lhomme et al., 2019</td>
+      <td>SML1558</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATPγS</td>
+      <td>Tocris Biotechne, Kukulski et al., 2009</td>
+      <td>4080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-hydroxy-2,2,6,6-tetramethylpiperidine (TEMPOL)</td>
+      <td>Sigma Aldrich Merck, Freidja et al., 2014</td>
+      <td>176,141</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Nitric oxide metabolite detection kit</td>
+      <td>Cayman Chemical</td>
+      <td>780,051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>Hydrogen peroxide assay kit</td>
+      <td>Abcam</td>
+      <td>Ab102500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>ATP determination kit</td>
+      <td>Invitrogen Molecular Probes</td>
+      <td>A22066</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal protocol
 
 We used 5–6 month-old male mice lacking the gene encoding ERα (Esr1-/-) (Antal et al., 2008) or ERβ (Esr2-/-) (Antal et al., 2008), mice lacking ERα selectively targeted to the endothelium (TekCre/+:ERf/f) (Toutain et al., 2009), mice lacking the nuclear activation function AF2 (AF20ERα mice) (Billon-Galés et al., 2011), mice in which the codon for the cysteine (Cys451) palmitoylation site of ERα had been mutated to alanine (C451A-ERα mice) (Adlanmerini et al., 2014) and mice mutated for the arginine 264 of ERα (R264A-ERα mice) (Adlanmerini et al., 2020). Littermate +/+ mice were used as controls (designated wild-type, WT, or +/+) in each group.
 
@@ -190,7 +447,7 @@ The mice were anesthetized with isoflurane (2.5%) and euthanized with CO2. The m
 
 The experiments complied with the European Community standards for the care and use of laboratory animals and the Guide for the Care and Use of Laboratory Animals published by the US National Institutes of Health (NIH Publication No. 85–23, revised in 1996). The protocol was approved by the regional ethics committee (permits #14335, #16740, and #16108).
 
-## Flow-mediated dilation in mesenteric arteries in vitro
+### Flow-mediated dilation in mesenteric arteries in vitro
 
 Arterial segments, with internal diameters of approximately 200 µm, were cannulated at both ends on glass micro-cannulas and mounted in a video-monitored perfusion system (Living System, LSI, Burlington, VT, USA) (Iglarz et al., 1998; Bolla et al., 2002). Individual artery segments were bathed in a 5 ml organ bath containing PSS (pH: 7.4, pO2: 160 mmHg, and pCO2: 37 mmHg) and perfusion of the artery was carried out with two peristaltic pumps, one controlling the flow rate and the other under the control of a pressure-servo control system. The pressure was set at 75 mmHg and flow (3–50 µl per min) was generated through the distal pipette with a peristaltic pump. Flow steps were 3, 6, 9, 12, 15, 30 and 50 µl/min which correspond to 0.8, 1.2, 2, 2.8, 4, 8 and 12 dyn/cm2.
 
@@ -202,7 +459,7 @@ The impact of ex vivo modulation of ERα on FMD was evaluated after 20 minutes o
 
 In another series of experiments, FMD was measured before and after incubation (20 min) of the arteries with PEG-superoxide dismutase (SOD, 120 U/mL) plus catalase (80 U/mL) (Bouvet et al., 2007), catalase (80 U/mL), or Mito-Tempo (1 µmol/L) (Freed et al., 2014).
 
-## Pharmacological profile of isolated mesenteric arteries
+### Pharmacological profile of isolated mesenteric arteries
 
 Segments of mesenteric arteries were mounted in a wire-myograph (Danish Myo Technology, Denmark) as previously described (Loufrani et al., 2002) in order to obtain cumulative concentration-response curves (CRCs) to acetylcholine (ACh) before and after pretreatment with L-NNA (10 µmol/L) and then with L-NNA (100 µmol/L) plus indomethacin (10 µmol/L).
 
@@ -210,17 +467,17 @@ In a separate series of experiments, CRCs to YODA1, ATPγS (ATP) were performed.
 
 Prior to each CRC, the arteries were submitted to phenylephrine to obtain approximately 50 % of the maximal contractile response of the vessel assessed by KCl (80 mM)-mediated contraction at the beginning of the experiment.
 
-## Western-blot analysis
+### Western-blot analysis
 
 Arterial segments were cannulated under pressure (75 mmHg), and flow (50 µl/min) was applied after precontraction with phenylephrine (1 µM). After 2 minutes, the arteries were quick-frozen. Due to the limited size of the resistance arteries segments were pooled before analysis. Protein expression (eNOS, phospho-eNOS, Akt and phospho-Akt) was then determined using Western blot (Bouvet et al., 2007).
 
-## Perfused isolated mouse kidney
+### Perfused isolated mouse kidney
 
 In a separated series of experiments, the right renal artery was cannulated in anesthetized mice and the kidney was excised and perfused at 37 °C with PSS as previously described (Begorre et al., 2017). The right renal artery was cannulated in anesthetized mice (as described above) with a polyethylene catheter (PE-10, 0.28 mm internal diameter, 0.61 mm external diameter, Intramedic, Evry, France). The kidney was then excised and perfused without interruption of kidney flow at 37 °C with PSS. The perfusion solution was dialyzed and the pH was adjusted to 7.4. Perfusion rate was 600 µl/min and perfusion pressure was measured continuously (PT-F pressure transductor, Living System, Burlington, VT). Endothelium-mediated dilation was tested using ACh (1 µmol/L) after precontraction with Phe (1 µmol/L). Flow-pressure relationship was assessed through an stepwise increase in perfusion flow associated with the continuous measurement of the perfusion pressure.
 
 The PSS perfusing the kidney (perfusate in the scheme shown in Figure 6) was collected in baseline conditions (flow = 600 µl/min) and immediately frozen in liquid N2 and then stored at –80 °C.
 
-## Determination of nitrate and nitrite, ATP and H2O2 levels in the kidney perfusate
+### Determination of nitrate and nitrite, ATP and H2O2 levels in the kidney perfusate
 
 To determine flow-induced nitrate-nitrite, ATP or H2O2 release from the perfused mouse kidney, 500 µl of perfusate was collected. The perfusate was then centrifuged 10 min at 14 000 rpm and the supernatant added into a spin column with 10 kDa molecular weight cut-off filter for ultrafiltration (10KD Spin Column Abcam ab93349) and centrifuged at 10 000 rpm for 10 min. The centrifuged solutions was then used for nitrate-nitrite, ATP and H2O2 measurement.
 
@@ -230,14 +487,14 @@ Hydrogen peroxyde (H2O2) level was determined using the fluorimetric method of a
 
 ATP level was measured using ATP determination kit from Invitrogen Molecular Probes (ATP Determination Kit Nb A22066) according to the manufacturer’s instructions.
 
-## Preparation of endothelial cells enriched fraction for transcriptional analysis
+### Preparation of endothelial cells enriched fraction for transcriptional analysis
 
 Endothelial cells enriched fractions were obtained as previously described (Briot et al., 2014). Briefly, 5-week-old female mice were perfused with PBS. The descending thoracic aorta was dissected and perfused with RLT buffer (Qiagen, Valencia, CA) containing 1 % beta-mercaptoethanol. Endothelial cells enrichment was confirmed by the increased endothelial marker Tek expression level and the absence of smooth muscle cell marker Cnn1 (Kalluri et al., 2019) compared to the total aorta.
 
-## Evaluation of gene expression by quantitative real-time PCR in mesenteric arteries
+### Evaluation of gene expression by quantitative real-time PCR in mesenteric arteries
 
 Gene expression was investigated using quantitative polymerase chain reaction after reverse transcription of total RNA (RT-qPCR). Mesenteric arteries were stored at −20 °C in RNAlater Stabilization Reagent (Qiagen, Valencia, CA, USA) until use. RNA was extracted using the RNeasy Micro Kit (Qiagen, Valencia, CA, USA) following manufacturer instructions. RNA extracted (300 ng) was used to synthesize cDNA using the QuantiTect Reverse Transcription Kit (Qiagen, Valencia, CA, USA). RT-qPCR was performed with Sybr Select Master Mix (Applied Biosystems Inc, Lincoln, CA, USA) reagent using a LightCycler 480 Real-Time PCR System (Roche, Branchburg, NJ, USA). Primer sequences are shown in the Supplementary file 1. Gapdh, Hprt and Gusb were used as housekeeping genes. Analysis was not performed when Ct values exceeded 35. Results were expressed as: 2(Ct target-Ct housekeeping gene).
 
-## Statistical analysis
+### Statistical analysis
 
 The results are expressed as means ± the SEM. The significance of the differences between groups was determined by analysis of variance (two-way ANOVA for consecutive measurements) followed by Bonferroni’s test for the FMD and the agonist-mediated concentration-response curves. A two-tailed Mann-Whitney test (when comparing two groups) or a Kruskal-Wallis test (more than two groups) was used for the other comparisons as indicated in the figure legends. Probability values less than 0.05 were considered significant.

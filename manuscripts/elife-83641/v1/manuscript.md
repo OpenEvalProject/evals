@@ -30,18 +30,18 @@
 
 ### Affiliations
 
-1. https://ror.org/02mpq6x41 Department of Medicine, University of Illinois at Chicago Chicago United States
-2. https://ror.org/02mpq6x41 Department of Bioengineering, University of Illinois at Chicago Chicago United States
-3. https://ror.org/02mpq6x41 Department of Microbiology and Immunology, University of Illinois at Chicago Chicago United States
-4. https://ror.org/00f54p054 Department of Medicine, Stanford University Palo Alto United States
-5. https://ror.org/02hh7en24 Department of Medicine, University of Colorado Denver Aurora United States
-6. https://ror.org/02mpq6x41 Department of Biological Sciences, University of Illinois at Chicago Chicago United States
+1. Department of Medicine, University of Illinois at Chicago Chicago United States ([ROR:02mpq6x41](https://ror.org/02mpq6x41))
+2. Department of Bioengineering, University of Illinois at Chicago Chicago United States ([ROR:02mpq6x41](https://ror.org/02mpq6x41))
+3. Department of Microbiology and Immunology, University of Illinois at Chicago Chicago United States ([ROR:02mpq6x41](https://ror.org/02mpq6x41))
+4. Department of Medicine, Stanford University Palo Alto United States ([ROR:00f54p054](https://ror.org/00f54p054))
+5. Department of Medicine, University of Colorado Denver Aurora United States ([ROR:02hh7en24](https://ror.org/02hh7en24))
+6. Department of Biological Sciences, University of Illinois at Chicago Chicago United States ([ROR:02mpq6x41](https://ror.org/02mpq6x41))
 
 † Corresponding author
 
 ## Abstract
 
-End-stage renal disease (ESRD) patients experience immune compromise characterized by complex alterations of both innate and adaptive immunity, and results in higher susceptibility to infection and lower response to vaccination. This immune compromise, coupled with greater risk of exposure to infectious disease at hemodialysis (HD) centers, underscores the need for examination of the immune response to the COVID-19 mRNA-based vaccines. The immune response to the COVID-19 BNT162b2 mRNA vaccine was assessed in 20 HD patients and cohort-matched controls. RNA sequencing of peripheral blood mononuclear cells was performed longitudinally before and after each vaccination dose for a total of six time points per subject. Anti-spike antibody levels were quantified prior to the first vaccination dose (V1D0) and 7 d after the second dose (V2D7) using anti-spike IgG titers and antibody neutralization assays. Anti-spike IgG titers were additionally quantified 6 mo after initial vaccination. Clinical history and lab values in HD patients were obtained to identify predictors of vaccination response. Transcriptomic analyses demonstrated differing time courses of immune responses, with prolonged myeloid cell activity in HD at 1 wk after the first vaccination dose. HD also demonstrated decreased metabolic activity and decreased antigen presentation compared to controls after the second vaccination dose. Anti-spike IgG titers and neutralizing function were substantially elevated in both controls and HD at V2D7, with a small but significant reduction in titers in HD groups (p<0.05). Anti-spike IgG remained elevated above baseline at 6 mo in both subject groups. Anti-spike IgG titers at V2D7 were highly predictive of 6-month titer levels. Transcriptomic biomarkers after the second vaccination dose and clinical biomarkers including ferritin levels were found to be predictive of antibody development. Overall, we demonstrate differing time courses of immune responses to the BTN162b2 mRNA COVID-19 vaccination in maintenance HD subjects comparable to healthy controls and identify transcriptomic and clinical predictors of anti-spike IgG titers in HD. Analyzing vaccination as an in vivo perturbation, our results warrant further characterization of the immune dysregulation of ESRD. F30HD102093, F30HL151182, T32HL144909, R01HL138628. This research has been funded by the University of Illinois at Chicago Center for Clinical and Translational Science (CCTS) award UL1TR002003.
+Background:End-stage renal disease (ESRD) patients experience immune compromise characterized by complex alterations of both innate and adaptive immunity, and results in higher susceptibility to infection and lower response to vaccination. This immune compromise, coupled with greater risk of exposure to infectious disease at hemodialysis (HD) centers, underscores the need for examination of the immune response to the COVID-19 mRNA-based vaccines.Methods:The immune response to the COVID-19 BNT162b2 mRNA vaccine was assessed in 20 HD patients and cohort-matched controls. RNA sequencing of peripheral blood mononuclear cells was performed longitudinally before and after each vaccination dose for a total of six time points per subject. Anti-spike antibody levels were quantified prior to the first vaccination dose (V1D0) and 7 d after the second dose (V2D7) using anti-spike IgG titers and antibody neutralization assays. Anti-spike IgG titers were additionally quantified 6 mo after initial vaccination. Clinical history and lab values in HD patients were obtained to identify predictors of vaccination response.Results:Transcriptomic analyses demonstrated differing time courses of immune responses, with prolonged myeloid cell activity in HD at 1 wk after the first vaccination dose. HD also demonstrated decreased metabolic activity and decreased antigen presentation compared to controls after the second vaccination dose. Anti-spike IgG titers and neutralizing function were substantially elevated in both controls and HD at V2D7, with a small but significant reduction in titers in HD groups (p<0.05). Anti-spike IgG remained elevated above baseline at 6 mo in both subject groups. Anti-spike IgG titers at V2D7 were highly predictive of 6-month titer levels. Transcriptomic biomarkers after the second vaccination dose and clinical biomarkers including ferritin levels were found to be predictive of antibody development.Conclusions:Overall, we demonstrate differing time courses of immune responses to the BTN162b2 mRNA COVID-19 vaccination in maintenance HD subjects comparable to healthy controls and identify transcriptomic and clinical predictors of anti-spike IgG titers in HD. Analyzing vaccination as an in vivo perturbation, our results warrant further characterization of the immune dysregulation of ESRD.Funding:F30HD102093, F30HL151182, T32HL144909, R01HL138628. This research has been funded by the University of Illinois at Chicago Center for Clinical and Translational Science (CCTS) award UL1TR002003.
 
 ## Introduction
 
@@ -55,31 +55,31 @@ While recent studies of the SARS-CoV-2 BTN162b2 vaccine in HD demonstrate high l
 
 ## Methods
 
-## Study population and sample acquisition
+### Study population and sample acquisition
 
 The study was approved by the University of Illinois at Chicago IRB (#2018-1038) Ethics Review Committee. Maintenance HD patients undergoing vaccination with the BNT162b2 mRNA COVID-19 vaccine in February 2021 were recruited from the outpatient HD unit at the University of Illinois Hospital (UIH) in Chicago, IL. Control subjects consisted of UIH employees undergoing BNT162b2 mRNA COVID-19 vaccination at UIH from December 2020 to January 2021 with no self-reported history of kidney disease or immune disorders. All subjects provided informed consent for participation in this research and for publication of results. A subset of control subjects matched for age, gender, and COVID-19 history was also analyzed for this study. Blood was collected at 0–48 hr prior to and at multiple time points after both the first (V1) and second vaccination doses (V2), which were administered 3 wk apart. Control samples were collected prior to each vaccination dose (D0) and at 1 d (D1) and 7 d (D7) after each dose, corresponding to six time points: V1D0, V1D1, V1D7, V2D0, V2D1, and V2D7. Blood was collected from HD subjects prior to each vaccination dose and at 2 d (D2) and 7 d after each dose, corresponding to six time points: V1D0, V1D2, V1D7, V2D0, V2D2, and V2D7. A final blood sample was drawn 6 mo after initial vaccination (M6) for measurement of antibody titers, prior to additional vaccination doses. Serum and PBMCs were extracted within 2 hr of blood collection, then stored at –80°C. PBMCs were extracted using density gradient centrifugation at 400 × g with Ficoll–Paque PLUS. The extracted buffy coat was stored in RNAlater (Invitrogen).
 
-## Clinical and demographic characterization
+### Clinical and demographic characterization
 
 Demographic and clinical data was collected from the electronic health record (EHR) for HD subjects, including medical diagnoses, medications, and laboratory values. Laboratory values included monthly SARS-CoV-2 test results, as well as urea reduction ratio (URR, a measure of dialysis adequacy), hemoglobin (Hgb), ferritin, transferrin saturation, albumin levels, white blood cell (WBC) count, and WBC differential counts obtained during standard of care monthly blood draws for the 3 mo preceding vaccination. Within our analyses, ferritin was coded as either low risk (200–1200 ng/ml) or high risk (<200 or >1200 ng/ml) since ferritin levels 200–1200 ng/ml have been shown to be associated with lowest all-cause mortality in HD patients (Kalantar-Zadeh et al., 2005). Baseline clinical lab values were calculated as the median of three lab values across the 3 mo prior to vaccination. Demographic and clinical data was collected from a medical questionnaire at time of consent for control subjects, and included medical history, medications, and self-reported prior SARS-CoV-2-positive test results.
 
-## RNA extraction and RNA sequencing (RNAseq)
+### RNA extraction and RNA sequencing (RNAseq)
 
 RNA sequencing was performed on PBMCs at all V1 and V2 time points for all subjects for whom RNA libraries were successfully built at >5 time points. PBMCs stored in RNAlater were thawed and diluted 1:1 with 1× phosphate buffered saline. The mixture was then pelleted and RNA was extracted using the PureLink RNA Mini kit (Invitrogen). DNase treatment to remove genomic DNA contamination was performed using either the PureLink DNase kit or DNA-free DNA Removal Kit (Invitrogen). Purified RNA in sterile water was stored at –80°C. Each RNA sample was quantified using the Qubit RNA High Sensitivity kit (Invitrogen) and Bioanalyzer RNA Pico kit (Agilent) with RIN ≥ 8.
 
 For library construction, 50 ng of RNA from each sample was aliquoted in 96-well plates. Libraries were generated using the NEBNext Ultra II Directional RNA Library Prep Kit for Illumina with the optional NEBNext Poly(A) mRNA Magnetic Isolation Module (New England BioLabs). Each individual sample library was barcoded during PCR amplification using unique dual indexed i5 and i7 primers from the NEBNext Multiplex Oligos for Illumina kit. Each sample library was quantified using the Qubit DNA High Sensitivity kit and Bioanalyzer DNA High Sensitivity kit. Samples were then pooled and sequenced using the MiSeq Nano V2 kit (Illumina) to check read proportions between samples. Samples with lower-than-expected percentage of reads detected were supplemented with an additional spike-in of sample library to the main pool. The supplemented pooled library was sequenced again using the MiSeq Nano V2 kit to verify adequate adjustment. The finalized library was sequenced using a NovaSeq S2 flow cell configured for 75 bp paired end output.
 
-## Differential gene expression analysis
+### Differential gene expression analysis
 
 Raw demultiplexed reads were filtered using fastp to remove adapters and short reads (Chen et al., 2018). Trimmed reads were then quantified using the Salmon pipeline with an hg38 reference transcriptome index (Patro et al., 2017). Quantified data was imported into R using the tximeta package (Love et al., 2020) to convert Salmon quantification and index data to a count matrix. Transcript names were extracted and matched using Entrez IDs with the AnnotationHub package (Love et al., 2020). This finalized count matrix was then imported into a DESeqDataset object and normalized using the variance stabilizing transformation in DESeq2.
 
 The DESeq2 R package was used to identify genes that were differentially expressed at each time point after vaccination for each subject group. Specifically, we implemented a design incorporating group-specific condition effects with individual subjects nested within groups. We performed the classical Deseq2 workflow of estimation of size factors, estimation of dispersion, and negative binomial GLM fitting for βi and Wald statistics, increasing the maximum number of iterations for estimation of the negative binomial distribution to 500. We then generated contrasts to obtain differentially expressed genes for controls at V1D1 and V1D7 (compared to V1D0), and at V2D1 and V2D7 (compared to V2D0). Differentially expressed genes for HD were similarly obtained at V1D2 and V1D7 (compared to V1D0), and at V2D2 and V2D7 (compared to V2D0). We also directly compared gene expression between controls and HD at V1D7 and at V2D7. The significance threshold to determine differential expression was FDR-adjusted (p<0.05).
 
-## Anti-spike (trimer) IgG titer quantification
+### Anti-spike (trimer) IgG titer quantification
 
 The Human SARS-CoV-2 Spike (Trimer) IgG ELISA Kit from Invitrogen was used to quantitate IgG to the SARS-CoV-2 spike protein in serum samples at V1D0, V2D7, and M6 time points. All samples were initially diluted 1:100 (in addition to the 1:10 assay buffer dilution on the 96-well plate) and assayed in duplicate, with twofold serial dilution of the 150,000 units/ml standard control in duplicate for relative quantification. Absorbance at 450 nm was quantified using a Spark multimode microplate reader. Samples that produced signals greater than the upper limit of the standard curve were diluted 1:2000 and assayed again. IgG concentration was calculated by fitting four-parameter logistic curves to the standard controls and taking the average concentrations of duplicates.
 
-## Antibody neutralization assays
+### Antibody neutralization assays
 
 Neutralization assays were performed on serum samples from V1D0 and V2D7 using SARS-CoV-2 pseudotyped virus (pseudovirus). To produce pseudoviruses, an expression plasmid bearing codon-optimized SARS-CoV-2 full-length S plasmid was co-transfected into HEK293T cells using the SARS-CoV-2 spike-pseudotyped lentiviral particle Kit (BEI # R-52948). The cell supernatants were collected 72 hr after transfection, divided into aliquots and cryopreserved at −80°C.
 
@@ -87,17 +87,17 @@ To titrate the pseudovirus, 5 × 103 293T-ACE2 cells were seeded per well in a 9
 
 Neutralization activity against SARS-2-CoV was measured in a single-round-of-infection assay with pseudoviruses as previously described (Nie et al., 2020). 5 × 103 293T-ACE2 cells were seeded per well in a 96-well plate. Twenty-four hours later, serial dilutions of the serum samples were performed, incubated for 1 hr at 37°C with ~1000 TCID50/ml of pseudovirus, then added to monolayers of ACE2-overexpressing 293T cells in quadruplicate. The cell control with cells alone and the virus control (VC) with pseudovirus were set up in each plate. The target cells were incubated for 65–72 hr at 37°C and 5% (vol/vol) CO2. Then, 50 µl of Bright-Glo, reconstituted following the manufacturer’s instructions, was added to each well of the 96-well plate and incubated for 5 min at room temperature. The 96-well plate was read by a 96-well luminescence plate reader (Tecan Genius Pro plate reader) (Ferrara and Temperton, 2018). Percent neutralization was calculated as 100 * ([Virus-only control] – [Virus plus serum])/[Virus-only control], and neutralizing titer levels are reported as the serum dilution required to achieve 50% neutralization (50% inhibitory dilution [ID50]) (Pegu et al., 2021). The input dilution of serum was 1:20, thus 20 is the lower limit of quantification.
 
-## BTM module enrichment analysis
+### BTM module enrichment analysis
 
 Gene set enrichment analysis was performed for each contrast generated in the DESeq2 analysis above using blood transcription module (BTMs) gene sets (Li et al., 2014). BTMs with FDR-adjusted p<0.05 were considered significantly enriched. Enriched BTMs were further characterized using the distribution of Wald statistics of membership genes from DESeq2. To summarize BTM analyses, BTMs were categorized into different families: B cells, cell cycle, dendritic cell/antigen presentation, type I interferon (IFN type I), myeloid activity/inflammation/ T/NK cells, and ‘others’ (Braun et al., 2018). The percentage of BTMs in each BTM family with significant enrichment at each time point was then quantified over time.
 
-## Statistical analysis of antibody response
+### Statistical analysis of antibody response
 
 To determine the effect of vaccination on anti-spike IgG titers at V2D7 and M6, Kruskal–Wallis tests were performed separately for HD subjects and controls. For each group, anti-spike IgG titer levels were compared to assess for the significant effect of time (V1D0, V2D7, M6), and Wilcoxon rank-sum tests were performed with FDR correction to assess significant differences between each pair of time points (V2D7 vs. V1D0, M6 vs. V1D0, M6 vs. V2D7). To determine the effect of vaccination on antibody neutralization activity (ID50) at V2D7, Wilcoxon rank-sum tests were performed for each group to compare V2D7 vs. V1D0.
 
 Linear models were constructed to establish the effect of prior SARS-CoV-2 infection and subject group on anti-spike IgG titer development at V2D7 and M6 and neutralization activity at V2D7. Specifically, log-transformed V2D7 anti-spike IgG titers or V2D7 neutralization activity (ID50) were modeled as the dependent variable, with subject group (HD or controls), log-transformed V1D0 anti-spike IgG titers or V1D0 neutralization activity (ID50), gender, age, race, and ethnicity as independent predictors. To determine predictors of anti-spike IgG at 6 mo, a linear model was constructed with the log-transformed M6 anti-spike IgG titers as the dependent variable, and V2D7 anti-spike IgG titers, SARS-CoV-2 history, gender, age, race, and ethnicity as independent predictors.
 
-## Identification of BTM and clinical predictors of Ab response in HD
+### Identification of BTM and clinical predictors of Ab response in HD
 
 BTM predictors of antibody response in HD were identified by first calculating a representative expression level of each BTM per sample, which we will refer to as the eigengene. Specifically, the first principal component of each BTM was calculated using DESeq2-derived variance-stabilized gene counts from each module’s member genes across the HD V1 time points, and then across the HD V2 time points. Signs (positive or negative) were assigned to the eigengenes such that samples with higher expression of member genes in a BTM would be given a positive sign, while those with lower overall gene expression would be given a negative sign. This was accomplished for each BTM by (1) computing the median gene expression level across membership genes in a given BTM for each sample, (2) computing the Pearson correlation between the eigengene of the BTM and the median gene expression level across all samples, and (3) multiplying the eigengene of the BTM by –1 if the correlation was negative.
 
@@ -109,19 +109,268 @@ Finally, clinical laboratory values responding to vaccination that predicted ant
 
 ## Results
 
-## Demographic and clinical characterization
+### Demographic and clinical characterization
 
 Demographic and clinical data of the 20 maintenance hemodialysis (HD) and controls (HC) are summarized in Table 1. The racial distribution differed between cohorts with more Black/African American subjects in the HD cohort. The cohorts were otherwise demographically similar. The subjects within the HD cohort had significantly more comorbidities, most notable of which include type 2 diabetes mellitus (T2DM), hypertension (HTN), dyslipidemia, and other cardiovascular conditions. The most common causes of renal failure were T2DM and HTN, with a minority of cases attributed to anatomic defects (reflux uropathy) and autoimmune conditions (systemic lupus erythematous and idiopathic thrombocytopenic purpura).
 
+**Table 1.**
+ Demographic and clinical data for maintenance hemodialysis and control subjects.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Hemodialysis</th>
+      <th>Control</th>
+      <th>p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total # of subjects</td>
+      <td>20</td>
+      <td>20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gender</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>11</td>
+      <td>10</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>9</td>
+      <td>10</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Age (mean (sd))</td>
+      <td>54 (12)</td>
+      <td>54 (13)</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td>Race/ethnicity</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Black/African American</td>
+      <td>10</td>
+      <td>3</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td>Asian/Pacific Islander</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>White/Caucasian</td>
+      <td>2</td>
+      <td>8</td>
+      <td>0.067</td>
+    </tr>
+    <tr>
+      <td>Hispanic/Latinx</td>
+      <td>7</td>
+      <td>6</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>BMI, kg/m2 (mean (sd))</td>
+      <td>27.8 (5.1)</td>
+      <td>28.7 (6.4)</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <td>Medical history</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Diabetes</td>
+      <td>11</td>
+      <td>1</td>
+      <td>0.0012</td>
+    </tr>
+    <tr>
+      <td>Hypertension</td>
+      <td>18</td>
+      <td>4</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Other CV disease*</td>
+      <td>9</td>
+      <td>0</td>
+      <td>0.0012</td>
+    </tr>
+    <tr>
+      <td>Dyslipidemia</td>
+      <td>10</td>
+      <td>0</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Autoimmune disease†</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>Immunosuppression‡</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Active malignancy§</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1.0</td>
+    </tr>
+    <tr>
+      <td>Positive COVID-19 history</td>
+      <td>8</td>
+      <td>5</td>
+      <td>0.5</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Includes coronary artery disease (CAD), congestive heart failure (CHF), atrial fibrillation (AF), peripheral vascular disease (PVD), and cerebral vascular accent (CVA).†Includes systemic lupus erythematosus (SLE), immune thrombocytopenic purpura (ITP), and microscopic polyangiitis (MPA).‡Hydroxychloroquine.§Defined as malignancy requiring treatment in the last 6 mo; one patient with papillary thyroid cancer requiring thyroidectomy, no systemic treatment required._
+
 There were eight HD subjects who previously tested positive for SARS-CoV-2, with positive test dates ranging from 7 mo to 4 wk preceding vaccination. Five control subjects self-reported a prior positive SARS-CoV-2 test, with positive test dates ranging from 8 mo to 4 wk preceding vaccination. Detailed clinical characterization of HD subjects is summarized in Table 2. Notable laboratory data includes an elevated ferritin from normal (with high population variance) and anemia.
+
+**Table 2.**
+ Baseline clinical lab values for maintenance hemodialysis (HD) patients.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Normal range</th>
+      <th>Mean (SD)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Kidney/HD status</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Urea reduction ratio</td>
+      <td>-</td>
+      <td>0.74 (0.052)</td>
+    </tr>
+    <tr>
+      <td>Months on HD</td>
+      <td>-</td>
+      <td>46 (44)</td>
+    </tr>
+    <tr>
+      <td>Iron</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ferritin (ng/ml)</td>
+      <td>10–259</td>
+      <td>838 (550) *</td>
+    </tr>
+    <tr>
+      <td>% Transferrin saturation</td>
+      <td>25–50</td>
+      <td>38 (13)</td>
+    </tr>
+    <tr>
+      <td>Albumin</td>
+      <td>3.4–5</td>
+      <td>4.1 (0.40)</td>
+    </tr>
+    <tr>
+      <td>CBC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>White blood cells (k/ul)</td>
+      <td>3.9–12</td>
+      <td>6.0 (2.1)</td>
+    </tr>
+    <tr>
+      <td>Hgb (g/dl)</td>
+      <td>13.2–18</td>
+      <td>10.5 (1.5) *</td>
+    </tr>
+    <tr>
+      <td>Lymphocytes (k/ul)</td>
+      <td>1.3–4.2</td>
+      <td>1.5 (0.7)</td>
+    </tr>
+    <tr>
+      <td>Neutrophils (k/ul)</td>
+      <td>1.3–7.5</td>
+      <td>3.7 (1.5)</td>
+    </tr>
+    <tr>
+      <td>Monocytes (k/ul)</td>
+      <td>0.4–1</td>
+      <td>0.5 (0.2)</td>
+    </tr>
+    <tr>
+      <td>Eosinophils (k/ul)</td>
+      <td>0.2–0.5</td>
+      <td>0.2 (0.2)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Indicates value outside of normal range._
 
 All subjects received two BTN162b2 vaccination doses with the second dose (V2) administered 3 wk after the first (V1). Anti-spike IgG binding and neutralizing assay data were obtained for all subjects prior to V1 (V1D0) and 7 d after V2 (V2D7). RNA sequencing data was obtained for all control subjects prior to each vaccination dose (D0), and at 1 d (D1) and 7 d (D7) after each dose, corresponding to six time points: V1D0, V1D1, V1D7, V2D0, V2D1, and V2D7. One control subject is missing V2D0 data, and one is missing V2D1 data. RNA sequencing data was obtained for 12 HD subjects prior to each vaccination dose, and at 2 d (D2) and 7 d after each dose, corresponding to six time points: V1D0, V1D2, V1D7, V2D0, V2D2, and V2D7. Two HD subjects are missing V2D2 data. Sequencing data was not obtained for subjects with fewer than five time points of successfully constructed RNA libraries due to time points without sample collection or failure to extract high-quality mRNA from PBMCs. Six-month follow-up (M6) anti-spike IgG binding titers were obtained for 15 HC subjects and 19 HD subjects. One HD subject tested positive for SARS-CoV-2 14 d after the second vaccination dose, demonstrating mild symptoms. None of the other subjects reported SARS-CoV-2 infection up to 6 mo follow-up after the second vaccination.
 
-## Differential gene expression analysis
+### Differential gene expression analysis
 
 To characterize the molecular basis of immune responses to vaccination in HC and HD, we performed differential gene expression analyses of the PBMC RNA sequencing data. There are substantially more differentially expressed genes (DEGs) in response to V2 compared to V1, and at D1 and D2 post-vaccination compared to D7 (Figure 1—figure supplement 1). For HC, the largest number of DEGs is found at V2D1 (3974), indicating the most transcriptional activity immediately after the second vaccine dose, followed by V2D7 (177), V1D1 (128), and V1D7 (10). HD follows a similar pattern, with the largest number of DEGs found at V2D2 (1,111), followed by V2D7 (153), V1D2 (68), and V1D7 (8). Notably, HD subjects with no SARS-CoV-2 history (n = 6) have substantially lower numbers of DEGs than HD subjects with positive SARS-CoV-2 history (n = 6) at each time point, and particularly at V2 time points (Figure 1A).Direct comparison of gene expression between HC and HD with no prior reported SARS-CoV-2 infection at V1D7 yielded five DEGs in HD versus HC including increased expression of chemokine CCL19 in HD (p<0.05, FDR-corrected). Comparison of these same groups at V2D7 yielded 18 DEGs including increased expression in HD of TIA1, which encodes a granule-associated protein expressed in cytolytic lymphocytes (Anderson et al., 1990) and natural killer cells, and BH3, a pro-apoptotic Bcl-2 family member and mediator of lymphocyte apoptosis (Labi et al., 2008).
 
-## Blood transcription module (BTM) enrichment
+![Figure 1.](https://cdn.elifesciences.org/articles/83641/elife-83641-fig1-v1.jpg)
+
+**Figure 1.:** (A) Differentially expressed genes (DEGs) increased after second vaccination dose compared to first, and at early time points compared to day 7 (D7). DEGs are shown for maintenance hemodialysis (HD) with (n = 6) and without (n = 6) prior SARS-CoV-2 history. See Figure 1—figure supplement 1 for healthy control (HC) and HD data independent of SARS-CoV-2 history. The DESeq2 R package was used to identify genes that were differentially expressed at each time point after vaccination for each subject group (p<0.05, FDR-adjusted). (B) HC and HD with no SARS-CoV-2 history demonstrate distinct longitudinal enrichments of BTMs. Left: in HC, the most significantly enriched BTMs are shown (up to six) for day 1 (D1) and day 7 (D7) after each vaccination dose (V1, V2) (p<0.05, FDR-adjusted). Density plots for each BTM represent Wald statistics from DESeq2 analysis for each membership gene, thereby representing increased or decreased expression per gene at each time point compared to baseline (V1D0 or V2D0). Right: similarly in HD, the most significantly enriched BTMs for day 2 (D2) and day 7 (D7) are shown. (C) HD demonstrates diminished transitioning from innate to adaptive immune BTM enrichment after each vaccination dose. Percentages of BTMs in each BTM family with significant enrichment are shown at each time point after each vaccination dose (V1, V2) for day 1 (D1) and day 7 (D7) in HC, and day 2 (D2) and D7 for HD in subjects with no prior infection with SARS-CoV-2 (p<0.05, FDR-adjusted). Direction of enrichment was determined using the median Wald statistic from DESeq2 analysis for each BTM membership gene, thereby representing overall increased or decreased expression of membership genes at each time point compared to baseline (V1D0 or V2D0).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83641/elife-83641-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** DEGs are shown for HC and HD regardless of SARS-CoV-2 history. Red color indicates upregulated DEGs and blue color indicates downregulated DEGs. The DESeq2 R package was used to identify genes that were differentially expressed at each time point after vaccination for each subject group (p<0.05, FDR-adjusted).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83641/elife-83641-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The most differentially enriched blood transcription modules (BTMs) between HC and HD with no prior infection with SARS-CoV-2 are shown (p<0.05, FDR-adjusted) at V1D7 and at 1 wk after second vaccination dose (V2D7). Density plots for each BTM represent Wald statistics from DESeq2 analysis for each membership gene per BTM, with positive Wald statistics indicating increased expression in HC compared to HD.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/83641/elife-83641-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The most significantly enriched BTMs are shown (up to six) for day 2 (D2) and day 7 (D7) after each vaccination dose (V1, V2) in HD with prior infection with SARS-CoV-2 (p<0.05, FDR-adjusted). Density plots for each BTM represent Wald statistics from DESeq2 analysis for each membership gene, thereby representing increased or decreased expression per gene at each time point compared to baseline (V1D0 or V2D0).
+
+### Blood transcription module (BTM) enrichment
 
 BTM enrichment analysis of subjects without SARS-CoV-2 history reveals the vaccine-induced progression of various immune processes at each time point after vaccination (Figure 1B). Following V1, HC demonstrate early (V1D1) enrichment of 29 BTMs, with substantial upregulation of monocyte and antiviral IFN activity (Supplementary file 1). The immune response transitions to V1D7 enrichment of four BTMs including significant T cell activation and downregulation of monocytes (Supplementary file 2). Following V2, HC demonstrate early (V2D1) enrichment of 82 BTMs, with substantial upregulation of innate antiviral activity, similarly to V1D1 (Supplementary file 3). The immune response transitions to V2D7 enrichment of ten BTMs, with significant upregulation of plasma cells and immunoglobulins (Supplementary file 4).
 
@@ -131,7 +380,7 @@ While there were no significant BTM enrichments in HC with positive SARS-CoV-2 h
 
 Summary enrichments using BTM families show many positive early V1 enrichments of type 1 IFN activity that dissipate by V1D7 in both HC and HD (Figure 1C). However, HC show early positive and negative enrichments of myeloid/inflammatory family activity that dissipate by V1D7, while HD show many early positive enrichments of myeloid/inflammatory family activity that persist and increase at V1D7. Following V2, HC show early predominance of dendritic cell (DC)/antigen presenting cell (APC), IFN type I, and myeloid/inflammatory family activity transitioning to B cell and cell cycle activity at V2D7, while HD show predominant early IFN type I family activity transitioning to just one detectable cell cycle module enrichment.
 
-## Antibody binding and neutralization assay response
+### Antibody binding and neutralization assay response
 
 We next aimed to assess immune protection conferred by the vaccine through quantification of anti-spike IgG antibodies and functional assessment of neutralizing antibodies. All subjects demonstrated an increase in anti-spike IgG at V2D7, with titers for all subjects except one still elevated above baseline at six months. The exception was one HD subject with prior SARS-CoV-2 infection who demonstrated the highest baseline titers of all subjects prior to vaccination. Both HC and HD subjects demonstrated a statistically significant increase in anti-spike IgG and neutralization activity (ID50) from V1D0 to V2D7 (p<0.001), followed by an expected decrease at M6 from V2D7 levels (p<0.001) (Figure 2). Despite this decrease, M6 titers were still increased compared to baseline (p<0.001).
 
@@ -141,7 +390,7 @@ We next aimed to assess immune protection conferred by the vaccine through quant
 
 Higher anti-spike IgG at V2D7 was significantly predicted by higher pre-vaccination anti-spike IgG, control group assignment, and younger age (p<0.01, p<0.05, p<0.05, respectively), while gender, race, and ethnicity were not. Higher anti-spike IgG at M6 was significantly predicted by higher V2D7 anti-spike IgG (p<0.001), with no additional predictive value conferred by SARS-CoV-2 history, subject group, age, gender, race, or ethnicity. Higher neutralization activity (ID50) at V2D7 was significantly predicted by higher pre-vaccination ID50, with no additional predictive value conferred by subject group, age, gender, race, and ethnicity.
 
-## Transcriptomic and clinical predictors of antibody binding response in HD
+### Transcriptomic and clinical predictors of antibody binding response in HD
 
 Linear models to predict anti-Spike IgG at V2D7 and at M6 in HD using enriched BTMs, controlling for SARS-CoV-2 history, identified BTM predictors at all time points except for V1D2. Of the 18 enriched BTMs at V1D7, increased expression (from V1D0) of ‘LI.M156.1 plasma cells, immunoglobulins’ was predictive of higher anti-spike IgG at V2D7 (p<0.05, FDR-corrected), controlling for SARS-CoV-2 history. Of the 30 enriched BTMs at V2D2, increased expression of 18 BTMs was predictive of higher anti-spike IgG at V2D7 (p<0.05, FDR-corrected). These include innate immune, antigen presentation, and T cell pathways (Figure 3). Increased expression of ‘LI.M4.2 PLK1 signaling events’ at V2D7 compared to V2D0, which was the only enriched module at this time point for HD subjects with no SARS-CoV-2 history, was predictive of higher anti-spike IgG at both V2D7 and M6 (p<0.05).
 

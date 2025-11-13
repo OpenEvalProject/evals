@@ -11,13 +11,13 @@
 
 ### Affiliations
 
-1. https://ror.org/022fs9h90 Department of Biology, University of Fribourg Fribourg Switzerland
+1. Department of Biology, University of Fribourg Fribourg Switzerland ([ROR:022fs9h90](https://ror.org/022fs9h90))
 
 † Corresponding author
 
 ## Abstract
 
-Dopamine is a crucial neuromodulator involved in many brain processes, including learning and the formation of memories. Dopamine acts through multiple receptors and controls an intricate signaling network to regulate different tasks. While the diverse functions of dopamine are intensely studied, the interplay and role of the distinct dopamine receptors to regulate different processes is less well understood. An interesting candidate is the dopamine receptor Dop1R2 (also known as Damb), as it could connect to different downstream pathways. Dop1R2 is reported to be involved in forgetting and memory maintenance; however, the circuits requiring the receptors are unknown. To study Dop1R2 and its role in specific spatial and temporal contexts, we generated a conditional knockout line using the CRISPR-Cas9 technique. Two FRT sites were inserted, allowing flippase-mediated excision of the dopamine receptor in neurons of interest. To study the function of Dop1R2, we knocked it out conditionally in the mushroom body of Drosophila melanogaster , a well-studied brain region for memory formation. We show that Dop1R2 is required for later memory forms but not for short-term aversive or appetitive memories. Moreover, Dop1R2 is specifically required in the α/β-lobe and the α’/β’-lobe but not in the γ-lobe of the mushroom body. Our findings show a spatially and temporally restricted role of Dop1R2 in the process of memory formation, highlighting the differential requirement of receptors during distinct phases of learning.
+Dopamine is a crucial neuromodulator involved in many brain processes, including learning and the formation of memories. Dopamine acts through multiple receptors and controls an intricate signaling network to regulate different tasks. While the diverse functions of dopamine are intensely studied, the interplay and role of the distinct dopamine receptors to regulate different processes is less well understood. An interesting candidate is the dopamine receptor Dop1R2 (also known as Damb), as it could connect to different downstream pathways. Dop1R2 is reported to be involved in forgetting and memory maintenance; however, the circuits requiring the receptors are unknown. To study Dop1R2 and its role in specific spatial and temporal contexts, we generated a conditional knockout line using the CRISPR-Cas9 technique. Two FRT sites were inserted, allowing flippase-mediated excision of the dopamine receptor in neurons of interest. To study the function of Dop1R2, we knocked it out conditionally in the mushroom body of Drosophila melanogaster, a well-studied brain region for memory formation. We show that Dop1R2 is required for later memory forms but not for short-term aversive or appetitive memories. Moreover, Dop1R2 is specifically required in the α/β-lobe and the α’/β’-lobe but not in the γ-lobe of the mushroom body. Our findings show a spatially and temporally restricted role of Dop1R2 in the process of memory formation, highlighting the differential requirement of receptors during distinct phases of learning.
 
 ## Introduction
 
@@ -29,17 +29,25 @@ The fly uses four different dopamine receptors. Dop1R1 (Dumb) (Kim et al., 2003;
 
 ## Results
 
-## Generation of the Dop1R2 conditional knockout line
+### Generation of the Dop1R2 conditional knockout line
 
 To be able to study both the requirement of Dop1R2 in specific neurons, as well as the localization of the receptor, we generated a transgenic line that allows defined spatial and temporal knockout of the receptor. In short, we inserted two FRT sites for flippase-mediated excision (Golic and Lindquist, 1989; Gratz et al., 2014), as well as a 3xHA-tag to study the localization of the receptor. The HA-tag was chosen to minimize interference with the receptor structure. A representation of the HA-tagged receptor is depicted in Figure 1A. The third intracellular loop between transmembrane domains (TMDs) five and six, as well as the C-terminal tail, is required for G-protein binding (Missale et al., 1998). Figure 1B gives an overview of the experimental strategy. The endogenous locus is cut twice by CRISPR-Cas9 to replace the first two coding exons of Dop1R2 with the corresponding sequence flanked by FRT sites and fused to the HA-tag, using a donor plasmid as template for HDR. The donor plasmid also contains the region directly upstream and downstream of the exchange site as homology arms to align the plasmid. The plasmid carrying the sequence for the two guide RNAs (gRNAs), as well as the donor plasmid, was injected into embryos with maternal Cas9 expression (nos>Cas9). Using the Gal4-UAS system to express flippase in neurons of interest, the receptor can be irreversibly flipped out in those neurons while keeping it functional in the rest of the brain. The first FRT site was placed in the intron before the first coding exon, which contains all seven TMDs (Figure 1C). Since Dop1R2 has three transcript isoforms with differences in the C-terminus, the second FRT site was placed at the end of the last common exon. Thus, FLP-mediated recombination will lead to the deletion of the two common coding exons, including all TMDs. Successful insertion was verified by sequencing.
 
-## Dop1R2cko is expressed in the MB
+![Figure 1.](https://cdn.elifesciences.org/articles/99368/elife-99368-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic representation of the receptor structure and interaction with the G-protein complex. The position of the HA-tag is indicated. (B) Schematic representation of the conditional knockout system. The endogenous Dop1R2 was replaced using CRISPR-Cas9-mediated homology-directed repair (HDR) from a donor plasmid. The plasmid contained the two common coding exons of Dop1R2 with an HA-tag in the C-terminus and two FRT sites flanking this sequence. In the resulting Dop1R2cko allele, the inserted HA-tag and Dop1R2 sequence can be removed by flippase (FLP) in cells of interest. (C) Schematic representation of the Dop1R2 gene locus with three different transcript isoforms. The location of the two used CRISPR sites is highlighted in red. The positions of the transmembrane domains in the isoforms and in the donor plasmid are indicated. (D–F) Dop1R2::HA expression in a frontal brain confocal section of (D) y, w, (E) Dop1R2cko, or (F) UAS-flp/+;; dop1R2cko, OK107-Gal4/+ flies aged 1 week. The HA-tag was visualized using an anti-HA-tag antibody (green). Brain structures were labeled with anti-N-cadherin (nCad, magenta) antibody. Scale bar: 80 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/99368/elife-99368-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Co-expression of Dop1R2 and Gαo and Gαq, respectively. Cells expressing Dop1R2 are depicted in red, while the G-proteins are depicted in blue. Cells expressing both Dop1R2 and one of the G-proteins are shown in magenta. (C) Venn diagram of cells expressing Dop1R2, Gαo, and Gαq in pink, violet, and green, respectively. The size of the circles corresponds to the number of cells expressing proteins. (D) UMAP clustering of MB neurons, γ-lobe neurons are shown in pink, α/β-lobe neurons are shown in green, while α’/β’-lobe neurons are in blue. (E) Dot plot of dopamine receptors and G-proteins in the different MB lobes. The color and size of the dots represent the average expression and percentage of expression, respectively.
+
+### Dop1R2cko is expressed in the MB
 
 To monitor the localization of the tagged dopamine receptors, we first stained brains with an antibody against the HA-tag in 1-week-old flies. In the y, w control line (Figure 1D), the HA-tag does not show any specific staining. In the Dop1R2cko line, we see a clear signal in the entire MB (Figure 1E). This matches previous reports, as well as single-cell RNAseq data, showing that Dop1R2 is expressed in the MB (Croset et al., 2018; Han et al., 1996).
 
 Flipping the receptor out in the MB using the MB-specific OK107-Gal4 driver in combination with UAS-flp abolishes the signal, demonstrating the efficiency of the FRT sites (Figure 1F). Therefore, the flip-out system seems to work as planned.
 
-## STM is not affected by the loss of Dop1R2
+### STM is not affected by the loss of Dop1R2
 
 We wanted to see if flipping out Dop1R2 in the MB affects memory acquisition and STM by using classical olfactory conditioning. In short, a group of flies is presented with an odor coupled to an electric shock (aversive) or sugar (appetitive) followed by a second odor without stimulus. For assessing their memory, flies can freely choose between the odors either directly after training (STM) or at a later time point.
 
@@ -49,9 +57,17 @@ To test the requirement of Dop1R2 for STM, we assessed memory performance direct
 
 For aversive conditioning, flipping out Dop1R2 in the whole MB does not change STM compared to parental controls (Figure 2A). Next, we flipped out Dop1R2 in the γ-lobe using 5HTR1B-Gal4. This MB lobe is involved in STM (Blum et al., 2009; Trannoy et al., 2011; Heisenberg et al., 2000). Matching the results for the whole MB flip-out, we do not see a change in the performance score (Figure 2B). Similar results are obtained when we flip out the receptor in the α/β-lobes using c739-Gal4 (Figure 2C) or α’/β’-lobes using c305a-Gal4 (Figure 2D).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/99368/elife-99368-fig2-v1.jpg)
+
+**Figure 2.:** (A–D) Aversive training, (E–H) reward training. (A and E) Whole MB flip-out using OK107-Gal4 and parental controls. (B and F) γ-Lobe flip-out using 5HTR1B-Gal4 and parental controls. (C and G) α/β-Lobe flip-out using c739-Gal4 and parental controls. (D and H) α’/β’-Lobe flip-out using c305a-Gal4 and parental controls. No performance impairment was observed in any of the tested conditions. See Figure 2—figure supplement 1 for sensory controls . Bar graphs represent the mean, and error bars represent the standard error of the mean. For each shown graph, N=12. ns: not significantly determined by a one-way ANOVA and Tukey’s HSD.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/99368/elife-99368-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Response of y w and Dop1R2cko to MCH. (B) Response of y w and Dop1R2cko to Oct. (A) Response of y w and Dop1R2cko to shock. (A) Response of y w and Dop1R2cko to sugar. (E) 0 hr aversive memory of y w and Dop1R2cko. (F) 2 hr aversive memory of y w and Dop1R2cko. (G) 0 hr reward memory of y w and Dop1R2cko. In all tested conditions, the Dop1R2cko shows no significant difference to the control line. (H–K) Sensory responses of flies with Dop1R2 knockout in the whole mushroom body (MB) alongside the parental control lines. (H) Response to MCH. (I) Response to Oct. (J) Response to shock. (K) Response to sugar. Loss of Dop1R2 in the whole MB does not affect sensory responses. Bar graphs represent the mean, and error bars represent the standard error of the mean. For each shown graph, N=12. Asterisks denote significant differences between groups (*p<0.05, **p<0.005, ***p<0.001, ns: not significant) determined by one-way ANOVA and Tukey’s HSD.
+
 Reward STM is also not changed when Dop1R2 is flipped out in the whole MB (Figure 2E), in the γ-lobe (Figure 2F), the α/β-lobes (Figure 2G), or the α’/β’-lobes (Figure 2H). Taken together, the results indicate that Dop1R2 is required for STM in none of the MB lobes.
 
-## 2 hr memory is impaired by the loss of Dop1R2
+### 2 hr memory is impaired by the loss of Dop1R2
 
 As Dop1R2 was previously described to be involved in forgetting and/or memory maintenance, we wanted to assess later time points after training.
 
@@ -63,15 +79,31 @@ First, we looked at 2 hr after aversive training. Flip-out in the whole MB leads
 
 We tested the same for reward memory using sugar as reinforcement. Flip-out of Dop1R2 in the whole MB (Figure 3E) results in a reduced performance score. Loss of Dop1R2 in the γ-lobe does not affect memory performance (Figure 3F). As for aversive training, flip-out of Dop1R2 in the α/β-lobes (Figure 3G) or the α’/β’-lobes (Figure 3H) impaired 2 hr memory after reward training. However, the reduction is not as severe as for aversive training. Taken together, the results indicate that Dop1R2 is required for aversive 2 hr memory as well as reward 2 hr memory in the α/β-lobes and the α’/β’-lobes but is dispensable in the γ-lobe.
 
-## 24 hr memory is impaired by the loss of Dop1R2
+### 24 hr memory is impaired by the loss of Dop1R2
 
 Next, we wanted to see if later memory forms are also affected. One cycle of reward training is sufficient to create LTM (Krashes and Waddell, 2008), while for aversive memory, five to six cycles of electroshock training are required to obtain robust LTM scores (Tully et al., 1994). So, we looked at both 24 hr aversive and appetitive memory. For aversive LTM, the flies were tested on the Y-Maze apparatus as described in Mohandasan et al., 2022.
 
 Flipping out Dop1R2 in the whole MB causes reduced 24 hr memory performance (Figure 4A and E). No phenotype was observed when Dop1R2 was flipped out in the γ-lobe (Figure 4B and F). However, similar to 2 hr memory, loss of Dop1R2 in the α/β-lobes (Figure 4C and G) or the α’/β’-lobes (Figure 4D and H) causes a reduction in memory performance. Thus, Dop1R2 seems to be involved in aversive and appetitive LTM in the α/β-lobes and the α’/β’-lobes.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/99368/elife-99368-fig4-v1.jpg)
+
+**Figure 4.:** (A–D) Aversive training, (E–H) reward training. (A and E) Whole MB flip-out using OK107-Gal4 and parental controls. (B and F) γ-Lobe flip-out using 5HTR1B-Gal4 and parental controls. (C and G) α/β-Lobe flip-out using c739-Gal4 and parental controls. (D and H) α’/β’-Lobe flip-out using c305a-Gal4 and parental controls. For whole MB flip-out, α/β-lobes and α’/β’-lobes, both aversive and appetitive 24 hr memory performance is impaired. Loss of Dop1R2 in the γ-lobe does not affect 24 hr memory. See Figure 2—figure supplement 1 for sensory controls. Bar graphs represent the mean, and error bars represent the standard error of the mean. For each shown graph included in the reward training experiment, N=12, while for the graphs included in the aversive training experiment, N=14. Asterisks denote significant differences between groups (*p<0.05, **p<0.005, ***p<0.001, ****p<0.0001, ns: not significant) determined by Kruskal-Wallis with Dunn’s multiple comparisons test due to non-normal distribution (panels A–C) and one-way ANOVA and Tukey’s HSD (panels D–H).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/99368/elife-99368-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) 6 hr memory performance of Dop1R2 pan-neuronal knockout flies using elav-Gal4. (B) 24 hr memory performance of Dop1R2 pan-neuronal knockout flies using elav-Gal4. (C) Memory retention over 24 hr in Dop1R2 pan-neuronal knockout flies. Lack of the receptor in the whole nervous system does not improve memory retention, suggesting that Dop1R2 sparsely expressed outside of the mushroom body (MB) might not be regulating any memory process. Single shock training is not sufficient to retain aversive memory for 24 hr in control flies either. For each graph shown, N=7. Asterisks denote significant differences between groups (*p<0.05, **p<0.005, ***p<0.001, ns: p>0.05) determined by unpaired t-test. The one-sample t-test showed no significant difference from zero for all the groups apart from the control line in the 6 hr memory experiment.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/99368/elife-99368-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A–C) FasII expression in a frontal view of whole-brain immunostaining, highlighting the mushroom body. The Dop1R2cko modification does not affect γ-lobe (white arrows) development. Images were taken at ×63 magnification. Scale bar: 50 µm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/99368/elife-99368-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A and B) Aversive training of flies with whole mushroom body flip-out at 0 day post-eclosion, using the flies ;;Dop1R2cko and UAS-flp/+; tub-Gal80/+; Dop1R2cko as control and UAS-flp/+; tub-Gal80/+; Dop1R2cko; OK107-Gal4/+ the experimental, temporally restricted knockout flies. (A) Short-term memory (STM) tested 0 hr after training. (B) Long-term memory (LTM) tested 24 hr after training. Loss of Dop1R2 in the whole mushroom body exclusively after eclosion had no effect on STM but significantly impaired memory retention at 24 hr. Bar graphs represent the mean, error bars represent the standard error of the mean. For the STM graph, N=9, while for the LTM graph, N=14. Asterisks denote significant differences between groups (*p<0.05, **p<0.005, ***p<0.001, ****p<0.0001, ns: not significant) determined by one-way ANOVA and Tukey’s HSD.
+
 Previous studies have shown that mutation in the Dop1R2 receptor leads to improvement in LTM when a single shock training paradigm is used (Berry et al., 2012). As we found that it disrupts LTM, we wanted to verify if the absence of Dop1R2 outside the MB is what leads to an improvement in memory. To that extent, we tested pan-neuronal flip-out of Dop1R2 flies for 6 hr and 24 hr memory upon single shock using the elav-Gal4 driver. We found that it did not improve memory at both time points (Figure 4—figure supplement 1), confirming that flipping out Dop1R2 pan-neuronally does not improve LTM (Figure 4—figure supplement 1C) and highlighting its irrelevance in memory outside the MB.
 
-## Developmental defects are ruled out in a temporally restricted Dop1R2 conditional knockout
+### Developmental defects are ruled out in a temporally restricted Dop1R2 conditional knockout
 
 To exclude developmental defects in the MB caused by flip-out of Dop1R2, we stained fly brains with a FasII antibody. Compared to genetic controls, the anatomical organization as judged by FasII staining in flies lacking Dop1R2 in the MB was not altered (Figure 4—figure supplement 2C).
 
@@ -119,13 +151,199 @@ Using this line, we could show that Dop1R2 is specifically required for later me
 
 ## Methods
 
-## Fly husbandry
+**Table 1.**
+ Primers and guide RNAs (gRNAs) for generating Dop1R2 conditional knockout lines.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Primer name</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Dop1R2</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Sequence-based reagent</td>
+      <td>Dop1R2_5’_fw_SpeI</td>
+      <td>GCTGCAGACTAGTCAGCCACCACA</td>
+    </tr>
+    <tr>
+      <td>Dop1R2_5’_re_SmaI</td>
+      <td>CCTGAACCCGGGGATAAACTTTACCATAATGC</td>
+    </tr>
+    <tr>
+      <td>Dop1R2_fragment_fw_AgeI</td>
+      <td>GTTCGACCGGTGATTGCATTGTGTTCACCAG</td>
+    </tr>
+    <tr>
+      <td>Dop1R2_fragment_re_BstEII</td>
+      <td>GGGCTTGGTAACCACGACGAATCTTGCGTGGACAG</td>
+    </tr>
+    <tr>
+      <td>Dop1R2_3’_fw_XhoI</td>
+      <td>ATTCTCGAGAAGTATCAACCCACGATGCGTTC</td>
+    </tr>
+    <tr>
+      <td>Dop1R2_3’_re_Acc65I</td>
+      <td>GGCAACGGTACCAGATGCAGATACCG</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Sequence-based reagent</td>
+      <td>Dop1R2_gRNA_5’</td>
+      <td>ACGAACTTAAGATAAAGTGTCGG</td>
+    </tr>
+    <tr>
+      <td>Dop1R2_gRNA_3’</td>
+      <td>GCATCGTGGGCTGGTACTTCCGG</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Sequence-based reagent</td>
+      <td>Dop1R2_Screening_for</td>
+      <td>TATCCCTATGACGTCCCGGAC</td>
+    </tr>
+    <tr>
+      <td>Dop1R2_Screening_re</td>
+      <td>GACAGGTTGAGTGATGCGCC</td>
+    </tr>
+    <tr>
+      <td>Dop1R2_5’FRT_for</td>
+      <td>GGCTACACATCATTTTATGCCAG</td>
+    </tr>
+    <tr>
+      <td>Dop1R2_5’FRT_re</td>
+      <td>GTTCCTGTGCCTGATTCTGTTC</td>
+    </tr>
+    <tr>
+      <td>Dop1R2_3’FRT_for</td>
+      <td>TCCTAACTGGCTTCTCTTCC</td>
+    </tr>
+    <tr>
+      <td>Dop1R2_3’FRT_re</td>
+      <td>AGCGCTTAATTCACGAAAGC</td>
+    </tr>
+  </tbody>
+</table>
+
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent Drosophila melanogaster both male and female</td>
+      <td>y[1] w[*] P{y[+t7.7]=nos-phiC31\int.NLS}X; P{y[+t7.7]=CaryIP}su(Hw)attP6</td>
+      <td>Bloomington Stock Center</td>
+      <td>RRID:BDSC_32232</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Drosophila melanogaster both male and female</td>
+      <td>w;; Dr e/TM3</td>
+      <td>Bloomington Stock Center</td>
+      <td>RRID:BDSC_36305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Drosophila melanogaster both male and female</td>
+      <td>w[1118], 20XUAS-FLPG5.PEST</td>
+      <td>Bloomington Stock Center</td>
+      <td>RRID:BDSC_55807</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Drosophila melanogaster both male and female</td>
+      <td>OK107-Gal4</td>
+      <td>Kyoto Stock Center</td>
+      <td>DGGR_106098</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Drosophila melanogaster both male and female</td>
+      <td>5HTR1B-Gal4</td>
+      <td>Bloomington Stock Center</td>
+      <td>RRID:BDSC_27636</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Drosophila melanogaster both male and female</td>
+      <td>c739-Gal4</td>
+      <td>Hiromu Tanimoto (Tohoku University Japan)</td>
+      <td>RRID:BDSC_7362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Drosophila melanogaster both male and female</td>
+      <td>c305a-Gal4</td>
+      <td>Bloomington Stock Center</td>
+      <td>RRID:BDSC_30829</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Drosophila melanogaster both male and female</td>
+      <td>y w</td>
+      <td>Bloomington Stock Center</td>
+      <td>RRID:BDSC_1495</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent Drosophila melanogaster both male and female</td>
+      <td>FRT-Dop1R2-HA-FRT Dop1R2cko</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section: Creation of Dop1R2cko</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal α-HA clone 12CA5</td>
+      <td>Roche</td>
+      <td>RRID:AB _514505 11583816001</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Fasciclin II</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID:AB_528235</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal α-Droso-N-cadherin (Ncad)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID:AB_528121 DN-Ex #8</td>
+      <td>1:30</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Recombinant DANN reagent, pCFD4-U6_1_6_3tandemgRNAs plasmid</td>
+      <td>Simon Bullock</td>
+      <td>RRID:Addgene_49411</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly husbandry
 
 D. melanogaster flies were reared in plastic vials on standard cornmeal food (12 g agar, 40 g sugar, 40 g yeast, 80 g cornmeal per liter) and transferred to fresh food vials every 2–3 days. Flies were generally kept at 25°C, 60–65% humidity, and exposed to 12 hr light and 12 hr darkness with light onset at 8 am. The following fly lines were used: y[1] w[*] P{y[+t7.7]=nos-phiC31\int.NLS}X; P{y[+t7.7]=CaryIP}su(Hw)attP6 (abbreviated nos>Cas9 in this paper; BL 32232) for microinjection and as PCR template, w;; Dr e/TM3 (BL 36305) was used as third chromosomal balancer line. w[1118], 20XUAS-FLPG5.PEST (BL 55807) was used as UAS-flp. OK107-Gal4 (106098) was obtained from the Kyoto Stock Center. The 5HTR1B-Gal4 line (BL 27636) and the c305a-Gal4 (BL 30829) line are from Bloomington Stock Center. The c739-Gal4 line was gifted to us by H Tanimoto (Tohoku University Japan). The y w (BL 1495) line was used as the control line.
 
 UAS-flp;; Dop1R2cko flies and Gal4;Dop1R2cko flies were crossed back with ;;Dopcko flies to obtain appropriate genetic controls, which were heterozygous for UAS and Gal4 but not Dop1R2cko to control for genetic background.
 
-## Generation of Dop1R2cko
+### Generation of Dop1R2cko
 
 For generating the conditional knockout line, we needed three regions: (1) the 5’ flanking sequence upstream of the first FRT site as homologous region, (2) the 3’ flanking sequence downstream of the second FRT site as homologous region, (3) the sequence in between the two FRT sites hereafter named Dop1R2 coding fragment. To obtain the dopamine receptor fragments, genomic DNA from nos>Cas9 flies was used as the template for the PCRs. The primers used for the different PCR fragments are shown in Table 1. The 3’ and 5’ fragments of Dop1R2 were subcloned into pBluescript II SK(+) vector (pBS) with adequate restriction enzymes – SpeI and SmaI for the 5’ fragment and XhoI and Acc65I for the 3’ fragment. The Dop1R2 coding fragment was cloned with the Invitrogen TOPO kit. After sequence confirmation, the fragments were cloned subsequently into pBS-FRT-3xHA-FRT. The vector is modified from the vector used by Widmer et al., 2018. The GFP was replaced by 3xHA using 3xHA Nco.
 
@@ -137,31 +355,31 @@ Re: (agcttgcAGCGTAATCTGGAACGTCATATGGATAGGATCCTGCATAGTCCGGGACGTCATAGGGATAGCCCGCAT
 
 The two gRNAs were chosen using CRISPR Optimal Target Finder (http://targetfinder.flycrispr.neuro.brown.edu/). The used sequence was integrated into PCR primers to amplify a fragment of the pCFD4-U6_1_6_3tandemgRNAs plasmid (a gift from Simon Bullock, Addgene plasmid # 49411; Port et al., 2014) that was cloned into BbsI-digested pCFD4-U6_1_6_3tandemgRNAs vector using Gibson assembly (NEB). Insertion of the gRNAs was confirmed by sequencing. A mix containing 0.4 mg/ml template and 0.2 mg/ml of the gRNAs plasmid was injected into nos>Cas9 embryos. The injected flies were crossed with a third chromosomal balancer line. The F1 generation was crossed again with the third chromosomal balancer flies. As soon as eggs or larvae were visible, the adults were sacrificed to check for the Dop1R2 construct via PCR. Positive hits were then sequenced, and a stock was established.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Brains from 5- to 8-day-old flies were dissected in PBS (Bio-Froxx 1346LT050) and fixed in 3.7% formaldehyde for 25 min at RT. The brains were washed with 1X PBS containing 0.5% Triton X-100 (Carl Roth 3051.3) (0.5% PBST) before incubating the primary antibodies o/n at 4°C. The primary antibodies were mouse α-HA clone 12CA5 (Roche) 1:200, rat α-Droso-N-cadherin (Ncad) (Iowa H.B: DN-EX8) 1:30, or mouse α-Fasciclin II (FasII) (Iowa H.B: 1D4). After the brains were washed in 0.5% PBST again, they were incubated o/n at 4°C with the secondary antibodies. The following secondary antibodies were used: Goat α-rat Alexa 647 (Molecular Probes A-21247) and Goat α-Mouse Alexa 488 (Molecular Probes A11029) 1:200. The brains were washed again and mounted in self-made mounting media (90% Glycerol [Fischer Scientific Catalog No. BP229-1], 0.5% N-propyl gallate [Sigma P3130], 20 mM Tris [Fischer Scientific, Catalog No. BP152-5], pH 8.0) (adapted from NIC Harvard Medical School). The brains were imaged using a confocal microscope (Leica STELLARIS 8 FALCON) at ×40 magnification with the Plan APO ×40/1.10 water immersion objective at 1024×1024 pixels resolution and 600 Hz scan rate. Images were processed with Fiji ImageJ and Adobe Illustrator.
 
-## Learning apparatus
+### Learning apparatus
 
 For behavior experiments, we used a memory apparatus that is based on Tully and Quinn’s design and modified to allow conducting four memory experiments in parallel (CON-Elektronik, Greussenheim, Germany). Experiments were performed at 23–25°C and 65–75% relative humidity. The training was performed in dim red light, and memory tests were done in complete darkness. The two odors used were 3-octanol (3-Oct) (Sigma-Aldrich 218405) and 4-methyl-cyclohexanol (MCH) (Sigma-Aldrich 66360) diluted in paraffin oil (Sigma-Aldrich 18512) 1:100, respectively. 260 μl of the diluted odors were presented in a plastic cup of 14 mm in diameter. A vacuum membrane pump ensured odor delivery at a flow rate of 7 l/min.
 
-## Aversive olfactory conditioning
+### Aversive olfactory conditioning
 
 For aversive conditioning, groups of 50–100 flies of mixed sex were loaded in tubes lined with an electrifiable copper grid. The position in the machine and the sequence in which the genotypes were tested were randomized. Experiments in which more than half of the flies died, the flies did not move, or there were technical problems with the machine, as well as human errors, were excluded. The training was conducted in the morning. After an accommodation period of 90 s, the first odor was presented for 60 s. In parallel, 12 pulses of 100 V for 1.5 s were delivered with an interval of 3.5 s. After 30 s of flushing with fresh air, the second odor was presented for 60 s. For the subsequent group of flies, the order of the two odors was reversed. For measuring 0 hr performance, flies were tested about 3 min after the end of the conditioning. To determine 2 hr memory performance, flies were transferred to food vials after conditioning and kept at 25°C until the test. For each genotype and condition, the biological replicate is N=12.
 
 For long-term aversive memory, groups of flies were trained with six cycles, where each cycle was composed of 60 s of the first odor presented simultaneously with 12 pulses of 90 V for 1.5 s with an interval of 3.5 s followed by 30 s of fresh air and 60 s of the second odor. The cycles were spaced by 15 min of inter-training intervals. The flies were starved for 24 hr before testing for LTM to increase motivation to climb the Y-Maze and make a decision. The biological replicate is N=7.
 
-## Appetitive olfactory conditioning
+### Appetitive olfactory conditioning
 
 Before appetitive conditioning, groups of 50–100 flies with mixed sex were starved for 19–21 hr in plastic vials containing damp cotton at the bottom. Experiments in which more than half of the flies died, the flies did not move, or there were technical problems with the machine, as well as human errors, were excluded. The position in the machine and the sequence in which the genotypes were tested were randomized. The training was conducted in the morning. The conditioning protocol consists of a 90 s accommodation period, 120 s of the first odor, 60 s of fresh air followed by 120 s of the second odor. During the first odor, flies are in a conditioning tube lined with filter paper that was soaked in water the day before the experiment and left to dry overnight. For the second odor, flies are transferred to a conditioning tube lined with a filter paper that was soaked with a 1.5 M sucrose (Sigma-Aldrich, Cat# 84100-1KG; CAS Number 57-50-1) solution on the day before and left to dry at RT. After conditioning, flies were either directly tested for STM or put back in starvation vials until the memory test 2 hr later. For 24 hr memory, flies were fed for 3 hr after training before starving them again. One experiment consisted of two reciprocal conditionings, in which the odor paired with sucrose was reversed. For each genotype and condition, the biological replicate is N=12.
 
-## Memory tests
+### Memory tests
 
 Flies were loaded into a sliding compartment and transferred to a two-arm choice point. Animals were allowed to choose between 3-octanol and 4-methyl-cyclohexanol. After 60 s, flies trapped in both arms were collected separately and counted. Based on these numbers, a preference index was calculated as follows: PREF = ((Narm1 – Narm2) 100)/Ntotal. The two preference indices were calculated from the two reciprocal experiments. The average of these two PREFs gives a learning index (LI). LI = (PREF1 + PREF2)/2.
 
 In case of all long-term aversive memory experiments, the Y-Maze protocol was adapted to test flies 24 hr post-training. Testing using the Y-Maze was done following the protocol as described in Mohandasan et al., 2022, where flies were loaded at the bottom of 20 min odorized 3D-printed Y-Mazes from where they would climb up to a choice point and choose between the two odors. The learning index was then calculated after counting the flies in each odorized vial as follows: LI = ((NCS- – NCS+) 100)/Ntotal, where N CS- and N CS+ are the number of flies that were found trapped in the untrained and trained odor tube, respectively.
 
-## Sensory accuracy tests
+### Sensory accuracy tests
 
 Flies were tested for their ability to sense the two used odors 3-octanol and 4-methyl-cyclohexanol, as well as electric shock. Therefore, the flies were loaded into a sliding compartment and brought to a two-arm choice point. The flies were allowed to freely choose between an arm containing the stimulus and a neutral arm. All experiments were carried out in the dark. Afterward, the flies in each arm were counted, and a preference index was calculated.
 
@@ -173,7 +391,7 @@ For shock response, the flies could freely choose for 60 s between a copper-grid
 
 For testing sugar sensitivity, a group of flies was starved for 1–21 hr in a tube with damp cotton on the bottom. They could choose for 120 s between a tube lined with filter paper that was soaked in 1.5 M sucrose solution the day before or a tube lined with filter paper that was soaked in distilled water the day before. Preference index PI = ((Nsucrose − Nwater)100)/Ntotal.
 
-## Statistical analysis
+### Statistical analysis
 
 To compare performance indices between different groups, we used one-way ANOVA (analysis of variance) with post hoc Tukey’s HSD (honestly significant difference) test calculator for comparing multiple treatments in R with the package multcomp. In the case of two groups, we performed a t-test for comparison.
 
@@ -181,6 +399,6 @@ To verify if the data was normally distributed, we used Shapiro-Wilk’s test fo
 
 We used one-way ANOVA with post hoc Tukey’s HSD test when the data was normally distributed. And the nonparametric counterpart, Kruskal-Wallis test when it wasn’t, along with Dunn’s multiple comparisons test. We also verified if all the groups were significantly different from zero using a one-sample t-test for normally distributed data and a Wilcoxon’s signed-rank test when the data was not normally distributed.
 
-## Single-cell transcriptomic data analysis
+### Single-cell transcriptomic data analysis
 
 Single-cell transcriptomics data from Davie et al., 2018, was downloaded from the Gene Expression Omnibus (GEO). The metadata containing the annotations was also downloaded and used to annotate the clusters. The clustering and further transcriptomic analyses were performed using the Seurat (version 5.2.1) package for R (Hao et al., 2024). The clustering was done at 0.5 Seurat resolution. And the UMAP was computed using the top 10 principal components. The LogNormalize method from Seurat was used to calculate log-normalized gene expression values. The Venn diagram in Figure 1—figure supplement 1 was created using BioVenn (Hulsen et al., 2008).

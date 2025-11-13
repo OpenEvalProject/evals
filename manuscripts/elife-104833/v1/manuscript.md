@@ -11,10 +11,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00a2xv884 The State Key Lab of Brain-Machine Intelligence, Zhejiang University Hangzhou China
-2. https://ror.org/00a2xv884 Nanhu Brain-computer Interface Institute Hangzhou China
-3. https://ror.org/00a2xv884 Department of Biomedical Engineering, Zhejiang University Hangzhou China
-4. https://ror.org/00a2xv884 College of Computer Science and Technology, Zhejiang University Hangzhou China
+1. The State Key Lab of Brain-Machine Intelligence, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+2. Nanhu Brain-computer Interface Institute Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+3. Department of Biomedical Engineering, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+4. College of Computer Science and Technology, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
 
 † Corresponding author
 
@@ -36,21 +36,49 @@ To address these challenges, we introduced a home-cage assisted behavioral innov
 
 ## Results
 
-## System design of HABITS
+### System design of HABITS
 
 The entire architecture of HABITS was comprised of two parts: a custom home-cage and behavioral components embedded in the home-cage (Figure 1A). The home-cage was made of acrylic plates with a dimension of 20×20 × 30 cm, which is more extensive than most of the commercial counterparts for single-housed mice. A tray was located at the bottom of the cage where ad libitum food, bedding, nesting material (cotton), and enrichment (a tube) were placed (Figure 1B). Experimenters can change the bedding effortlessly just by exchanging the tray. The home-cage also included an elevated, arc-shaped weighting platform inside, providing a loose body constraint for the mouse during task performing (Figure 1A). Notably, a micro load cell was installed beneath the platform, which can read out body weight of the mouse for long-term health monitoring. The cage was compatible with the standard mouse rack and occupied as small a space as standard mouse cage (Figure 1C).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/104833/elife-104833-fig1-v1.jpg)
+
+**Figure 1.:** (A), Front (left) and side (right) view of HABITS, showing components for stimulus presenting (LEDs & buzzers), rewarding (water tanks and pumps), behavioral reporting (lickports) and health monitoring (weight platform). These components are coordinated by the controller unit and integrated into the mouse home-cage with a tray for bedding change. (B), HABITS installed on standard mouse cage rack. (C), Mouse, living in home-cage with food, bedding, nesting material (cotton), and enrichment (tube), is performing task on the weight platform. (D), System architecture for high-throughput behavioral training, showing different tasks are running in parallel groups of HABITS, which further wirelessly connect to one single PC through Wi-Fi to stream real-time data to the graphic user interface (GUI).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/104833/elife-104833-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Block diagram of control system of HABITS, showing peripherals connected with microcontroller through digital input/output (DIO) or serial port. (B) Graphic user interface (GUI) of a specific cage (left, magnified) and data plot window (right) when clicking the ‘plot’ button in the GUI, showing daily performance in all previous days, trial performance (green for correct and red for error trials) in last 24 hours, and body weight data in last 24 hours. (C) Example protocol programs for HABITS. (D) Around 100 HABITS are packed on standard racks for large-scale mouse behavioral testing. (E) Workflow pipeline for HABITS, showing fully autonomous mouse behavioral training after initialization of HABITS, before data harvest from SD card for analysis.
+
 To perform behavioral training and testing in HABITS, we constructed a group of training-related components embedded in the front panel of the home-cage (Figure 1A). Firstly, three stimulus modules (LEDs and buzzers) for light and sound presenting were protruded from the front panel and placed in the left, right, and top positions around the weighting platform, enabling generation of visual and auditory stimulus modalities in three different spatial locations. The mouse reported the decisions about the stimuli by licking either left, right, or middle lickports installed in the front of the weighting platform. Finally, peristaltic pumps draw water from water tanks into lickports, serving as the reward for the task, which was the sole water source for the mouse throughout the period living in the home-cage. In the most common scenario, mice living in home-cage stepped on the weighting platform and triggered trials by licking on the lickports to obtain water (Figure 1B, Video 1).
+
+![Video 1.](https://cdn.elifesciences.org/articles/104833/elife-104833-video1.mp4.jpg)
 
 To endow autonomy to HABITS, a microcontroller was used to interface with all training-related components and coordinate the training procedure (Figure 1—figure supplement 1A). We implemented a microcontroller-based general programming framework to run finite state machine with millisecond-level precision (see Materials and methods). By using the APIs provided by the framework, we can easily construct arbitrarily complex behavioral paradigms and deploy them into HABITS (Figure 1—figure supplement 1B). Meanwhile, the paradigms were usually divided into small steps from easy to hard and advanced according to the performance of the mouse. Another important role of the microcontroller was to connect the HABITS to PC wirelessly and stream real-time behavioral data via a Wi-Fi module. A graphic user interface (GUI), designed to remotely monitor each individual mouse’s performance, displayed history performance, real-time trial outcomes, body weights, etc. (Figure 1—figure supplement 1C). Meanwhile, the program running in the microcontroller could be updated remotely by the GUI when changing mouse and/or task. As a backup, information of training setup, task parameters, and all behavioral data were also stored in an SD card for offline analysis.
 
 To increase the throughput of behavioral testing, we built more than a hundred independent HABITS and installed them on standard mouse racks (Figure 1—figure supplement 1D). The total material cost for each HABITS was less than $100 (Supplementary file 1). All HABITS, operating different behavioral tasks across different cohorts of mice, were organized into groups according to the tasks and wirelessly connected to a single PC (Figure 1D). The states of each individual HABITS can be accessed and controlled remotely by monitoring the corresponding panels in the GUI, thereby significantly improving the experimental efficiency. We developed a workflow to run behavioral training and testing experiments in HABITS (Figure 1—figure supplement 1E). Firstly, initiate the HABITS system by preparing the home-cage, deploying training protocols, and weighing the naive mouse that did not need to undergo any water restriction. Then, the mouse interacted with fully autonomous HABITS at their own pace without any human intervention. In this study, mice housed in HABITS went through 24/7 behavioral training and testing for up to 3 months (Video 2), although longer duration was supported. Finally, data were harvested from the SD card and offline analyzed.
 
+![Video 2.](https://cdn.elifesciences.org/articles/104833/elife-104833-video2.mp4.jpg)
+
 Therefore, HABITS permitted high-throughput, parallel behavioral training and testing in a fully autonomous way, which, contrasting with manual training, allows for possible behavioral innovation and underlining neural mechanism investigation.
 
-## HABITS performance probed by multimodal d2AFC task
+### HABITS performance probed by multimodal d2AFC task
 
 We next deployed a well-established mouse behavioral paradigm, delayed two-alternative forced choice (d2AFC), which was used to study motor planning in mouse Guo et al., 2014b; Inagaki et al., 2018, in HABITS to demonstrate the performance of our system (Figure 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/104833/elife-104833-fig2-v1.jpg)
+
+**Figure 2.:** (A) Task structure for d2AFC based on sound frequency. (B) Example licks for correct (blue), error (red), and early lick (gray) trials. Choice is the first lick after response onset. (C) Correct rate (black line) and early lick rate (gray line) of an example mouse during training in HABITS for the first 13 days. Shaded blocks indicate trials occurred in the dark cycle. Trials with early lick inhabitation only occur after the blue vertical line. Red vertical dash lines represent delay duration advancement from 0.2 s to 1.2 s. (D) Averaged correct rate (left) and early lick rate (right) for all mice trained in d2AFC. Criterion level (75%) and chance level (50%) are labeled as gray and red dash lines, respectively. (E) Same as (D) but for manual training (1~3 hr/day in home-cage). (F) Averaged correct rate (left), early lick rate (middle), and no response rate (right) of expert mice trained with the two protocols. (G) Averaged number of trials (left) and days (right) to reach the criterion performance for the two training protocols. Circles, individual mice. Error bar, mean, and 95% CI across mice. (H) Left, number of trials performed per day throughout the training schedule for three different protocols. Error bar indicates the mean and 95% confidence interval (CI) across mice. Middle, volume of water harvested per day. Right, Relative body weights of mice in days 0, 8, 16, 26. Bold line and shades indicate mean and 95% CI across mice. (I) Behavioral performance of all mice training in d2AFC task based on sound orientation (left), light orientation (middle), and light color (right). (J) Box plot of average number of trials (left) and days (right) to reach the criterion performance for d2AFC tasks with different sensory modalities. (K), Left, percentage of trials performed as a function of time in a day for the four modalities trained autonomously (thick black shows the average). Shaded area indicates the dark cycle. Top right, averaged correct rate of grouped mice in dark cycle versus light cycle. Error bars show 95% CI across mice. Bottom right, box plot of the averaged proportion of trials performed in dark cycle for the four modalities. Data collected from expert mice. (L) Left, percentage of trials in blocks with varying number of consecutive trials for automated training in home-cage. Right, correct rate and early lick rate as functions of trial block size. Gray dash line, the criterion performance; Red dash line, chance performance level. Data collected from trials of expert mice. For significance levels not mentioned in all figures, n.s., not significant, p>0.05; *, p<0.05; **, p<0.01 (two-sided Wilcoxon rank-sum tests).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/104833/elife-104833-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Flow chart of the task training protocol in home-cage (Materials and methods). (B) Logistic regression model. (C) Top, behavioral performance of example mouse in the autonomous training. Bottom, the significance of individual regressors; Circle size corresponds to p values; The significance of a regressor is evaluated by comparing the prediction of the full model to a partial model with the regressor of interest excluded. p-values are based on cross-validation t-test (Materials and methods). (D) Percentage of trials significantly predicted by different regressors during task learning. Cycles and light lines, individual mice; Bars and bold lines, average across mice; Shades and error bars, 0.95 CI. *, p<0.05, n.s., p>0.05, two-sided Wilcoxon rank-sum tests. (E) averaged water harvested per day (left) and number of trials per day (right) changing from manual to autonomous training in home-cage. Cycles, individual mice; Bar plot and error bar, mean and 0.95 CI across mice. (F) Averaged relative body weights as a function of training days for free water (blue) and all d2AFC training mice (black). Shaded area shows 95% CI. (G), Performance of all 6 female mice performing d2AFC task in home-cage automatically. (H) The histogram of inter-trial interval for both autonomous and manual training in HABITS.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/104833/elife-104833-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Task structure of RT-based 2AFC task. (B) Flow chart of training protocol in home-cage. (C) Conditioned behavioral data of example trials for correct (blue block) and error (red block) choice. (D) Performance of example mouse performing task in home-cage. The color of the background corresponding to (B). Gray blocks indicate dark cycle. Gray dash line, the criterion performance. Red horizontal dash line, chance performance level. (E) Correct rate of all mice. (F) Reaction time of all mice. Black line fitting to all mice from the onset to the end of training. (G) Histogram of reaction time. Data collected from all mice. The bold vertical line represents the median of RT. (H) Conditioned histogram of inter-trial interval (ITI) for correct (blue) and error (red) trials.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/104833/elife-104833-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Task structure. (B) Example performance of a mouse in the early (top, first 6000 trials) and late (bottom, last 6000 trials) training stages with block size 500. Blue lines represent moving averaged behavioral probability of left choice within 40 trials. Purple lines show the assignment probability for left reward. (C) Averaged probability of choosing the lickport with the higher assignment probability (P(high)) across mice gradually increases following the number of trials. Black line indicates the assignment probability for left and right lickports is 60% (gray line, 52.5%) and 10% (gray line, 17.5%), respectively. Dots and error bars, mean and 95% CI. (D) Left, averaged P(high) across mice follows training sub-protocols with different block size. Right, the number of days to complete all training protocols from block size 500–100. Square dots indicate individual mice. (E) Same as (B) but data collected from the sub-protocol with block size 100.
 
 Mice, living in HABITS all the time, licked any of the lickports to trigger a trial block at any time. In the d2AFC task with sound frequency modality (Figure 2A), mice needed to discriminate two tone frequencies presented at the beginning of the trial for a fixed duration (sample epoch, 1.2 s) and responded to the choice by licking left (low tone) or right (high tone) lickports following a brief ‘go’ cue after a fixed delay duration (1.2 s). Licks during the delay epoch were prohibited, and unwished licks (early licks) will pause the trial for a while. Correct choices were rewarded, while incorrect choices resulted in noise and timeout. If mice did not lick any of the lickports after the ‘go’ cue for a fixed period (i.e. no-response trial), the trial block was terminated. The next trial block was immediately entering the state of to be triggered. Mice can only learn the stimulus-action contingency by trial-and-error. To promote learning, we designed an algorithm comprised of many subprotocols to shape the behavior step by step (Figure 2—figure supplement 1A). Figure 2B illustrated example licks during correct, error, and early lick trials for the task. As training progressed, the correct rate increased and early lick rate declined gradually for the example mouse within the first 2 week (Figure 2C). All the 10 mice enrolled in this task effectively learned the task and suppressed licking during the delay period within 15 days (Figure 2D), achieving an average of 980±25 (mean ± SEM) trials per day.
 
@@ -58,13 +86,192 @@ We also tested another training scheme that is limited duration per day in HABIT
 
 Three more cohorts of mice were used in d2AFC tasks with different modalities, which included sound orientation (left vs. right sound), light orientation (left vs. right light), and light color (red vs. blue). Using the same training protocol as in the sound frequency modality, we trained 10, 11, and 8 mice on these tasks, respectively (Figure 2I). Mice required different amounts of trials or days to discriminate these modalities, with light color discrimination being the most challenging (an average of 82,932±6817 trials), consistent with the limited sensitivity to light wavelength of mice (Figure 2J). We also tried other modalities, like blue vs. green and flashed blue vs. green, but all failed (see Table 1). The learning rate between sound and light orientation discrimination tasks was similar (p=0.439, two-sided Wilcoxon rank-sum test), but the variation for light orientation was large, indicating possible individual differences (Figure 2J). All modalities maintained good health state indicated by the body weight for up to 2 months (Figure 2—figure supplement 1F). Another two types of 2AFC, reaction time (Munoz and Everling, 2004) (RT-2AFC, Figure 2—figure supplement 2) and random foraging (Figure 2—figure supplement 3) task, were also successfully tested in HABITS. Notably, the dynamic foraging task (Hattori et al., 2023; Hattori et al., 2019), which heavily relies on historical information, was first demonstrated in a fully autonomous training scheme for freely moving mice with similar block size and performance.
 
+**Table 1.**
+ All tasks training in HABITS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protocol name (abbreviation)</th>
+      <th>Modality</th>
+      <th>Animals trained(trained / used)</th>
+      <th>Note</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">delayed 2-Alternative Forced Choice (d2AFC)</td>
+      <td>Sound frequency (3 k vs. 10 kHz)</td>
+      <td>11/11</td>
+      <td rowspan="4">Figure 2</td>
+    </tr>
+    <tr>
+      <td>Sound orientation (Left vs. Right)</td>
+      <td>10/11</td>
+    </tr>
+    <tr>
+      <td>Light orientation (Left vs. Right)</td>
+      <td>10/11</td>
+    </tr>
+    <tr>
+      <td>Light color (Blue VS. Red)</td>
+      <td>8/11</td>
+    </tr>
+    <tr>
+      <td>Light color (Green VS. Blue)</td>
+      <td>0/10</td>
+      <td rowspan="2">Mice are insensitive to light colors.</td>
+    </tr>
+    <tr>
+      <td>Light color (flashed Green VS. Blue)</td>
+      <td>0/10</td>
+    </tr>
+    <tr>
+      <td>Reaction time 2AFC (RT-2AFC)</td>
+      <td>Sound frequency (3 k vs. 12 kHz)</td>
+      <td>6/6</td>
+      <td>Figure 2—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Contingency reversal</td>
+      <td>RT-2AFC, sound frequency (3 k vs. 12 kHz)</td>
+      <td>8/8</td>
+      <td>Figure 3A</td>
+    </tr>
+    <tr>
+      <td>Continuous learning</td>
+      <td>Sound freq. (3 k vs. 12 kHz), reversal sound freq., sound orient. (Left vs. Right), reversal sound orient., light orient. (Left vs. Right)</td>
+      <td>10/30</td>
+      <td>Figure 4A;20 mice did not learn light oriental modal within 90 days.</td>
+    </tr>
+    <tr>
+      <td>Evidence accumulation with spatial cue</td>
+      <td>Poisson distributed clicks with spatial diff. (Left vs. Right)</td>
+      <td>8/10</td>
+      <td>Figure 3C</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Multimodal Integration</td>
+      <td>Poisson distributed clicks and flashes (4 vs 20 events/s)</td>
+      <td>13/15</td>
+      <td>Figure 3D</td>
+    </tr>
+    <tr>
+      <td>Poisson distributed light flashes (4 vs 20 events/s)</td>
+      <td>3/15</td>
+      <td>12/15 mice failed to discriminate light flash</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Confidence probing task</td>
+      <td>Sound frequency (8 k vs. 32 kHz)</td>
+      <td>5/6</td>
+      <td>Figure 3E</td>
+    </tr>
+    <tr>
+      <td>Sound frequency (8 k vs. 32 kHz) and Poisson distributed clicks with spatial diff. (Left vs. Right)</td>
+      <td>0/12</td>
+      <td>Delay period up to 8 sec, failed</td>
+    </tr>
+    <tr>
+      <td>Value-based dynamic foraging task</td>
+      <td>No sensory cues (Block size from 500 to 100)</td>
+      <td>6/6</td>
+      <td>Figure 2—figure supplement 3</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Working memory task</td>
+      <td>Temporal regular clicks with 5 alternative rates (8, 16, 32, 64, 128 Hz)</td>
+      <td>5/6</td>
+      <td>Figure 3B</td>
+    </tr>
+    <tr>
+      <td>Temporal regular clicks with 3 alternative rates (8, 32, 128 Hz)</td>
+      <td>8/8</td>
+      <td>Figure 3—figure supplement 1 C</td>
+    </tr>
+    <tr>
+      <td rowspan="2">double Delayed Match Sample (dDMS)</td>
+      <td>Sound frequency (3 k &amp; 12 kHz)</td>
+      <td>10/10</td>
+      <td>Figure 4B;Sample and test period: 500ms</td>
+    </tr>
+    <tr>
+      <td>Sound frequency (3 k &amp; 12 kHz)</td>
+      <td>0/10</td>
+      <td>Random sample and test period: 100 or 1000ms</td>
+    </tr>
+    <tr>
+      <td rowspan="3">delayed 3-Alternative Forced Choice (d3AFC)</td>
+      <td>Sound frequency (8 k vs. 16 k vs. 32 kHz)</td>
+      <td>14/14</td>
+      <td>Figure 4C</td>
+    </tr>
+    <tr>
+      <td>Sound frequency reversal (8 k vs. 16 k vs. 32 kHz)</td>
+      <td>4/4</td>
+      <td>Figure 3—figure supplement 1B</td>
+    </tr>
+    <tr>
+      <td>Sound orientation (Left vs. Middle vs. Right)</td>
+      <td>6/6</td>
+      <td>Figure 3—figure supplement 1A</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Context-dependent attention task</td>
+      <td>Sound frequency (3 k vs. 12 kHz) or sound orientation (Left vs. Right); regular click rates (16 vs 64 Hz) as context cue</td>
+      <td>6/6</td>
+      <td>Figure 4D</td>
+    </tr>
+    <tr>
+      <td>Sound orientation (Left vs. Right) or light orientation (Left vs. Right); regular click rates (16 vs 64 Hz) as context cue</td>
+      <td>0/10</td>
+      <td rowspan="2">Mice failed in light modality</td>
+    </tr>
+    <tr>
+      <td>Sound orientation (Left vs. Right) or light orientation (Left vs. Right); Sound frequency (3 k vs. 12 kHz) as context cue</td>
+      <td>0/20</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Machine teaching algorithm</td>
+      <td>Working memory task, Temporal regular clicks with 5 alternative rates and full stimulus matrix (8, 16, 32, 64, 128 Hz)</td>
+      <td>7/7 (MT)5/8(Random)</td>
+      <td>Figure 5B</td>
+    </tr>
+    <tr>
+      <td>RT-2AFC, Sound frequency (3 k vs. 12 kHz)</td>
+      <td>10/10 (MT)10/10 (random)10/10 (antibias)</td>
+      <td>Figure 5F;Same group of mice used in continuous learning</td>
+    </tr>
+    <tr>
+      <td>2AFC with Sound frequency (3 k vs. 12 kHz), sound orientation (Left vs. Right) and sound orientation reversal, respectively</td>
+      <td>10/10 (MT)8/8 (random)</td>
+      <td>Figure 6</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>N/A</td>
+      <td>200/284</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
 Two important behavioral characteristics were revealed across all the modalities in 2AFC task. Firstly, as our high-throughput behavioral training platform operated on a 12:12 light-dark cycle, the long-term circadian rhythm of mice can be evaluated based on the number of triggered trials and performance during both cycles. We found all mice exhibited clear nocturnal behavior with peaks in trial proportion at the beginning and end of the dark period (Figure 2K), which was consistent with previous studies (Francis et al., 2019; Hao et al., 2021). The light color modality exhibited a slightly lower percentage of trials during dark (57.89% ± 3.18% vs. above 66% for other modalities; Figure 2K), possibly the light stimulus during trials affected the circadian rhythms of the mice. It was also observed that all mice except the light color modality showed no significant differences in correct rate between light and dark cycle after they learned the task (Figure 2K). The higher performance in a dark environment for light color modality implied that light stimulus presented in a dark environment was with higher contrast and thus better discernibility. Secondly, as we organized the trials into blocks, the training temporal dynamic at trial-level could be examined. We found more than two-thirds of the trials were done in >5-trial blocks (Figure 2L left), which resulted in more than 55% of the trials being with inter-trial intervals less than 2 s (Figure 2—figure supplement 1H). The averaged block duration was 27.64±1.73 s and mice triggered another block of trials within 60 s in more than 60% of cases. Meanwhile, we also found that the averaged correct rate increased and the early lick rate decreased as the length of the block increased (Figure 2L right), which suggested that mice were more engaged in the task during longer blocks.
 
 These results showed that mice can learn and perform cognitive tasks in HABITS with various modalities in a fully autonomous way. During the training process, mice maintained good health conditions, although without any human intervention. Due to the high-efficiency training with less labor and time, it gave us an opportunity to explore and study more widespread cognitive behavioral tasks in mice.
 
-## Various cognitive tasks demonstrated in HABITS
+#### Various cognitive tasks demonstrated in HABITS
 
 We next tested several representative tasks that were commonly used in the field of cognitive neuroscience to demonstrate the universality of HABITS. It is worth noting that many new features of the behavior could be explored due to the autonomy and advantages of HABITS, in terms of either quantity or quality (Figure 3).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/104833/elife-104833-fig3-v1.jpg)
+
+**Figure 3.:** (A) Contingency reversal task. (A1) Task structure. (A2) Correct rate of example mice with different learning rates. Gray vertical lines indicate contingency reversal. (A3) Relative number of trials to reach the criterion as a function of reverse times. Gray lines, individual mice. Black lines, linear fit. (A4) Number of trials in the first reversal learning versus the average number of trials of the rest of contingency reversal learning for each mouse (each dot). Black line, linear regression. Red dash line, diagonal line. (B) Working memory task with sound frequency modality. (B1) Task structure. (B2) Stimulus generation matrix (SGM) for left (orange) and right (green) trials. (B3) Left, averaged correct rate for each stimulus combination tested. Right, averaged correct rate for each (S1 +S2) stimulus combination across mice. Black line and shade, linear regression and 95% CI. (B4) Averaged psychometric curves, that is percentage of right choice as a function of frequency difference between sample 1 and sample 2. (B5) Averaged correct rate as a function of delay duration. (C) Evidence accumulation with spatial cue task. (C1) Task structure. (C2) Averaged psychometric curves, that is performance as a function of the difference between right and left clicks rates. (C3) Averaged correct rate across all mice as a function of sample duration for different Poisson rates (different colors). Error bar represents 95% CI. (D) Multimodal integration task. (D1) Task structure. (D2) Averaged correct rate across all mice as a function of sample duration for different stimulus modalities (different colors). (D3) Averaged event rates during sample period for left (red) and right (blue) choice trials. (D4) Averaged weights (black line) of logistic regression fitting to the choice of trials across expert mice tested in >1000 trials (N=11 mice) from the first bin (40ms) to the last bin (1000ms) of the sample period. A gray dash line represents the null hypothesis. Gray dots indicate significance, p<0.05, two-sided t-tests. (D5), Psychometric curve for trials with multimodal stimulus. (E) Confidence probing task. (E1) Task structure. (E2) Psychometric curve, that is right choice rate as a function of relative contrast (log scaled relative frequency). (E3) Histogram of time invested (TI) for both correct and error trials. (E4) Averaged correct rate across all mice as a function of TI. (E5) Averaged TI as a function of absolute relative contrast for both correct and error trials. Cycles, individual mice; *, p<0.05; **, p<0.01, two-sided Wilcoxon rank-sum tests.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/104833/elife-104833-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A), Left, stimulus generation matrix of working memory task. Middle, number of days to train. Right, correct rate for SGM. Values lying in the diagonal line corresponding to the correct rate of probe trials. (B), Top, d3AFC task according to sound orientation and number of days to reach the criterion performance. Dots indicate individual mice. Performance (middle) and early lick rate (bottom) of all mice performing the d3AFC task. Red dash line, chance performance level; Grey dash line, the criterion performance. (C), Left, contingency reversal of d3AFC task according to sound frequency (top) and performance of an example mouse (bottom). Right, averaged correct rate across all mice for different reverse times (top). Number of trials needed to learn as a function of reverse training times (bottom). Dots, individual mice. Line and shades, linear regression.
 
 Contingency reversal task was a cognition-demanding task and previously used to investigate cognitive flexibility (Izquierdo et al., 2017; Figure 3A). In the task, the contingency for reward switched without any cues once mice hit the criteria performance (Figure 3A1). Mice can dynamically reverse their stimulus-action contingency, though with different learning rates across individuals (Figure 3A2). Given the advantages of long-term autonomous training in HABITS, all mice underwent contingency reversal for an average of 52.25±16.39 times, and one mouse achieved up to 125 times in 113 days. Most of the mice (6/8) gradually decreased the number of trials to reach criterion across multiple contingency reversals representing an effect of learning to learn (Hattori et al., 2023; Akrami et al., 2018; Figure 3A3). Meanwhile, the average number of trials to reach criterion during the reversal was highly correlated with the trial number in the first reversal learning which represented the initial cognitive ability or the sensory sensitivity of individual mice (Figure 3A4).
 
@@ -78,7 +285,7 @@ Confidence was another important cognition along with the process of decision-ma
 
 In summary, mice could undergo stable and effective long-term training in HABITS with various cognitive tasks commonly used in state-of-the-art neuroscience. These tasks running in HABITS were demonstrated to exhibit similar behavioral characteristics to previous studies. In addition, some new aspects of the behavior could be systematically tested in HABITS due to its key advantage of autonomy. This high level of versatility, combined with the ability to support arbitrary paradigm designs, suggests that more specialized behavioral paradigms could potentially benefit from HABITS to enhance experimental novelty.
 
-## Innovating mouse behaviors in HABITS
+### Innovating mouse behaviors in HABITS
 
 One of the main goals of HABITS was to expand mouse behavioral reservoir by developing complex and innovative paradigms that had previously proven challenging or even impossible for mice. These paradigms imposed higher cognitive abilities demands, which required an extensively long period to test in a mouse model. HABITS enabled unsupervised, efficient, and standardized training of these challenging paradigms at scale, and thus was suitable for behavioral innovations.
 
@@ -96,11 +303,19 @@ Finally, we introduced one of the most challenging cognitive tasks in mouse mode
 
 As a summary, by introducing changes in trial structure, cognition demands, and perceptual modalities, we extended mice behavior patterns in HABITS. These behaviors were usually challenging and very difficult to test previously with manual training. Thus, the training workflow of our system potentially allows for large-scale and efficient validation and iteration of innovative paradigms aimed to explore unanswered cognitive questions with mouse models.
 
-## Machine-learning-aided behavioral optimization in HABITS
+### Machine-learning-aided behavioral optimization in HABITS
 
 Mice can be trained to learn challenging tasks in a fully autonomous way in HABITS; however, whether the training efficiency is optimal was unknown. We hypothesized that an optimal train sequence generated by integrating all histories could enhance training procedure, compared with commonly used random or anti-bias strategies. Benefited from recent advances in machine teaching (MT) Zhu et al., 2018, and inspired by previous simulations in optimal animal behavior training experiments Bak et al., 2016, we developed a MT-based automated training sequence generation framework in HABITS to further improve the training qualities.
 
 Figure 5A illustrated the architecture of the MT-based training framework. Initially, mice made an action corresponding to the stimuli presented in current trial t in HABITS; subsequently, an online logistic regression model was constructed to fit the mice’s history choices by weighted sum of multiple features including current stimulus, history, and rules. This model was deemed as the surrogate of the mouse and was used in the following steps; finally, sampling was performed across the entire trial type repertoire and the fitted model predicted positions of potential future trials in the latent weight space; the trial type with closest position to the goal was selected as the next trials. This entire process forms a closed-loop behavioral training framework, ensuring that the mice’s training direction continually progresses towards the goal.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/104833/elife-104833-fig5-v1.jpg)
+
+**Figure 5.:** (A) The framework of machine teaching (MT) algorithm (see text for details). (B) Working memory task as in Figure 4A, but with full stimulus generation matrix. (C) Averaged number of trials needed to reach the criterion for MT-based and random trial type selection strategies. **, p<0.01, two-sided Wilcoxon rank-sum test. (D) The absolute difference between contrast (contr.) of sample1 (S1) and sample2 (S2) during training process for the two strategies. (E) Same as (D) but for correct rate. (F) MT-based d2AFC task training. Box plot of correct rate of expert mice (left) and number of trials needed to reach the criterion (right) for different training strategies (MT, anti-bias, and random). n.s., p>0.05, Kruskal–Wallis tests. (G) Left, averaged absolute performance bias for the three strategies during different training stages. Right, averaged across training stages. (H) Same as (G) but for absolute trial type bias. (I) Percentage of trials showing significance for different regressors during task learning. (J–K) Box plot of correct rate (J) and prediction performance difference between the full model and partial model excluding current stimulus (S0) (K) for different trained stage, including early (perf. >75%), middle (perf. >80%), and well (perf. >85%) trained. *, p<0.05, **, p<0.01, ***, p<0.001, n.s., p>0.05, two-sided Wilcoxon rank-sum tests with Bonferroni correction.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/104833/elife-104833-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The weight of regressors in an ideal learner varies during learning a 2AFC task. Note that the initial weights of bias and S1 regressors are not zero. (B) The presented trial types generated by random (black) and MT (red) during the entire training process. (C) Same as (A) but weights of all regressors begin at zero.
 
 We first validated the theoretical feasibility and efficiency of the algorithms in simulated 2AFC experiments (Figure 5—figure supplement 1). Faster increasement in sensitivity to current stimuli was observed through effective suppression of noise-like biases and history dependence with the MT algorithm (Figure 5—figure supplement 1A–B). Notably, if the learner was ideal (i.e. without any noise), there was no difference between random and MT strategies to train (Figure 5—figure supplement 1C). This implied that the training efficiency was improved by suppression of noise in MT.
 
@@ -110,9 +325,17 @@ To further validate the effectiveness of MT in more generalized perceptual decis
 
 In summary, the MT algorithm automatically chose optimal trial type sequences to enable faster and more efficient training. By modeling the effect of history, choice, and other noise behavioral variables, the MT method manifested higher quality training results. Based on these characteristics, the MT algorithm could enhance training efficiency in challenging paradigms and promote testing robustness in more general paradigms.
 
-## Behavioral optimization for multi-dimensional tasks
+### Behavioral optimization for multi-dimensional tasks
 
 One of the advantages of the MT algorithm remains that it considers multi-dimensional features altogether and gives the optimal trial sequences to guide the subject to learn. To test this feature, we next expanded the 2AFC task to two stimulus dimensions and trained mice to learn a dynamic stimuli-action contingency. The task was similar to the one applied in Figure 4D which presented both sound frequency and orientation features but without context cues. As illustrated in Figure 6A, the mice were initially required to focus on sound orientation to obtain reward, while ignoring the frequency (Goal 1). Subsequently, the stimulus-action contingency changed, making sound frequency, rather than orientation, the relevant stimuli dimension for receiving reward (Goal 2). Finally, the relevant cue was still sound frequency but with reversed stimulus-action contingency (Goal 3). Throughout the training process, we employed the MT algorithm to adaptively generate trial types about not only the reward location (left or right) but also the components of the sound stimuli (frequency and orientation combinations) and compared with the random control group. The MT algorithm allowed for the straightforward construction of a dynamic multi-goal training just by setting the coordinates of target goals within the latent weight space (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/104833/elife-104833-fig6-v1.jpg)
+
+**Figure 6.:** (A) Task structure. (B) Chart of training path in latent decision space following three goals one by one. (C) Top, averaged correct rate across grouped mice during training (color, machine teaching; black, random). Bottom, same as top but performance for non-relative cue. (D) Top, the slopes of linear regression between trial number and correct rate. Bottom, same as top but between trial number and performance for non-relative cue. **, p<0.01; n.s., p>0.05; two-sided Wilcoxon rank-sum tests. (E) The learning path of mice (lines) in latent decision space for machine teaching and random training strategies. Light dots represent model weights fitted by individual mice’s behavioral data. Shaded dots, averaged across mice. (Square dots, testing protocol; Cross dots, the first or the last half of trials in learning protocol; Cycle dots, all trials in learning protocol) (F) Left, averaged absolute trial type bias between stay and switch conditions across grouped mice for the MT and random strategies from L1 to L3. Right, same as middle but for the bias between left and right trials. (G) Same as (H) but for absolute performance bias in T1 and T2 protocols. L1, the first 500 trials of frequency learning protocol; L2, intermediate trials of frequency learning protocol; L3, the last 200 trials of frequency learning protocol; T1, testing orientation protocol; T2, testing frequency protocol. *, p<0.05; n.s., p>0.05; two-sided t-tests.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/104833/elife-104833-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Left, linear regression between trial number and correct rate in task requiring mice to attend to sound frequency. Right, the R-square of every individual linear regression. (B) Same as (A) but for performance following non-relative cue. (C) The number of trials to reach criterion performance for MT and random group. (D) Performance of both grouped mice in T1 and T2 protocol. n.s., no significant. two-sided Wilcoxon rank-sum tests. (E) The presented individual trials with Stay/Switch (top) and Left/Right (bottom) trial type generated by MT (L3) and Random (T2). (F, G) After mice were trained by MT as in Figure 6A, they were intermediately set the training protocol to the beginning and retrained with randomly generated trial sequence. We compared the correct rate of trials with sound frequency stimulus in the first and the second training, presented in (F). (G) shows the learning rate (left) and training efficiency (right) of the first and the second training processes. **, p<0.01; two-sided Wilcoxon signed-rank tests. (H), correct rate of both grouped mice for stay and switch trials in T2 protocol. n.s., no significant. two-sided Wilcoxon rank-sum tests.
 
 Both groups of mice successfully completed all the goals, achieving an overall correct rate of over 80% (Figure 6C). During the first and the third goal of training, the learning rates of mice in both groups were similar, showing low sensitivity to irrelevant cue. However, in the second goal of training (i.e. transition from orientation to frequency modality), the MT group exhibited a significantly higher learning rate compared to the random group, along with a significantly faster rate of forgetting of the irrelevant cue (Figure 6D and Figure 6—figure supplement 1A–D). To construct a paired comparison, we also retrained the MT group mice in the same protocols but with random sequences after forgetting and confirmed the improvements for both the learning rate and training efficiency (Figure 6—figure supplement 1F–G). We again employed the logistic regression model to extract the weights for each variable and plotted the learning trajectories in the latent weight space. MT algorithm manifested distinct learning path against random group in the space (Figure 6E); MT algorithm quickly suppressed the sensitivity of irrelevant modality (i.e. Worient.), keeping low sensitivity to noise dimensions (i.e. Wnoise) in the meantime. This resulted in a circuitous learning path in the space compared to the random group.
 
@@ -136,33 +359,33 @@ The large-scale autonomous training system we proposed can be readily integrated
 
 ## Materials and methods
 
-## Design and implementation of HABITS
+### Design and implementation of HABITS
 
-## Architecture
+#### Architecture
 
 A single HABITS was comprised of a custom home-cage and integrated behavioral apparatuses. All the building materials were listed in the Supplementary file 1, with source and price information provided. The home-cage was made of acrylic panels, with a dimension of 20×20 × 30 cm3. The top panel was movable and could be equipped with cameras to record mouse natural behaviors. A compatible tray was located at the bottom of the home-cage, facilitating bedding materials changing. A notch was designed in the front of the tray where an elevated platform was installed. The platform formed an arch shape to loosely constrain the mouse body when the mouse stepped on it to perform the task. A micro load cell was installed beneath the platform and used for daily body weighing.
 
 Most of the behavioral apparatuses were installed in the front panel of the home-cage. A lickport holder with up to seven slots was installed in front of the weighting platform. Three lickports (1.5 mm diameter, 10 mm apart) were used in this study. Water was drawn by peristaltic pumps from water tanks (centrifuge tube, 50 ml) to the lickports. Three groups of LEDs and buzzers for light and sound stimuli were extruded from the front panel and placed in the left, right, and top positions around the weighting platform. Notably, the top module contained an RGB LED, but white LEDs for the others. Buzzers were the same in all stimulus modules and produced 3–15 kHz pure tones at 80 dB. In some experiments (Figures 3E and 4C), the top buzzer was replaced with a micro ultrasound speaker (Elecfans Inc) which was able to emit 40 khz pure tone for up to 100 dB.
 
-## Control system
+#### Control system
 
 The core of the control system was a microprocessor (Teensy 3.6) which interacted with all peripheral devices and coordinated the training processes (Figure 1—figure supplement 1A). The microprocessor generated a PWM signal to directly control the sound and light stimuli. Reward water was dispersed by sending pulses to solid-state relays which controlled the pumps. Two toggle switches were used for flushing the tubing. Each lickports was electrically connected to a capacitive sensing circuit for lick detection. Additionally, another switch was used for manually controlling the start and pause of the training process. Real-time weight data were read from the load cell at a sampling rate of 1 Hz. A Wi-Fi module was connected with the microprocessor to transmit data wirelessly to a host computer. Meanwhile, all the data were also stored on a local SD card, with the microprocessor’s clock as the timestamps for all behavioral events.
 
 We have developed a software framework for constructing behavioral training programs, which is a general-purpose state machine runner for training animal behaviors (gpSMART, https://github.com/Yaoyao-Hao/gpSMART, copy archived at Hao, 2024b). This framework supported the construction of arbitrarily complex cognitive behavioral paradigms as state machines (Figure 1—figure supplement 1B). Basically, each state was comprised of a unique name, output actions, transition conditions, and maximum timing. Within each trial, the microprocessor generates the state matrix based on the defined state machine and executes the state transition according to the external events (e.g. licks) or timing (e.g. a delay period of 1.2 s). This is similar to the commonly used Bpod system (Sanworks Inc), but gpSMART could run on microprocessors with a hardware-level time resolution. Between trials, training protocol updating, behavioral data recording, and wireless data communication were executed. Various training assistances (e.g. free reward) were also performed when necessary to help the training processes. All the training progress and protocols were stored on the SD card for each mouse; thus, training can be resumed after any pause event and supports seamless switching between multiple HABITS systems. The system was designed to operate standalone without a PC connected. Finally, the firmware on the microprocessor could be updated wirelessly to facilitate paradigm changing.
 
-## High-throughput training and GUI
+### High-throughput training and GUI
 
 We constructed over a hundred of HABITS to facilitate large-scale, fully autonomous in-cage behavioral training (Figure 1—figure supplement 1D). Each HABITS was piled on standard mouse cage racks, with sound-proof foams installed between them to minimize cross-cage auditory interference. The cage operated independently with each other, with only a 12 V standard power supply connected. The training room was maintained under a standard 12:12 light-dark cycle. All the cages communicated with a single PC via unique IP addresses using the UDP protocol.
 
 To monitor the training process of all the cages, a MATLAB-based GUI running on a PC was developed (Figure 1—figure supplement 1C). The GUI displayed essential information for each mouse, such as the paradigm name, training duration, training progress, and performance metrics like long-term task accuracy, weight changes, and daily trial numbers, etc. Meanwhile, the whole history of training performance, detailed trial outcomes in the last 24 hr and real-time body weight could be plotted. The GUI also enabled real-time updating of each cage’s training parameters for occasional manual adjusting. Training settings can also be modified by physically or remotely updating the SD card files.
 
-## Mice and overall training procedures
+### Mice and overall training procedures
 
-## Mice
+#### Mice
 
 All experimental data used in this study were collected from a total of 302 mice (C57BL/6 J). For most of the autonomous experiments, males were used with starting age at around 8 weeks (see Table 1). A separate group of six females was tested in a sound-frequency-based 2AFC task (Figure 2—figure supplement 1G). Mice were single housed in our home-cage systems for ranging from 1 to more than 3 months. A group of six mice was used for supervised manual training. Another six mice were used for ad libitum reward testing in HABITS. All experiments were approved by the Laboratory Animal Welfare and Ethics Committee of Zhejiang University (Ethics Code: ZJU20210298).
 
-## Workflow for behavioral testing in HABITS
+### Workflow for behavioral testing in HABITS
 
 The entire workflow for fully automated behavioral training experiment in HABITS can be divided into three stages (Figure 1—figure supplement 1E). The first stage was the initialization of HABITS. This involved setting up the home cage by placing an appropriate amount of bedding, food, cotton, and enrichments into the drawer of the home cage. Behavioral paradigms and training protocols, programmed within our software framework, were then deployed on the microcontroller of HABITS. Each mouse was provided with a unique SD card that stores its specific behavioral training data, including the training paradigm, cage number, initial paradigm parameters, and progresses. The load cell was initialized through the host computer, which includes zeroing and calibration processes. The flush switch of the peristaltic pump was activated to fill the tubing with water. Finally, the mouse was placed into the HABITS after initial body weight measuring. Note that any habituations or water restrictions were not required.
 
@@ -170,63 +393,85 @@ The second stage was the fully autonomous training phase, during which no interv
 
 The third stage involved data collection and analysis. All raw data, including detailed event, trail, and configuration information, was stored on the SD card; data wirelessly transmitted to PC were mainly used for monitoring. These behavioral data were analyzed offline with Python, and the mice were ready for other subsequent testing.
 
-## Manual training
+### Manual training
 
 To compare with fully autonomous training, we also used HABITS as a behavioral chamber to perform manual training protocol for freely moving mice. The mice were first single-housed in standard home cages and subjected to water restriction. After several days, when the mice’s body weight dropped to approximately 85% of their original weight (Guo et al., 2014a), behavioral training began. The mice were trained in a session-based manner; in each session, experimenters transferred the mice from the standard home-cage to HABITS, where they underwent 1–3 hr of training to receive around 1 ml of water. The amount of water consumed was estimated by HABITS based on the number of rewards. HABITS weighed the mice daily, ensuring that all mice maintained stable body weight throughout the training process. The manually trained mice underwent the same training protocols as in the autonomous ones (Figure 2—figure supplement 1A). Once the mice completed the final protocol and reached the criterion performance (75%), they were considered successfully trained. After completing the manual training, the mice were then transitioned into autonomous testing in HABITS (Figure 2—figure supplement 1E).
 
-## Behavioral data analysis
+### Behavioral data analysis
 
-## Bias calculation
+#### Bias calculation
 
 We calculated mice’s bias toward different trial types, for example left and right, by evaluating their performance under these trial types (perf. bias). The strength of the bias was quantified by calculating the absolute difference between the proportion of performance under specific trial type relative to the summed value across trial types, and the balance point, that is 50%. Similarly, we applied this method for presentation of trial sequence to compute the trial type bias during paradigm training, illustrating the dynamic changes in training strategies.
 
-## Data preprocessing
+### Data preprocessing
 
 For the fully autonomous training, we excluded data from the habituation phase, as we believed the mice had not yet understood the structure of the trials during that stage. Additionally, we removed trials where the mice did not make a choice, that is, no-response trials. For each mouse, the trials were concatenated in chronological order, ignoring the time span between trials during the continuous multi-day home-cage training sessions; the same approach was applied to manual training data. We then organized the data for each mouse into multiple 500-trial windows, sliding from the beginning to the end of the training with a step size of 100-trial. Windows containing fewer than 500 trials at the end of the dataset were discarded. We assumed that within each window, the mouse employed a consistent strategy, and a new logistic regression model was fit in each window.
 
-## Logistic regression of behavioral data
+### Logistic regression of behavioral data
 
-Similar to our previous study Hao et al., 2021, we employed an offline logistic regression model to predict the choices made by the mice (Figure 2—figure supplement 1B–D, Figure 5I, Figure 6). This model calculates a weighted sum of all behavioral variables and transforms the decision variable into a probability value between 0 and 1 using a sigmoid function, representing the probability of choosing the left side. The variables include the current stimulus (S0; –1 for licking left trials; 1 for licking right trials), the previous stimulus (S1), reward (R1; –1 for no reward; 1 for reward), action (A1; –1 for left choice; 1 for right choice), win-stay-loss-switch (WSLS; which is A1 ×R1), and a constant bias term (bias). The model can be formulated by the following equation:P(right)=11+e−(z)\begin{document}$$\displaystyle P(right)=\frac{1}{1+e^{-(z)}}$$\end{document}z=βs0S0+βS1S1+βR1R1+βA1A1+βWSLSWSLS+βbias\begin{document}$$\displaystyle z=\beta_{s_0} S_0+\beta_{S_1} S_1+\beta_{R_1} R_1+\beta_{A_1} A_1+\beta_{W S L S} W S L S+\beta_{b i a s}$$\end{document}
+Similar to our previous study Hao et al., 2021, we employed an offline logistic regression model to predict the choices made by the mice (Figure 2—figure supplement 1B–D, Figure 5I, Figure 6). This model calculates a weighted sum of all behavioral variables and transforms the decision variable into a probability value between 0 and 1 using a sigmoid function, representing the probability of choosing the left side. The variables include the current stimulus (S0; –1 for licking left trials; 1 for licking right trials), the previous stimulus (S1), reward (R1; –1 for no reward; 1 for reward), action (A1; –1 for left choice; 1 for right choice), win-stay-loss-switch (WSLS; which is A1 ×R1), and a constant bias term (bias). The model can be formulated by the following equation:
+
+$$
+P(right)=\frac{1}{1+e^{−(z)}}
+$$
+
+
+
+$$
+z=\beta_{s_{0}}S_{0}+\beta_{S_{1}}S_{1}+\beta_{R_{1}}R_{1}+\beta_{A_{1}}A_{1}+\beta_{WSLS}WSLS+\beta_{bias}
+$$
 
 where the β’s were the weights for the regressors. We used 0.5 as the decision threshold: predictions above 0.5 were classified as right choices, while below were classified as left choices.
 
 Model performance was assessed using 10-fold cross-validation. For each cross-validation iteration, 450 trials were randomly selected as the training set, and gradient descent was employed to minimize the cross-entropy loss function. The remaining 50 trials were used as the test set. Training was considered complete (early stopping) once the calculated loss in the test set stabilized. The accuracy of the model in predicting the mouse’s choices in the test set was recorded as the result of one cross-validation iteration. This process was repeated 10 times, and the final performance of the model was averaged across all iterations.
 
-## Significance calculation
+### Significance calculation
 
 To evaluate the contribution of each regressor, we compared the performance of a partial model, where a specific variable was removed, with that of the full model. Specifically, the value of the variable in testing was set to zero, and we checked whether the performance of the partial model showed a significant decline. We applied a corrected t-test using a 10×10 cross-validation model comparison method to compute the p-value (Gardner and Brooks, 2017). For each window, we trained 100 models, and the performance differences between the partial and full models formed a t-distribution. By examining the distribution of performance differences, we determined the significance level of each regression variable’s contribution. When p<0.05, the regression variable was considered to have a significant contribution to predicting the mouse’s choice in that window. Additionally, we calculated the proportion of windows across the entire training process in which a particular regression variable had a significant contribution, to estimate the degree to which the mouse relied on that variable. The same significance evaluation method was applied to both autonomous and manual training, allowing for direct comparison of the learning strategies employed in two conditions at the individual mouse level (Figure 2—figure supplement 1B–D, Figure 5I).
 
-## Logistic regression in evidence accumulation: Multimodal integration
+### Logistic regression in evidence accumulation: Multimodal integration
 
 For each mouse in evidence accumulation task (Figure 3 D4), we trained a group of logistic regression models to estimate the psychophysical kernel. The entire sample period was divided into 25 bins of 40ms each, with each bin assigned a weight to predict the mouse’s choice. An event occurring in a bin was set to 1; otherwise, set to 0. We trained 100 pairs of models for each mouse. Each pair of models was trained using 10% total trials randomly. Each pair of models included one model trained on the original data and another trained on data with bin-wised shuffled within each trial. The psychophysical kernel for each mouse was derived by averaging the first 100 models, compared to a baseline kernel obtained from the second. Finally, we averaged the results across all 13 mice to statistically estimate the temporal dynamics of mice’s evidence dependence in this task.
 
-## Behavioral tasks and training protocols
+### Behavioral tasks and training protocols
 
-## General training methodology
+#### General training methodology
 
 In the fully autonomous behavioral training process, all mice learn the required behavioral patterns through trials and errors. The training protocols were pre-defined based on experience. Given that the entire training process is long-term and continuous, a free reward is triggered if a mouse fails to obtain water within the last 3- or 6-hr period, ensuring the mouse receives sufficient hydration. Throughout the training process, we employed a custom-designed ‘anti-bias’ algorithm to avoid mice always licking one side. Basically, we implemented several priority-based constraints to prevent mice from developing a preference for a particular reward direction:
 
 where N represented the number of recorded historical trials (set to 50 in our case). Ri and Li were set to 1 if the reward direction of the ith historical trial was right or left, respectively; otherwise, they were set to 0. Similarly, Corri and Erri were set to 1 or –1 if the mouse’s choice in the ith trial was correct or incorrect, respectively; otherwise, they were set to 0. Pleft represented the probability of left trial type in the next trial.
 
-## d2AFC with multi-modal
+### d2AFC with multi-modal
 
 The task of d2AFC, delayed two-alternative forced choice, required mice to learn the stimulus-action contingency separated by a delay for motor planning. A complete trial consisted of three parts: the sample, delay, and response epochs. The sample epoch lasted for 1.2 s and is accompanied by auditory or visual stimuli. The delay epoch elapsed for another 1.2 s, during which mice were required to withhold licking until a 100ms response cue (6 kHz tone) was played. Any premature licking (early licks) during this period immediately paused the trial for 300ms. Response epoch lasted for 1 s. The first lick made by the mouse during this period was recorded as its choice for the current trial, and feedback is provided accordingly. A correct lick delivered approximately 0.25 µl of water to the corresponding spout (achieved by activating the peristaltic pump for 30ms), while an incorrect choice results in an immediate 500ms white noise and 8000ms timeout for penalty. After each trial, the mouse must refrain from licking for 1000ms before the next trial began automatically. If the mouse failed to make a choice during the response period, the trial was marked as a no-response trial, and the mouse must lick either spout to initiate the next trial. The stimuli modalities tested in this study were as follows:
 
-## Training and testing of other tasks
+### Training and testing of other tasks
 
 The training and testing method for all other tasks was detailed in the text of Supplementary file 2.
 
-## Machine teaching algorithms
+### Machine teaching algorithms
 
 We employed machine teaching (MT) algorithm Liu et al., 2017, to design an optimal trial sequence that enables the mice to rapidly approach a target state, i.e., trained in a specific task. In this context, the MT algorithm can be referred to as the ‘teacher’ while the mice are the ‘students’; the size of the training dataset is termed ‘teaching dimension’ of the student model Zhu et al., 2018. Specifically, the teacher samples from a pre-defined discrete dataset, and the student updates its internal model using the sampled data. The teacher then prepares the next round of training based on the student’s progress, creating a closed-loop system. In this study, a logistic regression model was employed to infer the internal decision-making model of the mice based on their choices trial-by-trial (i.e. model-based). The model was updated in real-time and used for the optimization and sampling of subsequent trials. L1 regularization and momentum were introduced to smooth the fitted weights, mitigating overfitting and oscillations. The mice’s choices and outcomes served as feedback for MT. Figure 5A illustrated the complete closed-loop optimization process of MT algorithm. It was similar to an imitation teacher Liu et al., 2017 whose objective was to iteratively minimize the distance between the model weights of next trial and target.
 
-In detail, the logistic regression model to fit the choices of mouse was updated trial-by-trial according to the following formula:mt=(1−η)(⟨ωt,xt⟩−ychoice)xt+ηmt−1m0=0ωt+1=ωt−α(mt1−ηt+λsgn⁡(ωt))\begin{document}$$\displaystyle \begin{array}{ll} m^t=(1-\eta)\left(\left\langle\omega^t, x^t\right\rangle-y_{\text {choice}}\right) x^t+\eta m^{t-1} \quad m^0=0 \\ \omega^{t+1}=\omega^t-\alpha\left(\frac{m^t}{1-\eta^t}+\lambda \operatorname{sgn}\left(\omega^t\right)\right) \end{array}$$\end{document}
+In detail, the logistic regression model to fit the choices of mouse was updated trial-by-trial according to the following formula:
+
+$$
+m^{t}=(1−η)(⟨\omega^{t},x^{t}⟩−y_{choice})x^{t}+ηm^{t−1}m^{0}=0\omega^{t+1}=\omega^{t}−\alpha(\frac{m^{t}}{1−η^{t}}+\lambdasgn⁡(\omega^{t}))
+$$
 
 where the parameter ωt represents the decision model parameters fitted to the current and past choices (i.e. ychoice) performed by the mice at the t-th trial. The hyperparameter λ controls the strength of L1 regularization. Momentum parameter η determines the window width for exponential smoothing of the loss gradient. m represents an exponential smoothed gradient across past trials.
 
-Then, the objective of this algorithm can be formalized as the following equation:‖ωt+1−ω∗‖22=‖ωt−ω∗‖22+γ2T1(x,y∣ωt)−2γT2(x,y∣ωt)T1(x,y∣ωt)=‖11+e(y(ωt,x))‖T2(x,y∣ωt)=⟨ωt−ω∗,(⟨ωt,x⟩−y)x⟩\begin{document}$$\displaystyle  & \left\|\omega^{t+1}-\omega^*\right\|_2^2=\left\|\omega^t-\omega^*\right\|_2^2+\gamma^2 T_1\left(x, y \mid \omega^t\right)-2 \gamma T_2\left(x, y \mid \omega^t\right) \\ & T_1\left(x, y \mid \omega^t\right)=\left\|\frac{1}{1+e^{\left(y\left(\omega^t, x\right)\right)}}\right\| \\ & T_2\left(x, y \mid \omega^t\right)=\left\langle\omega^t-\omega^*,\left(\left\langle\omega^t, x\right\rangle-y\right) x\right\rangle $$\end{document}
+Then, the objective of this algorithm can be formalized as the following equation:
 
-where, (x, y) represents a pair of stimuli-action contingency. The parameter ω* denotes the target weight within the implicit decision space of the simulated mouse model, typically set to converge to the model weights according to the current task rules. T1 can be interpreted as the trial difficulty, predicting the probability of incorrect choices performed by mice in this trial, and T2 as the effectiveness of this trial, predicting the correlation between the upcoming mouse behavioral strategy updates and the shortest learning path between ωt and ω*. The balance between these two metrics is achieved through hyperparameters γ, that is hypothetical learning rate of mouse. In this study, we assume that this model reflects the actual decision-making process of the mice. Subsequently, this algorithm can select the next trial type using the following formula:(xt+1,yt+1)=argminx∈X,y∈Y(γ2T1−2γT2)\begin{document}$$\displaystyle (x^{t+1},y^{t+1} )=\underset{x\in X,y\in Y}{\rm arg\,min} (\gamma ^{2}T_{1}-2\gamma T_{2})$$\end{document}
+$$
+‖\omega^{t+1}−\omega^{∗}‖_{2}^{2}=‖\omega^{t}−\omega^{∗}‖_{2}^{2}+\gamma^{2}T_{1}(x,y∣\omega^{t})−2\gammaT_{2}(x,y∣\omega^{t})T_{1}(x,y∣\omega^{t})=‖\frac{1}{1+e^{(y(\omega^{t},x))}}‖T_{2}(x,y∣\omega^{t})=⟨\omega^{t}−\omega^{∗},(⟨\omega^{t},x⟩−y)x⟩
+$$
+
+where, (x, y) represents a pair of stimuli-action contingency. The parameter ω* denotes the target weight within the implicit decision space of the simulated mouse model, typically set to converge to the model weights according to the current task rules. T1 can be interpreted as the trial difficulty, predicting the probability of incorrect choices performed by mice in this trial, and T2 as the effectiveness of this trial, predicting the correlation between the upcoming mouse behavioral strategy updates and the shortest learning path between ωt and ω*. The balance between these two metrics is achieved through hyperparameters γ, that is hypothetical learning rate of mouse. In this study, we assume that this model reflects the actual decision-making process of the mice. Subsequently, this algorithm can select the next trial type using the following formula:
+
+$$
+(x^{t+1},y^{t+1})=argminx\inX,y\inY(\gamma^{2}T_{1}−2\gammaT_{2})
+$$
 
 where X and Y represent the repertoires of available trial types and action, respectively.
 
@@ -234,24 +479,24 @@ Finally, we presented the selected stimuli x in the next trials and expected the
 
 We have implemented the aforementioned MT-based optimization algorithm on the microprocessors of HABITS, as a superior alternative to existing ‘anti-bias’ algorithms. The computation load for running MT optimization on the microprocessors was high, and latency was relatively long compared to trial resolution. However, since the computation was conducted between trials, it did not interfere with the execution of the trials themselves under the gpSMART framework. Additionally, for each mouse, additional files were used to record the hyperparameters and weight changes of the online logistic regression model for each trial. No-response trials were not used for model fitting. However, if the previous trial was a no-response trial, the history-dependence regressors of the current trial were set to 0.
 
-## Simulation experiments
+### Simulation experiments
 
 We employed a logistic regression model as the student, tasked with completing a 2AFC task, which involved mapping the current stimulus S0 to a choice while ignoring interference from other features. Another logistic regression model, serving as the imitation teacher, was then used to fit the choices made by the student. Both models operated within the same feature space and utilized the same update algorithm. The hyperparameters were set as follows: α=0.1, η=0.9, γ=1, and λ=0.1.
 
 We first simulated the biases and history dependence typically observed in naive mice during the early stages of training by setting the initial values of S1 and bias to –2 and 2, respectively. During the trial-by-trial update process, we tracked the changes in the student’s weights under the MT algorithm and compared them to those under random training, which served as the baseline. Additionally, we simulated conditions without noise to further examine the differences between the MT algorithm and random training in influencing the student’s weight updates.
 
-## Animal experiments 1: Working memory task with full SGM
+#### Animal experiments 1: Working memory task with full SGM
 
 The first task we tested with the MT algorithm was working memory task with full 5×5 stimulus matrix (Figure 5B). The delay duration was set to 500ms. Mice were randomly assigned to two groups: random (N=8) and MT (N=7). Once the mice achieved a 75% correct response rate in the eight most challenging trial types, they advanced to the testing phase. At this stage, only the eight most challenging trial types were randomly presented. When the correct rate reached 75%, the mice were considered to have learned the task. MT used seven features as the inputs for the logistic regression model: bias, S0 (the frequency of the first stimulus, where {8, 16, 32, 64, 128} Hz corresponds to values of {−1,–0.5, 0, 0.5, 1}), T0 (the frequency of the second stimulus), S1, A1, R1, and WSLS. Hyperparameters were set as follows: α=0.01, η=0, γ=0.03, and λ=0.
 
-## Animal experiments 2: 2AFC task
+#### Animal experiments 2: 2AFC task
 
 In 2AFC task (Figure 5F), mice were divided into three groups, each using different methods to generate the stimulus frequency (3 kHz or 10 kHz) for the next trial: random selection (N=10), the anti-bias strategy (N=10), and the MT algorithm (N=10). The online logistic regression model settings for this task remained consistent with those in Figure 2—figure supplement 1. The hyperparameters for the MT algorithm were set as follows: α=0.1, η=0.9, γ=1, and λ=0.1.
 
-## Animal experiments 3: dynamic 2AFC task with multi-dimensional stimuli
+#### Animal experiments 3: dynamic 2AFC task with multi-dimensional stimuli
 
 In the third task, we expanded the stimulus dimension of 2AFC with the combination of sound frequency (high and low) and orientation (left and right), to test MT algorithm (Figure 6A). In each trial, the stimulus could be one of the four combinations, but whether the mouse should attend to frequency or orientation modality was not informed. In other words, no modality cues were presented for mice, and mice must rely solely on feedback from past trials to identify what the current modality was. Mice were divided into random (N=8) and MT groups (N=10). In the MT group, both the stimulus combinations and reward direction are determined by the MT algorithm simultaneously. The entire task involved learning three different rules one by one, including sound orientation, sound frequency, and reversed sound frequency. When the mice in each group achieved an accuracy of 80% in the first 500 choice trials under the current rule, they advanced to a testing protocol consisting of at least 100 random trials. When a mouse achieved 80% accuracy in the last 100 trials of the testing protocol, it transitioned to the next rule (Bernklau et al., 2024). Hyperparameters were set as follows: α=0.1, η=0.9, γ=1, and λ=0.1.
 
-## Statistics
+### Statistics
 
 To maximize the utility of HABITS in a wider range of paradigms, we usually employed six mice per paradigm. For experiments where we aimed to conduct between-group comparisons, we increased the sample size to 10 to ensure the stability and reliability of statistical significance. All significance tests were conducted by comparing different groups of animals (e.g. comparing performance levels across different mouse groups). Non-parametric tests, such as the Wilcoxon signed-rank test or rank-sum test, were used for comparisons between two groups, and the Kruskal–Wallis test was used for comparisons among three groups, unless otherwise stated in the figure legends. Data are presented as mean ± 0.95 confidence intervals (CI) across animals, as specified in the figure legends. In the box plots, the center lines represent the median values, the box limits indicate the upper and lower quartiles, the whiskers show 1.5 times the interquartile range, and the points represent outliers. Significance levels are denoted as *, p<0.05, **, p<0.01, and ***, p<0.001 in all figures. All data analyses were performed using Python (version 3.8.13) with the following packages: NumPy (1.21.5), SciPy (1.10.1), matplotlib-inline (0.1.3), pandas (1.3.4), PyTorch (1.11.0), and seaborn (0.13.0).

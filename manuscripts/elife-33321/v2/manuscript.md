@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.33321.001 Resting-state networks offer a unique window into the brain’s functional architecture, but their characterization remains limited to instantaneous connectivity thus far. Here, we describe a novel resting-state network based on the delayed connectivity between the brain and the slow electrical rhythm (0.05 Hz) generated in the stomach. The gastric network cuts across classical resting-state networks with partial overlap with autonomic regulation areas. This network is composed of regions with convergent functional properties involved in mapping bodily space through touch, action or vision, as well as mapping external space in bodily coordinates. The network is characterized by a precise temporal sequence of activations within a gastric cycle, beginning with somato-motor cortices and ending with the extrastriate body area and dorsal precuneus. Our results demonstrate that canonical resting-state networks based on instantaneous connectivity represent only one of the possible partitions of the brain into coherent networks based on temporal dynamics.
+Resting-state networks offer a unique window into the brain’s functional architecture, but their characterization remains limited to instantaneous connectivity thus far. Here, we describe a novel resting-state network based on the delayed connectivity between the brain and the slow electrical rhythm (0.05 Hz) generated in the stomach. The gastric network cuts across classical resting-state networks with partial overlap with autonomic regulation areas. This network is composed of regions with convergent functional properties involved in mapping bodily space through touch, action or vision, as well as mapping external space in bodily coordinates. The network is characterized by a precise temporal sequence of activations within a gastric cycle, beginning with somato-motor cortices and ending with the extrastriate body area and dorsal precuneus. Our results demonstrate that canonical resting-state networks based on instantaneous connectivity represent only one of the possible partitions of the brain into coherent networks based on temporal dynamics.
 
 ## Introduction
 
@@ -33,17 +33,635 @@ We simultaneously recorded brain activity with fMRI and stomach activity with EG
 
 ## Results
 
-## EGG-BOLD phase coupling defines the gastric network
+### EGG-BOLD phase coupling defines the gastric network
 
 We first determined gastric frequency (Figure 1b) in each participant as the frequency of the largest spectral peak within the normogastric range (0.033–0.066 Hz). The mean EGG peak frequency across the 30 participants was 0.047 Hz (±SD 0.003, range 0.041–0.053). EGG peak frequency measured inside and outside the scanner did not differ (EGG outside the scanner measured in 29 of the 30 participants, mean 0.046 Hz ± SD 0.006; two-sided paired t-test, t(28)=0.35, p=0.725 Bayes Factor <0.001, indicating decisive evidence for the null hypothesis).
 
 In each participant and at each voxel, we quantified the degree of phase synchrony between the EGG signal and BOLD time series filtered around gastric frequency (Figure 1c). We computed the phase-locking value (PLV) (Lachaux et al., 1999), a measure widely used in electrophysiology that varies between zero when two time series show no consistent phase relationship (Figure 1c, bottom panel) and one when two time series have a consistent phase relationship over time (Figure 1c, upper panel). PLV has three important properties: PLV is high for any lag between the time series as long as this lag is constant over time, PLV is independent of signal amplitude, and PLV gives no indication on the directionality of interactions between the two time series. In each participant and at each voxel, we estimated the PLV that could be expected by chance from EGG signals that were shifted with respect to the BOLD time series. The empirical PLVs were then compared with chance-level PLVs using a cluster-based statistical procedure that intrinsically corrects for multiple comparisons (Maris and Oostenveld, 2007). Significant phase coupling between the EGG and resting-state BOLD time series occurred in twelve nodes (voxel threshold p<0.01, two-sided paired t-test between observed and chance PLV; cluster threshold corrected for multiple comparisons, Monte-Carlo p<0.05). Exact p-values are reported for each cluster in Table 1.
 
+**Table 1.**
+ Description of the 12 nodes showing larger-than-chance gastric-BOLD phase coupling.AAL: Automated Anatomical labeling (Tzourio-Mazoyer et al., 2002). MNI: Montreal Neurological Institute.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Node name</th>
+      <th rowspan="2">Monte-Carlo p</th>
+      <th rowspan="2">Sum (t)</th>
+      <th rowspan="2">Cluster volume in mm3</th>
+      <th rowspan="2">Label AAL</th>
+      <th rowspan="2">mm3</th>
+      <th rowspan="2">% Area in Cluster</th>
+      <th rowspan="2">Max t</th>
+      <th colspan="3">MNI of max t</th>
+      <th rowspan="2">EGG-BOLD shared Variance ± sem</th>
+    </tr>
+    <tr>
+      <th>X</th>
+      <th>Y</th>
+      <th>Z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Primary Somatosensory Right (SIr)</td>
+      <td>0.0049</td>
+      <td>216.5</td>
+      <td>180</td>
+      <td>Postcentral R</td>
+      <td>171</td>
+      <td>8.8</td>
+      <td>4.8</td>
+      <td>45</td>
+      <td>−28</td>
+      <td>46</td>
+      <td>12.5% ± 2.0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Secondary Somatosensory Right (SIIr)</td>
+      <td rowspan="3">0.0131</td>
+      <td rowspan="3">146.1</td>
+      <td rowspan="3">120</td>
+      <td>Rolandic Oper R</td>
+      <td>12</td>
+      <td>1.8</td>
+      <td>4.2</td>
+      <td>54</td>
+      <td>−22</td>
+      <td>13</td>
+      <td rowspan="3">15.7% ± 2.2</td>
+    </tr>
+    <tr>
+      <td>Heschl R</td>
+      <td>6</td>
+      <td>4.7</td>
+      <td>3.9</td>
+      <td>51</td>
+      <td>−19</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Temporal Sup R</td>
+      <td>99</td>
+      <td>6</td>
+      <td>5.3</td>
+      <td>57</td>
+      <td>−25</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Secondary Somatosensory Left (SIIl)</td>
+      <td rowspan="4">0.0094</td>
+      <td rowspan="4">167.0</td>
+      <td rowspan="4">138</td>
+      <td>Postcentral L</td>
+      <td>39</td>
+      <td>2.0</td>
+      <td>4.5</td>
+      <td>−66</td>
+      <td>−22</td>
+      <td>22</td>
+      <td rowspan="4">16.6% ± 2.2</td>
+    </tr>
+    <tr>
+      <td>SupraMarginal L</td>
+      <td>21</td>
+      <td>3.3</td>
+      <td>3.8</td>
+      <td>−60</td>
+      <td>−25</td>
+      <td>16</td>
+    </tr>
+    <tr>
+      <td>Heschl L</td>
+      <td>15</td>
+      <td>13.1</td>
+      <td>3.9</td>
+      <td>−54</td>
+      <td>−16</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Temporal Sup L</td>
+      <td>60</td>
+      <td>5</td>
+      <td>5.2</td>
+      <td>−54</td>
+      <td>−19</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Medial Wall Motor Regions (MWM)</td>
+      <td rowspan="4">0.0036</td>
+      <td rowspan="4">269.5</td>
+      <td rowspan="4">228</td>
+      <td>Supp Motor Area L</td>
+      <td>30</td>
+      <td>2.7</td>
+      <td>3.8</td>
+      <td>0</td>
+      <td>−13</td>
+      <td>49</td>
+      <td rowspan="4">15.8% ± 2.1</td>
+    </tr>
+    <tr>
+      <td>Supp Motor Area R</td>
+      <td>54</td>
+      <td>4.5</td>
+      <td>4.8</td>
+      <td>9</td>
+      <td>-4</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td>Cingulum Mid L</td>
+      <td>66</td>
+      <td>6.7</td>
+      <td>4.9</td>
+      <td>0</td>
+      <td>−22</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td>Cingulum Mid R</td>
+      <td>75</td>
+      <td>6.7</td>
+      <td>4.7</td>
+      <td>6</td>
+      <td>−10</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Posterior Cingulate Sulcus (pCS)</td>
+      <td rowspan="5">0.0061</td>
+      <td rowspan="5">196.7</td>
+      <td rowspan="5">171</td>
+      <td>Cingulum Mid L</td>
+      <td>39</td>
+      <td>3.9</td>
+      <td>4.2</td>
+      <td>-9</td>
+      <td>−37</td>
+      <td>52</td>
+      <td rowspan="5">16.9% ± 2.3</td>
+    </tr>
+    <tr>
+      <td>Cingulum Mid R</td>
+      <td>24</td>
+      <td>2.1</td>
+      <td>4.5</td>
+      <td>6</td>
+      <td>−37</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td>Precuneus L</td>
+      <td>21</td>
+      <td>1.2</td>
+      <td>3.9</td>
+      <td>0</td>
+      <td>−37</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td>Precuneus R</td>
+      <td>39</td>
+      <td>2.3</td>
+      <td>3.8</td>
+      <td>6</td>
+      <td>−40</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td>Paracentral Lobule R</td>
+      <td>39</td>
+      <td>9.1</td>
+      <td>4.1</td>
+      <td>15</td>
+      <td>−40</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Dorsal Precuneus (dPrec)</td>
+      <td rowspan="2">0.0071</td>
+      <td rowspan="2">186.6</td>
+      <td rowspan="2">156</td>
+      <td>Precuneus L</td>
+      <td>42</td>
+      <td>2.3</td>
+      <td>4.9</td>
+      <td>-3</td>
+      <td>−67</td>
+      <td>61</td>
+      <td rowspan="2">12.7% ± 1.9</td>
+    </tr>
+    <tr>
+      <td>Precuneus R</td>
+      <td>87</td>
+      <td>5.2</td>
+      <td>4.4</td>
+      <td>3</td>
+      <td>−64</td>
+      <td>64</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Dorsal Precuneus Left Anterior (ladPrec)</td>
+      <td rowspan="2">0.0178</td>
+      <td rowspan="2">125.5</td>
+      <td rowspan="2">108</td>
+      <td>Precuneus L</td>
+      <td>57</td>
+      <td>3.2</td>
+      <td>4.1</td>
+      <td>-6</td>
+      <td>−55</td>
+      <td>73</td>
+      <td rowspan="2">12.0% ± 2.0</td>
+    </tr>
+    <tr>
+      <td>Paracentral Lobule L</td>
+      <td>48</td>
+      <td>7.0</td>
+      <td>4.3</td>
+      <td>-6</td>
+      <td>−34</td>
+      <td>76</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Occipital Ventral (vOcc)</td>
+      <td rowspan="6">0.0017</td>
+      <td rowspan="6">374.2</td>
+      <td rowspan="6">321</td>
+      <td>Calcarine L</td>
+      <td>18</td>
+      <td>1.6</td>
+      <td>4.1</td>
+      <td>0</td>
+      <td>−64</td>
+      <td>10</td>
+      <td rowspan="6">16.6% ± 2.6</td>
+    </tr>
+    <tr>
+      <td>Lingual L</td>
+      <td>66</td>
+      <td>6</td>
+      <td>4.4</td>
+      <td>0</td>
+      <td>−67</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Lingual R</td>
+      <td>108</td>
+      <td>9</td>
+      <td>4.4</td>
+      <td>6</td>
+      <td>−70</td>
+      <td>-5</td>
+    </tr>
+    <tr>
+      <td>Cerebellum 6 R</td>
+      <td>21</td>
+      <td>2.3</td>
+      <td>4.3</td>
+      <td>12</td>
+      <td>−70</td>
+      <td>−14</td>
+    </tr>
+    <tr>
+      <td>Vermis 4 5</td>
+      <td>51</td>
+      <td>15.0</td>
+      <td>4.6</td>
+      <td>0</td>
+      <td>−61</td>
+      <td>-2</td>
+    </tr>
+    <tr>
+      <td>Vermis 6</td>
+      <td>9</td>
+      <td>4.8</td>
+      <td>3.7</td>
+      <td>3</td>
+      <td>−70</td>
+      <td>-8</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Occipital Dorsal (dOcc)</td>
+      <td rowspan="3">0.0034</td>
+      <td rowspan="3">285.1</td>
+      <td rowspan="3">243</td>
+      <td>Calcarine L</td>
+      <td>21</td>
+      <td>1.8</td>
+      <td>4</td>
+      <td>3</td>
+      <td>−76</td>
+      <td>16</td>
+      <td rowspan="3">16.7% ± 2.7</td>
+    </tr>
+    <tr>
+      <td>Cuneus L</td>
+      <td>138</td>
+      <td>17.7</td>
+      <td>4.5</td>
+      <td>-3</td>
+      <td>−85</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>Cuneus R</td>
+      <td>72</td>
+      <td>9.9</td>
+      <td>4.9</td>
+      <td>6</td>
+      <td>−76</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Extrastriate Body Area Right (EBA)</td>
+      <td rowspan="3">0.0103</td>
+      <td rowspan="3">163.3</td>
+      <td rowspan="3">138</td>
+      <td>Occipital Inf R</td>
+      <td>45</td>
+      <td>8.9</td>
+      <td>4.5</td>
+      <td>48</td>
+      <td>−76</td>
+      <td>−14</td>
+      <td rowspan="3">14.3% ± 2.0</td>
+    </tr>
+    <tr>
+      <td>Temporal Inf R</td>
+      <td>27</td>
+      <td>1.5</td>
+      <td>4.4</td>
+      <td>57</td>
+      <td>−70</td>
+      <td>−11</td>
+    </tr>
+    <tr>
+      <td>Cerebellum Crus1 R</td>
+      <td>33</td>
+      <td>2.4</td>
+      <td>4.8</td>
+      <td>45</td>
+      <td>−82</td>
+      <td>−26</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Superior Parieto-Occipital Sulcus (sPOS)</td>
+      <td rowspan="2">0.0245</td>
+      <td rowspan="2">107.1</td>
+      <td rowspan="2">87</td>
+      <td>Cuneus R</td>
+      <td>21</td>
+      <td>2.9</td>
+      <td>4.6</td>
+      <td>21</td>
+      <td>−76</td>
+      <td>43</td>
+      <td rowspan="2">12.5% ± 1.8</td>
+    </tr>
+    <tr>
+      <td>Occipital Sup R</td>
+      <td>54</td>
+      <td>7.5</td>
+      <td>5.1</td>
+      <td>24</td>
+      <td>−79</td>
+      <td>43</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Retrosplenial Cortex (RSC)</td>
+      <td rowspan="4">0.0084</td>
+      <td rowspan="4">175.6</td>
+      <td rowspan="4">147</td>
+      <td>Cingulum Post L</td>
+      <td>3</td>
+      <td>1.3</td>
+      <td>3.5</td>
+      <td>-6</td>
+      <td>−43</td>
+      <td>10</td>
+      <td rowspan="4">15.4% ±2.1</td>
+    </tr>
+    <tr>
+      <td>Cingulum Post R</td>
+      <td>9</td>
+      <td>5.3</td>
+      <td>3.7</td>
+      <td>6</td>
+      <td>−40</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Lingual R</td>
+      <td>18</td>
+      <td>1.5</td>
+      <td>4.1</td>
+      <td>9</td>
+      <td>−37</td>
+      <td>-2</td>
+    </tr>
+    <tr>
+      <td>Precuneus L</td>
+      <td>36</td>
+      <td>2.0</td>
+      <td>4.4</td>
+      <td>-6</td>
+      <td>−49</td>
+      <td>7</td>
+    </tr>
+  </tbody>
+</table>
+
 The gastric network (Table 1, Figure 2a) comprises the right primary somatosensory cortex (SIr), bilateral secondary somatosensory cortices (SII), medial wall motor regions (MWM), comprising the caudate cingulate motor zone (CCZ), posterior rostral cingulate motor zone (RCZp), and right supplementary motor area (SMA), a region of the right occipito-temporal cortex overlapping the extrastriate body area (EBA), as well as nodes in the posterior cingulate sulcus (pCS), dorsal precuneus (dPrec), occipital cortex (ventral and dorsal portions, vOcc and dOcc), retrosplenial cortex (RSC), and superior parieto-occipital sulcus (sPOS). Estimating chance-level PLV by computing gastric-BOLD coupling between the BOLD signal of one participant with the EGG of the other 29 participants resulted in a qualitatively similar network, with coupling occurring either in the same or neighboring voxels (Supplemental Figure 2). The average shared variance between the EGG and BOLD signals across participants, as estimated from squared coherence, ranged from 12% in the left anterior dorsal precuneus to 16.9% in the posterior cingulate sulcus (Table 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/33321/elife-33321-fig2-v2.jpg)
+
+**Figure 2.:** (a) Regions significantly phase synchronized to gastric rhythm (n = 30, voxel level threshold, p<0.01 two-sided; cluster level threshold, p<0.05, two-sided, intrinsically corrected for multiple comparisons). (b) Gastric-BOLD coupling is specific to gastric frequency. Summary statistics in the gastric network are maximal at the EGG peak frequency (orange) and decrease when offsetting the filter to higher or lower frequencies. (c) Summary statistics distribution under the null hypothesis from 1000 surrogate datasets in which the EGG signal was time-shifted with respect to the BOLD signal. The empirical finding (orange arrow) falls well outside the null distribution. (d) The gastric network (orange) comprises the following somatotopically organized regions: primary somatosensory cortex (Panel SI, with peak activations during stimulation of the trunk and hand (Fabri et al., 2005), finger (Weibull et al., 2008), face (Kopietz et al., 2009), and mouth, that is, teeth (Trulsson et al., 2010), lips and tongue (Miyamoto et al., 2006); secondary somatosensory cortex (Panel SII, cytoarchitectonic subdivisions of SII according to (Scheperjans et al., 2008); OP1, parietal operculum 1 and OP4, parietal operculum 4, presented on a horizontal slice at z = 18); medial wall motor areas (Panel MWM, with peak activations during movement (Amiez and Petrides, 2014) in the caudate cingulate zone (CCZ), posterior rostral cingulate zone (RCZp) and supplementary motor area (SMA)); and extrastriate body area (Panel EBA with peak activations during body part viewing (Orlov et al., 2010), note that because of the visualization on an inflated cortex, the extension of the EBA node to the cerebellum is not visible). (e) Regions in which the alpha and gastric rhythms are coupled (green, modified from [Richter et al., 2017]). Abbreviations are the same as those in Table 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33321/elife-33321-fig2-figsupp1-v2.jpg)
 
 An analysis of covariance across nodes did not reveal significant links between gastric-BOLD coupling strength (defined as the difference between empirical and chance PLV) and gender (F(1, 28)=1.02, p=0.46), body mass index (BMI) (F(1, 28)=1.3, p=0.3) or trait anxiety scores (F(1, 28)=1.02, p=0.47. Statistics (including Bayes Factor) per node are reported in Table 2. Note that there is less variation in BMI in our sample than in the general population since all participants had a BMI smaller than 25.
 
-## Controls: gastric frequency specificity, false-positive rate, and head micromovements
+**Table 2.**
+ Effects of demographical variables on coupling strength at each node.Statistics are not corrected for multiple comparisons. Bayes factor smaller than 0.33 indicate evidence for the null hypothesis, Bayes factor larger than three indicate evidence for an effectTable 2–Source data 1.csv with data per subject: gender, trait anxiety, BMI, and coupling strength at each node.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Gender</th>
+      <th colspan="3">BMI</th>
+      <th colspan="3">Stai A</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>t</th>
+      <th>p</th>
+      <th>Bf</th>
+      <th>r</th>
+      <th>p</th>
+      <th>Bf</th>
+      <th>r</th>
+      <th>p</th>
+      <th>Bf</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SI</td>
+      <td>1.537</td>
+      <td>0.146</td>
+      <td>0.830</td>
+      <td>0.072</td>
+      <td>0.707</td>
+      <td>0.151</td>
+      <td>0.022</td>
+      <td>0.909</td>
+      <td>0.142</td>
+    </tr>
+    <tr>
+      <td>SIIr</td>
+      <td>0.476</td>
+      <td>0.642</td>
+      <td>0.375</td>
+      <td>0.187</td>
+      <td>0.322</td>
+      <td>0.230</td>
+      <td>−0.084</td>
+      <td>0.657</td>
+      <td>0.156</td>
+    </tr>
+    <tr>
+      <td>SIIl</td>
+      <td>2.542</td>
+      <td>0.023</td>
+      <td>3.455</td>
+      <td>0.270</td>
+      <td>0.150</td>
+      <td>0.396</td>
+      <td>−0.272</td>
+      <td>0.146</td>
+      <td>0.402</td>
+    </tr>
+    <tr>
+      <td>RCZp</td>
+      <td>1.429</td>
+      <td>0.175</td>
+      <td>0.738</td>
+      <td>0.107</td>
+      <td>0.575</td>
+      <td>0.165</td>
+      <td>−0.255</td>
+      <td>0.174</td>
+      <td>0.353</td>
+    </tr>
+    <tr>
+      <td>pCS</td>
+      <td>2.506</td>
+      <td>0.025</td>
+      <td>3.250</td>
+      <td>0.142</td>
+      <td>0.454</td>
+      <td>0.187</td>
+      <td>−0.296</td>
+      <td>0.112</td>
+      <td>0.493</td>
+    </tr>
+    <tr>
+      <td>dPrec</td>
+      <td>1.265</td>
+      <td>0.227</td>
+      <td>0.628</td>
+      <td>0.035</td>
+      <td>0.853</td>
+      <td>0.144</td>
+      <td>−0.243</td>
+      <td>0.196</td>
+      <td>0.324</td>
+    </tr>
+    <tr>
+      <td>dPrec la</td>
+      <td>1.289</td>
+      <td>0.218</td>
+      <td>0.642</td>
+      <td>0.224</td>
+      <td>0.234</td>
+      <td>0.285</td>
+      <td>−0.215</td>
+      <td>0.254</td>
+      <td>0.269</td>
+    </tr>
+    <tr>
+      <td>vOcc</td>
+      <td>2.342</td>
+      <td>0.034</td>
+      <td>2.487</td>
+      <td>0.342</td>
+      <td>0.065</td>
+      <td>0.769</td>
+      <td>0.003</td>
+      <td>0.988</td>
+      <td>0.141</td>
+    </tr>
+    <tr>
+      <td>dOcc</td>
+      <td>2.075</td>
+      <td>0.057</td>
+      <td>1.656</td>
+      <td>0.337</td>
+      <td>0.069</td>
+      <td>0.729</td>
+      <td>−0.068</td>
+      <td>0.723</td>
+      <td>0.150</td>
+    </tr>
+    <tr>
+      <td>EBA</td>
+      <td>1.882</td>
+      <td>0.081</td>
+      <td>1.267</td>
+      <td>−0.064</td>
+      <td>0.735</td>
+      <td>0.150</td>
+      <td>−0.250</td>
+      <td>0.183</td>
+      <td>0.341</td>
+    </tr>
+    <tr>
+      <td>sPOS</td>
+      <td>2.164</td>
+      <td>0.048</td>
+      <td>1.889</td>
+      <td>0.481</td>
+      <td>0.007</td>
+      <td>5.133</td>
+      <td>−0.143</td>
+      <td>0.450</td>
+      <td>0.187</td>
+    </tr>
+    <tr>
+      <td>RSC</td>
+      <td>1.129</td>
+      <td>0.278</td>
+      <td>0.556</td>
+      <td>0.105</td>
+      <td>0.579</td>
+      <td>0.165</td>
+      <td>−0.317</td>
+      <td>0.088</td>
+      <td>0.600</td>
+    </tr>
+  </tbody>
+</table>
+
+### Controls: gastric frequency specificity, false-positive rate, and head micromovements
 
 To assess the robustness of the gastric network, we ran several controls. First, we verified that EGG-BOLD coupling was specific to gastric frequency. We filtered both EGG and BOLD time series at frequencies that were slightly offset from the peak gastric frequency of each participant and recomputed cluster statistics. Summary statistics (sum of the absolute t-values resulting from the paired t-test between empirical and chance-level PLV at each voxel, either summed across the whole brain or within the gastric network) decreased when shifting below or above the gastric peak frequency (Figure 2b). This result indicates that the gastric network corresponds to BOLD fluctuations specifically occurring at gastric frequency.
 
@@ -55,7 +673,7 @@ Finally, we investigated whether submillimeter head movements might have influen
 
 The gastric network is thus specific to individual gastric peak frequency, is highly unlikely to be a chance finding, is not dependent on BOLD power, and is not linked to spurious effects of head movement on the BOLD signal.
 
-## The gastric network includes body maps associated with touch, action and vision
+### The gastric network includes body maps associated with touch, action and vision
 
 We then examined the areas comprising the gastric network in more detail. By definition, the gastric network is composed of regions with activity that co-fluctuates with gastric basal rhythm. Five nodes of the gastric network also share a common functional feature, somatotopic organization, as detailed in Figure 2d.
 
@@ -65,29 +683,37 @@ The gastric network also includes three medial wall motor regions (CCZ, RCZp, an
 
 Thus, the gastric network overlaps with body maps classically associated with different modalities, including touch in somatosensory cortices, action in MWM and vision in the EBA.
 
-## The gastric network includes regions involved in the generation of the alpha rhythm
+### The gastric network includes regions involved in the generation of the alpha rhythm
 
 Finally, we found gastric-BOLD coupling in the posterior bank of the parieto-occipital sulcus (dOcc and vOcc) and retrosplenial cortex. In a previous study using magneto-encephalography (Richter et al., 2017), the amplitude of the alpha rhythm in these regions was modulated by gastric phase (Figure 2e).
 
-## Gastric-brain coupling in the right posterior insula
+### Gastric-brain coupling in the right posterior insula
 
 The insula is one region that receives visceral inputs (Critchley and Harrison, 2013; Park and Tallon-Baudry, 2014), but it did not appear to be significantly phase synchronized to the EGG using our whole-brain, statistically conservative procedure. Thus, we performed post-hoc region-of-interest analysis of the three insular subdivisions (anterior dorsal, anterior ventral, posterior [Deen et al., 2011]) in both hemispheres. Only the right posterior insula showed evidence for gastric-BOLD coupling across participants (empirical vs. chance-level PLV, paired t-test, two sided, t(29)=2.78, p=0.043, Bonferroni corrected; all other regions, p>0.21).
 
 The use of statistical thresholds results in binary outputs. To get a finer grained picture, we computed effect sizes in the 6 insular subdivisions and in the 12 gastric network nodes (Cohen’s d for the difference between empirical and chance PLV on the mean time series in each region of interest). Mean Cohen’s d across gastric network nodes was 1.19 ± 0.21 STD, ranging from 0.80 in the dorsal occipital cortex to 1.62 in the right secondary somatosensory cortex. The right posterior insula had an effect size of 0.84, within the lower range of the gastric network. All other insula subdivisions displayed smaller effect sizes (right: dorsal anterior 0.61, ventral anterior 0.54; left: posterior 0.60, dorsal anterior 0.41, ventral anterior = 0.52). Thus, the right posterior insula does show evidence for coupling with the stomach, with an effect size comparable to that of the weakest nodes of the gastric network, provided signal-to-noise ratio is first increased by averaging within a region of interest.
 
-## Partial overlap between gastric network and autonomic networks
+### Partial overlap between gastric network and autonomic networks
 
 Is the gastric network specific to the stomach, or is it also linked to other organs such as the heart? We determined brain regions (FWE corrected p<0.05; Figure 3A) fluctuating with high- and low-frequency heart rate variability, that represent parasympathetic and a mixture of sympathetic and parasympathetic outputs, respectively. Of the gastric network, 30% was also related to heart rate variability, mostly in medial motor regions and in the posterior cingulate cluster (low-frequency heart rate variability), and, to a lesser extent, in the dorsal occipital cluster (high-frequency heart rate variability). Because we did not record any measure that isolates sympathetic output, we additionally analyzed the overlap between the gastric network and known sympathetic areas (Beissner et al., 2013). This overlap was very limited (34 voxels, 4.7% of the gastric network) and confined to SIr and the anterior parts of medial motor regions (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/33321/elife-33321-fig3-v2.jpg)
+
+**Figure 3.:** (A) Random effects analysis across participants (N = 30), for the main effects of high- (blue) and low (green)-frequency heart rate variability power fluctuations presented on an inflated brain (pFWE < 0.05 and 30 voxels). The gastric network is represented in orange. (B) Random effects analysis across participants (N = 20), for the main effect of pupil diameter (pink; threshold p<0.001 and 30 voxels). At this threshold, only negative correlations were observed.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33321/elife-33321-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Meta-analytic activations (Beissner et al., 2013) during tasks eliciting sympathetic responses (electrodermal activity, EDA, in green) are superimposed on the gastric network (orange). Dotted lines illustrate the extension of autonomic activity in the depth of the opercular and temporal regions. (B) Comparison of high-frequency (blue) and low-frequency (green) heart rate variability in resting state (n = 30) with a (mostly task-based) meta-analysis (Beissner et al., 2013) of high-frequency variability (light blue) and electrodermal activity (green, same as in A).
+
 We also determined brain regions that correlate with pupil diameter (n = 20 due to data loss or artefacts; Figure 3B). The strongest correlations were found in occipital regions, somato-motor cortices and medial wall motor regions. 17% of the gastric network (SI, SIIr, MWM and EBA) overlaps with regions correlating with pupil diameter. Shared variance between pupil diameter and EGG, estimated from squared coherence, was 9.7 ± 2.5%. Coupling strength averaged across SI, SIIr, MWM and EBA did not correlate with shared pupil-EGG variance (mean r = 0.05, p=0.82, BF = 0.17 which indicates substantial evidence for the null hypothesis).
 
-## Temporal sequence within a gastric cycle and delayed connectivity between the nodes of the gastric network
+### Temporal sequence within a gastric cycle and delayed connectivity between the nodes of the gastric network
 
 In the different nodes of the gastric network, gastric-brain coupling occurred with different phase delays with respect to the gastric cycle. We analyzed between-participant phase-delay consistency and found temporal delays of ~3.3 s between the earliest nodes (somatosensory cortices) and latest nodes (dorsal precuneus and EBA) of the gastric network (Figure 4a,b). The delay in the right posterior insula was in the range of the earliest nodes of the gastric network (Figure 4a). The Watson-Williams test for circular data confirmed that different nodes of the gastric network were coupled to the gastric rhythm with different phase delays (F(11, 29)=5.22, p<10−6), indicating a precise temporal sequence of activations within each gastric cycle.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/33321/elife-33321-fig4-v2.jpg)
 
-**Figure 4.:** (a) Phase-delay consistency of each node of the gastric network. Vector length quantifies the phase consistency across participants, and vector angle indicates phase advance (green) or phase lag (blue) within the gastric network. Temporal delays can reach up to ~3.3 s (±π/6) between the earliest nodes (primary and secondary somatosensory cortices) and the latest nodes (dorsal precuneus and EBA). The right posterior insula (gray) is earlier than any node of the gastric network. (b) Group-averaged phase delays for each cluster in the gastric network. The two circled regions (EBA, blue; MWM, green) are illustrated in C. (c) A 200 s BOLD time series in MWM and EBA in a single participant, showing phase consistency with delays. (d). Group-level functional connectivity across all participants using MWM as a seed, either instantaneous (left) or delayed (right), with regions belonging or not to the gastric network (GN+/-, defined by delayed connectivity) and with regions belonging or not to the same resting-state network (RSN+/-, defined by instantaneous connectivity). Boxes are colored red when the mean FC exceeds 30%. The boxplot presents the mean (full line), median (dashed line), first and third quartiles (box), and extrema (whiskers) excluding outliers (+, defined as exceeding 1.5 interquartile ranges above the third quartile). (e) Group-level functional connectivity across all participants using the vOcc as a seed. Abbreviations: EBA, extrastriate body area; MWM, medial wall motor regions; rSI, right primary somatosensory cortex; rVAI, right ventral anterior insula; lvPrec, left ventral precuneus.10.7554/eLife.33321.017Figure 4—source data 1.Used for Figure 4d.10.7554/eLife.33321.018Figure 4—source data 2.Used for Figure 4e.
+**Figure 4.:** (a) Phase-delay consistency of each node of the gastric network. Vector length quantifies the phase consistency across participants, and vector angle indicates phase advance (green) or phase lag (blue) within the gastric network. Temporal delays can reach up to ~3.3 s (±π/6) between the earliest nodes (primary and secondary somatosensory cortices) and the latest nodes (dorsal precuneus and EBA). The right posterior insula (gray) is earlier than any node of the gastric network. (b) Group-averaged phase delays for each cluster in the gastric network. The two circled regions (EBA, blue; MWM, green) are illustrated in C. (c) A 200 s BOLD time series in MWM and EBA in a single participant, showing phase consistency with delays. (d). Group-level functional connectivity across all participants using MWM as a seed, either instantaneous (left) or delayed (right), with regions belonging or not to the gastric network (GN+/-, defined by delayed connectivity) and with regions belonging or not to the same resting-state network (RSN+/-, defined by instantaneous connectivity). Boxes are colored red when the mean FC exceeds 30%. The boxplot presents the mean (full line), median (dashed line), first and third quartiles (box), and extrema (whiskers) excluding outliers (+, defined as exceeding 1.5 interquartile ranges above the third quartile). (e) Group-level functional connectivity across all participants using the vOcc as a seed. Abbreviations: EBA, extrastriate body area; MWM, medial wall motor regions; rSI, right primary somatosensory cortex; rVAI, right ventral anterior insula; lvPrec, left ventral precuneus.
 
 Thus, each node of the gastric network appears to be characterized by a specific temporal delay with respect to gastric phase. These temporal delays were accompanied by delayed functional connectivity (FC) between the nodes of the gastric network.
 
@@ -95,7 +721,7 @@ We first illustrated this point with an example in a single participant (Figure 
 
 We then estimated both instantaneous and delayed FC between all nodes of the gastric network in all participants. Delayed FC between gastric nodes (mean 40.8% ± SD 8%, ranging from 26.5% between the right primary somatosensory cortex and RSC, up to 63.9% between the ventral and dorsal occipital cortices) was systematically larger (paired t-test, t(29)=9.02, p<10−10) than instantaneous FC (mean 30.2% ± SD 11%, ranging from 9.3% between the dorsal precuneus and right SII, up to 61.2% between right and left SII). Next, we verified (Figure 4d,e) that two regions belonging to both the gastric network and the same RSN (i.e. two regions of the gastric network with little temporal delay, such as MWM and SIr) would display large values of both delayed and instantaneous FC, whereas two regions belonging to the gastric network but not to the same classical RSN (i.e. two regions of the gastric network with a large temporal delay, such as MWM and EBA) would show large delayed FC and small instantaneous FC. Thus, in contrast to classical RSNs, the gastric network appears to be characterized by between-node delayed connectivity.
 
-## Slow temporal fluctuations in gastric-BOLD coupling are associated with changes in BOLD amplitude and occur simultaneously in all nodes
+### Slow temporal fluctuations in gastric-BOLD coupling are associated with changes in BOLD amplitude and occur simultaneously in all nodes
 
 Thus far, we have identified a sequence of activation that occurs at each gastric cycle, which characterizes gastric-BOLD coupling. We then investigated whether slow temporal fluctuations in the strength of gastric-BOLD coupling were accompanied by fluctuations in BOLD amplitude. As illustrated in Figure 5a, we found that episodes of elevated gastric-BOLD synchronization corresponded to episodes of increased BOLD amplitude. Indeed, time-varying PLV and BOLD time series, computed in sliding time windows of 60 s (approximately three gastric cycles), were significantly correlated (Fisher z-transformed Pearson correlation coefficients t-tested against zero, Bonferroni corrected p<0.006 in all gastric nodes, mean r across nodes 0.18 STD =± 0.02, ranging from 0.15 in MWM to 0.22 in SIIl).
 
@@ -109,7 +735,7 @@ Next, we tested whether slow temporal fluctuations in gastric-BOLD synchronizati
 
 Here, we reveal the existence of the gastric network, comprising brain regions with BOLD time series that are phase synchronized with gastric basal rhythm. Within the gastric network, approximately 15% of the BOLD variance is explained by gastric-BOLD phase synchrony. The gastric network cuts across classical RSNs and shows only partial overlap with autonomic control regions. A number of brain regions composing the gastric network have convergent functional properties involved in mapping bodily space through touch, action and vision. The network is characterized by a precise temporal sequence of activations within a gastric cycle, beginning with somato-motor cortices and ending with extra-striate body area and dorsal precuneus. This temporal sequence is accompanied by delayed functional connectivity between nodes of the gastric network, which explains why this RSN could not be identified with standard correlation methods that only capture instantaneous connectivity. Furthermore, slow temporal fluctuations in gastric-BOLD coupling are associated with changes in BOLD amplitude and occur simultaneously in all nodes. Thus, our results suggest that canonical RSNs based on instantaneous connectivity represent only one of the possible partitions of the brain into coherent networks based on temporal dynamics.
 
-## Neural origin of gastric-BOLD coupling
+### Neural origin of gastric-BOLD coupling
 
 SIr, SII and medial wall motor regions likely receive direct gastric inputs. The stimulation of the splanchnic (spinal) nerve that innervates the stomach evokes responses in contralateral SI and bilateral SII in several mammals (Amassian, 1951), and the spinothalamic tract was recently shown to target MWM in monkeys (Dum et al., 2009). Vagal stimulation can also evoke responses in somato-motor cortices (Ito et al., 2003). In addition, single neurons with convergent visceral and hand inputs have been observed in SI (Brüggemann et al., 1997), in line with the overlap we observed between the gastric network and hand representation. SIr, SII and MWM are not only targeted by documented ascending visceral pathways, they are also early nodes of the gastric network, with a phase advance compared with that of other nodes. Thus, these areas could be the entry point of gastric afferences.
 
@@ -119,7 +745,7 @@ Regions receiving direct visceral inputs are also early nodes of the gastric net
 
 Artefactual BOLD fluctuations caused by head movements driven by stomach contractions seem unlikely. Indeed, gastric-BOLD coupling was neither related to head movement nor to EGG power that increases during stomach contractions. Another possibility is a vascular artifact. During digestion, gastric blood flow does indeed vary (Matheson et al., 2000), but cerebral blood flow is unaltered (Gallavan et al., 1980). Artificial distension of the stomach can cause increases in peripheral blood pressure (Min et al., 2011), but this peripheral increase is mostly due to the insertion of a bag catheter, not to its inflation (Cantù et al., 2008). Finally, spontaneous fluctuations in blood pressure in humans occur at approximately 0.1 Hz (so-called Mayer waves), which is much faster than gastric rhythm. Thus, a vascular effect seems unlikely, and the hypothesis that activity in the gastric network is driven by neural activity in areas directly receiving ascending inputs appears more plausible.
 
-## What is the functional role of the gastric network?
+### What is the functional role of the gastric network?
 
 Twenty years and thousands of articles after the discovery of the default network, the debate on its functional role at rest or during tasks is still open. Thus, any discussion of the functional role the gastric network can only be tentative and speculative at this stage. Several non-mutually exclusive interpretations can nevertheless be considered.
 
@@ -131,13 +757,13 @@ However, the gastric network is not limited to body maps, it also comprises regi
 
 In which type of tasks would the gastric network play a role? Foraging and feeding behaviors are likely candidates, since they involve both the coordination of different egocentric maps and the homeostatic regulation of digestion. Besides, in SI and EBA gastric-BOLD coupling is maximal in the hand and mouth region, suggesting a potential link with the stereotypical actions of feeding behavior, where food goes from hand to mouth, and from mouth to stomach. Still, the coordination of different systems of bodily coordinates is important for many actions besides feeding, such as navigating in the environment or grasping any object. Whether the gastric network plays a role in food-related, but also nonfood-related behaviors, remains to be determined.
 
-## Delays and directionality of interactions
+### Delays and directionality of interactions
 
 The gastric network is characterized by temporal fluctuations with delays between the gastric rhythm and brain regions. Delays in resting-state functional connectivity have been highlighted only recently (Yellin et al., 2015; Mitra and Raichle, 2016), but have long been documented in stimulus-induced BOLD responses (Saad et al., 2001; Kruggel et al., 1999). Within functionally coherent systems such as the visual (Saad et al., 2001) or auditory (Kruggel et al., 1999) systems, delays of 2 s are common. In this light, our finding of up to 3 s delays between areas much further apart thus not appear so surprising. Still, the interpretation of long delays is not straightforward. They are unlikely to directly reflect synaptic delays of fast sequential neural transmission between areas since feed-forward transfer, with only minimal local computations, can be as fast as 10 to 15 ms per processing stage (Thorpe et al., 1996). However, if local recurrent processing is involved, longer delays might occur. Delays might additionally reflect regional differences in the timing of the vascular response (Saad et al., 2001; Kruggel et al., 1999), in slow changes of neural activity over time, as in accumulation processes (Yellin et al., 2015), or in the involvement of neuromodulatory influences. The different factors may further be combined, that is neuromodulation might affect cerebrovascular reactivity (Krimer et al., 1998).
 
 What is the directionality of the brain-stomach interactions? The methods used here do not allow to answer this question since PLV is not a directed measure. If the gastric network plays a role in homeostasis, interactions are likely to be bidirectional, because homeostasis implies both the monitoring of ascending inputs, to evaluate the peripheral state, and the production of descending control commands. Medial wall motor regions, which both receive inputs from the spino-thalamic tract, and generate sympathetic outputs, might fit with this schema. On the other hand, the gastric-locked modulation of the alpha rhythm in the ventral and dorsal occipital clusters was previously shown to be mostly due to ascending influences from the stomach to the brain (Richter et al., 2017).
 
-## The gastric network is a novel resting-state network
+### The gastric network is a novel resting-state network
 
 RSNs have been defined as segregated systems that show synchronous fluctuations during rest (Fox and Raichle, 2007). The gastric network, albeit distinct from classical RSNs falls under this definition. In terms of dynamics, the gastric network is defined by its phase synchronization with the stomach and its delayed connectivity between nodes. The gastric network can thus be considered a novel RSN that could not be previously observed due to methodological reasons.
 
@@ -145,17 +771,17 @@ As opposed to classical RSNs, the gastric network is characterized by delayed co
 
 ## Materials and methods
 
-## Experimental procedure
+### Experimental procedure
 
-## Participants
+#### Participants
 
 Thirty-four right-handed human participants took part in this study. All volunteers were interviewed by a physician to ensure the following inclusion criteria: absence of digestive, psychiatric or neurological disorders; BMI between 18 and 25; and compatibility with MRI recordings. Participants received a monetary reward and provided written informed consent for participation in the experiment and publication of group data. The study was approved by the ethics committee Comité de Protection des Personnes Ile de France III (approval identifier: 2007-A01125-48). All participants fasted for at least 90 min before the recordings. Data from four participants were excluded. Two were excluded because coughing artifacts caused excessive head movement during acquisition and corrupted the EGG data, and two were excluded because their EGG spectrum did not show a clear peak that could allow us to identify the frequency of their gastric rhythm. A total of 30 participants (mean age 24.2 ± SD 3.31, 15 females, mean BMI 21.48 ± SD 1.91) were included in the analysis described below. Because effect size was not known a priori, the study was powered to detect medium size effect (i.e. slightly above the median sample size of fMRI studies [Poldrack et al., 2017]).
 
-## MRI data acquisition
+#### MRI data acquisition
 
 MRI was performed at 3 Tesla using a Siemens MAGNETOM Verio scanner (Siemens, Germany) with a 32-channel phased-array head coil. The resting-state scan lasted 900 s during which participants were instructed to lay still and fixate on a bull’s eye on a gray background. A functional MRI time series of 450 volumes was acquired with an echo-planar imaging (EPI) sequence and the following acquisition parameters: TR = 2000 ms, TE = 24 ms, flip angle = 78°, FOV = 204 mm, and acquisition matrix = 68×68 × 40 (voxel size = 3×3 × 3 mm3). Each volume comprised 40 contiguous axial slices covering the entire brain. High-resolution T1-weighted structural MRI scans of the brain were acquired for anatomic reference after the functional sequence using a 3D gradient-echo sequence (TE = 1.99 ms, TR = 5000 ms, TI-1 = 700 ms/TI-2=2500 ms, flip angle-1 = 4°/flip angle-2 = 5°, bandwidth = 240 Hz/pixel, acquisition matrix = 240 × 256×224, and isometric voxel size = 1.0 mm3). The anatomical sequence duration was 11 min 17 s. Cushions were used to minimize head motion during the scan.
 
-## Physiological signal acquisition
+#### Physiological signal acquisition
 
 Physiological signals were simultaneously recorded during functional MRI acquisition using MRI compatible equipment. The electrogastrogram (EGG) and electrocardiogram (ECG) were acquired using bipolar electrodes connected to a BrainAmp amplifier (Brain products, Germany) placed between the legs of participants; the electrodes received a trigger signaling the beginning of each MRI volume. EGG was acquired at a sampling rate of 5000 Hz and a resolution of 0.5 μV/bit with a low-pass filter of 1000 Hz and no high-pass filter (DC recordings). ECG was acquired at a sampling rate of 5000 Hz and a resolution of 10 μV/bit with a low-pass filter of 1000 Hz and a high-pass filter of 0.016 Hz. Eye position and pupil diameter were recorded from the right eye with an EYELINK 1000 (SR Research, Canada) and simultaneously sent to BrainAmp amplifiers.
 
@@ -163,23 +789,29 @@ The skin of participants was rubbed and cleaned with alcohol to remove dead skin
 
 Electrophysiological data were collected during fMRI data acquisition, as well as at least 30 s before and after. In addition, to rule out the possibility that the scanner pulse and B0 magnetic field could distort the frequency content of the EGG, a second EGG acquisition with an 8 min duration was performed after the acquisition of the MRI scans, with the participant positioned outside the tunnel of the scanner. Paired sample t-test was then performed to compare the peak frequencies obtained for each participant inside the scanner with those obtained outside the scanner for the same channels. This control analysis was run on 29 participants due to corrupted data in the EGG recordings outside the scanner tunnel in one participant.
 
-## MRI preprocessing
+#### MRI preprocessing
 
 Brain imaging data were preprocessed using Matlab (Matlab 2013b, MathWorks, Inc., United States) and the Statistical Parametric Mapping toolbox (SPM 8, Wellcome Department of Imaging Neuroscience, University College London, U.K.). Images of each individual participant were corrected for slice timing and motion with six movement parameters (three rotations and three translations). Two participants who moved more than 3 mm during the functional scan were excluded from the study. Each participant’s structural image was normalized to Montreal Neurological Institute (MNI) space of 152 participants’ average T1 template provided by SPM with affine registration followed by nonlinear transformation (Ashburner and Friston, 1999; Friston et al., 1995). The normalization parameters determined for the structural volume were then applied to the corresponding functional images. The functional volumes were spatially smoothed with a 3 mm3 full-width half-maximum (FWHM) Gaussian kernel. The time series of voxels inside the brain, as determined using an SPM a priori mask, were subjected to the following preprocessing steps using the FieldTrip toolbox (Oostenveld et al., 2011) (Donders Institute for Brain, Cognition and Behaviour, Radboud University Nijmegen, the Netherlands. See http://www.ru.nl/neuroimaging/fieldtrip, release 01/09/2014). Linear and quadratic trends from each voxel’s time series were removed by fitting and regressing basis functions, and we bandpass filtered the BOLD time series between 0.01 and 0.1 Hz using a fourth order Butterworth infinite impulse response filter. A correction for cerebrospinal fluid motion was obtained by regressing out the time series of a 9 mm diameter sphere located in the fourth ventricle (MNI coordinates of the center of the sphere [0 –46 −32]).
 
-## EGG preprocessing
+#### EGG preprocessing
 
 Data analysis was performed using the FieldTrip toolbox. Data were low-pass filtered below 5 Hz to avoid aliasing and downsampled from 5000 Hz to 10 Hz. To identify the EGG peak frequency (0.033–0.066 Hz) for each participant, we computed the spectral density estimate at each EGG channel over the 900 s of an EGG signal acquired during the fMRI scan using Welch’s method on 200 s time windows with 150 s overlap. Spectral peak identification was based on the following criteria: peaking power larger than 15μV2 and sharpness of the peak. Two participants were excluded from further analysis at this stage because their spectral peak was not well defined, with a power smaller than 15μV2. In 20 participants, peaking power was the largest at the EGG electrode with the best defined spectral peak. In 10 participants, we used the second most powerful channel because the spectral peak was sharper. Data from the selected EGG channel were then bandpass filtered to isolate the signal related to gastric basal rhythm (linear phase finite impulse response filter, FIR, designed with Matlab function FIR2, centered at EGG peaking frequency, filter width ±0.015 Hz, filter order of 5). Data were filtered in the forward and backward directions to avoid phase distortions and downsampled to the sampling rate of the BOLD acquisition (0.5 Hz). Filtered data included 30 s before and after the beginning and end of MRI data acquisition to minimize ringing effects.
 
 MR gradient artifacts affect the electrophysiological signal down to approximately 10 Hz, which is far above EGG frequency (~0.05 Hz). Thus, no specific artifact gradient procedure was necessary. We further checked that EGG frequency inside and outside the scanner did not differ (see Results).
 
-## Data analysis
+### Data analysis
 
-## Quantification of gastric-BOLD phase synchrony
+#### Quantification of gastric-BOLD phase synchrony
 
-The BOLD signals of all brain voxels were bandpass filtered with the same filter parameters as the ones used for the EGG preprocessing. The first and last 15 volumes (30 s) were discarded from both the BOLD and EGG time series. The updated duration of the fMRI and EGG signals in which the rest of the analysis was performed was 840 s. The Hilbert transform was applied to the BOLD and EGG time series to derive the instantaneous phases of the signals. The PLV (Lachaux et al., 1999) was computed as the absolute value of the time average difference in the angle between the phases of the EGG and each voxel across time (Equation 1).(1)PLVx,y=|1T∑t=1Tei(∅x(t)−∅y(t))|where T is the number of time samples, and x and y are the two time series. The PLV measures phase synchrony irrespective of temporal delays and amplitude fluctuations and is bounded between 0 (no synchrony) and 1 (perfect synchrony). Two pure sinewaves at the same frequency will thus always have a PLV of 1. However, the stomach is not perfectly regular, and the EGG is not a perfect sinewave. The phase-locking procedure identifies BOLD regions that go faster when the stomach goes faster, and slower when the stomach goes slower. The bandpass filter we use is large enough to retrieve all those fluctuations. The PLV was first assessed over the whole duration of the recording. In a second step, we computed the time-varying PLV in a 60 s time window shifted by 10 s.
+The BOLD signals of all brain voxels were bandpass filtered with the same filter parameters as the ones used for the EGG preprocessing. The first and last 15 volumes (30 s) were discarded from both the BOLD and EGG time series. The updated duration of the fMRI and EGG signals in which the rest of the analysis was performed was 840 s. The Hilbert transform was applied to the BOLD and EGG time series to derive the instantaneous phases of the signals. The PLV (Lachaux et al., 1999) was computed as the absolute value of the time average difference in the angle between the phases of the EGG and each voxel across time (Equation 1).
 
-## Statistical procedure for determining regions showing significant gastric-BOLD coupling at the group level
+$$
+PLV_{x,y}=|\frac{1}{T}\sumt=1Te^{i(∅x(t)−∅y(t))}|
+$$
+
+where T is the number of time samples, and x and y are the two time series. The PLV measures phase synchrony irrespective of temporal delays and amplitude fluctuations and is bounded between 0 (no synchrony) and 1 (perfect synchrony). Two pure sinewaves at the same frequency will thus always have a PLV of 1. However, the stomach is not perfectly regular, and the EGG is not a perfect sinewave. The phase-locking procedure identifies BOLD regions that go faster when the stomach goes faster, and slower when the stomach goes slower. The bandpass filter we use is large enough to retrieve all those fluctuations. The PLV was first assessed over the whole duration of the recording. In a second step, we computed the time-varying PLV in a 60 s time window shifted by 10 s.
+
+#### Statistical procedure for determining regions showing significant gastric-BOLD coupling at the group level
 
 We employed a two-step statistical procedure adapted from a previous work (Richter et al., 2017). We estimated chance-level gastric-BOLD coupling at each voxel and in each participant. We then used group-level statistics to determine regions in which gastric-BOLD coupling was greater than chance.
 
@@ -189,48 +821,66 @@ In a second step, we tested whether the empirical PLV differed from the chance-l
 
 As an additional control, we computed gastric-BOLD coupling at each voxel between the BOLD data of the participant and the EGG data of the other 29 participants. Chance-level PLV was defined as the median of the 29 surrogate PLVs, and compared to empirical PLV using the clustering method described above. Note that in this case, chance level PLV is estimated from only 29 surrogate data sets, as compared to 360 surrogate data sets in time-shift approach, resulting in a less precise estimate.
 
-## Quantification of gastric-bold shared variance
+#### Quantification of gastric-bold shared variance
 
-To estimate the amount of variance in the BOLD signal that could be accounted for by gastric coupling, we computed the squared coherence coefficient between the EGG and average BOLD time course across all voxels in each significant cluster using FieldTrip software. The coherence coefficient measures phase and amplitude consistency across time and is a frequency domain analog of the cross-correlation coefficient in the temporal domain. Therefore, its squared value can be interpreted as the amount of shared variance between two signals at a certain frequency (Bastos and Schoffelen, 2015). First, we estimated the frequency spectrum of the full-band (0.01–0.1 Hz) EGG and BOLD signals (Welch method on a 120 s time window with 20 s overlap). We then computed the coherence coefficient between the spectrum of each participant’s EGG and each cluster’s time series at gastric frequency (ω) as the absolute value of the product of the amplitudes (A) of the signals and their phase (φ) difference averaged across time windows (t) and normalized by the square root of the product of their squared amplitudes averaged across time windows.(2)cohxy(ω)=|1T∑t=1TAx(w,t)Ay(w,t)ei(φx(w,t)−φy(w,t))|(1T∑t=1TAx2(w,t))(1T∑t=1TAy2(w,t))
+To estimate the amount of variance in the BOLD signal that could be accounted for by gastric coupling, we computed the squared coherence coefficient between the EGG and average BOLD time course across all voxels in each significant cluster using FieldTrip software. The coherence coefficient measures phase and amplitude consistency across time and is a frequency domain analog of the cross-correlation coefficient in the temporal domain. Therefore, its squared value can be interpreted as the amount of shared variance between two signals at a certain frequency (Bastos and Schoffelen, 2015). First, we estimated the frequency spectrum of the full-band (0.01–0.1 Hz) EGG and BOLD signals (Welch method on a 120 s time window with 20 s overlap). We then computed the coherence coefficient between the spectrum of each participant’s EGG and each cluster’s time series at gastric frequency ($\omega)$ as the absolute value of the product of the amplitudes (A) of the signals and their phase (φ) difference averaged across time windows (t) and normalized by the square root of the product of their squared amplitudes averaged across time windows.
+
+$$
+coh_{xy}(\omega)=\frac{|\frac{1}{T}\sumt=1TA_{x}(w,t)A_{y}(w,t)e^{i(\phix(w,t)−\phiy(w,t))}|}{\sqrt{(\frac{1}{T}\sumt=1TA_{x}^{2}(w,t))}(\frac{1}{T}\sumt=1TA_{y}^{2}(w,t))}
+$$
 
 The coherence coefficient was then squared and averaged across participants such that the final group value represented the shared variance between the EGG and each cluster BOLD activity at the normogastric peak.
 
-## Between-participant phase-delay consistency
+#### Between-participant phase-delay consistency
 
-To quantify temporal delays in the gastric network, we ran group-level analysis on the gastric-BOLD phase-locking angle. In each participant, we first computed a mean BOLD time series per node by averaging the voxel time series in each significant cluster. We then computed the relative phase-locking angle ϕk relative of the node k between the node time series x and the EGG y using equation 3, where ϕk relative corresponds to the phase-locking angle ϕk of node k with respect to the EGG minus the average angle across all nodes. ϕk relative thus quantifies the phase advance or lag of each node relative to the gastric network. We analyze relative, rather than absolute phase values, because of there might be a constant but unknown phase delay between the recorded EGG and the rhythm of the gastric pacemaker.(3)Φk=arg(1T∑t=0Tei(ϕx(t)−ϕy(t)))(4)Φk relative = Φk− 1K∑kKΦk
+To quantify temporal delays in the gastric network, we ran group-level analysis on the gastric-BOLD phase-locking angle. In each participant, we first computed a mean BOLD time series per node by averaging the voxel time series in each significant cluster. We then computed the relative phase-locking angle ϕk relative of the node k between the node time series x and the EGG y using equation 3, where ϕk relative corresponds to the phase-locking angle ϕk of node k with respect to the EGG minus the average angle across all nodes. ϕk relative thus quantifies the phase advance or lag of each node relative to the gastric network. We analyze relative, rather than absolute phase values, because of there might be a constant but unknown phase delay between the recorded EGG and the rhythm of the gastric pacemaker.
 
-Between-participant phase-delay consistency was then obtained at each node by averaging the unit vectors of the relative phase-locking angles across P participants using Equation 5.(5)Between−participantphase−delayconsistencyk=|1P∑P=1Pei(ϕk)|
+$$
+Φ_{k}=arg(\frac{1}{T}\sumt=0Te^{i(ϕx(t)−ϕy(t))})
+$$
+
+
+
+$$
+Φ_{k} relative = Φ_{k}− \frac{1}{K}\sumkKΦ_{k}
+$$
+
+Between-participant phase-delay consistency was then obtained at each node by averaging the unit vectors of the relative phase-locking angles across P participants using Equation 5.
+
+$$
+Between−participantphase−delayconsistency_{k}=|\frac{1}{P}\sumP=1Pe^{i(ϕk)}|
+$$
 
 To determine whether there were significant differences across the angle of gastric network clusters, we submitted the values of each node and participant’s relative phase-locking angle to Watson-Williams test, a circular analog of one-way ANOVA for circular data, using the circstat Matlab toolbox (Berens, 2009)
 
-## Functional connectivity: correlation and coherence
+#### Functional connectivity: correlation and coherence
 
 FC was defined as shared variance and computed using either the squared Pearson correlation coefficient or squared coherence. We computed the Pearson correlation between the bandpass-filtered BOLD time series (gastric peaking frequency ± 0.015 Hz) averaged across voxels in each gastric node, as well as in two control regions outside the gastric network, the right ventral precuneus and right ventral insula. The ventral precuneus, a core node of the default network, was defined using a 9 mm3 ROI centered in the coordinates provided by Fox et al. (2005) (MNI x=-5 y = −52.5 z = 41). The right ventral insula ROI was provided by the parcellation performed by Deen et al. (2011).
 
 To compute coherence between BOLD time series, we first estimated the frequency spectrum of the full-band (0.01–0.1 Hz) BOLD time series using the Welch method with 36 time windows of 120 s with 20 s overlap. We then computed coherence using the FieldTrip implementation of equation number two and used the squared coherence at the gastric peak frequency of each participant as an estimate of shared variance.
 
-## Heart rate variability analysis
+### Heart rate variability analysis
 
 We first removed the MRI gradient artefact from the ECG data using the FMRIB plug-in (Iannetti et al., 2005; Niazy et al., 2005, version 1.21) for EEGLAB (Delorme and Makeig, 2004, version 14.1.1), provided by the University of Oxford Centre for Functional MRI of the Brain (FMRIB). Data from the three ECG channels was then 1–100 Hz bandpass filtered using a FIR filter, designed with Matlab function firws. We then retrieved the inter-beat-interval (IBI) time series by identifying R peaks using a custom semi-automatic algorithm, which combined automatic template matching with manual selection of R peaks for extreme IBIs. This procedure was performed in the ECG channel of each participant that required the least manual identification of R peaks. The resulting IBI time series were then interpolated at 1 Hz using a spline function (order 3), and band-pass filtered at high (0.04–0.15 Hz) and low frequencies (0.15–0.4 Hz) of heart rate variability using a FIR filter (designed with Matlab function FIR2, center frequency for LFHRV 0.1 Hz ± 0.06 Hz, HFHRV centered at 0.275 ± 0.125 Hz) and then downsampled at MRI frequency (0.5 Hz). The amplitude envelope of HF- and LF-HRV were then computed using the Hilbert transform and used as regressors of interest (without convolution with the HRF as in [Critchley et al., 2003]) in two separate first level GLMs, which also included six movements parameters as regressors. The MRI pre-processing parameters were the same as for the gastric-BOLD coupling analysis (slice-timing and motion correction, co-registration to MNI space and spatial smoothing of FWHM = 3 mm). The BOLD time series were high-pass filtered (cutoff: 128 s) for the GLM analysis. GLM analysis was performed using SPM8 (Friston et al., 1994).
 
 Contrast images from the first level were entered into two separate second level random-effects analysis to test for consistent effects across the 30 participants separately for HF and LF HRV. The contrast images were spatially smoothed (FWHM = 8 mm), and submitted to a one-sample T-test. Statistical inference was performed at the voxel level, family-wise-error-corrected (pFWE < 0.05) for multiple comparisons over the whole brain.
 
-## Pupil diameter analysis
+### Pupil diameter analysis
 
 Pupil size during blinks and saccades (as automatically detected by the EyeLink software) was estimated by interpolating between pupil size 100 ms before and 100 ms after each event. Artefacted windows separated by less than 200 ms were combined and treated as a single epoch. Data from seven participants were excluded due to a high (>20%) amount of artefacted data. Data from three participants were excluded because MRI and pupil data could not be synchronized, due to missing triggers. Pupil data from the remaining 20 participants were downsampled at MRI frequency (0.5 Hz), bandpassed filtered (0.0078–0.1 Hz) using a butterworth infinite impulse response filter and used as a regressor (convolved with the canonical HRF as in [Yellin et al., 2015; Schneider et al., 2016]) in a first level GLM, which also included six movement nuissance regressors. The BOLD time series were high-pass filtered (cutoff: 128 s) for the GLM analysis (SPM8). Contrast images from the first level were entered into a second level random-effects analysis to test for consistent effects of pupil size across the 20 participants. The contrast images were spatially smoothed (FWHM = 8 mm), and submitted to a one-sample T-test. Statistical inference was performed at the voxel level, (p<0.001, uncorrected for multiple comparisons).
 
-## Bayes factor
+### Bayes factor
 
 Bayesian statistics on correlation coefficients were computed and interpreted according to (Wetzels and Wagenmakers, 2012) and (Kass and Raftery, 1995), and Bayesian statistics on two sample (unpaired) comparisons according to (Rouder and Morey, 2011). Regarding the specific test of an absence of effect of voxel motion susceptibility on coupling strength (H0), submillimeter voxel motion was estimated as in (Power et al., 2012), and H1 was modeled as the minimum effect size required to detect a significant difference from zero, given one-sample t-test of 29 degrees of freedom on a normal distribution with a mean of 0 and a standard deviation of 1. The same method was used to test for the absence of a difference between the EGG peak frequency measured inside and outside the scanner.
 
-## Anatomical and functional overlays and meta-analysis
+### Anatomical and functional overlays and meta-analysis
 
 Functional group-level images were overlaid on a 3D rendering of the MNI template using MRIcroGL (https://www.nitrc.org/frs/?group_id=889, June 2015). The results from the literature were converted when necessary from Talairach coordinates to MNI coordinates using the nonlinear transform provided by (http://imaging.mrc-cbu.cam.ac.uk/imaging/MniTalairach) and visualized using Caret software (Van Essen et al., 2001) (http://www.nitrc.org/projects/caret/, v5.65). Overlap of the gastric network with cytoarchitectonic subdivisions of primary and secondary somatosensory cortices was determined with the anatomy toolbox for SPM (Eickhoff et al., 2005; Eickhoff et al., 2007; Eickhoff et al., 2006).
 
-## Nifti overlays availability
+### Nifti overlays availability
 
 Unthresholded t maps of empirical vs chance PLV comparisons (intermediate step for Figure 2a), mask of significant clusters (Figure 2a), unthresholded and significant mask of HF and LF HRV and pupil diameter (Figure 3) and average phase-locking angle of each significant cluster (Figure 4b) are available at Neurovault (Gorgolewski et al., 2015) at the following address: http://neurovault.org/collections/GMHHGEXA/
 
-## Custom code
+### Custom code
 
 The custom code used for this article (Rebollo, 2018) can be accessed online at the following address: https://github.com/irebollo/stomach_brain_Scripts. A copy is archived at https://github.com/elifesciences-publications/stomach_brain_Scripts.

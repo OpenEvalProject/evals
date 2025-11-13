@@ -12,7 +12,7 @@
 
 ## Abstract
 
-In high-income countries, the biggest cause of premature death, defined as death before 70 years, is smoking of manufactured cigarettes. Smoking-related disease was responsible for about 41 million deaths in the United States, United Kingdom and Canada, cumulatively, from 1960 to 2020. Every million cigarettes smoked leads to one death in the US and Canada, but slightly more than one death in the UK. The 21 st century hazards reveal that smokers who start smoking early in adult life and do not quit lose a decade of life expectancy versus non-smokers. Cessation, particularly before age 40 years, yields large reductions in mortality risk. Up to two-thirds of deaths among smokers are avoidable at non-smoking death rates, and former smokers have about only a quarter of the excess risk of death compared to current smokers. The gap between scientific and popular understanding of smoking hazards is surprisingly large.
+In high-income countries, the biggest cause of premature death, defined as death before 70 years, is smoking of manufactured cigarettes. Smoking-related disease was responsible for about 41 million deaths in the United States, United Kingdom and Canada, cumulatively, from 1960 to 2020. Every million cigarettes smoked leads to one death in the US and Canada, but slightly more than one death in the UK. The 21st century hazards reveal that smokers who start smoking early in adult life and do not quit lose a decade of life expectancy versus non-smokers. Cessation, particularly before age 40 years, yields large reductions in mortality risk. Up to two-thirds of deaths among smokers are avoidable at non-smoking death rates, and former smokers have about only a quarter of the excess risk of death compared to current smokers. The gap between scientific and popular understanding of smoking hazards is surprisingly large.
 
 ## Overview
 
@@ -52,7 +52,7 @@ Section six briefly summarizes the biological evidence regarding the link betwee
 
 This review focuses on the consequences of smoking, and not on the causes of smoking (including the key biological, social, economic and marketing influences that lead to variable rates of smoking initiation and cessation across different populations). However, I do examine the engineering of addictive nicotine to the modern manufactured cigarette, which plays a central role in explaining smoking patterns. For a careful review of the causes of smoking, I refer the reader to various US Surgeon General Reports (USSGR), most notably those of 1989 and 2014 (U.S. Department of Health and Human Services, 1989; U.S. Department of Health and Human Services, 2014). Similarly, the emphasis is on high-income countries and not low and middle-income countries, where the evolution of the tobacco epidemic is not yet mature, and which has much lower rates of cessation (Jha and Peto, 2014). The issues related to disease patterns in low and middle-income countries are also quite distinct (Jha and Peto, 2014; International Agency for Research on Cancer (IARC), 2004; Jha et al., 2008; Liu et al., 1998). The review of the consequences of smoking does not include second-hand smoking. Rigorous assessments on the relationship of second-hand smoking to cancer and other diseases have been completed by the International Agency for Research on Cancer (IARC Working Group on the Evaluation of Carcinogenic Risk to Humans, 2004; International Agency for Research on Cancer (IARC), 2012), and the US Surgeon General (USSGR; U.S. Department of Health and Human Services, 2004; U.S. Department of Health and Human Services, 2014). Finally, this does not focus on control of smoking, including the most important role of higher exicse taxes to raise cigarette prices, for which there are several reviews and WHO reports (Jha and Chaloupka, 1999; Jha et al., 2015; World Health Organization, 2017; Jha and Peto, 2014).
 
-## Sources of evidence
+### Sources of evidence
 
 The main sources of evidence in this report are the published literature, which is accessible publicly through the PubMed portal (https://www.ncbi.nlm.nih.gov/pubmed/); scholarly summations done by key technical agencies such as the US Surgeon General, International Agency for Research on Cancer (IARC), WHO, the US Institute of Medicine, and other independent technical groups; and my own epidemiological research. Like most academic researchers, I did not have access to the scientific research conducted by tobacco industries, much of which remains closed to the public.
 
@@ -68,13 +68,13 @@ A central consideration of this epidemiological evidence is the delay between th
 
 Despite substantial declines in smoking, a large proportion of Americans, Canadians and UK citizens continue to smoke. Largely attributable to the addictive nature of cigarettes, the declines in smoking prevalence have not been matched by declines in the number of cigarettes smoked daily by continuing smokers.
 
-## Current smoking prevalence
+### Current smoking prevalence
 
 In the US in 2017, an estimated 34.3 million adults aged 18 and older or 14.0% of US adults smoke cigarettes (Centers for Disease Control and Prevention, 2018). The smoking prevalence is higher among men than women (15.8% vs 12.2%). In the same year, 7.4 million adults in the UK smoked, or 15.1% of adults (17.0% of men and 13.3% of women) (Office for National Statistics, 2018a). In Canada, about 5 million Canadians smoked (16.2% of those aged 12 and older; 19.1% of men and 13.4% of women [Statistics Canada, 2019]). The majority of the current smokers (meaning those those who report themselves as non-daily or daily smokers) smoke daily. Other types of tobacco use are less common than cigarettes, with cigars and cigarillos smoking reported by 4% of Americans and 3% of Canadians (Centers for Disease Control and Prevention, 2018; Reid et al., 2017).
 
 Current trends in smoking prevalence reflect a combination of those that smoke daily or occasionally, former smokers and people who never started smoking. The prevalence of smoking is also affected by changes in the denominators of all people, including immigration, which tends to lower smoking prevalence (Newbold and Neligan, 2012). I examine historical trends in smoking by sex. This is significant as women’s smoking has increased substantially the over the last few decades.
 
-## Historical smoking trends and changes in prevalence in the last four decades
+### Historical smoking trends and changes in prevalence in the last four decades
 
 Prior to 1900, most tobacco consumed was in the form of chewed tobacco, snuff, pipes and cigars. Some of the first reports of smoked tobacco came from Spain, where beggars in the 16th century collected discarded cigar butts, shredded them and rolled them in scraps of paper for smoking. These ‘poor man’s cigars’ were known as cigarillos (which translates, from Spanish, to ‘little cigars’). Late in the 18th century, cigarillos acquired respectability. Their use spread throughout Europe, aided by their popularity among troops in the Napoleonic Wars. The French named them cigarettes. British tastes switched to cigarettes filled with unmixed Virginia tobacco, while the US market preferred blended tobacco (Encyclopaedia Britannica, 2018).
 
@@ -98,9 +98,70 @@ The average number of cigarettes smoked per day by men and women has decreased a
 
 From 2000 to 2015, smoking prevalence fell steadily by well over a third in the US, UK and Canada (Table 1). By contrast, the reduction in smoking amount among daily smokers has been more modest, at about one-fifth.
 
+**Table 1.**
+ Adult smoking prevalence (daily and non-daily) and daily cigarettes for US, UK, and Canada in 2000 and 2015.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th>2000</th>
+      <th>2015</th>
+      <th>Change in %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Prevalence*</td>
+    </tr>
+    <tr>
+      <td>US</td>
+      <td>23.1</td>
+      <td>15.2</td>
+      <td>−34.2%</td>
+    </tr>
+    <tr>
+      <td>UK</td>
+      <td>27.0</td>
+      <td>17.8</td>
+      <td>−34.1%</td>
+    </tr>
+    <tr>
+      <td>Canada</td>
+      <td>24.4</td>
+      <td>13.0</td>
+      <td>−46.7%</td>
+    </tr>
+    <tr>
+      <td colspan="4">Amount per day (among daily smokers)</td>
+    </tr>
+    <tr>
+      <td>US</td>
+      <td>18.1</td>
+      <td>14.2</td>
+      <td>−21.5%</td>
+    </tr>
+    <tr>
+      <td>UK*</td>
+      <td>13.8</td>
+      <td>11.3</td>
+      <td>−18.1%</td>
+    </tr>
+    <tr>
+      <td>Canada</td>
+      <td>16.8</td>
+      <td>13.8</td>
+      <td>−17.9%</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Daily and non-daily smokers.Note. Data from National Centre for Health Statistics, NHIS; Office of National Statistics, Adult Smoking habits in Great Britain; Statistics Canada and Reid et al., 2017, Tobacco Use in Canada: Patterns and Trends, 2017 Edition –Defined as having smoked in the past 30 days and having smoked 100 cigarettes in a lifetime. Adult ages are 15+ in Canada and the UK and 18+ in the US._
+
 The main conclusion remains that in these three countries, about one in six to one in seven of adults, were smokers in 2017. In absolute terms, this represents about 45 million cigarette smokers in the three countries.
 
-## Changes in the manufactured cigarette
+### Changes in the manufactured cigarette
 
 Here I will outline three documented strategies used by the tobacco industry to increase uptake and maintain behaviour of smoking (construction, tar content, and use of filters). The tobacco industry conducts much of the scientific research on nicotine, addiction and the role of advertising and promotion to start and maintain tobacco addiction. Little of this research is available publicly.
 
@@ -114,7 +175,7 @@ Filters have been in place in most cigarettes for the last four decades. The pur
 
 In conclusion, smoking is best understood largely as a manifestation of nicotine addiction. The design of the Western, manufactured cigarette likely considers the optimization of initiation and addiction maintenance (U.S. Department of Health and Human Services, 1990). Additional social cues, achieved by mass-marketing, and policies that enable smoking in social setting, such as bars and restaurants, might well enforce the addictive properties of smoking, increasing uptake rates and making cessation less common (U.S. Department of Health and Human Services, 2010a; U.S. Department of Health and Human Services, 2020).
 
-## Recent emergence of e-cigarettes
+### Recent emergence of e-cigarettes
 
 Alternative nicotine delivery systems include lower-risk nicotine and tobacco products like nicotine replacement therapy pharmaceuticals, low-nitrosamine smokeless tobacco products, and most notably electronic -cigarettes (also referred to as ‘vaping’ products). E-cigarettes were introduced around 2010 but have become particularly popular since about 2015, as they mimic the look and feel of conventional cigarettes (unlike nicotine chewing gum or patches). They are hand-held, generate a smoke-like vapour and hence recreate sensations similar to smoking the smoke from conventional cigarettes. E-cigarettes can be used with or without nicotine. Much of the recent attention in the US has been on the ‘JUUL’ (which has high doses of nicotine) and in Japan on the ‘iQOS’ product (which heats tobacco to generate a nicotine vapour but does not burn it) (Foundation for a Smoke-Free World, 2018; U.S. Department of Health and Human Services, 2016). There has notable increase in e-cigarette use in many high-income countries, particularly among youth (Thatcher, 2015). A full review of e-cigarettes is beyond the scope of this review, but Warner (2019) provides useful suggestions for regulation based on the limited evidence base.
 
@@ -136,7 +197,7 @@ In conclusion, far more epidemiological evidence is needed to settle the ongoing
 
 ## Smoking as a cause of disease
 
-## History of studies linking smoking to disease
+### History of studies linking smoking to disease
 
 Lung cancer was a rare disease in most high-income countries in the 19th and early 20th centuries. By the early 20th century, most deaths were registered and certified by doctors, and these routine mortality statistics showed a very large increase in lung cancer mortality, particularly among urban men. Several cancer registries also showed a major increase in new-lung cancer cases in men in the early 20th century, for example some 15-fold increases in the UK. The reasons for this marked increase in lung cancer were believed to be from better detection and diagnosis or from car exhaust (as men were more exposed than women were). However, researchers also noted a large simultaneous increase in male smoking.
 
@@ -156,7 +217,7 @@ Two landmark government reports summarized the cumulative evidence. The 1962 Roy
 
 Subsequent to these two reports, there have been periodic systematic assemblies of global evidence on the hazards of smoking as noted above.
 
-## Importance of prolonged smoking to disease risks
+### Importance of prolonged smoking to disease risks
 
 The mid-century evidence on the disease risks attributable to smoking was not taken seriously, even in the countries where it was generated. This was in part because of the potentially misleading delay of several decades between cause and full effect. Increased mortality from smoking requires early uptake and continued smoking. Hence, there was a delay of up to 50 years from when the young men in any particular country took up smoking (followed by the young women taking up smoking, a decade or two later) and the time when these studies could document the main hazards in middle ages for various diseases (most notably lung and other cancers, and emphysema). However, there is a shorter latency between smoking and vascular diseases (Jha and Peto, 2014).
 
@@ -196,13 +257,219 @@ The peak mortality effect of smoking among men occurred in most high-income coun
 
 This is because US women aged about 60 years who were smokers in the 2000s had smoked since early adult life, whereas women who were smokers in the 1960s had not. Similar relationships are seen for chronic lung-disease. The key implication is, of course, that the hazards among men and women from various diseases are now comparable among women and men who start early in life and do not quit smoking.
 
-## Quantifying mortality from smoking in the US, UK and Canada from 1960 to 2020
+### Quantifying mortality from smoking in the US, UK and Canada from 1960 to 2020
 
 Peto et al. (1992) developed a method that provides indirect estimates of tobacco-attributable mortality across countries which have reasonably high coverage and quality of routine death certification, including most high-income countries. This is based on the observation that most lung cancer deaths occur among smokers, and that non-smoker lung cancer rates are comparably low across most high-income countries and have been mostly unchanged over the last few decades (Thun et al., 2008). Lung cancer is then used as an indicator not only of the extent to which smoking causes lung cancer, but also to what extent if that particular population is affected by smoking exposure. This involves indexing the absolute lung cancer deaths (subtracting the low rates among non-smokers) to the relative risks from the large US prospective studies (effectively very similar to the USSGR relative risks shown in Appendix 1—table 1). This allows a reasonable estimate of the extent to which cancers other than lung, respiratory disease, ischemic heart disease, stroke and other causes of death are caused by smoking.
 
 Use of lung cancer as an index of smoking is a crude method but is reliable over time, and useful in settings that meet these conditions such as by social strata (Jha et al., 2006) and including men in north Mexico, but not in South Mexico (Reynales-Shigematsu et al., 2018). The Peto estimates (updated to 2015; Peto et al., 2018) provide totals for 1955 to 2015 and I interpolated the annual results using the trends per decade. I did backward calculations to 1950 using the same annual rate of change as documented between 1955 and 1965.
 
 These reveal that cummulatively from 1960 to 2020, there were about 29.5 million, 9.3 million and 2.6 million deaths from smoking in the US, the UK and Canada, respectively (Table 2) or a total of 41.3 million adult deaths. Over 60% of these deaths occured in males, and these collectively represented about 22% of all adult deaths in these three countries. Of these deaths, about 40% were between ages 35-69 years, comprising about 16 million deaths, with an average loss of life of about 20-25 years. The remainder of the deaths occured after the age of 70 years.
+
+**Table 2.**
+ Trends in smoking-attributable deaths from 1955 to 2015, (with projections to 2020) by sex in US, UK, and Canada (in thousands).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Year</th>
+      <th colspan="2">US</th>
+      <th colspan="2">UK</th>
+      <th colspan="2">Canada</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Smoking-attributable</th>
+      <th>Total</th>
+      <th>Smoking-attributable</th>
+      <th>Total</th>
+      <th>Smoking-attributable</th>
+      <th>Total</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="8">Males</td>
+    </tr>
+    <tr>
+      <td>1955</td>
+      <td>139</td>
+      <td>882</td>
+      <td>90</td>
+      <td>303</td>
+      <td>8.8</td>
+      <td>75</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1965</td>
+      <td>235</td>
+      <td>1 036</td>
+      <td>126</td>
+      <td>324</td>
+      <td>17</td>
+      <td>87</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1975</td>
+      <td>305</td>
+      <td>1 063</td>
+      <td>142</td>
+      <td>337</td>
+      <td>26</td>
+      <td>96</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1985</td>
+      <td>335</td>
+      <td>1 092</td>
+      <td>125</td>
+      <td>325</td>
+      <td>31</td>
+      <td>100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1995</td>
+      <td>341</td>
+      <td>1 163</td>
+      <td>95</td>
+      <td>308</td>
+      <td>33</td>
+      <td>111</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>302</td>
+      <td>1 199</td>
+      <td>67</td>
+      <td>279</td>
+      <td>29</td>
+      <td>116</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2015</td>
+      <td>286</td>
+      <td>1 325</td>
+      <td>55</td>
+      <td>264</td>
+      <td>28</td>
+      <td>129</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1960–2020*</td>
+      <td>18 040</td>
+      <td>68 760</td>
+      <td>6 100</td>
+      <td>18 370</td>
+      <td>1 640</td>
+      <td>6 390</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">Females</td>
+    </tr>
+    <tr>
+      <td>1955</td>
+      <td>1.4</td>
+      <td>663</td>
+      <td>12</td>
+      <td>285</td>
+      <td>0</td>
+      <td>54</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1965</td>
+      <td>19</td>
+      <td>795</td>
+      <td>24</td>
+      <td>307</td>
+      <td>0.7</td>
+      <td>61</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1975</td>
+      <td>79</td>
+      <td>858</td>
+      <td>43</td>
+      <td>331</td>
+      <td>4.2</td>
+      <td>70</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1985</td>
+      <td>169</td>
+      <td>983</td>
+      <td>59</td>
+      <td>331</td>
+      <td>11</td>
+      <td>80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1995</td>
+      <td>272</td>
+      <td>1 135</td>
+      <td>69</td>
+      <td>332</td>
+      <td>20</td>
+      <td>99</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2005</td>
+      <td>302</td>
+      <td>1 229</td>
+      <td>66</td>
+      <td>306</td>
+      <td>26</td>
+      <td>113</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2013</td>
+      <td>302</td>
+      <td>1 288</td>
+      <td>60</td>
+      <td>277</td>
+      <td>30</td>
+      <td>126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>1960–2020*</td>
+      <td>11 430</td>
+      <td>62 880</td>
+      <td>3 210</td>
+      <td>18 840</td>
+      <td>919</td>
+      <td>5 490</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Both sexes 1960–2020*</td>
+      <td>29 470</td>
+      <td>131 640</td>
+      <td>9 310</td>
+      <td>37 210</td>
+      <td>2 559</td>
+      <td>11 880</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_* 1960-2020* 1960–2020 totals by taking totals for 1965, 1975, 1986, 1995, 2005 and 2015 totals multiplied by 10. Note. Author’s calculations based on Peto et al. (2018).Cumulatively, from 1960 to 2020, smoking killed about 29.5 million Americans, 9.3 million UK residents, and 2.6 million Canadians, or a total of 41.3 million adults (Table 2)._
 
 Globally, there were about 6 trillion cigarettes consumed worldwide, of which about a third are consumed in China alone. Global consumption has increased from about 5 trillion cigarettes in 1990 (Jha and Peto, 2014). For the US, UK and Canada I obtained cigarette sales data from global smoking sales statistics (Forey et al., 2016). Under tobacco reporting regulations by the federal government of Canada, tobacco manufacturers and importers must give Health Canada annual reports that include sales data manufacturing information and product information. These data are publicly available on an aggregated industry basis. As such, the reporting of sales of tobacco in Canada over time is more reliable versus that of other countries. I lagged the ratio of deaths to cigarette smoke by 20 years to take into account the delay between the uptake of smoking and the development of disease as I have discussed above.
 
@@ -218,7 +485,7 @@ These sales do not, of course, adjust for population size and growth. However, t
 
 ## Smoking risks for total mortality and for specific conditions
 
-## Key messages for the individual smokers
+### Key messages for the individual smokers
 
 The main messages for smokers, based on the contemporary epidemiological evidence are three-fold (Box 1).
 
@@ -240,7 +507,7 @@ Similarly, careful reviews (Doll and Peto, 1981), and recent use of indirect-bas
 
 The 21st century evidence suggests that there is an eventual risk of about three-fold mortality rate versus that of non-smokers, corresponding to about two-thirds of smokers being killed eventually by their addiction. Hence, the effect on total mortality is an appropriate starting point to quantify smoking hazards in high-income countries, which is supported by the specific evidence on particular diseases.
 
-## Key diseases attributable to smoking
+### Key diseases attributable to smoking
 
 The evidence for the range of diseases caused by smoking has expanded considerably since the early studies focusing mostly on lung cancer. Importantly, the leading causes of death that are due to smoking are also the major diseases that, even in non-smokers, constitute the leading causes of death in US, UK and Canada. In each country, vascular, neoplastic, and respiratory disease collectively accounted for about 75% of all current adult deaths from all causes (World Health Organization, 2016).
 
@@ -254,7 +521,7 @@ The US Surgeon General and the IARC have periodically assembled expert groups fo
 
 The list of tobacco-attributable conditions is expanding over time, as highlighted in the 2014 USSGR. This suggests that overall mortality is a robust and valid metric to estimate tobacco-attributable risk (particularly, that since there are very few diseases reduced by smoking, a focus on total mortality is not misleading). Note further that for most conditions there is a strong correlation between death and disability (Menon et al., 2019), with only a few exceptions, such as loss of teeth or rheumatoid arthritis, conditions that cause far more disability than mortality. The use of mortality totals is likely to also reflect also on disability totals.
 
-## Avoidable proportion of major diseases at non-smoking death rates
+### Avoidable proportion of major diseases at non-smoking death rates
 
 The 2014 USSGR published for relevant age groups and for men and women, the relative risks (RR) for various conditions, after adjusting for differences in age, alcohol use, obesity, education or some related measure of social status. This full table is attached as Appendix 1—table 1.
 
@@ -262,11 +529,165 @@ The main sources of the USSGR estimates include the second US prospective cancer
 
 Table 3 provides the avoidable proportion of deaths for each major disease. This is calculated by (RR-1)/RR with the RRs derived from the USSGR report of 2014. This analysis shows that among smokers, over 90% of deaths from lung cancer at various ages or chronic obstructive deaths at ages 65 or older would have been avoided at non-smoking death rates, reflecting the very high relative risks of smoking for these conditions. About half to four-fifths of coronary heart disease deaths among smokers would have been avoided; the proportion avoidable was even larger in younger adults. Approximately a third to half of stroke deaths among smokers would have been avoided. Overall, up to two-thirds of all deaths among smokers would have been avoided at non-smoking death rates.
 
+**Table 3.**
+ Proportion of deaths by cause among current smokers that would be avoided at non-smoking death rates, by sex and age.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="9">Among smokers, % avoided at non-smoking death rates</th>
+    </tr>
+    <tr>
+      <th>Disease/sex</th>
+      <th colspan="4">Males</th>
+      <th colspan="5">Females</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age groups</td>
+      <td>35–54</td>
+      <td>55–64</td>
+      <td>65–74</td>
+      <td colspan="2">≥75</td>
+      <td>35–54</td>
+      <td>55–64</td>
+      <td>65–74</td>
+      <td>≥75</td>
+    </tr>
+    <tr>
+      <td>Lung cancer</td>
+      <td>93%</td>
+      <td>95%</td>
+      <td>96%</td>
+      <td colspan="2">96%</td>
+      <td>92%</td>
+      <td>95%</td>
+      <td>96%</td>
+      <td>96%</td>
+    </tr>
+    <tr>
+      <td>Other cancers</td>
+      <td>43%</td>
+      <td>46%</td>
+      <td>57%</td>
+      <td colspan="2">54%</td>
+      <td>22%</td>
+      <td>52%</td>
+      <td>51%</td>
+      <td>48%</td>
+    </tr>
+    <tr>
+      <td>Coronary heart disease</td>
+      <td>74%</td>
+      <td>67%</td>
+      <td>64%</td>
+      <td colspan="2">49%</td>
+      <td>80%</td>
+      <td>69%</td>
+      <td>70%</td>
+      <td>56%</td>
+    </tr>
+    <tr>
+      <td>Cerebrovascular disease</td>
+      <td></td>
+      <td></td>
+      <td>54%</td>
+      <td colspan="2">32%</td>
+      <td></td>
+      <td></td>
+      <td>56%</td>
+      <td>41%</td>
+    </tr>
+    <tr>
+      <td>Aortic aneurysm, other arterial and atherosclerosis</td>
+      <td></td>
+      <td></td>
+      <td>86%</td>
+      <td colspan="2">80%</td>
+      <td></td>
+      <td></td>
+      <td>85%</td>
+      <td>83%</td>
+    </tr>
+    <tr>
+      <td>Diabetes mellitus</td>
+      <td></td>
+      <td></td>
+      <td>33%</td>
+      <td colspan="2">9%</td>
+      <td></td>
+      <td></td>
+      <td>35%</td>
+      <td>9%</td>
+    </tr>
+    <tr>
+      <td>All vascular at ages 35–64</td>
+      <td>58%</td>
+      <td>60%</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td>59%</td>
+      <td>49%</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Influenza, pneumonia, tuberculosis</td>
+      <td></td>
+      <td></td>
+      <td>61%</td>
+      <td colspan="2">38%</td>
+      <td></td>
+      <td></td>
+      <td>43%</td>
+      <td>51%</td>
+    </tr>
+    <tr>
+      <td>Chronic obstructive pulmonary disease</td>
+      <td></td>
+      <td></td>
+      <td>97%</td>
+      <td colspan="2">96%</td>
+      <td></td>
+      <td></td>
+      <td>97%</td>
+      <td>95%</td>
+    </tr>
+    <tr>
+      <td>All respiratory at ages 35–64</td>
+      <td>78%</td>
+      <td>93%</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td>84%</td>
+      <td>89%</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>All causes</td>
+      <td>61%</td>
+      <td>66%</td>
+      <td>67%</td>
+      <td colspan="2">58%</td>
+      <td>44%</td>
+      <td>62%</td>
+      <td>65%</td>
+      <td>60%</td>
+    </tr>
+  </tbody>
+</table>
+
+_Notes: Author calculations. The avoidable proportion for each condition and sex is calculated as (RRc-1)/RRc, where RRc refers to the smoker: non-smoker relative risks (RR) for current smoking in the U.S. Department of Health and Human Services (2014) (Appendix 1)._
+
 The avoidable proportion should be taken as conservative, as the relative risks in the USSGR report may be underestimates. The prospective studies had enrolled smokers and non-smokers before they developed disease, and smoking status was collected only at this baseline. Some of those who reporting smoking at baseline would have quit subsequently, as there have been, in recent years, increases in cessation by older adults. This cessation would reduce their risk of death, bringing them closer to the observed mortality rates of non-smokers. Had they not quit, the observed differences in relative risks between smokers and non-smokers would most likely have been larger.
 
-## Understanding the contemporary risks: specific conditions
+### Understanding the contemporary risks: specific conditions
 
-## Cancers, vascular and respiratory disease
+#### Cancers, vascular and respiratory disease
 
 Cancers: The USSGR (U.S. Department of Health and Human Services, 2014). and IARC Reports (IARC Working Group on the Evaluation of Carcinogenic Risk to Humans, 2004) have previously concluded that there are sufficiently strong associations to define tobacco use as a cause of several cancers including lung, tongue, lip, larynx, oropharynx, bladder, kidney, oesophagus, stomach, pancreas, cervix and liver.
 
@@ -278,13 +699,71 @@ The chief finding from the 2014 USSGR Report and the more contemporary cohort st
 
 The relative risks for non-fatal heart attack are greater than those for fatal heart attack (Table 4). This would suggest, for example, that the true population burden of smoking-attributable ischemic heart disease for the number of hospital admissions is much larger than that derived from mortality studies. Moreover, the relative risks are greater at younger ages, so that at ages 30–39, about 80% of the heart attacks in UK men can be attributed to smoking (Parish et al., 1995). Naturally, the absolute rates are greater at older ages.
 
+**Table 4.**
+ Relative risks for fatal and non-fatal ischemic heart disease by age for men.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>STUDY</th>
+      <th>AGE (years)</th>
+      <th>Relative risk</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fatal ischemic heart disease</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>US</td>
+      <td>35–69</td>
+      <td>2.5</td>
+    </tr>
+    <tr>
+      <td>CHINA</td>
+      <td>35–69</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>INDIA</td>
+      <td>30–69</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>Non-fatal ischemic heart disease</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>UK</td>
+      <td>30–39 40–49 50–59 60–69 70–79</td>
+      <td>6.3 4.7 3.1 2.5 1.9</td>
+    </tr>
+    <tr>
+      <td>INDIA</td>
+      <td>Current Ever Former</td>
+      <td>4.7 3.9 2.6</td>
+    </tr>
+    <tr>
+      <td>SEVERAL COUNTRIES</td>
+      <td>Current Former</td>
+      <td>3.0 1.9</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. Author’s calculations based on an earlier review (Jha et al., 2010)._
+
 For respiratory disease, including emphysema and chronic bronchitis, there have also been substantial increases in mortality among smokers in the last two to three decades, with the smoker: non-smoker hazards becoming particularly extreme among women (Thun et al., 2013). The 2014 USSGR also identified that smoking as a cause of tuberculosis death and recurrent tuberculosis, but stated that evidence was not sufficient to evaluate if smoking causes infection. While tuberculosis deaths and infection are uncommon in Canada, they remain a major cause of death in low and middle-income countries (Bates et al., 2007; Gajalakshmi et al., 2003). Smoking compromises the immune system, which leads to increased risk of pulmonary infection, as well as loss of voice.
 
-## Other outcomes
+#### Other outcomes
 
 The 2014 USSGR added newer conditions that were not listed as being causally related to smoking in the 2004 USSGR. Maternal smoking in early pregnancy is a cause of orofacial clefts and might be linked to clubfoot, gastric and vascular malformations. Maternal smoking might be linked to behavioural disorders and attention deficit in children. Smoking is a cause of ectopic pregnancy, and of erectile dysfunction in men. Rheumatoid arthritis, congenital effects and colorectal cancer are possibly attributable to smoking.
 
-## Diseases not attributable to smoking or protected by smoking
+#### Diseases not attributable to smoking or protected by smoking
 
 Some conditions are not sufficiently proven to be caused by smoking, or are (less commony) reduced by smoking. These include Alzheimer’s disease, breast cancer, inflammatory bowel disease and uterine cancer. A popular myth is that smoking protects against dementia and Alzheimer’s disease. However, the UK doctor’s prospective study (Doll et al., 2005) noted that dementia risks were unaffected by smoking history. A systematic review of about 50 epidemiological studies found that smoking modestly raised the risk for Alzheimer’s but had no effect on the development of dementia (Peters et al., 2008). The 2014 USSGR noted that there is some evidence that smoking reduces the risk of endometrial cancer in women. Among the inflammatory bowel diseases cases, smoking might reduce ulcerative colitis but raise the risks of Crohn’s disease. Finally, the 2014 USSGR found that there was no definitive evidence that smoking causes breast cancer.
 
@@ -294,7 +773,7 @@ The presence of some diseases not attributable to smoking strengthens the argume
 
 In contrast to the long delay between smoking onset and the development of disease, the main effects of widespread cessation are seen much more rapidly. Worldwide, cessation is the only practicable way to avoid a substantial proportion of tobacco deaths before 2050 (Jha and Chaloupka, 1999), as a substantial reduction in uptake by adolescents will have its main effect on mortality rates after 2050.
 
-## Cessation trends in US, UK and Canada
+### Cessation trends in US, UK and Canada
 
 The prevalence of former smoking in middle-age is a useful measure of the success of tobacco control. Currently in Canada, the US and the UK, there are as many former as current smokers between the ages of 45 to 64 years (Figure 10) The short-term relapse rates among smokers considering cessation is very high. However, among those who persist in cessation, few re-start smoking.
 
@@ -304,7 +783,7 @@ The prevalence of former smoking in middle-age is a useful measure of the succes
 
 There is a large gap in high-income countries between the intent to quit smoking and actual success rates. This is mostly a consequence of the strongly addictive nature of cigarettes. Two-thirds of smokers wish to quit, while only about half of that actually try, while far fewer succeed (U.S. Department of Health and Human Services, 2020). In 2015, nearly two-thirds (65.8%) of Canadian smokers were seriously considering quitting in the next six months. Of those, about half (48.2%) were considering quitting within the next thirty days, which was equivalent to 31.1% of all current smokers. Between 1999 and 2015, the percentage of Canadian smokers seriously considering quitting in the next six months appears to have increased slightly (Reid et al., 2017). In 2015, over half (52.3%) of Canadian smokers and recent quitters reported having made at least one attempt at successful cessation in the past year, while more than one-third had made multiple attempts. From 1999 to 2015, the percentage of smokers and recent quitters who had attempted to quit in the past 12 months appears to have remained fairly stable, at around half (Reid et al., 2017). The US and the UK reports similar patterns of attempted cessation (Babb, 2017; Office for National Statistics, 2018b).
 
-## Reduction in overall mortality from cessation
+### Reduction in overall mortality from cessation
 
 Smokers who stop smoking before age 40 (preferably well before age 40), avoid more than 90% of the excess risk for overall mortality among those who continue to smoke. Those who stop before age 30 avoid 97% of the risk of death. Those who have smoked cigarettes since early adult life but stop at 30, 40, or 50 years of age gain, respectively, about 10, 9, and 6 years of life expectancy, compared to those who continue smoking (Jha et al., 2013; Pirie et al., 2013).
 
@@ -318,7 +797,7 @@ Similar results on reductions in lung cancer risk in former smokers are seen in 
 
 Earlier reviews note that the relationships of excess-risk for overall mortality with halving smoking amount reduces mortality risk far less than cessation (U.S. Department of Health and Human Services, 2014). This would imply that the mean reduction in daily amount smoked in the three countries from 1999 to 2013 (about three cigarettes fewer, per day, per smoker; Table 1) has had only a minimal impact on the risk of death. Cessation remains far more important than reduced smoking amount.
 
-## Reduction in specific diseases from cessation
+### Reduction in specific diseases from cessation
 
 The US Surgeon General has issued a series of reports on the health benefits of smoking cessation starting in 1990 (U.S. Department of Health and Human Services, 1990). Those conclusions were updated in subsequent reports in 2001, 2004, 2006, 2010, 2014 and 2020. A brief summary of the effects of cessation on cardiovascular disease, cancers and respiratory disease follows.
 
@@ -330,9 +809,163 @@ Respiratory disease: Smoking cessation reduces asthma symptoms, improves treatme
 
 Cancers: Smoking cessation reduces risk of cancers of the lung, larynx, oral cavity and pharynx, oesophagus, pancreas, bladder, stomach, colon, rectum, liver, cervix and kidney, and acute myeloid leukemia.
 
-## Estimates of the reduction in excess risk among former smokers
+### Estimates of the reduction in excess risk among former smokers
 
 The USSGR 2014 published also a summation of the relative risks for former smokers, based on the prospective studies noted above. A comparison of excess risk, meaning RR-1 (the risk among non-smokers) for both former smokers and current smokers is informative. Based on the RRs in the USSGR report, I calculate the relative reduction in excess risk for various specific conditions (Table 5).
+
+**Table 5.**
+ Relative reduction in excess risk among former smokers as compared to excess risk among current smokers, by sex and age.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="9">Reduction in excess risk</th>
+    </tr>
+    <tr>
+      <th>Disease/sex</th>
+      <th colspan="4">Males</th>
+      <th colspan="4">Females</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age groups</td>
+      <td>35–54</td>
+      <td>55–64</td>
+      <td>65–74</td>
+      <td>≥75</td>
+      <td>35–54</td>
+      <td>55–64</td>
+      <td>65–74</td>
+      <td>≥75</td>
+    </tr>
+    <tr>
+      <td>Lung cancer</td>
+      <td>74%</td>
+      <td>80%</td>
+      <td>75%</td>
+      <td>75%</td>
+      <td>87%</td>
+      <td>78%</td>
+      <td>74%</td>
+      <td>76%</td>
+    </tr>
+    <tr>
+      <td>Other cancers</td>
+      <td>51%</td>
+      <td>64%</td>
+      <td>64%</td>
+      <td>61%</td>
+      <td>14%</td>
+      <td>74%</td>
+      <td>75%</td>
+      <td>71%</td>
+    </tr>
+    <tr>
+      <td>Coronary heart disease</td>
+      <td>71%</td>
+      <td>74%</td>
+      <td>67%</td>
+      <td>67%</td>
+      <td>69%</td>
+      <td>91%</td>
+      <td>76%</td>
+      <td>66%</td>
+    </tr>
+    <tr>
+      <td>Cerebrovascular disease</td>
+      <td></td>
+      <td></td>
+      <td>80%</td>
+      <td>75%</td>
+      <td></td>
+      <td></td>
+      <td>81%</td>
+      <td>86%</td>
+    </tr>
+    <tr>
+      <td>Aortic aneurysm, other arterial and atherosclerosis</td>
+      <td></td>
+      <td></td>
+      <td>81%</td>
+      <td>82%</td>
+      <td></td>
+      <td></td>
+      <td>78%</td>
+      <td>79%</td>
+    </tr>
+    <tr>
+      <td>Diabetes mellitus</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>40%</td>
+      <td></td>
+      <td></td>
+      <td>46%</td>
+      <td>40%</td>
+    </tr>
+    <tr>
+      <td>All vascular at ages 35–64</td>
+      <td>95%</td>
+      <td>66%</td>
+      <td></td>
+      <td></td>
+      <td>100%</td>
+      <td>90%</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Influenza, pneumonia, tuberculosis</td>
+      <td></td>
+      <td></td>
+      <td>61%</td>
+      <td>32%</td>
+      <td></td>
+      <td></td>
+      <td>63%</td>
+      <td>80%</td>
+    </tr>
+    <tr>
+      <td>Chronic obstructive pulmonary disease</td>
+      <td></td>
+      <td></td>
+      <td>75%</td>
+      <td>75%</td>
+      <td></td>
+      <td></td>
+      <td>61%</td>
+      <td>70%</td>
+    </tr>
+    <tr>
+      <td>All respiratory at ages 35–64</td>
+      <td>65%</td>
+      <td>79%</td>
+      <td></td>
+      <td></td>
+      <td>84%</td>
+      <td>52%</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>All causes</td>
+      <td>79%</td>
+      <td>76%</td>
+      <td>72%</td>
+      <td>71%</td>
+      <td>72%</td>
+      <td>79%</td>
+      <td>72%</td>
+      <td>71%</td>
+    </tr>
+  </tbody>
+</table>
+
+_Notes: Author calculations. The reduction in excess risk for each condition and sex is calculated as (1- [RRf-1)/ [RRc-1]), where RRf and RRc refer to the smoker: non-smoker relative risks (RR) for former and current smoking, respectively in the U.S. Department of Health and Human Services, 2014 (Appendix 1)._
 
 This analyses shows that, depending on age and sex (and age of cessation, which is not considered in the USSGR 2014 estimates), that versus current smokers, former smokers have about at least a three-quarters reduction in mortality from lung cancer, stroke and coronary heart disease. Reductions in excess mortality risk from chronic obstructive pulmonary disease are also about three quarters for men, but notably smaller in women. Overall, former smokers have only about a quarter of the excess risk of overall mortality versus continued smokers.
 
@@ -344,7 +977,7 @@ Thus far, I have focused on the epidemiological evidence of the causal links of 
 
 Doll and Peto (1981) illustrate that human population trends have distinct advantages in studying smoking as an exposure. In Canada, the US and the UK, there have been substantial earlier increases and more recent decreases in smoking-attributable mortality and from specific conditions from about 1970. During that time period, the genetic susceptibility of the relevant populations has not likely changed; say, towards reduced expression of the genetic factors that predict lung cancer or genetic factors that decrease addictiveness to nicotine. Increases and the more recent decreases in smoking account for most of the dramatic changes in smoking-attributable diseases in recent decades; genetics has likely played only a minor or no role in explaining the marked changes in tobacco-attributable mortality in recent decades.
 
-## Biologic evidence on nicotine addiction
+### Biologic evidence on nicotine addiction
 
 The nicotine in cigarettes is the central ingredient that leads to initiation and sustained smoking. Prior to about the mid-1980s, the common understanding was that tobacco use did not qualify as a drug addiction (Koop, 2003). The UK’s Medical Research Council and the US Surgeon General’s Office began to review their evidence using the logic that tobacco prevention and addiction treatment required a better understanding of the addictive properties of nicotine and cigarettes as an effective and toxic delivery system. The findings of the 1988 US Surgeon General’s report suggest that cigarettes and other forms of tobacco (such as chewed tobacco) are addicting and that nicotine is the major agent responsible for this addiction (U.S. Department of Health and Human Services, 1988). These findings have been supported by many subsequent studies and reports. In 2000, the British Royal College of Physicians concluded: “Nicotine is an addictive drug, and the primary purpose of smoking tobacco is to deliver a dose of nicotine rapidly to receptors in the brain…Tobacco smoke inhalation is the most highly-optimized vehicle for nicotine administration…” (Royal College of Physicians of London, 2000). In most aspects of dependence, nicotine is on par with other powerfully addictive drugs, such as heroin and cocaine.
 
@@ -352,7 +985,7 @@ The epidemiological evidence on smoking trends and consequences is now supported
 
 Nicotine is a psychoactive drug that appears to trigger a cascade of neurobiological events in the brain and throughout the body which can, in turn, act in concert to reinforce tobacco use and affect subsequent behaviour (Markou and Henningfield, 2003). Much of the psychoactive effects of nicotine can be attributed to its rapid delivery to the brain. Absorption of cigarette smoke is accelerated and complete, with delivery of nicotine to the brain almost 10–16 seconds faster than by intravenous injection (Jarvis, 2004). Moreover, each subsequent exposure to cigarette smoke leads to the establishment and strengthening of tolerance to the adverse effects of nicotine, physiological dependence and the biologically rewarding effects of nicotine. This cascade of effects can lead to increased self-administration and progression of the dependence process. It is not known if all nicotine-induced changes in brain function, such as tripling of the levels of certain brain neurotransmitters in some brain regions (Perry and Chalkley, 1982), and alterations of brain nicotine reinforcement systems (Laviolette and van der Kooy, 2004; Mansvelder et al., 2002), are fully reversed after nicotine abstinence. It is plausible that persisting brain alterations may confer a continuing need for nicotine in some individuals (Henningfield and Slade, 1998). While all adults are susceptible to the biological effects of nicotine, it also appears plausible that early onset of use is associated with a higher risk of developing dependence. Jarvis notes that, “in experimental models, if nicotine’s neurobiological effects are blocked pharmacologically, or if nicotine is removed from cigarette smoke, then smoking eventually ceases”. The neurobiological effects of nicotine differ greatly from that of other licit and illicit substances. For example, for most alcohol drinkers, there is not a comparable neurobiological dependence on repeat ‘hits’ (ingestions), as there is with nicotine (Jarvis, 2004).
 
-## Biological evidence for smoking and cancer
+### Biological evidence for smoking and cancer
 
 Proctor (2012) reviews the history of the early biological evidence that linked smoking to cancer, which I summarize. Early studies in the 1930s and early 1940s in Argentina and in Germany (published mostly in Spanish and German) examined the application of ‘tobacco juice’ to the skin and other organs in laboratory animals and showed that painting the tar of cigarette smoke on the shaved backs of mice generated tumours in the mice. The cigarette industry ridiculed these findings and funded alternatives to counter these discoveries. Next, pathologists established that smoking interfered with the small hair-like structures (cilia) in the lungs that were responsible for clearing contaminants in the lungs (Hilding, 1956). Investigations on cancer-causing chemicals in cigarette smoke such as polycyclic aromatic hydrocarbons and later benzopyrene were also underway around this time. The cigarette industry’s own research similarly identified such ingredients in their products. By the end of the 1950s, cigarette manufacturers had characterized several dozen carcinogens in cigarette smoke, including arsenic, chromium, nickel and a wide variety of polycyclic aromatic hydrocarbons.
 
@@ -362,7 +995,7 @@ More recent evidence has identified the role of tobacco smoking in triggering or
 
 By contrast, one paper suggested that ‘bad luck,’ that is random errors in DNA replication, were responsible for variation in cancer risk among 25 different types of cancer (Tomasetti and Vogelstein, 2015). This paper observed a strong correlation between the number of lifetime stem cell divisions in an organ and the lifetime organ-specific cancer risk in the US. The authors concluded that luck, far more than ‘environmental or genetic susceptibility,’ accounted for these cancers. As Blot and Tarone (2015) review, this is a misleading analysis to determine cancer causation. Any particular cancer usually requires multiple genetic changes (Peto, 2016). Both random errors and those due to genetic susceptibility or damage from environmental causes, such as smoking, increase with the total number of stem cell divisions. Hence, both types of mutations would contribute to the observed positive correlation between stem cell divisions and lifetime cancer risk. Blot and Taroneconclude, “…the mutation rates and the totals of lifetime stem cell divisions at various organs or tissues are not likely to differ widely among different human populations, and thus even if most mutations in the majority of cancers are the result of random replication errors, the large geographic variation in cancer rates observed in most organs suggests that the percentage of cancers arising entirely by such random errors is relatively low” (Blot and Tarone, 2015).
 
-## Biological evidence for smoking and vascular disease and diabetes
+### Biological evidence for smoking and vascular disease and diabetes
 
 The US Surgeon General provides detailed reviews of possible mechanisms that link smoking to vascular disease. The 2004 Surgeon General’s report provided a detailed overview of mechanisms linking smoking with cardiovascular diseases development. The report concluded that smoking (1) promotes harm to the linings of the cardiac arteries; (2) produces a substantial shift in blood based factors, clotting, and inflammation, all of which can contribute to sudden heart attack; (3) diminishes the ability of the blood to carry oxygen; (4) increases physiologic demands of the heart; and (5) causes irregular heartbeats (arrhythmias and spasm) (U.S. Department of Health and Human Services, 1990; U.S. Department of Health and Human Services, 2004; U.S. Department of Health and Human Services, 2014). Through these mechanisms, smoking results in substantial adverse alterations in the haemostatic balance of the cardiovascular system, which explains the relationships between smoking and subclinical and clinical manifestations of atherosclerosis.
 
@@ -382,7 +1015,7 @@ If around 1950, we took 100 smokers who were exposed to asbestos and died of lun
 
 In addition to misunderstanding of causality, two additional aspects of the divergence between the scientific evidence and popular understanding: underestimation of smoking hazards and confusion with other risks.
 
-## Underestimation of the hazards of smoking
+### Underestimation of the hazards of smoking
 
 Widespread underestimation of the hazards of smoking arises from the long delay between uptake of smoking and the development of most diseases, as discussed earlier. Smoking is so common that many people appear to believe that something so widely used cannot be harmful. Finally, as smoking does not kill each of its users, there is always the reference to individual anecdote: many people will personally know a relative or family friend who smoked to age 85 and died peacefully in his sleep. Of course, the many mothers and fathers who died early in adult life and smoked usually do not appear often in these anecdotes.
 
@@ -400,7 +1033,7 @@ Angus Deaton substantially underestimates the actual risks of death from lung ca
 
 It is therefore unsurprising to note that among US adults surveyed randomly (Oklahoma Tobacco Research Center, 2017), there was widespread lack of awareness of the levels of risk conferred by smoking. While 82% of the adults in the US survey knew that smoking caused heart disease, emphysema, leukemia and various cancers, only 41% knew that smoking kills on average 1,200 Americans every day. Only 37% knew that more people die from smoking then from murder, AIDS, suicide drugs, car crashes and alcohol combined. Similarly, 90% of the respondents stated that smoking is highly addictive and that nicotine is the addictive drug in tobacco. High proportions of this population believed that it was not easy to quit smoking. However less than 65% of respondents knew that cigarette companies intentionally designed cigarettes with enough nicotine to create and sustain addiction. Just over 60% knew that nicotine affects the brain, making cessation quite difficult for most. This survey also noted low levels of awareness regarding the fact that low-tar and light cigarettes are as equally harmful as regular cigarettes (U.S. Department of Health and Human Services, 2014). More recently, the perception of risk of e-cigarettes as being as harmful as cigarettes has become common, and mostly likely a consequence of the considerable media attention focused on youth gateways to smoking or to addiction (McNeill et al., 2020).
 
-## Confusion of the large hazards of smoking with the smaller hazards of most other exposures
+### Confusion of the large hazards of smoking with the smaller hazards of most other exposures
 
 Let’s consider one of the statements made by the British American Tobacco, a global multi-national cigarette manufacturing, in response to requests made by the US Congress in 2003 (Waxman, 2003) about their belief of the causal role of cigarette smoking:
 
@@ -418,7 +1051,7 @@ Any particular disease can have in fact two (or more) causes. Therefore, obesity
 
 I now review some of these major identified ‘other factors’ beginning first with obesity (presumed to be both ‘physiological’ and ‘based on lifestyle choices’ in tobacco industry parlance), then turning to alcohol, and finally genetics and environment. I selected these factors as the WHO has identified these as major risk factors for adult health (World Health Organization, 2016) and because clinicians and the public often turn to genetic differences to explain disease occurrence. Moreover, smoking and drinking, and to a lesser extent obesity are strongly correlated in healthy as well as in diseased individuals (Thun et al., 1997).
 
-## Comparison with obesity
+#### Comparison with obesity
 
 Smoking risks are substantially greater than those of obesity for adults in high-income countries. Obesity (at its most extreme called severe obesity) is defined as excess body fat, and measured by body-mass index (BMI; or weight divided by height squared). Higher BMI causes a loss of premature life (Finucane et al., 2011). The loss of a decade of life requires a BMI of around 43, which is well above the averages seen in any country including the most obese populations of the US. More moderate levels of obesity, meaning of BMI of around 32, contibute to an average of three years of life loss. Hence, at the population level, a 2 kg per meter extra BMI if overweight or a 10% higher smoking prevalence both reduce life expectancy by one year (Figure 12; Peto et al., 2010).
 
@@ -428,21 +1061,150 @@ Smoking risks are substantially greater than those of obesity for adults in high
 
 These individual risks also translate to the overall life expectancy gaps at the population level. About 15% of American smoke cigarettes, and smoking accounts, on average, for 10 years of life lost. Thus, smoking is reducing American life expectancy by about 1.5 years of life (i.e. 15% X 10 years). The mean BMI in the US is 28 and about 30% of the American population is modestly obese. If modest obesity accounts for 3 years of life lost, then obesity is reducing American life expectancy by 0.9 years (i.e. 30% X 3 years). Hence, smoking causes more lost life than does obesity in the US. Moreover, the main mechanisms for increased mortality from higher BMI from vascular disease are due to hypertension, ‘bad’ lipids and development of diabetes. Most of these factors driven by higher BMI are very treatable even without reducing weight (Yusuf et al., 2004; Yusuf et al., 2020). By contrast, the only plausible way to reduce smoking risks is by quitting (Jha et al., 2013).
 
-## Comparison with alcohol
+#### Comparison with alcohol
 
 Heavy alcohol use increases the death rate from some conditions (most notably, road traffic and other injuries, suicide, poisoning, liver cirrhosis, certain cancers and perhaps haemorrhagic stroke) (Thun et al., 1997); and recent studies have documented hazards from drinking for ischemic stroke and no protective effect for ischemic heart disease (Millwood et al., 2019). Thus, the overall survival of otherwise comparable drinkers and non-drinkers in Canada, the US and the UK are similar (the slightly greater survival in drinkers shown in earlier studies is mostly likely due to ‘reverse causality’ whereby sicker people give up drinking). This balance of risks is distinct from the extreme binge-drinking patterns of vodka among Russian men, in whom loss of life from such binge-drinking exceeds that of smoking (Zaridze et al., 2009; Zaridze et al., 2014). However, the hazards of smoking are observed in both drinkers and non-drinkers (Table 6).
 
+**Table 6.**
+ Estimated probability of death (%) from any cause between ages 35 and 69 in the US population, by combination of alcohol drinking and smoking, in 1990.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sex and alcohol drinking status</th>
+      <th>Smokers</th>
+      <th>Non-smokers</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MEN</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Drinkers</td>
+      <td>43</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Non-drinkers</td>
+      <td>46</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td>WOMEN</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Drinkers</td>
+      <td>28</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Non-drinkers</td>
+      <td>30</td>
+      <td>17</td>
+    </tr>
+  </tbody>
+</table>
+
+_Adapted from Alcohol consumption and mortality among middle-aged and elderly US adults, by Thun et al. (1997), New England Journal of Medicine, 337(24), p. 1712._
+
 Even epidemiologists often underestimate the extreme hazards of tobacco. Consider the following comparisons. Firstly, among 1,000 male smokers aged 20, at least 500 (and perhaps up to 670), will die from smoking throughout their lifetimes. Of these, at least 250 will die from smoking in middle-age (meaning before 70 years). By contrast, only 20 would die from road accidents or violence and 30 from all alcohol-related conditions (Jha and Chaloupka, 2000).
 
-## Comparison with genetics
+#### Comparison with genetics
 
 To return to the idea of causation; a common statement made by people (including doctors) is that ‘genetics was responsible’ for a particular person’s heart attack or lung cancer, even though they may have also smoked. At the population level, both genetics and smoking could for example, play roles in causing either disease. The population-based evidence should also guide the magnitude of the risk. For example, no single genetic factor has been identified that explains a significant proportion of heart attacks, although the combination of all tested factors suggest just over a quarter of heritability of heart disease (McPherson and Tybjaerg-Hansen, 2016).
 
 However, smoking alone accounts for at least a quarter of the deaths from heart attack in the US (U.S. Department of Health and Human Services, 2014). Moreover, the largest identified single genetic factor (the relative risk from a specific lipid factor (lipoprotein (a), Loci SLC22A3-LPAL2-LPA SNP, rs2048327) carries a relative risk of 1.4, which is comparable to smoking 3–4 cigarettes a day. Similarly, a range of genetic factors has recently been suggested to modestly predict lung cancer risk in smokers and non-smokers (Timofeeva et al., 2012). These genetic factors do not negate the importance of smoking in explaining lung cancer risks.
 
-## Comparison to environmental pollutants and other exposures
+#### Comparison to environmental pollutants and other exposures
 
 Doll and Peto (1981) conducted an exhaustive review of the possible causes of cancer in the US in the late 1970s. Their focus was on the widely held belief that ‘pollutants’ in the environment were a major cause of cancer. They documented the available epidemiological evidence on the environmental exposures most commonly believed to be linked to cancer, such as pesticides, food additives, industrial products, ultraviolet light, and pollution. (They did not specifically study ambient air pollution). They concluded that tobacco smoking accounted for more of the proportions of cancer deaths than did a reasonable summation of all of the known risk factors, including nearly every known pollutant. Table 7 shows their summary results.
+
+**Table 7.**
+ Proportions of cancer deaths in the United States in the 1970s attributed to various different factors, as defined by Doll and Peto (1981).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Factor or class of factors</th>
+      <th colspan="2">Percent of all cancer deaths</th>
+    </tr>
+    <tr>
+      <th>Best estimate</th>
+      <th>Range of acceptable estimates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tobacco</td>
+      <td>30</td>
+      <td>25–40</td>
+    </tr>
+    <tr>
+      <td>Alcohol</td>
+      <td>3</td>
+      <td>2–4</td>
+    </tr>
+    <tr>
+      <td>Food additives</td>
+      <td>&lt;1</td>
+      <td>−5–2</td>
+    </tr>
+    <tr>
+      <td>Reproductive and sexual behaviour</td>
+      <td>7</td>
+      <td>1–13</td>
+    </tr>
+    <tr>
+      <td>Occupation</td>
+      <td>4</td>
+      <td>2–8</td>
+    </tr>
+    <tr>
+      <td>Pollution</td>
+      <td>2</td>
+      <td>&lt;1–5</td>
+    </tr>
+    <tr>
+      <td>Industrial products</td>
+      <td>&lt;1</td>
+      <td>&lt;1–2</td>
+    </tr>
+    <tr>
+      <td>Medicines and medical procedures</td>
+      <td>1</td>
+      <td>0.5–3</td>
+    </tr>
+    <tr>
+      <td>Geophysical factors (mostly Ultraviolet light)</td>
+      <td>3</td>
+      <td>2–4</td>
+    </tr>
+    <tr>
+      <td>Infection</td>
+      <td>10?</td>
+      <td>1-?</td>
+    </tr>
+    <tr>
+      <td>Diet</td>
+      <td>35</td>
+      <td>10–70</td>
+    </tr>
+    <tr>
+      <td>Unknown</td>
+      <td>?</td>
+      <td>?</td>
+    </tr>
+  </tbody>
+</table>
+
+_Adapted from The causes of cancer: Quantitative estimates of avoidable risks of cancer in the United States today, Doll and Peto (1981), Journal of the National Cancer Institute, 66(6), p. 1192–1308._
 
 Doll and Peto also pointed out that, excluding smoking-attributable cancers, there was no ‘epidemic’ of cancer, as was commonly believed at that time. In fact cancer death rates except those attributable to smoking were falling modestly. Finally, they pointed out that smoking causes more death from causes other than cancer than it does from cancer itself.
 

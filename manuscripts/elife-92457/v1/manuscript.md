@@ -13,9 +13,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03m0vk445 State Key Laboratory of Genetic Resources and Evolution & Yunnan Key Laboratory of Biodiversity and Ecological Conservation of Gaoligong Mountain, Kunming Institute of Zoology, Chinese Academy of Sciences Kunming China
+1. State Key Laboratory of Genetic Resources and Evolution & Yunnan Key Laboratory of Biodiversity and Ecological Conservation of Gaoligong Mountain, Kunming Institute of Zoology, Chinese Academy of Sciences Kunming China ([ROR:03m0vk445](https://ror.org/03m0vk445))
 2. China Exploration and Research Society, 2707-08 SouthMark, Wong Chuk Hang Hong Kong China
-3. https://ror.org/05fsfvw79 Anhui Provincial Key Laboratory of the Conservation and Exploitation of Biological Resources, College of Life Sciences, Anhui Normal University Wuhu China
+3. Anhui Provincial Key Laboratory of the Conservation and Exploitation of Biological Resources, College of Life Sciences, Anhui Normal University Wuhu China ([ROR:05fsfvw79](https://ror.org/05fsfvw79))
 
 † Corresponding author
 
@@ -41,23 +41,214 @@ Medium and large-sized terrestrial mammals are key components of mountain forest
 
 Our camera traps obtained 10,388 independent detections of 17 focal species (12 carnivores and five ungulates) from 322 stations over 43,163 camera days of effort (Table 1). We documented a number of species and subspecies of conservation concern, including Bengal tiger Panthera trigris, clouded leopard Neofelis nebulosa, and dhole Cuon alpinus. We also captured 2224 independent detections of humans during the survey period.
 
-## Species-specific response to habitat covariates
+**Table 1.**
+ Independent detection of ground-dwelling medium- and large-bodied mammal species based on camera trapping survey in the Yarlung Zangbo Grand Canyon, southeast Tibet.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Order</th>
+      <th>Family</th>
+      <th>Genus</th>
+      <th>Species</th>
+      <th>Independent detections</th>
+      <th>IUCN category</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cetartiodactyla</td>
+      <td>Bovidae</td>
+      <td>Budorcas</td>
+      <td>Budorcas taxicolor</td>
+      <td>92</td>
+      <td>VU</td>
+    </tr>
+    <tr>
+      <td>Cetartiodactyla</td>
+      <td>Bovidae</td>
+      <td>Capricornis</td>
+      <td>Capricornis milneedwardsii</td>
+      <td>2992</td>
+      <td>NT</td>
+    </tr>
+    <tr>
+      <td>Carnivora</td>
+      <td>Felidae</td>
+      <td>Catopuma</td>
+      <td>Catopuma temminckii</td>
+      <td>232</td>
+      <td>NT</td>
+    </tr>
+    <tr>
+      <td>Carnivora</td>
+      <td>Canidae</td>
+      <td>Cuon</td>
+      <td>Cuon alpinus</td>
+      <td>256</td>
+      <td>EN</td>
+    </tr>
+    <tr>
+      <td>Carnivora</td>
+      <td>Mustelidae</td>
+      <td>Martes</td>
+      <td>Martes flavigula</td>
+      <td>469</td>
+      <td>LC</td>
+    </tr>
+    <tr>
+      <td>Cetartiodactyla</td>
+      <td>Cervidae</td>
+      <td>Muntiacus</td>
+      <td>Muntiacus muntjak</td>
+      <td>4696</td>
+      <td>LC</td>
+    </tr>
+    <tr>
+      <td>Cetartiodactyla</td>
+      <td>Bovidae</td>
+      <td>Naemorhedus</td>
+      <td>Naemorhedus baileyi</td>
+      <td>254</td>
+      <td>VU</td>
+    </tr>
+    <tr>
+      <td>Carnivora</td>
+      <td>Felidae</td>
+      <td>Neofelis</td>
+      <td>Neofelis nebulosa</td>
+      <td>45</td>
+      <td>VU</td>
+    </tr>
+    <tr>
+      <td>Carnivora</td>
+      <td>Viverridae</td>
+      <td>Paguma</td>
+      <td>Paguma larvata</td>
+      <td>223</td>
+      <td>LC</td>
+    </tr>
+    <tr>
+      <td>Carnivora</td>
+      <td>Felidae</td>
+      <td>Panthera</td>
+      <td>Panthera tigris</td>
+      <td>26</td>
+      <td>EN</td>
+    </tr>
+    <tr>
+      <td>Carnivora</td>
+      <td>Felidae</td>
+      <td>Pardofelis</td>
+      <td>Pardofelis marmorata</td>
+      <td>54</td>
+      <td>NT</td>
+    </tr>
+    <tr>
+      <td>Carnivora</td>
+      <td>Felidae</td>
+      <td>Prionailurus</td>
+      <td>Prionailurus bengalensis</td>
+      <td>164</td>
+      <td>LC</td>
+    </tr>
+    <tr>
+      <td>Carnivora</td>
+      <td>Prionodontidae</td>
+      <td>Prionodon</td>
+      <td>Prionodon pardicolor</td>
+      <td>28</td>
+      <td>LC</td>
+    </tr>
+    <tr>
+      <td>Cetartiodactyla</td>
+      <td>Suidae</td>
+      <td>Sus</td>
+      <td>Sus scrofa</td>
+      <td>269</td>
+      <td>LC</td>
+    </tr>
+    <tr>
+      <td>Carnivora</td>
+      <td>Ursidae</td>
+      <td>Ursus</td>
+      <td>Ursus thibetanus</td>
+      <td>463</td>
+      <td>VU</td>
+    </tr>
+    <tr>
+      <td>Carnivora</td>
+      <td>Viverridae</td>
+      <td>Viverra</td>
+      <td>Viverra zibetha</td>
+      <td>37</td>
+      <td>LC</td>
+    </tr>
+    <tr>
+      <td>Carnivora</td>
+      <td>Canidae</td>
+      <td>Vulpes</td>
+      <td>Vulpes vulpes</td>
+      <td>88</td>
+      <td>LC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Species-specific response to habitat covariates
 
 Species varied in their responses to habitat covariates. Nine out of 17 species showed a strong positive response to forest cover (Figure 2, Figure 2—source data 1). Human presence had apparent negative effects on the occurrence of clouded leopard (mean = –0.967, 95% CI=−2.35 to −0.025), taking Budorcas taxicolor (mean = –0.449, 95% CI=−0.935 to −0.071) and red goral Naemorhedus baileyi (mean = –0.806, 95% CI=−0.935 to −0.071), but was apparently positively associated with the occurrence of wild boar Sus scrofa (mean = 0.521, 95% CI=0.045 to 1.093) and golden cat Catopuma temminckii (mean = 0.427, 95% CI=0.165 to 0.804; Figure 2—source data 1). Human modification was apparently negatively associated with the occurrence of dhole (mean = –0.24, 95% CI=−0.493 to -0.027), red fox Vulpes vulpes (mean = –1.588, 95% CI=−2.656 to −0.769), Asiatic black bear Ursus thibetanus (mean = –0.234, 95% CI=−0.42 to −0.056), red goral (mean = –0.665, 95% CI=−1.129 to −0.238) and Mainland serow Capricornis sumatraensis (mean = –0.477, 95% CI=−0.697 to −0.26), but was positively apparently associated with muntjac Muntjac spp. (mean = 3.632, 95% CI=0.946 to 9.999), masked palm civet Paguma larvata (mean = 2.076, 95% CI=1.26 to 3.145), large Indian civet Viverra zibetha (mean = 0.782, 95% CI=0.175 to 1.558) and marbled cat Pardofelis marmorata (mean = 0.689, 95% CI=0.232 to 1.236; Figure 2, Figure 2—source data 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/92457/elife-92457-fig2-v1.jpg)
 
-**Figure 2.:** Figure 2—source data 1.* denotes significant positive and negative effects based on 95% CIs.
-
-## Effects of human disturbances on spatial co-occurrence
+### Effects of human disturbances on spatial co-occurrence
 
 Out of the 136 estimated pairwise residual correlation coefficients in occupancy, 87 (64 %) were positive at lower human modifications (Figure 3a). At the moderate and higher modifications, the species pairs with positive associations increased to 107 (79 %) and 118 (87%), respectively (Figure 3b and c). At lower modifications, correlation coefficients for 18 species pairs were positive and had a 95 % CI that did not overlap zero (Figure 3—figure supplement 1), and the number increased to 65 in moderate modifications (Figure 3—figure supplement 2) but dropped to 29 at higher modifications (Figure 3—figure supplement 3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/92457/elife-92457-fig3-v1.jpg)
+
+**Figure 3.:** Associations are shown for the region’s (a) minimum (Lower), (b) mean (Moderate), and (c) maximum (Higher) human modifications.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92457/elife-92457-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** * denotes significant associations (i.e. p<0.01).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/92457/elife-92457-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** * denotes significant associations (i.e. p<0.01).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/92457/elife-92457-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** * denotes significant associations (i.e. p<0.01).
+
 Along human presence gradients, 88 pairwise residual correlation coefficients (65%) at lower human presence habitats were positive or close to neutral (Figure 4a). At the moderate and higher human presence habitats, the species pairs with positive associations increased to 115 (85%) and 113 (83%), respectively (Figure 4b and c). The significant positive associations at low, moderate, and higher human presence habitats were 6 (4%, Figure 4—figure supplement 1), 76 (56%, Figure 4—figure supplement 2), and 44 (32%, Figure 4—figure supplement 3), respectively.
 
-## Effects of human disturbances on temporal co-occurrence
+![Figure 4.](https://cdn.elifesciences.org/articles/92457/elife-92457-fig4-v1.jpg)
+
+**Figure 4.:** Associations are shown for the region’s (a) minimum (Lower), (b) mean (Moderate), and (c) maximum (Higher) human presence.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92457/elife-92457-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** * denotes significant associations (i.e. p<0.01).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/92457/elife-92457-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** * denotes significant associations (i.e. p<0.01).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/92457/elife-92457-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** * denotes significant associations (i.e. p<0.01).
+
+### Effects of human disturbances on temporal co-occurrence
 
 Human presence was associated with significantly increased nocturnality of carnivores (mean = 0.163, 95% CI=0.089 to 0.236, Figure 5a), but showed no significant effects on ungulates (mean = –0.004, 95% CI=−0.031 to 0.023, Figure 5b) and combination of guilds (mean = –0.001, 95% CI=−0.028 to 0.026; Figure 5c). Human modification had no strong effects on nocturnality of any guilds and combination of guilds (i.e. 95% CIs include zero, Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/92457/elife-92457-fig5-v1.jpg)
+
+**Figure 5.:** The solid vertical lines in (c) and (d) represent mean differences, and the dashed vertical lines indicate 95% confidence intervals.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92457/elife-92457-fig5-figsupp1-v1.jpg)
 
 Both human modification and human presence were associated with significantly reduced time between detections of pairs (human modification: mean = –1.07, 95% CI=−1.39 to −0.73; human presence: mean = –0.69, 95% CI=−0.92 to −0.46; Figure 6).
 
@@ -83,37 +274,53 @@ In conclusion, our study demonstrated that anthropogenic pressures increase spat
 
 ## Materials and methods
 
-## Study area
+### Study area
 
 The study was carried out inside the Yarlung Zangbo Grand Canyon National Nature Reserve (29°05′–30°02′ N, 94°39′–96°6′ E) in Nyingchi City in the southeast Tibet Autonomous Region of China (Figure 7). This area is situated within the Eastern Himalaya Biodiversity Hotspot, a globally important region for biodiversity conservation (Li et al., 2021). The Yarlung Zangbo Grand Canyon is the deepest in the world, with an elevation drop of more than 7000 m, and has the reputation of ‘Gene Bank of Mountain Biological Resources’ and ‘Natural Vegetation Museum’ (Duan et al., 2022). This region is characterized by dramatic vertical zonation of vegetation. From the valley bottom to the mountain peak, the main vegetation types consist of low mountain tropical monsoon rain forest, subtropical mountain evergreen broad-leaved forest, mid-mountain warm coniferous forest, sub-alpine cold coniferous forest, alpine subrigid shrub meadow, and periglacial alpine vegetation (Deng et al., 2011). The complete landscapes in the region harbors endangered species such as Bengal tiger Panthera tigris tigris (Li et al., 2023). Human activities such as decentralized residential settlements and free-ranging livestock grazing are prevalent in the region, even within the protected area (Li et al., 2021).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/92457/elife-92457-fig7-v1.jpg)
 
-## Camera trap sampling
+### Camera trap sampling
 
 Camera trap detections of terrestrial mammals were collected during the dry season between November 2020 and April 2021 and November 2021 and April 2022 to avoid the heavy rainy seasons in the region. The mean trapping efforts were 134 days (89–147 days range). We used Yianws L720 camera traps to conduct the survey. To determine how anthropogenic factors shape spatiotemporal associations among terrestrial mammals, we set up camera trapping stations within the nature reserve based on the intensity of human activities and distance to nearest human settlement. We deployed 350 camera stations in the reserve with different degrees of anthropogenic disturbance, maintaining at least 800 m between them (range 886–2233 m, median 1219). This distance may not satisfy the assumption of population closure and there may be some degree of pseudo-replication as observations of wide-ranging animals may not be independent. For these species, the occupancy estimate can be thought of as an estimate of the probability that the species used the area where the camera trapping station was located, rather than true occupancy (Li et al., 2018). Our camera trapping stations spanned a gradient of forest areas with varying levels of human activities and habitat modifications in the surrounding area. We affixed camera traps to trees between 80 and 100 cm off the ground, and they were not baited. Camera sensitivity was set to ‘low’ to reduce false detections triggered by nonanimal movements. We set cameras to take three photos per detection event, with 3 s delay between subsequent detections. Camera trap photos were later identified to species when possible. We combined all human presence photos into a single ‘Human’ categorization representing a variety of human activities detected around a camera station (e.g. resource gathering, livestock grazing, recreation, etc.). All photos of the same species (including humans) at the same camera station were considered independent detections if separated by at least 1 hr (Li et al., 2021). Several camera stations were invalid due to camera malfunctions or lost cameras. The total valid sampling effort was 43,163 camera days from 322 camera stations that operated effectively. The target species consisted of ground-dwelling mammal species observed in more than 10 camera stations and weighing more than 1 kg. Thus, the occurrence dataset consists of presence-absence information on 17 mammal species at 322 camera stations.
 
-## Anthropogenic and habitat covariates
+### Anthropogenic and habitat covariates
 
 We derived two different types of human impacts: chronic human modification (e.g. settlement, transportation night-time lights, etc.) and acute direct human presence (occurrence of people and domestic animals detected by camera traps) to address our hypotheses. We explored the degree of habitat modification based on the Human modification (HM) map metric (Kennedy et al., 2019). The HM metric provides a cumulative estimate of artificial modification of terrestrial landscapes based on 13 anthropogenic stressors caused by five human activities (human settlement, agriculture, transportation, energy production, and electrical infrastructure) at a resolution of 1 km (Kennedy et al., 2019). The metric is based on both the intensity and extent of impact of each anthropogenic stressor and ranges from 0 (no human disturbance) to 1 (highest human disturbance). Our sampling stations represent a varied gradient of human modification from 0.04 in minimum to 0.28 in maximum, with a mean value of 0.12 (sd = 0.05). We quantified the level of acute direct human presence around each camera-trapping station by calculating the independent detections of human-related activities (e.g. livestock grazing, forest resource collection, and tourism) per 100 camera-trap days. The range of human presence recorded by our camera trapping survey was 0–46.81, with a mean value of 6.42 (sd = 8.61). We also chose a set of two environmental covariates known to impact spatiotemporal distribution of mammals (Li et al., 2018) and presumed to affect interspecific associations: (1) elevation, which plays a key role in shaping spatial distribution of many species in mountain forests (He et al., 2019; Li et al., 2018), and (2) percent of forest cover, which provides food resources, thermal cover and escape shelter for animals (Long et al., 2005). We derived percent of forest cover for each camera station based on the 250 m Moderate Resolution Imaging Spectroradiometer (MODIS) imagery (MOD44B Vegetation Continuous Fields (VCF) yearly product) of the study area for the period of 2021. For each camera trapping station, we derived human modification and percent of forest cover with a buffer radius of 500 m. This spatial scale should capture the environment that influences both resident animals with small home ranges and transient animals moving through the area. Prior to analysis, we log-transformed [log (x+0.1)] human presence data to account for its highly skewed distribution. We also standardized human modification and other environmental covariates by scaling to have a mean of zero and unit variance.
 
-## Spatial co-occurrence analysis
+### Spatial co-occurrence analysis
 
-We employed a context-dependent joint species distribution model (JSDM; Tikhonov et al., 2017) to characterize interspecific spatial associations of sympatric species. JSDMs are able to separate spatial associations between species into shared environmental preferences and residual correlations that cannot be explained by the environmental factors (Pollock et al., 2014). The context-dependent JSDM approach allows residual correlations to vary across the environment by incorporating species- and site-specific latent variables in the model (Tikhonov et al., 2017). We followed this approach and constructed a context-dependent model by utilizing a latent variable structure, where the factor loadings are modeled as a linear regression of covariates, allowing species associations to covary with human disturbance covariates. For our camera trap detections, we modeled the presence-absences of species j at camera station i as:yijBern(Ψij)
+We employed a context-dependent joint species distribution model (JSDM; Tikhonov et al., 2017) to characterize interspecific spatial associations of sympatric species. JSDMs are able to separate spatial associations between species into shared environmental preferences and residual correlations that cannot be explained by the environmental factors (Pollock et al., 2014). The context-dependent JSDM approach allows residual correlations to vary across the environment by incorporating species- and site-specific latent variables in the model (Tikhonov et al., 2017). We followed this approach and constructed a context-dependent model by utilizing a latent variable structure, where the factor loadings are modeled as a linear regression of covariates, allowing species associations to covary with human disturbance covariates. For our camera trap detections, we modeled the presence-absences of species j at camera station i as:
 
-with Ψij=φ−1(ηij), where Ψij is the species-specific occurrence probability for each camera trapping station, and φ-1 is the inverse of a probit link function. We modeled ηij as:ηij=∑k=1ncxikβjk+εij
+$$
+y_{ij}Bern(Ψ_{ij})
+$$
 
-where nc denotes the number of fixed covariates (i.e. elevation, percent of forest cover, human modification, and human presence) plus intercept, βjk denotes the effect of environmental covariate k on species j, xik denotes the measured covariates k=1… nc in the sampling unit i. The intercept of the model is included by setting xi1=1 for all sampling units, so that the number of measured environmental covariates is nc- 1. The species associations are modeled through the term εij , which is defined by a latent factor model:εij=∑h=1nfzihλjh(xi⋅∗)
+with $Ψ_{ij}=\phi^{−1}(η_{ij})$, where $Ψ_{ij}$ is the species-specific occurrence probability for each camera trapping station, and $\phi^{-1}$ is the inverse of a probit link function. We modeled $η_{ij}$ as:
 
-where zih denotes the value of latent factor h=1… nf at the sampling unit i, λjh(xi⋅∗) denotes the response (factor loading) of species j to latent factor h, given a vector of predictors xi⋅∗ . The predictors xi⋅∗ = (xi1∗,…,xinc∗∗) on which the species associations are assumed to depend can be arbitrary, usually a subset of environmental predictors (Tikhonov et al., 2017). Here, we model the factor loadings of species as a function of the two types of human disturbances (i.e. human modification and human presence):λjh(xi⋅∗)=∑k=1nc∗xik∗λjhk
+$$
+η_{ij}=\sumk=1n_{c}x_{ik}\beta_{jk}+\epsilon_{ij}
+$$
 
-where nc∗ denotes the number of covariates assumed to impact residual correlations plus intercept. The intercept is included in the regression part by setting xi1∗=1 for all sampling units. In this study, assume  nf =3, as our Deviance information criteria did not improve notably with the addition of more latent variables. We defined the covariance matrix of species factor loading as a function of human disturbances as εi⋅∼N(0,Ω(xi.∗)), where Ω(xi⋅∗)=Λ(xi⋅∗)Λ(xi⋅∗)T , and Λ(xi⋅∗) is the matrix of factor loadings, which depends on the human disturbances. We then scale this covariance matrix Ω to interspecific correlation matrices R by defining Rj1j2=Ωj1j2/Ωj1j1Ωj2j2 for each pair of species, which represents disturbance-dependent associations between species that are not explained by fixed species-specific effects of environmental predictors. These resulted in values between –1 and 1, with negative values representing negative association between species, and positive values implying the opposite.
+where $n_{c}$ denotes the number of fixed covariates (i.e. elevation, percent of forest cover, human modification, and human presence) plus intercept, $\beta_{jk}$ denotes the effect of environmental covariate k on species j, $x_{ik}$ denotes the measured covariates k=1… $n_{c}$ in the sampling unit i. The intercept of the model is included by setting $x_{i1}=1$ for all sampling units, so that the number of measured environmental covariates is $n_{c}-$ 1. The species associations are modeled through the term $\epsilon_{ij}$ , which is defined by a latent factor model:
+
+$$
+\epsilon_{ij}=\sumh=1n_{f}z_{ih}\lambda_{jh}(x_{i⋅}^{∗})
+$$
+
+where $z_{ih}$ denotes the value of latent factor h=1… $n_{f}$ at the sampling unit i, $\lambda_{jh}(x_{i⋅}^{∗})$ denotes the response (factor loading) of species j to latent factor h, given a vector of predictors $x_{i⋅}^{∗}$ . The predictors $x_{i⋅}^{∗}$ = ($x_{i1}^{∗},…,x_{in_{c}^{∗}}^{∗}$) on which the species associations are assumed to depend can be arbitrary, usually a subset of environmental predictors (Tikhonov et al., 2017). Here, we model the factor loadings of species as a function of the two types of human disturbances (i.e. human modification and human presence):
+
+$$
+\lambda_{jh}(x_{i⋅}^{∗})=\sumk=1n_{c}^{∗}x_{ik}^{∗}\lambda_{jhk}
+$$
+
+where $n_{c}^{∗}$ denotes the number of covariates assumed to impact residual correlations plus intercept. The intercept is included in the regression part by setting $x_{i1}^{∗}=1$ for all sampling units. In this study, assume  $n_{f}$ =3, as our Deviance information criteria did not improve notably with the addition of more latent variables. We defined the covariance matrix of species factor loading as a function of human disturbances as $\epsilon_{i⋅}∼N(0,Ω(x_{i.}^{∗}))$, where $Ω(x_{i⋅}^{∗})=Λ(x_{i⋅}^{∗})Λ(x_{i⋅}^{∗})^{T}$ , and $Λ(x_{i⋅}^{∗})$ is the matrix of factor loadings, which depends on the human disturbances. We then scale this covariance matrix $Ω$ to interspecific correlation matrices R by defining $R_{j1j2}=Ω_{j1j2}/\sqrt{Ω_{j1j1}Ω_{j2j2}}$ for each pair of species, which represents disturbance-dependent associations between species that are not explained by fixed species-specific effects of environmental predictors. These resulted in values between –1 and 1, with negative values representing negative association between species, and positive values implying the opposite.
 
 We estimated changes in species associations over continuous gradients of human modification (range: 0.04–0.28) and human presence gradients (range: 0.00–46.81). After fitting the model to data, we used the parameterized model to infer how species associations depend on human presence and human modification and generated predictions at minimum (lower), mean (moderate), and maximum (higher) conditions of the two variables separately.
 
 We fitted the model based on a Bayesian approach using the greta R-package (Golding, 2019) as described by Perrin et al., 2022. We specified uninformative normally distributed priors for all parameters. We made inferences from 3000 samples on three chains after a burn-in of 2000 samples.
 
-## Temporal co-occurrence analysis
+### Temporal co-occurrence analysis
 
 For temporal co-occurrence analysis, we defined ‘Low’ and ‘High’ categories of human presence and human modification. We ranked camera trapping stations based on human presence and human modification separately, and filtered detections from the 25% most- (‘High’ category) and least- (‘Low’ category) disturbed camera trap stations and pooled detections within each category. We used kernel density distributions of animal diel activity and time between detections of species pairs (time-to-encounter) to compare temporal associations at lower and higher human disturbances. To examine if changes in species diel activity patterns were a mechanism behind anthropogenic impacts, we computed the nocturnal probability and time between consecutive detections of species pairs from lower- and higher-disturbance habitats. We transformed the detection time stamp to ‘solar time’ to eliminate the impacts of day-length variation in day length (Nouvellet et al., 2012). We retained only those species that had at least 30 independent detections in the low- and high-disturbance categories. For nocturnality analysis, we excluded detections within the hour around sunrise and sunset to avoid the effects of crepuscular activities on nocturnal probability. Thus, we defined nocturnal records as detections 1 hr after sunset up to 1 hr before sunrise. We conducted a binomial t-test to evaluate shifts in species nocturnality in the low- and high-disturbance categories.
 

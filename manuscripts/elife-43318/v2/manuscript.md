@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.43318.001 In complex biological systems, simple individual-level behavioral rules can give rise to emergent group-level behavior. While collective behavior has been well studied in cells and larger organisms, the mesoscopic scale is less understood, as it is unclear which sensory inputs and physical processes matter a priori . Here, we investigate collective feeding in the roundworm C. elegans at this intermediate scale, using quantitative phenotyping and agent-based modeling to identify behavioral rules underlying both aggregation and swarming—a dynamic phenotype only observed at longer timescales. Using fluorescence multi-worm tracking, we quantify aggregation in terms of individual dynamics and population-level statistics. Then we use agent-based simulations and approximate Bayesian inference to identify three key behavioral rules for aggregation: cluster-edge reversals, a density-dependent switch between crawling speeds, and taxis towards neighboring worms. Our simulations suggest that swarming is simply driven by local food depletion but otherwise employs the same behavioral mechanisms as the initial aggregation.
+In complex biological systems, simple individual-level behavioral rules can give rise to emergent group-level behavior. While collective behavior has been well studied in cells and larger organisms, the mesoscopic scale is less understood, as it is unclear which sensory inputs and physical processes matter a priori. Here, we investigate collective feeding in the roundworm C. elegans at this intermediate scale, using quantitative phenotyping and agent-based modeling to identify behavioral rules underlying both aggregation and swarming—a dynamic phenotype only observed at longer timescales. Using fluorescence multi-worm tracking, we quantify aggregation in terms of individual dynamics and population-level statistics. Then we use agent-based simulations and approximate Bayesian inference to identify three key behavioral rules for aggregation: cluster-edge reversals, a density-dependent switch between crawling speeds, and taxis towards neighboring worms. Our simulations suggest that swarming is simply driven by local food depletion but otherwise employs the same behavioral mechanisms as the initial aggregation.
 
 ## Introduction
 
@@ -31,13 +31,29 @@ In this paper, we use fluorescence imaging and multi-worm tracking to examine in
 
 ## Results
 
-## Dynamic swarming occurs in social worms at long time scales
+### Dynamic swarming occurs in social worms at long time scales
 
 Aggregation has most often been characterized as the fraction of worms inside clusters, where individual worms can move in and out of clusters. Here we report an additional dynamic swarming phenotype in aggregating C. elegans that occurs on a timescale of hours. Here, swarming refers to the collective movement of a coherent group of worms across a bacterial lawn (Figure 1A, Video 1). Because of the long timescale, this behavior is not obvious from manual observations of worms on a plate, but becomes clear in time lapse videos (Figure 1B and C, npr-1 panels). Even though N2 worms do not swarm in our experiments (Figure 1B and C, N2 panels), they can swarm under appropriate conditions, such as when a clonal population has depleted almost all food (Hodgkin and Barnes, 1991) or on unpalatable Pseudomonas fluorescens bacterial lawns (personal communication from J. Hodgkin and G.M. Preston). Thus swarming in C. elegans does not require loss of npr-1 function in all environments.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/43318/elife-43318-fig1-v2.jpg)
+
+**Figure 1.:** (A) A few hundred npr-1 mutant worms form dense clusters that move on food over time. Red dashed lines show the food boundary, where area with food is to the right and food-depleted area is to the left; red arrows show the direction of cluster movement. (B) Forty npr-1 mutant worms also cluster and swarm on food. Solid circles encompass the same cluster at different time points; dashed circles show cluster positions prior to the current time point. The same number of N2 worms do not swarm under our experimental conditions, and instead disperse after initial transient aggregation. (C) Visualization of persistent swarming over time. One frame was sampled every 30 s over the duration of the videos and binary segmentation was applied using an intensity threshold to separate worm pixels from the background. Blobs with areas above a threshold value were plotted as clusters to show cluster position over time. The same videos as in (B) were used. Dashed circles show the food boundary. Crosses are cluster centroids at each sample frame. (D) Centroid speed of persistent npr-1 clusters, calculated from centroid positions as indicated in (C) and smoothed over 10 min. Shaded area shows standard deviation across five replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43318/elife-43318-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Forty npr-1 animals swarm over a big food patch, reminiscent of a persistent random walk. More than one large moving clusters co-exist towards the end of the video (orange and yellow), and a cluster (orange) disperses and re-forms elsewhere (orange and yellow) when it crosses its previous path (blue), presumably due to local food depletion.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/43318/elife-43318-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** One-hour fluorescence recordings of npr-1 animals under our experimental conditions consist of reproducible temporal dynamics encompassing three phases: transient (animals move about the lawn and start to form clusters), aggregation (clusters largely remain stable with individuals entering and exiting), and swarming (worms move across the lawn in persistent clusters) (see sample Video 2). Percentage of in-cluster worms remain largely consistent throughout the latter two phases, except that clusters remain in place during the aggregation phase and become dynamic during the swarming phase. Error bars represent standard deviation across 13 (npr-1) and 9 (N2) replicates. The average duration of each phase derived from npr-1 experiments are applied to N2 data to maintain temporal consistency, even though N2 does not exhibit aggregation or swarming. Subsequent quantitative analyses for both strains were restricted to using the data from the aggregation (for all but Figure 1D) or swarming (for Figure 1D) phase, in order to reveal the mechanisms necessary for producing aggregation or the dynamics of swarming, respectively.
+
+![Video 1.](https://cdn.elifesciences.org/articles/43318/elife-43318-video1.mp4.jpg)
+
+**Video 1.:** The video plays at 300x the normal speed.
+
 Dynamic swarming occurs with just 40 npr-1 mutants (Figure 1B, top row), making it experimentally feasible to study. Usually a single npr-1 aggregate forms on the food patch and then moves around the lawn in a persistent but not necessarily directed manner (Figure 1C, left; Figure 1—figure supplement 1), at a steady speed (Figure 1D). The onset of this collective movement appears to coincide with local food depletion, and continues until complete food depletion, at which time the cluster disperses. More than one moving cluster may co-exist, and occasionally a cluster may disperse and form elsewhere when it crosses its previous path (Figure 1—figure supplement 1), presumably due to local food depletion. The observed pattern of npr-1 cluster motion is reminiscent of a self-avoiding, persistent random walk (i.e. not returning to areas that the worms have previously been where there is no food left). By contrast, after initially forming transient clusters on the lawn, N2 worms move radially outwards with no collective movement (Figure 1C, right).
 
-## Fluorescence imaging and automated animal tracking allows quantification of dynamics inside and outside of aggregates
+### Fluorescence imaging and automated animal tracking allows quantification of dynamics inside and outside of aggregates
 
 Based on our observation that swarming appears to be driven by food depletion, we hypothesize the phenomenon may be a dynamic extension of the initial aggregation that occurs before depletion. To test this idea, we first sought to identify the mechanisms underlying aggregation.
 
@@ -47,51 +63,107 @@ The presence of aggregates is clear in bright field images, but it is difficult 
 
 **Figure 2.:** (A) npr-1 mutant and N2 animals exhibit different social behaviors on food, with the former being hyper-social (top left) and the latter being hypo-social (top right). Using a pharynx-GFP label (bottom row), individual animals may be followed inside a cluster. (B) In two-color experiments, worms are either labeled with pharynx-GFP (left) or body wall muscle-RFP (middle). As the two colors are simultaneously acquired on separate channels, the selected few RFP-labeled individuals are readily segmented and may be tracked for a long time, even inside a dense cluster. (C) Tierpsy Tracker tracks multiple worms simultaneously, generating both centroid trajectories (left, image color inverted for easier visualization; multiple colors show distinct trajectories) and skeletons (middle, pharynx-marked animal; right, body wall muscle-marked animal; red dots denote the head nodes of the skeleton).
 
-## Ascarosides and direct adhesion are unlikely to drive different aggregation phenotypes
+![Video 2.](https://cdn.elifesciences.org/articles/43318/elife-43318-video2.mp4.jpg)
+
+**Video 2.:** The video plays at 90x the normal speed.
+
+### Ascarosides and direct adhesion are unlikely to drive different aggregation phenotypes
 
 We first considered long-range chemotaxis driven by food or diffusible ascaroside pheromone signals as a potential behavioral mechanism. Chemotaxis towards food can likely be ignored as our experiments were performed on thin, even bacterial lawns, and worms are mostly on food during the aggregation phase of the experiments (99.7 ± 0.4% for npr-1 and 99.8 ± 0.3% for N2, mean ±S.D.). Although ascarosides are important for processes such as mating and dauer formation in C. elegans (Srinivasan et al., 2008), it is less clear whether long-range signaling via pheromones plays a role in aggregation (de Bono et al., 2002; Macosko et al., 2009). daf-22(m130) mutants do not produce ascarosides, but daf-22;npr-1 double mutants aggregate similarly to npr-1 single mutants (Figure 3—figure supplement 1), consistent with the observation that the hermaphrodite-attractive pheromone icas#3 is attractive to both N2 animals and npr-1 mutants (Srinivasan et al., 2012) and is thus unlikely to explain the difference in their propensity to aggregate. Moreover, attraction between moving objects is known to produce aggregation in active matter systems (Redner et al., 2013a), but it is not known whether this applies to worms. Short-range attraction between worms may exist in the form of adhesion mediated through a liquid film (Gart et al., 2011), but we have no reason to believe this would differ between npr-1 and N2 strains.
 
-## Reversal rates and speed depend on neighbor density more strongly in npr-1 mutants than in N2
+### Reversal rates and speed depend on neighbor density more strongly in npr-1 mutants than in N2
 
 Having considered long-range food- or ascaroside-mediated attraction and short-range adhesion, we next focused on behavioral responses to nearby neighbors. While postural changes do not seem to be a main driver of aggregation as principal component analysis of lone versus in-cluster npr-1 worms revealed similar amplitudes in the posture modes (Figure 3—figure supplement 2), we found experimental evidence for density-dependence of both reversal rates and speed and that these differ between the two strains we studied.
 
 Reversals have been previously suggested as a behavior that may enable npr-1 worms to stay in aggregates (Rogers et al., 2006). To avoid cluster definitions based on thresholding the distance between worms, we quantified individual worm behavior as a function of local density (Figure 3A) instead. Calculating the reversal rates relative to that of worms at low densities, we found that npr-1 mutants reverse more at increased neighbor densities, while N2 animals do not (Figure 3B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/43318/elife-43318-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic explaining k-nearest neighbor density estimation. (B) Relative rate of reversals as a function of local density (k-nearest neighbor density estimation with k = 6) for npr-1 (blue) and N2 (orange) strains. Lines show means and shaded area shows the standard error (bootstrap estimate, 100 samples with replacement). (C) Distributions of crawling speeds at different local neighbor densities for both strains. Lines show histograms of speeds for each density bin, and the color of the line indicates the density (blue is high, magenta is low). (D) Midbody absolute speed for manually annotated npr-1 cluster entry (left, n = 28) and exit events (right, n = 29). Each event was manually identified, with time 0 representing the point where the head or tail of a worm starts to enter (left) or exit (right) an existing cluster. Skeleton xy-coordinates were linearly interpolated for missing frames for each event, before being used to calculate midbody speed extending 20 s on both sides of time 0 of the event. Speeds were smoothed over a one-second window. Shading represents standard deviation across events. Each red line shows the midbody absolute speed of a selected event that is shown in Video 3 (left) or Video 4 (right).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43318/elife-43318-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** npr-1 and N2 animals with pheromones removed by a daf-22 mutation aggregate to similar levels as their pheromone-intact counterparts. Top row: snapshots of 40 worms from each strain behaving on a thin, uniform lawn. Bottom left: quantification of cluster area relative to single worm area for each strain; dashed line shows the cut-off values used to generate the violin plot on the bottom right. Bottom right: probability of having a relative cluster area above the threshold value (dashed line on the bottom left). Blob area were extracted as tracking features. For each recording, a random sample (without replacement) of 500 single worms was used to calculate single-worm mean area, which was used to normalize multi-worm cluster areas from that recording. Relative cluster area values for each strain were pooled across recording replicates, and histograms were created with a bin width of 0.5.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/43318/elife-43318-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Left two panels: first four eigenworms (Stephens et al., 2008) plotted in real space for projections of lone worms and in-cluster worms. Right: variance explained as a function of the number of eigenworms. Eigenworms are based on common reference (Brown et al., 2013) set for both strains and worm categories.
+
 Next we calculated the speed distributions of individual worms, binned by local neighbor density. We found that both strains slow down when surrounded by many other worms, but the shift is more pronounced for npr-1 animals. npr-1 worms move faster than N2 at low densities, showing a distinct peak at high speeds. As neighbor density increases, this high speed peak gradually becomes replaced by a peak at low speeds, so that the overall speed distribution for npr-1 resembles that of N2 at very high densities. Thus, npr-1 and N2 animals show different density-dependent changes in their respective speed profiles (Figure 3C).
 
 Since the observed transition of the speed profiles could occur due to active behavioral changes as well as restricted movement in clusters, we also considered tracks of individual worms. Using body wall muscle-marked worms allowed us to obtain longer trajectories that could be joined for the duration of an entire video, including cluster entry and exit events. We compared the speed of these tracks with visual assessment of when a worm entered or exited a cluster based on the proximity to pharynx-labeled worms. We found that worms are able to move inside of clusters and observed that speed changes can occur prior to cluster entry and exit events (Figure 3D, Video 3 and Video 4). This change of speed is neither purely mechanical nor a deterministic response to a certain neighbor density, and suggests a mechanism in which worms probabilistically switch between different speeds.
 
-## Spatial statistics show group-level differences between npr-1 and N2 animals
+![Video 3.](https://cdn.elifesciences.org/articles/43318/elife-43318-video3.mp4.jpg)
+
+**Video 3.:** The red worm at the bottom (arrow) decreases speed before entering a cluster. Inset: midbody absolute speed of that individual with respect to time 0 as the point of the head entering a cluster; open blue circle shows the current speed matched to the video frame.
+
+![Video 4.](https://cdn.elifesciences.org/articles/43318/elife-43318-video4.mp4.jpg)
+
+**Video 4.:** The red worm increases speed before exiting a cluster. Inset: midbody absolute speed of that individual with respect to time 0 as the point of the head exiting a cluster; open blue circle shows the current speed matched to the video frame.
+
+### Spatial statistics show group-level differences between npr-1 and N2 animals
 
 The differences in aggregation behavior between npr-1 and N2 are visually striking, but previous quantification has typically been limited to the fraction of animals in clusters. Using the tracked positions of pharynx-labeled worms (Figure 4A), we calculated the pair-correlation function (Figure 4B), commonly used to quantify aggregation in cellular and physical systems (Gurry et al., 2009). We also computed a hierarchical clustering of worm positions (Figure 4C), which is calculated from the same pairwise distances but emphasizes larger scale structure. Using both measures, we found that as a population, npr-1 animals show quantifiably higher levels of aggregation than N2, especially at scales up to 1 mm (pair-correlation ‘S1’, Figure 4D) and 2 mm (hierarchical clustering ‘S2’, Figure 4E). We also quantified aggregation using scalar spatial statistics, namely the average standard deviation (‘S3’) and kurtosis (‘S4’) of the distribution of positions. This confirms that the positions of npr-1 worms are less spread-out and more heavy-tailed than those of N2 (Figure 4D).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/43318/elife-43318-fig4-v2.jpg)
 
-**Figure 4.:** (A) Positions of npr-1 worms in an example frame. (B) Schematic explaining pair correlation function (S), which counts the number of neighbors at a distance 1r, normalized by the expectation for a uniform distribution. (C) Example dendrogram from which hierarchical clustering branch length distributions (S) can be calculated. (2D) Pair correlation function for npr-1 (blue) and N2 (orange). Lines show mean and shaded area shows standard error of the mean. (E) Hierarchical clustering branch length distributions for npr-1 (blue) and N2 (orange). Histograms show relative frequency of inter-cluster distances (single linkage distance in agglomerative hierarchical clustering, equivalent to the branch lengths in the example dendrogram in (C)). (F) Mean standard deviation (S) and kurtosis (3S) of the positions of worms, with the mean taken over frames sampled.4
+**Figure 4.:** (A) Positions of npr-1 worms in an example frame. (B) Schematic explaining pair correlation function (S1), which counts the number of neighbors at a distance r, normalized by the expectation for a uniform distribution. (C) Example dendrogram from which hierarchical clustering branch length distributions (S2) can be calculated. (D) Pair correlation function for npr-1 (blue) and N2 (orange). Lines show mean and shaded area shows standard error of the mean. (E) Hierarchical clustering branch length distributions for npr-1 (blue) and N2 (orange). Histograms show relative frequency of inter-cluster distances (single linkage distance in agglomerative hierarchical clustering, equivalent to the branch lengths in the example dendrogram in (C)). (F) Mean standard deviation (S3) and kurtosis (S4) of the positions of worms, with the mean taken over frames sampled.
 
-## Agent-based model captures different aggregation phenotypes
+### Agent-based model captures different aggregation phenotypes
 
 To test whether the individual behavioral differences measured between npr-1 and N2 worms are sufficient to give rise to the observed differences in aggregation, we constructed a phenomenological model of worm movement and interactions. The model is made up of self-propelled agents (Figure 5A), and includes density-dependent interactions motivated by the experimental data, namely reversals at the edge of a cluster (Figure 5B) and a switch between movement at different speeds (Figure 5C). As a model of collective behavior this differs from those commonly considered in the literature, such as the Vicsek model (Vicsek et al., 1995) and its many related variants (Vicsek and Zafeiris, 2012; Yates et al., 2011). Such models typically feature attractive forces or align the direction of motion at ranges much longer than the size of the moving objects, and result in flocking or clustering with global alignment (Figure 5D), which we do not observe in our experimental data. In contrast, our model needs to produce dynamic, disordered aggregates (Figure 1B, Figure 2A and Video 2), and should primarily rely on short-range interactions that are motivated by behaviors measured in our data.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/43318/elife-43318-fig5-v2.jpg)
 
-**Figure 5.:** (A) Schematic of individual worm in the agent-based model. Each worm is made up of M nodes (here M = 18), connected by springs to enforce non-extensibility. Each node undergoes self-propelled movement, with the head node (red dot) undergoing a persistent random walk, and the rest of the nodes follow in the direction of the body. (B) Schematic of simulated reversals upon exiting a cluster. Each worm registers contact at the first and last 10% of its nodes within a short interaction radius. If contact is registered at one end but not the other, the worm is leaving a cluster and thus reverses with a Poisson rate dependent on the local density. (C) Schematic of density-dependent switching between movement speeds. Worms stochastically switch between slow and fast movement with Poisson rates kslow and kfast, which increase linearly and decrease exponentially with neighbor density, respectively. (D) Snapshots of simulations with commonly considered aggregation mechanisms, which produce unrealistic behavior for worm simulations, with flocking and highly aligned clustering. Arrows indicate the direction of movement of large clusters. (E) Phase portrait of model simulations, showing snapshots from the last 10% of each simulation, for different values of the two free parameters: density-dependence of the reversal rate and density-dependence of speed-switching (here kslow = kfast). Blue and orange panels highlight best fit for npr-1 and N2 data, respectively. (F) Summary statistics S (pair correlation, top) and 1S (hierarchical clustering, bottom) for the simulation which most closely matches the experimental data for the 2npr-1 and N2 strains (blue and orange panels in (E), respectively).
+**Figure 5.:** (A) Schematic of individual worm in the agent-based model. Each worm is made up of M nodes (here M = 18), connected by springs to enforce non-extensibility. Each node undergoes self-propelled movement, with the head node (red dot) undergoing a persistent random walk, and the rest of the nodes follow in the direction of the body. (B) Schematic of simulated reversals upon exiting a cluster. Each worm registers contact at the first and last 10% of its nodes within a short interaction radius. If contact is registered at one end but not the other, the worm is leaving a cluster and thus reverses with a Poisson rate dependent on the local density. (C) Schematic of density-dependent switching between movement speeds. Worms stochastically switch between slow and fast movement with Poisson rates kslow and kfast, which increase linearly and decrease exponentially with neighbor density, respectively. (D) Snapshots of simulations with commonly considered aggregation mechanisms, which produce unrealistic behavior for worm simulations, with flocking and highly aligned clustering. Arrows indicate the direction of movement of large clusters. (E) Phase portrait of model simulations, showing snapshots from the last 10% of each simulation, for different values of the two free parameters: density-dependence of the reversal rate and density-dependence of speed-switching (here kslow = kfast). Blue and orange panels highlight best fit for npr-1 and N2 data, respectively. (F) Summary statistics S1 (pair correlation, top) and S2 (hierarchical clustering, bottom) for the simulation which most closely matches the experimental data for the npr-1 and N2 strains (blue and orange panels in (E), respectively).
 
 The density-dependence of the reversal rate and speed switching is implemented as follows: The rate of reversals increases linearly with density with slope r’, which is a free parameter, and is thus given by rrev = r’ ρ. The reversal rate at zero density is zero as we ignored spontaneous reversals outside of clusters as these were only rarely observed under our experimental conditions (see Appendix 1 for further discussion of the model construction). This parameterization of the reversal rate may be unbounded, but we can prevent unrealistically high reversal rates for a given maximum worm number by choosing our prior distribution of the parameter r’. The rate of slowing down is similarly approximated as a linear function of density, with free parameter ks’, and is given by kslow = ks0+ks’ ρ, where ks0 is the slowing rate at zero-density. The rate of speeding up is given by kfast = kf0 exp[-kf’ ρ], where the exponential decay is chosen to ensure positivity of the rate, and kf0 is the rate at zero density. The rates of slowing down and speeding up at zero density (ks0, kf0) were obtained from published single-worm experimental data (Javer et al., 2018; Yemini et al., 2013).
 
 We initially ran a coarse parameter sweep, sampling uniformly in the two-dimensional parameter space associated with the density-dependence of reversals and speed switching. As a simplifying assumption, the density-dependence of the speeding-up and slowing-down rates was set equal (k’s = k’f = k’). The remaining parameters, r’ and k’, were varied to explore the global model behavior. This demonstrates that our model can capture different aggregation phenotypes from solitary movement to aggregation (Figure 5E) by varying just two free parameters, and provides important general insights. Inspection of the model simulations shows that each behavior alone (just reversals or slowing) does not give the same level of aggregation as when both parameters are modulated (Figure 5E), so that using both behavioral components proves important. Quantifying the aggregation and comparing it to the npr-1 experiment, however, highlights incomplete quantitative agreement with both the pair correlation function and hierarchical clustering distribution (Figure 5F). Thus, we reasoned additional interactions may be required to match the experimentally observed behaviors.
 
-## Adding a medium-range taxis interaction promotes stronger aggregation
+### Adding a medium-range taxis interaction promotes stronger aggregation
 
 To explore improvements in clustering, we extended the model by an attractive taxis interaction. Attraction should intuitively improve clustering, but we knew from our model exploration that an attractive potential between bodies produces undesirable cluster shapes (Figure 5D) and reasoned that a long-range interaction may be unrealistic (Figure 3—figure supplement 1). Thus, we include taxis towards neighboring worms and model worm movement as an attractive persistent random walk. The taxis contribution to a worm’s motile force has an overall strength controlled by parameter ft, with multiple nearby neighbors contributing cumulatively, weighted by 1/r, where r is the distance to a neighboring worm. Neighboring worms beyond a cut-off distance equal to the length of a worm have no contribution. Thus, this taxis interaction is acting at a natural intermediate length scale of our system (see Appendix 1 for details).
 
 The resulting extended model has four free parameters: density-dependent reversals (r′), speed-switching rates (ks′, kf′) and taxis (ft). To find the parameter combinations that best describe each strain, as well as the uncertainty in the parameter values, we used an approximate Bayesian inference approach (see Appendix 1). To increase the computational efficiency of our inference pipeline, we excluded infeasible regions of parameter space to reduce the prior distribution of parameters that we need to sample from (Figure 6—figure supplement 1) (see Appendix 1). We then selected the closest matching simulations from about 27,000 simulations for npr-1 and about 13,000 simulations for N2, equally weighting all four summary statistics. Results from our extended model (Figure 6A, Video 5 and Video 6) show markedly improved quantitative agreement with the experiments (Figure 6B). The approximated posterior distributions of the parameters (Figure 6C–D) show the most likely values of the parameters for each strain, as well as the uncertainty associated with the individual and joint marginal parameter distributions. In particular, to achieve npr-1-like aggregation, the reversal (r’) and taxis (ft) parameters need to be higher than for N2, albeit not too high. The density-dependence of the slowing rate (k’s) is only subtly different between the two strains, while the dependence of the speeding up rate (k’f) is greater in npr-1, but with broader uncertainty.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/43318/elife-43318-fig6-v2.jpg)
+
+**Figure 6.:** (A) Sample snapshot of the closest matching simulations for npr-1 (top) and N2 (bottom). (B) Summary statistics for npr-1 (orange) and N2 (blue): S1: pair correlation function; S2: hierarchical clustering distribution; S3: standard deviation of positions; S4: kurtosis of positions. Solid lines show the closest matching simulations; dashed lines show sample mean over the posterior distribution; and dotted lines show experimental means, with error bars showing standard deviation of 13 (npr-1) and 9 (N2) replicates. (C–D) Approximate posterior distribution of parameters for npr-1 (C) and N2 (D). Diagonal plots show marginal distribution of each parameter, off-diagonals show pairwise joint distributions. Parameters are: increase in reversal rate with density, r'; increase in rate to slow down, k's; decrease in rate to speed up, k'f; and contribution of taxis to motile force, ft.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/43318/elife-43318-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Marginal and joint prior parameter distributions for npr-1 (A) and N2 (B), that have been constructed from a set of pilot runs excluding any parameter combinations that lead to stable pairs for either strain, unstable clusters for npr-1, and stable clusters for N2. Remaining parameter values were used to construct the prior distributions via kernel-density estimation. See Appendix 1 for details.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/43318/elife-43318-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Simulation for parameters equal to the mean of the posterior distribution for the npr-1 strain (Figure 6C). (A1), Sample snapshot of simulation; (A2), Pair correlation statistic, averaged over ten simulations (solid line), and standard error of the mean (error bars), with experimental reference (dotted line, as in Figure 6B); (A3), Hierarchical clustering distribution, averaged over ten simulations (solid line), and standard error of the mean (error bars), with experimental reference (dotted line, as in Figure 6B); (A4), Combined score for model agreement with experiment (lower score is better) for summary statistics in (A1) and (A2), calculated as the difference in the logarithm of the summary statistics between experiment and simulation (see Appendix 1 for details). (B) As in (A) but with r' = 0 (no reversals). (C) As in (A) but with worms always moving at the faster speed. (D) As in (A) but with ft = 0 (no taxis towards other worms). (E) As in (A) but with η = 0 (no directional noise in movement). (F) As in (A) but with η = 0.005. This η represents directional noise 10 times lower than in (A). (G) As in (A) but with η = 0.08. This η represents higher noise than in (A), and roughly corresponds to the velocity autocorrelation measured for interacting worms in our experiments (Figure 6 – figure supplement 4A2-3). (H) As in (A) but with sinusoidal undulations in the direction of movement, with a frequency similar to that of npr-1 worms (see Appendix 1 for details).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/43318/elife-43318-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Orientational correlation quantifies the alignment of the pharynxes (experiments, (A1), or first three nodes (simulations, A2-4) between pairs of worms a given distance apart. A value of 1 corresponds to parallel alignment, and −1 to anti-parallel alignment. Solid lines show the average directional correlation and shaded area shows the 95% confidence interval. (A1), Experimental measurements; (A2), Simulation for parameters equal to mean of posterior distribution for npr-1 strain (Figure 6C); (A3), As in (A2) but with ft = 0 (no taxis towards other worms); (A4), As in (A2) but with worms always moving at the faster speed. (B) Velocity correlation quantifies the alignment of movement directions between pairs of worms a given distance apart. A value of 1 corresponds to worms moving in the same direction, and −1 to worms moving in opposite directions. Solid lines show the average directional correlation and shaded area shows the 95% confidence interval. (B1), Experimental measurements; (B2), Simulation for parameters equal to the mean of the posterior distribution for the npr-1 strain (Figure 6C); (B3), As in (B2) but with ft = 0 (no taxis towards other worms). (C) Correlation between velocity of a worm and the direction to each neighbor was calculated to quantify the degree of taxis towards other worms. A value of 1 corresponds to worms moving directly towards a neighbor, and −1 to directly moving away from a neighbor. Solid lines show the average directional correlation and shaded area shows the 95% confidence interval. (C1), Experimental measurements; (C2), Simulation for parameters equal to the mean of the posterior distribution for npr-1 strain (Figure 6C); (C3), As in (C2) but with r' = 0 (no reversals).
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/43318/elife-43318-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) Velocity autocorrelation. (A1), From experiments with body wall muscle-tracked single worms on circular food patches; (A2), From experiments with 40 worms, of which a few were body wall muscle-tracked to allow acquisition of longer trajectories; (A3), From simulated, non-interacting worms undergoing a persistent random walk for different parameter values of η, the strength of the angular noise. The dashed line shows a value of 0.23, corresponding approximately to the expected correlation for choosing angles at random, uniformly distributed between −3/4π and 3/4π, thus representing an almost complete reorientation with respect to the original direction of motion. Note that this level is reached after about 15 s for η = 0.05 and for single worms (A1), and after about 8 s for η = 0.08 and interacting worms (A2). (B) Relative reversal rates at various local densities from experiments (solid lines and shaded 95% confidence interval, same data as in Figure 3B) and from model equations for reversal rates, parameterized with the mean of posterior distribution (dotted lines). (C) Speed switching rates at various local densities. (C1), Ratio of worms moving at fast (up to 350 μm/s) versus slow (<100 μm/s for npr-1,<50 μm/s for N2) speeds as measured in experiments; (C2), Ratio of worms moving at fast versus slow (<100 μm/s for npr-1,<50 μm/s for N2) speeds as measured in simulations with posterior mean parameters, showing average over ten (npr-1) and eight (N2) simulations, error bars showing error in the mean. The disagreement may indicate that the exponential form of kf(ρ) (see Figure 5C and main text) is only a rough estimate. For (B) and (CC), inferred model parameters were converted to units of worms/mm2.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/43318/elife-43318-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** (A) Simulations with decreasing length of agents. (A1), Snapshot of simulation with posterior mean parameter values for npr-1, as in Figure 6—figure supplement 2A. Worms have M = 18 nodes and a total length of Lw = 1.2 mm; (A2), Modified model with M = 9 nodes and shorter worms (but same width) still produces aggregation, without readjusting other parameters; (A3), As in (A2) but with M = 6 nodes per worm and shorter total length; (A4), As in (A2) but with M = 5 nodes per worm and shorter total length; (A5), at M = 4 nodes per worm and corresponding length of Lw = 0.3211 mm, stable aggregates comprising all worms fail to form. At this worm length, the interaction radii of head and tail nodes start to overlap, and worms require a difference in contact between head and tail to initiate reversals in our simulations. (B) Simulations with volume exclusion. (B1), Snapshot of simulation where volume exclusion is enforced, such that worms cannot overlap (apart from themselves), without adjusting any other parameters. The number of nodes per worm has been increased to M = 45 to ensure sufficient overlap between nodes within a worm. Pair correlation function (B2) and hierarchical clustering distribution (B3) show that aggregate is spread out and less dense compared to experiments (dotted line). Solid lines show mean over three simulations and error bars show standard deviation.
+
+![Video 5.](https://cdn.elifesciences.org/articles/43318/elife-43318-video5.mp4.jpg)
+
+**Video 5.:** The video plays at 30x the normal speed.
+
+![Video 6.](https://cdn.elifesciences.org/articles/43318/elife-43318-video6.mp4.jpg)
+
+**Video 6.:** The video plays at 30x the normal speed.
+
 To address whether all three behaviors (reversals, speed changes, and taxis) were necessary for aggregation we ran additional simulations: starting from the mean of the posterior distribution for npr-1 (Figure 6C) as a reference, we removed individual model components by setting the corresponding parameters to zero. These perturbed simulations show that removing speed switching or taxis from the model disrupts aggregation, while removing reversals reduces the overall quantitative agreement with experimental data (Figure 6—figure supplement 2, B–D). In some cases, removing individual model behaviors also produced correlations of velocity and orientation between neighbors that are different from what we measure in experiments (Figure 6—figure supplement 3). Thus, we conclude that we have identified sufficient behavioral components for aggregation, and that these are also necessary to quantitatively match aggregation in npr-1 mutants.
 
 Searching for evidence of taxis in the experimental tracking data, we calculated the correlation between worm velocity and the vector towards nearby worms, and found this correlation to be nearly zero in both experiments and simulations for all distances up to 2 mm (Figure 6—figure supplement 3B1–2), which is larger than the size of a typical worm cluster. This may not be intuitive, and we suspect the reason is twofold: (a) the taxis effect is only a small influence on the instantaneous direction of the movement of a worm, compared to persistence and noise; and (b) we only tracked the pharynx in our experiments, and reproduced this restriction in our analysis of simulations, but the whole body of the worm is likely giving relevant cues to any chemical or mechanical taxis. Our methodology that enables us to track inside worm clusters therefore brings with it the caveat that there is unseen worm density that affects any potential taxis behavior, but which remains undetectable in our tracking. Thus, our analysis shows that a taxis behavior similar to our simulations may be present in experiments, even if it is difficult to detect with correlation analysis. We compared the other inferred parameters with experimental measurements: The reversal rate shows a similar increase with density that is greater for npr-1 than N2 (Figure 6—figure supplement 4B). The speed switching rates could only be compared indirectly by calculating the ratio of fraction of worms in fast vs. slow movement in experiments (Figure 6—figure supplement 4C1) and model simulations (Figure 6—figure supplement 4C2). The disagreement may indicate that the exponential form of kf(ρ) is only a rough approximation. However, aggregation in the model is not sensitive to speed switching rates, as shown by the broad posterior distributions for the inferred parameters (Figure 6C–D).
 
-## Extending the model with food-depletion captures dynamic swarming
+### Extending the model with food-depletion captures dynamic swarming
 
 Since we hypothesize that the swarming we observed at longer time scales may be explained as aggregation under food depletion conditions, we further extended the model to allow the local depletion of food. Food is initially distributed uniformly, and becomes depleted locally by worm feeding (see Appendix 1 for details). Absence of food suppresses the switch to slow speeds, thus causing worms to speed up when food is locally depleted. As a result, we hypothesize that worm clusters begin to disperse but reform on nearby food, leading to sweeping.
 
@@ -100,6 +172,10 @@ Selecting the parameter combination best matching the npr-1 strain (Figure 6) an
 ![Figure 7.](https://cdn.elifesciences.org/articles/43318/elife-43318-fig7-v2.jpg)
 
 **Figure 7.:** (A) Snapshots of aggregation simulation with food depletion. Background color shows relative food concentration with white indicating high food and black indicating no food. (B) Visualization of worm positions in (A) over time, showing cluster displacement. Note the periodic boundary conditions. (C) Cluster speed at various feeding rates relative to lawn thickness (other parameters equal to mean of posterior distribution for npr-1). The upward trend is expected: smaller lawn thickness leads to faster movement as worms run out of food quicker and need to re-form clusters on nearby food. Cluster speed is calculated the same way as in Figure 1D; error bars show median absolute deviation over five simulations. Dashed line indicates experimentally-derived median cluster speed (from Figure 1D) for comparison.
+
+![Video 7.](https://cdn.elifesciences.org/articles/43318/elife-43318-video7.mp4.jpg)
+
+**Video 7.:** Background color shows relative food concentration with white indicating high food and black indicating no food.The video plays at 30x the normal speed.
 
 ## Discussion
 
@@ -121,15 +197,109 @@ Our approach of decomposing aggregation into component behaviors through modelin
 
 ## Materials and methods
 
-## Animal maintenance and synchronization
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>N2</td>
+      <td>Caenorhabditis Genetics Centre</td>
+      <td>RRID:WB-STRAIN:N2</td>
+      <td>Laboratory reference strain.</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>DA609</td>
+      <td>Caenorhabditis Genetics Centre</td>
+      <td>RRID:WB-STRAIN:DA609</td>
+      <td>Genotype: npr-1(ad609)X.</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>OMG2</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Genotype: mIs12[myo-2p::GFP]II;  npr-1(ad609)X. Originated from CB5584 and DA609.</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>OMG10</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Genotype: mIs12[myo-2p::GFP]II. Originated from CB5584; outcrossed 6x to CGC N2.</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>OMG19</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Genotype: rmIs349[myo3p::RFP]; npr-1(ad609)X. Originated from AM1065 and DA609.</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>OMG24</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Genotype: rmIs349[myo3p::RFP]. Originated from AM1065; outcrossed 6x to CGC N2.</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>DR476</td>
+      <td>Caenorhabditis Genetics Centre</td>
+      <td>RRID:WB-STRAIN:DR476</td>
+      <td>Genotype: daf-22(m130)II.</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>AX994</td>
+      <td>Mario de Bono (MRC Laboratory of Molecular Biology)</td>
+      <td></td>
+      <td>Genotype: daf-22(m130)II; npr-1(ad609)X.</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Tierpsy Tracker (v 1.3)</td>
+      <td>Javer et al., 2018</td>
+      <td></td>
+      <td>Software available at ver228. github.io/tierpsy-tracker.</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>wormTrackingAnalysis</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Software available at github.com/ljschumacher/wormTrackingAnalysis.</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>sworm-model</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Software available at github.com/ljschumacher/sworm-model.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal maintenance and synchronization
 
 C. elegans strains used in this study are listed in Key Resources Table above. All animals were grown on E. coli OP50 at 20°C as mixed-stage cultures and maintained as described (Brenner, 1974). All animals used in imaging experiments were synchronized young adults obtained by bleaching gravid hermaphrodites grown on E. coli OP50 under uncrowded and unstarved conditions, allowing isolated eggs to hatch and enter L1 diapause on unseeded plates overnight, and re-feeding starved L1’s for 65–72 hr on OP50.
 
-## Bright field high-number swarming imaging
+### Bright field high-number swarming imaging
 
 The strain used here (Figure 1A and Video 1) is DA609. On imaging day, synchronized adults were collected and washed in M9 buffer twice before several hundred animals were transferred to a seeded 90 mm NGM plate using a glass pipette. After M9 is absorbed into the media, ten-hour time-lapse recordings were taken with a Dino-Lite camera (AM-7013MT) at room temperature (20°C) using the DinoCapture 2.0 software (v1.5.3.c) for maximal field of view. Two independent replicates were performed.
 
-## Bright field standard swarming imaging
+### Bright field standard swarming imaging
 
 Step-by-step protocol is available at dx.doi.org/10.17504/protocols.io.vybe7sn. All recordings from this dataset are listed in Supplementary file 2.
 
@@ -137,19 +307,19 @@ The strains used here (Figure 1B) are DA609 and N2. Prior to collecting the full
 
 Imaging commenced immediately following animal transfer in a liquid drop, on a custom-built six-camera rig equipped with Dalsa Genie cameras (G2-GM10-T2041). Seven-hour recordings with red illumination (630 nm LED illumination, CCS Inc) were taken at 25 Hz using Gecko software (v2.0.3.1), whilst the rig maintained the imaging plates at 20°C throughout the recording durations. Images were segmented in real time by the Gecko software. The recordings were manually truncated post-acquisition to retain aggregation and swarming dynamics only. The start time was defined as the moment when the liquid dried and the all the worms crawled out from the initial location of the drop, and the end time was when the food was depleted and worms dispersed with increased crawling speed. Twelve independent replicates were performed for each strain.
 
-## Bright field big patch swarming imaging
+### Bright field big patch swarming imaging
 
 Step-by-step protocol is available at dx.doi.org/10.17504/protocols.io.vyhe7t6. All recordings from this dataset are listed in Supplementary file 2.
 
 The experiments here (Figure 1—figure supplement 1) are identical to those in the bright field standard swarming imaging, except for two differences. First, the imaging plates were seeded with a 75 μL spot of diluted OP50 (OD600 = 0.38) and allowed to inoculate overnight at room temperature before being used for imaging the next day. Second, recordings were taken over 20 hr instead of seven. Eight independent replicates were performed for each strain.
 
-## Bright field pheromone imaging
+### Bright field pheromone imaging
 
 Step-by-step protocol is available at dx.doi.org/10.17504/protocols.io.vyie7ue. All recordings from this dataset are listed in Supplementary file 2.
 
 The strains used here (Figure 3—figure supplement 1) are DA609, N2, DR476, and AX994. Bacteria aliquots and imaging plates were prepared as in the bright field standard swarming imaging assay. For each imaging day, synchronized young adults were collected and washed in M9 buffer twice before 40 animals were transferred to a seeded imaging plate using a glass pipette. After M9 was absorbed into the media following worm transfer in liquid, imaging plates containing the animals were subjected to a gentle vibration at 600 rpm for 10 s on a Vortex Genie two shaker (Scientific Industries) to disperse animals and synchronize aggregation start across replicates. Imaging commenced 20 s after the vibration finish, using the same rig set-up as swarming imaging above, except one-hour recordings were taken. Images were segmented in real time by the Gecko software. At least eight independent replicates were performed for each strain. Automated animal tracking was performed post-acquisition using Tierpsy Tracker software (http://ver228.github.io/tierpsy-tracker/, v1.3), which we developed in-house (Javer et al., 2018). Images with were tracked with customized parameters to create centroid trajectories, 49-point worm skeletons, and a battery of features.
 
-## Fluorescence aggregation imaging
+### Fluorescence aggregation imaging
 
 Step-by-step protocol is available at dx.doi.org/10.17504/protocols.io.vzje74n. All recordings from this dataset are listed in Supplementary file 2.
 
@@ -157,11 +327,11 @@ The strains used here (Figure 2, Videos 2–4) are OMG2, OMG10, OMG19, and OMG24
 
 The data collection paradigm was identical to the bright field pheromone imaging assay in terms of bacteria aliquots, imaging plate preparation, and vibration implementation following animal transfer. The difference is that image acquisition was performed on a DMI6000 inverted microscope (Leica) equipped with a 1.25x PL Fluotar objective (Leica), a TwinCam LS image splitter (Cairn) with a dichroic cube (Cairn), and two Zyla 5.5 cameras (Andor) to enable simultaneous green-red imaging with maximal field of view. One-hour recordings were taken with constant blue (470 nm, 0.8A) and green (cool white, 1.4A) OptoLED illumination (Cairn), and images were acquired with 100 ms exposure at 9 Hz using Andor Solis software (v4.29.30005.0). The microscopy room was maintained at 21°C throughout the recording durations. Ten or more independent replicates were performed for each strain. We were able to reproduce stereotyped aggregation dynamics across replicates under our experimental paradigm (Figure 1—figure supplement 2). Image segmentation and automated animal tracking was performed post-acquisition using Tierpsy Tracker software (v1.3) with customized parameters, to create centroid trajectories, obtain two-point skeleton from pharynx-labeled individuals and 49-point midline skeletons from body wall muscle-marked ones, and extract various features. For body wall muscle-marked animals, trajectories were manually joined where broken due to tracking errors.
 
-## Fluorescence aggregation tracking data analysis
+### Fluorescence aggregation tracking data analysis
 
 The code for tracking data analysis is available at https://github.com/ljschumacher/wormTrackingAnalysis (Schumacher et al., 2019; copy archived at https://github.com/elifesciences-publications/wormTrackingAnalysis).
 
-Tracked blobs were filtered for minimum fluorescence intensity and maximum area, to exclude any larvae and tracking artifacts, respectively, which appeared on the occasional plate. Local worm densities around each individual were calculated using k-nearest neighbor density estimation, where the density is k divided by the area of a circle encompassing the k-th nearest neighbor. We chose k=6≈ √N and verified based on visual assessment that the overall distribution of local densities changes very little with increasing k.
+Tracked blobs were filtered for minimum fluorescence intensity and maximum area, to exclude any larvae and tracking artifacts, respectively, which appeared on the occasional plate. Local worm densities around each individual were calculated using k-nearest neighbor density estimation, where the density is k divided by the area of a circle encompassing the k-th nearest neighbor. We chose $k=6≈\sqrtN$ and verified based on visual assessment that the overall distribution of local densities changes very little with increasing k.
 
 Reversals were detected based on a change of sign of speed from positive to negative, which was calculated from the dot-product of the skeleton vector (of the pharynx) and the velocity vector, and smoothed with a moving average over half a second. We only counted reversals that were at least 50 µm in length, and that moved at least half a pixel per frame before and after the reversal. Reversal events thus detected where binned by their local density. For each density bin, reversal rate was estimated as the number of events divided by the time spent in forward motion for that bin. The variability was estimated using a subsampling bootstrap: the reversal rate was estimated 100 times, sampling worm-frames with replacement, and estimating mean and standard deviation.
 

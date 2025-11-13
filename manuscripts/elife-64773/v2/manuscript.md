@@ -32,45 +32,77 @@ In this study, we performed a time course analysis of the intra-nervous vascular
 
 ## Results
 
-## The INV develops rapidly from embryonic day E16
+### The INV develops rapidly from embryonic day E16
 
 To define when the first blood vessels penetrate the nerves and mature into vasa nervorum, sciatic nerves were dissected and analyzed for the presence of blood vessels at successive stages starting from embryonic day 15 (E15). At this stage arteries and nerves start to be aligned in the skin (Mukouyama et al., 2002). Endothelial cells were visualized using CD31 marker in order to assess the level of nerve vascularization. At E15.5, the extrinsic artery of the primitive sciatic nerve is aligned with axons (TUJ-1 staining). However, no blood vessels were observed inside or surrounding the nerve (Figure 1A). At E16, we noticed new blood vessels emerging from the aligned extrinsic artery to form a peri-nervous vascular plexus (Figure 1B, arrowhead). Developing from this latter, numerous angiogenic sprouts invade the inside part of the immature nerve, starting to form the intra-nervous vascular network (INV) as observed in the optical section of the proximal part of the nerve (Figure 1C, arrowhead). However, at E16, in the distal part no blood vessels were found inside the nerve (Figure 1D), suggesting a proximo-distal gradient of nerve invasion by blood vessels. Soon after, at E16.5 (Figure 1E) and E17.5 (Figure 1F), we found more blood vessels inside the nerve. Later, at E19, many angiogenic sprouts are still found inside a dense vascular plexus, implying that angiogenesis is still ongoing (Figure 1G and H, arrowheads). At birth (P0) (Figure 1I), angiogenic sprouts were also found inside the nerve (Figure 1J, arrowheads). Finally, at P2 and P5, very few angiogenic sprouts were observed (Figure 1K and L). This level of angiogenesis was quantified by counting the number of angiogenic sprouts found inside the nerve at different stages during peri-natal development. We found that the number of angiogenic sprouts per mm2 significantly decreases throughout development, between E19 and P0 and between P0 and P2, to reach a number of almost zero angiogenic sprout at P5 (Figure 1M).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/64773/elife-64773-fig1-v2.jpg)
 
-**Figure 1.:** (A) Whole-mount immunofluorescence staining of sciatic nerve showing axons (TUJ-1, green) and blood vessels (endothelial cells expressing CD31, magenta) at embryonic day E15.5. (B) Snapshot of a 3D view of primitive sciatic nerve at E16. New blood vessels (CD31, magenta) emerging from the aligned artery (arrowhead) starting to form the peri-nervous vascular system. (C) Orthogonal view of the proximal part of the nerve showing blood vessels starting to form the intra-nervous vasculature (arrowhead) and of the distal part (D) showing no intra-nervous blood vessels. (E) Close-up view of blood vessels inside a sciatic nerve at E16.5, showing several angiogenic sprouts with their filopodias (arrowhead). (F) INV of a sciatic nerve at E17.5. (G) INV of a sciatic nerve at E19, showing active angiogenesis with several angiogenic sprouts with their filopodias (arrowheads). (H) High-resolution image of angiogenic tip cells. (I) INV of a sciatic nerve at P0, with angiogenesis still ongoing (J), as angiogenic sprouts displaying filopodias are visible (arrowhead). (K, L) At P2 and P5, almost no angiogenic sprouts are visible. Around six nerves from six mice were analyzed per developmental stage. (M) Quantification of the number of angiogenic sprouts per 1 mm2 throughout peri-natal development. n = 3–5 animals for each stage, one or two nerve(s) per animal, mean ± SEM, one-way ANOVA and Tukey’s multiple comparisons test, ****p < 0.0001. Scale bars are 50 μm for all images except for (J), the scale bar is 20 μm. Detailed values are presented in Figure 1—source data 1.Figure 1—source data 1.
+**Figure 1.:** (A) Whole-mount immunofluorescence staining of sciatic nerve showing axons (TUJ-1, green) and blood vessels (endothelial cells expressing CD31, magenta) at embryonic day E15.5. (B) Snapshot of a 3D view of primitive sciatic nerve at E16. New blood vessels (CD31, magenta) emerging from the aligned artery (arrowhead) starting to form the peri-nervous vascular system. (C) Orthogonal view of the proximal part of the nerve showing blood vessels starting to form the intra-nervous vasculature (arrowhead) and of the distal part (D) showing no intra-nervous blood vessels. (E) Close-up view of blood vessels inside a sciatic nerve at E16.5, showing several angiogenic sprouts with their filopodias (arrowhead). (F) INV of a sciatic nerve at E17.5. (G) INV of a sciatic nerve at E19, showing active angiogenesis with several angiogenic sprouts with their filopodias (arrowheads). (H) High-resolution image of angiogenic tip cells. (I) INV of a sciatic nerve at P0, with angiogenesis still ongoing (J), as angiogenic sprouts displaying filopodias are visible (arrowhead). (K, L) At P2 and P5, almost no angiogenic sprouts are visible. Around six nerves from six mice were analyzed per developmental stage. (M) Quantification of the number of angiogenic sprouts per 1 mm2 throughout peri-natal development. n = 3–5 animals for each stage, one or two nerve(s) per animal, mean ± SEM, one-way ANOVA and Tukey’s multiple comparisons test, ****p < 0.0001. Scale bars are 50 μm for all images except for (J), the scale bar is 20 μm. Detailed values are presented in Figure 1—source data 1.
 
-## Blood vessels inside the nerve mature during post-natal development, undergoing arterial differentiation and pericytes recruitment
+### Blood vessels inside the nerve mature during post-natal development, undergoing arterial differentiation and pericytes recruitment
 
 To be fully functional, blood vessels have to be mature and organized as a hierarchical vascular network. Endothelial cells of arterioles specifically express the protein connexin-40 (Cx-40), as observed at P0 (Figure 2B). These branches are also covered by smooth muscles cells (SMC) to control their diameter and adapt the blood flow. The extrinsic artery, expressing Cx-40, visualized by GFP expression, and covered by SMC (Figure 2A, arrowhead) is divided into continuous ascending and descending arterioles to directly supply each region of the nerve and ensure arterial blood flow to the entire nerve. Pre-existing blood vessels of the INV also undergo arterial differentiation, as observed in sciatic nerve at P5. Endothelial cells expressing Cx-40 in an isolated manner were visible (Figure 2C, arrowheads), suggesting that new arterial branches undergo differentiation inside the nerve. Notably, arterialization of the penetrating vessels is still ongoing as some parts are already covered by SMC whereas newly differentiated arteries have still not recruited SMC (Figure 2A). The Cx-40/CD31 integrated density was higher in nerves at P0 compared to P5 (Figure 2D). Moreover, pericytes, expressing the protein NG2 and covering endothelial cells, are important for maintenance of the blood-nerve barrier and are able to contract to change the capillary diameter (Bergers and Song, 2005). At P0, numerous endothelial cells of the INV are already covered by pericytes (Figure 2E). Some of these cells cover new blood vessel branching (Figure 2F) as it has been already reported that pericytes are critical for angiogenesis (Bergers and Song, 2005). These pericytes at P0 have an elongated shape and their coverage is relatively sparse compared to the pericytes observed at P10 (Figure 2G). Blood vessel coverage by pericytes NG2+ cells increase between P5 and P10 (Figure 2H) suggesting maturation and stabilization of the new blood vessels whereas angiogenesis is almost stopped. Thus, at birth, INV already displays vessel wall maturation that will remain during nerve post-natal morphogenesis.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/64773/elife-64773-fig2-v2.jpg)
 
-**Figure 2.:** (A) Whole-mount immunofluorescence staining of a sciatic nerve from a connexin-40 (Cx-40)-GFP reporter mouse at P0 showing an artery composed of endothelial cells expressing the protein Cx-40 (in green) and covered by smooth muscle cells (stained in magenta, smooth muscle actin staining [SMA]). This artery has invaded the sciatic nerve (axons expressing TUJ-1, blue). (B) INV at P0 is marked in magenta and endothelial cells expressing the protein Cx-40 are in green. (C) At P5, some endothelial cells express the protein Cx-40 (white arrowheads) and new arterial branches are differentiating (empty arrowheads). (D) Quantification of the ratio of Cx-40-GFP-positive endothelial cells at P0 and P5. N = 4–7 nerves from four to seven different animals; mean ± SEM, Mann-Whitney test. (E) NG2-Dsred mice were used to observe pericytes (magenta) covering endothelial cells (CD31, green) of a P0 sciatic nerve. (F) Close-up view of P0 sciatic nerve vasculature showing pericytes covering new blood vessel branching (arrowheads). (G) Pericytes coverage of the INV at P10. Scale bars are 50 μm for A, B, C, E, and 20 μm for D. Around six nerves were analyzed per developmental stages. (H) Quantification of NG2-DsRed-positive cells covering blood vessels at P0, P5, and P10. N = 3–4 nerves from three to four different animals; mean ± SEM, one-way ANOVA and Tukey’s multiple comparisons test, ***p < 0.001. Detailed values for C and G are presented in Figure 2—source data 1.Figure 2—source data 1.
+**Figure 2.:** (A) Whole-mount immunofluorescence staining of a sciatic nerve from a connexin-40 (Cx-40)-GFP reporter mouse at P0 showing an artery composed of endothelial cells expressing the protein Cx-40 (in green) and covered by smooth muscle cells (stained in magenta, smooth muscle actin staining [SMA]). This artery has invaded the sciatic nerve (axons expressing TUJ-1, blue). (B) INV at P0 is marked in magenta and endothelial cells expressing the protein Cx-40 are in green. (C) At P5, some endothelial cells express the protein Cx-40 (white arrowheads) and new arterial branches are differentiating (empty arrowheads). (D) Quantification of the ratio of Cx-40-GFP-positive endothelial cells at P0 and P5. N = 4–7 nerves from four to seven different animals; mean ± SEM, Mann-Whitney test. (E) NG2-Dsred mice were used to observe pericytes (magenta) covering endothelial cells (CD31, green) of a P0 sciatic nerve. (F) Close-up view of P0 sciatic nerve vasculature showing pericytes covering new blood vessel branching (arrowheads). (G) Pericytes coverage of the INV at P10. Scale bars are 50 μm for A, B, C, E, and 20 μm for D. Around six nerves were analyzed per developmental stages. (H) Quantification of NG2-DsRed-positive cells covering blood vessels at P0, P5, and P10. N = 3–4 nerves from three to four different animals; mean ± SEM, one-way ANOVA and Tukey’s multiple comparisons test, ***p < 0.001. Detailed values for C and G are presented in Figure 2—source data 1.
 
-## INV density decreases during post-natal development
+### INV density decreases during post-natal development
 
 Post-natal maturation of the peripheral nerves includes the production of the myelin sheaths by SC. Myelination starts at birth, continues for about 2–3 weeks, and increases both nerve size and caliber (Jessen and Mirsky, 2005). We hypothesized that the growth of the nerve would provoke an increase of the INV during post-natal development to adapt the nerve supply in oxygen and nutrients. To test this hypothesis, we analyzed CD31 immunoreactivity in sciatic nerves cross sections from P0 (Figure 3A) to young adult stage (8-week-old mice) (Figure 3B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/64773/elife-64773-fig3-v2.jpg)
 
-**Figure 3.:** (A) Immunofluorescence staining of sciatic nerve’s transversal sections from a P0 mouse and from a young adult mouse (B) showing blood vessels (CD31, magenta) and axons (TUJ-1, green) inside the nerve. (C) Quantification of the surface area of nerves’ cross section, from P0 to young adult stage (around P54). The gray box represents the myelination period from P0 to P15. (D) Intra-nervous CD31 density expressed as percentage of total nerve cross section area. Only the blood vessels inside the nerve were counted. Blood vessel’s density decreases significantly from P0 to P10 and stabilizes. n = 3–5 animals for each stage, one nerve per animal and >50 cross sections were analyzed per nerve, mean ± SEM, the comparison was made between all stages (two by two using multiple comparison) and only the significant differences were showed: Kruskal-Wallis and Dunn’s multiple comparisons test, *p < 0.05, **p < 0.01, only. Detailed values are presented in Figure 3—source data 1.Figure 3—source data 1.
+**Figure 3.:** (A) Immunofluorescence staining of sciatic nerve’s transversal sections from a P0 mouse and from a young adult mouse (B) showing blood vessels (CD31, magenta) and axons (TUJ-1, green) inside the nerve. (C) Quantification of the surface area of nerves’ cross section, from P0 to young adult stage (around P54). The gray box represents the myelination period from P0 to P15. (D) Intra-nervous CD31 density expressed as percentage of total nerve cross section area. Only the blood vessels inside the nerve were counted. Blood vessel’s density decreases significantly from P0 to P10 and stabilizes. n = 3–5 animals for each stage, one nerve per animal and >50 cross sections were analyzed per nerve, mean ± SEM, the comparison was made between all stages (two by two using multiple comparison) and only the significant differences were showed: Kruskal-Wallis and Dunn’s multiple comparisons test, *p < 0.05, **p < 0.01, only. Detailed values are presented in Figure 3—source data 1.
 
 As expected, the caliber of the sciatic nerve gradually increases during post-natal development by a factor of 10 from P0 to young adulthood (Figure 3C). Area density of CD31 immunoreactivity was quantified as percentage of total nerve area and appears to vary over time (Figure 3D). The intra-nervous CD31-positive area covers around 8% of the nerve at P0. This value decreases after birth significantly at P10, to reach a stable coverage of approximately 2% of the nerve, and does not change later at young adult stage. This result corroborates the data we obtained about the progressively decreasing number of angiogenic tip cells during post-natal development (Figure 1I). Interestingly, this decrease in INV rate correlates with the myelination period during the 2 weeks after birth (gray box, Figure 3D).
 
-## Ablation of myelinating SC leads to an abnormal vascularization of the sciatic nerve
+### Ablation of myelinating SC leads to an abnormal vascularization of the sciatic nerve
 
 As nerve vascularization density decreases during post-natal development and while myelin is produced and since the majority of cells within the sciatic nerve are SC (∼70%) (Stierli et al., 2018), we wondered if myelinating SC could affect nerve vascularization. It has been previously described that SC promote endothelial cells migration in vitro (Ramos et al., 2015). To address in vivo the question of whether these cells have a role in the development of the INV, we used a transgenic mouse line in which genetic ablation of SCP was provoked. The transcription factor KROX20, expressed by immature SC, represents the master regulator of myelin genes and thus controls myelination formation and maintenance (Topilko et al., 1994). We crossed Wnt1-Cre/+ mice (Joseph et al., 2004) with Krox20GFP(DT)/+ mice (Vermeren et al., 2003) to obtain Wnt1-Cre;Krox20GFP(DT)/+ pups in which the A chain of the diphtheria toxin (DT) is only expressed upon cre-mediated recombination, to lead to a specific death of immature SC expressing Krox20 around E15/E16. In fact, at E19, there is significantly less SC (expressing SOX10) in sciatic nerves from Wnt1-Cre;Krox20GFP(DT)/+ mutant mice (Figure 4—figure supplement 1A, A', B and B') and at P5, less myelinating SC (normally expressing S100β protein) (Figure 4—figure supplement 1C and C'). These animals survive only few days after birth. Therefore, we analyzed the level of vascularization of sciatic nerves at P5. As expected, the sciatic nerves of Wnt1-Cre;Krox20GFP(DT)/+ mice were thinner as compared to Wnt1-Cre control littermates (Figure 4A and B). This was due to the lack of SC and their myelin sheaths, which normally considerably increase the nerve’s caliber. Furthermore, the INV network is disrupted, denser, and more anastomotic, resembling embryonic immature plexus (Figure 4C). To further analyze the consequences of the SC ablation on the INV, we performed 3D reconstruction of this vasculature in toto (Figure 4D and E). We quantified the total length of the vasculature tree in blue and the number of blood vessel branching points in red. These values were normalized to the nerve size which was found to be significantly different between the two groups (Figure 4F). Sciatic nerves from mutant pups display an increased total length of blood vessel network (Figure 4G) with more branches (Figure 4H) as compared to the control littermates. To make sure that the phenotype we observed was not a consequence of decreased nerve size, we also analyzed the INV of sciatic nerves from Wnt1-Cre;Krox20GFP(DT)/+ mice but at P0 (at the beginning of myelination) (Figure 4—figure supplement 2A and A'). At this stage, nerve size is not different between the two groups, whereas vasculature is disrupted and more dense in the sciatic nerves of Wnt1-Cre;Krox20GFP(DT)/+mice (Figure 4—figure supplement 2B and B'). Altogether, these results suggest that myelinating SC could control INV development and maturation probably by negatively controlling angiogenesis in order to ensure a proper amount of blood vessels inside the nerve.
 
-## Hypervascularization of the sciatic nerve following inhibition of myelin production
+![Figure 4.](https://cdn.elifesciences.org/articles/64773/elife-64773-fig4-v2.jpg)
+
+**Figure 4.:** (A) Whole-mount immunofluorescence staining of sciatic nerve from control Wnt1-Cre mouse at P5, the blood vessels are stained with CD31 and shown in red. (B) Vasculature of a sciatic nerve from a Wnt1-Cre;Krox20GFP(DT)/+ mouse at P5. (C) Close-up view showing the disruption of the blood vessels’ organization. (D, E). Imaris 3D reconstruction of sciatic nerve vasculature in blue, the branching points are shown in red. (F) Quantification of sciatic nerve area. (G) Quantification of total blood vessel length/nerve area. (H) Number of branching points per 1 mm of blood vessel (n = 4–5 per group, graphs show mean ± SEM, Mann-Whitney test, *p < 0.05). Scale bars are 50 μm for A, B, D, and E and 20 μm for C. Detailed values are presented in Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64773/elife-64773-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, A’) Whole-mount immunofluorescence staining of sciatic nerves from control Wnt1-Cre mouse and Wnt1-Cre;Krox20GFP(DT)/+ mutant at E19, SC expressing SOX10 are visible in white. (B) Quantification of the % Sox10+ area after thresholding of the signal (Fiji). N = 3 nerves from three different embryos for each group; mean ± SEM, unpaired t-test with Welch’s correction, *p < 0.05. (B’) Quantification of the nerve size. N = 3 nerves from three different embryos for each group; mean ± SEM, unpaired t-test with Welch’s correction. (C, C’) Whole-mount immunofluorescent staining of sciatic nerves from control Wnt1-Cre mouse and Wnt1-Cre;Krox20GFP(DT)/+ mutant at P5, myelinating SC expressing S100β are labelled in white. Scale bars are 50 μm for A and A’, 50 μm for C and C’. Detailed values for B and B’ are presented in Figure 4—source data 1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64773/elife-64773-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A, A’) Whole-mount immunofluorescence staining of a sciatic nerves from a control Wnt1-Cre mouse and from a Wnt1-Cre;Krox20GFP(DT)/+ mouse at P0, the blood vessels are stained with CD31 and shown in white. Scale bars are 50 μm. (B) Quantification of the sciatic nerve area (Fiji). N = 4 different nerves from four different animals for each group. Mean ± SEM, unpaired t-test with Welch’s correction. (B’) Quantification of the area occupied by blood vessels (intensity thresholding of the signal from CD31 staining). N = 4 nerves from four different animals for each group; mean ± SEM, unpaired t-test with Welch’s correction, **p < 0.01. Detailed values for B and B’ are presented in Figure 4—figure supplement 2—source data 1.
+
+### Hypervascularization of the sciatic nerve following inhibition of myelin production
 
 To decipher the role of the myelin sheath, independently of SC, we used the Krox20Cre/Fl mouse line. As previously described, in these mice, Krox20 from the floxed allele is expressed until enough Cre recombinase accumulates resulting in the delayed inactivation of the Krox20 gene in myelinating SC (Decker et al., 2006). Indeed, Krox20 gene is normally activated at E15 but the protein is detectable shortly after birth (Figure 5—figure supplement 1A). Thus, general organization of the mutant sciatic nerve, including proportion of iSC, is not affected between E15.5 and E18.5. At P1, Krox20 protein is fairly expressed but there is no difference between Krox20Cre/Fl mice and wild-type (WT) littermates (Decker et al., 2006). The level of Krox20 protein progressively decreases in the mutant (50% at P4) to become undetectable at P28 and beyond. Thus, during embryonic period of the nerve development, in particular at the stages when INV is initiated (E16.5), sciatic nerve remains unaffected. Therefore, development of the sciatic nerve of Krox20Cre/Fl mice is unaffected until birth and thus early angiogenesis events leading to INV formation should not be affected in the mutant. Krox20 inactivation blocks SC at an early stage of their differentiation, progressively prevents the formation of myelin sheaths (Figure 5A) and this phenotype is maintained through the 3 weeks of survival observed for those mice (Decker et al., 2006). Indeed, Krox20Cre/Fl mutants survive around 20 days after birth and show tremors. Besides a complete absence of the myelin sheath, Krox20 deletion in promyelinating Schwan cells does not alter any other property in the post-natal sciatic nerve, with a normal axonal density, as already described (Decker et al., 2006). We chose to analyze sciatic nerves before lethality, at P19, so that the sciatic nerves from control pups are fully myelinated whereas the ones from Krox20Cre/Fl mice are devoid of myelin. The vasculature of sciatic nerves from control and mutant mice were compared using CD31 staining on whole-mount preparations. Interestingly, sciatic nerves of mutant mice appear to be more densely vascularized compared to control littermates (Figure 5B and B’). Thus, we performed 3D reconstruction of the INV (Figure 5C and C’). As compared to control mice, quantifications revealed a similar nerve size (Figure 5D) but higher blood vessel total length (Figure 5E) and higher number of branching points in mutant’s sciatic nerves (Figure 5F). We then aimed to better characterize vascular network defects and assessed maturation and permeability of the INV. Endothelial cells composing the INV express claudin-5, a tight junction protein, important for the acquisition of a barrier property (Peltonen et al., 2013). At P18, in sciatic nerves from control mice, claudin-5 staining colocalized with CD31 staining in almost all blood vessels (Figure 5G). In sciatic nerves from Krox20Cre/Fl mice, claudin-5 is poorly expressed by endothelial cells as almost all blood vessels branches are claudin-5 negative (Figure 5G’, arrowheads). Altogether, those data suggest that myelin sheath controls sciatic nerve vascularization by inhibiting angiogenesis and by limiting vascular rate and maturation.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/64773/elife-64773-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic illustrating Krox20 knock-out leading to myelination inhibition. (B, B’) Whole-mount immunofluorescence staining of sciatic nerves from a Krox20Cre/+ control mouse and from a Krox20Cre/Fl mouse at P19, blood vessels are stained in red. (C, C’) Imaris 3D reconstruction of sciatic nerve vasculature in blue, the branching points are in magenta. (D) Quantification of the sciatic nerves area in μm2. (E) Quantification of the length of the entire vasculature in μm. (F) Quantification of the number of branching points per 1 mm of blood vessel (n = 5 different nerves from five different animals, per group; graphs show mean ± SEM, Mann-Whitney test, **p < 0.01). (G, G’) Longitudinal sections of sciatic nerve dissected Krox20Cre/+and Krox20Cre/Fl, at P18. Endothelial cells expressing CD31 are in green and claudin-5 in magenta. Dotted lines represent the borders of the nerve section. Some vessel branches do not express claudin-5 (arrowheads) (H, H’) Longitudinal sections of sciatic nerves dissected from a Krox20cre/+ mouse and Krox20cre/Fl, at P17. Cells in proliferation express the protein Ki67 (magenta) and blood vessels are in green. (I) Quantification of Ki67-positive cells per nerve section. n = 4 animals per group, more than 25 sections were quantified per nerve, graph shows means ± SEM, Mann-Whitney test, *p < 0.05. (J) SOX10 and Ki67 staining on sciatic nerve longitudinal sections. Scale bars are 100 μm. Detailed values are presented in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64773/elife-64773-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Krox20 Western blotting analysis in protein extracts prepared from sciatic nerves from wild-type (WT) mice at E18, P1, P2, and P8. The red box shows the band corresponding to Krox20 expression at E18 and P2. Note the absence of band at E18 and a clear band at P2. MW: molecular weight.
+
 Interestingly, the number of proliferating cells expressing Ki67 is considerably higher in the unmyelinated sciatic nerves (Figure 5H,H',I). As reported before (Topilko et al., 1994), these proliferating cells are SC, as they specifically express the protein SOX10 (Figure 5J). Indeed, activation of the genes controlling myelination, such as KROX20, induces the arrest of the proliferation state of SC in favor of differentiation and production of myelin sheath (Salzer, 2015).
 
-## The guidance molecule Netrin-1 and the receptor UNC5B are involved in INV formation
+### The guidance molecule Netrin-1 and the receptor UNC5B are involved in INV formation
 
 We next investigated the molecular control of INV development at embryonic stages. Netrin-1 is a guidance molecule known to control axonal guidance and also angiogenesis (Boyer and Gupton, 2018; Bradford et al., 2009; Park et al., 2004). Studies have shown that it can also be implicated in nerve regeneration, stimulating axonal and blood vessels regrowth (Dun and Parkinson, 2017; Madison et al., 2000). Therefore, we asked whether Netrin-1 could regulate sciatic nerve vascularization during normal development. As we described, vascularization of sciatic nerves is still ongoing around birth, involving active angiogenesis. First, we used Ntn1lacZ/+ knock-in mice to report Netrin-1 protein expression in the nerve. At E16, β-galactosidase expression was found in different regions of the embryo’s limb, but not inside the sciatic nerve (Figure 6—figure supplement 1A). At E17, a stage during which new blood vessels are attracted into the endoneurial part of the nerve, we noticed that β-galactosidase expression was found inside and surrounding the nerve (Figure 6—figure supplement 1B and B’). At P2, β-galactosidase activity, reporting Netrin-1 expression, was found close to blood vessels, in areas compatible with a potential role of Netrin-1 in endothelial cell guidance (Figure 6A). Single cell transcriptomic analysis of the different cell types constituting sciatic nerves showed that Ntn1 is in fact expressed by epineurial and perineurial cells and proliferating fibroblast-like cells (Gerber et al., 2021). We confirmed at P0 that expression of β-galactosidase (reporting Netrin-1 expression) was found at the level of FAP+ cells (fibroblast activation protein) located at the epi-perineurial cell layer (Figure 6B and Figure 6—figure supplement 1C). Using FISH (fluorescent in situ hybridization), we also found Ntn1 mRNA expressed by epi-perineural cells expressing Fap mRNA (Figure 6C, C' and Figure 6—figure supplement 1D).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/64773/elife-64773-fig6-v2.jpg)
+
+**Figure 6.:** (A) Whole-mount X-Gal staining (showed in green) of sciatic nerve from Ntn1Lacz/+ mouse at P2 and vasculature is showed in magenta (CD31). (B) Immunofluorescence staining of β-galactosidase (magenta) and FAP (fibroblast-activating protein, green) on transversal cryo-section of sciatic nerve from Ntn1Lacz/+ mouse at P0. Nuclei are stained with Hoechst. (C, C’) Fluorescent in situ hybridization (FISH) of Ntn1 (magenta) and Fap (green) mRNA on longitudinal section of sciatic nerve from a wild-type (WT) mouse at P0 (C) and nuclei are labelled with Dapi. Close-up view of Ntn1 high expression by epi-perineural cells expressing Fap (C’). (D) Quantification of area (from neurofilament [NF] staining) of sciatic nerves from Ntn1+/+ and Ntn1LacZ/LacZ embryos at E17.5. (E) Quantification of the intra-nervous CD31-positive total area after images thresholding, showing that vascularization is significantly reduced in mutant embryos. (F, F’) Top left corner: E17.5 embryos (the dotted line represents the dissected limb containing the primitive sciatic nerve) and 3D view from Imaris software of the embryo’s limb, after CD31 (magenta) and NF (green) staining and clearing protocol (iDISCO+). Dotted lines delimit the immature sciatic nerve. (G, G’) Slice view of the cleared limb allowing the observation of the blood vessels inside the sciatic nerve. (H) Quantification of nerve area (from NF staining). (I) Quantification of intra-nervous CD31-positive area, using optical slices from cleared E17.5 embryos’ limbs. n = 4–5, mean ± SEM, Mann-Whitney test, *p < 0.05. (J) Normalized expression of mRNA coding cd31 (endothelial marker) and Netrin-1 receptors: unc5b, neo1, and dcc by isolated endothelial cells from sciatic nerves from P2 mice. N = 5 tubes containing around 1.17 × 104 cells purified from 10 pooled sciatic nerves. (K, K’) FISH of unc5b (magenta) and cd31 (green) mRNA on longitudinal section of sciatic nerve from WT mouse at P0 (K). Close-up view of blood vessel expressing unc5b and cd31 mRNA (K’). (L) Immunofluorescence staining of UNC5B (magenta) and CD31 (green) on longitudinal section of sciatic nerve from WT mouse at P0. (M) Quantification of the intra-nervous CD31-positive total area from mice 1 day after they were injected with anti-UNC5B antibodies at P0 (dose = 4 μg/g of body weight). N = 10 and 11 pups were analyzed. Scale bar is 20 μm for A, B, and C’, 50 μm for C, K, K’, and L, 200 μm for F and F’. Detailed values are presented in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/64773/elife-64773-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Slice view of a cleared limb from an Ntn1LacZ/+ embryo at E16. The sciatic nerve is labelled in green (Tuj-1) and the β-galactosidase in red. (B, B’) Slice view of a cleared limb from an Ntn1LacZ/+ embryo at E17. The sciatic nerve is labelled in green (Tuj-1) and the β-galactosidase in red. (C) Quantification of B-Gal+/FAP+ ratio on sciatic nerve cross sections from P0 Ntn1Lacz/+ mice. N = 3 nerves from three mice. Graph shows mean ± SEM. (D) Quantification of Ntn1 FISH on longitudinal sections of sciatic nerves from P0 wild-type (WT) mice. The number of Ntn1+ dots per mm2 in epi-perinerve and endonerve was compared. N = 5 nerves from five mice. Graph shows mean ± SEM, Mann-Whitney test. (E, E’) Maximum intensity projection of selected Z planes (containing sciatic nerve) from images of cleared paws from Ntn1LacZ/LacZ hypomorphs and Ntn1+/+ control embryos at E16. Axons are labelled in green (Tuj-1) and the dotted lines represent the section analyzed. (F) Quantification of the average diameter of sciatic nerve from Ntn1LacZ/LacZ hypomorphs and Ntn1+/+ control embryos (Fiji). N = 5 different nerves from five different embryos for each group. Mean ± SEM, unpaired t-test with Welch’s correction. (G, G’) Whole-mount immunofluorescence staining of CD31 showing blood vessels in white of sciatic nerves from a control Ntn1+/+ and from an Ntn1LacZ/LacZ embryo at E17.5. (H) Quantification of unc5b FISH on longitudinal sections of sciatic nerves from P0 WT mice. The number of Unc5b+ dots per mm2 within blood vessels (cd31+ area) and within the nervous tissue (area without blood vessels) was compared. N = 4 nerves from four mice. Graph shows mean ± SEM, unpaired t-test with Welch’s correction. (I) Quantification of % UNC5B+ from blood vessels on longitudinal sections of sciatic nerve from P0 WT mice. N = 3 nerves from three mice. (J, J’) Whole-mount immunofluorescence staining of CD31 showing blood vessels in white of sciatic nerves dissected 1 day after injection with anti-UNC5B antibodies at P0 (dose = 4 μg/g of body weight) and sciatic nerves from control pups injected with vehicle solution. Scale bars are 100 μm for A, B, E, and E’ and B’, 200 μm for G and G’ and 50 μm for J and J’. Detailed values are presented in Figure 6—figure supplement 1—source data 1.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/64773/elife-64773-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Schematic representation of the sciatic nerve organization with its origin and different branches. In red are represented the axonal projections forming the sciatic nerve and more distally the common peroneal and tibial nerve and in yellow the axonal projection forming the sural nerve. (B and B’) Slice view of cleared limb from Ntn1+/+ and Ntn1LacZ/LacZ embryos at E17.5. Axons are stained in green (neurofilament [NF]) and blood vessels in magenta (CD31). Red dotted lines delineate the sciatic nerve and the dotted lines in yellow the sural branch. The orthogonal views show no blood vessels inside the sural nerve. (C, C’, and C’’) Whole-mount immunofluorescent staining of a diaphragm of a mouse at P2 showing axons composing the phrenic nerve in green (NF) and blood vessels in magenta (CD31). The orthogonal views in A” show no blood vessels inside the nerve. (D, D’, and D”) Immunofluorescent staining of an intercostal nerve of an embryo at E17.5 with axons in green (NF) and blood vessels in magenta (CD31). (E, E’, and E”) Immunofluorescent staining of a cutaneous nerve located in the back skin of an embryo at E17.5 with axons in green (NF) and blood vessels in magenta (CD31). Scale bars are 100 μm for C, C’, C”, B, and B’, 50 μm for C, C’, C”, D, D’, and D”.
 
 As Ntn1–/– mice die around birth (Serafini et al., 1996), we analyzed entire sciatic nerves of Ntn1lacZ/lacZ knock-in embryos at E16, before INV onset (Figure 6—figure supplement 1E and E'). We found no difference in terms of sciatic nerve diameter (Figure 6—figure supplement 1F), suggesting that the lack of Netrin-1 did not have a significant impact on sciatic nerve development and thickness of the segment analyzed in our study (Figure 6—figure supplement 2A), reflecting no major axonal guidance defect nor defasciculation at this sciatic nerve level at that developmental stage. We then explored sciatic nerves vascularization of embryos at E17.5, when INV has already initiated. Embryonic sciatic nerves were dissected and we assessed blood vessels quantity using CD31 staining (Figure 6—figure supplement 1G and G'). Whereas there is no difference in terms of nerve area (Figure 6D), we found that nerves from mutant embryos are less vascularized as compared to control embryos (Figure 6E). To confirm this result, and to make sure that the dissection did not alter the nerve integrity and vascularization, we quantified nerve vasculature at this stage directly within the embryonic limb. Embryos’ limbs were entirely dissected, as they contain the sciatic nerve (Figure 6F and F’, left top corner, dotted area). We performed whole-mount immunostaining of the entire limb to stain axons (neurofilament [NF]) and blood vessels (CD31). Limbs were then cleared using an adapted iDISCO+ protocol (Renier et al., 2014) and the areas of interest were imaged in three dimensions. Using Imaris software, we observed the sciatic nerve inside the limb, thus keeping the physical integrity of the nerve and its surrounding (Figure 6G and G’). We also found that, whereas sciatic nerves of Ntn1lacZ/lacZ embryos had the same area as control littermates (Figure 6H), they were less vascularized. This was confirmed by quantification of CD31-positive area density inside the nerve (Figure 6I), with a similar ratio and in agreement with our findings on dissected nerves. Interestingly, when we looked at the sural nerve, a purely sensory branch of the sciatic nerve (Figure 6—figure supplement 2A), we found no blood vessels at this stage in neither Ntn1lacZ/lacZ nor Ntn1+/+ mice (Figure 6—figure supplement 2B and B'). Other nerve types such as phrenic nerve, intercostal (mixed motor/sensory), or cutaneous (purely sensory nerve) were also devoid of INV at peri-natal stages (E17.5-P2) (Figure 6—figure supplement 2C to E'').
 
@@ -100,47 +132,288 @@ Since the formation of INV is finely regulated, molecularly and cellularly, by a
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus; male/female)</td>
+      <td>Krox20cre</td>
+      <td>Jackson laboratory</td>
+      <td>Egr2tm2(cre)Pch/J</td>
+      <td>B6D2 background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus; male/female)</td>
+      <td>Krox20fl/+</td>
+      <td>Decker et al., 2006;DOI: 10.1523/JNEUROSCI.0716–06.2006</td>
+      <td></td>
+      <td>B6D2 background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus; male/female)</td>
+      <td>Krox20GFP(DT)</td>
+      <td>Vermeren et al., 2003 DOI: 10.1016/S0896-6273(02)01188–1</td>
+      <td></td>
+      <td>B6D2 background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus; male/female)</td>
+      <td>Wnt1-Cre</td>
+      <td>Jackson laboratory</td>
+      <td>B6.Cg-E2f1tg(Wnt1-cre)2Sor/JRRID:IMSR_JAX:022501</td>
+      <td>B6D2 background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus; male/female)</td>
+      <td>Cx-40-GFP</td>
+      <td>Miquerol et al., 2004;DOI:10.1016/j.cardiores.2004.03.007</td>
+      <td></td>
+      <td>CD1 background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus; male/female)</td>
+      <td>Ng2-DsRed</td>
+      <td>Jackson laboratory</td>
+      <td>(TgCspg4-DsRed.T1)1Akik/J</td>
+      <td>C57/Bl6 background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus; male/female)</td>
+      <td>Ntn1LacZ/+</td>
+      <td>Serafini et al., 1996;DOI: 10.1016/S0092-8674(00)81,795X</td>
+      <td></td>
+      <td>CD1 background</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD31(rat monoclonal)</td>
+      <td>BD Pharmigen</td>
+      <td>Cat# 553370, RRID:AB_394816</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD31(goat polyclonal)</td>
+      <td>R&amp;D</td>
+      <td>Cat# AF3628, RRID:AB_2161028</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Tuj-1(mouse monoclonal IgG2a)</td>
+      <td>R&amp;D</td>
+      <td>Cat# BAM1195, RRID:AB_356859</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Tuj-1(mouse monoclonal IgG2a)</td>
+      <td>Biolegend</td>
+      <td>Cat# 801213, RRID:AB_2728521</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>SMA-cy3(mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat# C6198, RRID:AB_476856</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Neurofilament Heavy chain (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab4680, RRID:AB_304560</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ki67(rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab15580, RRID:AB_443209</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Sox10(Mouse monoclonal IgG2a)</td>
+      <td>Proteintech</td>
+      <td>Cat# 66786–1-Ig, RRID:AB_2882131</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>S100β(rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 15146–1-AP, RRID:AB_2254244</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Galactosidase (chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab9361, RRID:AB_307210</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rat IgG (H + L) Alexa Fluor 555(goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-21434, RRID:AB_2535855</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Chicken IgG (H + L) Alexa Fluor 647(goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A32933, RRID:AB_2762845</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Rabbit IgG (H + L) Alexa Fluor 488(donkey polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-21206, RRID:AB_2535792</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-Goat IgG (H + L) Alexa Fluor 555(donkey polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A-21432, RRID:AB_2535853</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat UNC5H2/UNC5B Antibody</td>
+      <td>Bio-Techne</td>
+      <td>AF1006</td>
+      <td>(dose = 4 μg/g of body weight)IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Multiplex Fluorescent V2 Assay</td>
+      <td>ACD</td>
+      <td>323100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope Probe - Mm-Ntn1</td>
+      <td>ACD</td>
+      <td>407621</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope Probe - Mm-Fap-C3</td>
+      <td>ACD</td>
+      <td>423881-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope Probe - Mm-Pecam1-C3</td>
+      <td>ACD</td>
+      <td>316721-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RNAscope Probe - Mm-Unc5b-No-XHs</td>
+      <td>ACD</td>
+      <td>482481</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PrimePCR Template for SYBR Green Assay: Pecam1, Mouse</td>
+      <td>Bio-Rad</td>
+      <td>qMmuCID0005317</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PrimePCR Template for SYBR Green Assay: Dcc, Mouse</td>
+      <td>Bio-Rad</td>
+      <td>qMmuCED0051027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PrimePCR Template for SYBR Green Assay: neo1, Mouse</td>
+      <td>Bio-Rad</td>
+      <td>qMmuCID0011752</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PrimePCR Template for SYBR Green Assay: unc5b, Mouse</td>
+      <td>Bio-Rad</td>
+      <td>qMmuCID0016421</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NucleoSpin RNA Plus XS, Micro kit for RNA purification</td>
+      <td>Macherey-Nagel</td>
+      <td>REF 740990.50</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 C57BL/6 (Janvier labs, France) mice were used for this study. Cx40-GFP (Miquerol et al., 2004), Ng2-DsRed (Tg(Cspg4-DsRed.T1)1Akik/J; Jackson laboratory) mice were previously described and genotyped with epifluorescence microscope. Krox20GFP(DT) (Vermeren et al., 2003), Krox-20-Cre (Egr2tm2(cre)Pch/J; Jackson laboratory), Wnt1-Cre (129S4.Cg-E2f1Tg(Wnt1-cre)2Sor/J; Jackson laboratory), Krox20fl/+ (Taillebourg et al., 2002), and Ntn1LacZ/+ (Serafini et al., 1996 ) mice were previously described and genotyped by PCR. For embryonic stages, the day of the vaginal plug was counted as E0.5.
 
 Experiments and techniques reported here complied with the ethical rules of the French agency for animal experimentation.
 
-## Injection of anti-UNC5B blocking antibody
+### Injection of anti-UNC5B blocking antibody
 
 Swiss WT pups were injected intra-peritoneally at P0 with 40 μL of anti-UNC5B blocking antibodies (Bio-Techne) (König et al., 2012; Tadagavadi et al., 2010) diluted with physiological serum (0.9% NaCl) at a final dose of 4 μg/g of body weight and control littermates were injected with 40 μL of physiological serum; 24 hr later, pups were sacrificed and sciatic nerves were dissected followed by whole-mount immunofluorescent staining.
 
-## Immunofluorescent staining
+### Immunofluorescent staining
 
 After euthanasia, sciatic nerves were dissected and fixed in a 4% PFA solution during 30 min at room temperature. The whole-mounts were incubated in a TNBT solution composed of Tris HCl pH 7.4/NaCl 5 M/0.5% blocking reagent (Perkin)/0.5% Triton X-100, overnight at 4°C. Primary antibodies were diluted in the same solution, overnight at 4°C. After washes with TNT solution (Tris pH 7.4/NaCl 5 M/0.05% Triton X-100), nerves were incubated with secondary antibodies, diluted in TNBT solution, during 3 hr at room temperature. For cryostat sections: sciatic nerves, immediately after being dissected, were embedded in OCT media and snap-freezed in liquid nitrogen. Cryostat sections (14 µm) were fixed using ice-cold 100% methanol during 8 min then incubated in a blocking solution composed of 0.25% Triton X-100/10% fetal bovine serum/PBS during 30 min at room temperature. Primary antibodies were diluted in the same solution and sections were incubated overnight at 4°C. After PBS washes, secondary antibodies were diluted in a 0.1% Triton X-100/1% FBS/PBS solution and sections were incubated during 2 hr at room temperature. All the antibodies used in this study together with the information regarding their use are listed in the key resources table.
 
-## Tissue clearing
+### Tissue clearing
 
 For embryonic sciatic nerves and paws, we used the iDisco+ clearing method (Renier et al., 2014). Briefly, after immunofluorescent staining and inclusion in 1% agarose blocks (to facilitate imaging), samples were first dehydrated with methanol/H2O series (20%, 40%, 60%, 80%, and 100%; 1 hr each) at room temperature and then incubated in 66% dichloromethane (DCM, Sigma Aldrich)/33% methanol during 3 hr. This was followed by an incubation with 100% DCM 15 min, twice. Samples were then cleared with dibenzyl ether (DBE, Sigma Aldrich), overnight.
 
-## Fluorescent in situ hybridization
+### Fluorescent in situ hybridization
 
 RNAscope Multiplex Fluorescent V2 Assay (ACD) kit was used to detect mRNA on sciatic nerve. Briefly, after dissection, sciatic nerves were fixed with 4% PFA solution overnight, at 4°C and after three washes with PBS, they were cryoprotected with a solution of sucrose 30% overnight at 4°C. The samples were then embedded in OCT and conserved at –80°C. Longitudinal cryo-sections of 14 µm were done and RNAscope Assay was carried out according to manufacturer’s protocol. The probes used are detailed in the key resources table.
 
-## Western blot
+### Western blot
 
 Sciatic nerves of WT mice were lysed in a protein extraction buffer (50 mM Tris, 150 mM NaCl, 5 mM EDTA, 1% Triton-X100, 1% SDS, 1% protease inhibitor) and homogenized with sterile tungsten beads using the homogenizer (Qiagen) for 45 s at 30 beats per second. The supernatants obtained after centrifugation (14,000 rpm for 15 min at 4°C) were used as samples. The extracted proteins were assayed with the Bio-Rad kit (Hercules, CA) by spectrophotometry using BSA as a standard. Equal quantities of proteins (15 μg) were denatured by heating in Laemmli buffer containing β-mercaptoethanol, then separated in a 10% SDS-polyacrylamide gel. The proteins were then transferred to a Hybond-C nitrocellulose membrane (Amersham Biosciences). The non-specific binding sites of the membrane were blocked in Tris buffer containing 0.4% Tween (TBS-T) supplemented with 5% milk powder, for 3 hr at room temperature. The membrane was then incubated in TBS-T supplemented with 1% milk powder, mixed with rabbit polyclonal antibodies to Krox20 (1/2000, Covance, Berkeley, CA) overnight at 4°C. After washing, it was incubated with an anti-rabbit antibody conjugated with HRP peroxidase (1/5000) (Amersham Biosciences), for 1 hr at room temperature. Actin was labelled with mouse monoclonal anti-β-actin primary antibodies (1/5000) followed by HRP-conjugated anti-mouse secondary antibodies (1/5000). The revelation was made by chemiluminescence with the Supersignal West Femto kit (Thermoscientific). The signals obtained were acquired and digitized on the Chemicapt automaton.
 
-## Imaging and images processing
+### Imaging and images processing
 
 The images of nerves sections were taken using Zeiss Axiozoom apotome (and associated Zen software) and Leica confocal microscope. Maximum projections of the acquired stacks were obtained with Fiji. The cleared tissues images were acquired using a light-sheet microscope and Inspector pro software (Lavision biotec). The 3D reconstruction of nerves and limbs were visualized and analyzed with Imaris software (Bitplane).
 
-## Quantifications
+### Quantifications
 
-## Number of angiogenic sprouts
+#### Number of angiogenic sprouts
 
 The number of angiogenic sprouts from sciatic nerves (whole mount), at different developmental stages, was counted manually using a confocal microscope (Leica, ×40). An endothelial cell was considered to be a tip cell if it displayed at least two distinct filopodias. This number per nerve was then normalized to a surface of 1 mm2.
 
-## Ratio of Cx-40+ and NG2+ blood vessel coverage
+#### Ratio of Cx-40+ and NG2+ blood vessel coverage
 
 For each stage, three to four whole mounts of dissected sciatic nerves were imaged using axiozoom (Zeiss) and after thresholding of the images using Fiji software, a ratio of NG2+ (or Cx-40+) raw integrated signal density over CD31 raw integrated signal density was calculated.
 
-## Quantification of the nerve area
+#### Quantification of the nerve area
 
 In order to detect the sciatic nerve on whole-mount, sections, and cleared limbs, the axonal markers NF or Tuj-1 were used. During images processing, the signal of this staining was used to delimit the nerve area in μm2 using Fiji (methods a and b; Figure 7A and C). From cleared limbs, the sciatic nerve was first localized in 3D and we always analyzed the same portion of the nerve. This portion starts just after the node formed by the three branches coming from the DRG and stops just before the first distal branches. For analysis of nerve thickness in Ntn1LacZ/LacZ and Ntn1+/+ at E16, method ‘c’ was used with Fiji on the same nerve portion. Overall, method a was used for Figure 4F, Figure 4—figure supplement 1B', Figure 4—figure supplement 2B', Figure 5D, Figure 6E,  method b for Figure 6H and method c for Figure 6—figure supplement 1F.
 
@@ -148,28 +421,28 @@ In order to detect the sciatic nerve on whole-mount, sections, and cleared limbs
 
 **Figure 7.:** (A) Whole-mount immunofluorescent staining of a sciatic nerve showing axons in white (neurofilament [NF]) at P0. Red dotted lines represent nerve area. (B) Snapshot of a 3D visualization of a cleared limb at E17.5, axons are marked in green (NF) and blood vessels in magenta (CD31). (C) Maximum intensity Z projection of sciatic nerve portion from cleared limb images, axons are in white (NF). Red dotted lines represent nerve area and blue dotted lines represent diameter measurements. Scale bars are 100 μm.
 
-## INV density from sciatic nerves’ sections
+### INV density from sciatic nerves’ sections
 
 The density of intra-nervous blood vessels on sciatic nerve cross sections, at different developmental stages, was quantified using the same semi-automatic method on Fiji for all the sections. After thresholding the images and creating a mask for the channel representing the blood vessels’ staining, the total area contained in the section was quantified. This value was reported to the area of the section.
 
-## 3D blood vessel length and number of branch points
+### 3D blood vessel length and number of branch points
 
 For the quantification of the length and number of branch points of the vasculature, it was done using ‘Surface’ and ‘Filament’ tools of Imaris software.
 
 For Ntn1+/+ and Ntn1LacZ/LacZ embryos, quantification of the nerve area (NF staining) and intra-nervous blood vessel density (CD31 staining) was made using Fiji software.
 
-## Quantification of FISH
+### Quantification of FISH
 
 From sciatic nerve longitudinal sections, the epi-perineural area was considered as the most external cell layer containing Fap+ cells. The central part was considered as endonerve. After image thresholding using Fiji software, the number of Ntn1+ dots was quantified and divided by the area of the corresponding layer (epi-perinerve and endonerve). For unc5b, blood vessels were delimited using cd31 signal and after thresholding, the number of unc5b+ dots was quantified and divided by the area of the blood vessels or by the area of the rest of the nerve.
 
-## Quantification of Netrin1 and UNC5B immunofluorescent staining
+### Quantification of Netrin1 and UNC5B immunofluorescent staining
 
 After image thresholding using Fiji software, ratio of raw integrated signal densities of Netrin-1+/FAP+ and UNC5B+/CD31+ were calculated.
 
-## Purification of endothelial cells and qPCR
+### Purification of endothelial cells and qPCR
 
-Five tubes, each containing 10 sciatic nerves from P2 WT mice, were used. Sciatic nerves were digested at 37°C with enzymes from Miltenyi ‘brain dissociation’ kit. Then, positive selection of CD31+ cells was done by magnetic separation, following the protocol of Miltenyi biotec. The cells were counted with ‘Countess’ machine (Thermo Fisher): around 1 × 104 cells per tube was obtained. Total mRNA was extracted from those cells with the kit ‘RNA plus XS’ from Macherey-Nagel. qPCR was performed with Bio-Rad Prime PCR validated primers at 60°C. The normalized expression relative to β-actin and GAPDH was obtained with ΔΔCq method: ∆Cq Expression = 2–∆Cq with ∆Cq = Cq (target gene) – Cq (reference) and Cq (reference) =Cq(Bactin)xCq(GAPDH).
+Five tubes, each containing 10 sciatic nerves from P2 WT mice, were used. Sciatic nerves were digested at 37°C with enzymes from Miltenyi ‘brain dissociation’ kit. Then, positive selection of CD31+ cells was done by magnetic separation, following the protocol of Miltenyi biotec. The cells were counted with ‘Countess’ machine (Thermo Fisher): around 1 × 104 cells per tube was obtained. Total mRNA was extracted from those cells with the kit ‘RNA plus XS’ from Macherey-Nagel. qPCR was performed with Bio-Rad Prime PCR validated primers at 60°C. The normalized expression relative to β-actin and GAPDH was obtained with ΔΔCq method: ∆Cq Expression = 2–∆Cq with ∆Cq = Cq (target gene) – Cq (reference) and Cq (reference) =$\sqrt{Cq(Bactin)xCq(GAPDH).}$
 
-## Statistical analysis
+### Statistical analysis
 
 Data shown are expressed as means ± SEM. Graphs and statistical analysis were performed using GraphPad Prism software, with p-value <0.05 considered as significant. The different statistical tests used were specified in the figures’ legends. Shapiro-Wilk normality test was used to assess if the values come from a Gaussian distribution.

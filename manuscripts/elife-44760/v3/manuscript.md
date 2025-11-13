@@ -26,7 +26,7 @@
 
 ## Abstract
 
-Ca 2+ -stimulated translocation of cytosolic phospholipase A 2 α (cPLA 2 α) to the Golgi induces arachidonic acid production, the rate-limiting step in pro-inflammatory eicosanoid synthesis. Structural insights into the cPLA 2 α preference for phosphatidylcholine (PC)-enriched membranes have remained elusive. Here, we report the structure of the cPLA 2 α C2-domain (at 2.2 Å resolution), which contains bound 1,2-dihexanoyl- sn -glycero-3-phosphocholine (DHPC) and Ca 2+ ions. Two Ca 2+ are complexed at previously reported locations in the lipid-free C2-domain. One of these Ca 2+ ions, along with a third Ca 2+ , bridges the C2-domain to the DHPC phosphate group, which also interacts with Asn65. Tyr96 plays a key role in lipid headgroup recognition via cation–π interaction with the PC trimethylammonium group. Mutagenesis analyses confirm that Tyr96 and Asn65 function in PC binding selectivity by the C2-domain and in the regulation of cPLA 2 α activity. The DHPC-binding mode of the cPLA 2 α C2-domain, which differs from phosphatidylserine or phosphatidylinositol 4,5-bisphosphate binding by other C2-domains, expands and deepens knowledge of the lipid-binding mechanisms mediated by C2-domains.
+Ca2+-stimulated translocation of cytosolic phospholipase A2α (cPLA2α) to the Golgi induces arachidonic acid production, the rate-limiting step in pro-inflammatory eicosanoid synthesis. Structural insights into the cPLA2α preference for phosphatidylcholine (PC)-enriched membranes have remained elusive. Here, we report the structure of the cPLA2α C2-domain (at 2.2 Å resolution), which contains bound 1,2-dihexanoyl-sn-glycero-3-phosphocholine (DHPC) and Ca2+ ions. Two Ca2+ are complexed at previously reported locations in the lipid-free C2-domain. One of these Ca2+ions, along with a third Ca2+, bridges the C2-domain to the DHPC phosphate group, which also interacts with Asn65. Tyr96 plays a key role in lipid headgroup recognition via cation–π interaction with the PC trimethylammonium group. Mutagenesis analyses confirm that Tyr96 and Asn65 function in PC binding selectivity by the C2-domain and in the regulation of cPLA2α activity. The DHPC-binding mode of the cPLA2α C2-domain, which differs from phosphatidylserine or phosphatidylinositol 4,5-bisphosphate binding by other C2-domains, expands and deepens knowledge of the lipid-binding mechanisms mediated by C2-domains.
 
 ## Introduction
 
@@ -42,35 +42,390 @@ Here, we report the X-ray crystal structure of the cPLA2α C2-domain bound to 1
 
 ## Results
 
-## Overall structure of the cPLA2 C2-domain bound to DHPC
+### Overall structure of the cPLA2 C2-domain bound to DHPC
 
 To elucidate the mechanism of phosphoglyceride recognition by the C2-domain of cPLA2α, we initially attempted to generate complexes of the human recombinant protein with various lipids including PC, related phosphoglycerides and C1P analogs. Despite extensive crystallization trials, the resulting C2-domain crystals contained two bound Ca2+ ions, but no bound lipid [as also reported by Perisic et al., 1998]. However, using purified Gallus gallus (chicken) cPLA2α C2-domain (81% identical and 93% highly conserved sequence relative to human) (Figure 1A and Figure 1—figure supplement 1), we obtained crystal complexes with 1,2-dihexanoyl-sn-glycero-3-phosphocholine (DHPC) (Figure 1C), enabling structure determination at 2.2 Å resolution (Figure 1B). The electron density map for the entire C2-domain polypeptide chain is visible except for the N-terminal glycine, a cloning residue artifact. Notably, extra electron density corresponding to a bound DHPC molecule is found in the map (Figure 1D), near the position reported for a bound MES [2-(N-morpholino) ethanesulfonic acid] buffer molecule in the structure of full-length human cPLA2α (Dessen et al., 1999). Three C2-domain molecules comprise the asymmetric unit and each C2-domain contains one bound DHPC molecule. The structures of the individual complexes are essentially the same. The C2-domain–DHPC complex exhibits a β-sandwich topology formed by a pair of four-stranded antiparallel β-sheets (one formed by the β4, β1, β8 and β7 strands; the other by the β3, β2, β5 and β6 strands) (Figure 1B). Clearly resolved are the Ca2+-binding loops (CBL1, CBL2, and CBL3) formed by the β1–β2, β3–β4, and β5–β6 loops, respectively. CBL1 contains a short α-helix. The structure of the chicken C2-domain with bound DHPC is almost the same as that of human lipid-freeform (Dessen et al., 1999; Perisic et al., 1998) with a small overall root mean square (r.m.s.) deviation of 0.7 Å after superimposition of Cα atoms (Figure 1E). Interestingly, we observed three bound Ca2+ ions in the C2-domain–DHPC complex (Figure 1B, D and E), two of which correspond to the bound Ca1 and Ca4 in lipid-free human protein reported previously (Dessen et al., 1999; Perisic et al., 1998). [Note: The Rizo and Südhof, 1998 numbering system is used for bound Ca2+ in C2-domains (Corbalan-Garcia and Gómez-Fernández, 2014).] We found that the Ca1 ion is bound via side-chain interactions with Asp40, Asp43, Asp93 and Asn95 and the main chain carbonyl group of Ala94; whereas Ca4 is bound via interaction with the side chains of Asp40, Asp43 and Asn65 and the main-chain carbonyl group of Thr41 (Figure 2A). The Ca1 and Ca4 coordination networks are almost the same as those in the lipid-free structure (Dessen et al., 1999; Perisic et al., 1998). Binding of the third Ca2+ involves a stabilizing contact with Asn65 and interaction with the DHPC phosphoryl group. This Ca2+ is designated CaPC because of its novel location at CBL1, which is unique when compared with Ca2+-binding sites in various other C2-domains (Rizo and Südhof, 1998; Corbalan-Garcia and Gómez-Fernández, 2014).
 
-## PC recognition
+![Figure 1.](https://cdn.elifesciences.org/articles/44760/elife-44760-fig1-v3.jpg)
+
+**Figure 1.:** (A) Sequence alignment of C2-domain calcium-binding loop (CBL) regions in cPLA2α from different eukaryotes compared to human PKCs and Syt1. Residues that bind Ca2+ are green. Residues interacting directly with PC in our structural complex (blue or blue asterisk) are absolutely conserved among eukaryotic cPLA2α proteins but not in PKCs and Syt1. Conversely, residues that interact with PS in the PKCα-PS structure (magenta) are highly conserved in PKCs and Syt1, but not in cPLA2α. Shaded residues are identical. The human and chicken cPLA2α CBL sequences are 92% identical and 94.5% highly conserved (see Figure 1—figure supplement 1 for full-length sequence alignment). (B) Ribbon structure representation of the cPLA2α C2-domain bound to 1,2-dihexanoyl-sn-glycero-3-phosphocholine (DHPC). The DHPC molecule (beige stick) straddles the β1–β2 loop (CBL1, blue), β3–β4 loop (CBL2, cyan) and β5–β6 loop (CBL3, red). Ca1 and Ca4 (blue spheres) are in a similar position in the apo-form structure; whereas CaPC (magenta sphere) is unique to the DHPC-bound form. (C) DHPC structural formula. (D) Fo-Fc omit electron density map for the bound DHPC molecule at the 2.5σ contour level. (E) Superimposition of the chicken cPLA2α C2-domain with bound DHPC (colored as in Figure 1B) on the human lipid-free structure (PDB: 1RLW, cyan). Root mean square deviation = 0.7 Å after superimposition of Cα atoms.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44760/elife-44760-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** In the C2-Domains, Ca2+ binding residues are cyan, DHPC binding residues are yellow; C1P binding residues are beige, and membrane interaction residues are burgundy. In the Catalytic Domains, active site residues are orange, PAPC polar headgroup interacting residues are blue, PAPC acyl chain interacting residues are lavender, PIP2 interacting residues are magenta, and phosphorylation sites are green. Sequence alignment was generated using Clustal W (Larkin et al., 2007).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/44760/elife-44760-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (Upper left panel) Cross-sectional view of three cPLA2α C2-PC complexes in the asymmetric unit (labeled A, B, C) and three complexes in the neighboring asymmetric unit (A*, B* and C*) that together form a ring-like structure. The hexanoyl acyl chains associated in one complex are separated from hexanoyl acyl chains in adjacent complexes by 4.9 to 7.2 Å. (Upper right panel) Rotation by 90° reveals PC lipids packed into a ring-like topology that forms a tubular-like scaffold. (Lower panel) The crystal packing lattice of lipid-free human cPLA2α C2-domain (PDB: 1RLW). The incorporated Ca2+ is shown as blue spheres. Protomer A packs with protomers B and C, but not with protomer D.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/44760/elife-44760-fig2-v3.jpg)
+
+**Figure 2.:** (A) Coordination of three bound Ca2+ ions observed in the C2-domain–DHPC complex. Residues that interact with Ca2+ ions are labeled in black with their side-chains (cyan) depicted in a stick representation. (B) Same view as in panel (A), but with PC-mediated interactions highlighted. Residues that interact directly with DHPC are labeled in red. (C) Space-filling view of bound DHPC and of Ca4 and CaPC in the cPLA2α C2-domain. Darker gray residues (Y96, A94, H62, N64, and D43) provide contact surfaces for choline (cyan). Phosphorus is represented in orange; calcium in green; oxygen in red; and acyl carbons in beige. (D) Schematic summary of DHPC- and Ca2+-binding interactions with the cPLA2α C2-domain.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44760/elife-44760-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** C2-domain and DHPC are shown in lime green and beige, respectively. Nitrogen, oxygen, and phosphorus atoms are blue, red, and orange, respectively. Numeric labels for dashed lines equal distances in Ångstroms. Lower structure provides a ‘backside’ view (relative to the upper structure) by rotation 180° in the xy plane.
+
+### PC recognition
 
 The DHPC polar headgroup docks with the CBLs, whereas the fatty acid chains are largely exposed to solvent. This orientation of bound PC in the complex is consistent with a function as an embedded membrane-anchoring element for the docking site of the protein. In the C2-domain–DHPC complex (Figure 2B), the DHPC sn-2 chain is largely disordered except for the ester group, but nearly all of the sn-1 chain is observable because of the stabilizing interaction with CaPC and the partial contact by Leu39 (Figure 1D). The shorter fatty acid chains of DHPC compared to those of natural PCs may partially limit insights into the hydrophobic interactions mediated by fatty acid chains. Yet, it is noteworthy that the bulk of natural long-chain fatty acyl chains need not interact with the protein, but rather are expected to remain embedded in the bilayer to stabilize the PC headgroup docking sites in the membrane for cPLA2α C2-domains.
 
 The DHPC phosphoryl group is positioned at the center of the CBLs, with the -N+(CH3)3 group of DHPC directed towards CBL3 (Figure 2B). The phosphoryl group is stabilized mainly by Ca2+-mediated bridging interactions. The only direct interaction between the phosphoryl group and the C2-domain is a hydrogen bond with the side chain of Asn65 (~3.1 Å) (Figure 2B). Although Ca1 does not coordinate with the DHPC molecule, Ca4 does interact with two oxygen atoms of the DHPC phosphoryl group in bifurcated fashion (2.1 and 3.7 Å). CaPC, which was not observed in two previous lipid-free structures (Perisic et al., 1998), bridges the C2-domain to DHPC via its phosphoryl group (3.6 Å) and sn-1 carbonyl group (3.2 Å) and also interacts with the Asn65 side-chain (3.1 Å) (Figure 2; Figure 2—figure supplement 1; Table 1). Thus, Ca4 and CaPC mediate both partial charge neutralization of the DHPC phosphoryl group, and by doing so, bridge the C2-domain and PC. The findings further elucidate the role played by bound Ca2+ in mediating nonspecific membrane interaction while revealing direct interaction with PC. Zoomed views of the cPLA2α C2-domain complexed with Ca2+ and DHPC are provided in Figure 2—figure supplement 1 and associated interaction distances are summarized in Table 1.
 
+**Table 1.**
+ Interaction distances in cPLA2α C2-domain. Interaction distances (Å) associated with bound calcium in the lipid-free cPLA2α C2-domain structure (2.4 Å resolution; PDB 1RLW) of Perisic et al. (1998) and with bound calcium and DHPC in the C2-domain–DHPC crystal complex (2.2 Å resolution) of the present study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>1RLW</th>
+      <th colspan="2">Ca1</th>
+      <th>Ca4</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Asp40</td>
+      <td colspan="2">2.3/3.4</td>
+      <td>2.3</td>
+    </tr>
+    <tr>
+      <td>Asp43</td>
+      <td colspan="2">2.1</td>
+      <td>2.6/2.2</td>
+    </tr>
+    <tr>
+      <td>Asp93</td>
+      <td colspan="2">2.7/2.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Asn65</td>
+      <td colspan="2"></td>
+      <td>2.1</td>
+    </tr>
+    <tr>
+      <td>Asn95</td>
+      <td colspan="2">2.2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">C2/DHPC</td>
+      <td colspan="4">C2﻿</td>
+      <td colspan="6">DHPC</td>
+    </tr>
+    <tr>
+      <td>Ca1</td>
+      <td colspan="2">Ca4</td>
+      <td>CaPC</td>
+      <td>N+(CH3)3</td>
+      <td>PO4</td>
+      <td>sn-2 C=O</td>
+      <td>sn-1 C=O</td>
+      <td colspan="2">sn-1 chain</td>
+    </tr>
+    <tr>
+      <td>Asp40</td>
+      <td>2.4/3.4</td>
+      <td colspan="2">2.4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Asp43</td>
+      <td>2.3</td>
+      <td colspan="2">2.6/2.7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Asp93</td>
+      <td>2.7/2.8</td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Asn65</td>
+      <td></td>
+      <td colspan="2">2.4</td>
+      <td>3.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Asn95</td>
+      <td>2.3</td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Tyr96</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td>~4.0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Ala94</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td>3.6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>His62</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td>~5.0</td>
+      <td>~8.5</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Asn64</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td>3.6</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Leu39</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td colspan="2">5.4</td>
+    </tr>
+    <tr>
+      <td>Ca1</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td>5.5</td>
+      <td>5.7</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Ca4</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td>6.3</td>
+      <td>2.1</td>
+      <td></td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>CaPC</td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+      <td>8.5</td>
+      <td>3.6</td>
+      <td>3.2</td>
+      <td>3.1</td>
+      <td colspan="2"></td>
+    </tr>
+  </tbody>
+</table>
+
 The -N+(CH3)3 group of DHPC is partially surrounded by Tyr96 of CBL3 and His62 and Asn64 of CBL2 (Figure 2B and C). Importantly, the Tyr96 aromatic ring stacks in planar-like fashion with the cationic -N+(CH3)3 group. This kind of electrostatic interaction, that is cation-π interaction, occurs at distances of less than 6.0 Å between a positively charged atom or group and the flat face of an aromatic ring that has a partial negative charge due to delocalized π electrons (Dougherty, 2013; Gallivan and Dougherty, 1999). The position of the -N+(CH3)3 group is further stabilized by van der Waals contacts with the Ala94 methyl group and by a possible weak (off-angle) cation-π interaction with the His62 imidazole ring (Figure 2B and C). The orientation of His62 appears to be affected by hydrogen bonding (2.8 Å) between its imidazole group and the side-chain carbonyl group of Asn64, which also interacts (weakly) with the -N+(CH3)3 group. Notably, in the structure of the lipid-free C2-domain (Perisic et al., 1998), a cadmium ion from the crystallization buffer was localized between Tyr96 and His62, consistent with cation-π interaction (Figure 1E). Previous mutational analyses support His62 interaction with PC as well as a more significant role for this residue in binding C1P (Ward et al., 2013). In other proteins that specifically bind PC, such as the PC transfer protein, cation–π interactions involving Tyr and Trp are determinants of PC specificity (Roderick et al., 2002; Kang et al., 2010).
 
 In our study, DHPC binding induced no major conformational changes in the C2-domain CBLs. Notably, NMR studies of the cPLA2α C2-domain depict the Tyr96 indole ring in an outward position when not interacting with dodecylphosphocholine micelles (Xu et al., 1998). Thus, PC binding could require local conformational changes, such as inward flipping of Tyr96, to optimize π–cation interaction for complex formation.
 
-## Functional mutagenesis analyses of PC-interacting residues in the cPLA2α C2-domain
+### Functional mutagenesis analyses of PC-interacting residues in the cPLA2α C2-domain
 
 The central importance of Tyr96 for PC selectivity is supported by functional mutagenesis of the C2-domain residues observed interacting with DHPC. The Y96A point mutant, which is unable to undergo cation–π interaction with the -N+(CH3)3 group of DHPC, exhibited significantly reduced affinity for PC bilayer vesicles when compared to either the conservatively mutated Y96F (which supports strong cation-π interaction) or the control C2–domain, as shown by SPR (Figure 3A; Table 1). Also, disruption of the PC phosphate group interaction with N65 by point mutation to Asp (N65D) significantly reduced partitioning to PC vesicles (Figure 3A; Table 1). In previous surface plasmon resonance (SPR) and DHPC-coated bead studies involving a refolded C2-domain containing a 20-residue affinity tag including 6xHis (Bittova et al., 1999; Stahelin and Cho, 2001b; Ward et al., 2012), weaker affinity of Y96A and D65A mutants for DHPC was observed. In our experiments, the Ca2+-concentration-dependence of the process that drives C2-doman point mutants (Y96A, Y96F, and N65D) to PC membranes was assessed by Förster resonance energy transfer (FRET) between Trp71 of the C2-domain and dansyl-PE (1,2-dioleoyl-sn-glycero-3-phosphoethanolamine-N-(5-dimethylamino-1-naphthalenesulfonyl) in the PC model membranes (Figure 3B). The need for greater Ca2+ concentrations to induce Y96A or N65D partitioning to the PC model membranes compared to either Y96F or control C2-domain partitioning, was clearly evident. Figure 3C shows additional FRET data obtained by titration of the C2-domain mutants with increasing amounts of PC model membranes at constant Ca2+ concentration (50 µM). The summarized data (Figure 3D) confirm the weaker PC-binding affinity of the Y96A and N65D mutants compared to the Y96F mutant or the control C2-domain.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/44760/elife-44760-fig3-v3.jpg)
 
-**Figure 3.:** 2α C2-domains and cPLA2α catalytic activities of point-mutated C2-domains in the PC-binding region.(A) SPR binding isotherms showing point mutant and control protein equilibrium adsorption to immobilized 1-palmitoyl-2-oleoyl phosphatidylcholine (POPC) vesicles saturating a L1 sensor chip at 5 μl/min solution flow rates (see 'Materials and methods'). (B) FRET binding isotherms showing the Ca2+ dependence of point mutant and control protein (0.5 μM) equilibrium adsorption to POPC–DHPC bicelle-dilution vesicles (4 μM) (see 'Materials and methods'). (C) FRET-binding isotherms showing the POPC–DHPC bicelle-dilution vesicle dependence of point mutant and control protein (0.5 μM) equilibrium adsorption at 50 μM Ca2+ (see 'Materials and methods'). (D) Relative binding affinity of C2-domain point mutants and control protein obtained for binding isotherms shown in panel (C). (E) Effect of the Y96F, Y96A, N64A, and N65D mutations on the dissociation constant (KsA) of human cPLA2α activity. Proteins were purified as described Stahelin et al. (2007). Activity was measured as a function of PC molar concentration for 60 min at 37°C. The PC mole fraction was held constant at 0.285. cPLA2α activities (nmol of arachidonic acid released/min/mg of recombinant cPLA2α) were collected on eight separate occasions and are presented as n = 4 for Y96F, n = 4 for Y96A, n = 4 for N64A, n = 4 for N65D, and n = 8 for WT. Error = standard deviation. R2 values are 0.9021, 09609, 0.9586, 0.9780, and 0.9485 for WT, Y96F, Y96A, N64A, and N65D, respectively. (F) Effect of Y96F, Y96A, N64A, and N65D mutations on the allosteric sigmoidal constant (Khalf) of human cPLA2α activity. Activity was measured as a function of increasing PC mole fractions for 60 min at 37°C. The PC mole fraction ([PC]/[PC]+[TX-100]) was 0.024 at 50 μM PC, 0.047 at 100 μM PC, 0.069 at 150 μM, 0.091 at 200 μM, 0.13 at 300 μM PC, 0.166 at 400 μM, 0.2 at 500 μM PC, 0.28 at 800 μM PC, 0.37 at 1200 μM PC, and 0.44 at 1600 μM PC. cPLA2α activities (nmol of arachidonic acid released/min/mg of recombinant cPLA2α) were collected on ten separate occasions and are presented as n = 4 for Y96F, n = 4 for Y96A, n = 4 for N64A, n = 4 for N65D, and n = 4 for WT. Error = standard deviation. R2 values are 0.9413, 0.9577, 0.9407, 0.9376, and 0.9761 for WT, Y96F, Y96A, N64A, and N65D, respectively.Figure 3—source data 1.2α C2-domains mutated in PC binding region.Figure 3—source data 2.2α C2-domains mutated in PC binding region.
+**Figure 3.:** (A) SPR binding isotherms showing point mutant and control protein equilibrium adsorption to immobilized 1-palmitoyl-2-oleoyl phosphatidylcholine (POPC) vesicles saturating a L1 sensor chip at 5 μl/min solution flow rates (see 'Materials and methods'). (B) FRET binding isotherms showing the Ca2+ dependence of point mutant and control protein (0.5 μM) equilibrium adsorption to POPC–DHPC bicelle-dilution vesicles (4 μM) (see 'Materials and methods'). (C) FRET-binding isotherms showing the POPC–DHPC bicelle-dilution vesicle dependence of point mutant and control protein (0.5 μM) equilibrium adsorption at 50 μM Ca2+ (see 'Materials and methods'). (D) Relative binding affinity of C2-domain point mutants and control protein obtained for binding isotherms shown in panel (C). (E) Effect of the Y96F, Y96A, N64A, and N65D mutations on the dissociation constant (KsA) of human cPLA2α activity. Proteins were purified as described Stahelin et al. (2007). Activity was measured as a function of PC molar concentration for 60 min at 37°C. The PC mole fraction was held constant at 0.285. cPLA2α activities (nmol of arachidonic acid released/min/mg of recombinant cPLA2α) were collected on eight separate occasions and are presented as n = 4 for Y96F, n = 4 for Y96A, n = 4 for N64A, n = 4 for N65D, and n = 8 for WT. Error = standard deviation. R2 values are 0.9021, 09609, 0.9586, 0.9780, and 0.9485 for WT, Y96F, Y96A, N64A, and N65D, respectively. (F) Effect of Y96F, Y96A, N64A, and N65D mutations on the allosteric sigmoidal constant (Khalf) of human cPLA2α activity. Activity was measured as a function of increasing PC mole fractions for 60 min at 37°C. The PC mole fraction ([PC]/[PC]+[TX-100]) was 0.024 at 50 μM PC, 0.047 at 100 μM PC, 0.069 at 150 μM, 0.091 at 200 μM, 0.13 at 300 μM PC, 0.166 at 400 μM, 0.2 at 500 μM PC, 0.28 at 800 μM PC, 0.37 at 1200 μM PC, and 0.44 at 1600 μM PC. cPLA2α activities (nmol of arachidonic acid released/min/mg of recombinant cPLA2α) were collected on ten separate occasions and are presented as n = 4 for Y96F, n = 4 for Y96A, n = 4 for N64A, n = 4 for N65D, and n = 4 for WT. Error = standard deviation. R2 values are 0.9413, 0.9577, 0.9407, 0.9376, and 0.9761 for WT, Y96F, Y96A, N64A, and N65D, respectively.
+
+**Table 2.**
+ Kd values determined by SPR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Kd (M)</th>
+      <th>Fold increase*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT-C2-domain</td>
+      <td>(4.2 ± 0.8)×10−7</td>
+      <td>----</td>
+    </tr>
+    <tr>
+      <td>Y96F-C2-domain</td>
+      <td>(4.3 ± 0.5)×10−7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Y96A-C2-domain</td>
+      <td>(2.4 ± 0.4)×10−6</td>
+      <td>5.7</td>
+    </tr>
+    <tr>
+      <td>N65D-C2-domain</td>
+      <td>(2.2 ± 0.5)×10−6</td>
+      <td>5.2</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Fold increase in Kd relative to the C2-domain binding to POPC vesicles. Kd values were determined from the normalized saturation binding responses (Req) at the protein concentrations shown in Figure 4—figure supplement 1 after fitting by nonlinear least squares analysis using Req = Rmax/(1 + Kd/C)._
 
 Since the preceding mutational analyses focused on the role of PC-interacting residues in isolated C2-domain on protein binding to PC membranes, the functional impact of these same mutations on the catalytic activity of cPLA2α (C2-domain + catalytic domain) was also determined using established mixed-micelle assays (Wijesinghe et al., 2009). By using surface dilution kinetics and tracking the total mass of arachidonic acid release from 1-palmitoyl- 2-arachidonoyl-sn-glycero-3-phosphocholine (PAPC) via UPLC-MS/MS, protein interfacial partitioning and enzymatic activity were analyzed (Figure 3E and F, Table 2 and 3). Notably, the data support the functional importance of Tyr96 for PC association. Specifically, the association of the Y96A mutant with PAPC-containing mixed micelles is significantly reduced, that is , the dissociation rate is increased as signified by an increased KsA, compared to that of either the conservative Y96F point mutant or the control enzyme (Figure 3E; Table 2). Also, the turnover of the Y96A mutant enzyme displayed allosteric sigmoidal kinetics once the enzyme was bound to the surface of micelles containing PAPC (e.g., a significant difference in Vmax was observed) without significantly affecting K0.5(i.e., the PAPC concentration that produces half-maximal enzyme velocity) (Figure 3F; Table 3). These data indicate that Tyr96 is key for recognizing and binding PC in the membrane but not for the enzymatic activity of the catalytic domain towards substrate once the enzyme is associated with the membrane.
 
+**Table 3.**
+ Kinetic activity parameters for point-mutated PC-binding-site residues in the C2-domain of cPLA2α*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>KsA (μM)</th>
+      <th>Vmax (nmol/min/mg)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT-cPLA2α</td>
+      <td>182.8 ± 12.5</td>
+      <td>4.053 ± 0.092</td>
+    </tr>
+    <tr>
+      <td>Y96F-cPLA2α</td>
+      <td>205.8 ± 12.7</td>
+      <td>4.930 ± 0.111</td>
+    </tr>
+    <tr>
+      <td>Y96A-cPLA2α</td>
+      <td>467.5 ± 31.6</td>
+      <td>3.438 ± 0.177</td>
+    </tr>
+    <tr>
+      <td>N65D-cPLA2α</td>
+      <td>394.9 ± 29.8</td>
+      <td>3.203 ± 0.166</td>
+    </tr>
+    <tr>
+      <td>N64A-cPLA2α</td>
+      <td>207.7 ± 9.63</td>
+      <td>4.328 ± 0.069</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Analyses for data shown in Figure 3E._
+
+**Table 4.**
+ Kinetic activity parameters for point-mutated PC-binding-site residues in the C2-domain of cPLA2α *
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>K0.5 (mole fraction)</th>
+      <th>Vmax (nmol/min/mg)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT-cPLA2α</td>
+      <td>0.130 ± 0.007</td>
+      <td>4.352 ± 0.183</td>
+    </tr>
+    <tr>
+      <td>Y96F-cPLA2α</td>
+      <td>0.132 ± 0.007</td>
+      <td>4.362 ± 0.172</td>
+    </tr>
+    <tr>
+      <td>Y96A-cPLA2α</td>
+      <td>0.139 ± 0.006</td>
+      <td>2.510 ± 0.098</td>
+    </tr>
+    <tr>
+      <td>N65D-cPLA2α</td>
+      <td>0.143 ± 0.005</td>
+      <td>1.791 ± 0.050</td>
+    </tr>
+    <tr>
+      <td>N64A-cPLA2α</td>
+      <td>0.142 ± 0.008</td>
+      <td>3.436 ± 0.168</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Analyses for data shown in Figure 3F_
+
 In cPLA2α, disruption of the N65 interaction with the PC phosphate group by point mutation to Asp (N65D) also significantly reduced the association with micelles containing PAPC when compared to the same interaction for the WT enzyme and the N64A mutant (Figure 3E; Table 2), in agreement with the SPR and FRET findings for purified C2-domain mutants. Notably, however, the reduced Vmax observed for N65D cPLA2α, alongside the lack of a significant effect on the enzyme's affinity for substrate, K0.5 (Figure 3F; Table 3), suggests a possible role in enzyme lateral diffusion (i.e., ‘scooting’) once bound to the membrane. Of note, N64 replacement with Ala (N64A) had no significant effect on either the dissociation rate or the kinetic parameters of the enzyme. Overall, the mutagenesis data strongly support the key role played by both Y96 and N65 in recognizing and binding to PC-rich membranes, with N65 and Y96 regulating PC-binding affinity and playing a potential role in the enzyme’s ability to ‘scoot’ while bound to the membrane and thus to cleave substrate, as previously modeled by Gelb and co-workers (Bayburt and Gelb, 1997).
 
-## Lipid specificity of the cPLA2α C2-domain
+### Lipid specificity of the cPLA2α C2-domain
 
 To further evaluate the apparent preference of the cPLA2α C2-domain for PC, SPR analyses were carried out using phosphoglycerides with different polar headgroups (Figure 4A). The relative binding affinity of the C2-domain for POPC was found to be ~5 fold greater than that for chain-matched phosphatidylserine (POPS), phosphatidic acid (POPA), phosphatidylglycerol (POPG), or phosphatidylinositol (POPI) (Figure 4B). With phosphatidylethanolamine (POPE), lipid adsorption to the SPR L1 Sensor Chip was quite low compared to that of the other phospholipids. To circumvent this issue, 30 mole% POPE was co-mixed with either POPC or POPS. No significant change was found for C2-domain binding to POPC vesicles containing POPE or POPS compared to binding to pure POPC vesicles, showing the dominating effect of the PC headgroup. Yet, C2-domain binding to the POPS vesicles was slightly improved by 30 mole% POPE (see Figure 4—figure supplement 1). Our single phosphoglyceride SPR results agree with previous FRET studies (Trp to dansyl-PE) in which binding to lipid vesicles was assessed using a slightly longer, re-folded, recombinant, human cPLA2α C2-domain (Nalefski et al., 1998).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/44760/elife-44760-fig4-v3.jpg)
+
+**Figure 4.:** (A) Phosphoglyceride structural formulas. (B) Relative affinities of the C2-domain (1 μM) for different phosphoglycerides obtained by SPR. Molar ratios for PS/PE, PC/PS and PC/PE mixed composition vesicles are 7:3. (see Figure 4—figure supplement 1). (C) SPR binding isotherms showing C2-domain equilibrium adsorption to immobilized POPC or 18:1-SM vesicles as a function of protein concentration (see Figure 4—figure supplement 2 for additional information). (D) Effect of C2-domain mutations (1 μM) on binding to 18:1 SM obtained by SPR (see 'Materials and methods' for other details).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/44760/elife-44760-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Head group chemical formulas of various non-PC membrane phosphoglycerides are (A) phosphatidylethanolamine, PE; (B) phosphatidylserine, PS; (C) phosphatidylglycerol, PG; (D) phosphatidylinositol, PI; and (E) phosphatidic acid, PA. All of the phosphoglycerol-based lipids have the same backbone topology but different head groups that define C2-domain binding specificity. Our findings reveal that the π-cation interaction is critical for binding to PC. PE (A) has a primary ammonium group replacing the –N+(CH3)3 group in PC. Yet, earlier FRET data (Nalefski et al., 1998) and our SPR data (Figure 4B) indicate relatively weak binding of cPLA2α C2-domain to PE. The electrostatic potential difference and diminished van der Waals contacts with Ala94, His62, and Asn64 could account for the binding affinity decrease for PE compared to PC. PS has a seryl group (B) replacing the –N+(CH3)3 group in PC. Although the primary ammonium group in the seryl group would seem to be a candidate for undergoing π-cation interaction with Tyr96, binding by C2-domain is weak (Figure 4B) suggesting steric clashing of the seryl carboxylate group with CBL residues. PG (C) and PI (D) are not suitable for interaction with cPLA2α C2-domain due to lack of an ammonium group and steric clashing by their bulky head groups. PA (E) has only a phosphoryl moiety as its head group, which promotes weak interaction. Our SPR binding data showing much weaker binding of these phosphoglyerides compared to PC (Figure 4B) are consistent with previous findings obtained using other techniques (Mosior et al., 1998; Nalefski et al., 1998; Six and Dennis, 2003).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/44760/elife-44760-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (Upper panel) SPR data showing cPLA2α C2-domain adsorption/desorption to/from immobilized POPC vesicles at varying protein concentrations (0.1, 0.2, 0.4, 0.6, 1, 2, and 4 μM; bottom to top) and 5 μl/min flow rate. The two-headed arrow indicates switch to buffer containing no protein. The same approach was used to assess C2-domain adsorption to immobilized 18:1-SM vesicles shown in Figure 4C and 4D. The Kd values calculated from the binding isotherms for C2-domain and the point mutants are reported in Table 1. (Lower panel) SPR data showing the time-dependence for cPLA2α C2-domain adsorption/desorption to/from immobilized 18:1 SM vesicles at 0.6 μM protein concentration.
 
 Because of the proposed preference of the cPLA2α C2-domain for the PC headgroup, we evaluated C2-domain binding to sphingomyelin (SM), which also has a phosphorylcholine headgroup (Nalefski et al., 1998; Leslie and Channon, 1990; Klapisz et al., 2000; Nakamura et al., 2010). An issue in need of clarification is whether the reported inhibition of cPLA2α activity by SM arises from diminished membrane binding driven by the C2-domain or simply because of the inability of the cPLA2α esterase (i.e., catalytic domain) to hydrolyze SM after binding to the membrane. Using SPR, we detected significantly weaker binding affinity of C2–domain for vesicles composed of N–oleoyl SM (Kd = 0.93 ± 0.28 x 10−5) compared to POPC (Kd = 4.2 ± 0.8 x 10−7), despite the shared phosphorylcholine headgroup and the presence of 50 μM CaCl2 (Figure 4C). Notably, SPR measurements involving the Y96F, Y96A, and N65D mutants revealed similar relative decreases in binding to 18:1-SM vesicles compared to POPC vesicles (Figure 4D). These findings support the key involvement of Tyr96 and Asn65 in binding the phosphorylcholine headgroup of SM but indicate that other factors contribute to the weaker binding of the cPLA2α C2-domain to SM compared to PC.
 
@@ -88,13 +443,21 @@ The molecular details provided by our structure-function data on DHPC binding wi
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/44760/elife-44760-fig5-v3.jpg)
 
-**Figure 5.:** 2α C2-domain selectively interacting with the PC membrane interface.(A) Interaction of the C2-domain–DHPC structural complex with a PC membrane interface produced by ad hoc modeling. The dashed horizontal lines represent planar boundaries for the lipid headgroup and hydrocarbon regions of the PC bilayer. The crystal structure of the C2-domain–DHPC complex is represented as pale green ribbon. The Ca2+ ion that is unique to the C2-domain–DHPC complex is shown as a pale magenta sphere; whereas the other two Ca2+ ions are shown as green spheres. In the bound DHPC structure, blue, red, orange, and beige colors represent nitrogen, oxygen, phosphorus, and carbon atoms, respectively. The zoomed view shows how the orientation and position of the PC headgroup bound by the C2-domain requires no major conformational change relative to those of unbound PC headgroups comprising the membrane interface. Membrane docking orientation and penetration depth by the C2-domain are based on previous data illustrated in panel (B) (Nalefski and Falke, 1998; Ball et al., 1999; Malmberg et al., 2003; Malmberg and Falke, 2005). (B) cPLA2α C2-domain docking orientation and penetration depth at the membrane interface, as determined by electron paramagnetic resonance power saturation. [Reprinted (adapted) with permission Malmberg et al., 2003, Biochemistry 42, 13227–13240. Copyright: American Chemical Society.]. The crystal structure of the lipid-free C2-domain (PDB: RLW) is represented by the cyan ribbon with two Ca2+ ions shown as yellow spheres. The horizontal lines represent planar boundaries for the lipid headgroup and hydrocarbon regions of the bilayer. Protein spin labels oriented in their final optimized conformations are colored according to their measured depth parameters (Φ), with positive and negative depth parameters indicated by increasing red and blue color intensity, respectively.
+**Figure 5.:** (A) Interaction of the C2-domain–DHPC structural complex with a PC membrane interface produced by ad hoc modeling. The dashed horizontal lines represent planar boundaries for the lipid headgroup and hydrocarbon regions of the PC bilayer. The crystal structure of the C2-domain–DHPC complex is represented as pale green ribbon. The Ca2+ ion that is unique to the C2-domain–DHPC complex is shown as a pale magenta sphere; whereas the other two Ca2+ ions are shown as green spheres. In the bound DHPC structure, blue, red, orange, and beige colors represent nitrogen, oxygen, phosphorus, and carbon atoms, respectively. The zoomed view shows how the orientation and position of the PC headgroup bound by the C2-domain requires no major conformational change relative to those of unbound PC headgroups comprising the membrane interface. Membrane docking orientation and penetration depth by the C2-domain are based on previous data illustrated in panel (B) (Nalefski and Falke, 1998; Ball et al., 1999; Malmberg et al., 2003; Malmberg and Falke, 2005). (B) cPLA2α C2-domain docking orientation and penetration depth at the membrane interface, as determined by electron paramagnetic resonance power saturation. [Reprinted (adapted) with permission Malmberg et al., 2003, Biochemistry 42, 13227–13240. Copyright: American Chemical Society.]. The crystal structure of the lipid-free C2-domain (PDB: RLW) is represented by the cyan ribbon with two Ca2+ ions shown as yellow spheres. The horizontal lines represent planar boundaries for the lipid headgroup and hydrocarbon regions of the bilayer. Protein spin labels oriented in their final optimized conformations are colored according to their measured depth parameters (Φ), with positive and negative depth parameters indicated by increasing red and blue color intensity, respectively.
 
 In other recent studies, cPLA2α has been implicated as an inducer of membrane structural changes in cells (Grimmer et al., 2005; San Pietro et al., 2009; Cai et al., 2012). This function occurs independently of catalytic activity, but is important for physiological processes such as the regulation of Fc-receptor-mediated phagocytosis (Zizza et al., 2012). The membrane structural alterations that are mediated by cPLA2α have been linked to the C2–domain, which can generate membrane curvature and tubulation in vitro (Ward et al., 2012). Penetration by the cPLA2α C2-domain into POPC or POPC/POPE/POPS membranes induces positive membrane curvature that is abrogated by Y96A mutation, F35A/L39A double mutation, or Ca2+ chelation by EGTA (ethylene glycol-bis(β-aminoethyl ether) (Ward et al., 2012). In this regard, it is interesting to note that the crystal structure of the C2-domain–DHPC complex contains three C2-domain molecules (protomers A, B, C) in the asymmetric unit, with the six protomers in two asymmetric units forming a ring-like structure (Figure 1—figure supplement 2, upper left panel). The DHPC molecules contribute to the molecular packing of neighboring molecules by locating inside the ring, resulting in a tube-like structure that is enclosed by the C2-domain ring (Figure 1—figure supplement 2, upper right panel). Thus, the crystal packing superstructure of the cPLA2α C2-domain complexed with DHPC supports the induction of positive membrane curvature and tubulation reported for this C2-domain (Ward et al., 2012), an arrangement not supported well by the different crystal packing structure of lipid-free C2-domain (Figure 1—figure supplement 2, lower panel).
 
-## Comparison of phospholipid recognition by the PKCα C2-domain and other C2-domains
+### Comparison of phospholipid recognition by the PKCα C2-domain and other C2-domains
 
 Structural analyses of four other C2-domains containing bound phosphoglycerides have been reported. In the C2-domains of PKCα and rabphilin-3A, phosphatidylinositol 4,5-bisphosphate binding occurs at a basic residue cluster without Ca2+ involvement (Guerrero-Valero et al., 2009; Zizza et al., 2012; Verdaguer et al., 1999). By contrast, only two other C2–domain structures have to date been found to utilize bound Ca2+ to mediate phosphoglyceride binding: PKCα C2–domain complexed with 1,2-dicaproyl-sn-phosphatidyl-L-serine (DCPS), a short-chain PS analog (Verdaguer et al., 1999) and Syt1 C2B–domain complexed with phosphoserine (Guillén et al., 2013). In the DCPS–PKCα C2–domain structure (Figure 6B), one of three bound Ca2+ ions is coordinated in a position similar to that of Ca1 in the cPLA2 C2–domain (Figure 6A), whereas the others are located at different positions far from CBL2 (Figure 6B). In sharp contrast to DHPC recognition by cPLA2α, binding of the phosphoryl group of DCPS involves only Ca1. The seryl moiety of the head group docks mainly with CBL1 but in an orientation (Figure 6B) that is almost opposite to that of the bound phosphorylcholine in the cPLA2α C2–domain–DHPC complex (Figure 6A). The seryl carboxyl group hydrogen bonds with Asn189 on CBL1, whereas the carbonyl groups of the fatty acid chains interact with CBL2 and CBL3. In the structures of the Syt1 C2B-domain complexed with phosphoserine (Ferrer-Orta et al., 2017) (Figure 6C) and the lipid-free Syt1 C2A-domain (Shao et al., 1998) (Figure 6—figure supplement 1), three bound Ca2+ ions are coordinated similarly to those in the cPLA2α C2-domain but only the Ca1 position is shared with the cPLA2α C2-domain (Figure 6A). In the Syt1 C2B–domain (Figure 6C), the seryl moiety docks deeply towards the Ca2+ ion sites, whereas the phosphoryl group interacts with Lys366 in CBL3, but not with any Ca2+ ions. Within the seryl moiety, the carboxyl group interacts with Ca1 and the main chain of Lys366, while the amine group forms a hydrogen bond with Asp309. This binding mode differs from PS recognition by PKCα, although the lack of fatty acyl chains might be the cause of the different interaction. Thus, it is clear that PC recognition by the cPLA2α C2-domain (Figure 6A) is very different from PS recognition by the C2-domains of PKCα2 and Syt1 (Figure 6B and C). Among eukaryotes, Tyr96 and Asn65 are absolutely conserved in cPLA2α, but not in PKCs or synaptotagmin1 (Figure 1A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/44760/elife-44760-fig6-v3.jpg)
+
+**Figure 6.:** (A) cPLA2α C2-domain bound to DHPC determined in this study. (B) PKCα C2-domain bound to phosphatidylserine (PDB 1DSY). (C) Synaptotagmin-1 C2B-domain bound to phosphoserine (PDB 2YOA). For comparison, Ca4 (purple sphere) and CaPC (pink sphere) in panel (A) are overlaid as pale white spheres in panels (B) and (C). Residues that are interacting directly with ligand are shown as stick models and labeled in red.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/44760/elife-44760-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** cPLA2α C2-domain complexed with DHPC. cPLA2α C2-domain (green) is shown with bound Ca2+ (green) and bound DHPC (yellow). Both Ca4 and CaPC are directly involved in DHPC binding. Synaptotagin-1 C2A domain (beige) also binds three Ca2+ atoms (plum) (PBD:1BYN). Only one Ca2+ binding site (Ca1) overlaps with cPLA2 C2-domain. In contrast, all three Ca2+ binding positions in synaptotagin-1 C2B domain (Figure 6C) overlap with those in synaptotagin-1 C2A. Ca2+ binding site identification corresponds with the numbering system of Rizo and Südhof (1998).
 
 Recent structural studies of another cPLA2, cPLA2δ, have provided molecular insights into the apo-form and the enzyme’s catalytic domain complexed with a covalently linked inhibitor (tri-unsaturated 18-carbon phosphonate), but not into phosphoglyceride binding by the enzyme’s two tandem C2-domains (Wang et al., 2016). Although a general model is proposed for the membrane interaction of cPLA2δ, involving its tandem C2-domains, this model does not address the issue of phosphoglyceride selectivity.
 
@@ -104,47 +467,364 @@ Notably, sequence alignment of the C2-domains of cPLA2α, cPLA2δ, and three ot
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/44760/elife-44760-fig7-v3.jpg)
 
-**Figure 7.:** 2 isoforms showing the uniqueness of the Tyr96 residue in the cPLA2α C2-domain.β-strand sequences (arrows) as well as CBL2 and CBL3 sequences (bracketed) are shown above the alignment. Green highlights represent identical residues. Cyan highlights represent similar residues. The yellow highlights facilitate comparison of other isoform residues with N65 and Y96 (red) which are key for PC selectivity by the cPLA2α C2-domain. Underlined black residues in cPLA2α (R59, R61, and H62) participate in C1P binding (Stahelin et al., 2007; Ward et al., 2013). Sequence alignment was generated using Clustal Omega.
+**Figure 7.:** β-strand sequences (arrows) as well as CBL2 and CBL3 sequences (bracketed) are shown above the alignment. Green highlights represent identical residues. Cyan highlights represent similar residues. The yellow highlights facilitate comparison of other isoform residues with N65 and Y96 (red) which are key for PC selectivity by the cPLA2α C2-domain. Underlined black residues in cPLA2α (R59, R61, and H62) participate in C1P binding (Stahelin et al., 2007; Ward et al., 2013). Sequence alignment was generated using Clustal Omega.
 
-## Conclusions
+### Conclusions
 
 Our findings support a function for cPLA2α Tyr96 [via cation-π interaction with -N+(CH3)3] as a key specificity determinant for the phosphorylcholine headgroup of PC, whereas Asn65 tethers with the lipid phosphate moiety and facilitates CaPC complexation. Notably, Ca4 also functions to tether the PC phosphate moiety to the protein. Bridging by CaPC to the PC sn-2 chain ester linkage further aids enzyme binding and ‘scooting’ on PC membranes. Further enhancement of C2-domain binding to the membrane, via interaction with Arg59, Arg61 and His 62, is expected when PC-enriched membranes also contain C1P. Taken together, the findings emphasize the unique design features associated with cPLA2α C2-domain structure and function, as well as the versatility of lipid recognition exhibited by different C2–domains. In cPLA2α, the C2-domain is structurally designed to target PC-rich membrane regions in order to increase the enzymatic efficiency of the catalytic domain, which prefers polyunsaturated PCs.
 
 ## Materials and methods
 
-## Strategy employed to achieve a soluble cPLA2α C2-domain
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 (DE) Star competent cells</td>
+      <td>ThermoFisher Scientific</td>
+      <td>SKU# C6010-03</td>
+      <td>Cells for protein expression</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (E. coli)</td>
+      <td>pET SUMO</td>
+      <td>Snapgene</td>
+      <td>https://www.snapgene.com/resources/plasmid-files/?set=ta_and_gc_cloning_vectors&amp;plasmid=pET_SUMO _(linearized)</td>
+      <td>Protein expression vector</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>JCSG Core Suites</td>
+      <td>Qiagen</td>
+      <td>https://www.qiagen.com/us/shop/sample-technologies/protein/crystallization/the-jcsg-core-suites/#orderinginformation</td>
+      <td>Protein crystallization; crystallization screening kit</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dihexanoyl -sn-glycero-3- phosphocholine</td>
+      <td>Avanti Polar Lipids</td>
+      <td>https://avantilipids.com/product/850305/</td>
+      <td>DHPC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-palmitoyl-2- oleoyl-glycero-3- phosphocholine</td>
+      <td>Avanti Polar Lipids</td>
+      <td>https://avantilipids.com/product/850457/</td>
+      <td>POPC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-L-serine</td>
+      <td>Avanti Polar Lipids</td>
+      <td>https://avantilipids.com/product/840034/</td>
+      <td>POPS</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine</td>
+      <td>Avanti Polar Lipids</td>
+      <td>https://avantilipids.com/product/850757</td>
+      <td>POPE</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-palmitoyl-2- oleoyl-sn-glycero-3-phosphate</td>
+      <td>Avanti Polar Lipids</td>
+      <td>https://avantilipids.com/product/840857</td>
+      <td>POPA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-palmitoyl-2-oleoyl-sn-glycero-3-phospho-(1'-rac-glycerol)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>https://avantilipids.com/product/840457</td>
+      <td>POPG</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-oleoyl-D-erythro-sphingosylphosphorylcholine</td>
+      <td>Avanti Polar Lipids</td>
+      <td>https://avantilipids.com/product/860587</td>
+      <td>18:1 SM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dioleoyl-sn-glycero-3-phosphoethanolamine-N-(7-nitro-2–1,3-benzoxadiazol-4-yl)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>https://avantilipids.com/product/810145</td>
+      <td>NBD-PE</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GeneCards</td>
+      <td>http://genecards.org</td>
+      <td>RRID:SCR_002773</td>
+      <td>Orthologs; retrieval of protein sequences for human, mouse, and chicken proteins</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UniProtKB</td>
+      <td>http://www.uniprot.org/help/uniprotkb</td>
+      <td>RRID:SCR_004426</td>
+      <td>C2-domain sequences for various proteins and organisms</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NCBI Protein</td>
+      <td>http://www.ncbi.nlm.nih.gov/protein</td>
+      <td>RRID:SCR_003257</td>
+      <td>Protein sequences for human, mouse, and chicken proteins</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clustal Omega</td>
+      <td>http://www.ebi.ac.uk/Tools/msa/clustalo/</td>
+      <td>RRID:SCR_001591</td>
+      <td>Software package for multiple sequence alignment</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clustal W2</td>
+      <td>http://www.ebi.ac.uk/Tools/ msa/clustalw2/</td>
+      <td>RRID:SCR_002909</td>
+      <td>Multiple sequence alignment program for DNA or proteins.</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>http://plato.cgl.ucsf.edu/chimera/</td>
+      <td>RRID:SCR_004097</td>
+      <td>Program for interactive visualization and analysis of molecular structures</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Protein Data Bank (PDB)</td>
+      <td>http://www.wwpdb.org/</td>
+      <td>RRID:SCR_006555</td>
+      <td>Macromolecular structure archive that oversees and reviews deposition and processing data</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+      <td>RRID:SCR_014222</td>
+      <td>Software for macromolecular model building, completion and validation, and protein modeling using X-ray data</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>https://www.phenix-online.org/</td>
+      <td>RRID:SCR_014224</td>
+      <td>Python-based software suite for determination of X-ray crystallographic molecular structures</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMol</td>
+      <td>http://www.pymol.org/</td>
+      <td>RRID:SCR_000305</td>
+      <td>Data processing, 3D visualization and rendering software</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PDBeFold</td>
+      <td>http://pdbe.org/fold/</td>
+      <td>RRID:SCR_004312</td>
+      <td>Co-alignment of compared structures</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Cytosolic phospholipase A2</td>
+      <td>https://www.uniprot.org/uniprot/P47712</td>
+      <td></td>
+      <td>Human cPLA2 sequence</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Cytosolic phospholipase A2</td>
+      <td>https://www.uniprot.org/uniprot/P47713</td>
+      <td></td>
+      <td>Mouse cPLA2 sequence</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Cytosolic phospholipase A2</td>
+      <td>https://www.uniprot.org/uniprot/P49147</td>
+      <td></td>
+      <td>Chicken cPLA2 sequence</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strategy employed to achieve a soluble cPLA2α C2-domain
 
 The C2-domain sequence used to achieve solubility during expression and to avoid the need for protein refolding was developed by consideration of the original lipid-free, Ca2+-bound crystal structure (Perisic et al., 1998) that used a truncated C2-domain (residues 17–141) from human cPLA2α. However, we did not introduce the C-terminal C139A and C141S substitutions that were implemented to eliminate possible refolding complications induced by Cys residues, because our goal was to recover soluble protein after expression in Escherichia coli. In our constructs, the BamHI and SalI restriction sites were used for open reading frame (ORF) ligation into a modified pET-28-SUMO vector (kanamycin-resistance). Prior to insertion, the open reading frames were mutated to remove a single BamHI restriction site within the C2-domain ORF without changing the protein sequence. The complete protein sequences for cPLA2α from human, mouse, and chicken are provided in Figure 1—figure supplement 1. The constructs, which were verified by DNA sequencing, enabled the expression of proteins containing Ulp1-cleavable, N-terminal 6xHis-SUMO tags. Testing for their solubility and SUMO-tag cleavability revealed the following:
 
-## Human
+#### Human
 
-## Chicken
+#### Chicken
 
-## Protein expression and purification
+### Protein expression and purification
 
 Protein expression was performed at 20°C in Luria-Bertani medium containing 0.1 mM isopropyl-β-D-thiogalactopyranoside. Cells expressing the C2-domain were harvested, suspended in 20 mM Tris-HCl buffer (pH 8.0) containing 500 mM NaCl and disrupted by French press. After ultracentrifugation, the supernatant was applied onto a Ni-NTA resin (Qiagen) and treated with Ulp1 to remove the N-terminal His6-SUMO tag. Eluted proteins were further purified by anion exchange (HiTrap Q HP, GE Healthcare) and gel filtration (Superdex 75 pg, GE Healthcare) chromatography. Purified protein was concentrated up to 20 mg/mL in 20 mM MES-NaOH buffer (pH 6.0) containing 100 mM NaCl and 2.5 mM CaCl2 and stored at −80°C until use.
 
-## Crystallization and data collection
+### Crystallization and data collection
 
 All lipids used in this study were obtained from Avanti Polar Lipids and dissolved in ethanol. Crystallization conditions were initially screened using a Mosquito crystallization robot (TTP Labtech) with commercial crystallization solution kits, JCSG Core Suite I-IV and PACT Suite (QIAGEN). Despite extensive crystallization trials with human C2-domainGly-17–140, the only resulting protein crystals contained two bound Ca2+ but no bound lipid. Successful crystallization of C2-domain containing bound DHPC and three bound Ca2+ions was obtained with the chicken C2-domain16–140. The best crystal complexes were obtained from solutions containing 1 mM protein, 5 mM DHPC and reservoir solution containing 100 mM HEPES-NaOH buffer (pH 7.0), 1.4 M MgCl2 and 0.6 M NaCl at 20°C. Crystal complexes were transferred into a cryoprotective solution containing saturated NaCl and flash-cooled at 100 K. X-ray diffraction data were collected at 100 K on 24-ID-C beamline at the Advanced Photon Source. Data were processed and scaled using HKL-2000 (Otwinowski and Minor, 1997). The crystal data and refinement statistics are summarized in Table 5 and are deposited in the Protein Data Bank (accession code 6IEJ).
 
-## Structure determination and refinement
+**Table 5.**
+ X-ray data collection statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Native</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>C222</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>108.3, 187.4, 68.8</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>1.00000</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å) *</td>
+      <td>50–2.20 (2.24–2.20)</td>
+    </tr>
+    <tr>
+      <td>Rsym*</td>
+      <td>5.9 (36.3)</td>
+    </tr>
+    <tr>
+      <td>I/σI*</td>
+      <td>30.9 (1.9)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)*</td>
+      <td>99.5 (97.7)</td>
+    </tr>
+    <tr>
+      <td>Redundancy*</td>
+      <td>7.7 (6.6)</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>47–2.2</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>35,185</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree (%)</td>
+      <td>22.4/24.9</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>2998</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td>Ion</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>75</td>
+    </tr>
+    <tr>
+      <td>B-factor (Å2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>59.9</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>56.6</td>
+    </tr>
+    <tr>
+      <td>Ion</td>
+      <td>54.2</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>81.3</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.117</td>
+    </tr>
+  </tbody>
+</table>
+
+_One crystal was used for each data set.*Highest resolution shell is shown in parenthesis._
+
+### Structure determination and refinement
 
 The structure of the crystal complex was determined by a molecular replacement method using the lipid-free structure of the human cPLA2α C2-domain (PDB: 1RLW) as a starting model. The built model was refined using alternating cycles of the Coot (Emsley and Cowtan, 2004) and PHENIX programs (Adams et al., 2002). The model was refined to 2.2 Å resolution. Refinement statistics are summarized in Table 5.
 
 Electron density mapping of the lipid ligand involved consideration of the chemical structures of both DHPC and MES because MES was included in our crystallization buffer. The omit map (Figure 1D) clearly traced density corresponding to the -N+(CH3)3 and phosphate groups of the DHPC head group, as well as extra density corresponding to the ester groups of fatty acid chains rather than to the morpholino and sulfate groups of MES. When we tried to place the MES molecule at this position, the extra strong density corresponding to fatty acid chains stood out. Thus, we identified our structure as DHPC bound to C2–domain.
 
-## Structure and sequence comparison
+### Structure and sequence comparison
 
 Multiple sequence alignment was performed by CLUSTALW (Emsley and Cowtan, 2004). Pairwise structural comparisons were performed using Cα-atom positions by the PDBeFold (Adams et al., 2002) in conjunction with SSM (Krissinel and Henrick, 2004) and structure figures were prepared using the PyMOL Molecular Graphics System, Version 1.7 Schrödinger, LLC (http://www.pymol.org/) and UCSF Chimera 1.11.2 (http://www.cgl.ucsf.edu/chimera/).
 
-## Point-mutant analyses of C2-domain translocation to PC model membranes
+### Point-mutant analyses of C2-domain translocation to PC model membranes
 
 Partitioning of C2-domain and various point mutants to PC model membranes was monitored by FRET and SPR. FRET measurements were performed using Trp/Tyr emission of C2-domain as energy donor and dansyl-PE-POPC-DHPC (5:45:50) bicelle-dilution vesicles as energy acceptors. Bicelle-dilution vesicles were formed by mixing the POPC, dansyl-PE and DHPC in chloroform, drying under a stream of nitrogen and placing under vacuum for ~2 hr, before resuspending in buffer (20 mM Tris, pH 7.5, 150 mM NaCl and 50 µM CaCl2). Unilamellar POPC vesicle preparation by POPC/DHPC bicelle mix dilution is detailed in Gao et al., 2020; Gao et al., 2021. Binding reactions included C2-domain (0.5 µM) and various amounts of bicelle-dilution vesicles (PC concentration 0.44 to 20 µM) in 2.5 ml of buffer. In binding reactions assessing calcium dependence (2.5 ml total volume), the protein and bicelle dilution-vesicle concentrations (0.5 µM and 4 µM, respectively) were held constant while the Ca2+ was varied. FRET measurements were performed at 25°C in a temperature-controled (±0.1°C) cuvette (NesLab RTE-111, ThermoFisher) using a SPEX FluoroLog-3 spectrofluorimeter (Horiba Scientific). Excitation and emission wavelengths were 284 nm and 520 nm, with band-pass settings of 5 and 10 nm, respectively. Inner filter effects were avoided by using low protein concentration (optical density @ 295 nm <0.1). Relative FRET was calculated as (Iobs – Imin) / (Imax – Imin), where Imin is the dansyl emission in the absence of Ca2+ and Imax is the maximal energy transfer obtained from the binding curve. FRET fluorescence data were plotted as the relative fluorescence signal versus PC concentration and fitted to the equation described by Rao et al. (2005).
 
 SPR measurements were performed using a Biacore T200 system (GE Healthcare Bio-Sciences Corp) at 25°C under previously described conditions (Stahelin et al., 2007; Ward et al., 2012; Ward et al., 2013; Zhai et al., 2017; Ochoa-Lizarralde et al., 2018). An uncoated flow channel was used as a control surface. POPC vesicles (1 mM), prepared by sonication and centrifugation, were captured to a final surface density of 4000–6000 response units on a L1 Sensor Chip to establish the baseline. Each lipid layer was stabilized by injecting 10 μl of 50 mM NaOH three times. Then 100 μl of protein in 10 mM HEPES (pH 7.4), 0.16 M KCl and 50 μM CaCl2 was injected at 5 μl/min flow rate and protein adsorption was monitored. After 20 min, a switch to buffer lacking protein occurred (Figure 4—figure supplement 2) but the strong adsorption of the C2-domain required washing with 10 μl of 50 mM NaOH to regenerate the lipid surface. Complete cleaning of the sensor chip could be accomplished by washing with 20 mM CHAPS detergent. The normalized saturation response Req was plotted versus protein concentration (C), and Kd values were determined by nonlinear least-squares fitting using the equation: Req = Rmax/(1 + Kd/C). Each data set was repeated three times to calculate a standard deviation value.
 
-## cPLA2 activity measurements
+### cPLA2 activity measurements
 
 A mixed micelle was utilized to measure PAPC hydrolysis by cPLA2 as previously reported (Wijesinghe et al., 2009). Briefly 4x assay buffer (2 ml) was made using 320 mM HEPES, 600 mM NaCl, 19.42 μM CaCl2 (10 μM free Ca2+), 10 μM EGTA, 4 mM DTT, and 2.39% H2O. For K0.5 analysis, micelles were created by drying down ten separate concentrations of PAPC by nitrogen and then reconstituting in 8 mM Triton-X100. Micelle concentrations are as follows: 50 μM PC (2.4% mol PC), 100 μM PC (4.7% mol PC), 150 μM PC (6.9% mol PC), 200 μM PC (9.1% mol PC), 300 μM PC (13% mol PC), 400 μM PC (16.6% mol PC), 500 μM PC (20% mol PC), 800 μM PC (28.6% mol PC), 1200 μM PC (37.5% mol PC), and 1600 μM PC (44.4% mol PC). For KsA analysis, all six concentrations of micelles were created by first making a 1600 μM PC micelle by drying down PAPC and reconstituting in Triton-X100. The 1200 μM, 800 μM, 500 μM, 300 μM, and 100 μM PC micelles were made via serial dilution of the 1600 μM micelle with LCMS-grade H2O.
 
@@ -154,6 +834,6 @@ AA and AAd8 were purchased from Cayman Chemicals and analyzed using an adapted m
 
 UPLC conditions were: Pumping Mode, Binary Flow; Total Flow, 0.7000 mL/min; Injection Volume, 10 μL; Column Oven, 60 °C. The solvents used for reverse phase UPLC separation across a 6 min run were: Solvent A – 60:40 acetonitrile/water with 0.1% formic acid and 10 mM ammonium formate; and Solvent B – 10:90 acetonitrile/isopropanol with 0.1% formic acid and 10 mM ammonium formate. Solvent conditions for UPLC separation were: 10% Solvent B from 0 to 1 min, linear increase from 10–100% Solvent B from 1 to 4 min; constant 100% Solvent B from 4 to 5 min; at 5 min, a drop from 100–10% solvent B; from 5 to 6 min, 10% constant solvent B; and at 6.1 min, Controller Stop. Because membranes are allosteric activators of cPLA2α in vitro (Mouchlis et al., 2015), both kinetic curves were fit using a non-linear regression allosteric sigmoidal best-fit approach. Statistical analyses were a single ANOVA with a Tukey HSD post-hoc test with p<0.01 considered significant.
 
-## Accession number
+### Accession number
 
 The atomic coordinates and structure factors for chicken cPLA2α C2-domain bound to DHPC are deposited in Protein Data Bank under accession code 6IEJ.

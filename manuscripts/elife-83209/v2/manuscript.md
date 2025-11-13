@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05bnh6r87 Meinig School of Biomedical Engineering, Cornell University Ithaca United States
+1. Meinig School of Biomedical Engineering, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))
 
 † Corresponding author
 
@@ -29,45 +29,73 @@ Here, we explored the mechanism by which the shear and hydrostatic stress regula
 
 ## Results
 
-## YAP expression is spatiotemporally regulated
+### YAP expression is spatiotemporally regulated
 
 We collected embryonic hearts at different developmental stages from wild type mice and examined the YAP activation in heart valves. We found that YAP was expressed in both mesenchyme and endothelium of outflow tract (OFT) and atrioventricular (AV) cushions at E11.5 (Figure 1A). YAP activation in VIC increased significantly at E14.5 (Figure 1B) then dropped at E17.5 (Figure 1C). This decrease in YAP activation during later remodeling stages was significant in AV valves but insignificant in SL valves, as the development was not uniform across all valves. In VECs on the outflow side, nuclear YAP expression (triangles) increased significantly during later remodeling stages (Figure 1D). Although in VECs on the inflow side, cytoplasmic YAP expression (arrows) was stronger throughout all stages.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/83209/elife-83209-fig1-v2.jpg)
+
+**Figure 1.:** (A). YAP was expressed in both cushion mesenchyme and endothelium (triangles) at E11.5. (B). YAP is intensively expressed in VICs (white circles) at E14.5 but seldom detected in VECs (dashed arrows). (C). YAP expression remains in VICs on the tip regions and in VECs on the fibrosa side at E17.5 (solid arrows), while disappears in VECs on the ventricularis or ventricularis (dashed arrows) (D) Intensity ratios of nuclear vs. cytoplasmic YAP expressions in VECs and VICs of AV and SL valves at different stages. Data are presented by mean ± SEM, n=6 sections from three embryos, *p<0.05, two-way ANOVA tests. OFTC, outflow tract cushion; AVC, atrioventricular cushion; I, inferior cushion; S, superior cushion; D, distal cushion; P, proximal cushion; LA, left atrium; LV, left ventricle; RV, right ventricle; IVS, interventricular septum; V, ventricularis; A, atrialis; F, fibrosa.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/83209/elife-83209-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** LA, left atrium; RA, right atrium; LV, left ventricle; RV, right ventricle; V, ventricularis; A, atrialis; F, fibrosa. Scale bar: 100 μm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/83209/elife-83209-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** chick embryonic valves at different developmental stages, measures YAP transcriptional activity and the effect of Hippo pathway on YAP activities. Mouse data were normalized to E11.5 data, chick data were normalized to HH25 data. n>10 isolated valves. *p<0.05, two-way ANOVA tests.
 
 We also examined the YAP activity in chick embryonic hearts at Hamburger–Hamilton stage (HH) 25, HH30 and HH36 (Figure 1—figure supplement 1). It followed the same spatiotemporal pattern. YAP activation in VICs surged at HH30 then dropped at HH36. VECs on the outflow side had an upregulated nuclear YAP expression while YAP expression in VECs on the inflow side was mainly in cytoplasm.
 
 We further examined YAP transcriptional activity to identify the upstream of YAP activation. YAP target genes THBS1, ANKRD1 and PTX3 were elevated by almost 10-fold at E14.5 and HH31 when compared to E11.5 or HH25 cushions, respectively (Figure 1—figure supplement 2). The expressions of those genes then reduced significantly during later stages of remodeling. In comparison, gene expressions of LATS1/2, the upstream of YAP in the Hippo pathway, had little change during the valve growth and remodeling. This showed that the YAP activity was largely independent of the Hippo pathway.
 
-## Shear and hydrostatic stress regulate YAP activity
+### Shear and hydrostatic stress regulate YAP activity
 
 In addition to the co-effector of the Hippo pathway, YAP is also a key mediator in mechanotransduction. Indeed, the spatiotemporal activation of YAP correlated with the changes in the mechanical environment. During valve remodeling, unidirectional shear stress (USS) developed on the inflow surface of valves, where YAP was rarely expressed in the nuclei of VECs (Figure 2A). On the other side, OSS developed on the outflow surface, where VECs with nuclear YAP localized. The YAP activation in VICs also correlated with hydrostatic pressure. The pressure generated compressive stress (CS) in the tips of valves, where VICs with nuclear YAP localized (Figure 2B). Although tensile stress (TS) was created in the elongated regions, where YAP was absent in VIC nuclei.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/83209/elife-83209-fig2-v2.jpg)
 
-**Figure 2.:** (A). Unidirectional shear stress (USS) developed on the inflow surface (solid line), where YAP was rarely expressed in the nuclei of VECs (dash arrows). Oscillatory Shear Stress (OSS) developed on the outflow surface (dash line), where VECs with nuclear YAP localized (solid arrows). (B). Compressive Stress (CS) was generated in the tips of valves (solid circle), where VICs with nuclear YAP localized. Tensile Stress (TS) is created in the elongated regions (dash circle), where YAP was absent in VIC nuclei. (C). When applied on a monolayer of VEC, high USS restricted YAP in cytoplasm, low OSS promoted YAP nuclear localization. (D). Cushion explants were cultured under compress stress (CS), tensile stress (TS) and unloaded (U) conditions for 24 hr. Solid outlines describe the explant morphologies at 0 hr, dash outlines describe the explant morphologies at 24 hr. (E). Intensity ratios of nuclear vs. cytoplasmic YAP expressions for experiments in (C, F). Intensity ratios of nuclear vs. cytoplasmic YAP expressions for experiments in (D). Data are presented by mean ± SEM, n=15 explant valves from eight embryos, *p<0.05, two-tailed student t-tests.Figure 2—source data 1.Figure 2E and F.
+**Figure 2.:** (A). Unidirectional shear stress (USS) developed on the inflow surface (solid line), where YAP was rarely expressed in the nuclei of VECs (dash arrows). Oscillatory Shear Stress (OSS) developed on the outflow surface (dash line), where VECs with nuclear YAP localized (solid arrows). (B). Compressive Stress (CS) was generated in the tips of valves (solid circle), where VICs with nuclear YAP localized. Tensile Stress (TS) is created in the elongated regions (dash circle), where YAP was absent in VIC nuclei. (C). When applied on a monolayer of VEC, high USS restricted YAP in cytoplasm, low OSS promoted YAP nuclear localization. (D). Cushion explants were cultured under compress stress (CS), tensile stress (TS) and unloaded (U) conditions for 24 hr. Solid outlines describe the explant morphologies at 0 hr, dash outlines describe the explant morphologies at 24 hr. (E). Intensity ratios of nuclear vs. cytoplasmic YAP expressions for experiments in (C, F). Intensity ratios of nuclear vs. cytoplasmic YAP expressions for experiments in (D). Data are presented by mean ± SEM, n=15 explant valves from eight embryos, *p<0.05, two-tailed student t-tests.
 
 To study the effect of shear stress on the YAP activity in VECs, we applied USS and OSS directly onto a monolayer of freshly isolated VECs. The VEC was obtained from AV cushions of chick embryonic hearts at HH25. The cushions were placed on collagen gels with endocardium adherent to the collagen and incubated to enable the VECs to migrate onto the gel. We then removed the cushions and immediately applied the shear flow to the monolayer for 24 hr. The low stress OSS (2 dyn/cm2) promoted YAP nuclear translocation in VEC (Figure 2C and E), while high stress USS (20 dyn/cm2) restrained YAP in cytoplasm.
 
 To study the effect of hydrostatic stress on the YAP activation in VICs, we used media with different osmolarities to mimic the CS and TS. CS was induced by hypertonic condition while TS was created by hypotonic condition, and the Unloaded (U) condition refers to the osmotically balanced media. Notably, in vivo hydrostatic pressure is generated by flowing blood, while in vivo osmotic pressure is generated by cardiac contractility and plays a critical role in the mechanotransduction during valve development (Vignes et al., 2022). Despite the different in vivo origination, the osmotic pressure provides a reliable model to mimic the hydrostatic pressure in vitro (Bassen et al., 2021). We cultured HH27 AV cushion explants under different loading conditions for 24 hr and found that the trapezoidal cushions adopted a spherical shape (Figure 2D). TS loaded cushions significantly compacted, and the YAP activation in VICs of TS-loaded cushions was significantly lower than that in CS loaded VICs (Figure 2F).
 
-## Loss of YAP limited cell proliferation and promoted valve shaping
+### Loss of YAP limited cell proliferation and promoted valve shaping
 
 To study the function of YAP in valve growth and remodeling, we added a pharmacological inhibitor of YAP, verteporfin (VP), into the CS (pro-growth) and U conditions. The VP inhibits the interaction between YAP and TEAD, which in turn, blocks transcriptional activation of targets downstream of YAP (Kagawa et al., 2022). We cultured cushion explants under CS, CS + VP and U+VP. We confirmed that the concentration of VP we used (5 mM) did not compromise cell viability (Figure 3—figure supplement 1A). Successful YAP inhibition (Figure 3—figure supplement 1C) reduced the cushion size (Figure 3A vs. Figure 3B), regardless of the media condition. In contrast to the spherical shape of cushions cultured under CS, valves cultured in media with VP maintained their trapezoidal shape, which was characterized by circularity (Figure 3E). Further investigation demonstrated that loss of YAP significantly inhibits the proliferation of VIC, as characterized by pHH3 (Figure 3C and F). In addition, the YAP inhibition significantly strengthened the expression of VE-cadherin between VECs (Figure 3D and G). Cushions normally just had a single layer of endothelium, but the YAP inhibited valves showed five or more layers of endothelium.
 
-## Activation of YAP promoted cell proliferation and inhibited valve elongation
+![Figure 3.](https://cdn.elifesciences.org/articles/83209/elife-83209-fig3-v2.jpg)
+
+**Figure 3.:** (A-B). Cushion explants were cultured under CS (compressive stress), CS +VP (compressive stress +YAP inhibitor), U+VP (unloaded +YAP inhibitor) conditions for 24 hr. (C). After 24-hr-culture, explants were stained for YAP (green) and proliferation marker pHH3 (red, arrows), or (D). YAP (green) and VE-Cadherin (red). (E). Circularity of explants cultured under different stress conditions, which describes how close a valve is to a perfect sphere. (F). Percentages of cells expressing pHH3 under different culture conditions. (G). Average intensities of VE-Cad expression under different culture conditions, the intensities are normalized to maximum intensity. Data are presented by mean ± SEM, n=15 explant valves from eight embryos, *p<0.05, two-tailed student t-tests.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83209/elife-83209-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Live and dead staining of (A). verteporfin and (B). PY-60 treated cushion explants. (C). Expression ratios of nuclear vs. cytoplasmic YAP show the effective inhibition of YAP by verteporfin. (D). Survival rate was not affected by the treatments.
+
+### Activation of YAP promoted cell proliferation and inhibited valve elongation
 
 For YAP gain-of-function study, a small molecule PY-60 was added into TS (pro-compaction) and U conditions. The PY-60 treatment promoted the association of YAP and TEAD (Shalhout et al., 2021). Cell viability did not compromise by PY-60 (10 mM) treatments (Figure 3—figure supplement 1B). YAP activation reversed the compaction trend of valves under TS and U conditions and drove a growth in valve size (Figure 4A vs. Figure 4B). All valves adopted the spherical shape no matter whether they grew or compacted. The pHH3 staining showed that the YAP activation significantly elevated VIC proliferation regardless of loading conditions (arrows, Figure 4C and G). The expression of VE-cadherin in the YAP activated endothelium was significantly weaker than that in YAP inhibited endothelium (Figure 4D).
 
-## YAP inhibition promoted an in vivo-like stiffness increase
+![Figure 4.](https://cdn.elifesciences.org/articles/83209/elife-83209-fig4-v2.jpg)
+
+**Figure 4.:** (A-B). Cushion explants were cultured under U+PY-60 (unloaded +YAP activator), TS +PY-60 (tensile stress +YAP activator), TS (tensile stress) conditions for 24 hr. (C). After 24-hr-culture, explants were stained for YAP (green) and proliferation marker pHH3 (red, arrows), or (D). YAP (green) and endothelial cell-cell junction VE-Cadherin (red). (E). Circularity of explants cultured under different stress conditions, which describes how close a valve is to a perfect sphere. (F). Stiffness of cushion explants cultured with YAP activator and inhibitor, which was measured by micropipette aspiration measurement. (G). Percentages of cells expressing pHH3 under different culture conditions. (H). Average intensities of VE-Cad expression under different culture conditions, the intensities are normalized to maximum intensity. Data are presented by mean ± SEM, n=15 explant valves from eight embryos, *p<0.05, two-tailed student t-tests.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83209/elife-83209-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A). Pressure-stretch curves of cushion explants treated with YAP inhibitor and activator, as well as the control. n≥10 explants. (B). Micropipette aspiration measurements, dash lines indicate tissue displacements within the tips.
+
+### YAP inhibition promoted an in vivo-like stiffness increase
 
 To assess the role of YAP in valve stiffness, we employed micropipette aspiration to measure the strain energy density of the cushion explants cultured with VP or PY-60 treatment. Micropipette aspiration applies a local vacuum stress and monitors resultant tissue displacement within the tip (Figure 4—figure supplement 1). We have previously used this method to measure mechanical properties of chick embryonic valves at different developmental stages (Buskohl et al., 2012a). That study showed a nearly linear increase in valve stiffness from HH25 to HH34, when stiffness almost doubled every 24 hr. Here in this study, we found that YAP inhibition also gave a similar stiffness increase during 24-hour-culture (Figure 4H). Although both YAP activation and inhibition increased valve stiffness, the stiffness of YAP activated valves was only half of that of YAP inhibited valves.
 
-## In vivo mechanical manipulation led to valve defects and YAP mis-regulation
+### In vivo mechanical manipulation led to valve defects and YAP mis-regulation
 
 To manipulate mechanical forces in vivo, we performed LAL at early stages (HH24) when AV cushions were growing. We collected the hearts during cushion remodeling (HH31) when the valves begin to take shape. The LAL restricted the blood flow in the left ventricle, resulting in a reduced hemodynamic stress and shear stress on left AV valves but augmented forces on the right AV valves. As a result, the LAL valves and hearts (Figure 5A) had smaller sizes compared with the control valves and hearts (Figure 5B). Specifically, LAL led to an underdeveloped and globular left AV septal valve. While the right AV septal valve was overdeveloped and elongated. This is opposite to the normal valve development, during which the left AV valve has a much larger size and is more elongated (Figure 5C). Unlike the control, where YAP activation was uniformly high in both left and right AV, LAL caused an unbalanced YAP activation: a high activation in right AV while a significantly lower activation in left AV (Figure 5D).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/83209/elife-83209-fig5-v2.jpg)
 
-**Figure 5.:** (A). LAL performed at HH24 led to an underdeveloped left AV septal valve and overdeveloped right AV septal valve at HH31. (B). Normally developed sham control hearts. (C). Aspect ratios of AV septal valves, which evaluate valve elongation. (D). D. Intensity ratios of nuclear vs. cytoplasmic YAP expressions in the septal AV valves of LAL and sham control hearts. Data are presented by mean ± SEM, n=6 sections from three embryos, *p<0.05, two-tail student t-tests. A, atrium; V, ventricle; I, inferior cushion; S, superior cushion; LA, left atrium; RA, right atrium; LV, left ventricle; RV, right ventricle; IVS, interventricular septum; LAV, left atrioventricular septal valve; RAV, right atrioventricular septal valve.Figure 5—source data 1.Figure 5C and D.
+**Figure 5.:** (A). LAL performed at HH24 led to an underdeveloped left AV septal valve and overdeveloped right AV septal valve at HH31. (B). Normally developed sham control hearts. (C). Aspect ratios of AV septal valves, which evaluate valve elongation. (D). D. Intensity ratios of nuclear vs. cytoplasmic YAP expressions in the septal AV valves of LAL and sham control hearts. Data are presented by mean ± SEM, n=6 sections from three embryos, *p<0.05, two-tail student t-tests. A, atrium; V, ventricle; I, inferior cushion; S, superior cushion; LA, left atrium; RA, right atrium; LV, left ventricle; RV, right ventricle; IVS, interventricular septum; LAV, left atrioventricular septal valve; RAV, right atrioventricular septal valve.
 
 ## Discussion
 
@@ -89,7 +117,7 @@ In conclusion, our study shows that the spatiotemporally coordinated mechanotran
 
 ## Materials and methods
 
-## Shear stress bioreactor system
+### Shear stress bioreactor system
 
 The bioreactor included a histology microscope slide, biocompatible double-sided tape (W.W. Grainger), 5-mm-thick silicone sheet (McMaster-Carr) and a sticky-Slide I Luer (Ibidi). Wells with 4 mm diameters were created in the silicone sheet with a 4 mm disposable biopsy punch (Miltex). The magnitude of shear stress is determined by the height of the sticky-Slide I Luer and have been calculated and validated by Ibidi. The sticky-slide I Luer creates a 5 mm x 50 mm channel with various heights. 0.8 mm and 0.4 mm high sticky-slide I Luer were used to create shear stresses of 2 and 20 dyne/cm2, respectively. The components were clamped together with binder clips. The female Luers of the channel slide were connected to the silicone tubing with a 3.2 mm inner diameter (Size 16, Cole-Parmer).
 
@@ -97,30 +125,127 @@ For unidirectional shear stress (USS) experiments, flow was generated using Mast
 
 For oscillatory shear stress (OSS) experiments, flow was generated using a NE-1000 syringe pump (New Era Pump Systems, Inc). The bioreactors were connected to a 20 mL syringe (BD Biosciences) that was controlled by the syringe pump. Cells were exposed to shear stress in the forward direction for one-half of a one-second cycle and in the reverse direction for the other half of the cycle at a flow rate of 21.1 mL/min for 24 hr at 37 °C and 5% CO2 within an incubator.
 
-## 3D endocardial cell culture
+### 3D endocardial cell culture
 
 Collagen gels at a concentration of 2 mg/mL collagen were made using 3 x Dulbecco’s Modified Eagle’s Medium (Life Technologies), 10% chick serum (Life Technologies), sterile 18 MΩ water, 0.1 M NaOH, and rat tail collagen I (BD Biosciences). An aliquot of the collagen gel solution was pipetted into the wells in the silicone sheet and allowed to solidify for 1 hr at 37 °C and 5% CO2. The dissected outflow tracts were then placed on top of the collagen gel, and excess media was pipetted off to allow for the valve primordia to come in contact with the collagen gel. After 6 hr of incubation at 37 °C and 5% CO2. the valve endocardial cells are repolarized, delaminated, and attached to the surface of the collagen constructs. These endocardial cells were then exposed to USS or OSS at 2 or 20 dyne/cm2 for 24 hr.
 
-## Avian and AV cushion isolation and hanging drop culture system
+### Avian and AV cushion isolation and hanging drop culture system
 
 Atrioventricular cushions (HH25) were dissected from the myocardium of embryonic chick hearts. The explants were cultured in M199 culture medium, 3% chick serum, and 1% insulin-transferrin-selenium. YAP inhibitor verteporfin (10 µg/ml) were purchased from Sigma Aldrich. The explants were placed in 20 µl hanging drops, settled at the apex of the droplets and cultured upside down for 24 hr.
 
-## Left atrial ligation
+### Left atrial ligation
 
 Fertilized White Leghorn chicken eggs were incubated in a 38 °C forced-draft incubator to Hamburger- Hamilton (HH) stage 21 (3.5 days, Hamburger and Hamilton). The embryo was cultured in an ex-vivo platform previously described [RG 49]. Briefly, an overhand knot of 10–0 nylon suture loop was placed across a portion of either the right atrium and tightened, partially constricting the left AV orifice. This diverted flow from the constricted inlet toward the untreated inlet, decreasing hemodynamic load on the one side and increasing it on the other [RG 31, 32]. At D7 and D10 (HH31 and HH36, respectively), hearts and/or AVs were fixed, and paraffin sectioned for immunohistochemistry.
 
-## Immunostaining
+### Immunostaining
 
 Chick and mouse hearts and mouse embryos were fixed in 4% paraformaldehyde for overnight, washed with TBS, embedded with paraffin, and sectioned. Sections were deparaffinized and rehydrated. Antigen retrieval was completed using citrate buffer at pH 6.0. Samples were then washed with TBS, permeabilized with 0.3% Triton-X 100 in TBS, and blocked with 3% BSA, 20 mM MgCl, 0.3% Tween 20, 0.3 M Glycine, and 5% Donkey serum in 1xTBS. Samples were then incubated with the primary antibodies at 1:100 dilution with the blocking solution overnight. Primary antibodies used include YAP (mouse DSHB YAP1 8J19, mouse Santa Cruz sc-101199, rabbit cell signaling #14074), Lef1 (rabbit Cell Signaling #2230), pHH3 (rabbit Cell Signaling #9701), VE-cad (abcam ab33168), MF-20 (mouse DSHB MF 20), IB4 (Vector B-1205-.5), Phalloidin (Invitrogen A12379). Samples were washed with 0.3% Triton-X 100 in TBS and incubated with secondary antibodies at 1:100 dilution with 5% BSA in TBS at room temperature for 1 hr. Secondary antibodies used include species-specific Alexa Fluor 568 or 647. Samples were then washed again for 3x10 min with TBS and stained with DAPI. Images were taken with Zeiss LSM 710 confocal microscope.
 
-## Micropipette aspiration experiments
+### Micropipette aspiration experiments
 
 Mechanical properties of cushion explants were measured by micropipette aspiration. A glass micropipette (rp ≥35 μm) was placed adjacent to the cushion surface collinear with the AV canal axis. Vacuum stress was incrementally applied via a 200 μL pipette calibrated with a custom manometer. Previous strain history was mitigated by preconditioning with 20 cycles of low pressurization (<1 Pa). The preconditioning step ensured the tissue and pipette tip were in full contact. Incremental stress loads were then applied, at which images were captured for each static load at ×150 magnification using a Zeiss Discovery v20 stereo microscope. The aspirated length was measured using calibrated images in NIH ImageJ. An experimental ‘stretch ratio’, λ=(L+rp)/rp was defined by normalizing the aspirated length to the pipette radius. The experiment stretch ratio is a measure of geometry change during aspiration, which is related, but not identical to the local stretch of the tissue. The ΔP versus λ curves were presented.
 
-## Real-time PCR
+### Real-time PCR
 
 RNA extractions were performed using a Qiagen total RNA purification kit (Qiagen, Valencia, CA) and RNA was reverse transcribed to cDNA using the SuperScript III RT-PCR kit with oligo(dT) primer (Invitrogen). Sufficient quality RNA was determined by an absorbance ratio A260/A280 of 1.8–2.1, while the quantity of RNA was determined by measuring the absorbance at 260 nm (A260). Real-time PCR experiments were conducted using the SYBR Green PCR system (Biorad, Hercules, CA) on a Biorad CFX96 cycler, with 40 cycles per sample. Cycling temperatures were as follows: denaturing, 95 C; annealing, 60 C; and extension, 70 C. Expression of mouse genes are normalized to GAPDH, and chick genes are normalized to 18 S. Sequences of primers are included below.
 
-## Statistics
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Forward primer (5′ - 3′)</th>
+      <th>Reverse primer (5′ - 3′)</th>
+      <th>Accession No.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mouse GAPDH</td>
+      <td>CTCCTGCACCACCAACTGCT</td>
+      <td>GGGCCATCCACAGTCTTCTG</td>
+      <td>NM_001289726.1</td>
+    </tr>
+    <tr>
+      <td>Mouse ANKRD1</td>
+      <td>AGTAGAGGAACTGGTCACTG</td>
+      <td>TGGGCTAGAAGTGTCTTCAGAT</td>
+      <td>NM_013468</td>
+    </tr>
+    <tr>
+      <td>Mouse LATS1</td>
+      <td>CTCTGCACTGGCTTCAGATG</td>
+      <td>TCCGCTCTAATGGCTTCAGT</td>
+      <td>NM_010690.1</td>
+    </tr>
+    <tr>
+      <td>Mouse LATS2</td>
+      <td>ACATTCACTGGTGGGGACTC</td>
+      <td>GTGGGAGTAGGTGCCAAAAA</td>
+      <td>NM_015771.2</td>
+    </tr>
+    <tr>
+      <td>Mouse PTX3</td>
+      <td>CGAAATAGACAATGGACTTCATCC</td>
+      <td>CATCTGCGAGTTCTCCAGCATG</td>
+      <td>NM_002852</td>
+    </tr>
+    <tr>
+      <td>Mouse LATS1</td>
+      <td>CTCTGCACTGGCTTCAGATG</td>
+      <td>TCCGCTCTAATGGCTTCAGT</td>
+      <td>NM_010690.1</td>
+    </tr>
+    <tr>
+      <td>Mouse LATS2</td>
+      <td>ACATTCACTGGTGGGGACTC</td>
+      <td>GTGGGAGTAGGTGCCAAAAA</td>
+      <td>NM_015771.2</td>
+    </tr>
+    <tr>
+      <td>Mouse THBS1</td>
+      <td>GGTAGCTGGAAATGTGGTGCGT</td>
+      <td>GCACCGATGTTCTCCGTTGTGA</td>
+      <td>NM_011580.4</td>
+    </tr>
+    <tr>
+      <td>Chicken 18 S</td>
+      <td>TAGTTGGTGGAGCGATTTGTCT</td>
+      <td>CGGACATCTAAGGGCATCACA</td>
+      <td>AF173612.1</td>
+    </tr>
+    <tr>
+      <td>Chicken ANKRD1</td>
+      <td>CCTTCCCACAGCTCTCAATAG</td>
+      <td>GATAAAGGGCTCATGGACAGAG</td>
+      <td>NM_204405.2</td>
+    </tr>
+    <tr>
+      <td>Chicken LATS1</td>
+      <td>GTTCTGCCAACAGCAAGTTTAG</td>
+      <td>GCTGGTGTGACTCTGTCTATTT</td>
+      <td>XM_004935606.5</td>
+    </tr>
+    <tr>
+      <td>Chicken LATS2</td>
+      <td>TCTTCCAACAGCAAGCACAC</td>
+      <td>AAGCTCCAGTCTGATCCACC</td>
+      <td>XM_015279299.2</td>
+    </tr>
+    <tr>
+      <td>Chicken PTX3</td>
+      <td>CTGAGACACTCGGAGCATTTAT</td>
+      <td>CAATCCCTATGAGATCCAGCTG</td>
+      <td>NM_001017413.1</td>
+    </tr>
+    <tr>
+      <td>Chicken THBS1</td>
+      <td>CCACCTTCAGGAGTGTGATAAG</td>
+      <td>CCGCAAAGCAGGGATTAGA</td>
+      <td>NM_001199453.2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistics
 
 Images were analyzed using ImageJ. Results are presented as mean ± SD and compared using either an ANOVA tests with Tukey post hoc paired or two-tailed student t-tests. Differences were considered significant at p≤0.05. For immunofluorescence staining, heart sections from n≥5 embryonic hearts were used for quantification. For cushion explants culture, n≥5 independent cultures per treatment condition and four to six dozen chick embryos pooled for each experiment. For shear flow experiments, n≥5 endocardial patches per shear flow condition. For LAL surgery, n≥3 survival embryos for LAL control and sham control.

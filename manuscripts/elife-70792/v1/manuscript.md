@@ -16,15 +16,15 @@
 
 ### Affiliations
 
-1. https://ror.org/03av75f26 Clinical Neuroscience, Max Planck Institute for Multidisciplinary Sciences Göttingen Germany
-2. https://ror.org/03av75f26 Neurogenetics, Max Planck Institute for Multidisciplinary Sciences Göttingen Germany
-3. https://ror.org/02f99v835 Cognitive Ethology, German Primate Center Göttingen Germany
+1. Clinical Neuroscience, Max Planck Institute for Multidisciplinary Sciences Göttingen Germany ([ROR:03av75f26](https://ror.org/03av75f26))
+2. Neurogenetics, Max Planck Institute for Multidisciplinary Sciences Göttingen Germany ([ROR:03av75f26](https://ror.org/03av75f26))
+3. Cognitive Ethology, German Primate Center Göttingen Germany ([ROR:02f99v835](https://ror.org/02f99v835))
 
 † Corresponding author
 
 ## Abstract
 
-A key feature of advanced brain aging includes structural defects of intracortical myelin that are associated with secondary neuroinflammation. A similar pathology is seen in specific myelin mutant mice that model ‘advanced brain aging’ and exhibit a range of behavioral abnormalities. However, the cognitive assessment of these mutants is problematic because myelin-dependent motor-sensory functions are required for quantitative behavioral readouts. To better understand the role of cortical myelin integrity for higher brain functions, we generated mice lacking Plp1 , encoding the major integral myelin membrane protein, selectively in ventricular zone stem cells of the mouse forebrain. In contrast to conventional Plp1 null mutants, subtle myelin defects were restricted to the cortex, hippocampus, and underlying callosal tracts. Moreover, forebrain-specific Plp1 mutants exhibited no defects of basic motor-sensory performance at any age tested. Surprisingly, several behavioral alterations reported for conventional Plp1 null mice (Gould et al., 2018) were absent and even social interactions appeared normal. However, with novel behavioral paradigms, we determined catatonia-like symptoms and isolated executive dysfunction in both genders. This suggests that loss of myelin integrity has an impact on cortical connectivity and underlies specific defects of executive function. These observations are likewise relevant for human neuropsychiatric conditions and other myelin-related diseases.
+A key feature of advanced brain aging includes structural defects of intracortical myelin that are associated with secondary neuroinflammation. A similar pathology is seen in specific myelin mutant mice that model ‘advanced brain aging’ and exhibit a range of behavioral abnormalities. However, the cognitive assessment of these mutants is problematic because myelin-dependent motor-sensory functions are required for quantitative behavioral readouts. To better understand the role of cortical myelin integrity for higher brain functions, we generated mice lacking Plp1, encoding the major integral myelin membrane protein, selectively in ventricular zone stem cells of the mouse forebrain. In contrast to conventional Plp1 null mutants, subtle myelin defects were restricted to the cortex, hippocampus, and underlying callosal tracts. Moreover, forebrain-specific Plp1 mutants exhibited no defects of basic motor-sensory performance at any age tested. Surprisingly, several behavioral alterations reported for conventional Plp1 null mice (Gould et al., 2018) were absent and even social interactions appeared normal. However, with novel behavioral paradigms, we determined catatonia-like symptoms and isolated executive dysfunction in both genders. This suggests that loss of myelin integrity has an impact on cortical connectivity and underlies specific defects of executive function. These observations are likewise relevant for human neuropsychiatric conditions and other myelin-related diseases.
 
 ## Introduction
 
@@ -40,9 +40,17 @@ Human catatonia and the loss of executive functions may result from defects in t
 
 ## Results
 
-## Targeting PLP expression in the mouse forebrain
+### Targeting PLP expression in the mouse forebrain
 
 We crossbred mice harboring a floxed Plp1 allele (Lüders et al., 2017) with mice expressing Cre recombinase under control of the Emx1 promoter (EmxIRESCre mice; Gorski et al., 2002), yielding experimental male (Plpflox/Y*EmxIREScre) and female (Plpflox/flox*EmxIREScre) mice, termed forebrain PLP cKO in the following, as well as male Plpflox/Y and female Plpflox/flox mice as controls (controls) (Figure 1A). EMX1 is a homeobox transcription factor in ventricular zone stem cells of the forebrain, including the neocortex, corpus callosum, and hippocampal formation (Gorski et al., 2002).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/70792/elife-70792-fig1-v1.jpg)
+
+**Figure 1.:** (A) Scheme illustrating the generation of mice with forebrain-specific loss of PLP (PLP conditional knockout [cKO]). Forebrain specificity is mediated by the Emx1IREScre driver line. Note that these mice are myelinated despite the absence of PLP from most cortical oligodendrocytes. (B) Immunofluorescence of PLP stained in the forebrain of PLP cKO mice and controls. (B’) Quantification of the PLP-immunopositive areas in the cortex (CTX), corpus callosum (CC), and striatum (STR). For statistical analysis, a two-sided Student’s t-test was performed. Datapoints represent individual mice (n). n=4 for controls and n=4 for PLP cKO. Age of animals 11 months. (C) Light-sheet microscopy to detect PLP in forebrain PLP cKO mice. Whole-mount brain sections (1 mm) were subjected to immunostaining and clearing. Boxed areas are enlarged in the lower panels. White arrows indicate sparse PLP-immunolabeling in forebrain cortical structures and the hippocampus of PLP cKO in comparison to control mice. Autofl: autofluorescence. Age of the animals is 3 months. (D) Immunoblot detection of PLP and its smaller isoform DM20, myelin basic protein (MBP), and actin in lysates of the prefrontal cortex and cerebellum of forebrain PLP cKO mice. Abundance of the protein of interest (POI) was normalized to actin. Respective quantifications are shown in the lower panel. For statistical analysis, a two-sided Student’s t-test was performed. Datapoints represent individual mice (n). n=3 for Ctrl and n=4 for PLP cKO. Age of the animals was 4 months. All data are shown as means ± SEM. Levels of significance were defined as p>0.05 (*), p>0.01 (**) and p>0.001 (***).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70792/elife-70792-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Immunofluorescence staining of myelin (myelin basic protein [MBP] and PLP colabeling) in coronal brain slices of PLP cKO and control mice. Age of animals was 11 months. (B) Closeup images of boxed areas in the medial prefrontal cortex (mPFC) shown in A. Note the reduced number of MBP and PLP-immunostained fibers in PLP cKO mice indicative of dysmyelination. (C) Quantification of images shown in A in the region of interests (ROIs) indicated in the scheme on the left. UL-mPFC: upper layer medial prefrontal cortex. Bars represent means ± SEM, datapoints represent individual mice (n=3 for each group). For statistical analyses two-sided Student’s t-tests were performed. Levels of significance were defined as p>0.05 (*), p>0.01 (**) and p>0.001 (***).
 
 We first validated the successful genetic targeting of oligodendrocytes in the forebrain by probing coronal brain slices with an anti-PLP antibody (Figure 1B). We detected substantial loss of PLP-immunopositive cells in the corpus callosum and in cortical areas (Figure 1B’). We validated these findings by performing light-sheet microscopy (LSM) in thick (1 mm) sagittal brain slices. Also here, only sparse PLP-immunolabeling was detected in cortical areas, the corpus callosum, and hippocampus. Expectedly, in the striatum which does not belong to the EmxIRESCre recombination territory (Gorski et al., 2002), we did not find a considerable reduction of PLP staining. Also, the mid- and hindbrain as well as the cerebellum showed normal PLP labeling, comparable to control brains (Figure 1C).
 
@@ -52,15 +60,1249 @@ Confirming our image-based analysis, PLP/DM20 was hardly detectable by immunoblo
 
 We next investigated myelin integrity in the forebrain in PLP conditional knockout (cKO) mice by performing MBP and PLP colabeling (Figure 1—figure supplement 1). While on first sight overall MBP labeling appeared similar between PLP cKO and control animals in both recombined and non-recombined areas (Figure 1—figure supplement 1A), close inspection of the upper cortical layers in the medial forebrain of PLP cKO mice revealed a loss of MBP+fibers (Figure 1—figure supplement 1B). Quantifications confirmed this local loss of myelin profiles (Figure 1—figure supplement 1C).
 
-## Forebrain PLP cKO mice show restricted neuropathology and inflammation in forebrain white matter tracts
+### Forebrain PLP cKO mice show restricted neuropathology and inflammation in forebrain white matter tracts
 
 Conventional Plp1 null mutant mice that lack PLP expression in all cells show widespread micro- and astrogliosis (de Monasterio-Schrader et al., 2013; Griffiths et al., 1998), presumably triggered by progressive axonopathy and/or oligodendroglial stress signals. We investigated PLP cKO and control brains for signs of microgliosis and astrogliosis by IBA1 and GFAP fluorescent immunolabeling, respectively (Figure 2A and B). We observed significant increases in the area immunopositive for IBA1 and GFAP in the corpus callosum as the primary white matter tract targeted by EmxIRESCre but not in the striatum as a non-recombined white matter region. Surprisingly, cortical areas that were efficiently recombined in EmxIRESCre animals did not show robust gliosis. We validated these findings by performing classical 3,3’-diaminobenzidine-immunohistochemistry for IBA1, MAC3, and GFAP in the fimbria, corpus callosum, and prefrontal cortex (Figure 2—figure supplement 1). Again, we observed significant gliosis in forebrain white matter tracts (hippocampal fimbria, corpus callosum) but not the cortical gray matter. In this sex-mixed cohort, we did not find obvious differences in the extent of gliosis between male and female forebrain PLP cKO mice (sex indicated by different symbols in bar graphs in Figure 2—figure supplement 1). We conclude that in the forebrain of PLP cKO mice gliosis is largely restricted to the targeted white matter regions.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70792/elife-70792-fig2-v1.jpg)
+
+**Figure 2.:** (A) Immunofluorescent characterization of microgliosis (IBA1 immunolabeling) in forebrain PLP cKO mice (overview coronal brain section). Quantifications for IBA1+area for region of interests (ROIs) (CTX: cortex, CC: corpus callosum, STR: striatum) are shown on the right. Bars represent means ± SEM and datapoints represent individual mice (n=4 per group). For statistical analyses two-sided Student’s t-tests were performed. Age of the animals was 22 months. (B) Immunofluorescent characterization of astrogliosis (GFAP immunolabeling) in forebrain PLP cKO mice (overview coronal brain section). Quantifications for GFAP+area for ROIs (CTX: cortex, CC: corpus callosum, STR: striatum) are shown on the right. Bars represent means ± SEM and datapoints represent individual mice (n=4 per group). For statistical analyses two-sided Student’s t-tests were performed. Age of the animals was 22 months. (C) Immunohistochemical characterization of axonal swellings (amyloid precursor protein [APP] immunolabeling) in forebrain PLP cKO mice (overview coronal brain section). Note the apparent fimbria atrophy and ventricular enlargement in forebrain PLP cKO mice. Age of analysis 22 months. (C’) Closeup images of boxed areas in C. Black arrows indicate axonal spheroids in the fimbria and internal capsule of cKO mice, which are essentially absent in Ctrl mice. Levels of significance were defined as p>0.05 (*), p>0.01 (**) and p>0.001 (***).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70792/elife-70792-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A,E,I) Representative light microscopic images of cross-sectioned fimbria, corpus callosum, and prefrontal cortex immunolabeled for amyloid precursor protein (APP) in forebrain PLP cKO and control mice at age 22 months. (B,F,J) Representative light microscopic images of cross-sectioned fimbria, corpus callosum, and prefrontal cortex immunolabeled for MAC3 in forebrain PLP cKO and control mice at age 22 months. (C,G,K) Representative light microscopic images of cross-sectioned fimbria, corpus callosum, and prefrontal cortex immunolabeled for IBA1 in forebrain PLP cKO and control mice at age 22 months. (D,H,L) Representative light microscopic images of cross-sectioned fimbria, corpus callosum, and prefrontal cortex immunolabeled for GFAP in forebrain PLP cKO and control mice. Analyses were performed at 22 months. Genotype-dependent quantifications are shown on the right. Bars represent means ± SEM; datapoints represent individual animals; male and female mice are indicated by squares and triangular datapoints, respectively. Scale bars 50 µm. For statistical analyses two-sided Student’s t-tests were performed for the Ctrl versus cKO comparison. p-Values are given in the bar graphs. All data are shown as means ± SEM. Levels of significance were defined as p>0.05 (*), p>0.01 (**) and p>0.001 (***).
+
 Conventional Plp1 null mutant mice also develop a secondary axonopathy throughout the CNS (Griffiths et al., 1998). In forebrain PLP cKO mice this neuropathology was also largely restricted to the targeted white matter areas: We assessed 22-month-old mice by immunohistochemistry and found amyloid precursor protein (APP) immunopositive axonal spheroids in the hippocampal fimbria and corpus callosum (Figure 2C, Figure 2—figure supplement 1). At this age, we also noticed a pronounced atrophy of the fimbria and ventricular enlargement in PLP cKO mice – a common concomitant of neuroinflammation (Lepore et al., 2013; Figure 2C). In contrast, the prefrontal cortex itself did not exhibit an increase in APP+ axonal spheroids in 22 months’ PLP cKO mice, the oldest age tested (Figure 2—figure supplement 1). However, axonal pathology included some white matter structures outside the Emx1 expression domain. We presume these reflect distal axonal projections from neurons in the target region, such as fibers in the internal capsule (Figure 2C’).
 
-## Behavioral defects of forebrain PLP cKO mice
+### Behavioral defects of forebrain PLP cKO mice
 
 To study the behavioral consequences of forebrain specific loss of myelin integrity, we applied a large battery of behavioral tests on PLP cKO mice of both sexes at several timepoints (Figure 3, Table 1). This battery comprised tests for monitoring the overall health status, motor function and coordination, hearing, vision, heat/pain perception, sensorimotor gating, social behavior, depression-like behavior, cognitive performance in the IntelliCage, spatial memory and reversal in the Morris water maze (MWM), exploration and working memory, catatonic signs and executive functions.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70792/elife-70792-fig3-v1.jpg)
+
+**Figure 3.:** Heatmap representation of behavioral data in the categories of overall health status, motor function and coordination, hearing, vision, heat/pain perception, sensorimotor gating, social behavior, depression-like behavior, cognitive performance in the IntelliCage, spatial memory and reversal in the Morris water maze (MWM), exploration and working memory, catatonic signs and executive function. Each heatmap column represents individual animals (n-numbers). Statistical significance is indicated by red dots. Raw values, n-numbers of mice tested per experiment, mean, SEM, and p-values are specified in Table 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70792/elife-70792-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative image of a mouse subjected to the rotarod test assessing motor performance. (B) Groups of female and male PLP cKO (n=19 or 14, respectively) and Ctrl (n=16 per sex) mice were assessed in the rotarod at ages 6 months on 2 consecutive days (day 1 and day 2). (C) Groups of female and male PLP cKO (n=18 or 14, respectively) and Ctrl (n=16 per sex) mice were assessed in the rotarod at ages 17 months on 2 consecutive days (day 1 and day 2). Note that cKO mice performed normally on the rotarod. Bars represent means ± SEM. Datapoints represent individual mice; not significant (n.s.) by repeated measures two-way analysis of variance (ANOVA). Levels of significance were defined as p>0.05 (*), p>0.01 (**) and p>0.001 (***).
+
+**Table 1.**
+ Behavioral deep-phenotyping of male and female forebrain proteolipid protein (PLP) conditional knockout (cKO) mice.Precise n-numbers, mean values, SEM, and p-values for all behavioral experiments are given.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Males</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th>Females</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td colspan="3">Plpflox/Y</td>
+      <td colspan="3">Plpflox/Y*EmxCre</td>
+      <td colspan="3">Plpflox/flox</td>
+      <td colspan="3">Plpflox/flox*EmxCre</td>
+    </tr>
+    <tr>
+      <td>Behavioral paradigms</td>
+      <td>Age (months)</td>
+      <td>(N)</td>
+      <td>Mean ± SEM</td>
+      <td>(N)</td>
+      <td>Mean ± SEM</td>
+      <td>p-Value</td>
+      <td>Age (months)</td>
+      <td>(N)</td>
+      <td>Mean ± SEM</td>
+      <td>(N)</td>
+      <td>Mean ± SEM</td>
+      <td>p-Value</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Health status</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Body weight (g)</td>
+      <td>13</td>
+      <td>16</td>
+      <td>36.39±0.77</td>
+      <td>14</td>
+      <td>39.23±1.29</td>
+      <td>0.06</td>
+      <td>13</td>
+      <td>16</td>
+      <td>31.16±1.17</td>
+      <td>19</td>
+      <td>29.64±0.94</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>15</td>
+      <td>16</td>
+      <td>37.69±0.68</td>
+      <td>14</td>
+      <td>40.51±1.31</td>
+      <td>0.06</td>
+      <td>15</td>
+      <td>16</td>
+      <td>31.52±1.24</td>
+      <td>19</td>
+      <td>30.50±1.01</td>
+      <td>0.52</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>17</td>
+      <td>16</td>
+      <td>36.86±0.85</td>
+      <td>14</td>
+      <td>39.13±1.56</td>
+      <td>0.2</td>
+      <td>17</td>
+      <td>16</td>
+      <td>32.11±1.38</td>
+      <td>18</td>
+      <td>31.08±1.17</td>
+      <td>0.68</td>
+    </tr>
+    <tr>
+      <td>Motor function and coordination</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rotarod day 1 (latency to fall, s)</td>
+      <td>6</td>
+      <td>16</td>
+      <td>56.94±11.97</td>
+      <td>14</td>
+      <td>86.14±13.59</td>
+      <td>p=0.12</td>
+      <td>6</td>
+      <td>16</td>
+      <td>141.40±14.97</td>
+      <td>19</td>
+      <td>139.00±12.84</td>
+      <td>0.9</td>
+    </tr>
+    <tr>
+      <td>Rotarod day 2 (latency to fall, s)</td>
+      <td>6</td>
+      <td>16</td>
+      <td>96.28±15.12</td>
+      <td>14</td>
+      <td>135.40±17.97</td>
+      <td>p=0.10</td>
+      <td>6</td>
+      <td>16</td>
+      <td>198.20±16.75</td>
+      <td>19</td>
+      <td>192.80±16.87</td>
+      <td>0.84</td>
+    </tr>
+    <tr>
+      <td>Rotarod day 1 (latency to fall, s)</td>
+      <td>17</td>
+      <td>16</td>
+      <td>97.69±8.25</td>
+      <td>14</td>
+      <td>88.79±11.71</td>
+      <td>p=0.53</td>
+      <td>17</td>
+      <td>16</td>
+      <td>99.38±12.03</td>
+      <td>18</td>
+      <td>122.00±11.14</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Rotarod day 2 (latency to fall, s)</td>
+      <td>17</td>
+      <td>16</td>
+      <td>145.3±8.56</td>
+      <td>14</td>
+      <td>127.7±11.85</td>
+      <td>p=0.23</td>
+      <td>17</td>
+      <td>16</td>
+      <td>143.20±14.43</td>
+      <td>18</td>
+      <td>150.40±12.92</td>
+      <td>0.71</td>
+    </tr>
+    <tr>
+      <td>Grip strength (a.u.)</td>
+      <td>6</td>
+      <td>16</td>
+      <td>72.42±4.41</td>
+      <td>14</td>
+      <td>74.43±5.00</td>
+      <td>0.76</td>
+      <td>6</td>
+      <td>16</td>
+      <td>71.85±3.55</td>
+      <td>19</td>
+      <td>75.61±3.75</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>13</td>
+      <td>16</td>
+      <td>88.69±3.35</td>
+      <td>14</td>
+      <td>91.12±5.22</td>
+      <td>0.69</td>
+      <td>13</td>
+      <td>16</td>
+      <td>93.98±3.77</td>
+      <td>19</td>
+      <td>84.44±3.96</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>15</td>
+      <td>16</td>
+      <td>88.35±3.83</td>
+      <td>14</td>
+      <td>84.64±5.97</td>
+      <td>0.6</td>
+      <td>15</td>
+      <td>16</td>
+      <td>93.50±4.67</td>
+      <td>19</td>
+      <td>89.53±6.38</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>Beam balance 10 mm (escape latency, s)</td>
+      <td>13</td>
+      <td>16</td>
+      <td>100.00±12.23</td>
+      <td>14</td>
+      <td>113.00±10.08</td>
+      <td>0.36</td>
+      <td>13</td>
+      <td>16</td>
+      <td>100.00±25.86</td>
+      <td>19</td>
+      <td>75.60±14.62</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td>Beam balance 8 mm (escape latency, s)</td>
+      <td>13</td>
+      <td>16</td>
+      <td>100.00±8.40</td>
+      <td>14</td>
+      <td>98.25±9.54</td>
+      <td>0.92</td>
+      <td>13</td>
+      <td>16</td>
+      <td>100.00±20.63</td>
+      <td>19</td>
+      <td>90.99±17.93</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <td>Hearing</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Acoustic startle at 65 dB (a.u.)</td>
+      <td>6</td>
+      <td>16</td>
+      <td>0.87±0.09</td>
+      <td>14</td>
+      <td>0.95±0.15</td>
+      <td>0.6</td>
+      <td>6</td>
+      <td>16</td>
+      <td>0.82±014</td>
+      <td>19</td>
+      <td>0.74±0.10</td>
+      <td>0.73</td>
+    </tr>
+    <tr>
+      <td>Acoustic startle at 120 dB (a.u.)</td>
+      <td>6</td>
+      <td>16</td>
+      <td>2.88±0.49</td>
+      <td>14</td>
+      <td>3.59±0.56</td>
+      <td>0.34</td>
+      <td>6</td>
+      <td>16</td>
+      <td>2.82±0.32</td>
+      <td>19</td>
+      <td>3.53±0.46</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>Acoustic startle at 65 dB (a.u.)</td>
+      <td>18</td>
+      <td>15</td>
+      <td>0.93±0.07</td>
+      <td>13</td>
+      <td>0.85±0.11</td>
+      <td>0.55</td>
+      <td>20</td>
+      <td>11</td>
+      <td>0.87±0.12</td>
+      <td>12</td>
+      <td>1.00±0.12</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>Acoustic startle at 120 dB (a.u.)</td>
+      <td>18</td>
+      <td>15</td>
+      <td>2.25±0.31</td>
+      <td>13</td>
+      <td>1.87±0.30</td>
+      <td>0.39</td>
+      <td>20</td>
+      <td>11</td>
+      <td>2.33±0.31</td>
+      <td>12</td>
+      <td>2.17±0.25</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>Vision</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cued platform training day 1 (escape latency, s)</td>
+      <td>19</td>
+      <td>16</td>
+      <td>25.30±3.35</td>
+      <td>14</td>
+      <td>40.59±6.14</td>
+      <td>0.03</td>
+      <td>13</td>
+      <td>16</td>
+      <td>24.46±3.98</td>
+      <td>19</td>
+      <td>28.23±3.93</td>
+      <td>0.61</td>
+    </tr>
+    <tr>
+      <td>Cued platform training day 2 (escape latency, s)</td>
+      <td>19</td>
+      <td>16</td>
+      <td>6.13±0.76</td>
+      <td>14</td>
+      <td>10.77±2.92</td>
+      <td>0.07</td>
+      <td>13</td>
+      <td>16</td>
+      <td>11.90±2.98</td>
+      <td>19</td>
+      <td>12.08±2.42</td>
+      <td>0.42</td>
+    </tr>
+    <tr>
+      <td>Heat/pain perception</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hot plate (latency to retract, s)</td>
+      <td>13</td>
+      <td>16</td>
+      <td>21.40±1.12</td>
+      <td>14</td>
+      <td>22.95±1.46</td>
+      <td>0.69</td>
+      <td>13</td>
+      <td>16</td>
+      <td>17.25±1.00</td>
+      <td>19</td>
+      <td>15.44±0.95</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>15</td>
+      <td>16</td>
+      <td>16.96±1.24</td>
+      <td>14</td>
+      <td>15.81±1.32</td>
+      <td>0.42</td>
+      <td>15</td>
+      <td>16</td>
+      <td>15.89±0.83</td>
+      <td>19</td>
+      <td>15.34±0.60</td>
+      <td>0.59</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>17</td>
+      <td>16</td>
+      <td>13.12±1.26</td>
+      <td>14</td>
+      <td>12.13±1.02</td>
+      <td>0.71</td>
+      <td>17</td>
+      <td>16</td>
+      <td>16.04±1.00</td>
+      <td>18</td>
+      <td>15.37±1.04</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>20</td>
+      <td>15</td>
+      <td>13.95±0.96</td>
+      <td>12</td>
+      <td>13.71±0.81</td>
+      <td>0.85</td>
+      <td>20</td>
+      <td>11</td>
+      <td>14.26±0.83</td>
+      <td>12</td>
+      <td>12.59±1.30</td>
+      <td>0.3</td>
+    </tr>
+    <tr>
+      <td>Sensorimotor gating</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pre-pulse inhibition (Ø, %)</td>
+      <td>6</td>
+      <td>16</td>
+      <td>43.36±7.85</td>
+      <td>14</td>
+      <td>49.84±5.20</td>
+      <td>0.79</td>
+      <td>6</td>
+      <td>16</td>
+      <td>33.53±6.65</td>
+      <td>19</td>
+      <td>40.76±9.97</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>20</td>
+      <td>15</td>
+      <td>16.14±6.88</td>
+      <td>13</td>
+      <td>10.82±5.24</td>
+      <td>0.55</td>
+      <td>20</td>
+      <td>11</td>
+      <td>8.24±3.56</td>
+      <td>12</td>
+      <td>5.62±8.94</td>
+      <td>0.8</td>
+    </tr>
+    <tr>
+      <td>Social behavior</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Vocalization (calls, #)</td>
+      <td>6</td>
+      <td>16</td>
+      <td>333.3±71.49</td>
+      <td>14</td>
+      <td>231.1±60.22</td>
+      <td>0.29</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>Vocalization (latency to first call, s)</td>
+      <td>6</td>
+      <td>16</td>
+      <td>62.23±18.53</td>
+      <td>14</td>
+      <td>67.14±16.86</td>
+      <td>0.15</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+    </tr>
+    <tr>
+      <td>Social preference (time spent in pheromone box, %)</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>6</td>
+      <td>15</td>
+      <td>64.80±9.63</td>
+      <td>13</td>
+      <td>48.38±6.98</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>Social preference (time spent in control box, %)</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>6</td>
+      <td>15</td>
+      <td>29.80±9.01</td>
+      <td>13</td>
+      <td>36.31±6.02</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Depression-like behavior</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sucrose preference (visits to sucrose corner, %)</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>6</td>
+      <td>15</td>
+      <td>44.20±2.48</td>
+      <td>13</td>
+      <td>43.45±3.66</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <td>Sucrose preference (visits to water corner, %)</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>6</td>
+      <td>15</td>
+      <td>18.19±2.34</td>
+      <td>13</td>
+      <td>20.85±2.34</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <td>Cognitive performance in IntelliCage</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Place learning (visits to target corner, %)</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>6</td>
+      <td>15</td>
+      <td>35.78±2.33</td>
+      <td>13</td>
+      <td>34.39±2.05</td>
+      <td>0.66</td>
+    </tr>
+    <tr>
+      <td>Reversal learning (visits to target corner, %)</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>6</td>
+      <td>15</td>
+      <td>37.82±2.79</td>
+      <td>13</td>
+      <td>38.29±2.61</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>Episodic-like memory acquisition (delta visits to target corner, %)</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>6</td>
+      <td>15</td>
+      <td>3.73±2.79</td>
+      <td>13</td>
+      <td>2.31±2.07</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>Episodic-like memory retrieval (delta visits to target corner, %)</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>n/a</td>
+      <td>6</td>
+      <td>15</td>
+      <td>7.29±4.13</td>
+      <td>13</td>
+      <td>3.04±4.40</td>
+      <td>0.49</td>
+    </tr>
+    <tr>
+      <td>Spatial memory and reversal (Morris water maze)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Probe: total distance (cm)</td>
+      <td>19</td>
+      <td>16</td>
+      <td>944.5±81.60</td>
+      <td>14</td>
+      <td>1137±57.98</td>
+      <td>0.07</td>
+      <td>13</td>
+      <td>16</td>
+      <td>1258±38.34</td>
+      <td>19</td>
+      <td>1328±31.19</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>Probe: average velocity (cm/s)</td>
+      <td>19</td>
+      <td>16</td>
+      <td>10.50±0.91</td>
+      <td>14</td>
+      <td>12.63±0.64</td>
+      <td>0.07</td>
+      <td>13</td>
+      <td>16</td>
+      <td>13.98±0.43</td>
+      <td>19</td>
+      <td>14.76±0.35</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>Probe: time in target zone (s)</td>
+      <td>19</td>
+      <td>16</td>
+      <td>32.61±3.80</td>
+      <td>14</td>
+      <td>36.39±3.03</td>
+      <td>0.45</td>
+      <td>13</td>
+      <td>16</td>
+      <td>27.03±1.78</td>
+      <td>19</td>
+      <td>26.14±1.38</td>
+      <td>0.69</td>
+    </tr>
+    <tr>
+      <td>Probe: visits to target zone (#)</td>
+      <td>19</td>
+      <td>16</td>
+      <td>9.44±0.95</td>
+      <td>14</td>
+      <td>11.36±0.58</td>
+      <td>0.11</td>
+      <td>13</td>
+      <td>16</td>
+      <td>14.63±0.84</td>
+      <td>19</td>
+      <td>15.32±0.72</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td>Probe: latency to target zone (s)</td>
+      <td>19</td>
+      <td>16</td>
+      <td>8.16±1.71</td>
+      <td>14</td>
+      <td>5.81±1.00</td>
+      <td>0.44</td>
+      <td>13</td>
+      <td>16</td>
+      <td>6.00±1.97</td>
+      <td>19</td>
+      <td>3.74±0.55</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>Reversal: total distance (cm)</td>
+      <td>19</td>
+      <td>16</td>
+      <td>1091±71.27</td>
+      <td>14</td>
+      <td>1236±80.26</td>
+      <td>0.19</td>
+      <td>13</td>
+      <td>16</td>
+      <td>1256±36.02</td>
+      <td>19</td>
+      <td>1442±30.55</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>Reversal: average velocity (cm/s)</td>
+      <td>19</td>
+      <td>16</td>
+      <td>12.12±0.79</td>
+      <td>14</td>
+      <td>13.73±0.89</td>
+      <td>0.19</td>
+      <td>13</td>
+      <td>16</td>
+      <td>13.96±0.40</td>
+      <td>19</td>
+      <td>13.80±0.34</td>
+      <td>0.77</td>
+    </tr>
+    <tr>
+      <td>Reversal: time in target zone (s)</td>
+      <td>19</td>
+      <td>16</td>
+      <td>28.60±1.81</td>
+      <td>14</td>
+      <td>25.60±2.27</td>
+      <td>0.3</td>
+      <td>13</td>
+      <td>16</td>
+      <td>24.65±1.44</td>
+      <td>19</td>
+      <td>25.39±1.24</td>
+      <td>0.7</td>
+    </tr>
+    <tr>
+      <td>Reversal: visits to target zone (#)</td>
+      <td>19</td>
+      <td>16</td>
+      <td>8.63±0.62</td>
+      <td>14</td>
+      <td>10.21±0.78</td>
+      <td>0.12</td>
+      <td>13</td>
+      <td>16</td>
+      <td>15.56±0.94</td>
+      <td>19</td>
+      <td>14.42±0.68</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>Reversal: latency to target zone (s)</td>
+      <td>19</td>
+      <td>16</td>
+      <td>7.72±1.41</td>
+      <td>14</td>
+      <td>8.40±1.39</td>
+      <td>0.63</td>
+      <td>13</td>
+      <td>16</td>
+      <td>4.42±0.66</td>
+      <td>19</td>
+      <td>4.39±0.58</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td>Exploration and working memory</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Y maze (arm visits, #)</td>
+      <td>20</td>
+      <td>15</td>
+      <td>18.33±1.54</td>
+      <td>13</td>
+      <td>19.77±1.85</td>
+      <td>0.55</td>
+      <td>20</td>
+      <td>11</td>
+      <td>16.09±2.04</td>
+      <td>12</td>
+      <td>19.17±2.32</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <td>Y maze (alternation, %)</td>
+      <td>20</td>
+      <td>15</td>
+      <td>60.34±3.16</td>
+      <td>13</td>
+      <td>56.85±3.41</td>
+      <td>0.46</td>
+      <td>20</td>
+      <td>11</td>
+      <td>66.53±3.69</td>
+      <td>12</td>
+      <td>60.48±4.52</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>Catatonic signs</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bar test (time immobile on the bar, s)</td>
+      <td>2</td>
+      <td>15</td>
+      <td>0.35±0.16</td>
+      <td>14</td>
+      <td>0.51±0.28</td>
+      <td>p=0.51</td>
+      <td>2</td>
+      <td>16</td>
+      <td>0.23±0.09</td>
+      <td>19</td>
+      <td>0.45±0.21</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>15</td>
+      <td>0.14±0.03</td>
+      <td>14</td>
+      <td>0.88±0.34</td>
+      <td>p=0.19</td>
+      <td>3</td>
+      <td>17</td>
+      <td>0.11±0.01</td>
+      <td>20</td>
+      <td>0.52±0.13</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5</td>
+      <td>15</td>
+      <td>0.39±0.14</td>
+      <td>14</td>
+      <td>2.63±0.82</td>
+      <td>p&lt;0.05</td>
+      <td>5</td>
+      <td>17</td>
+      <td>0.11±0.01</td>
+      <td>19</td>
+      <td>0.27±0.07</td>
+      <td>&lt;0.05</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>18</td>
+      <td>16</td>
+      <td>0.54±0.21</td>
+      <td>14</td>
+      <td>1.19±0.29</td>
+      <td>p&lt;0.01</td>
+      <td>18</td>
+      <td>10</td>
+      <td>0.10±0.00</td>
+      <td>12</td>
+      <td>0.25±0.09</td>
+      <td>&lt;0.05</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>21</td>
+      <td>15</td>
+      <td>0.27±0.11</td>
+      <td>13</td>
+      <td>2.06±0.70</td>
+      <td>p&lt;0.01</td>
+      <td>22</td>
+      <td>11</td>
+      <td>0.10±0.00</td>
+      <td>12</td>
+      <td>0.28±0.08</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Executive function and motor skill learning</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hurdle test trial 1 (ratio, s/(crossings +1))</td>
+      <td>6</td>
+      <td>16</td>
+      <td>10.30±1.72</td>
+      <td>14</td>
+      <td>8.34±0.98</td>
+      <td>p=0.89</td>
+      <td>6</td>
+      <td>17</td>
+      <td>4.99±0.48</td>
+      <td>19</td>
+      <td>10.80±1.82</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Hurdle test trial 2 (ratio, s/(crossings +1))</td>
+      <td>6</td>
+      <td>16</td>
+      <td>1.75±0.17</td>
+      <td>14</td>
+      <td>1.81±0.33</td>
+      <td>p=0.52</td>
+      <td>6</td>
+      <td>17</td>
+      <td>1.24±0.17</td>
+      <td>19</td>
+      <td>1.46±0.22</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <td>Hurdle test trial 1 (ratio, s/(crossings +1))</td>
+      <td>20</td>
+      <td>16</td>
+      <td>6.76±1.16</td>
+      <td>14</td>
+      <td>11.28±2.04</td>
+      <td>p&lt;0.05</td>
+      <td>20</td>
+      <td>11</td>
+      <td>4.88±0.85</td>
+      <td>12</td>
+      <td>9.57±3.14</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>Hurdle test trial 2 (ratio, s/(crossings +1))</td>
+      <td>20</td>
+      <td>16</td>
+      <td>5.49±1.02</td>
+      <td>14</td>
+      <td>8.07±1.34</td>
+      <td>p&lt;0.01</td>
+      <td>20</td>
+      <td>11</td>
+      <td>3.26±0.41</td>
+      <td>12</td>
+      <td>6.99±2.51</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>Puzzle box (Ø escape latency, s): open</td>
+      <td>20</td>
+      <td>16</td>
+      <td>89.48±19.73</td>
+      <td>14</td>
+      <td>118.10±19.82</td>
+      <td>p=0.22</td>
+      <td>20</td>
+      <td>11</td>
+      <td>96.23±24.28</td>
+      <td>12</td>
+      <td>140.6±20.26</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>Puzzle box (Ø escape latency, s): gateway</td>
+      <td>20</td>
+      <td>16</td>
+      <td>48.38±8.61</td>
+      <td>14</td>
+      <td>69.95±15.01</td>
+      <td>p=0.12</td>
+      <td>20</td>
+      <td>11</td>
+      <td>25.15±6.67</td>
+      <td>12</td>
+      <td>48.18±8.34</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Puzzle box (Ø escape latency, s): gateway+bedding</td>
+      <td>20</td>
+      <td>16</td>
+      <td>41.96±8.11</td>
+      <td>14</td>
+      <td>71.88±11.72</td>
+      <td>p&lt;0.01</td>
+      <td>20</td>
+      <td>11</td>
+      <td>18.21±3.10</td>
+      <td>12</td>
+      <td>53.01±8.19</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Puzzle box (Ø escape latency, s): paper tissue</td>
+      <td>20</td>
+      <td>16</td>
+      <td>85.02±10.21</td>
+      <td>14</td>
+      <td>148.30±16.58</td>
+      <td>p&lt;0.01</td>
+      <td>20</td>
+      <td>11</td>
+      <td>104.5±32.19</td>
+      <td>12</td>
+      <td>224.3±32.40</td>
+      <td>&lt;0.05</td>
+    </tr>
+    <tr>
+      <td>Puzzle box (Ø escape latency, s): nesting material</td>
+      <td>20</td>
+      <td>16</td>
+      <td>245.50±21.02</td>
+      <td>14</td>
+      <td>259.70±19.55</td>
+      <td>p=0.63</td>
+      <td>20</td>
+      <td>11</td>
+      <td>200.6±35.48</td>
+      <td>12</td>
+      <td>322.3±15.65</td>
+      <td>&lt;0.01</td>
+    </tr>
+    <tr>
+      <td>Complex running wheel (total distance, m, Ø of 12 hr)</td>
+      <td>23</td>
+      <td>8</td>
+      <td>1283.14±319.78</td>
+      <td>8</td>
+      <td>550,23±104.3</td>
+      <td>p=0.047</td>
+      <td>23</td>
+      <td>7</td>
+      <td>1956.16±146.65</td>
+      <td>8</td>
+      <td>1118.77±253.23</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>Complex running wheel (total time, min, Ø of 12 hr)</td>
+      <td>23</td>
+      <td>8</td>
+      <td>119.0±29.27</td>
+      <td>8</td>
+      <td>54.78±10.03</td>
+      <td>p=0.057</td>
+      <td>23</td>
+      <td>7</td>
+      <td>206.5±15.40</td>
+      <td>8</td>
+      <td>113.4±26.17</td>
+      <td>0.019</td>
+    </tr>
+    <tr>
+      <td>Complex running wheel (maximal velocity, m/s, Ø of 12 hr)</td>
+      <td>23</td>
+      <td>8</td>
+      <td>0.0555±0.0266</td>
+      <td>8</td>
+      <td>0.0272±0.0103</td>
+      <td>p=0.574</td>
+      <td>23</td>
+      <td>7</td>
+      <td>0.0639±0.0226</td>
+      <td>8</td>
+      <td>0.0463±0.0214</td>
+      <td>0.582</td>
+    </tr>
+    <tr>
+      <td>Complex running wheel (average velocity, m/s, Ø of 12 hr)</td>
+      <td>23</td>
+      <td>8</td>
+      <td>0.0803±0.0311</td>
+      <td>8</td>
+      <td>0.0648±0.0248</td>
+      <td>p=0.362</td>
+      <td>23</td>
+      <td>7</td>
+      <td>0.0812±0.0291</td>
+      <td>8</td>
+      <td>0.0686±0.0266</td>
+      <td>0.939</td>
+    </tr>
+  </tbody>
+</table>
 
 In contrast to conventional Plp1 null mice (Griffiths et al., 1998), PLP forebrain-specific mutants remained free of motor impairments at any age. On the rotarod, the latency to fall did not differ between cKO and control mice at 6 and 17 months of age, also when quantified separately for males and females (Figure 3—figure supplement 1). Interestingly, in several other behavioral paradigms, in which conventional Plp1 null mice were affected (Gould et al., 2018; Petit et al., 2014), the PLP cKO mice were normal; for example, hot plate (pain), beam balance (coordination), motor performance, and olfaction (Figure 3).
 
@@ -96,11 +1338,11 @@ With respect to CNS regions, the present work further uncouples the role of myel
 
 ## Materials and methods
 
-## Mouse model
+### Mouse model
 
 To delete the Plp1 gene in the forebrain we interbred Plpflox mice in which exon 3 of the Plp1 gene is flanked by loxP sites (Lüders et al., 2019; Lüders et al., 2017; Wang et al., 2017) with mice expressing Cre recombinase under control of the Emx1 gene promoter (Gorski et al., 2002) on C57Bl/6N background. Genotyping was as reported previously (Gorski et al., 2002; Lüders et al., 2017). Experimental male Plpflox/Y*EmxIREScre and female Plpflox/flox*EmxIREScre mice are termed cKO whereas male Plpflox/Y and female Plpflox/flox mice served as controls (Ctrl). Mice were bred and kept in the animal facility of the Max Planck Institute of Experimental Medicine with a 12 hr light/dark cycle and two to five mice per cage. All experiments were performed in accordance with the German Animal Protection Law (TierSchG) and approved by the Niedersächsisches Landesamt für Verbraucherschutz und Lebensmittelsicherheit (LAVES); License numbers were 33.19-42502-04-15/1833 and 33.19-42502-04-18/2803.
 
-## Light-sheet microscopy
+### Light-sheet microscopy
 
 LSM to detect PLP labeling displayed in Figure 1A and B was performed as follows. Animals were sacrificed using CO2 followed by transcardial perfusion with HBSS and paraformaldehyde (PFA) (4%) in PBS. Brains were extracted and postfixated in 4% PFA/PBS overnight and stored in PBS at 4°C until further use. Brains were cut using a 1 mm custom-made brain matrix and subjected to whole-mount staining and clearing. Samples were dehydrated in a methanol/PBS series (50%, 80%, 100%) followed by overnight bleaching and permeabilization in a mixture of 5% H2O2/20% dimethyl sulfoxide (DMSO) in methanol at 4°C. Samples washed further in methanol prior to incubation in 20% DMSO in methanol at RT for 2 hr. Samples were then rehydrated using a descending methanol/PBS series (80%, 50%, PBS) and further washed with in PBS/0.2% Triton X-100 for 2 hr. The samples were then incubated overnight in 0.2% Triton X-100, 20% DMSO, and 0.3 M glycine in PBS at 37°C and blocked using PBS containing 6% goat serum, 10% DMSO, and 0.2% Triton X-100 for 2 days at 37°C. Samples were retrieved, washed twice in PBS containing 0.2% Tween 20, and 10 µg/ml heparin (PTwH) at RT for 1 hr and incubated with primary antibody solution (rat anti-PLP [aa3, 1:250], mouse anti-CNP [Atlas, 1:250]) for 14 days at 37°C. After several washes in PTwH, samples were incubated with secondary antibody solution (goat anti-rat Alexa 555; goat anti-mouse Alexa 633) for 7 days at 37°C. Prior to clearing, the samples were again washed in PTwH and brain slices were embedded in 2% Phytagel in PBS. Slices were dehydrated using an ascending series of methanol/PBS (20%, 40%, 60%, 80%, 2×100% 1 hr, RT) followed by overnight incubation in a mixture of 33% dichloromethane (DCM) and 66% methanol at RT. Samples were further delipidated by incubation in 100% DCM for 40 min and transferred to pure ethyl cinnamate (Eci; Sigma-Aldrich #112372) as clearing agent.
 
@@ -108,7 +1350,7 @@ LSM was performed using a LaVision Ultramicroscope II equipped with a 2× object
 
 Images were loaded into Vision4D 3.3 (Arivis) and stitched using the tile sorter setup. Datasets were pseudocolored and visualized in 3D (maximum intensity mode).
 
-## Immunohistochemistry and immunofluorescence stainings
+### Immunohistochemistry and immunofluorescence stainings
 
 Immunohistochemistry for neuropathological analysis displayed in Figure 2 and Figure 2—figure supplement 1 was performed as previously described (Lüders et al., 2019; Patzig et al., 2016). Antibodies were specific to MAC3 (1:400; Pharmingen 553322; clone M3/84), IBA1 (1:1000; Wako 019-19741), APP (1:1000; Millipore MAB 348) or GFAP (1:200; Novocastra NCL-GFAP-GA5). Images were captured at 20× (GFAP, IBA1, MAC3) or 40× (APP) magnification using a bright-field light microscope (Zeiss AxioImager Z1) coupled to a Zeiss AxioCam MRc camera controlled by Zeiss ZEN 1.0 software and processed using Fiji.
 
@@ -116,91 +1358,91 @@ For immunofluorescence staining, antibodies specific to PLP (rat anti-PLP [aa3, 
 
 To quantify axonal swellings, the region of interest was selected and APP-immunopositive axonal swellings were counted. To quantify brain region immunopositive for IBA1, MAC3, or GFAP, the region of interest was selected and analyzed using an ImageJ plug-in (de Monasterio-Schrader et al., 2013; Lüders et al., 2019; Lüders et al., 2017) for semi-automated analysis. Per genotype (Ctrl, cKO), five to seven mice were assessed at the age of 22 months as indicated by the datapoints in Figure 2 and Figure 2—figure supplement 1, in which n-numbers represent individual mice. Assessment of neuropathology was performed blinded to the genotype. For quantification of immunofluorescence stainings, the respective region of interest was demarcated and the staining positive area was determined by automated thresholding in ImageJ.
 
-## Immunoblotting
+### Immunoblotting
 
 Prefrontal cortex (frontal to bregma 5.22) and cerebellum were dissected from mice and homogenized in 1× TBS with protease inhibitor (Complete Mini, Roche). Protein concentration was measured using the DC protein assay (Bio-Rad). Immunoblotting displayed in Figure 1C and D was essentially as described (Kusch et al., 2017; Schardt et al., 2009). Briefly, lysates from prefrontal cortex (3.2 µg for PLP/DM20 and 1 µg for actin) and cerebellum (0.8 µg for PLP/DM20 and 1 µg for actin) were separated on 15% SDS-polyacrylamide gels and blotted onto PVDF membranes (Hybond, Amersham) using the Novex Semi-Dry Blotter (Invitrogen). Primary antibodies were incubated in 5% milk powder in TBST over night at 4°C. Primary antibodies were specific for PLP/DM20 (A431; 1:5000; Jung et al., 1996), MBP (1:500; DAKO), and actin (1:1000 for cerebellum, 1:5000 for prefrontal cortex; Sigma). Secondary HRP-coupled antibodies (dianova) were detected using the ChemoCam system (Intas).
 
-## Mouse maintenance and behavioral tests
+### Mouse maintenance and behavioral tests
 
 All mice for behavioral tests were maintained in ventilated cabinets (Scantainers, Scanbur, Karlslunde, Denmark), separated by gender, under standard laboratory conditions, including a 12 hr light/dark cycle (lights off at 7 PM) at 20–22°C, 50–60% humidity, and with access to food and water ad libitum. Upon weaning, mice were separated by gender and genotype and remained group-housed in standard plastic cages (two to five mice per cage). Male mice were single-housed at age of 6 months, due to requirements of experimental tests. Male and female cKO mice (N=14 and 20, respectively) were compared to respective control mice (N=16 and 17, respectively) in all behavioral experiments. A series of behavioral paradigms, described below, was conducted on mice throughout lifespan, covering ages between 2 and 23 months (Table 1). General health status of mice was continuously monitored by body weight, home-cage observation including general activity and appearance, nest building and interaction with littermates. Group sizes decreased upon progressing age due to natural death. In all behavioral experiments, mice were allowed to habituate to conditions of the experimental room for a minimum of 30 min prior to testing. Male and female mice were tested separately.
 
-## Muscle strength, motor coordination, and motor learning
+### Muscle strength, motor coordination, and motor learning
 
-## Rotarod – motor coordination and learning
+#### Rotarod – motor coordination and learning
 
 The rotarod (ENV-577M, Med Associates Inc Georgia, VT, USA) was performed as previously described (Dere et al., 2014). Briefly, all mice were tested in a total of two trials over 2 consecutive days. Each trial consisted of a maximum of 5 min, in which mice had to run continuously on a horizontal rotating drum accelerating from 4 to 40 rpm. The latency to fall (s) was assessed for each mouse during both trials. Mice of both genders were tested in the rotarod at the age of 6 and 17 months.
 
-## Grip strength – forelimb muscle strength
+#### Grip strength – forelimb muscle strength
 
 The forelimb grip strength of male and female mice was assessed at age 6, 13, and 15 months. The test was performed as previously described (Netrakanti et al., 2015). Briefly, each mouse was tested in a total of three consecutive trials. During each trial, mice were lifted gently by their tails and allowed to grasp a wire of the grip strength meter (TSE Systems, Bad Homburg, Germany). Upon grasping the wire, mice were brought into a horizontal position before being gently pulled back by their tails, to assess the applied forelimb force. The average grip strength per mouse was calculated.
 
-## Beam balance – motor coordination
+#### Beam balance – motor coordination
 
 Motor coordination was assessed at age 13 months, using beam balance test as previously described (Netrakanti et al., 2015). Briefly, the ability of mice to cross elevated beams (59 cm length) of decreasing diameter (25, 10, or 8 mm) was measured. Mice were placed at the illuminated end of the respective beam and the latency to reach the target zone, an attached cardboard cage with bedding, was recorded. The test was conducted over 3 consecutive days, starting with the 25 mm beam (day 1), then 10 mm (day 2) and 8 mm beam (day 3). Each mouse was tested in a maximum of three trials per day, in case it fell off the beam, and given 60 s to reach the target.
 
-## Hearing and sensorimotor gating
+### Hearing and sensorimotor gating
 
-## Pre-pulse inhibition of the acoustic startle response
+#### Pre-pulse inhibition of the acoustic startle response
 
 Male and female mice were tested for both general hearing and sensorimotor gating at age of 6 and 18 or 6 and 20 months, respectively. A detailed protocol of pre-pulse inhibition (PPI) was reported previously (Netrakanti et al., 2015). Sensorimotor gating experiments were conducted within sound attenuating chambers (TSE Systems, Bad Homburg, Germany), in which acoustic stimuli (120 dB) both with and without a preceding pre-pulse evoked startle responses, recorded by a force-sensitive platform. PPI, using a 70, 75, or 80 dB pre-pulse, was calculated by the following formula: %PPI = 100 – [(startle amplitude after pre-pulse)/(startle amplitude after pulse only) × 100] (Pan et al., 2019). To assess hearing abilities of male and female mice, the amplitude of response (arbitrary units) to 65 dB background noise as well as to six pulse-alone trials with startle stimuli of 120 dB was measured.
 
-## Sensory functions
+### Sensory functions
 
-## Hot plate test – nociception
+#### Hot plate test – nociception
 
 Pain perception in male and female was assessed at the age of 13, 15, 17, and 20 months, using the hot plate test as described (Dere et al., 2014). Briefly, mice were placed on a preheated (55°C) metal plate (Ugo Basile Srl, Comerio, Italy) and the latency (s) to retract by jumping or licking of the hind paws was recorded. Mice were exposed for a maximum of 40 s, used as cut-off time, in case they did not show an aversive response to the heated plate.
 
-## Cued platform training in the MWM – vision
+#### Cued platform training in the MWM – vision
 
 General vision of male and female mice was evaluated within the MWM experiment at age 19 or 13 months, respectively, as detailed before (Dere et al., 2014). Vision was assessed during the first 2 days of acquisition training, in which an escape platform was submerged 1 cm below the surface of opaque water. A small blue flag protruding above the water surface was attached at the center of the platform and used as cue for locating the escape platform. Each mouse was tested on 2 consecutive days in four trials per day with a 5 min inter-trial-interval (ITI). Escape latency, velocity of swimming, and path length were recorded with video-tracking system (Viewer3, Biobserve GmbH, Bonn, Germany).
 
-## Social behavior and social preference
+### Social behavior and social preference
 
-## Ultrasound vocalization – communication
+#### Ultrasound vocalization – communication
 
 Ultrasonic vocalization was evaluated as described in male mice only, at age 6 months (Dere et al., 2014; Hammerschmidt et al., 2012). Male mice of both genotypes were single-housed 1 week prior to testing. Each male mouse was exposed to an anesthetized unfamiliar C57Bl/6N WT female within its home-cage for 3 min. Number of ultrasonic calls of the resident males and latency to first call (s) were recorded.
 
-## Social boxes in the IntelliCage design – pheromone-based social preference
+#### Social boxes in the IntelliCage design – pheromone-based social preference
 
 Pheromone-based social preference was evaluated at age 6 months in female mice only as described (Dere et al., 2014). Briefly, mice underwent anesthesia for subcutaneous implantation of ISO standard transponders (PM162-8) below the skin of the neck, 1 day prior to group-housing within IntelliCages. Mice remained in the cages for a total of 6 days for an IntelliCage-based behavioral phenotyping (see below). Social preference was tested on the last day by connecting two social boxes to the left and right side of the cages. Connection of the boxes was carried out via plastic tubes equipped with two-ring RFID antennas, which monitored entrance and exit of individual mice to each box. Initially, both boxes were filled with fresh bedding and animals were allowed to freely explore for a 1 hr habituation. Subsequently, used bedding containing pheromones of male C3H mice was added to one of the boxes and the time spent in the pheromone vs. non-pheromone box was recorded for another hour.
 
-## Cognitive flexibility, episodic-like memory, and anhedonia
+### Cognitive flexibility, episodic-like memory, and anhedonia
 
-## IntelliCage-based behavioral phenotyping battery
+#### IntelliCage-based behavioral phenotyping battery
 
 By application of our IntelliCage-based behavioral phenotyping design, we assessed multiple facets of cognition as well as sucrose preference, as measure of anhedonia, in female mice only, at age 6 months as described (Dere et al., 2014). One day after subcutaneous implantation of transponders (see above), mice were group-housed, separated by genotype, and remained in the IntelliCages for 6 days. Place learning was acquired within the first 24 hr (day 1), in which an individual mouse learned that only one out of four corners was rewarded with water, while the other corners remained blocked. The number of mice assigned to each corner was balanced and semi-randomly determined. On day 2, reversal learning was assessed to measure cognitive flexibility as well as perseveration. Mice had to learn that the previously rewarded corner was now blocked, and instead the diametrically opposed corner now rewarded. Sucrose preference was assessed on day 3 by comparing preference for a corner rewarded with a 2% sucrose solution over another corner rewarded with tap water. During these 24 hr, the two previously blocked corners were now rewarded with either sucrose solution or tap water, whereas the remaining corners were blocked. The visits to the respective target corners during place and reversal learning as well as sucrose preference testing were used for statistical analysis. On days 4–5 mice had again access to two rewarding corners providing either a sucrose solution or tap water. However, these corners were now again the diametrically opposed corners to day 3 and access to the corners was only provided for a limited time, namely during the first 2 hr of the active phase of the mice (6–8 PM). Hence, mice were required to form a multimodal association containing the information on the type of reward provided (what) as well as their locations (where) and the time at which to expect the reward (when), rendering this approach an experimental model for the assessment of episodic memory comparably to humans. Visits to rewarded corners during acquisition (day 4) and retrieval (day 5) of episodic-like memory were recorded and the delta between visits to the corner providing sucrose solution and the corner providing tap water was calculated.
 
-## Spatial memory and learning
+### Spatial memory and learning
 
-## Morris water maze
+#### Morris water maze
 
 Spatial memory as well as cognitive flexibility and perseveration, via reversal learning, were evaluated in male and female mice at the age of 19 or 13 months, respectively, using the MWM task. The test was conducted as described (Dere et al., 2014; Netrakanti et al., 2015). Mice were tested within a circular tank (diameter 1.2 m and depth 0.6 m) filled with opaque water (25±1°C) in various successive phases, starting with 2 days of cued platform training as described above (see: vision). Subsequently, the blue flag cue was detached from the escape platform (10 cm × 10 cm), which was submerged 1 cm below the water surface and relocated within the tank, and mice were tested for 8 days during hidden platform training. Throughout these days mice had to form a spatial memory for the escape platform using various extra-maze cues placed on the walls of the testing room. During all training phases mice were tested in four daily trials with an ITI of 5 min and the individual performances were recorded with a video-tracking system (Viewer3, Biobserve GmbH, Bonn, Germany) for subsequent analysis. Training was followed by a probe test to assess spatial memory and the time spent in the target quadrant of the maze as well as visits and the latency to the target quadrant were used for statistical analysis. Moreover, total distance swam and the average swimming velocity were analyzed, to exclude potential motor deficits. Finally, mice were exposed to 4 days of reversal training, in which the only difference to the hidden platform training was that the escape platform was relocated into a new quadrant of the tank. Reversal training was followed by another probe trial, wherein the same parameters were determined as in the first probe test.
 
-## Working memory
+### Working memory
 
-## Y maze continuous alternation
+#### Y maze continuous alternation
 
 Spontaneous alternation was assessed in male and female mice of 20 months age, in a Y-shaped maze (Dere et al., 2014). Mice were individually placed into the center of a triangle-shaped maze with three identical open arms (7.5 cm × 18 cm × 23.5 cm) and allowed to freely explore the maze for a total of 5 min. Performance of all mice including total number of arm entries, defined as entering with all four paws, was recorded with a video-tracking system (Viewer3, Biobserve GmbH, Bonn, Germany). An alternation ratio, defined as the number of alternating triplets multiplied by 100 and divided by the total number of entries, was calculated.
 
-## Catatonic signs and executive function
+### Catatonic signs and executive function
 
-## Bar test
+#### Bar test
 
 Catatonic signs were assessed at various ages ranging from 2 to 21 months in male and 2 to 22 months in female mice. The bar test was conducted as described before (Garcia-Agudo et al., 2019; Janova et al., 2018). Briefly, mice were gently carried by the tail and brought into proximity of a horizontal bar made of stainless steel. Upon grasping the bar with both forepaws and standing upright, the tail was released. Mice were tested in two consecutive trials, which were recorded with a high-resolution camcorder (Sony HDR-CX405, Sony, Tokyo, Japan) and the time spent immobile at the bar (s) was determined.
 
-## Modified hurdle test
+#### Modified hurdle test
 
 The hurdle test is a novel tool to measure executive dysfunction in catatonia-like syndromes (Garcia-Agudo et al., 2019). The test setup comprises a circular open field arena containing a polyvinylchloride comb inset (119 cm diameter), made of equally built (10 cm × 10 cm) connected combs, and 140 lux light intensity at the center of the arena, to motivate mice to move to the periphery. We applied minor modifications to the previously reported setup, by increasing the height of the connected combs from 2.7 cm to now 5.0 cm and adding fresh woodchip bedding into each comb. These modifications were applied, to increase the challenge, while simultaneously reducing aversive responses to the novel environment upon introduction of bedding as a familiar and comfortable texture. The experiment was conducted in male and female mice at age 6 and 20 months, respectively, as described (Garcia-Agudo et al., 2019). Briefly, mice were placed into the center of the above-mentioned inset and their performance until reaching the periphery or the cut-off time of 5 min, was recorded using the Viewer 3 tracking software (Biobserve GmbH, Bonn, Germany). All mice were tested in two consecutive trials with a 5 min ITI. Executive performance was assessed by calculating the ratio of latency to periphery (s) divided by the number of crossed hurdles (#). To account for animals that did not overcome any hurdle, we calculated the ratio as [(s)/(#+1)].
 
-## Puzzle box
+#### Puzzle box
 
 As an additional test assessing executive function, the puzzle box was conducted on male and female mice at age 20 months, respectively. We employed the test as described (O’Connor et al., 2014) with minor modifications. The experimental setup comprises a rectangular-shaped arena (75 cm × 28 cm × 25 cm) split into an enclosed shelter (15 cm × 28 cm) and an illuminated (140 lux) open compartment (60 cm × 28 cm). The compartments are connected to each other via a small doorway, centered at the front wall of the shelter (4 cm width), through which mice can escape into the shelter upon placement into the open compartment. Over a course of 5 consecutive days, mice were required to overcome a total of five challenges of increasing difficulty, within a limited amount of time, to reach the shelter. We employed the following challenges: (1) open doorway, (2) gateway within doorway, (3) gateway filled with bedding, (4) plug made of paper tissue, (5) plug made of nesting material (shredded cardboard paper). Each mouse was tested in a total of three trials per day, in which mice were exposed to two different challenges daily. During the first trial on each day, mice were exposed to the challenge they had to overcome last on the day before, whereas the following two trials measured escape latencies upon introduction of a novel unfamiliar challenge. Exceptions to this approach were the very first trial on day 1 (open entry), which was tested only this one time, and day 5, since mice were tested only once with the most difficult challenge (plug made of nesting material) on day 5. Cut-off time was increased from 4 to 6 min during challenges 4 and 5, to provide sufficient time for mice to be able to unplug the doorway into the shelter. Performance of each mouse was recorded with a video-tracking system (Viewer3, Biobserve GmbH, Bonn, Germany) and averaged escape latency for each challenge measured.
 
-## Complex wheel running
+#### Complex wheel running
 
 Overnight voluntary CRW was conducted at age 23 months, as an additional measure of both drive and motor-cognitive performance. Mice of both genotypes and genders were single-housed and exposed to CRW (TSE Systems, Bad Homburg, Germany) for 24 hr. Placement of mice into the respective CRW cages was carried out in the morning (8–9 AM) allowing the mice to familiarize themselves with the novel environment throughout the day. CRW are defined by randomly omitted bars, providing a motor-cognitive and coordinatory challenge. Voluntary running on CRW was recorded automatically (Phenomaster software, TSE Systems, Bad Homburg, Germany) yielding information on time spent running (min), total distance run (cm), and running velocity (cm/min). Analysis of CRW performance was conducted over 12 hr during the active phase (lights off from 7 PM to 7 AM).
 
-## Statistical analyses
+### Statistical analyses
 
 Computation of an appropriate sample size for this study was carried out via G*Power software (Faul et al., 2007) based on the following statistical requirements and assumptions: α-error 0.05, β-error 0.085, statistical effect size 1.000, based on previous IntelliCage-based experiments in our lab. We chose the IntelliCage-based assay serving as a crucial limiting experiment, due to the high cognitive demand of the setup (see also: Dere et al., 2018). Mice of both genders (male/female) and both genotypes (control/conditional mutant) were used, with each mouse being a biological replicate in each assay.
 

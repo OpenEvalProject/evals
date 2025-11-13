@@ -33,7 +33,7 @@ Here, we describe the development of a virus/host animal model that incorporates
 
 ## Results
 
-## Generation and characterization of Rhabdo-Imunodeficiency viruses (RhIV)
+### Generation and characterization of Rhabdo-Imunodeficiency viruses (RhIV)
 
 HIV-1 itself cannot replicate in murine cells, even when they are engineered to expressed human versions of HIV-1 receptors and essential Tat cofactors that enable HIV-1 entry and transcription in murine cells (Bieniasz and Cullen, 2000; Mariani et al., 2000). However, VSV has a very broad tropism and numerous VSV-based chimeric viruses expressing functional, heterologous envelope proteins, including that of HIV-1, have been generated (Boritz et al., 1999; Johnson et al., 1997; Rabinovich et al., 2014; Rose et al., 2001). We generated a panel of chimeric Rhabdo-Immunodeficiency viruses (RhIVs) encoding Env proteins from diverse HIV-1 strains including those representative of strains circulating in human populations. Initially we constructed RhIV strains encoding the subtype B Env proteins of HIV-1NL4-3, a laboratory adapted X4-tropic strain, HIV-1ADA, a macrophage tropic primary isolate and HIV-1AD17, an R5 tropic transmitted founder (T/F) HIV-1 strain. The ectodomain and transmembrane domains of HIV-1 Env were fused to the cytoplasmic tail of VSV-G (Figure 1A). Retaining the VSV-G cytoplasmic tail has the potential to perturb the tertiary structure of the HIV-1 ectodomain, but this strategy improves HIV-1 Env incorporation into VSV particles (Johnson et al., 1997). RhIVNL4-3, RhIVADA, and RhIVAD17 strains were rescued from recombinant DNA, plaque purified and expanded. Western blot analysis of RhIVADA showed that the HIV-1 envelope protein was readily detectable in lysates from infected cells and pelleted virions (Figure 1B). RhIVNL4-3 and RhIVAD17 strains displayed the appropriate receptor specificity when used to infect GHOSTX4 or GHOSTR5 cells (Figure 1C) and infection of these cells with RhIV, but not VSV, led to the appearance of large syncytia, in addition to a pronounced cytopathic effect (Figure 1C). We therefore generated a larger panel of RhIV constructs expressing a variety of physiologically relevant envelope proteins from HIV-1 clades A, B, and C, including T/F viruses. All of these viruses replicated well in vitro, reaching titers of ~106 to 107 plaque forming units (PFU)/ml (Figure 1D).
 
@@ -43,7 +43,11 @@ HIV-1 itself cannot replicate in murine cells, even when they are engineered to 
 
 To facilitate the monitoring of RhIV infection, we generated a RhIVAD17 based reporter virus that encoded GFP (Figure 1E). RhIVAD17(GFP) replicated robustly in GHOSTR5 cells, generating green fluorescent syncytia, as well as in a human T-cell line MT2/R5 engineered to express the CCR5 coreceptor (Figure 1F and G). Live imaging of RhIVAD17(GFP) replication in 293T/CD4/CCR5 cell monolayers suggested a dominant mode of viral spread in cell monolayers via direct cell-cell transmission, with additional viral transmission to distal cells (Video 1). We also generated RhIV strains expressing nanoluciferase (nLuc, Figure 1E). Infection of TZMbl cells (a popular target cell for HIV-1 neutralization assays) with RhIVAD17(nLuc) generated high levels of nLuc within a few hours of infection (Figure 1H). Analysis of a panel of RhIV (nLuc) and corresponding HIV-1 (nLuc) viruses revealed that sensitivity to the CCR5-binding antagonist maraviroc was similar for each HIV-1 envelope in the context of either HIV-1 or RhIV infection (Figure 1I).
 
-## Neutralization properties of RhIV virions
+![Video 1.](https://cdn.elifesciences.org/articles/49875/elife-49875-video1.mp4.jpg)
+
+**Video 1.:** Cells (293 T/CD4/CCR5) were infected with RhIVAD17(GFP) at low MOI (0.0001) and placed in VivaView FL incubator fluorescence microscope imaging system (Olympus). At 6 hr after infection, individual GFP positive cells were identified and centered in a field of observation and images acquired every 5 min thereafter. The movie represents 24 hr of observation (from 6 hr to 30 hr after infection).
+
+### Neutralization properties of RhIV virions
 
 We compared the sensitivity of RhIV (nLuc) and HIV-1 (nLuc) viruses carrying various HIV-1 Env proteins to neutralization by a panel of well characterized bNAbs. The panel targeted various epitopes on the HIV-1 envelope: PG16 and PG9 recognize a quaternary epitope at the apex of the envelope trimer formed by the V2 loop (Walker et al., 2009), 10–1074 recognizes a glycosylation dependent epitope in the V3 loop (Mouquet et al., 2012), VRC01 and 3BNC117 target the CD4-binding site (Scheid et al., 2011; Wu et al., 2010) and 10E8 targets an epitope in the membrane proximal external region (MPER) (Huang et al., 2012). In general, matched RhIV (nLuc) and HIV-1 (nLuc) viruses exhibited similar neutralization properties (Figure 2A and B). While most RhIV and HIV-1 strains were sensitive to the quaternary epitope targeting PG16 and PG9 antibodies, the RhIV1054/HIV-11054, RhIVSF162/HIV-1SF162 and RhIV V1/HIV-1V1 virus pairs each shared the property of being resistant to PG9 and PG16 (Figure 2A and B). The HIV-1V1 strain was unusual in exhibiting near complete resistance to all bNAbs tested, except 10–1074 and this property was preserved in the corresponding RhIVV1 chimeric virus (Figure 2B). There were, nevertheless, some discrepancies in the potencies with which matched HIV-1 (nLuc) and RhIV (nLuc) viruses were neutralized by bNAbs. In one example, the MPER-targeting bNAb (10E8) neutralized RhIVCH505 but did not neutralize HIV-1CH505 (Figure 2B). These occasional discrepancies may be the result of the HIV-1 and VSV-G cytoplasmic tails imposing different conformations on the Env ectodomain. Alternatively there may be differences in Env spike density, heterogeneity and distribution on RhIV virions as compared to HIV-1 virions.
 
@@ -51,7 +55,7 @@ We compared the sensitivity of RhIV (nLuc) and HIV-1 (nLuc) viruses carrying var
 
 **Figure 2.:** (A, B) The indicated RhIV(nLuc) and HIV-1(nLuc) strains bearing subtype B (A) and subtype C (B) envelope proteins were incubated with broadly neutralizing antibodies targeting a V2 quaternary epitope (PG9,PG16), the V3 loop (10–1074), the CD4 binding site (VRC01, 3BNC17) or the MPER (10E8), prior to infection of TZM-Bl cells.
 
-## Transgenic mice expressing HIV-1 receptors
+### Transgenic mice expressing HIV-1 receptors
 
 To generate small animals that had the potential of being infected by RhIVs, we generated transgenic mice expressing human CD4 (hCD4) along with the CCR5 coreceptor. We engineered a construct that contained the murine Cd4 promoter and intron driving expression of human CD4 and CCR5 cDNAs separated by sequences encoding an FMDV 2A site (Figure 3A) (Seay et al., 2013), with the goal of ensuring that hCD4 would be present exclusively on murine CD4+ cells, and tight linkage between human CD4 and CCR5 expression.
 
@@ -61,9 +65,17 @@ To generate small animals that had the potential of being infected by RhIVs, we 
 
 Analysis of several independent transgenic mouse lines revealed variable levels of cell surface hCD4. We selected three transgenic mouse lines, A1, C18 and B4 that had high, intermediate and low levels of hCD4 expression respectively (Figure 3B). The A1 line mimicked the levels of hCD4 found on human CD4+ T-cells (Figure 3C) and was used in subsequent experiments unless otherwise indicated. Levels of CCR5 (as indicated by fluorescence intensity) on the CD4+ cells in the A1 mice were also similar to levels of CCR5 on human CD4+ cells. However, as expected ~100% of hCD4+ cells in the blood of A1 mice were CCR5+ (Figure 3D), while the fraction of CD4+ T-cells that also express CCR5 is known to vary according to tissue location in humans (see discussion). FACS analysis revealed that hCD4, like mouse CD4, was expressed exclusively on CD3+ cells, but was absent from the CD8+ cell fraction (Figure 3E). Overall, 100% of mouse CD4+ cells (but no other cells) in A1 mice expressed hCD4 and CCR5 at levels mimicking human CD4+ T-cells (Figure 3E).
 
-## Acute pathology in hCD4/CCR5 transgenic mice following RhIV infection
+### Acute pathology in hCD4/CCR5 transgenic mice following RhIV infection
 
 Because VSV is extremely sensitive to type-1 interferon (Müller et al., 1994), we crossed A1, C18 and B4 mice to C57BL/6 mice lacking the type one interferon receptor gene (Ifnar1), generating A1Ifnar-/-, C18Ifnar-/- and B4Ifnar-/- lines. We first infected A1Ifnar-/- mice with 105 PFU of RhIVCH505 by intraperitoneal injection (i.p.). FACS analysis of peripheral blood mononuclear cells (PBMC) 4 days later revealed profound and selective depletion of CD4+ T-cells (Figure 4A). Next, we infected a cohort of A1Ifnar-/- mice with 105 PFU of RhIVCH505 and measured CD4+ T-cell numbers and viral RNA levels in lymphoid tissues. This analysis revealed progressive and profound reductions in CD4+ T-cell numbers in PBMC and spleen, and near complete depletion of CD4+ T-cells from thymus and lymph nodes (Figure 4B). Viral RNA levels peaked at between 103 and 106 copies/μg of cellular RNA between day 1 and day 4 after infection, depending on the tissue, with the highest levels (>106 copies/μg) found in thymus (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/49875/elife-49875-fig4-v3.jpg)
+
+**Figure 4.:** (A) FACS analysis of CD4 and CD8 expression on T-cells (gated on CD3+ cells) in three A1Ifnar-/- mice prior to RhIV infection (upper row) and 3 days after RhIVCH505 infection (lower row). The % of CD3+ cells that were CD4+ is indicated. (B) RhIV RNA levels (log10 copies /µg total RNA, upper row) and CD4+ T-cell numbers (% of CD3+ cells, lower row) in A1Ifnar-/- mouse tissues following infection with RhIVCH505. Values are the mean ± sd of three mice at each time point. (C–F) RhIV viremia (log10 RNA copies/ml of plasma, upper rows) and blood CD4+ T-cell proportion (% of CD3+ cells, lower rows) in A1Ifnar-/- mice (C), A1Ifnar-/-, C18Ifnar-/-, and B4Ifnar-/- mice (D, F) or A1Ifnar+/+ mice (E) at the indicated times following infection with the indicated RhIV strains. Each symbol type on each chart represents an individual mouse (n = 2 to 4 for each virus/mouse strain combination) (G) Blood CD4+ T-cell proportion (% of CD3+ cells) in A1Ifnar-/- mice at the indicated times following infection with RhIVCH505. Each symbol type represents an individual mouse (n = 4).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49875/elife-49875-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) RhIV viremia (log10 RNA copies/ml of plasma, upper rows) and blood CD4+ T-cell proportion (% of CD3+ cells, lower rows) in A1Ifnar-/- mice (A) or A1Ifnar+/+ (B) at the indicated times following infection with 103 PFU, 102 PFU, or 10 PFU (as indicated), of RhiVBG505, RhiVCH505, RhiVDu156, or RhiVSF162. Each symbol type represents an individual mouse (n = 2 for each virus/dose combination).
 
 Conventionally, replication and pathogenesis during immunodeficiency virus infections in primates is monitored longitudinally using blood. We next infected A1Ifnar-/- mice (i.p.) with 105 PFU of RhIVBG505, RhIVDu156, RhIVSF162, or RhIVCH505 and monitored plasma viremia and CD4+ T-cells in blood. Plasma viremia peaked at between 106 and 108 RNA copies/ml on day 1 after infection, then declined rapidly during days 1–7 and was cleared before day 14 (Figure 4C,D). CD4+ T cells were nearly completely depleted from blood by day 4, then gradually recovered (Figure 4C,D). Thus, because analyses of blood enabled long term follow up, and appeared to provide a reasonable surrogate for virus replication and perturbation of cell population in tissues, subsequent analyses were performed using blood.
 
@@ -75,7 +87,7 @@ We also challenged mice expressing high (A1Ifnar-/-), intermediate (C18Ifnar-/-)
 
 Although infection of A1Ifnar-/- mice, and in some cases A1Ifnar+/+ mice, led to high level viremia and profound CD4+ T-cell depletion, in all cases RhIV infection was apparently cleared. Long term follow-up of a group of RhIVCH505-infected A1Ifnar-/- mice showed that CD4+ T-cells exhibited near complete recovery by approximately 40 to 50 days after initial infection (Figure 4G).
 
-## Protection of mice against RhIV infection by HIV-1-specific bNAbs
+### Protection of mice against RhIV infection by HIV-1-specific bNAbs
 
 To test the utility of the RhIV model system in evaluating the protective efficacy of antibodies, we challenged mice with RhIV following administration of bNAbs. In the first experiment, A1Ifnar+/+ mice were injected subcutaneously (s.c.) with 1 mg of the bNAbs PG16 or 3BNC117 and challenged the following day with RhIVBG505. On the basis of previous experiments, this injection is expected to yield 10–100 μg/ml of antibody in the blood of mice (Klein et al., 2012). Both antibodies appeared to provide sterilizing protection, in that no viral RNA was detected in plasma of antibody-injected mice and no perturbations in CD4+ T-cells were observed (Figure 5A). In a second experiment, A1Ifnar-/- mice were injected s.c. with increasing doses (50 μg −1 mg) of 3BNC117 and challenged the following day with RhIVCH505. As was the case with RhIVBG505, the highest dose of 3BNC117 gave apparently sterilizing protection against RhIVCH505 infection, with undetectable plasma viremia and no CD4+ cell depletion (Figure 5B). At 0.5 mg 3BNC117, 2/3 mice exhibited apparently sterile protection, while a third had barely detectable viremia and minimal CD4+ T-cell depletion. At lower 3BNC117 doses (50 μg and 100 μg), partial protection was observed, with low-level viremia (<103 copies/ml) and clear CD4+ T-cell depletion, that was not as extensive as control animals (Figure 5B). In one animal (at the 50 μg dose) apparently complete protection was observed.
 
@@ -83,15 +95,43 @@ To test the utility of the RhIV model system in evaluating the protective effica
 
 **Figure 5.:** (A, B) RhIV viremia (log10 RNA copies/ml of plasma, upper rows) and blood CD4+ T-cell proportion (% of CD3+ cells, lower rows) in A1Ifnar+/+ mice (A) or A1Ifnar-/- (B) at the indicated times following infection with RhIVBG505 (A) or RhIVCH505 (B). At 24 hr prior to infection mice were injected (s.c.) with PBS (control) or 1 mg of PG16 or 3BNC117 antibodies (A) or the indicated dose of 3BNC117 antibody (B). Each symbol type represents an individual mouse (n = 2 (A) or n = 3 (B) for each virus/antibody combination).
 
-## RhIV infection and clearance confers protection against re-infection
+### RhIV infection and clearance confers protection against re-infection
 
 The finding that mice cleared RhIV infection provided the opportunity to examine whether protective immune responses might occur following RhIV infection and clearance. Therefore we conducted a series of experiments (Expt #1 through Expt #5), in which mice were challenged three times, several weeks apart, with a single RhIV strain or different RhIV strains (see Materials and methods).
 
 First, we infected A1Ifnar+/+ mice (Expt #1, n = 2, Figure 6—figure supplement 1A) or A1Ifnar-/- mice (Expt #2, n = 2, Figure 6—figure supplement 1B and Expt #3 n=4 Figure 6A) with RhIVSF162. As before, RhIVSF162 infection was cleared and CD4+ T-cells recovered. At 42 days (Expt #2) or 49 days (Expt#1 and Expt#3) after the first infection, mice were rechallenged with RhIVSF162. Following the second challenge, only low-level plasma viremia (~103 RNA copies/ml) was detected, and only in a subset of mice. The magnitude of CD4+ T-cell depletion following the second infection was reduced compared to the first infection (in A1Ifnar-/- mice) or absent (in A1Ifnar+/+ mice). Following a third challenge with RhIVSF162 at 84 days (Expt#2) or 91 days (Expt#1 and Expt#3) after the first infection, plasma viremia was undetectable, and only minor perturbations of CD4+T cell numbers were observed (Figure 6A, Figure 6—figure supplement 1A,B).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/49875/elife-49875-fig6-v3.jpg)
+
+**Figure 6.:** (A) RhIV viremia (log10 RNA copies/ml of plasma, upper rows) and blood CD4+ T-cell proportion (% of CD3+ cells, lower rows) in A1Ifnar-/- mice following infection with RhIVSF162 on days 0, 49 and 91. Each symbol type represents an individual mouse (n = 4). (B, C) RhIV viremia (log10 RNA copies/ml of plasma, upper rows) and blood CD4+ T-cell proportion (% of CD3+ cells, lower rows) in A1Ifnar+/+ mice (B) and A1Ifnar-/- mice (C) following infection with RhIVDu156, RhIVBG505, and RhIVSF162 on days, 0, 42 and 91, respectively. Each symbol type represents an individual mouse (n = 4). (D) RhIVBG505 and VSVMLV-E viremia (log10 RNA copies/ml of plasma, upper rows) and blood CD4+ T-cell proportion (% of CD3+ cells, lower rows) in A1Ifnar-/- mice following infection with RhIVBG505 on day 0 and day 28 (left panels), VSVMLV-E on day 0 and RhIVBG505 day 28 (center panels) or RhIVBG505 on day 0 and VSVMLV-E day 28 (right panels).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/49875/elife-49875-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A) RhiV viremia (log10 RNA copies/ml of plasma, upper rows) and blood CD4+ T-cell proportion (% of CD3+ cells, lower rows) in #A1Ifnar+/+ mice following infection with RhiVSF162 on day 0, day 48, and day 91. Each symbol type represents an individual mouse (n = 2). (B) RhiV viremia (log10 RNA copies/ml of plasma, upper rows) and blood CD4+ T-cell proportion (% of CD3+ cells, lower rows) in #A1Ifnar-/- mice following infection with RhiVSF162 on day 0, day 42, and day 84. Each symbol type represents an individual mouse (n = 2). (C) RhiV viremia (log10 RNA copies/ml of plasma, upper rows) and blood CD4+ T-cell proportion (% of CD3+ cells, lower rows) in #A1Ifnar-/- mice following infection with RhiVBG505 on day 0, day 63, and day 119. Each symbol type represents an individual mouse (n = 2). (D) RhiV viremia (log10 RNA copies/ml of plasma, upper rows) and blood CD4+ T-cell proportion (% of CD3+ cells, lower rows) in #A1Ifnar-/- mice following infection with RhiVCH505 on day 0, RhiVBG505 on day 63, and RhiVCH505 on day 119. Each symbol type represents an individual mouse (n = 2). (E) RhiV viremia (log10 RNA copies/ml of plasma, upper rows) and blood CD4+ T-cell proportion (% of CD3+ cells, lower rows) in #A1Ifnar-/- mice following infection with RhiVSF162 on day 0, RhiVBG505 on day 63, and RhiVCH505 on day 119. Each symbol type represents an individual mouse (n = 2). (F) RhiV viremia (log10 RNA copies/ml of plasma, upper rows) and blood CD4+ T-cell proportion (% of CD3+ cells, lower rows) in #A1Ifnar-/- mice following infection with RhiVDu156 on day 0, RhiVBG505 on day 63, and RhiVCH505 on day 119. Each symbol type represents an individual mouse (n = 2, one mouse died on day 68).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/49875/elife-49875-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Schematic representation of the VSVMLV-E genome in which the VSV-G ectodomain and transmembrane sequences are replaced with MLV-E Env counterparts and a GFP reporter is placed 3’ to Env coding sequences (B) Micrograph of NIH3T3 cells 24 hr after infection with VSVMLV-E(GFP). (C) RhiV viremia (log10 RNA copies/ml of plasma, upper rows) and blood CD4+ T-cell proportion (% of CD3+ cells, lower rows) in #A1Ifnar+/+ mice (left panels) and #A1Ifnar+/+, µMT-/- mice (right panels) following infection with RhiVCH505 on day 0 and day 49. Each symbol type represents an individual mouse (n = 4).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/49875/elife-49875-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** (A,B) ELISA measurement of antibodies that bind to plates coated with gp160 (SOSIP) proteins from BG505 (subtype A), B41 (subtype B), Du422 (subtype C) and Zm197 (subtype C) HIV-1 strains. Absorbance at 450 nm (A450nm) plotted against Log10 reciprocal serum dilution (A) Serum from Expt #3 A1Ifnar-/- mice infected with RhIVSF162 on day 0, day 49 (week 7) and 91 (week 13). Each symbol type represents an individual mouse (n = 4) and corresponds to the mice depicted in Figure 6A. (B) Serum from Expt #4a A1Ifnar+/+ mice (blue symbols/lines) and Expt #4b A1Ifnar-/- mice (red symbols and lines) infected with RhiVDu156 on day 0, RhiVBG505 on day 42 (week 6), and RhiVSF162 on day 91 (week13). Each symbol type represents an individual mouse (n = 4) and corresponds to the mice depicted in Figure 6B and C.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/49875/elife-49875-fig6-figsupp4-v3.jpg)
+
+**Figure 6—figure supplement 4.:** (A,B) ELISA measurement of antibodies that bind to plates coated with gp160 (SOSIP) proteins from BG505 (subtype A), B41 (subtype B), Du422 (subtype C) and Zm197 (subtype C) HIV-1 strains. Absorbance at 450 nm (A450nm) plotted against Log10 reciprocal serum dilution (A) Serum from Expt #5 A1Ifnar-/- mice infected with RhIVBG505 on day 0, day 63 (week 9) and day 119 (week 17). Each symbol type represents an individual mouse (n = 2) Symbols and line colors corresponds to the mice depicted in Figure 6—figure supplement 1C. (B) Serum from Expt #5 A1Ifnar-/- mice infected with RhiVCH505 on day 0, RhiVBG505 on day 63 (week 9), and RhiVCH505 on day 119 (week 17). Each symbol type represents an individual mouse (n = 2). Symbols and line colors corresponds to the mice depicted in Figure 6—figure supplement 1D.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/49875/elife-49875-fig6-figsupp5-v3.jpg)
+
+**Figure 6—figure supplement 5.:** (A,B) ELISA measurement of antibodies that bind to plates coated with gp160 (SOSIP) proteins from BG505 (subtype A), B41 (subtype B), Du422 (subtype C) and Zm197 (subtype C) HIV-1 strains. Absorbance at 450 nm (A450nm) plotted against Log10 reciprocal serum dilution. (A) Serum from Expt #5 A1Ifnar-/- mice infected with RhIVSF162 on day 0, RhIVBG505 on day 63 (week 9) and RhIVCH505 on day 119 (week 17). Each symbol type represents an individual mouse (n = 2) Symbols and line colors corresponds to the mice depicted in Figure 6—figure supplement 1E. (B) Serum from Expt #5 A1Ifnar-/- mice infected with RhiVDu156 on day 0, RhiVBG505 on day 63 (week 9), and RhiVCH505 on day 119 (week 17). Each symbol type represents an individual mouse (n = 2). Symbols and line colors corresponds to the mice depicted in Figure 6—figure supplement 1F.
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/49875/elife-49875-fig6-figsupp6-v3.jpg)
+
+**Figure 6—figure supplement 6.:** (A) INNO-LIA HIV I/II Score assay using sera from mice (Exp #5) Schematic on the right shows the position of the antigens deposited on each strip. Bands in the upper portion of the strips are controls for the presence of human serum and are not expected to react with mouse serum. Symbols and their colors above each lane correspond to the individual mice depicted in Figure 6—figure supplement 1. (B) Competition ELISA in which the indicated dilutions of IgG, purified from mouse sera, were tested for ability to block the binding of the indicated bnAbs to BG505 SOSIP.664 coated ELISA plates. Symbols and their colors correspond to the individual mice depicted in Figure 6—figure supplement 1.
+
 Next, we did similar experiments (Expt #4a and Expt #4b) that employed three sequential challenges with RhIV strains bearing different HIV-1 Env subtypes at each challenge. First, we infected A1Ifnar+/+ mice (Expt #4a, n = 4, Figure 6B) and A1Ifnar-/- mice (Expt #4b, n = 4, Figure 6C) with RhIVDu156 (encoding a subtype C HIV-1 Env). As expected, plasma viremia was cleared within 1 to 2 weeks and CD4+T cells were depleted but then recovered. At 42 days and 91 days after the initial RhIVDu156 infection, mice were challenged with RhIVBG505 (subtype A Env) and RhIVSF162 (subtype B Env), respectively. The second challenge with RhIVBG505 resulted in only low-level plasma viremia in a subset of mice and an attenuated degree of CD4+ T-cell depletion. The third challenge with RhIVSF162 gave no detectable plasma viremia and minimal CD4+ T-cell depletion (Figure 6B,C). Similar results were obtained in Expt #5, where mice were infected on three occasions with various combinations of homologous or heterologous RhIV strains with envelopes of various subtypes (Figure 6—figure supplement 1C,D,E and F). Overall, infection with RhIV gave an apparent ‘vaccine’ effect, that is there was immunity to subsequent challenge with homologous or heterologous RhIV strains, that exhibited breadth with respect to the HIV-1 envelope protein encoded by the challenge strain.
 
-## Protection against RhIV re-infection does not require B-cells or a homologous Env protein
+### Protection against RhIV re-infection does not require B-cells or a homologous Env protein
 
 To begin to ascertain whether HIV-1 Env-specific antibodies contributed to the apparent vaccine effect of initial RhIV infections on subsequent RhIV challenges, we constructed another VSV-derived chimeric virus, termed VSVMLV-E (GFP). The design of VSVMLV-E (GFP) was the same as RhIV, except that it encoded an Env ectodomain and transmembrane sequences from ecotropic murine leukemia virus (MLV-E) rather than HIV-1 (Figure 6—figure supplement 2A). VSVMLV-E was also equipped with a GFP reporter gene, and replicated well in NIH3T3 cells (Figure 6—figure supplement 2B), yielding cell-free titers of ~106 PFU/ml.
 
@@ -99,7 +139,7 @@ We challenged A1Ifnar+/+ mice with VSVMLV-E or RhIVBG505 which resulted in trans
 
 To further explore whether antibody responses might be responsible for the vaccine effect of RhIV infection, we crossed A1Ifnar+/+ mice to µMT-/-mice that lack functional B-cells (Kitamura et al., 1991). Then, A1Ifnar+/+ and A1Ifnar+/+, µMT-/- mice were challenged with RhIVCH505. Similar and characteristic trajectories of RhIVCH505 plasma viremia and transient CD4+ T-cell depletion were observed in both B-cell competent and B-cell deficient mouse strains (Figure 6—figure supplement 2C). Following rechallenge with RhIVCH505 48 days later, neither A1Ifnar+/+ nor A1Ifnar+/+, µMT-/- mice exhibited plasma viremia or CD4+T-cell depletion (Figure 6—figure supplement 2C). Thus, a B-cell mediated immune response was not required for the vaccine effect of a prior RhIV infection on subsequent RhIV challenge.
 
-## Serological responses to HIV-1 env in RhIV-infected mice
+### Serological responses to HIV-1 env in RhIV-infected mice
 
 Although the above experiments indicated that antibodies were not essential for protection from a secondary RhIV challenge, they did not determine whether or not protective antibodies might be present. We therefore collected plasma from mice that had been repeatedly challenged with RhIV strains in Expt #1 to Expt #5 (Figure 6A–C and Figure 6—figure supplement 1A–F) and tested for the presence of antibodies capable of Env binding, neutralization and protection.
 
@@ -109,7 +149,15 @@ Further analysis of sera from a subset of mice challenged with a variety of RhIV
 
 We next tested neutralization activity of immunoglobulins purified from pooled convalescent sera taken from mice after the three sequential RhIV challenges. In mice that had been challenged three times with RhIVSF162, (Expts #1–3) weak neutralization activity was observed against HIV-1SF162, but not against a heterologous strain (HIV-1CH505) (Figure 7A). In mice that were sequentially infected three times with RhIVDu156, RhIVBG505 and RhIVSF162, (Expt #4) no neutralization was detected against HIV-1Du156, HIV-1BG505 or HIV-1SF162 (Figure 7B). Similarly, in mice that were sequentially infected three times with various RhIV strains (Expt #5), no neutralization was observed against any of the matched HIV-1 strains (Figure 7C). Even three challenges with RhIVBG505 failed to elicit neutralizing activity against HIV-1BG505. This finding contrasts with the results obtained with RhIVSF162/HIV-1SF162. Overall, RhIV infection elicited high titers of HIV-1 envelope binding antibodies. However, these antibodies were primarily non-neutralizing.
 
-## Partial protection conferred by passive transfer of RhIV-convalescent sera
+![Figure 7.](https://cdn.elifesciences.org/articles/49875/elife-49875-fig7-v3.jpg)
+
+**Figure 7.:** (A) Neutralization (using TZM-Bl target cells) of HIV-1(nLuc) strains by immunoglobulins purified from convalescent mouse sera after three infections with RhIVSF162. Symbol types and line colors correspond to individual mice in Expts #1 to #3 (depicted in Figure 6A, Figure 6—figure supplement 1A and B). Black symbols indicate sera from uninfected mice (B) Neutralization of HIV-1(nLuc) strains by immunoglobulins purified from convalescent mouse sera after infection with RhIVDu156, RhIVBG505 and RhIVSF162 in Expt #4. Symbol types and line colors correspond to individual mice (depicted in Figure 6B and C). (C) Neutralization (using TZM-Bl target cells) of HIV-1(nLuc) strains by immunoglobulins purified from convalescent mouse sera after three infections with various RhIV strains in Expt #5. Symbol types and line colors correspond to individual mice depicted in Figure 6—figure supplement 1C,D,E and F. (D) Peak viremia (day one post infection with 105 PFU RhIVSF162) following no treatment or passive administration of sera from uninfected mice, or mice that had previously been infected three times with RhIVSF162. Colored symbols indicate different donor mice, matched to correspond to donor mice from Expt #1 and #2 (depicted in Figure 6—figure supplement 1A and B). Black closed circles indicate sera from uninfected mice, Black open circles indicate no serum treatment. (E) Peak viremia (day one post infection with 103 PFU RhIVSF162) following passive administration of sera from uninfected mice, or mice that had previously been infected three times with RhIVSF162. Colored symbols indicate different donor mice, matched to correspond to donor mice from Expt #1 - #3 (depicted in Figure 6A, Figure 6—figure supplement 1A and B). (F) Peak viremia (day one post infection with 103 PFU RhIVSF162) following no treatment, passive administration of sera from uninfected mice, or mice that had previously been infected with RhIVDu156, RhIVBG505 and RhIVSF162 (Expt #4). Alternatively, serum from mice sequentially infected with various combinations of three RhIV strains (Expt #5) were used. Colored symbols indicate different donor mice, matched to correspond to donor mice from Expt #4 or Expt #5 (depicted in Figure 6B and C, or Figure 6—figure supplement 1C,D,E and F).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/49875/elife-49875-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A–E) RhiV viremia (log10 RNA copies/ml of plasma, upper rows) and blood CD4+ T-cell proportion (% of CD3+ cells, lower rows) in recipient #A1Ifnar-/- mice following infection with 105 PFU of RhiVSF162 (A) or 103 PFU of RhiVSF162 (B–E). One day prior to infection, recipient mice received either no treatment or passive administration of sera from uninfected mice, or mice that had previously been infected three times with RhiV strains in Expt #1 -#5 as detailed below. Serum was administered subcutaneously one day before intraperitoneal RhIV challenge. Each colored symbol type indicates a different donor mouse, and is matched to correspond to donor mice from experiments depicted in Figure 6 and Figure 6—figure supplement 1. (A) Donor sera were from Expt #1 and #2 mice that had been infected three times with RhiVSF162 and are depicted in Figure 6—figure supplement 1A and B (B) Donor sera were from Expt #1 and #2 mice that had been infected three times with RhiVSF162 and are described in Figure 6—figure supplement 1A and B (C) Donor sera were from Expt #3 mice that had been infected three times with RhiVSF162 and are described in Figure 6A (D) Donor sera were from Expt #4 mice that had been infected once each with RhiVDu156, RhiVBG505, and RhiVSF162 and are described in Figure 6B and 6C (E) Donor sera were from Expt #5 mice that had been infected with various RhIV strains and are described in Figure 6—figure supplement 1C,D,E and F.
+
+### Partial protection conferred by passive transfer of RhIV-convalescent sera
 
 Although most sera from infected mice lacked HIV-1 neutralization activity, it was possible that non-neutralizing antibodies might contribute to protection (e.g. via antibody-dependent cellular cytotoxicity, ADCC). Therefore, we collected sera from mice after three challenges in Expts #1 to #5 and conducted passive protection experiments. Convalescent serum from each infected mouse was injected s.c. into two recipient mice that were challenged i.p. the following day with RhIVSF162. First, recipients were given serum from Expt #1 - #3 donors that had been infected three times with RhIVSF162 and had weak neutralizing activity that was specific to HIV-1SF162 (Figure 7A). Then, recipients were challenged with either 105 PFU (Figure 7D) or 103 PFU (Figure 7E) RhIVSF162. Reduced peak plasma viremia was observed in mice that had received convalescent serum compared to controls (Figure 7D,E, Figure 7—figure supplement 1A,B,C). However, none of the recipient mice were completely protected, and the reduction in plasma viremia was not statistically significant in one of the recipient mouse cohorts (Figure 7E). Serum from mice that had been infected with RhIVDu156, RhIVBG505, and RhIVSF162, (Expt #4, Figure 6B and C) lacked neutralizing activity but was nevertheless weakly protective. Indeed, upon challenge with 103 PFU RhIVSF162, Expt #4 convalescent serum recipients had lower peak viremia than controls, and three of fourteen mice were completely protected, with no detectable viremia and no depletion of CD4+ T-cells (Figure 7F, Figure 7—figure supplement 1D). Serum from mice that had been infected with various combinations of 3 RhIV strains (Expt #5) also lacked neutralizing activity and was also weakly protective. Upon challenge with 103 PFU RhIVSF162, convalescent serum recipients again had lower peak viremia than controls, and two out of fourteen mice were completely protected (Figure 7F, Figure 7—figure supplement 1E). Overall, convalescent serum from RhIV infected mice had abundant and broad Env binding activity, and weak protective activity in passive transfer experiments, that that did not correlate with the presence or absence of neutralizing antibodies.
 
@@ -131,7 +179,234 @@ In conclusion, we have developed a virus-host model system that recapitulates so
 
 ## Materials and methods
 
-## Rhabdo immunodeficiency virus (RhIV) clones
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Vesicular Stomatitis Virus)</td>
+      <td>pVSV-FL+(2) Plasmid Expression Vector System</td>
+      <td>Kerafast</td>
+      <td>Cat#EH1002</td>
+      <td>Anti-genomic sense plasmid with helper plasmids N, P, G and L</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL/6J-Tg(Cd4-CD4,CCR5)A1Bsz; C57BL/6J-Tg(Cd4-CD4,CCR5)C18Bsz; C57BL/6J-Tg(Cd4-CD4,CCR5)B4Bsz</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Mouse lines with CD4 cell-specific expression of human CD4 and CCR5</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>GHOSTX4; GHOSTR5</td>
+      <td>NIH AIDS Reagent Repository</td>
+      <td>Cat#3685;3944</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>MT2</td>
+      <td>NIH AIDS Reagent Repository</td>
+      <td>Cat#237</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD16/CD32 (purified rat monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat#553142</td>
+      <td>FACS (2 uL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC Anti-mouse CD3 (rat monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat#555274</td>
+      <td>FACS (2 uL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PerCP-Cy5.5 Anti-mouse CD4(rat monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat#550954</td>
+      <td>FACS (2 uL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC Anti-mouse CD8a (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#100712</td>
+      <td>FACS (1 uL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-Cy7 Anti-human CD4(mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#317418</td>
+      <td>FACS (2 uL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Anti-mouse CD19 (rat monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat#553786</td>
+      <td>FACS (1 uL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Anti-human CD195/CCR5 (mouse monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat#560935</td>
+      <td>FACS (2.5 uL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Anti-human CD195 (mouse monoclonal)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat#550632</td>
+      <td>FACS (2.5 uL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexaFluor 647 Anti-human CD4 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#300520</td>
+      <td>FACS (3 uL per test)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HIV-1 gp120 (goat polyclonal)</td>
+      <td>American Research Products</td>
+      <td>Cat#12-6205-1</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VSV M (mouse monoclonal)</td>
+      <td>Kerafast</td>
+      <td>Cat#EB0011</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>His-Tag Antibody (pAb, Rabbit)</td>
+      <td>GenScript</td>
+      <td>A00174-40</td>
+      <td>ELISA coating at 0.5 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG H and L (HRP) preadsorbed</td>
+      <td>Abcam</td>
+      <td>Ab97040</td>
+      <td>ELISA (1:20000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-human IgG H and L (HRP) preadsorbed</td>
+      <td>Abcam</td>
+      <td>Ab97175</td>
+      <td>ELISA (1:20000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLHCX hCD4 2A CCR5 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Retroviral vector with human CD4/CCR5</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNL1.1 (plasmid)</td>
+      <td>Promega</td>
+      <td>#N1001; GenB:JQ437370</td>
+      <td>Nanoluciferase cDNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAVCMV_BG505-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid expressing his-tagged BG505 SOSIP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAVCMV_B41-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid expressing his-tagged B41 SOSIP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAVCMV_Du422-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid expressing his-tagged Du422 SOSIP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAAVCMV_Zm197-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>plasmid expressing his-tagged Zm197 SOSIP</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RL413</td>
+      <td>This paper</td>
+      <td>Genotyping PCR primer</td>
+      <td>GAACCTGGTGGTGATGAGAGCCACTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RL425</td>
+      <td>This paper</td>
+      <td>Genotyping PCR primer</td>
+      <td>TGCTTGCTTTAACAGAGAGAAGTTCGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RL509</td>
+      <td>PMID: 16617693</td>
+      <td>RT-qPCR primer</td>
+      <td>TGATACAGTACAATTATTTTGGGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>RL510</td>
+      <td>PMID: 16617693</td>
+      <td>RT-qPCR primer</td>
+      <td>GAGACTTTCTGTTACGGGATCTGG</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Maraviroc</td>
+      <td>NIH AIDS Reagent Repository</td>
+      <td>Cat#11580</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Rhabdo immunodeficiency virus (RhIV) clones
 
 Plasmids encoding the full length VSV genome (pVSV-FL) as well as individual VSV genes N, P, L, and G were purchased from Kerafast (VSV-FL+[2] VSV Plasmid Expression Vector System, EH1002). Plasmids encoding individual HIV-1 env genes were obtained from the NIH AIDS regent repository. Alternatively, env sequences were synthesized (Genart, Thermofisher). Chimeric envelope genes were generated using overlapping PCR products, in which the ectodomain and transmembrane domains of each HIV-1 Env (equivalent to HIV-1 HXB2 amino acids 1–709) was fused to the cytoplasmic tail of VSV-G (amino acids 486–511, Figure 1A). The chimeric Env cDNAs were inserted into pVSV-FL precisely in place of the existing VSV-G encoding sequences to generate pRhIV plasmids encoding chimeric HIV-1/VSV-G envelopes. VSVMLV-E had a similar design, except that MLV-E Env ectodomain and transmembrane domains (amino acids 1–634) were fused to the cytoplasmic tail of VSV-G (amino acids 486–511, see Figure 6—figure supplement 2A).
 
@@ -139,43 +414,43 @@ RhIV viruses were generated by infecting 293 T cells with T7-expressing vaccinia
 
 RhIV derivatives encoding nano luciferase (nLuc) were generated by inserting the nLuc encoding sequences (from pNL1.1, Promega) into pRhIV plasmids between the envelope and L genes, along with appropriate VSV regulatory sequences. A pRhIV plasmid encoding GFP was similarly generated by inserting the EGFP encoding sequences between the envelope and L genes, along with appropriate VSV regulatory sequences.
 
-## HIV-1 reporter viruses
+### HIV-1 reporter viruses
 
 HIV-1 proviral plasmids expressing various Env genes were generated by inserting individual Env genes into the HIV-1 molecular clone pNL4-3. Derivatives of these constructs expressing nanoluciferase (HIV-1 (nLuc) viruses) were generated by inserting the nLuc encoding sequences in place of Nef. HIV-1 viral stocks were generated by transfecting 293 T cells; supernatant was harvested 48 hr post transfection, filtered (0.2 μm), and titered on TZM-bl cells using a nanoluciferase assay.
 
-## Cell lines
+### Cell lines
 
 Cells (293T, ATCC CRL-3216) were stably transduced with a retroviral vector (LHCX) into which was inserted sequences encoding human CD4 and CCR5 genes separated by an FMDV 2A site. Single cell clones were selected and tested for CD4 and CCR5 expression by FACS analysis using AlexaFluor 647 anti-human CD4 (Biolegend) and PE anti-human CD195/CCR5 (BD Pharmingen). MT2/R5 cells were generated by transducing MT2 cells (NIH AIDS regent repository Catalogue number 237) with a retroviral vector encoding hCCR5 and selecting a single hCCR5+ cell clone. GHOSTX4 and GHOSTR5 cells, that express hCD4 and CXCR4 or CCR5, respectively, were obtained from the NIH AIDS reagent repository (Catalogue numbers 3685 and 3944), and subclones thereof were isolated by limiting dilution. Cells were monitored periodically for retrovirus contamination and were tested for mycoplasma and found to be negative. Identity of cell lines was verified by visual assessment of highly characteristic morphology and virus susceptibility.
 
-## Neutralization and maraviroc assays
+### Neutralization and maraviroc assays
 
 Serial dilutions of Maraviroc (NIH AIDS Reagent Program), purified IgG from RhIV infected mice, or bNAbs (VRC01 (from Xueling Wu), 10E8, PG16, PG9 (NIH AIDS Reagent Program), 3BNC117, 10–1074 (from Michel Nussenzweig)) were incubated with virus for 1 hr at 37°C prior to the addition of TZM-bl cells. For neutralization assays against RhIV and all Maraviroc assays, TZM-bl cells were seeded the day before in 96-well Flat bottom plates (Falcon). For neutralization assays against HIV-1, cells were added in suspension to the virus/antibody mixture after the incubation period. After 4 hr (RhIV) or 48 hr (HIV-1) of infection, cells were washed twice with PBS before adding 50 μl of 1X Passive Lysis Buffer (Promega). Cell lysates were mixed with an equal volume of Nano-Glo Luciferase Assay Buffer and Substrate (Promega), incubated for at least 3 min at room temperature, then read using a Modulus II Microplate Multimode Reader (Promega).
 
-## CD4+/CCR5+ Transgenic Mice
+### CD4+/CCR5+ Transgenic Mice
 
 Sequences encoding human CD4 and CCR5 genes separated by an FMDV 2A site were inserted into a construct containing the regulatory elements for CD4-specific transgene expression (Killeen et al., 1993). The linearized transgene construct was injected into C57BL/6J embryos (Rockefeller University Transgenic Services Laboratory) to generate transgene lines C57BL/6J-Tg(Cd4-CD4,CCR5)A1Bsz (CD4/CCR5HI), C57BL/6J-Tg(Cd4-CD4,CCR5)C18Bsz (CD4/CCR5INT), and C57BL/6J-Tg(Cd4-CD4,CCR5)B4Bsz (CD4/CCR5LO). Individual transgenic lines were maintained in a hemizygous state (Tg/0) in a C57BL/6J background and genotyped for the presence of the transgene by PCR using the following primers: RL413 GAACCTGGTGGTGATGAGAGCCACTCA and RL425 TGCTTGCTTTAACAGAGAGAAGTTCGT. Selected transgenic lines (termed #A1, #C18, and #B4) that were chosen based on high, intermediate and low levels of CD4 expression respectively, were also crossed with C57BL/6J Ifnar1 knockout mouse line (MMRRC #32045) (Müller et al., 1994) to generate corresponding #A1Ifnar1-/-, #C18Ifnar1-/- and #B4Ifnar1-/- mouse lines.
 
-## Infection and monitoring of mice
+### Infection and monitoring of mice
 
 Mice derived from C57BL/6 of both sexes were used, and housed under standard conditions prior to infection. Mice were moved to an ABSL-2 facility and were randomly ascribed to experimental groups prior to infection. Initial infections were done at 8 to 12 weeks. Mice were infected with RhIV stocks (10 to 105 PFU in 500 μl DMEM) by intraperitoneal (i.p.) injection. Thereafter, blood was collected in EDTA coated tubes (Sarstedt) from the facial vein at the indicated timepoints, typically 1, 4, 7, 14 and 21 days after infection, and weekly thereafter for longer term experiments. Plasma was separated from cells and used for extraction of RNA or in ELISA while cells were processed for FACS analysis of cell populations. For analysis of tissues, mice were euthanized using carbon dioxide. Spleen, thymus, and lymph node tissue was removed and processed for RNA extraction or FACS analysis. In experiments involving serum transfer, previously infected donor animals were bled several times, 3 to 4 days apart, serum isolated from each bleed and pooled with serum from the same individual mouse. Thereafter, 200 μl of heat inactivated serum was injected subcutaneously (s.c.) into naïve animals one day prior to an i.p. RhIV challenge. For monoclonal antibody protection experiments, antibodies (50 μg to 1 mg) were diluted in PBS to a final volume of 200 μl and administered s.c. one day prior to an i.p. RhIV challenge. All animal studies were conducted in accordance with The Rockefeller University Institutional Animal Care and Use Committee (IACUC).
 
-## RNA extraction and RT-qPCR
+### RNA extraction and RT-qPCR
 
 Viral RNA was extracted from 50 μl aliquots of mouse plasma using Trizol LS Reagent (Ambion). Phase separation steps were performed in MaXtract High Density tubes (Qiagen) and GlycoBlue (Invitrogen) was used as a coprecipitant. After drying, RNA pellets were resuspended in 50 μl RNase-free Molecular Biology Grade Water (Corning). For RT-qPCR, 8 μl of purified RNA solution was used, and RT-qPCR were carried out in one step using the Power SYBR Green RNA-to-CT 1-Step kit (Applied Biosystems) and primers RL509 TGATACAGTACAATTATTTTGGGAC and RL510 GAGACTTTCTGTTACGGGATCTGG, that target the VSV-L gene (Hole et al., 2006). Duplicate aliquots of RNA were tested using an Applied Biosystems Step-One Plus Real Time PCR machine. A standard curve, generated using a plasmid DNA template, was used to calculate RNA copies/ml. The limit of detection for this assay was a single copy of cDNA per PCR reaction, equivalent to 125 RNA copies/ml of mouse plasma.
 
-## Flow cytometry
+### Flow cytometry
 
 Mouse blood, spleen, thymus and lymph node were processed for FACS analysis by making a single cell suspension, removing red blood cells by resuspension in red blood cell lysis buffer (150 mM NH4Cl, 10 mM KHCO3, and 0.05 mM EDTA), then resuspending the resulting pellet in FACS buffer (PBS, 0.2% bovine serum albumin). Cells were incubated with anti-CD16/CD32 (Fc Block) prior to staining with the following antibodies: FITC anti-CD3, PerCP-Cy5.5 anti-mCD4, PE anti-CD19 (BD Pharmingen), APC anti-CD8a, and APC/Cy7 anti-hCD4 (BioLegend). Samples were run on either a LSRII (Becton Dickinson) or Attune NxT (Life Technologies) flow cytometer and data were analyzed using FlowJo (Tree Star).
 
-## IgG purification
+### IgG purification
 
 For measurement of neutralizing activity in mouse serum, purified IgG was used. Serum was separated from whole blood by centrifugation and heat inactivated for 1 hr at 56°C. IgG was purified from serum using the Protein G HP Spin Trap/Antibody Spin Trap kit (GE Healthcare), according to manufacturers instructions then dialyzed overnight in PBS at 4°C (Slide-A-Lyzer, 20,000 MWCO, Thermo Scientific). Purified IgG solutions were then filtered through a 0.2 μm filter and concentrated (Spin-X UF Concentrator, Corning).
 
-## Western blotting
+### Western blotting
 
 GHOST R5 cells infected with RhIV were lysed with RIPA buffer (150 mM NaCl, 50 mM Tris, pH 7.4, 0.1% SDS, 1 mM EDTA, 1% Igepal, 1% sodium deoxycholate). Virions were pelleted through 20% sucrose in PBS. Cell and virion proteins were separated on SDS-PAGE gels and blotted onto nitrocellulose membranes. Blots were probed with anti-gp120 (American Research Products) and anti VSV-M (Kerafast) with IR800 donkey anti goat and IR680 donkey anti mouse (LiCor) secondary antibodies.
 
-## ELISA and other binding antibody assays
+### ELISA and other binding antibody assays
 
 The env genes of HIV-1 strains were synthesized by GeneART (Thermofisher), in a modified form to generate C-terminally His-tagged soluble SOSIP.664 Env trimers. The previously characterized SOSIP.664 trimers were derived from the clade A BG505 strain (PMID: 24068931), the clade B B41 strain (PMID: 25589637) and two clade C strains DU422 and ZM197M (PMID: 26372963).
 
@@ -185,6 +460,6 @@ Human bNAbs were titrated to give ELISA signals on BG505 SOSIP.664 coated plates
 
 For detection of antibodies using INNO-LIA HIV I/II Score strips, the manufacturers (Fujirebio) procedures were followed, except that Ab97175 goat anti-Hu IgG (HRP) 1:20 000 and Ab97040 goat anti-Ms IgG (HRP) 1:20 000 were used, as appropriate. Bound antibodies were detected using SuperSignal West Pico PLUS chemiluminescent substrate (Thermofisher).
 
-## Replicates and statistics
+### Replicates and statistics
 
 All data is plotted raw, that is individual values for each individual determination and each individual mouse is plotted. The exceptions to this are the qRT-PCR data, in which the mean of technical duplicates is plotted. Animals were allocated randomly to experimental groups. Statistical comparisons between groups in Figure 7D,E,F were done using Graphpad Prism software, and p-values were calculated using a Mann Whitney test.

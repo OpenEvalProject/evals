@@ -13,16 +13,16 @@
 
 ### Affiliations
 
-1. https://ror.org/038t36y30 Centre for Organismal Studies (COS), Heidelberg University Heidelberg Germany
-2. https://ror.org/038t36y30 Heidelberg Biosciences International Graduate School (HBIGS) Heidelberg Germany
-3. https://ror.org/038t36y30 Institute of Pharmacology, Heidelberg University Heidelberg Germany
-4. https://ror.org/031t5w623 DZHK (German Centre for Cardiovascular Research), partner site Heidelberg/Mannheim Heidelberg Germany
+1. Centre for Organismal Studies (COS), Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
+2. Heidelberg Biosciences International Graduate School (HBIGS) Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
+3. Institute of Pharmacology, Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
+4. DZHK (German Centre for Cardiovascular Research), partner site Heidelberg/Mannheim Heidelberg Germany ([ROR:031t5w623](https://ror.org/031t5w623))
 
 † Corresponding author
 
 ## Abstract
 
-Precise, targeted genome editing by CRISPR/Cas9 is key for basic research and translational approaches in model and non-model systems. While active in all species tested so far, editing efficiencies still leave room for improvement. The bacterial Cas9 needs to be efficiently shuttled into the nucleus as attempted by fusion with nuclear localization signals (NLSs). Additional peptide tags such as FLAG- or myc-tags are usually added for immediate detection or straightforward purification. Immediate activity is usually granted by administration of preassembled protein/RNA complexes. We present the ‘hei-tag ( h igh e ff i ciency-tag)’ which boosts the activity of CRISPR/Cas genome editing tools already when supplied as mRNA. The addition of the hei-tag, a myc-tag coupled to an optimized NLS via a flexible linker, to Cas9 or a C-to-T (cytosine-to-thymine) base editor dramatically enhances the respective targeting efficiency. This results in an increase in bi-allelic editing, yet reduction of allele variance, indicating an immediate activity even at early developmental stages. The hei-tag boost is active in model systems ranging from fish to mammals, including tissue culture applications. The simple addition of the hei-tag allows to instantly upgrade existing and potentially highly adapted systems as well as to establish novel highly efficient tools immediately applicable at the mRNA level.
+Precise, targeted genome editing by CRISPR/Cas9 is key for basic research and translational approaches in model and non-model systems. While active in all species tested so far, editing efficiencies still leave room for improvement. The bacterial Cas9 needs to be efficiently shuttled into the nucleus as attempted by fusion with nuclear localization signals (NLSs). Additional peptide tags such as FLAG- or myc-tags are usually added for immediate detection or straightforward purification. Immediate activity is usually granted by administration of preassembled protein/RNA complexes. We present the ‘hei-tag (high efficiency-tag)’ which boosts the activity of CRISPR/Cas genome editing tools already when supplied as mRNA. The addition of the hei-tag, a myc-tag coupled to an optimized NLS via a flexible linker, to Cas9 or a C-to-T (cytosine-to-thymine) base editor dramatically enhances the respective targeting efficiency. This results in an increase in bi-allelic editing, yet reduction of allele variance, indicating an immediate activity even at early developmental stages. The hei-tag boost is active in model systems ranging from fish to mammals, including tissue culture applications. The simple addition of the hei-tag allows to instantly upgrade existing and potentially highly adapted systems as well as to establish novel highly efficient tools immediately applicable at the mRNA level.
 
 ## Introduction
 
@@ -31,6 +31,18 @@ In the last decade, the CRISPR/Cas9 system and its derivatives facilitated and r
 ## Results
 
 Assessing the genome editing efficiency requires a reliable and quantitative readout based on an apparent phenotype. We established a quantitative assay for loss-of-eye pigmentation to address the activity of different Cas9 variants in two teleost model systems, medaka (Oryzias latipes) and zebrafish (Danio rerio) covering a wide evolutionary distance of 200 million years (Furutani-Seiki and Wittbrodt, 2004). Our assay on retinal pigmentation provides a highly reproducible quantitative readout for the loss of the conserved transporter protein oculocutaneous albinism type 2 (oca2), required for melanin biosynthesis (Figure 1a). Only its bi-allelic inactivation results in the loss of pigmentation of eyes and skin (Lischik et al., 2019). A prominent knock-out phenotype thus can either result from a single to few early events, or from many events at subsequent developmental stages. Although phenotypically indifferent, the allele variance (genetic mosaicism) reflects the time point of action.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig1-v3.jpg)
+
+**Figure 1.:** Phenotypic range and quantification of OlOca2 T1, T2, and DrOca2 T1, T2 sgRNAs/Cas9 variant and sgRNA/Cas9 protein complex (ribonucleoprotein [RNP])-mediated loss of pigmentation in medaka (a–d) and zebrafish (e–g) at high concentrations. (a) Fully pigmented eyes in uninjected control medaka embryo at 4.5 dpf. (b1–b5) Range of typically observed loss-of-pigmentation phenotypes upon injection with 150ng/µl heiCas9 mRNA and 30ng/µl OlOca2 T1, T2 sgRNAs. The observed phenotypes range from almost full pigmentation (b1) to completely unpigmented eyes (b5). (c) Minimum intensity projection of a medaka embryo at 4.5days after injection with 150ng/µl heiCas9 and 30ng/µl OlOca2 T1, T2 sgRNAs. (c’) Locally thresholded pigmentation on elliptical selection per eye (same embryo as in c). (d) Quantification of mean gray values (0 = fully pigmented, 255 = completely unpigmented) of individual eyes from Oca2 knock-out medaka crispants co-injected with 30ng/µl OlOca2 T1, T2 sgRNAs and 150ng/µl mRNAs of zCas9 and heiCas9 (red) compared to RNP injections (concentrations indicated). Medians: uninjected control = 0.4; zCas9 = 134.5; heiCas9 = 225.3; 1.765µM RNP = 211.1; 5µM RNP = 216.2; 24µM RNP = 237.8. Note: highly significant pigment loss (70% increase) in heiCas9 vs. zCas9 crispants (p = 1.1e-25); heiCas9 reaches the same knock-out efficiency compared to RNP injections with only significant differences at highest RNP concentrations (24µM). (e) Fully pigmented uninjected control zebrafish embryo at 2.5 dpf. (f1–f4) Range of typically observed loss-of-pigmentation phenotypes upon injection with 150ng/µl heiCas9 mRNA and 30ng/µl DrOca2 T1, T2 sgRNAs. The observed phenotypes range from almost full pigmentation (f1) to completely unpigmented eyes and body (f4). (g) Quantification of mean gray values of individual eyes from oca2 knock-out zebrafish embryos co-injected with 30ng/µl DrOca2 T1, T2 sgRNAs and 150ng/µl mRNAs of zCas9 and heiCas9 (red), respectively. Medians: uninjected control = 5.3; zCas9 = 14.7; heiCas9 = 254.6. Note the very highly significant pigment loss (17-fold increase) in heiCas9 vs. zCas9 crispants (p = 2.1e-56). dpf, days post fertilization; mean gray values ranged from 0, that is, fully pigmented eye to 255, that is, complete loss of pigmentation; n, number of eyes analyzed. Bold line, median. Statistical analysis performed in R, pairwise Wilcoxon rank sum test, Bonferroni corrected.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Comparison of OlOca2 knock-out efficiency (quantification of eye pigmentation) using a permutation screen of peptide domains (nuclear localization signals [NLSs], Myc-tag, amino acid linkers) flanking a mammalian codon-optimized Cas9 enzyme. Injection mix contained 30ng/µl OlOca2 T1, T2, 150ng/µl tagged Cas9 variant mRNA, 20ng/µl GFP mRNA injection marker. Particular peptides and relative positions indicated by schematics. Constellation of peptides sorted by knock-out efficiency. The ‘hei-tag’ myc-flexible-linker-oNLS-Cas9-oNLS (heiCas9) variant was identified being most efficient. JDS246-Cas9 (Addgene #43861), MSI-Cas9-Xl (myc-Cas9) was cloned following Zhang et al., 2014. Peptides used: FLAG, FLAG tag; F, flexible linker; I, internal linker; M, cMyc-tag; O, optimized NLS (Inoue et al., 2016); S, SV40 NLS (Kalderon et al., 1984); Xl, bipartite Xenopus laevis nucleoplasmin NLS (Dingwall et al., 1988). For sequences, see Supplementary files 1 and 2. 0 = fully pigmented, 255 = completely unpigmented; n, number of eyes analyzed.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** Percentage of dead, abnormal (e.g. delayed development or malformation), and properly developed injected embryos. Only properly developed embryos were included for analysis. n, total number of injected embryos.
 
 State-of-the-art protocols employ high concentrations of Cas9 and respective sgRNAs to ensure efficient on-site editing. To facilitate uniform Cas9 action, we followed our successful mRNA injection protocol (Gutierrez-Triana et al., 2018). One-cell stage medaka embryos were co-injected with sgRNAs targeting the oca2 gene (OlOca2 T1, T2) together with mRNA encoding a Cas9 endonuclease and mRNA encoding the green fluorescent protein (GFP) as injection tracer. Injected embryos were fixed at 4.5 days post fertilization (dpf) (Iwamatsu, 2004) well after the onset of pigmentation in control injections and subjected to image analysis (Figure 1b). In brief, the eyes were segmented, (residual) pigmentation was thresholded (Figure 1c–c’) and quantified according to mean gray values (0, i.e. fully pigmented, 255, i.e. completely unpigmented, Figure 1d).
 
@@ -44,11 +56,35 @@ To address whether the high targeting efficiency of heiCas9 was conveyed by the 
 
 For each multiplexing experiment, the genomic DNA of three pools each containing eight randomly picked crispants was extracted at 4 dpf and subjected to allele-specific genotyping via Illumina sequencing. In the multiplexing approaches, a total of 823,898 reads for the zCas9 and 824,817 reads for the heiCas9, compared to 711,739 control reads, were analyzed (Supplementary file 3, Figure 2—figure supplement 1). In all cases, heiCas9 performed dramatically better than the reference zCas9 (Figure 2a; mean percentage of modified alleles zCas9 [black dots] vs. heiCas9 [red dots]: OlOca2: 3.38% vs. 54.59%, p = 0.026; OlRx2: 20.82% vs. 95.85%, p = 3.2e-06; OlRx3: 16.61% vs. 49.36%, p = 0.0041; OlCryaa: 83.50% vs. 98.44%, p = 0.039). Strikingly, although the overall targeting efficiency was consistently higher as reflected by the high percentage of edited alleles (Figure 2a), at the same time the allele variance was reduced in all cases when using heiCas9 (Figure 2b; mean percentage of allele variance: zCas9 [black hollow dots] vs. heiCas9 [red hollow dots]: OlOca2: 20.71% vs. 12.87%, p = 0.025; OlRx2: 15.63% vs. 7.86%, p = 7.6e-06; OlRx3: 17.91% vs. 12.75%, p = 0.00021; OlCryaa: 10.17% vs. 8.74%, p = 0.22). This reduced allele variance for all multiplexed loci indicates an early editing by heiCas9. Given this and the overall higher targeting efficiency in all loci analyzed in the multiplexing approach, heiCas9 outperformed zCas9. It resulted in a massive performance boost, which was partially masked at saturating conditions, and now became fully apparent. The high efficiency of heiCas9 thus allows efficient editing at low concentrations with the potential to reduce off-target effects. Whether this putative reduction of off-targets is (over-)compensated by the efficient nuclear localization needs to be assessed by whole-genome sequencing approaches in the future.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig2-v3.jpg)
+
+**Figure 2.:** Multiplexed injections with 15ng/µl mRNA of zCas9 or heiCas9 (red) mRNA and 12.5ng/µl per sgRNA targeting exonic sequences in oculocutaneous albinism type 2 (oca2; OlOca2 T2), the start codons of the retina-specific homeobox transcription factor 2 (rx2; OlRx2) and of the alpha a crystallin (cryaa; OlCryaa), as well as an intronic sequence in rx3 (OlRx3). Illumina sequencing performed on three biological replicates (eight embryos each) per targeted locus. (a) Increased knock-out efficiency in heiCas9 crispants as shown by proportion of modified over all Illumina sequencing reads per replicate and locus. (b) Reduced allele variance in heiCas9 crispants as shown by abundance of specific allele divided by all modified alleles per replicate and locus. Bold line, mean values of zCas9 (black) and heiCas9 (red). Total aligned Illumina reads analyzed: OlOca2: zCas9 = 194,931, heiCas9 = 180,222; OlRx2: zCas9 = 224,146, heiCas9 = 269,103; OlRx3: zCas9 = 195,248, heiCas9 = 175,044; OlCryaa: zCas9 = 209,573, heiCas9 = 200,448. Statistical analysis performed in R, Student’s t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Relative abundance of Illumina reads categorized by mode of editing among all modified alleles per replicate, locus (OlOca2, OlRx2, OlRx3, OlCryaa) and Cas9 mRNA employed (zCas9, heiCas9). Categories: only insertions, only deletions, only substitutions, insertions and substitutions, deletions and substitutions. n, total number of aligned modified Illumina reads per replicate.
+
 While the early onset of action is required for uniform editing in developing organisms, cell culture approaches demand efficient translocation of the sgRNA/Cas9 complex in a large number of cells. To validate the range of action on the one hand and to address the relevance of the hei-tag in a mammalian setting, we expanded the scope of the analysis to mammalian cell culture. We focused on mRNA-based assays and compared the activity of heiCas9 to state-of-the-art Cas9 variants, that is, the commercially available GeneArt CRISPR nuclease as well as a mammalian codon-optimized Cas9 (JDS246-Cas9, Addgene #43861) in mouse SW10 cells. We assessed the respective genome editing efficiencies by independent and complementary tools, the Tracking of Indels by Decomposition (TIDE) analysis (Brinkman et al., 2014) as well as by Inference of CRISPR Editing (ICE) (Hsiau et al., 2018). Both approaches decompose the mixed Sanger reads of PCR products spanning the CRISPR target site and compute an efficiency score as well as the distribution of expected indels. To target the murine Periaxin (Prx) locus, mouse SW10 cells were co-transfected with MmPrx crRNA/ATTO-550-linked tracrRNA and the mRNAs of either JDS246-Cas9, GeneArt CRISPR nuclease, or heiCas9. The Prx locus was PCR amplified and sequenced. Similar to targeting in organismo, heiCas9 also exhibited the highest genome editing efficiency when compared to JDS246-Cas9 (TIDE: 123.6%, ICE: 113%) and GeneArt CRISPR nuclease (TIDE: 123.1%, ICE: 111%) in mammalian cell culture (Figure 3, Figure 3—figure supplement 1, R2 > 0.9 (TIDE) and >0.9 (ICE) for all mRNAs tested). Notably, the KO-score efficiencies (ICE) amounted to 173% compared to JDS246-Cas9 and to 167% compared to GeneArt CRISPR nuclease, indicating higher abundance of frameshifts (Hsiau et al., 2018) at this genomic locus.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig3-v3.jpg)
+
+**Figure 3.:** Mouse SW10 cells were co-transfected with MmPrx crRNA and mRNAs of JDS246-Cas9, GeneArt CRISPR nuclease, and heiCas9, respectively. Genome editing efficiency was assessed by Tracking of Indels by Decomposition (TIDE) and Inference of CRISPR Editing (ICE) tools. ICE knock-out score represents proportion of indels that indicate a frameshift or≥21bp deletion. Data points represent three biological replicates, black line indicates respective mean: TIDE indel %: JDS246-Cas9 = 46.2; GeneArt CRISPR nuclease = 46.4, heiCas9 = 57.1; ICE indel %: JDS246-Cas9 = 53.3; GeneArt CRISPR nuclease = 54.3, heiCas9 = 60.3; ICE knock-out score %: JDS246-Cas9 = 33.7; GeneArt CRISPR nuclease = 35.0, heiCas9 = 58.3. R2> 0.9 (TIDE) and>0.9 (ICE) for all mRNAs tested. For representative indel spectrum for each mRNA, see Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Indel spectrum diagram obtained from Tracking of Indels by Decomposition (TIDE) (red bargraphs) and Inference of CRISPR Editing (ICE) (blue bargraphs) analyses following JDS246-Cas9 mRNA, GeneArt CRISPR nuclease mRNA, and heiCas9 mRNA and Prx tracrRNA/crRNA transfections. Note decreased number of wild-type alleles (gray dashed line in TIDE analysis) in heiCas9-transfected cells and increased abundance of 26 nt deletion (black arrowhead in ICE analysis).
 
 Remarkably, heiCas9-transfected cells showed a highly increased number of mutant alleles with an increased abundance of a 26 nt deletion when compared to GeneArt CRISPR nuclease and JDS246-Cas9 (Figure 3—figure supplement 1).
 
 Given the observed boosting of Cas9 activity by the simple addition of the hei-tag, we next tested if the hei-tag also improves further Cas9-based techniques. Base editing is an increasingly applied method with a potential for therapeutics (Antoniou et al., 2021). Base editors are composed of a modified Cas9 that only nicks one DNA strand and does not introduce a double-strand break (Cas9 nickase or Cas9n) and a nucleotide deaminase for precisely targeted nucleotide editing (Anzalone et al., 2020). To increase the efficiency of base editors, several iterative rounds of optimization of the employed deaminases and linkers have been undertaken, yielding optimal performance with the newest variants (Carrington et al., 2020; Cornean et al., 2022; Rosello et al., 2021; Zhao et al., 2020). To investigate if the addition of the hei-tag provides an easy and straightforward alternative route for increasing the activity of a nuclear protein of interest, we selected a C-to-T base editor version with intermediate efficiency (BE4-Gam Komor et al., 2017) to introduce non-sense or severe miss-sense mutations into the pigmentation gene oca2. We employed our tool ACEofBASEs (Cornean et al., 2022) to design and evaluate sgRNA target sites that introduce non-synonymous codon mutations and/or pre-mature STOP codons upon editing of the respective open reading frame (ORF). We compared three different sgRNAs (OlOca2 T1, T3, and T4) employing the original BE4-Gam and the hei-tag fused variant (heiBE4-Gam). In the oca2 ORF, the transition of cytosines 766, 922, and 997 to thymine all convert the respective codon to a pre-mature STOP (OlOca2 T3: C766T, leading to Q256*; OlOca2 T4: C922T, leading to Q308*; OlOca2 T1: C995-997T, leading to T332I and Q333*). Again, the loss of pigmentation was used as proxy for bi-allelic targeting efficiency following medaka one-cell stage injections with either one of the three sgRNAs (OlOca2 T1, T3, or T4, 30ng/µl) as well as 150ng/µl mRNA of either BE4-Gam or heiBE4-Gam. Screening and analysis was performed at 4.5 dpf as described above. For each sgRNA employed, heiBE4-Gam resulted in more pronounced loss of pigmentation in comparison to BE4-Gam (Figure 4a; control median = 0.0; medians BE4-Gam vs. heiBE4-Gam: OlOca2 T1, 0.6 vs. 28.0, p = 1.737e-20; OlOca2 T3, 0.0 vs. 0.8, p = 0.0471; OlOca2 T4, 93.8 vs. 170.1, p = 5.215e-12). Quantification of Sanger sequencing reads confirmed an increase of all C-to-T transitions at the OlOca2 T1 target site when heiBE4-Gam was used (74.1% ± 8.9% for heiBE4-Gam vs. 44.2% ± 6.8% for BE4-Gam; Figure 4—figure supplement 1, three replicates containing five randomly picked embryos each). In particular, the C997T transition introducing a pre-mature STOP codon was increased 1.7-fold (i.e. 68% in heiBE4-Gam vs. 41% in BE4-Gam) in case of heiBE4-Gam (Figure 4b and c).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig4-v3.jpg)
+
+**Figure 4.:** Phenotypic range and quantification of heiBE4-Gam-mediated C-to-T transitions in medaka embryos. (a) Categories of typically observed loss-of-pigmentation phenotypes in oca2 editants. The observed pigmentation phenotypes range from (almost) unpigmented eyes, that is, a very strong knock-out (top panel) over intermediate (central panel) to no loss of pigmentation (bottom panel). Quantification of phenotype resulting from injections with either BE4-Gam or heiBE4-Gam (red) mRNA and OlOca2 T1, T3, or T4 sgRNAs. Note: dramatic increase of bi-allelic knock-out rate when using heiBE4-Gam. n, number of eyes analyzed. Control median = 0.0; medians BE4-Gam vs. heiBE4-Gam: OlOca2 T1, 0.6 vs. 28.0, p = 1.737; OlOca2 T3, 0.0 vs. 0.8, p = 0.0471; OlOca2 T4, 93.8 vs. 170.1, p = 5.215e-12. Bold lines, median values. Statistical analysis performed in R, pairwise Wilcoxon rank sum test. (b) Schematic representation of base editing window in OlOca2 T1 target site (PAM, protospacer adjacent motif). C-to-T transition of C995 and C996 edits the threonine (T) codon to isoleucine (I) (T332I); C997T creates a pre-mature STOP codon (Q333*). Nucleotide positions refer to the oca2 open reading frame. (c) Quantification of Sanger sequencing reads at nucleotides C995, C996, C997 inside the base editing window of three injected embryo pools (five embryos each) reveals overall dramatic increase of C-to-T base transition when using heiBE4-Gam. Note 1.7-fold increase of C997T transition, that is, efficient introduction of a pre-mature STOP codon. Mean values indicated by bold horizontal lines, Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70558/elife-70558-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Schematic representation of base editing window in OlOca2 T1 target site. (b–c) Sanger sequencing quantifications (EditR; Kluesner et al., 2018) of pools of five randomly picked embryos injected with sgRNA OlOca2 T1 and either BE4-Gam (b) or heiBE4-Gam (c). Note: in heiBE4-Gam injections, for each cytosine, the C-to-T transition rate was higher than 60%, a level never observed in BE4-Gam-injected embryos. C997T is highlighted with white frame.
 
 In conclusion, using the hei-tag to extend the ORFs of a mammalian codon-optimized SpCas9 or a C-to-T base editor (BE4-Gam) severely enhanced the respective genome targeting efficiency.
 
@@ -62,25 +98,131 @@ In light of the ever-expanding CRISPR tool kit, the addition of the hei-tag prov
 
 ## Materials and methods
 
-## Fish maintenance
+### Fish maintenance
 
 Zebrafish (D. rerio) and medaka (O. latipes) fish were bred and maintained as previously described (Koster et al., 1997; Westerfield, 2000). The animal strains used in the present study were zebrafish AB/back and medaka Cab. All experimental procedures were performed according to the guidelines of the German animal welfare law and approved by the local government (Tierschutzgesetz §11, Abs. 1, Nr. 1, husbandry permit number 35-9185.64/BH Wittbrodt).
 
-## Cloning of Cas9 variants
+### Cloning of Cas9 variants
 
 The mammalian codon-optimized (Geneious 8.1.9, https://www.geneious.com) Cas9 sequence was gene-synthesized (GeneArt, ThermoFisher Scientific) as template for cloning the permutated peptide-tag Cas9 fusions (Supplementary file 2) using primers (Table 1) containing the sequences coding for a myc-tag (EQKLISEEDL), flexible or internal linkers and an SV40 (PKKKRKV) or optimized oNLS (PPPKRPRLD) (Inoue et al., 2016; Figure 1—figure supplement 1). Cloning into the pCS2+ plasmid (Rupp et al., 1994) (multiple cloning site extended for AgeI site downstream of BamHI site) was performed using AgeI and XbaI restriction sites included in the 5’ region of the forward or reverse primers, respectively. See Supplementary file 1 for full sequence of heiCas9. For consistent mRNA synthesis, the published myc-Cas9 (Zhang et al., 2014) (MSI-Cas9-Xl) was re-established with the pX330-U6-Chimeric_BB-CBh-hSpCas9 vector as template, primer-based exchange of the N-terminal FLAG tag with the myc-tag sequence and brought into pCS2+ (Rupp et al., 1994) using AgeI and XbaI restriction sites included in the 5’ region of the respective primers as well. pX330-U6-Chimeric_BB-CBh-hSpCas9 was a gift from Feng Zhang (Addgene plasmid #42230) (Cong et al., 2013).
 
-## Cloning of BE4-Gam and heiBE4-Gam
+**Table 1.**
+ Primer sequences used for Cas9 variant cloning.Restriction enzyme sites used for cloning are indicated in italics (AgeI in the forward primer, XbaI in the reverse primer), underscored sequence, binding to Cas9 open reading frame (ORF). F, flexible linker; I, internal linker; M, cMyc-tag; O, optimized NLS (Inoue et al., 2016); S, SV40 NLS (Kalderon et al., 1984); Xl, bipartite Xenopus laevis nucleoplasmin NLS (Dingwall et al., 1988). For instance, to establish the heiCas9 ORF, primers MFO-Cas9_fwd and Cas9-O_rev were used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Primer sequences in 5’–3’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MFO-Cas9_fwd</td>
+      <td>AATTTACCGGTTTACCATGGAGCAGAAGCTGATCAGCGAGGAGGACCTGGGAGGAAGCGGACCACCTCCCAAGAGGCCCAGGCTGGACCTCGAGGATAAAAAGTATTCTATTGGTTTAG</td>
+    </tr>
+    <tr>
+      <td>MIS-Cas9_fwd</td>
+      <td>AATTTACCGGTTTACCATGGAGCAGAAGCTGATCAGCGAGGAGGACCTGGGTATCCACGGAGTCCCAGCAGCCGCTCCAAAGAAGAAGCGTAAGGTAGATAAAAAGTATTCTATTGGTTTAG</td>
+    </tr>
+    <tr>
+      <td>MSF-Cas9_fwd</td>
+      <td>AATTTACCGGTTTACCATGGAGCAGAAGCTGATCAGCGAGGAGGACCTGATGGCTCCAAAGAAGAAGCGTAAGGTAGGAGGAAGCGGAGATAAAAAGTATTCTATTGGTTTAG</td>
+    </tr>
+    <tr>
+      <td>OMF-Cas9_fwd</td>
+      <td>AATTTACCGGTTTACCATGCCACCTCCCAAGAGGCCCAGGCTGGACCTCGAGGAGCAGAAGCTGATCAGCGAGGAGGACCTGGGAGGAAGCGGAGATAAAAAGTATTCTATTGGTTTAG</td>
+    </tr>
+    <tr>
+      <td>SMF-Cas9_fwd</td>
+      <td>AATTTACCGGTTTACCATGGCTCCAAAGAAGAAGCGTAAGGTACTCGAGGAGCAGAAGCTGATCAGCGAGGAGGACCTGGGAGGAAGCGGAGATAAAAAGTATTCTATTGGTTTAG</td>
+    </tr>
+    <tr>
+      <td>Cas9-O_rev</td>
+      <td>AATTTTCTAGATTAGTCCAGCCTGGGCCTCTTGGGAGGAGGGGATCCGTCACCCCCAAGCTGTGAC</td>
+    </tr>
+    <tr>
+      <td>Cas9-S_rev</td>
+      <td>AATTTTCTAGATTAATCTACCTTACGCTTCTTCTTTGGAGCAGCGGATCCGTCACCCCCAAGCTGTGACA</td>
+    </tr>
+    <tr>
+      <td>myc-Cas9_fwd</td>
+      <td>AATTTACCGGTCAAACATGGAGCAGAAGCTGATCAGCGAGGAGGACCTGATGGCCCCAAAGAAGAAGCGGAAGGTC</td>
+    </tr>
+    <tr>
+      <td>myc-Cas9_rev</td>
+      <td>AATTTTCTAGATTACTTTTTCTTTTTTGCCTGGCCGGC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning of BE4-Gam and heiBE4-Gam
 
 BE4-Gam was subcloned from pCMV(BE4-Gam) (Addgene plasmid #100806, a gift from David Liu) (Komor et al., 2017) in a two-step process, first into pJET1.2 (Thermo Scientific), then into pGGEV4 (Kirchmaier et al., 2013) (Addgene plasmid #49284), by BamHI, EcoRV, and KpnI restriction sites to create pGGEV4(BE4-Gam). heiBE4-Gam was assembled into pCS2+ (Rupp et al., 1994) by NEBuilder HiFi DNA Assembly (NEB) with four inserts using Q5 polymerase PCR products (NEB): pCS2+ backbone, hei-tag fragment, Gam Mu-APOBEC1-Cas9n fragment, Cas9n-UGI fragment, 2xUGI-oNLS (see Table 2 for primers used).
 
-## sgRNA design
+**Table 2.**
+ Primer sequences used for BE4-Gam and heiBE4-Gam cloning.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Primer sequences in 5’–3’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pCS2+_backbone_fwd</td>
+      <td>GCCTCTAGAACTATAGTGAGTCG</td>
+    </tr>
+    <tr>
+      <td>pCS2+_backbone_rev</td>
+      <td>ATGGGATCCTGCAAAAAGAACAAG</td>
+    </tr>
+    <tr>
+      <td>hei-tag_fragment_fwd</td>
+      <td>CTTGTTCTTTTTGCAGGATCCCATTTACCATGGAGCAGAAGCTG</td>
+    </tr>
+    <tr>
+      <td>hei-tag_fragment_rev</td>
+      <td>GCTGGTTTAGCCTCGAGGTCCAGCCTGG</td>
+    </tr>
+    <tr>
+      <td>Gam_Mu-APOBEC1-Cas9n_fragment_fwd</td>
+      <td>GACCTCGAGGCTAAACCAGCAAAACGTATCAAG</td>
+    </tr>
+    <tr>
+      <td>Gam_Mu-APOBEC1-Cas9n_fragment_rev</td>
+      <td>CTAGGGCCTTGAGAAGTGTC</td>
+    </tr>
+    <tr>
+      <td>Cas9n-UGI_fragment_fwd</td>
+      <td>GACACTTCTCAAGGCCCTAG</td>
+    </tr>
+    <tr>
+      <td>Cas9n-UGI_fragment_rev</td>
+      <td>CAGAGTCACCCCCAAGCTG</td>
+    </tr>
+    <tr>
+      <td>2xUGI-oNLS_fwd</td>
+      <td>CAGCTTGGGGGTGACTCTG</td>
+    </tr>
+    <tr>
+      <td>2xUGI-oNLS_rev</td>
+      <td>CGACTCACTATAGTTCTAGAGGCTTAGTCCAGCCTGGGCCTCTTGGGAGGGGGAGAACCACCAGAGAGC</td>
+    </tr>
+  </tbody>
+</table>
+
+### sgRNA design
 
 All sgRNAs for medaka (OlOca2, Rx2, Rx3, Cryaa) and zebrafish (DrOca2) were designed using the CCTop target predictor with standard parameters (Stemmer et al., 2015). The sgRNAs used for base editing (OlOca2 T1, T3, T4) were designed or evaluated using ACEofBASEs (Cornean et al., 2022) and selected for introducing a pre-mature STOP codon. The following target sites were used [PAM in brackets]: OlOca2 T1 (GAAACCCAGGTGGCCATTGC[AGG]), OlOca2 T2 (TTGCAGGAATCATTCTGTGT[GGG]), OlOca2 T3 (GATCCAAGTGGAGCAGACTG[AGG]), OlOca2 T4 (CACAATCCAGGCCTTCCTGC[AGG]) DrOca2 T1 (GTACAGCGACTGGTTAGTCA[TGG]), DrOca2 T2 (TAAGCACGTAGACTCCTGCC[AGG]), Rx2 (GCATTTGTCAATGGATACCC[TGG]), Cryaa (GGGAGAAGTGCTTGACATCC[AGG]), Rx3 (AGCAGAGCGCGCAAAGAACC[AGG]). OlOca2 T1, OlOca2 T2, and DrOca2 T1 were the same as in Hammouda et al., 2019, OlOca2 T3 was the same as in Lischik et al., 2019 (OCA2_4), OlRx2 and OlCryaa are from Stemmer et al., 2015, and OlRx3 is the same used in Zilova et al., 2021. Cloning of sgRNA templates was performed as described (Stemmer et al., 2015). Plasmid DR274 was a gift from Keith Joung (Addgene plasmid #42250) (Hwang et al., 2013).
 
 In vitro transcription of mRNA pCS2+ constructs in this work were linearized using NotI-HF (NEB) except for zCas9 – linearized with HpaI (NEB). The pGGEV4(BE4-Gam) was linearized using SpeI-HF (NEB). mRNA was transcribed in vitro using the mMESSAGE mMACHINE SP6 transcription kit (ThermoFisher Scientific, AM1340). pCS2-nCas9n (zCas9) was a gift from Wenbiao Chen (Addgene plasmid #47929) (Jao et al., 2013). The JDS246-Cas9 was linearized with MssI FD (ThermoFisher Scientific) and transcribed in vitro using the mMESSAGE mMACHINE T7 Ultra Transcription Kit (ThermoFisher Scientific, AM1345). JDS246-Cas9 was a gift from Keith Joung (Addgene plasmid #43861). sgRNAs were synthesized using the MEGAscript T7 transcription kit (ThermoFisher Scientific, AM1334) after plasmid digestion with DraI FD (ThermoFisher Scientific).
 
-## Microinjection
+### Microinjection
 
 All microinjections were performed at the one-cell stage. At standard concentrations, zebrafish and medaka zygotes were injected with 150 ng/µl Cas9 (variant) mRNA, Oca2 sgRNAs at 30 ng/µl, and H2B-GFP mRNA at 10 ng/µl as injection tracer. The multiplexing injection mixes contained 12.5 ng/µl per sgRNA (OlOca2 T2, Rx2, Rx3, Cryaa) and 15 ng/µl of either zCas9 or heiCas9 mRNA as well as 20 ng/µl mCherry mRNA as injection tracer. For the protein injections, 24 µM RNP mix (Kroll et al., 2021) was assembled in Cas9 buffer (20 mM Tris-HCl, 600 mM KCl, 20% glycerol; Wu et al., 2018) by mixing 61 µM Alt-R S.p. Cas9 Nuclease V3 (IDT) with 5710 ng of each sgRNA OlOca2 T1 and T2; 285.6 ng GFP mRNA were added as injection tracer. The mix was incubated for 5 min at 37°C and stored on ice until further dilution and injection. To obtain 5 µM RNPs (Wu et al., 2018), the 24 µM RNP mix was diluted in a 1:1 mixture of Cas9 buffer and nuclease-free water. Five µM RNP solution was further diluted in a 1:1 mixture of Cas9 buffer and nuclease-free water to obtain 1.765 µM RNPs.
 
@@ -88,32 +230,79 @@ For the base editing experiments, medaka zygotes were injected with BE4-Gam or h
 
 Embryos were screened for GFP or mCherry expression 4–7 hr or 1 day after injection using a Nikon SMZ18 stereomicroscope, and uninjected specimens were discarded.
 
-## Image acquisition and phenotype analysis
+### Image acquisition and phenotype analysis
 
 Medaka 4.5 dpf embryos (Iwamatsu, 2004) and zebrafish 2.5 dpf (Kimmel et al., 1995) embryos were fixed with 4% paraformaldehyde in 2× PTW (2× PBS pH 7.3, 0.1% Tween 20). Images of medaka embryos were acquired with the high content screening ACQUIFER Imaging Machine (DITABIS AG, Pforzheim, Germany). Images of zebrafish embryos were acquired with a Nikon digital sight DS-Ri1 camera mounted onto a Nikon Microscope SMZ18 and the Nikon Software NIS-Elements F version 4.0. Only properly developed embryos were included in the following analysis. Image analysis was performed with Fiji (Schindelin et al., 2012), that is, mean gray values were obtained on minimum intensity projections and locally thresholded (Phansalkar algorithm with parameters r = 20, p = 0.4, k = 0.4) pictures and elliptical selections for each individual eye. The mean gray value per eye was used for the boxplot and statistical analysis (pairwise comparisons using Wilcoxon rank sum test, Bonferroni corrected) in RStudio (Team, 2020).
 
-## Targeted amplicon sequencing via illumina
+### Targeted amplicon sequencing via illumina
 
 The multiplex approach was genotyped on DNA extractions of pools with each replicate containing eight randomly picked crispants per zCas9 or heiCas9 injection or six control specimens. DNA was prepared by grinding and lysis in DNA extraction buffer (0.4 M Tris/HCl pH 8.0, 0.15 M NaCl, 0.1% SDS, 5 mM EDTA, pH 8.0, 1 mg/ml proteinase K) at 60°C overnight. Proteinase K was inactivated at 95°C for 10 min and the solution was diluted 1:2 with nuclease-free water. For each DNA extraction, small libraries were constructed by PCR amplifying the four regions of interest (295–362 bp, OlOca2, rx2, rx3, cryaa) using locus-specific primers with 5’ partial illumina adapter sequences (Table 3) and Q5 Hot Start High-Fidelity DNA Polymerase (New England Biolabs). PCR products were run on a 1% agarose gel, respective bands were excised and cleaned up using the Monarch DNA Gel Extraction Kit (New England Biolabs). PCR products from the same genomic DNA source were pooled to equilmolarity at 25 ng/µl and submitted to GeneWiz (Azenta Life Sciences) for sequencing (Amplicon-EZ: Illumina MiSeq, 2 × 250 bp sequencing, paired-end) obtaining between 48,018 and 96,899 reads per sample.
 
-## Analysis and plotting of next-generation sequencing data
+**Table 3.**
+ Locus-specific primers with 5’ partial illumina adapter sequences.Locus-specific primers with Illumina adapter sequence underscored.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Primer sequences in 5’–3’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>oca2_F</td>
+      <td>ACACTCTTTCCCTACACGACGCTCTTCCGATCTCGTTAGAGTGGTATGGAGAACTGT</td>
+    </tr>
+    <tr>
+      <td>oca2_R</td>
+      <td>GACTGGAGTTCAGACGTGTGCTCTTCCGATCTATGGTCCTCACATCAGCAGC</td>
+    </tr>
+    <tr>
+      <td>cryaa_F</td>
+      <td>ACACTCTTTCCCTACACGACGCTCTTCCGATCTCGCCATTTGCTTGTGTGTCA</td>
+    </tr>
+    <tr>
+      <td>cryaa_R</td>
+      <td>GACTGGAGTTCAGACGTGTGCTCTTCCGATCTAGTCTAGGAGGATGGGGCAG</td>
+    </tr>
+    <tr>
+      <td>rx2_F</td>
+      <td>ACACTCTTTCCCTACACGACGCTCTTCCGATCTAGAGGCACAAGAACTATTTGTTGATC</td>
+    </tr>
+    <tr>
+      <td>rx2_R</td>
+      <td>GACTGGAGTTCAGACGTGTGCTCTTCCGATCTAGGGCTCCGTTAACTTTGGG</td>
+    </tr>
+    <tr>
+      <td>rx3_F</td>
+      <td>ACACTCTTTCCCTACACGACGCTCTTCCGATCTATGCAAACCAAGAAAGCGCC</td>
+    </tr>
+    <tr>
+      <td>rx3_R</td>
+      <td>GACTGGAGTTCAGACGTGTGCTCTTCCGATCTTGGGATTTCTCAAAGGCCCG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Analysis and plotting of next-generation sequencing data
 
 Amplicon sequencing data was analyzed with CRISPResso2 v.2.1.2 (Clement et al., 2019) using the default -n nhej parameters. Demultiplexing was achieved by mapping to the four different wild-type loci, respectively. Downstream analysis was conducted using R v.3.6.3 in R studio (Team, 2020) (package: ggplot2 Wickham, 2016), with data sourced from ‘CRISPResso_quantification_of_editing_frequency.txt’ output table. To determine the average read count per modified allele, the ‘Alleles_frequency_table.txt’ output table was used. The number of modified alleles was determined by filtering > ‘Read_status’ > modified. Average read count per modified allele = modified reads/N modified alleles.
 
-## Genotyping of editants
+### Genotyping of editants
 
 Genotyping was performed on DNA extractions (see above) of three replicates containing five randomly picked editants each of BE4-Gam and heiBE4-Gam injections. Q5 polymerase (NEB), primers fwd 5’-GTTAAAACAGTTTCTTAAAAAGAACAGGA-3’ and rev 5’-AGCAGAAGAAATGACTCAACATTTTG-3’ (annealing at 62°C) were used on 1 µl of diluted DNA sample according to the manufacturer’s instructions with 30× PCR cycles. PCR products were analyzed on a 1% agarose gel, bands excised, DNA extraction performed using innuPREP Gel Extraction Kit (Analytik Jena) according to the manufacturer’s instructions and subjected to Sanger sequencing (see below).
 
-## Cell lines
+### Cell lines
 
 Mouse SW10 cells (ATCC, CRL-2766, Lot number 4117643) were cultured in DMEM (Gibco) supplemented with 1 g/ml glucose containing 10% FCS (Sigma), 1% penicillin (10,000 units/ml; Gibco), and 1% streptomycin (10 mg/ml; Gibco) and maintained at 33°C and 5% CO2 and regularly tested negative for mycoplasma infections. Cells were passaged at 80–90% confluency. Twenty-four hr before transfection cells were seeded in a density of 85,000 cells per 12 wells.
 
 CRISPR Transfection crRNA targeting exon 6 (TCGTATCCAGACACCGTCCC[GGG], PAM in brackets) of the mouse Periaxin (MmPrx) gene was selected from the IDT (crRNA XT) predesign crRNA database. crRNA (50 µM) and Alt-R CRISPR-Cas9 tracrRNA, ATTO-550 (50 µM; IDT, 1075927) were diluted in nuclease-free duplex buffer (IDT) to a final concentration of 1 µM and incubated at 95°C for 5 min. One µg of the corresponding Cas9 mRNA (GeneArt CRISPR nuclease Invitrogen, A29378; JDS246-Cas9 or heiCas9) and 15 µl of tracrRNA+crRNA Mix (1 µM) were diluted in 34 µl Opti-MEM I (Gibco) and mixed with 3 µl Lipofectamine RNAiMAX (ThermoFisher) diluted in 47 µl Opti-MEM I. The tracrRNA+crRNA lipofection mix was incubated for 20 min at RT. Cell culture medium was exchanged with 900 µl Opti-MEM I and the tracrRNA+crRNA lipofection mix was added dropwise to the well. After 48 hr, genomic DNA was extracted using the DNeasy Blood and Tissue Kit (Qiagen, 69506) following the manufacturer’s protocol. Q5-PCR was carried out using primers flanking the targeted exon 6 (fwd 5’-GAGACACTCACTCCAGACCC-3’; rev 5’-ACTCAGTAACCCAACAGCCA-3’) and 30 cycles. PCR amplicons were purified using the Monarch DNA Gel Extraction Kit (NEB, T1020S) and subjected to sequencing.
 
-## Sanger sequencing
+### Sanger sequencing
 
 Sanger sequencing was performed by Eurofins Genomics using fwd 5’-GTTAAAACAGTTTCTTAAAAAGAACAGGA-3’ to evaluate base editing at OlOca2 T1 target site and using fwd 5’-GAGACACTCACTCCAGACCC-3’ and rev 5’-ACTCAGTAACCCAACAGCCA-3’ to evaluate genome editing of the Prx locus in SW10 cells. Quantification of base editing from Sanger sequencing reads was performed with EditR (Kluesner et al., 2018). Genome editing efficiency was assessed by sequence analysis using the TIDE web tool (Brinkman et al., 2014) and by ICE (Hsiau et al., 2018) using default parameters and indel size range up to 30 bp.
 
-## Data visualization
+### Data visualization
 
 Data visualization and figure assembly was performed using Fiji (Schindelin et al., 2012), ggplot2 (Wickham, 2016) in RStudio (Team, 2020), Geneious Prime 2019.2.1, Adobe Illustrator CS6 and Affinity Designer 1.10.5.

@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.30823.001 Despite the intrinsically stochastic nature of damage, sensory organs recapitulate normal architecture during repair to maintain function. Here we present a quantitative approach that combines live cell-lineage tracing and multifactorial classification by machine learning to reveal how cell identity and localization are coordinated during organ regeneration. We use the superficial neuromasts in larval zebrafish, which contain three cell classes organized in radial symmetry and a single planar-polarity axis. Visualization of cell-fate transitions at high temporal resolution shows that neuromasts regenerate isotropically to recover geometric order, proportions and polarity with exceptional accuracy. We identify mediolateral position within the growing tissue as the best predictor of cell-fate acquisition. We propose a self-regulatory mechanism that guides the regenerative process to identical outcome with minimal extrinsic information. The integrated approach that we have developed is simple and broadly applicable, and should help define predictive signatures of cellular behavior during the construction of complex tissues.
+Despite the intrinsically stochastic nature of damage, sensory organs recapitulate normal architecture during repair to maintain function. Here we present a quantitative approach that combines live cell-lineage tracing and multifactorial classification by machine learning to reveal how cell identity and localization are coordinated during organ regeneration. We use the superficial neuromasts in larval zebrafish, which contain three cell classes organized in radial symmetry and a single planar-polarity axis. Visualization of cell-fate transitions at high temporal resolution shows that neuromasts regenerate isotropically to recover geometric order, proportions and polarity with exceptional accuracy. We identify mediolateral position within the growing tissue as the best predictor of cell-fate acquisition. We propose a self-regulatory mechanism that guides the regenerative process to identical outcome with minimal extrinsic information. The integrated approach that we have developed is simple and broadly applicable, and should help define predictive signatures of cellular behavior during the construction of complex tissues.
 
 ## Introduction
 
@@ -26,7 +26,7 @@ Understanding organogenesis, organ morphostasis and regeneration is crucial to m
 
 ## Results
 
-## Complete neuromast ablation is irreversible in larval zebrafish
+### Complete neuromast ablation is irreversible in larval zebrafish
 
 The neuromasts of the superficial lateral line in zebrafish are formed by a circular cuboidal epithelium of 60–70 cells (López-Schier and Hudspeth, 2006; Ghysen and Dambly-Chaudière, 2007; Norden, 2017). Mechanoreceptive hair cells occupy the center of the organ, whereas non-sensory sustentacular supporting cells are found around and between the hair cells (Figure 1A). A second class of supporting cell called mantle cells forms the outer rim of the organ. The invariant spatial distribution of these three cell classes generates a radial symmetry (Figure 1B) (Pinto-Teixeira et al., 2015). Neuromasts also have an axis of planar polarity defined by the orientation of the hair-cells’ apical hair bundle (Figure 1C) (Ghysen and Dambly-Chaudière, 2007; Wibowo et al., 2011). In addition to this geometric organization, cell-class number and proportions are largely constant, with around 40 sustentacular, 8–10 mantle, and 14–16 hair cells. Non-sensory cells can proliferate, whereas the sensory hair cells are postmitotic (López-Schier and Hudspeth, 2006; Ma et al., 2008; Cruz et al., 2015; Pinto-Teixeira et al., 2015). Finally, a string of interneuromast cells connects each neuromast along the entire lateral-line system (Figure 1A) (Ghysen and Dambly-Chaudière, 2007). Previous studies have extensively characterized the regeneration of the mechanosensory hair cells (Williams and Holder, 2000; Harris et al., 2003; López-Schier and Hudspeth, 2006; Hernández et al., 2006; Ma et al., 2008; Behra et al., 2009; Faucherre et al., 2009; Wibowo et al., 2011; Namdaran et al., 2012; Steiner et al., 2014; Jiang et al., 2014). However, the regeneration of non-sensory cells remains largely unexplored. To obtain quantitative data of whole sensory-organ regeneration we developed an experimental assay that combines controllable neuromast damage, long-term videomicroscopy at cellular resolution, and live cell-lineage tracing. We used combinations of transgenic lines expressing genetically encoded fluorescent proteins that allow the precise quantification and localization of each cell class in neuromasts, and which also serve as a direct and dynamic readout of tissue organization. This is important because it enables the visualization of cell-fate transitions in living specimens within the growing tissue at high temporal resolution. Specifically, the Tg[alpl:mCherry] line expresses cytosolic mCherry in the mantle and interneuromast cells (Figure 1D). The Et(krt4:EGFP)sqgw57A (hereafter SqGw57A) expresses cytosolic GFP in sustentacular cells (Figure 1E). The Tg[−8.0cldnb:LY-EGFP] (Cldnb:lynGFP) express a plasma-membrane targeted EGFP in the entire neuromast epithelium and in the interneuromast cells (Figure 1F), and the Tg[Sox2-2a-sfGFP] (Sox2:GFP) expresses cytosolic GFP in all the supporting cells and the interneuromast cells (Figure 1G). For hair cells, we use Et(krt4:EGFP)sqet4(SqEt4) that expresses cytosolic GFP (Figure 1H), or the Tg(myo6b:actb1-EGFP)(Myo6b:actin-GFP) that labels filamentous actin (Figure 1I). These transgenic lines have been previously published, but are reproduced here for clarity and self-containment of this work (López-Schier and Hudspeth, 2006; Kondrychyn et al., 2011; Kindt et al., 2012; Shin et al., 2014; Steiner et al., 2014; Pinto-Teixeira et al., 2015).
 
@@ -40,11 +40,23 @@ To induce tissue damage in a controllable and reproducible manner, we used a nan
 
 **Figure 2.:** (A–E) Confocal images of a 7 day follow-up of the complete ablation of a neuromast in the double transgenic line Tg[Cldnb:lynGFP; Alpl:mCherry]. (A) The site of damage was identified over subsequent days by the position of an intact reference neuromast (white asterisk). (B) Laser-mediated cell ablation produced a wound 4 hours-post-injury (hpi). (C–E) This wound was replaced by a thread of mCherry(+) cells (white arrow) 1 day-post-injury (dpi), which did not change over the subsequent 6 days. (F–J) Confocal images over a 7 day time course after the ablation of a neuromast in the double transgenic line Tg[Sox2:GFP; Alpl:mCherry]. Identically to A-E, the complete ablation of the target neuromast results in a thin trail of interneuromast cells (white arrowheads) covering the damaged area (K–N). Scale bars: 10 µm.
 
-## Neuromasts have isotropic regenerative capacity
+![Video 1.](https://cdn.elifesciences.org/articles/30823/elife-30823-video1.mp4.jpg)
+
+**Video 1.:** Four laser-targeted cells (showing a dark spot in the nuclei from focal fluorescent-protein bleaching) are eliminated from the epithelium, which closes the wound. There is no noticeable collateral damage. Time resolution is one image per 30 s.
+
+### Neuromasts have isotropic regenerative capacity
 
 To further explore neuromast repair we decided to use milder injury regimes. We systematically produced controlled damage of well-defined scale and location in double transgenic specimens that combine the supporting cell marker Cldnb:lynGFP and the mantle-cell marker Alpl:mCherry (Figure 3A–O). We found that ablation of the posterior half of the neuromast was followed by closure of the wound within 24 hr (Figure 3A–C). At 3 dpi, target neuromasts regained normal cell-class spatial distribution (n = 6) (Figure 3D). At 7 dpi, neuromasts recovered approximately 70% of the normal cell number (Figure 3E,Z). We found no difference in speed and extent of regeneration after concurrently ablating the posterior half of neuromasts and flanking interneuromast cells (n = 5) (Figure 3F–J,Z). The ablation of the posterior or the dorsal half of the epithelium resulted in identical outcome, suggesting that neuromasts are symmetric in their regenerative capacity (n = 6) (Figure 3K–O,Z). Next, we assessed mantle-cell regeneration using a double transgenic line expressing Sox2:GFP and Alpl:mCherry, which reveal mantle cells in red and sustentacular cells in green (Figure 3P–Y). The complete elimination of mantle cells was followed by their re-emergence 3 dpi (Figure 3Q–S), and the reconstitution of the outer rim of the neuromast 7 dpi (n = 15) (Figure 3T,Z). The simultaneous ablation of the mantle cells and the adjacent interneuromast cells led to identical outcome (n = 6) (Figure 3U–Z). The ablation of the interneuromast cells in fish co-expressing Sox2:GFP and Alpl:mCherry on one side of a neuromast (n = 12), or between two adjacent organs (n = 8) did not trigger the proliferation of the remaining interneuromast cells over a period of 7 days (Figure 3—figure supplement 1A–J). Because the complete ablation of mantle cells leaves intact the sustentacular-cell population, and the hair cells are postmitotic, these results yield three important and novel findings: (1) interneuromast cells are not essential for neuromast regeneration in larval zebrafish, although they may contribute to mantle cell regeneration; (2) neuromasts have isotropic regenerative capacity; (3) sustentacular cells are tri-potent progenitors able to self-renew and to generate mantle and hair cells.
 
-## Neuromast architecture recovers after severe loss of tissue integrity
+![Figure 3.](https://cdn.elifesciences.org/articles/30823/elife-30823-fig3-v2.jpg)
+
+**Figure 3.:** (A) Ablation of the posterior half of a neuromast. (B–C) The damage is resolved by cellular movement from the undamaged site 1dpi. (D) Neuromasts recover geometric order after 3 days and (J) return to homeostasis by 7dpi. Dashed lines in A,F,K,P,U delineate the ablated area. (F–J) Simultaneous ablation of the posterior half of a neuromast and the interneuromast cells flanking its anterior and posterior sides (n = 5) led to a regeneration outcome identical to that of the experiment in (A–E). Arrowheads in (F) point the location normally occupied by the interneuromast cells. (K–O) Neuromasts depleted from their dorsal half (n = 6) also recover epithelial size, proportions and geometry in a manner indistinguishable from equatorial-side ablation after 7 days. (P–T) 7 days after their complete laser-mediated ablation, mantle cells regenerated for neuromasts to recover the mantle. (U–Y) The ablation of interneuromast cells flanking both sides of neuromasts that were depleted of mantle cells resulted in the same outcome (n = 6). (Z) Quantification of the number of cells in regenerated neuromasts at 7 dpi. Number of neuromast cells was no statistically significant between groups of different damage regimes as determined by one-way ANOVA (F(4,27)=1.013, p=0.4183). Scatter plot shows mean ±s.e.m.ns: non-significant. Scale bars: 10 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/30823/elife-30823-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–E) The ablation of interneuromast cells adjacent to one flank of a neuromast resulted in the stretching of the last undamaged interneuromast cell (arrowhead) but does not trigger interneuromast-cell proliferation or the reformation of interneuromast-cell strings (n = 14). (F–J) Likewise, the complete ablation of interneuromast cells in both flanks from one neuromast to the next, generates a corresponding gap of interneuromast cells that did not change over 7 days (n = 8). Scale bars: 50 µm.
+
+### Neuromast architecture recovers after severe loss of tissue integrity
 
 To test the limits of neuromast regeneration we systematically ablated increasing numbers of cells. Extreme injuries that eliminated all except 1 to 3 cells almost always led to neuromast loss (not shown), whereas ablations that left between 4 and 10 cells, reducing the organ to a combination of 2–3 mantle and 2–7 sustentacular cells, allowed regeneration (Figure 4A–E,K). We found that after losing over 95% of their cellular content, neuromasts recover an average of 45 cells at 7 dpi (or approximately 70% of the normal cell count), with exceptional cases reaching 60 cells (equivalent to over 90% of a normal organ) (n = 15) (Figure 4K). Regenerating neuromasts became radial-symmetric as early as 3 dpi (Figure 4D), and had normal cell-class composition and proportions 7 dpi (Figure 4L–M). Next, we concurrently ablated 95% of the neuromast and the flanking interneuromast cells (Figure 4F–G). This intervention was followed by a similar regeneration process, but lead to smaller organs (n = 6) (Figure 4H–J,N–P). These observations reinforce our previous suggestion that interneuromast cells have a non-essential, yet appreciable contribution to regeneration. Timed quantification of cell-class number and localization showed a reproducible pattern of tissue growth and morphogenesis. During the first 24 hpi, the intact cells rebuilt a circular epithelium (Figure 4B). From 1 dpi to 3 dpi, cell number increases rapidly and proportion is restored (Figure 4C,K–M). After 3 dpi, cell number increases at a slower pace (Figure 4K–M). Importantly, each cell class assumes an appropriate position despite a much reduced cell number (Figure 4E,J,L–P).
 
@@ -54,7 +66,7 @@ To test the limits of neuromast regeneration we systematically ablated increasin
 
 Next, we examined if the orthogonal polarity axes of the epithelium are re-established after the severest of injuries. To assess tissue apicobasal polarity we used a combination of transgenic lines that allows the observation of the invariant basal position of the nucleus and the apical adherens junctions (Figure 4Q–R) (Ernst et al., 2012; Harding and Nechiporuk, 2012; Hava et al., 2009). We found correct positioning of these markers in the regenerated epithelium (n = 4), including the typical apicobasal constriction of the hair cells (Figure 4S–T). To assess epithelial planar polarity, we looked at hair-bundle orientation using fluorescent phalloidin, which revealed that 7 dpi the regenerated neuromasts were plane-polarized in a manner indistinguishable from unperturbed organs, with half of the hair cells coherently oriented in opposition to the other half (n = 10) (Figure 4U–W). To test if plane-polarizing cues derive from an isotropic forces exerted by the interneuromast cells that are always aligned to the axis of planar polarity of the neuromast epithelium, we ablated these cells flanking an identified neuromast, and concurrently killed the hair cells with the antibiotic neomycin (Figure 4X–Y). In the absence of interneuromast cells regenerating hair cells recovered normal coherent planar polarity (n = 16), suggesting the existence of alternative sources of polarizing cues (Figure 4Z). Collectively, these findings reveal that as few as four supporting cells can initiate and sustain integral organ regeneration.
 
-## Sustentacular and mantle cells have different regenerative potential
+### Sustentacular and mantle cells have different regenerative potential
 
 Injury in the wild is intrinsically stochastic. Thus, we hypothesized that the regenerative response must vary according to damage severity and location, but progress in a predictable manner. To test this assumption and unveil the underlying cellular mechanism, we systematically quantified the behavior of individual cells by high-resolution videomicroscopy. We conducted 15 independent three-dimensional time-lapse recordings of the regenerative process using a triple-transgenic line co-expressing Cldnb:lynGFP, SqGw57A and Alpl:mCherry (Figure 5A–B), ranging from 65 to 100 hr of continuous imaging (each time point 15 min apart). Starting immediately after the ablation of all except 4–10 cells, we tracked every intact original cell (called founder cell) and their progeny (cellular clones) (Figure 5A and Video 2). We followed a total 106 founder cells (76 sustentacular cells and 30 mantle cells). We tracked individual cells manually in space and time, recording divisions and identity until the end of the recording, resulting in 763 tracks and 104,863 spatiotemporal cell coordinates (Figure 5A–B). Each clone was represented as a tree to visualize the contribution of each founder cell to the resulting clones (Figure 5C). We found that the majority of the founder sustentacular cells underwent three divisions and that some divided up to five times (Figure 5D). 14 out of 30 founder mantle cells did not divide at all, and the rest divided once or, rarely, twice. Founder sustentacular cells required on average 19 ± 6 hr (mean ±s.d., n = 76) to divide, whereas the founder mantle cells that divided required on average 27 ± 5 hr, (mean ±s.d., n = 30) (Figure 5E). Clones from founder sustentacular and founder mantle cells were markedly different: founder sustentacular cells produced all three cell classes (sustentacular, mantle and hair cells), whereas founder mantle cells produced clones containing only mantle cells (Figure 5F). We categorized all cell divisions according to the fate of the two daughter cells at the time of the following division, or at the end of the time-lapse recording (Figure 5G). This analysis revealed that 97% of the sustentacular-cell divisions were symmetric: 78% produced two sustentacular cells (SS), 16% produced a pair of hair cells (HH), and 3% generated two mantle cells (MM). Only 3% of the divisions were asymmetric, generating one sustentacular and one mantle cell (SM) (n = 307). All mantle-cell divisions were symmetric (MM) (n = 20). These observations further support the conclusion that sustentacular cells are tri-potent progenitors.
 
@@ -62,13 +74,17 @@ Injury in the wild is intrinsically stochastic. Thus, we hypothesized that the r
 
 **Figure 5.:** (A) Still images showing a representative 100 hr time-lapse recording of a regenerating neuromast in Tg[Clndb:lynGFP; SqGw57A; Alpl:mCherry] larva (left and middle panels). Cellular clones that share a common founder cell are clustered and color-coded. Cell trajectories reveal a concentric growth pattern (right panel). (B) Cell trackings at the last recorded timepoints for 10 out of the total of 15 regenerated neuromasts. (C) Cell-lineage tracing from time-lapse movie shown in (A). Branching points symbolize cell divisions. The division of a founder cell generates two cells of the 1 st generation. Subsequent divisions produce cells of the 2nd, 3rd and 4th generation. Cell classes are indicated with green (sustentacular), blue (hair) and red (mantle) colors. (D) Sustentacular founder cells undergo significantly more (p=3.59e-06, Mann-Whitney test) division rounds than mantle founder cells during 100 hr of neuromast regeneration. (E) The first division of sustentacular founder cells (n = 76) occurs significantly earlier (p=1.13e-5, Mann-Whitney test) than that of mantle founder cells (n = 16). (F) Sustentacular founder cells (n = 76) generate all three neuromast cell classes whereas mantle founder cells (n = 30) produce only mantle cells. (G) Out of 307 sustentacular cell divisions, 78% were self-renewing, 16% produced a pair of hair cells, 3% produced sustentacular cells that both became mantle cells within the next generation and 3% generated two sustentacular cells of which only one transited to mantle cell fate within the next generation. All 20 observed mantle cell divisions were self-renewing.
 
+![Video 2.](https://cdn.elifesciences.org/articles/30823/elife-30823-video2.mp4.jpg)
+
+**Video 2.:** A neuromast regenerates its original architecture from as few as six founder cells. Founder cells are identified by 1–6 (n) and their daughter cells receive 2 n and 2n + 1 identities. Recording starts 4 hr post injury (hpi) and shows single focal planes. Time is in hours post injury.
+
 Previous studies have firmly established that hair-cell regeneration is strongly anisotropic because hair-cell progenitors develop almost exclusively in the polar areas of horizontal neuromasts, elongating the macula in the dorsoventral direction (Wibowo et al., 2011; Romero-Carvajal et al., 2015). Although our static images suggest that neuromasts have isotropic regenerative capacity, we nevertheless wondered whether regeneration of non-sensory cells is directional. To this end, we fractioned the epithelium of horizontal neuromasts in four quarters of equal dimension (dorsal, ventral, anterior and posterior) (Figure 6A–B), which reflects the known functional territorialization of the neuromast epithelium based on the expression of transgenic markers and Notch signaling (Ma et al., 2008; Wibowo et al., 2011). We first assessed the spatial distribution of cell divisions during the first 60 hr of regeneration and found no pattern that would suggest regeneration anisotropy (Figure 6A). However, 60 hpi, most divisions (74%) took place in the dorsal and ventral (polar) quarters (Figure 6B). This is expected because later divisions mainly produce hair cells from polar progenitors (Figure 4L,M). Thus, the regenerating epithelium is initially homogeneous and becomes territorialized 60 hpi. We reasoned that epithelial territorialization could occur either by the migration of similar cells that are scattered throughout the tissue, or by position-adaptive differentiation of an initially equivalent population of cells. To test these possibilities, we generated a virtual Cartesian coordinate system at the center of the neuromast to fit all founder cells at the beginning of regeneration (4hpi). Next, we analyzed the localization of their progeny 60 hpi (Figure 6C–H). We found that 60% of the progeny of anterior-localized founder cells were located in the anterior side of the resulting epithelium, whereas 64% of the progeny of posterior-located founder cells were found in the posterior side (Figure 6C–E). We also found that 72% of cells derived from dorsal founder cells and 74% of cells from ventral founder cells were located on the same side of the virtual dorsal/ventral midline (Figure 6F–H). Therefore, most of the clones remain ipsilateral to the founder cell. These results indicate that neuromasts have isotropic regenerative capacity and their territorialization occurs by location-adaptive cellular differentiation.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/30823/elife-30823-fig6-v2.jpg)
 
 **Figure 6.:** (A) Proliferation is markedly isotropic during the first 60 hr of neuromast regeneration (n = 348). (B) Homeostatic, dorso-ventral (DV) proliferative territories are restored after 60hpi (n = 27). (C) 40% and 36% of the progeny from anterior (n = 202) and posterior (n = 173) founder cells crossed to the contralateral side (light grey) after 60 hr of regeneration. (D) Only 28% and 26% of the progeny from dorsal (n = 199) and ventral (n = 176) founder cells crossed to the contralateral side (light grey) during the same period of time. (E) Representative examples of different clone types extracted from time-lapse data. Sustentacular cells give rise to S, SM, SH, and SHM clones (color coded respectively with green, pink, cyan and orange) whereas mantle cells produce only pure mantle cell clones. (F) The clone composition of the 15 regenerated neuromasts is not stereotypic. The length of each bar represents the proportion of neuromast cells that belong to each clone. Neuromast eight has been shown in Figure 5A,B. (G) The most frequent clones contain sustentacular and hair cells (SH, n = 37 clones), followed by those with only sustentacular cells (S, n = 21 clones). The third most frequent are composed by sustentacular and mantle cells (SM, n = 12 clones). Clones containing all three cell classes were rare (SHM, n = 2 clones).
 
-## The sustentacular-cell population is tri-potent and plastic
+### The sustentacular-cell population is tri-potent and plastic
 
 To answer the long-standing question of whether the sustentacular-cell population is homogeneous and approach the problem of what determines symmetric versus asymmetric modes of division, we characterized the composition of all 72 clones from founder sustentacular cells. We found four types of clones: containing only sustentacular cells (S), sustentacular and mantle cells (SM), sustentacular and hair cells (SH), and all three cell classes (SHM) (Figure 6I). Of note, founder mantle cells produced clones containing only mantle cells (M) (Figures 5G and 6I). We observed that 37/72 of the clones from founder sustentacular cells were SH, 21/72 were S, 12/72 were SM, and 2/72 were SHM (Figure 6I–K). The proportion of each clone type suggests that either the sustentacular-cell population is heterogeneous, or that it is homogeneous but plastic. In searching for potential sources of clone heterogeneity, we noted that in some developmental contexts cell-cycle length or proliferative potential can determine the fate of the daughter cells (Calegari et al., 2005; Rossi et al., 2017). Therefore, we quantified the kinetics of proliferation of founder sustentacular cells and of their daughters and compared them to clone composition. We found three clear waves of cell divisions, each spaced by 8–10 hr (Figure 7A), respectively peaking at 20 hr, 28 hr and 38 hr (Figure 7B–C), suggesting that cell-cycle length is strictly regulated. Cell-cycle length in the 1 st generation peaks around 10 hr (9.8 ± 3.3 hr, median ±interquartile range (iqr)) (Figure 7C), but it begins to increase and to vary in the 2nd generation (11.5 ± 7.3 hr, median ±iqr), and more so in the 3rd generation (18.8 ± 20.3 hr, median ±iqr). To identify transition points in cycle lengths, we tested the goodness of fit of a two-segment regression model with variable change points. We found that the length of cell cycles is initially around 11 ± 3 hr (mean ±s.d.) and slowly increases up to 47 hpi. Afterwards, cell-cycle length increases more rapidly and is more variable (Figure 7D). To test if cell number influences cell-cycle length we used a similar two-segment regression model to define when cell-cycle length loosens, and discovered that the vast majority of the cell cycles (76%) span 7–13 hr below a threshold of 24 cells (Figure 7E). Above this threshold, cell-cycles lengths show large variation. With these data, we plotted proliferation kinetics against clone type, and found no significant difference between clones (Figure 7F–G). Thus, the length of the cell cycle or the proliferative potential of founder sustentacular cells cannot explain clone composition.
 
@@ -76,13 +92,172 @@ To answer the long-standing question of whether the sustentacular-cell populatio
 
 **Figure 7.:** (A–B) Equally spaced waves of coordinated sustentacular cell divisions (green) underlie the recovery of neuromast cell size. Mantle cell divisions (red) occur occasionally and do not follow the pattern of sustentacular cells. Proliferative waves correspond to the coordinated divisions of cells from independent generations. (C) Cells from the 1 st and 2nd generation divide on average after cell cycles of 11 ± 5 and 14 ± 9 hr respectively (mean ±s.d.). Coordination is lost at the 3rd generation when cell cycles start to lengthen (26 ± 18 hr, mean ±s.d.). (D) Cell cycle length (11 ± 3 hr, mean ±s.d.) is marginally influenced by regeneration time until 47 hr after injury, when cycle length starts increasing proportionally with regeneration time. (E) Cell cycle lengths (12 ± 6 hr, mean ±s.d.) do not correlate directly with neuromast size until 24 neuromast cells. (F) S, SM and SH clones produce similar number of cells (p=0.68, Kruskal Wallis test). In the box plots, the boundary of the box indicates the 25th and 75th percentile, respectively the black line within the box marks the median. Whiskers above and below the box include points that are not outliers. (G) Sustentacular founder cells of S, SM, and SH clones divide similarly early (p=0.42, Kruskal Wallis test) after approximately 18 hr after neuromast injury. (H) Sustentacular founder cells that produce SH (cyan) and S clones (green) are distributed similarly around the center of the organ (at x = y = 0). Those that generate SM clones (pink) are localized further away from the center and are biased towards the posterior side.
 
-## Machine learning identifies predictive features for cell-fate acquisition
+### Machine learning identifies predictive features for cell-fate acquisition
 
 Multiple extrinsic factors that vary in space and time could determine cell-fate choices. Because manual analysis of such multidimensional data might be biased or neglect certain factors we implemented a quantitative and unbiased computational approach based on machine learning to identify variables (features) that correlate with clone composition. The first step of the workflow is the extraction of spatiotemporal coordinates and cell-lineage information from the manual tracks of the videomicroscopic data sets (n = 15) (Figure 8A). For each cell-track coordinate, we extracted 32 quantifiable features (Table 1), which were used to train the machine-learning algorithm. In a pre-analysis, we compared the performance of 20 algorithms (support vector machines, decision trees and nearest neighbor classifiers) in terms of accuracy and area under the curve (AUC) and chose the ensemble bagged tree random forest algorithm (Breiman, 2001) as the best performing method (Figure 8—figure supplement 1). To avoid overfitting, we trained the random forest using 14 samples to predict clone composition in the remaining sample in a round robin fashion. We evaluated the quality of predictions using Matthews correlation coefficient (MCC) to compensate for imbalances of clone frequencies (Figure 6K)
 
+**Table 1.**
+ List of prediction features with description.We used 32 mainly spatial and neighborhood specific features for the classification. Features are explained in the description column.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Feature name</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Absolut time</td>
+      <td>Hours post induction (hpi)</td>
+    </tr>
+    <tr>
+      <td>Absolute distance to center</td>
+      <td>Euclidean distance to the neuromast center</td>
+    </tr>
+    <tr>
+      <td>Average distance to H cell</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Average distance to M cell</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Average distance to S cell</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Cell generation</td>
+      <td>Number of divisions that the cell has undergone</td>
+    </tr>
+    <tr>
+      <td>Founder Cell Type</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Minimum distance to H cell</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Minimum distance to M cell</td>
+      <td>--</td>
+    </tr>
+    <tr>
+      <td>Minimum distance to S cell</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Movement angle to last division</td>
+      <td>Angle between current cell location, neuromast center and location of last cell division (or start of the movie in case of founder cell division)</td>
+    </tr>
+    <tr>
+      <td>Movement direction compared to center</td>
+      <td>Radial distance between current cell location and location of last cell division (or start of the movie in case of founder cell division). If the current location is nearer to the center the value is (+) in case it is further away the value is (-)</td>
+    </tr>
+    <tr>
+      <td>Movement distance since last division</td>
+      <td>Euclidean distance between current cell location and last cell division (or start of the movie in case of founder cell division)</td>
+    </tr>
+    <tr>
+      <td>Normalized distance to center</td>
+      <td>Radial distance of current cell location divided by the radial distance of the current furthest cell (to approximate the neuromast size)</td>
+    </tr>
+    <tr>
+      <td>Number of founder cells</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Number of H cells</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Number of H cells in 10 µm radius</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Number of H cells in 20 µm radius</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Number of H cells in 30 µm radius</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Number of M cells</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Number of M cells in 10 µm radius</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Number of M cells in 20 µm radius</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Number of M cells in 30 µm radius</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Number of S cells</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Number of S cells in 10 µm radius</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Number of S cells in 20 µm radius</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Number of S cells in 30 µm radius</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Number of total cells</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Polar angle</td>
+      <td>Polar angle is the counterclockwise angle between the x-axis, the neuromast center and the current cell location</td>
+    </tr>
+    <tr>
+      <td>Time to last division</td>
+      <td>Time to last division (or start of the movie in case of founder cell division)</td>
+    </tr>
+    <tr>
+      <td>X coordinate</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Y coordinate</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 8.](https://cdn.elifesciences.org/articles/30823/elife-30823-fig8-v2.jpg)
+
+**Figure 8.:** (A) Overview from experiments to prediction. Movies of neuromast regeneration allow us to track every single cell over 100hpi and to generate a cell lineage from these track points. Information covered in all tracks and lineages can be extracted as features with which we train our random forest machine-learning classifier to predict division or cell lineage fate. (B) Sustentacular founder cell choices between SH vs. SM clones can be predicted with high accuracy (MCC = 0.63 ± 0.09, mean ± s.d., n = 15 bootstrapped samples) whilst choices between S and SH or SM clones are highly inaccurate (MCC = 0.19 ± 0.11 and 0.15 ± 0.10, mean ± s.d., respectively, n = 15 bootstrapped samples), based on 32 calculated features. (C) Features relative to the position of the founder cells and their nearest cellular environment can discriminate between SM and SH clone types. (D) Choices between SM/MM and HH divisions can be predicted with high accuracy (MCC = 0.91 ± 0.07, mean ± s.d., n = 15 bootstrapped samples) while those between SS and HH or SM/MM have low accuracy (MCC = 0.50 ± 0.05 and 0.38 ± 0.15, respectively, mean ± s.d., n = 15 bootstrapped samples) (E) Features describing the cell’s position in relation to the neuromast center and their proximity to other mantle cells have the highest influence on the cell fate choices of a sustentacular cell. (F) SM/MM divisions (red) appear predominantly at the periphery of the organ whereas HH divisions (blue) appear proximal to the center. Sustentacular cell self-renewing divisions (SS, green) occur mostly around the neuromast center, generating a ring-like pattern.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/30823/elife-30823-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** With 83.1% accuracy random forests perform best comparing features based ML algorithms on our data. We used the standard classification learners in MATLAB to obtain a first impression of the performance of possible ML approaches. We a 5-fold cross-validation we tested and compared the described methods. With 83.1% accuracy random forests perform best comparing feature based ML algorithms on our data. We used the standard classification learner in MATLAB to get a first impression of the performance of possible ML approaches. With a 5-fold cross-validation we tested and compared the provided methods.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/30823/elife-30823-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** The bar plot shows all features used to predict SM vs. SH clones. They are sorted by their predictive importance and their error bars are generated by the used leave-one-out approach. The plots above exemplary show feature distributions of normalized distance to neuromast center (left) and average distance to mantle cells (right) for SM and SH clones.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/30823/elife-30823-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** The bar plot shows all features used to predict SM/MM vs HH divisions. They are sorted by their predictive importance and their error bars are generated by the used leave-one-out approach. The plots above exemplary show feature distributions of minimal distance to mantle cells (left) and normalized distance to neuromast center (right) for SM/MM and HH divisions.
+
 Using machine learning, we were able to predict the occurrence of SH vs. SM clones from a founder sustentacular cell with high accuracy (42 out of 49 correctly predicted clones, MCC = 0.63 ± 0.09, mean ± s.d., n = 15 bootstrapped samples), while neither SH nor SM clones could be discriminated when compared to S clones (Figure 8B). Of the 32 features that we used, those that best discriminated SH vs SM clones were the sustentacular cells’ distance to the center of the epithelium, and the distance to the mantle cells (Figure 8C and Figure 8—figure supplement 2). Next, we focused on the decision-making process of individual sustentacular cells at the time of their division. We trained a random forest to discriminate between SS, HH and SM/MM divisions in a pairwise fashion. The HH and SM/MM divisions were highly predictable (63 out of 66 divisions correctly predicted, MCC = 0.91 ± 0.07, mean ± s.d., n = 15 bootstrapped samples), while the discrimination between SS and HH or SM/MM divisions was much less accurate (Figure 8D). Again, the most informative features were the distance to the neuromast center and the distance to the mantle cells (Figure 8E, Figure 8—figure supplement 3). SM/MM divisions occur consistently at the outer perimeter of the neuromast (Figure 8F), whereas HH divisions take place near the center. Self-renewing SS divisions occupy the area between HH and SM/MM divisions. Interestingly, SM/MM divisions were never seen in the anterior-most region of the organ, suggesting that progenitor sustentacular cells are routed into generating mantle cells specifically in the perimetral areas that lack mantle cells but not elsewhere. Therefore, regenerating neuromasts appear to sense cell-class composition and route cellular differentiation in a spatially regulated manner to regain cell-class proportion and distribution.
 
-## Discussion
+### Discussion
 
 One long-standing goal of biological research is to understand the regeneration of tissues that are exposed to persistent environmental abrasion. Here we address this problem by developing a quantitative approach based on videomicroscopic cell tracking, cell-lineage tracing, and machine learning to identify features that predict cell-fate choices during organ regeneration. Using the superficial neuromasts in zebrafish, we demonstrate that a remarkably small group of resident cells suffices to rebuild a functional organ following severe disruption of tissue integrity. Our findings reveal that the sustentacular-cell population is tri-potent, and suggest that integral organ recovery emerges from multicellular organization employing minimal extrinsic information. Below, we discuss the evidence that supports these conclusions.
 
@@ -102,36 +277,42 @@ After the severest of injuries, regenerated neuromasts were plane polarized in a
 
 Our results beg the question of whether neuromast cells self-organize. Our operational definition of self-organization is an ‘autonomous increase in order by the sole interaction of the elements of the system’ (Haken, 1983), implying that a cellular collective organizes a complex structure without the influence of external morphogenetic landmarks, patterning cues, or pre-existent differential gene-expression profiles. If these conditions are not met, cellular groups may nevertheless form a complex structure through a process of ‘self-assembly’ (Sasai, 2013; Turner et al., 2016). The reduction of neuromasts to around 5% of their original size shows that intact resident cells can rapidly recreate their original microenvironment to rebuild a neuromast with normal organization, proportions and polarity. Although these observations suggest autonomy, extrinsic sources of information including the extracellular matrix that remains intact after cell loss may serve as a blueprint for epithelial organization. Yet, unless such patterns are rebuilt together with the organ, neuromasts architecture and proportions would depend on the area occupied by the regrowing epithelium. In other words, cell-fate acquisition and cell-class distribution must be tissue-size dependent. However, we show that neuromast regain geometric order as early as 2 days after injury, when their cellular content is less than 60% of the original. Although our results do not irrefutably demonstrate self-organization during neuromast regeneration, they strongly support this idea. We argue that self-organization is an optimal morphogenetic process to govern organ repair because (i) it requires the least amount of previous information and (ii) it is robust to run-off signals that could lead to catastrophic failure.
 
-## Conclusions
+### Conclusions
 
 Understanding how tissues respond to the inherently random nature of injury to recapitulate their architecture requires the identification of cues and signals that determine cell-fate acquisition, localization and three-dimensional organization. Here we reveal an archetypal sensory organ endowed with isotropic regenerative ability and responses that comply to damage severity, nature and localization. An important corollary of our findings is that progenitor behavior is a facultative status that every sustentacular cell can acquire or abandon during regeneration (Blanpain and Fuchs, 2014; Wymeersch et al., 2016). Importantly, we illustrate a machine learning implementation to identify features that predict cell-fate choices during tissue growth and morphogenesis. This quantitative approach is simple and model-independent, which facilitates its application to other organs or experimental systems to understand how multiple cells interact dynamically during organogenesis and organ regeneration in the natural context of the whole animal, and to identify how divergences from the normal regenerative processes lead to failed tissue repair.
 
 ## Materials and methods
 
-## Zebrafish strains and husbandry
+### Zebrafish strains and husbandry
 
 Zebrafish were maintained under standard conditions, and experiments were performed in accordance with protocols approved by the PRBB Ethical Committee of Animal Experimentation of the PRBB Barcelona, Spain. Eggs were collected from natural spawning and maintained at 28.5°C in Petri dishes at a density of up to 50 per dish. Transgenic lines used were ET(krt4:EGFP)SqGw57A (referred to in the text as SqGw57A) (Kondrychyn et al., 2011), ET(krt4:EGFP)SqET4 (SqET4) (Parinov et al., 2004), Tg[Myo6b:actb1-EGFP] (Kindt et al., 2012), Tg[−8.0cldnb:Lyn-EGFP] (Cldnb:lynGFP) (Haas and Gilmour, 2006), Tg[Alpl:mCherry] (Steiner et al., 2014), Tg[Sox2-2a-sfGFPstl84] (referred to as Sox2:GFP) (Shin et al., 2014). To label cell nuclei, in vitro transcribed capped RNA coding for histone 2B-mCherry was injected in 1–4 cell embryos at a concentration of 100 ng/μl (Rosen et al., 2009). Throughout the study, zebrafish larvæ were anesthetized with a 610 µM solution of the anesthetic 3-aminobenzoic acid ethyl ester (MS-222).
 
-## Laser-mediated cell ablations
+### Laser-mediated cell ablations
 
 For in toto cell ablation, we used the iLasPulse laser system (Roper Scientific SAS, Evry, France) mounted on a Zeiss Axio Observer inverted microscope equipped with a 63X water-immersion objective (N.A. = 1.2) (Xiao et al., 2015). The same ablation protocol was used for all experiments using five dpf larvæ. Briefly, zebrafish larvæ were anesthetized, mounted on a glass-bottom dish and embedded in 1% low-melting point agarose. Three laser pulses (355 nm, 400 ps/2.5 μJ per pulse) were applied to each target cell. After beam delivery, larvæ were removed from the agarose and placed in anesthesia-free embryo medium. All ablations were systematically performed on the L2 or L3 posterior lateral-line neuromasts, except for those in Figure 6F, for which we targeted the LII.2 neuromast.
 
-## Phalloidin staining
+### Phalloidin staining
 
 Samples were fixed in 4% PFA overnight at 4°C, washed several times in 0.1% PBSTw and incubated in phalloidin-Alexa 568 or Alexa 488 (Invitrogen) diluted 1:20 in 0.1% PBSTw overnight at 4°C. Samples were washed several times in 0.1% PBSTw and mounted in 0.1% PBSTw with Vectashield (1/100, Vector Labs, Burlingame, CA, USA).
 
-## Regeneration analysis and quantification
+### Regeneration analysis and quantification
 
 For quantification of cell numbers during neuromast regeneration, Tg[Cldnb:lynGFP; SqGw57A; Alpl:mCherry] zebrafish larvæ were anesthetized, mounted on a glass-bottom dish and embedded in 1% low-melting point agarose. All samples were imaged before injury, 4 hpi and every 24 hr up to 7 dpi with an inverted spinning-disc confocal microscope (Zeiss by Visitron), under a 63X water-immersion objective. After imaging, larvæ were quickly transferred to anesthetic-free medium. Cells were manually counted using the FIJI multi-point tool by scrolling throughout the entire volume of the neuromast. Cell classes were identified by the following criteria: Interneuromast cells: Cldnb:lynGFP(+), SqGw57A(-), Alpl:mCherry(+). Mantle cells: Cldnb:lynGFP(+), SqGw57A(+), Alpl:mCherry(+). Sustentacular cells: Cldnb:lynGFP(+), SqGw57A(+), Alpl:mCherry(-). Hair cells: Cldnb:lynGFP(+), SqGw57A(-), Alpl:mCherry(-). Hair cell identity was verified by the concomitant observation of the correct transgene expression pattern, central-apical location and the presence of a hair-cell bundle. Data was processed and analyzed using GraphPad Prism version 6.04 for Windows (GraphPad Software, La Jolla, CA, USA, www.graphpad.com). In the box plots, the boundary of the box closest to zero indicates the 25th percentile (q1), a black line within the box marks the median, and the boundary of the box farthest from zero indicates the 75th percentile (q3). Whiskers above and below the box include points that are not outliers. Points are considered as outliers if they are bigger than q3 + 1.5(q3 – q1) or smaller than q1 – 1.5(q3 – q1).
 
-## Videomicroscopy, cell tracking and lineage tracing
+### Videomicroscopy, cell tracking and lineage tracing
 
 Larvæ were anesthetized, mounted onto a glass-bottom 3 cm Petri dish (MatTek) and covered with 1% low-melting point agarose with diluted anesthetic. Z-stack series were acquired every 15 min at 28.5°C using a 63X water-immersion objective. Cells were tracked overtime using volumetric Z-stack images with FIJI plugin MTrackJ (Meijering et al., 2012). Movies were registered two times for image stabilization and centered upon the centroid of the surviving group of cells and the subsequent regenerating organs. Founder cells are identified from 1 to 6 (n) and their daughter cells receive 2 n and 2n + 1 identities. All images were processed with the FIJI software package.
 
-## Pharmacology
+### Pharmacology
 
 All pharmacological treatments were performed as described previously (López-Schier and Hudspeth, 2006; Wibowo et al., 2011; Pinto-Teixeira et al., 2015). Briefly, the following concentrations and timings used were: Neomycin sulfate (Sigma, St. Louis, MO) 250 µM for 45 min; N-[N-(3,5-difluorophenacetyl)-L-alanyl]-S-phenylglycine-t-butyl ester (DAPT) (Sigma) 100 µM for 24–48 hr. Equal amounts of DMSO were diluted in embryo medium for control specimens.
 
-## Random forest prediction
+### Random forest prediction
 
-Random forest algorithms use the majority vote of numerous decision trees based on selected features to predict choices between given outcomes (Murphy, 2012). We used a list of spatial, movement and neighborhood features (see Suppl. Table 1) to perform the random forest prediction of fate choice. We trained the random forest on 14 experiments and tested our prediction on one left-out experiment in a round robin fashion, leading to 15 test sets overall. To evaluate our prediction, we calculated Matthews correlation coefficient (MCC) (Matthews, 1975), which accounts for imbalance in our data (e.g. 78% of all divisions are SS divisions). The MCC is calculated by:MCC=TP × TN − FP × FN(TP + FP)(TP + FN)(TN + FP)(TN + FN)where TP denotes true positive, TN true negative, FP true positive and FN false negative predictions. The MCC can have values between −1 and +1, where −1 is a completely incorrect, 0 a random and +1 a perfect prediction. To evaluate the variance of the MCC on the 15 test sets we used a bootstrapping approach, where we draw 15 samples from all test sets with replacement 15 times. From this resampled data we calculated the mean MCC and the standard deviation as shown in Figure 8B and D. All machine-learning analyses were performed using MATLAB (Version 2015b on a Windows 7 machine)
+Random forest algorithms use the majority vote of numerous decision trees based on selected features to predict choices between given outcomes (Murphy, 2012). We used a list of spatial, movement and neighborhood features (see Suppl. Table 1) to perform the random forest prediction of fate choice. We trained the random forest on 14 experiments and tested our prediction on one left-out experiment in a round robin fashion, leading to 15 test sets overall. To evaluate our prediction, we calculated Matthews correlation coefficient (MCC) (Matthews, 1975), which accounts for imbalance in our data (e.g. 78% of all divisions are SS divisions). The MCC is calculated by:
+
+$$
+MCC=\frac{TP \times TN − FP \times FN}{\sqrt{(TP + FP)(TP + FN)(TN + FP)(TN + FN)}}
+$$
+
+where TP denotes true positive, TN true negative, FP true positive and FN false negative predictions. The MCC can have values between −1 and +1, where −1 is a completely incorrect, 0 a random and +1 a perfect prediction. To evaluate the variance of the MCC on the 15 test sets we used a bootstrapping approach, where we draw 15 samples from all test sets with replacement 15 times. From this resampled data we calculated the mean MCC and the standard deviation as shown in Figure 8B and D. All machine-learning analyses were performed using MATLAB (Version 2015b on a Windows 7 machine)

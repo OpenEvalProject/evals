@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.24573.001 Motor cortical beta oscillations have been reported for decades, yet their behavioral correlates remain unresolved. Some studies link beta oscillations to changes in underlying neural activity, but the specific behavioral manifestations of these reported changes remain elusive. To investigate how changes in population neural activity, beta oscillations, and behavior are linked, we recorded multi-scale neural activity from motor cortex while three macaques performed a novel neurofeedback task. Subjects volitionally brought their beta oscillatory power to an instructed state and subsequently executed an arm reach. Reaches preceded by a reduction in beta power exhibited significantly faster movement onset times than reaches preceded by an increase in beta power. Further, population neural activity was found to shift farther from a movement onset state during beta oscillations that were neurofeedback-induced or naturally occurring during reaching tasks. This finding establishes a population neural basis for slowed movement onset following periods of beta oscillatory activity. DOI: http://dx.doi.org/10.7554/eLife.24573.001
+Motor cortical beta oscillations have been reported for decades, yet their behavioral correlates remain unresolved. Some studies link beta oscillations to changes in underlying neural activity, but the specific behavioral manifestations of these reported changes remain elusive. To investigate how changes in population neural activity, beta oscillations, and behavior are linked, we recorded multi-scale neural activity from motor cortex while three macaques performed a novel neurofeedback task. Subjects volitionally brought their beta oscillatory power to an instructed state and subsequently executed an arm reach. Reaches preceded by a reduction in beta power exhibited significantly faster movement onset times than reaches preceded by an increase in beta power. Further, population neural activity was found to shift farther from a movement onset state during beta oscillations that were neurofeedback-induced or naturally occurring during reaching tasks. This finding establishes a population neural basis for slowed movement onset following periods of beta oscillatory activity.
 
 ## Introduction
 
@@ -31,25 +31,66 @@ Here, we report both changes in motor behavior following performance of neurofee
 
 ## Results
 
-## Subjects perform a neurofeedback-reaching task above chance level
+### Subjects perform a neurofeedback-reaching task above chance level
 
-To explore how beta oscillations reflect changes in spiking activity and movement parameters, we trained three macaque monkeys to perform a typical center-out arm-reaching task (CO task,
+To explore how beta oscillations reflect changes in spiking activity and movement parameters, we trained three macaque monkeys to perform a typical center-out arm-reaching task (CO task, Figure 1a), and a novel sequential beta neurofeedback arm-reaching task (NR task, Figure 1b). Prior to training subjects to perform the NR task, beta frequency band limits used in the neurofeedback portion of the NR task were computed from the CO task. A movement onset-aligned trial-averaged spectrogram from the intracortical recordings in contralateral motor and premotor cortex (e.g. Monkey C in Figure 1d) showed that the clearest movement-related desynchronization was in the 25–40 Hz band for all monkeys, consistent with early reports of beta oscillations in the macaque motor cortex (Baker et al., 1997; Murthy and Fetz, 1992). Thus, the beta band limits for the neurofeedback epoch of the NR task were set at 25–40 Hz.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/24573/elife-24573-fig1-v2.jpg)
 
-**Figure 1.:** (a) Timeline of center-out reaching task (CO task) with variable hold times (200–800 ms) (b) Timeline of neurofeedback-reaching task (NR task), where blue text indicates the neurofeedback epoch and green text indicates the reaching epoch. (c) The NR task feedback loop. Subjects keep their right hand held in a central target throughout the task. They are then shown a single beta target (shown in yellow here) and beta cursor (shown in gray here) on the screen. The cursor has a fixed horizontal position and a vertical position that is updated every 100 ms. Once the beta cursor is held in the beta target for 450 ms, the beta cursor and beta target disappear and the subject reaches to a peripheral target 6.5 cm away. (d) Trial-averaged spectrogram of movement onset aligned motor cortical LFP signals for Monkey C, with a mean 1/f trend estimated with first-order linear regression and subtracted away. The white box highlights the beta desynchronization in the 25–40 Hz range. (e) All three subjects perform the neurofeedback epoch part of the task above chance. The x axis corresponds to all trials from all sessions concatenated. Each point corresponds to a session and each point’s position on the x axis corresponds to the first trial that falls within that session. Position on the Y axis indicates standard deviations above mean chance level (shown by the black dotted line). (f) Illustration of the metric termed movement-onset time (MOT) throughout the text. Trial-averaged hand speed in the direction of the target is shown in blue with an arrow pointing out the time of maximum hand speed. To find the MOT, step backward in time along the hand speed trace until the hand speed falls below 20% of the maximum speed value. (g) 100 trials (rows) of hand speed are shown, where time prior to 0.0 s is the neurofeedback epoch and time after 0.0 s is the reaching epoch in (b). Black dots indicate the calculated MOT. Increasing blue corresponds to increasing hand speed.DOI: http://dx.doi.org/10.7554/eLife.24573.003
+**Figure 1.:** (a) Timeline of center-out reaching task (CO task) with variable hold times (200–800 ms) (b) Timeline of neurofeedback-reaching task (NR task), where blue text indicates the neurofeedback epoch and green text indicates the reaching epoch. (c) The NR task feedback loop. Subjects keep their right hand held in a central target throughout the task. They are then shown a single beta target (shown in yellow here) and beta cursor (shown in gray here) on the screen. The cursor has a fixed horizontal position and a vertical position that is updated every 100 ms. Once the beta cursor is held in the beta target for 450 ms, the beta cursor and beta target disappear and the subject reaches to a peripheral target 6.5 cm away. (d) Trial-averaged spectrogram of movement onset aligned motor cortical LFP signals for Monkey C, with a mean 1/f trend estimated with first-order linear regression and subtracted away. The white box highlights the beta desynchronization in the 25–40 Hz range. (e) All three subjects perform the neurofeedback epoch part of the task above chance. The x axis corresponds to all trials from all sessions concatenated. Each point corresponds to a session and each point’s position on the x axis corresponds to the first trial that falls within that session. Position on the Y axis indicates standard deviations above mean chance level (shown by the black dotted line). (f) Illustration of the metric termed movement-onset time (MOT) throughout the text. Trial-averaged hand speed in the direction of the target is shown in blue with an arrow pointing out the time of maximum hand speed. To find the MOT, step backward in time along the hand speed trace until the hand speed falls below 20% of the maximum speed value. (g) 100 trials (rows) of hand speed are shown, where time prior to 0.0 s is the neurofeedback epoch and time after 0.0 s is the reaching epoch in (b). Black dots indicate the calculated MOT. Increasing blue corresponds to increasing hand speed.
 
 Subjects were then trained to perform the NR task. Trials were initiated by moving the right arm (co-located with a cursor on a screen) such that the cursor fell within a central target. Holding in the center target initiated the neurofeedback epoch where a beta neurofeedback cursor and one of four possible beta neurofeedback targets appeared on the screen (all blue text in Figure 1b falls in the neurofeedback epoch). Subjects modulated endogenous motor cortical local field potential signals to move the vertical position of the beta cursor. Specifically, the cursor was controlled by a spectral estimate of beta band power normalized by a spectral estimate of broadband (1–100 Hz) power (see Materials and methods – Calculation of beta neurofeedback cursor). Indeed, modulation of non-beta frequency bands can influence the position of the beta cursor through the normalization factor, a point discussed in detail later in the experimental findings. When the beta cursor fell in the beta target, subjects were required to hold within the beta target for 450 ms. After successful completion, both the beta cursor and beta target disappeared, cueing that the reaching epoch had begun (all green text in Figure 1b falls in the reaching epoch). Subjects then executed a right-arm reach from the central target to a peripheral target to receive a liquid reward.
 
-When monkeys were first exposed to the task, their time to successfully complete the neurofeedback epoch improved over days. After ~1 week of training per subject, performance plateaued and the beta power to cursor mapping was fixed (see Table 1), and subjects completed 3–10 days of executing several 10–40 min sessions of the NR task. Only data from the days with the fixed mapping are presented. During NR task performance from these days, subjects exhibited above chance performance (Figure 1e, see Materials and methods - Chance level performance of beta neurofeedback epoch). Monkeys achieved average success rates of 60% and performed on average ~4 successful trials per minute. Errors almost entirely came from accidentally moving the right hand outside the center target during the neurofeedback epoch.10.7554/eLife.24573.004Table 1.Normalized Beta Values Needed to Reach Center of Each Beta TargetDOI: http://dx.doi.org/10.7554/eLife.24573.004Target locationMonkey SMonkey CMonkey G High0.320.340.23 Med-High0.250.260.18 Med-Low0.170.180.13 Low0.100.110.07
+When monkeys were first exposed to the task, their time to successfully complete the neurofeedback epoch improved over days. After ~1 week of training per subject, performance plateaued and the beta power to cursor mapping was fixed (see Table 1), and subjects completed 3–10 days of executing several 10–40 min sessions of the NR task. Only data from the days with the fixed mapping are presented. During NR task performance from these days, subjects exhibited above chance performance (Figure 1e, see Materials and methods - Chance level performance of beta neurofeedback epoch). Monkeys achieved average success rates of 60% and performed on average ~4 successful trials per minute. Errors almost entirely came from accidentally moving the right hand outside the center target during the neurofeedback epoch.
 
-## The neurofeedback epoch results in varying levels of initial beta power prior to reaching
+**Table 1.**
+ Normalized Beta Values Needed to Reach Center of Each Beta Target
 
-The neurofeedback epoch accomplished the goal of bringing beta power to different levels shown by plotting mean normalized beta power for the last 1 s of the neurofeedback epoch and the first 0.5 s of the reach epoch for rewarded trials to each of the four beta targets (
+
+<table>
+  <thead>
+    <tr>
+      <th>Target location</th>
+      <th>Monkey S</th>
+      <th>Monkey C</th>
+      <th>Monkey G</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>High</td>
+      <td>0.32</td>
+      <td>0.34</td>
+      <td>0.23</td>
+    </tr>
+    <tr>
+      <td>Med-High</td>
+      <td>0.25</td>
+      <td>0.26</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>Med-Low</td>
+      <td>0.17</td>
+      <td>0.18</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>Low</td>
+      <td>0.10</td>
+      <td>0.11</td>
+      <td>0.07</td>
+    </tr>
+  </tbody>
+</table>
+
+### The neurofeedback epoch results in varying levels of initial beta power prior to reaching
+
+The neurofeedback epoch accomplished the goal of bringing beta power to different levels shown by plotting mean normalized beta power for the last 1 s of the neurofeedback epoch and the first 0.5 s of the reach epoch for rewarded trials to each of the four beta targets (Figure 2a–c, averages over all trials, Monkey S: n = 1184, Monkey C: total n = 2328, Monkey G: n = 1042). The first vertical red line indicates the end of the neurofeedback epoch, or go cue for the reaching epoch. The second vertical red line indicates the mean movement-onset time of the reach. The mean normalized beta power of CO trials is shown in black for reference. At the time of the go cue there is a significant group difference in normalized beta power for the four different neurofeedback target conditions (two-tailed Kruskal-Wallis test, Monkey S: n = 1184, H = 47.44, p=2.803e-10, Monkey C: n = 2328, H = 250.1, p<5e-20, Monkey G: n = 1042, H = 48.11, p=2.023e-10).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/24573/elife-24573-fig2-v2.jpg)
 
-**Figure 2.:** (a–c) Mean (s.e.m) of normalized beta power for Monkeys S, C, and G aligned to the end of the neurofeedback epoch. High, mid-high, mid-low, and low beta targets are in red, yellow, blue, and green, and go-cue aligned CO trials are in black for reference. (d–f) Z-scored PSDs estimated from a time slice 0.8 s prior to the end of the neurofeedback epoch (labeled as 0.0 s in a-c) and 0.2 s after the end of the neurofeedback epoch. This time slice is marked in gray below the time axis in (a).DOI: http://dx.doi.org/10.7554/eLife.24573.005
+**Figure 2.:** (a–c) Mean (s.e.m) of normalized beta power for Monkeys S, C, and G aligned to the end of the neurofeedback epoch. High, mid-high, mid-low, and low beta targets are in red, yellow, blue, and green, and go-cue aligned CO trials are in black for reference. (d–f) Z-scored PSDs estimated from a time slice 0.8 s prior to the end of the neurofeedback epoch (labeled as 0.0 s in a-c) and 0.2 s after the end of the neurofeedback epoch. This time slice is marked in gray below the time axis in (a).
 
 To assess how subjects co-modulate other frequency bands in addition to the beta band, and to ensure that the beta cursor changes were not a product of the normalization in Figure 2a–c, non-normalized, z-scored power spectral densities (PSDs) were computed over the last 0.8 s of the neurofeedback epoch to the first 0.2 s of the reaching epoch (total window is 1.0 s), as shown in Figure 2d–f. Mean traces show that high and low beta targets were achieved by increasing and decreasing beta power, respectively. As calculation of the beta cursor position involved an estimate of broadband power, changes in non-beta frequencies also affected beta cursor position. In some subjects (Monkeys C, G), increases and decreases in beta power were accompanied by reliable decreases and increases in low frequencies (1–10 Hz).
 
@@ -57,51 +98,180 @@ A final time-domain metric was computed to confirm that the occurrence of beta o
 
 These three metrics (normalized beta power in Figure 2a–c, non-normalized PSDs in Figure 2d–f, and percentage of time labeled as on-beta) demonstrate that the neurofeedback epoch served to increase and decrease beta oscillatory power prior to the arm-reaching epoch.
 
-## Reduced beta power precedes faster movement onset times
+### Reduced beta power precedes faster movement onset times
 
-In the NR task, movement onset times, movement onset speed, peak reach speed, and movement onset acceleration were calculated for the reaching epoch of each successfully completed trial from days with a fixed beta-to-cursor transform. The two-tailed nonparametric Wilcoxon-like Cuzick’s test was used to test for increasing or decreasing ordering of each metric across the four beta target groups (see Materials and methods – Ordering statistics). We tested whether rewarded trials preceded by low, mid-low, mid-high, and high beta targets exhibit increasing or decreasing behavioral metrics. In all three animals, trials with high beta power targets had subsequent reaches with slower movement onset times (
+In the NR task, movement onset times, movement onset speed, peak reach speed, and movement onset acceleration were calculated for the reaching epoch of each successfully completed trial from days with a fixed beta-to-cursor transform. The two-tailed nonparametric Wilcoxon-like Cuzick’s test was used to test for increasing or decreasing ordering of each metric across the four beta target groups (see Materials and methods – Ordering statistics). We tested whether rewarded trials preceded by low, mid-low, mid-high, and high beta targets exhibit increasing or decreasing behavioral metrics. In all three animals, trials with high beta power targets had subsequent reaches with slower movement onset times (Figure 3a–c, two-tailed Cuzick’s test, Monkey S: z = 5.763, p=8.267e-09, n = 1183, Monkey C: z = 11.987, p<5e-20, n = 2168, Monkey G: z = 5.856, p=4.729e-09, n = 1028). Note that trials with movement onset times greater than 0.7 s or less than 0.0 s were removed from this and all subsequent analyses (Monkey S: 1 trial, Monkey C: 160 trials, Monkey G: 14 trials). Other groups have found increased beta power correlated with reduced movement onset speed, peak speed, and movement onset acceleration (see Joundi et al., 2012; Pogosyan et al., 2009). We did not find this consistently across subjects when comparing metrics grouped based on our proxy for beta power, the preceding beta target (see Table 2).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/24573/elife-24573-fig3-v2.jpg)
 
-**Figure 3.:** (a–c) Boxplot of reaching movement onset times grouped by preceding beta target. Subjects exhibit an increase in movement onset time (MOT) when modulating normalized beta power to higher targets. Gray line at center of boxplot is median. ***p<5e-09, Cuzick’s two-tailed test.DOI: http://dx.doi.org/10.7554/eLife.24573.006
+**Figure 3.:** (a–c) Boxplot of reaching movement onset times grouped by preceding beta target. Subjects exhibit an increase in movement onset time (MOT) when modulating normalized beta power to higher targets. Gray line at center of boxplot is median. ***p<5e-09, Cuzick’s two-tailed test.
 
-## NR task controls
+**Table 2.**
+ Cuzick’s Test for ordered trend for reaching kinematics by beta target.
 
-## Beta target acquisition difficulty does not correlate with movement onset time
 
-To ensure the cognitive effort required to increase and decrease beta power during the neurofeedback epoch did not result in increasing movement onset time observed in
+<table>
+  <thead>
+    <tr>
+      <th>Metric</th>
+      <th>Monkey S Z-Statistic (p-value)</th>
+      <th>Monkey C Z-Statistic (p-value)</th>
+      <th>Monkey G Z-Statistic (p-value)</th>
+      <th>Combined Z-Statistic (p-value)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Onset Speed</td>
+      <td>1.378 (p=0.168)</td>
+      <td>-3.593 (***)</td>
+      <td>0.0734 (p=0.941)</td>
+      <td>-1.244 (p=0.2134)</td>
+    </tr>
+    <tr>
+      <td>Peak Speed</td>
+      <td>4.476 (***)</td>
+      <td>4.142 (***)</td>
+      <td>-1.330 (p=0.187)</td>
+      <td>1.834 (p=0.06670)</td>
+    </tr>
+    <tr>
+      <td>Onset Acceleration</td>
+      <td>1.901 (p=0.0573)</td>
+      <td>2.573 (*)</td>
+      <td>0.159 (p=0.873)</td>
+      <td>0.818 (p=0.4135)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*p<0.05, **p<0.01, ***p<0.001, Cuzick’s two-tailed test for ordered grouping. Monkey S: n = 1183, Monkey C: n = 2168, Monkey G: n = 1028, Combined: n = 4379_
+
+### NR task controls
+
+#### Beta target acquisition difficulty does not correlate with movement onset time
+
+To ensure the cognitive effort required to increase and decrease beta power during the neurofeedback epoch did not result in increasing movement onset time observed in Figure 3, we compared the amount of time it took to acquire each beta target as an approximate measure of each target’s difficulty. For Monkeys S and G the time to acquire beta target did not significantly predict MOT in a linear regression, but it did for Monkey C and when data were combined across monkeys (Figure 4a–c two-sided Student’s t-test for non-zero slope in linear regression, Monkey S: t = 0.7119, p=0.476, n = 1183, Monkey C: t = 2.352, p=0.0188, n = 2168, Monkey G: t = 1.651, p=0.0991, n = 1028, Combined across monkeys: t = 2.0832, p=0.0373, n = 4379). When linear regression was used to predict MOT (MOTpred) from time to beta target, and was subtracted from the actual MOT (MOTres = MOT - MOTpred), increasing MOTres with increasing beta power target remained (two-tailed Cuzick’s test on MOTres, Monkey C: z = 13.191, p<5 e-20, n = 2168, Combined data across monkeys: z = 13.615, p<5e-20, n = 4379). Thus, the slight predictive power of time to beta target on MOT does not account for increasing MOT with increasing beta target, as seen in Figure 3.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/24573/elife-24573-fig4-v2.jpg)
 
-**Figure 4.:** (a–c) Movement onset time (MOT) from Figure 3 is plotted against time to beta target for Monkeys S, C, and G. Colors correspond to the beta target for that trial following the same colormap as Figures 2 and 3. Linear regression is performed to assess whether time to beta target is predictive of MOT. Non-significant p-values for Monkeys S and G show that time to beta target (interpreted as beta target difficulty) does not significantly predict MOT. Monkey C exhibits a significant relationship, but when MOTres is computed by subtracting predicted MOTs from time to beta target from actual MOT, MOTres exhibits the same increase with increasing beta target as seen in Figure 3. (d) Changing location of the arm-reaching location from 6.5 cm to the right of the central target, to 6.5 cm above the central target does not change the observed relationship between increasing movement onset times and increasing beta power target in Monkey S. (e) Inverting the vertical ordering of beta targets on the screen to make green the high-beta target, blue the mid-high beta target, yellow the mid-low beta target, and red the low beta target also shows the same increase in MOT with increased beta target as in Figure 3b. *p<0.05, **p<0.01, ***p<0.001, Cuzick’s two-tailed test for significant increases and decreases by grouping except where noted.DOI: http://dx.doi.org/10.7554/eLife.24573.008
+**Figure 4.:** (a–c) Movement onset time (MOT) from Figure 3 is plotted against time to beta target for Monkeys S, C, and G. Colors correspond to the beta target for that trial following the same colormap as Figures 2 and 3. Linear regression is performed to assess whether time to beta target is predictive of MOT. Non-significant p-values for Monkeys S and G show that time to beta target (interpreted as beta target difficulty) does not significantly predict MOT. Monkey C exhibits a significant relationship, but when MOTres is computed by subtracting predicted MOTs from time to beta target from actual MOT, MOTres exhibits the same increase with increasing beta target as seen in Figure 3. (d) Changing location of the arm-reaching location from 6.5 cm to the right of the central target, to 6.5 cm above the central target does not change the observed relationship between increasing movement onset times and increasing beta power target in Monkey S. (e) Inverting the vertical ordering of beta targets on the screen to make green the high-beta target, blue the mid-high beta target, yellow the mid-low beta target, and red the low beta target also shows the same increase in MOT with increased beta target as in Figure 3b. *p<0.05, **p<0.01, ***p<0.001, Cuzick’s two-tailed test for significant increases and decreases by grouping except where noted.
 
-## Screen location of beta targets and reach target location does not account for increasing movement onset time
+#### Screen location of beta targets and reach target location does not account for increasing movement onset time
 
 We examined whether looking at the top part of the screen (where the high power beta target is displayed) required more effort from the subjects with the possibility of slower movement onset times. In Monkey C the relationship between beta target and screen location was reversed by mapping increased beta power to the bottom of the Y-axis for a set of trials analyzed separately. For these trials, the high beta power target became the green Target 1 instead of the red Target 4. Figure 4e shows that this manipulation reverses the relationship between target number and MOT (z = −5.971, p=2.354e-09, n = 2113) demonstrating that increasing beta power, not the target position on the screen, consistently correlates with the observed increasing movement onset time.
 
 To test whether the beta target versus movement onset time relationship generalizes to more than a single arm-reaching target, Monkey S performed the original NR task, but with a different arm-reaching target location. Changing the arm-reaching target location produces the same effect (Figure 4d, Monkey S: z = 3.972, p=7.117e-05, n = 735).
 
-## Movement onset time increase is specific to beta band frequencies
+### Movement onset time increase is specific to beta band frequencies
 
-## Using other methods to compute beta power shows the same movement onset relationship
+#### Using other methods to compute beta power shows the same movement onset relationship
 
-To confirm that the correlation between lower beta power targets and faster movement onset times did not result from use of a beta cursor calculation method that normalizes beta power by total broadband power, offline we sought to account for the increase in movement onset time using a beta power calculation method that was non-normalized. Non-normalized beta power was computed in the window spanned by the last 0.8 s of the neurofeedback epoch. Trials were then re-labeled according to the quartile in which their non-normalized beta power fell (e.g., if the non-normalized beta power falls in the 0–25th percentile of all trials, the trial would be assigned to group 1). Trials with movement onset times less than 0 s or greater than 0.7 s were removed, as before. The mean movement onset time for each of these new groups is plotted for each monkey (
+To confirm that the correlation between lower beta power targets and faster movement onset times did not result from use of a beta cursor calculation method that normalizes beta power by total broadband power, offline we sought to account for the increase in movement onset time using a beta power calculation method that was non-normalized. Non-normalized beta power was computed in the window spanned by the last 0.8 s of the neurofeedback epoch. Trials were then re-labeled according to the quartile in which their non-normalized beta power fell (e.g., if the non-normalized beta power falls in the 0–25th percentile of all trials, the trial would be assigned to group 1). Trials with movement onset times less than 0 s or greater than 0.7 s were removed, as before. The mean movement onset time for each of these new groups is plotted for each monkey (Figure 5a–c, darkest and lightest bars correspond to lowest and highest non-normalized power, respectively). All three monkeys exhibit significantly increasing movement onset times with increasing non-normalized beta power (two-tailed Cuzick’s test, Monkey S, z = 7.162, p=7.945e-13, n = 1183, Monkey C, z = 7.767, p=7.994e-15, n = 2168, Monkey G, z = 7.709 p=1.266e-14, n = 1028, Combined across monkeys: z = 6.168, p=6.924e-10, n = 4379).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/24573/elife-24573-fig5-v2.jpg)
 
-**Figure 5.:** (a–c) Trials from Monkeys S, C, G were re-labeled as low, mid-low, mid-high, and high according to the non-normalized beta power during time slice −0.8 to 0.0 s with respect to the end of the neurofeedback epoch. The movement onset times (MOTs) of the re-labeled trials were compared and the mean (s.e.m) are plotted in each subplot. Below titles, p-values are shown for Cuzick’s test. (d–f) The same as (a-c) except using normalized non-beta frequencies indicated at the top of plots. (g) Right shows MOTs for version of task where the X axis position of the cursor is controlled by normalized 1–10 Hz power in addition to the Y axis position controlled by normalized 25–40 Hz power. Note that Cuzick’s test for the right plot assumes ordering of targets is mid-low, mid-high, high, low (instead of low, mid-low, mid-high, high). Left, same MOT plot for Monkey G from Figure 3c for comparison. (h, i) Z scored PSD plots (same method as Figure 2d–f) for different beta targets in the standard beta neurofeedback task (h), and the neurofeedback task that incorporates 1-10 Hz power modulation to control X axis position (i). Dotted lines indicate that the ordering of targets in the beta range follows the movement onset time ordering in (g). (j) Percent of time points within the last 0.8 s of the neurofeedback epoch that are part of beta oscillatory episodes during the task requiring both beta and 1–10 Hz control. *p<0.05, **p<0.01, ***p<0.001, Cuzick’s two-tailed test for ordered grouping.DOI: http://dx.doi.org/10.7554/eLife.24573.009
+**Figure 5.:** (a–c) Trials from Monkeys S, C, G were re-labeled as low, mid-low, mid-high, and high according to the non-normalized beta power during time slice −0.8 to 0.0 s with respect to the end of the neurofeedback epoch. The movement onset times (MOTs) of the re-labeled trials were compared and the mean (s.e.m) are plotted in each subplot. Below titles, p-values are shown for Cuzick’s test. (d–f) The same as (a-c) except using normalized non-beta frequencies indicated at the top of plots. (g) Right shows MOTs for version of task where the X axis position of the cursor is controlled by normalized 1–10 Hz power in addition to the Y axis position controlled by normalized 25–40 Hz power. Note that Cuzick’s test for the right plot assumes ordering of targets is mid-low, mid-high, high, low (instead of low, mid-low, mid-high, high). Left, same MOT plot for Monkey G from Figure 3c for comparison. (h, i) Z scored PSD plots (same method as Figure 2d–f) for different beta targets in the standard beta neurofeedback task (h), and the neurofeedback task that incorporates 1-10 Hz power modulation to control X axis position (i). Dotted lines indicate that the ordering of targets in the beta range follows the movement onset time ordering in (g). (j) Percent of time points within the last 0.8 s of the neurofeedback epoch that are part of beta oscillatory episodes during the task requiring both beta and 1–10 Hz control. *p<0.05, **p<0.01, ***p<0.001, Cuzick’s two-tailed test for ordered grouping.
 
 The same trial re-labeling procedure was performed except instead of relabeling by non-normalized beta power, trials were re-labeled by the percentage of on-beta time points in the last 0.8 sec of the neurofeedback epoch using the previously explained time-domain method. Indeed, the same increase in movement onset time follows where trials with a larger percentage of on-beta time points exhibit slower movement onset times (two-tailed Cuzick’s test, Monkey S, z = 7.575, p=3.597e-14, n = 1183, Monkey C, z = 5.488, p=4.068e-08, n = 2168, Monkey G, z = 7.890, p=3.108e-15, n = 1028, Combined across monkeys z = 5.1301, p=2.895e-07, n = 4379). Thus, the relationship between increasing beta target and increasing MOT is not dependent on the normalized beta power computation method used in the NR task, and withstands when using a non-normalized or a time domain beta power computation method.
 
-## Non-beta frequencies are co-modulated during the beta neurofeedback epoch of task
+#### Non-beta frequencies are co-modulated during the beta neurofeedback epoch of task
 
 As the neurofeedback epoch requires control of normalized beta power, it is possible for subjects to have neurofeedback strategies that involve modulation of non-beta frequency bands to move the cursor. Using the same trial re-labeling procedure as described above, individual trial labels were re-assigned depending on normalized power in non-beta frequency bands (1–10 Hz, 10–25 Hz, 40–65 Hz, and 65–100 Hz) for the same time window as above. The resulting movement onset times are plotted by re-labeled group, frequency band, and monkey in Figure 5d–f. Increasing 10-25 Hz power correlates with increasing MOT (two-tailed Cuzick’s test, Monkey S 10–25 Hz: z = −0.6660, p=0.5054, n = 1183, Monkey C 10–25 Hz: z = 5.717, p=1.082e-08, n = 2168, Monkey G 10–25 Hz: z = 5.477, p=4.33e-08, n = 1028, Combined across monkeys 10–25 Hz: z = 2.9728, p=2.951e-03, n = 4379). The consistent ordering in the 10–25 Hz band (increased power correlated with increased MOT) is likely caused by the natural beta band for each animal extending into frequencies below 25 Hz. Figure 2d–f shows that Monkey C and Monkey G exhibit power trends in frequencies lower than 25 Hz that match those in the 25–40 Hz range. The 65–100 Hz (gamma) band does exhibit consistently decreasing power for higher beta targets across monkeys (two-tailed Cuzick’s test, Monkey S: z = −5.0279, p=4.96e-07, n = 1183, Monkey C: z = −4.227, p=2.368e-05, n = 2168, Monkey G: z = −1.775, p=0.0759, n = 1028, Combined across monkeys z = −3.1079, p=1.884e-03, n = 4379). Indeed, beta power and gamma power have been shown to be anti-correlated in motor-related regions during tasks involving movement (Courtemanche et al., 2003; Schoffelen et al., 2005), in prefrontal cortex during working memory tasks (Lundqvist et al., 2016), and in parkinsonian subjects at rest (Fogelson et al., 2005). Increased gamma power could be a physiological pattern that emerges with reduced beta power. It is unlikely that subjects are relying on changes in gamma power, which would change the denominator term in the beta cursor computation, to drive their neurofeedback strategy as gamma power constitutes less than 3% of the total broadband estimate (Table 4).
 
-The correlation between increased gamma power and reduced MOT was further investigated using model selection analysis. MOTs were linearly estimated using normalized gamma power as a predictor (Model 2, Table 3), or normalized beta power as a predictor (Model 1, Table 3), or both normalized gamma power and normalized beta power as predictors (Model 4, Table 3) from the last 0.8 s of the neurofeedback epoch. The normalized beta power model explained more MOT variance than the normalized gamma power model (Table 3), and the F-test demonstrated that adding normalized beta power as a predictor in a model with normalized gamma power resulted in significant improvement (Model 2 vs. Model 4, Table 3). Thus, while gamma power is negatively correlated with MOT, beta power explains more MOT variance than gamma power, and addition of beta power to a model predicting MOT with gamma power significantly improves prediction.10.7554/eLife.24573.010Table 3.Predicting MOT with beta (β, 25-40 Hz), gamma (γ, 65-100 Hz), and non-beta frequency Low Frequency (LF, 1-10 Hz) bands.DOI: http://dx.doi.org/10.7554/eLife.24573.010R2 Model 1: MOT ~ βR2 Model 2: MOT ~ γR2 Model 3: MOT ~ LFR2 Model 4: MOT ~ β+γR2 Model 5: MOT ~ β+LFF statistic (p-value): Model 4 > Model 2F statistic (p-value): Model 5 > Model 3Monkey S0.04030.014830.0064170.058060.04321F(1181, 1180) = 54.162, p < 1e-16F(1181, 1180) = 45.373, p < 1e-16Monkey C0.01380.0043840.012530.017330.01456F(2166, 2165) = 28.531, p < 1e-16F(2166, 2165) = 4.47718, p < 1e-16Monkey G0.07670.0054670.058660.105610.07963F(1026, 1025) = 114.77, p < 1e-16F(1026, 1025) = 23.356, p < 1e-16Combined Monkeys0.043630.013830.0182040.056770.04522F(4377, 4376) = 199.20, p < 1e-16F(4377, 4376) = 123.83, p < 1e-1610.7554/eLife.24573.011Table 4.Percentage of broadband power estimate comprised by 65–100 Hz.DOI: http://dx.doi.org/10.7554/eLife.24573.011MonkeyMean (std) Percentage Monkey S2.43 +/- 1.13% Monkey C1.50 +/-0. 518% Monkey G2.14 +/-0. 825%
+The correlation between increased gamma power and reduced MOT was further investigated using model selection analysis. MOTs were linearly estimated using normalized gamma power as a predictor (Model 2, Table 3), or normalized beta power as a predictor (Model 1, Table 3), or both normalized gamma power and normalized beta power as predictors (Model 4, Table 3) from the last 0.8 s of the neurofeedback epoch. The normalized beta power model explained more MOT variance than the normalized gamma power model (Table 3), and the F-test demonstrated that adding normalized beta power as a predictor in a model with normalized gamma power resulted in significant improvement (Model 2 vs. Model 4, Table 3). Thus, while gamma power is negatively correlated with MOT, beta power explains more MOT variance than gamma power, and addition of beta power to a model predicting MOT with gamma power significantly improves prediction.
+
+**Table 3.**
+ Predicting MOT with beta (β, 25-40 Hz), gamma (γ, 65-100 Hz), and non-beta frequency Low Frequency (LF, 1-10 Hz) bands.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>R2 Model 1: MOT ~ β</th>
+      <th>R2 Model 2: MOT ~ γ</th>
+      <th>R2 Model 3: MOT ~ LF</th>
+      <th>R2 Model 4: MOT ~ β+γ</th>
+      <th>R2 Model 5: MOT ~ β+LF</th>
+      <th>F statistic (p-value): Model 4 &gt; Model 2</th>
+      <th>F statistic (p-value): Model 5 &gt; Model 3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monkey S</td>
+      <td>0.0403</td>
+      <td>0.01483</td>
+      <td>0.006417</td>
+      <td>0.05806</td>
+      <td>0.04321</td>
+      <td>F(1181, 1180) = 54.162, p &lt; 1e-16</td>
+      <td>F(1181, 1180) = 45.373, p &lt; 1e-16</td>
+    </tr>
+    <tr>
+      <td>Monkey C</td>
+      <td>0.0138</td>
+      <td>0.004384</td>
+      <td>0.01253</td>
+      <td>0.01733</td>
+      <td>0.01456</td>
+      <td>F(2166, 2165) = 28.531, p &lt; 1e-16</td>
+      <td>F(2166, 2165) = 4.47718, p &lt; 1e-16</td>
+    </tr>
+    <tr>
+      <td>Monkey G</td>
+      <td>0.0767</td>
+      <td>0.005467</td>
+      <td>0.05866</td>
+      <td>0.10561</td>
+      <td>0.07963</td>
+      <td>F(1026, 1025) = 114.77, p &lt; 1e-16</td>
+      <td>F(1026, 1025) = 23.356, p &lt; 1e-16</td>
+    </tr>
+    <tr>
+      <td>Combined Monkeys</td>
+      <td>0.04363</td>
+      <td>0.01383</td>
+      <td>0.018204</td>
+      <td>0.05677</td>
+      <td>0.04522</td>
+      <td>F(4377, 4376) = 199.20, p &lt; 1e-16</td>
+      <td>F(4377, 4376) = 123.83, p &lt; 1e-16</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Percentage of broadband power estimate comprised by 65–100 Hz.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Monkey</th>
+      <th>Mean (std) Percentage</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Monkey S</td>
+      <td>2.43 +/- 1.13%</td>
+    </tr>
+    <tr>
+      <td>Monkey C</td>
+      <td>1.50 +/-0. 518%</td>
+    </tr>
+    <tr>
+      <td>Monkey G</td>
+      <td>2.14 +/-0. 825%</td>
+    </tr>
+  </tbody>
+</table>
 
 The 1–10 Hz band also shows a consistent across-monkey decrease in movement onset time with increased power, discussed further below (two-tailed Cuzick’s test, Monkey S z = −4.290, p=1.785e-05, n = 1183, Monkey C: z = −6.8774, p=6.097 e-12, n = 2168, Monkey G: z = −8.4548, p=2.795e-17, n = 1028, Combined across monkeys z = −5.3049, p=1.127e-07, n = 4379).
 
-## Modified beta neurofeedback task shows that 1–10 Hz band power does not account for movement onset time increase
+#### Modified beta neurofeedback task shows that 1–10 Hz band power does not account for movement onset time increase
 
 The 1–10 Hz power subplot of Figure 5d–f shows reduced movement onset time with increasing 1–10 Hz power for all three subjects. To investigate whether the movement onset time increase observed truly resulted from changes in beta power and not changes in the 1–10 Hz band power, we performed an experimental manipulation as well as a regression analysis, as above with gamma power. In the experimental manipulation, Monkey G performed a NR task variant where beta power continued to move the beta cursor up and down the Y axis, but now instead of having a fixed X axis position, 1–10 Hz power controlled the cursor on the X axis. The targets were in the same positions as in the standard NR task, but now Monkey G had to ensure that his 1–10 Hz power was neither too low nor too high, or else the horizontal position of the cursor would not fall within the fixed width of the beta target. Monkey G learned this task and after 3–4 days of practice achieved similar performance to the standard NR beta-only task of 5–10 s to each beta target (see Materials and methods - NR task variant using beta band and 1–10 Hz)
 
@@ -111,7 +281,7 @@ This task variant effectively decoupled beta and 1–10 Hz power. In the origina
 
 Finally, we investigated which sub-frequency bands within the 1–10 Hz band were most closely correlated with MOT. We divided the low frequencies into the delta band (1–3 Hz), theta band (4–7 Hz), and alpha band (8–12 Hz). By performing the same analysis as in Figure 5d–f with the narrower bands, we found that delta and theta bands, but not the alpha band, strongly correlate with MOT in all three animals (Monkey S: 1–3 Hz: z = −3.276, p=1.052e-03, n = 1183, 4–7 Hz: z = −3.245, p=1.174e-03, n = 1183, 8–12 Hz: z = −1.309, p=0.1907, n = 1183, Monkey C: 1–3 Hz: z = −6.986, p=2.821e-12, n = 2168, 4–7 Hz: z = −6.133, p=8.602e-10, n = 2168, 8–12 Hz: z = −1.779, p=0.0753, n = 2168, Monkey G, 1–3 Hz: z = −8.201, p=2.379e-16, n = 1028, 4–7 Hz: z = −6.166, p=7.024e-10, n = 1028, 8–12 Hz: z = 0.0669, p=0.9467, n = 1028, Combined over monkeys: 1–3 Hz: −5.006, p=5.55e-07, n = 4379, 4–7 Hz: z = −4.355, p=1.33e-05, n = 4379, 8–12 Hz: z = −0.9782, p=0.328, n = 4379).
 
-## Comparing single- and multi-unit responses to beta oscillations during the CO and NR tasks
+### Comparing single- and multi-unit responses to beta oscillations during the CO and NR tasks
 
 If the neurofeedback-induced beta oscillations are qualitatively the same as naturally occurring beta oscillations during reaching tasks, it might be unsurprising that increasing beta power biases subjects toward slower movement onset based on previous studies. We investigate exactly how similar the beta oscillations in the different tasks are through the lens of unit neural activity.
 
@@ -119,11 +289,11 @@ On most days, subjects performed 5–10 min of the CO task prior to beginning th
 
 We assessed whether units fire at similar rates during CO task beta oscillations and NR task beta oscillations. Go cue aligned trials were aggregated for each task, with each trial lasting 2.5 s (1.5 s before go cue through 1.0 s after go cue). Unit activity was binned into 100 ms bins, yielding 25 bins per trial. For every trial, bins that were labeled as slow and on-beta were selected. The distribution of spike counts for these slow, on-beta bins from the NR task was compared with the slow, on-beta bins from the CO task. Counts from fast bins were not used in the analysis because there were very few fast bins that were also on-beta.
 
-Example mean firing rates of four consecutive on-beta time bins in a row, aligned to onset of on-beta, are shown for two example single unit recordings (unit 101a and unit 1a) from Monkey G in
+Example mean firing rates of four consecutive on-beta time bins in a row, aligned to onset of on-beta, are shown for two example single unit recordings (unit 101a and unit 1a) from Monkey G in Figure 6a, where red is the mean firing rate for NR slow, on-beta bins, and blue is the mean firing rate for CO slow, on-beta bins. Figure 6b shows the fraction of units exhibiting significantly different mean firing rates between the slow, on-beta bins from the two tasks on each day (Mann–Whitney test, p<0.05, number of units recorded per day displayed above bar). Each day, 40–60% of units from Monkey G (15–20% of units from Monkey C, inset) exhibited significantly different firing rates for NR versus CO slow, on-beta bins.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/24573/elife-24573-fig6-v2.jpg)
 
-**Figure 6.:** (a) Schematic of an LFP trace (in black) with an on-beta vs. off-beta indicator shown in green. During oscillatory events, example mean firing rates are shown for two example single units from Monkey G (unit 101a, unit 1a), where the red trace is for on-beta bins during the neurofeedback epoch and the blue trace is for slow, on-beta bins during the CO task. Graphs are aligned to starting bin of beta event. (b) For each day (main plot Monkey G: days G1 – G6, subplot Monkey C: days C1 – C4), a bar plot indicates the fraction of units that exhibit significantly different firing patterns during slow, on-beta time points in the CO and NR task assessed by the Mann–Whitney U test (p<0.05). Number of units recorded per day are printed above each bar. (c–e) Example beta amplitude-to-spike rate mappings for single-units from a day. Mappings in red are from the CO task. Mappings in blue are from the same unit on the same day during the NR task. Units can exhibit similar means but different slopes (c), similar slopes but different means (d), or different slopes and different means (e). (f, g) Stability of beta-to-rate slope estimates from subset #1 versus subset #2 of CO (f) and NR (g) tasks (main plot Monkey G, subplot Monkey C). R values indicate correlation coefficient between beta-to-rate slopes computed from subset #1 and from subset #2, averaged across days. (h) Comparison of beta-to-rate slopes from CO versus NR tasks (full set, not subset). R values indicate correlation coefficient between slopes from CO task versus slopes computed from NR task, averaged across days.DOI: http://dx.doi.org/10.7554/eLife.24573.012
+**Figure 6.:** (a) Schematic of an LFP trace (in black) with an on-beta vs. off-beta indicator shown in green. During oscillatory events, example mean firing rates are shown for two example single units from Monkey G (unit 101a, unit 1a), where the red trace is for on-beta bins during the neurofeedback epoch and the blue trace is for slow, on-beta bins during the CO task. Graphs are aligned to starting bin of beta event. (b) For each day (main plot Monkey G: days G1 – G6, subplot Monkey C: days C1 – C4), a bar plot indicates the fraction of units that exhibit significantly different firing patterns during slow, on-beta time points in the CO and NR task assessed by the Mann–Whitney U test (p<0.05). Number of units recorded per day are printed above each bar. (c–e) Example beta amplitude-to-spike rate mappings for single-units from a day. Mappings in red are from the CO task. Mappings in blue are from the same unit on the same day during the NR task. Units can exhibit similar means but different slopes (c), similar slopes but different means (d), or different slopes and different means (e). (f, g) Stability of beta-to-rate slope estimates from subset #1 versus subset #2 of CO (f) and NR (g) tasks (main plot Monkey G, subplot Monkey C). R values indicate correlation coefficient between beta-to-rate slopes computed from subset #1 and from subset #2, averaged across days. (h) Comparison of beta-to-rate slopes from CO versus NR tasks (full set, not subset). R values indicate correlation coefficient between slopes from CO task versus slopes computed from NR task, averaged across days.
 
 While many individual cells showed changes in mean firing rate during slow, on-beta bins across the two different tasks, it is possible that units could still exhibit a consistent spike rate change in response to beta amplitude changes. We used methods adapted from Canolty et al. (2012) to fit a beta amplitude-to-spike rate mapping for the NR and CO tasks to determine whether the units’ beta amplitude-to-spike rate correlations are consistent across tasks (see Materials and methods – Beta amplitude-to-spike rate mapping). Briefly, the logarithm of instantaneous beta amplitude was calculated for the entire 2.5 s trial and then correlated against the firing rate of each cell. Three example units are shown in Figure 6c–e, where the red and blue traces are the relationship between cell firing and beta amplitude for the NR and the CO tasks, respectively. Some units exhibit similar mean firing rates but different beta amplitude-to-spike rate slopes (Figure 6c), some exhibit different mean firing rates but similar beta amplitude-to-spike rate slopes (Figure 6d), and some exhibit different mean firing rates and different beta amplitude-to-spike rate slopes (Figure 6e).
 
@@ -131,19 +301,19 @@ To assess whether units exhibit similar beta amplitude-to-spike rate slopes acro
 
 Thus, the mean firing rates of units during slow, on-beta timepoints and the continuous beta amplitude-to-spike rate mappings across tasks are different for many units. Given that the behavioral effect from neurofeedback-induced beta oscillations matches well with hypotheses claiming a movement-slowing role of beta oscillations during natural movements (Gilbertson et al., 2005), it was surprising that individual unit responses during beta activity were so different across tasks.
 
-## Beta oscillations during the NR task and CO task reflect a shift in neural population activity away from a movement onset state
+### Beta oscillations during the NR task and CO task reflect a shift in neural population activity away from a movement onset state
 
 While many individual units exhibit different spiking patterns during beta oscillations in the CO and NR tasks, population-level activity across the two tasks could still exhibit consistent patterns. Specifically, as increased beta oscillations during the NR task are correlated with slower MOT times, beta oscillations may reflect a shift in neural population patterns in a way that affects movement onset. To assess how similar or different CO and NR population patterns are with respect to movement onset, and how the presence of beta oscillations affects these patterns, we trained a classifier on a single day's CO population spiking activity to discriminate bins occurring pre and post movement onset (PreMO, PostMO). We then tested the classifier's performance on the same day's NR population spiking activity to assess first whether the same CO-trained classifier successfully distinguished PreMO and PostMO in the NR task, and second how the presence of beta oscillations influenced the separation of the two labeled classes.
 
-The approach used to discriminate PreMO and PostMO neural population activity was to train a logistic regression classifier on the first two-thirds of the CO spike counts. CO spiking activity was binned in 25 ms, each unit was z-scored according to its mean and standard deviation during the CO task, and each 25 ms bin was labeled PreMO or PostMO. A logistic regression classifier was trained on the binned spike counts with an additional two bins of history (number of spike features per observation equal to three times the number of neurons, and each three-bin observation is referred to as a ‘chunk’). The trained classifier yields the probability of each chunk being PreMO and PostMO. By setting a threshold on these probabilities we can assign predicted PreMO or PostMO labels. For example, if the threshold is 0.5 and the probability of an observation being PostMO is greater than 0.5, the chunk would be assigned as PostMO. For Monkeys G and C, the best classifier performance was obtained with thresholds equal to 0.5 and 0.315, respectively, and signed distances to this movement onset threshold (MO threshold) were computed to estimate how far away a chunk’s neural state was from the state of movement onset (see Materials and methods -- Classification of PreMO and PostMO in NR and CO tasks). We found that
+The approach used to discriminate PreMO and PostMO neural population activity was to train a logistic regression classifier on the first two-thirds of the CO spike counts. CO spiking activity was binned in 25 ms, each unit was z-scored according to its mean and standard deviation during the CO task, and each 25 ms bin was labeled PreMO or PostMO. A logistic regression classifier was trained on the binned spike counts with an additional two bins of history (number of spike features per observation equal to three times the number of neurons, and each three-bin observation is referred to as a ‘chunk’). The trained classifier yields the probability of each chunk being PreMO and PostMO. By setting a threshold on these probabilities we can assign predicted PreMO or PostMO labels. For example, if the threshold is 0.5 and the probability of an observation being PostMO is greater than 0.5, the chunk would be assigned as PostMO. For Monkeys G and C, the best classifier performance was obtained with thresholds equal to 0.5 and 0.315, respectively, and signed distances to this movement onset threshold (MO threshold) were computed to estimate how far away a chunk’s neural state was from the state of movement onset (see Materials and methods -- Classification of PreMO and PostMO in NR and CO tasks). We found that actual PreMO and PostMO chunks exhibited significantly different distances to MO threshold for the held-out third of data from the CO task (Figure 7a, Blue: CO task, two-tailed Student’s t-test on mean within-day predicted probabilities for held-out CO PreMO and PostMO, Monkey G: n = 6, T = −20.899, p=4.65e-06, Monkey C (inset): n = 4, T-4.2711, p=0.0236, Combined across monkeys: n = 10, T = −4.1097, p=2.638e-03). Thus, population spike count chunks reliably encode before and after movement onset in the CO task. Note that Monkey G exhibited about an order of magnitude more reliable separation between PreMO and PostMO than Monkey C (y axis in Figure 7a), and this is likely because of the lower neural signal quality in Monkey C (implanted ~3 years prior to study without resolvable single or multi-units) than Monkey G (implanted only ~1 year prior to study, with resolvable single and multi-units).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/24573/elife-24573-fig7-v2.jpg)
 
-**Figure 7.:** (a) Distance to MO threshold for the CO (blue) and NR (red) tasks for PreMO and PostMO timepoints from Monkey G and Monkey C (inset). Bars less than and greater than zero indicate mean scores predicting PreMO and PostMO, respectively. (b) Example mean (s.e.m) of distance from MO threshold as a function of time to go cue for CO trials (black), high beta target NR trials (red), mid-high beta target NR trials (yellow), mid-low beta target NR trials (blue), and low beta target NR trials (green). At the go cue, distances to MO threshold are greatest for high beta target, and lowest for low beta targets. (c) Similar to (b) but aligned to MOT instead of go cue. Trials converge to MO threshold at MOT. (d–e) The mean distance from MO threshold for slow, preMO, off-beta and slow, preMO, on-beta timepoints during the CO (left) and NR (right) tasks for Monkey G and Monkey C, respectively. Individual lines connect mean off-beta and on-beta distances (s.e.m) for individual sessions.DOI: http://dx.doi.org/10.7554/eLife.24573.013
+**Figure 7.:** (a) Distance to MO threshold for the CO (blue) and NR (red) tasks for PreMO and PostMO timepoints from Monkey G and Monkey C (inset). Bars less than and greater than zero indicate mean scores predicting PreMO and PostMO, respectively. (b) Example mean (s.e.m) of distance from MO threshold as a function of time to go cue for CO trials (black), high beta target NR trials (red), mid-high beta target NR trials (yellow), mid-low beta target NR trials (blue), and low beta target NR trials (green). At the go cue, distances to MO threshold are greatest for high beta target, and lowest for low beta targets. (c) Similar to (b) but aligned to MOT instead of go cue. Trials converge to MO threshold at MOT. (d–e) The mean distance from MO threshold for slow, preMO, off-beta and slow, preMO, on-beta timepoints during the CO (left) and NR (right) tasks for Monkey G and Monkey C, respectively. Individual lines connect mean off-beta and on-beta distances (s.e.m) for individual sessions.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/24573/elife-24573-fig7-figsupp1-v2.jpg)
 
-**Figure 7—figure supplement 1.:** Top shows differences between classifier weight β1 for chosen and unchosen units (top) and chosen+ and chosen- units (bottom) for Monkey G (left) and Monkey C (right). Same layout for (b) beta-to-FR slope (as in Figure 6f–h), (c) CO task modulation, (d) mean firing rate, and (e) beta rhythmicity. Differences are assessed with Kruskal–Wallis test and reported along with sample sizes in Supplementary file 1. *p<0.05, **p<0.01, ***p<0.001.DOI: http://dx.doi.org/10.7554/eLife.24573.01410.7554/eLife.24573.015Figure 7—figure supplement 1—source data 1.Figure 7—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.24573.015
+**Figure 7—figure supplement 1.:** Top shows differences between classifier weight β1 for chosen and unchosen units (top) and chosen+ and chosen- units (bottom) for Monkey G (left) and Monkey C (right). Same layout for (b) beta-to-FR slope (as in Figure 6f–h), (c) CO task modulation, (d) mean firing rate, and (e) beta rhythmicity. Differences are assessed with Kruskal–Wallis test and reported along with sample sizes in Supplementary file 1. *p<0.05, **p<0.01, ***p<0.001.
 
 To assess whether the same spiking patterns were present during PreMO and PostMO in the NR task, the CO-trained classifier was used to predict the PreMO and PostMO labels of z-scored spiking activity chunks from NR trials. Note that in the NR task, chunks are labeled as ‘PreMO’ during the neurofeedback epoch of the NR task and before movement onset during the reaching epoch of the NR task, and labeled as ‘PostMO’ after movement onset during the reaching epoch. Given the differences in individual unit firing patterns across the CO and NR tasks (Figure 6), it is possible that the neural population activity also varies drastically across tasks and that the CO-trained classifier may not perform well when given NR population activity. Instead, we confirm that the same CO-trained classifier does yield significantly different distances to MO threshold for PreMO and PostMO chunks in the NR task (Figure 7a, Red: NR task, paired two-tailed Student’s t-test on mean within-day probabilities for CO PreMO and PostMO chunks, Monkey G: n = 6, T = −7.459, p=6.83e-04, Monkey C (inset): n = 4,T = −13.591, p=8.62e-04, Combined across monkeys: T = −3.6193, p=5.578e-03, n = 10). This finding validates that the population reliably encodes gross kinematics similarly across tasks despite the individual unit activity changes observed across tasks in the previous analysis.
 
@@ -155,7 +325,7 @@ It is possible, however, that the decoder has identified discriminative firing p
 
 To directly test whether the presence of beta oscillations affects distance to the MO threshold, we collapsed all NR data across beta targets, isolated slow chunks that occurred prior to actual movement onset, and compared distance to MO threshold for on-beta and off-beta bins in both the CO and NR tasks. Figure 7d–e shows mean on-beta and off-beta distances to MO threshold for individual days in the CO (left) and NR (right) tasks. In all cases but one, off-beta slow chunks exhibit significantly closer distances to MO threshold than on-beta slow chunks (paired Students’ t-test of within-day means Figure 7d: Monkey G: CO off-beta vs. on-beta, n = 6, T = 6.742, p=1.089e-03, NR off-beta vs. on-beta, n = 6, T = 2.607, p=0.0478, Figure 7e: Monkey C: CO off-beta vs. on-beta, n = 4, T = 1.325, p=0.277 NR off-beta vs. on-beta n = 4, T = 4.763, p=0.0176, Combined across monkeys: CO off-beta vs. on-beta, n = 10, T = 4.246, p=2.160e-03, NF off-beta vs. on-beta, n = 10, T = 3.185, p=0.0111). The CO and NR tasks exhibit common population-level activity changes reflected by the onset of beta oscillations, and specifically, these population changes encode a shift further away from the MO threshold.
 
-## Properties of units contributing most to PreMO versus PostMO classification
+### Properties of units contributing most to PreMO versus PostMO classification
 
 To determine the properties of units that contributed most to the PreMO and PostMO predictions of the logistic classifier, we chose to analyze units that fulfilled two criteria. The first criterion was that a logistic classifier trained only on CO chunks from the individual unit, not the entire population as in Figure 7, had to predict significantly lower scores for PreMO than PostMO in held-out data in the CO and NF tasks. The second criterion was that units had to exhibit lower predicted scores for on-beta, slow chunks than off-beta, slow chunks in both tasks. The units that fulfilled both criteria were referred to as ‘chosen’ units, and were compared with all other ‘unchosen’ units (units collapsed across days -- Monkey G: 104 chosen units, 251 unchosen units, Monkey C: 171 chosen units, 342 unchosen units). We analyzed the differences between chosen and unchosen weights using five different metrics—classifier weight, beta amplitude-to-spike rate slope during CO task, mean modulation during the CO task, mean firing rate during the CO task, and beta rhythmicity during the CO task (see Supplementary file 1 -- Chosen versus Unchosen Unit Analysis, Figure 7—figure supplement 1, and Supplementary file 1 -- Chosen versus Unchosen Units).
 
@@ -171,7 +341,7 @@ We have provided evidence that volitionally increasing and decreasing beta pow
 
 Next we discuss how our results mesh with other reported behavioral correlates of beta oscillations, putative mechanisms of how beta oscillations are generated and may affect movement generation, and benefits of using neurofeedback as an experimental paradigm.
 
-## Beta-generating mechanisms in the motor system resolve conflicting reports of beta-behavioral correlates
+### Beta-generating mechanisms in the motor system resolve conflicting reports of beta-behavioral correlates
 
 Our result that volitionally increasing and decreasing motor cortical beta power with neurofeedback precedes slower and faster movement onset times supports the hypothesis that beta oscillations are linked to neural patterns that slow onset of new movements (Gilbertson et al., 2005). Our results add to previously reported findings of elevated beta power prior to and after well-trained movements (Donoghue et al., 1998; Murthy and Fetz, 1992; Sanes and Donoghue, 1993). Although we cannot identify the mechanism that drives the beta oscillations observed, modeling and in vitro slice work shed some light. Recent modeling of striatal neural populations showed that increased medium spiny neuron (MSN) excitation can result in beta oscillations within the striatum, which can propagate through output structures of the basal ganglia (McCarthy et al., 2011). MSN excitability is affected by neuromodulators including acetylcholine (Cannon et al., 2014), which notably drives increased MSN excitability primarily in D2 MSNs, or the MSNs responsible for the indirect pathway activation (Benarroch, 2012). The findings from our study show that when cells generate beta oscillations they encode a slower movement state, which could reflect indirect pathway activation. Recent work has also suggested that shifts in attention caused by salient stimuli involve the intralaminar nuclei of the thalamus (Smith et al., 2009), which projects to the striatum (Smith et al., 2004), potentially also resulting in transient increases in beta power in D2 MSNs (McCarthy et al., 2011). This common striatal beta-generating mechanism could explain how increases in attention have been reported to evoke beta oscillations (Fetz, 2013; Leventhal et al., 2012; Saleh et al., 2010), and could be used to pause current motor programs in response to salient stimuli (Benarroch, 2012). This mechanism is also a plausible explanation for evidence of beta oscillations occurring during untrained, free-reaching movements (Donoghue et al., 1998; Murthy and Fetz, 1996b). These oscillations could be driven by salient stimuli that subjects encounter as they execute and update their internally generated motor plan.
 
@@ -181,7 +351,7 @@ Finally, our results and the proposed striatal beta-generating mechanism do not 
 
 Although identifying mechanisms that generate beta oscillations can shed light on how certain types of behavior such as attention or isometric contraction may be correlated with onset of beta oscillations, they do not provide information on how the dynamics of the underlying neural population generate movement change.
 
-## Encoding shifts in population neural activity related to beta oscillations
+### Encoding shifts in population neural activity related to beta oscillations
 
 When populations of neurons generate beta oscillations, their patterns are further from movement onset threshold than when they do not generate oscillations. In both the CO and NR tasks, on-beta PreMO bins exhibit further distances from the MO threshold than off-beta PreMO bins (Figure 7), emphasizing the common population shift that occurs in the CO and NR tasks during beta oscillatory periods. We propose that neural populations must stop generating beta oscillations before they can initiate specific preparatory and movement generating patterns that may occur closer to the MO threshold. Thus, the generation of beta oscillations favors a low-risk state in which neural populations will not accidentally create patterns that cause movement, and in exchange compromise their readiness for upcoming movements. Generation of these oscillations may possibly be implemented by a distinct subpopulation of ‘pacemaker’ cells (Figure 7—figure supplement 1), although data with more clearly isolatable single units are needed to describe how distinct subpopulations may each contribute to the pacing of beta oscillations versus the encoding of kinematic information.
 
@@ -189,11 +359,11 @@ The hypothesis that encoding of specific movements is compromised with beta osci
 
 How does the hypothesis of beta oscillations reflecting less informative encoding mesh with results showing linearly separable neural activity patterns during preparatory periods, when beta oscillations are prominent, for different upcoming movements (Hatsopoulos et al., 2004)? As beta oscillations occur in transient bursts and only show elevated power for trial averages (Sherman et al., 2016), it is possible that movement encoding during bursts is compromised, but outside of bursts is intact. Further, not all cells engage in beta oscillatory events (Murthy and Fetz, 1996a), making it possible that some cells are still encoding movement information during ongoing oscillations (Reimer and Hatsopoulos, 2010).
 
-## Neural activity in Parkinson’s disease (PD) reflects slowed, non-specific kinematic encoding and elevated beta synchrony
+### Neural activity in Parkinson’s disease (PD) reflects slowed, non-specific kinematic encoding and elevated beta synchrony
 
 Individual motor cortical neuron recordings from parkinsonian non-human primates and electrocorticography recordings in humans support the hypothesis that beta oscillations, found to be excessive in PD throughout the cortico-basal ganglia-thalamic loop (Cannon et al., 2014), compromise the encoding of kinematic information needed for movement generation. Indeed motor cortical cell activity is more correlated in motor disabled non-human primates after systemic treatment with 1-methyl-4-phenyl-1,2,3,6-tetrahydropyridine (MPTP) than before treatment (Goldberg et al., 2002; Pasquereau and Turner, 2011). Cells also fire less specifically to passive limb movements after MPTP treatment (Goldberg et al., 2002), suggesting a correlation between excessive beta oscillations and reduced specificity for movements. Also, it was found that coupling between low frequency beta phase and high frequency broadband gamma power was elevated in PD patients who had their deep brain stimulation therapy turned off (de Hemptinne et al., 2015) or were in an off-state following an extended period of no levodopa medication (Swann et al., 2015). Both stimulation and levodopa administration therapies improve symptoms of bradykinesia and rigidity for PD patients, suggesting that synchronization of high gamma, a proxy for spiking activity, to beta frequencies may be related to akinesia symptoms. This evidence, although in a disease model, supports the hypothesis that beta oscillations reflect reduced capability of kinematic encoding in population neural activity.
 
-## Advantages of using neurofeedback to study behavioral correlates
+### Advantages of using neurofeedback to study behavioral correlates
 
 Using a neurofeedback paradigm to investigate behavioral and population neural correlates of oscillations has several advantages. First, as the neurofeedback epoch only requires subjects to modulate beta power and to be seated at rest, they choose their own subject-specific strategy for generating or quenching beta activity. These strategies may include co-modulating other frequency bands, imagining movement, or performing other internal behaviors that generate beta activity. For example, while Monkeys C and G inversely modulated low frequency (1–10 Hz) power with beta frequency power, Monkey S did not modulate 1–10 Hz power as drastically but did exhibit increased 50–60 Hz power with increased beta power (Figure 2d–f). Despite the different approaches that were taken to increase and decrease beta power across animals there is still a consistent effect of high versus low beta power on movement onset times, increasing confidence that the oscillation is a reliable marker of the observed behavior. Many motor tasks previously used to study beta oscillations engage motor preparation, increased attention, cue expectation, and possibly muscular stiffening simultaneously within the task. These overlapping behaviors make it challenging to correlate a specific behavior with the presence of beta oscillations. Using a neurofeedback task, in which there will be individual subject-specific neurofeedback strategies, prior to a single task allows for a better test of how tightly linked the conditioned neural feature is to behavior.
 
@@ -203,51 +373,55 @@ Another report, McFarland et al. (2015), using a similar but non-invasive beta b
 
 Finally, neurofeedback is a tool that, if effective at introducing a change in subsequent behaviors, could be a directly translatable therapy for patients. For example, if excessive synchronization of motor neurons is pathological in PD, learning to reduce neural coupling with neurofeedback of beta oscillations may improve bradykinesia symptoms. Evidence suggests that PD patients do indeed exhibit stronger movement-related beta power reduction prior to movement onset than non-PD patients (Rowland et al., 2015), implying that some patients may already reduce beta power to initiate movement more easily. Thus, neurofeedback could be a tool to teach patients to cognitively modulate their beta power for symptom improvement (Khanna et al., 2016; Moxon and Foffani, 2015).
 
-## Alternative explanations
+### Alternative explanations
 
 An alternative explanation to our results is that the monkeys used movement to decrease the beta cursor and/or isometric contraction to increase the beta cursor during the neurofeedback epoch, and it was this movement that drove the MOT differences. First, a previous group has published work with NHPs performing beta-range neurofeedback (30–43 Hz instead of our 25–40 Hz) and reported a lack of overt movement evidenced by video and EMG recordings (Engelhard et al., 2013). Second, in our studies, we took video of Monkey C and Monkey G performing the task and found no overt movements when subjects were performing neurofeedback. Third, if the monkeys did make voluntary, overt movements, they would likely be moving their left hand or legs to assist with desynchronization of beta power during the low beta target trials of the neurofeedback epoch. Evidence from human psychophysical studies supports the finding that limb movements contralateral to the hand performing a simple reaction time task actually lengthen subjects’ reaction time (Begeman et al., 2007; Buenaventura and Sarkin, 1996). Thus, measured right hand MOTs in this study would be slower if monkeys were moving their left hand or leg. Finally, subjects could be using isometric contraction to increase beta power to assist in getting to the high beta target, as demonstrated in Baker et al., 1997. However, a previous study showed that if the hand of interest (here, right hand) is isometrically contracted, there is no significant slowing or quickening in MOT compared with a subject performing a simple reaction time test at rest (Castellote et al., 2004). Thus, previously published work and our own video evidence suggests that subjects are not moving. Even if subjects were moving to lower the beta cursor, human psychophysics studies suggest that MOT should be slower than if they were not moving. Thus, moving would make our MOT effect less significant, not more significant, allieviating the concern that monkeys moving is causing our reported MOT trend.
 
 Another interpretation of our results is that as subjects only perform reaches to well-practiced, predictable targets, the finding that the presence of beta oscillations correlates with slowed MOTs does not apply to the general case where movement intentions are not over-practiced. Unfortunately, two challenges exist to testing the effect of increasing or decreasing beta oscillations on MOTs in unprepared arm-reaches in our task setup. First, unprepared reaches have greater MOTs (Churchland et al., 2006) and the beta state reached by the neurofeedback manipulation does not persist for long (Figure 2a–c). The longer it takes to process an unprepared reach cue, the further away in time this will make subjects’ MOT from the end of the neurofeedback epoch, making it likely that by the time MO occurs, the effect of the neurofeedback will have washed out. Second, salient cues are known to evoke beta oscillations (Saleh et al., 2010), making any post-neurofeedback cue indicating reach target likely to equalize subjects’ beta states. For both these reasons, we were unable to test the hypothesis that the presence of beta oscillations has a direct effect on unprepared movements. However, previous evidence showing the emergence of beta oscillations with salient and used cues (Leventhal et al., 2012; Saleh et al., 2010), and the emergence of higher beta power with cues associated with less certainty (Tzagarakis et al., 2010), suggest that beta oscillations may also reflect the neural states that subjects are in as they process cues to prepare their next movements.
 
-## Summary
+### Summary
 
 The results from this study show that beta band frequencies are a marker of slowed movement onset. The underlying motor cortical population activity shifts further from a MO threshold when subjects volitionally produce beta oscillations in the NR task or naturally produce them in the CO task. We discussed mechanistic generators of beta oscillations and used these to reconcile discrepancies in previously reported behavioral correlates of beta activity. Finally, we proposed that the shifts observed in activity of motor cortical neurons caused by generation of beta oscillations reduce the probability of accidental movement in exchange for compromised encoding of specific movement plans.
 
 ## Materials and methods
 
-## Surgery, electrophysiology, and experimental setup
+### Surgery, electrophysiology, and experimental setup
 
 Three male rhesus macaques (Macaca mulatta, RRID: NCBITaxon:9544) were chronically implanted with arrays of 128 Teflon-coated tungsten microwire electrodes (35 μm in diameter, 500 μm separation between microwires, 16 × 8 configuration, 6.5 mm length, Innovative Neurophysiology, Durham, NC) in the left upper arm area of primary motor cortex (M1) and posterior dorsal premotor cortex (PMd). Localization of target areas was performed using stereotactic coordinates from a neuroanatomical atlas of the rhesus brain (Paxinos et al., 2013). LFP activity was recorded at 1 kHz using either the 128-channel Multichannel Acquisition Processor (Plexon, Inc., Dallas, TX) (Monkeys S, G) or the 256-channel Omniplex D Neural Acquisition System (Plexon, Inc.) (Monkey C). Single-unit and multi-unit activity from Monkey G was manually sorted offline using Offline Sorter (Plexon, Inc). Channel-level activity (Chestek et al., 2011) from Monkey C was defined using OmniPlex’s auto-threshold procedure to set each channel threshold to 5.5-standard deviations from the mean signal amplitude. Thresholds were set at the beginning of each session based on 1–2 min of neural activity recorded as the animal sat quietly (i.e. not performing a behavioral task).
 
 Monkeys S and G were trained to perform a center-out delayed reaching task using a KINARM exoskeleton (BKIN Technologies, Kingston, ON, Canada) fitted to their right arm. Monkey C was trained using a custom right-arm sleeve with a red LED marker on the hand that was tracked in real time with an Impulse X2 motion capture system (PhaseSpace, San Leandro, CA). For all monkeys and tasks in this study, visual feedback of hand position was shown by a circular cursor on the task screen. Monkeys S and G right arm movements were restricted to the horizontal plane by the KINARM. Monkey C could rest and move his right arm on a horizontal plane like Monkeys G and S, but could also move his arm above the plane. Prior to this study, Monkey S was trained at reaching tasks and spike-based brain-machine interface (BMI) cursor tasks for 4 years, Monkey G was trained at joystick tasks and spike-based BMI cursor tasks for 1 year, and Monkey C was trained at reaching and spike-based BMI cursor and virtual exoskeleton tasks for 3 years. All procedures were conducted in compliance with the NIH Guide for the Care and Use of Laboratory Animals and were approved by the University of California, Berkeley Institutional Animal Care and Use Committee.
 
-## Center-out reaching task
+### Center-out reaching task
 
 Subjects performed a center-out (CO) reaching task consisting of right hand movements from a center target to a peripheral target distributed over a 13 cm diameter circle (Figure 1a). The workspace was created to minimize any requirement for postural changes during task performance. Target radius was typically 1.2 cm in the workspace. Trials were initiated by entering the center target and holding for a variable time (uniformly distributed within 200–800 ms). The go cue after the hold period was indicated by the center target changing color and the peripheral target illuminating, cuing a reach to that target. A liquid reward was provided after a successful reach to each target and a peripheral hold period of 200 ms.
 
-## Neurofeedback-reaching task
+### Neurofeedback-reaching task
 
 In the neurofeedback-reaching (NR) task monkeys performed neurofeedback immediately followed by an arm reach to a peripheral target (Figure 1b,c). To initiate a trial, subjects moved their right hand to a central target and held for 200 ms after which the neurofeedback epoch began. Throughout the neurofeedback epoch the right hand was required to remain in the center target otherwise a timeout ensued. A yellow square beta cursor representing an estimate of the monkey’s motor cortical beta power and one of four beta targets appeared on the left of the screen. As estimates of normalized motor cortical beta power increased or decreased, the beta cursor position increased or decreased on the y axis, updating every 100 ms. Subjects modulated their endogenous neural signals to make the beta cursor hover over the beta target for 450 ms to successfully end the neurofeedback epoch. Subjects had 60 s to reach the beta target with their beta cursor before the trial timed out and the same beta target repeated. Once the neurofeedback epoch was completed the reaching epoch began. The beta cursor and beta target disappeared and a peripheral reach target appeared in a location 6.5 cm away from the center target. The peripheral target was kept in a consistent location from trial to trial and only changed on a day-to-day basis, making its location predictable. Once subjects reached the peripheral target and held for 200 ms, they received a liquid reward. No reward was given for trials in which the subject did not successfully complete the neurofeedback epoch within 60 s (neurofeedback timeout error), hold in the peripheral reach target for the full 200 ms (hold errors), or in which the subject did not reach the peripheral target within 5 s (timeout error).
 
-## Calculation of beta neurofeedback cursor
+### Calculation of beta neurofeedback cursor
 
-The beta neurofeedback cursor was designed to reflect endogenous beta oscillatory events in motor cortex. To calculate its position at each time point (every 100 ms), LFP signals from three channels in the most anterior part of the implanted multi-electrode array were manually selected for each subject. Minimal artifacts and strong beta oscillatory activity during the reaching only task were the selection criterion, as in Engelhard et al. (2013). These channels were kept consistent throughout all NR tasks for that subject. Subjects’ LFP signals were streamed over a local intranet via the PLEXNET client-server application (Plexon Inc.). In the task application, the most recent 200 ms of neural data were used to estimate the beta power (25–40 Hz) and broadband power (1–100 Hz) using the multi-taper method (Babadi and Brown, 2014; So et al., 2014) with five tapers. Beta band and broadband estimates were then averaged across channels, and finally a normalized estimate of beta power (βest) was computed by dividing the beta band power estimate by the broadband power estimate:βest=13 ∑ch=13  ∑f=25 Hz40 Hz  PSDfch13 ∑ch=13  ∑f=1 Hz100 Hz  PSDfch
+The beta neurofeedback cursor was designed to reflect endogenous beta oscillatory events in motor cortex. To calculate its position at each time point (every 100 ms), LFP signals from three channels in the most anterior part of the implanted multi-electrode array were manually selected for each subject. Minimal artifacts and strong beta oscillatory activity during the reaching only task were the selection criterion, as in Engelhard et al. (2013). These channels were kept consistent throughout all NR tasks for that subject. Subjects’ LFP signals were streamed over a local intranet via the PLEXNET client-server application (Plexon Inc.). In the task application, the most recent 200 ms of neural data were used to estimate the beta power (25–40 Hz) and broadband power (1–100 Hz) using the multi-taper method (Babadi and Brown, 2014; So et al., 2014) with five tapers. Beta band and broadband estimates were then averaged across channels, and finally a normalized estimate of beta power ($\beta_{est}$) was computed by dividing the beta band power estimate by the broadband power estimate:
 
-Once βest was computed, a subject-specific linear transform was used to map βest to a vertical screen position. A two-timestep (200 ms) moving average (boxcar) filter was then used to smooth out the displayed beta cursor position.
+$$
+\beta_{est}=\frac{\frac{1}{3} \sumch=13  \sumf=25 Hz40 Hz  PSD_{f}^{ch}}{\frac{1}{3} \sumch=13  \sumf=1 Hz100 Hz  PSD_{f}^{ch}}
+$$
+
+Once $\beta_{est}$ was computed, a subject-specific linear transform was used to map $\beta_{est}$ to a vertical screen position. A two-timestep (200 ms) moving average (boxcar) filter was then used to smooth out the displayed beta cursor position.
 
 Table 1 lists the normalized beta values needed to modulate to the middle of each beta target for each monkey. These values were finalized after ~1 week of training the subjects on the beta neurofeedback task. Initial training began with more lenient beta neurofeedback requirements (values to achieve low beta and high beta target were closer to the mean beta cursor value). As subjects improved in performance, the beta targets moved further apart until the top and bottom targets had a mean time to target of 5–10 s.
 
-## NR task variant using beta band and 1–10 Hz
+### NR task variant using beta band and 1–10 Hz
 
 Monkey G performed one task variant of the NR task where the neurofeedback cursor in the x-axis was controlled with normalized 1–10 Hz power in addition to it being controlled in the y-axis with normalized beta power, as described above. The four beta targets were in the same locations as in the standard NR task. This variant thus required that the subject produce the correct normalized beta power value without simultaneously producing too high or too low a 1–10 Hz power value, as extreme 1–10 Hz modulations would move the cursor too far to the left or to the right of the beta target. The subject practiced the task with lenient requirements at first which were slowly made harder until performance plateaued and the mean time to LFP target was 5–10 s. The final values that normalized 1–10 Hz power must fall within were 0.74–0.95.
 
-## Chance level performance of beta neurofeedback epoch
+### Chance level performance of beta neurofeedback epoch
 
 For each session (typically lasting 10–40 min), beta cursor position from the session’s online performance was re-run through a target-shuffled task simulation, designed to assess whether the subjects’ performance during the beta neurofeedback epoch of the NR task was resulted merely from chance fluctuations in beta power or was caused by volitional changes in beta power that were specific for the beta target on the screen. In the simulation, after the beta cursor entered the beta target and held for the 450 ms beta target hold time, an average arm-reaching time, the constant reward time, and the constant inter-trial interval time transpired to simulate the natural pacing of the task. At the end of the simulation, a metric of chance performance was the mean number of successful beta targets acquired over the length of the session. For example, if one target-shuffled performance yields 10 successful trials in 10 min, the chance rate for that simulation would be one rewarded target per minute.
 
 One hundred simulations were run per session (each session ~10–40 min) yielding a distribution of rewarded targets/minute. The mean and standard deviation of the distribution was calculated, and used to z-score the actual number of rewarded trials. The resultant z-scores for each session are plotted in Figure 1e, where each point corresponds to a session (session i), and each point’s position on the x axis (xi) corresponds to the first trial in session i.
 
-## Power spectral densities (PSDs)
+### Power spectral densities (PSDs)
 
 In Figure 1d, a movement-onset aligned, detrended spectrogram (window size is 200 ms, step size is 10 ms, multi-taper method with five tapers) is plotted from 1 s before movement onset to 0.75 s after movement onset. The spectrogram estimate was detrended by first estimating power as a linear function of frequency (power = m*frequency + b) using all trials and timepoints as data to fit m, b in the linear regression. Then, the estimated power from the linear regression was subtracted from the computed spectrogram, effectively flattening the typical 1/f trend exhibited by neurological signals. The detrended spectrogram was averaged over trials, and is plotted in Figure 1d.
 
@@ -255,23 +429,23 @@ In Figure 2a–c, normalized beta power traces are shown for the last 1000 ms of
 
 Figure 2d–f shows the mean full power PSDs for the last 800 ms of the neurofeedback epoch to the first 200 ms of the reaching epoch for each beta target. This window was selected because first, it overlapped with the beta target hold period, a period in which beta power values must be specific for each target. Second, it was a long enough window to accurately capture low frequency activity. To compute the values at each frequency for each of the beta targets, first a PSD is computed for all trials yielding matrix X of size trials (n) x frequencies (f). The mean and standard deviation is computed for each frequency, yielding vectors M and S, both of size f x 1. The matrix X_zscore is computed by subtracting off M from each row of X, and then dividing each row by S. Finally, trials to each beta target are averaged together and plotted in Figure 2d–f.
 
-## Calculation of on-beta and off-beta labels
+### Calculation of on-beta and off-beta labels
 
 In the text we compared what percentage of time points are part of a beta oscillatory event (on-beta) for each beta target. We also used the concept of on-beta and off-beta time bins in Figures 5j, 6a–b and 7d–e. To determine when the beta oscillatory events occurred, the following procedure was applied. The local field potential (LFP) signal from one of the electrodes used in the neurofeedback task was selected, and filtered at 25–40 Hz with a fifth order Butterworth filter. The amplitude of the filtered signal was estimated with the Hilbert transform. Each day, a distribution of amplitude values was computed by aggregating all rewarded trials from that day. A threshold was set at the 60th percentile of the resultant distribution. Then, all timepoints surpassing the threshold were labeled with a 1. All other points were labeled with a 0. Then, the length of each block of uninterrupted '1s' was computed, and if the block was longer than 125 ms (so the oscillatory episode lasted at least 3–4 cycles as described in Murthy and Fetz (1996a); Sherman et al., 2016), the block remained as is. If the block was less than 125 ms, all points in the block were changed back to '0s'. All of the above computations were done at the original LFP sampling rate of 1000 Hz. For analyses using bins longer than 1 ms, each bin was labeled as a '1' or '0' depending on what the majority of points within the bin were labeled as.
 
-## Calculation of slow versus fast timepoints
+### Calculation of slow versus fast timepoints
 
 Throughout the study slow and fast timepoints are distinguished. A threshold of 3.5 cm/sec applied to hand speed was used to separate slow from fast. This threshold was chosen because using it yielded the best discrete classifier performance separating slow spiking patterns from fast spiking patterns in Monkeys G and C’s CO task in comparison with other thresholds (data not shown).
 
-## Movement onset time calculation
+### Movement onset time calculation
 
 To compute movement onset time for the arm-reaching epoch in the NR task, we used a method inspired by Churchland and Shenoy (2007). First, the x and y cursor velocity over the course of the reach (t x 2) was projected onto a unit vector pointing from the center to peripheral target. The norm of the projected cursor velocities yielded a single time series of projected speed (t x 1). The index and value of maximum projected hand speed was computed and called (i, M). Starting at i, we scanned backwards in time (i-1, i-2, …) until the value of the projected hand speed fell below 20% of the peak hand speed (0.2*M, see Figure 1f). This timepoint was called the movement onset time and was used because it allowed for comparisons across different reach targets, animals, and experimental setups without having to define absolute hand velocity cutoffs. Example hand speed traces and marked movement onset times are shown in Figure 1f (mean projected hand speed traces and mean movement onset time) and Figure 1g (individual trial projected hand speed traces and marked movement onset times in black dots).
 
-## Ordering statistics
+### Ordering statistics
 
 Cuzick’s test for trend (Cuzick, 1985) is a non-parametric test for significant ordering of groups in an increasing or decreasing manner (two-tailed), and was used to assess significance of ordering of behavioral metrics according to the four beta target. A test statistic (Z) is calculated for the hypothesis that groups follow a designated ordering (Cuzick, 1985). Z was calculated using the ranks of individual points and the group assignment (assignments used here: low beta target: 1, mid-low beta target: 2, mid-high beta target: 3, high beta target: 4 except for Figure 5g, right where the assignments were: low beta target: 4, mid-low beta target: 1, mid-high beta target: 2, high beta target: 3), to determine whether there is a significantly increasing or decreasing metric following the group ordering. Z follows a standard normal distribution (confirmed for data here by shuffling group labels 10,000 times and comparing the resultant Z distribution to a standard normal distribution with the KS test), so a p-value can be calculated using the cumulative standard normal distribution.
 
-## Trial re-allocation analysis
+### Trial re-allocation analysis
 
 In Figure 5, trials are relabeled by spectral features to simulate the movement onset time analysis in Figure 3 as though another frequency band or beta power calculation method was being used to control the neurofeedback cursor. Each subplot of Figure 5a–f contains all n trials from that subject’s NR task performance (except for a rejection of trials with movement onset times outside of the range of 0.0–0.7 s). Here, trials are assigned group labels according to which quartile their power estimate for a particular frequency band falls in.
 
@@ -279,15 +453,15 @@ For Figure 5a–c, non-normalized beta is computed in a window including the las
 
 For Figure 5d–f, normalized non-beta frequencies were used to re-assign labels, and Cuzick’s test was again run.
 
-## Individual unit analysis
+### Individual unit analysis
 
 All population unit analysis was only conducted with Monkeys G and C. Monkey S had arrays that had been implanted for >3 years and were no longer usable for recording high frequency activity. All neural data from sessions from Monkey G were offline sorted using the Plexon Offline Sorter. Isolated single units and multi units were included in analysis. For Monkey C, channel activity (Chestek et al., 2011) was used (see Surgery, electrophysiology, and experimental setup). Analyses were performed within a day to prevent day-to-day recording instability from influencing analysis.
 
-## Slow, on-beta mean firing rate comparisons
+### Slow, on-beta mean firing rate comparisons
 
 To assess whether units exhibited the same mean firing rate during neurofeedback-induced or naturally occurring beta oscillations, spiking activity was binned into 100 ms bins during NR trials and CO reaching trials. Spike counts during the slow, on-beta bins in the neurofeedback epoch of the NR task were compared with spike counts during slow, on-beta time points during the CO task. A Mann–Whitney test was used to assess significant differences in the distribution of firing rate for each unit across the two tasks. The percentage of cells exhibiting significant differences is shown in Figure 6b.
 
-## Beta amplitude-to-spike rate mapping
+### Beta amplitude-to-spike rate mapping
 
 To assess how individual units were influenced by ongoing beta oscillations in different task contexts, a beta amplitude-to-spike rate mapping was estimated for each unit in the two different tasks. The methods described below were adapted from Canolty et al. (2012). See the original work for more methodological details. To compute the beta amplitude-to-spike rate mapping, rewarded CO and NR task trials were extracted from 1.5 s prior to the reaching go-cue to 1.0 s after the reaching go cue.
 
@@ -297,12 +471,16 @@ To assess the intra-task and inter-task stability of the beta amplitude to spike
 
 For Monkey C, there was very limited CO task data, so fitting the beta amplitude-to-spike rate mapping with a subset yielded unstable inter-task correlations. Using 75% of data in each subset yielded more stable correlations and was used in Figure 6f–h and subsequent statistics.
 
-## Classification of PreMO and PostMO in NR and CO tasks
+### Classification of PreMO and PostMO in NR and CO tasks
 
 To assess the information about movement onset contained in spiking activity during different parts of the NR and CO tasks, a logistic regression classifier was trained on spiking activity to discriminate pre-movement onset (PreMO) and post-movement onset (PostMO). First, trials were extracted from 1.5 s prior to the go cue to 1.0 s after the go cue yielding 2.5-second-long trials. Spiking activity from all CO reaching sessions and all NR task sessions was binned into 25 ms bins yielding an ntrials x 100 bins x nunits sized matrix for each task and each day. Each unit's activity was then z-scored by subtracting by its mean and dividing by its standard deviation over trials and bins. Then, each bin and its previous two bins were concatenated to yield a ntrials x 98 chunks x (nneurons x 3) sized matrix (first two bins discarded as there were not enough lagged bins). Here, a chunk is three bins. Next, each chunk on each trial was labeled as pre-movement onset (PreMO) or post-movement onset (PostMO) if the last of the three bins in the chunk occurred prior to or following movement onset (calculated same way as in Movement onset time calculation). Each chunk on each trial was also labeled as on-beta or off-beta based on whichever label was the majority of the three bins in the chunk.
 
-A within-day logistic regression classifier was trained from CO spike data and actual labels (PreMO, PostMO) to predict labels (using sklearn.linear_models.LogisticRegression, Bundy et al., 2016). To assess the probability of each data point occurring within each class the following equation was used:p(yi=1)= 11+e{ β0+β1*Xi },  p(yi=0)=1−p(yi=1)
+A within-day logistic regression classifier was trained from CO spike data and actual labels (PreMO, PostMO) to predict labels (using sklearn.linear_models.LogisticRegression, Bundy et al., 2016). To assess the probability of each data point occurring within each class the following equation was used:
+
+$$
+p(y_{i}=1)= \frac{1}{1+e^{{\beta_{0}+\beta_{1}*X_{i}}}},  p(y_{i}=0)=1−p(y_{i}=1)
+$$
 
 where β0 and β1 are the intercept and neural weights found by the logistic regression classifier, respectively.
 
-The probability of a single class (PostMO) was used to assess differences in predicted probabilities for chunks. Typically in logistic regression, a threshold of 0.5 is used to classify the two classes, where observations with p(yi=1)  greater than 0.5 would be assigned the label of ‘1’ and p(yi=1) less than 0.5 would be assigned the label of ‘0’. Training with unbalanced groups can result in other threshold values being optimal, which are typically discovered with an ROC curve analysis (Bradley, 1997). We found that optimal thresholds for maximizing percent correct classification wre 0.5 and 0.315 for Monkey G and Monkey C. These values are the MO thresholds in Figure 7.
+The probability of a single class (PostMO) was used to assess differences in predicted probabilities for chunks. Typically in logistic regression, a threshold of 0.5 is used to classify the two classes, where observations with $p(y_{i}=1) $ greater than 0.5 would be assigned the label of ‘1’ and $p(y_{i}=1)$ less than 0.5 would be assigned the label of ‘0’. Training with unbalanced groups can result in other threshold values being optimal, which are typically discovered with an ROC curve analysis (Bradley, 1997). We found that optimal thresholds for maximizing percent correct classification wre 0.5 and 0.315 for Monkey G and Monkey C. These values are the MO thresholds in Figure 7.

@@ -43,7 +43,7 @@
 
 ## Abstract
 
-10.7554/eLife.02626.001 As exome sequencing gives way to genome sequencing, the need to interpret the function of regulatory DNA becomes increasingly important. To test whether evolutionary conservation of cis-regulatory modules (CRMs) gives insight into human gene regulation, we determined transcription factor (TF) binding locations of four liver-essential TFs in liver tissue from human, macaque, mouse, rat, and dog. Approximately, two thirds of the TF-bound regions fell into CRMs. Less than half of the human CRMs were found as a CRM in the orthologous region of a second species. Shared CRMs were associated with liver pathways and disease loci identified by genome-wide association studies. Recurrent rare human disease causing mutations at the promoters of several blood coagulation and lipid metabolism genes were also identified within CRMs shared in multiple species. This suggests that multi-species analyses of experimentally determined combinatorial TF binding will help identify genomic regions critical for tissue-specific gene control. DOI: http://dx.doi.org/10.7554/eLife.02626.001
+As exome sequencing gives way to genome sequencing, the need to interpret the function of regulatory DNA becomes increasingly important. To test whether evolutionary conservation of cis-regulatory modules (CRMs) gives insight into human gene regulation, we determined transcription factor (TF) binding locations of four liver-essential TFs in liver tissue from human, macaque, mouse, rat, and dog. Approximately, two thirds of the TF-bound regions fell into CRMs. Less than half of the human CRMs were found as a CRM in the orthologous region of a second species. Shared CRMs were associated with liver pathways and disease loci identified by genome-wide association studies. Recurrent rare human disease causing mutations at the promoters of several blood coagulation and lipid metabolism genes were also identified within CRMs shared in multiple species. This suggests that multi-species analyses of experimentally determined combinatorial TF binding will help identify genomic regions critical for tissue-specific gene control.
 
 ## Introduction
 
@@ -61,25 +61,25 @@ The liver is a suitable tissue for studying vertebrate gene regulation. It is a 
 
 ## Results
 
-## Determining combinatorial binding in multiple mammalian species
+### Determining combinatorial binding in multiple mammalian species
 
-The genome-wide occupancy of four transcription factors (HNF4A, CEBPA, ONECUT1, and FOXA1) was determined in primary liver in five species (
+The genome-wide occupancy of four transcription factors (HNF4A, CEBPA, ONECUT1, and FOXA1) was determined in primary liver in five species (Homo sapiens [Hsap], Macaca mulatta [Mmul], Canis familiaris [Cfam], Mus musculus [Mmus], and Rattus norvegicus [Rnor]) using chromatin immunoprecipitation followed by high-throughput sequencing (ChIP-seq) (Figure 1, Figure 1—figure supplement 1A, Figure 1—source data 1). The antibodies used for the four TFs have been raised against conserved epitopes and have previously been validated in ChIP experiments in mouse and human ChIP studies (Figure 1—source data 1D). As expected from previous multi-species ChIP study of CEBPA and HNF4A (Schmidt et al., 2010), the known binding motifs for the four TFs was virtually identical between species and occurred close to the ChIP-seq binding summit (Figure 1—figure supplement 1B,C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/02626/elife-02626-fig1-v1.jpg)
 
-**Figure 1.:** ChIP-seq peaks were determined for four liver TFs in five mammals. (A) CRMs were constructed by merging ChIP-seq peaks whose summits occurred within 300 bp and consisted of at least two distinct TFs. Remaining peaks were designated as singletons. (B) Whole genome 9-way EPO multiple sequence alignments (MSA) were used to project CRMs/Singletons across the five species. A CRM was considered shared if its position in the EPO MSA overlapped a CRM in a second species by a minimum of 10 bp. Neither the content nor order of TFs within the CRM was required to be classified as a ‘Shared’ CRM. A singleton in one species was considered ‘Shared’ if it overlapped the same TF in a second species. (C) Relative to human, the average % of shared CRMs is shown. Human CRMs (comprised of any two TFs) that overlap a CRM from a second species are shown with empty circles. Human CRMs containing at least one of each TF (all 4 TFs) were compared to all identified CRMs in a second species (purple circles). (D) The percentage of human CRMs and singletons in different phylogenetic categories that can be found aligned within the EPO MSAs for each of the five species is shown.DOI: http://dx.doi.org/10.7554/eLife.02626.00310.7554/eLife.02626.004Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.02626.004
+**Figure 1.:** ChIP-seq peaks were determined for four liver TFs in five mammals. (A) CRMs were constructed by merging ChIP-seq peaks whose summits occurred within 300 bp and consisted of at least two distinct TFs. Remaining peaks were designated as singletons. (B) Whole genome 9-way EPO multiple sequence alignments (MSA) were used to project CRMs/Singletons across the five species. A CRM was considered shared if its position in the EPO MSA overlapped a CRM in a second species by a minimum of 10 bp. Neither the content nor order of TFs within the CRM was required to be classified as a ‘Shared’ CRM. A singleton in one species was considered ‘Shared’ if it overlapped the same TF in a second species. (C) Relative to human, the average % of shared CRMs is shown. Human CRMs (comprised of any two TFs) that overlap a CRM from a second species are shown with empty circles. Human CRMs containing at least one of each TF (all 4 TFs) were compared to all identified CRMs in a second species (purple circles). (D) The percentage of human CRMs and singletons in different phylogenetic categories that can be found aligned within the EPO MSAs for each of the five species is shown.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/02626/elife-02626-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Number of Peaks (B) Conservation of TF binding motifs. DNA binding specificities of CEBPA, HNF4A, FOXA1, and ONECUT1 are highly conserved. The known sequence motifs were identified de novo in each species interrogated. (C) Central position of motifs under TF binding summits were observed for each factor. Number of motifs identified using the PWM from B (y-axis) vs distance from TF binding summit obtained using the SWEMBL peak caller (x-axis).DOI: http://dx.doi.org/10.7554/eLife.02626.005
+**Figure 1—figure supplement 1.:** (A) Number of Peaks (B) Conservation of TF binding motifs. DNA binding specificities of CEBPA, HNF4A, FOXA1, and ONECUT1 are highly conserved. The known sequence motifs were identified de novo in each species interrogated. (C) Central position of motifs under TF binding summits were observed for each factor. Number of motifs identified using the PWM from B (y-axis) vs distance from TF binding summit obtained using the SWEMBL peak caller (x-axis).
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/02626/elife-02626-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** Shared binding events were initially identified in a pair-wise fashion using the 9-way EPO-MSA. Average % overlap was calculated and the total number of peaks that could be aligned to a second species is shown. The total peak number for each species shown in brackets. A region was identified as shared if its DNA sequence overlapped in a second species by 10 or more base pairs. (A) Average % overlap for the four individual TFs in this study. (B) For each pair of species the average % of CRMs (comprised of any two TFs) that overlap another CRM, regardless of its composition from a second species is shown. The number of CRMs present within the EPO-MSA is given on the right with the total number of CRMs shown in brackets. (C) For each species, CRMs containing at least one of each TF type (all 4 TFs) were compared to all identified CRMs in a second species (Figure 1—source data 1F).DOI: http://dx.doi.org/10.7554/eLife.02626.006
+**Figure 1—figure supplement 2.:** Shared binding events were initially identified in a pair-wise fashion using the 9-way EPO-MSA. Average % overlap was calculated and the total number of peaks that could be aligned to a second species is shown. The total peak number for each species shown in brackets. A region was identified as shared if its DNA sequence overlapped in a second species by 10 or more base pairs. (A) Average % overlap for the four individual TFs in this study. (B) For each pair of species the average % of CRMs (comprised of any two TFs) that overlap another CRM, regardless of its composition from a second species is shown. The number of CRMs present within the EPO-MSA is given on the right with the total number of CRMs shown in brackets. (C) For each species, CRMs containing at least one of each TF type (all 4 TFs) were compared to all identified CRMs in a second species (Figure 1—source data 1F).
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/02626/elife-02626-fig1-figsupp3-v1.jpg)
 
-**Figure 1—figure supplement 3.:** (A) The number of TF binding event clusters (y-axis) vs the distance between the summits of TF binding events used to generate the clusters (x-axis) is plotted. (B) Number of CRMs (y-axis) vs CRM width (x-axis) is shown for our chosen 300 bp distance-between-summit criteria we used to build CRMs. (C) Average width in base pairs for: all CRMS; CRMs containing all four TFs; and individual peaks are shown.DOI: http://dx.doi.org/10.7554/eLife.02626.007
+**Figure 1—figure supplement 3.:** (A) The number of TF binding event clusters (y-axis) vs the distance between the summits of TF binding events used to generate the clusters (x-axis) is plotted. (B) Number of CRMs (y-axis) vs CRM width (x-axis) is shown for our chosen 300 bp distance-between-summit criteria we used to build CRMs. (C) Average width in base pairs for: all CRMS; CRMs containing all four TFs; and individual peaks are shown.
 
 Similar to what was observed for previous CEBPA and HNF4A ChIP-seq experiments, only a minority of ONECUT1 and FOXA1 bound regions overlapped orthologous, TF-bound regions in a second species, a relationship we refer to here as “shared” TF binding (see Figure 1A,B, Figure 1—figure supplement 2A). The rapid evolution of TF binding is further supported by comparisons within primate and rodent orders that are separated by less than 25 million years (Springer et al., 2003). For example, on average, between 21 and 37% of TF binding events in human are found in the orthologous location in macaque and 21–31% between mouse and rat for each of the TFs assayed (Figure 1—figure supplement 2A).
 
@@ -89,33 +89,33 @@ As we found for individual TFs, the location of CRMs appears to have evolved rap
 
 CRMs containing all four TFs are on average more highly shared with a CRM from a second species (e.g., 53% of human CRMs with all four TFs are shared with a macaque CRM), indicating increased selection pressure on higher order combinatorial TF binding (Figure 1C, Figure 1—figure supplement 2C). TF binding events shared in multiple species are more likely to be found within CRMs (72% of shared human TF binding events are in CRMs vs 27% that are classified as singletons; hypergeometric test, p = 8.48 × 10−238). For example, 32 of the 35 CEBPA binding events previously found to be bound in orthologous regions in five vertebrate species (Schmidt et al., 2010) fell within CRMs identified in this study.
 
-## Comparative genomic analysis of combinatorial TF binding creates biologically meaningful categories from in vivo ChIP-seq data
+### Comparative genomic analysis of combinatorial TF binding creates biologically meaningful categories from in vivo ChIP-seq data
 
-To test how combinatorial binding and TF binding conservation relate to liver gene function, we classified our set of human CRMs (n = 31,765) and singletons (n = 43,824) into phylogenetic categories (
+To test how combinatorial binding and TF binding conservation relate to liver gene function, we classified our set of human CRMs (n = 31,765) and singletons (n = 43,824) into phylogenetic categories (Figure 2, Figure 2—source data 1). CRMs were categorized as one of the following: shared only in human and macaque (Primates only, n = 4672); shared in human plus at least one non-primate (Beyond primates, n = 7631); and shared in at least three species (Deeply shared n = 5046) (Figure 2). The 43,824 singletons not residing in CRMs (44%) were categorized in the same manner (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/02626/elife-02626-fig2-v1.jpg)
 
-**Figure 2.:** (A) Human liver ChIP-seq data from ONECUT1, HNF4A, FOXA1, and CEBPA were assembled into CRMs consisting of at least 2 of the 4 TFs. The CRMs or single TFs were then broken down into categories based on their overlap with ChIP-seq data in macaque, dog, mouse, and rat. Singletons and CRMs were considered shared if they overlapped at least 10 bp with another TF bound region in the EPO multiple sequence alignment (MSA). (B) Experimentally determined combinatorial binding at the blood coagulation F7 locus. Raw sequencing reads from ChIP-seq experiments: CEBPA (red), HNF4a (green), ONECUT1 (yellow), and FOXA1 (green) are overlaid and called peaks are displayed for each species. ChIP-seq determined TF binding events were assembled into CRMs (black bars) underneath the enriched regions (peaks). Grey lines are drawn to illustrate shared CRMs using the EPO-MSA.DOI: http://dx.doi.org/10.7554/eLife.02626.00810.7554/eLife.02626.009Figure 2—source data 1.File coordinates are for the hg18 assembly.DOI: http://dx.doi.org/10.7554/eLife.02626.009
+**Figure 2.:** (A) Human liver ChIP-seq data from ONECUT1, HNF4A, FOXA1, and CEBPA were assembled into CRMs consisting of at least 2 of the 4 TFs. The CRMs or single TFs were then broken down into categories based on their overlap with ChIP-seq data in macaque, dog, mouse, and rat. Singletons and CRMs were considered shared if they overlapped at least 10 bp with another TF bound region in the EPO multiple sequence alignment (MSA). (B) Experimentally determined combinatorial binding at the blood coagulation F7 locus. Raw sequencing reads from ChIP-seq experiments: CEBPA (red), HNF4a (green), ONECUT1 (yellow), and FOXA1 (green) are overlaid and called peaks are displayed for each species. ChIP-seq determined TF binding events were assembled into CRMs (black bars) underneath the enriched regions (peaks). Grey lines are drawn to illustrate shared CRMs using the EPO-MSA.
 
 TF binding events contained in CRMs were enriched for their respective TF's DNA binding motif, in addition to other liver TF binding motifs, including those profiled in this study (Supplementary file 1). Supporting this observation, we find that both Deeply shared and human only CRMs overlap significantly with relevant ENCODE genome-wide experimental data sets, including ChIP peaks for HNF4A, FOXA1, and CEBPB in the liver cancer cell line HepG2 (e.g., p < 10−149 and p < 10−212 for HNF4 respectively; Supplementary file 1). The fold enrichment was higher for Deeply shared CRMs than for human only CRMs (e.g., 20.5 vs 11.8 for HNF4A). We also found significant overlap with TFs not tested in our study. For example, 51% of the Deeply shared CRMs and 20% of the human only CRMs overlap binding peaks for SP1 in HepG2 cells (p < 10−149 and p < 10−212 respectively; Supplementary file 1). Again the enrichment for these additional TFs was higher in the Deeply shared CRM category than the human only category (e.g., 17.6 vs 8.4-fold). SP1 and HNF4A have previously been shown to cooperatively regulate gene expression in HepG2 cells (Sugawara et al., 2007). In this manner, Deeply shared CRMs can be used to enrich for additional TFs that might play global combinatorial roles in liver gene regulation when used in conjunction with other data sets from related cell types.
 
-A comparison of shared CRMs to human-specific CRMs reveals an increase in the number of liver-related biological pathways, diseases, and known target genes of liver enriched TFs (
+A comparison of shared CRMs to human-specific CRMs reveals an increase in the number of liver-related biological pathways, diseases, and known target genes of liver enriched TFs (Figure 3). We used the enrichment tool GREAT (McLean et al., 2010) to perform functional enrichments. GREAT's default setting assigns TF binding events to a basal region around every gene (5 kb upstream, 1 kb downstream). ChIP-seq peaks that fall within the basal regulatory region of each gene, as well as the genomic sequence that spans between the basal region of that gene and the nearest gene's basal region (within a maximum of 1 Mb) are used to generate functional enrichments. The most significant enrichments that were unique to the shared liver CRMs include: liver disease (Binomial FDR q-value = 4.53 × 10−130) from the Disease Ontology database and metabolism of lipids and lipoproteins (q = 2.96 × 10−73) from MSigDB Pathway (Figure 3A,B, Figure 3—source data 1A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/02626/elife-02626-fig3-v1.jpg)
 
-**Figure 3.:** Results were obtained using the programming interface for the online enrichment tool GREAT version 2.02 (McLean et al., 2010) and plotted with custom R scripts. Up to five of the most significant enrichments obtained for each of the six analyses are listed on the left. The −log10 of binomial Q values for Disease ontology, HGNC gene family, and MSigDB are shown along the x-axis. Bars with a black asterisk indicate significant enrichments using GREAT default parameters (binomial and hypergeometric FDR Q-value significance at P ≤ 0.05 with at least twofold region enrichment). The size of the asterisk is proportional to the fold enrichment obtained for the given database. See Figure 3—source data 1 for complete list of Q-values, fold enrichments, genes giving the enrichments along with results from additional databases. (A) Enrichment analysis of any CRM shared in human plus at least one additional species is shown on the left and human only CRMs are shown on the right (Figure 3—source data 1A). (B) Human CRMs (left panel) shared in human and at least one non-primate (Beyond Primates) is shown vs Human CRMs (right panel) shared in human and macaque but no other species (Primate only) (Figure 3—source data 1B). (C) Enrichment analysis of shared CEBPA CRMs and singletons (Figure 3—source data 1C). (D) Enrichment analysis of shared HNF4A CRMs and singletons (Figure 3—source data 1D). (E) Enrichment analysis of shared FOXA1 CRMs and singletons (Figure 3—source data 1E). (F). Enrichment analysis of shared ONECUT1 CRMs and singletons (Figure 3—source data 1F). (G) Human TFs in CRMs and Singletons were categorized by the number of species in which they are shared with. Profiles of constrained elements (sequence conservation) in a 1-kb window around CRMs or singletons were calculated using GERP scores from the 29-way multiple sequence alignments. (H) Genomic location of CRMs and Singletons. Proportion of single TFs located near transcription start sites (TSS) increases to >50%, but remains stable for CRMs at ∼20%.DOI: http://dx.doi.org/10.7554/eLife.02626.01010.7554/eLife.02626.011Figure 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.02626.011
+**Figure 3.:** Results were obtained using the programming interface for the online enrichment tool GREAT version 2.02 (McLean et al., 2010) and plotted with custom R scripts. Up to five of the most significant enrichments obtained for each of the six analyses are listed on the left. The −log10 of binomial Q values for Disease ontology, HGNC gene family, and MSigDB are shown along the x-axis. Bars with a black asterisk indicate significant enrichments using GREAT default parameters (binomial and hypergeometric FDR Q-value significance at P ≤ 0.05 with at least twofold region enrichment). The size of the asterisk is proportional to the fold enrichment obtained for the given database. See Figure 3—source data 1 for complete list of Q-values, fold enrichments, genes giving the enrichments along with results from additional databases. (A) Enrichment analysis of any CRM shared in human plus at least one additional species is shown on the left and human only CRMs are shown on the right (Figure 3—source data 1A). (B) Human CRMs (left panel) shared in human and at least one non-primate (Beyond Primates) is shown vs Human CRMs (right panel) shared in human and macaque but no other species (Primate only) (Figure 3—source data 1B). (C) Enrichment analysis of shared CEBPA CRMs and singletons (Figure 3—source data 1C). (D) Enrichment analysis of shared HNF4A CRMs and singletons (Figure 3—source data 1D). (E) Enrichment analysis of shared FOXA1 CRMs and singletons (Figure 3—source data 1E). (F). Enrichment analysis of shared ONECUT1 CRMs and singletons (Figure 3—source data 1F). (G) Human TFs in CRMs and Singletons were categorized by the number of species in which they are shared with. Profiles of constrained elements (sequence conservation) in a 1-kb window around CRMs or singletons were calculated using GERP scores from the 29-way multiple sequence alignments. (H) Genomic location of CRMs and Singletons. Proportion of single TFs located near transcription start sites (TSS) increases to >50%, but remains stable for CRMs at ∼20%.
 
 The most significant liver-related enrichments obtained using human only CRMs were for biological oxidations (q = 1.95 × 10−39; in MSigDB Pathway). These enrichments were driven by genes involved in the metabolism of xenobiotics by the cytochrome P450 gene family (q = 2.24 × 10−19; HGNC gene family database) (Figure 3A). Given the liver's major contribution to the detoxification of xenobiotics and the well established species-specificity of the proteins involved in the process (Gonzalez and Nebert, 1990), these results suggest that evolutionary filtering of CRMs has the potential to enrich for both conserved and species-specific biological pathways.
 
-Singleton TF binding events were predominantly enriched for their respective motif, but were not enriched for the motifs from the other three TFs profiled in this study (
+Singleton TF binding events were predominantly enriched for their respective motif, but were not enriched for the motifs from the other three TFs profiled in this study (Supplementary file 1). Supporting this, comparisons against all ENCODE TF binding data show that for HNF4A, CEBPA, and FOXA1 singletons, the top ChIP-seq peak association in HepG2 cells corresponded to the TF assayed. HNF4A singletons were enriched for FOX family motifs, albeit not the same FOXA1 motif obtained from CRMs and singleton FOXA1 peaks. Comparing normalized sequence read counts in the HNF4A singletons, and HNF4A-containing CRMs lacking FOXA1 peaks, it is clear that pervasive weak FOXA1 ChIP-seq signal occur at HNF4A binding sites (Figure 4A). Further supporting this hypothesis is the similarity of FOXA1 to a portion of the HNF4A motif (Figure 4B), and a recent study that showed a close association of HNF4A with FOXA1 motifs (Guo et al., 2012).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/02626/elife-02626-fig4-v1.jpg)
 
-**Figure 4.:** (A) Regions of ±5 kb are represented around the center of CRMs or singletons. Reads centered on the summit of each TF are counts subtracted by input reads in 100 bp bins plus and minus 5 kb from the summit. Colored boxes indicate CRMs or singletons where a peak was called for a given factor: CEBPA (red), HNF4A (blue), ONECUT1 (orange), and FOXA1 (green). Looking at read counts for all four factors reveal that many of the HNF4A singleton in fact have weak FOXA1 signal. (B) Alignment of FOXA1 de novo ChIP-seq motif to the HNF4A motif. Motif comparison (alignment) was performed using compare-matrices from RSAT. The program calculates the correlation between two matrices shifting positions; the correlation is normalized based on the width of the alignment to avoid high correlation based on few flanking positions.DOI: http://dx.doi.org/10.7554/eLife.02626.01210.7554/eLife.02626.013Figure 4—source data 1.−4), moderate (10−3) and lenient (10−2). Blue shadows highlight siginficnat p-values.DOI: http://dx.doi.org/10.7554/eLife.02626.013
+**Figure 4.:** (A) Regions of ±5 kb are represented around the center of CRMs or singletons. Reads centered on the summit of each TF are counts subtracted by input reads in 100 bp bins plus and minus 5 kb from the summit. Colored boxes indicate CRMs or singletons where a peak was called for a given factor: CEBPA (red), HNF4A (blue), ONECUT1 (orange), and FOXA1 (green). Looking at read counts for all four factors reveal that many of the HNF4A singleton in fact have weak FOXA1 signal. (B) Alignment of FOXA1 de novo ChIP-seq motif to the HNF4A motif. Motif comparison (alignment) was performed using compare-matrices from RSAT. The program calculates the correlation between two matrices shifting positions; the correlation is normalized based on the width of the alignment to avoid high correlation based on few flanking positions.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/02626/elife-02626-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** Each TF peak set was scanned using the RSAT tool matrix-scan with PWMs for the four TFs. A stringent motif cutoff (10−4) was applied. The figure shows the percentage of peaks with at least one detected site for each TF below the corresponding p-value threshold (y-axis) and the motif PWM scanned (x-axis). (A) Motif scanning in CEBPA peaks; (B) Motif scanning in FOXA1 peaks; (C) Motif scanning in ONECUT1 peaks; and (D) Motif scanning in HNF4A peaks. For the stringent thresholds, significant adjusted p-values comparing singletons and CRMs are given. See all X2 test p-values for lenient (10−2) and moderate cutoffs (10−3) in Figure 4—source data 1.DOI: http://dx.doi.org/10.7554/eLife.02626.014
+**Figure 4—figure supplement 1.:** Each TF peak set was scanned using the RSAT tool matrix-scan with PWMs for the four TFs. A stringent motif cutoff (10−4) was applied. The figure shows the percentage of peaks with at least one detected site for each TF below the corresponding p-value threshold (y-axis) and the motif PWM scanned (x-axis). (A) Motif scanning in CEBPA peaks; (B) Motif scanning in FOXA1 peaks; (C) Motif scanning in ONECUT1 peaks; and (D) Motif scanning in HNF4A peaks. For the stringent thresholds, significant adjusted p-values comparing singletons and CRMs are given. See all X2 test p-values for lenient (10−2) and moderate cutoffs (10−3) in Figure 4—source data 1.
 
 We asked whether CRMs or singletons differ with regards to the quality of their TF binding motifs. Peaks for each TF were scanned using the RSAT tool matrix-scan with the best position weight matrices (PWM) for each TF. We set three p-value threshold cut offs (stringent:10−4, moderate:10−3 and lenient 10−2) based on the comparison between the theoretical and empirical PWM weight score distribution observed for each peak collection as previously described (Medina-Rivera et al., 2011). As expected, motifs were identified in the vast majority of their corresponding peak set using the lenient motif threshold. Similarly, for both singletons and CRMs, the moderate and stringent motif searches returned the highest fraction motifs in their corresponding peak set. Interestingly, for both the moderate and stringent motif searches, the singleton TF binding sites had a significantly greater fraction of high quality motifs than they did for CRMs (e.g., 56% for singletons vs 33% for CRMs for the stringent cutoff). This trend was observed for all four TFs in this study (Figure 4—figure supplement 1, Figure 4—source data 1). Our results in primary liver tissue are supported by an integrative analysis of ENCODE cell lines, which showed that active chromatin states are depleted of regulatory motif instances relative to all regions bound by a given TF (Ernst and Kellis, 2013).
 
@@ -123,63 +123,405 @@ After collapsing the four TFs into CRMs, there were still over 40,000 singleton 
 
 One consideration about comparing singletons to CRMs is that singleton TF binding events are likely to become CRMs as more factors are tested and more peaks are called (see Figure 1—source data 1E for a comparison of the stability singleton and CRM categories). Nonetheless, by focusing on the singletons that remain singletons in orthologous regions in two or more species, we have been able to detect distinct genomic properties that warrant future study.
 
-## Shared combinatorial TF binding associates with highly expressed liver-specific genes
+### Shared combinatorial TF binding associates with highly expressed liver-specific genes
 
-To compare the functional properties of shared and species-specific CRMs/singletons, we then looked at how combinatorial binding and evolutionary constraint correlated with gene expression (
+To compare the functional properties of shared and species-specific CRMs/singletons, we then looked at how combinatorial binding and evolutionary constraint correlated with gene expression (Figure 5). Human TF binding events in CRMs and singletons were categorized by the number of species they were shared in and then associated with the nearest gene. Human liver mRNA expression level of the nearest gene was determined by RNA-seq (Kutter et al., 2011). Genes nearest to human-specific singletons and CRMs were not significantly different in their expression levels (p = 0.221). In contrast, gene expression levels near TFs in shared CRMs were significantly higher than those near shared singleton-associated genes (p = 2.4 × 10−16) (Figure 5A). This striking p-value is due to several CRMs being found close to highly expressed liver genes including albumin, fibrinogen (FGA, FGB, FGG), and several acute phase response genes (e.g., CRP, SAA1 etc). We therefore broke down each CRM and singleton by transcription factor, which still revealed a significant difference between genes close to Deeply shared CRMs relative to singletons (p < 1 × 10−3; Figure 5—figure supplement 1). Using a reference transcription data set that comprises RNA-seq data for liver and 15 additional human tissue types (E-MTAB-513), we confirmed the above observation and found that the gene expression association with liver CRMs, and to a lesser extent singletons, was tissue-specific (Figure 5B). In sum, Deeply shared CRMs are associated with genes that are highly expressed in a distinctly liver-specific manner.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/02626/elife-02626-fig5-v1.jpg)
 
-**Figure 5.:** (A) Association of shared TFs in CRMs and Singletons with human gene expression obtained by RNA-seq in human liver (Kutter et al., 2011; E-MTAB-424). TFs in CRMs or Singletons were assigned to the nearest gene, and the FPKM (Fragments Per Kilobase of exon per Million reads) was recorded. In contrast to Singletons, TFs in Deeply CRMs are associated with highly expressed genes (adjusted p-values shown). The numbers of target gene associations for the singletons and CRMs in categories 1 to 5 are: 19354(S), 32706(CRM); 6325(S), 14669(CRM); 1935(S), 5755(CRM); 1005(S), 3292(CRM); and 459(S), 2530(CRM). (B) Comparison with CRMs and Singletons to a reference mRNA-seq data from 16 human tissues (E-MTAB-513) further shows that relative to singletons, liver-specific CRMs are highly expressed in liver, and that each TF contributes to this specificity. The number of gene associations for each category in the liver data is shown in white text within the heat map.DOI: http://dx.doi.org/10.7554/eLife.02626.015
+**Figure 5.:** (A) Association of shared TFs in CRMs and Singletons with human gene expression obtained by RNA-seq in human liver (Kutter et al., 2011; E-MTAB-424). TFs in CRMs or Singletons were assigned to the nearest gene, and the FPKM (Fragments Per Kilobase of exon per Million reads) was recorded. In contrast to Singletons, TFs in Deeply CRMs are associated with highly expressed genes (adjusted p-values shown). The numbers of target gene associations for the singletons and CRMs in categories 1 to 5 are: 19354(S), 32706(CRM); 6325(S), 14669(CRM); 1935(S), 5755(CRM); 1005(S), 3292(CRM); and 459(S), 2530(CRM). (B) Comparison with CRMs and Singletons to a reference mRNA-seq data from 16 human tissues (E-MTAB-513) further shows that relative to singletons, liver-specific CRMs are highly expressed in liver, and that each TF contributes to this specificity. The number of gene associations for each category in the liver data is shown in white text within the heat map.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/02626/elife-02626-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** Kutter et al., 2011; E-MTAB-424) broken down by the transcription factor in the CRM: (A) HNFA; (B) CEBPA; (C) FOXA1 and (D) ONECUT1.TFs in CRMs or singletons were assigned to the nearest gene and the FPKM (Fragments Per Kilobase of exon per Million reads) was recorded for CRMs and TFs broken down by transcription factor. Adjusted p-values are shown and like Figure 5, the CRMs were associated with more highly expressed genes in the 5-way and 4-way–shared categories.DOI: http://dx.doi.org/10.7554/eLife.02626.016
+**Figure 5—figure supplement 1.:** TFs in CRMs or singletons were assigned to the nearest gene and the FPKM (Fragments Per Kilobase of exon per Million reads) was recorded for CRMs and TFs broken down by transcription factor. Adjusted p-values are shown and like Figure 5, the CRMs were associated with more highly expressed genes in the 5-way and 4-way–shared categories.
 
-## Shared CRMs are enriched for tissue-specific biological function
+### Shared CRMs are enriched for tissue-specific biological function
 
 The number of reproducibly bound human regions obtained by ChIP-seq often exceeds the number of genes in the genome and so may require prioritization before experimental validation. Ranking ChIP-seq peak regions based on peak enrichment scores is one logical way to prioritize ChIP-seq peaks (Fisher et al., 2012). We compared the pathway enrichments for all shared CRMs containing a specific TF (e.g., the 6278 HNF4A-containing CRMs shared between human and at least one non-primate) vs the equivalent number of CRMs ranked by the best ChIP-seq peak enrichment score of that specific TF (e.g., the top 6278 HNF4A CRMs ranked by HNF4A peak score).
 
-As expected, the HNF4A CRMs ranked by peak intensity showed higher read counts than the shared set of CRMs and both CRM sets showed strong, centralized motif enrichments (
+As expected, the HNF4A CRMs ranked by peak intensity showed higher read counts than the shared set of CRMs and both CRM sets showed strong, centralized motif enrichments (Figure 6A). However, by using overlap of CRMs in the EPO multiple sequence alignment as a filter, we found that shared CRMs give an increased number of significant enrichments using the ChIP-seq enrichment analysis tool, GREAT (Figure 3—source data 1). As observed for our collection of shared CRMs, the most significant enrichments for the shared CRMs are related to liver metabolic processes and disease (Figure 6B). Similar results were obtained by performing this comparison from the perspective of the other three TFs (Figure 6B).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/02626/elife-02626-fig6-v1.jpg)
 
-**Figure 6.:** CRMs containing each TF were analyzed separately. (A) Read count and motif binding weight scores were calculated for: (1) all CRMs (All); (2) CRMs shared in human and at least one additional non-primate (Beyond primates); (2) human CRMs shared in macaque only (Primates); and (3) the equivalent number of CRMs (equal to the number of Beyond primate CRMs) ranked by the SWEMBL peak intensity score for the TF in question (Top). (B) Functional enrichments were performed using GREAT comparing the Beyond primate category to the top ranked category. The top five enrichments for all comparisons performed were collected and the enrichments, if available are plotted. Databases used for GREAT enrichment analyses are indicated by color and are ranked according to the −log10 binomial FDR q-values plotted on the x-axis. Significant enrichments are labelled with an asterisk which is sized according to fold enrichment of the given database category.DOI: http://dx.doi.org/10.7554/eLife.02626.017
+**Figure 6.:** CRMs containing each TF were analyzed separately. (A) Read count and motif binding weight scores were calculated for: (1) all CRMs (All); (2) CRMs shared in human and at least one additional non-primate (Beyond primates); (2) human CRMs shared in macaque only (Primates); and (3) the equivalent number of CRMs (equal to the number of Beyond primate CRMs) ranked by the SWEMBL peak intensity score for the TF in question (Top). (B) Functional enrichments were performed using GREAT comparing the Beyond primate category to the top ranked category. The top five enrichments for all comparisons performed were collected and the enrichments, if available are plotted. Databases used for GREAT enrichment analyses are indicated by color and are ranked according to the −log10 binomial FDR q-values plotted on the x-axis. Significant enrichments are labelled with an asterisk which is sized according to fold enrichment of the given database category.
 
-## Lead SNPs from liver-related GWAS overlap Deeply shared CRMs
+### Lead SNPs from liver-related GWAS overlap Deeply shared CRMs
 
-In order to determine whether shared CRMs associate with human diseases and phenotypes, we asked: (1) if the phenotype-associated single nucleotide polymorphisms (SNPs) in a curated collection of GWAS (described here as ‘lead SNPs’;
+In order to determine whether shared CRMs associate with human diseases and phenotypes, we asked: (1) if the phenotype-associated single nucleotide polymorphisms (SNPs) in a curated collection of GWAS (described here as ‘lead SNPs’; Hindorff et al., 2009) overlap our CRMs/singletons in a liver-related manner; and (2) whether curated collections of these SNPs were enriched for shared CRMs (Figure 7, Figure 7—figure supplement 1).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/02626/elife-02626-fig7-v1.jpg)
 
-**Figure 7.:** Heatmap representation of the −log10 of Bonferroni corrected p-values from hypergeometric testing for enrichment of CRMs or single TFs (broken down into categories related to their degree of conservation) by lead GWAS SNPs obtained from the NHGRI catalog (Hindorff et al., 2009). The NHGRI catalog disease traits were summarized into 25 categories prior to enrichment. Each GWAS lead SNP was given a ±2.5-kb window prior to identifying overlapping CRMs/singletons.DOI: http://dx.doi.org/10.7554/eLife.02626.01810.7554/eLife.02626.019Figure 7—source data 1.Figure 7 and Table 1.The file also includes the categories used to annotate the NHGRI catalog.DOI: http://dx.doi.org/10.7554/eLife.02626.019
+**Figure 7.:** Heatmap representation of the −log10 of Bonferroni corrected p-values from hypergeometric testing for enrichment of CRMs or single TFs (broken down into categories related to their degree of conservation) by lead GWAS SNPs obtained from the NHGRI catalog (Hindorff et al., 2009). The NHGRI catalog disease traits were summarized into 25 categories prior to enrichment. Each GWAS lead SNP was given a ±2.5-kb window prior to identifying overlapping CRMs/singletons.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/02626/elife-02626-fig7-figsupp1-v1.jpg)
 
-**Figure 7—figure supplement 1.:** 2 ≥ 0.8), GWAS lead SNPs were enriched for shared CRMs in a tissue/disease specific manner.(A) Number of lead SNPs reported in the NHGRI catalog for each of the summarized GWAS categories. (B) CRM regions were classified depending on their conservation pattern. These categories were then intersected with summarized disease traits obtained from the NHGRI catalogue (Hindorff et al., 2009). Linkage disequilibrium measures were calculated for lead SNPs from the NHGRI GWAS catalog up to a maximum of 100 kb flanking the lead SNP. Windows around each SNP were created based on the largest genomic interval between two SNPs in linkage disequilibrium (r2 ≥ 0.8). The heatmap shows the −log10 of Bonferroni corrected p-values for the enrichments of CRMs and singletons broken down into categories related to their degree of conservation determined by our multi-species ChIP-seq comparisons.DOI: http://dx.doi.org/10.7554/eLife.02626.020
+**Figure 7—figure supplement 1.:** (A) Number of lead SNPs reported in the NHGRI catalog for each of the summarized GWAS categories. (B) CRM regions were classified depending on their conservation pattern. These categories were then intersected with summarized disease traits obtained from the NHGRI catalogue (Hindorff et al., 2009). Linkage disequilibrium measures were calculated for lead SNPs from the NHGRI GWAS catalog up to a maximum of 100 kb flanking the lead SNP. Windows around each SNP were created based on the largest genomic interval between two SNPs in linkage disequilibrium (r2 ≥ 0.8). The heatmap shows the −log10 of Bonferroni corrected p-values for the enrichments of CRMs and singletons broken down into categories related to their degree of conservation determined by our multi-species ChIP-seq comparisons.
 
 ![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/02626/elife-02626-fig7-figsupp2-v1.jpg)
 
-**Figure 7—figure supplement 2.:** ‘Super-enhancers’ were directly obtained from Hnisz et al. (2013) and overlapped with lead GWAS SNPs annotated in the NHGRI catalogue (Hindorff et al., 2009). Each lead GWAS SNP was given a 5-kb window prior to identify overlapping ‘Super Enhancers’. The heatmap shows hierarchical clustering of the −log10 of corrected p-values for the enrichments of super-enhancers. A Hypergeometric test with Bonferroni correction was employed to assess the significance of enrichments in all categories. The heatmap shows significant enrichment of lead SNPs by immune cell super-enhancers. Super-enhancers from the liver cancer cell line HepG2 were not enriched for liver-related GWAS lead SNPs but were enriched for blood lipid related SNPs.DOI: http://dx.doi.org/10.7554/eLife.02626.021
+**Figure 7—figure supplement 2.:** ‘Super-enhancers’ were directly obtained from Hnisz et al. (2013) and overlapped with lead GWAS SNPs annotated in the NHGRI catalogue (Hindorff et al., 2009). Each lead GWAS SNP was given a 5-kb window prior to identify overlapping ‘Super Enhancers’. The heatmap shows hierarchical clustering of the −log10 of corrected p-values for the enrichments of super-enhancers. A Hypergeometric test with Bonferroni correction was employed to assess the significance of enrichments in all categories. The heatmap shows significant enrichment of lead SNPs by immune cell super-enhancers. Super-enhancers from the liver cancer cell line HepG2 were not enriched for liver-related GWAS lead SNPs but were enriched for blood lipid related SNPs.
 
 Using hypergeometric testing, we found that liver-related GWAS lead SNPs were enriched for nearby (±2.5 kb from a SNP) Deeply shared CRMs. For example, we found lead GWAS SNPs related to liver (p = 8.38 × 10−6; 3.7-fold enriched), blood lipid (p = 9.68 × 10−5; 3.3-fold enriched), and drug response (p = 1.43 × 10−4; 5.1-fold enriched) categories were all enriched for shared CRMs (Figure 7, Figure 7—source data 1A). Repeating this analysis using linkage disequilibrium (LD) measures (r2 ≥ 0.8) to define the boundaries of each GWAS SNP gave similar results. For example, liver-related GWAS SNPs were enriched for Deeply shared CRMs when LD was taken into consideration (p = 3.20 × 10−9; 2.4-fold enriched; Figure 7—figure supplement 1, Figure 7—source data 1B). These enrichments were not found when using two distinct null models (Figure 7—source data 1C,D).
 
-We then asked if any specific disease traits, as written in the NHGRI GWAS catalog, were enriched for shared CRMs. We found that for the 2.5 kb window analysis, only LDL cholesterol significantly enriched for Deeply shared CRMs (p = 0.037; 4.54-fold enriched; Figure 7—source data 1E), whereas the LD window analysis revealed 11 disease traits that were enriched for Deeply shared CRMs (see Table 1; Figure 7—source data 1F). For example, enrichments driven by lead SNPs for LDL cholesterol (blood lipid category, p = 4.84 × 10−5; 3.7-fold enriched) involved several loci including TRIB1, ABCG8, APOB, SORT1, TOMM40, APOA5 and HNF1A. Lead SNPs for fibrinogen (liver category, p = 3.40 × 10−3; 3.4-fold enriched) occurred in LD with the fibrinogen locus. C-reactive protein (liver category, p = 1.17 × 10−4; 4.0-fold enriched) enriched for Deeply shared CRMs near CRP itself in addition to RORA, MLXIPL, HNF1A, BAZ1B, and IRF1 loci (Table 1; Figure 7—source data 1G).10.7554/eLife.02626.022Table 1.Table of GWAS Disease Traits that significantly enriched for Deeply shared CRMsDOI: http://dx.doi.org/10.7554/eLife.02626.022Disease trait (NHGRI)Category (this study)Number of Deeply shared CRMsDeeply shared CRM enrichment (adjusted p-value)Fold enrichmentClosest genesOther metabolic traitsother measurement114.42E-056.42CRP, HNF1A, PANK1LDL cholesterolblood lipid204.84E-053.71TRIB1, ABCG8 PSRC1, DOCK7, APOB, HNF1A, LDLR, TOMM40, HNF1A, APOA5C-reactive proteinliver171.17E-043.97MLXIPL, RORA, CRP, HNF1A, TOMM40, BAZ1B, IRF1D-dimer levelsliver116.87E-044.99NME7, FGG, EDEM2, FGAFibrinogenliver153.40E-033.40FGB, FGA, FGGLung cancercancer144.39E-033.46C2, CRP, HSPA1A, TP63Mean corpuscular hemoglobinblood88.57E-035.02GCDH, USP49, RCL1, SLC17A1, TFRC, MPSTProtein quantitative trait lociother measurement142.49E-022.93CRP, IFT81, BCO2Serum markers of iron statusother measurement132.67E-023.03TCP1, MRPL18 , TF, SLC17A1, HIST1H4C, MPST, GHRTriglyceridesblood lipid122.84E-023.16TRIB1, MLXIPL, DOCK7, BAZ1B, GALNT2, TRIB1, APOA5Select biomarker traitsother measurement83.89E-024.08CRP, OR10J5Lead GWAS SNPs and their associated Disease Traits were obtained directly from the NHGRI catalog (Hindorff et al., 2009). An LD window (r2 ≥ 0.8) around each SNP was obtained and regions with identical Disease Traits were collapsed into a single interval. These Disease-Trait–associated intervals were then intersected with all CRMs and Singleton categories as in Figure 7. This table shows Disease Traits that were significantly enriched for Deeply shared CRMs. The summarized disease category used in Figure 7, the number of Deeply shared associated CRMs, the Bonferroni corrected p-values from the hypergeometric test, fold enrichment of Deeply shared CRMs, and the nearest gene to the Deeply shared CRM, if it is protein coding, are shown. Figure 7—source data 1G contains detailed enrichment information including SNP ID and primary GWAS publication (PMID).
+We then asked if any specific disease traits, as written in the NHGRI GWAS catalog, were enriched for shared CRMs. We found that for the 2.5 kb window analysis, only LDL cholesterol significantly enriched for Deeply shared CRMs (p = 0.037; 4.54-fold enriched; Figure 7—source data 1E), whereas the LD window analysis revealed 11 disease traits that were enriched for Deeply shared CRMs (see Table 1; Figure 7—source data 1F). For example, enrichments driven by lead SNPs for LDL cholesterol (blood lipid category, p = 4.84 × 10−5; 3.7-fold enriched) involved several loci including TRIB1, ABCG8, APOB, SORT1, TOMM40, APOA5 and HNF1A. Lead SNPs for fibrinogen (liver category, p = 3.40 × 10−3; 3.4-fold enriched) occurred in LD with the fibrinogen locus. C-reactive protein (liver category, p = 1.17 × 10−4; 4.0-fold enriched) enriched for Deeply shared CRMs near CRP itself in addition to RORA, MLXIPL, HNF1A, BAZ1B, and IRF1 loci (Table 1; Figure 7—source data 1G).
+
+**Table 1.**
+ Table of GWAS Disease Traits that significantly enriched for Deeply shared CRMs
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Disease trait (NHGRI)</th>
+      <th>Category (this study)</th>
+      <th>Number of Deeply shared CRMs</th>
+      <th>Deeply shared CRM enrichment (adjusted p-value)</th>
+      <th>Fold enrichment</th>
+      <th>Closest genes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Other metabolic traits</td>
+      <td>other measurement</td>
+      <td>11</td>
+      <td>4.42E-05</td>
+      <td>6.42</td>
+      <td>CRP, HNF1A, PANK1</td>
+    </tr>
+    <tr>
+      <td>LDL cholesterol</td>
+      <td>blood lipid</td>
+      <td>20</td>
+      <td>4.84E-05</td>
+      <td>3.71</td>
+      <td>TRIB1, ABCG8 PSRC1, DOCK7, APOB, HNF1A, LDLR, TOMM40, HNF1A, APOA5</td>
+    </tr>
+    <tr>
+      <td>C-reactive protein</td>
+      <td>liver</td>
+      <td>17</td>
+      <td>1.17E-04</td>
+      <td>3.97</td>
+      <td>MLXIPL, RORA, CRP, HNF1A, TOMM40, BAZ1B, IRF1</td>
+    </tr>
+    <tr>
+      <td>D-dimer levels</td>
+      <td>liver</td>
+      <td>11</td>
+      <td>6.87E-04</td>
+      <td>4.99</td>
+      <td>NME7, FGG, EDEM2, FGA</td>
+    </tr>
+    <tr>
+      <td>Fibrinogen</td>
+      <td>liver</td>
+      <td>15</td>
+      <td>3.40E-03</td>
+      <td>3.40</td>
+      <td>FGB, FGA, FGG</td>
+    </tr>
+    <tr>
+      <td>Lung cancer</td>
+      <td>cancer</td>
+      <td>14</td>
+      <td>4.39E-03</td>
+      <td>3.46</td>
+      <td>C2, CRP, HSPA1A, TP63</td>
+    </tr>
+    <tr>
+      <td>Mean corpuscular hemoglobin</td>
+      <td>blood</td>
+      <td>8</td>
+      <td>8.57E-03</td>
+      <td>5.02</td>
+      <td>GCDH, USP49, RCL1, SLC17A1, TFRC, MPST</td>
+    </tr>
+    <tr>
+      <td>Protein quantitative trait loci</td>
+      <td>other measurement</td>
+      <td>14</td>
+      <td>2.49E-02</td>
+      <td>2.93</td>
+      <td>CRP, IFT81, BCO2</td>
+    </tr>
+    <tr>
+      <td>Serum markers of iron status</td>
+      <td>other measurement</td>
+      <td>13</td>
+      <td>2.67E-02</td>
+      <td>3.03</td>
+      <td>TCP1, MRPL18 , TF, SLC17A1, HIST1H4C, MPST, GHR</td>
+    </tr>
+    <tr>
+      <td>Triglycerides</td>
+      <td>blood lipid</td>
+      <td>12</td>
+      <td>2.84E-02</td>
+      <td>3.16</td>
+      <td>TRIB1, MLXIPL, DOCK7, BAZ1B, GALNT2, TRIB1, APOA5</td>
+    </tr>
+    <tr>
+      <td>Select biomarker traits</td>
+      <td>other measurement</td>
+      <td>8</td>
+      <td>3.89E-02</td>
+      <td>4.08</td>
+      <td>CRP, OR10J5</td>
+    </tr>
+  </tbody>
+</table>
+
+_Lead GWAS SNPs and their associated Disease Traits were obtained directly from the NHGRI catalog (Hindorff et al., 2009). An LD window (r2 ≥ 0.8) around each SNP was obtained and regions with identical Disease Traits were collapsed into a single interval. These Disease-Trait–associated intervals were then intersected with all CRMs and Singleton categories as in Figure 7. This table shows Disease Traits that were significantly enriched for Deeply shared CRMs. The summarized disease category used in Figure 7, the number of Deeply shared associated CRMs, the Bonferroni corrected p-values from the hypergeometric test, fold enrichment of Deeply shared CRMs, and the nearest gene to the Deeply shared CRM, if it is protein coding, are shown. Figure 7—source data 1G contains detailed enrichment information including SNP ID and primary GWAS publication (PMID)._
 
 In order to explore the functional relevance of these findings, we looked for annotated regulatory SNPs in the RegulomeDB database (Boyle et al., 2012) within the 1020 CRM or single TF regions we found to be within 2.5 kb of a lead GWAS SNP. Of these 1020 regions, 753 contained at least one variant, 90% of which showed evidence of regulatory potential in RegulomeDB (Supplementary file 2). In particular, 317 of these 753 regions had TF binding in orthologous regions in additional species, making them rational candidates for future functional exploration.
 
 We also asked whether the collection of recently identified ‘super-enhancers’ (Hnisz et al., 2013), which were enriched for disease loci in a tissue-specific manner, would also enrich for liver-related lead GWAS SNPs. Our analysis supported the association between super-enhancers and immune system related GWAS SNPs reported by Hnisz et al. (with the highest enrichment for immune cell GWAS lead SNPs found in ‘super-enhancers’ in cell line CD20, p = 3.24 × 10−6). However, unlike what we found for shared CRMs in liver, super-enhancers obtained from the liver cancer cell line HepG2 were not enriched by the liver-related lead GWAS SNPs (Figure 7—figure supplement 2). This observation may be related to biological differences between primary liver tissue and HepG2.
 
-## Shared CRMs are disrupted in known liver-related diseases affecting blood coagulation and lipid regulation
+### Shared CRMs are disrupted in known liver-related diseases affecting blood coagulation and lipid regulation
 
-To further investigate the functional role of shared CRMs and to test the hypothesis that disruption of conserved combinatorial binding can lead to human disease, we overlapped our CRMs and singletons data with manually curated regulatory mutations directly linked to human disease (Human Genome Mutation Database Professional version; HGMD) (
+To further investigate the functional role of shared CRMs and to test the hypothesis that disruption of conserved combinatorial binding can lead to human disease, we overlapped our CRMs and singletons data with manually curated regulatory mutations directly linked to human disease (Human Genome Mutation Database Professional version; HGMD) (Stenson et al., 2012). This database contains the most comprehensive set of curated and functionally validated mutations that have occurred in human regulatory DNA regions and have led to a change in disease gene expression. A total of 157 genes associated with regulatory mutations overlapped our human ChIP-seq data, 106 of which were in our CRMs (Table 2; Supplementary file 3). The Deeply shared CRMs overlapped a set of 47 genes associated with regulatory mutations. These 47 genes were clearly enriched for two liver-related biological pathways: coagulation and complement factors (p = 9.34 × 10−6; 24-fold enrichment) and lipid homeostasis (p = 6.93 × 10−5, 36-fold enrichment) (Figure 8—source data 1A,B). We found multiple disease-causing regulatory mutations overlapping our CRMs at promoters of seven critical genes in the coagulation pathway (FGA, FGB, F7, F9, F10, F11, F12; Figure 8, Figure 8—source data 1). While many of these mutations have been individually known for decades, this is the first time they have been put in context of a regulatory network consisting of these liver-enriched TFs. Furthermore, repeated observation of rare mutations in the promoter regions of several of the blood coagulation proteins correspond to critical positions in predicted DNA binding motifs for the liver-enriched TFs. For example,Mutations leading to Factor VII deficiency and severe bleeding disorders occur in a promoter region harboring a CRM shared in all five species (Figure 8—figure supplement 1A). Several mutations (including SNP variant rs561241) within a conserved HNF4A motif have been shown to perturb F7 transcription leading to hemophilia (Zheng et al., 2011).A critical highly conserved CRM localizes to the F9 promoter (Figure 8—figure supplement 1B). Multiple mutations within this region are associated with defective expression of F9 and clinical hemophilia (Giannelli et al., 1998). Several of these mutations have previously been shown to disrupt the binding of CEBPA and HNF4A (Crossley and Brownlee, 1990; Crossley et al., 1992; Reijnen et al., 1993; Giannelli et al., 1998). We recently demonstrated that ONECUT1 binds to the −6 site of F9 in human and mouse (Funnell et al., 2013). Inspection of the multiple species alignment suggests the same arrangement and spacing of CEBPA, HNF4A, and ONECUT1 motifs in the human and macaque CRMs, whereas the mouse and rat ONECUT1 motifs are predicted to begin three base pairs upstream.
+
+**Table 2.**
+ HGMD disease variants falling within motifs of shared CRMs and singletons
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Coordinates</th>
+      <th>Gene name</th>
+      <th>HGMD (regulatory, disease mutations)</th>
+      <th>Disease mutations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="19">Shared CRM</td>
+      <td>3:30622781-30623121</td>
+      <td>TGFBR2</td>
+      <td>Marfan syndrome II</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>3:37009728-37010105</td>
+      <td>MLH1</td>
+      <td>Colorectal cancer, non-polyposis</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>3:95175129-95175686</td>
+      <td>PROS1</td>
+      <td>Protein S deficiency</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>3:172227012-172227583</td>
+      <td>SLC2A2</td>
+      <td>Diabetes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>4:187423808-187424193</td>
+      <td>F11</td>
+      <td>Factor XI deficiency</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>5:176769019-176769427</td>
+      <td>F12</td>
+      <td>Factor XII deficiency</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>7:75769704-75769860</td>
+      <td>HSPB1</td>
+      <td>Amyotrophic lateral sclerosis</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>9:35647685-35648108</td>
+      <td>RMRP</td>
+      <td>Cartilage-Hair hypoplasia*</td>
+      <td>60</td>
+    </tr>
+    <tr>
+      <td>9:103237817-103238177</td>
+      <td>ALDOB</td>
+      <td>Fructose intolerance</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>11:57121333-57121845</td>
+      <td>SERPING1</td>
+      <td>Angioneurotic oedema</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>11:116213420-116213833</td>
+      <td>APOA1</td>
+      <td>Apolipoprotein A1 deficiency; Atherosclerosis with coronary artery disease</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>12:119900361-119900931</td>
+      <td>HNF1A</td>
+      <td>Diabetes</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>13:112807935-112808278</td>
+      <td>F7</td>
+      <td>Factor VII deficiency</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>17:39777939-39778164</td>
+      <td>GRN</td>
+      <td>Amyotrophic lateral sclerosis; Frontotemporal dementia</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>19:11060834-11061300</td>
+      <td>LDLR</td>
+      <td>Hypercholesterolaemia</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>19:40465042-40465277</td>
+      <td>HAMP</td>
+      <td>Haemochromatosis</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>19:50140788-50141367</td>
+      <td>APOC2</td>
+      <td>Apolipoprotein C2 deficiency</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>20:42417527-42417906</td>
+      <td>HNF4A</td>
+      <td>Diabetes</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>X:138440311-138440689</td>
+      <td>F9</td>
+      <td>Haemophilia B</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Shared singleton</td>
+      <td>1:55277551-55277787</td>
+      <td>PCSK9</td>
+      <td>Hypercholesterolaemia, autosomal dominant</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2:47483486-47483635</td>
+      <td>MSH2</td>
+      <td>Colorectal cancer, non-polyposis</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>5:147191404-147191657</td>
+      <td>SPINK1</td>
+      <td>Pancreatitis</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>11:107598900-107599060</td>
+      <td>ATM</td>
+      <td>Ataxia telangiectasia</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>17:3486175-3486485</td>
+      <td>CTNS</td>
+      <td>Cystinosis</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>17:27840752-27841062</td>
+      <td>CDK5R1</td>
+      <td>Mental retardation</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>19:54160105-54160315</td>
+      <td>FTL</td>
+      <td>Cataract, bilateral</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>X:66680386-66680665</td>
+      <td>AR</td>
+      <td>Prostate cancer</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Human only CRM</td>
+      <td>1:113300254-113300535</td>
+      <td>SLC16A1</td>
+      <td>Exercise-induced hyperinsulinism</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1:224075148-224075491</td>
+      <td>EPHX1</td>
+      <td>Hypercholanaemia</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>3:170965492-170965762</td>
+      <td>TERC</td>
+      <td>Aplastic anaemia; Dyskeratosis congenita; Myelodysplastic syndrome</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>8:64161127-64161334</td>
+      <td>TTPA</td>
+      <td>Ataxia, isolated vitamin E deficiency</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>10:27429312-27429620</td>
+      <td>ANKRD26</td>
+      <td>Thrombocytopaenia</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>13:59636050-59636246</td>
+      <td>DIAPH3</td>
+      <td>Auditory neuropathy</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>X:146800975-146801150</td>
+      <td>FMR1</td>
+      <td>Fragile X mental retardation syndrome</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>X:153643911-153644318</td>
+      <td>DKC1</td>
+      <td>Dyskeratosis congenita, X-linked</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+_HGMD disease variants falling within shared CRMs, shared singletons and human only CRMs. The number of unique regulatory mutations designated as ‘disease-mutations’ in the HGMD database recorded within each CRM or singleton is shown.*RMRP is a non-coding RNA that is found in HGMD associated to several related diseases._
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/02626/elife-02626-fig8-v1.jpg)
 
-**Figure 8.:** Human CRMs that had TF binding in syntenic regions in at least two additional species (n = 5046) were intersected with the HGMD database. All protein coding genes associated with a regulatory mutation were analysed. Relationships among these genes were investigated and a representative analysis obtained using GeneMANIA (‘Materials and methods’). Genes (large grey circles) are connected by pathways and protein–protein interactions are shown. The smaller white circles are genes predicted by GeneMANIA to be in the network. The 47 unique genes were associated into 35 clusters using DAVID (Huang da et al., 2009). Eight Gene Ontology terms from the 35 clusters had an adjusted p-value of less than 0.005 (Figure 8—source data 1A; Supplementary file 3). 4 of the 8 significant GO categories containing the most genes are illustrated: response to wounding (open red circle, p = 3.16 × 10−9; 9.9-fold enriched); blood coagulation (red dot, p = 9.34 × 10−6; 22.0-fold enriched); response to organic substance (open yellow circle, p = 1.05 × 10−5; 6.4-fold enriched); and lipid homeostasis (yellow dot, p = 6.93 × 10−5; 36.2-fold enriched).DOI: http://dx.doi.org/10.7554/eLife.02626.02410.7554/eLife.02626.025Figure 8—source data 1.Figure 8 and the HGMD genes that overlapped our CRMs and singletons in the different phylogenetic categories.DOI: http://dx.doi.org/10.7554/eLife.02626.025
+**Figure 8.:** Human CRMs that had TF binding in syntenic regions in at least two additional species (n = 5046) were intersected with the HGMD database. All protein coding genes associated with a regulatory mutation were analysed. Relationships among these genes were investigated and a representative analysis obtained using GeneMANIA (‘Materials and methods’). Genes (large grey circles) are connected by pathways and protein–protein interactions are shown. The smaller white circles are genes predicted by GeneMANIA to be in the network. The 47 unique genes were associated into 35 clusters using DAVID (Huang da et al., 2009). Eight Gene Ontology terms from the 35 clusters had an adjusted p-value of less than 0.005 (Figure 8—source data 1A; Supplementary file 3). 4 of the 8 significant GO categories containing the most genes are illustrated: response to wounding (open red circle, p = 3.16 × 10−9; 9.9-fold enriched); blood coagulation (red dot, p = 9.34 × 10−6; 22.0-fold enriched); response to organic substance (open yellow circle, p = 1.05 × 10−5; 6.4-fold enriched); and lipid homeostasis (yellow dot, p = 6.93 × 10−5; 36.2-fold enriched).
 
 ![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/02626/elife-02626-fig8-figsupp1-v1.jpg)
 
-**Figure 8—figure supplement 1.:** Raw human ChIP-seq signals (bed graph format) are shown at the proximal promoters of three blood coagulation genes: (A) F7; and (B) F9. TF reads and significantly bound peak regions are shown as colored rectangles according to the TF (CEBPA = red; HNF4A = blue; FOXA1 = green; and ONECUT1 = yellow). All unique regulatory mutations in the HGMD overlapping human CRMs are shown with black arrows. Asterisks are shown above the position weight matrices for each TF at the position homologous to a unique human regulatory mutation (i.e., an A → T is only counted once). For each species, in silico predicted motif positions for each TF are shown above the multiple sequence alignment at each promoter when they overlap regions that have evidence of ChIP signal.DOI: http://dx.doi.org/10.7554/eLife.02626.026
+**Figure 8—figure supplement 1.:** Raw human ChIP-seq signals (bed graph format) are shown at the proximal promoters of three blood coagulation genes: (A) F7; and (B) F9. TF reads and significantly bound peak regions are shown as colored rectangles according to the TF (CEBPA = red; HNF4A = blue; FOXA1 = green; and ONECUT1 = yellow). All unique regulatory mutations in the HGMD overlapping human CRMs are shown with black arrows. Asterisks are shown above the position weight matrices for each TF at the position homologous to a unique human regulatory mutation (i.e., an A → T is only counted once). For each species, in silico predicted motif positions for each TF are shown above the multiple sequence alignment at each promoter when they overlap regions that have evidence of ChIP signal.
 
 In this analysis of known functional and disease causing regulatory mutations from the HGMD database, it is worth noting that most of the examples we found overlapping Deeply shared liver CRMs resided close to the TSS. As most TF binding of the factors we profiled occur outside of proximal promoters, it is likely that many more human mutations that regulate genes through long-range interactions remain to be found. Just as gene sequencing has uncovered a diverse array of mutations for most disease genes, we expect that disruption of conserved TF bound regions will be found to have pathological consequences.
 
@@ -201,29 +543,29 @@ Overall, the observation of recurrent phenotype-causing regulatory mutations in 
 
 ## Materials and methods
 
-## Molecular biology and genomics
+### Molecular biology and genomics
 
-## Tissue preparation
+#### Tissue preparation
 
 Tissues from all five species were treated post-mortem with 1% formaldehyde as previously described (Schmidt et al., 2009). The dog liver material (Cfam; 2 adult males; 14 months of age) was obtained from commercial sources (Harlan). Human liver material (Hsap, 2 males, unknown age) was obtained from the Liver Tissue Distribution Program (NIDDK Contract #N01-DK-9-2310) at the University of Pittsburgh and from Addenbrooke's Hospital, Cambridge under the human tissue license (08/H0308/117). Mmus (adult C57BL6/J males, 2.5 months of age) was obtained from the CRI under Home Office license PPL 80/2197. Macaque (Mmul) material was purchased from the CFM, UK.
 
-## ChIP-Sequencing
+#### ChIP-Sequencing
 
 The CEBPA antibody sc-9314 (Santa Cruz Biotech, CA) and HNF4a antibody ARP31946 (Aviva Biosystems, CA) were used as previously described (Schmidt et al., 2010). FOXA1 antibody ab5089 (Abcam, UK) has been previously used for FOXA1 ChIP–chip and ChIP-seq experiments in human and mouse (Motallebipour et al., 2009; Hurtado et al., 2011). ONECUT1 (HNF6) anti-human polyclonal antibody sc-13050 (Santa Cruz Biotech) has previously been described for human and mouse ChIP–chip (Odom et al., 2007; Wilson et al., 2008). Further details on the antigens used to raise the antibodies used for ChIP-seq are shown in Figure 1—source data 1D. Briefly, the immunoprecipitated material was end-repaired, A-tailed, ligated to single- or paired-end sequencing adapters, amplified by 18-cycles of PCR and size selected (200–300 bp) followed by single end sequencing on an Illumina Genome Analyzer II according to the manufacturer's instructions.
 
-## Data
+#### Data
 
 ChIP-seq data generated for this study includes: CEBPA, FOXA1, ONECUT1, and HNF4A in rhesus macaque, FOXA1 in human, and FOXA1 and ONECUT1 in dog. Experiments used in this study that have been previously reported by our team include: ChIP-seq experiments for CEBPA and HNF4A for human and dog (Schmidt et al., 2010; E-TABM-722); ChIP-seq for Hnf4a, Cebpa, and Foxa1 in C57BL6/J mice (E-MTAB-1414), as well as for Brown Norway rat (E-MTAB-1415) (Stefflova et al., 2013); Human and mouse ONECUT1 ChIP-seq (E-MTAB-890) (Funnell et al., 2013); and RNAseq data for all five species (Kutter et al., 2011; E-MTAB-424). To facilitate analysis of this data set by others, all ChIP-seq files used here have been deposited in ArrayExpress under a single accession number (E-MTAB-1509). We filled genomic gaps in the coding regions for dog FOXA1 and macaque ONECUT1 and deposited them under NCBI accessions numbers JN601139 and JQ178331 respectively. Illumina BodyMap data were obtained from E-MTAB-513.
 
-## Computational biology and analysis
+### Computational biology and analysis
 
-## Sequence alignment and peak calling
+#### Sequence alignment and peak calling
 
 ChIP-seq and input reads from each species were aligned with MAQ (Li et al., 2008) using default parameters to their respective genome assemblies (human [NCBI 36], macaque [Mmul_1], mouse NCBI m37; rat [RGSC3.4] and dog [CanFam2.0]). All sequence, genome annotations, and comparative genomics data were taken from Ensembl release 52.
 
 For each TF, at least two biological replicates were performed and aligned to their respective genomes (Figure 1—source data 1A–C) (Landt et al., 2012). Sequence reads from high quality replicates were pooled prior to calling peaks used for all comparative analyses and building CRMs. Peak calling was performed using SWEMBL with parameters ‘-R 0.005 -i –S’ as described previously (http//www.ebi.ac.uk/∼swilder/SWEMBL/; Schmidt et al., 2012). The correlation of normalized read counts between biological replicates in the ChIP-seq data was further assessed using the DiffBind Bioconductor package (Stark and Brown, 2011) (Figure 1—source data 1C). ChIP-seq data was also assessed using the quality control standards proposed by the ENCODE consortium and further described by Marinov et al. (2014). In the case where the second replicate could validate the first replicate, but gave substantially less peaks, we only used the one replicate that gave the most ChIP-seq binding events for our downstream comparative analyses. This occurred for: macaque CEBPA, macaque HNF4A, macaque FOXA1, and dog ONECUT1. Although the human female ONECUT1 was a good replicate, we only used peaks from the human male ONECUT1 experiment to confine our comparative analysis to one sex.
 
-## Motif discovery
+#### Motif discovery
 
 Motif discovery was conducted with MEME (Bailey et al., 2009) using the default settings and the following parameters (-revcomp -maxw 20 -minw 6 -nmotifs 5). We selected the top 500 peaks ordered by input-corrected read depth and used the 25 bp centered on the identified summit of the peak as our input for the motif discovery analysis. As we previously reported for CEBPA and HNF4A, the position weight matrices (PWM) for FOXA1 and ONECUT1 were nearly identical between species (Figure 1—figure supplement 1) (Schmidt et al., 2010). For Figure 8—figure supplement 1, we used the mouse PWMs for each TF to identify motif location within all of our CRMs using the programs PERL TFBS (Lenhard and Wasserman, 2002) and CENTIPEDE (Pique-Regi et al., 2011). This motif location information was used in conjunction with ChIP-seq signal to manually annotate promoters and regulatory variants (Figure 8—figure supplement 1).
 
@@ -231,39 +573,39 @@ Search for secondary motifs was done using peak-motifs from RSAT (Thomas-Chollie
 
 Motif comparison was performed using compare-matrices from RSAT. The program calculates the correlation between two matrices shifting positions; the correlation is normalized based on the width of the alignment to avoid high correlation based on few flanking positions (Supplementary file 1).
 
-## Cis-regulatory module (CRM) construction
+#### Cis-regulatory module (CRM) construction
 
 We first computed the distances separating any two TF summits along the genome. ChIP-seq peaks were clustered into CRMs when the peak summits from at least two distinct TFs (e.g., CEBPA and HNF4A) fell within 300 bp (see Figure 1 for graphical explanation). (Figure 1A, Figure 1—figure supplement 3). All other TFs were treated as singletons.
 
-## Interspecies overlap of transcription factor binding and CRMs
+#### Interspecies overlap of transcription factor binding and CRMs
 
 Shared binding events and CRMs were identified using the 9-way Enredo-Pecan-Ortheus (EPO; Paten et al., 2008) multiple sequence alignments from the Ensembl Compara database (Flicek et al., 2010). We performed these comparative analyses requiring different overlaps within the MSA criteria (1 bp, 10 bp, 25 bp, and 50 bp) (Figure 1—source data 1G). This range of parameters did not overtly affect the number of shared CRMs we retrieved. For the results presented, we define a CRM (or single TF) occupied region to be shared if it overlaps at least 10 bp of a CRM (or single TF) occupied region in a second species. See Figure 2—source data 1 for all the CRMs and singletons along with their phylogenetic categories.
 
-## Liver RNA-seq data analysis
+#### Liver RNA-seq data analysis
 
 Liver RNA-seq data from the same species were used to analyze if CRM status and conservation were related to gene expression levels. Polyadenylated mRNA levels were assessed using previously described RNA-seq data (E-MTAB-424; Kutter et al., 2011). Briefly, trimmed 36 bp reads were aligned using TopHat and FPKM estimates were obtained using Cufflinks (Trapnell et al., 2012) for all features annotated in Ensembl 52. Individual TF binding events and CRMs were associated to the nearest gene. The number of shared species for individual TF binding events and CRMs were recorded and associated with expression data.
 
-## Illumina Body Map analysis
+#### Illumina Body Map analysis
 
 We retrieved raw FASTQ files from ArrayExpress (accession E-MTAB-513). We first filtered these data with prinseq-lite (v0.15) and fastx (v0.0.13): we trimmed both read ends with a quality threshold of 20, and we then discarded those reads that were shorter than 35 nucleotides, had more than 5% of Ns, a dust score bigger than 10 (i.e., low complexity reads), and more than 5% of the bases with a quality inferior to 30. This subset of high quality reads was then mapped to the genome using BWA (v0.5.9, default options). We retrieved mapped reads and filtered them further by removing reads with a mapping quality below 20 (including multireads). In the case of paired-end data, we also removed all reads that were not properly paired. Finally, we calculated exon expression levels using htseq-count (HTSeq v0.5.3p3) and averaged those to produce gene expression estimates. TF binding sites not found in CRMs (Singletons) or within CRMs (Modules) were associated with the nearest gene. The FPKM (Fragments Per Kilobase of exon per Million reads) for each gene was recorded (obtained from the Human BodyMap 2.0 dataset from Illumina) and displayed as a heatmap (Figure 5).
 
-## Comparison to ENCODE data
+#### Comparison to ENCODE data
 
 We first compiled data relevant to transcriptional regulation from ENCODE, for all cell lines. For each ENCODE data set, we then calculated its observed overlap with each of our ChIP data sets (i.e., ‘Deeply shared CRMs’, and ‘Shared Singletons’) by counting the number of regions that overlap by at least 1 bp. We then built a distribution of expected overlap values from 1000 iterations of randomizing the input regions, by shuffling each one into a random genomic region chosen from among the DNaseI hypersensitive regions in any cell type (i.e., only shuffling them into possible regions of open chromatin, as a conservative estimate of possible regions where TFs might bind). The distribution of the overlap scores from the randomized data resembles a normal distribution, which we used to generate a Z-score and p-value for the observed number of peaks that overlap each real data set (see Supplementary file 1).
 
-## Functional enrichment analyses using GREAT
+#### Functional enrichment analyses using GREAT
 
 Functional enrichment of ChIP-seq data was performed using the online tool GREAT version 2.0.2 (McLean et al., 2010). Importantly, GREAT is designed for ChIP-seq data analysis unlike hypergeometric enrichment analyses used for gene expression data. Hg18 assembly was used with the Association Rule: Basal+extension: 5 kb upstream, 1 kb downstream, 1000 kb max extension (Figure 3, Figure 6). GREAT figures were produced with an in-house R tool and are ranked according to the same default criteria used by the GREAT (binomial FDR q-value is ≤0.05 with a significant hypergeometric FDR q-value and a minimum region fold enrichment of 2). The −log10 binomial FDR q-values were plotted on the x-axis. Q-values for up to a maximum of five of the most significant enrichment categories obtained for each test data set are shown. Significant enrichments are labeled with an asterisk, which is drawn proportional to the fold enrichment value (Figure 3—source data 1).
 
-## Overlap of shared CRMs with curated human regulatory mutations
+#### Overlap of shared CRMs with curated human regulatory mutations
 
 Human CRMs that had TF binding in syntenic regions in at least two additional species (n = 5046) were intersected with the Human Gene Mutation Database (HGMD; professional version). A representative network analysis of these genes was obtained using the GeneMANIA server using default parameters (Warde-Farley et al., 2010). (Figure 8, Figure 8—source data 1). Using this data and the Default parameters for its Pathway analysis, GeneMania drew upon information from six sources (five of which are within Pathway Commons) and the sixth being Wu et al. (2010). For its physical interaction analysis, it utilized 190 data sources supported by five data sets from iRefIndex (Razick et al., 2008) and one study in BioGrid (Zanon et al., 2013). Functional annotation enrichment of these genes was performed using DAVID (Huang da et al., 2009).
 
-## Location and GERP analysis of CRMs and singletons
+#### Location and GERP analysis of CRMs and singletons
 
 To define the locations of each regulatory region, we sliced the genome into categories: TSS ±3 kb, intronic, intergenic, and exonic. We obtained all transcripts (exons and introns) defined by the Ensembl genebuild, keeping the longest features. Any regions falling within ±3 kb of a TSS was characterized as the TSS ±3 kb category. In the event of complex gene arrangements or regions bridging two categories, we prioritized the locations as follows: TSS ± 3 kb > intron > intergenic > exon. Conservation scores were obtained from the Ensembl Compara database (Flicek et al., 2010). Genomic Evolutionary Rate Profiling (GERP; Cooper et al., 2005) score was used to calculate the conservation of each nucleotide in multi-species alignment The multiple alignment used to derive GERP score is the 29-way EPO alignment. For CRMs and singletons, GERP scores were extracted for each base pair ±1 kb of the center of the CRMs or the peak summit for singletons.
 
-## Intersecting GWAS with shared CRMs
+#### Intersecting GWAS with shared CRMs
 
 Linked SNPs and r2 values were obtained using the Ensembl Variation Perl API (Rios et al., 2010) with the 1000 Genomes Project pilot 1 (1000 Genomes Project Consortium et al., 2010) low coverage CEU panel genotypes. Linkage disequilibrium measures were calculated between target SNPs from the NHGRI GWAS catalog (Hindorff et al., 2009) up to a maximum of 100 kb upstream and downstream of the lead SNP. Prior to overlapping with CRMs/singletons, windows around each SNP were calculated based on the largest genomic interval between two SNPs in linkage disequilibrium with the lead SNP (r2 ≥ 0.8). Alternatively, each GWAS lead SNP was given a window of ±2.5 kb. The GWAS catalog (25 August 2011) was manually summarized into 25 categories using the given Disease Trait, Experimental Factor Ontologies (EFO; Malone et al., 2010), and the primary literature. The motivation for this classification was to group GWAS studies that had a clear tissue-specificity (e.g., liver, immune system) or disease type (e.g., diabetes, cancer) (see Figure 7—figure supplement 1 for overview of classification and Figure 7—source data 1H for the disease trait/summary key used). Lead SNPs whose window overlapped were collapsed into a single interval. Identical disease trait/summaries for lead SNPs within the same interval were counted only once.
 

@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.22978.001 The amyloid hypothesis suggests that beta-amyloid (Aβ) deposition leads to alterations in neural function and ultimately to cognitive decline in Alzheimer’s disease. However, factors that underlie Aβ deposition are incompletely understood. One proposed model suggests that synaptic activity leads to increased Aβ deposition. More specifically, hyperactivity in the hippocampus may be detrimental and could be one factor that drives Aβ deposition. To test this model, we examined the relationship between hippocampal activity during a memory task using fMRI and subsequent longitudinal change in Aβ using PIB-PET imaging in cognitively normal older adults. We found that greater hippocampal activation at baseline was associated with increased Aβ accumulation. Furthermore, increasing Aβ accumulation mediated the influence of hippocampal activation on declining memory performance, demonstrating a crucial role of Aβ in linking hippocampal activation and memory. These findings support a model linking increased hippocampal activation to subsequent Aβ deposition and cognitive decline. DOI: http://dx.doi.org/10.7554/eLife.22978.001
+The amyloid hypothesis suggests that beta-amyloid (Aβ) deposition leads to alterations in neural function and ultimately to cognitive decline in Alzheimer’s disease. However, factors that underlie Aβ deposition are incompletely understood. One proposed model suggests that synaptic activity leads to increased Aβ deposition. More specifically, hyperactivity in the hippocampus may be detrimental and could be one factor that drives Aβ deposition. To test this model, we examined the relationship between hippocampal activity during a memory task using fMRI and subsequent longitudinal change in Aβ using PIB-PET imaging in cognitively normal older adults. We found that greater hippocampal activation at baseline was associated with increased Aβ accumulation. Furthermore, increasing Aβ accumulation mediated the influence of hippocampal activation on declining memory performance, demonstrating a crucial role of Aβ in linking hippocampal activation and memory. These findings support a model linking increased hippocampal activation to subsequent Aβ deposition and cognitive decline.
 
 ## Introduction
 
@@ -34,7 +34,65 @@ In the present study, our goal was to examine how hippocampal neural activity in
 
 ## Results
 
-Forty-five cognitively normal older adults participated in the fMRI experiment, the results of which have been previously published (Mormino et al., 2012). For the current study, we included all subjects who had: (1) participated in the original fMRI experiment, (2) at least two PIB scans (first near the time of fMRI), and (3) at least three neuropsychological testing sessions. Fifteen of the 45 subjects did not return for follow-up PIB-PET imaging after their initial PIB scan. Three additional participants were excluded due to technical factors. This left us with a sample of twenty-seven subjects (N = 27) who met the criteria for the study (see Table 1).10.7554/eLife.22978.003Table 1.Participant demographics (N = 27).DOI: http://dx.doi.org/10.7554/eLife.22978.003VariableMeanRangeAge (at MRI) (SD)76.5 (5.6) 67–91 Sex (M: F)8: 19Education, years (SD)17.4 (1.8) 14–20 ApoE4 carriers, n (%)8 (30) Time since MRI (PIB), years (SD)3.4 (2.1) 2.8–6 Time since MRI (CVLT), years (SD)2.7 (1.1) 1.5–6.1 Two PIB scans, n19Three PIB scans, n8Key: MRI = Magnetic resonance imaging, SD = Standard deviation, PIB = Pittsburgh Compound B, CVLT = California Verbal Learning Test.
+Forty-five cognitively normal older adults participated in the fMRI experiment, the results of which have been previously published (Mormino et al., 2012). For the current study, we included all subjects who had: (1) participated in the original fMRI experiment, (2) at least two PIB scans (first near the time of fMRI), and (3) at least three neuropsychological testing sessions. Fifteen of the 45 subjects did not return for follow-up PIB-PET imaging after their initial PIB scan. Three additional participants were excluded due to technical factors. This left us with a sample of twenty-seven subjects (N = 27) who met the criteria for the study (see Table 1).
+
+**Table 1.**
+ Participant demographics (N = 27).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable</th>
+      <th>Mean</th>
+      <th>Range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (at MRI) (SD)</td>
+      <td>76.5 (5.6)</td>
+      <td>67–91</td>
+    </tr>
+    <tr>
+      <td>Sex (M: F)</td>
+      <td>8: 19</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Education, years (SD)</td>
+      <td>17.4 (1.8)</td>
+      <td>14–20</td>
+    </tr>
+    <tr>
+      <td>ApoE4 carriers, n (%)</td>
+      <td>8 (30)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Time since MRI (PIB), years (SD)</td>
+      <td>3.4 (2.1)</td>
+      <td>2.8–6</td>
+    </tr>
+    <tr>
+      <td>Time since MRI (CVLT), years (SD)</td>
+      <td>2.7 (1.1)</td>
+      <td>1.5–6.1</td>
+    </tr>
+    <tr>
+      <td>Two PIB scans, n</td>
+      <td>19</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Three PIB scans, n</td>
+      <td>8</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Key: MRI = Magnetic resonance imaging, SD = Standard deviation, PIB = Pittsburgh Compound B, CVLT = California Verbal Learning Test._
 
 Participants performed a memory task inside the MRI scanner that involved being shown two hundred images of natural outdoor scenes with instructions to indicate whether water was present in each image. After the MRI scan (15 min later), a surprise recognition task was conducted that included all stimuli presented during encoding as well as one-hundred novel stimuli. For each image, subjects were asked if they had seen the image before and were allowed to respond with one of four responses: (1) high-confidence yes, (2) low-confidence yes, (3) high-confidence no, and (4) low-confidence no. The recognition task was self-paced and subjects were encouraged to be as accurate as possible.
 
@@ -42,37 +100,177 @@ We examined three key measures: (1) task-related activity in the right hippocamp
 
 To examine relationships between hippocampal activation at baseline, longitudinal Aβ accumulation, and longitudinal memory performance, we conducted a series of linear mixed models. All models included age, sex, and education as covariates, as well as a random intercept to account for individual variability in initial PIB DVR or CVLT scores and random slopes to account for individual variability in PIB DVR or CVLT slopes. Age was mean-centered at 76.5 years, education was mean-centered at 17.4 years, and females were the reference group, so that resulting parameter estimates could be interpreted as representing an example 76.5-year-old female with 17.4 years of education.
 
+Figure 1 shows the slopes of PIB DVR and CVLT over time for each subject. PIB DVR slopes across time (relative to baseline MRI) for each subject are shown in Figure 1a. CVLT slopes across time (relative to baseline MRI) are shown in Figure 1b. The average time from the baseline MRI to last PIB scan was 3.4 years (range 2.8–6 years) and from MRI to last neuropsychological session was 2.7 years (range 1.5–6.1 years). Participants came in for PIB scans and neuropsychological testing sessions on separate days. The average time between MRI and first PIB scan was about one week and the average time between MRI and first neuropsychological session was about eight weeks. At the baseline exam, six subjects were classified as PIB+ (four were ApoE4 carriers) and by the end of the study eight subjects were PIB+ (both who converted to PIB+ were ApoE4 carriers).
+
 ![Figure 1.](https://cdn.elifesciences.org/articles/22978/elife-22978-fig1-v2.jpg)
 
-**Figure 1.:** (A) [11C] Pittsburgh Compound-B distribution volume ratio slope (PIB slope) for each participant over time, relative to baseline MRI (x = 0), where black line indicates average PIB slope, blue lines indicate little/no change in PIB, and red lines indicate positive PIB slope. The horizontal dotted line indicates the criterion for a positive PIB scan (1.06), (B) California Verbal Learning Test Long-Delay Free Recall slope (CVLT slope) for each participant over time, relative to baseline MRI (x = 0), where black line indicates average CVLT slope, red lines indicate negative CVLT slope, and blue lines indicate positive CVLT slope. All slopes were obtained from the linear mixed model. The following source data (Figure 1—source data 1) is relevant for Figures 1–4.DOI: http://dx.doi.org/10.7554/eLife.22978.00410.7554/eLife.22978.005Figure 1—source data 1.Figures 1–4.DOI: http://dx.doi.org/10.7554/eLife.22978.005
+**Figure 1.:** (A) [11C] Pittsburgh Compound-B distribution volume ratio slope (PIB slope) for each participant over time, relative to baseline MRI (x = 0), where black line indicates average PIB slope, blue lines indicate little/no change in PIB, and red lines indicate positive PIB slope. The horizontal dotted line indicates the criterion for a positive PIB scan (1.06), (B) California Verbal Learning Test Long-Delay Free Recall slope (CVLT slope) for each participant over time, relative to baseline MRI (x = 0), where black line indicates average CVLT slope, red lines indicate negative CVLT slope, and blue lines indicate positive CVLT slope. All slopes were obtained from the linear mixed model. The following source data (Figure 1—source data 1) is relevant for Figures 1–4.
 
-## Hippocampal activation at baseline associated with longitudinal Aβ accumulation
+### Hippocampal activation at baseline associated with longitudinal Aβ accumulation
 
-To determine whether hippocampal activation at baseline predicted longitudinal accumulation of global Aβ, we examined associations between our independent variables of interest (hippocampal activation and time of PIB) and the dependent variable (PIB DVR) using a linear mixed model (with age, sex, and education as covariates). Time of PIB was determined as relative to baseline MRI. The interaction between hippocampal activation and time of PIB (hippocampal activation × time) was the primary effect of interest because it represented the relationship between hippocampal activation and longitudinal PIB DVR change. Results revealed that hippocampal activation at baseline was positively associated with longitudinal amyloid accumulation such that PIB DVR increased at a rate of 0.001 units per year for every one hippocampal activation unit [interaction, p=0.004,
+To determine whether hippocampal activation at baseline predicted longitudinal accumulation of global Aβ, we examined associations between our independent variables of interest (hippocampal activation and time of PIB) and the dependent variable (PIB DVR) using a linear mixed model (with age, sex, and education as covariates). Time of PIB was determined as relative to baseline MRI. The interaction between hippocampal activation and time of PIB (hippocampal activation × time) was the primary effect of interest because it represented the relationship between hippocampal activation and longitudinal PIB DVR change. Results revealed that hippocampal activation at baseline was positively associated with longitudinal amyloid accumulation such that PIB DVR increased at a rate of 0.001 units per year for every one hippocampal activation unit [interaction, p=0.004, Table 2]. To visualize this, we plotted the relationship between PIB slope from the model and hippocampal activation contrast values at baseline (Figure 2a), which showed a positive correlation between PIB slope and hippocampal activation.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/22978/elife-22978-fig2-v2.jpg)
 
-**Figure 2.:** (a) Positive relationship between hippocampal activation (contrast values for subsequent hits versus misses) at baseline and [11C] Pittsburgh Compound-B distribution volume ratio (DVR) slopes (PIB slope measured as PIB DVR values over time) obtained from the linear mixed model, (b) No relationship between non-hippocampal activation (contrast values for subsequent hits versus misses in inferior frontal cortex and occipital cortex) at baseline and [11C] Pittsburgh Compound-B distribution volume ratio (DVR) slopes (PIB slope measured as PIB DVR values over time) obtained from the linear mixed model.DOI: http://dx.doi.org/10.7554/eLife.22978.006
+**Figure 2.:** (a) Positive relationship between hippocampal activation (contrast values for subsequent hits versus misses) at baseline and [11C] Pittsburgh Compound-B distribution volume ratio (DVR) slopes (PIB slope measured as PIB DVR values over time) obtained from the linear mixed model, (b) No relationship between non-hippocampal activation (contrast values for subsequent hits versus misses in inferior frontal cortex and occipital cortex) at baseline and [11C] Pittsburgh Compound-B distribution volume ratio (DVR) slopes (PIB slope measured as PIB DVR values over time) obtained from the linear mixed model.
+
+**Table 2.**
+ Linear mixed model results for hippocampal activation predicting longitudinal amyloid accumulation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Estimate (SE)</th>
+      <th>df</th>
+      <th>t</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>1.00 (0.07)</td>
+      <td>22</td>
+      <td>14.58</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age (at MRI, mc)</td>
+      <td>−0.001 (0.01)</td>
+      <td>22</td>
+      <td>−0.14</td>
+      <td>0.887</td>
+    </tr>
+    <tr>
+      <td>Sex (F)</td>
+      <td>0.10 (0.08)</td>
+      <td>22</td>
+      <td>1.27</td>
+      <td>0.216</td>
+    </tr>
+    <tr>
+      <td>Education (years, mc)</td>
+      <td>−0.02 (0.02)</td>
+      <td>22</td>
+      <td>−0.89</td>
+      <td>0.385</td>
+    </tr>
+    <tr>
+      <td>Hippocampal activation (baseline)</td>
+      <td>0.004 (0.002)</td>
+      <td>22</td>
+      <td>1.64</td>
+      <td>0.115</td>
+    </tr>
+    <tr>
+      <td>Time (PIB DVR)</td>
+      <td>0.003 (0.003)</td>
+      <td>12</td>
+      <td>0.87</td>
+      <td>0.399</td>
+    </tr>
+    <tr>
+      <td>Hippocampal activation * Time (PIB DVR)</td>
+      <td>0.001 (0.0002)</td>
+      <td>12</td>
+      <td>3.58</td>
+      <td>0.004</td>
+    </tr>
+  </tbody>
+</table>
+
+_Dependent Variable: PIB DVR.Key: SE = Standard Error, mc = mean-centered, PIB DVR= Pittsburgh Compound B Distributed Volume Ratio._
 
 We also performed the same linear mixed model described above, but with non-hippocampal activation as an independent variable to determine if brain activation predicting longitudinal Aβ accumulation was specific to the hippocampus or existed for cortical activity as well. We chose the non-hippocampal regions of bilateral occipital cortex and bilateral inferior frontal gyrus, which similarly to the hippocampus, showed increased activity in PIB+ compared to PIB- subjects in the original study (Mormino et al., 2012). However, we did not find an interaction between non-hippocampal cortical activation and longitudinal Aβ accumulation [interaction, t(21) = 1.02, p=0.319; Figure 2b], suggesting increased brain activation at baseline associated with increased global Aβ accumulation may be MTL specific.
 
 To determine whether hippocampal activation at baseline was associated with change in memory performance over time, we examined associations between our independent variables of interest (hippocampal activation and time of CVLT) and the dependent variable (CVLT) using a linear mixed model. As with time of PIB, time of CVLT was determined as relative to baseline MRI. The interaction between hippocampal activation and time of CVLT (hippocampal activation × time) was not significant [interaction, t(14) = 0.786, p=0.445] indicating no relationship between hippocampal activation at baseline and the subsequent rate of memory decline.
 
-## Increased Aβ accumulation associated with a longitudinal decline in memory performance
+### Increased Aβ accumulation associated with a longitudinal decline in memory performance
 
-Next, we examined the relationship between longitudinal Aβ accumulation and memory performance. We examined associations between the independent variables of interest (PIB slope and time of CVLT) and the dependent variable (CVLT) using a linear mixed model. The interaction between PIB slope and time of CVLT (PIB slope × time) was the primary effect of interest because it represented the relationship between Aβ accumulation and memory change over time. Results revealed that increased longitudinal Aβ accumulation was associated with a decline in CVLT score [interaction, p=0.023,
+Next, we examined the relationship between longitudinal Aβ accumulation and memory performance. We examined associations between the independent variables of interest (PIB slope and time of CVLT) and the dependent variable (CVLT) using a linear mixed model. The interaction between PIB slope and time of CVLT (PIB slope × time) was the primary effect of interest because it represented the relationship between Aβ accumulation and memory change over time. Results revealed that increased longitudinal Aβ accumulation was associated with a decline in CVLT score [interaction, p=0.023, Table 3]. To visualize the effect, we plotted the relationship between CVLT slope from the model and PIB slope (Figure 3), which showed a negative correlation between CVLT slope and PIB slope. Sex [p = 0.034] and time of CVLT [p = 0.023] also predicted the average CVLT score (Table 3). The effect of time of CVLT can be seen in Figure 1b, where the average CVLT slope increases over time, by 0.41 CVLT units/year. This suggests that while many participants retain their memory abilities over time, longitudinal Aβ accumulation predicts memory decline over time.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/22978/elife-22978-fig3-v2.jpg)
 
-**Figure 3.:** Negative relationship between [11C] Pittsburgh Compound-B distribution volume ratio slopes (PIB slope) and California Verbal Learning Test Long-Delay Free Recall slope (CVLT slope measured as CVLT scores over time) obtained from the linear mixed model.DOI: http://dx.doi.org/10.7554/eLife.22978.008
+**Figure 3.:** Negative relationship between [11C] Pittsburgh Compound-B distribution volume ratio slopes (PIB slope) and California Verbal Learning Test Long-Delay Free Recall slope (CVLT slope measured as CVLT scores over time) obtained from the linear mixed model.
 
-## Longitudinal amyloid accumulation mediates the influence of hippocampal activation on memory decline
+**Table 3.**
+ Linear mixed model results for longitudinal amyloid accumulation predicting memory decline.
 
-Based on the observation that hippocampal activation at baseline was related to increasing Aβ deposition over time, we conjectured that the relationships between the three variables in this study were complex. Thus, we examined whether the increased longitudinal Aβ deposition associated with baseline hippocampal activation was linked to memory decline. We tested this relationship using a mediation model, where PIB slope (mediator, M) may mediate the relationship between hippocampal activation at baseline (predictor, X) and CVLT slope (outcome, Y), with age, sex, and education as covariates. Step 1 tested the effect of X on Y, not including M. Step 2 tested X predicting M, and Steps 3 and 4 tested M|X significant predictor of Y and X|M not a significant predictor of Y. In Step 1 of the model, the regression of hippocampal activation on memory performance, ignoring PIB slope, was not significant [β = 0.005, t = 0.473, p=0.641]. In Step 2, the regression of hippocampal activation on PIB slope was significant [β = 0.0005, t = 2.26, p=0.034]. In Step 3, the regression of PIB slope, controlling for hippocampal activation, on memory performance was significant [β = −25.75, t = −2.91, p=0.008]. In Step 4, when controlling for PIB slope, hippocampal activation was not a significant predictor of memory performance [β = 0.018, t = 1.76, p=0.094]. There were no significant effects of age, sex, or education. The bootstrapped unstandardized indirect effect was −0.016 and significantly differed from zero, as revealed by a 95% bootstrap confidence interval that was entirely below zero (confidence interval: −0.031 to −0.002). Thus, longitudinal amyloid accumulation mediated the relationship between increased baseline hippocampal activation and greater memory decline over time (
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Estimate (SE)</th>
+      <th>df</th>
+      <th>t</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>10.07 (0.89)</td>
+      <td>18</td>
+      <td>11.27</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Age (at MRI, mc)</td>
+      <td>−0.06 (0.09)</td>
+      <td>16</td>
+      <td>−0.69</td>
+      <td>0.499</td>
+    </tr>
+    <tr>
+      <td>Sex (F)</td>
+      <td>2.54 (1.10)</td>
+      <td>16</td>
+      <td>2.31</td>
+      <td>0.034</td>
+    </tr>
+    <tr>
+      <td>Education (years, mc)</td>
+      <td>−0.17 (0.28)</td>
+      <td>17</td>
+      <td>0.59</td>
+      <td>0.562</td>
+    </tr>
+    <tr>
+      <td>Slope (PIB DVR)</td>
+      <td>15.6 (28.32)</td>
+      <td>21</td>
+      <td>0.55</td>
+      <td>0.587</td>
+    </tr>
+    <tr>
+      <td>Time (CVLT LD FR)</td>
+      <td>0.41 (0.17)</td>
+      <td>23</td>
+      <td>2.44</td>
+      <td>0.023</td>
+    </tr>
+    <tr>
+      <td>Slope (PIB DVR) * Time (CVLT LD FR)</td>
+      <td>−20.06 (8.26)</td>
+      <td>25</td>
+      <td>−2.43</td>
+      <td>0.023</td>
+    </tr>
+  </tbody>
+</table>
+
+_Dependent Variable: CVLT LD FR.Key: SE = Standard Error, mc = mean-centered, PIB DVR= Pittsburgh Compound B Distributed Volume Ratio, CVLT LD FR = California Verbal Learning Test - Long Delay Free Recall._
+
+### Longitudinal amyloid accumulation mediates the influence of hippocampal activation on memory decline
+
+Based on the observation that hippocampal activation at baseline was related to increasing Aβ deposition over time, we conjectured that the relationships between the three variables in this study were complex. Thus, we examined whether the increased longitudinal Aβ deposition associated with baseline hippocampal activation was linked to memory decline. We tested this relationship using a mediation model, where PIB slope (mediator, M) may mediate the relationship between hippocampal activation at baseline (predictor, X) and CVLT slope (outcome, Y), with age, sex, and education as covariates. Step 1 tested the effect of X on Y, not including M. Step 2 tested X predicting M, and Steps 3 and 4 tested M|X significant predictor of Y and X|M not a significant predictor of Y. In Step 1 of the model, the regression of hippocampal activation on memory performance, ignoring PIB slope, was not significant [β = 0.005, t = 0.473, p=0.641]. In Step 2, the regression of hippocampal activation on PIB slope was significant [β = 0.0005, t = 2.26, p=0.034]. In Step 3, the regression of PIB slope, controlling for hippocampal activation, on memory performance was significant [β = −25.75, t = −2.91, p=0.008]. In Step 4, when controlling for PIB slope, hippocampal activation was not a significant predictor of memory performance [β = 0.018, t = 1.76, p=0.094]. There were no significant effects of age, sex, or education. The bootstrapped unstandardized indirect effect was −0.016 and significantly differed from zero, as revealed by a 95% bootstrap confidence interval that was entirely below zero (confidence interval: −0.031 to −0.002). Thus, longitudinal amyloid accumulation mediated the relationship between increased baseline hippocampal activation and greater memory decline over time (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/22978/elife-22978-fig4-v2.jpg)
 
-**Figure 4.:** Mediation analysis with hippocampal activation at baseline (predictor, X), mediated by [11C] Pittsburgh Compound-B distribution volume ratio slopes (PIB Slope) (mediator, M), predicting California Verbal Learning Test Long-Delay Free Recall slope (CVLT Slope). Hippocampal activation positively predicted PIB Slope, PIB Slope negatively predicted CVLT Slope, which resulted in a significant mediation (see text for more details).DOI: http://dx.doi.org/10.7554/eLife.22978.010
+**Figure 4.:** Mediation analysis with hippocampal activation at baseline (predictor, X), mediated by [11C] Pittsburgh Compound-B distribution volume ratio slopes (PIB Slope) (mediator, M), predicting California Verbal Learning Test Long-Delay Free Recall slope (CVLT Slope). Hippocampal activation positively predicted PIB Slope, PIB Slope negatively predicted CVLT Slope, which resulted in a significant mediation (see text for more details).
 
 Since prior studies have noted increased Aβ accumulation over time in those with elevated baseline Aβ (Villemagne et al., 2011; Sojkova et al., 2011) and because we previously found a relationship between baseline Aβ and activation (Mormino et al., 2012), we analyzed the relationship between baseline PIB, hippocampal activation, and PIB slope to ensure that our effects on longitudinal Aβ accumulation were not being driven solely by elevated baseline Aβ. To determine whether increased baseline amyloid levels led to increased baseline hippocampal activation, which led to greater longitudinal Aβ accumulation, we conducted a mediation analysis, with age, sex, and education as covariates. We found no evidence of mediation, as revealed by a 95% bootstrap confidence interval that included zero (confidence interval: −0.004 to 0.044). Thus, baseline amyloid levels did not lead to greater baseline hippocampal activation to influence longitudinal Aβ accumulation, suggesting the effect of hippocampal activation on Aβ accumulation does not solely rely on baseline amyloid levels. Furthermore, by including random intercepts into our linear mixed models, we accounted for initial differences in amyloid. We then conducted a moderation analysis using hierarchical linear regression to determine if baseline amyloid levels influenced Aβ accumulation, but depended on the level of hippocampal activation. The two predictors (hippocampal activation and baseline PIB) were first entered into the regression analysis to determine each predictor’s effect on PIB slope and then the interaction term was added. Results indicated that baseline hippocampal activation [b = −0.004, p=0.034] but not baseline PIB [b = 2.01, p=0.608] was associated with PIB slope and accounted for a significant amount of variance in PIB slope [R2 = 0.524, F(6,20) = 3.67, p=0.013]. The interaction between hippocampal activation and baseline PIB explained a significant increase in variance in PIB slope [ΔR2 = 0.15, F(1,20) = 6.32, p=0.021]. Thus, the influence of baseline amyloid levels on longitudinal Aβ accumulation depends on hippocampal activation at baseline. To further characterize the nature of this interaction, we used the Johnson-Neyman technique to identify at which point in the range of hippocampal activation contrast values where the effect of the predictor on the outcome transitions from being statistically significant to non-significant (Hayes, 2013). We found that when hippocampal activation was greater than or equal to a contrast value of 12.18, higher baseline amyloid led to greater Aβ accumulation. This suggests that while baseline amyloid levels do not directly lead to greater levels of hippocampal activation, baseline amyloid’s relationship with Aβ accumulation may depend on higher levels of hippocampal activation at baseline.
 
@@ -90,35 +288,35 @@ Another limitation of the study ignores the role of tau in producing these effec
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Forty-five normal older adults (N = 45) underwent PIB-PET imaging, fMRI, and neuropsychological testing for this study. Subjects participated in an fMRI experiment of memory, the results of which have been published (Mormino et al., 2012). From this sample, we included subjects who had (1) participated in the fMRI experiment, (2) at least two PIB scans, and (3) three neuropsychological testing sessions. All met the following inclusion criteria: no MRI contradictions, living independently in the community, MMSE ≥26, within age, education, and gender norms on cognitive tests, absence of neurological or psychiatric illness, and lack of major medical illnesses and medications that affect cognition. Fifteen of the 45 subjects did not return for follow-up PIB-PET imaging, so they were not included in the current study. Three additional subjects were excluded due to problems with their PIB-PET data (one had too much gray matter atrophy to accurately measure PIB, one had incomplete acquisition on their follow-up PIB scan, and one was greater than 3.5 standard deviations above the mean for non-hippocampal activation). This left us with a sample of 27 subjects who met the criteria for the study (see Table 1 for demographics).
 
-## Neuropsychological testing
+### Neuropsychological testing
 
 The California Verbal Learning Test was administered to each participant as part of a larger battery of tests used at an annual evaluation carried out by the Berkeley Aging Cohort Study (BACS). Participants received a neuropsychological evaluation within three months of participating in the fMRI study. Every subject had three neuropsychological testing sessions included for this study (average time since MRI = 2.7 years). The neuropsychological battery was designed to examine memory function, as well as other aspects of general cognitive ability. The CVLT is a standardized memory test that was developed to assess a variety of memory processes and assesses rate of learning, retention after short- and long-delay intervals, semantic encoding ability, and recognition memory. We chose to focus on the CVLT Long-Delay Free Recall component of the test (out of 16), as this has been shown to be sensitive to cognitive decline and episodic memory deficits with age (Lange et al., 2002; Delis et al., 1991).
 
-## Apolipoprotein E genotyping
+### Apolipoprotein E genotyping
 
 Participants’ DNA from blood samples was analyzed for apolipoprotein E (ApoE) polymorphisms using a standard protocol. For statistical comparison between groups, subjects were dichotomized into carriers and non-carriers of the E4 allele (see Table 1 for more details).
 
-## PIB-PET acquisition
+### PIB-PET acquisition
 
 PIB was synthesized at the Lawrence Berkeley National Laboratory’s (LBNL) Biomedical Isotope Facility using a published protocol and described in detail previously (Mormino et al., 2012; Mathis et al., 2003). PIB-PET imaging was performed at LBNL using an ECAT EXACT HR or BIOGRAPH Truepoint six scanner (Siemens Medical Systems, Erlangen, Germany) in three dimensional acquisition mode. Ten to fifteen mCi of PIB was injected into an antecubital vein. Dynamic acquisition frames were obtained as follows: 4 × 15, 8 × 30, 9 × 60, 2 × 180, 8 × 300, and 3 × 600 s (90 min total). Ten-minute transmission scans for attenuation correction or X-ray CT were obtained for each PIB scan. Data were corrected for motion and reconstructed with an iterative ordered subset expectation maximization algorithm with weighted attenuation. Images were smoothed with a 4 mm Gaussian kernel with scatter correction.
 
-## PIB-PET processing
+### PIB-PET processing
 
 All PIB-PET data were preprocessed using SPM12 software (http://www.fil.ion.ucl.ac.uk/spm/). The first five minutes of data were summed and then a two-pass realignment was performed. All scans were realigned to the summed first five minutes followed and then created of a mean of all those images followed by realigning everything to that mean. PET images were then co-registered to each subject’s structural MRI (which were repeated near the time of each PET scan). PIB DVR images were created using Logan graphical analysis with frames corresponding to 35–90 min after injection and a cerebellar gray matter reference region defined using FreeSurfer version 5.3. Mean DVR values from frontal, parietal, temporal, and cingulate cortices were computed to serve as a global PIB index for all subjects. All subjects were scanned on the ECAT HR for their first PIB scan, four subjects were scanned on the BIOGRAPH for their second scan (the rest on the ECAT HR) and eight subjects were scanned on the BIOGRAPH if they had a third PIB scan. There were no significant effects of scanner type in any of the linear mixed models and we have previously shown PIB measurement on these different scanners to be equivalent (Elman et al., 2014).
 
-## MRI acquisition
+### MRI acquisition
 
 The following MRI acquisition parameters were previously reported (Mormino et al., 2012). All subjects underwent MRI scanning at LBNL on a 1.5T Magnetom Avanto System (Siemens Medical Systems) with a 12-channel head coil run in triple mode. A high-resolution structural T1-weighted volumetric magnetization prepared rapid gradient echo scan (MP-RAGE, axially acquired, time repetition [TR]/time echo [TE]/time to inversion [TI] = 2110/3.58/1100 ms, flip angle = 15°, 1.00 × 1.00 mm2 in plane resolution, 1.00 mm thickness with 50% gap) and a low-resolution structural T1-weighted in plane to the fMRI scans were collected (axially acquired, TR/TE = 591/10/10 ms, flip angle = 150°, 0.90 × 0.90 mm2 in plane resolution, 3.40 mm thickness with 15% gap). For fMRI scanning, 4 T2*-weighted gradient-echo echo planar images (EPI) were collected (28 axially acquired slices, TR/TE = 2200/50 ms, flip angle = 90°, 3.40 × 3.40 mm2 in plane resolution, 3.40 mm thickness with 15% gap).
 
-## fMRI episodic memory task
+### fMRI episodic memory task
 
 Two hundred images of natural outdoor scenes were presented for 4.4 s each. Subjects were instructed to indicate whether water was present in each image. Scans were broken into four sessions, with 50 scenes and 185 TRs per session. Zero to 5 TRs of fixation (green crosshair on black background) were randomly intermixed between scenes to allow separation of individual trials (average inter-stimulus interval = 3.46 s). After the scan, a surprise recognition task including all stimuli presented during encoding as well as 100 novel stimuli (foils) was used to assess performance and sort fMRI data. There was a 15 min delay between the last stimulus encoded and the start of the memory test. For each image, subjects were asked if they had seen the image before and were allowed to respond with 1 of 4 responses: high-confidence yes, low-confidence yes, high-confidence no, and low-confidence no. The task was self-paced and subjects were encouraged to be as accurate as possible. For the current study, we examined task activation (mean contrast values: hits > misses) from task-positive regions of interest (ROIs), which included the right hippocampus, bilateral occipital cortex, and bilateral inferior frontal gyrus, as described in Mormino et al. (2012). MP-RAGE scans were processed using FreeSurfer version 5.3 (https://surfer.nmr.mgh.harvard.edu) to derive ROIs in each subject’s native space. Detailed task results and fMRI processing have been reported previously (Mormino et al., 2012).
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses of behavioral variables and ROI activation means were conducted in SPSS v. 24 (IBM Corp., Armonk, NY). We conducted a series of linear mixed models. All models included age, sex, and education as covariates, as well as a random intercept to account for individual variability in initial PIB DVR or CVLT scores and random slopes to account for individual variability in PIB DVR or CVLT slopes. We also employed an autoregressive covariance structure to account for correlations between consecutive PIB DVR or CVLT values over time. Initial models also included ApoE4 carrier (+/−) and scanner type (ECAT HR, BIOGRAPH) as covariates, but effects were not significant so we removed them to simplify the model. Age was mean-centered at 76.5 years, education was mean-centered at 17.4 years, and females were the reference group, so that resulting parameter estimates could be interpreted as representing an example 76.5-year-old female with 17.4 years of education. While PIB and CVLT were both time-varying measurements, we did not have the statistical power to include both as time-varying measurements in our mixed effects model testing change in PIB predicting change in memory performance over time, since visits did not coincide in many cases, making modeling with a single time challenging. We therefore used PIB slope as an alternative, but note that this is a limitation as it does not precisely capture PIB change relative to CVLT change.
 

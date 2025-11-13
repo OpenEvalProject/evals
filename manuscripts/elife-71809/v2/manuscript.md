@@ -16,11 +16,11 @@
 
 ### Affiliations
 
-1. https://ror.org/05bnh6r87 Department of Computational Biology, Cornell University Ithaca United States
-2. https://ror.org/01w6qp003 Institut für Populationsgenetik, Vetmeduni Vienna Vienna Austria
-3. https://ror.org/01w6qp003 Vienna Graduate School of Population Genetics, Vetmeduni Vienna Vienna Austria
-4. https://ror.org/05bnh6r87 Department of Molecular Biology and Genetics, Cornell University Ithaca United States
-5. https://ror.org/02v51f717 Center for Bioinformatics, School of Life Sciences, Peking-Tsinghua Center for Life Sciences, Peking University Beijing China
+1. Department of Computational Biology, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))
+2. Institut für Populationsgenetik, Vetmeduni Vienna Vienna Austria ([ROR:01w6qp003](https://ror.org/01w6qp003))
+3. Vienna Graduate School of Population Genetics, Vetmeduni Vienna Vienna Austria ([ROR:01w6qp003](https://ror.org/01w6qp003))
+4. Department of Molecular Biology and Genetics, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))
+5. Center for Bioinformatics, School of Life Sciences, Peking-Tsinghua Center for Life Sciences, Peking University Beijing China ([ROR:02v51f717](https://ror.org/02v51f717))
 
 † Corresponding author
 
@@ -46,7 +46,7 @@ In this study, we conduct a comprehensive assessment of the fitness effects resu
 
 ## Results
 
-## Construct design
+### Construct design
 
 We designed four constructs to assess the fitness costs of in vivo CRISPR/Cas9 expression in D. melanogaster. As a starting point for our transgenic fly lines, we engineered an Enhanced Green Fluorescent Protein (EGFP) marker driven by the 3xP3 promoter into a gene-free, nonheterochromatic position on chromosome 2 L (region targeted by gRNA: 20,368,542–20,368,561; Figure 1A). This EGFP marker was then used as an insertion point for the four constructs we tested. Our first construct, ‘Cas9_gRNAs’, contains Cas9 expressed by the nanos promoter, the fluorescence marker Discosoma sp Red (DsRed) driven by the 3xP3 promoter, and four gRNAs driven by the U6:3 promoter (Figure 1B), which are separated by tRNAs that are removed after transcription (Champer et al., 2018). The gRNAs of the Cas9_gRNAs construct target a gene-free, nonheterochromatic position on a different chromosome (3 L, region targeted by gRNAs: 18,297,270–18,297,466), preventing any homing activity. In addition to Cas9_gRNAs, three other constructs were designed: ‘Cas9_no-gRNAs’ has a similar architecture as Cas9_gRNAs but lacks the four gRNAs driven by the U6:3 promoter (Figure 1C) ‘no-Cas9_no-gRNAs’ contains neither Cas9 nor the gRNAs but only the fluorescence marker DsRed driven by the 3xP3 promoter (Figure 1D) the last construct, ‘Cas9HF1_gRNAs’ (Figure 1E), has the same architecture as Cas9_gRNAs, except that Cas9 is replaced by a high-fidelity version (Cas9HF1), which has been reported to largely eliminate off-target cleavage (Kleinstiver et al., 2016). We confirmed with PCR-based genotyping that—as expected—all progeny of individuals with the Cas9_gRNAs and Cas9HF1_gRNAs alleles had at least one of their gRNA target sites mutated and that all four gRNAs were similarly active in both these constructs.
 
@@ -56,39 +56,336 @@ We designed four constructs to assess the fitness costs of in vivo CRISPR/Cas9 e
 
 The specific designs of these four constructs allow us to identify and disentangle different types of Cas9-related fitness costs. If double-strand breaks at the target site impose fitness costs, such costs should be present for the Cas9_gRNAs and Cas9HF1_gRNAs constructs, but not for the Cas9_no-gRNAs and no-Cas9_no-gRNAs constructs. Cas9_no-gRNAs have no gRNAs expressed to guide Cas9 to the target site and without gRNAs, Cas9 does not cleave DNA (Jinek et al., 2012; Cong et al., 2013). The no-Cas9_no-gRNAs construct neither expresses Cas9 nor the gRNAs. If the expression of Cas9 imposes a fitness cost, all constructs except for no-Cas9_no-gRNAs should incur such a cost, because only this construct does not express Cas9. If off-target effects of Cas9 impose fitness costs, only the Cas9_gRNAs construct should incur them, because the designs of Cas9_no-gRNAs and no-Cas9_no-gRNAs prevent cutting events, and Cas9HF1_gRNAs reportedly have a much lower rate of off-target cleavage (Kleinstiver et al., 2016). Figure 1 summarizes the designs and different potential fitness costs for our four constructs.
 
-## Population cage experiments
+### Population cage experiments
 
 To assess the fitness effects of the four constructs, we tracked their population frequencies relative to the baseline EGFP construct (Figure 1A) over several generations in large cage populations by phenotyping the whole population for both dominant fluorescent markers (DsRed and EGFP). Overall, we assessed 13 cages: seven with the Cas9_gRNAs construct, and two each with the Cas9_no-gRNAs, no-Cas9_no-gRNAs, and Cas9HF1_gRNAs constructs (Figure 2). In each cage population, the construct frequency was tracked for at least eight consecutive, non-overlapping generations. The median population size across all experiments was 3602 (Figure 2—figure supplement 1). To avoid potentially confounding maternal fitness effects on the construct frequency dynamics (which could arise based on minor differences in health or age between the initial batches of flies mixed together), we excluded the first generation of five cage populations (Cas9_gRNAs construct: replicates 1, 2, 5, 6, and 7) from the analysis, because their founding individuals (construct homozygotes and EGFP homozygotes) were raised in potentially different environments.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/71809/elife-71809-fig2-v2.jpg)
+
+**Figure 2.:** Each line is one cage experiment. To obtain construct frequencies, we screened all adult flies for each generation in the respective cage experiments (see Figure 2—figure supplement 1 for population sizes).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71809/elife-71809-fig2-figsupp1-v2.jpg)
+
 The Cas9_gRNAs construct was the only one that systematically decreased in frequency over the course of the experiment (average allele frequency change = –0.11, SEM = 0.03, Figure 2). This provides a first indication that Cas9 off-target effects could be the primary driver of fitness costs. However, the frequency dynamics of the Cas9_gRNAs construct varied widely between individual cage populations (Figure 2). For example, in the two replicates where the construct had the highest starting frequency, its frequency remained approximately constant, whereas it clearly decreased in the other replicates.
 
-## Maximum likelihood analysis
+### Maximum likelihood analysis
 
 To provide a more quantitative analysis of the fitness costs of the different constructs in our cage populations, we employed a maximum likelihood framework developed for the estimation of selection parameters based on genotype frequency time series data (Liu et al., 2019). We specifically modified the method to support two unlinked autosomal loci, representing the construct and a single idealized off-target site (see the section on ‘Maximum likelihood framework for fitness cost estimation’ in the Methods for a more detailed description of the underlying model). This model can estimate fitness costs with CI while fully accounting for stochastic allele frequency fluctuations due to random genetic drift. Furthermore, we can perform statistical model selection and goodness-of-fit analyses on different selection scenarios to disentangle different types of fitness costs for each construct.
 
-## General model assumptions
+#### General model assumptions
 
 Each of the two loci in our model is biallelic (EGFP/construct; uncut/cut off-target site). In individuals that carry a construct, all uncut off-target alleles are assumed to be cut in the germline (i.e. germline cut rate was set to 1), which are then passed on to offspring that could suffer negative fitness consequences. In the early embryo, all uncut off-target alleles are assumed to be cut by maternally deposited Cas9/gRNAs if the mother carries at least one construct allele (i.e. embryo cut rate was also set to 1), changing the individual’s genotype at the off-target site and exposing it to the potential fitness costs associated with this new genotype. Because individuals could carry numerous off-target sites, and the fitness of cleaved alleles could differ vastly between off-target sites, our model of a single off-target site is highly idealized. However, modeling a more complex off-target landscape would require numerous parameters (fitness costs, cut rates, epistatic interactions, etc.) that would be difficult if not impossible to disentangle given our limited number of data points. To reduce model complexity, we therefore limited the model to one off-target locus being always cut in the presence of Cas9.
 
 Fitness costs due to carrying the construct and/or the presence of cut off-target sites are assumed to be multiplicative across the two loci, as well as for the two alleles at each locus. We studied models where fitness costs affect only viability, and models where they affect only mate choice and fecundity (both equally). Overall, our maximum likelihood model infers three parameters: the effective population size (Ne) of the cage, the ‘direct fitness estimate’ of the construct (defined as the relative fitness of construct/EGFP heterozygotes versus EGFP/EGFP homozygotes), and the ‘off-target fitness estimate’ (defined as the relative fitness of cut/uncut heterozygotes versus uncut/uncut homozygotes). Note that in our idealized model with a single cleavage site, this site could in principle also represent ‘on-target’ cleavage. However, due to the intergenic location of all gRNA target sites in our constructs, we do not expect such fitness costs to be present. Furthermore, if on-target cleavage had a measurable negative fitness effect, this should have been apparent in the frequency trajectories of the Cas9HF1_gRNAs construct. Since this construct had no apparent reduction in fitness (Figure 2, Table 2), we refer to this fitness parameter exclusively as ‘off-target’.
 
-## Model evaluation
+#### Model evaluation
 
 For each construct, five different models with different selection scenarios were studied (Table 1): in the ‘full inference model’, both the construct and cut off-target alleles can impose fitness costs. In the ‘construct’ model, only construct alleles impose a fitness cost. In the ‘off-target’ model, only cut off-target alleles impose a fitness cost. In the ‘initial off-target model’, we assumed that fitness costs originated before the experiment (e.g. through the injection process or perhaps transient maternal effects in the ancestral generation). For the ‘initial off-target model’, the construct homozygotes in the ancestral generation all had cut off-target alleles, but no additional off-target cutting occurred during the experiment (i.e. the germline and embryo cut rate were set to 0). Finally, in the ‘neutral’ model, no fitness costs were present at all.
 
+**Table 1.**
+ Fitness cost model overview.The table shows which types of fitness costs are contained in each model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Construct allele</th>
+      <th>Cut off-target allele</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Full inference</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Construct</td>
+      <td>+</td>
+      <td>−</td>
+    </tr>
+    <tr>
+      <td>Off-target</td>
+      <td>−</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>Initial off-target</td>
+      <td>−</td>
+      <td>+*</td>
+    </tr>
+    <tr>
+      <td>Neutral</td>
+      <td>−</td>
+      <td>−</td>
+    </tr>
+  </tbody>
+</table>
+
+_*No additional cutting events at off-target sites during the experiment._
+
 Inferences were performed on the combined data of the replicated experimental populations for each construct. The individual models were compared using the corrected Akaike information criterion (AICc; Akaike, 1998)—a goodness-of-fit measure that also penalizes for complexity (i.e. number of parameters) in a given model. A lower AICc value indicates a higher quality model.
 
-## Construct frequency dynamics match a model with moderate off-target fitness costs
+#### Construct frequency dynamics match a model with moderate off-target fitness costs
 
 For the Cas9_gRNAs construct, we found that the full inference model with viability selection yielded the highest quality, with a ‘direct fitness estimate’ of 0.98 and an ‘off-target fitness estimate’ of 0.84 (Table 2). Note, however, that the 95% CI of the direct fitness estimate includes a value of 1. The simpler ‘off-target’ model (where only cut off-target alleles impose a fitness cost) with viability selection and direct fitness estimate set to 1 in fact had an equal AICc value to the ‘full’ model, which further supports that direct fitness costs in construct/EGFP heterozygotes are likely small. Models with fecundity/mate choice selection generally had lower quality than models with viability selection. The ‘initial off-target’ and ‘neutral’ models yielded the highest AICc values. Taken together, these results suggest that among the five different models we tested (Table 1), the observed frequency trajectories of the Cas9_gRNAs construct in our cage populations are best explained by a model where direct effects are less than a few percent and off-target effects impose moderate fitness costs of ~30% (= 1–0.842) in cut/cut homozygotes in our idealized single off-target site model (Table 2).
 
+**Table 2.**
+ Model comparison and parameter estimates for Cas9_gRNAs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Selection</th>
+      <th>N^e</th>
+      <th>Direct fitness estimate</th>
+      <th>Off-target fitness estimate</th>
+      <th>lnL^</th>
+      <th>P</th>
+      <th>AICc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Full</td>
+      <td>Viability</td>
+      <td>175[140–215]</td>
+      <td>0.98[0.95–1.00]</td>
+      <td>0.84[0.77–0.91]</td>
+      <td>384.7</td>
+      <td>3</td>
+      <td>–763</td>
+    </tr>
+    <tr>
+      <td>Full</td>
+      <td>Mate choice = fecundity</td>
+      <td>163[131–200]</td>
+      <td>0.96[0.94–0.98]</td>
+      <td>1.00[0.95–1.06]</td>
+      <td>378.8</td>
+      <td>3</td>
+      <td>–751</td>
+    </tr>
+    <tr>
+      <td>Construct</td>
+      <td>Viability</td>
+      <td>164[131–201]</td>
+      <td>0.96[0.93–0.98]</td>
+      <td>1*</td>
+      <td>378.9</td>
+      <td>2</td>
+      <td>–754</td>
+    </tr>
+    <tr>
+      <td>Construct</td>
+      <td>Mate choice = fecundity</td>
+      <td>163[131–200]</td>
+      <td>0.96[0.94–0.98]</td>
+      <td>1*</td>
+      <td>378.8</td>
+      <td>2</td>
+      <td>–754</td>
+    </tr>
+    <tr>
+      <td>Off-target</td>
+      <td>Viability</td>
+      <td>173[139–212]</td>
+      <td>1*</td>
+      <td>0.80[0.74–0.88]</td>
+      <td>383.6</td>
+      <td>2</td>
+      <td>–763</td>
+    </tr>
+    <tr>
+      <td>Off-target</td>
+      <td>Mate choice = fecundity</td>
+      <td>157[126–192]</td>
+      <td>1*</td>
+      <td>0.95[0.90–1.01]</td>
+      <td>375.1</td>
+      <td>2</td>
+      <td>–746</td>
+    </tr>
+    <tr>
+      <td>Initial off-target</td>
+      <td>Viability</td>
+      <td>156[125–191]</td>
+      <td>1*</td>
+      <td>0.92[0.82–1.02]</td>
+      <td>374.8</td>
+      <td>2</td>
+      <td>–745</td>
+    </tr>
+    <tr>
+      <td>Initial off-target</td>
+      <td>Mate choice = fecundity</td>
+      <td>156[125–191]</td>
+      <td>1*</td>
+      <td>0.96[0.91–1.01]</td>
+      <td>374.8</td>
+      <td>2</td>
+      <td>–745</td>
+    </tr>
+    <tr>
+      <td>Neutral</td>
+      <td>None</td>
+      <td>154[123–189]</td>
+      <td>1*</td>
+      <td>1*</td>
+      <td>373.6</td>
+      <td>1</td>
+      <td>–745</td>
+    </tr>
+  </tbody>
+</table>
+
+_Each row shows the parameter estimates for effective population size (N^e), maximum log likelihood (lnL^) , number of free parameters in the maximum likelihood framework (P), and corrected Akaike information criterion value (AICc=2p−2lnL^+(2p2+2p)/(n−p−1)) where n=87 is the number of generation transitions for a specific model and selection type. 1* entries indicate that a parameter was fixed at 1 (= no fitness effect is estimated). Values in squared brackets in the parameter estimate columns represent the 95% CI estimated from a likelihood ratio test with one degree of freedom. The model with the lowest AICc (i.e. the best fit) is highlighted in bold._
+
 A scenario in which fitness costs are primarily due to off-target effects also suggests a possible mechanism for why the decline in the frequency of the Cas9_gRNA construct could be greater in cages of lower construct starting frequencies, which appears to be the case in our experiment (Figure 2). This mechanism would work due to the accumulation of previously cut off-target sites that should typically be protected from future cutting due to sequence mutations caused by the repair process, similar to the creation of resistance alleles in a homing drive (Champer et al., 2017). Early in the experiment, cut off-target sites should be found primarily in individuals that also carry a construct allele. Fitness costs resulting from such cuts will therefore also impose negative selection against construct alleles. However, as mutated off-target sites accumulate over the course of an experiment, they will increasingly segregate independently from construct alleles, thereby reducing selection against these alleles. By the time all potential off-target sites in the population have been mutated, construct alleles would no longer experience any negative selection if off-target effects are indeed the only cause of fitness costs. Importantly, cages where the construct is introduced at a higher frequency (e.g. Cas9_gRNAs replicate 6 in Figure 2) should experience this effect faster than cages where it is introduced at a lower frequency (e.g. Cas9_gRNAs replicate 3 in Figure 2) due to the higher overall rate of cleavage events in the population.
 
-To test how well our best-fitting model from Table 1 (full inference model with viability selection) can resemble the observed frequency-dependent construct dynamics of the Cas9_gRNAs construct, we simulated construct trajectories under its maximum likelihood parameter estimates (N^e=175, direct fitness estimate = 0.98, off-target fitness estimate = 0.84). We found that the simulated genotype frequencies not only closely resemble the observed decrease in construct frequency but also capture the heterogeneity in frequency trajectories observed among individual replicates (Figure 3). Additionally, we compared simulated trajectories for this model with simulated trajectories from the ‘construct’ model that only considers direct fitness costs (Figure 3—figure supplement 1). We found that the full inference model captures the observed frequency-dependent construct dynamics better than this model, with most of the improvement due to better matching trajectories from cages with low starting frequencies, where off-target effects would be expected to have a more drastic impact on the relative fitness of construct-carrying individuals.
+To test how well our best-fitting model from Table 1 (full inference model with viability selection) can resemble the observed frequency-dependent construct dynamics of the Cas9_gRNAs construct, we simulated construct trajectories under its maximum likelihood parameter estimates ($N^_{e}=175$, direct fitness estimate = 0.98, off-target fitness estimate = 0.84). We found that the simulated genotype frequencies not only closely resemble the observed decrease in construct frequency but also capture the heterogeneity in frequency trajectories observed among individual replicates (Figure 3). Additionally, we compared simulated trajectories for this model with simulated trajectories from the ‘construct’ model that only considers direct fitness costs (Figure 3—figure supplement 1). We found that the full inference model captures the observed frequency-dependent construct dynamics better than this model, with most of the improvement due to better matching trajectories from cages with low starting frequencies, where off-target effects would be expected to have a more drastic impact on the relative fitness of construct-carrying individuals.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/71809/elife-71809-fig3-v2.jpg)
+
+**Figure 3.:** Comparison of observed Cas9_gRNAs construct frequencies with simulated trajectories of the full model with viability selection under its maximum likelihood parameter estimates ($N^_{e}=175$, direct fitness estimate = 0.98, off-target fitness estimate = 0.84).Solid red lines present observed construct frequencies, black lines show 10 simulated trajectories for each cage, and the shaded area represents the range between the 2.5 and 97.5 percentile of the simulated trajectories (10,000 simulations per cage).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/71809/elife-71809-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Genetic drift was not simulated.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/71809/elife-71809-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Solid red lines present observed construct frequencies, black lines show 10 simulated trajectories for each cage, and the shaded area represents the range between the 2.5 and 97.5 percentile of the simulated trajectories (10,000 simulations per cage). We used the following inferred effective population sizes for the different constructs: Cas9_no-gRNAs: $N^_{e}=243$; no-Cas9_no-gRNAs: $N^_{e}=162$; Cas9HF1_gRNAs: $N^_{e}=396$.
 
 To further support our hypothesis that off-target effects may be the primary driver of fitness costs, we applied our maximum likelihood inference framework to the experimental cage data of the three other constructs (Cas9_no-gRNAs, no-Cas9_no-gRNAs, and Cas9HF1_gRNAs). Because none of these three constructs, by design, should be capable of producing substantial amounts of off-target cuts, we set the germline and embryo cut rate to 0 (i.e. no off-target alleles are cut in the presence of a construct or maternally deposited Cas9/gRNAs) and inferred viability fitness effects for the construct. Except for the ‘initial off-target’ model (i.e. the model in which fitness costs originated before the experiment), construct homozygotes of the ancestral population were assumed to not carry any cut off-target alleles. For Cas9_no-gRNAs, and no-Cas9_no-gRNAs, the ‘neutral’ model without any fitness costs explained the observed construct frequency trajectories best (Table 3, Figure 3—figure supplement 2), further corroborating the notion that Cas9 fitness costs in our experimental populations may be primarily due to off-target cuts (Figure 1). However, the construct frequency dynamics of Cas9HF1_gRNAs are best explained by an ‘initial off-target’ model, where cut off-target alleles are beneficial, closely followed by the neutral model (Table 3). While we cannot completely rule out that the initial construct homozygotes of Cas9HF1_gRNAs may have had some fitness advantage due to cut off-target alleles or transgenerational beneficial effects, the 95% CI for the off-target fitness parameter still includes a fitness value of 1 (i.e. no fitness effects). A putative short-term fitness advantage could also be explained by maternal effects that persisted for the first 2–3 generations. Although we do not anticipate that any other construct than Cas9_gRNAs can produce substantial off-target effects (Figure 1), we repeated the analysis of the three other constructs with cut rates set to 1 (i.e. off-target alleles are always cut in the presence of a construct or maternally deposited Cas9/gRNAs) and inferred viability selection, which yielded similar results (Supplementary file 1).
 
-## Phenotypic fitness assays
+**Table 3.**
+ Model comparison and parameter estimates for Cas9_no-gRNAs, no-Cas9_no-gRNAs, and Cas9HF1_gRNAs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Construct</th>
+      <th>Model</th>
+      <th>Selection</th>
+      <th>N^e</th>
+      <th>Direct fitness estimate</th>
+      <th>Off-target fitness estimate</th>
+      <th>lnL^</th>
+      <th>P</th>
+      <th>AICc</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cas9_no-gRNAs</td>
+      <td>Construct</td>
+      <td>Viability</td>
+      <td>243[152–366]</td>
+      <td>1.0[0.96–1.04]</td>
+      <td>1*</td>
+      <td>88.6</td>
+      <td>2</td>
+      <td>–173</td>
+    </tr>
+    <tr>
+      <td>Cas9_no-gRNAs</td>
+      <td>Initial off-target</td>
+      <td>Viability</td>
+      <td>250[156–377]</td>
+      <td>1*</td>
+      <td>0.84[0.65–1.18]</td>
+      <td>89.2</td>
+      <td>2</td>
+      <td>–174</td>
+    </tr>
+    <tr>
+      <td>Cas9_no-gRNAs</td>
+      <td>Neutral</td>
+      <td>None</td>
+      <td>243[152–366]</td>
+      <td>1*</td>
+      <td>1*</td>
+      <td>88.6</td>
+      <td>1</td>
+      <td>–175</td>
+    </tr>
+    <tr>
+      <td>no-Cas9_no-gRNAs</td>
+      <td>Construct</td>
+      <td>Viability</td>
+      <td>162[101–243]</td>
+      <td>1.0[0.97–1.10]</td>
+      <td>1*</td>
+      <td>81.5</td>
+      <td>2</td>
+      <td>–158</td>
+    </tr>
+    <tr>
+      <td>no-Cas9_no-gRNAs</td>
+      <td>Initial off-target</td>
+      <td>Viability</td>
+      <td>162[101–243]</td>
+      <td>1*</td>
+      <td>1.12[0.84–1.63]</td>
+      <td>81.5</td>
+      <td>2</td>
+      <td>–158</td>
+    </tr>
+    <tr>
+      <td>no-Cas9_no-gRNAs</td>
+      <td>Neutral</td>
+      <td>None</td>
+      <td>162[101–243]</td>
+      <td>1*</td>
+      <td>1*</td>
+      <td>81.5</td>
+      <td>1</td>
+      <td>–161</td>
+    </tr>
+    <tr>
+      <td>Cas9HF1_gRNAs</td>
+      <td>Construct</td>
+      <td>Viability</td>
+      <td>396[240–608]</td>
+      <td>1.0[0.97–1.04]</td>
+      <td>1*</td>
+      <td>88.1</td>
+      <td>2</td>
+      <td>–171</td>
+    </tr>
+    <tr>
+      <td>Cas9HF1_gRNAs</td>
+      <td>Initial off-target</td>
+      <td>Viability</td>
+      <td>433[263–655]</td>
+      <td>1*</td>
+      <td>1.18[0.99–1.45]</td>
+      <td>89.7</td>
+      <td>2</td>
+      <td>–175</td>
+    </tr>
+    <tr>
+      <td>Cas9HF1_gRNAs</td>
+      <td>Neutral</td>
+      <td>None</td>
+      <td>396[240–608]</td>
+      <td>1*</td>
+      <td>1*</td>
+      <td>88.1</td>
+      <td>1</td>
+      <td>–174</td>
+    </tr>
+  </tbody>
+</table>
+
+_Each row shows the parameter estimates for a specific construct, model, and selection type, using the same definitions as in Table 2. For each construct, the best-fitting model is highlighted in bold._
+
+### Phenotypic fitness assays
 
 As a complementary validation of the inferred fitness estimates from the maximum likelihood analysis of our cage experiments, we conducted three independent phenotypic assays (mate choice, fecundity, and viability) for flies carrying the Cas9_gRNAs construct. First, we assessed the mate choice of 40 independent EGFP homozygous females that were each set up with one EGFP homozygous and one Cas9_gRNAS homozygous male in one single vial. Of these, 38 samples had exclusively EGFP homozygous or heterozygous offspring, whereas two samples displayed offspring of both genotypes. As this suggests multiple matings of the female, we excluded these two data points from the analysis. The estimated frequency of 0.684 of EGFP homozygous females choosing EGFP homozygous males (n=26) over Cas9_gRNAs homozygous males (n=12) as mates was significantly different from 0.5 (exact binomial test p=0.033; Figure 4A).
 
@@ -102,11 +399,11 @@ Finally, we measured viability as the fraction of heterozygous offspring out of 
 
 In summary, we found that Cas9_gRNAs homozygous males were 46.2% less likely to be picked as mates by EGFP homozygous females (Figure 4A), and Cas9_gRNAs homozygous females laid on average 24.5% less eggs than EGFP homozygous females (Figure 4B). These findings suggest that—in contrast to the maximum likelihood model assumption—the fitness costs for Cas9_gRNAs homozygous males (i.e. mate choice) and females (i.e. fecundity) differ in our phenotypic assay environment. Additionally, in contrast to our cage experiments where a model of viability-based fitness effect best matched the data (Table 2), we did not observe reduced viability for Cas9_gRNAs carrying flies in the individual assay (Figure 4C). However, the difference in male- and female-specific fitness costs in the phenotypic assay as well as the lack of difference in viability between EGFP and Cas9_gRNAs carrying flies could be explained by the limited sample size of the phenotypic assays or the assay environment itself. All phenotypic assays were based on single fly crosses conducted in vials, an environment where larvae, as well as adults, experience much less resource competition than in the densely populated cage populations, which can significantly influence the relative viability of different genotypes (Moya et al., 1988). Indeed, individuals with a genotype that showed reduced fecundity or mating success (but no reduced viability) in single-cross assays may not have survived to the adult stage in the more competitive cage environment, which should represent a viability cost in that system. A longer development time of individuals carrying the Cas9_gRNAs construct would also have appeared as a viability cost in our cage study but not in these fitness assays. In addition, the viability assay examined only Cas9_gRNAs/EGFP heterozygotes, which may not have suffered from off-target effects to the full extent because they received uncut ‘wild-type’ off-target sites from one parent that did not carry the construct.
 
-## Evaluation of computationally predicted off-target sites
+### Evaluation of computationally predicted off-target sites
 
 In some instances, off-target sites can be computationally predicted based on sequence similarity to gRNAs using programs such as CRISPR Optimal Target Finder (Gratz et al., 2014). We employed this approach to test whether we can directly observe cuts at predicted off-target sites for our Cas9_gRNAs construct. Using maximum stringency criteria to increase sensitivity, CRISPR Optimal Target Finder predicted two putative off-target sites for each of the first three gRNAs of this construct and no off-target site for its last gRNA (Supplementary file 2). These represent perhaps the most likely off-target sites in the genome (Li et al., 2019; Pan et al., 2022). To screen for the presence of mutations indicative of off-target cutting, we extracted genomic DNA from flies that had been homozygous for the Cas9_gRNAs construct for approximately 60 generations and performed Sanger sequencing at these six predicted off-target sites. We reasoned that if off-target cleavage at any of these six sites is responsible for the observed fitness cost (and thus occurs frequently enough to affect Cas9_gRNAs construct dynamics over less than 20 generations of our cage experiments), then we would expect to observe at least some mutations in Cas9_gRNAs homozygotes after 60 generations. However, we found only wild-type sequences with no detectable mosaicism at these sites. While direct observation of mutated sequences at this small set of computationally predicted sites would have confirmed that off-target sequence cleavage was occurring, we will argue below that off-target cutting at other genomic sites can still be the primary driver of fitness costs for the Cas9_gRNAs construct.
 
-## Cas9HF1 homing drive
+### Cas9HF1 homing drive
 
 Our observation that the Cas9_gRNAs construct yet not Cas9HF1-gRNAs incurs a detectable fitness cost raises the question of whether the Cas9HF1 endonuclease can constitute a superior choice for gene drive strategies as compared to standard Cas9. As a proof of principle that Cas9HF1 is indeed a feasible alternative, we assessed two homing drives that were identical except that one used standard Cas9 while the other used Cas9HF1. The first of these drives was originally assessed in a previous study (Champer et al., 2020c). Both drives contain the DsRed fluorescence marker and are capable of homing by targeting EGFP with a single gRNA. Note that these drives use the same germline nanos promoter for expressing Cas9 as three of our previously described constructs in this study. Both drives were also placed at the same genomic site as the four constructs used in our population cage experiments and targeted the same EGFP allele that was used as a control in the cage experiments.
 
@@ -118,7 +415,7 @@ We observed similar performance between the Cas9HF1 drive and the standard Cas9 
 
 **Figure 5.:** (A) The gene drive inheritance rate is defined as the proportion of offspring with DsRed fluorescence from single crosses between drive heterozygotes (D|+) and EGFP homozygotes (B) Resistance allele formation occurs in early embryos due to maternally deposited Cas9 and gRNAs. The resistance allele formation rate is defined as the proportion of drive heterozygous offspring that have a nonfunctional EGFP alleles (which were originally unmutated EGFP alleles inherited from the father). Each dot represents data based on a single cross. Orange triangles show the average value from all offspring combined. An alternate analysis taking potential batch effects into account led to qualitatively similar results and can be found in Data Set S1 and S2 in Supplementary file 5.
 
-## Effect of off-target fitness costs on gene drive performance
+### Effect of off-target fitness costs on gene drive performance
 
 To examine the effect of off-target fitness costs on the performance of homing drives, we extended a previously developed agent-based simulation framework for homing drives (Champer et al., 2020c) to include fitness costs due to off-target effects (see Methods). We used this simulation framework to investigate the invasion dynamics of both modification and suppression drives under different models of fitness costs. Specifically, we wanted to compare models with no additional fitness costs (beyond those inherent to the drive mechanism, such as when a suppression drive targets a fertility gene), models with only direct additional fitness affecting viability, and models where additional fitness costs are due to off-target cutting at a specific number of off-target sites, with cut alleles at those sites reducing viability.
 
@@ -160,25 +457,25 @@ In conclusion, we have demonstrated that genomic CRISPR/Cas9 expression in D. me
 
 ## Materials and methods
 
-## Plasmid construction
+### Plasmid construction
 
 The starting plasmid pDsRed (Addgene plasmid #51019) was provided by Melissa Harrison, Kate O'Connor-Giles, and Jill Wildonger, pnos-Cas9-nos (Port et al., 2014; Addgene plasmid #62208) was provided by Simon Bullock, and VP12 (Kleinstiver et al., 2016; Addgene plasmid #72247) was provided by Simon Bullock. Starting plasmids ATSacG, TTTgRNAtRNAi, TTTgRNAt, BHDgN1c, and BHDgN1cv3 were constructed in a previous study (Champer et al., 2020c). Restriction enzymes for plasmid digestion, Q5 Hot Start DNA Polymerase for PCR, and Assembly Master Mix for Gibson assembly were acquired from New England Biolabs. Oligonucleotides and gBlocks were obtained from Integrated DNA Technologies. JM109 competent cells and ZymoPure Midiprep kit from Zymo Research were used to transform and purify plasmids. Cas9 gRNA target sequences were identified by the use of CRISPR Optimal Target Finder (Gratz et al., 2014). A list of DNA fragments, plasmids, primers, and restriction enzymes used for cloning each construct can be found in Supplementary file 3. The annotated sequences of the final construct insertion plasmids can be found in Supplementary file 4 (ApE format, http://biologylabs.utah.edu/jorgensen/wayned/ape).
 
-## Generation of transgenic lines
+### Generation of transgenic lines
 
 Injections were conducted by Rainbow Transgenic Flies. The donor plasmid (Cas9_gRNAs, Cas9_no-gRNAs, no-Cas9_no-gRNAs, Cas9HF1_gRNAs, or BHDgNf1v2; ~500 ng/µL) was injected along with plasmid BHDgg1c (or TTTgU1 for BHDgNf1v2; Champer et al., 2020c; ~100 ng/µL), which provided additional gRNAs for transformation, and pBS-Hsp70-Cas9 (~500 ng/µL, from Melissa Harrison, Kate O'Connor-Giles, and Jill Wildonger; Addgene plasmid #45945) providing Cas9. A 10 mM Tris-HCl, 100 µM EDTA solution at pH 8.5 was used for the injection. Most constructs were injected into w1118 flies, but BHDgNf1v2 was injected into flies with ATSacG (Champer et al., 2020c). Transformants were identified by the presence of DsRed fluorescent protein in the eyes, which usually indicated successful construct insertion. Correct insertion of the lines was confirmed by sequencing. Independently obtained lines were used for each population cage, except for the Cas9_gRNAs construct, where a total of four lines were used in the seven population cages, and replicates 1–4 were founded with the same line.
 
-## Maintenance of transgenic flies with gene drives
+### Maintenance of transgenic flies with gene drives
 
 To minimize the risk of accidental release, all flies with an active homing gene drive system were kept at the Sarkaria Arthropod Research Laboratory at Cornell University under Arthropod Containment Level 2 protocols in accordance with USDA APHIS standards. In addition, the synthetic-target-site drive system (Champer et al., 2019a), used in both gene drive lines tested here, prevents drive conversion in wild-type flies, which lack the EGFP target site. All safety standards were approved by the Cornell University Institutional Biosafety Committee.
 
-## Experimental fly populations
+### Experimental fly populations
 
 The experimental fly populations were maintained on Bloomington Standard medium in 30 × 30 × 30 cm3 fly cages (Bugdorm). Flies were kept at constant temperature (25°C, 14 hr light, 10 hr dark), with non-overlapping generations. Zero-day-old to two-day-old flies of one generation were allowed to lay eggs on fresh medium (eight food bottles per cage) for 24 hours. Population sizes were controlled via this limited egg-lay period, which led to fluctuations in the number of flies per generation (Figure 2—figure supplement 1). Some experiments experienced bottlenecks due to high variation in food moisture content (resulting in either high or low larvae density). After the egg lay, the adults were frozen at –20°C for later phenotyping, and the new generation was allowed to develop for 11–12 days before a fresh medium was provided and a new generation cycle started.
 
 The ancestral generation of each cage was generated by allowing homozygous EGFP flies and flies homozygous for the construct to deposit eggs for 24 hours separately from each other in four food bottles each. These eight egg-containing bottles were put in the fly cages to start one experimental fly population. All experiments started by crossing the construct and EGFP homozygotes as described above, except for replicates 1 and 2 of Cas9_gRNAs. These two experimental populations were set up with all three genotypes that originated from the same batch that included heterozygotes and both homozygotes. While construct homozygotes of Cas9_no-gRNAs, no-Cas9_no-gRNAs, and Cas9HF1_gRNAs were of the same age as the EGFP homozygotes they were mixed with to start the experiments, the age differed between EGFP and construct homozygotes for Cas9_gRNAs replicate 1, 2, 5, 6, and 7. To avoid confounding maternal effects on the construct frequency dynamics, we excluded for each of these replicates the first generation from the analysis. The full data set including the removed time points can be found in Supplementary file 5. Seven replicates of Cas9_gRNAs, and two replicates each for Cas9_no-gRNAs, no-Cas9_no-gRNAs, and Cas9HF1_gRNAs were maintained.
 
-## Phenotyping experimental fly populations
+### Phenotyping experimental fly populations
 
 The dominant fluorescent markers (EGFP and DsRed) allow a direct readout of the genotype by screening the fluorescent phenotype of an individual fly. Flies that are only red fluorescent are construct homozygotes, flies that are only green fluorescent do not carry any construct, and flies that are fluorescent for both colors carry one construct copy.
 
@@ -188,44 +485,44 @@ We used a Canon EOS Rebel T6 with an 18–55 mm lens for image acquisition. The 
 
 We used the ImageJ distribution Fiji (v 2.0.0-rc-69/1.52 p) (Schindelin et al., 2015; Schindelin et al., 2012) to process and analyze the picture sets with an in-house ImageJ macro: the three multi-channel images were split into the respective red, green, and blue image components. Further analysis included the red and the green image component of the white light picture, the red image component of the red fluorescent picture, and the green image component of the green fluorescent picture. The four remaining images were merged into a stack, and we performed slice alignment (matching method: normalized correlation coefficient) based on a selected landmark using the plugin Template_Matching.jar (Tseng, 2018). We used a rectangular piece of white tape on the black poster board as a landmark. To obtain the contours of the flies, we calculated the difference between the red and the green image component of the white light picture and applied a median and a Gaussian filter (radius = 3 pixels). After that, the picture was binarized using global thresholding (option: Max Entropy; Kapur et al., 1985). The binary image was post-processed (functions: Fill Holes, Open) before the position, and the size of individual particles (= flies) were determined with the Analyze Particles method of ImageJ (minimum size = 750 pixels2). To account for translocations that have not been corrected for by the slice alignment (e.g. when the position of the fly changed slightly), the convex hull for each particle was calculated and enlarged by 20 pixels. A median filter (radius = 2 pixels) was applied to both fluorescent pictures before each particle (= fly) was scanned by a human investigator for the eye fluorescent pattern in both fluorescent pictures. We compared the image-based screening pipeline to the screening method using a stereo dissecting microscope and found that the estimated genotype frequencies deviate not more than 1% from each other (n=646 flies, 4 picture sets).
 
-## Phenotypic assays
+### Phenotypic assays
 
 We measured three fitness proxies for flies carrying Cas9_gRNAs constructs: mate choice, fecundity, and viability. As in the large cage populations, the dominant fluorescent markers allowed us to infer the genotype of an individual fly by phenotyping it for its eye color. All phenotypic assays were conducted on Bloomington Standard medium and under the same temperature (25°C) and light conditions (14 hr light/10 hr dark) as the caged populations. The statistical analysis of the phenotypic assays was conducted in R (v3.6.0) (R Development Core Team, 2019).
 
-## Mate choice
+#### Mate choice
 
 We conducted a mate choice assay to test for mating preferences of EGFP homozygous females. Individual 2-day-old virgin EGFP homozygous females were set up with one EGFP homozygous male and one Cas9_gRNAs homozygous male of the same age in a vial. After 24 hours, the adult flies were removed, and the genotypes of the eclosed offspring were assessed after 11–12 days. If the EGFP homozygous female has mated only with the male of the same genotype, only homozygous offspring is expected. We tested for deviations from an expected equal frequency of offspring genotypes under the null hypothesis of no mate preference via a binomial test.
 
-## Fecundity
+#### Fecundity
 
 We assessed the fecundity of EGFP homozygous, heterozygous, and Cas9_gRNAs homozygous females in individual crosses with EGFP homozygous males. Each individual single 2-day-old virgin female of a distinct genotype was crossed with one EGFP homozygous male of the same age. Crosses were flipped on fresh medium every 24 hours, and eggs were counted manually using a stereo dissecting microscope. Fecundity was defined as the total number of laid eggs per female over three consecutive days. To assess the impact of female genotype we fitted a linear model using function lm() with fecundity as a response. The female genotype was the only fixed effect in the model. The residuals were both normally distributed and showed variance homogeneity, meeting all assumptions of a linear model. None of the used model diagnostics (Cook’s distance, DFbetas, leverage Fox and Monette, 1992 calculated with the R package car [v3.0–3] Fox and Weisberg, 2019) indicated strongly influential cases or outliers. We used the R package emmeans (v1.4.7) (Lenth, 2020) to conduct pairwise comparisons of the three assessed female genotypes.
 
-## Viability
+#### Viability
 
 We measured viability as the fraction of heterozygous offspring out of the total number of offspring of single crosses between EGFP homozygous males and heterozygous females. Single 2-day-old heterozygous virgin females were crossed each with one EGFP homozygous male of the same age. After 24 hours, the adult flies were removed, and the genotypes of the eclosed offspring was assessed after 11–12 days. If the genotype does not influence viability, we expect 50% of the offspring to be heterozygotes. Fraction of heterozygous offspring was tested for normality with an Anderson-Darling test (function ad.test() in the R package nortest [v1.0–4] Gross and Ligges, 2015). We then used a one-sample t-test against a population mean of 0.5 for the fraction of heterozygous offspring.
 
-## Phenotype data analysis, Cas9HF1 homing gene drive
+### Phenotype data analysis, Cas9HF1 homing gene drive
 
 For each individual cross, all offspring was screened for their respective genotypes using a stereo dissecting microscope in combination with the NIGHTSEA system. When calculating drive parameters, we pooled offspring from the same type of cross together and calculated rates from the combined counts. A potential issue of this pooling approach is that batch effects could distort rate and error estimates (offspring were raised in separate vials with different parents). To account for such effects, we performed an alternate analysis as in previous studies Champer et al., 2020b; Champer et al., 2020c by fitting a generalized linear mixed-effects model with a binomial distribution using the function glmer and a binomial link function (fit by maximum likelihood, Adaptive Gauss-Hermite Quadrature, nAGQ = 25). This allows for variance between batches, usually resulting in different rate estimates and increased error estimates. Offspring from a single vial was considered as a distinct batch. This analysis was performed using the R statistical computing environment (v3.6.1) (R Development Core Team, 2019) with packages lme4 (1.1–21, https://cran.r-project.org/web/packages/lme4/index.html) and emmeans (1.4.2, https://cran.r-project.org/web/packages/emmeans/index.html). The R script we used for this analysis is available on GitHub (https://github.com/MesserLab/Binomial-Analysis; Champer, 2019). The results were similar to the pooled analysis and are provided in Supplementary file 5 (Data Sets S1–S2).
 
-## Genotyping
+### Genotyping
 
 We used a PCR-based genotyping approach to confirm mutated gRNA target sites (i.e. active gRNA) in the progeny of individuals carrying either the Cas9_gRNAs or the Cas9HF1_gRNAs construct. For this, flies were frozen, and DNA was extracted by grinding in 30 µL of 10 mM Tris-HCl pH 8, 1 mM EDTA, 25 mM NaCl, and 200 µg/mL recombinant proteinase K (ThermoScientific) followed by incubation at 37°C for 30 min and then 95°C for 5 min. The DNA was used as a template for PCR using Q5 Hot Start DNA Polymerase from New England Biolabs. The region of interest containing gRNA target sites was amplified using DNA oligo primers AutoDLeft_S2_F and AutoDRight_S2_R. PCR products were purified after gel electrophoresis using a gel extraction kit (Zymo Research). Purified products were Sanger sequenced and analyzed with ApE (http://biologylabs.utah.edu/jorgensen/wayned/ape). The location of the construct was similarly confirmed using PCR with primers AutoC_S2_F and EGFPaLeft_S_R.
 
-## Off-target site assessment
+### Off-target site assessment
 
 Potential off-target sites for each of the four gRNAs in the Cas9_gRNAs construct were predicted by CRISPR Optimal Target Finder (http://targetfinder.flycrispr.neuro.brown.edu/; Gratz et al., 2014) using maximum stringency settings. The resulting set of predicted sites is listed in Supplementary file 2. Primers for amplification of each site were designed using Primer3Plus (https://dev.primer3plus.com/index.html). Genomic DNA was extracted from approximately 20–30 flies that had been homozygous for the Cas9_gRNAs construct for approximately 60 generations (as well as similar w1118 flies as controls). Sanger sequencing was performed on PCR products.
 
-## Maximum likelihood framework for fitness cost estimation
+### Maximum likelihood framework for fitness cost estimation
 
 To estimate the fitness costs of the different transgenic constructs from time-resolved genotype frequencies in our D. melanogaster cage experiments, we modified a previously developed maximum likelihood inference framework (Liu et al., 2019). Specifically, we extended the original model to an autosomal two-locus model, where the first locus represents the construct insertion site and the second locus represents an unlinked idealized cut site. In this model, cleavage at the cut site could represent in principle the net effects of non-specific DNA modifications (‘off-target’ effects) as well as the effects of cleavage at the desired gRNA target site (i.e. target site activity). However, the latter is not expected to impose any fitness costs for our constructs due to the intergenic location of the target site. Thus, we refer to the idealized cut site as an ‘off-target’ site. At the construct locus, the two possible allele states are EGFP/construct (observed by the eye fluorescence phenotype); at the off-target site, the two possible states are uncut/cut (not directly observed). The two loci are assumed to be autosomal and unlinked. Thus, there are nine possible genotype combinations an individual could have in our model. Unless stated otherwise, we assumed that the construct homozygotes used for the ancestral generation of a cage are cut/cut homozygotes at the idealized off-target site. Since the construct is not homing (the gRNA target sites are positioned on a non-homologous chromosome arm, Figure 1), the allelic state of a single individual cannot change at the construct locus. By contrast, the allelic state at the off-target locus can be altered by cutting events in the germline or in the early embryo phase. Germline cutting will only impact the genotype of offspring in the next generation, while embryo cutting will directly change the individual’s genotype and hence expose it to any potential fitness effects of this new genotype. Both the germline and embryo off-target cut rates were set to 1 in our model. This means that any uncut allele at the off-target locus will be cut in the germline if the individual carries at least one construct allele (germline cut rate = 1). Furthermore, individuals always become cut/cut homozygotes if their mother carried a least one construct allele (embryo cut rate = 1; we assume that maternally deposited Cas9/gRNA is present in all such embryos). Similar to the previously developed maximum likelihood inference framework (Liu et al., 2019), our two-locus inference framework does not take sampling variance of genotype frequencies into account, because all adults of an experimental population were screened for their respective genotypes. The maximum likelihood inference framework builds upon the multinomial distributions, which allows us to estimate the effective population size alongside the selection parameters (Liu et al., 2019).
 
 A full inference model for the potential fitness costs of construct alleles and cut off-target alleles that includes all three previously implemented types of selection (mate choice, fecundity, and viability) would feature a vast number of parameters that would be difficult to disentangle (Liu et al., 2019). For simplicity and to avoid overfitting, we, therefore, reduced model complexity with a series of assumptions: first, potential fitness costs were assumed to be equal for both sexes, because previous power evaluations have shown that the maximum likelihood inference framework cannot detect sex-specific differences for an autosomal locus if the anticipated fitness costs are small (Liu et al., 2019). Second, we either included only viability selection in the model or included only mate choice (i.e. relative mating success for males with a particular genotype, reference value = 1) and fecundity selection (i.e. relative fecundity for females with a particular genotype, reference value = 1), both of equal magnitude. We further considered all fitness effects to be multiplicative across the two loci and for the two alleles at each locus (e.g. a construct homozygote would have a fitness equal to the square of a construct/EGFP heterozygote, given the same genotype at the off-target site). This results in two much more tractable inference models (viability and fecundity/mate choice) with only three parameters overall: the effective population size (Ne), the relative fitness of construct/EGFP heterozygotes versus EGFP homozygotes (the ‘direct fitness parameter’), and the relative fitness of cut/uncut heterozygotes versus uncut homozygotes (the ‘off-target fitness parameter’).
 
-## Modeling drive performance in the presence of off-target fitness costs
+### Modeling drive performance in the presence of off-target fitness costs
 
 We modified a previously developed agent-based simulation framework (Champer et al., 2020c) to examine the expected effect of off-target fitness costs on the long-term performance of modification and suppression gene drives. For this, we simulated either 1 or 20 genetically unlinked off-target sites that were all in linkage equilibrium with the drive locus. We investigated fitness scenarios mimicking the characteristics of previous Drosophila homing drives, but allowing for higher efficiency by reducing the embryo resistance allele formation rate (Champer et al., 2020c; Yang et al., 2022; Champer et al., 2020d). Specifically, we modeled a homing drive with an 80% drive conversion rate, 10% germline resistance allele formation rate, and a 5% embryo resistance allele formation rate due to maternally deposited Cas9 and gRNA. All resistance alleles were assumed to be nonfunctional due to the use of multiplexed gRNAs and/or conserved functional target sites. Because the embryo resistance allele formation rate at the target site was low (5%), we simulated cuts at off-target sites exclusively in the germline. The off-target cut rate was set to 100% for simulations with a single off-target site and to 5% per site for simulations with 20 off-target sites. The total fitness cost of the 20 off-target sites was set to give the same fitness when half their sites were cut as the single off-target site when both sites were cut. This increased fitness cost for the 20 sites partially compensates for the substantially reduced cut rate at individual sites when considering short-term drive dynamics, which would determine the parameter inference from our cage experiments. A comprehensive description of the underlying modeling framework can be found in reference Champer et al., 2020c.
 
-## Availability of data and materials
+### Availability of data and materials
 
 The annotated sequences of the final construct insertions are available in ApE format (Supplementary file 4). The raw counts of each experimental population (different constructs and the Cas9/Cas9HF1 homing drives) can be found in Supplementary file 5. The macro of the image-based screening pipeline is available on GitHub (https://github.com/MesserLab/CRISPR-Cas9-fitness-effects, copy archived at swh:1:rev:3b4fec78e1678470fb51530b22fffd848dc7ce00, Langmüller, 2022), a picture sample set for the image-based screening pipeline can be found in Supplementary file 6. The raw data of the phenotypic assays can be found in Supplementary file 7. The maximum likelihood inference framework was implemented in R (v 3.6.0) (R Development Core Team, 2019), and is available together with all necessary scripts to reproduce the results on GitHub (https://github.com/MesserLab/CRISPR-Cas9-fitness-effects).

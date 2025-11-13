@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.45562.001 Beneficial and deleterious mutations cause the fitness of lineages to vary across a phylogeny and thereby shape its branching structure. While standard phylogenetic models do not allow mutations to feedback and shape trees, birth-death models can account for this feedback by letting the fitness of lineages depend on their type. To date, these multi-type birth-death models have only been applied to cases where a lineage’s fitness is determined by a single character state. We extend these models to track sequence evolution at multiple sites. This approach remains computationally tractable by tracking the genotype and fitness of lineages probabilistically in an approximate manner. Although approximate, we show that we can accurately estimate the fitness of lineages and site-specific mutational fitness effects from phylogenies. We apply this approach to estimate the population-level fitness effects of mutations in Ebola and influenza virus, and compare our estimates with in vitro fitness measurements for these mutations.
+Beneficial and deleterious mutations cause the fitness of lineages to vary across a phylogeny and thereby shape its branching structure. While standard phylogenetic models do not allow mutations to feedback and shape trees, birth-death models can account for this feedback by letting the fitness of lineages depend on their type. To date, these multi-type birth-death models have only been applied to cases where a lineage’s fitness is determined by a single character state. We extend these models to track sequence evolution at multiple sites. This approach remains computationally tractable by tracking the genotype and fitness of lineages probabilistically in an approximate manner. Although approximate, we show that we can accurately estimate the fitness of lineages and site-specific mutational fitness effects from phylogenies. We apply this approach to estimate the population-level fitness effects of mutations in Ebola and influenza virus, and compare our estimates with in vitro fitness measurements for these mutations.
 
 ## Introduction
 
@@ -24,11 +24,15 @@ The fitness effects of new mutations is a key determinant of a population’s ev
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/45562/elife-45562-fig1-v3.jpg)
 
-**Figure 1.:** (A) Standard phylogenetic models assume that there is an underlying process by which individuals replicate and give rise to a phylogeny. Mutations occur along the lineages of the tree, generating the sequence data observed at the tips. The mutation process is assumed to be independent of tree generating process, such that mutations do not impact the branching structure of the tree. (B) The MFBD allows us to relax this assumption, such that mutations at multiple sites feedback and shape both the tree and sequence data. (C) Under the original multi-type birth-death model we track , the probability density that a lineage Dn,i⁢(t) at time n in state t produces the subtree descending from i and the observed tip states. We also track n, the probability that a lineage produces no sampled descendants and is therefore unobserved. (EiD) In the MFBD model we instead track , the probability that a lineage Dn,k,i⁢(t) in state n at site i produces the subtree and the observed tip states at site k. Because the fitness of a lineage k will depend on its genotype at all sites, we use the marginal site probabilities fn to compute the probability that a lineage has a certain genotype, such as ACT (Approximation 1). We can then marginalize over the fitness of each genotype weighted by its approximate genotype probability to compute the fitness ω of a lineage (Approximation 2). Finally, we need to know the probability fn that a lineage left no other sampled descendants, which we approximate using the probability En that a lineage with same expected fitness Eu leaves no sampled descendants (Approximation 3). The schematic in A was reproduced from the original figure by Louis du Plessis (uhttps://github.com/Taming-the-BEAST/TechnicalLectureSources/tree/master/BeastIntro2018) with permission under a Creative Commons license.
+**Figure 1.:** (A) Standard phylogenetic models assume that there is an underlying process by which individuals replicate and give rise to a phylogeny. Mutations occur along the lineages of the tree, generating the sequence data observed at the tips. The mutation process is assumed to be independent of tree generating process, such that mutations do not impact the branching structure of the tree. (B) The MFBD allows us to relax this assumption, such that mutations at multiple sites feedback and shape both the tree and sequence data. (C) Under the original multi-type birth-death model we track $D_{n,i}⁢(t)$, the probability density that a lineage $n$ at time $t$ in state $i$ produces the subtree descending from $n$ and the observed tip states. We also track $E_{i}$, the probability that a lineage produces no sampled descendants and is therefore unobserved. (D) In the MFBD model we instead track $D_{n,k,i}⁢(t)$, the probability that a lineage $n$ in state $i$ at site $k$ produces the subtree and the observed tip states at site $k$. Because the fitness of a lineage $f_{n}$ will depend on its genotype at all sites, we use the marginal site probabilities $\omega$ to compute the probability that a lineage has a certain genotype, such as ACT (Approximation 1). We can then marginalize over the fitness of each genotype weighted by its approximate genotype probability to compute the fitness $f_{n}$ of a lineage (Approximation 2). Finally, we need to know the probability $E_{n}$ that a lineage left no other sampled descendants, which we approximate using the probability $E_{u}$ that a lineage with same expected fitness $u$ leaves no sampled descendants (Approximation 3). The schematic in A was reproduced from the original figure by Louis du Plessis (https://github.com/Taming-the-BEAST/TechnicalLectureSources/tree/master/BeastIntro2018) with permission under a Creative Commons license.
 
-While questionable in terms of biological realism, independence between the tree generating process and the mutation process allows for tractable statistical models. Assuming independence, the joint likelihood of a phylogenetic tree 𝒯 and the sequence data 𝒮 at the tips of the tree having evolved as observed can be factored into two distinct components:(1)L⁢(𝒮,𝒯|μ,θ)=L⁢(𝒮|𝒯,μ)⁢p⁢(𝒯|θ).
+While questionable in terms of biological realism, independence between the tree generating process and the mutation process allows for tractable statistical models. Assuming independence, the joint likelihood of a phylogenetic tree $𝒯$ and the sequence data $𝒮$ at the tips of the tree having evolved as observed can be factored into two distinct components:
 
-The likelihood of the sequence data L⁢(𝒮|𝒯,μ) conditional on the tree and the mutational parameters μ can be computed efficiently for most continuous-time Markov models of sequence evolution (Felsenstein, 1981). The probability density p⁢(𝒯|θ) of the tree 𝒯 given the parameters generating the tree θ can likewise be computed under widely used coalescent (Griffiths and Tavaré, 1994; Pybus et al., 2000) or birth-death models (Rannala and Yang, 1996; Stadler, 2009). In Bayesian phylogenetics, p⁢(𝒯|θ) is normally thought of as the prior distribution over trees rather than a likelihood, because the tree itself is inferred from the sequence data.
+$$
+L⁢(𝒮,𝒯|\mu,\theta)=L⁢(𝒮|𝒯,\mu)⁢p⁢(𝒯|\theta).
+$$
+
+The likelihood of the sequence data $L⁢(𝒮|𝒯,\mu)$ conditional on the tree and the mutational parameters $\mu$ can be computed efficiently for most continuous-time Markov models of sequence evolution (Felsenstein, 1981). The probability density $p⁢(𝒯|\theta)$ of the tree $𝒯$ given the parameters generating the tree $\theta$ can likewise be computed under widely used coalescent (Griffiths and Tavaré, 1994; Pybus et al., 2000) or birth-death models (Rannala and Yang, 1996; Stadler, 2009). In Bayesian phylogenetics, $p⁢(𝒯|\theta)$ is normally thought of as the prior distribution over trees rather than a likelihood, because the tree itself is inferred from the sequence data.
 
 The assumption of independence between the mutation and tree generating processes may be unproblematic in certain scenarios, such as if mutations are truly neutral or do not contribute to substantial fitness differences among lineages. A common argument invoked in defense of ignoring non-neutral mutations is that macroevolutionary tree generating processes like speciation and extinction play out on longer timescales than the substitution process fixing or removing mutations within a population (Bustamante, 2005). In this case, fitness variation drives the substitution process within a population but does not ultimately drive the formation of a phylogeny at the species level. But such separation-of-timescales arguments do not hold when segregating mutations contribute to substantial fitness variation between lineages in a phylogeny, such as for rapidly evolving microbes where several different mutant strains can co-circulate. In these cases, the tree generating and mutation processes occur on the same timescale, and the fitness effects of mutations can feedback and shape the branching structure of a phylogeny (Kaplan et al., 1988; Nicolaisen and Desai, 2012; Neher and Hallatschek, 2013). Ignoring non-neutral evolution in this case may introduce biases into phylogenetic inference. But perhaps more importantly, fitness differences among lineages can be correlated with ancestral genotypes, providing information about the molecular basis of adaptive evolution we would otherwise ignore.
 
@@ -36,151 +40,259 @@ We therefore explore an approach that couples molecular sequence evolution to th
 
 ## Materials and methods
 
-## The MTBD at a single evolving site
+### The MTBD at a single evolving site
 
-At a single evolving site, the multi-type birth-death (MTBD) model of Stadler and Bonhoeffer (2013) can be used to compute the joint likelihood L⁢(S,𝒯|μ,θ) of the sequence or character state data 𝒮 and phylogenetic tree 𝒯 in a way that couples the mutation process with changes in fitness along a lineage. Let Dn⁢(t) represent the probability density (i.e. the likelihood) that the subtree descending from lineage n evolved between time t and the present exactly as observed (Figure 1C). Further, let Dn,i⁢(t) represent this probability density conditional on lineage n being in state i out of M possible states at time t. Here the state of a lineage refers to a particular allele or character state (e.g. nucleotide or amino acid) at a single site. We reserve the term genotype to refer to a particular configuration of states across multiple sites in a sequence.
+At a single evolving site, the multi-type birth-death (MTBD) model of Stadler and Bonhoeffer (2013) can be used to compute the joint likelihood $L⁢(S,𝒯|\mu,\theta)$ of the sequence or character state data $𝒮$ and phylogenetic tree $𝒯$ in a way that couples the mutation process with changes in fitness along a lineage. Let $D_{n}⁢(t)$ represent the probability density (i.e. the likelihood) that the subtree descending from lineage $n$ evolved between time $t$ and the present exactly as observed (Figure 1C). Further, let $D_{n,i}⁢(t)$ represent this probability density conditional on lineage $n$ being in state $i$ out of $M$ possible states at time $t$. Here the state of a lineage refers to a particular allele or character state (e.g. nucleotide or amino acid) at a single site. We reserve the term genotype to refer to a particular configuration of states across multiple sites in a sequence.
 
-The density Dn,i⁢(t) can be computed going backwards in time from the present (t=0) to time t along a lineage by numerically solving a system of ordinary differential equations:(2)ddtDn,i(t)=−(λi+∑j=1Mγi,j+di)Dn,i(t)(a)noevent+2λiEi(t)Dn,i(t)(b)birthoflineagewithnosampledescendants+∑j=1Mγi,jDn,j(t)(c) mutation from i to j
+The density $D_{n,i}⁢(t)$ can be computed going backwards in time from the present ($t=0$) to time $t$ along a lineage by numerically solving a system of ordinary differential equations:
 
-Here, λi is the birth rate and di is the death rate of lineages in state i, and thus reflect a lineage’s fitness. Mutations between states i and j occur at a rate γi,j, independently of birth events. Each term in (Equation 2) describes how Dn,i changes through time by accounting for all of the different events that could have occurred along the lineage. The first term (a) considers the change in probability density given that no birth, death or mutation event occurred. The second term (b) considers the probability of a birth event that went unobserved because one of the child lineages produced no sampled descendants (this event has probability Ei⁢(t), see below). The third term (c) reflects the probability that the lineage mutated from state i to j.
+$$
+\frac{d}{dt}D_{n,i}(t)=−(\lambda_{i}+\sumj=1M\gamma_{i,j}+d_{i})D_{n,i}(t)(a)noevent+2\lambda_{i}E_{i}(t)D_{n,i}(t)(b)birthoflineagewithnosampledescendants+\sumj=1M\gamma_{i,j}D_{n,j}(t)(c) mutation from i to j
+$$
 
-Ei⁢(t) represents the probability that a lineage in state i is not sampled and has no sampled descendants. This probability can be computed at any time t by solving a second set of ODEs:(3)ddtEi(t)=(1−si)di(a)deathwithoutsampling−(λi+∑j=1Mγi,j+di)Ei(t)(b)noevent+λiEi(t)2(c)birth,neitherchildhassampleleddescendants+∑j=1Mγi,jEj(t).(d)mutationfromitoj
+Here, $\lambda_{i}$ is the birth rate and $d_{i}$ is the death rate of lineages in state $i$, and thus reflect a lineage’s fitness. Mutations between states $i$ and $j$ occur at a rate $\gamma_{i,j}$, independently of birth events. Each term in (Equation 2) describes how $D_{n,i}$ changes through time by accounting for all of the different events that could have occurred along the lineage. The first term (a) considers the change in probability density given that no birth, death or mutation event occurred. The second term (b) considers the probability of a birth event that went unobserved because one of the child lineages produced no sampled descendants (this event has probability $E_{i}⁢(t)$, see below). The third term (c) reflects the probability that the lineage mutated from state $i$ to $j$.
 
-The first term (a) reflects the probability that a lineage dies and is not sampled, where si is the probability that a lineage in state i is sampled upon dying. Terms b-d have similar interpretations as in (Equation 2).
+$E_{i}⁢(t)$ represents the probability that a lineage in state $i$ is not sampled and has no sampled descendants. This probability can be computed at any time $t$ by solving a second set of ODEs:
 
-At a tip lineage n, we initialize Dn,i⁢(t)=di⁢si if the lineage was sampled upon death at time t. Alternatively, if n was sampled at the present time t=0 before dying, then Dn,i⁢(t)=ρi, where ρi is the probability that an individual in state i was sampled at present. At a branching event, the probability density Da,i of the parent lineage a in state i giving rise to two descendent lineages n and m is updated as:(4)Da,i=2⁢λi⁢Dm,i⁢(t)⁢Dn,i⁢(t).
+$$
+\frac{d}{dt}E_{i}(t)=(1−s_{i})d_{i}(a)deathwithoutsampling−(\lambda_{i}+\sumj=1M\gamma_{i,j}+d_{i})E_{i}(t)(b)noevent+\lambda_{i}E_{i}(t)^{2}(c)birth,neitherchildhassampleleddescendants+\sumj=1M\gamma_{i,j}E_{j}(t).(d)mutationfromitoj
+$$
 
-The factor of two enters because either lineage m or n could have given birth and we must consider both possible events.
+The first term (a) reflects the probability that a lineage dies and is not sampled, where $s_{i}$ is the probability that a lineage in state $i$ is sampled upon dying. Terms b-d have similar interpretations as in (Equation 2).
 
-At the root, we can compute the probability density of the entire tree by summing over all possible root states:(5)Dn=∑i=1Mqi⁢Dn,i⁢(tr⁢o⁢o⁢t)1-Ei⁢(tr⁢o⁢o⁢t),where qi is the prior probability that the root is in state i at time tr⁢o⁢o⁢t. Including the term 1-Ei⁢(tr⁢o⁢o⁢t) in the denominator conditions the birth-death process on giving rise to at least one sampled individual. Dn represents the probability that the entire tree and the tip states 𝒮 evolved as exactly as observed. It is therefore equivalent to the joint likelihood L⁢(𝒮,𝒯|μ,θ) we seek where μ={γ} and θ={λ,d,s}.
+At a tip lineage $n$, we initialize $D_{n,i}⁢(t)=d_{i}⁢s_{i}$ if the lineage was sampled upon death at time $t$. Alternatively, if $n$ was sampled at the present time $t=0$ before dying, then $D_{n,i}⁢(t)=ρ_{i}$, where $ρ_{i}$ is the probability that an individual in state $i$ was sampled at present. At a branching event, the probability density $D_{a,i}$ of the parent lineage $a$ in state $i$ giving rise to two descendent lineages $n$ and $m$ is updated as:
 
-In theory, this approach could be extended to evolution at any number of sites as long as we track Dn,i⁢(t) for all possible genotypes i. Unfortunately, this approach has limited utility because the number of possible genotypes in sequence space scales exponentially with the number of sites L (i.e. 4L possible genotypes for nucleotide sequences), making the MTBD model impractical for modeling evolution at more than a few sites.
+$$
+D_{a,i}=2⁢\lambda_{i}⁢D_{m,i}⁢(t)⁢D_{n,i}⁢(t).
+$$
 
-## The marginal fitness birth-death model
+The factor of two enters because either lineage $m$ or $n$ could have given birth and we must consider both possible events.
 
-While the fitness of a lineage will generally depend on its genotype across multiple sites, tracking evolution in the space of all possible genotypes is, as just discussed, computationally infeasible. We therefore seek an approach that considers how mutations at multiple sites determine the fitness of a lineage without the need to track Dn,i for all possible genotypes. In the approach described below and outlined in Figure 1D, we therefore track molecular evolution at each site, computing the probability that each site occupies each state, and then approximate the probability of a lineage being in any particular genotype based on these site probabilities. To compute the expected fitness of a lineage, we can then sum, or marginalize, over the fitness of each genotype weighted by its approximate probability. We therefore refer to this approach as the marginal fitness birth-death (MFBD) model.
+At the root, we can compute the probability density of the entire tree by summing over all possible root states:
 
-First, in order to couple a lineage’s fitness with the birth-death process, we will assume that the birth rate λn of any lineage n scales according to the fitness fg of its genotype:(6)λn=fg⁢λ0,where λ0 is the base birth rate assigned to a particular reference genotype (e.g. the wildtype). A lineage’s death rate can also be coupled to its fitness, but for simplicity we will assume a lineage’s fitness is reflected only in its birth rate λn.
+$$
+D_{n}=\sumi=1Mq_{i}⁢\frac{D_{n,i}⁢(t_{r⁢o⁢o⁢t})}{1-E_{i}⁢(t_{r⁢o⁢o⁢t})},
+$$
 
-Let 𝒢 be the set of all possible genotypes in sequence space and gk be the state of genotype g at site k. To make it clear when we are considering evolution in genotype space rather than at a particular site, we will write the probability density Dn,i as Dn,g when i refers to a particular genotype. Furthermore, let Dn,k,i be the probability density of the subtree descending from lineage n given that site k is in state i. By definition,(7)Dn,k,i=∑{g∈𝒢:gk=i}Dn,g,where the sum is over all genotypes in 𝒢 with site k in state i.
+where $q_{i}$ is the prior probability that the root is in state $i$ at time $t_{r⁢o⁢o⁢t}$. Including the term $1-E_{i}⁢(t_{r⁢o⁢o⁢t})$ in the denominator conditions the birth-death process on giving rise to at least one sampled individual. $D_{n}$ represents the probability that the entire tree and the tip states $𝒮$ evolved as exactly as observed. It is therefore equivalent to the joint likelihood $L⁢(𝒮,𝒯|\mu,\theta)$ we seek where $\mu={\gamma}$ and $\theta={\lambda,d,s}$.
 
-We can derive a difference equation for Dn,k,i from Dn,g in a straightforward manner:(8)Dn,k,i(t+Δt)=∑{g∈𝒢:gk=i}Dn,g(t+Δt)=∑{g∈𝒢:gk=i}[(1−(fgλ0+∑j=1M∑{g′∈𝒢:gk′=j}γg,g′+d))Dn,g(t)Δt=+2fgλ0En,g(t)Dn,g(t)Δt=+∑j=1M∑{g′∈𝒢:gk′=j}γg,g′Dn,g′(t)Δt].
+In theory, this approach could be extended to evolution at any number of sites as long as we track $D_{n,i}⁢(t)$ for all possible genotypes $i$. Unfortunately, this approach has limited utility because the number of possible genotypes in sequence space scales exponentially with the number of sites $L$ (i.e. $4^{L}$ possible genotypes for nucleotide sequences), making the MTBD model impractical for modeling evolution at more than a few sites.
 
-Taking the limit as Δ⁢t→0, we get a new system of differential equations for Dn,k,i⁢(t):(9)ddtDn,k,i(t)=∑{g∈𝒢:gk=i}[−(fgλ0+∑j=1M∑{g′∈𝒢:gk′=j}γg,g′+d)Dn,g(t)+2fgλ0En,g(t)Dn,g(t)+∑j=1M∑{g′∈𝒢:gk′=j}γg,g′Dn,g′(t)]
+### The marginal fitness birth-death model
 
-Unfortunately, (Equation 9) would still require us to track Dn,g⁢(t) for all possible genotypes, precisely what we wish not to do. We show below that, if we can approximate fg and En,g for any given lineage, we can write (Equation 9) in terms of only Dn,k,i (see (Equation 19)) and therefore do not need to track each genotype.
+While the fitness of a lineage will generally depend on its genotype across multiple sites, tracking evolution in the space of all possible genotypes is, as just discussed, computationally infeasible. We therefore seek an approach that considers how mutations at multiple sites determine the fitness of a lineage without the need to track $D_{n,i}$ for all possible genotypes. In the approach described below and outlined in Figure 1D, we therefore track molecular evolution at each site, computing the probability that each site occupies each state, and then approximate the probability of a lineage being in any particular genotype based on these site probabilities. To compute the expected fitness of a lineage, we can then sum, or marginalize, over the fitness of each genotype weighted by its approximate probability. We therefore refer to this approach as the marginal fitness birth-death (MFBD) model.
 
-## Approximating the fitness of a lineage
+First, in order to couple a lineage’s fitness with the birth-death process, we will assume that the birth rate $\lambda_{n}$ of any lineage $n$ scales according to the fitness $f_{g}$ of its genotype:
 
-We begin by approximating the fitness fn of a lineage n. Even if we do not know the exact genotype of a lineage at a particular time, we can compute the lineage’s expected fitness by summing over the fitness of each genotype fg weighted by the probability ωn,g that lineage n is in genotype g:(10)𝔼⁢(fn)=∑g∈𝒢fg⁢ωn,g.
+$$
+\lambda_{n}=f_{g}⁢\lambda_{0},
+$$
 
-The same logic can be extended to compute the expected marginal fitness 𝔼⁢(fn,k,i) of a lineage n that at site k is in state i:(11)𝔼⁢(fn,k,i)=∑{g∈𝒢:gk=i}fg⁢ωn,g.
+where $\lambda_{0}$ is the base birth rate assigned to a particular reference genotype (e.g. the wildtype). A lineage’s death rate can also be coupled to its fitness, but for simplicity we will assume a lineage’s fitness is reflected only in its birth rate $\lambda_{n}$.
 
-Computing 𝔼⁢(fn,k,i) using (Equation 11) requires knowledge of the genotype probabilities ωn,g, which would again require us to track evolution in genotype space. We therefore introduce our major assumption: that we can approximate genotype probabilities using only the marginal site probabilities ωn,k,i that site k is in state i. We describe how we compute ωn,k,i below. For now, we make the approximation that(12)ω^n,g=∏k=1Lωn,k,gk∑g∈𝒢∏k=1Lωn,k,gk.
+Let $𝒢$ be the set of all possible genotypes in sequence space and $g_{k}$ be the state of genotype $g$ at site $k$. To make it clear when we are considering evolution in genotype space rather than at a particular site, we will write the probability density $D_{n,i}$ as $D_{n,g}$ when $i$ refers to a particular genotype. Furthermore, let $D_{n,k,i}$ be the probability density of the subtree descending from lineage $n$ given that site $k$ is in state $i$. By definition,
+
+$$
+D_{n,k,i}=\sum{g\in𝒢:g_{k}=i}D_{n,g},
+$$
+
+where the sum is over all genotypes in $𝒢$ with site $k$ in state $i$.
+
+We can derive a difference equation for $D_{n,k,i}$ from $D_{n,g}$ in a straightforward manner:
+
+$$
+D_{n,k,i}(t+Δt)=\sum{g\in𝒢:g_{k}=i}D_{n,g}(t+Δt)=\sum{g\in𝒢:g_{k}=i}[(1−(f_{g}\lambda_{0}+\sumj=1M\sum{g^{′}\in𝒢:g_{k}^{′}=j}\gamma_{g,g^{′}}+d))D_{n,g}(t)Δt=+2f_{g}\lambda_{0}E_{n,g}(t)D_{n,g}(t)Δt=+\sumj=1M\sum{g^{′}\in𝒢:g_{k}^{′}=j}\gamma_{g,g^{′}}D_{n,g^{′}}(t)Δt].
+$$
+
+Taking the limit as $Δ⁢t→0$, we get a new system of differential equations for $D_{n,k,i}⁢(t)$:
+
+$$
+\frac{d}{dt}D_{n,k,i}(t)=\sum{g\in𝒢:g_{k}=i}[−(f_{g}\lambda_{0}+\sumj=1M\sum{g^{′}\in𝒢:g_{k}^{′}=j}\gamma_{g,g^{′}}+d)D_{n,g}(t)+2f_{g}\lambda_{0}E_{n,g}(t)D_{n,g}(t)+\sumj=1M\sum{g^{′}\in𝒢:g_{k}^{′}=j}\gamma_{g,g^{′}}D_{n,g^{′}}(t)]
+$$
+
+Unfortunately, (Equation 9) would still require us to track $D_{n,g}⁢(t)$ for all possible genotypes, precisely what we wish not to do. We show below that, if we can approximate $f_{g}$ and $E_{n,g}$ for any given lineage, we can write (Equation 9) in terms of only $D_{n,k,i}$ (see (Equation 19)) and therefore do not need to track each genotype.
+
+### Approximating the fitness of a lineage
+
+We begin by approximating the fitness $f_{n}$ of a lineage $n$. Even if we do not know the exact genotype of a lineage at a particular time, we can compute the lineage’s expected fitness by summing over the fitness of each genotype $f_{g}$ weighted by the probability $\omega_{n,g}$ that lineage $n$ is in genotype $g$:
+
+$$
+𝔼⁢(f_{n})=\sumg\in𝒢f_{g}⁢\omega_{n,g}.
+$$
+
+The same logic can be extended to compute the expected marginal fitness $𝔼⁢(f_{n,k,i})$ of a lineage $n$ that at site $k$ is in state $i$:
+
+$$
+𝔼⁢(f_{n,k,i})=\sum{g\in𝒢:g_{k}=i}f_{g}⁢\omega_{n,g}.
+$$
+
+Computing $𝔼⁢(f_{n,k,i})$ using (Equation 11) requires knowledge of the genotype probabilities $\omega_{n,g}$, which would again require us to track evolution in genotype space. We therefore introduce our major assumption: that we can approximate genotype probabilities using only the marginal site probabilities $\omega_{n,k,i}$ that site $k$ is in state $i$. We describe how we compute $\omega_{n,k,i}$ below. For now, we make the approximation that
+
+$$
+\omega^_{n,g}=\frac{\prod_{k=1}^{L}\omega_{n,k,g_{k}}}{\sum_{g\in𝒢}\prod_{k=1}^{L}\omega_{n,k,g_{k}}}.
+$$
 
 This approximation assumes that all sites evolve independently of one another, which is not generally true because mutations at different sites are linked together in genotypes with shared ancestral histories, creating correlations among sites that we ignore.
 
-Using the approximate genotype probabilities ω^n,g, we can in turn approximate the expected marginal fitness of a lineage:(13)f^n,k,i=∑{g∈𝒢:gk=i}fg⁢ω^n,g.
+Using the approximate genotype probabilities $\omega^_{n,g}$, we can in turn approximate the expected marginal fitness of a lineage:
 
-If the fitness effects of each site act multiplicatively to determine the overall fitness of a lineage, we can compute f^n,k,i as:(14)f^n,k,i=σk⁢i⁢∏l=1,l≠kL∑j=1Mσl⁢j⁢ωn,l,j,where σk⁢i is the fitness effect of site k being in state i. This formulation of f^n,k,i is useful if the number of sites L is large and the number of genotypes we need to sum over in (Equation 13) is therefore also extremely large.
+$$
+f^_{n,k,i}=\sum{g\in𝒢:g_{k}=i}f_{g}⁢\omega^_{n,g}.
+$$
 
-## Approximating the probability of no sampled descendants
+If the fitness effects of each site act multiplicatively to determine the overall fitness of a lineage, we can compute $f^_{n,k,i}$ as:
 
-The En,g⁢(t) term in (Equation 9) represents the probability that a lineage n alive at time t in the past is not sampled and leaves behind no sampled descendants. En,g⁢(t) therefore necessarily depends on the fitness of unobserved lineages descending from n and how fitness along these lineages evolves through changes in their genotype. Because it is often easier track evolution in one dimensional fitness space rather than high-dimensional sequence space (Kepler and Perelson, 1993; Tsimring et al., 1996), we simplify this problem by tracking a proxy for En,g⁢(t) though fitness space.
+$$
+f^_{n,k,i}=\sigma_{k⁢i}⁢\prodl=1,l\neqkL\sumj=1M\sigma_{l⁢j}⁢\omega_{n,l,j},
+$$
 
-Let Eu be the probability that a lineage with expected fitness u leaves no sampled descendants. While fitness can take on a continuous range of values, we track these probabilities only for a discrete set of points 𝒱 in fitness space. We can track Eu for u∈𝒱 by modifying (Equation 3) to obtain:(15)dd⁢t⁢Eu⁢(t)=(1-su)⁢du-(λu+∑v∈𝒱γu,v+du)⁢Eu⁢(t)+λu⁢Eu⁢(t)2+∑v∈𝒱γu,v⁢Ev⁢(t).
+where $\sigma_{k⁢i}$ is the fitness effect of site $k$ being in state $i$. This formulation of $f^_{n,k,i}$ is useful if the number of sites $L$ is large and the number of genotypes we need to sum over in (Equation 13) is therefore also extremely large.
 
-We can then substitute En,g⁢(t) in (Equation 9) with Eu for the fitness value u closest to fg or f^n,k,i in fitness space.
+### Approximating the probability of no sampled descendants
 
-Tracking evolution in fitness space requires us to specify rates γu,v for how lineages transition between fitness classes u and v. Let 𝒢u be the set of genotypes with expected fitness closest to u out of all fitness values in 𝒱. We approximate γu,v as:(16)γu,v=1|𝒢u|⁢∑i∈𝒢u∑j∈𝒢vμi⁢j,where μi⁢j is the mutation rate between genotypes i and j. In other words, we compute the average rate of transitions out of fitness class u into v by summing over all possible transitions between genotypes contained within each fitness class. Note that if each genotype falls in a unique fitness class such that |𝒢u|=1 for all u∈𝒱, then Eu is computed exactly. In the Results, we compare using the approximate transition rates above to compute Eu versus an even simpler approximation where we assume no transitions between fitness classes along unobserved lineages, which has been assumed in earlier multi-type birth-death models (Rabosky et al., 2014; Barido-Sottani et al., 2018).
+The $E_{n,g}⁢(t)$ term in (Equation 9) represents the probability that a lineage $n$ alive at time $t$ in the past is not sampled and leaves behind no sampled descendants. $E_{n,g}⁢(t)$ therefore necessarily depends on the fitness of unobserved lineages descending from $n$ and how fitness along these lineages evolves through changes in their genotype. Because it is often easier track evolution in one dimensional fitness space rather than high-dimensional sequence space (Kepler and Perelson, 1993; Tsimring et al., 1996), we simplify this problem by tracking a proxy for $E_{n,g}⁢(t)$ though fitness space.
 
-## Computing the marginal site densities Dn,k,i
+Let $E_{u}$ be the probability that a lineage with expected fitness $u$ leaves no sampled descendants. While fitness can take on a continuous range of values, we track these probabilities only for a discrete set of points $𝒱$ in fitness space. We can track $E_{u}$ for $u\in𝒱$ by modifying (Equation 3) to obtain:
 
-Recall that (Equation 9) provided an exact way to track the marginal site densities Dn,k,i based on the genotype densities Dn,g. To efficiently evaluate Dn,k,i without the need to track Dn,g for all genotypes, we apply the three approximations made above. First, we approximate the genotype probabilities ω^n,g based on the marginal site probabilities. Second, we marginalize over the fitness of each genotype (weighted by its genotype probability) to compute f^n,k,i and then substitute f^n,k,i for fg for all genotypes where gk=i below. Third, we approximate En,g by Eu for a single fitness value u closest to f^n,k,i. Making these approximations in (Equation 9) leads to:(17)ddtDn,k,i(t)=∑{g∈𝒢:gk=i}[−(f^n,k,iλ0+∑j=1M∑{g′∈𝒢:gk′=j}γg,g′+d)Dn,g(t)+2f^n,k,iλ0Eu(t)Dn,g(t)+∑j=1M∑{g′∈𝒢:gk′=j}γg,g′Dn,g′(t)]
+$$
+\frac{d}{d⁢t}⁢E_{u}⁢(t)=(1-s_{u})⁢d_{u}-(\lambda_{u}+\sumv\in𝒱\gamma_{u,v}+d_{u})⁢E_{u}⁢(t)+\lambda_{u}⁢E_{u}⁢(t)^{2}+\sumv\in𝒱\gamma_{u,v}⁢E_{v}⁢(t).
+$$
 
-Assuming that the mutation rate from i to j at site k does not depend on the genetic background, we can substitute ∑j=1M∑{g′∈𝒢:gk′=j}γg,g′ with ∑j=1Mγi,j, where γi,j is the per site mutation rate. We can likewise substitute ∑j=1M∑{g′∈𝒢:gk′=j}γg,g′⁢Dn,g′⁢(t) with ∑j=1Mγi,j⁢∑{g′∈𝒢:gk′=j}Dn,g′⁢(t). Making these substitutions and rearranging the sums in (Equation 17), we have:(18)ddtDn,k,i(t)=−(f^n,k,iλ0+∑j=1Mγi,j+d)∑{g∈𝒢:gk=i}Dn,g(t)+2f^n,k,iλ0Eu(t)∑{g∈𝒢:gk=i}Dn,g(t)+∑j=1Mγi,j∑{g′∈𝒢:gk′=j}Dn,g′
+We can then substitute $E_{n,g}⁢(t)$ in (Equation 9) with $E_{u}$ for the fitness value $u$ closest to $f_{g}$ or $f^_{n,k,i}$ in fitness space.
 
-Recalling that Dn,k,i=∑{g∈𝒢:gk=i}Dn,g (and by extension Dn,k,j=∑{g∈𝒢:gk=j}Dn,g), we have:(19)ddtDn,k,i(t)=−(f^n,k,iλ0+∑j=1Mγi,j+d)Dn,k,i(t)+2f^n,k,iλ0Eu(t)Dn,k,i(t)+∑j=1Mγi,jDn,k,j(t).
+Tracking evolution in fitness space requires us to specify rates $\gamma_{u,v}$ for how lineages transition between fitness classes $u$ and $v$. Let $𝒢_{u}$ be the set of genotypes with expected fitness closest to $u$ out of all fitness values in $𝒱$. We approximate $\gamma_{u,v}$ as:
 
-The significance of (Equation 19) is twofold. First, we can track sequence evolution at each site individually without tracking all genotypes. Second, given f^n,k,i, we can track the overall fitness of a lineage by marginalizing over the fitness effects of all possible mutations at other sites. We can therefore track sequence evolution at each site while simultaneously taking into account the coupled fitness effects of mutations at all other sites on a lineage’s fitness.
+$$
+\gamma_{u,v}=\frac{1}{|𝒢_{u}|}⁢\sumi\in𝒢_{u}\sumj\in𝒢_{v}\mu_{i⁢j},
+$$
 
-Computing f^n,k,i still requires us to approximate the genotype probabilities using (Equation 12), which in turn requires the marginal site probabilities ωn,k,i. In our notation, ωn,k,i represents the conditional probability p⁢(i|𝒯n,𝒮n) that lineage n is in particular state i, where 𝒯n represents the subtree descending from n with tip sequences 𝒮n represents the inverse conditional probability density p⁢(𝒯n,𝒮n|i). We can therefore apply Bayes theorem to compute ωn,k,i given Dn,k,i:(20)ωn,k,i=p⁢(i|𝒯n,𝒮n)=p⁢(𝒯n,𝒮n|i)⁢q⁢(i)∑iMp⁢(𝒯n,𝒮n|i)⁢q⁢(i)=Dn,k,i⁢q⁢(i)∑iMDn,k,i⁢q⁢(i).
+where $\mu_{i⁢j}$ is the mutation rate between genotypes $i$ and $j$. In other words, we compute the average rate of transitions out of fitness class $u$ into $v$ by summing over all possible transitions between genotypes contained within each fitness class. Note that if each genotype falls in a unique fitness class such that $|𝒢_{u}|=1$ for all $u\in𝒱$, then $E_{u}$ is computed exactly. In the Results, we compare using the approximate transition rates above to compute $E_{u}$ versus an even simpler approximation where we assume no transitions between fitness classes along unobserved lineages, which has been assumed in earlier multi-type birth-death models (Rabosky et al., 2014; Barido-Sottani et al., 2018).
 
-The q⁢(i) terms represent the prior probability that the lineage is in state i. Here we make a simplification in assuming that the tree ancestral and sister to lineage n has no information regarding ωn,k,i, and thus assume a uniform prior on q⁢(i)=1/M. The q⁢(i) terms therefore cancel above.
+### Computing the marginal site densities Dn,k,i
 
-Because the fitness of a lineage depends on the state of all sites, we must solve (Equation 19) for all sites simultaneously as one coupled system of differential equations. This requires updating Dn,k,i at each time step, which suggests the following iterative procedure.
+Recall that (Equation 9) provided an exact way to track the marginal site densities $D_{n,k,i}$ based on the genotype densities $D_{n,g}$. To efficiently evaluate $D_{n,k,i}$ without the need to track $D_{n,g}$ for all genotypes, we apply the three approximations made above. First, we approximate the genotype probabilities $\omega^_{n,g}$ based on the marginal site probabilities. Second, we marginalize over the fitness of each genotype (weighted by its genotype probability) to compute $f^_{n,k,i}$ and then substitute $f^_{n,k,i}$ for $f_{g}$ for all genotypes where $g_{k}=i$ below. Third, we approximate $E_{n,g}$ by $E_{u}$ for a single fitness value $u$ closest to $f^_{n,k,i}$. Making these approximations in (Equation 9) leads to:
 
-At a tip n observed to be in genotype g, we initialize f^n,k,i as fg if gk=i or else f^n,k,i=0, D^n,k,i=d⁢s or ρ, and ωn,k,i=1 if gk=i, else ωn,k,i=0. Then at each time step backwards through time from time t to time t+Δ⁢t, for each site and state we:
+$$
+\frac{d}{dt}D_{n,k,i}(t)=\sum{g\in𝒢:g_{k}=i}[−(f^_{n,k,i}\lambda_{0}+\sumj=1M\sum{g^{′}\in𝒢:g_{k}^{′}=j}\gamma_{g,g^{′}}+d)D_{n,g}(t)+2f^_{n,k,i}\lambda_{0}E_{u}(t)D_{n,g}(t)+\sumj=1M\sum{g^{′}\in𝒢:g_{k}^{′}=j}\gamma_{g,g^{′}}D_{n,g^{′}}(t)]
+$$
 
-## Computing the full joint likelihood
+Assuming that the mutation rate from $i$ to $j$ at site $k$ does not depend on the genetic background, we can substitute $\sum_{j=1}^{M}\sum_{{g^{′}\in𝒢:g_{k}^{′}=j}}\gamma_{g,g^{′}}$ with $\sum_{j=1}^{M}\gamma_{i,j}$, where $\gamma_{i,j}$ is the per site mutation rate. We can likewise substitute $\sum_{j=1}^{M}\sum_{{g^{′}\in𝒢:g_{k}^{′}=j}}\gamma_{g,g^{′}}⁢D_{n,g^{′}}⁢(t)$ with $\sum_{j=1}^{M}\gamma_{i,j}⁢\sum_{{g^{′}\in𝒢:g_{k}^{′}=j}}D_{n,g^{′}}⁢(t)$. Making these substitutions and rearranging the sums in (Equation 17), we have:
 
-We can now compute the joint likelihood of the tree and sequence data if we track Dn,k,i at each site back to the root. At the root, Dn,k,i⁢(tr⁢o⁢o⁢t) represents p⁢(𝒯,𝒮k|μ,θ,i), the probability density of the entire tree 𝒯 and the observed sequence data 𝒮k as site k, conditional on site k being in state i at the root. To be precise, Dn,k,i only approximates p⁢(𝒯,𝒮k|μ,θ,i) because we computed Dn,k,i using the expected marginal fitness of a lineage f^n,k,i based on approximate genotype probabilities. We therefore introduce an additional auxiliary variable ℱ representing the entire set of expected fitness values f^n,k,i computed over all lineages, sites and states. Using this notation, Dn,k,i⁢(tr⁢o⁢o⁢t)=p⁢(𝒯,𝒮k|μ,θ,ℱ,i). By summing over all possible root states at site k (and conditioning on survival), we can then compute:(21)p⁢(𝒯,𝒮k|μ,θ,ℱ)=∑i=1Mq⁢(i)⁢p⁢(𝒯,𝒮k|μ,θ,ℱ,i)1-Eu⁢(tr⁢o⁢o⁢t)=∑i=1Mq⁢(i)⁢Dn,k,i⁢(tr⁢o⁢o⁢t)1-En,k,i⁢(tr⁢o⁢o⁢t).
+$$
+\frac{d}{dt}D_{n,k,i}(t)=−(f^_{n,k,i}\lambda_{0}+\sumj=1M\gamma_{i,j}+d)\sum{g\in𝒢:g_{k}=i}D_{n,g}(t)+2f^_{n,k,i}\lambda_{0}E_{u}(t)\sum{g\in𝒢:g_{k}=i}D_{n,g}(t)+\sumj=1M\gamma_{i,j}\sum{g^{′}\in𝒢:g_{k}^{′}=j}D_{n,g^{′}}
+$$
 
-Likewise, we can compute the conditional probability density p⁢(𝒮k|𝒯,μ,θ,ℱ) of the sequence data at site k given the tree:(22)p⁢(𝒮k|𝒯,μ,θ,ℱ)=p⁢(𝒯,𝒮k|μ,θ,ℱ)p⁢(𝒯|μ,θ,ℱ).
+Recalling that $D_{n,k,i}=\sum_{{g\in𝒢:g_{k}=i}}D_{n,g}$ (and by extension $D_{n,k,j}=\sum_{{g\in𝒢:g_{k}=j}}D_{n,g}$), we have:
 
-We already know p⁢(𝒯,𝒮k|μ,θ,ℱ) from above but now need the tree density p⁢(𝒯|μ,θ,ℱ). This can easily be computed using a birth-death process where the birth rate of each lineage at any time t is always rescaled by its expected fitness f^n⁢(t) contained within ℱ.
+$$
+\frac{d}{dt}D_{n,k,i}(t)=−(f^_{n,k,i}\lambda_{0}+\sumj=1M\gamma_{i,j}+d)D_{n,k,i}(t)+2f^_{n,k,i}\lambda_{0}E_{u}(t)D_{n,k,i}(t)+\sumj=1M\gamma_{i,j}D_{n,k,j}(t).
+$$
 
-We can now compute the joint density p⁢(𝒯,𝒮1:L|μ,θ) for all sites. Because each site is conditionally independent of all other sites given ℱ, we can factor p⁢(𝒯,𝒮1:L|μ,θ,ℱ) into a product of densities for 𝒮k at each site and the density of the entire tree 𝒯:(23)p⁢(𝒯,𝒮1:L|μ,θ,ℱ)=p⁢(𝒯|μ,θ,ℱ)⁢∏k=1Lp⁢(𝒮k|𝒯,μ,θ,ℱ).
+The significance of (Equation 19) is twofold. First, we can track sequence evolution at each site individually without tracking all genotypes. Second, given $f^_{n,k,i}$, we can track the overall fitness of a lineage by marginalizing over the fitness effects of all possible mutations at other sites. We can therefore track sequence evolution at each site while simultaneously taking into account the coupled fitness effects of mutations at all other sites on a lineage’s fitness.
 
-We can thus approximate the joint likelihood of the sequence data and the phylogeny p⁢(𝒯,𝒮1:L|μ,θ) as p⁢(𝒯,𝒮1:L|μ,θ,ℱ). This allows us to consider how selection shapes sequence evolution at each site while simultaneously considering how the fitness effects of mutations at multiple sites act together to shape the phylogeny. As (Equation 23) makes clear though, the goodness of our approximation depends on how well the fitness values in ℱ are approximated, which in turn depends on how well we can approximate genotypes based on the marginal site probabilities. We explore the goodness of these approximations in the Results section.
+Computing $f^_{n,k,i}$ still requires us to approximate the genotype probabilities using (Equation 12), which in turn requires the marginal site probabilities $\omega_{n,k,i}$. In our notation, $\omega_{n,k,i}$ represents the conditional probability $p⁢(i|𝒯_{n},𝒮_{n})$ that lineage $n$ is in particular state $i$, where $𝒯_{n}$ represents the subtree descending from $n$ with tip sequences $𝒮_{n}$ represents the inverse conditional probability density $p⁢(𝒯_{n},𝒮_{n}|i)$. We can therefore apply Bayes theorem to compute $\omega_{n,k,i}$ given $D_{n,k,i}$:
 
-## Implementation
+$$
+\omega_{n,k,i}=p⁢(i|𝒯_{n},𝒮_{n})=\frac{p⁢(𝒯_{n},𝒮_{n}|i)⁢q⁢(i)}{\sum_{i}^{M}p⁢(𝒯_{n},𝒮_{n}|i)⁢q⁢(i)}=\frac{D_{n,k,i}⁢q⁢(i)}{\sum_{i}^{M}D_{n,k,i}⁢q⁢(i)}.
+$$
+
+The $q⁢(i)$ terms represent the prior probability that the lineage is in state $i$. Here we make a simplification in assuming that the tree ancestral and sister to lineage $n$ has no information regarding $\omega_{n,k,i}$, and thus assume a uniform prior on $q⁢(i)=1/M$. The $q⁢(i)$ terms therefore cancel above.
+
+Because the fitness of a lineage depends on the state of all sites, we must solve (Equation 19) for all sites simultaneously as one coupled system of differential equations. This requires updating $D_{n,k,i}$ at each time step, which suggests the following iterative procedure.
+
+At a tip $n$ observed to be in genotype $g$, we initialize $f^_{n,k,i}$ as $f_{g}$ if $g_{k}=i$ or else $f^_{n,k,i}=0$, $D^_{n,k,i}=d⁢s$ or $ρ$, and $\omega_{n,k,i}=1$ if $g_{k}=i$, else $\omega_{n,k,i}=0$. Then at each time step backwards through time from time $t$ to time $t+Δ⁢t$, for each site and state we:
+
+### Computing the full joint likelihood
+
+We can now compute the joint likelihood of the tree and sequence data if we track $D_{n,k,i}$ at each site back to the root. At the root, $D_{n,k,i}⁢(t_{r⁢o⁢o⁢t})$ represents $p⁢(𝒯,𝒮_{k}|\mu,\theta,i)$, the probability density of the entire tree $𝒯$ and the observed sequence data $𝒮_{k}$ as site $k$, conditional on site $k$ being in state $i$ at the root. To be precise, $D_{n,k,i}$ only approximates $p⁢(𝒯,𝒮_{k}|\mu,\theta,i)$ because we computed $D_{n,k,i}$ using the expected marginal fitness of a lineage $f^_{n,k,i}$ based on approximate genotype probabilities. We therefore introduce an additional auxiliary variable $ℱ$ representing the entire set of expected fitness values $f^_{n,k,i}$ computed over all lineages, sites and states. Using this notation, $D_{n,k,i}⁢(t_{r⁢o⁢o⁢t})=p⁢(𝒯,𝒮_{k}|\mu,\theta,ℱ,i)$. By summing over all possible root states at site $k$ (and conditioning on survival), we can then compute:
+
+$$
+p⁢(𝒯,𝒮_{k}|\mu,\theta,ℱ)=\sumi=1Mq⁢(i)⁢\frac{p⁢(𝒯,𝒮_{k}|\mu,\theta,ℱ,i)}{1-E_{u}⁢(t_{r⁢o⁢o⁢t})}=\sumi=1Mq⁢(i)⁢\frac{D_{n,k,i}⁢(t_{r⁢o⁢o⁢t})}{1-E_{n,k,i}⁢(t_{r⁢o⁢o⁢t})}.
+$$
+
+Likewise, we can compute the conditional probability density $p⁢(𝒮_{k}|𝒯,\mu,\theta,ℱ)$ of the sequence data at site $k$ given the tree:
+
+$$
+p⁢(𝒮_{k}|𝒯,\mu,\theta,ℱ)=\frac{p⁢(𝒯,𝒮_{k}|\mu,\theta,ℱ)}{p⁢(𝒯|\mu,\theta,ℱ)}.
+$$
+
+We already know $p⁢(𝒯,𝒮_{k}|\mu,\theta,ℱ)$ from above but now need the tree density $p⁢(𝒯|\mu,\theta,ℱ)$. This can easily be computed using a birth-death process where the birth rate of each lineage at any time $t$ is always rescaled by its expected fitness $f^_{n}⁢(t)$ contained within $ℱ$.
+
+We can now compute the joint density $p⁢(𝒯,𝒮_{1:L}|\mu,\theta)$ for all sites. Because each site is conditionally independent of all other sites given $ℱ$, we can factor $p⁢(𝒯,𝒮_{1:L}|\mu,\theta,ℱ)$ into a product of densities for $𝒮_{k}$ at each site and the density of the entire tree $𝒯$:
+
+$$
+p⁢(𝒯,𝒮_{1:L}|\mu,\theta,ℱ)=p⁢(𝒯|\mu,\theta,ℱ)⁢\prodk=1Lp⁢(𝒮_{k}|𝒯,\mu,\theta,ℱ).
+$$
+
+We can thus approximate the joint likelihood of the sequence data and the phylogeny $p⁢(𝒯,𝒮_{1:L}|\mu,\theta)$ as $p⁢(𝒯,𝒮_{1:L}|\mu,\theta,ℱ)$. This allows us to consider how selection shapes sequence evolution at each site while simultaneously considering how the fitness effects of mutations at multiple sites act together to shape the phylogeny. As (Equation 23) makes clear though, the goodness of our approximation depends on how well the fitness values in $ℱ$ are approximated, which in turn depends on how well we can approximate genotypes based on the marginal site probabilities. We explore the goodness of these approximations in the Results section.
+
+### Implementation
 
 We first implemented the marginal fitness birth-death (MFBD) model in Matlab version R2017b. The Matlab implementation was used to test how well the MFBD model can approximate likelihoods and genotype probabilities relative to the exact multi-type birth death model tracking all possible genotypes for a simple model with only four genotypes. For statistical inference, the MFBD was implemented as an add-on package for BEAST 2 (Bouckaert et al., 2014) named Lumière, which extends the existing BDMM package for multi-type birth-death models (Kühnert et al., 2016). BEAST two is a general software platform that allows a wide range of evolutionary models including birth-death models to be fit to phylogenetic trees while jointly inferring the phylogeny using Bayesian MCMC sampling. The BEAST 2 implementation of Lumière therefore allows the joint posterior distribution of all parameters in the MFBD model and the phylogeny to be estimated from sequence data. Source code for Lumière and the Matlab implementation are freely available at https://github.com/davidrasm/Lumiere.
 
-## Simulations
+### Simulations
 
-To test the statistical performance of our approach, mock phylogenies and sequence data were simulated under a birth-death-mutation-sampling process using a variant of the Gillespie stochastic simulation algorithm (Gillespie, 2007) that recorded the ancestry of all individuals in the population. A binary sequence was associated with each lineage and allowed to mutate with a constant per-site mutation rate γ. Mutations could alter the fitness of a lineage by either increasing or decreasing its birth rate according to site-specific fitness effects. At death events, lineages were sampled with probability s, in which case they were included in the mock phylogeny. Code for these simulations is available at https://github.com/davidrasm/Lumiere/tree/master/sim (Rasmussen, 2019; copy archived at https://github.com/elifesciences-publications/Lumiere).
+To test the statistical performance of our approach, mock phylogenies and sequence data were simulated under a birth-death-mutation-sampling process using a variant of the Gillespie stochastic simulation algorithm (Gillespie, 2007) that recorded the ancestry of all individuals in the population. A binary sequence was associated with each lineage and allowed to mutate with a constant per-site mutation rate $\gamma$. Mutations could alter the fitness of a lineage by either increasing or decreasing its birth rate according to site-specific fitness effects. At death events, lineages were sampled with probability $s$, in which case they were included in the mock phylogeny. Code for these simulations is available at https://github.com/davidrasm/Lumiere/tree/master/sim (Rasmussen, 2019; copy archived at https://github.com/elifesciences-publications/Lumiere).
 
-## Ebola analysis
+### Ebola analysis
 
 We used the Lumière implementation of the MFBD model to estimate the fitness effects of amino acid mutations previously identified to increase the infectivity of Ebola virus in human cell lines (Diehl et al., 2016; Urbanowicz et al., 2016). We reanalyzed a set of 1610 whole genome EBOV sequences sampled from Guinea, Sierra Leone and Liberia in 2014 to 2016. The sequence alignment along with the time-calibrated molecular phylogeny we used for our analysis were downloaded from https://github.com/ebov/space-time/tree/master/Data.
 
-(Urbanowicz et al., 2016) measured the fitness effects of 17 viral genotypes carrying 18 different amino acid mutations in either single, double or triple mutant backgrounds relative to the Makona genotype first sampled at the beginning of the epidemic. Because our methods cannot estimate fitness effects of mutations at very low frequencies, we only analyzed 9 of these mutations that were present in at least 10 of the 1610 viral samples. Preliminary analysis revealed that these mutations fall within eight unique genetic backgrounds because of the way mutations are nested within other single or double mutant lineages in the phylogeny. Because the data of Urbanowicz et al. (2016) strongly suggest that epistatic interactions between mutations affect viral fitness, we estimated the genotypic fitness fg of these eight major genotypes rather than site-specific fitness effects σ. We therefore used the MFBD to track sequence evolution at each site, but used (Equation 13) to marginalize over these genotypes when approximating the fitness of a lineage.
+(Urbanowicz et al., 2016) measured the fitness effects of 17 viral genotypes carrying 18 different amino acid mutations in either single, double or triple mutant backgrounds relative to the Makona genotype first sampled at the beginning of the epidemic. Because our methods cannot estimate fitness effects of mutations at very low frequencies, we only analyzed 9 of these mutations that were present in at least 10 of the 1610 viral samples. Preliminary analysis revealed that these mutations fall within eight unique genetic backgrounds because of the way mutations are nested within other single or double mutant lineages in the phylogeny. Because the data of Urbanowicz et al. (2016) strongly suggest that epistatic interactions between mutations affect viral fitness, we estimated the genotypic fitness $f_{g}$ of these eight major genotypes rather than site-specific fitness effects $\sigma$. We therefore used the MFBD to track sequence evolution at each site, but used (Equation 13) to marginalize over these genotypes when approximating the fitness of a lineage.
 
-We estimated the fitness of each genotype relative to the Makona genotype, assuming a uniform [0,2] prior distribution on these fitness values. For the other parameters in the model, we assumed a fixed death or removal rate d of 0.1667 per day based on earlier estimates (Gire et al., 2014; Stadler et al., 2014). Sampling was modeled as occurring upon removal, with the sampling proportion s set to zero before March 2014, when the first sample was collected. After March 2014, we assumed a fixed sampling proportion of 0.056, reflecting the fact that the dataset included samples from 1610 individuals out of the 28,652 probable cases reported by the WHO (WHO, 2016). Lastly, we assumed a constant amino acid mutation rate over all sites with an exponential prior on both the forward and backward mutation rate with a mean rate of 2 × 10−3 per site per year. We also ran a second analysis where we included the geographic locations of lineages (Guinea, Sierra Leone and Liberia) as an additional evolving character state in our model. In this analysis, we estimated the effect of geographic location on transmission rates in Sierra Leone and Liberia relative to the base transmission rate in Guinea. Both analyses can be reproduced in Lumière with the XML input files available at https://github.com/davidrasm/Lumiere/tree/master/ebola.
+We estimated the fitness of each genotype relative to the Makona genotype, assuming a uniform $[0,2]$ prior distribution on these fitness values. For the other parameters in the model, we assumed a fixed death or removal rate $d$ of 0.1667 per day based on earlier estimates (Gire et al., 2014; Stadler et al., 2014). Sampling was modeled as occurring upon removal, with the sampling proportion $s$ set to zero before March 2014, when the first sample was collected. After March 2014, we assumed a fixed sampling proportion of 0.056, reflecting the fact that the dataset included samples from 1610 individuals out of the 28,652 probable cases reported by the WHO (WHO, 2016). Lastly, we assumed a constant amino acid mutation rate over all sites with an exponential prior on both the forward and backward mutation rate with a mean rate of 2 × 10−3 per site per year. We also ran a second analysis where we included the geographic locations of lineages (Guinea, Sierra Leone and Liberia) as an additional evolving character state in our model. In this analysis, we estimated the effect of geographic location on transmission rates in Sierra Leone and Liberia relative to the base transmission rate in Guinea. Both analyses can be reproduced in Lumière with the XML input files available at https://github.com/davidrasm/Lumiere/tree/master/ebola.
 
-## Influenza H3N2 analysis
+### Influenza H3N2 analysis
 
 We used the Lumière implementation of the MFBD model to estimate the fitness effects of amino acid mutations in the hemagglutinin (HA) protein of human influenza virus subtype H3N2. In order to ensure our fitness estimates were directly comparable to the mutational fitness effects previously estimated by Lee et al. (2018), we focused our analysis on viral samples in the same antigenic cluster as the A/Perth/16/2009 strain studied by Lee et al. for two reasons. First, Lee et al. (2018) showed that the fitness effects of amino acid mutations in HA vary depending on the genetic background, with greater fitness differences between more divergent strains. We therefore only considered strains with low genetic divergence from A/Perth/16/2009. Second, the deep mutational scanning experiments were performed in cell culture, and therefore do not reflect the antigenic component of viral fitness in the human population. Only considering a single antigenic cluster therefore minimizes the effect of antigenic mutations.
 
 To further minimize additional background variation in fitness due to geography, we only considered samples collected in the United States from January 2009 to the end of 2012. Overall, we downloaded 2150 sequences from the Influenza Research Database (https://www.fludb.org/) that met these criteria. Nucleotide sequences of the HA segment were aligned in Muscle (Edgar, 2004) and a maximum likelihood phylogenetic tree was estimated in RAxML (Stamatakis, 2014) using a GTR + Gamma substitution model. To get a time-calibrated phylogeny, branch lengths in the ML tree were converted into units of real calendar time with Least Squares Dating v0.3 (To et al., 2016) using a previously estimated molecular clock rate for the HA segment of H3N2 of 5.72 x 10−3 substitutions per site per year (Rambaut et al., 2008).
 
-In our first analysis, we estimated mutational fitness effects from the H3N2 phylogeny under the MFBD model assuming that fitness effects are multiplicative across sites, as in (Equation 14). Because of the large number of naturally occurring mutations in the HA sequences, we limited our analyses to the 17 most abundant amino acid mutations that were present in more than 10% of the sampled sequences. To compare our estimates of population-level fitness effects to fitness effects measured in vitro, we converted the relative amino acid preferences at each site from the deep mutational scanning experiments to mutational fitness effects:(24)θk=l⁢o⁢g2⁢πk,iπk,l,where πk,i is the relative preference for amino acid i at site k. To compute these fitness effects, we used the averaged relative amino acid preferences reported in Dataset S3 of Lee et al. (2018).
+In our first analysis, we estimated mutational fitness effects from the H3N2 phylogeny under the MFBD model assuming that fitness effects are multiplicative across sites, as in (Equation 14). Because of the large number of naturally occurring mutations in the HA sequences, we limited our analyses to the 17 most abundant amino acid mutations that were present in more than 10% of the sampled sequences. To compare our estimates of population-level fitness effects to fitness effects measured in vitro, we converted the relative amino acid preferences at each site from the deep mutational scanning experiments to mutational fitness effects:
 
-In our second analysis, we used the relative preference data from the deep mutational scanning experiments to predict the population-level fitness of viral lineages. For this analysis, we considered all naturally occurring mutations in the HA protein that were present in at least 10 samples. In all, the fitness effects of 67 mutations distributed across 56 sites were included. To map relative amino acid preferences across multiple sites to population-level fitness, we assume that the mutational fitness effects computed from the relative amino acid preferences are additive on a log2 scale, such that the fitness fn of a lineage is:(25)fn=(1+α⁢∑kLl⁢o⁢g2⁢πk,iπk,l)κ.
+$$
+\theta_{k}=l⁢o⁢g_{2}⁢\frac{\pi_{k,i}}{\pi_{k,l}},
+$$
 
-Here, α is a linear scaling term that allows us to calibrate population-level fitness in terms of the sum of the site-specific fitness effects. We also include the scaling exponent κ to account for curvature in the fitness landscape, as might be expected to arise if mutations interact globally through synergistic (κ>1) or antagonistic (κ<1) epistatic effects across sites (Elena et al., 2010). A complete list of the HA mutations considered, their fitness effects predicted by DMS and the XML input file needed to reproduce our analysis are available at https://github.com/davidrasm/Lumiere/tree/master/influenzaH3N2.
+where $\pi_{k,i}$ is the relative preference for amino acid $i$ at site $k$. To compute these fitness effects, we used the averaged relative amino acid preferences reported in Dataset S3 of Lee et al. (2018).
+
+In our second analysis, we used the relative preference data from the deep mutational scanning experiments to predict the population-level fitness of viral lineages. For this analysis, we considered all naturally occurring mutations in the HA protein that were present in at least 10 samples. In all, the fitness effects of 67 mutations distributed across 56 sites were included. To map relative amino acid preferences across multiple sites to population-level fitness, we assume that the mutational fitness effects computed from the relative amino acid preferences are additive on a log2 scale, such that the fitness $f_{n}$ of a lineage is:
+
+$$
+f_{n}=(1+\alpha⁢\sumkLl⁢o⁢g_{2}⁢\frac{\pi_{k,i}}{\pi_{k,l}})^{κ}.
+$$
+
+Here, $\alpha$ is a linear scaling term that allows us to calibrate population-level fitness in terms of the sum of the site-specific fitness effects. We also include the scaling exponent $κ$ to account for curvature in the fitness landscape, as might be expected to arise if mutations interact globally through synergistic ($κ>1$) or antagonistic ($κ<1$) epistatic effects across sites (Elena et al., 2010). A complete list of the HA mutations considered, their fitness effects predicted by DMS and the XML input file needed to reproduce our analysis are available at https://github.com/davidrasm/Lumiere/tree/master/influenzaH3N2.
 
 ## Results
 
-## The four genotype model
+### The four genotype model
 
-We first consider a simple model of molecular evolution in order to compare the marginal fitness birth-death (MFBD) model against the exact multi-type birth-death (MTBD) model tracking all genotypes. Specifically, we consider a binary evolving sequence of length L=2 where all mutations are deleterious and carry a selective fitness cost σ. Fitness effects of individual mutations act multiplicatively, such that the double mutant has fitness (1-σ)2. With this simple model, it is therefore possible to track the evolutionary dynamics of all four genotypes (𝒢={00,01,10,11}) under both models.
+We first consider a simple model of molecular evolution in order to compare the marginal fitness birth-death (MFBD) model against the exact multi-type birth-death (MTBD) model tracking all genotypes. Specifically, we consider a binary evolving sequence of length $L=2$ where all mutations are deleterious and carry a selective fitness cost $\sigma$. Fitness effects of individual mutations act multiplicatively, such that the double mutant has fitness $(1-\sigma)^{2}$. With this simple model, it is therefore possible to track the evolutionary dynamics of all four genotypes ($𝒢={00,01,10,11}$) under both models.
 
-Figure 2A shows a phylogeny simulated under the four genotype model, colored according to the genotype of each lineage. We computed the joint likelihood that this tree and observed tip genotypes evolved under a range of different fitness values σ for both the exact MTBD and approximate MFBD models (Figure 2B). The likelihood profiles under both models peak around the true value of σ and closely match at lower values of σ, but begin to diverge at higher values. The probability of a single hypothetical lineage being in each genotype approximated under the MFBD model is also shown against the exact genotype probabilities computed under the MTBD in (Figure 2C).
+Figure 2A shows a phylogeny simulated under the four genotype model, colored according to the genotype of each lineage. We computed the joint likelihood that this tree and observed tip genotypes evolved under a range of different fitness values $\sigma$ for both the exact MTBD and approximate MFBD models (Figure 2B). The likelihood profiles under both models peak around the true value of $\sigma$ and closely match at lower values of $\sigma$, but begin to diverge at higher values. The probability of a single hypothetical lineage being in each genotype approximated under the MFBD model is also shown against the exact genotype probabilities computed under the MTBD in (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/45562/elife-45562-fig2-v3.jpg)
 
-**Figure 2.:** (A) Simulated phylogeny showing the genotype of each lineage through time. (B) Joint likelihood of the phylogeny and tip genotypes under different values of  using the the approximate MFBD (solid line) or the exact MTBD model (dotted line). The vertical blue line marks the true parameter value. (σC) The normalized probability of a single hypothetical lineage being in each genotype back through time based on the MFBD approximation (solid line) versus the exact MTBD model (dotted line) with . Note that the probabilities for genotypes 10 and 01 are identical. All parameters besides σ=0.5 were fixed at σ, λ=0.25, d=0.05. The mutation rate s=0.05 was symmetric between forward and backwards mutations and fixed at 0.05.γ
+**Figure 2.:** (A) Simulated phylogeny showing the genotype of each lineage through time. (B) Joint likelihood of the phylogeny and tip genotypes under different values of $\sigma$ using the the approximate MFBD (solid line) or the exact MTBD model (dotted line). The vertical blue line marks the true parameter value. (C) The normalized probability of a single hypothetical lineage being in each genotype back through time based on the MFBD approximation (solid line) versus the exact MTBD model (dotted line) with $\sigma=0.5$. Note that the probabilities for genotypes 10 and 01 are identical. All parameters besides $\sigma$ were fixed at $\lambda=0.25$, $d=0.05$, $s=0.05$. The mutation rate $\gamma$ was symmetric between forward and backwards mutations and fixed at 0.05.
 
-Because the MFBD approximates the probability of a lineage being in each genotype based on the marginal sites probabilities, we also compared how well the MFBD model approximates the genotype probability densities Dn,g relative to the exact multi-type birth-death model. Recall that Dn,g provides the probability that the subtree descending from a lineage n has evolved exactly as observed, and therefore forms the foundation of all likelihood calculations under our model. Averaged over all genotypes, the error introduced by approximating Dn,g under the MFBD model is greatest at intermediate mutation rates (Figure 3A). When there is no selection (σ=0), the MFBD introduces no error, but the error increases as the strength of selection increases (Figure 3B). We can also consider a variant of the four genotype model where each of the single mutant genotypes is neutral with σ=0 but an epistatic interaction between the two sites causes the double mutant to be deleterious with some fitness cost ϵ. Again, the error introduced by the MFBD grows as the strength of the epistatic fitness effect increases (Figure 3C).
+Because the MFBD approximates the probability of a lineage being in each genotype based on the marginal sites probabilities, we also compared how well the MFBD model approximates the genotype probability densities $D_{n,g}$ relative to the exact multi-type birth-death model. Recall that $D_{n,g}$ provides the probability that the subtree descending from a lineage $n$ has evolved exactly as observed, and therefore forms the foundation of all likelihood calculations under our model. Averaged over all genotypes, the error introduced by approximating $D_{n,g}$ under the MFBD model is greatest at intermediate mutation rates (Figure 3A). When there is no selection ($\sigma=0$), the MFBD introduces no error, but the error increases as the strength of selection increases (Figure 3B). We can also consider a variant of the four genotype model where each of the single mutant genotypes is neutral with $\sigma=0$ but an epistatic interaction between the two sites causes the double mutant to be deleterious with some fitness cost $ϵ$. Again, the error introduced by the MFBD grows as the strength of the epistatic fitness effect increases (Figure 3C).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/45562/elife-45562-fig3-v3.jpg)
 
-**Figure 3.:** (A–C) The error introduced by approximating the genotype probability densities  based on the marginal sites probabilities under the MFBD model for different mutation rates (Dn,gA), strengths of selection (B), and epistatic fitness effects (C). The solid line represents the MFBD approximation with fitness effects coupled across sites whereas the dashed line represents a more naive approximation that ignores the fitness effects of other sites entirely. The mean error represents the time-integrated average over all genotypes. (D–F) Normalized  probabilities for a single hypothetical lineage being in each genotype back through time based on the MFBD approximation (solid line) versus the exact MTBD model (dotted line). Each plot shows the dynamics of Dn,g for the parameter values marked by asterisks in the plots immediately above. Other parameters are fixed at Dn,g, λ=0.25, d=0.05.s=0.05
+**Figure 3.:** (A–C) The error introduced by approximating the genotype probability densities $D_{n,g}$ based on the marginal sites probabilities under the MFBD model for different mutation rates (A), strengths of selection (B), and epistatic fitness effects (C). The solid line represents the MFBD approximation with fitness effects coupled across sites whereas the dashed line represents a more naive approximation that ignores the fitness effects of other sites entirely. The mean error represents the time-integrated average over all genotypes. (D–F) Normalized $D_{n,g}$ probabilities for a single hypothetical lineage being in each genotype back through time based on the MFBD approximation (solid line) versus the exact MTBD model (dotted line). Each plot shows the dynamics of $D_{n,g}$ for the parameter values marked by asterisks in the plots immediately above. Other parameters are fixed at $\lambda=0.25$, $d=0.05$, $s=0.05$.
 
-Taken together, these results suggest that the MFBD model introduces error in Dn,g by ignoring correlations among sites due to the fact that selection acts at the level of genotypes, especially when epistasis is strong. The additional correlations between sites induced by selection then causes the genotype probabilities to deviate from those expected based on the marginal site probabilities. Conversely, at very high mutation rates, correlations between sites quickly break down so that sites evolve effectively independently of one another, such that the error introduced by the MFBD also decreases as the mutation rate becomes very high.
+Taken together, these results suggest that the MFBD model introduces error in $D_{n,g}$ by ignoring correlations among sites due to the fact that selection acts at the level of genotypes, especially when epistasis is strong. The additional correlations between sites induced by selection then causes the genotype probabilities to deviate from those expected based on the marginal site probabilities. Conversely, at very high mutation rates, correlations between sites quickly break down so that sites evolve effectively independently of one another, such that the error introduced by the MFBD also decreases as the mutation rate becomes very high.
 
-Overall, the magnitude of the error introduced by approximating the genotype probabilities is small, especially when we can compare the MFBD model against a more naive approximation that tracks sequence evolution at each site completely independent of all other sites by setting the expected marginal fitness f^n,k,i=σ instead of using (Equation 14). This approximation completely ignores how the fitness of a lineage depends on mutations at other sites, and the error in Dn,g is generally considerably greater than under the MFBD model (Figure 3A–C; dashed lines). Moreover, even when the error introduced by the MFBD model is relatively large, the model still tracks the dynamics of Dn,g backwards through time along a lineage well (Figure 3D–F; for parameter values marked by the black asterisks in A-C).
+Overall, the magnitude of the error introduced by approximating the genotype probabilities is small, especially when we can compare the MFBD model against a more naive approximation that tracks sequence evolution at each site completely independent of all other sites by setting the expected marginal fitness $f^_{n,k,i}=\sigma$ instead of using (Equation 14). This approximation completely ignores how the fitness of a lineage depends on mutations at other sites, and the error in $D_{n,g}$ is generally considerably greater than under the MFBD model (Figure 3A–C; dashed lines). Moreover, even when the error introduced by the MFBD model is relatively large, the model still tracks the dynamics of $D_{n,g}$ backwards through time along a lineage well (Figure 3D–F; for parameter values marked by the black asterisks in A-C).
 
-The MFBD model also approximates En, the probability that a lineage has no sampled descendants, using a discretized fitness space and is therefore another source of potential error. Mirroring the results for Dn,g, the error introduced by this approximation peaks at intermediate mutation rates while it increases monotonically with the strength of selection and epistatic fitness effects (Figure 4A–C). Interestingly, tracking how lineages transition between fitness classes in fitness space does not improve the approximation relative to simply ignoring changes in fitness along unobserved lineages (Figure 4A–C; dashed lines). The overall magnitude of error introduced by approximating En is also small, although using a discretized fitness space does lead to some jaggedness in the dynamics of En (Figure 4D–F). However, only when selection is very strong (σ>0.8) does tracking En in fitness space result in significant errors, and then only in the more distant past (Figure 4E). In this case, a lineage’s fitness in the distant past may be a poor predictor of its probability of leaving sampled descendants at a time point in the distant future because the fitness of the lineage and its descendants may greatly change over time in a way that is difficult to predict without considering the exact mutational pathways through which a lineage can move in sequence space.
+The MFBD model also approximates $E_{n}$, the probability that a lineage has no sampled descendants, using a discretized fitness space and is therefore another source of potential error. Mirroring the results for $D_{n,g}$, the error introduced by this approximation peaks at intermediate mutation rates while it increases monotonically with the strength of selection and epistatic fitness effects (Figure 4A–C). Interestingly, tracking how lineages transition between fitness classes in fitness space does not improve the approximation relative to simply ignoring changes in fitness along unobserved lineages (Figure 4A–C; dashed lines). The overall magnitude of error introduced by approximating $E_{n}$ is also small, although using a discretized fitness space does lead to some jaggedness in the dynamics of $E_{n}$ (Figure 4D–F). However, only when selection is very strong ($\sigma>0.8$) does tracking $E_{n}$ in fitness space result in significant errors, and then only in the more distant past (Figure 4E). In this case, a lineage’s fitness in the distant past may be a poor predictor of its probability of leaving sampled descendants at a time point in the distant future because the fitness of the lineage and its descendants may greatly change over time in a way that is difficult to predict without considering the exact mutational pathways through which a lineage can move in sequence space.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/45562/elife-45562-fig4-v3.jpg)
 
-**Figure 4.:** (A–C) The error introduced by approximating  in a discretized fitness space under the MFBD model for different mutation rates (EnA), strengths of selection (B), and epistatic fitness effects (C). The solid line represents the approximation where lineages are allowed to transition between fitness classes whereas the dashed line represents the assumption that fitness does not change along unobserved lineages. To obtain a single  value comparable across both models, we summed En over all genotypes weighted by the exact probability of the lineage being in each genotype and then took the time-integrated average to compute the mean error. (EnD–F) The dynamics of  for a single hypothetical lineage back through time based on the MFBD approximation (solid line) versus the exact MTBD model (dotted line). Each plot shows the dynamics of En for the parameter values marked by asterisks in the plots immediately above.En
+**Figure 4.:** (A–C) The error introduced by approximating $E_{n}$ in a discretized fitness space under the MFBD model for different mutation rates (A), strengths of selection (B), and epistatic fitness effects (C). The solid line represents the approximation where lineages are allowed to transition between fitness classes whereas the dashed line represents the assumption that fitness does not change along unobserved lineages. To obtain a single $E_{n}$ value comparable across both models, we summed $E_{n}$ over all genotypes weighted by the exact probability of the lineage being in each genotype and then took the time-integrated average to compute the mean error. (D–F) The dynamics of $E_{n}$ for a single hypothetical lineage back through time based on the MFBD approximation (solid line) versus the exact MTBD model (dotted line). Each plot shows the dynamics of $E_{n}$ for the parameter values marked by asterisks in the plots immediately above.
 
-## Estimating site-specific fitness effects
+### Estimating site-specific fitness effects
 
 Next, we simulated phylogenies under a model where the fitness effect of the mutant allele at each site is drawn independently from a distribution of fitness effects (DFE) in order to test how well we can estimate site-specific fitness effects. Because there can be considerable uncertainty surrounding these fitness effects, we now estimate the posterior distribution of fitness effects using Bayesian MCMC. The accuracy and precision of the estimated fitness effects varies considerably across sites, as shown for a representative phylogeny with five evolving sites in Figure 5.
 
@@ -192,17 +304,98 @@ In order to better understand this variability, we simulated 100 phylogenies wit
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/45562/elife-45562-fig6-v3.jpg)
 
-**Figure 6.:** (A–C) Correlation between the true and estimated posterior median fitness effects for phylogenies simulated with 2, 5 or 10 evolving sites. Results are aggregated over 100 simulated phylogenies, with each point representing an estimate for a single site and phylogeny. The points are colored according to the frequency of the mutant allele among sampled individuals in the phylogeny. (D) Fitness effects estimated under the exact MTBD model tracking all four possible genotypes for the same two site simulations as in A. (E) Correlation between the site-specific fitness effects estimated under the approximate MFBD and exact MTBD for the two site simulations. (F) Error and uncertainty in estimated site-specific fitness effects across all 2, 5, and 10 site simulations. Error was calculated as the posterior median estimate minus the true fitness effect. Uncertainty was calculated as the standard deviation of the posterior values sampled via MCMC. In all simulations, sites where the Effective Sample Size of the MCMC samples was below 100 (less than 5% of all sites across simulations) were discarded. The death rate was fixed at  but the birth, mutation and sampling rates were randomly drawn for each simulation from a prior distribution: d=0.05 Uniform(0.1,0.2); λ∽ Exponential(0.01); γ∽ Uniform(0,1). Only the birth rate was jointly inferred with the site-specific fitness effects.s∽
+**Figure 6.:** (A–C) Correlation between the true and estimated posterior median fitness effects for phylogenies simulated with 2, 5 or 10 evolving sites. Results are aggregated over 100 simulated phylogenies, with each point representing an estimate for a single site and phylogeny. The points are colored according to the frequency of the mutant allele among sampled individuals in the phylogeny. (D) Fitness effects estimated under the exact MTBD model tracking all four possible genotypes for the same two site simulations as in A. (E) Correlation between the site-specific fitness effects estimated under the approximate MFBD and exact MTBD for the two site simulations. (F) Error and uncertainty in estimated site-specific fitness effects across all 2, 5, and 10 site simulations. Error was calculated as the posterior median estimate minus the true fitness effect. Uncertainty was calculated as the standard deviation of the posterior values sampled via MCMC. In all simulations, sites where the Effective Sample Size of the MCMC samples was below 100 (less than 5% of all sites across simulations) were discarded. The death rate was fixed at $d=0.05$ but the birth, mutation and sampling rates were randomly drawn for each simulation from a prior distribution: $\lambda∽$ Uniform(0.1,0.2); $\gamma∽$ Exponential(0.01); $s∽$ Uniform(0,1). Only the birth rate was jointly inferred with the site-specific fitness effects.
 
 While there is no systematic directional bias, fitness effects are underestimated for sites at which the mutant allele is at low frequency among sampled individuals and overestimated for sites where the mutant allele is at high frequencies. This however appears to be an intrinsic feature of estimating fitness effects from the branching structure of a phylogeny, as the same phenomena is observed under the exact MTBD model with two sites and four genotypes (Figure 6D), and the estimates made under the approximate MFBD model are highly correlated with estimates made under the exact MTBD model (Figure 6E).
 
 Across all sites and simulations, accuracy decreased when the mutant allele at a given site was at low or high frequencies, and there was considerably more uncertainty for sites where the mutant allele was at very low frequencies (Figure 6F). Thus, while the MFBD model generally performs well at estimating site-specific fitness effects, the accuracy and precision of these estimates varies greatly depending on the frequency of a given mutation in a phylogeny.
 
-## Ebola virus adaptation to humans
+### Ebola virus adaptation to humans
 
 The Ebola virus glycoprotein (GP) binds to cells during viral cell entry and is therefore thought to be a key determinant of viral fitness in different hosts. Previously, (Urbanowicz et al., 2016) analyzed a large set of naturally occurring amino acid mutations in the GP isolated from patients during the 2013–16 epidemic in Western Africa. The effect of these GP mutations on fitness were then experimentally determined using infectivity assays in cell culture. Several mutant genotypes dramatically increased viral infectivity relative to the Makona genotype isolated during the earliest stages of the epidemic. However, the effect of these mutations on viral transmission and fitness at the host population level have not yet been determined. We therefore applied the MFBD model to a large dataset of 1610 Ebola virus (EBOV) genomes sampled during the 2013–16 epidemic to infer the population-level fitness effects of these GP mutations.
 
 We analyzed 9 out of the 18 amino acid mutations analyzed by Urbanowicz et al. (2016) that were present in at least 10 of the 1610 viral samples. These nine mutations fall in eight different genetic backgrounds or genotypes (Figure 7). Because Urbanowicz et al. (2016) found evidence for epistatic interactions between several of these mutations, we estimated the fitness of these eight genotypes rather than site-specific mutational fitness effects. Table 1 shows the relative fitness of these genotypes estimated at the population-level versus their fitness in cell culture.
+
+**Table 1.**
+ Estimated posterior median fitness and 95% CI for the Ebola GP mutants relative to the Makona genotype
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Sample freq</th>
+      <th>Base model</th>
+      <th>Model + geo effects</th>
+      <th>Effect in cell culture</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Makona</td>
+      <td>0.036</td>
+      <td>1.00</td>
+      <td>1.00</td>
+      <td>Reference genotype</td>
+    </tr>
+    <tr>
+      <td>A82V</td>
+      <td>0.720</td>
+      <td>1.05 (1.04–1.07)</td>
+      <td>1.26 (1.19–1.35)</td>
+      <td>Increases infectivity 2X</td>
+    </tr>
+    <tr>
+      <td>P330S</td>
+      <td>0.002</td>
+      <td>0.98 (0.82–1.14)</td>
+      <td>1.11 (0.96–1.24)</td>
+      <td>Decreases infectivity</td>
+    </tr>
+    <tr>
+      <td>P330S+N107D+G480D</td>
+      <td>0.037</td>
+      <td>1.04 (0.98–1.12)</td>
+      <td>1.27 (1.16–1.39)</td>
+      <td>Increases infectivity &gt; 2X</td>
+    </tr>
+    <tr>
+      <td>A82V+R410S</td>
+      <td>0.044</td>
+      <td>1.09 (1.00–1.18)</td>
+      <td>1.31 (1.17–1.45)</td>
+      <td>No or small effect</td>
+    </tr>
+    <tr>
+      <td>A82V+R410S+K439E</td>
+      <td>0.035</td>
+      <td>1.14 (1.01–1.26)</td>
+      <td>1.36 (1.20–1.54)</td>
+      <td>Increases infectivity 2-3X</td>
+    </tr>
+    <tr>
+      <td>A82V+R29K</td>
+      <td>0.019</td>
+      <td>1.06 (0.93–1.19)</td>
+      <td>1.27 (1.10–1.45)</td>
+      <td>Increases infectivity 2-3X</td>
+    </tr>
+    <tr>
+      <td>A82V+T230A</td>
+      <td>0.026</td>
+      <td>1.03 (0.93–1.11)</td>
+      <td>1.23 (1.10–1.37)</td>
+      <td>Increases infectivity 2-3X</td>
+    </tr>
+    <tr>
+      <td>A82V+I371V</td>
+      <td>0.067</td>
+      <td>1.03 (0.98–1.09)</td>
+      <td>1.24 (1.14–1.35)</td>
+      <td>Increases infectivity 2-3X</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/45562/elife-45562-fig7-v3.jpg)
 
@@ -212,7 +405,7 @@ Mapping the genotypes and fitness of lineages inferred under the MFBD model onto
 
 Because the A82V mutation occurred along a lineage that spread from Guinea to Sierra Leone and several of the genotypes we considered were also geographically restricted, we performed a second analysis to check whether our estimates of genotype fitness were confounded by geographic differences in transmission rates. In this model, we accounted for geographic effects by including location (Guinea, Sierra Leone or Liberia) as an additional evolving character state or ‘site’ in the model. We found no evidence that transmission rates differed by location; relative transmission rates were 1.01 (95% CI: 0.97–1.05) in Sierra Leone and 0.99 (95% CI: 0.94–1.04) in Liberia compared with Guinea. All mutant genotypes had higher estimated fitness relative to the Makona genotype under the model with geographic effects due to a lower estimated fitness of the Makona genotype. However, the rank order of genotypic fitness values is consistent across models (Table 1). Overall, the population level fitness of all eight genotypes agree with their fitness in cell culture in terms of the sign or direction of their effects, but these genotypes had much greater fitness relative to the Makona genotype in cell culture than at the population level.
 
-## Influenza H3N2 fitness variation
+### Influenza H3N2 fitness variation
 
 We also applied the MFBD model to estimate the fitness effects of mutations in the hemagglutinin (HA) protein of human influenza virus subtype H3N2. Lee et al. (2018) recently estimated the relative preference for each amino acid residue at all sites in the HA protein in cell culture using a reverse genetics approach known as deep mutational scanning (DMS). The fitness effect of mutating one amino acid to another is expected to correlate strongly with the relative preference for each amino acid in these experiments. We therefore sought to compare the population-level fitness effects of naturally occurring mutations estimated under the MFBD model with their fitness measured in vitro by DMS.
 
@@ -222,13 +415,13 @@ To minimize the effect of antigenic mutations, which would not be reflected in t
 
 **Figure 8.:** (A) The fitness effects of mutations estimated in vitro using deep mutational scanning versus their estimated population-level effects. In vitro fitness effects were quantified as the relative preference for the mutant versus the consensus amino acid residue in the deep mutational scanning experiments, given on a log2 scale. Population-level fitness effects were estimated using the MFBD model assuming multiplicative effects across sites. Error bars show the 95% credible intervals on the estimated population-level fitness effects. (B) Coancestry matrix showing the fraction of ancestry shared between each pair of mutations in the H3N2 phylogeny. The coancestry value represents the fraction of branches in the phylogeny that share both mutations based on a maximum parsimony reconstruction. The diagonal gives the fraction of all branches in the phylogeny with each individual mutation.
 
-While our population-level estimates did not correlate with the in vitro data, the fitness effects predicted by DMS correlate strongly with the maximum frequency that naturally occurring mutations reach in the human population (Lee et al., 2018). We therefore sought to test whether using the DMS experimental data to inform the MFBD model about the fitness effects of mutations, rather than estimating them independently from the phylogeny, would result in a better fit of the model to the H3N2 phylogeny and sequence data. Doing so requires a fitness model that aggregates mutational fitness effects across sites and then maps this combined fitness to the population-level fitness of a lineage. In our model, we sum the mutational fitness effects predicted by the relative amino acid preferences across all sites to get a composite predictor of fitness: θD⁢M⁢S=∑kLl⁢o⁢g2⁢πk,iπk,l. We then use (Equation 25) to map θD⁢M⁢S to overall population-level fitness.
+While our population-level estimates did not correlate with the in vitro data, the fitness effects predicted by DMS correlate strongly with the maximum frequency that naturally occurring mutations reach in the human population (Lee et al., 2018). We therefore sought to test whether using the DMS experimental data to inform the MFBD model about the fitness effects of mutations, rather than estimating them independently from the phylogeny, would result in a better fit of the model to the H3N2 phylogeny and sequence data. Doing so requires a fitness model that aggregates mutational fitness effects across sites and then maps this combined fitness to the population-level fitness of a lineage. In our model, we sum the mutational fitness effects predicted by the relative amino acid preferences across all sites to get a composite predictor of fitness: $\theta_{D⁢M⁢S}=\sum_{k}^{L}l⁢o⁢g_{2}⁢\frac{\pi_{k,i}}{\pi_{k,l}}$. We then use (Equation 25) to map $\theta_{D⁢M⁢S}$ to overall population-level fitness.
 
-Fitting our model to the H3N2 phylogeny allows us to calibrate how the mutational fitness effects based on relative preferences scale to population-level fitness. Overall, large changes in θD⁢M⁢S, resulting from mutations to more or less preferred amino acid residues, have a relatively small impact on population-level fitness. Population-level fitness grows slowly and roughly linearly with mutations to more preferred amino acids (Figure 9; inset). Nevertheless, when mutational fitness effects are aggregated across all sites, there are substantial fitness differences between lineages (Figure 9). Relative to a hypothetical lineage bearing the consensus sequence, fitness ranges from 0.84 to 1.04 across lineages with many lineages having a relative fitness less than one, indicating a slightly deleterious mutation load. Accounting for these fitness differences results in the MFBD model informed by the DMS data fitting the H3N2 phylogeny substantially better (Log likelihood: −4184) than a model assuming all mutations are neutral (Log likelihood: −7510). As would be expected, lineages predicted to be more fit also tend to persist between influenza seasons. Most notably, a lineage with higher than average fitness circulates in 2009 and 2010 during the H1N1 pandemic. This lineages carries the T228A mutation, which is predicted to have a large beneficial effect in the DMS experiments. It is therefore tempting to speculate that this mutation may have conferred an advantage that helped seasonal H3N2 compete with the pandemic H1N1 virus.
+Fitting our model to the H3N2 phylogeny allows us to calibrate how the mutational fitness effects based on relative preferences scale to population-level fitness. Overall, large changes in $\theta_{D⁢M⁢S}$, resulting from mutations to more or less preferred amino acid residues, have a relatively small impact on population-level fitness. Population-level fitness grows slowly and roughly linearly with mutations to more preferred amino acids (Figure 9; inset). Nevertheless, when mutational fitness effects are aggregated across all sites, there are substantial fitness differences between lineages (Figure 9). Relative to a hypothetical lineage bearing the consensus sequence, fitness ranges from 0.84 to 1.04 across lineages with many lineages having a relative fitness less than one, indicating a slightly deleterious mutation load. Accounting for these fitness differences results in the MFBD model informed by the DMS data fitting the H3N2 phylogeny substantially better (Log likelihood: −4184) than a model assuming all mutations are neutral (Log likelihood: −7510). As would be expected, lineages predicted to be more fit also tend to persist between influenza seasons. Most notably, a lineage with higher than average fitness circulates in 2009 and 2010 during the H1N1 pandemic. This lineages carries the T228A mutation, which is predicted to have a large beneficial effect in the DMS experiments. It is therefore tempting to speculate that this mutation may have conferred an advantage that helped seasonal H3N2 compete with the pandemic H1N1 virus.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/45562/elife-45562-fig9-v3.jpg)
 
-**Figure 9.:** Fitness values were reconstructed based on a fitness model that maps mutational fitness effects predicted based on deep mutational scanning experiments to population level fitness. The inset shows this fitness mapping for the model parameters with the highest posterior probability:  and α=0.0098. Uncertainty in ancestral amino acid sequences was taken into account by first computing the marginal site probability at each site. Ancestral fitness values were then reconstructed by marginalizing over all possible ancestral sequences using the marginal site probabilities.κ=0.964
+**Figure 9.:** Fitness values were reconstructed based on a fitness model that maps mutational fitness effects predicted based on deep mutational scanning experiments to population level fitness. The inset shows this fitness mapping for the model parameters with the highest posterior probability: $\alpha=0.0098$ and $κ=0.964$. Uncertainty in ancestral amino acid sequences was taken into account by first computing the marginal site probability at each site. Ancestral fitness values were then reconstructed by marginalizing over all possible ancestral sequences using the marginal site probabilities.
 
 ## Discussion
 

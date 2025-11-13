@@ -29,20 +29,20 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Department of Surgery, Johns Hopkins University School of Medicine Baltimore United States
-2. https://ror.org/00za53h95 Department of Pharmacology and Molecular Sciences, Johns Hopkins University School of Medicine Baltimore United States
-3. https://ror.org/00za53h95 Department of Ophthalmology, Johns Hopkins University School of Medicine Baltimore United States
-4. https://ror.org/02jzrsm59 Laboratory of Liver Diseases, National Institute on Alcohol Abuse and Alcoholism (NIAAA), National Institutes of Health (NIH) Baltimore United States
-5. https://ror.org/00za53h95 Department of Medicine, Johns Hopkins University School of Medicine Baltimore United States
-6. https://ror.org/00za53h95 Department of Pathology, Johns Hopkins University School of Medicine Baltimore United States
-7. https://ror.org/04fnxsj42 Center for Translational Biomedical Research and Department of Nutrition, University of North Carolina at Greensboro, North Carolina Research Campus Kannapolis United States
-8. https://ror.org/01b8kcc49 Department of Food Safety/Hygiene and Risk Management, National Cheng Kung University Tainan Taiwan
+1. Department of Surgery, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. Department of Pharmacology and Molecular Sciences, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+3. Department of Ophthalmology, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+4. Laboratory of Liver Diseases, National Institute on Alcohol Abuse and Alcoholism (NIAAA), National Institutes of Health (NIH) Baltimore United States ([ROR:02jzrsm59](https://ror.org/02jzrsm59))
+5. Department of Medicine, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+6. Department of Pathology, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+7. Center for Translational Biomedical Research and Department of Nutrition, University of North Carolina at Greensboro, North Carolina Research Campus Kannapolis United States ([ROR:04fnxsj42](https://ror.org/04fnxsj42))
+8. Department of Food Safety/Hygiene and Risk Management, National Cheng Kung University Tainan Taiwan ([ROR:01b8kcc49](https://ror.org/01b8kcc49))
 
 † Corresponding author
 
 ## Abstract
 
-The pathogenesis of antibodies in severe alcoholic hepatitis (SAH) remains unknown. We analyzed immunoglobulins (Ig) in explanted livers from SAH patients (n=45) undergoing liver transplantation and tissues from corresponding healthy donors (HD, n=10) and found massive deposition of IgG and IgA isotype antibodies associated with complement fragment C3d and C4d staining in ballooned hepatocytes in SAH livers. Ig extracted from SAH livers, but not patient serum exhibited hepatocyte killing efficacy. Employing human and Escherichia coli K12 proteome arrays, we profiled the antibodies extracted from explanted SAH, livers with other diseases, and HD livers. Compared with their counterparts extracted from livers with other diseases and HD, antibodies of IgG and IgA isotypes were highly accumulated in SAH and recognized a unique set of human proteins and E. coli antigens. Further, both Ig- and E. coli -captured Ig from SAH livers recognized common autoantigens enriched in several cellular components including cytosol and cytoplasm (IgG and IgA), nucleus, mitochondrion, and focal adhesion (IgG). Except IgM from primary biliary cholangitis livers, no common autoantigen was recognized by Ig- and E. coli -captured Ig from livers with other diseases. These findings demonstrate the presence of cross-reacting anti-bacterial IgG and IgA autoantibodies in SAH livers.
+The pathogenesis of antibodies in severe alcoholic hepatitis (SAH) remains unknown. We analyzed immunoglobulins (Ig) in explanted livers from SAH patients (n=45) undergoing liver transplantation and tissues from corresponding healthy donors (HD, n=10) and found massive deposition of IgG and IgA isotype antibodies associated with complement fragment C3d and C4d staining in ballooned hepatocytes in SAH livers. Ig extracted from SAH livers, but not patient serum exhibited hepatocyte killing efficacy. Employing human and Escherichia coli K12 proteome arrays, we profiled the antibodies extracted from explanted SAH, livers with other diseases, and HD livers. Compared with their counterparts extracted from livers with other diseases and HD, antibodies of IgG and IgA isotypes were highly accumulated in SAH and recognized a unique set of human proteins and E. coli antigens. Further, both Ig- and E. coli-captured Ig from SAH livers recognized common autoantigens enriched in several cellular components including cytosol and cytoplasm (IgG and IgA), nucleus, mitochondrion, and focal adhesion (IgG). Except IgM from primary biliary cholangitis livers, no common autoantigen was recognized by Ig- and E. coli-captured Ig from livers with other diseases. These findings demonstrate the presence of cross-reacting anti-bacterial IgG and IgA autoantibodies in SAH livers.
 
 ## Introduction
 
@@ -56,11 +56,19 @@ The primary aim of this study was to determine if there was antibody deposition 
 
 ## Results
 
-## Immunoglobulins in ballooned hepatocytes in SAH patients
+### Immunoglobulins in ballooned hepatocytes in SAH patients
 
 To determine whether antibodies deposit in SAH livers, we collected explanted liver tissues from SAH patients during liver transplantation at Johns Hopkins. Liver tissue sections with H&E staining from SAH patients showed histologic features of SAH including macrovesicular steatosis, neutrophilic lobular inflammation, ballooning hepatocyte degeneration, Mallory-Denk bodies, and portal and pericellular fibrosis (Figure 1A). Immunohistochemistry (IHC) staining by using anti-human immunoglobulin (Ig) antibodies demonstrated massive IgA and IgG deposition in ballooned hepatocytes in SAH livers, while none of the hepatocytes were stained with anti-human Ig antibodies in liver tissue sections from healthy donors (HD) except for positive staining in some hepatic sinusoid cells (Figure 1B and C). To further confirm the deposition of Ig in SAH livers, the presence of Ig in liver tissue homogenates form SAH (n=7) or HD (n=7) was assessed by western blot analysis and ELISA assays. Western blot analysis demonstrated that the levels of IgA and IgG were dramatically increased in all SAH livers as compared with the donor livers (Figure 1D and E). The IgM but not the IgE level was also significantly increased in SAH livers. The increase of IgA, IgG, and IgM levels in SAH liver tissue homogenates was further confirmed by ELISA. IgA and IgG isotypes were major Ig in SAH livers (Figure 1F). Further analysis of IgG subclasses demonstrated that the IgG subclass levels – predominantly IgG1 – were significantly higher in SAH livers than that in HD (Figure 1G). On the basis of these findings, we performed IHC staining for human IgG in SAH livers from 45 patients with liver transplantation and 10 donor livers in a clinical pathology lab at Johns Hopkins in a double-blind manner. The IgG+ hepatocytes in scanned slides of stained tissues sections were analyzed by using HALO Image Analysis Software. Positive cells were reported as percentage stained surface area of total annotated area by digital analysis (Figure 1—figure supplement 1). Few IgG+ hepatocytes were identified in donor livers. In contrast, on average ~40% of the hepatocytes (ranging from 4% to 80%) were IgG positive in the SAH livers (Figure 1H). These findings demonstrated the deposition of Ig antibodies in ballooned hepatocytes in SAH livers.
 
-## Ig deposition is associated with activation of complement in ballooned hepatocytes and Ig extracted from SAH livers exhibits hepatocyte killing efficacy in vitro
+![Figure 1.](https://cdn.elifesciences.org/articles/86678/elife-86678-fig1-v1.jpg)
+
+**Figure 1.:** (A) Liver tissue sections with H&E staining showed histologic features of SAH. (b, c) Immunohistochemistry staining by using anti-human IgA (B) or IgG (C) antibodies demonstrated IgA and IgG deposition in ballooned hepatocytes in SAH livers. Representative tissue sections from 45 SAH or 10 healthy donor (HD) livers. (D–E) Ig levels in liver tissue homogenates from SAH or HD (n=7/group) were quantified by western blot analysis (D). Western blot analysis demonstrated that the levels of IgA, IgG, and IgM were significantly increased in SAH livers as compared with the HD livers (E). (F–G) Ig isotypes (f) and IgG subclass levels (G) were quantified by ELISA (n=7/group). (H) IgG-positive hepatocytes in tissue sections from 45 SAH patients and 10 HD were quantified by immunohistochemistry staining and using HALO Image Analysis Software.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86678/elife-86678-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** HALO image analysis of IgG-positive hepatocytes in severe alcoholic hepatitis livers. Representative images of liver tissue sections stained with anti-human IgG antibody. Positive cells were reported as percentage stained surface area of total annotated area by digital analysis (Hallo, Indicalabs, Corrales, NM, USA).
+
+### Ig deposition is associated with activation of complement in ballooned hepatocytes and Ig extracted from SAH livers exhibits hepatocyte killing efficacy in vitro
 
 IgG, especially IgG1, plays a critical role in the classical complement activation pathway. To determine if Ig in ballooning hepatocytes induces activation of complement, C3d and C4d were analyzed in SAH livers. IHC staining showed the presence of both C3d and C4d in ballooning hepatocytes in SAH livers but not in the donor livers (Figure 2A and B). Double staining for IgG and complement fragments C3d or C4d showed IgG co-stained with C3d or C4d in ballooning hepatocytes (Figure 2C and D). These results indicated that IgG deposition in hepatocytes was associated with activation of complement. Furthermore, complement activation including the presence of C3d and C4d in SAH liver was confirmed by western blot analysis (Figure 2E and F). Finally, we asked whether antibodies (Ig) extracted from SAH livers exhibit hepatocyte killing efficacy in an antibody-dependent cell-mediated cytotoxicity (ADCC) assay. Compared to isotype control human Ig from HD, no increased hepatocyte killing was observed when peripheral blood mononuclear cells (PBMCs) (effector cells) from HD were added into cultured human hepatocytes (target cells) in the presence of serum Ig from SAH patients. However, the hepatocyte killing efficacy was significantly increased when the same levels of Ig extracted from SAH livers were added into the hepatocytes/PBMCs co-culture system (Figure 2G). These results demonstrated that Ig antibodies deposited in hepatocytes of SAH livers could induce activation of complement but more importantly, exhibited antibody-dependent cellular cytotoxicity of hepatocytes. Therefore, deposition of Ig antibodies may contribute to the hepatocyte ballooning degeneration and necrotic damage in SAH.
 
@@ -74,15 +82,39 @@ To further define the Ig and C4d deposition on the membrane of ballooned hepatoc
 
 **Figure 3.:** (A) Images of confocal microscopy showed the presence of both IgG (red) and IgA (green) in ballooning hepatocytes (blue) in severe alcoholic hepatitis (SAH) livers (lower panels), while only hepatic sinusoid endothelial cells (CD32+, purple) stained with IgG and IgA in donor livers (upper panels). (B) Co-staining with β-catenin (blue) demonstrated IgG (red) and IgA (green) deposition on membrane of ballooning hepatocytes in SAH livers. (C) Triple staining for IgG (red), IgA (green), and C4d (blue) showed both IgG and IgA co-stained with C4d on the surface of hepatocyte. Representative tissue sections from six samples per group.
 
-## Human proteome array-identified autoantigens were recognized by Ig extracted from SAH livers
+### Human proteome array-identified autoantigens were recognized by Ig extracted from SAH livers
 
 We used the human proteome microarray (HuProt), comprising 21,240 individual purified human proteins, to perform antibody profiling assays (Hu et al., 2017). Each liver specimen was treated to release tissue-deposited Ig (Figure 4A). After neutralization, the extracted antibodies from each liver sample were separately probed to the HuProt arrays, using isotype-specific secondary antibodies to obtain the IgG, IgA, IgM, and IgE autoimmune signatures of the same liver sample (Figure 4B). Many positive human proteins were recognized by each of the four Ig isotypes in all five SAH samples. Each antibody profiling assay was performed in duplicate and only those reproducible signals were scored. A substantial fraction of autoantigens was shared by the antibodies in all five SAH livers, regardless of the Ig isotype (Figure 4C, Figure 4—figure supplement 1). The total numbers of the shared autoantigens recognized by the IgG, IgA, IgM, and IgE isotypes were 346, 319, 194, and 10 (Figure 4—figure supplement 1), respectively, suggesting that the shared autoantibodies of the IgG and IgA isotypes were the most prevalent, while the counterparts of IgE isotype were the scarcest. With tissues of five donor livers, the numbers of positive human proteins were much lower (Figure 4C ). Although 95 shared IgG autoantigens were identified by the donor liver samples, 79 (83.2%) of them were also shared by the SAH livers (Figure 4C). More importantly, a large fraction (i.e., 267 proteins) of the SAH-shared autoantigens were not found in the donor livers (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/86678/elife-86678-fig4-v1.jpg)
+
+**Figure 4.:** (A) Each liver tissue piece was ground up and treated under low pH to release tissue-deposited Ig. After neutralization, the extracted Ig from each liver sample were separately probed to the HuProt or E. coli protein arrays, followed by incubation with the isotype-specific secondary antibodies to obtain the Ig isotype immune signatures of the same liver sample. (B) Representative images of HuProt arrays. (C) Venn diagram analysis to identify shared autoantigens of each liver disease. 346 autoantigens were shared by the IgG antibodies in all five SAH livers (left panel), 95 autoantigens were shared by the IgG antibodies in all five healthy donor (HD) livers (middle panel), and a large fraction (i.e., 267 proteins) of the SAH-shared IgG autoantigens was not found in the HD livers (right panel), suggesting existence of an SAH-specific autoimmune signature. (D) A seven-way Venn diagram analysis showed that 45 autoantigens were commonly recognized by IgG isotype autoantibodies in liver tissue homogenates extracted from different liver diseases, while 188 unique IgG autoantigens were recognized by tissue homogenates from the SAH livers. (E) Representative images of E. coli protein arrays. (F) Venn diagram analysis to identify shared E. coli antigens recognized by each liver disease. 435 E. coli antigens were commonly recognized by IgG antibodies in the five SAH livers (left panel), while only 1 E. coli antigen was commonly recognized by IgG antibodies in the five HD livers (middle panel). 434 out of 435 E. coli antigens were uniquely recognized by IgG antibodies in SAH livers but not HD livers (right panel). (G) A seven-way Venn diagram analysis showed that unique IgG bacterial antigens were only identified by using liver tissue homogenates from SAH or AC.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86678/elife-86678-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Venn diagram analysis of autoantigens recognized by antibodies extracted from the five SAH liver tissues. After individual elution of antibodies from the five SAH liver tissues (i.e., SAH1–5), they were individually profiled on the HuProt arrays. The identified autoantigens were grouped on the basis of anti-IgG, -IgA, -IgM, and -IgE isotypes, and the shared and unique autoantigens were analyzed using the Venn diagram analysis. As illustrated in each isotype panel, the shared autoantigens recognized by the anti-IgG, -IgA, -IgM, and -IgE antibodies among the five SAH samples are 346, 319, 194, and 10, respectively.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/86678/elife-86678-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Summary of the Venn diagram analysis of autoantigens recognized by antibodies extracted from the five donor, five AC, five AIH, five HBV, five HCV, five NASH, five primary biliary cholangitis (PBC), and five severe alcoholic hepatitis (SAH) liver tissues. Using the same approach as described in Figure 4—figure supplement 1, the shared and disease-specific autoantibodies were identified. The Ig isotypes are designated in each roll of the Venn diagrams, and the tissue types are shown on the top of each column of the Venn diagrams.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/86678/elife-86678-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** A seven-member Venn diagram analysis of the shared autoantigens recognized by antibodies extracted from the diseased liver tissues. The shared autoantigens identified by the antibodies extracted from the seven diseased liver tissues were subjected to a seven-member Venn diagram analysis. The Ig isotypes are shown on the top of each Venn diagram.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/86678/elife-86678-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Summary of the Venn diagram analysis of bacterial antigens recognized by human antibodies extracted from the five donor, five AC, five AIH, five HBV, five HCV, five NASH, five primary biliary cholangitis (PBC), and five severe alcoholic hepatitis (SAH) liver tissues. Using the same approach as described in Figure 4—figure supplement 1, the shared and disease-specific antibodies were identified. The immunoglobulin (Ig) isotypes are designated in each roll of the Venn diagrams, and the tissue types are shown on the top of each column of the Venn diagrams.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/86678/elife-86678-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** Venn diagram analysis of the shared bacterial antigens recognized by human antibodies extracted from the diseased liver tissues. The shared bacterial antigens identified by the antibodies extracted from the seven diseased liver tissues were subjected to a seven-member Venn diagram analysis. The Ig isotypes are shown on the top of each Venn diagram.
 
 We applied the above approach to a group of five livers explanted from patients with AC, AIH, primary biliary cholangitis (PBC), NASH, HCV, and HBV infection. SAH still exhibited the highest number of shared IgG autoantigens, while HBV showed the highest number of shared IgM, IgA and IgE autoantigens, and PBC showed the highest number of shared IgM autoantigens (Figure 4—figure supplement 2). The numbers of shared IgG, IgA, and IgM autoantigens were much higher in SAH livers (n=859) as compared with AC (n=349), HBV (n=735), other liver diseases (n<428), or HD livers (n=448). Although the shared IgE autoantigens were the lowest in all seven liver diseases, each disease showed a distinct autoantibody signature (Figure 4—figure supplement 2).
 
 We compared the shared autoantigens recognized by SAH Ig to their counterparts from the other six liver diseases. By Venn diagram analysis 45, 41, 68, and 8 autoantigens were commonly recognized by IgG, IgA, IgM, and IgE isotype autoantibodies in liver tissue extracted from different liver diseases (Figure 4—figure supplement 3). 188 unique IgG autoantigens, 45 unique IgA autoantigens, and 7 unique IgM autoantigens were recognized by tissue homogenates from the SAH livers, whereas the second highest in this category was HBV livers in which 1 unique IgG autoantigen, 88 unique IgA autoantigens, and 25 unique IgM autoantigens were identified (Figure 4D, Figure 4—figure supplement 3). The third in this category was PBC in which 7 unique IgG autoantigens, 2 unique IgA autoantigens, and 81 unique IgM autoantigens were identified. The tissue homogenates from HCV livers recognized 32 unique IgG autoantigens, 4 unique IgA autoantigens, and 3 unique IgE autoantigens, while only 4 unique IgA autoantigens were recognized by tissue homogenates from AC livers (Figure 4—figure supplement 3), showing disease-distinct autoantibodies in diseased livers regardless of their etiology. A large number of unique autoantigens were recognized by Ig recovered from SAH livers (Figure 4—source data 1), indicating Ig (especially IgG) deposited to the SAH livers (Figure 1) might play an important role in pathogenesis.
 
-## Ig from SAH or AC livers recognize a unique set of bacterial antigens
+### Ig from SAH or AC livers recognize a unique set of bacterial antigens
 
 Antibodies secreted into the gut mostly target bacteria and bacterial products (Kato et al., 2014). Ig deposited in SAH livers might be from the gut, and these Ig may be antibodies targeting intestinal bacterial antigens. To test this, we employed a bacterial proteome array, comprising 4256 purified E. coli proteins encoded by a commensal strain K12, to do antibody profiling assays (Chen et al., 2009; Figure 4E). Using the same liver tissues and approach described above, we obtained the immune signatures of the 40 livers from 7 diseases and 5 HD in duplicate.
 
@@ -94,7 +126,7 @@ The prevalent anti-bacterial immunoactivity of the Ig in SAH livers suggested th
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/86678/elife-86678-fig5-v1.jpg)
 
-**Figure 5.:** E. coli antigens-captured immunoglobulins (Ig) from severe alcoholic hepatitis (SAH) livers recognize human protein antigens.(A) To determine if anti-bacterial antibodies cross-react with human proteins in the liver, total proteins from E. coli (strain K12) were extracted and immobilized on NHS-activated magnetic beads to capture Ig pooled from the five SAH livers. E. coli protein-captured antibodies (E. coli-Ig) were then released and incubated on the HuProt arrays. (B) Representative images of E. coli-Ig on HuProt arrays. (C) 937, 1041, 932, and 85 human proteins were reproducibly identified by E. coli protein-captured IgG, IgA, IgM, and IgE antibodies from the five SAH livers. Venn diagram analysis showed many of these proteins (694/937, 796/1041, 451/932, and 42/95, respectively) were also found to be the autoantigens recognized by Ig recovered directly from the five SAH livers.
+**Figure 5.:** (A) To determine if anti-bacterial antibodies cross-react with human proteins in the liver, total proteins from E. coli (strain K12) were extracted and immobilized on NHS-activated magnetic beads to capture Ig pooled from the five SAH livers. E. coli protein-captured antibodies (E. coli-Ig) were then released and incubated on the HuProt arrays. (B) Representative images of E. coli-Ig on HuProt arrays. (C) 937, 1041, 932, and 85 human proteins were reproducibly identified by E. coli protein-captured IgG, IgA, IgM, and IgE antibodies from the five SAH livers. Venn diagram analysis showed many of these proteins (694/937, 796/1041, 451/932, and 42/95, respectively) were also found to be the autoantigens recognized by Ig recovered directly from the five SAH livers.
 
 Gene ontology (GO) enrichment analysis of proteome arrays identified autoantigen-enriched unique common cellular components recognized by both Ig- and E. coli-captured Ig in SAH livers.
 
@@ -102,9 +134,9 @@ To determine if autoantigens recognized by Ig from diseased livers were specific
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/86678/elife-86678-fig6-v1.jpg)
 
-**Figure 6.:** E. coli-captured Ig in severe alcoholic hepatitis (SAH) livers.(A) Cellular components recognized by IgG and IgA antibodies in SAH livers. (B–C) Biological processes are involved by IgG autoantigens (B) and IgA autoantigens (C). (D) Common cellular components recognized by both Ig- and E. coli antigens-captured Ig in SAH livers.Figure 6—source data 1.E. coli enriched IgM extracted from PBC liver tissues.Figure 6—source data 2.
+**Figure 6.:** (A) Cellular components recognized by IgG and IgA antibodies in SAH livers. (B–C) Biological processes are involved by IgG autoantigens (B) and IgA autoantigens (C). (D) Common cellular components recognized by both Ig- and E. coli antigens-captured Ig in SAH livers.
 
-## The infiltration of B and plasma cells in SAH livers is associated with increased Ig gene expression
+### The infiltration of B and plasma cells in SAH livers is associated with increased Ig gene expression
 
 Alcohol-derived leaky gut may promote translocation of gut bacterial products and Peyer’s patches IgA-secreting plasma cells to the liver (Moro-Sibilot et al., 2016). To determine if the migration of bacteria and/or bacterial products from the bowel to liver occurred in SAH, we performed IHC staining for the gram-negative bacterial (E. coli) product livers. Both LPS and LTA were in liver tissue from SAH patients cf. controls (Figure 7A), especially in the inflammatory areas. The increase of LPS levels in SAH liver tissues was confirmed by using Pierce Chromogenic Endotoxin Quant Kit (Figure 7B). IHC staining for CD20+ and CD138+ cells revealed that most of these cells were localized in the inflammatory areas of SAH livers, with none in HD livers (Figure 7C). These results suggest that increased gut bacterial antigens in the SAH liver are associated with increased B cells and plasma cells.
 
@@ -132,48 +164,48 @@ This may be a new therapeutic strategy in alcoholic hepatitis patients. First, p
 
 ## Methods
 
-## Collection of liver tissue samples
+### Collection of liver tissue samples
 
 Explanted liver tissues and blood were collected from patients with SAH or AC who were referred for liver transplantation at Johns Hopkins Hospital after informed consent to study, share, and publish the research data derived from their specimens (Weeks et al., 2018). Explanted liver tissues from patients with other liver diseases were obtained from the Liver Tissue Procurement and Distribution System at the University of Minnesota, which was funded by NIH Contract# HHSN276201200017C. All studies were approved by the Johns Hopkins Medicine Institutional Review Boards (IRB00107893 and IRB00154881).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Cut sections were prepared from formalin-fixed paraffin-embedded liver tissues for staining with IgG (ab200699), IgA (ab200699 or GTX20770), C4d (ab167093), C3d (ab136916), CD20 (Dako, Santa Clara, CA, USA), CD138 (Abcam, Cambridge, MA, USA), E. coli LPS (Abcam, Cambridge, MA, USA), LTA (Thermo Fisher, Waltham, MA, USA). Vectastain Elite ABC Staining Kit and DAB Peroxidase Substrate Kit (Vector Laboratories, Burlingame, CA, USA) were used to visualize the staining according to the manufacturer’s instructions. Diaminobenzidine tetrahydrocholoride and blue alkaline phosphatase (Vector Laboratories) were used as brown and blue chromogen and hematoxylin as nuclear counterstaining. Echo Revolve microscope (Echo Laboratories Inc) was used for taking image pictures.
 
-## ELISA
+### ELISA
 
 Liver protein lysates used for this assay contained similar concentrations of protein. Each SAH and donor liver sample were added on a precoated ELISA plate (Thermo Fisher Scientific, Waltham, MA, USA) to determine the total IgG (BMS2091), IgA (BMS2096), IgM (BMS2098), and IgG subclasses (991000).
 
-## Isolation of PBMCs
+### Isolation of PBMCs
 
 PBMCs were isolated from heparinized peripheral blood samples from healthy volunteers using Ficoll-Paque plus density gradient medium.
 
-## ADCC assay
+### ADCC assay
 
 ADCC was determined by a calcein-acetyoxymethyl release assay (calcein-AM, C3100MP, Thermo Fisher Scientific). Calcein-AM-labeled primary human hepatocytes were cultured with Ig from SAH livers, patient serum, or human IgG isotype control in a 96-well plate at a density of 1×104 cells per well in triplicate and PBMCs were added as effector cells at an effector: target cell ratio of 5:1 respectively. Antibody-independent cell-mediated cytotoxicity (AICC) was measured in wells containing target and effector cells without the addition of AH or control IgG antibodies. The following formula was used to calculate ADCC: % ADCC = 100 × (mean experimental release – mean AICC) ÷ (mean maximum release – mean spontaneous release).
 
-## Western blot analysis
+### Western blot analysis
 
 Fifty milligram liver tissues from SAH or the controls were homogenized in the lysis buffer (Cell Signaling Technology, MA, USA). The total protein concentrations of each liver samples were determined using a standard curve generated with BSA at different known concentration using the Quick Start Bradford Protein Assay (Bio-Rad, USA). On the basis of the measure protein concentrations, 25 µg of total proteins of each liver sample were boiled in NuPAGE LDS Sample Buffer (Thermo Fisher, MA, USA) and subjected to electrophoresis in a 4–12% Bis-Tris gradient PEG gel (Thermo Fisher, MA, USA). All samples were tested in several parallel gels. One gel was stained with SimplyBlue SafeStain according to the product manual (Thermo Fisher, MA, USA), and the other one was subjected to the western blot assay using the Trans-Blot Turbo RTA Midi 0.45 µm LF PVDF Transfer Kit (Bio-Rad Laboratories, CA, USA). After transferring the total proteins to the PVDF membrane, the membranes were incubated with the IRDye-labeled human Ig antibodies specific to recognizing IgG, IgM, IgA, and IgE, or mouse monoclonal antibodies against human C3d (Bio-Rad Laboratories, CA, USA) and C4d (Santa Cruz, CA, USA) respectively, followed by probing with Alexa 647-labeled Goat anti-Mouse IgG (H+L) (Thermo Fisher, MA, USA). After scanning with Odyssey CLx Imaging System, the signals were calculated by the corresponding software and then analyzed by Excel.
 
-## Multiplex immunofluorescence staining
+### Multiplex immunofluorescence staining
 
 Sequential multiplex immunofluorescence staining on formalin-fixed, paraffin-embedded liver sections was performed, as previously described(Guillot et al., 2020). Images were acquired on a Zeiss LSM 900 confocal microscope. Acquired images were processed and analyzed using FIJI (Schindelin et al., 2012). The following antibodies were used: HepPar1 (Catalog NBP2-45272, Novus), CD68 (Catalog M0876, Dako), CD32 (Catalog 53151, Cell Signaling Technology), IgG (109-005-088, Jackson ImmunoResearch), IgA (Catalog ab124716, Abcam), β-catenin (Catalog 610154, BD Biosciences), C4d (Catalog BI-RC4D, BIOMEDICA).
 
-## Antibody extraction and protein microarray analysis
+### Antibody extraction and protein microarray analysis
 
 The liver tissues were subjected to a Dounce homogenizer in a lysis buffer (0.1 M glycine pH 2.0, 150 mM NaCl) to elute the binding antibodies (Ig). After a 5-min spindown with 20,000 × g at 4°C, the supernatants were transferred to new 15 ml tubes and neutralized with 1 M Tris-base buffer to pH 7.0 immediately. Then, the antibody enrichment was performed using Protein L-coupled magnetic beads (Thermo Fisher, MA, USA) according to the manual. The antibodies extracted from 4.8 g liver tissue pieces were subjected to the protein microarray assays using human proteome microarray HuProt array and E. coli strain K-12 bacterial proteome microarray respectively to screen their corresponding antigens (Hu et al., 2017; Chen et al., 2009). Data analysis including the criteria for positive hits was performed as before (Hu et al., 2017; Chen et al., 2009).
 
-## Identification of cross-reactive antibodies against human and bacterial proteins
+### Identification of cross-reactive antibodies against human and bacterial proteins
 
 The total lysates of E. coli were immobilized on the magnetic beads using the kit of Pierce NHS-Activated Magnetic Beads according to the product manual (Thermo Fisher, MA, USA). Then, these E. coli protein magnetic beads were incubated with the extracted total autoantibodies from liver samples to capture the active antibodies. After eluting with glycine pH 2.0, the eluted antibodies were neutralized with 1 M Tris-base buffer to pH 7.0 immediately. Finally, these antibodies were subjected to the human proteome microarray.
 
-## RNA-sequencing and data processing
+### RNA-sequencing and data processing
 
 The total RNA was isolated using QIAGEN RNeasy kit. After the RNA quality was assessed by capillary electrophoresis (Bioanalyzer), cDNA libraries were prepared using TruSeq RNA Library Prep Kit and sequenced with an Illumina NextSeq500. Base-calling and fastq conversion was performed using RTA (2.4.11) and Bcl2fastq (2.18.0.12), respectively. Raw sequencing files were uploaded to the NIH GEO database.
 
 Adaptor sequences were trimmed from the raw reads using Cutadapt (Martin, 2011). Trimmed reads were then mapped to reference genome GRCh38 using STAR aligner with default parameters (Dobin et al., 2013). The number of counts per gene was estimated using the ‘quantMode’ command in STAR. Batch effect was corrected using Combat seq. Differentially expressed genes (DEGs) were then identified using DESeq2 (Love et al., 2014). Genes with adjusted p<0.01 and log2 fold change >1 were chosen as DEGs.
 
-## GO analysis
+### GO analysis
 
 DAVID (Huang et al., 2009) was used to conducted GO analysis to find out enriched GO terms (cellular components and biological process). All enriched terms were chosen with a threshold p-value of 0.05.

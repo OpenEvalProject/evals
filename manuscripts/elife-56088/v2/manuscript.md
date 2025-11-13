@@ -47,6 +47,410 @@ In order to establish a rigorous protocol for FNR localisation by IGL, we first 
 
 It has been reported that during some fixation procedures for immunolabelling whole mammalian cells, soluble cytosolic proteins may be disproportionately washed out of samples in comparison to membrane bound proteins (Huebinger et al., 2018). To confirm that this is not the reason for the absence of soluble-localised FNR in our sections, we therefore repeated the experiment to compare several individuals of Wt and fnr1, a genotype in which the remaining FNR (AtFNR2) is 100% soluble following mechanical disruption to extract proteins from leaves (Hanke et al., 2008; Lintala et al., 2007). Again, our analysis shows significantly higher label density of the margins/lamellae than the stroma in both genotypes (Figure 1, Table 1). There is no significant difference between labelling density of stroma and grana core, indicating that there is negligible FNR in the stroma. This result, combined with previous observations that organellar proteins are much less prone to loss during fixation than cytosolic proteins (Schnell et al., 2012), strongly suggests that the FNR distribution we have measured reflects the situation in the native chloroplast. The studies that previously determined completely soluble distribution of FNR in the fnr1 mutant were based on mechanical separation followed by centrifugation. By contrast, our IGL data indicate that in situ almost all FNR is thylakoid associated. The FNR previously assigned as soluble must therefore be associated with the membrane through weak associations that are disrupted during mechanical extraction.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/56088/elife-56088-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative micrograph showing immunogold labelling of FNR in sections of chloroplasts from Wt Arabidopsis detected by IGL-TEM. White arrows indicate example gold particles. (B) Immunogold labelling density of FNR in different sub-chloroplast compartments, n = 15–22 chloroplasts each from three Wt individuals (grey) and 3 fnr1 (white) individuals. Outliers shown. See Figure 1—figure supplement 1 for quality control of antibodies and Figure 1—figure supplement 2 for optimisation of IG-TEM technique. See Table 1 for statistical significance in a mixed effects model analysis of variance between genotypes and between sub-compartments within each genotype.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56088/elife-56088-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Mature Arabidopsis leaf protein extract was subjected to SDS-PAGE before immunoblotting and detection of (A) FNR, (B) cytochrome f (Cyt f), and (C) TROL. The gel was loaded with 20 µg protein for each sample, blotted, challenged with the indicated antisera, and visualised using alkaline phosphatase conjugated secondary antibody.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56088/elife-56088-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative micrograph of a wt chloroplast, with acceptable uranyl acetate staining for detection of sub-chloroplast localisation of proteins. Chloroplast was immunolabelled to detect FNR. (B) The same micrograph with sub-chloroplast regions defined. Within the yellow border, identifiable stromal region, Green, grana core; Blue, stromal lamellae not connected to appressed membrane, defined as a ~ 10 nm area with the membrane in the centre; Cyan, margin, defined as ~10 nm region around membranes exposed to the stroma, but adjacent to an appressed membrane. (C) Signal density of FNR immunogold label in chloroplasts of a single wt individual with margins and lamellae combined (n = 22). Colours code as for panel (B). Outliers shown. Supplementary file 2a for statistical analysis in a mixed effects model of variance between sub-compartments. (D) As for (C), except IGL for cytochrome f. Signal density of cytochrome f immunogold label in chloroplast areas defined as for FNR analysis. Supplementary file 2b for statistical analysis in a mixed effects model of variance between sub-compartments.
+
+**Table 1.**
+ Mixed effects model investigating changes in FNR density between total chloroplast sub-compartments of three individuals each of WT and fnr1 Arabidopsis.Analysis of data presented in Figure 1. Fixed effects taking either label density in the stroma as the intercept or label density in the margins/lamellae as the intercept. Linear mixed model fit by REML. Signif. codes: 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘’ 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="21">Deletion test carried out using Satterthwaite’s method with the R package lmerTest (Kuznetsova, Brockhoff &amp; Christensen 2017). The model is a mixed effects model with random intercepts. The square root of response is the response variable, tissue is the fixed effect, and individual the random effect.</th>
+    </tr>
+    <tr>
+      <th>Fixed effect deleted</th>
+      <th colspan="3">Sum sq</th>
+      <th colspan="3">Mean sq</th>
+      <th colspan="3">Num DF</th>
+      <th colspan="4">Den DF</th>
+      <th colspan="3">F value</th>
+      <th colspan="3">Pr (&gt;F)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sub-compartment</td>
+      <td colspan="3">14.231</td>
+      <td colspan="3">7.1153</td>
+      <td colspan="3">2</td>
+      <td colspan="4">295.58</td>
+      <td colspan="3">7.4565</td>
+      <td colspan="3">0.000693</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td colspan="6">Model summary:</td>
+      <td colspan="3"></td>
+      <td colspan="4"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Random effects:</td>
+      <td colspan="4"></td>
+      <td colspan="3"></td>
+      <td colspan="4"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Groups</td>
+      <td colspan="4">Name</td>
+      <td colspan="5">Variance</td>
+      <td colspan="4">Std. Dev.</td>
+      <td colspan="2"></td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">individual</td>
+      <td colspan="4">(Intercept)</td>
+      <td colspan="5">0.1896</td>
+      <td colspan="4">0.4354</td>
+      <td colspan="2"></td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Residual</td>
+      <td colspan="4"></td>
+      <td colspan="5">0.9542</td>
+      <td colspan="4">0.9769</td>
+      <td colspan="2"></td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="16">Number of obs: 306, groups: individual, 6</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="13">Fixed effects when fnr1 stroma is set as the intercept</td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"></td>
+      <td colspan="2">Estimate</td>
+      <td colspan="3">Std. Error</td>
+      <td colspan="4">DF</td>
+      <td colspan="4">t value</td>
+      <td colspan="3">Pr (&gt;|t|)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3">(Intercept)</td>
+      <td colspan="2">0.9165</td>
+      <td colspan="3">0.2791</td>
+      <td colspan="4">4.2686</td>
+      <td colspan="4">3.283</td>
+      <td colspan="3">0.0276</td>
+      <td>*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3">Grana</td>
+      <td colspan="2">−0.3607</td>
+      <td colspan="3">0.1714</td>
+      <td colspan="4">295.5794</td>
+      <td colspan="4">−2.105</td>
+      <td colspan="3">0.0361</td>
+      <td>*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3">Margin/lamellae</td>
+      <td colspan="2">2.2884</td>
+      <td colspan="3">0.1714</td>
+      <td colspan="4">295.5794</td>
+      <td colspan="4">13.355</td>
+      <td colspan="3">&lt;2−16</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3">Genotype comparison WT:fnr1</td>
+      <td colspan="2">0.1230</td>
+      <td colspan="3">0.4128</td>
+      <td colspan="4">5.0375</td>
+      <td colspan="4">0.298</td>
+      <td colspan="3">0.7776</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3">WT grana: fnr1 grana</td>
+      <td colspan="2">0.6286</td>
+      <td colspan="3">0.2845</td>
+      <td colspan="4">295.5794</td>
+      <td colspan="4">2.210</td>
+      <td colspan="3">0.0279</td>
+      <td>*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3">WT margin/lamellae: fnr1 margin/lamellae</td>
+      <td colspan="2">−0.4661</td>
+      <td colspan="3">0.2845</td>
+      <td colspan="4">295.5794</td>
+      <td colspan="4">−1.638</td>
+      <td colspan="3">0.1025</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+      <td colspan="4"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="21">Fixed effects when fnr1 margin/lamellae is set as the intercept</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td colspan="3">Estimate</td>
+      <td colspan="3">Std. Error</td>
+      <td colspan="5">DF</td>
+      <td colspan="3">t value</td>
+      <td colspan="4">Pr (&gt;|t|)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">(Intercept)</td>
+      <td>0.9165</td>
+      <td colspan="3">0.2791</td>
+      <td colspan="5">4.2686</td>
+      <td colspan="3">11.482</td>
+      <td colspan="3">0.000228</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="4">Grana</td>
+      <td>−2.6491</td>
+      <td colspan="3">0.1714</td>
+      <td colspan="5">295.5794</td>
+      <td colspan="3">−15.460</td>
+      <td colspan="3">&lt;2−16</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="4">Stroma</td>
+      <td>−2.2884</td>
+      <td colspan="3">0.1714</td>
+      <td colspan="5">295.5794</td>
+      <td colspan="3">−13.355</td>
+      <td colspan="3">&lt;2−16</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="4">Genotype comparison WT:fnr1</td>
+      <td>−0.3430</td>
+      <td colspan="3">0.4128</td>
+      <td colspan="5">5.0375</td>
+      <td colspan="3">−0.831</td>
+      <td colspan="3">0.443524</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="4">WT grana: fnr1 grana</td>
+      <td>1.0947</td>
+      <td colspan="3">0.2845</td>
+      <td colspan="5">295.5794</td>
+      <td colspan="3">3.848</td>
+      <td colspan="3">0.000146</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="4">WT stroma: fnr1 stroma</td>
+      <td>−0.4661</td>
+      <td colspan="3">0.2845</td>
+      <td colspan="5">295.5794</td>
+      <td colspan="3">1.638</td>
+      <td colspan="3">0.102459</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+      <td></td>
+      <td colspan="3"></td>
+      <td colspan="5"></td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="21">Fixed effects when Wt stroma is set as the intercept</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+      <td>Estimate</td>
+      <td colspan="3">Std. Error</td>
+      <td colspan="5">DF</td>
+      <td colspan="3">t value</td>
+      <td colspan="3">Pr (&gt;|t|)</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="4">(Intercept)</td>
+      <td>1.0395</td>
+      <td colspan="3">0.3041</td>
+      <td colspan="5">5.8576</td>
+      <td colspan="3">3.418</td>
+      <td colspan="3">0.0147</td>
+      <td colspan="2">*</td>
+    </tr>
+    <tr>
+      <td colspan="4">Grana</td>
+      <td>0.2679</td>
+      <td colspan="3">0.2271</td>
+      <td colspan="5">295.5794</td>
+      <td colspan="3">1.180</td>
+      <td colspan="3">0.2391</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="4">Margin/lamellae</td>
+      <td>1.8223</td>
+      <td colspan="3">0.2271</td>
+      <td colspan="5">295.5794</td>
+      <td colspan="3">8.024</td>
+      <td colspan="3">2.43−14</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="4">Genotype comparison WT:fnr1</td>
+      <td>−0.1230</td>
+      <td colspan="3">0.4128</td>
+      <td colspan="5">5.0375</td>
+      <td colspan="3">−0.298</td>
+      <td colspan="3">0.7776</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="4">Wt grana: fnr1 grana</td>
+      <td>−0.6286</td>
+      <td colspan="3">0.2845</td>
+      <td colspan="5">295.5794</td>
+      <td colspan="3">−2.210</td>
+      <td colspan="3">0.0279</td>
+      <td colspan="2">*</td>
+    </tr>
+    <tr>
+      <td colspan="4">Wt margin/lamellae: fnr1 margin/lamellae</td>
+      <td>0.4661</td>
+      <td colspan="3">0.2845</td>
+      <td colspan="5">295.5794</td>
+      <td colspan="3">1.638</td>
+      <td colspan="3">0.1025</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+      <td></td>
+      <td colspan="3"></td>
+      <td colspan="5"></td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="21">Fixed effects when Wt margin/lamellae is set as the intercept</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+      <td>Estimate</td>
+      <td colspan="3">Std. Error</td>
+      <td colspan="5">DF</td>
+      <td colspan="3">t value</td>
+      <td colspan="3">Pr (&gt;|t|)</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="4">(Intercept)</td>
+      <td>2.8618</td>
+      <td colspan="3">0.3041</td>
+      <td colspan="5">5.8576</td>
+      <td colspan="3">9.411</td>
+      <td colspan="3">9.41−05</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="4">Grana</td>
+      <td>−1.5544</td>
+      <td colspan="3">0.2271</td>
+      <td colspan="5">295.5794</td>
+      <td colspan="3">−6.844</td>
+      <td colspan="3">4.44−11</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="4">Stroma</td>
+      <td>−1.8223</td>
+      <td colspan="3">0.2271</td>
+      <td colspan="5">295.5794</td>
+      <td colspan="3">−8.024</td>
+      <td colspan="3">2.43−14</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="4">Genotype comparison WT:fnr1</td>
+      <td>0.343</td>
+      <td colspan="3">0.4128</td>
+      <td colspan="5">5.0375</td>
+      <td colspan="3">0.831</td>
+      <td colspan="3">0.443524</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="4">Wt grana: fnr1 grana</td>
+      <td>−1.0947</td>
+      <td colspan="3">0.2845</td>
+      <td colspan="5">295.5794</td>
+      <td colspan="3">−3.848</td>
+      <td colspan="3">0.000146</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="4">Wt stroma: fnr1 stroma</td>
+      <td>−0.4661</td>
+      <td colspan="3">0.2845</td>
+      <td colspan="5">295.5794</td>
+      <td colspan="3">−1.638</td>
+      <td colspan="3">0.102459</td>
+      <td colspan="2"></td>
+    </tr>
+  </tbody>
+</table>
+
 To try to understand more about the location of tightly bound and weakly associated FNR at the thylakoid, we analysed plants where FNR is localised to different membrane complexes. We exploited genes for three maize FNR proteins (ZmFNR1, ZmFNR2, and ZmFNR3) with variable affinity to the TROL and Tic62 membrane tethers (Twachtmann et al., 2012). These were expressed in the Arabidopsis fnr1 mutant, under control of the Arabidopsis FNR1 promoter – resulting in approximately wild-type FNR protein contents. Western blots to show FNR proteins in these lines are presented in Figure 2. SDS-gels (Figure 2A) separate proteins according to mass, while native gels (Figure 2B) separate proteins according to native charge and retain some strong protein:protein interactions. As previously reported, mechanical separation of supernatant and pellet fractions from fnr1 leaves caused recovery of all FNR in the soluble fraction. We have now termed this ‘weakly bound’ FNR, based on the results in Figure 1. In the fnr1-ZmFNR1 genotype, ZmFNR is recovered in both the weakly bound and the pellet (now termed ‘tightly bound’) fractions. The tightly bound ZmFNR1 is mostly in high molecular weight complexes (Figure 2B) associated with TROL (Figure 2C). Interestingly, when we confirmed the specificity of our TROL antibody, we noted that total TROL abundance partly correlates with the intensity of the BNP band that reacts with both FNR and TROL antisera (Figure 2C), being increased in the fnr1-ZmFNR1 line and decreased in the fnr1, fnr1-ZmFNR2, and fnr1-ZmFNR3 lines (Figure 1—figure supplement 1). Heterologously expressed ZmFNR2 is also found in both weakly associated and strongly bound fractions, and its expression results in the rescue of native AtFNR2 recruitment to the tightly bound membrane fraction in the fnr1 genotype (Figure 2A lower band). This lends support to the hypothesis that co-operative interactions with other FNR iso-proteins are necessary to recruit AtFNR2 to Tic62 and TROL tethers (Hanke et al., 2008; Lintala et al., 2009; Lintala et al., 2007). FNR is enriched at Tic62 in this line (Figure 2C). In the fnr1-ZmFNR3 line, nearly all FNR remains weakly associated (Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/56088/elife-56088-fig2-v2.jpg)
@@ -55,7 +459,936 @@ To try to understand more about the location of tightly bound and weakly associa
 
 The plants expressing genes for the maize FNR1, FNR2, and FNR3 iso-proteins in an Arabidopsis fnr1 mutant background (fnr1-ZmFNR1, fnr1-ZmFNR2, and fnr1-ZmFNR3) were then analysed by IGL-TEM (Figure 3). In this case we further divided the staining density of lamellae/margin into separate margin (any stromal facing membrane adjacent to an appressed membrane) and lamellae (all thylakoid membrane not adjacent to appressed membrane) areas. See Figure 1—figure supplement 2 for an example of domain area labelling. We consider this a primarily functional, rather than structural, distinction, as many regions we have classed as margin will not be curved, but should have PSI and PSII in relatively close proximity. We examined the possibility that differences in chloroplast ultrastructure between genotypes might influence our findings, by comparing the relative size of our defined areas between the genotypes (Figure 3—figure supplement 1). We found that the fnr1 mutant shows a small increase in relative stromal area and corresponding decrease in relative margin area. The relative areas of chloroplast sub-compartments did not differ from the Wt in any of the other genotypes. Analysis of FNR staining density in chloroplasts of all genotypes is shown in Figure 3 (statistics in Table 2). Absolute staining density might be influenced by variation in FNR-isoform antigenicity, so we have compared only between sub-chloroplast domains of each genotype. The greatest variation in distribution between genotypes is seen in the density of FNR staining associated with the lamellae (blue boxes in Figure 3). While FNR density in the lamellae region is similar to that at the margin for Wt chloroplasts, the fnr1 mutant shows a significant decrease in label density at the lamellae relative to the margins (Table 2). Introduction of ZmFNR1 (TROL binding) to the fnr1 background restored equal FNR density between the margins and lamellae regions. By contrast, introduction of ZmFNR2 (Tic62 binding) to the fnr1 background results in much higher label density at the stromal lamellae relative to the margins. This tendency is also seen on introduction of ZmFNR3 (weak binding), but with lower statistical significance. We interpret the dramatic change in FNR localisation on ZmFNR2 expression in the fnr1 background as being related to the restoration of native AtFNR2 recruitment into strong interactions at the thylakoid membrane in this genotype (Figure 2A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/56088/elife-56088-fig3-v2.jpg)
+
+**Figure 3.:** Density of immunogold labelled FNR in different sub-chloroplast compartments of the indicated genotypes. Values are averages of three biological replicates, with combined label and area for the sub-compartments of 15–20 chloroplasts for each individual. Areas shown are: grana core (green), margins (magenta), stromal lamellae (blue), and stroma (yellow). See Figure 3—figure supplement 1 for confirmation that sub-chloroplast areas do not vary between genotypes. Statistical significance between sub-compartment signal density within genotypes was calculated with a mixed effects model analysis of variance (Table 2).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56088/elife-56088-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Areas of chloroplast sub-compartments were defined as displayed in Figure 1—figure supplement 2, before calculating the percentage area within the chloroplast of each indicated sub-compartment for 15–22 chloroplasts from three individuals each of the indicated genotypes.
+
+**Table 2.**
+ Mixed effects model investigating changes in FNR density between total chloroplast sub-compartments of three individuals each from Arabidopsis genotypes WT, fnr1 mutant and expressing ZmFNR1; ZmFNR2 and ZmFNR3 in the fnr1 background.Analysis of data presented in Figure 3. Fixed effects taking either label density in the stroma as the intercept or label density in the margins/lamellae as the intercept. Linear mixed model fit by REML. Signif. codes: 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘’ 1.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="8">Wt Deletion test carried out using Satterthwaite’s method with the R package lmerTest (Kuznetsova, Brockhoff &amp; Christensen 2017). The model is a mixed effects model with random intercepts. The square root of response is the response variable, tissue is the fixed effect, and individual the random effect.</td>
+    </tr>
+    <tr>
+      <td>Fixed effect deleted</td>
+      <td>Sum Sq</td>
+      <td>Mean Sq</td>
+      <td>Num DF</td>
+      <td>Den DF</td>
+      <td>F value</td>
+      <td>Pr (&gt;F)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sub-compartment</td>
+      <td>4.991</td>
+      <td>1.6637</td>
+      <td>3</td>
+      <td>6</td>
+      <td>36.152</td>
+      <td>0.0003089</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td colspan="8">Model summary:</td>
+    </tr>
+    <tr>
+      <td>Random effects:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Groups</td>
+      <td>Name</td>
+      <td>Variance</td>
+      <td>Std. Dev.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Individual</td>
+      <td>(Intercept)</td>
+      <td>0.21097</td>
+      <td>0.4593</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td></td>
+      <td>0.04602</td>
+      <td>0.2145</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">Number of obs: 12, groups: individual, 3</td>
+    </tr>
+    <tr>
+      <td colspan="8">Fixed effects when stroma is set as the intercept:</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Estimate</td>
+      <td>Std. Error</td>
+      <td>DF</td>
+      <td>t value</td>
+      <td>Pr (&gt;|t|)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">(Intercept)</td>
+      <td>1.1743</td>
+      <td>0.2927</td>
+      <td>2.6475</td>
+      <td>4.012</td>
+      <td>0.034961</td>
+      <td>*</td>
+    </tr>
+    <tr>
+      <td colspan="2">Grana</td>
+      <td>0.3104</td>
+      <td>0.1752</td>
+      <td>6</td>
+      <td>1.772</td>
+      <td>0.126711</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Lamellae</td>
+      <td>1.4748</td>
+      <td>0.1752</td>
+      <td>6</td>
+      <td>8.42</td>
+      <td>0.000153</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td colspan="2">Margin</td>
+      <td>1.3736</td>
+      <td>0.1752</td>
+      <td>6</td>
+      <td>7.842</td>
+      <td>0.000227</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td colspan="8">Fixed effects when lamellae is set as the intercept:</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td>Estimate</td>
+      <td>Std. Error</td>
+      <td>DF</td>
+      <td>t value</td>
+      <td>Pr (&gt;|t|)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">(Intercept)</td>
+      <td>2.6491</td>
+      <td>0.2927</td>
+      <td>2.6475</td>
+      <td>9.051</td>
+      <td>0.004601</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td colspan="2">Grana</td>
+      <td>−1.1644</td>
+      <td>0.1752</td>
+      <td>6</td>
+      <td>−6.648</td>
+      <td>0.00056</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td colspan="2">Margin</td>
+      <td>−0.1012</td>
+      <td>0.1752</td>
+      <td>6</td>
+      <td>−0.578</td>
+      <td>0.584522</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Stroma</td>
+      <td>−1.4748</td>
+      <td>0.1752</td>
+      <td>6</td>
+      <td>−8.42</td>
+      <td>0.000153</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td colspan="8">fnr1 Deletion test carried out using Satterthwaite’s method with the R package lmerTest (Kuznetsova, Brockhoff &amp; Christensen 2017). The model is a mixed effects model with random intercepts. The square root of response is the response variable, tissue is the fixed effect, and individual the random effect.</td>
+    </tr>
+    <tr>
+      <td>Fixed effect deleted</td>
+      <td>Sum Sq</td>
+      <td>Mean Sq</td>
+      <td>Num DF</td>
+      <td>Den DF</td>
+      <td>F value</td>
+      <td>Pr (&gt;F)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sub-compartment</td>
+      <td>5.6516</td>
+      <td>1.8839</td>
+      <td>3</td>
+      <td>6</td>
+      <td>26.204</td>
+      <td>0.000759</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td colspan="2">Model summary:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Random effects:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Groups</td>
+      <td>Name</td>
+      <td>Variance</td>
+      <td>Std. Dev.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Individual</td>
+      <td>(Intercept)</td>
+      <td>0.07521</td>
+      <td>0.2742</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td></td>
+      <td>0.07189</td>
+      <td>0.2681</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">Number of obs: 12, groups: individual, 3</td>
+    </tr>
+    <tr>
+      <td colspan="8">Fixed effects when stroma is set as the intercept:</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Estimate</td>
+      <td>Std. Error</td>
+      <td>DF</td>
+      <td>t value</td>
+      <td>Pr (&gt;|t|)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td>1.2117</td>
+      <td>0.2214</td>
+      <td>4.4836</td>
+      <td>5.472</td>
+      <td>0.003875</td>
+      <td>**</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Grana</td>
+      <td>−0.1584</td>
+      <td>0.2189</td>
+      <td>6</td>
+      <td>−0.724</td>
+      <td>0.496563</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lamellae</td>
+      <td>0.9353</td>
+      <td>0.2189</td>
+      <td>6</td>
+      <td>4.272</td>
+      <td>0.005251</td>
+      <td>**</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Margin</td>
+      <td>1.5161</td>
+      <td>0.2189</td>
+      <td>6</td>
+      <td>6.925</td>
+      <td>0.000449</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">Fixed effects when lamellae is set as the intercept:</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Estimate</td>
+      <td>Std. Error</td>
+      <td>DF</td>
+      <td>t value</td>
+      <td>Pr (&gt;|t|)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td>2.1469</td>
+      <td>0.2214</td>
+      <td>4.4836</td>
+      <td>9.695</td>
+      <td>0.000356</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Grana</td>
+      <td>−1.0937</td>
+      <td>0.2189</td>
+      <td>6</td>
+      <td>−4.996</td>
+      <td>0.002463</td>
+      <td>**</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Margin</td>
+      <td>0.5808</td>
+      <td>0.2189</td>
+      <td>6</td>
+      <td>2.653</td>
+      <td>0.037882</td>
+      <td>*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stroma</td>
+      <td>−0.9353</td>
+      <td>0.2189</td>
+      <td>6</td>
+      <td>−4.272</td>
+      <td>0.005251</td>
+      <td>**</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">fnr1:ZmFNR1 Deletion test carried out using Satterthwaite’s method with the R package lmerTest (Kuznetsova, Brockhoff &amp; Christensen 2017). The model is a mixed effects model with random intercepts. The square root of response is the response variable, tissue is the fixed effect, and individual the random effect.</td>
+    </tr>
+    <tr>
+      <td>Fixed effect deleted</td>
+      <td>Sum Sq</td>
+      <td>Mean Sq</td>
+      <td>Num DF</td>
+      <td>Den DF</td>
+      <td>F value</td>
+      <td>Pr (&gt;F)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sub-compartment</td>
+      <td>4.5242</td>
+      <td>1.5081</td>
+      <td>3</td>
+      <td>6.01</td>
+      <td>23.558</td>
+      <td>0.001009</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td>Model summary:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Random effects:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Groups</td>
+      <td>Name</td>
+      <td>Variance</td>
+      <td>Std. Dev.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Individual</td>
+      <td>(Intercept)</td>
+      <td>0.0005984</td>
+      <td>0.02446</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td></td>
+      <td>0.064017</td>
+      <td>0.25302</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">Number of obs: 12, groups: individual, 3</td>
+    </tr>
+    <tr>
+      <td colspan="8">Fixed effects when stroma is set as the intercept:</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Estimate</td>
+      <td>Std. Error</td>
+      <td>DF</td>
+      <td>t value</td>
+      <td>Pr (&gt;|t|)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td>1.1754</td>
+      <td>0.1468</td>
+      <td>7.9979</td>
+      <td>8.009</td>
+      <td>4.34−05</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Relevel grana</td>
+      <td>0.2318</td>
+      <td>0.2066</td>
+      <td>6.01</td>
+      <td>1.122</td>
+      <td>0.304712</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Relevel lamellae</td>
+      <td>1.3774</td>
+      <td>0.2066</td>
+      <td>6.01</td>
+      <td>6.668</td>
+      <td>0.000547</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Relevel margin</td>
+      <td>1.2849</td>
+      <td>0.2066</td>
+      <td>6.01</td>
+      <td>6.22</td>
+      <td>0.000793</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">Fixed effects when lamellae is set as the intercept:</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Estimate</td>
+      <td>Std. Error</td>
+      <td>DF</td>
+      <td>t value</td>
+      <td>Pr (&gt;|t|)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td>2.55285</td>
+      <td>0.14676</td>
+      <td>7.9979</td>
+      <td>17.395</td>
+      <td>1.22−07</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Relevel grana</td>
+      <td>−1.14567</td>
+      <td>0.20659</td>
+      <td>6.01002</td>
+      <td>−5.546</td>
+      <td>0.001444</td>
+      <td>**</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Relevel margin</td>
+      <td>−0.09252</td>
+      <td>0.20659</td>
+      <td>6.01002</td>
+      <td>−0.448</td>
+      <td>0.669949</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Relevel stroma</td>
+      <td>−1.37744</td>
+      <td>0.20659</td>
+      <td>6.01002</td>
+      <td>−6.668</td>
+      <td>0.000547</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">fnr1:ZmFNR2</td>
+    </tr>
+    <tr>
+      <td colspan="8">Deletion test carried out using Satterthwaite’s method with the R package lmerTest (Kuznetsova, Brockhoff &amp; Christensen 2017). The model is a mixed effects model with random intercepts. The square root of response is the response variable, tissue is the fixed effect, and individual the random effect.</td>
+    </tr>
+    <tr>
+      <td>Fixed effect deleted</td>
+      <td>Sum Sq</td>
+      <td>Mean Sq</td>
+      <td>Num DF</td>
+      <td>Den DF</td>
+      <td>F value</td>
+      <td>Pr (&gt;F)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sub-compartment</td>
+      <td>5.4414</td>
+      <td>1.8138</td>
+      <td>3</td>
+      <td>6</td>
+      <td>22.849</td>
+      <td>0.001106</td>
+      <td>**</td>
+    </tr>
+    <tr>
+      <td colspan="8">Model summary:</td>
+    </tr>
+    <tr>
+      <td colspan="8">Random effects:</td>
+    </tr>
+    <tr>
+      <td>Groups</td>
+      <td>Name</td>
+      <td>Variance</td>
+      <td>Std. Dev.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Individual</td>
+      <td>(Intercept)</td>
+      <td>0.02741</td>
+      <td>0.1656</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td></td>
+      <td>0.07938</td>
+      <td>0.2817</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">Number of obs: 12, groups: individual, 3</td>
+    </tr>
+    <tr>
+      <td colspan="8">Fixed effects when stroma is set as the intercept:</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Estimate</td>
+      <td>Std. Error</td>
+      <td>DF</td>
+      <td>t value</td>
+      <td>Pr (&gt;|t|)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td>1.1886</td>
+      <td>0.1887</td>
+      <td>6.6796</td>
+      <td>6.3</td>
+      <td>0.000488</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Grana</td>
+      <td>0.4864</td>
+      <td>0.23</td>
+      <td>6</td>
+      <td>2.114</td>
+      <td>0.078885</td>
+      <td>.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lamellae</td>
+      <td>1.8298</td>
+      <td>0.23</td>
+      <td>6</td>
+      <td>7.954</td>
+      <td>0.00021</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Margin</td>
+      <td>0.9239</td>
+      <td>0.23</td>
+      <td>6</td>
+      <td>4.016</td>
+      <td>0.006989</td>
+      <td>**</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">Fixed effects when lamellae is set as the intercept:</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Estimate</td>
+      <td>Std. Error</td>
+      <td>DF</td>
+      <td>t value</td>
+      <td>Pr (&gt;|t|)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td>3.0184</td>
+      <td>0.1887</td>
+      <td>6.6796</td>
+      <td>15.998</td>
+      <td>1.42−06</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Grana</td>
+      <td>−1.3434</td>
+      <td>0.23</td>
+      <td>6</td>
+      <td>−5.84</td>
+      <td>0.00111</td>
+      <td>**</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Margin</td>
+      <td>−0.9059</td>
+      <td>0.23</td>
+      <td>6</td>
+      <td>−3.938</td>
+      <td>0.00764</td>
+      <td>**</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stroma</td>
+      <td>−1.8298</td>
+      <td>0.23</td>
+      <td>6</td>
+      <td>−7.954</td>
+      <td>0.00021</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">fnr1:ZmFNR3</td>
+    </tr>
+    <tr>
+      <td colspan="8">Deletion test carried out using Satterthwaite’s method with the R package lmerTest (Kuznetsova, Brockhoff &amp; Christensen 2017). The model is a mixed effects model with random intercepts. The square root of response is the response variable, tissue is the fixed effect, and individual the random effect.</td>
+    </tr>
+    <tr>
+      <td>Fixed effect deleted</td>
+      <td>Sum Sq</td>
+      <td>Mean Sq</td>
+      <td>Num DF</td>
+      <td>Den DF</td>
+      <td>F value</td>
+      <td>Pr (&gt;F)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sub-compartment</td>
+      <td>9.0046</td>
+      <td>3.0015</td>
+      <td>3</td>
+      <td>8</td>
+      <td>25.416</td>
+      <td>0.0001923</td>
+      <td>***</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Model summary:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Random effects:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Groups</td>
+      <td>Name</td>
+      <td>Variance</td>
+      <td>Std. Dev.</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Individual</td>
+      <td>(Intercept)</td>
+      <td>0</td>
+      <td>0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td></td>
+      <td>0.1181</td>
+      <td>0.3436</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">Number of obs: 12, groups: individual, 3</td>
+    </tr>
+    <tr>
+      <td colspan="8">Fixed effects when stroma is set as the intercept:</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Estimate</td>
+      <td>Std. Error</td>
+      <td>DF</td>
+      <td>t value</td>
+      <td>Pr (&gt;|t|)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td>1.06794</td>
+      <td>0.19841</td>
+      <td>8</td>
+      <td>5.383</td>
+      <td>0.00066</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Grana</td>
+      <td>0.06284</td>
+      <td>0.28059</td>
+      <td>8</td>
+      <td>0.224</td>
+      <td>0.828395</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lamellae</td>
+      <td>1.99447</td>
+      <td>0.28059</td>
+      <td>8</td>
+      <td>7.108</td>
+      <td>0.000101</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Margin</td>
+      <td>1.44343</td>
+      <td>0.28059</td>
+      <td>8</td>
+      <td>5.144</td>
+      <td>0.00088</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="8">Fixed effects when lamellae is set as the intercept:</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Estimate</td>
+      <td>Std. Error</td>
+      <td>DF</td>
+      <td>t value</td>
+      <td>Pr (&gt;|t|)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Intercept)</td>
+      <td>3.0624</td>
+      <td>0.1984</td>
+      <td>8</td>
+      <td>15.435</td>
+      <td>3.09−07</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Grana</td>
+      <td>−1.9316</td>
+      <td>0.2806</td>
+      <td>8</td>
+      <td>−6.884</td>
+      <td>0.000127</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Margin</td>
+      <td>−0.551</td>
+      <td>0.2806</td>
+      <td>8</td>
+      <td>−1.964</td>
+      <td>0.085144</td>
+      <td>.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Stroma</td>
+      <td>−1.9945</td>
+      <td>0.2806</td>
+      <td>8</td>
+      <td>−7.108</td>
+      <td>0.000101</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 It has been suggested that the location of FNR at different thylakoid complexes might regulate electron transport (Breyton et al., 2006; Joliot and Johnson, 2011; Twachtmann et al., 2012), and we therefore measured whether sub-chloroplast FNR distribution had an impact on enzyme activity in NADP+ reduction. NADP+ reduction and NADPH oxidation kinetics were followed in chloroplasts isolated from the different genotypes over a short illumination period followed by a dark period (Figure 4). Although amplitudes of fluorescence are quite consistent between genotypes (Figure 4), comparisons of absolute NADPH concentrations between chloroplast preparations are problematic, as the proportion of broken chloroplasts may vary. However, these data do allow us to accurately compare the kinetics of reduction and oxidation.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/56088/elife-56088-fig4-v2.jpg)
+
+**Figure 4.:** (A) Traces show NADPH fluorescence of dark adapted Arabidopsis chloroplasts measured over a short light exposure from 10 to 40 s. Traces are averages of three to five independent chloroplast preparations, each of which was composed of an average of 15 separate measurements. Genotypes from which chloroplasts were isolated are indicated on each graph. Black traces overlaying signals are fits (two components for reduction, one component for oxidation), calculated as described in Materials and methods. (B) Relative amplitude of fast (white bars) and slow (grey bars) components fitted to the NADP+ reduction traces shown in (A). (C) Rate of fluorescence induction for the fast (white bars, left) and slow (grey bars, right) components fitted to the NADP+ reduction traces shown in (A). (D) Rate of NADPH fluorescence decay following switching off the light, fitted to the traces shown in A. B–D are averages of values calculated from three to five separate chloroplast preparations (parameters in Supplementary file 2c and e). All values given ± standard error (fitting errors with absolute, 95% confidence). See Figure 4—figure supplement 1 for comparison between genotypes of proteins involved in NADP(H) metabolism. Appendix 1 describes further characterisation of the two phases of NADP+ reduction and Appendix 1—figure 1 shows further data on this topic.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56088/elife-56088-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Arabidopsis plants of the indicated genotypes were grown in 12 hr light conditions at 150 µE/12 hr dark and mature leaf protein extract was subjected to SDS-PAGE before immunoblotting and detection of the indicated proteins with primary antisera and alkaline phosphatase conjugated secondary antisera. Gels were loaded on an equal protein basis, and blots are representative of experiments on at least three biological replicates for each genotype. Differences in migration of FNR iso-proteins are indicated to the right.
 
 As described previously for pea chloroplasts (Schreiber and Klughammer, 2009; Latouche et al., 2000) and Arabidopsis (Hanke et al., 2008), isolated chloroplasts show distinct components of NADP+ reduction. In the measurements shown in Figure 4, only two components are clearly observed: a fast one of less than 1 s, and a slow one that lasts ~20 s. Further characterisation of these components is described in Appendix 1. The two observed components of NADP+ reduction can be fitted (Supplementary file 2c) and vary significantly in relative size between genotypes (Supplementary file 2d), depending on the abundance and location of FNR. The fnr1 mutant and the genotype expressing weakly bound maize FNR in the mutant background (fnr1-ZmFNR3) show a relatively small contribution of the slow component when compared to Wt, fnr1-ZmFNR1, and fnr1-ZmFNR3. NADPH oxidation in the dark was well fit to a single component using a Hill coefficient and no difference between genotypes was detected (Supplementary file 2e).
 
@@ -65,6 +1398,18 @@ It is reported that FNR interactions with Tic62 and TROL are weakened by exposur
 
 We then assessed the impact of FNR location on photosynthetic electron transport. Because of the longstanding debate about the role of FNR in CEF (Bendall and Manasse, 1995; Bojko et al., 2003; Buchert et al., 2018; Hanke et al., 2008; Hertle et al., 2013; Hosler and Yocum, 1985; Iwai et al., 2010; Mosebach et al., 2017; Shahak et al., 1981; Ye and Wang, 1997; Zhang et al., 2001), and the suggestion that relocation of FNR might be a mechanism to switch between LEF and CEF (Breyton et al., 2006; Joliot and Johnson, 2011), we paid particular attention to CEF related parameters. It is reported that rates of CEF are highest in the first 20 s of illumination following dark adaptation (Joliot and Joliot, 2005), and this corresponds to the time scale over which the slow kinetic phase of NADP+ reduction kinetics develops (Figure 4). We therefore compared the electrochromic band shift (ECS), here used to quantify electron flow rates, following either 20 s or 5 min acclimation to actinic light (Figure 5A). To differentiate LEF from CEF, we applied either a pulse of actinic light illumination (stimulation of both PSI and PSII, and therefore CEF + LEF), or a pulse of far red light illumination (PSI excitation only, and therefore CEF only).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/56088/elife-56088-fig5-v2.jpg)
+
+**Figure 5.:** (A) ECS measurements after a 20 s high light pulse on dark adapted leaves (grey background) and light acclimated leaves (5 min 150 µE m−2 s−1, actinic light). The relaxation kinetics of ECS were measured at 520–546 nm after a 20 s pulse of actinic light at 1100 µmol photons m−2 s−1 (LEF + CEF stimulating, white boxes) or far red light (CEF stimulating, red boxes). Averages are shown for between five and seven independent measurements ± s.d. (B) Relative amount of CEF as a function of total electron flow calculated from the data in (A). Figure 5—figure supplement 1 shows a comparable experiment preformed with DCMU rather than far red light to drive PSI activity. (C) The response to high light in dark adapted leaves (grey background) and light acclimated leaves (5 min 150 µE m−2 s−1, actinic light, white background) was measured by detecting chlorophyll fluorescence and P700 oxidation with saturating pulses following 20 s of actinic light at 1100 µmol photons m−2 s−1. Measurements are averages ± s.e. of 6–12 replicates of the following genotypes: black, wt; white, fnr1; orange, fnr1-ZmFNR1; cyan, fnr1-ZmFNR2; purple, fnr1-ZmFNR3. Photosystem I parameters (quantum efficiency, ФI; donor limitation, Y(ND); acceptor limitation, Y(NA)) and photosystem II parameters (quantum efficiency, ФII; non-photochemical quenching, NPQ; photochemical quenching, qL). p-value significance in Tukey post hoc analysis of ANOVA is indicated as 0 ‘***’, 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’. Unless indicated by bars, stars indicate variation from all other genotypes. Representative P700 and ECS traces are shown in Figure 5—figure supplement 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56088/elife-56088-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Electrochromic band shift (ECS) assay to compare generation of ΔpH without (stimulation of both photosystems) or with 20 µM DCMU (inhibition of photosystem II). (A) ECS measurements on leaves from wild-type, fnr1, and fnr1 plants expressing either ZmFNR1, ZmFNR2, or ZmFNR3. The relaxation kinetics of ECS were measured at 520–546 nm after a 20 s pulse of actinic light at 1100 µE m−2 s−1 in leaf discs that had been infiltrated with 0.4 M manitol (white boxes) or 200 µM DCMU in 0.4 M manitol (black boxes). Leaves were either dark adapted and then subject to the illuminating pulse (left) or light acclimated at 150 µE m-2 s−1 actinic for 5 min (right) before measurement of ECS. Averages are shown for three independent measurements with standard deviation. (B) Relative amount of CEF as a function of total electron flow calculated from the data in (A) following dark adaptation (left) and light acclimation (right).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/56088/elife-56088-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Representative normalised ECS traces following high light exposure to either red light (filled circles) or far red light (empty circles) after dark adaptation (left) and light acclimation at 150 µmol photons m−2 s−1 actinic light (right). Bars above graphs indicate the end of high light treatment and transition to dark relaxation. Typical traces from six to seven measurements on independent plants are shown. Genotypes from top to bottom: black, wt; grey, fnr1; orange, fnr1-ZmFNR1; cyan, fnr1-ZmFNR2; purple, fnr1-ZmFNR3. (B) P700 traces on high light exposure following dark adaptation (left) and light acclimation at 150 µmol photons m−2 s−1 actinic light (right). Black arrow indicates start of illumination at 1100 µmol photons m−2 s−1, and yellow arrows indicate application of saturating pulses. Data presented in Figure 5B is only calculated from pulses applied 20 s after the start of the high light treatment. Typical traces from 6 to 12 measurements on independent plants are shown. Genotypes coloured as for part (A). Values of Pm and their statistical analysis are provided in Supplementary file 2f.
+
 As an alternative method, we also performed the experiment following infiltration with DCMU during dark adaptation. This is a specific PSII inhibitor, which showed the same trend, but with much greater variation (Figure 5—figure supplement 1). When the data are normalised to a single turnover flash, it is possible to calculate rates of CEF/total EF (Figure 5B, see Materials and methods for a detailed explanation on the calculation procedure). As expected, for WT, there is significantly more CEF following a short (20 s) light exposure in dark adapted leaves than after light acclimation. This trend is not seen in the fnr1 mutant, suggesting it lacks the capacity to upregulate CEF in dark adapted leaves. Heterologous expression of either tether bound FNR, ZmFNR1, or ZmFNR2 rescues this capacity, but the more weakly interacting ZmFNR3 does not. All genotypes show similar CEF/total EF values after light acclimation, indicating that the impact of FNR location is related to the tether interactions that occur following dark adaptation. Western blotting confirms that there is little difference in abundance of major PET components between the genotypes (Figure 4—figure supplement 1). In several replicated experiments the only consistent differences seen are decreased PsbA in the fnr1 line and increased PC in the fnr1-ZmFNR3 line. Critically, there is no difference in abundance of PgrL1 or subunit 1 of the NDH complex, indicating that CEF components are equivalent and the variation seen in our measurements of CEF is related to FNR location rather than secondary effects.
 
 We also compared activity of PSI (P700 oxidation) and PSII (chlorophyll fluorescence) in the same genotypes under identical conditions to the ECS experiment, in order to understand how these parameters relate to the ECS. Figure 5C shows selected parameters, measured after a 20 s high light treatment of either dark adapted or light acclimated plants. PSI activity (ФI) during high light treatment is higher after light acclimation and similar between all genotypes except for a small decrease in fnr1-ZmFNR3 in dark adapted plants. As expected under high light treatment, acceptor limitation at PSI (Y(NA)) is high, and this is ameliorated somewhat by light adaptation. Unexpectedly, after dark adaptation the fnr1 mutant, which theoretically has lower Fd oxidation capacity, shows lower acceptor limitation than the other genotypes. Correspondingly, measurements of (Y(ND)) show significantly higher limitation in donors to PSI for the fnr1 mutant than all other genotypes.
@@ -73,21 +1418,490 @@ These data are consistent with the deficiency in CEF seen in dark adapted fnr1 (
 
 To test this further, we repeated our IGL-TEM experiment to examine sub-chloroplast FNR localisation following light adaptation. These data are plotted in Figure 6 in a comparison with those generated in the original dark adapted experiment from Figure 3. Unlike the dark adapted leaves, where staining density is equivalent between margins and lamellae, light adaptation gives higher FNR density at the margins than in the lamella. FNR density is significantly higher in the margins of light acclimated than dark adapted plants (Table 3), a region proposed to be highly active in LEF (Anderson, 1992; Chow et al., 2005).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/56088/elife-56088-fig6-v2.jpg)
+
+**Figure 6.:** Density of immunogold labelled FNR in different sub-chloroplast compartments of Wt Arabidopsis either dark incubated (left panel, same data as in Figure 3) or light incubated (right panel), prior to and during fixation. Densities given are grana core, green; margins, magenta; lamellae, blue; and stroma, yellow. Values are averages of three biological replicates, with combined label and area for the sub-compartments of 15–20 chloroplasts for each individual. Statistical significance within and between treatments was calculated with a mixed effects model analysis of variance (Table 3).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56088/elife-56088-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Models are based on data presented in this work that indicate (i) FNR is overwhelmingly membrane bound irrespective of interaction with the Tic62/TROL tethers (Figures 1 and 3); (ii) Strong FNR:Tic62/TROL association is required for the transient CEF seen on dark to light transition (Figure 5); (iii) Fast and slow (10–15 s) components of NADP+ reduction are seen at the onset of light, and the slow component is attenuated without FNR:Tic62/TROL tether interactions (Figure 4); (iv) there is a tendency for FNR accumulation at the margins during the light (Figure 6). Model A, Active role in CEF for the FNR:tether complex. Tight binding of FNR to Tic62/TROL during the dark sequesters some of the enzyme on the stromal lamellae, favouring increased CEF at the onset of light (possibly involving pgr5/pgrL1 and/or interaction with the Cyt b6f). As proton pumping drives ∆pH formation, FNR:tether interactions weaken, and a proportion of this enzyme relocates to PSI at the margins, increasing the rate of NADPH formation. Model B, Default CEF due to FNR deactivation on tether interaction. Binding of some FNR to the Tic62/TROL tethers inactivates the enzyme, driving CEF by default, either through the Cyt b6f or the NDH complex. Weakening of these associations during the light releases a proportion of this enzyme, activating it. Some of this FNR relocates to the margin region, increasing the rate of NADP+ reduction. In both models significant amounts of weakly bound FNR at the margins continue to conduct NADP+ reduction in both the dark and the light.
+
+**Table 3.**
+ Mixed effects model investigating changes in FNR density between different the chloroplast sub-compartments of WT Arabidopsis following dark adaptation or light adaptation of leaves.Analysis performed using the data in Figure 6. Fixed effects taking either label density in the stroma as the intercept or label density in the margins/lamellae as the intercept. Linear mixed model fit by REML. Signif. codes: 0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘’ 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="22">Deletion test carried out using Satterthwaite’s method with the R package lmerTest (Kuznetsova, Brockhoff &amp; Christensen 2017). The model is a mixed effects model with random intercepts. The square root of response is the response variable, tissue is the fixed effect, and individual the random effect.</th>
+    </tr>
+    <tr>
+      <th>Fixed effect deleted</th>
+      <th colspan="4">Sum Sq</th>
+      <th colspan="3">Mean Sq</th>
+      <th colspan="3">Num DF</th>
+      <th colspan="4">Den DF</th>
+      <th colspan="3">F value</th>
+      <th colspan="3">Pr (&gt;F)</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sub-compartment</td>
+      <td colspan="4">0.30184</td>
+      <td colspan="3">0.10061</td>
+      <td colspan="3">3</td>
+      <td colspan="4">12</td>
+      <td colspan="3">2.3613</td>
+      <td colspan="3">0.1227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="10">Model summary:</td>
+      <td colspan="4"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Random effects:</td>
+      <td colspan="5"></td>
+      <td colspan="3"></td>
+      <td colspan="4"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Groups</td>
+      <td colspan="5">Name</td>
+      <td colspan="5">Variance</td>
+      <td colspan="4">Std. Dev.</td>
+      <td colspan="2"></td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Individual</td>
+      <td colspan="5">(Intercept)</td>
+      <td colspan="5">0.1073</td>
+      <td colspan="4">0.3276</td>
+      <td colspan="2"></td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="2">Residual</td>
+      <td colspan="5"></td>
+      <td colspan="5">0.04261</td>
+      <td colspan="4">0.2064</td>
+      <td colspan="2"></td>
+      <td></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="17">Number of obs: 24, groups: individual, 6</td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="22">Fixed effects when dark adapted stroma is set as the intercept::</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+      <td colspan="2">Estimate</td>
+      <td colspan="3">Std. Error</td>
+      <td colspan="4">DF</td>
+      <td colspan="4">t value</td>
+      <td colspan="3">Pr (&gt;|t|)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">(Intercept)</td>
+      <td colspan="2">1.1743</td>
+      <td colspan="3">0.2235</td>
+      <td colspan="4">6.3067</td>
+      <td colspan="4">5.253</td>
+      <td colspan="3">0.00164</td>
+      <td>**</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Grana</td>
+      <td colspan="2">0.3104</td>
+      <td colspan="3">0.1685</td>
+      <td colspan="4">12</td>
+      <td colspan="4">1.842</td>
+      <td colspan="3">0.09033</td>
+      <td>.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Lamellae</td>
+      <td colspan="2">1.4748</td>
+      <td colspan="3">0.1685</td>
+      <td colspan="4">12</td>
+      <td colspan="4">8.75</td>
+      <td colspan="3">1.48−06</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Margins</td>
+      <td colspan="2">1.3736</td>
+      <td colspan="3">0.1685</td>
+      <td colspan="4">12</td>
+      <td colspan="4">8.15</td>
+      <td colspan="3">3.11−06</td>
+      <td>***</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Light:dark comparison</td>
+      <td colspan="2">0.4157</td>
+      <td colspan="3">0.3161</td>
+      <td colspan="4">6.3067</td>
+      <td colspan="4">1.315</td>
+      <td colspan="3">0.23427</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Light:dark grana</td>
+      <td colspan="2">0.1421</td>
+      <td colspan="3">0.2384</td>
+      <td colspan="4">12</td>
+      <td colspan="4">0.596</td>
+      <td colspan="3">0.5622</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Light:dark lamellae</td>
+      <td colspan="2">0.1482</td>
+      <td colspan="3">0.2384</td>
+      <td colspan="4">12</td>
+      <td colspan="4">0.622</td>
+      <td colspan="3">0.54562</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">Light:dark margins</td>
+      <td colspan="2">0.5963</td>
+      <td colspan="3">0.2384</td>
+      <td colspan="4">12</td>
+      <td colspan="4">2.502</td>
+      <td colspan="3">0.02782</td>
+      <td>*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+      <td colspan="4"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+      <td colspan="2"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="22">Fixed effects when dark adapted lamellae is set as the intercept::</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td colspan="4">Estimate</td>
+      <td colspan="3">Std. Error</td>
+      <td colspan="5">DF</td>
+      <td colspan="3">t value</td>
+      <td colspan="4">Pr (&gt;|t|)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="4">(Intercept)</td>
+      <td colspan="2">2.64913</td>
+      <td colspan="3">0.223542</td>
+      <td colspan="5">6.306738</td>
+      <td colspan="3">11.851</td>
+      <td colspan="3">1.52−05</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="4">Grana</td>
+      <td colspan="2">−1.16437</td>
+      <td colspan="3">0.168543</td>
+      <td colspan="5">12.000001</td>
+      <td colspan="3">−6.908</td>
+      <td colspan="3">1.63−05</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="4">Margins</td>
+      <td colspan="2">−0.101175</td>
+      <td colspan="3">0.168543</td>
+      <td colspan="5">12.000001</td>
+      <td colspan="3">−0.6</td>
+      <td colspan="3">0.5595</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="4">Stroma</td>
+      <td colspan="2">−1.474807</td>
+      <td colspan="3">0.168543</td>
+      <td colspan="5">12.000001</td>
+      <td colspan="3">−8.75</td>
+      <td colspan="3">1.48−06</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="4">Light:dark comparison</td>
+      <td colspan="2">0.563988</td>
+      <td colspan="3">0.316136</td>
+      <td colspan="5">6.306738</td>
+      <td colspan="3">1.784</td>
+      <td colspan="3">0.1223</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="4">Light:dark grana</td>
+      <td colspan="2">−0.006164</td>
+      <td colspan="3">0.238356</td>
+      <td colspan="5">12.000001</td>
+      <td colspan="3">−0.026</td>
+      <td colspan="3">0.9798</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="4">Light:dark margins</td>
+      <td colspan="2">0.44808</td>
+      <td colspan="3">0.238356</td>
+      <td colspan="5">12.000001</td>
+      <td colspan="3">1.88</td>
+      <td colspan="3">0.0846</td>
+      <td colspan="2">.</td>
+    </tr>
+    <tr>
+      <td colspan="4">Light:dark stroma</td>
+      <td colspan="2">−0.148241</td>
+      <td colspan="3">0.238356</td>
+      <td colspan="5">12.000001</td>
+      <td colspan="3">−0.622</td>
+      <td colspan="3">0.5456</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="5"></td>
+      <td></td>
+      <td colspan="3"></td>
+      <td colspan="5"></td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="22">Fixed effects when light acclimated stroma is set as the intercept:</td>
+    </tr>
+    <tr>
+      <td colspan="5"></td>
+      <td>Estimate</td>
+      <td colspan="3">Std. Error</td>
+      <td colspan="5">DF</td>
+      <td colspan="3">t value</td>
+      <td colspan="3">Pr (&gt;|t|)</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="5">(Intercept)</td>
+      <td>1.5901</td>
+      <td colspan="3">0.2235</td>
+      <td colspan="5">6.3067</td>
+      <td colspan="3">7.113</td>
+      <td colspan="3">0.00031</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="5">Grana</td>
+      <td>0.4525</td>
+      <td colspan="3">0.1685</td>
+      <td colspan="5">12</td>
+      <td colspan="3">2.685</td>
+      <td colspan="3">0.01986</td>
+      <td colspan="2">*</td>
+    </tr>
+    <tr>
+      <td colspan="5">Lamellae</td>
+      <td>1.623</td>
+      <td colspan="3">0.1685</td>
+      <td colspan="5">12</td>
+      <td colspan="3">9.63</td>
+      <td colspan="3">5.37−07</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="5">Margins</td>
+      <td>1.97</td>
+      <td colspan="3">0.1685</td>
+      <td colspan="5">12</td>
+      <td colspan="3">11.688</td>
+      <td colspan="3">6.48−08</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="5">Dark:light comparison</td>
+      <td>−0.4157</td>
+      <td colspan="3">0.3161</td>
+      <td colspan="5">6.3067</td>
+      <td colspan="3">−1.315</td>
+      <td colspan="3">0.23427</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="5">Dark:light grana</td>
+      <td>−0.1421</td>
+      <td colspan="3">0.2384</td>
+      <td colspan="5">12</td>
+      <td colspan="3">−0.596</td>
+      <td colspan="3">0.5622</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="5">Dark:light lamellae</td>
+      <td>−0.1482</td>
+      <td colspan="3">0.2384</td>
+      <td colspan="5">12</td>
+      <td colspan="3">−0.622</td>
+      <td colspan="3">0.54562</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="5">Dark:light margins</td>
+      <td>−0.5963</td>
+      <td colspan="3">0.2384</td>
+      <td colspan="5">12</td>
+      <td colspan="3">−2.502</td>
+      <td colspan="3">0.02782</td>
+      <td colspan="2">*</td>
+    </tr>
+    <tr>
+      <td colspan="5"></td>
+      <td></td>
+      <td colspan="3"></td>
+      <td colspan="5"></td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="22">Fixed effects when light acclimated lamellae is set as the intercept:</td>
+    </tr>
+    <tr>
+      <td colspan="5"></td>
+      <td>Estimate</td>
+      <td colspan="3">Std. Error</td>
+      <td colspan="5">DF</td>
+      <td colspan="3">t value</td>
+      <td colspan="3">Pr (&gt;|t|)</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="3">(Intercept)</td>
+      <td colspan="3">3.213118</td>
+      <td colspan="3">0.223542</td>
+      <td colspan="5">6.306738</td>
+      <td colspan="3">14.374</td>
+      <td colspan="3">4.68−06</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="3">Grana</td>
+      <td colspan="3">−1.170535</td>
+      <td colspan="3">0.168543</td>
+      <td colspan="5">12.000001</td>
+      <td colspan="3">−6.945</td>
+      <td colspan="3">1.55−05</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="3">Margins</td>
+      <td colspan="3">0.346905</td>
+      <td colspan="3">0.168543</td>
+      <td colspan="5">12.000001</td>
+      <td colspan="3">2.058</td>
+      <td colspan="3">0.062</td>
+      <td colspan="2">.</td>
+    </tr>
+    <tr>
+      <td colspan="3">Stroma</td>
+      <td colspan="3">−1.623048</td>
+      <td colspan="3">0.168543</td>
+      <td colspan="5">12.000001</td>
+      <td colspan="3">−9.63</td>
+      <td colspan="3">5.37−07</td>
+      <td colspan="2">***</td>
+    </tr>
+    <tr>
+      <td colspan="3">Dark:light comparison</td>
+      <td colspan="3">−0.563988</td>
+      <td colspan="3">0.316136</td>
+      <td colspan="5">6.306738</td>
+      <td colspan="3">−1.784</td>
+      <td colspan="3">0.1223</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="3">Dark:light grana</td>
+      <td colspan="3">0.006164</td>
+      <td colspan="3">0.238356</td>
+      <td colspan="5">12.000001</td>
+      <td colspan="3">0.026</td>
+      <td colspan="3">0.9798</td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td colspan="3">Dark:light margins</td>
+      <td colspan="3">−0.44808</td>
+      <td colspan="3">0.238356</td>
+      <td colspan="5">12.000001</td>
+      <td colspan="3">−1.88</td>
+      <td colspan="3">0.0846</td>
+      <td colspan="2">.</td>
+    </tr>
+    <tr>
+      <td colspan="3">Dark:light stroma</td>
+      <td colspan="3">0.148241</td>
+      <td colspan="3">0.238356</td>
+      <td colspan="5">12.000001</td>
+      <td colspan="3">0.622</td>
+      <td colspan="3">0.5456</td>
+      <td colspan="2"></td>
+    </tr>
+  </tbody>
+</table>
+
 ## Discussion
 
-## FNR is not free in the stroma as a soluble protein
+### FNR is not free in the stroma as a soluble protein
 
 Until now it has been the general consensus that in higher plant chloroplasts a significant proportion of FNR is soluble (Carrillo and Vallejos, 1982; Lintala et al., 2007; Okutani et al., 2005; Shin et al., 1963; Matthijs et al., 1986; Gummadova et al., 2007). Here we present strong evidence that this is not the case (Figure 1—figure supplement 2, Figure 1, Figure 3, Figure 6, Tables 1–3, Supplementary files 2a, 2b) with only membrane bound FNR detected, even in genotypes where FNR was previously considered totally soluble (Hanke et al., 2008; Lintala et al., 2007). The most likely explanation for this is that the aggressive cell disruption procedures, or osmotic shock followed by solubilisation for BNP, disrupt weak associations of FNR with other membrane complexes (Andersen et al., 1992; Zhang et al., 2001), or possibly even the membrane itself (Grzyb et al., 2018; Grzyb et al., 2008). We have therefore redefined soluble FNR as weakly associated FNR. These results are in good agreement with an IGL study showing FNR is only found associated with the algal thylakoid in Chlamydomonas (Suss et al., 1995), though they contradict an earlier study on higher plants (Negi et al., 2008), where the authors report co-localisation of FNR and GAPDH. In the chloroplast example shown by Negi et al., 2008 some of the labelled FNR appears to be in the stroma, but no details of primary or secondary antibody specificity, sample number or leaf treatment prior to sample preparation are given, which would be necessary for a valid comparison with our work. It has previously been reported that FNR is a component of the inner envelope translocon (Stengel et al., 2008), but we detected little evidence for this in analysis of over 300 mature chloroplasts from 18 individuals (over 4500 gold particles counted). However, we cannot discount the possibility that such interactions are more prevalent earlier in chloroplast development, when protein import is more active.
 
 Benz et al., 2010 propose that FNR tethering by Tic62 is not involved in NADP+ reduction. While these authors suggest that Tic62-binding prevents proteolytic degradation of FNR in the dark, the data in Figure 5 reveal another function, critical for transient CEF on dark to light transition. This is consistent with earlier results in antisense tobacco plants, where transient CEF was negatively impacted by decreased FNR (Joliot and Johnson, 2011), although this effect has not previously been reported in Arabidopsis. Arabidopsis has two genes for FNR, and P700 re-reduction data from plants knocked-out or knocked-down for either gene have been interpreted as showing an increase in CEF after high light or temperature stress (Hanke et al., 2008; Lintala et al., 2009). FNR:Tic62 and FNR:TROL interactions are disrupted at higher light intensities (Alte et al., 2010; Benz et al., 2009), meaning that specific interaction to these tethers is unlikely to withstand illumination during stress treatments. Indeed, our ECS measurements after light acclimation show no difference in CEF between genotypes (Figure 5A), and P700 parameters indicate less donor limitation for fnr1 than other genotypes (Figure 5C). The reported differences in P700 re-reduction (Hanke et al., 2008; Lintala et al., 2009) therefore likely have another cause in the fnr1 mutants and fnr2 knock-downs or reflect a different CEF pathway from the dark to light transition CEF measured in our work.
 
-## The function of FNR bound to Tic62 and TROL
+### The function of FNR bound to Tic62 and TROL
 
 The study of CEF in full FNR knock-outs is hampered by the essential role FNR plays in generating NADPH in LEF (Bendall and Manasse, 1995; Lintala et al., 2012), and previous investigation of a role for FNR-location in CEF has been complicated by the decrease in total FNR content when the Tic62 or TROL proteins are knocked out (Benz et al., 2009; Jurić et al., 2009). Here we have generated plants with approximately wild type levels of FNR, but variable location (Figure 2), allowing us to establish that tight binding to Tic62 or TROL is necessary for the transient CEF associated with the dark light transition (Figure 5A). In fact, the literature investigating a role for FNR activity in CEF is extensive, with multiple inhibitor based studies supporting this hypothesis (Ravenel et al., 1994; Shahak et al., 1981; Bendall and Manasse, 1995; Mills et al., 1979; Cleland and Bendall, 1992; Ye and Wang, 1997; Hosler and Yocum, 1985). The actual function for FNR in higher plant CEF, however, remains speculative: it has been proposed as a direct Fd:quinone reductase (Bojko et al., 2003), or as a binding site for Fd to allow reduction of quinones via PgrL1 (Hertle et al., 2013) or the Cyt b6f in both algae and higher plants (Buchert et al., 2018; Zhang et al., 2001; Buchert et al., 2020). Although it is reported that interaction with Tic62 or TROL has no impact on FNR activity (Alte et al., 2010), another possibility is that by binding to Tic62 or TROL, FNR becomes less efficient at oxidising Fd. By default, reduced Fd would then donate electrons to other pathways, including CEF. This would be consistent with the recent finding that the NDH complex uses Fd as the direct electron donor (Yamamoto and Shikanai, 2013; Schuller et al., 2019). It has recently been reported that both the NDH and antimycin A CEF pathways are regulated by the ATP:ADP ratio (Fisher et al., 2019). In both cases ATP was found to act as a competitive inhibitor of reduced Fd association. It follows that an increase in the rate of Fd oxidation by FNR would result in greater ATP inhibition of CEF. Indeed, the fnr1 and fnr1-ZmFNR3 genotypes both show a greater fast-component of NADP+ reduction (Figure 4), implying faster Fd oxidation at the onset of light, and both genotypes also lack upregulated CEF following dark adaptation (Figure 5).
 
 The fact that transient CEF does not occur when total FNR content is decreased in the fnr1 mutant (Figure 5A) and is decreased in FNR antisense tobacco (Joliot and Johnson, 2011) seems to support an active role for FNR, as any default Fd oxidation pathway would be expected to increase in these circumstances. Because several CEF pathways are regulated by redox signals (Breyton et al., 2006; Takahashi et al., 2013; Strand et al., 2015; Strand et al., 2016), it also remains possible that the impact of decreased FNR activity on CEF is indirect, through a failure to effectively poise the NADP(H) pool.
 
-## FNR as a dynamic switch between LEF and CEF
+### FNR as a dynamic switch between LEF and CEF
 
 Because the fnr1 and fnr1-ZmFNR3 genotypes, which lack Tic62 and TROL interaction (Figure 2C), retain FNR bound to the thylakoid (Figure 3), the enzyme must occupy alternative, weaker binding sites on the membrane following release from Tic62 and TROL. This is further supported by the IGL-staining on illuminated leaves (Figure 6), in which Tic62/TROL interactions with FNR should be disrupted (Alte et al., 2010; Benz et al., 2009), but FNR remains membrane bound. We have no direct evidence for the identity of these weak sites of FNR-interaction, but it seems likely they include proteins that have previously been reported as FNR interaction partners, such as PSI (Andersen et al., 1992) or the Cytb6f (Zhang et al., 2001; Clark et al., 1984). Indeed, specific interaction between FNR and PSI has recently been demonstrated in vitro (Marco et al., 2019), and the authors suggest a binding site comprising PsaE and the light harvesting complexes. Proximity to PSI would result in more efficient flux of electrons from PSI to NADP+, consistent with the dominant fast component of NADP+ reduction in the fnr1 mutant and fnr1-ZmFNR3 genotypes (Figure 4), where all FNR is weakly associated (Lintala et al., 2007; Hanke et al., 2008; Figure 2). The fnr1 mutant is also the only genotype with higher FNR density at the margin than on the lamellae (Figure 3), consistent with the theory that LEF occurs predominantly on these regions of the thylakoid (Anderson, 1992; Chow et al., 2005). As the contribution of the slow component in NADP+ reduction (Figure 4) matches the timescale of transient CEF on light to dark transition (Joliot and Joliot, 2005), and FNR interaction with Tic62 and TROL tethers is weakened in the light (Alte et al., 2010; Benz et al., 2009) we tentatively propose the following model to explain our data: in the dark, a large amount of FNR is sequestered at Tic62 and TROL on the lamellae in a location sub-optimal for Fd oxidation, limiting NADPH production before carbon fixation is upregulated. In this location FNR promotes CEF by an as yet uncharacterised mechanism, possibly related to Pgr5 and/or PgrL1. Over light induction, these interactions are disrupted, and the enzyme relocates to associate with PSI, resulting in increased efficiency of NADP+ reduction. This speculative model is presented in Figure 6—figure supplement 1. Our measurements of NADP+ reduction kinetics could be fitted by two components (Figure 4A, Supplementary file 2c), while this model would imply three possible changes in kinetics corresponding to dissociation, diffusion, and re-association. If the model in Figure 6—figure supplement 1A is correct, at least one component must be too fast to be detected. This could either be diffusion, due to close proximity of the Tic62/TROL membrane tethers to PSI, or association with PSI following a slow diffusion phase.
 
@@ -99,11 +1913,112 @@ It is also possible that during the light FNR remains associated with the membra
 
 ## Materials and methods
 
-## Plant material and sample preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>FNR1; FNR2</td>
+      <td>GenBank</td>
+      <td>AT5G66190; AT1G20020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Zea mays)</td>
+      <td>FNR1; FNR2; FNR3; TROL</td>
+      <td>GenBank</td>
+      <td>BAA88236; BAA88237; ACF85815; ACF79627.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Thermo Fisher</td>
+      <td>EC0114</td>
+      <td>Competent cells</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>Columbia; Columbia fnr1; Columbia ZmFNR1; Columbia ZmFNR3</td>
+      <td>Arabidopsis Biological Resource Center (ABRC) See Twachtmann et al., 2012 for over-expression line generation</td>
+      <td>wt; AT1G20020 T-DNA insertion mutant; Line expressing BAA88236 under control of the AT1G20020 promoter; Line expressing ACF85815 under control of the AT1G20020 promoter</td>
+      <td>See Hanke et al., 2008 for mutant isolation;</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-maize FNR2 (Rabbit polyclonal)</td>
+      <td>This paper (Okutani et al., 2005)</td>
+      <td>BAA88237</td>
+      <td>IG-TEM (1:200), WB (1:50,000). Raised in rabbit using recombinant mature purified maize FNR2 protein</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-maize Cyt f (Rabbit polyclonal)</td>
+      <td>This paper (Okutani et al., 2005)</td>
+      <td></td>
+      <td>IG-TEM (1:200), WB (1:5000) Raised in rabbit using Cyt f protein purified from maize leaves</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-maize TROL (guinea pig polyclonal)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>WB (1:10,000) Raised in guinea pig using TROL protein purified as described in the Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCold His-TROL (plasmid)</td>
+      <td>Takara-Bio; This paper</td>
+      <td>ACF79627.1</td>
+      <td>Cloned as described in the Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSAt-FNR1pro-Zm-FNR2 (plasmid)</td>
+      <td>From Twachtmann et al., 2012</td>
+      <td>AT1G20020;BAA88237</td>
+      <td>Plasmid for expressing maize FNR2 under control of the Arabidopsis FNR1 promoter</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TROL -F</td>
+      <td>Eurofins genomics (Ebersberg, Germany)</td>
+      <td>PCR primers</td>
+      <td>GTCGACGAGGATCGACAAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TROL -R</td>
+      <td>Eurofins genomics (Ebersberg, Germany)</td>
+      <td>PCR primers</td>
+      <td>GAATTCCTAGACCCGGTTTCTT</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Maize TROL</td>
+      <td>Eurofins genomics (Ebersberg, Germany)</td>
+      <td>ACF79627.1</td>
+      <td>Cloned and purified as described in the Materials and methods</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plant material and sample preparation
 
 Arabidopsis thaliana plants were all Columbia ecotype. All transformed plants were screened at the level of western blotting (see later for Materials and methods) to confirm expression of heterologous FNR proteins prior to analysis. Plants were grown under a light/dark cycle of 12 h/12 hr with moderate light of 150 µmol photons m−2 s−1 at 22°C/18°C on soil. Samples were extracted from mature Arabidopsis leaves in the presence of 50 mM Tris-HCl, pH 7.5, 100 mM NaCl, 2 mM EDTA, 20 µg/ml, and 0.1 mg/ml polyvinyl-polypyrrolidone. Supernatant and pellet fractions were made from these extracts by centrifugation at 11,000 g 4°C for 5 min, and the membrane pellet was resuspended with an equal volume of buffer containing 0.1% Triton X-100 to solubilise proteins prior to analysis.
 
-## Transmission electron microscopy
+### Transmission electron microscopy
 
 The transmission electron microscopy was performed on a Jeol JEM-1230 microscope (Jeol, Peabody, MA) equipped with a Morada CCD camera and iTEM Olympus software at 80.00 kV.
 
@@ -115,46 +2030,64 @@ After cutting the blocks on a Reichert-Jung ultramicrotome (Leica, Nussloch, Ger
 
 The areas of interest on the electron micrographs were defined by printing at high resolution and manually colouring in magenta (margins), blue (lamellae), and green (grana core). See text for full explanation of chloroplast sub-compartment definitions in this work. Areas of chloroplasts with poor membrane resolution were not included in analysis. To account for antibody size, an area of 10 nm on either side of both margins and lamellae were included in the area (see Figure 1—figure supplement 2). These images were then scanned and analysed in ImageJ using the Versatile Wand Tool. By subtraction of the sum of grana, lamellae, and margin area from the total chloroplast area analysed, a value for the stroma was calculated. Then, the gold particles were manually counted on each micrograph (in the region of 10–50 per chloroplast) and the labelling density of each sub-compartment was calculated as particles/μm2.
 
-## Statistical analysis
+### Statistical analysis
 
 Because of the presence of multiple measurements from the same individual, FNR densities were analysed using random-intercepts mixed effects models fitted using the lme4 (Bates et al., 2015) and lmerTest (Kuznetsova et al., 2017) packages in R version 1.1.456 (R Development Core Team, 2019). Sub-compartment (divided into Stroma, Grana, Cytosol and Margin/Lamellae, or Stroma, Grana, Margin, and Lamellae) was the fixed effect and individual the random effect. Following initial data exploration and model fitting the response variable was square root transformed for all models in order to reduce skew in the residuals. Models were fitted with both Stroma and Margin/lamellae or Lamellae set as the intercept in order to allow all important effects to be represented in the contrasts. For PAM and ECS analysis, the statistical analysis of variance (ANOVA) and post hoc analysis Tukey's tests were also performed in R.
 
-## Generation of transgenic plants
+### Generation of transgenic plants
 
 Homozygous fnr1 knock out Arabidopsis plants were transformed with a construct containing the maize FNR coding sequence as described previously (Twachtmann et al., 2012). The individual transformations only yielded positive results for the ZmFNR2 construct and seeds of the second generation after transformation were used in this study. For generation of plants containing the maize coding sequence for FNR1 and FNR3, the fnr1 mutant plant was crossed with Arabidopsis plants expressing ZmFNR1 or ZmFNR3, respectively. The offspring seeds were selected for the expression of maize FNR genes on agar plates with the corresponding herbicide. For this study the third generation after transformation was used.
 
-## Cloning and purification of maize TROL
+### Cloning and purification of maize TROL
 
 RNA from sweetcorn-type ‘Golden X Bantam’ (Bingenheimer Saatgut AG, Echzell-Bingenheim, Germany) was isolated using TRI Reagent RT (Molecular Research Center Inc, Cincinnati, USA) according to the manufacturer’s manual before reverse transcription into cDNA using the ‘RevertAid H Minus First Strand cDNA Synthesis’ kit (Thermo Fisher Scientific Inc, Waltham, USA). Coding sequence of maize TROL was amplified from this cDNA using primers 5’-GTCGACGAGGATCGACAAAA-3’ and 5’-GAATTCCTAGACCCGGTTTCTT-3’ containing restriction sites for Sal I and EcoRI, respectively. This product was ligated into pJET1.2/blunt (Thermo Fisher Scientific Inc, Waltham, USA) before subcloning with Sal I and XbaI into pCold-I (Takara Bio Inc, Shiga, Japan). Competent Escherichia coli BL21(DE3) cells were transformed with expression vector and positive transformants were selected on 100 µg/ml ampicillin. A single colony was used for inoculation of YT broth containing 50 µg/ml ampicillin and subsequent gene expression was performed according to the pCold-I manual. Harvested cells were resuspended in binding buffer containing 20 mM Tris-HCl pH 7.9, 500 mM NaCl, and 5 mM imidazole before addition of 1 mM Pefabloc SC (Carl Roth GmbH and Co. KG, Karlsruhe, Germany), 100 µg/ml lysozyme, and 0.1% Triton X-100. Cell suspension was lysed by sonication. Clarified lysate containing maize TROL-His(6x) was applied to a column containing chelating fast flow sepharose (GE Healthcare, Little Chalfont, England) previously charged with 50 mM NiSO4 and equilibrated with binding buffer using the ‘ÄKTAprime plus’ FPLC system (GE Healthcare, Little Chalfont, England). The column was washed with the same buffer containing 52 mM imidazole before elution of bound protein with binding buffer containing a total of 300 mM imidazole. Collected fractions were pooled and used for ammonium sulphate precipitation by adding ground powder up to 20% saturating solution. The solution was centrifuged for 10 min and 10,000 g at 4°C before resuspension of the obtained pellet in buffer containing 100 mM NaHCO3 and 20 mM NaCl. The solution was dialysed against the same buffer overnight. In addition, the purified protein was dialysed with buffer containing 50 mM Tris-HCl pH 7.5 and 100 mM NaCl prior of generating primary antisera in guinea pig (Pineda Antikörper-Service, Berlin, Germany).
 
-## Native and SDS-PAGE
+### Native and SDS-PAGE
 
 SDS-PAGE samples have been treated with 0.5% SDS and 2.5% 2-mercaptoethanol and heated at 95°C for 5 min. Native-PAGE samples have been treated with 10% glycerol and 0.1% bromophenol blue before loading. Samples were separated by native-PAGE (Kimata and Hase, 1989) or SDS-PAGE (Laemmli, 1970) on a 12% gel before immunoblotting (Towbin et al., 1979) on polyvinylidene defluoride (PVDF) membrane (Bio-Rad Laboratories Inc, Hercules, USA). Antibodies used in immunoblotting detection were raised against PC (1:5000), LHCII (1:8000), LHCI (1:8000), PgrL1 (1:3000), cytochrome b6 (1:50,000), NDHS (1:10,000), PsbA (1:10,000), PsaD (1:5000), spinach LHC (1:40,000) (all purchased from Agrisera, Vännäs, Sweden), maize (Zea mays) FNR2 (1:60,000), spinach (Spinacea oleracea) Cyt f (1:5000), and maize TROL (1:10,000).
 
-## Blue native-PAGE
+### Blue native-PAGE
 
 All steps were performed at 4°C. Chloroplasts have been isolated basically as described by Hanke et al., 2008. Samples have been prepared as described previously (Twachtmann et al., 2012) and been analysed by blue native-PAGE as described (Reisinger and Eichacker, 2007) using a 6% to 12% polyacrylamide gradient gel before immunoblotting on PVDF membrane (Bio-Rad Laboratories Inc, Hercules, USA) and detection of FNR and TROL by ECL with horseradish peroxidase. Antibodies used in immunoblotting detection were raised against maize FNR2 (1:50,000) and maize TROL (1:10,000).
 
-## ΔNADPH fluorescence measurements
+### ΔNADPH fluorescence measurements
 
 Chloroplasts were prepared essentially as described previously (Hanke et al., 2008), with the following modifications. All steps were performed in the dark at 4°C. Leaves of four to six developing plants per genotype (4–5 weeks old) were homogenised in a waring blender in 80 ml 25 mM Hepes-NaOH pH 8.0, 0.33 M sorbitol, 60 mM KCl, 10 mM EDTA, 1 mM MgCl2, 0.4 mM ascorbate, 40 mg bovine serum albumin (BSA) before filtering through muslin and centrifugation for 2 min at 1150 g for 2 min. The pellet was resuspended in 2 ml of the same buffer before centrifuging at 736 g for 2 min. This time the pellet was resuspended in 1 ml of the same buffer before overlaying on a step gradient of 40% above 80% PB-Percoll (5% PEG 4000, 1% BSA in Percoll) in 0.33 M sorbitol, 5 mM Hepes-NaOH pH 7.5, 2 mM EDTA. After centrifuging at 3050 g for 1 min followed by no brake deceleration, intact chloroplasts were extracted from the boundary layer. Chloroplasts were washed twice in extraction buffer without ascorbate or BSA followed by centrifugation at 1700 g and resuspension of the pellet in 200–500 µl extraction buffer without ascorbate or BSA. Between 10 and 20 µg chlorophyll were used in each assay of ΔNADPH fluorescence.
 
 ΔNADPH fluorescence in chloroplast suspensions was performed basically as described for cyanobacteria in Kauny and Sétif, 2014 with the following adaptations. Fluorescence was measured in a volume of 3 ml extraction buffer at 25°C using the NADPH/99-A module of a Dual-PAM. Chloroplasts were dark adapted throughout preparation (about 40 min) and not stirred during the measurement. Gain was set low and damping was set high, while in the dark the measuring frequency was set to 100 Hz, changing to 5000 Hz on illumination. The measuring light intensity was set at 4 (corresponding to 9 µmol photons m−2 s−1). Actinic illumination was with red light from the Dual-PAM at maximum intensity, corresponding to approximately 750 µmol photons m−2 s−1 in the cuvette. Data were collected using the clock cycle function to trigger a run of 10 s dark, 30 s actinic light, 40 s dark recovery. Data shown are averages of 7–15 traces, which were manually checked for anomalies and to ensure that the first and last spectra collected did not differ significantly. Spectra presented are corrected for the constant drift that occurred during illumination. Further information on characterisation of this technique is given in Appendix 1.
 
-## Fitting of ΔNADPH kinetics
+### Fitting of ΔNADPH kinetics
 
-The increase in fluorescence (NADP+ reduction) under illumination is clearly bi-phasic and we fit these kinetics to a model which assumes a first order fluorescence increase kinetics with a fast and slow component,Fdecayt=F∞Aslow1-e-kslowt+Afast1-e-kfasttwhere F∞ is the asymptotic level of fluorescence in the long time limit. The relative amplitudes Aslow and Afast are not independent but related by,Aslow+Afast=1meaning the fit parameters are the rate constants kslow and kfast, Aslow and F∞. No improvement to the fit was obtained by adding further components.
+The increase in fluorescence (NADP+ reduction) under illumination is clearly bi-phasic and we fit these kinetics to a model which assumes a first order fluorescence increase kinetics with a fast and slow component,
 
-The fluorescence decrease (NADPH oxidation) appears to follow simple second-order kinetics. Initially, for generality, Hill type kinetics were assumed,Frect=Fτ-F∞'1+krect-τn+F∞'where τ is the time at which the actinic illumination ceased, Fτ is the fluorescence level at that time, F∞' is the asymptotic level of fluorescence and n. Fixing n=1 (non-cooperative or true second order kinetics) did not alter the fit but significantly reduced the errors on the remaining fit parameters (F∞' and krec).
+$$
+F_{decay}t=F_{∞}A_{slow}1-e^{-k_{slow}t}+A_{fast}1-e^{-k_{fast}t}
+$$
 
-## Cyclic electron flow measurements
+where $F_{∞}$ is the asymptotic level of fluorescence in the long time limit. The relative amplitudes $A_{slow}$ and $A_{fast}$ are not independent but related by,
+
+$$
+A_{slow}+A_{fast}=1
+$$
+
+meaning the fit parameters are the rate constants $k_{slow}$ and $k_{fast}$, $A_{slow}$ and $F_{∞}$. No improvement to the fit was obtained by adding further components.
+
+The fluorescence decrease (NADPH oxidation) appears to follow simple second-order kinetics. Initially, for generality, Hill type kinetics were assumed,
+
+$$
+F_{rec}t=\frac{F_{\tau}-F_{∞}'}{1+k_{rec}t-\tau^{n}}+F_{∞}'
+$$
+
+where $\tau$ is the time at which the actinic illumination ceased, $F_{\tau}$ is the fluorescence level at that time, $F_{∞}'$ is the asymptotic level of fluorescence and $n$. Fixing $n=1$ (non-cooperative or true second order kinetics) did not alter the fit but significantly reduced the errors on the remaining fit parameters ($F_{∞}'$ and $k_{rec}$).
+
+### Cyclic electron flow measurements
 
 Plants were grown under long day conditions and dark incubated for 30 min before transfer into actinic light with 150 µE m−2 s−1 PAR for light acclimation. After 20 s or 5 min of illumination, LEF and CEF were measured by following the relaxation kinetics of the carotenoid electrochromic bandshift at 520 nm (corrected for the signal at 546 nm) using a JTS-10 spectrophotometer (Biologic, France). The ECS spectral change is a shift in the pigment absorption bands that is linearly correlated with the light-induced generation of a membrane potential across the thylakoid membranes (Bailleul et al., 2010). Under steady state continuous illumination, the ECS signal stems from transmembrane potential generation by PSII, the cytochrome b6f complex, and PSI and from transmembrane potential dissipation by the ATP synthase CF0-F1. When light is switched off, reaction centre's activity stops immediately, while ATPase and the cytochrome b6f complex activities remain (transiently) unchanged. Therefore, the initial rate of ECS decay is proportional to the rate of PSI and PSII photochemistry (i.e. to the rate of 'total’ electron flow). This can be calculated dividing this rate (expressed as -ΔI/I per unit of time) by the amplitude of the ECS signal (again expressed as −ΔI/I) induced by the transfer of one charge across the membrane (e.g. one PSI turnover). The rate of CEF can be evaluated using the same approach under conditions where PSII activity is inhibited. Typically, this is done by preventing PSII activity with DCMU. In our experiments, we found that leaf infiltration with DCMU did not result in homogeneous inhibition of PSII, as tested by measuring fluorescence transients in the leaves using an imaging setup (Speedzen, JbeamBio, France), causing high variability and high estimations of CEF (Figure 5—figure supplement 1). Therefore, another approach was employed to evaluate CEF, i.e. exposure to saturating far red light (λ >720 nm), to fully excite PSI with a minimum excitation of PSII. Results were expressed as electrons−1 s−1 and estimated from the amplitude of the electrochromic shift signal upon excitation with a saturating single turnover flash (five ns laser pulse). Total electron flow was measured following a pulse of actinic light (λ = 640 ± 20 nm FWHM) at 1100 μmol photons m−2 s−1 while CEF was measured with a pulse of far red light at the maximum setting (estimated as 1400 μmol photons m−2 s−1 by the manufacturer).
 
-## Chlorophyll fluorescence and P700 absorption
+### Chlorophyll fluorescence and P700 absorption
 
 Chlorophyll fluorescence and P700 absorption were simultaneously analysed using the DUAL-PAM-100 system (Heinz Walz GmbH, Effeltrich, Germany), and parameters calculated as described in the DUAL-PAM handbook (Klughammer and Schreiber, 2008). Plants were first dark incubated for 30 min before determination of F0 as dark fluorescence yield. Change in P700 signal was monitored as the difference in transmittance at 875 nm and 830 nm. The maximum change in P700 signal indicated as Pm was measured by application of far red light for 30 s followed by application of a saturating pulse. We confirmed that Pm was not significantly underestimated in mutants with decreased acceptor limitation at PSI (Supplementary file 2f). In addition the maximum fluorescence yield Fm of dark adapted leaves was determined before illumination. For the dark adapted measurement, plants were directly subjected to high light (1100 µE m−2 s−1 PAR) with saturation pulses applied after 5 s and 20 s. Light acclimated plants were instead illuminated in the DUAL-PAM leaf clip at 150 µE m−2 s−1 PAR for 5 min before application of the 1100 µE m−2 s−1 high light and saturating pulses after 5 s and 20 s. Typical fluorescence and P700 oxidation traces are shown in Figure 5—figure supplement 2. Only data from the pulses applied after 20 s of high light were used to generate the data presented. The maximal fluorescence yield Fm’ or maximum change in P700 signal Pm’ were determined on each saturating pulse, while the current fluorescence yield F was measured before each pulse.
 
-## Accession numbers
+### Accession numbers
 
 Arabidopsis Genome Initiative locus identifiers for the genes mentioned in this article are as follows: maize FNR1, BAA88236; maize FNR2, BAA88237; maize FNR3, ACF85815; Arabidopsis FNR1, AT5G66190; Arabidopsis FNR2, AT1G20020; maize Tic62, ACG28394.1; Arabidopsis Tic62, AT3G18890; maize TROL, ACF79627.1; Arabidopsis TROL, AT4G01050.1.

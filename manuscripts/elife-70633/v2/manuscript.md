@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/03ad39j10 Department of Surgical, Medical and Molecular Pathology and Critical Care Medicine, University of Pisa Pisa Italy
-2. https://ror.org/030za3c40 Laboratoire des Systèmes Perceptifs, Département d'études Cognitives, École Normale Supérieure Paris France
-3. https://ror.org/03ad39j10 Department of Translational Research and New Technologies in Medicine and Surgery, University of Pisa Pisa Italy
-4. https://ror.org/02w8ez808 IRCCS Fondazione Stella Maris Pisa Italy
+1. Department of Surgical, Medical and Molecular Pathology and Critical Care Medicine, University of Pisa Pisa Italy ([ROR:03ad39j10](https://ror.org/03ad39j10))
+2. Laboratoire des Systèmes Perceptifs, Département d'études Cognitives, École Normale Supérieure Paris France ([ROR:030za3c40](https://ror.org/030za3c40))
+3. Department of Translational Research and New Technologies in Medicine and Surgery, University of Pisa Pisa Italy ([ROR:03ad39j10](https://ror.org/03ad39j10))
+4. IRCCS Fondazione Stella Maris Pisa Italy ([ROR:02w8ez808](https://ror.org/02w8ez808))
 
 † Corresponding author
 
@@ -43,7 +43,7 @@ We assessed visual cortical plasticity by measuring the effect of short-term (2 
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/70633/elife-70633-fig1-v2.jpg)
 
-**Figure 1.:** (A) Diagram of the experimental paradigm for the MD night (MDnight) condition. Ocular dominance was measured by means of binocular rivalry (BR) before and after 2 hr of MD. Afterwards, participants went to sleep while their EEG activity was recorded with a 128-electrodes system. BR was measured after 2 hr of sleep and in the morning, after 4 additional hours of sleep. (B) Same as A, but for the control night (Cnight). The experimental procedure was the same as the MDnight, except that participants did not underwent MD. (C) The MD effect (deprivation index) measured before, after 2 hr of sleep and at morning awakening, occurring after 4 additional hours of sleep, in the MDnight (red symbols) and Cnight (black symbols). N=19. Error bars represent 1 ± SEM. Asterisks indicate the significance level (t-test of individual time-points against the value 1) after correction for multiple comparisons: ***p<0.001, **p<0.01, *p<0.05 or non-significant (n.s.).Figure 1—source data 1.
+**Figure 1.:** (A) Diagram of the experimental paradigm for the MD night (MDnight) condition. Ocular dominance was measured by means of binocular rivalry (BR) before and after 2 hr of MD. Afterwards, participants went to sleep while their EEG activity was recorded with a 128-electrodes system. BR was measured after 2 hr of sleep and in the morning, after 4 additional hours of sleep. (B) Same as A, but for the control night (Cnight). The experimental procedure was the same as the MDnight, except that participants did not underwent MD. (C) The MD effect (deprivation index) measured before, after 2 hr of sleep and at morning awakening, occurring after 4 additional hours of sleep, in the MDnight (red symbols) and Cnight (black symbols). N=19. Error bars represent 1 ± SEM. Asterisks indicate the significance level (t-test of individual time-points against the value 1) after correction for multiple comparisons: ***p<0.001, **p<0.01, *p<0.05 or non-significant (n.s.).
 
 Consistently with previous reports (Lunghi et al., 2011; Lunghi et al., 2013), short-term MD shifted ocular dominance in favour of the deprived eye (Figure 1C, red symbols, repeated-measures ANOVA, F(4,72)=6.7, p<0.001, η2=0.27): the deprivation index (DI) was significantly altered just after eye-patch removal (mean DI ± SE = 0.77±0.04, two-tailed, one sample t-test t(18) = –5.41, p_fdr = 0.00017, Cohen’s d=1.24).
 
@@ -54,6 +54,14 @@ Exploratory post hoc analyses revealed however that in the control night the DI 
 That the effect of deprivation is maintained for several hours after eye-patch removal is surprising, because the effect of short-term MD normally decays within 90 min (see also Figure 2—figure supplement 1; Turrigiano, 2017; Lunghi et al., 2013). Our results therefore indicate that sleep maintained visual homeostatic plasticity, stabilizing the ocular dominance change induced by MD and delaying the expected decay until the awakening. Interestingly, the effect of MD (DI) measured before and after 2 hr of sleep did not correlate across subjects (Spearman’s rho = 0.18, p=0.47). This suggests that individual sleep pattern could interact with visual homeostatic plasticity and that the instatement and maintenance of plasticity might be mediated by different neural processes, possibly reflected in different features of NREM sleep.
 
 To rule out the effect of total darkness exposure occurring during sleep, we performed an additional condition during which participants, after MD, laid down in a completely dark room for 2 hr, without sleeping (monocular deprivation morning, MDmorn, Figure 2A). The experiment was performed in the morning, to prevent the occurrence of sleep during the 2 hr of dark exposure. In this experiment (Figure 2B, blue symbols), we found that the effect of MD (mean DI ± SE = 0.71±0.05, two-tailed, one-sample t-test, t(16)=–4.91, p<0.0002, Cohen’s d=1.19) decayed to baseline within 2 hr of darkness (mean DI ± SE = 1.03±0.07, two-tailed, one-sample t-test, t(16) = –0.04, p=0.96, Cohen’s d=0.009), similarly to what observed with normal visual stimulation after patch removal. We then directly compared the decay of the effect of deprivation after 2 hr of sleep (Figure 2B, red symbols) or after 2 hr of dark exposure (Figure 2B, blue symbols) by performing a 2 (TIME, before and after) × 2 (CONDITION, MDnight and MDmorn) repeated-measures ANOVA. We found a significant interaction between the factors CONDITION and TIME (repeated-measures ANOVA, F(1,16) = 4.48, p=0.05, η2=0.22), confirming the specific role of sleep in stabilizing visual homeostatic plasticity induced by MD.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/70633/elife-70633-fig2-v2.jpg)
+
+**Figure 2.:** (A) Diagram of the experimental paradigm for the monocular deprivation (MD) morning condition. After 2 hr of MD, participants spent 2 hr in total darkness, while their EEG activity was recorded. Following the 2 hr of dark exposure, ocular dominance was assessed by binocular rivalry. (B) The deprivation index measured before and after 2 hr of dark exposure without sleep performed in the MD morning session (blue symbols) and before and after 2 hr of sleep in the MD night session (red symbols), for the 17 participants who performed both conditions. Error bars represent 1 ± SEM, the small dots represent individual subjects, the big dots represent the average.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70633/elife-70633-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The effect of 2 hr of monocular deprivation (MD) (deprivation index) on ocular dominance measured either early in the morning (orange symbols) or late in the evening (black symbols). The MD effect was significantly larger when deprivation was performed in the morning (repeated-measures ANOVA, CONDITION: F(1,8)=6.87, p=0.031, η2=0.46), indicating a lower plastic potential of the visual cortex in the evening. Error bars represent 1 ± SEM, N=9.
 
 The 2 hr of sleep and dark exposure took place at different times of the day, one late at night and the other one early in the morning. To rule out a possible influence of the circadian rhythm on homeostatic plasticity and its decay, we performed a control experiment in which we measured the effect of 2 hr of MD early in the morning or late at night in a separate group of adult volunteers. We found that the dynamics of the MD effect were similar for the morning and evening sessions, as in both cases ocular dominance returned to baseline levels within 120 min (repeated-measures ANOVA, TIME*CONDITION: F(4,32) = 1.08, p=0.38, η2=0.12). Moreover, the MD effect was significantly larger when deprivation was performed in the morning (Figure 2—figure supplement 1, repeated-measures ANOVA, CONDITION: F(1,8)=6.87, p=0.031, η2=0.46), indicating a lower plastic potential of the visual cortex in the evening. Taken together, these results indicate that the maintenance of the MD effect is specific to sleep. Moreover, the lower plastic potential observed in the evening indicates that the role of NREM sleep in stabilizing homeostatic ocular dominance plasticity might be underestimated.
 
@@ -66,6 +74,42 @@ Table in Supplementary file 1 shows descriptive statistics of sleep architecture
 Given previous evidence of ocular dominance homeostatic plasticity at level of early visual cortex (Binda et al., 2018), we analysed the EEG rhythms and patterns in an extended occipital ROI reflecting the activity of the majority of primary and associative visual areas. We compared the changes over the ROI from the control to experimental night of each feature. A control ROI was selected in correspondence of the sensory-motor cortex (Figure 3—figure supplement 1).
 
 Large ROIs have the advantage to compensate for the individual large variations of source dipole localization across visual areas and to decrease uncorrelated neuronal noise by averaging. We also performed single electrode analysis obtaining similar, although noisier, results (see scalp maps in Figures 3 and 4, and single electrode correlations distributions in Figure 3—figure supplement 2 and Figure 4—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70633/elife-70633-fig3-v2.jpg)
+
+**Figure 3.:** (A) The changes from control to MD night of the rate of SSOs was correlated (N=15) with the deprivation index measured before sleep (DI before). Scatterplot shows individual values averaged within the occipital ROI (Spearman’s r with the p-value shown as an inset in the scatterplot). Colour of dots spans from black to red as a function of individual plasticity. No significant correlation appeared when considering the control ROI defined in the sensory-motor cortex. The scalp map shows the spatial distribution of correlation as estimated electrode by electrode; within the map, yellow and black dots mark electrodes belonging to the occipital and sensory-motor ROIs, respectively. (B) Same as A for the steepness of slope+ of SSOs; (C) same as A for the spindle power.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70633/elife-70633-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Yellow crosses mark electrodes belonging to the occipital ROI, red crosses mark electrodes belonging to the prefrontal ROI, and black crosses mark electrodes belonging to the sensory-motor control ROI.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/70633/elife-70633-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Coherence between electrodes within each ROIs for the features in Figure 3. Each dot corresponds to an electrode within the indicated ROI. Only electrodes belonging to the occipital ROI showed significant Spearman correlations with DI measured before sleep. Two statistical significance levels are shown.(p<0.01, p<0.05).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/70633/elife-70633-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Correlation (N=15) between the deprivation index measured before sleep (DI before) and the changes from the control night to the MD night of the mean sleep slow oscillations (SSOs) amplitude. Scatterplot of the SSOs amplitude averaged over the occipital ROI (yellow crosses mark electrodes belonging to the ROI) with the DI. Dot’s colour changes from black to red as a function of DI. Spearman correlation (rs) is shown when significant (p<0.05, FDR-corrected). The control ROI defined in the sensory-motor cortex (black crosses) shows no significant correlation with DI. The scalp map shows the spatial distribution of correlation; (B) same as A for the sigma activity power; (C) same as A for the baseline sigma rhythm expressed before SSO events; (D) same as A for the power of slow wave activity. For (D) no significant correlation was observed when averaging over both ROIs.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/70633/elife-70633-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** No significant correlations (p<0.05, FDR-corrected) between EEG rhythms power and visual plasticity indices were observed.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/70633/elife-70633-fig4-v2.jpg)
+
+**Figure 4.:** The changes from control to MD night of the spindle density were correlated (N=15, p<0.05, FDR-corrected) with the deprivation index measured after sleep (DI after). Scatterplot shows individual values averaged within the prefrontal ROI (Spearman’s r with the p-value shown as an inset in the scatterplot). Colour of dots spans from black to red as a function of individual DI after. No significant correlation appeared when considering ROIs defined in the occipital and in sensory-motor cortex. The scalp map shows the spatial distribution of correlation as estimated electrode by electrode over the scalp; within the map yellow, black, and red dots mark electrodes belonging to the occipital, sensory-motor, and prefrontal ROIs, respectively.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/70633/elife-70633-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Coherence between electrodes within each ROIs for spindle density (Figure 4). All but one of the electrodes belonging to the prefrontal ROI showed a significant (p>0.01) Spearman correlation (N=15) with DI measured after sleep. Two statistical significance levels are shown.(p<0.01, p<0.05).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/70633/elife-70633-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Correlation (N=15) between the deprivation index measured after sleep (DI after) and the changes from the control night to the MD night of the slow wave activity power averaged over the prefrontal ROI. No electrodes in the defined ROIs (black crosses: sensory-motor control ROI, yellow crosses: occipital ROI, red crosses: prefrontal ROI) show significant correlation with the DI. Dot’s colour changes from black to red as a function of DI. The scalp map shows the spatial distribution of correlation. (B) same as A for the sigma activity power; (C) same as A for the occurrence of sleep slow oscillations (SSOs); (D) same as A for the steepness of slope+ of SSOs.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/70633/elife-70633-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Correlation (N=15) analysis between EEG features changes within the sleep cycle and residual eye dominance plasticity measured at the end of the 2 hr of sleep. To perform the analysis, we (1) partitioned sleep slow oscillation (SSO) and spindle events into tertiles according to their occurrence, (2) estimated the average measures of events belonging to the first and last tertile, and considered the variation between tertiles as an estimate of the changes across the 2 hr of sleep. Finally, we tested whether there is a consistent relationship between measures of individual retained plasticity (DI after) and changes in SSO and sleep spindles across the sleep cycle within the three ROIs. None of the parameters considered in the three ROIs have shown significant (p < 0.05, after false discovery rate [FDR] correction) associations with the individual DI after sleep. (A) Correlation between the changes of SSO peak to peak amplitude (NP amp) from the early sleep to the late sleep within the 2 hr and the DI after. Scatterplot shows individual values averaged within the prefrontal, sensory-motor, and occipital ROIs. No significant correlations appeared when considering any ROIs. The scalp map shows the spatial distribution of Spearman’s correlation (rs) for each electrode; (B) same as A for the spindle power; (C) same as A for the steepness of SSO slope+; (D) same as A for the SSO baseline sigma. All other details as in Figure 3—figure supplement 3.
 
 We never observed any main changes of the sleep rhythms or features between MDnight and Cnight recordings, in any of the ROIs (Table in Supplementary file 2). However, we observed a strong correlation between changes in sleep features and ocular dominance plasticity measured before sleep in the occipital ROI (Figure 3 and Figure 3—figure supplement 2 for the coherence of correlations between electrodes within ROIs).
 
@@ -85,7 +129,7 @@ Finally, we considered the variations of EEG parameters during the 2 hr of sleep
 
 We investigated the interplay between visual homeostatic plasticity and sleep in healthy adult humans after a short MD period. We report for the first time that different features of NREM sleep affect and are affected by homeostatic ocular dominance plasticity in adult humans: the plastic potential of the visual cortex is reflected by the expression of SSO and sigma activity in occipital areas and sleep consolidates the effect of short-term MD via increased spindles density in prefrontal area.
 
-## Role of sleep in supporting visual plasticity
+### Role of sleep in supporting visual plasticity
 
 We found that sleep promotes the stabilization of visual homeostatic plasticity induced by 2 hr of MD: the deprived eye boost observed after MD, which normally decays within 90 min of wakefulness (Lunghi et al., 2013; Zhou et al., 2013; Lunghi et al., 2011), is maintained by sleep for up to 6 hr after eye-patch removal. Importantly, this effect was specifically induced by sleep: 2 hr of dark exposure after MD did not prevent the decay of the effect. Finally, we found that the circadian rhythm did not influence the dynamics of the effect, as a similar time course of plasticity was observed when MD was performed early in the morning or late at night.
 
@@ -99,7 +143,7 @@ Interestingly, we found that the influence of sleep on ocular dominance plastici
 
 Altogether, consistent with other results, we show that activity in non-visual areas plays a role in modulating the decay of short-term visual plasticity in adult humans and that this activity might be crucial to promote the stabilization of the plastic changes induced by MD that we observed in amblyopic patients (Lunghi et al., 2019b). In amblyopia, the boosting effect after MD was stabilized across consecutive days with sleep occurring in-between sessions and became permanent after performing short-term MD over 4 weeks.
 
-## Sleep and the plastic potential of visual cortex
+### Sleep and the plastic potential of visual cortex
 
 We found that the expression of SSO in visual areas reflects the interindividual variability in visual homeostatic plasticity: their rate increased and their shape changed in occipital sites proportionally to the shift in ocular dominance induced by MD, as measured immediately before sleep.
 
@@ -111,13 +155,13 @@ The expression of oscillating activity in the sigma band also changed as a funct
 
 Overall, these results suggest that SSOs and sigma activity reflect the degree of homeostatic plasticity induced by short-term MD. Both homeostatic plasticity (Desai et al., 2002; Maffei and Turrigiano, 2008) and SSO (Luppi et al., 2017; Sanchez-Vives et al., 2010) are linked to GABAergic inhibition, the observed effect could therefore in principle be mediated by a change in excitation/inhibition balance in the visual system. Importantly, in humans, GABA concentration measured after 2 hr of MD in V1 decreased proportionally to the observed ocular dominance shift (Lunghi et al., 2015b), and SWA expression increases in response to GABA agonists administration (Faulhaber et al., 1997). Interestingly, a recent study (Tamaki et al., 2020) reported that complementary changes in the excitation/inhibition balance measured in the visual cortex of adult humans during NREM and REM sleep are correlated with visual plasticity induced by perceptual learning, further pointing to a leading role of GABAergic inhibition in mediating these two phenomena. We speculate that the alteration of SSO shape and density observed at the occipital level during the sleep immediately following MD might reflect the change in GABA concentration induced by deprivation and be a neurophysiological marker of the interindividual variability in the level of plasticity in adult humans.
 
-## Conclusions
+### Conclusions
 
 Sleep oscillatory activity can reflect the plastic potential of the occipital cortex: people highly susceptible to a visual manipulation (short-term MD) affecting V1 activity show increased SSO and sigma activity in occipital sites. Sleep can also extend for many hours an otherwise transient unbalance of visual cortical activity, and sleep spindles in prefrontal regions appear to support the process as subjects exhibiting stronger maintenance had increased frontopolar sleep spindle density, as it occurs for many memory consolidation processes.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Nineteen healthy volunteers (mean age ± SD 24.8±3.7 years, range 21–33 years; 8 males), participated in the main study. The eligibility of each volunteer was verified by semi-structured interviews conducted by a senior physician and psychiatrist (AG) based on the following inclusion criteria: no history of psychiatric/neurological disorders (including sleep disorders), being drug free for at least 1 month. All subjects had normal or corrected-to-normal visual acuity (ETDRS charts). Enrolled volunteers received the following instructions to be accomplished in each day of the experimental procedures: to avoid any alcohol intake, coffee intake in the evening before sleep sessions and physical workout just before all the experimental sessions (both the night and the morning sessions). All subjects performed the three experimental conditions, except for one subject, who did not perform the control night condition, and two subjects who did not perform the MD morning condition, because of personal problems. Four participants were excluded from the EEG analysis because poor signal quality in the EEG signal occurred during the sleep recording.
 
@@ -127,29 +171,29 @@ Nine additional volunteers (mean age ± SD 25.7±5.2 years, range 20–37 years;
 
 Source code 1 include program codes used to produce statistics and related outputs.
 
-## Monocular deprivation
+### Monocular deprivation
 
 MD was performed by applying a custom-made eye-patch on the dominant eye. Eye dominance was defined according to the BR measurement performed in the baseline (11 right eyes were deprived in the main experiment and 5 right eyes in the control experiment). The eye-patch was made of a translucent plastic material that allows light to reach the retina (attenuation 15%) but completely prevents pattern vision. MD lasted 2 hr, during which participants stayed in the laboratory control room under experimenters’ supervision and did activities such as reading and working on the computer. In the last half hour all subjects underwent the EEG montage so that at the patch removal, after the acquired eye dominance measurement, they could go to sleep without any delay.
 
-## Binocular rivalry
+### Binocular rivalry
 
-## Main study
+#### Main study
 
 Visual stimuli were generated by the ViSaGe stimulus generator (CRS, Cambridge Research Systems), housed in a PC (Dell) and controlled by Matlab programs. Visual stimuli were two Gaussian-vignetted sinusoidal gratings (Gabor Patches), oriented either 45° clockwise or counterclockwise (size: 2s=2°, spatial frequency: 2 cpd, contrast: 50%) displayed on a linearized 20 inch Clinton Monoray (Richardson Electronics Ltd., LaFox, IL) monochrome monitor, driven at a resolution of 1024×600 pixels, with a refresh rate of 120 Hz. To facilitate dichoptic fusion stimuli were presented on a uniform grey background (luminance: 37.4 cd/m2, CIE: 0.442 0.537) in central vision with a central black fixation point and a common squared frame. Subjects received the visual stimuli sitting at the distance of 57 cm from the display through CRS Ferro-Magnetic shutter goggles that occluded alternately one of the two eyes each frame.
 
 Each BR experimental block lasted 3 min. For each block, after an acoustic signal (beep), the BR stimuli appeared. Subjects reported their perception (clockwise, counter clockwise, or mixed) by continuously pressing with the right-hand one of three keys (left, right, and down arrows) of the computer keyboard. At each experimental block, the orientation associated to each eye was randomly varied so that neither subject nor experimenter knew which stimulus was associated with which eye until the end of the session, when it was verified visually.
 
-## Control experiment
+#### Control experiment
 
 The visual stimuli were generated in Matlab (R2020b, The MathWorks Inc, Natick, MA) using Psychtoolbox-3 (Brainard, 1997) running on a PC (Alienware Aurora R8, Alienware Corporation, Miami, FL) and a NVIDIA graphics card (GeForce RTX2080, Nvidia Corporation, Santa Clara, CA). Visual stimuli were presented dichoptically through a custom-built mirror stereoscope and each subject’s head was stabilized with a forehead and chin rest positioned 57 cm from the screen. Visual stimuli were two sinusoidal gratings oriented either 45° clockwise or counterclockwise (size: 2°, spatial frequency: 2 cpd, contrast: 50%), presented on a uniform grey background (luminance: 148 cd/m2, CIE x=0.294, y=0.316) in central vision with a central white fixation point and a common squared white frame to facilitate dichoptic fusion. The stimuli were displayed on an LCD monitor (BenQ XL2420Z 1920×1080 pixels, 144 Hz refresh rate, Taipei, Taiwan). Each BR experimental block lasted 3 min. For each block, after an acoustic signal (beep), the BR stimuli appeared. Subjects reported their perception (clockwise, counterclockwise, or mixed) by continuously pressing with the right-hand one of three keys (left, right, and down arrows) of the computer keyboard. At each experimental block, the orientation associated with each eye was randomly varied.
 
-## High-density EEG recordings
+### High-density EEG recordings
 
 EEG was recorded using a Net Amps 300 system (Electrical Geodesic Inc, Eugene, OR) with a 128-electrodes HydroCel Geodesic Sensor Net. The EEG system employs a high spatial density electrode system with full head coverage including periocular, cheekbone, and neck sensors. This allows the detection of both vertical and horizontal eye movements and muscle tone (both from the zygomaticus major muscles and upper trapezius muscles on the neck) directly from the EEG cap. During the 2 hr of recordings, electrode impedances were kept below 50 KΩ and signals were acquired with a sampling rate of 500 Hz, using the Electrical Geodesic Net Station software, Version 4.4.2. EEG recordings were analysed using tailored codes written in Matlab (MathWorks, Natick, MA) and EEGLAB toolbox functions (Delorme and Makeig, 2004).
 
-## Experimental procedures
+### Experimental procedures
 
-## Main study
+#### Main study
 
 Experimental procedure comprises three sessions, and for each volunteer, sessions were completed within a month and at least 1 week apart. The experiment took place in a dark and quiet room, with a comfortable bed equipped for EEG recordings and the apparatus for measuring BR placed next to the bed. Each volunteer spent two nights (from 9:30 PM to 8 AM) and a morning (from 9 AM to 2 AM) at the laboratory: (1) an MDnight, in which participants underwent 2 hr of MD before sleep; (2) a Cnight, in which no MD was performed before sleep, but participants waited 2 hr in the laboratory performing the same activities and undergoing eye dominance measures at the same times as in MDnight; (3) an MDmorn, during which subjects, after the MD, lied in the same bed of night sessions, resting in the dark for 2 hr, avoiding sleeping, in order to study the acquired eye dominance extinction without visual stimuli. The order of the night sessions was randomized and balanced within the experimental group.
 
@@ -161,7 +205,7 @@ During the night sessions, EEG was acquired from the in-bed time until subjects 
 
 For the MDmorn session, the subject was welcomed in the laboratory around 9 AM, shortly thereafter he/she was tested for the first BR measurement and then subjected to MD for 2 hr, during which he/she could read or watch movies. Consequently around 11.30 the patch was removed, the volunteer was tested for a second BR measurement immediately followed by 2 hr of resting by lying in bed in the dark. After 2 hr (1.30 PM), the BR was again measured multiple times according to a sequence suitable for reconstructing the extinction curve of the MD effect (the sequence lasted 30 min). In the MDmorn session, none of the subjects were allowed to feel asleep as EEG was monitored in real time and, in case of drowsiness signs (EEG slowing to theta), a bell tolled in the resting room. Having done this session in the morning, the use of the bell was extremely occasional: some subjects never showed signs of falling asleep, others were alerted at most three times with the bell in the last part of the resting state. A diagram of the experimental paradigm for the MDnight is reported in Figure 1A.
 
-## MDnight and Cnight EEG processing
+### MDnight and Cnight EEG processing
 
 To prepare EEG signals for the planned analysis, they underwent some pre-processing. EEG pre-processing and analyses were performed using tailored codes written in Matlab (MathWorks, Natick, MA); scalp maps were obtained using EEGLAB Toolbox functions (Delorme and Makeig, 2004).
 
@@ -171,37 +215,41 @@ Sleep macrostructure was evaluated by extracting a set of time-domain parameters
 
 For the EEG signals analysis, only segments classified as NREM (N2 and N3) and free of artefacts were considered. For power band content of NREM sleep, two frequency bands of interest were considered: SWA (0.5–4 Hz) and sigma (σ: 9–15 Hz). Power densities were estimated applying a Hamming-windowed FFT on 10 s consecutive EEG segments and log-transformed (dB). For each segment, electrode and band, the absolute power was estimated by averaging over its frequency bins. The absolute power of each band and electrode was then obtained by averaging among segments.
 
-## MDmorn EEG processing
+### MDmorn EEG processing
 
 For the MDmorn session, EEG was pre-processed for managing diffuse artefacts with reconstruction of virtually clean traces. Thus, EEG signals were high-pass filtered at 0.1 Hz (Chebyshev II filter) and notch filtered at 50 Hz and its first harmonic (100 Hz). Channels located on the forehead and cheeks which mostly contribute to movement-related noise were discarded, thus retaining 107 channels out of 128 (Piarulli et al., 2010). Epochs with signals exceeding 100 μV were automatically discarded; retained signals were visually inspected for the removal of artefacts and noisy channels. Rejected signals were substituted with signals obtained via spline interpolation (Junghöfer et al., 2000) and further submitted to the Independent Component Analysis for separating and removing components expressing eye movements, heart beats, line, and channel noise – component selection also supported by the AI system of ICLabel (Pion-Tonachini et al., 2019). After artefact removal procedures, EEG signals were re-referenced to the average of the mastoid potentials (Piarulli et al., 2010; Laurino et al., 2014).
 
 The artifact-free EEG segments analysed for estimating power band content in five frequency bands of interest were considered: theta (4–8 Hz), alpha (8–12 Hz), low beta (12–20 Hz), high beta (20–30 Hz), and gamma (30–45 Hz). Power densities were estimated by applying a Hamming-windowed FFT on 4 s consecutive EEG segments and log-transformed (dB). For each segment, electrode and band, the absolute power was estimated by averaging over its frequency bins. The absolute power of each band and electrode was then obtained by averaging among segments.
 
-## SSO detection and characterization
+### SSO detection and characterization
 
 SSO events within NREM sleep periods were detected and characterized using a previously published and validated algorithm (Piarulli et al., 2010; Menicucci et al., 2009). In summary, the algorithm first identifies full-fledged SSOs: each wave should comprise (1) two zero crossings separated by 0.3–1.0 s, the first one having a negative slope; (2) a negative peak between the two zero crossings with a voltage less than −80 μV; (3) a negative-to-positive peak amplitude of at least 140 μV. An SSO event is defined when simultaneous SSOs (tolerance of up to 200 ms delay between negative wave peaks) are recognized on multiple channels Then, detected SSO events are completed by clustering full-fledged SSOs with concurrent similar waves, even if sub-threshold detected on the other EEG channels. These detection criteria naturally include all K-complexes (Massimini et al., 2004) but can also complete detection with otherwise neglected small waves.
 
 For each subject, night session and electrode channel, SSOs were characterized by the following parameters: detection rate (number of waves per minute), negative-to-positive peak amplitude (NP amp), slope from the negative peak (slope+) (Menicucci et al., 2013). Moreover, the sigma activity (9–15 Hz) expressed in the 1 s window preceding each SSO was estimated as a known thalamocortical entrainment marker functioning as precursor of SSOs emergence (Menicucci et al., 2015).
 
-## Sleep spindle detection and characterization
+### Sleep spindle detection and characterization
 
 The sleep spindle recognition was carried out according to the approach proposed and validated by Ferrarelli et al., 2007, with some minor adaptations; the actual procedure is summarized below.
 
 EEG data for all NREM sleep periods were band-pass filtered between 12 and 16 Hz (–20 dB at 11 and 17 Hz) and for each channel, the upper and lower envelopes of the filtered signal were derived. The spindle detection was based on the signal derived as the point-by-point distance between the upper and the lower envelopes (signal amplitude). Because signal amplitude varies between channels, for each NREM period and channel a value was estimated as the mean signal amplitude increased by twice its standard deviation. Thus, for each channel a threshold was defined as the weighted average over the values calculated for each period, with the weights corresponding to the period lengths. Sleep spindles were thus identified as the fluctuations in the amplitude signal exceeding two times the threshold. Based on the detected spindles, for each EEG channel, the measures characterizing each sleep recording were the density (spindle events per time unit) and the spindle power. The spindle power was derived as the average over the spindle events of the sigma band (12–16 Hz) power of each detected wave.
 
-## Binocular rivalry
+### Binocular rivalry
 
 The perceptual reports recorded through the computer keyboard were analysed using Matlab, the mean phase duration and the total time of perceptual dominance of the visual stimuli presented to each eye and mixed percepts were computed for each participant and each experimental block. The 3-min blocks acquired after the morning awakening were binned as follows: 0–8, 10–18, 30 min.
 
-The effect of MD was quantified by computing a DI, The effect of MD was quantified by computing a DI, using the same formula in Lunghi et al., 2015b, which demonstrated that DI correlates with the change in GABA concentration in the visual cortex of adult participants. The DI summarizes in one number the change in the ratio between deprived and non-deprived eye mean phase duration following MD relative to baseline measurements according to the following equation:(1)DeprivationIndex(DI)=(baseMPDdep−eye/depMPDdep−eye) ∗(depMPDNdep−eye/baseMPPDNdep−eye)
+The effect of MD was quantified by computing a DI, The effect of MD was quantified by computing a DI, using the same formula in Lunghi et al., 2015b, which demonstrated that DI correlates with the change in GABA concentration in the visual cortex of adult participants. The DI summarizes in one number the change in the ratio between deprived and non-deprived eye mean phase duration following MD relative to baseline measurements according to the following equation:
+
+$$
+DeprivationIndex(DI)=(baseMPD_{dep−eye}/depMPD_{dep−eye}) ∗(depMPD_{Ndep−eye}/baseMPPD_{Ndep−eye})
+$$
 
 In Equation 1, MPD is the mean phase duration computed in seconds, base stands for baseline measurements, dep for measurements acquired after MD. A DI value equal to 0 represents no change in the ratio between dominant and non-dominant eye mean phase duration, while a value >1 represents a decrease in dominant eye predominance and a value <1 an increase in dominant eye predominance during BR.
 
-## Control experiment
+### Control experiment
 
 In order to investigate the influence of the circadian rhythm on visual homeostatic plasticity, the effect of MD was tested for each participant in two different days, once in the morning and once in the evening (the order of the conditions was counterbalanced across participants). In the morning session, the 2 hr MD started at 9 AM, while in the evening session, MD started at 8 PM. Each deprivation session was preceded by 2×3 min baseline BR blocks. After patch removal, we measured BR continuously for 18 min in four separate 180 s blocks, giving a short break every 2 min. Three-minute blocks of rivalry were tested again 30, 45, 60 90, and 120 min after restoration of normal binocular sight. The 3-min blocks acquired after MD were binned as follows: 0–8, 10–18, 30–48, 60–93, and 120–123 min. Each participant therefore spent one morning (from 8.30 AM to 1 PM) and one evening (from 7.30 PM to 0.00 AM) in the lab. All the procedures and analyses were the same as the main study.
 
-## Statistical analyses
+### Statistical analyses
 
 The variation of DIs measured during the two-night experiments was tested using repeated-measures ANOVA with one factor (TIME) with five levels (before, after, morning1, morning2, morning3). In order to compare directly the decay of the deprivation effect in the MDnight and in the MDmorn condition, we used a repeated-measures ANOVA with two factors: TIME (with two levels: before and after) and CONDITION (MDnight and MDmorn). For the control experiment, we used a repeated-measures ANOVA with two factors: TIME (with five levels corresponding to the five measurements obtained after deprivation, i.e, before, after, morning1, morning2, morning3) and CONDITION (MDnight and MDmorn). One-sample two-tailed t-tests tests were used for post hoc tests, against the H0 mean = 1. The Benjamini and Hochberg, 1995, correction for multiple comparisons was applied for post hoc tests, effect size was estimated computing Cohen’s d.
 

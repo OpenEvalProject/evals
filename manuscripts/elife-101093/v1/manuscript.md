@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01g9ty582 Department of Physiology, Faculty of Medicine, Semmelweis University Budapest Hungary
+1. Department of Physiology, Faculty of Medicine, Semmelweis University Budapest Hungary ([ROR:01g9ty582](https://ror.org/01g9ty582))
 
 † Corresponding author
 

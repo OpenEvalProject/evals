@@ -20,7 +20,7 @@
 
 ## Abstract
 
-Sucrose-non-fermenting-1-related protein kinase-2s (SnRK2s) are critical for plant abiotic stress responses, including abscisic acid (ABA) signaling. Here, we develop a genetically encoded reporter for SnRK2 kinase activity. This sensor, named SNACS, shows an increase in the ratio of yellow to cyan fluorescence emission by OST1/SnRK2.6-mediated phosphorylation of a defined serine residue in SNACS. ABA rapidly increases FRET efficiency in N. benthamiana leaf cells and Arabidopsis guard cells. Interestingly, protein kinase inhibition decreases FRET efficiency in guard cells, providing direct experimental evidence that basal SnRK2 activity prevails in guard cells. Moreover, in contrast to ABA, the stomatal closing stimuli, elevated CO 2 and MeJA, did not increase SNACS FRET ratios. These findings and gas exchange analyses of quintuple/sextuple ABA receptor mutants show that stomatal CO 2 signaling requires basal ABA and SnRK2 signaling, but not SnRK2 activation. A recent model that CO 2 signaling is mediated by PYL4/PYL5 ABA-receptors could not be supported here in two independent labs. We report a potent approach for real-time live-cell investigations of stress signaling.
+Sucrose-non-fermenting-1-related protein kinase-2s (SnRK2s) are critical for plant abiotic stress responses, including abscisic acid (ABA) signaling. Here, we develop a genetically encoded reporter for SnRK2 kinase activity. This sensor, named SNACS, shows an increase in the ratio of yellow to cyan fluorescence emission by OST1/SnRK2.6-mediated phosphorylation of a defined serine residue in SNACS. ABA rapidly increases FRET efficiency in N. benthamiana leaf cells and Arabidopsis guard cells. Interestingly, protein kinase inhibition decreases FRET efficiency in guard cells, providing direct experimental evidence that basal SnRK2 activity prevails in guard cells. Moreover, in contrast to ABA, the stomatal closing stimuli, elevated CO2 and MeJA, did not increase SNACS FRET ratios. These findings and gas exchange analyses of quintuple/sextuple ABA receptor mutants show that stomatal CO2 signaling requires basal ABA and SnRK2 signaling, but not SnRK2 activation. A recent model that CO2 signaling is mediated by PYL4/PYL5 ABA-receptors could not be supported here in two independent labs. We report a potent approach for real-time live-cell investigations of stress signaling.
 
 ## Introduction
 
@@ -38,9 +38,17 @@ Here, using AKS1 and an Arabidopsis 14-3-3 protein, GF14phi, we describe the dev
 
 ## Results
 
-## Construction of SnRK2 protein kinase activity sensor
+### Construction of SnRK2 protein kinase activity sensor
 
 In order to attempt production of a genetically encoded biosensor that would report SnRK2 kinase activity in Arabidopsis, we used a 48 amino acid domain surrounding the serine-30 residue of the Arabidopsis ABA-RESPONSIVE KINASE SUBSTRATE1 transcription factor (AKS1, At1g51140) (Takahashi et al., 2013). Furthermore, an AKS1 binding domain was inserted into the construct encoding the Arabidopsis full length 14-3-3 protein, GF14phi (267 amino acids). AKS1 has been shown to be phosphorylated by SnRK2s at the serine-30 residue (Takahashi et al., 2017). 14-3-3 protein is known to bind to phosphoserine/threonine-containing proteins through amino acid binding motifs, including RxxpSxP (Sluchanko et al., 2017). 14-3-3 protein binds to the serine-30 residue of AKS1 only when Ser-30 is phosphorylated (Takahashi et al., 2013). The main components of the designed biosensor from N- to C- terminus end are the YPet (YFP variant) fluorescent protein (Day and Davidson, 2009), the 14-3-3 phosphopeptide-binding domain, 244 amino acids of an EV linker, 48 amino acids of the Arabidopsis AKS1 transcription factor and Turquoise GL cyan fluorescent protein (Figure 1A). As a control, we also generated a SNACSS785A mutant isoform, in which the AKS1-Ser-30 residue is substituted with a non-phosphorylatable alanine (Ala) in the AKS1 domain.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig1-v2.jpg)
+
+**Figure 1.:** (A) Domain structure of the SNACS protein: YPet and Turquoise GL are yellow and cyan fluorescent proteins. The full coding region of the phosphoserine/threonine binding 14-3-3 GF14phi protein (At1g35160) was inserted, EV linker is a 244 amino acid length flexible linker domain, and AKS1 is a 48-amino-acid segment of the Arabidopsis AKS1 transcription factor protein. aa, amino acid. (B) Simplified model of SNACS reporter function. Phosphorylation of the sensor within the AKS1 domain is predicted to produce a conformational shift that increases Förster resonance energy transfer (FRET) efficiency due to the enhanced affinity of the 14-3-3 domain for the phosphorylated form of the substrate domain. (C) In vitro phosphorylation assay. SNACS (WT) and SNACSS785A (S785A) were incubated in the presence or absence of GST-OST1/SnRK2.6 protein kinase or GST-CPK6. Proteins were separated on a gel and the incorporation of 32P into the substrates was evaluated via autoradiography (upper panel). The lower panel shows a loading control stained with Coomassie brilliant blue. (D) and (E) in vitro FRET assays using SNACS performed in the presence of GST-OST1 or GST-OST1D140A (inactive OST1 kinase version). SNACS alone controls in D and E were from the same experiments shown in the two panels, as experiments were performed in parallel. The emission spectra of SNACS produced by excitation of the Turquoise GL domain with 434 nm light are shown. (F) In vitro FRET assays using SNACSS785A mutant reporter performed in the presence or absence of GST-OST1. Emission spectra of the SNACS reporter produced by excitation of the Turquoise GL domain with 434 nm light are shown.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The SNACS protein or the control SNACSS785A isoform was incubated in vitro with GST-OST1, GST-OST1D140A (inactive OST1), GST-CPK6 or GST-SnRK2.3 for 2 hr, respectively. The ratio was calculated from fluorescence intensities of YPet (data points, 525–531 nm) over Turquoise GL (data points, 471–477 nm). (A) and (B) FRET ratios of in vitro FRET assays from three repeats using SNACS. SNACS alone controls in A and B were from the same three experiments shown in the two panels, as experiments were performed in parallel. Error bars denote mean ± SD. n = 3 experiments (*p=0.0418; ns = not significant p=0.4214; Student’s t-test). (C) In vitro FRET assays from three repeats using SNACSS785A. Error bars denote mean ± SD. n = 3 experiments (ns = not significant p=0.115; Student’s t-test). (D) In vitro FRET assays using SNACS with CPK6 or SnRK2.3. Means with different letters are grouped based on one-way ANOVA and Tukey’s test, p<0.05 (n = 3 independent experiments). (E) In vitro FRET assays using SNACS reporter performed in the presence of two concentrations of GST-OST1 (4 µg and 8 µg). Double OST1 denotes 8 µg GST-OST1. Note that the SNACS and ‘SNACS+OST1’ control trace in panel E is the same as the SNACS and ‘SNACS+OST1’ trace in Figure 1D, as these data were obtained within the same data set.
 
 A hypothetical simplified working model of the biosensor is outlined in Figure 1B: When the sensor is in an unphosphorylated state, the 14-3-3 domain was predicted to have a low affinity for the AKS1 substrate resulting in a low ratio of YPet to Turquoise GL fluorescent emission under the Turquoise GL excitation. However, when the AKS1 Ser-30 in this sensor is phosphorylated, the 14-3-3 domain was hypothesized to bind to the phosphorylated AKS1 region. Based on this working model, we tested this sensor to determine whether it can function as a readout of SnRK2 protein kinase activity.
 
@@ -48,37 +56,117 @@ We performed in vitro phosphorylation assays. The results showed that the OST1/S
 
 Consistent with the above results, the mutant SNACSS785A isoform with the AKS1 Ser-30-Ala mutation did not show FRET ratio changes after an incubation with the OST1/SnRK2.6 protein kinase upon Turquoise GL excitation (Figure 1F and Figure 1—figure supplement 1C). In additional experiments, SnRK2.3, another protein of SnRK2 family, induced a SNACS FRET ratio increase as well (Figure 1—figure supplement 1D). In contrast, the highly active CPK6 protein kinase (Brandt et al., 2012), did not increase the FRET ratio (Figure 1—figure supplement 1D). Taken together, these results indicate that SNACS shows an increase of FRET ratio based on a phosphorylation of the AKS1 domain by SnRK2 protein kinases in vitro. Furthermore, the AKS1 Ser-30-Ala mutation in SNACS disrupts this response in vitro (Figure 1C,F and Figure 1—figure supplement 1C).
 
-## SNACS reports SnRK2 activity dynamics in plant cells
+### SNACS reports SnRK2 activity dynamics in plant cells
 
 We next investigated the functionality of SNACS in planta by performing live cell imaging. Transient expression experiments using the SNACS reporter in Nicotiana benthamiana were performed. SNACS driven by the cauliflower mosaic virus 35S promoter was co-expressed with pUBQ10:OST1-6xHis-3xFLAG(HF) (Waadt et al., 2015) in Nicotiana benthamiana by co-infiltration. Emission ratio images were recorded 3 days after infiltration. We immobilized abaxial intact leaf epidermal tissues on glass-bottom dishes, and then identified epidermal cells showing fluorescence. Interestingly, the application of ABA caused time-resolved emission ratio (YPet to Turquoise GL emission) increases in N. benthamiana epidermal cells (Figure 2A,C,D) (n = 3 experiments; 11–13 cells imaged in each experiment). As ABA was dissolved in 0.02% EtOH, EtOH was used as a solvent control. EtOH treatments did not induce measurable emission ratio increases of SNACS (Figure 2B, n = 3 experiments; 4–7 cells imaged in each experiment).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig2-v2.jpg)
+
+**Figure 2.:** (A) Time-resolved FRET ratio changes in response to ABA. SNACS was co-infiltrated with pUBQ10:OST1-HF in N. benthamiana. Leaf epidermises were perfused with assay buffer (5 mM KCl, 50 µM CaCl2, 10 mM MES-Tris, pH 5.6) and then 20 µM ABA was added as indicated by the arrow. Experiments were repeated at least three times with similar results. FRET efficiency changes were recorded by measuring the ratio of fluorescence emissions at 535 nm/480 nm with an excitation wavelength of 434 nm (see Materials and methods). Data are averages of normalized emission ratios of YPet to Turquoise GL emission produced by exciting Turquoise GL from 11 cells. Error bars denote mean ± SEM. (B) Time-resolved FRET ratio in response to 0.02% EtOH (solvent control for ABA). Data are averages of normalized emission ratios from 7 cells. Error bars denote mean ± SEM. (C) and (D) Example of a single cell experiment from A. (C) The corresponding emission ratio normalized to the average value over 5 min before treatment. (D) Pseudo-colored fluorescence ratio images of SNACS-expressing N. benthamiana leaf epidermal cells at times 0 min and 30 min. The calibration bar to the right of (D) indicates the numerical ratio (non-normalized) scale corresponding to the heat map. Bar = 50 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Bar = 20 µm.
+
 SNACS and the mutant control isoform SNACSS785A were also stably transformed into Arabidopsis. Two independent transgenic lines were characterized for each of the two sensor constructs. SNACS fluorescence was observed throughout plant seedlings in the 35S:SNACS expression lines, including guard cells and leaf epidermal cells (Figure 2—figure supplement 1). We tested effects of ABA on these sensors in stomatal guard cells. To conduct non-biased experiments, ABA or EtOH treatments were blinded in these assays and in these data analyses. Using a genetic background in which a tagged version of OST1 was expressed in the OST1 T-DNA insertion allele ost1-3 (pUBQ10:OST1-HF/ost1-3) (Yoshida et al., 2002; Waadt et al., 2015), application of 20 µM ABA induced a clear time-dependent increase in the FRET ratio, which reached stable saturation 2 to 4 min after application (Figure 3A,C to E, p=0.015, paired t-test, before ABA time point 3 min vs. after ABA time point 10 min; All following imaging analyses were evaluated by paired t-tests). Ethanol control applications showed no clear YPet/Turquoise GL emission ratio change (Figure 3B). Image analyses suggest that SNACS protein is either absent from the nucleus or is expressed at lower levels than in the cytoplasm, with fluorescence possibly ‘bleeding through’ from the cytoplasm to the nucleus (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig3-v2.jpg)
+
+**Figure 3.:** (A) Time-resolved FRET ratio changes in response to ABA (20 µM). FRET efficiency changes were recorded by measuring the ratio of fluorescence emissions at 535 nm/480 nm with an excitation wavelength of 434 nm (see Materials and methods). (B) Time-resolved FRET ratio change in response to EtOH (0.02%, solvent control for ABA). (C to E) Images of SNACS fluorescence ratios in guard cells from A at 0 min, 10 min and 15 min. The colored circles indicate the regions of interest (ROIs) used to measure fluorescence emissions with the colors corresponding to the blue and red traces in panel A. ‘1’ and ‘2’ in (C) denote ‘stomate_1’ and ‘stomate_2’, respectively. The calibration bar in the lower right of (E) indicates the numerical scale corresponding to the non-normalized heat map. Bar = 20 µm. Note that the lowest cell (red spot) in the images shows fluorescence of a single guard cell from an apparent half stomate. Treatments were performed blinded (ABA or EtOH). SNACS FRET activities in guard cells in leaf epidermises were analyzed in a pUBQ10:OST1-HF-expressing ost1-3 genetic background (Waadt et al., 2015). The ratio of YPet to Turquoise GL emission was normalized to the average value over 5 min before treatment.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Stomata imaged at the SNACS YPet emission wavelength (535 nm; scale bar = 20 µm).
 
 Similar to the above experiments (Figure 3), in the Col-0 (wild-type) background, expression of SNACS showed ABA-induced emission ratio increases in guard cells (Figure 4A and D, n = 24 stomata, p=2 × 10−12 3 min vs. 10 min time points). In additional experiments sets, expression of SNACS in the pUBQ10:OST1-HF/ost1-3 background also showed ABA-induced emission ratio change (Figure 4E and H, n = 16 stomata, p=1.4 × 10−7 3 min vs. 10 min). In transgenic lines expressing the mutant SNACSS785A, that corresponds to the Ser-30-Ala mutation in AKS1, no clear increases in the ratio of YPet to Turquoise GL emission ratio were observed after ABA application (Figure 4C and G; n = 9 stomata (4C), p=0.892, 3 min vs. 10 min; n = 12 stomata (4G), p=0.184, 3 min vs. 10 min). These data indicate that the phosphorylation site Ser 785 residue of SNACS (Figure 4C and G) is necessary for ABA-induced increases in the ratio of YPet to Turquoise GL emission in plant cells. In additional EtOH application controls, both in SNACS and in SNACSS785A -expressing transgenic lines no substantial EtOH-induced increases were observed in the ratio of YPet to Turquoise GL emission (Figure 4B,F and Figure 4—figure supplement 1; n = 9 stomata (4B), p=0.808, 3 min vs. 10 min; n = 11 stomata (4F), p=0.112, 3 min vs. 10 min). Average time-dependent ratiometric fluorescence changes for data including data in Figure 4 are shown in Figure 4—figure supplement 2A–H.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig4-v2.jpg)
+
+**Figure 4.:** Leaf epidermises from transgenic lines expressing SNACS were used for depicting the ratio of YPet to Turquoise GL emission produced by exciting Turquoise GL with 434 nm light. (A) ABA (20 µM) induced the SNACS response in the Col-0 genetic background. (B) SNACS response to EtOH (0.02%, solvent control for ABA) treatment in the Col-0 wild-type genetic background. (C) The S785A mutation in the SNACS reporter impairs ABA-induced FRET ratio changes in the Col-0 wild-type genetic background. (D) A representative SNACS fluorescence ratio image from A at 0 min and 15 min time points. Bar = 10 µm. (E) ABA (20 µM) induced SNACS response in the pUBQ10:OST1-HF-expressing in ost1-3 genetic background. (F) SNACS response to EtOH (0.02%, solvent control for ABA) in pUBQ10:OST1-HF- expressing in ost1-3 genetic background. (G) The S785A mutation in the SNACS impairs ABA-induced FRET ratio changes in the pUBQ10:OST1-HF-expressing in ost1-3 genetic background. The ratios were normalized to the average value over the 5 min before treatment. (H) A representative SNACS fluorescence ratio image from E at 0 min and 15 min time points. Bar = 10 µm. Calibration bars to the right of D and H show the numerical ratio (non-normalized) scale corresponding to the pseudo-coloring.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** The response of the SNACSS785A to EtOH (0.02%) treatment in Col-0 (A) and in pUBQ10:OST1-HF expressed in the ost1-3 genetic background (B). The ratio of YPet to Turquoise GL emission was normalized to the average value over the 5 min before treatment.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Red lines show the average ratio changes of all stomata traces. Grey lines denote each single stomate ratio change. For visualization of individual stomate time courses see colored traces in Figure 4 and Figure 4—figure supplement 1. Additional data from independent experimental data sets are included in several panels of Figure 4—figure supplement 2, Figure 6—figure supplement 2, Figure 7—figure supplement 1 and Figure 8—figure supplement 1 as indicated by the total number of stomata analyzed in Supplementary Figure legends. (A, B, C) Data for Figure 4A–C,A: n = 24 stomata. (B) n = 17 stomata, including the data shown in Figure 4B.(C) n = 15 stomata, including the data shown in Figure 4C. (D) Data for Figure 4—figure supplement 1A, n = 13 stomata, including the data shown in Figure 4—figure supplement 1A. (E, F, G) Data for Figure 4E–G, n = 22 stomata, including the data shown in Figure 4E; n = 19 stomata, including the data shown in Figure 4F; n = 22 stomata, including the data shown in Figure 4G. (H) Data for Figure 4—figure supplement 1B, n = 19 stomata, including the data shown in Figure 4—figure supplement 1B.
+
 We next investigated whether the SNACS ratio change was dependent on SnRK2 activity in planta. As SnRK2.2, SnRK2.3 and SnRK2.6 have been shown to contribute to ABA signaling in guard cells (Takahashi et al., 2017; Fujii and Zhu, 2009; Brandt et al., 2015; Takahashi and Kinoshita, 2015), we examined SNACS in Col-0, ost1/snrk2.6 single mutant, snrk2.2/2.3 double mutant and snrk2.2/2.3/2.6 triple mutant plants (Figure 5). Interestingly, ABA caused clear fluorescence emission ratio increases in ost1/snrk2.6 guard cells (Figure 5B; n = 14 stomata, p=3.2 × 10−7 3 min vs. 10 min). Compared to the Col-0 guard cells, in the ost1/snrk2.6 background ABA induced slower emission ratio increases (Figure 5A and B; n = 12 stomata (5A), p=2.4 × 10−6 3 min vs. 10 min). In snrk2.2/2.3 double mutant guard cells, ABA induced FRET ratio increases were observed (Figure 5C, n = 20 stomata (5C), p=5.7 × 10−9 3 min vs. 10 min). Notably, no ABA-induced ratio increase was observed in the snrk2.2/2.3/2.6 triple mutant guard cells, which suggests that SnRK2 activity is required for ABA-induced SNACS-dependent FRET ratio changes in planta (Figure 5D, n = 9 stomata, p=0.122 3 min vs. 10 min). Average time-resolved fluorescence emission data from Figure 5 are shown in Figure 5—figure supplement 1. These data are consistent with findings that all three SnRK2s contribute to ABA signaling in guard cells and that the triple mutant has the strongest physiological phenotype (Fujii and Zhu, 2009; Brandt et al., 2015). Taken together, these data provide strong evidence that time-dependent SnRK2 activity can be detected in single live cells by SNACS both in N. benthamiana and Arabidopsis.
 
-## Effects of kinase inhibitors on SNACS
+![Figure 5.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig5-v2.jpg)
+
+**Figure 5.:** Leaf epidermises from transgenic lines expressing SNACS were used for analyzing the ratio of YPet to Turquoise GL emission in guard cells produced by exciting Turquoise GL with 434 nm light. The ratio was normalized to the average value over the 5 min before ABA exposure. (A) ABA (20 µM) induced SNACS responses in guard cells of the Col-0 (WT) genetic background. (B) ABA (20 µM) induced SNACS responses in guard cells of the ost1-3 genetic background. (C) ABA (20 µM) induced SNACS responses in guard cells of the snrk2.2/2.3 double mutant genetic background. (D) ABA (20 µM) induced SNACS response was impaired in snrk2.2/2.3/2.6 triple mutant guard cells.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Red lines show the average ratio changes of all stomata traces. Grey lines denote each single stomate ratio change. For visualization of individual stomate time courses see colored traces in Figure 5. (A) n = 12 stomata; (B) n = 14 stomata; (C) n = 20 stomata; (D) n = 9 stomata.
+
+### Effects of kinase inhibitors on SNACS
 
 Previous research has led to the hypothesis that basal ABA signaling and basal SnRK2 activity occur in non-stressed guard cells (Hsu et al., 2018; Yoshida et al., 2019; Lahr and Raschke, 1988). However, experimental evidence directly examining the proposed basal activity of SnRK2 kinases in intact guard cells is lacking. Experiments were pursued to determine the effects of protein kinase inhibition during SNACS recordings. In order to determine the effects of kinase inhibition, the general Ser/Thr protein kinase inhibitor, K252a was used, which abolishes ABA-induced stomatal closing (Schmidt et al., 1995). We found that 10 µM K252a application resulted in a time-resolved drop in the FRET emission ratio in Arabidopsis guard cells (Figure 6A; n = 13 stomata (6A), p=4.9 × 10−6 3 min vs.10 min; n = 11 stomata (6B, controls), p=0.158 3 min vs. 10 min). In addition, ABA did not induce measurable emission ratio increases after K252a application, suggesting that ABA-induced emission ratio increases are caused by K252a-sensitive protein kinase activity in vivo (Figure 6A). Next, we added 10 µM K252a following 10 min ABA treatments. Interestingly, after ABA treatment and subsequent K252a exposure, the FRET emission ratio decreased, suggesting that SNACS can reversibly report protein kinase activity (Figure 6C; n = 10 stomata (6C), p=0.0004 3 min vs.10 min, p=0.0001 10 min vs. 20 min; n = 8 stomata (6D, controls), p=0.00003 3 min vs.10 min, p=0.836 10 min vs. 20 min).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig6-v2.jpg)
+
+**Figure 6.:** SNACS responses in guard cells were analyzed in the pUBQ10:OST1-HF-expressed in the ost1-3 genetic background. The ratio of YPet to Turquoise GL emission was normalized to the average value over the 5 min before K252a application. (A) The protein kinase inhibitor K-252a reduced SNACS FRET ratio in vivo, and ABA did not induce a ratio increase in the presence of K-252a. After 10 min incubation with 10 µM K-252a, 20 µM ABA was added. (B) ABA induced a ratio increase in the presence of DMSO (0.2%, solvent control for K-252a). (C) The kinase inhibitor K-252a inhibited SnRK2 kinase activity after ABA treatment. (D) Control experiment for C. 0.2% DMSO was added. (E) Kinase inhibitor W7 did not affect SNACS FRET ratio in vivo. After 10 min incubation with 20 µM W7, 20 µM ABA was added. (F) Control experiment for E. 0.1% DMSO was added as solvent for W7.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Mesophyll cell protoplasts prepared from stable transgenic UBQ10:OST1-HF/ost1-3 Arabidopsis plants were incubated with 10 µM K252a, 50 µM W-7, or DMSO (control) for 20 min. Then, protoplasts were further incubated with or without 20 µM ABA for 15 min. In-gel kinase assays show OST1/SnRK2.6 kinase activities (top panel). OST1-HF protein amounts are shown by immuno-blots using anti FLAG antibody (bottom panel).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Red lines show the average ratio changes of all stomata traces. Grey lines denote each single stomate ratio change. For visualization of individual stomate time courses see colored traces in Figure 6. Additional data from independent experimental data sets are included in several panels of Figure 4—figure supplement 2, Figure 6—figure supplement 2, Figure 7—figure supplement 1 and Figure 8—figure supplement 1 as indicated by the total number of stomata analyzed in Supplementary Figure legends. (A) n = 22 stomata, including the data shown in Figure 6A. (B) n = 19 stomata, including the data shown in Figure 6B. (C) n = 17 stomata, including the data shown in Figure 6C. (D) n = 15 stomata, including the data shown in Figure 6D. (E) n = 19 stomata, including the data shown in Figure 6E. (F) n = 9 stomata, including the data shown in Figure 6F.
+
 As control, we tested whether the calmodulin inhibitor W7 affects SnRK2 protein kinase activity in plant cells. In-gel kinase assays showed that W7 does not have a clear effect on ABA-induced OST1/SnRK2.6 activation in Arabidopsis mesophyll cell protoplasts (Figure 6—figure supplement 1). In controls K252a inhibited ABA-induced in-gel kinase activity (Figure 6—figure supplement 1). For comparison to the K252a inhibitor, we investigated the effect of W7 (Rudd et al., 1996) on the SNACS reporter in guard cells. We found no FRET ratio changes upon W7 treatment (Figure 6E and F; n = 8 stomata (6E), p=0.988 3 min vs.10 min; n = 7 stomata (6F, controls), p=0.348 3 min vs.10 min). After W7 exposure, application of ABA caused ABA-induced FRET shifts (Figure 6E and F; p=1.1 × 10−9 (6E), p=7.4 × 10−6 (6F), 10 min vs. 20 min). Average time-resolved fluorescence emission ratio changes are shown in Figure 6—figure supplement 2 that include the data in Figure 6. Taken together, these data suggest that SNACS is a reversible protein kinase activity reporter and that SNACS can report basal SnRK2 activity in vivo, that is down-regulated upon kinase inhibition.
 
-## Methyl-Jasmonate does not induce SNACS FRET ratio changes in guard cells
+### Methyl-Jasmonate does not induce SNACS FRET ratio changes in guard cells
 
 Methyl jasmonate (MeJA) has been previously reported to induce stomatal closure (Herde and Pena-Cortes, 1997; Gehring, 1997; Suhita et al., 2004; Akter et al., 2012). The OST1/SnRK2.6 kinase is required for MeJA-induced stomatal closure (Yin et al., 2016). Therefore, next we analyzed the effect of MeJA on SNACS FRET changes in guard cells. Exogenous application of MeJA did not result in robust FRET emission ratio changes in Arabidopsis guard cells (Figure 7, Figure 7—figure supplement 1; n = 9 stomata (7A), p=0.981 3 min vs. 15 min, p=0.896 3 min vs. 25 min; n = 12 stomata (7B, controls), p=0.553 3 min vs. 15 min, p=0.664, 3 min vs. 25 min). Furthermore, in the presence of MeJA, subsequent application of ABA caused increases in the SNACS emission ratio in these experiments (Figure 7).
 
-## CO2 elevation does not induce SNACS FRET ratio increases in guard cells
+![Figure 7.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig7-v2.jpg)
+
+**Figure 7.:** The SNACS reporter was analyzed in guard cells in leaf epidermises of plants expressing pUBQ10:OST1-HF in the ost1-3 genetic background. The ratio of YPet to Turquoise GL emission was normalized to the average value over the 5 min before treatment. (A) MeJA (20 µM) did not affect the FRET ratio in guard cells. ABA induced ratio increases in the presence of MeJA. After 20 min treatment with 20 µM MeJA, 20 µM ABA was added. (B) Control experiment for A. 0.1% EtOH (solvent control for MeJA) was added.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Red lines show the average ratio changes of all stomata traces. Grey lines denote each single stomate ratio change. For visualization of individual stomate time courses see colored traces in Figure 7. Additional data from independent experimental data sets are included in several panels of Figure 4—figure supplement 2, Figure 6—figure supplement 2, Figure 7—figure supplement 1 and Figure 8—figure supplement 1 as indicated by the total number of stomata analyzed in Supplementary Figure legends. (A) n = 18 stomata, including the data shown in Figure 7A. (B) n = 18 stomata, including the data shown in Figure 7B.
+
+### CO2 elevation does not induce SNACS FRET ratio increases in guard cells
 
 snrk2.6/ost1 mutant alleles show impaired and slowed CO2-induced stomatal closure (Xue et al., 2011; Merilo et al., 2013; Hsu et al., 2018). Interestingly, a recent study suggests that CO2 elevation does not activate SnRK2.6/OST1 protein kinases using in-gel kinase assays with isolated Arabidopsis guard cell protoplasts (Hsu et al., 2018). However, based on the present debate whether CO2 elevation directly activates early ABA signal transduction (Dittrich et al., 2019) or not (Hsu et al., 2018; Merilo et al., 2013), real-time analyses in intact guard cells are needed. Here, using SNACS-expressing Arabidopsis plants, we tested whether changes in CO2 concentration affect SNACS FRET activity in intact guard cells in real-time analyses. Intact leaf epidermises (Young et al., 2006) were incubated in a low CO2 buffer (115 ppm) for 10 min, and the buffer was replaced with a high CO2 buffer (1170 ppm) by perfusion while monitoring SNACS FRET ratios. FRET emission ratios showed no measurable increases after a 40 min incubation with the high CO2 buffer (Figure 8A and Figure 8—figure supplement 1A, n = 9 stomata, p=0.184 3 min vs. 15 min). After high CO2 treatment, 20 µM ABA was added to the buffer. We observed rapid FRET ratio increases in response to ABA (Figure 8A). Low CO2 causes a rapid opening of stomatal pores. We further tested whether low CO2 disrupts ABA-induced FRET ratio changes of the SNACS reporter. No clear FRET ratio increases were detected for continuous 30 min low CO2 exposure (115 ppm). Subsequent exposure to 20 µM ABA caused ratio increases (Figure 8B and Figure 8—figure supplement 1B, n = 14 stomata, p=5.9 × 10−6 20 min vs. 35 min).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig8-v2.jpg)
+
+**Figure 8.:** Fluorescence ratios of guard cells in intact leaf epidermises were analyzed in the pUBQ10:OST1-HF expressed in the ost1-3 genetic background (A and B). The ratio of YPet to Turquoise GL emission was normalized to the average value over the 10 min before treatments. (A) High CO2 (1170 ppm) did not increase the FRET ratio in guard cells. Intact leaf epidermises were exposed to low CO2 (115 ppm), then switched to high CO2 (1170 ppm) buffer, and then exposed to 20 µM ABA containing buffer. (B) Leaf epidermises were exposed to low CO2 (115 ppm), then exposed to 20 µM ABA containing buffer. (C) Time-resolved ABAleon2.15 emission ratios in guard cells in response to CO2 changes and ABA application. Intact leaf epidermises were exposed to low CO2 (115 ppm), then switched to high CO2 (1170 ppm) buffer, and then exposed to 20 µM ABA containing buffer. (D) Leaf epidermises were exposed to low CO2 (115 ppm), then exposed to 20 µM ABA containing buffer. Note that reduction in fluorescence ratios observed in ABAleon2.15-expressing guard cells correspond to ABA concentration increases (Waadt et al., 2014).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Red lines show the average ratio changes of all stomata traces. Grey lines denote each single stomate ratio change. For visualization of individual stomate time courses see colored traces in Figure 8. Additional data from independent experimental data sets are included in several panels of Figure 4—figure supplement 2, Figure 6—figure supplement 2, Figure 7—figure supplement 1 and Figure 8—figure supplement 1 as indicated by the total number of stomata analyzed in Supplementary Figure legends. (A) n = 15 stomata,including data shown in Figure 8A. (B) n = 22 stomata, including data shown in Figure 8B. (C) n = 10 stomata. (D) n = 9 stomata.
+
 CO2-induced stomatal closing is >80% completed within 15 to 20 min of a CO2 concentration elevation in wild-type (Col-0) Arabidopsis (Young et al., 2006). In previous research using the ABA nano-reporter ABAleon2.15, a shift in the CO2 concentration from 115 ppm to 535 ppm did not cause a measurable increase in the ABA concentration in guard cells, even though ABA receptors and OST1 were found to be important for the CO2 response (Hsu et al., 2018), which was differently interpreted in a recent study (Dittrich et al., 2019). Nevertheless, we pursued experiments here to determine whether a shift to a higher CO2 concentration of 1170 ppm could cause a rapid increase in the ABA concentration in guard cells. No dramatic ABAleon2.15 emission ratio change was observed upon increasing the CO2 concentration from 115 ppm to 1170 ppm (Figure 8C and Figure 8—figure supplement 1C, n = 10 stomata, p=0.502 3 min vs. 30 min). At the end of these experiments, intact abaxial leaf epidermises were exposed to 20 µM ABA, which caused a rapid reduction in the ABAleon2.15 FRET ratio (Figure 8C,D and Figure 8—figure supplement 1C), which corresponds to an increase in cellular ABA concentration (Waadt et al., 2014). In control experiments, no detectable emission ratio change was observed in 30 min of low CO2 buffer exposure (115 ppm), followed by a rapid reduction in ratio upon exposure to 20 µM ABA (Figure 8D and Figure 8—figure supplement 1D; n = 9 stomata, p=6.1 × 10−720 min vs. 35 min). Thus, no clear rapid increase in the cellular ABA concentration of guard cells was found within the time frame in which CO2-induced stomatal closing occurs.
 
-## PYL4 and PYL5 ABA receptors are not essential for CO2-induced stomatal closing
+### PYL4 and PYL5 ABA receptors are not essential for CO2-induced stomatal closing
 
 A recent study has suggested that CO2-induced stomatal closing requires PYL4 and PYL5 ABA receptors (Dittrich et al., 2019). As the present study has found no clear CO2 activation of SnRK2s in guard cells and no CO2-induced ABA increases in guard cells, we pursued gas exchange experiments in intact plants with mutants lacking PYL4 and PYL5 expression. Experiments were conducted on higher order ABA receptor mutants that have been shown to disrupt ABA-induced stomatal closing (Merilo et al., 2018; Gonzalez-Guzman et al., 2012). Experiments were performed in quintuple ABA receptor mutants: pyr1 pyl1 pyl4 pyl5 pyl8 (‘pyl-11458’) and pyr1 pyl2 pyl4 pyl5 pyl8 (‘pyl-12458’) and sextuple mutant plants: pyr1 pyl1 pyl2 pyl4 pyl5 pyl8 (‘pyl-112458’).
 
 Time-resolved gas exchange experiments measuring whole intact plants showed that all tested plant lines displayed stomatal closure in response to changing the CO2 concentration from ambient (400 ppm) to 800 ppm (Figure 9A and B). Earlier studies have shown the crucial role of PYR/RCAR receptors in maintaining steady-state stomatal conductance (Hsu et al., 2018; Gonzalez-Guzman et al., 2012; Merilo et al., 2013). ABA receptor sextuple mutant plants displayed 5.2 times higher pre-CO2-treatment stomatal conductance compared to wild-type (Figure 9A and C). ABA receptor quintuple pyl-11458 and pyl-12458 mutants maintained 2.3 and 2.9 times higher pretreatment stomatal conductances compared to wild-type (Figure 9A and C). After application of elevated CO2, the stomatal conductance of all ABA receptor mutant lines decreased to a similar or even higher extent than in wild-type plants even though their stomatal conductances remained higher after 50 min in elevated CO2 (Figure 9A and C). This can be in part explained by an increased stomatal density in higher order ABA receptor knockout mutants and a weaker response to basal ABA concentrations (Hsu et al., 2018; Merilo et al., 2018). Stomatal responses to CO2 shifts from 400 to 800 ppm were clearly delayed in PYR/RCAR sextuple mutant plants as indicated by a roughly twice longer half-response time (Figure 9D), consistent with previous findings (Hsu et al., 2018). We also calculated reductions in stomatal conductance after 20 min under elevated CO2 as an approximation for the initial phase of the CO2 responses (Figure 9—figure supplement 1). Such analyses showed that in absolute units PYR/RCAR quintuple mutant pyl-12458 and sextuple mutant pyl-112458 plants displayed a larger absolute reduction in stomatal conductance in response to high CO2 than wild-type plants.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig9-v2.jpg)
+
+**Figure 9.:** (A, B) Time-resolved stomatal conductances of PYR/RCAR receptor quintuple (pyl-11458 and pyl-12458) and sextuple (pyl-112458) mutants. Air CO2 concentration was increased from 400 ppm to 800 ppm at the zero timepoints. Gas exchange analyses are from n = 5 to 7 whole plants per genotype and condition, using methods described in Merilo et al., 2018 (see Materials and methods). Data are presented in absolute (A) and relative (B) units. (C) Stomatal conductances before (gs0) and 50 min (gs50) after changing CO2 from 400 ppm to 800 ppm, average and SE (n = 5 to 7 whole plants). Capital letters denote differences in gs0 (pre-treatment stomatal conductance) between the lines (n = 5 to 7 whole plants, ANOVA, p=0.000000), whereas stars denote whether gs50 is significantly different from gs0 of that line (n = 5 to 7 whole plants, ANOVA, p=0.00001). (D) Half-response times of stomatal closures in response to 50 min CO2 enrichment. Capital letters denote significant differences between the lines (n = 5 to 7 whole plants, ANOVA, p=0.000023).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Changes in stomatal conductance (gs) after the first 20 min CO2 elevation (gs20) in absolute units (left Y axis scale mmol m−2 s−1) and relative units (right Y axis scale in %: (gs0-gs20)/gs0). gs0 = steady state stomatal conductances prior to CO2 elevation. In absolute units, pyrpyl sextuple mutant stomata close the most (light blue bars: pyl-112458). In contrast, in normalized units, the pyrpyl sextuple appears to close stomata the least compared to wild-type (dark purple bars), high-lighting pitfalls of gs normalization. Capital letters show differences in absolute responses (p=0.000158), whereas lower case letters in relative responses (p=0.00158; ANOVA, generalized linear model and Tukey post-hoc).
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** Time-resolved stomatal conductance responses to changes in light and CO2 concentration in Col-0 (WT; A–D). (A) pyr1/pyl1/pyl4/pyl5/pyl8 quintuple mutant (pyl-11458). (B) pyr1/pyl1/pyl4/pyl5/pyl8/pGC1::PYL1 (pyl-11458/PYL1). (C) pyr1/pyl1/pyl4/pyl5/pyl8/pGC1::PYL4 (pyl-11458/PYL4). (D) pyr1/pyl1/pyl4/pyl5/pyl8/pGC1::PYL5 (pyl-11458/PYL5). Gas exchange experiments of intact leaves commenced under dark treatment and then leaves were exposed to 125 µmol m−2s−1 continuous light as indicated by arrow in each panel. CO2 concentrations are shown on top of the data traces in each panel. Note that WT traces in A to D are the same for comparisons, as the indicated genotypes were measured within the same experiments. Note that steady state stomatal conductance levels in pyl-11458 mutants are conditional. Data represent mean of stomatal conductances ± sem. WT (n = 4), pyl-11458 quintuple (n = 4), pyl-11458/PYL1 (n = 4), pyl-11458/PYL4 (n = 5), and pyl-11458/PYL5 (n = 4).
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/56351/elife-56351-fig9-figsupp3-v2.jpg)
+
+**Figure 9—figure supplement 3.:** (A) Col-0 (WT) and ABA receptor higher-order mutants were confirmed by primers targeting WT or mutant alleles. Primer pairs: PYR1 (PYR1-F + PYR1-R), PYL1 (PYL1-F + PYL1-R), PYL1 mutant (PYL1-F + LBb1.3), PYL2 (PYL2-F+ PYL2-R), PYL2 mutant (PYL2-F + DS5O), PYL4 (PYL3-F+ PYL4-R), PYL4 mutant (PYL4-F + LB3), PYL5 (PYL5-LP+ PYL5-RP), PYL5 mutant (PYL5-RP + dSpm1), PYL8 (PYL8-F+ PYL8-R), PYL8 mutant (PYL8-F + LB3). (B) Sequence results of PYR1 in WT and pyr1-1 (Q169*) mutant allele in ABA receptor higher-order mutants. (C) Confirmation of pGC1::PYL1, pGC1::PYL4, and pGC1::PYL5 transgenes in corresponding transgenic lines, pyl-11458/PYL1, pyl-11458/PYL4, and pyl-11458/PYL5. PCR reactions were performed using pGC1-F paired with PYL1-R, PYL4-R, or PYL5-R to amplify transgenes. Primer sequences are listed in Supplementary file 2.
 
 To further investigate the role of PYL4 and PYL5 in CO2-induced stomatal closing, we pursued a light protocol followed by CO2 elevation, as in experiments used by Dittrich et al., 2019. In these experiments, pyl-11458 quintuple mutant leaves showed stomatal opening in response to 125 µmol m−2 s−1 light as expected. After light-induced stomatal opening, CO2 elevation showed similar CO2-induced stomatal closing in the wild-type (Col-0) background as in the pyl-11458 quintuple mutant that lacks PYL4 and PYL5 (Figure 9—figure supplement 2A). In complementation lines expressing PYL4, PYL5 or PYL1 under control of the guard cell pGC1 promoter, no clear enhancement of the final CO2 response was observed (Figure 9—figure supplement 2B to D). Thus in the two laboratories in which CO2-regulation of stomatal conductance was investigated in intact plants in the present study (EM and HK lab and JS lab), we could not confirm that the absence of PYL4 and PYL5 disrupts the stomatal CO2 response (Dittrich et al., 2019).
 
@@ -106,33 +194,127 @@ In conclusion, SnRK2s are key protein kinases that mediate abiotic stress respon
 
 ## Materials and methods
 
-## Construction of SNACS reporter
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Arabidopsis)</td>
+      <td>AKS1</td>
+      <td>Tair (https://www.arabidopsis.org/)</td>
+      <td>Tair ID: At1g51140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis)</td>
+      <td>14-3-3, GF14phi</td>
+      <td>Tair (https://www.arabidopsis.org/)</td>
+      <td>Tair ID: At1g35160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21-CodonPlus (DE3)</td>
+      <td>Agilent Technologies</td>
+      <td>Model: 230245</td>
+      <td>Electro-competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Agrobacterium tumefaciens)</td>
+      <td>GV3101</td>
+      <td>Other</td>
+      <td></td>
+      <td>Widely distributed</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG M2 Mouse monoclonal</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID:AB_262044</td>
+      <td>x5,000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>K-252a</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cas No. 99533-80-9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>W-7</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cas No. 61714-27-0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MeJA</td>
+      <td>Bedoukian Research, Inc</td>
+      <td>Ct. 06810–4192</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaFluor software</td>
+      <td>MetaFluor(https://www.moleculardevices.com/products/cellular-imaging-systems/acquisition-and-analysis-software/metamorph-microscopy)</td>
+      <td>RRID:SCR_014294</td>
+      <td>version 7.0r3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji software</td>
+      <td>Fiji (https://imagej.net/Fiji)</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td>version 7.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Construction of SNACS reporter
 
 The plasmid backbone used to construct SNACS reporter plasmids was the SOMA construct as reported by Zaman et al., 2019. Restriction enzyme cloning was used: the FHA domain in the original vector was replaced with the full-length 267 amino acid coding region of the 14-3-3 protein, GF14phi (At1g35160) and the substrate domain of the original plasmid was replaced with DNA encoding for amino acids 1–48 of the Arabidopsis AKS1 protein (At1g51140) (Takahashi et al., 2017). To generate the phospho-site mutant isoform of the SNACS reporter, site-directed mutagenesis was performed to change the coding sequence at the AKS1 serine-30 to alanine resulting in the SNACSS785A reporter. In addition, the StrepII-tag was inserted into the C-terminus via the XbaI site for expression of recombinant SNACS protein in E. coli. For expression in plants, the SNACS coding fragment was PCR-amplified with the attB1 and attB2 adaptor primers. This fragment was introduced into the donor vector pDONR221 using BP clonase (Invitrogen). Final destination vectors for expression in plants were obtained by using a multisite gateway recombination system, using the pH7m34GW destination vector and p35S/pDONRP4-P1R constructs. Vectors carrying 35S: SNACS or 35S: SNACSS785A were used for plant transformation.
 
-## In vitro FRET analyses and phosphorylation assay
+### In vitro FRET analyses and phosphorylation assay
 
 The recombinant SNACS protein, SNACSS785A protein, GST-OST1/SnRK2.6, GST-OST1D140A, GST-CPK6 and GST-SnRK2.3 were expressed in BL21-CodonPlus (DE3)-RIL cells (Stratagene). StrepII-tagged proteins were purified using Strep-Tactin Macroprep columns (IBA). GST-tagged recombinant proteins were purified using Glutathione Sepharose 4B. 9 µg of the SNACS or SNACSS785A were added to a reaction containing 1 × PKA buffer (50 mM Tris-HCl pH7.5, 10 mM MgCl2), 0.2 mM ATP-Na, 2 mM DTT and water to a total volume of 50 µl with 2 µM free Ca2+ buffered only for GST-CPK6. For reactions including GST-OST1, GST-OST1D140A, GST-CPK6, and GST-SnRK2.3, 4 µg of these proteins were also added. The reactions were then incubated at room temperature for 2 hr and the fluorescence emission spectrum was measured using a TECAN SPARK multimode plate reader. Excitation was performed at 434 nm and the emission range analyzed was 460 to 560 nm.
 
 In vitro phosphorylation assays were performed as previously described (Takahashi et al., 2017). Recombinant SNACS reporter proteins were incubated in phosphorylation buffer (50 mM Tris-HCl, 10 mM MgCl2, 0.1% TritonX-100, 1 mM DTT, pH7.5) with recombinant GST-tagged OST1/SnRK2.6 or CPK6 for 30 min at room temperature in the presence of 1 µCi [γ-32P]-ATP and 200 µM ATP. The reactions were stopped by the addition of SDS-loading buffer. After separation with 10% SDS-polyacrylamide gels, proteins were visualized by coomassie blue staining, and phosphorylated proteins were visualized by autoradiography.
 
-## Infiltration of Nicotiana benthamiana for transient expression
+### Infiltration of Nicotiana benthamiana for transient expression
 
 SNACS driven by the CaMV 35S promoter was co-expressed with pUBQ10:OST1-HF via co-infiltration using the GV3101 strain of Agrobacterium tumefaciens. In parallel, we co-infiltrated N. benthamiana leaves using Agrobacterium carrying the p19 suppressor of gene silencing to enhance transgene expression. N. benthamiana leaves from 3-week-old plants were used for infiltration. After 3 days of infiltration, microscope imaging analyses were performed (see below).
 
-## Transgenic Arabidopsis lines and plant growth
+### Transgenic Arabidopsis lines and plant growth
 
 SNACS and SNACSS785A reporters carrying plasmids were transformed into the Arabidopsis Columbia 0 accession expressing, pUBQ10:OST1-HF in the ost1-3 genetic background (Waadt et al., 2015), ost1-3 (salk_008068) (Yoshida et al., 2002), snrk2.2/2.3 (GABI-Kat_807G04/salk_107315) and snrk2.2/3/6 (GABI-Kat_807G04/salk_107315/salk_008068) (Brandt et al., 2015) via the floral dip method using the GV3101 strain of Agrobacterium tumefaciens (Zhang et al., 2006). Primary transformants expressing the sensor constructs were selected on 0.5 MS supplemented with 25 µg/mL hygromycin and further cultivated in soil in a growth room (16 h day/8 hr night). We selected positive transformants by fluorescence intensity using confocal microscopy as described below. Transgenic Arabidopsis lines used in the present study are listed in Supplementary file 1.
 
-## Sample preparation and imaging analyses
+### Sample preparation and imaging analyses
 
 For N. benthamiana and Arabidopsis imaging, detached N. benthamiana and Arabidopsis leaves were prepared with the abaxial leaf epidermises on a cover glass using medical adhesive (Holliser, Libertyville, IL). A razor blade was then used to carefully remove the upper mesophyll cell layers of N. benthamiana and Arabidopsis leaves to yield intact epidermal strips (Young et al., 2006), which were further incubated in 2 mL assay buffer (5 mM KCl, 50 µM CaCl2, 10 mM MES-Tris, pH 5.6) for an additional 1 hr. 4- to 6- week-old transgenic Arabidopsis plants were used. FRET ratio-imaging was conducted as previously described (Waadt et al., 2014; Allen et al., 1999), with the difference of using 150 ms exposures to reduce bleaching of the fluorescent proteins. Ratiometric measurements were conducted by interchanging the following band-pass emission filters 480 nm (DF30) and 535 nm (DF25) with a computer-controlled filter wheel (Allen et al., 1999). Excitation light was 434 nm (DF20) (Allen et al., 1999). Images were acquired in intervals of 6 s using MetaFluor software. Image analyses and processing were conducted using Fiji with the following applications: Background subtraction, gaussian blur, 32‐bit conversion, threshold, ratio calculation and physics look up (Schindelin et al., 2012). Whole individual stomata including the central stomatal pore were selected as regions of interest (ROI) for individual stomate ratio imaging using Fiji and the average ratio value within that ROI was then measured. For background subtraction, epidermal pavement cell background regions were analyzed in which no evident fluorescence of the SNACS reporter was evident. The fluorescence intensity of the SNACS reporter in guard cells appeared to be higher than that in epidermal pavement cells or the SNACS expression levels in the cytoplasm of guard cells appeared to be higher than in surrounding cells. Note that the focal plane during imaging in the present study was focused on guard cells, which is slightly shifted from the focal plane of epidermal pavement cells (Figure 2—figure supplement 1). Additionally, since we investigated SNACS-dependent FRET responses in stomata in the present study, we choose microscopic regions in some experiments showing SNACS fluorescence in guard cells with apparent low SNACS fluorescence in surrounding epidermal cells. Therefore, at the illustrated image gains, epidermal cells are not clearly visible. The FRET ratio of YPet to Turquoise GL emission fluorescence was normalized to the average over first 5 min before the indicated treatments. For the indicated treatment applications, epidermal strips were perfused by gently pipetting 5 to 6 times with the assay buffer supplemented with the indicated final concentrations of treatment (ABA, K252a, W-7, MeJA and solvent controls). CO2 responses of the SNACS reporter were performed as previously described (Hsu et al., 2018) except that solutions for high CO2 were bubbled with air containing 2000 ppm CO2. The final CO2 concentrations in the recording chamber of 115 ppm and 1170 ppm after bath perfusion from continuously bubbled solutions to the imaging chamber via tubing and a peristaltic pump were determined as described previously (Young et al., 2006). For ABAleon2.15 reporter imaging, experiments were performed as described above, except that images were acquired in intervals of 12 s. The FRET ratio of YPet to Turquoise GL emission fluorescence was normalized to the average over the first 10 min for CO2 response experiments. Paired t-test analyses were performed using Graphpad Prism version 7.0.
 
-## Whole plant gas exchange experiments
+### Whole plant gas exchange experiments
 
 25–30 days old Arabidopsis plants grown in pots containing 2:1 (v:v) peat: vermiculite mixture kept in Snijders chambers (Snijders Scientific, Drogenbos, Belgia) at 12/12 photoperiod, 23/18 °C temperature, 160 µmol m−2 s−1 light and 70% relative humidity, were used for gas exchange experiments. Custom-built 8-chamber temperature-controlled gas-exchange device as described before (Kollist et al., 2007) was used to measure water vapor concentrations in the air entering and leaving the measurement chambers and to calculate the values of whole-plant stomatal conductance. Standard conditions during the 1–2 hr stabilization period were: ambient CO2 (~400 ppm), light 160 µmol m−2 s−1, relative air humidity (RH) ~61 ± 3%. Then, the CO2 concentration was increased to 800 ppm for 50 min. Plant area was calculated from photographs using ImageJ 1.37 v (National Institutes of Health, USA). Stomatal conductance to water vapor is calculated as described in von Caemmerer and Farquhar, 1981, with details of the calculation procedure having been described earlier (Kollist et al., 2007). In order to compare the CO2 responses of different lines, we calculated closure half-times and rapid high CO2-induced changes in stomatal conductance. The whole 50 min stomatal response was scaled to a range of 0–100% and the time when 50% of stomatal closure was reached was calculated for half-response times. Rapid high CO2-induced changes in stomatal conductance were calculated as the differences in the values of stomatal conductance 20 min after elevated CO2 was applied and pretreatment stomatal conductance values.
 
-## Time-Resolved intact leaf stomatal conductance experiments
+### Time-Resolved intact leaf stomatal conductance experiments
 
 ABA receptor quintuple mutant, pyr1/pyl1/pyl4/pyl5/pyl8 (Antoni et al., 2013), and guard cell-targeted ABA receptor complemented plants, pyr1/pyl1/pyl4/pyl5/pyl8/pGC1::PYL1 (pyl-11458/PYL1), pyr1/pyl1/pyl4/pyl5/pyl8/pGC1::PYL4 (pyl-11458/PYL4), and pyr1/pyl1/pyl4/pyl5/pyl8/pGC1::PYL5 (pyl-11458/PYL5) were used for gas exchange analyses (Antoni et al., 2013; Dittrich et al., 2019). Stomatal conductance recordings from intact leaves of 5- to 6.5-week-old plants were conducted starting 1 to 2 hr after growth chamber light onset. A Li-6400XT infrared (IRGA)-based gas exchange analyzer system was used with an integrated 6400-02B LED Light Source (Li-Cor Inc). The measurement protocols were similar to those described by Dittrich et al., 2019. Leaves were clamped and kept in the dark at 400 ppm ambient CO2 (Dittrich et al., 2019), 21°C, 65–70% relative air humidity, and 400 μmol s−1 flow rate until the stomatal conductance stabilized. For stomatal responses to light and [CO2] shifts, stomatal conductance was first measured at 400 ppm ambient CO2 in the dark for 10 mins; then exposed to continuous light intensity 125 µmol m−2 s−1 (Dittrich et al., 2019). Approximately 80 mins after light-on, ambient [CO2] was increased to 1000 ppm (Dittrich et al., 2019) to analyze stomatal responses to high [CO2]. Following gas exchange experiments, the area of each analyzed leaf was measured for stomatal conductance calculations.
 

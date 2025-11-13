@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03n6nwv02 Laboratory for Clinical Neuroscience, Center for Biomedical Technology, University Politécnica de Madrid Madrid Spain
+1. Laboratory for Clinical Neuroscience, Center for Biomedical Technology, University Politécnica de Madrid Madrid Spain ([ROR:03n6nwv02](https://ror.org/03n6nwv02))
 2. Reina Sofia Centre for Alzheimer's Research Madrid Spain
 
 † Corresponding author

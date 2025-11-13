@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01y2jtd41 Waisman Center, University of Wisconsin–Madison Madison United States
-2. https://ror.org/03ydkyb10 Department of Communication Sciences and Disorders, University of Wisconsin–Madison Madison United States
+1. Waisman Center, University of Wisconsin–Madison Madison United States ([ROR:01y2jtd41](https://ror.org/01y2jtd41))
+2. Department of Communication Sciences and Disorders, University of Wisconsin–Madison Madison United States ([ROR:03ydkyb10](https://ror.org/03ydkyb10))
 
 † Corresponding author
 
@@ -35,7 +35,7 @@ This approach also allows us to test the feedback-command-based hypothesis of ad
 
 ## Results
 
-## Compensation
+### Compensation
 
 In the 150–250 ms time window after vowel onset, trials in which an upward F1 shift occurred (up-shifted trials) had reliably lower F1 values (–3.99±0.33 mels (SE)) than trials in which a downward F1 shift occurred (2.69±0.33 mels) (down-shifted trials) (β=–6.93, SE=0.66, p<0.001, d=0.21; Figure 2A, left panel). This was also reflected at the individual level; participants’ average F1 in the same time window was substantially lower across up-shifted trials (–2.75±1.56 mels) than down-shifted trials (4.40±1.25 mels) (paired t-test, t(130) = –7.00, p<0.001, d=0.91; Figure 2B, left panel). Normalized F1 was significantly different from 0 in both up-shifted trials (t(130) = –3.63, p<0.001, d=0.49) and down-shifted trials (t(130) = 7.24, p<0.0001, d=0.89). Additionally, a cluster-based permutation test showed significant differences from 0 starting at 100–125 ms after vowel onset for all trial types (Figure 2A, horizontal bars).
 
@@ -43,11 +43,11 @@ In the 150–250 ms time window after vowel onset, trials in which an upward F1 
 
 **Figure 2.:** (A) Average normalized F1 for trials with upward (blue) or downward (red) perturbations. Error bars show standard error across participants. Highlighted regions illustrate the time periods of interest for compensation (left) and one-shot adaptation (right). Horizontal bars denote times with significant effects (p<0.05; n=131) as determined by cluster-based permutation tests (red and blue: difference from 0, gray: difference between conditions). (B) Probability distributions and boxplots of participants’ average compensation and adaptation responses in the time periods of interest (n=131).
 
-## One-shot adaptation
+### One-shot adaptation
 
 Participants produced one-shot adaptation responses which paralleled the directional pattern seen in the compensation response, though at a lower magnitude. In the 0–100 ms time window after vowel onset, trials that occurred immediately after an upward F1 shift (post-up trials) had F1 values (–1.55±0.26 mels) that were reliably lower than trials that occurred immediately after a downward F1 shift (post-down trials, 0.59±0.27 mels) (β=–2.14, SE=0.53, p<0.001, d=0.079; Figure 2A, right panel). Likewise, participants’ average F1 was lower across post-up trials (–2.08±1.33 mels) than across post-down trials (0.82±1.39 mels) (paired t-test, t(130) = –2.98, p=0.0034, d=0.38; Figure 2B, right panel). Normalized F1 in post-up trials was significantly less than 0 in this time window (t(130) = –3.2, p=0.0016, d=0.38). While normalized F1 in post-down trials was numerically larger than 0, this difference was not significant in the 0–100 ms window (t(130) = 1.2, p=0.23, d=0.15); however, a cluster-based permutation test showed significant differences from 0 across the syllable for all trial types (Figure 2A, horizontal bars).
 
-## Relationship between behavioral responses
+### Relationship between behavioral responses
 
 At the participant level, there was a significant positive relationship between compensation and one-shot adaptation (β=0.14, SE=0.058, p=0.015, η2=0.02), such that participants who produced larger compensation responses tended to adapt more (Figure 3A). Conversely, the trial-level model revealed no main effect of compensation response (β=–0.033, SE=–0.053, p=0.53) (Figure 3B). However, we did observe a small but significant interaction between shift magnitude and compensation response (β=0.16, SE=0.052, p=0.0023, η2=0.0009), such that higher shift magnitudes elicited a stronger effect of compensation on adaptation. Along with the finding that larger shift magnitudes led to larger one-shot adaptation responses (β=7.46, SE=3.34, p=0.03, η2=0.04), this suggests that trial-wise compensation may be predictive of adaptation only at larger shift magnitudes. Stronger evidence for a trial-level effect could be seen by correlating compensation and adaptation within each participant, which yielded a distribution of coefficients whose mean was significantly larger than 0 (mean r=0.21, 78/92 participants r>0, t=11.07, p<0.0001, d=1.6). There was no relationship between the strength of a participant’s correlation between adaptation and compensation and their overall adaptation magnitude (r=–0.005, t=–0.04, p=0.964); in other words, it was not the case that this correlation was only observed in participants who adapted.
 
@@ -65,21 +65,106 @@ Overall, these results provide evidence that a single exposure to altered audito
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 We reanalyzed data from six previous studies examining online compensation responses to formant frequency alterations with similar speech stimuli and perturbation schedules. Data were included if participants met inclusion criteria for their respective studies and if the formant shifts they received were opposite or near-opposite each other in 2D formant space (separated by an angle of 180±20° when plotted together in F1/F2 space). Data from 91 participants met these criteria; 40 of these participants contributed to two of the included studies. All participants were native speakers of American English and reported no history of speech, hearing, or neurological disorders. Informed consent and consent to publish was obtained for all participants. The experimental protocols were approved by the Institutional Review Board of the institutions from which data were collected: the University of Wisconsin–Madison, the Massachusetts Institute of Technology, the University of California, San Francisco, and the University of California, Berkeley. The University of Wisconsin–Madison Minimal Risk Research IRB approved our procedures to analyze the previously collected data (MRR IRB 2017-1509).
 
-## Auditory perturbation
+### Auditory perturbation
 
 Details of the six studies are provided in Table 1. In all studies, participants spoke aloud monosyllabic English words containing the vowel /ɛ/ (as in head), which were presented as text on a screen. Simultaneously, participants heard real-time auditory feedback of their speech through headphones. On a pseudorandom subset of trials (25–50%), auditory feedback was altered with one of two real-time feedback perturbation systems, Audapter (Cai et al., 2008; Tourville et al., 2013) or Feedback Utility for Speech Production (FUSP) (Katseff et al., 2012; Parrell et al., 2017; Figure 1). Briefly, linear predictive coding (LPC) was used to model the vowel portion of the signal and apply a formant shift in real time during speech. Unaltered trials (50–75% of trials) underwent the same processing pipeline but with no alteration to the formants, such that auditory feedback in all trials had the same (minimal) delay. The magnitude and direction of the applied formant shift varied slightly across studies. Studies 1, 2, 3, and 4 shifted F1 upward and downward at a consistent magnitude (in mels or Hz) that was applied to all participants. Studies 5 and 6 each calculated participant-specific shift magnitudes for both F1 and F2 (in mels or Hz) along a vector pointing from the target vowel /ɛ/ to adjacent vowels /ɪ/ (as in hid) and /æ/ (as in had). For these studies, only the F1 portion of the vector was considered in the analysis; perturbations that increased F1 (/ɛ/ to /æ/) were considered ‘up’ shifts and perturbations that decreased F1 (/ɛ/ to /ɪ/) were considered ‘down’ shifts. All formant values were converted into mels for purposes of this analysis.
 
-## Behavioral measures and statistical analysis
+**Table 1.**
+ Summary of the included studies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Study 1 (Parrell et al., 2017)</th>
+      <th>Study 2 (Parrell et al., 2021)</th>
+      <th>Study 3 (Niziolek and Parrell, 2021)</th>
+      <th>Study 4 (Niziolek and Parrell, 2021)</th>
+      <th>Study 5 (Niziolek and Guenther, 2013)</th>
+      <th>Study 6 (Niziolek et al., 2014)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td># of participants included in analysis</td>
+      <td>14/14</td>
+      <td>13/15</td>
+      <td>40/40*</td>
+      <td>40/40*</td>
+      <td>11/18</td>
+      <td>15/17</td>
+    </tr>
+    <tr>
+      <td># of outliers</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Words</td>
+      <td>beck, bet, deck, debt, pet, tech</td>
+      <td>dead, fed, said, shed</td>
+      <td>bed, dead, head</td>
+      <td>bed, dead, head</td>
+      <td>bed, bet, dead, deb, debt, ped, tech, ted</td>
+      <td>head</td>
+    </tr>
+    <tr>
+      <td># of trials</td>
+      <td>160</td>
+      <td>120</td>
+      <td>240</td>
+      <td>240</td>
+      <td>400</td>
+      <td>800</td>
+    </tr>
+    <tr>
+      <td># of perturbed trials</td>
+      <td>80 (50%)</td>
+      <td>60 (50%)</td>
+      <td>80 (33.33%)</td>
+      <td>80 (33.33%)</td>
+      <td>100 (25%)</td>
+      <td>400 (50%)</td>
+    </tr>
+    <tr>
+      <td>F1 shift magnitude (mels)</td>
+      <td>123.6±10</td>
+      <td>125</td>
+      <td>125</td>
+      <td>125</td>
+      <td>107.9±29.9</td>
+      <td>94.3±6.8</td>
+    </tr>
+    <tr>
+      <td>Perturbation method</td>
+      <td>FUSP</td>
+      <td>Audapter</td>
+      <td>Audapter</td>
+      <td>Audapter</td>
+      <td>Audapter</td>
+      <td>FUSP</td>
+    </tr>
+  </tbody>
+</table>
+
+_The same group of participants contributed to both studies 3 and 4._
+
+### Behavioral measures and statistical analysis
 
 Our primary measure of interest was one-shot adaptation, an adaptive response that persists in the trial following an isolated perturbation. In order to examine whether one-shot adaptation is related to feedback-based corrections on the previous trial, we additionally measured the online compensation response. These behavioral responses were examined at both the trial level and the participant level.
 
 Trials with a vowel duration of less than 100 ms were excluded from analysis (<1%). Two participants were excluded from the analysis as outliers (average compensation or one-shot response >4 SD from mean).
 
-## Compensation
+### Compensation
 
 At the trial level, compensation response was operationalized as the mean normalized F1 produced during the 150–250 ms time window of trials in which a perturbation occurred (perturbation trials). More specifically, participant- and word-specific baseline F1 trajectories were first calculated from the F1 trajectories of unperturbed trials (baseline trials). The F1 trajectory of each perturbation trial was then normalized by subtracting the word-specific baseline mean F1 trajectory from it. The compensation response for each perturbation trial was then defined as the mean F1 value within 150–250 ms after vowel onset, after the typical onset latency of compensation. A 200–300 ms time window was originally planned for this analysis; however, only 46% of produced vowels had a duration of at least 300 ms, whereas 80% of vowels lasted until the end of the 150–250 ms time window.
 
@@ -87,7 +172,7 @@ Average compensation response was also calculated at the participant level, oper
 
 In the trial level analysis, a linear mixed model was employed to investigate the effect of perturbation direction on compensation response: Compensation response ~ perturbation direction + (1 | participant) + (1 | study). Effect size was calculated by dividing β by the residual standard deviation. At the participant level, a paired t-test was used to evaluate the distribution of participants’ mean compensation response to upward perturbations vs. downward perturbations. Additional one-sample t-tests were conducted for each perturbation type against a mean of 0. Cohen’s d was calculated to determine effect size. Examining the entire 0–250 ms window, a cluster-based permutation test was used to find clusters of time points in which the compensation response for each condition differed from 0 and, separately, from each other (Maris and Oostenveld, 2007).
 
-## One-shot adaptation
+### One-shot adaptation
 
 At the trial level, one-shot adaptation response was calculated as the mean normalized F1 produced in the first 100 ms of unperturbed trials that occurred directly after a perturbed trial (post-perturbation trials). Again, participant- and word-specific baseline trajectories were calculated, though using F1 trajectories from unperturbed trials that directly followed another unperturbed trial (baseline trials). The F1 trajectories of each post-perturbation trial were then normalized by subtracting the word-specific baseline mean F1 trajectory. The one-shot adaptation response for each post-perturbation trial was calculated as the mean F1 value in the first 100 ms of the normalized trajectory. Only F1 values from the initial 100 ms of the vowel were included, limiting the influence of auditory-based feedback control mechanisms, which have a latency of 100–150 ms in speech (Cai et al., 2012; Parrell et al., 2017; Tourville et al., 2008).
 
@@ -95,7 +180,7 @@ At the participant level, the one-shot adaptation response was calculated as a p
 
 At the trial level, a linear mixed model was employed to investigate the effect of perturbation direction on one-shot adaptation: One-shot adaptation response ~ perturbation direction + (1 | participant) + (1 | study). Effect size was calculated by dividing β by the residual standard deviation. At the participant level, a paired t-test was implemented to assess the distribution of participants’ mean one-shot adaptation response to upward perturbations vs. downward perturbations. Additional one-sample t-tests were conducted for each post-perturbation type against a mean of 0. Cohen’s d was calculated to determine effect size and conduct a power estimation. As in the compensation analysis, a cluster-based permutation test identified clusters of time points in which the adaptation response for each condition differed from 0 and, separately, from each other.
 
-## Relationship between behavioral responses
+### Relationship between behavioral responses
 
 In order to assess the relationship between compensation and the one-shot adaptation that followed it, we fitted a linear mixed effects model to one-shot adaptation with compensation, perturbation magnitude, and perturbation condition as fixed factors and with participant as a random intercept. To maintain a standardized magnitude measure between the two perturbation directions, compensation and one-shot adaptation responses from upward-shifted trials were multiplied by –1, removing the directional difference between up- and down-perturbation conditions. Separate analyses were conducted at the participant level (averaging across all trials) and at the individual trial level. To avoid problems in the linear models caused by predictors of very different scales, each perturbation magnitude was normalized by dividing by the mean of all perturbation magnitudes across participants. Study was not included as a separate random intercept in the model as it introduced singularity to the model due to its collinearity with participant and shift magnitude.
 

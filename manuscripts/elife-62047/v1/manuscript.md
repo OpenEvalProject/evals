@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Mitochondrial complex III (CIII 2 ) and complex IV (CIV), which can associate into a higher-order supercomplex (SC III 2 +IV), play key roles in respiration. However, structures of these plant complexes remain unknown. We present atomic models of CIII 2 , CIV, and SC III 2 +IV from Vigna radiata determined by single-particle cryoEM. The structures reveal plant-specific differences in the MPP domain of CIII 2 and define the subunit composition of CIV. Conformational heterogeneity analysis of CIII 2 revealed long-range, coordinated movements across the complex, as well as the motion of CIII 2 ’s iron-sulfur head domain. The CIV structure suggests that, in plants, proton translocation does not occur via the H channel. The supercomplex interface differs significantly from that in yeast and bacteria in its interacting subunits, angle of approach and limited interactions in the mitochondrial matrix. These structures challenge long-standing assumptions about the plant complexes and generate new mechanistic hypotheses.
+Mitochondrial complex III (CIII2) and complex IV (CIV), which can associate into a higher-order supercomplex (SC III2+IV), play key roles in respiration. However, structures of these plant complexes remain unknown. We present atomic models of CIII2, CIV, and SC III2+IV from Vigna radiata determined by single-particle cryoEM. The structures reveal plant-specific differences in the MPP domain of CIII2 and define the subunit composition of CIV. Conformational heterogeneity analysis of CIII2 revealed long-range, coordinated movements across the complex, as well as the motion of CIII2’s iron-sulfur head domain. The CIV structure suggests that, in plants, proton translocation does not occur via the H channel. The supercomplex interface differs significantly from that in yeast and bacteria in its interacting subunits, angle of approach and limited interactions in the mitochondrial matrix. These structures challenge long-standing assumptions about the plant complexes and generate new mechanistic hypotheses.
 
 ## Introduction
 
@@ -35,13 +35,335 @@ Here we present the cryoEM structures of CIII2 and SC III2+IV from the vascular 
 
 Mitochondria were isolated from etiolated V. radiata hypocotyls. The electron transport chain complexes were extracted using the gentle detergent digitonin. The extracted complexes were further stabilized with amphipathic polymers (amphipol) and separated on a sucrose gradient. Given our interest in respiratory complex I, we pooled fractions containing NADH-dehydrogenase activity and set up cryoEM grids. Details on the sucrose gradient and NADH-dehydrogenase activity of the sample are available in Maldonado et al., 2020. Upon 2D classification of the particles in the micrographs, it became evident that the pooled fractions contained not only the complex intermediate CI* (Maldonado et al., 2020), but also CIII2 and SC III2+IV. Complex III and CIV subunits were identified in the mixed mitochondrial pooled fraction by mass spectrometry, in addition to CI subunits (Supplementary file 1a, see Materials and methods for full dataset availability). Therefore, CIII2 and SC III2+CIV were purified in silico from the micrographs we had previously used to solve the structure of CI* (Maldonado et al., 2020). This is an example of ‘bottom-up structural proteomics’ (Ho et al., 2020) on a partially purified sample, in which a single sample was used for the structural determination of multiple respiratory complexes. Processing of the CIII2 and SC III2+IV particles resulted in near-atomic reconstructions of CIII2 at 3.2 Å, of CIV at 3.8 Å and of SC III2+IV at 3.8 Å (Figure 1, Videos 1–3, Figure 1—figure supplements 1–3, Table 1, Supplementary file 1b).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig1-v1.jpg)
+
+**Figure 1.:** (A) CryoEM density map for CIII2 in isolation (not assembled into a supercomplex; see also Figure 1—figure supplement 1 and Video 1). (B) Density map for CIV, obtained from re-centered focused refinements of CIV in the supercomplex (see also Figure 1—figure supplement 2 and Video 2). (C) Composite map of SC III2+IV, assembled by combining CIII2 and CIV-focused refinements from the SC particles (see also Figure 1—figure supplements 1 and 2 and Video 3). Volume surfaces are colored by subunit (see also Videos 1–3 and Figures 2 and 5). The approximate position of the matrix and IMS sides of the membrane are shown with black lines.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) A representative micrograph of the 8541 used for further processing (9816 collected). Scale bar, 100 nm. (B) Representative 2D class averages from reference-free classification of CIII2, SC III2+IV and CI* (last column). (C) Classification and refinement procedures used. Note that the same micrographs were used for the structural determination of V. radiata CIII2, CIV, SC III2+IV (this paper) and CI* (Maldonado et al., 2020) (green dashed box). The local resolution map and the half map gold-standard FSC curves are shown next to their respective final reconstructions.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** SC III2+IV particles selected from 2D classification were first aligned using a SC III2+IV model. These aligned particles were sorted by several rounds of 3D classification using a CIV-only mask (see Materials and methods). Results from the 3D classifications were pooled and duplicate particles were removed. Particles from this set were re-extracted centered at CIII2 and CIV, generating two sets of re-centered particles. These were 3D-refined, CTF-refined and polished independently using a CIII2 and CIV mask/model, respectively. For the CIV-centered particles, an additional round of 3D classification was performed on the shiny particles. The local resolution map, a slice through the local resolution map and the half map gold-standard FSC curves are shown next to their respective final reconstructions. The locally refined maps were combined in Phenix to generate a composite map based on the best SC III2+IV reconstruction (bottom left inset; see also Figure 1—figure supplement 1).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** See also Supplementary file 1b.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Digitonin-extracted, amphipol-stabilized V. radiata mitochondrial membrane sample was separated by a 15–45% (w:v) linear sucrose (suc) gradient and fractionated. Relevant fractions were pooled and concentrated as indicated by dashed boxes and labels (fractions 4–8, 9–10, 11–13, 14–18) after the in-gel activity assay in (B). (B) Select fractions of the sucrose gradient fractions from (A) were run on a BN-PAGE gel and subjected to in-gel NADH-dehydrogenase activity assay. Note that not all fractions were loaded on the gel, and that the peak on fraction 18 corresponds to aggregation, likely due to the use of old mitochondrial samples due to COVID-19-related research restrictions. (C) The activity of the pooled samples from (A) was tested with a spectroscopic activity assay from reduced-decylubiquinone to cytochrome c, in the presence or absence of 2 µM antimycin (anti) or myxothiazol (myxo). Three to five independent repeat measurements were done for each sample. The background-corrected average of the repeats is shown, together with the standard error from the mean (S.E.M., error bars). Significance (**, p<0.01; ***, p<0.001) was tested with two-tailed t-tests for each inhibitor-exposed sample with respect to the control. p-values from left to right: 0.97, 0.32, 8.0 × 10−5, 1.5 × 10−4, 4.7 × 10−6, 2.8 × 10−5, 0.0064, 0.0051. (D) The activity of the pooled samples from (A) was tested with a spectroscopic activity assay to follow the oxidation of reduced cytochrome c, in the presence or absence of 4 µM potassium cyanide (KCN). Three to four independent repeat measurements were done for each sample. The background-corrected average of the repeats is shown, together with the standard error from the mean (S.E.M., error bars). Significance (*, p<0.05; ***, p<0.001) was tested with two-tailed t-tests for each inhibitor-exposed sample with respect to the control. p-values from left to right: 0.25, 0.0398, 0.0199, 7.9 × 10−4.
+
+**Table 1.**
+ Cryo-EM data collection, reconstruction, model refinement and validation statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="9">Data Collection and processing</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Microscope</td>
+      <td colspan="8">Titan krios (UCSF)</td>
+    </tr>
+    <tr>
+      <td>Camera</td>
+      <td colspan="8">K3 detector equipped with GIF</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td colspan="8">60,010</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td colspan="8">300 kV</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/Å2)</td>
+      <td colspan="8">51</td>
+    </tr>
+    <tr>
+      <td>Defocus range (µm)</td>
+      <td colspan="8">−0.5 to −2.0</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td colspan="8">0.8332</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td colspan="8">SerialEM</td>
+    </tr>
+    <tr>
+      <td>Reconstruction</td>
+      <td>CIII2</td>
+      <td colspan="3">SCIII2+IV</td>
+      <td>CIII2 focused</td>
+      <td colspan="2">CIV-focused</td>
+      <td>SC Composite</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>cryoSPARC</td>
+      <td colspan="3">cryoSPARC</td>
+      <td>Relion</td>
+      <td colspan="2">Relion</td>
+      <td>Phenix</td>
+    </tr>
+    <tr>
+      <td>Number of particles</td>
+      <td>48,111</td>
+      <td colspan="3">28,020</td>
+      <td>38,410</td>
+      <td colspan="2">29,348</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td>Box size (pixels)</td>
+      <td>512</td>
+      <td colspan="3">512</td>
+      <td>512</td>
+      <td colspan="2">512</td>
+      <td>512</td>
+    </tr>
+    <tr>
+      <td>Final resolution (Å)</td>
+      <td>3.2</td>
+      <td colspan="3">3.8</td>
+      <td>3.7</td>
+      <td colspan="2">3.8</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B factor (Å2)</td>
+      <td>67</td>
+      <td colspan="3">61</td>
+      <td>83</td>
+      <td colspan="2">77</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td>EMDB ID</td>
+      <td>22445</td>
+      <td colspan="3">22449</td>
+      <td>22450</td>
+      <td colspan="2">22447</td>
+      <td>22448</td>
+    </tr>
+    <tr>
+      <td>Model</td>
+      <td colspan="2">CIII2</td>
+      <td colspan="4">CIV</td>
+      <td colspan="2">SC composite</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td colspan="8">Phenix</td>
+    </tr>
+    <tr>
+      <td>Initial model (PDB code)</td>
+      <td colspan="3">6Q9E, 6HU9</td>
+      <td colspan="3">6HU9, 5B1A</td>
+      <td colspan="2">6Q9E, 6HU9, 5B1A</td>
+    </tr>
+    <tr>
+      <td>Map/model correlation</td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å)</td>
+      <td colspan="3">3.3</td>
+      <td colspan="3">3.9</td>
+      <td colspan="2">3.9</td>
+    </tr>
+    <tr>
+      <td>d99 (Å)</td>
+      <td colspan="3">3.5</td>
+      <td colspan="3">3.9</td>
+      <td colspan="2">3.9</td>
+    </tr>
+    <tr>
+      <td>FSC model 0.5 (Å)</td>
+      <td colspan="3">3.3</td>
+      <td colspan="3">3.8</td>
+      <td colspan="2">3.8</td>
+    </tr>
+    <tr>
+      <td>Map CC (around atoms)</td>
+      <td colspan="3">0.88</td>
+      <td colspan="3">0.85</td>
+      <td colspan="2">0.84</td>
+    </tr>
+    <tr>
+      <td>Model composition</td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td colspan="3">32,931</td>
+      <td colspan="3">12,772</td>
+      <td colspan="2">45,164</td>
+    </tr>
+    <tr>
+      <td>Protein residues</td>
+      <td colspan="3">3983</td>
+      <td colspan="3">1497</td>
+      <td colspan="2">5472</td>
+    </tr>
+    <tr>
+      <td>Number of chains</td>
+      <td colspan="3">20</td>
+      <td colspan="3">10</td>
+      <td colspan="2">30</td>
+    </tr>
+    <tr>
+      <td>Number of ligands and cofactors</td>
+      <td colspan="3">8</td>
+      <td colspan="3">6</td>
+      <td colspan="2">14</td>
+    </tr>
+    <tr>
+      <td>Number of lipids</td>
+      <td colspan="3">29</td>
+      <td colspan="3">20</td>
+      <td colspan="2">43</td>
+    </tr>
+    <tr>
+      <td>Atomic Displacement Parameters (ADP)</td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Protein average (Å2)</td>
+      <td colspan="3">114.37</td>
+      <td colspan="3">38.28</td>
+      <td colspan="2">53.17</td>
+    </tr>
+    <tr>
+      <td>Ligand average (Å2)</td>
+      <td colspan="3">79.11</td>
+      <td colspan="3">50.71</td>
+      <td colspan="2">66.25</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td colspan="3">0.005</td>
+      <td colspan="3">0.006</td>
+      <td colspan="2">0.007</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td colspan="3">0.704</td>
+      <td colspan="3">0.853</td>
+      <td colspan="2">1.107</td>
+    </tr>
+    <tr>
+      <td>Ramachandran Plot</td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td colspan="3">93.13</td>
+      <td colspan="3">90.75</td>
+      <td colspan="2">92.55</td>
+    </tr>
+    <tr>
+      <td>Allowed (%)</td>
+      <td colspan="3">6.82</td>
+      <td colspan="3">9.18</td>
+      <td colspan="2">7.40</td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td colspan="3">0.05</td>
+      <td colspan="3">0.07</td>
+      <td colspan="2">0.06</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td colspan="3"></td>
+      <td colspan="3"></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>MolProbity score</td>
+      <td colspan="3">1.97</td>
+      <td colspan="3">2.19</td>
+      <td colspan="2">2.04</td>
+    </tr>
+    <tr>
+      <td>Clash score</td>
+      <td colspan="3">10.03</td>
+      <td colspan="3">14.21</td>
+      <td colspan="2">11.51</td>
+    </tr>
+    <tr>
+      <td>Rotamer outliers (%)</td>
+      <td colspan="3">0.03</td>
+      <td colspan="3">0.08</td>
+      <td colspan="2">0.04</td>
+    </tr>
+    <tr>
+      <td>EMRinger score</td>
+      <td colspan="3">2.80</td>
+      <td colspan="3">2.32</td>
+      <td colspan="2">2.01</td>
+    </tr>
+    <tr>
+      <td>PDB ID</td>
+      <td colspan="3">7JRG</td>
+      <td colspan="3">7JRO</td>
+      <td colspan="2">7JRP</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 1.](https://cdn.elifesciences.org/articles/62047/elife-62047-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/62047/elife-62047-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/62047/elife-62047-video3.mp4.jpg)
+
 Further examination using spectroscopic activity assays (Belt et al., 2017) confirmed that pooled fractions of the preparation contained CIII2 respiratory activity (electron transfer from reduced decylubiquinone to cytochrome c) that was inhibited by CIII2 inhibitors antimycin A and myxothiazol (Figure 1—figure supplement 4). The sample also showed CIV activity from reduced cytochrome c to oxygen that was inhibited by CIV inhibitor potassium cyanide (Figure 1—figure supplement 4). Although MPP activity of CIII2 was recovered from isolated V. radiata mitochondrial membranes (not shown), MPP activity assays (Braun et al., 1992; Teixeira et al., 2015) of the pooled fractions were inconclusive. Owing to research restrictions during the 2020 COVID-19 pandemic, we were not able to further optimize the peptidase assay for the pooled fractions. However, given the high superposition between the V. radiata MPP domain shown here and structures of active MPP (see below), we believe our inability to confirm MPP activity in this case does not significantly impact our interpretation of the data.
 
-## Complex III dimer (CIII2)
+### Complex III dimer (CIII2)
 
-## Overall structure and ligands
+#### Overall structure and ligands
 
 The V. radiata (Vr) structure confirms that VrCIII2 contains 10 subunits per CIII monomer (three conserved, mitochondrially encoded subunits and seven accessory subunits), similar to yeast and mammals (Figure 2, Figure 2—figure supplement 1). As in mammals and yeast, VrCIII2 contains 13 transmembrane helices per protomer: eight from COB (cyt b) and one from each of CYC1 (cyt c1), UCR1, QCR8, QCR9, and QCR10 (Supplementary file 1b). The MPP domain, composed of two MPP-α/β heterodimers (one per CIII protomer), extends into the matrix. The C-terminus of CYC1 (six α-helices and a 2-strand β-sheet), the entire QCR6 subunit and UCR1’s head domain extend into the intermembrane space (IMS). Consistent with their known flexibility and conformational heterogeneity, the linker and head domains of UCR1 (Rieske iron-sulfur subunit) were disordered in our reconstruction and an atomic model was not produced for this region of UCR1. (Throughout the manuscript, we use plant subunit nomenclature unless otherwise stated; see Supplementary file 1c for details and name equivalence in other organisms.)
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig2-v1.jpg)
+
+**Figure 2.:** (A) CIII2 in cartoon representation with co-factors in sphere representation. The approximate position of the inner mitochondrial membrane is shown with black lines, and the matrix and inter-membrane space (IMS) sides are labeled. (B) Position of the observed CIII2 co-factors. Note that the iron-sulfur groups are not shown because the flexible head domain of the iron-sulfur protein is disordered in our cryoEM density. CIII2 shown in transparent surface representation, cofactors in stick representation. (C) Distances between the heme groups are shown, calculated edge-to-edge to the macrocyclic conjugated system. (D) Each CIII and co-factor are shown as in (A) with subunits labeled. The CIII monomers are separated for clarity and the two-fold symmetry axis is indicated. (E) Density consistent with lipids (yellow) is shown overlaid on the CIII2 cartoon model (transparent teal). bH, high-potential heme b; bL, low potential heme b; c1, heme c1; IMS, intermembrane space.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A-C) CIII subunits are shown for (A) V. radiata (this work), (B) S. cerevisiae (PDB: 6HU9) and (C) B. taurus (PDB: 1BGY). Yeast and bovine subunits were independently aligned with the corresponding V. radiata subunit. The orientation of each subunit corresponds to the orientation on CIII2 in the top row. Note that only the atomically modelled residues are shown. Hence, the Rieske head domain of V. radiata and B. taurus (UCR1), as well as the N- and C-termini of V. radiata QCR10 are missing (labeled with **). Differences discussed in the text are labeled with an asterisk (*).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Sequence alignment of COB performed in Clustal Omega. Secondary-structure elements are highlighted in a rainbow pattern (starting with dark blue in the N-terminus to red in the C-terminus) and labeled a-F. The general locations of the residues that compose the QN site (dashed tan lines) and QP site (dashed brown lines) are labeled. Residues that directly hydrogen-bond with ubiquinone in the bovine QN site, as well as the key residues in the cd1 helix and the PEWY motif, are marked in boxes (solid lines). Other key residues, as per their role in CIII2 of other organisms (Xia et al., 2013; Esser et al., 2004; Gao et al., 2003), are marked with arrows: blue for residues that establish H-bonds with inhibitors; orange for residues whose mutation confers resistance to inhibitors; magenta for residues whose mutation affects COB assembly or the re-oxidation of bh heme. V. radiata residues edited in our atomic model are marked with gray arrows. See also Supplementary file 1d for further detail on the RNA edits. Symbols underneath aligned residues: * fully conserved, : conservation between group of strongly similar properties, . conservation between group of weakly similar properties. (B) VrCOB shown in cartoon representation, colored in rainbow pattern with the secondary-structure elements labeled. (C) Superposition of COB subunits from V. radiata (teal), S. cerevisiae (dark pink, PDB 6HU9), B. taurus (light pink, PDB 1BGY) shown in cartoon representation. (D) Sequence identity percentages between COB subunits of the above organisms, calculated with the Clustal Omega alignment tool in Geneious. (E) Root mean square difference (RMSD) between pruned COB subunits of the above organisms, calculated in ChimeraX and shown in Å. Parentheses indicate the number of pruned atom pairs considered over the total number of atom pairs.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A,D) Superposition of cyt c1 (CYC1) (A) and Rieske iron-sulfur protein (UCR1) (D) subunits from V. radiata (teal), S. cerevisiae (dark pink, PDB 6HU9), B. taurus (light pink, PDB 1BGY). (B,E) Sequence identity percentages between CYC1 (B) and UCR1 (E) subunits of the above organisms, calculated with the Clustal Omega alignment tool in Geneious. Mitochondrial import pre-sequences were not taken into account for the calculation. (C,F) Root mean square difference (RMSD) between pruned CYC1 (C) and UCR1 (F) subunits of the above organisms, calculated in ChimeraX and shown in Å. Parentheses indicate the number of pruned atom pairs considered over the total number of atom pairs. Note that the RMSD calculations in (F) do not include the head domain of VrUCR1 or Bt_UQCRFS1, as these structures do not contain atomic models for this domain. (G) Sequence alignment of UCR1 subunit (without cleaved pre-sequences) of the above organisms, with the addition of Gallus gallus (Gg), performed with Clustal Omega. Solid light blue box highlights the V. radiata residues in our atomic model. Dashed blue rectangle indicates the hinge region. The rest of the sequence corresponds to the head domain. Residues that coordinate the FeS cluster are highlighted in yellow. Symbols underneath aligned residues: * fully conserved,: conservation between group of strongly similar properties,. conservation between group of weakly similar properties. (H-I) Superposition of QCR7 (H) and QCR8 (I) from V. radiata (teal), S. cerevisiae (dark pink; PDB: 6HU9) and B. taurus (light pink; PDB: 5B1A). Subunits were aligned with the corresponding Vigna radiata subunit. Subunit names correspond to V. radiata (see also Supplementary file 1c). Asterisks (*) mark the structural features present in ScQcr7 and ScQcr8 that are missing in the V. radiata and B. taurus, as discussed in the text. (J) Superposition of VrCOB (teal) with QCR7 (red) and QCR8 (yellow) from S. cerevisiae, aligned by the COB subunits. Asterisks correspond to the features in (I).
 
 All heme groups (heme bH, bL and heme c1) were clearly visible and modelled into each cyt b and cyt c1 subunit of the dimer. The distances between the hemes were consistent with that previously seen in other organisms (Figure 2B and C; Cramer et al., 2011). A catalytic Zn2+ ion was also visible and modelled into each MPP-β subunit (Figure 2B). Given that we were not able to build an atomic model for the head domain of UCR1, we did not model the iron-sulfur clusters (see 3DVA analysis below for more details).
 
@@ -51,23 +373,39 @@ The vast majority of the residues that form the QP and QN sites and inhibitor-bi
 
 It is well established that the mRNAs of several subunits of plant respiratory complexes, including several CI subunits, CIII’s COB and CIV’s COX1-3, undergo cytidine-to-uridine RNA editing at several sites (Covello and Gray, 1989; Gualberto et al., 1989; Hiesel et al., 1989). This mitochondrial RNA editing is widely conserved across vascular and non-vascular plants (Takenaka et al., 2013; Sper-Whitis et al., 1996), and most generally acts to restore consensus conserved sequences (Small et al., 2020). Inspection of the cryoEM density for the VrCOB subunits showed that the A. thaliana COB RNA-editing sites (Bentolila et al., 2008; Giegé and Brennicke, 1999) are conserved in V. radiata. Moreover, V. radiata COB contains additional RNA edit sites present in wheat, potato and rice (Ito et al., 1996; Zanlungo et al., 1993; Supplementary file 1d). Given the conservation pattern and the fact that the cryoEM density at these sites was unambiguous, residues were mutated to the edited residues in our model. RNA editing was also identified in V. radiata’s COX1 and 3 (see CIV section), as well as in CI subunits (Maldonado et al., 2020).
 
-## Differences in mitochondrially encoded subunits and non-MPP accessory subunits
+#### Differences in mitochondrially encoded subunits and non-MPP accessory subunits
 
 Although the sequence conservation of the V. radiata (Vr) mitochondrially encoded CIII2 subunits (COB, CYC1, UCR1) with respect to Saccharomyces cerevisiae (Sc) and bovine (Bos taurus, Bt) homologs is modest (~50%), their structural conservation is high (0.75–0.95 Å main chain RMSD, Figure 2—figure supplements 2–3). For UCR1, we are only able to compare the regions for which we built an atomic model, that is the N-terminal loop and the main helix but not the head domain. Whereas the helix is highly structurally conserved, VrUCR1 shows an extended N-terminal unstructured loop and short helix that provide more extensive contacts with MPP-β (see MPP section below).
 
 Several of the accessory subunits of VrCIII2 show significant differences with their yeast and bovine homologs. VrMPP-α and -β, which show the most notable differences, are described in detail in the following section. Here, we discuss VrQCR7 and VrQCR8 (Figure 2—figure supplement 3H–J). As in mammals and yeast, VrQCR7 (ScQcr7p, BtUQCRB) contains a helix that contacts the MPP-β anchoring β-sheet (via VrCYC1 and VrQCR8), a helix that contacts MPP-β in the opposite CIII monomer and a helix that contacts COB’s surface on the matrix side (COB's BC, DE and FG loops, and helices G and H; see Figure 2—figure supplement 2 for COB helix nomenclature). Nevertheless, similar to the bovine homolog, VrQCR7 is missing an N-terminal helix that in yeast provides several additional contacts with cyt b’s helix H and FG loop (Figure 2—figure supplement 3H). Similar to mammals and yeast, VrQCR8 (ScQcr8, BtUQCRQ) provides one strand to the multi-subunit β-sheet that helps anchor the MPP domain to the rest of CIII2 (Figure 2—figure supplement 3I and J). Additionally, VrQCR8’s transmembrane helix contacts VrCOB’s helices G and H. Nevertheless, like BtUQCRQ but in contrast to ScQcr8, VrQCR8 lacks a short perpendicular helix that stacks below cyt b’s helix H in yeast (Figure 2—figure supplement 3I). Moreover, ScQcr8 also has a longer unstructured N-terminus that extends into the cavity of the MPP domain, contacting helix a and DE loop of COB in the same CIII protomer, as well as the helix a of COB of the opposite protomer. Therefore, the interaction interface between VrQCR8 and VrCOB is reduced relative to that of yeast (Figure 2—figure supplement 3J).
 
-## Differences in the MPP domain
+#### Differences in the MPP domain
 
 Each CIII monomer contains an MPP-α/β heterodimer (plant MPP-α/β, yeast Cor1/2 and mammalian UQCR1/2). Given that both MPP subunits have concave surfaces that face each other, the MPP-α/β heterodimer contains a large central cavity. The VrMPP-α/β dimer shows this overall ‘clam shell’ configuration, with a highly negative surface in the interior of the cavity (Figure 3A, Figure 3—figure supplement 1A–B). This negative surface has been shown to interact with the generally positively charged pre-sequences of the MPP substrates (Taylor et al., 2001). VrMPP-β contains the characteristic inverse Zn-binding HxxEH motif of pitrilysin endopeptidases, as well as all the conserved catalytic residues (Figure 3—figure supplement 1; Gakh et al., 2002). Our cryoEM map shows density for the Zn2+ ion, which is coordinated by residues His137, His141, Glu217 (Figure 3B). The fourth Zn2+-coordinating atom—the oxygen of the water molecule that exerts the nucleophilic attack on the carbonyl carbon of the peptide bond (Gakh et al., 2002)—was not modelled. The glutamate that acts as a general base catalyst of this water molecule (Gakh et al., 2002; Taylor et al., 2001) (Glu140) is also conserved in V. radiata. MPP-β residues that were confirmed in the substrate-bound yeast soluble MPP structure (Taylor et al., 2001) to be critical for substrate recognition are conserved both in the sequence and structural location in VrMPP-β (Glu227, Asp231, Phe144, Asn167, Ala168, Tyr169; Figure 3B). Additionally, VrMPP-α contains the flexible glycine-rich stretch believed to be involved in substrate binding and/or product release in soluble ScMPP-α (Taylor et al., 2001). Consistent with this conformational flexibility, our cryoEM map shows weak density for VrMPP-α residues 340–344. Despite this structural conservation, the MPP enzymatic activity of our preparation could not be confirmed at this time.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig3-v1.jpg)
+
+**Figure 3.:** (A) Ribbon representation of the VrMPP-α (blue) and VrMPP-β (light blue) looking into the central cavity. Dashed rectangle indicates the location of the active site, detailed in (B). (B) MPP-β active site [rotated 90° about vertical axis with respect to (A)]. Shown in stick representation are the Zn-coordinating residues (His137, His141, Glu217), the catalytic water-activating residue (Glu140) and conserved, putative substrate-recognition residues (Phe144, Glu227, Asp231, Asn167, Tyr169). Residue Ala168 is also conserved, but not visible in this orientation. (C–D) Superposition of V. radiata and S. cerevisiae CIII2 MPP domain subunits. VrMPP-α and -β’s structural elements not present in ScCor2 and ScCor1 are marked. Structural elements that are additionally not present in yeast soluble MPP, i.e. plant-specific features, are marked with a cross (†). (D) VrMPP-α (blue) and ScCor2 (dark pink). (D) VrMPP-β (light blue) and ScCor1 (dark pink). β, β−strand; α, α-helix; N-ter, N-terminus. See also Figure 3—figure supplements 1–2 for further details. S. cerevisiae structures from PDB: 6HU9.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A-B) Electrostatic potential of surface of VrMPP-β (A) and VrMPP-α (B). Electrostatic potential was calculated using Delphi (Li et al., 2012; Li et al., 2019), with standard parameters. Red, negative; white, neutral; blue, positive. (C) VrMPP-β-anchoring interactions. The main anchor is marked with an asterisk (*) and comprises the β-sheet with strands from VrMPP-β, VrCYC1 and VrQCRC, as well as further interactions with the VrUCR1 N-terminus and helix from VrQCR7. The plant-specific interactions joining one MPPα/β dimer to the other (N-termini of VrMPP-α and VrMPP-β) are marked with a cross (†). (D) Sequence identity percentages between MPP-β and MPP-α homologs both CIII2 subunits and soluble MPP in V. radiata (Vr), S. cerevisiae (Sc) and B. taurus (Bt). MPP subunits that are part of CIII and that possess expected MPP enzymatic activity are marked with a plus symbol (MPP activity could not be confirmed for our isolated sample—see main text). A plus symbol in parenthesis indicates that BtUQCR1/2 only have known enzymatic MPP activity towards one substrate. Sequence identity percentages were calculated using the Clustal Omega multiple alignment tool in Geneious. (E) Protein sequence alignment of VrMPP-β subunit (VrMPPb) and its CIII2 and soluble MPP homologs from (D) were aligned with Clustal Omega. For space, only the first ~200 residues of each sequence are shown. Key residues and sequences are highlighted as follows. Green: catalytic residues; orange: substrate-recognition residues; gray: cleaved import sequence (as per Uniprot entry and/or existing structure); yellow: VrMPP-β’s N terminal extension. Symbols underneath aligned residues: * fully conserved, : conservation between group of strongly similar properties, . conservation between group of weakly similar properties.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Protein sequences of V. radiata‘s MPP-α subunit (VrMPPa), S. cerevisiae (Sc) and B. taurus (Bt) CIII2 (Cor2, UQCR2) and soluble MPP (MPPa) subunits were aligned with Clustal Omega. Key residues and sequences are highlighted as follows: gray for cleaved import pre-sequence (as per Uniprot entry and/or existing structure); yellow for VrMPP-α’s N terminal extension; green for substrate binding/release glycine-rich loop; blue for elements missing in ScCor2; orange for VrMPP-α’s plant-specific additional secondary-structure elements. Symbols underneath aligned residues: * fully conserved, : conservation between group of strongly similar properties, . conservation between group of weakly similar properties. (B) Summary of differences in structural features of VrMPP-α and its homologs from (A), with the same color coding. Plus symbols (+) indicate the presence of the structural element (residue numbers in parenthesis), obtained from inspection of the structures. MPP subunits that are part of CIII and that possess expected MPP enzymatic activity are marked with a plus symbol (MPP activity could not be confirmed for our isolated sample—see main text). PDB codes of structures used: 1HR6 (ScMPP-α), 6HU9 (ScCor2), 1BGY (BtUQCR2). N.a. indicates that the BtMPP-α structure is not available and thus the comparison could not be made.
 
 VrMPP-α/β’s sequences are more similar to the yeast (and bovine) soluble MPP subunits than to the respective CIII2 subunits (Figure 3—figure supplement 1C). Consistently, the VrMPP-α/β dimer shows secondary-structure elements that are present in ScMPP-α/β and BtMPP-α/β but not in ScCor1/2. For instance, on the posterior surface of the cavity, yeast, bovine and mung bean MPP-α fold into six additional helices compared to ScCor2. Additionally, they contain an extra strand in the β-sheet underneath this helical bundle (Figure 3C, Figure 3—figure supplement 2).
 
 Furthermore, some structural features of VrMPP-α and -β appear to be specific to plants, compared to the available structures (Figure 3C–D, Figure 3—figure supplements 1–2, Videos 4–5). Firstly, VrMPP-α shows a short two-strand β-sheet on its posterior surface. Secondly, the extended N-terminus of VrMPP-α wraps over the posterior surface of VrMPP-β in the same CIII monomer. Thirdly, a ~ 50 amino-acid N-terminal extension on VrMPP-β folds into an alpha helix that forms extensive contacts with MPP-α of the same CIII protomer as well as with VrQCR7 of the opposite protomer. A further difference in the overall configuration of the VrMPP domain comes from VrUCR1, whose longer N-terminus forms extensive plant-specific contacts with MPP-β’s helical bundle and β-sheet (Figure 3—figure supplement 2).
 
+![Video 4.](https://cdn.elifesciences.org/articles/62047/elife-62047-video4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/62047/elife-62047-video5.mp4.jpg)
+
 These additional contacts and secondary-structure elements may serve to stabilize plants’ MPP domain. Furthermore, they strengthen the connection between the VrMPP domain and the rest of VrCIII2. These plant-specific features of the MPP domain could play functional roles in plant CIII2’s peptidase activity and, potentially, on the coupling between CIII2’s respiratory and non-respiratory functions (see Discussion).
 
-## Conformational heterogeneity analysis of CIII2
+#### Conformational heterogeneity analysis of CIII2
 
 Given CIII2’s known conformational flexibility, for example the essential (Xiao et al., 2000; Obungu et al., 2000; Nett et al., 2000) motion of UCR1’s head domain during the Q-cycle, we decided to explore the conformational heterogeneity of our CIII2 particles using cryoSPARC’s 3D variability analysis (3DVA) (Punjani and Fleet, 2020). The 3DVA algorithm uses probabilistic principal component analysis to produce distinct 3D volumes (one per principal component) that reveal the sample’s conformational heterogeneity as a continuous motion. Analyzing the individual frames of the motion of the volume, one can reconstruct discrete and continuous conformational changes of the protein sample.
 
@@ -75,27 +413,63 @@ We first analyzed the conformational heterogeneity of the entire CIII2 low-pass 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig4-v1.jpg)
 
-**Figure 4.:** V. radiata CIII2 reveals complex-wide, coordinated movements and shows the swinging motion of UCR1 in the absence of substrates or inhibitors.(A–B) CIII2-wide motions revealed by principal component 2 (A) and 3 (B). Frame 1 (left) and frame 20 (right) of the continuous motion of CIII2 (teal surface) are shown. Black arrows indicate the motion. (A) Rocking motion of CIII2. Solid lines indicate the main axis of the rocking. Dashed lines indicate the axis of the other frame for comparison. (B) Elongation and contraction of CIII2 in the vertical and horizontal directions. Solid rectangles indicate the edges of the complex in that frame. Dashed rectangles indicate the edges of the complex in the other frame, for comparison. The dimensions of the rectangle sides are given in Å. (C) Frame 1 (left) and frame 20 (right) of the continuous motion of the UCR1 head domain shown for CIII2 protomer 1 (top) and protomer 2 (bottom). The density corresponding to UCR1 is shown in pink. The position of the UCR1 head domain is indicated by b (proximal) or c1 (distal). Note that, when protomer one is in the b position, protomer two is in the c1 position and vice versa. See Videos 6–9 for the motion of all components.
+**Figure 4.:** (A–B) CIII2-wide motions revealed by principal component 2 (A) and 3 (B). Frame 1 (left) and frame 20 (right) of the continuous motion of CIII2 (teal surface) are shown. Black arrows indicate the motion. (A) Rocking motion of CIII2. Solid lines indicate the main axis of the rocking. Dashed lines indicate the axis of the other frame for comparison. (B) Elongation and contraction of CIII2 in the vertical and horizontal directions. Solid rectangles indicate the edges of the complex in that frame. Dashed rectangles indicate the edges of the complex in the other frame, for comparison. The dimensions of the rectangle sides are given in Å. (C) Frame 1 (left) and frame 20 (right) of the continuous motion of the UCR1 head domain shown for CIII2 protomer 1 (top) and protomer 2 (bottom). The density corresponding to UCR1 is shown in pink. The position of the UCR1 head domain is indicated by b (proximal) or c1 (distal). Note that, when protomer one is in the b position, protomer two is in the c1 position and vice versa. See Videos 6–9 for the motion of all components.
+
+![Video 6.](https://cdn.elifesciences.org/articles/62047/elife-62047-video6.mp4.jpg)
+
+**Video 6.:** The 3DVA volumes are shown as a continuous movie. CIII2 in teal, QCR10 in dark purple.
+
+![Video 7.](https://cdn.elifesciences.org/articles/62047/elife-62047-video7.mp4.jpg)
+
+**Video 7.:** The 3DVA volumes are shown as a continuous movie. CIII2 in teal, QCR9 in lilac, QCR10 in dark purple.
+
+![Video 8.](https://cdn.elifesciences.org/articles/62047/elife-62047-video8.mp4.jpg)
+
+**Video 8.:** The 3DVA volumes are shown as a continuous movie. CIII2 in teal.
+
+![Video 9.](https://cdn.elifesciences.org/articles/62047/elife-62047-video9.mp4.jpg)
+
+**Video 9.:** The 3DVA volumes are shown as a continuous movie. CIII2 in teal.
 
 We then examined the conformational heterogeneity of the UCR1 head domain by using a mask around the IMS-exposed domains of CIII2 at 5 Å. The largest variability component revealed a near-continuous conformational motion in the position of the head domain of UCR1, demonstrating its swinging motion from the proximal b position (close to COB’s QP-site) to its distal c position (close to CYC1) during the Q-cycle (Xia et al., 2013; Cooley, 2013; Berry and Huang, 2011; Figure 4C). Moreover, the motions of the UCR1 head domains of the CIII dimer in this variability component were anti-parallel: that is, when one domain is in the proximal position, the other one is in the distal position and vice versa (Figure 4C, Video 10). However, weaker variability components also suggested that the position of UCR1 head domains may also be equivalent in some instances.
 
+![Video 10.](https://cdn.elifesciences.org/articles/62047/elife-62047-video10.mp4.jpg)
+
+**Video 10.:** The 3DVA volumes are shown as a continuous movie. A V. radiata UCR1 head-domain homology model was rigid-body fit into the 3DVA volume.
+
 Given that the conformational heterogeneity precluded us from building an atomic model of the UCR1 head domain, we rigid-body fit a homology model into the extreme locations of the 3DVA volume and confirmed these corresponded to the Q-cycle proximal and distal positions (Figure 4C, Video 10). At the distal position, the FeS cluster of VrUCR1 was ~11 Å away from CYC1’s heme c1 (measured edge-to-edge to the ring system). This is in agreement with previous structures of the UCR1 head domain and within electron-transfer distance (14 Å) (Huang et al., 2005; Palsdottir et al., 2003). Given that we did not model quinone in our structure, we could not measure its distance to the UCR1 FeS cluster at the proximal position. However, we measured the distance between UCR1’s FeS-coordinating residue Cys235 and COB’s Tyr285, which is within H-bonding distance to quinone (Palsdottir et al., 2003) (ScRip1-Cys180 and ScCyb-Tyr279 in yeast). This distance (~4.5 Å) was also consistent with those previously seen (Huang et al., 2005; Palsdottir et al., 2003), placing the V. radiata FeS cluster within electron-transfer distance to quinone when the head domain is at the proximal position. This confirms that the motion revealed by 3DVA is the expected swinging motion of UCR1. Moreover, given that this flexibility was observed in the absence of substrates or inhibitors, it confirms that UCR1’s head domain is intrinsically mobile. Further studies are needed to examine to what extent the movement of the UCR1 head domains are correlated across the CIII dimer and what the mechanistic implications of parallel or anti-parallel movements may be.
 
-## Complex IV
+### Complex IV
 
-## Overall structure and ligands
+#### Overall structure and ligands
 
 The initial resolution of CIV in SC III2+IV was lower than that of CIII2 (Figure 1—figure supplement 1). This is due to the fact that during 3D-refinement the particle poses are dominated by the larger CIII2 and that there is conformational flexibility at the supercomplex interface. This flexibility between CIII2 and CIV within SC III2+IV has been previously seen in cryoEM reconstructions of CIII2-CIV supercomplexes in bacteria and yeast (Hartley et al., 2019; Rathore et al., 2019; Gong et al., 2018; Wiseman et al., 2018). Nonetheless, focused refinements around CIV resulted in an improved reconstruction with a nominal resolution of 3.8 Å for CIV, which allowed for atomic model building (Figure 5, Figure 1—figure supplement 2, Video 2).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig5-v1.jpg)
+
+**Figure 5.:** (A) CIV in cartoon representation colored by subunit with co-factors in sphere representation colored by atom. The position of the inner mitochondrial membrane is indicated with black lines, and matrix and inter-membrane space (IMS) are labeled. Names of the subunits previously believed to be plant-specific are given in parentheses. (B) Position of the observed CIV co-factors. CIV shown in transparent surface representation, cofactors in stick representation. (C) Edge-to-edge distances between the heme groups and the copper co-factors are shown. The co-factors are rotated 20 degrees relative to (B) for clarity. (E) Density consistent with lipids (yellow) is shown overlaid on the CIV cartoon model (transparent teal). a, heme a; a3, heme a3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A,D,G) Superposition of COX1 (A), COX2 (D) and COX3 (G) subunits from V. radiata (teal), S. cerevisiae (dark pink, PDB 6HU9), B. taurus (light pink, PDB 5B1A). (B,E,H) Sequence identity percentages between COX1 (B), COX2 (E) and COX3 (H) subunits of the above organisms, calculated with the Clustal Omega alignment tool in Geneious software. (C,F,I) Root mean square difference (RMSD) between pruned COX1 (C), COX2 (F) and COX3 (I) subunits of the above organisms, calculated in ChimeraX and shown in Å. Parentheses indicate the number of pruned atom pairs considered over the total number of atom pairs. (J) HPEVY ring of VrCOX1. VrCOX1 helix shown in cartoon representation, with the covalent ring between Nε-His243 and Cε-Tyr247 shown in stick. Density shown as transparent surface. Heme a3 (a3) and CUB of the dinuclear center shown as stick.
+
 At this resolution, all prosthetic groups (heme a, heme a3, dinuclear copper A and copper B at the binuclear center), as well as a Mg2+ ion and a Zn2+ ion were visible and modelled into the structure (Figure 5B–C). The residues that coordinate the prosthetic groups, including the covalent bond between Cε-Tyr247 and the Nε-His243 that coordinates copper B in VrCOX1, are clearly visible and hence conserved in V. radiata. The distances between the prosthetic groups are consistent with those seen in other organisms (Figure 5C; Rich, 2017). Additionally, density consistent with cardiolipin, phosphatidylethanolamines and phosphatidylcholines was seen and modelled into the CIV map (Figure 5D). These lipids and acyl chains are located in hydrophobic cavities of VrCOX1 and VrCOX3, in similar locations to those seen in yeast and bovine CIV. Moreover, conserved RNA-editing sites were unambiguously identified in VrCOX1 and VrCOX3 and thus changed in the model (Supplementary file 1d).
 
-## Plant CIV composition
+#### Plant CIV composition
 
 The subunit composition of plant CIV has remained unclear, with different mass spectrometry studies suggesting up to 13 subunits, including some putative plant-specific subunits (Millar et al., 2004; Klodmann et al., 2011; Senkler et al., 2017; Elina Welchen and Mansilla, 2018). Our structure shows that VrCIV is composed of 10 subunits (three conserved, mitochondrially encoded subunits and seven accessory subunits). In contrast, mammalian CIV contains 11 accessory subunits and yeast CIV contains 9. Thus, although VrCIV’s overall architecture is similar to other organisms', given the lack of certain homologs (ScCox26, ScCox6/BtCOX5a, BtCOX7b, BtCOX8, BtNDUFA4), there are significant differences (Figure 6, Figure 6—figure supplement 1).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig6-v1.jpg)
+
+**Figure 6.:** (A–C) Superposition of subunits of V. radiata (Vr, teal), S. cerevisiae (Sc, dark pink; PDB: 6HU9) and B. taurus (Bt, light pink; PDB: 5B1A) CIV. Subunits were aligned with the corresponding V. radiata subunit. Asterisks mark the differences discussed in the text. Names of the subunits previously believed to be plant-specific are given in parentheses. (A) Superposition of VrCOX4 (COX-X2), ScCox5a, BtCOX4. (B) Superposition of VrCOX5c, ScCox9, BtCOX6c. (C) Superposition of the yeast and bovine CIV subunits that do not have homologs in V. radiata, onto the V. radiata CIV model (transparent teal). Alignment by COX1 subunits. (D) Location of the V. radiata accessory subunits that show notable differences with their yeast/bovine homologs. Subunits that form the supercomplex interface in V. radiata are marked with (†). Subunits whose homologs form the supercomplex interface in the B. taurus respirasome are marked with (‡).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A-C) CIV subunits are shown for (A) V. radiata (this work), (B) S. cerevisiae (PDB: 6HU9) and (C) B. taurus (PDB: 5B1A). Yeast and bovine subunits were independently aligned with the corresponding V. radiata subunit. The orientation of each subunit corresponds to the orientation on CIV in the top row. Only the modelled residues are shown. Differences discussed in the text are labeled with an asterisk (*).
+
 The presence of the V. radiata CIV subunits in the structure was confirmed by mass spectrometric analysis of our cryoEM sample (Supplementary file 1a). Our structure confirms the identity of plant COX-X2 as the homolog of mammalian COX4 (ScCox5), COX-X3 of mammalian COX7c (ScCox8) and COX-X4 of mammalian COX7a (ScCox7) (Millar et al., 2004). The putative plant-specific subunits COX-X5, GLN2, ABHD18, AARE and PRPK (Millar et al., 2004; Klodmann and Braun, 2011) were not observed in our mass spectrometry sample or our structure (Supplementary file 1a). Although two peptides of the putative subunit COX-X1 were identified in our mass spectrometry sample, the lack of unassigned density in our cryoEM reconstruction large enough to constitute an additional subunit demonstrates that this protein is not present in SC III2+IV of etiolated V. radiata tissues. The possibility remains that free CIV and/or CIV in supercomplexes of non-etiolated tissues may have a different subunit composition.
 
-## Differences in conserved and accessory subunits
+#### Differences in conserved and accessory subunits
 
 Among the VrCIV subunits that have mammalian and yeast homologs, structural conservation is generally high, particularly for the mitochondrially encoded subunits (Figure 5—figure supplement 1). The conserved covalent bond between Nε-His243 and Cε-Tyr247 on the HPEVY ring of VrCOX1 is clearly seen in our density (Figure 5—figure supplement 1J). Moreover, VrCOX2 contains the highly conserved residues Tyr255, Met362 (BtCOX2-Tyr105, Met207) believed to be part of the electron transport path from cyt c to CUA of CIV (Shimada et al., 2017).
 
@@ -105,15 +479,31 @@ Further differences are found in VrCOX4’s C-terminus, which shows an extended 
 
 Additional differences are seen in VrCOX6a (ScCox13, BtCOX6a). In this case, the plant subunit is more similar to the bovine homolog. Its shorter helix interacts with VrCOX1 and VrCOX3 on the IMS side but does not provide matrix-side interactions as the yeast homolog does (Figure 6—figure supplement 1).
 
-## CIV’s proton transfer pathways
+#### CIV’s proton transfer pathways
 
 Translocation of protons through CIV in different organisms occurs via the D, K, and H ‘channels’ (proton transfer pathways) of the COX1 subunit (Rich, 2017; Rich and Maréchal, 2013; Yoshikawa and Shimada, 2015; Wikström et al., 2018). The D and K channels are essential for coupled proton transfer in CIV of bacteria, yeast and mammals (Rich, 2017; Rich and Maréchal, 2013; Yoshikawa and Shimada, 2015; Wikström et al., 2018; Maréchal et al., 2020). However, whereas mutations of key H channel residues abolish proton pumping in bovine CIV (Shimokata et al., 2007; Tsukihara et al., 2003), analogous mutations have no effect on growth, respiratory rate or proton-to-electron ratios of yeast CIV (Maréchal et al., 2020). Thus, it is currently thought that the H channel only plays a role in proton transfer in mammalian CIV (although it may still act as a dielectric channel in yeast [Rich and Maréchal, 2013; Maréchal et al., 2020]). The contribution of the D, K, and H channels to CIV proton transfer in plants is unknown.
 
 Sequence and structural analyses show that all protonatable residues of the D and K channels of yeast and mammals are conserved in VrCOX1 (Figure 7, Figure 7—figure supplement 1). In contrast, several of the residues of the mammalian H channel are not conserved in mung bean (Figure 7—figure supplement 1). In bovine’s H channel, the amide bond between Tyr440 and Ser441 and an H-bond network towards Asp51 are essential features for proton translocation (Yoshikawa and Shimada, 2015; Shimokata et al., 2007; Tsukihara et al., 1996). None of these key bovine residues are conserved in V. radiata (or S. cerevisiae) (Figure 7, Figure 7—figure supplement 1). Moreover, in the bovine H channel mutation of Ser441 to Pro441 abolishes proton pumping (Shimokata et al., 2007). The corresponding amino-acid for BtCOX1-Ser441 in both V. radiata and yeast is proline (VrCOX1-Pro443; ScCox1-Pro441). Additional amino-acid differences between V. radiata and B. taurus are seen at the entrance and exit of the H channel (Figure 7). The above suggests that, similar to yeast, the H channel is not a proton transfer pathway in plant CIV and that proton transfer in plant CIV occurs via the D and K channels. Experimental evidence is needed to confirm this hypothesis.
 
-## Supercomplex III2-IV (SC III2+IV)
+![Figure 7.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig7-v1.jpg)
+
+**Figure 7.:** VrCOX1 (transparent ribbon), co-factors (stick) and key residues (colored stick) are shown for the D channel (yellow), K channel (purple) and H channel (green). Proton-channel residues that are mutated in V. radiata with respect to B. taurus are marked with an asterisk (*). Approximate position of matrix and IMS ends of the transmembrane region are shown.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** COX1 sequences from V. radiata (Vr), Arabidopsis thaliana (At), S. cerevisiae (Sc), and B. taurus (Bt) were aligned with Clustal Omega. Proton pathway residues are highlighted: D channel in yellow, H channel in green and K channel in purple. Proton-channel residues that differ between V. radiata and B. taurus are marked with an arrow of the same color as the channel to which the residue belongs. Boxes indicate α-helices in the VrCOX1 atomic model. Key residues are marked with arrows: heme a-coordinating residues in blue, heme a3-coordinating residues in orange, CUB-coordinating residues in magenta. RNA-editing sites are marked with gray arrows, see also Supplementary file 1d. The HPEVY ring is bolded. Symbols underneath aligned residues: * fully conserved, : conservation between group of strongly similar properties, . conservation between group of weakly similar properties.
+
+### Supercomplex III2-IV (SC III2+IV)
 
 By docking the individually refined CIII2 and CIV models into the SC III2+IV composite map (Figure 1, Figure 1—figure supplement 2, Video 3), we were able to define the binding interface of the plant supercomplex. Direct contacts between the complexes occur in one site in the matrix side and one site in the IMS (Figure 8). Site 1 (matrix side), shows a single hydrophobic contact between one residue of VrQCR8 (Pro31) and one residue of VrCOX2 (Trp59) (Figure 8B). Our cryoEM reconstruction also contains a short stretch of weak, unassigned density near the first modelled residue of VrCOX5c (BtCOX6c, ScCox9), which could maximally represent an additional four amino acids. If so, the N-terminus of VrCOX5c could potentially provide additional contacts with CIII2. However, this density may also correspond to a bridging lipid bound between the two complexes.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig8-v1.jpg)
+
+**Figure 8.:** (A) General orientation of SC III2+IV in ribbon representation viewed from the membrane. Approximate position of the inner mitochondrial membrane is shown. Sites 1 (S1) and 2 (site 2) of the supercomplex interface are marked in dashed circles. (B) Detailed view of the protein-protein interaction in site 1 (Pro31 of VrQCR8 and Trp59 of VrCOX2) with the interacting atoms shown in stick representation. Note that interacting residues of site two appear in stick in the background. (C) Detailed view of the protein-protein interaction in site 2 (Pro19-Lys20 of QCR6, Gln70-Phe72 of COX4, Leu26 of QCR6, Leu51 of COX5c) with the interacting atoms shown in stick representation.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/62047/elife-62047-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** The supercomplexes are aligned by V. radiata’s COB and CYC1 and shown in surface representation. (A-B) V. radiata (A) and S. cerevisiae (B) SC III2+IV viewed from the membrane. (C-D) Superposed V. radiata (green) and S. cerevisiae (pink) viewed from the matrix (C) or the intermembrane space, IMS (D). (E) Cyt c (yellow) docked onto CIII2 and CIV in superposed V. radiata (green) or S. cerevisiae (pink) SC III2+IV viewed from the IMS. Distance between the CIII2- and CIV-bound cyt c in the V. radiata (Vr) and S. cerevisiae (Sc) supercomplexes shown. Cyt c was docked based on the S. cerevisiae CIII2-bound cyt c (1KYO) and the bovine CIV-bound cyt c (5IY5). CIII2-bound cyt c was docked onto V. radiata CIII2 by aligning CYC1. CIV-bound cyt c was docked onto V. radiata and S. cerevisiae CIV by aligning COX2. Distance was measured edge-to-edge of the heme conjugated ring systems.
 
 The limited matrix-side contacts in V. radiata are in stark contrast to the supercomplex interface in S. cerevisiae, where binding is dominated by interactions between ScCor1 (VrMPP-β) and ScCOX5a (VrCox4) on the matrix side. Instead, V. radiata’s site 2 (IMS side) provides the bulk of the protein-protein interactions of the supercomplex, with a hydrophobic interaction between VrQCR6 and VrCOX5c (Leu26 and Leu51 respectively) as well as an interface between VrQCR6 (Pro19 and Lys20) and VrCOX4 (Arg114-Phe117) (Figure 8C). Despite the potential for lipid bridges at the matrix leaflet of the IMM, there are no direct contacts in the membrane and no protein contact at the IMS leaflet of the IMM. The overall limited binding interactions between V. radiata’s CIII2 and CIV, and, consequently, the lower expected stability of the plant supercomplex compared to yeast's, are consistent with the fact that (CIII2+CIV)n supercomplexes have only been experimentally identified in a few of the plant species studied (Dudkina et al., 2006; Braun, 2020).
 
@@ -123,11 +513,11 @@ Unsurprisingly given the large differences in contacts, there is a significant d
 
 Here, we present the first structures and atomic models of CIII2, CIV and SC III2+IV from the plant kingdom (Figure 1, Videos 1–3). These V. radiata structures reveal atomic details of the catalytic sites and co-factor binding of plant CIII2 (Figure 2) and CIV (Figure 5). Moreover, they show plant-specific structural features for several subunits, most notably the MPP subunits of CIII2 (Figure 3). Conformational heterogeneity analysis of CIII2 allowed us to observe the swinging motion of UCR1’s head domain in the absence of substrates or inhibitors, and revealed coordinated, complex-wide motions for CIII2 (Figure 4, Videos 6–10). The CIV structure defines the subunit composition of the plant complex and suggests that the proton translocation in plants occur via the D and K, rather than the H channel (Figures 5, 6 and 7). The structures also reveal the plant-specific arrangement of the CIII2-CIV interface in the supercomplex, which occurs mostly on the IMS side of the membrane and at a different angle from that seen in other organisms (Figure 8 and Figure 8—figure supplement 1).
 
-## Complex IV subunit composition
+### Complex IV subunit composition
 
 Plant CIV subunit composition has been previously analyzed by mass spectrometry of proteins from 2-dimensional blue-native gels (BN-PAGE) (Millar et al., 2004; Klodmann et al., 2011; Senkler et al., 2017). Although these studies were mostly in agreement, several putative CIV subunits—including several putative plant-specific subunits—differed between datasets. Given the considerable technical challenges in obtaining plant CIV samples, experimental evidence for the stoichiometric presence of these putative subunits in complex IV remained limited, with strongest evidence for COX-X1, COX-X2 and COX-X4 (Senkler et al., 2017; Braun, 2020). The structure of V. radiata CIV presented here offers a complementary approach to determine the complex’s subunit composition. Our structure shows that CIV obtained from etiolated V. radiata sprouts is composed of 10 subunits (three mitochondrially encoded subunits and seven accessory subunits). Only three of the previous plant-specific candidates are seen in our structure (COX-X2, COX-X3 and COX-X4). Moreover, structural analysis shows that COX-X2, COX-X3 and COX-X4 are homologs of mammalian and yeast CIV subunits (BtCOX4/ScCOX5, BtCOX7c/ScCox8 and BtCOX7a/ScCox7, respectively) rather than being plant-specific subunits. Although mass spectrometry analysis of our mixed sample also shows some evidence for the occurrence of COX-X1, this protein is not present in our structure, and its function remains unknown. Our structure provides a new definition for plant CIV’s composition; however, we note that the arrangement may differ between free CIV and that in supercomplexes. Moreover, its composition may be dynamically regulated in different metabolic states (e.g. different light or oxygen levels), as is known to occur for certain subunit isoforms in other organisms (Burke et al., 1997).
 
-## Conformational heterogeneity of plant CIII2
+### Conformational heterogeneity of plant CIII2
 
 The 3DVA allowed us to observe the full swing of the UCR1 (Rieske subunit) head domain (Figure 4, Video 10) without the need for any CIII2 inhibitor to capture the proximal, distal or intermediate positions in the mobile state (Esser et al., 2019). As such, it provides direct confirmation for a multitude of previous crystallographic, mutational, kinetic and molecular dynamics studies, mostly done in the presence of inhibitors, that showed the flexibility and mobility of this domain (Xia et al., 2013; Cooley, 2013; Berry and Huang, 2011; Izrailev et al., 1999; Huang and Berry, 2016). Together, the findings definitively show that the swinging motion is an inherent property of the UCR1 in the absence of substrates. Moreover, the conformational heterogeneity analysis suggests that the movement of the UCR1 head domains is coordinated between the CIII2 protomers to a large degree (Figure 4C, Video 10). Determining the nature of and mechanism for this inter-protomer coordination will have implications on electron transfer in CIII2 and its supercomplexes.
 
@@ -139,7 +529,7 @@ The long-range conformational coupling is particularly relevant in the context o
 
 Together, our 3DVA results challenge long-standing assumptions on plant CIII2’s suitability for conformational coupling and call for a re-evaluation of the relationship between the respiratory and the processing activities of the plant complex.
 
-## Plant supercomplex III2+IV interface
+### Plant supercomplex III2+IV interface
 
 The orientation and binding interfaces of SC III2+IV vary significantly among organisms (Hartley et al., 2019; Rathore et al., 2019; Gong et al., 2018; Wiseman et al., 2018; Sousa and Vonck, 2019). For instance, the CIII surface used by yeast to bind to CIV is instead used by mammals to bind to CI (Hartley et al., 2019). Given these disparities, it is not surprising that the differences seen in the VrCIV subunits are concentrated in the subunits that form the supercomplex interfaces in the different organisms (Figure 6). Moreover, while some of the supercomplex interactions in V. radiata are reminiscent of the supercomplex interface in yeast, there are significant differences in the protein:protein sites, interacting subunits and angle of orientation within the SC (Figure 8 and Figure 8—figure supplement 1). In yeast, the main interface is on the matrix side, with the N-terminal helical domain of ScCox5a (VrCOX4) interacting with ScCor1 (homolog of VrMPP-β). In V. radiata, this interface is lacking, as plant COX4 does not possess the ~100 amino-acid helical N-terminal domain present in yeast and mammals (Figure 6 and Figure 6—figure supplement 1). In contrast, the main supercomplex interface in mung bean is in the IMS, driven by contacts between VrQCR6 and VrCOX4. In the yeast supercomplex, the homologs of VrQCR6 and VrCOX4 (ScQCR6 and ScCOX5a/b) also interact in the IMS side, but in a much more limited fashion.
 
@@ -153,37 +543,208 @@ Our work provides the first high-resolution structure of SC III2+IV in plants, r
 
 ## Materials and methods
 
-## Overall sample and data collection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Vigna radiata)</td>
+      <td>V. radiata seeds</td>
+      <td>Todd’s Tactical Group</td>
+      <td>TS-229</td>
+      <td>Lot SMU2-8HR; DOB 2/25/2019</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digitonin, high purity</td>
+      <td>EMD Millipore</td>
+      <td>300410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>A8-35</td>
+      <td>Anatrace</td>
+      <td>A835</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gamma-cyclodextrin</td>
+      <td>EMD Millipore</td>
+      <td>C4892</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Decylubiquinone</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-358659</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Equine cytochrome c</td>
+      <td>Sigma Aldrich</td>
+      <td>C2506</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clustal Omega</td>
+      <td>Madeira et al., 2019</td>
+      <td>RRID:SCR_001591</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Geneious</td>
+      <td>Kearse et al., 2012</td>
+      <td>RRID:SCR_010519</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>University of Colorado, Schorb et al., 2019</td>
+      <td>RRID:SCR_017293</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION 3.0</td>
+      <td>Zivanov et al., 2018</td>
+      <td>RRID:SCR_016274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Motioncor2</td>
+      <td>Zheng et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ctffind4</td>
+      <td>Rohou and Grigorieff, 2015</td>
+      <td>RRID:SCR_016732</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>crYOLO</td>
+      <td>Wagner et al., 2019; Wagner and Raunser, 2020</td>
+      <td>RRID:SCR_016732</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phyre2</td>
+      <td>Kelley et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>Emsley and Cowtan, 2004</td>
+      <td>RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>Liebschner et al., 2019; Goddard et al., 2018; Pettersen et al., 2004</td>
+      <td>RRID:SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, Pettersen et al., 2004</td>
+      <td>RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF ChimeraX</td>
+      <td>Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, Goddard et al., 2018</td>
+      <td>RRID:SCR_015872</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL Molecular Graphics System</td>
+      <td>Schrödinger, LLC</td>
+      <td>RRID:SCR_000305</td>
+      <td>Version 2.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Scaffold Proteome Software</td>
+      <td>Proteome Software Inc</td>
+      <td>RRID:SCR_014345</td>
+      <td>Version 4.8.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>X! Tandem</td>
+      <td>The GPM</td>
+      <td></td>
+      <td>Version Alanine (2017.2.1.4)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Holey carbon grids</td>
+      <td>Quantifoil</td>
+      <td>Q310CR1.3</td>
+      <td>1.2/1.3 300 mesh</td>
+    </tr>
+  </tbody>
+</table>
+
+### Overall sample and data collection
 
 The cryoEM dataset used in this paper is the same sample, grid and micrographs as those used in Maldonado et al., 2020. CryoEM data processing for the structures reported in this paper and those reported in Maldonado et al., 2020 diverged after 2D classification (see Figure 1—figure supplement 1). Further data processing for the structures shown here is described in detail below.
 
-## Vigna radiata mitochondria purification
+### Vigna radiata mitochondria purification
 
 V. radiata seeds were purchased from Todd’s Tactical Group (Las Vegas, Nevada, USA). Seeds were incubated in 1% (v:v) bleach for 20 min and rinsed until the water achieved neutral pH. Seeds were subsequently imbibed in a 6 mM CaCl2 solution for 20 hr in the dark. The following day, the imbibed seeds were sown in plastic trays on damp cheesecloth layers, at a density of 0.1 g/cm2 and incubated in the dark at 20 °C for 6 days. The resulting etiolated mung beans were manually picked, and the hypocotyls were separated from the roots and cotyledons. The hypocotyls were further processed for mitochondria purification based on established protocols (Millar et al., 2007). Briefly, hypocotyls were homogenized in a Waring blender with homogenization buffer (0.4 M sucrose, 1 mM EDTA, 25 mM MOPS-KOH, 10 mM tricine, 1% w:v PVP-40, freshly added 8 mM cysteine and 0.1% w:v BSA, pH 7.8) before a centrifugation of 10 min at 1000 x g (4 °C). The supernatant was collected and centrifuged for 30 min at 12,000 x g (4 °C). The resulting pellet was resuspended with wash buffer (0.4 M sucrose, 1 mM EDTA, 25 mM MOPS-KOH, freshly added 0.1% w:v BSA, pH 7.2) and gently centrifuged at 1000 x g for 5 min (4 °C). This supernatant was then centrifuged for 45 min at 12,000 x g. The resulting pellet was resuspended in wash buffer, loaded on to sucrose step gradients (35% w:v, 55% w:v, 75% w:v) and centrifuged for 60 min at 52,900 x g. The sucrose gradients were fractionated with a BioComp Piston Gradient Fractionator connected to a Gilson F203B fraction collector, following absorbance at 280 nm. The fractions containing mitochondria were pooled, diluted 1:5 in 10 mM MOPS-KOH, 1 mM EDTA, pH 7.2 and centrifuged for 20 min at 12,000 x g (4 °C). The pellet was resuspended in final resuspension buffer (20 mM HEPES, 50 mM NaCl, 1 mM EDTA, 10% glycerol, pH 7.5) and centrifuged for 20 min at 16,000 x g (4 °C). The supernatant was removed, and the pellets were frozen and stored in a −80 °C freezer. The yield of these mitochondrial pellets was 0.8–1 mg per gram of hypocotyl.
 
-## Vigna radiata mitochondrial membrane wash
+### Vigna radiata mitochondrial membrane wash
 
 Frozen V. radiata mitochondrial pellets were thawed at 4°C, resuspended in 10 ml of chilled (4 °C) double-distilled water per gram of pellet and homogenized with a cold Dounce glass homogenizer on ice. Chilled KCl was added to the homogenate to a final concentration of 0.15 M and further homogenized. The homogenate was centrifuged for 45 min at 32,000 x g (4 °C). The pellets were resuspended in cold Buffer M (20 mM Tris, 50 mM NaCl, 1 mM EDTA, 2 mM DTT, 0.002% PMSF, 10% glycerol, pH 7.4) and further homogenized before centrifugation at 32,000 x g for 45 min (4 °C). The pellets were resuspended in 3 ml of Buffer M per gram of starting material and further homogenized. The protein concentration of the homogenate was determined using a Pierce BCA assay kit (Thermo Fisher, Waltham, Massachusetts, USA), and the concentration was adjusted to a final concentration of 10 mg/ml and 30% glycerol.
 
-## Extraction and purification of mitochondrial complexes
+### Extraction and purification of mitochondrial complexes
 
 Washed membranes were thawed at 4°C. Digitonin (EMD Millipore, Burlington, Massachusetts, USA) was added to the membranes at a final concentration of 1% (w:v) and a digitonin:protein ratio of 4:1 (w:w). Membrane complexes were extracted by tumbling this mixture for 60 min at 4 °C. The extract was centrifuged at 16,000 x g for 45 min (4 °C). Amphipol A8-35 (Anatrace, Maumee, Ohio, USA) was added to the supernatant at a final concentration of 0.2% w:v and tumbled for 30 min at 4°C, after which gamma-cyclodextrin (EMD Millipore, Burlington, Massachusetts, USA) was added stepwise to a final amount of 1.2x gamma-cyclodextrain:digitonin (mole:mole). The mixture was centrifuged at 137,000 x g for 60 min (4 °C). The supernatant was concentrated with centrifugal protein concentrators (Pall Corporation, NY, NY, USA) of 100,000 MW cut-off, loaded onto 10–45% (w:v) or 15–45% (w:v) linear sucrose gradients in 15 mM HEPES, 20 mM KCl, pH 7.8 produced using factory settings of a BioComp Instruments (Fredericton, Canada) gradient maker and centrifuged for 16 hr at 37,000 x g (4 °C). The gradients were subsequently fractionated with a BioComp Piston Gradient Fractionator connected to a Gilson F203B fraction collector, following absorbance at 280 nm. For grid preparation, the relevant fractions were buffer-exchanged into 20 mM HEPES, 150 mM NaCl, 1 mM EDTA, pH 7.8 (no sucrose) and concentrated to a final protein concentration of 6 mg/ml and mixed one-to-one with the same buffer containing 0.2% digitonin (w:v), for a final concentration of 0.1% digitonin (w:v).
 
-## NADH-dehydrogenase in-gel activity assay with blue-native polyacrylamide gel electrophoresis (BN-PAGE)
+### NADH-dehydrogenase in-gel activity assay with blue-native polyacrylamide gel electrophoresis (BN-PAGE)
 
 Mitochondrial membrane extractions were diluted in 2X BN-loading buffer (250 mM aminocaproic acid, 100 mM Tris-HCl, pH 7.4, 50% glycerol, 2.5% (w:v) Coomassie G-250), loaded on pre-cast 3–12% NativePAGE Bis-Tris gels (Invitrogen, Carlsbad, CA) and run at 4 °C. The cathode buffer was 50 mM Tricine, 50 mM BisTris-HCl, pH 6.8 plus 1X NativePAGE Cathode Buffer Additive (0.02% Coomassie G-250) (Invitrogen, Carlsbad, CA) and the anode buffer was 50 mM Tricine, 50 mM BisTris-HCl, pH 6.8. Gels were run at 150 V constant voltage for ∼30 min, after which the cathode buffer was switched for a ‘light blue’ cathode buffer containing 50 mM Tricine, 50 mM BisTris-HCl, pH 6.8 plus 0.1X NativePAGE Cathode Buffer Additive (0.002% Coomassie G-250) (Invitrogen, Carlsbad, CA). The settings were changed to 200 V constant voltage and run for another ∼90 min.
 
 The CI in-gel NADH-dehydrogenase activity assay was performed based on Schertl and Braun, 2015. The BN-PAGE gel was incubated in 10 ml of freshly prepared reaction buffer (1.5 mg/ml nitrotetrazoleum blue in 10 mM Tris-HCl pH 7.4). Freshly thawed NADH stock (20 mM) was added to the container with the gel, to a final concentration of 150 μM. The gel with the complete reaction buffer was rocked at room temperature for ∼10 min. Once purple bands indicating NADH-dehydrogenase activity appeared, the reaction was quenched with a solution of 50% methanol (v:v) and 10% acetic acid (v:v).
 
-## Complex III2 spectroscopic activity assays
+### Complex III2 spectroscopic activity assays
 
 Spectroscopic activity assays were performed based on Letts et al., 2019; Huang et al., 2015; Barrientos et al., 2009, with modifications. Reduced-decylubiquinone (DQ): cyt c activity was measured by spectroscopic observation of cyt c reduction at 550 nm wavelength at room temperature using a Molecular Devices (San Jose, CA) Spectramax M2 spectrophotometer. Reactions were carried out in 96-well plates. DQ (Santa Cruz Biotechnology, Dallas, TX) was freshly reduced. The required amount of ethanol-diluted 100 mM DQ was aliquoted and further diluted to ~300 μl with 100% ethanol. A couple of lithium borohydride crystals were added to reduce the DQ, turning the solution transparent. Excess lithium borohydride was quenched by the dropwise addition of 1 N HCl until no further bubbles were observed. The ethanol was then evaporated with a stream of argon gas until a volume of ~50 μl was obtained. This reduced-DQ was added to a master mix reaction buffer (100 mM HEPES, pH 7.8, 50 mM NaCl, 10% glycerol, 0.1% CHAPS, 1 mg/ml BSA, 0.25 mg/ml 4:1 asolectin:cardiolipin in 0.1% CHAPS, 25 U/ml SOD, 4 μM KCN, 15 μM piericidin) at a final concentration of 100 μM and mixed by vortexing. The pH of the reaction buffer master mix was checked to be 7–8 with pH strips. The reaction master mix was aliquoted, and CIII2 inhibitors antimycin A and myxothiazol were added at 1 μM final concentration where relevant and mixed by vortexing. Protein samples (5 μg) were added to the respective aliquots of reaction buffer to a total volume of 200 μl and mixed by vortexing. The reaction was initiated by addition of equine cyt c (Sigma Aldrich, St Louis, MO) to a final concentration of 100 μM, briefly mixed by pipetting and plate stirring for 10 s before recording for 3 min every 4 s. Measurements were done in 3–5 replicates, averaged and background-corrected. An extinction co-efficient of 28 mM−1 cm−1 (Huang et al., 2015) was used in the calculations. Statistical significance was determined using two-tailed t-tests.
 
-## Complex IV spectroscopic activity assays
+### Complex IV spectroscopic activity assays
 
 Spectroscopic activity assays were performed based on Letts et al., 2019; Huang et al., 2015; Barrientos et al., 2009, with modifications. Cytochrome c oxidase activity was measured by spectroscopic observation of the oxidation of reduced cyt c at 550 nm wavelength at room temperature using a Molecular Devices (San Jose, CA) Spectramax M2 spectrophotometer. Reactions were carried out in 96-well plates. Equine cyt c (Sigma Aldrich, St Louis, MO), diluted in 20 mM HEPES, pH 7.4, 50 mM NaCl, 10% glycerol buffer, was freshly reduced based on manufacturer’s instructions with modifications. Dithiothreitol (DTT) was added at a 10 mM final concentration. After ~20 min and a visible change in color, cyt c reduction was confirmed spectroscopically. Given the spectrophotometer’s specifications, the simultaneous measurement of A550 and A565 was suboptimal (A550:A565 ratio of ~9). Therefore, the A550:A575 was measured instead, as per manufacturer’s recommendations. Cyt c reduction was confirmed at A550:A575 ratio ~22–24. For the spectroscopic activity assay, the reaction master mix consisted of 20 mM HEPES, pH 7.4, 50 mM NaCl, 10% glycerol, 0.1% CHAPS (w:v) with additional 4 μM KCN wherever appropriate. Protein samples (5 μg) were added to the respective aliquots of reaction buffer to a total volume of 200 μl and mixed by vortexing. The reaction was initiated by addition of reduced cyt c to a final concentration of 100 μM, briefly mixed by pipetting and plate stirring for 10 s before recording for 3 min every 4 s. Measurements were done in 3–4 replicates, averaged and background-corrected. An extinction co-efficient of 28 mM−1 cm−1(Huang et al., 2015) was used in the calculations. Statistical significance was determined using two-tailed t-tests.
 
-## Mass spectrometry
+### Mass spectrometry
 
 The sample used for mass spectrometry was the sample used to blot the cryoEM grid that was used for here and in Maldonado et al., 2020. This sample corresponds to concentrated, pooled peak two fractions from the sucrose gradient shown in Maldonado et al., 2020 (fractions 10–11, Figure 1—figure supplement 2H). This sample is roughly equivalent to fractions 11–13 from Figure 1—figure supplement 4 here. Thus, the mass spectrometry results of this mixed sample include complex I subunits in addition to CIII2 and CIV subunits. See below for full dataset availability and accession codes.
 
@@ -195,13 +756,13 @@ Tandem mass spectra were extracted and charge state deconvoluted by Proteome Dis
 
 Scaffold (version Scaffold_4.8.4, Proteome Software Inc, Portland, OR) was used to validate MS/MS based peptide and protein identifications. Peptide identifications were accepted if they could be established at greater than 98.0% probability by the Scaffold Local FDR algorithm. X! Tandem identifications required score of at least 2. Protein identifications were accepted if they could be established at greater than 6.0% probability to achieve an FDR less than 5.0% and contained at least two identified peptides. Protein probabilities were assigned by the Protein Prophet algorithm (Nesvizhskii et al., 2003). Proteins that contained similar peptides and could not be differentiated based on MS/MS analysis alone were grouped to satisfy the principles of parsimony. Proteins sharing significant peptide evidence were grouped into clusters.
 
-## CryoEM data acquisition
+### CryoEM data acquisition
 
 The sample (6 mg/ml protein in 20 mM HEPES, 150 mM NaCl, 1 mM EDTA, 0.1% digitonin, pH 7.8) was applied onto glow-discharged holey carbon grids (Quantifoil, 1.2/1.3 300 mesh) followed by a 60 s incubation and blotting for 9 s at 15°C with 100% humidity and flash-freezing in liquid ethane using a FEI Vitrobot Mach III.
 
 CryoEM data acquisition was performed on a 300 kV Titan Krios electron microscope equipped with an energy filter and a K3 detector at the UCSF W.M. Keck Foundation Advanced Microscopy Laboratory, accessed through the Bay Area CryoEM Consortium. Automated data collection was performed with the SerialEM package (Schorb et al., 2019). Micrographs were recorded in super-resolution mode at a nominal magnification of 60,010 X, resulting in a pixel size of 0.8332 Å2. Defocus values varied from 1.5 to 3.0 µm. The dose rate was 20 electrons per pixel per second. Exposures of 3 s were dose-fractionated into 118 frames, leading to a dose of 0.72 electrons per Å2 per frame and a total accumulated dose of 51 electrons per Å2. A total of 9816 micrographs were collected.
 
-## Data processing
+### Data processing
 
 Software used in the project was installed and configured by SBGrid (Morin et al., 2013). All processing steps were done using cryoSPARC and RELION 3.0 (Zivanov et al., 2018; Punjani et al., 2017) unless otherwise stated. Motioncor2 (Zheng et al., 2017) was used for whole-image drift correction of each micrograph. Contrast transfer function (CTF) parameters of the corrected micrographs were estimated using Ctffind4 (Rohou and Grigorieff, 2015). After motion correction and CTF correction, a set of 8541 micrographs was selected for further processing. Automated particle picking using crYOLO (Wagner et al., 2019; Wagner and Raunser, 2020) resulted in ~1.5 million particles. The particles were extracted using 4002 pixel box binned two-fold and sorted by reference-free 2D classification in Relion using (--max_sig 5), followed by re-extraction at 5122 pixel box. Reference-free 2D classification in Relion resulted in the identification of 502,224 particles that were then imported into cryoSPARC for further reference-free 2D classification. A set of 121,702 particles were identified by 2D classification in cryoSPARC to contain CIII2 alone or SC III2+IV (Figure 1—figure supplement 1). These particles were subjected to ab initio model generation with four targets to remove contaminant particles resulting in a set of 99,937 particles across three classes. Each individual class was subjected to an additional round of ab initio model generation with three targets. This separated CIII2 alone particles from the SC III2+IV class and allowed the recovery of CIII2 alone particles from the poor particle class. CIII2 alone particles from across the ab initio model generation jobs were pooled, defining a final class of 48,111 particles. The multiple rounds of ab initio model generation resulted in only one good class of 28,020 SC III2+IV particles. Poses for these two particle sets (CIII2 alone and SC III2+IV) were refined using cryoSPARC’s Homogeneous Refinement (New) algorithm including Defocus Refinement and Global CTF refinement. This resulted in reconstructions at 3.2 Å and 3.8 Å resolution for CIII2 alone and SC III2+IV respectively, according to the gold standard FSC criteria (Figure 1—figure supplement 1; Scheres and Chen, 2012).
 
@@ -209,10 +770,10 @@ In parallel, a set of 69,876 particles were identified by further 2D and 3D clas
 
 3D variability analysis (3DVA) was performed on CIII2 alone in cryoSPARC using their built-in algorithm (Punjani and Fleet, 2020). Two separate instances of 3DVA were performed, each solving for the four largest principal components. The first instance used a mask around the entire CIII2 and data was low-pass filtered to 6 Å resolution to remove the influence of high-resolution noise from the amphipol detergent belt. The second instance used a mask focused around the IMS domain of CIII2 and was low-pass filtered to 5 Å resolution. All other parameters were kept as default.
 
-## Model building and refinement
+### Model building and refinement
 
 Starting template models for V. radiata CIII2 was ovine CIII2 (PDB: 6Q9E). Starting template models for V. radiata CIV were from S. cerevisiae (PDB: 6HU9) and bovine (PDB: 5B1A) CIV. Additionally, starting models for the V. radiata subunits were generated using the Phyre2 web portal (Kelley et al., 2015). Real-space refinement of the model was done in PHENIX (Liebschner et al., 2019; Goddard et al., 2018; Pettersen et al., 2004) and group atomic displacement parameters (ADPs) were refined in reciprocal space. The single cycle of group ADP refinement was followed by three cycles of global minimization, followed by an additional cycle of group ADP refinement and finally three cycles of global minimization (Letts et al., 2019). The refined CIII2 and CIV models were docked into the SC III2+CIV map without subsequent refinement.
 
-## Model interpretation and figure preparation
+### Model interpretation and figure preparation
 
 Molecular graphics and analyses were performed with UCSF Chimera (Pettersen et al., 2004) and ChimeraX (Goddard et al., 2018) developed by the Resource for Biocomputing, Visualization, and Informatics at the University of California, San Francisco, with support from NIH P41-GM103311 and R01-GM129325 and the Office of Cyber Infrastructure and Computational Biology, National Institute of Allergy and Infectious Diseases. PyMOL Molecular Graphics System, Version 2.0 Schrödinger, LLC was also used.

@@ -42,7 +42,7 @@ To study the effects of propofol on cortex and thalamus, we administered propofo
 
 ## Results
 
-## Experimental design, recordings, and physiological responses to propofol
+### Experimental design, recordings, and physiological responses to propofol
 
 We started by administering a high-infusion rate of propofol (280–580 mcg/kg/min, adjusted per individual animal) for 20 min to induce LOC (defined as the moment the eyes closed and remained closed for the remainder of the infusion). LOC was associated with simultaneous changes in several physiological variables. We assessed the significance of the change in each physiological variable as the posterior probability that its values were greater during the Awake state than they were 10–60 min after initiating the propofol infusion (Smith et al., 2005). We considered a change to be significant if the posterior probability was greater than 0.99.
 
@@ -52,15 +52,27 @@ We performed the neurophysiological recordings in three sets of experiments. In 
 
 An example session of cortical recordings during the Awake and Unconscious states (Figure 1G) showed a profound reduction in spiking, an increase in both slow-frequency (SF, 0.1-2Hz) local field potential (LFP) amplitude (Flores et al., 2017) and slow-frequency modulation of spiking activity.
 
-## Changes in LFP power with the Unconscious state
+### Changes in LFP power with the Unconscious state
 
 We first characterized the changes in LFP power during the Awake state (Figure 2) to every time point after drug administration until 10 min post-ROC (non-parametric cluster-based randomizations, corrected for multiple comparisons; all effects p<0.01; Maris and Oostenveld, 2007). We compared LFP power increases/decreases from the Awake state, time locked either to LOC or ROC. First, approximately 3–7 min before LOC, there was an increase in beta power in all areas (~15–30 Hz). In frontal areas PFC and 8A, this power change shifted to a lower frequency (~14–20 Hz) during the maintenance phase (Figure 2A and B, left subplots). Power in this frequency range remained higher than Awake throughout the Unconscious state. By contrast, in posterior areas PPC and STG after LOC (dotted black lines at time point 0 in Figure 2, left subplots) beta power was reduced relative to Awake (Figure 2C and D, left subplots). In all areas, shortly before LOC there was a sustained reduction in gamma power (>35 Hz).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig2-v1.jpg)
+
+**Figure 2.:** (A-D) dB change in power for each area is shown with respect to Awake. Increases in power are shown in red, decreases in blue. Significant modulation of power is shown in opaque colors and outlined in black (p<0.01, non-parametric cluster-based randomizations, corrected for multiple comparisons). Left subpanels are time locked to loss of consciousness (LOC), defined behaviorally as the moment the eyes closed and remained closed. Start of drug infusion is shown as a vertical black bar at −10 min from LOC, ± 1 SEM over sessions. Right subpanels are time locked to return of consciousness (ROC), defined behaviorally as the moment the eyes first opened. Cessation of drug infusion is shown as a vertical black bar at −8 min from ROC, ± SEM over sessions.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Slow frequency (SF, 0.1–2 Hz) power during the awake (blue bars) vs. unconscious (orange bars) states. Mean ± 1 SEM across sessions. (B) The dB change in SF power, averaged across all sessions. Mean ± SEM across sessions. PFC: ventrolateral prefrontal cortex; 8A: caudal lateral PFC; PPC: posterior parietal cortex area 7A/7B; STG: superior temporal gyrus.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Increases in power during unconsciousness are shown in red, decreases in blue. Significant modulation of power is shown in opaque colors and outlined in black (p<0.01, non-parametric cluster-based randomizations, corrected for multiple comparisons). Left subpanel is time locked from loss of consciousness (LOC). Onset of drug infusion is shown as a vertical black bar at ~8 min prior to LOC, ±1 SEM across sessions. Right subpanel is time locked from return of consciousness (ROC).
 
 All areas also showed a significant increase in slow-frequency power around LOC (Figure 2, non-parametric cluster-based randomizations, corrected for multiple comparisons; all effects p<0.01). We quantified the effect size by comparing power in the slow frequency band (0.1–2 Hz) while Awake to power while Unconscious (Figure 2—figure supplement 1A, blue and orange bars, respectively). We measured the effect size in dB units (10*log10[power Awake/power Unconscious]) across areas. The order of areas from strongest to weakest change was organized from posterior to anterior. The strongest increase in SF power was seen in STG, then PPC/PFC, then 8A (Figure 2—figure supplement 1B, significant differences in effect sizes were observed between STG and PFC and STG and 8A, p<0.01, non-parametric randomization test).
 
 The thalamus showed similar power modulation results as cortex. There was an increase in slow frequency oscillations locked to LOC and a decrease in this same band locked to ROC (Figure 2—figure supplement 2, p<0.01, non-parametric randomization test). In the beta frequency range, thalamic power modulation looked like a mixture between anterior and posterior cortex. There was an initial increase in beta power compared to Awake starting at LOC. This was followed by a decrease relative to Awake from ~5–14 min post-LOC. Subsequently (from 15 min post-LOC to ROC), there was neither a significant increase nor decrease in beta power relative to Awake (Figure 2—figure supplement 2, p>0.01 non-parametric randomization test).
 
-## Anteriorization of alpha-beta power and differences in slow frequencies across areas during the Unconscious state
+### Anteriorization of alpha-beta power and differences in slow frequencies across areas during the Unconscious state
 
 ‘Alpha anteriorization’ is the decrease in alpha-beta power in posterior cortex and its increase in frontal cortex during the Unconscious state (Cimenser et al., 2011; Tinker et al., 1977). We plotted the effect size (10*log10[power Awake/power Unconscious]) as a function of frequency (Figure 3A). This revealed differences between posterior and anterior areas in the alpha-low beta range. In particular, area 8A showed a clear peak at 15 Hz during unconsciousness (Figure 3A, red line). At the same frequency and above, posterior brain regions were strongly depressed in power (Figure 3A, green and magenta lines). We directly compared the absolute power in all areas between the Awake and the Unconscious states. We found that in the Awake state, alpha-beta (8–25 Hz) power in posterior areas, PPC and STG, was greater than in anterior areas, PFC and 8A (Figure 3B, sign test for anterior vs. posterior alpha-beta power across sessions, p<1E-3 for all comparisons). During the Unconscious state this relationship flipped. Alpha-beta power in frontal areas PFC and 8A was greater than in the posterior areas (Figure 3C, sign test for anterior vs. posterior alpha-beta power across sessions, p<1E-5 for all comparisons). These observations suggest the presence of anteriorization.
 
@@ -70,13 +82,21 @@ The thalamus showed similar power modulation results as cortex. There was an inc
 
 This analysis revealed differences in which frequencies the slow frequency band changed the most between Awake and Unconscious states. In anterior areas, PFC and 8A, the peak change was in higher frequencies (Figure 3A, 1.3 and 1.8 Hz, respectively) than posterior areas, PPC and STG (Figure 3A, 0.75 and 0.65 Hz, respectively, sign test for frequency difference, all anterior vs. posterior comparisons, p<1E-5).
 
-## LFP power changes from unconscious to ROC
+### LFP power changes from unconscious to ROC
 
 ROC occurred ~8 min after the cessation of the propofol infusions. In all areas, at ROC, power in the slow-frequency range was no longer significantly different from the Awake state (Figure 2A–D, right subpanels). In contrast, significant reductions in gamma power were still present in PFC, 8A, and STG even 10 min post-ROC. Beta power changes from Awake were also not reliable indicators of ROC. In frontal area 8A, beta power remained elevated above Awake levels 10 min post-ROC (Figure 2B, right subpanel). In posterior areas, beta power reductions from Awake were no longer significant at 10–17 min pre-ROC.
 
-## Differences in spiking between Awake vs. Unconscious
+### Differences in spiking between Awake vs. Unconscious
 
 We next examined differences in spike rates between the Awake and Unconscious states (Figure 4A). We eliminated periods with airpuffs or auditory tones in order to not induce differences across areas due to differences in sensory processing. In the Awake state, average spike rates were between 6 and 8 spikes per second across all areas. During the Unconscious state, average spike rates across areas fell to 0.2–0.5 spike/s during the initial infusion (first 30 min of propofol). They increased to 1–2 spikes/s during the maintenance infusion. After cessation of propofol, spike rates gradually approached the levels seen in the Awake state (Figure 4B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig4-v1.jpg)
+
+**Figure 4.:** (A) Spike rate for all recorded areas averaged across all propofol-only recording sessions locked to loss of consciousness (LOC). (B) Same as A, but for recovery of consciousness (ROC). Mean and 99 percent confidence interval. (C/E/G/I) The spike-triggered average for all well-isolated units in a given area with respect to that area’s unfiltered LFP. Red is the Unconscious state, blue is the Awake state. (D/F/H/J) Boxplots of SNRɸ values in decibels (dB) (reflecting SF modulation of spiking, see 'Methods') for all units during the Awake and Unconscious states. PFC: prefrontal cortex; PPC: posterior parietal cortex 7A/7B; 8A: caudal lateral PFC; STG: superior temporal gyrus.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Mean spike rates (spikes per second) during the Awake (blue bars) vs. Unconscious (orange bars) states. Mean +/- 1 SEM across all neurons. (B) The dB change in spiking, averaged across all units per area. Negative values indicate less spiking during the Unconscious state. Mean ±/- 1 SEM across all units per area. PFC: prefrontal cortex; PPC: posterior parietal cortex 7A/7B; 8A: caudal lateral PFC; STG: superior temporal gyrus.
 
 At LOC, spike rates were approximately half of their Awake rates (Figure 4A, mean firing rates at LOC: 4.0, 3.2, 3.4, 3.8 spikes/s for PFC, 8A, PPC, STG, respectively). Spike rates continued to fall and then stabilized ~15 min post-LOC to an average of 0.25 spikes/s. During the maintenance infusion, average spike rates across all areas increased to 1–1.7 spikes/s.
 
@@ -86,7 +106,7 @@ We quantified the effect size by comparing spike rates during the Awake to the U
 
 During the Unconscious state, spike timing was phase-coupled to the slow frequencies. This appeared as Up and Down states of high vs. minimal to no spiking, respectively (e.g., Figure 1G). Spike-triggered averages of the LFP signal indicated that spikes entrained to the depolarized phases (troughs) of slow frequency oscillations (Figure 4C/E/G/I) in all areas. We further estimated the contribution of phase to predicting spiking using a generalized linear model (GLM) framework (see Methods). Figure 4D/F/H/J shows boxplots of the contribution of phase to predicting spiking in each area during the Awake and Unconscious states measured in dB as the signal-to-noise ratio of slow-frequency phase. We defined an increase in phase-modulation during the Unconscious state relative to the Awake state as a log-fold change in the SNRɸ (termed ΔSNRɸ) greater than zero. We computed the posterior probability of an increased phase modulation (Unconscious > Awake) across the population of neurons recorded in each area using the beta-binomial model (DeGroot and Schervish, 2012). The posterior probability of an increase in phase modulation was 0.99 for PFC, PPC, and 8A, and 0.98 for STG.
 
-## Laminar changes in spiking and LFP power during the Unconscious state
+### Laminar changes in spiking and LFP power during the Unconscious state
 
 In two additional animals (monkeys 3 and 4) we used multi-laminar probes to examine differences between cell layers (Figure 5). We pooled data from PFC, 8A, PPC, and STG at the slow frequency and gamma bands because these frequencies behaved consistently across areas. Laminar position zero was based on the relative power profile of gamma vs. beta (see Methods). This was previously shown to map onto the location of layer 4 (Bastos et al., 2018). As before, we calculated the dB change from the Awake to the Unconscious state. The laminar profile of change in spiking, gamma, and slow frequencies are shown in Figure 5A/C/E. Spiking and gamma reduction were more pronounced in superficial layers compared to deep layers (Figure 5B and D, non-parametric randomization test comparing the effect size of superficial vs. deep, p<1E-7 for spiking, p<1E-7 for gamma; Manly, 2018). The enhancement of slow frequency power was higher in deep compared to superficial layers (Figure 5F, non-parametric randomization test comparing the effect size of superficial vs. deep, p<1E-5 for SF).
 
@@ -94,21 +114,435 @@ In two additional animals (monkeys 3 and 4) we used multi-laminar probes to exam
 
 **Figure 5.:** (A) Firing rate change from Awake to Unconscious states as a function of cortical layer. Negative values indicate less spiking during the Unconscious state. Layer 0 is the approximate location of cortical layer 4 (see 'Methods'). The horizontal dotted line at zero separates superficial layers 2/3 from deep layers 5/6. Mean and 99 percent confidence interval of the effect size across all neurons per indicated depth. (B) Mean and 99 percentconfidence interval of the effect size across all superficial (N = 287) and deep (N = 337) neurons. (C, D) Same as A, B, but for LFP power at gamma (100–200 Hz). (E, F) Same as A, B, but for SF power (0.2–1.1 Hz). Positive values indicate more power during the Unconscious state. N = 330 LFPs for superficial layers, N = 393 LFPs for deep layers. Mean and 99 confidence interval across all available LFPs in each layer.
 
-## Changes in cortico-cortical and thalamo-cortical phase synchronization during the Unconscious state
+### Changes in cortico-cortical and thalamo-cortical phase synchronization during the Unconscious state
 
 We next analyzed whether slow-frequency LFP oscillations were also phase synchronized. We used a sliding window approach to quantify the pairwise phase consistency (Vinck et al., 2010; see 'Methods') continuously from 15 min pre-LOC to 10 min post-ROC. There were strong increases in slow frequency cortico-cortical phase synchronization between all cortical areas (p<0.01, cluster-based non-parametric randomization test, Figure 6) during the Unconscious state. In a subset of area pairs (Figure 6B/E/F), there were reductions in cortico-cortical theta and beta phase synchronization, although the effect size at these frequencies was smaller than at slow frequencies (Figure 6—figure supplement 1). Unique to phase synchronization between frontal areas PFC and 8A, we observed a sustained increase in alpha (7–15 Hz) frequency range phase synchronization during the Unconscious state (p<0.01, cluster-based non-parametric randomization test, Figure 6A).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig6-v1.jpg)
+
+**Figure 6.:** (A-F) (left subpanels) Change in the pairwise phase consistency (PPC) for all time points relative to loss of consciousness (LOC) compared to the Awake state (−15 to −10 min pre-LOC). The red vertical lines indicate the average ±/- 1 standard deviation time of propofol onset. The black vertical line indicates time zero (LOC). Significant increases or decreases (p<0.01, corrected for multiple comparisons) from Awake are opaque colors and are highlighted. (right subpanels) Same as left subpanels but for recovery of consciousness (ROC). The red vertical lines indicate the average ±/- standard deviation time of propofol offset. The black vertical line indicates time zero (ROC). Significant increases or decreases from Awake are opaque colors and are highlighted.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Average pairwise phase consistency (PPC) during the Awake (blue) vs. Unconscious (red) states. (right subpanels). Average PPC difference (Unconscious – Awake). Mean is displayed in bold lines and the bootstrap 99 percent confidence interval of the mean is shown in dotted lines. PFC: ventrolateral prefrontal cortex; 8A: caudal lateral PFC; PPC: posterior parietal cortex area 7A/7B; STG: superior temporal gyrus.
+
 Recent evidence suggests that the thalamus helps foster synchrony between cortical areas (Saalmann and Kastner, 2015). During the Unconscious state, all cortical areas show increased slow frequency phase synchronization with the thalamus (p<0.01, cluster-based non-parametric randomization test, Figure 7). There were also reductions in synchrony while Unconscious in the theta/beta frequency ranges, but as with cortico-cortical phase synchronization, these effects were smaller (Figure 7—figure supplement 1). Uniquely to phase synchronization between thalamus and PFC, we observed a sustained increase in alpha (7–15 Hz) frequency range phase synchrony while Unconscious (p<0.01, cluster-based non-parametric randomization test, Figure 7A).
 
-## Thalamic stimulation arouses unconscious monkeys and causes a partial reversal of neurophysiological signs of the Unconscious state
+![Figure 7.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig7-v1.jpg)
+
+**Figure 7.:** (A-D) (Left subpanels) Change in the pairwise phase consistency (PPC) for all time points relative to loss of consciousness (LOC) compared to Awake (−15 to −10 min pre-LOC). The red vertical lines indicate the average ± 1 standard deviation time of propofol onset. The black vertical line indicates time zero (LOC). Significant increases or decreases (p<0.01, corrected for multiple comparisons) from Awake are marked with opaque colors and are highlighted. (Right subpanels) Same as left subpanels but time-locked to recovery of consciousness (ROC). The red vertical lines indicate the average ± 1 standard deviation time of propofol offset. The black vertical line indicates time zero (ROC). Significant increases or decreases from Awake are opaque colors and are highlighted. PFC: ventrolateral prefrontal cortex; 8A: caudal lateral PFC; PPC: posterior parietal cortex area 7A/7B; STG: superior temporal gyrus.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Average pairwise phase consistency (PPC) during the Awake (blue) vs. Unconscious (red) states. (Right subpanels) Average PPC difference (Unconscious – Awake). Mean is displayed in bold lines and the 99 percent bootstrap confidence interval of the mean is shown in dotted lines. PFC: ventrolateral prefrontal cortex; 8A: caudal lateral PFC; PPC: posterior parietal cortex area 7A/7B; STG: superior temporal gyrus.
+
+### Thalamic stimulation arouses unconscious monkeys and causes a partial reversal of neurophysiological signs of the Unconscious state
 
 The thalamus is a major route by which ascending excitatory projections from the brainstem reach the cortex. We tested whether we could induce arousal and restore awake-like neurophysiological markers by electrically stimulating the thalamus. During the Unconscious state, we applied 180 Hz, bipolar stimulation targeting the central thalamus, including the mediodorsal nucleus and intralaminar nuclei (Figure 8B, see 'Methods', a minority of sites were in neighboring thalamic nucleus VPL). We applied either high or low current, titrating it for each individual animal (Figure 8A) based on the change in arousal that it evoked. We measured arousal with a ‘wakeup score’ (see 'Methods'). It assessed whether the eyes opened and whether there was an increase in limb movements and puff-evoked eyeblinks (see 'Methods'). A wakeup score of zero indicated none of these happened. A value of 6 indicated that they all occurred. All three sub-scores contributed to the wakeup score. There was a larger contribution from eye-opening and puff-evoked eyeblinks (Figure 8—figure supplement 1). During the Unconscious state without electrical stimulation, we did not observe these events (e.g., Figure 1D shows that on average there were no air puff-evoked eyeblinks while Unconscious). Analysis of the electromyography (EMG), blood oxygenation, eyeblinks to airpuffs, and heart rate during thalamic electrical stimulation corroborated this wakeup score: Electrical stimulation of the thalamus increased muscle tone (non-parametric randomization test, p<0.01, Figure 8C), eyeblinks to airpuffs (non-parametric randomization test, p<0.01, Figure 8D), blood oxygen saturation (non-parametric randomization test, p<0.01, Figure 8E), and heart rate (non-parametric randomization test, p<0.01, Figure 8F). These changes were all greater for high relative to low-current (Figure 8C–F, non-parametric randomization test for significant differences between high- vs. low-current stimulation, p<0.01 are indicated with black stars) and outlasted the electrical stimulation period itself, achieving significance during the time window from 0 to 30 s post stimulation offset (post-stim one in Figure 8C–F) and sometimes the 30–60 s (post-stim 2) or 60–90 s (post-stim 3) post stimulation offset periods.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig8-v1.jpg)
+
+**Figure 8.:** (A) Behavioral wake-up score as a function of thalamic current for monkey 1 (left subplot) and monkey 2 (right subplot). Mean ±+ 1 SEM. A high-current and low-current condition was individually titrated per monkey for producing scores on average above or below a wake-up score of 2. (B) A histological image from monkey 1 showing the thalamic leads in the central thalamus. (C) Change in EMG from the pre-stimulation Unconscious baseline for high-current (red) vs. low-current (blue) conditions. Change in the physiological signal was tested for difference from Unconscious during the stimulation period (0–28.5 s with respect to electrical stimulation onset), post-1 (0–30 s with respect to electrical stimulation offset), post-2 (30–60 s with respect to electrical stimulation offset), and post-3 (60–90 s with respect to electrical stimulation offset). Significant differences from zero are indicated with red (for high current) or blue (for low current) stars. Significant differences between high vs. low current are indicated with black stars. Mean ± 1 SEM. (D) Same as C, but for eyeblink response to air puffs. (E) Same as C, but for blood oxygenation. (F) Same as C but for the heart rate response.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Behavioral wake-up score as a function of thalamic current defined separately for eye opening (blue), puff-evoked eye blinks (red), and arm/body movements (black). For eye opening, 0 = eyes closed, 1 = one or both eyes slightly open, 2 = one or both eyes fully open. For puff-evoked eyeblinks, 0 = no response, 1 = occasional blinking not necessarily in response to puffs, 2 = clear response to airpuffs. For arm/body movements, 0 = none, 1 = some mouth/jaw movement, 2 = arm/full-body movement. Plots are mean ±/- 2 SEM.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** (A) EMG relative to the Awake state during high-current thalamic stimulation. Unconscious denotes the period from 0 to 30 s prior to stimulation onset. Stim denotes the stimulation period (0–28.5 s with respect to electrical stimulation onset, not shown for EMG due to artifacts), post-1 (0–30 s with respect to electrical stimulation offset), post-2 (30–60 s with respect to electrical stimulation offset), and post-3 (60–90 s with respect to electrical stimulation offset). (B) Same as A, but for eyeblink response to air puffs. (C) Same as A, but for heart rate. (D) Same as A but blood oxygenation. Stars indicate significant differences from the pre-stimulation Unconscious state (p<0.01, non-parametric randomization test). Mean and the 99 percent bootstrap confidence interval of the mean.
+
 We quantified behavioral and neurophysiological effects relative to the Awake state using a Return To Wakefulness score (RTW – see 'Methods' and Table 1). An RTW score of 0% denotes no change and RTW of −100% denotes full return to the Awake state. High-current thalamic stimulation induced an average heart rate increase of 6–8 beats/min above Awake levels and increased eyeblinks to airpuffs and blood oxygenation (RTW of −36% and −69%, respectively) and did not change EMG responses (Figure 8—figure supplement 2, Table 1).
+
+**Table 1.**
+ Return to Wakefulness (RTW) scores for effects of high-current thalamic stimulation on physiological measures of arousal, firing rates, and cortical power.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th>Awake</th>
+      <th>Pre-stim unconscious</th>
+      <th>Stim</th>
+      <th>Post-stim1</th>
+      <th>Post-stim2</th>
+      <th>Post-stim3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EMG variance</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−2% (ns)</td>
+      <td>0% (ns)</td>
+      <td>0% (ns)</td>
+      <td>0% (ns)</td>
+    </tr>
+    <tr>
+      <td>Eyeblinks</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−36% (*)</td>
+      <td>−32% (*)</td>
+      <td>−7% (ns)</td>
+      <td>−2% (ns)</td>
+    </tr>
+    <tr>
+      <td>Blood oxygenation</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−1% (ns)</td>
+      <td>−69% (*)</td>
+      <td>−48% (*)</td>
+      <td>−19% (ns)</td>
+    </tr>
+    <tr>
+      <td>Heart rate</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−328% (*)</td>
+      <td>−362% (*)</td>
+      <td>−109% (ns)</td>
+      <td>−64% (ns)</td>
+    </tr>
+    <tr>
+      <td>Firing rate (PFC)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−6% (ns)</td>
+      <td>−16% (*)</td>
+      <td>−9% (ns)</td>
+      <td>−4% (ns)</td>
+    </tr>
+    <tr>
+      <td>Firing rate (8A)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−10% (ns)</td>
+      <td>−13% (ns)</td>
+      <td>−8% (ns)</td>
+      <td>−4% (ns)</td>
+    </tr>
+    <tr>
+      <td>Firing rate (PPC)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−33% (*)</td>
+      <td>−18% (*)</td>
+      <td>−11% (ns)</td>
+      <td>−6% (ns)</td>
+    </tr>
+    <tr>
+      <td>Firing rate (STG)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−26% (*)</td>
+      <td>−15% (ns)</td>
+      <td>−6% (ns)</td>
+      <td>−3% (ns)</td>
+    </tr>
+    <tr>
+      <td>Slow frequency power (PFC)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−45% (*)</td>
+      <td>−19% (*)</td>
+      <td>−11% (ns)</td>
+      <td>−6% (ns)</td>
+    </tr>
+    <tr>
+      <td>Slow frequency power(8A)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−65% (*)</td>
+      <td>−31% (*)</td>
+      <td>−18% (*)</td>
+      <td>−10% (*)</td>
+    </tr>
+    <tr>
+      <td>Slow frequency power (PPC)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−44% (*)</td>
+      <td>−7% (*)</td>
+      <td>−1% (ns)</td>
+      <td>−1% (ns)</td>
+    </tr>
+    <tr>
+      <td>Slow frequency power (STG)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−89% (*)</td>
+      <td>−8% (ns)</td>
+      <td>2% (ns)</td>
+      <td>1% (ns)</td>
+    </tr>
+    <tr>
+      <td>Beta power (PFC)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>400% (*)</td>
+      <td>1071% (*)</td>
+      <td>799% (*)</td>
+      <td>449% (*)</td>
+    </tr>
+    <tr>
+      <td>Beta power (8A)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−265% (*)</td>
+      <td>−228% (*)</td>
+      <td>−153% (*)</td>
+      <td>−88% (*)</td>
+    </tr>
+    <tr>
+      <td>Beta power (PPC)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−27% (*)</td>
+      <td>−29% (*)</td>
+      <td>−23% (*)</td>
+      <td>−17% (*)</td>
+    </tr>
+    <tr>
+      <td>Beta power (STG)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−24% (*)</td>
+      <td>−44% (*)</td>
+      <td>−31% (*)</td>
+      <td>−16% (*)</td>
+    </tr>
+    <tr>
+      <td>Gamma power (PFC)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−47% (*)</td>
+      <td>−48% (*)</td>
+      <td>−26% (*)</td>
+      <td>−12% (*)</td>
+    </tr>
+    <tr>
+      <td>Gamma power (8A)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−59% (*)</td>
+      <td>−40% (*)</td>
+      <td>−22% (*)</td>
+      <td>−11% (*)</td>
+    </tr>
+    <tr>
+      <td>Gamma power (PPC)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−71% (*)</td>
+      <td>−45% (*)</td>
+      <td>−27% (*)</td>
+      <td>−15% (*)</td>
+    </tr>
+    <tr>
+      <td>Gamma power (STG)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−77% (*)</td>
+      <td>−43% (*)</td>
+      <td>−19% (*)</td>
+      <td>−6% (ns)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Asterisks denote significant (p<0.01) changes from the Unconscious state.PFC: prefrontal cortex; PPC: posterior parietal cortex 7A/7B; 8A: caudal lateral PFC; STG: superior temporal gyrus._
 
 Stimulation produced an awake-like cortical state by increasing spiking rates and decreasing slow-frequency power and synchronization. An example raster plot of well-isolated single neurons from a single stimulation trial is shown in Figure 9A. To see how we removed spurious threshold crossings due to the electrical stimulation itself, see Methods. High-current stimulation increased the spike rate (Figure 9B and Figure 9C, upper subpanel) from ~1 to ~2.5 spikes/s. In all areas, there was a significant increase in spiking during the stimulation interval compared to the pre-stimulation Unconscious state (Figure 9C, orange bars in upper subpanel, red stars indicate significant differences, p<0.01, non-parametric randomization test). In area STG, this increase brought the average spike rate to the same level as that seen during natural ROC (horizontal dotted lines in Figure 9C, upper subpanel). In all areas, the increased spike rate persisted for at least 30 s (and as long as 90 s) post-stimulation (Figure 9C, red stars indicate significant differences, p<0.01, non-parametric randomization test). With low-current stimulation, mean spikes rates were unchanged from pre-stimulation baseline (Figure 9C, lower subpanel, all p>0.01). Measured relative to the Awake state, high-current thalamic stimulation increased firing rates, with RTW between −17% and −33% (Figure 9—figure supplement 1 and Table 1).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig9-v1.jpg)
+
+**Figure 9.:** (A) An example trial. Well-isolated single units are shown before, during, and after electrical stimulation for a trial that produced a maximal wake-up score (eyes opened, muscle movement, response to air puffs). (B) The average effect on all well-isolated single units across all areas. Mean firing rates with respect to electrical stimulation onset (at time zero) and offset (28.5 s) for high (red) vs. low (blue) current. (C) (Upper panel) Mean firing rates for all single units in each area as a function of time in the trial during high-current stimulation (blue bars: pre-stim Unconscious baseline; orange bars: electrical stimulation; yellow bars: 0–30 s after electrical stimulation offset; purple bars: 30–60 s after electrical stimulation offset; green bars: 60–90 s after electrical stimulation offset). (Lower panel) Same as upper subplot, but for low-current stimulation. Mean ± the bootstrap 99 percent confidence interval of the mean across neurons. (D) Mean dB change in power as a function of time since electrical stimulation for all high-current trials in area 8A. (E) Same as D, but highlighting spectral modulation during the period of electrical stimulation (0–28.5 s). Mean ± 1 SEM. The vertical dotted lines indicate the peak frequencies of beta power modulation in PFC and 8A. (F) Mean pairwise phase consistency (PPC) between spikes and fields within each cortical area. Significant changes relative to the pre-stimulation Unconscious state are indicated with asterisks (p<0.01, non-parametric randomization test). Mean and the bootstrap 99 percent confidence interval of the mean across neurons. (G) Same as D, but highlighting spectral modulation during the post-1 period of electrical stimulation (0–30 s post electrical stimulation offset). Mean ±/- 1 SEM. PFC: prefrontal cortex; PPC: posterior parietal cortex 7A/7B; 8A: caudal lateral PFC; STG: superior temporal gyrus.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** Mean firing rates (spikes/s) for indicated cortical areas relative to Awake. Negative values indicate decreased firing rates relative to Awake. Unconscious is the state immediately before stimulation (0–30 s prior to stimulation, blue bars), stim is the duration of electrical stimulation (orange bars), post-stim1 is 0–30 s after electrical stimulation offset (yellow bars), post-stim2 is 30–60 s after electrical stimulation offset (purple bars), and post-stim3 is 60–90 s after electrical stimulation offset (green bars). Significant changes relative to the pre-stim Unconscious state are indicated with asterisks (p<0.01, non-parametric randomization test). Mean ±/- the bootstrap 99 percent confidence interval of the mean across neurons. PFC: prefrontal cortex; PPC: posterior parietal cortex 7A/7B; 8A: caudal lateral PFC; STG: superior temporal gyrus.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** (A-D) Mean dB change in power from the pre-stimulation Unconscious state as a function of time since electrical stimulation for all high-current trials in areas 8A, PFC, PPC, and STG, respectively. (E-H) Same as A-D, but for low current. Significant increases or decreases from the pre-stimulation Unconscious state are marked with opaque colors and are highlighted. PFC: prefrontal cortex; PPC: posterior parietal cortex 7A/7B; 8A: caudal lateral PFC; STG: superior temporal gyrus.
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig9-figsupp3-v1.jpg)
+
+**Figure 9—figure supplement 3.:** Mean pairwise phase consistency (PPC) for indicated cortico-cortical interactions relative to the pre-drug Awake state in the slow frequency (0.1–2 Hz) band. Positive values indicate increases in synchronization relative to the Awake state. Unconscious (0–30 s prior to stimulation), Stimulation (duration of stimulation): post-stim1 (0–30 s after electrical stimulation offset), post-stim2 (30–60 s after electrical stimulation offset), and post-stim3 (60–90 s after electrical stimulation offset). Mean ±/- 2 SEM across sessions. Significant changes relative to the pre-stim Unconscious state are indicated with asterisks (p<0.01, non-parametric randomization test). PFC: prefrontal cortex; PPC: posterior parietal cortex 7A/7B; 8A: caudal lateral PFC; STG: superior temporal gyrus; SF: slow frequency.
+
+![Figure 9—figure supplement 4.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig9-figsupp4-v1.jpg)
+
+**Figure 9—figure supplement 4.:** Mean pairwise phase consistency (PPC) for indicated thalamo-cortical interactions relative to the pre-drug Awake state. Positive values indicate increases in synchronization relative to the Awake state. Unconscious (0–30 s prior to stimulation), Stimulation (duration of stimulation), post-stim1 (0–30 s after electrical stimulation offset), post-stim2 (30–60 s after electrical stimulation offset), and post-stim3 (60–90 s after electrical stimulation offset). Mean ±/- 2 SEM across sessions. Significant changes relative to the pre-stim Unconscious state are indicated with asterisks p<0.01, non-parametric randomization test). PFC: prefrontal cortex; PPC: posterior parietal cortex 7A/7B; 8A: caudal lateral PFC; STG: superior temporal gyrus; SF: slow frequency.
+
+![Figure 9—figure supplement 5.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig9-figsupp5-v1.jpg)
+
+**Figure 9—figure supplement 5.:** dB Change in slow frequency (SF, 0.1–2 Hz) power for indicated cortical areas relative to the pre-drug Awake state. Positive values indicate increases in power relative to the Awake state. Unconscious (0–30 s prior to stimulation), Stimulation (duration of stimulation), post-stim1 (0–30 s after electrical stimulation offset), post-stim2 (30–60 s after electrical stimulation offset), and post-stim3 (60–90 s after electrical stimulation offset). Mean ±/- 2 SEM across sessions. Significant changes relative to the pre-stim Unconscious state are indicated with asterisks (p<0.01, non-parametric randomization test). PFC: prefrontal cortex; PPC: posterior parietal cortex 7A/7B; 8A: caudal lateral PFC; STG: superior temporal gyrus.
+
+![Figure 9—figure supplement 6.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig9-figsupp6-v1.jpg)
+
+**Figure 9—figure supplement 6.:** Mean pairwise phase consistency (PPC) between spikes and fields within each cortical area relative to the pre-drug Awake state. Positive values indicate increases in spike-LFP synchronization relative to the Awake state. Unconscious (blue bars, 0–30 s prior to stimulation), Stimulation (orange bars, duration of stimulation), post-stim1 (yellow bars, 0–30 s after electrical stimulation offset), post-stim2 (purple bars, 30–60 s after electrical stimulation offset), and post-stim3 (green bars, 60–90 s after electrical stimulation offset). Significant changes relative to Unconscious are indicated with asterisks (p<0.01, non-parametric randomization test). Mean and the bootstrap 99 percent confidence interval of the mean across neurons. PFC: prefrontal cortex; PPC: posterior parietal cortex 7A/7B; 8A: caudal lateral PFC; STG: superior temporal gyrus.
+
+![Figure 9—figure supplement 7.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig9-figsupp7-v1.jpg)
+
+**Figure 9—figure supplement 7.:** dB Change in alpha-beta power (8–25 Hz) for indicated cortical areas relative to the pre-drug Awake state. Positive values indicate increases in power relative to the Awake state. Negative values indicate decreases in power relative to the Awake state. Unconscious (0–30 s prior to stimulation), Stimulation (duration of stimulation), post-stim1 (0–30 s after electrical stimulation offset), post-stim2 (30–60 s after electrical stimulation offset), and post-stim3 (60–90 s after electrical stimulation offset). Mean ±/- 2 SEM across sessions. Significant changes relative to the pre-stim Unconscious state are indicated with asterisks (p<0.01, non-parametric randomization test). PFC: prefrontal cortex; PPC: posterior parietal cortex 7A/7B; 8A: caudal lateral PFC; STG: superior temporal gyrus.
+
+![Figure 9—figure supplement 8.](https://cdn.elifesciences.org/articles/60824/elife-60824-fig9-figsupp8-v1.jpg)
+
+**Figure 9—figure supplement 8.:** dB Change in gamma power (40–100 Hz) for indicated cortical areas relative to the pre-drug Awake state. Negative values indicate decreases in power relative to the Awake state. Unconscious (0–30 s prior to stimulation), Stimulation (duration of stimulation), post-stim1 (0–30 s after electrical stimulation offset), post-stim2 (30–60 s after electrical stimulation offset), and post-stim3 (60–90 s after electrical stimulation offset). Mean ±/- 2 SEM across sessions. Significant changes relative to the pre-stim Unconscious state are indicated with asterisks (p<0.01, non-parametric randomization test). PFC: prefrontal cortex; PPC: posterior parietal cortex 7A/7B; 8A: caudal lateral PFC; STG: superior temporal gyrus.
+
 LFP power/synchronization was modulated by electrical stimulation (shown for area 8A in Figure 9D and for the other areas in Figure 9—figure supplement 2). High-current, but not low-current, stimulation significantly reduced slow-frequency power for up to 85 s post electrical stimulation onset relative to pre-stimulation baseline (Figure 9D and Figure 9—figure supplement 2, p<0.01, cluster-based non-parametric randomization test). In addition, high-current stimulation decreased within-area spike-LFP (in three of four cortical areas, Figure 9F) as well as cortico-cortical and thalamo-cortical LFP-LFP slow-frequency synchronization (Figure 9—figure supplements 3 and 4). High-current stimulation also significantly increased higher-frequency power during and after stimulation (Figure 9D and Figure 9—figure supplement 2, p<0.01, cluster-based non-parametric randomization test). During stimulation, the enhancement had a well-defined peak in the alpha-beta band in area 8A and PFC (vertical dotted lines in Figure 9E indicate peaks at 13 Hz in 8A and 15 Hz in PFC). They were absent in the 0–30 s post-stimulation offset interval (Figure 9G). The reduction in slow frequency power persisted for 85 s post-stimulation. All of the effects were weak or absent for low-current stimulation (Figure 9—figure supplement 2). Measured relative to the Awake state, high-current thalamic stimulation decreased slow-frequency power (RTW: −44 to −89%, Figure 9—figure supplement 5, Table 1), within-area spike-LFP synchronization (RTW: −24%, −35%, −113%, area 8A showed opposite results, a slight increase in spike-LFP synchronization, Figure 9—figure supplement 6, Table 2), thalamo-cortical (RTW: −71 to −77%, Figure 9—figure supplement 4, Table 2) and cortico-cortical synchronization (RTW: −29 to −63%%, Figure 9—figure supplement 3, Table 2). Beta and gamma power also increased relative to the Awake state. Beta power enhanced beyond that seen in the Awake state in frontal areas (Figure 9—figure supplement 7, Table 1) and gamma power reached RTW values between −47% and −77% (Figure 9—figure supplement 8, Table 1).
+
+**Table 2.**
+ Return to Wakefulness (RTW) scores for effects of high-current thalamic stimulation on LFP-LFP and spike-LFP slow-frequency phase synchronization.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Measure</th>
+      <th>Awake</th>
+      <th>Pre-stim unconscious</th>
+      <th>Stim</th>
+      <th>Post-stim1</th>
+      <th>Post-stim2</th>
+      <th>Post-stim3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Spike-LFP (PFC)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−24% (*)</td>
+      <td>15% (ns)</td>
+      <td>−1% (ns)</td>
+      <td>1% (ns)</td>
+    </tr>
+    <tr>
+      <td>Spike-LFP (8A)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>103% (*)</td>
+      <td>96% (*)</td>
+      <td>79% (*)</td>
+      <td>38% (ns)</td>
+    </tr>
+    <tr>
+      <td>Spike-LFP (PPC)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−35% (*)</td>
+      <td>−8% (ns)</td>
+      <td>6% (ns)</td>
+      <td>12% (*)</td>
+    </tr>
+    <tr>
+      <td>Spike-LFP (STG)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−113% (*)</td>
+      <td>−16% (ns)</td>
+      <td>24% (ns)</td>
+      <td>29% (ns)</td>
+    </tr>
+    <tr>
+      <td>LFP-LFP (PFC-thalamus)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−77% (*)</td>
+      <td>−58% (*)</td>
+      <td>−7% (ns)</td>
+      <td>8% (ns)</td>
+    </tr>
+    <tr>
+      <td>LFP-LFP (8A-thalamus)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−77% (*)</td>
+      <td>−71% (*)</td>
+      <td>−16% (ns)</td>
+      <td>−4% (ns)</td>
+    </tr>
+    <tr>
+      <td>LFP-LFP (PPC-thalamus)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−10% (ns)</td>
+      <td>−19% (ns)</td>
+      <td>30% (ns)</td>
+      <td>15% (ns)</td>
+    </tr>
+    <tr>
+      <td>LFP-LFP (STG-thalamus)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−71% (*)</td>
+      <td>−68% (*)</td>
+      <td>−27% (*)</td>
+      <td>−12% (ns)</td>
+    </tr>
+    <tr>
+      <td>LFP-LFP (PFC-8A)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−40% (*)</td>
+      <td>−25% (*)</td>
+      <td>−6% (ns)</td>
+      <td>3% (ns)</td>
+    </tr>
+    <tr>
+      <td>LFP-LFP (PFC-PPC)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−60% (*)</td>
+      <td>3% (ns)</td>
+      <td>17% (ns)</td>
+      <td>1% (ns)</td>
+    </tr>
+    <tr>
+      <td>LFP-LFP (PFC-STG)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−45% (*)</td>
+      <td>−11% (ns)</td>
+      <td>6% (ns)</td>
+      <td>36% (*)</td>
+    </tr>
+    <tr>
+      <td>LFP-LFP (8A-PPC)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−29% (*)</td>
+      <td>−13% (ns)</td>
+      <td>−7% (ns)</td>
+      <td>8% (ns)</td>
+    </tr>
+    <tr>
+      <td>LFP-LFP (8A-STG)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>−63% (*)</td>
+      <td>−41% (*)</td>
+      <td>−8% (ns)</td>
+      <td>11% (ns)</td>
+    </tr>
+    <tr>
+      <td>LFP-LFP (PPC-STG)</td>
+      <td>−100%</td>
+      <td>0%</td>
+      <td>29% (*)</td>
+      <td>5% (ns)</td>
+      <td>9% (ns)</td>
+      <td>4% (ns)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Asterisks denote significant (p<0.01) changes from the Unconscious state.PFC: prefrontal cortex; PPC: posterior parietal cortex 7A/7B; 8A: caudal lateral PFC; STG: superior temporal gyrus; LFP: local field potentials._
 
 ## Discussion
 
@@ -130,11 +564,11 @@ In sum, a mechanism through which propofol likely renders unconsciousness is by 
 
 ## Materials and methods
 
-## Experimental subjects and vascular access port
+### Experimental subjects and vascular access port
 
 Four rhesus macaques (Macaca mulatta) aged 14 years (monkey 1, male,~13.0 kg), 8 years (monkey 2, female,~6.6 kg), 7 years (monkey 3, female,~5.0 kg), and 18 years (monkey 4, female,~11,9 kg) participated in these experiments. All animals were pair-housed on 12 hr day/night cycles and maintained in a temperature-controlled environment (80 °F). Monkeys 1 and 2 were surgically implanted with a subcutaneous vascular access port (Model CP-6, Norfolk Access Technologies, Skokie, IL) at the cervicothoracic junction of the neck with the catheter tip reaching the termination of the superior vena cava via the external jugular vein. Monkeys 3 and 4 were acutely implanted with a catheter to a vein in the ear after applying lidocaine to the overlying skin. The catheter was removed and reapplied prior to each session.
 
-## Neural recordings in cortex
+### Neural recordings in cortex
 
 Neurophysiology with chronic Utah arrays: For recordings in cortex, monkeys 1 and 2 were chronically implanted with four 8 × 8 iridium-oxide contact microelectrode arrays (‘Utah arrays’, MultiPort: 1.0 mm shank length, 400 µm spacing, Blackrock Microsystems, Salt Lake City, UT), for a total of 256 electrodes. Arrays were implanted in the prefrontal (area 46 ventral and 8A), posterior parietal (area 7A/7B), and temporal-auditory (caudal parabelt area STG [superior temporal gyrus]) cortices. Specific anatomical targeting utilized structural MRIs of each animal and a macaque reference atlas, as well as visualization of key landmarks on surgical implantation (McLaren et al., 2009). For Utah array recordings, area 8A and PFC were ground and referenced to a common subdural site. Area STG and PPC also shared a common ground/reference channel which was also subdural. LFPs were recorded at 30 kHz and filtered online via a lowpass 250 Hz software filter and downsampled to 1 kHz. Spiking activity was recorded by sampling the raw analog signal at 30 kHz, bandpass filtered from 250 Hz to 5 kHz, and manually thresholding. Blackrock Cereplex E headstages were utilized for digital recording via 2–3 synchronized Blackrock Cerebus Digital Acquisition systems. Single units were sorted manually offline using principal component analysis with commercially available software (Offline Sorter v4, Plexon Inc, Dallas, TX). All other pre-processing and analyses were performed with Matlab (The Mathworks, Inc, Natick, MA).
 
@@ -142,13 +576,13 @@ To ensure signals recorded on the multiple data acquisition systems remained syn
 
 Neurophysiology with acute laminar probes: For recordings in monkeys 3 and 4, the monkeys were first implanted with a custom-machined Carbon PEEK chamber system with three recording wells placed over visual/temporal, parietal, and frontal cortex (Mulliken et al., 2015). We acutely introduced 16 or 32 contact ‘multi-laminar’ probes (U/V probes, Plexon, Dallas, TX) into the same cortical areas we recorded with chronic Utah arrays: areas STG, 7A/7B, 8A, and VLPFC. Between 1 and 2 probes were used per recording chamber and a total of 4–6 probes were used per session. The total channel count ranged between 96 and 128 electrodes per session. Electrode contacts on these probes were spaced 100 μm apart for the 32 channel probes or 200 μm apart for the 16 channel probes. This gave a total linear sampling of 3.0–3.1 mm on each probe. The recording reference was the reinforcement tube, which made metallic contact with the entire length of the probe (total probe length from connector to tip was 70 mm). With MRI guidance, we introduced the probes to be perpendicular to cortex and to span all cortical layers, as previously described (Bastos et al., 2020). As a marker for layer 4, we used the relative power profiles calculated in the pre-propofol Awake state. The cross-over between the relative power of the gamma and alpha-beta bands was used to estimate the location of layer 4. This cross-over point between gamma and alpha-beta relative power profiles was previously shown to correspond to the location of the first current source density sink (within 100–200 μm), another marker for layer 4 (Bastos et al., 2018).
 
-## Neural recordings and electrode targeting in thalamus
+### Neural recordings and electrode targeting in thalamus
 
 After 10–20 sessions of cortex only recordings, monkeys were chronically implanted with four 6–8 channel recording/stimulating electrodes (0.5 mm contacts with 0.5 mm intercontact spacing, NuMed Inc, Hopkington, NY) bilaterally targeting the intralaminar nuclei of the central thalamus. Thalamic recordings were referenced to the monkey’s titanium headpost. Thalamic sites were re-referenced to a bipolar montage prior to phase synchronization analysis. LFPs were recorded via a separate analog front-end amplifier and an additional identical digital acquisition system, synchronized to the digital acquisition systems utilized for cortical recordings. LFPs were similarly recorded at 30 kHz and filtered online via a lowpass 250 Hz software filter and downsampled to 1 kHz.
 
 A specialized anatomical localization and insertion protocol utilizing serial intraoperative MRIs was developed in order to allow for precise subcortical targeting of the electrodes along the long axis of the central lateral nucleus and extending ventrally to the centromedian and parafasicular nuclei. Custom-made carbon PEEK recording chambers were affixed to the skull with acrylic and ceramic screws stereotaxically determined to target the central thalamus. Recording chamber grids with 1 mm grid holes were inserted into the chambers, filled with sterile saline, and the monkeys were imaged by 3T MRI. After confirmation of the appropriate grid holes targeting the thalamic structures of interest, monkeys were generally anesthetized and brought to the operating facility where a small-bore craniotomy (<2 mm) was performed at the appropriate grid holes. The grid was replaced in the chamber and the monkeys were transferred to the imaging facility under general anesthesia. They were then administered a gadofosveset trisodium contrast agent to highlight vasculature obstructing the trajectory to thalamus (e.g., thalamostriate vein). In the MRI suite, a stylette cannulae was inserted into the relevant grid holes and lowered several millimeters into cortex and one set of 0.5 mm resolution images was obtained. Upon confirmation of correct trajectory on MRI, the stylette-cannulae were lowered to their final position, with the tip approximating the thalamus. The stylettes were then removed, and electrodes of marked length lowered to the depth of the cannulae. Following another MRI-based measurement (scan 2) with the electrodes still in the cannulae, the electrodes were lowered to their final positions within the thalamus and reimaged (scan 3). Upon final assessment of correct localization, the probes were fixed in place and the chamber sealed with acrylic. Histological staining with acetylcholinesterase was used to confirm exact electrode contact locations within and outside the central thalamus of both monkeys. Thalamic leads used for recording/stimulating were centered on the ILN (consisting of nuclei CL, Cm, and Pf) and the MD nucleus of the thalamus. A minority of the leads also encompassed neighboring thalamic area VPL.
 
-## Experimental procedures
+### Experimental procedures
 
 On a given experimental session, monkeys were head-fixed via a titanium headpost and placed in noise isolation chambers with masking white noise (50 dB). We ran two sets of experimental sessions. The first set of sessions consisted of neurophysiological recordings from cortex only. We refer to these as ‘propofol cortex sessions.’ A total of 21 sessions (N = 11 from monkey 1, N = 10 from monkey 2) were used. These sessions proceeded as follows: first, a period of 15–90 min of awake baseline electrophysiological recordings were recorded. Next, propofol was intravenously infused via a computer-controlled syringe pump (PHD ULTRA 4400, Harvard Apparatus, Holliston, MA). The infusion protocol was stepped such that unconsciousness was induced via a higher rate infusion (285 µg/kg/min for monkey 1; 580 µg/kg/min for monkey 2) for 20 min before dropping to a maintenance dose (142.5 µg/kg/min for monkey 1; 320 µg/kg/min for monkey 2) for an additional 40 min.
 
@@ -158,66 +592,114 @@ Heart rate and oxygen saturation were monitored continuously and recorded throug
 
 Infrared monitoring tracked facial movements and pupil size (Eyelink 1000 Plus, SR-Research, Ontario, CA) throughout the course of the experiments. Loss of consciousness (LOC) was deemed by the timestamp of the moment of eyes-closing that persisted for the remainder of the infusion. ROC was classified as the timestamp of the first to occur between eyes reopening or regaining of motor activity following drug infusion cessation. Animals regained consciousness after the maintenance infusion was terminated and were monitored for an additional period before being returned to their home cage. To ensure propofol clearance from tissues and physiological recovery, experiments were never repeated on subsequent days. All procedures followed the guidelines of the MIT Animal Care and Use Committee (protocol number 0619-035-22) and the US National Institutes of Health.
 
-## Thalamic stimulation procedure
+### Thalamic stimulation procedure
 
 For electrical stimulation of thalamic electrodes, we adapted electrical stimulation parameters previously shown to cause behavioral improvements in coma patients and awake, behaving monkeys (Baker et al., 2016; Schiff et al., 2007). We unilaterally delivered 180 Hz bipolar, biphasic, square wave pulses (0.5–2.5 milliAmps) between 6 and 8 contacts on monkey 1 and 6 contacts on monkey 2. Stimulation montages were used that included two thalamic probes on the same side. Five minutes into the maintenance anesthesia dose (20 min from infusion start), 28.5 s ‘trials’ of electrical stimulation were delivered as the propofol infusion continued. DBS trials were separated by 2 min intervals, except the 4th and 5th stimulation runs, which were separated by a 5 min inter-trial interval. These DBS washout periods sufficiently allowed for reestablishment of the behaviorally judged unconscious state (e.g., loss of puff responses). We delivered between 0.5 and 2.5 mAmp of current. In early pilot experiments, different currents, frequencies, waveform shapes, and electrode combinations were screened for eliciting arousal. We chose a set of parameters that was effective at eliciting arousal, but minimal in current and number of stimulated electrodes, for the final experiments reported here.
 
-## Wakeup score
+### Wakeup score
 
 One of the authors (MM) who was present during all DBS sessions performed a behavioral score for each DBS trial for the degree to which the electrical stimulation induced changes in arousal. This numerical ‘wakeup score’ is loosely inspired by the Glasgow coma scale. Like the Glasgow coma scale, it separately scores each of the behavioral components, then sums them into a single overall score for each DBS trial. The components are: (1) spontaneous eye opening (0–2): 0 = eyes closed, 1 = one or both eyes slightly open, 2 = one or both eyes fully open; (2) responses to external stimuli (airpuffs directed at eye/face; 0–2): 0 = no response, 1 = occasional blinking not necessarily in response to puffs, 2 = clear response to airpuffs; (3) face/body movements (0–2): 0 = none, 1 = some mouth/jaw movement, 2 = arm/full-body movement. The final waking score for each trial is simply the sum of these three components. Note that the actual Glasgow scale combines components 1 and two into a single ‘eye opening’ score, but empirically in this data,​ spontaneous eye opening and blink responses to airpuffs seem to occur somewhat independently rather than on a single continuum.
 
-## Histology
+### Histology
 
 At the end of the recording sessions, the animals were euthanized for histological confirmation of thalamic sites, as previously described (Wu and Kaas, 1999). Briefly, monkeys were given a lethal dose of sodium pentobarbital. When they became areflexive, they were perfused transcardially with PBS, followed first by a cold solution of 4% paraformaldehyde and next by a mixed solution of 4% paraformaldehyde and 10% sucrose. Blocks of brain and spinal cord were removed and stored overnight in 30% sucrose at 5°C before cutting. Sections were processed for acetylcholinesterase. Anatomical localization of electrodes was determined by histological examination of brain tissue. It was not necessary to create electrolytic lesions prior to histology, because the thalamic electrodes were wide enough (0.5 mm diameter) to be unambiguously identified in the anatomical sections.
 
-## Data preprocessing, general
+### Data preprocessing, general
 
 Single units were sorted manually offline using principal component analysis with commercially available software (Offline Sorter v4, Plexon Inc, Dallas, TX). All other pre-processing and analyses were performed with Matlab (The Mathworks, Inc, Natick, MA).
 
-## Data preprocessing, electrical stimulation LFP
+### Data preprocessing, electrical stimulation LFP
 
-Electrical stimulation generally produced artifacts that were highly correlated across channels in a stereotyped manner. We removed these using zero-phase component analysis (ZCA) whitening (Eldar and Oppenheim, 2003). ZCA whitening is the linear whitening transformation that minimizes the mean squared error between the original and whitened signals. Intuitively, it estimates the across-channel correlations induced by DBS stimulation, and removes them from the data. First, we extracted the spiking band from the raw 30 kHz analog signals by band-pass filtering at 300–4500 Hz with a zero-phase fourth-order Butterworth filter. Next, we estimated the cross-channel covariance matrix Σ from the filtered signals during the DBS stimulation periods (from a subset of 100,000 randomly sampled time points, for computational efficiency). From the estimated covariance, we computed the ‘whitening matrix’: W=Σ−1/2. We then normalized each column of W by its diagonal (variance) value, so that the resulting matrix will remove DBS-induced correlations, but not change the amplitude of individual channels. We removed the DBS stimulation artifacts by multiplying the full matrix of filtered signals by the modified whitening matrix. Finally, we computed the mean and standard deviation of each denoised channel, thresholded each at –4.5 SD, and extracted spike timestamps and waveforms around each threshold crossing. Extracted spikes were sorted into units using principal component analysis in commercially available software (Offline Sorter v4, Plexon Inc, Dallas, TX). Only spikes whose average waveform during electrical stimulation matched the waveform outside periods of electrical stimulation (Pearson correlation coefficient greater than or equal to 0.99) were included for analysis.
+Electrical stimulation generally produced artifacts that were highly correlated across channels in a stereotyped manner. We removed these using zero-phase component analysis (ZCA) whitening (Eldar and Oppenheim, 2003). ZCA whitening is the linear whitening transformation that minimizes the mean squared error between the original and whitened signals. Intuitively, it estimates the across-channel correlations induced by DBS stimulation, and removes them from the data. First, we extracted the spiking band from the raw 30 kHz analog signals by band-pass filtering at 300–4500 Hz with a zero-phase fourth-order Butterworth filter. Next, we estimated the cross-channel covariance matrix $Σ$ from the filtered signals during the DBS stimulation periods (from a subset of 100,000 randomly sampled time points, for computational efficiency). From the estimated covariance, we computed the ‘whitening matrix’: $W=Σ^{−1/2}$. We then normalized each column of $W$ by its diagonal (variance) value, so that the resulting matrix will remove DBS-induced correlations, but not change the amplitude of individual channels. We removed the DBS stimulation artifacts by multiplying the full matrix of filtered signals by the modified whitening matrix. Finally, we computed the mean and standard deviation of each denoised channel, thresholded each at –4.5 SD, and extracted spike timestamps and waveforms around each threshold crossing. Extracted spikes were sorted into units using principal component analysis in commercially available software (Offline Sorter v4, Plexon Inc, Dallas, TX). Only spikes whose average waveform during electrical stimulation matched the waveform outside periods of electrical stimulation (Pearson correlation coefficient greater than or equal to 0.99) were included for analysis.
 
-## Methods, LFP spectral analysis, and statistics
+### Methods, LFP spectral analysis, and statistics
 
 LFPs were analyzed using the Fieldtrip toolbox (http://www.fieldtriptoolbox.org/) (Oostenveld et al., 2011). We tested whether specific oscillations in different areas relative to drug onset (or electrical stimulation onset) were modulated in power. For each channel on each array or thalamic probe, we computed a time-frequency decomposition. For propofol-only sessions, we calculated power in sliding windows of duration 10 s with a hanning taper, to deliver 0.1 Hz Spectra resolution. We calculated power across logarithmically spaced frequencies 0.178–200 Hz.
 
-We calculated the change in power between Unconscious and Awake baseline in decibel (dB) units. In other words, we applied the following transformation to the raw power values:10log10⁡(powerUnconsciouspowerAwake)
+We calculated the change in power between Unconscious and Awake baseline in decibel (dB) units. In other words, we applied the following transformation to the raw power values:
+
+$$
+10log_{10}⁡(\frac{powerUnconscious}{powerAwake})
+$$
 
 For cortex power modulation with thalamic electrical stimulation, we calculated power using a sliding window approach time locked to the onset of electrical stimulation. Power was calculated from 25 s pre-stimulation to 150 s post-stimulation with 0.5 s intervals, and with 5 s analysis windows. We calculated change in power relative to pre-stimulation baseline, which was the average power from 25 s to 3 s prior to stimulation.
 
-## Methods, Pairwise Phase Consistency
+### Methods, Pairwise Phase Consistency
 
 To quantify phase synchronization between cortico-cortical and thalamo-cortical LFPs, and between spike-field LFP pairs, we used the pairwise phase consistency (PPC) (Vinck et al., 2010). The PPC metric is a metric of phase synchronization that is unbiased by the number of observations. Prior to calculating PPC, we first re-referenced data to a local bipolar montage at 1600 μm distance. We then calculated PPC between inter-areal bipolar sites using the multitaper method with 1 Hz spectral smoothing to estimate power in 0.5 Hz intervals from 0 to 200 Hz using 2 s windows with 75% overlap. For thalamo-cortical PPC analysis, we re-referenced cortical recordings as stated above, and we re-referenced thalamus data to a local bipolar montage at 1500 μm distance. For spike-LFP analysis, we average LFPs across each cortical array (STG/PPC/8A/PFC) and computed PPC between these array-averaged LFPs and each well-isolated single neuron in each area.
 
-## Statistics
+### Statistics
 
 We determined whether there were differences from baseline in power and coherence by using a non-parametric cluster-based randomization test (Oostenveld et al., 2011). For each session, we realized the null hypothesis that power in the baseline and power in the drug period were the same. To this end, we randomly exchanged baseline-transformed time-frequency power estimates between the baseline and drug windows. We extracted the largest cluster (continuous tiles in time-frequency space) to pass a first level significance threshold, by applying a t-test and thresholding all significant bins p<0.01, uncorrected. We performed this randomization 1000 times. The empirically observed clusters were compared to this randomization distribution to assess significance at p=0.01, adjusted for multiple comparisons across sessions.
 
-To calculate the effect of electrical thalamic stimulation on cortical power, we applied a similar transformation, only this time the baseline was the 30 s of data immediately preceding each trial of stimulation:10log10⁡(powerstimulationpowerpre−stimulationUnconsciousbaseline)
+To calculate the effect of electrical thalamic stimulation on cortical power, we applied a similar transformation, only this time the baseline was the 30 s of data immediately preceding each trial of stimulation:
+
+$$
+10log_{10}⁡(\frac{powerstimulation}{powerpre−stimulationUnconsciousbaseline})
+$$
 
 We then repeated the same test outlined above, only now randomizing bins before/during/after stimulation onset to create the null hypothesis. There were stimulation onset and offset artifacts. We removed the times around onset/offset ± 3 s prior to performing this randomization test. As a result, these artifact times are omitted from the analysis and figure.
 
-## Return to wakefulness metric
+### Return to wakefulness metric
 
 We quantified how much thalamic stimulation changed physiological and neural variables using a simple metric, called the return to wakefulness (RTW) metric. We first normalized each physiological or neural variable with respect to the pre-drug Awake state by dB change (for power) or subtraction. On this normalized signal we then computed the percent change from the pre-stimulation to the stimulation, post-stim1, post-stim2, and post-stim3 periods. Therefore, RTW of 0% indicates no change and RTW of −100% denotes return to that signal’s level observed during the pre-drug Awake state. Note that a positive RTW value would mean that particular measure moved further away from the levels seen in the Awake state, and that thalamic stimulation moved the measure further in the direction observed in the Unconscious state.
 
-## Methods, state-space modeling of physiological signals
+### Methods, state-space modeling of physiological signals
 
 To characterize physiologically the transition from consciousness to unconsciousness, we measured heart rates, muscle tone with EMG, and blood oxygenation. These signals were pre-processed in the following manner. Heart rates and blood oxygenation (SPO2) signals were averaged using non-overlapping windows of 1 s. The EMG signals were z-scored by subtracting its mean and dividing by its session-wide standard deviation. Its variance was computed using one second, non-overlapping windows. From EMG signals measured from two electrodes adjacent to the eyes, we extracted evoked puff responses (eyeblinks) using the following procedure. We computed the average of the EMG signal within a 50–150 millisecond time window, following an air-puff stimulus, for each individual session. We subtracted the mean and divided this time-series by its session-wide standard deviation. Then, we computed a moving average over a 30 s window to obtain a continuous estimate of this response.
 
-To quantify the change in these physiological signals with the administration of propofol, we used a state-space model analysis (Shumway and Stoffer, 1982). We assumed that the temporal structure in the log of the EMG variance, the blood oxygen saturation levels, the eyeblinks and the heart rate can be represented as a linear Gaussian state-space model of the form:ObservationEquationytj=zt+εtjStateEquationzt=zt−1+vt,where ytj is the physiological signal at time t for session j=1,…,J, zt is the state at time t, εtj is independent Gaussian noise with zero mean and variance σε2, and vt is independent Gaussian noise with zero mean and variance σv2 for t=1,…,Tj. Here, J is the total number of sessions and Tj is the total number of samples reorded during the jth session. The state-space model was fit to each physiological signal time series using the Expectation-Maximization algorithm (Shumway and Stoffer, 1982, Dempster et al., 1977).
+To quantify the change in these physiological signals with the administration of propofol, we used a state-space model analysis (Shumway and Stoffer, 1982). We assumed that the temporal structure in the log of the EMG variance, the blood oxygen saturation levels, the eyeblinks and the heart rate can be represented as a linear Gaussian state-space model of the form:
+
+$$
+ObservationEquation
+$$
+
+
+
+$$
+y_{t}^{j}=z_{t}+\epsilon_{t}^{j}
+$$
+
+
+
+$$
+StateEquation
+$$
+
+
+
+$$
+z_{t}=z_{t−1}+v_{t},
+$$
+
+where $y_{t}^{j}$ is the physiological signal at time $t$ for session $j=1,…,J$, $z_{t}$ is the state at time t, $\epsilon_{t}^{j}$ is independent Gaussian noise with zero mean and variance $\sigma_{\epsilon}^{2}$, and $v_{t}$ is independent Gaussian noise with zero mean and variance $\sigma_{v}^{2}$ for $t=1,…,T^{j}$. Here, $J$ is the total number of sessions and $T^{j}$ is the total number of samples reorded during the $j^{th}$ session. The state-space model was fit to each physiological signal time series using the Expectation-Maximization algorithm (Shumway and Stoffer, 1982, Dempster et al., 1977).
 
 To compare these physiological measurements across different time points, we computed the probability that a measurement at time t was lower than measurements at all previous time points. We performed this comparison since these measurements seem to decrease after the first propofol infusion. We computed this probability for all time points using a Monte Carlo algorithm detailed in Smith et al., 2005. We considered a result to be statistically significant if the posterior probability was greater than 0.99.
 
-## Testing whether spikes become coupled to the LFP slow-delta oscillation phase
+### Testing whether spikes become coupled to the LFP slow-delta oscillation phase
 
-Using a point process generalized linear model (PPGLM), we modeled spike trains of individual neurons as a function of the LFP phase of the slow-delta oscillation (0.3-3Hz) and the neuron's spike history using a logistic link function. (McCullagh and Nelder, 1989; Truccolo et al., 2005). That is, we represented λ(t|ϕt,Ht), the conditional intensity function (instantaneous spike rate function), aslog⁡[λ(t|ϕt,Ht)1−λ(t|ϕt,Ht)]=∑j=1Jβhjηt−j+∑k=1KβϕkIϕtϕk,where ∑j=1JβHjηt−j defines Ht, the spike history going back J time bins, where ηt is a 1 if there is a spike in time bin t and is 0 otherwise. We define the effect of the slow-delta oscillation phase as ∑k=1KβϕjIϕtϕk, where Iϕtϕk is an indicator function which is 1 if ϕt, the slow-delta phase at time t equals ϕk and is 0 otherwise. The ϕk's are K evenly spaced phases of the slow-delta oscillation between (−π,π). Phase bins were computed using the following procedure. First, we band-passed the LFP in the slow-frequency/delta band (0.3–3 Hz). We then computed the Hilbert transform to extract a measure of the continuous analytic phase. Finally, we binned these phase estimates into 10 linearly spaced bins ranging from −π to π.
+Using a point process generalized linear model (PPGLM), we modeled spike trains of individual neurons as a function of the LFP phase of the slow-delta oscillation (0.3-3Hz) and the neuron's spike history using a logistic link function. (McCullagh and Nelder, 1989; Truccolo et al., 2005). That is, we represented $\lambda(t|ϕ_{t},H_{t})$, the conditional intensity function (instantaneous spike rate function), as
 
-History bins were defined as [ 1,2,…, 10, 11−15, 16−20, 21−30, …, 91−100, 101−150, …, 451−500 ] millisecond (ms) bins. The rationale was that immediate history bins (1–10 ms) reflect the neuron’s short timescale biophysics, such as its absolute and relative refractory periods and that longer-range history terms reflect network-wide dynamics (Czanner et al., 2008). For this reason, immediate history bins increase by 1 ms and longer-range history bins (>100 ms) increase by 50 ms. The number of history terms for each model was chosen using Akaike’s Information Criterion (Akaike, 1974). The model was fit to the spike train of each neuron using custom software for performing regression with Truncated Regularized Iteratively Reweighted Least Squares (Komarek and Moore, 2005). Goodness of fit was assessed using Kolmogorov-Smirnov (K-S) test based on the time-rescaling theorem (Brown et al., 2002).
+$$
+log⁡[\frac{\lambda(t|ϕ_{t},H_{t})}{1−\lambda(t|ϕ_{t},H_{t})}]=\sumj=1J\beta_{h}^{j}η_{t−j}+\sumk=1K\beta_{ϕ}^{k}I_{ϕ_{t}}^{ϕ_{k}},
+$$
 
-## Testing whether there is an increase in phase-modulation during the unconscious state
+where $\sumj=1J\beta_{H}^{j}η_{t−j}$ defines $H_{t}$, the spike history going back $J$ time bins, where $η_{t}$ is a 1 if there is a spike in time bin $t$ and is 0 otherwise. We define the effect of the slow-delta oscillation phase as $\sumk=1K\beta_{ϕ}^{j}I_{ϕ_{t}}^{ϕ_{k}}$, where $I_{ϕ_{t}}^{ϕ_{k}}$ is an indicator function which is 1 if $ϕ_{t}$, the slow-delta phase at time $t$ equals $ϕ_{k}$ and is 0 otherwise. The $ϕ_{k}$'s are $K$ evenly spaced phases of the slow-delta oscillation between $(−\pi,\pi)$. Phase bins were computed using the following procedure. First, we band-passed the LFP in the slow-frequency/delta band (0.3–3 Hz). We then computed the Hilbert transform to extract a measure of the continuous analytic phase. Finally, we binned these phase estimates into 10 linearly spaced bins ranging from $−\pi$ to $\pi$.
 
-We fit GLMs to 10 min of data during the pre-drug awake state and to 10 min of data after LOC. Neurons that did not spike during either periods were not included. To quantify the contribution of phase to predicting the spiking propensity, we computed the SNR with respect to phase (SNRϕ) for each condition (Czanner et al., 2015)SNRϕ=Dev(n,βH)−Dev(n,β)−dim(βH)+dim(β)Dev(n,β)−dim(β),where Dev(n,β^) denotes the deviance of the PPGLM model with phase and history, Dev(n,β^H) is the deviance of the fit of the PPGLM model with the history terms, dim(β) is the dimension of the parameters in the phase and history PPGLM model and dim(βH) is the dimension of the parameters in the history only PPGLM model. . We next computed the logarithm to the base 10 of the difference between the SNR for phase of unconsciousness and the SNR for phase of the awake state defined asΔSNRϕ=10log10⁡(SNRϕunconsciousSNRϕawake).
+History bins were defined as $[1,2,…, 10, 11−15, 16−20, 21−30, …, 91−100, 101−150, …, 451−500]$ millisecond (ms) bins. The rationale was that immediate history bins (1–10 ms) reflect the neuron’s short timescale biophysics, such as its absolute and relative refractory periods and that longer-range history terms reflect network-wide dynamics (Czanner et al., 2008). For this reason, immediate history bins increase by 1 ms and longer-range history bins (>100 ms) increase by 50 ms. The number of history terms for each model was chosen using Akaike’s Information Criterion (Akaike, 1974). The model was fit to the spike train of each neuron using custom software for performing regression with Truncated Regularized Iteratively Reweighted Least Squares (Komarek and Moore, 2005). Goodness of fit was assessed using Kolmogorov-Smirnov (K-S) test based on the time-rescaling theorem (Brown et al., 2002).
 
-We considered a neuron to exhibit an increased phase modulation during the unconscious state if its ΔSNRϕ was positive. Using 1320 neurons for PFC, 754 for 8A, 1058 for PPC, and 573 for STG across 10 sessions for NHP 2 and 11 sessions for NHP 1, we counted the number of neurons with an increased phase modulation for each region. We then computed the posterior probability of an increase in phase-modulation using the beta-binomial model and 10,000 Monte Carlo samples (DeGroot and Schervish, 2012; Solt et al., 2011). We assumed a binomial model as the likelihood function for the proportion of phase-modulated neurons. We used a uniform prior on the interval (0, 1) as the prior density, and a beta posterior density due to conjugacy. We considered a result to be statistically significant based on the posterior probability if this value was greater than 0.99.
+### Testing whether there is an increase in phase-modulation during the unconscious state
+
+We fit GLMs to 10 min of data during the pre-drug awake state and to 10 min of data after LOC. Neurons that did not spike during either periods were not included. To quantify the contribution of phase to predicting the spiking propensity, we computed the SNR with respect to phase ($SNR_{ϕ}$) for each condition (Czanner et al., 2015)
+
+$$
+SNR_{ϕ}=\frac{Dev(n,\beta_{H})−Dev(n,\beta)−dim(\beta_{H})+dim(\beta)}{Dev(n,\beta)−dim(\beta)},
+$$
+
+where $Dev(n,\beta^)$ denotes the deviance of the PPGLM model with phase and history, $Dev(n,\beta^_{H})$ is the deviance of the fit of the PPGLM model with the history terms, $dim(\beta)$ is the dimension of the parameters in the phase and history PPGLM model and $dim(\beta_{H})$ is the dimension of the parameters in the history only PPGLM model. . We next computed the logarithm to the base 10 of the difference between the SNR for phase of unconsciousness and the SNR for phase of the awake state defined as
+
+$$
+ΔSNR_{ϕ}=10log_{10}⁡(\frac{SNR_{ϕ}^{unconscious}}{SNR_{ϕ}^{awake}}).
+$$
+
+We considered a neuron to exhibit an increased phase modulation during the unconscious state if its $ΔSNR_{ϕ}$ was positive. Using 1320 neurons for PFC, 754 for 8A, 1058 for PPC, and 573 for STG across 10 sessions for NHP 2 and 11 sessions for NHP 1, we counted the number of neurons with an increased phase modulation for each region. We then computed the posterior probability of an increase in phase-modulation using the beta-binomial model and 10,000 Monte Carlo samples (DeGroot and Schervish, 2012; Solt et al., 2011). We assumed a binomial model as the likelihood function for the proportion of phase-modulated neurons. We used a uniform prior on the interval (0, 1) as the prior density, and a beta posterior density due to conjugacy. We considered a result to be statistically significant based on the posterior probability if this value was greater than 0.99.

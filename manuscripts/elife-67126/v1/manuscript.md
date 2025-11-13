@@ -14,8 +14,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03yghzc09 Centre for Ecology and Conservation, University of Exeter (Penryn Campus) Penryn United Kingdom
-2. https://ror.org/03xrrjk67 Department of Biological Sciences, University of Alabama Tuscaloosa United States
+1. Centre for Ecology and Conservation, University of Exeter (Penryn Campus) Penryn United Kingdom ([ROR:03yghzc09](https://ror.org/03yghzc09))
+2. Department of Biological Sciences, University of Alabama Tuscaloosa United States ([ROR:03xrrjk67](https://ror.org/03xrrjk67))
 
 † Corresponding author
 
@@ -41,7 +41,7 @@ First, we combine OFT results with complementary ‘emergence trials’ (ET) and
 
 In total, we obtained multivariate behavioural data from 5966 trials (3379 OFTs, 1548 ETs and 1039 STs) on 1384 individual fish. The number of individuals phenotyped (OFTs = 1365, ETs = 806, STs = 532) and the mean number of observations per fish (OFTs = 2.5, ETs = 1.9, STs = 2.0) varied across the behavioural data types. All fish were contained within a genetic pedigree structure comprising maternal full-sibships nested within paternal half-sibships. This structure was produced via multiple rounds of breeding work and has a maximum depth of five ‘generations’. Some of the OFT data have already been used in studies of the evolutionary genetics of personality (White et al., 2018; White and Wilson, 2019), but here we extend that dataset and use it in conjunction with other behavioural and physiological measures for different purposes. We also obtained 1,238 waterborne assays of cortisol levels for 629 fish (almost all from the final generation). The handling and confinement stressor applied for this assay was performed three times (at 48 hr intervals) for all fish tested, but the holding water sample was only processed for GC content at two time points (the first and last confinement, subsequently Cortisol1 and Cortisol3). Full details of husbandry, phenotyping and analysis are provided in Materials and methods.
 
-## Genetic variance in behavioural components of the stress response
+### Genetic variance in behavioural components of the stress response
 
 Behavioural data were extracted from OFTs, ETs, and STs using video tracking of fish (as described in White et al., 2016; Houslay et al., 2018). Time to emerge from the shelter (‘emergence time’) was extracted from ETs and natural log (ln) transformed for analysis, while shoaling tendency was calculated from STs as the time spent in the third of the tank closest to a same-sex shoal (which was visible but physically separated) minus the time spent in the third of the tank farthest from the shoal. The OFT, ET, and ST testing paradigms are all considered to assay behavioural components of the stress response in the broad sense, as each test starts with the capture and transfer of the focal fish into a novel and brightly lit arena away from their home tank and familiar tank mates.
 
@@ -51,13 +51,104 @@ The absence of a strong positive correlation between track length and area cover
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/67126/elife-67126-fig1-v1.jpg)
 
-**Figure 1.:** track length and area covered (panel A), is initially puzzling given expected autocorrelation and that both are used as positive indicators of exploratory (or ‘bold’) behaviour.Inset examples of OFT tracks from four individuals (panel B) shed light on this. Fish 1 and 2 appear to be exploring the tank, while 3 and 4 are engaging in stereotypical ‘flight’ behaviour characterised by strong thigmotaxis (remaining close to tank walls) and/or rapid movement along tank walls. As a consequence, individuals 2 and 3 have similar area covered during the OFT, but very different track lengths. We simulated random movements to define an expected null relationship between area covered and track length (panel C; dashed red line shows the fourth order polynomial model fit; see Materials and methods). The polynomial regression was then used to predict the expected area covered under random movement for each trial’s observed track length, and the ‘relative area covered’ was calculated as the observation minus this prediction. Panel D shows the resultant relative area covered plotted against track length for all trials (dashed red line at relative area covered = 0, shows where individuals of any track length are expected to lie if they move randomly with respect to direction). From this it is apparent that fish 1 and 2 have high relative area covered, while 3 and 4 do not.
+**Figure 1.:** Inset examples of OFT tracks from four individuals (panel B) shed light on this. Fish 1 and 2 appear to be exploring the tank, while 3 and 4 are engaging in stereotypical ‘flight’ behaviour characterised by strong thigmotaxis (remaining close to tank walls) and/or rapid movement along tank walls. As a consequence, individuals 2 and 3 have similar area covered during the OFT, but very different track lengths. We simulated random movements to define an expected null relationship between area covered and track length (panel C; dashed red line shows the fourth order polynomial model fit; see Materials and methods). The polynomial regression was then used to predict the expected area covered under random movement for each trial’s observed track length, and the ‘relative area covered’ was calculated as the observation minus this prediction. Panel D shows the resultant relative area covered plotted against track length for all trials (dashed red line at relative area covered = 0, shows where individuals of any track length are expected to lie if they move randomly with respect to direction). From this it is apparent that fish 1 and 2 have high relative area covered, while 3 and 4 do not.
 
 To quantitatively discriminate between exploratory behaviour and flight responses we derived a new trait, ‘relative area covered’. We used a simple simulation procedure (see Materials and methods) to predict expected area covered for any given track length under a null ‘random swim’ within the arena (Figure 1C). Relative area covered is then calculated as observed area covered – expected area covered given the track length (Figure 1D) and will be high for fish engaging in exploration, and low for an obvious ‘flight’ response manifest as rapid swimming around the tank walls. Our subsequent analyses then used this derived relative area covered trait in place of area covered.
 
 Pedigree-based ‘animal models’ (Wilson et al., 2010) were used to test for and estimate additive genetic variation in each of the six behavioural traits (emergence time, shoaling tendency, and the four OFT traits) while controlling statistically for social housing group and non-genetic sources of among-individual variance (as well as several fixed effects; see Materials and methods for full details). These confirmed the presence of significant additive genetic variation for the relative area covered trait, as well as for track length, time in the middle (as expected from previous findings; White et al., 2018; White and Wilson, 2019), √freezings and ln emergence time (Table 1). With the exception of shoaling tendency, heritabilities (conditional on fixed effects; see Materials and methods) are low to moderate (range of 9–20%; Table 1) and within the expected range for behaviours (Stirling et al., 2002). We detected no additive genetic variance for shoaling tendency (Table 1), despite there being repeatable differences among individuals (R = 0.19 ± 0.04; χ20,1 = 20.01, p < 0.001).
 
-## Genetic variance in physiological components of the stress response
+**Table 1.**
+ Estimated variance components, along with adjusted heritability, for each trait as estimated in a univariate model (± standard error).Chi-square test statistics and p-values are provided for the pedigree term, testing for the presence of significant additive genetic variance (Va).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Trait</th>
+      <th>Va</th>
+      <th>Vpe</th>
+      <th>Vgroup</th>
+      <th>Vresidual</th>
+      <th>h2</th>
+      <th>χ20,1</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Relative area covered</td>
+      <td>42.87 ± 12.89</td>
+      <td>56.16 ± 10.92</td>
+      <td>19.17 ± 4.92</td>
+      <td>203.17 ± 6.26</td>
+      <td>0.13 ± 0.04</td>
+      <td>31.2</td>
+      <td>&lt; 0.001</td>
+    </tr>
+    <tr>
+      <td>Time in the middle</td>
+      <td>554.78 ± 144.18</td>
+      <td>473.24 ± 114.77</td>
+      <td>196.94 ± 53.54</td>
+      <td>2002.06 ± 62.38</td>
+      <td>0.17 ± 0.04</td>
+      <td>47.2</td>
+      <td>&lt; 0.001</td>
+    </tr>
+    <tr>
+      <td>Track length</td>
+      <td>23584.54 ± 5534.90</td>
+      <td>26587.74 ± 4556.87</td>
+      <td>3173.34 ± 1396.84</td>
+      <td>76140.49 ± 2376.32</td>
+      <td>0.18 ± 0.04</td>
+      <td>88.7</td>
+      <td>&lt; 0.001</td>
+    </tr>
+    <tr>
+      <td>√Freezings</td>
+      <td>0.34 ± 0.08</td>
+      <td>0.18 ± 0.06</td>
+      <td>0.08 ± 0.02</td>
+      <td>1.13 ± 0.04</td>
+      <td>0.20 ± 0.05</td>
+      <td>48.2</td>
+      <td>&lt; 0.001</td>
+    </tr>
+    <tr>
+      <td>ln Emergence time</td>
+      <td>0.12 ± 0.05</td>
+      <td>0.06 ± 0.06</td>
+      <td>0.05 ± 0.02</td>
+      <td>1.07 ± 0.05</td>
+      <td>0.09 ± 0.02</td>
+      <td>22.5</td>
+      <td>&lt; 0.001</td>
+    </tr>
+    <tr>
+      <td>Shoaling tendency</td>
+      <td>0 ± 0</td>
+      <td>2457.36 ± 570.96</td>
+      <td>708.87 ± 316.30</td>
+      <td>9900.95 ± 622.10</td>
+      <td>0 ± 0</td>
+      <td>0</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>ln Cortisol</td>
+      <td>0.08 ± 0.02</td>
+      <td>0.02 ± 0.02</td>
+      <td>0.01 ± 0.01</td>
+      <td>0.15 ± 0.01</td>
+      <td>0.31 ± 0.09</td>
+      <td>24.4</td>
+      <td>&lt; 0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+### Genetic variance in physiological components of the stress response
 
 Using a series of nested bivariate animal models, we tested for additive genetic variance in cortisol levels (ln-transformed) following stressor exposure (handling and confinement) and for genotype-by-environment interaction (GxE). In this context, the environment (E) is the trial number in each fish’s stress trial series (i.e., cortisol level after the first or third trial). Any GxE present can therefore be interpreted as genetic variance for habituation to the stressor, given that the average cortisol level was lower following exposure to the third stressor than the first (ln transformed ng/hr, mean ± SE; Cortisol1 = 8.47 ± 0.05, Cortisol3 = 8.02 ± 0.05, Wald F1,38.8 = 110.0, p < 0.001; see Materials and methods for explanation of units). We first modelled Cortisol1 and Cortisol3 as distinct response variables in a bivariate framework assuming no GxE (such that we constrain VA-Cortisol1 = VA-Cortisol3 and the cross context additive genetic correlation rA-Cortisol1,Cortisol3 = 1). This model revealed a significant additive genetic component to variation among individuals in their cortisol levels following stressor exposure (χ20,1 = 18.2, p < 0.001).
 
@@ -69,7 +160,7 @@ Expanding the model to allow GxE by estimating separate genetic variances for Co
 
 In this model we also find that variance in cortisol explained by housing group effects is similar across contexts (VGroup-Cortisol1 = 0.038 ± 0.014, VGroup-Cortisol3 = 0.032 ± 0.012), but that residual (unexplained) variance is greater after the third stressor exposure (VR-Cortisol1 = 0.164 ± 0.022, VR-Cortisol3 = 0.237 ± 0.023). In combination, the changes in both additive genetic and residual variance between the two contexts lead to appreciably higher heritability for cortisol levels following the first stressor exposure relative to the third (h2Cortisol1 = 0.285 ± 0.094, h2Cortisol3 = 0.131 ± 0.078).
 
-## Testing for genetic integration and identifying the major axis of genetic (co)variance
+### Testing for genetic integration and identifying the major axis of genetic (co)variance
 
 There is strong evidence for phenotypic integration of Cortisol with behaviour at the among-individual levels (see Supplementary file 5). To test for and characterise the hypothesised genetic integration between behavioural and physiological components of the stress response, we built a multivariate animal model to estimate G. We excluded shoaling tendency given the absence of detectable genetic variance in the univariate model. We also elected to treat cortisol as a single trait (allowing for a fixed effect of stressor exposure number [1 vs 3] on the mean). Although the above analysis demonstrates GxE for cortisol, the strong positive cross-context genetic correlation justifies collapsing Cortisol1 and Cortisol3 into a single trait to maximise statistical power to detect any genetic covariance with behaviour.
 
@@ -79,9 +170,95 @@ The resultant estimate of G (Table 2) contains significant additive genetic cova
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/67126/elife-67126-fig3-v1.jpg)
 
-**Figure 3.:** relative area covered; b, time in the middle; c, track length; d, √freezings; e, -ln emergence time).Points show (predicted) bivariate genetic deviations from the population means, plotted for those individuals in the pedigree with cortisol data. In each case the black ellipse depicts the ‘shape’ of the relationship as given by the point estimate of G. Specifically it encompasses the area expected to contain 95% of the bivariate genetic distribution for the population. Grey ellipses denote the corresponding areas defined from 5000 bootstrapped replicates of G, and so highlight the uncertainty around these bivariate distributions.
+**Figure 3.:** Points show (predicted) bivariate genetic deviations from the population means, plotted for those individuals in the pedigree with cortisol data. In each case the black ellipse depicts the ‘shape’ of the relationship as given by the point estimate of G. Specifically it encompasses the area expected to contain 95% of the bivariate genetic distribution for the population. Grey ellipses denote the corresponding areas defined from 5000 bootstrapped replicates of G, and so highlight the uncertainty around these bivariate distributions.
+
+**Table 2.**
+ Additive genetic covariance-correlation matrix (G) from the full multivariate animal model.Genetic variances provided on the shaded diagonal, with genetic covariances below and genetic correlations above. 95% confidence intervals in parentheses are estimated from 5000 bootstrapped replicates. Where the confidence intervals for any estimate do not cross zero the estimate is considered statistically significant (at the 0.05 alpha level) and are shown in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Relative area covered</th>
+      <th>Time in the middle</th>
+      <th>Track length</th>
+      <th>√Freezings</th>
+      <th>-ln Emergence time</th>
+      <th>Ln Cortisol</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Relative area covered</td>
+      <td>0.115 (0.050,0.182)</td>
+      <td>0.795 (0.601,0.952)</td>
+      <td>–0.549 (-0.789,–0.239)</td>
+      <td>0.139 (-0.260,0.511)</td>
+      <td>–0.438 (-1.305,0.239)</td>
+      <td>–0.376 (-0.959,0.272)</td>
+    </tr>
+    <tr>
+      <td>Time in the middle</td>
+      <td>0.103 (0.044,0.165)</td>
+      <td>0.145 (0.070,0.215)</td>
+      <td>–0.658 (-0.86,–0.414)</td>
+      <td>0.363 (0.024,0.659)</td>
+      <td>–0.153 (-0.815,0.538)</td>
+      <td>–0.617 (-1.139,–0.155)</td>
+    </tr>
+    <tr>
+      <td>Track length</td>
+      <td>–0.071 (-0.127,–0.017)</td>
+      <td>–0.096 (-0.154,–0.035)</td>
+      <td>0.147 (0.080,0.219)</td>
+      <td>–0.801 (-0.931,–0.647)</td>
+      <td>0.61 (0.064,1.328)</td>
+      <td>0.425 (-0.027,0.968)</td>
+    </tr>
+    <tr>
+      <td>√Freezings</td>
+      <td>0.020 (-0.034,0.076)</td>
+      <td>0.059 (-0.001,0.120)</td>
+      <td>–0.132 (-0.200,–0.060)</td>
+      <td>0.185 (0.091,0.269)</td>
+      <td>–0.483 (-1.103,0.146)</td>
+      <td>–0.556 (-1.069,–0.067)</td>
+    </tr>
+    <tr>
+      <td>-ln Emergence time</td>
+      <td>–0.041 (-0.103,0.012)</td>
+      <td>–0.016 (-0.073,0.041)</td>
+      <td>0.065 (0.008,0.121)</td>
+      <td>–0.057 (-0.126,0.009)</td>
+      <td>0.076 (0.009,0.148)</td>
+      <td>–0.020 (-0.807,0.790)</td>
+    </tr>
+    <tr>
+      <td>ln Cortisol</td>
+      <td>–0.044 (-0.105,0.023)</td>
+      <td>–0.082 (-0.145,–0.018)</td>
+      <td>0.057 (-0.002,0.119)</td>
+      <td>–0.083 (-0.155,–0.01)</td>
+      <td>–0.002 (-0.058,0.053)</td>
+      <td>0.121 (0.036,0.206)</td>
+    </tr>
+  </tbody>
+</table>
 
 Eigen decomposition of G provides a more holistic view of the genetic covariance structure and the level of integration among traits. Here, the major axis gmax (first principal component, PC1, with 95% confidence intervals from 5000 bootstrap replicates) explains 59.5% (47.5%, 75.7%) of the genetic variance in multivariate phenotype. Subsequent axes necessarily capture declining proportions of the multivariate genetic variance (PC2 = 20.2% [14.8, 32.1]; PC3 = 14.1% [5.6, 19.6]; PC4 = 4.5% [0.9, 8.2]; PC5 = 1.0% [0, 2.8], PC6 = 0.7% [0,0.1]; see Supplementary file 6, Figure 4—figure supplement 1). All traits except -ln emergence time load significantly on gmax (Figure 4). Relative area covered, time in the middle and √freezings load in one direction, while track length and ln Cortisol load in the other direction. This structure indicates a major axis of genetic variation in integrated stress response (Figure 4—figure supplement 2), where genotypes at one end of this axis can be considered to have a ‘freeze’ (or possibly ‘weaker’; discussed later) type of behavioural stress response to the OFT assay (i.e. freezing more frequently, swimming shorter distances, spending more time in the central area of the tank, and exhibiting exploratory swimming patterns that cover greater areas relative to their distance swum). This behavioural profile is associated with ‘weaker’ physiological responses to stress (i.e. producing lower cortisol levels in response to the stressor). Meanwhile, genotypes at the other end of gmax have a more ‘flight’ (or arguably ‘stronger’) type of behavioural stress response to the OFT assay (i.e. freezing less frequently, swimming further, spending more time close to the tank edges, and covering less area relative to their distance travelled in OFTs). This behavioural profile is associated with ‘stronger’ physiological responses to stress (i.e. producing higher cortisol levels in response to the stressor).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/67126/elife-67126-fig4-v1.jpg)
+
+**Figure 4.:** This axis explains 59.5% of the genetic (co)variation found in the focal behavioural and physiological components of the stress response in our guppy population. Points show trait loadings from the first eigen vector of our estimate of G, with bars representing 95% confidence intervals on each loading (calculated from 5000 bootstrapped replicates of the model).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67126/elife-67126-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The horizontal dotted line indicates where equal variance across all eigen vectors would lie.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/67126/elife-67126-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The distribution is skewed but clearly not bimodal, as is predicted by some verbal models of ‘stress coping style’.
 
 ## Discussion
 
@@ -101,7 +278,7 @@ In fact, a subsequent ‘two-tier’ iteration of the coping style model propose
 
 The genetic integration of behaviour and physiology detected here is consistent with (but not proof of) the hypothesis that correlational selection in the past has led to the coevolution of these components of the stress response. This hypothesis assumes that correlational selection favours any combination of trait values that yield higher fitness, creating a genetic correlation as mutations that generate such combinations will be recruited into the population while those that do not will be selected out (Lande, 1980; Roff and Fairbairn, 2012). While reflections on the role of past correlational selection are necessarily speculative, we can say that the structure of G should shape (and potentially constrain) future evolutionary responses to selection—whether natural or artificial. Here we have no direct knowledge of how contemporary selection is acting in the wild or whether it might be changing as a consequence of anthropogenic stressors. Nor do we know exactly how well our estimate of G will match that which may be found in the wild (although our study animals are all recent descendants of wild-collected animals). Thus, we cannot comment directly on how G will shape future evolution of the guppy stress response beyond noting that selection on behaviour will cause correlated evolution of endocrine physiology (and vice versa). Nonetheless, while it seems reasonable to expect that current integration of stress response in natural populations should be broadly adaptive, this seems less likely in captive populations (at least for species without a long history of domestication and opportunity for adaptation to artificial environments). We know that prolonged, chronic activation of stress response pathways (notably the HPA/I axis) frequently disrupts health and survival in captive animals (Huether, 1996; Boonstra and Fox, 2013). It may be that more stress-responsive genotypes are disadvantaged in novel artificial conditions (e.g., if acute stress responsiveness positively predicts susceptibility to chronic stress). However, even if true this would not imply high (acute) stress-responsiveness was also disadvantageous in the wild. Since natural selection should purge alleles that are universally detrimental, it seems more plausible that genetic variation along the major axis described here is maintained by some form of selective trade-off (as widely hypothesised for maintenance of personality variation; e.g., Stamps, 2007; Wolf et al., 2007; Réale et al., 2010). For instance, genotypes susceptible to harm under chronic stressor exposure will likely persist in populations if they also confer advantages under an acute stress challenge. In natural populations not only is exposure to acute stressors more common than to chronic stressors, but also selection through chronic stress exposure may be conditional on (and subsequent to) surviving acute challenges (such as predator attacks).
 
-## Conclusions and future Directions
+### Conclusions and future Directions
 
 Here, we find evidence for genetic variation in – and integration of – behavioural and physiological (endocrine) components of the stress response. Overall, we consider the structure of G to be broadly consistent with the widely invoked ‘reactive—proactive’ model of variation in stress coping style (Koolhaas et al., 2007). This interpretation rests largely on the structure of behavioural variation revealed by the OFT, which is dominated by a major axis running from genotypes with more proactive ‘flight’ type stress responses to those with more reactive ‘freeze’ type stress responses. Endocrine traits align with this axis: genotypes exhibiting ‘flight’ type responses show higher cortisol levels (and exhibit faster habituation of GC physiology) when subjected to repeated handling and confinement stressors than those exhibiting more ‘freeze’ type responses. However, as these latter genotypes with more ‘freeze’ type responses and low cortisol responses to stressors also tend – on average – to display space use patterns characteristic of exploration and reduced thigmotaxis (potentially indicative of being relatively unstressed), an alternative interpretation is that gmax primarily reflects differences in stress responsiveness. Further distinguishing between ‘style’ and ‘responsiveness’ may depend on their association, for example if fish with proactive styles are also more responsive. Although future studies could certainly target separation of these dimensions further, we think greater insights may come from expanding the set of traits (in particular, to include other components of the physiological stress response, as noted above) and/or stress contexts (i.e. exposing the subjects to different types of stressor). With respect to the latter, here we observed behavioural and GC responses to two different stressors separated in time. We think that our demonstration of genetic correlation structure between behaviours tested in one context and physiology assayed in a different one adds at least some support to the idea that the integration characterised here may ultimately prove generalisable across stress contexts.
 
@@ -109,7 +286,7 @@ Our results suggest that continued evolution of stress-related behaviour will ha
 
 ## Materials and methods
 
-## Husbandry and breeding
+### Husbandry and breeding
 
 We used fish taken from our captive population housed at the University of Exeter’s Penryn campus, which is descended from wild fish collected in 2008 from the lower Aripo River in Trinidad. This population has been maintained at a population size of several thousand and has undergone no deliberate selection or inbreeding. All fish are fed to satiation twice daily (0800–1000 hr and again at 1600–1800 hr) using commercial flake food and live Artemia nauplii. Water temperature is maintained at 23–24°C in well-aerated closed system tank stacks that undergo 25% water changes each week and with weekly tests for ammonia, nitrate and nitrite levels. Lighting is kept at a 12:12 light/dark cycle. The experiment described in this study was carried out in accordance with the UK Animals (Scientific Procedures) Act 1986 under licence from the Home Office (UK), and with local ethical approval from the University of Exeter.
 
@@ -117,7 +294,7 @@ To create our pedigreed sub-population, female fish were sampled haphazardly fro
 
 Within 24 hr of a female producing a brood, we recorded her weight (g) and brood size. We kept juvenile fish in full-sib family groups in 2.8 L tanks before moving them to 15 L ‘growth’ tanks at an average age of 56 days. At an average age of 133 days (range 59–268), we tagged individuals and placed them into mixed family groups of 16–20 adults (with an even mix of males and females), kept in 15 L tanks. Note that variation in tagging age arose largely because groups were necessarily established sequentially as sufficient individuals from multiple families reached a large enough size that we deemed the procedure to be safe. Each adult group comprised a mix of fish from different families, reducing the potential for common environment effects to upwardly bias our genetic parameter estimation.
 
-## Overview of behavioural phenotyping
+### Overview of behavioural phenotyping
 
 Behavioural phenotyping commenced at least one week after tagging. In all trials, we filmed movement behaviour of individual fish using a Sunkwang video camera equipped with a 6–60 mm manual focus lens suspended over the tank. We used the tracking software Viewer II (BiObserve) to extract behavioural data from each recording (detailed below). The tank was lit from below using a light box and screened with a cardboard casing to prevent external visual disturbance. After each behavioural trial, the individual tested was weighed and then moved to a temporary ‘holding tank’. Once a full group (as described above) had been tested, all were moved from the holding tank back to their home tank. We replaced the water in the testing and holding tanks between groups to reduce the build-up of hormones or other chemicals. The first offspring generation experienced four repeat open field trials (OFTs) over a 2-week period, with at least 48 hr between trials. Subsequent generations experienced four repeat behavioural trials, alternating 2 OFTs with two emergence trials (ETs). For the final two generations, we extended the OFTs by including a shoaling trial (ST) at the end of each OFT.
 
@@ -127,7 +304,7 @@ Shoaling trials (ST) were appended to a subset of OFTs, by positioning a small t
 
 Emergence trials (ET) followed the methodology described by White et al., 2016. Briefly, we tested individuals in a 20cm x 40cm tank, filled to a depth of 8 cm with room-temperature water from the main supply. A 10 cm section of the tank length was walled off creating a shelter area (20cm x10cm), the walls and floor of which were painted black. The focal fish was placed into the shelter area and allowed to acclimate for 30 s, at which point we opened a sliding door to allow access to the rest of the tank, which was brightly lit from below and otherwise bare. Time to emerge (in seconds) was recorded by the tracking software automatically as the fish exited the shelter area and emerged into the open tank section. Trials were ended either at emergence or at 15 min if the fish had not emerged by that point; in the case of non-emergence, fish were given the maximum value (i.e. 900 s).
 
-## Derivation of ‘relative area’ from OFT trials
+### Derivation of ‘relative area’ from OFT trials
 
 The ‘area covered’ variable assayed in the OFT is calculated in BiObserve by dividing the arena (i.e. the total area of the tank as viewed from the camera) into 1cm x 1cm grid squares. The path taken by the fish during observation is then used to determine what proportion of these grid squares the fish entered. However, we sought to derive a measure of ‘relative area’ that describes whether a fish covers a large, or small area relative to its observed track length.
 
@@ -135,7 +312,7 @@ To do this, we simulated ‘random swims’ within the arena across the observed
 
 After simulating random walks across 500 values of track length (using a vector of 100 values evenly spaced across the range of true data, repeated five times), we modelled (simulated) area covered as a fourth order polynomial function of track length. Using this regression model (which explained 97.8% of the variance in simulated data), we calculated the relative area for each actual OFT trial as the observed area covered minus the area covered under a random swim, as predicted from our regression model and the observed track length.
 
-## Waterborne hormone sampling
+### Waterborne hormone sampling
 
 On completion of behavioural data collection, individuals entering the endocrine testing program were left undisturbed for a minimum of two weeks. Waterborne hormone sampling was then conducted over a 5-day period that included three handling and confinement stressor exposures with 48 hr between each. We followed the method described by Houslay et al., 2019 to obtain repeated non-invasive GC measures of individuals using holding water samples from the first and third confinements. Note that only two samples per fish were analysed because the financial and time costs of analysing three was deemed prohibitive. We nonetheless applied the stressor stimulus three times as our prior study showed this was sufficient to produce a strong habituation response, that is, a significant decrease in water-borne cortisol over the three sampling periods (Houslay et al., 2019).
 
@@ -143,7 +320,7 @@ We collected samples between 1200 and 1400 hr to control for diel fluctuations i
 
 We immediately filtered each water sample using Grade one filter paper (Whatman), then passed them slowly through solid phase C18 extraction columns (Sep-Pak C18, 3 cc, Waters) via high-purity tubing (Tygon 2474, Saint Gobain) under vacuum pressure (Earley et al., 2006). Columns were primed beforehand with 2 × 2 ml HPLC-grade methanol followed by 2 × 2 ml distilled water and were washed afterwards with a further 2 × 2 ml distilled water to purge salts. We then covered both ends of each column with film (Parafilm M, Bemis) and stored them at –20°C for future analysis. We washed all beakers, tubes and funnels with 99% ethanol and rinsed them with distilled water prior to each sampling procedure. The remainder of the endocrine assay procedure involved elution, resuspension, separation, and quantification of free cortisol by enzyme immunoassay (EIA) using Cayman Chemicals, Inc EIA kits. Detailed methods are exactly as described by Houslay et al., 2019 and so not repeated here (note that here we assayed the free fraction of cortisol only). To validate the cortisol kits, we examined whether the kit standard curve was parallel to a serial dilution curve derived from pooled guppy water-borne hormone extract. Twenty µl was taken from each of the male samples and pooled; 20 µl was taken from each of the female samples and combined into a separate pool. A total of 400 µl of the pools was serially diluted from 1:1 to 1:128 and these samples were assayed alongside the kit standard curve on two occasions (June and December 2017, marking the start and finish of sample processing). All dilution curves were parallel to the standard curve (slope comparison test, Zar, 1996, p.355; June, male: t12 = 0.029, p = 0.97; June, female:: t12 = 0.343, p = 0.74; December, male:: t12 = 0.119, p = 0.91; December, female:: t12 = 0.224, p = 0.83). The serial dilution curves also identified 1:32 as an appropriate dilution to ensure that all samples fell on the linear phase of the standard curve. A total of 37 96-well plates were used, and the pooled sample was included at the beginning and end of each plate. Intra-assay coefficients of variation ranged from 0.12% to 19.83% with a median of 3.08%; the inter-assay coefficient of variation was 19.22%. Cortisol is presented and modelled in (ln-transformed) units of ng/hr to reflect the 1 hr sampling duration.
 
-## Statistical methods
+### Statistical methods
 
 All data handling and analysis was performed in R version 3.6.3 (R Development Core Team, 2020). We used the ‘tidyverse’ set of packages for data handling and visualisation (Wickham, 2017), and ASreml-R v4 (Butler, 2021) for fitting linear mixed effects models (as described in full below). We also used ‘nadiv’ for pedigree preparation (Wolak, 2012). All models fitted assumed (multivariate) Gaussian error structures, and we visually assessed residuals to verify this was reasonable (after data transformation in some cases). To test for significance of among individual and/or genetic (co)variance components, we fitted nested models with different random effects structures and compared them using likelihood ratio tests (LRTs). We calculated χ2nDF as twice the difference in model log likelihoods, with the number of degrees of freedom (n) equivalent to the number of additional parameters in the more complex model. When testing a single random effect (variance component), we assumed the difference to be asymptotically distributed as an equal mix of χ20 and χ21 (denoted χ20,1; Self and Liang, 1987; Visscher, 2006).
 

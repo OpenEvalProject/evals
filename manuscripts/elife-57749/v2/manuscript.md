@@ -27,7 +27,7 @@
 
 ## Abstract
 
-The mouse cerebral cortex contains neurons that express choline acetyltransferase (ChAT) and are a potential local source of acetylcholine. However, the neurotransmitters released by cortical ChAT + neurons and their synaptic connectivity are unknown. We show that the nearly all cortical ChAT + neurons in mice are specialized VIP + interneurons that release GABA strongly onto other inhibitory interneurons and acetylcholine sparsely onto layer 1 interneurons and other VIP + /ChAT + interneurons. This differential transmission of ACh and GABA based on the postsynaptic target neuron is reflected in VIP + /ChAT + interneuron pre-synaptic terminals, as quantitative molecular analysis shows that only a subset of these are specialized to release acetylcholine. In addition, we identify a separate, sparse population of non-VIP ChAT + neurons in the medial prefrontal cortex with a distinct developmental origin that robustly release acetylcholine in layer 1. These results demonstrate both cortex-region heterogeneity in cortical ChAT + interneurons and target-specific co-release of acetylcholine and GABA.
+The mouse cerebral cortex contains neurons that express choline acetyltransferase (ChAT) and are a potential local source of acetylcholine. However, the neurotransmitters released by cortical ChAT+ neurons and their synaptic connectivity are unknown. We show that the nearly all cortical ChAT+ neurons in mice are specialized VIP+ interneurons that release GABA strongly onto other inhibitory interneurons and acetylcholine sparsely onto layer 1 interneurons and other VIP+/ChAT+ interneurons. This differential transmission of ACh and GABA based on the postsynaptic target neuron is reflected in VIP+/ChAT+ interneuron pre-synaptic terminals, as quantitative molecular analysis shows that only a subset of these are specialized to release acetylcholine. In addition, we identify a separate, sparse population of non-VIP ChAT+ neurons in the medial prefrontal cortex with a distinct developmental origin that robustly release acetylcholine in layer 1. These results demonstrate both cortex-region heterogeneity in cortical ChAT+ interneurons and target-specific co-release of acetylcholine and GABA.
 
 ## Introduction
 
@@ -45,19 +45,55 @@ To answer these many unknowns, we molecularly and functionally characterized cor
 
 ## Results
 
-## Cortical VIP+/ChAT+ neurons express genes for release of both ACh and GABA
+### Cortical VIP+/ChAT+ neurons express genes for release of both ACh and GABA
 
 To visualize potential cholinergic neurons in the cortex, we genetically labeled all Chat-expressing cells with tdTomato (Chatires-Cre x Rosa26lsl-tdTomato), and observed putative cholinergic neurons throughout the cortex (Figure 1A). We confirmed that Cre expression faithfully reports Chat expression in cerebral cortex using fluorescent in situ hybdrization (FISH), with 97% of Chat+ neurons expressing Cre and 100% of Cre+ neurons expressing Chat (Figure 1B). In contrast, a population of neurons in the subiculum are also strongly labeled in Chatires-Cre x Rosa26lsl-tdTomato mice (Figure 1A), but do not express Chat in the adult (data not shown). In addition to Chat, neurons also require the expression of the membrane choline transporter, encoded by Slc5a7, and the vesicular ACh transporter (VAChT), encoded by Slc18a3, to synthesize and release ACh. Both of these genes are also expressed in the majority of cortical ChAT+ neurons (Figure 1C,D), indicating that cortical ChAT+ neurons have all the molecular machinery necessary to release ACh. These neurons display a vertically-oriented morphology, with their main dendrites aligned perpendicular to the cortical surface, and are either bipolar, with two main vertical dendrites (Figure 1E, 66% of all cortical ChAT+ neurons) or multipolar, with three or more main dendrites (Figure 1E, 34% of all cortical ChAT+ neurons). They cluster in superficial layers, especially near the border between layers 1 and 2 (Figure 1F).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig1-v2.jpg)
 
-**Figure 1.:** + neurons are present throughout cortex and express genes necessary for synthesis and release of ACh.(A) Sagittal view of a mouse neocortex with ChAT+ neurons expressing tdTomato (Chat x ires-CreRosa26) demonstrating the distribution of putative cholinergic neurons throughout the cortex. Strongly tdTomato-labeled neurons in the subiculum that do not express lsl-tdTomatoChat are labeled (SUB). (B) Flourescent in situ hybridization of Cre faithfully reports Chat expression in Chat mice in the cortex. Arrow heads indicate dual ires-CreChat+/Cre+ neurons. Quantification shown at right (n = 32 Chat+/Cre+ of 33 Chat+ and 32 Cre+ neurons from 2 Chat mice). (ires-CreC,D) Fluorescent in situ hybrization of Chat in cortex co-labels with Slc18a3, the gene encoding VAChT (n = 147 Chat+/Slc18a3+ of 170 Chat+ and 184 Slc18a3+ neurons from 3 wild-type mice) and Slc5a7, the gene encoding the membrane choline transporter (n = 72 Chat+,Slc5a7+ of 113 Chat+ and 83 Slc5a7+ neurons from 3 wild-type mice). Arrowheads indicate cortical ChAT neurons and quantification shown at right. (+E) Cortical ChAT+ neurons are vertically oriented and are bipolar (left) or multipolar (right). (F) Distribution of cortical depth from the pia of all cortical ChAT+ neurons (left graph, black trace, n = 1059 neurons from 3 Chat x ires-CreRosa26 mice), median cell body is 274 µm from pia ±15 µm, 95% C.I.) and according to morphology (right graph; orange = bipolar, n = 207, 66% of total, median 293 µm from pia ±23 µm, 95% C.I.; blue = multipolar, n = 107 neurons, 34% of total, median 173 µm from pia ±24 µm, 95% C.I.). Inset image is aligned to the relative depth shown in the graphs.lsl-tdTomato
+**Figure 1.:** (A) Sagittal view of a mouse neocortex with ChAT+ neurons expressing tdTomato (Chatires-Cre x Rosa26lsl-tdTomato) demonstrating the distribution of putative cholinergic neurons throughout the cortex. Strongly tdTomato-labeled neurons in the subiculum that do not express Chat are labeled (SUB). (B) Flourescent in situ hybridization of Cre faithfully reports Chat expression in Chatires-Cre mice in the cortex. Arrow heads indicate dual Chat+/Cre+ neurons. Quantification shown at right (n = 32 Chat+/Cre+ of 33 Chat+ and 32 Cre+ neurons from 2 Chatires-Cre mice). (C,D) Fluorescent in situ hybrization of Chat in cortex co-labels with Slc18a3, the gene encoding VAChT (n = 147 Chat+/Slc18a3+ of 170 Chat+ and 184 Slc18a3+ neurons from 3 wild-type mice) and Slc5a7, the gene encoding the membrane choline transporter (n = 72 Chat+,Slc5a7+ of 113 Chat+ and 83 Slc5a7+ neurons from 3 wild-type mice). Arrowheads indicate cortical ChAT+ neurons and quantification shown at right. (E) Cortical ChAT+ neurons are vertically oriented and are bipolar (left) or multipolar (right). (F) Distribution of cortical depth from the pia of all cortical ChAT+ neurons (left graph, black trace, n = 1059 neurons from 3 Chatires-Cre x Rosa26lsl-tdTomato mice), median cell body is 274 µm from pia ±15 µm, 95% C.I.) and according to morphology (right graph; orange = bipolar, n = 207, 66% of total, median 293 µm from pia ±23 µm, 95% C.I.; blue = multipolar, n = 107 neurons, 34% of total, median 173 µm from pia ±24 µm, 95% C.I.). Inset image is aligned to the relative depth shown in the graphs.
 
 Previous studies have reported conflicting results on the extent to which these neurons are GABAergic, and they are often shown to co-label with vasoactive intestinal peptide (VIP) (Eckenstein and Baughman, 1984). We confirmed using both immunohistochemistry and FISH that cortical ChAT+ neurons comprise an ~33% subset of VIP+ interneurons (Figure 2A,B), and do not co-label with either parvalbumin (PV) or somatostatin (Sst, Figure 2—figure supplement 1). To test whether cortical ChAT+ neurons are able to release GABA, we performed FISH for the GABA handling and synthesis genes Slc32a1, encoding the vesicular GABA transporter (VGAT), and Gad1,2, which encode the GABA synthetic enzymes. Nearly all cortical ChAT+ neurons express both Slc32a1 and Gad1,2 (Figure 2C). These results are corroborated by single-cell RNA sequencing data from the Allen Institute (Tasic et al., 2016), indicating that a subset of Vip-expressing cortical interneurons also express cholinergic genes Chat, Slc5a7, Slc18a3, and GABAergic genes Slc32a1, Gad1, and Gad2, but not glutamatergic genes (Figure 2—figure supplement 2). In sum, these data show that cortical VIP+/ChAT+ interneurons have the potential for synaptic release of both ACh and GABA.
 
-## Cortical VIP+/ChAT+ neurons robustly release GABA onto inhibitory interneurons and sparsely release ACh
+![Figure 2.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cortical ChAT+ neurons expressing tdTomato (Chatires-Cre x Rosa26lsl-tdTomato) co-label with immunostained VIP (n = 127 ChAT+/VIP+ neurons of 147 total ChAT+ and 375 VIP+ neurons from 3 Chatires-Cre x Rosa26lsl-tdTomato mice). (B) Fluorescent in situ hybridization of Chat in cortex co-labels with Vip (n = 278 Chat+/Vip+ of 283 Chat+ and 579 Vip+ neurons from 3 wild-type mice). (C) Fluorescent in situ hybridization labeling of Chat in cortex co-labels with the GABAergic genes Slc32a1, which encodes for VGAT, and Gad1 and Gad2, which encodes for the GABA synthetic enzymes GAD67 and GAD65, respectively (n = 101 Chat+,Slc32a1+ and 102 Chat+,Gad1/2+ of 102 Chat+ neurons from 5 wild-type mice). Arrowheads indicate double labeled neurons.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Cortical ChAT+ neurons, labeled by injecting AAV(8)-DIO-EGFP into the frontal cortex of Chatires-Cre mice, do not co-label with immunostained PV (n = 1 ChAT+,PV+ of 180 CHAT+ and 576 PV+ neurons from 3 Chatires-Cre mice). (B) Cortical ChAT+ neurons, labeled as above, do not co-label with immunostained Sst (n = 2 ChAT+/Sst+ of 360 ChAT+ and 1016 Sst+ neurons from 3 Chatires-Cre mice). Arrowheads indicate GFP-expressing ChAT+ neurons and asterisks indicate cells shown in the insets.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Heat map of the number of transcripts per cell (log counts per million, Log10 CPM) for various neurotransmitter synthesis and vesicular release machinery genes from 2952 single-cell transcriptomes of Vip-expressing neurons from visual cortex and anterior lateral motor cortex. Cells are ordered from left-to-right according to their expression of Chat. Data is downloaded from the Allen Brain Institute’s RNA-Seq Data Navigator, accessible at: http://celltypes.brain-map.org/rnaseq/mouse. (B) The proportion of cells in different cell sub-types that are positive for different transcripts for genes indicating different neurotransmitter phenotypes, as defined by >1 log10 CPM of each transcript.
+
+### Cortical VIP+/ChAT+ neurons robustly release GABA onto inhibitory interneurons and sparsely release ACh
 
 To confirm which neurotransmitters VIP+/ChAT+ neurons release and understand the circuit function these different neurotransmitters provide, we electrophysiologically screened for the post-synaptic output of cortical ChAT+ neurons. In order to identify synaptic outputs, as opposed to possible effects of volume transmission, we focused on synaptic effects mediated by activation of post-synaptic ionotropic receptors. We virally delivered Cre-dependent ChR2-mCherry (AAV(8)-DIO-ChR2-mCherry) into the motor cortex of Chatires-Cre mice, and allowed three weeks for viral gene expression, prepared acute brain slices and recorded whole-cell voltage clamp responses from ChR2-lacking neurons while stimulating nearby ChR2-expressing neurons with blue light (Figure 3A). We screened for post-synaptic responses mostly in primary motor cortex (M1), with some recordings in visual cortex (V1). Because we saw no differences in connectivity between these two regions, we have pooled that data here. Synaptic responses mediated by nicotinic ACh receptors (nAChRs) were identified by voltage clamping the post-synaptic neurons at −70 mV in the presence of NBQX to preclude any contamination by feed-forward glutamatergic currents, and by sensitivity to nAChR-selective antagonists (Figure 3B). We observed nAChR-mediated responses with both slow and fast components (Figure 3B), as well as several with only fast components (not shown), indicating variability in the nAChR receptor composition in post-synaptic neurons (Bennett et al., 2012). GABAAR-mediated synaptic currents were identified by voltage clamping the cell at 0 mV, and by blocking with the GABAAR-selective antagonist gabazine. We also confirmed that GABA responses were monosynaptic by sequential block with TTX and rescue by 4AP (Figure 3C; Petreanu et al., 2009), confirming they were not the result of indirect excitation of intermediate inhibitory neurons. Of the neurons that displayed a detectable synaptic response following optogenetic stimulation of the cortical ChAT+ neurons, most showed a GABAAR-mediated current, confirming that cortical ChAT+ neurons are indeed GABAergic. A smaller subset of neurons in superficial layers showed nAChR-mediated synaptic responses (Figure 3D). All but two (of 49) responsive neurons displayed either GABAAR- or nAChR-mediated currents, not both, indicating that the synaptic release of GABA or ACh by cortical ChAT+ neurons is independent and differentially targeted based on the output neurons.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig3-v2.jpg)
+
+**Figure 3.:** (A) Experimental design: Cre-dependent ChR2-mCherry is virally delivered (AAV(8)-DIO-ChR2-mCherry) to the cortex, expressed for 3 weeks, and whole-cell voltage clamp recordings obtained from unlabeled neurons. Recordings from motor cortex and visual cortex are pooled for panels A-D. (B) Examples trace of a biphasic nAChR-mediated synaptic currents isolated by voltage clamping the post-synaptic neuron at −70 mV and stimulating cortical ChAT+ neurons with 3 ms of 473 nm light (~7–9 mW/cm2). The synaptic current is insensitive to AMPA receptor antagonist NBQX, but the slow component is blocked by DHβE, selective for ɑ4 receptor subunits, and the fast component is blocked by the ɑ7-selective antagonist MLA and pan-nAChR antagonist MEC. Right panel shows summary quantification of sensitivity to glutamatergic antagonists NBQX/CPP and nAChR antagonists DHβE, MLA, and MEC. Error bars show mean +/- s.e.m. (C) Example GABAA receptor-mediated currents isolated by voltage clamping the post-synaptic neuron at 0 mV. Synaptic currents are blocked by voltage-gated sodium channel antagonists TTX, rescued by subsequent application of potassium channel antagonists 4AP, and further blocked by GABAAR-selective antagonist gabazine. Right panel shows summary quantification of the effects of nAChR antgonists, TTX, 4AP, and gabazine on inhibitory currents. (D) Summary of the proportion of neurons showing synaptic responses following optogenetic stimulation of cortical ChAT+ neurons across cortical layers. The numbers in each bar indicate the number of cells in each category. (n = 195 total neurons from 24 Chatires-Cre mice; p=0.8627 for layer 1 compared to non-layer 1 GABAAR-mediated responses and p=0.0695 or layer compared to non-layer1 nAChR-mediated responses, Fisher’s exact test). (E) Experimental design: AAV(8)-DIO-ChR2-mCherry was injected into the motor cortex of Chatires-Cre mice crossed to different mouse lines that express GFP in specific interneuron subpopulations. (F) Example images showing GFP expression in 4 different mouse lines expressing GFP in different interneuron subtypes. (G) Summary quantification of the proportion of cells of each interneuron subtype that had synaptic responses to optogenetic stimulation of cortical ChAT+ neurons. The numbers in each bar indicate the number of cells in each category. (n = 64 GFP+ cells from 6 Chatires-Cre x Sst-GFP (GIN) mice; n = 47 GFP+ cells from 4 Chatires-Cre x PV-GFP (G42) mice; n = 95 GFP+ cells from 6 Chatires-Cre x 5HT3aR-BACEGFP mice; n = 54 GFP+ cells from 4 Gad2ires-GFP mice; p=0.0307 for differences in GABAAR-responses between interneuron types, p=0.5775 for differences in nAChR-responses, Pearson’s chi-squared test). (H) Experimental design: To achieve mosaic expression of ChR2 in a subset of cortical ChAT+ neurons, we injected a diluted AAV(8)-DIO-FlpO virus so that a subset would express Flp. We then injected with high-titer AAV(8)-fDIO-ChR2-EYFP and AAV(8)-DIO-mCherry. We targeted mCherry+, EYFP- cells for whole-cell voltage clamp recording that neighbored EYFP+ neurons. (I) Example traces showing putative GABAAR-mediated synaptic response at baseline and following application of TTX, 4AP, and gabazine. Right panel shows summary quantification of block by TTX, rescue by 4AP, and block by gabazine. Error bars show mean ± s.e.m. (J) Example traces of two different neurons showing nAChR-mediated responses and their block by nAChR antagonists and TTX. These two cells have different response kinetics, potentially indicative of extra-synaptic (top) and synaptic (bottom) nAChRs. Right panel shows summary quantification of putative nAChR-mediated synaptic response sensitivity to nAChR antagonists (MEC, MLA, and DHβE) and TTX. (K) Summary quantification of the proportion of cortical ChAT+ neurons that showed synaptic responses following stimulation of neighboring ChR2-expressing cells. The numbers in each bar indicate the number of cells in each category (n = 76 neurons from 8 Chatires-Cre mice).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–D). Synaptic response amplitudes, sensitivity to TTX, 4AP, and gabazine, and laminar distribution for GFP-expressing post-synaptic neurons in Sst-GFP (GIN) mice (A), PV-GFP (G42) mice (B), 5HT3aRires-GFP mice (C), and Gad2ires-GFP mice (D). Left: mean response amplitude. Middle left: Quantification of sensitivity to TTX, 4AP, and gabazine. All synaptic responses are blocked by TTX, substantially rescued by 4AP, and completely abolished by gabazine. Middle right: example traces showing synaptic response amplitude following consecutive application of TTX, 4AP, and gabazine. Right: Laminar distribution of recorded neurons. Numbers indicate the number of cells in each category. Total number of neurons and mice are the same as Figure 3.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Experimental design: AAV(8)-DIO-ChR2 was injected into the motor cortex of Chatires-Cre mice. Following 3–4 weeks to allow for virus expression, whole-cell voltage clamp recordings of pyramidal neurons were made from acute sagittal slices. Pyramidal neurons were identified based on their morphology and laminar position. (B) Summary quantification of the proportion of pyramidal neurons with synaptic responses to optogenetic stimulation of VIP+/ChAT+ neurons. The number of cells per category are indicated. (n = 58 neurons from 14 Chatires-Cre mice). (C) Laminar distribution of recorded putative pyramidal neurons. The number of cells per lamina are indicated. (D) Example GABAAR-mediated synaptic current, which is insensitive to nAChR antagonists DHβE, MLE, and MEC, is blocked by TTX and subsequently rescued by 4AP, and completely blocked by gabazine.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Experimental design: Because the Sst-GFP (GIN) BAC transgenic mouse line does not express in deeper layer Sst+ interneurons, we targeted Sst+ interneurons in Layer 5 and Layer 6 by crossing Chatires-Cre mice with Sstires-flp mice and injecting with a AAV(8)-DIO-ChR2-mCherry and AAV(DJ)-fDIO-EYFP. After 3–4 weeks to allow expression of viral genes, whole-cell current clamp recordings were obtained from EYFP+ neurons in layers 5 and 6. Current clamp recordings were obtained with a potassium-based internal recording solution to enable detection of muscarinic ACh receptor-mediated currents. (B) Summary quantification of the proportion of cells showing synaptic responses following trains of optogenetic stimulation (3 ms pulses of 473 light, 20 × 20 Hz) of VIP+/ChAT+ interneurons. GABAergic responses were identified based on hyperpolarizing post-synaptic potentials and sensitivity to gabazine. The number of neurons in each category are indicated (n = 74 EYFP+ neurons from 8 Chatires-Cre x Sstires-Flp mice). (C) Example synaptic response to a train of optogenetic stimulation showing hyperpolarization that is blocked by gabazine.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A,B) Experimental Paradigm: AAV(8)-DIO-ChR2-mCherry was injected into the motor cortex of Chatires-Cre mice and acute sagittal slices cut after 3–4 weeks. Spontaneous excitatory post-synaptic currents (sEPSCs) were recorded during whole-cell voltage clamp of Layer 2/3 pyramidal neurons. Several seconds of baseline sEPSCs were gathered, followed by 2 s of optogenetic stimulation of ChR2+ neurons (40 × 20 Hz, 3 ms pulses). (C) sEPSC frequency (left) and amplitude (right) before and during stimulation (n = 5 neurons from 2 Chatires-Cre mice).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Example images of pial arteries imaged in vivo over barrel cortex following retro-orbital injection of Alexa 633 hydrazide both prior to (left), immediately following (middle), and several seconds following (right) 3 second stimulation of the contralateral whiskers. (B) Kymograph of the red line illustrated in (A) showing the width of the artery over time. (C) Average percent change in pial artery diameter imaged over the barrel cortex of from 3 mice lacking VAChT in VIP+ interneurons (Vipires-Cre x Slc18a3fl/fl) and 3 heterozygous or wild-type littermate controls during contralateral stimulation of whiskers. (D) Average percent change in pial artery diameter imaged over the barrel cortex during optogenetic stimulation (5 × 20 hz, 5 ms pulses) from 3 mice lacking VAChT in VIP+ interneurons (Vipires-Cre x Rosa26lsl-ChR2-EYFP x Slc18a3fl/fl), 2 heterozygous littermate controls (Vipires-Cre x Rosa26lsl-ChR2-EYFP x Slc18a3fl/wt), and 2 wild-type controls that do not express ChR2.
 
 To identify onto which neuron populations cortical ChAT+ neurons synapse and therefore inform the potential circuit function of both ACh and GABA release, we systematically surveyed connectivity to specific neuronal subtypes. We repeated the ChR2-assisted connectivity survey described above, but in Chatires-Cre mice crossed with transgenic lines that express GFP in the major interneuron populations, including Sst+ (Oliva et al., 2000), PV+ (Chattopadhyaya et al., 2004), and 5HT3aR+ interneurons (Lee et al., 2010b; Figure 3E,F). We found high rates of GABAergic connectivity, especially onto Sst+ interneurons, while nAChR-mediated responses were rare (Figure 3G). While Sst+, PV+, and 5Ht3aR+ interneurons represent nearly 100% of all cortical interneurons (Rudy et al., 2011), the Sst- and PV-labeling transgenic lines incompletely label their respective interneuron populations. We therefore also recorded responses from GFP-labeled, GAD65-expressing interneurons from Gad2ires-GFP mice, and observed only GABAAR-mediated responses (Figure 3G). In each of these specific neuronal subtypes, we confirmed that GABA release from cortical ChAT+ cells was monosynaptic and confirmed that between these 4 interneuron classes, we spanned the entire cortical column (Figure 3—figure supplement 1). We also targeted pyramidal neurons based on their morphology and laminar position and found a low overall rate of connectivity, which was entirely GABAAR-mediated (Figure 3—figure supplement 2). This pattern of connectivity is consistent with reports for VIP+ interneurons as a whole (Pfeffer et al., 2013; Karnani et al., 2016a), and indicates that the main circuit function of cortical VIP+/ChAT+ interneurons is disinhibition.
 
@@ -67,9 +103,21 @@ Given the ability of ACh to dilate blood vessels, and previous reports on the ro
 
 Finally, another study found that VIP+ interneurons can increase their firing rate through cooperative excitation via nAChRs (Karnani et al., 2016b). We therefore devised a strategy to test for synaptic connectivity between VIP+/ChAT+ neurons by injecting Chatires-Cre mice first with a diluted Cre-dependent Flp virus, followed by high titer Flp-dependent ChR2-EYFP and Cre-dependent mCherry. We then recorded from mCherry-positive, EYFP-negative neurons while stimulating with blue light (Figure 3H). We found that VIP+/ChAT+ neurons largely release GABA onto each other (Figure 3I,K), but that a subset received nAChR-input which could be blocked by nAChR-selective antagonists (Figure 3J,K). These results demonstrate that VIP+/ChAT+ neuron output is primarily GABAergic, but is able to release ACh onto highly specific sub-networks of layer 1 interneurons and other VIP+/ChAT+ neurons.
 
-## Cortical VIP+/ChAT+ pre-synaptic terminals are differentially enriched for GABA and ACh release machinery
+### Cortical VIP+/ChAT+ pre-synaptic terminals are differentially enriched for GABA and ACh release machinery
 
 Throughout the analysis of synaptic connectivity we found robust GABAergic currents in many neurons, and only relatively few cells with nicotinic receptor-mediated currents, even though many of the post-synaptic populations we examined express nAChRs. Several scenarios could explain this finding. One possibility is that most pre-synaptic terminals of VIP+/ChAT+ neurons are incapable of releasing ACh. Alternatively, most terminals might release both ACh and GABA, which would suggest that post-synaptic sites lack the nAChRs required to generate ionotropic currents following ACh release. To distinguish between these possibilities, we used array tomography to examine the pre-synaptic release machinery present in individual presynaptic terminals of cortical ChAT+ interneurons in the motor cortex. We labeled the presynaptic terminals by injecting AAV-encoding Cre-dependent synaptophysin-YFP into the motor cortex of Chatires-Cre mice (Figure 4A,B) and analyzed the expression of seven synaptic proteins relative to YFP-labeled terminals. Specifically, we labeled for Synapsin 1 as a generic pre-synaptic marker, PSD-95 and VGLUT1 to label glutamatergic synapses, Gephyrin and VGAT to label GABAergic synapses, and ChAT and VAChT to label cholinergic synapses (Figure 4C). DAPI was also used to label nuclei.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig4-v2.jpg)
+
+**Figure 4.:** (A) Array tomography workflow: Chatires-Cre mice are injected with Cre-dependent Synaptophysin YFP virus (AAV(8)-DIO-Synaptophysin-YFP) to label the pre-synaptic terminals of cortical ChAT+ neurons (1).~1 mm2 squares of tissue were then embedded in resin and cut into 70 nm slices in an array (2). (B) Example maximum-projection of Synaptophysin-YFP staining. (C) The ribbons of tissue are serially stained with antibodies against pre- and post-synaptic proteins (3). Example images show the inset from (B) to demonstrate the staining of pre-synaptic marker Synapsin 1, glutamatergic markers PSD-95 and VGLUT1, GABAergic markers VGAT and Gephyrin, and cholinergic markers VAChT and ChAT. (D) The average cross-correlation between all pairs of raw images of pre- and post-synaptic antibody stains (n = 8 image stacks from 3 Chatires-Cre mice). (F) The average co-variance between all pairs of raw images specifically within a mask created by the Synaptophysin-YFP stain. Co-variance within YFP terminals is not limited to values between −1 and 1 because all antibody stains were z-scored prior to masking and calculating the co-variance, and therefore antibody signals may be more or less concentrated within the YFP mask (n = 8 image stacks from 3 mice). High covariance specifically between GABAergic and cholinergic proteins emerge when limiting analysis to signal within YFP masks (E), but not the entire image, where correlations between glutamatergic markers are highest (D). (F) Summary of antibody colocalization analysis. First, a 3D mask of the YFP signal is created corresponding to the ChAT+ presynaptic terminals. Next, each punctum of antibody signal is assigned a pixel corresponding to where a Gaussian fit of fluorescence has the highest intensity. Then, the colocalization of each antibody pixel within the YFP terminals is determined and a z-score calculated by comparing to the colocalization from 1000 rounds of randomized antibody pixel locations. (G) Colocalization z-scores across antibodies for all samples. Higher positive z-scores indicate relative enrichment of antibody puncta within YFP terminals compared to randomized controls, while negative scores indicate depletion of antibody puncta within YFP terminals (see Figure 4—figure supplement 2). Tissue samples from Chatires-Cre mice are shown, as well as the VGAT antibody z-score from VGAT conditional knock-out mice (6 image stacks from 3 Chatires-Cre x Slc32a1fl/fl mice), and VAChT antibody z-scores from Vipires-Cre (5 image stacks from 3 mice) and Vipires-Cre x Slc18a3fl/fl (6 image stacks from 3 mice). Dashed lines indicate ± 5 z-scores.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A,B) Global cross-correlations (A) and co-variances within YFP masks of VIP+/ChAT+ pre-synaptic terminals (B) of tissue collected from Chatires-Cre mice injected with AAV(8)-DIO-Synaptophysin-YFP. These graphs are duplicated from Figure 2D & E. (C,D) To test the specificity of the VGAT antibody for VIP+/ChAT+ terminals, we repeated the analysis from Figure 2 in tissue from Chatires-Cre x Slc32a1fl/fl mice, and found that VGAT staining is no longer correlated with Gephyrin or the cholinergic markers ChAT and VAChT. Yellow bars in (D) highlight the loss of VGAT correlations within VIP+/ChAT+ terminals compared to (B). (E,F) To confirm the specificity of VAChT staining, we selectively deleted VAChT in VIP+ interneurons (Vipires-Cre x Slc18a3fl/fl). We therefore first tested the global cross-correlations and YFP-masked co-variances of tissue collected from Vipires-Cre mice injected with AAV(8)-DIO-Synptophysin-YFP, and saw similar patterns of enrichment for GABAergic and Cholinergic markers as in (B). (G,H) In contrast to tissue from Vipires-Cre mice, global cross-correlations and YFP-masked co-variances of tissue collected from mice with VAChT deleted from all VIP+ interneurons (Vipires-Cre x Slc18a3fl/fl) show that VAChT is no longer correlated with ChAT or GABAergic markers. Yellow bars in (H) highlight the loss of VAChT correlations within cortical VIP+ terminals compared to (F). Total number of image stacks and mice are the same as in Figure 4.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–C) Illustration of antibody colocalization analysis. (A) A 3D mask is created from the YFP signal corresponding to ChAT+ presynaptic terminals, and individual pixels are assigned to each punctum of antibody signal according to the location of peak intensity of a Gaussian fit of the raw antibody fluorescence. (B) The colocalization of the binary antibody puncta and YFP masks is then determined as the percent of YFP pixels that overlap with antibody pixels, and compared both to the colocalization within expanding concentric areas around the YFP masks and to 1000 rounds of randomized antibody puncta locations. (C) Example of the colocalization of Synapsin 1 within the YFP masks compared to the region surrounding the YFP masks and to the randomized antibody locations. A z-score is taken by subtracting the random level of colocalization from the actual colocalization and dividing by the standard deviation of the randomized trials. (D) Example graphs from a single sample showing the colocalization of PSD-95, VGLUT1, Gephyrin, VGAT, ChAT, and VAChT within and around the YFP masks. (E–H) Summary z-scores of colocalizatoin both within (left panels) and around (right panels) the YFP mask across samples. Data are shown from Chatires-Cre mice (n = 8 samples from 3 mice) to show the baseline colocalization in cortical ChAT+ interneurons and from mice with VGAT deleted from cholinergic neurons (Chatires-Cre x Slc32a1fl/fl; n = 6 from 3 mice). Loss of VGAT enrichment is highlighted in red. Colocalization is also shown for cortical VIP+ interneurons from Vipires-Cre mice (n = 5 from 3 mice) and from mice with VAChT deleted from VIP+ interneurons (Vipires-Cre x Slc18a3fl/fl; n = 6 from 3 mice). Loss of VAChT enrichment is highlighted in red. Portions of this figure are duplicated from Figure 4.
 
 We first analyzed this data by calculating the global cross-correlations of image intensity across all possible pairs of synaptic markers and DAPI to reveal the baseline level of colocalization (Figure 4D, also see Micheva and Smith, 2007). We also examined the colocalization of synaptic markers within motor cortex cortical ChAT+ terminals, by calculating signal covariances specifically in the ~0.1% area of the images containing synaptophysin-YFP labeled pre-synaptic terminals (see Methods). Compared to the global cross-correlations (Figure 4D), this revealed high covariance of staining intensity for GABAergic and cholinergic markers, with little to no covariance with the glutamatergic markers (Figure 4E). Thus, the fluorescence of pre-synaptic markers of ACh and GABA release are correlated within the pre-synaptic terminals of cortical ChAT+ neurons, indicating that these terminals have machinery to release both ACh and GABA, but not glutamate.
 
@@ -77,17 +125,49 @@ We also analyzed whether GABAergic and cholinergic proteins are enriched in term
 
 Given these data showing that both GABA and ACh release machinery are generally expressed in the pre-synaptic terminals, we examined whether individual terminals and axon segments of VIP+/ChAT+ neurons differ in their potential to release ACh or GABA. Pre-synaptic terminals of motor cortex VIP+/ChAT+ neurons were labeled by injection of Cre-dependent synaptophysin-mCherry AAV (AAV(8)-CAG-DIO-synaptophysin-mCherry) into the motor cortex of Chatires-Cre mice. We classified terminals as GABAergic or cholinergic by antibody staining against VGAT and VAChT, respectively (Figure 5A). Compared to array tomography, the thicker slices make it easier to follow individual axons with many putative pre-synaptic terminals. These data show that individual cortical VIP+/ChAT+ terminals have highly variable expression of VAChT (Figure 5B–D), with some axon stretches entirely lacking VAChT (Figure 5B), others being entirely positive for VAChT (Figure 5C), and some stretches presenting intermingled VAChT-containing and VAChT-lacking terminals (Figure 5D).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig5-v2.jpg)
+
+**Figure 5.:** (A) Example images of cortical ChAT+ pre-synaptic terminals labeled with AAV(8)-DIO-Synaptophysin-mCherry injected in the motor cortex of Chatires-Cre mice. Left: Synaptophysin mCherry; Middle: VAChT immunostain; Right: VGAT immunostain. (B–D) Example images showing putative Synaptophysin-mCherry+ axons, with VAChT- terminals (B), VAChT+ terminals (C), and intermingled terminals that are both VAChT+ and VAChT-. (D). (E) Histogram of mean VAChT fluorescence intensity within Synaptophysin-mCherry+ terminals. Black histogram represent the actual VAChT intensities, grey histogram represents the mean VAChT intensities when the mCherry image mask is rotated 90° relative to the VAChT immunostain image. (F) Scatter plot of mean VGAT intensity and VAChT intensity in each putative pre-synaptic terminals (n = 12,356 putative terminals from 30 image stacks from 3 Chatires-Cre mice). Terminals are color-coded according to expression of VAChT and VGAT (Black – neither VGAT or VAChT, Magenta – both VGAT and VAChT, Cyan – VAChT only, Yellow – VGAT only). (G) Quantification of the number of terminals of each type in (F).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) The percent of terminals that are positive for VAChT (as determined by a mean intensity threshold greater than the Otsu threshold) across a range of VGAT intensity thresholds. As the threshold for VGAT intensity increases, the percent of VAChT+ terminals plateaus around 70%. (B) The percent of terminals that are positive for VGAT (also determined by a mean intensity threshold greater than the Otsu threshold) across a range of VAChT intensity thresholds. The percent of VGAT+ terminals increases to 100% as the VAChT intensity threshold increases. This indicates that there are two main populations of terminals – those that express both VGAT and VAChT, and those that express only VGAT. (C,D) Distribution of VAChT (C) and VGAT (D) intensity within each terminal across cortical layers in motor cortex. Dashed vertical lines indicate the threshold for classifying terminals as VAChT or VGAT positive. VAChT+ terminals are not uniformly distributed across layers (VAChT+ terminals: 64.25% (1643/2557) in layer 1, 59.35% (15552/2615) in layer 2/3, 70.73% (4137/5849) in layer 5, and 71.21% (3166/4446) in layer 6; p=3.1×10−10, Pearson’s Chi-squared test), and VGAT terminals are not uniformly distributed (VGAT+ terminals: 67.32% (1333/1980) in layer 1, 62.86% (1481/2356) in layer 2/3, 66.72% (3304/4952) in layer 5, 55.80% (2405/4310) in layer 6; p=1.6×10−11, Pearson’s Chi-squared test). (E) Example images of Sst+ pre-synaptic terminals labeled with AAV(8)-DIO-Synaptophysin-mCherry injected into the cortex of Sstires-Cre mice. Left: Synaptophysin-mCherry; Middle: VAChT immunostain; Right: VGAT immunostain. (F) Histogram of mean VAChT fluorescence intensity within Synaptophysin-mCherry+ pre-synaptic terminals of Sst+ interneurons. Black histogram represents the actual VAChT intensities, the grey histogram represents the mean VAChT intensities when the mCherry+ image mask is rotated 90° relative to the VAChT immunostain image. (G) Scatter plot of mean VGAT and VAChT intensity in each putative mCherry+ pre-synaptic terminal (n = 249,899 putative terminals from 14 image stacks from 2 Sstires-Cre mice). Terminals are color-coded according to expression of VAChT and VGAT (Black – neither VGAT or VAChT, Magenta – both VGAT and VAChT, Cyan – VAChT only, Yellow – VGAT only). (H) Quantification of the number of terminals of each type in (E). (I,J) The percent of VAChT+ terminals (G) and VGAT+ terminals (H) across a range of VGAT and VAChT intensity thresholds, respectively. As VGAT intensity threshold increases, there is no relationship with the percent of terminals that are VAChT+ (G). Likewise, as VAChT intensity threshold increases, there is no relationship with the percent of terminals that are VGAT+ (H).
+
 Quantification of VAChT intensity within VIP+/ChAT+ individual terminals shows a range of VAChT expression, including strongly labeled terminals and others whose labeling intensities overlap with negative control intensities, which were calculated by measuring the overlap of the pre-synaptic terminal image mask rotated 90 degrees with respect to the VAChT signal image (Figure 5E). Overall, VAChT and VGAT intensities positively correlated across terminals (R2 = 0.33, Figure 5F), though a population of VGAT-expressing terminals lacking VAChT were found. We categorized each terminal as positive or negative for each vesicular transporter according to a fluorescence intensity threshold that maximally separates VAChT or VGAT signal from the background of each image. By this classification, the majority of terminals are positive for both VGAT and VAChT (Figure 5G, R2 = 0.232), with a subset that are positive for VGAT but not VAChT (Figure 5G, R2 = 0.091). This held true across a range of classification thresholds. The likelihood that a terminal is VGAT+ increases monotonically as the threshold for VAChT is raised, while the proportion of VAChT+ terminals plateaus around 75% even at very high thresholds for VGAT (Figure 5—figure supplement 1A,B). In other words, strong expression of VAChT ensures co-expression of VGAT, but many highly VGAT-expressing terminals lack VAChT. We also analyzed both VAChT and VGAT expression in pre-synaptic terminals across cortical layers, finding a small but significant decrease in VAChT+ and increase in VGAT+ terminals in layer 1 (Figure 5—figure supplement 1C,D). As an additional negative control, we repeated this analysis in Sstires-Cre mice, and confirmed that terminals of Sst+ interneurons, which do not express Slc18a3, were almost completely negative for VAChT protein, with no relationship between VGAT and VAChT fluorescence intensity per terminal (Figure 5—figure supplement 1E–I). In summary, we identified two different populations of terminals, those capable of releasing both GABA and ACh and those capable of releasing only GABA. This suggests that release of ACh from these neurons is likely to be targeted to specific post-synaptic neurons.
 
-## A sparse population of non-VIP ChAT+ neurons specific to the mPFC
+### A sparse population of non-VIP ChAT+ neurons specific to the mPFC
 
 A recent publication reported rates of GABA and ACh connectivity from cortical ChAT+ neurons that were strikingly different from what we described above (Obermayer et al., 2019). They reported that optogenetic activation of cortical ChAT+ neurons frequently resulted in postsynaptic cholinergic currents and rarely GABAergic currents. To reconcile these results with ours, we compared the experimental conditions in the two studies. In addition to differences in the composition of recording solution, a major difference between our studies is the choice of brain regions - their connectivity analysis was restricted to medial prefrontal cortex (mPFC), whereas the majority of our experiments were conducted in motor cortex (M1).
 
 We first compared connectivity to layer 1 interneurons between mPFC and M1 from all forebrain cholinergic neurons using a mouse line that expressed ChR2 in all cholinergic neurons (Chatires-Cre x Rosa26lsl-ChR2-EYFP, Figure 6A). To our surprise, we found significant differences in the proportion of cholinergic responses between M1 and mPFC, with more frequent cholinergic responses in the latter (Figure 6B–D), indicating a fundamental difference in cholinergic innervation of these two cortical regions. To determine if these differences could be explained by ACh release from local cortical cholinergic interneurons, we injected AAV-encoding Cre-dependent ChR2-mCherry directly to the mPFC and M1 in Chatires-Cre mice and compared synaptic responses in layer 1 interneurons across brain regions (Figure 6E). We found a reduced rate of overall connectivity, most likely due to lack of ChR2 expression in basal forebrain projections to cortex and incomplete transduction of cortical ChAT+ neurons with AAV. Nevertheless, we observed that a significantly larger proportion of layer 1 neurons receives cholinergic input in the mPFC compared to in M1 (20/131 neurons with nAChR responses in mPFC compared to 1/43 in M1) and significantly fewer proportion of GABAergic responses (9/131 neurons with GABAAR responses compared to 13/43 in M1, Figure 6F–H). These results could not be explained by other major differences between our studies such as the brain slice cutting solution (Figure 6—figure supplement 1A,B) and the internal whole-cell recording solution (Figure 6—figure supplement 1A,C). Indeed, within the mPFC our results are consistent with those of Obermayer et al, and indicate a difference in the connectivity of local cholinergic neurons between the mPFC and motor cortex.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig6-v2.jpg)
+
+**Figure 6.:** (A) Experimental design: Acute coronal slices taken ~1.8 mm anterior to bregma were obtained from mice where all cholinergic neurons express ChR2 (Chatires-Cre x Rosa26lsl-ChR2) and whole-cell voltage clamp recordings made from layer 1 interneurons in mPFC and M1. (B) Proportion of layer 1 interneurons showing nAChR-mediated and GABAAR-mediated synaptic responses, as determined by clamping the cell to −70 mV and 0 mV, respectively. (n = 47 total neurons from 5 Chatires-Cre x Rosa26lsl-ChR2 mice). (C) Example traces of GABAAR-mediated (top) and nAChR-mediated synaptic responses (bottom), as confirmed by block by gabazine and a cocktail of nAChR antagonists (DHβE, MLA, MEC). (D) Direct comparison of the proportion of cells showing nAChR-mediated responses (left, p=0.0007) or GABAAR-mediated responses (right, p=0.7431). (E–H) Same as (A–D), but only cortical ChAT+ neurons now express ChR2, through injection of Cre-dependent ChR2 virus to both M1 and mPFC (AAV(8)-DIO-ChR2-mCherry). Direct comparison of the proportion of cells with nAChR-mediated responses (bottom) shows a significant decrease in M1 compared to mPFC (left, p=0.0301), while those with GABAAR-mediated responses show a significant increase (right, p=0.0002; n = 174 total neurons from 9 Chatires-Cre mice). (I–L) Same as (A–C) and (E–G), but for acute coronal slices with all VIP+ interneurons expressing ChR2 (Vipires-Cre x Rosa26lsl-CHR2-EYFP). (n = 64 neurons from 7 Vipires-Cre x Rosa26lsl-ChR2-EYFP mice). Example of the sole nAChR-mediated synaptic response obtained from a Layer 1 interneuron following optogenetic stimulation of VIP neurons is shown in (K). Direct comparison of the proportion of cells with nAChR- or GABAAR-mediated responses is not significantly different between mPFC and M1 (p=0.3906 and p=1, respectively). Single asterisk (*) indicates significance at p<0.05, triple asterisk (***) indicates significance at p<0.001 and all p-values calculated by Fisher’s exact test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Experimental design: Chatires-Cre mice were injected in both mPFC and M1 with AAV(8)-DIO-ChR2-mCherry, and whole cell voltage clamp recordings were obtained from layer 1 interneurons while optogenetically stimulating ChAT+ neurons. (B) Upper panel: summary quantification of cells showing synaptic responses, with GABAAR or nAChR-mediated responses differentiated by their reversal potential (−70 mV and 0 mV, respectively), and pharmacology. Numbers in the bar graph indicate the number of post-synaptic neurons in each category (n = 99 neurons from 7 Chatires-Cre mice for NMDG slicing solution, n = 75 neurons from 3 Chatires-Cre mice for choline cut solution, p=0.1049 for nAChR-mediated responses, p=0.4989 for GABAAR-mediated responses, Fisher’s exact test). Lower panel: comparison of cells showing nAChR-mediated responses (left) or GABAAR-mediated responses (right). (C) As in (B), but comparing cells recorded with CsMeSO4 or Cs-gluconate based internal solutions (n = 96 neurons from 5 Chatires-Cre mice with CeMeSO4, n = 78 neurons from 5 Chatires-Cre mice with Cs-gluconate, p=0.106 for nAChR-mediated responses, p=0.2524 for GABAAR-mediated responses, Fisher’s exact test).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Example fluorescent in situ hybridization for Chat and Vip. While Vip-expressing neurons are present in the basal forebrain, they do not colabel with Chat. (B) Comparison of cell coverage by Vip and Chat signal between the cortex and basal forebrain. In the cortex, all neurons with positive cell coverage by Chat also label with Vip. In the basal forebrain, cell coverage by Vip and Chat are mutually exclusive. (C) Summary quantification of the proportion of double-labeled Chat- and Vip-expressing neurons (n = 1 Vip+/Chat+, 41 Vip+ only, 183 Chat+ only cells from 3 wild-type mice). (D) Experimental design: Acute slices from Vipires-Cre x Rosa26lsl-ChR2-EYFP mice were prepared and whole cell recordings with obtained from neurons in different cortical layers. (E) Summary quantification of the proportion of layer 1 interneurons showing synaptic responses following whole-cell voltage clamp and optogenetic stimulation. The responses from both M1 and mPFC, were not significantly different (see Figure 6I–L), and are pooled here. For a significant portion of our recordings, we included we included gabazine in the bath to improve screening for nAChR-mediated currents (n = 174 neurons from 14 Vipires-Cre x Rosa26lsl-ChR2-EYFP mice). (F) Summary quantification of the proportion of cells in whole-cell current clamp showing a synaptic response following trains of optogenetic stimulation of VIP+ interneurons (3 ms pulse, 20 × 20 Hz). Numbers indicate the number of neurons in each category. (n = 231 neurons from 21 Vipires-Cre x Rosa26lsl-ChR2-EYFP mice G) Summary quantification of a subset of cells recorded in (F) were obtained in the presence of gabazine, GABABR-antagonist CGP-35348, and ACh esterase-inhibitor physostigmine in order to improve the chances of observed nAChR- or mAChR-mediated voltage responses. (n = 106 neurons from 10 Vipires-Cre x Rosa26lsl-ChR2-EYFP mice). (H) Summary quantification of the sensitivity of depolarizing responses to different antagonists, including DHβE to block only non-α7 containing nAChRs, a nAChR antagonists cocktail to block all nAChRs (containing MEC, MLA, and DHβE), and scopolamine to block muscarinic ACh receptors. These depolarizing responses were largely insensitive to different ACh receptor antagonists, with one exception shown in (H). We also blocked these responses with voltage-gated sodium channel antagonist TTX, but could not rescue with subsequent addition of 4AP. Finally, these depolarizing responses were insensitive to Cd2+, which inhibits release of synaptic vesicles. Based on these results, we conclude that these depolarizing responses are an artifact of strong synchronous stimulation of VIP+ interneurons resulting in ephaptic potentials. (I) Example depolarizing response that was blocked by ACh receptor antagonists. (J) Additional depolarizing example response that is partially sensitive to block by TTX.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Experimental design: Acute slices from Vipires-Cre x Rosa26lsl-ChR2-EYFP mice were prepared and whole cell voltage clamp recordings obtained from layer 1 interneurons. (B) Summary quantification of cells showing post-synaptic responses in mice raised in a reverse-light cycle (n = 29 neurons from 2 Vipires-Cre x Rosa26lsl-ChR2-EYFP mice). (C) Same as (B), but for mice that experience 3 hr of isoflurane exposure 3 weeks before the experiment. In a portion of the experiments, all recordings were obtained in the presence of gabazine to block GABAAR-mediated synaptic responses and allow for more efficient screening for nAChR-mediated responses. (n = 35 neurons from 2 Vipires-Cre x Rosa26lsl-ChR2-EYFP mice). (D,E) Same as (A–C), but for Vipires-Cre mice injected into the mPFC with AAV(8)-DIO-ChR2-mCherry. (n = 73 neurons from 3 Vipires-Cre mice).
+
 To test whether this difference in connectivity across brain regions is specific to VIP+/ChAT+ neurons and to eliminate the possibility of contamination from long-range cholinergic axons, we repeated this experiment using mice that express ChR2 in all VIP+ interneurons (Vipires-Cre x Rosa26lsl-ChR2-EYFP). We reasoned that because sub-cortical cholinergic neurons do not express Vip (Figure 6—figure supplement 2A–C), any cholinergic responses elicited by optogenetic stimulation of VIP+ interneurons would be attributable to local cortical VIP+/ChAT+ neurons (Figure 6I). However, we only identified a single cholinergic response in mPFC, with the majority of synaptic responses from VIP+ interneuron activation in mPFC and M1 being GABAergic (Figure 6J–L). In additional recordings, we included gabazine to block GABAAR-mediated responses and allow for more rapid screening of nAChR-mediated responses, but did not find additional nAChR-mediated responses (Figure 6—figure supplement 2D,E). We also screened for potential muscarinic ACh receptor responses from VIP+ interneurons throughout the cortex, with and without acetylcholine esterase inhibition to increase the size and duration of potential responses, but did not identify synaptic responses that we could confirm to be mediated by release of acetylcholine (Figure 6—figure supplement 2F–J). We tested the possibilities that VIP+ interneurons could be induced to be cholinergic in mice raised in a reverse light cycle (Figure 6—figure supplement 3A,B), in case the circadian cycle, which also differed between our study and that of Obermayer et al, caused changes in the ability of VIP+ interneurons to release ACh. We also tested exposure to isoflurane (Figure 6—figure supplement 3A,C), and viral delivery of ChR2 (Figure 6—figure supplement 3D,E), to rule out the possibility that the act of delivering virus, which is unnecessary when surveying connectivity from all VIP+ interneurons, induced a switch to more cholinergic signaling. However, none of these manipulations increased the rate of cholinergic synaptic responses. This relative lack of cholinergic responses from the wider population of VIP+ interneurons is more similar to the connectivity observed from cortical VIP+/ChAT+ neurons in the motor cortex.
 
 If not arising from VIP-expressing ChAT+ interneurons, what is the local source of cholinergic inputs to layer 1 interneurons in mPFC? When performing our connectivity analysis in the mPFC, we noticed the presence of ChR2-EYFP+ neurons with strikingly different morphology than typical VIP+/ChAT+ interneurons, with larger cell bodies and an orientation parallel to the cortical surface (Figure 7A) instead of perpendicular (Figure 1). Fluorescent in situ hybridization for Chat and Vip revealed a sparse population of neurons in the mPFC that express high levels of Chat but not Vip mRNA (Figure 7B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig7-v2.jpg)
+
+**Figure 7.:** (A) Example images from a Chatires-Cre x Rosa26lsl-CHR2-EYFP mouse. In the mPFC (red inset, left panel), two neurons are shown that are oriented parallel to the cortical surface, as opposed to the typical perpendicular orientation, (middle left panel, arrowheads) which have strong staining against ChAT (middle right panel, arrowheads). (B). Fluorescent in situ hybridization from mPFC reveals a sparse population of cells with strong labeling for Chat, but not for Vip. Approximate location of Chat-expressing, Vip-lacking neurons across 3 different mice are indicated by red dots, and the locations of three example images (right panels) shown by red boxes. Arrowheads indicate Vip-lacking, Chat+ neurons, the asterisk in panel 3 indicates a nearby neuron expressing both Vip and Chat. (C) Cortical VIP+ neurons develop from the caudal ganglionic eminence (CGE), whereas PV+, Sst+, and most cholinergic neurons of the medial septum (MS) and basal forebrain (BF), derive from Nkx2.1-expressing neurons of the medial ganglionic eminence (MGE). Neurons genetically labeled by transient expression of Nkx2.1 and ChAT (Chatires-Cre x Nkx2.1ires-FLP x RC::FLTG, middle left panel) exist in the mPFC that strongly label for ChAT protein (middle right panel) in adult mice. (D) Example Nkx2.1+/ChAT+ neuron (left panel) demonstrating a lack of colabeling with Vip (middle, right panels). (E) Experimental design: AAV(8)-DIO-ChR2-mCherry is injected directly into the mPFC and allowed to express for 3 weeks. Whole-cell voltage clamp recordings were then taken from layer 1 interneurons in the immediate vicinity of putative non-VIP ChAT+ neurons, as indicated by their morphology and large soma compared to VIP+ interneurons. (F) Summary of the proportion of layer 1 interneurons showing synaptic responses following optogenetic stimulation of nearby putative Non-VIP ChAT+ neurons. GABAAR- and nAChR-mediated synaptic responses are differentiated based on reversal potential and sensitivity to selective antagonists. Example nAChR-mediated synaptic response recorded at −70 mV in the presence of glutamatergic antagonists NBQX and CPP, blocked by nAChR antagonists DHβE, MLA, and MEC. No GABAAR-mediated synaptic responses were observed near putative Non-VIP ChAT+ neurons in the absence of other nearby VIP+/ChAT+ neurons. (n = 30 neurons from 6 Chatires-Cre mice).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/57749/elife-57749-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A,B) Examples of Nkx2.1+/ChAT+ neurons (Chatires-Cre x Nkx2.1ires-FLP x RC::FLTG, left panels) that colabel with immunostained ChAT (middle panels), demonstrating distinctive morphology of non-VIP, ChAT+ neurons. Superficial surface of the mPFC is aligned to the right in each image. (C) Example of a Nkx2.1+/ChAT+ neurons (left panel) that does not colabel with immunostained VIP (middle panel).
 
 Because these neurons lacked Vip expression, we hypothesized that they derive from a different developmental origin than the VIP+/ChAT+ interneurons. VIP interneurons are derived from the caudal ganglionic eminence, whereas most sub-cortical cholinergic neurons develop from medial ganglionic eminence progenitors that are marked by transient expression of the transcription factor Nkx2.1 (Magno et al., 2017; Allaway and Machold, 2017; Figure 7C). Indeed, using an intersectional genetic strategy (Plummer et al., 2015; He et al., 2016) to label neurons that express, even transiently, both Chat and Nkx2.1 (Chatires-Cre x Nkx2.1ires-Flp x RC:FLTG), we identified Nkx2.1-lineage neurons in the mPFC that immunolabel for ChAT but not for VIP (Figure 7C,D). These neurons were exceptionally sparse - both non-VIP, ChAT+ neurons identified by FISH (Figure 7B) and Nkx2.1+/ChAT+ neurons identified genetically (Figure 7C,D), only 3–5 neurons were identifiable in each analyzed mouse brain, indicating that these are the same population of cells (see additional examples of morphology and orientation in Figure 7—figure supplement 1). We did not find any examples of genetically-labeled Nkx2.1+/ChAT+ neurons in other regions of the cortex in a whole-brain survey, suggesting that the low rate of non-VIP, ChAT+ neurons we report in Figure 2A & B is due to false negatives as a result of incomplete labeling and does not indicate the presence of Nkx2.1+/ChAT+ neurons outside of the mPFC. Given the existence of these non-VIP, ChAT+ neurons in the mPFC, we repeated our connectivity analysis as described above by injecting AAV-encoding Cre-dependent ChR2-mCherry into the mPFC of Chatires-Cre mice. We focused only on potential post-synaptic layer 1 interneurons in the immediate vicinity of ChR2-expressing non-VIP ChAT+ neurons, identifiable by their unique morphology and relatively large soma. Indeed, layer 1 interneurons near ChR2-expressing non-VIP ChAT+ neurons (but without nearby VIP+/ChAT+ neurons) received nicotinic cholinergic following optogenetic stimulation, but not GABAergic synaptic currents (Figure 7E). Thus, we have identified a previously unknown MGE-derived population of non-VIP cholinergic neurons that explain the differential synaptic connectivity of local ChAT+ neurons between mPFC and other regions of cortex. Given that only a few of these neurons are present in any given mouse brain, and because they are not present outside of the mPFC, their absence from systematic surveys of cortical cell classes is not surprising.
 
@@ -113,15 +193,319 @@ The existence of cortical ChAT+ neurons requires a reevaluation of studies that 
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Wild-type</td>
+      <td>Jackson Labs</td>
+      <td>C57BL6/J</td>
+      <td>Stock#00664</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Chatires-Cre</td>
+      <td>Jackson Labs</td>
+      <td>B6;129S6- Chattm1(cre)Lowl/J</td>
+      <td>Stock # 006410</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Vipires-Cre</td>
+      <td>Jackson Labs</td>
+      <td>VIPtm1(cre)Zjh/J</td>
+      <td>Stock # 010908</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Sstires-Flp</td>
+      <td>Jackson Labs</td>
+      <td>Ssttm3.1(flpo)Zjh/J</td>
+      <td>Stock # 028579</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Rosa26lsl-tdTomato, (Ai14)</td>
+      <td>Jackson Labs</td>
+      <td>B6.129Sg-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J</td>
+      <td>Stock # 007908</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Rosa26lsl-ChR2-EYFP, (Ai32)</td>
+      <td>Jackson Labs</td>
+      <td>B6;129S-Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze/J</td>
+      <td>Stock # 012569</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Sst-GFP (GIN)</td>
+      <td>Jackson Labs</td>
+      <td>FVB-Tg(GadGFP)45704Swn/J</td>
+      <td>Stock # 003718, referred to as "GIN" mice by the Jackson Laboratory, as "Sst-GFP" mice in the text.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>PV-GFP (G42)</td>
+      <td>Jackson Labs</td>
+      <td>CB6-Tg(GAD1-EGFP)G42zjh/J</td>
+      <td>Stock # 007677, referred to as "GAD67-GFP" or "G42 line" mice by the Jackson laboratory, as "PV-GFP" mice in the text.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>5HT3aR-GFP</td>
+      <td>Gift from B. Rudy lab (NYU)</td>
+      <td>Tg(Htr3a-EGFP)DH30Gsat</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Gad2ires-GFP</td>
+      <td>Jackson Labs</td>
+      <td>Gad2tm2(cre)Zjh)/J</td>
+      <td>Stock # 010802</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Slc18a3fl/fl</td>
+      <td>Gift of V. and M. Prado (UWO)</td>
+      <td>VAChTflox/flox</td>
+      <td>Martins-Silva et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Slc32a1fl/fl</td>
+      <td>Jackson Labs</td>
+      <td>Slc32a1tm1Lowl/J</td>
+      <td>Stock # 012897</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Nkx2.1ires-Flp</td>
+      <td>Jackson Labs</td>
+      <td>Nkx2-1tm2.1(flop)Zjh</td>
+      <td>Stock # 028577</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>RC::FLTG</td>
+      <td>Jackson Labs</td>
+      <td>B6.Cg-Gt(ROSA)26SorTm1.3(CAG-tdTomato,-EGFP)Pjen/J</td>
+      <td>Stock #026932</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (AAV)</td>
+      <td>AAV(8)-EF1ɑ-hChR2(H134R)-mCherry-WPRE-pA</td>
+      <td>UNC Vector Core</td>
+      <td></td>
+      <td>Titer:~2×1013 gc/ml</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (AAV)</td>
+      <td>AAV(DJ)-EF1ɑ-fDIO-EYFP</td>
+      <td>BCH Viral Core</td>
+      <td></td>
+      <td>Titer:~2×1012 gc/ml</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (AAV)</td>
+      <td>AAV(1)- EF1ɑ-fDIO-ChR2-EYFP</td>
+      <td>BCH Viral Core</td>
+      <td></td>
+      <td>Titer:~5×1013 gc/ml</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (AAV)</td>
+      <td>AAV(8)- EF1ɑ-DIO-FlpO</td>
+      <td>BCH Viral Core</td>
+      <td></td>
+      <td>Titer:~7×1011 gc/ml</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (AAV)</td>
+      <td>AAV(8)- EF1ɑ-DIO-mCherry</td>
+      <td>UNC Vector Core</td>
+      <td></td>
+      <td>Titer:~6×1012 gc/ml</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (AAV)</td>
+      <td>AAV(8)-CMV-DIO-Synaptophysin-EYFP</td>
+      <td>UNC Vector Core</td>
+      <td></td>
+      <td>Titer:~6×1012 gc/ml</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (AAV)</td>
+      <td>AAV(9)-CAG-DIO-Synaptophysin-mCherry</td>
+      <td>MIT McGovern Viral Core</td>
+      <td></td>
+      <td>Titer:~2×1013 gc/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>chicken ɑ-GFP</td>
+      <td>GeneTex</td>
+      <td>GTC13970</td>
+      <td>Dilution: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse ɑ-Gephyrin</td>
+      <td>Biosciences Parmingen</td>
+      <td>612632</td>
+      <td>Dilution: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit ɑ-Synapsin-1</td>
+      <td>Cell Signaling Technology</td>
+      <td>5297S</td>
+      <td>Dilution: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit ɑ-PSD95</td>
+      <td>Cell Signaling Technology</td>
+      <td>3450</td>
+      <td>Dilution: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit ɑ-VGAT</td>
+      <td>Synaptic Systems</td>
+      <td>131 011</td>
+      <td>Dilution: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse ɑ-VAChT</td>
+      <td>Synaptic Systems</td>
+      <td>139 103</td>
+      <td>Dilution: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>guinea pig ɑ-VGAT</td>
+      <td>Millipore</td>
+      <td>AB5905</td>
+      <td>Dilution: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat ɑ-ChAT</td>
+      <td>Millipore</td>
+      <td>AB144P</td>
+      <td>Dilution: 1:500;</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit ɑ-VIP</td>
+      <td>ImmunoStar</td>
+      <td>20077</td>
+      <td>Dilution: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit ɑ-Somatostatin, Clone YC7</td>
+      <td>Millipore</td>
+      <td>MAB354</td>
+      <td>Dilution: 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse ɑ-Parvalbumin</td>
+      <td>Millipore</td>
+      <td>MAB1572</td>
+      <td>Dilution: 1:500</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mm-Chat-C2</td>
+      <td>ACDBio</td>
+      <td>408731-C2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mm-Slc32a1</td>
+      <td>ACDBio</td>
+      <td>319191</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mm-Gad1-C3</td>
+      <td>ACDBio</td>
+      <td>400951-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mm-Gad2-C3</td>
+      <td>ACDBio</td>
+      <td>439371-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mm-Slc5a7-C3</td>
+      <td>ACDBio</td>
+      <td>439941-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mm-Slc18a3-C3</td>
+      <td>ACDBio</td>
+      <td>448771-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mm-Vip</td>
+      <td>ACDBio</td>
+      <td>4159341</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cre-01-C3</td>
+      <td>ACDBio</td>
+      <td>474001-C3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAscope Fluorescent Multiplex Detection Reagents</td>
+      <td>ACDBIO</td>
+      <td>320851</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All mice used in this study were between 2 and 4 months in age. For experiments using only Chatires-Cre mice, homozygous mice were maintained. For all crosses of two or more mouse lines, homozygous breeders were used to produce heterozygous off-spring for experiments, with the exception of experiments requiring conditional deletion of VGAT or VAChT, in which case homozygous Slc32a1fl/fl or Slc18a3fl/fl conditional knock-out mice were produced that were either homozygous or heterozygous for Chatires-Cre or Vipires-Cre, respectively. All mice were maintained in a 12 hr light-dark cycle, with the light cycle occurring between 7 am and 7 pm, with the exception of a cohort of mice in Figure 6—figure supplement 3, which lived in a reverse 12 hr light cycle. All experiments were performed according to animal care and use protocols approved by the Harvard Standing Committee on Animal Care in compliance with guidelines set for in the NIH Guide for the Care and Use of Laboratory Animals.
 
-## Virus injections
+### Virus injections
 
 For intracranial injection of virus, the surgery work area was maintained in aseptic conditions. Mice were anesthetized with 2–3% isoflurane and given 5 mg/kg ketoprofen as prophylactic analgesic, and placed on a heating pad in a stereotaxic frame (David Kopf Instruments) with continuous delivery and monitoring of appropriate isoflurane anesthesia. For one set of experiments (Figure 6—figure supplement 3), a cohort of mice were put under isoflurane anesthesia for two hours and allowed to recover without subsequent surgery. For the surgery, the skin above the skull was carefully cleared of hair with scissors and depilatory cream (Nair) and sterilized with alternating scrubs with alcohol pads and betadine pads. A midline incision was made in the skin and the skull exposed and small holes drilled into the skull at the appropriate coordinates depending on the injection site. For injections into motor cortex, injection coordinates were (relative to bregma):±1.8 mm ML, + 1.8 mm and + 0.5 mm AP, and −0.6 mm from the pia. Visual cortex was targeted by injecting (from lambda):±2.5 mm ML, 0 mm AP, −0.25 mm from the pia. 200–500 nl of the appropriate virus was injected through a pulled glass pipette at a rate of 100 nl/min with a UMP3 microsyringe pump (World Precision Instruments) for each of these injection sites. For targeting medial prefrontal cortex, injection coordinates were (from bregma):±0.4 mm ML, + 1.8 mm AP, and −2.0 and −1.3 mm from pia. 250 nl of virus was injected at each of the mPFC sites as above. Following injection, the pipette was allowed to sit for 10 min to prevent leak of the virus from the injection site, and then the glass pipette slowly removed over the course of 1–2 min. Following surgery, mice were monitored in their home cage for 4 days following surgery, and received daily analgesia for 2 days following surgery. Mice were sacrificed for experiments at least 3 weeks following injection to allow for robust viral expression. When we injected multiple viruses, they were mixed in equal proportions.
 
-## Electrophysiology
+### Electrophysiology
 
 300 µm acute coronal brain slices were prepared from mice deeply anesthetized with isoflurane inhalation and perfused with ice-cold cutting solution containing (in mM): 25 NaHCO3, 25 Glucose, 1.25 NaH2PO4, 7 MgCl2, 2.5 KCl, 0.5 CaCl2, 11.6 ascorbic acid, 3.1 pyruvic acid, 110 Choline chloride. Following dissection, brains were blocked by cutting along the mid-sagittal axis, and brains glued to the platform along the mid-sagittal surface before slicing on a Leica VT1000s vibratome, while maintaining submersion in cold choline cut solution. Following cutting, slices recovered for 30–45 min in 34° C artificial cerebral spinal fluid (aCSF) containing (in mM): 125 NaCl, 2.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 11 glucose, 2 CaCl2, 1 MgCl2. Subsequently all recording took place in continuous perfusion (2–3 ml/min) of room temperature aCSF. Both the choline cut solution and aCSF were continuously equilibrated by bubbling with 95%–02/5% CO2.
 
@@ -131,17 +515,17 @@ To stimulate ChR2-expressing neurons, we focused a fiber-coupled 200 mW 473 nm l
 
 Voltage clamp and current clamp recordings were amplified and filtered at 3 kHz using a Multiclamp 200B (Axon Instruments) and digitized at 10 kHz with a National Instruments acquisition boards. Data was saved with a custom version of ScanImage written in Matlab (Mathworks; https://github.com/bernardosabatinilab/SabalabSoftware_Nov2009). Additional off-line analysis was performed using Igor Pro (Wavemetrics). Response amplitudes were determined by averaging 5–10 traces, taking a 990 ms baseline prior to stimulation, and subtracting that from the peak amplitude within 5–20 ms after stimulation.
 
-## Fluorescent In situ hybridization
+### Fluorescent In situ hybridization
 
 Whole brains dissected from deeply anesthetized wild-type C57/BL6 mice were fresh frozen in Tissue-tek OCT media on dry ice and stored at −80°C before being sliced into 20 µm slices on a CM 1950 Cryostat (Leica), mounted on SuperFrost Plus 25 × 75 mm slides (VWR), and stored at −80°C prior to labeling. Fluorescent in situ hybridization labeling was performed according to the RNAscope Fluorescent Multiplex Assay protocol (ACDBio).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Tissue was obtained from deeply anesthetized mice that were perfused transcardially with room temperature phosphate-buffered saline (PBS) followed by 4% paraformaldehyde (PFA) in PBS. The brain was then dissected out of the skull, post-fixed overnight at 4°C in 4% PFA, rinsed and stored in PBS. Brains were sliced into either 50 µm (for most figures) or 25 µm slices (for Figure 6) on a Leica VT1000s vibratome and stored in 24-well plates.
 
 For staining, slices were first incubated in blocking buffer (10% Normal Goat Serum, 0.25% Triton-X in PBS, except 10% Normal Horse Serum for ChAT immunostaining) for 1 hr at room temperature on a rotary shaker, then placed in primary antibody solution (1:500 for each primary antibody diluted into carrier solution (10% Normal Goat Serum, 0.2% Triton-X in PBS) and left to shake overnight at 4°C. Slices were then washed 5–6 x in PBS, and placed into secondary antibody solution (1:500 in carrier solution) for 2 hr at room temperature. Slices were again washed, placed on glass slides, and mounted in Prolong Gold antifade mounting media with DAPI (Invitrogen).
 
-## Imaging and analysis
+### Imaging and analysis
 
 Immunostained and FISH samples were imaged on a VS120 slide scanner at 10x. Regions of interest were then imaged on either a FV1200 confocal microscope (Olympus) or a TCS SP8 confocal microscope (Leica) for colocalization analysis.
 
@@ -149,7 +533,7 @@ Immunostained samples were manually scored to count co-labeled cells using the C
 
 Immunostained samples from Figure 6 were imaged using the TCS SP8 confocal microscope (Leica) such that each acquisition utilized the full dynamic imaging range. For analysis, putative individual pre-synaptic terminals were identified by thresholding the raw image stacks of the Synaptophysin-mCherry signal, then filtering putative terminals for size and enforcing that they must be present across multiple images. Mean fluorescence intensity for VGAT and VAChT antibody staining was calculated for each putative terminal. Individual terminals were classified as VGAT or VAChT positive by automatically determining a threshold for VGAT/VAChT positive pixels using the Otsu method (which determines the intensity threshold that minimizes intraclass variance and maximizes interclass variance), and requiring that the terminal is positive or negative if the mean intensity is greater than or equal to the Otsu threshold.
 
-## Array tomography
+### Array tomography
 
 Brains from mice injected with AAV(8)-CMV-DIO-Synaptophysin-YFP were perfused, dissected, and fixed as for immunohistochemistry. 300 µm thick slices were then cut with a Lieca VT1000s vibratome. Areas of high Synaptophysin-YFP expression were noted using an epifluorescence microscope, and approximately 1 × 1 mm squares of tissue were cut out under a dissecting scope with Microfeather disposable ophthalmic scalpels. These small tissue squares were then dehydrated with serial alcohol dilutions and infiltrated with LR White acrylic resin (Sigma Aldrich L9774), and placed in a gel-cap filled with LR White to polymerize overnight at 50°C. Blocks of tissue were sliced on an ultramicrotome (Leica EM UC7) into ribbons of 70 nm sections.
 
@@ -159,7 +543,7 @@ For analysis, Synaptophysin-YFP masks were created by first masking out the edge
 
 Colocalization analysis was carried out using the same YFP mask as described above. Synaptic antibody signals were assigned to individual pixels by fitting each antibody punctum with a Gaussian distribution, and assigning the pixel corresponding to the peak of that Gaussian as the location of that antibody. Colocalization was then calculated by dividing the number of antibody pixels that overlapped with the YFP mask by the total number of pixels in the YFP mask. Similar colocalization values were also calculated within expanding single-pixel concentric volumes around each terminal, to compare the antibody colocalization within terminals with the immediately surrounding tissue. Finally, the location of each antibody puncta was randomized 1000 times, avoiding the DAPI masks, and the colocalization within and around the YFP terminals recalculated for each round of randomization. To compare across samples, this colocalization measure was converted to a z-score by subtracting the mean of the randomized data from the actual colocalization, divided by the standard deviation of the randomized data.
 
-## Blood vessel imaging
+### Blood vessel imaging
 
 For surgical implantation of cranial windows, mice were anesthetized with 2–3% isoflurane, given 10 mg/kg ketoprofen as prophylactic analgesic, and 0.3 mg/kg Dexamethasone to limit tissue inflammation. Mice were placed on a heating pad in a stereotaxic frame (David Kopf Instruments) with continuous delivery and monitoring of appropriate isoflurane anesthesia. The skin above the skull was carefully cleared of hair with scissors and depilatory cream (Nair) and sterilized with alternating scrubs with alcohol pads and betadine pads. A midline incision was made in the skin and the skull exposed. A circular,~3 mm diameter section of skull was carefully drilled from over the right barrel cortex, with frequent application of sterile saline. A cranial window, prepared by adhering a 3 mm glass coverslip to a 4 mm coverslip with optical glue, was placed over the brain, and secured in place with Kwik-cast silicone elastomer sealant (World Precision Instruments), followed by C and B-Metabond (Parkell) with a custom-made titanium head post. Following surgery, mice were monitored in their home cage for 4 days following surgery, and received daily analgesia for 2 days following surgery.
 

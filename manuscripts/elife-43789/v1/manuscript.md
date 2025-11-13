@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.43789.001 The Late Jurassic ‘Solnhofen Limestones’ are famous for their exceptionally preserved fossils, including the urvogel Archaeopteryx , which has played a pivotal role in the discussion of bird origins. Here we describe a new, non-archaeopterygid avialan from the Lower Tithonian Mörnsheim Formation of the Solnhofen Archipelago, Alcmonavis poeschli gen. et sp. nov. Represented by a right wing, Alcmonavis shows several derived characters, including a pronounced attachment for the pectoralis muscle, a pronounced tuberculum bicipitale radii, and a robust second manual digit, indicating that it is a more derived avialan than Archaeopteryx . Several modifications, especially in muscle attachments of muscles that in modern birds are related to the downstroke of the wing, indicate an increased adaptation of the forelimb for active flapping flight in the early evolution of birds. This discovery indicates higher avialan diversity in the Late Jurassic than previously recognized.
+The Late Jurassic ‘Solnhofen Limestones’ are famous for their exceptionally preserved fossils, including the urvogel Archaeopteryx, which has played a pivotal role in the discussion of bird origins. Here we describe a new, non-archaeopterygid avialan from the Lower Tithonian Mörnsheim Formation of the Solnhofen Archipelago, Alcmonavis poeschli gen. et sp. nov. Represented by a right wing, Alcmonavis shows several derived characters, including a pronounced attachment for the pectoralis muscle, a pronounced tuberculum bicipitale radii, and a robust second manual digit, indicating that it is a more derived avialan than Archaeopteryx. Several modifications, especially in muscle attachments of muscles that in modern birds are related to the downstroke of the wing, indicate an increased adaptation of the forelimb for active flapping flight in the early evolution of birds. This discovery indicates higher avialan diversity in the Late Jurassic than previously recognized.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ For more than 150 years, Archaeopteryx was the only Jurassic representative know
 
 Here we report on a new paravian specimen from the Lower Tithonian Mörnsheim Formation, representing the second theropod specimen from this unit, which overlies the Altmühltal Formation. The new specimen represents the largest avialan theropod yet recorded from the Jurassic and provides further evidence on the forelimb anatomy and the origin of flapping flight in basal avialans.
 
-## Geological and palaeontological context
+### Geological and palaeontological context
 
 The Mörnsheim Formation is a unit of the southern German Weißjura Group, a package of mainly calcareous marine sediments that is widely distributed in Bavaria and Baden-Württemberg. In the southern Franconian Alp in Bavaria, the Weißjura Group in the region between Weißenburg and Regensburg is famous for often laminated, very fine-grained limestones of late Kimmeridgian to early Tithonian age, often collectively called ‘Solnhofen limestones’, and the fossils from these rocks are accordingly referred to as ‘Solnhofen fossils’. A large number of often local or regional names have been proposed for the different units that make up the ‘Solnhofen limestones’, but a recent overview of the lithostratigraphy of the area helped to clarify the nomenclature and correlations of the formations (Niebuhr and Pürner, 2014). Thus, the ‘Solnhofen limestones’ sensu stricto are now included in the Altmühltal Formation and restricted to the area northwest of Ingolstadt, whereas more eastern occurrences of contemporaneous plattenkalks are included in the Painten Formation. Both of these formations underly the Mörnsheim Formation. Biostratigraphic dating with the help of ammonites has furthermore shown that the Altmühltal Formation spans from the uppermost horizon of the Beckeri zone of the latest Kimmeridgian over five ammonite horizons to the rueppelianus horizon of the Hybonotum zone of the Early Tithonian, and that the lithographic limestones within this formation in the areas of Solnhofen and Eichstätt are not synchronous, but the Eichstätt Member is somewhat older (Schweigert, 2007; Schweigert, 2015; Niebuhr and Pürner, 2014). Furthermore, in more eastern areas, important vertebrate fossils have also been found in the upper part of the Torleite Formation, which underlies the Painten Formation. In the light of this geological and stratigraphic complexity, the traditional habit to talk about all the fossils from these diverse units as the ‘fauna of the Solnhofen limestones’ has been abandoned in favour of the expression ‘fauna of the Solnhofen Archipelago’ in recent years, to distinguish the regional palaeoecological setting from the concrete geological unit that the different fossils are derived from (e.g. Röper, 2005; López-Arbarello and Schröder, 2014; Rauhut et al., 2017).
 
@@ -42,7 +42,7 @@ The Mörnsheim Formation has its best outcrops in the areas between Mörnsheim, 
 
 The specimen described here comes from the Schaudiberg, near Mühlheim, close to Mörnsheim (Figure 1A). Two quarries are currently exposed at the Schaudiberg, both owned by the Grundstücksgemeinschaft Pöschl/Leonhardt, a public quarry for fossil collectors, and the Old Schöpfel Quarry, which is being systematically excavated for fossils (see Heyng et al., 2015). The lower part of the Mörnsheim Formation has a total thickness of approximately 50 m at the Schaudiberg, but only parts of this are exposed in the two quarries. Some 8 m of the lowermost Mörnsheim Formation are exposed in the Old Schöpfel Quarry, with the boundary to the underlying Altmühltal Formation at the base of the section being currently covered. Thus, the currently exposed section starts some 4 m above this boundary with silicified laminated limestones and intercalated thick layers of massive limestones and silicified limestones (Heyng et al., 2015). In the higher part of the profile and the visitors quarry, the section becomes more dominated by laminated limestones and intercalations of laminated marly limestones and clays. The new urvogel specimen comes from a thin marly intercalation within the lowermost 2.5 m of the section in the Old Schöpfel Quarry. It was found in 2017 by Roland Pöschl, who leads the systematic excavations in this quarry. The Mörnsheim Formation at the Schaudiberg is very fossiliferous, with the most common fossils being strongly compressed ammonites, and a rich invertebrate and vertebrate fauna is present, but remains largely unstudied so far. In contrast to the underlying Altmühltal Formation, most vertebrate fossils in the Mörnsheim Formation are at least partially disarticulated and often fragmentary. In the Schaudiberg quarries, fishes are represented by chondrichthyans, including well-preserved specimens of Asteracanthus (Pfeil, 2011), actinopterygians (e.g. Schröder and López-Arbarello, 2013), and mainly isolated remains of coelacanths. Tetrapods are represented by unstudied turtles, rhynchocephalians, marine crocodiles, and pterosaurs (Heyng et al., 2011; Heyng et al., 2015; Rauhut et al., 2011; Rauhut et al., 2012; Moser and Rauhut, 2011; Rauhut, 2012), with the only formally studied taxon being the unusual rhynchocephalian Oenosaurus muehlheimensis Rauhut et al., 2012, so far. As noted above, the only theropod specimen reported from the Mörnsheim Formation so far is the fragmentary holotype of Archaeopteryx albersdoerferi, which comes from the outcrop area of Daiting (Tischlinger, 2009; Kundrát et al., 2019).
 
-## Comments on the numbering and naming of avialan specimens from the Solnhofen Archipelago
+### Comments on the numbering and naming of avialan specimens from the Solnhofen Archipelago
 
 Traditionally, the different specimens found in the Kimmeridgian-Tithonian limestones of Bavaria have been numbered according to the time they were first described as Archaeopteryx (see Wellnhofer, 2008; Wellnhofer, 2009; Rauhut and Tischlinger, 2015). Thus, the London specimen is usually called the first skeletal specimen, the Berlin specimen the second and so on. Accordingly, more recently, Foth et al., 2014 described a new specimen that is hitherto simply known as the 11th specimen, and Rauhut et al., 2018 described the 12th specimen. However, the story becomes more complicated if one accepts that some specimens might actually not belong to the genus Archaeopteryx, such as the Solnhofen specimen, which was argued to represent a distinct genus, Wellnhoferia (Elzanowski, 2001; Elzanowski, 2002; though see Mayr et al., 2007, and Wellnhofer, 2008, Wellnhofer, 2009), or the Haarlem specimen, which was recently referred to a distinct genus of anchiornithids, Ostromia (Foth and Rauhut, 2017). Thus, in this case, theoretically, the numbering of Archaeopteryx specimens would need to be revised, with the 11th specimen becoming the 10th specimen and so forth. However, we propose to retain the original numbering of specimens, even if one accepts the different generic assignments, in order to avoid confusion between the recent and older literature. Given the gradual assembly of the avialan body plan (Brusatte et al., 2014; Cau et al., 2015) and the general similarity of the basalmost members of this clade, it might be justified to simply talk about 'urvogel specimens' instead of using the generic name Archaeopteryx, to thus accommodate the taxonomic uncertainty. Accordingly, the specimen described here should be regarded as the 13th urvogel specimen from the Solnhofen Archipelago.
 
@@ -54,43 +54,43 @@ Apart from the numbers, most specimens also have informal, but widely used names
 
 13th specimen: This specimen is described here. It comprises an associated right wing of a large basal avialan from the Mörnsheim Formation of Mühlheim, close to Mörnsheim, Bavaria. The specimen belongs to the collections of the Bayerische Staatssammlung für Paläontologie und Geologie in Munich. As there already is a ‘Munich specimen’, we propose to refer to this specimen as the ‘Mühlheim specimen’.
 
-## Institutional abbreviations
+### Institutional abbreviations
 
 AMNH, American Museum of Natural History, New York, USA; IGM, Institute of Geology, Ulan Bataar, Mongolia; IVPP, Institute of Vertebrate Paleontology and Paleoanthropology, Beijing, China; JME, Jura-Museum Eichstätt, Germany; JZT, Jizantang Paleontological Museum, Chaoyang City, China; MCF, Museo Carmen Funes, Plaza Hiuncul, Argentina; SNSB-BSPG, Staatliche naturwissenschaftliche Sammlungen Bayerns, Bayerische Staatssammlung für Paläontologie und Geologie, Munich, Germany.
 
-## Description
+### Description
 
-## Preservation
+#### Preservation
 
 The new specimen, SNSB-BSPG 2017 I 133, consists of the partially disarticulated, but associated skeleton of the right wing of an avialan theropod (Figure 2). The humerus is rotated and slightly displaced from the remains of the arm, and radius and ulna are disarticulated, but preserved in close proximity. The manus is disarticulated from the radius and ulna and the metacarpus overlies the distal ulna. The digits of the hand are mainly preserved in articulation, with only phalanx I-1 forming an unnatural angle with its respective metacarpal, and the ungual of digit I being displaced, lying at the distal end of the ulna.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/43789/elife-43789-fig2-v1.jpg)
 
-**Figure 2.:** Alcmonavis poeschli gen.et sp. nov., SNSB-BSPG 2017 I 133. Abbreviations: hu, humerus; mc, metacarpus; r, radius; sl, semilunate carpal; ul, ulna; Roman numerals indicate digits and Arabic numerals indicate phalanges of digits. Scale bar is 5 cm.
+**Figure 2.:** et sp. nov., SNSB-BSPG 2017 I 133. Abbreviations: hu, humerus; mc, metacarpus; r, radius; sl, semilunate carpal; ul, ulna; Roman numerals indicate digits and Arabic numerals indicate phalanges of digits. Scale bar is 5 cm.
 
 The head of the humerus is not preserved, as it lay in a mud-filled crack within the rock (U. Leonhardt, pers. com. to OR, 10.2017) and the proximal shaft of the radius is partially reconstructed. The bone preservation is generally rather poor, with all longbones being compressed, collapsing the shafts, and fractured, and the entepicondyle of the humerus is largely lost, as is the distal end of metacarpal I. However, the phosphatized remains of the original keratinous sheath of the unguals are rather nicely preserved, as it is often the case in theropod specimens from the Late Jurassic plattenkalks of southern Germany.
 
-## Humerus
+#### Humerus
 
 The right humerus is exposed in anteromedial view (Figure 3). As noted above, the bone is missing its proximal end, so its exact length cannot be established (the apparent outline of the bone in the sediment is an artefact of preparation, as the outline has been sculpted in the matrix used to fill the crack). However, the medial edge preserves the distal end of the internal tuberosity, indicating that only a small portion of the proximal end is missing, so that the complete length can be estimated to be approximately 90 mm (±2.5 mm; length as preserved: 81.4 mm). As in all maniraptoran theropods (Rauhut, 2003), the internal tuberosity was obviously proximodistally elongate and rectangular in outline, with approximately its distal third being preserved. Distally, it fades into the relatively sharp medial edge of the shaft in an oblique step. On the anterolateral side of the humerus, the distal half of the large, rectangular deltopectoral crest is preserved. Whereas the anterolateral edge of the proximal part of the crest seems to be rather sharp-edged, the distalmost c. 11 mm show an elongate oval facet for the insertion of the m. pectoralis (Figure 3). This facet is inclined anteromedially and reaches a maximal transverse width of 2.2 mm. A similar facet is also developed in Sapeornis (Provini et al., 2009; pers. obs. by CF on specimen JZT-DB 0047), Jeholornis (Lefèvre et al., 2014), Jixiangornis (Chiappe and Meng, 2016), Confuciusornis (e.g. JME 1997/1; Chiappe et al., 1999), but it is absent in Archaeopteryx, anchiornithids and non-avian theropods (see discussion). Distal to this insertion, the deltopectoral crest fades into the anterolateral side of the shaft in an oblique, slightly concave step. As in all specimens of Archaeopteryx, other basal avialans like Confuciusornis (Chiappe et al., 1999), and, to a lesser degree, in non-avialan maniraptorans (e.g. Ostrom, 1969; Clark et al., 1999; Pei et al., 2014), the proximal part of the humerus that houses the deltopectoral crest is angled posteriorly in respect to the central shaft, with its posteromedial edge (excluding the internal tuberosity) forming an angle of approximately 38° towards the long axis of the shaft. This angle is larger than in non-avialan Paraves and Anchiornis (e.g., Ostrom, 1969; Burnham, 2004; Pei et al., 2014; Pei et al., 2017). In Archaeopteryx, the angle varies between 30° (Daiting specimen) and 33° (Maxberg and Ottman and Steil specimens), while it is similarly increased in more derived avialans (see discussion).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/43789/elife-43789-fig3-v1.jpg)
 
-**Figure 3.:** Alcmonavis poeschli in (A) normal and (B) ultraviolet light.Abbreviations: dpc, deltopectoral crest; fmb, fossa musculus brachialis; it, internal tuberosity; mp, attachment facet for m. pectoralis; rc, radial condyle. Scale bar is 3 cm.
+**Figure 3.:** Abbreviations: dpc, deltopectoral crest; fmb, fossa musculus brachialis; it, internal tuberosity; mp, attachment facet for m. pectoralis; rc, radial condyle. Scale bar is 3 cm.
 
 The length of the humerus distal to the deltopectoral crest is 64.8 mm as measured from the distalmost edge of the apex of the crest and c. 60 mm from the point where the distal end of the crest fades into the shaft. The humeral shaft distal to the deltopectoral crest is very slightly sigmoidal, with the proximal c. 30 mm being slightly convex anteriorly and concave posteriorly, whereas the distal end is slightly flexed anteriorly. Although the compaction of the shaft makes secure interpretation difficult, it seems that it was wider transversely than anteroposteriorly over its entire length. The minimal width of the shaft is c. 6.5 mm (all measurements should be seen with caution due to the compaction of the bones). The distal end gradually expands transversely to approximately 200% of the minimal shaft width (as far as this can be established; 13 mm as preserved) and the distal condyles expand anteriorly. A large, deep, triangular groove is present proximal to and between the condyles on the anterior side of the humerus (Figure 3). Although this groove might be somewhat exaggerated by the compaction of the bone, it nonetheless seems to be a genuine character of the bone. The medial rim of the groove is formed by a broad longitudinal ridge that is slightly offset laterally from the medial margin of the distal humerus and fades into the shaft some 15 mm proximal to the distal end. This groove and ridge have not been described for Archaeopteryx so far (due to the fact that the anterior side of the distal humerus is not exposed in any of the specimens referred to this genus), but they are also present in the humeri of the dromaeosaurids Deinonychus (Ostrom, 1969), and Bambiraptor (Burnham, 2004), in Balaur (Brusatte et al., 2013) and the basal avialans Confuciusornis (Chiappe et al., 1999) and Sapeornis (Provini et al., 2009). In modern birds, a depression in a similar position serves as the attachment of the brachialis muscle, the fossa musculi brachialis (Baumel and Witmer, 1993), and this might be a likely identification in these paravian theropods as well. The entepicondyle (ulnar condyle or condyles dorsalis) is largely missing, but its impression in the rock indicates that it was anteriorly expanded and posteromedially rounded. The ectepicondyle (radial condyle or condyles ventralis) is considerably expanded anteriorly and has a well-developed, anterodistally facing, transversely concave roller joint, similar to the condition in Deinonychus (Ostrom, 1969).
 
-## Ulna
+#### Ulna
 
 The ulna is a slender element (Figure 4) and, with a length of 82 mm, slightly shorter than the estimated length of the humerus, as in Archaeopteryx (Wellnhofer, 2008; Wellnhofer, 2009; Foth et al., 2014; Rauhut et al., 2018), non-avialan maniraptorans, Confuciusornis (e.g. Chiappe et al., 1999), and Apsaravis (Clarke and Norell, 2002), whereas both elements are of subequal length in Sapeornis (e.g. Zhou and Zhang, 2003a; Provini et al., 2009), and the ulna is longer than the humerus in many more derived avialans (e.g. Hu et al., 2014; Wang et al., 2016). It is exposed in anteromedial view. As in many other maniraptoran theropods (Gauthier, 1986), the proximal half of the ulna is slightly bowed, being convex posteriorly. The proximal end of the ulna is only slightly expanded from the shaft, and the olecranon process is poorly developed (Figure 5), as in most maniraptorans, including birds (Rauhut, 2003). The proximal articular surface shows a small, almost round, proximally and very slightly anteriorly facing concavity anteriorly, and a smaller convexity posteriorly. Thus, in contrast to Deinonychus (Ostrom, 1969), other dromaeosaurids (Norell and Makovicky, 1999; Hwang et al., 2002; Burnham, 2004), and Balaur (Brusatte et al., 2013), but similar to Jeholornis (Lefèvre et al., 2014; Chiappe and Meng, 2016) the proximal end is oval rather than triangular in outline in proximal view.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/43789/elife-43789-fig4-v1.jpg)
 
-**Figure 4.:** Alcmonavis poeschli.Abbreviations as in Figure 1, and: pi, pisiforme; ra, radiale. Scale bar is 5 cm.
+**Figure 4.:** Abbreviations as in Figure 1, and: pi, pisiforme; ra, radiale. Scale bar is 5 cm.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/43789/elife-43789-fig5-v1.jpg)
 
-**Figure 5.:** Alcmonavis poeschli in (A) normal and (B) ultraviolet light.Abbreviations: ha, humeral articulation; ib, impressio brachialis; ri, ridge bordering the impressio brachialis; rt, radial tubercle (cotylus dorsalis). Scale bar is 5 mm.
+**Figure 5.:** Abbreviations: ha, humeral articulation; ib, impressio brachialis; ri, ridge bordering the impressio brachialis; rt, radial tubercle (cotylus dorsalis). Scale bar is 5 mm.
 
 Below the proximal articular surface, a small, but sharply defined longitudinal ridge is present on the anteromedial side of the ulna (Figure 5). This ridge extends from the anteromedial edge of the proximal articular surface, is slightly offset from the medial side of the bone and fades into the shaft some 9 mm below the articular surface. A very similar ridge is present in the 12th specimen of Archaeopteryx (Rauhut et al., 2018: fig. 22), Confuciusornis (JM 1997/1), Ichthyornis (Clarke, 2004: fig. 52C) and many modern birds, where it marks the margin of the impressio brachialis (Baumel and Witmer, 1993), but such a ridge is absent in non-avialan theropods. Laterally, a small lateral tubercle is present proximally, defining the posterior border of the radial fossa and rapidly disappearing into the ulnar shaft distally. The tubercle is offset from the ulnar articular surface by a ridge, but its proximal surface is convex and does not show an additional articular surface, as it is the case in the cotyla dorsalis of modern birds. A pronounced tubercle for the insertion of the biceps muscle cannot be identified, but the bone is strongly crushed in the area where this tubercle would be expected.
 
@@ -98,9 +98,9 @@ The shaft is slender and narrows gradually, but only slightly from approximately
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/43789/elife-43789-fig6-v1.jpg)
 
-**Figure 6.:** Alcmonavis poeschli in (A) normal and (B) ultraviolet light.Abbreviations as in Figures 2 and 4 and: amr, anteromedial ridge. Scale bar is 5 mm.
+**Figure 6.:** Abbreviations as in Figures 2 and 4 and: amr, anteromedial ridge. Scale bar is 5 mm.
 
-## Radius
+#### Radius
 
 As in all theropods, the radius is more slender than the ulna (Figure 4), its minimal shaft width being 3 mm. The bone is straight, and its length cannot be established precisely, as the distal end is overlain by the metacarpus, but it is approximately 80–82 mm. The radius seems to be mainly exposed in medial view.
 
@@ -108,23 +108,23 @@ Although the shaft generally widens gently proximally, the proximal end is rathe
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/43789/elife-43789-fig7-v1.jpg)
 
-**Figure 7.:** Alcmonavis poeschli.(A) Proximal end as exposed in medial view. (B) Proximal end in oblique posteromedial view. (C) mid-shaft in medial view. Abbreviations: fu, longitudinal furrow; tbr, tuberculum bicipitale radii. Scale bars are 5 mm.
+**Figure 7.:** (A) Proximal end as exposed in medial view. (B) Proximal end in oblique posteromedial view. (C) mid-shaft in medial view. Abbreviations: fu, longitudinal furrow; tbr, tuberculum bicipitale radii. Scale bars are 5 mm.
 
 An unusual feature of the proximal radius is a raised, medially directed crest on the anteromedial side of the shaft Figure 7A,B). This crest expands abruptly medially some 3.5 mm distal to the proximal articular surface and extends for at least 9 mm distally, before it obliquely disappears into the shaft (although the crest is damaged in parts, enough is preserved to establish its approximately shape and extent; Figure 7B). At its highest section, the crest extends at least 1.5 mm from the shaft medially. In position and general appearance, this crest corresponds to the tuberculum bicipitale radii of birds (Baumel and Witmer, 1993), and we thus interpret it as the insertion of the M. biceps brachii. In basal paravian theropods, a similar crest on the proximal radius has so far only been described in Bambiraptor (Burnham, 2004), but it is absent in Deinonychus (Ostrom, 1969), Pyroraptor (Allain and Taquet, 2000), Anchiornis (Pei et al., 2017), and Balaur (Brusatte et al., 2013). In Confuciusornis (Chiappe et al., 1999) and at least some specimens of Archaeopteryx (pers. obs.), a small tuberculum bicipitale radii is present, but it is triangular in shape and less pronounced than in SNSB- BSPG 2017 I 133 (see below).
 
 The midsection of the radial shaft is more or less intact, showing a longitudinal groove running along the medial side of the shaft (Figure 7C). Such a groove is absent in Archaeopteryx, but has been described for some species of Enantiornithes (e.g., Chiappe and Walker, 2002; Sanz et al., 2002; Hu et al., 2015). A similar groove was also described for Jeholornis, but interpreted as the result of crushing (Lefèvre et al., 2014). However, as such groove is also present in other specimens of Jeholornis, including the holotype (Chiappe and Meng, 2016): 32, 36), this structure might be authentic. The shaft has its minimal width at about mid-length, from where it again gradually expands distally to a width of 4 mm at the point where the radius is overlain by the metacarpus. Nothing can be said about the morphology of the distal end of the bone, as it suffered severe damage.
 
-## Carpus
+#### Carpus
 
 The carpus is represented by the semilunate carpal that is preserved in articulation with the metacarpus (Figure 4), two small bones preserved below the distal end of the ulna (Figures 6 and 8), and a very small element preserved in articulation with the proximal end of metacarpal III (Figures 8 and 9). In agreement with Botelho et al., 2014, the small element articulated with metacarpal III is interpreted as distal carpal 3. The other two carpals are poorly preserved, but probably represent the radiale, preserved a small distance away below the lateral side of the distal ulna, and the pisiforme (=ulnare; see Botelho et al., 2014), which is preserved directly below the medial side of the ulna and is partially covered by the first manual ungual.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/43789/elife-43789-fig8-v1.jpg)
 
-**Figure 8.:** Alcmonavis poeschli in (A) normal and (B) ultraviolet light.Abbreviations as in Figures 2 and 4, and: dc, distal carpal. Scale bar is 10 mm.
+**Figure 8.:** Abbreviations as in Figures 2 and 4, and: dc, distal carpal. Scale bar is 10 mm.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/43789/elife-43789-fig9-v1.jpg)
 
-**Figure 9.:** Alcmonavis poeschli in (A) normal and (B) ultraviolet light.Abbreviations as in Figures 2, 4 and 8, and: patr, palmar trochlear ridge; pltr, plantar trochlear ridge. Scale bar is 5 mm.
+**Figure 9.:** Abbreviations as in Figures 2, 4 and 8, and: patr, palmar trochlear ridge; pltr, plantar trochlear ridge. Scale bar is 5 mm.
 
 Both proximal carpals have a rather poorly defined, granular bone surface, probably indicating incomplete ossification (Figure 6). The radiale is a small element, maximally 4.3 mm wide and 2.8 mm deep. It is roughly trapezoidal in outline, has rounded edges, is slightly waisted, and tapers towards its medial(?) side. The exposed (distal?) surface is subdivided by an oblique ridge into two slightly angled facets, a larger, concave lateral(?) facet, presumably for the articulation with the trochlea of the semilunate carpal, and a smaller, triangular lateral facet towards the tapering edge, which might represent the attachment of a propatagial tendon (see Wang et al., 2017, for the presence of propatagia in maniraptoran theropods).
 
@@ -134,7 +134,7 @@ The semilunate carpal is considerably larger (Figures 8 and 9), being 6.4 mm wid
 
 Distal carpal three is a very small, round nubbin of bone some 1 mm wide transversely and slightly less deep proximodistally, which is attached to the proximal end of metacarpal III.
 
-## Metacarpus
+#### Metacarpus
 
 As in all maniraptorans, the metacarpus consists of three elements (Figure 8), which are here identified as metacarpals I-III, in agreement with the vast majority of works on theropods (but see Xu et al., 2009, for an alternative interpretation). The metacarpus is preserved in articulation and exposed in palmar view. Metacarpal II is notably more robust than either metacarpal I or III (Figure 8), with the width of its proximal shaft (c. 5 mm) being approximately twice that of metacarpal III (2.5 mm) and more than 185% of the width of the proximal articular surface of metacarpal I (2.7 mm). This differs from the more equal widths of metacarpal I and II in Archaeopteryx (e.g. Wellnhofer, 1974; Wellnhofer, 2008; Mayr et al., 2007), but also the less marked difference in other basal avialans, such as Sapeornis (Zhou and Zhang, 2003a) and Confuciusornis (Chiappe et al., 1999). In contrast, these proportions resemble the condition found in Jeholornis (Zhou and Zhang, 2002; Lefèvre et al., 2014).
 
@@ -144,11 +144,11 @@ Metacarpal II is massive, apparently subrectangular in cross-section and largely
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/43789/elife-43789-fig10-v1.jpg)
 
-**Figure 10.:** Alcmonavis poeschli.(A) and (B) Distal ends of metacarpals II and III and proximal phalanges of digits II and III in normal (A) and ultraviolet (B) light. (C) First phalanx of first digit in medial view. (D) Ungual phalanx of digit I in medial view under ultraviolet light. (E) Ungual phalanx of digit II in medial view under ultraviolet light. (F) Ungual phalanx of digit III in lateral view under ultraviolet light. Abbreviations as in Figure 2, and: ft, flexor tubercle; gr, groove; ks, keratinous sheath; lpf, lateropalmar flange; pl, proximal lip. Scale bars are 1 cm.
+**Figure 10.:** (A) and (B) Distal ends of metacarpals II and III and proximal phalanges of digits II and III in normal (A) and ultraviolet (B) light. (C) First phalanx of first digit in medial view. (D) Ungual phalanx of digit I in medial view under ultraviolet light. (E) Ungual phalanx of digit II in medial view under ultraviolet light. (F) Ungual phalanx of digit III in lateral view under ultraviolet light. Abbreviations as in Figure 2, and: ft, flexor tubercle; gr, groove; ks, keratinous sheath; lpf, lateropalmar flange; pl, proximal lip. Scale bars are 1 cm.
 
 Metacarpal III is slender and slightly shorter than metacarpal II. The bone is straight and closely appressed to metacarpal II over its entire length (Figure 8), as in most basal paravian theropods, but unlike the flexed third metacarpal with a well-developed spatium intermetacarpale in most modern birds and some basal avialans, such as Jeholornis (Zhou and Zhang, 2002; Zhou and Zhang, 2003b; Lefèvre et al., 2014). The proximal end is displaced distally by slightly more than 1 mm from the level of the proximal end of metacarpal I and II, as in oviraptorids (Longrich et al., 2010; Balanoff and Norell, 2012), dromaeosaurids (Lü and Brusatte, 2015), Archaeopteryx (Elzanowski, 2002; Mayr et al., 2007), confuciusornithids (e.g. Zhang et al., 2008), enantiornithines (e.g. Zhang et al., 2013), and more derived birds. The proximal end has a medially flared, rounded flange that overlaps the lateropalmar edge of metacarpal II and thus reaches a maximal transverse width of 4 mm (Figure 9). The flange disappears into the shaft some 4 mm from the proximal end, distal to which the shaft is 2.7 mm wide. The shaft remains of subequal width over most of its length, tapering only very slightly and reaching a minimal width of 2.4 mm some 5 mm from the distal end. Distally, the bone expands slightly again, mainly due to a rounded mediopalmar flange, to a maximal distal width of 2.9 mm. The distal articular surface is not ginglymoidal, but convex transversely, with a palmar depression between the slightly more massive lateral side of the articular surface and the mediopalmar flange (Figure 10A,B).
 
-## Digits
+#### Digits
 
 The hand of the new specimen shows the typical theropodan phalangeal formula of 2-3-4 (Figure 8), with digit II being by far the longest of the three digits, followed by the subequal digit I (65% of the length of digit II) and digit III (64% of the length of digit II). Considering isolated phalanges, phalanx I-1 is the longest manual phalanx, being only very slightly longer (28.5 mm) than phalanx II-2 (28 mm).
 
@@ -168,13 +168,287 @@ The ungual of digit III (Figure 10F) is by far the smallest of the manual ungual
 
 ## Discussion
 
-## Taxonomic identification of SNSB-BSPG 2017 I 133
+### Taxonomic identification of SNSB-BSPG 2017 I 133
 
 Traditionally, all paravian specimens from the late Kimmeridgian - early Tithonian laminated limestones of southern Germany have been identified as Archaeopteryx, and this would thus be an obvious identification for the new specimen as well. However, as noted in the introduction, recent discoveries of basal paravian and even avialan theropods, also from the Jurassic, have made the distinction of Archaeopteryx from other basal avialans (and some small, more basal paravians, such as Microraptor) difficult, and there is no reason for an a priori assumption that all paravian specimens from this area should represent a single genus or even a single lineage (Foth and Rauhut, 2017). Unfortunately, neither the recent diagnosis of the genus Archaeopteryx by Rauhut et al. (2018) nor that by Kundrát et al. (2019) includes any forelimb characters, and due to the great similarity of the forelimbs of many non-ornithothoracan paravians, detailed comparisons are necessary to approach the taxonomic identity of SNSB-BSPG 2017 I 133. These comparisons are further complicated by the fact that the forelimb bones in almost all specimens of Archaeopteryx, and many other relevant taxa known from flattened specimens in matrix slabs, are exposed in dorsal view, while they are exposed in ventral view in the current specimen.
 
 Another problem in comparing the new specimen with specimens of Archaeopteryx is that it is considerably larger in size than any of the other specimens (Table 1, see Mayr et al., 2007 and Rauhut et al., 2018 for comparison). Thus, based on comparisons of the length of the ulna, the only long bone that can be measured with certainty, the new urvogel specimen is more than 220% of the size of the smallest known Archaeopteryx, the Eichstätt specimen, and still c. 111% the size of the largest specimen, the Solnhofen specimen. Compared with the only Archaeopteryx known from the Mörnsheim Formation, the ulna of SNSB-BSPG 2017 I 133 is almost 175% of this specimen. Thus, possible allometric and/or ontogenetic changes have also to be taken into account. This is not only true for proportions, as muscle insertion areas often also become more conspicuous with age and size in vertebrates (e.g. Hübner, 2010).
 
+**Table 1.**
+ Measurements of the right forelimb of Alcmonavis poeschli.All measurements in millimetres. Length of unguals is given as maximal length measured in a straight line from proximal articulation to tip.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>Length</th>
+      <th>Element</th>
+      <th>Length</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Humerus</td>
+      <td>90 (estimated)</td>
+      <td>Phalanx II-1</td>
+      <td>22.8</td>
+    </tr>
+    <tr>
+      <td>Ulna</td>
+      <td>82</td>
+      <td>Phalanx II-2</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>Metacarpal I</td>
+      <td>7.1 (estimated)</td>
+      <td>Ungual II</td>
+      <td>17.5</td>
+    </tr>
+    <tr>
+      <td>Metacarpal II</td>
+      <td>40.9</td>
+      <td>Phalanx III-1</td>
+      <td>8.8</td>
+    </tr>
+    <tr>
+      <td>Metacarpal III</td>
+      <td>36.8</td>
+      <td>Phalanx III-2</td>
+      <td>5.9</td>
+    </tr>
+    <tr>
+      <td>Phalanx I-1</td>
+      <td>28.5</td>
+      <td>Phalanx III-3</td>
+      <td>17.9</td>
+    </tr>
+    <tr>
+      <td>Ungual I</td>
+      <td>16</td>
+      <td>Ungual III</td>
+      <td>11</td>
+    </tr>
+  </tbody>
+</table>
+
 As far as proportions can be evaluated, the new specimen is generally closely comparable to specimens that can certainly be identified as Archaeopteryx, especially in the ratio of the (estimated) length of humerus versus ulna, ulna versus maximal length of metacarpus, and metacarpal II versus length of various phalanges. However, the significance of this similarity is unclear, as these proportions are also comparable in a wide variety of other basal paravians, including Anchiornis, Sapeornis, and, at least for several of these ratios, also Microraptor (Hwang et al., 2002; Pei et al., 2014). Interestingly, however, differences in proportions are found in a few ratios (see Table 2), most notably in the length of the manual unguals. When compared to the ulna length, manual unguals are relatively smaller than in specimens of Archaeopteryx. This is most marked in comparison with unguals I and III of the largest specimen of Archaeopteryx, the Solnhofen specimen: although, as noted above, the ulna of this specimen is about 10% shorter than that of SNSB-BSPG 2017 I 133, its unguals I and III are even slightly longer than in the new specimen.
+
+**Table 2.**
+ Comparison of skeletal proportions of specimens of Archaeopteryx and the new Mühlheim specimen (bold).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Specimen</th>
+      <th>PI-1/Ulna</th>
+      <th>Piii-1/PI-1</th>
+      <th>Pii-1/PI-1</th>
+      <th>Pii-2/PI-1</th>
+      <th>Digit I/Digit II</th>
+      <th>UI/Ulna</th>
+      <th>Uii/PII-1</th>
+      <th>PIII-2/Ulna</th>
+      <th>Piii-2/PIII-1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Eichstätt*</td>
+      <td>0.422</td>
+      <td>0.246</td>
+      <td>0.656</td>
+      <td>0.942</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0.060</td>
+      <td>0.458</td>
+    </tr>
+    <tr>
+      <td>Thermopolis</td>
+      <td>0.383</td>
+      <td>0.250</td>
+      <td>0.656</td>
+      <td>0.954</td>
+      <td>0.699</td>
+      <td>0.210</td>
+      <td>0.922</td>
+      <td>0.083</td>
+      <td>0.875</td>
+    </tr>
+    <tr>
+      <td>Munich</td>
+      <td>0.377</td>
+      <td>0.298</td>
+      <td>0.625</td>
+      <td>0.900</td>
+      <td>0.751</td>
+      <td>0.204</td>
+      <td>0.840</td>
+      <td>0.075</td>
+      <td>0.800</td>
+    </tr>
+    <tr>
+      <td>Berlin</td>
+      <td>0.383</td>
+      <td>NA</td>
+      <td>0.712</td>
+      <td>0.902</td>
+      <td>0.682</td>
+      <td>0.208</td>
+      <td>0.915</td>
+      <td>0.071</td>
+      <td>0.625</td>
+    </tr>
+    <tr>
+      <td>London</td>
+      <td>NA</td>
+      <td>0.282</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Solnhofen</td>
+      <td>0.378</td>
+      <td>0.312</td>
+      <td>0.679</td>
+      <td>0.964</td>
+      <td>0.713</td>
+      <td>0.226</td>
+      <td>0.879</td>
+      <td>0.082</td>
+      <td>0.772</td>
+    </tr>
+    <tr>
+      <td>Daiting</td>
+      <td>0.382</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Altmühl</td>
+      <td>0.373</td>
+      <td>0.275</td>
+      <td>0.798</td>
+      <td>0.841</td>
+      <td>0.705</td>
+      <td>0.227</td>
+      <td>0.806</td>
+      <td>0.085</td>
+      <td>0.828</td>
+    </tr>
+    <tr>
+      <td>Schamhaupten</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Maxberg</td>
+      <td>0.403</td>
+      <td>0.280</td>
+      <td>0.760</td>
+      <td>0.880</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0.081</td>
+      <td>0.714</td>
+    </tr>
+    <tr>
+      <td>Ottmann and Steil</td>
+      <td>0.363</td>
+      <td>0.280</td>
+      <td>0.733</td>
+      <td>0.933</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0.081</td>
+      <td>0.794</td>
+    </tr>
+    <tr>
+      <td>Mühlheim</td>
+      <td>0.348</td>
+      <td>0.309</td>
+      <td>0.800</td>
+      <td>0.982</td>
+      <td>0.652</td>
+      <td>0.195</td>
+      <td>0.768</td>
+      <td>0.072</td>
+      <td>0.670</td>
+    </tr>
+    <tr>
+      <td>T value*</td>
+      <td>6.323</td>
+      <td>−3.996</td>
+      <td>−4.684</td>
+      <td>−4.598</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>1.783</td>
+      <td>1.330</td>
+    </tr>
+    <tr>
+      <td>p value*</td>
+      <td>0.000</td>
+      <td>0.005</td>
+      <td>0.002</td>
+      <td>0.002</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0.118</td>
+      <td>0.225</td>
+    </tr>
+    <tr>
+      <td>T value</td>
+      <td>8.038</td>
+      <td>−3.642</td>
+      <td>−3.988</td>
+      <td>−4.373</td>
+      <td>5.068</td>
+      <td>4.170</td>
+      <td>4.722</td>
+      <td>4.146</td>
+      <td>3.324</td>
+    </tr>
+    <tr>
+      <td>p value</td>
+      <td>0.000</td>
+      <td>0.011</td>
+      <td>0.007</td>
+      <td>0.005</td>
+      <td>0.007</td>
+      <td>0.014</td>
+      <td>0.009</td>
+      <td>0.006</td>
+      <td>0.016</td>
+    </tr>
+  </tbody>
+</table>
 
 Based on a one-sample t test (see Table 2), the new specimen differs significantly from Archaeopteryx in the following ratios: manual phalanx I-1 vs. ulna, manual phalanx II-1 vs. manual phalanx I-1, manual phalanx II-2 vs. manual phalanx I-1, manual phalanx III-1 vs. manual phalanx I-1, manual ungual II vs. manual phalanx II-1, and manual digit I vs. manual digit II. When the juvenile Eichstätt specimen is excluded the ratios of manual phalanx III-2 vs. ulna, and manual phalanx III-2 vs. manual phalanx III-1 are also significant different from each other. A further significant difference from specimens of Archaeopteryx might be the length of metacarpal I, which seems to be considerably shorter in the new specimen, under the assumption that the position of the proximal end of the first manual phalanx indicates the length of this bone. However, as the distal end of metacarpal I is not preserved, this cannot be established with any certainty.
 
@@ -188,7 +462,7 @@ In the manus, the extreme robusticity of metacarpal II in comparison with the ot
 
 ![Figure 12.](https://cdn.elifesciences.org/articles/43789/elife-43789-fig12-v1.jpg)
 
-**Figure 12.:** Alcmonavis.(A) Right manus of Velociraptor mongoliensis (IGM 100/982) in plantar view. (B) Left manus of Microraptor gui (IVPP V 13352) in plantar view. (C) Right manus of the Thermopolis specimen of Archaeopteryx in planto-medial view. (D) Left manus of Confuciusornis sanctus (JME 2005/1) in palmar view. (E) Right manus of Alcmonavis poeschli in palmar view. Abbreviations as in Figure 2. Scale bars are 20 mm (A) and 10 mm (B–E).
+**Figure 12.:** (A) Right manus of Velociraptor mongoliensis (IGM 100/982) in plantar view. (B) Left manus of Microraptor gui (IVPP V 13352) in plantar view. (C) Right manus of the Thermopolis specimen of Archaeopteryx in planto-medial view. (D) Left manus of Confuciusornis sanctus (JME 2005/1) in palmar view. (E) Right manus of Alcmonavis poeschli in palmar view. Abbreviations as in Figure 2. Scale bars are 20 mm (A) and 10 mm (B–E).
 
 Another element in the manus that is remarkably robust is the first phalanx of the second digit. In non-avialan paravians and specimens that can securely be referred to Archaeopteryx (e.g. Figure 12A–C), this phalanx is only slightly more robust than phalanx II-2 or III-1 (e.g. 1.25 times the width of phalanx II-2 at the proximal shaft in the Berlin specimen), but it is more than 1.7 times the width of the widest part of phalanx II-2 and more than twice the width of phalanx II-1 in the Mühlheim specimen. This pronounced robusticity of phalanx II-1 in comparison with Archaeopteryx (and more basal paravians) probably represents an apomorphic character shared by SNSB-BSPG 2017 I 133 and more derived avialans, as a widened phalanx proximalis digiti majoris is a general character of avialans more derived than Archaeopteryx, and is present e.g. in basal forms, such as Jeholornis (Lefèvre et al., 2014), Sapeornis (Yuan, 2008; Provini et al., 2009), Chongmingia (Wang et al., 2016), and Confuciusornis (Figure 12D; Chiappe et al., 1999). The phalanx in the Mühlheim specimen is plesiomorhic in comparison to most more derived avialans (i.e., Ornithothoraces) in that it is not dorsoventrally flattened, but seems to be rather robust also in this plane. In this respect it is similar to the robust phalanx in Jeholornis (Lefèvre et al., 2014), Sapeornis (Yuan, 2008; Provini et al., 2009) and Confuciusornis. In the latter, this element is dorsoventrally robust at least along its anterior edge, whereas the posterior edge is somewhat flattened (Figure 12D; SNSB-BSPG 1999 I 15, JME 1997/1, 2005/1).
 
@@ -196,11 +470,11 @@ Apart from these morphometric differences, there are also several qualitative ch
 
 ![Figure 13.](https://cdn.elifesciences.org/articles/43789/elife-43789-fig13-v1.jpg)
 
-**Figure 13.:** Archaeopteryx in anteromedial view, showing the lack of a pronounced facet for the pectoralis muscle in this taxon.(A) London specimen. (B) Thermopolis specimen.
+**Figure 13.:** (A) London specimen. (B) Thermopolis specimen.
 
 ![Figure 14.](https://cdn.elifesciences.org/articles/43789/elife-43789-fig14-v1.jpg)
 
-**Figure 14.:** Sapeornis (JZT-DB 0047), showing the enlarged and medially inclined facet for the insertion of m.pectoralis (arrows).
+**Figure 14.:** pectoralis (arrows).
 
 Another striking feature of SNSB-BSPG 2017 I 133 is the development of the tuberculum bicipitale radii as a raised crest on the proximal radius. However, due to preservation the exact development of this tuberculum in specimens of Archaeopteryx is difficult to establish. Several specimens, including the Munich, Altmühltal and Ottmann and Steil ("chicken wing“) specimens show that this tuberculum is present in this taxon. Although a direct comparison of this structure is difficult due to preservation, these specimens seem to show a rounded to triangular expansion that is different from the crest-like, more rectangular tubercle in the new specimen. In those avialan specimens from the Jehol Group where this characters can be evaluated it varies between a triangular and crest-like state (Chiappe et al., 1999; Provini et al., 2009; Zhou et al., 2013).
 
@@ -212,7 +486,7 @@ The comparison with the anchiornithid Ostromia (Foth and Rauhut, 2017) is more d
 
 In summary, despite the overall similarity and very similar proportions, the new specimen shows numerous small differences from Archaeopteryx, precluding a referral to this taxon. Several characters, including the markedly concave proximal articular surface of the ulna, the very massive phalanx II-1 and the marked, anteromedially inclined facet for the attachment of the m. pectoralis in the humerus, are shared with more derived avialans, and indicate that the Mühlheim specimen represents a third, phylogenetically slightly more crownward taxon of avialans from the Tithonian limestones of southern Germany. From the description and comparisons of the specimen it is furthermore clear that SNSB-BSPG 2017 I 133 also cannot be referred to Ostromia or to any other known theropod taxon. We thus opt to describe this rather incomplete specimen as a new genus and species of 'Urvogel'.
 
-## Systematic palaeontology
+### Systematic palaeontology
 
 Theropoda Marsh, 1881
 
@@ -224,31 +498,43 @@ Alcmonavis poeschli gen. et sp. nov.
 
 urn:lsid:zoobank.org:act:668F42B6-5BDC-4ADF-B271-36C6A43C7DB3
 
-## Etymology
+### Etymology
 
 From Alcmona, the old Celtic name of the Altmühl River, which flows through the principal region in which the famous ‘Solnhofen limestones’ are exposed, and avis, from the Greek ‘aves’ for bird. The species name honours Roland Pöschl, who leads the excavations at the Schaudiberg and found the specimen.
 
-## Holotype
+### Holotype
 
 SNSB-BSPG 2017 I 133, an almost complete, partly disarticulated skeleton of the right wing (Figure 2, see Tab. 1 for measurements of SNSB-BSPG 2017 I 133).
 
-## Locality and horizon
+### Locality and horizon
 
 Old Schöpfel Quarry at the Schaudiberg, Mühlheim, close to Mörnsheim, Bavaria. Mörnsheim Formation, moernsheimensis ammonite horizon of the Hybonotum zone of the Early Tithonian. The specimen comes from a thin layer of marly laminated limestone some 6 m above the contact with the underlying Altmühltal Formation.
 
-## Differential diagnosis
+### Differential diagnosis
 
 Alcmonavis poeschli differs from all other theropods (including birds) in the following combination of characters: humerus with large deltopectoral crest, with a maximal expansion that exceeds the width of the humeral shaft; proximal part of humerus strongly angled at approximately 38° in respect to distal shaft; ulna with well-defined, single, oval, concave proximal cotyla and small lateral tubercle; distal end of ulna slightly asymmetrically expanded; large, crest-like biceps tubercle on the proximal radius; longitudinal groove along the medial side of the radial shaft; metacarpal II considerably more robust than metacarpal I and III; phalanx I-1 with longitudinal groove; phalanx II-1 very robust, but with rounded, rather than flattened cross-section; phalanx II-1 slightly twisted; manual unguals with strongly developed and palmarly transversely expanded flexor tubercles.
 
-## Phylogenetic position of Alcmonavis
+### Phylogenetic position of Alcmonavis
 
 The phylogenetic analysis (see Materials and methods) resulted in more than 99,999 trees with a length of 2690 steps. The strict consensus (Figure 15—figure supplement 1) is rather well resolved and includes monophyletic Maniraptora, Paraves and Avialae with equivalent taxonomic contents to other recent analyses. Areas with lack of resolution include a polytomy between therizinosauroids, oviraptorosaurs and paravians, two larger polytomies at the base of Deinonychosauria, and a polytomy at the base of Ornithothoraces, as well as minor polytomies in the higher nodes or Alvarezsauridae, Oviraptorosauria, and Dromaeosauridae. Reduced consensus methods recovered a number of problematic taxa (Albinykus, Byronosaurus, Balaur, Citipati, Hesperonychus, Jinfengopteryx, Pyroraptor, Xixiasaurus, Yixianosaurus, and a Vorona-Liaoningornis clade), the a postiori pruning of which further increased resolution. In contrast to other recent iterations of this matrix (Foth et al., 2014; Foth and Rauhut, 2017), oviraptorosaurs and therizinosaurs were found in a monophyletic clade in the reduced consensus tree (Figure 15, Figure 15—figure supplement 1), as in several earlier phylogenetic analyses (e.g. Makovicky and Sues, 1998; Holtz, 2000; Rauhut, 2003; Turner et al., 2011), and the analysis recovered a monophyletic Deinonychosauria, including Troodontidae and Dromaeosauridae as sister groups, as in most analyses of coelurosaur interrelationships. Epidexipteryx, often considered to be a basal paravian (e.g. Turner et al., 2012; Godefroit et al., 2013a; Godefroit et al., 2013b; Xu et al., 2015) or even avialan theropod (e.g. Xu et al., 2011; Foth et al., 2014) is here recovered as a basal oviraptorosaur, as in Agnolín and Novas, 2013. As originally proposed by Csiki et al., 2010, Turner et al., 2012 and Brusatte et al., 2013, Balaur is placed within Dromaeosauridae in the current analyses and not at the base of Avialae (see Godefroit et al., 2013a; Foth et al., 2014; Cau, 2018; Foth and Rauhut, 2017). The controversial Late Jurassic paravians Anchiornis, Xiaotingia, Eosinopteryx, Pedopenna, and Ostromia were found as basal avialans (as in Godefroit et al., 2013b; Foth et al., 2014; Foth and Rauhut, 2017) but a monophyletic Anchiornithidae (as defined by Xu et al., 2016; see also Foth and Rauhut, 2017) is restricted to the genera Eosinopteryx, Ostromia and Anchiornis, whereas Pedopenna and Xiaotingia form sister taxa just basal to Archaeopteryx. The new taxon, Alcmonavis, was found crownwards to Archaeopteryx, thus representing the most derived avialan known from the Jurassic so far. The phylogenetic position of Alcmonavis is supported by four synapomorphic characters: char. 217, the distal humeral condyles are positioned on anterior surface (1); char. 562, the attachment for m. pectoralis on the deltopectoral crest of the humerus is marked as an elongate oval, anteromedially inclined facet on the mediodistal surface of the deltopectoral crest (1); char. 563, the proximal articular surface of the ulna is developed as an oval concavity with slightly raised rims (1); and char. 565, manual phalanx II-1 is strongly broadened, more than 1.5 times the width of phalanx II-2 and phalanges of digit III (1).
+
+![Figure 15.](https://cdn.elifesciences.org/articles/43789/elife-43789-fig15-v1.jpg)
+
+**Figure 15.:** Time-calibrated, simplified reduced consensus tree resulting from an analysis of 136 taxa scored for 565 characters under equally-weighted parsimony (see text and supplementary material for details). Nodes with circuit numbers: 1, Maniraptora; 2, Pennaraptora; 3, Paraves; 4, Deinonychosauria; 5, Avialae; 6, Anchiornithidae; 7, Pygostylia; 8, Ornithothoraces. Bremer supports are shown for the clade Avialae.
+
+![Figure 15—figure supplement 1.](https://cdn.elifesciences.org/articles/43789/elife-43789-fig15-figsupp1-v1.jpg)
+
+![Figure 15—figure supplement 2.](https://cdn.elifesciences.org/articles/43789/elife-43789-fig15-figsupp2-v1.jpg)
+
+**Figure 15—figure supplement 2.:** Named nodes: 1, Coelurosauria; 2, Tyrannosauroidea; 3, Compsognathidae; 4, Maniraptoriformes; 5, Ornithomimosauria; 6, Maniraptora; 7, Alvarezsauridae; 8, Pennaraptora; 9, Therizinosauroidea; 10, Oviraptorosauria; 11, Oviraptoridae; 12, Paraves; 13, Deinonychosauria; 14, Troodontidae; 15, Dromaeosauridae; 16, Unenlagiinae; 17, Microraptorinae; 18, Velociraptorinae; 19, Dromaeosaurinae; 20, Avialae; 21; Anchiornithidae; 22, Pygostylia; 23, Ornithothoraces; 24, Enantiornithes; 25, Ornithuromorpha; 26, Ornithurae; 27, Neornithes.
+
+![Figure 15—figure supplement 3.](https://cdn.elifesciences.org/articles/43789/elife-43789-fig15-figsupp3-v1.jpg)
 
 Clade support is low for most clades, as is expected in a matrix with numerous very incomplete taxa and an average amount of missing codings of c. 60%. However, whereas most clades have Bremer support values of 1, the phylogenetic position of Alcmonavis is supported by a Bremer value of 2 (Figure 15, 15—figure supplement 1). In order to evaluate support for some of the results relevant to the question of bird origins, we ran several constrained analyses. Both the monophyly of Anchiornithidae as proposed by Foth and Rauhut, 2017 and a position of troodontids closer to Avialae than to dromaeosaurids only requires one additional step, so neither of these possibilities can currently be excluded. Placing anchiornithids in Troodontidae, as argued by Hu et al., 2009 and subsequent authors, requires at least 10 additional steps, and placing both anchiornithids and Archaeopteryx in Deinonychosauria, as proposed by Xu et al., 2011 leads to trees that are 21 steps longer than the most parsimonious trees, making this arrangement rather unlikely. Concerning the phylogenetic position of Alcmonavis, both a placement below Archaeopteryx, and as sister taxon to the latter require four additional steps. Given that only 79 of 565 characters (less than 14%) can be coded for the new taxon, this difference indicates that the position retrieved for Alcmonavis is rather robust.
 
 The implied weight analysis retrieved 405 equally parsimonious trees with a score of 114.762. The general results of this weighted analysis are similar to those obtained from the analysis under equal weights (Figure 15—figure supplement 3), with one notable exception: therizinosaurs are here recovered as the most basal clade of maniraptorans, followed by alvarezsaurids and then oviraptorosaurs, as in Senter, 2007. Most importantly, however, the weighted analysis supports the relationships between anchiornithids, Archaeopteryx, and Alcmonavis.
 
-## Implications for the early evolution of the avian wing
+### Implications for the early evolution of the avian wing
 
 Alcmonavis shows several notable characters that might help to elucidate the early steps of the osteological evolution of the bird wing. Current discussions of the evolution of flight capabilities have focused on feather evolution and arrangement (e.g. Clarke et al., 2006; Chiappe et al., 2014; Foth et al., 2014; O'Connor et al., 2013; O'Connor et al., 2016; O’Connor and Chang, 2015; Sullivan et al., 2017; Saitta et al., 2018), whereas the flight musculature and its osteological correlates has received comparatively little attention recently, with the exception of the study of the shoulder girdle and supracoracoideus muscle of Mesozoic birds by Mayr, 2017.
 
@@ -264,7 +550,7 @@ Another marked muscle attachment in Alcmonavis is the tuberculum bicipitale radi
 
 ![Figure 17.](https://cdn.elifesciences.org/articles/43789/elife-43789-fig17-v1.jpg)
 
-**Figure 17.:** tuberculum bicipitale radii in basal avialan theropods.(A) Right elbow joint of Archaeopteryx (Munich specimen). (B) Right elbow joint of the Ottmann and Steil specimen (probably Archaeopteryx). (C) Left elbow joint of Confuciusornis sanctus (SNSB-BSPG 1999 I 15). Abbreviations: hu, humerus; r, radius; tbr, tuberculum bicipitale radii; ul, ulna.
+**Figure 17.:** (A) Right elbow joint of Archaeopteryx (Munich specimen). (B) Right elbow joint of the Ottmann and Steil specimen (probably Archaeopteryx). (C) Left elbow joint of Confuciusornis sanctus (SNSB-BSPG 1999 I 15). Abbreviations: hu, humerus; r, radius; tbr, tuberculum bicipitale radii; ul, ulna.
 
 Both the presence of a marked attachment area for the pectoralis muscle and the well-developed tubercle for the insertion of m. biceps brachii might thus have implications for the early evolution of flight. Whereas the role of the pectoralis muscle as the main downstroke muscle has been rather well studied, the function of other forelimb muscles, such as the m. biceps brachii, are less well understood (Biewener, 2011; Tobalske, 2016). As for the latter muscle, its primary function is usually considered to be the flexion of the forearm and the stabilization of the elbow joint, especially during the downstroke (Dial, 1992; Biewener, 2011; Robertson and Biewener, 2012). However, a recent study of muscle activity during flight in pigeons (Robertson and Biewener, 2012) also shows that this muscle has its highest activity patterns during take-off, indicating that it might be important for flapping take-off in modern birds in general.
 
@@ -272,19 +558,19 @@ The development of a pronounced tubercle for the insertion of the m. biceps brac
 
 ## Materials and methods
 
-## Materials
+### Materials
 
 The primary specimen described here, SNSB-BSPG 2017 I 133, was discovered in the old Schöpfel Quarry at the Schaudiberg, near Mühlheim, by R. Pöschl in 2017. The specimen was mechanically prepared by U. Leonhardt and subsequently purchased by the State of Bavaria, where it will be permanently stored at the Bayerische Staatssammlung für Paläontologie und Geologie in Munich. Numerous specimens of paravian theropods were studied for comparison, including all other urvogel specimens from the Solnhofen Archipelago (the currently missing Maxberg specimen could only be studied on the basis of a high quality cast at the BSPG) and several specimens of anchiornithids and basal avialans from China.
 
-## Nomenclatural acts
+### Nomenclatural acts
 
 The electronic edition of this article conforms to the requirements of the amended International Code of Zoological Nomenclature, and hence the new names contained herein are available under that Code from the electronic edition of this article. This published work and the nomenclatural acts it contains have been registered in ZooBank, the online registration system for the ICZN. The ZooBank LSIDs (Life Science Identifiers) can be resolved and the associated information viewed through any standard web browser by appending the LSID to the prefix ‘http://zoobank.org/”. The LSID for this publication is: urn:lsid:zoobank.org:act:668F42B6-5BDC-4ADF-B271-36C6A43C7DB3. The electronic edition of this work was published in a journal with an ISSN.
 
-## Anatomical nomenclature
+### Anatomical nomenclature
 
 In accordance with Wilson, 2006, we generally use the anatomical terms and orientation of bones as commonly used in the palaeontological literature on dinosaurs, rather than rigorously applying the skeletal terms proposed in the Nomina Anatomica Avium (Baumel and Witmer, 1993). However, the latter are used in respect to anatomical features that are typical for birds, but not present in non-avialan dinosaurs. Thus, we prefer the terms 'anterior' and 'posterior' over 'cranial' and 'caudal' (as the latter might be confused with anatomical regions of the skeleton), and refer to the different sides of long bones according to their orientation in the resting pose in a theropod dinosaur.
 
-## UV imaging of Alcmonavis poeschli
+### UV imaging of Alcmonavis poeschli
 
 Many fossils from the Upper Jurassic plattenkalks of southern Germany are fluorescent under artificial ultraviolet light (UV) which allows a more precise investigation of morphological details of skeletal remains as well as of soft parts. Since each fossil fluoresces slightly differently, a variety of filters and high performance UV-A lamps is required for investigation and imaging (Tischlinger and Arratia, 2013; Tischlinger, 2015). For our investigation of the 13th urvogel we used different UV-lamps with wavelengths of 312 nanometers (UV-B) and 365–366 nm (UV-A).
 
@@ -296,7 +582,7 @@ During the UV pictorial documentation of the 13th urvogel best results were obta
 
 The visibility of details under UV was enhanced considerably by an established filtering technique, crucial for the photographic documentation. The application of different filters allowed a selective visualisation of peculiar fine structures. Color compensation filters (yellow, cyan and magenta of different types and densities) were adjusted in front of the camera lens or under the microscope objective lens (if pictures were taken through the microscope). The optimum number and specification of the compensation filters was tested in a series of experiments. The predominant color of luminescence was of minor importance. In fact, the crucial decision on the amount of filtering was the optimal visibility of details and their differentiation from surrounding structures and the matrix (Tischlinger and Arratia, 2013).
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 In order to test the phylogenetic position of the new taxon, we included it in a modified version of the phylogenetic data matrix used in Foth and Rauhut, 2017. We furthermore checked codings for several taxa, added the recently described dromaeosaurid Zhenyuanlong (Lü and Brusatte, 2015), the troodontid Jianianhuanlong (Xu et al., 2017) and the avialan Jinguofortis (Wang et al., 2018) and four new characters. These characters are:
 
@@ -316,6 +602,6 @@ The complete matrix had 136 taxa scored for 565 characters (see supplementary fi
 
 In order to further test the position of the new taxon, we ran a second analysis using implied weights (K = 12; Goloboff et al., 2018). This analysis was also carried out using TNT with 1000 replicates of Wagner trees followed by TBR branch swapping.
 
-## Statistics
+### Statistics
 
 In order to statistically evaluate the significance of differences in proportions, we performed one sample parametric t-test (all samples show normal distribution) for the ratios of metacarpal III/metacarpal II, manual phalanx I-1/ulna, manual ungual I/ulna, manual phalanx II-1/manual phalanx I-1, manual phalanx II-1/manual ungual II, manual phalanx II-2/manual phalanx I-1, manual phalanx III-1/manual phalanx I-1, manual phalanx III-2/ulna, manual phalanx III-2/manual phalanx III-1, manual phalanx III-3/manual phalanx III-2, and manual digit I/manual digit II, testing the Mühlheim specimen against those specimens that can be classified as Archaeopteryx based on the diagnosis provided by Rauhut et al., 2018. Ratios including metacarpal I were not included due to uncertainties in the length of the bone. The one sample t-test compares the value in question with the range of the comparative statistical population of Archaeopteryx to evaluate the probability that this value represents the same population. The test was performed with help of the software PAST 3.21 (Hammer et al., 2001).

@@ -21,19 +21,19 @@
 
 ### Affiliations
 
-1. https://ror.org/0064kty71 State Key Laboratory of Biocontrol, School of Life Sciences, Sun Yat-sen University Guangzhou China
-2. https://ror.org/034t30j35 Center for Excellence in Animal Evolution and Genetics, The Chinese Academy of Sciences Kunming China
-3. https://ror.org/00zat6v61 GMU-GIBH Joint School of Life Sciences, Guangzhou Medical University Guangzhou China
-4. https://ror.org/034t30j35 CAS Key Laboratory of Quantitative Engineering Biology, Shenzhen Institute of Synthetic Biology, Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences Shenzhen China
-5. https://ror.org/02xe5ns62 Cancer Center, Clifford Hospital, Jinan University Guangzhou China
-6. https://ror.org/01vjw4z39 Cancer Research Institute, School of Basic Medical Sciences, Southern Medical University Guangzhou China
-7. https://ror.org/024mw5h28 Department of Ecology and Evolution, University of Chicago Chicago United States
+1. State Key Laboratory of Biocontrol, School of Life Sciences, Sun Yat-sen University Guangzhou China ([ROR:0064kty71](https://ror.org/0064kty71))
+2. Center for Excellence in Animal Evolution and Genetics, The Chinese Academy of Sciences Kunming China ([ROR:034t30j35](https://ror.org/034t30j35))
+3. GMU-GIBH Joint School of Life Sciences, Guangzhou Medical University Guangzhou China ([ROR:00zat6v61](https://ror.org/00zat6v61))
+4. CAS Key Laboratory of Quantitative Engineering Biology, Shenzhen Institute of Synthetic Biology, Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences Shenzhen China ([ROR:034t30j35](https://ror.org/034t30j35))
+5. Cancer Center, Clifford Hospital, Jinan University Guangzhou China ([ROR:02xe5ns62](https://ror.org/02xe5ns62))
+6. Cancer Research Institute, School of Basic Medical Sciences, Southern Medical University Guangzhou China ([ROR:01vjw4z39](https://ror.org/01vjw4z39))
+7. Department of Ecology and Evolution, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
 
 † Corresponding author
 
 ## Abstract
 
-A central goal of cancer genomics is to identify, in each patient, all the cancer-driving mutations. Among them, point mutations are referred to as cancer-driving nucleotides (CDNs), which recur in cancers. The companion study shows that the probability of i recurrent hits in n patients would decrease exponentially with i ; hence, any mutation with i ≥ 3 hits in The Cancer Genome Atlas (TCGA) database is a high-probability CDN. This study characterizes the 50–150 CDNs identifiable for each cancer type of TCGA (while anticipating 10 times more undiscovered ones) as follows: (i) CDNs tend to code for amino acids of divergent chemical properties. (ii) At the genic level, far more CDNs (more than fivefold) fall on noncanonical than canonical cancer-driving genes (CDGs). Most undiscovered CDNs are expected to be on unknown CDGs. (iii) CDNs tend to be more widely shared among cancer types than canonical CDGs, mainly because of the higher resolution at the nucleotide than the whole-gene level. (iv) Most important, among the 50–100 coding region mutations carried by a cancer patient, 5–8 CDNs are expected but only 0–2 CDNs have been identified at present. This low level of identification has hampered functional test and gene-targeted therapy. We show that, by expanding the sample size to 10 5 , most CDNs can be identified. Full CDN identification will then facilitate the design of patient-specific targeting against multiple CDN-harboring genes.
+A central goal of cancer genomics is to identify, in each patient, all the cancer-driving mutations. Among them, point mutations are referred to as cancer-driving nucleotides (CDNs), which recur in cancers. The companion study shows that the probability of i recurrent hits in n patients would decrease exponentially with i; hence, any mutation with i ≥ 3 hits in The Cancer Genome Atlas (TCGA) database is a high-probability CDN. This study characterizes the 50–150 CDNs identifiable for each cancer type of TCGA (while anticipating 10 times more undiscovered ones) as follows: (i) CDNs tend to code for amino acids of divergent chemical properties. (ii) At the genic level, far more CDNs (more than fivefold) fall on noncanonical than canonical cancer-driving genes (CDGs). Most undiscovered CDNs are expected to be on unknown CDGs. (iii) CDNs tend to be more widely shared among cancer types than canonical CDGs, mainly because of the higher resolution at the nucleotide than the whole-gene level. (iv) Most important, among the 50–100 coding region mutations carried by a cancer patient, 5–8 CDNs are expected but only 0–2 CDNs have been identified at present. This low level of identification has hampered functional test and gene-targeted therapy. We show that, by expanding the sample size to 105, most CDNs can be identified. Full CDN identification will then facilitate the design of patient-specific targeting against multiple CDN-harboring genes.
 
 ## Introduction
 
@@ -61,33 +61,860 @@ In molecular evolution, a gene under positive selection is recognized by its ele
 
 In the whole-gene analysis, Figure 1C–E are identical, each with A:S = 10:1, where A and S denote nonsynonymous and synonymous mutations, respectively. However, the presence of a four-hit site in Figure 1E is far less likely to be neutral than Figure 1C and D. Although the ratio in Figure 1F, A:S = 4:1, is statistically indistinguishable from the neutral ratio of about 2.5:1, Figure 1F in fact has much more power to reject the neutral ratio than Figure 1C and D. After all, the probability that multiple hits are at the same site in a big genome is obviously very small.
 
-## The analyses of CDNs across the whole genome
+### The analyses of CDNs across the whole genome
 
 For the entire coding regions in the cancer genome data, we define Ai (or Si) as the number of nonsynonymous (or synonymous) sites that harbor a mutation with i recurrences. Table 1 presents the distribution of Ai and Si across the 12 cancer types with n > 300 (Weinstein et al., 2013).
 
-For neutral mutations, we define i* as the threshold above which the expected numbers of Ai would be <1, that is, E[Ai≥i∗]<1, The corollary is that all Ai≥i* sites are advantageous CDNs. (Since Si is ~Ai/2.3, the same i* would apply to Si as well: E[Si≥i∗]<1.) As i* is a function of the number of patients (n), it is shown mathematically in the companion study (Zhang et al., 2024) that i* = 3 for n < 1000. Interestingly, while the EAi≥3 is < 1, the expected EAi≥4 is ≪ 1, in the order of 0.001. Hence, i* = 4 may be considered unnecessarily stringent.
+**Table 1.**
+ Mutation recurrences (Ais and Sis) in 12 cancer types.
 
-We should note that this study is constrained by n < 1000 in TCGA databases. (Databases with larger ns are also used where the actual ns are often uncertain.) At i* = 3, we could detect only a fraction (<10%; see below) of CDNs. Many more tumorigenic mutations may be found in the i = 1 or 2 classes although not every one of them is a CDN. Since these two classes of mutations are far more numerous, they should account for the bulk of CDNs to be discovered. Indeed, Table 1 shows 76 Ai≥3 CDN mutations per cancer type but 681 A2 and 56,648 A1 mutations in the lower recurrence groups. If n reaches 105–6, most of the undiscovered CDNs in the A1 and A2 classes should be identified (Zhang et al., 2024).
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Lung</th>
+      <th>Breast</th>
+      <th>Central nervous system</th>
+      <th>Kidney</th>
+      <th>Upper aerodigestive tract</th>
+      <th>Colon</th>
+      <th>Endometrium</th>
+      <th>Prostate</th>
+      <th>Stomach</th>
+      <th>Urinary tract</th>
+      <th>Ovary</th>
+      <th>Liver</th>
+      <th>Average</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Patients #</td>
+      <td>1035</td>
+      <td>963</td>
+      <td>873</td>
+      <td>711</td>
+      <td>688</td>
+      <td>571</td>
+      <td>465</td>
+      <td>465</td>
+      <td>423</td>
+      <td>404</td>
+      <td>404</td>
+      <td>367</td>
+      <td>614</td>
+    </tr>
+    <tr>
+      <td>*A0</td>
+      <td>22,540,623</td>
+      <td>21,683,136</td>
+      <td>20,783,835</td>
+      <td>22,247,653</td>
+      <td>21,580,444</td>
+      <td>20,601,026</td>
+      <td>20,766,001</td>
+      <td>21,300,810</td>
+      <td>20,892,755</td>
+      <td>21628918</td>
+      <td>22278124</td>
+      <td>22618059</td>
+      <td>21576782</td>
+    </tr>
+    <tr>
+      <td>*S0</td>
+      <td>78,042,81</td>
+      <td>9,388,418</td>
+      <td>10,298,911</td>
+      <td>87,814,83</td>
+      <td>93,332,83</td>
+      <td>10,428,913</td>
+      <td>10,375,596</td>
+      <td>97,543,31</td>
+      <td>10,243,634</td>
+      <td>9426888</td>
+      <td>8746002</td>
+      <td>8255268</td>
+      <td>9403084</td>
+    </tr>
+    <tr>
+      <td>A/S_0</td>
+      <td>2.89</td>
+      <td>2.31</td>
+      <td>2.02</td>
+      <td>2.53</td>
+      <td>2.31</td>
+      <td>1.98</td>
+      <td>2.00</td>
+      <td>2.18</td>
+      <td>2.04</td>
+      <td>2.29</td>
+      <td>2.55</td>
+      <td>2.74</td>
+      <td>2.29</td>
+    </tr>
+    <tr>
+      <td>A1</td>
+      <td>195958</td>
+      <td>44696</td>
+      <td>25122</td>
+      <td>25669</td>
+      <td>66924</td>
+      <td>94634</td>
+      <td>78870</td>
+      <td>9583</td>
+      <td>78834</td>
+      <td>66153</td>
+      <td>21138</td>
+      <td>25731</td>
+      <td>61109</td>
+    </tr>
+    <tr>
+      <td>S1</td>
+      <td>69393</td>
+      <td>16732</td>
+      <td>10182</td>
+      <td>9317</td>
+      <td>26151</td>
+      <td>38606</td>
+      <td>31982</td>
+      <td>3613</td>
+      <td>32538</td>
+      <td>26546</td>
+      <td>7227</td>
+      <td>9398</td>
+      <td>23474</td>
+    </tr>
+    <tr>
+      <td>A/S_1</td>
+      <td>2.82</td>
+      <td>2.67</td>
+      <td>2.47</td>
+      <td>2.76</td>
+      <td>2.56</td>
+      <td>2.45</td>
+      <td>2.47</td>
+      <td>2.65</td>
+      <td>2.42</td>
+      <td>2.49</td>
+      <td>2.92</td>
+      <td>2.74</td>
+      <td>2.60</td>
+    </tr>
+    <tr>
+      <td>A2</td>
+      <td>2946</td>
+      <td>233</td>
+      <td>287</td>
+      <td>56</td>
+      <td>489</td>
+      <td>1662</td>
+      <td>1052</td>
+      <td>29</td>
+      <td>1176</td>
+      <td>816</td>
+      <td>51</td>
+      <td>46</td>
+      <td>737</td>
+    </tr>
+    <tr>
+      <td>S2</td>
+      <td>969</td>
+      <td>62</td>
+      <td>75</td>
+      <td>11</td>
+      <td>159</td>
+      <td>736</td>
+      <td>386</td>
+      <td>9</td>
+      <td>489</td>
+      <td>308</td>
+      <td>9</td>
+      <td>12</td>
+      <td>249</td>
+    </tr>
+    <tr>
+      <td>A/S_2</td>
+      <td>3.04</td>
+      <td>3.76</td>
+      <td>3.83</td>
+      <td>5.09</td>
+      <td>3.08</td>
+      <td>2.26</td>
+      <td>2.73</td>
+      <td>3.22</td>
+      <td>2.40</td>
+      <td>2.65</td>
+      <td>5.67</td>
+      <td>3.83</td>
+      <td>2.74</td>
+    </tr>
+    <tr>
+      <td>A3</td>
+      <td>99</td>
+      <td>18</td>
+      <td>42</td>
+      <td>14</td>
+      <td>28</td>
+      <td>91</td>
+      <td>52</td>
+      <td>6</td>
+      <td>79</td>
+      <td>60</td>
+      <td>9</td>
+      <td>9</td>
+      <td>42.3</td>
+    </tr>
+    <tr>
+      <td>S3</td>
+      <td>21</td>
+      <td>2</td>
+      <td>6</td>
+      <td>1</td>
+      <td>5</td>
+      <td>28</td>
+      <td>11</td>
+      <td>0</td>
+      <td>14</td>
+      <td>9</td>
+      <td>0</td>
+      <td>0</td>
+      <td>8.08</td>
+    </tr>
+    <tr>
+      <td>A/S_3</td>
+      <td>4.71</td>
+      <td>9</td>
+      <td>7</td>
+      <td>14</td>
+      <td>5.6</td>
+      <td>3.25</td>
+      <td>4.73</td>
+      <td>6:0</td>
+      <td>5.64</td>
+      <td>6.67</td>
+      <td>9:0</td>
+      <td>9:0</td>
+      <td>5.23</td>
+    </tr>
+    <tr>
+      <td>†Ai ≥3</td>
+      <td>178</td>
+      <td>51</td>
+      <td>84</td>
+      <td>18</td>
+      <td>77</td>
+      <td>148</td>
+      <td>142</td>
+      <td>14</td>
+      <td>124</td>
+      <td>100</td>
+      <td>26</td>
+      <td>23</td>
+      <td>82.1</td>
+    </tr>
+    <tr>
+      <td>†Ai ≥4</td>
+      <td>79</td>
+      <td>33</td>
+      <td>42</td>
+      <td>4</td>
+      <td>49</td>
+      <td>57</td>
+      <td>90</td>
+      <td>8</td>
+      <td>45</td>
+      <td>40</td>
+      <td>17</td>
+      <td>14</td>
+      <td>39.8</td>
+    </tr>
+    <tr>
+      <td>A4</td>
+      <td>23</td>
+      <td>10</td>
+      <td>8</td>
+      <td>2</td>
+      <td>14</td>
+      <td>23</td>
+      <td>21</td>
+      <td>3</td>
+      <td>23</td>
+      <td>11</td>
+      <td>4</td>
+      <td>3</td>
+      <td>11.1</td>
+    </tr>
+    <tr>
+      <td>A5</td>
+      <td>16</td>
+      <td>6</td>
+      <td>10</td>
+      <td>2</td>
+      <td>10</td>
+      <td>6</td>
+      <td>20</td>
+      <td>2</td>
+      <td>9</td>
+      <td>9</td>
+      <td>3</td>
+      <td>5</td>
+      <td>8.2</td>
+    </tr>
+    <tr>
+      <td>A6-9</td>
+      <td>27</td>
+      <td>10</td>
+      <td>10</td>
+      <td>0</td>
+      <td>13</td>
+      <td>9</td>
+      <td>32</td>
+      <td>2</td>
+      <td>7</td>
+      <td>12</td>
+      <td>6</td>
+      <td>2</td>
+      <td>10.8</td>
+    </tr>
+    <tr>
+      <td>A[10, 20)</td>
+      <td>7</td>
+      <td>3</td>
+      <td>10</td>
+      <td>0</td>
+      <td>9</td>
+      <td>11</td>
+      <td>9</td>
+      <td>1</td>
+      <td>6</td>
+      <td>5</td>
+      <td>4</td>
+      <td>4</td>
+      <td>5.75</td>
+    </tr>
+    <tr>
+      <td>A≥20</td>
+      <td>6</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0</td>
+      <td>3</td>
+      <td>8</td>
+      <td>8</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>‡Total</td>
+      <td>202828</td>
+      <td>45669</td>
+      <td>26596</td>
+      <td>25841</td>
+      <td>68387</td>
+      <td>98931</td>
+      <td>81898</td>
+      <td>9706</td>
+      <td>81678</td>
+      <td>68297</td>
+      <td>21387</td>
+      <td>25944</td>
+      <td>63097</td>
+    </tr>
+    <tr>
+      <td>SiteNbr</td>
+      <td>22739705</td>
+      <td>21728116</td>
+      <td>20809328</td>
+      <td>22273396</td>
+      <td>21647934</td>
+      <td>20697470</td>
+      <td>20846065</td>
+      <td>21310436</td>
+      <td>20972889</td>
+      <td>21695987</td>
+      <td>22299339</td>
+      <td>22643859</td>
+      <td>21638710</td>
+    </tr>
+    <tr>
+      <td>nE(u)</td>
+      <td>9.07E-03</td>
+      <td>1.79E-03</td>
+      <td>1.00E-03</td>
+      <td>1.06E-03</td>
+      <td>2.83E-03</td>
+      <td>3.84E-03</td>
+      <td>3.15E-03</td>
+      <td>3.72E-04</td>
+      <td>3.27E-03</td>
+      <td>2.88E-03</td>
+      <td>8.28E-04</td>
+      <td>1.14E-03</td>
+      <td>2.6E-03</td>
+    </tr>
+  </tbody>
+</table>
+
+_*See ‘Methods’ for the calculations of A0 and S0.†Ai and Si are as defined in the text.‡‘Total’ represents the total number of missense mutations, or . ‘Site number’ refers to the count of missense sites. nE(u) is calculated based on synonymous mutations, representing the expected number of neutral mutations per site in a population of size n._
+
+For neutral mutations, we define i* as the threshold above which the expected numbers of Ai would be <1, that is, $E[A_{i\geqi^{∗}}]<1$, The corollary is that all $A_{i\geqi^{*}}$ sites are advantageous CDNs. (Since Si is ~Ai/2.3, the same i* would apply to Si as well: $E[S_{i\geqi^{∗}}]<1$.) As i* is a function of the number of patients (n), it is shown mathematically in the companion study (Zhang et al., 2024) that i* = 3 for n < 1000. Interestingly, while the $EA_{i\geq3}$ is < 1, the expected $EA_{i\geq4}$ is ≪ 1, in the order of 0.001. Hence, i* = 4 may be considered unnecessarily stringent.
+
+We should note that this study is constrained by n < 1000 in TCGA databases. (Databases with larger ns are also used where the actual ns are often uncertain.) At i* = 3, we could detect only a fraction (<10%; see below) of CDNs. Many more tumorigenic mutations may be found in the i = 1 or 2 classes although not every one of them is a CDN. Since these two classes of mutations are far more numerous, they should account for the bulk of CDNs to be discovered. Indeed, Table 1 shows 76 $A_{i\geq3}$ CDN mutations per cancer type but 681 A2 and 56,648 A1 mutations in the lower recurrence groups. If n reaches 105–6, most of the undiscovered CDNs in the A1 and A2 classes should be identified (Zhang et al., 2024).
 
 In Table 2, we estimate the proportion of the A1 and A2 mutations that are possible CDNs. The relationships of A3/S3 > A2/S2, A2/S2 > A1/S1, and A1/S1 > A0/S0 are almost always observed in Table 1 with 32 (3 × 8 + 2 × 4) out of 36 such relationships. The use of A/S ratios may still underestimate the selective advantages of A1~3 mutations because S1~3 may have slight advantages as well (Zhang et al., 2024). Assuming S1 is truly neutral, we use S0 to S1 as the basis to calculate the excess of A1~3 in Table 2 where 35 of the 36 Obs(Ai) > Exp(Ai) relationships can be observed. The implication is that hundreds and, likely low thousands, of A1s and A2' should be CDNs, whereas we have only confidently identified ~76 strong CDNs, on average, for a cancer type. (Note that A1 excesses are less reliable since a 1% error in the calculation would mean 566 CDNs.)
 
-## CDNs and the amino acids affected
+**Table 2.**
+ Excess of Ais of each i class.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Recurrences</th>
+      <th>Lung</th>
+      <th>Breast</th>
+      <th>Central nervous system</th>
+      <th>Kidney</th>
+      <th>Upper aerodigestive tract</th>
+      <th>Colon</th>
+      <th>Endometrium</th>
+      <th>Prostate</th>
+      <th>Stomach</th>
+      <th>Urinary tract</th>
+      <th>Ovary</th>
+      <th>Liver</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>*A1_o</td>
+      <td>195958</td>
+      <td>44696</td>
+      <td>25122</td>
+      <td>25669</td>
+      <td>66924</td>
+      <td>94634</td>
+      <td>78870</td>
+      <td>9583</td>
+      <td>78834</td>
+      <td>66153</td>
+      <td>21138</td>
+      <td>25731</td>
+    </tr>
+    <tr>
+      <td>*, †A1_e</td>
+      <td>198627</td>
+      <td>38586</td>
+      <td>20532</td>
+      <td>23582</td>
+      <td>60316</td>
+      <td>76049</td>
+      <td>63860</td>
+      <td>7888</td>
+      <td>66194</td>
+      <td>60751</td>
+      <td>18396</td>
+      <td>25720</td>
+    </tr>
+    <tr>
+      <td>Excess</td>
+      <td>–2669</td>
+      <td>6110</td>
+      <td>4590</td>
+      <td>2087</td>
+      <td>6608</td>
+      <td>18585</td>
+      <td>15010</td>
+      <td>1695</td>
+      <td>12640</td>
+      <td>5402</td>
+      <td>2742</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>‡Ratio (%)</td>
+      <td>–1.36</td>
+      <td>13.67</td>
+      <td>18.27</td>
+      <td>8.13</td>
+      <td>9.87</td>
+      <td>19.64</td>
+      <td>19.03</td>
+      <td>17.69</td>
+      <td>16.03</td>
+      <td>8.17</td>
+      <td>12.97</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>A2_o</td>
+      <td>2946</td>
+      <td>233</td>
+      <td>287</td>
+      <td>56</td>
+      <td>489</td>
+      <td>1662</td>
+      <td>1052</td>
+      <td>29</td>
+      <td>1176</td>
+      <td>816</td>
+      <td>51</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>A2_e</td>
+      <td>1750</td>
+      <td>69</td>
+      <td>20</td>
+      <td>25</td>
+      <td>169</td>
+      <td>280</td>
+      <td>196</td>
+      <td>3</td>
+      <td>210</td>
+      <td>171</td>
+      <td>15</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>Excess</td>
+      <td>1195.61</td>
+      <td>164.36</td>
+      <td>266.72</td>
+      <td>31.01</td>
+      <td>320.48</td>
+      <td>1381.54</td>
+      <td>855.77</td>
+      <td>26.08</td>
+      <td>966.42</td>
+      <td>645.41</td>
+      <td>35.81</td>
+      <td>16.75</td>
+    </tr>
+    <tr>
+      <td>Ratio (%)</td>
+      <td>40.58</td>
+      <td>70.54</td>
+      <td>92.93</td>
+      <td>55.37</td>
+      <td>65.54</td>
+      <td>83.13</td>
+      <td>81.35</td>
+      <td>89.93</td>
+      <td>82.18</td>
+      <td>79.09</td>
+      <td>70.22</td>
+      <td>36.42</td>
+    </tr>
+    <tr>
+      <td>A3_o</td>
+      <td>99</td>
+      <td>18</td>
+      <td>42</td>
+      <td>14</td>
+      <td>28</td>
+      <td>91</td>
+      <td>52</td>
+      <td>6</td>
+      <td>79</td>
+      <td>60</td>
+      <td>9</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>A3_e</td>
+      <td>15.43</td>
+      <td>0.12</td>
+      <td>0.02</td>
+      <td>0.03</td>
+      <td>0.47</td>
+      <td>1.03</td>
+      <td>0.60</td>
+      <td>0.00</td>
+      <td>0.66</td>
+      <td>0.48</td>
+      <td>0.01</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Excess</td>
+      <td>83.57</td>
+      <td>17.88</td>
+      <td>41.98</td>
+      <td>13.97</td>
+      <td>27.53</td>
+      <td>89.97</td>
+      <td>51.40</td>
+      <td>6.00</td>
+      <td>78.34</td>
+      <td>59.52</td>
+      <td>8.99</td>
+      <td>8.97</td>
+    </tr>
+    <tr>
+      <td>Ratio (%)</td>
+      <td>84.42</td>
+      <td>99.32</td>
+      <td>99.95</td>
+      <td>99.81</td>
+      <td>98.32</td>
+      <td>98.86</td>
+      <td>98.84</td>
+      <td>99.98</td>
+      <td>99.16</td>
+      <td>99.20</td>
+      <td>99.86</td>
+      <td>99.63</td>
+    </tr>
+    <tr>
+      <td>A4_o</td>
+      <td>23</td>
+      <td>10</td>
+      <td>8</td>
+      <td>2</td>
+      <td>14</td>
+      <td>23</td>
+      <td>21</td>
+      <td>3</td>
+      <td>23</td>
+      <td>11</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>A4_e</td>
+      <td>0.13593</td>
+      <td>0.00022</td>
+      <td>1.98E-05</td>
+      <td>2.81E-05</td>
+      <td>0.00132</td>
+      <td>0.00381</td>
+      <td>0.00185</td>
+      <td>4.00E-07</td>
+      <td>0.00210</td>
+      <td>0.00135</td>
+      <td>1.04E-05</td>
+      <td>3.78E-05</td>
+    </tr>
+    <tr>
+      <td>Excess</td>
+      <td>22.8641</td>
+      <td>9.99978</td>
+      <td>7.99998</td>
+      <td>1.99997</td>
+      <td>13.9987</td>
+      <td>22.9962</td>
+      <td>20.9981</td>
+      <td>3</td>
+      <td>22.9979</td>
+      <td>10.9987</td>
+      <td>3.99999</td>
+      <td>2.99999</td>
+    </tr>
+    <tr>
+      <td>Ratio (%)</td>
+      <td>99.41</td>
+      <td>100</td>
+      <td>100</td>
+      <td>100</td>
+      <td>99.99</td>
+      <td>99.98</td>
+      <td>99.99</td>
+      <td>100.00</td>
+      <td>99.99</td>
+      <td>99.99</td>
+      <td>100</td>
+      <td>100.00</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The notation of ‘o’ and ‘e’ following Ais represents the observed Ai and expected Ai.†See ‘Methods’ for the calculation of expected Ai ’s.‡Ratio is the proportion of observed sites in excess, that is, the proportion of putative CDNs in the observation._
+
+### CDNs and the amino acids affected
 
 We now ask whether the amino acid changes associated with CDNs bear the signatures of positive selection. Amino acids that have divergent physico-chemical properties have been shown to be under strong selection, both positive and negative (Chen et al., 2019a; Chen et al., 2019b; Chen et al., 2022b). We note that, in almost all cases in cancer evolution, when a codon is altered, only one nucleotide of the triplet codon is changed. Among the 190 amino acid (AA, 20×19/2) pairs, only 75 of the pairs differ by 1 bp (Tang et al., 2004). For example, Pro (CCN) and Ala (GCN) may differ by only 1 bp but Pro and Gly (GGN) must differ by at least 2 bp. These 75 AA changes, referred to as the elementary AA changes (Grantham, 1974; Li et al., 1985; Yang et al., 2003; Meyer et al., 2021), account for almost all AA substitutions in somatic evolution.
 
-In a series of studies (Tang et al., 2004; Chen et al., 2019a; Chen et al., 2019b), we have defined the physico-chemical distances between AAs of the 75 elementary pairs as ΔUi, where i = 1–75. ΔUi reflects 47 measures of AA differences including hydrophobicity, size, charge, etc., and ranges between 0 and 1. The most similar pair, Ser and Thr, has  ΔUi = 0, and the most dissimilar pair is Asp and Try with  ΔUi = 1. These studies show that ΔUi is a strong determinant of the evolutionary rates of DNA sequences and that large-step changes (i.e., large ΔUi s) are more acutely ‘recognized’ by natural selection. These large-step changes are either highly deleterious or highly advantageous. Most strikingly, advantageous mutations are enriched with AA pairs of ΔUi > 0.8 (Chen et al., 2019a).
+In a series of studies (Tang et al., 2004; Chen et al., 2019a; Chen et al., 2019b), we have defined the physico-chemical distances between AAs of the 75 elementary pairs as $ΔUi$, where i = 1–75. $ΔUi$ reflects 47 measures of AA differences including hydrophobicity, size, charge, etc., and ranges between 0 and 1. The most similar pair, Ser and Thr, has  $ΔUi$ = 0, and the most dissimilar pair is Asp and Try with  $ΔUi$ = 1. These studies show that $ΔUi$ is a strong determinant of the evolutionary rates of DNA sequences and that large-step changes (i.e., large $ΔUi$ s) are more acutely ‘recognized’ by natural selection. These large-step changes are either highly deleterious or highly advantageous. Most strikingly, advantageous mutations are enriched with AA pairs of $ΔUi$ > 0.8 (Chen et al., 2019a).
 
-To analyze the properties of CDNs, we choose six cancer types from Table 1 that have the largest sample sizes (n > 500) but leap over kidney since kidney cancers have unusually low CDN counts. In Figure 2, we divide the CDNs into groups according to the number of recurrences, i. CDNs of similar is are merged into the same group in the descending order of i, until there are at least 10 CDNs in the group. The six cancer types show two clear trends: (1) the proportion of CDNs with ΔUi > 0.8 (red color segments) increases in groups with higher recurrences; and (2) in contrast, the proportion of CDNs with ΔUi < 0.4 (green segments) decreases as recurrences increase. These two trends would mean that highly recurrent CDNs tend to involve larger AA distances (ΔUi > 0.8) and similar AAs tend not to manifest strong fitness increases. In general, CDNs alter amino acids in ways that expose the changes to strong selection.
+To analyze the properties of CDNs, we choose six cancer types from Table 1 that have the largest sample sizes (n > 500) but leap over kidney since kidney cancers have unusually low CDN counts. In Figure 2, we divide the CDNs into groups according to the number of recurrences, i. CDNs of similar is are merged into the same group in the descending order of i, until there are at least 10 CDNs in the group. The six cancer types show two clear trends: (1) the proportion of CDNs with $ΔUi$ > 0.8 (red color segments) increases in groups with higher recurrences; and (2) in contrast, the proportion of CDNs with $ΔUi$ < 0.4 (green segments) decreases as recurrences increase. These two trends would mean that highly recurrent CDNs tend to involve larger AA distances ($ΔUi$ > 0.8) and similar AAs tend not to manifest strong fitness increases. In general, CDNs alter amino acids in ways that expose the changes to strong selection.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/99341/elife-99341-fig2-v1.jpg)
 
-**Figure 2.:** analysis across six cancer types.ΔUi, ranging between 0 and 1 (ΔUiTang et al., 2004; Chen et al., 2019a), is a measure of physico-chemical differences among the 20 amino acids (see the text). The most similar amino acids have  near 0 and the most dissimilar ones have ΔUi near 1. Each panel corresponds to one cancer type, with horizontal bar represents ΔUi distribution of each recurrence group. The numbers on the left of the panel are ΔUii values and on the right are the number of sites. Note that the proportion of dark red segments increases as i increases. This figure shows that mutations at high recurrence sites (larger is) code for amino acids that are chemically very different from the wild type.
+**Figure 2.:** $ΔUi$ analysis across six cancer types.$ΔUi$, ranging between 0 and 1 (Tang et al., 2004; Chen et al., 2019a), is a measure of physico-chemical differences among the 20 amino acids (see the text). The most similar amino acids have $ΔUi$ near 0 and the most dissimilar ones have $ΔUi$ near 1. Each panel corresponds to one cancer type, with horizontal bar represents $ΔUi$ distribution of each recurrence group. The numbers on the left of the panel are i values and on the right are the number of sites. Note that the proportion of dark red segments increases as i increases. This figure shows that mutations at high recurrence sites (larger is) code for amino acids that are chemically very different from the wild type.
 
-## CDNs in relation to the genes harboring them
+### CDNs in relation to the genes harboring them
 
 We shall use the term ‘CDN genes’ for genes having at least one CDN site. Since CDN genes contribute to tumorigenesis when harboring a CDN mutation, they should be considered cancer drivers as well. CDN genes have two desirable qualities for recognition as driver genes. First, CDNs are straightforward and unambiguous to define (e.g., i ≥ 3 for n < 1000). In the literature, there have been multiple definitions of CDGs (Reimand and Bader, 2013; Porta-Pardo and Godzik, 2014; Mularoni et al., 2016; Arnedo-Pac et al., 2019), resulting in only modest overlaps among cancer gene lists (Appendix 1—figure 1). Second, the evolutionary fitness of CDN, and hence the tumorigenic potentials of CDN genes, can be computed (Appendix 2, section ‘Quantifying evolutionary fitness of CDN’).
 
 We now present the analyses of CDN genes using the same six cancers of Figure 2. Two types of CDN genes are shown in Table 3. Type I genes fulfill the conventional criterion of fast evolution with the whole-gene Ka/Ks (or dN/dS) significantly larger than 1 (Martincorena et al., 2017). Averaged across cancer types, type I overlaps by 95.7% with the canonical CDG list, which is the union of three popular lists (Bailey et al., 2018; Sondka et al., 2018; Martínez-Jiménez et al., 2020). Type I genes are mostly well-known canonical CDGs (e.g., TP53, PIK3CA, and EGFR).
+
+**Table 3.**
+ Distribution of cancer-driving nucleotides (CDNs) among genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>CDN calls based on i*=3</th>
+      <th>Lung</th>
+      <th>Breast</th>
+      <th>Central nervous system</th>
+      <th>Upper aerodigestive tract</th>
+      <th>Colon</th>
+      <th>Endometrium</th>
+      <th>Mean</th>
+      <th>†Total</th>
+      <th>Overlap with the conventional set</th>
+      <th>Criteria of classification</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td># of patients(n)</td>
+      <td>1035</td>
+      <td>963</td>
+      <td>873</td>
+      <td>688</td>
+      <td>571</td>
+      <td>465</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CDN count</td>
+      <td>178</td>
+      <td>50</td>
+      <td>83</td>
+      <td>77</td>
+      <td>148</td>
+      <td>142</td>
+      <td>113.3</td>
+      <td>495</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="11"># CDN-carrying genes (type I fulfills the convention of ‡Ka/Ks &gt; 1**; type II does not)</td>
+    </tr>
+    <tr>
+      <td>Type I(Ka/Ks &gt;1**)</td>
+      <td>10</td>
+      <td>8</td>
+      <td>12</td>
+      <td>13</td>
+      <td>10</td>
+      <td>21</td>
+      <td>12.33</td>
+      <td>45</td>
+      <td>95.7%</td>
+      <td>Conventional</td>
+    </tr>
+    <tr>
+      <td>Type II(Ka/Ks ~1)</td>
+      <td>79</td>
+      <td>9</td>
+      <td>12</td>
+      <td>19</td>
+      <td>86</td>
+      <td>35</td>
+      <td>40</td>
+      <td>229</td>
+      <td>26.1%</td>
+      <td>This study only</td>
+    </tr>
+    <tr>
+      <td>All CDN genes</td>
+      <td>89</td>
+      <td>17</td>
+      <td>24</td>
+      <td>32</td>
+      <td>96</td>
+      <td>56</td>
+      <td>52.33</td>
+      <td>258</td>
+      <td>47%</td>
+      <td>Both types</td>
+    </tr>
+    <tr>
+      <td>Genes with 1–2 CDNs(% all CDN genes)</td>
+      <td>80(89.9 %)</td>
+      <td>14(82.4 %)</td>
+      <td>19(79.2 %)</td>
+      <td>27(84.4 %)</td>
+      <td>90(93.8 %)</td>
+      <td>45(80.4 %)</td>
+      <td>45.8(85 %)</td>
+      <td>250(96.9%)</td>
+      <td></td>
+      <td>A subset of both types</td>
+    </tr>
+    <tr>
+      <td colspan="11">Number of driver genes in three major CDG lists</td>
+    </tr>
+    <tr>
+      <td>*Other criteria:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>–</td>
+      <td>Variable (see legends)</td>
+    </tr>
+    <tr>
+      <td>IntOGen</td>
+      <td>118</td>
+      <td>100</td>
+      <td>100</td>
+      <td>106</td>
+      <td>86</td>
+      <td>72</td>
+      <td>97</td>
+      <td>321</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bailey et al.</td>
+      <td>36</td>
+      <td>29</td>
+      <td>32</td>
+      <td>38</td>
+      <td>20</td>
+      <td>55</td>
+      <td>35</td>
+      <td>134</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CGC Tier 1</td>
+      <td>30</td>
+      <td>32</td>
+      <td>32</td>
+      <td>24</td>
+      <td>44</td>
+      <td>23</td>
+      <td>30.83</td>
+      <td>118</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*intOGen, Bailey et al., and CGC Tier 1 are the three major CDG lists adopted here for comparison (Bailey et al., 2018; Sondka et al., 2018; Martínez-Jiménez et al., 2020).†”Total” refers to the cumulative number of unique genes identified across all six cancer types.‡Here, ** denotes significant Ka/Ks results with a corrected q-value < 0.1 based on dndscv analysis._
 
 Type II (CDN genes) is the new class of CDGs. These genes have CDNs but do not meet the conventional criteria of whole-gene analysis. Obviously, if a gene has only one or two CDNs plus some sporadic hits, the whole-gene Ka/Ks would not be significantly greater than 1. As shown in Table 3, over 80% of CDN genes have only 1–2 CDN sites. The salient result is that type II genes outnumber type I genes by a ratio of 5:1 (229:45, column 8, Table 3). Furthermore, type II genes overlap with the canonical CDG list by only 23%.
 
@@ -95,7 +922,7 @@ Type II genes represent a new class of cancer drivers that concentrate their tum
 
 We now briefly discuss the driver genes listed in previous studies as shown at the lower part of Table 3 (Bailey et al., 2018; Sondka et al., 2018; Martínez-Jiménez et al., 2020). From the total number of CDGs listed, it is clear that the overlaps are limited. As analyzed before (Wu et al., 2016), conventional gene lists overlap mainly by a core set of high Ka/Ks genes. This core set has not changed much as various criteria such as the replication timing, expression profiles, and epigenetic features are introduced. These criteria are the reasons for the many CDGs recognized by only a small subset of CDG lists. CDN genes, in contrast, can be objectively defined as CDN mutations (i recurrences in n samples) themselves are unambiguous.
 
-## Variation in CDN number and tumorigenic contribution among genes
+#### Variation in CDN number and tumorigenic contribution among genes
 
 By and large, the distribution of CDNs among genes is very uneven. Figure 3A shows 10 genes with at least six CDNs, whereas 87 genes have only one CDN. Two genes stand out for the number of CDNs they harbor, TP53 and PIK3CA, which also happen to be the only genes mutated in >15% of all cancer patients surveyed (Kandoth et al., 2013). Clearly, the prevalence of mutations in a gene is a function of the number of strong CDNs it harbors.
 
@@ -105,7 +932,7 @@ By and large, the distribution of CDNs among genes is very uneven. Figure 3A sho
 
 Although a small number of genes have unusually high number of CDNs, these genes may not drive the tumorigenesis in proportion to their CDN numbers in individual patients. Figure 3B shows the number of CDN mutations on TP53 that occur in any single patient. Usually, only one CDN change is observed in a patient, whereas two or three CDN mutations are expected. It thus appears that CDNs on the same genes are redundant in their tumorigenic effects such that the second hit may not yield additional advantages. This pattern of disproportionally lower contribution by CDN-rich genes is true in other genes such as EGFR and KRAS. Consequently, the large number of genes with only one or two CDN sites are disproportionately important in driving the tumorigenesis of individual patients.
 
-## CDNs in relation to the cancer types: The pan-cancer properties
+### CDNs in relation to the cancer types: The pan-cancer properties
 
 In the current literature, CDGs (however they are defined) generally meet the statistical criteria for driver genes in only one or a few cancer types. However, genes may in fact contribute to tumorigenesis but are insufficiently prevalent to meet the statistical requirements for CDGs. Many genes are indeed marginally qualified as drivers in some tissues and barely miss the statistical cutoff in others. To see if genes that drive tumorigenesis in multiple tissues are more common than currently understood, we need to raise the sensitivity of cancer driver detection. Thus, CDNs may provide the resolution.
 
@@ -113,17 +940,17 @@ To test the pan-cancer-driving capacity of CDNs, we define imax as the largest i
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/99341/elife-99341-fig4-v1.jpg)
 
-**Figure 4.:** The X-axis shows i, which is the largest maxi a CDN reaches among the 12 cancer types. The Y-axis shows the number of cancer types where the mutation also occurs. Each dot is a CDN, and the number of dots in the cloud is given. The blue and red dots denote, respectively, mutations classified as a CDN in one or multiple cancer types. Gray dots are non-CDNs. The table in the lower panel summarizes the number of sites and the number of genes harboring these sites.
+**Figure 4.:** The X-axis shows imax, which is the largest i a CDN reaches among the 12 cancer types. The Y-axis shows the number of cancer types where the mutation also occurs. Each dot is a CDN, and the number of dots in the cloud is given. The blue and red dots denote, respectively, mutations classified as a CDN in one or multiple cancer types. Gray dots are non-CDNs. The table in the lower panel summarizes the number of sites and the number of genes harboring these sites.
 
 Examining Figure 4 more carefully, we could see that CDNs with a larger imax in one cancer type are more likely to be identified as CDNs in multiple cancer types (red dots, r = 0.97, p=9.23 × 10–5, Pearson’s correlation test). Of 22 sites with imax > 20, 15 are identified as CDNs (i ≥ 3) in multiple cancer types, with a median NC12 of 9. On the opposite end, two CDNs with imax > 20 are observed in only one cancer type (EGFR: T2573 in lung and FGFR2: C755 in endometrium cancer). The bimodal pattern suggests that a few cancer driver mutations are tissue specific, whereas most others appear to have pan-cancer-driving potentials.
 
 To conclude, when a driver is observed in more than one cancer type, it is often a cancer driver in many others, but insufficiently powerful to meet the statistical criteria for driver mutations. This pan-cancer property can be seen at the higher resolution of CDN, but is often missed at the whole-gene level. Cancers of the same tissue in different patients, often reported to have divergent mutation profiles (Nik-Zainal et al., 2012; Roberts and Gordenin, 2014), should be a good test of this hypothesis.
 
-## CDNs in relation to individual patients and therapeutic strategies
+### CDNs in relation to individual patients and therapeutic strategies
 
 In previous sections, the focus is on the population of cancer patients; for example, how many in the patient population have certain mutations. We now direct the attention to individual patients. It would be necessary to pinpoint the CDN mutations in each patient in order to delineate the specific evolutionary path and to devise the treatment strategy. We shall first address the cancer-driving power of CDN vs. non-CDN mutations in the same gene.
 
-## Efficacy of targeted therapy against CDNs vs. non-CDNs
+#### Efficacy of targeted therapy against CDNs vs. non-CDNs
 
 In general, a patient would have many point mutations, only a few of which are strong CDNs. We may ask whether most mutations on the canonical genes, such as EGFR, are CDNs. Presumably, synonymous, and likely many nonsynonymous, mutations on canonical genes may not be CDNs. It would be logical to hypothesize that patients whose EGFR has a CDN mutation (group 1 patients) should benefit from the gene-targeted therapy more than patients with a non-CDN mutation on the same gene (group 2 patients). In the second group, EFGR may be a nondriver of tumorigenesis.
 
@@ -131,19 +958,241 @@ Published data (André et al., 2017; Choudhury et al., 2023) are re-analyzed as 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/99341/elife-99341-fig5-v1.jpg)
 
-**Figure 5.:** Patient data were retrieved from the GENIE database (https://genie-public-beta.cbioportal.org/) and stratified into three groups based on EGFR mutation profiles: Group 1 comprises patients with EGFR CDN mutations; group 2 includes patients with nonsynonymous mutations in EGFR that are not cancer-driving nucleotides (CDNs); the EGFR group consists of patients with no WTEGFR mutations (see ‘Methods’). Patients of groups 1 and 2 received EGFR-targeted therapies in accordance with the guidelines for managing EGFR mutant NSCLC (Passaro et al., 2022; Choudhury et al., 2023). Survival analysis using the Kaplan–Meier method revealed a significantly higher survival rate for group 1 patients compared to group 2 and the EGFR group (p<0.001).WT
+**Figure 5.:** Patient data were retrieved from the GENIE database (https://genie-public-beta.cbioportal.org/) and stratified into three groups based on EGFR mutation profiles: Group 1 comprises patients with EGFR CDN mutations; group 2 includes patients with nonsynonymous mutations in EGFR that are not cancer-driving nucleotides (CDNs); the EGFRWT group consists of patients with no EGFR mutations (see ‘Methods’). Patients of groups 1 and 2 received EGFR-targeted therapies in accordance with the guidelines for managing EGFR mutant NSCLC (Passaro et al., 2022; Choudhury et al., 2023). Survival analysis using the Kaplan–Meier method revealed a significantly higher survival rate for group 1 patients compared to group 2 and the EGFRWT group (p<0.001).
 
-## Number of CDNs in each patient
+#### Number of CDNs in each patient
 
 We postulate that a full set of CDNs should be able to inform about the cause of each cancer as well as the design of gene-targeted therapy. In Table 4, the known CDNs based on TCGA are tallied. Note that only a few CDNs fall on the canonical driver genes, whereas most CDNs fall on the nonconventional ones.
 
+**Table 4.**
+ Numbers of patients with cancer-driving nucleotides (CDNs) vs. number of patients with any non-synonymous mutations in the same genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Lung</th>
+      <th colspan="2">Breast</th>
+      <th colspan="2">Central nervous system</th>
+      <th colspan="2">Upper aerodigestive tract</th>
+      <th colspan="2">Colon</th>
+      <th colspan="2">Endometrium</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>CDN*†(178)</td>
+      <td>Gene† ‡(89)</td>
+      <td>CDN(50)</td>
+      <td>Gene(17)</td>
+      <td>CDN(83)</td>
+      <td>Gene(24)</td>
+      <td>CDN(77)</td>
+      <td>Gene(32)</td>
+      <td>CDN(148)</td>
+      <td>Gene(96)</td>
+      <td>CDN(142)</td>
+      <td>Gene(56)</td>
+    </tr>
+    <tr>
+      <td>n0</td>
+      <td>342(33%) §</td>
+      <td>53(5.3%)</td>
+      <td>492(51.1%)</td>
+      <td>415(43.1%)</td>
+      <td>235(26.9%)</td>
+      <td>163(18.7%)</td>
+      <td>268(39%)</td>
+      <td>140(20.3%)</td>
+      <td>102(17.9%)</td>
+      <td>42(7.4%)</td>
+      <td>42(9%)</td>
+      <td>14(3%)</td>
+    </tr>
+    <tr>
+      <td>n1</td>
+      <td>411(39.7%)</td>
+      <td>70(6.8%)</td>
+      <td>379(39.4%)</td>
+      <td>395(41%)</td>
+      <td>359(41.1%)</td>
+      <td>306(35.1%)</td>
+      <td>268(39%)</td>
+      <td>229(33.3%)</td>
+      <td>159(27.8%)</td>
+      <td>79(13.8%)</td>
+      <td>108(23.2%)</td>
+      <td>59(12.7%)</td>
+    </tr>
+    <tr>
+      <td>n2</td>
+      <td>192(18.6%)</td>
+      <td>84(8.1%)</td>
+      <td>73(7.6%)</td>
+      <td>114(11.8%)</td>
+      <td>225(25.8%)</td>
+      <td>293(33.6%)</td>
+      <td>101(14.7%)</td>
+      <td>171(24.9%)</td>
+      <td>140(24.5%)</td>
+      <td>93(16.3%)</td>
+      <td>169(36.3%)</td>
+      <td>101(21.7%)</td>
+    </tr>
+    <tr>
+      <td>n&gt;2</td>
+      <td>90(8.7%)</td>
+      <td>826(79.8%)</td>
+      <td>18(1.9%)</td>
+      <td>38(3.9%)</td>
+      <td>53(6.1%)</td>
+      <td>110(12.6%)</td>
+      <td>50(7.3%)</td>
+      <td>147(21.4%)</td>
+      <td>170(29.8%)</td>
+      <td>357(62.5%)</td>
+      <td>146(31.4%)</td>
+      <td>291(62.6%)</td>
+    </tr>
+    <tr>
+      <td>Total n</td>
+      <td>1035</td>
+      <td>1035</td>
+      <td>963</td>
+      <td>963</td>
+      <td>873</td>
+      <td>873</td>
+      <td>688</td>
+      <td>688</td>
+      <td>571</td>
+      <td>571</td>
+      <td>465</td>
+      <td>465</td>
+    </tr>
+    <tr>
+      <td>Mean #</td>
+      <td>1.06</td>
+      <td>7.19</td>
+      <td>0.61</td>
+      <td>0.78</td>
+      <td>1.12</td>
+      <td>1.44</td>
+      <td>0.93</td>
+      <td>1.63</td>
+      <td>1.96</td>
+      <td>4.6</td>
+      <td>2.17</td>
+      <td>3.7</td>
+    </tr>
+  </tbody>
+</table>
+
+_*ni designates the number of patients with i CDN mutations.†The number in the parentheses is the total number of CDNs or genes.‡In this column, ni designates the number of patients with any nonsynonymous mutation in the same gene as the CDN column.§There are 684 CDNs summed over all cancer types. The percentage is ni/Total n._
+
 In most cancer types, 10–30% of patients, shown in the n0 row of Table 4, have no known CDNs (and >50% among breast cancer patients). Hence, the current practice is to rely on missense mutations, regardless of CDNs or non-CDNs, on the canonical genes. The CDN column vs. the gene column in Table 4 addresses this issue. For example, the CDN column suggests that 33% of lung cancer patients (the n0 row) would not respond well to gene-targeted therapy, whereas the gene column shows only 5.3%. The difference is due to a higher, and likely inflated, detection rate of candidate drivers in the gene column. We suggest that patients who have a non-CDN mutation on a driver gene would not respond to the targeted therapy against that gene, as demonstrated in Figure 5. In the above example, 27.7% (33–5.3%) of patients may be subjected to the targeted treatment but may not respond well.
 
-## Prevalence vs. potency of CDN-bearing genes in driving tumorigenesis
+#### Prevalence vs. potency of CDN-bearing genes in driving tumorigenesis
 
 The last question is the relationship between mutation prevalence and tumorigenic strength (or potency) among CDN-bearing genes. For example, when a patient is diagnosed to have five CDNs in five genes, what may be their relative contributions to the tumorigenesis? Are they equally valid candidates for targeted therapy? It would seem logical that canonical CDGs with many CDNs should be the targets. However, because these genes would contribute at most one CDN to the tumorigenesis (Figure 3B), targeting a high-prevalence gene may not yield more benefits to the patients than targeting a low-prevalence gene that has a CDN.
 
 The implication is that prevalence and potency of CDNs may not be strongly correlated. Some genes may be prevalently mutated in the patient population but, in each affected patient, these genes may not be more potent than the less prevalent genes with a CDN mutation. Potency can be tested in vitro by gene editing or in vivo by targeting treatment. In this interpretation, targeting a CDN of low prevalence (say, i = 3) may be as effective in treatment as targeting a high-prevalence CDN with i = 20. The model and Table 5 present this hypothesis based on cancer hallmarks.
+
+**Table 5.**
+ Gene numbers for different cancer hallmarks.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Gene number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hallmark</td>
+      <td>All records</td>
+      <td>Breast</td>
+      <td>Colon</td>
+    </tr>
+    <tr>
+      <td>Angiogenesis</td>
+      <td>78</td>
+      <td>8</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Cell division control</td>
+      <td>107</td>
+      <td>12</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Cell replicative immortality</td>
+      <td>44</td>
+      <td>4</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Change of cellular energetics</td>
+      <td>70</td>
+      <td>10</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Escaping immune response to cancer</td>
+      <td>51</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Escaping programmed cell death</td>
+      <td>202</td>
+      <td>32</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Genome instability and mutations</td>
+      <td>106</td>
+      <td>10</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Invasion and metastasis</td>
+      <td>206</td>
+      <td>52</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>Proliferative signaling</td>
+      <td>176</td>
+      <td>40</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>Senescence</td>
+      <td>48</td>
+      <td>3</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Suppression of growth</td>
+      <td>130</td>
+      <td>11</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Tumor-promoting inflammation</td>
+      <td>54</td>
+      <td>2</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+_Data downloaded from COSMIC (https://cancer.sanger.ac.uk/cosmic/download), see ‘Methods’._
 
 The hallmarks of cancer were first proposed by Hanahan and Weinberg, 2000 with several updates (Hanahan and Weinberg, 2011; Hanahan, 2022). Each hallmark is a cancer phenotype shown in Table 5 that lists the number of genes involved in each particular hallmark (see ‘Methods’). While each hallmark may be associated with a number of genes, many genes are also involved in multiple hallmarks. As even the highly prevalent genes would usually have at most one mutation in each patient, we assume that each gene is associated with one hallmark in each patient.
 
@@ -173,7 +1222,7 @@ Cancer evolution falls within the realm of ultra-microevolution (Wu et al., 2016
 
 ## Methods
 
-## Data preparation
+### Data preparation
 
 Single-nucleotide variant (SNV) data for TCGA patients were downloaded from the GDC Data Portal (https://portal.gdc.cancer.gov/, data version 28 February 2022), with mutations identified by at least two pipelines were included in this study. Mutations exceeding a 1‰ frequency in the Genome Aggregation Database (gnomAD, version v2.1.1) were excluded to minimize potential false positives arising from germline variants. Patients with more than 3000 coding region point mutations were filtered out as potential hypermutator phenotypes. This filtering process yielded a final analysis set encompassing 7369 patients across 12 diverse cancer types for subsequent analysis. The calculation of Ai and Si follows the same method as described in the companion paper (Zhang et al., 2024).
 
@@ -185,28 +1234,48 @@ The hallmark annotation of genes was downloaded from COSMIC (https://cancer.sang
 
 For gene-level selection analysis, we utilized the R package 'dndscv' to quantify selection signals for missense and nonsense mutations in a given gene (Martincorena et al., 2017). Specifically, the package calculates the Ka/Ks ratio, denoted as 'w' in the final results, for a given mutation impact (missense or nonsense). The significance of selection is presented as q values after Benjamini–Hochberg (BH) adjustment. Genes with w > 1 and q < 0.1 were identified as being significantly under positive selection.
 
-We employ i* = 3 as a cutoff for identifying CDNs across various cancer types. The specific value of i* is detailed in Eq. 10 of the companion paper (Zhang et al., 2024). Here, i* = 3 is chosen consistently across all cancer types, taking into account the abundance of sites under positive selection given i = 3 in Table 2. Throughout our analysis, emphasis is placed on CDNs of the missense category, where missense mutations with a recurrence ≥3 are identified as CDNs. For ΔUi analysis, the reference table for 75 single-step amino acid changes was obtained from Chen et al., 2019a, and the ΔUi for each CDN is derived by mapping the amino acid change to the reference table.
+We employ i* = 3 as a cutoff for identifying CDNs across various cancer types. The specific value of i* is detailed in Eq. 10 of the companion paper (Zhang et al., 2024). Here, i* = 3 is chosen consistently across all cancer types, taking into account the abundance of sites under positive selection given i = 3 in Table 2. Throughout our analysis, emphasis is placed on CDNs of the missense category, where missense mutations with a recurrence ≥3 are identified as CDNs. For $ΔUi$ analysis, the reference table for 75 single-step amino acid changes was obtained from Chen et al., 2019a, and the $ΔUi$ for each CDN is derived by mapping the amino acid change to the reference table.
 
-## Calculation of Ai_e
+### Calculation of Ai_e
 
-We employ Eq. 9 from the companion paper to calculate the expected value for Ai under neutrality. For a given site, the cumulative probability for recurrence x≤i-1 could be expressed as(S1)F(x≤i−1)=1−(1−11+nE(u))i−1
+We employ Eq. 9 from the companion paper to calculate the expected value for Ai under neutrality. For a given site, the cumulative probability for recurrence $x\leqi-1$ could be expressed as
 
-where n is the population size of a given cancer type, and E(u) is the mutation rate per site per patient derived from singleton synonymous mutations:(S2)S1=LS⋅nEue-n-1Eu
+$$
+F(x\leqi−1)=1−(1−\frac{1}{1+nE(u)})^{i−1}
+$$
 
-Then by expectation, site number of recurrence i (Ax≥i) could be represented byAx≥i=LA-LA⋅Fx≤i-1
+where n is the population size of a given cancer type, and E(u) is the mutation rate per site per patient derived from singleton synonymous mutations:
 
-Following the same logic, we will have Ax≥i+1 asAx≥i+1=LA-LA⋅Fx≤i
+$$
+S_{1}=L_{S}⋅nEue^{-n-1Eu}
+$$
 
-Then the expected value for Ai_e is(S3)Ai_e=Ax≥i-Ax≥i+1=LA⋅Fx≤i-Fx≤i-1
+Then by expectation, site number of recurrence i ($A_{x\geqi}$) could be represented by
+
+$$
+A_{x\geqi}=L_{A}-L_{A}⋅Fx\leqi-1
+$$
+
+Following the same logic, we will have $A_{x\geqi+1}$ as
+
+$$
+A_{x\geqi+1}=L_{A}-L_{A}⋅Fx\leqi
+$$
+
+Then the expected value for Ai_e is
+
+$$
+A_{i}_e=A_{x\geqi}-A_{x\geqi+1}=L_{A}⋅Fx\leqi-Fx\leqi-1
+$$
 
 LA and LS are missense and synonymous sites, respectively. The calculation procedure is described in methods of the companion paper (Zhang et al., 2024).
 
 With Equation S1, Equation S2, Equation S3, we could solve for the expected number of sites with missense mutation recurrence i.
 
-## Survival analysis of EGFR-targeted therapy
+### Survival analysis of EGFR-targeted therapy
 
-The mutation and clinical profiles of 23,253 patients were retrieved from the GENIE project (Cerami et al., 2012; de Bruijn et al., 2023), with 7216 patients harboring EGFR mutations. Survivor months were calculated as the time elapsed between the date of sequencing and the date of the last contact (or day of death). In cases where patients had multiple sequencing reports, the earliest one was selected. For CDN calling, we applied Eq. 10 from the companion paper (Zhang et al., 2024). With ε=0.01, we set the CDN cutoff i* = 14. To mitigate potential biases from other common drivers in lung cancer, patients with indels in exons 19 and 20 of EGFR, G12/13 mutations in KRAS, V600 mutations in BRAF, exon 20 insertions in HER2, fusions in MET, ALK, ROS1, RET, NTRK, and MET were filtered out. The final survival analysis was conducted using GraphPad Prism 8.
+The mutation and clinical profiles of 23,253 patients were retrieved from the GENIE project (Cerami et al., 2012; de Bruijn et al., 2023), with 7216 patients harboring EGFR mutations. Survivor months were calculated as the time elapsed between the date of sequencing and the date of the last contact (or day of death). In cases where patients had multiple sequencing reports, the earliest one was selected. For CDN calling, we applied Eq. 10 from the companion paper (Zhang et al., 2024). With $\epsilon=0.01$, we set the CDN cutoff i* = 14. To mitigate potential biases from other common drivers in lung cancer, patients with indels in exons 19 and 20 of EGFR, G12/13 mutations in KRAS, V600 mutations in BRAF, exon 20 insertions in HER2, fusions in MET, ALK, ROS1, RET, NTRK, and MET were filtered out. The final survival analysis was conducted using GraphPad Prism 8.
 
-## Annotation for noncanonical CDN genes
+### Annotation for noncanonical CDN genes
 
 We conducted functional annotation and enrichment analysis for newly identified noncanonical CDN genes using four independent databases (Gene Ontology, KEGG, Disease Ontology, and Reactome) with R packages (clusterProfiler, DOSE, ReactomePA). For each analysis, we set a p-value cutoff of 0.05 and a q-value cutoff of 0.2, with p-value adjustment method set to ‘BH’. To explore the connections between noncanonical CDN genes and canonical CDGs, enrichment analyses were performed alongside cancer drivers from IntOGen. Specifically, for enrichment annotations related to cancer hallmarks, the corresponding genes were subjected to manual confirmation using CancerGeneNET (https://signor.uniroma2.it/CancerGeneNet/).

@@ -16,10 +16,10 @@
 
 ### Affiliations
 
-1. https://ror.org/01v5mqw79 Department of Neurology, Medical Research Institute, Zhongnan Hospital of Wuhan University, Wuhan University Wuhan China
-2. https://ror.org/01v5mqw79 Department of Hematology, Zhongnan Hospital of Wuhan University, School of Pharmaceutical Sciences, Wuhan University Wuhan China
-3. https://ror.org/033vjfk17 Frontier Science Center for Immunology and Metabolism, Wuhan University Wuhan China
-4. https://ror.org/033vjfk17 State Key Laboratory of Virology, Hubei Province Engineering and Technology Research Center for Fluorinated Pharmaceuticals, Key Laboratory of Combinatorial Biosynthesis and Drug Discovery (Wuhan University), Ministry of Education, Frontier Science Center for Immunology and Metabolism, Wuhan University Wuhan China
+1. Department of Neurology, Medical Research Institute, Zhongnan Hospital of Wuhan University, Wuhan University Wuhan China ([ROR:01v5mqw79](https://ror.org/01v5mqw79))
+2. Department of Hematology, Zhongnan Hospital of Wuhan University, School of Pharmaceutical Sciences, Wuhan University Wuhan China ([ROR:01v5mqw79](https://ror.org/01v5mqw79))
+3. Frontier Science Center for Immunology and Metabolism, Wuhan University Wuhan China ([ROR:033vjfk17](https://ror.org/033vjfk17))
+4. State Key Laboratory of Virology, Hubei Province Engineering and Technology Research Center for Fluorinated Pharmaceuticals, Key Laboratory of Combinatorial Biosynthesis and Drug Discovery (Wuhan University), Ministry of Education, Frontier Science Center for Immunology and Metabolism, Wuhan University Wuhan China ([ROR:033vjfk17](https://ror.org/033vjfk17))
 
 † Corresponding author
 
@@ -39,9 +39,25 @@ To overcome existing limitations and establish a streamlined approach for target
 
 ## Results
 
-## Design and optimization of POST-IT
+### Design and optimization of POST-IT
 
 To create a non-diffusive PL system suitable for universal and robust target-ID in live cells and animal models, we integrated PafA from Corynebacterium glutamicum (Cglu) as a non-diffusive PL effector with HaloTag as an anchor for small molecules of interest (Figure 1). PafA covalently transfers Pup to proximal prey proteins via direct contact on the ε-amino group of lysine residues (Özcelik et al., 2012; Watrous et al., 2010), a process known as pupylation. This approach offers an advantage due to PafA’s inherent characteristic of promiscuous, low selectivity for the amino acid sequence (Liu et al., 2018; Watrous et al., 2010). We selected HaloTag over alternatives like SNAP-tag due to its superior live-cell labeling efficiency (Erdmann et al., 2019), readily accessible ligand surface (Kang et al., 2017; Los et al., 2008), and relatively simple chemical synthesis with a chloroalkane moiety (Los et al., 2008). To simplify our system for in vivo applications without requiring exogenous biotin, we fused Pup with either a streptavidin binding peptide (SBP) or a Strep-tag II (STII) as a handle to capture the targets, rather than using the commonly used biotin carboxyl carrier protein (BCCP). When a target protein binds to the compound linked to HaloTag, PafA is positioned in close proximity, allowing for the covalent attachment of Pup to the target’s lysine residue. Pupylated targets can then be captured and identified by mass spectrometry.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig1-v1.jpg)
+
+**Figure 1.:** Upon the introduction of a drug-specific HaloTag ligand derivative, POST-IT tags target proteins with sPup, a tagging process known as pupylation, in live cells or organisms. Subsequently, these proteins are enriched and identified via mass spectrometry (MS) analysis.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic representation of Halo-PafA and three Pup substrates (HB-Pup, TS-sPup, SBP-sPup). HB, TS, and SBP refer to 6×His and BCCP, twin-STII (Strep-tag II), and streptavidin binding peptide, respectively. (B) In vitro self-pupylation of Halo-PafA (1 μM) with HB-Pup, TS-sPup, or SBP-sPup (10 μM) at 37°C, 28°C, and 20°C for 30 min. (C) Polypupylated Halo-PafAs were observed as high molecular weight bands after 2 hr pupylation reaction with three Pup substrates (HB-Pup, TS-sPup, SBP-sPup) at 37°C. Arrows indicate the Halo-PafA band without pupylation.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) A schematic shows the lysine residues in HB-Pup, TS-sPup, and SBP-sPup. (B) In a pupylation assay, Halo-PafA exhibits dose-dependent self-pupylation with different concentrations of HB-Pup, TS-sPup, or TS-sPupK61R for 30 min. (C) Time-dependent polypupylation becomes evident, particularly after 1 hr incubation, as seen by high molecular weight bands. (D) Removing all lysine residues from TS-sPup completely prevents polypupylation. The asterisk indicates a possible experimental error causing a failed pupylation. (E) Eliminating lysine residues in SBP and sPup completely abolishes polypupylation. Halo-PafA was incubated with various concentrations of SBP-sPup, sSBP-sPupK61R, or SBPK4R-sPupK61R for 30 min. (F) Longer incubations do not induce polypupylation but enhance multipupylation in the cases of sSBP-sPupK61R and SBPK4R-sPupK61R. All reactions were performed with 1 μM of Halo-PafA and 10 μM of HB-Pup, TS-sPup, or TS-sPupK61R at 37°C. Yellow arrowheads point to polypupylated bands that are not detected in polypupylation-free sPup substrates. Black arrowheads and arrows indicate multipupylated bands and Halo-PafA, respectively.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Schematic illustration of Halo-PafA derivatives: Halo8KR-PafA, which includes eight lysine-to-arginine mutations to abolish self-pupylation, and Halo-PafAS126A, which contains a serine-to-alanine mutation at position 126 to decrease depupylase activity of PafA. (B) In vitro self-pupylation results show that Halo8KR-PafA exhibits minimal pupylation levels, similar to PafA alone. Halo-PafAS126A demonstrates reduced self- and polypupylation while enhancing multipupylation. Reactions were conducted with 1 μM of a Halo-PafA derivative and 10 μM of TS-sPup or TS-sPupK61R at 37°C for 30 min. Yellow arrowheads indicate polypupylated bands, while black arrowheads and arrows indicate multipupylated bands and Halo-PafA, respectively.
 
 To initiate the optimization of POST-IT, we reasoned that using smaller Pup substrates could minimize interference with the cellular functions of pupylated proteins. It has been shown that the N terminus of Pup can be removed without compromising its function, generating a short truncated protein with 28 amino acids from the C terminus (Liu et al., 2018). This truncated Pup protein will be referred to hereafter as short Pup (sPup). We fused sPup with either an SBP or a twin-STII (TS) tag at its N terminus and used HB-Pup as a control, which contains 6×His and BCCP at the N terminus of Pup (Figure 1—figure supplement 1A). HaloTag was introduced at the N terminus of PafA. In vitro pupylation tests with recombinant proteins showed that the fusion of HaloTag did not impair PafA activity based on self-pupylation (Figure 1—figure supplement 1B). Notably, both types of sPup substrates exhibited similar pupylation levels to the full-length Pup. Additionally, PafA retained its robust activity even at 20°C, a valuable feature for using this system in other animal models such as zebrafish and Caenorhabditis elegans, which naturally inhabit environments around this temperature. Moreover, we observed robust self-pupylation within 10 min at 37°C. However, extensive incubation resulted in the formation of high molecular weight Halo-PafA, indicating polypupylation of Pup substrates (Figure 1—figure supplement 1C).
 
@@ -49,51 +65,308 @@ Polypupylation refers to the addition of a new Pup onto a previously linked Pup 
 
 In addition to polypupylation, we reasoned that the robust self-pupylation activity of Halo-PafA could diminish the pupylation of target proteins. To address this, we replaced all eight lysines with arginines in HaloTag, creating Halo8KR-PafA (Figure 1—figure supplement 3A). Ts-sPup and TS-sPupK61R were chosen as sPup substrates for this experiment, although any Pup substrates could have been used. The levels of self-pupylation were assessed. The result showed that Halo8KR-PafA mutant exhibited a marked decrease in self-pupylation, similar to PafA alone, indicating inherent self-pupylation in PafA (Figure 1—figure supplement 3B). Previous research reported that PafA from Mycobacterium tuberculosis (Mtb) possesses depupylase activity (Jiang et al., 2018), which may negatively impact pupylation levels of target proteins. Notably, an Mtb PafA mutant with a S119A mutation showed significantly reduced depupylase activity with minimal changes in pupylase activity (Jiang et al., 2018). Based on this, we hypothesized that inhibiting depupylation activity might enhance pupylation. Surprisingly, a PafA mutant with an S126A substitution (analogous to S119A in Mtb PafA) exhibited substantially increased pupylation activity with reduced polypupylation, as evidenced by the decreased levels of high molecular weight bands and an increase in low molecular weight bands (Figure 1—figure supplement 3A and B).
 
-## Validation of POST-IT with dasatinib in vitro
+### Validation of POST-IT with dasatinib in vitro
 
 To assess the efficiency of our optimized Halo-PafA and Pup in pupylating target proteins for a small molecule, we synthesized DH1, a HaloTag ligand (HTL) derivative of dasatinib (Figure 2A; Figure 2—figure supplement 1; Figure 2—figure supplement 2), a well-characterized tyrosine kinase inhibitor used for leukemia treatment (Rix et al., 2007; Shi et al., 2012). Initially, we evaluated the functionality of Halo8KR in Halo8KR-PafA. Fluorescence polarization (FP) assay demonstrates the rapid binding of the Halo-AF488 ligand to Halo8KR-PafA, reaching a plateau in 15–20 min, consistent with a previous report (Los et al., 2008; Figure 2—figure supplement 3A). A Halo-biotin competition assay confirmed further that DH1 could be efficiently linked to Halo8KR-PafA within 15 min (Figure 2—figure supplement 3B and C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig2-v1.jpg)
+
+**Figure 2.:** (A) The chemical structure of DH1, an HTL derivative of dasatinib. (B) Comparison of proximity-tagging by different Halo-PafA derivatives on in vitro pupylation. (C) Comparison of different Pup substrates on in vitro pupylation with 500 nM DH1. (D) Pupylation levels by DH1 decrease with an increasing amount of dasatinib as a competitor, ranging from 0.2 μM to 10 μM. (B–D) All reactions were conducted with 1 μM of a Halo-PafA derivative, 10 μM of one of the different Pup substrates, and 0.5 μM of a purified short SRC with a 2xV5 tag, SRC(247-536)-2xV5, at 37°C for 30 min. Pupylation levels of SRC were assessed by immunoblot (IB) using an anti-V5 antibody.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Reagents and conditions: (a) HATU, DIPEA, DMF, RT, 2 hr; (b) NaOH, THF, H2O, RT, 2 hr. RT, room temperature.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) 1H NMR; (B) HRMS.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Fluorescence polarization (FP) assay using 2 nM of HaloTag Alexa Fluor-488 (Halo-AF488) at 25°C. n = 2. Data are shown as mean ± s.d. (B) Western blot analysis for the Halo-Biotin competition assay. Halo-Biotin (5 μM) was incubated with 1 μM of Myc-Halo8KR-PafA at 37°C for 1 hr after a preincubation with 2 μM of DH1 for the indicated time period. Levels of bound Halo-Biotin were assessed by streptavidin-HRP. (C) Quantitative analysis of western blot results shown in (B). n = 5. Data are shown as mean ± s.e.m. p-Values were calculated by an unpaired two-sided t-test. **p<0.01, ***p<0.001; versus no DH1 competition.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Comparison of proximity-tagging by different Halo-PafA derivatives on in vitro pupylation using TSK8R-sPupK61R. (B) Comparison of different Pup substrates, SBPK4R-sPupK61R and TSK8R-sPupK61R, on in vitro pupylation. All reactions were conducted with 1 μM of a Halo-PafA derivative, 10 μM of a sPup substrate, and 0.5 μM of a purified short SRC with a 2xV5 tag, SRC(247-536)-2xV5, at 37°C for 30 min. Pupylation levels of SRC were assessed by immunoblot (IB) using an anti-V5 antibody.
 
 After demonstrating the functionalities of Halo8KR and DH1, we tested whether SRC, a known target of dasatinib, could be labeled by Halo-PafA in the presence of DH1. Surprisingly, robust pupylation of purified recombinant short SRC occurred exclusively with PafA harboring Halo8KR at its N terminus in the presence of DH1, whereas PafA with Halo8KR at the C terminus showed only modest labeling. This result highlights the importance of eliminating self-pupylation and the N-terminal positioning of HaloTag for effectively labeling the target protein (Figure 2B). We next examined the influence of KR mutations in sPup substrates. Both SBPK4R-sPupK61R and TSK8R-sPupK61R showed substantial levels of pupylation, especially at lower pupylation bands, suggesting increased multipupylation (Figure 2C). The pupylation of SRC by Halo8KR-PafA with DH1 diminished with increasing concentrations of dasatinib, affirming the specificity of this system (Figure 2D). Notably, even with high concentration of SRC and Halo8KR-PafA in the in vitro reaction, no pupylation was detected in the absence of DH1, indicating that the labeling by our PL system is non-diffusive, specific, and proximity-dependent.
 
 Like SBPK4R-sPupK61R, we observed a significant increase in pupylation by PafA with the N-terminal, but not the C-terminal, Halo8KR when using TSK8R-sPupK61R (Figure 2—figure supplement 4A) to a degree similar to that of SBPK4R-sPupK61R (Figure 2—figure supplement 4B). Although TSK8R-sPupK61R serves as an excellent substrate for PafA without causing polypupylation, the lysine mutations in the TS-tag led to a loss of binding to Strep-Tactin beads. Conversely, SBPK4R and sSBP retained their binding to streptavidin, as the core binding sequence of SBP does not require the 1–10 amino acids at the N-terminus (Barrette-Ng et al., 2013). Therefore, we decided to use the SBP-tag as a Pup substrate in the POST-IT system for further studies.
 
-## Validation of POST-IT with dasatinib in cellulo
+### Validation of POST-IT with dasatinib in cellulo
 
 Having successfully verified target protein pupylation by Halo-PafA in vitro, we evaluated our PL system under cellular conditions to minimize artifacts from non-physiological environments such as cell lysates. To mimic drug–target interaction-induced pupylation in live cells and assess the potential of PafA as a proximity-tagging system for target-ID, we incorporated the rapamycin-induced interaction between FRB and FKBP into our PL system as this interaction between a small molecule and a protein is known to be highly specific and robust (Figure 3—figure supplement 1A). Rapamycin treatment led to robust pupylation of FKBP-EGFP by PafA fused with FRB in a Pup-dose dependent manner (Figure 3—figure supplement 1B and C), along with significant self-pupylation independent of rapamycin. Next, we investigated how KR mutations in SBP-sPup substrates affect pupylation efficiency in live cells. Both SBP-sPup and SBPK4R-sPupK61R exhibited efficient pupylation (Figure 3—figure supplement 1D), while sSBP-sPupK61R failed to induce self-pupylation as well as pupylation of FKBP-EGFP, presumably due to its low expression or instability. Consequently, we chose SBPK4R-sPupK61R for subsequent studies to avoid polypupylation, although SBP-sPup did not cause any detectable polypupylation in this case. Interestingly, the presence of rapamycin greatly reduced self-pupylation when using either SBPK4R-sPupK61R or SBP-sPup, as shown in the lower panel of Figure 3—figure supplement 1D, suggesting that PafA constantly pupylates either itself or proximal target proteins. This underscores the importance of minimizing self-pupylation as a critical factor in developing for a better POST-IT system.
 
 Given these findings, we sought to identify additional self-pupylation sites in PafA through mass analysis, uncovering six lysine residues susceptible to self-pupylation (Table 1). Focusing on the most frequently pupylated residue, we introduced an additional KR mutation at K172 (Figure 3—figure supplement 2), generating Halo8KR-PafAS126A,K172R.
 
+**Table 1.**
+ Identification of lysine residues for pupylation in PafA by mass spectrometry.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Protein</th>
+      <th>Score</th>
+      <th>Coverage (%)</th>
+      <th># PSMs*</th>
+      <th>Detected pupylated sequences</th>
+      <th>MH+ (Da)</th>
+      <th>Xcorr</th>
+      <th>Lysine</th>
+      <th>Rank of pupylation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PafA</td>
+      <td>607.055</td>
+      <td>89</td>
+      <td>1197</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>RIMGIETEYGLTFVDGDSKK</td>
+      <td>2502.21808</td>
+      <td>5.40</td>
+      <td rowspan="3">K29</td>
+      <td rowspan="3">3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td>RIMGIETEYGLTFVDGDSKK</td>
+      <td>2518.21299</td>
+      <td>5.35</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td>IMGIETEYGLTFVDGDSKK</td>
+      <td>2362.11188</td>
+      <td>3.71</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>IMGIETEYGLTFVDGDSKK</td>
+      <td>2346.11697</td>
+      <td>3.46</td>
+      <td>K30</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>MFRPIVEKYSSSNIFIPNGSR</td>
+      <td>2702.32428</td>
+      <td>2.93</td>
+      <td>K47</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>MAVDAEESLAK</td>
+      <td>1406.64679</td>
+      <td>3.39</td>
+      <td rowspan="3">K106</td>
+      <td rowspan="3">2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>2</td>
+      <td>MAVDAEESLAKEDIAGQVYLFK</td>
+      <td>2670.29672</td>
+      <td>3.86</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>4</td>
+      <td>MAVDAEESLAKEDIAGQVYLFK</td>
+      <td>2686.29164</td>
+      <td>3.86</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>5</td>
+      <td>IHHPNPLDKGESFPLGYCISQR</td>
+      <td>2808.35222</td>
+      <td>5.10</td>
+      <td rowspan="2">K172</td>
+      <td rowspan="2">1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>3</td>
+      <td>IHHPNPLDKGESFPLGYCISQR</td>
+      <td>2809.33624</td>
+      <td>2.88</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>ILKAADTLGVPVTVDWMR</td>
+      <td>2228.17436</td>
+      <td>3.61</td>
+      <td rowspan="2">K427</td>
+      <td rowspan="2">4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>1</td>
+      <td>ILKAADTLGVPVTVDWMR</td>
+      <td>2244.16928</td>
+      <td>3.49</td>
+    </tr>
+  </tbody>
+</table>
+
+_*PSM: peptide-spectrum match._
+
 To further refine our PL system, we tested the effect of linker length between Halo8KR and PafA on SRC labeling in the presence of DH1. We observed enhanced labeling with a linker longer than 10 amino acids (Figure 3A), prompting us to select an 18-amino acid linker for further studies. We chose the 18-amino acid linker instead of the 40-amino acid linker for easier cloning and to lower the risk of DNA recombination from longer repeats. Additionally, a longer, flexible linker may behave like an intrinsically disordered protein (Harmon et al., 2017), which is an unwanted feature for target-ID. We then confirmed that the S126A and K172R mutations additively enhanced pupylation activity under cellular conditions as the higher molecular weight multipupylation bands were slightly but noticeably increased with these mutations compared to Halo8KR-PafA (Figure 3B). This optimized version of Halo-PafA, Halo8KR-PafAS126A,K172R, in combination with a polypulation-free version of sPup, will be referred to as POST-IT. Unlike wild-type Halo-PafA, which displayed negligible labeling under cellular conditions, POST-IT exhibited significant labeling activity on both exogenous and endogenous SRC in the presence of DH1, generating POST-ITDH1 (Figure 3C–E). Labeling intensity of short SRC increased with higher DH1 concentrations and was competitively inhibited by increasing concentrations of dasatinib (Figure 3F and G), demonstrating the specificity of POST-ITDH1 in target labeling.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig3-v1.jpg)
+
+**Figure 3.:** (A) Effect of linker length between Halo8KR and PafA on target-labeling. HEK293T cells were co-transfected with HA-Halo8KR-PafA containing the specified length of linker, SBPK4R-sPupK61R, and SRC(247-536)-2xV5. (B) Introducing mutations S126A and K172R into PafA significantly enhances its proximity-tagging efficiency on target. (C–E) Comparison of labeling activity of Halo-PafA and Halo8KR-PafAS126A,K172R, a form used for POST-IT. (F, G) POST-ITDH1 mediates proximity-tagging in a DH1-dose dependent manner (F), an effect completely inhibited by competitive dasatinib, ranging from 0.025 to 25.6 μM (G). Pupylation levels of exogenously expressed short SRC (C, F, G), endogenous SRC (D), or pull-downed endogenous SRC (E) were assessed by immunoblot (IB) analysis using antibodies against V5-tag or SRC for exogenous or endogenous SRC, respectively. In all experiments, SBPK4R-sPupK61R was used for co-transfection, and cells were treated with 500 nM DH1, except in (F, G).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic illustration of plasmid constructs and a model of proximity-tagging by PafA. In the presence of rapamycin, HA-FKBP-EGFP and V5-FRB-mKate2-PafA heterodimerize via rapamycin, facilitating proximity for PafA to pupylate HA-FKBP-EGFP. (B) V5-FKBP-EGFP is highly pupylated only in the presence of rapamycin, while FRB-mKate2-PafA undergoes substantial self-pupylation regardless of rapamycin treatment. (C) The pupylation levels of the target, HA-FKBP-EGFP, and the self-pupylation of V5-FRB-mKate2-PafA increase in an HB-Pup dose-dependent manner. (D) Evaluation of different Pup substrates on proximity-tagging and self-pupylation. (B–D) HEK293T cells were co-transfected with HA-FKBP-EGFP, V5-FRB-mKate2-PafA, and an indicated Pup substrate. Twenty-four hours post-transfection, the cells were treated with 100 nM rapamycin for an additional 24 hr. Pupylation levels of HA-FKBP-EGFP and V5-FRB-mKate2-PafA were assessed by immunoblot (IB) using antibodies against HA-tag and V5-tag, respectively.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Mass spectrometry analysis identified K172 as the most frequently pupylated lysine in PafA. An inset provides an enlarged view of the Nano-LC-MS/MS mass spectrum. (B) Constructs of Halo-PafA and Halo8KR-PafAS126A,K172R containing 8KR mutations in HaloTag and mutations of S126A and K172R in PafA.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** HEK293T cells were co-transfected with one of the HA-Halo-PafA derivatives and a sPup substrate as shown above, along with SRC(247-536)-2xV5 as a target. Twenty-four hours later, cells were incubated with 250 nM DH1 for an additional 24 hr. Immunoblot (IB) analysis reveals that PafA from Cglu exhibits robust labeling with sPupK61R, whether from Cglu or Mtb, whereas PafA from Mtb shows no detectable labeling.
 
 In our quest for a superior PafA variant, we investigated the potential of Mtb PafA as a PL system. However, we detected no labeling of short SRC by Mtb PafA, irrespective of the positioning of Halo8KR at the N- or C-terminus (Figure 3—figure supplement 3). In contrast, Halo8KR-PafA (Cglu) exhibited significant pupylation with sPupK61R substrates from both Cglu and Mtb, suggesting a lack of orthogonality among different prokaryotic PafA systems.
 
-## Optimization of the linker of dasatinib-HTL (DH) derivatives
+### Optimization of the linker of dasatinib-HTL (DH) derivatives
 
 Encouraged by the successful labeling of the target protein by POST-ITDH1 in live cells, we next explored its ability to identify known targets and potentially reveal novel binding proteins of dasatinib. To this end, we investigated whether the linker length or structure between dasatinib and the Halo chloroalkane moiety could influence labeling efficiency, as the linker’s characteristics in biomolecules, including PROTAC (Békés et al., 2022), significantly impact their functionalities. Based on a previous report highlighting the enhanced performance of HTLs containing carbamate linkers (Friedman Ohana et al., 2015), we synthesized four additional DH derivatives (DH2-DH5) with varying linker lengths longer than that in DH1 (Figure 4—figure supplements 1–6). These new DH derivatives with carbamate linkers displayed significantly enhanced covalent binding to recombinant Halo8KR-PafA in vitro and to transiently expressed Halo8KR-PafA in intact cells, as measured by FP assays, compared to DH1 (Figure 4A and B). Importantly, the new DH derivatives also showed more robust pupylation of short SRC in vitro and endogenous SRC under cellular conditions (Figure 4C and D). DH5, containing the longest linker, was selected for further experiments due to its excellent efficiency. We then verified that POST-IT could efficiently pull down endogenous SRC in the presence of DH5, an effect attenuated by an excess of dasatinib (Figure 4E). Furthermore, we measured the inhibitory effect of DH5 on SRC kinase activity and confirmed that DH5 retains comparable activity to dasatinib (Figure 4—figure supplement 7).
 
-## Identification of target proteins for dasatinib by POST-IT
+![Figure 4.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig4-v1.jpg)
+
+**Figure 4.:** (A) In vitro binding assay for DH derivatives via fluorescence polarization (FP) assay. Purified Myc-Halo-PafA (15 nM) and 1 nM Halo-AF488 were incubated with various DH derivatives in a serial dilution at 37°C for 30 min prior to FP measurement. n = 2. Data are shown as mean ± s.d. (B) Cellular binding assay for DH derivatives by FP measurement. HEK293T cells transfected with Myc-Halo-PafA were later incubated with 1 μM of each DH derivative or DMSO for 3 hr, followed by cell lysate incubation with 2 nM of Halo-AF488 at 37°C for 30 min. n = 4. Data are shown as mean ± s.e.m. p-Values were calculated by an unpaired two-sided t-test. *p<0.05; **p<0.01; ***p<0.001; versus DMSO. Immunoblot (IB) presents a representative image of the input levels for each condition, demonstrating that treatment with DH derivatives did not alter the expression levels of Myc-Halo-PafA. (C) In vitro labeling activity comparison among DH derivatives. Purified recombinant Halo8KR-PafA (0.5 μM), SBPK4R-sPupK61R (10 μM), and SRC(247-536)-2xV5 (0.5 μM) were incubated with 0.5 μM of each DH derivative at 37°C for 30 min. (D, E) In cellular labeling activity comparison among DH derivatives. HA-Halo8KR-PafA and SBPK4R-sPupK61R were used for co-transfection, and cells were treated with 250 nM of various DH derivatives. Pupylation levels of purified short SRC (C), endogenous SRC (D), or pull-downed endogenous SRC (E) were assessed by IB using anti-V5 or anti-SRC antibodies for exogenous or endogenous SRC, respectively.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Reagents and conditions: (a) NaH, DMF, 0°C, 2 hr; (b) Et3N, DCM, RT, 12 hr; (c) DMF, RT, 2 hr. RT, room temperature.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) 1H NMR; (B) HPLC; (C) HRMS.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) 1H NMR; (B) HPLC; (C) HRMS.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (A) 1H NMR; (B) HPLC; (C) HRMS.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** (A) 1H NMR; (B) HPLC; (C) HRMS.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig4-figsupp7-v1.jpg)
+
+**Figure 4—figure supplement 7.:** (A, B) SRC kinase activity was measured in vitro to assess inhibitory activities of dasatinib (A) and DH5 (B). A purified, catalytically active SRC(251-536), at a concentration of 0.8 μM, was incubated with a serial dilution of either dasatinib or DH5. The IC50 for each compound was determined from their dose-response curves. n = 3. Data are shown as mean ± s.e.m.
+
+### Identification of target proteins for dasatinib by POST-IT
 
 With our optimized POST-IT system and DH5, POST-ITDH5, in hand, we conducted labeling experiments in live cells with or without an excess of dasatinib. After pulling down cell lysates with streptavidin beads, we analyzed biotin-eluted proteins via mass spectrometry. Remarkably, we identified eight known target proteins (FYN, RIPK2, MAPK14, ABL2, ABL1, CSK, LYN, and SRC) with significant enrichment and two known target proteins (GAK and SIK2) with lower confidence (Figure 5A, Figure 5—source data 1). Among these 10 known targets, 5 are tyrosine kinases (FYN, ABL1/2, CSK, LYN, and SRC) and 4 are serine/threonine kinases (RIPK2, MAPK14, GAK, and SIK2). These results validate the effectiveness of our POST-IT system as a target-ID methodology and underscore its potential superiority to other PL systems for target-ID (Hill et al., 2016; Kwak et al., 2022).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig5-v1.jpg)
 
-**Figure 5.:** DH5.(A) Volcano plot displaying the relative fold change (FC) of DH5-binding proteins compared to those with dasatinib competition. Known target proteins for dasatinib were highlighted in red, and a newly identified target protein, SEPHS2, was marked in blue. (B, C) Microscale thermophoresis (MST) analysis demonstrates a direct interaction between DH5 and Cy5-labeled SEPHS2 (B) or between dasatinib and Cy5-labeled SEPHS2 (C), yielding Kd values of 11.6 ± 5.7 µM and 9.1 ± 0.8 µM, respectively. n = 2. Data are shown as mean ± s.d. (D) Molecular docking binding pose between dasatinib and SEPHS2. The yellow box indicates the binding pocket, expanded for a closer view. The binding pocket of dasatinib precisely fits into the active sites of SEPHS2. (E) Diagram of 2D molecular docking interaction between SEPHS2 and dasatinib. Red boxes highlight the active sites, and blue boxes indicate residues among HUB nodes.Figure 5—source data 1.
+**Figure 5.:** (A) Volcano plot displaying the relative fold change (FC) of DH5-binding proteins compared to those with dasatinib competition. Known target proteins for dasatinib were highlighted in red, and a newly identified target protein, SEPHS2, was marked in blue. (B, C) Microscale thermophoresis (MST) analysis demonstrates a direct interaction between DH5 and Cy5-labeled SEPHS2 (B) or between dasatinib and Cy5-labeled SEPHS2 (C), yielding Kd values of 11.6 ± 5.7 µM and 9.1 ± 0.8 µM, respectively. n = 2. Data are shown as mean ± s.d. (D) Molecular docking binding pose between dasatinib and SEPHS2. The yellow box indicates the binding pocket, expanded for a closer view. The binding pocket of dasatinib precisely fits into the active sites of SEPHS2. (E) Diagram of 2D molecular docking interaction between SEPHS2 and dasatinib. Red boxes highlight the active sites, and blue boxes indicate residues among HUB nodes.
 
 Additionally, we identified selenophosphate synthetase 2 (SEPHS2) as a novel protein target that binds to dasatinib. SEPHS2, a crucial enzyme for selenoprotein synthesis, exhibits ATP-binding and kinase activities, supporting its potential interaction with dasatinib. To confirm SEPHS2 as a genuine target of dasatinib, we purified the recombinant SEPHS2 protein and measured its binding affinity to DH5 using microscale thermophoresis (MST) analysis (Figure 5B and C). This analysis yielded a dissociation constant (Kd) of 11.6 ± 5.7 µM for DH5 and 9.1 ± 0.8 µM for dasatinib. To elucidate the binding mode of dasatinib to SEPHS2, we performed molecular docking analysis to model their interaction. A previous study using molecular dynamics simulations identified Sec60, Lys63, and Gly319 as active sites and 15 amino acids as key residues or HUB nodes (Nunziata et al., 2019). Remarkably, the docking analysis revealed a favorable binding mode for dasatinib within the active sites of SEPHS2, with a Vina score of –9.9 (Figure 5D). In the binding pocket of SEPHS2, dasatinib engages in multiple interactions, including pi-cation or cation-π interaction with Lys63 and Van der Waals interaction with Gly319 in the active sites, along with hydrophobic interactions with Phe130 and Phe140, Van der Waals interaction with Phe320, and a hydrogen bond with His325 among the HUB nodes (Figure 5E). Collectively, these results suggest that SEPHS2 is a novel protein target for dasatinib, indicating that dasatinib may impact SEPHS2 function.
 
-## Identification of target proteins for chloroquine by POST-IT
+### Identification of target proteins for chloroquine by POST-IT
 
 To further demonstrate the effectiveness of the POST-IT system in target-ID, we applied it to identify target proteins for HCQ, using it as an additional model ligand. HCQ has a long history of clinical use for treating malaria, rheumatoid arthritis, and lupus. Moreover, it has been widely used in research as an autophagy inhibitor, a property gaining interest in the development of cancer therapy (Jain et al., 2023). Despite its broad application, the precise mechanisms through which HCQ inhibits autophagy and the pathways through which HCQ or chloroquine (CQ) elicit adverse effects such as psychiatric symptoms, retinal and ototoxicity, cardiac toxicity, and even death (Muller, 2021; Nirk et al., 2020) remain to be fully understood.
 
 First, we synthesized a dimer form, DC661-H1, of a CQ HTL derivative with the same linker used for DH5 (Figure 6—figure supplements 1A; Figure 6—figure supplement 2 and Figure 6—figure supplement 3), assuming that a dimer would enhance binding affinity as previously described (Rebecca et al., 2019). We confirmed that DC661-H1 and DC660, an analog of DC661-H1 without HTL, induced robust LC3-II bands in two mammalian cell lines to a similar extent as HCQ, indicating that they function as potent autophagy inhibitors (Figure 6—figure supplement 1B). To test the versatility of POST-IT as a tool for mass analysis, POST-IT was coupled with stable isotope labeling with amino acid in cell culture (SILAC) for target-ID. Heavy-Lys/Arg-labeled HEK293T cells expressing POST-IT were treated with DC661-H1 and DMSO, while light-Lys/Arg-labeled HEK293T cells expressing POST-IT were treated with DC661-H1 and an excess of competitive DC660, as described in Figure 6—figure supplement 4. Intriguingly, POST-IT identified several target proteins directly linked to autophagy regulation (Figure 6A, Figure 6—source data 3). Hence, we aimed to verify whether DC660 and HCQ bind to these autophagy-related proteins. Among them, we purified five recombinant proteins, including TOM1, TOM1L2, TRAPPC3, VPS29, and VPS37C, and measured their binding properties using MST analysis. TOM1, TOM1L2, and TRAPPC3 appeared to bind well to DC660 but failed to acquire Kd values due to abnormal thermophoretic movement, suggesting non-homogeneous aggregation (Figure 6—figure supplement 5A–C). VPS29 showed dose-dependent binding to DC660, yielding a Kd of 24.95 ± 11.71 µM (Figure 6—figure supplement 5D). However, binding to HCQ was negligible in these proteins (Figure 6—figure supplement 5E–H). These results support the validity of our POST-IT as a PL system for live cell target-ID, as all tested proteins showed binding ability to DC660.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig6-v1.jpg)
+
+**Figure 6.:** (A) Rank plot analysis of SILAC ratio values of proteins in three biological replicates. Autophage-related proteins ranked highly are marked in red. Heavy-labeled cells were treated with 200 nM DC661-H1, whereas light-labeled cells underwent incubation with both DC661-H1 (200 nM) and competitive DC660 (2 µM). (B, C) Microscale thermophoresis (MST) analyses demonstrate direct interactions of DC660 (B) and HCQ (C) with VPS37C, yielding Kd values of 21.5 ± 9.8 nM and 16.9 ± 8.7 µM, respectively. n = 2. Data are shown as mean ± s.d. (D, E) Immunoblot results indicate that the VPS37C-V5 protein from cells treated with DC661-H1 was significantly enriched after streptavidin pulldown. The competition between DC661-H1 and either DC660 (D) or HCQ (E) nearly completely abolished VPS37C binding. HEK293T cells were co-transfected with HA-Halo8KR-PafAS126A,K172R, SBPK4R-sPupK61R, and VPS37C-V5. After 24 hr, cells were incubated with 200 nM of DC661-H1, with or without 2 µM of DC660 (D) or HCQ (E). Twenty-four hours later, cells were collected for further analysis. (F, G) Cellular thermal shift assay (CETSA) results demonstrate that VPS37C becomes thermostable when exposed to DC660 (F) or HCQ (G). Selective stabilization of VPS37C is evident at temperatures of 53°C or higher, a phenomenon not observed in β-actin.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The chemical structure of DC661-H1, annotated with key functional groups. (B) Autophagy inhibition by DC661-H1 was assessed through the increased levels of the LC3-II band by western blot using an anti-LC3B antibody. DC661-H1 significantly increased the levels of LC3-II in both HEK293T and A375 cells, comparably to HCQ and DC660, an analog of DC661 that lacks a methyl group at the central linker nitrogen. Cells were treated with the indicated concentration of each compound for 12 hr prior to western blot analysis.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Reagents and conditions: (a) Pd(OAc)2, BINAP, K3PO4, 1,4-dioxane, 100°C, 12 hr; (b) K2CO3, DMF, 80°C, 12 hr; (c) TFA, DCM, RT, 1 hr; (d) HATU, DIPEA, RT, 2 hr; (e) DMF, RT, 2 hr. RT, room temperature.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** 1H NMR of DC660.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** A PiggyBac (PB) plasmid construct containing the POST-IT system was co-transfected with the Super PiggyBac Transposase expression vector into HEK293T cells. Four days later, the cells were treated with 5 µg/ml puromycin for approximately 2 weeks. Media containing puromycin were changed every 3–4 days. Cells were divided into two groups and treated with either heavy (K8R10) or light medium (K0R0). The expression of POST-IT was induced by the addition of 100 ng/ml doxycycline. Two days later, 500 nM DC661-H1 was added to the heavy medium, or 500 nM DC661-H1 and 5 µM DC660 to the light medium. After 24 hr of incubation, cell lysates were prepared, pulled down by streptavidin magnetic beads, washed sequentially with wash buffer A and then wash buffer B, and eluted with 5 mM biotin and 10 µM DC660. The eluates were combined and precipitated using TCA/DOC, separated by Tricine-SDS-PAGE, and analyzed by LC-MS/MS. Refer to the ‘Materials and methods’ section for more details.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig6-figsupp5-v1.jpg)
+
+**Figure 6—figure supplement 5.:** (A–C) Thermophoretic movement of DC660 bound to purified target proteins labeled with Cy5 dye. TOM1L2, TOM1, and TRAPPC3 exhibited ligand-induced aggregation, suggesting their interaction with DC660. (D–H) Dose–response curves of normalized fluorescence changes for target proteins binding. VPS29 demonstrated substantial affinity to DC660 with a Kd of 24.95 ± 11.71 µM (D), but showed no binding to HCQ (H). TOM1L2, TOM1, and TRAPPC3 did not show detectable binding to HCQ (E–H). n = 2. Data are shown as mean ± s.d.
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig6-figsupp6-v1.jpg)
+
+**Figure 6—figure supplement 6.:** (A) Structural superposition of VPS37C with other members of the VPS37A/B/D family reveals high structural similarities within the VPS37 family. The crystal structure of the ESCRT-1 complex from yeast (2P22) is shown on the far right. STP22 and SRN2 are yeast orthologs of VPS23(TSG101) and VPS37, respectively. (B) Molecular docking binding poses of DC661 with the VPS37 family. (C) Molecular docking binding poses of HCQ with the VPS37 family.
+
 Next, we investigated the binding affinity of VPS37C to DC660 and HCQ using purified recombinant protein. MST analysis revealed a very high binding affinity of VPS37C to DC660 with a Kd value of 21.5 ± 9.8 nM (Figure 6B). Notably, VPS37C also exhibited moderate binding affinity to HCQ (Figure 6C). This result prompted us to further explore the binding ability of VPS37C under cellular conditions. First, we performed POST-IT labeling in HEK293T cells expressing VPS37C with a V5-tag, followed by pulldown using streptavidin beads. VPS37C was substantially enriched in the presence of DC661-H1, but its binding was almost completely abolished by competitive DC660 or HCQ (Figure 6D and E). Furthermore, through a CETSA experiment, we observed that VPS37C became more stable in the presence of DC660 or HCQ than in the DMSO condition, upon exposure to increasing temperatures from cell lysates (Figure 6F and G). Collectively, these results provide strong evidence that VPS37C binds to DC661 (or DC660) as well as HCQ in vitro and in live cells, suggesting a potential role of VPS37C in the action mechanism of CQ or HCQ in inhibiting autophagy.
 
-## In vivo application of POST-IT as a target-ID system
+### In vivo application of POST-IT as a target-ID system
 
 Phenotype-based screening is gaining increased recognition as a powerful strategy for discovering novel compounds, superior drugs, or uncovering unknown biological mechanisms, such as the non-canonical translation discovered in our previous study using this approach (Jin et al., 2018). Zebrafish have emerged as an excellent in vivo whole-animal model system for small molecule screening and drug discovery. They are vertebrates, highly prolific, and amenable to high-throughput chemical screens, often leading to the serendipitous discovery of novel compounds (Patton et al., 2021). However, target-ID remains a major hurdle in understanding the mechanisms of action of novel compounds, thereby delaying the advancements in drug development. Therefore, we set out to test the applicability of POST-IT as an efficient method for target-ID in zebrafish.
 
 To this end, we first generated a robust, ubiquitous expression plasmid for POST-IT in zebrafish using an optimized QF-binary system (Burgess et al., 2020). This system combines a DNA binding domain from the QF transactivator fused with an activation domain from the Gal4 transactivator, creating QFGal4, which binds to five repeats of QUAS, leading to gene activation. POST-IT, tagged with a 3×FLAG, is inserted following a 2A ribosome-skipping sequence, allowing for the simultaneous expression of QFGal4 and POST-IT under the control of a ubiquitous promoter, ubb (Figure 7A). We chose the ubb promoter over tissue-specific promoters to more accurately evaluate the levels and potential toxicity of transgene expression. The expression of SBPK4R-sPupK61R is driven by a 5×QUAS promoter, and EGFP is incorporated upstream of a 2A sequence as an expression marker. All these components are assembled in a single plasmid to simplify transgenesis. Embryos injected with this plasmid displayed robust EGFP expression throughout their entire bodies without observable toxicity, indicating the suitability of the POST-IT system in zebrafish (Figure 7B, Figure 7—figure supplement 1A). In addition, we generated a transgenic zebrafish line that expresses POST-IT under a heat-shock promoter. Embryos from this transgenic line show no obvious toxicity after heat shock (Figure 7—figure supplement 1B and C). Note that the expression pattern of EGFP is non-homogeneous due to the mosaic expression of the injected plasmid (Figure 7B). After treating live embryos with DH5 or DMSO, we observed marked enrichment of endogenous SRC in embryos treated with DH5 but not in those treated with DMSO, although expression levels of POST-IT were slightly lower in the DH5 group due to injection variability (Figure 7C). Together, these results demonstrated that POST-IT can be effectively utilized as a transgene in zebrafish without toxicity and applied for in vivo target-ID.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig7-v1.jpg)
+
+**Figure 7.:** (A) Schematic of experimental design for applying POST-IT in zebrafish. A plasmid construct containing the POST-IT system was injected into embryos at the one-cell stage. The injected embryos were dechorionated 24 hr later, and then treated with DH5 or DMSO for an additional 24 hr. Embryos lysates were collected and analyzed by immunoblot. (B) Representative images of injected embryos. Bright-field (BF) images reveal no overt toxicity from POST-IT expression. EGFP images display robust expression of POST-IT. Scale bar, 500 µm. (C) Immunoblot analysis demonstrates that POST-IT exhibits significant enrichment of SRC in the presence of DH5 but not DMSO.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/102667/elife-102667-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Quantitative analysis shows that embryos injected with POST-IT plasmid exhibit no signs of toxicity. Embryos were injected at one-cell stage, and phenotypes were assessed 24 hr later. n = 3. Data are shown as mean ± s.e.m. (B) Representative images of transgenic zebrafish embryos expressing heat-shock-inducible POST-IT show no obvious toxicity after heat shock. EGFP images confirm robust expression of POST-IT. Healthy embryos at 1 dpf were treated at 39°C for 30 min and imaged at 2 dpf. Scale bar, 500 µm. (C) Quantitative data related to (B) indicate that POST-IT expression following heat treatment does not cause toxicity. n = 3. Data are shown as mean ± s.e.m.
 
 ## Discussion
 
@@ -113,7 +386,556 @@ In conclusion, POST-IT represents a significant advancement in the field of targ
 
 ## Materials and methods
 
-## Plasmid construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SRC</td>
+      <td>NCBI</td>
+      <td>NM_005417.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>VPS37C</td>
+      <td>NCBI</td>
+      <td>NM_017966.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>SEPHS2</td>
+      <td>NCBI</td>
+      <td>NM_012248.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio, AB)</td>
+      <td>Zebrafish</td>
+      <td>Institute of Hydrobiology, Wuhan, China</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Weidibio</td>
+      <td>Cat# EC1002</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>ArticExpress(DE3)</td>
+      <td>HaiGene</td>
+      <td>Cat# K0004</td>
+      <td>Electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216, RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>A375</td>
+      <td>ATCC</td>
+      <td>CRL-1619, RRID:CVCL_A375</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LC3B (rabbit monoclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat# A19665, RRID:AB_2862723</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V5-tag (rabbit monoclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat# AE089</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Myc-tag (rabbit monoclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat# AE070, RRID:AB_2863795</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA-tag (mouse monoclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat# AE008, RRID:AB_2770404</td>
+      <td>WB (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag-tag (rabbit monoclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat# AE092, RRID:AB_2940847</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-Actin (rabbit monoclonal)</td>
+      <td>ABclonal</td>
+      <td>Cat# AC026, RRID:AB_2768234</td>
+      <td>WB (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Src(36D10) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2109, RRID:AB_2106059</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-Myc-Halo-PafA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-HB-Pup</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-SBP-sPup</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-TS-sPup</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-TS-sPup(K61R)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-TS(K1,2R)-sPup(K61R)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-SBP(K4R)-sPup(K61R)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-sSBP-sPup(K61R)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-Halo(8KR)-PafA-6xHis</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-mycHalo-PafA(S126A)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6P-2-PafA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-6P-2-2xmycPafA(S126A)-Halo(8KR)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-SRC(251-536)-2xV5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-N-SBPII-SEPHS2(U60C)-2xV5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET28a-SAVSBPM18-XTEN-DBD</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pTol2-3xHA-FKBP-EGFP-pA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol2-3xV5-FRB-mKate2-PafA-2ApA-CK2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF6a~HB-PupE</td>
+      <td>PMID:30104635</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF6a~SBP-sPup</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF6a~SBP(K4R)-sPup(K61R)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF6a~sSBP-sPup(K61R)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol2-HA-Halo-PafA-2ApA-CK2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol2-HA-His-Halo(8KR)-5aa-PafA-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol2-HA-His-Halo(8KR)-10aa-PafA-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol2-HA-His-Halo(8KR)-18aa-PafA-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol2-HA-His-Halo(8KR)-40aa-PafA-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol2-HA-His-Halo(8KR)-18aa-PafA(S126A)-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol2-HA-His-Halo(8KR)-18aa-PafA(S126A,K172R)-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol2-SRC(247-536)-2xV5-2ApA-CK2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEF6a~SBP(K4R)-tbsPup(K61R)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol2-HA-His-Halo(8KR)-tbPafA-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTol2-HA-His-tbPafA-Halo(8KR)-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PB-Tet-Halo(8KR)-PafA(S126A,K172R)-Ter3G-SBP(K4R)-sPup(K61R)-ires-PuroR-P2A-EGFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHAGE-ires-Puro-VPS37C-2xV5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUbi-QFGal4-2A-POST-IT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pHsp-QFGal4-2A-POST-IT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid construction (Dr. YN Jin lab)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>RR-SRC peptide (RRLIEDAEYAARG)</td>
+      <td>Sangon</td>
+      <td>Cat# T510264-0001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Kinase-Lumi Luminescent Kinase Assay Kit</td>
+      <td>Beyotime</td>
+      <td>Cat# S0150S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DH1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Chemical synthesis (Dr. H-B Zhou lab)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DH2</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Chemical synthesis (Dr. H-B Zhou lab)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DH3</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Chemical synthesis (Dr. H-B Zhou lab)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DH4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Chemical synthesis (Dr. H-B Zhou lab)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DH5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Chemical synthesis (Dr. H-B Zhou lab)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DC661-H1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Chemical synthesis (Dr. H-B Zhou lab)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DC660</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Chemical synthesis (Dr. H-B Zhou lab)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydroxychloroquine</td>
+      <td>TargetMol</td>
+      <td>Cat# T9287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dasatinib</td>
+      <td>Shanghai yuanye Bio-Technology</td>
+      <td>Cat# S45672-25MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HaloTag Alexa Fluor 488 Ligand</td>
+      <td>Promega</td>
+      <td>Cat# G1001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HaloTag Biotin Ligand</td>
+      <td>Promega</td>
+      <td>Cat# G8281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>PMID:22743772</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9.5</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQuant (2.1.0.0)</td>
+      <td>PMID:19029910</td>
+      <td>RRID:SCR_14485</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FragPipe software v20.0</td>
+      <td>PMID:28394336</td>
+      <td>RRID:SCR_14485</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Streptavindin-HRP</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3999, RRID:AB_10830897</td>
+      <td>WB (1:5000), for Halo-biotin competition assay</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dialyzed fetal bovine serum (FBS)</td>
+      <td>VivaCell</td>
+      <td>Cat# C3820-0100</td>
+      <td>For SILAC experiment</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>L-Lysine∙HCl</td>
+      <td>aladdin</td>
+      <td>Cat# L113006-25g</td>
+      <td>For SILAC experiment</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>L-Arginine∙HCl</td>
+      <td>aladdin</td>
+      <td>Cat# 1119-34-25g</td>
+      <td>For SILAC experiment</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>L-Proline</td>
+      <td>aladdin</td>
+      <td>Cat# P120032-25g</td>
+      <td>For SILAC experiment</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>13C615N2 labeled L-lysine∙HCl</td>
+      <td>Silantes</td>
+      <td>Cat# 211603902</td>
+      <td>For SILAC experiment</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>13C615N4 labeled L-arginine∙HCl</td>
+      <td>Silantes</td>
+      <td>Cat# 201603902</td>
+      <td>For SILAC experiment</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SILAC DMEM</td>
+      <td>Silantes</td>
+      <td>Cat# 280001200</td>
+      <td>For SILAC experiment</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmid construction
 
 Plasmids were typically constructed by the HiFi DNA assembly method using 2×MultiF Seamless Assembly Mix (RK21020, ABclonal, China). PCR amplification was carried out with a high-fidelity DNA polymerase, Phanta Max Super-Fidelity DNA Polymerase (P505-d1, Vazyme, China). All restriction enzymes were from New England Biolabs, USA. In general, the pTol2-EGFP-2ApA-CK2 or pTol2-EGFPpA vector, developed in our lab (Jin et al., 2018), was used for mammalian expression, and the pET28a vector was utilized for recombinant protein expression in Escherichia coli, unless specified otherwise. All DNA constructs were validated by Sanger sequencing.
 
@@ -123,7 +945,7 @@ Target proteins, such as SRC, SEPHS2, VPS37C, TOM1, TOM1L2, TRAPPC3, and VPS29, 
 
 FKBP and FRB were synthesized by Tsingke Biotechnology (Wuhan). FKBP, tagged with a 3×HA, was inserted into the NotI and EcoRI sites of pTol2-EGFPpA, generating pTol2-3×HA-FKBP-EGFPpA. FRB, tagged a 3xV5, and mKate2 were assembled into the NotI and XmaI sites of pTol2-Myc-Halo-PafA-2ApA-CK2, resulting in pTol2-3xV5-FRB-mKate2-PafA-pA. To make a stable cell line, CMV-HA-Halo8KR-PafAS126A,K172R, SBPK4R-sPupK61R, TRE3G (a Tet-On promoter), Tet-On 3G transactivator, IRES-EGFP, and Puro were PCR amplified and assembled into pPB-mU6pro (a gift from Zhou Yan, Wuhan University), generating PB-puro-CMV-POST-IT-Tet-SBPK4R-sPupK61R-iresGFP. The expression of SBPK4R-sPupK61R was induced by the application of doxycycline via the Tet-On promoter. The P2A, a 2A ribosome-skipping sequence, was placed between HA-Halo8KR-PafAS126A,K172R, the Tet-On 3G transactivator, and PuroR to allow for simultaneous expression of the three genes. For the expression of POST-IT in zebrafish, QFGal4, Halo8KR-PafAS126A,K172R, 5×QUAS, EGFP, and SBPK4R-sPupK61R, were PCR amplified and assembled into the ClaI site of pUbi-QF-CK or pHsp-QF-CK, plasmids developed in our lab for use with the Tol2 transposon system. This assembly resulted in pUbi-QFGal4-2A-POST-IT and pHsp-QFGal4-2A-POST-IT, respectively. The P2A sequence was inserted between QFGal4 and Halo8KR-PafAS126A,K172R, as well as between EGFP and SBPK4R-sPupK61R.
 
-## Recombinant protein expression and purification
+### Recombinant protein expression and purification
 
 E. coli BL21(DE3) cells were transformed with a plasmid for expression of His-tagged or GST-tagged protein, and cultured in LB medium containing 100 µg/ml of either ampicillin or kanamycin overnight at 37°C until the OD600 reached 0.6–0.7. Protein expression was induced by adding 0.1–0.5 mM IPTG and incubating at 16°C for 16–20 hr. The bacterial culture was then centrifuged at 6000 × g for 15 min at 4°C. The pellet was resuspended in E. coli-lysis buffer (50 mM Tris-HCl pH 8.0, 300 mM NaCl, 10 mM imidazole, 5% glycerol, 1 mM PMSF), lysed by either sonication or a high-pressure homogenizer (AH-1500, ATS Engineering, China), and subsequently centrifuged at 24,000 × g at 4°C for 30 min. PMSF stock solution (200 mM in isopropanol) was freshly added to the appropriate buffer to achieve the final concentration.
 
@@ -133,31 +955,31 @@ For GST purification via a GST-tag, the cleared supernatant was loaded onto glut
 
 For coVPS37C purification, a protocol using a mutant streptavidin, SAVSBPM18, was applied with minor modifications as previously shown (Wu et al., 2019). The synthesized SAVSBPM18 and DBD (dextran binding domain) were subcloned into the NcoI and XhoI sites of pET28a, creating pET-28a-SAVSBPM18-XTEN-DBD, which was then transformed into E. coli BL21(DE3) cells. The coVPS37C plasmid was transformed into the E. coli ArcticExpress (DE3) strain. The E. coli cells were cultured at 37°C until the OD600 reached 0.6, at which point protein expression was induced by adding 0.2 mM IPTG. The E. coli cells were subsequently cultured at 12°C overnight and processed to get cleared cell lysates as described above. E. coli cell lysates expressing SAVSBPM18-XTEN-DBD were prepared and mixed with coVPS37C lysates at a 1:4 ratio. After 1 hr of incubation at 4°C, the mixture was loaded onto Ni Sepharose 6 Fast Flow resin (17531801, Cytiva, USA), washed with Ni-wash buffer, and eluted with elution buffer 2. The eluate was then mixed with Sephadex-G100 (BS210, Biosharp, China) for 1 hr at 4°C, washed with Ni-wash buffer, and eluted with SBP elution buffer (10 mM biotin, 50 mM Tris-HCl pH 8.0, 300 mM NaCl). The final eluate was collected, concentrated, and stored in storage buffer through buffer exchange using an Amicon Ultra Centrifugal Filter (UFC9050, UFC9030, UFC9010, Millipore, USA). All purified proteins were stored at –80°C until use.
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 HEK293T (CRL-3216, ATCC, USA) and A375 (CRL-1619, ATCC) cells were confirmed to be Mycoplasma-negative and cultured in Dulbecco’s modified Eagle’s medium (DMEM) (SH30243.01, Cytiva), containing 4.5 g/l glucose, 4 mM glutamine, and 1 mM sodium pyruvate, supplemented with 10% FBS (SA211.02, Cellmax, China), 100 U/ml penicillin, and 100 µg/ml streptomycin at 37°C with 5% CO2. Transient transfections were performed using LipoJet (SL100468, SignaGen, USA), following the manufacturer’s instruction. The identity of these cells was authenticated through SRT profiling.
 
-## Fluorescence polarization assay
+### Fluorescence polarization assay
 
 The FP assay was conducted using a SpectraMax i3x microplate reader (Molecular Devices, USA) equipped with an FP cartridge (Ex. 485 nm, Em. 535 nm) and a grating (G) factor set to 1.5. Black opaque 96-well micro plates (Beyotime, China) were used for all experiments. For the in vitro time course measurement, 30 nM of Halo8KR-PafA protein and 2 nM of HaloTag Alexa Fluor 488, Halo-AF488, were prepared in PBS buffer, and the parallel (Iv) and perpendicular (Ih) emission intensities were measured in kinetic mode at 20 s intervals for 30 min. The millipolarization units (mP) were calculated using the formula mP = 1000 × [(Iv – G×Ih) / (Iv + G × Ih)]. In the competition assay with DH derivates, 15 nM of Myc-Halo-PafA and 1 nM of Halo-AF488 were incubated with various DH derivatives in serial dilution at 37°C for 30 min before FP measurement, with Iv and Ih measured at the endpoint. For the cellular binding assay, HEK293T cells were co-transfected with 4 µg of pTol2-myc-Halo-PafA-2ApA-CK2 per well in a 6-well plate and incubated for 48 hr. Different DH derivatives at 1 µM or DMSO were added to each well and incubated for 3 hr. Cell lysates were prepared in PBST (PBS with 0.5% Triton X-100), supplemented with a protease inhibitor cocktail (MB2678, MeilunBio, China), through brief sonication followed by centrifugation. Protein concentration was determined by the BCA assay. Cleared cell lysates (5 µg/ul) were incubated with 2 nM Halo-AF488 in a 60 µl volume at 37°C for 30 min. Iv and Ih were measured, and mP was calculated.
 
-## Western blot analysis
+### Western blot analysis
 
 Cells transfected and/or treated with different compounds were harvested at the end of treatment. Cells were washed with ice-cold PBS and lysed with cell lysis buffer that included RIPA buffer (50 mM Tris-HCl pH 7.4, 150 mM NaCl, 1% Triton X-100, 1 mM EDTA, 5% glycerol), supplemented with 20 mM NaF, 2 mM Na3VO4, 0.4% SDS, 0.2% sodium deoxycholate (DOC), and a protease inhibitor cocktail. Following brief sonication, cell lysates were centrifuged at maximum speed for 10 min at 4°C. The supernatant was collected, and the protein concentration was determined using the BCA assay. Samples were diluted to the same concentration, mixed with SDS sample buffer for SDS-PAGE, and boiled for 5–10 min. Proteins were separated by 6% or 8% SDS-PAGE and transferred to polyvinylidene fluoride membrane. The membrane was blocked with 5% skim milk in Tris-buffered saline containing 0.05% Tween-20 (TBST) and incubated overnight at 4°C with the specific antibodies diluted in TBST containing 2% BSA: 1:5,000 anti-V5, 1:2500 anti-HA, 1:5000 anti-Myc, 1:5000 anti-SRC, 1:10,000 anti-β-actin, 1:5000 Streptavindin-HRP. After 3–4 TBST washes, the membrane was incubated with a 1:10,000 HRP-conjugated secondary antibody against rabbit or mouse in TBST containing 5% skim milk for 1 hr at room temperature. Following additional washes, the membranes were developed using chemiluminescence with Clarity Western ECL (1705060, Bio-Rad).
 
-## In vitro pupylation assay
+### In vitro pupylation assay
 
 For the self-pupylation assay, the reaction consisted of 1 µM Halo-PafA (or a mutant protein) and 10 µM of a Pup substrate in 20 µl of pupylation buffer (PBS supplemented with 15 mM MgCl2 and 10 mM ATP), incubated at 37°C for durations ranging from 10 to 180 min as specified in each figure, and stopped by the addition of 2×SDS sample buffer. Proteins were separated in three layers (4, 6, and 10%) Tricine-SDS-PAGE and stained with CBB. To test the effect of different DH derivatives on the pupylation of the target, 1 µM of a Halo-PafA derivative, 0.5 µM SRC(247-536)-2xV5, and 500 nM of a DH derivative were mixed in the pupylation buffer and incubated at room temperature for 30 min. 10 µM of a Pup substrate was then added and the mixture was incubated at 37°C for another 30 min. The reaction was stopped by adding 2×SDS sample buffer, and the western blot assay was performed using an anti-V5 antibody. In the competition assay, a serial dilution of dasatinib from 0.2 µM to 10 µM was added along with 500 nM DH1 to the reaction before the addition of the Pup substrate. For the identification of pupylated lysine residues in PafA, 2.5 µM PafA and 20 µM HA-Pup were mixed in 50 µl of the pupylation buffer at 37°C for 2 hr. The reaction was stopped by adding 2×SDS sample buffer and separated by SDS-PAGE. CBB-stained bands were excised and analyzed by LC-MS/MS.
 
-## In cellulo pupylation assay
+### In cellulo pupylation assay
 
 For the western blot assay, HEK293T cells were plated on 6-well plates and co-transfected as described below. For rapamycin-induced pupylation, HEK293T cells were co-transfected with 1 µg of pTol2−3×HA-FKBP-EGFP-pA, 1 µg of pTol2-3xV5-FRB-mKate2-PafA-2ApA-CK2, and 2 µg of pEF6a-HB-Pup (or one of pEF6a-SBP-sPup derivatives). After 24 hr, 100 nM rapamycin was added to induce binding between HA-FKBP-EGFP and V5-FRB-mKate2-PafA. After 18 hr, cells were harvested and lysed with cell lysis buffer. Samples were then analyzed by western blot assay using antibodies against V5 and HA. To evaluate the levels of target labeling by different Halo-PafA variants or the effect of different drug-HTL derivatives, plates or dishes were coated with 10 µg/ml poly-d-lysine, and HEK293T cells were co-transfected with 1 µg of one of Halo-PafA variants, 2.5 µg of pEF6a-SBPK4R-sPupK61R, and 0.5 µg of pTol2-SRC(247-536)-2xV5. Twenty-four hours later, 250 (or 500 nM) of a DH derivative or 200 nM DC661-H1, unless stated otherwise, was added for an additional 24 hr. Samples were then prepared for western blot analysis. For the competition assay with dasatinib, 100 nM DH1 and a serially increasing concentration of dasatinib, ranging from 0.025 to 25.6 µM with a fourfold increment, were cotreated for 24 hr. For the pulldown assay, cells were plated on 60 mm dishes, co-transfected with 2 µg of one of Halo-PafA variants and 5 µg of pEF6a-SBPK4R-sPupK61R, and lysed using RIPA buffer (50 mM Tris-HCl pH 7.4, 150 mM NaCl, 1% Triton X-100, 1 mM EDTA, 5% glycerol) supplemented with a protease inhibitor cocktail. To exogenously expression a target protein, 1 µg of a target plasmid, such as SRC(247-536)-2xV5 and VPS37C-2xV5, was included in the transfection. Cleared cell lysates were incubated with 50 µl of streptavidin magnetic beads (L-1012, BioLinkedin) for 2 hr at 4°C. The beads were washed five times with wash buffer A (50 mM Tris-HCl pH 7.4, 400 mM NaCl, 1% Triton X-100, 1 mM EDTA, 5% glycerol). Proteins were eluted with 2×SDS sample buffer and processed for western blot analysis.
 
-## Preparation of proteomics samples for target-ID of DH5
+### Preparation of proteomics samples for target-ID of DH5
 
 HEK293T cells were plated on two 100 mm dishes for each condition and co-transfected next day with 8 µg of pTol2-HA-Halo8KR-PafAS126A,K172R and 16 µg of pEF6a-SBPK4R-sPupK61R per dish. After 24 hr, treatments with DMSO, DH5 (250 nM), and a competition containing 250 nM DH5 and 2.5 µM dasatinib were applied and incubated for an additional 24 hr. Cells were harvested in 1 ml of RIPA buffer, supplemented with a protease inhibitor cocktail for each dish. Following brief sonication, cell debris was removed by centrifugation at maximum speed for 10 min at 4°C. The supernatants were collected and mixed with 200 µl of streptavidin magnetic beads that had been prewashed with RIPA buffer. The beads were washed five times with wash buffer A, then three times with wash buffer B (wash buffer A supplemented with 1 M urea), and eluted twice with 100 µl of 5 mM biotin and 2.5 µM dasatinib in wash buffer B for 1 hr. The eluates were combined and precipitated using trichloroacetic acid (TCA)/DOC. The resultant protein pellets were neutralized with 1 M Tris-HCl pH 8.8, and separated by Tricine-SDS-PAGE, and the CBB-stained bands were excised, with those smaller than 10 kD being removed, and processed for mass analysis.
 
-## Preparation of proteomics samples for target-ID of DC661-H1 using SILAC
+### Preparation of proteomics samples for target-ID of DC661-H1 using SILAC
 
 A stable HEK293T cells expressing the POST-IT system was generated using the PiggyBac transposon system. Briefly, HEK293T cells on a 60 mm dish were co-transfected with 8 µg of PB-puro-CMV-POST-IT-Tet-SBPK4R-sPupK61R-iresGFP and 2 µg of the Super PiggyBac Transposase expression vector (PB200PA-1, System Biosciences, USA). Four days later, cells were treated with 5 µg/ml puromycin for about 2 weeks. Media containing puromycin were changed every 3–4 days.
 
@@ -165,100 +987,100 @@ The stable cell line was cultured in SILAC DMEM (280001200, Silantes, Germany) w
 
 The expression of POST-IT was induced by the addition of 100 ng/ml doxycycline. Two days later, 500 nM DC661-H1 was added to the heavy medium, or 500 nM DC661-H1 and 5 µM DC660 to the light medium. After 24 hr of incubation, cells were rinsed with ice-cold PBS and collected with 1 ml RIPA buffer, supplemented with a protease inhibitor cocktail, per dish. Cell debris was removed by centrifugation, and protein concentration was determined by the BCA assay. The protein concentration was adjusted to 2 mg/ml, and 200 µl of prewashed streptavidin magnetic beads was added. After about 3 hr of incubation at 4°C, the beads were washed five times with wash buffer A, three times with wash buffer B, and eluted twice with 100 µl of 5 mM biotin and 10 µM DC660 in wash buffer B for 1 hr. The eluates were combined and precipitated using TCA/DOC. The resultant protein pellets were neutralized with 1 M Tris-HCl pH 8.8, and separated by Tricine-SDS-PAGE, and the CBB-stained bands were excised, with those smaller than 10 kD being removed, and processed for mass analysis.
 
-## LC-MS/MS analysis
+### LC-MS/MS analysis
 
 Excised gels were sliced into small pieces of ~1 mm3, rinsed three times with Milli-Q water, decolorized with 50% acetonitrile and 100 mM NH4HCO3, and dehydrated with 100% acetonitrile. The dehydrated gel pieces were then reduced with 10 mM DTT in 50 mM NH4HCO3 at 56°C for 1 hr, carboxymethylated with 55 mM iodoacetamide in the dark at room temperature for 30 min, and digested with trypsin at a 1:50 enzyme to protein mass ratio at 37°C overnight. The peptides were collected, desalted with ZipTipC18 (ZTC18S096, Millipore, USA), dried under vacuum, and stored at –20°C until MS analysis. The resulting tryptic peptides were analyzed by LC-MS/MS at the Institute of Hydrobiology (Chinese Academy of Sciences, Wuhan, China). LC-MS/MS data acquisition was performed using a Q Exactive HF-X mass spectrometer coupled with an Easy-nLC 1200 system (Thermo Fisher Scientific, USA). The peptide mixtures were initially loaded onto a C18 trap column and subsequently separated on a C18 reverse-phase analytical HPLC column, Acclaim PepMap C18 column (75 µm ID ×250 mm, 2 µm particle size, 100 Å pore size, Thermo Fisher Scientific), employing a 100 min gradient program with mobile phase A (0.1% formic acid) and mobile phase B (80% acetonitrile, 0.1% formic acid). The gradient program was as follows: 0–65 min, 5–23% B; 65–85 min, 23–45% B; 85–86 min, 45–90% B; 87–90 min, 90% B; 90–90.1 min, 90–5% B; 90.1–100 min, 5% B, maintained at a constant flow rate of 300 nl/min. For data-dependent acquisition mode analysis, each scan cycle consisted of one full-scan mass spectrum (R = 60 K, AGC = 3e6, max IT = 20 ms, scan range = 350–1800 m/z) followed by 20 MS/MS events (R = 15 K, AGC = 2e5, max IT = 50 ms). The higher-energy collisional dissociation collision energy was set to 28 for ion fragmentation. The isolation window for precursor selection was set to 1.6 Da. The former target ion exclusion was set for 25 s.
 
-## Mass spectrometry and data analysis
+### Mass spectrometry and data analysis
 
 For the identification of DH5 targets, raw MS data were analyzed using MaxQuant (version 2.1.0.0, Max Planck Institute of Biochemistry; Cox and Mann, 2008) with the Andromeda search engine. The MS data were aligned to the UniProt human protein database (Proteome ID: UP000005640). Additional sequences, including Halo8KR-PafAS126A,K172R and SBPK4R-sPupK61R, were integrated to identify potential proteomics contaminants. Variable modifications included oxidation (M), acetyl (Protein N-term), deamidation (NQ), and GGE (K). The false discovery rate for both peptide and protein identification was set at 1%. The ‘Match Between run’ option were enabled, with other settings at their default values. Missing values from identified proteins were filled through random imputation and further analyzed statistically to derive p values through unpaired SAM analysis using PANDA-view (Chang et al., 2018). Proteins commonly present under DMSO condition were considered nonspecific background interactions and excluded from further analysis.
 
 For the SILAC experiments to identify DC661 targets, raw MS data were analyzed with FragPipe software v20.0 employing the MSFragger search engine (Kong et al., 2017). Alignment was performed against the UniProt human protein database (Proteome ID: UP000005640). Halo8KR-PafAS126A,K172R and SBPK4R-sPupK61R sequences were incorporated as proteomics contaminants. The SILAC3 workflow was utilized with the default settings for light and heavy SILAC labels. Proteins detected fewer than two times across three biological replicates or exhibiting a high frequency of occurrence (>0.15) in CRAPOME (Mellacheruvu et al., 2013) were filtered out from the analysis.
 
-## MST assay
+### MST assay
 
 SEPHS2-2xV5, VPS37C-2xV5, VPS29, TRAPPC3, TOM1, and TOM1L2 were labeled using Cy5-NHS ester (A100932, Sangon Biotech, China). Briefly, each target protein was diluted to 10 µM in PBS and underwent buffer exchange with PBS using a Zeba spin desalting column (89882, Thermo Scientific, USA) to remove Tris. The labeling reaction consisted of 80 µl of 10 µM target protein, 10 µl of 1 M NaHCO3 pH 8.3, and 10 µl of 1 mM Cy5-NHS ester in DMSO, and was incubated at 4°C overnight. The next day, unlabeled dyes were removed using Zeba spin desalting columns, and labeling efficiency was assessed by measuring the concentration of Cy5 with a UV-Vis spectrophotometer (SMA5000, Merinton, China). Dasatinib, DH5, HCQ, or DC660 was serially diluted in ligand buffer (PBS with 0.1% Tween-20). Cy5-labeled SEPHS2-2xV5 (5 nM), VPS37C-2xV5 (5 nM), VPS29 (10 nM), TRAPPC3 (10 nM), TOM1 (10 nM), or TOM1L2 (10 nM) was mixed with the corresponding diluted compound in a total volume of 20 µl, and then loaded into Monolith premium capillaries (MO-K025, NanoTemper, Germany). Binding affinity analysis was performed using a NanoTemper Monolith NT.115 instrument (NanoTemper). Kd values were obtained using MO.Affinity Analysis 2.3.0 software (NanoTemper).
 
-## Molecular docking simulation for protein–ligand interaction
+### Molecular docking simulation for protein–ligand interaction
 
 The docking simulation was performed using CB-Dock2 (https://cadd.labshare.cn/cb-dock2/index.php), a web server that provides protein–ligand blind docking utilizing Autodock Vina (version 1.1.2). The blind docking simulation was conducted via protein-surface curvature-based cavity detection approach following the website procedures. The SEPHS2 structure information, ma-y60vo.cif, was obtained from the ModelArchive database (https://doi.org/10.5452/ma-y6ovo; Nunziata et al., 2019). The PDB files of VPS37 family proteins (Q8NEZ2, VPS37A; Q9H9H4, VPS37B; A5D8V6, VPS37C; Q86XT2, VPS37D) were downloaded from AlphaFold database (https://alphafold.ebi.ac.uk/), and the structure of the yeast ESCRT-I heterotetramer core (2P22) was retrieved from the RCSB protein data bank (https://www.rcsb.org/). Ligand files were downloaded from PubChem as sdf files. The superposition of VPS37C with other VPS37A/B/D proteins was performed using the US-align (Universal Structural alignment) website (https://zhanggroup.org/US-align/; Zhang et al., 2022). UCSF ChimeraX 1.6.1 was employed for analyzing, editing, and visualizing the resulting PDB files.
 
-## Cellular thermal shift assay (CETSA)
+### Cellular thermal shift assay (CETSA)
 
 HEK273T cells were cultured on a 100 mm dish and transfected with 10 µg of VPS37C-2xV5 plasmid. Forty-eight hours later, the cells were washed twice with ice-cold PBS, harvested in 1 ml of PBS buffer supplemented with 0.4% NP-40 and 0.5×protease inhibitor cocktail, incubated for 15 min with gently rotation at room temperature, and centrifuged at maximum speed for 15 min at 4°C. The supernatant was transferred to a new 1.5 ml microtube, and protein concentration was determined by a BCA assay. Cell lysates were diluted to a concentration of 2 mg/ml and divided into two groups. The drug group was treated with 20 µM of DC660 or HCQ, while the control group received the same amount of DMSO. After a 20 min incubation at room temperature, cell lysates were gently mixed and aliquoted into PCR tubes with 40 µl each, then subjected to heat treatment for 4 min, ranging from 47°C to 59°C in 2°C increments, and cooled to room temperature on a T100 thermal cycler (Bio-Rad, USA). Subsequently, cell lysates were transferred to 1.5 ml microtubes and centrifuged at maximum speed for 20 min at 4°C to precipitate unstable insoluble proteins. The supernatant was transferred to a new 1.5 ml microtube, and 10 µl of 5×SDS sample buffer was added to each tube. Samples were boiled at 95°C for 5 min and processed for western blot analysis.
 
-## SRC kinase activity assay
+### SRC kinase activity assay
 
 Purified recombinant short SRC(247-536) (0.8 µM), 10 µM ATP, and 40 µM of RR-SRC peptide, RRLIEDAEYAARG (T510264-0001, Sangon Biotech) were prepared in SRC Kinase Buffer containing 40 mM Tris-HCl pH 7.5, 20 mM MgCl2, 0.1 mg/ml BSA, 2 mM MnCl2, and 50 µM DTT. After a 1 hr incubation at room temperature, ATP levels were determined using the Kinase-Lumi luminescent kinase assay (S0150S, Beyotime) according to the manufacturer’s instruction. To measure the IC50 values for dasatinib and DH5, dasatinib or DH5 in serial dilution was added to the SRC kinase reaction, and ATP levels were measured as outlined above. Relative SRC activities were calculated as compared to the DMSO condition, set as 100%.
 
-## Zebrafish husbandry
+### Zebrafish husbandry
 
 Wild-type AB zebrafish were maintained under standard conditions at 28.5°C, with a 14 hr light and 10 hr dark cycle. Embryos were obtained from several matings, typically involving 1 male and 1–2 females, and were incubated in zebrafish E3 medium (5 mM NaCl, 0.17 mM KCl, 0.33 mM CaCl2, and 0.33 mM MgSO4) at 28.5°C with the same light–dark cycle. The Animal Care and Use Committee of Wuhan University (No. AF078) provided approval for all procedures involving animals.
 
-## In vivo pupylation assay using zebrafish embryos
+### In vivo pupylation assay using zebrafish embryos
 
 To express POST-IT in early zebrafish embryos, 20 pg of pUbi-QFGal4-2A-3×Flag-POST-IT plasmid and 25 pg of transposase mRNA were injected into an embryo at the one-cell stage. The next day, GFP-positive and live embryos were selected, dechorionated with Pronase E (HY-114158, MedChemExpress, USA), and divided into two groups of approximately 1000 embryos each. One group was treated with DMSO and the other with 10 µM DH5 for 24 hr. The embryos were then collected, rinsed with PBS, and lysed in cell lysis buffer using a motorized plastic pestle. The resulting lysates were cleared by centrifugation, and protein concentrations were measured using the BCA assay. Samples were diluted to 2 mg/ml in 1 ml, mixed with 200 µl of prewashed streptavidin magnetic beads, and incubated at 4°C for 3 hr. The beads were washed five times with wash buffer A. Proteins were eluted with 2×SDS sample buffer and subsequently processed for western blot analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 Data plotting and statistical analysis were conducted using GraphPad Prism 9.5 software (GraphPad Software, Inc). Data are presented as mean ± s.e.m. or mean ± s.d., as specified in each figure and its legend. p values were determined using Student’s unpaired two-sided t-test, unless otherwise mentioned. p<0.05 was considered a statistical difference in this study.
 
-## Chemical synthesis
+### Chemical synthesis
 
 All reagents and solvents were obtained from commercial sources and used without further purification. The chemical reactions were monitored by thin-layer chromatography (TLC). 1H and 13C NMR spectra were recorded on AV-400 spectrometer (Bruker instrument, USA). HRMS measurements were performed with an Agilent QTOF 6520 mass spectrometer (Agilent Technologies, USA) with electrospray ionization (ESI) as the ion source. The purity of all target compounds was analyzed by HPLC (254 nm wavelength in an Agilent LC-1220 instrument) via a C18 column (5 μm, 4.6 mm × 150 mm).
 
-## Ethyl 6-((2-(4-(6-((5-((2-chloro-6-methylphenyl)carbamoyl)thiazol-2-yl)amino)-2-methylpyrimidin-4-yl)piperazin-1-yl)ethyl)amino)-6-oxohexanoate (3)
+#### Ethyl 6-((2-(4-(6-((5-((2-chloro-6-methylphenyl)carbamoyl)thiazol-2-yl)amino)-2-methylpyrimidin-4-yl)piperazin-1-yl)ethyl)amino)-6-oxohexanoate (3)
 
 A mixture of compound 1 (350 mg, 0.72 mmol), compound 2 (150 mg, 0.86 mmol), HATU (328 mg, 0.86 mmol), and 1 ml of DIPEA in DMF (10 ml) was stirred at room temperature for 2 hr. The mixture was diluted with H2O (20 ml) and extracted with EtOAc (20 ml ×3). The organic layer was dried and concentrated. The residue was purified by column chromatography (DCM:MeOH = 20:1 to 15:1) to yield a white solid 210 mg. Yield: 45%. 1H NMR (400 MHz, DMSO-d6) δ 11.59 (s, 1H), 10.08 (s, 1H), 8.33 (s, 1H), 7.91 (s, 1H), 7.39 (d, J = 7.6 Hz, 1H), 7.27–7.21 (m, 1H), 6.13 (s, 1H), 4.03 (q, J = 7.1 Hz, 2H), 3.55–3.44 (m, 4H), 3.27–3.15 (m, 2H), 2.49–2.33 (m, 9H), 2.31–2.22 (m, 5H), 2.11–2.03 (m, 2H), 1.53–1.44 (m, 4H), 1.16 (t, J = 7.1 Hz, 3H) (Figure 2—figure supplement 1).
 
-## N1-(2-(4-(6-((5-((2-Chloro-6-methylphenyl)carbamoyl)thiazol-2-yl)amino)-2-methylpyrimidin-4-yl)piperazin-1-yl)ethyl)-N6-(18-chloro-3,6,9,12-tetraoxaoctadecyl)adipamide (DH1)
+#### N1-(2-(4-(6-((5-((2-Chloro-6-methylphenyl)carbamoyl)thiazol-2-yl)amino)-2-methylpyrimidin-4-yl)piperazin-1-yl)ethyl)-N6-(18-chloro-3,6,9,12-tetraoxaoctadecyl)adipamide (DH1)
 
 To a mixture of compound 3 (141 mg, 0.22 mmol) in THF: H2O (2:1, 5 ml), NaOH was added (20 mg). The mixture was stirred at room temperature for 2 hr, then concentrated under vacuum to afford compound 4, which was used in the next step without further purification. A mixture of compound 4 (0.22 mmol), compound 7 (0.53 mmol), HATU (100 mg, 0.27 mmol), and 0.2 ml DIPEA in DCM:DMF (2:1, 9 ml) was stirred at room temperature for 2 hr. The mixture was diluted with H2O (20 ml) and extracted with DCM (20 ml ×3). The organic layers were dried and concentrated. The residue was purified by column chromatography (DCM:MeOH = 10:1 to 5:1) to yield a white solid 23 mg. Yield: 11% (Figure 2—figure supplement 1). 1H NMR (400 MHz, Methanol-d4) δ 8.58 (d, J = 4.4 Hz, 1H), 8.27 (d, J = 8.0 Hz, 1H), 8.18 (s, 1H), 7.39 (dd, J = 13.8, 5.5 Hz, 2H), 7.26 (q, J = 8.0 Hz, 2H), 6.06 (s, 1H), 3.77–3.71 (m, 4H), 3.70–3.44 (m, 18H), 3.37 (t, J = 5.3 Hz, 2H), 2.80 (s, 4H), 2.84–2.76 (m, 2H), 2.76–2.70 (s, 3H), 2.41–2.18 (m, 9H), 1.81–1.72 (m, 2H), 1.69–1.56 (m, 6H), 1.52–1.39 (m, 4H), 1.24–1.12 (m, 2H). HRMS (ESI) calcd for [C42H63Cl2N9O7SNa]+ [M+Na]+, 930.3846; found 930.3843 (Figure 2—figure supplement 2).
 
-## 2-(2-((6-Chlorohexyl)oxy)ethoxy)ethan-1-amine (8)
+#### 2-(2-((6-Chlorohexyl)oxy)ethoxy)ethan-1-amine (8)
 
 A mixture of compound 6 (2 g, 19.02 mmol) in DMF (10 ml) was added to NaH (1.14 g, 28.53 mmol) and stirred at 0°C for 30 min. Then, compound 7 (5.6 g, 22.82 mmol) in 10 ml DMF was added slowly. The mixture was stirred at 0°C until the reaction was complete, as monitored by TLC. The reaction was quenched by adding 40 ml of saturated NH4Cl solution and then extracted with EtOAc (30 ml ×3). The organic layers were dried and concentrated. The residue was purified by column chromatography (DCM:MeOH = 20:1 to 15:1) to yield a colorless oil. Yield: 67%. 1H NMR (400 MHz, CDCl3) δ 3.65–3.56 (m, 4H), 3.56–3.50 (m, 4H), 3.47 (t, J = 6.7 Hz, 2H), 2.89 (t, J = 4.7 Hz, 2H), 2.59 (s, 3H), 1.85–1.72 (m, 2H), 1.66–1.54 (m, 2H), 1.53–1.30 (m, 4H) (Figure 4—figure supplement 2).
 
-## Activation of glycol analogs (11a–c)
+#### Activation of glycol analogs (11a–c)
 
 Glycol analogs 9a–c (20 mmol) were added to a mixture of compound 10 (24 mmol) in 30 ml of DCM. Then, Et3N (30 mmol) was slowly added to the mixture at 0°C. The mixture was then warmed to room temperature and stirred overnight. The reaction was diluted by adding 40 ml H2O and extracted with DCM (30 ml ×3). The organic layers were dried and concentrated. The residue was purified by column chromatography (PE:EtOAc = 4:1 to 3:1) to yield a yellowish oil. Yield: 81–92%. 1H NMR of 11c (400 MHz, CDCl3) δ 8.32–8.23 (m, 4H), 7.43–7.34 (m, 4H), 4.50–4.43 (m, 4H), 3.89–3.82 (m, 4H), 3.77 (s, 4H) (Figure 4—figure supplement 2).
 
-## Monosubstituted Halo ligands (12a–c)
+#### Monosubstituted Halo ligands (12a–c)
 
 Activated glycol analogs 11a–c (10 mmol) and compound 8 (9 mmol) in 10 ml DMF were stirred at room temperature until reaction was complete, as monitored by TLC. The reaction was diluted by adding 20 ml of saturated aqueous NH4Cl and extracted with EtOAc (30 ml ×3). The organic layers were dried and concentrated. The residue was purified by column chromatography (PE: EtOAc = 1:1) to yield a yellowish oil. Yield: 55–69%. 1H NMR of 12c (400 MHz, CDCl3) δ 8.30–8.20 (m, 2H), 7.41–7.33 (m, 2H), 4.46–4.38 (m, 2H), 4.28–4.16 (m, 2H), 3.83–3.76 (m, 2H), 3.72–3.61 (m, 6H), 3.60–3.47 (m, 9H), 3.46–3.39 (m, 2H), 3.34 (t, J = 5.3 Hz, 2H), 1.81–1.68 (m, 2H), 1.64–1.51 (m, 2H), 1.49–1.27 (m, 4H) (Figure 4—figure supplement 2).
 
-## Synthesis of dasatinib-Halo derivatives 2–5 (DH2–5)
+#### Synthesis of dasatinib-Halo derivatives 2–5 (DH2–5)
 
 Dasatinib ligands were prepared as previously reported with some modification (Wang et al., 2015). Briefly, dasatinib was activated by reacting with compound 10, followed by the addition of diamine ligands 15a and 15b to form 16a and 16b. The reactions were diluted by adding 20 ml of saturated aqueous NH4Cl and extracted with EtOAc (30 ml ×3). Without further purification, they were reacted with monosubstituted halo ligands 12a–c to afford DH2–5 with diverse linker lengths (off-white solid, yields: 20–35% over three steps) (Figure 4—figure supplement 2).
 
-## 17-Chloro-4-oxo-3,8,11-trioxa-5-azaheptadecyl(2-(4-(6-((5-((2-chloro-6-methylphenyl)carbamoyl)thiazol-2-yl)amino)-2-methylpyrimidin-4-yl)piperazin-1-yl)ethyl) ethane-1,2-diyldicarbamate (DH2)
+#### 17-Chloro-4-oxo-3,8,11-trioxa-5-azaheptadecyl(2-(4-(6-((5-((2-chloro-6-methylphenyl)carbamoyl)thiazol-2-yl)amino)-2-methylpyrimidin-4-yl)piperazin-1-yl)ethyl) ethane-1,2-diyldicarbamate (DH2)
 
 1H NMR (400 MHz, CD3OD) δ 8.19 (s, 1H), 7.36 (dd, J = 7.3, 2.2 Hz, 1H), 7.30–7.19 (m, 2H), 6.01 (s, 1H), 4.24 (t, J = 5.5 Hz, 2H), 4.16 (t, J = 4.7 Hz, 4H), 3.78–3.63 (m, 8H), 3.63–3.51 (m, 8H), 3.47 (t, J = 6.5 Hz, 2H), 3.29 (t, J = 5.5 Hz, 2H), 3.23 (d, J = 6.9 Hz, 4H), 2.72 (t, J = 5.5 Hz, 2H), 2.65 (t, J = 5.1 Hz, 4H), 2.49 (s, 3H), 2.34 (s, 3H), 1.81–1.70 (m, 2H), 1.64–1.53 (m, 2H), 1.51–1.37 (m, 4H). HRMS (ESI) calcd for [C39H57Cl2N10O9S]+ [M+H]+ 911.3408, found 911.3416. HPLC: tR = 5.59 min, purity = 100% (Figure 4—figure supplement 3).
 
-## 17-Chloro-4-oxo-3,8,11-trioxa-5-azaheptadecyl(2-(4-(6-((5-((2-chloro-6-methylphenyl)carbamoyl)thiazol-2-yl)amino)-2-methylpyrimidin-4-yl)piperazin-1-yl)ethyl) ethane-1,2-diyldicarbamate (DH3)
+#### 17-Chloro-4-oxo-3,8,11-trioxa-5-azaheptadecyl(2-(4-(6-((5-((2-chloro-6-methylphenyl)carbamoyl)thiazol-2-yl)amino)-2-methylpyrimidin-4-yl)piperazin-1-yl)ethyl) ethane-1,2-diyldicarbamate (DH3)
 
 1H NMR (400 MHz, CD3OD) δ 8.19 (s, 1H), 7.41–7.33 (m, 1H), 7.31–7.21 (m, 2H), 6.06 (s, 1H), 4.33–4.25 (m, 2H), 4.22 (m, 4H), 3.64–3.44 (m, 10H), 3.30 (t, J = 5.5 Hz, 2H), 3.27–3.18 (m, 12H), 2.93–2.85 (m, 2H), 2.82 (m, 4H), 2.50 (s, 3H), 2.35 (s, 3H), 1.82–1.70 (m, 2H), 1.59 (m, 2H), 1.53–1.35 (m, 4H). HRMS (ESI) calcd for [C41H60Cl2N10O10SNa]+ [M+Na]+ 977.3489, found 977.3497. HPLC: tR = 5.68 min, purity = 100% (Figure 4—figure supplement 4).
 
-## 23-Chloro-10-oxo-3,6,9,14,17-pentaoxa-11-azatricosyl(2-(4-(6-((5-((2-chloro-6-methylphenyl)carbamoyl)thiazol-2-yl)amino)-2-methylpyrimidin-4-yl)piperazin-1-yl)ethyl) ethane-1,2-diyldicarbamate (DH4)
+#### 23-Chloro-10-oxo-3,6,9,14,17-pentaoxa-11-azatricosyl(2-(4-(6-((5-((2-chloro-6-methylphenyl)carbamoyl)thiazol-2-yl)amino)-2-methylpyrimidin-4-yl)piperazin-1-yl)ethyl) ethane-1,2-diyldicarbamate (DH4)
 
 1H NMR (400 MHz, CD3OD) δ 8.18 (s, 1H), 7.37 (dd, J = 7.2, 2.2 Hz, 1H), 7.30–7.20 (m, 2H), 6.01 (s, 1H), 4.24 (t, J = 5.5 Hz, 2H), 4.17 (t, J = 4.7 Hz, 4H), 3.71–3.62 (m, 12H), 3.62–3.50 (m, 8H), 3.47 (t, J = 6.6 Hz, 2H), 3.33–3.26 (m, 3H), 3.22 (s, 3H), 2.71 (t, J = 5.6 Hz, 2H), 2.64 (t, J = 4.9 Hz, 4H), 2.49 (s, 3H), 2.34 (s, 3H), 1.82–1.70 (m, 2H), 1.59 (m, 2H), 1.53–1.33 (m, 4H). HRMS (ESI) calcd for [C43H64Cl2N10O11SNa]+ [M+Na]+ 1021.3751, found 1021.3751. HPLC: tR = 5.59 min, purity = 100% (Figure 4—figure supplement 5).
 
-## 23-Chloro-10-oxo-3,6,9,14,17-pentaoxa-11-azatricosyl(2-(4-(6-((5-((2-chloro-6-methylphenyl)carbamoyl)thiazol-2-yl)amino)-2-methylpyrimidin-4-yl)piperazin-1-yl)ethyl) pentane-1,5-diyldicarbamate (DH5)
+#### 23-Chloro-10-oxo-3,6,9,14,17-pentaoxa-11-azatricosyl(2-(4-(6-((5-((2-chloro-6-methylphenyl)carbamoyl)thiazol-2-yl)amino)-2-methylpyrimidin-4-yl)piperazin-1-yl)ethyl) pentane-1,5-diyldicarbamate (DH5)
 
 1H NMR (400 MHz, CD3OD) δ 8.19 (s, 1H), 7.36 (dd, J = 7.3, 2.3 Hz, 1H), 7.30–7.19 (m, 2H), 6.00 (s, 1H), 4.22 (t, J = 5.5 Hz, 2H), 4.16 (dd, J = 6.1, 3.4 Hz, 4H), 3.73–3.61 (m, 12H), 3.61–3.50 (m, 8H), 3.47 (t, J = 6.6 Hz, 2H), 3.29 (t, J = 5.5 Hz, 2H), 3.11 (m, 4H), 2.69 (t, J = 5.5 Hz, 2H), 2.62 (t, J = 5.1 Hz, 4H), 2.48 (s, 3H), 2.34 (s, 3H), 1.82–1.70 (m, 2H), 1.64–1.26 (m, 12H). HRMS (ESI) calcd for [C46H70Cl2N10O11SNa]+ [M+Na]+ 1063.4221, found 1063.4229. HPLC: tR = 5.60 min, purity = 100% (Figure 4—figure supplement 6).
 
-## N1-(7-Chloroquinolin-4-yl)-N6-(6-((7-chloroquinolin-4-yl)amino)hexyl)hexane-1,6-diamine (21, DC660)
+#### N1-(7-Chloroquinolin-4-yl)-N6-(6-((7-chloroquinolin-4-yl)amino)hexyl)hexane-1,6-diamine (21, DC660)
 
 A mixture of compound 19 (25 mmol), 20 (10 mmol), Pd(OAc)2 (0.2 mmol), BINAP (0.4 mmol), and K3PO4 (30 mmol) in 20 ml of 1,4-dioxane was stirred at 100°C overnight under an Ar atmosphere. The reaction was diluted by adding 20 ml of saturated aqueous NH4Cl and extracted with EtOAc (30 ml ×3). The organic layer was dried and concentrated. The residue was purified by column chromatography (DCM:MeOH = 10:1 to 5:1) to yield a white solid. Yield: 83% (Figure 6—figure supplement 2). 1H NMR (400 MHz, CD3OD) δ 8.36 (d, J = 5.6 Hz, 2H), 8.12 (d, J = 9.0 Hz, 2H), 7.79 (d, J = 2.2 Hz, 2H), 7.41 (dd, J = 9.0, 2.2 Hz, 2H), 6.53 (d, J = 5.7 Hz, 2H), 3.39 (t, J = 7.2 Hz, 4H), 2.76–2.65 (m, 4H), 1.84–1.72 (m, 4H), 1.65–1.40 (m, 12H) (Figure 6—figure supplement 3).
 
-## Tert-butyl bis(6-((7-chloroquinolin-4-yl)amino)hexyl)glycinate (23)
+#### Tert-butyl bis(6-((7-chloroquinolin-4-yl)amino)hexyl)glycinate (23)
 
 A mixture of compound 21 (10 mmol), 22 (12 mmol), and K2CO3 (15 mmol) in 20 ml of DMF was stirred at 80°C overnight under an Ar atmosphere. The reaction was diluted by adding 20 ml of saturated aqueous NH4Cl and extracted with EtOAc (30 ml ×3). The organic layer was dried and concentrated. The residue was purified by column chromatography (DCM:MeOH = 50:1 to 20:1) to yield an off-white solid. Yield: 79%. 1H NMR (400 MHz, CDCl3) δ 8.40 (d, J = 5.9 Hz, 2H), 8.19 (d, J=9.0 Hz, 2H), 8.00 (d, J = 2.1 Hz, 2H), 7.35 (dd, J=9.0, 2.1 Hz, 2H), 6.83 (s, 2H), 6.44 (d, J = 5.9 Hz, 2H), 3.40 (q, J = 6.7 Hz, 4H), 3.20 (s, 2H), 2.54 (t, J = 7.0 Hz, 4H), 1.76 (m, 4H), 1.52–1.24 (m, 21H) (Figure 6—figure supplement 2).
 
-## Synthesis of DC661-Halo derivative 1 (DC661-H1)
+#### Synthesis of DC661-Halo derivative 1 (DC661-H1)
 
 The deprotection of compound 23 (5 mmol) was carried out by adding 2 ml of TFA. The TFA was then evaporated under vacuum to afford compound 24. The residue was used directly for the next step. A mixture of 24, 15b (5 mmol), HATU (6 mmol), and DIPEA (20 mmol) in 10 ml of DMF was stirred at room temperature for 1 hr. The reaction was then diluted by adding 20 ml of saturated aqueous NH4Cl and extracted with EtOAc (30 ml ×3). The organic layer was dried and concentrated. The residue was further reacted with 12c (6 mmol) for 2 hr. The reaction was again diluted by adding 20 ml of saturated aqueous NH4Cl and extracted with EtOAc (30 ml ×3). The organic layer was dried and concentrated. The residue was purified by column chromatography (DCM:MeOH = 30:1 to 20:1) to yield a yellowish solid. Yield: 43% over three steps (Figure 6—figure supplement 2). 1H NMR (400 MHz, CD3OD) δ 8.37 (d, J = 6.3 Hz, 2H), 8.24 (d, J = 9.0 Hz, 2H), 7.80 (d, J = 2.1 Hz, 2H), 7.52 (dd, J = 9.1, 2.1 Hz, 2H), 6.67 (d, J = 6.3 Hz, 2H), 4.16 (dq, J = 12.8, 4.7 Hz, 6H), 3.73–3.42 (m, 20H), 3.29 (q, J = 5.8 Hz, 4H), 3.21 (t, J = 7.3 Hz, 2H), 3.12 (s, 2H), 3.10–2.99 (m, 2H), 2.56 (t, J = 7.4 Hz, 4H), 1.67–1.23 (m, 28H). 13C NMR (151 MHz, CD3OD) δ 172.34, 157.45, 157.45, 153.48, 153.48, 147.00, 147.00, 143.81, 143.81, 136.98, 136.98, 125.75, 125.75, 123.68, 123.68, 122.84, 122.84, 116.47, 116.47, 98.24, 98.24, 72.29, 70.79, 70.78, 70.18, 70.15, 70.00, 69.84, 69.75, 69.52, 69.18, 69.16, 63.67, 63.56, 60.81, 57.59, 55.15, 44.31, 44.29, 42.97, 40.28, 40.21, 38.46, 32.32, 29.12, 29.10, 28.83, 27.80, 26.75, 26.63, 26.58, 26.31, 25.05, 23.73, 21.12. HRMS (ESI) calcd for [C55H83Cl3N8O9Na]+ [M+Na]+ 1127.5246, found 1127.5236.
 
-## Materials availability statement
+### Materials availability statement
 
 Plasmids and cell lines generated in this study are available upon a reasonable request from the corresponding author (youngnam_jin@whu.edu.cn).

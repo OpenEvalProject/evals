@@ -39,17 +39,17 @@ Unlike the classical ATP-dependent chaperones that directly query the conformati
 
 ## Results
 
-## Experimental design
+### Experimental design
 
 To identify the substrates that are most dependent upon persistent calnexin/calreticulin binding, we isolated and identified endogenous substrates of the ER protein folding sensors UGGT1 and UGGT2. As the product of a reglucosylation by the UGGTs is a monoglucosylated N-glycan, the presence of the monoglucosylated glycoform was used as a readout for substrate reglucosylation. N-glycans are originally transferred to nascent glycoproteins containing three glucoses, therefore a monoglucosylated glycan can be generated either through trimming of two glucoses from the nascent N-linked glycan or through reglucosylation by the UGGTs. In order to isolate the reglucosylation step from the trimming process, a gene edited cell line was created that transfers abbreviated unglucosylated N-linked glycans to nascent chains. The N-linked glycosylation pathway in mammalian cells is initiated through the sequential addition of monosaccharides, mediated by the ALG (Asn-linked glycosylation) gene products, to a cytosolically exposed dolichol-P-phosphate embedded in the ER membrane (Aebi, 2013; Cherepanova et al., 2016; Figure 1A). The immature dolichol-P-phosphate precursor is then flipped into the ER lumen and sequential carbohydrate addition is continued by additional ALG proteins. The completed N-glycan (Glc3Man9GlcNAc2) is then appended to an acceptor Asn residue in the sequon Asn-Xxx-Ser/Thr/Cys (where Xxx is not a Pro) by the oligosaccharyl transferase (OST) complex (Cherepanova et al., 2016). Initially, a Chinese Hamster Ovary (CHO) cell line with a defect in Alg6 was employed to establish the utility of this approach to follow (re)glucosylation (Quellhorst et al., 1999; Cacan et al., 2001; Pearse et al., 2008; Pearse et al., 2010; Tannous et al., 2015). As the CHO proteome is poorly curated compared to the human proteome, CRISPR/Cas9 was used to knock out the ALG6 gene in HEK293-EBNA1-6E cells to provide a cellular system that transferred non-glucosylated glycans (Man9GlcNAc2) to substrates. In these ALG6-/-cells, a monoglucosylated glycan is solely created by the glucosylation by the UGGTs providing a suitable system to follow the glucosylation process (Figure 1B).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/63997/elife-63997-fig1-v2.jpg)
 
-**Figure 1.:** (A) The pathway of N-glycosylation in eukaryotic cells is depicted. N-glycan synthesis is initiated in the outer endoplasmic reticulum (ER) membrane leaflet on a dolichol-P-phosphate facing the cytoplasm. Flipping of the precursor N-glycan to the ER luminal leaflet and further synthesis steps mediated by ALG proteins leads to eventual transfer of a Glc3Man9GlcNAc2 N-glycan to a substrate by the oligosaccharyl transferase complex. ALG6 (red lettering) catalyzes the transfer of the initial glucose onto the Man9 precursor N-glycan. (B) In wild-type (WT) cells, a Glc3Man9GlcNAc2 N-glycan is transferred to substrates. Monoglucosylated substrates may therefore occur via trimming by glucosidases I/II (GlsI/II) or reglucosylation by UGGT1/2. In ALG6 cells, a Man-/-9GlcNAc2 N-glycan is transferred to substrates. Therefore, monoglucosylated substrates may only occur through reglucosylation by UGGT1/2. Deoxynojirimycin (500 μM) was added to block the trimming of monoglucosylated substrates by GlsII. ALG6 cells were then lysed and split equally between affinity purifications with either GST-CRT or GST-CRT-Y109A bound to glutathione beads. Affinity-purified samples were then reduced, alkylated, trypsinized, and labeled with tandem mass tag (TMT) labels. Samples were then deglycosylated with PNGaseF, pooled, and analyzed by mass spectrometry. (-/-C) Substrates were identified by dividing the quantification of the TMT label in the GST-CRT condition for each protein by that of the associated GST-CRT-Y109A condition, yielding the fold increase. Localization as predicted by UniprotKB annotation is depicted. A cutoff of threefold increase was applied. Data is representative of two independent experiments. Error bars represent standard error of the mean (SEM). (D) The N-glycoproteome (N-glycopro) was computationally determined by collecting all proteins annotated to contain N-glycans by UniprotKB. Annotated localization information was then used to computationally determine the localization distribution of the N-glycoproteome as well as the identified UGGT substrates.Figure 1—source data 1.Figure 1C.
+**Figure 1.:** (A) The pathway of N-glycosylation in eukaryotic cells is depicted. N-glycan synthesis is initiated in the outer endoplasmic reticulum (ER) membrane leaflet on a dolichol-P-phosphate facing the cytoplasm. Flipping of the precursor N-glycan to the ER luminal leaflet and further synthesis steps mediated by ALG proteins leads to eventual transfer of a Glc3Man9GlcNAc2 N-glycan to a substrate by the oligosaccharyl transferase complex. ALG6 (red lettering) catalyzes the transfer of the initial glucose onto the Man9 precursor N-glycan. (B) In wild-type (WT) cells, a Glc3Man9GlcNAc2 N-glycan is transferred to substrates. Monoglucosylated substrates may therefore occur via trimming by glucosidases I/II (GlsI/II) or reglucosylation by UGGT1/2. In ALG6-/- cells, a Man9GlcNAc2 N-glycan is transferred to substrates. Therefore, monoglucosylated substrates may only occur through reglucosylation by UGGT1/2. Deoxynojirimycin (500 μM) was added to block the trimming of monoglucosylated substrates by GlsII. ALG6-/- cells were then lysed and split equally between affinity purifications with either GST-CRT or GST-CRT-Y109A bound to glutathione beads. Affinity-purified samples were then reduced, alkylated, trypsinized, and labeled with tandem mass tag (TMT) labels. Samples were then deglycosylated with PNGaseF, pooled, and analyzed by mass spectrometry. (C) Substrates were identified by dividing the quantification of the TMT label in the GST-CRT condition for each protein by that of the associated GST-CRT-Y109A condition, yielding the fold increase. Localization as predicted by UniprotKB annotation is depicted. A cutoff of threefold increase was applied. Data is representative of two independent experiments. Error bars represent standard error of the mean (SEM). (D) The N-glycoproteome (N-glycopro) was computationally determined by collecting all proteins annotated to contain N-glycans by UniprotKB. Annotated localization information was then used to computationally determine the localization distribution of the N-glycoproteome as well as the identified UGGT substrates.
 
 To aid in substrate identification, an inhibitor of glucosidases I and II, deoxynojirimycin (DNJ), was added 1 hr prior to cell lysis to block glucose trimming and trap monoglucosylated products. Monoglucosylated substrates were then isolated by affinity purification using recombinant glutathione S-transferase-calreticulin (GST-CRT), as calreticulin binds monoglucosylated proteins. To account for nonspecific binding, a lectin-deficient construct (GST-CRT-Y109A) was used as an affinity purification control (Kapoor et al., 2004). Affinity purified substrates were reduced, alkylated, and trypsin digested. The resulting peptides were labeled with tandem mass tags (TMTs) (Rauniyar and Yates, 2014), deglycosylated using PNGaseF, and analyzed by mass spectrometry to identify substrates of the UGGTs. The use of TMT, as well as the control GST-CRT-Y109A affinity purification, allows for robust, quantitative identification of substrates of the UGGTs. The resulting data was analyzed by calculating the fold change in abundance of the TMT associated with proteins identified through affinity purification using wild-type (WT) GST-CRT over affinity purification using GST-CRT-Y109A. To be considered a UGGT substrate, a cutoff of threefold (WT GST-CRT/GST-CRT-Y109A) was applied. This conservative cutoff was set to give a high level of confidence in the identified substrates, as below this cutoff, increasing fractions of non-secretory pathway proteins were found.
 
-## Substrate identification of the UGGTs
+### Substrate identification of the UGGTs
 
 In order to determine the cellular substrates of the UGGTs, the above glycoproteomics protocol was followed using ALG6-/- cells. A restricted pool of 37 N-linked glycosylated proteins was identified as substrates of the UGGTs (Figure 1C and Supplementary file 1). Prosaposin, the only previously known endogenous substrate of the UGGTs, was included in this group, supporting the utility of the approach (Pearse et al., 2010). Integrin β−1 showed the most significant fold change (WT GST-CRT/GST-CRT-Y109A) of ~26-fold, indicating there is a large dynamic range of reglucosylation levels.
 
@@ -59,11 +59,27 @@ To distinguish the general pool of substrates that the UGGTs are expected to be 
 
 The majority of the N-glycoproteome was either localized to the plasma membrane (37%) or secreted (20%) according to their UniprotKB designations. Smaller fractions of the N-glycoproteome reside in the ER (5%), Golgi (4%), or lysosomes (2%). UGGT substrates are therefore significantly enriched for lysosomal proteins compared to the N-glycoproteome, while all other localizations display a similar distribution to their availability. In total, these results demonstrate the ability to identify substrates of the UGGTs proteomically and suggest that the UGGTs display substrate preferences.
 
-## Determination of UGGT1- and UGGT2-specific substrates
+### Determination of UGGT1- and UGGT2-specific substrates
 
 There are two ER glucosyltransferase paralogues, UGGT1 and UGGT2, though currently there is no evidence that UGGT2 acts as a protein sensor or a glucosyltransferase in the cell. Therefore, we sought to determine if UGGT2 has glucosyltransferase activity in the cell, and if so, do these two paralogues have different substrate specificities. To address this concern, GST-CRT affinity purification and TMT mass spectrometry were used to identify substrates of UGGT1 in ALG6/UGGT2-/- cells and potential UGGT2 substrates in ALG6/UGGT1-/- cells.
 
 With the ALG6/UGGT2-/- cells, 66 N-glycosylated proteins were identified as reglucosylation substrates using the three-fold cutoff (GST-CRT/CST-CRT-Y109A) (Figure 2A). Nearly double the number of UGGT1 substrates were identified through this approach compared to using ALG6-/- cells where both UGGT1 and UGGT2 were present. This expansion in substrate number is likely due to the ~50% increase in expression of UGGT1 in ALG6/UGGT2-/- cells (Figure 2—figure supplement 1). The substrate demonstrating the most significant fold change (23.5-fold) was CD164, creating a similar dynamic range for reglucosylation to that observed in ALG6-/- cells.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/63997/elife-63997-fig2-v2.jpg)
+
+**Figure 2.:** (A) Reglucosylation substrates in ALG6/UGGT2-/- cells were identified and quantified as previously described in Figure 1. Localizations as annotated by UniprotKB are depicted. Data are representative of two independent experiments. Error bars represent SEM. (B) Reglucosylated substrates in ALG6/UGGT1-/- cells were identified and quantified as previously above. (C) The distribution of localizations as annotated by UniprotKB for reglucosylation substrates identified in both ALG6/UGGT2-/- and ALG6/UGGT1-/- cells is depicted. (D) The overlap of reglucosylated substrates identified in both ALG6/UGGT2-/- cells (purple) and ALG6/UGGT1-/- cells (gray) is visualized by a Venn diagram. (E) Reglucosylated substrate enrichment in either ALG6/UGGT1-/- or ALG6/UGGT2-/- cells is depicted by dividing the tandem mass tag quantification for each protein in ALG6/UGGT1-/- cells by the associated value in ALG6/UGGT2-/- cells on a log10 scale. Positive and negative values represent enrichment in ALG6/UGGT1-/- and ALG6/UGGT2-/- cells, respectively. Localization (coloring) and topology (soluble [circles] or transmembrane [squares]) are depicted based on UniprotKB annotation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/63997/elife-63997-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The indicated cells were lysed and whole cell lysates were resolved by SDS-PAGE and imaged by immunoblotting against UGGT1 and GAPDH. Asterisk denotes background band. Data are representative of three independent experiments with quantification shown in (B). UGGT1 expression was normalized to that of ALG6-/- cells. Error bars represent standard deviation. Asterisk denotes a p-value of less than 0.05. (C) Counts per million of UGGT2 mRNA generated by RNAseq from Supplementary file 4 was analyzed for the level of UGGT2 mRNA expression in the indicated cell lines. Counts per million of all genes were averaged and the standard deviation from the average for UGGT2 mRNA was determined. Error bars represent the standard deviation. Data are representative of three independent experiments.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/63997/elife-63997-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Reglucosylated substrates identified in ALG6-/- (A), ALG6/UGGT1-/- (B), and ALG6/UGGT2-/- (C) cells were compared to the average expression for the N-glycoproteome in counts per million. The standard deviation from the average is plotted, with the error bars representing the standard deviation. Blue dots above each gene represent the level of fold increase (GST-CRT/GST-CRT-Y109A) found by tandem mass tag (TMT) mass spectrometry. The Pearson’s correlation coefficient (R) between the mRNA expression and TMT mass spectrometry fold increase is shown. Data is representative of three independent experiments.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/63997/elife-63997-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Cells treated without or with deoxynojirimycin for 12 hr, lysed and whole cell lysate samples were resolved and imaged by immunoblotting against β-hexosaminidase subunit β. Data is representative of three independent experiments and quantification is shown in (B). (C) The indicated cell lines were lysed and samples were split evenly between non-treated and PNGaseF treated. Asterisks denote deglycosylated protein (D). As described for panel C, except immunoblotting was against CI M6PR.
 
 To identify possible UGGT2-specific substrates, ALG6/UGGT1-/- cells were used to isolate UGGT2 modified substrates. Thirty-four proteins passed the threefold GST-CRT/GST-CRT-Y109A cutoff, with 33 of these proteins predicted to be N-glycosylated and localized to the secretory pathway (Figure 2B). Importantly, this demonstrated for the first time that UGGT2 was a functional glycosyltransferase capable of reglucosylating a range of cellular substrates. The glycoprotein with the most significant fold change was arylsulfatase A (10.4-fold). Notably, eight of the nine strongest UGGT2 substrates, or 15 of 33 substrates overall, are lysosomal proteins (Figure 2B and C). While UGGT1 was also observed to engage a significant percentage of lysosomal proteins (27%), 45% of UGGT2 substrates are lysosomal. Both of these percentages are significantly enriched when compared to the N-glycoproteome for which only 2% is comprised of resident lysosome proteins (Figure 1D).
 
@@ -73,23 +89,35 @@ The number of UGGT1 substrates was double that of UGGT2 suggesting that UGGT1 ca
 
 The three substrates found to be specific to UGGT2 clustered away from all other proteins (Figure 2E at the top left). The remaining UGGT2 enriched substrates, except for one ER localized protein, localized to the lysosome. All the UGGT2 favored substrates were soluble proteins. In contrast, UGGT1 favored proteins were greater in number and displayed a diversity of localizations with a preference for plasma membrane proteins. These results indicate that UGGT2 is a functional glucosyltransferase, which preferentially engages soluble lysosomal proteins while UGGT1 modifies a wider variety of proteins with a preference for plasma membrane and transmembrane domain-containing proteins in general.
 
-## Validation of UGGT substrates
+### Validation of UGGT substrates
 
 Having identified numerous novel substrates of the UGGTs, a select number of these substrates was tested for reglucosylation to validate the identification approach. Substrates were chosen based on a diversity of topologies, lengths, differences in propensities as UGGT1 or UGGT2 substrates, and reagent availability. Monoglucosylated substrates were affinity isolated from ALG6-/-, ALG6/UGGT1-/-, ALG6/UGGT2-/-, and ALG6/UGGT1/UGGT2-/- cells using GST-CRT compared to GST-CRT-Y109A. Substrates were then identified by immunoblotting with the percent reglucosylation determined by subtracting the amount of protein bound by GST-CRT-Y109A from that of GST-CRT, divided by the total amount of substrate present in the whole cell lysate (WCL), and multiplying by 100.
 
 CI-M6PR and insulin-like growth factor type one receptor (IGF-1R) are both large type I membrane proteins that possess multiple N-glycosylation sites (Figure 3D and H). Overall, 10% of CI-M6PR was reglucosylated in ALG6-/- cells (Figure 3B). The modification level of CI-M6PR was significantly reduced in ALG6/UGGT1-/-, but not ALG6/UGGT2-/- cells. As a control, reglucosylation was not observed in ALG6/UGGT1/UGGT2-/- cells. A similar profile was observed for IGF-1R where reglucosylation levels reached 12% in ALG6/UGGT2-/- cells (Figure 3E–G). Altogether, these findings were consistent with the quantitative glycoproteomics isobaric labeling results (Figure 3C and G), confirming that CI-M6PR and IGF-1R are efficient substrates of UGGT1.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/63997/elife-63997-fig3-v2.jpg)
+
+**Figure 3.:** (A) The designated cell lines were lysed and split into whole cell lysate (WCL, 10%) or affinity purification by GST-CRT-WT or GST-CRT-Y109A and imaged by immunoblotting against the CI Man-6-Phosphate receptor. Data is representative of three independent experiments with quantification shown in panel (B). Quantifications were calculated by subtracting the value of protein in the Y109A lane from the value of protein in the associated wild-type (WT) lane, divided by the value of protein in the associated WCL lane and multiplied by 100. Error bars represent the standard deviation. Asterisks denote a p-value of less than 0.05. (C) Tandem mass tag (TMT) mass spectrometry quantification of CI Man-6-Phosphate receptor reglucosylation from ALG6/UGGT1-/- cells (Figure 2B) and ALG6/UGGT2-/- cells (Figure 2A). (D) Cartoon representation of CI Man-6-Phosphate receptor with N-glycans (branched structures), the signal sequence (gray), luminal/extracellular domain (blue), transmembrane domain (black), and intracellular domain (green) depicted. Number of amino acids and Cys residues are indicated. (E) Reglucosylation of IGF-1R, conducted as previously described above. Pro IGF-1R and mature IGF-1R are both observed due to proteolytic processing. Data are representative of three independent experiments with quantification displayed in (F). (G) TMT mass spectrometry quantification of IGF-1R from Figure 2A and B, as previously described. (H) Cartoon depiction of IGF-1R. (I) The reglucosylation of ENPP1 shown with quantification displayed in J. (K) TMT mass spectrometry quantification of ENPP1 from Figure 2A and B with cartoon depiction of ENPP1 in L. (M) Reglucosylation of β-hexosaminidase subunit β, conducted as previously described with quantifications displayed in N and TMT mass spectrometry quantification of β-hexosaminidase subunit β from Figure 2A and B in O with a cartoon depicting β-hexosaminidase subunit β in P.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/63997/elife-63997-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The expression of HEXB (A), ARSA (B), NAGA (C), GLA (D), TPP1 (E), FUCA1 (F), HEXA (G), and NAGLU (H) in the indicated cell lines was analyzed by mRNA expression level in the denoted cell lines from RNAseq data presented in Supplementary file 4. The standard deviation from the average expression level in counts per million in each cell line for all genes is plotted. Error bars represent standard deviation. Data are representative of three independent experiments.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/63997/elife-63997-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) The indicated cells were lysed and whole cell lysate were resolved by SDS-PAGE and imaged by immunoblotting against BiP and GAPDH. DMSO was used as a vehicle control with tunicamycin (5 μg/ml) as a positive control. Data is representative of three independent experiments with quantification displayed in (B). BiP expression levels were normalized to that of wild-type cells and the corresponding GAPDH loading control. Error bars denote standard deviation. Asterisks denote a p-value of less than 0.05. (C) A subset of genes induced by the ATF6 UPR branch was analyzed by mRNA expression level as described in Figure 3—figure supplement 1. Data are representative of three independent experiments. IRE1 (D) and PERK (E) induced genes characterized as described in (C).
+
 Next, the reglucosylation of the type II membrane protein, ectonucleotide pyrophosphatase/phosphodiesterase family member 1 (ENPP1) was analyzed (Figure 3L). ENPP1 was found to be reglucosylated at similar levels in ALG6-/- (7%) and ALG6/UGGT1-/- (7%) cells. In ALG6/UGGT2-/- cells, reglucosylation increased to 12%, while in ALG6/UGGT1/UGGT2-/- cells reglucosylation decreased to 1% (Figure 3I and J). These results suggest that ENPP1 can be reglucosylated by both UGGT1 and UGGT2, with a slight preference for UGGT1, supporting the TMT mass spectrometry results (Figure 3K).
 
 The reglucosylation of the smaller soluble lysosomal protein, HexB, was also tested (Figure 3M–P). HexB is processed into three disulfide-bonded chains in the lysosome (Mahuran et al., 1988). Only immature or ER localized proHexB was affinity purified by GST-CRT (Figure 3M, lanes 2, 5, 8, and 11). HexB was reglucosylated at 34% in ALG6-/- cells (Figure 3N). No significant change in glucosylation levels occurred when UGGT1 was also knocked out (35%). However, a reduction to 20% reglucosylation of HexB was observed in ALG6/UGGT2-/- cells, and complete loss of reglucosylation was seen in ALG6/UGGT1/UGGT2-/- cells. ALG6/UGGT1-/- cells consistently displayed increased levels of expression of HexB (Figure 3M, lane 4), and this was consistent with RNAseq data (Figure 2—figure supplement 2B). These results confirm the mass spectrometry results that showed HexB to be a favored substrate of UGGT2 (Figure 3O). It is also notable that HexB, as the first validated substrate of UGGT2, is highly reglucosylated. As reglucosylation was not observed for any of the validated substrates tested when both UGGT1 and UGGT2 were knocked out, these glucosyltransferases appear to be responsible for the reglucosylation of N-glycans in the ER. Taken together, these results demonstrate that the mass spectrometry screen accurately identified substrates of the UGGTs, as well as differentiated between substrates specific to either UGGT1 or UGGT2.
 
-## Analysis of UGGT substrates
+### Analysis of UGGT substrates
 
 To investigate the properties of the substrates modified by the UGGTs and identify potential types of proteins UGGT1 and UGGT2 modify, a systematic analysis of the substrates of the UGGTs was performed and compared to the general properties of the N-glycoproteome. All characteristics were analyzed using UniprotKB annotations. Initially, the length of substrates was compared to the N-glycoproteome. The N-glycoproteome ranged widely in size, from elabela (54 amino acids) to mucin-16 (14,507 amino acids). The overall amino acid distribution of the N-glycoproteome was significantly shifted smaller compared to the size of UGGT substrates (Figure 4A). The median size of the N-glycoproteome was 443 amino acids, compared to 737 for UGGT substrates found in ALG6-/- cells. Substrates of both UGGT1 (718 amino acid median) and UGGT2 (585 amino acids) are significantly larger when compared to the N-glycoproteome. This increase in length may lead to more complex folding trajectories, requiring increased engagement with the lectin chaperones for efficient maturation.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/63997/elife-63997-fig4-v2.jpg)
 
-**Figure 4.:** (A) Amino acid lengths of each protein in the indicated data sets were visualized by scatter plot overlaid with a box and whisker plot. Amino acid number was obtained via UniprotKB. All scatter plots with box and whisker plots were generated using R and the ggplot package. The number of N-glycans (B) or Cys residues (C) for each protein in the indicated data sets was visualized by scatter plot overlaid with a box and whisker plot with the numbers determined using their UniprotKB annotation. (D) The isoelectric point (pI) values for each protein in the indicated data sets was visualized by scatter plot overlaid with a box and whisker plot. The pI values were obtained via ExPASy theoretical pI prediction. (E) The computationally predicted N-glycoproteome and the indicated reglucosylation substrates were determined as either soluble or transmembrane using UniprotKB annotations. The transmembrane portion of each data set was then analyzed for type I, type II, or multi-pass topology using the associated UniprotKB annotation. Proteins that were annotated by UniprotKB as transmembrane but lacked topology information were labeled as undefined. (F) The computationally determined N-glycoproteome was separated into soluble, type I, type II, and multi-pass transmembrane proteins using UniprotKB annotations. Luminally exposed amino acids were computationally determined using UniprotKB annotations for each subset of the N-glycoproteome and each indicated reglucosylation substrate data set. The resulting data was visualized by scatter plot overlaid with a box and whisker plot. (G) The indicated N-glycoproteome subsets were analyzed for N-glycan content using UniprotKB annotation and visualized by scatter plot overlaid with a box and whisker plot, as described. (H) The indicated N-glycoproteome subsets were analyzed for predicted pI using ExPASy theoretical pI prediction and visualized by scatter plot overlaid with a box and whisker plot.Figure 4—source data 1.
+**Figure 4.:** (A) Amino acid lengths of each protein in the indicated data sets were visualized by scatter plot overlaid with a box and whisker plot. Amino acid number was obtained via UniprotKB. All scatter plots with box and whisker plots were generated using R and the ggplot package. The number of N-glycans (B) or Cys residues (C) for each protein in the indicated data sets was visualized by scatter plot overlaid with a box and whisker plot with the numbers determined using their UniprotKB annotation. (D) The isoelectric point (pI) values for each protein in the indicated data sets was visualized by scatter plot overlaid with a box and whisker plot. The pI values were obtained via ExPASy theoretical pI prediction. (E) The computationally predicted N-glycoproteome and the indicated reglucosylation substrates were determined as either soluble or transmembrane using UniprotKB annotations. The transmembrane portion of each data set was then analyzed for type I, type II, or multi-pass topology using the associated UniprotKB annotation. Proteins that were annotated by UniprotKB as transmembrane but lacked topology information were labeled as undefined. (F) The computationally determined N-glycoproteome was separated into soluble, type I, type II, and multi-pass transmembrane proteins using UniprotKB annotations. Luminally exposed amino acids were computationally determined using UniprotKB annotations for each subset of the N-glycoproteome and each indicated reglucosylation substrate data set. The resulting data was visualized by scatter plot overlaid with a box and whisker plot. (G) The indicated N-glycoproteome subsets were analyzed for N-glycan content using UniprotKB annotation and visualized by scatter plot overlaid with a box and whisker plot, as described. (H) The indicated N-glycoproteome subsets were analyzed for predicted pI using ExPASy theoretical pI prediction and visualized by scatter plot overlaid with a box and whisker plot.
 
 The distribution of the number of N-glycans possessed by the N-glycoproteome (median of two glycans per glycoprotein) was also shifted significantly smaller than that of UGGT1 (seven glycans) or UGGT2 (five glycans) substrates (Figure 4B). All the UGGT substrates displayed a decreased density of proteins at low N-glycan content values that are heavily populated in the N-glycoproteome. Despite the identification of UGGT1 and UGGT2 substrates generally containing high numbers of N-glycans, multiple substrates possessed as few as two N-glycans, suggesting that the experimental approach did not require a high number of monoglucosylated glycans for GST-CRT affinity isolation but substrates possessing multiple reglucosylated sites are likely affinity isolated more efficiently by the GST-CRT pull downs.
 
@@ -99,7 +127,7 @@ UGGT1 or UGGT2 substrates displayed similar pI distributions with pIs predominan
 
 The predicted topologies of the substrates of the UGGTs and the N-glycoproteome were also analyzed. Approximately 70% of the N-glycoproteome is comprised of membrane proteins, with half of these membrane proteins possessing multiple transmembrane domains, followed by single membrane pass proteins with a type I orientation (a third) with the remainder being type II membrane proteins (Figure 4E). A total of 43% of UGGT substrates in ALG6-/- cells contained a transmembrane domain with the vast majority of these substrates having their C-terminus localized to the cytosol in a type I orientation, while two substrates possessed the reverse type II orientation and a single multi-pass membrane substrate (NPC1) was identified. When the UGGTs were considered separately, about half of the UGGT1 substrates (ALG6/UGGT2-/- cells) possessed at least one transmembrane domain, with 70% of these membrane proteins being in the type I orientation, a quarter in a type II orientation, and two being multi-pass proteins (NPC1 and scavenger receptor class B member 1 [SR-BI]). In contrast to UGGT1, the majority of UGGT2 substrates were soluble proteins (72%) with the breakdown of remaining transmembrane proteins being similar to that of UGGT1 with the majority being type I membrane proteins. The preference of UGGTs for type I transmembrane proteins is likely caused by their larger luminal-exposed domains and N-glycan numbers compared to multi-pass membrane proteins (Figure 4F and G). Notably, substrates of the UGGTs had larger luminal domains than the membrane proteins of the N-glycoproteome, though especially for the multi-pass membrane proteins (Figure 4F). Furthermore, while the pIs of type II and polytopic membrane proteins were bimodal, they were overall more basic, which appears to be a property disfavored by UGGT substrates (Figure 4H). Overall, these results show that UGGT1 efficiently modifies both soluble and membrane associated proteins, while UGGT2 strongly favors soluble substrates.
 
-## Efficient IGF-1R trafficking requires lectin chaperone engagement
+### Efficient IGF-1R trafficking requires lectin chaperone engagement
 
 A number of natural substrates of the UGGTs were identified using a glycoproteomics approach with gene edited cell lines. As reglucosylation by the UGGTs can direct multiple rounds of lectin chaperone binding, the necessity for reglucosylation to support the efficient maturation of a reglucosylated substrate was investigated. IGF-1R is proteolytically processed in the trans-Golgi by proprotein convertases including furin, facilitating the monitoring of IGF-1R trafficking from the ER to the Golgi (Lehmann et al., 1998). The requirement for lectin chaperone binding and reglucosylation to aid IGF-1R trafficking was analyzed.
 
@@ -107,7 +135,7 @@ Initially, cells were treated without or with the inhibitor of α-glucosidases I
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/63997/elife-63997-fig5-v2.jpg)
 
-**Figure 5.:** (A) Wild-type HEK293-EBNA1-6E cells treated without or with deoxynojirimycin (DNJ; 500 μM) for 12 hr were lysed and whole cell lysate samples were resolved by reducing 9% SDS-PAGE and imaged by immunoblotting against IGF-1R. Data are representative of three independent experiments with quantification shown in (B). Percent of IGF-1R mature was calculated by dividing the amount of mature protein by the total protein in each lane. Errors bars represent standard deviation. Asterisk denotes a p-value of less than 0.05. (C) The indicated cell lines were lysed in RIPA buffer. Samples were split evenly between non-treated and PNGaseF or EndoH treated. Samples were visualized by immunoblotting against IGF-1R and data are representative of three independent experiments with quantification displayed in (D). (E) Indicated cells were treated without or with DNJ, pulsed with [35S]-Met/Cys for 1 hr and chased for the indicated times. Cells were lysed and samples were immunoprecipitated using anti-β IGF-1R antibody and resolved by reducing SDS-PAGE and imaged by autoradiography. Data are representative of three independent experiments with quantification shown in (F).Figure 5—source data 1.
+**Figure 5.:** (A) Wild-type HEK293-EBNA1-6E cells treated without or with deoxynojirimycin (DNJ; 500 μM) for 12 hr were lysed and whole cell lysate samples were resolved by reducing 9% SDS-PAGE and imaged by immunoblotting against IGF-1R. Data are representative of three independent experiments with quantification shown in (B). Percent of IGF-1R mature was calculated by dividing the amount of mature protein by the total protein in each lane. Errors bars represent standard deviation. Asterisk denotes a p-value of less than 0.05. (C) The indicated cell lines were lysed in RIPA buffer. Samples were split evenly between non-treated and PNGaseF or EndoH treated. Samples were visualized by immunoblotting against IGF-1R and data are representative of three independent experiments with quantification displayed in (D). (E) Indicated cells were treated without or with DNJ, pulsed with [35S]-Met/Cys for 1 hr and chased for the indicated times. Cells were lysed and samples were immunoprecipitated using anti-β IGF-1R antibody and resolved by reducing SDS-PAGE and imaged by autoradiography. Data are representative of three independent experiments with quantification shown in (F).
 
 There are two modes for engaging the lectin chaperone cycle: initial binding, which can potentially commence co-translationally for glycoproteins such as IGF-1R that have N-glycans located at their N-terminus through their trimming of the terminal two glucoses by glucosidases I and II; or by rebinding, which is directed by the reglucosylation of unglucosylated species by the UGGTs (Caramelo and Parodi, 2015; Lamriben et al., 2016). The contribution of each mode of monoglucose generation for the proper trafficking of IGF-1R was analyzed.
 
@@ -141,7 +169,7 @@ Using CRISPR edited cell lines, the contributions of the various steps for chape
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/63997/elife-63997-fig6-v2.jpg)
 
-**Figure 6.:** In wild-type (WT) cells, N-glycans with three terminal glucoses are appended to IGF-1R. Trimming of two terminal glucoses by glucosidases I/II generates a monoglucosylated protein that supports an initial round of interaction with calreticulin (calnexin not shown, denoted by a 1). Trimming of the final glucose by glucosidase II yields a non-glucosylated N-glycan. If recognized as non-native primarily by UDP-glucose:glycoprotein glucosyltransferase (UGGT)1, and to a lesser extent UGGT2, IGF-1R may then be reglucosylated, supporting a second round of interaction with calreticulin (denoted by a 2+). Multiple rounds of trimming, reglucosylation, and binding to calnexin or calreticulin can occur until proper folding and trafficking. Under this system, IGF-1R is efficiently trafficked from the ER and mature IGF-1R accumulates. When glucosidase I/II activity is inhibited by treatment with deoxynojirimycin (DNJ) in WT cells, all rounds of binding to the lectin chaperones are ablated and IGF-1R is retained in the ER, yielding primarily pro IGF-1R. In UGGT1/2 cells, initial binding to calnexin or calreticulin directed by glucosidases I/II trimming is maintained but rebinding via reglucosylation does not occur. Under this system, IGF-1R is inefficiently trafficked from the ER. In -/-ALG6 cells, N-glycans are transferred without glucoses, eliminating the initial round of binding to calnexin or calreticulin by glucosidases trimming. Only the second round of binding is supported by UGGT1, and to a lesser extend UGGT2, mediated reglucosylation. Upon treatment with DNJ, reglucosylated IGF-1R may persistently interact with the lectin chaperones resulting in ER retention.-/-
+**Figure 6.:** In wild-type (WT) cells, N-glycans with three terminal glucoses are appended to IGF-1R. Trimming of two terminal glucoses by glucosidases I/II generates a monoglucosylated protein that supports an initial round of interaction with calreticulin (calnexin not shown, denoted by a 1). Trimming of the final glucose by glucosidase II yields a non-glucosylated N-glycan. If recognized as non-native primarily by UDP-glucose:glycoprotein glucosyltransferase (UGGT)1, and to a lesser extent UGGT2, IGF-1R may then be reglucosylated, supporting a second round of interaction with calreticulin (denoted by a 2+). Multiple rounds of trimming, reglucosylation, and binding to calnexin or calreticulin can occur until proper folding and trafficking. Under this system, IGF-1R is efficiently trafficked from the ER and mature IGF-1R accumulates. When glucosidase I/II activity is inhibited by treatment with deoxynojirimycin (DNJ) in WT cells, all rounds of binding to the lectin chaperones are ablated and IGF-1R is retained in the ER, yielding primarily pro IGF-1R. In UGGT1/2-/- cells, initial binding to calnexin or calreticulin directed by glucosidases I/II trimming is maintained but rebinding via reglucosylation does not occur. Under this system, IGF-1R is inefficiently trafficked from the ER. In ALG6-/- cells, N-glycans are transferred without glucoses, eliminating the initial round of binding to calnexin or calreticulin by glucosidases trimming. Only the second round of binding is supported by UGGT1, and to a lesser extend UGGT2, mediated reglucosylation. Upon treatment with DNJ, reglucosylated IGF-1R may persistently interact with the lectin chaperones resulting in ER retention.
 
 ALG6-/- cells permitted the trapping of substrates glucosylated by the UGGTs. These cells are also expected to support the enhancement of glucosylation of glycoproteins that are more reliant upon early lectin chaperone intervention. As observed for IGF-1R, the lack of early intervention of the lectin chaperones directed by glucosidase trimming might lead to misfolding, thereby creating a better substrate for the UGGTs. The use of the cell lines lacking the ability to initiate lectin chaperone binding by the glucosidase trimming (Alg6-/-) or UGGT reglucosylation (UGGT-/- cells) provides a platform to delineate which part of the lectin chaperone binding cycle has the greatest influence of glycoprotein maturation and trafficking.
 
@@ -149,51 +177,271 @@ Understanding the proteins that interact with or rely on chaperone systems will 
 
 ## Materials and methods
 
-## Reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Top10</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# C404003</td>
+      <td>Chemically competent</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Hek293-EBNA1-6E</td>
+      <td>This paper</td>
+      <td>(RRID:CVCL_HF20)</td>
+      <td>Experimental results</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Hek293-EBNA1-6E ALG6-/-</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Experimental results</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Hek293-EBNA1-6E ALG6/UGGT1-/-</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Experimental results</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Hek293-EBNA1-6E ALG6/UGGT2-/-</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Experimental results</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Hek293-EBNA1-6E ALG6/UGGT1/2-/-</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Experimental results</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Hek293-EBNA1-6E UGGT1-/-</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Experimental results</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Hek293-EBNA1-6E UGGT2-/-</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Experimental results</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Hek293-EBNA1-6E UGGT1/2-/-</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Experimental results</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IGF-1 receptor β (D23H3) (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat # 9750</td>
+      <td>WB (1:1000) IP (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IGF-IIR/CI-M6PR (D3V8C) (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 14364</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-hexosaminidase subunit β (EPR7978) (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# (ab140649)</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BiP (C50B12) (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 3177</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ENPP1 (N2C2) (rabbit polyclonal)</td>
+      <td>Genetex</td>
+      <td>Cat# GTX103447</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>UGGT1 (rabbit polyclonal)</td>
+      <td>Genetex</td>
+      <td>Cat# GTX66459</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Glyceraldehyde 3-Phosphate (mouse monoclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# (MAB374)</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-3X-GST-CRT (plasmid)</td>
+      <td>Baksh and Michalak, 1991</td>
+      <td></td>
+      <td>Available from the Hebert lab upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-3X-GST-CRT-Y109A (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Available from the Hebert lab upon request</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>gh260</td>
+      <td>Narimatsu et al., 2018</td>
+      <td>RRID:Addgene_106851</td>
+      <td>gRNA for ALG6-/-</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>gh172</td>
+      <td>Narimatsu et al., 2018</td>
+      <td>RRID:Addgene_106833</td>
+      <td>gRNA for UGGT1-/-</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>gh173</td>
+      <td>Narimatsu et al., 2018</td>
+      <td>RRID:Addgene_106834</td>
+      <td>gRNA for UGGT2-/-</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Cas9-GFP CAS9PBKS</td>
+      <td>Lonowski et al., 2017</td>
+      <td>RRID:Addgene_68371</td>
+      <td>Cas9 for CRISPR-mediated knockout</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CRT-Y109A_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGGGCGGCGCCGTGAAGCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CRT-Y109A_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCGGAAACAGCTTCACGTAGCCGC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TMT10plex, 0.8 mg</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 90110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TMT6plex, 0.8 mg</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 90061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA protein quantification kit</td>
+      <td>Pierce</td>
+      <td>Cat# 23227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>C18 tips</td>
+      <td>Pierce</td>
+      <td>Cat # 87784</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quantitative colorimetric peptide assay</td>
+      <td>Pierce</td>
+      <td>Cat # 23275</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Reagents
 
 Antibodies used were: rabbit monoclonal IGF-1 receptor β (D23H3, Cell Signaling), rabbit monoclonal IGF-IIR/CI-M6PR (D3V8C, Cell signaling), rabbit monoclonal BiP (C50B12, Cell Signaling), rabbit monoclonal β-hexosaminidase subunit β (HEXB) (EPR7978, Abcam), rabbit polyclonal ENPP1 (N2C2, Genetex), rabbit polyclonal UGGT1 (GTX66459, Genetex), mouse monoclonal glyceraldehyde 3-phosphate (MAB374, Millipore Sigma), and IRDye × anti-rabbit secondary (LiCor). All chemicals were purchased from Millipore-Sigma, except where indicated.
 
-## Cell culture
+### Cell culture
 
 HEK293-EBNA1-6E cells were employed and used as the parental line to create all CRISPR/Cas9 edited lines (Tom et al., 2008). Cells were cultured in DMEM (Sigma) supplemented with certified 10% fetal bovine serum (Gibco) at 37°C at 5% CO2. Cells were tested for the presence of mycoplasma using a universal mycoplasma detection kit (ATCC, Cat # 30–012K).
 
-## CRISPR/Cas9-mediated knock outs
+### CRISPR/Cas9-mediated knock outs
 
 HEK293-EBNA1-6E ALG6-/-, ALG6/UGGT1-/-, ALG6/UGGT2-/-, ALG6/UGGT1/UGGT2-/-, UGGT1-/-, UGGT2-/-, and UGGT1/2-/- cells were generated via CRISPR/Cas9 using gRNA plasmids gh260, gh172, and gh173, and Cas9-GFP plasmid CAS9PBKS (Lonowski et al., 2017; Narimatsu et al., 2018). Plasmids gh260 (106851), gh172 (106833), gh173 (106834), and CAS9PBKS (68371) were from Addgene. Knockout cell lines were generated by co-transfecting HEK293-EBNA1-6E cells at 70% confluency in a 10 cm plate with 7 μg of both the associated gRNA and Cas9-GFP plasmid, using a 2.5 μg of PEI per 1 μg of plasmid. Cells were grown for 48 hr prior to trypsinization and collection. After trypsinization, cells were washed twice with sorting buffer (1% FBS, 1 mM EDTA, PBS) and resuspended in sorting buffer at approximately 1 million cells per milliliter. Cells were bulk separated using flow assisted cell sorting based on the top 10% of Cas9-GFP expressing cells (FACS Aria II SORP, Becton Dickinson and Company). Cells were then plated at 5,000, 10,000, and 20,000 cells per 10 cm plate in pre-conditioned DMEM media with 20% FBS. Colonies derived from a single cell were isolated using cell cloning cylinders (Bellco Glass), trypsinized from the plate, and further passaged. Knockouts were confirmed by immunoblotting and staining for UGGT1 or, where antibodies were not available, isolating genomic DNA using a genomic DNA isolation kit (PureLink genomic DNA mini kit, Thermo Fisher), PCR amplification of the genomic DNA region of interest, and insertion of genomic DNA into pcDNA3.1−. Plasmids were then sequenced for conformation (Genewiz).
 
-## GST-CRT purification
+### GST-CRT purification
 
 The plasmid for pGEX-3X GST-CRT was from Prof. M. Michalak (University of Alberta). pGEX-3X GST-CRT-Y109A was generated by site-directed mutagenesis. GST-CRT was expressed in BL21 E. coli cells in LB medium containing ampicillin at 100 μg/ml. Cultures were grown at 37°C with shaking until an O.D. of A600 = 0.6. Protein expression was then induced by treating cultures with 8.32 mg/l IPTG for 2 hr. Cultures were centrifuged at 3000 g for 10 min. Cell pellets were lysed with cold lysis buffer (1 mM phenylmethylsulfonyl fluoride, 2% Triton X-100, PBS pH 7.4) and resuspended. Resuspended cells were lysed in a microfluidizer (110L, Microfluidics) at 18,000 psi for two passes. The cell lysate was centrifuged for 40 min at 8000 g at 4°C. Lysate was filtered through a 0.45 μm filter. Two milliliters bed volume glutathione sepharose beads (GE Lifesciences, Cat# GE17-0756-01) per liter of lysate was equilibrated in wash buffer (1% Triton X-100, 1 mM PMSF, PBS pH 7.4), added to cleared lysate, and rotated at 4°C for 3 hr. Beads were precipitated through centrifugation at 1000 g for 5 min at 4°C. The beads were washed twice in wash buffer. One milliliter of elution buffer (10 mM reduced glutathione, 1 mM PMSF, 50 mM Tris pH 8.5) was added to beads for resuspension and incubated for 5 min at 4°C. Beads were precipitated by centrifugation at 1000 g for 5 min 4°C. The eluate was collected and a total of six elutions were collected. Resulting eluate was tested for purity and protein amount on a reducing SDS-PAGE and stained with Imperial protein stain (Thermo Fisher, Cat# 24617). Elutions were then combined and protein concentration was quantified by a Bradford assay (Bio-Rad). Purified protein was then stored at −80°C in a 20% glycerol PBS buffer at 1 mg/ml.
 
-## GST-CRT isolation and TMT mass spectrometry sample preparation
+### GST-CRT isolation and TMT mass spectrometry sample preparation
 
 Five 10 cm plates were seeded with 3.5 million cells and allowed to grow for 48 hr. Cells were treated with N-butyldeoxynojirimycin hydrochloride (DNJ) (Cayman Chemicals, Cat # 21065) at 500 μM for 1 hr. Prior to lysis, the media was aspirated and cells were washed once with filter sterilized PBS. Cells were lysed in 1 ml of lysis buffer (20 mM MES, 100 mM NaCl, 30 mM Tris pH 7.5, 0.5% Triton X-100) per plate. Samples were shaken at 4°C for 5 min and centrifuged at 20,800 g at 4°C for 5 min. Lysate was pre-cleared with 25 μl bed volume of buffer-equilibrated glutathione beads per 1 ml of lysate under rotation for 1 hr at 25 μl bed volume. Beads were precipitated by centrifugation at 950 g at 4°C for 5 min. Glutathione beads were pre-incubated with either GST-CRT or GST-CRT-Y109A by equilibrating 25 μl bed volume/pull-down glutathione beads with lysis buffer. Beads were incubated with 100 μg of purified GST-CRT/pull-down under gentle rotation at 4°C for 3 hr and then centrifuged at 950 g at 4°C for 5 min and washed twice with lysis buffer. Supernatant was collected and split in half, with one half incubated for 14 hr at 4°C under gentle rotation with glutathione beads pre-incubated with GST-CRT and the other half under the same conditions with GST-CRT-Y109A.
 
 After incubation with GST-CRT beads, samples were washed once in lysis buffer without protease inhibitors and twice in 100 mM triethylammonium bicarbonate (Thermo Fisher Cat# 90114). After the final wash, samples were incubated with 10 μl of 50 mM DTT (Pierce, Cat# A39255) for 1 hr at room temperature under gentle agitation. Samples were treated with 2 μl of 125 mM iodoacetamide (Pierce, Cat# A39271) and incubated for 20 min under gentle agitation, protected from light. Samples were digested with 5 μg of trypsin (Promega, Cat# V5280) at 37°C overnight under agitation. Peptide concentration was quantified using a BCA protein quantification kit (Pierce, Cat# 23227). 10plex or 6plex TMT (Thermo Fisher 0.8 mg) were resuspended in mass spectrometry grade acetonitrile and was added to digested peptide and incubated for 1 hr at room temperature, per manufacturer’s instructions. Labeling was quenched by adding hydroxylamine to 0.25% and incubating for 15 min at room temperature. Labeled samples were pooled, treated with 1,000 units of glycerol-free PNGaseF (NEB, Cat# P0705S), and incubated for 2 hr at 37°C. Samples were cleaned using C18 tips (Pierce, Cat# 87784) and eluted in 75% mass spectrometry grade acetonitrile, 0.1% formic acid (TCI Chemicals). Sample peptide concentration was then quantified using a colorimetric assay (Pierce, Cat# 23275).
 
-## Mass spectrometry data acquisition
+### Mass spectrometry data acquisition
 
 An aliquot of each sample equivalent to 3 μg was loaded onto a trap column (Acclaim PepMap 100 pre-column, 75 μm × 2 cm, C18, 3 μm, 100 Å, Thermo Scientific) connected to an analytical column (Acclaim PepMap RSLC column C18 2 μm, 100 Å, 50 cm × 75 μm ID, Thermo Scientific) using the autosampler of an Easy nLC 1000 (Thermo Scientific) with solvent A consisting of 0.1% formic acid in water and solvent B, 0.1% formic acid in acetonitrile. The peptide mixture was gradient eluted into an Orbitrap Fusion mass spectrometer (Thermo Scientific) using a 180 min gradient from 5 to 40%B (A: 0.1% formic acid in water, B:0.1% formic acid in acetonitrile) followed by a 20 min column wash with 100% solvent B. The full scan MS was acquired over range 400–1400 m/z with a resolution of 120,000 (@ m/z 200), AGC target of 5e5 charges, and a maximum ion time of 100 ms and 2 s cycle time. Data-dependent MS/MS scans were acquired in the linear ion trap using CID with a normalized collision energy 35%. For quantitation of scans, synchronous precursor selection was used to select 10 most abundant product ions for subsequent MS^three using AGC target 5e4 and fragmentation using HCD with NCE 55% and resolution in the Orbitrap 60,000. Dynamic exclusion of each precursor ion for 30 s was employed. Data were analyzed using Proteome Discoverer 2.4.1 (Thermo Scientific). Raw spectral data are deposited to MassIVE (ftp://massive.ucsd.edu/MSV000086514/).
 
-## Computational determination of the human N-glycoproteome and substrates analyses
+### Computational determination of the human N-glycoproteome and substrates analyses
 
 The human N-glycoproteome was defined by the total predicted N-glycosylated proteins from the reviewed human proteome from the UniprotKB (accessed 8/10/2020). Both manual and automated curations of the data set were performed to remove mitochondrial proteins as well as proteins smaller than 50 amino acids from the data set. All annotations were derived directly from the UniprotKB information and annotations available for these proteins were analyzed in R. Determination of the pI values were performed by the pI/MW tool on the Expasy database.
 
-## Reglucosylation validation assay
+### Reglucosylation validation assay
 
 Five 10 cm plates were seeded with 3.5 million cells each and allowed to grow for 48 hr. Cells were treated with DNJ at 500 μM for 14 hr. Prior to lysis, the media was aspirated and cells were washed once with filter sterilized PBS. Cells were lysed in 1 ml of MNT (20 mM MES, 100 mM NaCl, 30 mM Tris pH 7.5, 0.5% Triton X-100) with protease inhibitors (50 µM Calpain inhibitor I, 1 μM pepstatin, 10 μg/ml aprotinin, 10 μg/ml leupeptin, 400 μM PMSF) and 20 mM N-ethyl maleimide, shaken vigorously for 5 min at 4°C, and centrifuged for 5 min at 17,000 g at 4°C. Fifty microliter bed volume of glutathione beads was added to each pull-down and incubated for 1 hr at 4°C under gentle rotation. Beads were then precipitated by centrifugation at 1000 g for 5 min at 4°C. Supernatant was collected with 10% used for WCL and the remainder split evenly between GST-CRT and GST-CRT-Y109A conjugated glutathione beads, which were generated as previously described, and incubated for 16 hr at 4°C under gentle rotation. Beads were precipitated at 1000 g for 5 min at 4°C. Supernatant was aspirated and beads were washed twice with lysis buffer without protease inhibitors. Beads were treated with reducing sample buffer (30 mM Tris-HCl pH 6.8, 9% SDS, 15% glycerol, 0.05% bromophenol blue). WCLs were trichloroacetic acid (TCA) precipitated by adding TCA to cell lysate to a final concentration of 10%. Cell lysate was then briefly rotated and allowed to incubate on ice for 15 min before centrifugation at 17,000 g for 10 min at 4°C. Supernatants were aspirated and washed twice with cold acetone and centrifuged at 17,000 g for 10 min at 4°C. Supernatants were aspirated and the remaining precipitant was allowed to dry for 5 min at room temperature and briefly at 65°C. Precipitated protein was resuspended in sample buffer. Samples were resolved on a 9% reducing SDS-PAGE and imaged by immunoblotting.
 
 Quantification of immunoblots was conducted using ImageJ software. The amount of protein found in the GST-CRT-Y109A lane was subtracted from the amount of protein in the associated WT GST-CRT lane. This value was then divided by the amount of protein found in the WCL multiplied by 5 to account for the dilution factor and then multiplied by 100. The resulting value yielded the percent reglucosylation in each cell type.
 
-## Metabolic labeling and IGF-1R immunoprecipitation
+### Metabolic labeling and IGF-1R immunoprecipitation
 
 Two million cells were plated in 6 cm plates and allowed to grow for 40 hr. Cells were pulse labeled for 1 hr with 120 μCi of EasyTag Express35S Protein Labeling Mix [35S]-Cys/Met (PerkinElmer; Waltham, MA). Immediately after the radioactive pulse, cells were washed with PBS and either lysed in MNT with a protease inhibitor cocktail (Halt protease and phosphatase inhibitor single-use cocktail, Thermo Fisher) and 20 mM NEM, or chased for indicated time using regular growth media. Where indicated, cells were treated with 500 μM DNJ for 30 min prior to [35S]-Cys/Met labeling and through the chase. Cell lysates were shaken for 5 min at 4°C, centrifuged at 17,000 g for 5 min at 4°C, and the supernatants were collected. Samples were pre-cleared with a 20 μl bed volume of protein-A sepharose beads (GE Healthcare) by end-over-end rotation for 1 hr at 4°C. The supernatants were collected and incubated with a 30 μl bed volume of protein-A-sepharose beads and 1.5 μl of α-IGF-1 receptor β (D23H3) XP (Cell Signaling) per sample. Samples were washed with MNT without protease inhibitors or NEM and eluted in sample buffer. Samples were then resolved on a 9% reducing SDS-PAGE, imaged using a GE Typhoon FLA 9500 phosphorimager (GE Healthcare), and quantified using ImageJ.
 
-## Glycosylation assay
+### Glycosylation assay
 
 Three million cells for each indicated cell line were plated in a 10 cm plate and allowed to grow for 48 hr. Cells were lysed in 300 μl RIPA buffer (1% SDS, 1% NP-40, 0.5% sodium deoxycholate, 150 mM NaCl, 50 mM Tris-HCl pH 8.0) with protease inhibitor cocktail and 20 mM NEM. Samples were then sonicated for 20 s at 40% amplitude (Sonics vibra cell VC130PB), shaken vigorously for 5 min, and centrifuged for 5 min at 17,000 g. Twenty microliters of the resulting lysate was heated at 95°C for 5 min and treated with either 10 μl of PNGaseF or EndoH for 1 hr at 37°C, according to the manufacturer’s instructions (NEB). Samples were diluted 1:1 into sample buffer and imaged by immunoblotting.
 
-## RNAseq library preparation and sequencing
+### RNAseq library preparation and sequencing
 
 Three million cells for each indicated cell line were plated in 10 cm plates and allowed to grow for 48 hr. Cells were then lysed in TRIzol buffer and RNA was isolated using RNA Clean Concentrate Kit with in-column DNase-I treatment (Zymo Research Corp), following manufacturer's instructions. The quantity of RNA was assayed on Qubit using RNA BR assay (Life Technologies Corp), and quality was assessed on Agilent 2100 Bioanalyzer using RNA 6000 Nano Assay (Agilent Technologies Inc). Total RNA was used to isolate poly(A) mRNA using NEBNext Poly(A) mRNA Magnetic Isolation Module, and libraries were prepared using NEBNext UltraII Directional RNA Library Prep Kit for Illumina (New England Biolabs) following manufacturer's instructions. The quantity of library was assayed using Qubit DNA HS assay (Life Technologies Corp), and quality was analyzed on Bioanalyzer (Agilent Technologies Inc). Libraries were sequenced on Illumina NextSeq 500 platform using NextSeq 500/550 High Output v2 kit (150 cycles) with 76 bp paired-end sequencing chemistry.
 

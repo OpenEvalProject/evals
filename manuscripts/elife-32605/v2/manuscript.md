@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.32605.001 Animal behavior has been studied for centuries, but few efficient methods are available to automatically identify and classify it. Quantitative behavioral studies have been hindered by the subjective and imprecise nature of human observation, and the slow speed of annotating behavioral data. Here, we developed an automatic behavior analysis pipeline for the cnidarian Hydra vulgaris using machine learning. We imaged freely behaving Hydra , extracted motion and shape features from the videos, and constructed a dictionary of visual features to classify pre-defined behaviors. We also identified unannotated behaviors with unsupervised methods. Using this analysis pipeline, we quantified 6 basic behaviors and found surprisingly similar behavior statistics across animals within the same species, regardless of experimental conditions. Our analysis indicates that the fundamental behavioral repertoire of Hydra is stable. This robustness could reflect a homeostatic neural control of "housekeeping" behaviors which could have been already present in the earliest nervous systems.
+Animal behavior has been studied for centuries, but few efficient methods are available to automatically identify and classify it. Quantitative behavioral studies have been hindered by the subjective and imprecise nature of human observation, and the slow speed of annotating behavioral data. Here, we developed an automatic behavior analysis pipeline for the cnidarian Hydra vulgaris using machine learning. We imaged freely behaving Hydra, extracted motion and shape features from the videos, and constructed a dictionary of visual features to classify pre-defined behaviors. We also identified unannotated behaviors with unsupervised methods. Using this analysis pipeline, we quantified 6 basic behaviors and found surprisingly similar behavior statistics across animals within the same species, regardless of experimental conditions. Our analysis indicates that the fundamental behavioral repertoire of Hydra is stable. This robustness could reflect a homeostatic neural control of "housekeeping" behaviors which could have been already present in the earliest nervous systems.
 
 ## Introduction
 
@@ -31,17 +31,69 @@ Inspired by previous work on C. elegans (Brown et al., 2013; Kato et al., 2015; 
 
 ## Results
 
-## Capturing the movement and shape statistics of freely moving Hydra
+### Capturing the movement and shape statistics of freely moving Hydra
 
 Our goal was to develop a method to characterize the complete behavioral repertoire of Hydra under different laboratory conditions. We collected a Hydra behavior video dataset (Han, 2018a) using a widefield dissecting microscope, allowing Hydra to move freely in a culture dish (Figure 1a). We imaged 53 Hydra specimens at a rate of 5 Hz for 30 min, and we either allowed each of them to behave freely, or induced feeding behavior with glutathione, since feeding could not be observed without the presence of prey (which would have obscured the imaging). From viewing these data, we visually identified eight different behaviors, and manually annotated every frame of the entire dataset with the following labels for these eight behavioral states: silent (no apparent motion), elongation, tentacle swaying, body swaying, bending, contraction, somersaulting, and feeding (Figure 1b; Figure 1e-l; Videos 1–7). Overall, we acquired an annotated Hydra behavior dataset with 360,000 fames in total. We noticed that most behaviors in our manual annotation lasted less than 10 s (Figure 1c), and that, within a time window of 5 s, most windows contained only one type of behavior (Figure 1d). A post-hoc comparison of different window sizes (1–20 s) with the complete analysis framework also demonstrated that 5 s windows result in the best performance (Figure 2—figure supplement 1a). Therefore, we chose 5 s as the analysis length of a behavior element in Hydra.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/32605/elife-32605-fig1-v2.jpg)
+
+**Figure 1.:** (a) Imaging Hydra behavior with a widefield dissecting microscope. A Hydra polyp was allowed to move freely in a Petri dish, which was placed on a dark surface under the microscope objective. The light source was placed laterally, creating an bright image of the Hydra polyp on a dark background. (b) Histogram of the eight annotated behavior types in all data sets. (c) Histogram of the duration of annotated behaviors. (d) Histogram of total number of different behavior types in 1 s, 5 s and 10 s time windows. (e–l) Representative images of silent (e), elongation (f), tentacle swaying (g), body swaying (h), bending (i), contraction (j), feeding (k), and somersaulting (l) behaviors.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32605/elife-32605-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Two example segments of annotations from two different human annotators. (b) Confusion matrix of the two annotations from four representative behavior videos. The overall match is 52%.
+
+![Video 1.](https://cdn.elifesciences.org/articles/32605/elife-32605-video1.mp4.jpg)
+
+**Video 1.:** The animal was allowed to move freely in a petri dish. The video was taken at 5 Hz, and was accelerated 20 fold.
+
+![Video 2.](https://cdn.elifesciences.org/articles/32605/elife-32605-video2.mp4.jpg)
+
+**Video 2.:** The animal was allowed to move freely in a petri dish. The video was taken at 5 Hz, and was accelerated 20 fold.
+
+![Video 3.](https://cdn.elifesciences.org/articles/32605/elife-32605-video3.mp4.jpg)
+
+**Video 3.:** The animal was allowed to move freely in a petri dish. The video was taken at 5 Hz, and was accelerated 20 fold.
+
+![Video 4.](https://cdn.elifesciences.org/articles/32605/elife-32605-video4.mp4.jpg)
+
+**Video 4.:** The animal was allowed to move freely in a petri dish. The video was taken at 5 Hz, and was accelerated 20 fold.
+
+![Video 5.](https://cdn.elifesciences.org/articles/32605/elife-32605-video5.mp4.jpg)
+
+**Video 5.:** The animal was allowed to move freely in a petri dish. The video was taken at 5 Hz, and was accelerated 20 fold.
+
+![Video 6.](https://cdn.elifesciences.org/articles/32605/elife-32605-video6.mp4.jpg)
+
+**Video 6.:** The animal was treated with reduced L-glutathione at 45 s. The video was taken at 5 Hz, and was accelerated 20 fold.
+
+![Video 7.](https://cdn.elifesciences.org/articles/32605/elife-32605-video7.mp4.jpg)
+
+**Video 7.:** The video was taken at 5 Hz, and was accelerated by 20 fold.
+
 Due to the large shape variability of the highly deformable Hydra body during behavior, methods that construct postural eigenmodes from animal postures are not suitable. Therefore, we designed a novel pipeline consisting of four steps: pre-processing, feature extraction, codebook generation, and feature encoding (Han, 2018b) (Figure 2), in line with the BoW framework. Pre-processing was done to exclude the variability in size and rotation angle during imaging, which introduces large variance. To do so, we first defined a behavior element as a 5 s time window, splitting each behavior video into windows accordingly. Then we fitted the body column of Hydra into an ellipse, and centered, rotated, and scaled the ellipse to a uniform template ellipse in each element window. We then encoded spatial information into the BoW framework by segmenting the Hydra area through the videos with an automated program, dividing it into a tentacle region, an upper body region, and a lower body region (Materials and methods; Video 8).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/32605/elife-32605-fig2-v2.jpg)
+
+**Figure 2.:** Videos of freely moving Hydra polyps were collected (1), then, Hydra images were segmented from background, and the body column was fit to an ellipse. Each time window was then centered and registered, and the Hydra region was separated into three separate body parts: tentacles, upper body column, and lower body column (2). Interest points were then detected and tracked through each time window, and HOF, HOG and MBH features were extracted from local video patches of interest points. Gaussian mixture codebooks were then generated for each features subtype (4), and Fisher vectors were calculated using the codebooks (5). Supervised learning using SVM (6), or unsupervised learning using t-SNE embedding (7) was performed using Fisher vector representations.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32605/elife-32605-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Classification performance using time windows of 1, 3, 5, 8, 10 and 20 s, on training, validation and two test data sets. (b) Classification performance with normalized histogram representation, Fisher Vector (FV) representation, Fisher Vector with three spatial body part segmentation (3SP), Fisher Vector with six spatial body part segmentation (6SP), on training, validation and two test data sets. (c) Classification performance with K = 64, 128 and 256 Gaussian Mixtures for FV encoding, on training, validation and two test data sets.
+
+![Video 8.](https://cdn.elifesciences.org/articles/32605/elife-32605-video8.mp4.jpg)
+
+**Video 8.:** White represents tentacle region, yellow represents upper body column region, and red represents lower body column region.
 
 After this encoding, in a feature extraction step we applied a dense trajectory method in each 5 s window element (Wang et al., 2011). This dense trajectory method represents video patches by several shape and motion descriptors, including a Histogram of Oriented Gradient (HOG) (Dalal and Triggs, 2005), which is based on edge properties in the image patch; and a Histogram of Optical Flow (HOF) as well as a Motion Boundary Histogram (MBH) (Dalal et al., 2006), based on motion properties. With the dense trajectory method, we first detected and tracked points with prominent features throughout the videos. Then, for each feature point, we analyzed a small surrounding local patch and computed the motion and shape information therein represented by HOF, HOG and MBH descriptors (Video 9). Thus, each video window element was captured as motion and shape descriptors associated with a set of local video patches with distinguished visual features.
 
+![Video 9.](https://cdn.elifesciences.org/articles/32605/elife-32605-video9.mp4.jpg)
+
+**Video 9.:** Upper panels show the original videos; lower panels show the detected features.
+
 To quantize the ‘bags’ of features from each element time window, we collected a uniform feature codebook using all the dense trajectory features. Intuitively, the elements in the codebook are the representative features for each type of motion or shape in a local patch, therefore they can be regarded as standard entries in a dictionary. Here, we generate the codebook in a ‘soft’ manner, where the codebook contains information of the centroid of clusters and their shape. We fitted the features with k Gaussian mixtures. Because each Gaussian is characterized not only by its mean, but also by its variance, we preserved more information than with other ‘hard’ methods like k-means. The next step was to encode the features with the codebook. For this, ‘hard’ methods where one encodes the features by assigning each feature vector to its nearest Gaussian mixture, lose information concerning the shapes of the Gaussians. To avoid this, we encoded the features using Fisher vectors, which describe the distance between features and the Gaussian mixture codebook entries in a probabilistic way, encoding both the number of occurrence and the distribution of the descriptors (Perronnin et al., 2010) (Figure 2—figure supplement 1b). Since each element window was split into tentacle, upper body and lower body region, we were able to integrate spatial information by encoding the features in each of the three body regions separately (Figure 2—figure supplement 1b). Finally, we represented the behavior in each element window by the concatenated Fisher vector from the three regions.
 
-## Hydra behavior classified from video statistics
+### Hydra behavior classified from video statistics
 
 Like all animals, Hydra exhibits behaviors at various time scales. Basic behaviors such as elongation and bending are usually long and temporally uniform, while tentacle swaying, body swaying and contraction are usually short and executed in a burst-like manner. Feeding and somersaulting are more complex behaviors that can be broken down into short behavior motifs (Videos 6–7) (Lenhoff and Loomis, 1961). Feeding is apparently a stepwise, fixed action pattern-like uniform behavior, with smooth transitions between tentacle writhing, ball formation, and mouth opening (Video 6). Somersaulting represents another fixed action pattern-like behavior and typically consists of a sequence of basic behaviors with elongation accompanied by tentacle movements, contraction, bending, contraction, elongation, and contraction; completing the entire sequence takes a few minutes (Video 7). The time spent during each step and the exact way each step is executed vary between animals. Thus, to study Hydra behavior, it is essential to accurately recognize the basic behavior types that comprise these complex activities.
 
@@ -49,21 +101,219 @@ We aimed to capture basic behaviors including silent, elongation, tentacle swayi
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/32605/elife-32605-fig3-v2.jpg)
 
-**Figure 3.:** Hydra behavior types.(a) Pairwise Euclidean similarity matrix of extracted Fisher vectors. Similarity values are indicated by color code. (b) Confusion matrices of trained classifiers predicting training, validation, and test data. Each column of the matrix represents the number in a predicted class; each row represents the number in a true class. Numbers are color coded as color bar indicates. (Training: n = 50, randomly selected 90% samples; validation: n = 50, randomly selected 10% samples; test: n = 3) (c) ROC curves of trained classifiers predicting training, validation and test data. TPR, true positive rate; FPR, false positive rate. Dashed lines represent chance level. (d) An example of predicted ethogram using the trained classifiers. (e) Three examples of SVM classification of somersaulting behaviors. Dashed boxes indicate the core bending and flipping events.
+**Figure 3.:** (a) Pairwise Euclidean similarity matrix of extracted Fisher vectors. Similarity values are indicated by color code. (b) Confusion matrices of trained classifiers predicting training, validation, and test data. Each column of the matrix represents the number in a predicted class; each row represents the number in a true class. Numbers are color coded as color bar indicates. (Training: n = 50, randomly selected 90% samples; validation: n = 50, randomly selected 10% samples; test: n = 3) (c) ROC curves of trained classifiers predicting training, validation and test data. TPR, true positive rate; FPR, false positive rate. Dashed lines represent chance level. (d) An example of predicted ethogram using the trained classifiers. (e) Three examples of SVM classification of somersaulting behaviors. Dashed boxes indicate the core bending and flipping events.
+
+**Table 1.**
+ SVM statistics. AUC: area under curve; Acc: accuracy; Prc: precision; Rec: recall.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Behavior</th>
+      <th colspan="6">Train</th>
+      <th colspan="6">Withheld</th>
+      <th colspan="6">Test</th>
+    </tr>
+    <tr>
+      <th>AUC</th>
+      <th>AUC chance</th>
+      <th>Acc</th>
+      <th>Acc chance</th>
+      <th>Prc</th>
+      <th>Rec</th>
+      <th>AUC</th>
+      <th>AUC chance</th>
+      <th>Acc</th>
+      <th>Acc chance</th>
+      <th>Prc</th>
+      <th>Rec</th>
+      <th>AUC</th>
+      <th>AUC chance</th>
+      <th>Acc</th>
+      <th>Acc chance</th>
+      <th>Prc</th>
+      <th>Rec</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Silent</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>100%</td>
+      <td>9.6%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>0.98</td>
+      <td>0.5</td>
+      <td>95.6%</td>
+      <td>9.6%</td>
+      <td>75.6%</td>
+      <td>97.4%</td>
+      <td>0.95</td>
+      <td>0.5</td>
+      <td>90.3%</td>
+      <td>1.9%</td>
+      <td>18.4%</td>
+      <td>90.3%</td>
+    </tr>
+    <tr>
+      <td>Elongation</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>100%</td>
+      <td>14.2%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>0.96</td>
+      <td>0.5</td>
+      <td>93.4%</td>
+      <td>13.6%</td>
+      <td>76.4%</td>
+      <td>95.9%</td>
+      <td>0.91</td>
+      <td>0.5</td>
+      <td>87.9%</td>
+      <td>22.2%</td>
+      <td>71.4%</td>
+      <td>92.6%</td>
+    </tr>
+    <tr>
+      <td>Tentacle sway</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>100%</td>
+      <td>25.1%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>0.95</td>
+      <td>0.5</td>
+      <td>89.6%</td>
+      <td>25.0%</td>
+      <td>77.5%</td>
+      <td>92.4%</td>
+      <td>0.76</td>
+      <td>0.5</td>
+      <td>71.9%</td>
+      <td>30.2%</td>
+      <td>47.9%</td>
+      <td>76.7%</td>
+    </tr>
+    <tr>
+      <td>Body sway</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>100%</td>
+      <td>10.0%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>0.92</td>
+      <td>0.5</td>
+      <td>92.9%</td>
+      <td>9.3%</td>
+      <td>65.7%</td>
+      <td>97.0%</td>
+      <td>0.75</td>
+      <td>0.5</td>
+      <td>83.4%</td>
+      <td>17.7%</td>
+      <td>52.8%</td>
+      <td>95.4%</td>
+    </tr>
+    <tr>
+      <td>Bending</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>100%</td>
+      <td>5.2%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>0.98</td>
+      <td>0.5</td>
+      <td>97.3%</td>
+      <td>6.1%</td>
+      <td>74.4%</td>
+      <td>98.4%</td>
+      <td>0.81</td>
+      <td>0.5</td>
+      <td>93.9%</td>
+      <td>6.1%</td>
+      <td>38.9%</td>
+      <td>96.5%</td>
+    </tr>
+    <tr>
+      <td>Contraction</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>100%</td>
+      <td>6.6%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>0.97</td>
+      <td>0.5</td>
+      <td>95.7%</td>
+      <td>6.9%</td>
+      <td>70.4%</td>
+      <td>97.7%</td>
+      <td>0.92</td>
+      <td>0.5</td>
+      <td>92.8%</td>
+      <td>11.7%</td>
+      <td>63.2%</td>
+      <td>95.5%</td>
+    </tr>
+    <tr>
+      <td>Feeding</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>100%</td>
+      <td>29.2%</td>
+      <td>100%</td>
+      <td>100%</td>
+      <td>1</td>
+      <td>0.5</td>
+      <td>98.8%</td>
+      <td>29.6%</td>
+      <td>98.5%</td>
+      <td>99.4%</td>
+      <td>0.83</td>
+      <td>0.5</td>
+      <td>81.0%</td>
+      <td>10.2%</td>
+      <td>39.6%</td>
+      <td>94.1%</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 10.](https://cdn.elifesciences.org/articles/32605/elife-32605-video10.mp4.jpg)
 
 Hydra can exhibit overlapping behaviors at the same time. For example, a Hydra specimen could be moving its tentacles while bending, or swaying its body while elongating. In such cases, it would be imprecise to allow only a single behavior label per time window. To capture this situation, we allowed a ‘soft’ classification strategy, taking up to three highest classification types that have a classifier probability within a twofold difference between them. With joint classifiers, we achieved 86.8% overall accuracy on the validation data (81.6% with hard classification), and 59.0% with new test data (50.1% with hard classification). Soft classification improved classification performance by allowing a realistic situation when Hydra transitions between two behaviors, or executes multiple behaviors simultaneously.
 
 In addition to optimally classifying the seven basic behaviors described above, classifying somersaulting video clips with basic behavior classifiers showed a conserved structure during the progression of this behavior (Figure 3e; Video 11). Somersaulting is a complex behavioral sequence that was not included in the seven visually identified behavior types. This long behavior can typically be decomposed into a sequence of simple behaviors of tentacle swaying, elongation, body swaying, contraction, and elongation. Indeed, in our classification of somersaulting with the seven basic behavior types, we noticed a strong corresponding structure: the classified sequences start with tentacle swaying, elongation, and body swaying, then a sequence of contraction and elongation before a core bending event (Figure 3e); finally, elongation and contraction complete the entire somersaulting behavior. This segmented classification based on breaking down a complex behavior into a sequence of multiple elementary behaviors agrees with human observations, indicating that our method is able to describe combined behaviors using the language of basic behavior types.
 
-## Unsupervised discovery of behavior states in embedding space
+![Video 11.](https://cdn.elifesciences.org/articles/32605/elife-32605-video11.mp4.jpg)
+
+**Video 11.:** Soft prediction was allowed here.
+
+### Unsupervised discovery of behavior states in embedding space
 
 Manual annotation identifies behavior types on the basis of distinct visual features. However, it is subjective by nature, especially when the Hydra exhibits multiple behaviors simultaneously and can be affected by the individual biases of the annotator. Therefore, to complement the supervised method described above, where classifiers were trained with annotated categories, we sought to perform unsupervised learning to discover the structural features of Hydra behaviors. Since the Fisher vector representation of video statistics is high-dimensional, we applied a nonlinear embedding technique, t-Distributed Stochastic Neighbor Embedding (t-SNE), to reduce the feature vector dimensionality (Berman et al., 2014; Van Der Maaten, 2009). This also allowed us to directly visualize the data structure in two dimensions while preserving the local structures in the data, serving as a method for revealing potential structures of the behavior dataset.
 
 Embedding the feature vectors of training data resulted in a t-SNE map that corresponded well to our manual annotation (Figure 4a). Generating a density map over the embedded data points revealed cluster-like structures in the embedding space (Figure 4b). We segmented the density map into regions with a watershed method, which defined each region as a behavior motif region (Figure 4c and e). We evaluated the embedding results by quantifying the manual labels of data points in each behavior motif region. We then assigned a label to each region based on the majority of the manually labeled behavior types in it. Using this approach, we identified 10 distinct behavior regions in the map (Figure 4d). These regions represented not only the seven types we defined for supervised learning, but also a somersaulting region, and three separate regions representing the three stages of feeding behavior (Figure 4d). Embedding with continuous 5 s time windows, which exclude the effect of the hard boundaries of separating the behavior elements, revealed the same types of behaviors (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/32605/elife-32605-fig4-v2.jpg)
+
+**Figure 4.:** (a) Scatter plot with embedded Fisher vectors. Each dot represents projection from a high-dimensional Fisher vector to its equivalent in the embedding space. Color represents the manual label of each dot. (b) Segmented density map generated from the embedding scatter plot. (c) Behavior motif regions defined using the segmented density map. (d) Labeled behavior regions. Color represents the corresponding behavior type of each region. (e) Percentage of the number of samples in each segmented region. (f) Two examples of embedded behavior density maps from test Hydra polyps that were not involved in generating the codebooks or generating the embedding space. (g) Quantification of manual label distribution in training, validation and test datasets. Dashed boxes highlight the behavior types that were robustly recognized in all the three datasets. Feeding 1, the tentacle writhing or the first stage of feeding behavior; feeding 2, the ball formation or the second stage of feeding behavior; feeding 3, the mouth opening or the last stage of feeding behavior.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32605/elife-32605-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Scatter plot with embedded Fisher vectors. Each dot represents projection from a high-dimensional Fisher vector to its equivalent in the embedding space. The Fisher vectors were encoded from continuous 5 s windows with an overlap of 24 frames. Color represents the manual label of each dot. (b) Segmented density map generated from the embedding scatter plot. (c) Behavior motif regions defined using the segmented density map. (d) Labeled behavior regions with manual labels. Color represents the corresponding behavior type of each region.
+
 The generated embedding space could be used to embed new data points (Berman et al., 2014). We embedded feature vectors from a withheld validation dataset, as well as from three Hydra that were involved neither in generating the feature codebook, nor in the embedding space generation (Figure 4f). Quantitative evaluation of embedding performance with manual labels showed that all behavior types were accurately identified by embedding in the validation data. In test samples, embedding identification of elongation, tentacle sway, body sway, contraction, and the ball formation stage of feeding, all agreed with manual labels (Figure 4g). Therefore, embedding of feature vectors can identify the same behavior types that are identified by human annotation.
 
-## Embedding reveals unannotated behaviors in long datasets
+### Embedding reveals unannotated behaviors in long datasets
 
 We wondered if Hydra has any spontaneous behaviors under natural day/night cycles that were not included in our manually labeled sets. We mimicked natural conditions by imaging a Hydra polyp for 3 days and nights with a 12 hr dark/light cycle (Figure 5a), keeping the Hydra in a 100 µm thick coverslip covered chamber to constrain it within the field of view of the microscope (Figure 5b) (Dupre and Yuste, 2017). This imaging approach, although constraining the movement of Hydra, efficiently reduced the complexity of the resulting motion from a three-dimensional to a two-dimensional projection, while still allowing the Hydra to exhibit a basic repertoire of normal behaviors.
 
@@ -73,9 +323,29 @@ We wondered if Hydra has any spontaneous behaviors under natural day/night cycle
 
 Using this new dataset, we generated a t-SNE embedding density map from the feature vectors as previously described, and segmented it into behavior motif regions (Figure 5c). Among the resulting 260 motif regions, we not only discovered previously defined behavior types including silent, elongation, bending, tentacle swaying, and contraction, but also found subtypes within certain classes (Videos 12–19). In elongation, for example, we found three different subtypes based on the state of the animal: slow elongation during the resting state of the animal, fast elongation after a contraction burst, and inter-contraction elongation during a contraction burst (Videos 13–15). In contraction, we found two different subtypes: the initial contraction of a contraction burst, and the subsequent individual contraction events when the animal is in a contracted state (Videos 18–19). Interestingly, we also discovered one region in the embedding map that showed a previously unannotated egestion behavior (Figure 5c; Video 20). Egestion behavior (also known as radial contraction) has been observed before (Dupre and Yuste, 2017), and is typically a fast, radial contraction of the body column that happens within 1 s and empties the body cavity of fluid. Although this behavior happens with animals in their natural free movement, its fast time scale and the unconstrained movement make it hard to identify visually during human annotation. In addition, another t-SNE region showed a novel hypostome movement associated with egestion, characterized by a regional pumping-like movement in hypostome and lower tentacle regions (Video 21).
 
+![Video 12.](https://cdn.elifesciences.org/articles/32605/elife-32605-video12.mp4.jpg)
+
+![Video 13.](https://cdn.elifesciences.org/articles/32605/elife-32605-video13.mp4.jpg)
+
+![Video 14.](https://cdn.elifesciences.org/articles/32605/elife-32605-video14.mp4.jpg)
+
+![Video 15.](https://cdn.elifesciences.org/articles/32605/elife-32605-video15.mp4.jpg)
+
+![Video 16.](https://cdn.elifesciences.org/articles/32605/elife-32605-video16.mp4.jpg)
+
+![Video 17.](https://cdn.elifesciences.org/articles/32605/elife-32605-video17.mp4.jpg)
+
+![Video 18.](https://cdn.elifesciences.org/articles/32605/elife-32605-video18.mp4.jpg)
+
+![Video 19.](https://cdn.elifesciences.org/articles/32605/elife-32605-video19.mp4.jpg)
+
+![Video 20.](https://cdn.elifesciences.org/articles/32605/elife-32605-video20.mp4.jpg)
+
+![Video 21.](https://cdn.elifesciences.org/articles/32605/elife-32605-video21.mp4.jpg)
+
 We evaluated the reliability of the identification of this newly discovered egestion behavior from the embedding method by detecting egestion with an additional ad-hoc method. We measured the width of the Hydra body column by fitting it to an ellipse, and low-pass filtered the width trace. Peaks in the trace then represent estimated time points of egestion behavior, which is essentially a rapid decrease in the body column width (Figure 5d). Detected egestion time points were densely distributed in the newly discovered egestion region in the embedding map (Figure 5e), confirming that our method is as an efficient way to find novel behavior types.
 
-## Basic behavior of Hydra under different experimental conditions
+### Basic behavior of Hydra under different experimental conditions
 
 Although basic Hydra behaviors such as contraction, feeding and somersaulting have been described for over two centuries, the quantitative understanding of Hydra behaviors has been limited by the subjective nature of human annotation and by the amount of data that can be processed by manual examination. To build quantitative descriptions that link behaviors to neural processes and to explore behavior characteristics of Hydra, we used our newly developed method to compare the statistics of behavior under various physiological and environmental conditions.
 
@@ -91,7 +361,7 @@ Finally, we further inquired if different Hydra species have different behaviora
 
 ## Discussion
 
-## A machine learning method for quantifying behavior of deformable animals
+### A machine learning method for quantifying behavior of deformable animals
 
 Interdisciplinary efforts in the emerging field of computational ethology are seeking novel ways to automatically measure and model natural behaviors of animals (Anderson and Perona, 2014) (Berman et al., 2014; Branson et al., 2009; Brown et al., 2013; Creton, 2009; Dankert et al., 2009; Johnson et al., 2016; Kabra et al., 2013; Pérez-Escudero et al., 2014; Robie et al., 2017; Stephens et al., 2008; Swierczek et al., 2011; Wiltschko et al., 2015). Most of these approaches rely on recognizing variation of the shapes of animals based on fitting video data to a standard template of the body of the animal. However, unlike model organisms like worms, flies, fishes and mice, Hydra differs dramatically from these bilaterian organisms in having an extremely deformable and elastic body. Indeed, during contraction, Hydra appears as a ball with all tentacles shortened, while during elongation, Hydra appears as a long and thin column with tentacles relaxed. Moreover, these deformations are non-isometric, that is, different axes, and different parts of the body, change differently. The number of tentacles each Hydra has also varies. These present difficult challenges for recognizing Hydra behaviors using preset templates.
 
@@ -103,7 +373,7 @@ Our goal was to describe all possible Hydra behavior quantitatively. Because of 
 
 In our analysis pipeline, we applied both supervised and unsupervised approaches to characterize Hydra behavior. In supervised classifications (with SVM), we manually defined seven types of behaviors, and trained classifiers to infer the label of unknown samples. In unsupervised analysis (t-SNE), we did not pre-define behavior types, but rather let the algorithm discover the structures that were embedded in the behavior data. In addition, we found that unsupervised learning could discover previously unannotated behavior types such as egestion. However, the types of behaviors discovered by unsupervised analysis are limited by the nature of the encoded feature vectors. Since the BoW model provides only a statistical description of videos, those features do not encode fine differences in behaviors. Due to this difference, we did not apply unsupervised learning to analyze behavior statistics under different environmental and physiological conditions, as supervised learning appeared more suitable for applications where one needs to assign a particular label to a new behavior video.
 
-## Stability of the basic behavioral repertoire of Hydra
+### Stability of the basic behavioral repertoire of Hydra
 
 Once we established the reliability or our method, we quantified the differences between six basic behaviors in Hydra under different experimental conditions with two different species of Hydra and found that Hydra vulgaris exhibits essentially the same behavior statistics under dark/light, large/small and starved/fed conditions. Although some small differences were observed among experimental variables, the overall dwell time and variance of the behavioral repertoire of Hydra were unexpectedly very similar in all these different conditions. Although we could not exclude the possibility that there were differences in the transition probabilities between behaviors, our results still show that , from the six basic behaviors analyzed, Hydra possess a surprisingly robust behavioral frequencies and similarities across environmental and physiological conditions, while interspecies differences introduce stronger behavior differences.
 
@@ -117,7 +387,7 @@ In addition, a possible reason for the behavioral similarity among different spe
 
 Finally, it is also possible that the behavioral repertoire of cnidarians, which represents some of the simplest nervous systems in evolution in structure and probably also in function, could be particularly simple and hardwired as compared with other metazoans or with bilaterians. From this point of view, the robustness we observed could reflect a ‘passive stability’ where the neural mechanisms are simply unresponsive to the environment, as opposed to a homeostatic ‘active stability’, generated perhaps by neuromodulators. This distinction mirrors the difference between open-loop and closed-loop control systems in engineering (Schiff, 2012). Thus, it would be fascinating to reverse engineer the Hydra nerve net and discern to what extent its control mechanisms are regulated externally. Regardless of the reason for this behavioral stability, our analysis provides a strong baseline for future behavioral analysis of Hydra and for the quantitative analysis of the relation between behavior, neural and non-neuronal cell activity.
 
-## Hydra as a model system for investigating neural circuits underlying behavior
+### Hydra as a model system for investigating neural circuits underlying behavior
 
 Revisiting Hydra as a model system with modern imaging and computational tools to systematically analyze its behavior provides a unique opportunity to image the entire neural network in an organism and decode the relation between neural activity and behaviors (Bosch et al., 2017). With recently established GCaMP6s transgenic Hydra lines (Dupre and Yuste, 2017) and the automated behavior recognition method introduced in this study, it should now be possible to identify the neural networks responsible for each behavior in Hydra under laboratory conditions.
 
@@ -127,54 +397,80 @@ As a member of the phylum Cnidaria, Hydra is a sister to bilaterians, and its ne
 
 ## Materials and methods
 
-## Hydra behavior dataset
+### Hydra behavior dataset
 
 The Hydra behavior dataset consisted of 53 videos from 53 Hydra with an average length of 30 min. The AEP strain of Hydra was used for all experiments. Hydra polyps were maintained at 18°C in darkness and were fed with Artemia nauplii once or more times a week by standard methods (Lenhoff and Brown, 1970). During imaging, Hydra polyps were placed in a 3.5 cm plastic petri dish under a dissecting microscope (Leica M165) equipped with a sCMOS camera (Hamamatsu ORCA-Flash 4.0). Videos were recorded at 5 Hz. Hydra polyps were allowed to behave either undisturbed, or in the presence with reduced L-glutathione (Sigma-Aldrich, G4251-5G) to induce feeding behavior, since Hydra does not exhibit feeding behavior in the absence of prey.
 
-## Manual annotation
+### Manual annotation
 
 Each video in the Hydra behavior dataset was examined manually at a high playback speed, and each frame in the video was assigned a label in the following eleven classes based on the behavior that Hydra was performing: silent, elongation, tentacle swaying, body swaying, bending, contraction, somersaulting, tentacle writhing of feeding, ball formation of feeding, mouth opening of feeding, and a none class. These behaviors were labeled as 1 through 11, where larger numbers correspond to more prominent behaviors, and the none class is labeled as 0. To generate manual labels for a given time window, the top two most frequent labels, L1 and L2, within this time window were identified. The window was assigned as L2 if its count exceed L1 by three-fold and if L1 is more prominent than L2; otherwise, the window was assigned as L1. This annotation method labels time windows as more prominent behaviors if behaviors with large motion, e.g. contraction, happens in only a few frames, while the majority of frames are slow behaviors.
 
-## Video pre-processing
+### Video pre-processing
 
 Prior work has shown that the bag of words methods for video action classification perform better when encoding spatial structure (Taralova et al., 2011; Wang et al., 2009). Encoding spatial information is especially important in our case because allowing the animal to move freely produces large variations in orientation, which is not related to behavior classification. Therefore, we performed a basic image registration procedure that keeps the motion information invariant, but aligns the Hydra region to a canonical scale and orientation. This involves three steps: background segmentation, registration, and body part segmentation. In brief, the image background was calculated by a morphological opening operation, and the background was removed from the raw image. Then, image contrast was adjusted to enhance tentacle identification. Images were then segmented by clustering the pixel intensity profiles to three clusters corresponding to Hydra body, weak-intensity tentacle regions and background by k-means, and the largest cluster from the result was treated as background, and the other two clusters as foreground, that is Hydra region. Connected components that occupied less than 0.25% of total image area in this binary image were removed as noise, and the resulting Hydra mask was then dilated by three pixels. To detect the body column, the background-removed image was convolved with a small 3-by-3 Gaussian filter with sigma equals one pixel, and the filtered image was thresholded with Otsu’s segmentation algorithm. The binarization was repeated with a new threshold defined with Otsu’s method within the previous above-threshold region, and the resulting binary mask was considered as the body column. The body column region was then fitted with an ellipse; the major axis, centroid, and orientation of the ellipse were noted. To determine the orientation, two small square masks were placed on both ends of the ellipse along the major axis, and the area of the Hydra region excluding the body column under the patch was calculated; the end with the larger area was defined as the tentacle/mouth region, and the end with the smaller area was defined as the foot region. To separate the Hydra region into three body parts, the part under the upper body square mask excluding the body column was defined as the tentacle region, and the rest of the mask was split at the minor axis of the ellipse; the part close to the tentacle region was defined as the upper body region, and the other as the lower body region. This step has shown to improve representation efficiency (Figure 2—figure supplement 1b).
 
 Each 5-s video clip was then centered by calculating the average ellipse centroid position and centering it. The average major axis length and the average orientation were also calculated. Each image in the video clip was rotated according to the average orientation to make the Hydra vertical, and was scaled to make the length of the Hydra body 100 pixels, with an output size of 300 by 300 pixels, while only keeping the region under the Hydra binary mask.
 
-## Feature extraction
+### Feature extraction
 
 Video features including HOF, HOG and MBH were extracted using a codebase that was previously released (Wang et al., 2011). Briefly, interest points were densely sampled with five pixels spacing at each time point in each 5 s video clip and were then tracked throughout the video clip with optical flow for 15 frames. The tracking quality threshold was set to 0.01; the minimum variation of trajectory displacement was set to 0.1, the maximum variation was set to 50, and the maximum displacement was set to 50. The neighboring 32 pixels of each interest point were then extracted, and HOF (8 dimensions for eight orientations plus one extra zero bin), HOG (eight dimensions) and MBH (eight dimensions) features were calculated with standard procedures. Note that MBH was calculated for horizontal and vertical optical flow separately, therefore two sets of MBH features, MBHx and MBHy were generated. All features were placed into three groups based on the part of body they fall in, that is tentacles, upper body column, and lower body column. All parameters above were cross-validated with the training and test datasets.
 
-## Gaussian mixture codebook and Fisher vector
+### Gaussian mixture codebook and Fisher vector
 
-A Gaussian mixture codebook and Fisher vectors were generated using the code developed by Jegou et al. for each feature type (Jégou et al., 2012), using 50 Hydra in the behavior dataset that includes all behavior types. Features from each body part were centered at zero, then PCA was performed on centered features from all three body parts, keeping half of the original dimension (five for HOF, four for HOG, MBHx and MBHy). Whitening was performed on the PCA data as following, which de-correlates the data and removes redundant information:xwhite, i=xi√λiwhere x denotes principal components, and λ denotes eigenvalues. K=256 Gaussian mixtures were then fitted with the whitened data using a subset of 256,000 data points. We then calculated the Fisher vectors as following:zX=Lλ ∇λ LXλ)where X={xt, t=1 … T} is a set of T data points that were assumed to be generated with Gaussian distributions uλx=∑i=1Kwiui(x), with λ={wi,μi,σi, i=1,…,K} denotes the Gaussian parameters, and Lλ is the decomposed Fisher Information Matrix:F λ-1≡Ex~uλ∇λlog⁡uλ(x)∇λlog⁡uλxT=LλTLλ
+A Gaussian mixture codebook and Fisher vectors were generated using the code developed by Jegou et al. for each feature type (Jégou et al., 2012), using 50 Hydra in the behavior dataset that includes all behavior types. Features from each body part were centered at zero, then PCA was performed on centered features from all three body parts, keeping half of the original dimension (five for HOF, four for HOG, MBHx and MBHy). Whitening was performed on the PCA data as following, which de-correlates the data and removes redundant information:
 
-Fisher vectors then represent the normalized gradient vector obtained from Fisher kernel KX,X':KX,X'= ∇λ L X  λ )T Fλ-1 ∇λ L X'  λ )=zXTzX
+$$
+x_{white,i}=\frac{x_{i}}{\sqrt\lambda_{i}}
+$$
 
-Comparing with hard-assigning each feature to a code word, the Gaussian mixtures can be regarded as probabilistic vocabulary, and Fisher vectors encode information of both the position and the shape of each word with respect to the Gaussian mixtures. Power normalization was then performed on the Fisher vectors to improve the quality of representation:f(z) = signzzαwith α=0.5, followed by l2 normalization, which removes scale dependence (Perronnin et al., 2010). The final representation of each video clip is a concatenation of Fisher vectors of HOF, HOG, MBHx and MBHy. In this paper, the GMM size was set to 128 with cross-validation (Figure 2—figure supplement 1c).
+where $x$ denotes principal components, and $\lambda$ denotes eigenvalues. $K=256$ Gaussian mixtures were then fitted with the whitened data using a subset of 256,000 data points. We then calculated the Fisher vectors as following:
 
-## SVM classification
+$$
+z_{X}=L_{\lambda}\nabla_{\lambda}LX\lambda)
+$$
 
-PCA was first performed on the concatenated Fisher vectors to reduce the dimensions while keeping 90% of the original variance. A random 90% of samples from the 50 training Hydra were selected as training data, and the remaining 10% were withheld as validation data. Another three Hydra that exhibit all behavior types were kept as test data. Because each behavior type has different numbers of data points, we trained SVM classifiers using the libSVM implementation (Chang and Lin, 2011) by assigning each type a weight of wi=(∑iNi)/Ni, where i=1,…,7 denotes the behavior type, and Ni denotes the number of data points that belong to type i. We trained SVM classifiers with a radial basis kernel, allowing probability estimate, and a fivefold cross-validation testing the cost parameter c with a range of log2⁡c∈-5:2:15, and the g in the kernel function with a range of log2⁡g∈-5:2:15, where -5:2:15 denotes integers ranging from −5 to 15 with a step of 2. The best parameter combination from cross-validation was chosen to train the SVM classifiers.
+where $X={x_{t},t=1…T}$ is a set of $T$ data points that were assumed to be generated with Gaussian distributions $u_{\lambda}x=\sum_{i=1}^{K}w_{i}u_{i}(x)$, with $\lambda={w_{i},\mu_{i},\sigma_{i},i=1,…,K}$ denotes the Gaussian parameters, and $L_{\lambda}$ is the decomposed Fisher Information Matrix:
 
-To classify test data, features were extracted as above and were encoded with Fisher vectors with the codebook generated from the training data. PCA was performed using the projection matrix from training data. A probability estimate for each behavior type was given by the classifiers, and the final assigned label is the classifier with the highest probability. For soft classifications, we allowed up to three labels for each sample if the second highest label probability is >50% of the highest label, and the third is >50% of the second highest label. To evaluate classification performance, true positives (TP), false positives (FP), true negatives (TN) and false negatives (FN) were calculated. Accuracy was defined as Acc=(TP+TN)/(TP+TN+FP+FN); precision was defined as Prc=TP/(TP+FP); recall was defined as Acc=TN/(TN+FP). Two other measurements were calculated: true positive rate TPR=TP/(TP+FN), and false-positive rate FPR=FP/(FP+TN). Plotting TPR against FPR gives the standard ROC curve, and the area under curve (AUC) reflects the performance of classification. In this plot, a straight line TPR = FPR with AUC = 0.5 represents random guess; the upper left quadrant with AUC >0.5 represents better performance than random.
+$$
+F_{\lambda}^{-1}≡E_{x~u_{\lambda}}\nabla_{\lambda}log⁡u_{\lambda}(x)\nabla_{\lambda}log⁡u_{\lambda}x^{T}=L_{\lambda}^{T}L_{\lambda}
+$$
 
-## t-SNE embedding
+Fisher vectors then represent the normalized gradient vector obtained from Fisher kernel $KX,X'$:
 
-Embedding was performed with the dimension-reduced data. A random 80% of the dataset from the 50 training Hydra were chosen to generate the embedding map, and the remaining 20% were withheld as validation dataset. Three other Hydra were used as test dataset. We followed the procedures of Berman et al. (2014), with a slight modification that uses Euclidean distance as the distance measurement. Embedding perplexity was chosen as 16. To generate a density map, a probability density function was calculated in the embedding space by convolving the embedded points with a Gaussian kernel; σ of the Gaussian was chosen to be 1/40 of the maximum value in the embedding space by cross-validation with human examination to minimize over-segmentation. In the 3-day dataset, σ was chosen to be 1/60 of the maximum value in order to reveal finer structures. To segment the density map, peaks were found in the density map, a binary map containing peak positions was generated, and peak points were dilated by three pixels. A distance map of the binary image was generated and inverted, and the peak positions were set to be minimum. Watershed was performed on the inverted distance map, and the boundaries were defined with the resulting watershed segmentation.
+$$
+KX,X'=\nabla_{\lambda}LX\lambda)^{T}F_{\lambda}^{-1}\nabla_{\lambda}LX'\lambda)=z_{X}^{T}z_{X}
+$$
 
-## Egestion detection
+Comparing with hard-assigning each feature to a code word, the Gaussian mixtures can be regarded as probabilistic vocabulary, and Fisher vectors encode information of both the position and the shape of each word with respect to the Gaussian mixtures. Power normalization was then performed on the Fisher vectors to improve the quality of representation:
 
-Estimated egestion time points were calculated by first extracting the width profile of Hydra from the pre-processing step, then filtering the width profile by taking the mean width during 15 min after each time point t, and the mean width during 15 min before time t, and subtracting the former from the latter. Peaks were detected on the resulting trace and were regarded as egestion behaviors, since they represent a sharp decrease in the thickness of the animals.
+$$
+f(z)=signzz^{\alpha}
+$$
 
-## Behavior experiments
+with $\alpha=0.5$, followed by $l_{2}$ normalization, which removes scale dependence (Perronnin et al., 2010). The final representation of each video clip is a concatenation of Fisher vectors of HOF, HOG, MBHx and MBHy. In this paper, the GMM size was set to 128 with cross-validation (Figure 2—figure supplement 1c).
+
+### SVM classification
+
+PCA was first performed on the concatenated Fisher vectors to reduce the dimensions while keeping 90% of the original variance. A random 90% of samples from the 50 training Hydra were selected as training data, and the remaining 10% were withheld as validation data. Another three Hydra that exhibit all behavior types were kept as test data. Because each behavior type has different numbers of data points, we trained SVM classifiers using the libSVM implementation (Chang and Lin, 2011) by assigning each type a weight of $w_{i}=(\sum_{i}N_{i})/N_{i}$, where $i=1,…,7$ denotes the behavior type, and $N_{i}$ denotes the number of data points that belong to type $i$. We trained SVM classifiers with a radial basis kernel, allowing probability estimate, and a fivefold cross-validation testing the cost parameter $c$ with a range of $log_{2}⁡c\in-5:2:15$, and the $g$ in the kernel function with a range of $log_{2}⁡g\in-5:2:15$, where $-5:2:15$ denotes integers ranging from −5 to 15 with a step of 2. The best parameter combination from cross-validation was chosen to train the SVM classifiers.
+
+To classify test data, features were extracted as above and were encoded with Fisher vectors with the codebook generated from the training data. PCA was performed using the projection matrix from training data. A probability estimate for each behavior type was given by the classifiers, and the final assigned label is the classifier with the highest probability. For soft classifications, we allowed up to three labels for each sample if the second highest label probability is >50% of the highest label, and the third is >50% of the second highest label. To evaluate classification performance, true positives ($TP$), false positives ($FP$), true negatives ($TN$) and false negatives ($FN$) were calculated. Accuracy was defined as $Acc=(TP+TN)/(TP+TN+FP+FN)$; precision was defined as $Prc=TP/(TP+FP)$; recall was defined as $Acc=TN/(TN+FP)$. Two other measurements were calculated: true positive rate $TPR=TP/(TP+FN)$, and false-positive rate $FPR=FP/(FP+TN)$. Plotting TPR against FPR gives the standard ROC curve, and the area under curve (AUC) reflects the performance of classification. In this plot, a straight line TPR = FPR with AUC = 0.5 represents random guess; the upper left quadrant with AUC >0.5 represents better performance than random.
+
+### t-SNE embedding
+
+Embedding was performed with the dimension-reduced data. A random 80% of the dataset from the 50 training Hydra were chosen to generate the embedding map, and the remaining 20% were withheld as validation dataset. Three other Hydra were used as test dataset. We followed the procedures of Berman et al. (2014), with a slight modification that uses Euclidean distance as the distance measurement. Embedding perplexity was chosen as 16. To generate a density map, a probability density function was calculated in the embedding space by convolving the embedded points with a Gaussian kernel; $\sigma$ of the Gaussian was chosen to be 1/40 of the maximum value in the embedding space by cross-validation with human examination to minimize over-segmentation. In the 3-day dataset, $\sigma$ was chosen to be 1/60 of the maximum value in order to reveal finer structures. To segment the density map, peaks were found in the density map, a binary map containing peak positions was generated, and peak points were dilated by three pixels. A distance map of the binary image was generated and inverted, and the peak positions were set to be minimum. Watershed was performed on the inverted distance map, and the boundaries were defined with the resulting watershed segmentation.
+
+### Egestion detection
+
+Estimated egestion time points were calculated by first extracting the width profile of Hydra from the pre-processing step, then filtering the width profile by taking the mean width during 15 min after each time point $t$, and the mean width during 15 min before time $t$, and subtracting the former from the latter. Peaks were detected on the resulting trace and were regarded as egestion behaviors, since they represent a sharp decrease in the thickness of the animals.
+
+### Behavior experiments
 
 All Hydra used for experiments were fed three times a week and were cultured at 18°C. On non-feeding days, the culture medium was changed. Hydra viridissima was cultured at room temperature under sunlight coming through the laboratory windows. For imaging, animals were placed in a petri dish under the microscope without disturbance to habituate for at least 30 min. Imaging typically started between 7 pm and 9 pm, and ended between 9 am and 11 am except for the large/small experiments. All imagings were done excluding environmental light by putting a black curtain around the microscope. For dark condition, a longpass filter with a cutoff frequency of 650 nm (Thorlabs, FEL0650) was placed at the source light path to create ‘Hydra darkness’ (Passano and McCullough, 1962). For starved condition, Hydra were fed once a week. For the large/small experiment, Hydra buds that were detached from their parents within 3 days were chosen as small Hydra, and mature post-budding mature Hydra polyps were chosen as large Hydra. There was a two- to threefold size difference between small and large Hydra when they were relaxed. However, since the Hydra body was constantly contracting and elongating, it was difficult to measure the exact size. Imaging for this experiment was done during the day time for 1 hr per Hydra.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were done using Wilcoxon rank-sum test unless otherwise indicated. Data is represented by mean ± S.E.M unless otherwise indicated.
 
-## Resource availability
+### Resource availability
 
 The code for the method developed in this paper is available at https://github.com/hanshuting/Hydra_behavior. A copy is archived at https://github.com/elifesciences-publications/hydra_behavior (Han, 2018b). The annotated behavior dataset is available on Academic Commons (dx.doi.org/10.7916/D8WH41ZR).

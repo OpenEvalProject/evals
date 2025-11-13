@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.32893.001 Insulin-like growth factor-I receptor (IGF-IR) preferentially regulates the long-term IGF activities including growth and metabolism. Kinetics of ligand-dependent IGF-IR endocytosis determines how IGF induces such downstream signaling outputs. Here, we find that the insulin receptor substrate (IRS)−1 modulates how long ligand-activated IGF-IR remains at the cell surface before undergoing endocytosis in mammalian cells. IRS-1 interacts with the clathrin adaptor complex AP2. IRS-1, but not an AP2-binding-deficient mutant, delays AP2-mediated IGF-IR endocytosis after the ligand stimulation. Mechanistically, IRS-1 inhibits the recruitment of IGF-IR into clathrin-coated structures; for this reason, IGF-IR avoids rapid endocytosis and prolongs its activity on the cell surface. Accelerating IGF-IR endocytosis via IRS-1 depletion induces the shift from sustained to transient Akt activation and augments FoxO-mediated transcription. Our study establishes a new role for IRS-1 as an endocytic regulator of IGF-IR that ensures sustained IGF bioactivity, independent of its classic role as an adaptor in IGF-IR signaling.
+Insulin-like growth factor-I receptor (IGF-IR) preferentially regulates the long-term IGF activities including growth and metabolism. Kinetics of ligand-dependent IGF-IR endocytosis determines how IGF induces such downstream signaling outputs. Here, we find that the insulin receptor substrate (IRS)−1 modulates how long ligand-activated IGF-IR remains at the cell surface before undergoing endocytosis in mammalian cells. IRS-1 interacts with the clathrin adaptor complex AP2. IRS-1, but not an AP2-binding-deficient mutant, delays AP2-mediated IGF-IR endocytosis after the ligand stimulation. Mechanistically, IRS-1 inhibits the recruitment of IGF-IR into clathrin-coated structures; for this reason, IGF-IR avoids rapid endocytosis and prolongs its activity on the cell surface. Accelerating IGF-IR endocytosis via IRS-1 depletion induces the shift from sustained to transient Akt activation and augments FoxO-mediated transcription. Our study establishes a new role for IRS-1 as an endocytic regulator of IGF-IR that ensures sustained IGF bioactivity, independent of its classic role as an adaptor in IGF-IR signaling.
 
 ## Introduction
 
@@ -41,25 +41,244 @@ Among IRS family proteins IRS-1 and IRS-2 are well known as major substrates of 
 
 ## Results
 
-## IRS-1 interacts with the clathrin adaptor AP2 complex through its Yxxφ motifs
+### IRS-1 interacts with the clathrin adaptor AP2 complex through its Yxxφ motifs
 
 To identify the IRS-1-interacting proteins that potentially regulate insulin/IGF signaling, we searched the candidates in our previous yeast two-hybrid screening (Hakuno et al., 2007). We found the μ2 subunit of clathrin adaptor AP2 complex among the frequently obtained clones (Figure 1A). Co-immunoprecipitation assay using HEK293T cells expressing FLAG-tagged IRS-1 or IRS-2 revealed that endogenous AP2 subunits (α-adaptin and μ2) were detected in a complex with IRS-1, but not with IRS-2 (Figure 1B). In addition, a portion of AP2 was co-immunoprecipitated with endogenous IRS-1 as well as ectopically expressed FLAG-IRS-1 in L6 myoblasts, and this interaction was not affected by IGF-I stimulation (Figure 1C,D).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig1-v1.jpg)
+
+**Figure 1.:** (A) Yeast two-hybrid assay indicating the interaction of IRS-1 with the μ2 subunit of AP2. (B) The association of IRS-1 or IRS-2 with endogenous AP2 subunits was analyzed by immunoprecipitation in HEK293T cells expressing FLAG-IRS-1 or FLAG-IRS-2. Asterisk indicates IgG band. (C, D) Changes in endogenous IRS-1- (C) and ectopically expressed FLAG-IRS-1- (D) associated AP2 following IGF-I stimulation in L6 cells were analyzed by immunoprecipitation. (E) AP2-binding region on IRS-1 was mapped with the indicated truncation mutants of FLAG-IRS-1 by immunoprecipitation of HEK293T cell lysates. Asterisks indicate nonspecific bands. (F, G) In vitro pull-down assay for the interaction between IRS-1 mutants and μ2 subunit. Coomassie brilliant blue (CBB) staining of the recombinant proteins (GST, GST-μ1, and GST-μ2) used in the pull-down assay is shown (F). Three YxxΦ motifs in IRS-1, which contain Y608, Y628, and Y658 are depicted. The lysates from HEK293T cells expressing the indicated GFP-IRS-1 mutants were pulled down with GST-fused μ1 and μ2 (G).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Sequence alignment of three IRS-1 YxxΦ peptides used for structural analysis. (B) Structural details of IRS-1 YxxΦ motif binding to C-μ2. The overall structures of C-μ2 with these peptides were similar to that with EGFR peptide (PDB 1BW8) with Cα root mean square deviations of 0.83, 0.611, and 0.55 Å for the complex with the Y608, Y628, and Y658 peptides, respectively. Six residues from Y-1 to Y + 4 were modeled into the density, whereas electron density for the C-terminal two residues was not clearly visible, indicating that they were disordered. Three IRS-1 YxxΦ motif peptides (Y608, Y628, and Y658) and μ2 residues important in the interaction are indicated. The side chains of the conserved Tyr residues (Y608, Y628, and Y658) are inserted in the binding pocket with their hydroxyl group forming hydrogen bonds with the side chains of Asp176 and Lys203, while the side chains make hydrophobic interactions with those of Phe174, Trp421, and Arg423. The side chains of the Met residues at Y + 3 (Met611, Met631, and Met661) are inserted in the second binding pocket on the opposite side of strand 16 from that for the Tyr residue, making hydrophobic interactions with the side chains of Leu175, Lys420 and Val422. IRS-1 peptide is shown in mFo – DFc electron density calculated without the peptide coordinates. The electron density is cropped around the peptide and contoured at 2.0 σ. Data collection and refinement statistics are shown in Table 1. (C) Surface charge distribution of C-μ2 around IRS-1 Y658 peptide (yellow) -binding interface is shown (colored from red at −6 kT/e to blue at +6 kT/e), including an overlay with the YxxΦ motif of EGFR (green) to compare binding of the two motifs. (D) Flow chart of the experiment shown in (E) and (F). Lysates were prepared from L6 cells stimulated with or without IGF-I, and then were split into in vitro pull-down using GST-C-μ2 and immunoprecipitation with anti-IRS-1 antibody. (E, F) In vitro pull-down assay showing the IRS-1 fraction capable of binding to μ2 in lysates of IGF-I-stimulated cells. Coomassie brilliant blue (CBB) staining of the recombinant proteins (GST and GST-C-μ2) used in the pull-down assay is shown (E). The samples of immunoprecipitated IRS-1 were serially diluted to load the equivalent amount of IRS-1 pulled down with GST-C-μ2 (F). The tyrosine-phosphorylated IRS-1 was never detected in the pull-down fraction in IGF-I-stimulated condition.
+
 Using IRS-1 truncated mutants, we mapped the central region (amino acid residues 543–865) which is necessary for the binding to AP2 (Figure 1E). This region is almost identical to that for the clathrin adaptor AP1 complex found in our previous study, which binds to YxxΦ motifs of IRS-1 including Tyr 608, Tyr 628, and Tyr 658 via its μ1 subunit (Yoneyama et al., 2013). Indeed, the Ala mutation of all these Tyr residues in IRS-1, but not a single substitution, completely abolished the binding to μ2 in vitro (IRS-1 3YA mutant; Figure 1F,G). We also analyzed the crystal structures of μ2 C-terminal subdomain (C-μ2) bound to IRS-1 YxxΦ motifs (Figure 1—figure supplement 1A,B and Table 1). Importantly, the side chains of Tyr and Met residues of IRS-1 YxxΦ motifs are inserted into the binding pockets of μ2, which are shared by the AP2 cargo proteins (Owen and Evans, 1998) (Figure 1—figure supplement 1C). Collectively, these results indicate that IRS-1 is recognized by the AP2 complex via the μ2 subunit in the very similar manner to conventional endocytic cargos.
+
+**Table 1.**
+ Data collection and refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Y608 peptide complex</th>
+      <th>Y628 peptide complex</th>
+      <th>Y658 peptide complex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Crystal parameters</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P64</td>
+      <td>P64</td>
+      <td>P64</td>
+    </tr>
+    <tr>
+      <td colspan="2">Cell dimensions:</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>126.07, 126.07, 73.40</td>
+      <td>126.19, 126.19, 74.11</td>
+      <td>125.48, 125.48, 74.14</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 90, 120</td>
+      <td>90, 90, 120</td>
+      <td>90, 90, 120</td>
+    </tr>
+    <tr>
+      <td colspan="2">Data collection</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>1.000</td>
+      <td>1.000</td>
+      <td>1.000</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>50–2.63 (2.68–2.63)*</td>
+      <td>50–3.10 (3.15–3.10)</td>
+      <td>50–2.60 (2.64–2.60)</td>
+    </tr>
+    <tr>
+      <td>No. of unique reflections</td>
+      <td>20035</td>
+      <td>12419</td>
+      <td>20659</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>11.3 (10.9)</td>
+      <td>11.3 (11.4)</td>
+      <td>11.4 (11.5)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>100 (100)</td>
+      <td>100 (100)</td>
+      <td>100 (100)</td>
+    </tr>
+    <tr>
+      <td>Rmeas</td>
+      <td>0.078 (1.504)</td>
+      <td>0.103 (1.880)</td>
+      <td>0.094 (2.069)</td>
+    </tr>
+    <tr>
+      <td>Rpim</td>
+      <td>0.023 (0.455)</td>
+      <td>0.031 (0.556)</td>
+      <td>0.028 (0.608)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>(0.743)</td>
+      <td>(0.646)</td>
+      <td>(0.780)</td>
+    </tr>
+    <tr>
+      <td>Mean I/σ</td>
+      <td>28.1 (1.8)</td>
+      <td>24.8 (1.6)</td>
+      <td>26.5 (1.6)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>43–2.62</td>
+      <td>36–3.10</td>
+      <td>36–2.60</td>
+    </tr>
+    <tr>
+      <td>No. of reflections</td>
+      <td>19977</td>
+      <td>12322</td>
+      <td>20589</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.185/0.223</td>
+      <td>0.194/0.251</td>
+      <td>0.192/0.227</td>
+    </tr>
+    <tr>
+      <td>RMSD bond lengths (Å)</td>
+      <td>0.008</td>
+      <td>0.010</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>RMSD bond angles (°)</td>
+      <td>0.948</td>
+      <td>1.194</td>
+      <td>0.965</td>
+    </tr>
+    <tr>
+      <td>No. of atoms</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein/peptide</td>
+      <td>2003</td>
+      <td>2121</td>
+      <td>2118</td>
+    </tr>
+    <tr>
+      <td>Water/ion</td>
+      <td>2</td>
+      <td>0</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored (%)</td>
+      <td>95.5</td>
+      <td>92.3</td>
+      <td>95.4</td>
+    </tr>
+    <tr>
+      <td>Outliers (%)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>PDB accession code:</td>
+      <td>5WRK</td>
+      <td>5WRL</td>
+      <td>5WRM</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses are for highest resolution shell._
 
 The μ2 subunit of AP2 cannot recognize phosphorylated YxxΦ sequence due to its limited capacity (Kittler et al., 2008; Owen and Evans, 1998). However, IGF-I stimulation did not inhibit the co-immunoprecipitation of IRS-1 with AP2 (Figure 1C,D). To evaluate the stoichiometry of IRS-1 Tyr phosphorylation in IGF-I-stimulated cells, we analyzed the amount of IRS-1 capable of binding to GST-C-μ2 in lysates of cells treated with or without IGF-I (Figure 1—figure supplement 1D,E). Although the amounts of both pulled-down and immunoprecipitated IRS-1 were comparable, Tyr-phosphorylated IRS-1 was hardly pulled down by μ2 (Figure 1—figure supplement 1F), indicating low stoichiometry of IRS-1 Tyr phosphorylation after IGF-I stimulation and existence of a non-phosphorylated IRS-1 pool which interacts with AP2.
 
-## IRS-1 promotes cell surface retention of activated IGF-IR via its Yxxφ motifs
+### IRS-1 promotes cell surface retention of activated IGF-IR via its Yxxφ motifs
 
 Since AP2 plays a central role in the CME of RTKs, we reasoned that the interaction of IRS-1 with AP2 affects the internalization of IGF-IR. Using the surface biotinylation assay, we first analyzed the changes in cell surface IGF-IR in L6 cells. Long-term stimulation with IGF-I (3 to 12 hr) induced the significant reduction of phosphorylated IGF-IR (phospho-IGF-IR), which was assessed by Tyr 1131 phosphorylation in the activation loop (Favelyukis et al., 2001), at the cell surface (Figure 2A,B). Similar results were obtained in the analyses of other phosphorylation sites in IGF-IR (Figure 2—figure supplement 1A). No reduction of phospho-IGF-IR or total IGF-IR at the cell surface was observed during short-term stimulation with IGF-I (5 to 60 min) (Figure 2A and B). Ubiquitination of IGF-IR has been proposed as an important event inducing its internalization and down-regulation (Monami et al., 2008; Mao et al., 2011). We observed that IGF-I-induced ubiquitination of IGF-IR reached the maximum 60 min after IGF-I stimulation in L6 cells (Figure 2—figure supplement 1B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig2-v1.jpg)
+
+**Figure 2.:** (A) Changes in cell surface IGF-IR following IGF-I stimulation in L6 cells were analyzed by surface biotinylation assay. Transferrin receptor (TfR) was evaluated as a loading control for cell surface protein. (B) Immunoblots of surface IGF-IR for (A) were quantified and the graph is shown as mean ±SEM of four independent experiments. (C) Immunoblotting of GFP-IRS-1 wild-type (WT) and 3YA mutant in lysates from L6 cells stably expressing GFP, GFP-IRS-1 WT, or GFP-IRS-1 3YA. (D) Changes in surface phospho-IGF-IR following IGF-I stimulation were analyzed in L6 cells stably expressing GFP, GFP-IRS-1 WT, or GFP-IRS-1 3YA by surface biotinylation assay. (E) Immunoblots of surface IGF-IR for (D) were quantified and the graph is shown as mean ±SEM of four independent experiments. Differences were analyzed by ANOVA and the Tukey post hoc test. *p<0.05 versus GFP. (F, G) Changes in surface phospho-IGF-IR following IGF-I stimulation were analyzed in L6 cells stably expressing GFP-IRS-1 ΔPTB by surface biotinylation assay (F). Immunoblots of surface IGF-IR for (F) were quantified and the graph is shown as mean ±SEM of three independent experiments (G).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Phosphorylation of multiple Tyr residues in IGF-IR in L6 cells stimulated with IGF-I for the indicated time was analyzed by immunoprecipitation and immunoblotting with the indicated antibodies. (B) L6 cells stably expressing IGF-IR-FLAG were collected at the indicated time periods following IGF-I stimulation. The cell lysates were subjected to immunoprecipitation with anti-FLAG antibody, and the bound proteins were eluted under denaturing conditions. The denatured fraction was then re-immunoprecipitated with the indicated antibody for ubiquitin assay as described in Materials and methods. Samples were analyzed by immunoblotting with the indicated antibodies. (C, D) Changes in surface phospho-IGF-IR following IGF-I stimulation were analyzed in L6 cells stably expressing GFP or GFP-IRS-2 by surface biotinylation assay (C). Immunoblots of surface IGF-IR for (C) were quantified and the graph is shown as mean ±SEM of three independent experiments (D). Statistical analyses by ANOVA and the Tukey post hoc test revealed no significant difference between two groups. (E) IGF-I-induced tyrosine phosphorylation of IRS-1 and binding to p85 PI3K in L6 cells stably expressing GFP, GFP-IRS-1 WT, or GFP-IRS-1 ΔPTB were analyzed by immunoprecipitation and immunoblotting with the indicated antibodies.
 
 We next generated L6 cell lines stably expressing IRS-1 fused with green fluorescent protein (GFP-IRS-1) (Figure 2C). Strikingly, phospho-IGF-IR at the cell surface was sustained even after prolonged IGF-I stimulation in GFP-IRS-1-expressing cells while the reduction was observed in the control cells expressing GFP only (Figure 2D,E). In contrast, GFP-IRS-2 expression did not affect the reduction in phospho-IGF-IR (Figure 2—figure supplement 1C,D). To investigate the requirement of IRS-1 interaction with AP2 for the surface retention of phospho-IGF-IR, we analyzed the cells expressing the GFP-IRS-1 3YA mutant, which lacks the binding motifs for the μ2 subunit of AP2 complex. In contrast to GFP-IRS-1 wild-type (WT)-expressing cells, surface phospho-IGF-IR was reduced by prolonged IGF-I stimulation in GFP-IRS-1 3YA-expressing cells (Figure 2D,E). These data strongly suggest that IRS-1 can promote cell surface retention of activated IGF-IR via its YxxΦ motifs.
 
 The Tyr residues of the YxxΦ motifs of IRS-1 for binding to AP2 (Tyr 608, Tyr 628, and Tyr 658) are known to be phosphorylated by IR/IGF-IR and in turn serve as putative binding sites of PI3K (Sun et al., 1993; Myers et al., 1996). We next asked whether their Tyr phosphorylation of IRS-1 is involved in the surface retention of IGF-IR. Here, we used the IRS-1 ΔPTB mutant which lacks the phosphotyrosine binding domain (PTB) and therefore cannot be phosphorylated due to the inability to interact with IGF-IR (Figure 2—figure supplement 1E). As with GFP-IRS-1 WT, expression of GFP-IRS-1 ΔPTB resulted in the surface retention of phospho-IGF-IR after prolonged IGF-I stimulation (Figure 2F,G), indicating that the IRS-1-induced surface retention of activated IGF-IR is independent on the Tyr phosphorylation of IRS-1.
 
-## Internalization of active IGF-IR is dependent on the clathrin/AP2-mediated endocytic pathway
+### Internalization of active IGF-IR is dependent on the clathrin/AP2-mediated endocytic pathway
 
 We investigated whether long-term IGF-I-induced reduction in activated IGF-IR depends on CME. In clathrin-depleted cells, the reduction in phospho-IGF-IR observed after long-term IGF-I stimulation was completely blocked (Figure 3A). Similarly, the knockdown of AP2 (μ2), but not of another clathrin adaptor AP1 (μ1), inhibited the reduction of phospho-IGF-IR (Figure 3B and Figure 3—figure supplement 1A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig3-v1.jpg)
+
+**Figure 3.:** (A) Knockdown of clathrin heavy chain (HC) by two different siRNAs blocked long-term IGF-I-induced reduction of phospho-IGF-IR in L6 cells. Ctrl, control. The data are representative of three independent experiments. (B) Knockdown of the μ2 subunit of AP2 by two different siRNAs blocked long-term IGF-I-induced reduction of phospho-IGF-IR in L6 cells. Asterisk indicates a nonspecific band. The data are representative of at least three independent experiments. The μ2_1 siRNA was used in further experiments. (C) Changes in cell surface IGF-IR following IGF-I stimulation in L6 cells that were pre-treated with primaquine were analyzed by surface biotinylation assay. (D) Live cell TIRF-M imaging of L6 cells expressing IGF-IR-EGFP (left) or EGFR-EGFP (right) together with σ2-mRFP, which were stimulated for the indicated times with IGF-I or EGF, respectively. A representative region at higher magnification outlined by yellow rectangles is also shown in insets. (E) Quantification of colocalization between IGF-IR (black line) or EGFR (blue line) and AP2 in (D). Mean (fold over the value at 0 min)± SD is shown (n = 7 cells). The data are representative of three independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) L6 cells were transfected with non-targeting or μ1 siRNA followed by IGF-I stimulation for the indicated time. Changes in phospho-IGF-IR were analyzed by immunoprecipitation and immunoblotting with the indicated antibodies. (B) L6 cells stably expressing IGF-IR-EGFP were transfected with non-targeting or μ2 siRNA. The cells were stimulated with IGF-I in the presence of leupeptin and pepstatin A for the indicated time. Prior to fixation, they were labeled with LysoTracker (magenta). The fixed cells were immunostained with anti-phospho-IGF-IR antibody (green), and the images were obtained by confocal microscopy. Insets show representative regions at higher magnification. Arrows are representative showing colocalization between phospho-IGF-IR and LysoTracker. Bar, 10 μm. (C) Quantification of colocalization between phospho-IGF-IR and LysoTracker in (B). The mean ±SD is shown (n > 20 cells). Differences were analyzed by ANOVA and the Tukey post hoc test. *p<0.05. The data are representative of three independent experiments.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Changes in cell surface IGF-IR following IGF-I stimulation in L6 cells that were pre-treated with cycloheximide were analyzed by surface biotinylation assay. (B) L6 cells stably expressing IGF-IR-GFP were transiently transfected with Myc-PTP1B D181A. The cells were then stimulated with IGF-I for the indicated time. The fixed cells were immunostained to visualize phospho-IGF-IR and Myc-PTP1B D181A. Cells expressing Myc-PTP1B D181A were labeled with asterisks. Scale bar, 10 μm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) L6 cells were surface-labeled with a cleavable biotin reagent at 4°C and then warmed to 37°C in the presence or absence of IGF-I for the indicated time. Biotin was removed from surface proteins with MesNa treatment, and cells were lysed and subjected to pull-down with streptavidin. Samples were analyzed by immunoblotting with the indicated antibodies. (B) Internalization assay using double-tagged IGF-IR. The HA tag is inserted into the exofacial region of IGF-IR so that the surface IGF-IR is susceptible to anti-HA antibody labeling and subsequent chasing for the internalization. (C) The binding of anti-HA antibody neither activated IGF-IR-HA-EGFP nor interfered the activation in response to the following treatment with IGF-I. L6 cells expressing IGF-IR-HA-EGFP were labeled with non-immunized IgG (-) or anti-HA antibody (+) on ice, and then transferred to media containing IGF-I for 5 min. Surface and phosphorylated IGF-IR levels were assessed by immunofluorescent staining followed by confocal microscopy. Scale bar, 10 μm. (D) L6 cells stably expressing IGF-IR-HA-EGFP were labeled with anti-HA antibody prior to subsequent chase experiment in the presence or absence of IGF-I. Surface-derived IGF-IR was visualized by staining HA, whereas phosphorylated IGF-IR was stained with phospho-IGF-IR antibody. The cells were analyzed by confocal microscopy. Scale bar, 10 μm. (E) The resistance of incorporated HA antibody to acid stripping indicated the internalization of IGF-IR-HA-EGFP. L6 cells stably expressing IGF-IR-HA-EGFP were labeled with anti-HA antibody, and then were allowed for internalization in the culture media. Before fixation, the cells were washed with acid stripping buffer to remove surface-resident anti-HA antibody. The cells were immunostained and observed by confocal microscopy. Scale bar, 10 μm. (F) Basal endocytosis of IGF-IR is independent on AP2. L6 cells stably expressing IGF-IR-HA-EGFP were transfected with non-targeting or μ2 siRNA. The cells were serum-starved and then surface-labeled with anti-HA antibody followed by chasing its uptake for 30 min. The μ2-depleted cells were discriminated by loss of Alexa Fluor 546-conjugated transferrin (Tf) uptake. The cells were immunostained and observed by confocal microscopy. Scale bar, 10 μm.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** (A, B) L6 cells stably expressing IGF-IR-EGFP were stimulated with or without IGF-I stimulation for 1 hr. Colocalization of phospho-IGF-IR with AP2 (A) or clathrin heavy chain (B) was analyzed in the stained cells by TIRF-M. Insets show representative regions at higher magnification. Arrows are representative showing the colocalization. Bar, 10 μm. (C) Quantification of colocalization between phospho-IGF-IR and AP2 in (A). The colocalization rate in each cell is plotted and the means are shown (n > 25 cells). Differences were analyzed by the two-tailed Student t-test. *p<0.05. The data are representative of three independent experiments. (D) Live cell TIRF-M imaging of L6 cells expressing IGF-IR-EGFP and σ2-mRFP after IGF-I stimulation. A representative region at higher magnification outlined by yellow rectangles is also shown in insets. Arrows indicate AP2-positive spots existing prior to IGF-I stimulation.
 
 The canonical CME model of RTKs involves their rapid depletion from the cell surface in response to the ligands (Goh and Sorkin, 2013). Surface biotinylation analysis in Figure 2A revealed that the total amount of IGF-IR at the cell surface is not changed by IGF-I. Surface IGF-IR level reflects the balance between endocytosis, recycling, and the transport of newly synthesized receptor to the plasma membrane. When the recycling was inhibited by primaquine (van Weert et al., 2000), surface IGF-IR levels were reduced by IGF-I treatment within 1 hr, and phospho-IGF-IR levels followed this time-dependent changes (Figure 3C), indicating that IGF-I indeed triggers IGF-IR endocytosis from cell surface and that the recycling contributes to the apparent surface maintenance of IGF-IR. We also assessed the contribution of newly synthesized IGF-IR by using cycloheximide which could inhibit the increase in precursor IGF-IR observed in long-term IGF-I-stimulated cells. IGF-I reduced surface IGF-IR in the presence of cycloheximide (Figure 3—figure supplement 2A). These observations support the notion that transport mechanisms other than endocytosis contribute to the maintenance of surface IGF-IR level.
 
@@ -69,9 +288,21 @@ To directly monitor the internalized IGF-IR, we stimulated surface-biotinylated 
 
 Using live cell total internal fluorescence microscopy (TIRF-M), we investigated the detailed onset of IGF-IR internalization. The assembly of AP2 into clathrin-coated structures can be monitored by the expression of AP2 σ2 subunit fused with monomeric red fluorescent protein (mRFP) (Ehrlich et al., 2004). IGF-IR-EGFP was uniformly distributed within the plasma membrane, and then gradually colocalized with σ2-mRFP 30 min after IGF-I stimulation (Figure 3D, left). We also observed similar results in the fixed cells where phospho-IGF-IR was overlapped with AP2 and clathrin (Figure 3—figure supplement 4A–C). In more detail, IGF-IR clustered after IGF-I stimulation, and then accumulated in pre-existing AP2-positive spots (Figure 3—figure supplement 4D). EGFP-fused EGFR, which is a representative RTK showing rapid CME, was rapidly re-distributed into AP2-positive spots after EGF stimulation (Figure 3C, right). Intriguingly, quantitative analyses revealed that IGF-I-induced increase in the colocalization rate of IGF-IR with AP2 was significantly slower than EGFR (Figure 3D).
 
-## IRS-1 inhibits the AP2-dependent internalization of IGF-IR
+### IRS-1 inhibits the AP2-dependent internalization of IGF-IR
 
 Expression of IRS-1 WT, but not 3YA mutant, induced surface retention of activated IGF-IR (Figure 2D,E), which phenocopies that of AP2 knockdown (Figure 3B). We next asked whether IRS-1 could disrupt IGF-IR internalization. To clearly evaluate ligand-dependent receptor internalization, we performed surface biotinylation assay of IGF-I-stimulated cells when the recycling was inhibited by primaquine. While surface IGF-IR levels were gradually reduced after the ligand stimulation in cells expressing GFP and GFP-IRS-1 3YA, such reduction turned to be slower in cells expressing GFP-IRS-1 WT (Figure 4A). In addition, the TIRF-M revealed that expression of GFP-IRS-1 WT, but not of 3YA mutant, significantly inhibited the targeting of phospho-IGF-IR in AP2-positive spots with diffused localization of phospho-IGF-IR (Figure 4C,D), indicating that the IRS-1 binding to AP2 inhibits the ligand-induced association of IGF-IR with AP2-positive spots.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig4-v1.jpg)
+
+**Figure 4.:** (A) Changes in surface phospho-IGF-IR following IGF-I stimulation in the presence of primaquine were analyzed in L6 cells stably expressing GFP, GFP-IRS-1 WT, or GFP-IRS-1 3YA by surface biotinylation assay. (B) Immunoblots of surface IGF-IR for (A) were quantified and the graph is shown as mean ±SEM of three independent experiments. Differences were analyzed by ANOVA and the Tukey post hoc test. *p<0.05 versus GFP. (C) L6 cells stably expressing IGF-IR-FLAG were transfected with the plasmid expressing GFP, GFP-IRS-1 WT, or GFP-IRS-1 3YA. The cells were stimulated with IGF-I for 1 hr. Colocalization of phospho-IGF-IR with AP2 was analyzed in the immunostained cells by TIRF-M. Insets show representative regions at higher magnification. Bar, 10 μm. (D) Quantification of colocalization between phospho-IGF-IR and AP2 in (C). The colocalization rate in each transfected cell is plotted and mean ±SD is shown (n > 50 cells in each condition). The data are representative of three independent experiments. Differences were analyzed by ANOVA and the Tukey post hoc test. *p<0.05.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Co-immunoprecipitation of IGF-IR and transferrin receptor (TfR) in L6 cells stably expressing IGF-IR-FLAG. Immunoprecipitation and immunoblotting were performed with the indicated antibodies. (B) Transferrin (Tf) uptake in L6 cells stably expressing GFP or GFP-IRS-1 was analyzed by using Alexa Fluor 546-conjugated Tf. The internalization rate of surface-bound Tf is shown as mean ±SD (n > 70 cells). Statistical analyses by ANOVA and the Tukey post hoc test revealed no significant difference between two groups. The data are representative of three independent experiments. (C) Quantification of the number of AP2-positive spots at the plasma membrane in L6 IGF-IR-FLAG cells transfected with GFP, GFP-IRS-1 WT, or GFP-IRS-1 3YA in the TIRF fields. The number of AP2 dot per 50 μm surface area in each transfected cell is plotted and mean ±SD is shown (n > 30 cells in each condition). Statistical analyses by ANOVA and the Tukey post hoc test revealed no significant difference between three groups. The data are representative of three independent experiments. (D) TIRF-M analysis of IRS-1 localization. In L6 cells stably expressing GFP-IRS-1, F-actin was stained with phalloidin (left panels), or AP2 was immunostained with anti-α-adaptin antibody (right panels). Insets show a representative region at higher magnification. Bar, 10 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Co-immunoprecipitation of IGF-IR and integrin β1 in L6 cells stably expressing integrin β1. Immunoprecipitation and immunoblotting were performed with the indicated antibodies. (B) L6 cells stably expressing integrin β1 were transfected with mRFP or mRFP-IRS-1. The serum-starved cells were incubated with anti-integrin β1 antibody at 4°C before fixation. Mean values and SD (20–40 cells) of pixel intensities were measured. mRFP- or mRFP-IRS-1-expressing cells were labeled with asterisks. Bar, 10 μm. (C, D) After surface-labeled cells were incubated for 30 min, surface anti-integrin β1 antibody was removed by acid striping, and internalized antibody was detected. mRFP- or mRFP-IRS-1-expressing cells were labeled with asterisks. Bar, 10 μm (C). The intensity of internalized integrin β1 is shown as mean ±SD (n > 50 cells; *p<0.05). The data are representative of two independent experiments (D). (E) Co-immunoprecipitation of IGF-IR and EGFR in L6 cells stably expressing IGF-IR-FLAG together with the transfected EGFR-GFP. Immunoprecipitation and immunoblotting were performed with the indicated antibodies. (F, G) L6 cells transfected with EGFR-GFP together with mRFP or mRFP-IRS-1 were treated with 2 nM EGF for the indicated time (F). The cells expressing EGFR-GFP localized to the plasma membrane (PM), to the plasma membrane and endosomes (PM +E), or to the endosomes (E) were counted. In each condition, 40–90 cells were counted. Graphs display mean ± SEM from three independent experiments (G).
 
 Since AP2 regulates CME of various membrane cargoes, we next asked if ectopic expression of IRS-1 affects endocytosis of other cargoes. The internalization of transferrin receptor (TfR), integrin, and EGFR, which are endocytosed through CME, was evaluated. We analyzed the endocytosis of TfR, which has no physical interaction with IGF-IR (Figure 4—figure supplement 1A), by measuring uptake of fluorescent-labeled transferrin. Overexpression of IRS-1 did not affect the uptake of transferrin (Figure 4—figure supplement 1B). Integrins including β1 are involved in the crosstalk with IGF-IR signaling (Kiely et al., 2005). Surface level and internalization of integrin β1 were assessed by labeling cell surface with anti-integrin β1 antibody and chasing its uptake (see Materials and methods). In L6 cells stably expressing integrin β1 which modestly interacts with IGF-IR (Figure 4—figure supplement 2A), surface expression of integrin β1 was not statistically different between IRS-1-expressing and control cells (Figure 4—figure supplement 2B; p=0.188). The incorporated amount of anti-integrin β1 antibody was partially reduced in IRS-1-expressing cells (Figure 4—figure supplement 2C,D). We also examined the endocytosis of EGFR induced by low-dose EGF, which is dependent on CME (Sigismund et al., 2008), by observing localization of the transfected EGFR-GFP. Modest delay of EGFR endocytosis was observed at the early period of EGF stimulation in IRS-1-expressing cells (Figure 4—figure supplement 2E–F). These observations indicate that IRS-1 can influence endocytosis of receptors other than IGF-IR.
 
@@ -79,7 +310,15 @@ We also confirmed that the number of AP2 spots at TIRF field was not affected by
 
 If endogenous IRS-1 inhibits IGF-IR internalization, knockdown of IRS-1 would accelerate the process of active IGF-IR reduction triggered by long-term IGF-I stimulation. IRS-1 knockdown in L6 cells resulted in a faster reduction of phospho-IGF-IR (~2 fold) with a partial decrease in IGF-IR level (Figure 5A,B; reduction rate of p-IGF-IR from 1 to 3 hr of IGF-I treatment (value ± SEM (/hr)), siCtrl, 7.8 ± 2.2; siIRS1_1, 15.1 ± 1.7; siIRS1_2, 17.2 ± 2.4; p<0.05 versus siCtrl). Furthermore, phospho-IGF-IR accumulated in lysosomes in IRS-1-depleted cells 1 hr after IGF-I stimulation when phospho-IGF-IR is predominantly localized to the plasma membrane in control cells (Figure 5—figure supplement 1A,B). Notably, the partial reduction of total IGF-IR levels observed in IRS-1-depleted cells was rescued by the combined knockdown of AP2 (Figure 5C,D). The accelerated reduction of phospho-IGF-IR after IGF-I stimulation in IRS-1-depleted cells was also attenuated by the combined knockdown of AP2 (Figure 5E,F), indicating that knockdown of IRS-1 accelerates IGF-I-induced IGF-IR internalization as well as reducing IGF-IR levels in an AP2-dependent manner. These results further support the notion that IRS-1 inhibits AP2-mediated internalization of IGF-IR and its long-term attenuation.
 
-## mTOR-dependent degradation of IRS-1 is required for the initiation of IGF-IR internalization
+![Figure 5.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) L6 cells transfected with non-targeting (Ctrl) or IRS-1 siRNA were stimulated with IGF-I for the indicated time. Phosphorylation of IGF-IR was analyzed by immunoprecipitation and immunoblotting with the indicated antibodies (A). Both short and long exposed immunoblots of phospho-IGF-IR are shown. Immunoblots of phospho-IGF-IR for (A) were quantified and the graph is shown as mean ±SEM of four independent experiments (B). (C, D) L6 cells were transfected with IRS-1 siRNA combined with or without μ2 siRNA. The indicated proteins were analyzed by immunoblotting (C). Immunoblots of mature and precursor IGF-IR for (C) were quantified and the graph is shown as mean ±SEM of four independent experiments (D). Differences were analyzed by ANOVA and the Tukey post hoc test. *p<0.05. a.u., arbitrary unit. (E, F) L6 cells were transfected with non-targeting or IRS-1 siRNA combined with or without μ2 siRNA. The cells were stimulated with IGF-I for the indicated time. Phosphorylation of IGF-IR was analyzed by immunoprecipitation and immunoblotting with the indicated antibodies (E). Immunoblots of phospho-IGF-IR for (E) were quantified and the graph is shown as mean ±SEM of three independent experiments (F).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) L6 cells stably expressing IGF-IR-EGFP were transfected with non-targeting or IRS-1 siRNA. The cells were stimulated with IGF-I in the presence of leupeptin and pepstatin A for 1 hr. Prior to fixation, they were incubated with LysoTracker (magenta) for staining lysosomes. The fixed cells were immunostained with anti-phospho-IGF-IR antibody (green), and the images were obtained by confocal microscopy. Insets show representative regions at higher magnification. Bar, 10 μm. (B) Quantification of colocalization between phospho-IGF-IR and LysoTracker in (A). The mean ± SD is shown (n > 20 cells). Differences were analyzed by ANOVA and the Tukey post hoc test. *p<0.05. The data are representative of three independent experiments.
+
+### mTOR-dependent degradation of IRS-1 is required for the initiation of IGF-IR internalization
 
 Previous studies have demonstrated a negative feedback loop in which long-term IGF/insulin stimulation induces the degradation of IRS-1 in a PI3K/mTOR complex 1 (mTORC1)-sensitive and proteasome-dependent fashion (Harrington et al., 2004; Haruta et al., 2000). In L6 cells, the amount of IRS-1 was significantly reduced 3 to 6 hr after IGF-I stimulation with a concomitant increase in its phosphorylation (Figure 6A). Pharmacological inhibition of mTORC1 with rapamycin or Torin1 blunted the IRS-1 degradation (Figure 6B). Simultaneously, the reduction of phospho-IGF-IR after IGF-I stimulation was also blocked by mTORC1 inhibition (Figure 6B,C). TIRF-M analysis revealed that phospho-IGF-IR was less clustered, and overlapped very little with AP2 in Torin1-treated cells (Figure 6D,E). In IRS-1-depleted cells, phospho-IGF-IR levels were decreased after long-term IGF-I stimulation even in the presence of Torin1 (Figure 6F,G). Collectively, these results suggest that the degradation of IRS-1 via mTORC1-mediated feedback loop is required for the internalization of activated IGF-IR.
 
@@ -87,15 +326,31 @@ Previous studies have demonstrated a negative feedback loop in which long-term I
 
 **Figure 6.:** (A) Changes in IRS-1 and Akt phosphorylation following IGF-I stimulation were analyzed in L6 cells by immunoblotting. (B, C) L6 cells were treated with Torin1 or rapamycin followed by IGF-I stimulation. Phosphorylation of IGF-IR was analyzed by immunoprecipitation and immunoblotting with the indicated antibodies (B). Immunoblots of phospho-IGF-IR for (B) were quantified and the graph is shown as mean ±SEM of four independent experiments (C). Differences were analyzed by ANOVA and the Tukey post hoc test. *p<0.05. (D, E) L6 cells stably expressing IGF-IR-EGFP were treated with or without Torin1 followed by IGF-I stimulation for 1 hr. Colocalization of phospho-IGF-IR with AP2 was analyzed in the immunostained cells by TIRF-M (D). Insets show a representative region at higher magnification. Bar, 10 μm. Quantification of colocalization between phospho-IGF-IR and AP2 in (D) in each cell is plotted and the means are shown (E; n > 25 cells). Differences were analyzed by ANOVA and the Tukey post hoc test. *p<0.05. The data are representative of three independent experiments. (F, G) L6 cells were transfected with non-targeting or IRS-1 siRNA. The cells were treated with or without Torin1 followed by IGF-I stimulation for the indicated time. Phosphorylation of IGF-IR was analyzed by immunoprecipitation and immunoblotting with the indicated antibodies (F). Immunoblots of phospho-IGF-IR for (F) were quantified and the graph is shown as mean ±SEM of four independent experiments (G). Differences were analyzed by ANOVA and the Tukey post hoc test. *p<0.05.
 
-## IRS-1 is critical for sustained activation of Akt and inactivation of FoxO
+### IRS-1 is critical for sustained activation of Akt and inactivation of FoxO
 
 Given that CME affects signaling duration, we tested the role of IRS-1 in the temporal changes in downstream pathways of IGF-IR. Like phospho-IGF-IR, IGF-I-induced phosphorylation of Akt was sustained within 1 hr with a gradual decrease afterwards in L6 cells (Figure 6A). Ectopic expression of IRS-1 WT, however, significantly prolonged the phosphorylation of Akt in response to IGF-I (Figure 7A,B). Phosphorylation of FoxO1, a transcription factor targeted by Akt (Calnan and Brunet, 2008), was also prolonged in IRS-1 WT-overexpressing cells. These described effects on Akt and FoxO1 were not observed in cells overexpressing IRS-1 3YA mutant (Figure 7A,B). In addition, overexpression of IRS-2 did not prolong the IGF-I-dependent Akt phosphorylation with a slight increase in its maximum response (Figure 7—figure supplement 1A).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig7-v1.jpg)
+
+**Figure 7.:** (A, B) Immunoblotting after treating with IGF-I for the indicated time in L6 cells stably expressing GFP, GFP-IRS-1 WT, or GFP-IRS-1 3YA (A). Immunoblots of phospho-Akt (S473) and phospho-FoxO1 (S256) for (A) were quantified and the graph is shown as mean ±SEM of three independent experiments (B). (C, D) Immunoblotting after treating with IGF-I for the indicated time in L6 cells transfected with non-targeting or IRS-1 siRNA (C). Immunoblots of phospho-Akt (T308 and S473) and phospho-FoxO (S256 and T24 in FoxO1, and T32 in FoxO3a) for (C) were quantified and the graph is shown as mean ±SEM of three independent experiments (D).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Immunoblots of phospho-Akt (S473) in Figure 2—figure supplement 1C were quantified and the graph is shown as mean ± SEM of three independent experiments. (B) Immunoblotting after treating with IGF-I for the indicated time in L6 cells transfected with non-targeting or IRS-1 siRNA. (C) L6 cells stably expressing GFP or GFP-IRS-1 WT were transfected with non-targeting or IRS-1 siRNA (targeting 3’UTR of IRS-1 mRNA, thus not affecting ectopic GFP-IRS-1 expression), and then stimulated with IGF-I for the indicated time. Phosphorylation of Akt was analyzed by immunoblotting with the indicated antibodies. (D, E) Immunoblotting after treating with IGF-I for the indicated time in L6 cells transfected with non-targeting or μ2 siRNA (D). Immunoblots of phospho-Akt (S473) in (D) were quantified and the graph is shown as mean ± SEM of three independent experiments (E). (F) Immunoblotting after treating with IGF-I for the indicated time in L6 cells stably expressing GFP-IRS-1 ΔPTB (left). Immunoblots of phospho-Akt (S473) were quantified and the graph is shown as mean ± SEM of three independent experiments (right).
+
 We next assessed the role of endogenous IRS-1 in the Akt-FoxO signaling duration by using siRNA-mediated knockdown of IRS-1. In IRS-1-depleted cells, the phosphorylation of Akt showed a very transient pattern with the acute decrease in the later period of IGF-I stimulation (Figure 7C,D). During the shorter stimulation, IRS-1 depletion had a minimal effect on the Akt phosphorylation, which may be explained by the compensatory increase in IRS-2 protein (Figure 7—figure supplement 1B). The phosphorylation of FoxO1 was transient in IRS-1-depleted cells while it was stable (phospho-S256 in FoxO1) or accumulated (phospho-T24 in FoxO1 or T32 in FoxO3) in control cells (Figure 7C,D). The shift from sustained to transient phosphorylation of Akt in IRS-1-depleted cells was completely recovered by the rescue expression of IRS-1 (Figure 7—figure supplement 1C). These results indicate a role of IRS-1 in sustaining the Akt-FoxO signaling as well as prolonged surface retention of active IGF-IR.
 
-## IRS-1 is required for efficient down-regulation of FoxO-targeting genes mediated by IGF
+### IRS-1 is required for efficient down-regulation of FoxO-targeting genes mediated by IGF
 
 Since Akt inhibits the transcriptional activity of FoxOs via their phosphorylation (Calnan and Brunet, 2008), we reasoned that sustained activation of Akt in response to IGF could efficiently suppress FoxO-targeting gene expression. Here, we measured the mRNA expression levels of a series of FoxO-regulated genes related to muscle atrophy in which ubiquitin-proteasomal and autophagic protein degradation is enhanced (Milan et al., 2015; Mammucari et al., 2007; Moses et al., 2014; Stitt et al., 2004; Zhao et al., 2007). In L6 myotubes long-term IGF-I stimulation significantly reduced the mRNA expression level of the two muscle-specific E3 ubiquitin ligases (Atrogin1 and Murf1) and recently reported E3 ligases (Smart and Musa1) as well as autophagy-related genes (Lc3b and Gabarapl1) (Figure 8A and Figure 8—figure supplement 1A). These genes were also down-regulated by IGF-I in L6 myoblasts (Figure 8—figure supplement 1B). To reveal the contribution of IRS-1 to their expression, we analyzed their mRNA levels in IRS-1-depleted L6 myoblasts. In these cells, IGF-I-induced decrease in the atrophy-related genes was markedly attenuated (Figure 8B). We also tested whether IRS-1 knockdown would affect the myotube morphology (Figure 8—figure supplement 1C). We confirmed that lentiviral IRS-1 knockdown did not affect the fusion rate (the number of nuclei in myotube fiber) (Figure 8—figure supplement 1D). IRS-1-depleted myotubes showed a significant reduction in their diameter (Figure 8C,D). These data indicate that IRS-1 depletion leads to insufficient suppression of the FoxO-targeting genes in response to IGF even when Akt is being activated, but in a transient fashion.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig8-v1.jpg)
+
+**Figure 8.:** (A) Quantitative RT-PCR analysis of atrophy-related genes from L6 myotubes stimulated with IGF-I. Data are expressed as fold of the value at 0 hr of IGF-I stimulation. Values are mean ±SEM (n = 3). Differences were analyzed by ANOVA and the Tukey post hoc test. *p<0.05 versus IGF-I 0 hr. (B) Quantitative RT-PCR analysis of atrophy-related genes from L6 myoblasts transfected with non-targeting or IRS-1 siRNA followed by IGF-I stimulation for 0 or 12 hr. Data are expressed as fold of the value at 0 hr of IGF-I stimulation in cells transfected with control siRNA. Values are mean ±SEM (n = 3). Differences were analyzed by ANOVA and the Tukey post hoc test. *p<0.05 versus IGF-I 0 hr. (C) L6 myotubes were infected with lentivirus containing LacZ- or IRS-1-targeting shRNA. The infected cells were visualized by GFP expression (green). The fixed cells were immunostained with anti-MHC antibody (red) together with Hoechst nuclear staining (blue). MHC, myosin heavy chain. Bar, 50 μm. (D) Measurement of myotube diameter after lentivirus-mediated knockdown of IRS-1 for (C). The data are presented as mean ±SEM (n > 100 cells per condition). Differences were analyzed by ANOVA and the Tukey post hoc test. *p<0.05.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/32893/elife-32893-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A, B) Quantitative RT-PCR analysis of Smart and Musa1 from L6 myotubes stimulated with IGF-I (A), and of the FoxO-regulated genes from L6 myoblasts stimulated with IGF-I (B) is shown. Data are expressed as fold of the value at 0 hr of IGF-I stimulation. Values are shown as mean ± SEM (n = 3). Differences were analyzed by ANOVA and the Tukey post hoc test. *p<0.05 versus IGF-I 0 hr. (C) Immunoblotting of IRS-1 in L6 myotubes infected with containing LacZ- or IRS-1-targeting shRNA at serially diluted titers. (D) Measurement of the number of nuclei per myotube after lentivirus-mediated knockdown of IRS-1 in Figure 8C. The data are presented as mean ± SEM (n > 100 cells per condition). Statistical analyses by ANOVA and the Tukey post hoc test revealed no significant difference between two groups.
 
 ## Discussion
 
@@ -121,53 +376,1001 @@ Our results demonstrate that the prolonged Akt signaling elicited by IRS-1-media
 
 ## Materials and methods
 
-## Antibodies
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21</td>
+      <td>Agilent Technologies</td>
+      <td>Agilent Technologies: 200133</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Escherichia coli)</td>
+      <td>BL21-CodonPlus(DE3)-RIL</td>
+      <td>Agilent Technologies</td>
+      <td>Agilent Technologies: 230245</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Rattus norvegicus)</td>
+      <td>L6</td>
+      <td>ATCC</td>
+      <td>ATCC: CRL-1458; RRID: CVCL_0385</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>293T</td>
+      <td>ATCC</td>
+      <td>ATCC: CRL-3216; RRID: CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>PLAT-E</td>
+      <td>PMID: 10871756</td>
+      <td>RRID: CVCL_B488</td>
+      <td>A kind gift from T. Kitamura, The University of Tokyo</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-phospho-IGF-IRβ (Tyr1131)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology: 3021; RRID: AB_331578</td>
+      <td>IB 1:1000; IF 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-phospho-IGF-IRβ (Tyr980)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology: 4568; RRID: AB_2122279</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-phospho-IGF-IRβ (Tyr1316)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology: 6113; RRID: AB_10545762</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-IGF-IRβ</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology: 9750; RRID: AB_10950969</td>
+      <td>IF 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Akt</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology: 9272; RRID: AB_329827</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-phospho-Akt (Thr308)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology: 9275; RRID: AB_329828</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-phospho-Akt (Ser473)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology: 9271; RRID: AB_329825</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-phospho-p70 S6K (Thr389)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology: 9234; RRID: AB_2269803</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-phospho-FoxO1 (Thr24)/FoxO3a (Thr32)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology: 9464; RRID: AB_329842</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-phospho-FoxO1 (Sere256)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology: 9461; RRID: AB_329831</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-FoxO1</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cell Signaling Technology: 2880; RRID: AB_2106495</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-IGF-IRα</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology: sc-712; RRID: AB_671788</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-IGF-IRβ</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology: sc-713; RRID: AB_671792</td>
+      <td>IB 1:1000; IP 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-IRS-2</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology: sc-8299; RRID: AB_2125783</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-clathrin HC</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology: sc-12734; RRID: AB_627263</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-α-adaptin</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology: sc-17771; RRID: AB_2274034</td>
+      <td>IB 1:1000; IF 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-p70 S6K</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology: sc-230; RRID: AB_632156</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-HSP90</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology: sc-7947; RRID: AB_2121235</td>
+      <td>IB 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-γ-adaptin</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology: sc-10763; RRID: AB_2058329</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-GFP</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology: sc-9996; RRID: AB_627695</td>
+      <td>IB 1:1000; IP 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-ubiquitin (P4D1)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology: sc-8017; RRID: AB_628423</td>
+      <td>IB 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-FLAG M2</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: F3165; RRID: AB_259529</td>
+      <td>IB 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG M2 agarose affinity gel</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: A2220; RRID: AB_10063035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-α-tubulin (DM1A)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: T6199; RRID: AB_477583</td>
+      <td>IB 1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-phospho-Tyr (4G10)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: 05-1050X; RRID: AB_916370</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-IRS-1</td>
+      <td>Upstate</td>
+      <td>Upstate: 06-248; RRID:AB_2127890</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-myosin heavy chain</td>
+      <td>Upstate</td>
+      <td>Upstate: 05-716; RRID: AB_309930</td>
+      <td>IF 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Myc</td>
+      <td>Upstate</td>
+      <td>Upstate: 05-419; RRID: AB_309725</td>
+      <td>IF 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-p85 PI3 kinase</td>
+      <td>Upstate</td>
+      <td>Upstate: 06-195; RRID: AB_310069</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-μ2</td>
+      <td>BD Transduction Laboratories</td>
+      <td>BD Transduction Laboratories: 611350; RRID: AB_398872</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-clathrin</td>
+      <td>abcam</td>
+      <td>abcam: ab2731; RRID: AB_303256</td>
+      <td>IF 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-integrin β1</td>
+      <td>abcam</td>
+      <td>abcam: ab52971; RRID: AB_870695</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-transferrin receptor (H68.4)</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: 13-6800; RRID: AB_86623</td>
+      <td>IB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-integrin β1 (TS2/16)</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: 14-0299-82; RRID: AB_1210468</td>
+      <td>IF 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat monoclonal anti-HA (3F10)</td>
+      <td>Roche</td>
+      <td>Roche: 11-867-423-001; RRID: AB_10094468</td>
+      <td>IF 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488-, 594- or 633- secondaries</td>
+      <td>Molecular Probes</td>
+      <td></td>
+      <td>IF 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-IRS-1</td>
+      <td>PMID: 23478262</td>
+      <td></td>
+      <td>IP 1:200</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFLAG-CMV-IRS-1 1-865 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pFLAG-CMV; Insert: Rat IRS-1 1-865</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFLAG-CMV-IRS-1 1-542 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pFLAG-CMV; Insert: Rat IRS-1 1-542</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFLAG-CMV-IRS-1 1-259 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pFLAG-CMV; Insert: Rat IRS-1 1-259</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFLAG-CMV-IRS-1 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pFLAG-CMV; Insert: Rat IRS-1 full-length</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFLAG-CMV-IRS-2 (plasmid)</td>
+      <td>PMID: 21168390</td>
+      <td></td>
+      <td>Vector: pFLAG-CMV; Insert: human IRS-2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMXs-Puro-EGFP-IRS-1 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pMXs-Puro; Insert: EGFP-IRS-1 wild-type</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMXs-Puro-EGFP-IRS-1 3YA (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pMXs-Puro; Insert: EGFP-IRS-1 3YA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMXs-Puro-EGFP-IRS-1ΔPTB (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pMXs-Puro; Insert: EGFP-IRS-1 DPTB</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMXs-Puro-EGFP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pMXs-Puro; Insert: EGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMXs-Puro-EGFP-IRS-2 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pMXs-Puro; Insert: EGFP-rat IRS-2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pIGF-IR-EGFP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pEGFP-N1; Insert: human IGF-IR</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMXs-Puro-IGF-IR-FLAG (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pMXs-Puro; Insert: IGF-IR-FLAG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMXs-Puro-IGF-IR-EGFP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pMXs-Puro; Insert: IGF-IR-EGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMXs-Puro-IGF-IR-HA-EGFP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pMXs-Puro; Insert: IGF-IR-HA-EGFP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMXs-Puro-integrinβ1 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pMXs-Puro; Insert: human integrin b1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFR-GFP (plasmid)</td>
+      <td>Addgene</td>
+      <td>Addgene: 32751</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pσ2-mRFP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pCS2-mRFP4; Insert: rat s2 subunit</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pmRFP-C1 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pmRFP-IRS-1 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pmRFP-C1; Insert: rat IRS-1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-μ1 (plasmid)</td>
+      <td>PMID: 23478262</td>
+      <td></td>
+      <td>Vector: pGEX-5X-3; Insert: mouse m1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-μ2 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pGEX-5X-3; Insert: mouse m2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEX-C-μ2 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pGEX-5X-3; Insert: mouse m2 C-terminal domain</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET15b-C-μ2 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector: pET15b; Insert: rat m2 C-terminal domain</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLV-hU6-EF1a-green</td>
+      <td>Biosettia</td>
+      <td>Biosettia: SORT-B05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-HIVgp</td>
+      <td>RIKEN</td>
+      <td>RDB04394</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-VSV-G-RSV-Rev</td>
+      <td>RIKEN</td>
+      <td>REB04393</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA targeting clathrin #1</td>
+      <td>RNAi Corp.</td>
+      <td></td>
+      <td>5’-GUAUGCCUCUGAAUCGAAAGA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA targeting clathrin #2</td>
+      <td>RNAi Corp.</td>
+      <td></td>
+      <td>5’-CAGAAGAAUCGACGUUAUUUU-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA targeting μ2 #1</td>
+      <td>RNAi Corp.</td>
+      <td></td>
+      <td>5’-CGAAGUGGCAUUUACGAAACC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA targeting μ2 #2</td>
+      <td>RNAi Corp.</td>
+      <td></td>
+      <td>5’-CUGCUUUGGGAUAGUAUGAGC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA targeting IRS-1 #1</td>
+      <td>RNAi Corp.</td>
+      <td></td>
+      <td>5’-CAAUGAGUGUGCAUAAACUUC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA targeting IRS-1 #2</td>
+      <td>RNAi Corp.</td>
+      <td></td>
+      <td>5’-GCCUCGAAAGGUAGACACAGC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA targeting μ1</td>
+      <td>RNAi Corp.</td>
+      <td></td>
+      <td>5’-CAGACGGAGAAUUCGAACUCA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Non-targeting control siRNA</td>
+      <td>RNAi Corp.</td>
+      <td></td>
+      <td>5’-GUACCGCACGUCAUUCGUAUC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>shRNA targeting LacZ</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>5’-GCTACACAAATCAGCGATTT-3’(targeting sequence)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>shRNA targeting IRS-1 #5</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>5’-GCAGGCACCATCTCAACAATCC-3’(targeting sequence)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>shRNA targeting IRS-1 #6</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>5’-GAGAATATGTGAATATTGAATC-3’(targeting sequence)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fbxo32-qPCR forward primer</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>ACTTCTCGACTGCCATCCTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fbxo32-qPCR reverse primer</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>TCTTTTGGGCGATGCCACTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Trim63-qPCR forward primer</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>GGGAACGACCGAGTTCAGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Trim63-qPCR reverse primer</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>GCGTCAAACTTGTGGCTCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fbxo30-qPCR forward primer</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>TGCAGTGGGGGAAAAAGAAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fbxo30-qPCR reverse primer</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>TGCAGTACTGAATCGCCACA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fbxo21-qPCR forward primer</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>ACTCCATCGGGCTCGTTATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fbxo21-qPCR reverse primer</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>TGTTTCGGATCCACTCGTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Map1lc3b-qPCR forward primer</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>GCCGGAGCTTCGAACAAAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Map1lc3b-qPCR reverse primer</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>GCTTCTCACCCTTGTATCGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gabarapl1-qPCR forward primer</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>ACAACACTATCCCTCCCACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gabarapl1-qPCR reverse primer</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>GCTTCTGCCTCATTTCCCGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rn18s-qPCR forward primer</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>TCCCAGTAAGTGCGGGTCATA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rn18s-qPCR reverse primer</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>CGAGGGCCTCACTAAACCATC</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-μ1</td>
+      <td>PMID: 23478262</td>
+      <td></td>
+      <td>GST-tagged mouse m1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-μ2</td>
+      <td>This study</td>
+      <td></td>
+      <td>GST-tagged mouse m2</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GST-C-μ2</td>
+      <td>This study</td>
+      <td></td>
+      <td>GST-tagged mouse m2 C-terminal domain</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>His-C-μ2</td>
+      <td>This study</td>
+      <td></td>
+      <td>6×His-tagged rat m2 C-terminal domain</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GY(608)MPMSPG-IRS-1 peptide</td>
+      <td>Toray Research Center, Inc.</td>
+      <td></td>
+      <td>Used for co-crystalization</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DY(628)MPMSPK-IRS-1 peptide</td>
+      <td>Toray Research Center, Inc.</td>
+      <td></td>
+      <td>Used for co-crystalization</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GY(658)MMMSPS-IRS-1 peptide</td>
+      <td>Toray Research Center, Inc.</td>
+      <td></td>
+      <td>Used for co-crystalization</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recombinant human IGF-I</td>
+      <td>Astellas Pharma Inc.</td>
+      <td></td>
+      <td>A kind gift from T. Ohkuma,Astellas Pharma Inc.</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recombinant human EGF</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific: PHG0315</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine LTX</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: 15338100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine RNAiMAX</td>
+      <td>Invitrogen</td>
+      <td>Invitrogen: 13778075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>leupeptin</td>
+      <td>PEPTIDE INSTITUTE, INC.</td>
+      <td>PEPTIDE INSTITUTE: 4041</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>pepstatin A</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: P5318-5MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Torin1</td>
+      <td>Cayman Chemical</td>
+      <td>Cayman Chemical: 10997</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>rapamycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: 37094-10MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>primaquine bisphosphate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich: 160393-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cycloheximide</td>
+      <td>nacalai tesque</td>
+      <td>nacalai tesque: 06741-04</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EZ-Link NHS-LC-Biotin</td>
+      <td>Pierce</td>
+      <td>Pierce: 21336</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biotin-SS-Sulfo-OSu</td>
+      <td>Dojindo</td>
+      <td>Dojindo: B572</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LysoTracker Red DND-99</td>
+      <td>Molecular Probes</td>
+      <td>Molecular Probes: L7528</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Transferrin from human serum, Alexa Fluor 546 conjugate</td>
+      <td>Molecular Probes</td>
+      <td>Molecular Probes: T23364</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst 33342</td>
+      <td>Molecular Probes</td>
+      <td>Molecular Probes: H3570</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ReverTra Ace qPCR Master Mix</td>
+      <td>TOYOBO</td>
+      <td>TOYOBO: FSQ-201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>THUNDERBIRD SYBR qPCR Mix</td>
+      <td>TOYOBO</td>
+      <td>TOYOBO: QPS-201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>cOmplete EDTA-free protease inhibitor cocktail</td>
+      <td>Roche</td>
+      <td>Roche: 11873580001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>PMID: 22743772</td>
+      <td>RRID: SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HKL2000</td>
+      <td>PMID: 27754618</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CCP4 suite</td>
+      <td>PMID: 21460441</td>
+      <td>RRID: SCR_007255</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MOLREP</td>
+      <td>doi:10.1107/S0021889897006766</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>REFMAC5</td>
+      <td>PMID: 15299926</td>
+      <td>RRID: SCR_014225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>PHENIX</td>
+      <td>PMID: 20124702</td>
+      <td>RRID: SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>PMID: 15572765</td>
+      <td>RRID: SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>The PyMOL Molecular Graphics System</td>
+      <td>RRID: SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lenti-X Concentrator</td>
+      <td>Clontech</td>
+      <td>Clonetech: 631231</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Glutathione Sepharose 4B</td>
+      <td>GE Healthcare</td>
+      <td>GE Healthcare: 17075601</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein G Seharose Fast Flow</td>
+      <td>GE Healthcare</td>
+      <td>GE Healthcare: 17061801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Streptavidin Agarose</td>
+      <td>Pierce</td>
+      <td>Pierce: 20347</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HisTrap HP column</td>
+      <td>GE Healthcare</td>
+      <td>GE Healthcare: 17524801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HiTrap SP HP column</td>
+      <td>GE Healthcare</td>
+      <td>GE Healthcare: 17115101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HiLoad 16/60 Superdex200 column</td>
+      <td>GE Healthcare</td>
+      <td>GE Healthcare: 17-1069-01</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Antibodies
 
 Anti-phospho-IGF-IRβ (Tyr1131) antibody (3021), anti-phospho-IGF-IRβ (Tyr980) antibody (4568), anti-phospho-IGF-IRβ (Tyr1316) antibody (6113), anti-IGF-IRβ antibody (9750; for immunofluorescence staining), anti-Akt antibody (9272), anti-phospho-Akt (Thr308) antibody (9275), anti-phospho-Akt (Ser473) antibody (9271), anti-phospho-p70 S6K (Thr389) antibody (9234), anti-phospho-FoxO1 (Thr24)/FoxO3a (Thr32) antibody (9464), anti-phospho-FoxO1 (Ser256) antibody (9461), and anti-FoxO1 antibody (2880) were purchased from Cell Signaling Technology (Tokyo, Japan). Anti-IGF-IRα antibody (sc-712), anti-IGF-IRβ antibody (sc-713; for immunoblotting and immunoprecipitation), anti-IRS-2 antibody (sc-8299), anti-clathrin HC antibody (sc-12734; for immunoblotting), anti-α-adaptin antibody (sc-17771), anti-γ-adaptin antibody (sc-10763), anti-p70 S6K antibody (sc-230), anti-HSP90 antibody (sc-7947), anti-ubiquitin antibody (sc-8017) and anti-GFP antibody (sc-9996) were purchased from Santa Cruz Biotechnology (Santa Cruz, CA). Anti-FLAG M2 antibody, anti-α-tubulin antibody (DM1A), and anti-phospho-Tyr antibody (4G10) were purchased from Sigma-Aldrich (Tokyo, Japan). Anti-IRS-1 antibody (06–248), anti-myosin heavy chain (05–716) antibody, anti-Myc antibody (05–419), and anti-p85 PI3-kinase antibody (06–195) were purchased from Upstate (Lake Placid, NY). Anti-μ2 antibody (611350) was purchased from BD Biosciences (Tokyo, Japan). Anti-clathrin antibody (ab2731; for immunofluorescence staining), and anti-integrin β1 antibody (ab52971) were purchased from abcam (Tokyo, Japan). Anti-transferrin receptor antibody (H68.4) and anti-integrin β1 antibody (TS2/16) were purchased from Invitrogen (Tokyo, Japan). Anti-HA antibody (3F10) was purchased from Roche (Tokyo, Japan). IRS-1 polyclonal antibody for immunoprecipitation was raised in rabbit as previously described (Yoneyama et al., 2013).
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 L6 and HEK293T cells were cultured as previously described (Yoneyama et al., 2013). The differentiation of L6 cells was induced as previously described (Hakuno et al., 2011). PLAT-E cells (provided by T. Kitamura, The University of Tokyo, Tokyo, JAPAN) were cultured for retrovirus packaging as previously described (Yoneyama et al., 2013). We tested each cell line for mycoplasma contamination and confirmed its absence using PCR Mycoplasma Test Kit I/C (PromoKine, Heidelberg, Germany) before experiments.
 
 The transfection of expression plasmids was performed by using polyethylenimine (PEI) for HEK293T cells as previously described (Lanzerstorfer et al., 2015), or by using Lipofectamine LTX (Invitrogen) for L6 cells. For RNA interference (RNAi), the cells were transfected with the following siRNAs (RNAi Corp., Tokyo, Japan) by using Lipofectamine RNAiMAX (Invitrogen) according to the manufacturer’s instructions: clathrin (#1), 5’-GUAUGCCUCUGAAUCGAAAGA-3’; clathrin (#2), 5’-CAGAAGAAUCGACGUUAUUUU-3’; μ2 (#1), 5’-CGAAGUGGCAUUUACGAAACC-3’; μ2 (#2), 5’-CUGCUUUGGGAUAGUAUGAGC-3’; IRS-1 (#1), 5’-CAAUGAGUGUGCAUAAACUUC-3’; IRS-1 (#2), 5’-GCCUCGAAAGGUAGACACAGC-3’; μ1, 5’-CAGACGGAGAAUUCGAACUCA-3’; non-targeting control (Ctrl, 5’-GUACCGCACGUCAUUCGUAUC-3’.
 
-## Expression plasmids
+### Expression plasmids
 
 A series of IRS-1 deletion mutants (amino acid residues 1–865, 1–542, 1–259 and full-length of rat IRS-1) were cloned into pFLAG-CMV vector. The full-length of IRS-1 was also cloned into pmRFP-C1 vector. EGFP-fused IRS-1 and 3YA (Y608A/Y628A/Y658A) (Yoneyama et al., 2013) were cloned into pMXs-Puro vector (provided by T. Kitamura, The University of Tokyo, Tokyo, JAPAN). FLAG-fused IRS-1 was also cloned from pFLAG-CMV-IRS-1 into pMXs-Puro. The construction of pFLAG-CMV-IRS-2 was described previously (Fukushima et al., 2011). EGFP-fused IRS-2 was also cloned from pEGFP-IRS-2 (Lanzerstorfer et al., 2015) into pMXs-Puro. Full-length IGF-IR was cloned into pEGFP-N1 to generate the construct of IGF-IR fused with EGFP at its C-terminus. IGF-IR-EGFP and IGF-IR-FLAG (Fukushima et al., 2012) were then cloned into pMXs-Puro. To generate the double-tagged IGF-IR construct (IGF-IR-HA-EGFP), the fragment encoding the α subunit attached to the HA epitope (α + HA) and the fragment encoding the β subunit attached to the HA epitope (β + HA) were prepared by PCR with independent primer sets as follows: for α + HA, 5’-CTCAAGCTTCGAATTCATGAAGTCTGGCTCCGGA-3’ and 5’-TGGAACATCGTATGGGTACATGGTggccacttgcatgacatctctc-3’; for β + HA, 5’-CCATACGATGTTCCAGATTACGCTaacaccaccatgtccagccgaa-3’ and 5’-GGCGACCGGTGGATCCGCGCAGGTCGAAGACTGGGGCA-3’. The two fragments were cloned into pEGFP-N1 by using In-Fusion Cloning HD Kit (TAKARA). The IGF-IR-HA-EGFP was then cloned into pMXs-Puro. The cDNA of human integrin β1 was cloned into pMXs-Puro. The expression plasmid of EGFR fused with EGFP was purchased from Addgene (#32751). The cDNA encoding rat σ2 subunit of the AP2 complex was obtained from pACT2-σ2 (provided by H. Ohno, RIKEN, Kanagawa, Japan), and cloned into pCS2-mRFP4 (provided by M. Taira, The University of Tokyo, Tokyo, Japan). The cDNA encoding human PTP1B was cloned into pCMV5-Myc vector, and the D181A mutation was introduced by site-directed mutagenesis. Construction of pGEX-μ1 was described previously (Yoneyama et al., 2013). The full-length cDNA of mouse μ2 was obtained from pcDNA-μ2 (provided by H. Ohno, RIKEN, Kanagawa, Japan) and cloned into pGEX-5X-3. To generate the construct for the recombinant C-terminal region of rat μ2 fused with His-tag, the region corresponding to amino acid residues 158–435 was cloned by RT-PCR using total RNA isolated from L6 cells and subcloned into pET15b.
 
-## Retrovirus production and generation of stable cell lines
+### Retrovirus production and generation of stable cell lines
 
 Retrovirus production and retrovirus transduction in L6 cells were performed as described previously (Yoneyama et al., 2013). Briefly, PLAT-E cells were transiently transfected with pMXs-Puro vectors by using PEI reagent, and the medium containing retrovirus was collected. L6 cells were incubated with the virus-containing medium supplemented with 2 μg/ml of polybrene. Uninfected cells were removed by puromycin selection. L6 cells expressing EGFP-fused constructs were further isolated using a FACSAria II cell sorter (BD Biosciences) as EGFP-positive cells.
 
-## Lentivirus production and shRNA expression in L6 myotubes
+### Lentivirus production and shRNA expression in L6 myotubes
 
 For lentiviral RNAi, shRNA sequences against IRS-1 were cloned into pLV-hU6-EF1a-green (Biosettia, San Diego, CA) according to the manufacturer’s instructions. The shRNAs used in this study comprised the following sequences: shLacZ, 5’-GCTACACAAATCAGCGATTT-3’; shIRS-1_5, 5’-GCAGGCACCATCTCAACAATCC-3’; shIRS-1_6, 5’-GAGAATATGTGAATATTGAATC-3’. HEK293T cells were transiently transfected with pLV-hU6-EF1a-green vectors together with pCAG-HIVgp and pCMV-VSV-G-RSV-Rev (provided by RIKEN BRC, Ibaraki, Japan) by using PEI reagent, and the medium containing lentivirus was collected followed by concentration with Lenti-X Concentrator (Clontech, Fremont, CA) to achieve high titer virus. The virus titer was evaluated by GFP fluorescence expressed from pLV-hU6-EF1a-green vector in L6 myoblasts infected with serially diluted virus-containing medium. Lentiviral infection was conducted on the second day of differentiation. The virus-containing medium supplemented with 8 μg/ml of polybrene was added into L6 myotube culture, and the culture plates were spun at 1200 g for 1 hr at room temperature to increase the infection efficiency. After incubation for 1 day, differentiation medium was replaced, and the myotubes were cultured for additional 5 days.
 
-## In vitro pull-down assay
+### In vitro pull-down assay
 
 Purification of GST-fused proteins from E. coli BL21 and pull-down assays were performed as described previously (Yoneyama et al., 2013). Briefly, lysates of L6 cells or HEK293T cells expressing GFP-IRS-1 mutants were incubated with purified GST-fused proteins bound to Glutathione Sepharose 4B (GE Healthcare, Tokyo, Japan). Bound proteins were analyzed by immunoblotting with the indicated antibody.
 
-## Cell stimulation and immunoblotting
+### Cell stimulation and immunoblotting
 
 Recombinant human IGF-I was kindly donated by T Ohkuma (Astellas Pharma Inc., Tokyo, Japan). Recombinant human EGF was purchased from Thermo Fisher. Prior to ligand stimulation, the cells were serum-starved for 12 hr in Dulbecco’s modified Eagle’s medium (DMEM) supplemented with 0.1% bovine serum albumin (BSA), and then treated with the ligand (100 nM IGF-I or 100 nM EGF) for the indicated time. When needed, cells were preincubated for 30 min with chemical inhibitors at the following concentrations: 250 μg/ml leupeptin (PEPTIDE INSTITUTE, INC., Osaka, Japan), 10 μg/ml pepstatin A (Sigma-Aldrich), 100 nM Torin1 (Cayman Chemical), 100 nM rapamycin (Sigma-Aldrich), 0.1 mM primaquine (Sigma-Aldrich), and 10 μg/ml cycloheximide (Nacalai Tesque, Inc., Kyoto, Japan).
 
 After the treatment, the extraction of cell lysate and immunoblotting were performed as described previously (Yoneyama et al., 2013). Densitometry was performed in the linear phase of the exposure by using ImageJ software. The results were expressed as the percent of max, which corresponds to the highest value of phosphorylation among the time course experiments of control cells. Values represent means ±SEM from at least three independent experiments.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 After the treatment of inhibitors and ligands, cells were rinsed once with ice-cold PBS and then lysed in lysis buffer (25 mM Tris-HCl, pH 7.4, 150 mM NaCl, 1 mM EDTA, 10% glycerol, 1% Triton X-100, 100 Kallikrein inhibitor units [KIU]/ml aprotinin, 20 μg/ml phenylmethylsulfonyl fluoride [PMSF], 10 μg/ml leupeptin, 5 μg/ml pepstatin A, 500 μM Na3VO4, and 10 mg/ml p-nitrophenyl phosphate [PNPP]). After brief sonication, the clear supernatant was obtained by centrifugation at 15,000 g for 15 min at 4°C. For immunoprecipitation of IRS-1 or IGF-IR, the lysates were incubated with anti-IRS-1 antibody or anti-IGF-IRβ antibody (Santa Cruz) overnight at 4°C, and further incubated in the presence of Protein G Sepharose beads (GE healthcare). For immunoprecipitation of FLAG fusion proteins, the lysates were incubated with anti-FLAG M2 affinity gel beads (Sigma-Aldrich) for 2 hr. Immunoprecipitates were collected by centrifugation and washed three times with lysis buffer, and then proteins were eluted with Laemmli’s sample buffer. Samples were analyzed by immunoblotting with the indicated antibodies.
 
-## Surface biotinylation and internalization assay
+### Surface biotinylation and internalization assay
 
 Surface IGF-IR levels were measured as follows. L6 cells were treated with IGF-I for the indicated time, then placed on ice, washed three times with ice-cold PBS, and labeled for 30 min with Sulfo-NHS-LC-biotin (0.5 mg/ml; Pierce) in PBS at 4°C. Biotinylation was then quenched with 15 mM glycine in PBS. After washing the cells with PBS once, they were lysed in lysis buffer. After brief sonication, the supernatant was obtained by centrifugation at 15,000 g for 15 min at 4°C. The cleared lysates were then incubated with Streptavidin agarose beads (Pierce, Tokyo, Japan) overnight at 4°C. The beads were washed three times with lysis buffer, and bound proteins were eluted with Laemmli’s sample buffer. Samples were analyzed by immunoblotting with the indicated antibodies.
 
 Internalization of IGF-IR was measured as follows. Serum-starved L6 cells were washed three times with cold PBS before incubation with 0.2 mg/ml Biotin-SS-Sulfo-OSu, a nonpermeable and reversible biotinylation reagent (Dojindo, Kumamoto, Japan), in PBS for 30 min at 4°C. After surface labeling, cells were washed twice with 15 mM glycine in PBS on ice, and transferred to 0.1% BSA in DMEM with or without the ligand to allow internalization. At the indicated times, cells were washed once with cold PBS and treated twice with 100 mM MesNa (50 mM Tris-HCl, pH 8.6, 100 mM NaCl, and 0.1% BSA), a nonpermeable reducing regent, for 15 min at 4°C to remove biotin. MesNa was quenched with 5 mg/ml iodoacetamide in PBS for 10 min at 4°C. After two cold PBS washes, cells were lysed followed by streptavidin pull-down as described above.
 
-## Ubiquitination assay
+### Ubiquitination assay
 
 Cells were washed with ice-cold PBS and then lysed with lysis buffer supplemented with 100 mM N-ethylmaleimide (NEM). The cleared lysates were subjected to immunoprecipitation with anti-FLAG M2 affinity gel beads. The immunoprecipitates were then washed three times with lysis buffer supplemented with 100 mM NEM, and heated in 50 mM Tris-HCl, pH 7.4, 150 mM NaCl, and 1% SDS at 98°C for 5 min to disrupt non-covalent protein-protein interactions. The supernatants diluted with lysis buffer (1:10) were re-immunoprecipitated with anti-FLAG M2 affinity gel beads, and then subjected to SDS-PAGE. After transfer to PVDF membranes, the membranes were subjected to a denaturing treatment prior to blocking the primary antibody by incubation for 30 min at 4°C in 50 mM Tris-HCl, pH 7.5, 6M guanidine-HCl, and 5 mM 2-mercaptoethanol.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 For confocal microscopy L6 cells were grown on coverslips. For TIRF microscopy the cells were grown on Glass Bottom Dish Hydro (MATSUNAMI, Osaka, Japan). In both cases, the cells were fixed for 20 min at room temperature in prewarmed 4% paraformaldehyde in PBS. The fixed cells were then washed three times with PBS and subsequently incubated for 5 min in 50 mM ammonium chloride in PBS. After washing three times with PBS, cells were permeabilized with 0.25% Triton X-100 in PBS at room temperature for 5 min. The cells were washed three times with PBS and then blocked for 1 hr at room temperature with BSA blocking buffer (3% BSA and 0.025% NaN3 in PBS). Primary antibodies diluted in BSA blocking buffer were added overnight at 4°C. The samples were washed three times with PBS and incubated for 1 hr at room temperature in the solution of Alexa Fluor-conjugated secondary antibodies diluted in BSA blocking buffer. For LysoTracker experiments, LysoTracker Red DND-99 (Life Technologies, Tokyo, Japan) was added to cells at the concentration of 50 nM 30 min prior to fixation. Fixed cells were stained with Hoechst 33342 (Molecular Probes, Tokyo, Japan) to visualize nuclei. Coverslips were mounted in Vectashield (Vector Laboratories, Burlingame, CA) for confocal microscopy. Fixed cells in glass bottom dishes were imaged in PBS for TIRF microscopy.
 
@@ -175,7 +1378,7 @@ To chase surface IGF-IR, L6 cells stably expressing IGF-IR-HA-EGFP were serum-st
 
 To examine endocytosis of transferrin, L6 cells were serum-starved for 30 min, and incubated with 25 μg/ml Alexa Fluor 546-conjugated transferrin (Invitrogen) for the indicated time. Surface-bound fraction was evaluated from the cells labeled with Alexa Fluor 546-conjugated transferrin at 4°C. The rate of uptake is expressed as internalized/surface-bound fluorescent intensity. To examine EGF-dependent internalization of EGFR, L6 cells transfected with pEGFR-EGFP plasmid were treated with 2 nM EGF for indicated time. To examine internalization of integrin β1, L6 cells stably expressing human integrin β1 were serum-starved and then labeled with anti-integrin integrin β1 antibody (TS2/16), which recognizes human integrin β1, for 30 min on ice. After removing the excess antibody, cells were incubated in 0.1% BSA in DMEM at 37°C. At each time point, cells were washed in ice-cold acid buffer to strip surface-bound antibody. Fixed cells were observed by confocal microscopy.
 
-## Microscopy and image quantification
+### Microscopy and image quantification
 
 Confocal imaging of fixed and fluorescently stained samples was performed on an inverted Olympus FV1200 microscope. Appropriate excitation and emission wavelengths were configured by the instrument running FV10-ASW software, and emission signals in the different channels were collected in the sequential scan mode. TIRF imaging of fixed and fluorescently stained samples was performed on Leica AF6000LX total internal reflection (TIRF) microscopy equipped with a 100 × 1.46 NA oil-immersion objective and a Cascade II EMCCD camera (Roper, Tucson, AZ). Images were analyzed with Adobe Photoshop CC2017 and Fiji software. Live cell dual-color TIRF microscopy was carried out as described previously (Lanzerstorfer et al., 2015).
 
@@ -183,22 +1386,22 @@ Quantifications were performed with Fiji software. Mean fluorescence levels in i
 
 Images of differentiated myotubes were obtained by BZ-9000 microscope (Keyence, Osaka, Japan). Myotube diameter was quantified by measuring a total of over 100 tube diameters from ten random fields using Fiji software.
 
-## Quantitative RT-PCR analysis
+### Quantitative RT-PCR analysis
 
 Total RNA from L6 cells was extracted with TRIzol reagent (Invitrogen) from three independently collected cells. First-strand cDNA was synthesized with ReverTra Ace qPCR Master Mix (TOYOBO, Osaka, Japan). Quantitative PCR was performed with THUNDERBIRD SYBR qPCR Mix (TOYOBO) on an ABI StepOnePlus Real Time PCR System (Applied Biosystems). To normalize the relative expression, a standard curve was prepared for each gene for relative quantification, and the expression level of each gene was normalized to the Rn18s gene. Specific primers for atrophy-related genes were used: Fbxo32 F: ACTTCTCGACTGCCATCCTG; Fbxo32 R: TCTTTTGGGCGATGCCACTC; Trim63 F: GGGAACGACCGAGTTCAGAC; Trim63 R: GCGTCAAACTTGTGGCTCAG; Fbxo30 F: TGCAGTGGGGGAAAAAGAAGT; Fbxo30 R: TGCAGTACTGAATCGCCACA; Fbxo21 F: ACTCCATCGGGCTCGTTATG; Fbxo21 R: TGTTTCGGATCCACTCGTGC; Map1lc3b F: GCCGGAGCTTCGAACAAAGA; Map1lc3b R: GCTTCTCACCCTTGTATCGC; Gabarapl1 F: ACAACACTATCCCTCCCACC; Gabarapl1 R: GCTTCTGCCTCATTTCCCGTA; Rn18s F: TCCCAGTAAGTGCGGGTCATA; Rn18s R: CGAGGGCCTCACTAAACCATC.
 
-## Yeast two-hybrid assay
+### Yeast two-hybrid assay
 
 Yeast two-hybrid assay using pAS-IRS-1 and pACT2-μ2 to assess the interaction between IRS-1 and μ2 was performed as described previously (Hakuno et al., 2007).
 
-## Protein expression and purification
+### Protein expression and purification
 
 Construct of 6 × His tagged C-μ2 (rat μ2 amino acid residues 158–435) cloned into pET15b was transformed into an E. coli strain BL21-CodonPlus(DE3)-RIL (Agilent Technologies, Santa Clara, CA). Bacteria were grown in LB supplemented with ampicillin and chloramphenicol at 37°C to OD600 of 0.7. Expression was induced with 0.1 mM isopropyl β-D-thiogalactopyranoside (IPTG) at 17°C overnight. The cells were harvested by centrifugation and homogenized with a sonicator in a buffer of 50 mM Tris-HCl (pH 8.0), 500 mM NaCl, 20 mM imidazole, 5% glycerol, and 0.1% Triton X-100 supplemented with cOmplete EDTA-free protease inhibitor cocktail (Roche). Insoluble material was removed by centrifugation. The protein was affinity-purified on HisTrap HP column (GE Healthcare). The His-tag was removed by cleavage of thrombin at room temperature for 4 hr. Thrombin-cleaved C-μ2 was further purified with HiTrap SP HP column (GE Healthcare), and uncleaved fusion protein was removed by passage through HisTrap HP column. The C-μ2 was finally purified by gel filtration on HiLoad 16/60 Superdex200 column equilibrated in a buffer of 10 mM HEPES-KOH (pH 7.5), 150 mM NaCl, and 2 mM dithiothreitol (DTT) for crystallization.
 
-## Crystallization and structure determination
+### Crystallization and structure determination
 
 Three eight-residue peptides of IRS-1 were chemically synthesized with their sequences GY(608)MPMSPG, DY(628)MPMSPK and GY(658)MMMSPS, where the tyrosine residue in a YxxΦ motif is indicated with its residue number in parentheses (Toray Research Center, Inc., Tokyo, Japan). Hereafter, they are referred to as Y608 peptide, Y628 peptide, and Y658 peptide, respectively. The peptides were dissolved in 10 mM HEPES buffer (pH 7.5) containing 150 mM NaCl and 2 mM DTT. C-μ2 was mixed with each peptide in the molecular ratio of 1:10. Crystals of the Y608 peptide were grown by the sitting drop method at 293 K with the reservoir solution containing 1.4 M sodium formate, 50 mM nickel chloride and 100 mM sodium acetate (pH 6.0). Crystals of the Y628 and Y658 peptides were grown by the hanging drop method at 291 K with the reservoir solution containing 2.2–2.3 M sodium chloride, 400 mM sodium potassium phosphate, 10 mM DTT, 15% (v/v) glycerol and 100 mM MES (pH 6.5). Crystals were briefly soaked in well solution containing 20% (v/v) glycerol before flash-cooled in liquid nitrogen. Diffraction data were collected on BL26B2 at SPring-8, Harima, Japan, and processed using HKL2000 (Otwinowski and Minor, 1997) and the CCP4 suite (Winn et al., 2011). Molecular replacement was carried out with CCP4 program MOLREP (Vagin and Teplyakov, 1997) using the μ2 subunit in the complex with EGFR internalization signal peptide (Owen and Evans, 1998) (PDB 1BW8) as the search model. Refinement was performed with REFMAC5 (Murshudov et al., 1997) and PHENIX (Adams et al., 2010), while model building was performed with COOT (Emsley and Cowtan, 2004). The N-terminal residue and residues 220–237 of C-μ2 were not modeled for the complexes of the Y628 and Y658 peptides. As for the complex with the Y608 peptide, it appeared that the region encompassing residues 219–260 underwent a conformational change where the electron density was not enough to precisely trace the structure. Residues 224–260 were not modeled except for a five-alanine strand which was placed as unconfirmed residues in a patch of visible electron density. Structural models in the figures were drawn using PyMOL (The PyMOL Molecular Graphics System, Schrödinger, LLC). Coordinates and structure factors of the three complexes have been deposited in the Protein Data Bank (PDB) with accession codes indicated in Table 1.
 
-## Statistical analysis
+### Statistical analysis
 
 Comparisons between two groups were performed using two-tailed, unpaired Student’s t test, whereas comparisons among more than two groups were analyzed by analysis of variance (ANOVA) and the Tukey post hoc test. p Values of < 0.05 were considered statistically significant.

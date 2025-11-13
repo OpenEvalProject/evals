@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.05116.001 Previous reports have shown that individual neurons of the brain can display somatic genomic mosaicism of unknown function. In this study, we report altered genomic mosaicism in single, sporadic Alzheimer's disease (AD) neurons characterized by increases in DNA content and amyloid precursor protein ( APP ) gene copy number. AD cortical nuclei displayed large variability with average DNA content increases of ∼8% over non-diseased controls that were unrelated to trisomy 21. Two independent single-cell copy number analyses identified amplifications at the APP locus. The use of single-cell qPCR identified up to 12 copies of APP in sampled neurons. Peptide nucleic acid (PNA) probes targeting APP , combined with super-resolution microscopy detected primarily single fluorescent signals of variable intensity that paralleled single-cell qPCR analyses. These data identify somatic genomic changes in single neurons, affecting known and unknown loci, which are increased in sporadic AD, and further indicate functionality for genomic mosaicism in the CNS. DOI: http://dx.doi.org/10.7554/eLife.05116.001
+Previous reports have shown that individual neurons of the brain can display somatic genomic mosaicism of unknown function. In this study, we report altered genomic mosaicism in single, sporadic Alzheimer's disease (AD) neurons characterized by increases in DNA content and amyloid precursor protein (APP) gene copy number. AD cortical nuclei displayed large variability with average DNA content increases of ∼8% over non-diseased controls that were unrelated to trisomy 21. Two independent single-cell copy number analyses identified amplifications at the APP locus. The use of single-cell qPCR identified up to 12 copies of APP in sampled neurons. Peptide nucleic acid (PNA) probes targeting APP, combined with super-resolution microscopy detected primarily single fluorescent signals of variable intensity that paralleled single-cell qPCR analyses. These data identify somatic genomic changes in single neurons, affecting known and unknown loci, which are increased in sporadic AD, and further indicate functionality for genomic mosaicism in the CNS.
 
 ## Introduction
 
@@ -32,85 +32,109 @@ The existence of region specific genomic mosaicism in the normal brain (Westra e
 
 ## Results
 
-Methodologies to identify genomic mosaicism in AD brain nuclei utilized multiple independent approaches (
+Methodologies to identify genomic mosaicism in AD brain nuclei utilized multiple independent approaches (Figure 1). First, neuronal nuclei were isolated from paired prefrontal cortex and cerebellum of postmortem human brains as previously described (Figure 1A) (Westra et al., 2008, 2010). Nuclei were analyzed for: DNA content changes (Figure 1B), APP CNVs using qPCR in small populations (Figure 1C) and single-nuclei (Figure 1D), trisomy 21 using standard fluorescence in situ hybridization (FISH) (Figure 1E), and amplified APP loci using PNA-FISH (Figure 1F).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/05116/elife-05116-fig1-v1.jpg)
 
-**Figure 1.:** (A) Neuronal nuclei were isolated from the prefrontal cortex and cerebellum of postmortem human brain (see ‘Materials and methods’ for samples used) as described (Westra et al., 2008). (B) Nuclear DNA was stained with propidium iodide (PI) and DNA content was quantified using flow cytometric analysis. (C) APP copy number variations were analyzed in small populations of nuclei (∼75 genomes) using custom primers for exon 14 of APP. (D) Single-cell qPCR assessed APP copy number variations in individual neuronal nuclei via TaqMan probes and a modified Biomark integrated fluidic chip system (Fluidigm Corporation, South San Francisco). (E) FISH paints against the whole q arm of chromosome 21 and a point probe against a region on the q arm of 21 (21q22.13-q22.2) were used to double-label and call aneusomies in AD samples. (F) Peptide nucleic acid (PNA) FISH was combined with super resolution microscopy for threshold detection of APP copy number above ∼2 occurring at a single locus.DOI: http://dx.doi.org/10.7554/eLife.05116.003
+**Figure 1.:** (A) Neuronal nuclei were isolated from the prefrontal cortex and cerebellum of postmortem human brain (see ‘Materials and methods’ for samples used) as described (Westra et al., 2008). (B) Nuclear DNA was stained with propidium iodide (PI) and DNA content was quantified using flow cytometric analysis. (C) APP copy number variations were analyzed in small populations of nuclei (∼75 genomes) using custom primers for exon 14 of APP. (D) Single-cell qPCR assessed APP copy number variations in individual neuronal nuclei via TaqMan probes and a modified Biomark integrated fluidic chip system (Fluidigm Corporation, South San Francisco). (E) FISH paints against the whole q arm of chromosome 21 and a point probe against a region on the q arm of 21 (21q22.13-q22.2) were used to double-label and call aneusomies in AD samples. (F) Peptide nucleic acid (PNA) FISH was combined with super resolution microscopy for threshold detection of APP copy number above ∼2 occurring at a single locus.
 
-## AD cortices show increased DNA content variation (DCV)
+### AD cortices show increased DNA content variation (DCV)
 
 Previous work identified DNA content changes with regional variability in the non-diseased brain, where prefrontal cortical nuclei—particularly neuronal nuclei—displayed increased DCV compared to nuclei of the cerebellum and non-brain controls (Westra et al., 2010). The current study utilizes the same techniques for DNA content analysis by flow cytometry using propidium iodide (PI). PI staining is the predominant methodology for quantitatively differentiating nuclei or cells with variable DNA content and is routinely utilized as a gold standard in multiple fields including genomic comparisons across species in botany (Dolezel et al., 2007), studies of the cell cycle (Krishan, 1975), and DNA degradation produced by apoptosis (Riccardi and Nicoletti, 2006). Prior analyses ruled out the effects of DNA dyes, nuclear size, mitochondrial contamination, and autofluorescent lipofuscin on DNA content and validated genomic increases in DNA content using quantitation of CENP-B PNA probes against human centromere repeats (Westra et al., 2010) which have been further substantiated by identification of copy number gains in single human neurons (Gole et al., 2013; McConnell et al., 2013).
 
-To further validate DCV in human neurons, whole genome amplification (WGA) was used on cortical neuronal nuclei sorted into populations of high or low DNA content based upon PI intensity. Nuclei with high or low DNA content were sorted into 12 replicates of 1000, 500, or 100 and were then subject to DNA content assessment by WGA to assess starting amounts of DNA template in each sample (
+To further validate DCV in human neurons, whole genome amplification (WGA) was used on cortical neuronal nuclei sorted into populations of high or low DNA content based upon PI intensity. Nuclei with high or low DNA content were sorted into 12 replicates of 1000, 500, or 100 and were then subject to DNA content assessment by WGA to assess starting amounts of DNA template in each sample (Figure 2A). Nuclei were denatured and amplified by multiple displacement amplification (MDA) during which DNA synthesis was continually measured by SYBR Green fluorescence (Figure 2B). In every case, nuclei with high PI intensity also showed increased DNA synthesis over those with low PI intensity. These results independently confirm, as expected, that PI staining intensity faithfully reports DNA content.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/05116/elife-05116-fig2-v1.jpg)
 
-**Figure 2.:** (A) Histogram displaying gating parameters used in sorting ‘high’ and ‘low’ DNA content populations for validation of DNA content. (B) Validation of DNA content analyses using semi-quantitative MDA whole-genome amplification (WGA) on ‘high’ and ‘low’ DNA content populations of 1000, 500, and 100 nuclei. (C and D) Representative DNA content histograms for lymphocytes (LYM), AD cerebellum (CBL), and AD prefrontal cortex (CTX). Each colored histogram represents a separate sample in each set; CTX and CBL samples are from paired brains. Chicken erythrocyte nuclei (CEN) were used as internal calibration controls. (E) Representative orthogonal view of DNA content vs forward scatter width (FSC-W). For each brain sample, the area to the right of the vertical line indicates a DNA content increase of the population of nuclei. AD-6 CTX is a representative right-hand peak shift and AD-7 is a representative right-hand shoulder (see Figure 3A for more examples). (F) DNA content changes for all human LYM, ND, and AD brain samples examined (AD CTX N = 32, AD CBL N = 16, LYM N = 15 [20 meta analysis], ND CTX = 21 [36 meta analysis], ND CBL = 11 [12 meta analysis]). Red bars denote average for each group relative to lymphocytes. Averages are as follows (including metadata from Westra et al. (2010)): AD CTX 8.219%; AD CBL −0.1104%; LYM −0.2915%; ND CTX 2.239%; ND CBL −3.358%. (G) DNA content changes of the current study (AVOVA p < 0.0001). (H) DNA content changes of the current study combined with metadata from Westra et al. (2010) (ANOVA p < 0.0001). (I) Comparison of mean coefficient of variation (CV statistic from FlowJo of the population, included metadata from Westra et al., 2010) demonstrates that there is an average increase in the variation of AD samples (ANOVA p < 0.0001). *p = 0.05, **p = 0.01, ***p = 0.001, ****p < 0.0001, See Figure 2—source data 1 for exact p values. See Figure 2—figure supplement 1 for age, PMI and Braak score correlations. See Figure 2—figure supplement 2 for control of nuclear size analysis.DOI: http://dx.doi.org/10.7554/eLife.05116.00410.7554/eLife.05116.005Figure 2—source data 1.DOI: http://dx.doi.org/10.7554/eLife.05116.005
+**Figure 2.:** (A) Histogram displaying gating parameters used in sorting ‘high’ and ‘low’ DNA content populations for validation of DNA content. (B) Validation of DNA content analyses using semi-quantitative MDA whole-genome amplification (WGA) on ‘high’ and ‘low’ DNA content populations of 1000, 500, and 100 nuclei. (C and D) Representative DNA content histograms for lymphocytes (LYM), AD cerebellum (CBL), and AD prefrontal cortex (CTX). Each colored histogram represents a separate sample in each set; CTX and CBL samples are from paired brains. Chicken erythrocyte nuclei (CEN) were used as internal calibration controls. (E) Representative orthogonal view of DNA content vs forward scatter width (FSC-W). For each brain sample, the area to the right of the vertical line indicates a DNA content increase of the population of nuclei. AD-6 CTX is a representative right-hand peak shift and AD-7 is a representative right-hand shoulder (see Figure 3A for more examples). (F) DNA content changes for all human LYM, ND, and AD brain samples examined (AD CTX N = 32, AD CBL N = 16, LYM N = 15 [20 meta analysis], ND CTX = 21 [36 meta analysis], ND CBL = 11 [12 meta analysis]). Red bars denote average for each group relative to lymphocytes. Averages are as follows (including metadata from Westra et al. (2010)): AD CTX 8.219%; AD CBL −0.1104%; LYM −0.2915%; ND CTX 2.239%; ND CBL −3.358%. (G) DNA content changes of the current study (AVOVA p < 0.0001). (H) DNA content changes of the current study combined with metadata from Westra et al. (2010) (ANOVA p < 0.0001). (I) Comparison of mean coefficient of variation (CV statistic from FlowJo of the population, included metadata from Westra et al., 2010) demonstrates that there is an average increase in the variation of AD samples (ANOVA p < 0.0001). *p = 0.05, **p = 0.01, ***p = 0.001, ****p < 0.0001, See Figure 2—source data 1 for exact p values. See Figure 2—figure supplement 1 for age, PMI and Braak score correlations. See Figure 2—figure supplement 2 for control of nuclear size analysis.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/05116/elife-05116-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Comparison of mean skew values for each sample group, skew determined as: (Mean − Mode/Standard Deviation of the diploid DNA content peak). (B) No correlation was observed between DNA content and Braak score. (C–E) No correlation was observed between DNA content and age across all brains analyzed. (F–H) No correlation was observed between DNA content and post-mortem index across all brains analyzed.DOI: http://dx.doi.org/10.7554/eLife.05116.006
+**Figure 2—figure supplement 1.:** (A) Comparison of mean skew values for each sample group, skew determined as: (Mean − Mode/Standard Deviation of the diploid DNA content peak). (B) No correlation was observed between DNA content and Braak score. (C–E) No correlation was observed between DNA content and age across all brains analyzed. (F–H) No correlation was observed between DNA content and post-mortem index across all brains analyzed.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/05116/elife-05116-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** (A–C) Representative flow cytometry scatter plots of nuclei. (A) Lymphocytes (LYM), (B) CTX nuclei, (C) CBL nuclei. (D) Overlay of red boxes shown in (A–C), demonstrating that cortical nuclei similar in size to LYM and CBL consistently display a DNA content shift.DOI: http://dx.doi.org/10.7554/eLife.05116.007
+**Figure 2—figure supplement 2.:** (A–C) Representative flow cytometry scatter plots of nuclei. (A) Lymphocytes (LYM), (B) CTX nuclei, (C) CBL nuclei. (D) Overlay of red boxes shown in (A–C), demonstrating that cortical nuclei similar in size to LYM and CBL consistently display a DNA content shift.
 
-AD neuropathology strongly affects the prefrontal cortex. We therefore first interrogated the DNA content of pathologically confirmed prefrontal cortices (N = 32), using previously described methodologies for DCV analyses in neuronal nuclei (
+AD neuropathology strongly affects the prefrontal cortex. We therefore first interrogated the DNA content of pathologically confirmed prefrontal cortices (N = 32), using previously described methodologies for DCV analyses in neuronal nuclei (Figure 1B) (Westra et al., 2010). In control experiments, AD cerebellar nuclei showed DNA content profiles similar to lymphocytes, characterized by histograms with sharp peaks and narrow bases (Figure 2C,E). By comparison, AD cortices displayed high variability characterized by right hand shoulders (Figure 2D,E [AD-7]), large right hand peak shifts (Figure 2D,E [AD-6]), and wide bases. Of the AD cortex samples examined, greater than 90% displayed a net DNA content increase, averaging approximately 8% gain over human lymphocyte controls (Figure 2F–H). Notably, the AD cortex displayed increases beyond those observed in non-diseased cortices, with an average gain of approximately 6% over age and sex-matched samples (Figure 2F–H). AD cortices also displayed an increased coefficient of variation over non-diseased cortical nuclei and all cerebellar nuclei (Figure 2I) as well as a consistent skewed distribution compared to AD cerebellum (Figure 2—figure supplement 1A). In addition, we examined 14 paired sets of AD cortex and cerebellum from the same individual (Figure 3A) and 12 paired sets from non-diseased individuals (Figure 3B). Each AD cortex showed unique cortical histograms and increases in total cortical DNA compared to the cerebellum. In AD and non-diseased brain samples, DNA content changes did not correlate with age, Braak score, or postmortem index (Figure 2—figure supplement 1B–H), and DNA content was independent of nuclear size (Figure 2—figure supplement 2) (Westra et al., 2010). Importantly, the increase observed was significantly less than a 4N tetraploid genome (∼12,800 Mb), yet significantly more than what would be expected from a hypersomy of even the largest chromosome (chr1: ∼250 Mb or 3.9%). These results indicate that neuroanatomically selective increases in DNA content represent a distinct, reproducible, and prevalent characteristic of the AD brain.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/05116/elife-05116-fig3-v1.jpg)
 
-**Figure 3.:** (A) Pairwise analysis of overlaid DNA content histograms (CTX = solid red, CBL = black dashed lines) in the same AD individual (each graph represents a unique AD individual). (B) Pairwise analysis of overlaid DNA content histograms (CTX = solid blue, CBL = black dashed lines) in the same ND individual.DOI: http://dx.doi.org/10.7554/eLife.05116.008
+**Figure 3.:** (A) Pairwise analysis of overlaid DNA content histograms (CTX = solid red, CBL = black dashed lines) in the same AD individual (each graph represents a unique AD individual). (B) Pairwise analysis of overlaid DNA content histograms (CTX = solid blue, CBL = black dashed lines) in the same ND individual.
 
-## Neurons produce DNA content increases
+### Neurons produce DNA content increases
 
-In the non-diseased cortex, neurons were identified as the predominant cell type contributing to increased DCV (
+In the non-diseased cortex, neurons were identified as the predominant cell type contributing to increased DCV (Westra et al., 2010). To determine whether neurons were also responsible for increased DCV in sporadic AD, nuclei were immunolabeled for the neuronal nuclear antigen, NeuN, and flow cytometry was used to analyze DCV in NeuN-positive and NeuN-negative nuclei (Figure 4A–C). NeuN-positive AD cortical neurons showed right hand DNA content shifts (Figure 4D) and increased DCV, displaying ∼9% gain over that observed in NeuN-negative nuclei (Figure 4E). A comparison of NeuN-positive nuclei in paired samples from the same brain also showed significantly increased DNA content in cortical neurons over cerebellar neurons (Figure 4F). These distinctions do not rule out AD-specific effects on DCV from non-neuronal cells, but do implicate neurons as the major cellular locus for increased DCV.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/05116/elife-05116-fig4-v1.jpg)
 
-**Figure 4.:** (A–C) The gating procedure used for NeuN-positive flow cytometry analysis. (A) DNA content peak for identified nuclei. (B) A sample of unlabeled neuronal nuclei that display no NeuN-positive signal. (C) Selection for NeuN-positive nuclei for downstream analysis. (D) DNA content histograms of four AD samples displaying NeuN-positive nuclei (solid purple) vs NeuN-negative nuclei (black dashed line). NeuN-positive populations display distinct cortical histograms with prominent right-shifted peaks (arrows). (E) Comparison of DNA index (DI) increases from NeuN-positive nuclei (solid purple) vs NeuN-negative nuclei (black dashes) from AD CTX samples. NeuN-positive nuclei (DI = 1.10) showed an average gain of 9% over NeuN-negative nuclei (DI = 1.01), **p = 0.0011. (F) Comparison of DNA content in NeuN-positive nuclei from AD CTX (DI = 1.10) (red) vs AD CBL (DI = 0.94) (pink) from the same individual; CTX nuclei displayed a 15.6% gain over CBL nuclei, *p = 0.0335. Statistics are paired two-tailed t-test. Bars indicate ± SEM.DOI: http://dx.doi.org/10.7554/eLife.05116.009
+**Figure 4.:** (A–C) The gating procedure used for NeuN-positive flow cytometry analysis. (A) DNA content peak for identified nuclei. (B) A sample of unlabeled neuronal nuclei that display no NeuN-positive signal. (C) Selection for NeuN-positive nuclei for downstream analysis. (D) DNA content histograms of four AD samples displaying NeuN-positive nuclei (solid purple) vs NeuN-negative nuclei (black dashed line). NeuN-positive populations display distinct cortical histograms with prominent right-shifted peaks (arrows). (E) Comparison of DNA index (DI) increases from NeuN-positive nuclei (solid purple) vs NeuN-negative nuclei (black dashes) from AD CTX samples. NeuN-positive nuclei (DI = 1.10) showed an average gain of 9% over NeuN-negative nuclei (DI = 1.01), **p = 0.0011. (F) Comparison of DNA content in NeuN-positive nuclei from AD CTX (DI = 1.10) (red) vs AD CBL (DI = 0.94) (pink) from the same individual; CTX nuclei displayed a 15.6% gain over CBL nuclei, *p = 0.0335. Statistics are paired two-tailed t-test. Bars indicate ± SEM.
 
-## APP copy number variably increases in small cell cohorts
+### APP copy number variably increases in small cell cohorts
 
-The DNA content increases in sporadic AD neurons raised the question of what genomic loci may be specifically increased in AD. The most highly validated gene associated with AD is
+The DNA content increases in sporadic AD neurons raised the question of what genomic loci may be specifically increased in AD. The most highly validated gene associated with AD is APP, wherein constitutive gains have previously been linked to AD through familial AD and DS (Prasher et al., 1998; Rovelet-Lecrux et al., 2006; Jonsson et al., 2012; McNaughton et al., 2012). However, prior large-scale analyses in peripheral, non-neural tissues from sporadic AD cases have not reported APP copy number changes (Bertram and Tanzi, 2009; Harold et al., 2009). The normal existence of genomic mosaicism might produce ‘hot-spots’ of cells with increased APP copy number, and we therefore interrogated small cohorts of brain nuclei from paired cortex and cerebellum. Three of six AD samples displayed significant increases in APP copy number (3.9–6.3 copies compared to reference genes) over paired cerebellar samples (Figure 5A (AD-1, AD-3, AD-6)). Similar APP amplification was not detected in non-diseased brains (Figure 5B), and DS controls along with reference gene assessments demonstrated expected results (Figure 5—figure supplement 1A,B). Notably, AD samples displayed substantial variability in APP copies (Figure 5C), revealing inherent limitations in precisely quantifying copy numbers in small, genomically mosaic cell populations and highlighting the necessity for single-cell analyses.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/05116/elife-05116-fig5-v1.jpg)
 
-**Figure 5.:** APP locus in small cohorts of AD cortical neurons unrelated to trisomy 21.(A) Comparison of relative copy number of APP in CBL and CTX fractions from six AD brains. APP locus-specific amplification was determined relative to reference gene SEMA4A; paired CBL nuclei were used as a calibrator sample for each brain, normalized to 2.00 for a diploid cell. Differences in ΔΔCt ± SEM of APP in the cortex vs cerebellum were assessed in each individual using an unpaired, two-tailed t-test (****p = 0.0001, *p = 0.0165, *p = 0.0489) (B) Comparison of relative copy number of APP in CBL and CTX fractions from 4 non-diseased brains. (C) Average relative copy number in non-diseased vs AD brains. Control genes and DS individuals were also examined (Figure 5—figure supplement 1). (D–J) FISH strategy of chromosome 21 counting through simultaneous labeling using chr 21 q arm ‘whole’ chromosome paint (WCP, green) and chr 21 regional FISH probe for 21q22.13-q22.2 (red) (see Figure 5—source data 1 for raw counts). (D and E) The ability to detect aneuploidy was validated using interphase nuclei from a human trisomy 21 brain, where three regional spots (red, encompassing the APP gene) were seen, despite WCP spatial variation (see also Rehen et al. (2005)). (F–I) Chromosome 21 aneusomy was examined in prefrontal cortical nuclei. Examples of chr 21 (F) monosomy, (G) disomy, (H) trisomy, and (I) tetrasomy (please note tetrasomy is not an example of aneuploidy). (J) Quantification of individual FISH signals showed no significant differences in monosomy, disomy, trisomy, or tetrasomy. 5 control brains and 9 AD brains were used. At least 450 nuclei were quantified per brain sample. Scale bar = 10 um. 4974 total nuclei examined.DOI: http://dx.doi.org/10.7554/eLife.05116.01010.7554/eLife.05116.011Figure 5—source data 1.DOI: http://dx.doi.org/10.7554/eLife.05116.011
+**Figure 5.:** (A) Comparison of relative copy number of APP in CBL and CTX fractions from six AD brains. APP locus-specific amplification was determined relative to reference gene SEMA4A; paired CBL nuclei were used as a calibrator sample for each brain, normalized to 2.00 for a diploid cell. Differences in ΔΔCt ± SEM of APP in the cortex vs cerebellum were assessed in each individual using an unpaired, two-tailed t-test (****p = 0.0001, *p = 0.0165, *p = 0.0489) (B) Comparison of relative copy number of APP in CBL and CTX fractions from 4 non-diseased brains. (C) Average relative copy number in non-diseased vs AD brains. Control genes and DS individuals were also examined (Figure 5—figure supplement 1). (D–J) FISH strategy of chromosome 21 counting through simultaneous labeling using chr 21 q arm ‘whole’ chromosome paint (WCP, green) and chr 21 regional FISH probe for 21q22.13-q22.2 (red) (see Figure 5—source data 1 for raw counts). (D and E) The ability to detect aneuploidy was validated using interphase nuclei from a human trisomy 21 brain, where three regional spots (red, encompassing the APP gene) were seen, despite WCP spatial variation (see also Rehen et al. (2005)). (F–I) Chromosome 21 aneusomy was examined in prefrontal cortical nuclei. Examples of chr 21 (F) monosomy, (G) disomy, (H) trisomy, and (I) tetrasomy (please note tetrasomy is not an example of aneuploidy). (J) Quantification of individual FISH signals showed no significant differences in monosomy, disomy, trisomy, or tetrasomy. 5 control brains and 9 AD brains were used. At least 450 nuclei were quantified per brain sample. Scale bar = 10 um. 4974 total nuclei examined.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/05116/elife-05116-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Reference genes validated in small population qPCR via examination of APP exon 14 in Down Syndrome (DS) nuclei as a positive control. (B) Representative males (AD-1 and AD-6) displayed reduced copy number of PCDH11X, a gene located on the X chromosome, while a representative female demonstrates two copies of PCDH11X and CCL18, a second single copy control gene.DOI: http://dx.doi.org/10.7554/eLife.05116.012
+**Figure 5—figure supplement 1.:** (A) Reference genes validated in small population qPCR via examination of APP exon 14 in Down Syndrome (DS) nuclei as a positive control. (B) Representative males (AD-1 and AD-6) displayed reduced copy number of PCDH11X, a gene located on the X chromosome, while a representative female demonstrates two copies of PCDH11X and CCL18, a second single copy control gene.
 
-## APP copy number increases in AD are not due to trisomy 21
+### APP copy number increases in AD are not due to trisomy 21
 
 APP gene dosage in familial AD and DS has driven hypotheses connecting AD pathogenesis with increased incidence of trisomy 21 (Heston and Mastri, 1977; Potter, 1991; Geller and Potter, 1999). We therefore examined AD cortical nuclei using a highly liberal protocol for calling aneusomies whereby borderline FISH profiles suggestive of aneusomy were always included in quantitative assessments, in an effort to detect possible differences between AD and control brains. Importantly, all analyses were conducted blind to the identity of samples, an approach made possible by interrogating purified nuclei rather than cells or tissues that themselves show identifying increases of plaques and tangles in AD. Nuclei were double-labeled with a commercially available chromosome 21 q-arm ‘whole chromosome paint’ (WCP) and a regional ‘point’ probe for 21q22.13-q22.2 (220 Kb) (Figure 5D–I). The ability of this technique to detect aneuploidy was validated using interphase nuclei from a human trisomy 21 brain (Svendsen et al., 1998) revealing three nuclear signals (Figure 5D,E) (see also (Rehen et al., 2005)). Three separate, blinded observers counted each sample. Despite using liberal counting criteria, no statistically significant changes in chromosome 21 aneuploidy rates, including trisomies, between AD (N = 4974 nuclei, N = 9 brains) and non-diseased brains (N = 2576 nuclei, N = 5 brains) were observed (Figure 5J). Comparably high levels of aneuploidy have been reported for chromosome 21 displaying no difference between AD and non-diseased hippocampal cells (Thomas and Fenech, 2008). Thus, results from dual probe FISH analyses do not support increased trisomy 21 in AD but are consistent with alternative CNV mechanisms that could produce APP copy number values exceeding 3, as was observed in 75-genome qPCR analyses (Figure 5).
 
-## APP copy number is increased and enriched in single AD neurons
+### APP copy number is increased and enriched in single AD neurons
 
-Mosaic single-cell increases in
+Mosaic single-cell increases in APP copy number could explain variations observed in small cohort qPCR data. To assess APP copy number in single neurons, an optimized microfluidic protocol to assess genomic copy number via qPCR using a Biomark HD 48.48 Dynamic Array integrated fluidic circuit (IFC) (Fluidigm, South San Francisco) was adapted from gene expression protocols. Nuclei were isolated and interrogated at two reference genes (see Materials and methods) and two APP exons that flanked the majority of the coding sequence at the 5′ and 3′ ends of APP (exons 3 and 14). Samples were run in triplicate and assays in sextuplicate, which generated high numbers of replicate data points allowing for improved copy number resolution to an extent not possible by conventional qPCR (Weaver et al., 2010; Whale et al., 2012). A total of 154 neuronal nuclei were individually examined from three AD and three non-diseased brains, within which nuclei from the cerebellum and prefrontal cortex were separately analyzed. In single AD cortical nuclei, significant increases in APP copy number, ranging up to 12 copies in a single nucleus (Figure 6A,B), were observed with a high concordance rate between exons (Figure 6—figure supplement 1). AD cortical nuclei displayed increased average copy numbers (∼3.8–4 copies) over control samples (∼1.7–2.2 copies) (Figure 6A,B), with increased frequencies of high copy number nuclei (six or more copies) (Figures 6C and 5E, red lines) primarily occurring in prefrontal cortex samples (Figure 6C–F). The AD cortex showed an approximately fourfold increase over the non-diseased cortex of nuclei with greater than 2 APP copies (55–66% vs 12–15%) (Figure 6G,I). In addition, nuclei with fewer than 2 APP copies were also identified. In neuronal nuclei with greater than two copies (Figure 6G,I, gold bars), AD cortical nuclei showed statistically significant increases (∼5 copies for both exons) over the other samples (∼3 copies for both exons) (Figure 6H,J). These data identify mosaic, neuroanatomically enriched and disease-associated increases in APP copy number in single, sporadic AD neurons.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/05116/elife-05116-fig6-v1.jpg)
 
-**Figure 6.:** APP locus amplification in single neurons from AD brains.(A) Single nuclei relative copy numbers for exon 3 of APP from non-diseased (ND) CBL, ND CTX, AD CBL, and AD CTX; each black diamond represents one neuron. For each group, the mean is displayed in red and bars represent 95% confidence intervals. AD CTX showed a mean APP copy number of 3.80; this is significantly higher than AD CBL (2.23), ND CTX (1.60), and ND CBL (2.28). *p = 0.0147, **p = 0.0015, **p < 0.0012, ANOVA p < 0.0001 (see Figure 6—source data 1 for raw numbers and statistics). (B) Single nuclei relative copy numbers for exon 14 of APP, similar to (A). The two exons showed a high concordance (Figure 6—figure supplement 1) where the AD CTX showed a mean APP copy number of 3.40 while the AD CBL (2.34), ND CTX (1.44), and ND CBL (1.92) remained closer to 2 copies. *p = 0.0163, **p = 0.0016, ****p < 0.0001, ANOVA p < 0.0001. (C–F) Distribution of copy number calls for exon 3 (C and D) and exon 14 (E and F) binned by relative copy number. The AD CTX for both exons displayed unique distributions, with more nuclei falling into the high copy number bins. (G and I) Distribution of nuclei with copy numbers less than, equal to, and greater than two copies. (H and J) Average copy number increases in nuclei binned with greater than two copies (gold columns in G) (AD CTX: Exon 3 = 5.01, Exon 14 = 4.96, *p = 0.0361). All statistics represent an ANOVA with a Tukey's multiple comparison test. Bars indicate ± SEM.DOI: http://dx.doi.org/10.7554/eLife.05116.01310.7554/eLife.05116.014Figure 6—source data 1.DOI: http://dx.doi.org/10.7554/eLife.05116.014
+**Figure 6.:** (A) Single nuclei relative copy numbers for exon 3 of APP from non-diseased (ND) CBL, ND CTX, AD CBL, and AD CTX; each black diamond represents one neuron. For each group, the mean is displayed in red and bars represent 95% confidence intervals. AD CTX showed a mean APP copy number of 3.80; this is significantly higher than AD CBL (2.23), ND CTX (1.60), and ND CBL (2.28). *p = 0.0147, **p = 0.0015, **p < 0.0012, ANOVA p < 0.0001 (see Figure 6—source data 1 for raw numbers and statistics). (B) Single nuclei relative copy numbers for exon 14 of APP, similar to (A). The two exons showed a high concordance (Figure 6—figure supplement 1) where the AD CTX showed a mean APP copy number of 3.40 while the AD CBL (2.34), ND CTX (1.44), and ND CBL (1.92) remained closer to 2 copies. *p = 0.0163, **p = 0.0016, ****p < 0.0001, ANOVA p < 0.0001. (C–F) Distribution of copy number calls for exon 3 (C and D) and exon 14 (E and F) binned by relative copy number. The AD CTX for both exons displayed unique distributions, with more nuclei falling into the high copy number bins. (G and I) Distribution of nuclei with copy numbers less than, equal to, and greater than two copies. (H and J) Average copy number increases in nuclei binned with greater than two copies (gold columns in G) (AD CTX: Exon 3 = 5.01, Exon 14 = 4.96, *p = 0.0361). All statistics represent an ANOVA with a Tukey's multiple comparison test. Bars indicate ± SEM.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/05116/elife-05116-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** APP exon 3 and 14 from single cell qPCR.(A) Relative copy numbers (RCN) for APP exon 3 and APP exon 14 displaying concordance between exons. 100 of 115 nuclei examined for both exons display copy numbers within one copy number call. 10 of the 15 remaining nuclei, while more than one copy number apart, were both called as gains. Bars represent RCN Min and RCN Max. (B) Scatter plot of average relative copy numbers. The data remain consistent with those displayed for individual exons (Figure 6A,B). Statistics represent an ANOVA with a Tukey's multiple comparison test. **p < 0.01, ***p < 0.001.DOI: http://dx.doi.org/10.7554/eLife.05116.015
+**Figure 6—figure supplement 1.:** (A) Relative copy numbers (RCN) for APP exon 3 and APP exon 14 displaying concordance between exons. 100 of 115 nuclei examined for both exons display copy numbers within one copy number call. 10 of the 15 remaining nuclei, while more than one copy number apart, were both called as gains. Bars represent RCN Min and RCN Max. (B) Scatter plot of average relative copy numbers. The data remain consistent with those displayed for individual exons (Figure 6A,B). Statistics represent an ANOVA with a Tukey's multiple comparison test. **p < 0.01, ***p < 0.001.
 
-## APP amplified loci can be visualized by PNA-FISH
+### APP amplified loci can be visualized by PNA-FISH
 
 The identification of high APP copy number nuclei by single-cell qPCR suggested the possibility that amplified loci could produce detectable FISH signals. In chromosome 21 non-quantitative regional point probe FISH experiments, we occasionally observed variable puncta sizes (Figure 5H,I) (Rehen et al., 2005) that were initially dismissed as technical hybridization variability but which might potentially indicate sub-chromosomal variation of loci containing target sequences. However, conventional point-probe FISH analysis, while useful for assessments of aneusomy or rearrangements, cannot quantitatively evaluate copy number changes occurring as contiguous copies in close proximity to one another. Moreover, other conventional techniques for identifying copy number in single cells, such as single cell sequencing, rely heavily on genome amplification, which may introduce bias or mask CNVs. We therefore developed a detection assay based upon PNA chemistry. PNA probes hybridize with single base discrimination and have been used to quantify short repeat sequences such as those found on telomeres (Buchardt et al., 1993; Lansdorp et al., 1996). This raised the possibility that amplified copies of APP could be identified using multiple PNA probes simultaneously hybridized to unique gene sequences, provided that amplification occurred in a physically constrained locus rather than being dispersed throughout the genome.
 
-Nine PNA probes of 12–18 residues, each conjugated to a single Alexa-488 fluor, were designed against multiple sites of the same
+Nine PNA probes of 12–18 residues, each conjugated to a single Alexa-488 fluor, were designed against multiple sites of the same APP exons examined by single-cell qPCR, and validated both in silico and by blotting for specificity and linear quantitative behaviors (Figure 7A, Figure 7—figure supplement 1A–C). Relative probe sequence locations were also designed to avoid fluorochrome proximity quenching. Single PNA probes did not produce a detectable signal in any samples using standard fluorescence microscopy used for aneusomy FISH (Rehen et al., 2001, 2005), contrasting with clearly detectable telomeric signals, which led to evaluation of more sensitive microscopic techniques including confocal, deconvolution (Westra et al., 2010), and ultimately super resolution structured illumination microscopy (N-SIM, Nikon) (Gustafsson, 2000), which all failed to detect possible signals in AD nuclei. However, hybridization of increasing numbers of distinct PNA probes combined with N-SIM visualization resulted in the empirical determination of a threshold that identified one, and rarely two, punctate signals that were much more frequent in AD nuclei (Figure 7B), and with a frequency consistent with single-cell qPCR data (Figure 6). AD neuronal nuclei showed single purely green puncta (Figure 7B, #1 arrow, Video 1–6) and rarer two puncta signals (Figure 7B, #3 arrow, Video 6), all of which could be differentiated from lipofuscin puncta that fluoresced in all channels (Figure 7B, #2 arrow, Video 5). Internal positive control signals identified telomeres (Figure 7, red fluorescent puncta). Use of 3D-SIM enabled acquisition and analysis of super resolution projections of individual green puncta (Figure 7B) revealing a range of morphologies and intensities (Figure 7B,D, Figure 7—figure supplement 1D,E) consistent with varied APP copy number and possibly distinct, intrachromosomal genomic organization. This threshold detection using multiple PNA probes targeting APP visualized green puncta in 56% of AD neuronal nuclei compared to 22% in non-diseased and 14% in DS (Figure 7C). There was no evidence of single-copy detection in any sample, contrasting with standard FISH data (Figure 5D–I), despite always showing telomeric signals. Compared to single-cell qPCR data, which reports both endogenous alleles in addition to amplification, copy numbers at a single locus below ∼2 were not visualized with PNA-FISH, allowing focused analyses on positive profiles resulting in fluorescence intensity plots ( Figure 7D and Figure 7—figure supplement 1D) that were highly reminiscent of APP copy number plots produced by single-cell qPCR (Figure 6).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/05116/elife-05116-fig7-v1.jpg)
 
-**Figure 7.:** APP copy number increases in neuronal nuclei from AD brain samples.(A) Peptide nucleic acid probes (PNA) were developed against nine separate sites on APP (4 sites within exon 3 and 5 sites within exon 14). Each PNA probe consists of a peptide backbone conjugated to a single fluorophore, with separately conjugated nucleotides, substantially increasing specificity (Lansdorp et al., 1996). Single copies of APP are not detectable because of fluorophore detection limits. Detection of increased copy number by PNA probes can be visualized as copies of APP increase (Figure 7—figure supplement 1B,C). Positive internal controls using PNA probes directed against telomere sequences were simultaneously hybridized. (B) Visualization of copy number increases in neuronal nuclei. Green puncta (arrow 1, insets) indicate visualized APP increases. Telomere labeling (red puncta) was present in all nuclei, demonstrating probe accessibility and template fidelity. Lipofuscin (arrow 2, orange puncta) was detected in nuclei, visualized by extensive fluorescence signal in all channels, but was eliminated from quantifications. Limited nuclei displayed two green puncta (arrow 3). V1-6 Refers to the supplemental videos where 3-D projections can be visualized. (C) Graphic representation of non-diseased (blue) and DS (grey) brains displayed limited numbers of threshold-detected increases in APP (Figure 7—source data 1). AD (red) brains displayed significant and consistent threshold-detected increases in APP. (D) Individual threshold-detected APP increases were quantified and plotted on a relative intensity scale (blue diamonds: non-diseased, red diamonds: AD). Dotted line represents the threshold below which APP copy number was undetectable, only limited puncta were identified in non-diseased nuclei. Bars indicate ± SEM, *p < 0.05.DOI: http://dx.doi.org/10.7554/eLife.05116.01610.7554/eLife.05116.017Figure 7—source data 1.DOI: http://dx.doi.org/10.7554/eLife.05116.017
+**Figure 7.:** (A) Peptide nucleic acid probes (PNA) were developed against nine separate sites on APP (4 sites within exon 3 and 5 sites within exon 14). Each PNA probe consists of a peptide backbone conjugated to a single fluorophore, with separately conjugated nucleotides, substantially increasing specificity (Lansdorp et al., 1996). Single copies of APP are not detectable because of fluorophore detection limits. Detection of increased copy number by PNA probes can be visualized as copies of APP increase (Figure 7—figure supplement 1B,C). Positive internal controls using PNA probes directed against telomere sequences were simultaneously hybridized. (B) Visualization of copy number increases in neuronal nuclei. Green puncta (arrow 1, insets) indicate visualized APP increases. Telomere labeling (red puncta) was present in all nuclei, demonstrating probe accessibility and template fidelity. Lipofuscin (arrow 2, orange puncta) was detected in nuclei, visualized by extensive fluorescence signal in all channels, but was eliminated from quantifications. Limited nuclei displayed two green puncta (arrow 3). V1-6 Refers to the supplemental videos where 3-D projections can be visualized. (C) Graphic representation of non-diseased (blue) and DS (grey) brains displayed limited numbers of threshold-detected increases in APP (Figure 7—source data 1). AD (red) brains displayed significant and consistent threshold-detected increases in APP. (D) Individual threshold-detected APP increases were quantified and plotted on a relative intensity scale (blue diamonds: non-diseased, red diamonds: AD). Dotted line represents the threshold below which APP copy number was undetectable, only limited puncta were identified in non-diseased nuclei. Bars indicate ± SEM, *p < 0.05.
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/05116/elife-05116-fig7-figsupp1-v1.jpg)
 
-**Figure 7—figure supplement 1.:** (A) PNA probe specificity was verified via dot blots of APP sequence followed by PNA probe hybridization and immunoblotting against the Alexa-488 fluorophor. Probes designed against exon 3 exhibited specific binding to the 5′ region of APP, and probes designed against exon 14 exhibited specific binding to the 3′ region of APP, while probes did not display significant binding to non-specific sequences. (B) Plasmids containing all 9 APP PNA binding sites were blotted at 1× (1.8 µg), 2× (3.6 µg), and 3× (5.4 µg) DNA concentration, and PNA probes were hybridized and an empty plasmid at 1.8 μg was used for a negative control in lane 1. Fluorescent output demonstrated a linear increase with increasing DNA concentration. (C) 10 μg of plasmids containing 0, 3, 6, and 9 copies of the APP PNA binding sites was blotted onto membrane and probes were hybridized. Fluorescent output showed an expected linear increase with the number of PNA probe binding sites. (D) Quantification of the variable APP signal increases observed across four brains. (E) Representative APP signals visualized and verified using super-resolution 3D projections displayed a range of variable intensities.DOI: http://dx.doi.org/10.7554/eLife.05116.018
+**Figure 7—figure supplement 1.:** (A) PNA probe specificity was verified via dot blots of APP sequence followed by PNA probe hybridization and immunoblotting against the Alexa-488 fluorophor. Probes designed against exon 3 exhibited specific binding to the 5′ region of APP, and probes designed against exon 14 exhibited specific binding to the 3′ region of APP, while probes did not display significant binding to non-specific sequences. (B) Plasmids containing all 9 APP PNA binding sites were blotted at 1× (1.8 µg), 2× (3.6 µg), and 3× (5.4 µg) DNA concentration, and PNA probes were hybridized and an empty plasmid at 1.8 μg was used for a negative control in lane 1. Fluorescent output demonstrated a linear increase with increasing DNA concentration. (C) 10 μg of plasmids containing 0, 3, 6, and 9 copies of the APP PNA binding sites was blotted onto membrane and probes were hybridized. Fluorescent output showed an expected linear increase with the number of PNA probe binding sites. (D) Quantification of the variable APP signal increases observed across four brains. (E) Representative APP signals visualized and verified using super-resolution 3D projections displayed a range of variable intensities.
+
+![Video 1.](https://cdn.elifesciences.org/articles/05116/elife-05116-media1.avi.jpg)
+
+**Video 1.:** Video of 3-D projection from Figure 7B, V1. Green puncta indicating APP increases were infrequently visualized in non-diseased brains. Red puncta indicate telomere labeling with separate telomere-specific PNA probes and were visualized as a positive control for PNA hybridization.
+
+![Video 2.](https://cdn.elifesciences.org/articles/05116/elife-05116-media2.avi.jpg)
+
+**Video 2.:** Video of 3-D projection from Figure 7B, V2. Green puncta indicating APP increases were infrequently visualized in non-diseased brains. Lipofuscin (orange puncta), visualized by extensive fluorescence signal in all channels, was detected in some nuclei, but was excluded from analysis. Red puncta indicate telomere labeling with separate telomere-specific PNA probes and were visualized as a positive control for PNA hybridization.
+
+![Video 3.](https://cdn.elifesciences.org/articles/05116/elife-05116-media3.avi.jpg)
+
+**Video 3.:** Video of 3-D projection from Figure 7B, V3. Green puncta indicating APP increases were infrequently visualized in non-diseased brains. Red puncta indicate telomere labeling with separate telomere-specific PNA probes and were visualized as a positive control for PNA hybridization.
+
+![Video 4.](https://cdn.elifesciences.org/articles/05116/elife-05116-media4.avi.jpg)
+
+**Video 4.:** Video of 3-D projection from Figure 7B, V4. Green puncta indicate visualized APP increases. Red puncta indicate telomere labeling with separate telomere-specific PNA probes and were visualized as a positive control for PNA hybridization.
+
+![Video 5.](https://cdn.elifesciences.org/articles/05116/elife-05116-media5.avi.jpg)
+
+**Video 5.:** Video of 3-D projection from Figure 7B, V5. Green puncta indicate visualized APP increases. Lipofuscin (orange puncta), visualized by extensive fluorescence signal in all channels, was detected in some nuclei, but was excluded from analysis. Red puncta indicate telomere labeling with separate telomere-specific PNA probes and were visualized as a positive control for PNA hybridization.
+
+![Video 6.](https://cdn.elifesciences.org/articles/05116/elife-05116-media6.avi.jpg)
+
+**Video 6.:** Video of 3-D projection from Figure 7B, V6. Green puncta indicate visualized APP increases. Limited nuclei in AD displayed two green puncta. Red puncta indicate telomere labeling with separate telomere-specific PNA probes and were visualized as a positive control for PNA hybridization.
 
 ## Discussion
 
@@ -128,48 +152,1534 @@ Diverse stimuli previously implicated as AD risk factors including age and traum
 
 ## Materials and methods
 
-## Human tissue samples
+### Human tissue samples
 
-All human tissue protocols were approved by the Scripps Office for the Protection of Research Subjects (SOPRS) at The Scripps Research Institute (TSRI) and conform to National Institutes of Health guidelines. Fresh-frozen brain tissue was provided by the NICHD Brain and Tissue Bank for Developmental Disorders at the University of Maryland, the University of California Alzheimer's Disease Research Center (UCI-ADRC), and the Institute for Memory Impairments and Neurological Disorders, the Johns Hopkins School of Medicine Alzheimer's Disease Research Center, and Dr Edward Koo at the University of California, San Diego. Lymphocytes from human peripheral blood were obtained from healthy donors at TSRI's Normal Blood Donor Services. Detailed information about the samples used can be found in the table below (Table 1).10.7554/eLife.05116.025Table 1.Human samples used in each experimentDOI: http://dx.doi.org/10.7554/eLife.05116.025SexAgePaper codeSampleExperimentsPost mortem intervalBraak scoreAlzheimer's disease prefrontal cortex, N = 32F811521D23VIF831562D6UF74AD-131866DTUUF79AD-51868DSTUUF82AD-101875DSTUUF831893D9UF871899D5VIF62AD-91912DSTUUF80AD-81913DTUUF54AD-41916DTBUUF72AD-21921DTBUUF772400D3.7VF80AD-112500DP2.3VIF10150341D19VF9161788D11VF9862405D11VF8962439D11VF7762509D18VIM88AD-1102DSBP3IVM90268D91VM83736D27UM821211D18UM79AD-151252D9UM921748D5.5VM85AD-121861DTUUM85AD-141870DTUUM82AD-32401DSBP3VIM84AD-62499DS3.4VIM63AD-74199DP3VIM8013173D22IVM9430022D20VM9160987D22.5VMean82.1Alzheimer's disease cerebellum, N = 15F74AD-131866DUUF79AD-51868DSUUF82AD-101875DSUUF80AD-81913DUUF62AD-91912DSUUF54AD-41916DBUUF72AD-21921DBUUM88AD-1102DSB3IVM79AD-151252D9UM701625D1UM85AD-121861DUUM85AD-141870DUUM82AD-32401DSB3VIM84AD-62499DS3.4VIM63AD-74199D3VIMean75.9Non-diseased prefrontal cortex, N = 40F74ND-21901DSBP2.3IIF74ND-8299D2.8IIF84ND-3703S5.8IIIF53ND-111379D15IIIF73713*TUUF9560831D9IIF511568P22UF171230P16UF87ND-101502D5IIF8060728D13IIM79ND-9827*DTUUM96ND-11102DSB3.4IIM83ND-52501DB1.7IIM95ND-41301DS3.5IM871471*TUUF711571*TUUM531344*DTUUF93318D2.3VIF92955D20.5IIIF564238D12M704534D28F9111488D16IIF7913188D12.5F9013204D9.5IIF10360329D5IIIF8560428D8.5IIIF9960524D15IIF9562043D20.5M71389M15F83719M17IIIM69946M12M872039M6.3IIIF864546M22M9160772M16IIF8061218M5.5M8761334M8IIM88PDC2MUM80PDC5MUM75PDC8MUMean79.54Non-diseased cebellum, N = 15F74ND-21901DSB2.3IIF74ND-8299D2.8IIF84ND-3703S5.8IIIF771569D8IIIF83719DUUF531379D15IIIF711571DTUUF87ND-101502D5IIM531344DTUUM96ND-11102DSB3.4IIM83ND-52501DB1.7IIM95ND-41301DS3.5IM79ND-9827DUUM871471DUUF864546M22UMean78.8DS/AD, N = 3F51DS-1M1864B19UF47DS-2M3233S24UF44DS-31258S13UMean47.3LYM, N = 21F405162DN/AN/AF403963DN/AN/AF634984DN/AN/AF604519DN/AN/AM55Lym 1DN/AN/AM354651DN/AN/A29DN/AN/A187DN/AN/A4781DN/AN/A4801DN/AN/A4903DN/AN/AM285259DN/AN/AM5683MF521344MF564603MM544609MM58Lym 2MF51Lym 3MM52Lym 4MMean50.0MSamples in bold are paired CBL and CTX.*Denotes mid frontal gyrus (MFG), D = DNA content analyses, S= Small population qPCR, T = FISH Analysis, B = single cell qPCR on Biomark HD, P=PNA FISH, M = Westra et al. DNA content metadata.
+All human tissue protocols were approved by the Scripps Office for the Protection of Research Subjects (SOPRS) at The Scripps Research Institute (TSRI) and conform to National Institutes of Health guidelines. Fresh-frozen brain tissue was provided by the NICHD Brain and Tissue Bank for Developmental Disorders at the University of Maryland, the University of California Alzheimer's Disease Research Center (UCI-ADRC), and the Institute for Memory Impairments and Neurological Disorders, the Johns Hopkins School of Medicine Alzheimer's Disease Research Center, and Dr Edward Koo at the University of California, San Diego. Lymphocytes from human peripheral blood were obtained from healthy donors at TSRI's Normal Blood Donor Services. Detailed information about the samples used can be found in the table below (Table 1).
 
-## Flow cytometry (FCM) and fluorescence-activated cell sorting (FACS)
+**Table 1.**
+ Human samples used in each experiment
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>Paper code</th>
+      <th>Sample</th>
+      <th>Experiments</th>
+      <th>Post mortem interval</th>
+      <th>Braak score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="33">Alzheimer's disease prefrontal cortex, N = 32</td>
+      <td>F</td>
+      <td>81</td>
+      <td></td>
+      <td>1521</td>
+      <td>D</td>
+      <td>23</td>
+      <td>VI</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>83</td>
+      <td></td>
+      <td>1562</td>
+      <td>D</td>
+      <td>6</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>74</td>
+      <td>AD-13</td>
+      <td>1866</td>
+      <td>DT</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>79</td>
+      <td>AD-5</td>
+      <td>1868</td>
+      <td>DST</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>82</td>
+      <td>AD-10</td>
+      <td>1875</td>
+      <td>DST</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>83</td>
+      <td></td>
+      <td>1893</td>
+      <td>D</td>
+      <td>9</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>87</td>
+      <td></td>
+      <td>1899</td>
+      <td>D</td>
+      <td>5</td>
+      <td>VI</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>62</td>
+      <td>AD-9</td>
+      <td>1912</td>
+      <td>DST</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>80</td>
+      <td>AD-8</td>
+      <td>1913</td>
+      <td>DT</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>54</td>
+      <td>AD-4</td>
+      <td>1916</td>
+      <td>DTB</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>72</td>
+      <td>AD-2</td>
+      <td>1921</td>
+      <td>DTB</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>77</td>
+      <td></td>
+      <td>2400</td>
+      <td>D</td>
+      <td>3.7</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>80</td>
+      <td>AD-11</td>
+      <td>2500</td>
+      <td>DP</td>
+      <td>2.3</td>
+      <td>VI</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>101</td>
+      <td></td>
+      <td>50341</td>
+      <td>D</td>
+      <td>19</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>91</td>
+      <td></td>
+      <td>61788</td>
+      <td>D</td>
+      <td>11</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>98</td>
+      <td></td>
+      <td>62405</td>
+      <td>D</td>
+      <td>11</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>89</td>
+      <td></td>
+      <td>62439</td>
+      <td>D</td>
+      <td>11</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>77</td>
+      <td></td>
+      <td>62509</td>
+      <td>D</td>
+      <td>18</td>
+      <td>VI</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>88</td>
+      <td>AD-1</td>
+      <td>102</td>
+      <td>DSBP</td>
+      <td>3</td>
+      <td>IV</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>90</td>
+      <td></td>
+      <td>268</td>
+      <td>D</td>
+      <td>91</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>83</td>
+      <td></td>
+      <td>736</td>
+      <td>D</td>
+      <td>27</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>82</td>
+      <td></td>
+      <td>1211</td>
+      <td>D</td>
+      <td>18</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>79</td>
+      <td>AD-15</td>
+      <td>1252</td>
+      <td>D</td>
+      <td>9</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>92</td>
+      <td></td>
+      <td>1748</td>
+      <td>D</td>
+      <td>5.5</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>85</td>
+      <td>AD-12</td>
+      <td>1861</td>
+      <td>DT</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>85</td>
+      <td>AD-14</td>
+      <td>1870</td>
+      <td>DT</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>82</td>
+      <td>AD-3</td>
+      <td>2401</td>
+      <td>DSBP</td>
+      <td>3</td>
+      <td>VI</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>84</td>
+      <td>AD-6</td>
+      <td>2499</td>
+      <td>DS</td>
+      <td>3.4</td>
+      <td>VI</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>63</td>
+      <td>AD-7</td>
+      <td>4199</td>
+      <td>DP</td>
+      <td>3</td>
+      <td>VI</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>80</td>
+      <td></td>
+      <td>13173</td>
+      <td>D</td>
+      <td>22</td>
+      <td>IV</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>94</td>
+      <td></td>
+      <td>30022</td>
+      <td>D</td>
+      <td>20</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>91</td>
+      <td></td>
+      <td>60987</td>
+      <td>D</td>
+      <td>22.5</td>
+      <td>V</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>82.1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="16">Alzheimer's disease cerebellum, N = 15</td>
+      <td>F</td>
+      <td>74</td>
+      <td>AD-13</td>
+      <td>1866</td>
+      <td>D</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>79</td>
+      <td>AD-5</td>
+      <td>1868</td>
+      <td>DS</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>82</td>
+      <td>AD-10</td>
+      <td>1875</td>
+      <td>DS</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>80</td>
+      <td>AD-8</td>
+      <td>1913</td>
+      <td>D</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>62</td>
+      <td>AD-9</td>
+      <td>1912</td>
+      <td>DS</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>54</td>
+      <td>AD-4</td>
+      <td>1916</td>
+      <td>DB</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>72</td>
+      <td>AD-2</td>
+      <td>1921</td>
+      <td>DB</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>88</td>
+      <td>AD-1</td>
+      <td>102</td>
+      <td>DSB</td>
+      <td>3</td>
+      <td>IV</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>79</td>
+      <td>AD-15</td>
+      <td>1252</td>
+      <td>D</td>
+      <td>9</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>70</td>
+      <td></td>
+      <td>1625</td>
+      <td>D</td>
+      <td>1</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>85</td>
+      <td>AD-12</td>
+      <td>1861</td>
+      <td>D</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>85</td>
+      <td>AD-14</td>
+      <td>1870</td>
+      <td>D</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>82</td>
+      <td>AD-3</td>
+      <td>2401</td>
+      <td>DSB</td>
+      <td>3</td>
+      <td>VI</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>84</td>
+      <td>AD-6</td>
+      <td>2499</td>
+      <td>DS</td>
+      <td>3.4</td>
+      <td>VI</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>63</td>
+      <td>AD-7</td>
+      <td>4199</td>
+      <td>D</td>
+      <td>3</td>
+      <td>VI</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>75.9</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="40">Non-diseased prefrontal cortex, N = 40</td>
+      <td>F</td>
+      <td>74</td>
+      <td>ND-2</td>
+      <td>1901</td>
+      <td>DSBP</td>
+      <td>2.3</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>74</td>
+      <td>ND-8</td>
+      <td>299</td>
+      <td>D</td>
+      <td>2.8</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>84</td>
+      <td>ND-3</td>
+      <td>703</td>
+      <td>S</td>
+      <td>5.8</td>
+      <td>III</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>53</td>
+      <td>ND-11</td>
+      <td>1379</td>
+      <td>D</td>
+      <td>15</td>
+      <td>III</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>73</td>
+      <td></td>
+      <td>713*</td>
+      <td>T</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>95</td>
+      <td></td>
+      <td>60831</td>
+      <td>D</td>
+      <td>9</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>51</td>
+      <td></td>
+      <td>1568</td>
+      <td>P</td>
+      <td>22</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>17</td>
+      <td></td>
+      <td>1230</td>
+      <td>P</td>
+      <td>16</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>87</td>
+      <td>ND-10</td>
+      <td>1502</td>
+      <td>D</td>
+      <td>5</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>80</td>
+      <td></td>
+      <td>60728</td>
+      <td>D</td>
+      <td>13</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>79</td>
+      <td>ND-9</td>
+      <td>827*</td>
+      <td>DT</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>96</td>
+      <td>ND-1</td>
+      <td>1102</td>
+      <td>DSB</td>
+      <td>3.4</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>83</td>
+      <td>ND-5</td>
+      <td>2501</td>
+      <td>DB</td>
+      <td>1.7</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>95</td>
+      <td>ND-4</td>
+      <td>1301</td>
+      <td>DS</td>
+      <td>3.5</td>
+      <td>I</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>87</td>
+      <td></td>
+      <td>1471*</td>
+      <td>T</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>71</td>
+      <td></td>
+      <td>1571*</td>
+      <td>T</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>53</td>
+      <td></td>
+      <td>1344*</td>
+      <td>DT</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>93</td>
+      <td></td>
+      <td>318</td>
+      <td>D</td>
+      <td>2.3</td>
+      <td>VI</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>92</td>
+      <td></td>
+      <td>955</td>
+      <td>D</td>
+      <td>20.5</td>
+      <td>III</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>56</td>
+      <td></td>
+      <td>4238</td>
+      <td>D</td>
+      <td>12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>70</td>
+      <td></td>
+      <td>4534</td>
+      <td>D</td>
+      <td>28</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>91</td>
+      <td></td>
+      <td>11488</td>
+      <td>D</td>
+      <td>16</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>79</td>
+      <td></td>
+      <td>13188</td>
+      <td>D</td>
+      <td>12.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>90</td>
+      <td></td>
+      <td>13204</td>
+      <td>D</td>
+      <td>9.5</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>103</td>
+      <td></td>
+      <td>60329</td>
+      <td>D</td>
+      <td>5</td>
+      <td>III</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>85</td>
+      <td></td>
+      <td>60428</td>
+      <td>D</td>
+      <td>8.5</td>
+      <td>III</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>99</td>
+      <td></td>
+      <td>60524</td>
+      <td>D</td>
+      <td>15</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>95</td>
+      <td></td>
+      <td>62043</td>
+      <td>D</td>
+      <td>20.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>71</td>
+      <td></td>
+      <td>389</td>
+      <td>M</td>
+      <td>15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>83</td>
+      <td></td>
+      <td>719</td>
+      <td>M</td>
+      <td>17</td>
+      <td>III</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>69</td>
+      <td></td>
+      <td>946</td>
+      <td>M</td>
+      <td>12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>87</td>
+      <td></td>
+      <td>2039</td>
+      <td>M</td>
+      <td>6.3</td>
+      <td>III</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>86</td>
+      <td></td>
+      <td>4546</td>
+      <td>M</td>
+      <td>22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>91</td>
+      <td></td>
+      <td>60772</td>
+      <td>M</td>
+      <td>16</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>80</td>
+      <td></td>
+      <td>61218</td>
+      <td>M</td>
+      <td>5.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>87</td>
+      <td></td>
+      <td>61334</td>
+      <td>M</td>
+      <td>8</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>88</td>
+      <td></td>
+      <td>PDC2</td>
+      <td>M</td>
+      <td>U</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>80</td>
+      <td></td>
+      <td>PDC5</td>
+      <td>M</td>
+      <td>U</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>75</td>
+      <td></td>
+      <td>PDC8</td>
+      <td>M</td>
+      <td>U</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>79.54</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="8">Non-diseased cebellum, N = 15</td>
+      <td>F</td>
+      <td>74</td>
+      <td>ND-2</td>
+      <td>1901</td>
+      <td>DSB</td>
+      <td>2.3</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>74</td>
+      <td>ND-8</td>
+      <td>299</td>
+      <td>D</td>
+      <td>2.8</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>84</td>
+      <td>ND-3</td>
+      <td>703</td>
+      <td>S</td>
+      <td>5.8</td>
+      <td>III</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>77</td>
+      <td></td>
+      <td>1569</td>
+      <td>D</td>
+      <td>8</td>
+      <td>III</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>83</td>
+      <td></td>
+      <td>719</td>
+      <td>D</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>53</td>
+      <td></td>
+      <td>1379</td>
+      <td>D</td>
+      <td>15</td>
+      <td>III</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>71</td>
+      <td></td>
+      <td>1571</td>
+      <td>DT</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>87</td>
+      <td>ND-10</td>
+      <td>1502</td>
+      <td>D</td>
+      <td>5</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td rowspan="8"></td>
+      <td>M</td>
+      <td>53</td>
+      <td></td>
+      <td>1344</td>
+      <td>DT</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>96</td>
+      <td>ND-1</td>
+      <td>1102</td>
+      <td>DSB</td>
+      <td>3.4</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>83</td>
+      <td>ND-5</td>
+      <td>2501</td>
+      <td>DB</td>
+      <td>1.7</td>
+      <td>II</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>95</td>
+      <td>ND-4</td>
+      <td>1301</td>
+      <td>DS</td>
+      <td>3.5</td>
+      <td>I</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>79</td>
+      <td>ND-9</td>
+      <td>827</td>
+      <td>D</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>87</td>
+      <td></td>
+      <td>1471</td>
+      <td>D</td>
+      <td>U</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>86</td>
+      <td></td>
+      <td>4546</td>
+      <td>M</td>
+      <td>22</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>78.8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">DS/AD, N = 3</td>
+      <td>F</td>
+      <td>51</td>
+      <td>DS-1</td>
+      <td>M1864</td>
+      <td>B</td>
+      <td>19</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>47</td>
+      <td>DS-2</td>
+      <td>M3233</td>
+      <td>S</td>
+      <td>24</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>44</td>
+      <td>DS-3</td>
+      <td>1258</td>
+      <td>S</td>
+      <td>13</td>
+      <td>U</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>47.3</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="10">LYM, N = 21</td>
+      <td>F</td>
+      <td>40</td>
+      <td></td>
+      <td>5162</td>
+      <td>D</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>40</td>
+      <td></td>
+      <td>3963</td>
+      <td>D</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>63</td>
+      <td></td>
+      <td>4984</td>
+      <td>D</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>60</td>
+      <td></td>
+      <td>4519</td>
+      <td>D</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>55</td>
+      <td></td>
+      <td>Lym 1</td>
+      <td>D</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>35</td>
+      <td></td>
+      <td>4651</td>
+      <td>D</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>29</td>
+      <td>D</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>187</td>
+      <td>D</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>4781</td>
+      <td>D</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>4801</td>
+      <td>D</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td rowspan="10"></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>4903</td>
+      <td>D</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>28</td>
+      <td></td>
+      <td>5259</td>
+      <td>D</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>56</td>
+      <td></td>
+      <td>83</td>
+      <td>M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>52</td>
+      <td></td>
+      <td>1344</td>
+      <td>M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>56</td>
+      <td></td>
+      <td>4603</td>
+      <td>M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>54</td>
+      <td></td>
+      <td>4609</td>
+      <td>M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>58</td>
+      <td></td>
+      <td>Lym 2</td>
+      <td>M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>F</td>
+      <td>51</td>
+      <td></td>
+      <td>Lym 3</td>
+      <td>M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>52</td>
+      <td></td>
+      <td>Lym 4</td>
+      <td>M</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>50.0</td>
+      <td></td>
+      <td></td>
+      <td>M</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Samples in bold are paired CBL and CTX.*Denotes mid frontal gyrus (MFG), D = DNA content analyses, S= Small population qPCR, T = FISH Analysis, B = single cell qPCR on Biomark HD, P=PNA FISH, M = Westra et al. DNA content metadata._
+
+### Flow cytometry (FCM) and fluorescence-activated cell sorting (FACS)
 
 Human brain nuclei were isolated and prepared for FCM and FACS as previously described (Westra et al., 2008, 2010). Isolated nuclei were fixed with 2% paraformaldehyde (or 70% ethanol for microfluidic qPCR), labeled with mouse anti-NeuN antibody (1:100) (Millipore, Germany) and Alexa Fluor 488 goat anti-mouse IgG secondary (1:250) (Life Technologies, Carlsbad, CA), and counterstained with propidium iodide (50 μg/ml) (Sigma, St. Louis, MO) in solution containing 50 μg/ml RNase A (Qiagen, Valencia, CA) and chicken erythrocyte nuclei (CEN) (Biosure, Grass Valley, CA). Electronically gated diploid neuronal nuclei, determined by PI fluorescence and immunolabeling, were analyzed and sorted either in bulk for standard qPCR and PNA-FISH or singly in 96-well plates for microfluidics-based qPCR. FCM and FACS were performed at the TSRI Flow Cytometry Core using a Becton Dickinson (BD Biosciences, San Jose, CA) LSRII and FACS-Aria II, respectively. Post hoc DNA content analyses were performed using FlowJo software (TreeStar Inc., Ashland, OR).
 
-## DNA content assessment by whole genome amplification
+### DNA content assessment by whole genome amplification
 
 For validation of DNA content analyses, nuclei were sorted by FACS in populations of 1000, 500, and 100 into 96-well plates according to relative DNA content (Figure 2A). Nuclei were denatured by multiple freeze–thaw cycles and potassium hydroxide, the solution was neutralized, and phi29 DNA polymerase (Illumina, San Diego, CA), dNTPs, SYBR green, and random hexamers (IDT, Coralville, IA) were added (Gole et al., 2013). The MDA reaction was performed at 30°C and SYBR Green intensity was recorded every 2 min on a QuantStudio RT-PCR 12K Flex (Life Technologies, Carlsbad, CA). 12 replicates were run and averaged for each group.
 
-## Quantitative PCR primers
+### Quantitative PCR primers
 
-All qPCR was performed according to MIQE guidelines (Bustin et al., 2009). For standard qPCR, primers against the APP gene exon 14 and reference genes SEMA4A, CCL18, and PCDH11X were designed in house and optimized to an annealing temperature of 59°C using Primer3 software (University of Massachusetts Medical School) and synthesized by Valuegene (San Diego, CA) (Table 2). For microfluidics-based qPCR, TaqMan assays against APP exons 3 and 14 (178 kb apart) (designed from NCBI Reference Sequence: NG_007376.1), SEMA4A and PCDH11X were synthesized by Applied Biosystems (Life Technologies, Carlsbad, CA) or Integrated DNA Technologies (APP exon 3) (San Diego, CA) and optimized to an annealing temperature of 60°C. Primers were assessed in silico to determine specificity of the primer set for a single genomic region and for the presence of SNPs in the targeted genomic region which could decrease primer binding and amplification efficiency. The specificity of all qPCR assays was assessed by gel electrophoresis to confirm a single PCR product of the expected length and sequenced to confirm amplification of the expected product.10.7554/eLife.05116.026Table 2.Primers used for small population and single nuclei qPCRDOI: http://dx.doi.org/10.7554/eLife.05116.026GeneProteinLocusAssay typePrimer sequenceProbeProduct lengthEfficiencyAPP, Exon 14Amyloid precursor protein21q21.3SYBR GreenF-TGCACGTGAAAGCAGTTGAAG, R-AAAGATGGCATGAGAGCATCGN/A2140.973SEMA4ASemaphorin 4A1q22SYBR GreenF- ATGCCCAGGGTCAGATACTAT, R-TTCTCCGAGATCCTCTGTTTCN/A1770.997CCL18Chemokine (C–C motif) ligand 1817q11.2SYBR GreenF-TTCCTGACTCTCAAGGAAAGG, R-CTGGCACTTACATGACACCTGN/A2091.006PCDH11XProtocadherin 11 X-linkedXq21.3SYBR GreenF-TCTTTTGGTCAGTGTTGTGCG, R-CAACAAGTCGCCTATCAGGACN/A1880.993APP, Exon 14Amyloid precursor protein21q21.3TaqManCGGTCAAAGATGGCATGAGAGCATC*, Assay Hs01255859_cnFAM-MGB911.040APP, Exon 3Amyloid precursor protein21q21.3TaqManF-GCACTTCTGGTCCCAAGCAT, R-CCAGTTCTGGATGGTCACTGROX-IB1400.992SEMA4ASemaphorin 4A1q22TaqManGTTCAAGGGTATGTGAGGTGAGATG*, Assay Hs00329046_cn_VICVIC-MGB901.016*Denotes probe sequence provided by Life Technologies.
+All qPCR was performed according to MIQE guidelines (Bustin et al., 2009). For standard qPCR, primers against the APP gene exon 14 and reference genes SEMA4A, CCL18, and PCDH11X were designed in house and optimized to an annealing temperature of 59°C using Primer3 software (University of Massachusetts Medical School) and synthesized by Valuegene (San Diego, CA) (Table 2). For microfluidics-based qPCR, TaqMan assays against APP exons 3 and 14 (178 kb apart) (designed from NCBI Reference Sequence: NG_007376.1), SEMA4A and PCDH11X were synthesized by Applied Biosystems (Life Technologies, Carlsbad, CA) or Integrated DNA Technologies (APP exon 3) (San Diego, CA) and optimized to an annealing temperature of 60°C. Primers were assessed in silico to determine specificity of the primer set for a single genomic region and for the presence of SNPs in the targeted genomic region which could decrease primer binding and amplification efficiency. The specificity of all qPCR assays was assessed by gel electrophoresis to confirm a single PCR product of the expected length and sequenced to confirm amplification of the expected product.
+
+**Table 2.**
+ Primers used for small population and single nuclei qPCR
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Protein</th>
+      <th>Locus</th>
+      <th>Assay type</th>
+      <th>Primer sequence</th>
+      <th>Probe</th>
+      <th>Product length</th>
+      <th>Efficiency</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>APP, Exon 14</td>
+      <td>Amyloid precursor protein</td>
+      <td>21q21.3</td>
+      <td>SYBR Green</td>
+      <td>F-TGCACGTGAAAGCAGTTGAAG, R-AAAGATGGCATGAGAGCATCG</td>
+      <td>N/A</td>
+      <td>214</td>
+      <td>0.973</td>
+    </tr>
+    <tr>
+      <td>SEMA4A</td>
+      <td>Semaphorin 4A</td>
+      <td>1q22</td>
+      <td>SYBR Green</td>
+      <td>F- ATGCCCAGGGTCAGATACTAT, R-TTCTCCGAGATCCTCTGTTTC</td>
+      <td>N/A</td>
+      <td>177</td>
+      <td>0.997</td>
+    </tr>
+    <tr>
+      <td>CCL18</td>
+      <td>Chemokine (C–C motif) ligand 18</td>
+      <td>17q11.2</td>
+      <td>SYBR Green</td>
+      <td>F-TTCCTGACTCTCAAGGAAAGG, R-CTGGCACTTACATGACACCTG</td>
+      <td>N/A</td>
+      <td>209</td>
+      <td>1.006</td>
+    </tr>
+    <tr>
+      <td>PCDH11X</td>
+      <td>Protocadherin 11 X-linked</td>
+      <td>Xq21.3</td>
+      <td>SYBR Green</td>
+      <td>F-TCTTTTGGTCAGTGTTGTGCG, R-CAACAAGTCGCCTATCAGGAC</td>
+      <td>N/A</td>
+      <td>188</td>
+      <td>0.993</td>
+    </tr>
+    <tr>
+      <td>APP, Exon 14</td>
+      <td>Amyloid precursor protein</td>
+      <td>21q21.3</td>
+      <td>TaqMan</td>
+      <td>CGGTCAAAGATGGCATGAGAGCATC*, Assay Hs01255859_cn</td>
+      <td>FAM-MGB</td>
+      <td>91</td>
+      <td>1.040</td>
+    </tr>
+    <tr>
+      <td>APP, Exon 3</td>
+      <td>Amyloid precursor protein</td>
+      <td>21q21.3</td>
+      <td>TaqMan</td>
+      <td>F-GCACTTCTGGTCCCAAGCAT, R-CCAGTTCTGGATGGTCACTG</td>
+      <td>ROX-IB</td>
+      <td>140</td>
+      <td>0.992</td>
+    </tr>
+    <tr>
+      <td>SEMA4A</td>
+      <td>Semaphorin 4A</td>
+      <td>1q22</td>
+      <td>TaqMan</td>
+      <td>GTTCAAGGGTATGTGAGGTGAGATG*, Assay Hs00329046_cn_VIC</td>
+      <td>VIC-MGB</td>
+      <td>90</td>
+      <td>1.016</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Denotes probe sequence provided by Life Technologies._
 
 Standard curves were used to determine the amplification efficiency of all primer sets used for qPCR. For standard qPCR primers, curves were created by serially diluting purified pGEM-T Easy plasmid DNA (Promega, Madison, WI) containing a single copy of the gene of interest (Pfaffl, 2001); serial dilutions of genomic DNA were used for TaqMan primers (D'Haene et al., 2010). DNA concentrations were converted to gene copy number by calculating the weight (in g/mol) of the DNA used for generating the standard curve. A linear regression of the curve comparing the log of the gene copy number vs the crossing threshold (Ct) of the primer set was determined from primer efficiency (E) = 10−1/slope − 1 (Pfaffl, 2001). Only standard curves with R2 values of greater than 0.99 were used.
 
-## Standard qPCR on small neuronal populations
+### Standard qPCR on small neuronal populations
 
 Genomic DNA from bulk-sorted nuclei (described above) was isolated using the DNeasy Blood and Tissue Kit (Qiagen, Valencia, CA) and quantified using Quant-iT PicoGreen (Life Technologies, Carlsbad, CA); genomic DNA was stored at −20°C before use. Standard qPCR reactions using SYBR Green (Promega, Madison, WI) fluorescence detection (ex: 494 nm; em: 529 nm) were performed in triplicate using 0.5 ng of sample gDNA per reaction. Reactions were run on a Rotor-Gene RG-3000 72-well thermocycler (Qiagen, Valencia, CA) using GoTaq qPCR master mix (Promega, Madison, WI) and the following parameters: denaturation (95°C for 5 min), amplification (95°C for 25 s, 59°C for 30 s and 72°C for 30 s), and quantification through 40 cycles; and a melting curve determination (55–99°C, 30 s on the first step, 5 s for each subsequent step). The crossing threshold (Ct) was determined for each primer set within the linear region of the amplification curve. Down Syndrome nuclei were used as a control.
 
-## Microfluidics-based qPCR on single neuronal nuclei
+### Microfluidics-based qPCR on single neuronal nuclei
 
-Single neuronal nuclei from FACS were sorted directly into a 96-well plate containing QuickExtract DNA Extraction Solution (Epicentre, Illumina, San Diego, CA) according to the manufacturer’s instructions. Multiple independent sorts were completed for each group and each individual. Prior to analysis on the Fluidigm Biomark HD (South San Francisco, CA), single neuron genomic DNA was pre-amplified as per Fluidigm protocols (Fan and Quake, 2007; Dube et al., 2008; Qin et al., 2008; Jones et al., 2011; White et al., 2011; Whale et al., 2012) on a Veriti thermocycler (Life Technologies, Carlsbad, CA) using locus-specific Taq-man primer sets (primer Table above) (20× initial concentration, 18 µM primer, 5 µM probe; combined and diluted to 0.2×) (95°C denaturation for 5 min; 18 amplification cycles of a 95°C denaturation for 15 s, followed by a 60°C annealing and extension step for 4 min; and a final extension step at 72°C for 7 min). Locus-specific pre-amplification was confirmed on a Roche LightCycler (Roche Applied Science, Indianapolis, IN) using one targeted primer set prior to analysis on the Biomark 48.48 Dynamic Array integrated fluidic circuit (IFC) (Fluidigm, South San Francisco, CA). Samples were diluted 1:5 and loaded into the 48.48 Dynamic Array IFC according to the manufacturer's protocol. DNA was loaded in triplicate and assays in sextuplicate for a total of 18 replicates per assay per nucleus. Samples were run across multiple arrays for quality control between runs (Table 3) and multiple individuals were run on each array. The thermocycling program was performed on the Biomark: 95°C for 10 min, then 55 cycles of 95°C denaturation, and 60°C annealing and extension. Fluorescent probes used for these assays were 5′-FAM or 5′-VIC with a 3′-minor groove binding (MGB) non-fluorescent quencher, or 5′-ROX with a 3′ Iowa Black quencher. Ct values were determined using Fluidigm's Real-Time PCR Analysis Software. Only nuclei with 10 or more replicates per assay were used for analysis.10.7554/eLife.05116.027Table 3.Quality control between 48.48 Dynamic Array runsDOI: http://dx.doi.org/10.7554/eLife.05116.027Cell 1Cell 2Cell 3Cell 4Cell 5Cell 6Cell 7Cell 8APP 14Run 121.3718.7718.0218.3417.1119.3320.1218.02Run 220.6018.7718.1418.4117.2519.5020.6018.26APP3Run 122.7920.3518.5319.11Run 221.9719.8418.6519.28SEMA4ARun 125.5424.2922.4424.2322.8125.7424.4624.67Run 225.2624.5323.9224.3923.0325.4224.1124.30
+Single neuronal nuclei from FACS were sorted directly into a 96-well plate containing QuickExtract DNA Extraction Solution (Epicentre, Illumina, San Diego, CA) according to the manufacturer’s instructions. Multiple independent sorts were completed for each group and each individual. Prior to analysis on the Fluidigm Biomark HD (South San Francisco, CA), single neuron genomic DNA was pre-amplified as per Fluidigm protocols (Fan and Quake, 2007; Dube et al., 2008; Qin et al., 2008; Jones et al., 2011; White et al., 2011; Whale et al., 2012) on a Veriti thermocycler (Life Technologies, Carlsbad, CA) using locus-specific Taq-man primer sets (primer Table above) (20× initial concentration, 18 µM primer, 5 µM probe; combined and diluted to 0.2×) (95°C denaturation for 5 min; 18 amplification cycles of a 95°C denaturation for 15 s, followed by a 60°C annealing and extension step for 4 min; and a final extension step at 72°C for 7 min). Locus-specific pre-amplification was confirmed on a Roche LightCycler (Roche Applied Science, Indianapolis, IN) using one targeted primer set prior to analysis on the Biomark 48.48 Dynamic Array integrated fluidic circuit (IFC) (Fluidigm, South San Francisco, CA). Samples were diluted 1:5 and loaded into the 48.48 Dynamic Array IFC according to the manufacturer's protocol. DNA was loaded in triplicate and assays in sextuplicate for a total of 18 replicates per assay per nucleus. Samples were run across multiple arrays for quality control between runs (Table 3) and multiple individuals were run on each array. The thermocycling program was performed on the Biomark: 95°C for 10 min, then 55 cycles of 95°C denaturation, and 60°C annealing and extension. Fluorescent probes used for these assays were 5′-FAM or 5′-VIC with a 3′-minor groove binding (MGB) non-fluorescent quencher, or 5′-ROX with a 3′ Iowa Black quencher. Ct values were determined using Fluidigm's Real-Time PCR Analysis Software. Only nuclei with 10 or more replicates per assay were used for analysis.
 
-## Quantitative PCR analysis
+**Table 3.**
+ Quality control between 48.48 Dynamic Array runs
 
-For both qPCR strategies, relative copy number (RCN) for a diploid sample was calculated as RCN = 2 × (1 + E)−ΔΔCt where E is primer efficiency (E = 10−1/slope − 1) (Weaver et al., 2010; Pfaffl, 2001; D'Haene et al., 2010; Livak and Schmittgen, 2001). Paired cerebellar samples were used as a calibrator to determine ΔΔCt values. For single cell RCN determinations, cerebellar ΔCt values for the paired cerebellum were averaged. RCNs were modeled for each copy number 1–6, assuming a system standard deviation of 0.25 and a 95% CI equal to the standard error of the mean multiplied by the critical t value for a two-tailed t-distribution (degrees of freedom = 68) with p = 0.05 (Weaver et al., 2010). 95% confidence interval (CI) was also determined for the RCN of each assay for each single nucleus giving RCN = 2 × (1 + E)−ΔΔCt ± CI, and the upper and lower bounds were used to call copy numbers for APP exons 3 and 14 such that a CI that overlapped with the modeled RCN range was considered as belonging in that copy number bin (See Table 4 for modeled upper and lower bounds). Copy number bins were 1–6 and >6, as beyond 6 copies the CIs for the given degrees of freedom begin to overlap, allowing for assessments of significant increases in copy number but limiting the ability to distinguish between nuclei with, for example, 8 vs 9 copies. There was high concordance between the APP exons 3 and 14 demonstrating minimal amplification bias between the primer sets.10.7554/eLife.05116.028Table 4.Confidence Intervals for (CI) calling Copy Number (CN)DOI: http://dx.doi.org/10.7554/eLife.05116.028CNCIRCN, value1Lower0.92156Upper1.085122Lower1.84312Upper2.170233Lower2.76468Upper3.255354Lower3.68624Upper4.340475Lower4.60780Upper5.425596Lower5.52936Upper6.51070
 
-## Statistical analysis
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Cell 1</th>
+      <th>Cell 2</th>
+      <th>Cell 3</th>
+      <th>Cell 4</th>
+      <th>Cell 5</th>
+      <th>Cell 6</th>
+      <th>Cell 7</th>
+      <th>Cell 8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">APP 14</td>
+      <td>Run 1</td>
+      <td>21.37</td>
+      <td>18.77</td>
+      <td>18.02</td>
+      <td>18.34</td>
+      <td>17.11</td>
+      <td>19.33</td>
+      <td>20.12</td>
+      <td>18.02</td>
+    </tr>
+    <tr>
+      <td>Run 2</td>
+      <td>20.60</td>
+      <td>18.77</td>
+      <td>18.14</td>
+      <td>18.41</td>
+      <td>17.25</td>
+      <td>19.50</td>
+      <td>20.60</td>
+      <td>18.26</td>
+    </tr>
+    <tr>
+      <td rowspan="2">APP3</td>
+      <td>Run 1</td>
+      <td>22.79</td>
+      <td>20.35</td>
+      <td>18.53</td>
+      <td>19.11</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Run 2</td>
+      <td>21.97</td>
+      <td>19.84</td>
+      <td>18.65</td>
+      <td>19.28</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">SEMA4A</td>
+      <td>Run 1</td>
+      <td>25.54</td>
+      <td>24.29</td>
+      <td>22.44</td>
+      <td>24.23</td>
+      <td>22.81</td>
+      <td>25.74</td>
+      <td>24.46</td>
+      <td>24.67</td>
+    </tr>
+    <tr>
+      <td>Run 2</td>
+      <td>25.26</td>
+      <td>24.53</td>
+      <td>23.92</td>
+      <td>24.39</td>
+      <td>23.03</td>
+      <td>25.42</td>
+      <td>24.11</td>
+      <td>24.30</td>
+    </tr>
+  </tbody>
+</table>
+
+### Quantitative PCR analysis
+
+For both qPCR strategies, relative copy number (RCN) for a diploid sample was calculated as RCN = 2 × (1 + E)−ΔΔCt where E is primer efficiency (E = 10−1/slope − 1) (Weaver et al., 2010; Pfaffl, 2001; D'Haene et al., 2010; Livak and Schmittgen, 2001). Paired cerebellar samples were used as a calibrator to determine ΔΔCt values. For single cell RCN determinations, cerebellar ΔCt values for the paired cerebellum were averaged. RCNs were modeled for each copy number 1–6, assuming a system standard deviation of 0.25 and a 95% CI equal to the standard error of the mean multiplied by the critical t value for a two-tailed t-distribution (degrees of freedom = 68) with p = 0.05 (Weaver et al., 2010). 95% confidence interval (CI) was also determined for the RCN of each assay for each single nucleus giving RCN = 2 × (1 + E)−ΔΔCt ± CI, and the upper and lower bounds were used to call copy numbers for APP exons 3 and 14 such that a CI that overlapped with the modeled RCN range was considered as belonging in that copy number bin (See Table 4 for modeled upper and lower bounds). Copy number bins were 1–6 and >6, as beyond 6 copies the CIs for the given degrees of freedom begin to overlap, allowing for assessments of significant increases in copy number but limiting the ability to distinguish between nuclei with, for example, 8 vs 9 copies. There was high concordance between the APP exons 3 and 14 demonstrating minimal amplification bias between the primer sets.
+
+**Table 4.**
+ Confidence Intervals for (CI) calling Copy Number (CN)
+
+
+<table>
+  <thead>
+    <tr>
+      <th>CN</th>
+      <th>CI</th>
+      <th>RCN, value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">1</td>
+      <td>Lower</td>
+      <td>0.92156</td>
+    </tr>
+    <tr>
+      <td>Upper</td>
+      <td>1.08512</td>
+    </tr>
+    <tr>
+      <td rowspan="2">2</td>
+      <td>Lower</td>
+      <td>1.84312</td>
+    </tr>
+    <tr>
+      <td>Upper</td>
+      <td>2.17023</td>
+    </tr>
+    <tr>
+      <td rowspan="2">3</td>
+      <td>Lower</td>
+      <td>2.76468</td>
+    </tr>
+    <tr>
+      <td>Upper</td>
+      <td>3.25535</td>
+    </tr>
+    <tr>
+      <td rowspan="2">4</td>
+      <td>Lower</td>
+      <td>3.68624</td>
+    </tr>
+    <tr>
+      <td>Upper</td>
+      <td>4.34047</td>
+    </tr>
+    <tr>
+      <td rowspan="2">5</td>
+      <td>Lower</td>
+      <td>4.60780</td>
+    </tr>
+    <tr>
+      <td>Upper</td>
+      <td>5.42559</td>
+    </tr>
+    <tr>
+      <td rowspan="2">6</td>
+      <td>Lower</td>
+      <td>5.52936</td>
+    </tr>
+    <tr>
+      <td>Upper</td>
+      <td>6.51070</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical analysis
 
 For DNA content FCM, DNA indices (DIs) were determined by taking the ratio of the mean from the diploid (2N) peak from the brain sample to the mean of the lymphocyte control peak, both normalized to the mean of the CEN standard (Darzynkiewicz and Huang, 2004; Darzynkiewicz et al., 2004; Westra et al., 2010). The percent change was calculated from DI values assuming a 2N diploid would have a DI of 1. p values for comparison of mean percent change, skew and coefficients of variation comparisons were determined by one-way ANOVA and Tukey's multiple comparison tests. Linear regression analysis was used to determine age-percent change correlation. For comparison of average percent change from NeuN-positive vs negative cortical nuclei, or NeuN-positive cortical and cerebellar nuclei, p values were determined by unpaired, two-tailed t-test. For standard qPCR analyses, differences in ΔΔCt ± SEM of APP in the cortex vs cerebellum were assessed in each individual using an unpaired, two-tailed t-test. For single cell qPCR, p values were determined by one-way ANOVA and Tukey's multiple comparison tests.
 
-## Fluorescent in situ hybridization
+### Fluorescent in situ hybridization
 
 Isolated nuclei were stained with DAPI and hybridized using dual color FISH as described previously (Rehen et al., 2001; Kaushal et al., 2003). FISH paints against the whole q arm of chromosome 21 and a point probe against a region on the q arm of 21 (21q22.13-q22.2) (Vysis. Downer's Grove, IL) were used. The mounted slides were examined on a Zeiss Axioskop microscope and Axiocam CCD camera (Carl Zeiss, Thornwood, NY). Approximately, 500 nuclei were blindly counted for each brain, by two independent observers, on 14 samples (5 non-diseased, 9 diseased). Total AD cortical nuclei were examined using a highly liberal protocol for calling aneusomies whereby borderline FISH profiles suggestive of aneusomy were always included in quantitative assessments. All analyses were conducted blind to the identity of samples by interrogating purified nuclei. The ability of this technique to detect aneuploidy was validated using interphase nuclei from a human trisomy 21 brain (Svendsen et al., 1998) revealing three nuclear signals (Figure 5D,E).
 
-## PNA probe design and dot blot confirmation
+### PNA probe design and dot blot confirmation
 
-Peptide nucleic acid probes were custom designed in coordination with PNA Bio, Inc. Nucleic acid sequences were identified and analyzed in silico to ensure binding to only one specific genomic region on APP. Nine unique probes (4 on exon 3 and 5 on exon 14) were designed and conjugated to a single fluorophore of Alexa-488 (Table 5). Specificity of probes was confirmed using dot blot DNA detection paired with immunoblot via antibodies against the Alexa-488 fluorophore (AF-488) (Figure 5—figure supplement 1A). Increasing DNA concentration (1.8, 3.6 and 5.4 μg) of plasmids containing one copy of each exon (all nine PNA binding sites) was used to verify linear increases in AF-488 signal (Figure 7—figure supplement 1B). For the APP copy number curve, DNA concentration remained consistent but plasmids containing 0, 3, 6, and 9 copies of all APP PNA binding sites were used. DNA was denatured in 0.1 M NaCl at 50°C and dot blotted onto a positively charged nylon membrane in distilled deionized water (DDW) and washed in 6× SSC. DNA was cross linked to the membrane, and PNA probes were hybridized to the membrane using conditions consistent with probe hybridization to nuclei on slides. Briefly, probes were prepared in 20 mM Tris, 60% formamide, and 0.1 μg/ml salmon sperm. Probes and membrane were heated 85°C for 5 min, and probes were added to the membrane and incubated at 85°C for 10 min, followed by room temperature overnight. Membrane was then washed twice at 60°C in 2× SSC + 0.1% Tween-20, and then in successive washes of 2× SSC, 1× SSC, and DDW. Probes were visualized on the membrane using a Typhoon fluorescence scanner from General Electric (Fairfield, CT). For quantification, color data were removed, image was inverted, brightness/contrast was adjusted evenly across the entire image, and average pixel intensity was acquired for a region of interest with a standardized area across sample comparisons.10.7554/eLife.05116.029Table 5.Peptide nucleic acid (PNA) probe sequencesDOI: http://dx.doi.org/10.7554/eLife.05116.029GeneProteinLocusAssaySequenceAPP Exon 3Amyloid precursor protein21q21.3PNA FISHA488-GATGGGTCTTGCACTG, A488-CCCCGCTTGCACCAGTT, A488-GGTTGGCTTCTACCACA, A488-CAGTTCAGGGTAGACAPP Exon 14Amyloid precursor protein21q21.3PNA FISHA488-CTCCATTCACGG, A488-GTGGTTTTCGTTTCGGT, A488-ACTGATCCTTGGTTCAC, A488-ACTGATCCTTGGTTCAC, A488-ACGTCATCTGAATAGTTTelomereN/ATelomeresPNA FISHTelC-Cy3 (F1002, PNA BIO)
+Peptide nucleic acid probes were custom designed in coordination with PNA Bio, Inc. Nucleic acid sequences were identified and analyzed in silico to ensure binding to only one specific genomic region on APP. Nine unique probes (4 on exon 3 and 5 on exon 14) were designed and conjugated to a single fluorophore of Alexa-488 (Table 5). Specificity of probes was confirmed using dot blot DNA detection paired with immunoblot via antibodies against the Alexa-488 fluorophore (AF-488) (Figure 5—figure supplement 1A). Increasing DNA concentration (1.8, 3.6 and 5.4 μg) of plasmids containing one copy of each exon (all nine PNA binding sites) was used to verify linear increases in AF-488 signal (Figure 7—figure supplement 1B). For the APP copy number curve, DNA concentration remained consistent but plasmids containing 0, 3, 6, and 9 copies of all APP PNA binding sites were used. DNA was denatured in 0.1 M NaCl at 50°C and dot blotted onto a positively charged nylon membrane in distilled deionized water (DDW) and washed in 6× SSC. DNA was cross linked to the membrane, and PNA probes were hybridized to the membrane using conditions consistent with probe hybridization to nuclei on slides. Briefly, probes were prepared in 20 mM Tris, 60% formamide, and 0.1 μg/ml salmon sperm. Probes and membrane were heated 85°C for 5 min, and probes were added to the membrane and incubated at 85°C for 10 min, followed by room temperature overnight. Membrane was then washed twice at 60°C in 2× SSC + 0.1% Tween-20, and then in successive washes of 2× SSC, 1× SSC, and DDW. Probes were visualized on the membrane using a Typhoon fluorescence scanner from General Electric (Fairfield, CT). For quantification, color data were removed, image was inverted, brightness/contrast was adjusted evenly across the entire image, and average pixel intensity was acquired for a region of interest with a standardized area across sample comparisons.
 
-## Peptide nucleic acid fluorescent in situ hybridization
+**Table 5.**
+ Peptide nucleic acid (PNA) probe sequences
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Protein</th>
+      <th>Locus</th>
+      <th>Assay</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>APP Exon 3</td>
+      <td>Amyloid precursor protein</td>
+      <td>21q21.3</td>
+      <td>PNA FISH</td>
+      <td>A488-GATGGGTCTTGCACTG, A488-CCCCGCTTGCACCAGTT, A488-GGTTGGCTTCTACCACA, A488-CAGTTCAGGGTAGAC</td>
+    </tr>
+    <tr>
+      <td>APP Exon 14</td>
+      <td>Amyloid precursor protein</td>
+      <td>21q21.3</td>
+      <td>PNA FISH</td>
+      <td>A488-CTCCATTCACGG, A488-GTGGTTTTCGTTTCGGT, A488-ACTGATCCTTGGTTCAC, A488-ACTGATCCTTGGTTCAC, A488-ACGTCATCTGAATAGTT</td>
+    </tr>
+    <tr>
+      <td>Telomere</td>
+      <td>N/A</td>
+      <td>Telomeres</td>
+      <td>PNA FISH</td>
+      <td>TelC-Cy3 (F1002, PNA BIO)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Peptide nucleic acid fluorescent in situ hybridization
 
 Probes were hybridized according to the manufacturer's instructions (Lansdorp et al., 1996). Neuronal nuclei from non-diseased and AD brains were sorted for NeuN positivity and dried onto slides. Slides were washed in PBS, fixed with 4% PFA, and treated with RNase (Qiagen, Valencia, CA) for 20 min at 37°C. Slides were then digested with 200 µg/ml proteinase K (Roche Applied Science, Indianapolis, IN) for 5 min at 37°C. Slides were dehydrated in ethanol series and denatured at 85°C for 5 min. PNA probes in hybridization buffer (20 mM Tris pH 7.4, 60% formamide, 0.1 µg/ml salmon sperm DNA) were then added for 10 min at 85°C. Slides were then removed and placed at room temperature for 2 hr. Slides were then washed twice in 2× SSC + 0.1% tween at 60°C for 30 min each and mounted using progold mounting media. Z-stacks were acquired using a Nikon N-SIM (structured illumination microscopy) super resolution microscope with an Andor iXon3 back-illuminated high sensitivity EMCCD camera with single photon detection capability. Projections were rendered using 3D-SIM Elements software from Nikon. Counts were averaged and analyzed by unpaired, two-tailed t-test

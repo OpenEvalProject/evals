@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.42424.001 Genetic variation conferring resistance and susceptibility to carcinogen-induced tumorigenesis is frequently studied in mice. We have now turned this idea to melanoma using the collaborative cross (CC), a resource of mouse strains designed to discover genes for complex diseases. We studied melanoma-prone transgenic progeny across seventy CC genetic backgrounds. We mapped a strong quantitative trait locus for rapid onset spontaneous melanoma onset to Prkdc , a gene involved in detection and repair of DNA damage. In contrast, rapid onset UVR-induced melanoma was linked to the ribosomal subunit gene Rrp15 . Ribosome biogenesis was upregulated in skin shortly after UVR exposure. Mechanistically, variation in the ‘usual suspects’ by which UVR may exacerbate melanoma, defective DNA repair, melanocyte proliferation, or inflammatory cell infiltration, did not explain melanoma susceptibility or resistance across the CC. Instead, events occurring soon after exposure, such as dysregulation of ribosome function, which alters many aspects of cellular metabolism, may be important.
+Genetic variation conferring resistance and susceptibility to carcinogen-induced tumorigenesis is frequently studied in mice. We have now turned this idea to melanoma using the collaborative cross (CC), a resource of mouse strains designed to discover genes for complex diseases. We studied melanoma-prone transgenic progeny across seventy CC genetic backgrounds. We mapped a strong quantitative trait locus for rapid onset spontaneous melanoma onset to Prkdc, a gene involved in detection and repair of DNA damage. In contrast, rapid onset UVR-induced melanoma was linked to the ribosomal subunit gene Rrp15. Ribosome biogenesis was upregulated in skin shortly after UVR exposure. Mechanistically, variation in the ‘usual suspects’ by which UVR may exacerbate melanoma, defective DNA repair, melanocyte proliferation, or inflammatory cell infiltration, did not explain melanoma susceptibility or resistance across the CC. Instead, events occurring soon after exposure, such as dysregulation of ribosome function, which alters many aspects of cellular metabolism, may be important.
 
 ## Introduction
 
@@ -34,17 +34,17 @@ We used the Cdk4R24C::Tyr-NRASQ61K (hereafter termed Cdk4::NRAS) mouse as a UVR-
 
 ## Results
 
-## Assessment of NRASQ61K and BRAFV600E transgenics as models for UVR-induced melanoma
+### Assessment of NRASQ61K and BRAFV600E transgenics as models for UVR-induced melanoma
 
 Before embarking on the screen for melanoma modifier genes in mice, we assessed whether there may be better murine models to work with. All models tested were on the FVB strain background. Given that BRAFV600E mutation is more common than NRASQ61K in MM overall, we studied the inducible BrafV600E model developed by the MacMahon lab (Dankort et al., 2009) combined with the knock-in mutant Cdk4R24C mouse. Cdk4R24C/R24C::Tyr-CreER::BrafV600E mice were studied in three groups. In one group, the spontaneous MM group, Braf was induced by topical tamoxifen (tam) at P1, P2, and P3. In the next group, we applied Tam at P1, P2, and P3, then exposed the mice to a single neonatal UVB dose at post-natal day 3 (P3) (Figure 1A). For the final group, we first exposed to UVR at P3, then treated with Tam at P7, P8 and P9 (Figure 1B). Surprisingly, we saw no significant difference in MM age of onset between any cohort (Figure 1C). Melanoma is not observed in Cdk4R24C/R24C mice without carrying a melanocyte-specific Ras pathway mutation, with or without neonatal UVR (Hacker et al., 2006), showing that in our experiments with the Cdk4R24C/R24C::Tyr-CreER::BrafV600E model, BrafV600E must have been induced by the tamox application. In contrast, using the Cdk4R24C/R24C::Tyr-NRASQ61K model (Ferguson et al., 2010) the single neonatal UVR exposure significantly accelerated MM age of onset (Figure 1D).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/42424/elife-42424-fig1-v2.jpg)
 
-**Figure 1.:** Schematic representation of timing of Tamoxifen application for induction of BRAFV600E. Tam = tamoxifen (A) before UVR exposure, (B) after UVR exposure. (C–E) Comparison of UVR-induced MM-free survival between genotypes. Kaplan-Meier curves show the time to spontaneous and UVR-induced MM development. The age of onset (days after birth) was defined by the appearance of the first melanoma. Animals that died without developing MM were censored. (C) Cdk4 with mutation induction before and after neonatal UVR, (R24C/R24C::BRAFV600ED) Cdk4 mice, (R24C/R24C::Tyt-NRASQ61KE) Trp53. Here we have included non tamox-treated animals which carry the effective genotype of F/F::Tyr-Cre::TyrNRASQ61KTyr-NRAS only, as shown to the right of the graph. Green, blue, and red lines show melanoma-free survival after various timings of tamox treatment. We aimed to study at least 20 mice in each group. 20 animals per group is sufficient to detect a difference in penetrance of 40% with statistical power of 80%.
+**Figure 1.:** Schematic representation of timing of Tamoxifen application for induction of BRAFV600E. Tam = tamoxifen (A) before UVR exposure, (B) after UVR exposure. (C–E) Comparison of UVR-induced MM-free survival between genotypes. Kaplan-Meier curves show the time to spontaneous and UVR-induced MM development. The age of onset (days after birth) was defined by the appearance of the first melanoma. Animals that died without developing MM were censored. (C) Cdk4R24C/R24C::BRAFV600E with mutation induction before and after neonatal UVR, (D) Cdk4R24C/R24C::Tyt-NRASQ61K mice, (E) Trp53F/F::Tyr-Cre::TyrNRASQ61K. Here we have included non tamox-treated animals which carry the effective genotype of Tyr-NRAS only, as shown to the right of the graph. Green, blue, and red lines show melanoma-free survival after various timings of tamox treatment. We aimed to study at least 20 mice in each group. 20 animals per group is sufficient to detect a difference in penetrance of 40% with statistical power of 80%.
 
 As another context in which to assess the role of the engineered mutation in mouse models of UVR-induced MM, we studied the Trp53F/F::Tyr-Cre(ER)::Tyr-NRAS model in which the Trp53 deletion is induced by tamox application (26) (Figure 1E), whereas in these mice the NRASQ61K mutation is not inducible, so is present through development. Tamox treatment (i.e. Trp53 deletion in melanocytes) accelerated both spontaneous and UVR-induced MM. But there was no difference in MM onset whether or not Trp53 was deleted before or after neonatal UVR. Thus for both BrafV600E and Trp53-inducible models the ability of neonatal UVR to accelerate MM may not be dependent upon whether the engineered mutation is present in melanocytes at the time of UVR exposure. Instead, it may be due to a more generalized effect via differences in DNA repair, melanocyte number and proliferative response, or inflammatory response, as has been outlined previously (Mukhopadhyay et al., 2016; Walker et al., 2009; Zaidi et al., 2011). But an oncogenic mutation in melanocytes seems to be a prerequisite. In sum, the Cdk4::NRAS model was best suited for breeding with CC mice to look for QTLs associated with UVR-dependent MM.
 
-## QTLs for spontaneous melanoma age of onset in Cdk4::Tyr-NRAS mice
+### QTLs for spontaneous melanoma age of onset in Cdk4::Tyr-NRAS mice
 
 We tested 38 CC strains to discover QTLs that modify median age of onset of spontaneous MM per strain in CC X Cdk4::Tyr-NRAS progeny (Ferguson et al., 2015). The phenotype was encoded as median age of MM onset per strain (Figure 2B), and genetic analyses performed using the Gene Miner platform (Ram and Morahan, 2017). This software uses a logistic regression matrix model over the reconstructed haplotypes matrix to produce genome-wide distribution of P values (ANOVA chi-squared). We used a false discovery rate of p<0.001 to define significant genome wide linkage. We identified a major effect QTL on mouse chromosome (chr) 16. The -Log10(P) −1 interval = 14.8–21.4 megabases (Mb), a region containing 45 genes (Figure 2C). Examination of the founder haplotype coefficients in the significantly linked interval on chromosome 16 showed that the causal variant for early age of onset of MM was derived from the 129/SvJ founder (hereafter termed 129S). We ascertained which genes within the interval were the best candidates by cataloguing DNA variants that are carried on the causal 129S haplotype, and not any of the other founder haplotypes. Mining the Sanger Mouse Genomes and ENCODE databases for 129S-specific variants revealed eight candidates, two of which (Prkdc and Arvcf) carry non-synonymous mutations (Figure 2D), while all 8 (Prkdc, Pkp2, Yars2, Arvcf, Gp1bb, and Abcc5) had 129S-specific single nucleotide potentially regulatory polymorphisms (SNPs) in their 5’ or 3’ UTR, or introns. It is possible that one of the 129S-specific SNPs near the candidates may regulate another gene elsewhere in the genome, or that there are other 129S-specific regulatory SNPs nearby any of the 45 genes in the region that were not detected by ENCODE.
 
@@ -58,7 +58,7 @@ Therefore, we hypothesized that a functional effect on phenotype was most likely
 
 We noted that other genes involved in sensing DNA damage and repairing double stranded breaks (e.g. PARP1, ATM, APEX1) are in linkage disequilibrium with SNPs associated with melanoma risk in GWAS (Hulur et al., 2017). We reasoned that even though PRKDC is not a GWAS hit, we could determine whether variation in its expression is correlated with expression of these GWAS genes. We examined global gene expression in non-sun exposed human skin across the GTEx cohort (Genenetwork.org). Networks of the top 500 genes correlated with PRKDC were constructed at a confidence value of 0.9 using STRING (https://string-db.org). The most significant network for molecular function was RNA binding (p=1.22−37 false discovery rate), and in KEGG pathways DNA replication (p=1.22×10−8). PARP1 (at 170, r = 0.46, p=2×10−16), and APEX1 (at 287, r = 0.43, p=8×10−14) were in the top 300 most significantly correlated genes with PRKDC. ATM was not in the top 500, but its relative ATR was at number 105 (r = 0.49, p=4×10−16). While these correlations are based only on gene expression across the GTEx cohort, not any other aspect of gene function, they do point to the possibility that PRKDC is associated with pathways associated with DNA double strand break repair, components of which are encoded by other genes which confer MM risk in the general population.
 
-## QTLs for UVR-induced melanoma age of onset in Cdk4::Tyr-NRAS mice
+### QTLs for UVR-induced melanoma age of onset in Cdk4::Tyr-NRAS mice
 
 CC-transgenic progeny strains from 70 CC strains were exposed to a single neonatal exposure then followed until MM developed (Figure 3A). Median age of melanoma onset per strain was scored as the phenotype (Figure 3B). Only lesions developing on the UVR-exposed dorsal surface (where the overwhelming majority developed) were counted. We identified a major effect QTL on mouse chr.1 (-Log10(P) −1 interval = 187.8–189.2 Mb) (Figure 3C), a region containing 10 genes. We ascertained which genes within the interval were the best candidates by cataloguing DNA variants on the causal allele that vary between susceptible or resistant strains. The causal allele was carried by AJ and NOD. Mining the Sanger Mouse Genomes and ENCODE databases for NOD/AJ-specific variants revealed four candidates carrying variants specific to the causal allele (Tgfb2, Rrp15, Spata17, and Gpatch2). Rrp15 was the only one carrying missense mutations (Figure 3D), while the other three genes (Tgfb2, Spata17, and Gpatch2), had AJ/NOD-specific single nucleotide polymorphisms (SNPs) in their 5’ or 3’ UTR, or introns (Figure 3E).
 
@@ -68,15 +68,15 @@ CC-transgenic progeny strains from 70 CC strains were exposed to a single neonat
 
 Next we looked at the Hair Gel database to determine whether these genes were expressed in skin. All but Spata17 were, essentially ruling this gene out as a candidate (Figure 3F). We then looked at skin gene expression (Supplementary file 1) between AJ, NOD, and FVB, which carry the Chr. one allele, and B6, DBA, and 129S which do not (Figure 3G). There were no significantly differentially expressed genes between groups, suggesting a missense rather than a regulatory causal variant. Thus, while we cannot rule out Tgfb2 and Gpatch2, by those criteria Rrp15 is the best candidate. The causal allele (AJ/NOD) carried two Rrp15 missense variants, both defined by SIFT as likely to be ‘tolerated’. But one at amino acid 117 is most likely to be the causal mutation given that it is a Glu > Gln change, whereas the other is Ala > Val, which is likely to be silent. Rrp15 encodes a ribosomal subunit that is part of pre 40S and pre 60S subunits that is important for rRNA transcription and ribosome biogenesis. Furthermore, Rrp15 knockout in vitro causes nucleolar stress by activating the Mdm2-Trp53 axis, and subsequently a G1-S phase cell cycle blockage (De Marchis et al., 2005; Dong et al., 2017). Deregulation of the ribosome complex decreases the fidelity and patterns of mRNA translation and many other downstream events (Quin et al., 2014; Pelletier et al., 2018). Although much of the effect on cell behaviour is via altering the stabilisation of p53 by Mdm2, this can also occur via p53-independent mechanisms (James et al., 2014).
 
-## Confirmation of the chromosome one locus using diversity outbred (DO) mice
+### Confirmation of the chromosome one locus using diversity outbred (DO) mice
 
 DO mice harbor frequent recombinations throughout their genomes. We hypothesized that some DO animals (Churchill et al., 2012) would have informative recombinants of the causal AJ/NOD allele to make them useful for fine mapping the linked chr.1 interval. We tested DNA from 314 DO mice, initially using six polymorphic markers across an 8 Mb region around Rrp15. We selected a subgroup of 8 DO mice with apparent recombinations within the AJ/NOD alleles across the region and genotyped them using a panel of 60 SNPs (20 of which are the most informative and shown in Supplementary file 2. SNPs were chosen based on their ability to discriminate the AJ/NOD allele from the other eight founders, especially those variants private for AJ, NOD, or both. While this NOD/AJ allele was scattered throughout the region in different DO mice, as expected we observed many recombinations across the chr.1 region of interest. However there were many gaps and alleles for which we could not unambiguously call the founder haplotypes on both strands across the region (Supplementary file 2). To adequately do this, many more SNPs would have to be tested. Nonetheless we crossed each of the eight selected DO mice with Cdk4::NRAS transgenics, and studied UVR-induced MM onset in the progeny (Figure 3H). Because of the limitations of our SNP-based map of the region, to genotype the DO mice we used manual Sanger sequencing to genotype more densely, in particular in the region of our candidate gene Rrp15 (Figure 3I). As seen in Figure 3H, the predicted causal SNPs in Rrp15 do not segregate with fast MM onset as they did in the CC strains. We hypothesized that lack of penetrance of the Rrp15 allele was due to the introduction of additional resistance alleles elsewhere in the genome due to the high levels of recombinations and heterozygosity in the DO genomes. We tried to circumvent this by backcrossing transgenic-DO mice onto C57BL/6. Mice from several litters were followed, and after two backcrosses we assessed UVR-induced MM age of onset, with progeny genotyped immediately around Rrp15 by Sanger sequencing. We found that the penetrance of the causal Rrp15 variant was restored on backcrossing: mice carrying the NOD/AJ alleles of Rrp15 had significantly earlier MM onset (Figure 3J). Thus, the propensity for neonatal UVR to accelerate melanoma is highly dependent upon genetic background influences. In addition, there are additional potential resistance alleles which can, if present, interact with the Rrp15 susceptibility allele.
 
-## Neonatal UVR acceleration of melanoma age of onset is dependent upon innate genetics
+### Neonatal UVR acceleration of melanoma age of onset is dependent upon innate genetics
 
 We further analyzed the role of neonatal UVR in accelerating melanoma age of onset by subtracting the average age of onset of spontaneous from that of UVR-accelerated melanoma (Figure 3K). This provides us with a further phenotype: the strain-specific rate of acceleration of MM onset by neonatal UVR (Figure 3L). The median age-of-onset for UVR-induced MM per strain was subtracted from the median onset for spontaneous MM, to denote what we have termed the ‘effectiveness’ of UVR in inducing MM. In resistant CC strains, neonatal UVR does not accelerate MM onset at all (e.g. HOE, BAX2), or does so by a very small amount, whereas for susceptible strains MM onset was accelerated by more than 300 days (e.g. SEH, XAJ2) as seen in Figure 3K and L. The phenotype is independent of pigmentation status (albino vs pigmented) (Figure 3L). The genome scan for this trait is shown in Figure 3M. Unfortunately, we only have both spontaneous and UVR-induced onset data for 27 strains. While this does not provide enough power to detect genome-wide significant linkage to this phenotype, there was a peak of suggestive significance at chromosome 1 p, overlapping with the QTL detected for UVR-induced age of onset, containing the Rrp15 gene, with the NOD allele showing a different coefficient from the other strains.
 
-## Skin gene expression changes after neonatal UVR
+### Skin gene expression changes after neonatal UVR
 
 The way by which neonatal UVR accelerates MM may provide insights into early events in the initiation of this neoplasm. To search for pathways deregulated in neonatal UVR-exposed skin, we performed global gene expression chip studies with Illumina Beadchips on UVR exposed and non-exposed epidermis of wild-type FVB mice at various time-points (Supplementary file 3). The top 500 significantly up- and down- regulated genes after neonatal UVR were used to construct networks for UVR-induced gene expression changes at a confidence value of 0.9 using the STRING resource (https://string-db.org) (Figure 4). At 6 hr after UVR exposure, one can see strong significant evidence of ribosome biogenesis occurring, with downregulation of various metabolic pathways compared to control untreated skin (Supplementary file 4). At 10 hr, post-UVR metabolic activity is still suppressed, but DNA replication is either already occurring to some extent, or about to occur for repair and reconstruction of damaged cells. Upregulated p53 signaling was also observed. At 24 hr post UVR various pathways involved in cell proliferation (ribosomes and translation, metabolism) and reconstruction (extracellular matrix, metabolism) are significantly activated in the epidermis. One of the problems with using whole tissue is that one cannot discriminate in terms of cell type. As a way to put the skin gene expression into some perspective we wanted to look at skin gene expression changes at some days after UVR, since it is known that this period corresponds with an influx of immune cells into the dermis (Zaidi et al., 2011) and the influx of melanocytes into the epidermis (Walker et al., 2009). Therefore, we separately studied gene expression in the neonatal epidermis and dermis harvested at 3d after UVR (Figure 5A). There was a striking loss of immune markers in the epidermis, mostly reflecting UVR-induced migration of epidermal Langerhans cells to the dermis as expected. We also saw a strong gene expression cluster for genes involved in melanogenesis, reflecting the presence of melanocytes in the UVR-exposed epidermis, but not in control skin at the time-point 3 d after UVR. In the dermis, we observed networks reflecting increased cellular activity, in particular upregulation of kinases and interferon-induced enzymes. But in contrast to the epidermis, in the dermis we also observed a signal for myeloid cells, presumably reflecting the influx of macrophages, which occurs maximally at around this time post UVR (Handoko et al., 2013).
 
@@ -90,7 +90,7 @@ The way by which neonatal UVR accelerates MM may provide insights into early eve
 
 The critical question with respect to genes deregulated by neonatal UVR is the behavior of our candidate genes, one of which must be causal in accelerating MM. Rrp15 was the only one of the chr.1 candidates significantly changed in expression by UVR (Figure 5B). Hence in addition to the susceptible CC strains carrying a missense mutation in the putative Rrp15 causal allele, the fact that it is the only candidate that responds to neonatal UVR adds weight to it being the best candidate in the linked genomic region. Our gene expression analysis was performed on whole skin, epidermis, or dermis, rather than individual cell types, allowing signals from a number of cells types, for example keratinocytes, immune cells, and melanocytes, to be taken into account. Since Rrp15 is expressed virtually ubiquitously in the skin we do not know whether its mode of action in accelerating UVR-induced melanoma would be cell intrinsic or extrinsic. But we note that in a study of UVR-treated cultured melanocytes, ribosome metabolism was the most significantly altered pathway at 6, 12, and 24 hr after UVR (López et al., 2015), as in our whole skin studies. In addition, to gain a better sense of changes in skin correlated with RRP15 expression we constructed gene networks based on the top 500 genes correlated with RRP15 expression across the sun-exposed anatomical site human skin GTEx cohort (Figure 5B). As expected changes in RRP15 gene expression are correlated with ribosome biogenesis, but also many other aspects of cell behavior, including DNA damage recognition and repair, transcription, and splicing. Defects in any of these processes could in theory explain why MM is accelerated by UVR exposure not only in mouse strains which carry germline Rrp15 variants, and putatively in humans also.
 
-## Mechanism by which melanoma is accelerated by UVR
+### Mechanism by which melanoma is accelerated by UVR
 
 Since genetic background greatly influenced whether or not MM was accelerated by neonatal UVR, we studied various effects of UVR a few days after exposure on traits that may differ between susceptible and resistant strains. These included the rate of removal of UVR-induced cyclobutane pyrimidine dimers (CPDs), influx of inflammatory neutrophils and macrophages, and the proliferation of melanocytes (increase in melanocyte number in the epidermis) (Figure 6A). We again used readily-available laboratory strains (AJ, B6, DBA, FVB, NOD, 129 s), four of which are CC founders. For all six, we determined the median age of onset of MM after neonatal UVR. We chose time-points 1, 4, and 7 days post UVR. In C57BL/6 mice, CPDs are generally removed by d4 after UVR, certainly by d7. Neutrophils generally infiltrate the skin by d1 after UVR and numbers decrease by d4. Macrophages are maximally present at 4d (39). At 4d, melanocytes have migrated to the epidermis in response to UVR, macrophages are at their maximum number, roughly concurrent with maximum epidermal melanocyte density. By the d7 post UVR time-point, the skin is ostensibly returned to normal, but in some mouse strains there may be a delay in some measures.
 
@@ -122,54 +122,204 @@ Researchers tend to look for measurable skin responses to UVR exposure to try to
 
 ## Materials and methods
 
-## Mouse melanoma model
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Cdk4-R24C</td>
+      <td>PMID:11606789</td>
+      <td></td>
+      <td>crossed onto FVB/N background</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>NRAS-Q61K</td>
+      <td>PMID:11606789</td>
+      <td></td>
+      <td>crossed onto FVB/N background</td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>p53F/F</td>
+      <td>PubMed: 10783170</td>
+      <td>008361 - B6;129S4-Trp53&lt;tm5Tyj&gt;/J - The Jackson Laboratory</td>
+      <td>crossed onto FVB/N background</td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Braf-V600E</td>
+      <td>PMID: 17299132</td>
+      <td>017837 - B6.129P2(Cg)-Braf&lt;tm1Mmcm&gt;/J - The Jackson Laboratory</td>
+      <td>crossed onto FVB/N background</td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Tyr-Cre ER</td>
+      <td>16676322</td>
+      <td>012328 - B6.Cg-Tg(Tyr-cre/ERT2)13Bos/J - The Jackson Laboratory</td>
+      <td>crossed onto FVB/N background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Collaborative Cross resource</td>
+      <td>Geniad Pty Ltd, and the Animal Resource Centre (ARC), Western Australia</td>
+      <td></td>
+      <td>Mice descended from eight founders generated as recombinant inbred stock</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Diversity Outbred mouse resource</td>
+      <td>Geniad Pty Ltd, and the Animal Resource Centre(ARC), Western Australia</td>
+      <td></td>
+      <td>Mice descended from eight founders generated as outbred stock</td>
+    </tr>
+    <tr>
+      <td>Biological sample (M. musculus)</td>
+      <td>skin samples from mouse subjects</td>
+      <td>Animal Resource Centre(ARC), Western Australia</td>
+      <td></td>
+      <td>C57B6, NOD, A/J, 129s mouse strains</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti F4/80 from CD68 rat monoclonal antibody</td>
+      <td>Abcam</td>
+      <td>Abcam 6640, CI: A3-1 (Cambridge,UK)</td>
+      <td>for macrophages. 1:400 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti Sox10 goat polyclonal</td>
+      <td>Santa Cruz Biotechnologies</td>
+      <td>SC-17342 (N-20) Santa Cruz Biotechnology (Dallas Tx, USA)</td>
+      <td>for melanocytes. 1:200 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal anti-thymine dimer, Clone H3</td>
+      <td>Sigma Aldrich</td>
+      <td>Anti-Thymine dimer Clone H3 (T1192), Sigma Aldrich (St Louis, MO, USA)</td>
+      <td>for Cyclobutane pyrmidine dimers. 1:400 dilution</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ly6G Rat anti-neutrophil monoclonal antibody</td>
+      <td>Abcam</td>
+      <td>Anti-Ly6G rat monoclonal antibody Abcam ab2557:Clone NIMP-R14 (Cambridge, UK)</td>
+      <td>for Neutrophil staining (1:400 dilution) and depletion (undiluted)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MPO</td>
+      <td>Abnova</td>
+      <td>Abnova rabbit anti-MPO Clone 14328 (Taipei, Taiwan)</td>
+      <td>for Neutrophils after neutrophil depletion 1:100)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Vector NovaRed Peroxidase Substrate kit</td>
+      <td>Vector Laboratories</td>
+      <td>SK-4800, Vector Laboratories (CA, USA)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse expression array</td>
+      <td>Illumina</td>
+      <td>Illumina TotalPrep RNA amplification, Illumina MouseWG-6 v2.0 Expression Beadchips</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA sequencing</td>
+      <td>Illumina</td>
+      <td>Illumina mRNA kit, Illumina HiSeq with 50bp single reads</td>
+      <td>RNA-seq samples mapped to mouse genome MM10 using TopHat2</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA isolation kit</td>
+      <td>Qiagen</td>
+      <td>Rneasy Kit</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Geneminer platform</td>
+      <td>Geneminer</td>
+      <td>http://130.95.9.22/Geniad2/</td>
+      <td>Ram R, Morahan G. Using Systems Genetics to Understanding the Etiology of Complex Disease. Methods Mol Biol 2017;1488:597-606.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>UVB lamps for irradiation</td>
+      <td>Phillips</td>
+      <td>6 lamps TL100W 12RS UVB lamps</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse melanoma model
 
 Cdk4R24C/R24C::Tyr-NRASQ61K/+ mice are previously described in Ferguson et al. (2010). We crossed Cdk4R24C/R24C::Tyr-NRASQ61K/+ mice with breeding partners from each CC strain (Ferguson et al., 2015). Hence all study mice are Cdk4R24C/+::Tyr-NRASQ61K/+. All experiments were undertaken with institute animal ethics approval (A98004M). Mice were sacrificed before tumors exceeded 10 mm in diameter. In some melanoma-resistant strains lymphomas developed in some mice at >400 days of age. Such mice were counted as melanoma-free at the age of death. Each phenotypic measurement is based upon at least 4 and up to 15 mice per CC strain background. p53F/F mice (carrying floxed alleles allowing Cre-mediated excision of exons 1–10) were obtained from the Mouse Models for Cancer Consortium (http://mouse.ncifcrf.gov). Melanocyte-specific Trp53 deletion in p53F/F/Tyr-Cre(ER)/Tyr-NRAS mice was induced via topical application of 8-OH-tamoxifen (15 mg/ml in DMSO) at P0, 1 and 2. For the studies involving the BRAF model we used the inducible BRAFV600E model generated by (24). All these mice were of FVB strain background.
 
-## CC breeding
+### CC breeding
 
 Collaborative cross mice were obtained from the Animal Research Council (ARC) in collaboration with Prof Grant Morahan of the Harry Perkins Institute of Medical Research, Perth, Australia. A/J, C57BL/6J (B6), 129/SvJ (129S), DBA, and NOD/ShiLtJ (NOD) were purchased from the Animal Resources Centre, Western Australia.
 
-## UVR treatments
+### UVR treatments
 
 Pups (3-day-old) were exposed to a single UVB exposure from a bank of 6 Phillips TL100W 12RS UVB lamps (Total UVB dose, 5.9 kJ/m2, or an erythemally-weighted dose of 1.8 kJ/m2) UVB.
 
-## Phenotypic characterization
+### Phenotypic characterization
 
 We have previously described a system for visual tracking of lesions developing on the FVB Cdk4R24C/R24C::Tyr-NRASQ61K/+ mice and a histology-based staging system (Wurm et al., 2012) and mice on the various CC strain backgrounds were scored in this way. Briefly, lesions were excised after death followed by conventional histopathologic work-up with haematoxylin and eosin (H and E) staining. Each lesion was viewed and confirmed individually as MM by BF and GJW as described in Wurm et al. (42). Where there was any doubt about diagnosis, tumors were stained with Trp1 and/or Sox10. No skin tumors were observed apart from melanomas. We included in our analyses melanomas that developed on dorsal surface only. Mice were sacrificed before tumors exceeded 10 mm in diameter.
 
-## QTL analysis
+### QTL analysis
 
 The construction of the CC founder haplotypes is described in Ram and Morahan (2017). For mapping we used a logistic regression matrix model over the reconstructed haplotypes matrix to produce genome-wide distribution of P values (ANOVA chi-squared). We used a false discovery rate of p=0.0001 to define significant genome wide linkage.
 
-## SNP genotyping
+### SNP genotyping
 
 We used a custom SNP approach performed by AGRF, a custom array of 92 SNPs across the 180–190 Mb region of mouse Chr. 1. Genotyping was performed using the Sequenom mass array system.
 
-## Sanger sequencing
+### Sanger sequencing
 
 Target fragments chosen to contain multiple SNPs were PCR-amplified, then cleaned from excess primers and nucleotides using CleanSweep PCR Purification (Applied Biosystems, Life Technologies, Carlsbad, CA, USA). Sequencing was carried out using BigDye Terminator v3.1 Cycle Sequencing and then run on ABI Prism DNA Sequencers (Applied Biosystems). The sequencing traces were compared using Multiple SeqDoc chromatogram comparison programme (http://research.imb.uq.edu.au/seqdoc/multi.html).
 
-## Mouse expression array
+### Mouse expression array
 
 Five hundred ng of total RNA from each tumor was used as the starting material to produce cRNA, following Illumina TotalPrep RNA Amplification protocol. From each sample, 1500 ng of cRNA were hybridised to Illumina MouseWG-6 v2.0 Expression BeadChips (Illumina, San Diego, CA, USA) and then scanned. Data were extracted using Genome Studio (Illumina, San Diego, CA, USA) and then imported into GeneSpring GX 11.5.1 (Agilent Technologies, Santa Clara, CA, USA), before subsequent analysis. Normalisation was performed using the R package LUMI, and differential analysis done using LIMMA. Multiple testing correction was carried out using the Benjamini-Hochberg procedure. Differentially expressed genes with p-adjusted values < 0.05 were considered significant.
 
-## RNA seq
+### RNA seq
 
 Skin gene expression experiments were undertaken with institute animal ethics approval (A98004M). RNA was isolated using RNeasy Kit and libraries generated with Illumina mRNA kit. Sequencing was performed using Ilumina HiSeq chemistry, with 50 bp single reads. RNA-seq samples were mapped to mouse genome MM10 using STAR. Quality control metrics were computed using RNA_SeQC version 1.1.18, and expression values estimated using RSEM version 1.2.30. We corrected for library size by dividing each sample’s count by millions of reads mapped. We used the ‘calcnormfactors’ function from the EdgeR package to obtain TMM factors and used these to correct for differences in RNA composition.
 
-## Gene expression correlation and gene network study
+### Gene expression correlation and gene network study
 
 To generate interconnected networks based on correlations, gene lists were clustered using STRING (http://string-db.org/). STRING creates networks representing the best available knowledge of gene interconnections. Each protein-protein interaction is annotated with 'scores' indicating how likely an interaction should be true. Scores rank from 0 to 1, with one being the highest confidence. A score of 0.5 indicates roughly every second interaction might be erroneous. Gene-gene co-expression correlations were computed as Pearson product-moment correlations (r) in Genenetwork.org after removing outliers.
 
-## Antibody staining
+### Antibody staining
 
 Skin from the pups at Day one after UVB radiation (D1), D4 and D7 was paraffin embedded. All immunohistochemistry staining was performed on pup skin sections (4 um) with standard DAB or NovaRed. Counts were performed on multiple fields from multiple skin sections from each of >3 mice (each field is ~1 mm in length). Macrophage staining used F4/80 from CD68 rat monoclonal antibody diluted to 1:400, Abcam ab6640, CI: A3-1 (Cambridge, UK). Melanocyte nuclear staining used Sox10 from sc-17342 goat polyclonal antibody (N-20) diluted to 1:200, Santa Cruz Biotechnology (Dallas, TX, USA). Cyclobutane pyrimidine dimers (CPD) staining was with monoclonal anti-thymine dimer, Clone H3 (T1192) diluted to 1:400, Sigma-Aldrich (St Louis, MO, USA). For this CPD staining, sections were first blocked in 1% hydrogen peroxide, then incubated in 50% ethanol, 30% ethanol/0.02N HCl, 0.05N HCl, and 0.07N NaOh/70% ethanol, before incubating in primary antibody. Neutrophils were stained using an anti-Ly6G as primary antibody, except after neutrophil depletion, when staining was done using MPO staining (see below). Anti-Ly6G was from rat anti-neutrophil monoclonal antibody Abcam ab2557: NIMP-R14 (Cambridge, UK) at a concentration of 1:100.
 
-## Neutrophil depletion
+### Neutrophil depletion
 
 Each NOD/Cdk4R24C/+::NRAS pup was injected intraperitoneally, with either 100 ug InVivo MAb anti-mouse Ly6G (Bio C Cell, Beverly, MA, USA) or PBS (as a control) at P2, P3 and P5. At P3, all pups were also given UVR treatment. As the depletion was done using anti-Ly6G, staining to differentiate between depleted and non-depleted skin was done using Myeloperoxidase staining (Abnova rabbit anti-MPO, Taipei, Taiwan) at a concentration of 1:75.
 
-## Statistical analysis
+### Statistical analysis
 
 One-way ANOVA tests were used to determine the significant difference between means, using R. The survival of mice in each treatment group was estimated using Kaplan-Meier analysis (PRISMTM), and the Log-Rank (Mantel-Cox) test was used to test for differences between the groups. For correlation comparisons Pearson correlation r value was calculated in PRISM along with the p-value for significant correlation.

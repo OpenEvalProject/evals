@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04sjchr03 École de Psychologie, Université Laval Quebec City Canada
-2. https://ror.org/031yz7195 Centre interdisciplinaire de recherche en réadaptation et intégration sociale Québec Canada
+1. École de Psychologie, Université Laval Quebec City Canada ([ROR:04sjchr03](https://ror.org/04sjchr03))
+2. Centre interdisciplinaire de recherche en réadaptation et intégration sociale Québec Canada ([ROR:031yz7195](https://ror.org/031yz7195))
 
 † Corresponding author
 

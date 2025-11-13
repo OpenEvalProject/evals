@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.40444.001 High resolution crystal structures of DNA polymerase intermediates are needed to study the mechanism of DNA synthesis in cells. Here we report five crystal structures of DNA polymerase I that capture new conformations for the polymerase translocation and nucleotide pre-insertion steps in the DNA synthesis pathway. We suggest that these new structures, along with previously solved structures, highlight the dynamic nature of the finger subdomain in the enzyme active site.
+High resolution crystal structures of DNA polymerase intermediates are needed to study the mechanism of DNA synthesis in cells. Here we report five crystal structures of DNA polymerase I that capture new conformations for the polymerase translocation and nucleotide pre-insertion steps in the DNA synthesis pathway. We suggest that these new structures, along with previously solved structures, highlight the dynamic nature of the finger subdomain in the enzyme active site.
 
 ## Introduction
 
@@ -26,6 +26,267 @@ DNA polymerase I (DNAP-I) has long been viewed as the canonical model for DNA sy
 ## Results and discussion
 
 Recognizing that in crystallo and solution catalyzed enzymatic reactions can produce different structural results with potentially different functional interpretations (Ehrmann et al., 2017), we chose to investigate the translocated intermediates of DNAP-I using a direct crystallization method that involves solving crystal structures of the enzyme-product complex obtained from primer-extension reactions performed in solution rather than inside the environment of a protein crystal. In these reactions, the starting enzyme-primer-template complex was incubated with solutions of either buffer, dTTP, or dTTP and dATP for 30 min at 37°C. Following primer-extension, the enzyme-product complex was crystallized and cocrystal structures of Bst DNAP-I were solved to resolutions of 1.5 – 2.0 Å (Table 1). This approach was used to obtain high resolution structures of DNAP-I for the starting primer-template complex (n) and two translocated products obtained for the n + 1 and n + 2 nucleotide addition steps using the same primer-template duplex (n) described in previous in crystallo studies (Figure 1a)(Johnson et al., 2003).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/40444/elife-40444-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic illustration of the primer-extension reactions used to generate enzyme complexes for the starting duplex (n) and translocated products of the n + 1 and n + 2 nucleotide addition steps. (b) Global architecture of Bst DNAP-I bound to the primer-template duplex (n, 6DSW). (c) The active site region of a known n + 1 in crystallo catalysis structure (1L3T). The pre-insertion site (pre-IS) is circled in red. (d) The active site region of the n + 1 solution-catalyzed reaction (6DSY). Color scheme: polymerase (grey), template (blue), primer (orange), magnesium ion (green), n + 1 nucleotide adduct (red), and amino acid side chains (color by atom).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40444/elife-40444-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The four key mechanistic steps of DNA polymerase I have been determined from the structures of Bst DNA polymerase and T7 RNA polymerase (structural homolog). Starting from the binary complex, the n + 1 templating base resides in the pre-insertion site (pre-IS, pink), located in a hydrophic pocket formed by the O-O1 helices and Tyr714 occupies the insertion site (IS, purple), stacking above the newly formed base pair located in the post insertion site (post-IS, green). Upon dNTP binding, the O-O1 helices undergo a minor conformational change, which displaces the n + 1 base from the pre-IS to produce a ternary complex with the incoming dNTP substrate pairing opposite Tyr714 in the IS. The pre-catalytic state is defined by a more significant conformation change where the O-O1 helices close to allow the formation of a nascent base pair between the n + 1 base and incoming dNTP substrate. Following catalysis, the O-O1 helices remain closed with the displaced pyrophosphate moiety observed as a trapped intermediate. Structural details that occur between post-catalysis, translocation, and formation of the subsequent binary complex remain poorly understood (dotted line).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40444/elife-40444-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Crystal structures of the starting primer-template complex (n). Color scheme and PDB codes: new structure (yellow, 6DSW), known structure (grey, 1L3S). (b–f) Post-chemistry structures comparing the active site conformation for n + 1 and n + 2 translocated products generated from solution and in crystallo catalyzed primer-extension reactions. Color scheme and PDB codes: known n + 1 and n + 2 in crystallo catalyzed structures (grey, 1L3T and 1L3U, respectively), new n + 1 and n + 2 solution-catalyzed structures (yellow, 6DSY and 6DSV, respectively), and a new n + 2 in crystallo catalyzed structure obtained from the n + 1 crystal of a solution-catalyzed reaction (blue, 6DSX). (b,c) Overlays comparing the translocated product obtained from solution and in crystallo catalyzed n + 1 and n + 2 primer-extension reactions, respectively. (d) Overlays of the n + 1 and n + 2 structures from solution catalyzed reactions. (e) Overlay of the n + 2 structures for solution and in crystallo catalyzed reactions that initiate from the same polymerase conformation. (f) Overlay of n + 2 in crystallo catalyzed structures that initiate from different polymerase conformations.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/40444/elife-40444-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Amino acid residues are depicted as boxes, color-coded by polymerase sub-domain. Thin dashed lines represent interactions between the polymerase and a component of the primer/template duplex.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/40444/elife-40444-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Amino acid residues are depicted as boxes, color-coded by polymerase sub-domain. Thin dashed lines represent interactions between the polymerase and a component of the primer/template duplex.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/40444/elife-40444-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Crystal structures obtained by solution catalysis (yellow) are conformationally identical to known binary structures (grey) containing (a) an oxidative lesion at the active site (4B9M), (b) an A:G mismatched in the active site (1NK0), and (c) an inactive Bst mutant (4E0D). Unnatural modifications are highlighted in red.
+
+**Table 1.**
+ Data collection and refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>N</th>
+      <th>n + 1</th>
+      <th>n + 1, dATP soak</th>
+      <th>n + 1, dAMPNPP soak</th>
+      <th>n + 2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data Collection</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P212121</td>
+      <td>P212121</td>
+      <td>P212121</td>
+      <td>P212121</td>
+      <td>P212121</td>
+    </tr>
+    <tr>
+      <td>Cell Dimensions</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>86.1, 93.4, 105.6</td>
+      <td>88.1, 93.7, 105.8</td>
+      <td>87.1, 93.5, 105.3</td>
+      <td>87.44, 93.39, 104.95</td>
+      <td>87.0, 93.0, 104.7</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90.0, 90.0, 90.0</td>
+      <td>90.0, 90.0, 90.0</td>
+      <td>90.0, 90.0, 90.0</td>
+      <td>90.0, 90.0, 90.0</td>
+      <td>90.0, 90.0, 90.0</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>54.31–1.58 (1.64–1.58)</td>
+      <td>46.09–1.98 (2.05–1.98)</td>
+      <td>46.7–1.99 (2.06–1.99)</td>
+      <td>43.72–1.74 (1.78–1.74)</td>
+      <td>41.04–1.99 (2.06–1.99)</td>
+    </tr>
+    <tr>
+      <td>Rmerge</td>
+      <td>0.7309 (1.35)</td>
+      <td>0.7085 (1.389)</td>
+      <td>0.1329 (0.7194)</td>
+      <td>0.0567 (0.241)</td>
+      <td>0.3279 (1.745)</td>
+    </tr>
+    <tr>
+      <td>CC1/2</td>
+      <td>0.842 (0.795)</td>
+      <td>0.759 (0.543)</td>
+      <td>0.993 (0.796)</td>
+      <td>0.999 (0.977)</td>
+      <td>0.991 (0.586)</td>
+    </tr>
+    <tr>
+      <td>I / σI</td>
+      <td>71.43 (3.56)</td>
+      <td>43.97 (2.64)</td>
+      <td>17.03 (2.90)</td>
+      <td>22.78 (9.66)</td>
+      <td>9.75 (2.49)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.98 (99.98)</td>
+      <td>96.97 (99.15)</td>
+      <td>99.92 (99.90)</td>
+      <td>98.25 (99.33)</td>
+      <td>99.90 (99.93)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>31.3 (25.0)</td>
+      <td>12.9 (11.0)</td>
+      <td>6.8 (4.7)</td>
+      <td>7.0 (6.8)</td>
+      <td>7.2 (7.3)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>54.31–1.58 (1.64–1.58)</td>
+      <td>46.09–1.98 (2.05–1.98)</td>
+      <td>46.7–1.99 (2.06–1.99)</td>
+      <td>43.72–1.98 (2.05–1.98)</td>
+      <td>41.04–1.99 (2.06–1.99)</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>115039 (11360)</td>
+      <td>59886 (6056)</td>
+      <td>59677 (5857)</td>
+      <td>59416 (5901)</td>
+      <td>58990 (5831)</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>0.165/0.189 (0.199/0.248)</td>
+      <td>0.202/0.255 (0.264/0.340)</td>
+      <td>0.184/0.219 (0.239/0.293)</td>
+      <td>0.222/0.271 (0.225/0.281)</td>
+      <td>0.192/0.228 (0.332/0.391)</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td>5961</td>
+      <td>4627</td>
+      <td>5412</td>
+      <td>5468</td>
+      <td>5453</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>4636</td>
+      <td>4627</td>
+      <td>4639</td>
+      <td>4661</td>
+      <td>4590</td>
+    </tr>
+    <tr>
+      <td>Duplex</td>
+      <td>490</td>
+      <td>469</td>
+      <td>487</td>
+      <td>429</td>
+      <td>475</td>
+    </tr>
+    <tr>
+      <td>Solvent</td>
+      <td>835</td>
+      <td>546</td>
+      <td>286</td>
+      <td>378</td>
+      <td>388</td>
+    </tr>
+    <tr>
+      <td>B-factors</td>
+      <td>26.73</td>
+      <td>42.07</td>
+      <td>45.96</td>
+      <td>42.25</td>
+      <td>39.05</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>25.11</td>
+      <td>42.17</td>
+      <td>45.39</td>
+      <td>41.74</td>
+      <td>38.85</td>
+    </tr>
+    <tr>
+      <td>Duplex/dAMPNPP</td>
+      <td>40.11</td>
+      <td>55.17</td>
+      <td>117.16</td>
+      <td>101.56/106.4</td>
+      <td>60.07</td>
+    </tr>
+    <tr>
+      <td>Solvent</td>
+      <td>36.64</td>
+      <td>40.95</td>
+      <td>46.01</td>
+      <td>41.13</td>
+      <td>41.37</td>
+    </tr>
+    <tr>
+      <td>R.m.s deviations</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.006</td>
+      <td>0.007</td>
+      <td>0.008</td>
+      <td>0.008</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>0.82</td>
+      <td>0.89</td>
+      <td>0.84</td>
+      <td>1.15</td>
+      <td>0.85</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses are for the highest-resolution shell._
 
 Structures of the enzyme-primer-template complex (n) before catalysis reflect the initiation step of DNA synthesis. Superposition of the new structure obtained for the initiation step against the previously solved structure reveals that both structures adopt the same active site conformation (Figure 1—figure supplement 2a). This result implies that any structural differences observed between the translocated product of solution and in crystallo catalyzed reactions should be due to the catalysis environment rather than the starting polymerase conformation.
 
@@ -55,24 +316,125 @@ In summary, we present crystal structures of DNA polymerase I that capture the t
 
 ## Materials and methods
 
-## Bst cloning, Expression, and Purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>DH5-αderivative</td>
+      <td>NEB</td>
+      <td>C2987H</td>
+      <td>Chemically competent cells for recombinant expression of Bst DNAP-I</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDEST007-Bst</td>
+      <td>PMID: 20813757</td>
+      <td></td>
+      <td>Original expression plasmid for Bst DNAP-I</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGDR11</td>
+      <td>PMID: 9401025</td>
+      <td></td>
+      <td>Expression plasmid for Bst DNAP-I used in this study</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bst_for</td>
+      <td>IDT</td>
+      <td></td>
+      <td>5’-ATCCATATGGCATTT ACGCTTGCTGAC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bst_rev</td>
+      <td>IDT</td>
+      <td></td>
+      <td>5’-ATGCGGCGGTCTCC TCGAGTCATTATTT CGCATCATACCACG-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DNA template</td>
+      <td>IDT</td>
+      <td></td>
+      <td>5’-GACGTACG TGATCGCA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>DNA primer</td>
+      <td>IDT</td>
+      <td></td>
+      <td>5’- GCGATCACGT-3’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XDS</td>
+      <td>PMID: 20124692</td>
+      <td>RRID: SCR_015652</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phaser</td>
+      <td>PMID: 19461840</td>
+      <td>RRID: SCR_014219</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix refine</td>
+      <td>PMID: 22505256</td>
+      <td>RRID: SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>PMID: 20383002</td>
+      <td>RRID: SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Molprobity</td>
+      <td>PMID: 2057044</td>
+      <td>RRID: SCR_014226</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Bst cloning, Expression, and Purification
 
 The Bst (amino acid residues 299–876) gene was PCR amplified from a previously constructed pDEST007-Bst vector generously donated by Prof Thomas Carell using Bst_for (ATCCATATGGCATTTACGCTTGCTGAC, IDT) and Bst_rev (ATGCGGCGGTCTCC TCGAGTCATTATTTCGCATCATACCACG, IDT) primers containing NdeI and BsaI restriction enzyme sites (underlined), respectively. Purified PCR product and the expression vector, pGDR11, were digested with NdeI and BsaI restriction enzymes (NEB) and ligated and the resulting pGDR11-Bst construct was sequence verified (Retrogen). DH5-α cells (NEB) harboring pGDR11-Bst were grown aerobically at 37°C in LB medium containing 100 μg mL−1 ampicillin. At an OD600 of 0.8, expression of a tagless Bst was induced with 1 mM isopropyl β-D-thiogalactoside at 18°C for 16 hr. Cells were harvested by centrifugation for 20 min at 3315 x g at 4°C and lysed in 40 mL lysis buffer (50 mM Tris-Cl pH 7.5, 1 mM EDTA, 10 mM BME, 0.1 % v/v NP-40, 0.1 % v/v Tween20, 5 mg egg hen lysozyme) by sonication. The cell lysate was centrifuged at 23,708 x g for 30 min and the clarified supernatant was heat treated for 20 min at 60°C and centrifuged again at 23,708 x g for 30 min. The supernatant was loaded onto two 5 mL HiTrap Q HP columns (GE) assembled in tandem and washed with low salt buffer (50 mM Tris-Cl pH 7.5, 100 mM NaCl, 1 mM EDTA, 10 mM BME). Bst was eluted with a high salt buffer (50 mM Tris-Cl pH 7.5, 1M NaCl, 0.1 mM EDTA, 10 mM BME) using a linear gradient. Eluted fractions containing Bst were visualized by SDS-PAGE, pooled, and dialyzed against low salt buffer. The dialyzed sample was loaded onto a 5 mL HiTrap Heparin column (GE), washed with low salt buffer, and eluted using a linear gradient of high salt buffer. Eluted fractions containing Bst were visualized using SDS-PAGE and concentrated using a 30 kDa cutoff Amicon centrifugal filter (Millipore). Further purification was achieved by size exclusion chromatography (Superdex 200 HiLoad 16/600, GE) pre-equilibrated with Bst buffer (50 mM Tris-Cl pH 7.5, 150 mM NaCl, 1 mM EDTA, 10 mM BME). Purified Bst was concentrated to 20 mg mL−1 for crystallization trials using a 30 kDa cutoff Amicon centrifugal filter (Millipore).
 
-## Crystallization procedures
+### Crystallization procedures
 
-## General information
+#### General information
 
 All reagents purchased from commercial suppliers were of analytical grade. Stock solutions of 2-methyl-2,4-pentanediol (Hampton Research), ammonium sulfate (Teknova) and 2-(N-morpholino) ethanesulfonic acid (Calbiochem) were filtered before use.
 
-## Sample preparation
+#### Sample preparation
 
 The DNA template (5’-GACGTACGTGATCGCA-3’, T) and primer (5’-GCGATCACGT-3’, P) strands, purchased from IDT, were used without further purification for crystallization trials. The P/T duplex (0.18 mM final concentration) was prepared by combining equal amounts of the primer and template strands in Bst buffer supplemented with 20 mM MgCl2, and annealing the strands by heating at 95°C for 5 min and cooling to 10°C over 10 min.
 
-## Crystallization
+#### Crystallization
 
 All polymerase samples were prepared at a final protein concentration of 4 mg mL−1. The binary complex (n) was prepared by incubating Bst polymerase with three molar equivalents of the P/T duplex at 37°C for 30 min. For the primer extension complexes, the n sample was further incubated a second time with 10 M excess of dTTP (n + 1 complex) or dTTP +dATP (n + 2 complex) and 10 mM manganese chloride at 37°C for 30 min. Following primer-extension, 24–well plate hanging drop trays were used to monitor crystal growth over a range of ammonium sulfate and MPD concentrations, based on previously published conditions (Johnson et al., 2003). Each drop contained 1 μL of sample mixed with 1 μL of mother liquor over 500 μL of mother liquor per well. Trays were stored in the dark at room temperature and crystal growth was generally observed after 2 days. For the in crystallo extension, single crystals of the n + 1 extension product obtained from a solution-catalyzed reaction were transferred to a drop containing stabilization buffer (0.1 M MES pH 5.8, 2 M ammonium sulfate, 2.5% MPD) supplemented with 30 mM dATP and soaked for 4 days prior to harvesting. For the pre-insertion complex, single crystals of the n + 1 extension product obtained from a solution-catalyzed reaction were transferred to a drop containing stabilization buffer supplemented with 30 mM adenosine-5’-[(β,γ)-imido] triphosphate (dAMPNPP) and soaked for 5–6 days before harvesting.
 
-## Data collection, structure determination, and refinement
+#### Data collection, structure determination, and refinement
 
 Five diffraction datasets corresponding to n, n + 1, n + 1 dATP soak, n + 1 dAMPNPP soak, and n + 2 were collected at the Advanced Light Source (Lawrence Berkeley National laboratory, Berkeley, CA) from single crystals. Images were indexed, integrated, and merged using XDS (Kabsch, 2010). Data collection statistics are summarized in Table 1. Molecular replacement (MR) using Phaser (McCoy et al., 2007) was performed using PDB structures 1L3S, 1L3T, and 1L3U (Johnson et al., 2003) as search models for n, n + 1, and n + 1 dATP soak datasets, respectively. MR for dAMPNPP was performed using 1L3T (Johnson et al., 2003) as the search model and MR for n + 2 was performed using the n + 1 structure as the search model. All final models were determined using iterative rounds of manual building through Coot (Emsley et al., 2010) and refinement with phenix (Afonine et al., 2012). The final stages of refinement employed TLS parameters for all structures. The stereochemistry and geometry of all structures were validated with Molprobity (Chen et al., 2010), with the final refinement parameters summarized in Table 1. Final coordinates and structure factors have been deposited in the Protein Data Bank. All molecular graphics were prepared with PyMOL (Delano, 2002).

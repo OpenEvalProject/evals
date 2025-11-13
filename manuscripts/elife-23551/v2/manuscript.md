@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.23551.001 Pests are a global threat to biodiversity, ecosystem function, and human health. Pest control approaches are thus numerous, but their implementation costly, damaging to non-target species, and ineffective at low population densities. The Trojan Female Technique (TFT) is a prospective self-perpetuating control technique that is species-specific and predicted to be effective at low densities. The goal of the TFT is to harness naturally occurring mutations in the mitochondrial genome that impair male fertility while having no effect on females. Here, we provide proof-of-concept for the TFT, by showing that introduction of a male fertility-impairing mtDNA haplotype into replicated populations of Drosophila melanogaster causes numerical population suppression, with the magnitude of effect positively correlated with its frequency at trial inception. Further development of the TFT could lead to establishing a control strategy that overcomes limitations of conventional approaches, with broad applicability to invertebrate and vertebrate species, to control environmental and economic pests. DOI: http://dx.doi.org/10.7554/eLife.23551.001
+Pests are a global threat to biodiversity, ecosystem function, and human health. Pest control approaches are thus numerous, but their implementation costly, damaging to non-target species, and ineffective at low population densities. The Trojan Female Technique (TFT) is a prospective self-perpetuating control technique that is species-specific and predicted to be effective at low densities. The goal of the TFT is to harness naturally occurring mutations in the mitochondrial genome that impair male fertility while having no effect on females. Here, we provide proof-of-concept for the TFT, by showing that introduction of a male fertility-impairing mtDNA haplotype into replicated populations of Drosophila melanogaster causes numerical population suppression, with the magnitude of effect positively correlated with its frequency at trial inception. Further development of the TFT could lead to establishing a control strategy that overcomes limitations of conventional approaches, with broad applicability to invertebrate and vertebrate species, to control environmental and economic pests.
 
 ## Introduction
 
@@ -45,27 +45,427 @@ Together, our experiments document the first experimental test of the ability of
 
 ## Results
 
-## Experiment 1 – population suppression under density-controlled conditions (regulated population size)
+### Experiment 1 – population suppression under density-controlled conditions (regulated population size)
 
-We found an interactive effect of TFT treatment and generation number on population sizes (
+We found an interactive effect of TFT treatment and generation number on population sizes (Tables 1 and 2A), and on the frequency of the TFT mutation (Tables 1 and 2B), across the 10 generations of the experiment (Figure 1A). Replicates initiated with TFT haplotype frequencies of 0% or 25% stabilized at average population sizes of 72.99 and 72.57 individuals across the 10 generations, respectively. However, replicates initiated with TFT haplotype frequencies of 50% or 75% declined over the first six generations to average population sizes of 67.24 and 66.75 respectively, with this magnitude of suppression (8%) maintained for the remainder of the experiment.
+
+**Table 1.**
+ Mean offspring numbers, TFT haplotype frequencies, and genotyping outcomes for the two experiments (regulated conditions and fluctuating conditions).Table 1—source data 1.Raw data for offspring number and TFT frequency for Experiments 1 and 2.Offspring number per population for each of 10 generations in Experiment 1 and 2. TFT frequency for each population at generations 1, 5 and 10 for Experiment 1 and at generation 10 for Experiment 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2" colspan="2"></th>
+      <th>TFT treatment (starting frequency)</th>
+      <th>0% TFT</th>
+      <th>25% TFT</th>
+      <th>50% TFT</th>
+      <th>75% TFT</th>
+    </tr>
+    <tr>
+      <th>Populations [n]</th>
+      <th>21</th>
+      <th>21</th>
+      <th>21</th>
+      <th>21</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="14">Experiment</td>
+      <td rowspan="8">Regulated</td>
+      <td>F1 Frequency</td>
+      <td>0.00</td>
+      <td>0.26 ± 0.03</td>
+      <td>0.44 ± 0.03</td>
+      <td>0.63 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>F5 Frequency</td>
+      <td>0.00</td>
+      <td>0.15 ± 0.03</td>
+      <td>0.63 ± 0.03</td>
+      <td>0.71 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>F10 Frequency</td>
+      <td>0.00</td>
+      <td>0.17 ± 0.03</td>
+      <td>0.67 ± 0.03</td>
+      <td>0.80 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>Loss</td>
+      <td>-</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Fixation</td>
+      <td>-</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Heteroplasmy</td>
+      <td>-</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Mean offspring number (F10)</td>
+      <td>74.15 ± 1.00</td>
+      <td>72.05 ± 0.89</td>
+      <td>67.43 ± 0.99</td>
+      <td>66.38 ± 0.70</td>
+    </tr>
+    <tr>
+      <td>Population extinction</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td rowspan="6">Fluctuating</td>
+      <td>F10frequency</td>
+      <td>0.00</td>
+      <td>0.35 ± 0.06</td>
+      <td>0.59 ± 0.06</td>
+      <td>0.75 ± 0.05</td>
+    </tr>
+    <tr>
+      <td>Loss</td>
+      <td>-</td>
+      <td>4</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Fixation</td>
+      <td>-</td>
+      <td>1</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Heteroplasmy</td>
+      <td>-</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Mean offspring number (F10)</td>
+      <td>80.47 ± 5.12</td>
+      <td>81.19 ± 4.59</td>
+      <td>78.56 ± 5.63</td>
+      <td>85.86 ± 3.73</td>
+    </tr>
+    <tr>
+      <td>Population extinction</td>
+      <td>2</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ (A) Linear mixed model showing effects of TFT treatment and generation number on mean offspring number, and (B) generalized linear mixed model of effects of TFT treatment and generation on TFT haplotype frequency of populations with regulated population size (Experiment 1). There was no evidence of overdispersion in the model of TFT haplotype frequency (dispersion parameter = 0.766), and addition of an observation-level random effect to the final model did not change this parameter (dispersion parameter = 0.767), nor the parameter estimates of the model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">(A) Offspring number</th>
+      <th colspan="3">(B) TFT frequency</th>
+    </tr>
+    <tr>
+      <th>Fixed effects</th>
+      <th>χ2</th>
+      <th>Df</th>
+      <th>p</th>
+      <th>χ2</th>
+      <th>Df</th>
+      <th>p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TFT treatment</td>
+      <td>2.23</td>
+      <td>3</td>
+      <td>0.53</td>
+      <td>38.14</td>
+      <td>2</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Generation</td>
+      <td>14.73</td>
+      <td>9</td>
+      <td>0.10</td>
+      <td>6.21</td>
+      <td>2</td>
+      <td>0.045</td>
+    </tr>
+    <tr>
+      <td>TFT treatment × generation</td>
+      <td>51.09</td>
+      <td>27</td>
+      <td>0.003</td>
+      <td>23.52</td>
+      <td>4</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Random effects</td>
+      <td>SD*</td>
+      <td></td>
+      <td></td>
+      <td>SD*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological replicate</td>
+      <td>0.81</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Experimental population</td>
+      <td>1.11</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>5.48</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="7">* Standard deviation</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/23551/elife-23551-fig1-v2.jpg)
 
-**Figure 1.:** (A) Mean offspring number (±SEM), and B) mean haplotype frequencies (±SEM) of experimental populations in Experiment 1 over 10 generations, under density-controlled conditions. Founding populations (F) were established with varying proportions (0%, 25%, 50%, 75%) of the TFT haplotype. Each generation was propagated with 80 eggs. Genotyping was conducted at generations 1, 5, and 10.0DOI: http://dx.doi.org/10.7554/eLife.23551.00610.7554/eLife.23551.007Figure 1—source data 1.Offspring numbers per population for each of 10 generations and TFT frequencies for each population at generations 1, 5 and 10.DOI: http://dx.doi.org/10.7554/eLife.23551.007
+**Figure 1.:** (A) Mean offspring number (±SEM), and B) mean haplotype frequencies (±SEM) of experimental populations in Experiment 1 over 10 generations, under density-controlled conditions. Founding populations (F0) were established with varying proportions (0%, 25%, 50%, 75%) of the TFT haplotype. Each generation was propagated with 80 eggs. Genotyping was conducted at generations 1, 5, and 10.
 
-We genotyped females from each experimental population at generations 1, 5 and 10, and found that the population suppression effect across generations was associated with the frequency of the TFT haplotype (χ
+We genotyped females from each experimental population at generations 1, 5 and 10, and found that the population suppression effect across generations was associated with the frequency of the TFT haplotype (χ2=21.37, p=<0.003; Table 3, Figure 2A–C). There was no evidence of consistent TFT haplotype purging; while the 25% TFT treatment ended (at generation 10) at a mean haplotype frequency of 0.17, ending frequencies were 0.67 and 0.80 for the 50% and 75% TFT treatments respectively (Figure 1B; Table 1). Over the course of the trial, the TFT haplotype was purged from four replicates and went to fixation in three (out of total of 63 populations).
+
+**Table 3.**
+ Linear mixed model of association of TFT haplotype frequency on mean offspring number in populations with regulated population size (Experiment 1).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Fixed effects</th>
+      <th>χ2</th>
+      <th>Df</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TFT frequency</td>
+      <td>21.37</td>
+      <td>7</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Random effects</td>
+      <td>SD*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological replicate</td>
+      <td>0.31</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Experimental population</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Generation</td>
+      <td>2.77</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>6.40</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="4">* Standard deviation</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/23551/elife-23551-fig2-v2.jpg)
 
-**Figure 2.:** Mean offspring number (±SEM) across experimental populations (A–C) with regulated population size at generations 1, 5, and 10 in Experiment 1; and (D) with fluctuating population size at generation 10 in Experiment 2. Haplotype frequencies were determined by genotyping seven females for each experimental population at each of three generations (1, 5, and 10; n = 1323) in Experiment 1; and by genotyping nine females for each experimental population at generation 10 (n = 567) in Experiment 2.DOI: http://dx.doi.org/10.7554/eLife.23551.00910.7554/eLife.23551.010Figure 2—source data 1.Offspring numbers per population for each of 10 generations in Experiment 1 and 2. TFT frequencies for each population at generations 1, 5 and 10 for Experiment 1 and at generation 10 for Experiment 2.DOI: http://dx.doi.org/10.7554/eLife.23551.010
+**Figure 2.:** Mean offspring number (±SEM) across experimental populations (A–C) with regulated population size at generations 1, 5, and 10 in Experiment 1; and (D) with fluctuating population size at generation 10 in Experiment 2. Haplotype frequencies were determined by genotyping seven females for each experimental population at each of three generations (1, 5, and 10; n = 1323) in Experiment 1; and by genotyping nine females for each experimental population at generation 10 (n = 567) in Experiment 2.
 
-## Experiment 2 – population suppression under stochastic dynamics (Fluctuating population size)
+### Experiment 2 – population suppression under stochastic dynamics (Fluctuating population size)
 
-The less-constraining rearing conditions of this experiment led to mean changes in population size between any two generations of approximately 30% across all experimental populations (χ
+The less-constraining rearing conditions of this experiment led to mean changes in population size between any two generations of approximately 30% across all experimental populations (χ2=46.72, p=<0.001; Figure 3; Table 4), with four experimental populations (two in each of the 0% and 50% TFT treatments) going extinct. Under these conditions, there was no detectable effect of the TFT treatment on population size across the experiment (Table 4A). Nor did we detect an association between the TFT haplotype frequency of each experimental population at generation 10 and the final population size (Table 5, Figure 2D). However, the TFT haplotype was still stably maintained in most cases; ending frequencies were 0.35, 0.59 and 0.75 for the 25%, 50% and 75% TFT treatments, respectively (Table 1, Table 4B, Figure 3). Over the course of the trial, the TFT haplotype was lost from five replicates and went to fixation in nine (out of a total of 63 populations). In two replicates of the 50% TFT treatment, we detected 11 cases where flies carried both the TFT and wildtype haplotype (five individuals in one replicate and six in the other), indicating at least two cases of biparental mtDNA inheritance in the experiment.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/23551/elife-23551-fig3-v2.jpg)
 
-**Figure 3.:** Mean offspring number (±SEM, on vertical axis on left-hand side), and mean haplotype frequencies (±SEM, right-hand side) at generation 10, of experimental populations. Founding populations (F) were established with varying proportions (0%, 25%, 50%, 75%) of fruit fly pairs harboring the mt:Cyt-b TFT mutation. Each generation, each experimental population was propagated with all offspring of the previous generation.0DOI: http://dx.doi.org/10.7554/eLife.23551.01110.7554/eLife.23551.012Figure 3—source data 1.Offspring numbers per population for each of 10 generations and TFT frequency for each population at generation 10.DOI: http://dx.doi.org/10.7554/eLife.23551.012
+**Figure 3.:** Mean offspring number (±SEM, on vertical axis on left-hand side), and mean haplotype frequencies (±SEM, right-hand side) at generation 10, of experimental populations. Founding populations (F0) were established with varying proportions (0%, 25%, 50%, 75%) of fruit fly pairs harboring the mt:Cyt-b TFT mutation. Each generation, each experimental population was propagated with all offspring of the previous generation.
+
+**Table 4.**
+ (A) Linear mixed model showing effects of TFT treatment and generation on mean offspring number; and (B) generalized linear mixed model of effects of TFT treatment on TFT haplotype frequency of populations with fluctuating population size (Experiment 2). When reanalyzing mean offspring number (A), having excluded the 15 zero values in the dataset resulting from three vial extinctions (two from the TFT 0% treatment, and one from the TFT 50% treatment), the effect of TFT treatment on offspring number remained statistically non-significant (χ2=3.2, p=0.36). The binomial model of TFT frequency (b) indicated overdispersion (overdispersion parameter = 1.85), and thus an observation-level random effect was added (experimental population) to the model (overdispersion parameter of final model = 1.07).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">(A) Offspring number</th>
+      <th colspan="3">(B) TFT frequency</th>
+    </tr>
+    <tr>
+      <th>Fixed effects</th>
+      <th>χ2</th>
+      <th>Df</th>
+      <th>P</th>
+      <th>2</th>
+      <th>Df</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TFT treatment</td>
+      <td>4.98</td>
+      <td>3</td>
+      <td>0.17</td>
+      <td>20.33</td>
+      <td>2</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Generation</td>
+      <td>46.72</td>
+      <td>9</td>
+      <td>&lt;0.001</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Random effects</td>
+      <td>SD*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological replicate</td>
+      <td>3.1</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Experimental population</td>
+      <td>11.2</td>
+      <td>-</td>
+      <td>-</td>
+      <td>1.32</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>20.85</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="7">* Standard deviation</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ Linear model of association of TFT haplotype frequency on mean offspring number in populations with fluctuating population size (Experiment 2).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Fixed effects</th>
+      <th>χ2</th>
+      <th>Df</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TFT Frequency</td>
+      <td>4.95</td>
+      <td>9</td>
+      <td>0.839</td>
+    </tr>
+    <tr>
+      <td>Random effects</td>
+      <td>SD*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological replicate</td>
+      <td>0</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Residual</td>
+      <td>24.93</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td colspan="4">* Standard deviation</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -87,23 +487,23 @@ Combined with previous studies, and a solid theoretical conceptual basis, our re
 
 ## Materials and methods
 
-## Fly strains
+### Fly strains
 
 The experiment harnessed a laboratory population of fruit flies that was originally collected in Dahomey (Benin, West Africa) in 1970 (Partridge and Andrews, 1985), and which has been kept at large effective population sizes since (at 25°C on a 12:12 light: dark cycle). To maintain the high levels of nuclear allelic variation segregating within the Dahomey population (Gardner et al., 2005; Griffin et al., 2016), populations have been kept in large replicate populations on a discrete-generations cycle since these were obtained from Prof Linda Partridge in 2010. This is achieved by propagating each generation with around 900 adult flies of 4 days of adult age, dispersed across three 250 ml bottles, each containing 75 ml of a potato-dextrose-agar food substrate. The flies are provided with a one to two hour ovipositioning period, after which the number of eggs per bottle is manually reduced (trimmed) to 300–350. Adult flies are then removed from the bottles and then, for the subsequent generation, emerging adult offspring that eclose from each bottle are admixed prior to their re-sorting into three separate bottles to start the propagation procedure for the following generation.
 
 We initiated six replicates of the Dahomey population, and introgressed the TFT mtDNA haplotype (sourced from Brownsville [BRO] Texas, USA; Rand et al., 1994) into three of these replicates. The other three replicates were designated to the control, and they hosted their own coevolved mtDNA haplotype sourced from Dahomey [DAH] (Partridge and Andrews, 1985). While the BRO haplotype confers low male fertility, with no recorded negative effects on female fertility, the DAH haplotype is putatively healthy and confers normal fertility in both sexes (Camus et al., 2012; Yee et al., 2013; Wolff et al., 2016b; Dowling et al., 2015; Camus et al., 2015).
 
-All six replicates went through the same handling procedures leading into the experiment, over successive generations, which ensured effective population sizes across all replicates were carefully controlled with the expectation that levels of segregating nuclear variance were highly similar across replicates. Specifically, to initiate replicates harboring the TFT haplotype, 45 virgin females were collected from a genetic strain in which the BRO haplotype is placed alongside an isogenic nuclear background, called
+All six replicates went through the same handling procedures leading into the experiment, over successive generations, which ensured effective population sizes across all replicates were carefully controlled with the expectation that levels of segregating nuclear variance were highly similar across replicates. Specifically, to initiate replicates harboring the TFT haplotype, 45 virgin females were collected from a genetic strain in which the BRO haplotype is placed alongside an isogenic nuclear background, called w1118 (Bloomington #5905; Ryder et al., 2004). These females were then crossed to 50 males from the Dahomey lab population. In the next generation, 45 virgin daughters were collected from each strain replicate, and again backcrossed to 50 males from the Dahomey lab population. This backcrossing procedure progressed for 12 generations. To initiate replicates harbouring the DAH haplotype, the same procedure was followed, but the haplotypes were sourced directly from the Dahomey lab population, via an initial mating of 45 virgin females to 50 males collected from Dahomey. Then in the next generation, the virgin daughters of this cross were backcrossed to males of the stock Dahomey population, and this procedure repeated each generation (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/23551/elife-23551-fig4-v2.jpg)
 
-**Figure 4.:** The TFT-bearing BRO haplotype and the putatively healthy DAH haplotype were introgressed into the outbred nuclear background Dahomey in three independent replicates (i.e. BRO:Dahomey1-3; DAH:Dahomey1-3). Experimental populations were established by supplementing DAH:Dahomey test populations (DAH:Dahomey1-3) with varying contributions of fly pairs bearing the TFT haplotype (0%, 25%, 50%, 75%) sourced from the corresponding BRO:Dahomey replicate population (i.e. DAH:Dahomey1/BRO:Dahomey1; DAH:Dahomey2/BRO:Dahomey2; DAH:Dahomey3/BRO:Dahomey3). For each of the three biological replicates and for each treatment class (0%, 25%, 50%, 75%), we established seven technical replicate populations. These experimental populations were further duplicated, one cohort providing populations for the regulated population size approach (Experiment 1), and one cohort for the fluctuating population size approach (Experiment 2).DOI: http://dx.doi.org/10.7554/eLife.23551.015
+**Figure 4.:** The TFT-bearing BRO haplotype and the putatively healthy DAH haplotype were introgressed into the outbred nuclear background Dahomey in three independent replicates (i.e. BRO:Dahomey1-3; DAH:Dahomey1-3). Experimental populations were established by supplementing DAH:Dahomey test populations (DAH:Dahomey1-3) with varying contributions of fly pairs bearing the TFT haplotype (0%, 25%, 50%, 75%) sourced from the corresponding BRO:Dahomey replicate population (i.e. DAH:Dahomey1/BRO:Dahomey1; DAH:Dahomey2/BRO:Dahomey2; DAH:Dahomey3/BRO:Dahomey3). For each of the three biological replicates and for each treatment class (0%, 25%, 50%, 75%), we established seven technical replicate populations. These experimental populations were further duplicated, one cohort providing populations for the regulated population size approach (Experiment 1), and one cohort for the fluctuating population size approach (Experiment 2).
 
 Theoretically, each generation of introgression of the TFT haplotype into the Dahomey nuclear background increases the contribution of the Dahomey nuclear background by 50%, and thus, after 12 generations of introgression the contribution of Dahomey nuclear alleles to each TFT population replicate should have exceeded 99.98%. Thus, following the introgression procedure, we had six replicate strains, each of which contained a large representative sample of the nuclear alleles segregating within the Dahomey laboratory population; three of which however harbored the BRO haplotype harboring the candidate TFT mutations (denoted BRO/Dahomey), and the other three the DAH haplotype (denoted DAH/Dahomey).
 
 All experimental crosses involved 4-day-old flies in 40 ml vials containing 6 ml of potato-dextrose-agar medium (at 25.0°C and a 12 hr: 12 hr light:dark cycle). Populations were maintained at a density of 80 flies per vial because at this density fly populations are sufficiently large to be stably maintained while limiting nutritional stress (e.g. food scarcity) which otherwise may impact development, fitness and behavior of affected fly populations (Santos et al., 1994). Further, sensitivity analyses within our a-priori demographic modeling, which informed our TFT treatments, showed that predictions were robust with respect to a modelled lab population size of 80 individuals (see Supplementary information in Wolff et al., 2016b).
 
-## Experimental design
+### Experimental design
 
 To test the capacity of the candidate TFT haplotype to effect population suppression within a multi-generational framework, in each experiment we established experimental target populations (DAH/Dahomey) that were seeded with varying contributions of the TFT haplotype-bearing BRO/Dahomey individuals (a TFT treatment with four levels). All populations were established with 80 adult fruit flies at 1:1 sex ratio, and with the TFT haplotype contributing to 0% (control), 25%, 50%, and 75% of the starting population. All four levels of the TFT treatment were established for each of the three biological BRO/Dahomey replicates, with each BRO/Dahomey replicate matched to a corresponding DAH/Dahomey replicate. Within each strain replicate, each level of the TFT treatment was itself replicated seven times (i.e. three biological replicate BRO:Dahomey populations × four treatment levels × seven technical replicates = 84 experimental populations; see Figure 4).
 
@@ -111,13 +511,13 @@ We conducted two separate experiments, which ran concurrently. In the first expe
 
 In the second experiment, all procedures were identical with the exception that the 84 experimental populations were not subjected to egg-trimming each generation (hereafter referred to as: Experiment 2; Fluctuating population size). Instead, once established, each ovipositioning period per experimental population was stopped when around 50% of the population vials were estimated to contain in excess of 80 eggs. Once this threshold was reached, flies were collected and stored at −20°C, eggs were left to develop to eclosion, and the number of eclosed flies per population in each generation was counted. This protocol diverges from the rearing conditions under which our laboratory populations are typically maintained, with the populations experiencing high levels of competition at both larval and adult stages for the 6 ml of available food, which routinely led to generations of population contractions, interspersed by generations of population expansions. This experimental design was used as an approximation for the demographic conditions natural populations may be exposed to, where single populations potentially transition through severe population bottlenecks, in which genetic drift would be expected to play a larger role in shaping frequencies of co-occurring mtDNA haplotypes relative to the regulated conditions of Experiment 1.
 
-## Genotyping
+### Genotyping
 
 DNA from single females was extracted in 96-well format using Wizard Genomic DNA Purification Kit (Promega, Madison, WI 53711, USA) following the manufacturer’s instructions for single sample extractions, and using a third of recommended volumes to adjust for 96-well plate well volume. We invested most genotyping resources on Experiment 1, extracting DNA from seven females in each of three generations (1, 5, and 10) from each of the 63 populations that had been seeded with the TFT haplotype BRO (25%, 50%, and 75% BRO:Dahomey contribution; sample size: 63 populations × seven females × three generations = 1323 females).
 
 For Experiment 2, we extracted DNA from nine females, all from generation 10 only, from each of the 63 populations that had been seeded with the TFT haplotype (25%, 50%, and 75% BRO:Dahomey contribution; sample size: 63 populations × nine females × one generation = 567 females). Populations established with DAH:Dahomey only (control populations) were not genotyped for either experimental cohort (their genotypes were fixed at 0% TFT haplotype). All DNA extracts were adjusted to DNA concentrations of 5 ng*µl−1 and a final volume of 50 µl per sample. Genotyping was conducted using a custom iPLEX Gold genotyping assay on the Sequenom MassARRAY Analyzer four system at Geneworks Pty Ltd, Thebarton, Australia.
 
-## Statistical analysis
+### Statistical analysis
 
 The structure of the data is outlined in Figure 4. We fitted linear mixed models to phenotype data (offspring number), and generalized linear mixed models to genotype data (frequency of the TFT haplotype), using the lme4 package 1.1.12 (Bates et al., 2015) in R 3.0.3 (R Development Core Team, 2013).
 

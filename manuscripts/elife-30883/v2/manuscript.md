@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.30883.001 MyD88 is the main adaptor molecule for TLR and IL-1R family members. Here, we demonstrated that T-cell intrinsic MyD88 signaling is required for proliferation, protection from apoptosis and expression of activation/memory genes during infection with the intracellular parasite Trypanosoma cruzi , as evidenced by transcriptome and cytometry analyses in mixed bone-marrow (BM) chimeras. The lack of direct IL-18R signaling in T cells, but not of IL-1R, phenocopied the absence of the MyD88 pathway, indicating that IL-18R is a critical MyD88-upstream pathway involved in the establishment of the Th1 response against an in vivo infection, a presently controvert subject. Accordingly, Il18r1 mice display lower levels of Th1 cells and are highly susceptible to infection, but can be rescued from mortality by the adoptive transfer of WT CD4 −/− + T cells. Our findings establish the T-cell intrinsic IL-18R/MyD88 pathway as a crucial element for induction of cognate Th1 responses against an important human pathogen.
+MyD88 is the main adaptor molecule for TLR and IL-1R family members. Here, we demonstrated that T-cell intrinsic MyD88 signaling is required for proliferation, protection from apoptosis and expression of activation/memory genes during infection with the intracellular parasite Trypanosoma cruzi, as evidenced by transcriptome and cytometry analyses in mixed bone-marrow (BM) chimeras. The lack of direct IL-18R signaling in T cells, but not of IL-1R, phenocopied the absence of the MyD88 pathway, indicating that IL-18R is a critical MyD88-upstream pathway involved in the establishment of the Th1 response against an in vivo infection, a presently controvert subject. Accordingly, Il18r1−/− mice display lower levels of Th1 cells and are highly susceptible to infection, but can be rescued from mortality by the adoptive transfer of WT CD4+ T cells. Our findings establish the T-cell intrinsic IL-18R/MyD88 pathway as a crucial element for induction of cognate Th1 responses against an important human pathogen.
 
 ## Introduction
 
@@ -39,39 +39,103 @@ To investigate the role of T-cell intrinsic MyD88 signaling on Th1 differentiati
 
 ## Results
 
-## Myd88−/− Th1 cells attain lower frequencies in infected mixed BM chimeras
+### Myd88−/− Th1 cells attain lower frequencies in infected mixed BM chimeras
 
 We first generated BM chimeras in which WT mice were irradiated and reconstituted with either WT or Myd88−/− BM cells. Infected Myd88−/−→WT mice die earlier than WT→WT chimeras, displaying mortality kinetics similar to non-chimeric Myd88−/− and WT mice, respectively (Figure 1A and B). This result shows that chimeric mice lacking MyD88 expression exclusively in cells of hematopoietic origin present a higher level of susceptibility to infection, similar to Myd88−/− mice. Next, we generated mixed BM chimeras. For this, irradiated WT B6 x B6.SJL F1 (CD45.1+CD45.2+) mice were reconstituted with a 1:1 mix of WT (CD45.1+) and Myd88−/− (CD45.2+) BM cells (Figure 1—figure supplement 1A). Six to 8 weeks after reconstitution, non-infected mixed chimeric mice show equivalent frequencies of WT and Myd88−/−CD8+ and CD4+ T cells (Figure 1C–E). Including residual WT recipient cells (CD45.1+CD45.2+), the mixed BM chimeras have more than 50% of WT DC in their spleen (Figure 1—figure supplement 1B) able to be fully activated by TLR pathways during infection with T. cruzi. At day 14 pi, we observed a preferential expansion of WT CD4+ T cells at the expense of Myd88−/−CD4+ T cells and, to a lower extent, of WT CD8+ T cells, at the expense of Myd88−/−CD8+ T cells (Figure 1C–E). This scenario was even more dramatic when the frequencies of IFN-γ+ cells among WT and Myd88−/−CD4+ T cells were analyzed. In order to determine the frequency of Ag-specific IFN-γ-producing CD8+T cells, total splenocytes from infected mixed BM chimeras were cultured in the presence of the Kb-restricted TSKB20 peptide, an immunodominant CD8 epitope (Oliveira et al., 2010). Infected APCs, present in the spleen of infected mice, are able to induce Ag-specific stimulation of CD4+ T cells in vitro, without the need of adding extra T. cruzi-derived Ag into the cultures (Oliveira et al., 2010). As shown in Figure 1F and G, the frequency of IFN-γ+CD4+ T cells of Myd88−/− origin was severely diminished compared to the frequency of WT IFN-γ+CD4+ T cells. The levels of Myd88−/−IFN-γ+CD8+ T cells were also diminished compared to WT IFN-γ+CD8+ T cells, but to a lower extent (Figure 1F and H). In mixed BM chimeras, similar to what was found in WT B6 mice (Oliveira et al., 2010), CD4+IFN-γ+ T cells are first detected around day 10 pi, their numbers attain a maximum around day 14 pi and then begin to decline (Figure 1—figure supplement 1C). Therefore, kinetic differences cannot explain the observed disparity in the percentages of IFN-γ+ cells between WT and Myd88−/− CD4+ T cells.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig1-v2.jpg)
+
+**Figure 1.:** (A, B) Survival curves of mice infected ip with 2 × 103 blood trypomastigotes of the Y strain. (A) Myd88−/− (CD45.2+)→WT (B6 x B6.SJL F1, CD45.1+CD45.2+) and WT (B6.SJL, CD45.1+)→WT (B6 x B6.SJL F1, CD45.1+CD45.2+) chimeric mice 8 weeks after reconstitution and (B) WT (B6) and Myd88−/− mice. Survival curves are statistically different (p<0.05). All surviving mice in (A) were euthanized on day 25 pi (n = 6 to 9 per group). (C) Representative dot plots showing frequencies of CD45.1+ (WT) and CD45.2+ (Myd88−/−) among gated CD4+ or CD8+ spleen T cells from control non-infected or infected mixed BM chimeras. (D, E) Mean frequencies of data shown in (C). (F) Representative dot plots showing frequencies of IFN-γ+CD45.1+ and IFN-γ+CD45.2+ among gated CD4+ or CD8+ T cells. (G, H) Mean frequencies of data shown in (F). Mice (n = 4 per group) from control or infected mixed BM chimeric mice were Individually analyzed on day 14 pi. Error bars = SEM, *p≤0.05; **p≤0.01 (two-tailed Student t test). Data are representative of 4 independent experiments. Experimental design, frequency of CD45.1+ (B6.SJL, WT) and CD45.2+ (Myd88−/−) gated on CD11chigh spleen cells, as well as the kinetics of IFN-γ+CD4+ T cell response are shown in Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Experimental design for mixed BM chimera construction. Irradiated WT (B6 x B6.SJL F1) mice were reconstituted with a 1:1 mix of WT (B6.SJL, CD45.1+) and Myd88−/− (CD45.2+) BM cells. (B) Representative frequencies of CD45.1+ (B6.SJL, WT) and CD45.2+ (Myd88−/−) cells gated on CD11chi spleen cells of non-infected mixed BM chimeric mice. (C) Kinetics of the frequency of IFN-γ+CD4+ T cells among CD4+CD45.1+ WT (white circles) and CD4+CD45.2+Myd88−/− (black squares) splenocytes from infected mixed BM chimeric mice.
+
 We next confirmed the lower expansion of Myd88−/−IFN-γ+CD4+ T lymphocytes in non-irradiated Rag2−/− recipient mice reconstituted with a 1:1 mix of WT and Myd88−/− splenocytes. In Rag2−/− recipient mice, 100% of host APCs express MyD88 and, again, we found that percentages and absolute numbers of CD4+IFN-γ+ T cells were much lower among Myd88−/−, than among WT cells (Figure 2). The same was true for IFN-γ-producing CD8+ T cells (Figure 2—figure supplement 1). Together, these results clearly demonstrate that T cell-intrinsic MyD88 signaling is required for the expansion of Th1 cells, even when the totality of APCs in recipient mice expresses MyD88 and, therefore, are fully competent to provide co-stimulatory signals and cytokines.
 
-## WT and Myd88−/− CD4+ T cells of infected mixed BM chimeras display different gene-expression programs
+![Figure 2.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig2-v2.jpg)
+
+**Figure 2.:** (A) Gate strategy and dot plot analysis of IFN-γ+CD4+ T cells among CD4+CD45.2+ (Myd88−/−) or among CD4+CD45.1+ (B6) plus CD4+CD45.2+CD45.1+(B6xB6.SJL F1) (WT) T cells in Rag2−/− mice, reconstituted as described in Material and Methods section. (B) Mean frequencies and absolute cell numbers of Myd88−/− (rose) and WT (red) total CD4+ or IFN-γ+CD4+ T cells gated on CD4+ T cells from reconstituted naïve or infected Rag2−/− mice, individually analyzed on day 14 pi (n = 3 to 4). Error bars = SEM, *p≤0.05; **p≤0.01; ****p≤0.000 (two-tailed Student t-test). Data are representative of 2 independent experiments. Results obtained for the CD8+ T cell subpopulation are shown in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Gate strategy and dot plot analysis of IFN-γ+CD4+ T cells among CD8+CD45.2+ (Myd88−/−) or among CD8+CD45.1+ (B6) plus CD8+CD45.2+CD45.1+(B6xB6.SJL F1) (WT) T cells. (B–C) Mean frequencies and absolute cell numbers of Myd88−/− (light blue) and WT (dark blue) of (B) total CD8+or (C) IFN-γ+CD8+ T cells in reconstituted naïve or infected Rag2−/− mice, individually analyzed on day 14 pi (n = 3 to 4). Error bars = SEM, *p≤0.05; **p≤0.01; ***p≤0.001, ****p≤0.0001 (two-tailed Student t-test). Data are representative of 2 independent experiments.
+
+### WT and Myd88−/− CD4+ T cells of infected mixed BM chimeras display different gene-expression programs
 
 We then compared gene expression between WT and Myd88−/−CD4+ T cells sorted from the spleen of infected mixed BM chimeras (Figure 3A). Several Th1 related genes as Ifng, Ccr5, Ccl5, Ccl4 and Ccl3 were upregulated in WT CD4+ T cells compared to Myd88−/−CD4+ T cells (Figure 3B). Table 1 (Figure 3—source data 1) lists genes upregulated and downregulated in CD4+ T cells from Myd88−/− vs WT (B6) origin. Gene expression differences between WT and Myd88−/− CD4+ T cells were then used in Gene Set Enrichment Analysis (GSEA) pre-ranking analysis (Figure 3C and D). Interestingly, sets of genes related to central and effector memory CD4+ T cells (CM and EM, respectively) (Abbas et al., 2009) were upregulated in WT cells, while genes expressed in naïve cells were relatively upregulated in Myd88−/−CD4+ T cells (Figure 3C). Moreover, sets of genes related to anti-apoptotic pathways, as well as to cell cycle and mitosis were upregulated in WT CD4+ T cells (Figure 3D), in accordance with the higher expansion of WT cells observed in mixed BM chimeras (Figure 1) and with previous studies reporting that Myd88−/− T cells have increased propensity for apoptosis (Frazer et al., 2013; Tomita et al., 2008). Interactions among the genes were assessed and visualized by Ingenuity Pathway Analysis (IPA) database, indicating a network of naïve CD4+ T cell genes, which are highly expressed in Myd88−/−CD4+ T cells (Figure 3—figure supplement 1A) and a network of EM genes highly expressed in WT CD4+ T cells (Figure 3—figure supplement 1B). Therefore, the analyses of RNA microarray data are in conformity with our cytometry results and indicate that CD4+ T cell-intrinsic MyD88 signaling is necessary for sustaining a more robust Th1 differentiation program, proliferation and resistance to apoptosis, resulting in selective expansion of WT IFN-γ+CD4+ T cells in response to infection with T. cruzi.
 
-## Lack of T cell-intrinsic IL-18R or MyD88 signaling leads to lower frequencies and numbers of Th1 cells but does not affect CD8+CTLs
+![Figure 3.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig3-v2.jpg)
+
+**Figure 3.:** (A) Experimental design: CD4+CD45.1+ cells (WT) and CD4+CD45.2+ cells (Myd88−/−) were sorted (99% of purity) from the pool of splenocytes obtained from infected mixed BM chimeric mice at day 14 pi (n = 4). Two individually sorted samples of each cell population (WT or Myd88−/−) were assayed independently for gene expression profile. (B) Heat map of normalized expression of Th1 signature genes in sorted WT or Myd88−/− CD4+ T cells: upregulated in red, downregulated in blue. (C) Gene Set Enrichment Analysis (GSEA) applied to genes highly expressed in WT or Myd88−/− CD4+ T cells using gene signatures of naïve and memory CD4+ T cells. Gene sets from naïve, central memory (CM), effector memory (EM) CD4+ T cells were generated using the top 200 differentially expressed genes in each subset (see Methods). Gene sets enriched in WT cells (red bars) or in Myd88−/− cells (blue bars) are displayed. (D) GSEA using Selected BioCarta (top) and Reactome (bottom) pathways (nominal p-value<0.05) enriched in WT cells (red bars) or in Myd88−/− cells (blue bars) are displayed. GSEA was performed using the pre-ranked genes and parameters as described in (C). Colors represent higher expression in WT (red) or Myd88−/− (blue). Gene networks with genes in core from GSEA analysis are shown in Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Interactions among the genes were assessed and visualized by Ingenuity Pathway Analysis (IPA) database. Darker colors represent higher expression in (A) Myd88−/− (blue) or in (B) WT (red) CD4+ T cells sorted from the pool of splenocytes obtained from infected mixed BM chimeric mice. Network in (A) represent naïve CD4+ T cell genes highly expressed in Myd88−/− CD4+ T cells. Network in (B) represent EM CD4+ T cell genes highly expressed in WT CD4+ T cells.
+
+### Lack of T cell-intrinsic IL-18R or MyD88 signaling leads to lower frequencies and numbers of Th1 cells but does not affect CD8+CTLs
 
 Since MyD88 is an essential adaptor molecule not only downstream of most TLRs, but also of IL-1 and IL-18 pathways, we investigated whether the lack of IL-1R or IL-18R would by itself reproduce the effects observed in Myd88−/− T cells. First, we performed a kinetic study of the presence of IL-1β and IL-18 in the serum of infected B6 mice. As shown in Figure 4—figure supplement 1A, a higher level of IL-1β was detected on day 13 pi, although an early peak of this cytokine was also detected at 12 hr after infection. On the other hand, we could only detect IL-18 at a later time point of infection, at day 13 pi (Figure 4—figure supplement 1B). Note that peaks of IL-1β and IL-18 at day 13 pi were paralleled by increased percentages of Th1 cells in the spleen of infected mice (Figure 4—figure supplement 1C). We then analyzed the expression of IL-1R1 and IL-18R1 receptors on splenic T cells from infected B6 mice (at day 14 pi) and from non-infected controls. As shown in Figure 4A, at this time point of infection, around 50% of CD44hiCD4+ T cells express the master gene of Th1 cells, T-bet, and the majority of T-bet+CD44hiCD4+ T cells expresses IL-18R1 but not IL-1R1 (Figure 4B). In fact, no upregulation of IL-1R1 was observed on CD44hiCD4+ T splenocytes from infected mice (Figure 4B) and a higher percentage of T-bet+CD44hiCD4+ T cells expresses IL-1R1 in non-infected controls than in infected mice (Figure 4C). To further dissect this issue, we stained splenic T cells from infected B6 mice with anti-CD44 and anti-CD62L. As shown in Figure 4D, IL-18R1 is expressed mainly on CD44hiCD62L- (effector and EM) CD4+ T cells of infected mice, while IL-1R1 is mainly expressed on CD44hiCD62L+ (CM) CD4+ T cells. Note that no difference on the percentage of IL-1R1+ cells among CM CD4+ T cells was found between infected and non-infected control mice. These results indicated IL-18R, but not IL-1R, signaling as an important event in the generation of the Th1 cell response to infection.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig4-v2.jpg)
+
+**Figure 4.:** (A) Gate strategy and mean percentage of CD44hiCD4+ and T-bet+CD44hiCD4+ cells gated on CD4+ T splenocytes from non-infected controls and infected B6 mice at day 14 pi. (B) Representative dot plot of IL-1R, IL-18R and T-bet expression, gated on CD44hiCD4+ T cells as in (A). (C) Representative histograms and mean percentages of IL-1R and IL-18R expression, gated on T-bet+CD44hiCD4+ T cells, as shown in (A) and (B). (D) Representative dot plot of CD44 and CD62L expression, gated on CD4+ T cells and mean percentages of IL-1R and IL-18R expression on CD44loCD62L+, CD44hiCD62L- and CD44hiCD62L+ gated on CD4+ T cells (n = 3 to 4). Error bars = SEM, *p≤0.05; **p≤0.01; ****p≤0.0001; ns = non significant (two-tailed Student t-test). Data are representative of 3 independent experiments. Kinetics of IL-1β and IL-18 levels in the serum, as well as of the appearance of IFN-γ+CD4+ T cells in the spleen are shown in Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Serum levels of (A) IL-1β and (B) IL-18. (C) Mean percentages of IFN-γ+CD4+ T cells gated on splenic CD4+ T lymphocytes. Symbols represent the mean value of 4 individually analyzed B6 mice, infected ip with 2 × 103 blood trypomastigotes of the Y strain. Error bars = SEM. Data are representative of 2 independent experiments.
 
 To further test the hypothesis that the impaired expansion of IFN-γ-producing cells among Myd88−/−CD4+ T cells is due to the lack of IL-18R signaling, we generated mixed BM chimeras by the irradiation of WT B6 x B6.SJL F1 mice followed by reconstitution with a 1:1 mix of WT B6.SJL and Il1r1−/−, or Il18r1−/−, or Myd88−/− BM cells; control WT:WT→WT chimeras, which were reconstituted with a mix of B6.SJL and B6 BM were also generated. As shown in Figure 5, the percentage and the absolute numbers of IFN-γ+ cells among Il18r1−/−CD4+ T lymphocytes in mixed WT:Il18r1−/− chimeras and among Myd88−/−CD4+ T lymphocytes in mixed WT:Myd88−/− chimeric mice were significantly lower than the levels observed for WT CD4+ T cells in both sets of chimeras; the same was not true for Il1r1−/− IFN-γ+CD4+T cells, which were present at similar percentages and absolute numbers to WT IFN-γ+CD4+ T cells in WT:Il1r1−/− chimeric mice. We then analyzed BrdU incorporation in vivo by CD4+ T cells in the same groups of infected chimeras. As shown in Figure 6A and B, again, results obtained in WT:Il18r1−/−, but not in WT:Il1r1−/− chimeras, reflected the results obtained in WT:Myd88−/− chimeric mice (gate strategy on Figure 6—figure supplement 1). The same results were obtained when we analyzed the percentage and absolute numbers of cells expressing the Th1-associated chemokine receptor CCR5 among WT, Myd88−/−, Il1r1−/− or Il18r1−/− CD4+ T lymphocytes (Figure 6C and D, gate strategy on Figure 6—figure supplement 2), confirming the results obtained in microarray analyzes of WT and Myd88−/− CD4+ T cells (Figure 3).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig5-v2.jpg)
 
-**Figure 5.:** + T cells of infected mixed BM chimeras.(A) Representative dot plots showing gating strategy for CD4+ T cells and for CD45.1+ (B6.SJL WT) or CD45.2+ (B6 WT or Myd88 or −/−Il1r1 or −/−Il18r1) splenocytes from mixed BM chimeras. (−/−B) Representative dot plots of IFN-γ expression gated on CD4+CD45.1+ (B6.SJL WT) or CD4+CD45.2+ (B6 WT or Myd88 or −/−Il1r1 or −/−Il18r1) splenocytes from non-infected control or infected (2 × 10−/−3 blood trypomastigotes, ip) mixed BM chimeras, on day 14 pi. (C) Percentages and (D) absolute cell numbers of IFN-γ+CD4+ T cells gated as in (A) and (B). Bars are the mean of combined data from 2 independent experiments (n = 3 to 7 individually analyzed chimeric mice); error bars = SEM; ns = non significant; **p≤0.01; ***p≤0.001, ****p≤0.0001 (two-tailed Student t-test). Data are representative of 3 to 4 independent experiments.
+**Figure 5.:** (A) Representative dot plots showing gating strategy for CD4+ T cells and for CD45.1+ (B6.SJL WT) or CD45.2+ (B6 WT or Myd88−/− or Il1r1−/− or Il18r1−/−) splenocytes from mixed BM chimeras. (B) Representative dot plots of IFN-γ expression gated on CD4+CD45.1+ (B6.SJL WT) or CD4+CD45.2+ (B6 WT or Myd88−/− or Il1r1−/− or Il18r1−/−) splenocytes from non-infected control or infected (2 × 103 blood trypomastigotes, ip) mixed BM chimeras, on day 14 pi. (C) Percentages and (D) absolute cell numbers of IFN-γ+CD4+ T cells gated as in (A) and (B). Bars are the mean of combined data from 2 independent experiments (n = 3 to 7 individually analyzed chimeric mice); error bars = SEM; ns = non significant; **p≤0.01; ***p≤0.001, ****p≤0.0001 (two-tailed Student t-test). Data are representative of 3 to 4 independent experiments.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig6-v2.jpg)
+
+**Figure 6.:** (A, C, G, E and I) Mean frequencies and (B, D, F, H and J) absolute cell numbers of: (A and B) BrdU+CD4+ and (C and D) CCR5+CD4+ cells gated on WT CD45.1+ or KO CD45.2+ CD4+ T cells, as in Figure 5A. (E and F) IFN-γ+CD8+ and (G and H) GzB+CD8+ T cells gated on WT CD45.1+ or KO CD45.2+ CD8+ T cells, as shown in Figure 6—figure supplement 3. (I and J) CD44hiCD4+ T cells, gated on WT or KO CD4+ T cells as in Figure 5A. Bars are the mean of individually analyzed mice from one (C, D, I and J) or two combined independent experiments (A, B, E, F, G and H). (n = 3 to 8); error bars = SEM; ND = not done; ns = non significant; *p≤0.05; **p≤0.01; ***p≤0.001, ****p≤0.0001 (two-tailed Student t-test). Gate strategies and representative dot plots are shown in Figure 6—figure supplements 1–5.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Representative dot plots showing anti-BrdU staining in CD4+CD45.1+(B6.SJL, WT) or CD4+CD45.2+ (B6 WT or Myd88−/− or Il1r1−/−or Il18r1−/−) splenocytes from control or infected mixed BM chimeras, gated as in Figure 5A. Data are representative of 3 independent experiments.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Representative dot plots showing CCR5 expression on CD4+CD45.1+ (B6.SJL, WT) or CD4+CD45.2+ (B6 WT or Myd88−/− or Il1r1−/−or Il18r1−/−) splenocytes, from control or infected mixed BM chimeras, gated as in Figure 5A.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Gate strategy for CD45.1+ (B6.SJL WT) and CD45.2+ (B6 WT or Myd88−/− or Il1r1−/−or Il18r1−/−) expression on CD8+ T cells. (B) Representative dot plots of IFN-γ expression gated on CD8+CD45.1+ (B6.SJL WT) or CD8+CD45.2+ (B6 WT or Myd88−/− or Il1r1−/− or Il18r1−/−) splenocytes from non-infected control or infected mixed BM chimeras, gated as in (A). Data are representative of 3 to 4 independent experiments.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Representative dot plots showing anti-GzB staining in CD8+CD45.1+(B6.SJL, WT) or CD8+CD45.2+(B6 WT or Myd88−/− or Il1r1−/− or Il18r1−/−) splenocytes from control or infected mixed BM chimeras, gated as in Figure 6—figure supplement 3. Data are representative of 3 to 4 independent experiments.
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig6-figsupp5-v2.jpg)
+
+**Figure 6—figure supplement 5.:** Representative dot plots showing anti-CD44 staining on CD4+CD45.1+(B6.SJL, WT) or CD4+CD45.2+(B6 WT or Myd88−/− or Il1r1−/− or Il18r1−/−) splenocytes from control or infected mixed BM chimeras, gated as in Figure 5A.
 
 On the other hand, the lack of MyD88 or IL-18R signaling has a lower impact in impairing the expansion of IFN-γ+CD8+ T cells (Figure 1E and H and Figure 6E and F, gate strategy on Figure 6—figure supplement 3), compared to its effect on the CD4+subset (Figure 1D and G and Figure 5). Moreover, when the levels of granzyme B+ (GzB+) CD8+ T cells were compared between the WT and KO compartments in the chimeric mice, no difference in the percentage nor in the absolute numbers of CD8+CTLs was found between WT and KO cells in any of the different mixed BM chimeras (Figure 6G and H, gate strategy on Figure 6—figure supplement 4), in accordance with our previous study showing that the cytotoxic response mediated by CD8+ T cells is not affected in Myd88−/− mice (Oliveira et al., 2010). We then analyzed the expression of the activation/memory marker CD44 on CD4+ T cells and found that the lack of expression of MyD88, or IL-1R, or IL-18R reduced the percentages and numbers of CD44hiCD4+ T cells (Figure 6I and J, gate strategy on Figure 6—figure supplement 5). The lower percentages of CD44high among KO-derived CD4+ T cell are in agreement with the our GSEA analysis of microarray data, which indicates the upregulation of genes related to central and effector memory phenotypes in WT but not in Myd88−/−CD4+ T cells (Figure 3C). Together, these results show that CD4+ T lymphocyte-intrinsic IL-18R/MyD88 signaling is required for the full differentiation and/or expansion of Th1 cells.
 
-## Il18r1−/−mice are highly susceptible to infection with T. cruzi
+### Il18r1−/−mice are highly susceptible to infection with T. cruzi
 
 To verify the impact of the absence of IL-18R- or MyD88-mediated signaling on resistance to infection, we compared parasitemia levels, as well as survival and parasite load in the myocardium, between Il18r1−/−, Myd88−/− and WT (B6) mice (Figure 7A–C). As shown in Figure 7A, WT mice presented significantly lower parasitemia when compared to either Il18r1−/− or Myd88−/− mice at day 9 pi, when the peak of parasites in the blood is attained, and no statistical difference in parasitemia levels was found between Il18r1−/− and Myd88−/− mice. On the other hand, Myd88−/− mice are the most susceptible to infection, as all mice of this strain were dead by day 15 pi, while the totality of Il18r1−/− mice were dead only by day 23 pi, a time point at which only 32.5% of WT mice have succumbed (Figure 7B). Parasite loads were measured in the myocardium by qPCR at day 14 pi and a significantly higher load was found in Myd88−/−compared to Il18r1−/− mice, which in turn also display a higher parasite load in the heart when compared to WT mice (Figure 7C). This result is in accordance with the earlier mortality observed in Myd88−/− mice and might reflect the importance of innate signaling through TLRs in the tissue for parasite control (Rodrigues et al., 2012). We then analyzed parameters of the acquired response in the three strains of mice. Notably, both Il18r1−/− and Myd88−/− mice presented lower percentages and absolute numbers of IFN-γ+CD4+ T cells in the spleen, when compared to WT mice (Figure 7D and G), but the percentages of IFN-γ+CD8+ and GzB+CD8+ T cells were found to be equivalent in the three mouse strains (Figure 7E,F,H and I). In summary, Il18r1−/− mice presented an intermediary level of susceptibility to infection with T. cruzi, in terms of survival and parasite load in the myocardium, when compared to Myd88−/− and WT (B6) mice.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig7-v2.jpg)
 
-**Figure 7.:** Il18r1 mice are highly susceptible to infection with −/−T. cruzi and display lower frequency and absolute numbers of Th1 cells.(A) Parasitemia curve, (B) survival and (C) parasite load in the myocardium at day 14 pi of Il18r1, −/−Myd88 and WT B6 mice infected with 2 × 10−/−3 blood trypomastigotes of the Y strain. Survival curves are statistically different (p<0.05). (D–I) Mean frequencies and absolute numbers of (D, G) IFN-γ+CD4+(E, H) IFN-γ+CD8+ and (F, I) GzB+CD8+ cells, gated on CD4+ or CD8+ T splenocytes from 4 to 8 individually analyzed mice at day 14 pi. Data are representative of 3 independent experiments. Error bars = SEM; ns = non significant; *p≤0.05; **p≤0.01; ****p≤0.0001 (two-tailed Student t-test).
+**Figure 7.:** (A) Parasitemia curve, (B) survival and (C) parasite load in the myocardium at day 14 pi of Il18r1−/−, Myd88−/− and WT B6 mice infected with 2 × 103 blood trypomastigotes of the Y strain. Survival curves are statistically different (p<0.05). (D–I) Mean frequencies and absolute numbers of (D, G) IFN-γ+CD4+(E, H) IFN-γ+CD8+ and (F, I) GzB+CD8+ cells, gated on CD4+ or CD8+ T splenocytes from 4 to 8 individually analyzed mice at day 14 pi. Data are representative of 3 independent experiments. Error bars = SEM; ns = non significant; *p≤0.05; **p≤0.01; ****p≤0.0001 (two-tailed Student t-test).
 
-## Adoptive transfer of WT CD4+cells to Il18r1−/− and to Myd88−/− mice increases resistance to infection
+### Adoptive transfer of WT CD4+cells to Il18r1−/− and to Myd88−/− mice increases resistance to infection
 
 Given that both Il18r1−/− and Myd88−/− infected mice displayed lower levels of Th1 cells in the spleen, when compared to WT animals, we asked whether the adoptive transfer of WT CD4+ T lymphocytes to Il18r1−/− and Myd88−/− strains would be enough for lowering parasitemia levels and improve survival to infection, in accord with the crucial role of Th1 responses for protection against T. cruzi infection (Michailowsky et al., 2001). For this, CD4+ T cells were sorted from infected WT mice to high purity levels (Figure 8—figure supplement 1A) and were then transferred to both Il18r1−/− and Myd88−/− mice, 20 hr before infection. As shown in Figure 8, this was in fact the case: WT CD4+ T cells significantly improved control of parasite levels (Figure 8B and D) and survival (Figure 8A and C) in both strains. Moreover, the ability to lower parasitemia required the capacity of secreting IFN-γ by transferred CD4+ T cells, since the adoptive transfer of Ifng−/− CD4+ T cells to Myd88−/− mice had no effect (Figure 8—figure supplement 1B). However, while the mortality rate in Il18r1−/− mice that received WT CD4+ T cells attained the rate observed in WT B6 mice (Figure 8A), the adoptive transfer of WT CD4+ T cells into Myd88−/− mice ameliorated survival only partially (Figure 8C). The same result was obtained when transferring 4 × 106 purified WT CD4+ T cells, that is, 3 times more cells than in the experiment shown in Figure 8 (data not shown). Note, however, that the transfer of WT CD4+ T cells reduced parasitemia to numbers observed in WT mice, both in Il18r1−/− and in Myd88−/− mice, as shown in Figure 8B and D. Together, these results show that while increasing the numbers of IFN-γ+CD4+ T cells in Il18r1−/− mice is enough for restoring their resistance to infection to the WT level, both in terms of parasitemia and survival, this is not the case for Myd88−/− mice. Although in transferred Myd88−/− mice parasitemia was decreased to the WT level (as in transferred Il18r1−/−mice) and survival was also significantly delayed, still, the totality of Myd88−/− mice succumbed to infection.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig8-v2.jpg)
+
+**Figure 8.:** (A and C) Survival; (B and D) mean parasitemia levels at day 9 pi of Il18r1−/− (A and B) or Myd88−/− mice (C and D), which received or not 1.3 × 106 CD4+ T cells purified from infected WT B6 mice. Results obtained in infected but non-transferred WT B6 mice are shown in black lines and black bars. Data are representative of 2 independent experiments, using 8 to 10 male mice in each group; error bars = SEM. Survival curves of transferred and non-transferred mice are statistically different (p<0.05). Purity of adoptive transferred CD4+ T cells and parasitemia in Myd88−/− mice adoptively transferred with WT or Ifng−/− CD4+ T cells are shown in Figure 8—figure supplement 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/30883/elife-30883-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Sorting of CD4+ T cells: Representative frequency of CD4+CD3+ T cells after enrichment by negative selection with magnetic beads (pre-sorting, left) followed by FACS sorting (post-sorting, right), as described in Materials and Methods. Post-sorted cells (>98% pure) were employed in the adoptive transfer experiments shown in Figure 8. (B–C) Mean parasitemia in Myd88−/− mice, which received or not 1.0 × 106 CD4+ T cells (sorted as in A), purified from infected (B) WT (B6) or (C) Ifng−/− mice. Data are representative of 2 independent experiments; error bars = SEM; (n = 5 male mice individually analyzed).
 
 ## Discussion
 
@@ -89,48 +153,333 @@ In conclusion, our work unequivocally demonstrates that the absence of IL-18R ex
 
 ## Materials and methods
 
-## Mice and ethics statement
+### Mice and ethics statement
 
 C57BL/6, B6.SJL and (B6 x B6.SJL) F1 mice were obtained from the Universidade Federal Fluminense (UFF, Niterói, Brazil). Myd88−/− mice were generated by Dr. S. Akira (Osaka University, Japan) and backcrossed onto C57BL/6 genetic background for 9 generations; Rag2−/− and Il18r1−/− mice were donated by Dr. R. Gazzinelli (UFMG, MG, Brazil) and Dr. B. Ryffel (CNRS, Orleans, France), respectively. Il1r1−/− mice were purchased from JAX Mice, USA. Experiments were conducted in accordance with guidelines of the Animal Care and Use Committee of the Federal University of Rio de Janeiro (Comitê de Ética do Centro de Ciências da Saúde CEUA-CCS/UFRJ). Procedures and animal protocols were approved by CEUA-CCS/UFRJ license n.: IMPPG022.
 
-## Experimental infection and parasite load
+### Experimental infection and parasite load
 
 Five to six week-old C57BL/6, Myd88−/− or Il18r1−/− male mice, or BM mixed chimeric mice after 6–8 week of reconstitution were inoculated intraperitoneally (ip) with 2 × 103 trypomastigotes/0.2 ml bloodstream trypomastigotes of the Y strain of T. cruzi. Parasitemia was monitored by counting the number of bloodstream trypomastigotes in 5 μl of fresh blood collected from the tail vein and mouse survival was followed daily. Hearts of infected mice were excised after perfusion, minced and the cardiac tissue immediately homogenized in 1.0 ml of 4.0 M Guanidine thiocyanate (SIGMA-Aldrich) containing 8.0 μl/ml of β-mercaptoethanol (SIGMA-Aldrich) and processed for DNA extraction. Generation of PCR standards and detection of parasite tissue load by real-time PCR was carried out as described (Cummings and Tarleton, 2003); briefly, primers amplify a repeated satellite sequence of T. cruzi DNA of 195 base-pairs: TCZ-Fwd.: (5'-GCTCTTGCCCACAAGGGTGC-3') and TCZ-Rev.: (5'-CCAAGCAGCGGATAGTTCAGG-3'). Reactions with TNF-α-Fwd: (5’- CCTGGAGGAGAAGAGGAAAGAGA-3’) and TNF-α-Rev.: (5’- TTGAGGACCTCTGTGTATTTGTCAA-3’) primers for Mus musculus TNF-α gene were used as loading controls. PCR amplifications were analyzed using primers in combination with SYBR Green on a StepOne Real Time PCR System (Applied Biosystems, Life Technologies).
 
-## Reagents and antibodies
+### Reagents and antibodies
 
 See table below.
 
-## Generation of BM chimeras and Rag2−/− reconstituted mice
+### Generation of BM chimeras and Rag2−/− reconstituted mice
 
 For BM chimeras, acidic drinking water (pH 2,5–3,0) was given for 8 days to B6 x B6.SJL F1 (CD45.2+ CD45.1+) recipient mice prior to irradiation with a lethal single dose of 800 rad (TH780C - Theratronics, Canada).The day after irradiation, BM cells were transferred and mice were treated with neomycin sulfate (2 mg/mL) in the drinking water for 15 days. Marrow was harvested from the femur and tibia of B6.SJL (CD45.1+) and B6, Myd88−/−, Il1r1−/−or Il18r1−/− (CD45.2+) mice by flushing with cold RPMI media (GIBCO). BM cells were washed thoroughly with PBS and 4 × 106 total cells were injected into the irradiated recipient mice. For mixed chimeras, CD45.1+ and CD45.2+ BM cells were transferred in a 1:1 ratio (2 × 106 cells each). Alternatively, non-irradiated mixed chimeric Rag2−/− mice were generated by the iv injection of 20 × 106 spleen cells from WT B6.SJL (CD45.1+) and Myd88−/− (CD45.2+) mice in a 1:1 ratio. Six to eight weeks after the first reconstitution, Rag2−/− mice received a second injection of WT B6 x B6.SJL F1 (CD45.1+CD45.2+) and Myd88−/− (CD45.2+) splenocytes in a 1:1 ratio, 6 hr before being infected. In all experiments, mice were infected 6 to 8 weeks after cell transfer, when reconstitution was achieved.
 
-## Flow cytometry
+### Flow cytometry
 
 On different days post infection, mice were euthanized and spleens were harvested. Spleen cells were treated with ACK buffer for red blood cell lysis, washed and then stained. Single cell suspensions from spleen were incubated with anti-CD16/CD32 (FcR block) for 5 min and then stained with anti-CD45.1, anti-CD45.2, anti-CD11c, anti-CD3, anti-CD4, anti-CD8, anti-CCR5, anti-TCRβ, anti-T-bet, anti-IL-1R1, anti-IL-18R1, anti-CD62L or anti-CD44 antibodies (see table below) for surface staining for 30 min on ice. Alternatively, 2 × 106 spleen cells were cultured in the presence of monensin (5 μM) and 2 μM of Kb-restricted Tskb20 peptide (Genscript) for 10 hr. After staining of surface markers, cells were fixed with paraformaldehyde 1% for 1 hr and permeabilized with saponin 0.2% for 20 min. At least 20,000 events gated on CD4+ T lymphocytes were acquired. Analytical flow cytometry was conducted with a MoFlo (Beckman Coulter/Dako-Cytomation) or FACSCalibur (BD Bioscience) and the data were analyzed with Summit V4.3 software (Dako Colorado, Inc).
 
-## In vivo BrdU incorporation assay
+### In vivo BrdU incorporation assay
 
 Mixed chimeric mice were infected with T. cruzi and BrdU (1.0 mg/animal) was administered ip at days 12 and 13pi every 12 hr. At day 14 pi, mice were sacrificed and 2 × 106 spleen cells were surface stained with anti-CD45.1, anti-CD45.2, anti-CD3, anti-CD4 and anti-CD8 (see table below). For BrdU analysis, after surface staining, cells were fixed and permeabilized with 2% paraformaldehyde, 0.02% Tween 20 in PBS overnight at 4°C. Then, cells were washed with PBS and incubated in DNase buffer (150 mM NaCl, 5 mM MgCl2, 10 μM HCl, 100KU/mL DNase I) for 1 hr at RT. Subsequently, cells were washed with PBS, 2% FCS, 0.05% sodium azide and stained with FITC-conjugated anti-BrdU for 30 min at RT.
 
-## ELISA
+### ELISA
 
 Blood samples were collected at different days of infection and the sera were stored at - 80°C. Samples from individual mice were diluted 10x for IL-1β quantification or non-diluted, for IL-18 detection. Cytokine levels were determined using mouse IL-18/IL-1F4 ELISA kit and mouse IL-1beta/IL-1F2 DuoSet ELISA kit (R and D Systems) according to the manufacturer's instructions.
 
-## Adoptive CD4+ T cell transfer assay
+### Adoptive CD4+ T cell transfer assay
 
 Eight week-old male C57BL/6 mice were infected with 104 trypomastigotes and at day 9 pi spleen cells were harvested and treated with ACK for red blood cells lysis. For CD4+ T cell enrichment by negative selection, 3 × 108 spleen cells were labeled with anti-B220, anti-CD11b, anti-NK1.1, anti-γδ and anti-CD8 biotinylated antibodies (see table below) for 30 min on ice and incubated with Dynabeads® Biotin Binder (Invitrogen, Life Technology) for 30 min on ice under agitation and depleted, according to manufacturer’s instructions. The CD4+-enriched cells were stained with PE-conjugated anti-CD4, and PE-Cy7-conjugated Streptavidin. For sorting, PE-Cy7+ cells were excluded and CD4+ T lymphocytes were sorted using MoFlo (Beckman Coulter/Dako-Cytomation) flow cytometer. CD4+ T cells presenting purity higher than 98% were adoptively transferred by iv injection into Myd88−/−or Il18r1−/− recipient mice (1.3 × 106 cells/animal) followed by infection with 2 × 103 trypomastigotes, 20 hr later. Parasitemia and survival were accompanied daily.
 
-## Gene-expression profiling
+### Gene-expression profiling
 
 Mixed BM chimeric WT(B6.SJL):Myd88−/−→ WT (B6 x B6.SJL F1) mice were euthanized at day 14 pi, spleen cells were collected and the enrichment of CD4+ cells was done as described above. Cells were stained with PB-anti-CD45.1, APC-Cy7-anti-CD45.2 and PE-anti-CD4 antibodies (see table below) and the sorting was conducted with a MoFlo (Beckman Coulter/Dako-Cytomation) flow cytometer. CD4+CD45.1+ cells (WT) and CD4+CD45.2+ cells (Myd88−/−) were sorted (99% of purity) and RNA was prepared from sorted cell populations by Trizol (Invitrogen) extraction followed by RNeasy extraction (Qiagen), according to manufacturer’s protocols. For microarray analysis, RNA was labeled and hybridized to Illumina MouseRef-8 v2.0 Expression BeadChips array according to the Illumina protocols by the Rockefeller University Genomic facility. Gene expression data were extracted with GeneSpring software GX 11.0 software using default parameters. Data was then normalized by subtracting the average from all genes from each gene intensity and dividing the result by the standard deviation of all gene intensities (i.e. z-score normalization) Z ratios were calculated as previously described (Cheadle et al., 2003) and used to compare the difference in expression between WT samples and Myd88−/− samples. Gene Set Enrichment Analysis (GSEA) (http://www.broadinstitute.org/gsea/index.jsp) was performed on the genes pre-ranked by Z ratios (1000 permutations and Weighted Enrichment Statistic) and using 3 different gene sets: BioCarta pathways (c2), Reactome pathways (c2) and GSE11057. GSE11057 gene set is comprised of genes highly expressed in 3 subsets of CD4+ T cells: Central memory (CM), Effector memory (EM) and Naïve. To identify these genes, we re-analyzed the microarray data set from reference (Abbas et al., 2009), using the GEO2R tool (http://www.ncbi.nlm.nih.gov/geo/geo2r/) (Adj p-value<0.01; top 200 genes based on log2 fold-change on CM vs naïve and EM vs naïve comparisons). Interactions among the ‘genes in core’ from the GSEA analyses were assessed and visualized by Ingenuity Pathway Analysis (IPA) database.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed using GraphPad Prism version 5 for Windows (GraphPad Software, San Diego California USA, www.graphpad.com). Sample sizes were chosen to allow the detection of statistical differences with p<0.5 using a two-tailed Student’s t test or the Log-rank (Mantel-Cox) test, for mouse survival curves after challenge with T. cruzi. When comparing two groups, the minimum number was n = 3 per group. In some experiments, the number was increased to n = 9 to permit p<0.5 even considering the possibility of a single outlier in a population. Data are expressed as mean ±SEM and considered statistically significant if p values were < 0.05.
 
-## Accession codes
+### Accession codes
 
 Original microarray data have been assigned NCBI Gene Expression Omnibus database (GEO) accession no. GSE57738.
 
-Reagent or ResourceSource and IdentifierAntibodies Anti-BrdU, FITC, clone PRB-1(BioLegend Cat# 515406, RRID:AB_2566333)Anti-human GzB, A647, clone GB11(BioLegend Cat# 515403, RRID:AB_2114575)Anti-human GzB, FITC, clone GB11(BioLegend Cat# 103204, RRID:AB_312989)Anti-mouse B220, biotinylated, clone RA3-6B2(BioLegend Cat# 107005, RRID:AB_313300)Anti-mouse CCR5 PE, clone HMCCR5(BioLegend Cat# 121606, RRID:AB_572007)Anti-mouse CD11b, biotinylated, clone M1/70(BioLegend Cat# 101204, RRID:AB_312787)Anti-mouse CD11c, PE, clone N418(BioLegend Cat# 117308, RRID:AB_313777)Anti-mouse CD16/CD32, clone 93(BioLegend Cat# 101302, RRID:AB_312801)Anti-mouse CD3, FITC, clone 145-2C11(BioLegend Cat# 100306, RRID:AB_312671)Anti-mouse CD4, BV605, clone GK 1.5(BioLegend Cat# 100451, RRID:AB_2564591)Anti-mouse CD4, PE, clone GK 1.5(BioLegend Cat# 100408, RRID:AB_312693)Anti-mouse CD44, FITC, clone IM7(BD Biosciences Cat# 553133, RRID: AB_2076224)Anti-mouse CD45.1, PB, clone A20(BioLegend Cat# 110722, RRID:AB_492866)Anti-mouse CD45.2, APC-Cy7, clone 104(BioLegend Cat# 109824, RRID:AB_830789)Anti-mouse CD62L, PE, clone MEL-14(BioLegend Cat# 104407, RRID:AB_313094)Anti-mouse CD8a, biotinylated, clone 53-6.7(BD Biosciences Cat# 553029, RRID:AB_394567)Anti-mouse CD8a, PE, clone 53-6.7(BioLegend Cat# 100708, RRID:AB_312747)Anti-mouse CD8a, PE-Cy7, clone 53-6.7(BioLegend Cat# 100722, RRID:AB_312761)Anti-mouse IFNg, PE-Cy7, clone XMG1.2(BioLegend Cat# 505826, RRID:AB_2295770)Anti-mouse IFNg, APC, clone XMG1.2(BioLegend Cat# 505810, RRID:AB_315404)Anti-mouse IL-1R1, PE, clone JAMA147(BioLegend Cat# 113505, RRID:AB_2125036)Anti-mouse IL-18Ra, APC, clone BG/IL18RA(BioLegend Cat# 132903, RRID:AB_2123952)Anti-mouse NK1.1, biotinylated, clone PK136(BD Biosciences Cat# 553163, RRID:AB_394675)Anti-mouse Tbet, PE, clone 4B10(BioLegend Cat# 644810, RRID:AB_2200542)Anti-mouse TCRb, BV421, clone H57-597(BioLegend Cat# 109229, RRID:AB_10933263)Anti-mouse TCRgd, biotinylated, clone GL3(BD Biosciences Cat# 553176, RRID:AB_394687)Streptavidin, PE(BioLegend Cat# 133505, RRID:AB_1626229)Streptavidin, PE-Cy7(BD Biosciences Cat# 554061, RRID:AB_10053328)Chemicals, Peptides 2-mercaptoethanolSIGMA-Aldrich Cat# M62505-Bromo-2'-deoxyuridine (BrdU)SIGMA-Aldrich Cat# B8434Collagenase Tipo IVSIGMA-Aldrich Cat# C5138-16DNAse ISIGMA-Aldrich Cat# DN25-16Guanidine thiocyanateSIGMA-Aldrich Cat# 69277-2506MonensinSIGMA-Aldrich Cat# 22373-78-0ParaformaldehydeSIGMA-Aldrich Cat# 30525-89-4SaponinSIGMA-Aldrich Cat# 54521Sodium azideSIGMA-Aldrich Cat# 52002-1006TrizolAmbion-LifeTechnologies Cat# 15596018Tskb20 peptideGenscriptTween 20Biorad Cat# 170-6531RPMI mediaGIBCO Cat# 22400-071Fetal calf serumGIBCO Cat# 12657-029PBS - Phosphate-Buffered SalineGIBCO Cat# 10010031Critical commercial assays SYBR™ Green PCR Master MixApplied Biosystems Cat# 4309155IL-1beta/IL-1F2 DuoSet ELISA kitR&D Systems Cat# DY401IL-18/IL-1F4 ELISA kitR&D Systems Cat# 7625Dynabeads Biotin BinderInvitrogen Cat# 11047Illumina MouseRef-8 v2.0 Expression BeadChipsIllumina Cat# BD-202-0202Experimental models: Organisms/Strains Mouse: C57BL/6RRID:IMSR_JAX:000664Mouse: B6.SJLRRID:IMSR_JAX:002014Mouse: B6 x B6.SJL (F1)animal house at UFF, Niteroi, BRMouse: Myd88-/-RRID:MGI:5447806Mouse: IL18r1RRID:IMSR_JAX:004131Mouse: IL1r1-/-RRID:IMSR_JAX:003245Mouse: Rag2-/-RRID:IMSR_JAX:008449Trypanosoma cruziNCBI Taxon ID:5693Oligonucleotides Primers for qPCRIDT - Integrated DNA TechnologiesDeposited data MicroarrayThis paper GEO: GSE57738Software Summit V4.3 softwareDako Colorado, IncGeneSpring software GX 11.0Agilent TechnologiesGraphPad Prism version 5 for WindowsGraphPad SoftwareGEO2RNCBI NIH http://ncbi.nlm.nih.gov/geo/geo2r/
+<table>
+  <thead>
+    <tr>
+      <th>Reagent or Resource</th>
+      <th>Source and Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibodies</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Anti-BrdU, FITC, clone PRB-1</td>
+      <td>(BioLegend Cat# 515406, RRID:AB_2566333)</td>
+    </tr>
+    <tr>
+      <td>Anti-human GzB, A647, clone GB11</td>
+      <td>(BioLegend Cat# 515403, RRID:AB_2114575)</td>
+    </tr>
+    <tr>
+      <td>Anti-human GzB, FITC, clone GB11</td>
+      <td>(BioLegend Cat# 103204, RRID:AB_312989)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse B220, biotinylated, clone RA3-6B2</td>
+      <td>(BioLegend Cat# 107005, RRID:AB_313300)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CCR5 PE, clone HMCCR5</td>
+      <td>(BioLegend Cat# 121606, RRID:AB_572007)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD11b, biotinylated, clone M1/70</td>
+      <td>(BioLegend Cat# 101204, RRID:AB_312787)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD11c, PE, clone N418</td>
+      <td>(BioLegend Cat# 117308, RRID:AB_313777)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD16/CD32, clone 93</td>
+      <td>(BioLegend Cat# 101302, RRID:AB_312801)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD3, FITC, clone 145-2C11</td>
+      <td>(BioLegend Cat# 100306, RRID:AB_312671)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD4, BV605, clone GK 1.5</td>
+      <td>(BioLegend Cat# 100451, RRID:AB_2564591)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD4, PE, clone GK 1.5</td>
+      <td>(BioLegend Cat# 100408, RRID:AB_312693)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD44, FITC, clone IM7</td>
+      <td>(BD Biosciences Cat# 553133, RRID: AB_2076224)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD45.1, PB, clone A20</td>
+      <td>(BioLegend Cat# 110722, RRID:AB_492866)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD45.2, APC-Cy7, clone 104</td>
+      <td>(BioLegend Cat# 109824, RRID:AB_830789)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD62L, PE, clone MEL-14</td>
+      <td>(BioLegend Cat# 104407, RRID:AB_313094)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD8a, biotinylated, clone 53-6.7</td>
+      <td>(BD Biosciences Cat# 553029, RRID:AB_394567)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD8a, PE, clone 53-6.7</td>
+      <td>(BioLegend Cat# 100708, RRID:AB_312747)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD8a, PE-Cy7, clone 53-6.7</td>
+      <td>(BioLegend Cat# 100722, RRID:AB_312761)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse IFNg, PE-Cy7, clone XMG1.2</td>
+      <td>(BioLegend Cat# 505826, RRID:AB_2295770)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse IFNg, APC, clone XMG1.2</td>
+      <td>(BioLegend Cat# 505810, RRID:AB_315404)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse IL-1R1, PE, clone JAMA147</td>
+      <td>(BioLegend Cat# 113505, RRID:AB_2125036)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse IL-18Ra, APC, clone BG/IL18RA</td>
+      <td>(BioLegend Cat# 132903, RRID:AB_2123952)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse NK1.1, biotinylated, clone PK136</td>
+      <td>(BD Biosciences Cat# 553163, RRID:AB_394675)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse Tbet, PE, clone 4B10</td>
+      <td>(BioLegend Cat# 644810, RRID:AB_2200542)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse TCRb, BV421, clone H57-597</td>
+      <td>(BioLegend Cat# 109229, RRID:AB_10933263)</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse TCRgd, biotinylated, clone GL3</td>
+      <td>(BD Biosciences Cat# 553176, RRID:AB_394687)</td>
+    </tr>
+    <tr>
+      <td>Streptavidin, PE</td>
+      <td>(BioLegend Cat# 133505, RRID:AB_1626229)</td>
+    </tr>
+    <tr>
+      <td>Streptavidin, PE-Cy7</td>
+      <td>(BD Biosciences Cat# 554061, RRID:AB_10053328)</td>
+    </tr>
+    <tr>
+      <td>Chemicals, Peptides</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>2-mercaptoethanol</td>
+      <td>SIGMA-Aldrich Cat# M6250</td>
+    </tr>
+    <tr>
+      <td>5-Bromo-2'-deoxyuridine (BrdU)</td>
+      <td>SIGMA-Aldrich Cat# B8434</td>
+    </tr>
+    <tr>
+      <td>Collagenase Tipo IV</td>
+      <td>SIGMA-Aldrich Cat# C5138-16</td>
+    </tr>
+    <tr>
+      <td>DNAse I</td>
+      <td>SIGMA-Aldrich Cat# DN25-16</td>
+    </tr>
+    <tr>
+      <td>Guanidine thiocyanate</td>
+      <td>SIGMA-Aldrich Cat# 69277-2506</td>
+    </tr>
+    <tr>
+      <td>Monensin</td>
+      <td>SIGMA-Aldrich Cat# 22373-78-0</td>
+    </tr>
+    <tr>
+      <td>Paraformaldehyde</td>
+      <td>SIGMA-Aldrich Cat# 30525-89-4</td>
+    </tr>
+    <tr>
+      <td>Saponin</td>
+      <td>SIGMA-Aldrich Cat# 54521</td>
+    </tr>
+    <tr>
+      <td>Sodium azide</td>
+      <td>SIGMA-Aldrich Cat# 52002-1006</td>
+    </tr>
+    <tr>
+      <td>Trizol</td>
+      <td>Ambion-LifeTechnologies Cat# 15596018</td>
+    </tr>
+    <tr>
+      <td>Tskb20 peptide</td>
+      <td>Genscript</td>
+    </tr>
+    <tr>
+      <td>Tween 20</td>
+      <td>Biorad Cat# 170-6531</td>
+    </tr>
+    <tr>
+      <td>RPMI media</td>
+      <td>GIBCO Cat# 22400-071</td>
+    </tr>
+    <tr>
+      <td>Fetal calf serum</td>
+      <td>GIBCO Cat# 12657-029</td>
+    </tr>
+    <tr>
+      <td>PBS - Phosphate-Buffered Saline</td>
+      <td>GIBCO Cat# 10010031</td>
+    </tr>
+    <tr>
+      <td>Critical commercial assays</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SYBR™ Green PCR Master Mix</td>
+      <td>Applied Biosystems Cat# 4309155</td>
+    </tr>
+    <tr>
+      <td>IL-1beta/IL-1F2 DuoSet ELISA kit</td>
+      <td>R&amp;D Systems Cat# DY401</td>
+    </tr>
+    <tr>
+      <td>IL-18/IL-1F4 ELISA kit</td>
+      <td>R&amp;D Systems Cat# 7625</td>
+    </tr>
+    <tr>
+      <td>Dynabeads Biotin Binder</td>
+      <td>Invitrogen Cat# 11047</td>
+    </tr>
+    <tr>
+      <td>Illumina MouseRef-8 v2.0 Expression BeadChips</td>
+      <td>Illumina Cat# BD-202-0202</td>
+    </tr>
+    <tr>
+      <td>Experimental models: Organisms/Strains</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mouse: C57BL/6</td>
+      <td>RRID:IMSR_JAX:000664</td>
+    </tr>
+    <tr>
+      <td>Mouse: B6.SJL</td>
+      <td>RRID:IMSR_JAX:002014</td>
+    </tr>
+    <tr>
+      <td>Mouse: B6 x B6.SJL (F1)</td>
+      <td>animal house at UFF, Niteroi, BR</td>
+    </tr>
+    <tr>
+      <td>Mouse: Myd88-/-</td>
+      <td>RRID:MGI:5447806</td>
+    </tr>
+    <tr>
+      <td>Mouse: IL18r1</td>
+      <td>RRID:IMSR_JAX:004131</td>
+    </tr>
+    <tr>
+      <td>Mouse: IL1r1-/-</td>
+      <td>RRID:IMSR_JAX:003245</td>
+    </tr>
+    <tr>
+      <td>Mouse: Rag2-/-</td>
+      <td>RRID:IMSR_JAX:008449</td>
+    </tr>
+    <tr>
+      <td>Trypanosoma cruzi</td>
+      <td>NCBI Taxon ID:5693</td>
+    </tr>
+    <tr>
+      <td>Oligonucleotides</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Primers for qPCR</td>
+      <td>IDT - Integrated DNA Technologies</td>
+    </tr>
+    <tr>
+      <td>Deposited data</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Microarray</td>
+      <td>This paper GEO: GSE57738</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Summit V4.3 software</td>
+      <td>Dako Colorado, Inc</td>
+    </tr>
+    <tr>
+      <td>GeneSpring software GX 11.0</td>
+      <td>Agilent Technologies</td>
+    </tr>
+    <tr>
+      <td>GraphPad Prism version 5 for Windows</td>
+      <td>GraphPad Software</td>
+    </tr>
+    <tr>
+      <td>GEO2R</td>
+      <td>NCBI NIH http://ncbi.nlm.nih.gov/geo/geo2r/</td>
+    </tr>
+  </tbody>
+</table>

@@ -26,7 +26,7 @@
 
 ## Abstract
 
-10.7554/eLife.34354.001 The brain displays a remarkable ability to adapt following injury by altering its connections through neural plasticity. Many of the biological mechanisms that underlie plasticity are known, but there is little knowledge as to when, or where in the brain plasticity will occur following injury. This knowledge could guide plasticity-promoting interventions and create a more accurate roadmap of the recovery process following injury. We causally investigated the time-course of plasticity after hippocampal lesions using multi-modal MRI in monkeys. We show that post-injury plasticity is highly dynamic, but also largely predictable on the basis of the functional connectivity of the lesioned region, gradients of cell densities across the cortex and the pre-lesion network structure of the brain. The ability to predict which brain areas will plastically adapt their functional connectivity following injury may allow us to decipher why some brain lesions lead to permanent loss of cognitive function, while others do not.
+The brain displays a remarkable ability to adapt following injury by altering its connections through neural plasticity. Many of the biological mechanisms that underlie plasticity are known, but there is little knowledge as to when, or where in the brain plasticity will occur following injury. This knowledge could guide plasticity-promoting interventions and create a more accurate roadmap of the recovery process following injury. We causally investigated the time-course of plasticity after hippocampal lesions using multi-modal MRI in monkeys. We show that post-injury plasticity is highly dynamic, but also largely predictable on the basis of the functional connectivity of the lesioned region, gradients of cell densities across the cortex and the pre-lesion network structure of the brain. The ability to predict which brain areas will plastically adapt their functional connectivity following injury may allow us to decipher why some brain lesions lead to permanent loss of cognitive function, while others do not.
 
 ## Introduction
 
@@ -44,21 +44,104 @@ We acquired MRI scans in macaque monkeys before and at two time points after bil
 
 ## Results
 
-## Hippocampal lesions were precise and extensive
+### Hippocampal lesions were precise and extensive
 
 There was a significant reduction in hippocampal volume bilaterally during the acute stage measured by T2-weighted scans (Figure 1A), histologically (Figure 1B) and deformation-based morphometry of T1-weighted structural MRI scans (Figure 1C–D). All three analysis methods gave consistent results. Lesions were mostly bilateral and extensive, although there was some apparent sparing of the right hippocampus posteriorly across the five monkeys (Figure 1; Table 1). However, this is likely an under-estimation of the amount of damage in the posterior part of the hippocampus, which is narrower and therefore more susceptible to partial volume effects with neighbouring tissue.
+
+**Table 1.**
+ Remaining volume of tissue in each lesioned monkey (calculated relative to atlas volumes from Nissl-stained histological sections registered to atlas sections) and lesion extent expressed as a percentage (1-(remaining volume/normal volume)).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Monkey</th>
+      <th>Left hemisphere remaining volume</th>
+      <th>Right hemisphere remaining volume</th>
+      <th>Bilateral remaining volume</th>
+      <th>Left hemisphere lesion %</th>
+      <th>Right hemisphere lesion %</th>
+      <th>Total lesion %</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Atlas</td>
+      <td>268144</td>
+      <td>268665</td>
+      <td>536809</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>149379</td>
+      <td>121895</td>
+      <td>271274</td>
+      <td>44.29</td>
+      <td>54.63</td>
+      <td>49.46</td>
+    </tr>
+    <tr>
+      <td>E</td>
+      <td>184498</td>
+      <td>146047</td>
+      <td>330545</td>
+      <td>31.19</td>
+      <td>45.64</td>
+      <td>38.42</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>129741</td>
+      <td>84877</td>
+      <td>214618</td>
+      <td>51.62</td>
+      <td>68.41</td>
+      <td>60.02</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>159535</td>
+      <td>158787</td>
+      <td>318322</td>
+      <td>40.50</td>
+      <td>40.90</td>
+      <td>40.70</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>94769</td>
+      <td>89512</td>
+      <td>184281</td>
+      <td>64.66</td>
+      <td>66.68</td>
+      <td>65.67</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>178354</td>
+      <td>130254</td>
+      <td>308608</td>
+      <td>33.49</td>
+      <td>51.52</td>
+      <td>42.51</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/34354/elife-34354-fig1-v1.jpg)
 
 **Figure 1.:** (A) T2-weighted hypersignal 6 days after surgery indicating local inflammation in the hippocampus; overlap is shown for the five monkeys. (B) Sketch of hippocampal size based on histology (Nissl stained sections) overlaid on atlas sections. The unlesioned hippocampal volume is shown in red. Overlap of remaining hippocampal volume is shown for the five monkeys indicating shrinkage of the hippocampus bilaterally in all monkeys. (C-D) Results of deformation-based morphometry analysis showing atrophy of the hipppocampus (C) 3 months after the lesion and (D) 12 months after the lesion.
 
-## Functional and structural measures of plasticity
+### Functional and structural measures of plasticity
 
 We measured structural and functional changes across the whole brain using high-resolution MRI at three time points: pre lesion, 3 months-post lesion and 12 months post-lesion in five macaque monkeys. The pre-lesion scans also included data from three additional control animals that did not go on to receive lesions. For clarity, we refer to the following stages: acute (pre-lesion vs. 3 months post-lesion) and chronic (3 months vs. 12 months post-lesion). We do not make any claims as to different rates of behavioral recovery during these stages, and acknowledge that cognitive recovery can occur in either stage following a brain insult (Berthier et al., 2011; Lazar and Antoniello, 2008).
 
 Across all pairwise connections between brain regions, there was an overall increase in the functional connectivity strength over the acute stage (t6318 = 9.37, p = 1×10−22), and a decrease over the chronic stage (t6318 = −16.85, p = 2×10−62). In order to understand the specific regional changes that were driving these global effects, we first divided the brain into multiple ‘modules’, based on the resting-state functional connectivity data using the Louvain algorithm (Blondel et al., 2008). Here a ‘module’ is a set of brain regions that have higher functional connectivity with the other brain regions within the set than with brain regions outside the set. We investigated plastic changes to the mean within-module functional connectivity for each brain area, and to the network participation coefficient, which is a measure of how evenly the connections of a brain area are distributed across all of the modules in the brain. Thus brain regions that have a low proportion of their connections with brain regions outside the local module have a low network participation coefficient, whereas brain regions that are strongly connected with regions outside the local module have a high network participation coefficient. On this basis, the network participation coefficient has been proposed as a marker of connector hubs (Power et al., 2013). By analyzing within-module functional connectivity and the network participation coefficient, we can build a picture of the changes in processing within and between functional modules over time. As these methods depend on the definition of the modules, which in turn depends on a rather arbitrary choice of a resolution parameter (lambda), we report results that were robust across the entire range tested (minimum gamma = 0.8, corresponding to two brain modules, maximum gamma = 1.4, corresponding to just one brain region per module). Additionally, using deformation-based morphometry, we assessed changes to grey-matter volume over the acute and chronic stages.
 
-## Anatomical and functional predictors of plasticity
+### Anatomical and functional predictors of plasticity
 
 We identified four factors that we hypothesized to be potential predictors of plasticity following the lesion.
 
@@ -76,7 +159,7 @@ Fourth, we reasoned that the strength of pre-lesion functional connectivity with
 
 We assessed pre-lesion hippocampal functional connectivity with all other cortical regions on the basis of the pre-lesion resting-state fMRI scans and averaged between left and right hippocampus. The average hippocampal functional connectivity is shown in Figure 2D. The strongest functional connectivity was with medial and ventral temporal regions that are in close proximity to the hippocampus. In contrast, dorsal frontal regions showed a slight negative correlation with the hippocampus. In order to test the anatomical validity of these functional connectivity patterns, we compared them to the anatomical connectivity measures from the original (Stephan et al., 2001) and ‘enhanced’ (Deco et al., 2014) versions of the CoCoMac tract-tracing atlas. The enhanced version has previously been a better fit to functional connectivity measures than the discrete-valued version of the tract-tracing atlas (Deco et al., 2014; Grayson et al., 2016). Hippocampal functional connectivity measured in the current study was highly correlated with anatomical connectivity measures in both the original (r = 0.54, p = 2.2×10−7) and enhanced versions of the CoCoMac Atlas (r = 0.60, p = 3.6×10−9).
 
-## Hubness, and pre-lesion hippocampal functional connectivity predict an acute stage drop in network participation
+### Hubness, and pre-lesion hippocampal functional connectivity predict an acute stage drop in network participation
 
 We entered the neuronal density, non-neuronal cell density, hubness and pre-lesion hippocampal functional connectivity as predictors of acute changes in network participation coefficient in a stepwise regression (Figure 3A). The model significantly predicted the cortex-wide pattern of acute changes in network participation coefficient, explaining over half of the variance (F2,75 = 42.24, p = 5×10−13, r2 = 0.53, Figure 3B). Hubness (t73 = −5.70, p = 2×10−7), and pre-lesion hippocampal functional connectivity (t73 = −5.25, p = 1×10−6) were significantly associated with a drop in network participation coefficient over the acute stage (Figure 3C). Neither neuron density (t73 = −1.04, p = 0.29) nor non-neuronal cell density showed a significant association (t73 = −0.55, p = 0.59).
 
@@ -84,13 +167,13 @@ We entered the neuronal density, non-neuronal cell density, hubness and pre-lesi
 
 **Figure 3.:** (A) Most brain regions showed a drop in network participation over the acute stage. (B-C) The degree to which individual brain regions reduced their network participation over the acute stage was well predicted by their pre-lesion connectivity to the hippocampus and the extent to which they acted as hubs in the pre-lesion network (‘hubness’). (B) A scatter plot of the acute stage changes to the network participation coefficient for each brain regions, compared to model predictions. Brain regions are coloured according to their pre-lesion connectivity with the hippocampus (compare with Figure 2D). (D-F) As in (A-C), but for chronic stage changes to network participation. Note that areas with a higher non-neuronal cell density showed the greatest increase in the network participation coefficient over the chronic stage. Note that (D) shows the overall within network participation coefficient changes for the chronic stage, while the model predictions and data shown in (E-F) corresponded to the residual chronic stage changes to within the network participation coefficient, after regressing out acute stage changes. * signifies that these predictors were significant and included in the final model.
 
-## Non-neuronal cell density predicts a chronic stage rise in network participation
+### Non-neuronal cell density predicts a chronic stage rise in network participation
 
 As both the calculation of the acute and chronic stage changes contained the three-month timepoint, they were not independent. In order to identify the chronic stage changes that were independent of the acute stage changes, we constructed a general linear model, using the acute stage changes to predict the chronic stage changes. The relationship between the acute and chronic stage changes to the network participation coefficient did not differ from chance (p = 0.66, corrected for the shared timepoint, see Materials and methods), suggesting that distinct degenerative and plastic processes affected network participation at the two stages. The residuals of this model were taken to be the chronic stage changes that were independent of the acute stage changes.
 
 We used the same predictors as during the acute stage to predict the chronic stage changes in the network participation coefficient (Figure 3D). The model significantly predicted the cortex-wide pattern of chronic stage changes in network participation coefficient (F2,75 = 24.3, p = 7×10−9, r2 = 0.39, Figure 3E). Non-neuronal cell density was significantly associated with a rise in network participation coefficient over the chronic stage (t73 = 4.70, p = 1×10−5). As in the acute phase, hubness was significantly associated with a drop in network participation coefficient during the chronic stage (t73 = −4.93, p – 4 × 10−6) (Figure 3F). Neither neuron density (t73 = 1.57, p = 0.12) nor hippocampal functional connectivity (t73 = 1.24, p = 0.22) were significant predictors of chronic stage network participation changes.
 
-## Hubness is associated with an acute stage drop in within-module functional connectivity
+### Hubness is associated with an acute stage drop in within-module functional connectivity
 
 A model with hubness as the lone predictor (identified with stepwise regression) significantly predicted the cortex-wide pattern of acute stage changes in within-module functional connectivity (Figure 4B; Figure 4C, F1,76 = 10.25, p = 0.002, r2 = 0.12, hubness t73 = −3.20, p = 0.002, neuron density t73 = −1.39, p = 0.168, non-neuronal cell density t73 = −0.92, p = 0.359, pre-lesion hippocampal functional connectivity t73 = −0.28, p = 0.782).
 
@@ -98,13 +181,13 @@ A model with hubness as the lone predictor (identified with stepwise regression)
 
 **Figure 4.:** (A) The pattern of acute stage increases and decreases to within-module connectivity. (B-C) The degree to which individual brain regions changed their within-module connectivity over the acute stage was significantly associated with the extent to which they acted as hubs in the pre-lesion network (‘hubness’). Scatter plot in (B) shows brain regions coloured according to their pre-lesion connectivity with the hippocampus (compare with Figure 2D). (D-F) As in (A-C), but for chronic stage changes to within-module connectivity. Note that (D) shows the overall within module-connectivity changes for the chronic stage, while the model predictions and data shown in (E-F) corresponded to the residual chronic stage changes to within module-connectivity, after regressing out acute stage changes. * signifies that these predictors were significant and included in the final model.
 
-## Higher pre-lesion hippocampal functional connectivity is associated with a chronic stage rise in within-module functional connectivity
+### Higher pre-lesion hippocampal functional connectivity is associated with a chronic stage rise in within-module functional connectivity
 
 Acute (Figure 4A) and chronic stage (Figure 4D) changes to within-module connectivity were more strongly positively associated than expected by chance (p < 0.001, corrected for the shared timepoint, see Materials and methods), suggesting that there may have been a continuation of degenerative or plastic processes from the acute to chronic stage. The residuals of this model were used to identify the independent chronic stage changes to within-module connectivity.
 
 The stepwise regression model significantly predicted the cortex-wide pattern of chronic stage changes in within-module functional connectivity (F3,74 = 7.68, p = 0.0002, r2 = 0.24, Figure 4E). Neuron density (t73 = −2.54, p = 0.013) was a significant predictor of a drop in within-module functional connectivity during the chronic stage. In contrast, pre-lesion hippocampal functional connectivity was associated with a chronic stage increase in within-module functional connectivity (t73 = 4.04, p = 0.0001). Non-neuronal cell density was not included in the final model (t73 = −1.33, p = 0.19). Hubness (t73 = −2.08, p = 0.04) was a significant predictor of a chronic stage decrease in within-module functional connectivity across most (lambda = 0.8–1 and 1.3–1.4), but not all (lambda = 1.1, p = 0.053, lambda = 1.2, p = 0.075) of the repetitions of the analysis with different resolution parameters (lambda), and thus may be viewed as a marginal result (Figure 4F).
 
-## Higher pre-lesion hippocampal functional connectivity is associated with a chronic stage drop in grey-matter volume
+### Higher pre-lesion hippocampal functional connectivity is associated with a chronic stage drop in grey-matter volume
 
 None of the four predictors significantly predicted acute stage changes in grey matter volume (neuron density: t73 = 1.10, p = 0.27, non-neuronal cell density: t73 = 0.40, p = 0.69, hubness: t73 = 1.27, p = 0.21, hippocampal functional connectivity: t73 = −0.11, p = 0.91) (Figure 5A–C).
 
@@ -116,13 +199,13 @@ Acute and chronic stage changes to cortical grey matter volume were more strongl
 
 The stepwise regression model for chronic stage changes to grey matter volume included only pre-lesion hippocampal functional connectivity in the final model (F1,76 = 16.39, r2 = 0.17, t73 = −4.05, p = 0.0001). Neuron density (t73 = 1.58, p = 0.118), non-neuronal cell density (t73 = 0.28, p = 0.779) and hubness (t73 = −1.92, p = 0.058) did not make the cut-off for inclusion in the model (Figure 5E–G).
 
-## Grey matter volume was reduced in a small number of areas in the acute stage, with further reductions in the chronic stage
+### Grey matter volume was reduced in a small number of areas in the acute stage, with further reductions in the chronic stage
 
 In order to investigate grey-matter volume changes to the whole-brain (not restricted to cortex), we performed a deformation-based morphometry analysis of the grey-matter volume changes using a linear mixed model. Results are shown in Figure 5D,H, thresholded at p < 0.005 and a minimum cluster size of 5 mm3 (Sallet et al., 2011).
 
 During the acute stage, there were very limited volumetric decreases in the medial septum, amygdala and dorsal premotor cortex. No increases survived thresholding (Figure 5D). At the chronic stage, we still saw decreases in the medial septum, but also a larger range of decreases. Some of these were also in areas that are monosynaptically connected with the hippocampus: the medial orbitofrontal cortex, posterior cingulate cortex and posterior parahippocampal cortex. There were also more extensive volumetric decreases, in the anterior prefrontal cortex (medial and lateral), ventrolateral prefrontal cortex, dorsal striatum, visual cortex and superior temporal cortex. There were also volumetric increases in the cerebellum, midbrain and premotor cortex. These results did not survive multiple comparisons correction (possibly due to our small sample size), so these changes should be viewed with this caveat in mind.
 
-## Modularity is affected by hippocampal lesions
+### Modularity is affected by hippocampal lesions
 
 We investigated the effect that the hippocampal lesions had on the macroconnectivity structure by examining the changes in individual modules, which, along with hubs are considered the canonical forms of integration and segregation, and hallmarks of interareal connectomes (Rubinov, 2016).
 
@@ -140,11 +223,11 @@ During the chronic stage (Figure 6D), there is a drop in within-module functiona
 
 The dispersion of the parieto-occipital module, which previously acted as a link between other modules, also led to a drop in connectivity between the modules, as seen by an increase in the modularity during the chronic stage (pre-lesion: 0.33, 3 months post-lesion: 0.34, 12 months post-lesion: 0.49; F2,297=60230, p~0). There were always fewer modules at 12 months after the lesion compared to the pre-lesion scan, at all values of lambda tested (range 0.8–1.4).
 
-## Relationship between cell densities and hubs
+### Relationship between cell densities and hubs
 
 In an exploratory analysis we performed a stepwise regression in order to assess the relationship between cell densities and ‘hubness’. A model containing both neuron and non-neuronal cell density significantly predicted hubness (F2,75 = 6.18, r2 = 0.14, p = 0.003). Neuron density was positively associated with hubness (t = 3.49, p = 0.008), while non-neuronal cell density was negatively associated with hubness (t = −2.19, p = 0.032).
 
-## Statistical comparison between full dataset and two-monkey dataset
+### Statistical comparison between full dataset and two-monkey dataset
 
 In order to test whether the above results were due to the fact that, in some cases, scans of different monkeys were used at different timepoints, we repeated all analyses with the data from two monkeys with a complete set of pre- and post-lesion scans. We tested whether the beta values of the four independent variables (neuron and non-neuronal cell densities, hubness and pre-lesion hippocampal connectivity) for each of the above regression analyses significantly differed between the two datasets using non-parametric statistics (see Materials and methods). Of the 24 beta-values assessed, the following differences in beta-values between datasets were observed. Hippocampal connectivity as a predictor for chronic changes in participation coefficient (p = 0.034), hubness as a predictor of acute changes in within-module connectivity (p = 0.0004) and hubness as a predictor of chronic changes in grey matter volume (p = 0.019). In all three of these cases the significance of the result, and hence the interpretation did not change; that is, hubness remained a significant predictor of acute changes in within-module connectivity in the full and two-monkey datasets, and the two other predictors remained non-significant.
 
@@ -152,7 +235,7 @@ In order to test whether the above results were due to the fact that, in some ca
 
 Here we show that, following an excitotoxic lesion of the hippocampus, functional and structural changes occur dynamically over time. The pattern of functional connectivity of the hippocampus before a lesion can significantly predict the brain areas that will show functional connectivity changes and grey matter volume loss after the lesion. Areas that were highly connected with the hippocampus before the lesion showed a drop in network participation during the acute stage, and a loss of grey matter volume over the chronic stage. However, they also increased their functional connectivity with other areas in the same module over the chronic stage. This may indicate that MRI is sensitive to distinct microscale plasticity processes that occur during the acute and chronic stages post-lesion. This was supported by contrasting associations between measures of neuronal and non-neuronal cell densities with functional connectivity changes. Neuronal density was associated with a greater loss of within-module functional connectivity during the chronic stage, while non-neuronal cell density was associated with increases in network participation over the same stage. Network hubs showed a distinctive pattern of post-lesion alterations, which suggested they are more vulnerable to the effects of the lesion. The more a region acted as a hub in the pre-lesion network, the greater the reduction in functional connectivity at both the acute and chronic stages.
 
-## Pre-lesion functional connectivity predicts dynamic network participation alterations
+### Pre-lesion functional connectivity predicts dynamic network participation alterations
 
 Changes in activation in distant brain regions are widely agreed to be among the first adaptations following brain injury before a return to more normal-appearing activation patterns in the spared tissue close to the affected site (Cramer, 2008). Recently in humans, connectomic information derived from databases of healthy humans has been used to identify remote areas likely to be affected by a lesion (Kuceyeski et al., 2014; Thiebaut de Schotten et al., 2015), but the relationship between the brain’s connectivity profile and the dynamics of plasticity had not previously been investigated. Here, we show that functional connectivity can be highly predictive of dynamic plastic changes in both the acute and chronic stages.
 
@@ -164,17 +247,17 @@ Our findings also have implications for the understanding of the role of medial 
 
 The processes underlying the mechanism of an excitotoxic lesion are partly overlapping with those involved in human brain injury. The initial phase of an ischemic event, for example, leads to excitotoxic death via activation of glutamate receptors, as in our deliberate NMDA lesion, but this is only one of a cascade of processes (Cramer, 2008). The mechanisms involved in traumatic brain injury are less similar to our excitotoxic lesions, starting with cerebral edema and increased intracranial pressure, followed by a number of other factors of which glutamate excitotoxicity is just one (Kinoshita, 2016). The strength of a specific NMDA-induced lesion, which spares fibers of passage within or adjacent to the area (Coffey et al., 1988; Köhler and Schwarcz, 1983) is that we can study the effect of damage to a specific area on the rest of the brain.
 
-## Grey matter volume loss is in connected areas of the episodic memory network
+### Grey matter volume loss is in connected areas of the episodic memory network
 
 None of our factors predicted grey matter loss over the acute stage, but areas that were highly connected with the hippocampus before the lesion suffered a greater loss of grey matter volume over the chronic stage. We observed decreases in the volume of the medial septum, amygdala and posterior parahippocampal cortex. These regions and the white matter tracts connecting them to the hippocampus are also affected in human subjects with developmental amnesia (Dzieciol et al., 2017; Olsen et al., 2013) and in people born very preterm (Ball et al., 2012; Caldinelli et al., 2017; Froudist-Walsh et al., 2017; Salvan et al., 2014; Tseng et al., 2017). Although the severe structural abnormalities associated with developmental amnesia lead to seemingly permanent impairments to episodic memory (Vargha-Khadem et al., 2001), milder damage to this circuit may enable plastic changes in cortical functional connectivity to partially compensate for damage to the core episodic memory circuit (Isaacs et al., 2003; Nosarti and Froudist-Walsh, 2016). In the present study, the incomplete damage to subcortical structures such as the mammillary bodies, fornix and connected thalamic subregions in combination with plastic changes to spared areas may be crucial for the preservation or recovery or anterograde memory abilities (Baxter, 2013; Froudist-Walsh et al., 2018; Mitchell et al., 2008). Nonetheless, we acknowledge a limitation of the study is that our design cannot distinguish between compensatory and maladaptive plasticity.
 
-## Neuronal and non-neuronal cell densities predict different aspects of post-lesion plasticity
+### Neuronal and non-neuronal cell densities predict different aspects of post-lesion plasticity
 
 We did not see a significant relationship between neuronal or non-neuronal density and acute post-lesion plasticity. Neuronal cell density was significantly associated with the decrease in within-module functional connectivity during the chronic stage. Dendritic tree size and spine count tend to show opposite gradients to neuron density, with lowest values in early visual cortex and peaking in higher association areas (Elston et al., 2010; Scholtens et al., 2014). Thus the loss of connectivity in areas with higher neuron density may be reflective of other factors, such as a lack of dendritic spines that can be crucial for synaptic plasticity. Indeed, local and distant remodeling of spines and dendritic trees has been observed following stroke (Brown et al., 2007; Brown et al., 2010; Nudo, 2013).
 
 We found that non-neuronal cell density was significantly positively associated with the increase in network participation during the chronic stage. Although synaptic plasticity is traditionally thought of as being neuronally initiated, it is now clear that astrocytes and microglia can modify synaptic connectivity in a variety of ways (Ben Achour and Pascual, 2010; Allen and Barres, 2005; Araque et al., 1999; Ullian et al., 2004) and can even alter synaptic strength in the absence of neuronal activity (Clark et al., 2015). Astrocytes and microglia can have both beneficial and detrimental effects on post-injury plasticity (Anderson et al., 2003; Loane and Kumar, 2016) and have emerged as promising candidates for treatment following acquired brain injury in humans (Barreto et al., 2011; Loane and Kumar, 2016). Our finding that non-neuronal cell density positively correlates with the increase in the network participation coefficient during the chronic stage provides a novel link between the local role of glia at the synapse, and plasticity of large-scale functional connectivity patterns.
 
-## Hubs are preferentially affected by hippocampal lesions
+### Hubs are preferentially affected by hippocampal lesions
 
 We found that hub regions were more likely to lose functional connectivity with other regions (reflected in a drop in both within-module functional connectivity and network participation) following a lesion. This supports the idea that hubs are generally affected following brain injury or disorder. Crossley et al. (2014) put forward two hypotheses as to why hub regions are more likely to suffer pathology in brain disorders (Crossley et al., 2014). The first hypothesis stated that hub regions are more functionally valuable, and therefore damage to hub regions is more likely to be symptomatic than damage elsewhere. Here we show that hub regions are in fact more likely to suffer a loss of functional connectivity, even if the primary site of injury – the hippocampus – is not itself a hub. This coincides to a greater degree with the second hypothesis of Crossley et al., namely that hubs are biologically costly, and thus more vulnerable to various pathogenic processes. An extension of that hypothesis is that hubs are more likely to be connected to the site of primary insult (in this case the hippocampus), and more likely to suffer from diaschisis as a result.
 
@@ -182,11 +265,11 @@ We showed that ‘hubness’ was an independent predictor of structural and func
 
 The mechanism underlying the vulnerability of hubs to injury requires further study. Speculatively, in an exploratory analysis, we found a relatively high neuron: non-neuronal cell ratio in hubs, perhaps indicating a lack of glial other support cells per neuron. This may mean that hubs are less able to adapt to injury than non-hub areas. Several studies have recently examined the relationships between cell densities and hub properties yet consistent relationships have yet to emerge, perhaps due to the use of different experimental techniques and definitions of hubs across different species (Beul et al., 2015; Beul et al., 2017; van den Heuvel et al., 2015; Rubinov et al., 2015; Scholtens et al., 2014).
 
-## Caveats and future directions
+### Caveats and future directions
 
 Given our finding that plasticity following a lesion is highly dependent on the cellular composition of different brain regions, it may be the case that the specific cellular composition of the hippocampus may also have played a role in the patterns of plasticity we see here. The unique connectivity of the hippocampus relative to other brain regions may also be an important factor. This suggests that we may see very different patterns of plasticity following lesions to other brain regions. Future studies will be needed to determine if the relationships between connectivity patterns, gradients of microstructure and patterns of plasticity following brain injury can be generalised to lesions to other brain regions or are specific to the hippocampus.
 
-## Conclusions
+### Conclusions
 
 By combining precise anatomical lesions with multiple, multi-modal scans across a period of a year following a lesion, we were able to make three contributions to the literature. Firstly, we show that functional and structural changes can greatly differ between acute and chronic stages. This highlights the importance of carefully considering the time since injury when studying post-lesion plasticity and behavioral recovery. We advocate, where possible, the collection of data at multiple time points following injury in order to accurately map the dynamic recovery process. Secondly, while it has been known for some time that areas connected to a lesioned brain region are more likely to be affected by the lesion than non-connected areas, to our knowledge this is the first study to show quantitatively that post-lesion plasticity patterns depend on pre-lesion functional connectivity. Lastly, we link across spatial scales, and show how microstructural gradients and macrostructural network measures can provide additional predictive value and insights into the plasticity process.
 
@@ -194,21 +277,138 @@ By combining precise anatomical lesions with multiple, multi-modal scans across 
 
 This study was conducted ethically, humanely, and in accordance with federal regulations and the guidelines contained in the National Research Council Guide for the Care and Use of Laboratory Animals. All animals were handled according to a protocol approved by the Animal Care and Use Committee (IACUC) at the Icahn School of Medicine at Mount Sinai. The institution also has been fully accredited by the Association for Assessment and Accreditation of Laboratory Animal Care International (AAALAC - #00002) since 1967.
 
-## Data
+### Data
 
 Data are available to download from the INDI PRIMatE Data Exchange (Milham et al., 2018): https://www.nitrc.org/account/login.php?return_to=http://fcon_1000.projects.nitrc.org/indi/PRIMEdownloads.html: Mount Sinai Philips Achieva 3T dataset. Users will first be prompted to log on to NITRC and will need to register with the 1000 Functional Connectomes Project website on NITRC (http://fcon_1000.projects.nitrc.org/indi/PRIME/mssm1.html) to gain access to the PRIME-DE datasets.
 
 The code used for analysis has been made available on Github: https://github.com/seanfw/froudist-walsh-et-al-elife-2018 (Froudist-Walsh, 2018; copy archived at https://github.com/elifesciences-publications/froudist-walsh-et-al-elife-2018).
 
-## Subjects
+### Subjects
 
 Subjects were seven male rhesus macaque monkeys (Macaca mulatta; mean age at start of experiment 3.5 years, range 2.9–4 years, mean weight at start of scanning 6.0 kg, range 4.7–7.2 kg), and one female cynomolgus macaque monkey (Macaca fascicularis; 8 years at start of experiment, 4.7 kg at start of scanning). 4 of the male monkeys and the female monkey received bilateral neurotoxic hippocampal lesions as described below. The animals were young adults at the time of lesion (mean age for the males, 4.4 years, range 3.7–4.75 years; female age 8 years). The other three males acted as unoperated controls, along with pre-lesion data acquired before the lesions in the other monkeys. They were scanned at the same point in the behavioral study as the operated males. Full datasets were not available for every monkey as, due to the difficulty associated with acquiring high-resolution data from monkeys, some datasets were not of sufficient quality. The data acquired for each monkey is shown in Table 2.
 
-## Behavior
+**Table 2.**
+ Details of monkeys and surgeries.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="3">T1-weighted</th>
+      <th colspan="3">Resting-state</th>
+    </tr>
+    <tr>
+      <th>Monkey</th>
+      <th>Group</th>
+      <th>Pre</th>
+      <th>3 month</th>
+      <th>1 year</th>
+      <th>Pre</th>
+      <th>3 month</th>
+      <th>1 year</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E</td>
+      <td>Lesion</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>Lesion</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>Lesion</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>Lesion</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>Lesion</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>Control</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>L</td>
+      <td>Control</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>W</td>
+      <td>Control</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td></td>
+      <td>8</td>
+      <td>5</td>
+      <td>4</td>
+      <td>6</td>
+      <td>4</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
+### Behavior
 
 All monkeys except the female cynomolgus were tested on a test of episodic memory, the object-in-place scene learning task. The behavioral results from these monkeys M, N, S and T are described elsewhere (H1-H4 in Froudist-Walsh et al., 2018). The monkeys had a retrograde memory impairment but no anterograde memory impairment on the episodic memory task.
 
-## Hippocampal lesions
+### Hippocampal lesions
 
 Monkeys received MRI-guided bilateral neurotoxic hippocampal lesions using methods described by Hampton et al (Hampton et al., 2004). Neurosurgical procedures were performed in a dedicated operating theatre under aseptic conditions. Briefly, monkeys were sedated with a cocktail of dex-medetomidine (0.01 mg/kg), buprenorphine (0.01 mg/kg) and midazolam (0.1 mg/kg) given i.m.. Where necessary, top-ups were given of dex-medetomidine (0.003 mg/kg) and midazolam (0.1 mg/kg) without buprenorphine (to avoid excessive respiratory depression) and any further top-ups of dex-medetomidine (0.003 mg/kg) only as necessary. This protocol was selected to avoid the use of the NMDA antagonist ketamine, which would potentially counteract the effects of the NMDA used as an excitotoxin (Hampton et al., 2004).
 
@@ -222,59 +422,334 @@ Following the first surgery we assessed the lesion extent with a T2-weighted sca
 
 Whole-brain BOLD functional MRI data were collected for 40 min using a three-dimensional sequence with the following parameters: 40 axial slices; dimensions 1.5 × 1.5×1.5 mm; TR, 2600 ms; TE, 19 ms; 988 volumes, acceleration factor = 2. A structural scan (three averages) was acquired for each monkey using a T1-weighted magnetization-prepared rapid-acquisition gradient echo sequence (0.5 × 0.5×0.5 mm). An additional T1-weighted scan and a T2-weighted scan (0.5 × 0.5×0.5 mm) were acquired 6 days post-operatively to assess lesion extent. For the resting-state fMRI scans, isoflurane levels were kept to a minimum to ensure the preservation of resting-state networks: mean isoflurane 1.2%, range 1.0–1.6% (Hutchison et al., 2014; Vincent et al., 2007). Resting-state fMRI was carried out at least 2 hr after ketamine administration, to reduce detrimental effects of ketamine on resting-state networks (Bonhomme et al., 2016). End-tidal CO2 was maintained in a normocapnic range wherever possible, to avoid effects of hypercapnia on the BOLD signal: mean CO2 39 mmHg, range 33–45 mmHg (Bandettini and Wong, 1997; Kastrup et al., 1999; Rostrup et al., 2000).
 
-## Histology
+### Histology
 
 At the end of the study, monkeys were deeply anaesthetized with ketamine (10 mg/kg), intubated and given sodium barbiturate (sodium pentobarbital, 100 mg/kg) intravenously. They were then transcardially perfused with 0.9% saline followed by 4% parafomaaldehyde. Brains were post-fixed in paraformaldehyde overnight and then cryoprotected in 30% sucrose solution in 0.9% saline and cut into 50 μm sections coronally on a freezing microtome. 1 in five sections was stained with cresyl violet for cell bodies. The sections containing the hippocampus were photographed using a Nikon Eclipse 80i light microscope with a 4x objective. Hippocampal volumetric reduction was carried out in Fiji, a version of the image analysis program ImageJ (https://imagej.nih.gov/ij/). The volume of the hippocampus was manually delineated on sections of the monkey atlas ‘Red’ (using criteria from Málková et al., 2001) and the remaining hippocampal volume of the hippocampus was manually delineated on images of the cresyl violet sections. The sections were then nonlinearly warped to the atlas using the function bUnwarpJ and the volume of each hippocampal section calculated as a percentage of normal hippocampal volume (Table 1). The overlap between the remaining hippocampal volume across all five monkeys and normal hippocampal volume is shown in Figure 1B.
 
-## MRI data analysis
+### MRI data analysis
 
-## Hippocampal lesion assessment and structural alterations in connected areas
+#### Hippocampal lesion assessment and structural alterations in connected areas
 
-## Structural data preprocessing
+##### Structural data preprocessing
 
 This analysis involved structural scans from the pre-operative (n = 8), 3 months (n = 5) and 12 months (n = 4) time points. The three structural images were averaged together to produce an image with high signal to noise ratio.
 
-## Hippocampal lesion assessment
+##### Hippocampal lesion assessment
 
 The post-operative T2-weighted scan was linearly registered to the pre-operative T1-weighted scan using the FSL tool FLIRT. The pre-operative T1-weighted scans were then nonlinearly registered to monkey MNI space using the FSL tool FNIRT and the inverse of the transform was also calculated. We manually defined a hippocampus region of interest (ROI) on the MNI brain according to criteria described in Málková et al. (2001), registered it back to the individual monkey’s pre-operative T1-weighted image and manually edited it for precision. After thresholding the T2-weighted image for each monkey at 85% of its maximum intensity and combining the two images (for the first and second surgery) for monkeys M, N, S and T, we calculated the overlap with the hippocampus ROI for each monkey. The volume of T2 hypersignal relative to the hippocampus ROI volume is shown in Table 3. The T2 overlap for all monkeys is shown in in Figure 1A.
 
-## Deformation-based morphometric analysis
+**Table 3.**
+ Lesion volumes calculated from T2-weighted hypersignal relative to whole hippocampal volume for each monkey. All monkeys received two lesion attempts except monkey E.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="3">Hippocampus</th>
+      <th colspan="3">Left</th>
+      <th colspan="3">Right</th>
+    </tr>
+    <tr>
+      <th>Monkey</th>
+      <th>Lesion attempts</th>
+      <th>Volume</th>
+      <th>Lesion</th>
+      <th>%</th>
+      <th>Volume</th>
+      <th>Lesion</th>
+      <th>%</th>
+      <th>Volume</th>
+      <th>Lesion</th>
+      <th>%</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E</td>
+      <td>1</td>
+      <td>821.38</td>
+      <td>244.13</td>
+      <td>29.72</td>
+      <td>429.25</td>
+      <td>94.88</td>
+      <td>22.10</td>
+      <td>392.13</td>
+      <td>149.25</td>
+      <td>38.06</td>
+    </tr>
+    <tr>
+      <td>M</td>
+      <td>2</td>
+      <td>1019.75</td>
+      <td>563.38</td>
+      <td>55.25</td>
+      <td>516.63</td>
+      <td>190.50</td>
+      <td>36.87</td>
+      <td>503.13</td>
+      <td>372.88</td>
+      <td>74.11</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>2</td>
+      <td>1161.38</td>
+      <td>179.50</td>
+      <td>15.46</td>
+      <td>607.63</td>
+      <td>109.38</td>
+      <td>18.00</td>
+      <td>553.75</td>
+      <td>70.13</td>
+      <td>12.66</td>
+    </tr>
+    <tr>
+      <td>S</td>
+      <td>2</td>
+      <td>979.24</td>
+      <td>706.49</td>
+      <td>72.15</td>
+      <td>484.12</td>
+      <td>398.37</td>
+      <td>82.29</td>
+      <td>495.12</td>
+      <td>308.12</td>
+      <td>62.23</td>
+    </tr>
+    <tr>
+      <td>T</td>
+      <td>2</td>
+      <td>937.38</td>
+      <td>690.63</td>
+      <td>73.68</td>
+      <td>442.88</td>
+      <td>364.00</td>
+      <td>82.19</td>
+      <td>494.50</td>
+      <td>326.63</td>
+      <td>66.05</td>
+    </tr>
+  </tbody>
+</table>
+
+### Deformation-based morphometric analysis
 
 The structural data were first analyzed using a VBM-style analysis as employed by Sallet et al. (Sallet et al., 2011), using the tools FNIRT and Randomise (Jenkinson et al., 2012; Winkler et al., 2014). First, all brains were warped onto the MNI rhesus macaque atlas template (Frey et al., 2011) using the affine linear registration tool FLIRT and then the nonlinear registration tool FNIRT to produce a study-specific template image. Because the amount of warping expected from the pre-operative to 3 months and 12 months time points was disproportionately large due to the lesions, we included all off the brains, not just the control data, in the template (Reuter and Fischl, 2011; Reuter et al., 2012). The nonlinear warping underwent five iterations, each with a higher resolution warp and increasing refinement of the template, with the final warp using a warp resolution (knot-spacing of cubic b-splines) of 1 mm isotropic. The restricted log determinant of the Jacobian of the warp field for each brain to the template was extracted. This is the scalar value of the amount of directional stretching required to align each structural image with the template.
 
 Voxelwise analysis was carried out on an area limited by a grey matter mask extracted using automated segmentation with FAST on the rhesus macaque MNI template (Frey et al., 2011). Longitudinal changes in grey matter volume were assessed using a linear mixed-effects model, implemented in Matlab with the FreeSurfer function lme_mass_fit_vw for mass-univariate linear mixed model analysis (Bernal-Rusiel et al., 2013) (https://surfer.nmr.mgh.harvard.edu/fswiki/LinearMixedEffectsModels). For consistency, only time points and monkeys for which we had resting-state data were analysed. Regions were designated as significant if they passed a threshold of p < 0.005, with a cluster extent threshold of 5 mm3 voxels (Sallet et al., 2011).
 
-## Network changes following hippocampal lesions
+### Network changes following hippocampal lesions
 
-## Functional data preprocessing
+#### Functional data preprocessing
 
 Resting-state fMRI data were analyzed using tools from FMRIB Software Library (FSL) (Jenkinson et al., 2012), and MATLAB (Mathworks, Natick, MA, USA). Each functional dataset was first skull-stripped using BET (Smith, 2002) and manually corrected to make sure that all brain areas were included. Head motion artifacts were removed by linear regression (MCFLIRT), Gaussian spatial smoothing was applied (FWHM 3 mm) and high-pass filtering (0.01 Hz) was applied to reduce noise from scanner drift. Artifacts from vasculature, respiration and head motion were identified using independent components analysis restricted to 40 components (MELODIC) (Beckmann and Smith, 2004) and removed by linear regression.
 
-## Tract-tracing data and atlas
+#### Tract-tracing data and atlas
 
 Structural connectivity data were derived from the CoCoMac database of tract-tracing experiments, originally described by Stephan et al (Stephan et al., 2001), as well as an ‘enhanced’ version of the atlas, which was recently developed by Deco and colleagues (Deco et al., 2014). This enhanced version of the atlas was developed by iteratively re-weighting connection strengths, and resulted in dramatically improved fits to resting-state functional MRI data. The data were used in combination with the Regional Map atlas (Kötter and Wanke, 2005) which was developed by the same group who originally developed CoCoMac, for use with the database, and was mapped to the F99 standard monkey template by Shen and colleagues (Shen et al., 2012). The Regional map contains 82 mainly cortical regions, and includes the hippocampus and amygdala. The brain regions used, along with their abbreviations, are shown in Table 4.
 
+**Table 4.**
+ List of regional map abbreviations and corresponding brain areas.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Regional map abbreviation</th>
+      <th>Brain area</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A1</td>
+      <td>Primary auditory cortex</td>
+    </tr>
+    <tr>
+      <td>A2</td>
+      <td>Secondary auditory cortex</td>
+    </tr>
+    <tr>
+      <td>Ia</td>
+      <td>Anterior insula</td>
+    </tr>
+    <tr>
+      <td>Ip</td>
+      <td>Posterior insula</td>
+    </tr>
+    <tr>
+      <td>Amyg</td>
+      <td>Amygdala</td>
+    </tr>
+    <tr>
+      <td>CCa</td>
+      <td>Anterior cingulate cortex</td>
+    </tr>
+    <tr>
+      <td>CCp</td>
+      <td>Posterior cingulate cortex</td>
+    </tr>
+    <tr>
+      <td>CCr</td>
+      <td>Retrosplenial cortex</td>
+    </tr>
+    <tr>
+      <td>CCs</td>
+      <td>Subgenual cingulate cortex</td>
+    </tr>
+    <tr>
+      <td>FEF</td>
+      <td>Frontal eye field</td>
+    </tr>
+    <tr>
+      <td>G</td>
+      <td>Gustatory area</td>
+    </tr>
+    <tr>
+      <td>HC</td>
+      <td>Hippocampus</td>
+    </tr>
+    <tr>
+      <td>M1</td>
+      <td>Primary motor cortex</td>
+    </tr>
+    <tr>
+      <td>PFCcl</td>
+      <td>Centrolateral prefrontal cortex</td>
+    </tr>
+    <tr>
+      <td>PFCdl</td>
+      <td>Dorsolateral prefrontal cortex</td>
+    </tr>
+    <tr>
+      <td>PFCdm</td>
+      <td>Dorsomedial prefrontal cortex</td>
+    </tr>
+    <tr>
+      <td>PFCm</td>
+      <td>Medial prefrontal cortex</td>
+    </tr>
+    <tr>
+      <td>PFCoi</td>
+      <td>Intermediate orbital prefrontal cortex</td>
+    </tr>
+    <tr>
+      <td>PFCol</td>
+      <td>Orbitolateral prefrontal cortex</td>
+    </tr>
+    <tr>
+      <td>PFCom</td>
+      <td>Orbitomedial prefrontal cortex</td>
+    </tr>
+    <tr>
+      <td>PFCvl</td>
+      <td>Ventrolateral prefrontal cortex</td>
+    </tr>
+    <tr>
+      <td>PFCpol</td>
+      <td>Polar prefrontal cortex</td>
+    </tr>
+    <tr>
+      <td>PHC</td>
+      <td>Parahippocampal cortex</td>
+    </tr>
+    <tr>
+      <td>PMCdl</td>
+      <td>Dorsolateral premotor cortex</td>
+    </tr>
+    <tr>
+      <td>PMCm</td>
+      <td>Medial (supplementary) premotor cortex</td>
+    </tr>
+    <tr>
+      <td>PMCvl</td>
+      <td>Ventrolateral premotor cortex</td>
+    </tr>
+    <tr>
+      <td>S1</td>
+      <td>Primary somatosensory cortex</td>
+    </tr>
+    <tr>
+      <td>S2</td>
+      <td>Secondary somatosensory cortex</td>
+    </tr>
+    <tr>
+      <td>PCi</td>
+      <td>Inferior parietal cortex</td>
+    </tr>
+    <tr>
+      <td>PCip</td>
+      <td>Cortex of the intraparietal sulcus</td>
+    </tr>
+    <tr>
+      <td>PCm</td>
+      <td>Medial parietal cortex</td>
+    </tr>
+    <tr>
+      <td>PCs</td>
+      <td>Superior parietal cortex</td>
+    </tr>
+    <tr>
+      <td>TCc</td>
+      <td>Central temporal cortex</td>
+    </tr>
+    <tr>
+      <td>TCi</td>
+      <td>Inferior temporal cortex</td>
+    </tr>
+    <tr>
+      <td>TCs</td>
+      <td>Superior temporal cortex</td>
+    </tr>
+    <tr>
+      <td>TCpol</td>
+      <td>Polar temporal cortex</td>
+    </tr>
+    <tr>
+      <td>TCv</td>
+      <td>Ventral temporal cortex</td>
+    </tr>
+    <tr>
+      <td>V1</td>
+      <td>Primary visual cortex</td>
+    </tr>
+    <tr>
+      <td>V2</td>
+      <td>Secondary visual cortex</td>
+    </tr>
+    <tr>
+      <td>VACd</td>
+      <td>Dorsal anterior visual cortex</td>
+    </tr>
+    <tr>
+      <td>VACv</td>
+      <td>Ventral anterior visual cortex</td>
+    </tr>
+  </tbody>
+</table>
+
 A warp was calculated from the F99 brain to the monkeys MNI brain using ANTs normalization software (He et al., 2007) and was applied to the Regional Map atlas using nearest-neighbor interpolation in order to get the atlas into the (monkey MNI) space in which the functional MRI data resided.
 
-## Connectivity matrix construction
+#### Connectivity matrix construction
 
 Timecourses of hippocampal activity on the pre-lesion scans were extracted. Functional connectivity of the left and right hippocampus with all other regions from the pre-lesion scans was calculated and data for left and right hippocampus were averaged. The pre-lesion hippocampal connectivity was then used as a predictor of plastic changes between timepoints. The hippocampus and amygdala bilaterally were excluded from the network calculations (unless stated otherwise) in order to maintain a constant number of nodes in the network and allow comparison with cortical cell densities from the study of Collins et al. (2010). Timecourses from each of the remaining atlas regions were then extracted from each resting-state scan. For each scan, a 78 × 78 functional connectivity matrix was constructed. All analysis, except for those looking at the force-directed graph representations, were carried out on the continuous, unthresholded functional connectivity matrices, in order to avoid choosing arbitrary thresholds (Karolis et al., 2016). Functional connectivity matrices were averaged across all monkeys at each timepoint.
 
-## Cortical grey matter preparation
+#### Cortical grey matter preparation
 
 We then attempted to predict structural alterations throughout the brain during the acute and chronic stages using the same predictors as for the functional connectivity analyses described above. In order to do this, we used the warps from each original pre- and post-lesion scan to the template. Specifically, we extracted the log-Jacobian value for each area in the Regional Map, for each warp. The log-Jacobian is a value that represents the amount of contraction (for negative numbers) or expansion (positive numbers) that has taken place in order for the original brain region to closely match the same brain region on the atlas. If a region has reduced in volume during the acute stage, then this will be represented as a negative value when subtracting the log-Jacobian of the region on the pre-lesion scan from the equivalent value at the 3-month scan. In contrast, an increase in volume would lead to a positive value. The same logic holds from the chronic stage, when comparing the 3 month and 12 month scans.
 
-## Visualisation of hippocampal functional connectivity and comparison with CoCoMac
+#### Visualisation of hippocampal functional connectivity and comparison with CoCoMac
 
 Hippocampal functional connectivity was visualized on the surface using the Connectome Workbench (www.humanconnectome.org/software/connectome-workbench).
 
 After extracting hippocampal functional connectivity with the rest of the brain, we compared this to the hippocampal structural connectivity on the basis of the original and enhanced CoCoMac atlases, using Pearson correlations.
 
-## Cell density analysis
+#### Cell density analysis
 
 In order to map neuronal and glial density data onto the atlas used in the current study, two authors (SFW and PLC) performed a consensus mapping from of the areas described in the anatomical study of Collins et al. (Collins et al., 2010) onto the Regional Map (Kötter and Wanke, 2005). If multiple areas from the Collins Map related to a single area in the Regional Map, then a simple average of all relevant areas was taken to represent the neuronal (or glial) density in that area.
 
-## Functional connectivity measures
+#### Functional connectivity measures
 
 In order to parsimoniously assess how each brain region’s functional connectivity profile was affected by the hippocampal lesion, we assessed two measures of functional connectivity. Within-module functional connectivity is the average functional connectivity of a node with all other nodes within its local module (a.k.a. module). We also analyzed changes to the network participation coefficient, which assesses how strongly a node’s functional connections are distributed across all modules in the brain, and has been proposed as a measure of connector hubs in the brain (Power et al., 2013).
 
@@ -282,7 +757,7 @@ In order to assess brain functional connectivity in this manner, we defined the 
 
 Module detection using the Louvain algorithm depends on choice of a resolution parameter (lambda). In general results presented in the main manuscript use the default parameter value (1) unless otherwise stated. However, we repeated all analyses using a range of values (between 0.8 and 1.4). These values were chosen as they represented extremes of module detection, with just two modules being detected at lambda = 0.8, and modules of single brain areas being detected at lambda = 1.4.
 
-## Hubs and modularity
+#### Hubs and modularity
 
 As both high node strength and high network participation coefficient are proposed as identifiers of network hubs, and the two metrics were positively correlated in the present data, we performed a principal components analysis on the 78 × 2 matrix that represented a node strength and network participation coefficient for each grey matter region. We found that the first principal component explained 73.19% of the variance in the node strength and network participation coefficient data. This first principal component then became our continuous ‘hubness’ measure.
 
@@ -290,7 +765,7 @@ Using the previous definition of modules, we then assessed the longitudinal chan
 
 We then repeated the same analysis, but instead of assessing drop in within-module functional connectivity for each module, we compared hub to non-hub regions, again using a one-way ANOVA.
 
-## Prediction of plasticity in acute and chronic stages
+#### Prediction of plasticity in acute and chronic stages
 
 The relationship between neuron density, non-neuronal cell density, hubness, pre-lesion hippocampal connectivity and our outcome measures of plasticity (within-module functional connectivity, network participation and cortical grey matter volume) was assessed using a series of stepwise regression models.
 
@@ -302,11 +777,11 @@ For the chronic stage changes, a stepwise regression was then performed, again w
 
 As, by definition, the acute (3 month – 0 months) and chronic (1 year – 3 month) stages share a common timepoint (the 3 month scan), one would expect a negative correlation across regions by design. In order to assess whether the relationship between acute and chronic stage changes differed from that expected by chance, we created a null-distribution as follows. On each of 1000 simulations, 234 random numbers were drawn and randomly divided into three groups of 78, matching the number of extra-hippocampal brain regions recorded at the pre-lesion, acute and chronic stage scans, respectively. Randomly generated acute (3 month – 0 month) and chronic (12 month – 3 month) stage ‘change’ measures were then calculated for each simulation, and a general linear model was constructed with the random acute stage measure as a predictor of the random chronic stage changes across the 78 ‘regions’. For each of the 1000 simulations, a t-statistic for the random acute stage predictor was saved. These t-statistics became our null distribution, to which our experimentally observed t-statistic could be compared. The experimental relationship was considered significant if the value was within the top or bottom 2.5% of simulated correlation coefficients.
 
-## Relationship between micro- and macro-scale connectivity measures
+#### Relationship between micro- and macro-scale connectivity measures
 
 We performed an exploratory analysis, where we analysed the relationship between cell density measures and hubness. We used neuronal and non-neuronal cell densities as predictors of hubness in a stepwise regression.
 
-## Statistical comparison between full dataset and two-monkey dataset
+#### Statistical comparison between full dataset and two-monkey dataset
 
 We tested for differences between the beta values in the regressions for the full and two-monkey datasets use non-parametric statistics as follows. Under the null hypothesis, there is no difference between the full and two-monkey datasets. Therefore we should obtain the same beta values for our regressions at the acute and chronic stages regardless of whether the dependent variable data (e.g. acute change in participation coefficient) for each region is taken from the full, or two-monkey dataset. We thus created a null distribution as follows. For each of the 78 brain regions, the acute change in participation coefficient was randomly taken from either the full, or two monkey datasets. We then ran the acute stepwise regression, as in the original analysis. The beta values for the four independent variables (neuron density, non-neuronal cell density, hubness and hippocampal connectivity) for the original (full data) regression were then subtracted from the beta values for regression with the randomly drawn data, and this difference in beta values was saved. This process was repeated 10,000 times with different random draws. Finally, to obtain a two-tailed p-value, the difference between the beta values for the regression on the two-monkey data from the beta-values for the full-data regression for each independent variable were compared to the null distribution. If the difference between the full- and two-monkey datasets lay outside the middle 95% of the null distribution, then the beta-values were said to be different at the p < 0.05 (two-tailed) level.
 

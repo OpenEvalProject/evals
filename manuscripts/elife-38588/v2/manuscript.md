@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.38588.001 Synaptic plasticity, which underlies learning and memory, depends on calcium elevation in neurons, but the precise relationship between calcium and spatiotemporal patterns of synaptic inputs is unclear. Here, we develop a biologically realistic computational model of striatal spiny projection neurons with sophisticated calcium dynamics, based on data from rodents of both sexes, to investigate how spatiotemporally clustered and distributed excitatory and inhibitory inputs affect spine calcium. We demonstrate that coordinated excitatory synaptic inputs evoke enhanced calcium elevation specific to stimulated spines, with lower but physiologically relevant calcium elevation in nearby non-stimulated spines. Results further show a novel and important function of inhibition—to enhance the difference in calcium between stimulated and non-stimulated spines. These findings suggest that spine calcium dynamics encode synaptic input patterns and may serve as a signal for both stimulus-specific potentiation and heterosynaptic depression, maintaining balanced activity in a dendritic branch while inducing pattern-specific plasticity.
+Synaptic plasticity, which underlies learning and memory, depends on calcium elevation in neurons, but the precise relationship between calcium and spatiotemporal patterns of synaptic inputs is unclear. Here, we develop a biologically realistic computational model of striatal spiny projection neurons with sophisticated calcium dynamics, based on data from rodents of both sexes, to investigate how spatiotemporally clustered and distributed excitatory and inhibitory inputs affect spine calcium. We demonstrate that coordinated excitatory synaptic inputs evoke enhanced calcium elevation specific to stimulated spines, with lower but physiologically relevant calcium elevation in nearby non-stimulated spines. Results further show a novel and important function of inhibition—to enhance the difference in calcium between stimulated and non-stimulated spines. These findings suggest that spine calcium dynamics encode synaptic input patterns and may serve as a signal for both stimulus-specific potentiation and heterosynaptic depression, maintaining balanced activity in a dendritic branch while inducing pattern-specific plasticity.
 
 ## Introduction
 
@@ -40,13 +40,25 @@ Given the importance of synaptic activity patterns for information processing an
 
 ## Results
 
-## Multiscale model reproduces electrophysiology and calcium-imaging experiments
+### Multiscale model reproduces electrophysiology and calcium-imaging experiments
 
 We developed a detailed biophysical SPN model to investigate the effect of spatially and temporally clustered and distributed synaptic inputs on spine calcium dynamics (Figure 1A). Ion channel densities were tuned to reproduce SPN electrophysiological characteristics in response to current injection (Figure 1B). The model exhibits the inward rectification and sag in response to hyperpolarizing current injection, latency to first action potential, shallow AHP amplitude, input resistance, and low firing frequency characteristic of SPN recordings (Nisenbaum and Wilson, 1995).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/38588/elife-38588-fig1-v2.jpg)
+
+**Figure 1.:** (A) Model schematic of morphology (left) and calcium dynamics in spine and dendrite (right). Characteristic morphology with dendritic spines is based on estimated values from morphological reconstructions, including tapered dendrites. The model contains ionic and synaptic channels (not depicted). Right: a single spine and parent dendritic compartment showing axial diffusion layers in the spine head and neck and radial diffusion shells in the dendrite. The model includes sophisticated Ca dynamics (red circles indicate calcium ions): diffusion (green arrows), buffers (blue squares - calmodulin, calbindin, fixed buffer; reversible reaction with calcium indicated by black reaction arrows), pump extrusion (purple arrows), and influx via voltage-gated calcium channels (VGCCs; orange arrows) and synaptic (NMDA/AMPA) channels (blue arrows). (B) Model exhibits similar response to electrophysiological current injection steps, including characteristic sag following hyperpolarizing current, latency to first action potential, firing rate, and AHP shape (Nisenbaum and Wilson, 1995). (C) Model calcium dynamics (red) are consistent with experiments (blue) for dendritic calcium (left) vs. distance from soma in response to a back-propagating action potential (bAP) and for spine calcium (right) in response to a bAP or synaptic stimulation (EPSP). Legend entries refer to published experimental calcium imaging data; D1 or D2 refers to dopamine receptor expression of identified SPNs: (Day et al., 2008; Kerr and Plenz, 2002; Shindou et al., 2011). Figure 1—figure supplement 1 shows peak spine calcium sensitivity to parameter variations; Figure 1—figure supplement 2 shows the fate of calcium entering a spine during an EPSP.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/38588/elife-38588-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Model parameters listed in the left column were varied by ±10% during simulation of one back-propagating action potential (bAP – left) or synaptic stimulation of one spine (one EPSP – right). The amount that each parameter variation changed peak spine calcium concentration is plotted on the x axis with respect to the control (zero change) peak spine calcium. For a bAP, a 20 nM change is 10% of the control, and for an EPSP, a 75 nM change is 30% of control; these values fall within the reported experimental variance (Shindou et al., 2011). Parameters are ordered by type of mechanism: ligand-gated channels; inward currents through voltage-gated calcium or sodium channels; outward currents through potassium channels; calcium dynamics; and spine neck resistance (neckRA).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/38588/elife-38588-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The quantity of free calcium, buffer bound calcium, calcium extruded by pumps, and calcium that diffuses out of a dendritic spine head is shown for the first 100 ms following synaptic stimulation, to facilitate comparison with Bartol et al.(2015).
+
 Calcium dynamics were incorporated into the model to reproduce an array of experimental data (Figure 1A,C). Voltage compartments were subdivided into smaller calcium compartments—either radial diffusion shells in the soma and dendrites, or axial diffusion slabs in the spines. Each shell or slab also had diffusible calcium buffers (calmodulin and calbindin), a low affinity fixed buffer (Matthews and Dietrich, 2015), and plasma membrane calcium pumps (for compartments adjacent to membranes). Maximal conductances of voltage-gated calcium channels (VGCCs) were tuned to reproduce experiments measuring the calcium concentration elevations in dendrites and spines in response to a back-propagating action potential (bAP). Conductances of NMDAR and AMPAR channels were tuned to reproduce calcium imaging experiments showing spine calcium elevation during a single excitatory postsynaptic potential (EPSP). Figure 1C shows that bAP-evoked calcium elevation is greater in proximal dendrites than in the soma and decreases with distance in tertiary dendrites, consistent with experimental reports (Day et al., 2008; Kerr and Plenz, 2002). Also, peak calcium in a proximal spine from a bAP was 0.18 μM with a time constant of decay of 74 ms, and in response to a single EPSP peaked at 0.2 μM with a time constant of decay of 73 ms, similar to experimental results when simulated under similar calcium-indicator conditions (Shindou et al., 2011). The relative contributions of specific VGCC types and synaptic calcium sources to spine calcium elevation were also tuned to reproduce experimental data (Carter and Sabatini, 2004; Higley and Sabatini, 2010). Blockade of NMDARs, AMPARs, and T-type, R-type, or L-type VGCCs reduced the spine calcium elevation in response to a single EPSP. Spine calcium elevation in response to a bAP or EPSP was evaluated for parameter variations of ±10% (Figure 1—figure supplement 1). These results demonstrate that the model peak spine calcium response is robust to parameter variations, with at most a 10% change in response to a bAP and a 30% change in response to an EPSP (within reported experimental variability) (Shindou et al., 2011). To further assess model robustness, we evaluated the fates of calcium entering a dendritic spine during a single EPSP for 100 ms following synaptic stimulation. Calcium fates, which were calculated as the quantity (moles) of free calcium, buffered calcium, pumped calcium, and diffused calcium per timestep (Figure 1—figure supplement 2), exhibited similar dynamics to a published computational model with three-dimensional reaction-diffusion in reconstructed dendritic spines from pyramidal neurons (Bartol et al., 2015). Together, the ability to reproduce multiple sources of both electrophysiology and calcium-imaging data suggest that the model is well-suited to investigate the effects of synaptic activity on calcium dynamics.
 
-## Synaptic stimulation of distally located spines produces non-linear spine calcium transients
+### Synaptic stimulation of distally located spines produces non-linear spine calcium transients
 
 SPNs exhibit plateau potentials in response to spatiotemporally clustered synaptic inputs to distal dendritic spines, but it is unclear how these plateau potentials affect spine calcium dynamics or synaptic plasticity. Further, the likelihood of spatial clustering of synaptic inputs occurring in vivo is unknown, and may be low, as individual cortical axons make few synaptic connections to a single SPN (Kincaid et al., 1998). The ability of spatially distributed synaptic inputs to produce a plateau potential would increase the biological relevance of plateau potentials for in vivo function of SPNs. To investigate the role of spatial input patterns, we first verified that our model reproduces plateau potentials in response to spatiotemporally clustered synaptic inputs to distal dendritic spines, and we then investigated the effect of both spatially clustered and spatially dispersed excitatory synaptic inputs on spine calcium elevation.
 
@@ -60,7 +72,7 @@ Supralinear spine calcium transients occur during simultaneous synaptic input to
 
 A critical question is whether spatial clustering of cortical inputs is required, or if spatially dispersed inputs can still cooperate to produce plateau potentials and supralinear spine calcium elevation. To address this question, excitatory inputs were randomly distributed over the proximal (27 – 119 μm from soma) or distal (135 – 225 μm from soma) regions of a dendritic branch, or over the entire branch (Figure 2C). Synaptic inputs that are spatially dispersed over the distal half of the branch still produce a supralinear response, although it is slightly smaller than the response to spatially clustered inputs. Too much spatial dispersion is not tolerated, as distributing 20 inputs over the entire branch no longer elicits supralinear spine calcium elevation. These results suggest that simultaneously stimulated synapses on distal dendritic spines still produce robust calcium influx when distributed within a 90 μm segment, indicating that close spatial clustering may not be a strong requirement for synaptic plasticity. In summary, the simulations of spatially dispersed synaptic inputs predict that SPNs produce plateau potentials and supralinear spine calcium elevation in response to the coordinated stimulation of ~16 excitatory synaptic inputs on a distal dendritic branch, and that this effect does not require precise spatial clustering.
 
-## Spine calcium transients exhibit specificity for stimulated vs. non-stimulated spines
+### Spine calcium transients exhibit specificity for stimulated vs. non-stimulated spines
 
 Synapse-specificity—that potentiation is limited to only those synapses which actively contribute to a postsynaptic response—is critical for synaptic plasticity to underlie learning and memory. Synapse-specific LTP requires that the elevated calcium concentration is confined to stimulated spines, as opposed to non-stimulated, neighboring spines, during a plateau potential. It is not clear how synapse-specificity is maintained during plateau potentials, when the entire dendritic branch becomes strongly depolarized and experiences calcium elevation as shown in calcium-imaging experiments (Plotkin et al., 2011). The strong dendritic depolarization could lead to calcium influx through VGCCs in neighboring non-stimulated spines or diffusion from dendrite to spine, leading to heterosynaptic LTP and a loss of synapse-specificity. To evaluate the extent of synapse-specificity, we investigated whether the calcium response differs between stimulated and neighboring non-stimulated spines for both spatially clustered and distributed inputs to a single dendritic branch (Figure 3).
 
@@ -72,7 +84,7 @@ To quantify synapse-specificity, we sampled calcium concentration from spines al
 
 Although calcium elevation in non-stimulated spines was significantly smaller than stimulated spines, it was also significantly higher than baseline, although only for a subset of non-stimulated spines. Specifically, only the distally located non-stimulated spines exhibited a calcium elevation, with negligible calcium elevation in proximal non-stimulated spines. This suggests that heterosynaptic effects that may occur during a plateau potential would be limited to neighboring non-stimulated spines located on the distal dendritic branch. This distal-to-proximal gradient in calcium elevation is also observed in the dendritic shaft. Therefore, other calcium-dependent types of plasticity, such as homeostatic scaling or branch strength plasticity, also may occur in the distal dendritic shaft during plateau potentials. In summary, these results show three distinct, spatially specific calcium responses to coordinated distal synaptic inputs: a high, supralinear response in stimulated spines; an intermediate response in non-stimulated distal spines and in the distal dendritic shaft; and a negligible response in proximal non-stimulated spines.
 
-## Mechanisms underlying spine-specific calcium dynamics
+### Mechanisms underlying spine-specific calcium dynamics
 
 Understanding the biological mechanisms controlling differences in calcium dynamics between stimulated and neighboring non-stimulated spines may yield greater insights to synapse-specific signaling. Three different sources of spine calcium elevation—calcium permeable synaptic channels, voltage-gated calcium channels, and diffusion (of calcium or calcium-bound buffers)—could enhance or decrease differences in spine calcium concentration between stimulated and non-stimulated spines. To investigate which of these mechanisms distinguishes stimulated spines, we analyzed membrane potential, spine calcium concentration, and calcium channel currents in a stimulated spine and a neighboring non-stimulated spine during clustered distal synaptic stimulation. Additionally, we isolated VGCC-mediated and diffusion-mediated calcium elevations in non-stimulated spines by selectively blocking diffusion between non-stimulated spines and the dendritic shaft.
 
@@ -82,7 +94,7 @@ VGCCs and diffusion both contribute to calcium elevations in non-stimulated neig
 
 Together, these results indicate that the spatial specificity of calcium elevation results from synaptic calcium influx in stimulated spines, whereas both diffusion and VGCC influx increase calcium concentration in neighboring, non-stimulated spines. Consequently, calcium transients exhibit a robust synapse-specific signal in stimulated spines despite highly similar membrane potentials in neighboring spines during plateau potentials. Further, as membrane potential is sharply attenuated as depolarization propagates towards the soma, the VGCC-mediated elevation is limited to distal non-stimulated spines whereas proximal non-stimulated spines exhibit negligible calcium elevation. The distinct calcium transients and sources observed may therefore support stimulus-specific synaptic plasticity in stimulated spines and heterosynaptic plasticity in neighboring, non-stimulated spines.
 
-## Synaptic cooperativity is strongest for synaptic inputs located on the same dendritic branch
+### Synaptic cooperativity is strongest for synaptic inputs located on the same dendritic branch
 
 Synaptic inputs are likely to be spatially and temporally dispersed on multiple dendritic branches in vivo. This raises critical questions: to evoke supralinear spine calcium transients, do cortical inputs need to target a single dendritic branch, or can inputs be spatially dispersed on the entire neuron? Further, would synaptic inputs on multiple branches act independently—such that the number of synaptic inputs per branch required to evoke supralinear calcium transients is independent of synaptic inputs to other branches—or would they interact (cooperate) to lower the threshold number of synaptic inputs per branch required for supralinear calcium transients? To address these questions, we investigated the effect of spatial dispersion of synaptic inputs to multiple dendritic branches. Synaptic inputs were randomly distributed on two tertiary branches with a common secondary branch parent; on four tertiary branches with a common primary branch parent; or on eight tertiary dendritic branches. Additionally, we used both simultaneous synaptic inputs and temporal dispersion, created from random, exponentially distributed intervals. Simulations used average interstimulus intervals (ISIs) of 2.5, 5, or 10 ms between synaptic inputs on each branch (e.g. with a 10 ms mean ISI per branch, when two branches are stimulated, the overall mean ISI is 5 ms for all inputs) (Figure 4). Specifying the ISI per branch has the advantage that the total duration of synaptic stimulation is independent of the number of branches. The temporal order of stimulated spines was randomly selected and followed no spatial pattern.
 
@@ -96,7 +108,7 @@ As the average ISI is increased, there is an overall reduction in supralinear sp
 
 Altogether, results using spatiotemporally dispersed synaptic inputs suggest that each distal dendritic branch in SPNs may function as a relatively independent subunit for integrating synaptic inputs with spine-specific calcium responses. These results are consistent with the theory that individual dendritic branches serve as critical subunits for synaptic integration and plasticity (Branco and Häusser, 2010).
 
-## Distally evoked plateau potential facilitates calcium influx in proximal stimulated spines
+### Distally evoked plateau potential facilitates calcium influx in proximal stimulated spines
 
 The distinct calcium signals in proximal versus distal stimulated spines in response to coordinated synaptic inputs suggests that proximal and distal synapses may have distinct functions in SPNs. This raises the question of whether distal and proximal synapses can interact or instead function independently. Just as a somatic action potential can back-propagate to enhance spine calcium elevation, we investigated whether a cluster of synaptic inputs, in the absence of a somatic action potential, can enhance spine calcium elevation. To test whether a distally evoked plateau potential could interact with a stimulated proximal synapse on the same branch, we paired clustered distal stimulation and single proximal spine stimulation with varying temporal intervals and evaluated the calcium responses in the proximal spine (Figure 5).
 
@@ -106,9 +118,17 @@ The distinct calcium signals in proximal versus distal stimulated spines in resp
 
 Our results show that distal clustered synaptic inputs can facilitate calcium elevation in response to synaptic input to proximal spines, dependent on timing. Simultaneous stimulation of a distal cluster and single proximal spine facilitated the proximal spine peak calcium concentration (Figure 5A). The simultaneous stimulation produced higher proximal spine calcium elevation than the sum of the proximal and distal stimulations performed independently. We repeated the pairing at four different ISIs—proximal stimulus 25 or 50 ms before distal cluster stimulus, and proximal stimulus 25 or 50 ms after the distal cluster (Figure 5B). We found that peak calcium elevation in the proximal spine was facilitated if the proximal stimulus came 25 ms after the distal stimuli. However, peak calcium elevation in the proximal spine was not facilitated when the proximal spine stimulus came 50 or 25 ms before the distal stimuli, nor when the proximal stimulus came 50 ms after the distal stimuli. Interestingly, the duration of the calcium transient in the proximal spine was prolonged when the proximal spine was stimulated prior to the distal cluster. To investigate the mechanism underlying this temporal dependence, we evaluated the voltage in the dendritic shaft at the base of the proximal spine. The enhancement of peak calcium in the proximal spine correlated with the amplitude of the depolarization propagating from the distally evoked plateau potential. Together, these results indicate that distally evoked plateau potentials can interact with proximal synaptic inputs within a 25 ms temporal window, and that the interaction shows asymmetrical dependence on timing. Thus, similar to spike-timing-dependent plasticity rules which depend on the order and timing of presynaptic activation and a postsynaptic spike, we predict that a plateau potential originating in the distal dendrite may facilitate plasticity when paired with stimulation of proximal synapses.
 
-## Inhibition attenuates calcium elevation in stimulated spines
+### Inhibition attenuates calcium elevation in stimulated spines
 
 Multiple sources of inhibitory, GABAergic synapses on SPNs may regulate synaptic integration and spine calcium transients. The ionotropic GABAA synapses exhibit distinct spatial organization, with fast spiking interneurons (FSIs) targeting proximal dendrites and low threshold spiking interneurons (LTSIs) and SPN collaterals targeting distal dendrites, and they exhibit distinct temporal kinetics, with neurogliaform (NGF) interneurons exhibiting much slower activation and inactivation time constants (Ibáñez-Sandoval et al., 2011; Straub et al., 2016; Tepper et al., 2010). To make predictions about synaptic integration and plasticity that may be relevant in vivo, it is critical to include the effects of inhibition in our investigation, as inhibitory signaling is extensive in the striatum. Thus, we investigated the effects of GABAA kinetics, location, and timing relative to clustered glutamatergic input on regulating plateau potentials and spine calcium elevation (Figure 6).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/38588/elife-38588-fig6-v2.jpg)
+
+**Figure 6.:** (A) Attenuation of spine calcium elevation by inhibition is timing-dependent. GABAergic stimulation attenuates the spine calcium elevation evoked by coordinated glutamatergic stimulation when GABAergic stimulation occurs between 25 ms before to 50 ms after glutamateric stimulation for fast GABAA kinetics, or 100 ms before to 50 ms after glutamatergic stimulation for slow GABAA kinetics. The GABAergic synapse was located on the dendritic shaft at the same location as clustered glutamatergic stimulation of 16 distally located neighboring spines. (B) Attenuation of spine calcium elevation by inhibition is location-dependent. GABAergic stimulation simultaneous with glutamatergic stimulation (of 16 distal, neighboring spines) attenuates supralinear spine calcium elevation when the GABAergic stimulation is located distally, near the clustered glutamatergic stimulation, whereas single proximal GABAergic synaptic inputs have little effect. For both A-B, peak spine calcium is normalized to the no-GABA control, and fast (diamonds) or slow (squares) GABAA kinetics correspond to GABAA synapses from SPNs, LTSIs, FSIs (fast), or NGFs (slow). (C) Strong proximal inhibitory input, corresponding to FSIs, enhances supralinear spine calcium elevation for sub- or near-threshold stimulations (16 spines per branch on one or two branches). The peak calcium elevation in all stimulated spines is shown as box-and-whisker plots. The effect of inhibition (GABA; red bars) on peak spine calcium in stimulated spines is higher than control (gray bars) for 16 spines per branch (left) but not 32 spines per branch (right). Both excitatory and inhibitory synapses were stimulated during the same time frame in these simulations. Figure 6—figure supplement 1 shows the peak spine calcium vs. dendritic location for each stimulated spine.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/38588/elife-38588-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The facilitating effect of proximal GABAergic input trains on spine calcium elevation is seen in distal, but not proximal spines, and is stronger for lower excitatory input levels (e.g. upper left panel, 16 stimulated spines on one branch). Peak spine calcium values in stimulated spines (y axes) are plotted versus the location (distance from soma) of each stimulated spine (x axes) in the presence of strong proximal inhibition (red squares) or in the control condition without inhibition (gray diamonds). Each panel corresponds to the number of stimulated spines per branch and the total number of stimulated branches as in Figure 6C.
 
 Our results demonstrate that non-linear spine calcium dynamics depend strongly on the location of simultaneously stimulated GABAA synapses (Figure 6B). We paired stimulation of a single GABAergic synapse on the dendritic shaft with simultaneous stimulation of excitatory synapses on a cluster of distal dendritic spines, and repeated simulations while varying the location of the single GABAergic synapse. We ran the same set of simulations for both the slow and fast GABAA kinetics. Distal GABAergic inputs near the site of clustered excitatory synaptic inputs have the strongest inhibitory effect on spine calcium elevation, reducing the response by ~50% for slow GABAA kinetics, whereas proximally located GABAergic synapses have little effect on spine calcium. The effect was similarly distance-dependent but weaker for fast GABAA kinetics, with a 25% reduction in spine calcium elevation. These results suggest that distally located GABAergic synapses from LTSIs, SPN collaterals, or NGF interneurons likely regulate the occurrence of supralinear spine calcium influx in response to clustered glutamatergic stimulation, whereas FSIs with proximal synapses do not regulate distal spine calcium dynamics.
 
@@ -116,11 +136,23 @@ Additionally, our results show that the timing of GABAergic stimulation relative
 
 As FSIs provide strong proximal inhibition to SPNs in vivo, we also investigated whether a train of proximal GABAergic inputs (as opposed to a single input) would affect cooperativity among stimulated spines or between dendritic branches (Figure 6C). A train of 20 GABAergic inputs (ISI = 3 ms) was applied to the proximal, primary dendritic branch while 16 or 32 glutamatergic inputs per branch were dispersed over the entire branch on one or two neighboring tertiary branches with an ISI of 2.5 ms per branch. The onset of the FSI input train and the glutamatergic stimulation was simultaneous. Interestingly, we found that a train of proximal GABAergic stimulation enhanced spine calcium responses when glutamatergic inputs were sub- or near-threshold (16 spines/branch on one or two branches), but not when above threshold (32 spines/branch on two branches) for supralinear spine calcium elevation. We assessed whether the effect of FSI input trains on spine calcium elevation depended on distance of stimulated spines from the soma (Figure 6—figure supplement 1), and we found that distal spines, but not proximal spines, exhibit elevated calcium in response to proximal FSI inputs relative to the control (no FSI) condition. Our finding that proximal GABAergic stimulation may enhance spine calcium elevation is consistent with experiments demonstrating that when SPNs are in the hyperpolarized downstate, GABAergic stimulation produces depolarization (Blackwell et al., 2003; Bracci and Panzeri, 2006). This depolarization may propagate to distal dendritic spines to enhance supralinear spine calcium elevation in stimulated spines when SPNs are in a hyperpolarized downstate.
 
-## Inhibition enhances stimulus-specificity of spine calcium transients
+### Inhibition enhances stimulus-specificity of spine calcium transients
 
 Notably, although we observed above that inhibition close to excitatory inputs can reduce the magnitude of spine calcium elevation in stimulated spines (likely by lowering dendritic propagation of potentials), inhibition neither abolished the plateau potential nor fully blocked supralinear spine calcium elevation. This raised the intriguing possibility that the reduced local membrane resistance caused by inhibition may also influence non-stimulated spines. Thus, we evaluated the effect of inhibition by measuring the peak calcium response in non-stimulated spines relative to the peak calcium response in stimulated spines in the presence or absence of a co-located and simultaneously stimulated GABAergic synapse during simultaneous excitatory stimulation of a distal cluster of dendritic spines.
 
 The most significant functional effect of distal GABAergic synaptic input is to enhance spatial specificity (Figure 7). When compared to the control (no-GABAergic input) condition, stimulation of a single GABAergic synapse on the distal dendrite reduces the ratio of peak calcium elevation in non-stimulated spines relative to the peak in stimulated spines (Figure 7A). Further, GABAergic stimulation narrows the spatial extent of calcium influx in non-stimulated spines and in the dendritic shaft (Figure 7B), reducing the ratio of non-stimulated spine peak calcium to stimulated spine peak calcium much more for distant than adjacent spines and thereby limiting the spatial extent of heterosynaptic calcium elevation. As calcium elevation can lead to both LTP and LTD, with lower levels of calcium elevation associated with LTD and higher levels associated with LTP, inhibition may critically regulate heterosynaptic plasticity by reducing calcium elevation in non-stimulated spines from a level that could lead to LTP to a level that could lead to LTD, thereby preserving synapse-specific potentiation.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/38588/elife-38588-fig7-v2.jpg)
+
+**Figure 7.:** (A–B) Stimulation of a single GABAergic synapse on the distal dendrite reduces the ratio of peak calcium in nonstimulated spines (A) and dendritic shaft (B) relative to the peak in synaptically stimulated spines for fast or slow GABAA kinetics. For both fast and slow GABAA kinetics, the GABAergic synapse is on the dendritic shaft, co-located with and synchronously stimulated with glutamatergic stimulation of a cluster of 16 distal dendritic spines (location of synaptic input indicated by blue arrowhead). Figure 7—figure supplement 1 shows the sensitivity of the effect of inhibition on spatial specificity to parameter variations. Figure 7—figure supplement 2 shows the robustness of this main finding to model assumptions. (C–D) Inhibition enhances synapse-specificity during stimulation of randomly distributed excitatory synaptic inputs. Distributions of integrated spine calcium concentration for stimulated (blue) and non-stimulated (green) spines are shown for randomly distributed excitatory Poisson input trains (2.5 Hz) for lower (C; n = 200) or higher (D; n = 300) numbers of independent excitatory synaptic inputs, either with (right columns) or without (left columns) 50 GABAergic Poisson input trains (2.5 Hz). Top row shows the log-scale distribution of integrated spine calcium elevation over the 1 s duration inputs; bottom row shows log-scale scatter plots of peak calcium (y axis) versus normalized calcium duration (i.e. integrated calcium/peak calcium) (x axis).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/38588/elife-38588-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Parameters listed on the left (ordered by type of mechanism: ligand-gated channels; inward currents through voltage-gated calcium or sodium channels; outward currents through potassium channels; calcium dynamics; spine neck resistance) were individually varied ±10 or 20% to evaluate sensitivity of the GABA/No-GABA specificity ratio (the ratio of the non-stim/stim spine ratio with GABAergic inhibition from the right panel to the non-stim/stim spine ratio without GABAergic inhibition from the middle panel; right and middle panels show peak calcium in non-stimulated spine/peak calcium in stimulated spine). The black vertical bars indicate the original values (i.e. with no varied parameters) for the GABA/No-GABA specificity ratio (left), or the non-stim/stim spine peak calcium ratio in the absence (middle) or presence (right) of inhibition. A GABA/No-GABA specificity ratio of 1 would indicate no effect of inhibition on the specificity ratio, whereas a value <1 indicates that inhibition enhances specificity, with smaller values corresponding to greater enhancement. For ion channel parameters, maximum conductance was varied; for buffers, the quantities were varied. NeckRA refers to the spine neck axial resistance. CaR and NMDAR were covaried (last row) with opposite sign (orange bar is +CaR/-NMDA; blue bar is -CaR/+NMDA).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/38588/elife-38588-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) The effects of varying calcium diffusion rate, pump density, and calcium flux through calcium permeable channels on the GABA/No-GABA specificity ratio are shown to evaluate model robustness to assumptions that may affect calcium dynamics. As in Figure 7—figure supplement 1, the black vertical bar indicates the original effect of inhibition with unvaried parameters; values <1 mean that inhibition enhances specificity, and smaller values correspond to greater enhancement. The response to fine discretization (timestep of 1 µs, voltage compartment length of 1 micron, six axial calcium diffusion slabs in each spine head and spine neck, and increased radial calcium diffusion shells in the dendritic shaft) is shown to confirm that finer discretization did not change the main result. Facilitated diffusion between spine neck and spine head or dendritic shaft using the geometric-mean method for computing the shared surface area between neck and shaft (Holmes and Poznanski, 2005) rather than the default smaller of the two surfaces areas, is also shown. Calcium fluxes refer to calcium influx through all calcium permeable channels, and these values were modulated independently of the contribution of these channels to membrane depolarization, to isolate effects mediated by calcium dynamics versus effects mediated by depolarization. (B) Comparisons of finer discretization to standard discretization are shown for membrane potential transients in the soma (top left) and a stimulated spine (top right), and spine calcium concentration transients in a stimulated spine (bottom left) and non-stimulated spine (bottom right) during synaptic stimulation of clustered, distal spines.
 
 It is critical in computational modeling to assess the robustness of results to variations in parameter values. To assess the robustness of the effect of inhibition on synapse-specificity, we systematically varied conductances of voltage-gated and synaptic channels, calcium buffer quantities and pump densities, and spine neck axial resistance by ±10% and 20%. For each condition, we computed the specificity ratio as the ratio of peak calcium of non-stimulated spines to peak calcium of stimulated spines, such that a smaller value indicates higher specificity. We then divided the specificity ratio observed with inhibition by the specificity ratio observed without inhibition (called GABA/No GABA specificity ratio), such that a value <1 indicates that inhibition enhances specificity, while a value >1 indicates that inhibition reduces specificity. Inhibition consistently enhanced spatial specificity across all parameter variations, except for a 20% decrease in NMDAR conductance (Figure 7—figure supplement 1). The magnitude of the effect of inhibition was most sensitive to NMDAR, CaR, and GABAR conductances. As expected, a larger GABAR conductance enhanced the GABA/No GABA specificity ratio. Larger inward currents reduced specificity, and the large effect with NMDAR and CaR conductances confirms our previous results showing that these are critical parameters for the supralinear spine calcium response. Surprisingly, decreases in NMDAR or CaR conductances also reduced the GABA/No GABA specificity ratio. When either CaR or NMDAR conductance is lowered, stimulation is below threshold, and the reduced activation of VGCCs greatly enhances spatial specificity in the absence of inhibition. The sensitivity to CaR and NMDAR conductances suggests that neurons may regulate the balance of these channels; thus, we repeated simulations with an increase of CaR and a decrease of NMDAR (and vice versa, no attempt was made to balance these changes). As predicted, sensitivity to the paired parameter change was smaller than sensitivity to a single parameter change. In summary, this parameter sensitivity analysis suggests that the balance of NMDAR and CaR channels may fine-tune spatial specificity of spine calcium transients.
 
@@ -158,31 +190,252 @@ Together, our results have implications for striatal function and plasticity in 
 
 We developed a biologically detailed multicompartment SPN model to investigate the effects of spatiotemporal patterns of synaptic input on calcium signaling. The model includes characterized morphology of SPN dendrites with explicitly modeled spines and ion channels that have been identified in SPNs. Uniquely, the model also includes sophisticated calcium dynamics consisting of calcium buffers, membrane pumps, and radial diffusion in dendrites and spines that enables us to predict how synaptic integration affects SPN calcium signaling.
 
-## SPN model morphology and passive membrane properties
+### SPN model morphology and passive membrane properties
 
 A biophysically detailed SPN model we previously published (Jędrzejewska-Szmek et al., 2017) was modified for this study (Figure 1A). The morphology consisted of a single cylindrical soma (11.3 µm length, 22.6 µm diameter) with four primary dendrites (12 µm length, 2.25 µm diameter), each branching twice into a total of eight secondary dendrites (14 µm length, 1.4 µm diameter) and 16 tertiary dendrites (198 µm length, tapered diameter from 0.89 µm proximally to 0.3 µm diameter distally [Wilson, 1992]). Tertiary dendritic branches were subdivided into 3 µm long compartments to accurately model interactions among neighboring dendritic spines (Gulledge et al., 2012). Spines were explicitly modeled as a cylindrical head (0.5 µm diameter, 0.5 µm length) and neck (0.12 µm diameter, 0.5 µm length) and were distributed on secondary and tertiary dendritic branches with a density of 1 spine/µm, for a total of 3280 spines in the entire model.
 
 Membrane resistivity and capacitivity were set to 1.875 ohms-m2 and 0.01 Farads/m2, respectively. Axial resistance was set to 1.25 ohm-m for all compartments except for spine neck compartments, which were set to 11.3 ohm-m to achieve a neck resistance of 500 MΩ, as estimated from experimental data (Harnett et al., 2012). Passive parameters were determined by fitting the model to hyperpolarizing current injection (Figure 1B).
 
-## Voltage-gated ionic channels
+### Voltage-gated ionic channels
 
-As described previously (Jędrzejewska-Szmek et al., 2017), the model includes the following voltage-gated sodium and potassium ion channels (Table 1): A fast sodium channel (NaF) (Ogata and Tatebayashi, 1990); fast (Kaf/Kv4.2) (Tkatch et al., 2000) and slow (Kas/Kv1.2) (Shen et al., 2004) A-type potassium channels; an inwardly rectifying potassium channel (Kir) (Steephen and Manchanda, 2009); and a resistant persistent potassium channel (Krp) (Nisenbaum and Wilson, 1995). Additionally, the model includes a big conductance voltage- and calcium-activated potassium channel (BK) (Berkefeld et al., 2006) and a small conductance calcium-activated potassium channel (SK) (Maylie et al., 2004). Six VGCCs are also included in the model (Table 1): CaR (Brevi et al., 2001; Foehring et al., 2000), CaN (Cav2.2) (Bargas et al., 1994; Kasai and Neher, 1992; McNaughton and Randall, 1997), CaL1.2 (Cav1.2) (Bargas et al., 1994; Kasai and Neher, 1992; Tuckwell, 2012), CaT3.2 (Cav3.2/ α1H) (McRory et al., 2001), CaT3.3 (Cav3.3/ α1I) (McRory et al., 2001), and CaL1.3 (Cav1.3) (Tuckwell, 2012). Channel kinetic equations and parameters are similar to our previously reported model (Jędrzejewska-Szmek et al., 2017), except we converted the previously nonspecific CaT channel to CaT3.3 and added a CaT3.2 channel with the following parameters: m vhalf = −43.15 mV; m vslope = −5.43 mV; h vhalf = −73.9 mV; h vslope = 2.76 mV; m tau alpha rate = 160,000/V/s; m tau alpha vhalf = 112; m tau alpha vslope = 11; m tau beta rate = 8500; m tau beta vslope = 12.5; m tau baseline offset = 0.0009 s; htau=22.25+0.0455e-Vm mV7.46(ms). Channel conductance values were tuned to reproduce electrophysiology recordings (Table 1). The soma and dendrites contain NaF, Kaf, Kas, Krp, and BK channels; SK channels are present in the soma and dendritic spines (Higley and Sabatini, 2010).
+As described previously (Jędrzejewska-Szmek et al., 2017), the model includes the following voltage-gated sodium and potassium ion channels (Table 1): A fast sodium channel (NaF) (Ogata and Tatebayashi, 1990); fast (Kaf/Kv4.2) (Tkatch et al., 2000) and slow (Kas/Kv1.2) (Shen et al., 2004) A-type potassium channels; an inwardly rectifying potassium channel (Kir) (Steephen and Manchanda, 2009); and a resistant persistent potassium channel (Krp) (Nisenbaum and Wilson, 1995). Additionally, the model includes a big conductance voltage- and calcium-activated potassium channel (BK) (Berkefeld et al., 2006) and a small conductance calcium-activated potassium channel (SK) (Maylie et al., 2004). Six VGCCs are also included in the model (Table 1): CaR (Brevi et al., 2001; Foehring et al., 2000), CaN (Cav2.2) (Bargas et al., 1994; Kasai and Neher, 1992; McNaughton and Randall, 1997), CaL1.2 (Cav1.2) (Bargas et al., 1994; Kasai and Neher, 1992; Tuckwell, 2012), CaT3.2 (Cav3.2/ α1H) (McRory et al., 2001), CaT3.3 (Cav3.3/ α1I) (McRory et al., 2001), and CaL1.3 (Cav1.3) (Tuckwell, 2012). Channel kinetic equations and parameters are similar to our previously reported model (Jędrzejewska-Szmek et al., 2017), except we converted the previously nonspecific CaT channel to CaT3.3 and added a CaT3.2 channel with the following parameters: m vhalf = −43.15 mV; m vslope = −5.43 mV; h vhalf = −73.9 mV; h vslope = 2.76 mV; m tau alpha rate = 160,000/V/s; m tau alpha vhalf = 112; m tau alpha vslope = 11; m tau beta rate = 8500; m tau beta vslope = 12.5; m tau baseline offset = 0.0009 s; $h_{tau}=22.25+0.0455e^{\frac{-VmmV}{7.46}}$(ms). Channel conductance values were tuned to reproduce electrophysiology recordings (Table 1). The soma and dendrites contain NaF, Kaf, Kas, Krp, and BK channels; SK channels are present in the soma and dendritic spines (Higley and Sabatini, 2010).
 
-## Calcium dynamics
+**Table 1.**
+ Voltage-gated ion channel maximal conductances and permeabilities.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gbar (S/m2)</th>
+      <th>Soma</th>
+      <th>Prox dend</th>
+      <th>Mid dend</th>
+      <th>Dist dend</th>
+      <th>Spine</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NaF</td>
+      <td>45,000</td>
+      <td>4420</td>
+      <td>4420</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Kir</td>
+      <td>11.9</td>
+      <td>5.95</td>
+      <td>5.95</td>
+      <td>5.95</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>KaF</td>
+      <td>500</td>
+      <td>500</td>
+      <td>72</td>
+      <td>72</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>KaS</td>
+      <td>70</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Krp</td>
+      <td>10</td>
+      <td>1</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>SK</td>
+      <td>3</td>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td>0.5</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td>BK</td>
+      <td>5</td>
+      <td>2</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td colspan="6">Pbar (cm/s)</td>
+    </tr>
+    <tr>
+      <td>CaL1.2</td>
+      <td>1.5e-7</td>
+      <td>1.5e-7</td>
+      <td>1.5e-7</td>
+      <td>1.5e-7</td>
+      <td>0.915e-7</td>
+    </tr>
+    <tr>
+      <td>CaL1.3</td>
+      <td>0.5e-7</td>
+      <td>0.25e-7</td>
+      <td>0.25e-7</td>
+      <td>0.25e-7</td>
+      <td>0.1525e-7</td>
+    </tr>
+    <tr>
+      <td>CaN</td>
+      <td>15e-7</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>CaR</td>
+      <td>3e-7</td>
+      <td>30e-7</td>
+      <td>30e-7</td>
+      <td>30e-7</td>
+      <td>18.67e-8</td>
+    </tr>
+    <tr>
+      <td>CaT (3.2)</td>
+      <td>0</td>
+      <td>1.2e-7</td>
+      <td>2e-7</td>
+      <td>2e-7</td>
+      <td>1.22e-7</td>
+    </tr>
+    <tr>
+      <td>CaT (3.3)</td>
+      <td>0</td>
+      <td>0</td>
+      <td>5e-10</td>
+      <td>5e-10</td>
+      <td>3.42e-10</td>
+    </tr>
+  </tbody>
+</table>
+
+_Gbar = maximal conductance (S/m2); Pbar = maximal calcium permeability. Prox dend = proximal dendrites (0 to 42 μm from soma); mid dend = middle dendrites (42–60 μm from soma); dist dend = distal dendrites (60–224 μm from soma)._
+
+### Calcium dynamics
 
 Calcium currents are modeled with the Goldman-Hodgkin-Katz (GHK) current equation to accurately account for the calcium driving potential. Calcium-dependent inactivation (CDI) was implemented for CaR, CaN, CaL1.2, and CaL1.3 channels (Liang et al., 2003). CaT channels were located in spines and distal dendrites (Carter and Sabatini, 2004; McRory et al., 2001; Plotkin et al., 2011), but not soma or proximal dendrites (Bargas et al., 1994). CaR, CaL1.2, and CaL1.3 channels were located in soma, dendrites, and spines (Carter and Sabatini, 2004; Higley and Sabatini, 2010). CaN channels were restricted to the soma (Carter and Sabatini, 2004). Calcium channel densities were tuned to experimentally reported calcium imaging for synaptic activation of a single spine (Higley and Sabatini, 2010; Shindou et al., 2011) and back-propagating AP-induced calcium influx into dendrites (Carter and Sabatini, 2004; Day et al., 2008; Kerr and Plenz, 2002; Shindou et al., 2011) and spines (Carter and Sabatini, 2004; Shindou et al., 2011) (Figure 1B). Contribution of specific channels to calcium influx was tuned to experiments blocking specific channel types (Carter and Sabatini, 2004; Higley and Sabatini, 2010).
 
 Intracellular calcium concentration, diffusion, buffers, and pumps were modeled with the difshell object in GENESIS (Bower and Beeman, 1998). Calcium had a diffusion constant of 200 µm2/s (Allbritton et al., 1992). One-dimensional radial diffusion was implemented in the dendrites and soma by subdividing each cylindrical electrical compartment into a series of concentric shells; the submembrane shell had a diameter of 0.1 µm, and successive shells doubled in diameter (Anwar et al., 2014). One-dimensional axial diffusion was modeled in the spines and necks by subdividing the spine and neck electrical compartment into six cylindrical slabs, three for each compartment. Diffusion was also implemented between the spine neck and the submembrane shell of the dendrite. Calcium extrusion was implemented with Michaelis-Menten models of a plasma membrane calcium ATPase (PMCA) in the soma, dendrites, and spines, and a sodium-calcium exchanger (NCX) in the spines (Table 2). Calcium-permeable ion channels provide calcium influx to the spine head slabs and the dendritic/somatic submembrane shell. In the spine head, CaL1.3 (Olson et al., 2005) and calcium-permeable synaptic channels provide calcium influx to the outermost calcium slab (the postsynaptic density), while CaL1.2, CaR, and CaT provide calcium influx to the middle slab. Additionally, the SK channel in spines was dependent on calcium concentration of the middle slab.
 
+**Table 2.**
+ Calcium dynamics parameters
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Pumps</th>
+      <th>Km (mM)</th>
+      <th>Kcat Soma (pmol/cm2/s)</th>
+      <th>Kcat Dend (pmol/cm2/s)</th>
+      <th>Kcat Spine (pmol/cm2/s)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PMCA</td>
+      <td>0.3e-3</td>
+      <td>85</td>
+      <td>10</td>
+      <td>0.6</td>
+    </tr>
+    <tr>
+      <td>NCX</td>
+      <td>1e-3</td>
+      <td>-</td>
+      <td>-</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td colspan="5"></td>
+    </tr>
+    <tr>
+      <td>Buffers</td>
+      <td>Kd (µM)</td>
+      <td>Kf (/s/µM)</td>
+      <td>Quantity (µM)</td>
+      <td>Diff (m2/s)</td>
+    </tr>
+    <tr>
+      <td>Calbindin</td>
+      <td>0.7e-3</td>
+      <td>28</td>
+      <td>80</td>
+      <td>66e-12</td>
+    </tr>
+    <tr>
+      <td>CaMN</td>
+      <td>0.01</td>
+      <td>100</td>
+      <td>15</td>
+      <td>66e-12</td>
+    </tr>
+    <tr>
+      <td>CaMC</td>
+      <td>1.5e-3</td>
+      <td>6</td>
+      <td>15</td>
+      <td>66e-12</td>
+    </tr>
+    <tr>
+      <td>Fixed</td>
+      <td>100</td>
+      <td>400</td>
+      <td>2500</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Fluo-5F</td>
+      <td>2.3</td>
+      <td>236</td>
+      <td>300</td>
+      <td>60e-12</td>
+    </tr>
+    <tr>
+      <td>Fluo-4F</td>
+      <td>9.7</td>
+      <td>80</td>
+      <td>200</td>
+      <td>60e-12</td>
+    </tr>
+    <tr>
+      <td>Fura-2</td>
+      <td>0.185</td>
+      <td>1000</td>
+      <td>100</td>
+      <td>60e-12</td>
+    </tr>
+  </tbody>
+</table>
+
+_PMCA = plasma membrane Ca2+ ATPase; NCX = sodium calcium exchanger; Fixed = endogenous immobilized buffer; CaMN = calmodulin N terminal binding site; CaMC = calmodulin C terminal binding site. Exogenous buffers were only present when tuning to calcium imaging experiments, in which case mobile endogenous buffers were removed._
+
 Calcium buffers (Table 2) were modeled with the difbuffer object in GENESIS, which allows for buffering of calcium within difshells and diffusion of buffers (calcium-bound or free) between difshells. The model included the endogenous mobile buffers calbindin and calmodulin (N and C terminals), as well as an endogenous immobile buffer that was required to avoid unrealistic calcium elevations (Matthews et al., 2013; Matthews and Dietrich, 2015). The endogenous buffer quantities (Table 2) give a buffer capacity ratio close to 90, which is consistent with experimental estimates of buffer capacity in SPN spines and dendrites (Carter and Sabatini, 2004). Exogenous calcium buffers (calcium indicator dyes) were included in simulations when tuning to experimental calcium-imaging data.
 
-## Synaptic channels
+### Synaptic channels
 
 NMDAR and AMPAR synaptic channels were included on the spine heads and contributed calcium to the outermost spine head difshell. The fractional calcium currents were 5% of the total NMDAR current (implemented with the GHK current equation) and 0.1 % of the total AMPAR current. The AMPAR/NMDAR maximal conductance ratio was set to 1.0, and the conductances were set to achieve a unitary somatic PSP of ~2 mV, similar to the uncaging evoked EPSPs in Plotkin et al., 2011. Calcium-dependent inactivation of the NMDAR channel was implemented based on equations in a published model (Farinella et al., 2014).
 
 In simulations that included GABAA stimulation, GABAA synaptic channels were included on the dendritic shaft with a maximal conductance of 1.2 nS. GABAA kinetics were either fast, consistent with synapses from fast spiking interneurons, low-threshold spiking interneurons, or SPN collaterals (Straub et al., 2016), or slow, consistent with NPY-neurogliaform synapses (Ibáñez-Sandoval et al., 2011).
 
-## Simulation and analysis
+### Simulation and analysis
 
 Simulations were done with various spatiotemporal patterns of synaptic input as described in the results. In cases with asynchronous stimulation, the order of spine stimulation was randomly assigned. For simulations with random temporal dispersion, the ISI consisted of exponentially distributed intervals with an average ISI of 2.5, 5, or 10 ms per branch; for example the actual ISI for the 10 ms per branch case with two total branches stimulated was 5 ms, and with four total branches stimulated was 2.5 ms. This was done to make the total time of stimulation independent of number of branches stimulated, and to facilitate comparisons between simulations on a per-branches-stimulated basis (i.e. Figure 4). The minimum ISI values drawn from exponential distributions were unconstrained. The temporal order of asynchronously stimulated spines was randomly selected and followed no spatial pattern.
 

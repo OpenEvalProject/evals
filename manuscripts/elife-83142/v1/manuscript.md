@@ -24,8 +24,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04a9tmd77 The Mount Sinai Bone Program, Departments of Pharmacological Sciences and of Medicine, and Center of Translational Medicine and Pharmacology, Icahn School of Medicine at Mount Sinai New York United States
-2. https://ror.org/03d1wq758 Maine Medical Center Research Institute Scarborough United States
+1. The Mount Sinai Bone Program, Departments of Pharmacological Sciences and of Medicine, and Center of Translational Medicine and Pharmacology, Icahn School of Medicine at Mount Sinai New York United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+2. Maine Medical Center Research Institute Scarborough United States ([ROR:03d1wq758](https://ror.org/03d1wq758))
 
 † Corresponding author
 

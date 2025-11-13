@@ -59,25 +59,61 @@ Together, these data support a model in which cardiomyocytes located in the bord
 
 ## Results
 
-## Single-cell RNA-seq reveals transcriptionally distinct border zone cardiomyocytes
+### Single-cell RNA-seq reveals transcriptionally distinct border zone cardiomyocytes
 
 The border zone comprises only a small fraction of the total number of cardiomyocytes in the injured ventricle (Wu et al., 2016). Several genes and regulatory sequencing have been identified that mark border zone cardiomyocytes, including nppa, which encodes for the cardiac stress hormone ANF (Kikuchi et al., 2010; Wu et al., 2016). To mark these borderzone cardiomyocytes we generated a transgenic zebrafish nppa reporter line (TgBAC(nppa:mCitrine)) in which mCitrine expression recapitulates endogenous cardiac expression of nppa (Figure 1—figure supplement 1a–e). While low nppa:mCitrine expression was observed in trabecular cardiomyocytes of the remote area, higher expression was detected in the trabecular and cortical cardiomyocytes close to the injured area (Figure 1a and Figure 1—figure supplement 1e). Moreover, expression of nppa correlates with previously reported border zone activity of gata4 regulatory elements (Figure 1—figure supplement 1f) (Kikuchi et al., 2010). Histochemical analysis of cryo-injured adult hearts revealed that 75% (±7%, n = 3) of the cardiomyocytes expressing high levels of nppa:mCitrine reentered the cell cycle (Figure 1a). To obtain border zone (proliferating) and remote (non-proliferating) cardiomyocytes from the same tissue for further analysis, we cryo-injured nppa:mCitrine hearts followed by cell dissociation and FACS sorting for both mCitrinehigh and mCitrinelow cells (Figure 1b). Individual, living cells were sorted, followed by single-cell mRNA-sequencing using the SORT-seq (SOrting and Robot-assisted Transcriptome SEQuencing) platform (Muraro et al., 2016) (Figure 1—source data 1). In total 768 cells where sequenced in which we detected 19257 genes. We detected an average of 10,443 reads per cell and we introduced a cutoff at minimally 3500 reads per cell before further analysis, which resulted in the analysis of 352 cells. To identify the cardiomyocytes amongst the other cell types, we first identified the different cell types based on their transcriptomes. k-medoids clustering of the single cell transcriptomes by the RaceID clustering algorithm was used (Grün et al., 2015) (Figure 1c and Figure 1—source data 2), and visualized in two dimensions using t-distributed stochastic neighbor embedding (t-SNE) (Figure 1d). A total of 12 cell clusters were identified, including a large group of cardiomyocytes (clusters 1,2,4,7 and 9), a smaller group of endothelial cells (clusters 5,6,8,10 and 12), and some fibroblasts (cluster 3) and immune cells (cluster 11) using the expression of marker genes for specific cell types (Figure 1—figure supplement 2). Based on the transcriptome clustering, the cardiomyocytes fell into four main transcriptionally-defined clusters (1, 2, 4 and 7), indicating that the injured heart contained subgroups of cardiomyocytes. To address whether the border zone cardiomyocytes were enriched in one of the four cardiomyocyte clusters we compared the mCitrine fluorescence intensity (recorded during FACS sorting) of the cardiomyocyte and found that the average intensity was highest in cluster 7 and lowest in cluster 2 (Figure 1—figure supplement 3). In addition, we analysed the single-cell transcriptome data for the expression of nppa and compared this to the expression of vmhc and mustn1b, which mark border zone cardiomyocytes, and again found that cells expressing these genes were mostly in cluster 7 (Figure 1e and Figure 1—figure supplement 4). Together, these results indicate two things: first, the border zone cardiomyocytes (grouped in cluster 7) can be identified as a separate group in the single-cell RNA-seq data. Secondly, these border zone cardiomyocytes are transcriptionally distinct from remote cardiomyocytes (grouped in cluster 2), while two intermediate cardiomyocyte clusters lie in between.
 
-## Border zone cardiomyocytes resemble embryonic cardiomyocytes
+![Figure 1.](https://cdn.elifesciences.org/articles/50163/elife-50163-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic of cryoinjury procedure on adult TgBAC(nppa:mCitrine) fish and immunohistochemistry on section of injured TgBAC(nppa:mCitrine) heart 7 dpi. Overview image on left and zoom-in of boxed region on the right. Mef2 (in magenta) labels cardiomyocytes, nppa:mCitrine (in green) marks the borderr zone, and PCNA (in cyan) marks proliferating cells. Arrows indicate triple-positive cells. Dashed line indicates injury site. Scale bar in overview 50 μm. Scale bar in zoom-ins 20 μm. (b) Experimental outline of the single-cell mRNA-sequencing of injured zebrafish hearts (blue, injury area; green, border zone) (c) Pairwise correlation between individual cells across all genes detected. Color-code indicates cell-to-cell distances measured by [1 – Pearson’s correlation coefficient]. StemID clusters are indicated by color and number on the x- and y-axis. (d) t-distributed stochastic neighbor embedding (tSNE) map representation of transcriptome similarities between individual cells. (e) tSNE maps visualizing log2-transformed read-counts of the border zone marker genes nppa, mustn1b and vmhc.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50163/elife-50163-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Design of the bacterial artificial chromosome (BAC) used for generation of the transgenic line TgBAC(nppa:mCitrine). (b) Transgenic mCitrine expression in the heart in relation to RFP expression in the whole myocardium of Tg(myl7:GFF, UAS:RFP, nppa:mCitrine) in embryos at 2 days post-fertilization (dpf). (c) Whole mount in situ hybridization for endogenous nppa expression in embryos at two dpf. Note the specific expression in ventricle and atrium and absence of expression in atrioventricular canal of the nppa:mCitrine transgene expression (in panel b) as well as for the endogenous nppa expression (in panel c). (d, e) Endogenous nppa expression (d) and nppa:mCitrine expression (e) in the adult heart at 7 days post-injury (dpi). Note expression of nppa:mCitrine in the cortical borderzone (arrowheads). (f) Fluorescent in situ hybridization for nppa performed on gata4:EGFP hearts 7dpi. Note the overlap of nppa and gata4:EGFP in trabecular borderzone cardiomyocytes.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50163/elife-50163-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** tSNE maps visualizing log2-transformed read-counts of genes with high expression in cardiomyocytes (mt-co1, tnnc1a, tnnt2a), in fibroblasts (fn1b), in endothelial cells (cdh5) and immune cells (ctsd). Arrow indicates positive cell populations.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/50163/elife-50163-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) tSNE map of the cardiomyocyte clusters derived from the single-cell mRNA-sequencing. (b) mCitrine fluorescence levels of the nppa:mCitrine FACS sorted cells from injured hearts that were used for the single-cell RNA-sequencing. Triangles represent individual cells of the four cardiomyocyte clusters. The box indicates the 25–75% quartiles, black lines indicate mean-fluorescence per cluster.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/50163/elife-50163-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) In situ hybridizations for border zone genes nppb, mustn1, nppa and vmhc in zebrafish hearts at seven dpi compared to uninjured hearts. (b) In situ hybridizations for glycolysis genes hk1 and ldha in zebrafish hearts at seven dpi compared to uninjured hearts. Staining for injured and uninjured hearts was stopped simultaneously. Scale bars indicate 200 μm. (n = 3 per condition).
+
+### Border zone cardiomyocytes resemble embryonic cardiomyocytes
 
 Cardiomyocytes in the border zone disassemble sarcomeric structures and re-express markers of embryonic cardiomyocytes suggesting their dedifferentiation. We therefore wanted to address the level of dedifferentiation of cluster seven cardiomyocytes by comparing their transcriptome with embryonic cardiomyocytes. To obtain embryonic cardiomyocytes we performed FACS sorting on embryos expressing the cardiomyocyte specific marker Tg(myl7:GFP). Single-cell mRNA-sequencing was performed and combined with the single-cell data from the injured adult hearts (Figure 2a). The RaceID algorithm identified several cell clusters with separate clusters for the embryonic and adult cardiomyocytes (Figure 2b, c and d). Importantly, the cluster seven cardiomyocytes identified in the adult data analysis had a transcriptome that was highly similar to embryonic cardiomyocytes, as shown by pairwise correlation of the differentially expressed genes between the cardiomyocyte clusters: only 257 genes (p-value<0.01), out of 23,786 total detected genes, were differentially expressed between the embryonic and the cluster 7 (border zone) adult cardiomyocytes (Figure 2d and Figure 2—source datas 1, 2, 3 and 4) suggesting a dedifferentiation of border zone cardiomyocytes to embryo--like cells. In contrast, over 1000 genes (p-value<0.01) were differentially expressed between embryonic and cluster 2 (remote zone) adult cardiomyocytes. A heatmap with unbiased hierarchical clustering on the 500 most differentially expressed genes between the three clusters confirmed that cluster 7 cardiomyocytes were more closely related to embryonic than cluster 2 cardiomyocytes (Figure 2e). Corroborating the observation that border zone cardiomyocytes resemble embryonic cardiomyocytes we found that genes encoding sarcomere proteins and cardiac-specific factors highly expressed in the embryo were re-expressed in cluster 7 (border zone) cardiomyocytes (Figure 2f, g and h).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/50163/elife-50163-fig2-v2.jpg)
 
-**Figure 2.:** (a) Cartoon to illustrate the experimental procedure for single cell analysis of embryonic and adult cardiac cells. (b) tSNE map of combined adult (red) and embryonic datasets (light blue). (c) tSNE map indicating the different cell types based on marker gene expression. (d) tSNE map with the adult cardiomyocytes of the injured heart (cluster 7 in red, cluster 2 in blue and clusters 1 and 4 in gray) and embryonic (2 dpf) cardiomyocytes (in green), with number of pairwise differentially expressed genes (p-value<0.01) indicated between cardiomyocyte clusters. (e) Heatmap with hierarchical clustering based on the 500 most differentially expressed genes between clusters. Red color represents high expression, blue color represents low expression. Rows represent individual genes. (f–h) tSNE maps visualizing log2-transformed read-counts of vmhc (f), nppa (g) and tnnt2a (h).Figure 2—source data 1.Tg(cmlc2:GFP) zebrafish hearts at 2 days post fertilization.Raw reads are represented per gene (rows) and single cell (columns).Figure 2—source data 2.Figure 2—source data 3.Raw reads represented per gene (rows) and single cell (columns).Figure 2—source data 4.Only genes with a p-value<0.01 are listed. Per gene, the log2 fold change, adjusted p-value (padj) and associated gene name are given. GO-terms for genes upregulated between clusters 5 and 6 (p<0.01) are listed in separate excel sheets.
+**Figure 2.:** (a) Cartoon to illustrate the experimental procedure for single cell analysis of embryonic and adult cardiac cells. (b) tSNE map of combined adult (red) and embryonic datasets (light blue). (c) tSNE map indicating the different cell types based on marker gene expression. (d) tSNE map with the adult cardiomyocytes of the injured heart (cluster 7 in red, cluster 2 in blue and clusters 1 and 4 in gray) and embryonic (2 dpf) cardiomyocytes (in green), with number of pairwise differentially expressed genes (p-value<0.01) indicated between cardiomyocyte clusters. (e) Heatmap with hierarchical clustering based on the 500 most differentially expressed genes between clusters. Red color represents high expression, blue color represents low expression. Rows represent individual genes. (f–h) tSNE maps visualizing log2-transformed read-counts of vmhc (f), nppa (g) and tnnt2a (h).
 
 To identify cellular events that occur during this dedifferentiation we used part of the RaceID algorithm (StemID) that uses the single cell transcriptome data and cell clustering to derive a branched lineage tree (Grün et al., 2016). The algorithm is based on the premise that stem cells and less differentiated cells tend to exhibit more uniform transcriptomes than differentiated cells, which express smaller numbers of genes at higher rates (Banerji et al., 2013). Using this approach, we found large differences in transcriptome entropy, resulting in low (cluster 2), intermediate (clusters 1 and 4) and high (cluster 7) StemID scores (Figure 3a). This gradual increase suggests a dedifferentiation axis from cells in cluster 2 (remote myocardium) to cells in cluster 7 (border zone myocardium) and is in good agreement with our finding that the transcriptome of cluster 7 cardiomyocytes resembles an embryonic cardiomyocyte transcriptome (Figure 3b). Together, these results indicate that clusters 4 and 7 are enriched for dedifferentiated and proliferative border zone cardiomyocytes while clusters 1 and 2 are enriched for differentiated remote cardiomyocytes.
 
-## Border zone cardiomyocytes induce glycolysis, which is required for proliferation
+![Figure 3.](https://cdn.elifesciences.org/articles/50163/elife-50163-fig3-v2.jpg)
+
+**Figure 3.:** (a) Bar plot of StemID scores for the cardiomyocyte clusters (clusters #2, 1, 4 and 7) calculated by the formula: number of significant links for each cluster multiplied by the median transcriptome entropy across all cells in a cluster. (b) Cardiomyocyte clusters from adult injured heart. Arrow indicates the dedifferentiation path derived from the StemID scores. (c) Pseudo time analysis. Left; one-dimensional SOM of z-score transformed expression profiles along the differentiation trajectory incurred by StemID analysis. Y-axis represents the fourteen modules with differentially expressed genes. X-axis represents the pseudo time in which the cells were ordered. Middle; expression profiles of representative genes of the major modules. Y-axis shows transcript counts. X-axis represents the pseudo time. Right; Major gene ontology terms derived from all genes expressed in the module with p-values.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50163/elife-50163-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** In situ hybridization for the glycolysis gene hexokinase1 (a,b) and the embryonic cardiac gene myomesin1b (c,d) on sections of injured zebrafish hearts at 3 dpi (a,c) and 7 dpi (b,d). While hk1 expression in border zone cardiomyocytes was visible at 3 dpi and 7 dpi, myom1b expression was visible at 7 dpi but undetectable at 3dpi. (a’,b’,c’ and d’) show zoom-in of boxed areas in corresponding panels. Dashed line indicates the injury site.
+
+### Border zone cardiomyocytes induce glycolysis, which is required for proliferation
 
 While cardiomyocytes undergo a well-defined sequence of morphological and transcriptional changes during differentiation, very little is known about the reverse process. Ordering whole-transcriptome profiles of single cells with an unsupervised algorithm can resolve the temporal resolution during differentiation by identifying intermediate stages of differentiation without a priori knowledge of marker genes (Trapnell et al., 2014). In this manner, the single-cell mRNA-seq experiment will constitute an in-silico time series, with each cell representing a distinct state of differentiation along a continuum. To analyze the transcriptional changes occurring during this apparent dedifferentiation, the most likely dedifferentiation path, based on the StemID scores, was chosen starting at cluster two and progressing through clusters 1, 4 and 7. Next, gene expression profiles along this pseudo-temporal order were computed for all detected genes using the single-cell transcriptomes. These gene expression profiles were grouped into modules of co-expressed genes using self-organizing maps (SOMs), resulting in 14 modules (Figure 3c, Figure 3—source data 1). Corroborating our hypothesis of varying differentiation states, we observed that gene expression within these modules changed smoothly over pseudo time. We next analyzed the temporally-ordered expression profiles and identified four groups of genes that shared the same dynamics of expression during this differentiation trajectory. The first group (modules 1, 2) contained genes that were most highly expressed only in cells at the very beginning of the pseudo time line and their expression rapidly declined in cells that were positioned later. This group contained many genes transcribed from mitochondrial DNA and with a role in energy metabolism, which indicates that the cells at the start of the pseudo time line are mature cardiomyocytes. The second group (module 6) contained genes that are induced early and expression stayed constant in cells further along the pseudo time line. Many genes involved in translation and cell cycle regulation follow this expression pattern. The third group showed an exponential increase in expression with the highest expression at the end of the pseudo time line (module 10). This group contained genes with a function in cardiac muscle fiber development and heart contraction. The fourth group (modules 11 and 14) contained genes with a rapid increase in expression that peaks before the end of the pseudo time, suggestive for an early role during the dedifferentiation process. Interestingly this group contained many genes with a known role in glycolysis. Together, these data suggest that border zone cardiomyocytes undergo profound metabolic changes. This was confirmed by GO-term analysis between cluster 7 and cluster 2 cells (Figure 4—figure supplement 1a and b, Figure 1—source data 3).
 
 To validate the functional consequences of the observed changes in mitochondrial gene expression, we measured succinate dehydrogenase (SDH) enzyme activity, located in the inner mitochondrial membrane that functions in both the citric acid cycle and electron transport chain. We observed a 40% reduction in SDH activity specifically in the border zone cardiomyocytes as compared to the remote cardiomyocytes (Figure 4a). In agreement with the reduced mitochondrial OXPHOS activity, transmission electron microscopy (TEM) imaging revealed more immature mitochondria in border zone cardiomyocytes evidenced by their altered morphology and reduced cristae density (Figure 4b), which is consistent with previous reports linking mitochondrial function with morphology (Giraud et al., 2002; Paumard et al., 2002). Since the pseudotime analysis suggested an upregulation of glycolytic gene expression in the border zone cluster (#7), we performed gene set enrichment analysis (GSEA) for glycolysis genes. The GSEA revealed a strong and significant enrichment in the expression of glycolytic genes in cluster 7 cells compared to cluster 2 cells (Figure 4—figure supplement 1c). By in situ hybridization we confirmed the induced expression in border zone cardiomyocytes of the rate-limiting enzymes hexokinase (hk1), pyruvate kinase M1/M2a (pkma) and pyruvate dehydrogenase kinase (pdk2a), which diverts pyruvate away from the TCA cycle (Figure 4c and Figure 1—figure supplement 4b). Corroborating the suggested enhanced glycolysis, we observed induced expression of glucose importer genes (glut1a/slc2a1a and glut1b/slc2a1b) in cluster 7 cells (Figure 4—figure supplement 1d) and enhanced in vivo glucose uptake of border zone cardiomyocytes (Figure 4d). Furthermore, genes encoding lactate transporters and their proteins were upregulated in cluster seven and border zone cardiomyocytes (Figure 4e and Figure 4—figure supplement 1d). Together, these data indicate that during regeneration border zone cardiomyocytes switch energy metabolism from mitochondrial OXPHOS to glycolysis and lactate fermentation.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50163/elife-50163-fig4-v2.jpg)
+
+**Figure 4.:** (a) Succinate dehydrogenase (SDH) enzyme staining on a seven dpi heart section with injury area separated by dashed line. Quantification of SDH activity in remote zone (RZ), border zone (BZ) and injury area (IA). Scale bar indicates 100 μm. Error bars indicate mean and standard deviation. (b) Transmission electron microscopy (TEM) images of mitochondria in cardiomyocytes from the remote zone and the border zone of a 7 dpi injured heart. Note the disorganized and irregular shaped mitochondria in the border zone cardiomyocyte. Scale bar 500 nm (200 nm in inserts). Graphs show quantification of mitochondrial perimeter-to-area as a measurement for roundness and quantification of mitochondrial cristae density. * p-value<0.05. (c) In situ hybridizations for glycolytic genes hk1, pkma and pdk2a on sections of injured zebrafish hearts at 7 dpi. Dashed line indicates injury site. Scale bars indicate 100 μm. (d) Time-lapse multi-photon confocal images of whole heart. The heart was isolated at 7 dpi and incubated with 2-NBDG, a fluorescent glucose analogue, at t = 0. Dotted line indicates injury area. Arrows point to regions of the border zone. Scale bar represents 100 μm. (e) Confocal image of injured zebrafish hearts at 7 dpi stained for the lactate transporter MCT4 (green) and Tropomyosin (red). Dashed line indicates injury site.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50163/elife-50163-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Plot showing differentially expressed genes between cluster 7 versus cluster 2 cells. Differentially expressed genes (p-value<0.05) are highlighted in red (upregulated in cluster 7 cells) and blue (upregulated in cluster 2 cells). Complete gene list can be found in Figure 1—source data 3. 771 genes were differentially expressed (p<0.05; adjusted p-value after Benjamini-Hochberg correction), of which 752 were specifically upregulated in cluster seven cardiomyocytes, including the border zone genes, nppa, nppb and mustn1b. (b) GO-terms for upregulated genes in cluster 7 and cluster two respectively (p<0.01). (c) Gene set enrichment analysis for glycolysis genes on all genes with differential expression between cluster 7 versus cluster 2 cells (p<0.05). (d) Log2 fold change of differentially expressed genes (cluster 7 vs cluster 2) with a function in energy metabolism. High relative expression in cluster seven depicted in red, high expression in cluster two depicted in blue. In situ hybridization for the glycolysis gene hexokinase1 (a,b) and the embryonic cardiac gene myomesin1b (c,d) on sections of injured zebrafish hearts at three dpi (a,c) and seven dpi (b,d). While hk1 expression in border zone cardiomyocytes was visible at 3 dpi and seven dpi, myom1b expression was visible at seven dpi but undetectable at 3dpi. (a’,b’,c’ and d’) show zoom-in of boxed areas in corresponding panels. Dashed line indicates the injury site.
 
 The pseudo time line analysis suggested that glycolysis genes induction precedes the induction of embryonic cardiac gene expression. Indeed, ISH analysis showed that glycolysis gene expression is already induced at 3 dpi and thereby precedes expression of embryonic cardiac gene expression and cardiomyocyte proliferation, which peaks at 7 dpi (Figure 3—figure supplement 1). To address the functional importance of glycolysis we inhibited glycolysis in injured fish with the glucose analogue 2-Deoxyglucose (2-DG), a general inhibitor of glycolysis, and analyzed its effect on cardiomyocyte proliferation (Figure 5a). We observed that repeated injections of 2-DG in the adult zebrafish with a cryoinjured heart significantly impaired cardiomyocyte proliferation in the border zone (Figure 5b,c), suggesting that glycolysis is necessary for cell cycle reentry.
 
@@ -85,19 +121,35 @@ The pseudo time line analysis suggested that glycolysis genes induction precedes
 
 **Figure 5.:** (a) Experimental design for the 2-DG injections to inhibit glycolysis in injured zebrafish hearts. (b) Confocal image of injured zebrafish hearts at seven dpi either injected with PBS or 2-DG stained for Mef2c (green) and PCNA (magenta). Zoom-in images of the borderzone are shown below overview pictures for both PBS (cyan box) and 2-DG (orange box). Arrowheads indicate nuclei positive for Mef2c and PCNA. Scale bar indicates 200 μm (overview) or 20 μm (zoom-in). (c) Quantification of the proliferating cardiomyocytes (double Mef2c/PCNA positive) in the border zone of PBS and 2-DG treated hearts represented as the proportion of proliferating cardiomyocytes compared to the average percentage in the PBS injected group. Each dot represents a single heart (three sections per heart analyzed). Hearts were pooled from two separate experiments. Error bars represent mean ± standard deviation. ***, p<0,0001.
 
-## Nrg1/ErbB2 signaling induces glycolytic gene expression in border zone cardiomyocytes
+### Nrg1/ErbB2 signaling induces glycolytic gene expression in border zone cardiomyocytes
 
 Next, we investigated the upstream signals that drive the observed metabolic reprogramming in border zone cardiomyocytes during cell cycle reentry. Hypoxia is a well-known stimulus for metabolic reprogramming during cancer and promotes cardiomyocyte proliferation during cardiac regeneration (Jopling et al., 2012; Nakada et al., 2017; Vander Heiden et al., 2009). The responses to hypoxia are induced by the transcription factor, hypoxia inducible factor (HIF), whose activity can be visualized using the Tg(phd3:GFP) reporter line (Santhakumar et al., 2012; Wang and Semenza, 1993). When analysing cryo-injured hearts of Tg(phd3:GFP) fish 7 days post injury we did not observe a good correlation between pdh3:GFP reporter activity and the induction of ldha expression in border zone cardiomyocytes suggesting that HIF signaling is not required for the observed induction of glycolysis gene expression in border zone cardiomyocytes (Figure 6—figure supplement 1). Injury-induced Neuregulin 1 (Nrg1) expression is another potent mitogen that induces cardiomyocyte dedifferentiation and cell cycle reentry by activating ErbB2 receptor signaling (Gemberling et al., 2015). Furthermore, in vitro experiments suggest that Nrg1 can induce glucose metabolism (Cote et al., 2005; Suárez et al., 2001). To address whether Nrg1 can induce metabolic reprogramming in vivo, we used a previously described transgenic zebrafish model in which Nrg1 overexpression (OE) can be induced in a heart specific manner, tg(cmlc2:CreER; β-act2:BSNrg1) (Gemberling et al., 2015). In this model especially cortical cardiomyocytes start to divide after tamoxifen injection leading to thickening of this layer. We observed a profound and consistent upregulation of glycolysis genes in the cortical myocardium coinciding with the reported cardiomyocyte dedifferentiation and proliferation in this layer (Figure 6a). Expression of ldha and hk1, encoding the rate limiting glycolytic enzyme hexokinase, was strongly induced in the ventricular wall of Nrg1 OE hearts, which correlates well with the observed induction of cardiomyocyte dedifferentiation and proliferation in this region (Gemberling et al., 2015). Next, we assessed whether blocking Nrg1/ErbB2 signaling impairs glycolytic upregulation in the zebrafish border zone after cryoinjury. qPCR confirmed the profound upregulation of glycolytic genes in border zone cardiomyocytes compared to their expression in cardiomyocytes from uninjured hearts (Figure 6b). Importantly the ErbB2 inhibitor AG1478 inhibited the induction of glycolytic gene expression in border zone cardiomyocytes (Figure 6b). In contrast to the other glycolysis genes, hk1 expression was not reduced after AG1478 treatment likely as a result of redundant signaling pathways in the border zone. From these results, we conclude that glycolysis gene expression can be induced by Nrg1/ErbB2 signaling even in the absence of cardiac injury and that endogenous Nrg1/ErbB2 signaling is an important mediator of metabolic rewiring during zebrafish heart regeneration.
 
-## Activating ErbB2 signaling induces a metabolic switch from OXPHOS to glycolysis and lactate fermentation in murine cardiomyocytes
+![Figure 6.](https://cdn.elifesciences.org/articles/50163/elife-50163-fig6-v2.jpg)
+
+**Figure 6.:** (a) Cartoon showing experimental procedure to induce cardiomyocyte specific Nrg1 expression in zebrafish. Panels show in situ hybridization for hexokinase 1 (hk1) and lactate dehydrogenase a (ldha) expression on sections of control hearts (β-act2:BSNrg1) and Nrg1 OE hearts (cmlc2:CreER; β-act2:BSNrg1). Scale bars represent 100 μm. (b) qPCR results for glycolytic genes showing their relative fold change in DMSO treated (n = 9) (blue) and AG1478 treated (n = 9) (green) nppa:mCitrine high border zone cardiomyocytes at 3dpi compared to uninjured adult cardiomyocytes (n = 4) (yellow). Error bars represent standard deviation. (c) Upper panel: Cartoon showing the experimental procedure to analyse metabolic gene expression after activating ErbB2 signaling in the murine heart. Lower panel: qPCR results for metabolic genes showing their relative fold change in caErbB2 OE (n = 4) heart compared to control WT hearts (n = 4). Error bars represent standard deviation. (d) Immunohistochemistry for phospho-PDH3 on sections of control and caErbB2 OE hearts. Scale bars represent 100 μm. *=p < 0.05, **=p < 0.01, ***=p < 0.001, ****=p < 0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50163/elife-50163-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Overview picture of phd3:GFP heart 7dpi co-stained for expression of ldha by fluorescent ISH. (b) Zoom-ins of trabecular border zone cardiomyocytes. Note high ldha expression and low expression of phd3:GFP. (c) Zoom-ins of the apical region of the injury. Note the abundance of phd3:GFP signal in this region, while ldha expression is low.
+
+### Activating ErbB2 signaling induces a metabolic switch from OXPHOS to glycolysis and lactate fermentation in murine cardiomyocytes
 
 The regenerative capacity of the adult murine heart is very low, but cardiomyocyte dedifferentiation and proliferation can be stimulated by cardiomyocyte specific overexpression of a constitutively active ErbB2 receptor (caErbB2 OE) (D'Uva et al., 2015). To address whether this is correlated with metabolic changes we performed qPCRs for metabolic genes on cardiac tissue from caErbB2 mice. Indeed, we observed that critical glycolysis genes (e.g. Pfkp, Pdk3 and Pkm2) including glucose and lactate transporters (Slc16A3 and Slc2A1) were significantly upregulated in caErbB2 OE cardiomyocytes while genes transcribed from mitochondrial DNA were downregulated (Figure 6c). Pdk3 encodes a pyruvate dehydrogenase kinase, which phosphorylates pyruvate dehydrogenase (PDH). PDH is a mitochondrial multi-enzyme complex that converts pyruvate to Acetyl-CoA and provides a primary link between glycolysis and the TCA cycle. Upon phosphorylation by PDK, p-PDH is inactivated and pyruvate is diverted away from the TCA cycle resulting in enhanced lactate production. Consistent with the increase in pdk3 expression, an increased phosphorylation of PDH was observed in the inner myocardial layer of caErbB2 OE hearts (Figure 6d).
 
 Next, we addressed whether the observed switch in metabolic gene expression correlated with enhanced regenerative capacity after injury. Therefore, we performed myocardial infarction (MI) in wild type and caErbB2 OE hearts. Even though glucose uptake and glycolytic enzyme activity in the ischemic area are increased by MI (Schelbert and Buxton, 1988) (Owen et al., 1969), we observed a stronger upregulation of glycolytic gene expression and decreased mitochondrial gene expression in caErbB2 OE hearts with MI compared to wild type hearts with MI (Figure 7—figure supplement 1). This stronger and consistent upregulation of glycolytic gene expression in caErbB2 OE hearts correlates with the reported enhanced cardiomyocyte proliferation and improved regeneration (D'Uva et al., 2015). These findings imply that the enhanced glucose uptake and anaerobic glycolysis observed after MI might be sufficient for cell survival, but that a stronger induction of glycolysis gene expression is required to fully stimulate cardiomyocyte proliferation and regeneration.
 
-## CaErbB2 induced cardiomyocyte proliferation depends on glycolysis
+### CaErbB2 induced cardiomyocyte proliferation depends on glycolysis
 
 Finally, we addressed whether the observed metabolic switch to glycolysis in caErbB2 OE cardiomyocytes is required for their reentry into the cell cycle (Figure 7a). Corroborating our model, we indeed observed that treating caErbB2 OE cardiomyocytes in vitro with the glycolysis inhibitors 2-DG or lonidamine strongly and significantly impaired cell cycle reentry (Figure 7b and c) and cytokinesis (Figure 7d and e). Together these results indicate that in murine cardiomyocytes, ErbB2 signaling drives a metabolic switch towards glycolysis, which is required for their cell cycle reentry. These results suggest that this metabolic switch in cardiomyocytes is beneficial for heart regeneration.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/50163/elife-50163-fig7-v2.jpg)
+
+**Figure 7.:** (a) Cartoon showing the experimental procedure to analyse the effects of glycolysis inhibitors (2-DG and lonidamine) on cardiomyocyte proliferation. (b) Immunofluorescence analysis on P7 cardiac cultures derived from WT and caErbB2 OE hearts that are endogenously fluorescent for tdTomato under the MYH6 promoter, stained for the cell-cycle marker Ki67. Arrows point at Ki67+ CMs. (c) Quantification of % Ki67+ CMs from WT and caErbB2 OE derived from P7 cardiac cultures treated with the glycolysis inhibitors 2-DG (n = 4 for WT and n = 4 for OE), and lonidamine (n = 7 for WT and n = 4 for OE) or their diluents as controls. (d) Immunofluorescence analysis on P7 cardiac cultures derived from WT and caErbB2 OE hearts that are endogenously fluorescent for tdTomato under the MYH6 promoter, stained for the cytokinesis marker Aurora kinase B. Arrows point at Aurkb+ CMs. (e) Quantification of % Aurkb+ CMs from WT and caErbB2 OE derived from P7 cardiac cultures treated with the glycolysis inhibitors 2-DG (n = 4 for WT and n = 4 for OE), and lonidamine (n = 7 for WT and n = 4 for OE) or their diluents as controls. In all panels, bars represent the mean, and error bars represent s.e.m *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001, Scale bars represent 50 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/50163/elife-50163-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Cartoon showing experimental procedure. Myocardial infarction (MI) was induced by left anterior descending coronary artery ligation at the same day when Dox was removed to induce cardiomyocyte specific caErbB2 overexpression (OE). Whole hearts where isolated for mRNA extraction 14 days after the MI and caErbB2 induction. (b) qPCR results with relative mRNA fold changes comparing wild type (WT, blue bars) with caErbB2 OE (OE, orange bars). Note the significant upregulation of glycolytic genes (Pfkp, Pdk3 and Pgk1) and significant downregulation of genes transcribed from the mitochondrial DNA (Mt-Nd1, Mt-Co2, Mt-Co1 and Mt-Co3). Bars represent mean values and error bars represent standard deviation. *p<0,05; **p<0,01; ***p<0001.
 
 ## Discussion
 
@@ -111,7 +163,276 @@ Activation of Nrg1/ErbB2 signaling in either zebrafish or mouse hearts induces c
 
 ## Materials and methods
 
-## Transgenic zebrafish lines and cryoinjury
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>Tupfel Long Fin (TL)</td>
+      <td>ZIRC</td>
+      <td>ZDB-GENO-990623–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(myl7:dsRED)s879Tg</td>
+      <td>Chi et al., 2008</td>
+      <td>ZDB-FISH-150901–3078</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(myl7:GFP)twu34Tg</td>
+      <td>Huang et al., 2003</td>
+      <td>ZDB-FISH-150901–212</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(phd3:GFP)sh144</td>
+      <td>Santhakumar et al., 2012</td>
+      <td>ZDB-FISH-150901–26851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(gata4:EGFP)ae1</td>
+      <td>Heicklen-Klein and Evans, 2004</td>
+      <td>ZDB-FISH-150901–14762</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>TgBAC(nppa:mCitrine)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>More info on generation of this line can be obtained from the Materials and methods section ‘Transgenic zebrafish lines and cryoinjury’.</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>TetRE-caErbb2 X MYH6-tTA X MYH6-cre ROSA26-tdTomato</td>
+      <td>D'Uva et al., 2015</td>
+      <td></td>
+      <td>More info on how to obtain primary cell line can be obtained from Materials and methods sections ‘Transgenic mouse lines and animal procedures’ and ‘Pharmacological inhibition of glycolysis’.</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Mus musculus)</td>
+      <td>TetRE-caErbb2 X MYH6-tTA hearts</td>
+      <td>D'Uva et al., 2015 from: Xie et al., 1999 and Yu et al., 1996.</td>
+      <td>The Jackson Laboratory, stock no. 010577;</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Danio rerio)</td>
+      <td>Tg(cmlc2:CreER)pd10 x Tg(β-act2:BSNrg1)pd107hearts</td>
+      <td>Gemberling et al., 2015</td>
+      <td>ZDB-FISH-150901–25249 x ZDB-FISH-150901–25354</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Danio rerio)</td>
+      <td>Tg(gata4:EGFP)ae1hearts</td>
+      <td>Lin et al. 2009</td>
+      <td>ZDB-FISH-150901–14762</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Danio rerio)</td>
+      <td>Tg(phd3:GFP)sh144hearts</td>
+      <td>Santhakumar et al., 2012</td>
+      <td>ZDB-FISH-150901–26851</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AuroraB kinase (mouse monoclonal)</td>
+      <td>BD Transduction Laboratories</td>
+      <td>#611082, RRID:AB_2227708</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (Rabbit monoclonal)</td>
+      <td>Cell Marque</td>
+      <td>#275R</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MCT4 (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>#SC50329, RRID:AB_2189333</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PCNA (mouse monoclonal)</td>
+      <td>DAKO</td>
+      <td>#M0879, RRID:AB_2160651</td>
+      <td>1:800</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>Aves</td>
+      <td>#GFP-1010, RRID:AB_2307313</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mef2C (rabbit polyclonal)</td>
+      <td>Santa Cruz/Biorbyt</td>
+      <td>#SC313, RRID:AB_631920 / #orb256682</td>
+      <td>Both 1:1000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Deoxyglucose</td>
+      <td>Sigma-Aldrich</td>
+      <td>#D6134</td>
+      <td>1 mg/g or 3 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lonidamine</td>
+      <td>Sigma-Aldrich</td>
+      <td>L4900</td>
+      <td>80 uM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2NBDG</td>
+      <td>Caymanchem</td>
+      <td>#11046</td>
+      <td>400 uM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AG1478</td>
+      <td>Selleck Chemical</td>
+      <td>S2728</td>
+      <td>5M, from 10 mM stock in DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Harlan Laboratories</td>
+      <td>TD02503</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol</td>
+      <td>Life technologies</td>
+      <td>#15596026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fast SYBR Green Master Mix</td>
+      <td>Applied Biosystems</td>
+      <td>#4385612</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase type II</td>
+      <td>Gibco</td>
+      <td>17101015</td>
+      <td>0.1%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TrypLE Express Enzyme (1x), phenol red</td>
+      <td>Gibco</td>
+      <td>12605036</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>Schindelin et al., 2012</td>
+      <td>Version 2.0.0, RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RaceID2/StemID</td>
+      <td>Grün, D. et al. De Novo Prediction of Stem Cell Identity using Single-Cell Transcriptome Data. Cell Stem Cell 19, 266–277 (2016).</td>
+      <td>RRID:SCR_017242</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rstudio</td>
+      <td>Rstudio</td>
+      <td>RRID:SCR_000432</td>
+      <td>Version 1.2.1335</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td>RRID:SCR_0007370</td>
+      <td>V9.3.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gene Set Enrichment Analysis</td>
+      <td>Genepattern, Broad Institute</td>
+      <td>RRID:SCR_003199</td>
+      <td># of permutations = 1000</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Superscript III First strand synthesis system</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#18080051</td>
+      <td>Input 200 ng RNA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>MiRNeasy</td>
+      <td>Qiagen</td>
+      <td>217004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>High capacity cDNA Reverse Transcription kit</td>
+      <td>Applied Biosystems</td>
+      <td>4374966</td>
+      <td>Input 1 ug RNA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Neonatal Dissociation kit</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-098-373</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TruSeq small RNA primers</td>
+      <td>Illumina</td>
+      <td>20005613</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Transgenic zebrafish lines and cryoinjury
 
 The following fish lines were used: TL, Tg(phd3:GFP), Tg(gata4:EGFP)ae1 and myl7:GFPtwu34Tg (Huang et al., 2003) (Kikuchi et al., 2010; Santhakumar et al., 2012). The Tg(cmlc2:CreER; β-act2:BSNrg1) line was used as described before (Gemberling et al., 2015). The TgBAC(nppa:mCitrine) line was generated essentially as described previously (Bussmann and Schulte-Merker, 2011). In short, an iTOL2_amp cassette for pTarBAC was inserted in the vector sequence of bacterial artificial chromosome (BAC) CH211-70L17, which contains the full nppa locus. Subsequently, a mCitrine_kan cassette was inserted at the ATG start codon of the first exon of the nppa gene. Amplification from a pCS2+mCitrine_kanR plasmid was achieved with primers:
 
@@ -129,13 +450,13 @@ Sample sizes were chosen to accommodate the generally accepted standards in the 
 
 Animals were only excluded from experiments in case of severe sickness/infection/aberrant behavior (according to animal experiment guidelines).
 
-## Transgenic mouse lines and animal procedures
+### Transgenic mouse lines and animal procedures
 
 Doxycycline-inducible CM-restricted overexpression of a constitutively active Erbb2 (caErbb2) was generated by crossing the TetRE–caErbb2 (Xie et al., 1999) mouse line with MYH6– tTA which expresses the tetracycline-responsive transcriptional activator (tTA) under the control of the human alpha myosin heavy chain promoter (MYH6) (Yu et al., 1996). Doxycycline (DOX, Harlan Laboratories, TD02503) was administered in the food to repress transgene expression. For cultures derived of OE/WT hearts, we additionally intercrossed the MYH6-cre ROSA26-tdTomato transgenes in order to visualize CMs.
 
 For myocardial infarction, mice were sedated with isoflurane (Abbott Laboratories) and were artificially ventilated following tracheal intubation. Experimental myocardial infarction was induced by ligation of the left anterior descending coronary artery (LAD ligation). Following the closure of the thoracic wall mice were warmed for several minutes until recovery.
 
-## Immunofluorescence
+### Immunofluorescence
 
 ADULT: For immunofluorescence, hearts were extracted, fixed in 4% PFA at room temperature for 1,5 hr and cryosectioned into 10 µm sections. Heart sections were equally distributed onto seven serial slides so each slide contained sections representing all areas of the ventricle.
 
@@ -145,31 +466,31 @@ EMBRYONIC: Live embryos were immobilized using ms222 and embedded in nitrocellul
 
 MAMMALIAN P7 CARDIAC CULTURES: For immunofluorescence, cardiac cultures were fixed with 4% PFA for 10 min on room temperature on the shaker, followed by permeabilization with 0.5% Triton X-100 in PBS for 5 min, and blocking with 5% bovine serum albumin (BSA) in PBS containing 0.1% Triton for 1 hr at room temperature. Masking was performed before quantification.
 
-## Quantitative PCR
+### Quantitative PCR
 
 ADULT ZEBRAFISH: nppa:mCitrine zebrafish were cryoinjured and received two overnight pulses of DMSO (1:2000) or 5 µM AG1478 (10 mM stock in DMSO; Selleck Chemical, Houston, TX) from 1dpi to 2dpi and from 2dpi to 3dpi. Then, hearts were extracted for both conditions (n = 9) as well as uninjured cmlc2:dsRED controls (n = 4), dissociated and single cells were FACS sorted for mCitrine and dsRED expression respectively. RNA was isolated from sorted cells using Trizol (Life Technologies BV, Bleiswijk, The Netherlands). RNA was quantified using a NanoDrop spectrophotometer. Superscript III First Strand Synthesis System (ThermoFisher Scientific) was used to reverse transcribe 200 ng of purified RNA per condition following manufacturer’s protocol. qPCR reactions were performed using Fast SYBR Green PCR Master Mix (Applied Biosystems). Oligonucleotide sequences for real-time PCR analysis performed in this study are listed in Figure 6—source data 1.
 
 MOUSE: RNA from whole hearts was isolated using the MiRNeasy kit (Qiagen, 217004), according to the manufacturer’s instructions. RNA was quantified using a NanoDrop spectrophotometer. A High Capacity cDNA Reverse transcription kit (Applied Biosystems, 4374966) was used to reverse transcribe 1 µg of purified RNA according to the manufacturer’s instructions. qPCR reactions were performed using Fast SYBR Green PCR Master Mix (Applied Biosystems). Oligonucleotide sequences for real-time PCR analysis performed in this study are listed in Figure 6—source data 1.
 
-## In situ hybridization
+### In situ hybridization
 
 PARAFFIN: After o/n fixation in 4% PFA, hearts were washed in PBS twice, dehydrated in EtOH, and embedded in paraffin. Serial sections were made at 10 µm. In situ hybridization was performed on paraffin-sections as previously described (Moorman et al., 2001) except that the hybridization buffer used did not contain heparin and yeast total RNA.
 
 CRYOSECTIONS: Sections were obtained as described earlier. In situ hybridization was performed as for paraffin, however sections were pre-fixed for 10 min in 4% PFA + 0.25% glutaraldehyde before Proteinase K treatment. Moreover, slides were fixed for 1 hr in 4% PFA directly after staining. When in situ hybridization was combined with immunofluorescence, Fast Red staining solution was used instead of NBT-BCIP.
 
-## Isolation of single cells from cryoinjured hearts
+### Isolation of single cells from cryoinjured hearts
 
 Cryoinjured hearts (n = 13) were extracted at seven dpi. Cells were dissociated according to Tessadori et al. (2012). For cell sorting, viable cells were gated by negative DAPI staining and positive YFP-fluorescence. In brief, the FACS gating was adjusted to sort cells for nppa:mCitrinehigh (to enrich for proliferating cardiomyocytes) and nppa:mCitrinelow (remote cardiomyocytes and other cell types) cells. In total n = 576 mCitrinehigh and n = 192 mCitrinelow cells were sorted into 384-well plates and processed for mRNA sequencing as described below.
 
-## Isolation of single cells from embryonic zebrafish
+### Isolation of single cells from embryonic zebrafish
 
 Transgenic tg(myl7:GFP) 2-day-old embryos (n = 200) were dechorionated and digested in HBSS Ca2+/Mg2+ free media containing 0.1% collagenase type II (Gibco) at 32°C for 30–40 min followed by 1X TrypLE Express (Gibco) for 15–30 min at 32°C with agitation. Dissociated cells were then FACSorted and subjected to single-cell mRNA-seq.
 
-## Single-cell mRNA sequencing
+### Single-cell mRNA sequencing
 
 Single-cell sequencing libraries were prepared using SORT-seq (Muraro et al., 2016). Live cells were sorted into 384-well plates with Vapor-Lock oil containing a droplet with barcoded primers, spike-in RNA and dNTPs, followed by heat-induced cell lysis and cDNA syntheses using a robotic liquid handler. Primers consisted of a 24 bp polyT stretch, a 4 bp random molecular barcode (UMI), a cell-specific 8 bp barcode, the 5’ Illumina TruSeq small RNA kit adapter and a T7 promoter. After cell-lysis for 5 min at 65 °C, RT and second strand mixes were distributed with the Nanodrop II liquid handling platform (Inovadyne). After pooling all cells in one library, the aqueous phase was separated from the oil phase, followed by IVT transcription. The CEL-Seq2 protocol was used for library prep (Hashimshony et al., 2016). Illumina sequencing libraries were prepared with the TruSeq small RNA primers (Illumina) and paired-end sequenced at 75 bp read length on the Illumina NextSeq platform. Mapping was performed against the zebrafish reference assembly version 9 (Zv9).
 
-## Bioinformatic analysis
+### Bioinformatic analysis
 
 To analyze the single-cell RNA-seq data, we used the previously published RaceID algorithm (Grün et al., 2015). For the adult hearts we had a dataset consisting of two different libraries of 384 cells each for a combined dataset of 768 cells, in which we detected 19257 genes. We detected an average of 10,443 reads per cell. Based on the distribution of the log10 total reads plotted against the frequency, we introduced a cutoff at minimally 3500 reads per cell before further analysis. This reduced the number of cells used in the analysis to 352. Next, we downsampled reads to 3500 unique (UMI corrected) transcripts per cell, as means of normalization. Moreover, we discarded genes that were not detected at >3 transcripts in >1 cell and These cutoffs is a stringent normalization method that allows us to directly compare detected transcripts between cells from different cell types and libraries. Batch-effects were analyzed and showed no plate-specific clustering of certain clusters.
 
@@ -181,38 +502,38 @@ Differential gene expression analysis was performed using the ‘diffexpnb’, w
 
 For the comparison between the embryonic and adult cardiomyocyte clusters, the number of differentially expressed genes between two clusters was calculated as described above and this was used as a measure of similarity between clusters.
 
-## Inference of co-expressed gene modules
+### Inference of co-expressed gene modules
 
 To identify modules of co-expressed genes along a specific differentiation trajectory (defined as a succession of significant links between clusters as identified by StemID) all cells assigned to these links were assembled in pseudo-temporal order based on their projection coordinate. Next, all genes that are not present with at least two transcripts in at least a single cell are discarded from the sub-sequent analysis. Subsequently, a local regression of the z-transformed expression profile for each gene is computed along the differentiation trajectory. These pseudo-temporal gene expression profiles are topologically ordered by computing a one-dimensional self-organizing map (SOM) with 1000 nodes. Due to the large number of nodes relative to the number of clustered profiles, similar profiles are assigned to the same node. Only nodes with more than three assigned profiles are retained for visualization of co-expressed gene modules. Neighboring nodes with average profiles exhibiting a Pearson’s correlation coefficient >0.9 are merged to common gene expression modules. These modules are depicted in the final map. Analyses were performed as previously published (Grün et al., 2016).
 
 Accession numbers mRNA-seq data are deposited on Gene Expression Omnibus, accession number GSE139218. Samples FK1 and FK2 represent adult cardiomyocytes. Samples LG-A and LG-B represent embryonic cardiomyocytes.
 
-## Transmission Electron Microscopy
+### Transmission Electron Microscopy
 
 Hearts were excised and immediately chemically fixated at room temperature with 2,5% glutaraldehyde and 2% formaldehyde (EMS, Hainfield USA) in 0.1M phosphate buffer pH 7.4 for 2 hr. Next, hearts were post fixed with 1% OsO4 (EMS, Hainfield USA)/1.5% K3Fe(CN)6 in 0.065 M phosphate buffer for 2 hr at 4°C and finally 1 hr with 0,5% uranyl acetate. After fixation, hearts were dehydrated in a graded series of acetone and embedded in Epon epoxy resin (Polysciences). Ultrathin sections of 60 nm were cut on a Leica Ultracut T (Leica, Vienna, Austria) and contrasted with uranyl acetate (0.4% in AD, EMS, Hainfield USA) and lead citrate (Leica Vienna, Austria) using the AC20 (Leica Vienna, Austria) and examined with a Jeol 1010 electron microscope (Jeol Europe, Nieuw Vennep, The Netherlands).
 
-## Quantification of mitochondrial parameters
+### Quantification of mitochondrial parameters
 
 In every heart, each in the borderzone and remote myocardial region, 100 well-deliniated mitochondria with clearly visible outer and inner membranes were selected. Mitochondrial perimeter and surface were measured using the freehand tool of Image J. The perimeter to surface ratio was calculated and used as a factor that describes the pluriformity of mitochondria. The amount of cristae was estimated by counting the number of cristae intersected by a line of 0.5 µm length in 40 mitochondria per region.
 
-## Histology and enzyme histochemistry
+### Histology and enzyme histochemistry
 
 Serial cryosections of the heart were cut 7 µm thick and either fixed in formalin, stained with Meyer’s hematoxylin and eosin (HE), dehydrated and mounted in Entellan, or incubated for enzyme histochemistry. Chemicals for histochemistry of succinate dehydrogenase (SDH) activity were obtained from Sigma Aldrich. Sections for SDH activity were incubated for 20 min at 28°C in 37.5 mM sodium phosphate buffer pH 7.60, 70 mM sodium succinate, 5 mM sodium azide and 0.4 mM tetranitro blue tetrazolium (TNBT). The reaction was stopped in 10 mM HCl. Controls without succinate did not stain. The incubated sections were mounted in glycerine gelatin. The absorbances of the SDH-reaction product in the sections were determined at 660 nm using a calibrated microdensitometer and ImageJ.
 
-## Pharmacological inhibition of glycolysis
+### Pharmacological inhibition of glycolysis
 
 ZEBRAFISH: Zebrafish were injured and received intraperitoneal (i.p.) injections twice daily with either PBS or 2-Deoxy-D-Glucose (Sigma-Aldrich, 1 mg/g) from days 3 to 6 and one more injection on day seven after injury, two hours before fish were euthanized and hearts harvested. I.p. injections were performed using a Hamilton Syringe (gauge 30) as described in literature (Kinkel et al., 2010). Injection volumes were corrected to body weight (30 μl/g).
 
 MAMMALIAN P7 CARDIAC CULTURES: Primary cardiac cultures were isolated from P7 mice using a neonatal dissociation kit (Miltenyi Biotec,130-098-373) using the gentleMACS homogenizer, according to the manufacturer’s instructions and cultured in Gelatin-coated (0.1%, G1393, Sigma) wells with DMEM/F12 medium supplemented with L-glutamine, Na-pyruvate, nonessential amino acids, penicillin, streptomycin, 5% horse serum and 10% FBS (‘complete-medium’) at 37◦C and 5% CO2 for 24 hr. Afterwards, medium was replaced with FBS-depleted medium (otherwise same composition) for additional 48 hr of culture in either 3 mM 2DG (Sigma-Aldrich) or 80 μM lonidamine (Sigma-Aldrich) before further processing.
 
-## Ex vivo glucose uptake
+### Ex vivo glucose uptake
 
 Fish were euthanized on ice water before hearts were extracted in PBS + heparin and were allowed to bleed out for 15 min. Hearts were then transferred into fresh PBS + 10%KCl to stop the heart from beating and mounted directly on a glass bottom cell culture dish in 1% agarose. Thereafter, 2NBDG (Caymanchem #11046, 400 μM) was added to the dish and the hearts were taken directly for imaging. Imaging was performed using a Leica SP5 multiphoton microscopy using 930 nm laser excitation wavelength. 150 μm z-stacks were made with z-step size 5 μm every 5 min for 2 hr.
 
-## Gene set enrichment analysis (GSEA)
+### Gene set enrichment analysis (GSEA)
 
 GSEA (Genepattern, Broad Institute) was performed to assess enrichment for glycolytic genes upregulated between cluster 7 and 2. A list of genes involved in zebrafish glycolysis was obtained from KEGG. As number of permutations 1000 was used, which means p=0 indicates p<0.001.
 
-## Statistical analysis of data
+### Statistical analysis of data
 
 All statistical testing was performed by unpaired T-tests besides zebrafish qPCR data for which a one-way ANOVA was performed.

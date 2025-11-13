@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/013sk6x84 Janelia Research Campus Ashburn United States
-2. https://ror.org/00cvxb145 Department of Biology, Friday Harbor Laboratories, University of Washington Friday Harbor United States
-3. https://ror.org/00jmfr291 Life Sciences Institute, University of Michigan Ann Arbor United States
+1. Janelia Research Campus Ashburn United States ([ROR:013sk6x84](https://ror.org/013sk6x84))
+2. Department of Biology, Friday Harbor Laboratories, University of Washington Friday Harbor United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+3. Life Sciences Institute, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
 
 † Corresponding author
 
@@ -37,7 +37,7 @@ The analysis of development and metamorphosis of complex neuropils can provide i
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/80594/elife-80594-fig2-v2.jpg)
 
-**Figure 2.:** (A) The larval MB has a core of γ Kenyon neurons whose dendrites project to the calyx (CA) neuropil and whose axons extend through the peduncle and bifurcate into a vertical and medial lobe. Projections from three clusters of aminergic neurons, the PAL, PPL1, and PAM clusters divide the axon array into 10 computational compartments: IP and LP: intermediate and lower peduncle; LA: lateral appendix; UVL, IVL, LVL: upper, intermediate, and lower vertical lobe; SHA: shaft; UT, IT, LT: upper, intermediate, and lower toe. PPL1 input largely indicates punishment, PAM input indicates reward, and PAL is unknown. The diagrams below highlight in gray (left) the compartments that lose contact with γ neuron axons during pruning and (right) the compartments that are not incorporated into the adult MB. (B) The adult MB has 16 compartments. It contains regrown γ neurons (gray) that lack the larval-specific vertical branch along with late developing α′β′ (green) and αβ (orange) Kenyon cells. These together form the medial (β′,β) and vertical (α′, α) lobe systems of the adult. Compartment designations are numbered and based on the Kenyon cell axons that they contain. (C) Projection of a multicolor flip-out (MCFO) image from a larval brain showing two MB input neurons that project bilaterally to the upper (UVL) and intermediate (IVL) compartments of the vertical lobes. Blue: neuroglian staining. (D) Schematic of the microcircuitry characteristic of larval and adult compartments. (E) Developmental timeline of the production of the three major classes of Kenyon cells that make up the mature MB.Figure 2—source data 1.Figure 2—source data 2.Figure 2—source data 3.Figure 2—source data 4.The anatomy of the adult form of MBIN-l1 was revealed using lines SS04484 and SS01624; that of DAN-f1 using lines MB065B and MB145B.Figure 2—source data 5.The anatomy of the adult form of DAN-g1 was revealed using lines SS017164 and SS01755; that of OAN-g1 using lines SS20844 and SS4268.Figure 2—source data 6.
+**Figure 2.:** (A) The larval MB has a core of γ Kenyon neurons whose dendrites project to the calyx (CA) neuropil and whose axons extend through the peduncle and bifurcate into a vertical and medial lobe. Projections from three clusters of aminergic neurons, the PAL, PPL1, and PAM clusters divide the axon array into 10 computational compartments: IP and LP: intermediate and lower peduncle; LA: lateral appendix; UVL, IVL, LVL: upper, intermediate, and lower vertical lobe; SHA: shaft; UT, IT, LT: upper, intermediate, and lower toe. PPL1 input largely indicates punishment, PAM input indicates reward, and PAL is unknown. The diagrams below highlight in gray (left) the compartments that lose contact with γ neuron axons during pruning and (right) the compartments that are not incorporated into the adult MB. (B) The adult MB has 16 compartments. It contains regrown γ neurons (gray) that lack the larval-specific vertical branch along with late developing α′β′ (green) and αβ (orange) Kenyon cells. These together form the medial (β′,β) and vertical (α′, α) lobe systems of the adult. Compartment designations are numbered and based on the Kenyon cell axons that they contain. (C) Projection of a multicolor flip-out (MCFO) image from a larval brain showing two MB input neurons that project bilaterally to the upper (UVL) and intermediate (IVL) compartments of the vertical lobes. Blue: neuroglian staining. (D) Schematic of the microcircuitry characteristic of larval and adult compartments. (E) Developmental timeline of the production of the three major classes of Kenyon cells that make up the mature MB.
 
 The MB receives flows of sensory information through projection neurons to the calyx, but our study focused on the sets of MB input neurons (MBINs) and output neurons (MBONs) that innervate the peduncle and lobes (Figure 2A and B). In both larvae and adults, these neurons divide the lobes into non-overlapping compartments (Figure 2C) that have a common microcircuit motif (Figure 2D; Eichler et al., 2017; Zheng et al., 2018). Each compartment is defined by the axonal tuft of an aminergic input cell that synapses onto Kenyon cell axons and onto a dedicated MBON(s). The Kenyon cell axons synapse onto each other and the MBONs but also feed back onto the MBINs (Figure 2D). The majority of the MBINs are dopaminergic neurons (DANs) but a few are octopaminergic neurons (OANs). Most DANs come from two clusters, the protocerebral anterior medial (PAM) cluster, which primarily encodes reward, and the protocerebral posterior lateral 1 (PPL1) cluster, which mainly encodes punishment (Saumweber et al., 2018; Cognigni et al., 2018; Eichler et al., 2017; Eschbach et al., 2020). Depending on their compartment, the MBONs are cholinergic, GABAergic, or glutaminergic. Interestingly, stimulation of the MBONs from PPL1-supplied compartments generally evokes approach behavior while stimulation of those from PAM supplied compartments evokes avoidance (Owald et al., 2015; Cognigni et al., 2018). Consequently, pairing punishment with a particular odor reduces the drive on MBONs that promote attraction. Behavior is therefore guided by a balance of avoidance versus attractive influences and the inhibition of neurons mediating one behavior then favors the opposite behavioral state (Thum and Gerber, 2019; Cognigni et al., 2018). The functions of some compartments, though, are complex because of extensive interconnections amongst MBONs and feedback from MBONs back to various MBINs (e.g., Eschbach et al., 2020; Li et al., 2020).
 
@@ -45,11 +45,295 @@ While serving similar functions of mediating associative learning, the larval an
 
 ## Results
 
-## Metamorphic fates of the larval MBINs and MBONs
+### Metamorphic fates of the larval MBINs and MBONs
 
 Armstrong et al., 1998 used a set of enhancer-trap lines to follow subsets of extrinsic and intrinsic MB neurons through metamorphosis and showed that some of the medial lobe neurons functioned in both the larval and adult structures. Our use of a large collection of split-GAL4 lines that express in specific larval MBINs and MBONs (Saumweber et al., 2018) and a conditional flip-switch strategy (Harris et al., 2015) have allowed us to establish the metamorphic fates of most of the MBONs and MBINs. We focused on the larval unicompartmental neurons that possess the well-defined dendritic or axonal 'tufts' that define compartments (Saumweber et al., 2018), and we could determine the fates of 28 of the 32 classes of such cells. We have classified the persisting neurons as 'remodeling' if they continue as part of the MB circuitry after metamorphosis or as 'trans-differentiating' (see Veverytsa and Allan, 2013) if they retract from the MB system and function in other circuits of the adult brain. These two designations, however, likely are the two extremes along a continuum of change.
 
 Figure 3 and Table 1 summarize the fates of the larval MBINs (Saumweber et al., 2018). We lacked suitable lines for the two octopaminergic neurons that innervate the calyx compartment (OAN-a1 and -a2). However, these cells have a very similar anatomy to the two adult OA-VUM2a neurons (Busch et al., 2009), leading us to conclude that they are the same neurons. We experimentally established the fates of 13 of the remaining 14 larval MBINs. These cells either trans-differentiate, remodel, or degenerate. Trans-differentiation was the fate of one MBIN innervating the LA compartment and all those innervating the vertical lobe compartments, UVL and IVL, and the intermediate peduncle (IP) compartment (Figure 3). The most extreme change was evident for MBINs-b1 and -b2; they withdraw from the larval intermediate peduncle and become sexually dimorphic neurons that innervate the adult optic lobes (Figure 3B, Figure 3—figure supplement 1A and B). We named their adult form PAL-OL because they are found in the protocerebral anterior lateral (PAL) cluster of adult aminergic neurons described by Mao and Davis, 2009. The three vertical lobe MBINs (OAN-e1, MBIN-e2, and DAN-f1) are members of the PPL1 group (Saumweber et al., 2018). We lacked a line to determine the fate of MBIN-e2, but OAN-e1 reorganizes to innervate the neuropil shell surrounding the MB lobes (as PPL1-SMP; Figure 3—figure supplement 1C) and DAN-f1 forms bilateral arbors in the adult superior medial protocerebrum as PPL1-bi-SMP (Figure 3—figure supplement 1D). The other trans-differentiating MBIN is MBIN-l1 that provides input from the larval lateral accessory lobe to the LA compartment of the MB; its adult form as LAL>bi-CRP redirects its lateral accessory lobe input to the crepine neuropil in both hemispheres (Figure 3B, Figure 3—figure supplement 1E).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/80594/elife-80594-fig3-v2.jpg)
+
+**Figure 3.:** (A) The fates of the larval MBINs that innervate the calyx and the 10 compartments of the larval MB. For larval MBINs that remain with the MB, the arrows show the relationship of their larval compartment to the one that they innervate in the mature, adult MB. The remaining MBINs die (skull), trans-differentiate (T) to supply non-MB circuits in the adult, or their fate is unknown (?). For the MBINs whose transmitter is unknown, they express tyrosine hydroxylase but their final secreted transmitter has not been determined. Compartment designations as in Figure 2. (B) Images comparing the larval and adult forms of the MBINs that persist through metamorphosis. The images of larval cells from Saumweber et al., 2018 Nature Comm. 9: 1104. Adult names based on Aso et al., 2014, Li et al., 2020, or this study.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80594/elife-80594-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Female and male versions of larval MBIN-b1 and -b2. Images to the right are a horizontal section at the level of the tick marks showing that in males the cell innervates the medulla (med) but in the female the medulla projection is reduced but it has extensive branching in the lobula (lob). Ot: optic tubercle. (C) Frontal projection showing the terminal adult morphology of larval cell OAN-e1. Image to right is a lateral section at level of the tick marks showing that the arbor is outside of the bundles of Kenyon cell axons. (C’) and (C”) are frontal slices at levels to relationship of arbor the γ, β', and β lobes of the medial loves (C’) and the α and α' lobes of the vertical lobes (C”). (D) Terminal adult anatomy of larval DAN-f1. (E) Terminal adult identity of larval MBIN-l1. Green: pseudo color representation of RFP; magenta: nc82. bi: bilateral, CRP: crepine, LAL: lateral accessory lobe, lob: lobula, med: medulla, OL: optic lobe, ot: optic tubercule, PAL: protocerebral anterior lateral, PPL: protocerebral posterior lateral, SMP: superior medial protocerebrum.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/80594/elife-80594-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The adult cell is called OA-VPM3. FB: fan-shaped body, SP: superior protocerebrum. Green: pseudocolor representation of RFP; magenta: nc82.
+
+**Table 1.**
+ Metamorphic fates of larval mushroom body extrinsic neurons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Larval name</th>
+      <th>Compartment</th>
+      <th>Lineage *</th>
+      <th>Adult identity</th>
+      <th>Ref for adult identity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MBINs</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OAN-a1,a2</td>
+      <td>CX</td>
+      <td>VUM†</td>
+      <td>OA-VUM2a</td>
+      <td>Busch et al., 2009</td>
+    </tr>
+    <tr>
+      <td>MBIN-b1,b2</td>
+      <td>IP</td>
+      <td>DPLd</td>
+      <td>PAL-OL</td>
+      <td>Mao and Davis, 2009; this study</td>
+    </tr>
+    <tr>
+      <td>DAN-c1</td>
+      <td>LP</td>
+      <td>CPd2/3</td>
+      <td>PPL1 01 (γ1pedc)</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBIN-c1</td>
+      <td>LP</td>
+      <td>CPd2/3</td>
+      <td>PPL1 01 (γ1pedc)</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>DAN-d1</td>
+      <td>LA</td>
+      <td>CPd2/3</td>
+      <td>PPL1 03 (γ2α'1)</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBIN-l1</td>
+      <td>LA</td>
+      <td>BLV a3/4</td>
+      <td>LAL&gt;bi-CRP</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>OAN-e1</td>
+      <td>UVL</td>
+      <td>CPd2/3</td>
+      <td>PPL1-SMP</td>
+      <td>Mao and Davis, 2009; this study</td>
+    </tr>
+    <tr>
+      <td>MBIN-e2</td>
+      <td>UVL</td>
+      <td>CPd2/3</td>
+      <td>Unknown</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DAN-f1</td>
+      <td>IVL</td>
+      <td>CPd2/3</td>
+      <td>PPL1-bi-SMP</td>
+      <td>Mao and Davis, 2009; this study</td>
+    </tr>
+    <tr>
+      <td>DAN-g1</td>
+      <td>LVL</td>
+      <td>CPd2/3</td>
+      <td>PPL1 02 (γ1)</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>OAN-g1</td>
+      <td>LVL</td>
+      <td>Unknown</td>
+      <td>OA-VPM3</td>
+      <td>Busch et al., 2009</td>
+    </tr>
+    <tr>
+      <td>DAN-h1</td>
+      <td>SHA</td>
+      <td>DAL CM-1/2</td>
+      <td>Dead</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>DAN-i1</td>
+      <td>UT</td>
+      <td>DAL CM-1/2</td>
+      <td>Dead</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>DAN-j1</td>
+      <td>IT</td>
+      <td>DAL CM-1/2</td>
+      <td>Dead</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>DAN-k1</td>
+      <td>LT</td>
+      <td>DAL CM-1/2</td>
+      <td>Dead</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>MBONs:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-a1</td>
+      <td>CX</td>
+      <td>CPv2/3</td>
+      <td>MBON 29 (γ4γ5)</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>MBON-a2</td>
+      <td>CX</td>
+      <td>CPv2/3</td>
+      <td>MBON 22 (calyx)</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-b1,-b2</td>
+      <td>IP</td>
+      <td>BLVa3/4</td>
+      <td>LH-LN</td>
+      <td>Dolan et al., 2019</td>
+    </tr>
+    <tr>
+      <td>MBON-b3</td>
+      <td>IP</td>
+      <td>CPv2/3</td>
+      <td>Unknown</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-c1</td>
+      <td>LP</td>
+      <td>BLDc</td>
+      <td>MBE-CA</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>MBON-d1</td>
+      <td>LA</td>
+      <td>DAL CM-1/2</td>
+      <td>MBON 11 (γ1pedc&gt;α/β)</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-d2</td>
+      <td>LA</td>
+      <td>BAmd2</td>
+      <td>SMP&gt;IB</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>MBON-e1</td>
+      <td>UVL</td>
+      <td>CPd2/3</td>
+      <td>Unknown</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-e2</td>
+      <td>UVL, IVL, LVL</td>
+      <td>DAM-d1</td>
+      <td>MBON 03 (β'2mp)</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-f2</td>
+      <td>IVL</td>
+      <td>DAL cl2</td>
+      <td>MBON 30 (γ1,γ2,γ3)</td>
+      <td>Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-f1</td>
+      <td>IVL</td>
+      <td>CPd</td>
+      <td>Unknown</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-g1,g2</td>
+      <td>LVL</td>
+      <td>DAL-V2/3</td>
+      <td>LAL.s-NO2i.b</td>
+      <td>Wolff and Rubin, 2018</td>
+    </tr>
+    <tr>
+      <td>MBON-h1</td>
+      <td>SHA</td>
+      <td>DAL-V2/3</td>
+      <td>MBON 09 (γ3β'1)</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-h2</td>
+      <td>SHA</td>
+      <td>DAL-V2/3</td>
+      <td>MBON 08 (g3)</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-i1</td>
+      <td>UT</td>
+      <td>DAM-d1</td>
+      <td>MBON 04 (β'2-bilat)</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-j1</td>
+      <td>IT</td>
+      <td>DAM-d1</td>
+      <td>MBON 02 (β2β'2a)</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-j2</td>
+      <td>IT</td>
+      <td>DAL CM-1/2</td>
+      <td>MBON 05 (γ4&gt;γ1,γ2)</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-k1</td>
+      <td>LT</td>
+      <td>DAM-d1</td>
+      <td>MBON 01 (γ5β'2a)</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>APL</td>
+      <td>UT,LT,LA,VL,CX</td>
+      <td>BLV a3/4</td>
+      <td>APL</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+  </tbody>
+</table>
+
+_CX, calyx; IP: intermediate peduncle; LP: lower peduncle; UVL: upper vertical lobe; IB: inferior bridge; IVL: intermediate vertical lobe; LVL: lower vertical love; LA: lateral appendix; OT: optic tubercle; SHA: shaft; SMP: superior medial protocerebrum; UT: upper toe; IT: intermediate toe; LT: lower toe.*Lineage designations from Saumweber et al., 2018.†Lineage assumed to be from the ventral unpaired neuroblast because of position and nature of neurons._
 
 Four other members of the PPL1 cluster (DAN-c1, -d1, and -g1, and MBIN-c2) innervate compartments at the base of the lobes and the peduncle (LVL, LP, and LA compartments). They undergo moderate remodeling and continue innervating compartments at the base of the mature MB peduncle and lobes (the PED, γ1, γ2, and α'1 compartments) (Figure 3). The octopaminergic MBIN, OAN-g1, exclusively targets the LVL compartment in the larva, but in its adult form, named OA-VPM3 (Busch et al., 2009), it extends extensive arbors into the fan-shaped body and the medial and lateral superior protocerebrum (Figure 3—figure supplement 2) with some arbor extending into adult γ1 compartment. This neuron shows profound metamorphic changes, but we still classify it as remodeling because it has some contact with the adult MB.
 
@@ -57,15 +341,51 @@ The four larval dopaminergic neurons of the PAM cluster innervate the four media
 
 We established the fates of 14 of the 17 types of larval MBONs (Figure 4, Table 1). None died. They either remodeled or trans-differentiated, although as described for OAN-g1 above, such a distinction is not clear-cut for some neurons. We categorized the two calyx neurons, MBON-a1 and -a2, as remodeling because they also innervate the mature MB. This is clearly the case for MBON-a2 since its larval and adult morphologies (as MBON 22) are extremely similar. MBON-a1, by contrast, completely withdraws from the calyx and directs its adult growth into the adult γ4 and γ5 compartments as MBON 29. Three larval MBONs from the lobe system show similar dramatic morphological changes but also remain within the MB circuit. MBON-c1 retracts from the larval lower peduncle compartment and grows into the adult calyx (as MBE-calyx). MBON-e2 and MBON-f2 retract from the vertical lobes and regrow into medial lobe compartments, becoming the adult MBON 03 and MBON 30, respectively. The MBONs innervating the larval medial lobe compartments (SHA, UT, IT, and LT) are more conservative in their changes; they persist as medial lobe MBONs and supply topologically similar compartments in the adult (Figure 3; MBON-h1 to -k1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/80594/elife-80594-fig4-v2.jpg)
+
+**Figure 4.:** (A) The fates of the larval MBONs that innervate the calyx and the 10 compartments of the larval MB. For MBONs that remain within the MB after metamorphosis, the arrows show the relationship of their larval compartment to the one that they innervate in the adult MB. The remaining MBONs trans-differentiate (T) to supply non-MB circuits in the adult, or their fate is unknown (?). Compartment designations as in Figure 2. Transmitters: green: acetylcholine; blue: glutamate; red: GABA; gray: unknown; checkered versions are presumed transmitters based on Li et al., 2020. (B) Images comparing the larval and adult forms of the MBONs that persist through metamorphosis. The images of larval cells from Saumweber et al., 2018 Nature Comm. 9: 1104. Adult names based on Aso et al., 2014, Li et al., 2020, or this study.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80594/elife-80594-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Frontal views of the adult brain showing the terminal identities of (A) MBON-d2, (B) MBON-b1 and -b2, and (C) MBON-g1 and g2. (C') A magnified image of the boxed region of 'C' showing the terminals of the neuron in the intermediate section of the nodulus. Green: pseudocolor representation of RFP; magenta: nc82.
+
 As with the MBINs, the MBONs that trans-differentiated were typically those from larval vertical lobe compartments and the intermediate peduncle (Figure 4A and B). For example, MBON-b1 and -b2 retract from the larval IP compartment and invade the lateral horn where they become local interneurons (Figure 4, Figure 4—figure supplement 1B; LHLN neurons; Dolan et al., 2019). The most striking changes occur in MBON-g1 and -g2 (Figure 4B, Figure 4—figure supplement 1C and D), which transform into central complex neurons – the LAL.s-NO2i.b neurons that innervate the nodulus (Wolff and Rubin, 2018).
 
-## The time course of MBIN and MBON metamorphic changes
+### The time course of MBIN and MBON metamorphic changes
 
 The fates of most of the larval MBINs and MBONs, as determined by the flip-switch method, were confirmed by following the expression of the parental lines through early metamorphosis. Although most enhancer-based lines change their expression patterns during metamorphosis, we found that GFP expression typically persists through enough of the remodeling period to confirm a neuron’s adult identity.
 
 As expected from our failure to find the adult versions of the medial lobe MBINs (DAN-h1 to -k1) using the flip-switch method, we found that they degenerate early in metamorphosis (Figure 5—figure supplement 1). Their dendritic arbors collapsed by 8 hr after puparium formation (APF), the cell bodies were disrupted by 16 hr APF, and the neurons were reduced to scattered GFP-labeled debris by 24 hr APF.
 
 The MBINs and MBONs that either remodel or trans-differentiate (Figures 5 and 6) showed a time course of pruning and outgrowth like that reported for the γ Kenyon cells (Watts et al., 2003). Pruning of γ neuron axons is evident by 4 hr APF and is completed by 16–18 hr APF. Adult outgrowth commences by 24 hr and is finished by 48 hr APF (Yaniv et al., 2012; Mayseless et al., 2018). The larval MBINs (Figure 5, Figure 5—figure supplement 2) and MBONs (Figure 6) also showed arbor loss by 8 hr APF and were maximally pruned by 16 hr APF. Growth cones were evident between 16 and 24 hr APF. MBIN-b1 and -b2 showed the most exuberant outgrowth, having formed growth cones that were halfway to the optic lobes by 16 hr APF and had reached them by 24 hr (Figure 5). Most neurons achieved their adult form by 48 hr APF. The GABAergic anterior paired lateral (APL) neuron and MBON-j2 neurons were exceptional in that they continue arbor extension beyond 48 hr (Figure 6—figure supplements 1 and 2). APL eventually covers all of the adult compartments by 72 hr APF (Mayseless et al., 2018) and is involved in feedback suppression in both larva and adult (Liu and Davis, 2009; Masuda-Nakagawa et al., 2014; Saumweber et al., 2018). For MBON-j2, its γ4 tuft forms at the same time as those of other MBONs but the formation of its γ2 and especially its γ1 arbors is delayed. (Figure 6—figure supplement 2). In its adult function as MBON 05 (AKA MBON-γ4>γ1,γ2), it is suggested to provide feed-forward inhibition between compartments (Aso et al., 2014). Its extended period of outgrowth may allow time for the compartment microcircuits to become established before it interconnects them.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/80594/elife-80594-fig5-v2.jpg)
+
+**Figure 5.:** Confocal images track the GFP expression through the first 48 hr after pupariation (P); the adult images show flip-switch induced expression of red fluorescent protein. Arrowheads: growth cones; P+#: # hours after pupariation. Background staining for the developmental series is for Fasciclin II (magenta); for the adult, it is Bruchpilot (nc82) (blue). Lines used for developmental timelines: DAN-c1: JRC-SS03066, DAN-d1: JRC-MB328B, DAN-g1: JRC-SS01716, MBIN-l1: JRC-SS04484, MBIN-b1,-b2: JRC-SS21716.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80594/elife-80594-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** The cells are reduced to GFP-labeled fragments by 24 hr after pupariation. Inset is an enlarged version of the boxed region for line SS01949 showing the discrete axonal tufts in the shaft (SHA), upper toe (UT), and intermediate toe (IT) compartments. P+#: # hours after pupariation. Background staining for the developmental series is Fasciclin II (magenta); lines used for developmental timelines: DAN-h1, -i1, and -j1: JRC-SS01949; DAN-k1: JRC-SS01757.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/80594/elife-80594-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The subsequent images track the axonal tufts of the two neurons. That of DAN-c1 persists as a cohesive tuft associated with the mushroom bodies while OAN-e1 tufts retract from the mushroom bodies form a diffuse arbor over the superior medial protocerebrum. The adult image shows an example of flip-switch-induced expression of red fluorescent protein (RFP) in the adult. Two adult neurons were found in flip-out samples of this line: the above cell interpreted as the adult version of OAN-e1 and the adult version of DAN-c1 as confirmed by a second, clean DAN-c1 line (Figure 5). P+#: # hours after pupariation. Background staining for the developmental series is for Fasciclin II (magenta); for the adult it is nc82 (blue).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/80594/elife-80594-fig6-v2.jpg)
+
+**Figure 6.:** Confocal images track the GFP expression through the first 48 hr after pupariation (P); the adult images show flip-switch-induced expression of red fluorescent protein. *Expression due to nontarget neurons in some driver lines; filled arrowheads: axonal growth cones; open arrowheads: dendritic growth cones; P+#: # hours after pupariation. Magenta: Fasciclin II; blue: Bruchpilot (nc82). Lines used for developmental timelines: MBON-a1: JRC-SS00867, MBON-a2: JRC-SS02006, MBON-g: JRC-SS02130, MBON-h: JRC-SS01725, MBON-j1: JRC-SS01973.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/80594/elife-80594-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Confocal images track the GFP expression through the first 48 hr after pupariation; the adult images show flip-switch-induced expression of red fluorescent protein (RFP) in the adult. Open triangles: dendritic growth cones; filled triangles: axonal growth cones: growth cones; P+#: # hours after pupariation. Background staining for the developmental series is for Fasciclin II (magenta); for the adult it is nc82 (blue). Lines used for developmental timelines: MBON d1: JRC- SS01705, MBON j1: JRC- SS01973, MBON-i1: JRC- SS04244, MBON-k1: JRC- SS01980, APL: JRC- SS01671.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/80594/elife-80594-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** At pupariation (P 0h), MBON-j2 has a dendritic arbor in the ipsilateral medial toe (MT) compartment and a contralateral axon arbor (AA). By P+8 hr, the dendritic arbor is gone and the axonal arbor has severely reduced. At P+18 hr, the cell has formed contralateral outgrowth areas for new dendritic (filled arrowhead) and axonal arbors (open arrowhead). P+24 h: dendritic growth invades the γ4 compartment (filled arrowhead) while the axonal region splits into multiple growth cones, one of which invades the γ2 compartment (open arrowhead); By P+48 hr, a dendritic tuft fills the γ4 compartment and axonal arbor is in γ2, but the cell shows the delayed invasion of γ1. Adult version of the cell is a red fluorescent protein version obtained by flip-switch treatment of MBON-j2 in the larva. Blue: nc82; green: green fluorescent protein; magenta: fasciclin II.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/80594/elife-80594-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Confocal images track the GFP expression through the first 48 hr after pupariation; the adult images show flip-switch-induced expression of red fluorescent protein (RFP) in the adult. Top shows early stages in the metamorphosis of MBON-c1. This example of MBON-c1 has an atypical ectopic branch (e) that leads to the larval calyx. Most larval cells lack this branch. Subsequent images show the progression of arbor loss and outgrowth through the 24 hr after pupariation. The yellow and white triangles show comparable junctions in the cell through time. The inset at P+24 hr is a sub-stack projection through the calyx (CA) neuropil showing that growth cones have invaded this neuropil. p: peduncle; green: green fluorescent protein; magenta: fasciculin II; blue: N-cadherin. Bottom follows the changes in MBON e2 and MBON f2 as they are redirected from the larval vertical lobe to the adult medial lobe. Triangles: growth cones; P+#: # hours after pupariation. Background staining for the developmental series is for fasciclin II (magenta); for the adult it is nc82 (blue). Lines used for developmental timelines: MBON c1: JRC-SS21789, MBON e2: JRC-SS04559, MBON-f2: JRC-SS04320.
 
 MBON-a1 and -a2 provide an interesting contrast of divergent remodeling of two similar larval cells (Figure 6). Both cells show retraction of dendritic and axonal arbors by 8 hr APF. MBON-a1 removes its larval dendritic arbor by 16 hr, and its distal axonal region then extends new growth cones to innervate the adult γ4 and γ5 compartments and surrounding neuropils. In contrast, the dendritic arbor of MBON-a2 only partially regresses. It organizes into a dendritic growth cone by 16 hr APF, which then reinvades the calyx. Its adult form, MBON-20 (MBON-calyx; Aso et al., 2014; Li et al., 2020), is very similar to its larval form.
 
@@ -75,21 +395,294 @@ Amongst the cells undergoing trans-differentiation, the most extreme changes are
 
 MBON-c1 was refractory to the flip-switch approach, but its early metamorphic changes gave us insight into its mature function. As seen in Figure 6—figure supplement 3, by 24 hr APF, its larval dendritic arbor is essentially gone, and new growth cones are invading the calyx neuropil. This split-GAL4 line lost its GFP expression after 24 hr, but the extensive invasion of the calyx neuropil by this time indicates that the calyx is its adult target. Its anatomy at 24 hr APF, though, is too immature to allow it to be matched to any described adult cell, so we have called its adult form MBE-CA (mushroom body extrinsic neuron to calyx).
 
-## The larval form is a derived state for the neurons that show trans-differentiation
+### The larval form is a derived state for the neurons that show trans-differentiation
 
 The γ Kenyon cells first assume a larval form, with vertical and medial axon branches, and then remodel into their adult form. The latter form, with its single medially directed axon, is the same as seen in the γ neurons of nymphs and adults of the more basal, direct-developing insects, such as the cricket (Malaterre et al., 2002). Thus, the adult version of Drosophila γ neurons is like that of a direct developing ancestor, while its larval form is derived to accommodate the lack of αβ class neurons in the larva. Is this a general rule for cells that have different larval and adult phenotypes? Do the adult phenotypes approximate the ancestral phenotype while the larval phenotypes are derived? It is difficult to directly deal with these designations for the trans-differentiating MBONs and MBINs because we do not know the corresponding neurons in direct developing species. We can, however, make this comparison for some VNC neurons such as the thoracic midline spiking interneurons (Figure 7). These neurons are found in a large cluster in each thoracic hemineuropil, and each cluster is the progeny of a single, identified neuroblast (Shepherd and Laurent, 1992). Each cluster includes two sets of GABAergic neurons that are based on the asymmetrical division of the ganglion mother cells. The 'A' group (hemilineage) remains ipsilateral, while the 'B' hemilineage projects to the contralateral leg neuropil where, as the midline spiking interneurons, they shape the response of leg motoneurons to input from leg mechanoreceptors (Siegler and Burrows, 1984). They were first described in grasshoppers (Siegler and Burrows, 1984) but they are found in both direct developing and metamorphic insects (Witten and Truman, 1998), indicating their involvement in leg function through insect evolution.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/80594/elife-80594-fig7-v2.jpg)
+
+**Figure 7.:** Neurons are generated pairwise during both phases to produce the 13A and 13B hemilineages. (A) Four examples of embryonic born, 13B interneurons that function in the larva. All are commissural interneurons having ipsilateral dendrites and contralateral output sites. Boxed image shows the neurons overlapping in segment T1. (B) Example of a postembryonic clone of NB4-2 showing the neurons of the two hemilineages at the end of larval life. (C) Confocal projection of the adult form of larval-born, 13B interneurons expressed in the SS04739 driver line. (D, E) The larval and adult phenotypes of one of the embryonic born 13B interneurons, T13t. (D) shows the three pairs of T13t neurons as revealed by the SS02006 driver line. (E) shows Flip-switch clones of the same cells showing their adult phenotypes.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/80594/elife-80594-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Through this period, the expanding neuropil pulls the cell bodies (*) to their adult position near the midline.
 
 In Drosophila, the corresponding interneurons are from the 13B hemilineage, which is produced by neuroblast NB4-2 (Figure 7; Harris et al., 2015; Lacin and Truman, 2016). The ‘B’ class of embryonic-born neurons from this lineage serve as commissural interneurons in the larva (Figure 7A), receiving ipsilateral input and having contralateral output. Their bundled, commissural axons provide a pathway that their postembryonic-born counterparts, the 13B interneurons, follow to the contralateral neuropil where they stop and wait for metamorphosis (Figure 7B). They then mature into local leg interneurons (Figure 7C) that have a form very different from their larval counterparts. This difference between the two sets of 13B neurons is only temporary, however. Figure 7D and E (Figure 7—figure supplement 1) follows the metamorphic fate of one of the embryonic-born, larval interneurons from this hemilineage. At metamorphosis, this neuron, T13t, loses its ipsilateral arbor and reorganizes its contralateral arbor to become a local leg interneuron like its postembryonic-born counterparts.
 
 Therefore, despite the larva lacking legs, Drosophila starts making leg interneurons during embryogenesis, but these embryonic-born cells initially take on a phenotype adapted to the needs of the legless larva. Their ancestral functions as leg interneurons are only manifest at metamorphosis. Like the γ Kenyon cells, these neurons support the idea that for neurons that function in both larva and adult, their larval phenotype is a derived state adapted to the larval stage, while their adult phenotype is more in line with the ancestral function of the cell.
 
-## Origins of adult-specific MBINs and MBONs
+### Origins of adult-specific MBINs and MBONs
 
 Remodeled larval MBINs and MBONs account for only 15 of the 41 different types of adult MBINs and MBONs (Aso et al., 2014). The remaining 26 types could either be born during the postembryonic neurogenic period or they could come from neurons that function outside of the MB circuit in the larva and then switch to the MB at metamorphosis. We could determine the origins of 22 of these 26 types (Figure 8A and B, Table 2) and all are born postembryonically.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/80594/elife-80594-fig8-v2.jpg)
 
 **Figure 8.:** (A) Summary of the origins of the adult MBINs that arise during the postembryonic period. Numbers give the number of neurons in each of the PAM groups (from Aso et al., 2014). (B) Summary of the origins of the adult MBONs that arise during the postembryonic period. NB: neuroblast; ?: adult MBONs whose origins are unknown. (C) Results of twin-spot MARCM approach showing the sequential postembryonic birth of FLAa2 lineage neurons that innervate α' and α compartments. (C), (C’), and (C”) images are produced by successively later heatshocks in the larva; green cells are produced after the heatshock while the red cells (shown only in C) are the remainder of the FLAa2 lineage. (D) Twin spot MARCM results from the type II DL1 lineage. The leftmost panel shows the progeny of an intermediate neural progenitor (INP) in green and the remainder of the lineage in red. The remaining panels show GMC clones with an MBON neuron and its paired sister fan-shaped body (FSB) neuron, both in green. The arbors identifying the individual MBONs are marked. Background staining (blue) is for Bruchpilot (nc82).
+
+**Table 2.**
+ Developmental origins of adult mushroom body input neurons (MBINs) and mushroom body output neurons (MBONs) that do not come from remodeled larval, extrinsic mushroom body neurons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Neuron</th>
+      <th>#</th>
+      <th>Origin</th>
+      <th>Lineage</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MBINs</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PPL1_04 (α'3)</td>
+      <td>1</td>
+      <td>Postembryonic</td>
+      <td>DL2</td>
+      <td>Ren et al., 2016</td>
+    </tr>
+    <tr>
+      <td>PPL1-05 (α'2α2)</td>
+      <td>1</td>
+      <td>Postembryonic</td>
+      <td>DL2</td>
+      <td>Ren et al., 2016</td>
+    </tr>
+    <tr>
+      <td>PPL1-06 (α3)</td>
+      <td>1</td>
+      <td>Postembryonic</td>
+      <td>DL2</td>
+      <td>Ren et al., 2016</td>
+    </tr>
+    <tr>
+      <td>PAM 01 (γ5)</td>
+      <td>19</td>
+      <td>Postembryonic</td>
+      <td>CREa1A, CREa2A</td>
+      <td>Lee et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PAM 02 (β'2a)</td>
+      <td>8</td>
+      <td>Postembryonic</td>
+      <td>CREa1A, CREa2A</td>
+      <td>Lee et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PAM 03 (β2β'2a)</td>
+      <td>4</td>
+      <td>Postembryonic</td>
+      <td>CREa1A, CREa2A</td>
+      <td>Lee et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PAM 04 (β2)</td>
+      <td>16</td>
+      <td>Postembryonic</td>
+      <td>CREa1A, CREa2A</td>
+      <td>Lee et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PAM 05 (β'2p)</td>
+      <td>10</td>
+      <td>Postembryonic</td>
+      <td>CREa1A, CREa2A</td>
+      <td>Lee et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PAM 06 (β'2m)</td>
+      <td>15</td>
+      <td>Postembryonic</td>
+      <td>CREa1A, CREa2A</td>
+      <td>Lee et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PAM 07 (γ4&lt;γ1γ2)</td>
+      <td>5</td>
+      <td>Postembryonic</td>
+      <td>CREa1A, CREa2A</td>
+      <td>Lee et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PAM 08 (γ4)</td>
+      <td>26</td>
+      <td>Postembryonic</td>
+      <td>CREa1A, CREa2A</td>
+      <td>Lee et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PAM 09 (β1ped)</td>
+      <td>6</td>
+      <td>Postembryonic</td>
+      <td>CREa1A, CREa2A</td>
+      <td>Lee et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PAM 10 (β1)</td>
+      <td>6</td>
+      <td>Postembryonic</td>
+      <td>CREa1A, CREa2A</td>
+      <td>Lee et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PAM 11 (α1)</td>
+      <td>7</td>
+      <td>Postembryonic</td>
+      <td>CREa1A, CREa2A</td>
+      <td>Lee et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PAM 12 (γ3)</td>
+      <td>11</td>
+      <td>Postembryonic</td>
+      <td>CREa1A, CREa2A</td>
+      <td>Lee et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PAM 13 (β'1ap)</td>
+      <td>7</td>
+      <td>Postembryonic</td>
+      <td>CREa1A, CREa2A</td>
+      <td>Lee et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PAM 14 (β'1)</td>
+      <td>8</td>
+      <td>Postembryonic</td>
+      <td>CREa1A, CREa2A</td>
+      <td>Lee et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PAM 15 (γ5β'2a)</td>
+      <td>3</td>
+      <td>Postembryonic</td>
+      <td>CREa1A, CREa2A</td>
+      <td>Lee et al., 2020</td>
+    </tr>
+    <tr>
+      <td>PAM γ4/5</td>
+      <td>?</td>
+      <td>Postembryonic</td>
+      <td>CREa1A, CREa2A</td>
+      <td>Lee et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBONs</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON 06 (β1&gt;α]</td>
+      <td>1</td>
+      <td>Unknown</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON 07 (α1)</td>
+      <td>2</td>
+      <td>Unknown</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON 10 (β'1)</td>
+      <td>8</td>
+      <td>Unknown</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON 12 (γ2α'1)</td>
+      <td>2</td>
+      <td>Postembryonic</td>
+      <td>FLAa2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>MBON 13 (α'2)</td>
+      <td>2</td>
+      <td>Postembryonic</td>
+      <td>FLAa2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>MBON 14 (α3)</td>
+      <td>2</td>
+      <td>Postembryonic</td>
+      <td>FLAa2</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>MBON 15 (α'1)</td>
+      <td>2</td>
+      <td>Postembryonic</td>
+      <td>DL1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>MBON 16 (α'3ap)</td>
+      <td>1</td>
+      <td>Postembryonic</td>
+      <td>DL1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>MBON 17 (α'3m)</td>
+      <td>2</td>
+      <td>Postembryonic</td>
+      <td>DL1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>MBON 18 (α2sc)</td>
+      <td>1</td>
+      <td>postembryonic</td>
+      <td>DL1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>MBON 19 (α2p3p)</td>
+      <td>2</td>
+      <td>Postembryonic</td>
+      <td>DL1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>MBON 21 (γ4,γ5)</td>
+      <td>1</td>
+      <td>Unknown</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON 23 (α2sp)</td>
+      <td>1</td>
+      <td>Postembryonic</td>
+      <td>DL1</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>MB-DPM</td>
+      <td>1</td>
+      <td>Postembryonic</td>
+      <td>Unknown</td>
+      <td>Mayseless et al., 2018</td>
+    </tr>
+  </tbody>
+</table>
+
+_Adult names according to Aso et al., 2014 and Li et al., 2020, except PAM γ4/5, which is based on Lee et al., 2020._
 
 The origins of the remaining adult MBINs have already been determined (Figure 8A). About 150 PAM neurons divided into at least 15 different types are found in the adult MB (Aso et al., 2014; see also Lee et al., 2020; Li et al., 2020). These neurons are born during the postembryonic phase of neurogenesis and come from the CREa1A and CREa2A neuroblasts (Lee et al., 2020; Table 2). For the PPL1 cluster MBINs, the number is about the same in the larva and the adult, but the cell population partially changes. We find that three of the larval PPL1 MBINs retract from the MB and join other circuits in the adult (Figure 3), and Ren et al., 2016 found that three adult-specific neurons are added from the postembryonic DL2 lineage.
 
@@ -99,7 +692,7 @@ We determined the origins of nine of the thirteen remaining types of adult MBONs
 
 Some neurons like the GABAergic APL have a unique and characteristic morphology that allows them to be readily identified in both larval and adult stages and the same name has been used for both stages. The vast majority of MBINs and MBONs, however, have been given different names in the larva versus the adult (Saumweber et al., 2018; Aso et al., 2014), and this paper determines their correspondence for the first time. Where useful in the ‘Discussion,’ we will combine their larval and adult names. For example, since larval MBON-d1 becomes adult MBON 11, it will be referred to as MBON-d1/MBON 11.
 
-## Metamorphosis of mushroom body compartments
+### Metamorphosis of mushroom body compartments
 
 The evolution of a metamorphic life history in insects required two changes: first, the modification of embryogenesis to produce a larval body; and second, metamorphosis itself –the transformation of that larval body into the insect’s mature form. Our focus has been on the second process of transforming the larval MB into its adult form, but our results also provide insight into the first issue, i.e., how embryonic development may have been altered to form a specialized larval MB.
 
@@ -115,7 +708,7 @@ The remaining seven larval compartments are incorporated into adult MB compartme
 
 From the perspective of the mature, adult MB, 10 of its 16 compartments have axon cores from the postembryonic born α'β' or αβ Kenyon cells. The α and α' compartments are supplied almost exclusively by postembryonic-born MBINs and MBONs (Figure 8, Table 2). By contrast, the β and β' compartments show a mixed picture: their input is provided exclusively by postembryonic-born PAM neurons (Figure 8A; Lee et al., 2020), while their known outputs are through embryonic-born neurons from the larval MB (Figure 4A).
 
-## Transmitter stability and shifts in compartments through metamorphosis
+### Transmitter stability and shifts in compartments through metamorphosis
 
 The input and output transmitters associated with MB compartments of the larval and adult systems are similar but not identical (Figure 9B). For the MBINs, the calyx receives octopaminergic input from the same neurons in the two stages. The adult calyx also receives a sparse serotonin input from a remodeled CSD neuron that projects from the contralateral antennal lobe (Roy et al., 2007). The compartments of the larval lobe system are primarily supplied by dopaminergic neurons, but the UVL and LVL compartments also have octopaminergic input (Saumweber et al., 2018). The octopamine input to the lobes is reduced in the adult MB, though, because OAN-e1/PPL1-SMP retracts completely from the larval UVL compartment and innervates the superior medial protocerebrum in the adult, and OAN-g1/OA-VPM3 reduces its MB input to a sparse innervation of the adult γ1 compartment (Busch et al., 2009).
 
@@ -131,7 +724,7 @@ The conservation of glutaminergic output of the distal medial lobe compartments 
 
 The compartments at the bases of the lobes and peduncle show some scrambling of neurotransmitter output through metamorphosis (Figure 9B). The output from the larval LP compartment is cholinergic while the corresponding adult PED compartment has GABAergic output. The opposite shift is seen in the LVL ( = γ2) compartment, which has GABAergic output in the larva but cholinergic output in the adult. As seen in Figure 9C, MBON-c1/MBEN-CA provides the cholinergic output from the larval LP compartment, but at metamorphosis it retracts from this compartment and dendrites from MBON-d1/MBON 11 invade the peduncle to provide the adult GABAergic output. The other compartmental shift in transmitter involves the larval LVL compartment; MBON-g1 and -g2 provide GABAergic output from this compartment, but at metamorphosis, they trans-differentiate to become central complex neurons. They are replaced by postembryonic-born MBON 12 (Figure 8C), which then provides cholinergic output for the adult γ2 and α'1 compartments. Thus, the compartmental shifts in output transmitters that occur at metamorphosis do not involve individual MBONs changing their transmitter. Rather, MBON recruitment, MBON loss, and MBONs shifting compartments combine to provide differences in transmitter landscapes in the two stages.
 
-## Circuit-level implications of changes through metamorphosis
+### Circuit-level implications of changes through metamorphosis
 
 The examples of DAN-d1/PPL1 03 and DAN-c1/PPL1 01 depicted in Figure 9C show that shifting partners through metamorphosis can dramatically alter a neuron’s function. In the larva, pairing of DAN-d1 stimulation with an odor induces short-term aversive conditioning, whereas a similar pairing with DAN-c1 does not (Eschbach et al., 2020; Weiglein et al., 2021). Their functions change in the adult, though, where DAN-c1/PPL1 01 becomes sufficient to induce short-term aversive conditioning to a paired odor (Aso et al., 2012; Das et al., 2014), while DAN-d1/PPL1 03 becomes involved in higher levels of memory consolidation (Owald et al., 2015). The metamorphic changes in the functioning of these two MBINs comes from changing their MBON partners. In its larval form, DAN-d1/PPL1 03 works through MBON-d1/MBON 11 in establishing short-term aversive conditioning. This MBON functions similarly in the adult (Aso et al., 2012; Perisse et al., 2016), but its adult input is provided by DAN-c1/PPL1 01 (Figure 9C) rather than DAN-d1/PPL1 03. DAN-d1/PPL1 03, in turn, instructs a new partner, MBON 12, a cholinergic, postembryonic-born neuron that provides feed-back excitation to DAN-d1/PPL1 03 and feeds across to a set of medial lobe MBONs whose activity promotes avoidance behavior, while their suppression promotes approach (Owald et al., 2015). These interactions provide a pathway in the adult to mediate memory re-consolidation and extinction (Felsenberg et al., 2017; McCurdy et al., 2021).
 
@@ -151,7 +744,7 @@ Experiments on aversive conditioning of Drosophila larvae suggested that the mem
 
 Our failure to find anatomical support in Drosophila for persistence of a memory trace from larva to adult should not be generalized to other insects with a larval stage. There is evidence that associative learning in moth caterpillars and beetle grubs can carry through to the adult (Blackiston et al., 2015; Blackiston et al., 2008). Larvae of butterflies and beetles have an extended embryonic development compared to Drosophila, and they hatch with a more complex larval nervous system. Consequently, more of the neuron types needed to make their MB are available to these embryos, likely making these insects less dependent on appropriating other neurons to temporarily function in the larval MB. A higher number of MB neurons persisting from the larva to adult increases the likelihood that a memory trace could persist from one stage to the other.
 
-## Metamorphic changes of the larval neurons
+### Metamorphic changes of the larval neurons
 
 Although there are examples of neurons that change their neuropeptides during postembryonic life (Veverytsa and Allan, 2012), our study did not find any neuron that changed its small molecule transmitter. The neurons did, though, show a great range of morphological changes. At one end of the spectrum were neurons like DAN-d1/PPL1 03 (Figure 3B) and MBON-j1/MBON 02 (Figure 4B), whose larval and adult forms are very similar. At the other end of the spectrum are MBIN-b/PAL-OL and MBON-g/LALs-NO2i.b (Figure 4B), which trans-differentiate into adult neurons that bear no similarity to their larval forms.
 
@@ -161,7 +754,7 @@ For other neurons, however, their larval form cannot be explained as a simple ar
 
 Cells that undergo trans-differentiation, like MBON-g/LALs-NO2i.b, show extensive pruning at the start of metamorphosis. Some neurons that have essentially the same morphology in larva and adult, like MBON-j1/MBON 04 and APL (Figure 6—figure supplement 1), also show extreme pruning. But others, like DAN-c1/PPL 01 or DAN-d1/PPL1 03 (Figure 5), show only moderate arbor loss. This variation reflects the fact that while pruning is due to a cell autonomous developmental program triggered by the steroid ecdysone (Lee et al., 2000; Schubiger et al., 1998), its trajectory may be guided in some cells by local interactions with pre- or postsynaptic targets. The importance of local interactions was experimentally examined for the pruning of APL (Mayseless et al., 2018). Blocking ecdysone action in APL inhibits its pruning response. The selective inhibition of ecdysone action in γ Kenyon cells, the main synaptic partners of APL, similarly inhibits γ cell pruning but also that of the untreated APL. Thus, while steroid signaling is needed to activate the neuron’s pruning program, the extent of neurite loss may depend on changes in synaptic partners. Similarly, for the MBINs, the larval LP and LA compartments retain γ neuron axons during pruning (Watts et al., 2003), and we see that their MBINs (DAN-c1 and DAN-d1) maintain most of their axonal tufts through the pruning period. By contrast, neurons of distal medial lobe compartments, which lose their γ neuron axons, prune extensively even though they grow back to a similar adult morphology (e.g., MBON j1/MBON 02; Figure 6—figure supplement 1).
 
-## Relationship of lineage to metamorphic fates of MB neurons
+### Relationship of lineage to metamorphic fates of MB neurons
 
 The MBINs and MBONs of the adult CNS are produced by 10–15% of the ~100 NBs that construct each brain hemisphere. Most of the neuron types that serve as temporary larval MB neurons are recruited from these same lineages. Although larval NBs (Sprecher et al., 2007) and adult lineages (Yu et al., 2013) have been mapped and described, the two maps have not been reconciled. Indeed, in most cases, we do not know exactly which embryonic brain NB produces which postembryonic lineage. Figure 11 presents the major embryonic and postembryonic lineages that produce MBINs and MBONs. The Kenyon cells are produced by the four MBps that begin dividing at mid-embryogenesis and only finish just before the emergence of the adult. Their earliest embryonic cells differ (Kunz et al., 2012), but the four NBs produce identical lineages after they begin Kenyon cell production. All the other neuroblasts make a small number of neurons embryonically, but then arrest and subsequently resume cycling late in the first larval instar. Their small size during the dormant period makes them difficult to track through this transition.
 
@@ -179,6 +772,222 @@ Members of various groups of MBONs are also related by lineage and by transmitte
 
 Besides the multicompartmental neuron, APL, the adult has four types of GABAergic MBONs (Aso et al., 2014). The β'1 compartment is innervated by eight MBON 10-type neurons. We do not know their origin although the large number of neurons in this group suggests that they are born during the postembryonic period. The remaining three types of GABAergic MBONs are embryonic-born and wholly or partially associated with γ compartments in both the larva and the adult. MBON-d1 comes from the DAL CM-1/2 group (Saumweber et al., 2018), the same group responsible for the PAM neurons. Of special interest, though, are MBONs 08 and 09 from the DAL-V2/3 group. These neurons have overlapping compartmental functions in the adult, but are identical in the larva, showing essentially the same synaptic connectivity within the MB (Eichler et al., 2017). This lineage produces four, rather than two, GABAergic MBONs in the larva, but the additional two larval cells (MBON-g1 and -g2) trans-differentiate into adult central complex neurons. The BLVa3/4 group that produces APL also produces two larval-specific GABAergic neurons, MBON-b1 and -b2, that become lateral horn neurons in the adult (Figure 4, Table 3).
 
+**Table 3.**
+ Comparison of transmitter expression in larval and adult forms of mushroom body output neurons (MBONs) and mushroom body input neurons (MBINs).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Neuron: larva/adult</th>
+      <th>Larval transmitter</th>
+      <th>Adult transmitter</th>
+      <th>Larval ref</th>
+      <th>Adult ref</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MBINs</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OAN-a1,a2/OA-VUM2a</td>
+      <td>Octopamine</td>
+      <td>Octopamine</td>
+      <td>Selcho et al., 2014</td>
+      <td>Busch et al., 2009</td>
+    </tr>
+    <tr>
+      <td>MBIN-b1,b2/PAL-OL</td>
+      <td>TH-positive</td>
+      <td>TH-positive</td>
+      <td>Eichler et al., 2017</td>
+      <td>Mao and Davis, 2009</td>
+    </tr>
+    <tr>
+      <td>DAN-c1/PPL1 01</td>
+      <td>Dopamine</td>
+      <td>Dopamine</td>
+      <td>Selcho et al., 2009; Eichler et al., 2017</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBIN-c1/PPL1 01</td>
+      <td>TH-positive</td>
+      <td>Dopamine</td>
+      <td>Eichler et al., 2017</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>DAN-d1/PPL1 03</td>
+      <td>Dopamine</td>
+      <td>Dopamine</td>
+      <td>Selcho et al., 2009; Eichler et al., 2017</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBIN-l1/TD_LAL &gt;cre</td>
+      <td>TH-positive</td>
+      <td>Unknown</td>
+      <td>Eichler et al., 2017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OAN-e1/PPL1-SMP</td>
+      <td>Octopamine</td>
+      <td>TH-positive</td>
+      <td>Eichler et al., 2017</td>
+      <td>Mao and Davis, 2009</td>
+    </tr>
+    <tr>
+      <td>DAN-f1/PPL1-bilat</td>
+      <td>Dopamine</td>
+      <td>TH-positive</td>
+      <td>Selcho et al., 2009; Eichler et al., 2017</td>
+      <td>Mao and Davis, 2009</td>
+    </tr>
+    <tr>
+      <td>DAN-g1/PPL1 02</td>
+      <td>Dopamine</td>
+      <td>Dopamine</td>
+      <td>Selcho et al., 2009; Eichler et al., 2017</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>OAN-g1/OA-VPM3</td>
+      <td>Octopamine</td>
+      <td>Octopamine</td>
+      <td>Selcho et al., 2014; Eichler et al., 2017</td>
+      <td>Busch et al., 2009</td>
+    </tr>
+    <tr>
+      <td>MBONs:</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-a1/MBON 29</td>
+      <td>Acetylcholine</td>
+      <td>Putative ACh</td>
+      <td>Eichler et al., 2017</td>
+      <td>Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-a2/MBON 22</td>
+      <td>Acetylcholine</td>
+      <td>Putative ACh</td>
+      <td>Eichler et al., 2017</td>
+      <td>Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-b1,b2/LH-LN</td>
+      <td>GABA</td>
+      <td>Putative GABA</td>
+      <td></td>
+      <td>Dolan et al., 2019</td>
+    </tr>
+    <tr>
+      <td>MBON-c1/MBE-Calyx</td>
+      <td>Acetylcholine</td>
+      <td>Unknown</td>
+      <td>Eichler et al., 2017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-d1/MBON 11</td>
+      <td>GABA</td>
+      <td>GABA</td>
+      <td></td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-d2/SMP&gt;IB</td>
+      <td>Unknown</td>
+      <td>Unknown</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-e2/MBON 03</td>
+      <td>Glutamate</td>
+      <td>Glutamate</td>
+      <td>Eichler et al., 2017</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-f2/MBON 30</td>
+      <td>Unknown</td>
+      <td>Putative glutamate</td>
+      <td></td>
+      <td>Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-g1,g2/LAL.s-NO2i.b</td>
+      <td>GABA</td>
+      <td>Unknown</td>
+      <td>Eichler et al., 2017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-h1/MBON 09</td>
+      <td>GABA</td>
+      <td>GABA</td>
+      <td>Eichler et al., 2017</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-h2/MBON 08</td>
+      <td>GABA</td>
+      <td>GABA</td>
+      <td>Eichler et al., 2017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-i1/MBON 04</td>
+      <td>Glutamate</td>
+      <td>Glutamate</td>
+      <td>Eichler et al., 2017</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-j1/MBON 02</td>
+      <td>Glutamate</td>
+      <td>Glutamate</td>
+      <td>Eichler et al., 2017</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-j2/MBON 05</td>
+      <td>Glutamate</td>
+      <td>Glutamate</td>
+      <td>Saumweber et al., 2018</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>MBON-k1/MBON 01</td>
+      <td>Glutamate</td>
+      <td>Glutamate</td>
+      <td>Eichler et al., 2017</td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+    <tr>
+      <td>APL/MB-APL</td>
+      <td>GABA</td>
+      <td>GABA</td>
+      <td></td>
+      <td>Aso et al., 2014; Li et al., 2020</td>
+    </tr>
+  </tbody>
+</table>
+
+_TH, tyrosine hydroxylase._
+
 The adult medial lobe compartments are supplied by seven types of glutamatergic MBONs (Aso et al., 2014). We do not know the origin of the adult MBON 07, but the six other types are embryonic born, with the majority coming from the DAM-d1 lineage (Saumweber et al., 2018). These six types provide sufficient glutamatergic MBONs to cover larval medial lobe function, with an additional type leftover, MBON-e2/MBON 03, which is shifted to the larval vertical lobe. It provides glutamatergic output from the larval vertical lobe, perhaps analogous to that provided by MBON 07 from the adult α1 compartment.
 
 As illustrated in Figure 12A, neuronal identity is established within a lineage by relative birth order of the GMCs (Kohwi and Doe, 2013; Doe, 2017; Miyares and Lee, 2019) and by symmetry-breaking to establish different fates of the two daughters of the GMC division. Relative birth order is encoded at the start of neurogenesis by the sequential expression of a series of transcription factors, Hunchback → kruppel → pdm → castor, in the neuroblast as it divides. The transcription factor expressed at the time of division is passed into the GMC and then into her two daughter cells, thereby providing a record of relative birth order. In Drosophila, an embryonic neuroblast typically reaches castor expression by the time of its arrest late in embryogenesis (Isshiki et al., 2001) and it typically resumes expressing castor when it reactivates in the larva (Maurange et al., 2008). The phenotypes of the two siblings arising from the GMC division are established through Notch signaling, which results in a Notch-ON (‘A’) fate and a Notch-OFF (‘B’) fate (Skeath and Doe, 1998). Successive cells sharing that same Notch state typically have similar properties, resulting in the neuroblast producing two hemilineages (A and B) of neurons of related form and function (Truman et al., 2010; Mark et al., 2021). The information on relative birth order and hemilineage status then acts through a set of terminal selector genes (Hobert and Kratsios, 2019) to produce a characteristic neuronal phenotype. Figure 12B and C speculates on how these two mechanisms might be exploited to alter a neuron’s phenotype for specialized use in the larva.
@@ -191,7 +1000,7 @@ Information on birth order may underlie the changes seen in the PPL1 cluster (Fi
 
 Another way of recruiting neurons to the larval MB could involve modification of Notch signaling during a GMC division (Figure 12C). Our data on the DL1 lineage show six examples of GMCs whose division results in one daughter being an MBON and the other being a central complex cell (Figure 8D). We do not know the actual relationship of MBON-g/LAL.s-NO2i.b to MBON-h/MBON 09 within DAL-v2/3 lineage, but we propose a relationship like that seen in the DL1 lineage, with one daughter becoming an MBON (08 or 09) and the other a central complex neuron (LAL.s-NO2i.b). In this scenario, the four neurons come from two successive, embryonic-born GMCs. In the larva, however, both siblings become MBONs. This larval similarity could arise from altering embryonic Notch signaling. Typically, the ‘Notch-ON’ phenotype of the A sibling is established through the Notch target Hey (Hairy/enhancer-of-split like with a Y), a bHLH-O transcription factor (Monastirioti et al., 2010). Interestingly, in the Kenyon cell lineages, Hey expression is independent of Notch (Monastirioti et al., 2010) making both siblings ‘Notch-ON’ and identical. Figure 12C suggests that a similar change in Notch state may have occurred for relevant GMCs of the DAL-v2/3 lineage, thereby allowing both siblings to express the MBON fate in the larva. The reestablishment of the normal Notch relationship at metamorphosis might then cause the MBON-gs to lose their MBON characteristic and to acquire their appropriate phenotypes as central complex neurons.
 
-## The generation of the larval mushroom body
+### The generation of the larval mushroom body
 
 The neuronal identity in the insect CNS is generated according to a spatial and temporal pattern that is highly conserved through evolution (Thomas et al., 1984). The earliest born neurons are often diverse sets of projection neurons that are the basis for the stereotyped tracts and commissures that characterize insect neuropils. Local interneurons are born later in lineages, and these become more similar as the lineage progresses (Lee et al., 2020). The evolution of the holometabolous larva involved a shortening of embryonic development, producing a simplified larval body form that could successfully compete for ephemeral food sources. This shortening of insect embryogenesis, though, had a profound impact on their neuroblast-based mode of neurogenesis, resulting in a neurogenic arrest before lineages were complete. Hence, not only do larvae hatch with fewer neurons than found in the mature nervous system, but they should have only the types of neurons characteristic of the early portion of each lineage. Such a truncation may produce mismatches between the neuron types that are needed and those that have been made, i.e., required late-born cell types may be missing and the larva may have early-born cell types that it does not need! Our analysis of the developmental relationship of the larval to the adult MB provides insight into how these mismatches are resolved.
 
@@ -209,20 +1018,580 @@ We suggest that a hypothetical ‘larval specifying factor(s)’ is involved in 
 
 ## Materials and methods
 
-## Fly stocks
+### Fly stocks
 
 Drosophila stocks were raised on standard corn meal molasses at either 25°C or room temperature. The genetic stocks used in this study are summarized in Tables 4 and 5. We initially examined both males and females for sexually dimorphic adult phenotypes. We found an obvious sexual dimorphism only for the MBIN-b1 and -b2 neurons. Beyond these neurons, then, we did not discriminate as to the sex of the animals that we used.
 
-## Flip-switch treatments
+**Table 4.**
+ Split GAL4 lines used to determine fates of larval mushroom body output neurons (MBONs) and mushroom body input neuron (MBINs).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell name</th>
+      <th>Split line</th>
+      <th>Split line</th>
+      <th>Split line</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MBIN-b1,b2</td>
+      <td>SS21716 [FS, TL)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DAN-c1</td>
+      <td>SS03066 (FS, TL)</td>
+      <td>MB586B (FS)</td>
+      <td>SS01702 (FS)</td>
+    </tr>
+    <tr>
+      <td>DAN-d1</td>
+      <td>MB328B (FS, TL)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBIN-l1</td>
+      <td>SS04484 (FS, TL)</td>
+      <td>SS01624 (FS)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OAN-e1</td>
+      <td>SS36923 (FS)</td>
+      <td>SS01958 (FS)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DAN-f1 (+DAN-c1)</td>
+      <td>MB065b (FS, TL)</td>
+      <td>MB145 (TL)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DAN-g1</td>
+      <td>SS01716 (FS, TL)</td>
+      <td>SS01755 (FS)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OAN-g1 (sVPMmx)</td>
+      <td>SS25844 (FS)</td>
+      <td>SS04268 (FS)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DAN-h1</td>
+      <td>SS01949 (NC,TL)</td>
+      <td>SS01696 (NC)</td>
+      <td>MB440B (NC)</td>
+    </tr>
+    <tr>
+      <td>DAN-i1</td>
+      <td>SS01949 (NC,TL)</td>
+      <td>MB196C (NC)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DAN-j1</td>
+      <td>SS01949 (NC,TL)</td>
+      <td>MB316B (NC)</td>
+      <td>MB340C (NC)</td>
+    </tr>
+    <tr>
+      <td>DAN-k1</td>
+      <td>SS01757 (NC,TL)</td>
+      <td>MB198B (NC)</td>
+      <td>SS00616 (NC)</td>
+    </tr>
+    <tr>
+      <td>MBON-a1</td>
+      <td>SS00867 (FS,TL)</td>
+      <td>SS01417 (FS)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-a2</td>
+      <td>SS02006 (FS)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-b1,b2</td>
+      <td>SS01708 (FS, TL)</td>
+      <td>SS04112 (FS)</td>
+      <td>SS01959 (FS)</td>
+    </tr>
+    <tr>
+      <td>MBON-c1</td>
+      <td>SS21789 (FS, TL)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-d1</td>
+      <td>SS01705 (FS,TL)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-d2</td>
+      <td>SS04231 (FS)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-e2</td>
+      <td>SS04559 (FS, TL)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-f2</td>
+      <td>SS04328 (FS, TL)</td>
+      <td>SS36248 (FS)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-g1,g2</td>
+      <td>SS02130 (FS, TL)</td>
+      <td>SS02121 (FS)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-h1,h2</td>
+      <td>SS01725 (FS, TL)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-i1</td>
+      <td>SS01771</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-j1</td>
+      <td>SS01973 (FS,TL)</td>
+      <td>SS01972 (FS)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-j2</td>
+      <td>SS00860 (FS,TL)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MBON-k1</td>
+      <td>SS01962 (FS)</td>
+      <td>SS01980 (TL)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>APL</td>
+      <td>SS01671 (FS, TL)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Bold lines are the best lines for each cell.FS, flip-switch immortalization; NC, no adult counterpart; TL, developmental timeline._
+
+**Table 5.**
+ Split GAL4 lines used in study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Split line</th>
+      <th>Target cell</th>
+      <th>AD</th>
+      <th>DBD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MB065b</td>
+      <td>DAN-f1 (+DAN-c1)</td>
+      <td>TH-p65ADZp in attP40</td>
+      <td>R72B05-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>MB145</td>
+      <td>DAN-f1 (+DAN-c1)</td>
+      <td>R15B01-p65ADZp in attP40</td>
+      <td>R72B05-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>MB 196C</td>
+      <td>DAN-i1</td>
+      <td>R58E02-p65ADZp in attP40</td>
+      <td>R36B06-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>MB198B</td>
+      <td>DAN-k1</td>
+      <td>R58E02-p65ADZp in attP40</td>
+      <td>R71D01-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>MB316B</td>
+      <td>DAN-j1</td>
+      <td>R58E02-p65ADZp in attP40</td>
+      <td>R93G08-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>MB328B</td>
+      <td>DAN-d1</td>
+      <td>R82C10-p65ADZp in attP40</td>
+      <td>R32F01-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>MB340C</td>
+      <td>DAN-j1</td>
+      <td>R93D10-p65ADZp in attP40</td>
+      <td>R12G04-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>MB440B</td>
+      <td>DAN-h1</td>
+      <td>R30G08-p65ADZp in attP40</td>
+      <td>R17D06-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>MB586B</td>
+      <td>DAN-c1</td>
+      <td>TH-p65ADZp in attP40</td>
+      <td>R72G06-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS00616</td>
+      <td>DAN-k1</td>
+      <td>71D01-p65ADZp in VK00027</td>
+      <td>17D06-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS00860</td>
+      <td>MBON-j2</td>
+      <td>w; R89G07-p65ADZ; MKRS/TM6B</td>
+      <td>R24E12-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS00867</td>
+      <td>MBON-a1</td>
+      <td>w; R93G12-p65ADZ; MKRS/TM6B</td>
+      <td>R52E12-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01417</td>
+      <td>MBON-a1</td>
+      <td>w; R52E12-p65ADZp</td>
+      <td>R93G12-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01624</td>
+      <td>MBIN-l1</td>
+      <td>w; R84D07-p65ADZ</td>
+      <td>R37G09-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01671</td>
+      <td>APL</td>
+      <td>R21D02-p65ADZp</td>
+      <td>R55D08-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01696</td>
+      <td>DAN-h1</td>
+      <td>76F05-p65ADZp in attP40</td>
+      <td>95H02-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01702</td>
+      <td>DAN-c1</td>
+      <td>VT054895-p65ADZ in attP40</td>
+      <td>R53C05-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01705</td>
+      <td>MBON-d1</td>
+      <td>R11E07-p65ADZp in attP40</td>
+      <td>R52H01-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01708</td>
+      <td>MBON-b1,b2</td>
+      <td>R12G03-p65ADZp in attP40</td>
+      <td>21D02-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01716</td>
+      <td>DAN-g1</td>
+      <td>R14E06-p65ADZp in attP40</td>
+      <td>R27G01-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01725</td>
+      <td>MBON-h1,h2</td>
+      <td>R20A02-p65ADZp in attP40; MKRS/TM6B</td>
+      <td>R28A10-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01755</td>
+      <td>DAN-g1</td>
+      <td>R46F09-p65ADZp</td>
+      <td>R14E06-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01757</td>
+      <td>DAN-k1</td>
+      <td>w; R48F09-p65ADZp; MKRS/ TM6B</td>
+      <td>R27A11-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01771</td>
+      <td>MBON-i1</td>
+      <td>w; 65A05-p65ADZ; MKRS/TM6B</td>
+      <td>14C08-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01949</td>
+      <td>DAN-h1, -i1, -j1</td>
+      <td>VT026700-p65ADZp in attP40</td>
+      <td>VT058464-ZpGDBD in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01958</td>
+      <td>OAN-e1</td>
+      <td>VT023826-p65ADZp in attP40</td>
+      <td>R75F01-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01959</td>
+      <td>MBON-b1,b2</td>
+      <td>VT027952-p65ADZp in attP40</td>
+      <td>R26A02-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01962</td>
+      <td>MBON-k1</td>
+      <td>VT033301-p65ADZp in attP40</td>
+      <td>R27G01-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01972</td>
+      <td>MBON-j1</td>
+      <td>VT057469-p65ADZp in attP40</td>
+      <td>12C11-ZpGdbd/ TM3 in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01973</td>
+      <td>MBON-j1</td>
+      <td>VT057469-p65ADZp in attP40</td>
+      <td>R18D09-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS01980</td>
+      <td>MBON-k1</td>
+      <td>VT020613-p65ADZp in attP40</td>
+      <td>VT033301-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS02006</td>
+      <td>MBON-a2</td>
+      <td>w; 93G12-p65ADZ; MKRS/TM6B</td>
+      <td>71E06-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS02121</td>
+      <td>MBON-g1,g2</td>
+      <td>R21D06-p65ADZp in attP40</td>
+      <td>R23B09-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS02130</td>
+      <td>MBON-g1,g2</td>
+      <td>w; R23B09-p65ADZp; MKRS/ TM6B</td>
+      <td>R21D06-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS03066</td>
+      <td>DAN-c1</td>
+      <td>VT054895-p65ADZ in attP40</td>
+      <td>VT057278-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS04112</td>
+      <td>MBON-b1,b2</td>
+      <td>VT027952-p65ADZp in attP40</td>
+      <td>HAV5; CyO/Sco; 21D02-ZpGDBD in attP2</td>
+    </tr>
+    <tr>
+      <td>SS04231</td>
+      <td>MBON-d2</td>
+      <td>VT032899-p65ADZp in attP40</td>
+      <td>HAV5; CyO/Sp; 87G02-ZpGDBD in attP2</td>
+    </tr>
+    <tr>
+      <td>SS04268</td>
+      <td>OAN-g1 (sVPMmx)</td>
+      <td>VT012639-p65ADZp in attP40</td>
+      <td>VT016127-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS04328</td>
+      <td>MBON-f2</td>
+      <td>VT033301-p65ADZp in attP40</td>
+      <td>VT029593-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS04484</td>
+      <td>MBIN-l1</td>
+      <td>R37G09-p65ADZp in attP40</td>
+      <td>VT007174-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS21716</td>
+      <td>MBIN-b1,b2</td>
+      <td>VT048835-p65ADZp in attP40</td>
+      <td>VT026664-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS21789</td>
+      <td>MBON-c1</td>
+      <td>VT050247-p65ADZp in attP40</td>
+      <td>VT050247-ZpGDBD in attP2</td>
+    </tr>
+    <tr>
+      <td>SS25844</td>
+      <td>OAN-g1 (sVPMmx)</td>
+      <td>VT040569-p65ADZp in attP40</td>
+      <td>VT061921-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS36248</td>
+      <td>MBON-f2</td>
+      <td>VT016795-p65ADZ in attP40</td>
+      <td>VT029593-ZpGdbd in attP2</td>
+    </tr>
+    <tr>
+      <td>SS36923</td>
+      <td>OAN-e1</td>
+      <td>VT054895-p65ADZ in attP40</td>
+      <td>HAV5; CyO/Sco; 75F01-ZpGDBD in attP2</td>
+    </tr>
+    <tr>
+      <td>SS04559</td>
+      <td>MBON-e2</td>
+      <td>w; 65A05-p65ADZ; MKRS/TM6B</td>
+      <td>VT045663-ZpGDBD in attP2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Flip-switch treatments
 
 The expression pattern seen in the late third- instar in stable spilt lines was maintained through metamorphosis using the flip-switch method described in Harris et al., 2015. Using a similar strategy of the gene-switch method (Roman et al., 2001), flippase was fused to the ligand-binding domain of the human progesterone receptor, rendering it dependent on progesterone or a progesterone mimic to move into the nucleus. Stable split lines were crossed to pJFRC48-13XLexAop2-IVS-myrtdTomato in su(Hw)attP8; Actin5Cp4.6>dsFRT>LexAp65 in su(Hw)attP5; pJFRC108-20XUAS-IVS-hPRFlp-p10 in VK00005/TM6.
 
 We used the progesterone mimic mifepristone (RU486, Sigma-Aldrich; #M8046) to cause translocation of the flippase to the nucleus where it could then flip-out the STOP cassette in the Actin-LexAp65 transgene. We used surface application of RU486 to food vials. Parents were allowed to lay eggs in a food vial for a few days, then transferred to a fresh vial. Approximately 4 days after transfer, 60 μl of an ~10 mM RU486 stock solution (10 mg RU486 dissolved in 2 ml 95% ethanol) was applied to the surface of the food. At 24 hr after treatment, any larvae that had wandered and/or pupariated were discarded to ensure that test animals had fed on RU486 for at least 24 hr. At 48 hr after treatment, the subsequent wandering larvae and pupae (which had all fed on RU486 for 24–48 hr during the L3 stage) were collected and transferred to an untreated food vial. These animals were then dissected in Schneider’s S2 culture medium as adults. This treatment results in constitutive LexA expression in any cells that express GAL4 during the L3 stage, but, because the RU486 persists at least partway through metamorphosis, neurons that start expressing in early to mid-metamorphosis also show up.
 
-## Lineage-targeted twin-spot MARCM
+### Lineage-targeted twin-spot MARCM
 
 Specific neuronal lineages were targeted using lineage-restricted drivers (Awasaki et al., 2014) to label sister clones with twin-spot MARCM (Yu et al., 2009). The Vnd-GAL4 driver permits targeting 18 fly central brain lineages, including the FLAa2 lineage (Lee et al., 2020); and stg14-GAL4 driver covers eight type II neuronal lineages, including the DL1 lineage (Wang et al., 2014). Twin-spot clones were induced at specific times after larval hatching and examined at the adult stage by immunostaining and confocal imagining, following published work (e.g., Yu et al., 2010).
 
-## Preparation and examination of tissues
+### Preparation and examination of tissues
 
 Tissues were dissected in phosphate-buffered saline (PBS, pH 7.8) and fixed in 4% buffered formaldehyde overnight at 4°C. Fixed tissues were rinsed in PBS-TX (PBS with 1% Triton X-100, Sigma), then incubated overnight at 4°C in a cocktail of 10% normal donkey serum (Jackson ImmunoResearch), 1:1000 rabbit anti-GFP (Jackson ImmunoResearch), 1:40 rat anti-N-Cadherin (Developmental Studies Hybridoma Bank), and 1:40 mouse anti-Neuroglian or a 1:200 dilution of mouse anti-FasII (both Developmental Studies Hybridoma Bank). For visualization of tdTomato, a 1:500 dilution of rabbit anti-DsRed (ClonTech) was substituted for the anti-GFP and the anti-Neuroglian was omitted. After repeated rinses with PBS-TX, tissues stained for GFP were incubated overnight at 4°C with 1:500 Alexa Fluor 488-conjugated donkey anti-rabbit, Alexa Fluor 594-conjugated donkey anti-mouse, and Alexa Fluor 649-conjugated donkey anti-rat (all from Invitrogen). For visualization of RFP, staining was with a 1:500 dilution of Alexa Fluor 594-conjugated donkey anti-rabbit and Alexa Fluor 649-conjugated donkey anti-rat. After exposure to secondaries, tissues were then washed in PBS-TX, mounted onto poly-lysine-coated coverslips, dehydrated through an ethanol series, cleared in xylenes, and mounted in DPX mountant (Sigma-Aldrich). Nervous systems were imaged on a Zeiss LSM 510 confocal microscope at ×40 with optical sections taken at 2 μm intervals. LSM files were contrast-enhanced as necessary and z-projected using ImageJ (http://rsbweb.nih.gov/ij/). Reagents are summarized in Table 6.
+
+**Table 6.**
+ Reagents used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Source</th>
+      <th>Catalog #</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mouse anti-bruchpilot</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Nc82-s</td>
+    </tr>
+    <tr>
+      <td>Rat anti-N cadherin</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>DN-Ex #8</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-neuroglian</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>BP 104</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-Fasciclin II</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>1D4</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-DsRed</td>
+      <td>ClonTech</td>
+      <td>#632496</td>
+    </tr>
+    <tr>
+      <td>Normal donkey serum</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>#017-000-121</td>
+    </tr>
+    <tr>
+      <td>AF488 donkey α-rabbit</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>#711-545-152</td>
+    </tr>
+    <tr>
+      <td>AF488 donkey α-mouse</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>#711-585-151</td>
+    </tr>
+    <tr>
+      <td>AF594 donkey α-rabbit</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>#711-585-152</td>
+    </tr>
+    <tr>
+      <td>AF594 donkey α-mouse</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>#711-585-151</td>
+    </tr>
+    <tr>
+      <td>AF649 donkey α-rat</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>#711-605-153</td>
+    </tr>
+    <tr>
+      <td>Mifepristone (RU-486)</td>
+      <td>Sigma-Aldrich</td>
+      <td>#M8046-100mg</td>
+    </tr>
+    <tr>
+      <td>S2 – Schneider’s Insect Medium</td>
+      <td>Sigma-Aldrich</td>
+      <td>#S01416</td>
+    </tr>
+    <tr>
+      <td>DPX mountant</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>#13512</td>
+    </tr>
+  </tbody>
+</table>

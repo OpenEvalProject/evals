@@ -32,23 +32,23 @@ This relationship between the individual scientist and the scientific community 
 
 A disclosure for establishing priority should involve a fair and complete transfer of knowledge from the scientist to the world-wide scientific enterprise. An acceptable method of disclosure will generally fulfill the following four criteria: (i) inclusion of all of the data along with a written interpretation of the data; (ii) a full description of the methodologies used, so that the work can be replicated and extended by other scientists; (iii) communication through a widely-recognized and stable venue (which must have mechanisms in place to ensure the permanence of the work); (iv) inclusion of a time stamp to indicate when the work was disclosed. What are the different options for disclosure?
 
-## Disclosure through a journal
+### Disclosure through a journal
 
 The publication of a paper in a peer-reviewed journal fulfills these four criteria. However, publishing in a journal also requires the scientist to hand over control of the timing of disclosure to the journal. Given the unpredictable nature of editorial rejection, peer-review, and the publication process, the delay between the submission of a paper and its publication can range from a few weeks to more than two years. Furthermore, except for a handful of journals (such as BMJ Open, F1000Research and PeerJ), there is no public record of the original submission and the ways in which the manuscript changed during the peer-review process. The lack of such a record precludes using the date of the original submission as the date of disclosure. In addition, for papers published in subscription journals, disclosure is limited to those scientists who have access to those journals. Thus, while we later argue for the value of journals in validation, in their current form they slow down and create inequities in how knowledge is transferred from the scientist to the world-wide scientific community.
 
-## Disclosure through a preprint server
+### Disclosure through a preprint server
 
 A preprint server allows a scientist to post a completed study on the internet and immediately disclose the work without access barriers (Vale, 2015). A preprint does not undergo peer review, although many servers ensure that the study is scientific in nature. The preprint server arXiv, established in 1991 by Paul Ginsparg and now operated by Cornell University, is widely used in the physics, mathematics, and computational sciences communities. In recent years similar servers has been established for the life sciences, including bioRxiv (which is run by the Cold Spring Harbor Laboratory), PeerJ Preprints, and the quantitative biology section of arXiv.
 
 A manuscript posted as a preprint could satisfy the four criteria listed above for disclosure, with certain qualifications. Since preprints are similar or identical in content to submitted journal manuscripts, criteria 1 and 2 can be met if the manuscript contains the necessary data, interpretation and details about methodologies. Whether criteria 3 and 4 are met depends upon the nature of preprint server, specifically whether it has the ability maintain a permanent record and whether it is highly visible in the relevant scientific communities.
 
-## Disclosure at a scientific meeting
+### Disclosure at a scientific meeting
 
 Several decades ago, presenting work at a scientific meeting was often accepted by colleagues in a field as a reasonable mechanism for establishing priority. In these earlier days, however, the entire field of molecular biology could gather at a Cold Spring Harbor Meeting, which is no longer possible. Furthermore, the amount of data and methodologies presented in a meeting talk or poster is usually insufficient to meet criteria 1 and 2 and is generally not retained in the form of a permanent record (criteria 4).
 
 While meetings fall short as a reliable mechanism for disclosure, we also recognize their substantial benefits. Meeting presentations allow scientists to get feedback on and subsequently improve their work, and are also outstanding training experiences for students and postdocs. Unfortunately, meetings are becoming increasingly filled with published or nearly published work. However, if preprints become widely accepted as a form of disclosure for the purposes of establishing priority, then more scientists might be more willing to share their work at meetings prior to journal publication.
 
-## Speed versus quality
+### Speed versus quality
 
 While the timing of disclosure is important for establishing priority, racing to be first at the expense of quality could spell disaster for a scientist, especially if he/she gets a reputation for rushing out low-quality work. Moreover, we believe that a strict, time-stamp-based “winner takes all” philosophy of priority (first articulated by Francois Arago, the secretary of the French Academy of Sciences, in the first half of the 19th century; Strevens, 2003; Merton, 1957) is not in the best interests of science. Moreover, it often falls short in practice as there are plenty of examples in which several groups have been co-credited for a particular discovery, even though their papers did not all appear at the same time. Furthermore, in the long run, the quality of the work is just as important as being first in the eyes of the scientific community.
 

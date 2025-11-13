@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.34039.001 The ability of the Chagas disease agent Trypanosoma cruzi to resist extended in vivo exposure to highly effective trypanocidal compounds prompted us to explore the potential for dormancy and its contribution to failed drug treatments in this infection. We document the development of non-proliferating intracellular amastigotes in vivo and in vitro in the absence of drug treatment. Non-proliferative amastigotes ultimately converted to trypomastigotes and established infections in new host cells. Most significantly, dormant amastigotes were uniquely resistant to extended drug treatment in vivo and in vitro and could re-establish a flourishing infection after as many as 30 days of drug exposure. These results demonstrate a dormancy state in T. cruzi that accounts for the failure of highly cytotoxic compounds to completely resolve the infection. The ability of T. cruzi to establish dormancy throws into question current methods for identifying curative drugs but also suggests alternative therapeutic approaches.
+The ability of the Chagas disease agent Trypanosoma cruzi to resist extended in vivo exposure to highly effective trypanocidal compounds prompted us to explore the potential for dormancy and its contribution to failed drug treatments in this infection. We document the development of non-proliferating intracellular amastigotes in vivo and in vitro in the absence of drug treatment. Non-proliferative amastigotes ultimately converted to trypomastigotes and established infections in new host cells. Most significantly, dormant amastigotes were uniquely resistant to extended drug treatment in vivo and in vitro and could re-establish a flourishing infection after as many as 30 days of drug exposure. These results demonstrate a dormancy state in T. cruzi that accounts for the failure of highly cytotoxic compounds to completely resolve the infection. The ability of T. cruzi to establish dormancy throws into question current methods for identifying curative drugs but also suggests alternative therapeutic approaches.
 
 ## Introduction
 
@@ -41,7 +41,27 @@ The anti-T. cruzi drugs BZN and NFX are normally dosed in animals (including hum
 
 While these experiments demonstrate that BZN treatment rapidly reduces T. cruzi numbers by 10- to 1000-fold over just a few days, we know from previous studies that such short-term treatments, and indeed treatments as long as 60 days, often fail to completely clear T. cruzi infection (Bustamante et al., 2014). This disconnect implicates a mechanism by which T. cruzi can resist highly effective trypanocidal drugs for an extended period of time. To investigate whether dormant/non-replicating forms of T. cruzi might be present in infected hosts and possibly contributing to this requirement for long treatment regimens, we used in situ labeling with nucleotide analog 5-ethynyl-2’-deoxyuridine (EdU) to determine the replication status of parasites within tissues of infected mice. We first established the in vivo EdU labeling protocol in acutely infected mice with high tissue parasite load, finding that the vast majority of amastigotes incorporated EdU during a 24 hr period after EdU injection (Figure 2—figure supplement 1). We then applied this protocol to mice with established chronic T. cruzi infections and again found that most intracellular amastigotes incorporated EdU over the 24–72 hr of exposure. However a small fraction of intracellular amastigotes failed to show evidence of replication over the 72 hr after EdU injection (Figure 2—figure supplement 2). Interestingly, these apparently non-replicating amastigotes were within host cells in which the other amastigotes were clearly replicating, suggesting that there is a heterogeneity of amastigotes in infected cells. Since the low parasite load in chronically infected mice makes it highly unlikely that a single host cell is infected by more than one trypomastigote, this heterogeneity in replication appears to establish within host cells from a single infecting parasite Figure 2.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/34039/elife-34039-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental protocol for assessing proliferation of amastigotes in established in vivo infections. C57BL/6 mice were infected with 2.5 × 105 trypomastigotes of colombiana T. cruzi strain co-expressing fluorescent (Tdtomato) and luminescent (luciferase) reporter proteins. Sixty days post-infection, mice were injected i.p. with EdU and sacrificed 24, 48 or 72 hr after injection. Mice were perfused with PBS and luciferin and ex vivo bioluminescence imaging of selected tissues were performed to identify parasite foci. Luciferase-positive thick tissue sections were clarified and Tdtomato + parasites and EdU incorporation was detected by confocal microscopy. Colocalization of Tdtomato (red) and EdU (green) positive signals identifies proliferating amastigotes (yellow nuclei) from (B) skeletal and (C) adipose tissue. Arrows indicate rare red only (non-proliferating) amastigotes. Scale bars, 5 μm. HCN = EdU positive host cell nuclei. Results are representative of three independent experiments using groups of 2–3 mice.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/34039/elife-34039-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A and B) The protocol used for the detection of proliferating amastigotes in chronic infections (Figure 2A) was standardized in acutely infected IFN-γ knockout mice and in immunocompetent C57BL/6. Mice were infected with 2.5 × 105 trypomastigotes of colombiana strain co-expressing Tdtomato and luciferase reporters. Fifteen days post-infection, mice were EdU-pulsed by ip. injection and 24 hr later, euthanized and transcardially perfused with luciferin. Whole mice ex vivo luciferase imaging was used to identify luciferase-positive thick tissue sections. Consecutive imaging and sectioning was performed to identify the luciferase-bright tissue regions. Tissue sections were clarified using CUBIC protocols and EdU incorporation was detected by click chemistry. Overlay of Td-tomato (red) and EdU (green) signals revealed the proliferating amastigotes (yellow nuclei). Scale bars, 5 μm. Results are representative of two independent experiments with groups of 6 mice.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/34039/elife-34039-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** C57B/6 mice were infected with 2.5 × 105 trypomastigotes of the colombiana T. cruzi strain co-expressing Tdtomato and luciferase reporter proteins. Sixty days post-infection, mice were injected with EdU and sacrificed (A) 24, (B) 48 or (C and D) 72 hr after injection. Mice were perfused with PBS and luciferin. Ex vivo tissue-specific bioluminescence imaging identified foci of persisting parasites and luciferase-positive thick tissue sections were clarified and EdU incorporation was detected by confocal microscopy in (A and B) skeletal muscle and (C and D) adipose tissue. Yellow nuclei revealed the co-localization of Tdtomato and EdU signals on replicating amastigotes. Arrows indicate non-proliferating amastigotes (red). Scale bars, 5 μm. HCN, host cell nuclei. Results are representative of three independent experiments using groups of 2–3 mice.
+
 To examine in greater detail the replication pattern of T. cruzi in host cells, we moved to in vitro systems wherein large numbers of infected cells can be readily monitored longitudinally during infection and the continuous exposure to EdU can be assured. As in the in vivo infection, a small fraction of amastigotes in host cells in vitro consistently failed to take up EdU, even when exposed for up to 72 hr of the ~96 hr intracellular replication phase (Figure 3). One possible reason for the failure to replicate is that some amastigotes might die within host cells (perhaps as a result of lethal damage to DNA, defective cytokinesis, or unequal dispersal of chromosomes/organelles during prior replication, among other possible reasons). However monitoring for apoptosis of amastigotes in host cells revealed this process to be extremely rare (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/34039/elife-34039-fig3-v2.jpg)
+
+**Figure 3.:** Nearly confluent monolayers of Vero cells were infected with trypomastigotes of colombiana, CL, Brazil or ARC-0704 T. cruzi strain. Twelve hours after infection, cultures were washed and incubated with EdU (100 µM) diluted in fresh RPMI medium. EdU was detected after an additional 24, 48 or 72 hr culture period. DAPI staining (blue) allows the identification of EdU-negative amastigotes (arrows) from the EdU-positive (green). HCN, host cell nuclei. Scale bars, 5 μm. Results are representative of three independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/34039/elife-34039-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Trypomastigotes from the T. cruzi colombiana strain were used to infect monolayers of Vero cells. Infected cells were fixed, permeabilized and the TUNEL assay was used to detect DNA fragmentation in intracellular amastigotes 72 hr post-infection. DAPI staining was used to identify DNA-containing organelles (nuclei and kinetoplast). (A) DNase-treated cells were used as TUNEL-positive controls. (B and C) Arrows show examples of the 2–3 apoptotic amastigotes detected upon scanning approximately 1 × 106 infected host cells. Scale bars, 5 μm. HCN, host cell nuclei. Results are representative of two independent experiments.
 
 Incorporation of EdU into DNA can impact DNA replication and thus cell division (Zhao et al., 2013). To rule out a role for EdU itself in inhibition of parasite replication, we used the cell division tracker dyes carboxyfluorescein succinimidyl ester (CFSE) and CellTrace Violet as a second method to monitor parasite replication in host cells. Both dyes couple to cellular components and are equally distributed to daughter cells during cytokinesis and with vigorous replication, the dyes are eventually diluted beyond the point of detection. T. cruzi trypomastigotes uniformly stain with either dye and upon infection of host cells, replicating amastigotes dilute the dye, while a fraction of amastigotes remain dye positive, indicating again the limited replication of a subset of amastigotes (Figure 4A and B). Amastigotes remaining dye positive after 72–96 hr were also EdU-negative (Figure 4C).
 
@@ -57,9 +77,41 @@ By continuing to monitor infected host cells over time, we observed that amastig
 
 The detection of a small subpopulation of T. cruzi amastigotes undergoing minimal replication through 2 rounds of host cell invasion suggests that the cessation of replication can at a minimum happen early after host cell invasion, but did not preclude a more dynamic pattern of transitioning between replication and dormancy during the infection cycle in host cells. In order to better understand the flexibility and heterogeneity of replication within host cells, we monitored the early replication of T. cruzi in host cells by time-lapse video, using violet dye dilution to help mark those parasites undergoing minimal cell division within the same cell where other parasites are actively dividing (Sup Videos 1 and 2).These videos also indicate other characteristics of non-dividing amastigotes that were apparent in other still images, for example that non-dividing amastigotes are similar in size to recently divided amastigotes and are generally Tdtomato-dim, expressing low levels of the Tdtomato fluorescent protein relative to rapidly dividing amastigotes.
 
+![Video 1.](https://cdn.elifesciences.org/articles/34039/elife-34039-video1.mp4.jpg)
+
+**Video 1.:** Cultures of HFF cells in 96 well glass bottom plates were infected with Tdtomato-expressing Cell Trace Violet labeled trypomastigotes in a ratio of 10:1 (parasites: host cells). After a5hrincubation, cultures were washed to remove extracellular parasites and imaged every 15 min for 48hr. Time lapse videos were generated spanning from 15:45 to 31:30hr. Note the dye-retaining amastigote (blue) remaining undivided while other amastigotes in the same cells (bright orange amastigotes) actively proliferate.
+
+![Video 2.](https://cdn.elifesciences.org/articles/34039/elife-34039-video2.mp4.jpg)
+
+**Video 2.:** Cultures of Vero cells in 96 well glass bottom plates were infected with Tdtomato-expressing CellTrace Violet labeled trypomastigotes in a ratio of 5:1 (parasites: host cells). After a5hrincubation, cultures were washed to remove extracellular parasites and imaged every 15 min for 48hr. Time lapse videos were generated spanning from 9:30 to 47:15hr. Note the dye-retaining amastigote (blue amastigote denoted by white asterisk at the beginning of Video 1) remaining undivided while other amastigotes in the same cell (bright orange amastigotes) actively proliferate.
+
 These results show conclusively that within host cells infected with T. cruzi, a subset of amastigotes cease replication while others continue rapid division, eventually filling the host cell with amastigotes. The obvious question remaining is ‘Does this cessation of replication play a critical role in the failure of drugs to effectively clear T. cruzi infection?’ More specifically, are these replication-arrested parasites resistant to drug treatment? To directly address these questions, we infected mice with Tdtomato-expressing and CellTrace Violet-stained trypomastigotes and confirmed 2 days post-infection the presence in adipose tissue of parasites displaying both of these markers (Figure 6A and B). As expected based on previous experiments, over the span of the 2 day infection, several strongly violet-positive parasites are obvious in cells along with a larger number of parasites in which the violet dye was faint or not detectable, indicating both slow or non-replicating and actively replicating progeny of the infecting trypomastigotes. On days 2 and 3, similarly infected mice were treated with BZN or left untreated and on day 4, examined for the presence of parasites. Remarkably, in the BZN-treated mice, the only parasites detected were brightly violet and present at 1 and occasionally two per infected cell (Figure 6B and Figure 6—figure supplement 1). Actively replicating parasites (violet-negative) were not detected in the BZN-treated mice while a much larger number of violet-negative and less abundant violet-positive parasites were observed in the non-treated mice. A resumption of parasite replication was evident in treated mice 9 days after the last of the 2 BNZ treatment doses, demonstrating that dormant, and therefore drug resistant amastigotes, could also resume division in vivo. To further address the drug resistance and recovery potential of dormant amastigotes in vivo, we repeated these experiments in interferon-gamma deficient mice, which lack the ability to develop immune control of T. cruzi infection. Non-replicating amastigotes developing in these mice survive a minimum of 20 days of BZN treatment (Figure 6—figure supplement 2A) and again resume replication upon cessation of BZN treatment (Figure 6C) and eventually spread extensively in these animals (Figure 6—figure supplement 2B,C).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/34039/elife-34039-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic of experimental protocol. (B) C57BL/6 mice were infected i.p. with 5 × 106 Td-Tomato-expressing and CellTrace Violet-labeled trypomastigotes and orally treated with BZN (100 mg/kg/day) on day 2 and 3 post-infection or left untreated. At the indicated time points, mice were euthanized and adipose tissue was excised, fixed and processed for confocal imaging. Images are representative of three independent experiments with 3–4 animals per group. (C) Infection with 1.5 × 107 Td-Tomato-expressing and CellTrace Violet-labeled trypomastigotes was established for 6 days in IFN-g deficient mice before initiation of daily treatment with BZN (100 mg/kg) for 12 days. Peritoneal adipose tissue was harvested from mice on day 6 (prior to treatment), at the end of the 12 day treatment period on day 18 post-infection, or 14 days after the end of treatment (32 dpi). The peritoneal adipose tissue sample from each mouse is ~0.3 g of tissue spread over a surface of ~1.6 cm2 when mounted for microscopic analysis. In tissue harvested on day 6 of infection (prior to treatment), infected cells can be observed within 15 min of scanning. Following 12 days of treatment this same amount of tissue must be exhaustively scanned for up to 3 hr per sample to detect between 4 and 5 infected cells per sample. Images are representative of two independent experiments with four animals each.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/34039/elife-34039-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** C57BL/6 mice were infected with CellTrace Violet-labeled trypomastigotes of the colombiana strain. Mice were BZN-treated (by the oral route, 100 mg/kg/day) on day 2 and 3 post-infection. On day four post-infection, mice were euthanized and adipose tissue was collected, fixed and processed for confocal imaging. Representative images of CellTrace Violet-positive amastigotes within adipocytes detected after BZN treatment. Images are representative of three independent experiments with 3–4 animals per group.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/34039/elife-34039-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** IFN-g deficient mice were infected with 1.5 × 107 Tdtomato-expressing and CellTrace Violet-labeled colombiana strain trypomastigotes and orally treated with BZN (100 mg/kg/day) starting at 6 days post-infection for 12 or 20 days. (A) Adipose tissue cells with abundant amastigotes, including non-replicating (CellTrace Violet+) are evident on day 6 (prior to treatment) while only a minimal number of only CellTrace Violet + amastigotes are detected at the end of the 20 day treatment period. (B) Robust systemic spread of parasites remaining after 12 days of BNZ treatment detected by whole animal in vivo live imaging (luciferase) and confocal microscopy (Tdtomato) of adipose tissue, skeletal muscle and gut (C) at 28 days after the end of treatment. Images are representative of three independent experiments with 3–4 animals per group.
+
 Tracking very low numbers of persisting parasites in vivo in drug-treated, infected animals is quite difficult, so we returned to in vitro systems to examine the resistance of T. cruzi to drug treatment over longer time periods and the association between drug resistance and dormancy. Here we infected host cells 24 hr previously with Tdtomato-expressing and CellTrace Violet-labeled parasites and then added BZN at 10X the IC50 for up to 30 days of culture before washing out the drug. Parasite recovery following drug treatment/washout was monitored globally by whole-well fluorescence detection of the Tdtomato reporter, and at the individual cell level by microscopy (Figure 7). In the absence of treatment, parasite numbers peak near the time of the completion of the first round of intracellular replication (~day four after infection). In all cases, even following 30 days of high dose BZN treatment, parasites can rebound and begin replication after BZN is removed. This rebound can often be observed in the whole well Tdtomato fluorescence readings (Figure 7A), and in all cases, low numbers of parasites with a range of violet dye retention are evident in cultures during drug treatment (Figure 7B), as well as resumption of low level to vigorous replication after drug washout (Figure 7C). The resistance of T. cruzi to drug treatment due to amastigote dormancy was not restricted only to BNZ, as members of a class of newly developed oxaborale compounds currently under preclinical development also failed to overcome dormancy-dependent resistance in vitro (Figure 7—figure supplement 1). Further, T. cruzi lines rebounding after 30 days of in vitro exposure to BZN had not developed stable resistance to the compound as the IC50 of BZN on this population remained unchanged from that of the pre-exposed population (Figure 7—figure supplement 2).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/34039/elife-34039-fig7-v2.jpg)
+
+**Figure 7.:** Vero cell cultures were infected with Tdtomato-expressing trypomastigotes of colombiana or CL strains (5:1 ratio parasites:cells) 24 hr prior to addition of BNZ (10 uM). At various times post-treatment, BNZ was removed from the cultures and the subsequent rebound of parasites surviving the drug treatment was determined by whole well fluorescence intensity reading (A) and in vitro live imaging (B, C). The retention of the CellTrace Violet label during the course of BNZ treatment indicates that the BNZ-resistant parasites are dormant (B) and capable of replication after drug washout (C). Results are representative of three independent experiments with six replicates per condition. Arrow to inset in (A) shows reading of individual replicate wells.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/34039/elife-34039-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Vero cell cultures were infected with Tdtomato-expressing trypomastigotes (5:1 ratio parasites:cells) 24 hr prior to addition of oxyaboral AN14353 (300 nM). At various times post-treatment, AN14353 was removed from the cultures and the subsequent rebound of parasites surviving the drug treatment was determined by whole well fluorescence intensity reading. Results are representative of two independent experiments with six replicates per condition.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/34039/elife-34039-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Trypomastigotes harvested from infected Vero cultures pre-treatment of after treatment with BZN for 30 days were used to measure the IC50 for BZN. Assay performed once with three replicates per condition.
 
 Thus, T. cruzi amastigotes regularly and spontaneously cease replication and in that dormant state are resistant to otherwise highly effective trypanocidal drugs for extended periods of time. These dormant parasites are capable of re-initiating replication after >30 days of drug exposure and perhaps much longer after the initiation of dormancy.
 
@@ -85,50 +137,228 @@ The biggest practical message from the current study is that dormancy in the mam
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>Trypanosoma cruzi</td>
+      <td></td>
+      <td>RRID:NCBITaxon:5693</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Trypanosma cruzi, colombiana)</td>
+      <td>TdTomato and luciferase coexpresors; Luciferase- and Tdtomato-expressing parasites.</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Cotransfected with pTREX-Luciferase and pTREX-Td-tomato plasmids.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. cruzi, colombiana)</td>
+      <td>Colombiana strains expresing luciferase</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Transfected with the pTREX-Luciferase plasmid.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. cruzi, CL3)</td>
+      <td>CL-3 strain expresing luciferase</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Transfected with the pTREX-Luciferase plasmid.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. cruzi, ARC0704)</td>
+      <td>ARC-0704 strain expresing luciferase.</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Transfected with the pTREX-Luciferase plasmid.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (T. cruzi, colombiana)</td>
+      <td>TdTomato expresing parasites.</td>
+      <td>this paper</td>
+      <td>NA</td>
+      <td>Transfected with pTREX-Tdtomato plasmid.</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>VERO 76</td>
+      <td>American Type Culture Collection (ATCC)</td>
+      <td>CRL 1587; RRID:CVCL_0603</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>Human Foreskin Fibroblasts (HFF)</td>
+      <td>other</td>
+      <td>N/A</td>
+      <td>HFF cells were a gift from Dr. D. Etheridge (University of Georgia)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTREX-Luciferase (plasmid)</td>
+      <td>Canavaci et al., 2010. PMID: 20644616</td>
+      <td>NA</td>
+      <td>Addgene 48337</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTREX-Tdtomato (plasmid)</td>
+      <td>Canavaci et al., 2010. PMID: 20644616</td>
+      <td>NA</td>
+      <td>Addgene 47975</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT EdU Imaging Kit</td>
+      <td>ThermoFisher Scientific, Waltham, MA</td>
+      <td>C10337</td>
+      <td>Cell proliferation detection kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT TUNEL Alexa Fluor 647 imaging assay</td>
+      <td>ThermoFisher Scientific, Waltham, MA</td>
+      <td>C10247</td>
+      <td>Cell apoptosis detection kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellTrace Violet fluorescent dye</td>
+      <td>ThermoFisher Scientific, Waltham, MA</td>
+      <td>C34557</td>
+      <td>Cell proliferation detection kit</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CFSE fluorescent dye</td>
+      <td>ThermoFisher Scientific, Waltham, MA</td>
+      <td>C34554</td>
+      <td>Cell proliferation detection kit</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-luciferin</td>
+      <td>PerkinElmer, Waltham, MA</td>
+      <td>122799</td>
+      <td>luciferase substract reagent</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CUBIC clarifying solution</td>
+      <td>other</td>
+      <td>NA</td>
+      <td>25 % N,N,N′,N′-Tetrakis (2-hydroxypropyl)ethylenediamine;25% urea; 15% Triton X-100 and distilled water (Susaki et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Benznidazole (N-benzyl-2-nitro-1-imidazolacetamida)</td>
+      <td>LAFEPE medicamentos. Brazil; Aesica Pharmaceutical, United Kingdom</td>
+      <td>BZN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI stain 4’,6-diamidino-2-phenylindole dihydrochloride</td>
+      <td>ThermoFisher Scientific, Waltham, MA</td>
+      <td>122799</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Living Image software v4.3</td>
+      <td>Xenogen, Alameda, CA</td>
+      <td>RRID:SCR_014247</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad 5.0 Prism v5.0</td>
+      <td>GraphPad Software, La Jolla California USA,</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other: Mice strains</td>
+      <td>C57BL/6NCr mice</td>
+      <td>Charles River Laboratories</td>
+      <td>C57BL/6NCrl - strain code 027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>IFN-γ knockout mice</td>
+      <td>The Jackson Laboratory</td>
+      <td>B6.129S7-Ifngtm1Ts/J - stock No 002287</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>SKH-1 mice</td>
+      <td>other</td>
+      <td>NA</td>
+      <td>The SKH-1 ‘hairless’ mice backcrossed to C57BL/6 were a gift from Dr. Lisa DeLouise (University of Rochester).</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 C57BL/6NCr and IFN-γ knockout (B6.129S7-Ifngtm1Ts/J) mice were purchased from Charles River Laboratories and The Jackson Laboratory respectively. The SKH-1 ‘hairless’ mice backcrossed to C57BL/6 were a gift from Dr. Lisa DeLouise (University of Rochester). All mice were maintained in the University of Georgia Animal Facility under specific pathogen-free conditions. This study was carried out in strict accordance with the Public Health Service Policy on Humane Care and Use of Laboratory Animals and Association for Assessment and Accreditation of Laboratory Animal Care accreditation guidelines. The protocol was approved by the University of Georgia Institutional Animal Care and Use Committee.
 
-## Parasites and host cells
+### Parasites and host cells
 
 To generate bioluminescent parasites, CL-3, ARC-0704 and Colombiana T. cruzi strains were transfected with the pTREX-Luciferase-Neo plasmid, generated by cloning of the firefly luciferase gene from the Luciferase-pcDNA3 plasmid (gift from William Kaelin; Addgene plasmid # 18964) into the multi-cloning site of the pTREX plasmid (Vazquez and Levin, 1999). Colombiana bioluminescent parasites were transfected with pTREX-Td-tomato plasmid (Canavaci et al., 2010) to generate parasites co-expressing bioluminescent and fluorescent markers. Transfection and selection conditions were as previously described (Peng et al., 2014). For single-cell cloning, parasites were deposited into a 96-well plate to a density of 1 cell/well using a MoFlow XDP (Beckman Coulter, Hialeah, FL) cell sorter and cultured in 250 μl LDNT supplemented with 300 mg/ml G418. Selected clones were screened for luciferase activity as previously described (Lewis et al., 2014) and a highly luciferase-expressing clone was selected for in vivo experiments. To obtain metacyclic forms, epimastigotes were submitted to stress in triatome artificial urine (TAU) medium for 2 hr. Then, parasites were incubated in complemented TAU medium (TAU3AAG))(Bourguignon et al., 1998) for 6–7 days, at which time transformation to metacyclic trypomastigote was maximal. Vero cells were obtained from the American Type Culture Collection (Manassas, VA) and cultured in RPMI 1640 medium with 10% fetal bovine serum. Human foreskin fibroblast (HFF) cells were a gift from Dr. Drew Etheridge (University of Georgia) and were maintained in DMEM media supplemented with 10% fetal bovine serum. Cultures were maintained in a humid atmosphere containing 5% CO2 at 37°C and tested periodically for mycoplasma contamination.
 
-## In vivo imaging
+### In vivo imaging
 
 Luciferase- and Tdtomato-expressing parasites were used to assess in vivo parasite replication and clearance in mice. For bioluminescent detection, mice were injected via an intraperitoneal (i.p.) route with D-luciferin (150 mg/kg; PerkinElmer, Waltham, MA) and anesthetized using 2.5% (vol/vol) gaseous isofluorane in oxygen prior to imaging on an IVIS 100 imager (Xenogen, Alameda, CA) as previously described (Canavaci et al., 2010). Quantification of bioluminescence and data analysis was performed using Living Image v4.3 software (Xenogen).
 
-## In vitro infection and EdU detection
+### In vitro infection and EdU detection
 
 EdU incorporation into amastigote DNA was detected using the Click-iT EdU Imaging Kit (ThermoFisher Scientific, Waltham, MA) following manufacturer specifications. Briefly, Vero cells (1 × 105 cells) were plated onto sterile glass-bottom 35 mm petri dishes and incubated overnight ON at 37°C, 5% CO2, in RPMI-1640 medium plus 10% fresh fetal bovine serum (FBS). Trypomastigotes of the colombiana, CL, Brazil or ARC-0704 strains were used to infect dishes at a ratio of 10 parasites to one host cell. After ON infection, cell cultures were washed with RPMI and incubated with 100 µM EdU for 24, 48 or 72 hr prior to fixation, staining and mounting in ProLong Diamond anti-fade mounting solution (ThermoFisher Scientific, Waltham, MA) containing 4’,6-diamidino-2-phenylindole dihydrochloride (DAPI) to stain nuclear and kinetoplast DNA. Images were acquired using a laser scanning confocal microscope LSM 710 attached to an EXFO Xcite series 120Q lamp and a digital Zeiss XM10 camera.
 
-## Ex vivo bioluminescence imaging
+### Ex vivo bioluminescence imaging
 
 C57BL/6 mice were infected with 2.5 × 105 colombiana T. cruzi strain trypomastigotes co-expressing fluorescent (Tdtomato) and luminescent (luciferase) proteins. Sixty days post-infection, mice were injected i.p. with 10 mM EdU and sacrificed 12, 48 or 72 hr later. Before bioluminescence imaging, mice were transcardially perfused with 1x PBS and then with D-luciferin (0.3 mg/ml) diluted in 1x PBS. Tissue-specific ex vivo luciferase imaging was performed with tissues soaked in D-luciferin (0.3 mg/ml). Luciferase positive thick tissue sections were excised and consecutive imaging and sectioning were performed to reduce non-luminescent area and increase chances to localize amastigote infected tissues. Selected tissue sections were washed in 1x PBS and fixed with cold 4% PFA. After 4°C ON fixation, tissues were washed with 1x PBS and immersed in CUBIC clarifying solution (Susaki et al., 2015) (25 % N,N,N′,N′-Tetrakis (2-hydroxypropyl) ethylenediamine; 25% urea; 15% Triton X-100 and distilled water) with shaking at 37°C during 2 days. After clarification, EdU incorporation on intracellular amastigotes was detected as previously described.
 
-## Tissue microscopy
+### Tissue microscopy
 
 For selection of parasite-containing tissue areas for further imaging in non-drug treated mice, luciferase-positive thick tissue sections were excised and consecutive imaging and sectioning were performed to obtain small tissue sections with the brightest luminescent foci. Tissue sections were fixed and clarified as described above, and EdU incorporation on intracellular amastigotes was detected by click chemistry as described above. Tissue sections were placed into sterile glass-bottom 35 mm petri dishes, mounted using ProLong Diamond anti-fade solution and prepared for confocal imaging using a Zeiss LSM 710 attached to an EXFO Xcite series 120Q lamp and a digital Zeiss XM10 camera. In the case of abdominal adipose tissue from drug-treated mice, wherein parasites were extremely scarce, both unfixed and PFA-fixed, non-clarified tissues were scanned for parasites using a 40X objective.
 
-## DNA fragmentation detection using TUNEL assays
+### DNA fragmentation detection using TUNEL assays
 
 DNA fragmentation indicative of parasite death was assessed by TUNEL (Terminal deoxynucleotidyl transferase-mediated dUTP Nick End Labeling) assay according to manufacturer's protocol (Click-iT TUNEL Alexa Fluor 647 imaging assay; ThermoFisher Scientific, Waltham, MA). Briefly, Vero cells (1 × 105) were infected with 1 × 106 colombiana strain trypomastigotes for approximately 12 hr. Seventy-two hours post-infection, cells were washed twice in PBS, fixed with 4% PFA and then washed again in PBS. After permeabilization with 0.2% Triton X-100, the cells were incubated with TdT reaction cocktail and washed twice with 3% BSA. Finally, cells were incubated with click-iT reaction buffer and washed with 3% BSA. Parasites were pre-treated for 10 min at room temperature with 10 IU/mL DNase I prior to the TUNEL for positive control. A negative control was performed in the absence of the terminal transferase. Cells were mounted using ProLong Diamond anti-fade mounting solution containing DAPI for parasite nuclei visualization. Results were quantified counting about 200 cells in duplicate from three independent experiments.
 
-## Labelling of parasites with fluorescent dyes
+### Labelling of parasites with fluorescent dyes
 
 Cell suspensions of T. cruzi trypomastigotes were labelled with CellTrace Violet fluorescent dye (CellTrace Cell Proliferation Kit, ThermoFisher Scientific, Waltham, MA) and CFSE following manufacturer’s instructions. Briefly, 2 × 106 trypomastigotes were incubated for 20 min at 37°C with 10 μM of CellTrace Violet or for 5 min with 5 μM of CFSE, protected from light. Unbound dye was quenched by the addition of five volumes of 10% FBS-RPMI or one volume of FBS respectively. After washing in fresh media parasites were used for infection of cell cultures or mice.
 
-## Live cell imaging
+### Live cell imaging
 
 Human foreskin fibroblasts (HFF) or Vero cells were seeded in 96 well glass bottom plates (Corning Life Sciences, NY) or 8 well 1 µ-slides (Ibidi, Fitchburg, WI) and infected with Tdtomato-expressing colombiana or CL strain parasites labeled with CellTrace Violet in ratios of 2:1 to 10:1 (parasites:host cells). For time-lapse video of amastigote replication, extracellular trypomastigotes were removed by washing and plates were placed in humid chamber with CO2 and imaged at 40X magnification every 15 min for 48 hr in a Lionheart FX imager (BioTek, Winooski, VT). Images and time lapse videos were analyzed with the Gene5 software (BioTek). Live cell imaging of cultures at different times post-infection and after drug addition or removal were performed in a Cytation5 cell imager (BioTek) or a Delta Vision II Microscope System (GE Healthcare Biosciences, PA).
 
-## Flow cytometry and cell sorting
+### Flow cytometry and cell sorting
 
 Vero cell cultures were infected with CellTrace Violet-labeled Tdtomato-expressing parasites of colombiana or CL strain (5:1 ratio parasites:host cells) and incubated for 6 days at 37C in 5% CO2. Free trypomastigotes released to the supernatant were harvested and imaged using an ImageStream Mark II (MilliporeSigma, MA). CellTrace Violet- Tdtomato- positive parasites from those supernatants were sorted using a MoFlo XDP (Beckman Coulter, FL) and placed in fresh Vero cell cultures that were periodically monitored and imaged using a Cytation five imager (BioTek).
 
-## In vitro drug treatment and washout assays
+### In vitro drug treatment and washout assays
 
 Gamma-irradiated Vero cells at 25,000/well were infected with 150,000 colombiana or CL strain Tdtomato-luciferase trypomastigotes in each well of a 96 well plate (Greiner Bio-one) for 24 hr. After removing non-infecting trypomastigotes, 10 μM BZN (approx. 10X IC50) in complete RPMI media was added. The six replicate wells for each condition were read using BioTek Synergy Hybrid reader and images were taken by BioTek Cytation 5. At the indicated times post-treatment, BZN was removed, cultures washed and fresh medium without BZN added. Spent medium was removed and fresh medium with or without BZN were added weekly. Additional (15,000/well) Vero cells were added biweekly. The relative in vitro resistance to drug treatment by T. cruzi lines was determined as previously described (Canavaci et al., 2010), and IC50 was calculated using the GraphPad PRISM 5.0 software.
 
-## Statistical analysis
+### Statistical analysis
 
 The Mann-Whitney U tests and one-way variance analysis (ANOVA) of the GraphPad Prism version 5.0 software were used. Values ​​are expressed as means ± standard error of mean of at least three separate experiments. P values equal to or minor that 0.05 were considered significant.

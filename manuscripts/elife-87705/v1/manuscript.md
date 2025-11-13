@@ -11,21 +11,100 @@
 
 ### Affiliations
 
-1. https://ror.org/043mz5j54 Department of Pharmaceutical Chemistry, University of California San Francisco, San Francisco San Francisco United States
-2. https://ror.org/043mz5j54 Department of Psychiatry, University of California, San Francisco San Francisco United States
-3. https://ror.org/043mz5j54 Hypoxia Research Laboratory, University of California San Francisco, San Francisco San Francisco United States
-4. https://ror.org/043mz5j54 Center for Health Equity in Surgery and Anesthesia, University of California San Francisco, San Francisco San Francisco United States
-5. https://ror.org/043mz5j54 Anesthesia and Perioperative Care, University of California San Francisco, San Francisco San Francisco United States
+1. Department of Pharmaceutical Chemistry, University of California San Francisco, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+2. Department of Psychiatry, University of California, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+3. Hypoxia Research Laboratory, University of California San Francisco, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+4. Center for Health Equity in Surgery and Anesthesia, University of California San Francisco, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
+5. Anesthesia and Perioperative Care, University of California San Francisco, San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
 ## Abstract
 
-The ability to sense and respond to changes in cellular oxygen levels is critical for aerobic organisms and requires a molecular oxygen sensor. The prototypical sensor is the oxygen-dependent enzyme PHD: hypoxia inhibits its ability to hydroxylate the transcription factor HIF, causing HIF to accumulate and trigger the classic HIF-dependent hypoxia response. A small handful of other oxygen sensors are known, all of which are oxygen-dependent enzymes. However, hundreds of oxygen-dependent enzymes exist among aerobic organisms, raising the possibility that additional sensors remain to be discovered. This review summarizes known and potential hypoxia sensors among human O 2 -dependent enzymes and highlights their possible roles in hypoxia-related adaptation and diseases.
+The ability to sense and respond to changes in cellular oxygen levels is critical for aerobic organisms and requires a molecular oxygen sensor. The prototypical sensor is the oxygen-dependent enzyme PHD: hypoxia inhibits its ability to hydroxylate the transcription factor HIF, causing HIF to accumulate and trigger the classic HIF-dependent hypoxia response. A small handful of other oxygen sensors are known, all of which are oxygen-dependent enzymes. However, hundreds of oxygen-dependent enzymes exist among aerobic organisms, raising the possibility that additional sensors remain to be discovered. This review summarizes known and potential hypoxia sensors among human O2-dependent enzymes and highlights their possible roles in hypoxia-related adaptation and diseases.
 
 ## Introduction
 
 In aerobic organisms, the dioxygen molecule (O2) is essential for many biochemical pathways, particularly as the final electron acceptor for bioenergetics. Hypoxia—conditions of decreased O2 availability—is both an essential stimulus for normal development and a pathological trigger of cellular dysfunction and eventual cell death for humans and other mammals (Bickler and Buck, 2007). To maintain O2 homeostasis, aerobic organisms have developed diverse cellular mechanisms for sensing and responding to alterations in O2 level. For multiorgan organisms, the term ‘hypoxia’ is often loosely used to describe decreased O2 levels. More precisely, the term ‘tissue hypoxia’ is meaningful when used in comparison to the baseline for the tissue. Physiological tissue O2 (physoxia, the typical range of function), physiological hypoxia (reduction or fluctuation of pO2 into a range at which adaptation is possible), and hypoxia with pathological impact (pO2 at which cellular injury and death occur) are often cited as ~5, 2, and 1%, respectively, for humans (McKeown, 2014). However, these values can vary widely across tissues and even within a tissue and are affected by tissue-level regulation (e.g., blood flow) and cellular effects (e.g., changes in metabolic state) (Table 1; McKeown, 2014; Ortiz-Prado et al., 2019; Carreau et al., 2011; Jagannathan et al., 2016; Cigognini et al., 2016; Donovan et al., 2010; Mas-Bargues et al., 2019). Here, we focus on O2 sensing in humans, using the term ‘hypoxia’ to denote decreased O2 level relative to physoxia, that is, encompassing both physiological hypoxia and hypoxia with pathological impact.
+
+**Table 1.**
+ Physiological O2 distribution in different organs/tissues*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Organ/tissue</th>
+      <th>%O2</th>
+      <th>pO2 (mmHg)</th>
+      <th>Concentration(μM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Ambient air</td>
+      <td>21</td>
+      <td>160</td>
+      <td>206</td>
+    </tr>
+    <tr>
+      <td>Alveoli</td>
+      <td>14</td>
+      <td>104</td>
+      <td>134</td>
+    </tr>
+    <tr>
+      <td>Arterial blood</td>
+      <td>13</td>
+      <td>100</td>
+      <td>129</td>
+    </tr>
+    <tr>
+      <td>Kidney</td>
+      <td>4–9.5</td>
+      <td>30–73</td>
+      <td>39–94</td>
+    </tr>
+    <tr>
+      <td>Liver</td>
+      <td>4–7</td>
+      <td>30–54</td>
+      <td>39–69</td>
+    </tr>
+    <tr>
+      <td>Heart</td>
+      <td>2–6</td>
+      <td>15–46</td>
+      <td>19–59</td>
+    </tr>
+    <tr>
+      <td>Brain</td>
+      <td>3–5</td>
+      <td>23–39</td>
+      <td>29–50</td>
+    </tr>
+    <tr>
+      <td>Small intestine</td>
+      <td>2–9</td>
+      <td>15–69</td>
+      <td>19–89</td>
+    </tr>
+    <tr>
+      <td>Large intestine</td>
+      <td>0–6</td>
+      <td>0–46</td>
+      <td>0–59</td>
+    </tr>
+    <tr>
+      <td>Bone marrow</td>
+      <td>1.5–7</td>
+      <td>11–54</td>
+      <td>14–69</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The O2 levels in different organs are adjusted from references Burmester and Hankeln, 2014; Lecomte et al., 2005; Hatefi, 1985; Zaccara et al., 2019; Ball et al., 2014 and the partial pressure and concentration are calculated according to references Ortiz-Prado et al., 2019; Carreau et al., 2011; Jagannathan et al., 2016; Cigognini et al., 2016; Donovan et al., 2010; Mas-Bargues et al., 2019; Place et al., 2017._
 
 Discovery of the PHD-HIF-pVHL pathway was pivotal to understanding hypoxia responses and has been reviewed extensively (Majmundar et al., 2010; Kaelin and Ratcliffe, 2008; Ivan and Kaelin, 2017; Schofield and Ratcliffe, 2004). Briefly, in normoxia, prolyl hydroxylase domain proteins (PHDs) use O2 as a substrate to hydroxylate prolines on the transcription factor hypoxia-inducible factor α subunit (HIFα, i.e., HIF1α or HIF2α). The hydroxylated form of HIFα is recognized by the E3 ubiquitin ligase pVHL (von Hippel-Lindau protein), which promotes degradation of HIFα. By contrast, in hypoxia, the decreased catalytic activity of PHDs results in decreased hydroxylation and hence decreased pVHL recognition of HIFα, promoting the accumulation of HIFα. HIFα then translocates to the nucleus and, as a heterodimer with HIF1β, regulates transcription of a broad range of target genes. Thus, PHDs directly sense a decrease in the availability of molecular O2 and transduce this signal to downstream effectors.
 
@@ -33,7 +112,7 @@ What defines a molecular hypoxia sensor? In engineering, a sensor is a device th
 
 Strong candidates for hypoxia sensors include O2-dependent enzymes, which by definition meet criterion 1. These enzymes constitute a mechanistically, structurally, and biologically diverse group of proteins. There are a number of reviews on the enzymology (Islam et al., 2018; Palfey and McDonald, 2010; Decker and Solomon, 2005; Jasniewski and Que, 2018; Biringer, 2020; Ferguson-Miller and Babcock, 1996; Finney et al., 2014; Bassan et al., 2003; Guengerich, 2007; Ponnaluri et al., 2013; Ivanov et al., 2010; Daff, 2010; Wikström et al., 2018; Huang and Groves, 2018; Romero et al., 2018; Sono et al., 1996; Martinez and Hausinger, 2015; Roberts and Fitzpatrick, 2013; Itoh, 2006; Solomon et al., 2001; Bugg, 2001; Abu-Omar et al., 2005), biological function (Schofield and Ratcliffe, 2004; Islam et al., 2018; Paton and Ntambi, 2009; Shmakova et al., 2014; Danielson, 2002; Donkó et al., 2005; Bundred et al., 2018; Fletcher and Coleman, 2020; Kuhn et al., 2015; Zhuang et al., 2015; Kooistra and Helin, 2012; Mashima and Okuyama, 2015; Wu and Zhang, 2017; Johansson et al., 2014; Daubner et al., 2011; Fong and Takeda, 2008; Markolovic et al., 2015), and evolution (Danielson, 2002; Taylor and McElwain, 2010; Chandrasekharan and Simmons, 2004; Wilks, 2002) of individual subclasses of O2-dependent enzymes. Here, we provide a global map of human O2-dependent enzymes in potential hypoxia sensing. We first survey the broad categories and then discuss specific members that are known or speculated hypoxia sensors. Finally, we investigate the links between O2-dependent enzymes and hypoxia-related evolutionary adaptations and diseases.
 
-## O2-dependent enzymes as hypoxia sensor candidates
+### O2-dependent enzymes as hypoxia sensor candidates
 
 We start by providing background and taxonomies for considering the three basic ‘sensor’ requirements discussed above.
 
@@ -41,41 +120,504 @@ First, O2-dependent enzymes directly interact with O2 molecules as one of the su
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/87705/elife-87705-fig1-v1.jpg)
 
-**Figure 1.:** 2-dependent enzymes (dioxygenases, monooxygenases, and oxidases) and the reactions they catalyze.Dioxygenases catalyze the insertion of both oxygen atoms of the dioxygen molecule into substrates. Monooxygenases catalyze the insertion of one oxygen atom of the dioxygen molecule into a substrate and the other oxygen atom is reduced to H2O. Oxidases catalyze the reduction of dioxygen to H2O or H2O2.
+**Figure 1.:** Dioxygenases catalyze the insertion of both oxygen atoms of the dioxygen molecule into substrates. Monooxygenases catalyze the insertion of one oxygen atom of the dioxygen molecule into a substrate and the other oxygen atom is reduced to H2O. Oxidases catalyze the reduction of dioxygen to H2O or H2O2.
 
 Second, O2-dependent enzymes have diverse mechanisms for utilizing O2 as a substrate, resulting in different sensitivities to O2 concentrations. Sensitivity is determined, in part, by the binding affinity of O2 with the enzyme’s catalytic center. Most O2-dependent enzymes (177/221) use, or are speculated to use, O2-binding metal ions at their catalytic centers. Factors affecting the O2-binding affinity include the metal center (iron or copper in humans), ligands (enzyme residues and other substrates) for the metal center, and the environment of the catalytic pocket. The other O2-dependent enzymes with known non-metal catalytic centers (37/221) utilize flavin adenine dinucleotide (FAD) or flavin mononucleotide (FMN) to activate O2. For these enzymes, the accessibility of O2 to FAD or FMN at the catalytic center affects the binding affinity. Dioxygenases, monooxygenases, and oxidases can be further subdivided by their catalytic centers (Table 2). Ultimately, these mechanisms affect the threshold at which enzymatic activities are saturated with O2, thus determining whether the enzyme’s activities are strongly affected by physiological-range hypoxia.
+
+**Table 2.**
+ Categories of O2-dependent enzymes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Subcategory by catalytic center</th>
+      <th>Metal species at catalytic center</th>
+      <th>Ligands for the metal species at catalytic center (cofactor/substrate and enzyme residues)</th>
+      <th>Number of enzymes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Dioxygenase</td>
+      <td>2-OG-dependent dioxygenase</td>
+      <td>Fe</td>
+      <td>2-OG, His, His, Asp/Glu</td>
+      <td>59</td>
+    </tr>
+    <tr>
+      <td>Heme-dependent dioxygenase</td>
+      <td>Fe</td>
+      <td>Heme, His</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Lipoxygenase</td>
+      <td>Fe</td>
+      <td>His, His, His, Ile, His/Asa/Asn/none</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>Fe</td>
+      <td>His, His, His/Asp/Glu*</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Monooxygenase</td>
+      <td>Heme-dependent monooxygenase</td>
+      <td>Fe</td>
+      <td>Heme, Cys/His/Glu</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td>Non-Heme Fe-dependent monooxygenase</td>
+      <td>Fe</td>
+      <td>His, His, His/Asp/Glu*</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>Cu-dependent monooxygenase</td>
+      <td>Cu</td>
+      <td>His, His, Met</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Flavin-dependent monooxygenase</td>
+      <td>None (uses flavin)</td>
+      <td>N/A</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Others†</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Oxidase</td>
+      <td>Heme-copper</td>
+      <td>Fe and Cu</td>
+      <td>His, His, His for Cu; Heme and His for Fe</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Fe-dependent oxidase</td>
+      <td>Fe</td>
+      <td>Varies</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Cu-dependent oxidase</td>
+      <td>Cu</td>
+      <td>Varies</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>Flavin-dependent oxidase</td>
+      <td>None (uses flavin)</td>
+      <td>N/A</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Others†</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>5</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Substrates/cofactor ligands for this category varies for each member depending on the reaction it catalyzes.†Members in this category are not fully studied._
 
 Third, O2-dependent enzymes regulate diverse cellular processes: (1) oxidative phosphorylation is responsible for mitochondrial ATP production and cellular survival (Hatefi, 1985); (2) post-translational modifications (hydroxylation, demethylation, or thiol oxidation) of proteins can regulate protein conformation, stability, and activity (Schofield and Ratcliffe, 2004; Bundred et al., 2018; Fletcher and Coleman, 2020; Kooistra and Helin, 2012; Johansson et al., 2014); (3) hydroxylation and demethylation of DNA/RNA can regulate DNA damage repair, epigenetic modifications, and transcription/translation (Wu and Zhang, 2017; Zaccara et al., 2019); (4) metabolism of amino acids and lipids can maintain cellular hemostasis and regulate cellular pathways through signaling molecules (Paton and Ntambi, 2009; Kuhn et al., 2015; Mashima and Okuyama, 2015; Daubner et al., 2011; Chandrasekharan and Simmons, 2004; Ball et al., 2014); and (5) metabolism of xenobiotics can regulate drug clearance and detoxification (Danielson, 2002; Poulos and Johnson, 2005). Typically, dioxygenases have macromolecules as substrates and regulate cellular processes at a transcriptional or translational level (Schofield and Ratcliffe, 2004; Islam et al., 2018; Bundred et al., 2018; Fletcher and Coleman, 2020; Kooistra and Helin, 2012; Wu and Zhang, 2017; Johansson et al., 2014; Hancock et al., 2015), while monooxygenases and oxidases often have small molecules as substrates and function in metabolism (Romero et al., 2018; Paton and Ntambi, 2009; Danielson, 2002; Daubner et al., 2011). Together, O2-dependent enzymes are integral to a plethora of physiological processes in aerobic animals.
 
 Candidate hypoxia sensors can be identified among the O2-dependent enzymes, in part by the binding affinity between O2 and the enzyme as quantified by the O2 Km value, which suggests the level at which the enzyme is most sensitive to changes in O2 (Kaelin and Ratcliffe, 2008; Schofield and Ratcliffe, 2004; Shmakova et al., 2014; Hancock et al., 2015; Wilson et al., 2020; Holdsworth and Gibbs, 2020; Baik and Jain, 2020). (The Km value, also known as the Michaelis constant, is the concentration of a substrate at which an enzymatic reaction rate is 50% of the maximum reaction rate. A larger Km value reflects lower O2 affinity.) Importantly, the measured Km value is affected by the measurement method, for example, mass spectrometry vs. isotope assays. Besides the Km value, other cellular factors such as the concentration and conformation of the enzyme, as well as concentrations of other substrates or products, also affect the net enzymatic activity and hence the downstream effects of the enzyme. Beyond cellular-level effects, whether an O2-dependent enzyme functions as a hypoxia sensor in vivo can depend on the tissue pO2 context (Table 1). Taken together, whether an O2-dependent enzyme functions as a hypoxia sensor in vivo depends not only on the O2 Km value but also on multiple other factors.
 
-## O2-dependent enzymes that are known or potential hypoxia sensors
+### O2-dependent enzymes that are known or potential hypoxia sensors
 
 Below, we classify dioxygenases, monooxygenases, and oxidases into different subgroups based on their catalytic centers and discuss known (Figure 2A) and potential (Figure 2B) hypoxia sensors in each subgroup.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/87705/elife-87705-fig2-v1.jpg)
 
-**Figure 2.:** 2-dependent enzymes.(A) Known hypoxia sensors and their corresponding cellular responses to hypoxia. Decreased O2 concentration inhibits activities of hypoxia sensors in O2-dependent enzyme category and results in changes downstream signaling pathway as the cellular response to hypoxia. PHD catalyzes the hydroxylation at two prolyl residues of HIFα, and then the hydroxylated HIFα is recognized and ubiquitylated by pVHL. Following ubiquitilation, HIFα is degraded by proteasome. During hypoxia, activity of PHD is diminished and HIFα is stabilized. Accumulated HIFα translocates to the nucleus, and in dimerization with HIF1β, recruits other transcriptional coactivators (p300, CBP), binds with the hypoxia response elements (HREs) and activates the transcription of HIF target genes. The products of these genes participate in adaptation to hypoxia including metabolic shift, EPO production, vasculogenesis, etc. FIH catalyzes the asparaginyl hydroxylation of HIFα, and this hydroxylation inhibits HIFα from recruiting transcriptional coactivators. Compared with PHD, FIH is inhibited by more severe hypoxia. KDM3A catalyzes the demethylation of K244 monomethylation of PGC-1α, which is a transcriptional coactivator and regulates mitochondrial biogenesis. Under normoxia, PGC-1α binds with transcriptional factor NRF1/2 and activates the transcription of nucleus-encoded mitochondrial genes. Under hypoxia, the inhibited activity of KDM3A leads to accumulation of K224 monomethylation at PGC-1α. The maintained monomethylation at K224 of PGC-1α reduces its binding ability with NRF1/2 and results in decreased mitochondrial biogenesis. KDM5A catalyzes the demethylation at Lys4 of histone H3 (H3K4). Hypoxia inhibits its activity and results in the hypermethylation at H3K4, which is responsible for the gene activation. Similarly, hypoxia also inhibits KDM6A, and results in the hypermethylation at its target site H3K27 and gene repression. TET methylcytosine dioxygenases (TET1, TET2, and TET3) catalyze conversion of DNA 5-methylcytosine (5-mC) to the 5-hydroxymethylcytosine (5hmC) and mediates DNA demethylation. Hypoxia reduces TET activity and causes DNA hypermethylation. Together, these proteins sense hypoxia and lead to transcription alteration by chromatin reprogramming. KDM5C catalyzes the demethylation of ULK1 R170me2s, which regulates ULK1 activity. Under normoxia, R170me2s of ULK1 is removed by KDM5C and ULK1 remains inactive. Under hypoxia, the inhibited activity of KDM5C leads to accumulation of ULK1 R170me2s, and results in ULK1 activation and autophagy induction. ADO catalyzes the thiol oxidation at the N terminal Cys of a protein, which then triggers its degradation through N-degron pathway. Hypoxia inhibits the activity of ADO and leads to the stabilization of its substrates. One of the identified ADO substrates is RSG4/5, regulators of the G protein signaling. Stabilization of RGS4/5 results in the modulation of G-protein-coupled calcium ion signaling. (B) Candidate O2 sensors with reduced enzymatic activities in hypoxia. Hypoxia leads to: inhibition of KDM4A and KDM4B and accumulated hypermethylation at H3K9; inhibition of SCD and increased cellular fatty acid saturation; inhibition of IDO and changes of immunoregulation; inhibition of PAM and reduced protein amidation; in vitro inhibition of RIOX1 and RIOX2 which are responsible for ribosome hydroxylation; in vitro inhibition of AOC3; RNA hypermethylation possibly through inhibition of FTO/ALKBH5; potential inhibition of DUOX1 and DUOX2. PHD: prolyl hydroxylase domain-containing protein; HIF: hypoxia-inducible factor; pVHL: von Hippel-Lindau protein E3 ligase; CBP, cyclic-AMP response element binding protein binding protein; EPO: erythropoietin; FIH: factor inhibiting HIF1; KDM: JmjC (Jumonji C) domain lysine demethylase; PGC: peroxisome proliferator-activated receptor gamma coactivator; NRF: nuclear respiratory factor; TET: ten-eleven translocation methylcytosine dioxygenases; ADO: cysteamine (2-aminoethanethiol) dioxygenase; RGS: regulators of G protein signalling; SCD: stearoyl-CoA desaturases; IDO: indoleamine 2,3-dioxygenase; AOC: amine oxidase, copper containing; PAM: peptidylglycine α-amidating monooxygenase; RIOX: ribosomal oxygenase, FTO: fat mass and obesity-associated protein; ALKBH: AlkB homolog; DUOX: dual oxidase.
+**Figure 2.:** (A) Known hypoxia sensors and their corresponding cellular responses to hypoxia. Decreased O2 concentration inhibits activities of hypoxia sensors in O2-dependent enzyme category and results in changes downstream signaling pathway as the cellular response to hypoxia. PHD catalyzes the hydroxylation at two prolyl residues of HIFα, and then the hydroxylated HIFα is recognized and ubiquitylated by pVHL. Following ubiquitilation, HIFα is degraded by proteasome. During hypoxia, activity of PHD is diminished and HIFα is stabilized. Accumulated HIFα translocates to the nucleus, and in dimerization with HIF1β, recruits other transcriptional coactivators (p300, CBP), binds with the hypoxia response elements (HREs) and activates the transcription of HIF target genes. The products of these genes participate in adaptation to hypoxia including metabolic shift, EPO production, vasculogenesis, etc. FIH catalyzes the asparaginyl hydroxylation of HIFα, and this hydroxylation inhibits HIFα from recruiting transcriptional coactivators. Compared with PHD, FIH is inhibited by more severe hypoxia. KDM3A catalyzes the demethylation of K244 monomethylation of PGC-1α, which is a transcriptional coactivator and regulates mitochondrial biogenesis. Under normoxia, PGC-1α binds with transcriptional factor NRF1/2 and activates the transcription of nucleus-encoded mitochondrial genes. Under hypoxia, the inhibited activity of KDM3A leads to accumulation of K224 monomethylation at PGC-1α. The maintained monomethylation at K224 of PGC-1α reduces its binding ability with NRF1/2 and results in decreased mitochondrial biogenesis. KDM5A catalyzes the demethylation at Lys4 of histone H3 (H3K4). Hypoxia inhibits its activity and results in the hypermethylation at H3K4, which is responsible for the gene activation. Similarly, hypoxia also inhibits KDM6A, and results in the hypermethylation at its target site H3K27 and gene repression. TET methylcytosine dioxygenases (TET1, TET2, and TET3) catalyze conversion of DNA 5-methylcytosine (5-mC) to the 5-hydroxymethylcytosine (5hmC) and mediates DNA demethylation. Hypoxia reduces TET activity and causes DNA hypermethylation. Together, these proteins sense hypoxia and lead to transcription alteration by chromatin reprogramming. KDM5C catalyzes the demethylation of ULK1 R170me2s, which regulates ULK1 activity. Under normoxia, R170me2s of ULK1 is removed by KDM5C and ULK1 remains inactive. Under hypoxia, the inhibited activity of KDM5C leads to accumulation of ULK1 R170me2s, and results in ULK1 activation and autophagy induction. ADO catalyzes the thiol oxidation at the N terminal Cys of a protein, which then triggers its degradation through N-degron pathway. Hypoxia inhibits the activity of ADO and leads to the stabilization of its substrates. One of the identified ADO substrates is RSG4/5, regulators of the G protein signaling. Stabilization of RGS4/5 results in the modulation of G-protein-coupled calcium ion signaling. (B) Candidate O2 sensors with reduced enzymatic activities in hypoxia. Hypoxia leads to: inhibition of KDM4A and KDM4B and accumulated hypermethylation at H3K9; inhibition of SCD and increased cellular fatty acid saturation; inhibition of IDO and changes of immunoregulation; inhibition of PAM and reduced protein amidation; in vitro inhibition of RIOX1 and RIOX2 which are responsible for ribosome hydroxylation; in vitro inhibition of AOC3; RNA hypermethylation possibly through inhibition of FTO/ALKBH5; potential inhibition of DUOX1 and DUOX2. PHD: prolyl hydroxylase domain-containing protein; HIF: hypoxia-inducible factor; pVHL: von Hippel-Lindau protein E3 ligase; CBP, cyclic-AMP response element binding protein binding protein; EPO: erythropoietin; FIH: factor inhibiting HIF1; KDM: JmjC (Jumonji C) domain lysine demethylase; PGC: peroxisome proliferator-activated receptor gamma coactivator; NRF: nuclear respiratory factor; TET: ten-eleven translocation methylcytosine dioxygenases; ADO: cysteamine (2-aminoethanethiol) dioxygenase; RGS: regulators of G protein signalling; SCD: stearoyl-CoA desaturases; IDO: indoleamine 2,3-dioxygenase; AOC: amine oxidase, copper containing; PAM: peptidylglycine α-amidating monooxygenase; RIOX: ribosomal oxygenase, FTO: fat mass and obesity-associated protein; ALKBH: AlkB homolog; DUOX: dual oxidase.
 
-## Dioxygenases
+### Dioxygenases
 
 Based on their catalytic centers, the dioxygenase family members can be further classified into 2-OG-dependent dioxygenase, heme-dependent dioxygenases, lipoxygenases, and other dioxygenases (Table 2).
 
-## 2-Oxyglutarate (2-OG)-dependent dioxygenases
+#### 2-Oxyglutarate (2-OG)-dependent dioxygenases
 
 In humans, there are ~60 identified or postulated dioxygenases (Table 2, Supplementary file 1) that use 2-OG as the co-substrate to catalyze the hydroxylation of their primary substrates, which include proteins, nucleic acids, and lipids (Figure 3A, Figure 3—figure supplement 1; Islam et al., 2018; Fletcher and Coleman, 2020; Rose et al., 2011). We note that when hydroxylation occurs on the carbon of an N-methyl group, this can lead to demethylation, which occurs through spontaneous fragmentation to formaldehyde and the demethylated product (Figure 3B; Islam et al., 2018; Fletcher and Coleman, 2020; Rose et al., 2011).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/87705/elife-87705-fig3-v1.jpg)
+
+**Figure 3.:** (A) Examples of hydroxylation reactions catalyzed by 2-OG-dependent dioxygenases. (B) Examples of demethylation reactions catalyzed by 2-OG-dependent dioxygenases. (C–K) Reactions catalyzed by indoleamine 2,3-dioxygenase (IDO)/tryptophan 2,3-dioxygenase (TDO) (C), arachidonate lipoxygenases (ALOXs) (D), (2-aminoethanethiol) dioxygenase (ADO) (E), heme oxygenases (HOs) (F), nitric oxide synthases (NOSs) (G), tyrosine 3-hydroxylase (TH) (H), peptidylglycine α-amidating monooxygenase (PAM) (I), stearoyl-CoA desaturase 1 (SCD1), (J) and copper amine oxidases (CAOs) (K).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87705/elife-87705-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** 2-OG-dependent dioxygenases share consensus mechanisms for the catalyzed hydroxylation (Islam et al., 2018; Fletcher and Coleman, 2020; Rose et al., 2011): the Fe(II) at the catalytic center is initially coordinated by 2 His side chains and a carboxylate from Glu or Asp, plus three additional H2O molecules to complete the octahedral coordination geometry. Then, bidentate coordination of 2-OG to Fe(II) replaces 2 H2O molecules, and the third Fe(II)-bound H2O molecule leaves after the binding of the primary substrate into the active site, making a vacant coordination site for O2. After the binding and activation of O2 at the Fe(II) center, one of the O2 atoms inserts into the primary substrate for hydroxylation, while the other O2 atom facilitates the oxidative decarboxylation of 2-OG, forming succinate and CO2 as co-products.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87705/elife-87705-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The heme Fe(II) is coordinated by the four N atoms from the porphyrin and one N atom from one histidyl residue in the catalytic pocket, leaving the vacant coordination site for O2 binding and activation (Singleton et al., 2014).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/87705/elife-87705-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The ETC consists of NADH ubiquinone oxireductase (Complex I), succinate dehydrogenase (Complex II), CoQH2-cytochrome c reductase (Complex III), and cytochrome c oxidase (Complex IV). In the ETC, electrons are transported from the NADH or FADH2 to ubiquinone at Complex I or II, then to cytochrome c at Complex III, and finally to O2 at Complex IV. This process is coupled with ATP generation at ATP synthase (Complex V) to form the oxidative phosphorylation (OxPhos) process, which is the major source of energy production.
+
 Among O2-dependent enzymes, 2-OG-dependent dioxygenases are relatively well studied. A majority of members in this subgroup catalyze hydroxylation or demethylation on proteins, DNA, and RNA, and are involved in the regulation of transcription and translation (Islam et al., 2018; Fletcher and Coleman, 2020; Rose et al., 2011). We focus on three subgroups relevant to hypoxia biology: direct HIF modulators, epigenetic modulators, and translational modulators. These subgroups encompass most known hypoxia sensors, including PHDs, factor inhibiting HIF (FIH1), lysine demethylases (KDMs), and ten-eleven translocation methylcytosine dioxygenases (TET1-3), as well as potential sensors that have impaired activities during hypoxia. For each subgroup, we highlight the most well-known sensors and propose additional, potential sensors.
 
-## Direct HIF modulators
+#### Direct HIF modulators
 
 These include PHDs (which catalyze prolyl hydroxylation of HIFα) and FIH (which catalyzes asparaginyl hydroxylation of HIFα) (Table 3).
+
+**Table 3.**
+ Direct HIF modulator in 2-OG-dependent dioxygenases.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene symbol</th>
+      <th>Protein name</th>
+      <th>Type of reaction</th>
+      <th>Hydroxylation sites in HIFα</th>
+      <th>Non-HIF substrate examples</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EGLN1</td>
+      <td>PHD2</td>
+      <td>Prolyl hydroxylation</td>
+      <td>HIF1α Pro402, Pro564;HIF2α Pro405, Pro531;HIF3α Pro492</td>
+      <td>FLNA, Akt</td>
+    </tr>
+    <tr>
+      <td>EGLN2</td>
+      <td>PHD1</td>
+      <td>Prolyl hydroxylation</td>
+      <td>HIF1α Pro402, Pro564;HIF2α Pro405, Pro531;HIF3α Pro492</td>
+      <td>FOXO3, Cep192, TP53</td>
+    </tr>
+    <tr>
+      <td>EGLN3</td>
+      <td>PHD3</td>
+      <td>Prolyl hydroxylation</td>
+      <td>HIF1α Pro564;HIF2α Pro405, Pro531;HIF3α Pro492</td>
+      <td>ATF-4, ADRB2, TP53</td>
+    </tr>
+    <tr>
+      <td>HIF1AN</td>
+      <td>FIH1</td>
+      <td>Asparaginyl hydroxylation</td>
+      <td>HIF1α Asn803,HIF2α Asn847</td>
+      <td>IκBα, Notch, OTUB1, RIPK4</td>
+    </tr>
+  </tbody>
+</table>
 
 The PHD enzymes and their critical role in regulating the PHD–HIF-pVHL signaling pathway are a paradigm for cellular sensing and response to hypoxia (Figure 2A; Majmundar et al., 2010; Kaelin and Ratcliffe, 2008; Ivan and Kaelin, 2017; Schofield and Ratcliffe, 2004). In humans, HIF is composed of an α subunit (HIF1α, HIF2α, or HIF3α) and invariant β subunit (HIF1β), and there are three PHD isoforms, namely PHD1 (EGLN2), PHD2 (EGLN1), and PHD3 (EGLN3). These PHDs are canonical sensors that illustrate our criteria for O2 sensors.
 
 First, PHDs directly interact with O2, utilizing O2 to hydroxylate prolines in the O2-dependent degradation domain (ODD) of HIFα (Epstein et al., 2001; Hirsilä et al., 2003).
 
 Second, the enzymatic activities of PHDs are sensitive to cellular/tissue hypoxia. The O2-binding affinities of all three PHDs, represented by O2 Km values, have been measured in vitro with HIF1α peptides as substrates. Using a short 19-residue HIF1α fragment as the substrate, the reported O2 Km values for PHD1-3 are in the range of 229–1746 μM (Table 4; Hirsilä et al., 2003; Dao et al., 2009; Tarhonskaya et al., 2014). However, recent measurements using longer HIF1α fragments estimate O2 Km values for PHD2 in the range of 67–85 μM (Table 4; Ehrismann et al., 2007), corresponding to pO2 values in the (physoxia) range of 6–8% (Table 1), consistent with the sensitivities of PHDs to changes in physiological O2 concentrations.
+
+**Table 4.**
+ Reported Km values of O2-dependent enzymes.Km values vary based on the assay method and tested substrate. Some enzymes have multiple Km values listed, reflecting measurements from different studies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Category</th>
+      <th>Enzyme*</th>
+      <th>Km for O2</th>
+      <th>Assay details</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="26">Dioxygenase</td>
+      <td rowspan="4">PHD2 (EGLN1)</td>
+      <td>250 μM</td>
+      <td>In vitro radioactivity 2-OG turnover assay with HIF1α (556–574) peptide as substrate</td>
+      <td>Hirsilä et al., 2003</td>
+    </tr>
+    <tr>
+      <td>1746 μM</td>
+      <td>In vitro time-resolved fluorescence resonance energy transfer assay with P564-HIF1α peptide (DLEMLAPYIPMDDDFQL) as substrate</td>
+      <td>Dao et al., 2009</td>
+    </tr>
+    <tr>
+      <td>67 μM</td>
+      <td>In vitro O2 consumption assay with HIF1α (502–697) peptide as substrate</td>
+      <td>Ehrismann et al., 2007</td>
+    </tr>
+    <tr>
+      <td>81 μM</td>
+      <td>In vitro O2 consumption assay with HIF1α (530–698) peptide as substrate</td>
+      <td>Ehrismann et al., 2007</td>
+    </tr>
+    <tr>
+      <td>PHD1 (EGLN2)</td>
+      <td>230 μM</td>
+      <td>In vitro radioactivity 2-OG turnover assay with HIF1α (556–574) peptide as substrate</td>
+      <td>Hirsilä et al., 2003</td>
+    </tr>
+    <tr>
+      <td>PHD3</td>
+      <td>230 μM</td>
+      <td>In vitro radioactivity 2-OG turnover assay with HIF1α (556–574) peptide as substrate</td>
+      <td>Hirsilä et al., 2003</td>
+    </tr>
+    <tr>
+      <td>KDM4E</td>
+      <td>197 μM</td>
+      <td>In vitro O2 consumption assay with ARK(me3)STGGK peptide as substrate</td>
+      <td>Cascella and Mirica, 2012</td>
+    </tr>
+    <tr>
+      <td rowspan="3">KDM4A</td>
+      <td>173 μM</td>
+      <td>In vitro MALDI-TOF-MS assay with H31−15K9me3 peptide as substrate</td>
+      <td>Hancock et al., 2017</td>
+    </tr>
+    <tr>
+      <td>57 μM</td>
+      <td>In vitro O2 consumption assay with ARK(me3)STGGK peptide substrate</td>
+      <td>Cascella and Mirica, 2012</td>
+    </tr>
+    <tr>
+      <td>60 μM</td>
+      <td>In vitro radioactivity 2-OG turnover assay with histone H3(1–19)K9me3 as substrate</td>
+      <td>Chakraborty et al., 2019</td>
+    </tr>
+    <tr>
+      <td>KDM6A</td>
+      <td>180 μM</td>
+      <td>In vitro radioactivity 2-OG turnover assay with histone H3(21–44)K27(me3) as substrate</td>
+      <td>Chakraborty et al., 2019</td>
+    </tr>
+    <tr>
+      <td>KDM4C</td>
+      <td>158 μM</td>
+      <td>In vitro O2 consumption assay with ARK(me3)STGGK peptide substrate</td>
+      <td>Cascella and Mirica, 2012</td>
+    </tr>
+    <tr>
+      <td>KDM4B</td>
+      <td>150 μM</td>
+      <td>In vitro radioactivity 2-OG turnover assay with histone H3(1–19)K9me3 as substrate</td>
+      <td>Chakraborty et al., 2019</td>
+    </tr>
+    <tr>
+      <td>FIH</td>
+      <td>90 μM</td>
+      <td>In vitro radioactivity 2-OG turnover assay with HIF1α (788–822) peptide as substrate</td>
+      <td>Koivunen et al., 2004</td>
+    </tr>
+    <tr>
+      <td>KDM5A</td>
+      <td>90 μM</td>
+      <td>In vitro radioactivity 2-OG turnover assay with histone H3(1–21)K4me3 as substrate</td>
+      <td>Chakraborty et al., 2019</td>
+    </tr>
+    <tr>
+      <td>KDM3A</td>
+      <td>75 μM (7.6% O2) †</td>
+      <td>In vitro demethylation-formaldehyde dehydrogenase-coupled reaction assay with K224-monomethylated PGC-1α peptide as substrate</td>
+      <td>Qian et al., 2019</td>
+    </tr>
+    <tr>
+      <td>KDM5B</td>
+      <td>40 μM</td>
+      <td>In vitro radioactivity 2-OG turnover assay with histone H3(1–21)K4me3 as substrate</td>
+      <td>Chakraborty et al., 2019</td>
+    </tr>
+    <tr>
+      <td>P4HA1</td>
+      <td>40 μM</td>
+      <td>Standard P4H activity assay with (Pro-Pro-Gly)10 (Peptide Institute) as a substrate</td>
+      <td>Hirsilä et al., 2003</td>
+    </tr>
+    <tr>
+      <td>KDM5C</td>
+      <td>35 μM</td>
+      <td>In vitro radioactivity 2-OG turnover assay with histone H3(1–21)K4me3 as substrate</td>
+      <td>Chakraborty et al., 2019</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TET1</td>
+      <td>30 μM</td>
+      <td>In vitro radioactivity 2-OG turnover assay with oligonucleotides containing a 5-mC as substrate</td>
+      <td>Laukka et al., 2016</td>
+    </tr>
+    <tr>
+      <td>3.0 μM (0.31% O2) †</td>
+      <td>In vitro DNA hydroxymethylation assay with genomic DNA as substrate</td>
+      <td>Thienpont et al., 2016</td>
+    </tr>
+    <tr>
+      <td rowspan="2">TET2</td>
+      <td>30 μM</td>
+      <td>In vitro radioactivity 2-OG turnover assay with oligonucleotides containing a 5-mC as substrate</td>
+      <td>Laukka et al., 2016</td>
+    </tr>
+    <tr>
+      <td>5.2 μM (0.53% O2) *</td>
+      <td>In vitro DNA hydroxymethylation assay with genomic DNA as substrate</td>
+      <td>Thienpont et al., 2016</td>
+    </tr>
+    <tr>
+      <td>KDM5D</td>
+      <td>25 μM</td>
+      <td>In vitro radioactivity 2-OG turnover assay with histone H3(1–21)K4me3 as substrate</td>
+      <td>Chakraborty et al., 2019</td>
+    </tr>
+    <tr>
+      <td>KDM6B</td>
+      <td>20 μM</td>
+      <td>In vitro radioactivity 2-OG turnover assay with histone H3(21–44)K27(me3) as substrate</td>
+      <td>Chakraborty et al., 2019</td>
+    </tr>
+    <tr>
+      <td>IDO1</td>
+      <td>11.5–24 μM</td>
+      <td>In vitro O2 consumption assay with L-Trp as substrate</td>
+      <td>Kolawole et al., 2015</td>
+    </tr>
+    <tr>
+      <td rowspan="7"></td>
+      <td>PTGS1</td>
+      <td>10 μM (sheep)</td>
+      <td>In vitro radioactivity label assay with [1-14C]arachidonic acid as substrate</td>
+      <td>Juránek et al., 1999</td>
+    </tr>
+    <tr>
+      <td>PTGS2</td>
+      <td>13 μM (mouse)</td>
+      <td>In vitro radioactivity label assay with [1-14C]arachidonic acid as substrate</td>
+      <td>Juránek et al., 1999</td>
+    </tr>
+    <tr>
+      <td>ALOX5</td>
+      <td>13 μM (porcine)</td>
+      <td>In vitro radioactivity label assay with [1-14C]arachidonic acid as substrate</td>
+      <td>Juránek et al., 1999</td>
+    </tr>
+    <tr>
+      <td>ALOX12</td>
+      <td>13 μM</td>
+      <td>In vitro radioactivity label assay with [1-14C]arachidonic acid as substrate</td>
+      <td>Juránek et al., 1999</td>
+    </tr>
+    <tr>
+      <td>ALOX15</td>
+      <td>26 μM (porcrine)</td>
+      <td>In vitro radioactivity label assay with [1-14C]arachidonic acid as substrate</td>
+      <td>Juránek et al., 1999</td>
+    </tr>
+    <tr>
+      <td>ALOX15</td>
+      <td>26 μM (rabbit)</td>
+      <td>In vitro radioactivity label assay with [1-14C]arachidonic acid as substrate</td>
+      <td>Juránek et al., 1999</td>
+    </tr>
+    <tr>
+      <td>ADO</td>
+      <td>&gt;500 μM</td>
+      <td>In vitro UPLC-MS-TOF assay with RGS4(2–15) peptide as substrate</td>
+      <td>Masson et al., 2019</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Monooxygenase</td>
+      <td>NOS1(nNOS)</td>
+      <td>350 μM (rat)</td>
+      <td>In vitro heme-NO complex formation assay with L-arginine as substrate</td>
+      <td>Abu-Soud et al., 1996</td>
+    </tr>
+    <tr>
+      <td>NOS2(iNOS)</td>
+      <td>130 μM (mouse)</td>
+      <td>In vitro heme-NO complex formation assay with L-arginine as substrate</td>
+      <td>Abu-Soud et al., 2001</td>
+    </tr>
+    <tr>
+      <td rowspan="2">NOS3(eNOS)</td>
+      <td>4 μM (bovine)</td>
+      <td>In vitro heme-NO complex formation assay with L-arginine as substrate</td>
+      <td>Abu-Soud et al., 2000</td>
+    </tr>
+    <tr>
+      <td>25 μM (bovine)</td>
+      <td>In vitro heme-NO complex formation assay with N-hydroxy-L-arginine as substrate</td>
+      <td>Abu-Soud et al., 2000</td>
+    </tr>
+    <tr>
+      <td rowspan="3">TH</td>
+      <td>16.2 μM (low-activity state);46.1 μM (high- activity state);</td>
+      <td>In vitro radioactivity label assay with 3H-tyrosine as substrate</td>
+      <td>Rostrup et al., 2008</td>
+    </tr>
+    <tr>
+      <td>12.6–26.7 μM (low-activity state);28.8–42.9 μM (high-activity state)‡;</td>
+      <td>In vitro oxygraphic assay with tyrosine as substrate</td>
+      <td>Rostrup et al., 2008</td>
+    </tr>
+    <tr>
+      <td>2.6–3.9 μM (2–3 mmHg, rat) *</td>
+      <td>In vitro radioactivity label assay with 3H-tyrosine as substrate</td>
+      <td>Katz, 1980</td>
+    </tr>
+    <tr>
+      <td>TPH1</td>
+      <td>3.9~12.9 μM (3–10 mmHg, rat) †</td>
+      <td>In vitro radioactivity label assay with 3H-tryptophan as substrate</td>
+      <td>Katz, 1980</td>
+    </tr>
+    <tr>
+      <td>PAH</td>
+      <td>17 μM</td>
+      <td>In vitro oxygraphic assay with phenylalanine as substrate</td>
+      <td>Rostrup et al., 2008</td>
+    </tr>
+    <tr>
+      <td>PAM</td>
+      <td>70 μM (rat)</td>
+      <td>In vitro radioactivity label assay with [α-2H2]-N-acylglycine of different chain length as substrates</td>
+      <td>McIntyre et al., 2010</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Oxidase</td>
+      <td rowspan="3">Cytochrome c oxidase</td>
+      <td>&lt;0.1 μM (rat)</td>
+      <td>In vitro O2 consumption assay measuring O2 consumption of purified rat mitochondria at low phosphate potential ([ATP]/[ADP]*[Pi])</td>
+      <td>Bienfait et al., 1975</td>
+    </tr>
+    <tr>
+      <td>1–3 μM (rat)</td>
+      <td>In vitro O2 consumption assay measuring O2 consumption of purified rat mitochondria at high phosphate potential</td>
+      <td>Bienfait et al., 1975</td>
+    </tr>
+    <tr>
+      <td>0.5 μM (mouse)</td>
+      <td>Cellular assay measuring the ‘apparent K (m)’ for O2 or p 50 of respiration in 32D cells using high-resolution respirometry</td>
+      <td>Scandurra and Gnaiger, 2010</td>
+    </tr>
+    <tr>
+      <td>AOC3</td>
+      <td>38 μM</td>
+      <td>In vitro enzymatic assay using purified human AOC3</td>
+      <td>Shen et al., 2012</td>
+    </tr>
+  </tbody>
+</table>
+
+_*O2-dependent enzymes that are known sensors are highlighted in bold; that are reported to be inhibited under hypoxia are highlighted in a light orange background; that are reported to be associated with positive selections in high-altitude populations are highlighted in red (also see Table 6).†Km of these enzyme were reported with units as % O2 or mmHg, and calculated according to Mas-Bargues et al., 2019; Place et al., 2017.‡Combined data for TH1/3/4 splicing isoforms._
 
 Third, the decreased activity of PHDs during hypoxia triggers specific downstream responses (Figure 2A; Majmundar et al., 2010; Kaelin and Ratcliffe, 2008; Ivan and Kaelin, 2017; Schofield and Ratcliffe, 2004). Under normoxia, hydroxylated HIFα is recognized and polyubiquitinylated by the E3 ubiquitin ligase von Hippel-Lindau protein (pVHL), which then leads to proteasome-mediated degradation of HIFα. Under hypoxia, decreased O2 concentration suppresses the activity of PHDs. This allows HIFα to accumulate and translocate to nucleus, where it associates with the constitutively expressed HIF1β and forms the heterodimer transcriptional factor HIF. HIF then recruits transcriptional co-activators p300 and CREP-binding protein (CBP), binds with hypoxia-responsive elements (HREs) on DNA, and subsequently activates its target genes. Products of HIF-regulated genes are involved in multiple cellular and systematic adaptations to hypoxia, including metabolic shift from OXPHOS to glycolysis, redox homeostasis, angiogenesis, and erythropoiesis.
 
@@ -85,11 +627,157 @@ There has been interest to identify non-HIF substrates for PHDs and other pathwa
 
 FIH1 is another 2-OG dioxygenase that is known to sense hypoxia and regulate the HIF pathway (Figure 2A; Lando et al., 2002a; Mahon et al., 2001). Under normoxia, FIH1 catalyzes the asparaginyl hydroxylation of the C-terminal transactivation domain (CTAD) of HIFα (Table 3; Koivunen et al., 2004; Lando et al., 2002b), which is responsible for its binding with the transcriptional coactivator p300/CBP (Lando et al., 2002b; Freedman et al., 2002). FIH1-catalyzed asparaginyl hydroxylation of the CTAD impairs the recruitment of p300/CBP and reduces transcriptional activity of HIF (Lando et al., 2002a; Lando et al., 2002b). In hypoxia, FIH1 activity is also reduced by hypoxia, enabling HIFα to recruit p300/CBP for transcriptional activation of its target genes (Lando et al., 2002a; Lando et al., 2002b). The reported O2 Km value for FIHs is 90 μM, using a HIF1α peptide containing site Asn803 (Table 4; Koivunen et al., 2004). Compared with the Km values of PHDs in similar assays, FIH1 appears to be less sensitive to hypoxia, that is, as O2 levels decrease, PHDs are inhibited before FIH1 (Tian et al., 2011). Thus, FIH1 is considered a fine modulator of the HIF pathway in sensing severe hypoxia. Consistent with the notion that its role is more limited, FIH1 knockout mice have abnormal metabolism but not other HIF-regulated processes (Zhang et al., 2010; Sim et al., 2018). There are also non-HIF substrates identified for FIH1 that may also be regulated in an O2-dependent manner (Table 3; Cockman et al., 2009b; Scholz et al., 2016; Cockman et al., 2009a).
 
-## Epigenetic modulators
+#### Epigenetic modulators
 
 These include the lysine demethylase (KDM) Jumonji C (JmjC) domain-containing proteins, and the DNA demethylases ten-eleven translocation enzymes (TETs).
 
 JmjC domain-containing proteins contain domains for Fe(II) and 2-OG binding and catalytic activities (Shmakova et al., 2014; Kooistra and Helin, 2012). They also bind with O2 and utilize it as a substrate, therefore having the potential to function as hypoxia sensors if their O2-binding affinities allow (Shmakova et al., 2014). Of the 32 identified JmjC proteins in humans, at least 23 conduct lysine demethylation reactions (Shmakova et al., 2014). Their substrates include both histone lysines (K4, K9, K27, and K36 on histone 3) and some non-histone lysines. (Table 5). Histone methylations affect chromatin structure and compactness and consequently regulate gene expression in either activating or silencing mode (Table 5; Shmakova et al., 2014; Kooistra and Helin, 2012; Walport et al., 2016; Li et al., 2022). H3K4me2/3, H3K9me2, H3K27me3, and H3K36me3 levels increase after hypoxia, possibly due to KDMs acting as O2 sensors and effecting chromatin changes.
+
+**Table 5.**
+ JmjC domain-containing histone demethylases and their substrates*.(A = activating transcription, S = silencing transcription).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>KDM class</th>
+      <th>Members (gene symbol)</th>
+      <th>Histone lysyl residue substrates</th>
+      <th>Other substrates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">KDM2</td>
+      <td>KDM2A</td>
+      <td>H3K36me1/me2 (A)</td>
+      <td>p65, NF-κB</td>
+    </tr>
+    <tr>
+      <td>KDM2B</td>
+      <td>H3K36me1/me2 (A), H3K4me3 (A)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">KDM3</td>
+      <td>KDM3A</td>
+      <td>H3K9me1/me2 (S)</td>
+      <td>PGC-1α K224me</td>
+    </tr>
+    <tr>
+      <td>KDM3B</td>
+      <td>H3K9me1/me2 (S)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>JJMJD1C</td>
+      <td>H3K9me1/me2 (S)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="5">KDM4</td>
+      <td>KDM4A</td>
+      <td>H3K9me2/me3 (S), H3K36me2 (A), H1.4K26me2/me3</td>
+      <td>WIZ, CDYL1, CSB, and G9a</td>
+    </tr>
+    <tr>
+      <td>KDM4B</td>
+      <td>H3K9me2/me3 (S), H3K36me2 (A), H1.4K26me2/me3</td>
+      <td>WIZ, CDYL1, CSB, and G9a</td>
+    </tr>
+    <tr>
+      <td>KDM4C</td>
+      <td>H3K9me2/me3 (S), H3K36me2 (A), H1.4K26me2/me3</td>
+      <td>WIZ, CDYL1, CSB, and G9a</td>
+    </tr>
+    <tr>
+      <td>KDM4D</td>
+      <td>H3K9me2/me3 (S)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KDM4E</td>
+      <td>H3K9me3 (S)</td>
+      <td>H3R2me2/me1, H3R8me2/me1, H3R26me2/me1, H4R3me2</td>
+    </tr>
+    <tr>
+      <td rowspan="4">KDM5</td>
+      <td>KDM5A</td>
+      <td>H3K4me2/me3 (A)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KDM5B</td>
+      <td>H3K4me2/me3 (A)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KDM5C</td>
+      <td>H3K4me2/me3 (A)</td>
+      <td>H3R2me2/me1, H3R8me2, H4R3me2a, ULK1R170me2a</td>
+    </tr>
+    <tr>
+      <td>KDM5D</td>
+      <td>H3K4me2/me3 (A)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">KDM6</td>
+      <td>KDM6A</td>
+      <td>H3K27me2/me3 (S)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KDM6B</td>
+      <td>H3K27me2/me3 (S)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KDM6C</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">KDM7</td>
+      <td>KDM7A</td>
+      <td>H3K9me1/me2 (S), H3K27me1/me2 (S)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHF8</td>
+      <td>H3K27me1/me2 (S), H4K20me1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PHF2</td>
+      <td>H3K9me2/me3 (S)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">Jmjc domain only</td>
+      <td>NO66</td>
+      <td>H3K4me2/me3 (A), H3K36me2/me3 (A)</td>
+      <td>Rpl8</td>
+    </tr>
+    <tr>
+      <td>MINA53</td>
+      <td>H3K9me3 (S)</td>
+      <td>Rpl27a</td>
+    </tr>
+    <tr>
+      <td>KDM8</td>
+      <td>H3K36me2 (A)</td>
+      <td>NFATc1</td>
+    </tr>
+    <tr>
+      <td>JMJD6</td>
+      <td></td>
+      <td>H3R2me2,H4R3me2/me1, U2AF2/U2AF65, LUC7L2</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Known hydroxylation/demethylation sites are indicated._
 
 KDM6A, also known as UTX, catalyzes demethylation at H3K27me2/me3 (Table 5; Hong et al., 2007). In 2019, Chakraborty et al. reported that increase in H3K27me3 levels during hypoxia is HIF-independent and is caused by the direct inhibition of KDM6A due to decreased pO2 under hypoxia (Figure 2A; Chakraborty et al., 2019). The O2 sensitivity of KDM6A was further confirmed by its O2 Km value of 180 μM (Table 4), in a similar range as the PHDs and FIH and the highest among KDM6 members (Chakraborty et al., 2019). Sensing of hypoxia by KDM6A can control cell fate by chromatin reprogramming (Chakraborty et al., 2019). For example, it is reported that in mouse myoblast C2C12 cells, increase in H3K27me3 levels due to inactivation of KDM6A represses the expression of myogenic genes and blocks myogenic differentiation (Chakraborty et al., 2019).
 
@@ -101,7 +789,7 @@ There are also cases where the JmjC-containing KDMs function as hypoxia sensors 
 
 Besides KDMs, another set of 2-OG-dependent dioxygenases that act as epigenetic regulators are the TET enzymes (TET1, TET2, and TET3 in humans). These enzymes catalyze the hydroxylation of DNA 5-methylcytosine (5mC) to 5-hydroxymethylcytosine (5hmC) (Ponnaluri et al., 2013; Wu and Zhang, 2017). This facilitates the subsequent demethylation of 5hmC into an unmodified cytosine (Ponnaluri et al., 2013; Wu and Zhang, 2017). Since CpG methylation is typically silencing, TETs tend to promote gene activation. A large variance exists in different reports about the O2 Km values of TET1 and TET2, ranging from 0.31% and 0.53% (3.0 μM and 5.2 μM) using genomic DNA as substrates to 30 μM using oligonucleotides as substrates (Table 4); however, these measurements show much tighter O2 binding of TET1 and TET2 compared with the aforementioned reported hypoxia sensors (KDM3A, KDM5A, and KDM6A) (Laukka et al., 2016; Thienpont et al., 2016). Severe hypoxia, such as 0.5% O2 treatment, is reported to directly impair the cellular activities of TETs, increase DNA hypermethylation, and decrease the expression levels of associated genes (Figure 2A; Thienpont et al., 2016). DNA hypermethylation caused by TETs inhibition also happens during pathophysiological hypoxia found in tumors (Thienpont et al., 2016). Considering their O2 sensitivity, TETs are more likely to function as hypoxia sensors under extreme hypoxic conditions.
 
-## Translational modulators
+#### Translational modulators
 
 Translational modulators in the 2-OG-dependent dioxygenases include the mRNA hydroxylases and ribosome hydroxylases.
 
@@ -109,13 +797,13 @@ The most abundant RNA modification is N6-methylation of adenosine (m6A), which a
 
 The translational apparatus may itself be targeted by ribosome hydroxylases, which modify the histidyl or prolyl residues of ribosomal subunit proteins (Bundred et al., 2018; Zhuang et al., 2015). These ribosome hydroxylases regulate translation and participate in physiological or disease processes, including cellular growth, skeletal bone formation, tumorigenesis, and immune regulation (Bundred et al., 2018; Zhuang et al., 2015; Ge et al., 2012; Singleton et al., 2014). Currently, three ribosome hydroxylases have been identified: histidyl hydroxylases MINA53 (RIOX2) and NO66 (RIOX1) targeting the 60S large subunits Rpl27a and Rpl8, respectively; and prolyl hydroxylase OGFOD1 targeting the 40S small subunit Rpl23 (Ge et al., 2012; Singleton et al., 2014). Among these, NO66 has its activity inhibited by 0.1–1% O2 in cellular studies (Figure 2B). By contrast, OGFOD1 still retains 80% of its cellular activity even under severe hypoxia (0.2% O2) (Ge et al., 2012; Singleton et al., 2014). While this suggests the potential for NO66 to be a sensor in severe hypoxia, more studies of the O2 affinity of NO66 and the downstream response of its inhibition by hypoxia are needed.
 
-## Heme-dependent dioxygenases
+#### Heme-dependent dioxygenases
 
 Heme prosthetic groups are used by these enzymes for O2 binding and activation (Figure 3—figure supplement 2; Huang and Groves, 2018; Efimov et al., 2011; Raven, 2017). Five known heme-dependent dioxygenases in humans are indoleamine 2,3-dioxygenase (IDO) 1 and 2, tryptophan 2,3-dioxygenase (TDO), and prostaglandin G/H synthase (PGHS) 1 and 2 (Paton and Ntambi, 2009; Efimov et al., 2011; Raven, 2017). Except for IDO2 that has not been measured, these dioxygenases have reported Km values of 10–30 μM (Table 4; Juránek et al., 1999; Kolawole et al., 2015). As reflected by their lower O2 Km values, heme-dependent dioxygenases tend to have stronger O2 binding than 2-OG-dependent dioxygenases.
 
 Both TDO and IDOs catalyze the conversion of L-tryptophan to N-formyl-L-kynurenine (Figure 3C; Thackray et al., 2011). They have similar heme- and substrate-binding pockets, although they share low sequence identity overall, and are believed to be an example of convergent evolution (Ball et al., 2014; Thackray et al., 2011). Both TDO and IDO regulate immune responses, possibly by modifying tryptophan homeostasis. TDO and IDO have distinct tissue expression patterns, with TDO mostly restricted to liver and epidermis, while IDO is found throughout the body and can be induced by certain immune or inflammation signals (Ball et al., 2014). Their expression patterns may further regulate their relative importance in different tissues or toward different stimuli (Ball et al., 2014). The cellular activity of TDO is reported to be inhibited by hypoxia (1–10% O2) in HeLa cells transfected with TDO, while TDO protein level remains unaltered (Elbers et al., 2016). Cellular activity of IDO1 is also decreased by hypoxia (1% O2) in 86HG39 and HeLa cells with unaltered IDO1 protein level (Schmidt et al., 2013). Impaired immune responses are observed in both cases as downstream effects (Figure 2B; Elbers et al., 2016; Schmidt et al., 2013). Further studies are needed to clarify whether hypoxia directly inhibits the enzymatic activities of TDO and IDO1 and how this might trigger downstream responses in a more physiological system.
 
-## Lipoxygenases
+#### Lipoxygenases
 
 Lipoxygenases (LOXs) are iron-containing dioxygenases that catalyze the insertion of O2 into polyunsaturated fatty acids (PUFA) and their derivatives, forming hydroperoxyl eicosatetraenoic acid (HPETE) products (Figure 3D). HPETE products are chemically unstable and reduced by peroxidases to hydroxyl eicosatetraenoic acid (HETE) (Biringer, 2020; Ivanov et al., 2010; Kuhn et al., 2015). In humans, there are six known LOXs with arachidonic acid as the most common substrate (Biringer, 2020; Kuhn et al., 2015). These arachidonate lipoxygenases (ALOXs) are named according to the positional specificity in their catalyzed hydroperoxyl reactions as the ALOX5, ALOX12, ALOX12B, ALOX15, ALOX15B, and ALOXE3 (Biringer, 2020; Kuhn et al., 2015). Functions of ALOXs include biosynthesis of inflammatory mediators as well as regulation of cellular redox state (Kuhn et al., 2015).
 
@@ -123,21 +811,21 @@ ALOXs demonstrate that O2-binding affinities can be affected by the specific sub
 
 The fact that substrates affect O2 affinity is not a mere laboratory curiosity. Multiple ALOX substrates may be involved in hypoxia-related diseases, including pulmonary hypertension and cardiovascular diseases (Mashima and Okuyama, 2015; Zhu and Ran, 2012; Ivanov et al., 2015). Studying the substrate-dependent O2 sensitivity of human ALOXs in various biological contexts will be necessary to ascertain whether and how these enzymes sense and respond to hypoxia in vivo.
 
-## Other dioxygenases
+#### Other dioxygenases
 
 Ten other human dioxygenases have been identified (Supplementary file 1). They have the shared property of using an octahedral Fe(II) as the catalytic center.
 
 Among these 10 enzymes, cysteamine (2-aminoethanethiol) dioxygenase (ADO) has been identified as a hypoxia sensor (Masson et al., 2019). ADO catalyzes the oxidation of protein N-terminal cysteines to cysteine sulfinic acid (Figure 3E) and promotes the degradation of the oxidized substrate protein through the N-degron pathway (Masson et al., 2019). Human ADO has a relatively low O2-binding affinity (Km > 500 μM, Table 4, Masson et al., 2019). As a result, even mild hypoxia inhibits ADO activity, allowing stabilization of its substrates, including the regulator of G protein signaling (RGS4/5) and cytokine interleukin (IL)-32 (Masson et al., 2019). During hypoxia, inhibited ADO results in the stabilization of RGS4/5 and subsequently modulates G protein-coupled calcium ion signals and mitogen-activated protein kinase (MAPK) signaling (Figure 2A; Masson et al., 2019). Hypoxia sensing by ADO provides a faster response compared with HIF-mediated transcriptional regulation (Masson et al., 2019).
 
-## Monooxygenases
+### Monooxygenases
 
 The monooxygenase members can be further classified into iron-dependent, copper-dependent, and flavin-dependent monooxygenases based on their catalytic centers (Table 2).
 
-## Iron-dependent monooxygenases
+#### Iron-dependent monooxygenases
 
 Most monooxygenases utilize iron as the catalytic center for oxygen insertion and can be further divided into heme-dependent and non-heme-dependent ones.
 
-## Heme-dependent monooxygenases
+#### Heme-dependent monooxygenases
 
 In humans, these include cytochrome P450 enzymes, heme oxygenases, and nitric oxide synthases.
 
@@ -151,7 +839,7 @@ The O2 Km values for all three NOSs have been reported and are quite different f
 
 In addition, the NOSs can also cross-talk with the PHD-HIF-pVHL pathway by NO-derived cysteine S-nitrosylation of HIF1α and pVHL protein, which can inhibit the binding between hydroxylated HIF1α and pVHL and stabilize HIF1α even when O2 is not limiting (Li et al., 2007; Palmer et al., 2007). This may play a role in immune cells where iNOS can be induced to activate HIF-mediated immune response (Li et al., 2007).
 
-## Non-heme Fe-dependent monooxygenases
+#### Non-heme Fe-dependent monooxygenases
 
 There are eight identified non-heme Fe-dependent monooxygenases in humans (Supplementary file 1) that utilize several different cofactors for iron coordination. Five use (6R)-L-erythro-5,6,7,8-tetrahydrobiopterin (BH4) as an electron donor and co-substrate, namely tyrosine 3-hydroxylase (TH), tryptophan 5-hydroxylase 1 and 2 (TPH1 and TPH2), phenylalanine-4-hydroxylase (PAH), and alkylglycerol monooxygenase (Bassan et al., 2003; Watschinger et al., 2010). Similar to 2-OG-dependent dioxygenases, the catalytic iron is coordinated in an octahedral mode for binding and activation of O2 (Bassan et al., 2003).
 
@@ -159,45 +847,45 @@ TH catalyzes the hydroxylation of L-tyrosine into L-3,4-dihydroxyphenylalanine (
 
 PAH and TPH, like TH, are also aromatic amino acid hydroxylases, with similar structures and catalytic mechanisms (Bassan et al., 2003). The O2 Km values of human PAH and rat TPH are reported to be 17 uM and 3.9–12.9 uM in enzymatic assay, respectively (Table 4; Katz, 1980). Their potential for hypoxia sensing and responding needs further exploration.
 
-## Copper-dependent monooxygenases
+#### Copper-dependent monooxygenases
 
 Besides iron, copper is also frequently used for O2 binding and activation by oxidizing enzymes. In humans, there are five identified or speculated monooxygenases that use copper as the catalytic center (Supplementary file 1). These enzymes all have two copper ions at their active sites but employ different strategies for O2 binding and activation, depending on whether the two copper irons are in sufficient proximity to be magnetically coupled (Decker and Solomon, 2005; Lewis and Tolman, 2004). The coupled binuclear Cu enzymes such as tyrosinase (TYR) use both copper ions for O2 binding and activation, while the non-coupled binuclear Cu enzymes such as peptidylglycine α-amidating monooxygenase (PAM) and dopamine b-monooxygenase (DβM) use only one copper iron (CuB) for this process (Decker and Solomon, 2005; Lewis and Tolman, 2004). The crystal structure of PAM shows that CuB has a tetrahedral structure, coordinated by two His residues and one Met residues, with the other position for O2 binding (Prigge et al., 2004).
 
 PAM catalyzes the amidation of C-terminal glycines in peptides (Figure 3I), a post-translational modification that may affect substrate stability (Simpson et al., 2015). PAM activity is progressively inhibited from mild (7% O2) to severe (1% O2) hypoxia in mammalian cells (Figure 2B; Simpson et al., 2015). Rat PAM has been shown to have high O2 Km values (100–550 μM), with this wide range attributable to different degrees of substrate hydrophobicity (Table 4; McIntyre et al., 2010). The best-characterized substrates of PAM are endocrine peptides, for example, chromogranin A (CgA), whose amidation by PAM is profoundly suppressed by hypoxia (Simpson et al., 2015; Merkler, 1994). However, the functional consequence of this change in amidation remains unclear (Simpson et al., 2015).
 
-## Flavin-dependent monooxygenases
+#### Flavin-dependent monooxygenases
 
 Flavin-dependent monooxygenases utilize a non-covalently bound FAD prosthetic group to activate O2 (Palfey and McDonald, 2010; Romero et al., 2018). Unlike above discussed O2-dependent enzymes whose reaction rates are saturated above an O2 threshold, reaction rates for these enzymes are thought to be directly proportional to O2 concentration. This suggests that decreased O2 concentration from normoxia to hypoxia could decrease reaction rates of these enzymes (Massey, 2002), although it is not clear how their cellular activities are affected by hypoxia.
 
-## Oxidases
+### Oxidases
 
 The oxidase members can be further classified into heme-copper, iron-dependent, copper-dependent, flavin-dependent, and other oxidases based on their catalytic centers (Table 2).
 
-## Heme-copper oxidases
+#### Heme-copper oxidases
 
 Heme-copper oxidases (HCO) are the terminal oxidases in the aerobic respiratory chain that catalyze the 4-electron reduction of O2 to water (Ferguson-Miller and Babcock, 1996; Nolfi-Donegan et al., 2020). In mammals, this is the cytochrome c oxidase (CcO), also known as the Complex IV of the electron transport chain (ETC) in mitochondria (Nolfi-Donegan et al., 2020; Figure 3—figure supplement 3). Mammalian CcOs utilize a hetero-binuclear heme-copper center to activate O2 (Wikström et al., 2018; Namslauer and Brzezinski, 2004). O2 binds with both the heme iron and the copper as a ligand bridge and is then reduced with electrons passed from the reduced form of cytochrome c through other metal prosthetic sites (Wikström et al., 2018; Namslauer and Brzezinski, 2004; Aoyama et al., 2009). Compared with other O2-dependent enzymes, CcO has a high O2 affinity, with O2 Km values measured to be <1 μM in assays using intact cells or purified mitochondria with sufficient substrates (Table 4; Petersen et al., 1974; Bienfait et al., 1975; Gnaiger et al., 1995; Scandurra and Gnaiger, 2010). Based solely on its low Km values, CcO would not be expected to act as hypoxia sensors.
 
 However, CcO appears to be inhibited during hypoxia (1–3% O2) (Chandel et al., 1997; Duranteau et al., 1998). Inhibition of CcO disrupts the ETC, which is related to electron leakage from Complex III and Complex I (Duranteau et al., 1998; Fuhrmann and Brüne, 2017; Hernansanz-Agustín et al., 2017; Guzy et al., 2007), increased mitochondrial produced ROS (Duranteau et al., 1998; Fuhrmann and Brüne, 2017; Hernansanz-Agustín et al., 2017; Guzy et al., 2007; Chandel et al., 2000), and altered downstream HIF, PI3K/Akt, AMPK, and MAPK signaling (Fuhrmann and Brüne, 2017; Guzy et al., 2007; Chandel et al., 2000; Brand, 2016; Kim et al., 2018; Emerling et al., 2005; Kulisz et al., 2002; Emerling et al., 2009). Thus, despite CcO’s low Km values it has hypoxia sensor-like properties. How CcO’s activities are regulated during hypoxia remains to be elucidated.
 
-## Iron-dependent oxidases
+#### Iron-dependent oxidases
 
 Iron-dependent oxidases include the desaturases and ferroxidases (Supplementary file 1; Jasniewski and Que, 2018). The structures and catalytic mechanisms are relatively poorly characterized, but the studied ones all have two Fe(II) ions, coordinated by five His/Glu residues from the enzymes, that bind and active O2 (Jasniewski and Que, 2018; Hess et al., 2010; Bertini et al., 2012).
 
 Stearoyl-CoA desaturase 1 (SCD1) catalyzes the formation of the monounsaturated fatty acid oleic acid from the saturated fatty acid stearic acid (Figure 3J; Paton and Ntambi, 2009), thereby playing an important role in lipid metabolism, membrane fluidity, and cell integrity (Paton and Ntambi, 2009), as increased fatty acid saturation could result in lipotoxicity and cell death (Hess et al., 2010; Wang et al., 2006; Green and Olson, 2011). Inhibition of SCD1 activates the unfolded protein response (UPR) through ER stress (Green and Olson, 2011; Volmer et al., 2013). Although the O2 affinity of SCD1 is unknown, hypoxia (1% O2) impairs the cellular activity of SCD1 in A549 and HeLa cells, increasing the saturated fatty acid ratio and thereby altering the cellular lipid composition (Figure 2B; Kamphorst et al., 2013). SCD1 may well be a hypoxia sensor if the decrease in its activity is directly due to reduced O2 concentration.
 
-## Copper-dependent oxidases
+#### Copper-dependent oxidases
 
 Copper-dependent oxidases include the copper amine oxidases (CAOs) and lysyl oxidases (LOXs), both of which catalyze oxidative deamination of amines to the corresponding aldehydes, also producing hydrogen peroxide and ammonia (Figure 3K; Finney et al., 2014). Human CAO member AOC3 is reported to have an O2 Km ~38 μM in enzymatic assays (Table 4), and its cellular activity in adipocyte lysate is inhibited by hypoxia in a HIF-independent manner (Figure 2B; Shen et al., 2012; Repessé et al., 2015; Andrés et al., 2001; Morris et al., 1997). The cellular function of AOC3 is not clear since its endogenous substrates are unknown, although in vitro kinetics studies suggest dopamine and cysteamine as potential substrates (Shen et al., 2012).
 
-## Flavin-dependent oxidases
+#### Flavin-dependent oxidases
 
 Similar to flavin-dependent monooxygenases, this group of oxidases utilize either FAD or FMN for the activation of O2 and have reaction rates proportional to the O2 concentration (Massey, 2002). The >20 members of this group (Table 2, Supplementary file 1) in humans have substrates ranging from small molecules (e.g., fatty acids and amino acids) to protein residues (Romero et al., 2018). Their role in hypoxia sensing and responding is unknown.
 
-## Other oxidases
+#### Other oxidases
 
 Several other oxidases remain poorly characterized (Supplementary file 1). The dual oxidases DUOX1 and DUOX2 catalyze the formation of H2O2 from O2 molecules with electrons provided by NADPH (Donkó et al., 2005). In HIF1-deficient Caenorhabditis elegans, hypoxia-induced extracellular matrix (ECM) remodeling could be phenocopied by inactivation of BLI-3, the ortholog of human DUOXs. This suggests a potential role of BLI-3 as a hypoxia sensor independent from the HIF pathway (Figure 2B; Vozdek et al., 2018) and raises the possibility that human DUOXs also sense and respond to hypoxia in an HIF-independent manner.
 
-## ODE as hypoxia sensors in other organisms
+#### ODE as hypoxia sensors in other organisms
 
 ODEs are evolutionary ancient. The major emergence of ODEs occurred at the separation of terrestrial and marine bacteria, coinciding with the emergence of oxygenic photosynthesis ~3.1 billion years ago (Jabłońska and Tawfik, 2021). Given the importance of hypoxia sensing, the evolutionary conservation of the HIF pathway across metazoans comes as no surprise. HIF1α and PHD2 (EGLN1 in C. elegans) emerged early in evolution, whereas additional HIFα and PHD isoforms emerged later in more complex organisms as context-dependent and fine-tuned hypoxia sensing became necessary (Taylor and McElwain, 2010).
 
@@ -207,7 +895,7 @@ What about single-celled organisms? In fission yeast, two hypoxia-sensing mechan
 
 What about prokaryotes? Prokaryotes also sense O2, although they do not appear to use ODEs as sensors. In nitrogen-fixing bacteria (Rhizobium meliloti), changes in O2 levels impact the kinase activity of FixL, which phosphorylates the transcription factor FixJ to regulate the expression of nitrogen-fixing genes (Monson et al., 1995; Agron et al., 1994). In this case, O2 actually acts as an allosteric binding cofactor that leads to a conformation change of FixL (Monson et al., 1995). Hence, FixL directly interacts with O2 molecules, but O2 is not used as a substrate. In most of all of the above, although the details may differ, the key criteria for a hypoxia sensor are met: (1) direct interaction with O2, (2) utilization of O2 as a substrate except in the case of FixL, and (3) causing a downstream response.
 
-## Connection of O2-dependent enzymes to hypoxia adaptations and diseases
+### Connection of O2-dependent enzymes to hypoxia adaptations and diseases
 
 Hypoxia is related to many diseases. Decreased O2 at high altitudes can lead to systemic, organismal-level hypoxia and induce acute and chronic mountain sickness (AMC, CMC) (Roach and Hackett, 2001; Villafuerte and Corante, 2016). Systemic hypoxia is also seen in some respiratory diseases and anemic conditions that have disruption in O2 uptake or transport (Lee et al., 2019). Ischemia resulting from the blockage of blood flow leads to cell death and failure of affected tissues, most notably heart (in myocardial infarction) and brain (in ischemic stroke). (Lee et al., 2019) However, other tissues can also be affected, including the intestine, kidney, and skeletal muscle.
 
@@ -215,7 +903,7 @@ As previously mentioned, many O2-dependent enzymes are regulated at a transcript
 
 We conclude below with two scenarios illustrating the role of O2-dependent enzymes in hypoxia adaptation or diseases: (1) positively selected genetic adaptations associated with O2-dependent enzymes in high-altitude populations; and (2) mutations in genes targeted by drugs associated with O2-dependent enzymes for hypoxia-related diseases.
 
-## O2-dependent enzymes in hypoxia adaptations of high-altitude populations
+#### O2-dependent enzymes in hypoxia adaptations of high-altitude populations
 
 Tibetan, Andean, and Ethiopian populations reside at altitudes above 3500 m with a decreased O2 pressure (<60% of sea level) due to hypobaric hypoxia. Distinct genetic adaptations and physiological characteristics have developed within each population to promote survival at altitude (Beall, 2006). These three groups of humans have resided at high altitude for different lengths of time: Andeans for 10,000–15,000 years (Aldenderfer, 2003), Tibetans for over 30,000 years (Qi et al., 2013), and Ethiopians for even longer (Alkorta-Aranburu et al., 2012).
 
@@ -229,29 +917,58 @@ Ethiopians have a distinct adaptation pattern compared with Tibetans and Andeans
 
 Apart from these relatively well-studied HIF pathway-related genes, there are multiple other genes harboring variants associated with positive selection in these three highlander populations (Table 6). Notably, these include other known hypoxia sensors, such as HIF1AN and KDM5A, as well as potential hypoxia sensors, including KDM4A, HMOX4, SCD, and DUOX2. It will be interesting to further explore how these positively selected variants enhance hypoxia adaptation of highlanders.
 
-## Pathogenic mutations and drug targets within O2-dependent enzymes for hypoxia-related diseases
+**Table 6.**
+ O2-dependent enzymes encoded by genes associated with positive selection in different high-altitude populations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Population</th>
+      <th>Genes*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tibetan</td>
+      <td>EGLN1 (Lorenzo et al., 2014; Bigham et al., 2010; Yi et al., 2010; Simonson et al., 2010; Xu et al., 2011; Yang et al., 2017; Peng et al., 2011; Wuren et al., 2014), CYP2E1 (Simonson et al., 2010), HMOX2 (Simonson et al., 2010; Peng et al., 2011; Wuren et al., 2014), CYP17A1 (Simonson et al., 2010; Wuren et al., 2014), SCD (Simonson et al., 2010), HIF1AN (Simonson et al., 2010), SC5D (Simonson et al., 2010), KDM5A (Simonson et al., 2010), HPD (Simonson et al., 2010), DOHH (Simonson et al., 2010), XDH (Simonson et al., 2010), CYP20A1 (Simonson et al., 2010), TMEM189 (Simonson et al., 2010), KDM4A (Simonson et al., 2010), PAOX (Simonson et al., 2010)</td>
+    </tr>
+    <tr>
+      <td>Andean</td>
+      <td>EGLN1 (Bigham et al., 2010; Bigham et al., 2009), EGLN2 (Bigham et al., 2009), NOS1 (Bigham et al., 2009), NOS2 (Bigham et al., 2010; Bigham et al., 2009; Crawford et al., 2017), DUOX2 (Jacovas et al., 2018), CYP39A1 (Eichstaedt et al., 2014), KDM2A (Eichstaedt et al., 2014), KMO (Eichstaedt et al., 2014), PLOD3 (Eichstaedt et al., 2014), P3H3 (Eichstaedt et al., 2014), CPOX (Eichstaedt et al., 2014), CYP24A1 (Eichstaedt et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>Ethiopian</td>
+      <td>PCYOX1 (Scheinfeldt et al., 2012)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Known hypoxia sensors are highlighted in red._
+
+#### Pathogenic mutations and drug targets within O2-dependent enzymes for hypoxia-related diseases
 
 Erythrocytosis commonly results from exposure to hypoxia. Genetic mutations in the pathway regulating erythropoiesis can also cause pathogenic erythrocytosis with excessive blood viscosity. Such pathogenic mutations have been found in genes, including (1) VHL, EGLN1 (PHD2), and EPAS1 (HIF2A) that affect EPO production, (2) EPOR and its regulator JAK2 that affect erythroid progenitor maturation, and (3) hemoglobin subunits HBA and HBB that affect O2 delivery and tissue pO2 (Bento, 2018). Specifically, for EGLN1, more than 10 variants have been associated with erythrocytosis onset (Gardie et al., 2014). For example, one such mutation (P317R) has significantly decreased enzymatic activity (Percy et al., 2006). No mutations associated with pathogenic erythrocytosis have been identified in EGLN2 and EGLN3, consistent with the notion that EGLN1/PHD2 is the major isoform involved in HIF-mediated EPO upregulation.
 
 Conversely, chronic kidney diseases (CKDs) lead to diminished EPO production and anemia. In adults, EPO is mainly produced by erythropoietin-producing cells (EPCs) in the kidney (Haase, 2013). The dysfunction of EPCs during CKDs results in EPO deficiency and is a key factor leading to associated anemia (Koury and Haase, 2015). Injectable erythropoiesis-stimulating agents (ESAs), such as recombinant human erythropoietin (rhEPO), are a cornerstone of CKD treatment (Singh et al., 2006; Pfeffer et al., 2009; Portolés et al., 2021). In recent years, PHD inhibitors have been developed as an alternative route to HIF stabilization and subsequent EPO production (Portolés et al., 2021; Gupta and Wish, 2017). Unlike rhEPO, PHD inhibitors ameliorate not only EPO deficiency but also inflammation and altered iron metabolism in CKD, both of which are regulated by HIF (Koury and Haase, 2015; Portolés et al., 2021). Currently, four PHD inhibitors (Roxadustat, Vadadustat, Daprodustat, and Molidustat) have entered or completed phase III clinical trials for treatment of the anemia of CKD (Portolés et al., 2021). Of them, Roxadustat and Daprodustat have been approved for use in Japan and/or China (Dhillon, 2019; Dhillon, 2020).
 
-## Open questions for discovering hypoxia sensors within the ODE members
+#### Open questions for discovering hypoxia sensors within the ODE members
 
 Although we have an in-depth understanding of a small handful of O2 sensors, the potential landscape of hypoxia sensing in humans remains largely uncharted. Even once an ODE is confirmed to be a hypoxia sensor, much remains to be investigated.
 
-## At the enzymatic level
+#### At the enzymatic level
 
 Most reported O2 Km values for ODEs are based on in vitro testing of the enzyme. However, in vivo, O2 Km depends on (1) the substrate (e.g., as discussed for ALOX12), and (2) the regulation of the ODE by other proteins and cofactors (e.g., as discussed for HO-2). Regarding (1), for a given ODE, what are its O2 affinities when catalyzing reactions using its various endogenous substrates in vivo? Answering this question requires identifying the in vivo substrates and then measuring O2 Km for each substrate. Regarding (2), how is the O2 Km of the ODE affected by modifying factors (e.g., PTMs and cofactor binding)? Answering this question requires identifying the modifying factors and then measuring O2 Km in the appropriate cellular contexts.
 
-## At the cellular level
+#### At the cellular level
 
 Most studies of ODEs have focused on individual pathways directly responsible for downstream effects. However, these pathways do not act in isolation but rather as part of a network. Each ODE could have roles in multiple downstream response pathways, feedback loops, and cross-talk with other pathways. Ultimately, a systems-level understanding is needed to capture the complexity of O2 sensing within the cell.
 
-## At the tissue level
+#### At the tissue level
 
 Currently, most studies of ODEs use cell models in which the O2 level is set to a single level controlled experimentally. However, this ignores the fact that from tissue-to-tissue, O2 levels vary substantially even at baseline. Furthermore, when an organism is exposed to hypoxic stress, the O2 levels from tissue-to-tissue and within a tissue can vary even further due to tissue-level changes such as vasodilation. This raises the question: what is the tissue specificity (and/or cell type specificity) of hypoxia sensors under basal and stressed conditions? An intriguing possibility is that each tissue might have a unique set of ODEs in order to sense and respond to the ongoing fluctuations in O2 concentration during maintenance of homeostasis, in accordance with tissue-specific O2 levels.
 
-## At the organismal level
+#### At the organismal level
 
 Although an impressive diversity of molecular O2 sensors has been identified, their role in organismal-level adaptations to hypoxia remains unexplored territory. By far the best studied system for hypoxia sensing and response at the organismal level is PHD-HIF-pVHL pathway. Its role in improving O2 transport by increasing EPO synthesis by the kidney is well understood and has been the subject of many reviews (Haase, 2013; Nangaku and Eckardt, 2007).
 
@@ -259,10 +976,10 @@ There are numerous other adaptations to hypoxia that are much less well understo
 
 One of the challenges in linking molecular O2 sensors to responses at the organismal level is that organismal-level responses and adaptations are diverse. Vertebrate animals vary enormously on their tolerance of O2 deprivation. Some vertebrates, such as the crucian carp and the Western painted turtle, can survive for months without O2 (Bickler and Buck, 2007). These animals exceed the hypoxia tolerance of humans by a factor of at least 10,000 (Bickler and Buck, 2007). The molecular switches that orchestrate this impressive capability remain poorly defined. Certainly, if one is searching for molecular O2sensors, animals such as the carp and turtle would be fertile ground.
 
-## At the developmental level
+#### At the developmental level
 
 Development as a model for changing O2 sensing and response has been little explored. Changes in O2 during development can be dramatic: the intrauterine environment of placental gas exchange has been likened to that of ascent of Mt. Everest, with a rapid increase in O2 upon aerial respiration at birth (Barcroft, 1946; Martin et al., 2010). The changes in O2 availability may signal crucial changes in synaptic physiology in the brain. How O2 sensing is regulated throughout development in accordance with changes in O2 levels is an important question to be answered.
 
-## Summary
+### Summary
 
 Aerobic organisms have evolved mechanisms to sense and respond to changes in O2 levels. O2 participates in hundreds of biochemical reactions regulating diverse, essential cellular processes. The enzymes responsible for these reactions directly interact with O2 and may function as hypoxia sensors by transducing the signal of low O2 via a decrease in enzymatic activity (rate or product yield). Here, we summarized and discussed the known and potential hypoxia sensors within each subcategory of O2-dependent enzymes in human, expanding from the well-known PHD enzymes, to the more recently identified sensors within the KDM family, to other enzymes with emerging roles in hypoxia sensing. We also discussed O2-dependent enzymes involved in hypoxia-related evolutionary adaptations and diseases, highlighting their relevance beyond chemical reactions. Much remains to be explored for most O2-dependent enzymes and roles in hypoxia. Are there new hypoxia sensors still to be discovered within O2-dependent enzymes? How do various hypoxia sensors coordinate with each other to regulate downstream cellular responses? What is the mechanism for each tissue to set its own hypoxia sensing threshold based on the specific physiological pO2? Furthermore, how can these discoveries help with hypoxia adaptation and disease treatment? All these questions await future research.

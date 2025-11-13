@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.48429.001 Animals, including humans, consistently exhibit myopia in two different contexts: foraging, in which they harvest locally beyond what is predicted by optimal foraging theory, and intertemporal choice, in which they exhibit a preference for immediate vs. delayed rewards beyond what is predicted by rational (exponential) discounting. Despite the similarity in behavior between these two contexts, previous efforts to reconcile these observations in terms of a consistent pattern of time preferences have failed. Here, via extensive behavioral testing and quantitative modeling, we show that rats exhibit similar time preferences in both contexts: they prefer immediate vs. delayed rewards and they are sensitive to opportunity costs of delays to future decisions. Further, a quasi-hyperbolic discounting model, a form of hyperbolic discounting with separate components for short- and long-term rewards, explains individual rats’ time preferences across both contexts, providing evidence for a common mechanism for myopic behavior in foraging and intertemporal choice.
+Animals, including humans, consistently exhibit myopia in two different contexts: foraging, in which they harvest locally beyond what is predicted by optimal foraging theory, and intertemporal choice, in which they exhibit a preference for immediate vs. delayed rewards beyond what is predicted by rational (exponential) discounting. Despite the similarity in behavior between these two contexts, previous efforts to reconcile these observations in terms of a consistent pattern of time preferences have failed. Here, via extensive behavioral testing and quantitative modeling, we show that rats exhibit similar time preferences in both contexts: they prefer immediate vs. delayed rewards and they are sensitive to opportunity costs of delays to future decisions. Further, a quasi-hyperbolic discounting model, a form of hyperbolic discounting with separate components for short- and long-term rewards, explains individual rats’ time preferences across both contexts, providing evidence for a common mechanism for myopic behavior in foraging and intertemporal choice.
 
 ## Introduction
 
@@ -39,15 +39,113 @@ In the present study, we found that rats exhibit similar time preferences in for
 
 ## Results
 
-## Rats consider long-term rewards, but exhibit a bias in processing pre- vs. post-reward delays
+### Rats consider long-term rewards, but exhibit a bias in processing pre- vs. post-reward delays
 
 Long Evans rats (n = 8) were tested in a series of patch foraging tasks in operant conditioning chambers (Kane et al., 2017). To harvest reward (10% sucrose water) from a patch, rats pressed a lever on one side of the front of the chamber (left or right) and reward was delivered in an adjacent port. After a post-reward delay (inter-trial interval or ITI), rats again chose to harvest a smaller reward or to leave the patch by nose poking in the back of the chamber. A nose poke to leave the patch caused the harvest lever to retract and initiated a delay to control the time to travel to the next patch. After the delay, the opposite lever extended (e.g. if the left lever was extended previously, the right lever would be extended now), and rats could then harvest from (or leave) this replenished patch (Figure 1—figure supplement 1).
 
 In four separate experiments, we manipulated different variables of the foraging environment: (i) in the ‘Travel Time Experiment,' a 10 s vs. 30 s delay was imposed between patches, (ii) in the ‘Depletion Rate Experiment,' reward depleted at a rate of 8 vs. 16 μL per harvest, (iii) in the ‘Scale Experiment,' the overall magnitude of rewards and delays was varied, such that in one condition, the size of rewards and length of delays was twice that of the other. (iv) Finally, in the ‘Pre-vs-Post Experiment,' the placement of delays was varied, such that the total time to harvest reward remained constant, but in one condition there was no pre-reward delay and ∼13 s post reward delay, and in the other there was a 3 s pre-reward delay and ∼10 s post-reward delay. Parameters for each experiment are shown in Table 1. For each condition within each experiment, rats were trained for 5 days and tested for an additional 5 days; all behavioral data presented is from the 5 test days. The order of conditions within each experiment was counterbalanced across rats. Every patch visit was included for analysis; mixed effects models were used to examine the effect of task condition on the number of trials spent in each patch. Random intercepts and random slopes for the effect of task condition were used to group observations within each rat. To compare rat behavior to the optimal behavior in each condition, a mixed effects model was used to test the effect of task condition on the difference between the number of trials spent in each patch and the optimal number of trials for that patch, with random intercepts and slopes for each rat. For this mixed effects model, an intercept of zero indicates optimal performance, and the slope indicates the change in behavior relative to the optimal behavior between conditions (see Materials and ethods for additional detail).
 
+**Table 1.**
+ Parameters for each of the first four foraging experiments.Harvest time = time to make a decision to harvest + pre-reward delay + post-reward delay (inter-trial interval). To control reward rate in the patch, the post-reward delay was adjusted relative to the decision time to hold the harvest time constant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Experiment</th>
+      <th>Condition</th>
+      <th>Start Reward</th>
+      <th>Depletion Rate</th>
+      <th>Pre-Reward Delay</th>
+      <th>Harvest Time</th>
+      <th>Travel Time</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">travel time</td>
+      <td>10 s</td>
+      <td rowspan="2">60, 90, or 120 μL†</td>
+      <td rowspan="2">−8 μL</td>
+      <td rowspan="2">0 s</td>
+      <td rowspan="2">10 s</td>
+      <td>10 s</td>
+    </tr>
+    <tr>
+      <td>30 s</td>
+      <td>30 s</td>
+    </tr>
+    <tr>
+      <td rowspan="2">depletion rate</td>
+      <td>−8 μL</td>
+      <td rowspan="2">90 μL</td>
+      <td>−8 μL</td>
+      <td rowspan="2">0 s</td>
+      <td rowspan="2">12 s</td>
+      <td rowspan="2">12 s</td>
+    </tr>
+    <tr>
+      <td>−16 μL</td>
+      <td>−16 μL</td>
+    </tr>
+    <tr>
+      <td rowspan="2">scale</td>
+      <td>90 μL/10 s</td>
+      <td>90 μL</td>
+      <td>−8 μL</td>
+      <td rowspan="2">0 s</td>
+      <td>10 s</td>
+      <td>10 s</td>
+    </tr>
+    <tr>
+      <td>180 μL/20 s</td>
+      <td>180 μL</td>
+      <td>−16 μL</td>
+      <td>20 s</td>
+      <td>20 s</td>
+    </tr>
+    <tr>
+      <td rowspan="2">handling time</td>
+      <td>0 s</td>
+      <td rowspan="2">90 μL</td>
+      <td rowspan="2">−8 μL</td>
+      <td>0 s</td>
+      <td rowspan="2">15 s</td>
+      <td rowspan="2">15 s</td>
+    </tr>
+    <tr>
+      <td>3 s</td>
+      <td>3 s</td>
+    </tr>
+    <tr>
+      <td rowspan="2">post-reward delay*</td>
+      <td>3 s</td>
+      <td rowspan="2">90 μL</td>
+      <td rowspan="2">−8 μL</td>
+      <td rowspan="2">0 s</td>
+      <td>5–8 s**</td>
+      <td rowspan="2">10 s</td>
+    </tr>
+    <tr>
+      <td>12 s</td>
+      <td>13–16 s**</td>
+    </tr>
+  </tbody>
+</table>
+
+_†Rats encountered all three patch types in both conditions.*One group of rats (n = 8) was tested on the first four experiments, but a separate group (n = 8) was tested on this final foraging experiment.**In this experiment, the harvest time was not held constant — the post-reward delay was always 3 s or 12 s regardless of the time to make a decision._
+
 The Travel Time Experiment was designed to test the two main predictions of MVT: (i) that animals should stay longer in patches that yield greater rewards and (ii) animals should stay longer in all patches when the cost of traveling to a new patch is greater. In this experiment, rats encountered three different patch types within sessions, which started with varying amount of reward (60, 90, or 120 μL) and depleted at the same rate (8 μL/harvest). The delay between patches was either 10 s or 30 s; each travel time delay was tested in its own block of sessions and the order was counterbalanced across rats, with a range of 87–236 patches visited per condition per rat. As predicted by MVT, rats stayed for more trials in patch types that started with larger reward volume (β = 118.091 trials/mL, SE = 1.862, t(2490.265) = 63.423, p < .001), indicating that rats considered reward across future patches. Rats also stayed longer in all patch types when time between patches was longer (β = 1.893 trials, SE = 0.313, t(118.839) = 6.040, p < .001; Figure 1A), indicating sensitivity to opportunity costs. However, rats uniformly overharvested relative to predictions of MVT (βrat-MVT = 3.396 trials, SE = 0.176, t(6.960) = 19.269, p < .001). The degree to which rats overharvested was not significantly different between the 10 s and 30 s travel conditions (β10 s-30 s = 0.304 trials, SE = 0.155, t(7.3857) = 1.964, p = 0.088).
 
 The Depletion Rate Experiment tested another critical variable in foraging environments: the rate of reward depletion within a patch. Quicker reward depletion causes the local reward rate to deplete to the long-run average reward rate quicker, thus MVT predicts earlier patch leaving. Within sessions, rats encountered a single patch type (starting volume of 90 μL) that depleted at a rate of either 8 or 16 μL/trial, tested in separate sessions and counterbalanced, with a range of 152–283 patches visited per condition per rat. As predicted by MVT, rats left patches earlier when patches depleted more quickly (β = 2.589 trials, SE = 0.155, t(7.000) = 16.75, p < .001; Figure 1B). But, again, rats stayed in patches longer than is predicted by MVT (βrat-MVT = 2.005 trials, SE = 0.134, t(7.004) = 14.97, p < .001). Rats overharvested to a greater degree in the 8 μL depletion condition than the 16 μL depletion condition (β8μL-16μL = 1.589 trials, SE = 0.155, t(7.000) = 10.28, p < .001).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/48429/elife-48429-fig1-v2.jpg)
+
+**Figure 1.:** Rat foraging behavior in the (A) Travel Time, (B) Depletion Rate, (C) Scale, and (D) Pre-vs-Post Experiments. In (A), points and error bars represent mean ± standard error. In (B-D), points and connecting lines represent behavior of each individual rat. Red lines indicate optimal behavior (per MVT).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48429/elife-48429-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Rats press a lever to harvest reward from the patch then receive reward in an adjacent port following a pre-reward delay (handling time or HT). After receiving reward, there is a post-reward delay (inter-trial interval or) before rats can make their next decision. Rats can leave the patch by nose poking in the back of the chamber (trial n+2), which initiates a delay simulating time to travel to the next patch, after which, rats can harvest from a new replenished patch.
 
 These first two experiments confirm that rats qualitatively follow the predictions of MVT, but consistently overharvest. There are many possible explanations for this pattern of overharvesting, including an aversion to leaving the offer of reward within a patch and nonlinear reward utility (Wikenheiser et al., 2013; Carter and Redish, 2016; Constantino and Daw, 2015). The Scale Experiment was conducted in an effort to distinguish between these hypotheses by manipulating the scale of time delays and rewards. Long-term rate maximization predicts that an increase in reward size in proportion to reward delay should have no effect on the number of harvests per patch, as the reward rate across trials would be equal. But if animals’ perception of reward or time is nonlinear, a manipulation of scale will affect their subjective point of equality and predict a change in behavior across the two environments. The scale of rewards and delays was manipulated in the following manner: patches started with (A) 90 or (B) 180 μL of reward, depleted at a rate of (A) 8 or (B) 16 μL/trial, and the duration of harvest trials and travel time between patches was (A) 10 or (B) 20 s. Rats visited a range of 60–212 patches per condition. They overharvested in both A and B conditions (βrat-MVT = 4.374 trials, SE = 0.153, t(6.900) = 28.597, p < .001) and, contrary to predictions of MVT, they stayed in patches significantly longer and overharvested to a greater degree in the B condition that provided larger rewards but at proportionately longer delays (β = 1.937 trials, SE = 0.193, t(6.972) = 9.996, p < .001; Figure 1C). This finding suggests that a nonlinearity in the perception of reward value and/or time contributes to overharvesting.
 
@@ -57,23 +155,95 @@ To determine whether the preference for immediate rewards can be explained by in
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/48429/elife-48429-fig2-v2.jpg)
 
-**Figure 2.:** (A) Rat behavior in the Post-Reward Delay Experiment. Points and lines represent behavior of individual rats. Red line indicates optimal behavior (per MVT). (B) Rat behavior in the intertemporal choice task. Points and error bars represent mean ± standard error for each condition.10.7554/eLife.48429.008Figure 2—source data 1.
+**Figure 2.:** (A) Rat behavior in the Post-Reward Delay Experiment. Points and lines represent behavior of individual rats. Red line indicates optimal behavior (per MVT). (B) Rat behavior in the intertemporal choice task. Points and error bars represent mean ± standard error for each condition.
 
 The data from the foraging experiments described above suggest that rats exhibit time preferences in the foraging task. In a final ‘Intertemporal Choice Experiment,' we tested whether the same rats that participated in the Post-Reward Delay Experiment would exhibit similar time preferences in a standard intertemporal choice (i.e. a delay-discounting) task. This task consisted of a series of 20-trial episodes. On each trial, rats pressed either the left or right lever to receive a smaller-sooner (SS) reward of 40 μL after a 1 s delay or a larger-later (LL) reward of 40, 80, or 120 μL after a 1, 2, 4, or 6 s delay. For the first 10 trials of each episode, rats were forced to press either the left or right lever to learn the value and delay associated with that lever (only one lever extended on each of these trials). For the last 10 trials of an episode, both levers extended and rats were free to choose. The LL reward value and delay, and the LL lever (left or right) were randomly selected at the start of each episode. Rats were tested in two different versions of this task: one in which the post-reward delay was held constant, such that the longer pre-reward delays reduced reward rate (constant delay); and another in which the time of the trial was held constant, such that longer pre-reward delays resulted in shorter post-reward delays to keep reward rate constant (constant rate). MVT, which maximizes long-term reward rate, predicts that rats would be sensitive to the pre-reward delay in the constant delay condition but not the constant trial condition (in which the pre-reward delay does not affect reward rate).
 
-Rats were given three training sessions to learn the structure of the intertemporal choice task after previously being tested in the foraging task, then they were tested for an additional 13 sessions in each condition, participating in a range of 590–2810 free choice trials per condition (constant delay vs. constant rate). Each free choice trial within each episode was counted as a separate observation. Choice data were analyzed using a generalized linear mixed-effects model (i.e. a mixed-effects logistic regression) to examine the effect of the size of the LL reward, the length of the LL delay, task condition (constant delay vs. constant rate), and their interactions on decisions to choose the LL vs. SS option, with random intercepts and random slopes for the effects of LL reward, LL delay, and task condition for each rat. Three post-hoc comparisons were used to test the effects of (i) LL reward and (ii) LL delay within each condition, and (iii) LL delay between the constant delay and constant rate conditions (Figure 2B). (i) In both conditions, rats were more likely to choose larger LL rewards (constant delay: β = 0.477, SE = 0.090, χ2(1)=28.320, p < .001; constant rate: β = 0.450, SE = 0.089, χ2(1) = 25.378, p < .001), showing that they were sensitive to reward magnitude. (ii) They were also sensitive to the pre-reward delay in both conditions (constant delay: β = −0.240, SE = 0.023, χ2(1) = 104.882, p < .001; constant rate: β = −0.152, SE = 0.022, χ2(1) = 46.919, p < .001). On average, rats were equally likely to select the LL option across conditions — the main effect of task condition was not significant (β=0.010, SE = 0.105, z = 0.092, p = 0.927). (iii) However, rats were less sensitive to increasing pre-reward delays when pre-reward delays did not affect reward rate (in the constant rate condition), indicated by a change in LL delay slope between conditions (β = 0.088, SE = 0.026, χ2(1) = 11.376, p < .001). Overall, rats exhibited similar time preferences in the foraging and intertemporal choice tasks: they valued rewards less with longer delays until receipt but they were sensitive to opportunity costs (e.g. time delays between receiving reward and future decisions).
+Rats were given three training sessions to learn the structure of the intertemporal choice task after previously being tested in the foraging task, then they were tested for an additional 13 sessions in each condition, participating in a range of 590–2810 free choice trials per condition (constant delay vs. constant rate). Each free choice trial within each episode was counted as a separate observation. Choice data were analyzed using a generalized linear mixed-effects model (i.e. a mixed-effects logistic regression) to examine the effect of the size of the LL reward, the length of the LL delay, task condition (constant delay vs. constant rate), and their interactions on decisions to choose the LL vs. SS option, with random intercepts and random slopes for the effects of LL reward, LL delay, and task condition for each rat. Three post-hoc comparisons were used to test the effects of (i) LL reward and (ii) LL delay within each condition, and (iii) LL delay between the constant delay and constant rate conditions (Figure 2B). (i) In both conditions, rats were more likely to choose larger LL rewards (constant delay: β = 0.477, SE = 0.090, $χ^{2}$(1)=28.320, p < .001; constant rate: β = 0.450, SE = 0.089, $χ^{2}$(1) = 25.378, p < .001), showing that they were sensitive to reward magnitude. (ii) They were also sensitive to the pre-reward delay in both conditions (constant delay: β = −0.240, SE = 0.023, $χ^{2}$(1) = 104.882, p < .001; constant rate: β = −0.152, SE = 0.022, $χ^{2}$(1) = 46.919, p < .001). On average, rats were equally likely to select the LL option across conditions — the main effect of task condition was not significant (β=0.010, SE = 0.105, z = 0.092, p = 0.927). (iii) However, rats were less sensitive to increasing pre-reward delays when pre-reward delays did not affect reward rate (in the constant rate condition), indicated by a change in LL delay slope between conditions (β = 0.088, SE = 0.026, $χ^{2}$(1) = 11.376, p < .001). Overall, rats exhibited similar time preferences in the foraging and intertemporal choice tasks: they valued rewards less with longer delays until receipt but they were sensitive to opportunity costs (e.g. time delays between receiving reward and future decisions).
 
-## Quasi-hyperbolic discounting best explains behavior across all tasks
+### Quasi-hyperbolic discounting best explains behavior across all tasks
 
 To test whether a common set of cognitive biases could explain time preferences in both the foraging and intertemporal choice tasks, both tasks were modeled as continuous time semi-markov processes. These models consisted of a set of states that represented the time between each event in each of the tasks (e.g. cues turning on/off, lever press, reward delivery; for state space diagrams of both tasks, see Figure 3—figure supplement 1 and Figure 4—figure supplement 1). These models assumed that animals have learned the appropriate structure of the task (i.e. the time spent and reward obtained in each state) unless otherwise noted. The value of a given state was the discounted value of all future rewards available from that state, and the agent chose the option that yielded the greatest discounted future reward via a stochastic process. As the discount factor approached 1 (i.e. no temporal discounting), this model converged to long-term reward maximization, equivalent to MVT. Additional parameters were added to the model to test four specific hypotheses for suboptimal foraging behavior: (i) subjective costs associated with leaving a patch, in which the value of leaving was reduced by a ‘cost' term; (ii) nonlinear reward utility, in which the subjective utility of a reward increased sublinearly with respect to the reward magnitude; (iii) biased time perception, which assumed that animals underestimate post-reward delays, possibly due to insufficient learning of task structure (Blanchard et al., 2013; Pearson et al., 2010), or overestimate pre-reward delays; and (iv) temporal discounting. A brief description of each hypothesis and its general predictions can be found in Table 2. For each model, group level parameters and parameters for each individual rat were fit simultaneously using an expectation-maximization algorithm (Huys et al., 2011). Parameters were fit to each experiment separately (one set of parameters for both conditions in each experiment). Model predictions were calculated separately for each rat, using the rat’s individual parameters. Full details for all models, fitting procedures, and model comparison can be found in the Materials and methods.
 
+**Table 2.**
+ Description of the hypotheses for overharvesting with general, qualitative predictions for the degree of overharvesting in each experiment.Quantitative predictions depend on the exact formalization of each model and its specific parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Hypothesis</th>
+      <th>Experimental predictions</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Subjective Costs</td>
+      <td>A cost term c reduces the value of leaving a patch. Predicts greater overharvesting with higher c. Not affected by specific manipulations to reward or time.</td>
+      <td>Rats will follow qualitative predictions of the Marginal Value Theorem, but exhibit an equal degree of overharvesting across conditions in each experiment.</td>
+    </tr>
+    <tr>
+      <td>Nonlinear Reward Utility</td>
+      <td>Subjective value increases sublinear to reward magnitude. Predicts greater overharvesting with steeper utility functions with larger rewards.</td>
+      <td>Rats will exhibit an equal degree of ovarharvesting in all experiments except for the Scale experiment. In the Scale experiment, rats will overharvest more in the conditions with larger rewards.</td>
+    </tr>
+    <tr>
+      <td>Biased Time Perception</td>
+      <td>i) Post-reward delays perceived as shorter, ii) pre-reward delays perceived as longer, or iii) longer delays (irrespective of their placement) perceived as shorter. All three hypotheses predict greater overharvesting with longer delays.</td>
+      <td>Rats will exhibit a greater degree of overharvesting in the condition with longer delays in the Scale environment, in the condition with the longer post-reward delay in the Pre-vs-Post experiment, and in the condition with longer post-reward delay in the Post-Reward Delay experiment</td>
+    </tr>
+    <tr>
+      <td>Temporal Discounting</td>
+      <td>Value of future rewards discounted due to delay to receive them. Predicts greater overharvesting with greater levels of discounting and with longer delays</td>
+      <td>Rats will overharvest to a greater degree in the conditions with longer delays in the Scale and Post-Reward Delay experiments and they will leave patches earlier due to the longer pre-reward delay in the Pre-vs-Post experiment.</td>
+    </tr>
+  </tbody>
+</table>
+
 Subjective costs to leave a patch and nonlinear reward utility have explained suboptimal foraging behavior in prior studies that have manipulated opportunity costs (e.g. travel time or pre-reward delays) and depletion rate (Constantino and Daw, 2015; Wikenheiser et al., 2013; Carter and Redish, 2016). However, these factors are insensitive to the placement of time delays (pre- vs. post-reward) and thus, cannot explain the preference for more immediate rewards. Consistent with these prior studies, the subjective costs and nonlinear reward utility models explained overharvesting in the Travel Time, Depletion Rate, and Post-Reward Delay Experiments, but they failed to explain time preferences in the Pre-vs-Post foraging experiment (Figure 3—figure supplement 2).
 
-We next examined whether biased time perception and temporal discounting could explain suboptimal foraging behavior across all tasks. Three implementations for biased time perception were tested: linear underestimation of post-reward delays (p⁢o⁢s⁢t⁢D⁢e⁢l⁢a⁢y=α*p⁢o⁢s⁢t⁢D⁢e⁢l⁢a⁢y), non-linear underestimation of post-reward delays (p⁢o⁢s⁢t⁢D⁢e⁢l⁢a⁢y=p⁢o⁢s⁢t⁢D⁢e⁢l⁢a⁢yα), and overestimation of pre-reward delays (p⁢r⁢e⁢D⁢e⁢l⁢a⁢y=α*p⁢r⁢e⁢D⁢e⁢l⁢a⁢y). For temporal discounting, we tested the two common single-parameter discounting functions, exponential (v⁢a⁢l⁢u⁢e=e-β*t⁢i⁢m⁢e*r⁢e⁢w⁢a⁢r⁢d) and standard hyperbolic (v⁢a⁢l⁢u⁢e=r⁢e⁢w⁢a⁢r⁢d/(1+k*t⁢i⁢m⁢e)), and two more flexible discounting models: constant sensitivity discounting (Ebert and Prelec, 2007; Zauberman et al., 2009), which predicts hyperbolic time preferences due to insensitivity to longer delays (v⁢a⁢l⁢u⁢e=e-β*t⁢i⁢m⁢eα*r⁢e⁢w⁢a⁢r⁢d); and quasi-hyperbolic discounting, formalized as two competing exponential discounting systems (v⁢a⁢l⁢u⁢e=[ω*e-β*t⁢i⁢m⁢e+(1-ω)*e-δ*t⁢i⁢m⁢e]*r⁢e⁢w⁢a⁢r⁢d; (Laibson, 1997; McClure et al., 2007). All of these models qualitatively predicted rat behavior across foraging experiments (Figure 3, Figure 3—figure supplement 3, Figure 3—figure supplement 4).
+We next examined whether biased time perception and temporal discounting could explain suboptimal foraging behavior across all tasks. Three implementations for biased time perception were tested: linear underestimation of post-reward delays ($p⁢o⁢s⁢t⁢D⁢e⁢l⁢a⁢y=\alpha*p⁢o⁢s⁢t⁢D⁢e⁢l⁢a⁢y$), non-linear underestimation of post-reward delays ($p⁢o⁢s⁢t⁢D⁢e⁢l⁢a⁢y=p⁢o⁢s⁢t⁢D⁢e⁢l⁢a⁢y^{\alpha}$), and overestimation of pre-reward delays ($p⁢r⁢e⁢D⁢e⁢l⁢a⁢y=\alpha*p⁢r⁢e⁢D⁢e⁢l⁢a⁢y$). For temporal discounting, we tested the two common single-parameter discounting functions, exponential ($v⁢a⁢l⁢u⁢e=e^{-\beta*t⁢i⁢m⁢e}*r⁢e⁢w⁢a⁢r⁢d$) and standard hyperbolic ($v⁢a⁢l⁢u⁢e=r⁢e⁢w⁢a⁢r⁢d/(1+k*t⁢i⁢m⁢e)$), and two more flexible discounting models: constant sensitivity discounting (Ebert and Prelec, 2007; Zauberman et al., 2009), which predicts hyperbolic time preferences due to insensitivity to longer delays ($v⁢a⁢l⁢u⁢e=e^{-\beta*t⁢i⁢m⁢e^{\alpha}}*r⁢e⁢w⁢a⁢r⁢d$); and quasi-hyperbolic discounting, formalized as two competing exponential discounting systems ($v⁢a⁢l⁢u⁢e=[\omega*e^{-\beta*t⁢i⁢m⁢e}+(1-\omega)*e^{-\delta*t⁢i⁢m⁢e}]*r⁢e⁢w⁢a⁢r⁢d$; (Laibson, 1997; McClure et al., 2007). All of these models qualitatively predicted rat behavior across foraging experiments (Figure 3, Figure 3—figure supplement 3, Figure 3—figure supplement 4).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/48429/elife-48429-fig3-v2.jpg)
+
+**Figure 3.:** (A-E) Predictions of the best fit quasi-hyperbolic discounting model to all foraging tasks. Points and error bars represent mean ± standard deviation of the means for each individual rat; lines and ribbon represent the mean ± standard deviation of the means of the model-predicted behavior for each individual rat. (F) The sum of iBIC scores across all foraging tasks for each model. Cost = subjective cost model, util-pwr and util-crra = nonlinear reward utility with power and CRRA function respectively, pre-del = linear overestimation of pre-reward delays, post-del = linear underestimation of post-reward delays, post-del-pwr=underestimation of post-reward delays according to a power function, disc-exp = exponential discounting, disc-hyp = hyperbolic discounting, disc-cs = constant sensitivity discounting, disc-quasi = quasi hyperbolic discounting.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48429/elife-48429-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** State space diagram for the semi-markov model of the foraging task. Decisions to stay vs. leave are made in Decision states. A decision to stay causes a transition to the handling time, then reward, ITI, and to the Decision state on the next trial. Reward is delivered uniformly throughout time spent in the each reward state. Reward depletion is achieved via shorter time spent in the reward state (resulting in longer stay in the ITI state). A decision to leave causes a transition to the Travel state, then to the first trial of the patch.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/48429/elife-48429-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Predictions of the best fit subjective cost and nonlinear reward utility models (power law = util pwr; constant relative risk aversion = util CRRA). Black points and error bars represent mean ± standard error of observed behavior. Colored lines represent the mean model predicted behavior across rats.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/48429/elife-48429-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Predictions of the best fit models of overestimation of pre-reward delays (pre-delay), linear underestimation of post-reward delays (post-delay), and nonlinear underestimation of post-reward delays (post-delay-nonlinear). Points and errorbars are the mean ± standard deviation of rat behavior, colored lines represent the mean model predicted number of harvests across all rats.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/48429/elife-48429-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Predictions of the best fit exponential discounting model (disc-exp), hyperbolic discounting model (disc-hyp), and constant sensitivity discounting model (disc-cs). Points and error bars are the mean ± standard deviation of rat behavior; colored lines represent the mean predicted number of harvests across all rats.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/48429/elife-48429-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Cost = subjective cost model, util-pwr and util-crra = nonlinear reward utility with power and CRRA function respectively, pre-del = linear overestimation of pre-reward delays, post-del = linear underestimation of post-reward delays, post-del-pwr=underestimation of post-reward delays according to a power function, disc-exp = exponential discounting, disc-hyp = hyperbolic discounting, disc-cs = constant sensitivity discounting, disc-quasi = quasi hyperbolic discounting.
 
 To determine which model provided the best quantitative fit, we compared the group-level Bayesian Information Criterion (integrated BIC or iBIC; Huys et al., 2011; Huys et al., 2012) of all models in each of the foraging tasks. To compare across tasks, we took the sum of iBIC for each model. The quasi-hyperbolic discounting model had the lowest sum of iBIC, the constant sensitivity discounting model the second lowest, and the hyperbolic discounting model third (Figure 3). These three models were also among the lowest iBIC values for each individual experiment Figure 3—figure supplement 5). All three of these models predict that animals will exhibit hyperbolic time preferences, suggesting that suboptimal foraging behavior observed in these experiments is due to time preferences.
 
 Next, we tested whether the quasi-hyperbolic discounting model that provided the best fit to foraging behavior could also explain behavior in the intertemporal choice task. As in the model of the foraging task, the model of the intertemporal choice task took into account all future rewards, including rewards from future episodes (see abbreviated state space diagram in Figure 4—figure supplement 1). We tested the nonlinear reward utility, biased time perception and temporal discounting models in this task (the subjective cost model does not apply to this task). Again, the quasi-hyperbolic discounting model had the lowest iBIC and hyperbolic discounting model the second lowest, but the constant sensitivity model had a higher iBIC than the biased time perception models (Figure 4). As the constant sensitivity model produces hyperbolic time preferences via insensitivity to longer delays, these results suggest that hyperbolic time preferences without insensitivity to delays is the best explanation for rat intertemporal choice behavior.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/48429/elife-48429-fig4-v2.jpg)
+
+**Figure 4.:** (A) Quasi-hyperbolic model predictions for the intertemporal choice task. Points and error bars represent the mean ± standard error of individual rat behavior; lines and ribbon represent mean ± standard error of model predicted behavior for each individual rat. (B) The iBIC score for each model for the delay discounting experiment. Util-pwr and util-crra = nonlinear reward utility with power and CRRA function respectively, pre-del = linear overestimation of pre-reward delays, post-del = linear underestimation of post-reward delays, post-del-pwr=underestimation of post-reward delays according to a power function, disc-exp = exponential discounting, disc-hyp = hyperbolic discounting, disc-cs = constant sensitivity discounting, disc-quasi = quasi hyperbolic discounting.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48429/elife-48429-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Decisions made in Decision states cause transition to the Delay, Reward, and ITI states for the option chosen (either SS or LL), then back to the next Decision state. The model consisted of 10 consecutive trials — the number of free choice trials — plus the value of rewards in future games.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/48429/elife-48429-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) iBIC for the full horizon and one-trial horizon discounting models (B) Measured log-transformed discount factors for the full horizon and one-trial horizon discounting models. Bars and errorbars represent mean ± standard error.
 
 If hyperbolic time preferences reflect a common explanation for suboptimal decision-making, then it might be expected that a model of behavior fit to one task could predict a rat’s behavior in the other task. To test the external validity of this hypothesis, data from each task were separated into three subsets. The best fitting model from both tasks, the quasi-hyperbolic discounting model, was fit to two subsets of data from one task, then the negative log likelihood (-LL) of the data was assessed on the left out sample from both tasks. This process was repeated such that each subset served as the left out sample. To determine which discount function provided the better fit to data from each task, we calculated the difference in -LL of the left out sample between the model fit to intertemporal choice data and the model fit to foraging data (-LL difference = -LLitc - LLforage). Since smaller -LL indicates a better fit, a positive -LL difference indicates that the discount function fit to foraging data provided a better fit (i.e. the foraging -LL was lower than the intertemporal choice -LL). For the foraging task, discounting functions fit to foraging data provided a better fit than discounting functions fit to intertemporal choice data for all eight rats. Interestingly, for the intertemporal choice task, discounting functions fit to foraging data provided a better fit than discounting functions fit to intertemporal choice data for 3 of 8 rats (Figure 5). The quasi-hyperbolic model fit to the foraging task generalized well to the intertemporal choice task, providing support for the idea that foraging and intertemporal choice can be described by a common discount function.
 
@@ -99,11 +269,11 @@ Although quasi-hyperbolic discounting provided the best singular explanation for
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Adult Long-Evans rats were used (Charles River, Kingston, NY). One group of eight rats participated in the scale, travel time, depletion rate, and handling time experiments (in that order), a different set of eight rats were tested on the post-reward delay foraging experiment then the delay discounting task. Rats were housed on a reverse 12 hr/12 hr light/dark cycle. All behavioral testing was conducted during the dark period. Rats were food restricted to maintain a weight of 85–90% ad-lib feeding weight, and were given ad-lib access to water. All procedures were approved by the Princeton University and Rutgers University Institutional Animal Care and Use Committee.
 
-## Foraging task
+### Foraging task
 
 Animals were trained and tested as in Kane et al. (2017). Rats were first trained to lever press for 10% sucrose water on an FR1 reinforcement schedule. Once exhibiting 100+ lever presses in a one hour session, rats were trained on a sudden patch depletion paradigm — the lever stopped yielding reward after 4–12 lever presses — and rats learned to nose poke to reset the lever. Next rats were tested on the full foraging task.
 
@@ -111,70 +281,254 @@ A diagram of the foraging task is in Figure 1—figure supplement 1. On a series
 
 Details of the foraging environment for each experiment can be found in Table 1. For each experiment, rats were trained on a specific condition for 5 days, then tested for 5 days. Conditions within experiments were counterbalanced.
 
-## Foraging data analysis
+### Foraging data analysis
 
-Rat foraging behavior was assessed using linear mixed effects models. Models were fit using the lme4 package in R (Bates et al., 2015). The lme4 package provides only t-statistics for fixed effects; p-values were calculated using the lmerTest package (Kuznetsova et al., 2017), which uses Scatterwaithe’s method to approximate the degrees of freedom for the t-test. In the Travel Time Experiment, we assessed the effect of starting volume of the patch and the travel time on number of harvests per patch, with random intercepts and random slopes for both variables across subjects (lme4 formula: HarvestsPerPatch∼PatchStartingVolume*TravelTime+(PatchStartingVolume+TravelTime||Rat)). In all other foraging experiments, we assessed the effect of experimental condition on harvests per patch, with random intercepts and random effect of experimental condition across subjects (lme4 formula: H⁢a⁢r⁢v⁢e⁢s⁢t⁢s⁢P⁢e⁢r⁢P⁢a⁢t⁢c⁢h∼C⁢o⁢n⁢d⁢i⁢t⁢i⁢o⁢n+(C⁢o⁢n⁢d⁢i⁢t⁢i⁢o⁢n|R⁢a⁢t)).
+Rat foraging behavior was assessed using linear mixed effects models. Models were fit using the lme4 package in R (Bates et al., 2015). The lme4 package provides only t-statistics for fixed effects; p-values were calculated using the lmerTest package (Kuznetsova et al., 2017), which uses Scatterwaithe’s method to approximate the degrees of freedom for the t-test. In the Travel Time Experiment, we assessed the effect of starting volume of the patch and the travel time on number of harvests per patch, with random intercepts and random slopes for both variables across subjects (lme4 formula: $HarvestsPerPatch∼PatchStartingVolume*TravelTime+(PatchStartingVolume+TravelTime||Rat)$). In all other foraging experiments, we assessed the effect of experimental condition on harvests per patch, with random intercepts and random effect of experimental condition across subjects (lme4 formula: $H⁢a⁢r⁢v⁢e⁢s⁢t⁢s⁢P⁢e⁢r⁢P⁢a⁢t⁢c⁢h∼C⁢o⁢n⁢d⁢i⁢t⁢i⁢o⁢n+(C⁢o⁢n⁢d⁢i⁢t⁢i⁢o⁢n|R⁢a⁢t)$).
 
-We also tested whether rats overharvested relative to MVT predictions in each experiment, and whether the degree of overharvesting was different between conditions within each experiment. To do so, we subtracted the MVT predicted number of harvests in each patch from the observed number of harvests (see ‘Foraging Models' section for details on the calculation of the optimal number of harvests). Mixed effects models were used to fit an intercept and effect of experimental condition on the difference from optimal number of harvests (lme4 formula: D⁢i⁢f⁢f⁢e⁢r⁢e⁢n⁢c⁢e⁢F⁢r⁢o⁢m⁢O⁢p⁢t⁢i⁢m⁢a⁢l∼C⁢o⁢n⁢d⁢i⁢t⁢i⁢o⁢n+(C⁢o⁢n⁢d⁢i⁢t⁢i⁢o⁢n|R⁢a⁢t)). In this model, an intercept greater than zeros would indicate that rats harvested more trials than was predicted by MVT, and a difference in the effect of task condition would indicate that the degree to which rats differed from optimal was affected by the task condition.
+We also tested whether rats overharvested relative to MVT predictions in each experiment, and whether the degree of overharvesting was different between conditions within each experiment. To do so, we subtracted the MVT predicted number of harvests in each patch from the observed number of harvests (see ‘Foraging Models' section for details on the calculation of the optimal number of harvests). Mixed effects models were used to fit an intercept and effect of experimental condition on the difference from optimal number of harvests (lme4 formula: $D⁢i⁢f⁢f⁢e⁢r⁢e⁢n⁢c⁢e⁢F⁢r⁢o⁢m⁢O⁢p⁢t⁢i⁢m⁢a⁢l∼C⁢o⁢n⁢d⁢i⁢t⁢i⁢o⁢n+(C⁢o⁢n⁢d⁢i⁢t⁢i⁢o⁢n|R⁢a⁢t)$). In this model, an intercept greater than zeros would indicate that rats harvested more trials than was predicted by MVT, and a difference in the effect of task condition would indicate that the degree to which rats differed from optimal was affected by the task condition.
 
-## Intertemporal choice task
+### Intertemporal choice task
 
 Rats were immediately transferred from the foraging task to the intertemporal choice task with no special training; rats were given three 2 hr sessions to learn the structure of the new task. This task consisted of a series of episodes that lasted 20 trials. At the beginning of each episode one lever was randomly selected as the shorter-sooner lever, yielding 40 μL of reward following a 1 s delay. The other lever (larger-later lever) was initialized to yield a reward of 40, 80, or 120 μL after a 1, 2, 4 or 6 s delay. For the first 10 trials of each episode, only one lever extended, and rats were forced to press that lever to learn its associated reward value and delay. The last four forced trials (trials 7–10) were counterbalanced to reduce the possibility of rats developing a perseveration bias. For the remaining 10 trials of each episode, both levers extended, and rats were free to choose the option they prefer. At the beginning of each trial, cue lights turned on above the lever indicating rats could now make a decision. Once the rat pressed the lever, the cue light turned off, and the delay period was initiated. A cue light turned on in the reward magazine at the end of the delay period, and rats received reward as soon as they entered the reward magazine. Reward magnitude was cued by light and tone. Following reward delivery, there was an ITI before the start of the next trial. At the completion of the episode, the levers retracted, and rats had to nose poke to begin the next episode, which reset the larger-later reward and delay.
 
-## Intertemporal choice data analysis
+### Intertemporal choice data analysis
 
-Intertemporal choice data was analyzed using a mixed effects logistic regression, examining the the effect of larger-later reward value, larger-later delay, and task condition on rats choices, with random intercepts and random effects for all three variables. This model was fit as a generalized linear mixed effects model using the lme4 package in R (lme4 formula: ProbLL∼RewardLL*DelayLL*Condition+(RewardLL+DelayLL+Condition||Rat); Bates et al., 2015). Post-hoc comparisons of interest were tested using the phia package in R (De Rosario-Martinez, 2015), using Holm’s method to correct for multiple comparisons.
+Intertemporal choice data was analyzed using a mixed effects logistic regression, examining the the effect of larger-later reward value, larger-later delay, and task condition on rats choices, with random intercepts and random effects for all three variables. This model was fit as a generalized linear mixed effects model using the lme4 package in R (lme4 formula: $ProbLL∼RewardLL*DelayLL*Condition+(RewardLL+DelayLL+Condition||Rat)$; Bates et al., 2015). Post-hoc comparisons of interest were tested using the phia package in R (De Rosario-Martinez, 2015), using Holm’s method to correct for multiple comparisons.
 
-## Foraging models
+### Foraging models
 
-All models were constructed as continuous time semi-markov processes. This provided a convenient way to capture the dynamics of timing in both tasks, such as slow delivery and consumption of reward (up to 6 s for the largest rewards). To model the foraging task, each event within the task (e.g. cues turning on/off, lever press, reward delivery, etc.) marked a state transition (abbreviated state space diagram in Figure 3—figure supplement 1. All state transitions were deterministic, except for decisions to stay in vs. leave the patch, which occurred in ‘decision‘ states (the time between cues turning on at the start of the trial and rats performing a lever press or nosepoke). In decision states, a decision to stay in the patch transitioned to the handling time state, then reward state, ITI state, and to the decision state on the next trial. A decision to leave transitioned to the travel time state, then to the first decision state in the patch. Using the notation of Bradtke and Duff, 1995, the value of staying in state s, Q⁢(s⁢t⁢a⁢y,s), is the reward provided for staying in state s, R⁢(s⁢t⁢a⁢y,s), plus the discounted value of the next state:Q⁢(s⁢t⁢a⁢y,s)=R⁢(s⁢t⁢a⁢y,s)+γ⁢(s⁢t⁢a⁢y,s)*V⁢(sn⁢e⁢x⁢t)where γ⁢(s⁢t⁢a⁢y,s) is the discount applied to the value of the next state for staying in state s, and V⁢(sn⁢e⁢x⁢t) is the value of the next state in the patch. For all non-decision states, rats did not have the option to leave the patch, so for these states, V⁢(s)=Q⁢(s⁢t⁢a⁢y,s). For decision states, the value of the state was the greater of Q⁢(s⁢t⁢a⁢y,s) and Q⁢(l⁢e⁢a⁢v⁢e).
+All models were constructed as continuous time semi-markov processes. This provided a convenient way to capture the dynamics of timing in both tasks, such as slow delivery and consumption of reward (up to 6 s for the largest rewards). To model the foraging task, each event within the task (e.g. cues turning on/off, lever press, reward delivery, etc.) marked a state transition (abbreviated state space diagram in Figure 3—figure supplement 1. All state transitions were deterministic, except for decisions to stay in vs. leave the patch, which occurred in ‘decision‘ states (the time between cues turning on at the start of the trial and rats performing a lever press or nosepoke). In decision states, a decision to stay in the patch transitioned to the handling time state, then reward state, ITI state, and to the decision state on the next trial. A decision to leave transitioned to the travel time state, then to the first decision state in the patch. Using the notation of Bradtke and Duff, 1995, the value of staying in state $s$, $Q⁢(s⁢t⁢a⁢y,s)$, is the reward provided for staying in state $s$, $R⁢(s⁢t⁢a⁢y,s)$, plus the discounted value of the next state:
 
-For simplicity, we assume the time spent in a given state is constant, calculated as the average amount of time a given rat spent in the state. Under this assumption, the reward in a given state, R⁢(s⁢t⁢a⁢y,s), is equal to the reward rate provided over the course of the state, r⁢(s), multiplied by the time spent in that state T⁢(s), discounted according to discount factor β:R⁢(s⁢t⁢a⁢y,s)=1-e-β*T⁢(s)β*r⁢(s),andγ⁢(s⁢t⁢a⁢y,s)=e-β*T⁢(s).
+$$
+Q⁢(s⁢t⁢a⁢y,s)=R⁢(s⁢t⁢a⁢y,s)+\gamma⁢(s⁢t⁢a⁢y,s)*V⁢(s_{n⁢e⁢x⁢t})
+$$
 
-The value of leaving a patch, Q⁢(l⁢e⁢a⁢v⁢e), was equal to the discounted value of the first state in the next patch, V⁢(sf⁢i⁢r⁢s⁢t):Q⁢(l⁢e⁢a⁢v⁢e)=γ⁢(l⁢e⁢a⁢v⁢e)*V⁢(sf⁢i⁢r⁢s⁢t)where γ⁢(l⁢e⁢a⁢v⁢e) is the discount factor applied to the next state in the first patch. Assuming no variance in the travel time τ, γ⁢(l⁢e⁢a⁢v⁢e)=e-β*τ. Per MVT, we assumed rats left patches at the first state in the patch in which Q(stay,s)≤Q(leave). To model variability in the trial at which rats left patches, we added gaussian noise to Q⁢(l⁢e⁢a⁢v⁢e). As decisions within each patch are not independent, the patch leaving threshold did not vary trial-by-trial, but rather patch by patch, such that the cumulative probability that a rat has left the patch by state s, π⁢(l⁢e⁢a⁢v⁢e,s), was the probability that Q⁢(s⁢t⁢a⁢y,s)≤Q⁢(l⁢e⁢a⁢v⁢e)+Q⁢(l⁢e⁢a⁢v⁢e)*ϵ, where ϵ∼𝒩⁢(0,σ2), with free parameter σ. ϵ scaled with Q⁢(l⁢e⁢a⁢v⁢e) to enable comparisons across conditions within experiments.
+where $\gamma⁢(s⁢t⁢a⁢y,s)$ is the discount applied to the value of the next state for staying in state $s$, and $V⁢(s_{n⁢e⁢x⁢t})$ is the value of the next state in the patch. For all non-decision states, rats did not have the option to leave the patch, so for these states, $V⁢(s)=Q⁢(s⁢t⁢a⁢y,s)$. For decision states, the value of the state was the greater of $Q⁢(s⁢t⁢a⁢y,s)$ and $Q⁢(l⁢e⁢a⁢v⁢e)$.
 
-The optimal policy for a given set of parameters was found using value iteration (Sutton and Barto, 1998). MVT predictions (maximization of undiscounted long-term reward rate) were determined by fixing the discount factor β=.001 and assuming no decision noise (ϵ=0). MVT predictions were determined for each rat; the time spent in each state was taken from a given rat’s data. For each model, we fit both group level parameters and individual parameters for each rat using an expectation-maximization algorithm (Huys et al., 2011).
+For simplicity, we assume the time spent in a given state is constant, calculated as the average amount of time a given rat spent in the state. Under this assumption, the reward in a given state, $R⁢(s⁢t⁢a⁢y,s)$, is equal to the reward rate provided over the course of the state, $r⁢(s)$, multiplied by the time spent in that state $T⁢(s)$, discounted according to discount factor $\beta$:
 
-To model subjective costs, a free parameter c representing an aversion to leaving the patch was subtracted from the leaving threshold (Wikenheiser et al., 2013; Carter and Redish, 2016):Qc⁢o⁢s⁢t⁢(l⁢e⁢a⁢v⁢e)=-c+γ⁢(l⁢e⁢a⁢v⁢e)*Vc⁢o⁢s⁢t⁢(sf⁢i⁢r⁢s⁢t).
+$$
+R⁢(s⁢t⁢a⁢y,s)=\frac{1-e^{-\beta*T⁢(s)}}{\beta}*r⁢(s),and
+$$
 
-To investigate whether nonlinear reward utility could explain rats' overharvesting behavior, we tested models in which the utility of a reward received in the task increased in a sublinear fashion with respect to the magnitude of the reward. Two different utility functions were tested: a power law function and a steeper constant relative risk aversion (CRRA) utility function that became increasingly risk averse with larger rewards, both with free parameter η:Qu⁢t⁢i⁢l⁢i⁢t⁢y⁢(s⁢t⁢a⁢y,s)=U⁢(s⁢t⁢a⁢y,s)+γ⁢(s⁢t⁢a⁢y,s)*Vu⁢t⁢i⁢l⁢i⁢t⁢y⁢(sn⁢e⁢x⁢t)Up⁢o⁢w⁢e⁢r⁢(s⁢t⁢a⁢y,s)=R⁢(s⁢t⁢a⁢y,s)η,orUC⁢R⁢R⁢A⁢(s⁢t⁢a⁢y,s)=R⁢(s⁢t⁢a⁢y,s)1-η-11-η.
 
-To examine linear and nonlinear underestimation of post-reward delays, respectively, the time spent in post-reward delay (ITI) states was transformed, with free parameter α:Tp⁢o⁢s⁢t-l⁢i⁢n⁢e⁢a⁢r⁢(sI⁢T⁢I)=α⁢T⁢(sI⁢T⁢I), where ⁢0<α<1,orTp⁢o⁢s⁢t-p⁢o⁢w⁢e⁢r⁢(sI⁢T⁢I)=T⁢(sI⁢T⁢I)α
 
-Similarly, for overestimation of pre-reward delays, the handling time and travel time were transformed:Tp⁢r⁢e-d⁢e⁢l⁢a⁢y⁢(sH⁢T)=α⁢T⁢(sH⁢T), andτp⁢r⁢e-d⁢e⁢l⁢a⁢y=α⁢τ, where ⁢α>1.
+$$
+\gamma⁢(s⁢t⁢a⁢y,s)=e^{-\beta*T⁢(s)}.
+$$
+
+The value of leaving a patch, $Q⁢(l⁢e⁢a⁢v⁢e)$, was equal to the discounted value of the first state in the next patch, $V⁢(s_{f⁢i⁢r⁢s⁢t})$:
+
+$$
+Q⁢(l⁢e⁢a⁢v⁢e)=\gamma⁢(l⁢e⁢a⁢v⁢e)*V⁢(s_{f⁢i⁢r⁢s⁢t})
+$$
+
+where $\gamma⁢(l⁢e⁢a⁢v⁢e)$ is the discount factor applied to the next state in the first patch. Assuming no variance in the travel time $\tau$, $\gamma⁢(l⁢e⁢a⁢v⁢e)=e^{-\beta*\tau}$. Per MVT, we assumed rats left patches at the first state in the patch in which $Q(stay,s)\leqQ(leave)$. To model variability in the trial at which rats left patches, we added gaussian noise to $Q⁢(l⁢e⁢a⁢v⁢e)$. As decisions within each patch are not independent, the patch leaving threshold did not vary trial-by-trial, but rather patch by patch, such that the cumulative probability that a rat has left the patch by state $s$, $\pi⁢(l⁢e⁢a⁢v⁢e,s)$, was the probability that $Q⁢(s⁢t⁢a⁢y,s)\leqQ⁢(l⁢e⁢a⁢v⁢e)+Q⁢(l⁢e⁢a⁢v⁢e)*ϵ$, where $ϵ∼𝒩⁢(0,\sigma^{2})$, with free parameter $\sigma$. $ϵ$ scaled with $Q⁢(l⁢e⁢a⁢v⁢e)$ to enable comparisons across conditions within experiments.
+
+The optimal policy for a given set of parameters was found using value iteration (Sutton and Barto, 1998). MVT predictions (maximization of undiscounted long-term reward rate) were determined by fixing the discount factor $\beta=.001$ and assuming no decision noise ($ϵ=0$). MVT predictions were determined for each rat; the time spent in each state was taken from a given rat’s data. For each model, we fit both group level parameters and individual parameters for each rat using an expectation-maximization algorithm (Huys et al., 2011).
+
+To model subjective costs, a free parameter $c$ representing an aversion to leaving the patch was subtracted from the leaving threshold (Wikenheiser et al., 2013; Carter and Redish, 2016):
+
+$$
+Q_{c⁢o⁢s⁢t}⁢(l⁢e⁢a⁢v⁢e)=-c+\gamma⁢(l⁢e⁢a⁢v⁢e)*V_{c⁢o⁢s⁢t}⁢(s_{f⁢i⁢r⁢s⁢t}).
+$$
+
+To investigate whether nonlinear reward utility could explain rats' overharvesting behavior, we tested models in which the utility of a reward received in the task increased in a sublinear fashion with respect to the magnitude of the reward. Two different utility functions were tested: a power law function and a steeper constant relative risk aversion (CRRA) utility function that became increasingly risk averse with larger rewards, both with free parameter $η$:
+
+$$
+Q_{u⁢t⁢i⁢l⁢i⁢t⁢y}⁢(s⁢t⁢a⁢y,s)=U⁢(s⁢t⁢a⁢y,s)+\gamma⁢(s⁢t⁢a⁢y,s)*V_{u⁢t⁢i⁢l⁢i⁢t⁢y}⁢(s_{n⁢e⁢x⁢t})
+$$
+
+
+
+$$
+U_{p⁢o⁢w⁢e⁢r}⁢(s⁢t⁢a⁢y,s)=R⁢(s⁢t⁢a⁢y,s)^{η},or
+$$
+
+
+
+$$
+U_{C⁢R⁢R⁢A}⁢(s⁢t⁢a⁢y,s)=\frac{R⁢(s⁢t⁢a⁢y,s)^{1-η}-1}{1-η}.
+$$
+
+To examine linear and nonlinear underestimation of post-reward delays, respectively, the time spent in post-reward delay (ITI) states was transformed, with free parameter $\alpha$:
+
+$$
+T_{p⁢o⁢s⁢t-l⁢i⁢n⁢e⁢a⁢r}⁢(s_{I⁢T⁢I})=\alpha⁢T⁢(s_{I⁢T⁢I}),where ⁢0<\alpha<1,or
+$$
+
+
+
+$$
+T_{p⁢o⁢s⁢t-p⁢o⁢w⁢e⁢r}⁢(s_{I⁢T⁢I})=T⁢(s_{I⁢T⁢I})^{\alpha}
+$$
+
+Similarly, for overestimation of pre-reward delays, the handling time and travel time were transformed:
+
+$$
+T_{p⁢r⁢e-d⁢e⁢l⁢a⁢y}⁢(s_{H⁢T})=\alpha⁢T⁢(s_{H⁢T}),and
+$$
+
+
+
+$$
+\tau_{p⁢r⁢e-d⁢e⁢l⁢a⁢y}=\alpha⁢\tau,where ⁢\alpha>1.
+$$
 
 For the exponential discounting model, β was fit as a free parameter.
 
-As standard hyperbolic discounting cannot conveniently be expressed recursively, this model was implemented using the μAgents model described by Kurth-Nelson and Redish (2009). The value functions of the overall model, Qμ⁢A⁢g⁢e⁢n⁢t⁢(s⁢t⁢a⁢y,s) and Qμ⁢A⁢g⁢e⁢n⁢t⁢(l⁢e⁢a⁢v⁢e), were the average of the μAgents, each with their own exponential discount factor βi, and thus individual reward functions Ri⁢(s⁢t⁢a⁢y,s), discount functions γi⁢(s⁢t⁢a⁢y,s) and γi⁢(l⁢e⁢a⁢v⁢e), and value functions Qi⁢(s⁢t⁢a⁢y,s), Qi⁢(l⁢e⁢a⁢v⁢e), and Vi⁢(s):Qi⁢(s⁢t⁢a⁢y,s)=Ri⁢(s⁢t⁢a⁢y,s)+γi⁢(s⁢t⁢a⁢y,s)*Vi⁢(sn⁢e⁢x⁢t)Qμ⁢A⁢g⁢e⁢n⁢t⁢(s⁢t⁢a⁢y,s)=110⁢∑iRi⁢(s⁢t⁢a⁢y,s)+γi⁢(s⁢t⁢a⁢y,s)*Vi⁢(sn⁢e⁢x⁢t)Qi⁢(l⁢e⁢a⁢v⁢e)=γi⁢(l⁢e⁢a⁢v⁢e)*Vi⁢(sf⁢i⁢r⁢s⁢t)Qμ⁢A⁢g⁢e⁢n⁢t⁢(l⁢e⁢a⁢v⁢e)=110⁢∑iγi⁢(l⁢e⁢a⁢v⁢e)*Vi⁢(sf⁢i⁢r⁢s⁢t)
+As standard hyperbolic discounting cannot conveniently be expressed recursively, this model was implemented using the μAgents model described by Kurth-Nelson and Redish (2009). The value functions of the overall model, $Q^{\mu⁢A⁢g⁢e⁢n⁢t}⁢(s⁢t⁢a⁢y,s)$ and $Q^{\mu⁢A⁢g⁢e⁢n⁢t}⁢(l⁢e⁢a⁢v⁢e)$, were the average of the μAgents, each with their own exponential discount factor $\beta_{i}$, and thus individual reward functions $R_{i}⁢(s⁢t⁢a⁢y,s)$, discount functions $\gamma_{i}⁢(s⁢t⁢a⁢y,s)$ and $\gamma_{i}⁢(l⁢e⁢a⁢v⁢e)$, and value functions $Q_{i}⁢(s⁢t⁢a⁢y,s)$, $Q_{i}⁢(l⁢e⁢a⁢v⁢e)$, and $V_{i}⁢(s)$:
 
-If the μAgent discount factors, βi, are drawn from an exponential distribution with rate parameter λ>0, the discounting function of the overall model approximated the standard hyperbolic discount function, r⁢e⁢w⁢a⁢r⁢d/(1+k*d⁢e⁢l⁢a⁢y), with discount rate k=1/λ. This model was implemented using 10 μAgents with βi equal to the 5%, 15%, …, 95% quantile of the exponential distribution. The relationship of this implementation of the μAgent model to the standard hyperbolic discount function is presented in Figure 6. k was fit as a free parameter.
+$$
+Q_{i}⁢(s⁢t⁢a⁢y,s)=R_{i}⁢(s⁢t⁢a⁢y,s)+\gamma_{i}⁢(s⁢t⁢a⁢y,s)*V_{i}⁢(s_{n⁢e⁢x⁢t})
+$$
+
+
+
+$$
+Q^{\mu⁢A⁢g⁢e⁢n⁢t}⁢(s⁢t⁢a⁢y,s)=\frac{1}{10}⁢\sumiR_{i}⁢(s⁢t⁢a⁢y,s)+\gamma_{i}⁢(s⁢t⁢a⁢y,s)*V_{i}⁢(s_{n⁢e⁢x⁢t})
+$$
+
+
+
+$$
+Q_{i}⁢(l⁢e⁢a⁢v⁢e)=\gamma_{i}⁢(l⁢e⁢a⁢v⁢e)*V_{i}⁢(s_{f⁢i⁢r⁢s⁢t})
+$$
+
+
+
+$$
+Q^{\mu⁢A⁢g⁢e⁢n⁢t}⁢(l⁢e⁢a⁢v⁢e)=\frac{1}{10}⁢\sumi\gamma_{i}⁢(l⁢e⁢a⁢v⁢e)*V_{i}⁢(s_{f⁢i⁢r⁢s⁢t})
+$$
+
+If the μAgent discount factors, $\beta_{i}$, are drawn from an exponential distribution with rate parameter $\lambda>0$, the discounting function of the overall model approximated the standard hyperbolic discount function, $r⁢e⁢w⁢a⁢r⁢d/(1+k*d⁢e⁢l⁢a⁢y)$, with discount rate $k=1/\lambda$. This model was implemented using 10 μAgents with $\beta_{i}$ equal to the 5%, 15%, …, 95% quantile of the exponential distribution. The relationship of this implementation of the μAgent model to the standard hyperbolic discount function is presented in Figure 6. $k$ was fit as a free parameter.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/48429/elife-48429-fig6-v2.jpg)
 
-**Figure 6.:** Points represent the standard hyperbolic discounting function, . Lines represent the μAgent discount function in which the discount factor for each of the 10 μAgents was equal to the 5–95% quantile of an exponential distribution with rate parameter 1/(1+k*t⁢i⁢m⁢e).λ=1/k
+**Figure 6.:** Points represent the standard hyperbolic discounting function, $1/(1+k*t⁢i⁢m⁢e)$. Lines represent the μAgent discount function in which the discount factor for each of the 10 μAgents was equal to the 5–95% quantile of an exponential distribution with rate parameter $\lambda=1/k$.
 
-The constant sensitivity discounting model was based on Ebert and Prelec (2007). In this model, hyperbolic time preferences are produced via exponential discounting with insensitivity to longer delays. To implement this model, insensitivity to all time delays — the decision time, pre-reward delay, reward time, and post-reward delay, and travel time — was achieved using a power function, just as in the nonlinear post-reward delay model. This model was then equivalent to the exponential discounting model, replacing the time in each state T⁢(s) with a power function of the time in each state T⁢(s)α.
+The constant sensitivity discounting model was based on Ebert and Prelec (2007). In this model, hyperbolic time preferences are produced via exponential discounting with insensitivity to longer delays. To implement this model, insensitivity to all time delays — the decision time, pre-reward delay, reward time, and post-reward delay, and travel time — was achieved using a power function, just as in the nonlinear post-reward delay model. This model was then equivalent to the exponential discounting model, replacing the time in each state $T⁢(s)$ with a power function of the time in each state $T⁢(s)^{\alpha}$.
 
-Quasi-hyperbolic discounting was originally formulated for discrete time applications (Laibson, 1997). We used the continuous time formulation from McClure et al. (2007), in which the value functions of the overall model were the weighted sum of two exponential discount systems, a steep discounting β system that prefers immediate rewards and a slower discounting δ system, each with their own reward functions, Rβ⁢(s⁢t⁢a⁢y,s) and Rδ⁢(s⁢t⁢a⁢y,s), and discount functions γβ⁢(s⁢t⁢a⁢y,s), γβ⁢(l⁢e⁢a⁢v⁢e), γδ⁢(s⁢t⁢a⁢y,s), and γδ⁢(l⁢e⁢a⁢v⁢e):Qβ⁢(s⁢t⁢a⁢y,s)=Rβ⁢(s⁢t⁢a⁢y,s)+γβ⁢(s⁢t⁢a⁢y,s)*Vβ⁢(sn⁢e⁢x⁢t)Qβ⁢(l⁢e⁢a⁢v⁢e)=γβ⁢(l⁢e⁢a⁢v⁢e)*Vβ⁢(sf⁢i⁢r⁢s⁢t)Qδ⁢(s⁢t⁢a⁢y,s)=Rδ⁢(s⁢t⁢a⁢y,s)+γδ⁢(s⁢t⁢a⁢y,s)*Vδ⁢(sn⁢e⁢x⁢t)Qδ⁢(l⁢e⁢a⁢v⁢e)=γδ⁢(l⁢e⁢a⁢v⁢e)*Vδ⁢(sf⁢i⁢r⁢s⁢t)
+Quasi-hyperbolic discounting was originally formulated for discrete time applications (Laibson, 1997). We used the continuous time formulation from McClure et al. (2007), in which the value functions of the overall model were the weighted sum of two exponential discount systems, a steep discounting β system that prefers immediate rewards and a slower discounting $\delta$ system, each with their own reward functions, $R_{\beta}⁢(s⁢t⁢a⁢y,s)$ and $R_{\delta}⁢(s⁢t⁢a⁢y,s)$, and discount functions $\gamma_{\beta}⁢(s⁢t⁢a⁢y,s)$, $\gamma_{\beta}⁢(l⁢e⁢a⁢v⁢e)$, $\gamma_{\delta}⁢(s⁢t⁢a⁢y,s)$, and $\gamma_{\delta}⁢(l⁢e⁢a⁢v⁢e)$:
 
-The value functions of the overall quasi-hyperbolic discounting model were:Qq⁢u⁢a⁢s⁢i⁢(s⁢t⁢a⁢y,s)=ω*Qβ⁢(s⁢t⁢a⁢y,s)+(1-ω)*Qδ⁢(s⁢t⁢a⁢y,s)Qq⁢u⁢a⁢s⁢i⁢(l⁢e⁢a⁢v⁢e)=ω*Qβ⁢(l⁢e⁢a⁢v⁢e)+(1-ω)*Qδ⁢(l⁢e⁢a⁢v⁢e)where 0<ω<1 was the weight of the β system relative to the δ system. β, δ, and ω were all free parameters.
+$$
+Q_{\beta}⁢(s⁢t⁢a⁢y,s)=R_{\beta}⁢(s⁢t⁢a⁢y,s)+\gamma_{\beta}⁢(s⁢t⁢a⁢y,s)*V_{\beta}⁢(s_{n⁢e⁢x⁢t})
+$$
 
-## Intertemporal choice task models
 
-Similar to the foraging task, events within the intertemporal choice task marked state transitions, and all state transitions were deterministic except for decisions to choose the smaller-sooner option (SS) or larger-later option (LL), which occurred only in decision states (abbreviated state space diagram in Figure 4—figure supplement 1). From decision states, animals transitioned to delay, reward, and post-reward delay (ITI) states for the chosen option — the delay, reward and ITI for the SS and LL options were represented by separate states. The value of choosing SS or LL in decision state s is the discounted value of the next state, the following delay state:Q⁢(S⁢S,s)=γ⁢(s)*Q⁢(S⁢S⁢D⁢e⁢l⁢a⁢y)Q⁢(L⁢L,s)=γ⁢(s)*Q⁢(L⁢L⁢D⁢e⁢l⁢a⁢y)
 
-The value of delay states were the discounted value of the reward state for that action, the value of reward states were the reward for that action plus the discounted value of the ITI state for that action, and the value of ITI states were the discounted value of the next decision state:Q⁢(S⁢S⁢D⁢e⁢l⁢a⁢y)=γ⁢(S⁢S⁢D⁢e⁢l⁢a⁢y)*Q⁢(S⁢S⁢R⁢e⁢w⁢a⁢r⁢d)Q⁢(S⁢S⁢R⁢e⁢w⁢a⁢r⁢d)=R⁢(S⁢S⁢R⁢e⁢w⁢a⁢r⁢d)*γ⁢(S⁢S⁢R⁢e⁢w⁢a⁢r⁢d)*Q⁢(S⁢S⁢I⁢T⁢I)Q⁢(S⁢S⁢I⁢T⁢I)=γ⁢(S⁢S⁢I⁢T⁢I)*V⁢(sn⁢e⁢x⁢t⁢d⁢e⁢c)where the value of the next decision state, V⁢(sn⁢e⁢x⁢t⁢d⁢e⁢c) is the greater of Q⁢(S⁢S,sn⁢e⁢x⁢t⁢d⁢e⁢c) and Q⁢(L⁢L,sn⁢e⁢x⁢t⁢d⁢e⁢c). Decisions were made assuming the value of Q⁢(S⁢S,s) and Q⁢(L⁢L,s) were represented as Gaussian distributions with noise that scaled with their magnitude. The probability of choosing the LL option was the probability that a random sample from the LL distribution was greater than a random sample from the SS distribution for that state:p⁢(c⁢h⁢o⁢o⁢s⁢e⁢L⁢L,s)=1-ϕ⁢(Q(SS,s)-Q(LL,s))σ2*[Q(SS,s)2+Q(LL,s)2)])where ϕ is the normal cumulative distribution function.
+$$
+Q_{\beta}⁢(l⁢e⁢a⁢v⁢e)=\gamma_{\beta}⁢(l⁢e⁢a⁢v⁢e)*V_{\beta}⁢(s_{f⁢i⁢r⁢s⁢t})
+$$
+
+
+
+$$
+Q_{\delta}⁢(s⁢t⁢a⁢y,s)=R_{\delta}⁢(s⁢t⁢a⁢y,s)+\gamma_{\delta}⁢(s⁢t⁢a⁢y,s)*V_{\delta}⁢(s_{n⁢e⁢x⁢t})
+$$
+
+
+
+$$
+Q_{\delta}⁢(l⁢e⁢a⁢v⁢e)=\gamma_{\delta}⁢(l⁢e⁢a⁢v⁢e)*V_{\delta}⁢(s_{f⁢i⁢r⁢s⁢t})
+$$
+
+The value functions of the overall quasi-hyperbolic discounting model were:
+
+$$
+Q^{q⁢u⁢a⁢s⁢i}⁢(s⁢t⁢a⁢y,s)=\omega*Q_{\beta}⁢(s⁢t⁢a⁢y,s)+(1-\omega)*Q_{\delta}⁢(s⁢t⁢a⁢y,s)
+$$
+
+
+
+$$
+Q^{q⁢u⁢a⁢s⁢i}⁢(l⁢e⁢a⁢v⁢e)=\omega*Q_{\beta}⁢(l⁢e⁢a⁢v⁢e)+(1-\omega)*Q_{\delta}⁢(l⁢e⁢a⁢v⁢e)
+$$
+
+where $0<\omega<1$ was the weight of the $\beta$ system relative to the $\delta$ system. $\beta$, $\delta$, and $\omega$ were all free parameters.
+
+### Intertemporal choice task models
+
+Similar to the foraging task, events within the intertemporal choice task marked state transitions, and all state transitions were deterministic except for decisions to choose the smaller-sooner option (SS) or larger-later option (LL), which occurred only in decision states (abbreviated state space diagram in Figure 4—figure supplement 1). From decision states, animals transitioned to delay, reward, and post-reward delay (ITI) states for the chosen option — the delay, reward and ITI for the SS and LL options were represented by separate states. The value of choosing SS or LL in decision state $s$ is the discounted value of the next state, the following delay state:
+
+$$
+Q⁢(S⁢S,s)=\gamma⁢(s)*Q⁢(S⁢S⁢D⁢e⁢l⁢a⁢y)
+$$
+
+
+
+$$
+Q⁢(L⁢L,s)=\gamma⁢(s)*Q⁢(L⁢L⁢D⁢e⁢l⁢a⁢y)
+$$
+
+The value of delay states were the discounted value of the reward state for that action, the value of reward states were the reward for that action plus the discounted value of the ITI state for that action, and the value of ITI states were the discounted value of the next decision state:
+
+$$
+Q⁢(S⁢S⁢D⁢e⁢l⁢a⁢y)=\gamma⁢(S⁢S⁢D⁢e⁢l⁢a⁢y)*Q⁢(S⁢S⁢R⁢e⁢w⁢a⁢r⁢d)
+$$
+
+
+
+$$
+Q⁢(S⁢S⁢R⁢e⁢w⁢a⁢r⁢d)=R⁢(S⁢S⁢R⁢e⁢w⁢a⁢r⁢d)*\gamma⁢(S⁢S⁢R⁢e⁢w⁢a⁢r⁢d)*Q⁢(S⁢S⁢I⁢T⁢I)
+$$
+
+
+
+$$
+Q⁢(S⁢S⁢I⁢T⁢I)=\gamma⁢(S⁢S⁢I⁢T⁢I)*V⁢(s_{n⁢e⁢x⁢t⁢d⁢e⁢c})
+$$
+
+where the value of the next decision state, $V⁢(s_{n⁢e⁢x⁢t⁢d⁢e⁢c})$ is the greater of $Q⁢(S⁢S,s_{n⁢e⁢x⁢t⁢d⁢e⁢c})$ and $Q⁢(L⁢L,s_{n⁢e⁢x⁢t⁢d⁢e⁢c})$. Decisions were made assuming the value of $Q⁢(S⁢S,s)$ and $Q⁢(L⁢L,s)$ were represented as Gaussian distributions with noise that scaled with their magnitude. The probability of choosing the LL option was the probability that a random sample from the LL distribution was greater than a random sample from the SS distribution for that state:
+
+$$
+p⁢(c⁢h⁢o⁢o⁢s⁢e⁢L⁢L,s)=1-ϕ⁢(\frac{Q(SS,s)-Q(LL,s))}{\sqrt{\sigma^{2}*[Q(SS,s)^{2}+Q(LL,s)^{2})]}})
+$$
+
+where $ϕ$ is the normal cumulative distribution function.
 
 The nonlinear reward utility, biased time perception, and temporal discounting models were implemented as they were in the foraging task.
 
-For the one-trial horizon discounting models, the value of choosing a given option was the discounted value of the reward on the current trial only, with delay d and reward r:Qe⁢x⁢p=e-β*d*rQh⁢y⁢p=r1+k*dQc⁢s=e-β*dα*rQquasi=[ω∗e−β∗d+(1−ω)∗e−δ∗d]∗r
+For the one-trial horizon discounting models, the value of choosing a given option was the discounted value of the reward on the current trial only, with delay $d$ and reward $r$:
+
+$$
+Q_{e⁢x⁢p}=e^{-\beta*d}*r
+$$
+
+
+
+$$
+Q_{h⁢y⁢p}=\frac{r}{1+k*d}
+$$
+
+
+
+$$
+Q_{c⁢s}=e^{-\beta*d^{\alpha}}*r
+$$
+
+
+
+$$
+Q_{quasi}=[\omega∗e^{−\beta∗d}+(1−\omega)∗e^{−\delta∗d}]∗r
+$$
 
 To calculate the probability of choosing the LL option, the same decision rule was used as in the all-future horizon model.
 
-## Model comparison
+### Model comparison
 
-All models had two parameters except for the constant sensitivity discounting model with three and the quasi-hyperbolic discounting model with four. To determine the model that provided the best fit to the data, while accounting for the increased flexibility of these models, we calculated the Bayesian Information Criterion over the group level parameters (iBIC) (MacKay, 2003; Huys et al., 2011). iBIC penalizes the log marginal likelihood, l⁢o⁢g⁢p⁢(D∣θ), which is the integral of the log likelihood of the data D over the distribution of group level parameters θ, for model complexity. Complexity is determined by the number of parameters k, and the size of the penalty depends on the total number of observations, n:i⁢B⁢I⁢C=l⁢o⁢g⁢p⁢(D∣θ)+k2⁢l⁢o⁢g⁢(n).
+All models had two parameters except for the constant sensitivity discounting model with three and the quasi-hyperbolic discounting model with four. To determine the model that provided the best fit to the data, while accounting for the increased flexibility of these models, we calculated the Bayesian Information Criterion over the group level parameters (iBIC) (MacKay, 2003; Huys et al., 2011). iBIC penalizes the log marginal likelihood, $l⁢o⁢g⁢p⁢(D∣\theta)$, which is the integral of the log likelihood of the data $D$ over the distribution of group level parameters $\theta$, for model complexity. Complexity is determined by the number of parameters $k$, and the size of the penalty depends on the total number of observations, $n$:
 
-As in Huys et al. (2011), we use a Laplace approximation to the log marginal likelihood:l⁢o⁢g⁢p⁢(D∣θ)=-n2⁢l⁢o⁢g⁢(2⁢π)*s+∑i=1sp⁢(Di∣θi)⁢p⁢(θi∣θ)-∑i=1sl⁢o⁢g⁢d⁢e⁢t⁢(H⁢f⁢(θi))2where s is the number of subjects, and H⁢f⁢(θi) is the hessian matrix of the likelihood for subject i at the individual parameters θi.
+$$
+i⁢B⁢I⁢C=l⁢o⁢g⁢p⁢(D∣\theta)+\frac{k}{2}⁢l⁢o⁢g⁢(n).
+$$
+
+As in Huys et al. (2011), we use a Laplace approximation to the log marginal likelihood:
+
+$$
+l⁢o⁢g⁢p⁢(D∣\theta)=-\frac{n}{2}⁢l⁢o⁢g⁢(2⁢\pi)*s+\sumi=1sp⁢(D_{i}∣\theta_{i})⁢p⁢(\theta_{i}∣\theta)-\frac{\sum_{i=1}^{s}l⁢o⁢g⁢d⁢e⁢t⁢(H⁢f⁢(\theta_{i}))}{2}
+$$
+
+where $s$ is the number of subjects, and $H⁢f⁢(\theta_{i})$ is the hessian matrix of the likelihood for subject $i$ at the individual parameters $\theta_{i}$.
 
 To compare the fit of the quasi-hyperbolic discounting model across the foraging and intertemporal choice tasks, a cross-validation method was used. Data from each task was separated into thirds. The quasi-hyperbolic discounting model was fit to 2 of the samples from each task using maximum likelihood estimation (fitting only individual parameters for each rat). The log likelihood of the data from the left out sample was evaluated. This process was repeated three times, leaving out each of the samples once, and we took the sum of the likelihood of the three left out samples. As the structure of variability was different between the foraging model (variability in the patch leaving threshold) and intertemporal choice models (noise in the estimates of SS and LL values), to compare the discount function fit to the foraging task on intertemporal choice data, a new noise parameter was fit to the intertemporal choice data (and vice-versa). We report the difference in the log likelihood of the data using parameters fit to the intertemporal choice task and of the log likelihood using parameters fit to the foraging task (Figure 5).

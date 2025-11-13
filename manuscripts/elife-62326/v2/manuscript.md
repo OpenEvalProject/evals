@@ -16,7 +16,7 @@
 
 ## Abstract
 
-The Hippo (Hpo) pathway regulates tissue growth in many animals. Multiple upstream components promote Hpo pathway activity, but the organization of these different inputs, the degree of crosstalk between them, and whether they are regulated in a distinct manner is not well understood. Kibra (Kib) activates the Hpo pathway by recruiting the core Hpo kinase cassette to the apical cortex. Here, we show that the Hpo pathway downregulates Drosophila Kib levels independently of Yorkie-mediated transcription. We find that Hpo signaling complex formation promotes Kib degradation via SCF Slimb -mediated ubiquitination, that this effect requires Merlin, Salvador, Hpo, and Warts, and that this mechanism functions independently of other upstream Hpo pathway activators. Moreover, Kib degradation appears patterned by differences in mechanical tension across the wing. We propose that Kib degradation mediated by Hpo pathway components and regulated by cytoskeletal tension serves to control Kib-driven Hpo pathway activation and ensure optimally scaled and patterned tissue growth.
+The Hippo (Hpo) pathway regulates tissue growth in many animals. Multiple upstream components promote Hpo pathway activity, but the organization of these different inputs, the degree of crosstalk between them, and whether they are regulated in a distinct manner is not well understood. Kibra (Kib) activates the Hpo pathway by recruiting the core Hpo kinase cassette to the apical cortex. Here, we show that the Hpo pathway downregulates Drosophila Kib levels independently of Yorkie-mediated transcription. We find that Hpo signaling complex formation promotes Kib degradation via SCFSlimb-mediated ubiquitination, that this effect requires Merlin, Salvador, Hpo, and Warts, and that this mechanism functions independently of other upstream Hpo pathway activators. Moreover, Kib degradation appears patterned by differences in mechanical tension across the wing. We propose that Kib degradation mediated by Hpo pathway components and regulated by cytoskeletal tension serves to control Kib-driven Hpo pathway activation and ensure optimally scaled and patterned tissue growth.
 
 ## Introduction
 
@@ -30,27 +30,39 @@ In this study, we reveal that the Hpo pathway negatively regulates Kib levels v
 
 ## Results
 
-## Transcriptional feedback is insufficient to explain the increase in Kib abundance upon pathway inactivation
+### Transcriptional feedback is insufficient to explain the increase in Kib abundance upon pathway inactivation
 
 A notable feature of the Hpo pathway is that its upstream components Kib, Ex, and Mer are upregulated by Yki transcriptional activity in a negative feedback loop (Hamaratoglu et al., 2006; Genevet et al., 2010; Yee et al., 2019). In particular, Kib levels were previously shown to be significantly elevated in double-mutant Mer; ex somatic mosaic clones, consistent with the transcriptional feedback regulation of kibra by Yki (Genevet et al., 2010). However, when we examined endogenous Kib tagged with the green fluorescent protein (Kib::GFP) in live wing imaginal discs containing either Mer or ex mutant clones individually, we found that Kib abundance was significantly higher in Mer mutant clones than in ex mutant clones (Figure 1A–C). These results suggest that loss of Mer has a greater effect on Yki transcriptional activity than loss of Ex, which has not been reported previously.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/62326/elife-62326-fig1-v2.jpg)
 
-**Figure 1.:** Mer clones.(A–G’’’) All tissues shown are living late third instar wing imaginal discs expressing the indicated fluorescent proteins. (A–C) Endogenous Kib::GFP in ex (A and A’) or Mer (B and B’) somatic mosaic clones (indicated by loss of RFP). Loss of Mer leads to a greater increase in Kib levels than loss of Ex. Quantification is shown in (C). (D–E’’’) Endogenously expressed Yorkie (Yki)-YFP is strongly nuclear in ex mutant clones (D–D’’’) but is mostly cytoplasmic in Mer mutant clones (E–E’’’). (F–H) Expression ban3>GFP, a reporter of Yki activity, is elevated in ex mutant clones (F–F’’’) but is not detectably affected in Mer mutant clones (G–G’’’). Quantification is shown in (H). (I–J’) Endogenous Kib:GFP levels are elevated in single Mer somatic mosaic clones (I and I’) and in double sd; Mer clones (J and J’). Yellow dashed lines indicate clone boundaries. All scale bars=20 μm. Quantification in (C) and (H) is represented as the mean ± standard error of the mean (SEM); n=number of clones (no more than two clones per wing disc were used for quantification). Statistical analysis was performed using nonparametric Mann–Whitney U-test. Throughout the paper, statistical significance is reported as follows: ***p≤0.001, **p≤0.01, *p≤0.05, ns (not significant, p>0.05).
+**Figure 1.:** (A–G’’’) All tissues shown are living late third instar wing imaginal discs expressing the indicated fluorescent proteins. (A–C) Endogenous Kib::GFP in ex (A and A’) or Mer (B and B’) somatic mosaic clones (indicated by loss of RFP). Loss of Mer leads to a greater increase in Kib levels than loss of Ex. Quantification is shown in (C). (D–E’’’) Endogenously expressed Yorkie (Yki)-YFP is strongly nuclear in ex mutant clones (D–D’’’) but is mostly cytoplasmic in Mer mutant clones (E–E’’’). (F–H) Expression ban3>GFP, a reporter of Yki activity, is elevated in ex mutant clones (F–F’’’) but is not detectably affected in Mer mutant clones (G–G’’’). Quantification is shown in (H). (I–J’) Endogenous Kib:GFP levels are elevated in single Mer somatic mosaic clones (I and I’) and in double sd; Mer clones (J and J’). Yellow dashed lines indicate clone boundaries. All scale bars=20 μm. Quantification in (C) and (H) is represented as the mean ± standard error of the mean (SEM); n=number of clones (no more than two clones per wing disc were used for quantification). Statistical analysis was performed using nonparametric Mann–Whitney U-test. Throughout the paper, statistical significance is reported as follows: ***p≤0.001, **p≤0.01, *p≤0.05, ns (not significant, p>0.05).
 
 To directly assess the relative contribution of Mer and Ex to Yki activity, we examined the nuclear localization of endogenously expressed Yki-YFP, a biosensor for Yki activity (Su et al., 2017; Xu et al., 2018). In sharp contrast to what we observed with Kib levels, Yki strongly accumulated in the nuclei of ex mutant clones, whereas Yki was mostly cytoplasmic and indistinguishable from wild-type cells in Mer clones (Figure 1D–E’’’). These results indicate that Ex is more potent at inhibiting Yki nuclear translocation than Mer, consistent with Ex’s ability to limit Yki activity by direct sequestration at the junctional cortex (Badouel et al., 2009) and suggesting that loss of ex should have a greater effect on pathway target gene expression than loss of Mer.
 
 To compare the effects of Mer and ex loss on target gene expression, we examined the expression of ban3>GFP (Matakatsu and Blair, 2012), a reporter for one of Yki’s target genes bantam (Thompson and Cohen, 2006; Nolo et al., 2006). ban3>GFP expression was significantly upregulated in ex mutant clones, whereas no detectible difference was observed in Mer clones relative to control tissue (Figure 1F–H), indicating that Yki is more active in ex clones than in Mer clones. Together, these results suggest that the dramatic increase in Kib levels in Mer clones cannot be explained strictly by Yki-mediated transcriptional feedback and that Kib is also regulated via a previously unrecognized non-transcriptional mechanism.
 
-## Hpo pathway components regulate Kib abundance non-transcriptionally
+### Hpo pathway components regulate Kib abundance non-transcriptionally
 
 If a Yki-independent mechanism is responsible for Kib upregulation in Mer clones, then Kib levels should be elevated in Mer clones in the absence of Yki activity. To test this hypothesis, we took advantage of a previously published method of blocking Yki-mediated transcription downstream of the Hpo pathway by removing Yki’s DNA-binding partner, Sd, in the eye imaginal disc, where Sd is dispensable for cell viability (Koontz et al., 2013; Yu and Pan, 2018). Endogenous Kib::GFP was upregulated in sd; Mer double-mutant clones to a similar degree as in Mer single-mutant clones (Figure 1I–J’), suggesting that Mer regulates Kib levels independently of Yki activity.
 
 To understand how Mer regulates Kib levels, we set out to develop a simpler approach to uncouple Kib protein abundance from its transcriptional regulation. Recently, the ubiquitin 63E promoter was used to drive expression of other Hpo pathway components to study their post-translational regulation (Aerne et al., 2015; Fulford et al., 2019), based on the assumption that the ubiquitin promoter is not regulated by Yki activity. Therefore, we made a transgenic fly line ectopically expressing Kib-GFP-FLAG under control of the ubiquitin promoter (Ubi>Kib-GFP) (Figure 2A). Similar to endogenous Kib::GFP, Ubi>Kib-GFP localized both at the junctional and medial cortex (Figure 2—figure supplement 1A). Flies expressing Ubi>Kib-GFP had slightly undergrown wings compared to control flies expressing Ubi>GFP (Figure 2—figure supplement 1B), suggesting that Ubi>Kib-GFP promotes Hpo pathway activity. Although wild-type flies expressing Ubi>Kib-GFP were viable, Ubi>Kib-GFP only partially rescued the kibradel null allele (Yu et al., 2010), suggesting that expression from the Ubiquitin promoter may not be sufficient in some tissues that require Kib for viability.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/62326/elife-62326-fig2-v2.jpg)
+
+**Figure 2.:** (A) A cartoon of the DNA construct used to generate the Ubi>Kib-GFP transgenic fly line. (B–E) Depletion of Hpo pathway components Mer, Sav, Hpo, and Wts by RNAi in the posterior compartment of the wing results in elevated Kib-GFP levels. All scale bars=20 μm. Throughout the paper, wing imaginal discs are oriented with posterior side to the right and dorsal side up. (F–F’’’) In the eye imaginal disc, Kib-GFP is upregulated both in hpo mutant clones and sd; hpo double-mutant clones, indicating that Hpo pathway activity controls Kib levels independently of Yki/Sd-mediated transcription. White arrowheads indicate hpo single-mutant clones; yellow arrows indicate sd; hpo double-mutant clones. Note: the clonal GFP marker (sd+), which is nuclear, is readily distinguishable from Kib-GFP, which is apical. (G–G’’’) Ex levels are also upregulated in hpo mutant clones; but in contrast to Kib, Ex upregulation is not observed in sd; hpo double-mutant clones. (H) Kib is phosphorylated in wing discs, and depletion of Hpo or Wts leads to decreased Kib phosphorylation. (I) Kib is ubiquitinated in S2 cells. Depletion of Hpo or Wts with dsRNA targeting 3′-untranslated region (UTR) of each kinase leads to decreased Kib ubiquitination; the effect of Hpo or Wts knockdown is rescued by addition of kinase-dead HpoK71R or WtsK743R. Throughout the paper, all immunoblot data are representative of at least three replicates.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62326/elife-62326-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Similar to endogenous Kib:GFP (left), Ubi>Kib-GFP (right) accumulates both at the junctional (white arrows) and apical medial cortex (red arrows). Scale bars=5 μm. (B) Size comparison of adult wings from flies expressing Ubi>GFP or Ubi>Kib-GFP; quantification is shown as the mean ± SEM relative to the control; n=number of wings. Statistical comparison was performed using Mann–Whitney U-test. (C–C’’) Depletion of Hpo in the posterior compartment of the wing does not cause increased Ubi>RFP expression. Yellow dashed line indicates the anterior–posterior (A–P) boundary.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62326/elife-62326-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A–D) Ex levels are elevated upon Hpo pathway inactivation, with a particularly strong increase upon Hpo or Wts depletion (C and D, respectively). (E) Single sd (GFP-) or hpo (RFP-) somatic mosaic clones or double sd; hpo clones (GFP- and RFP-, yellow arrow) induced in the eye imaginal disc using ey>Flp. Ubi>Kib-GFP (FLAG staining) is upregulated in sd; hpo double-mutant clones; loss of sd was confirmed by anti-Sd staining (cyan). Scale bars=10 μm. (F) Effect of transient depletion of Hpo (left), Yki(middle), or Hpo and Yki (right) on Ubi>Kib-GFP levels in the posterior compartment of the wing using Gal80ts.
+
 Consistent with the hypothesis that Mer negatively regulates Kib levels non-transcriptionally, depletion of Mer in the posterior compartment of the wing disc using the hh>Gal4 driver led to a substantial increase in Ubi>Kib-GFP levels across the entire compartment (Figure 2B). Knockdown of Sav, Hpo, and Wts also dramatically increased Ubi>Kib-GFP levels (Figure 2C–E), suggesting that regulation of Kib abundance is not mediated uniquely by Mer but is Hpo pathway-dependent. In contrast, expression of a Ubi>RFP control transgene was not affected by depletion of Hpo, confirming that Yki does not regulate expression at the ubiquitin promoter (Figure 2—figure supplement 1C–C’’). Ex is also upregulated upon Hpo pathway inactivation, with a particularly strong increase when Hpo or Wts is depleted (Hamaratoglu et al., 2006; Figure 2—figure supplement 2A–D). Ex and Kib also form a complex in cultured cells (Genevet et al., 2010; Yu et al., 2010), raising the possibility that the increase in Ubi>Kib-GFP levels upon Hpo or Wts depletion is caused by increased interaction with Ex resulting in greater Kib stability. To test this possibility, we compared Ex and Ubi>Kib-GFP levels in hpo or sd; hpo double-mutant clones. While Ubi>Kib-GFP levels were similarly elevated in both hpo and sd; hpo double-mutant clones (Figure 2F–F’’’ and Figure 2—figure supplement 2E), Ex levels were upregulated only in hpo single-mutant clones but not in sd; hpo double-mutant clones (Figure 2G–G’’’), indicating that the increase in Kib levels upon Hpo pathway inactivation is not mediated via Ex. Furthermore, transient co-depletion of Hpo and Yki in the wing disc posterior compartment using Gal80ts did not suppress the increase in Kib abundance observed when Hpo alone was depleted, even though Yki was sufficiently depleted to suppress tissue overgrowth induced by Hpo depletion alone (Figure 2—figure supplement 2F). Together, these results provide strong evidence that the Hpo pathway regulates Kib levels independently of Yki transcriptional output.
 
-## The Hpo pathway promotes Kib phosphorylation and ubiquitination
+### The Hpo pathway promotes Kib phosphorylation and ubiquitination
 
 Our observation that Hpo pathway activity controls Kib levels in a Yki-independent manner suggests that Kib could be regulated post-translationally. Protein abundance is commonly regulated by phosphorylation-dependent ubiquitination, and multiple Hpo pathway components are regulated via ubiquitin-mediated proteasomal degradation (Ribeiro et al., 2014; Rodrigues-Campos and Thompson, 2014; Cao et al., 2014; Aerne et al., 2015; Ma et al., 2018; Ly et al., 2019). Therefore, we hypothesized that the Hpo pathway could promote Kib phosphorylation and target it for ubiquitination and subsequent degradation.
 
@@ -58,15 +70,23 @@ We first asked whether Kib is phosphorylated in a pathway-dependent manner in vi
 
 Next, we asked if Kib is ubiquitinated and, if so, whether this depends on Hpo pathway activity. To address this question, we expressed Kib-GFP and hemagglutinin (HA)-tagged ubiquitin in cultured Drosophila Schneider 2 (S2) cells. We found that Kib was ubiquitinated and that depletion of the core pathway kinases Hpo or Wts resulted in dramatically decreased Kib ubiquitination (Figure 2I). Taken together, these results suggest that Kib is phosphorylated and ubiquitinated in a Hpo pathway-dependent manner and that these post-translational modifications promote its degradation.
 
-## Slimb regulates Kib levels via a consensus degron motif
+### Slimb regulates Kib levels via a consensus degron motif
 
 To better understand how the Hpo pathway controls Kib levels via ubiquitination, we sought to identify the machinery that mediates this process. Protein ubiquitination occurs via an enzymatic cascade that culminates in the covalent attachment of ubiquitin molecules to substrates by E3 ubiquitin ligases (Zheng and Shabek, 2017). We first tested the effects of depletion or overexpression of E3 ubiquitin ligases previously reported to act within the Hpo pathway on Ubi>Kib-GFP abundance. Of these, only depletion of the F-box protein Slimb, and its partners SkpA and Cul1, increased Ubi>Kib-GFP levels (Figure 3A and A’ and Figure 3—figure supplement 1A–D). Importantly, increased Ubi>Kib-GFP was evident throughout the affected cells in comparison to control tissue (Figure 3A’), suggesting that overall Kib abundance was increased. Because loss of Slimb increases Ex levels (Ribeiro et al., 2014) and Ex interacts with Kib in cultured cells (Genevet et al., 2010; Yu et al., 2010), we considered the possibility that increased Ubi>Kib-GFP upon Slimb depletion could result indirectly from ectopic interactions with increased Ex. However, co-depletion of Ex and Slimb did not suppress the increase in Ubi>Kib-GFP levels (Figure 3—figure supplement 1E–G’), suggesting that Slimb directly regulates Kib abundance.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62326/elife-62326-fig3-v2.jpg)
+
+**Figure 3.:** (A–A’) Depletion of Slimb in the dorsal compartment of the wing imaginal disc results in increased Kib-GFP levels both apically (A) and basally (A’). (B) Alignment of the fly, mouse, and human Kib protein sequences showing the conservation of the putative Slimb degron motif DSGXXS (underlined). The vertical lines indicate conserved residues. (C) Immunoblot showing that depletion of Slimb in S2 cells decreases Kib ubiquitination. (D) Co-IP experiments showing that Kib forms a complex with Slimb in S2 cell lysates in a degron-dependent manner. (E) Ubiquitination of the degron mutant, KibS677A, is diminished and is insensitive to Hippo pathway inactivation. Asterisks indicate non-specific bands. (F–G) Widefield fluorescence images of wing discs expressing either UASp-Kib-GFP (F) or UASp-KibS677A-GFP (G) with the nub>Gal4 driver; images were taken using identical settings. (H) Immunoblot of wing disc cell lysates (20 discs each) of UASp-Kib-GFP or UASp-KibS677A-GFP expressed with the nub>Gal4 driver. (I–J) Ectopic expression of KibS677A-GFP in the wing results in stronger growth suppression than expression of wild-type Kib-GFP. Quantification of wing sizes in (I) is represented as mean ± SEM relative to the control; n=number of wings (one wing per fly). Statistical comparison was performed using the one-way analysis of variance (ANOVA) test followed by Tukey’s Honestly Significant Difference (HSD) test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62326/elife-62326-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Depletion of SCFSlimb E3 ubiquitin ligase components Slimb (A), Cul1 (B), or SkpA (C) in the dorsal compartment of the wing imaginal disc results in increased Ubi>Kib-GFP levels. (D) Depletion or overexpression of other E3 ubiquitin ligases known to regulate Hpo pathway components has no effect on Ubi>Kib-GFP levels. Yellow dashed line represents the dorsal–ventral boundary, with dorsal side up (for ap>Gal4); yellow arrows indicate the anterior–posterior boundary, with posterior to the right (for hh and en>Gal4). (E–G’) Ubi>Kib-GFP levels are elevated upon depletion of Slimb alone or co-depletion of Slimb and Expanded (Ex), but not when Ex alone is depleted in the posterior compartment of the wing imaginal disc. (H–I’) Confocal images of Kib-GFP or KibS677A-GFP expressed under UASp control with nub>Gal4. KibS677A-GFP shows similar localization to Kib-GFP apically but KibS677A-GFP forms foci basally. Note that images in (I) and (I’) were taken at lower gain than images in (H) and (H’) to avoid saturation. Scale bars=10 μm.
 
 Slimb is a homolog of the mammalian β-TrCP that functions as a substrate-targeting component of the SCF E3 ubiquitin ligase complex by recognizing a consensus degron motif on target proteins (Skaar et al., 2013). Kib contains a conserved single stretch of amino acids 676DSGVFE681 that matches the consensus Slimb degron (Figure 3B). If Slimb regulates Kib stability via the degron, then we predict that (1) Kib ubiquitination should be Slimb-dependent, (2) Slimb should physically interact with Kib via the degron, (3) mutation of the degron site should diminish Kib ubiquitination, and (4) the degron mutant Kib should display greater stability than wild-type Kib. Using S2 cells, we found that depletion of Slimb severely reduces Kib ubiquitination and that Kib and Slimb formed a complex (Figure 3C and D). Additionally, mutating a serine residue in Kib (KibS677A) known to be important for proper substrate recognition by Slimb (Hart et al., 1999; Rogers et al., 2009; Morais-de-Sá et al., 2013; Ribeiro et al., 2014) significantly reduced both Slimb–Kib interaction (Figure 3D) and Kib ubiquitination (Figure 3E).
 
 To assess the effects of the degron mutation on protein stability in vivo, we generated wild-type and KibS677A transgenes inserted at identical genomic positions and expressed under control of the upstream activating sequence (UAS). For these experiments, we used the UASp promoter (Rørth, 1998), which expresses at lower levels in somatic tissues than UASt (attempts to generate a transgenic line expressing KibS677A under the ubiquitin promoter were unsuccessful, presumably because ubiquitous expression of a stabilized form of Kib is lethal). KibS677A-GFP accumulated to much greater levels than wild-type Kib-GFP when expressed in the wing disc pouch using the nub>Gal4 driver (Figure 3F–H). Confocal imaging revealed that while Kib-GFP and KibS677A-GFP had similar localizations apically, KibS677A-GFP displayed bright foci in basal tissue sections (Figure 3—figure supplement 1H–I’), presumably due to protein aggregation caused by higher Kib levels. Consistent with the observed increased protein abundance, expression of KibS677A-GFP under the nub>Gal4 driver led to significantly smaller adult wings than did wild-type Kib-GFP (Figure 3I and J). We presume this was because of increased Kib-driven upstream pathway activity, though we have not demonstrated this directly. Collectively, these results indicate that Slimb regulates Kib stability in vivo.
 
-## The Hpo pathway regulates Kib abundance via Slimb
+### The Hpo pathway regulates Kib abundance via Slimb
 
 To this point, our results identify both the Hpo pathway and Slimb as regulators of Kib abundance, but they do not resolve whether the two mechanisms act in parallel or together. We reasoned that if Slimb regulates Kib levels in parallel to the Hpo pathway, then loss of pathway components in tissue expressing KibS677A would have an additive effect on Kib levels. Conversely, if Hpo pathway components regulate Kib abundance via Slimb, then KibS677A should be insensitive to pathway inactivation. We first tested the effect of depleting Hpo pathway components on ubiquitination of KibS677A. In striking contrast to wild-type Kib, ubiquitination of KibS677A was not sensitive to depletion of Hpo and Wts (Figure 3E), suggesting that the Hpo pathway promotes Kib degradation via Slimb-mediated ubiquitination.
 
@@ -74,21 +94,41 @@ To test if the Hpo pathway promotes Kib degradation via Slimb in vivo, we induc
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62326/elife-62326-fig4-v2.jpg)
 
-**Figure 4.:** (A–F’) Mer somatic mosaic clones in wing discs expressing either UASp-Kib-GFP (A-C') or UASp-Kib (S677A-GFPD–F’) with the nub>Gal4 driver. Note that wild-type Kib-GFP is significantly elevated in Mer clones both apically and basally, while KibS677A-GFP is only slightly stabilized apically and is not affected basally. Yellow arrows in C and F point to presumed Kib aggregates due to increased abundance. All scale bars=20 μm. (G–H) Quantification of clone/control ratio of apical (G) and basal (H) Kib-GFP fluorescence. All quantification is represented as the mean ± SEM; asterisks above the plots show p-values between the transgenes; asterisks inside each bar show p-values for each transgene with respect to 1; n=number of clones (no more than two clones per wing disc were used for quantification). Statistical comparison was performed using Mann–Whitney U-test. (I–N’) hpo somatic mosaic clones in wing discs expressing either UASp-Kib-GFP (I–K’) or UASp-Kib (S677A-GFPL–N’) with the nub>Gal4 driver. Note that wild-type Kib-GFP levels are significantly elevated in hpo clones both apically and basally, while KibS677A-GFP is stabilized apically but depleted basally in hpo clones. (O–P) Quantification of clone/control ratio of apical (O) and basal (P) Kib-GFP fluorescence.
+**Figure 4.:** (A–F’) Mer somatic mosaic clones in wing discs expressing either UASp-Kib-GFP (A-C') or UASp-KibS677A-GFP (D–F’) with the nub>Gal4 driver. Note that wild-type Kib-GFP is significantly elevated in Mer clones both apically and basally, while KibS677A-GFP is only slightly stabilized apically and is not affected basally. Yellow arrows in C and F point to presumed Kib aggregates due to increased abundance. All scale bars=20 μm. (G–H) Quantification of clone/control ratio of apical (G) and basal (H) Kib-GFP fluorescence. All quantification is represented as the mean ± SEM; asterisks above the plots show p-values between the transgenes; asterisks inside each bar show p-values for each transgene with respect to 1; n=number of clones (no more than two clones per wing disc were used for quantification). Statistical comparison was performed using Mann–Whitney U-test. (I–N’) hpo somatic mosaic clones in wing discs expressing either UASp-Kib-GFP (I–K’) or UASp-KibS677A-GFP (L–N’) with the nub>Gal4 driver. Note that wild-type Kib-GFP levels are significantly elevated in hpo clones both apically and basally, while KibS677A-GFP is stabilized apically but depleted basally in hpo clones. (O–P) Quantification of clone/control ratio of apical (O) and basal (P) Kib-GFP fluorescence.
 
 The slight apical stabilization of KibS677A-GFP in Mer clones could be caused by two possibilities that are not mutually exclusive: (1) Slimb could still weakly bind KibS677A-GFP and promote its degradation, albeit with reduced efficiency, and (2) loss of Hpo pathway activity could lead to greater cortical Kib accumulation at the expense of the total cytoplasmic pool. In support of the first possibility, KibS677A-GFP weakly associated with Slimb (Figure 3D) and was still slightly ubiquitinated in S2 cells (Figure 3E). To ask whether the mild apical accumulation of KibS677A-GFP in Mer clones could also be caused by cortical recruitment, we examined Kib in tissues lacking Hpo, which resulted in stronger junctional accumulation of Ubi>Kib-GFP than loss of Mer (Figure 2D). Strikingly, whereas wild-type Kib-GFP increased both apically and basally in hpo clones (Figure 4I–K’ and O), KibS677A-GFP increased apically but decreased basally in hpo clones (Figure 4L–N’ and P). These results suggest that the stabilization of KibS677A-GFP observed upon Hpo pathway inactivation is, at least in part, due to the recruitment of Kib apically, where it might be stabilized in a protein complex.
 
-## The Hpo pathway promotes Kib degradation in a highly compartmentalized manner and independently of pathway activation by Ex
+### The Hpo pathway promotes Kib degradation in a highly compartmentalized manner and independently of pathway activation by Ex
 
 Previous work showed that Ex interacts with Kib in S2 cells and suggested that Kib and Ex function in a complex to regulate the Hpo pathway (Yu et al., 2010; Genevet et al., 2010). In contrast, in vivo studies suggest that Kib functions in parallel to Ex and its partner Crb to regulate activity of the downstream kinase cascade (Baumgartner et al., 2010; Yu et al., 2010; Su et al., 2017). Given these observations, we wondered whether loss of Ex or Crb would result in elevated Ubi>Kib-GFP abundance similar to the loss of Mer, Sav, Hpo, or Wts. To our surprise, depletion of Ex and Crb, either individually or together, had no detectable effect on Ubi>Kib-GFP levels (Figure 5A–C’). Moreover, reducing Hpo pathway activity by other means, such as by overexpressing Dachs or depleting Fat, Ds, or the Hpo activator Tao-1 (Boggiano et al., 2011), similarly had no effect on Ubi>Kib-GFP levels (Figure 5—figure supplement 1A–E). On the other hand, knockdown of Mats' or Kib’s binding partner, Pez (Poernbacher et al., 2012), increased Ubi>Kib-GFP levels (Figure 5—figure supplement 1F–G). These results suggest that upstream regulation of the Hpo pathway is highly compartmentalized and that Kib degradation is promoted specifically via the pathway components it associates with during Hpo pathway activation.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/62326/elife-62326-fig5-v2.jpg)
+
+**Figure 5.:** (A–C’) Depletion of Ex (A and A’), Crumbs (Crb; B and B’), or both Ex and Crb (C and C’) in the posterior wing imaginal disc does not affect Ubi>Kib-GFP abundance. Yellow arrows indicate the anterior–posterior (A–P) boundary. Scale bars=20 μm. (D–E) Adult wings of w1118, exe1/+; Ubi>Kib-GFP/+, or exe1/exe1; Ubi>Kib-GFP/+ flies. Quantification of wing sizes in (E) is represented as the mean ± SEM; n=number of wings (one wing per fly). Statistical comparison was performed using the one-way ANOVA test followed by Tukey’s HSD test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62326/elife-62326-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–G) Kib abundance is regulated only by a subset of Hpo pathway components. (H–H’) Validation of RNAi lines against ft (H) and ds (H’) used to deplete these components in (B) and (C), respectively. (I) Chi-square analysis shows that exe1 homozygotes survive as expected if ectopic Kib completely suppresses ex lethality. (J–K’) Ectopic Kib suppresses exe1 lethality. Wing discs of exe1 heterozygous larvae (J and J’) or exe1 homozygous larvae (K and K’) carrying Ubi>Kib-GFP were stained for ExEx to confirm the presence of the exe1 allele.
+
 This parallel behavior of Hpo pathway regulation prompted us to ask whether increasing the activity of one upstream branch of the pathway can substitute for the loss of another. To test this idea, we asked if the Ubi>Kib-GFP transgene, which causes mild undergrowth in a wild-type background (Figure 2—figure supplement 1E), can suppress the lethality of exe1, a null allele (Boedigheimer and Laughon, 1993). Ubi>Kib-GFP strongly suppressed exe1 lethality, producing viable and fertile adult flies at expected frequencies (Figure 5—figure supplement 1I) that completely lacked Ex protein (Figure 5—figure supplement 1J–K’). Homozygous exe1; Ubi>-Kib-GFP/+ flies had significantly larger wings than heterozygotes (Figure 5D–E), but otherwise were phenotypically normal. Together, these results establish that Kib and Ex signal in parallel to regulate at least some aspects of pathway activity.
 
-## The WW domains of Kib are essential for its degradation via the Hpo pathway and Slimb
+### The WW domains of Kib are essential for its degradation via the Hpo pathway and Slimb
 
 Our discovery that Kib degradation is tightly compartmentalized suggests that complex formation between Kib and other Hpo pathway components might be an important step both for pathway activation and Kib degradation. Indeed, Kib interacts with Sav, Mer, Hpo (via Sav), and Wts in S2 cells (Baumgartner et al., 2010; Genevet et al., 2010; Yu et al., 2010) and can recruit these components to the apical cell cortex in vivo (Su et al., 2017). To test this idea, we first asked if the pathway kinases Hpo and Wts play a structural vs. an enzymatic role in promoting Kib ubiquitination. For these experiments, kinase-dead versions of Hpo or Wts (HpoK71R and WtsK743R, respectively; Wu et al., 2003; Huang et al., 2005) were transfected into cells depleted of endogenous Hpo or Wts with dsRNA targeted against their 3′-UTRs (the kinase-dead constructs lacked endogenous UTRs). To our surprise, expression of HpoK71R or WtsK743R restored Kib ubiquitination when the endogenous kinases were depleted, indicating that these kinases promote Kib ubiquitination via complex formation rather than phosphorylation (Figure 2I).
 
 Next, we performed a structure/function analysis to map the region in Kib that could mediate complex formation and promote its degradation by the Hpo pathway components. Kib is a multivalent adaptor protein that contains at least seven potential functional regions: two N-terminal WW domains (WW1 and WW2), a C2-like domain, a putative atypical protein kinase C (aPKC)-binding domain, and three coiled-coil regions (CC1, CC2, and CC3; Figure 6A). We generated transgenic fly lines expressing different truncations of Kib-GFP under control of the ubiquitin promoter. Two transgenes, one expressing Kib lacking the C2-like domain and another encoding the first 483 amino acids (aa) of Kib, produced sterile transformants and could not be maintained as stable lines. The rest of the transgenes produced viable and fertile flies.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/62326/elife-62326-fig6-v2.jpg)
+
+**Figure 6.:** (A) Diagram of Kib truncations generated for this study. (B) Widefield fluorescence images of wing imaginal discs expressing wild-type and WW-domain truncations of Kib-GFP expressed under the ubiquitin promoter. All images were taken with identical settings. Scale bar=40 μm. (C–C’’) Depletion of Hpo does not affect expression of Ubi>KibΔWW1-GFP. Note that Hpo depletion leads to apical stabilization and basal depletion of KibΔWW1-GFP (C’’). (D–D’’) Depletion of Slimb does not affect expression of Ubi>KibΔWW1-GFP. Note that similar to Hpo depletion, loss of Slimb leads to slight apical stabilization and basal depletion of KibΔWW1-GFP (D’’). Yellow arrows indicate A–P boundary of the wing discs. Scale bars=20 μm (C and D) and 10 μm (C’’ and D’’). (E) A model of Kib degradation by the Hpo pathway and Slimb.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62326/elife-62326-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–I’) Effect of Hpo depletion in the posterior compartment of the wing imaginal disc on different Kib truncations. Deletion of the WW domains, individually (G–H’) or together (I and I’) stabilizes Kib apically but does not lead to an increase in basal Kib levels. Note that tissue in (G) is the same as shown in Figure 6C. Scale bars in the insets represent 3 μm for the insets and 10 μm for the corresponding low magnification image. (J) Diagram of Kib truncations generated for this study (same as in Figure 6A). (K) Size comparison (relative to wild-type) of adult wings from flies ectopically expressing different Ubi>Kib-GFP truncations. Quantification is shown as the mean ± SEM; n=number of wings. Statistical comparison was performed using the one-way ANOVA test followed by Tukey’s HSD test. (L–O’) Localization of Kib lacking WW1 (L and L’), WW2 (M and M’), or both WW1 and WW2 (N–O’) in wing imaginal disc cells. Note that Ubi>KibΔWW1&2-GFP localization is variable; sometimes it localizes normally at the junctions (N) and is diffused basally (N’), but usually it accumulates in bright foci both apically and basally (O and O’). Scale bar=10 μm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/62326/elife-62326-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–D) Slimb forms a complex with wild-type Kib and KibΔWW1&2 (A), Mer1-600 (B), Hpo (C), and Wts (D). (E–F) Co-IP of wild-type Kib or KibΔWW1&2 with Mer (E) or Wts (F). All experiments were performed using lysates from transfected S2 cells.
 
 A Kib truncation lacking the C-terminal third of the coding sequence (Kib1-857-GFP) but retaining the degron motif was strongly upregulated upon Hpo depletion, similar to wild-type Kib (Figure 6—figure supplement 1A–B’). Flies expressing Kib1-857-GFP had smaller wings than those expressing wild-type Kib-GFP (Figure 6—figure supplement 1K), suggesting that deletion of the C-terminal region enhances Kib activity. In contrast, a Kib truncation lacking the first 483 aa (Kib484-1288-GFP) was insensitive to Hpo depletion even though it retained the Slimb degron motif (Figure 6—figure supplement 1D and D’), suggesting that the degron alone is not sufficient for pathway-mediated degradation of Kib. Interestingly, Kib484-1288-GFP was much less potent at suppressing wing growth compared to wild-type Kib-GFP (Figure 6—figure supplement 1K), indicating that the first 483 amino acids of Kib are also essential for Hpo pathway activation.
 
@@ -98,9 +138,17 @@ Further characterization of the WW domain truncations revealed differences in ef
 
 We reasoned that if complex formation between Kib and other Hpo pathway components is necessary for Kib degradation, then Slimb might also be a part of this complex. Consistent with this prediction, Slimb co-immunoprecipitated with Mer, Hpo, and Wts in S2 cells (Figure 6—figure supplement 2B–D). We then asked whether the role of the WW domains in Kib degradation was to mediate Kib interaction with other Hpo pathway components. A previous study found that deletion of both WW domains enhanced Kib interaction with Mer in S2 cells (Baumgartner et al., 2010), a result we confirmed (Figure 6—figure supplement 2E). Kib interacts with Wts in flies (Genevet et al., 2010; Yu et al., 2010), and mammalian Kib interacts with Lats2 (a mammalian homolog of Wts) via the WW domains (Xiao et al., 2011). We found that the interaction of KibΔWW1&2 with Wts was significantly weakened (Figure 6—figure supplement 2F). Additionally, it was previously reported that Pez interacts with Kib via the WW domains in S2 cells (Poernbacher et al., 2012), consistent with our in vivo observation that loss of Pez leads to higher Kib levels. Collectively, these results suggest that pathway-mediated Kib degradation requires the WW domains of Kib, possibly because these domains mediate Kib interaction with multiple pathway components.
 
-## Mechanical tension patterns Kib degradation across the wing disc epithelium
+### Mechanical tension patterns Kib degradation across the wing disc epithelium
 
 We next sought to address the potential developmental significance of Kib degradation by the Hpo pathway and Slimb. Observation of wing discs ectopically expressing either UASp-Kib-GFP or UASp-KibS677A-GFP revealed strikingly different patterns of Kib abundance throughout the tissue. Ectopically expressed wild-type Kib-GFP appeared more abundant at the center of the wing pouch with a marked decrease in fluorescence at the tissue periphery (Figure 7A and A'). A similar pattern of abundance was observed for endogenously expressed Kib::GFP (Figure 7—figure supplement 1A). In contrast, ectopically expressed KibS677A-GFP fluorescence was distributed more uniformly throughout the wing pouch (Figure 7B and B’ and Figure 7—figure supplement 1B–D). Because both transgenes were expressed from identical genomic locations and under the same ectopic promoter, we reasoned that the difference between Kib and KibS677A abundance throughout the tissue was likely a result of differential protein turnover.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/62326/elife-62326-fig7-v2.jpg)
+
+**Figure 7.:** (A–B’) Grayscale images of the wing pouch, which produces the adult wing blade, expressing UASp-Kib-GFP (A) or UASp-KibS677A-GFP (B) at identical genomic locations under the nub>Gal4 driver. Corresponding heatmap intensity images are shown in (A’) and (B’). Note that KibS677A-GFP displays a more uniform distribution across the pouch than wild-type Kib-GFP. (C) Quantification of aspect ratios of adult wings expressing nub>Gal4 alone or with UASp-Kib-GFP and UASp-KibS677A-GFP. The color-coded segments in the wing image represent the wing length (orange), distal width (green), and proximal width (red). (D) Quantification of the length of proximal (S1) or distal (S2) wing region with respect to total wing length in wings expressing nub>Gal4 alone or with UASp-Kib-GFP and UASp-KibS677A-GFP; p-cv=posterior crossvein. All quantification is represented as the mean ± SEM; n=number of wings (one wing per fly). Statistical comparison was performed using the one-way ANOVA test followed by Tukey’s HSD test. (E–F’) Kib-GFP levels are elevated in rapidly proliferating UAS-bantam clones. (G–G’’’) Increased Kib abundance is more pronounced at the center of the wing pouch (yellow arrowhead) than at its periphery (white arrow). (H–I’) KibΔWW1-GFP levels do not change in bantam-expressing clones. All scale bars=20 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/62326/elife-62326-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) A grayscale and heatmap image of a wing imaginal disc expressing endogenous Kib::GFP. (B–B’) Additional examples of wing discs expressing Kib-GFP or KibS677A-GFP under UASp control using the nub>Gal4 driver focused on the wing pouch, which produces the adult wing blade. (C) To generate the intensity profiles in (C), rectangular selections of equal length were drawn on each disc either in the anterior or posterior region (same side was used for each pair). Intensity values from UASp-Kib-GFP discs were normalized to the maximum value of UASp-KibS677A-GFP discs. (D) Intensity profiles of nine pairs of wing imaginal discs expressing UASp-Kib-GFP or UASp-KibS677A-GFP under the nub>Gal4 driver. In each case, wild-type Kib intensity drops more severely from the distal (middle) to proximal (most dorsal or ventral) part of the wing pouch.
 
 If the abundance of KibS677A-GFP is disproportionately higher at the periphery of the wing blade, which corresponds to the proximal regions of the adult wing, then that region should display more severe growth defects when compared to wild-type Kib-GFP. To ask whether growth was disproportionately inhibited in the proximal region of the wing, we first measured the wing aspect ratios comparing the width of the proximal or distal wing regions to the overall proximal-distal length. Strikingly, while the relative decrease in width distally was mild in nub>UASp-Kib-GFP or nub>UASp-KibS677A-GFP wings compared to control wings, the proximal width decreased dramatically in wings expressing KibS677A, indicating that expression of KibS677A inhibited growth disproportionately more in the proximal region (Figure 7C). Similarly, when the wing length was measured in the proximal-distal (P–D) axis, using L4 vein as an estimate of total length and the posterior crossvein as the approximated midpoint, we found that wing growth was more severely inhibited proximally than distally (Figure 7D). Collectively, these results suggest that Kib degradation occurs in a patterned manner in the wing imaginal epithelium and could serve to pattern growth of this tissue.
 
@@ -122,25 +170,441 @@ Another question our study raises is the functional significance of having both 
 
 ## Materials and methods
 
-## Fly genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>kibra</td>
+      <td>DOI: 10.1016/j.devcel.2009.12.012 DOI: 10.1016/j.devcel.2009.12.011 DOI: 10.1016/j.devcel.2009.12.013</td>
+      <td>FLYB: FBgn0262127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Kib::GFP</td>
+      <td>DOI: 10.1016/j.devcel.2017.02.004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Mer4 19AFRT</td>
+      <td>LaJeunesse et al., 1998</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>exe1 40AFRT</td>
+      <td>PMID: 8269855</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>19AFRT sd47M</td>
+      <td>Wu et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>hpoBF33 42DFRT</td>
+      <td>Jia et al., 2003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ban3-GFP</td>
+      <td>DOI: 10.1242/dev.070367</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Mer RNAi</td>
+      <td>DOI: 10.1016/j.devcel.2017.02.004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-sav RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL 28006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-hpo RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC 104169</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-wts RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC 106174</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-ex RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC 109281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-crb RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC 39177</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-yki RNAi (III)</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC 40497</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-slimb RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL 33898</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Cul1 RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL 29520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-SkpA RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL 32870</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mahj RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL 34912</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Nedd4 RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL 34741</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-POSH RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL 64569</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-POSH</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL 58990</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Su(dx) RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL 67012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Herc4</td>
+      <td>DOI: 10.1371/journal.pone.0131113</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Smurf RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL 40905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Fbxl7 RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC 108628</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-ft RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL 34970</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-ds RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC 36219</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-dachs-V5</td>
+      <td>DOI: 10.1242/dev.02427</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Tao1 RNAi</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VDRC 17432</td>
+      <td>Previously used in DOI: 10.1016/j.devcel.2011.08.028</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mats RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL 34959</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Pez RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BL 33918</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ey&gt;Flp 19AFRT Ubi-GFP; Ubi-RFP 42DFRT</td>
+      <td>DOI: 10.1016/j.devcel.2013.04.021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ft-GFP</td>
+      <td>VDRC 318477</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ds:GFP</td>
+      <td>Brittle et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ubi-Kib-GFP-FLAG 86Fb</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASp-Kib-GFP-FLAG 86Fb</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASp-KibS677A-GFP-FLAG 86Fb (this study)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ubi-Kib-GFP-FLAG VK37</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ubi-KibΔWW1-GFP-FLAG VK37</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ubi-KibΔWW2-GFP-FLAG VK37</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ubi-KibΔWW1 and 2-GFP-FLAG VK37</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ubi-Kib1-857-GFP-FLAG VK37</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ubi-Kib484-1288-GFP-FLAG VK37</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ubi-Kib858-1288-GFP-FLAG VK37</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ubi-KibΔCC1-GFP-FLAG VK37</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ubi-KibΔCC2-GFP-FLAG VK37</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods section</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ex (Guinea pig polyclonal)</td>
+      <td>DOI: 10.1016/j.cub.2006.02.063</td>
+      <td>RRID:AB_2568722</td>
+      <td>Tissue staining (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FLAG (Mouse monoclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#F1804; RRID:AB_262044</td>
+      <td>IB (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Sd (Guinea pig polyclonal)</td>
+      <td>Guss et al., 2013</td>
+      <td>RRID:AB2567874</td>
+      <td>Tissue staining (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (Guinea pig polyclonal)</td>
+      <td>DOI: 10.1091/mbc.E19-07-0387</td>
+      <td>NA</td>
+      <td>IP (1:1250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GFP (Rabbit polyclonal)</td>
+      <td>Michael Glotzer (University of Chicago)</td>
+      <td>NA</td>
+      <td>IB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Hpo (mouse polyclonal)</td>
+      <td>DOI: 10.1016/j.devcel.2017.02.004</td>
+      <td>NA</td>
+      <td>IB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA (Rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#sc-805; RRID:AB_631618</td>
+      <td>IB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Myc 9B11 (Mouse monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Product #2276</td>
+      <td>IP (1:1000) IB (1:40,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V5 (Mouse monoclonal)</td>
+      <td>GenScript</td>
+      <td>Cat# A01724-100</td>
+      <td>IB (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-alpha tubulin (Mouse monoclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# T 9026</td>
+      <td>IB (1:2500)</td>
+    </tr>
+    <tr>
+      <td>Cell line (D. melanogaster)</td>
+      <td>S2-DGRC</td>
+      <td>Cherbas Lab, Indiana University</td>
+      <td>RRID:CVCL_TZ72</td>
+      <td>https://dgrc.bio.indiana.edu/product/View?product=6</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly genetics
 
 For expression of UAS transgenes, the following drivers were used: hh>Gal4, en>Gal4, ap>Gal4, nub>Gal4.
 
 To generate mutant clones, the following crosses were performed:
 
-## Kib::GFP in ex or Mer mutant clones
+#### Kib::GFP in ex or Mer mutant clones
 
-## Yki-YFP in ex or Mer mutant clones
+#### Yki-YFP in ex or Mer mutant clones
 
-## ban3-GFP in ex or Mer mutant clones
+#### ban3-GFP in ex or Mer mutant clones
 
-## Kib::GFP in sd Mer double-mutant clones
+#### Kib::GFP in sd Mer double-mutant clones
 
-## Ubi>Kib-GFP in single sd or hpo mutant clones or in sd hpo double-mutant clones
+#### Ubi>Kib-GFP in single sd or hpo mutant clones or in sd hpo double-mutant clones
 
-## UASp-Kib-GFP or UASp-KibS677A-GFP in Mer or hpo mutant clones
+#### UASp-Kib-GFP or UASp-KibS677A-GFP in Mer or hpo mutant clones
 
-## Expression constructs and generation of Drosophila transgenic lines
+### Expression constructs and generation of Drosophila transgenic lines
 
 To generate Ubi>Kib-GFP, Kib was fused to GFP-FLAG with a linker sequence 5′-TCCGGTACCGGCTCCGGC-3′, and the entire Kib-GFP-FLAG cassette was first cloned into UAStattB backbone to generate UASt-Kib-GFP-FLAG, with unique NotI (immediately 5′ of the Kozak sequence) and KpnI (in the linker region) restriction sites flanking Kib sequence. To make Kib1-857, Kib858-1288, and Kib484-1288, the corresponding regions were amplified (Supplementary file 1); UAStattB was linearized with NotI and KpnI and the amplified fragments were cloned into linearized backbone via Gibson assembly (Gibson et al., 2009). Fragments lacking CC or WW domains were made using an inverse PCR approach with flanking primers (Supplementary file 1) and the amplified linear pieces including the plasmid backbone were circularized via Gibson assembly. Kib-GFP-FLAG cassettes (full-length or truncations) were amplified using flanking primers (Supplementary file 1) and cloned via Gibson assembly into p63E-ubiquitin backbone (Munjal et al., 2015) linearized with NotI and XbaI. The transgenes were inserted at the 86Fb (full-length Kib) or VK37 (full-length and truncated Kib) docking site via phiC31-mediated site-specific integration.
 
@@ -148,15 +612,15 @@ pMT-Kib-GFP-FLAG was generated by cloning Kib-GFP-FLAG cassette via Gibson assem
 
 UASp-KibS677A-GFP-FLAG was generated using Q5 Site-Directed Mutagenesis Kit (New England Biolabs, catalog #E0554S) using primers KibS677A (Supplementary file 1). pMT-Kib-GFP-FLAG was used as a template due to smaller size of the plasmid. The mutant KibS677A-GFP-FLAG cassette was excised with NotI and XbaI and ligated into pUASp (Rørth, 1998) to generate UASp-KibS677A-GFP. Both UASp-KibS677A-GFP and UASp-Kib-GFP were inserted at the 86Fb docking site via phiC31-mediated site-specific integration.
 
-## Immunostaining of imaginal tissues
+### Immunostaining of imaginal tissues
 
 In Figure 2F-G’’’, Figure 2—figure supplement 2A–E, and Figure 5—figure supplement 1J-K', wing or eye imaginal discs from wandering late third instar larvae were fixed and stained as previously described (McCartney and Fehon, 1996). Primary antibodies, listed in Key Resources table, were diluted as follows: anti-Ex (1:5000), anti-FLAG (1:20,000), and anti-Sd (1:1000). Secondary antibodies (diluted 1:1000) were from Jackson ImmunoResearch Laboratories. Immunostaining samples were imaged using either a Zeiss LSM 800 or LSM 880 confocal microscope and the images were analyzed with Image J.
 
-## Live imaging of imaginal tissues
+### Live imaging of imaginal tissues
 
 Throughout the paper (except in Figure 2F–G’’’ and Figure 2—figure supplement 2A–E), live tissues were used for imaging. Live imaging of the Drosophila imaginal tissues was performed as previously described (Xu et al., 2019). Briefly, freshly dissected wing or eye imaginal discs from third instar larvae were pipetted into a ~40 μl droplet of Schneider’s Drosophila Medium supplemented with 10% fetal bovine serum and mounted on a glass slide. To support the tissue, spherical glass beads (Cospheric, Product ID: SLGMS-2.5) of ~50 μm in diameter were placed under the cover slip. The mounted samples were immediately imaged on Zeiss LSM 880 or LSM 800 confocal microscopes. Throughout the paper, apical tissue views were shown as maximum projections of the most apical optical sections (0.75 μm/section, four to five sections) generated using Image J; for basal views, single sections ~10.5 μm below the apical surface were shown. Widefield fluorescence imaging of live wing imaginal discs was done using a Zeiss Axioplan 2ie microscope with an Orca ER camera and Zeiss AxioVision software.
 
-## Co-immunoprecipitation from S2 cells
+### Co-immunoprecipitation from S2 cells
 
 The following constructs were used in co-immunoprecipitation experiments: pMT-Kib-GFP-FLAG (this study), pMT-KibΔWW1&2-GFP-FLAG (this study), pAc5.1-Slimb-6x-myc (from J. Chiu, UC Davis), pAFW-Mer, pAHW-Mer1-600, pMT-FLAG-Hpo, and pAC5.1-V5-Wts (Huang et al., 2005).
 
@@ -166,12 +630,12 @@ Cells were harvested and lysed on ice in buffer containing 25 mM Hepes, 150 mM N
 
 For detection of phosphorylated Kib in vivo, dissected wing discs from wandering third-instar larvae (200 discs per condition) expressing nub>Gal4 with Ubi>Kib-GFP alone or together with an indicated RNAi transgene were immediately flash-frozen in a bath of dry ice and 95% ethanol and stored at −80°C. On the day of IP, the discs were briefly thawed on ice and lysed in buffer described above. PhosSTOP (Sigma Aldrich) phosphatase inhibitor cocktail was added to the lysis buffer to inhibit phosphorylation (one tablet/10 ml of buffer). Kib-GFP was immunoprecipitated with guinea pig anti-GFP antibody (1:1250). A control sample was treated with λ-phosphatase. Samples were run on 8% polyacrylamide gel, with 118:1 acrylamide/bisacrylamide (Scheid et al., 1999), to better resolve phosphorylated Kib species.
 
-## Ubiquitination assay and generation of dsRNA
+### Ubiquitination assay and generation of dsRNA
 
 For ubiquitination assays, pMT-HA-Ub (Zhang et al., 2006) was co-transfected where indicated to provide labeled ubiquitin. To inhibit proteasomal degradation, 50 μM MG132 (Cayman Chemical) and 50 μM calpain inhibitor I (Sigma Aldrich) was added 4 hr prior to cell lysis. Cells were lysed in RIPA buffer (150 mM NaCl, 1% NP-40, 0.5% Na deoxycholate, 0.1% SDS, and 25 mM Tris [50 mM, pH 7.4]), supplemented with 5 mM N-ethylmaleimide and Complete protease inhibitor cocktail (Roche, one tablet/10 ml of buffer). HA-tagged ubiquitin was purified using Pierce anti-HA magnetic beads (clone 2–2.2.14).
 
 For dsRNA-mediated knockdown experiments, T7 primers (Supplementary file 1), annealing at the 3′-UTR (for Hpo and Wts) or the coding region (for Slimb), were used to first generate polymerase chain reaction (PCR) products. The PCR products were then used as templates to transcribe dsRNA using the MEGAscript T7 Transcription Kit (ThermoFisher, catalog #13345).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Image J was used to quantify mean fluorescence intensity in clones vs. control region in Figure 1C, H and Figure 4G, H, O, and P. In all cases, no more than two clones per imaginal disc were used for quantification. To quantify adult wing sizes, wings were mounted in methyl salicylate and photographed with the same settings on a Zeiss Axioplan 2ie microscope using a Canon camera (EOS rebel T2i). Subsequent measurements of wing size were taken using Image J. Graphical and statistical analyses were performed using MS Excel and R, respectively.

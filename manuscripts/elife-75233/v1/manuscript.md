@@ -18,9 +18,9 @@
 
 ### Affiliations
 
-1. https://ror.org/057qpr032 University of Bordeaux, CNRS UMR 5297, Interdisciplinary Institute for Neuroscience Bordeaux France
+1. University of Bordeaux, CNRS UMR 5297, Interdisciplinary Institute for Neuroscience Bordeaux France ([ROR:057qpr032](https://ror.org/057qpr032))
 2. VIB Center for Brain & Disease Research and KU Leuven, Department of Neurosciences, Leuven Brain Institute Leuven Belgium
-3. https://ror.org/057qpr032 University of Bordeaux, CNRS UAR 3420, INSERM, Bordeaux Imaging Center Bordeaux France
+3. University of Bordeaux, CNRS UAR 3420, INSERM, Bordeaux Imaging Center Bordeaux France ([ROR:057qpr032](https://ror.org/057qpr032))
 
 † Corresponding author
 
@@ -40,65 +40,153 @@ To address those questions, we examined the surface localization and dynamics of
 
 ## Results
 
-## Endogenous MDGA1 is homogeneously distributed in hippocampal pyramidal neurons
+### Endogenous MDGA1 is homogeneously distributed in hippocampal pyramidal neurons
 
 To examine the localization of endogenous MDGAs in neurons, we produced and purified full-length recombinant Fc-tagged MDGA1 and MDGA2, and custom-ordered the generation of rabbit polyclonal antibodies against those proteins. We then characterized the collected antisera using immunohistochemistry and western blots. The MDGA1 antiserum recognized recombinant HA-MDGA1 (but not HA-MDGA2) extracted from HEK-293T cells as a 130 kDa band on immunoblots (Figure 1A), above the molecular weight of 101 kDa expected from the amino-acid sequence, suggesting glycosylation of the protein i.e. through the addition of N-linked sugar chains. The reactivity to MDGA1 was abolished by pre-incubation of the antiserum with an excess of recombinant MDGA1-Fc antigen (Figure 1B). The MDGA1 antiserum recognized a single band around 130 kDa in brain homogenates from wild-type mice, which was not present in brain homogenates from Mdga1 KO mice, demonstrating antibody specificity (Figure 1C). In some samples, the MDGA1 antibody recognized a doublet of bands, which may suggest a differential glycosylation pattern seemingly regulated across neuronal development (Figure 1—figure supplement 1C). Immunohistochemistry on brain sections showed abundant MDGA1 localization in the hippocampus, with prominent labeling in CA3 and CA1 stratum radiatum and stratum oriens containing pyramidal neuron dendrites (Figure 1D). MDGA1 staining was absent in brain sections from Mdga1 KO mice (Ishikawa et al., 2011), showing antibody specificity in tissue. MDGA1 was detected both in pre-synaptic and post-synaptic fractions from synaptosome preparations, revealing its presence in synaptic compartments (Figure 1E). Unfortunately, the MDGA2 antiserum was not specific enough to be further used. However, we detected abundant levels of MDGA2 mRNAs by RT-qPCR in hippocampal cultures (Figure 1—figure supplement 1A, B), in agreement with previous in situ hybridization and β-galactosidase staining (Connor et al., 2016; Lee et al., 2013), together suggesting that the MDGA2 protein is also expressed. Interestingly, we also detected mRNAs for both MDGA1 and MDGA2 in astrocyte cultures (Figure 1—figure supplement 1A, B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig1-v1.jpg)
+
+**Figure 1.:** (A) MDGA1 antiserum recognizes recombinant HA-MDGA1, but not HA-MDGA2, transiently expressed in HEK-293T cells (top membrane). Mock-transfected HEK-293T cells were used as controls. Anti-HA antibody labels both HA-MDGA1 and HA-MDGA2 (bottom membrane). Molecular weight markers in kDa indicated on the left. (B) Competition with different amounts (0, 20, and 40 µg) of excess recombinant MDGA1-Fc blocks detection of HA-MDGA1 by MDGA1 antiserum. (C) MDGA1 antiserum detects a single 130 kDa band in brain homogenate from wild-type mice, which was absent in brain homogenate from Mdga1 KO mice (top membrane). Asterisk indicates non-specific band. ßIII-tubulin was used as loading control (bottom membrane). (D) Immunohistochemistry with MDGA1 antiserum (red) reveals strong immunoreactivity in CA3 and CA1 regions of the hippocampus in wild-type adult mice, which was absent in Mdga1 KO mice. Nuclear marker Hoechst (cyan) was used to visualize tissue architecture. (E) Rat brain subcellular fractionation probed for MDGA1, postsynaptic excitatory marker PSD-95, and presynaptic marker synaptophysin. PSD: postsynaptic density. For original immunoblot images presented in panels (A,B,C,E), refer to Figure 1—source data 1–7. (F, I) Representative confocal images of dendritic segments from dissociated hippocampal neurons at different times in culture (7, 14, and 21 DIV) that were immunolabeled with MDGA1 antibody, and counterstained for either PSD-95 and VGLUT1 (F), or gephyrin and VGAT (I). (G,H,J,K) Quantification of the co-localization level and area overlap between endogenous MDGA1 and the excitatory post-synaptic marker PSD-95 (G, H), or the inhibitory post-synaptic marker gephyrin (J, K) as a function of time in culture. Data represent mean ± SEM of n > 13 neurons for all conditions and from three independent experiments, and were compared by a Kruskal–Wallis test followed by Dunn’s multiple comparison test (*p < 0.05; **p < 0.01; ***p < 0.001). For the statistics of the data presented in panels (G,H,J,K), see Supplementary file 1 and Figure 1—source data 8.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Dissociated hippocampal neurons were cultured for 7, 14, and 21 DIV and astrocytes were cultured for 28 DIV. (A, B) Normalized mRNA levels of MDGA1 and MDGA2, respectively, at different developmental stages in neurons and astrocytes, as determined by RT-qPCR. The Ct value for each gene was normalized against that of SDHA and U6 housekeeping genes, and expressed relatively to the value of neurons at 7 DIV. (C) Western-blots performed on protein extracts from hippocampal cultures at different developmental stages, for various synaptic proteins. For original immunoblot images presented in panel (C), refer to Figure 1—figure supplement 1—source data 1–10. (D) Quantitation of expression levels for the proteins detected in (C). For each protein, values are expressed in reference to the amount of protein detected at 7 DIV. All protein contents were normalized to actin. Data represent mean ± SEM from three independent experiments, and were compared by a Kruskal-Wallis test followed by Dunn´s multiple comparison test (*p < 0.05). For the statistics of the data presented in panels (A,B,D), see Supplementary file 1 and Figure 1—figure supplement 1—source data 11.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** COS-7 cells were co-electroporated with AP-MDGA1 or AP-MDGA2 and BirAER. Cells were live labeled with anti-MDGA1 antibody and Alexa 647-conjugated streptavidin. Following fixation, secondary anti-rabbit antibodies conjugated to Alexa546 were applied and images were acquired in the Alexa546 and Alexa 647 channels. Merge images show anti-MDGA1 labeling in magenta, streptavidin in cyan, and DAPI staining in white. Note that the MDGA1 antibody recognizes only AP-MDGA1, and not AP-MDGA2.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Epifluorescence images of representative hippocampal neurons cultured for 10, 14, and 21 DIV, immunolabeled with MDGA1 antibody (magenta), and counterstained with MAP-2 (blue). (B, C) Bar plots showing the total MDGA1 fluorescence intensity, or the fluorescence intensity at the clusters, both parameters being expressed in relation to the respective fluorescence signal at DIV 10. (D, E) MDGA1 cluster area and density, respectively, at different time points in culture. Data represent mean ± SEM of n > 58 neurons for each condition and from two independent experiments. Values were compared by a Kruskal-Wallis test followed by Dunn’s multiple comparison test (ns: not significant; **p < 0.01). For the statistics of the data presented in panels (B,C,D,E), see Supplementary file 1 and Figure 1—figure supplement 3—source data 1.
+
 We then examined the sub-cellular surface distribution of endogenous MDGA1 in dissociated rat hippocampal cultures at different developmental stages (DIV 7, 14, 21), by performing live staining of neurons with MDGA1 antiserum before fixation and counter immuno-labelling of either MAP-2 as a dendritic marker, excitatory pre- and post-synaptic proteins VGLUT1 and PSD-95, or inhibitory pre- and post-synaptic markers VGAT and gephyrin, respectively (Figure 1F, I). Live labelling with the MDGA1 antibody was first tested in COS-7 cells expressing recombinant MDGA1 or MDGA2 molecules. Strong surface staining with the MDGA1 antiserum was observed in cells expressing MDGA1, but not in cells expressing MDGA2, validating this application and demonstrating no cross-reactivity of the antibody (Figure 1—figure supplement 2). In neurons, the MDGA1 staining revealed many sub-micron clusters, most likely a consequence of artifactual MDGA1 aggregation due to live incubation with the divalent polyclonal antibody (Chamma et al., 2016a). Those small MDGA1 puncta were distributed all over the dendritic shaft, with relatively constant total fluorescence intensity and cluster area over the developmental period analyzed (Figure 1—figure supplement 3), and a small decrease in MDGA1 cluster intensity at DIV 21, in accordance to an overall decrease of total cellular MDGA1 level at later time points, as shown by RT-qPCR and western blot analyses (Figure 1—figure supplement 1A-D). MDGA1 clusters were present, but not particularly enriched, at excitatory or inhibitory synapses. Quantitatively, the fraction of excitatory post-synapses containing MDGA1 clusters was 45% and 40% at DIV 7 and 14, respectively, and decreased to 25% at DIV 21 (Figure 1G), while the proportion of inhibitory post-synapses containing MDGA1 was 20% at DIV 10 and increased to 30% at DIV 14 and 21 (Figure 1J), suggesting that MDGA1 partially redistributes from excitatory to inhibitory synapses upon neuronal maturation. Overall, among synapses that contained MDGA1, the area overlap between PSD-95 and MDGA1, or between gephyrin and MDGA1 was around 15–30% (Figure 1H and K), pointing to a minor occupancy of both excitatory and inhibitory synapses by MDGA1.
 
-## Recombinant MDGA1 and MDGA2 are homogeneously distributed in dendrites at the nanoscale level
+### Recombinant MDGA1 and MDGA2 are homogeneously distributed in dendrites at the nanoscale level
 
 Next, we examined the nanoscale membrane organization of MDGAs using super-resolution microscopy (Figure 2). The formation of small endogenous MDGA1 aggregates observed upon live antibody labelling prevented a reliable estimation of MDGA distribution, as previously documented for NLGN1 (Chamma et al., 2016a). Moreover, we were lacking a good antibody to MDGA2 for surface staining. Thus, to monitor the precise localization of MDGAs expressed at near endogenous levels, we replaced native MDGAs by recombinant tagged counterparts allowing for their detection at the ensemble and single molecule levels. To knock down native MDGAs, we used previously published shRNAs (Loh et al., 2016; Pettem et al., 2013). The efficiency and specificity of MDGA1 and MDGA2 silencing in our conditions was first assessed in COS-7 cells by co-expressing shRNAs to MDGA1 or MDGA2 with recombinant MDGA1 or MDGA2 followed by Western blot (Figure 2—figure supplement 1). In neurons, we measured a 75% decrease of surface MDGA1 immunofluorescence level in cells expressing shMDGA1 as compared with non-electroporated cells or cells expressing shCTRL (Figure 2—figure supplement 2A,C). In neurons electroporated with shMDGA2, we estimated a 40% reduction in mRNA level as compared with shCTRL by RT-qPCR (Figure 2—figure supplement 2E). We then rescued endogenous MDGAs with recombinant rat MDGA1 or MDGA2 bearing the short N-terminal biotin acceptor peptide (AP), which is biotinylated upon the co-expression of biotin ligase (BirAER) allowing for its detection with streptavidin (Howarth et al., 2005). Neurons co-expressing shMDGA1 and rescue AP-MDGA1 showed a 1.5-fold increase in MDGA1 surface immunostaining compared to non-electroporated cells, reflecting a mild over-expression (Figure 2—figure supplement 2B, D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig2-v1.jpg)
+
+**Figure 2.:** Hippocampal neurons were electroporated at DIV 0 with a combination of shRNAs to MDGA1 or MDGA2, rescue AP-MDGA1 or AP-MDGA2 (respectively), biotin ligase BirAER, and Homer1c-DsRed. Alternatively, neurons were electroporated with shRNA to NLGN1, rescue AP-NLGN1, biotin ligase (BirAER), and Homer1c-DsRed, or with GFP-GPI and Homer1c-DsRed. dSTORM experiments were performed at DIV 10 or 14, after labelling neurons with Alexa 647-conjugated mSA (for AP-tagged MDGAs and NLGN1) or Alexa 647-conjugated GFP nanobody (for GFP-GPI). (A, C) Representative images of dendritic segments showing Homer1c-DsRed positive synapses (in red), the super-resolved localization map of all AP-MDGA1, AP-MDGA2, GFP-GPI, or AP-NLGN1 single molecule detections (gold), and merged images (Homer1c-DsRed in white and detections in magenta). Insets on the right show zoomed images of different examples of Homer1c-DsRed-positive puncta overlapped with localizations (magenta) or pseudo-coloured localizations in a synaptic area marked by a yellow circle. (B, D) Bar plots representing the enrichment of AP-MDGA1, AP-MDGA2, GFP-GPI, and AP-NLGN1 localizations at synapses. Values were obtained from n > 5 neurons for each experimental condition and from at least three independent experiments. Data were compared by a Kruskal–Wallis test followed by Dunn’s multiple comparison test (*p < 0.05; **p < 0.01; ***p < 0.001). For the statistics of the data presented in panels (B,D), see Supplementary file 1 and Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Western-blots performed on protein extracts from COS-7 cells expressing HA-MDGA1, HA-MDGA1 rescue, or HA-MDGA2 with various doses of shMDGA1 (2, 4, and 6 µg). Blots were probed using antibodies to MDGA1, HA, and tubulin as a loading control. (B) Western-blots performed on protein extracts from COS-7 cells expressing HA-MDGA2, HA-MDGA2 rescue, or HA-MDGA1 with various doses of shMDGA2. Blots were probed using antibodies to HA or actin as a loading control. For original immunoblot images presented in panels (A,B), refer to Figure 2—figure supplement 1—source data 1–6. (C, D) Plots showing the quantitation of MDGA1 or MDGA2 levels normalized by tubulin or actin, and expressed in reference to the HA-MDGA1 control with no shMDGA1, or to HA-MDGA2 with no shMDGA2, respectively. Data represent mean ± SEM from two independent experiments, and were compared by a Kruskal-Wallis test followed by Dunn´s multiple comparison test (*p < 0.05; **p < 0.01; ***p < 0.001). For the statistics of the data presented in panels (C,D), see Supplementary file 1 and Figure 2—figure supplement 1—source data 7.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A, B) Representative surface immunofluorescence staining of endogenous MDGA1 in DIV 10 neurons that were electroporated at DIV 0 with shCTRL or shMDGA1 (A), or with rescue AP-MDGA1 plus shCTRL or shMDGA1 (B), in relation to non-electroporated neighbors (non electro). Representative images show native MDGA1 in magenta, the GFP reporter of the shRNAs in green and MAP-2 in blue. (C, D) Corresponding bar graphs showing the MDGA1 fluorescence intensity on electroporated neurons in the different conditions, normalized by the corresponding intensity on non-electroporated neurons. Data represent the mean ± SEM of n > 40 neurons for each experimental condition obtained from three independent experiments, and were compared by a Mann-Whitney test (**p < 0.01; ****p < 0.0001). (E) RT-qPCR of MDGA2 mRNAs measured from hippocampal neuronal cultures that were electroporated at DIV 0 with shCTRL or shMDGA2. PCR values were first normalized against U6 and SDHA housekeeping genes, and MDGA2 expression levels were then expressed as a function of shCTRL (taken as 100%). Data represent the mean ± SEM from four independent experiments, and were compared by an unpaired t-test (***p < 0.001). For the statistics of the data presented in panels (C,D,E), see Supplementary file 1 and Figure 2—figure supplement 2—source data 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) COS-7 cells were co-transfected with AP-MDGA1, HA-NLGN1, and BirAER, and biotinylated AP-MDGA1 was precipitated with streptavidin beads. Separated proteins were immunoblotted with anti-NLGN1 and -MDGA1 antibodies. SM: starting material; PD: pull-down. (B) COS-7 cells were co-transfected with AP-NLGN1, HA-MDGA2, and BirAER, and biotinylated AP-NLGN1 was precipitated with streptavidin beads. Separated proteins were immunoblotted with anti-NLGN1 and anti-HA antibodies. FT: flow through. For original immunoblot images presented in panels (A,B), refer to Figure 2—figure supplement 3—source data 1–5. (C, D) Fluorescence microscopy observation of COS-7 cells expressing AP-NLGN1, BirAER, and HA-MDGA2. (C) AP-NLGN1 was live clustered by incubating cells with a mix of primary anti-biotin antibody and anti-mouse secondary antibody (cyan), and associated HA-MDGA2 was detected by rat anti-HA antibody followed by anti-rat antibody (magenta). Colocalization of NLGN1 and MDGA2 clusters indicates that accessibility of the AP tag is not impaired by the formation of NLGN1-MDGA2 complexes. (D) HA-MDGA2 was live clustered by cell incubation with a mix of rat anti-HA and secondary anti-rat antibody (magenta), then biotinylated AP-NLGN1 was detected with fluorescent streptavidin (cyan). Co-localization of NLGN1 and MDGA2 clusters was also observed. (E, F) COS-7 cells expressing AP-MDGA1, BirAER, and HA-NLGN1. (E) AP-MDGA1 live clustered by incubating cells with a mix of primary anti-biotin antibody and anti-mouse secondary antibody (magenta), then HA-NLGN1 was detected by rat anti-HA antibodies followed by anti-rat antibody (cyan) (F) HA-NLGN1 was live clustered by incubating cells with a mix of anti-HA antibody and secondary antibody (cyan), then biotinylated AP-MDGA1 was detected with streptavidin (magenta). Co-localization of clusters was also observed.
 
 We then performed direct STochastic Optical Reconstruction Microscopy (dSTORM) experiments (Dani et al., 2010) after high density live labeling of AP-MDGA1/2 with monomeric streptavidin (mSA) (Chamma et al., 2017; Demonte et al., 2013) conjugated to Alexa 647 (100 nM concentration), reaching an optical resolution of about 30 nm. Since MDGAs are GPI-anchored membrane molecules, we electroporated neurons with GFP-GPI as a control, and labeled them with an anti-GFP nanobody also conjugated to Alexa 647, a strategy previously validated for GFP-NRXN1β (Chamma et al., 2016a). Using this approach, AP-MDGA1 and AP-MDGA2 displayed a fairly uniform distribution at DIV 10 and 14, filling the whole dendritic shaft without specific accumulation at synapses, similarly to the negative control GFP-GPI (Figure 2A and C). In post-synapses labeled by Homer1c-DsRed, MDGAs and GFP-GPI displayed a disperse localization (insets). For comparison, AP-NLGN1 expressed under similar replacement conditions (shRNA + rescue) and labeled identically with mSA-Alexa 647, showed a strong accumulation at synapses as previously shown (Chamma et al., 2016a). Synaptic enrichment at DIV 10 and 14 was around 1.3 and 1.5 for both MDGAs and GFP-GPI, and significantly higher for NLGN1 (2.3 and 2.7, respectively) (Figure 2B and D). These data show that MDGAs are not particularly enriched at excitatory synapses, and their differential localization with respect to NLGN1 suggest that the majority of NLGN1 molecules accumulated at post-synapses are not associated to MDGAs.
 
 To rule out the possibility that the mSA probe was hindering the binding of MDGAs to NLGNs, and hence the penetration of MDGAs in synapses, we performed a series of control biochemical and immunocytochemical experiments. Streptavidin pull-down of proteins extracted from COS-7 cells expressing AP-MDGA1, BirAER, and HA-NLGN1, followed by anti-MDGA1 and anti-NLGN1 immunoblots, revealed that biotinylated AP-MDGA1 strongly recruits HA-NLGN1 (Figure 2—figure supplement 3A). This finding suggests that mSA, which is four times smaller than regular streptavidin (Demonte et al., 2013), should easily access AP-tagged MDGAs bound to endogenous NLGN1 in neurons. Given the high sequence and structure similarity between MDGA1 and MDGA2 (Elegheert et al., 2017), we expect AP-MDGA2 to also bind NLGN1 in this assay. To confirm that the interaction between MDGAs and NLGN1 also occurs when these molecules are bound to external probes in living cells, we performed cross-linking experiments using a mixture of a primary mouse anti-biotin and secondary anti-mouse antibodies in COS-7 cells expressing AP-MDGA1, HA-NLGN1 and BirAER, or in cells expressing HA-MDGA2, AP-NLGN1 and BirAER (Figure 2—figure supplement 3C-F). In both cases, the fluorescent antibody clusters that aggregated AP-tagged proteins contained the HA-tagged co-expressed protein, demonstrating no hindrance caused by antibodies (which are much larger than mSA) on the MDGA-NLGN1 interaction. Strengthened by these controls, our dSTORM data clearly indicate that MDGAs are not enriched at post-synapses, supporting the concept that MDGAs do not bind NRXN-occupied NLGNs at synapses.
 
-## Individual recombinant MDGA1 and MDGA2 are highly diffusive in the neuronal membrane
+### Individual recombinant MDGA1 and MDGA2 are highly diffusive in the neuronal membrane
 
 To characterize the surface dynamics of MDGAs at the individual level, we sparsely labelled biotinylated AP-MDGAs at the cell membrane using 1 nM mSA conjugated to the robust fluorophore STAR 635 P, and performed single-molecule tracking by universal Point Accumulation In Nanoscale Topography (uPAINT) (Figure 3), as described earlier (Chamma et al., 2016a). Experiments were performed at DIV 8, 10, or 14, a time window of active excitatory synapse differentiation (Chanda et al., 2017). As a control, we electroporated neurons with GFP-GPI and labeled them with an anti-GFP nanobody conjugated to Atto 647 N, as described (Lagardère et al., 2020). At DIV 8, recombinant AP-MDGA1 and AP-MDGA2 diffused very fast in the dendritic membrane, showing a single peak of diffusion coefficient around 0.30 µm²/s, very similar to GFP-GPI (Figure 3A and B). Considering a small fraction (around 20%) of slowly mobile molecules, defined as molecules exploring an area smaller than the pointing accuracy of the optical system, i.e. D < 0.01 µm²/s (Chamma et al., 2016a), the median diffusion coefficient of the overall distribution was around 0.13–0.15 µm²/s across conditions (Figure 3G and H). Upon neuronal maturation (at DIV 10 and 14), the fraction of slowly mobile molecules increased for MDGA1 and MDGA2, with a concomitant decrease in median diffusion coefficient, while those parameters remained fairly constant for GFP-GPI (Figure 3C–H), suggesting a specific immobilization of MDGAs at these developmental stages.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig3-v1.jpg)
 
-**Figure 3.:** Dissociated rat hippocampal neurons were electroporated at DIV 0 with a combination of shRNAs to MDGA1 or MDGA2 (both carrying a GFP reporter), rescue AP-tagged MDGA1 or MDGA2 (respectively), and BirAER. Control neurons were electroporated with GFP-GPI. uPAINT experiments were performed at DIV 8, 10, or 14, after labelling neurons expressing AP-MDGA1 or AP-MDGA2 with 1 nM STAR 635P-conjugated mSA, and labelling neurons expressing GFP-GPI with 1 nM Atto 647N-conjugated anti-GFP nanobody. (A, C, E) Representative images of dendritic segments showing the GFP signal (green) and the corresponding single molecule trajectories (random colors) acquired during an 80 s stream, for the indicated time in culture. (B, D, F) Corresponding semi-log plots of the distributions of diffusion coefficients for AP-MDGA1, AP-MDGA2, and GFP-GPI, at the three different developmental times. (G) Graph of the mobile and immobile fractions of MDGA1, MDGA2, and GFP-GPI, as a function of time in culture. The threshold between mobile and immobile molecules was set at D = 0.01 µm²/s. (H) Graph of the median diffusion coefficient, averaged per cell, in the different conditions. Data represent mean ± SEM of n > 10 neurons for each experimental condition from at least three independent experiments, and were compared by a Kruskal–Wallis test followed by Dunn’s multiple comparison test (**** p < 0.0001). For the statistics of the data presented in panels (B,D,F,G,H), see Supplementary file 1 and Figure 3—source data 1.Figure 3—source data 1.Figure 3.Each graph (B,D,F,G,H) is shown in a separate sheet within the file.
+**Figure 3.:** Dissociated rat hippocampal neurons were electroporated at DIV 0 with a combination of shRNAs to MDGA1 or MDGA2 (both carrying a GFP reporter), rescue AP-tagged MDGA1 or MDGA2 (respectively), and BirAER. Control neurons were electroporated with GFP-GPI. uPAINT experiments were performed at DIV 8, 10, or 14, after labelling neurons expressing AP-MDGA1 or AP-MDGA2 with 1 nM STAR 635P-conjugated mSA, and labelling neurons expressing GFP-GPI with 1 nM Atto 647N-conjugated anti-GFP nanobody. (A, C, E) Representative images of dendritic segments showing the GFP signal (green) and the corresponding single molecule trajectories (random colors) acquired during an 80 s stream, for the indicated time in culture. (B, D, F) Corresponding semi-log plots of the distributions of diffusion coefficients for AP-MDGA1, AP-MDGA2, and GFP-GPI, at the three different developmental times. (G) Graph of the mobile and immobile fractions of MDGA1, MDGA2, and GFP-GPI, as a function of time in culture. The threshold between mobile and immobile molecules was set at D = 0.01 µm²/s. (H) Graph of the median diffusion coefficient, averaged per cell, in the different conditions. Data represent mean ± SEM of n > 10 neurons for each experimental condition from at least three independent experiments, and were compared by a Kruskal–Wallis test followed by Dunn’s multiple comparison test (**** p < 0.0001). For the statistics of the data presented in panels (B,D,F,G,H), see Supplementary file 1 and Figure 3—source data 1.
 
-## Individual recombinant MDGA1 and MDGA2 molecules are not trapped at synapses
+### Individual recombinant MDGA1 and MDGA2 molecules are not trapped at synapses
 
 Using the same set of data obtained from uPAINT experiments, we then examined the membrane domains explored by AP-tagged MDGA1 and MDGA2 in relation to the co-expressed post-synaptic marker Homer1c-DsRed, by constructing images integrating all single-molecule localizations over time. We found that, at the individual level, neither AP-MDGA1 nor AP-MDGA2 molecules were particularly retained at synapses (Figure 4A and C), confirming the ensemble picture given by dSTORM. As shown in the insets, both MDGA1 and MDGA2 displayed a panel of localizations including: (i) a complete absence from the post-synapse, (ii) the formation of small clusters reflecting confined trajectories localized at the periphery of Homer1c-DsRed puncta, and (iii) a more dispersed distribution filling the whole post-synapse (Figure 4A and C). For comparison, GFP-GPI exhibited essentially the third type of behavior, that is it explored the whole post-synapse with fast diffusion. Very rarely did MDGAs or GFP-GPI display confined trajectories at the core of the post-synaptic density like NLGN1 or LRRTM2 (Chamma et al., 2016a), suggesting an absence of synaptic retention. To directly compare the localization of MDGAs and LRRTM2, we expressed those molecules fused to an N-terminal V5 tag, and tracked them by uPAINT using a V5 Fab conjugated to STAR 635 P. V5-MDGA1 and V5-MDGA2 showed similar peri- and extra-synaptic distribution as their AP-tagged counterparts (Figure 4—figure supplement 1), while V5-LRRTM2 exhibited striking post-synaptic confinement as previously reported (Chamma et al., 2016a). To quantitatively characterize the presence of individual AP-MDGA1 and AP-MDGA2 molecules at the post-synapse, we measured a parameter called synaptic coverage, and defined as the fraction of the area of Homer1c-DsRed puncta occupied by AP-MDGAs or GFP-GPI based on single-molecule detections (Figure 4B and D). Synaptic coverage of MDGA1 and MDGA2 was only 20% at both DIV 10 and 14, while it reached 40% for GFP-GPI, indicating that MDGAs dynamically explore only a minor fraction of the synaptic cleft.
 
-## MDGA2 knock-down increases synapse number and NLGN1 synaptic confinement
+![Figure 4.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig4-v1.jpg)
+
+**Figure 4.:** Hippocampal neurons were electroporated at DIV 0 with a combination of shRNAs to MDGA1 or MDGA2, rescue AP-MDGA1 or AP-MDGA2 (respectively), biotin ligase (BirAER), and Homer1c-DsRed. Control neurons were electroporated with GFP-GPI and Homer1c-DsRed. uPAINT experiments were performed at DIV 10 or 14, after labelling neurons with 1 nM STAR 635P-conjugated mSA or Atto 647N-conjugated anti-GFP nanobody, respectively. (A, C) Representative images of dendritic segments showing the Homer1c-DsRed signal (red), the super-resolved localization map of all AP-MDGA1, AP-MDGA2, or GFP-GPI single molecule detections (gold), and the corresponding trajectories (magenta) super-imposed to Homer1c-DsRed (white). Insets represent zooms on individual post-synapses in the different conditions (Homer1c-DsRed in white, detections in magenta and trajectories in red). (B, D) Bar plots representing synaptic coverage of AP-MDGA1, AP-MDGA2, or GFP-GPI at synapses, based on single molecule detections, for the two developmental stages (DIV 10 and 14), respectively. Data represent the mean ± SEM of 5–13 neurons for each experimental condition from at least three independent experiments, and were compared by a Kruskal–Wallis test followed by Dunn’s multiple comparison test (*p < 0.05; ***p < 0.001). For the statistics of the data presented in panels (B,D), see Supplementary file 1 and Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Dissociated rat hippocampal neurons were electroporated at DIV 0 with V5-MDGA1, V5-MDGA2, or V5-LRRTM2 as a positive control, together with the post-synaptic marker Homer1c-EGFP. (A, B) dSTORM images of MDGA1 and MDGA2 at the cell membrane, in DIV 14 neurons labeled with 100 nM Alexa 647-conjugated anti-V5 Fab fragment. Representative images of dendritic segments showing Homer1c-EGFP-positive synapses (gray), the super-resolved localization map of all V5-MDGA1 or V5-MDGA2 single molecule detections (gold), and merged images (Homer1c-EGFP in cyan and detections in magenta). Insets on the right show zoomed images of pseudo-colored localizations of V5-MDGAs in a synaptic area marked by a yellow circle. Arrows in B show an axon expressing V5-MDGA2 contacting spines in a dendrite also expressing V5-MDGA2. (C, D, E) uPAINT experiments were performed at DIV 14, after labelling neurons with STAR 635P-conjugated anti-V5 Fab fragment. Representative images of dendritic segments showing Homer1c-EGFP as synaptic marker (white), the corresponding single molecule detections (gold) and trajectories (magenta). Superimposed images of synaptic markers and detections or trajectories are shown on the right of each panel with the same color code.
+
+### MDGA2 knock-down increases synapse number and NLGN1 synaptic confinement
 
 To characterize the influence of MDGAs on the behavior of their primary binding partner NLGN1, we knocked down MDGAs with shRNAs to MDGA1 (shMDGA1), to MDGA2 (shMDGA2), or to the non-related protein MORF4L1 as a control (shCTRL) (Pettem et al., 2013). Neurons were co-electroporated at DIV 0 with these constructs together with Homer1c-DsRed. At DIV 10, a 2.5-fold increase in the density of Homer1c-DsRed puncta was observed in neurons expressing shMDGA2 relatively to shCTRL, whereas no significant effect of shMDGA1 was observed on the density of excitatory post-synaptic clusters (Figure 5—figure supplement 1B,D). At DIV 14, both shMDGA1 and shMDGA2 induced a modest 25% increase in the density of post-synaptic puncta (Figure 5—figure supplement 1C,D), suggesting an attenuation of the effect at later developmental stages. This differential effect of MDGA silencing on synape formation accross neuronal maturation resembles that of NLGN1 over-expression which exhibits major synaptogenic potential in younger neurons (DIV 6–7) and less so in older neurons (DIV 12–13) (Dagar and Gottmann, 2019). Considering the stronger effects of shMDGA2 and the selective role of MDGA2 on excitatory synapses reported earlier (Connor et al., 2016), we focused thereafter on the effects of MDGA2 on the dynamics, organization, and signaling mechanisms associated with NLGN1.
 
 We first examined the diffusion properties of recombinant surface AP-NLGN1 sparsely labeled with STAR 635P-conjugated mSA with uPAINT. The presence of the AP tag and labeling with mSA should not interfere with the binding of NLGN1 to native MDGAs, as shown by streptavidin pull-down of proteins extracted from COS-7 cells expressing AP-NLGN1 and HA-MDGA2 (Figure 2—figure supplement 3B). By comparing neurons at DIV 10 and 14, there was a shift in NLGN1 mobility towards lower diffusion coefficients, which reflects a synaptic immobilization of NLGN1 upon neuronal maturation, as previously reported (Chamma et al., 2016a). In DIV 10 neurons, shMDGA2 had no effect on the NLGN1 diffusion coefficient, whose distribution looked very similar to the shCTRL condition (Figure 5A–C). In contrast, at DIV 14, shMDGA2 decreased the global diffusion coefficient of NLGN1 as compared to shCTRL, in particular by reducing the mobile pool of NLGN1 molecules (the peak centered at D = 0.1 µm²/s), and concomitantly raising the fraction of confined NLGN1 molecules (peak at D = 0.01 µm²/s) that are most likely retained at synapses (Figure 5E–H). This effect was reversed upon the co-expression of an HA-MDGA2 construct resistant to shMDGA2. These data indicate that MDGA2 impairs the synaptic immobilization of NLGN1, that is MDGA2 knock-down exacerbates the confinement of NLGN1 that normally occurs during neuronal maturation.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig5-v1.jpg)
+
+**Figure 5.:** Neurons were electroporated at DIV 0 with AP-NLGN1, BirAER and Homer1c-DsRed, plus shCTRL, shMDGA2, or shMDGA2 + rescue HA-MDGA2, and imaged at DIV 10 or 14 using uPAINT. (A, D) AP-NLGN1 was sparsely labelled using 1 nM STAR 635P-conjugated mSA for single molecule tracking in DIV 10 and 14 neurons, respectively. The GFP reporter of the different shRNAs appears in green, and the Homer1c-DsRed signal in white. On the right of each panel, merged images of Homer1c-DsRed (cyan) and AP-NLGN1 trajectories (magenta) acquired during an 80 s stream are shown. Insets represent zooms on individual post-synapses in the different conditions. (B, E) Semi-log plots of the distribution of AP-NLGN1 diffusion coefficients in DIV 10 and 14 neurons, respectively. (C, F) Median diffusion coefficient of AP-NLGN1. Data represent the mean ± SEM obtained from n = 21/26/16 neurons at DIV 10, and n = 35/15/8 neurons at DIV 14 out of three independent experiments, and were compared by a Kruskal–Wallis test followed by Dunn’s multiple comparison test (*p < 0.05). For the statistics of the data presented in panels (B,C,E,F), see Supplementary file 1 and Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Dissociated neurons were electroporated at DIV 0 with either shCTRL, shMDGA1, or shMDGA2. 8, 10, or 14 DIV after plating, epifluorescence images were acquired. (A, B, C) Representative images of dendritic segments at DIV 8, 10, and 14, respectively, showing Homer1c-DsRed (magenta), the GFP shRNA reporter (green), and merged images, at the different developmental stages. (D, E) Bar plots showing the density and area of individual Homer1c-DsRed puncta in the different developmental stages. Data represent the mean ± SEM of n > 12 neurons from at least three independent experiments, and were compared by a Kruskal–Wallis test followed by Dunn’s multiple comparison test (**p < 0.05; ***p < 0.001; ****p < 0.0001). For the statistics of the data presented in panels (D,E), see Supplementary file 1 and Figure 5—figure supplement 1—source data 1.
+
 Second, we examined the nanoscale distribution of surface AP-NLGN1 densely labeled with Alexa 647-conjugated mSA using dSTORM. In DIV 10 neurons, there was no significant effect of shMDGA2 on NLGN1 enrichment at Homer1c-DsRed positive puncta compared to shCTRL (Figure 6A and B). In DIV 14 neurons, an increase from 3 to 4 in the synaptic enrichment of AP-NLGN1 was observed upon shMDGA2 expression as compared to shCTRL, albeit not significant (Figure 6C and D). In neurons co-expressing a MDGA2 construct resistant to the shRNA, the AP-NLGN1 synaptic enrichment was at the control level at both DIV 10 and 14. Taken together, uPAINT and dSTORM data suggest that MDGA2 impairs the immobilization of NLGN1 at newly formed synapses, but not its intrinsic post-synaptic accumulation.
 
-## MDGA knock-down enhances NLGN tyrosine phosphorylation
+![Figure 6.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig6-v1.jpg)
+
+**Figure 6.:** (A, C) Neurons were electroporated at DIV 0 with AP-NLGN1, BirAER, and Homer1c-DsRed, plus shCTRL, shMDGA2, or shMDGA2 + rescue HA-MDGA2, and imaged at DIV 10 or 14 using dSTORM after high density labelling with Alexa 647-conjugated mSA. Representative images of dendritic segments show the GFP reporter of shRNAs (green), Homer1c-DsRed (red), and the integration of all AP-NLGN1 single molecule localizations (gold). Merged images show Homer1c-DsRed (cyan) and AP-NLGN1 localizations (magenta). Insets on the right show zoomed examples of Homer1c-DsRed positive puncta overlapped with AP-NLGN1 localizations. (B, D) Bar plots representing the enrichment of AP-NLGN1 at Homer1c-DsRed puncta. Data represent mean ± SEM from three independent experiments and were compared by a Kruskal–Wallis test followed by Dunn’s multiple comparison test (n > 4 neurons at DIV 10 and n > 7 neurons at DIV 14 for each construct). (E) Hippocampal neurons were electroporated at DIV 0 with shCTRL or shMDGA2 and cultured for 10 days. Protein extracts were immunoprecipitated with a pan NLGN antibody. Phosphotyrosine (pTyr) and total NLGN levels were detected by Western blot in the immunoprecipitation (IP) samples, and pan NLGN, actin, and GFP were revealed in the starting material (SM). For original immunoblot images presented in panel (E), refer to Figure 1—source data 1–5. (F, G) Bar plots showing the average pTyr signal from the pan NLGN immunoprecipitate normalized to the total amount of immunoprecipitated NLGN, and the total amount of starting NLGN material in shCTRL and shMDGA2 electroporated cells, respectively. Data expressed as percentage of the shCTRL condition, represent the mean ± SEM from seven independent experiments and were compared by a Mann-Whitney test (***p < 0.001). For the statistics of the data presented in panels (B,D,F,G), see Supplementary file 1 and Figure 6—source data 6.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Dissociated neurons were electroporated at DIV 0 with Xph20-mRuby2 and shCTRL-EBFP2 or shMDGA2-EBFP2 constructs and co-plated with neurons electroporated with GFP-NRXN1β. (A) Representative images of DIV 10 neurons expressing shCTRL or shMDGA2, respectively, contacting GFP-NRXN1β positive axons. White arrows indicate overlapping pre- and post-synapses and yellow arrows indicate post-synapses without GFP-NRXN1β contacting terminals. The fluorescence intensity of GFP-NRXN1β at overlapping terminals was analyzed and normalized to shaft values. (B) Bar plot showing GFP-NRXN1β enrichment at axon-dendrite contact sites. Data represent mean ± SEM of n ≥ 18 cells for each experimental condition from at least three independent experiments, and were compared by a Mann-Whitney test (ns: not significant). (C) Representative images of Xph20-mRuby2 (magenta), sh-EBFP2 (blue) and single GFP-NRXN1β molecule trajectories, obtained upon sparse labelling with an anti-GFP nanobody conjugated to Atto 647 N. (D) Semi-log plots of the distribution of GFP-NRXN1β diffusion coefficients in axons making contacts with dendrites from neurons expressing shCTRL or shMDGA2. Curves represent the mean diffusion of 6 neurons per condition from two independent experiments. For the statistics of the data presented in panels (B,D), see Supplementary file 1 and Figure 6—figure supplement 1—source data 1.
+
+### MDGA knock-down enhances NLGN tyrosine phosphorylation
 
 In view of our previous findings that the effects of NLGN1 on synapse number and AMPAR-mediated synaptic transmission are regulated by the phosphorylation of a unique intracellular tyrosine (Y782) in NLGN1 (Letellier et al., 2018; Letellier et al., 2020), we examined whether MDGAs could affect NLGN1 phosphotyrosine level. Our rationale was that by shielding NLGN1, MDGAs could impair the NLGN1 phosphorylation signaling mechanism which is dependent on NRXN binding (Giannone et al., 2013). We electroporated neurons at DIV 0 with shMDGA2 or shCTRL and analyzed the phosphotyrosine level of immunoprecipitated NLGNs by performing immunoblot at DIV 10, when NLGN phosphorylation is maximal (Letellier et al., 2018). The NLGN phosphotyrosine level was almost two-fold higher in neurons expressing shMDGA2 compared to shCTRL, with no change in the total amount of NLGNs (Figure 6E–G). This result demonstrates that endogenous MDGAs negatively regulate NLGN tyrosine phosphorylation.
 
 Given that NLGN1 tyrosine phosphorylation is likely influenced by NRXN binding (Giannone et al., 2013) and that MDGA2 inhibits NLGN1 binding to NRXNs (Elegheert et al., 2017), we characterized the dynamics of GFP-NRXN1β in axons making contacts with the dendrites of neurons in which MDGA2 was knocked-down, expecting a preferential reduction in mobility and/or increase in confinement of GFP-NRXN1β at contact sites. To this aim, we co-cultured neurons electroporated with GFP-NRXN1β with neurons electroporated with shMDGA2 or shCTRL (both containing an EBFP2 reporter) plus an intrabody to PSD-95 as a post-synaptic marker (Xph20-mRuby2) (Rimbault et al., 2019), and searched at DIV 10 for GFP-NRXN1β positive axons contacting EBFP2-positive dendrites. Then, we analyzed the GFP-NRXN1β enrichment at axon-dendrite contact sites, or we sparsely labelled GFP-NRXN1β with Atto 647N-conjugated anti-GFP nanobody and performed uPAINT (Chamma et al., 2016a; Klatt et al., 2021). The GFP-NRXN1β enrichment at pre-synapses was around 2 whether axons made contacts with dendrites expressing shMDGA2 or shCTRL (Figure 6—figure supplement 1A,B). In addition, the global diffusion coefficient of GFP-NRXN1β followed a broad distribution reflecting both fast diffusion in the axon and confinement at pre-synapses (Chamma et al., 2016a; Klatt et al., 2021; Neupert et al., 2015), but this distribution was not altered by the presence of contacting dendrites from neurons expressing either shMDGA2 or shCTRL (Figure 6—figure supplement 1C,D). Even though these results might suggest that MDGA KD does not directly affect the trans-synaptic NRXN1β-NLGN interaction, we have to moderate this explanation by considering that GFP-NRXN1β expressing axons make simultaneous contacts with dendrites from many neurons, such that the effect of shMDGA2 in sparsely electroporated cells is diluted.
 
-## MDGA2 knock-down reduces AMPAR diffusion
+### MDGA2 knock-down reduces AMPAR diffusion
 
 Given the previously reported effects of NLGN1 expression level and phosphotyrosine signaling on AMPAR surface trafficking and synaptic recruitment (Haas et al., 2018; Letellier et al., 2020; Letellier et al., 2018; Mondin et al., 2011), and seeing here the impact of MDGA2 knock-down on NLGN1 dynamics and phosphotyrosine level, we then questioned the role of MDGA2 on AMPAR surface diffusion. We electroporated hippocampal neurons at DIV 0 with shMDGA2 or shCTRL and tracked native AMPARs at the single molecule level by uPAINT upon sparse labeling with an antibody to the GluA2 N-terminal domain conjugated to Atto 647 N (Czöndör et al., 2013; Haas et al., 2018; Nair et al., 2013). Expression of shMDGA2 significantly decreased the global AMPAR diffusion coefficient at DIV 10 compared to shCTRL (Figure 7A–D). Specifically, the mobile pool of AMPARs (D centered at 0.1 µm²/s) was reduced to the profit of slowly diffusing AMPARs (D < 0.01 µm²/s), most likely corresponding to synaptic receptors (Nair et al., 2013). This effect is consistent with the fact that shMDGA2 simultaneously increases the density of post-synapses (Figure 5—figure supplement 1), which act as trapping elements for surface-diffusing AMPARs (Czöndör et al., 2012; Mondin et al., 2011), resulting in an overall decrease in AMPAR mobility. At DIV 14, the distribution of AMPAR diffusion coefficients was shifted to the left as compared to DIV 10, reflecting AMPAR trapping at new synapses formed during this time interval (Figure 7E–H). Expression of shMDGA2 caused a further small decrease in diffusion coefficient, matching the observation that neurons expressing shMDGA2 show slightly higher numbers of excitatory synapses at DIV 14 as compared to neurons expressing shCTRL (Figure 5—figure supplement 1C, D).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig7-v1.jpg)
 
-**Figure 7.:** Neurons were electroporated at DIV 0 with shCTRL-GFP or shMDGA2-GFP, and imaged at DIV 10 or DIV 14 with uPAINT. (A, E) Native AMPARs were sparsely labelled using an anti-GluA2 antibody conjugated to Atto 647 N. Representative trajectories of single GluA2-containing AMPARs are shown in multicolor, super-imposed to the distribution of the GFP reporter (white). (B, F) Semi-log plot of the distribution of GluA2 diffusion coefficients at DIV 10 and 14, respectively. The curves represent the averages of at least 12 neurons per condition from three independent experiments. (C, G) Median diffusion coefficient of GluA2-containing AMPARs at DIV 10 and 14, respectively. Data represent mean ± SEM of n > 12 neurons per condition from three independent experiments, and were compared by an unpaired t-test (**p < 0.01). (D, H) Bar plots of the immobile fraction of GluA2-containing AMPARs in the three conditions, defined as the proportion of single molecules with diffusion coefficient D < 0.01 µm²/s. For the statistics of the data presented in panels (B,C,D,F,G,H), see Supplementary file 1 and Figure 7—source data 1.Figure 7—source data 1.Figure 7.Each graph (B,C,D,F,G,H) is shown in a separate sheet within the file.
+**Figure 7.:** Neurons were electroporated at DIV 0 with shCTRL-GFP or shMDGA2-GFP, and imaged at DIV 10 or DIV 14 with uPAINT. (A, E) Native AMPARs were sparsely labelled using an anti-GluA2 antibody conjugated to Atto 647 N. Representative trajectories of single GluA2-containing AMPARs are shown in multicolor, super-imposed to the distribution of the GFP reporter (white). (B, F) Semi-log plot of the distribution of GluA2 diffusion coefficients at DIV 10 and 14, respectively. The curves represent the averages of at least 12 neurons per condition from three independent experiments. (C, G) Median diffusion coefficient of GluA2-containing AMPARs at DIV 10 and 14, respectively. Data represent mean ± SEM of n > 12 neurons per condition from three independent experiments, and were compared by an unpaired t-test (**p < 0.01). (D, H) Bar plots of the immobile fraction of GluA2-containing AMPARs in the three conditions, defined as the proportion of single molecules with diffusion coefficient D < 0.01 µm²/s. For the statistics of the data presented in panels (B,C,D,F,G,H), see Supplementary file 1 and Figure 7—source data 1.
 
-## MDGA1 and MDGA2 knock-out selectively promote excitatory post-synaptic maturation
+### MDGA1 and MDGA2 knock-out selectively promote excitatory post-synaptic maturation
 
 To achieve a stronger suppression of MDGAs than that obtained with shRNAs and further highlight the roles played by MDGA1 and MDGA2 in synapse development, we designed new DNA vectors based on the CRISPR/Cas9 strategy to achieve single-cell knock-out of MDGA1 or MDGA2 in dissociated neurons (Ran et al., 2013). Specifically, hippocampal neurons were electroporated at DIV 0 with vectors containing the Cas9 gene, a guide RNA targeting either MDGA1, MDGA2, or a control sequence, plus a GFP or nuclear EBFP reporter. We first verified by genomic DNA cleavage that Cas9 was cutting the expected region of MDGA1 or MDGA2 genes only when the respective gRNA was present (Figure 8—figure supplement 1A). We also performed an extensive patch-seq analysis (Cadwell et al., 2016; Fuzik et al., 2016) of MDGA mRNAs and off target genes potentially affected by the electroporation of neurons with CRISPR/Cas9 constructs against MDGA1 or MDGA2 (Tables 1 and 2). The analysis performed in DIV 10 neurons expressing the GFP reporter clearly shows that MDGA1 and MDGA2 mRNA levels are significantly diminished by their respective CRISPR constructs as compared with CRISPR CTRL, while off target genes are not significantly affected (Figure 8—figure supplement 2). At the protein level, we observed an 80% reduction of endogenous MDGA1 immunostaining in neurons expressing CRISPR-Cas9 and gRNA to MDGA1, compared to neurons expressing control gRNA, revealing efficient MDGA1 knock-out (Figure 8—figure supplement 1B, C). No side effect of CRISPR against MDGA1 was observed on primary dendrite branching or outgrowth in these cultures (Figure 8—figure supplement 1D–F).
 
 We then evaluated the effects of MDGA1/2 knock-out on the number and surface area of individual excitatory and inhibitory pre- and post-synaptic puncta immunolabeled for VGLUT1 and PSD-95, or VGAT and gephyrin, respectively. At DIV 10, an almost doubling in the number of PSD-95 puncta per unit dendrite length without a change in PSD-95 area, was observed in neurons expressing gRNAs to MDGA1 or MDGA2 relatively to control gRNA (Figure 8A–C). In the same conditions, only gRNA to MDGA2 caused a significant increase in the density of VGLUT1 puncta, and no change in area (Figure 8A, D and E). Those effects of gRNA to MDGA2 on both PSD-95 and VGLUT1 cluster density were abolished by the co-expression of a rescue MDGA2 vector, demonstrating the specificity of the mechanism. At DIV 14, gRNAs to MDGA1 or MDGA2 did not change PSD-95 cluster density or area relative to control gRNA, but slightly decreased both VGLUT1 puncta density and area (Figure 8—figure supplement 3). In contrast, no effects of CRISPR-Cas9 combined with either gRNA to MDGA1 or MDGA2 were found on the density or the area of gephyrin puncta at DIV 10 (Figure 8—figure supplement 4A-C). Together, these data show that both MDGA1 and MDGA2 mainly impair excitatory post-synaptic assembly in the early phase of synaptogenesis.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig8-v1.jpg)
+
+**Figure 8.:** Dissociated neurons were electroporated at DIV 0 with CRISPR/Cas9 CTRL, CRISPR/Cas9 MDGA1, CRISPR/Cas9 MDGA2, or CRISPR/Cas9 MDGA2 plus HA-MDGA2 rescue. Ten days after plating, cultures were fixed, permeabilized, and endogenous PSD-95 and VGLUT1 were immunostained. (A) Representative images of dendritic segments showing PSD-95 staining (magenta), VGLUT1 staining (green), the merged images, and the nuclear EBFP control of CRISPR/Cas9 construct expression (blue), in the different conditions. (B–E) Bar plots showing the density per unit dendrite length and surface area of individual PSD-95 and VGLUT1 puncta, respectively, in the various conditions. Data represent mean ± SEM of n > 17 cells for each experimental condition and from at least three independent experiments, and were compared by a Kruskal–Wallis test followed by Dunn’s multiple comparison test (**p < 0.01; ***p < 0.001). (F) Representative traces of AMPAR-mediated mEPSC recordings from DIV 10 neurons expressing CRISPR/Cas9 CTRL, CRISPR/Cas9 MDGA1, CRISPR/Cas9 MDGA2, or CRISPR/Cas9 MDGA2 plus HA-MDGA2 rescue, clamped at –70 mV in the presence of tetrodotoxin and bicuculline. (G, H) Bar graphs of mEPSC frequency and amplitude respectively, for each condition. Plots represent mean ± SEM of n > 7 cells for each experimental condition from 5 independent experiments, and were compared by a Kruskal–Wallis test followed by Dunn’s multiple comparison test (*p < 0.05; **p < 0.01). For the statistics of the data presented in panels (B,C,D,E,G,H), see Supplementary file 1 and Figure 8—source data 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Hippocampal neurons were electroporated at DIV 0 with CRISPR/Cas9 CTRL, CRISPR/Cas9 MDGA1, or CRISPR/Cas9 MDGA2. (A) At DIV 10, genomic DNA was extracted and a T7 endonuclease based method was used to detect genomic cleavage in the CRISPR/Cas9 system. Cleavage bands were observed only for gRNA MDGA1 and gRNA MDGA2 when primers to amplify the target sequence were used and in the presence of T7 endonuclease. (B) Neurons were live immunolabelled with anti-MDGA1 antibody at DIV 10. (C) Bar graph of fluorescence intensity ratio of MDGA1. Fluorescent signals are expressed relative to CRISPR CONTROL values. Data represent mean ± SEM of n > 10 neurons for each experimental condition and from two independent experiments. Values were compared by a Mann-Whitney test (****p < 0.0001). (D) Representative images of DIV 10 neurons electroporated with CRISPR CTRL or CRISPR MDGA1 and imaged for the GFP reporter. Scale bar, 10 μm. (E) Histogram showing the frequency distribution of primary dendrite number per cell in both conditions. (F) Bar plots showing the average primary dendrite length. Data represent mean ± SEM from n > 25 neurons out of two independent experiments, and were compared by a Mann-Whitney test (ns: not significant). For the statistics of the data presented in panels (C,E,F), see Supplementary file 1 and Figure 8—figure supplement 1—source data 1.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Hippocampal neurons were electroporated at DIV 0 with CRISPR CTRL, CRISPR MDGA1, or CRISPR MDGA2 plasmids, all containing a GFP reporter. (A) At DIV 10, individual GFP-positive neurons were patch-clamped and their cytosol and nucleus was extracted with a micropipet, before being processed for single-cell (sc) RNA-sequencing (n = 5 neurons analyzed in each condition). (B) Graph showing the number of neurons in which MDGA1 mRNAs were significantly detected, for neurons electroporated with either CRISPR CTRL or CRISPR MDGA1. (C) Graph showing the number of neurons in which MDGA2 mRNAs were significantly detected, for neurons electroporated with either CRISPR CTRL or CRISPR MDGA2. (D) Principal component analysis (PCA) of the top 200 variable genes expressed in all neurons, for the three conditions (CRISPR CTRL = grey, CRISPR MDGA1 = blue, and CRISPR MDGA2 = purple). Ellipses delineate the 95% confidence boundaries. The facts that PC1 and PC2 variances are low (below 20%) and that the three confidence ellipses are overlapping demonstrate that the three conditions are not statistically different. (E) Graphs showing the mRNA levels expressed as fragments per million (FPM) of the genes detected in neurons electroporated with CRISPR MDGA1 or CRISPR MDGA2, with respect to neurons electroporated with CRISPR CTRL (only genes detected in all neurons were plotted). Significant correlations were observed for both conditions, indicating that global gene expression is not affected by either CRISPR MDGA1 or CRISPR MDGA2. (F, G) Plots showing the mRNA levels of 10 off-target genes with the highest prediction score in neurons expressing CRISPR MDGA1 or CRISPR MDGA2, respectively, side by side with the corresponding levels in neurons expressing CRISPR CTRL. No significant difference between conditions was observed for any of those genes (Mann-Whitney test, ns: not significant). For the statistics of the data presented in panels (B,C,E,F,G), see Supplementary file 1 and Figure 8—figure supplement 2—source data 1.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** Dissociated neurons were electroporated at DIV 0 with either CRISPR/Cas9 control, CRISPR/Cas9 for MDGA1, or CRISPR/Cas9 for MDGA2. 14 DIV after plating, cultures were fixed, permeabilized, and endogenous PSD-95 and VGLUT1 were immunostained. (A) Representative images of dendritic segments showing PSD-95 staining (magenta), VGLUT1 staining (green), the merged images, and the nuclear EBFP control of CRISPR/cas9 construct expression. (B–E) Bar plots showing the density and area of individual PSD-95 (B, C) and VGLUT1 (D, E) puncta in the different conditions. Data represent mean ± SEM from at least three independent experiments, and were compared by a Kruskal–Wallis test followed by Dunn’s multiple comparison test (**p < 0.01; ****p < 0.0001). For the statistics of the data presented in panels (B,C,D,E), see Supplementary file 1 and Figure 8—figure supplement 3—source data 1.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig8-figsupp4-v1.jpg)
+
+**Figure 8—figure supplement 4.:** Dissociated neurons were electroporated at DIV 0 with either CRISPR/Cas9 CTRL, CRISPR/Cas9 for MDGA1, or CRISPR/cas9 for MDGA2. 10 DIV after plating, cultures were fixed, permeabilized, and endogenous gephyrin was immunostained. (A) Representative images of dendritic segments showing gephyrin staining (magenta) and CRISPR/Cas9 (green). (B–C) Bar plots showing the density and area of individual gephyrin clusters. Data represent mean ± SEM from at least three independent experiments, and were compared by a Kruskal–Wallis test followed by Dunn’s multiple comparison test (ns: not significant). (D) Representative traces of mIPSC recordings from DIV 10 neurons expressing CRISPR/Cas9 CTRL, MDGA1, or MDGA2, clamped at + 10 mV. (E, F) Mean mIPSC frequency and amplitude, respectively, for each condition. Data represent mean ± SEM of at least 6 neurons from 3 independent experiments, and were compared by a Kruskal-Wallis test (ns: Not significant). For the statistics of the data presented in panels (B,C,E,F), see Supplementary file 1 and Figure 8—figure supplement 4—source data 1.
+
+![Figure 8—figure supplement 5.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig8-figsupp5-v1.jpg)
+
+**Figure 8—figure supplement 5.:** (A, D) Live labelling of GluA1 and GluA2 with specific antibodies (magenta) in CRISPR/Cas9 (white) and Xph20-mRuby2 (green) expressing cells. (B, E) Bar graphs representing the enrichment of GluA1 or GluA2 at the synapse, respectively, evaluated by measuring the fluorescence intensity of GluA1 or GluA2 at Xph20-positive sites and normalized by the fluorescence intensity of AMPARs in the dendritic shaft. (C) GluA1 cluster density in the dendrite was evaluated by thresholding the GluA1 signal and counting the segmented dots per unit length. The same thresholding parameters were applied to all experimental conditions. (F) Xph20-mRuby2 puncta density per unit dendrite length. Results represent mean ± SEM of at least 10 neurons per condition from two independent experiments, and were compared by a Kruskal-Wallis test, followed by Dunn’s multiple comparison test (***p < 0.001; ****p < 0.0001). For the statistics of the data presented in panels (B,C,E,F), see Supplementary file 1 and Figure 8—figure supplement 5—source data 1.
+
 To examine the functional consequences of MDGA1 and MDGA2 knock-out on synaptic assembly, we measured both AMPAR-mediated miniature EPSCs (mEPSCs) and GABAA-receptor-mediated miniature IPSCs (mIPSCs) by performing whole-cell patch-clamp recordings in DIV 10 neurons electroporated with either gRNAs to MDGA1 or MDGA2, or control gRNA (Figure 8 and Figure 8—figure supplement 4D-F). Neurons expressing gRNAs to MDGA1 or MDGA2 showed a threefold increase in the frequency of AMPAR-mediated mEPSCs compared with neurons expressing control gRNA, while the combined expression of gRNA to MDGA2 and rescue MDGA2 abolished this effect (Figure 8F and G). No significant change in the amplitude of AMPAR-mediated mEPSCs was observed across conditions (Figure 8H). In parallel, endogenous surface AMPARs were live labeled with antibodies to the N-terminal of GluA1 subunits. There was no significant difference in GluA1 or GluA2 synaptic enrichment in neurons expressing Cas9 and gRNAs to MDGA1 or MDGA2, compared to neurons expressing Cas9 and control gRNA, despite an increase in the density of post-synaptic puncta as labeled by the PSD-95 intrabody Xph20 and of GluA1-positive clusters upon MDGA2 KO, but not MDGA1 KO (Figure 8—figure supplement 5). Together, these data suggest that knocking out MDGA2 selectively increases the density of AMPAR-containing excitatory synapses, but not the actual amount of AMPARs per synapse. In contrast, no significant change in either the frequency or amplitude of mIPSCs was observed upon single-cell KO of MDGA1 or MDGA2 (Figure 8—figure supplement 4D-F), suggesting that MDGAs do not affect inhibitory synapse formation during this developmental period.
 
-## MDGA1 and MDGA2 knock-out selectively enhance AMPA-receptor-mediated synaptic transmission in organotypic slices
+### MDGA1 and MDGA2 knock-out selectively enhance AMPA-receptor-mediated synaptic transmission in organotypic slices
 
 Finally, to examine the effects of MDGA KO in a neuronal system with better preserved synaptic connectivity than dissociated cultures, we turned to organotypic hippocampal slices prepared from P2 rats. CA1 neurons were single-cell electroporated at DIV 2 with CRISPR/Cas9 and gRNAs to MDGA1, MDGA2, or CTRL together with a volume marker (td-Tomato). Slices were processed 1 week later for electrophysiological recordings of both AMPAR- and NMDA receptor (NMDAR)- mediated EPSCs evoked in electroporated neurons by stimulation of Schaffer’s collaterals (Letellier et al., 2020; Letellier et al., 2018; Shipman et al., 2011). In each experiment, a neighboring non-electroporated CA1 neuron serving as a paired control was recorded simultaneously, allowing for the normalization of EPSC amplitudes (Figure 9A). Strikingly, both gRNAs to MDGA1 and MDGA2 increased AMPAR-mediated EPSCs without affecting NMDAR-mediated EPSCs, as compared to non-electroporated controls (Figure 9B-D and Figure 9—figure supplement 1A, B). As a result, the ratio between AMPAR- and NMDAR-mediated EPSCs was significantly elevated in both MDGA1 and MDGA2 KO neurons (Figure 9E), supporting a synaptic unsilencing mechanism. No significant effect of gRNA CTRL on either AMPAR- or NMDAR-mediated EPSCs, or on the AMPA/NMDA ratio was observed when compared to non-electroporated neurons (Figure 9B-E), validating the normalization procedure and the absence of off-target effects of the control gRNA. No effect of CRISPR to MDGA1 or MDGA2 on the paired-pulse ratio was observed (Figure 9—figure supplement 1C, D), ruling out pre-synaptic mechanisms. Together, those results strengthen the concept that both MDGA1 and MDGA2 down-regulate AMPAR recruitment during excitatory synapse development.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig9-v1.jpg)
+
+**Figure 9.:** CA1 neurons in rat organotypic hippocampal slices were single-cell electroporated at DIV 2 with CRISPR/Cas9 CTRL, CRISPR/Cas9 MDGA1, or CRISPR/Cas9 MDGA2, plus the tdTomato volume marker. One week later, electroporated neurons and non-electroporated control neighbors were processed for dual patch-clamp recordings upon stimulation of Schaffer’s collaterals. (A) Dual whole-cell recording configuration with corresponding image from an experiment (left) and confocal images showing tdTomato (magenta) and BFP signals in an electroporated neuron (right). (B) Representative traces of evoked AMPAR- and NMDAR-mediated EPSCs recorded at –70 mV and + 40 mV, respectively. Color sample traces correspond to electroporated neurons in the three conditions, and black traces correspond to control, non-electroporated neurons. (C, D) Average AMPAR- and NMDAR-mediated EPSC amplitudes, respectively, normalized to the control condition (the dashed line indicates 100%). Data were compared to the control condition by the Wilcoxon matched-pairs signed rank test, and between themselves using one-way ANOVA followed by Tukey’s multiple comparison (*p < 0.05; ns: not significant). (E) Average ratio between paired AMPAR- and NMDAR-mediated EPSCs in the three conditions. Data were compared using the Wilcoxon matched-pairs signed rank test (***p < 0.001; *p < 0.05; ns: not significant). For the statistics of the data presented in panels (C,D,E), see Supplementary file 1 and Figure 9—source data 1.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/75233/elife-75233-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (A, B) Scatter plots of AMPAR- and NMDAR-mediated EPSC amplitudes, respectively. CA1 neurons expressing CRISPR/Cas9 CTRL, MDGA1, or MDGA2 (y-axis) are compared to paired non-electroporated neurons (x-axis). (C) Average AMPAR-mediated EPSC traces in response to paired stimuli (50ms interstimulus interval) recorded from a non-electroporated CA1 neuron, or a neuron expressing either CRISPR/Cas9 CTRL, MDGA1, or MDGA2. (D) Average PPR measured in the four conditions (Kruskall-Wallis test, ns: not significant). For the statistics of the data presented in panels (A,B,D), see Supplementary file 1 and Figure 9—figure supplement 1—source data 1.
 
 ## Discussion
 
@@ -122,81 +210,908 @@ Given the strong effects caused by MDGA loss-of-function on synaptic differentia
 
 ## Materials and methods
 
-## DNA constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNA control</td>
+      <td>This study</td>
+      <td>5’-ATATTTCGGCAGTTGCAGCA-3'</td>
+      <td>CRISPR/Cas9Construction</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNA MDGA2</td>
+      <td>This study</td>
+      <td>5’-ATTTAGTGTACGGTCTCGTG-3’</td>
+      <td>CRISPR/Cas9Construction</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNA MDGA1</td>
+      <td>This study</td>
+      <td>5’-CTTCAACGTACGAGCCCGGG-3’</td>
+      <td>CRISPR/Cas9Construction</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AP tag sequence</td>
+      <td>This study</td>
+      <td>5´-GGCCTGAACGAtATCTTCGAGGCCCAG AAGATCGAGTGGCACGAG-3´</td>
+      <td>AP tag plasmids</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MDGA1 CRISPR validation primers</td>
+      <td>This study</td>
+      <td>5´-GGGAAGAGGTAGAGACCCAAGT-3´5´-CCTCCATCAACACATAACGAAA-3´</td>
+      <td>CRISPR/Cas9Validation</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MDGA2 CRISPR validation primers</td>
+      <td>This study</td>
+      <td>5´-GCTGATAGGGAAGGACAGACAG-3´5´-TAAATCCAAGACTGCAAGAGCC-3´</td>
+      <td>CRISPR/Cas9validation</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MDGA1 RTqPCR primers</td>
+      <td>This study</td>
+      <td>5'-GTTCTACTGCTCCCTCAACC-3'5'-CGTTACCTTTATTACCGCTGAG-3'</td>
+      <td>RTqPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MDGA2 RTqPCR primers</td>
+      <td>This study</td>
+      <td>5´-AAGGTGACATCGCCATTGAC-3'5'-CCACGGAATTCTTAGTTGGTAGG-3´</td>
+      <td>RTqPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>U6 RTqPCR primers</td>
+      <td>This study</td>
+      <td>5′-GGAACGATACAGAGAAGATTAGC-3′5′-AAATATGGAACGCTTCACGA-3′</td>
+      <td>RTqPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SDHA RTqPCR primers</td>
+      <td>This study</td>
+      <td>5′-TGCGGAAGCACGGAAGGAGT-3′5′-CTTCTGCTGGCCCTCGATGG-3′</td>
+      <td>RTqPCR</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Template switching oligo</td>
+      <td>This study</td>
+      <td>5′-AAGCAGTGGTATCAACGCAGAGTACrGrG + G-3′</td>
+      <td>Reverse transcription for RNA-seq</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>pCMV6-XL4</td>
+      <td>Origene #pCMVXL4</td>
+      <td></td>
+      <td>MDGA1 expression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>V5-MDGA1(R.norvegicus)</td>
+      <td>A.M. Craig (University of British Columbia, Canada) Pettem et al., 2013</td>
+      <td></td>
+      <td>Neuron electroporation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>V5-MDGA2(R.norvegicus)</td>
+      <td>A.M. Craig (University of British Columbia, Canada)</td>
+      <td></td>
+      <td>Neuron electroporation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-MDGA1(R.norvegicus)</td>
+      <td>A.M. Craig (University of British Columbia, Canada) Pettem et al., 2013</td>
+      <td></td>
+      <td>Neuron electroporation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-MDGA2(R.norvegicus)</td>
+      <td>A.M. Craig (University of British Columbia, Canada) Pettem et al., 2013</td>
+      <td></td>
+      <td>Neuron electroporation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>shMDGA1(R.norvegicus)</td>
+      <td>A.M. Craig (University of British Columbia, Canada) Pettem et al., 2013</td>
+      <td></td>
+      <td>Neuron electroporation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>shMORB(R.norvegicus)</td>
+      <td>A.M. Craig (University of British Columbia, Canada)  Pettem et al., 2013</td>
+      <td></td>
+      <td>Neuron electroporation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-MDGA1 rescue(R.norvegicus)</td>
+      <td>A.M. Craig (University of British Columbia, Canada) Pettem et al., 2013</td>
+      <td></td>
+      <td>Neuron electroporation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AP-NLGN1(M. musculus)</td>
+      <td>A.Ting (Stanford University, USA)</td>
+      <td></td>
+      <td>Neuron electroporation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>BirAER(M. musculus)</td>
+      <td>A.Ting (Stanford University, USA)</td>
+      <td></td>
+      <td>Neuron electroporation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mApple.V5-MDGA2 rescue(R.norvegicus)</td>
+      <td>A.Ting (Stanford University, USA) Loh et al., 2016</td>
+      <td></td>
+      <td>Plasmid construction</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>shMDGA2(R.norvegicus)</td>
+      <td>A.Ting (Stanford University, USA) Loh et al., 2016</td>
+      <td></td>
+      <td>Neuron electroporation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AP-MDGA1 rescue(R.norvegicus)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Obtained with HD-In-Fusion kit</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AP-MDGA2 rescue(R.norvegicus)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Obtained with HD-In-Fusion kit</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSpCas9(BB)–2A-GFP (PX458)</td>
+      <td>Adgene #48,138</td>
+      <td>RRID:Adgene_48138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>shNLGN1(M. musculus)</td>
+      <td>P.Scheiffele (Biozentrum, Basel)</td>
+      <td></td>
+      <td>Neuron electroporation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-NLGN1(M. musculus)</td>
+      <td>P.Scheiffele (Biozentrum, Basel)</td>
+      <td></td>
+      <td>Obtained with HD-In-Fusion kit</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AP-NLGN1 rescue(M. musculus)</td>
+      <td>Chamma et al., 2016a</td>
+      <td></td>
+      <td>Neuron electroporation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Homer1c-DsRed</td>
+      <td>Mondin et al., 2011</td>
+      <td></td>
+      <td>Neuron electroporation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-NRXN1β</td>
+      <td>M.Missler (Münster University, Germany) Neupert et al., 2015</td>
+      <td></td>
+      <td>Neuron electroporation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-GPI</td>
+      <td>Renner et al., 2009</td>
+      <td></td>
+      <td>Neuron electroporation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG_Xph20-eGFP-CCR5TC</td>
+      <td></td>
+      <td>RRID:Adgene_135530</td>
+      <td>Neuron electroporation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG_Xph20-mRuby2_CCR5TC</td>
+      <td></td>
+      <td>RRID:Adgene_135531</td>
+      <td>Neuron electroporation</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Anti GFP nanobody</td>
+      <td>Chamma et al., 2016a</td>
+      <td></td>
+      <td>GFP labelling uPAINT, dSTORM</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>mSA</td>
+      <td>Chamma et al., 2017</td>
+      <td></td>
+      <td>AP-biotin labelling uPAINT, dSTORM</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>COS-7 from ECACC</td>
+      <td>Sigma-AldrichAcc Nc 87021302Lot 15I032 passage + 4</td>
+      <td>RRID:CVCL_0224</td>
+      <td>Cell surface cluster assays, protein pull-down</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>HEK-293T from ECACC</td>
+      <td>Sigma-AldrichAcc Nc 12022001Lot 16G020 Passage + 6</td>
+      <td>RRID:CVCL_0063</td>
+      <td>MDGA1 peptide production</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bicuculine</td>
+      <td>TOCRIS #0130/50</td>
+      <td>RRID:SCR_003689</td>
+      <td>Block inhibitory synaptic transmission</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphocreatine</td>
+      <td>Calcbiochem#2380–5 GM</td>
+      <td></td>
+      <td>RNA extraction</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Atto 647 N</td>
+      <td>Atto-Tec</td>
+      <td></td>
+      <td>Coupled to anti GluA2 antibody</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>STAR 635 P</td>
+      <td>Abberior</td>
+      <td></td>
+      <td>Coupled to mSA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 647</td>
+      <td>Thermo Fischer Scientific</td>
+      <td></td>
+      <td>Coupled to mSA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>V5 tag Fab fragment</td>
+      <td>Abnova #RAB00032</td>
+      <td></td>
+      <td>Coupled to flurophores</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>QIAzol Lysis Reagent</td>
+      <td>Qiazol</td>
+      <td></td>
+      <td>RTqPCR</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>X- tremeGENE</td>
+      <td>Transfection Reagent, Roche #6366546001</td>
+      <td>RRID:SCR_001326</td>
+      <td>COS7 cells transfection</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ribolock</td>
+      <td>Thermo Fisher Scientific #E00381</td>
+      <td></td>
+      <td>RNase inhibitor</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>In-Fusion HD Cloning Kit</td>
+      <td>Takara Bio#639,642</td>
+      <td></td>
+      <td>Plasmid construction</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>MycoAlert Mycoplasma Detection Kit</td>
+      <td>Lonza# LT07-218</td>
+      <td>Lot number: 0000312202</td>
+      <td>Mycoplasma detection in cell lines</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>T7 endonuclease based method</td>
+      <td>GeneArt Genomic detection kit, Thermo Fisher Scientific #A24372</td>
+      <td></td>
+      <td>CRISPR validation</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Direct-Zol RNA microprep</td>
+      <td>Zymo Research cat#R2062</td>
+      <td></td>
+      <td>RTqPCR</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Maxima First Strand cDNA Synthesis kit</td>
+      <td>Thermo Fischer Scientific # K1641</td>
+      <td></td>
+      <td>RTqPCR</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Dynabeads Protein G</td>
+      <td>Thermo Fisher Scientific #11,004D</td>
+      <td>RRID:SCR_008452</td>
+      <td>NLGN pull down</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Dynabeads M-280</td>
+      <td>Thermo Fisher Scientific #11,205D</td>
+      <td></td>
+      <td>NLGN pull down</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>ClarityWestern blot ECL</td>
+      <td>Bio-Rad#170–5061</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Actin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich#A5316</td>
+      <td>RRID:AB_476743</td>
+      <td>(1:10,000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>βIII tubulin (rabbit polyclonal)</td>
+      <td>Abcam#18,207</td>
+      <td>RRID:AB_444319</td>
+      <td>(1:25,000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP (mouse monoclonal)</td>
+      <td>Sigma-Aldrich#11814460001</td>
+      <td>RRID:AB_390913</td>
+      <td>(1:1000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HA (rat monoclonal)</td>
+      <td>Roche#11867423001</td>
+      <td>RRID:AB_390918</td>
+      <td>(1:1000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HA (rabbit monoclonal)</td>
+      <td>Cell Signaling #3,724</td>
+      <td>RRID:AB_10693385</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MDGA1 (rabbit polyclonal)</td>
+      <td>Synaptic Systems#421,002</td>
+      <td>RRID:AB_2800520</td>
+      <td>1:50 ICC(1:500 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GluA1 (rabbit polyclonal)</td>
+      <td>Agrobio (clone G02141)</td>
+      <td>-</td>
+      <td>(1:50 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GluA2 (mouse monoclonal)</td>
+      <td>E.Gouaux (OSHU, Vollum Institute, Portland)</td>
+      <td>-</td>
+      <td>(1:200 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NLGN1/2/3/4 (rabbit polyclonal)</td>
+      <td>Synaptic Systems#129,213</td>
+      <td>RRID:AB_2619812</td>
+      <td>NLGN pull down (1:1000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PSD-95 (mouse monoclonal)</td>
+      <td>Thermo Fischer Scientific #MA1-046</td>
+      <td>RRID:AB_2092361</td>
+      <td>1:200 ICC(1:2000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Gephyrin (mouse monoclonal)</td>
+      <td>Synaptic Systems#147,111</td>
+      <td>RRID:AB_887719</td>
+      <td>(1:2000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>VGLUT1 (guinea pig polyclonal)</td>
+      <td>Merck Millipore#AB5905</td>
+      <td>RRID:AB_2301751</td>
+      <td>(1:2000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>VGAT (guinea pig polyclonal)</td>
+      <td>Synaptic Systems#131,004</td>
+      <td>RRID:AB_887873</td>
+      <td>(1:1,000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Synaptophysin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich# S5768</td>
+      <td>Clone SVP-38RRID:AB_477523</td>
+      <td>(1:2000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Tubulin (mouse monoclonal)</td>
+      <td>Sigma-Aldrich#T4026</td>
+      <td>RRID:AB_477577</td>
+      <td>(1:5000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MAP-2 (mouse monoclonal)</td>
+      <td>Sigma-Aldrich#M4403</td>
+      <td>RRID:AB_477193</td>
+      <td>(1:2000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p-tyrosine (mouse monoclonal)</td>
+      <td>Cell Signaling#9,411</td>
+      <td>RRID:AB_331228</td>
+      <td>(1:1000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse HRP (donkey polyclonal)</td>
+      <td>Jackson Immunoresearch #715-035-150</td>
+      <td>RRID:AB_2340770</td>
+      <td>(1:5000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IRDye680LT(goat polyclonal)</td>
+      <td>LICOR #926–68020</td>
+      <td>RRID:AB_10706161</td>
+      <td>(1:10,000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouseIRDye 800LT(goat polyclonal)</td>
+      <td>LICOR #926–32210</td>
+      <td>RRID:AB_26218442</td>
+      <td>(1:10,000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit HRP (donkey polyclonal)</td>
+      <td>Jackson Immunoresearch #711-035-152</td>
+      <td>RRID:AB_10015282</td>
+      <td>(1:5000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbitIRDye 680LT(goat polyclonal)</td>
+      <td>LICOR #926–68021</td>
+      <td>RRID:AB_10706309</td>
+      <td>(1:10,000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IRDye800LT(goat polyclonal)</td>
+      <td>LICOR #926–32211</td>
+      <td>RRID:AB_621843</td>
+      <td>(1:10,000 WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Alexa488 (goat polyclonal)</td>
+      <td>Thermo Scientific #A11001</td>
+      <td>RRID:AB_2534069</td>
+      <td>(1:1,000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Alexa 568 (goat polyclonal)</td>
+      <td>Thermo Scientific #A11031</td>
+      <td>RRID:AB_144696</td>
+      <td>(1:1,000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Alexa 647 (goat polyclonal)</td>
+      <td>Thermo Scientific #A21235</td>
+      <td>RRID:AB_2535804</td>
+      <td>(1:1,000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa488 (goat polyclonal)</td>
+      <td>Thermo Scientific #A11008</td>
+      <td>RRID:AB_143165</td>
+      <td>(1:1,000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa 568 (goat polyclonal)</td>
+      <td>Thermo Scientific #A11011</td>
+      <td>RRID:AB_143157</td>
+      <td>(1:1,000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa 647 (goat polyclonal)</td>
+      <td>Thermo Scientific #A31576</td>
+      <td>RRID:AB_10374303</td>
+      <td>(1:1,000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa 555 (donkey polyclonal)</td>
+      <td>Invitrogen#A32794</td>
+      <td>RRID:AB_2762834</td>
+      <td>(1:1,000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rat Alexa 488 (goat polyclonal)</td>
+      <td>Thermo Scientific #A11073</td>
+      <td>RRID:AB_2534117</td>
+      <td>(1:1,000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rat Alexa 568 (goat polyclonal)</td>
+      <td>Thermo Scientific #A11077</td>
+      <td>RRID:AB_2534121</td>
+      <td>(1:1,000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti Rat Alexa 647 (goat polyclonal)</td>
+      <td>Thermo Scientific #A21247</td>
+      <td>RRID:AB_141778</td>
+      <td>(1:1,000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti guinea pig DyLight 405 (goat polyclonal)</td>
+      <td>Jackson ImmunoResearch #106475003</td>
+      <td>RRID:AB_2337432</td>
+      <td>(1:1,000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-guinea pig Alexa488 (goat polyclonal)</td>
+      <td>Thermo Scientific #A11008</td>
+      <td>RRID:AB_143165</td>
+      <td>(1:1,000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-guinea pig Alexa 568 (goat polyclonal)</td>
+      <td>Thermo Scientific #A11075</td>
+      <td>RRID:AB_141954</td>
+      <td>(1:1,000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti guinea pig Alexa 647 (goat polyclonal)</td>
+      <td>Thermo Scientific #A21450</td>
+      <td>RRID:AB_2141882</td>
+      <td>(1:1,000 ICC)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metamorph</td>
+      <td>Molecular devices</td>
+      <td>RRID:SCR_002368</td>
+      <td>Image analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad</td>
+      <td>PRISM</td>
+      <td>RRID:SCR_002798</td>
+      <td>Statistical analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChopChop</td>
+      <td>Labun et al., 2019</td>
+      <td></td>
+      <td>CRISPR/Cas9 design</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>National Center for Microscopy and Imaging Research</td>
+      <td>RRID:SCR_001935</td>
+      <td>Western-blot quantitation</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cutadapt</td>
+      <td>Martin, 2011</td>
+      <td></td>
+      <td>RNA-seq</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fastp</td>
+      <td>Chen et al., 2018</td>
+      <td></td>
+      <td>RNA-seq</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>Dobin et al., 2013</td>
+      <td></td>
+      <td>RNA-seq</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>Love et al., 2014</td>
+      <td></td>
+      <td>RNA-seq</td>
+    </tr>
+  </tbody>
+</table>
+
+### DNA constructs
 
 Rat V5-MDGA1, V5-MDGA2, HA-MDGA1, HA-MDGA2, shMDGA1, shMORB (shCTRL), sh-RNA resistant HA-MDGA1 (rescue) constructs as described previously (Elegheert et al., 2017; Pettem et al., 2013) were kind gifts from A.M. Craig (University of British Columbia, Vancouver, OR). Mouse AP-tagged NLGN1, biotin ligase (BirAER), shMDGA2, and mApple-V5-MDGA2 rescue plasmids (Loh et al., 2016) were gifts from A. Ting (Stanford University, CA). AP-MDGA1 and AP-MDGA2 were generated by replacing the V5 tag of the V5-MDGA1 and V5-MDGA2 constructs, respectively, by the 15 amino acids AP tag (5´-GGCCTGAACGATATCTTCGAGGCCCAGAAGATCGAGTGGCACGAG-3´) using the HD-In-Fusion kit (Takara). The linker 5´-GGAGGATCAGGAGGATCA-3´ was added after the AP tag. AP-MDGA1 and AP-MDGA2 rescue constructs were generated by inserting the mutations responsible for the resistance to the respective shRNAs obtained from HA-MDGA1 and mApple-V5-MDGA2 rescue constructs, respectively, using the HD-In-Fusion kit. HA-MDGA2 rescue was created by replacing the AP tag from the AP-MGDA2 rescue construct by the HA tag using the HD-In-Fusion kit.
 
 The CRISPR target sequences were all 20-nucleotide long and followed by a protospacer adjacent motif (PAM). The first step in the design of gRNAs involved identification of the best sequence to target. For MDGA1, we chose the more efficient gRNA proposed by the online software ChopChop (https://chopchop.cbu.uib.no/). For MDGA2, we chose to target the exon1, near ATG (Labun et al., 2019). The guide RNA (gRNA) sequence was 5’-CTTCAACGTACGAGCCCGGG-3’ for MDGA1 and 5’-ATTTAGTGTACGGTCTCGTG-3’ for MDGA2. As a control we used a sequence from a gecko bank: 5’-ATATTTCGGCAGTTGCAGCA-3’. We took particular care to select gRNAs not sharing homology with any other sequence in the genome, even considering 0, 1, 2, or 3 mismatches, and with high efficiency scores (cutting frequency determination, CFD = 98/100). However, there are still a number of genes to which gRNAs for MDGA1 or MDGA2 can hybridize with 4 mismatches, albeit with low scores i.e. CFD < 0.4 (Tables 1 and 2). gRNAs were cloned into the vector pSpCas9(BB)–2A-GFP (PX458) (Addgene cat#48138). The CRISPR MDGA2 resitant sequence was the same as for shMDGA2 since the gRNA for MDGA2 was directed to the signal peptide, which is absent in the HA-MDGA2 rescue described above.
 
+**Table 1.**
+ CRISPR off-targets of MDGA1 gRNA with 4 mismatches.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name off-target sequence for MDGA1 gRNA</th>
+      <th>CFD score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>intergenic_Vangl2</td>
+      <td>0.36</td>
+    </tr>
+    <tr>
+      <td>intron_Tbxas1</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>intergenic_SCCPDH|TFB2M</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>intergenic_Scg2|ENSRNOG00000037663</td>
+      <td>0.18</td>
+    </tr>
+    <tr>
+      <td>intergenic_ENSRNOG00000037633|Nyap2</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>intron_Galnt18_1</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>intergenic_Ttc7b|Rps6ka5</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>intergenic_Six2|Srbd1</td>
+      <td>0.12</td>
+    </tr>
+    <tr>
+      <td>intron_Slc9a9_8</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>intergenic_Adora1|Myog_13</td>
+      <td>0.1</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ CRISPR off-targets of MDGA2 gRNA with 4 mismatches.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name off target sequence for MDGA2 gRNA</th>
+      <th>CFD score</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>exon_Pex1_chr4</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <td>intron_Ssbp2_chr2</td>
+      <td>0.25</td>
+    </tr>
+    <tr>
+      <td>intergenic_Prune2|LOC102546963_chr1</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>intergenic_Crygs|AABR07034636.1_chr11</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>intron_Ift80_chr2</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>intergenic_LOC685114|Ccdc178_chr18</td>
+      <td>0.15</td>
+    </tr>
+    <tr>
+      <td>intergenic_U6|AABR07048636.1_chr5</td>
+      <td>0.14</td>
+    </tr>
+    <tr>
+      <td>intron_Tmem47_chrX</td>
+      <td>0.13</td>
+    </tr>
+    <tr>
+      <td>intron_Camk2b_chr14</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>intergenic_Samd4a|Gch1_chr15</td>
+      <td>0.07</td>
+    </tr>
+  </tbody>
+</table>
+
 Short hairpin RNA to murine NLGN1 (shNLGN1) (Chih et al., 2005) and HA-NLGN1 were gifts from P. Scheiffele (Biozentrum, Basel). shRNA-resistant AP-tagged NLGN1 (AP-NLGN1res) was described previously (Chamma et al., 2016a; Letellier et al., 2018). GFP-NRXN1β (Chamma et al., 2016a; Neupert et al., 2015) was a gift from M. Missler (Münster University, Germany). Homer1c-DsRed and GFP-GPI constructs were reported earlier (Mondin et al., 2011; Renner et al., 2009). Xph20-GFP and Xph20-mRuby2 (Addgene#135,530 pCAG_Xph20-eGFP-CCR5TC, #135,531 pCAG_Xph20-mRuby2-CCR5TC) have previously been described (Rimbault et al., 2019).
 
-## Production and fluorophore conjugation of probes
+### Production and fluorophore conjugation of probes
 
 The anti-GFP nanobody and mSA were produced as described (Chamma et al., 2017). Briefly, the two proteins were expressed in E. coli by auto-induction at 16°C. Both proteins were purified by affinity chromatography using their polyhistidine tags in native and denaturing conditions for the nanobody and mSA respectively. After dialysis in PBS and concentration to ~ 1 mg.mL–1, the proteins were coupled with 3–6 equivalents of the dyes in their activated ester form. Dyes used were Atto 647 N (Atto-Tec), STAR 635 P (Abberior) and Alexa Fluor 647 (ThermoFisher). Excess unreacted dye was removed using a desalting column and the dye-conjugated probes were further purified to homogeneity by size-exclusion chromatography. Probes were concentrated and flash-frozen for storage at −80 °C until use. The anti-GluA2 antibody, clone 15F1 (gift from E. Gouaux, OSHU, Vollum Institute, Portland), and the V5 tag recombinant Fab fragment (Abnova, RAB00032) were coupled to NHS-derived dyes using the same protocol as above but without the size-exclusion chromatography purification step.
 
-## MDGA1 recombinant protein production and rabbit polyclonal antiserum
+### MDGA1 recombinant protein production and rabbit polyclonal antiserum
 
 For antibody production, mouse MDGA1 cDNA lacking signal peptide, GPI anchor site, and propeptide (amino acids 19–932; Uniprot ID# Q0PMG2) was inserted in-frame in a modified pCMV6-XL4 expression vector containing a prolactin leader peptide (PLP) followed by a N-terminal FLAG tag, MDGA1 insert, a 3CPro cleavage site and the human Fc domain. Secreted dimeric C-terminally Fc-tagged MDGA1 stably expressed in HEK-293T cells was collected in serum-free Opti-MEM (Thermo Fisher Scientific, Inc). HEK-293T cells from the European Collection of Authenticated Cell Cultures (ECACC) were purchased via Sigma-Aldrich (Acc Nc 12022001). Cells were thawed from frozen vials at passage + 6, and maintained up to passage 20. Cells were regularly tested negative for mycoplasma, using the MycoAlert detection kit (Lonza, #LT07-218). Fc-tagged MDGA1 protein was run on an affinity column packed with Protein-G Plus Agarose fast flow resin (Pierce) using a gravity-flow system. Affinity column was washed with 250 mL wash buffer (50 mM HEPES pH 7.4, 300 mM NaCl) and eluted with 10 mL IgG elution buffer (Pierce) per the manufacturer’s instructions. For non-Fc-tagged MDGA1 protein used for immunization, following passage of conditioned medium through the column packed with Protein-G Agarose, the column was washed with 250 mL wash buffer (450 mM NaCl, 50 mM Tris, 1 mM EDTA, pH 8.0), the Fc tag was cleaved by overnight incubation with GST-tagged 3 C PreScission Protease (GE Healthcare) in cleavage buffer (150 mM NaCl, 50 mM Tris, 1 mM EDTA, 1 mM DTT, pH 8.0), and the cleaved protein was collected in the eluate. The protease was subsequently separated from the eluted proteins using a Glutathione Sepharose (GE Healthcare) packed column. Fc-tagged and non-Fc-tagged proteins were concentrated using Amicon Ultra 10 kDa MWCO centrifugal filter units (Millipore), dialyzed against PBS, and protein concentration determined by Bradford assay (Bio-Rad). Immunization of rabbits and harvesting of polyclonal antiserum was performed by Synaptic Systems (MDGA1 polyclonal antiserum #421 002).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Vibratome sections (80 µm) from the brains of either adult wildtype mice or Mdga1 KO mice (Ishikawa et al., 2011) (a gift of T. Yamamoto, Kagawa University, Japan) were permeabilized at room temperature (RT) for 40 min in PBS containing 0.5% Triton X-100 (Sigma-Aldrich). Sections were then blocked overnight at 4 °C in PBS containing 10% normal horse serum (NHS), 0.5% Triton X-100, 0.5 M glycine (Sigma-Aldrich, #G8898), 0.2% gelatin (Sigma-Aldrich, #G7041). Sections were then washed in PBS-0.5% Triton X-100 at RT and incubated at 4 °C for 48 hr with MDGA1 antiserum (dilution 1:500) in PBS containing 5% NHS, 0.5% Triton X-100% and 0.2% gelatin. Afterwards, sections were washed in PBS-0.5%Triton X-100 at RT before overnight incubation at 4 °C with Alexa555-conjugated donkey-anti-rabbit antibody (Invitrogen, #A32794) in PBS containing 5% NHS, 0.5% Triton X-100% and 0.2% gelatin. Before mounting coverslips with Mowiol-4–88 (Sigma-Aldrich), sections were washed in PBS-0.5% Triton X-100. Images were acquired using a Leica SP8 confocal microscope (Leica Microsystems).
 
-## Rat hippocampal cultures and electroporation
+### Rat hippocampal cultures and electroporation
 
 Gestant Sprague-Dawley rat females were purchased from Janvier Labs (Saint-Berthevin, France). Animals were handled and killed according to European ethical rules. Dissociated neuronal cultures were prepared from E18 rat embryos or P0 mice as previously described (Kaech and Banker, 2006). Dissociated cells were electroporated with the Amaxa system (Lonza) using 300,000 cells per cuvette. Depending on the experiments, the following plasmid combinations were used: 1 / Homer1c-DsRed: shMDGA1 or shMDGA2: AP-MDGA1 rescue or AP-MDGA2-rescue: BirAER (1:3:1:1 µg DNA); 2 / Homer1c-DsRed and GFP-GPI (1:1 µg DNA); 3 / Homer1c-DsRed plus shCTRL (shMORB), shMDGA1, or shMDGA2 (1:3 µg DNA); 4 / in separate electroporations, GFP-NRXN1β (3 µg DNA) and Xph20-mRuby2 plus shCTRL or shMDGA2 (1:3 µg DNA); 5 / Homer1c-DsRed: shCTRL, shMDGA1 or shMDGA2: AP-NLGN1: BirAER (1:3:1:1 µg DNA); 6 / Homer1c-DsRed: BirAER: shCTRL or shMDGA2: AP-NLGN1: HA-MDGA2 rescue (1:1:3:1:1 µg DNA); 7 / Xph20-mRuby2: CRISPR/Cas9 CONTROL, CRISPR/Cas9 MDGA1, or CRISPR/Cas9 MDGA2: HA-MDGA2 rescue (1:3:1 µg DNA). Electroporated neurons were resuspended in Minimal Essential Medium (Thermo Fisher Scientific, #21090.022) supplemented with 10% Horse serum (Invitrogen) (MEM-HS), and plated on 18 mm glass coverslips coated with 1 mg.mL–1 polylysine (Sigma-Aldrich, #P2636) overnight at 37 °C. Three hours after plating, coverslips were flipped onto 60 mm dishes containing 15 DIV rat hippocampal glial cells cultured in Neurobasal plus medium (Gibco Thermo Fisher Scientific, #A3582901) supplemented with 2 mM glutamine and 1 x B27 plus Neuronal supplement (Gibco Thermo Fisher Scientific, #A3582801). Cells were cultured during 8–14 days at 37 °C and 5% CO2. Astrocyte feeder layers were prepared from the same embryos, plated between 20,000 and 40,000 cells per 60 mm dish previously coated with 0.1 mg.mL–1 polylysine and cultured for 10 days in MEM containing 4.5 g.L–1 glucose, 2 mM L-glutamax (Thermo Fischer Scientific, #35050–038) and 10% horse serum. Ara C (Sigma-Aldrich, #C1768) was added after 3 DIV at a final concentration of 3.4 µM.
 
-## Genomic cleavage of CRISPR constructs
+### Genomic cleavage of CRISPR constructs
 
 To validate the genomic cleavage, we used a T7 endonuclease based method (GeneArt Genomic detection kit, Thermo Fisher Scientific, #A24372). Briefly, dissociated hippocampal neurons were electroporated as described above with the CRISPR/Cas9 constructs and plated on glass coverslips. After 10 DIV, neurons were scraped in PBS and centrifuged at 1000xg for 5 min. Cells were then resuspended in 50 µL of lysis buffer containing 2 µL of protein degrader to extract genomic DNA. Then, PCRs were run to amplify a 555 bp genomic segment for MDGA1 and 546 bp for MDGA2. The following pairs of primers were used: MDGA1: Forward: 5´-GGGAAGAGGTAGAGACCCAAGT-3´ Reverse: 5´-CCTCCATCAACACATAACGAAA-3´. MDGA2: Forward: 5´-GCTGATAGGGAAGGACAGACAG-3´; Reverse: 5´-TAAATCCAAGACTGCAAGAGCC-3´. After checking the presence of the PCR fragments in an agarose gel, 1 µL of PCR reaction was denatured, reannealed, and digested with T7 endonuclease to reveal the presence of mismatches in the annealed fragments. Cleavage bands were detected in agarose gels.
 
-## RT-qPCR
+### RT-qPCR
 
 RNA was extracted from Banker neuronal cultures using the QIAzol Lysis Reagent (Qiagen) and the Direct-Zol RNA microprep (Zymo Research, cat#R2062) per the manufacturer’s instructions. cDNA was synthetized using the Maxima First Strand cDNA Synthesis kit (Thermo Fischer Scientific, # K1641). At least three neuronal cultures were analyzed per condition and triplicate qPCR reactions were made for each sample. Transcript-specific primers were used at 600 nM and cDNA at 10 ng in a final volume of 10 µL. The LightCycler 480 SYBR Green I Master qPCR kit (Roche) was used according to manufacturer’s instructions. The Ct value for each gene was normalized against that of SDHA and U6. The relative mRNA expression level was calculated using the comparative method (2ΔΔCt) (Livak and Schmittgen, 2001). The following set of primers were used: MDGA1 Forward: 5′-GTTCTACTGCTCCCTCAACC-3′ Reverse: 5′-CGTTACCTTTATTACCGCTGAG-3' MDGA2 Forward: 5′-AAGGTGACATCGCCATTGAC-3' Reverse: 5′-CCACGGAATTCTTAGTTGGTAGG-3' U6 Forward: 5′-GGAACGATACAGAGAAGATTAGC-3′ U6 Reverse: 5′-AAATATGGAACGCTTCACGA-3′ SDHA Forward: 5′-TGCGGAAGCACGGAAGGAGT-3′ SDHA Reverse: 5′-CTTCTGCTGGCCCTCGATGG-3′.
 
-## Culture and transfection of COS-7 cells
+### Culture and transfection of COS-7 cells
 
 COS-7 cells from the ECACC purchased via Sigma-Aldrich, Acc Nc 87021302 were cultured in DMEM (Eurobio) supplemented with 1% glutamax (Thermo Fischer Scientific, #35050–038), 1% sodium pyruvate (Thermo Fischer Scientific, #11360–070), 10% Fetal Bovine Serum (Eurobio). Cells were thawed from frozen vials at passage + 4, and maintained up to passage 20. Cells were regularly tested negative for mycoplasma, using the MycoAlert detection kit (Lonza, #LT07-218). For streptavidin pull-down and Western blots, COS-7 cells were plated in 6-well plates (100,000 cells/well) and transfected the next day using X- tremeGENE 9 DNA (Transfection Reagent, Roche), with HA-NLGN1 + AP-MDGA1 or AP-MDGA2 + BirAER (total DNA 1 μg/well). Cells were left under a humidified 5% CO2 / 37 °C atmosphere for 2 days before being processed for immunoprecipitation. For imaging experiments and shRNA validation experiments, cells were electroporated with the Amaxa system (Lonza) using the COS-7 ATCC program. Typically, 500,000 cells were electroporated with: 2 µg HA-MDGA1 or HA-MDGA2; 2, 4, 6 µg shMDGA1 or shMDGA2; and 2 µg HA-MDGA1 or HA-MDGA2 rescue. After 24 hr, cells were processed for imaging or biochemistry.
 
-## Neuronal lysates and brain tissue subcellular fractionation
+### Neuronal lysates and brain tissue subcellular fractionation
 
 For biochemistry experiments, hippocampal neurons were plated at a density of 500,000 cells per well in a 6-well plate previously coated with 1 mg.mL–1 polylysine for 24 hr at 37 °C. Cells were cultured for 7, 14 and 21 DIV in Neurobasal medium supplemented with 2 mM glutamine and 1 x NeuroCult SM1 Neuronal supplement. After 3 DIV, Ara C was added to the culture medium at a final concentration of 3.4 µM. Before lysis, plates were rinsed once in ice cold PBS and then scraped into 100 µL of RIPA buffer (50 mM Tris-HCl pH 7.5, 1 mM EDTA, 150 mM NaCl, 1% Triton-X100) containing protease inhibitor Cocktail Set III (Millipore #539134). Homogenates were kept for 30 min on ice, then centrifuged at 8,000xg for 15 min at 4 °C to remove cell debris. Protein concentration was estimated using the Direct Detect Infrared Spectrophotometer (Merck-Millipore). 100 µg protein were loaded on a gel to detect endogenous MDGA molecules in Western blots. For all other proteins, 20 µg were loaded. Rat brain subcellular fractionation was performed as previously described (Condomitti et al., 2018).
 
-## NLGN immunoprecipitation in neuronal cultures
+### NLGN immunoprecipitation in neuronal cultures
 
 Dissociated cells were electroporated with the Amaxa system (Lonza) using 1.5 × 106 cells per cuvette and 8 μg of shCONTROL or shMDGA2. Electroporated cells were plated at a density of 500,000 cells per well in a 6-well plate. At DIV 10 cells were treated with 3 mM pervanadate for 15 min at 37 °C before lysis, to preserve phosphate groups on NLGNs. Whole-cell protein extracts were obtained by solubilizing cells in lysis buffer (50 mM HEPES, pH 7.2, 10 mM EDTA, 0.1% SDS, 1% NP-40, 0.5% DOC, 2 mM Na-Vanadate, 35 µM phenylarsine oxide, 48 mM Na-Pyrophosphate, 100 mM NaF, 30 mM phenyl-phosphate, 50 µM NH4-molybdate, 1 mM ZnCl2) containing protease Inhibitor Cocktail Set III (Millipore #539134). Homogenates were kept on ice for 15 min. Lysates were then clarified by centrifugation at 8000 × g for 15 min. For immunoprecipitations, 500–1000 µg of total protein (estimated by Direct Detect Infrared Spectrophotometer assay, Merck Millipore), were incubated overnight with 2 µg of antibody raised against an intracellular epitope in mouse NLGN1 (amino acids 826–843) and which recognizes all NLGNs 1/2/3/4 (Synaptic Systems, #129 213). Antibody-bound NLGNs were incubated for 1 hr with 20 µL of protein G beads (Dyna- beads Protein G, Thermo Fisher Scientific) precipitated and washed four times with lysis buffer. At the end of the immunoprecipitation, 20 µL beads were resuspended in 20 µL of Laemli Sample Buffer buffer 2 X (Biorad, #1610747), and supernatants were processed for SDS-PAGE and Western blotting.
 
-## Streptavidin pull-down
+### Streptavidin pull-down
 
 Biotinylated AP-tagged MDGA1 or NLGN1 expressing COS-7 cells were rinsed once in ice cold PBS and then scraped in 100 µL RIPA buffer (50 mM Tris-HCl pH 7.5, 1 mM EDTA, 150 mM NaCl, 1% Triton-X100) containing protease inhibitor cocktail (Millipore #539134). Homogenates were kept on ice for 30 min, then centrifuged at 8,000xg for 15 min at 4 °C to remove cell debris. The supernatant was recovered and the protein concentration was estimated using the Direct Detect Infrared Spectrophotometer (Merck-Millipore). 400 µg protein were incubated with 40 µL of streptavidin coupled Dynabeads M-280 (Thermo Fisher Scientific, #11,205D). After 1 hr of incubation at RT on a rotating wheel, tubes were placed in the magnetic column and beads were washed three times with lysis buffer. Proteins were eluted from the beads by directly adding 20 µL of Laemli Sample Buffer buffer 2 X (Biorad, #1610747). Samples were then processed for SDS-PAGE and Western blotting.
 
-## SDS-PAGE and western blotting
+### SDS-PAGE and western blotting
 
 Samples were loaded in acrylamide-bisacrylamide 4–20% gradient gels (PROTEAN TGX Precast Protein Gels, BioRad) and run at 100 V for 1 hr. Proteins were transferred to a nitrocellulose membrane for immunoblotting using the TurboBlot system (BioRad). After 1 hr blocking with 5% non-fat dry milk in Tris-buffered saline Tween-20 solution (TBST: 28 mM Tris, 137 mM NaCl, 0.05% Tween-20, pH 7.4), membranes were incubated during 1 hr RT or overnight at 4 °C, with the primary antibody diluted in TBST solution containing 1% dry milk: custom-made rabbit anti-MDGA1 (Synaptic Systems #421002), rabbit anti-HA (Cell Signaling #3,724 (C29F4), 1:1000), rat anti-HA (Roche #1186742300, 1:1000), mouse anti-actin (Sigma-Aldrich #A5316, 1:10,000), mouse anti-GFP (Sigma-Aldrich #11814460001, 1:1000), rabbit anti-ßIII tubulin (Abcam #ab18207, 1:25,000), mouse anti-tubulin (Sigma-Aldrich #T4026, 1:5000), mouse anti-PSD95 (clone 7E3-1B8, Thermo Fisher Scientific #MA1-046, 1:2000), mouse anti-Synaptophysin (SVP-38) (Sigma-Aldrich # S5768, 1:2000), mouse anti-pTyr (Cell Signaling #9411, 1:1000), rabbit anti-panNLGN (Synaptic Systems #129 213, 1:1000). After three washes in TBST, membranes were incubated with horseradish peroxidase-conjugated donkey anti-mouse or anti-rabbit secondary antibodies (Jackson Immunoresearch, #715-035-150 and #711-035-152, respectively, concentration: 1:5000) or fluorophore-conjugated goat anti-mouse or anti-rabbit secondary antibodies (IRDye 680LT anti-rabbit #926–6821, IRDye 680LT anti-mouse #926–68020, IRdye-800CW anti-rabbit #926–32211, IRdye-800CW anti-mouse #926–32210 LI-COR) for 1 hr at RT. Target proteins were detected by chemiluminescence with Clarity Western ECL Substrate (Bio-Rad #170–5061) on the ChemiDoc Touch System (BioRad) or Odyssey Fc Imaging System (LI-COR) for fluorescent secondary antibodies. For quantification of band intensities, images were processed with the Gels tool of ImageJ. Normalization of protein loading was done using endogenous actin or tubulin present in the samples.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 To visualize endogenous MDGA1 proteins and AMPARs at the cell surface, neurons were incubated live for 10 min at 37 °C with the respective antibodies (rabbit anti-MDGA1, Synaptic Systems #421002 1:50; rabbit anti-GluA1, Agrobio, clone G02141, 0.2 mg.mL−1, 1:50; mouse anti-GluA2, clone 15F1, gift from E. Gouaux, 1:200), all diluted in Tyrode solution (15 mM D-glucose, 108 mM NaCl, 5 mM KCl, 2 mM MgCl2, 2 mM CaCl2 and 25 mM HEPES, pH = 7.4, 280 mOsm) containing 1% bovine serum albumin (BSA) (Sigma A7030). Then, cultures were fixed for 15 min in 4% paraformaldehyde, 4% sucrose, quenched in NH4Cl 50 mM in PBS for 15 min, permeabilized for 5 min with 0.1% Triton X-100 in PBS. After blocking during 20 min in PBS containing 1% BSA, cells were counter-stained for pre- and post-synaptic markers with a mixture of the following primary antibodies: mouse anti-PSD-95 (Thermo Fisher Scientific, #MA1-046, 1:100); mouse anti-gephyrin (Synaptic Systems, #147111, 1:2000); guinea pig anti-VGAT (Synaptic Systems, #131004, 1:1000), and guinea pig anti-VGLUT1 (Merck Millipore, #AB5905, 1:2000). The neuronal microtubule cytoskeleton was labeled using mouse anti MAP-2 (Sigma Aldrich, #M4403, 1:2000). Following three washes in PBS, cells were incubated with appropriate secondary antibodies coupled to Alexa fluorophores (405, 488, 564, or 647) (Thermo Fisher Scientific).
 
 MDGA1 immunostainings were visualized on a commercial Leica DMI6000 TCS SP5 microscope using a 63x/1.4 NA oil objective and a pinhole opened to one Airy disk. Images of 1024 × 1024 pixels were acquired at a scanning frequency of 400 Hz. All other immunostainings were visualized using an inverted epifluorescence microscope (Nikon Eclipse TiE) equipped with a 60 x/1.45 NA objective and filter sets for BFP (Excitation: FF02-379/34; Dichroic: FF-409Di03; Emission: FF01-440/40); EGFP (Excitation: FF01-472/30; Dichroic: FF-495Di02; Emission: FF01-525/30); Alexa568 (Excitation: FF01-543/22; Dichroic: FF-562Di02; Emission: FF01-593/40); and Alexa 647 (Excitation: FF02-628/40; Dichroic: FF-660Di02; Emission: FF01-692/40) (SemROCK). Images were acquired with an sCMOS camera (PRIME 95B, Photometrics) driven by the Metamorph software (Molecular Devices). The number of PSD-95, VGLUT1, gephyrin, and VGAT puncta per dendrite length was measured using a custom macro written in Metamorph. Briefly, epifluorescence images of pre- and post- synaptic markers were first thresholded and segmented using the morphometric image analysis module of MetaMorph for structures bigger than 4 pix² (0.137 μm2). Then, the total length of the dendrite was measured with the free line drawing tool of MetaMorph, and the linear pre- and postsynaptic density was calculated.
 
-## Single molecule tracking (UPAINT)
+### Single molecule tracking (UPAINT)
 
 Universal Point Accumulation in Nanoscale Topography (uPAINT) experiments were performed as previously described (Chamma et al., 2016a). In brief, neuronal cultures were placed in a Inox Ludin chamber (Life Imaging Services) containing pre-warmed Tyrode solution supplemented with 1% biotin-free BSA (Roth #0163.4). The chamber was placed on a motorized inverted microscope (Nikon Ti-E Eclipse) enclosed in a thermostatic box (Life Imaging Services) providing air at 37 °C. Biotinylated AP tags in MDGA1, MDGA2 and NLGN1 were labelled with STAR 635P-conjugated mSA at a concentration of 1 nM; N-terminal V5 tags in MDGA1, MDGA2 and LRRTM2 were labeled with 1 nM recombinant Fab fragment coupled to STAR 635 P (Abnova, #RAB00032). GFP-GPI or GFP-NRXN1β were labeled with 1 nM anti-GFP nanobody conjugated to Atto 647 N. Endogenous AMPARs were labelled with a low concentration (~1 nM) of Atto 647N-conjugated anti-GluA2 antibodies. A four-color laser bench (405; 491; 561; and 647 nm, 100 mW each; Roper Scientific) is connected through an optical fiber to the TIRF illumination arm of the microscope and laser powers are controlled through acousto-optical tunable filters driven by Metamorph. The fluorophores STAR 635 P and Atto 647 N were excited with the 647 nm laser line through a four-band beam splitter (BS R405/488/561/635, SemRock). Samples were imaged by oblique laser illumination, allowing the excitation of individual fluorescent probes (mSA, V5 Fab, anti-GluA2) bound to the neuron surface, with minimal background coming from the probes in solution. Fluorescence light was collected through a 100 X/1.49 NA PL-APO objective using a FF01-676/29 nm emission filter (SemRock), placed on a filter wheel (Suter Instruments). Image stacks of 2000–4000 consecutive frames with an integration time of 20 ms, were acquired with an EMCCD camera working at 10 MHz and Gain 300 (Evolve, Photometrics).
 
-## dSTORM
+### dSTORM
 
 AP-tagged proteins were labelled for dSTORM using 100 nM mSA-Alexa 647 in Tyrode solution containing 1% biotin free-BSA (Roth #0163.4) for 10 min at 37 °C. V5-tagged proteins were labelled using 100 nM Alexa 647-conjugated anti-V5 Fab. GFP-GPI was labeled using 100 nM anti-GFP nanobody conjugated to Alexa 647. Cells were rinsed and fixed with 4% PFA–0.2% glutaraldehyde in PBS-sucrose 4% for 10 min at RT, then kept in PBS at 4 °C until dSTORM acquisitions. Neurons were imaged in Tris‐HCl buffer (pH 7.5), containing 10% glycerol, 10% glucose, 0.5 mg.mL–1 glucose oxidase (Sigma), 40 mg.mL–1 catalase (Sigma C100-0,1% w/v) and 50 mM β-mercaptoethylamine (MEA) (Sigma M6500) (Heilemann et al., 2008). The same microscope described above for uPAINT was used. This microscope is further equipped with a perfect focus system preventing drift in the z-axis during long acquisition times. Pumping of Alexa 647 dyes into their triplet state was performed for several seconds using ~ 60 mW of the 647 nm laser at the objective front lens. Then, a lower power (~30 mW) was applied to detect the stochastic emission of single-molecule fluorescence, which was collected using the same optics and detector as described above. Multicolour Tetraspec fluorescent 100 nm beads (Invitrogen, #T7279) or nano-diamonds (Adamas Nanotechnologies #ND-NV140 nm) were added to the sample for later registration of images and lateral drift correction. Single-molecule detection was performed online with automatic feedback control of the lasers using the WaveTracer module running in Metamorph, enabling optimal single-molecule density during the acquisition. Acquisition sequences of 64,000 frames were acquired in streaming mode at 50 frames per second (20 ms exposure time), thus representing a total time of 1280 s = 21 min.
 
-## Offline single-molecule detection, trajectory analysis, and image reconstruction
+### Offline single-molecule detection, trajectory analysis, and image reconstruction
 
 Analysis of the image stacks generated by uPAINT and dSTORM was made offline under Metamorph, using the PALM-Tracer program based on wavelet segmentation for single-molecule localization and simulated annealing algorithms for tracking (Izeddin et al., 2012; Kechkar et al., 2013). For the analysis of uPAINT experiments, the instantaneous diffusion coefficient, D, was calculated for each trajectory from linear fits of the first 4 points of the mean square displacement (MSD) function versus time, for trajectories containing at least 10 points. For very confined trajectories, the fit of the MSD function can give negative values for diffusion coefficients: in that case, D is arbitrarily set at 10–5 µm²/s. The uPAINT sequences were also represented as density maps integrating all individual molecule detections. These super-resolved images were constructed using a zoom factor of 5, that is with a pixel size of 32 nm which is five times smaller than that of the original image (0.16 µm) and corresponds to the pointing accuracy of our system. To sort individual trajectories among synaptic and extra-synaptic compartments, post-synapses were identified by wavelet-based image segmentation (Racine et al., 2006) of the Homer1c-DsRed signal, and the corresponding binary masks were transferred to the single-molecule images for analysis. Synaptic coverage was determined from super-resolved detection maps as the ratio between segmented areas containing detections over the whole synaptic region determined from the low resolution Homer1c-DsRed image. dSTORM stacks were analyzed using the PALM-Tracer program, allowing the reconstruction of a unique super-resolved image of 32 nm pixel size (zoom 5 compared to the original images) by summing the intensities of all localized single molecules (1 detection per frame is coded by an intensity value of 1). The localization precision of our imaging system in dSTORM conditions is around 60 nm (FWHM) (Lagardère et al., 2020). To analyze protein enrichment at post-synapses, the average number of detections within Homer1c puncta was divided by the the average number of extra-synaptic detections, both normalized per unit area.
 
-## Organotypic slice culture and single-cell electroporation
+### Organotypic slice culture and single-cell electroporation
 
 Organotypic hippocampal slice cultures were prepared from postnatal day 2 Sprague-Dawley rats (Stoppini et al., 1991). Animals were quickly decapitated and brains placed in ice-cold Gey’s balanced salt solution under sterile conditions. Hippocampi were dissected out and coronal slices (350 µm) were cut using a tissue chopper (McIlwain) and incubated at 35 °C with serum-containing medium on Millicell culture inserts (CM, Millipore). The medium was replaced every 2–3 days. After 2 days in culture, organotypic slices were transferred to an artificial cerebrospinal fluid (ACSF) containing (in mM): 130 NaCl, 2.5 KCl, 2.2 CaCl2, 1.5 MgCl2, 10 D-glucose, 10 HEPES (pH 7.35, osmolarity adjusted to 300 mOsm). CA1 pyramidal cells were then processed for single cell electroporation using glass micropipets containing 20 ng.µL–1 plasmids encoding CRISPR/Cas9 + gRNA to MDGA1, MDGA2, or CTRL containing a nuclear BFP reporter + 6 ng.µL–1 plasmid encoding tdTomato. Micropipets were pulled from 1 mm borosilicate capillaries (Harvard Apparatus) with a vertical puller (Narishige). Electroporation was performed by applying 4 square pulses of negative voltage (–2.5 V, 25 ms duration) at 1 Hz, then the pipet was gently removed. 10–20 neurons were electroporated per slice, and slices were placed back in the incubator for 7 days before electrophysiology. We checked by confocal microscopy performed on sister slices that tdTomato-positive neurons also expressed the nuclear BFP reporter of CRISPR constructs.
 
-## Electrophysiology
+### Electrophysiology
 
 Electrophysiological recordings were carried out at RT using an upright microscope (Nikon Eclipse FN1) equipped with a motorized 2D stage and micromanipulators (Scientifica), and amplifiers driven by software (Axon Instruments). Whole-cell patch-clamp was performed using micropipettes pulled from borosilicate glass capillaries (Clark Electromedical) using a micropipette puller (Narishige). Pipettes had a resistance in the range of 4–6 MΩ. The recording chamber was continuously perfused with aCSF containing (in mM): 130 NaCl, 2.5 KCl, 2.2 CaCl2, 1.5 MgCl2, 10 D-glucose, 10 HEPES, and 0.02 bicuculline (pH 7.35, osmolarity adjusted to 300 mOsm), while the internal solution contained (in mM): 135 Cs-MeSO4, 8 CsCl, 10 HEPES, 0.3 EGTA, 4 MgATP, 0.3 NaGTP, and 5 QX-314. Salts were purchased from Sigma-Aldrich and drugs from Tocris.
 
@@ -204,10 +1119,10 @@ For the measurement of miniature excitatory and inhibitory currents, primary hip
 
 For the measurement of evoked AMPAR- and NMDAR-mediated currents in organotypic slices, CA1 pyramidal neurons were imaged with DIC and electroporated neurons were identified from the tdTomato fluorescence. The recording chamber was continuously perfused with ACSF bubbled with 95% O2 / 5% CO2 containing (in mM): 125 NaCl, 2.5 KCl, 26 NaHCO3, 1.25 NaH2PO4, 2 CaCl2, 1 MgCl2, and 25 glucose. 20 µM bicuculline and 100 nM DNQX were added to block inhibitory synaptic transmission and reduce epileptiform activity, respectively. The series resistance Rs was left uncompensated, and recordings with Rs higher than 30 MΩ were discarded. EPSCs were evoked in an electroporated neuron and a nearby non-electroporated neuron (non-electro) every 10 s for 5 min using a bipolar electrode in borosilicate theta glass filled with ACSF and placed in the stratum radiatum. The stimulating electrode was linked to a generator (ISO-STIM 01D, NPI) and voltage pulses of 10–100 V and duration 100–500 µs were imposed. Voltage-clamp recordings were digitized using the Multiclamp 700B amplifier (Axon Instruments) and acquired using the Clampex software (Axon Instruments). AMPAR-mediated currents were recorded at –70 mV and NMDAR-mediated currents were recorded at + 40 mV and measured 50 ms after the stimulus, when AMPAR-mediated EPSCs are back to baseline. EPSCs amplitude measurements were performed using Clampfit (Axon Instruments).
 
-## Patch-Seq analysis of neurons expressing CRISPR-Cas9 against MDGAs
+### Patch-Seq analysis of neurons expressing CRISPR-Cas9 against MDGAs
 
 To investigate the efficiency and potential off-target effects of the CRISPR-Cas9 strategy against MDGA1 and MDGA2, we used the Patch-seq technique (Cadwell et al., 2016; Fuzik et al., 2016). Briefly, CRISPR-Cas9 positive neurons were selected based on the expression of the GFP reporter and cells were patched using the following RNA-preserving internal solution, which contained (in mM): 120 CsMeSO4, 10 BAPTA, 3 TEA-Cl, 2 Na2-ATP, 2 Mg-ATP, 0.2 Na-GTP, 10 Na2-Phosphocreatin (Calbiochem 2380), 320 U/mL Ribolock, 290 mOsm, pH = 7.34. The cytoplasm and the nucleus were harvested using gentle negative pressure and expelled in a lysis solution containing RNase inhibitor (Ribolock, ThermoFisher). Reverse transcription into double stranded cDNA was performed using template switching oligo (LNA-TSO) with sequence 5′-AAGCAGTGGTATCAACGCAGAGTACrGrG + G-3′, in which rG indicates riboguanosines and + G indicates a locked nucleic acid (LNA)-modified guanosine, Eurogentec. The quality of these cDNA libraries was first tested using capillary-gel electrophoresis system (Labchip GX Touch, Perkin Elmer), then sequencing libraries were synthesized using NEXTFLEX Rapid 2.0 (Perkin Elmer). Sequencing was performed on a NextSeq 2000 system (Illumina) with an average of 20 millions of reads per sample. Reads were cleaned using the software cutadapt (version 1.18) (Martin, 2011) and fastp (version 0.20.0) (Chen et al., 2018) then aligned on the rat genome (Rnor_6.0) and quantified using STAR (version 2.7.1 a) (Dobin et al., 2013). Finally, differential gene analysis was performed with the R package DESeq2 (Love et al., 2014).
 
-## Statistics
+### Statistics
 
 Statistical values are given as mean ± s.e.m., unless otherwise stated. Statistical significance was calculated using GraphPad Prism 8.0 (San Diego, CA). For most experiments, data did not pass the D’Agostino and Pearson tests for normality, so comparisons were made using the non-parametric Mann–Whitney test. For data sets containing more than two conditions, comparisons were made by one-way analysis of variance (ANOVA) with the Kruskal-Wallis test for non-parametric samples, followed by a post hoc multiple comparison Dunn’s test. The number of experiments performed and the number of cells examined are indicated in each figure.

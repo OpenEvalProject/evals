@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.13273.001 Epithelial fusion is a crucial process in embryonic development, and its failure underlies several clinically important birth defects. For example, failure of neural fold fusion during neurulation leads to open neural tube defects including spina bifida. Using mouse embryos, we show that cell protrusions emanating from the apposed neural fold tips, at the interface between the neuroepithelium and the surface ectoderm, are required for completion of neural tube closure. By genetically ablating the cytoskeletal regulators Rac1 or Cdc42 in the dorsal neuroepithelium, or in the surface ectoderm, we show that these protrusions originate from surface ectodermal cells and that Rac1 is necessary for the formation of membrane ruffles which typify late closure stages, whereas Cdc42 is required for the predominance of filopodia in early neurulation. This study provides evidence for the essential role and molecular regulation of membrane protrusions prior to fusion of a key organ primordium in mammalian development. DOI: http://dx.doi.org/10.7554/eLife.13273.001
+Epithelial fusion is a crucial process in embryonic development, and its failure underlies several clinically important birth defects. For example, failure of neural fold fusion during neurulation leads to open neural tube defects including spina bifida. Using mouse embryos, we show that cell protrusions emanating from the apposed neural fold tips, at the interface between the neuroepithelium and the surface ectoderm, are required for completion of neural tube closure. By genetically ablating the cytoskeletal regulators Rac1 or Cdc42 in the dorsal neuroepithelium, or in the surface ectoderm, we show that these protrusions originate from surface ectodermal cells and that Rac1 is necessary for the formation of membrane ruffles which typify late closure stages, whereas Cdc42 is required for the predominance of filopodia in early neurulation. This study provides evidence for the essential role and molecular regulation of membrane protrusions prior to fusion of a key organ primordium in mammalian development.
 
 ## Introduction
 
@@ -29,11 +29,11 @@ The fusion of apposed epithelial sheets is an essential process in the completio
 
 NTDs are among the commonest human birth defects, affecting 0.5–2 per 1000 pregnancies worldwide (Copp et al., 2013). Understanding the mechanisms by which the vertebrate neural plate folds up and fuses to form a closed neural tube is thus of paramount importance for gaining insight into the embryonic pathogenesis of NTDs, and for developing improved methods for their prevention. In recent years, some of the molecular mechanisms underlying different morphogenetic aspects of neural tube closure have been unravelled. For example, the initial convergence and extension movements that narrow and elongate the neural plate were found to be regulated by the non-canonical Wnt-planar cell polarity pathway (Wallingford and Harland, 2002; Williams et al., 2014; Ybot-Gonzalez et al., 2007b), whereas the subsequent bending of the mammalian neural plate at discrete medial and dorsolateral hinge points was shown to be regulated by Shh and BMP signalling (Ybot-Gonzalez et al., 2002; Ybot-Gonzalez et al., 2007a). Much less is known, however, about the final steps of neurulation, involving fusion and remodelling of the neural folds at the dorsal midline.
 
-During epithelial ‘fusion’, individual cells do not actually fuse with one another, but rather cells at the leading edges of apposed tissues form de novo adhesions to create a continuous epithelium. Neural tube closure involves a particular kind of epithelial fusion, in which two distinct tissues need to fuse and remodel: the pseudostratified neuroepithelium (NE) and the squamous surface ectoderm (SE). Initially, these two tissues form a continuous ectodermal layer; however, during neural fold fusion, the continuity of this epithelium is disrupted at the bilateral NE/SE junctions, and new adhesions form between concurring epithelia from each side. Remodelling then generates the closed neural tube covered by the future epidermis (
+During epithelial ‘fusion’, individual cells do not actually fuse with one another, but rather cells at the leading edges of apposed tissues form de novo adhesions to create a continuous epithelium. Neural tube closure involves a particular kind of epithelial fusion, in which two distinct tissues need to fuse and remodel: the pseudostratified neuroepithelium (NE) and the squamous surface ectoderm (SE). Initially, these two tissues form a continuous ectodermal layer; however, during neural fold fusion, the continuity of this epithelium is disrupted at the bilateral NE/SE junctions, and new adhesions form between concurring epithelia from each side. Remodelling then generates the closed neural tube covered by the future epidermis (Figure 1). Cellular protrusions are often observed prior to apposition at the onset of epithelial fusion events (Pai et al., 2012). It has long been known that membrane ruffles are present at the edges of apposed neural folds during neural tube closure in amphibians (Mak, 1978), birds (Bancroft and Bellairs, 1975; Schoenwolf, 1979), and mammals (Geelen and Langman, 1979; Waterman, 1976) (Figure 1). Recently, filopodia have been observed at the neural fold tips in mice (Massarwa and Niswander, 2013; Pyrgaki et al., 2010) and in ascidians (Ogura et al., 2011), together with F-actin enrichment along the NE/SE boundary (Hashimoto et al., 2015; Ogura et al., 2011). Early morphological studies in mice found that the initial contact between neural folds in the midbrain and hindbrain regions is made by SE cells, from which cellular protrusions emanate, whereas at the forebrain level initial contact is made by NE cells (Geelen and Langman, 1977; 1979). In chick, during cranial neurulation the SE and NE layers contact at the same time, but in the spinal region this first contact is made by SE cells (Schoenwolf, 1979), and in frog neurulation the SE closes first, and this closure is actually uncoupled from NE closure, which occurs later (Davidson and Keller, 1999). In mouse spinal neural tube closure, however, the cell type of origin of the protrusive cells and initial contact point have not been previously identified. Moreover, whether these protrusions are required for vertebrate neural tube closure at any level of the body axis is unknown.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig1-v1.jpg)
 
-**Figure 1.:** The apposing neural folds exhibit cell protrusions from their tips (left), the neural folds then undergo fusion (middle), and the two epithelia remodel to generate a closed neural tube covered by SE (right).DOI: http://dx.doi.org/10.7554/eLife.13273.003
+**Figure 1.:** The apposing neural folds exhibit cell protrusions from their tips (left), the neural folds then undergo fusion (middle), and the two epithelia remodel to generate a closed neural tube covered by SE (right).
 
 Small GTPases of the Rho family are ubiquitously expressed molecular switches that cycle between active (GTP-bound) and inactive (GDP-bound) states and have a pivotal role in linking extracellular signals with several specific downstream effectors. In particular, Rac1 and Cdc42 are well-known regulators of the actin cytoskeleton that drives cellular protrusion. Rac1 induces the formation of the branched actin networks that underlie lamellipodia and membrane ruffles, and Cdc42 drives the assembly of unbranched actin bundles that form filopodia (Heasman and Ridley, 2008; Ridley, 2011). Even though the specific roles of the different Rho-GTPases were initially described using constitutively active and/or dominant negative forms, as well as pharmacological approaches, these techniques were later recognised to create limitations, owing to issues with specificity and dosage control. Conditional gene targeting has subsequently become the preferred method for studying Rho GTPase function in vivo in mammals, particularly mice (Wang and Zheng, 2007).
 
@@ -41,57 +41,330 @@ Here, we describe the formation of different types of protrusions at the edges o
 
 ## Results
 
-## Varying morphology of cell protrusions as spinal neural tube closure progresses
+### Varying morphology of cell protrusions as spinal neural tube closure progresses
 
-Membrane protrusions at the tips of the mouse neural folds have been described using both transmission electronic microscopy (TEM) (
+Membrane protrusions at the tips of the mouse neural folds have been described using both transmission electronic microscopy (TEM) (Geelen and Langman, 1979) and scanning electronic microscopy (SEM) (Waterman, 1976). TEM provides very detailed imaging of both the cellular protrusions and the cells they emanate from. However, the sectional views obtained with TEM do not allow for a three-dimensional analysis of protrusive morphology. We therefore initially chose to describe the protrusive activity in the mouse spinal neural folds using SEM. We observed elaborate membrane protrusions at the point of fold apposition throughout spinal neurulation, and these protrusions were found to vary qualitatively as neurulation progressed (Figure 2). At the onset of neural tube closure (somite-stage (ss)7), protrusions consisted mainly of long, finger-like filopodia (Figure 2A). As neurulation progressed (e.g. ss12), we observed a mixture of filopodia and ruffles at the spinal fusion point (Figure 2B). By late spinal neurulation stages (from ss24 onwards), membrane ruffles only were observed, devoid of filopodial extensions (Figure 2C). In some cases, cell protrusions were seen not only at the fold apposition point, but also along the edges of both open neural folds (Figure 2C and Figure 2—figure supplement 1). For consistency in the analysis between different embryos, we have focussed our analysis of protrusion types solely on the activity seen at the fold apposition point (for further details of protrusive analysis, see 'Materials and methods' section and Figure 2—figure supplements 2 and 3).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig2-v1.jpg)
 
-**Figure 2.:** (A–C) SEMs of ss7 (A), ss12 (B), and ss24 (C) embryos. The point of spinal neural fold apposition exhibits filopodia at ss7, filopodia and ruffles at ss12 and membrane ruffles at ss24. Note the presence of ruffles at intervals along the edges of the PNP neural folds (Ci, arrows). At least 10 different embryos were analysed. Scale bars: 100 µm (A, B, C), 20 µm (Ai, Ci), 10 µm (Aii, Bi, Cii), and 5 µm (Bii).DOI: http://dx.doi.org/10.7554/eLife.13273.004
+**Figure 2.:** (A–C) SEMs of ss7 (A), ss12 (B), and ss24 (C) embryos. The point of spinal neural fold apposition exhibits filopodia at ss7, filopodia and ruffles at ss12 and membrane ruffles at ss24. Note the presence of ruffles at intervals along the edges of the PNP neural folds (Ci, arrows). At least 10 different embryos were analysed. Scale bars: 100 µm (A, B, C), 20 µm (Ai, Ci), 10 µm (Aii, Bi, Cii), and 5 µm (Bii).
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** Dorsal view of the PNP of the same embryo depicted in Figure 2C, showing membrane ruffles (arrows) on the edges of both neural folds. Anterior is top left, posterior is bottom right. Note also membrane blebs present on the apical surface of the NE, as described (Waterman, 1976). Scale bar: 20 µm.DOI: http://dx.doi.org/10.7554/eLife.13273.005
+**Figure 2—figure supplement 1.:** Dorsal view of the PNP of the same embryo depicted in Figure 2C, showing membrane ruffles (arrows) on the edges of both neural folds. Anterior is top left, posterior is bottom right. Note also membrane blebs present on the apical surface of the NE, as described (Waterman, 1976). Scale bar: 20 µm.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** Ruffles, in which membrane ruffles without any filopodia protruding from them are the main or predominant type of protrusion observed. Ruffles and Filopodia, in which a mixture of the two types of protrusions are observed, sometimes with filopodia or microspikes emanating from the edges of ruffles. Filopodia, in which filopodia are the main or predominant type of protrusion observed. Absent, in which no or very few incipient protrusions are observed. Scale bar: 10 µm.DOI: http://dx.doi.org/10.7554/eLife.13273.006
+**Figure 2—figure supplement 2.:** Ruffles, in which membrane ruffles without any filopodia protruding from them are the main or predominant type of protrusion observed. Ruffles and Filopodia, in which a mixture of the two types of protrusions are observed, sometimes with filopodia or microspikes emanating from the edges of ruffles. Filopodia, in which filopodia are the main or predominant type of protrusion observed. Absent, in which no or very few incipient protrusions are observed. Scale bar: 10 µm.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig2-figsupp3-v1.jpg)
 
-**Figure 2—figure supplement 3.:** There is a significant difference between embryos at the onset of spinal neurulation (ss6-10), with filopodia being predominant here, and in later stages embryos being replaced by ruffles only or ruffles and filopodia (**p=0.00011 and p=0.00000 for comparison with ss15-22 and ss23-30, respectively). The percentage of embryos displaying ruffles only increases further at the end of spinal neurulation (ss23-30), but this difference is not statistically significant when compared to ss15-22 embryos (p=0.21169). A – Absent or incipient protrusions, F – Filopodia only (or predominantly), RF – mixture of Ruffles and Filopodia (or filopodia emanating from ruffles), R – Ruffles only (or predominantly).DOI: http://dx.doi.org/10.7554/eLife.13273.007
+**Figure 2—figure supplement 3.:** There is a significant difference between embryos at the onset of spinal neurulation (ss6-10), with filopodia being predominant here, and in later stages embryos being replaced by ruffles only or ruffles and filopodia (**p=0.00011 and p=0.00000 for comparison with ss15-22 and ss23-30, respectively). The percentage of embryos displaying ruffles only increases further at the end of spinal neurulation (ss23-30), but this difference is not statistically significant when compared to ss15-22 embryos (p=0.21169). A – Absent or incipient protrusions, F – Filopodia only (or predominantly), RF – mixture of Ruffles and Filopodia (or filopodia emanating from ruffles), R – Ruffles only (or predominantly).
 
-## Targeting Rho GTPases in the NE and SE during spinal neurulation
+### Targeting Rho GTPases in the NE and SE during spinal neurulation
 
-Rac1 and Cdc42 are small Rho GTPases that regulate the cytoskeleton, particularly the actin networks that underlie the formation of lamellipodia/ruffles and filopodia, respectively (
+Rac1 and Cdc42 are small Rho GTPases that regulate the cytoskeleton, particularly the actin networks that underlie the formation of lamellipodia/ruffles and filopodia, respectively (Heasman and Ridley, 2008; Ridley, 2011). Knock-outs of both Rac1 and Cdc42 are embryonic lethal before neurulation (Chen et al., 2000; Sugihara et al., 1998), and therefore, analysing their role in neural tube closure required the generation of conditional knock-out mice. We initially chose to conditionally ablate these GTPases by recombining floxed alleles of either Rac1 or Cdc42 with Cre recombinase expressed under the control of the Pax3 promoter. Pax3 is a transcription factor expressed in the dorsal-most cells of the developing neural plate and neural tube from early neurulation stages (embryonic day (E)8.5) (Goulding et al., 1991 and Figure 3—figure supplement 1). To confirm effective Cre-driven recombination at the appropriate tissues and stages, we crossed Pax3Cre/+ mice (Engleka et al., 2005) with a homozygous ROSA26-EYFP reporter line (Srinivas et al., 2001). As expected, YFP was expressed in the dorsal NE from E8.5 onwards (Figure 3A,B), with some YFP-expressing cells also detected ventral to the Pax3 expression domain, consistent with recent findings (Moore et al., 2013). Surprisingly, however, at neurulation stages later than ss20, we also detected YFP expression in cells of the dorsal SE, mainly those directly in contact with the NE of the open neural folds (Figure 3B). In confirmation of their SE identity, we found that these cells robustly express E-cadherin, whereas Pax3 was expressed only at very low intensity, or not at all (Figure 3—figure supplement 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig3-v1.jpg)
 
-**Figure 3.:** (A, B) Pax3Cre-driven recombination in the dorsal neural folds and neural tube, detected from E8.5 by direct YFP-reporter expression (A), and by immunofluorescence in transverse sections of the closing neural tube at E9.5 (B). After ss20, recombination is also detected in the dorsal SE (red arrows), but not at earlier stages (red crosses). Note also recombination in cells of the ventral NE (red arrowheads; see also Figure 3—figure supplement 1). At least three different embryos were analysed for each stage. (C, D) Pax3Cre-Rac1 mutants display open spina bifida at E11.5 (C, white arrowheads and inset, quantified in Table 1) and delayed PNP closure from ss24-27 onwards (D, **p<0.001 – see Figure 3—source data 1 for raw values and statistical details). (E, F) SEMs of the PNP fusion point of control embryos show predominantly ruffles and filopodia at ss15-22 and ruffles at ss23-30, whereas Pax3Cre-Rac1 mutants show ruffles and filopodia at ss15-22 and absent protrusions at ss23-30 (E, quantified in F, p=0.29604 for ss15-22 and **p=0.0002 for ss23-30). A – Absent or incipient protrusions, F – Filopodia only (or predominantly), RF – mixture of Ruffles and Filopodia (or filopodia emanating from ruffles), R – Ruffles only (or predominantly). Scale bars: 100 µm (A and B), 1 mm (C) and 10 µm (E).DOI: http://dx.doi.org/10.7554/eLife.13273.00810.7554/eLife.13273.009Figure 3—source data 1.Figure 3D.DOI: http://dx.doi.org/10.7554/eLife.13273.009
+**Figure 3.:** (A, B) Pax3Cre-driven recombination in the dorsal neural folds and neural tube, detected from E8.5 by direct YFP-reporter expression (A), and by immunofluorescence in transverse sections of the closing neural tube at E9.5 (B). After ss20, recombination is also detected in the dorsal SE (red arrows), but not at earlier stages (red crosses). Note also recombination in cells of the ventral NE (red arrowheads; see also Figure 3—figure supplement 1). At least three different embryos were analysed for each stage. (C, D) Pax3Cre-Rac1 mutants display open spina bifida at E11.5 (C, white arrowheads and inset, quantified in Table 1) and delayed PNP closure from ss24-27 onwards (D, **p<0.001 – see Figure 3—source data 1 for raw values and statistical details). (E, F) SEMs of the PNP fusion point of control embryos show predominantly ruffles and filopodia at ss15-22 and ruffles at ss23-30, whereas Pax3Cre-Rac1 mutants show ruffles and filopodia at ss15-22 and absent protrusions at ss23-30 (E, quantified in F, p=0.29604 for ss15-22 and **p=0.0002 for ss23-30). A – Absent or incipient protrusions, F – Filopodia only (or predominantly), RF – mixture of Ruffles and Filopodia (or filopodia emanating from ruffles), R – Ruffles only (or predominantly). Scale bars: 100 µm (A and B), 1 mm (C) and 10 µm (E).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** (A, B) Transverse sections through the E9.5 PNP (>ss20) of Pax3Cre-YFP embryos showing immunolocalisation of YFP and E-cadherin (A) and Pax3 protein (B). Note co-localisation of E-cadherin and YFP in (A). The YFP expression domain, which includes SE, dorsal NE, and scattered ventral NE cells, appears more extensive than the Pax3 expression domain, which is confined to dorsal NE (B). Minimum of three embryos analysed. See also Figure 3B. Scale bars: 100 µm.DOI: http://dx.doi.org/10.7554/eLife.13273.010
+**Figure 3—figure supplement 1.:** (A, B) Transverse sections through the E9.5 PNP (>ss20) of Pax3Cre-YFP embryos showing immunolocalisation of YFP and E-cadherin (A) and Pax3 protein (B). Note co-localisation of E-cadherin and YFP in (A). The YFP expression domain, which includes SE, dorsal NE, and scattered ventral NE cells, appears more extensive than the Pax3 expression domain, which is confined to dorsal NE (B). Minimum of three embryos analysed. See also Figure 3B. Scale bars: 100 µm.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** (A) Whole-mount in situ hybridisation with sense and antisense RNA probes against mouse Rac1 exons 4 and 5 show specificity of the antisense probe used. (B) Pax3Cre-Rac1 mutants show Rac1 depletion in the dorsal NE (asterisks) and SE (arrows), consistent with the findings of reporter expression using the Pax3Cre line (Figure 3B). Scale bars: 500 µm (A) and 200 µm (B).DOI: http://dx.doi.org/10.7554/eLife.13273.011
+**Figure 3—figure supplement 2.:** (A) Whole-mount in situ hybridisation with sense and antisense RNA probes against mouse Rac1 exons 4 and 5 show specificity of the antisense probe used. (B) Pax3Cre-Rac1 mutants show Rac1 depletion in the dorsal NE (asterisks) and SE (arrows), consistent with the findings of reporter expression using the Pax3Cre line (Figure 3B). Scale bars: 500 µm (A) and 200 µm (B).
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig3-figsupp3-v1.jpg)
 
-**Figure 3—figure supplement 3.:** Transverse sections, stained with haematoxylin and eosin, through the PNP of E9.5 embryos. Pax3Cre-Rac1 conditional mutants form dorsolateral hinge points (arrowheads) during spinal neurulation, similar to Pax3Cre-Con embryos (n = 3 for each group), suggesting that faulty neural fold bending is unlikely to account for the neural tube defects in these mutant embryos. Scale bar: 100 µm.DOI: http://dx.doi.org/10.7554/eLife.13273.012
+**Figure 3—figure supplement 3.:** Transverse sections, stained with haematoxylin and eosin, through the PNP of E9.5 embryos. Pax3Cre-Rac1 conditional mutants form dorsolateral hinge points (arrowheads) during spinal neurulation, similar to Pax3Cre-Con embryos (n = 3 for each group), suggesting that faulty neural fold bending is unlikely to account for the neural tube defects in these mutant embryos. Scale bar: 100 µm.
 
 ![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig3-figsupp4-v1.jpg)
 
-**Figure 3—figure supplement 4.:** Transverse sections through the recently closed neural tube of E9.5 embryos showing actin (phalloidin staining), and β-catenin and E-cadherin immunolocalisation. Pax3Cre-Rac1 conditional mutants show a closely similar distribution of all these proteins (see insets) in both the targeted areas (dorsal NE and dorsal midline SE; above dashed lines) and non-targeted areas (below dashed lines). This includes apical actin accumulation in the NE (top and bottom panels; n = 3 for phalloidin) β-catenin in both NE and SE (top panel; n = 3), and E-cadherin in SE (bottom panel; n = 2). Scale bar: 50 µm.DOI: http://dx.doi.org/10.7554/eLife.13273.013
+**Figure 3—figure supplement 4.:** Transverse sections through the recently closed neural tube of E9.5 embryos showing actin (phalloidin staining), and β-catenin and E-cadherin immunolocalisation. Pax3Cre-Rac1 conditional mutants show a closely similar distribution of all these proteins (see insets) in both the targeted areas (dorsal NE and dorsal midline SE; above dashed lines) and non-targeted areas (below dashed lines). This includes apical actin accumulation in the NE (top and bottom panels; n = 3 for phalloidin) β-catenin in both NE and SE (top panel; n = 3), and E-cadherin in SE (bottom panel; n = 2). Scale bar: 50 µm.
 
 ![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig3-figsupp5-v1.jpg)
 
-**Figure 3—figure supplement 5.:** (A) Pax3Cre-Rac1 mutant embryo at E12.5 showing split face (arrows), pools of blood indicating circulation defects, spina bifida (arrowheads), and general embryo discolouration indicating imminent death (quantified in Table 1). Lines in (A) show the approximate levels of the sections shown in (B) (i) and (C) (ii). (B) Histological transverse sections through the trunk at heart level of Pax3Cre-Con and Pax3Cre-Rac1 mutant embryos at E12.5. The mutant embryo has formed a common arterial trunk (CAT) rather than displaying normal outflow tract septation with separate aortic (a) and pulmonary (p) trunks, and displays dorsal root ganglia (DRG) of reduced size (2 embryos analysed per group). (C) Histological transverse sections through the spinal cord at hindlimb bud level of Pax3Cre-Con and Pax3Cre-Rac1 mutant embryos at E12.5. The mutant embryo exhibits dorsal root ganglia (DRG) of reduced size, and an open spinal cord at this level (arrowheads) (two embryos analysed per group). Scale bars: 1 mm (A), 500 µm (B), and 200 µm (C).DOI: http://dx.doi.org/10.7554/eLife.13273.014
+**Figure 3—figure supplement 5.:** (A) Pax3Cre-Rac1 mutant embryo at E12.5 showing split face (arrows), pools of blood indicating circulation defects, spina bifida (arrowheads), and general embryo discolouration indicating imminent death (quantified in Table 1). Lines in (A) show the approximate levels of the sections shown in (B) (i) and (C) (ii). (B) Histological transverse sections through the trunk at heart level of Pax3Cre-Con and Pax3Cre-Rac1 mutant embryos at E12.5. The mutant embryo has formed a common arterial trunk (CAT) rather than displaying normal outflow tract septation with separate aortic (a) and pulmonary (p) trunks, and displays dorsal root ganglia (DRG) of reduced size (2 embryos analysed per group). (C) Histological transverse sections through the spinal cord at hindlimb bud level of Pax3Cre-Con and Pax3Cre-Rac1 mutant embryos at E12.5. The mutant embryo exhibits dorsal root ganglia (DRG) of reduced size, and an open spinal cord at this level (arrowheads) (two embryos analysed per group). Scale bars: 1 mm (A), 500 µm (B), and 200 µm (C).
 
-## Rac1 is required for the late stages of spinal neural tube closure
+### Rac1 is required for the late stages of spinal neural tube closure
 
-When Rac1 was ablated in the Pax3 lineage (confirmed by mRNA in situ hybridisation, see Figure 3—figure supplement 2), 76% of embryos displayed spinal NTDs consisting of either open spina bifida or a curled tail (Figure 3C; Table 1). These defects occurred at a similar frequency in both Pax3Cre/+; Rac1flox/- (21/27) and Pax3Cre/+; Rac1flox/flox (16/22) embryos (p=0.947), and hence these genotypes were combined for further analysis (denoted Pax3Cre-Rac1). In contrast, Pax3Cre/+; Rac1flox/+ and Pax3Cre/+; Rac1+/- control embryos (denoted Pax3Cre-Con), which had conditional or constitutional heterozygous Rac1 loss of function, exhibited only 8% spina bifida, a significantly lower frequency than in Pax3Cre-Rac1 embryos (Figure 3C; Table 1). The third genotype group comprised embryos lacking the Pax3Cre allele, which were either wild-type (floxed) or heterozygous at the Rac1 locus (denoted Non-Cre). Only 1/80 (1%) of these embryos exhibited spina bifida, not significantly different from the frequency in Pax3Cre-Con embryos (Table 1).10.7554/eLife.13273.015Table 1.Conditional genetic analysis of the roles of Rac1 and Cdc42.DOI: http://dx.doi.org/10.7554/eLife.13273.015CrossGenotypeAbbreviated genotypeEmbryonic DayPax3Cre/+;Rac1f/+ X Rac1f/-TotalExencephalySpina bifida and/or curly tailPax3+/+;Rac1f/f, f/+. f/- or +/-Non-Cre10.5 – 13.5801 (1%)1 (1%)Pax3Cre/+;Rac1f/+ or +/-Pax3Cre-Con10.5 – 13.5393 (8%)2 (5%)Pax3Cre/+;Rac1f/f or f/-Pax3Cre-Rac110.5 – 13.5494 (8%)37 (76%)**TotalDead or dyingSplit facePax3+/+;Rac1f/f, f/+. f/- or +/-Non-Cre13.54300Pax3Cre/+;Rac1f/+ or +/-Pax3Cre-Con13.51700Pax3Cre/+;Rac1f/f or f/-Pax3Cre-Rac113.52118 (86%)**21 (100%)**Pax3Cre/+;Cdc42f/+ X Cdc42f/-TotalExencephalySpina bifida and/or curly tailPax3+/+;Cdc42f/f, f/+. f/- or +/-Non-Cre10.5 – 13.55200Pax3Cre/+;Cdc42f/+ or +/-Pax3Cre-Con10.5 – 13.51700Pax3Cre/+;Cdc42f/f or f/-Pax3Cre-Cdc4210.5 – 13.52300TotalDead or dyingSplit facePax3+/+;Cdc42f/f, f/+. f/- or +/-Non-Cre13.5261 (4%)0Pax3Cre/+;Cdc42f/+ or +/-Pax3Cre-Con13.5600Pax3Cre/+;Cdc42f/f or f/-Pax3Cre-Cdc4213.51110 (91%)**11 (100%)**Grhl3Cre/+;Rac1f/+ X Rac1f/f or f/-TotalExencephalySpina bifida and/or curly tailGrhl3+/+;Rac1f/f, f/+. f/- or +/-Non-Cre10.5 – 13.514101 (<1%)Grhl3Cre/+;Rac1f/+ or +/-Grhl3Cre-Con10.5 – 13.5731 (1%)0Grhl3Cre/+;Rac1f/f or f/-Grhl3Cre-Rac110.5 – 13.54411 (25%)**39 (89%)**TotalUnattached allantoisGrhl3+/+;Rac1f/f, f/+. f/- or +/-Non-Cre9.51341 (<1%)Grhl3Cre/+;Rac1f/+ or +/-Grhl3Cre-Con9.5860Grhl3Cre/+;Rac1f/f or f/-Grhl3Cre-Rac19.56921 (30%)**Grhl3Cre/+;Cdc42f/+ X Cdc42f/fTotalDead or underdevelopedGrhl3+/+;Cdc42f/+Non-Cre9.5 – 10.5160Grhl3Cre/+;Cdc42f/f or f/-Grhl3Cre-Cdc429.5 – 10.51212 (100%)**Nkx1-2CreERT2/+;Rac1f/+ X Rac1f/-TotalExencephalySpina bifida and/or curly tailNkx1-2+/+;Rac1f/f, f/+. f/- or +/-Non-Cre10.5 – 13.55100Nkx1-2CreERT2/+;Rac1f/+ or +/-Nkx1-2Cre-Con10.5 – 13.51600Nkx1-2CreERT2/+;Rac1f/f or f/-Nkx1-2Cre-Rac110.5 – 13.51700**p<0.001 when compared to either Non-Cre or DriverCre-Con.
+When Rac1 was ablated in the Pax3 lineage (confirmed by mRNA in situ hybridisation, see Figure 3—figure supplement 2), 76% of embryos displayed spinal NTDs consisting of either open spina bifida or a curled tail (Figure 3C; Table 1). These defects occurred at a similar frequency in both Pax3Cre/+; Rac1flox/- (21/27) and Pax3Cre/+; Rac1flox/flox (16/22) embryos (p=0.947), and hence these genotypes were combined for further analysis (denoted Pax3Cre-Rac1). In contrast, Pax3Cre/+; Rac1flox/+ and Pax3Cre/+; Rac1+/- control embryos (denoted Pax3Cre-Con), which had conditional or constitutional heterozygous Rac1 loss of function, exhibited only 8% spina bifida, a significantly lower frequency than in Pax3Cre-Rac1 embryos (Figure 3C; Table 1). The third genotype group comprised embryos lacking the Pax3Cre allele, which were either wild-type (floxed) or heterozygous at the Rac1 locus (denoted Non-Cre). Only 1/80 (1%) of these embryos exhibited spina bifida, not significantly different from the frequency in Pax3Cre-Con embryos (Table 1).
+
+**Table 1.**
+ Conditional genetic analysis of the roles of Rac1 and Cdc42.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cross</th>
+      <th>Genotype</th>
+      <th>Abbreviated genotype</th>
+      <th>Embryonic Day</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">Pax3Cre/+;Rac1f/+ X Rac1f/-</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Total</td>
+      <td>Exencephaly</td>
+      <td>Spina bifida and/or curly tail</td>
+    </tr>
+    <tr>
+      <td>Pax3+/+;Rac1f/f, f/+. f/- or +/-</td>
+      <td>Non-Cre</td>
+      <td>10.5 – 13.5</td>
+      <td>80</td>
+      <td>1 (1%)</td>
+      <td>1 (1%)</td>
+    </tr>
+    <tr>
+      <td>Pax3Cre/+;Rac1f/+ or +/-</td>
+      <td>Pax3Cre-Con</td>
+      <td>10.5 – 13.5</td>
+      <td>39</td>
+      <td>3 (8%)</td>
+      <td>2 (5%)</td>
+    </tr>
+    <tr>
+      <td>Pax3Cre/+;Rac1f/f or f/-</td>
+      <td>Pax3Cre-Rac1</td>
+      <td>10.5 – 13.5</td>
+      <td>49</td>
+      <td>4 (8%)</td>
+      <td>37 (76%)**</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Total</td>
+      <td>Dead or dying</td>
+      <td>Split face</td>
+    </tr>
+    <tr>
+      <td>Pax3+/+;Rac1f/f, f/+. f/- or +/-</td>
+      <td>Non-Cre</td>
+      <td>13.5</td>
+      <td>43</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Pax3Cre/+;Rac1f/+ or +/-</td>
+      <td>Pax3Cre-Con</td>
+      <td>13.5</td>
+      <td>17</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Pax3Cre/+;Rac1f/f or f/-</td>
+      <td>Pax3Cre-Rac1</td>
+      <td>13.5</td>
+      <td>21</td>
+      <td>18 (86%)**</td>
+      <td>21 (100%)**</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Pax3Cre/+;Cdc42f/+ X Cdc42f/-</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Total</td>
+      <td>Exencephaly</td>
+      <td>Spina bifida and/or curly tail</td>
+    </tr>
+    <tr>
+      <td>Pax3+/+;Cdc42f/f, f/+. f/- or +/-</td>
+      <td>Non-Cre</td>
+      <td>10.5 – 13.5</td>
+      <td>52</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Pax3Cre/+;Cdc42f/+ or +/-</td>
+      <td>Pax3Cre-Con</td>
+      <td>10.5 – 13.5</td>
+      <td>17</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Pax3Cre/+;Cdc42f/f or f/-</td>
+      <td>Pax3Cre-Cdc42</td>
+      <td>10.5 – 13.5</td>
+      <td>23</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Total</td>
+      <td>Dead or dying</td>
+      <td>Split face</td>
+    </tr>
+    <tr>
+      <td>Pax3+/+;Cdc42f/f, f/+. f/- or +/-</td>
+      <td>Non-Cre</td>
+      <td>13.5</td>
+      <td>26</td>
+      <td>1 (4%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Pax3Cre/+;Cdc42f/+ or +/-</td>
+      <td>Pax3Cre-Con</td>
+      <td>13.5</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Pax3Cre/+;Cdc42f/f or f/-</td>
+      <td>Pax3Cre-Cdc42</td>
+      <td>13.5</td>
+      <td>11</td>
+      <td>10 (91%)**</td>
+      <td>11 (100%)**</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Grhl3Cre/+;Rac1f/+ X Rac1f/f or f/-</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Total</td>
+      <td>Exencephaly</td>
+      <td>Spina bifida and/or curly tail</td>
+    </tr>
+    <tr>
+      <td>Grhl3+/+;Rac1f/f, f/+. f/- or +/-</td>
+      <td>Non-Cre</td>
+      <td>10.5 – 13.5</td>
+      <td>141</td>
+      <td>0</td>
+      <td>1 (&lt;1%)</td>
+    </tr>
+    <tr>
+      <td>Grhl3Cre/+;Rac1f/+ or +/-</td>
+      <td>Grhl3Cre-Con</td>
+      <td>10.5 – 13.5</td>
+      <td>73</td>
+      <td>1 (1%)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Grhl3Cre/+;Rac1f/f or f/-</td>
+      <td>Grhl3Cre-Rac1</td>
+      <td>10.5 – 13.5</td>
+      <td>44</td>
+      <td>11 (25%)**</td>
+      <td>39 (89%)**</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Total</td>
+      <td>Unattached allantois</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Grhl3+/+;Rac1f/f, f/+. f/- or +/-</td>
+      <td>Non-Cre</td>
+      <td>9.5</td>
+      <td>134</td>
+      <td>1 (&lt;1%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Grhl3Cre/+;Rac1f/+ or +/-</td>
+      <td>Grhl3Cre-Con</td>
+      <td>9.5</td>
+      <td>86</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Grhl3Cre/+;Rac1f/f or f/-</td>
+      <td>Grhl3Cre-Rac1</td>
+      <td>9.5</td>
+      <td>69</td>
+      <td>21 (30%)**</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="3">Grhl3Cre/+;Cdc42f/+ X Cdc42f/f</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Total</td>
+      <td>Dead or underdeveloped</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Grhl3+/+;Cdc42f/+</td>
+      <td>Non-Cre</td>
+      <td>9.5 – 10.5</td>
+      <td>16</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Grhl3Cre/+;Cdc42f/f or f/-</td>
+      <td>Grhl3Cre-Cdc42</td>
+      <td>9.5 – 10.5</td>
+      <td>12</td>
+      <td>12 (100%)**</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="4">Nkx1-2CreERT2/+;Rac1f/+ X Rac1f/-</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Total</td>
+      <td>Exencephaly</td>
+      <td>Spina bifida and/or curly tail</td>
+    </tr>
+    <tr>
+      <td>Nkx1-2+/+;Rac1f/f, f/+. f/- or +/-</td>
+      <td>Non-Cre</td>
+      <td>10.5 – 13.5</td>
+      <td>51</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Nkx1-2CreERT2/+;Rac1f/+ or +/-</td>
+      <td>Nkx1-2Cre-Con</td>
+      <td>10.5 – 13.5</td>
+      <td>16</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Nkx1-2CreERT2/+;Rac1f/f or f/-</td>
+      <td>Nkx1-2Cre-Rac1</td>
+      <td>10.5 – 13.5</td>
+      <td>17</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_**p<0.001 when compared to either Non-Cre or DriverCre-Con._
 
 A small percentage of Pax3Cre-Rac1 embryos also developed the cranial NTD exencephaly, but at the same low frequency (8%) as was observed in Pax3Cre-Con embryos (Table 1). This could reflect the predisposition of Pax3 heterozygotes to exencephaly (Dempsey and Trasler, 1983), although this exencephaly frequency was not significantly different from the 1% observed in Non-Cre controls. In any event, the finding of exencephaly in this study is unlikely to be related to the conditional ablation of Rac1.
 
@@ -99,7 +372,7 @@ The open spina bifida lesions in Pax3Cre-Rac1 embryos tended to be small and nev
 
 At ss20-23, we also detected a significant difference in PNP length between Non-Cre and Pax3Cre-Con embryos (Figure 3D). This is consistent with a delay in PNP closure in Pax3 heterozygotes (Auerbach, 1954; Dempsey and Trasler, 1983) and the small percentage of spina bifida observed in these embryos (Table 1).
 
-## Rac1 is required for the formation of ruffles during late stages of neural tube closure
+### Rac1 is required for the formation of ruffles during late stages of neural tube closure
 
 To investigate whether the failure of PNP closure in Pax3Cre-Rac1 embryos was accompanied by a defect in the formation of protrusions at the fold apposition point, we analysed this region by SEM at mid (ss15-22) and late (ss23-30) spinal neurulation. Comparing the types of protrusions formed by Non-Cre and Pax3Cre-Con embryos did not reveal a difference between the two groups (p=0.44). Nonetheless, because Pax3 is known to regulate the cytoskeleton in osteogenic cells, and Rac1 activity is required for this function (Wiggan et al., 2002; Wiggan and Hamel, 2002; Wiggan et al., 2006), we also investigated protrusions in the Pax3 mutant mouse Sp2H, which contains a 32bp deletion in the Pax3 gene (Epstein et al., 1991). No differences were observed between the protrusions of wild-type, heterozygous and Sp2H mutant embryos (data available in doi:10.5061/dryad.rm660). We conclude that Pax3 heterozygosity does not affect protrusion formation; from here onwards, the protrusion analysis utilised a single category of Controls, comprising pooled Non-Cre and Pax3Cre-Con embryos.
 
@@ -107,83 +380,85 @@ Comparing Pax3Cre-Rac1 and control embryos, there was no significant difference 
 
 While it seemed most likely that the neural tube closure defect in Pax3Cre-Rac1 resulted from faulty formation of membrane ruffles, we considered whether conditional deletion of Rac1 might also lead to an earlier defect in neural tube closure, such as NE bending. Failure of dorsolateral bending can cause spina bifida in mice (Ybot-Gonzalez et al., 2007a). Transverse sections through the PNP of these embryos at E9.5 confirmed the presence of normal-appearing hinge points at both midline and dorsolateral positions (Figure 3—figure supplement 3), arguing against a mechanism of spina bifida in Pax3Cre-Rac1 embryos based on NE bending defects. Nevertheless, because Rac1 is required for the formation of adherens junctions (Ehrlich et al., 2002; Kovacs et al., 2002; Yamada and Nelson, 2007), we analysed the localisation of F-actin and β-catenin in the NE of Pax3Cre-Rac1 mutants, as well as E-cadherin in the SE. The distribution of these proteins was found to be closely similar in control and mutant embryos, as well as in both the targeted and non-targeted regions of the NE in mutant embryos (Figure 3—figure supplement 4), thus ruling out an effect of Rac1 knock-out on epithelial stability, which could impair neural tube closure.
 
-## Failure of PNP closure does not lead to defects in protrusive activity
+### Failure of PNP closure does not lead to defects in protrusive activity
 
 To address the question of whether the protrusion defects observed in Pax3Cre-Rac1 embryos are indeed a cause of failure of PNP closure, rather than a consequence of that failure, we chose to analyse the cell protrusive activity in a different mouse mutant with spina bifida. The curly tail (ct) mutant is homozygous for a hypomorphic allele of the transcription factor grainyhead-like-3 (Grhl3) and exhibits spina bifida with 15–20% penetrance (Gustavsson et al., 2007; Ting et al., 2003; van Straaten and Copp, 2001). The size of the spina bifida lesions and the timing of failure of PNP closure in ct/ct embryos are similar to those in Pax3Cre-Rac1 embryos. Furthermore, the PNP defect in ct/ct embryos is known to be caused by a defect of cell proliferation in the hindgut, leading to excessive curvature of the body axis (Brook et al., 1991; Copp et al., 1988), and hence is unlikely to be related to protrusion and fusion events at the neural fold tips.
 
-We collected
+We collected ct/ct embryos at ss24-30 and measured their PNP lengths (Figure 4A and Figure 4—figure supplement 1). For analysis of protrusions, embryos were grouped into two categories: those with PNP lengths above 0.6 mm (large PNP), which are destined to develop spina bifida (Copp, 1985) and those with PNP lengths below 0.4 mm (small PNP) that undergo normal PNP closure. Embryos with intermediate sized PNPs were not included in the analysis (Figure 4—figure supplement 1). The relative proportions of the different types of protrusions did not differ significantly between embryos with large and small PNPs (Figure 4B,C), showing that delay in PNP closure does not cause defects in protrusive activity of cells at the dorsal fusion point.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig4-v1.jpg)
 
-**Figure 4.:** (A) SEMs of E9.5 curly tail embryos showing examples of small and large PNPs (double arrows). (B, C) SEMs of the PNP fusion point of curly tail embryos show either membrane ruffles or ruffles and filopodia at ss23-30 (B, quantified in C). There is no difference in protrusion type or frequency between embryos with small and large PNPs (p=0.71782). Definition of protrusion types as in Figure 3. Scale bars: 100 µm (A) and 10 µm (B).DOI: http://dx.doi.org/10.7554/eLife.13273.016
+**Figure 4.:** (A) SEMs of E9.5 curly tail embryos showing examples of small and large PNPs (double arrows). (B, C) SEMs of the PNP fusion point of curly tail embryos show either membrane ruffles or ruffles and filopodia at ss23-30 (B, quantified in C). There is no difference in protrusion type or frequency between embryos with small and large PNPs (p=0.71782). Definition of protrusion types as in Figure 3. Scale bars: 100 µm (A) and 10 µm (B).
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** curly tail embryos collected at E9.5 and their grouping according to PNP length.DOI: http://dx.doi.org/10.7554/eLife.13273.017
+### Cdc42 is not required in the Pax3 lineage for neural tube closure or protrusion formation
 
-## Cdc42 is not required in the Pax3 lineage for neural tube closure or protrusion formation
-
-The requirement for Rac1 solely at later stages of spinal neural tube closure raises two possibilities. Rac1 might be required for the formation of ruffles that are devoid of filopodia, but not for the combined appearance of ruffles and filopodia. These ruffles without filopodia might be needed only for late spinal NT closure. Alternatively, it is possible that Rac1 is required for neural fold protrusions along the whole spinal axis throughout all NT closure stages, but these protrusions arise on SE cells, and so Rac1-dependency is seen only at late neurulation stages, when the Pax3 lineage becomes targeted in the SE as well as the NE (
+The requirement for Rac1 solely at later stages of spinal neural tube closure raises two possibilities. Rac1 might be required for the formation of ruffles that are devoid of filopodia, but not for the combined appearance of ruffles and filopodia. These ruffles without filopodia might be needed only for late spinal NT closure. Alternatively, it is possible that Rac1 is required for neural fold protrusions along the whole spinal axis throughout all NT closure stages, but these protrusions arise on SE cells, and so Rac1-dependency is seen only at late neurulation stages, when the Pax3 lineage becomes targeted in the SE as well as the NE (Figure 3B and Figure 3—figure supplement 1). To address the first hypothesis, and to test a possible candidate for the formation of filopodia, we generated conditional Cdc42 mutants in the Pax3 cell lineage (Pax3Cre-Cdc42). None of the Pax3Cre-Cdc42 embryos showed NTDs (Table 1). Moreover, Pax3Cre-Cdc42 embryos collected during neurulation between ss16 and ss27 resembled control litter mates in PNP length (Figure 5A). The proportions of protrusion types at mid (ss15-22) and late (ss23-30) neurulation did not differ between Pax3Cre-Cdc42 and control embryos (Figure 5B,C). These results suggest that the protrusions seen at earlier neurulation stages are either regulated independently of both Rac1 and Cdc42, or may emanate from SE rather than NE cells.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig5-v1.jpg)
 
-**Figure 5.:** (A) Pax3Cre-Cdc42 mutants show a normal rate of PNP closure from ss16-27 (see Figure 5—source data 1 for raw values and statistical details). (B, C) SEMs of the PNP fusion point of control and Pax3Cre-Cdc42 embryos show no difference in the types of protrusions formed at ss15-22 and ss23-30 (B, quantified in C –p=0.0.1533 and p=0.36722 for ss15-22 and ss23-30, respectively). This is consistent with the lack of spina bifida seen in Pax3Cre-Cdc42 mutants (see Table 1). Definition of protrusion types as in Figure 3. Scale bar: 10 µm (B).DOI: http://dx.doi.org/10.7554/eLife.13273.01810.7554/eLife.13273.019Figure 5—source data 1.Figure 5A.DOI: http://dx.doi.org/10.7554/eLife.13273.019
+**Figure 5.:** (A) Pax3Cre-Cdc42 mutants show a normal rate of PNP closure from ss16-27 (see Figure 5—source data 1 for raw values and statistical details). (B, C) SEMs of the PNP fusion point of control and Pax3Cre-Cdc42 embryos show no difference in the types of protrusions formed at ss15-22 and ss23-30 (B, quantified in C –p=0.0.1533 and p=0.36722 for ss15-22 and ss23-30, respectively). This is consistent with the lack of spina bifida seen in Pax3Cre-Cdc42 mutants (see Table 1). Definition of protrusion types as in Figure 3. Scale bar: 10 µm (B).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Pax3Cre-Cdc42 mutant embryo at E12.5 showing split face (arrows), pools of blood indicating circulation defects, and general embryo discoloration indicating imminent death (quantified in Table 1). Lines in (A) show the approximate levels of the sections shown in (B) (i) and (C) (ii). (B) Histological transverse sections through the trunk at heart level of Pax3Cre-Con and Pax3Cre-Cdc42 mutant embryos at E12.5. The mutant embryo has formed a common arterial trunk (CAT) rather than displaying normal outflow tract septation with separate aortic (a) and pulmonary (p) trunks, exhibits dorsal root ganglia (DRG) of reduced size and occlusion of the dorsal part of the neural tube lumen (*) (two embryos analysed per group). (C) Histological transverse sections through the spinal cord at hindlimb bud level of Pax3Cre-Con and Pax3Cre-Cdc42 embryos at E12.5. The mutant embryo exhibits dorsal root ganglia (DRG) of reduced size and occlusion of the dorsal part of the neural tube lumen (*). Pax3Cre-Rac1 mutants show an open spinal cord at this level (arrowheads) (two embryos analysed per group). Scale bars: 1 mm (A), 500 µm (B), and 200 µm (C).DOI: http://dx.doi.org/10.7554/eLife.13273.020
+**Figure 5—figure supplement 1.:** (A) Pax3Cre-Cdc42 mutant embryo at E12.5 showing split face (arrows), pools of blood indicating circulation defects, and general embryo discoloration indicating imminent death (quantified in Table 1). Lines in (A) show the approximate levels of the sections shown in (B) (i) and (C) (ii). (B) Histological transverse sections through the trunk at heart level of Pax3Cre-Con and Pax3Cre-Cdc42 mutant embryos at E12.5. The mutant embryo has formed a common arterial trunk (CAT) rather than displaying normal outflow tract septation with separate aortic (a) and pulmonary (p) trunks, exhibits dorsal root ganglia (DRG) of reduced size and occlusion of the dorsal part of the neural tube lumen (*) (two embryos analysed per group). (C) Histological transverse sections through the spinal cord at hindlimb bud level of Pax3Cre-Con and Pax3Cre-Cdc42 embryos at E12.5. The mutant embryo exhibits dorsal root ganglia (DRG) of reduced size and occlusion of the dorsal part of the neural tube lumen (*). Pax3Cre-Rac1 mutants show an open spinal cord at this level (arrowheads) (two embryos analysed per group). Scale bars: 1 mm (A), 500 µm (B), and 200 µm (C).
 
-## Rac1 and Cdc42 are required in the Pax3 lineage for development of neural crest-derived structures
+### Rac1 and Cdc42 are required in the Pax3 lineage for development of neural crest-derived structures
 
 In view of the different effects on neural fold protrusions that we observed when deleting Rac1 and Cdc42 in the Pax3 cell lineage, it was important to confirm that Pax3Cre-Rac1 and Pax3Cre-Cdc42 embryos both developed expected phenotypes later in development. These small GTPases are required in the neural crest for proper development of structures including craniofacial primordia, dorsal root ganglia, and the cardiac outflow tract septum (Fuchs et al., 2009; Thomas et al., 2010). The Pax3 lineage encompasses the neural crest population (Engleka et al., 2005), and therefore defects in neural crest derivatives were expected in both Pax3Cre-Rac1 and Pax3Cre-Cdc42 embryos. Embryos of both genotypes were dead by E13.5 (Table 1), as expected in cases of defective outflow tract septation (Conway et al., 1997). Moreover, both displayed a split face phenotype from E11.5 onwards, consistent with a defect in neural crest-related craniofacial development (Table 1, Figure 3—figure supplement 5A and Figure 5—figure supplement 1A). Transverse sections at the heart level of E12.5 embryos confirmed the absence of an outflow tract septum in these embryos, as well as dorsal root ganglia that were severely reduced in size (Figure 3—figure supplement 5B and Figure 5—figure supplement 1B). Transverse sections further down the spinal cord at the hindlimb level, where spina bifida occurs in Pax3Cre-Rac1 embryos, also showed severely reduced dorsal root ganglia (Figure 3—figure supplement 5C and Figure 5—figure supplement 1C), thus confirming effective knockdown of Rac1 and Cdc42 protein throughout the spinal cord. Additionally, Pax3Cre-Cdc42 embryos displayed an apparent disorganisation of the dorsal neural tube, including occlusion of the lumen (Figure 5—figure supplement 1C), consistent with a role described for Cdc42 in the polarity and organisation of the layers in the mouse brain (Cappello et al., 2006).
 
-## Rac1 is required in the SE, but not in the NE, for neural tube closure and protrusion formation
+### Rac1 is required in the SE, but not in the NE, for neural tube closure and protrusion formation
 
 To test the hypothesis that the protrusions observed at the neural fold fusion point emanate from SE cells, we generated a conditional knock-out for Rac1 in this tissue by crossing Rac1 floxed mice with mice expressing Cre under the control of Grhl3 (see Materials and Methods). Grhl3 is expressed predominantly in the SE during early neurulation (Gustavsson et al., 2007; Ting et al., 2003), and Grhl3Cre has been used as an early SE driver (Camerer et al., 2010; Massarwa and Niswander, 2013; Ray and Niswander, 2016). Grhl3Cre-Rac1 mice were generated previously and found to have NTDs, including highly penetrant spina bifida, but cell protrusion analysis was not performed (Camerer et al., 2010).
 
-We confirmed that Grhl3Cre drives recombination throughout the SE from E8.5, and continuing at all stages of neurulation. We also detected recombination in a small proportion of scattered neuroepithelial cells (
+We confirmed that Grhl3Cre drives recombination throughout the SE from E8.5, and continuing at all stages of neurulation. We also detected recombination in a small proportion of scattered neuroepithelial cells (Figure 6A,B), consistent with reported expression of Grhl3 in the neuroepithelium at E9 (Gustavsson et al., 2007). Rac1 ablation in Grhl3Cre-Rac1 embryos was confirmed by mRNA in situ hybridisation (Figure 6—figure supplement 1). A proportion (30%) of Grhl3Cre-Rac1 embryos displayed failure of chorioallantoic fusion (Table 1; data not shown), a phenotype not previously described in these mice, which was accompanied by defects of growth and axial rotation that can result from such failure (Morin-Kensicki et al., 2006; Saunders et al., 2004; Stumpo et al., 2004). These embryos were excluded from further analysis. Most of the remaining Grhl3Cre-Rac1 embryos had cranial and/or spinal NTDs: 25% exhibited exencephaly and 89% had spina bifida (Table 1). The size of the spina bifida lesions in these embryos was larger than that observed in Pax3Cre-Rac1 embryos, usually starting rostral to the hindlimb bud (Figure 6C), which suggested an earlier failure of PNP closure. To examine this possibility, we measured the PNP of embryos at ss16-27 and detected a significant delay in PNP closure in Grhl3Cre-Rac1 embryos from ss20-23, compared with Grhl3Cre-Con and NonCre-Con embryos (Figure 6D). This confirmed that Grhl3Cre-Rac1 embryos fail to close their PNP earlier than Pax3Cre-Rac1 mutants.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig6-v1.jpg)
 
-**Figure 6.:** (A, B) Grhl3Cre-driven recombination in the SE is detected from E8.5 by direct YFP-reporter expression (A), as well as by immunofluorescence in transverse sections of the closing neural tube (B, red arrows). Note additional recombination in randomly scattered cells in the NE (B, red arrowheads) and other tissues. At least three different embryos were analysed for each stage. (C, D) Grhl3Cre-Rac1 mutants display open spina bifida at E11.5 (C, between white arrowheads and inset, quantified in Table 1) and delayed PNP closure from ss20-23 (D, **p<0.001 – see Figure 6—source data 1 for raw values and statistical details). (E–H) SEMs of the PNP fusion point of Grhl3Cre-Rac1 embryos show protrusive activity that differs from control embryos. Filopodia without ruffles are observed in Grhl3Cre-Rac1 embryos, especially at ss15-22, and membrane ruffles without filopodia are never detected (E, quantified in F, p=0.27024 for ss15-22 and *p=0.02735 for ss23-30). Definition of protrusion types as in Figure 3. In the cases where filopodia where present (RF and F categories), these were present in higher number (G) and were longer (H) in Grhl3Cre-Rac1 embryos when compared to Controls (*p<0.05, **p<0.001, see Figure 6—source data 2 for raw values and statistical details). Scale bars: 100 µm (A and B), 1 mm (C) and 10 µm (E).DOI: http://dx.doi.org/10.7554/eLife.13273.02110.7554/eLife.13273.022Figure 6—source data 1.Figure 6D.DOI: http://dx.doi.org/10.7554/eLife.13273.02210.7554/eLife.13273.023Figure 6—source data 2.Figure 6G,H.DOI: http://dx.doi.org/10.7554/eLife.13273.023
+**Figure 6.:** (A, B) Grhl3Cre-driven recombination in the SE is detected from E8.5 by direct YFP-reporter expression (A), as well as by immunofluorescence in transverse sections of the closing neural tube (B, red arrows). Note additional recombination in randomly scattered cells in the NE (B, red arrowheads) and other tissues. At least three different embryos were analysed for each stage. (C, D) Grhl3Cre-Rac1 mutants display open spina bifida at E11.5 (C, between white arrowheads and inset, quantified in Table 1) and delayed PNP closure from ss20-23 (D, **p<0.001 – see Figure 6—source data 1 for raw values and statistical details). (E–H) SEMs of the PNP fusion point of Grhl3Cre-Rac1 embryos show protrusive activity that differs from control embryos. Filopodia without ruffles are observed in Grhl3Cre-Rac1 embryos, especially at ss15-22, and membrane ruffles without filopodia are never detected (E, quantified in F, p=0.27024 for ss15-22 and *p=0.02735 for ss23-30). Definition of protrusion types as in Figure 3. In the cases where filopodia where present (RF and F categories), these were present in higher number (G) and were longer (H) in Grhl3Cre-Rac1 embryos when compared to Controls (*p<0.05, **p<0.001, see Figure 6—source data 2 for raw values and statistical details). Scale bars: 100 µm (A and B), 1 mm (C) and 10 µm (E).
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** Grhl3Cre-Rac1 mutants show Rac1 depletion in the SE (arrows), as well as a generalised reduction in signal, consistent with the findings of reporter expression using these Cre lines (Figure 6A,B). Scale bar: 200 µm.DOI: http://dx.doi.org/10.7554/eLife.13273.024
+**Figure 6—figure supplement 1.:** Grhl3Cre-Rac1 mutants show Rac1 depletion in the SE (arrows), as well as a generalised reduction in signal, consistent with the findings of reporter expression using these Cre lines (Figure 6A,B). Scale bar: 200 µm.
 
 ![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig6-figsupp2-v1.jpg)
 
-**Figure 6—figure supplement 2.:** Transverse sections, stained with haematoxylin and eosin, through the PNP of E9.5 embryos. Grhl3Cre-Rac1 conditional mutants form dorsolateral hinge points (arrowheads) during spinal neurulation, similar to Grhl3Cre-Con embryos (n = 3 for each group), suggesting that faulty neural fold bending is unlikely to account for the neural tube defects in these mutant embryos. Scale bars: 100 µm.DOI: http://dx.doi.org/10.7554/eLife.13273.025
+**Figure 6—figure supplement 2.:** Transverse sections, stained with haematoxylin and eosin, through the PNP of E9.5 embryos. Grhl3Cre-Rac1 conditional mutants form dorsolateral hinge points (arrowheads) during spinal neurulation, similar to Grhl3Cre-Con embryos (n = 3 for each group), suggesting that faulty neural fold bending is unlikely to account for the neural tube defects in these mutant embryos. Scale bars: 100 µm.
 
 Analysis of transverse sections through the PNP at E9.5 revealed normal-appearing dorsolateral hinge points in Grhl3Cre-Rac1 embryos, thus arguing against a neural plate bending defect as the underlying cause for the spina bifida phenotype (Figure 6—figure supplement 2).
 
 We next analysed the protrusive activity at the PNP fusion point in Grhl3Cre-Rac1 embryos. Despite only reaching statistically significant difference from controls at ss23-30, Grhl3Cre-Rac1 embryos never showed membrane ruffles at any stage analysed, and also showed an increased occurrence of filopodia without associated ruffles (Figure 6E,F). Furthermore, the density and length of filopodia in mutants appeared increased (Figure 4E), and this was confirmed by measuring the number of filopodia present around the point of fusion, as well as their length (see 'Materials and methods' for details) (Figure 6G,H). These results indicate that, like in late neurulation, cell protrusions emanate from SE cells during earlier neurulation and are at least partly regulated by Rac1.
 
-## Rac1 is not required in the NE for successful neural tube closure
+### Rac1 is not required in the NE for successful neural tube closure
 
-The analysis of Pax3Cre-Rac1 and Grhl3Cre-Rac1 embryos suggested that Rac1 is required in the SE for the regulation of membrane protrusions: the implication being that the protrusions emanate from SE not NE cells. However, since Cre recombination also occurred in dorsal NE cells in Pax3Cre lines, and in scattered NE cells in Grhl3Cre lines, we could not rule out a role of Rac1 in the NE. To resolve this issue, we performed a further experiment to test specifically whether Rac1 function in NE cells may mediate cell protrusions and neural tube closure. We used Nkx1-2Cre-ERT2 (
+The analysis of Pax3Cre-Rac1 and Grhl3Cre-Rac1 embryos suggested that Rac1 is required in the SE for the regulation of membrane protrusions: the implication being that the protrusions emanate from SE not NE cells. However, since Cre recombination also occurred in dorsal NE cells in Pax3Cre lines, and in scattered NE cells in Grhl3Cre lines, we could not rule out a role of Rac1 in the NE. To resolve this issue, we performed a further experiment to test specifically whether Rac1 function in NE cells may mediate cell protrusions and neural tube closure. We used Nkx1-2Cre-ERT2 (Rodrigo Albors et al., 2016) to generate Nkx1-2Cre-Rac1 embryos in which Rac1 was conditionally inactivated solely in NE cells. Nkx1-2, also known as Sax1, is a homeobox gene expressed in the posterior neural tube (Schubert et al., 1995). In situ hybridisation confirmed that Nkx1-2 is expressed solely in the closing PNP of E9.5 embryos (Figure 7A), with transcripts detectable only in the NE (Figure 7B). Using the ROSA26-EYFP reporter, we confirmed that Nkx1-2Cre drives recombination in the NE of the PNP and previously closed neural tube (Figure 7C), whereas there is no recombination in the SE (Figure 7D). Nkx1-2Cre-Rac1 embryos developed entirely normally, and did not display NTDs (Table 1). Moreover, they formed normal ruffles typical of late neurulation (Figure 7E,F). This experiment demonstrates unequivocally that Rac1-dependent cellular protrusions do not emanate from the NE during spinal closure.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig7-v1.jpg)
 
-**Figure 7.:** (A, B) In situ hybridisation for Nkx1-2 in whole mount E9.5 embryos. (A) Left: lateral view; right: dorsal view of the PNP. Nkx1-2 transcripts are confined to the neural plate and very recently closed neural tube. A transverse vibratome section at the level of the closing PNP (B) reveals Nkx1-2 expression solely in the NE, and not in adjacent mesoderm (asterisks) nor overlying SE (arrows). (C, D) Nkx1-2Cre-driven recombination in the closing neural tube detected by immuno-fluorescence of YFP-reporter expression at E9.5. Note the presence of YFP in the NE of the closing PNP (red double-arrow) and previously-closed neural tube (white double-arrow) (C), but not in the SE lateral to the NE. A transverse section through the closing neural tube at E9.5 (D) shows the complete absence of YFP from the SE (red crosses; 10 embryos analysed). (E, F) Nkx1-2Cre Rac1 mutants have no neurulation defects (see Table 1) and SEMs of their PNP fusion point at ss24-30 show predominantly membrane ruffles, similar to control embryos (E, quantified in F, p=0.75). Definition of protrusion types as in Figure 3. Scale bars: 500 µm (A), 50 µm (B), 100 µm (C, D), and 10 µm (E).DOI: http://dx.doi.org/10.7554/eLife.13273.026
+**Figure 7.:** (A, B) In situ hybridisation for Nkx1-2 in whole mount E9.5 embryos. (A) Left: lateral view; right: dorsal view of the PNP. Nkx1-2 transcripts are confined to the neural plate and very recently closed neural tube. A transverse vibratome section at the level of the closing PNP (B) reveals Nkx1-2 expression solely in the NE, and not in adjacent mesoderm (asterisks) nor overlying SE (arrows). (C, D) Nkx1-2Cre-driven recombination in the closing neural tube detected by immuno-fluorescence of YFP-reporter expression at E9.5. Note the presence of YFP in the NE of the closing PNP (red double-arrow) and previously-closed neural tube (white double-arrow) (C), but not in the SE lateral to the NE. A transverse section through the closing neural tube at E9.5 (D) shows the complete absence of YFP from the SE (red crosses; 10 embryos analysed). (E, F) Nkx1-2Cre Rac1 mutants have no neurulation defects (see Table 1) and SEMs of their PNP fusion point at ss24-30 show predominantly membrane ruffles, similar to control embryos (E, quantified in F, p=0.75). Definition of protrusion types as in Figure 3. Scale bars: 500 µm (A), 50 µm (B), 100 µm (C, D), and 10 µm (E).
 
-## Cdc42 is required for the formation of filopodia during early neurulation
+### Cdc42 is required for the formation of filopodia during early neurulation
 
 Our finding of increased density and length of filopodia in Grhl3Cre-Rac1 mutants (Figure 6E,F) suggested that, rather than being required for the formation of filopodia, Rac1 may in fact be needed to suppress them and maintain a balance between the formation of the different kinds of protrusions. To test the role of Cdc42 in the formation of filopodia in early neurulation, we conditionally ablated Cdc42 predominantly in the SE lineage, using Grhl3Cre. The Grhl3 and Cdc42 genes are located less than 2 Mb apart on mouse chromosome 4 (www.ensembl.org), and therefore have less than 2% chance of recombination. In initial crosses, we obtained a rare recombinant in which the Grhl3Cre and Cdc42f alleles were in coupling, allowing the necessary Grhl3Cre/+; Cdc42f/+ x Grhl3+/+; Cdc42f/f mating to be performed, but precluding the generation of Grhl3Cre/+; Cdc42f/+ controls for this cross (Table 1; see 'Materials and methods' for details).
 
-Remarkably, Grhl3Cre-Cdc42 embryos were dead by E10.5 (
+Remarkably, Grhl3Cre-Cdc42 embryos were dead by E10.5 (Table 1), and at E9.5 were already severely growth retarded, having failed to undergo axial rotation (Figure 8A). These embryos underwent normal chorioallantoic fusion (not shown), unlike some Grhl3Cre-Rac1 mutants. Due to their early lethality, we analysed the protrusive activity of Grhl3Cre-Cdc42 embryos at E8.5. The initial closure event (Closure 1) occurred normally at ss6-7, and Grhl3Cre-Cdc42 embryos at ss6-10 were indistinguishable from control littermates (Figure 8B). At the spinal closure point, cellular protrusions differed significantly from control embryos: they were predominantly ruffles, in sharp contrast with the predominance of filopodia seen in controls at these early neurulation stages (Figure 8C,D). This finding suggests that Cdc42 is required for filopodia formation during early spinal closure.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig8-v1.jpg)
 
-**Figure 8.:** (A) Grhl3Cre-Cdc42 mutants have an embryonic lethal phenotype, with E9.5 embryos displaying reduced size and failure of axial rotation (quantified in Table 1). (B) SEMs of E8.5 embryos with fewer than 11 somites. At this stage, Grhl3Cre-Cdc42 mutants are indistinguishable in overall morphology from control littermates. (C, D) SEMs of the PNP fusion point of Grhl3Cre-Cdc42 mutants at ss6-10 show a predominance of membrane ruffles, in contrast to the filopodia seen in control embryos at this stage (C, quantified in D, *p<0.05). Definition of protrusion types as in Figure 3. Scale bars: 1 mm (A), 100 µm (B) and 10 µm (C).DOI: http://dx.doi.org/10.7554/eLife.13273.027
+**Figure 8.:** (A) Grhl3Cre-Cdc42 mutants have an embryonic lethal phenotype, with E9.5 embryos displaying reduced size and failure of axial rotation (quantified in Table 1). (B) SEMs of E8.5 embryos with fewer than 11 somites. At this stage, Grhl3Cre-Cdc42 mutants are indistinguishable in overall morphology from control littermates. (C, D) SEMs of the PNP fusion point of Grhl3Cre-Cdc42 mutants at ss6-10 show a predominance of membrane ruffles, in contrast to the filopodia seen in control embryos at this stage (C, quantified in D, *p<0.05). Definition of protrusion types as in Figure 3. Scale bars: 1 mm (A), 100 µm (B) and 10 µm (C).
 
-## Protrusive cells have SE-like cell morphology
+### Protrusive cells have SE-like cell morphology
 
-Our genetic experiments indicated that the cell protrusions required for neural tube closure emanate from SE cells. To examine this question by a different methodology, we performed serial block-face SEM of the PNP fusion point (
+Our genetic experiments indicated that the cell protrusions required for neural tube closure emanate from SE cells. To examine this question by a different methodology, we performed serial block-face SEM of the PNP fusion point (Figure 9A–C). This technique allows high-resolution imaging of cells coupled with the ability to perform three-dimensional reconstructions which allow analysis of the entire cell shape, thus combining the advantages of TEM and SEM (Hughes et al., 2014). In the case of the closing spinal neural folds, we were able to identify the membrane protrusions and their cell of origin in each section, and thus trace them in all the sections to finally obtain a reconstruction of the entire protrusive cell shape (Figure 9 and Video 1). We also traced non-protrusive SE and NE cells for comparison.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/13273/elife-13273-fig9-v1.jpg)
 
-**Figure 9.:** (A–F) Still images from Video 1. (A–C) A series of transverse section images obtained through serial block-face SEM imaging of the closure point of the PNP at E9.5. Protrusions are visible at the tips of the neural folds (orange arrow in B). Black object in (A) is an artefact. (D–F) Three-dimensional reconstructions of different cell types from the same section-stack. Examples are shown of typical morphologies of pseudostratified NE cells (dark blue: spindle shaped cell; cyan: wedge shaped cell) and of a squamous SE cell (yellow). A single pair of cells are extending protrusions, one from each neural fold (green and red), and these have a squamous-type cell morphology, similar to SE cells. Relative to the sections in A–C, the reconstructed cell volumes are shown in the same orientation (D), rotated 90° forward (E) or rotated 90° forward with zoom (F). (G, H) Orthoslices from the analysed stack with superimposed three-dimensional reconstructions of the cells described above. Three different embryos were analysed at ss20-26, with similar results. Scale bar: 100 µm (A).DOI: http://dx.doi.org/10.7554/eLife.13273.028
+**Figure 9.:** (A–F) Still images from Video 1. (A–C) A series of transverse section images obtained through serial block-face SEM imaging of the closure point of the PNP at E9.5. Protrusions are visible at the tips of the neural folds (orange arrow in B). Black object in (A) is an artefact. (D–F) Three-dimensional reconstructions of different cell types from the same section-stack. Examples are shown of typical morphologies of pseudostratified NE cells (dark blue: spindle shaped cell; cyan: wedge shaped cell) and of a squamous SE cell (yellow). A single pair of cells are extending protrusions, one from each neural fold (green and red), and these have a squamous-type cell morphology, similar to SE cells. Relative to the sections in A–C, the reconstructed cell volumes are shown in the same orientation (D), rotated 90° forward (E) or rotated 90° forward with zoom (F). (G, H) Orthoslices from the analysed stack with superimposed three-dimensional reconstructions of the cells described above. Three different embryos were analysed at ss20-26, with similar results. Scale bar: 100 µm (A).
+
+![Video 1.](https://cdn.elifesciences.org/articles/13273/elife-13273-media1.mp4.jpg)
+
+**Video 1.:** Animation showing a series of transverse images of the spinal neural tube closure point at E9.5, with superimposed three-dimensional reconstructions of NE cells (dark blue and cyan), a SE cell (yellow), and protrusive cells at the tips of the neural folds (green and red). See Figure 9 legend.
 
 SE cells have a simple squamous epithelial morphology, with a short apico-basal dimension (yellow cell, Figure 9D,E,G, and Video 1), whereas NE cells have the typical shapes of a pseudo-stratified epithelium, with a long apico-basal axis, and wedge, spindle or inverted wedge morphology, depending on nuclear position (dark blue and cyan cells, Figure 9D,E,G, and Video 1), as described previously in the neural plate (Schoenwolf, 1985; Smith et al., 1994). We confirmed that, in each transverse section, membrane protrusions emanated from only a single pair of cells bilaterally, one on each neural fold tip. Moreover, these cells were positioned precisely at the junction between the SE and NE. Their cell bodies were flat in the apico-basal direction and elongated in the plane of the tissue, closely similar to SE cells, except for the elaborate membrane protrusive activity on their free ends (red and green cells, Figure 9D–F,H, and Video 1). We conclude that the protrusive cells are most likely of SE origin, although we cannot rule out the hypothesis that they might be highly modified NE cells.
 
@@ -191,7 +466,7 @@ SE cells have a simple squamous epithelial morphology, with a short apico-basal 
 
 The presence of cell protrusions at the edges of neural folds in rodent embryos was first described several decades ago, but their role in neurulation has remained unknown. The present work is, to our knowledge, the first to provide evidence that these protrusions are required for successful neural tube closure. Moreover, we show that as spinal neurulation progresses these cell protrusions change, both qualitatively and in their genetic regulation. At the onset of neurulation, the protrusions are predominantly filopodial, requiring Cdc42 function, whereas later stages are characterised by either a mixture of ruffles and filopodia, or by membrane ruffles alone, and these require Rac1. Additionally, using both genetic experiments and morphological analysis, we show that the protrusions originate from SE cells rather than NE cells.
 
-## Roles of cell protrusions in epithelial fusion
+### Roles of cell protrusions in epithelial fusion
 
 Besides neural tube closure, other morphogenetic events involve epithelial tissue fusions accompanied by cellular protrusive activity. For example, during palatal shelf fusion in mice, filopodia are present at the medial edge epithelial cells just before fusion, and TGF-β3 knock-out mice that lack such protrusions display cleft palate (Taya et al., 1999). Similarly, during eyelid closure, filopodia extend from the leading edge epithelia and are reduced in number and length in c-jun mutants that display defective eyelid closure (Zenz et al., 2003). But perhaps the best studied case of cell protrusive activity in epithelial fusion during development is the process of dorsal closure in Drosophila. In this system, the leading edge cells of the lateral epidermis extend cell protrusions as they advance over the amnioserosa layer. When Rac or Cdc42 functions are perturbed, using dominant-negative proteins or loss-of-function mutations, this leads to defects of lamellipodia or filopodia, respectively, accompanied by failed dorsal closure, as well as misalignment of any segments that manage to close (Harden et al., 1995; 1999; Jacinto et al., 2000; Woolner et al., 2005; Hakeda-Suzuki et al., 2002). This suggests that in Drosophila, these protrusions may have a dual role, both in terms of mechanically participating in the closure process, and as exploratory structures that assure proper matching of fusing segments. However, because Rac is also involved in contraction of the underlying amnioserosa cells (Harden et al., 1995; 2002), it is possible that its role in the leading edge cells is mainly exploratory.
 
@@ -203,7 +478,7 @@ Epithelial cell protrusions may also be involved in initiation of de novo cell 
 
 What drives the formation of protrusions in the first place? Recent studies in Drosophila suggest that during dorsal closure the epithelial leading edge cells undergo an incomplete epithelial-to-mesenchymal transition, caused by loss of apico-basal polarity (Bahri et al., 2010; Pickering et al., 2013). Loss of polarity in these cells results in a reduction of PTEN phosphatase, which in turn causes an increase in PIP3 (Pickering et al., 2013), a known activator of Rac. As the cells meet in the midline, they switch back to ‘full’ epithelial character and restore cell-cell adhesion, an event mediated by Pak, an effector of both Rac and Cdc42 (Bahri et al., 2010).
 
-## Different requirements for Rac1 and Cdc42 throughout spinal neurulation
+### Different requirements for Rac1 and Cdc42 throughout spinal neurulation
 
 Our results with Pax3Cre-Rac1 mutants show a clear requirement for Rac1 and ruffle formation on SE cells during the final stages of primary neurulation, from ss24 onwards. However, Rac1 is required in the SE earlier on, as Grhl3Cre-Rac1 mutants show delayed PNP closure from ss20, and a lack of ruffles alone in these mutants is detected at ss15-22, despite no overall statistical significance. This argues for a requirement of ruffles from at least mid-neurulation, and perhaps a gradual transition between protrusive types, with a balance of different protrusions needed.
 
@@ -213,7 +488,7 @@ Our results show that Cdc42 is not needed in mid and late spinal neurulation, as
 
 ## Materials and methods
 
-## Mouse procedures
+### Mouse procedures
 
 Animal studies were performed according to the UK Animals (Scientific Procedures) Act 1986 and the Medical Research Council’s Responsibility in the Use of Animals for Medical Research (July 1993). Non-mutant embryos were from random-bred CD1 mice for standard SEM analysis, and BALB/c for serial block-face imaging SEM. Curly tail mice were maintained as a random-bred homozygous colony (Gustavsson et al., 2007). Cre-driver lines were Pax3Cre/+ (Engleka et al., 2005), Grhl3Cre/+ (Camerer et al., 2010) and Nkx1-2CreERT2/+ (Rodrigo Albors et al., 2016). Floxed lines were Rac1f/f (Glogauer et al., 2003), Cdc42f/f (Wu et al., 2006), and ROSA26-EYFP (Srinivas et al., 2001), all maintained on a C57BL/6 background.
 
@@ -221,27 +496,27 @@ For the generation of conditional mutants, the following general scheme was foll
 
 Embryos were dissected in DMEM (Invitrogen) containing 10% fetal bovine serum (Sigma) and rinsed in PBS prior to fixation. Yolk sacs were used for embryo genotyping.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Embryos were fixed for at least 2 hr in 4% paraformaldehyde in PBS, pH 7.4, at 4°C, and dehydrated in a methanol series, except for the embryos stained for F-actin. Immunofluorescence was performed on 12-µm-thick cryosections of gelatine-embedded embryos (7.5% gelatine [Sigma] in 15% sucrose). F-actin was detected using Alexa-Fluor-568–phalloidin (Life Technologies A12380). β-catenin was detected using a rabbit polyclonal antibody (Abcam ab16051). YFP was detected using anti-GFP rabbit polyclonal Alexa488-conjugated antibody (Life Technologies A21311) at 1:1500 dilution (for single-label detection) or anti-GFP chicken polyclonal antibody (Abcam ab13970) at 1:500 dilution (for double-labelling with E-cadherin). E-cadherin was detected using a rabbit monoclonal antibody (Cell Signaling Technology 23E10) at 1:100 dilution. Pax3 was detected using a 1:50 dilution of mouse anti-Pax3 monoclonal antibody concentrate (Developmental Studies Hybridoma Bank, created by the NICHD of the NIH and maintained at The University of Iowa, Department of Biology, Iowa City, IA 52242). For E-cadherin and Pax3, epitopes were unmasked by boiling three times for 3 min in citrate buffer. Secondary antibodies were goat anti-rabbit Alexa568 (A21069), goat anti-rabbit Alexa488 (A11070), goat anti-mouse Alexa568 (A11004), and goat anti-chicken Alexa488 (A11039) (all Life Technologies), all at 1:500 dilution. Images were captured on an Olympus IXZ1 inverted microscope or on an LSM710 confocal system mounted on an Axio Observer Z1 microscope (Carl Zeiss Ltd, UK), and linear adjustments made using Fiji software.
 
-## Whole-mount mRNA in situ hybridisation
+### Whole-mount mRNA in situ hybridisation
 
 Specific primers (5’- ACGTGTTCTTAATTTGCTTTTCCCT-3’ and 5’- CCCCTGCGGGTAGGTGAT-3’) were designed to amplify exons 4 and 5 of mouse Rac1 cDNA (the exons deleted in the conditional mutants used [Glogauer et al., 2003]), generating a 200 bp fragment. Nkx1-2 probe was a kind gift from Dr F. Schubert (Schubert et al., 1995). Whole-mount in situ hybridisations were performed using digoxigenin-labelled sense and anti-sense RNA probes, followed by preparation of 40 µm vibratome sections.
 
-## Histology
+### Histology
 
 Embryos were fixed overnight in Bouin’s solution (Sigma), dehydrated in an ethanol series and embedded in paraffin-wax. Seven micron sections were stained using Harris’ haematoxylin solution and 2% Eosin Y (both Sigma). Images were captured on an Axiophot2 upright microscope.
 
-## Scanning electron microscopy
+### Scanning electron microscopy
 
 Embryos were fixed overnight in 2% glutaraldehyde, 2% paraformaldehyde in 0.1 M phosphate buffer, pH7.4, at 4°C, post-fixed in 1% OsO4/1.5% K4Fe(CN)6 in 0.1 M phosphate buffer at 3°C for 1.5 hr and then rinsed in 0.1 M phosphate buffer. After rinsing with distilled water, specimens were dehydrated in a graded ethanol-water series to 100% ethanol, followed by one acetone wash. The samples were then critical point dried using CO2 and mounted on aluminium stubs using sticky carbon taps. The mounted samples were then coated with a thin layer of Au/Pd (approximately 2 nm thick) using a Gatan ion beam coater and imaged with a JEOL 7401 FEGSEM.
 
-## Serial block-face scanning electron microscopy
+### Serial block-face scanning electron microscopy
 
 Embryos were fixed for 12–36 hr in 3% glutaraldehyde and 1% paraformaldehyde in 0.08 M sodium cacodylate buffer, pH 7.4, and then en bloc stained with osmium ferricyanide-thiocarbohydrazide-osmium, uranyl acetate, and Walton’s lead citrate as described (West et al., 2010) with two modifications. First, the osmium concentration was reduced to 1% and, second, graded alcohols (50, 70, 90, 3 x 100%) and propylene oxide were used instead of acetone to dehydrate specimens for infiltration and curing overnight at 60°C in Durcupan ACM resin. Specimens were then superglued to aluminium pins and trimmed to place the region of interest within a 0.5 x 0.5 x 0.4 mm mesa and sputter coated with 5 nm gold palladium. Stacks of backscatter electron micrographs were automatically acquired using a Gatan 3 view system in conjunction with a Zeiss Sigma field emission scanning electron microscope working in variable pressure mode at a chamber pressure of 9 Pa and 4 kV. At a standard magnification of x1000 and a pixel resolution of 4096 x 4096, the total area sampled measured 255.4 µm2 on x and y and, depending on the number of 100-nm-thick sections sampled, between 67 and 150 µm on z. The resulting stacks were normalised for contrast and brightness and then converted to TIFF images in Digital Micrograph prior to importation into Amira 5.3.3 software for semi-automated segmentation and presentation.
 
-## Protrusion analysis
+### Protrusion analysis
 
 Protrusions were scored based on SEM images of the PNP fusion point taken at 2000x magnification, and categorised in four different classes: Ruffles (comprised predominantly or solely of membrane ruffles), Ruffles and Filopodia (either a mixture of both types of protrusions, filopodia that emanate from ruffles, or ruffles with microspikes), Filopodia (comprised predominantly or solely of filopodial protrusions), Absent (total absence of protrusions, or just one or two incipient protrusions). Examples of these types of protrusions can be found in Figure 2—figure supplement 2, and the full dataset of protrusion images can be found in the Dryad Digital Repository (doi:10.5061/dryad.rm660).
 
@@ -249,6 +524,6 @@ Scoring was done blind to embryonic stage and genotype by two different persons.
 
 Where analysed, filopodial density was measured by counting the number of individual filopodia in an area of 2000 µm2 around the point of neural fold fusion, and filopodial length was measured in the same area using Fiji software. Only filopodia that measured above 1 µm were considered for these analyses.
 
-## Statistical analysis
+### Statistical analysis
 
 Kruskal-Wallis ANOVA on ranks was used for comparison of PNP size between different groups within each stage range. Fisher exact test was used for comparison of proportions of different types of protrusions and Chi-square test was used for comparison of phenotype frequencies in Table 1; when more than two groups were compared in multiple tests, the alpha-level was protected manually. Mann-Whitney Rank Sum Test was used to compare filopodial number and filopodial length (Figure 6G,H).

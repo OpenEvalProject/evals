@@ -40,7 +40,7 @@
 
 ## Abstract
 
-Plasmodium falciparum causes placental malaria, which results in adverse outcomes for mother and child. P. falciparum -infected erythrocytes that express the parasite protein VAR2CSA on their surface can bind to placental chondroitin sulfate A. It has been hypothesized that naturally acquired antibodies towards VAR2CSA protect against placental infection, but it has proven difficult to identify robust antibody correlates of protection from disease. The objective of this study was to develop a prediction model using antibody features that could identify women protected from placental malaria. We used a systems serology approach with elastic net-regularized logistic regression, partial least squares discriminant analysis, and a case-control study design to identify naturally acquired antibody features mid-pregnancy that were associated with protection from placental malaria at delivery in a cohort of 77 pregnant women from Madang, Papua New Guinea. The machine learning techniques selected 6 out of 169 measured antibody features towards VAR2CSA that could predict (with 86% accuracy) whether a woman would subsequently have active placental malaria infection at delivery. Selected features included previously described associations with inhibition of placental binding and/or opsonic phagocytosis of infected erythrocytes, and network analysis indicated that there are not one but multiple pathways to protection from placental malaria. We have identified candidate antibody features that could accurately identify malaria-infected women as protected from placental infection. It is likely that there are multiple pathways to protection against placental malaria. This study was supported by the National Health and Medical Research Council (Nos. APP1143946, GNT1145303, APP1092789, APP1140509, and APP1104975).
+Background:Plasmodium falciparum causes placental malaria, which results in adverse outcomes for mother and child. P. falciparum-infected erythrocytes that express the parasite protein VAR2CSA on their surface can bind to placental chondroitin sulfate A. It has been hypothesized that naturally acquired antibodies towards VAR2CSA protect against placental infection, but it has proven difficult to identify robust antibody correlates of protection from disease. The objective of this study was to develop a prediction model using antibody features that could identify women protected from placental malaria.Methods:We used a systems serology approach with elastic net-regularized logistic regression, partial least squares discriminant analysis, and a case-control study design to identify naturally acquired antibody features mid-pregnancy that were associated with protection from placental malaria at delivery in a cohort of 77 pregnant women from Madang, Papua New Guinea.Results:The machine learning techniques selected 6 out of 169 measured antibody features towards VAR2CSA that could predict (with 86% accuracy) whether a woman would subsequently have active placental malaria infection at delivery. Selected features included previously described associations with inhibition of placental binding and/or opsonic phagocytosis of infected erythrocytes, and network analysis indicated that there are not one but multiple pathways to protection from placental malaria.Conclusions:We have identified candidate antibody features that could accurately identify malaria-infected women as protected from placental infection. It is likely that there are multiple pathways to protection against placental malaria.Funding:This study was supported by the National Health and Medical Research Council (Nos. APP1143946, GNT1145303, APP1092789, APP1140509, and APP1104975).
 
 ## Introduction
 
@@ -58,107 +58,459 @@ The objective of this study was develop a prognostic model using antibody featur
 
 ## Materials and methods
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## Human subjects
+#### Human subjects
 
 Study participants were recruited between November 2009 and August 2012 as part of a randomized controlled trial of Intermittent Preventive Treatment in Pregnancy (IPTp) (Unger et al., 2015) (ClinicalTrials.gov NCT01136850), in which pregnant women received either three courses of sulfadoxine pyrimethamine (SP) and azithromycin or one course of SP and chloroquine. Women were recruited at 14–26 gestation weeks and followed up until delivery. All women presenting for their first antenatal visit at one of the nine participating health centers in Madang Papua New Guinea were invited to participate in the original cohort study. Exclusion criteria included a gestation of >26 weeks, hemoglobin <6 g/dl with symptomatic anemia, previous serious adverse reactions to the IPTp study medications, permanent disability or chronic medical conditions, known multiple pregnancy, age <16 years, or known unavailability to follow-up Unger et al., 2015. Demographic data collected at enrollment included maternal gravidity, age, residence, and bed net use. Peripheral blood collected at 14–26 gestation weeks, before initiation of IPTp, was used in the antibody assays. Peripheral blood collected at delivery was used to prepare blood smears for malaria microscopy and to extract DNA for qPCR for malaria parasites (Unger et al., 2015). Placental biopsies were formalin fixed and paraffin embedded. Giemsa stained sections of placental biopsies were examined for malaria infection (Lufele et al., 2017). Women were selected for inclusion in this case-control study based on the presence of P. falciparum IEs in peripheral blood and/or placenta at delivery. Groups included women with no evidence of infection in peripheral blood by PCR or light microscopy nor on examination of placental histology at delivery (n = 50); women with active placental malaria characterized by detection of P. falciparum IEs by placental histology (n = 50); and women with P. falciparum infection by light microscopy and/or PCR in the peripheral blood but with no IEs detected by placental histology examination (n = 27). Sample size was based on published work that used a similar approach to investigate antibody responses to infectious diseases (Lu et al., 2016); in addition, sample size for the non-placental infection group was also limited by sample availability as few women met the criteria for inclusion. All clinical data were collected, and grouping of women by outcome was completed prior to measurements of antibody features included in the model. The three groups were frequency matched for primigravidity, IPTp regime receipt, bed net use, rural residency, and age. See Table 1 for details on clinical characteristics of participants.
 
-## Parasite cell lines
+**Table 1.**
+ Clinical characteristics of the three groups of pregnant women at the time of antibody feature measurement at enrollment (14–26 weeks’ gestation) and also at delivery.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Non-infected at delivery</th>
+      <th colspan="2">Placental malaria at delivery</th>
+      <th colspan="2">Non-placental infection at delivery</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>N = 50</th>
+      <th></th>
+      <th>N = 50</th>
+      <th></th>
+      <th>N = 27</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Enrollment</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mean age (years), SD</td>
+      <td>24.5</td>
+      <td>5.3</td>
+      <td>24.0</td>
+      <td>5.0</td>
+      <td>23.1</td>
+      <td>4.4</td>
+    </tr>
+    <tr>
+      <td>Residence, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rural</td>
+      <td>37</td>
+      <td>(74.0)</td>
+      <td>38</td>
+      <td>(76.0)</td>
+      <td>18</td>
+      <td>(66.7)</td>
+    </tr>
+    <tr>
+      <td>Non-rural</td>
+      <td>13</td>
+      <td>(26.0)</td>
+      <td>12</td>
+      <td>(24.0)</td>
+      <td>9</td>
+      <td>(33.3)</td>
+    </tr>
+    <tr>
+      <td>Ethnicity, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sepik</td>
+      <td>6</td>
+      <td>(12.0)</td>
+      <td>11</td>
+      <td>(22.0)</td>
+      <td>3</td>
+      <td>(11.1)</td>
+    </tr>
+    <tr>
+      <td>Madang/Morobe</td>
+      <td>39</td>
+      <td>(78.0)</td>
+      <td>30</td>
+      <td>(60.0)</td>
+      <td>22</td>
+      <td>(81.5)</td>
+    </tr>
+    <tr>
+      <td>Highlander</td>
+      <td>3</td>
+      <td>(6.0)</td>
+      <td>5</td>
+      <td>(10.0)</td>
+      <td>1</td>
+      <td>(3.7)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2</td>
+      <td>(4.0)</td>
+      <td>4</td>
+      <td>(8.0)</td>
+      <td>1</td>
+      <td>(3.7)</td>
+    </tr>
+    <tr>
+      <td>Formal schooling, N (%)</td>
+      <td>46</td>
+      <td>(92.0)</td>
+      <td>46</td>
+      <td>(92.0)</td>
+      <td>25</td>
+      <td>(92.6)</td>
+    </tr>
+    <tr>
+      <td>Smoking, N (%)</td>
+      <td>9</td>
+      <td>(18.0)</td>
+      <td>11</td>
+      <td>(22.0)</td>
+      <td>6</td>
+      <td>(22.2)</td>
+    </tr>
+    <tr>
+      <td>Betel nut user, N (%)†</td>
+      <td>41</td>
+      <td>(82.0)</td>
+      <td>41</td>
+      <td>(82.0)</td>
+      <td>24</td>
+      <td>(88.9)</td>
+    </tr>
+    <tr>
+      <td>Alcohol, N (%)</td>
+      <td>2</td>
+      <td>(4.0)</td>
+      <td>2</td>
+      <td>(4.0)</td>
+      <td>2</td>
+      <td>(7.4)</td>
+    </tr>
+    <tr>
+      <td>Gravidity, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Primigravidae</td>
+      <td>26</td>
+      <td>(52.0)</td>
+      <td>29</td>
+      <td>(58.0)</td>
+      <td>14</td>
+      <td>(51.9)</td>
+    </tr>
+    <tr>
+      <td>Secundigravidae</td>
+      <td>8</td>
+      <td>(16.0)</td>
+      <td>7</td>
+      <td>(14.0)</td>
+      <td>8</td>
+      <td>(29.6)</td>
+    </tr>
+    <tr>
+      <td>Multigravidae</td>
+      <td>16</td>
+      <td>(32.0)</td>
+      <td>14</td>
+      <td>(28.0)</td>
+      <td>5</td>
+      <td>(18.5)</td>
+    </tr>
+    <tr>
+      <td>IPTp regime, N (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SPCQ</td>
+      <td>27</td>
+      <td>(54.0)</td>
+      <td>30</td>
+      <td>(60.0)</td>
+      <td>18</td>
+      <td>(66.7)</td>
+    </tr>
+    <tr>
+      <td>SPAZ</td>
+      <td>23</td>
+      <td>(46.0)</td>
+      <td>20</td>
+      <td>(40.0)</td>
+      <td>9</td>
+      <td>(33.3)</td>
+    </tr>
+    <tr>
+      <td>Mean gestational age (days), SD</td>
+      <td>145.9</td>
+      <td>31.4</td>
+      <td>147.5</td>
+      <td>31.3</td>
+      <td>152.2</td>
+      <td>19.8</td>
+    </tr>
+    <tr>
+      <td>Mean maternal weight (kg), SD*</td>
+      <td>54.7</td>
+      <td>13.1</td>
+      <td>53.5</td>
+      <td>8.2</td>
+      <td>54.1</td>
+      <td>7.4</td>
+    </tr>
+    <tr>
+      <td>Mean maternal height (cm), SD†</td>
+      <td>154.3</td>
+      <td>5.9</td>
+      <td>154.6</td>
+      <td>6.9</td>
+      <td>154.4</td>
+      <td>6.0</td>
+    </tr>
+    <tr>
+      <td>Bed net use, N (%)</td>
+      <td>34</td>
+      <td>(68.0)</td>
+      <td>40</td>
+      <td>(80.0)</td>
+      <td>21</td>
+      <td>(77.8)</td>
+    </tr>
+    <tr>
+      <td>Hb (g/dL), mean SD‡</td>
+      <td>9.7</td>
+      <td>1.2</td>
+      <td>9.3</td>
+      <td>2.0</td>
+      <td>9.4</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>Light microscopy positive for Pf, N (%)</td>
+      <td>2</td>
+      <td>(4.0)</td>
+      <td>4</td>
+      <td>(8.0)</td>
+      <td>4</td>
+      <td>(14.8)</td>
+    </tr>
+    <tr>
+      <td>PCR positive for Pf, N (%)</td>
+      <td>4</td>
+      <td>(8.0)</td>
+      <td>5</td>
+      <td>(10.0)</td>
+      <td>5</td>
+      <td>(18.5)</td>
+    </tr>
+    <tr>
+      <td>Delivery</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Placenta light microscopy positive for Pf, N (%)</td>
+      <td>0</td>
+      <td>(0)</td>
+      <td>50</td>
+      <td>(100)</td>
+      <td>0</td>
+      <td>(0)</td>
+    </tr>
+    <tr>
+      <td>Peripheral blood light microscopy positive for Pf, N (%)</td>
+      <td>0</td>
+      <td>(0)</td>
+      <td>10</td>
+      <td>(20)</td>
+      <td>13</td>
+      <td>(48.2)</td>
+    </tr>
+    <tr>
+      <td>Peripheral blood PCR positive for Pf, N (%)</td>
+      <td>0</td>
+      <td>(0)</td>
+      <td>13</td>
+      <td>(26)</td>
+      <td>21</td>
+      <td>(77.8)</td>
+    </tr>
+    <tr>
+      <td>Placental blood PCR positive for Pf, N (%)§</td>
+      <td>1</td>
+      <td>(2.0)</td>
+      <td>10</td>
+      <td>(20)</td>
+      <td>10</td>
+      <td>(37.04)</td>
+    </tr>
+    <tr>
+      <td>Birthweight (g), SD</td>
+      <td>3062</td>
+      <td>546</td>
+      <td>2827</td>
+      <td>501</td>
+      <td>2840</td>
+      <td>416</td>
+    </tr>
+    <tr>
+      <td>Gestation at delivery (days), SD¶</td>
+      <td>278</td>
+      <td>18</td>
+      <td>279</td>
+      <td>16</td>
+      <td>280</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Mean Hb (g/dL), SD</td>
+      <td>10.1</td>
+      <td>2</td>
+      <td>9.5</td>
+      <td>1.9</td>
+      <td>10.2</td>
+      <td>1.4</td>
+    </tr>
+  </tbody>
+</table>
+
+_* One participant with missing data on betel nut use in placental malaria.†One participant with missing data on weight in the non-infected group.‡ Missing Hb data, five in non-infected group, four in placental malaria group, and two in the non-placental infection group.§ Missing placental PCR data in five non-infected, eight placental malaria, and four non-placental infection women.¶One participant with missing data on gestation length at delivery in the non-infected group.SD: standard deviation; Hb: hemoglobin; PCR: polymerase chain reaction; IPTp: intermittent preventive treatment in pregnancy; SPAZ: sulfadoxine pyrimethamine-azithromycin; SPCQ: sulfadoxine pyrimethamine-chloroquine._
+
+### Parasite cell lines
 
 P. falciparum IE of the parasite lines CS2 and 3D7 were cultured as previously described (Chandrasiri et al., 2014). Cultures were synchronized as needed by sorbitol lysis (Lambros and Vanderberg, 1979) and IE were regularly selected for expression of knobs by gelatin flotation (Goodyer et al., 1994). Cell cultures were mycoplasma negative (tested for mycoplasma using the MycoAlert kit [Lonza, Mount Waverley, Australia] as per manufacturer’s instructions). For the binding inhibition assays, the parent lines of CS2 and 3D7 (FCR3 and NF54, respectively) were used, cultured, and selected for CSA adhesion as described previously (Nielsen and Salanti, 2015).
 
-## Monocyte cell line THP-1
+### Monocyte cell line THP-1
 
 THP-1 cells were mycoplasma negative and cultured as previously described (Ataíde et al., 2010).
 
-## Primary leukocytes
+### Primary leukocytes
 
 Neutrophils were isolated from fresh venous blood collected in lithium heparin vacutainers (BD, Scoresby, Australia) using the EasySep Direct Human Neutrophil Isolation Kit (STEMCELL Technologies, Tullamarine, Australia) as per manufacturer’s instructions. Neutrophil purity was assessed by cell morphology using light microscopy of Giemsa stained smears of the isolated cells, and viability was assessed using trypan blue exclusion. Monocytes were isolated from both fresh venous blood, collected in lithium heparin vacutainers (BD), as well as from buffy coats supplied from the Australian Red Cross Blood Service. Monocytes were isolated by negative selection using the RosetteSep Human Monocyte Enrichment Cocktail (STEMCELL Technologies) as per manufacturer’s instructions. Monocyte purity was assessed by staining (anti-CD14 antibody, BioLegend, San Diego, CA) and measuring CD14+ cells by flow cytometry. Monocytes were either frozen in fetal bovine serum (FBS) in 20% dimethyl sulfoxide (DMSO) in liquid nitrogen for later use or used immediately after isolation. Natural killer (NK) cells were isolated from fresh venous blood collected in sodium heparin vacutainers (BD). NK cells were isolated by negative selection using the RosetteSep Human NK Enrichment Cocktail (STEMCELL Technologies) as per manufacturer’s instructions.
 
-## Method details
+### Method details
 
-## Samples and controls
+#### Samples and controls
 
 Plasma samples of study participants were obtained from venous blood collected into sodium heparin vacutainers upon enrollment into the trial at 14–26 weeks’ gestation and plasma was separated by centrifugation and stored at −80°C until used. To generate a positive control, plasma samples from pregnant women in Malawi with high levels of IgG that recognizes IEs of the P. falciparum line CS2 (a VAR2CSA-expressing and CSA-binding line; Elliott et al., 2005b) were pooled. Negative controls were sera from individual Melbourne donors obtained from the Australian Red Cross Blood Service or plasma from Melbourne donors collected in lithium heparin vacutainers (BD). All controls were kept at −80°C until use. Antibody features were measured after grouping of women based on outcome. Researchers measuring antibody features were blinded to outcome data of individual samples; this was done by allocating all samples a number (which was not associated with clinical outcomes and which was different from the original cohort study number), samples were decoded after acquisition of the antibody feature was complete. For some experiments, IgG was purified from plasma and serum using Melon Gel purification kits (Thermo Fisher Scientific, Scoresby, Australia) as per manufacturer’s instructions. Purified IgG was quantified before use with a human IgG ELISA development kit (MabTech, Preston, Australia) as per manufacturer’s instructions.
 
-## VAR2CSA DBL recombinant antigens
+### VAR2CSA DBL recombinant antigens
 
 Twelve recombinant proteins consisting of subunits or DBL domains of VAR2CSA were used in experiments (see Supplementary file 1 for a table detailing proteins used). For some experiments, proteins were biotinylated using EZ-link Sulfo NHS-LC-Biotin kit (Thermo Fisher Scientific) as per manufacturer’s instructions.
 
-## Infected erythrocytes
+### Infected erythrocytes
 
 The CSA-binding phenotypes of CS2 and 3D7 IEs were monitored by measuring binding of trophozoite stage IEs in static binding assays to recombinant human CD36 (R&D systems, Noble Park, Australia) and CSA (Sigma-Aldrich, Macquarie Park, Australia) as previously described (Yosaatmadja et al., 2008). 3D7 was selected for a CSA-binding phenotype by flow cytometry. Purified trophozoite stage 3D7 IEs were incubated with fluorescein isothiocyanate (FITC)-labeled CSA 100 μg/mL (Creative PEGWorks, Durham, NC) for 30 min at 37°C. Purified IE incubated with CSA-FITC and 3D7 without CSA-FITC were used to set the gates. IEs were then gated based on forward and side scatter and sorted based on FITC. For some assays, trophozoite stage IE were purified by Percoll gradient and stained with dihydroethidium (DHE) 25 μg/mL (Sigma-Aldrich). For the binding inhibition assays, FCR3 and NF54 IE were selected for a CSA-binding phenotype by panning on BeWo cells as previously described (Nielsen and Salanti, 2015).
 
-## Antibody features to VAR2CSA by multiplex
+### Antibody features to VAR2CSA by multiplex
 
 Multiplex assays were used to detect plasma levels of antigen-specific antibodies (Abs) towards VAR2CSA DBL domains. Features assessed included total IgG, IgG1, IgG2, IgG3, IgG4, IgA1, IgA2, IgM as well as antibody engagement with complement (C1q) and FcγRs (FcγRI, FcγRIIa, FcγRIIIa, and FcγRIIIb). To conduct the multiplex assays, DBL domains (Supplementary file 1) of the VAR2CSA protein were coupled to Bio-Plex magnetic carboxylated microspheres (Bio-Rad) as per manufacturer’s instructions, blocked with PBS plus 0.1% bovine serum albumin (BSA), then stored in PBS-0.05% sodium azide at −80°C.
 
 On the day of the assay, the DBL-coupled microspheres were resuspended at 1 × 104 beads/mL in 1:100 dilution of plasma in PBS-1% BSA and 50 µL were aliquoted into each well of a 96-well round bottom plate (Greiner Bio-One, Kremsmünster, Austria). Plates were incubated on a shaker overnight at 4°C, then centrifuged and washed with PBS-0.1% Tween20 using a magnetic plate-washer (Bio-Plex Pro wash station). The anti-human Ab detectors for IgG, IgG1, IgG2, IgG3, IgG4, IgA1, IgA2, or IgM conjugated with phycoerythrin (PE) (SouthernBiotech, Birmingham, AL) were added, and the mixture was incubated for 2 hr on a plate shaker. C1q (MP Biomedicals), FcγRI (R&D Systems), and FcγRIIIb (R&D Systems) were biotinylated using EZ-Link Sulfo-NHS-LC-Biotin (Thermo Fisher Scientific) as per manufacturer’s instructions and then labeled streptavidin-PE (SouthernBiotech), before being added to samples. For FcγRIIa and FcγRIIIa, the beads/plasma samples mixture was incubated with biotinylated recombinant dimeric FcγRIIa and FcγRIIIa ectodomains (Wines et al., 2016) for 1 hr to allow binding of FcγRs to antigen-specific IgG, washed, and incubated with streptavidin-PE for 1 hr. After washing with PBS and resuspending in xMAP sheath fluid (Life Technologies, Scoresby, Australia), the plates were read on a Bio-Plex MAGPIX multiplex reader (Bio-Rad, Gladesville, Australia) and analyzed on Bio-Plex Manager software (Bio-Rad). A single measurement of each sample for each antibody feature was done. Data were excluded if the number of beads acquired was too low. Readouts were expressed as the raw median fluorescence index (MFI).
 
-## Detection of antibody binding to the IE
+### Detection of antibody binding to the IE
 
 Binding of IgG and IgG subclass antibodies to the surface of CS2 and CSA-selected 3D7 IEs was measured as previously described; all samples were run in duplicate (Aitken et al., 2010; Elliott et al., 2005b).
 
-## ADCP of VAR2CSA DBL-coated beads by THP-1
+### ADCP of VAR2CSA DBL-coated beads by THP-1
 
 Antibody-dependent cellular phagocytosis (ADCP) of beads coated with VAR2CSA DBL domains and opsonized with plasma or purified IgG was assessed using THP-1 cells. Individual DBL domains (Supplementary file 1) were biotinylated and incubated with neutravidin 1 μm beads at a ratio of 1 μL of beads (stock 1% v/v) to 3 µL of 1 mg/mL of the respective DBL domain. Beads and proteins were incubated overnight at 4°C on a roller. After incubation, beads were washed twice in PBS-0.1% BSA and then resuspended at 0.01% v/v in PBS-0.1% BSA with 0.02% sodium azide. For the phagocytosis assay, a sterile 96-well U bottom plate (Corning, Mulgrave, Australia) was blocked with high salt PBS buffer (PBS plus 0.5 M NaCl with 1% BSA 0.05% Tween20) for 30 min at room temperature. Then 20 μL of plasma diluted 1:800 in high salt PBS buffer and 10 µL of beads was added and incubated for 1 hr at room temperature. The plate was spun at 4700 × g for 3 min, supernatant was replaced with 30 μL of leukocyte media (RPMI-1640 with 10% FBS and Penicillin-Streptomycin-Glutamine [all from Gibco, Scoresby, Australia]), then 5 × 104 THP-1 cells in 50 µL of leukocyte media were added and incubated for 40 min at 37°C in 5% CO2. After incubation, cells were washed and resuspended in cold PBS-4% paraformaldehyde (PFA). Phagocytosis was measured by gating on THP-1 using forward scatter (FSC) and side scatter (SSC) parameters. Phagocytic score was calculated as (% of THP-1 cells positive for beads × geometric MFI of the bead-positive THP-1 cells). All samples were run in duplicate.
 
-## ADCP of IE by THP-1
+### ADCP of IE by THP-1
 
 ADCP of IE opsonized with plasma by THP-1 cells was assessed as previously described (Ataíde et al., 2010). Phagocytosis of IE opsonized with purified IgG was measured as previously described (Ataíde et al., 2010) with the modification that IE were opsonized with purified IgG at a concentration of equivalent to a 1:20 dilution of plasma. All samples were run in duplicate.
 
-## ADCP of VAR2CSA DBL-coated beads by monocytes
+### ADCP of VAR2CSA DBL-coated beads by monocytes
 
 Monocyte phagocytosis of beads coated with VAR2CSA DBL domains and opsonized with plasma was assessed. Beads were coated with DBL domains as described above, except that neutravidin 1 μm beads were incubated with 6 μL of 1 mg/mL of each DBL domain. To measure ADCP, a sterile 96-well U bottom plate (Corning) was blocked with salt PBS buffer (PBS plus 0.25 M NaCl and 1% BSA) for 30 min at room temperature. 40 μL of plasma (diluted 1:300 in salt PBS buffer) was added to each well along with 20 μL of beads (0.01% v/v) and incubated for 1 hr at room temperature. The beads were then washed and resuspended in 60 µL of leukocyte media. In a separate 96-well U bottom plate, 5 × 104 monocytes in leukocyte medium were plated out per well and rested at 37°C for 1 hr prior to phagocytosis. 30 μL of the opsonized beads were then added to each well with monocytes. The monocytes and beads were co-incubated for 50 min at 37°C with 5% CO2. After incubation, the cells were washed and resuspended in cold PBS-2% PFA. Phagocytosis was measured by gating monocytes on the FSC and SSC. All samples were run in duplicate, and assays were repeated with three different primary cell donors. For each donor, a phagocytic score was calculated (% of monocytes cells positive for beads × geometric MFI of the bead-positive monocytes) and then the average of the phagocytic scores for the three donors was taken.
 
-## ADCP of IE by monocytes
+### ADCP of IE by monocytes
 
 ADCP of opsonized IE by primary monocytes was assessed. A sterile 96-well U bottom plate (Corning) was blocked with PBS-1% BSA. In each well, 30 μL of diluted plasma (1:10) along with 3.3 μL of DHE-stained IE in leukocyte media (1.65 × 107 IE/mL) was mixed and left for 1 hr at room temperature, before being washed and resuspended in 50 μL RPMI-1640 with 25 mM HEPES, 0.5% Albumax (w/v), 5% heat-inactivated human serum (HIHS). In a separate 96-well U bottom plate, 5 × 104 monocytes in leukocyte medium were plated out per well and rested at 37°C for 2 hr prior to phagocytosis. Then 25 μL of the opsonized IE were added to each well with monocytes. The monocytes and IE were co-incubated for 40 min at 37°C with 5% CO2. After incubation, the cells were washed and resuspended in cold PBS-2% PFA. Phagocytosis was measured by gating on monocytes using the FSC and SSC parameters. All samples were run in duplicate, and assays were repeated with three different primary cell donors. For each donor, a phagocytic score was calculated (% of monocytes cells positive for DHE × MFI of the DHE-positive monocytes) and then the average of the phagocytic scores for the three donors was used.
 
-## ADNP of VAR2CSA DBL-coated beads
+### ADNP of VAR2CSA DBL-coated beads
 
 Antibody-dependent neutrophil phagocytosis (ADNP) of beads coated with VAR2CSA DBL domains and opsonized with plasma was assessed. Beads were coated with DBL as described for primary monocytes. Neutravidin 1 μm beads were incubated with 6 μL of 1 mg/mL of the respective DBL domain. To quantitate ADNP, 12 μL of plasma (diluted 1:100 in high salt PBS) was added to each well of a sterile 96-well U bottom plate (Corning) along with 6 μL of beads (0.01% v/v) and incubated for 1 hr at room temperature. The beads were then washed and resuspended in 30 μL of leukocyte medium. In a separate 96-well U bottom plate, 3 × 104 neutrophils in leukocyte medium were plated out per well, 15 μL of the opsonized beads were then added to each well. The plate was incubated for 1 hr at 37°C in 5% CO2, then the cells were washed and resuspended in cold PBS-2% PFA. Phagocytosis was measured by gating neutrophils on the FSC and SSC. All samples were run in duplicate, and assays were repeated with three different primary cell donors. For each donor, a phagocytic score was calculated (% of neutrophil cells positive for beads × geometric MFI of the bead-positive neutrophils) and then the average of the phagocytic scores for the three donors was used.
 
-## ADNP of IE
+### ADNP of IE
 
 ADNP of IE opsonized with plasma was assessed. 30 µL of diluted plasma (1:10) and 3.3 μL of DHE-stained IE in neutrophil medium (1.65 × 107 IE/mL) were mixed in a sterile 96-well U bottom plate (Corning), incubated for 1 hr at room temperature, before being washed and resuspended in 50 μL of leukocyte medium. In a separate 96-well U bottom plate, 2.5 × 104 neutrophils in 50 μL of leukocyte medium were plated out per well, 25 μL of the opsonized IE were then added to each well, and the plate was incubated for 1 hr at 37°C with 5% CO2. After incubation, the cells were washed and resuspended in cold PBS-2% PFA. Phagocytosis was measured by gating neutrophils on the FSC and SSC. All samples were run in duplicate, and assays were repeated with three different primary cell donors. For each donor, a phagocytic score was calculated (% of neutrophil cells positive for beads × geometric MFI of the bead-positive neutrophils) and then the average of the phagocytic scores for the three donors was used.
 
-## ADRB using VAR2CSA DBL domains
+### ADRB using VAR2CSA DBL domains
 
 Antibody-dependent respiratory burst (ADRB) was measured using an assay of reactive oxygen species (ROS) production. Firstly, 25 μL of 4 μg/mL of individual DBL domains (Supplementary file 1) in PBS were coated on 96-well, white, flat bottom plates (NUNC MaxiSorp flat bottom; Thermo Fisher Scientific) and left overnight at 4°C. The liquid was removed, and plates were then washed with PBS and blocked with PBS-0.1% BSA for 1 hr at room temperature. Then 25 μL of each diluted sample (1:10 in PBS) was added to a single well and incubated at room temperature for 2 hr, the plates were then washed twice with PBS. Neutrophils were resuspended in Hanks’ buffered saline solution at 2 × 106/mL and 20 μL of neutrophils were added to each well followed by 20 μL luminol horseradish peroxidase (HRP) solution (PBS with 33 ng/mL of HRP and 4 mM luminol; all from Sigma-Aldrich). The plate was spun briefly to settle the contents and read immediately on a FLUOstar plate reader. Luminescence was measured in each well for 1 s every 2 min for 1 hr and was calculated as the average luminescence 5 min either side of the peak of the curve. Luminescence score was standardized to the no serum controls that were run on every plate. All assays were repeated with three different primary cell donors, and the average luminescence score from the three donors was used.
 
-## ADRB to IE
+### ADRB to IE
 
 To measure ADRB in response to IEs, 96-well U bottom plates (Corning) were coated with PBS-1% FBS for 1 hr. 1 μL of plasma from each donor was aliquoted into a single well and along with 20 μL of purified IEs at 2 × 107 cells/mL in PBS-1% FBS were mixed and incubated for 1 hr at room temperature. The IE were then washed and resuspended in 20 μL of PBS. 10 μL of neutrophils in Hanks’ buffered saline solution at 2 × 106/mL, 10 μL of luminol HRP solution, and 5 μL of opsonized IEs were added to each well of a 384-well white, flat bottom plate (NUNC MaxiSorp flat bottom; Thermo Fisher Scientific). The plate was spun briefly to settle the contents and then read immediately on a FLUOstar plate reader (BMG LABTECH, Mornington, Australia). Luminescence was measured as described above. Luminescence score was calculated as the % of the positive plasma control, which was run on every plate. All assays were repeated with three different primary cell donors, and the average luminescence score from the three donors was used.
 
-## ADCC using VAR2CSA DBL domains
+### ADCC using VAR2CSA DBL domains
 
 Antibody-dependent cellular cytotoxicity (ADCC) assays using human NK cells were modified for use with DBL antigens (Supplementary file 1; Jegaskanda et al., 2013; Lu et al., 2016). NUNC MaxiSorp flat bottom plates (Thermo Fisher Scientific) were coated with DBL proteins (200 ng/well) at 4°C for 12 hr. After washing with PBS, the plate was blocked with PBS-1% BSA for 1 hr. Purified IgG (0.5 mg/mL) was added to each well and incubated at 37°C for 2 hr. NK cells (0.25 × 106 cells/mL), anti-CD107a-allophycocyanin (APC)-H7 (BD) brefeldin A (10 mg/mL; Sigma-Aldrich), and GolgiStop (BD) were added to each well, and the plates were incubated for 5 hr at 37°C. NK cells were then stained for surface markers using anti-CD16-Brilliant violet (BV)-605 (BD), anti-CD56-Brilliant ultraviolet (BD), and anti-CD3-peridinin-chlorophyll-protein (PerCP; BD), and then stained intracellularly with anti-IFNγ-PE (BD) and anti-TNFα-BV-785 (BD) after fixation (10% PFA) and Perm B solutions (Thermo Fisher Scientific). NK cells were analyzed via flow cytometry and defined as CD3- and CD56highCD16± and CD56lowCD16high. Boolean gates (FlowJo) were used to include all NK cells that expressed degranulation marker CD107a or produced cytokines, IFNγ and TNFα. Levels of CD107a, IFNγ, and TNFα expression or production were calculated as % of NK cells positive for APC-H7, PE, and BV-785, respectively. All assays were repeated with three different primary cell donors, and the average score from the three donors was used.
 
-## CSA binding inhibition antibody to IE
+### CSA binding inhibition antibody to IE
 
 CSA binding inhibition was measured as previously described (Nielsen and Salanti, 2015). The assays were all run twice and averages of the two runs were used.
 
-## IgG levels to non-pregnancy-specific antigens
+### IgG levels to non-pregnancy-specific antigens
 
 IgG levels towards schizont extract and MSP-1 were measured by ELISA as previously described (Barua et al., 2019) using goat anti-human IgG biotinylated (Mabtech 3820-4-250).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Processing of data
+#### Processing of data
 
 Prior to analysis, the data were processed. The right skewness of the distribution of the features was reduced by log-transformation (log(x + 1)). Four antibody features that had negative values were right-shifted to have their minimum at zero prior to log-transformation. Next, the distributions of the features were centered and scaled to have zero mean and unit standard deviation.
 
 Demographic and clinical characteristics of the pregnant women were described using the mean (SD) for continuous variables and frequency (%) for categorical variables.
 
-## Univariate analysis
+### Univariate analysis
 
 Antibody levels for individual antibody features were compared between groups using the Welch’s t-test. The fold-change in the volcano plot was defined as the exponential of difference between the means of log-transformed and standardized data across the groups. Antibody features were correlated using Pearson pairwise correlation and correlation networks were plotted using the qgraph package (Epskamp et al., 2012). Associations between select antibody features and gravidity were investigated using linear regression.
 
-## Identification of key antibody features
+### Identification of key antibody features
 
-Non-infected women were excluded from the multivariate analyses. Multivariate imputations by chained equations (Buuren and Groothuis-Oudshoorn, 2011) with predictive mean matching was used to impute any missing values (0.82% of observations). The imputation process was repeated five times, and the median of the imputed values across the five generated imputed datasets was finally used for each missing value. An elastic net-regularized logistic regression (ENLR) model was initially used to identify the subset of antibody features that best discriminate between the pregnant women with non-placental infection and women with placental infection. Elastic net (Zou and Hastie, 2005) allows to attain sparsity (keeping only a small subset of important variables), but unlike the least absolute shrinkage and selection operator (LASSO) penalization, groups of highly correlated important variables can as well be selected (a property of ridge regression). The parameter α, which alters the nature of penalization between ridge regression and LASSO, was set to 0.5 to achieve a balance between sparsity and group selection; the final selected antibody features did not alter when α was varied over [0, 1], as detailed below. We used a resampling approach in which the ENLR model was repeatedly fitted to subsets of data, as used by Gunn et al., 2018. This provided a means to take account of the uncertainty in the feature selection by ENLR and identify the features that are consistently selected when the model is fitted to different resampled data. The selection stability of an antibody feature was defined as the proportion of times that it was picked in the selected set of important features by elastic net when the model was repeatedly fitted to 50,000 resampled subsets of data (5000 repeats of 10-fold cross-validation). In each of the 5000 repetitions, the dataset was divided into 10-folds, of which 9-folds were used to perform an inner 10-fold cross-validation to find the best value of λ (shrinkage parameter) that maximizes the area under the receiver operating characteristic (AUROC) and in turn select the antibody features; using other performance measures such as binomial deviance gave the same ranking of the features according to selection frequencies. In each resampling iteration, the majority group (50 women with placental malaria) was downsampled to have an equal number of observations in both groups, thus avoiding overfitting the model to the majority group. The resampling process was repeated where α was also tuned over the set {0, 0.25, 0.5, 0.75, 1} (instead of only α=0.5) in addition to λ, and the results showed that the final top frequently selected variables do not change (see Figure 2—figure supplement 1).
+Non-infected women were excluded from the multivariate analyses. Multivariate imputations by chained equations (Buuren and Groothuis-Oudshoorn, 2011) with predictive mean matching was used to impute any missing values (0.82% of observations). The imputation process was repeated five times, and the median of the imputed values across the five generated imputed datasets was finally used for each missing value. An elastic net-regularized logistic regression (ENLR) model was initially used to identify the subset of antibody features that best discriminate between the pregnant women with non-placental infection and women with placental infection. Elastic net (Zou and Hastie, 2005) allows to attain sparsity (keeping only a small subset of important variables), but unlike the least absolute shrinkage and selection operator (LASSO) penalization, groups of highly correlated important variables can as well be selected (a property of ridge regression). The parameter α, which alters the nature of penalization between ridge regression and LASSO, was set to 0.5 to achieve a balance between sparsity and group selection; the final selected antibody features did not alter when $\alpha$ was varied over [0, 1], as detailed below. We used a resampling approach in which the ENLR model was repeatedly fitted to subsets of data, as used by Gunn et al., 2018. This provided a means to take account of the uncertainty in the feature selection by ENLR and identify the features that are consistently selected when the model is fitted to different resampled data. The selection stability of an antibody feature was defined as the proportion of times that it was picked in the selected set of important features by elastic net when the model was repeatedly fitted to 50,000 resampled subsets of data (5000 repeats of 10-fold cross-validation). In each of the 5000 repetitions, the dataset was divided into 10-folds, of which 9-folds were used to perform an inner 10-fold cross-validation to find the best value of λ (shrinkage parameter) that maximizes the area under the receiver operating characteristic (AUROC) and in turn select the antibody features; using other performance measures such as binomial deviance gave the same ranking of the features according to selection frequencies. In each resampling iteration, the majority group (50 women with placental malaria) was downsampled to have an equal number of observations in both groups, thus avoiding overfitting the model to the majority group. The resampling process was repeated where $\alpha$ was also tuned over the set {0, 0.25, 0.5, 0.75, 1} (instead of only $\alpha=0.5$) in addition to λ, and the results showed that the final top frequently selected variables do not change (see Figure 2—figure supplement 1).
 
 Partial least squares discriminant analysis (PLSDA) (Barker and Rayens, 2003) was subsequently applied on the results of the ENLR to reassert the set of selected antibody features and find a minimal set of antibody features that accurately classifies the pregnant women; two components were selected for the PLSDA model (exception: one component was used where the model included only one feature). The antibody features were added to the PLSDA model one by one, from the highest to lowest selection frequency as estimated by the ENLR, and the minimal set of features beyond which the accuracy did not improve significantly were selected as the final set of key antibody features (Gunn et al., 2018); 500 repeats of 10-fold cross-validation were performed to compute the accuracies. The statistical significance of the results was assessed by comparing the performance of the model with that of two random permutation tests (null cases): (1) the PLSDA model was fitted to six randomly selected antibody features and the performance was computed for 500 repeats of 10-fold cross-validation resampling; (2) 100 datasets were generated by randomly permuting the group labels (PM and NPI) and the same analysis performed for the original dataset (i.e., building PLSDA models using the top six frequently selected antibody features found by resampling of elastic net) was repeated for each dataset.
 
@@ -166,23 +518,51 @@ All of the computations were performed in the R software (R Development Core Tea
 
 ## Results
 
-## Cohort description
+### Cohort description
 
 We measured antibody features in plasma samples collected at enrollment (mean 21 weeks’ gestation) in 127 women and assessed the influence of antibody features on the presence of placental malaria at delivery. All women resided in malaria-exposed areas, and 17 were positive for P. falciparum at enrollment (by PCR and/or light microscopy). Women were selected based on P. falciparum infection status at delivery, using histology to define placental malaria (Bulmer et al., 1993). The cohort comprised 50 women who subsequently had no P. falciparum parasites detected on placental histology and were PCR negative for peripheral parasitemia at delivery (non-infected), 50 women who had P. falciparum parasites in the placenta by histology (placental malaria), and 27 women who had no P. falciparum parasites in the placenta by histology but who had peripheral blood parasitemia by PCR and/or light microscopy (non-placental infection) at delivery. Of the latter group, 10 were also PCR positive in placental blood, consistent with free circulation of early-stage parasites throughout the body. SP and azithromycin was more efficacious against placental malaria than SP-chloroquine (Unger et al., 2015), but antimalarial regimes were similarly distributed between groups. The three groups were frequency matched for primigravidity, IPTp regime receipt, bed net use, rural residency, and age, and all three groups had similar clinical characteristics at enrollment (Table 1).
 
-## Measurement of antibody features
+### Measurement of antibody features
 
-We initially studied antibody to an array of recombinant VAR2CSA DBL proteins (see Figure 1—figure supplement 1 for a schematic of VAR2CSA). Thirteen features of antibody towards recombinant forms of each of the six DBL domains were measured by multiplex in the 127 women. In order to consider antigenic diversity (Benavente et al., 2018), four of the DBLs were also represented by an additional recombinant protein from a heterologous parasite strain (see Supplementary file 1 for details of recombinant proteins). Antibody features measured by multiplex included antibody isotypes (IgG, IgA, IgM) and subclasses (IgG1, IgG2, IgG3, IgG4, IgA1, IgA2), and the ability of antigen-specific antibody to bind Fcy receptors (FcyR) and complement protein C1q (which assesses the ability of antibodies to activate the classical complement cascade). Thus, using samples from the 127 women and measuring 13 antibody features directed at 10 DBL domains, 15,340 out of 16,510 possible data points were acquired (see  Figure 1—figure supplement 2 for a flow chart of data acquisition).
+We initially studied antibody to an array of recombinant VAR2CSA DBL proteins (see Figure 1—figure supplement 1 for a schematic of VAR2CSA). Thirteen features of antibody towards recombinant forms of each of the six DBL domains were measured by multiplex in the 127 women. In order to consider antigenic diversity (Benavente et al., 2018), four of the DBLs were also represented by an additional recombinant protein from a heterologous parasite strain (see Supplementary file 1 for details of recombinant proteins). Antibody features measured by multiplex included antibody isotypes (IgG, IgA, IgM) and subclasses (IgG1, IgG2, IgG3, IgG4, IgA1, IgA2), and the ability of antigen-specific antibody to bind Fcy receptors (FcyR) and complement protein C1q (which assesses the ability of antibodies to activate the classical complement cascade). Thus, using samples from the 127 women and measuring 13 antibody features directed at 10 DBL domains, 15,340 out of 16,510 possible data points were acquired (see Figure 1—figure supplement 2 for a flow chart of data acquisition).
 
 Levels of antibody features measured by multiplex were compared between non-infected and placental malaria, and between non-placental infection and placental malaria groups. Volcano plots summarizing the two comparisons of the multiplex data are given in Figure 1 (see Supplementary file 2 for individual univariate analyses). Notably, levels of antibody to DBL domains at enrollment were similar between non-infected women at delivery and those with placental malaria (Figure 1A), whereas multiple antibody features were higher in women with non-placental infection than in placental malaria, indicating potential roles in protection (Figure 1B). Antibody features that were higher in women with non-placental infection compared to those with placental malaria included DBL2-specific IgG3, IgA2, IgG2, and IgG4 (IgG3.DBL2(ID1-ID2a).FCR3, IgA2.DBL2.1010, IgG2.DBL2(ID1-ID2a).FCR3, and IgG4.DBL2.1010, respectively) as well as DBL3-specific antibodies that bind FcγRIIIb (FcγRIIIB.DBL3.FCR3) and DBL5-specific IgG2 and IgG4 (IgG2.DBL5.0466 and IgG4.DBL5.0466). Thus, we selected DBL2, DBL3, and DBL5 for the assessment of functional antibody features using cell-based assays in order to provide insights into the mechanistic contribution of these enhanced antibody populations. To investigate whether the higher antibody levels seen in the non-placental infection group were just correlates of exposure, we also measured IgG levels to non-pregnancy-specific P. falciparum antigens merozoite surface protein-1 (MSP-1) and schizont extract (which are associated with exposure Barua et al., 2019) by ELISA and compared the levels between groups. IgG levels to neither MSP-1 nor schizont extract were higher in women without placental malaria (Supplementary file 2), suggesting that differences in antibody to pregnancy specific antigens were not simply due to exposure. As antibody responses did not significantly differ between non-infected and placental malaria groups, further data analysis was restricted to those 77 women with non-placental infection or with placental malaria.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65776/elife-65776-fig1-v2.jpg)
+
+**Figure 1.:** Fold-change (log2 transformed), characterizing the magnitude of difference between the antibody levels of two groups (x-axis), is plotted against the -log10 p-value, characterizing the statistical significance of the difference (y-axis). The vertical dotted lines (log2(2) and log2(0.5)) mark a threshold for a twofold change, and the horizontal dotted lines (log10(0.05)) mark the statistical significance threshold (p≤0.05, Welch’s t-test). Antibody features beyond the thresholds are shown in blue and labeled.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65776/elife-65776-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** DBL2, which is involved in binding to chondroitin sulfate A, is highlighted in light purple. DBL: Duffy binding-like domain; ID: interdomain region; TM: transmembrane segment; ATS: acid terminal segment.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65776/elife-65776-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** NPI: non-placental infection; PM: placental malaria; NI: non-infected; IE: infected erythrocyte; PLSDA: partial least squares discriminant analysis.
+
 We next measured responses to native protein on the surface of IEs of P. falciparum lines CS2 (which is isogenic with FCR3) and 3D7 that had been selected for high levels of CSA adhesion and studied whether antibody-opsonized IE and beads coated with recombinant DBL domains could activate leukocytes or promote phagocytosis to identify which antibody features associated with innate immune cells play important roles in parasite clearance or killing. We adapted existing cellular assays to measure ADCP of DBL protein-coated fluorescent beads and IE using THP-1 cells (Ackerman et al., 2011; Teo et al., 2015) and to measure NK cell activation following IgG binding to DBL proteins in plate-based assays (Jegaskanda et al., 2014; Lu et al., 2016). We also developed novel assays of ADCP by primary monocytes, and ADNP using primary human neutrophils, with IE and DBL-coated beads as their targets, as well as assays to measure ADRB with IEs or DBL proteins coated onto plates as their targets. Thus up to nine different cellular responses towards DBL2, DBL3, and DBL5 were measured. Additionally, six features of antibody to VSA of two strains of CSA-binding IE were measured, namely IgM, IgG, and IgG subclass binding to VSA, and the ability of antibodies to block CSA binding was assessed (see Supplementary file 3 for a table listing all antibody features measured). With 39 variables for 77 women, 2997 measurements (99.8% of possible 3003) were acquired. When added to the multiplex data, 169 variables with a total of 12,906 measurements (99.2% of 13,013) were used in subsequent analyses (see Figure 1—figure supplement 1 for the flow chart). None of the women had any data missing for the outcome variable, and 11 out of 77 women had data missing for one or more of the 169 predictor variables.
 
-## Identifying antibody features at enrollment that differentiate women with non-placental infection and placental malaria at delivery
+### Identifying antibody features at enrollment that differentiate women with non-placental infection and placental malaria at delivery
 
 We used a combination of ENLR and PLSDA to identify a set of antibody features that could best differentiate women with non-placental infection from those who had placental malaria at delivery (Gunn et al., 2018). Initially, the ENLR model was repeatedly fitted to randomly resampled subsets of the data and the selection frequency and the effect size (odds ratio) of the antibody features were calculated (Figure 2); only the top 20 antibody features with highest selection frequency are shown. The results show the antibody features that were consistently selected (Figure 2A) and have a high effect on discriminating the group of pregnant women (Figure 2B). The frequently selected antibody features were positively associated with non-placental infection (Figure 2B), and the effect of the antibody features on the odds of belonging to the non-placental infection group increased as the selection frequency increased.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65776/elife-65776-fig2-v2.jpg)
+
+**Figure 2.:** Resampling (5000 repeats of 10-fold cross-validation) was used to obtain the selection frequencies and the odds ratios. (A) The top 20 antibody features are ranked in ascending order of selection frequency. (B) Boxplots of the estimated odds ratios, an odds ratio >1 indicates the antibody feature is positively associated with non-placental infection at delivery. Boxplots are median, IQR, whiskers (the lowest data point that falls between Q1 and 1.5 * Q1 IQR, the highest data point that falls between Q3 and 1.5 * Q3 IQR). IQR: interquartile range.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65776/elife-65776-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Selection frequencies estimated across all $\alpha$ values {0, 0.25, 0.5, 0.75 1} using the resampling of elastic net-regularized logistic regression.See section Identification of key antibody features.
+
 A minimal subset of antibody features that could accurately separate the two groups was then identified by adding the antibody features into a PLSDA model one by one (based on the selection frequency; Figure 2A). The mean AUROC and accuracy of classifying women with non-placental infection do not increase significantly after the inclusion of the six top features (Figure 3A). The performance of the model with these six selected features was then compared with the results of two random permutation tests (Figure 3B). The results show that the model with the six selected features performed significantly better than the PLSDA models with randomly selected features. The AUROC is also significantly higher than that of the permutation test where the group labels were randomly permuted (Figure 3B). The AUROC for the six features corresponds to a median accuracy of 0.86 (Figure 3—figure supplement 1) and means that the model with these six antibody features can accurately classify, on average, 86% of the women.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/65776/elife-65776-fig3-v2.jpg)
+
+**Figure 3.:** (A) Performance of PLSDA at classifying women as having placental malaria (PM) or non-placental infection (NPI) when the features (ranked by selection frequency using the elastic net; Figure 2) are added one by one to the model from highest to lowest rank (500 repeats of 10-fold cross-validation were performed to estimate accuracy for each model). The three lines represent the accuracy of classification of all women in the cohort (black), those with NPI (blue), and those with PM (red). The vertical dashed line denotes the cutoff beyond which the accuracy does not change significantly by adding more antibody features (used for selecting the minimal set of features). (B) Comparing the performance of the elastic net-regularized logistic regression (ENLR) + PLSDA applied on the original data of the top six variables (rightmost boxplot) with two permutation tests (null cases): (1) the PLSDA model was fitted to six randomly selected antibody features and the performance was computed for 500 repeats of 10-fold cross-validation resampling; (2) 100 datasets were generated by randomly permuting the group labels (PM and NPI) and the same analysis performed for the original dataset (i.e., building PLSDA models using the top six frequently selected antibody features found by resampling of elastic net) was repeated for each dataset. (C) Segregation of women with NPI (blue) and PM (red) using the scores of the two components of the PLSDA model with data from the selected six antibody features. The background colors show the predicted classification of the women for all the possible score values in the depicted range. (D) Feature loadings on the components of the PLSDA of the six selected antibody features (see Figure 3—source data 1 for more details about the factor loadings and group prediction using the PLSDA). Boxplots are median, IQR, whiskers (the lowest data point that falls between Q1 and 1.5 * Q1 IQR, the highest data point that falls between Q3 and 1.5 * Q3 IQR). IQR: interquartile range; AUROC: area under the receiver operating characteristic curve.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65776/elife-65776-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The three lines represent the accuracy of classification of all women in the cohort (black), those with non-placental infection (blue), and those with placental malaria (red). The vertical dashed line denotes the cutoff beyond which the accuracy does not change significantly by adding more antibody features (used for selecting the minimal set of features).
 
 The segregation of the pregnant women and the loadings on the components of the PLSDA model for the six selected features are illustrated in Figure 3C, D. The loading components illustrate that the segregation of the observations by the PLSDA was largely driven by the top two variables identified by ENLR, DBL2-specific IgG3 (IgG3.DBL2(ID1-ID2a).FCR3), and ADCP of the CSA-binding IE CS2 by THP1 (THP1.Phago.CS2).
 
@@ -190,7 +570,15 @@ As immunity against placental malaria increases with gravidity (Fried et al., 19
 
 Closer inspection of the features using a correlation network of the 77 women provided information about the relationships between different antibody features (Figure 4). Distinct clustering of some antibody features was apparent; for example, IgA1, IgA2, IgG4, and IgM to recombinant DBL domains formed four distinct clusters. Similar functions sometimes also clustered together (e.g., primary monocyte and THP1 cell phagocytosis of DBL domain-coated beads). Multiplex measurement of IgG, IgG1, IgG3, and ability of antibody to bind FcyRs and C1q for all the different DBLs formed one large cluster, highlighting the collinearity of many of the antibody features measured towards recombinant proteins. Importantly, the six features identified by ENLR + PLSDA were spread throughout the correlation network and were not well correlated with each other (Figure 4, Figure 4—figure supplement 1).
 
-## Antibody features selected highlight the importance of functional antibodies towards the infected erythrocyte and DBL2
+![Figure 4.](https://cdn.elifesciences.org/articles/65776/elife-65776-fig4-v2.jpg)
+
+**Figure 4.:** Correlation network of all antibody features in both women with non-placental infection and those with placental malaria. The six selected antibody features do not cluster together. Antibody features with similar functions (denoted by the same letter) tend to correlate with each other. Blue: positive correlation; red: negative correlation; line width and closeness of variables increase with increasing correlation coefficients; only significant correlations (after Bonferroni correction for multiple comparisons) are shown. Selected antibody features identified by elastic net are highlighted and labeled. See supplementary file 3 for a full list of feature names.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65776/elife-65776-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Color and size of dots represent estimates of the correlation coefficient (r) (the further the correlation coefficient from 0 the larger the dot).
+
+### Antibody features selected highlight the importance of functional antibodies towards the infected erythrocyte and DBL2
 
 The six selected features included IgG3 to DBL2 (IgG3.DBL2(ID1-ID2a).FCR3), ADCP, and ADNP of CSA-binding IE (THP1.Phago.CS2 and Neutrophil.Phago.CS2, respectively), binding inhibition of IE to CSA (CSA.Binding.Inhibition.FCR3), IgA2 to DBL2 (IgA2.DBL2.1010), and IgG3 to CSA binding IE (IgG3.3D7). For all six features, antibody levels were significantly higher in the non-placental infection group compared to the placental malaria group (Figure 5A–F), but the patterns of antibody responses distinguishing the two groups were not uniform. For example, some women in the non-placental infection group had no measurable levels of THP1.phago.CS2, IgG3.3D7 or IgG2.DBL5.0466 antibody. This indicated that there are multiple mechanisms for antibodies to confer protection. To investigate this further, we constructed a heat map of the Z-score of each feature against individual women and compared the groups with non-placental infection and placental malaria (Figure 5G). Within these two cohorts, there was significant variation in individual profiles and no evidence for a unique and consistent profile of antibody functions in all individuals with non-placental infection. Overall, the women with non-placental infection had significantly higher levels of most of the identified antibody features; 81% of women with non-placental infection had a Z-score >0 for at least four antibody features (compared to 26% of those with placental malaria). Looking at just the three functional measures, 52% of women with non-placental infection had elevated antibodies (a Z-score >0) that both promoted IE phagocytosis by THP-1 cells and/or neutrophils and inhibited binding of IE to CSA, compared to 18% of women with placental malaria (Figure 5G).
 
@@ -204,7 +592,7 @@ We used a systems serology approach to broadly characterize antibody responses t
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/65776/elife-65776-fig6-v2.jpg)
 
-**Figure 6.:** A) inhibiting infected red blood cells from binding chondroitin sulfate A (CSA) and sequestering in the placenta and/or (B) promoting phagocytosis of infected red blood cells by monocytes and/or neutrophils.Selected features that may inhibit placental sequestration include IgG3 to the whole infected red blood cell and IgG3 and IgA2 to VAR2CSA's CSA binding domain DBL2. Selected features that may promote parasite clearance by antibody dependent phagocytosis include IgG3 to the whole infected red blood cell and to DBL2, IgA2 to DBL2, and neutrophil and monocyte phagocytosis of whole infected red blood cells. ADNP: antibody-dependent neutrophil phagocytosis; ADCP: antibody-dependent cellular phagocytosis; VAR2CSA: a parasite protein expressed on the surface of the infected red blood cell, made up of Duffy binding-like domains (DBL).
+**Figure 6.:** Selected features that may inhibit placental sequestration include IgG3 to the whole infected red blood cell and IgG3 and IgA2 to VAR2CSA's CSA binding domain DBL2. Selected features that may promote parasite clearance by antibody dependent phagocytosis include IgG3 to the whole infected red blood cell and to DBL2, IgA2 to DBL2, and neutrophil and monocyte phagocytosis of whole infected red blood cells. ADNP: antibody-dependent neutrophil phagocytosis; ADCP: antibody-dependent cellular phagocytosis; VAR2CSA: a parasite protein expressed on the surface of the infected red blood cell, made up of Duffy binding-like domains (DBL).
 
 We hypothesized that pregnant women who had P. falciparum peripheral blood parasitemia at delivery but who did not have placental sequestration were protected from placental malaria by antibody immunity targeting VAR2CSA, and we sought to determine the characteristics of this protective antibody response. We frequency matched groups on participant characteristics such as gravidity and urban or rural residence to minimize confounding by these variables that are known to affect exposure and immunity. Antibody features at enrollment did not differ between women with placental malaria and those who were uninfected at delivery, but they did differ between infected women with and without placental malaria at delivery.
 

@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.44003.001 Piezo1 and Piezo2 belong to a family of mechanically-activated ion channels implicated in a wide range of physiological processes. Mechanical stimulation triggers Piezo channels to open, but their characteristic fast inactivation process results in rapid closure. Several disease-causing mutations in Piezo1 alter the rate of inactivation, highlighting the importance of inactivation to the normal function of this channel. However, despite the structural identification of two physical constrictions within the closed pore, the mechanism of inactivation remains unknown. Here we identify a functionally conserved inactivation gate in the pore-lining inner helix of mouse Piezo1 and Piezo2 that is distinct from the two constrictions. We show that this gate controls the majority of Piezo1 inactivation via a hydrophobic mechanism and that one of the physical constrictions acts as a secondary gate. Our results suggest that, unlike other rapidly inactivating ion channels, a hydrophobic barrier gives rise to fast inactivation in Piezo channels.
+Piezo1 and Piezo2 belong to a family of mechanically-activated ion channels implicated in a wide range of physiological processes. Mechanical stimulation triggers Piezo channels to open, but their characteristic fast inactivation process results in rapid closure. Several disease-causing mutations in Piezo1 alter the rate of inactivation, highlighting the importance of inactivation to the normal function of this channel. However, despite the structural identification of two physical constrictions within the closed pore, the mechanism of inactivation remains unknown. Here we identify a functionally conserved inactivation gate in the pore-lining inner helix of mouse Piezo1 and Piezo2 that is distinct from the two constrictions. We show that this gate controls the majority of Piezo1 inactivation via a hydrophobic mechanism and that one of the physical constrictions acts as a secondary gate. Our results suggest that, unlike other rapidly inactivating ion channels, a hydrophobic barrier gives rise to fast inactivation in Piezo channels.
 
 ## Introduction
 
@@ -24,45 +24,61 @@ The mechanically gated ion channels, Piezo1 and Piezo2, are critical for a broad
 
 Functional Piezo channels are homo-trimers that adopt a unique propeller-like architecture comprising a central C-terminal ion-conducting pore and three peripheral N-terminal blades (Figure 1A) (Guo and MacKinnon, 2017; Saotome et al., 2018; Zhao et al., 2018). Each blade is composed of 36 transmembrane (TM) segments and is thought to contribute to sensing tension in the membrane (Guo and MacKinnon, 2017; Haselwandter and MacKinnon, 2018). The pore region, which contains an outer pore helix (OH), an inner pore helix (IH), an extracellular cap domain and an intracellular C-terminal domain (CTD), is responsible for ion conduction. The ion permeation pathway is lined by the IH within the membrane and is surrounded by the CTD as it continues into the cytoplasm. All three cryo-electron microscopy (cryo-EM) structures of Piezo1 indicate the presence of two physical constrictions in the CTD: one formed by residues M2493/F2494 (MF constriction) and the other by residues P2536/E2537 (PE constriction) (Figure 1B and C) (Zhao et al., 2018; Saotome et al., 2018; Guo and MacKinnon, 2017). These constrictions define minimum pore diameters of 6 Å and 4 Å, respectively, thus the structures are assumed to represent a closed state.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/44003/elife-44003-fig1-v2.jpg)
+
+**Figure 1.:** (A) Topology diagram and cryo-EM structure of Piezo1 (PDB: 6BPZ). IH, inner pore helix; OH, outer pore helix. (B) Side view and top view of the Piezo1 pore region from three cryo-EM structures showing the location of the MF and PE constrictions. (C) Top view close-up of the MF and PE constrictions in Piezo1 (PDB: 6BPZ). (D) Representative whole-cell MA current traces and quantification of MA current inactivation rate (τinact) in HEK293TΔP1 cells expressing Piezo1 with mutations at the M2493 F2494 (MF) site (n = 7–9 cells). Ehold = −80 mV. ***p<0.001; NS, not significant, p>0.05, one-way ANOVA with Holm-Sidak’s correction. (E and F) Representative whole-cell MA current traces and quantification of MA current inactivation for WT Piezo1 and P2536G/E2537G mutant. **p<0.001, unpaired t-test. (G) Quantification of peak MA current amplitude (Ipeak) at different indentation depths for WT Piezo1 and P2536G/E2537G mutant. ***p<0.001, two-way ANOVA. Data are mean ± SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44003/elife-44003-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A and B) Representative whole-cell MA current traces recorded in HEK293TΔP1 cells expressing Piezo1 with mutations at the putative inactivation gate (L2475S/V2476S) and PE constriction (P2536G/E2537G). Ehold = −80 mV. Current traces were normalized to peak current amplitude to highlight the differences in the kinetics of persistent current decay. Blue arrows indicate points of measurements of current amplitude at the end of mechanical stimulus (Ipost) and 100 ms after the removal of mechanical stimulus (Iremaining). (C) Quantification of Iremaining/Ipost for the indicated mPiezo1 mutants (***p<0.001, unpaired t-test). Data are mean ± SEM.
+
 Here, we combine electrophysiology and mutagenesis to investigate the mechanism of inactivation in Piezo1 and Piezo2. We show that the major inactivation element comprises two conserved hydrophobic residues, located above the MF and PE constrictions, in the middle portion of the inner helix. The constrictions evident in Piezo1 structures play moderate roles in Piezo1 inactivation. Our results suggest that Piezo1 inactivation is accomplished by at least two gates, one of which acts as a hydrophobic barrier.
 
 ## Results
 
-## Physical constrictions in the CTD play only moderate roles in Piezo1 inactivation
+### Physical constrictions in the CTD play only moderate roles in Piezo1 inactivation
 
 We first sought to determine whether the MF and PE constrictions evident in the CTD of Piezo1 structures contribute to inactivation of Piezo1-mediated MA current. To test this, we introduced mutations at the M2493/F2494 site and assessed the rate of MA current inactivation in HEK293PIEZO1-/- (HEK293TΔP1) cells (Dubin et al., 2017; Lukacs et al., 2015) in response to a 300 ms mechanical indentation with a glass probe. Overexpression of wild-type (WT) mouse Piezo1 in HEK293TΔP1 cells produced robust MA currents with fast inactivation kinetics (time constant of inactivation (τinact) = 11.9 ± 0.6 ms) (Figure 1D). Systematic amino acid substitutions at the M2493/F2494 site to hydrophilic or hydrophobic residues had either no effect on τinact (MF/SS, τinact = 13.3 ± 1.1 ms) or prolonged τinact by 1.6–2.7 fold (MF/QQ, NN, TT, GG, AA, VV, LL, II, WW, average τinact = 19.4–31.9 ms) (Figure 1D). These data reveal that the MF site only moderately contributes to Piezo1 inactivation. Moreover, even though the MF constriction is formed by hydrophobic residues (Figure 1C), we found no correlation between the rate of Piezo1 inactivation and hydrophobicity at this site.
 
 Next, we investigated the P2536/E2537 constriction, which is located more cytoplasmically than the MF constriction and forms a smaller diameter aperture (Figure 1B and C). Mutating P2536 and E2537 to glycines resulted in substantially reduced peak MA currents with only slightly prolonged inactivation (τinact = 17.6 ± 0.8 ms) (Figure 1E–G). These data suggest that the PE constriction is unlikely to be involved in Piezo1 inactivation. Instead, we found that the PE/GG mutation dramatically accelerated deactivation kinetics of a Piezo1 mutant (see below and Figure 1—figure supplement 1). Together, these data show that the physical constructions at the MF and PE sites in the CTD are important for channel function, but only moderately affect Piezo1 inactivation, suggesting that the main inactivation mechanism is located elsewhere in the channel.
 
-## The pore-lining inner helix plays a major role in Piezo1 inactivation
+### The pore-lining inner helix plays a major role in Piezo1 inactivation
 
 In search of the main structural element(s) of Piezo1 inactivation, we investigated the pore-lining inner helix (IH). We noticed that the middle portion of IH is lined with pore-facing hydrophobic residues (L2469, I2473, V2476 and F2480), two of which are contained within a cluster of conserved amino acids (2473IVLVV2477, Figure 2A). To examine whether these hydrophobic residues play a role in Piezo1 inactivation, we replaced each of them with a hydrophilic serine. We found that serine substitutions at L2475 and V2476, but not at other positions, significantly prolonged inactivation (L2475S, τinact = 62.2 ± 2.1 ms; V2476S, τinact = 46.8 ± 1.7 ms) (Figure 2B). Combining the two mutations had a cumulative effect, resulting in an almost ten-fold increase in τinact (L2475S/V2476S, τinact = 103.3 ± 2.9 ms). These data indicate that the L2475/V2476 (LV) site forms part of the inactivation mechanism of Piezo1. Interestingly, the LV/SS mutant exhibited a persistent current after removal of the mechanical stimulus (Figure 2B). The decay of the persistent current reflects deactivation of Piezo1 (Wu et al., 2016), which can be substantially accelerated by the P2536G/E2537G double mutation in the PE constriction (Figure 1—figure supplement 1). This supports the idea that the PE constriction could be involved in Piezo1 deactivation, in contrast to the inner helix LV site, which mediates inactivation.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/44003/elife-44003-fig2-v2.jpg)
+
+**Figure 2.:** (A) Left panel, amino acid sequence alignment of the Piezo1 inner helix (IH) from different species. A cluster of five conserved hydrophobic residues in the middle are highlighted. Red and blue dots indicate hydrophobic residues facing and pointing away from the pore, respectively. Right panel, cryo-EM structure of the Piezo1 inner helix (PDB: 6BPZ) showing the hydrophobic residues in the left panel. (B) Representative whole-cell MA current traces and quantification of MA current inactivation rate (τinact) in HEK293TΔP1 cells expressing Piezo1 with mutations in the hydrophobic cluster in the inner helix (n = 8–22 cells). Ehold = −80 mV. ***p<0.001; NS, not significant, p>0.05, one-way ANOVA with Dunnet’s correction. (C–E) Quantification of peak MA current amplitude (Ipeak) at different indentation depths (C), apparent indentation threshold of MA current activation (D) and MA current rise time (E) for WT and mutant Piezo1. NS, not significant, p>0.05, one-way ANOVA with Dunnet’s correction. (F) Peak MA current-voltage relationship in response to mechanical indentation at 9 μm for WT Piezo1 or indicated mutants. Insets show representative traces of whole-cell MA currents evoked at Ehold ranging from −100 mV to +100 mV, in 20 mV increments. (G) Quantification of the reversal potential (Erev) from current-voltage plots in (F). NS, not significant, p>0.05, one-way ANOVA with Dunnet’s correction. (H) Quantification of MA current inactivation rate for WT or mutant Piezo1 at different voltages. Data are mean ± SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44003/elife-44003-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative current-voltage curves measured from HEK293TΔP1 cells expressing WT or mutant Piezo1, in response to a voltage ramp from Ehold = −80 mV in the absence of mechanical stimulation. (B) Quantification of current densities at −100 mV or +100 mV for control (GFP, n = 6), WT Piezo1 (n = 7), L2475S (n = 8), V2476S (n = 7), or L2475S/V2476S (n = 9) (NS, not significant, one-way ANOVA analysis with Dunnett’s correction). Data are mean ± SEM.
+
 Next, we asked whether mutations at L2475 and V2476 affect inactivation specifically. We found that individual or combined serine substitutions at these sites had no effect on whole-cell MA current amplitude (Figure 2C), apparent threshold of mechanical activation (Figure 2D), MA current rise time (Figure 2E), or rectification and relative ionic selectivity (Figure 2F and G). Similar to WT Piezo1, the inactivation rate of the L2475S and V2476S mutants slowed with depolarization (Figure 2H), demonstrating that the mutations did not affect the voltage dependence of inactivation (Coste et al., 2010; Moroni et al., 2018; Wu et al., 2017b). Furthermore, the mutations did not affect basal current in the absence of mechanical stimulation, supporting the conclusion that these amino acids do not contribute to channel activation (Figure 2—figure supplement 1). Taken together, these results show that residues L2475 and V2476 are specifically involved in Piezo1 inactivation.
 
-## The hydrophobicity of L2475 and V2476 determines the rate of Piezo1 inactivation
+### The hydrophobicity of L2475 and V2476 determines the rate of Piezo1 inactivation
 
 Following our observation that the LV site forms part of a hydrophobic cluster in the pore-lining IH (Figure 2A), we hypothesized that the hydrophobicity of these residues determines Piezo1 inactivation. Strikingly, we found a strong correlation between hydrophobicity and the rate of Piezo1 inactivation at both positions. Mutating L2475 to the highly hydrophilic Q or N led to a substantial ~11 fold increase in τinact (L/Q, τinact = 124.5 ± 4.4 ms; L/N, τinact = 112.7 ± 5.4 ms) (Figure 3A). Mutations to ether serine or threonine produced a significant, but moderate increase (L/S, τinact = 62.2 ± 2.1 ms; L/T, τinact = 25.9 ± 1.8 ms). Bulky hydrophobic amino acid substitutions, on the other hand, led to either similar or faster inactivation compared to WT Piezo1 (L/V, τinact = 2.8 ± 0.3 ms; L/I, τinact = 2.8 ± 0.2 ms; L/F, τinact = 10.2 ± 0.4 ms) (Figure 3A). The small hydrophobic G or A substitutions at L2475 resulted in a smaller increase in τinact compared to the effects of large hydrophilic Q or N substitutions (L/G, τinact = 40.2 ± 1.4 ms; L/A, τinact = 22.1 ± 1.4 ms), lending support to the idea that hydrophobicity is the main factor determining Piezo1 inactivation at L2475 (Figure 3A). We also found a similar correlation between hydrophobicity at the V2476 position and inactivation rate (Figure 3B), suggesting that both residues contribute to Piezo1 inactivation via a similar mechanism. Importantly, the isosteric polar substitutions L2475N and V2476T, which presumably decrease hydrophobicity without affecting the size of the pore, both slowed Piezo1 inactivation. This underscores the importance of hydrophobicity, rather than pore size, in determining inactivation at these two positions. We therefore propose that L2475 and V2476 together form a hydrophobic inactivation gate in Piezo1.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/44003/elife-44003-fig3-v2.jpg)
 
-**Figure 3.:** (A and B) Representative whole-cell MA current traces and quantification of MA current inactivation rate (τinact) in HEK293TΔP1 cells expressing Piezo1 with indicated mutations of variable hydrophobicity at L2475 (A, n = 7–18 cells) and V2476 (B, n = 6–22 cells). Ehold = −80 mV. **p<0.01, ***p<0.001, one-way ANOVA with Holm-Sidak’s correction. Data are mean ± SEM.10.7554/eLife.44003.011Figure 3—source data 1.
+**Figure 3.:** (A and B) Representative whole-cell MA current traces and quantification of MA current inactivation rate (τinact) in HEK293TΔP1 cells expressing Piezo1 with indicated mutations of variable hydrophobicity at L2475 (A, n = 7–18 cells) and V2476 (B, n = 6–22 cells). Ehold = −80 mV. **p<0.01, ***p<0.001, one-way ANOVA with Holm-Sidak’s correction. Data are mean ± SEM.
 
-## Mutation of the inner helix and MF constriction eliminates Piezo1 inactivation
+### Mutation of the inner helix and MF constriction eliminates Piezo1 inactivation
 
 If the putative hydrophobic gate formed by the LV site is the only inactivation gate in Piezo1, then replacement of both residues with highly hydrophilic glutamines should lead to a complete loss of inactivation. Because long inactivation times render the use of τinact as a measure of current decay inefficient, we tested this hypothesis by measuring the fraction of remaining MA current during 300 ms mechanical stimuli compared to peak current (Iremaining/Ipeak). We found that the LV/QQ double mutant exhibited only a marginal prolongation of inactivation compared to the single substitutions (Iremaining/Ipeak at 300 ms, mean ± SEM: WT, 0.0058 ± 0.0007; L2475Q, 0.41 ± 0.03; V2476Q, 0.19 ± 0.03; LV/QQ, 0.49 ± 0.03) (Figure 4A and B). Thus, even though the majority of inactivation was eliminated in the LV/QQ mutant, the channel still exhibited some current decay, suggesting that another gate contributes to inactivation. Because Piezo1 inactivation is partially determined by the MF constriction in the CTD (Figure 1D), we introduced the MF/QQ mutations into the LV/QQ channel. Strikingly, the resultant quadruple mutant (LV/QQ-MF/QQ) showed a complete loss of inactivation (Iremaining/Ipeak = 0.89 ± 0.03 at 300 ms) (Figure 4A and B). We also consistently observed complete elimination of inactivation in Piezo1 by high speed pressure clamp in the cell-attached configuration, demonstrating that this result is independent of the method of mechanical stimulation (Figure 4C). Thus, our data suggest that the MF constriction in the CTD could act in concert with the inner helix hydrophobic LV gate to produce fast inactivation of Piezo1. Collectively, these data reveal that the two putative inactivation gates are sufficient to account for the inactivation of Piezo1 during mechanical stimulation.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/44003/elife-44003-fig4-v2.jpg)
 
-**Figure 4.:** (A) Representative whole-cell MA current traces from HEK293TΔP1 cells expressing Piezo1 with glutamine mutations in the putative hydrophobic gate (L2475/V2476, LV), or the MF constriction (M2493/F2494, MF). Ehold = −80 mV. (B) Left panel, an example trace of Piezo1 MA current illustrating the measurement of the ratio of remaining MA current amplitude (Iremaining) to peak (Ipeak) at different time points during current decay. Right panel, quantification of Iremaining/Ipeak for WT or mutant Piezo1. Data are mean ± SEM. (C) Representative cell-attached MA current traces induced by high-speed pressure clamp via application of a negative pipette pressure in HEK293TΔP1 cells expressing GFP (negative control), WT or mutant Piezo1. Ehold = −80 mV.10.7554/eLife.44003.013Figure 4—source data 1.
+**Figure 4.:** (A) Representative whole-cell MA current traces from HEK293TΔP1 cells expressing Piezo1 with glutamine mutations in the putative hydrophobic gate (L2475/V2476, LV), or the MF constriction (M2493/F2494, MF). Ehold = −80 mV. (B) Left panel, an example trace of Piezo1 MA current illustrating the measurement of the ratio of remaining MA current amplitude (Iremaining) to peak (Ipeak) at different time points during current decay. Right panel, quantification of Iremaining/Ipeak for WT or mutant Piezo1. Data are mean ± SEM. (C) Representative cell-attached MA current traces induced by high-speed pressure clamp via application of a negative pipette pressure in HEK293TΔP1 cells expressing GFP (negative control), WT or mutant Piezo1. Ehold = −80 mV.
 
-## The putative inner helix inactivation gate is functionally conserved in Piezo2
+### The putative inner helix inactivation gate is functionally conserved in Piezo2
 
 The L2475 and V2476 residues are conserved in the Piezo1 homologue, Piezo2 (L2750 and V2751, respectively) (Figure 5A). We therefore sought to determine whether these hydrophobic residues are also involved in Piezo2 inactivation. Substituting L2750 or V2751 with hydrophilic serine significantly prolonged inactivation (WT, τinact = 2.5 ± 0.1 ms; L2750S, τinact = 8.3 ± 0.5 ms; V2751A, τinact = 14.2 ± 1.4 ms) (Figure 5B and C). The double mutants LV/SS and LV/QQ did not result in functional channels. The effects of these serine substations were specific to inactivation and did not affect whole-cell MA current amplitude (Figure 5D), apparent activation threshold (Figure 5E), current rise time (Figure 5F), relative ion permeability (Figure 5G–I), or voltage dependence of inactivation (Figure 5J). These data suggest that the LV site in Piezo2 is specifically involved in inactivation, and that the putative inactivation gate in the inner helix is functionally conserved among Piezo channels. We also investigated the region in Piezo2 that is homologous to the secondary MF inactivation gate in Piezo1. In contrast to Piezo1, substituting M2767 and F2768 (homologous to M2493 and F2494 in Piezo1) with glutamines did not affect inactivation (MF/QQ, τinact = 2.7 ± 0.2 ms) (Figure 5B and C). These results show that, even though Piezo1 and Piezo2 share common elements of inactivation, their mechanisms are not identical and involve components specific to each channel.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/44003/elife-44003-fig5-v2.jpg)
 
-**Figure 5.:** (A) Amino acid sequence alignments of the IH and part of CTD between mouse Piezo1 and Piezo2 orthologues from indicated species. The conserved L2475 and V2476 residues in the IH are highlighted in blue and red; M2493 and F2494 in the CTD are highlighted purple. (B and C) Representative whole-cell MA current traces of WT and mutant Piezo2 (B), and quantification of MA current inactivation constant (τinact) in HEK293TΔP1 cells (C, n = 9–24 cells). Ehold = −80 mV. Data are mean ± SEM. **p<0.001; NS, not significant, one-way ANOVA with Dunnett’s correction. (D–F) Quantification of peak MA current amplitude (Ipeak) at different indentation depths (D), apparent indentation threshold of MA current activation (E) and MA current rise time (F) for WT and mutant Piezo2 in HEK293TΔP1 cells. Ehold = −80 mV. NS, not significant, p>0.05, one-way ANOVA with Dunnet’s correction. (G and H) Representative current traces (G) and quantification of peak MA current-voltage relationship (H) in response to mechanical indentation at 9 μm for WT or mutant Piezo2, evoked at Ehold ranging from −100 mV to +100 mV, in 20 mV increments. (I) Quantification of the reversal potential (Erev) from current-voltage plots in (H). NS, not significant, p>0.05, one-way ANOVA with Dunnet’s correction. (J) Quantification of MA current inactivation rate for WT or mutant Piezo2 in response to a 9 µm indentation at different voltages. Data are mean ±SEM.10.7554/eLife.44003.015Figure 5—source data 1.
+**Figure 5.:** (A) Amino acid sequence alignments of the IH and part of CTD between mouse Piezo1 and Piezo2 orthologues from indicated species. The conserved L2475 and V2476 residues in the IH are highlighted in blue and red; M2493 and F2494 in the CTD are highlighted purple. (B and C) Representative whole-cell MA current traces of WT and mutant Piezo2 (B), and quantification of MA current inactivation constant (τinact) in HEK293TΔP1 cells (C, n = 9–24 cells). Ehold = −80 mV. Data are mean ± SEM. **p<0.001; NS, not significant, one-way ANOVA with Dunnett’s correction. (D–F) Quantification of peak MA current amplitude (Ipeak) at different indentation depths (D), apparent indentation threshold of MA current activation (E) and MA current rise time (F) for WT and mutant Piezo2 in HEK293TΔP1 cells. Ehold = −80 mV. NS, not significant, p>0.05, one-way ANOVA with Dunnet’s correction. (G and H) Representative current traces (G) and quantification of peak MA current-voltage relationship (H) in response to mechanical indentation at 9 μm for WT or mutant Piezo2, evoked at Ehold ranging from −100 mV to +100 mV, in 20 mV increments. (I) Quantification of the reversal potential (Erev) from current-voltage plots in (H). NS, not significant, p>0.05, one-way ANOVA with Dunnet’s correction. (J) Quantification of MA current inactivation rate for WT or mutant Piezo2 in response to a 9 µm indentation at different voltages. Data are mean ±SEM.
 
 ## Discussion
 
@@ -86,19 +102,78 @@ The extracellular cap domain, which is located just above IH, has been shown to 
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293TPIEZO1-/- (HEK293TΔP1)</td>
+      <td>Dr. Ardem Patapoutian (Scripps Research Institute) (Lukacs et al., 2015)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mouse-Piezo2-Sport6</td>
+      <td>Dr. Ardem Patapoutian (Scripps Research Institute) (Coste et al., 2010)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mouse-Piezo1-pMO</td>
+      <td>(Anderson et al., 2018)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mouse-Piezo1 -IRES-EGFP</td>
+      <td>Dr. Ardem Patapoutian (Scripps Research Institute) (Coste et al., 2010) Addgene #80925</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_000306</td>
+      <td>Version 7</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pCLAMP</td>
+      <td>Molecular Devices (https://www.moleculardevices.com/)</td>
+      <td>RRID:SCR_011323</td>
+      <td>Version 10</td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 Further information and requests for resources and reagents should be directed to Sviatoslav Bagriantsev (slav.bagriantsev@yale.edu).
 
-## cDNA constructs and mutagenesis
+### cDNA constructs and mutagenesis
 
 The Mouse-Piezo2-Sport6 and Mouse-Piezo1-IRES-EGFP (Addgene #80925) were kind gifts from Ardem Patapoutian (Scripps Research Institute, CA) (Coste et al., 2010). The Mouse-Piezo1-pMO construct was described elsewhere (Anderson et al., 2018). Mutagenesis was performed using the QuikChange II XL Site-Directed Mutagenesis Kit (Agilent Technologies, La Jolla, CA) and confirmed by sequencing. Mutations in Piezo1 were made in Mouse-Piezo1-pMO except for mutants shown in Figure 4A, which were made in Mouse-Piezo1-IRES-EGFP.
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 HEK293T cells with genomic deletion of PIEZO1 (HEK293TΔP1, tested negative for mycoplasma) were a kind gift by Ardem Patapoutian (Scripps Research Institute), and were authenticated by PCR and sequencing as described elsewhere (Lukacs et al., 2015) (Dubin et al., 2017). Cells were cultured in Dulbecco’s modified Eagle’s medium supplemented with 10% fetal bovine serum and 1% penicillin/streptomycin (ThermoFisher Scientific, Waltham, MA). Transient transfection was performed using Lipofectamine 3000 (ThermoFisher) for Piezo1 or Lipofectamine 2000 (ThermoFisher) for Piezo2 according to the manufacturer’s instructions.
 
-## Electrophysiology
+### Electrophysiology
 
 Whole-cell patch-clamp recordings of mechano-activated currents from Piezo1 and Piezo2 were performed as previously described (Anderson et al., 2018). HEK293TΔP1 cells transfected with Piezo1 or Piezo2 were seeded onto matrigel-coated coverslips (BD Bioscience, Billerica, MA) 12–48 hr following transfection. For Piezo1 mutants that exhibit dramatically prolonged inactivation, such as L2475Q, V2475Q, LV/QQ or LV/QQ-MF/QQ, current measurements were performed 12–20 hr after transfection. Longer expression times caused toxicity. The extracellular solution contained (in mM): 140 NaCl, 5 KCl, 10 HEPES, 2.5 CaCl2, 1 MgCl2, 10 glucose (pH 7.4 adjusted with NaOH). Recording pipettes were made from borosilicate glass with 1.5 mm outer diameter (Warner Instruments, Hamden, CT) using a micropipette puller (Sutter Instruments, Novato, CA, model P-1000) and polisher (ALA Scientific Instruments, Farmingdale, NY). The polished pipette was back-filled with internal solution containing (in mM): 133 CsCl, 5 EGTA, 1 CaCl2, 1 MgCl2, 10 HEPES, 4 Mg-ATP, 0.4 Na2-GTP (pH 7.3 adjusted with CsOH). The pipette resistance varied from 1 to 3 MΩ when filled with the internal solution. The offset potential was corrected just before the gigaohm seal formation. Series resistance and membrane capacitance were compensated at 85%. Currents were recorded using a Multi-clamp 700-B patch-clamp amplifier and Digidata 1500 digitizer (Molecular Devices, Union City, CA), filtered at 10 kHz through an internal Bessel filter, and sampled at 20 kHz using a 500 MΩ feedback resistor. The pClamp 10 software (Axon Instruments, Union City, CA) was used for data acquisition and analysis. Recordings were not corrected for liquid junction potential.
 
@@ -106,6 +181,6 @@ For whole-cell recordings, mechanical stimuli were applied with a fire-polished,
 
 For cell-attached recordings of mechanically activated Piezo1 current, HEK293TΔP1 cells were prepared similarly to whole-cell recordings. Fire-polished patch pipettes with resistance of 1–2 MΩ were filled with solution containing (in mM): 130 NaCl, 5 KCl, 10 HEPES, 10 TEA-Cl, 1 CaCl2, 1 MgCl2, pH 7.3 (with NaOH). External solution contained (in mM): 140 KCl, 10 HEPES, 1 MgCl2, 10 glucose, pH 7.3 (with KOH). Stretch-activated Piezo1 currents were stimulated with stepwise, 500 ms negative pressure pulses (Δ10 mmHg with 3 s between stimuli) using a high speed pressure clamp system (HSPC-1, ALA Scientific Instruments). The membrane potential inside the patch was held at −80 mV. Data were recorded at a sampling frequency of 10 kHz using a 5 GΩ feedback resistor.
 
-## Statistical analysis
+### Statistical analysis
 
 Data were analyzed and plotted using GraphPad Prism 7.01 (GraphPad Software Inc, La Jolla, CA) and expressed as means ± SEM. Statistical analyses were carried out using Student’s tests when comparing two groups or one-way or two-way ANOVA for three or more groups, with corrections for multiple comparisons. Statistical tests were chosen based on sample size and normality of distribution. Sample size and statistical tests are reported in figure legends. A probability value (p) of less than 0.05, 0.01, 0.001 was considered statistically significant and indicated by *, **, and ***, respectively.

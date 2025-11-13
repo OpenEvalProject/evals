@@ -28,7 +28,7 @@ Spike sorting is a crucial step in electrophysiological studies of neuronal acti
 
 ## Introduction
 
-## Background
+### Background
 
 Direct electrical recording of extracellular potentials (Buzsáki, 2004; Seymour et al., 2017) is one of the most popular modalities for studying neural activity since it is possible to determine, with sub-millisecond time resolution, individual firing events from hundreds (potentially thousands) of cells, and to track the activity of individual neurons over hours or days. Recordings are acquired either from within the living animal (in vivo) or from extracted tissue (ex vivo), at electrodes separated by typically 5–25 µm, with baseline noise on the order of 10 µV RMS and 10–30 kHz sampling rate. Probes for in vivo use—which are usually needle-like to minimize tissue damage during insertion—include microwire monotrodes (Hubel, 1957; Nicolelis et al., 1997), tetrodes (Gray et al., 1995; Harris et al., 2000; Dhawale et al., 2017), and multi-shank probes (with typically 1–4 columns of electrodes per shank) on silicon (Csicsvari et al., 2003; Buzsáki, 2004; Jun et al., 2017b) or polymer (Kuo et al., 2013; Chung et al., 2019) substrates. Multiple such probes are often combined into arrays to cover a larger volume in tandem. For ex vivo use (e.g., explanted retina), planar, two-dimensional multi-electrode arrays (MEAs) are common, allowing channel counts of up to tens of thousands (Eversmann et al., 2003; Litke et al., 2004; Berdondini et al., 2005; Yuan et al., 2016; Tsai et al., 2017).
 
@@ -38,19 +38,19 @@ Most automated algorithms apply a sequence of steps that include filtering, dete
 
 In the last few years, many automated spike sorters have been released and are in wide use. Yet, there is little consensus about which is the best choice for a given probe, brain region and experiment type. Often, decisions are based not on evidence of accuracy or performance but rather on the ease of installation or usage, or historical precedent. Thus, the goals of extracting the highest quality results from experiments and of improving reproducibility across laboratories (Denker et al., 2018; Harris et al., 2016) make objective comparison of the available automated spike sorters a pressing concern.
 
-## Prior work
+### Prior work
 
 One approach to assessing spike sorter accuracy is to devise intrinsic quality metrics that are applied to each sorted unit, quantifying, for instance, the feature-space isolation of a cluster of firing events (Pouzat et al., 2002; Schmitzer-Torbert et al., 2005; Hill et al., 2011; Neymotin et al., 2011; Barnett et al., 2016; Chung et al., 2017). Another approach is to use biophysical validation methods such as examining cross-correlograms or discovered place fields (Li et al., 2015; Chung et al., 2017). However, the gold standard, when possible, is to evaluate the sorter by comparing with ground-truth data, that is using recordings where the spike train for one or more units is known a priori. Laboratory acquisition of such recordings is difficult and time-consuming, demanding simultaneous paired extracellular and intra-/juxta-cellular probes (Harris et al., 2000; Franke et al., 2015; Neto et al., 2016; Yger et al., 2018; Allen et al., 2018; Marques-Smith et al., 2018a). Since the number of ground-truth units collected in this way is currently small (one per recording), hybrid recordings (where known synthetic firing events are added to experimental data) (Marre et al., 2012; Steinmetz, 2015; Rossant et al., 2016; Pachitariu et al., 2016; Wouters et al., 2019), and biophysically detailed simulated recordings (Camuñas-Mesa and Quiroga, 2013; Hagen et al., 2015; Gratiy et al., 2018; Buccino and Einevoll, 2019), which can contain 1–2 orders of magnitude more ground-truth units, have also been made available for the purpose of method validation.
 
 Recently, such ground-truth data have been used to compare new spike sorting algorithms against preexisting ones (Einevoll et al., 2012; Pachitariu et al., 2016; Chung et al., 2017; Jun et al., 2017a; Lee et al., 2017; Yger et al., 2018). However, the choice of accuracy metrics, sorters, data sets, parameters, and code versions varies among studies, making few of the results reproducible, transparent, or comprehensive enough to be of long-term use for the community. To alleviate these issues, a small number of groups initiated web-facing projects to benchmark spike sorter accuracy, notably G-Node (Franke et al., 2012), a phy hybrid study (Steinmetz, 2015) and spikesortingtest (Mitelut, 2016). To our knowledge, these unmaintained projects are either small-scale snapshots or are only partially realized. Yet, in the related area of calcium imaging, leaderboard-style comparison efforts have been more useful for establishing community benchmarks (Freeman, 2015; Berens et al., 2018).
 
-## SpikeForest
+### SpikeForest
 
 We have addressed the above needs by creating and deploying the SpikeForest software suite. SpikeForest comprises a large database of electrophysiological recordings with ground truth (collected from the community), a parallel processing pipeline that benchmarks the performance of many automated spike sorters, and an interactive website that allows for in-depth exploration of the results. At present, the database includes hundreds of recordings, of the types specified above (paired and state-of-the-art biophysical simulation), contributed by eleven laboratories and containing more than 30,000 ground-truth units. Our pipeline runs the various sorters on the recordings, then finds, for each ground-truth unit, the sorted unit whose firing train is the best match, and finally computes metrics involving the numbers of correct, missing, and false positive spikes. A set of accuracy evaluation metrics are then derived per ground-truth unit for each sorter. By averaging results from many units of a similar recording type, we provide high-level accuracy summaries for each sorter in various experimental settings. In order to understand the failure modes of each sorter, SpikeForest further provides various interactive plots.
 
 A central aim of this project is to maximize the transparency and reproducibility of the analyses. To this end, all data—the set of recordings, their ground-truth firings, and firing outputs from all sorters—are available for public download via our Python API. SpikeForest itself is open-source, as are the wrappers to all sorters, the Docker (Merkel, 2014) containers, and all of the parameter settings used in the current study results. In fact, code to rerun any sorting task may be requested via the web interface, and is auto-generated on the fly. Both the code and the formulae (for accuracy, SNR, and other metrics) are documented on the site, with links to the source code repositories.
 
-## Contribution
+### Contribution
 
 Our work has three main objectives. The primary goal is to aid neuroscientists in selecting the optimal spike sorting software (and algorithm parameters) for their particular probe, brain region, or application. A second goal is to spur improvements in current and future spike sorting software by providing standardized evaluation criteria. This has already begun to happen as developers of some spike sorting algorithms have already made improvements in direct response to this project. As a byproduct, and in collaboration with the SpikeInterface project (Buccino et al., 2019), we achieve a third objective of providing a software package which enables laboratories to run a suite of many popular, open-source, automatic spike sorters, on their own recordings via a unified Python interface.
 
@@ -59,6 +59,191 @@ Our work has three main objectives. The primary goal is to aid neuroscientists i
 In conjunction with the SpikeInterface project (Buccino et al., 2019), the SpikeForest Python package provides standardized wrappers for the following popular spike sorters: HerdingSpikes2 (Hilgen et al., 2017), IronClust (Jun et al., in preparation), JRCLUST (Jun et al., 2017a), KiloSort (Pachitariu et al., 2016), KiloSort2 (Pachitariu et al., 2019), Klusta (Rossant et al., 2016), MountainSort4 (Chung et al., 2017), SpyKING CIRCUS (Yger et al., 2018), Tridesclous (Garcia and Pouzat, 2019), and WaveClus (Chaure et al., 2018; Quiroga et al., 2004). Details of each of these algorithms are provided in Table 1. Since each of these spike sorters operates within a unique computing environment, we utilize Docker (Merkel, 2014) and Singularity (Kurtzer et al., 2017) containers to rigorously encapsulate the versions and prerequisites for each algorithm, ensuring independent verifiability of results, and circumventing software library conflicts.
 
 The electrophysiology recordings (together with ground-truth information) registered in SpikeForest are organized into studies, and studies are then grouped into study sets. Table 1 details all study sets presently in the system. Recordings within a study set share a common origin (e.g., laboratory) and type (e.g., paired), whereas recordings within the same study are associated with very similar simulation parameters or experimental conditions.
+
+**Table 1.**
+ Table of spike sorting algorithms currently included in the SpikeForest analysis.Each algorithm is registered into the system via a Python wrapper. A Docker recipe defines the operating system and environment where the sorter is run. Algorithms with asterisks were updated and optimized using SpikeForest data. For the other algorithms, we used the default or recommended parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sorting algorithm</th>
+      <th>Language</th>
+      <th>Notes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HerdingSpikes2*</td>
+      <td>Python</td>
+      <td>Designed for large-scale, high-density multielectrode arrays. See Hilgen et al., 2017.</td>
+    </tr>
+    <tr>
+      <td>IronClust*</td>
+      <td>MATLAB and CUDA</td>
+      <td>Derived from JRCLUST. See Jun et al., in preparation.</td>
+    </tr>
+    <tr>
+      <td>JRCLUST</td>
+      <td>MATLAB and CUDA</td>
+      <td>Designed for high-density silicon probes. See Jun et al., 2017a.</td>
+    </tr>
+    <tr>
+      <td>KiloSort</td>
+      <td>MATLAB and CUDA</td>
+      <td>Template matching. See Pachitariu et al., 2016.</td>
+    </tr>
+    <tr>
+      <td>KiloSort2</td>
+      <td>MATLAB and CUDA</td>
+      <td>Derived from KiloSort. See Pachitariu et al., 2019.</td>
+    </tr>
+    <tr>
+      <td>Klusta</td>
+      <td>Python</td>
+      <td>Expectation-Maximization masked clustering. See Rossant et al., 2016.</td>
+    </tr>
+    <tr>
+      <td>MountainSort4</td>
+      <td>Python and C++</td>
+      <td>Density-based clustering via ISO-SPLIT. See Chung et al., 2017.</td>
+    </tr>
+    <tr>
+      <td>SpyKING CIRCUS*</td>
+      <td>Python and MPI</td>
+      <td>Density-based clustering and template matching. See Yger et al., 2018.</td>
+    </tr>
+    <tr>
+      <td>Tridesclous*</td>
+      <td>Python and OpenCL</td>
+      <td>See Garcia and Pouzat, 2019.</td>
+    </tr>
+    <tr>
+      <td>WaveClus</td>
+      <td>MATLAB</td>
+      <td>Superparamagnetic clustering. See Chaure et al., 2018; Quiroga et al., 2004.</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Table of study sets currently included in the SpikeForest analysis.Study sets fall into three categories: paired, synthetic, and curated. Each study set comprises one or more studies, which in turn comprise multiple recordings acquired or generated under the same conditions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study set</th>
+      <th># Rec. / # Elec. / Dur.</th>
+      <th>Source lab.</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Paired intra/extracellular</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>PAIRED_BOYDEN</td>
+      <td>19 / 32ch / 6-10min</td>
+      <td>E. Boyden</td>
+      <td>Subselected from 64, 128, or 256-ch. probes, mouse cortex</td>
+    </tr>
+    <tr>
+      <td>PAIRED_CRCNS_HC1</td>
+      <td>93 / 4-6ch / 6-12min</td>
+      <td>G. Buzsaki</td>
+      <td>Tetrodes or silicon probe (one shank) in rat hippocampus</td>
+    </tr>
+    <tr>
+      <td>PAIRED_ENGLISH</td>
+      <td>29 / 4-32ch / 1-36min</td>
+      <td>D. English</td>
+      <td>Hybrid juxtacellular-Si probe, behaving mouse, various regions</td>
+    </tr>
+    <tr>
+      <td>PAIRED_KAMPFF</td>
+      <td>15 / 32ch / 9-20min</td>
+      <td>A. Kampff</td>
+      <td>Subselected from 374, 127, or 32-ch. probes, mouse cortex</td>
+    </tr>
+    <tr>
+      <td>PAIRED_MEA64C_YGER</td>
+      <td>18 / 64ch / 5min</td>
+      <td>O. Marre</td>
+      <td>Subselected from 252-ch. MEA, mouse retina</td>
+    </tr>
+    <tr>
+      <td>PAIRED_MONOTRODE</td>
+      <td>100 / 1ch / 5-20min</td>
+      <td>Boyden, Kampff, Marre, Buzsaki</td>
+      <td>Subselected from paired recordings from four labs</td>
+    </tr>
+    <tr>
+      <td>Simulation</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SYNTH_BIONET</td>
+      <td>36 / 60ch / 15min</td>
+      <td>AIBS</td>
+      <td>BioNet simulation containing no drift, monotonic drift, and random jumps; used by JRCLUST, IronClust</td>
+    </tr>
+    <tr>
+      <td>SYNTH_JANELIA</td>
+      <td>60 / 4-64ch / 5-20min</td>
+      <td>M. Pachitariu</td>
+      <td>Distributed with KiloSort2, with and without simulated drift</td>
+    </tr>
+    <tr>
+      <td>SYNTH_MAGLAND</td>
+      <td>80 / 8ch / 10min</td>
+      <td>Flatiron Inst.</td>
+      <td>Synthetic waveforms, Gaussian noise, varying SNR, channel count and unit count</td>
+    </tr>
+    <tr>
+      <td>SYNTH_MEAREC_NEURONEX</td>
+      <td>60 / 32ch / 10min</td>
+      <td>A. Buccino</td>
+      <td>Simulated using MEAREC, varying SNR and unit count</td>
+    </tr>
+    <tr>
+      <td>SYNTH_MEAREC_TETRODE</td>
+      <td>40 / 4ch / 10min</td>
+      <td>A. Buccino</td>
+      <td>Simulated using MEAREC, varying SNR and unit count</td>
+    </tr>
+    <tr>
+      <td>SYNTH_MONOTRODE</td>
+      <td>111 / 1ch / 10min</td>
+      <td>Q. Quiroga</td>
+      <td>Simulated by Quiroga lab by mixing averaged real spike waveforms</td>
+    </tr>
+    <tr>
+      <td>SYNTH_VISAPY</td>
+      <td>6 / 30ch / 5min</td>
+      <td>G. Einevoll</td>
+      <td>Generated using VISAPy simulator</td>
+    </tr>
+    <tr>
+      <td>Human curated</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MANUAL_FRANKLAB</td>
+      <td>21 / 4ch / 10-40min</td>
+      <td>L. Frank</td>
+      <td>Three manual curations of the same recordings</td>
+    </tr>
+  </tbody>
+</table>
 
 Each time the collection of spike sorting algorithms and ground-truth datasets are updated, our pipeline, depicted in Figure 1, reruns the ten sorters on the recordings. It then finds, for each ground-truth unit, the sorted unit whose firing train is the best match, and finally computes metrics involving the numbers of correct, missing, and false positive spikes. A set of accuracy evaluation metrics are then derived per ground-truth unit for each sorter and displayed on the website.
 
@@ -70,7 +255,7 @@ Each time the collection of spike sorting algorithms and ground-truth datasets a
 
 **Figure 2.:** The left columns of the table show the average accuracy (see (5)) obtained from averaging over all ground-truth units with SNR above an adjustable threshold, here set to 8. The right columns show the number of ground-truth units with accuracy above an adjustable threshold, here set to 0.8. The first five study sets contain paired recordings with simultaneous extracellular and juxta- or intra-cellular ground truth acquisitions. The next six contain simulations from various software packages. The SYNTH_JANELIA, obtained from Pachitariu et al., 2019, is simulated noise with realistic spike waveforms superimposed at known times. The last study set is a collection of human-curated tetrode data. An asterisk indicates an incomplete (timed out) or failed sorting on a subset of results; in these cases, missing accuracies are imputed using linear regression as described in the Materials and methods. Empty cells correspond to excluded sorter/study set pairs. These results reflect the analysis run of March 23rd, 2020.
 
-## Web interface
+### Web interface
 
 The results of the latest SpikeForest analysis may be found at https://spikeforest.flatironinstitute.org and are updated on a regular basis as the ground-truth recordings, sorting algorithms, and sorting parameters are adjusted based on community input. The central element of this web page is the main results matrix (Figure 2) which summarizes results for each sorter listed in Table 1 (using formulae defined later by Equation 5). The average accuracies are mapped to a color scale (heat map), with darker blue indicating higher accuracy, using a nonlinear mapping designed to highlight differences at the upper end. For the average accuracy table on the left, only ground-truth units with SNR above a user-adjustable threshold are included in the average accuracy calculations; the user may then explore interactively the effect of unit amplitude on the sorting accuracies of all sorters. If a sorter either crashes or times out (>1 hr run time) on any recording in a study set, an asterisk is appended to that accuracy result, and the missing values are imputed using linear regression as described in the Materials and methods section (there is also an option to simply exclude the missing data from the calculation).
 
@@ -82,13 +267,13 @@ Clicking on any result expands the row into its breakdown across studies. Furthe
 
 **Figure 3.:** (left) Scatter plot of accuracy vs. SNR for each ground-truth unit, for a particular sorter (KiloSort2) and study (a simulated drift dataset from the SYNTH_JANELIA study set). The SNR threshold for the main table calculation is shown as a dashed line, and the user-selected unit is highlighted. Marker area is proportional to the number of events, and the color indicates the particular recording within the study. (right) A subset of spike waveforms (overlaid) corresponding to the selected ground truth unit, in four categories: ground truth, sorted, false negative, and false positive.
 
-## Parallel operation and run times
+### Parallel operation and run times
 
 Since neuroscientist users also need to compare the efficiencies (speeds) of algorithms, we measure total computation time for each algorithm on each study, and provide this as an option for display on the website via a heat map. Run times are measured using our cluster pipeline, which allocates a single core to each sorting job on shared-memory multi-core machines (with GPU resources as needed). Since many jobs thus share I/O and RAM bandwidth on a given node, these cannot be taken as accurate indicators of speeds in ideal, or even typical, laboratory settings. We emphasize that our pipeline has been optimized for generation and updating of the accuracy results, not for speed benchmarking. For these reasons, we will not present run time comparisons in this paper, referring the interested reader to the website. Here we only note that older sorters such as Klusta can be over 30 times slower than more recent GPU-enabled sorters such as KiloSort and IronClust.
 
 At present, the total compute time for the 650 recordings and 10 sorters is 380 core hours, yet it takes only 3–4 hr (excluding failing jobs) to complete this analysis when run in parallel on our compute cluster with up to 100–200 jobs running simultaneously (typically 14 jobs per node). Since the system automatically detects which results require updating, the pipeline may be run on a daily basis utilizing minimal compute resources for the usual situation where few (if any) updates are needed.
 
-## Sorter accuracy comparison results
+### Sorter accuracy comparison results
 
 We now draw some initial conclusions about the relative performances of the spike sorters based on the threshold choices in Figure 2. No single spike sorter emerged as the top performer in all study sets, with IronClust, KiloSort2, MountainSort4, and SpyKING CIRCUS each appearing among the most accurate in at least six of the study sets.
 
@@ -110,7 +295,7 @@ The version of WaveClus used in SpikeForest is only suited for (and only run on)
 
 An eleventh algorithm, Yet Another Spike Sorter (YASS) (Lee et al., 2017), was not included in the comparison because, even after considerable effort and reaching out to the authors, its performance was too poor, leading us to suspect an installation or configuration problem. We plan to include YASS in a future version of the analysis.
 
-## Precision and recall results
+### Precision and recall results
 
 Depending on the scientific question being asked, researchers may want to place a greater importance on maximizing either precision or recall. Precision is the complement of the false positives rate which corresponds to spikes incorrectly labeled as coming from some true neuron. A low precision (high number of false positives) may result in illusory correlations between units and a potentially false conclusion that the neurons are interacting, or may result in a false correlation between a unit firing and some stimulus or task. A low recall, on the other hand, means a large fraction of the true firing events are missed, causing a general reduction in putative firing rates, and also possibly introducing false correlations.
 
@@ -118,9 +303,9 @@ Figure 4 shows aggregated precision and recall scores for the results in the mai
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/55167/elife-55167-fig4-v1.jpg)
 
-**Figure 4.:** Figure 2 except showing aggregated precision and recall scores rather than accuracy.Precision measures how well the algorithm avoids false positives, whereas recall is the complement of the false negative rate. An asterisk indicates an incomplete (timed out) or failed sorting on a subset of results; in these cases, missing accuracies are imputed using linear regression as described in the Materials and methods. Empty cells correspond to excluded sorter/study set pairs. These results reflect the analysis run of March 23rd, 2020.
+**Figure 4.:** Precision measures how well the algorithm avoids false positives, whereas recall is the complement of the false negative rate. An asterisk indicates an incomplete (timed out) or failed sorting on a subset of results; in these cases, missing accuracies are imputed using linear regression as described in the Materials and methods. Empty cells correspond to excluded sorter/study set pairs. These results reflect the analysis run of March 23rd, 2020.
 
-## How well can quality metrics predict accuracy?
+### How well can quality metrics predict accuracy?
 
 In addition to informing the selection of a spike sorter, our SpikeForest analysis provides an unprecedented opportunity to compare various quality metrics that can be used to accept or reject sorted units when ground truth is not available (i.e., in a laboratory setting). For each sorter, what is the quality metric (or combination thereof) most predictive of actual accuracy? Figure 5 is based on the SYNTH_JANELIA tetrode study and shows the relationships between ground-truth accuracy and three metrics of the sorted units: SNR, mean firing rate, and inter-spike interval violation rate (ISI-vr) (Hill et al., 2011). The latter is the ratio between the number of refractory period violations (2.5 ms threshold) and the expected number of violations under a Poisson spiking assumption. We observe that these relationships are highly dependent on the spike sorter. For IronClust, the SNR and log ISI-vr are predictive of accuracy, whereas firing rate is much less predictive. For KiloSort and SpyKING CIRCUS, firing rate and SNR are both predictive, but log ISI-vr does not appear to correlate. For KiloSort2 and MountainSort4, firing rate is the only predictive metric of the three. The final column in this plot shows that a linear combination of metrics is a better predictor than any metric alone. We note that this predictive ability will also depend on the recording type, and, in this case, fidelity of the simulation. For these reasons it is an important future task to extend this type of study across the entire database; see the discussion below.
 
@@ -138,7 +323,7 @@ Our contribution also helps to overcome some practical issues with neurophysiolo
 
 In the past, comparisons between spike sorting algorithms have been biased or limited. Almost all have been presented in the context of a new or improved method, and so the choice of simulations used for evaluation can often be (unintentionally) biased toward showing that the new method is superior. Given only such reports, it is impractical for readers to verify that the various sorters were used properly and with sensible parameters. The openness and reproducibility of SpikeForest in part remedies this situation.
 
-## Validation approach and challenges
+### Validation approach and challenges
 
 There are many ongoing challenges to the validation of spike sorters. Although human curation is still part of the spike sorting analysis pipeline in most labs, the increase in the potential yield from recently developed high-density recording devices will soon make this step infeasible. We therefore have adopted the philosophy that spike sorting algorithms should be evaluated in an automated reproducible fashion on recordings that we make publicly available, and that, when used for benchmarking purposes, the algorithms should be wrapped and run server-side without the possibility of human curation of their output. This follows evaluation efforts for automated clustering algorithms such as ClustEval (Wiwie et al., 2015). We constrast this to ‘competition’-style efforts (Franke et al., 2012; Freeman, 2015; Berens et al., 2018) which allow contributions of (potentially non-reproducible) sorting results, and which report accuracy on held-out data whose ground truth is necessarily private, and thus cannot be interrogated by the community.
 
@@ -148,7 +333,7 @@ This raises the issue of potential overfitting. Because all SpikeForest data are
 
 Another issue is the paucity of paired ground-truth units in the database, a consequence of the time-consuming nature of their collection. For instance the study set PAIRED_KAMPFF has 15 units, of which only 11 have sufficient SNR to be sortable by any of the sorters. Therefore a single false split or merge by a sorter can lead to variations in reported study-averaged accuracy as large as ±0.05, and dictate the most accurate sorter for that study set. In (small-scale) laboratory pipelines it is possible that such splits or merges would be detected by expert human curation; the point of SpikeForest is to measure the performance of purely automated algorithms. Such variance will be reduced as the size of the ground-truth studies increases.
 
-## Future work
+### Future work
 
 The above issues help inform several specific future goals:
 
@@ -156,67 +341,101 @@ We anticipate that, as the use and scale of spike sorting as a tool continues to
 
 ## Materials and methods
 
-## Ground-truth recordings
+### Ground-truth recordings
 
 The thirteen study sets included in the SpikeForest analysis are detailed in Table 2 and are grouped according to type (paired, simulated, curated).
 
-## Paired recordings
+#### Paired recordings
 
 We selected 145 paired recordings from raw extracellular recordings that were publicly released or otherwise provided to us by four laboratories (Henze et al., 2000; Harris et al., 2000; Henze et al., 2009; Neto et al., 2016; Allen et al., 2018; Marques-Smith et al., 2018a; Marques-Smith et al., 2018b; Yger et al., 2018; Spampinato et al., 2018). The intracellular spike times were taken from the author-reported values unless they were not provided (Henze et al., 2009). 93 of these we prepared from raw Buzsáki laboratory recordings (Henze et al., 2000; Harris et al., 2000; Henze et al., 2009) with ground truth based on the intracellular traces, after excluding time segments containing artifacts due to movement and current injection. The other 52 were obtained from tetrodes or conventional silicon probes in rat hippocampus (PAIRED_CRCNS_HC1) (Henze et al., 2000; Harris et al., 2000; Henze et al., 2009), high-density silicon probes in mice cortex (PAIRED_KAMPFF and PAIRED_BOYDEN) (Neto et al., 2016; Allen et al., 2018; Marques-Smith et al., 2018a), and high-density MEAs in mice retina (PAIRED_MEA64C_YGER) (Yger et al., 2018; Spampinato et al., 2018). We also include 29 new paired recordings in awake behaving mice (PAIRED_ENGLISH), from a hybrid probe comprising a juxtacellular electrode glued on top of a Neuronexus silicon probe (similar to English et al., 2017 but with only ∼20 µm separation). These come from the hippocampus, neocortex and thalamus. We generated a monotrode version (PAIRED_MONOTRODE) of various paired recordings by randomly sampling one channel from each recording session to uniformly span the SNR range (25 units per study).
 
-## Synthetic recordings
+#### Synthetic recordings
 
 Table 1 provides details on the ten algorithms included in the SpikeForest analysis. To overcome the limited number of units offered by the paired ground truth, we added simulated ground-truth study sets that were independently generated by five laboratories (Camuñas-Mesa and Quiroga, 2013; Hagen et al., 2015; Chung et al., 2017; Gratiy et al., 2018; Buccino and Einevoll, 2019). The simulators vary in their biophysical details, computational speeds, and configurable parameters. Simulations based on phenomenological models tend to be fast and easily configurable (e.g., SYNTH_MAGLAND, identical to the simulations in Chung et al., 2017 except with iid Gaussian noise), while biophysical simulators such as SYNTH_VISAPY (Hagen et al., 2015) and SYNTH_BIONET (Gratiy et al., 2018) use synaptically connected, morphologically detailed neurons to achieve high fidelity at the expense of computational speed. SYNTH_MONOTRODE (Camuñas-Mesa and Quiroga, 2013) and SYNTH_MEAREC (Buccino and Einevoll, 2019) take an intermediate approach by generating spike waveform templates based on single-neuron simulations and randomly placing the spike waveforms conforming to pre-specified ISI distributions.
 
-SYNTH_BIONET was generated from the Allen Institute’s BioNet simulator (Gratiy et al., 2018; Jun et al., 2017a) running on the computing resources provided by the Neuroscience Gateway (Sivagnanam et al., 2013). We simulated a column of synaptically connected neurons (n=708, 200×200×600⁢μ⁢m3) based on the rat cortical NEURON models (Hines and Carnevale, 1997; Ascoli et al., 2007; Mitelut, 2017; Jun et al., 2017a) by capturing the spike waveforms at four vertical columns of densely-spaced electrodes (2 µm vertical, 16 µm horizontal pitch, 600 channels). Linear probe drift was simulated by subsampling the electrodes to match the Neuropixels site layout (20–25 µm pitch) and vertically shifting the electrode positions as a function of time. To achieve smooth linear motion, a 2D-interpolation based on a Gaussian kernel was applied (0.5 µm vertical spacing, 16 µm total displacement for 16 min). Based on the linear probe drift simulation, we generated a ’shuffled’ version to mimic the fast probe displacements during animal movement by subdividing the recordings into 32 time segments and randomly shuffling (30 s per segment).
+SYNTH_BIONET was generated from the Allen Institute’s BioNet simulator (Gratiy et al., 2018; Jun et al., 2017a) running on the computing resources provided by the Neuroscience Gateway (Sivagnanam et al., 2013). We simulated a column of synaptically connected neurons ($n=708$, $200\times200\times600⁢\mu⁢m^{3}$) based on the rat cortical NEURON models (Hines and Carnevale, 1997; Ascoli et al., 2007; Mitelut, 2017; Jun et al., 2017a) by capturing the spike waveforms at four vertical columns of densely-spaced electrodes (2 µm vertical, 16 µm horizontal pitch, 600 channels). Linear probe drift was simulated by subsampling the electrodes to match the Neuropixels site layout (20–25 µm pitch) and vertically shifting the electrode positions as a function of time. To achieve smooth linear motion, a 2D-interpolation based on a Gaussian kernel was applied (0.5 µm vertical spacing, 16 µm total displacement for 16 min). Based on the linear probe drift simulation, we generated a ’shuffled’ version to mimic the fast probe displacements during animal movement by subdividing the recordings into 32 time segments and randomly shuffling (30 s per segment).
 
 The simulation entitled SYNTH_JANELIA was developed by J. Colonell (Pachitariu et al., 2019) and uses average unit waveforms from a densely spaced electrode array (5 µm pitch, 15 × 17 layout) collected by the Kampff, 2018 laboratory. The waveform templates were inserted at randomly selected channels and time points after being multiplied by an amplitude-scaling factor drawn from a Gamma distribution. The baseline noise was randomly generated to match the power spectrum observed from a Neuropixels recording, and a spatiotemporal smoothing was applied to induce correlation between nearby channels and time samples. The original simulation generated either static or sinusoidal drift (±10 µm displacement, 600 s period) with 1200s duration (30 KS/s) on the Neuropixels layout (64 channels, 25 µm pitch, staggered four columns). We trimmed the original simulations to generate shorter recording durations (600, 1200s) and channel counts (4, 16, 32, 64 channels) to study the effects of these parameters on sorting accuracy.
 
-## Manually sorted recordings
+#### Manually sorted recordings
 
 Based on the requests of the electrophysiology community, we included a single study set of manually curated tetrode sortings (MANUAL_FRANKLAB) (Chung et al., 2017); we emphasize that, for this study set only, there is no ground-truth data. Accuracies are reported relative to three independent manual sortings of the same tetrode recording session in a chronically implanted rat hippocampus. We subdivided the entire recording duration to generate three different durations (600, 1200, 2400 s) to study the effect of duration on sorting accuracy, but did not find a consistent relationship across all sorters.
 
-## Registration
+#### Registration
 
 A content-addressable storage database is used to store the file content of each recording, and all data is available for public download via our Python API. Since these files are indexed according to their SHA-1 hashes, their content is guaranteed not to have changed even when the mechanism for retrieving the data evolves over time, ensuring long-term repeatability of the analysis.
 
-## Sorting algorithms and wrappers
+### Sorting algorithms and wrappers
 
 Table 2 provides details on the ten algorithms included in the SpikeForest analysis. For each spike sorter, SpikeForest contains a Python wrapper and a Docker (and Singularity) container defining the exact execution environment including all necessary dependencies. For the sorters that are implemented in MATLAB, the MATLAB Compiler tool was used to generate standalone binary files inserted into the containers so that a MATLAB license is not required to run spike sorting. The SpikeForest framework flexibly allows running of each sorter either within the native operating system or within the container. The former method is useful during development or in an environment where the spike sorting software is already installed. The latter is crucial for ensuring reproducibility and for avoiding conflicts between sorters due to incompatible dependencies. The Python wrappers make use of the spikesorters package of the SpikeInterface project (Buccino et al., 2019) for passing the parameters and executing the sorter. All sorters operate on the raw (unfiltered) recordings.
 
 An eleventh algorithm, YASS, was incorporated into the Python package, but was not included in the comparison, as discussed in the Results section.
 
-## Comparison with ground truth
+### Comparison with ground truth
 
 Depending on the experimental context, false negatives (missed events) and false positives may have different relative importance for the researcher. Thus the SpikeForest website allows switching between three evaluation metrics for the comparison with ground truth: precision (which penalizes only false positives), recall (which penalizes only false negatives), and an overall accuracy metric (which balances the two). For each sorter-recording pair these are computed by comparing the output of spike sorting (spike times and labels) with the ground-truth timings associated with the recording, as follows.
 
-We first consider a sorted unit k and a ground-truth unit l, and describe how the events in the spike train for k are matched to ground-truth events of l. Let s1(k),…,sMk(k) be the spike train (timestamps) associated with sorted unit k, and let t1(l),…,tNl(l) be the spike train for ground-truth unit l (see Figure 1). Let Δ be an acceptable firing time error, which we assume is shorter than half the refractory period of any true neuron. We set Δ to one millisecond; the results are rather insensitive to its exact value. The number of matches of sorted unit k to the ground-truth unit l is(1)nl,kmatch:=#⁢{i:|ti(l)-sj(k)|≤Δ⁢ for some ⁢j}.
+We first consider a sorted unit $k$ and a ground-truth unit $l$, and describe how the events in the spike train for $k$ are matched to ground-truth events of $l$. Let $s_{1}^{(k)},…,s_{M_{k}}^{(k)}$ be the spike train (timestamps) associated with sorted unit $k$, and let $t_{1}^{(l)},…,t_{N_{l}}^{(l)}$ be the spike train for ground-truth unit $l$ (see Figure 1). Let Δ be an acceptable firing time error, which we assume is shorter than half the refractory period of any true neuron. We set $Δ$ to one millisecond; the results are rather insensitive to its exact value. The number of matches of sorted unit $k$ to the ground-truth unit $l$ is
 
-Note that even if more than one sorted event falls within ±Δ of a true event, at most one is counted in this matching. The reverse situation—more than one ground-truth event from the same neuron matching to a given sorted event—cannot happen by our assumption about the refractory period. The number of missed events and false positives are then, respectively,(2)nl,kmiss:=Nl-nl,kmatch,nl,kfp:=Mk-nl,kmatch,where Nl is the total number of firings of ground-truth unit l, and Mk is the total number of found events of sorted unit k. Following Jun et al., 2017b we define the accuracy for this pair as(3)al,k:=nl,kmatchnl,kmatch+nl,kmiss+nl,kfp.
+$$
+n_{l,k}^{match}:=#⁢{i:|t_{i}^{(l)}-s_{j}^{(k)}|\leqΔ⁢for some ⁢j}.
+$$
 
-Note that this definition of accuracy is a balance between precision and recall, and is similar, but not identical, to the F1 metric (Zaki and Meira Jr, 2014, Eq. (17.1)) used to evaluate clustering methods.
+Note that even if more than one sorted event falls within ±Δ of a true event, at most one is counted in this matching. The reverse situation—more than one ground-truth event from the same neuron matching to a given sorted event—cannot happen by our assumption about the refractory period. The number of missed events and false positives are then, respectively,
 
-Fixing the ground-truth unit l, we define its best matching sorted unitk^l as the sorted unit k with highest accuracy,(4)k^l:=arg⁡maxk⁡al,k.
+$$
+n_{l,k}^{miss}:=N_{l}-n_{l,k}^{match},n_{l,k}^{fp}:=M_{k}-n_{l,k}^{match},
+$$
 
-Now restricting to this best match, we define the accuracy for ground-truth unit l by(5)al:=al,k^l,and the corresponding precision and recall for this unit by(6)pl:=nl,k^lmatchnl,k^lmatch+nl,k^lfp rl:=nl,k^lmatchnl,k^lmatch+nl,k^lmiss.
+where $N_{l}$ is the total number of firings of ground-truth unit $l$, and $M_{k}$ is the total number of found events of sorted unit $k$. Following Jun et al., 2017b we define the accuracy for this pair as
 
-Averages of these metrics are then computed for all units l within each study, without weighting by their numbers of events (i.e., treating all units equally). Note that, in the case of a recording with more than one ground-truth unit, it is possible that more than one such unit could share a common best-matching sorted unit, but this could only happen if these ground-truth units had extremely correlated events or if the sorting was highly inaccurate.
+$$
+a_{l,k}:=\frac{n_{l,k}^{match}}{n_{l,k}^{match}+n_{l,k}^{miss}+n_{l,k}^{fp}}.
+$$
+
+Note that this definition of accuracy is a balance between precision and recall, and is similar, but not identical, to the $F_{1}$ metric (Zaki and Meira Jr, 2014, Eq. (17.1)) used to evaluate clustering methods.
+
+Fixing the ground-truth unit $l$, we define its best matching sorted unit$k^_{l}$ as the sorted unit $k$ with highest accuracy,
+
+$$
+k^_{l}:=arg⁡maxk⁡a_{l,k}.
+$$
+
+Now restricting to this best match, we define the accuracy for ground-truth unit $l$ by
+
+$$
+a_{l}:=a_{l,k^_{l}},
+$$
+
+and the corresponding precision and recall for this unit by
+
+$$
+p_{l}:=\frac{n_{l,k^_{l}}^{match}}{n_{l,k^_{l}}^{match}+n_{l,k^_{l}}^{fp}} r_{l}:=\frac{n_{l,k^_{l}}^{match}}{n_{l,k^_{l}}^{match}+n_{l,k^_{l}}^{miss}}.
+$$
+
+Averages of these metrics are then computed for all units $l$ within each study, without weighting by their numbers of events (i.e., treating all units equally). Note that, in the case of a recording with more than one ground-truth unit, it is possible that more than one such unit could share a common best-matching sorted unit, but this could only happen if these ground-truth units had extremely correlated events or if the sorting was highly inaccurate.
 
 The spike sorted units that are considered in the computation of these metrics are only those that are matched to ground-truth units. Therefore, the results shown in the main table do not account for false positive units, that is units found by the spike sorters that are not present in the recording.
 
-## Compensating for missing data
+### Compensating for missing data
 
 As described above, when a sorting run fails (either crashes or times out), an asterisk is appended to the corresponding table cell, and the average accuracy is calculated based on imputed data using linear regression. There is also an option to simply exclude the missing values, but the problem with this method (which we have encountered) is that sometimes an algorithm will happen to crash on recordings with relatively difficult units, resulting in artificially elevated scores. Imputing by zero has the problem of yielding deceptively low values. We have thus opted to use linear regression to fill in the missing data using values predicted based on the accuracies of other sorters. Specifically, for a given sorter with missing data and a given study set (or study, depending on the level of aggregation), a linear model is estimated for fitting the non-missing values based on the values of all sorters with no missing data. That model is then applied to estimate the missing data. To give some intuition, if a sorter typically has somewhat lower scores than the other sorters and crashes on one recording, then for the purpose of computing average accuracy, the accuracy for that recording will be filled in with a value that is also somewhat lower than the other sorters.
 
 In constrast, when reporting total numbers of units found above an accuracy cut-off (e.g., Figure 2, right side), we do not impute, but simply sum the number of non-missing units.
 
-## Signal-to-noise ratio per unit
+### Signal-to-noise ratio per unit
 
 We define SNR as a property of a single neural unit, either a ground-truth unit or a unit as output by a sorter. It is reported on the website and is used as a cut-off for selection of a subset of ground-truth units for computing average accuracy. SNR is computed on the bandpass-filtered timeseries data.
 
-We first describe our filter used to compute SNR (noting that this is distinct from various filters used internally by the spike sorters). This filter is a bandpass from fmin=300 to fmax=6000, in Hz units. It is applied to each channel by taking the FFT, multiplying by the real-valued frequency filter function(7)A⁢(f)=12⁢1+erf⁢((f-fmin)/100)⁢1-erf⁢((f-fmax)/1000),where erf is the error function, then taking the inverse FFT. Here, the parameters 100 and 1000 control the roll-off widths in Hz at the low and high ends respectively. From this filtered timeseries and the set of firing times of a unit, the average spike waveform is extracted. SNR is then defined as the ratio between the peak absolute amplitude of this average spike waveform and the estimated noise on the channel where this peak amplitude occurs. The noise is estimated as the median absolute deviation of the filtered timeseries data divided by 0.6745, which gives a robust estimate of the standard deviation of the noise (Quiroga et al., 2004, Sec. 3.1).
+We first describe our filter used to compute SNR (noting that this is distinct from various filters used internally by the spike sorters). This filter is a bandpass from $f_{min}=300$ to $f_{max}=6000$, in Hz units. It is applied to each channel by taking the FFT, multiplying by the real-valued frequency filter function
 
-## Analysis pipeline
+$$
+A⁢(f)=\frac{1}{2}⁢\sqrt{1+erf⁢((f-f_{min})/100)}⁢\sqrt{1-erf⁢((f-f_{max})/1000)},
+$$
+
+where erf is the error function, then taking the inverse FFT. Here, the parameters 100 and 1000 control the roll-off widths in Hz at the low and high ends respectively. From this filtered timeseries and the set of firing times of a unit, the average spike waveform is extracted. SNR is then defined as the ratio between the peak absolute amplitude of this average spike waveform and the estimated noise on the channel where this peak amplitude occurs. The noise is estimated as the median absolute deviation of the filtered timeseries data divided by 0.6745, which gives a robust estimate of the standard deviation of the noise (Quiroga et al., 2004, Sec. 3.1).
+
+### Analysis pipeline
 
 The analysis pipeline of SpikeForest depicted in Figure 6 is built using Python utilities developed by the authors for creating shareable and reproducible scientific workflows. This system provides a formal method for creating well-defined Python procedures that operate on input parameters and files and produce output files. These are known as processors. SpikeForest defines processors for running the spike sorters, computing properties of ground-truth units (e.g., SNR), comparing the spike sorting outputs with ground truth, and computing summary data for the plots shown on the website. Once these processors are set up, the framework provides several advantages including: (a) automatic execution of processing inside Singularity or Docker containers; (b) automatic caching of processing results; and (c) job management and queueing mechanisms for running batches of processing on a compute cluster. This allows the analysis pipeline to be defined as a standard Python script, with a simple nested loop iterating through the sorters and ground-truth datasets (as in Figure 1). The script may then be configured to run in a variety of settings: on a standard workstation for development, testing, or reproducing of a subset of results; a shared computer with large memory and many cores; or on a compute cluster.
 
@@ -240,13 +459,13 @@ The output of processing is a single JSON file (only around 15 MB at this time) 
 
 Finally, the data from this JSON output file is loaded into a MongoDB database for efficient access by the website’s front end.
 
-## Website front end
+### Website front end
 
 The primary user interface for the SpikeForest platform is an isomorphic JavaScript web application with overall structure as shown on the right side of Figure 6. Built from reusable React components, the front end utilizes the D3 library to render the interactive tables and plots. A Node.JS backend, organized using the Redux state container, queries a MongoDB database to retrieve JSON files for each datatype and generate the comparative visualizations. For more detailed plots, like the spike sprays, larger data objects are retrieved via the content-addressable storage database.
 
 We optimized the interface for efficient hierarchical navigation through the results and rapid loading and interactive response (for instance, when a user adjusts the SNR or accuracy cut-off slider bar). When the user clicks on results at the individual recording or unit level, they are taken to a page (with an auto-generated, shareable URL) specific to the study in question. This page allows one-click comparison of the sorters on this study. Clicking on individual units in the scatter plot for a given sorter-study pair brings up spike waveforms for that unit (Figure 3) and a link to a sub-page with details specific to the particular sorter-recording run. This latter page includes sorter parameters used, the console output of the run and a link to an auto-generated Python script with human-readable documentation to reproduce that sorter run within SpikeForest. A permanent top-level menu bar allows access to all meta-data about sorters (as in Table 1), study sets (as in Table 2, also allowing hierarchical drilling down to the individual recording level), historical snapshots, metrics used, and an explanation of the project. All of the website data and results sub-pages are automatically generated from the SpikeForest databases.
 
-## Enabling users to run all spike sorters locally on their own data
+### Enabling users to run all spike sorters locally on their own data
 
 The benefit of having wrappers and Docker images for these ten spike sorting algorithms extends beyond usage within the SpikeForest pipeline. Researchers may also utilize these wrappers and images to spike sort their own data without needing to install and configure the individual sorting packages. As mentioned in the previous subsection, the website provides, for each sorting result, a self-contained Python script for reproducing that result offline. This script may easily be modified to operate on datasets that are not registered within the SpikeForest database. Here is an excerpt of the auto-generated script for running SpyKING CIRCUS on a dataset:# Run the spike sorting 
 with hither.config(container=’docker://magland/sf-spykingcircus:0.9.2’, gpu=False): 

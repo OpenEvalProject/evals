@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.35853.001 Ion channels control the ability of human sperm to fertilize the egg by triggering hyperactivated motility, which is regulated by membrane potential, intracellular pH, and cytosolic calcium. Previous studies unraveled three essential ion channels that regulate these parameters: (1) the Ca 2+ channel CatSper, (2) the K + channel KSper, and (3) the H + channel Hv1. However, the molecular identity of the sperm Na + conductance that mediates initial membrane depolarization and, thus, triggers downstream signaling events is yet to be defined. Here, we functionally characterize DSper, the Depolarizing Channel of Sperm, as the temperature-activated channel TRPV4. It is functionally expressed at both mRNA and protein levels, while other temperature-sensitive TRPV channels are not functional in human sperm. DSper currents are activated by warm temperatures and mediate cation conductance, that shares a pharmacological profile reminiscent of TRPV4. Together, these results suggest that TRPV4 activation triggers initial membrane depolarization, facilitating both CatSper and Hv1 gating and, consequently, sperm hyperactivation.
+Ion channels control the ability of human sperm to fertilize the egg by triggering hyperactivated motility, which is regulated by membrane potential, intracellular pH, and cytosolic calcium. Previous studies unraveled three essential ion channels that regulate these parameters: (1) the Ca2+ channel CatSper, (2) the K+ channel KSper, and (3) the H+ channel Hv1. However, the molecular identity of the sperm Na+ conductance that mediates initial membrane depolarization and, thus, triggers downstream signaling events is yet to be defined. Here, we functionally characterize DSper, the Depolarizing Channel of Sperm, as the temperature-activated channel TRPV4. It is functionally expressed at both mRNA and protein levels, while other temperature-sensitive TRPV channels are not functional in human sperm. DSper currents are activated by warm temperatures and mediate cation conductance, that shares a pharmacological profile reminiscent of TRPV4. Together, these results suggest that TRPV4 activation triggers initial membrane depolarization, facilitating both CatSper and Hv1 gating and, consequently, sperm hyperactivation.
 
 ## Introduction
 
@@ -27,39 +27,71 @@ The goal of this work was to characterize DSper and resolve its molecular identi
 
 ## Results
 
-## A novel non-CatSper conductance of human sperm cells
+### A novel non-CatSper conductance of human sperm cells
 
 As many calcium channels, CatSper conducts monovalent ions, such as Cs+ and Na+ in the absence of divalent cations from the extracellular solution (divalent free; DVF) (Lishko et al., 2011; Kirichok et al., 2006). CatSper is also permeable to Ca2+ and Ba2+, but it cannot conduct Mg2+ (Figure 1—figure supplement 1; Figure 1—source data 1B). In the presence of extracellular Mg2+ the CatSper pore is blocked, resulting in the inhibition of monovalent CatSper currents (ICatSper) (Figure 1—figure supplement 1; Figure 1—source data 1B).
 
 In whole-cell voltage-clamp recordings from human ejaculated spermatozoa, we consistently observed residual currents when ICatSper was blocked with 1 mM extracellular Mg2+ (Figure 1A,B). Cs+ inward and outward currents elicited under DVF condition (black traces and bars) were larger than currents recorded in the presence of Mg2+ (red traces and bars) (Figure 1A–C; Figure 1—source data 1A). This phenomenon was observed in both noncapacitated and capacitated spermatozoa, respectively. Notably, capacitated cells generally showed increased current densities under both conditions (Figure 1C). The data suggests that the remaining conductance is a novel non-CatSper conductance via the yet to be identified DSper ion channel. DSper currents were potentiated during capacitation (Figure 1C; Figure 1—source data 1A) and exhibited outward rectification, though, DSper currents recorded from capacitated cells were notably less rectifying (Figure 1A,B). This DSper component is unlikely a remnant of an increased leak current since the cells returned to their initial ‘baseline’ current after returning to the initial (HS) bath solution (Figure 1—figure supplement 2). Cation influx is the physiologically relevant entity to be analyzed as it represents channel activity under physiological relevant conditions and ensures membrane depolarization. Therefore, we preferentially analyzed DSper inward currents elicited by the change of membrane potential from 0 mV to −80 mV. To rule out ‘contamination’ of putative IDSper with remaining ICatSper, we next tested whether 1 mM Mg2+ is sufficient to completely block ICatSper and selectively isolate DSper currents. The CatSper inhibitor NNC 55–0396 (Lishko et al., 2011; Strünker et al., 2011) did not elicit any additional inhibitory effect on IDSper (Figure 1D–F; Figure 1—source data 1A), confirming efficient CatSper pore block by Mg2+. These findings corroborate our hypothesis that a novel CatSper-independent cation conductance could provide additional depolarization under physiological conditions. To isolate IDSper, we performed all following experiments in presence of both Mg2+ and NNC 55–0396.
 
-## Human sperm DSper current exhibits temperature sensitivity
+![Figure 1.](https://cdn.elifesciences.org/articles/35853/elife-35853-fig1-v3.jpg)
+
+**Figure 1.:** (A-B) Original current traces from representative whole-cell patch-clamp recordings from noncapacitated (A) and capacitated (B) human spermatozoa. Inward- and outward currents were elicited with voltage ramps as depicted in (A). Under divalent free conditions (black traces), typical CatSper monovalent caesium currents can be recorded. In the presence of 1 mM Mg2+ (red traces), an outward rectifying ‘DSper’ current component remains. Hence, the black traces represent a mixture of both CatSper and DSper monovalent Cs+ currents, while the red traces show pure Cs+ currents through DSper. (C) Quantification of current densities for all three conditions in (A-B). DSper currents are potentiated upon capacitation (noncapacitated cells: -4.50 ± 0.41 pA/pF, capacitated cells: -25.58 ± 5.88 pA/pF for inward currents recorded at -80 mV; noncapacitated cells: 28.80 ± 1.93 pA-pF, capacitated cells: 42.67 ± 9.27 pA/pF for outward currents recorded at +80 mV). Data are mean ± S.E.M., with (n) representing the number of individual sperm cells tested. Statistical significance (unpaired t-test) was indicated by: ***p ≤0.0005. Data was collected from 3 human donors, no variations between human donors were noticed. Quantification of normalized DSper inward currents (D) and original current traces (E-F) in presence and absence of the CatSper inhibitor NNC 55-0396 demonstrate the absence of the inhibition.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35853/elife-35853-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Original current traces from whole-cell voltage-clamp recordings of noncapacitated human spermatozoa. Inward- and outward currents were elicited with voltage ramps as depicted. Pipette solution was: 140 mM NMDG, 100 mM Hepes, 5 mM EGTA, 5 mM EDTA, 330 mOsmol, pH 7.3, composition of bath solution was: 500 nM progesterone, 100 mM Hepes, 130 mM NMDG, plus X mM Ca2+, Ba2+ or Mg2+ as depicted, 317 mOsmol, pH 7.4. When the major permeable extracellular cation was Ca2+ or Ba2+, negative membrane potentials induced concentration-dependent inward currents. In the presence of Mg2+, CatSper currents remained at baseline level (0 mM), indicating that human CatSper is not permeable for Mg2+. (B) Quantification of current densities (pA/pF) for either Ca2+, Ba2+ or Mg2+ inward currents through CatSper.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/35853/elife-35853-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A–B) Original current traces from representative whole-cell patch-clamp recordings of noncapacitated (A) and capacitated (B) human spermatozoa. Inward- and outward currents were elicited with voltage ramps as depicted in (A). Represented are three conditions – baseline (in HS solution), CatSper + DSper currents and isolated DSper currents. Whole-cell currents returned to their initial baseline level after returning to HS solution, indicating that the recorded DSper currents are not a remnant of an increased leak-current.
+
+### Human sperm DSper current exhibits temperature sensitivity
 
 We next aimed to investigate mechanism(s) of DSper activation. Previous work had focused on various DSper candidates, one being ATP-activated P2X channels. Navarro et al. showed functional expression of P2X2 in mouse spermatozoa (Navarro et al., 2011). However, human spermatozoa appear to be insensitive to extracellular ATP (Brenker et al., 2012). De Toni et al. suggested that human spermatozoa perform thermotaxis mediated by a member of the thermosensitive transient receptor potential vanilloid channel family, TRPV1 (De Toni et al., 2016), supporting their claim by immunocytochemistry and Ca2+ imaging. By contrast, Kumar et al. detected TRPV4 expression in human spermatozoa using immunocytochemistry and calcium imaging (Kumar et al., 2016). To date, several temperature-sensitive ion channels and specific transporters have been reported in mammalian sperm (Kumar et al., 2016; Gervasi et al., 2011; Hamano et al., 2016). However, functional characterization of a temperature-activated cation conductance via direct methods, such as electrophysiology, has not been performed in human sperm yet. Since the functional expression of a thermosensitive TRP ion channel in human spermatozoa is currently under debate, and their cation permeability renders many of them DSper candidates, we investigated the impact of temperature on DSper activity. As shown in Figure 2A–C, elevating temperature profoundly increased IDSper. We observed a temperature-induced potentiation of both inward and outward currents in noncapacitated, as well as capacitated human spermatozoa (Figure 2A–B; Figure 2—source data 1). A temperature ramp from 23°C to 37°C potentiated IDSper inward currents by factors of 2.7 ± 0.5 for noncapacitated cells and 2.0 ± 0.2 for capacitated cells, respectively (Q10 noncapacitated=1.76, Q10 capacitated=1.65 for caesium inward currents). Half-maximal activation was achieved at T1/2 = 34°C (noncapacitated) and T1/2 = 31°C (capacitated) (Figure 2D). Moreover, the temperature-induced potentiation effect was reversible for both noncapacitated and capacitated cells (Figure 2E). We hence concluded that the observed phenomenon is not a temperature-induced loss of the seal and compromised membrane stability and that DSper is indeed temperature-activated.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/35853/elife-35853-fig2-v3.jpg)
 
-**Figure 2.:** (A–B) Representative current traces from whole-cell patch-clamp recordings from noncapacitated (A) and capacitated (B) human spermatozoa challenged with a rise in temperature from 23°C to 37°C. Both DSper inward- and outward currents are increased at warmer temperatures. (C) Quantification of DSper inward current densities as a function of bath temperature (in °C). Noncapacitated (grey squares) as well as capacitated cells (blue squares) show increased current densities when stimulated with increasing bath temperatures. (D) Data of (C) normalized to room temperature (22°C). Half maximal activation at T1/2 = 34°C (noncapacitated) and T1/2 = 31°C (capacitated) indicated by the dotted lines. The data were fitted with Boltzmann equation to estimate the temperature at which DSper currents have half-maximal activation. Right panel: statistical significance (unpaired t-test) was indicated by: *p≤0.05, **p≤0.005 for capacitated (blue bars) and noncapcitated (black bars) human sperm. (E) The bath temperatures as a function of time and corresponding DSper currents. Inset shows representative traces indicating that the temperature-induced potentiation effect was reversible. Data are mean ± S.E.M., with (n) representing the number of individual sperm cells tested obtained from three human donors.10.7554/eLife.35853.007Figure 2—source data 1.
+**Figure 2.:** (A–B) Representative current traces from whole-cell patch-clamp recordings from noncapacitated (A) and capacitated (B) human spermatozoa challenged with a rise in temperature from 23°C to 37°C. Both DSper inward- and outward currents are increased at warmer temperatures. (C) Quantification of DSper inward current densities as a function of bath temperature (in °C). Noncapacitated (grey squares) as well as capacitated cells (blue squares) show increased current densities when stimulated with increasing bath temperatures. (D) Data of (C) normalized to room temperature (22°C). Half maximal activation at T1/2 = 34°C (noncapacitated) and T1/2 = 31°C (capacitated) indicated by the dotted lines. The data were fitted with Boltzmann equation to estimate the temperature at which DSper currents have half-maximal activation. Right panel: statistical significance (unpaired t-test) was indicated by: *p≤0.05, **p≤0.005 for capacitated (blue bars) and noncapcitated (black bars) human sperm. (E) The bath temperatures as a function of time and corresponding DSper currents. Inset shows representative traces indicating that the temperature-induced potentiation effect was reversible. Data are mean ± S.E.M., with (n) representing the number of individual sperm cells tested obtained from three human donors.
 
-## DSper conducts sodium ions
+### DSper conducts sodium ions
 
 Since sodium (Na+) is the major extracellular ion in the female reproductive tract ([Na+]=140–150 mM [Borland et al., 1980]), Na+ is a likely source for membrane depolarization. We therefore investigated whether DSper has the capacity to conduct Na+. As indicated in Figure 3A, similar outward rectifying DSper currentswere recorded when extracellular Cs+ was replaced with equimolar concentrations of Na+. DSper inward Na+ currents were entirely CatSper-independent, since NNC 55–0396 had no significant inhibitory effect (Figure 3B,C; Figure 3—source data 1). In the presence of both 1 mM Mg2+ and 1 μM NNC 55–0396, IDSper was still reversibly activated by warm temperatures (Figure 3D,E; Figure 3—source data 1) with a 4.1 ± 0.5 fold increase for the inward sodium currents from 22°C to 37°C, which is notably larger than the fold-increase as observed for cesium currents (Figure 2D). Half -maximum activation was at T1/2 = 34°C, comparable to previously analyzed values for the temperature-activated Cs+ currents, however sodium conductance via DSper produced a larger Q10 noncapacitated=2.30. Together, these electrophysiological data indicate that DSper shares characteristic hallmarks with thermosensitive TRPV channels (Benham et al., 2003). We thus proceeded to define which TRPV channel(s) is involved.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/35853/elife-35853-fig3-v3.jpg)
 
-**Figure 3.:** (A) Representative current traces from the whole-cell patch-clamp recordings of noncapacitated human spermatozoa. Inward and outward currents were elicited with the voltage ramps as depicted. To record DSper currents, extracellular Cs+ was substituted with the same concentration of Na+. Representative current traces (B) and quantification of the normalized DSper inward currents (C) before and after stimulation with 1 μM NNC suggest that CatSper channel does not contribute to the recorded sodium inward conductance. (D–E) Representative current traces in (D) and quantification of the inward currents normalized to 22°C (E) at increasing bath temperatures. A similar temperature-induced potentiation effect of DSper sodium inward currents was observed as for caesium currents. Recordings were performed in the presence of NNC to exclude any CatSper contribution. Half maximal activation was achieved at T1/2sodium = 34°C (dotted line). The data were fitted with the Boltzmann equation. Statistical significance (unpaired t-test) is indicated by: **p≤0.005. Data are mean ± S.E.M., with (n) representing the number of individual sperm cells tested obtained from two human donors.10.7554/eLife.35853.009Figure 3—source data 1.
+**Figure 3.:** (A) Representative current traces from the whole-cell patch-clamp recordings of noncapacitated human spermatozoa. Inward and outward currents were elicited with the voltage ramps as depicted. To record DSper currents, extracellular Cs+ was substituted with the same concentration of Na+. Representative current traces (B) and quantification of the normalized DSper inward currents (C) before and after stimulation with 1 μM NNC suggest that CatSper channel does not contribute to the recorded sodium inward conductance. (D–E) Representative current traces in (D) and quantification of the inward currents normalized to 22°C (E) at increasing bath temperatures. A similar temperature-induced potentiation effect of DSper sodium inward currents was observed as for caesium currents. Recordings were performed in the presence of NNC to exclude any CatSper contribution. Half maximal activation was achieved at T1/2sodium = 34°C (dotted line). The data were fitted with the Boltzmann equation. Statistical significance (unpaired t-test) is indicated by: **p≤0.005. Data are mean ± S.E.M., with (n) representing the number of individual sperm cells tested obtained from two human donors.
 
-## DSper is represented by the cation channel TRPV4
+### DSper is represented by the cation channel TRPV4
 
 Based on the observed IDSper temperature spectrum (Figures 2D and 3E), candidate channels could be TRPV3, TRPM3 or TRPV4 (Benham et al., 2003; Güler et al., 2002; Watanabe et al., 2002; Cheng et al., 2012). We have ruled out TRPV2 involvement, since TRPV2 has an unusually steep activation threshold of above 53°C (Moore and Liedtke, 2017). In addition, TRPV1 was previously proposed as a mediator of human sperm thermotaxis (De Toni et al., 2016). To discriminate between these channels, we tested potential effects of corresponding selective agonists – carvacrol (Vogt-Eisele et al., 2009) for TRPV3, RN1747 (Vincent et al., 2009) for TRPV4, capsaicin (Caterina et al., 1997) for TRPV1, and pregnenolone sulfate (Harteneck, 2013) for TRPM3. Employing either electrophysiological, or Ca2+ imaging recordings, only TRPV4 agonist RN1747 elicited a significant effect. In detail, application of 10 μM RN1747 (EC50 = 0.77 μM [Vincent et al., 2009]) significantly potentiated DSper outward currents (Figure 4A,B; Figure 4—source data 1A) in noncapacitated human sperm. In contrast, no effects were observed by 1 μM or 10 μM capsaicin (EC50 = 711.9 nM [Caterina et al., 1997]) (Figure 4—figure supplement 1, Figure 4—source data 1B-D). In order to confirm TRPV1 functional absence, we repeated these capsaicin experiments with 30 µM PI4,5P2 inside, to account for a possible loss of capsaicin sensitivity due to potential depletion of endogenous PI4,5P2 during whole-cell recording (Bevan et al., 2014; Senning et al., 2014). However, no change in DSper inward- and outward currents was observed. Using Ca2+ imaging of fluo-4/AM-loaded sperm, we next recorded fluorescence changes in the flagellar principle piece while stimulating human sperm with either 10 μM capsaicin or 500 μM carvacrol (Figure 4—figure supplement 1; Figure 4—source data 1C,D). Neither TRPV1 nor TRPV3 agonist elicited any rise in cytosolic calcium levels. We thus concluded that human spermatozoa do not express functional TRPV1 or TRPV3 channels. TRPM3 channels also exhibit temperature sensitivity between ambient warm to hot, which resembles the range observed for DSper (Vriens and Voets, 2018). Therefore, we have tested the possibility of TRPM3 involvement in IDSper generation by applying the TRPM3 agonist pregnenolone sulfate (PS) (Figure 4—figure supplement 1E; Figure 4—source data 1E). Application of 10 µM PS did not result in any change of the basal DSper current, confirming the absence of functional TRPM3 in human spermatozoa. Taking together, our results indicate that the temperature-activated cation channel TRPV4 is likely to be functionally expressed and provides membrane depolarization in human sperm.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/35853/elife-35853-fig4-v3.jpg)
+
+**Figure 4.:** (A) Representative whole-cell patch-clamp recordings of noncapacitated human spermatozoa. Inward- and outward currents were elicited with voltage ramps as depicted. DSper monovalent caesium currents (black trace) are increased after stimulation with 10 μM RN1747 (red trace). Both recordings were performed in the presence of 1 μM NNC. (B) Quantification of normalized DSper outward currents under control conditions and after stimulation with RN1747. A significant gain upon stimulation with the TRPV4 agonist (factor 2.22 ± 0.23, **p=0.0007, unpaired t-test, n = 6) is observable. No variation between human donors were noticed.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/35853/elife-35853-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Original current traces from representative whole-cell patch-clamp recordings of noncapacitated human spermatozoa. Inward-and outward currents were elicited with voltage ramps as depicted. Stimulation with two different concentrations (1 and 10 μM) of the specific TRPV1 agonist capsaicin did not induce any significant effect on DSper inward- or outward currents (left). Addition of 30 μM PIP2 to the pipette solution (right) did not generate a capsaicin-induced potentiation of DSper activity either. Quantification of normalized DSper currents for all four conditions is depicted in (B). (C) Single-cell calcium imaging confirmed electrophysiological findings. Application of 10 μM capsaicin had no effect on cytosolic calcium levels. (D) Single-cell calcium imaging approach did not reveal any notable effect of the TRPV3 specific agonist carvacrol (500 μM). (E) (Left) Original current traces from representative whole-cell patch-clamp recordings of noncapacitated human spermatozoa. Stimulation with 10 μM PS did not have any effect on DSper inward and outward currents as indicated by the pink trace. (Right) Quantification of DSper current amplitudes normalized to control conditions reveals no statistical significance of PS stimulation. Data are mean ± S.E.M., with (n) representing the number of individual sperm cells tested obtained from four donors.
+
 Interestingly, additional pharmacological investigation of DSper revealed that both TRPV4-specific antagonists, HC067047 and RN1734 (Vincent et al., 2009; Everaerts et al., 2010), prevented temperature activation of DSper, confirming that DSper pharmacology matches that of TRPV4 (Figure 5A–C; Figure 5—source data 1A). Since both inhibitors are dissolved in ethanol, we performed a vehicle control to exclude any inhibitory effect of ethanol on temperature activation. Indeed, the same vehicle concentration (0.1% ethanol) failed to inhibit DSper temperature activation and yielded results comparable to the control conditions (Figure 5—figure supplement 1; Figure 5—source data 1B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/35853/elife-35853-fig5-v3.jpg)
+
+**Figure 5.:** (A–B) Quantification of normalized DSper outward currents as a function of bath temperature (in °C) in the absence (grey squares) and the presence (turquoise/blue squares) of TRPV4 inhibitors RN1734 (A) and HC067047 (B), respectively. Both inhibitors greatly reduce DSper’s temperature-sensitivity. Representative current traces of whole-cell voltage clamp recordings from noncapacitated spermatozoa for all three conditions are depicted in (C). Representative current traces indicate that a rise in temperature from 22°C to 42°C considerably potentiated DSper inward and outward currents under control conditions but not in presence of the TRPV4 antagonists HC067047 and RN1734. No variations between human donors were noticed.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/35853/elife-35853-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Original current traces from representative whole-cell patch-clamp recordings of noncapacitated human spermatozoa exposed to 22 and 34°C and an extracellular ethanol (EtOH) concentration of 0.1%. Inward and outward currents were elicited with voltage ramps as depicted. Rise in the temperature resulted in an increase in DSper inward- and outward currents similar to control conditions, indicating no effect by 0.1% EtOH as a solvent. (B) indicates the absence of inhibition by 0.1% extracellular EtOH as quantified normalized DSper inward and outward currents at 22 and 34°C, respectively.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/35853/elife-35853-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) RT-PCR using a full-length TRPV4 primer pair. cDNA was obtained from mRNA isolated from swim-up purified noncapacitated human spermatozoa and PCR conditions were as follows: 1)–4) varying annealing temperatures (52–60°C), 5)–6) negative control in absence of the reverse transcriptase enzyme (Ta = 50, 56°C), 7)–8) no template control (Ta = 56°C). Dotted square marks bands that were selected for gene product sequencing. (B) Western blotting confirms the presence of the TRPV4 protein in (1) human testicular tissue (2) capacitated and (3) noncapacitated human spermatozoa. Immunopositive bands can be detected in all three samples at approximately 115 kDa. (C) Confocal fluorescence image of an immunostaining against TRPV4. Noncapacitated human spermatozoa were labeled with an anti-TRPV4 selective antibody and a Dylight488-conjugated secondary antibody. Nuclear dye DAPI locates the sperm head. Immunopositive fluorescent signals were detected in the sperm flagellum and the acrosome region (left). Specificity of the secondary antibody was confirmed by immunostaining in absence of the primary antibody (negative control, right).
 
 Supporting our functional data, TRPV4 was detected in human sperm on both mRNA and protein levels. Reverse transcriptase PCR performed with mRNA isolated from "swim-up" purified spermatozoa, followed by an amplification of the full-length TRPV4 (Figure 5—figure supplement 2A), produced a band of the expected size. The band was absent in negative controls, to which no reverse transcriptase and no templates were added. The sequence of the isolated PCR product of that specific band (dotted square), yielded the full-length sequence of TRPV4 isoform A (2620 bp, 98 kDa, Q9ERZ8). Moreover, the presence of TRPV4 protein was confirmed by western blotting (Figure 5—figure supplement 2B). Immunoreactive bands were detected at ~115 kDa in extracts from human testicular tissue (1), capacitated (2) and noncapacitated (3) spermatozoa (Figure 5—figure supplement 2B). Immunostaining with anti-hTRPV4 specific antibodies (Figure 5—figure supplement 2C) yielded an immunopositive signal in the acrosome and flagellum. Finally, when TRPV4 was cloned from human sperm mRNA extracts and recombinantly expressed in HEK293 cells (Figure 6A), a band of similar molecular weight could be detected by western blotting (Figure 6B). Moreover, TRPV4 cloned from human sperm mRNA recapitulates DSper temperature sensitivity (Figure 6D–E; Figure 6—source data 1), as well as activation by the selective TRPV4 agonist RN1747 (Figure 6F–G; Figure 6—source data 1), indicating that TRPV4 cloned from human sperm cells indeed assembles into a functional channel.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/35853/elife-35853-fig6-v3.jpg)
 
-**Figure 6.:** (A) Schematic representation of experimental approach: Full-length TRPV4 (isoform A) was cloned from human sperm mRNA extracts and recombinantly expressed in HEK293 cells, utilizing a pTracer CMV vector (Invitrogen). The GFP containing bicistronic vector allowed identification of green fluorescent transfected cells. (B) Western blotting results are shown for (1) nontransfected HEK293 cells, (2) cells transfected with the empty vector and (3) HEK293 cells transfected with the TRPV4-containing vector. An intense immunopositive band can be detected in line 3) at approx. 115 kDa corresponding to the expected size for TRPV4. Weak bands in 1) and 2) suggest endogenous expression of TRPV4 in HEK293 cells. (C) Electrophysiological characterization reveals a significant increase in the basic activity of TRPV4 transfected cells (at room temperature, 22°C). Inward and outward current densities were recorded as described before (ramp recordings −80 to +80 mV). Statistical significance (unpaired t-test) is indicated by: **p≤0.005, ***p≤0.0005. (D) Quantification of the inward current densities for nontransfected vs. TRPV4 transfected cells as a function of bath temperature (in °C) and representative current traces of whole-cell voltage clamp recordings for both cell populations in (E). Temperature-induced potentiation of inward and outward currents in TRPV4 transfected cells suggests that TRPV4 cloned from human sperm assembles into a functional protein in the heterologous expression system. (F) Whole-cell voltage clamp recordings reveal a strong potentiation of the inward and outward currents upon stimulation with the TRPV4 agonist RN1747 in TRPV4- transfected but not in nontransfected cells. Inward and outward currents were elicited via voltage ramps as depicted above. (G) Quantification of both inward and outward currents normalized to control conditions indicates statistical significance (**p≤0.005, ***p≤0.0005) for TRPV4 transfected cells.10.7554/eLife.35853.018Figure 6—source data 1.
+**Figure 6.:** (A) Schematic representation of experimental approach: Full-length TRPV4 (isoform A) was cloned from human sperm mRNA extracts and recombinantly expressed in HEK293 cells, utilizing a pTracer CMV vector (Invitrogen). The GFP containing bicistronic vector allowed identification of green fluorescent transfected cells. (B) Western blotting results are shown for (1) nontransfected HEK293 cells, (2) cells transfected with the empty vector and (3) HEK293 cells transfected with the TRPV4-containing vector. An intense immunopositive band can be detected in line 3) at approx. 115 kDa corresponding to the expected size for TRPV4. Weak bands in 1) and 2) suggest endogenous expression of TRPV4 in HEK293 cells. (C) Electrophysiological characterization reveals a significant increase in the basic activity of TRPV4 transfected cells (at room temperature, 22°C). Inward and outward current densities were recorded as described before (ramp recordings −80 to +80 mV). Statistical significance (unpaired t-test) is indicated by: **p≤0.005, ***p≤0.0005. (D) Quantification of the inward current densities for nontransfected vs. TRPV4 transfected cells as a function of bath temperature (in °C) and representative current traces of whole-cell voltage clamp recordings for both cell populations in (E). Temperature-induced potentiation of inward and outward currents in TRPV4 transfected cells suggests that TRPV4 cloned from human sperm assembles into a functional protein in the heterologous expression system. (F) Whole-cell voltage clamp recordings reveal a strong potentiation of the inward and outward currents upon stimulation with the TRPV4 agonist RN1747 in TRPV4- transfected but not in nontransfected cells. Inward and outward currents were elicited via voltage ramps as depicted above. (G) Quantification of both inward and outward currents normalized to control conditions indicates statistical significance (**p≤0.005, ***p≤0.0005) for TRPV4 transfected cells.
 
 ## Discussion
 
@@ -93,34 +125,171 @@ TRPV4 – more precisely its hyperfunction - might underlie the aversive effect 
 
 ## Materials and methods
 
-## Human sperm cells
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source</th>
+      <th>Identifier</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>ATCC cat# CRL-1573 RRID:CVRL_0045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Compound</td>
+      <td>RN1747</td>
+      <td>Tocris</td>
+      <td>3745</td>
+      <td>TRPV4 agonist</td>
+    </tr>
+    <tr>
+      <td>Compound</td>
+      <td>capsaicin</td>
+      <td>Cayman</td>
+      <td>404-86-4</td>
+      <td>TRPV1 agonist</td>
+    </tr>
+    <tr>
+      <td>Compound</td>
+      <td>carvacrol</td>
+      <td>Sigma</td>
+      <td>499-75-2</td>
+      <td>TRPV3 agonist</td>
+    </tr>
+    <tr>
+      <td>Compound</td>
+      <td>Pregnenolone sulfate</td>
+      <td>Sigma</td>
+      <td>P162</td>
+      <td>TRPM3 agonist</td>
+    </tr>
+    <tr>
+      <td>Compound</td>
+      <td>HC067047</td>
+      <td>Tocris</td>
+      <td>4100</td>
+      <td>TRPV4 antagonist</td>
+    </tr>
+    <tr>
+      <td>Compound</td>
+      <td>RN1734</td>
+      <td>Tocris</td>
+      <td>3746</td>
+      <td>TRPV4 antagonist</td>
+    </tr>
+    <tr>
+      <td>Compound</td>
+      <td>NNC 55–0396</td>
+      <td>R and D systems</td>
+      <td>2268</td>
+      <td>CatSper antagonist</td>
+    </tr>
+    <tr>
+      <td>Compound</td>
+      <td>Fluo-4/AM</td>
+      <td>Invitrogen</td>
+      <td>F14201</td>
+      <td>Ca2+ indicator</td>
+    </tr>
+    <tr>
+      <td>Compound</td>
+      <td>Lipofectamine</td>
+      <td>Invitrogen</td>
+      <td>11668019</td>
+      <td>Transfection reagent</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>α-TRPV4</td>
+      <td>Alomone</td>
+      <td>Alomone cat# ACC-034 RRID:AB_2040264</td>
+      <td>polyclonal; host: rabbit; unconjugated</td>
+    </tr>
+  </tbody>
+</table>
+
+### Human sperm cells
 
 A total of 5 healthy male volunteers were recruited to this study, which was conducted with approval of the Committee on Human Research at the University of California, Berkeley (protocol 10–01747, IRB reliance #151). Informed consent was obtained from all participants. Ejaculates were obtained by masturbation and spermatozoa were purified following the swim-up protocol as previously described (Lishko et al., 2011). In-vitro capacitation was accomplished by 4 hr incubation in 20% Fetal bovine serum, 25 mM NaHCO3 in HTF buffer (Lishko et al., 2013) at 37˚C and 5% CO2.
 
-## Reagents
+### Reagents
 
 RN1747, HC067047 and RN1734 were purchased from Tocris Bioscience (Bristol, UK), NNC 55–0396 was purchased from R&D systems (Minneapolis, USA), capsaicin from Cayman Chemical (Ann Arbor, USA), fluo-4/AM is from Invitrogen (Thermo Fisher Scientific, Carlsbad, USA) and all other compounds were obtained from Sigma (St. Louis, USA). NNC 55–0396 stock solution was dissolved in water, HC067047 and RN1734 were dissolved in EtOH, while RN1747 and PS were dissolved in DMSO.
 
-## Electrophysiology
+### Electrophysiology
 
 For electrophysiological recordings, only the ultra-pure upper 1 ml of the swim-up fraction was used. Single cells were visualized with an inverse microscope (Olympus IX71) equipped with a differential interference contrast, a 60 x Objective (Olympus UPlanSApo, water immersion, 1.2 NA, ∞/0.13–0.21/FN26.5) and a 1.6 magnification changer. An AXOPATCH 200B amplifier and an AxonTM Digidata 1550A digitizer (both Molecular Devices, Sunnyvale, CA, USA) with integrated Humbug noise eliminator was used for data acquisition. Hardware was controlled with the Clampex 10.5 software (Molecular Devices). We monitored and compensated offset voltages and pipette capacitance (Cfast). Gigaohm seals were established at the cytoplasmic droplet of highly motile cells in standard high saline buffer (‘HS’ in mM: 135 NaCl, 20 HEPES, 10 lactic acid, five glucose, 5 KCl, 2 CaCl2, 1 MgSO4, one sodium pyruvate, pH 7.4 adjusted with NaOH, 320 mOsm/l) (Kirichok et al., 2006; Lishko et al., 2011). The patch pipette was filled with 140 mM CsMeSO3, 20 mM HEPES, 10 mM BAPTA, 4 mM NaATP, 1 mM CsCl (pH 7.4 adjusted with CsOH, 330 mOsm/l). For recordings from capacitated spermatozoa, BAPTA was substituted for 5 mM EGTA and 1 mM EDTA. We confirmed that changing of the chelator composition had no effect on DSper current amplitudes in noncapacitated cells. Transition into whole-cell mode was achieved by applying voltage pulses (499–700 mV, 1–5 ms, Vhold = 0 mV) and simultaneous suction. After establishment of the whole-cell configuration, inward and outward currents were elicited via 0.2 Hz stimulation with voltage ramps (−80 mV to +80 mV in 850 ms, Vhold = 0 mV, total 1000 ms/ramp). Data was not corrected for liquid junction potential changes. To ensure stable recording conditions, only cells with baseline currents (in HS solution) ≤10 pA at −80 mV were used for experiments. Under ‘HS’ condition, CatSper and DSper currents were considered to be minimal, thus any remaining baseline current represented the cells leak current. During whole-cell voltage-clamp experiments, the cells were continuously perfused with varying bath solutions utilizing a gravity-driven perfusion system. If not stated otherwise, electrophysiological experiments were performed at 22°C. Temperature of the bath solution was controlled and monitored with an automatic temperature control (TC-324B, Warner Instrument Corporation, Hamden, CT, USA). Both, CatSper and DSper currents were recorded under symmetric conditions for the major permeant ion. Under these conditions, the bath solution was divalent free (‘DVF’) containing (in mM) 140 CsMeSO3, 20 HEPES, 1 EDTA, and pH 7.4 was adjusted with CsOH, 320 mOsm/l. To isolate DSper conductances, monovalent currents through CatSper channels were inhibited by supplementing the DVF solution with 1 mM Mg2+ and in the absence of EDTA (Qi et al., 2007). Experiments with different bath solutions were performed on the same cell. Signals were sampled at 10 kHz and low-pass filtered at 1 kHz (Bessel filter; 80 dB/decade). Pipette resistance ranged from 9 to 15 MΩ, access resistance was 21–100 MΩ, membrane resistance ≥1.5 GΩ. Membrane capacitance was 0.8–1.3 pF and served as a proxy for the cell surface area and thus for normalization of current amplitudes (i.e. current density). Capacitance artifacts were graphically removed. Statistical analysis was done with Clampfit 10.3 (Molecular Devices, Sunnyvale, CA, USA), OriginPro 8.6 (OriginLab Corp., Northampton, MA, USA) and Microsoft Excel 2016 (Redmond, WA, USA). Statistical data are presented as mean ± standard error of the mean (SEM), and (n) indicates the number of recorded cells. Statistical significance was determined with unpaired t-tests.
 
-Temperature dependency for cesium and sodium inward currents was fitted using the Boltzmann equation y=A2+(A1−A2)/(1+exp⁡((x−x0)/dx)) with parameters as indicated in Table 1.
+Temperature dependency for cesium and sodium inward currents was fitted using the Boltzmann equation $y=A2+(A1−A2)/(1+exp⁡((x−x0)/dx))$ with parameters as indicated in Table 1.
+
+**Table 1.**
+ Fitting parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Permeant cation</th>
+      <th>Cell type</th>
+      <th>A1</th>
+      <th>A2</th>
+      <th>x0</th>
+      <th>Dx</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cesium</td>
+      <td>noncapacitated</td>
+      <td>0.87314</td>
+      <td>3.45451</td>
+      <td>33.8</td>
+      <td>6.4</td>
+    </tr>
+    <tr>
+      <td>Cesium</td>
+      <td>capacitated</td>
+      <td>0.90892</td>
+      <td>2.19096</td>
+      <td>31.2</td>
+      <td>3.7</td>
+    </tr>
+    <tr>
+      <td>Sodium</td>
+      <td>noncapacitated</td>
+      <td>0.84686</td>
+      <td>5.19918</td>
+      <td>34.1</td>
+      <td>3.6</td>
+    </tr>
+  </tbody>
+</table>
 
 The temperature coefficient Q10 reflects the temperature dependence of the membrane current and was obtained using the van’t Hoff equation: Q10= (I2/I1)10/(T2-T1) where In are the corresponding current amplitudes at the lower (T1) and higher temperatures (T2) in °C. Here, we analyzed current amplitudes at 22 and 37°C.
 
-## Calcium imaging
+### Calcium imaging
 
 All calcium imaging experiments were performed in HS solution. Prior to fluorescence recording, swim-up purified human spermatozoa were bulk loaded with 9 µM fluo-4/AM (dissolved in DMSO) and 0.05% Pluronic (dissolved in DMSO) in HS solution for 30 min at room temperature. Cells were then washed with dye-free HS solution and allowed to adhere to glass imaging chambers (World Precision Instruments, Sarasota, USA) for 1 min. Via continuous bath perfusion, the attached spermatozoa were presented with alternating extracellular conditions (HS ± agonist/antagonist; continuous presence of 1 μM NNC55-0396 as CatSper inhibitor). Fluorescence was recorded at 1 Hz, 100 ms exposure time over a total time frame as indicated. Imaging was performed using a Spectra X light engine (Lumencore, Beaverton, USA) and a Hamamatsu ORCA-ER CCD camera. Fluorescence change over time was determined as ΔF/F0 where ΔF is the change in fluorescence intensity (F - F0) and F0 is the baseline intensity as calculated by averaging the fluorescence signal of the first 20 s in HS solution. Regions of interest (ROI) were restricted to the flagellar principal piece of each cell by manual selection in ImageJ (Java, Redwood Shores, CA, USA). Statistical data are presented as mean ± standard error of the mean (SEM), and (n) indicates the number of recorded cells.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Purified spermatozoa were plated onto 20 mm coverslips in HS and allowed to attach for 20 min. The cells were fixed with 4% paraformaldehyde (PFA) in PBS for 20 min and washed twice with PBS. Additional fixation was performed with 100% ice-cold methanol for 1 min with two washing steps in PBS. Cells were blocked and permeabilized by 1 hr incubation in PBS supplemented with 5% immunoglobulin-γ (IgG)–free BSA and 0.1% Triton X-100. Immunostaining was performed in the same blocking solution. Cells were incubated with primary antibodies (rabbit polyclonal αTRPV4, 1:100, abcam ab39260) overnight at 4°C. After extensive washing in PBS, secondary antibodies (mouse monoclonal αRabbit-DyLight488, 1:1000, Jackson 211-482-171) were added for 45 min at room temperature. After vigorous washing, cells were mounted with ProLong Gold Antifade with DAPI reagent (Life Technologies, Carlsbad, CA) and imaged with a confocal microscrope.
 
-## RT-PCR and cloning
+### RT-PCR and cloning
 
 Total donor-specific RNA was extracted from purified spermatozoa with a QIAGEN RNAeasy mini kit followed by complementary DNA synthesis with a Phusion RT-PCR kit (Finnzymes, MA, USA). The donor-specific translated region of TRPV4 (cDNA) was amplified with the primers forward 5- ACAGATATCACCATGGCGGATTCCAGCG −3’ and reverse 5’-AACACAGCGGCCGCCTAGAGCGGGGCGTCATC-3’ and was subcloned into a pTracer-CMV2 vector (Invitrogen) using the restriction sites: EcoRV and NotI. TRPV4 identity was sequence verified. HEK293 (ATCC CRL-1573) cells were transfected during passages 2 to 15 using a standard lipofectamine protocol (Invitrogen). Transfected cells were identified as green fluorescent and successful transfection was verified via both western blotting and electrophysiology. The cell lines was not tested for mycoplasma and is not on the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee: http://iclac.org/wp-content/uploads/Cross-Contaminations-v8_0.pdf.
 
-## Immunoblotting
+### Immunoblotting
 
 The highly motile sperm fraction was separated from other somatic cells (mainly white blood cells, immature germ cells, and epithelial cells) by density gradient consisting of 90% and 50% isotonic Isolate (Irvine Scientific, CA) solution diluted in HS solution with the addition of protease inhibitors (Roche). Protease inhibitors were used throughout the whole procedure. After centrifugation at 300 g for 30 min at 24°C, the sperm pellet at the bottom of the 90% layer was collected, diluted ten times, and washed in HS by centrifugation at 2000 g for 20 min. Cells were examined by phase-contrast microscopy for motility and counted before centrifugation. Contamination of the pure sperm fraction by other cell types was minimal, with less than 0.2% of somatic cells, which was below the protein detection threshold for immunoblotting applications. The pellet was subjected to osmotic shock by a 5 min incubation in 0.5x HS solution, the addition of 10 mM EDTA and 10 mM dithiothreitol (DTT) for 10 min, and sonication in a water bath at 25°C for 5 min. Osmolarity was adjusted by addition of 10x phosphate-buffered saline (PBS). Laemmli sample buffer (5x) was added to a final 1x concentration, and the DTT concentration was adjusted to 20 mM. An additional 5 min sonication and boiling at 100°C for 5 min were performed. The total crude cell lysate was loaded onto a 4–20% gradient Tris-HCl Criterion SDS-PAGE (BioRad) with 500,000 sperm cells/well. TRPV4- and empty vector-transfected HEK293 cells were lysed in 2x Laemmli sample buffer and subjected to SDS-PAGE. Ten thousand cells per well were loaded onto SDS-PAGE. After transfer to polyvinylidene fluoride membranes, blots were blocked in 0.1% PBS-Tween20 with 3% IgG-free BSA for 15 min and incubated with primary antibodies overnight at 4°C. Blots were probed with rabbit anti-b-tubulin antibodies (Abcam), mouse monoclonal anti-actin C4 antibodies (Abcam), or anti-TRPV4 antibodies (Abcam). After subsequent washing and incubation with secondary horseradish peroxidase-conjugated antibodies (Abcam), membranes were developed with an ECL SuperSignal West Pico kit (Pierce).

@@ -17,18 +17,18 @@
 
 ### Affiliations
 
-1. https://ror.org/007ps6h72 Computational Biology Program, Fred Hutch Cancer Research Center Seattle United States
-2. https://ror.org/00cvxb145 Molecular and Cellular Biology Program, University of Washington Seattle United States
-3. https://ror.org/02r3e0967 Department of Immunology, St. Jude Children’s Research Hospital Memphis United States
-4. https://ror.org/0011qv509 Department of Microbiology, Immunology, and Biochemistry, University of Tennessee Health Science Center Memphis United States
-5. https://ror.org/00cvxb145 Department of Biostatistics, University of Washington Seattle United States
+1. Computational Biology Program, Fred Hutch Cancer Research Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+2. Molecular and Cellular Biology Program, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+3. Department of Immunology, St. Jude Children’s Research Hospital Memphis United States ([ROR:02r3e0967](https://ror.org/02r3e0967))
+4. Department of Microbiology, Immunology, and Biochemistry, University of Tennessee Health Science Center Memphis United States ([ROR:0011qv509](https://ror.org/0011qv509))
+5. Department of Biostatistics, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 6. Centro Nacional de Diagnóstico y Referencia, Ministry of Health Managua Nicaragua
-7. https://ror.org/02y8mb071 Sustainable Sciences Institute Managua Nicaragua
-8. https://ror.org/00jmfr291 Department of Epidemiology, University of Michigan Ann Arbor United States
-9. https://ror.org/00cvxb145 Department of Genome Sciences, University of Washington Seattle United States
-10. https://ror.org/00cvxb145 Department of Statistics, University of Washington Seattle United States
-11. https://ror.org/006w34k90 Howard Hughes Medical Institute Seattle United States
-12. https://ror.org/00cvxb145 Institute for Protein Design, Department of Biochemistry, University of Washington Seattle United States
+7. Sustainable Sciences Institute Managua Nicaragua ([ROR:02y8mb071](https://ror.org/02y8mb071))
+8. Department of Epidemiology, University of Michigan Ann Arbor United States ([ROR:00jmfr291](https://ror.org/00jmfr291))
+9. Department of Genome Sciences, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+10. Department of Statistics, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+11. Howard Hughes Medical Institute Seattle United States ([ROR:006w34k90](https://ror.org/006w34k90))
+12. Institute for Protein Design, Department of Biochemistry, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 
 † Corresponding author
 
@@ -40,7 +40,7 @@ Every T cell receptor (TCR) repertoire is shaped by a complex probabilistic tang
 
 Receptor proteins on the surfaces of T cells are an essential component of the cell-mediated adaptive immune response in humans. Cells throughout the body regularly present protein fragments, known as antigens, on cell-surface molecules called major histocompatibility complex (MHC). Each T cell expresses a randomly-generated T cell receptor (TCR) which can bind the MHC-bound peptide and, if necessary, initiate an immune response. As part of this immune response, a T cell will proliferate and subsequent clones of that T cell will inherit the same antigen-specific TCR. Over time, the collection of all TCRs in an individual (the TCR repertoire) will dynamically summarize their previous immune exposures (Woodsworth et al., 2013).
 
-To appropriately defend against a wide array of foreign pathogens, each individual has a highly diverse TCR repertoire. To generate diverse and functional TCRs, T cells combine a random generation process called V(D)J recombination with a selection process for proper expression and MHC recognition. Each TCR is composed of an α and a β protein chain which are both generated through V(D)J recombination. In the β chain, the recombination process proceeds by randomly choosing from a pool of V-gene, D-gene, and J-gene segments of the germline T cell receptor beta (TCRB) locus over a series of steps. First, the intervening chromosomal DNA between a randomly chosen D- and J-gene is removed to form a hairpin loop at the end of each gene (Gellert, 1994; Fugmann et al., 2000; Schatz and Swanson, 2011). Next, these hairpin loops are nicked open, often asymmetrically, by the Artemis-DNA-PKcs protein complex to create overhangs at the ends of each gene (Weigert et al., 1978; Moshous et al., 2001; Ma et al., 2002; Lu et al., 2007; Zhao et al., 2020). Depending on the location of the nick, the single-stranded overhang can contain short inverted repeats of gene terminal sequence known as P-nucleotides (Nadel and Feeney, 1995; Gauss and Lieber, 1996; Nadel and Feeney, 1997; Jackson et al., 2004). From here, nucleotides may be deleted from the gene ends through an incompletely understood mechanism suggested to involve Artemis (Feeney et al., 1994; Nadel and Feeney, 1995; Nadel and Feeney, 1997; Jackson et al., 2004; Gu et al., 2010; Zhao et al., 2020). This nucleotide trimming can remove traces of P-nucleotides (Gauss and Lieber, 1996; Srivastava and Robins, 2012). Next, non-templated nucleotides, known as N-insertions, can be added between the gene segments by the enzyme terminal deoxynucleotidyl transferase (TdT) (Kallenbach et al., 1992; Gilfillan et al., 1993; Komori et al., 1993). Once the nucleotide addition and deletion steps are completed, the gene segments are ligated together. The process is then repeated between this D-J junction and a random V-gene segment to generate a complete TCRβ  protein chain. After the β chain has been generated, a similar α chain recombination proceeds, although without a D-gene, to complete the TCR. Following the generation process, each completed TCR undergoes a selection process in the thymus to limit autoreactivity and ensure its ability to correctly bind peptide antigens presented on a specific MHC molecule (Goldrath and Bevan, 1999; Thomas and Crawford, 2019).
+To appropriately defend against a wide array of foreign pathogens, each individual has a highly diverse TCR repertoire. To generate diverse and functional TCRs, T cells combine a random generation process called V(D)J recombination with a selection process for proper expression and MHC recognition. Each TCR is composed of an $\alpha$ and a $\beta$ protein chain which are both generated through V(D)J recombination. In the $\beta$ chain, the recombination process proceeds by randomly choosing from a pool of V-gene, D-gene, and J-gene segments of the germline T cell receptor beta (TCRB) locus over a series of steps. First, the intervening chromosomal DNA between a randomly chosen D- and J-gene is removed to form a hairpin loop at the end of each gene (Gellert, 1994; Fugmann et al., 2000; Schatz and Swanson, 2011). Next, these hairpin loops are nicked open, often asymmetrically, by the Artemis-DNA-PKcs protein complex to create overhangs at the ends of each gene (Weigert et al., 1978; Moshous et al., 2001; Ma et al., 2002; Lu et al., 2007; Zhao et al., 2020). Depending on the location of the nick, the single-stranded overhang can contain short inverted repeats of gene terminal sequence known as P-nucleotides (Nadel and Feeney, 1995; Gauss and Lieber, 1996; Nadel and Feeney, 1997; Jackson et al., 2004). From here, nucleotides may be deleted from the gene ends through an incompletely understood mechanism suggested to involve Artemis (Feeney et al., 1994; Nadel and Feeney, 1995; Nadel and Feeney, 1997; Jackson et al., 2004; Gu et al., 2010; Zhao et al., 2020). This nucleotide trimming can remove traces of P-nucleotides (Gauss and Lieber, 1996; Srivastava and Robins, 2012). Next, non-templated nucleotides, known as N-insertions, can be added between the gene segments by the enzyme terminal deoxynucleotidyl transferase (TdT) (Kallenbach et al., 1992; Gilfillan et al., 1993; Komori et al., 1993). Once the nucleotide addition and deletion steps are completed, the gene segments are ligated together. The process is then repeated between this D-J junction and a random V-gene segment to generate a complete TCRβ  protein chain. After the β chain has been generated, a similar $\alpha$ chain recombination proceeds, although without a D-gene, to complete the TCR. Following the generation process, each completed TCR undergoes a selection process in the thymus to limit autoreactivity and ensure its ability to correctly bind peptide antigens presented on a specific MHC molecule (Goldrath and Bevan, 1999; Thomas and Crawford, 2019).
 
 TCR repertoires vary between individuals and are a complicated tangle of genetically determined biases and immune exposures. Disentangling these factors is essential for understanding how our diverse repertoires support a powerful immune response. Previous efforts to unravel the genetic and environmental determinants governing TCR repertoire diversity have been highly impactful despite lacking high-throughput TCR repertoire sequencing data (Sharon et al., 2016; Gao et al., 2019) and/or high-resolution genotype data (Rubelt et al., 2016; Emerson et al., 2017; Gao et al., 2019; Krishna et al., 2020). For example, it has been shown that variation in the MHC locus biases TCR V(D)J gene usage (Sharon et al., 2016; Gao et al., 2019) and has been associated with clusters of shared receptors in response to Epstein-Barr virus epitope (DeWitt et al., 2018). Other studies have reported biases in V(D)J gene usage (Zvyagin et al., 2014; Qi et al., 2016; Rubelt et al., 2016; Pogorelyy et al., 2018; Tanno et al., 2020; Fischer et al., 2021), N-insertion lengths (Rubelt et al., 2016), and repertoire similarity in response to acute infection (Qi et al., 2016; Pogorelyy et al., 2018) for monozygotic twins. While this work clearly illustrates that genetic similarity implies TCR repertoire similarity, the extent to which specific variations are associated with V(D)J recombination probabilities has not been fully explored.
 
@@ -48,33 +48,368 @@ In this paper, we directly address the question of how an individual’s genetic
 
 ## Results
 
-## Discovery cohort data description
+### Discovery cohort data description
 
 We worked with paired SNP array and TCRβ-immunosequencing data representing 398 individuals and over 35 million SNPs and/or indels (Table 1). TCR sequences can be separated into those that code for a complete, full-length peptide sequence (which we will call ‘productive’ rearrangements) and ‘non-productive’ rearrangements that do not. Non-productive sequences can arise during TCR generation steps if the V- and J-genes are shifted into different reading frames or a premature stop codon is introduced in the junction region. A non-productive rearrangement can be sequenced as part of the repertoire when a recombination event on one of a T cell’s two chromosomes fails to create a functional receptor, followed by a successful recombination event on the other chromosome. Because these non-productive sequences do not generate proteins that participate in the T cell selection process within the thymus, they should not be subject to functional selection (Robins et al., 2010; Murugan et al., 2012). As such, their recombination statistics should reflect only the V(D)J recombination generation process which occurs before the stage of thymic selection.
 
+**Table 1.**
+ Discovery cohort demographics.Table 1—source data 1.Subjects map from the original self-identified ancestry groups to ancestry-informative PCA clusters (see Materials and methods).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sex</td>
+      <td>Female</td>
+      <td>179</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Male</td>
+      <td>197</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Unknown</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td>Age (in years)</td>
+      <td>&lt; 10</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>11–20</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>21–30</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>31–40</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>41–50</td>
+      <td>103</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>51–60</td>
+      <td>70</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>&gt; 60</td>
+      <td>22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Unknown</td>
+      <td>62</td>
+    </tr>
+    <tr>
+      <td>Ancestry-informative PCA cluster (see Materials and methods)</td>
+      <td>“African”-associated</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>“Asian”-associated</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>“Caucasian”-associated</td>
+      <td>322</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>“Hispanic”-associated</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>“Middle Eastern”-associated</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>“Native American”-associated</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>CMV serostatus</td>
+      <td>Positive</td>
+      <td>171</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Negative</td>
+      <td>204</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Unknown</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td></td>
+      <td>398</td>
+    </tr>
+  </tbody>
+</table>
+
 In the data cohort of 398 individuals, an average of 235,054 unique TCRβ-chain nucleotide sequences were sequenced per individual. Within each individual repertoire, roughly 18% of sequences were classified as ‘non-productive’. Thus, we can analyze the productive and non-productive sequences separately to distinguish between TCR generation and selection effects within each TCR repertoire. Specifically, we inferred the associations between genome-wide variation and V(D)J gene usage of each V-, D-, and J-gene, the extent of TCR nucleotide trimming, the number of TCR N-insertions, and the fraction of non-gene-trimmed TCRs containing P-nucleotides for both productive and non-productive sequences (Table 2).
 
-## TCRB and MHC locus variation is associated with V-, D-, and J-gene usage frequency
+**Table 2.**
+ We inferred the associations between genome-wide variation and many different TCR repertoire features for productive and non-productive TCR sequences, separately.For each TCR repertoire feature, we considered the significance of associations using a Bonferroni-corrected threshold established to correct for each TCR feature subtype, the two TCR productivity types, and the total number of SNPs tested (described in detail in Methods).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Repertoire feature(significance threshold)</th>
+      <th>Model type</th>
+      <th>Feature subtype</th>
+      <th>Productivity</th>
+      <th>Significant association</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>V(D)J gene usage(5.09 × 10−11)</td>
+      <td>simple</td>
+      <td>Each of 60 V-genes</td>
+      <td>Productive</td>
+      <td>Yes, for 36 V-genes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Non-productive</td>
+      <td>Yes, for 26 V-genes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Each of 2 D-genes</td>
+      <td>Productive</td>
+      <td>Yes, for both D-genes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Non-productive</td>
+      <td>Yes, for both D-genes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Each of 14 J-genes</td>
+      <td>Productive</td>
+      <td>Yes, for 7 J-genes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Non-productive</td>
+      <td>Yes, for 8 J-genes</td>
+    </tr>
+    <tr>
+      <td>Amount of nucleotide trimming(9.68 × 10−10)</td>
+      <td>gene-conditioned</td>
+      <td>V-gene trimming</td>
+      <td>Productive</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Non-productive</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>5’ end D-gene trimming</td>
+      <td>Productive</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Non-productive</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>3’ end D-gene trimming</td>
+      <td>Productive</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Non-productive</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>J-gene trimming</td>
+      <td>Productive</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Non-productive</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Number of N-insertions(1.94 × 10−9)</td>
+      <td>simple</td>
+      <td>V-D-gene N-insertions</td>
+      <td>Productive</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Non-productive</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>D-J-gene N-insertions</td>
+      <td>Productive</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Non-productive</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
+
+### TCRB and MHC locus variation is associated with V-, D-, and J-gene usage frequency
 
 To quantify the effect of SNPs on the expression of various V-, D-, and J-genes during V(D)J recombination, we designed a fixed effects model to assess the relationship between SNP genotype and gene frequency across all individuals. We fit this ‘simple model’ for each different V-, D-, and J-gene in our paired dataset.
 
 Because of the potential for population-substructure-related effects to inflate associations between each SNP and gene usage frequency, we incorporated ancestry-informative principal components (Conomos et al., 2015) based on the SNP genotypes for a subset of representative subjects as covariates in each model (see Materials and methods for details). Diagnostic statistics show that this bias correction is sufficient (Figure 5—source data 3).
 
-With these methods, we consider the significance of associations at a Bonferroni-corrected whole-genome p-value significance threshold of 5.09×10-11 (see Materials and methods). Using this conservative threshold, we identified 9152 significant associations between the frequency of various V-, D-, and J-genes and the genotype of SNPs genome-wide (Figure 1 and Figure 1—source data 1). Of these significant associations, 7096 were located within the TCRB locus for both productive and non-productive TCRs. The TCRB gene locus encodes the variable V-, D-, and J-gene segments which are recombined during V(D)J recombination. In our dataset, there are 60 V-genes, 2 D-genes, and 14 J-genes uniquely expressed. As we would expect, we find that the expression of many of these genes is associated with variation in the TCRB locus (Figure 2). For the significantly associated TCRB locus SNPs, the median association effect magnitude was largest for the expression of TRBD1 (median effect size = –0.038) followed by the expression of TRBD2 (median effect size = 0.035) and the expression of TRBV28 (median effect size = 0.019) all in productive TCRs (Figure 1—figure supplement 1). Variation in the TCRB locus is most significantly associated (smallest p-value) with expression of the gene TRBV28 within both productive (P=1.41×10-164) and non-productive (P=1.94×10-146) TCRβ chains. We identified the largest number of significant associations between variation in the TCRB locus and expression of the gene TRBV7-3 within productive TCRβ chains (232 significant associations) and the gene TRBJ1-2 within non-productive TCRβ chains (290 significant associations).
+With these methods, we consider the significance of associations at a Bonferroni-corrected whole-genome p-value significance threshold of $5.09\times10^{-11}$ (see Materials and methods). Using this conservative threshold, we identified 9152 significant associations between the frequency of various V-, D-, and J-genes and the genotype of SNPs genome-wide (Figure 1 and Figure 1—source data 1). Of these significant associations, 7096 were located within the TCRB locus for both productive and non-productive TCRs. The TCRB gene locus encodes the variable V-, D-, and J-gene segments which are recombined during V(D)J recombination. In our dataset, there are 60 V-genes, 2 D-genes, and 14 J-genes uniquely expressed. As we would expect, we find that the expression of many of these genes is associated with variation in the TCRB locus (Figure 2). For the significantly associated TCRB locus SNPs, the median association effect magnitude was largest for the expression of TRBD1 (median effect size = –0.038) followed by the expression of TRBD2 (median effect size = 0.035) and the expression of TRBV28 (median effect size = 0.019) all in productive TCRs (Figure 1—figure supplement 1). Variation in the TCRB locus is most significantly associated (smallest p-value) with expression of the gene TRBV28 within both productive ($P=1.41\times10^{-164}$) and non-productive ($P=1.94\times10^{-146}$) TCRβ chains. We identified the largest number of significant associations between variation in the TCRB locus and expression of the gene TRBV7-3 within productive TCRβ chains (232 significant associations) and the gene TRBJ1-2 within non-productive TCRβ chains (290 significant associations).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig1-v1.jpg)
+
+**Figure 1.:** The most significant SNP associations for the frequency of each of the 60 V-genes, 2 D-genes, and 14 J-genes are located within the TCRB and MHC loci. Associations are colored by gene-type instead of by gene identity for simplicity. Only SNP associations whose $P<5\times10^{−6}$ are shown here. The gray horizontal line corresponds to a Bonferroni-corrected p-value significance threshold of $5.09\times10^{-11}$.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The median association effect magnitude for each gene is shown by each point and the interquartile range of the association effect sizes for each gene is given by each black horizontal line.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The median association effect magnitude for each gene is shown by each point and the interquartile range of the association effect sizes for each gene is given by each black horizontal line.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Notably, the majority of TCRB locus SNPs which were significant for productive TCRs and not significant for non-productive TCRs occurred for the usage of genes which have both productive and non-productive alleles (Dean et al., 2015). Only SNP associations which were significant for either productive TCRs, non-productive TCRs, or both are shown here. There were 15 significant associations which were not located within the MHC, TCRB or ZNF443/ZNF709 loci and are not shown here. The solid black horizontal and vertical lines correspond to the genome-wide Bonferroni-corrected P-value significance threshold of $5.09\times10^{-11}$. The dashed black line represents the non-productive -log10(P-value) equals productive -log10(P-value) line.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig2-v1.jpg)
 
-**Figure 2.:** TCRB locus.The p-value of the strongest TCRB SNP, gene-usage association for each different V-gene, D-gene, and J-gene segment is given on the X-axis. The proportion of gene segments within each gene type is given on the Y-axis. The gray vertical lines correspond to a whole-genome-level Bonferroni-corrected p-value significance threshold of .5.09×10-11Figure 2—source data 1.TCRB SNP, gene-usage association p-value for each different V-gene, D-gene, and J-gene.
+**Figure 2.:** The p-value of the strongest TCRB SNP, gene-usage association for each different V-gene, D-gene, and J-gene segment is given on the X-axis. The proportion of gene segments within each gene type is given on the Y-axis. The gray vertical lines correspond to a whole-genome-level Bonferroni-corrected p-value significance threshold of $5.09\times10^{-11}$.
 
 Beyond the TCRB locus, we also identified 1242 significant SNP associations within the major histocompatibility complex (MHC) locus. MHC proteins act by presenting self and foreign peptides to TCRs for inspection. Because of this important role in the functionality of T cells, the TCR-MHC interaction is important for thymic selection. We observe the expression of 12.1% of V-genes for productive TCRs to be associated with variation in the MHC locus. For the significantly associated MHC locus SNPs, the median association effect magnitude was largest for the expression of TRBV4-1 (median effect size = –0.004) followed by the expression of TRBV10-3 (median effect size = 0.0033) (Figure 1—figure supplement 2). This associated MHC locus variation is located within sequences which code for canonical, peptide-presenting MHC proteins. For example, the eight most significantly associated SNPs were located within the HLA-DRB1 gene within the MHC locus. These top SNPs were all associated with the expression of the gene TRBV10-3 within productive TCRs. As expected, the expression of V-genes for non-productive TCRs is not associated with variation in the MHC locus. Likewise, the expression of D- and J-genes for both productive and non-productive TCRs is not associated with variation in the MHC locus. These results refine and extend associations found in previous work (Sharon et al., 2016; Gao et al., 2019).
 
 We observed just one other long-range association region, in addition to the MHC locus, located in proximity to the ZNF443 and ZNF709 loci on chromosome 19. Both of these zinc finger proteins contain KRAB-domains and, thus, likely act as transcriptional repressors (Witzgall et al., 1994). In this region, we observe 138 significant SNP associations for the expression of the V-gene TRBV24-1. Of these 138 SNP associations, 76 were associations for TRBV24-1 expression in non-productive TCRs and 62 were associations for TRBV24-1 expression in productive TCRs. Significant association between variation near the ZNF443 locus and expression of TRBV24-1 in productive TCRs was also noted previously (Sharon et al., 2016). Because the associations observed here are strongest for non-productive TCRs, this chromosome 19 variation likely influences gene usage during TCR generation steps, as opposed to selection. Variation in proximity to the ZNF443 and ZNF709 loci may alter the resulting zinc finger proteins and lead to differential transcriptional repression of a site near TRBV24. Because the transcription of unrearranged gene segments influences their recombination potential (Oltz, 2001), this difference in repression could subsequently change the usage frequency of the TRBV24 gene.
 
-## DCLRE1C locus variation is associated with the extent of V-, D-, and J-gene trimming
+### DCLRE1C locus variation is associated with the extent of V-, D-, and J-gene trimming
 
-We hypothesized that SNPs across the genome, particularly those within V(D)J-recombination-associated genes, may influence the extent of TCR nucleotide trimming at V(D)J TCRB gene junctions. It has been previously observed that the extent of trimming varies by V(D)J TCRB gene choice (Figure 3—figure supplement 4; Nadel and Feeney, 1995; Nadel and Feeney, 1997; Jackson et al., 2004; Murugan et al., 2012). In other words, two different V-genes (TRBV19 and TRBV20-1, for example) will on average be trimmed to different extents due, in part, to differences in their terminal nucleotide sequences (and the same is true for D- and J-genes). Thus, to quantify the effect of SNPs on the extent of V-, D-, and J-gene trimming during V(D)J recombination, without confounding the extent of trimming with TCRB gene choice, we designed a linear fixed effects model to measure the correlation between each SNP and the number of nucleotide deletions, while conditioning out the effect mediated by gene choice. We fit this ‘gene-conditioned model’ for each of the four trimming types (V-gene trimming, 5’ end D-gene trimming, 3’ end D-gene trimming, and J-gene trimming) on our paired data set. We performed the analysis, as above, incorporating ancestry-informative principal components in each model (detailed in Materials and methods). Diagnostic statistics show that this correction for population-substructure-related biases is sufficient (Figure 3—source data 2). Here, we considered the significance of associations at a Bonferroni-corrected whole-genome p-value significance threshold of 9.68×10-10 (see Materials and methods).
+We hypothesized that SNPs across the genome, particularly those within V(D)J-recombination-associated genes, may influence the extent of TCR nucleotide trimming at V(D)J TCRB gene junctions. It has been previously observed that the extent of trimming varies by V(D)J TCRB gene choice (Figure 3—figure supplement 4; Nadel and Feeney, 1995; Nadel and Feeney, 1997; Jackson et al., 2004; Murugan et al., 2012). In other words, two different V-genes (TRBV19 and TRBV20-1, for example) will on average be trimmed to different extents due, in part, to differences in their terminal nucleotide sequences (and the same is true for D- and J-genes). Thus, to quantify the effect of SNPs on the extent of V-, D-, and J-gene trimming during V(D)J recombination, without confounding the extent of trimming with TCRB gene choice, we designed a linear fixed effects model to measure the correlation between each SNP and the number of nucleotide deletions, while conditioning out the effect mediated by gene choice. We fit this ‘gene-conditioned model’ for each of the four trimming types (V-gene trimming, 5’ end D-gene trimming, 3’ end D-gene trimming, and J-gene trimming) on our paired data set. We performed the analysis, as above, incorporating ancestry-informative principal components in each model (detailed in Materials and methods). Diagnostic statistics show that this correction for population-substructure-related biases is sufficient (Figure 3—source data 2). Here, we considered the significance of associations at a Bonferroni-corrected whole-genome p-value significance threshold of $9.68\times10^{-10}$ (see Materials and methods).
 
-With these methods, we identified 317 significant SNP associations with the extent of nucleotide trimming for various trimming types (Figure 3 and Figure 4—source data 1). We found 66 highly significant associations between V- and J-gene trimming and SNPs within the DCLRE1C gene locus for both productive and non-productive TCRs when considered in the whole-genome context. For these significant DCLRE1C locus SNP associations, the magnitudes of the effects were greater for non-productive TCRs compared to productive TCRs for both V-gene trimming and J-gene trimming (Figure 4—figure supplement 1). The DCLRE1C gene encodes the Artemis protein, an endonuclease responsible for cutting the hairpin intermediate prior to nucleotide trimming and insertion during V(D)J recombination. Many of the SNPs responsible for these 66 significant associations within the DCLRE1C locus were shared between trimming and productivity types (Figure 4). The most significantly-associated SNP (rs41298872) within this locus had a p-value of 3.18×10-37 for J-gene trimming of non-productive TCRs (Figure 3—figure supplement 2). This SNP was also significantly-associated with J-gene trimming of productive (P=1.99×10-29) TCRs and V-gene trimming of productive (P=6.23×10-23) and non-productive (P=2.81×10-21) TCRs. We performed a conditional analysis to identify potential independent secondary signals by including this SNP as an additional covariate within the model. This analysis revealed a second, independent SNP signal (rs35441642) within the DCLRE1C locus for J-gene trimming of non-productive TCRs (Figure 4—source data 2). None of the other nucleotide trimming type, productivity status combinations had significant evidence for secondary independent signals.
+With these methods, we identified 317 significant SNP associations with the extent of nucleotide trimming for various trimming types (Figure 3 and Figure 4—source data 1). We found 66 highly significant associations between V- and J-gene trimming and SNPs within the DCLRE1C gene locus for both productive and non-productive TCRs when considered in the whole-genome context. For these significant DCLRE1C locus SNP associations, the magnitudes of the effects were greater for non-productive TCRs compared to productive TCRs for both V-gene trimming and J-gene trimming (Figure 4—figure supplement 1). The DCLRE1C gene encodes the Artemis protein, an endonuclease responsible for cutting the hairpin intermediate prior to nucleotide trimming and insertion during V(D)J recombination. Many of the SNPs responsible for these 66 significant associations within the DCLRE1C locus were shared between trimming and productivity types (Figure 4). The most significantly-associated SNP (rs41298872) within this locus had a p-value of $3.18\times10^{-37}$ for J-gene trimming of non-productive TCRs (Figure 3—figure supplement 2). This SNP was also significantly-associated with J-gene trimming of productive ($P=1.99\times10^{-29}$) TCRs and V-gene trimming of productive ($P=6.23\times10^{-23}$) and non-productive ($P=2.81\times10^{-21}$) TCRs. We performed a conditional analysis to identify potential independent secondary signals by including this SNP as an additional covariate within the model. This analysis revealed a second, independent SNP signal (rs35441642) within the DCLRE1C locus for J-gene trimming of non-productive TCRs (Figure 4—source data 2). None of the other nucleotide trimming type, productivity status combinations had significant evidence for secondary independent signals.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig3-v1.jpg)
+
+**Figure 3.:** Only SNP associations whose $P<5\times10^{−5}$ are shown here. The gray horizontal line corresponds to a Bonferroni-corrected p-value significance threshold of $9.68\times10^{-10}$.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Specifically, SNP genotype and TRBD2*02 allele genotype are significantly correlated ($P<2.2\times10^{−16}$ and $χ^{2}=259.3$) using a chi-square test of independence. The Y-axis integer genotypes correspond to the number of minor alleles within the rs2367486 SNP genotype. The X-axis integer genotypes correspond to the number of TRBD2*02 alleles within the TRBD2 gene locus genotype.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Further, four new significant associations are present between 5’ end D-gene trimming and variation in the DCLRE1C locus. Only SNP associations whose $P<5\times10^{−2}$ are shown here. All genome-wide 3’ end D-gene trimming associations fell above this plotting threshold. The gray horizontal line corresponds to a p-value of $1.94\times10^{-9}$ (calculated using whole-genome Bonferroni correction, see Materials and methods).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Additionally, two new associations are present between 5’ end D-gene trimming and variation in the DCLRE1C locus for productive TCRs. Four new associations are present between 3’ end D-gene trimming and variation in the DCLRE1C locus. Only SNP associations whose $P<5\times10^{−4}$ are shown here. The gray horizontal line corresponds to a P-value of $1.94\times10^{-9}$ (calculated using whole-genome Bonferroni correction, see Materials and methods).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** An empirical cumulative distribution is drawn for each gene allele type within each indicated gene type (i.e. V-gene, D-gene, J-gene).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** Earlier findings relating variations in MHC and TCRB to gene usage changes, however, indicate that many of these associations are likely artefactual. Only SNP associations whose $P<5\times10^{−5}$ are shown here. The gray horizontal line corresponds to a p-value of $9.68\times10^{-10}$.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig3-figsupp6-v1.jpg)
+
+**Figure 3—figure supplement 6.:** However, significant associations are present within the TCRB and MHC loci for the fraction of non-D-gene-trimmed, productive TCRs containing 5’ end D-gene P-nucleotides. Only SNP associations whose $P<5\times10^{−5}$ are shown here. The gray horizontal line corresponds to a p-value of $9.68\times10^{-10}$ (calculated using whole-genome Bonferroni correction, see Materials and methods).
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig3-figsupp7-v1.jpg)
+
+**Figure 3—figure supplement 7.:** However, significant associations are present within the TCRB and MHC loci. Only SNP associations whose $P<5\times10^{−5}$ are shown here. The gray horizontal line corresponds to a Bonferroni-corrected whole-genome p-value significance threshold of $9.68\times10^{-10}$ (see Materials and methods).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig4-v1.jpg)
+
+**Figure 4.:** Additionally, many of these significant SNP associations overlapped between trimming types. Downward arrows represent promoter/exon starting positions and upward arrows represent promoter/exon ending positions.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig4-figsupp1-v1.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Only TCRs containing TRBJ1-1*01 (the most frequently used TRBJ1 gene across subjects) were included when calculating the average number of J-gene nucleotides deleted for each subject.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Only TCRs containing TRBJ1-1*01 (the most frequently used TRBJ1 gene across subjects) were included when calculating the average number of J-gene nucleotides deleted for each subject. Only TCRs containing TRBV5-1*01 (the most frequently used TRBV gene across subjects) were included when calculating the average number of V-gene nucleotides deleted for each subject.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A) of productive and non-productive TCRβ chains and J-gene trimming (B) of productive TCRβ chains changes as a function of SNP genotype within the validation cohort for a non-synonymous DCLRE1C SNP (rs12768894, c.728A > G). The average number of nucleotides deleted was calculated across all TCRβ chains for each subject, regardless of gene-usage.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** The average number of nucleotides deleted was calculated across all TCRα chains for each subject, regardless of gene-usage.
 
 Our procedure also identified many highly significant associations between 5’ end D-gene trimming and SNPs within the TCRB gene locus, however these appear to result from correlations between SNP genotype and TRBD2 allele genotype (Figure 3—figure supplement 1). If we correct for TRBD2 allele genotype in our model formulation (see Materials and methods), we no longer observe these associations between SNPs within the TCRB gene locus and the extent of 5’ end D-gene trimming (Figure 3—figure supplement 2). TRBD2 allele genotype could be acting as a confounding variable due to linked local genetic variation which influences nucleotide trimming and/or D-gene assignment ambiguity variation as a function of TRBD2 allele genotype. To explore the extent of possible D-gene assignment ambiguity variation, we restricted our analysis to TCRs which contain TRBJ1 genes and consequently contain TRBD1 due to topological constraints during V(D)J recombination (Robins et al., 2010; Murphy and Weaver, 2016). With this approach, we also no longer observe associations between SNPs within the TCRB gene locus and the extent of 5’ end D-gene trimming, and additionally, we do observe significant associations between SNPs within the DCLRE1C locus and 5’ and 3’ end D-gene trimming which were not observed in the original genome-wide analysis (Figure 3—figure supplement 3).
 
@@ -82,27 +417,277 @@ Our fixed effects model formulation for these inferences is important: if we don
 
 Because P-nucleotides can be present at V(D)J junctions in the absence of nucleotide trimming (Murphy and Weaver, 2016), we hypothesized that similar DCLRE1C locus variation may also be associated with P-addition. Interestingly, we did not identify any strong associations between SNPs within the DCLRE1C locus and the fraction of non-gene-trimmed TCRs containing P-nucleotides when implementing our ‘gene-conditioned model’, despite the known role of the Artemis protein in functioning as an endonuclease responsible for cutting the hairpin intermediate, and thus, potentially creating P-nucleotides during V(D)J recombination (Figure 3—figure supplement 6). We observe similar results when quantifying the effect of genome-wide SNPs on the number of V-, D-, and J-gene P-nucleotides per TCR (Figure 3—figure supplement 7).
 
-## DNTT locus variation is associated with the number of V-D and D-J N-insertions
+### DNTT locus variation is associated with the number of V-D and D-J N-insertions
 
 Unlike V-, D-, or J-gene nucleotide trimming length, the number of nucleotide N-insertions between V-D and D-J genes does not vary substantially with V(D)J TCRB gene choice (Figure 5—figure supplement 1; Murugan et al., 2012). Thus, to infer the association between SNPs and the number of nucleotide N-insertions, we implemented a ‘simple model’, without conditioning out any effect mediated by gene choice. Again, because of the potential for population-substructure-related effects to inflate associations between each SNP and the number of N-insertions, we incorporated ancestry-informative principal components as covariates in each model (detailed in Materials and methods). Diagnostic statistics show that this bias correction is sufficient (Figure 5—source data 3).
 
-With these methods, we identified three associations between SNPs and the number of nucleotide N-insertions using a Bonferroni-corrected whole-genome P-value significance threshold of 1.94×10-9 (see Materials and methods) (Figure 5 and Figure 5—source data 1). Two SNPs within the DNTT gene locus (rs2273892 and rs12569756) were responsible for these associations. The DNTT gene encodes the terminal deoxynucleotidyl transferase (TdT) protein which is a specialized DNA polymerase responsible for adding non-templated (N) nucleotides to coding junctions during V(D)J recombination. When we restrict our analysis to TCRs which contain TRBJ1 genes and consequently eliminate potential D-gene assignment ambiguity, we continue to observe these DNTT associations (Figure 5—figure supplement 2).
+With these methods, we identified three associations between SNPs and the number of nucleotide N-insertions using a Bonferroni-corrected whole-genome P-value significance threshold of $1.94\times10^{-9}$ (see Materials and methods) (Figure 5 and Figure 5—source data 1). Two SNPs within the DNTT gene locus (rs2273892 and rs12569756) were responsible for these associations. The DNTT gene encodes the terminal deoxynucleotidyl transferase (TdT) protein which is a specialized DNA polymerase responsible for adding non-templated (N) nucleotides to coding junctions during V(D)J recombination. When we restrict our analysis to TCRs which contain TRBJ1 genes and consequently eliminate potential D-gene assignment ambiguity, we continue to observe these DNTT associations (Figure 5—figure supplement 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig5-v1.jpg)
+
+**Figure 5.:** (A) There are three associations for SNPs within the DNTT locus which are significant when considered in the whole-genome context. The gray horizontal line corresponds to a whole-genome Bonferroni-corrected P-value significance threshold of $1.94\times10^{-9}$. (B) Using a DNTT gene-level significance threshold, many more SNPs within the extended DNTT locus have significant associations for both N-insertion types. Here, the gray horizontal line corresponds to a gene-level Bonferroni-corrected P-value significance threshold of $1.28\times10^{-5}$ (calculated using gene-level Bonferroni correction for the 977 SNPs within 200 kb of the DNTT locus, see Materials and methods). For both (A) and (B), only SNP associations whose $P<5\times10^{−3}$ are shown.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** An empirical cumulative distribution is drawn for each gene allele type within each indicated gene type (i.e. V-gene, D-gene, J-gene).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Only SNP associations whose $P<5\times10^{−4}$ are shown here. The gray horizontal line corresponds to a Bonferroni-corrected p-value significance threshold of $1.94\times10^{−9}$ (calculated using whole-genome Bonferroni correction, see Materials and methods).
 
 Since the TdT protein has an important mechanistic role in the N-insertion process and because we already identified SNPs within the DNTT locus to be weakly associated with the number of N-insertions at V(D)J gene junctions, we wanted to explore the locus further. Restricting the analysis to the extended DNTT locus reduced the multiple testing burden such that 232 significant associations emerged (Figure 5 and Figure 5—source data 2). For these significant DNTT locus SNP associations, the magnitudes of the effects were greater for non-productive TCRs compared to productive TCRs for both V-D-gene junction N-insertion and D-J-gene junction N-insertion (Figure 6—figure supplement 1). Many of the SNPs responsible for these 232 significant associations within the extended DNTT locus were shared between insertion and productivity types (Figure 6). While most of these associations are likely the result of a single independent signal for each insertion and productivity type, we performed a conditional analysis to identify potential independent secondary signals. To do so, we included the most significant SNP within the DNTT locus for each insertion and productivity type as a covariate in the model. With this approach, we identified rs2273892 as the primary independent signal for D-J N-insertion of non-productive TCRs and rs12569756 as the primary independent signal for D-J N-insertion of productive TCRs and V-D N-insertion of productive and non-productive TCRs. However, these two SNPs are tightly linked and, thus, likely both represent the same, primary independent signal. This analysis did not reveal any significant evidence for secondary independent signals.
 
-We found that correcting for population-substructure-related effects was especially important in our primary genome-wide analysis, which led us to discover differences in the extent of N-insertion by ancestry-informative PCA cluster. Indeed, if we don’t incorporate correction terms for population-substructure-related biases in our model formulation, we observe many strongly significant associations, particularly within the DNTT locus. This hinted at important PCA-cluster level effects. When we look closely at the average number of N-insertions (combining the number of V-D and D-J N-insertions) across TCR repertoires by PCA cluster, we note that subjects from the ‘Asian’-associated PCA cluster have significantly fewer total N-insertions for productive (P=0.006 without Bonferroni correction) and non-productive (P=0.014 without Bonferroni correction) TCRs when compared to the population mean (using a one-sample t-test) (Figure 7). The total N-insertions for productive TCRs within the ‘Asian’-associated PCA cluster remain significantly different from the population mean after Bonferroni multiple testing correction (corrected P=0.036). Furthermore, the ‘Asian’- and ‘Hispanic’-associated PCA clusters had significantly higher mean SNP allele frequencies for SNPs within the extended DNTT region that were associated with fewer N-insertions when compared to the mean population allele frequency (P=7.32×10-20 for the ‘Asian’-associated PCA cluster and P=1.17×10-5 for the ‘Hispanic’-associated PCA cluster using a one-sample t-test with Bonferroni multiple testing correction) (Figure 8).
+![Figure 6.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig6-v1.jpg)
+
+**Figure 6.:** Within the DNTT locus, many of the significant SNP associations overlapped between N-insertion types when using DNTT gene-level Bonferroni-corrected p-value significance threshold of $1.28\times10^{-5}$.Downward arrows represent promoter/exon starting positions and upward arrows represent promoter/exon ending positions.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig6-figsupp1-v1.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** The average number of N-insertions was calculated across all TCRβ chains for each subject.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** However, the direction of the effect is the same as the discovery cohort for all N-insertion and productivity types. The average number of N-insertions was calculated across all TCRβ chains for each subject.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** This SNP is not significantly associated with the number of V-J N-inserts for non-productive TCRα chains in the validation cohort. The average number of N-insertions was calculated across all TCRα chains for each subject.
+
+We found that correcting for population-substructure-related effects was especially important in our primary genome-wide analysis, which led us to discover differences in the extent of N-insertion by ancestry-informative PCA cluster. Indeed, if we don’t incorporate correction terms for population-substructure-related biases in our model formulation, we observe many strongly significant associations, particularly within the DNTT locus. This hinted at important PCA-cluster level effects. When we look closely at the average number of N-insertions (combining the number of V-D and D-J N-insertions) across TCR repertoires by PCA cluster, we note that subjects from the ‘Asian’-associated PCA cluster have significantly fewer total N-insertions for productive ($P=0.006$ without Bonferroni correction) and non-productive ($P=0.014$ without Bonferroni correction) TCRs when compared to the population mean (using a one-sample t-test) (Figure 7). The total N-insertions for productive TCRs within the ‘Asian’-associated PCA cluster remain significantly different from the population mean after Bonferroni multiple testing correction (corrected $P=0.036$). Furthermore, the ‘Asian’- and ‘Hispanic’-associated PCA clusters had significantly higher mean SNP allele frequencies for SNPs within the extended DNTT region that were associated with fewer N-insertions when compared to the mean population allele frequency ($P=7.32\times10^{-20}$ for the ‘Asian’-associated PCA cluster and $P=1.17\times10^{-5}$ for the ‘Hispanic’-associated PCA cluster using a one-sample t-test with Bonferroni multiple testing correction) (Figure 8).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig7-v1.jpg)
+
+**Figure 7.:** The p-values from a one-sample t-test (without Bonferroni multiple testing correction) for each PCA cluster compared to the population mean are reported at the top of the plot.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Of the 398 subjects in the sample population, 81% are in the ‘Caucasian’-associated PCA-cluster.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig8-v1.jpg)
 
-**Figure 8.:** DNTT region that are associated with fewer N-insertions have a higher mean allele frequency within the ‘Asian’-associated PCA-cluster when compared to the population mean allele frequency computed across the 398 discovery cohort subjects (dashed, red horizontal line).The p-values from a one-sample t-test (without Bonferroni multiple testing correction) for each PCA cluster compared to the population mean are reported at the top of the plot. The population mean is dominated by subjects in the ‘Caucasian’-associated PCA cluster (Figure 7—figure supplement 1).Figure 8—source data 1.DNTT locus that are associated with fewer N-insertions.
+**Figure 8.:** The p-values from a one-sample t-test (without Bonferroni multiple testing correction) for each PCA cluster compared to the population mean are reported at the top of the plot. The population mean is dominated by subjects in the ‘Caucasian’-associated PCA cluster (Figure 7—figure supplement 1).
 
-## Validation analysis
+### Validation analysis
 
 To validate our results, we worked with paired ancestry-informative marker (AIM) SNP array and TCRα- and TCRβ-immunosequencing data representing 94 individuals and 2 SNPs (which overlap with the discovery dataset) from an independent validation cohort (Table 3 and see Materials and methods). In contrast to the discovery cohort, this cohort contains different demographics, shallower RNA-seq-based TCR-sequencing, and a sparser set of SNPs. However, TCR-sequencing for both TCRα and TCRβ chains is available.
 
-We were able to validate a discovery-cohort significantly associated DCLRE1C SNP within this validation cohort. While none of the independent DCLRE1C SNPs from the discovery-cohort analysis overlapped with the validation cohort SNP set, a single, non-synonymous SNP (rs12768894, c.728A > G) within the DCLRE1C locus was present in both SNP sets. This SNP was one of the significant associations we observed for V-gene trimming (productive P=2.16×10-14; non-productive P=7.21×10-14) and J-gene trimming (productive P=1.23×10-11; non-productive P=6.62×10-12) of TCRβ chains in the genome-wide discovery cohort analysis (Figure 4—figure supplement 3). Using the same methods, we identified significant associations between this SNP and J-gene trimming of productive TCRα and TCRβ chains and V-gene trimming of both productive and non-productive TCRα and TCRβ chains within the validation cohort (Table 4, Figure 4—figure supplement 4, and Figure 4—figure supplement 5). Associations between rs12768894 and both types of D-gene trimming of TCRβ chains were not significant for either cohort.
+**Table 3.**
+ Validation cohort demographics.
 
-We were unable to validate the most significantly associated DNTT SNPs due to lack of overlap between the SNP sets for the discovery and validation cohorts; a discovery-cohort weakly associated SNP (rs3762093) failed to reach statistical significance for all N-insertion types, but had the same direction of effect in the validation cohort as follows. Within the discovery cohort, rs3762093 genotype was weakly associated with the number of V-D N-insertions (productive P=1.37×10-6; non-productive P=1.50×10-7) and D-J N-insertions (productive P=9.43×10-6; non-productive P=1.94×10-7) within TCRβ chains (Figure 6—figure supplement 2). Within the validation cohort, this SNP was significantly associated with the number of V-J N-insertions within productive TCRα chains (Table 4 and Figure 6—figure supplement 4). However, this SNP was not significantly associated with the number of V-D or D-J N-insertions within productive or non-productive TCRβ chains or the number of V-J N-insertions within non-productive TCRα chains within the validation cohort (Table 4, Figure 6—figure supplement 3, and Figure 6—figure supplement 4). Despite the lack of significance, we noted that the model coefficients for rs3762093 genotype were in the same direction (i.e. the minor allele was associated with fewer N-insertions) for all N-insertion and productivity types within TCRβ chains for both cohorts. Further, while TCRα chain sequencing was not available for the discovery cohort, we observed stronger associations between rs3762093 genotype and the extent of N-insertion for both productivity types within TCRα chains compared to TCRβ chains within the validation cohort. Perhaps with a larger validation cohort, significant associations would be present for all N-insertion types.
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Count</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sex</td>
+      <td>Female</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Male</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>Age (in years)</td>
+      <td>&lt; 10</td>
+      <td>26</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>11–20</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>21–30</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>31–40</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>41–50</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>51–60</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>&gt; 60</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Self-reported ethnicity</td>
+      <td>Hispanic or Latino</td>
+      <td>94</td>
+    </tr>
+    <tr>
+      <td>CMV serostatus</td>
+      <td>Positive</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Negative</td>
+      <td>57</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td></td>
+      <td>94</td>
+    </tr>
+  </tbody>
+</table>
+
+We were able to validate a discovery-cohort significantly associated DCLRE1C SNP within this validation cohort. While none of the independent DCLRE1C SNPs from the discovery-cohort analysis overlapped with the validation cohort SNP set, a single, non-synonymous SNP (rs12768894, c.728A > G) within the DCLRE1C locus was present in both SNP sets. This SNP was one of the significant associations we observed for V-gene trimming (productive $P=2.16\times10^{-14}$; non-productive $P=7.21\times10^{-14}$) and J-gene trimming (productive $P=1.23\times10^{-11}$; non-productive $P=6.62\times10^{-12}$) of TCRβ chains in the genome-wide discovery cohort analysis (Figure 4—figure supplement 3). Using the same methods, we identified significant associations between this SNP and J-gene trimming of productive TCRα and TCRβ chains and V-gene trimming of both productive and non-productive TCRα and TCRβ chains within the validation cohort (Table 4, Figure 4—figure supplement 4, and Figure 4—figure supplement 5). Associations between rs12768894 and both types of D-gene trimming of TCRβ chains were not significant for either cohort.
+
+**Table 4.**
+ We inferred the associations between SNP genotype and TCR repertoire features for two SNPs overlapping between discovery-cohort and validation-cohort SNP sets.We considered the significance of the validation cohort associations at a Bonferroni-corrected SNP-level p-value significance threshold of 0.0042 for trimming and 0.0083 for N-insertion (see Materials and methods). Validation cohort p-values are one-tailed. * Discovery-cohort associations were only significant when considered at the DNTT -gene level significance threshold, not at the whole-genome significance threshold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SNP</th>
+      <th>TCR chain</th>
+      <th>Repertoire feature</th>
+      <th>Productivity type</th>
+      <th>Discovery cohort significant association</th>
+      <th>Validation cohort significant association</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rs12768894</td>
+      <td>TCRβ</td>
+      <td>V-gene trimming</td>
+      <td>Productive</td>
+      <td>Yes (2.16 × 10−14)</td>
+      <td>Yes (7.17 × 10−7)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Non-productive</td>
+      <td>Yes (7.21 × 10−14)</td>
+      <td>Yes (8.75 × 10−6)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>J-gene trimming</td>
+      <td>Productive</td>
+      <td>Yes (1.23 × 10−11)</td>
+      <td>Yes (5.16 × 10−10)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Non-productive</td>
+      <td>Yes (6.62 × 10−12)</td>
+      <td>No (4.18 × 10−2)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TCRα</td>
+      <td>V-gene trimming</td>
+      <td>Productive</td>
+      <td>N/A</td>
+      <td>Yes (2.59 × 10−5)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Non-productive</td>
+      <td>N/A</td>
+      <td>Yes (2.68 × 10−7)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>J-gene trimming</td>
+      <td>Productive</td>
+      <td>N/A</td>
+      <td>Yes (6.29 × 10−12)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Non-productive</td>
+      <td>N/A</td>
+      <td>No (9.99 × 10−3)</td>
+    </tr>
+    <tr>
+      <td>rs3762093</td>
+      <td>TCRβ</td>
+      <td>V-D N-insertion</td>
+      <td>Productive</td>
+      <td>Yes* (1.37 × 10−6)</td>
+      <td>No (0.153)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Non-productive</td>
+      <td>Yes* (1.50 × 10−7)</td>
+      <td>No (0.059)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>D-J N-insertion</td>
+      <td>Productive</td>
+      <td>Yes* (9.43 ×10−6)</td>
+      <td>No (0.137)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Non-productive</td>
+      <td>Yes* (1.94 × 10−7)</td>
+      <td>No (0.006)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TCRα</td>
+      <td>V-J N-insertion</td>
+      <td>Productive</td>
+      <td>N/A</td>
+      <td>Yes (0.006)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Non-productive</td>
+      <td>N/A</td>
+      <td>No (0.031)</td>
+    </tr>
+  </tbody>
+</table>
+
+We were unable to validate the most significantly associated DNTT SNPs due to lack of overlap between the SNP sets for the discovery and validation cohorts; a discovery-cohort weakly associated SNP (rs3762093) failed to reach statistical significance for all N-insertion types, but had the same direction of effect in the validation cohort as follows. Within the discovery cohort, rs3762093 genotype was weakly associated with the number of V-D N-insertions (productive $P=1.37\times10^{-6}$; non-productive $P=1.50\times10^{-7}$) and D-J N-insertions (productive $P=9.43\times10^{-6}$; non-productive $P=1.94\times10^{-7}$) within TCRβ chains (Figure 6—figure supplement 2). Within the validation cohort, this SNP was significantly associated with the number of V-J N-insertions within productive TCRα chains (Table 4 and Figure 6—figure supplement 4). However, this SNP was not significantly associated with the number of V-D or D-J N-insertions within productive or non-productive TCRβ chains or the number of V-J N-insertions within non-productive TCRα chains within the validation cohort (Table 4, Figure 6—figure supplement 3, and Figure 6—figure supplement 4). Despite the lack of significance, we noted that the model coefficients for rs3762093 genotype were in the same direction (i.e. the minor allele was associated with fewer N-insertions) for all N-insertion and productivity types within TCRβ chains for both cohorts. Further, while TCRα chain sequencing was not available for the discovery cohort, we observed stronger associations between rs3762093 genotype and the extent of N-insertion for both productivity types within TCRα chains compared to TCRβ chains within the validation cohort. Perhaps with a larger validation cohort, significant associations would be present for all N-insertion types.
 
 ## Discussion
 
@@ -124,120 +709,270 @@ In summary, we have found that the usage of TCRB genes is associated with variat
 
 ## Materials and methods
 
-## Discovery cohort dataset
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>TCRdist</td>
+      <td>Dash et al., 2017, Bradley et al., 2017</td>
+      <td></td>
+      <td>Version 0.0.2; Software can be found on GitHub</td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>migec</td>
+      <td>Shugay et al., 2014</td>
+      <td>RRID: SCR_016337</td>
+      <td>Version 1.2.9; Software can be found on GitHub</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD3-PerCP eFluor710 (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat: 46-0037-42; RRID: AB_1834395</td>
+      <td>0.012 μg per 1 million cells (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD4-BV650 (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat: 563875; RRID: AB_2687486</td>
+      <td>2 μl per 1 million cells (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD8-APC Fire750 (Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat: 344746; RRID: AB_2572095</td>
+      <td>0.1 μg per 1 million cells (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>TCRγ/δ-PE Cy7 (Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat: 331222; RRID: AB_2562891</td>
+      <td>1 μg per 1 million cells (1:40)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fc Block</td>
+      <td>BD Biosciences</td>
+      <td>Cat: 564220; RRID: AB_2728082</td>
+      <td>2.5 μg per 1 million cells (1:20)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Live/Dead Aqua</td>
+      <td>Tonbo Biosciences</td>
+      <td>Cat: 13–0870 T100</td>
+      <td>1 μl per 1 million cells (1:100)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Qiagen QIAamp DNA Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat: 51,306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Taqman SNP Genotyping Assay</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat: 4351379</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>TaqMan Genotyping Master Mix</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat: 4371353</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Discovery cohort dataset
 
 TCRβ repertoire sequence data for 666 healthy bone marrow donor subjects was downloaded from the Adaptive Biotechnologies website using the link provided in the original publication (Emerson et al., 2017). For both the discovery and validation cohorts, V, D, and J genes were assigned by comparing the TCRβ-chain (and TCRα-chain for the validation cohort) nucleotide sequences to the human IMGT/GENE-DB TCRB (or TCRA) allele sequences (Giudicelli et al., 2005). To infer the extent of nucleotide trimming, N-insertion, and P-addition for each TCRβ-chain (and TCRα-chain) nucleotide sequence, the most parsimonious V(D)J recombination scenario was assigned to each sequence using the TCRdist pipeline (Dash et al., 2017). The V(D)J recombination scenario requiring the fewest N-insertions was defined as the most parsimonious scenario.
 
 SNP array data corresponding to 398 of these subjects was downloaded from The database of Genotypes and Phenotypes (accession number: phs001918). Details of the SNP array dataset, genotype imputation, and quality control have been described previously (Martin et al., 2020).
 
-## Validation cohort dataset
+### Validation cohort dataset
 
 Peripheral blood mononuclear cell (PBMC) samples were collected from 150 healthy subjects recruited at the Health Center Sócrates Flores Vivas (HCSFV) in Managua, Nicaragua (Ng et al., 2016). Healthy participants were recruited as contacts of influenza infected index patients and blood samples were collected at both the initial visit and a 30-day follow-up visit. Participants provided written informed consent and parental permission was obtained from parents or legal guardians of children, in addition to verbal assent from children aged 6 years and older. This study was approved by the Institutional Review Boards at the University of Michigan (HUM 00091392) and the Centro Nacional de Diagnóstico y Referencia (Ministry of Health, Nicaragua; CIRE 06/07/10–025).
 
-With these samples, PBMCs were stained with CD3-PerCP eFluor710 (Thermo Cat. 46-0037-42), CD4-BV650 (BD Biosciences Cat. 563875), CD8-APC Fire750 (Biolegend Cat. 344746), and gdCy7 (Biolegend Cat. 331222). Briefly, after thawing from cryopreservation and plating in a 96-well round bottom plate, cells were spun down and resuspended in 50 μL of human Fc block (BD Biosciences Cat. 564220) in Dulbecco’s phosphate-buffered saline (DPBS) at 5 μL per test (one test = 1.0×106 cells) and incubated for 10 min at room temperature. Afterwards, 50 μL of a 2 X Live/Dead Aqua (Tonbo Cat. 13–0870 T100, 1 μL per test, 1 test = 1.0×106 cells) and pre-titrated surface antibody cocktail in DPBS were added to each well and cells were incubated for 30 min on ice and in the dark. Cells were washed, resuspended in sort buffer and bulk sorted into polystyrene tubes. Afterwards, samples were spun down, pellets were resuspended in 350 μL of RNA lysis buffer, and stored at –80°C in labeled epitubes.
+With these samples, PBMCs were stained with CD3-PerCP eFluor710 (Thermo Cat. 46-0037-42), CD4-BV650 (BD Biosciences Cat. 563875), CD8-APC Fire750 (Biolegend Cat. 344746), and gdCy7 (Biolegend Cat. 331222). Briefly, after thawing from cryopreservation and plating in a 96-well round bottom plate, cells were spun down and resuspended in 50 μL of human Fc block (BD Biosciences Cat. 564220) in Dulbecco’s phosphate-buffered saline (DPBS) at 5 μL per test (one test = $1.0\times10^{6}$ cells) and incubated for 10 min at room temperature. Afterwards, 50 μL of a 2 X Live/Dead Aqua (Tonbo Cat. 13–0870 T100, 1 μL per test, 1 test = $1.0\times10^{6}$ cells) and pre-titrated surface antibody cocktail in DPBS were added to each well and cells were incubated for 30 min on ice and in the dark. Cells were washed, resuspended in sort buffer and bulk sorted into polystyrene tubes. Afterwards, samples were spun down, pellets were resuspended in 350 μL of RNA lysis buffer, and stored at –80°C in labeled epitubes.
 
 From here, DNA was extracted from 200 μL of neutrophil pellets using the Qiagen QIAamp DNA Mini Kit (Cat. 51306). Bulk repertoires for sorted CD4 and CD8 T cells were generated in accordance with the protocol developed by Egorov et al., 2015, and sequencing was performed on the NovaSeq by the Hartwell Center at St. Jude. Raw cDNA sequencing data were processed with the MIGEC software package (Shugay et al., 2014) to define error-corrected TCRA and TCRB transcript sequences, which were then analyzed as described above for the discovery cohort data (Emerson et al., 2017).
 
 Genotypes for SNPs of interest corresponding to 94 of these subjects were pulled from Infinium Global Screening Array-24 v3.0 BeadChip results, which measures 654,027 SNP markers including multi-ethnic genome-wide content, curated clinical research variants, and quality control markers. High quality DNA was extracted using the Qiagen QIAamp DNA Mini Kit (Cat. 51306), and submitted to the St. Jude Hartwell Center for preparation and processing. Two SNPs, rs72640001 and rs72772435, were not included on this chip and were determined using Thermo Fisher TaqMan SNP Genotyping Assays (Cat. 4351379, Assay ID C__99271581_10 and C__99587751_10, respectively) and TaqMan Genotyping Master Mix (Cat. 4371353) according to the kit manual.
 
-## Data preparation
+### Data preparation
 
 With these paired SNP array and TCR-immunosequencing for both the discovery and validation cohorts, we aimed to identify significant associations between these SNPs and various TCR repertoire features. Because we would expect a difference in these phenotypes depending on whether a TCR sequence is classified as productive or non-productive, we split the data based on this TCR productivity status and computed associations separately for the two groups.
 
-We also subset the SNP data further based on several quality control metrics. We filtered the SNP array data to use only SNPs with a minor allele frequency above 0.05 in our analyses which excluded SNPs for which all subjects had the same genotype. For the discovery cohort, this filtering procedure and previous quality control (Martin et al., 2020) left 6,456,824 SNPs (of the original 35 million SNPs) remaining for our analyses. Only 2 SNPs from the validation cohort overlapped with this discovery cohort SNP set. For each of these discovery and validation cohort SNPs, when fitting each association model, we excluded observations which contained a missing SNP genotype. Next, for the TCR repertoire data, we excluded repertoires which contained a relatively small number of TCRs (log10⁡(TCR count)<4.25 for productive TCRs and log10⁡(TCR count)<3.5 for non-productive TCRs) from the analyses. Also, when fitting models for gene usage (i.e. V-gene usage, D-gene usage, and J-gene usage) we have restricted our analyses to observations which contain non-orphan genes. Lastly, for TCRβ-chains, if a D-gene is trimmed so much that the D-gene is unidentifiable, the inference pipeline used to infer TCRB genes for each sequenced TCR does not report a D-gene. Instead, this D-gene (if it is indeed present) is reported as a V-J N-insertion. Because of this, we excluded these observations when fitting models for TCR features involving the D-gene (i.e. D-gene usage, both V-D and D-J junction N-insertions, D-gene P-additions, and D-gene nucleotide trimming).
+We also subset the SNP data further based on several quality control metrics. We filtered the SNP array data to use only SNPs with a minor allele frequency above 0.05 in our analyses which excluded SNPs for which all subjects had the same genotype. For the discovery cohort, this filtering procedure and previous quality control (Martin et al., 2020) left 6,456,824 SNPs (of the original 35 million SNPs) remaining for our analyses. Only 2 SNPs from the validation cohort overlapped with this discovery cohort SNP set. For each of these discovery and validation cohort SNPs, when fitting each association model, we excluded observations which contained a missing SNP genotype. Next, for the TCR repertoire data, we excluded repertoires which contained a relatively small number of TCRs ($log_{10}⁡(TCR count)<4.25$ for productive TCRs and $log_{10}⁡(TCR count)<3.5$ for non-productive TCRs) from the analyses. Also, when fitting models for gene usage (i.e. V-gene usage, D-gene usage, and J-gene usage) we have restricted our analyses to observations which contain non-orphan genes. Lastly, for TCRβ-chains, if a D-gene is trimmed so much that the D-gene is unidentifiable, the inference pipeline used to infer TCRB genes for each sequenced TCR does not report a D-gene. Instead, this D-gene (if it is indeed present) is reported as a V-J N-insertion. Because of this, we excluded these observations when fitting models for TCR features involving the D-gene (i.e. D-gene usage, both V-D and D-J junction N-insertions, D-gene P-additions, and D-gene nucleotide trimming).
 
-## Notation
+### Notation
 
-The discovery dataset contains observations for a total of I=398 subjects and the validation dataset contains observations for a total of I=94 subjects. Within each cohort, for subject i∈{1,…,I}, we observe a total of Ni TCRs which, here, represents the number of TCRs which compose each subject’s TCR repertoire. Thus, for each TCR k∈{1,…,Ni}, we measure a TCR feature of interest, yi⁢k, such as the number of V-D N-insertions, the extent of V-trimming, etc. We also have SNP genotype data for a total of J SNPs such that for each SNP j∈{1,…,J} and subject i∈{1,…,I}, we measure the number of minor alleles in the genotype, xi⁢j∈{0,1,2}.
+The discovery dataset contains observations for a total of $I=398$ subjects and the validation dataset contains observations for a total of $I=94$ subjects. Within each cohort, for subject $i\in{1,…,I}$, we observe a total of $N_{i}$ TCRs which, here, represents the number of TCRs which compose each subject’s TCR repertoire. Thus, for each TCR $k\in{1,…,N_{i}}$, we measure a TCR feature of interest, $y_{i⁢k}$, such as the number of V-D N-insertions, the extent of V-trimming, etc. We also have SNP genotype data for a total of $J$ SNPs such that for each SNP $j\in{1,…,J}$ and subject $i\in{1,…,I}$, we measure the number of minor alleles in the genotype, $x_{i⁢j}\in{0,1,2}$.
 
-## Quantifying the association strength between each SNP and TCR feature using the ‘simple model’
+### Quantifying the association strength between each SNP and TCR feature using the ‘simple model’
 
 We first describe what we call the ‘simple model’. We will describe more complex models, as well as each model with added correction for population-substructure-related effects, in the sections following.
 
-We began by calculating the average occurrence of the TCR feature of interest, y¯i, within the repertoire of each subject, i. By condensing the data in this way, for each subject i∈{1,…,I}, we are left with Ni=1 observations. For example, for the discovery cohort, we can fit the model across ∑i=1INi=398 observations. Using this condensed dataset, for each SNP, TCR feature, and productivity status, we can fit the model:(1)y¯i=xij⋅β1j+β0+ϵij
+We began by calculating the average occurrence of the TCR feature of interest, $y¯_{i}$, within the repertoire of each subject, i. By condensing the data in this way, for each subject $i\in{1,…,I}$, we are left with $N_{i}=1$ observations. For example, for the discovery cohort, we can fit the model across $\sum_{i=1}^{I}N_{i}=398$ observations. Using this condensed dataset, for each SNP, TCR feature, and productivity status, we can fit the model:
 
-where β1j is the allele effect for SNP j on the TCR feature of interest y¯i, β0 is the intercept, and ϵij is the random error for subject i and SNP j such that ϵij∼N(0,σ2).
+$$
+y¯_{i}=x_{ij}⋅\beta_{1j}+\beta_{0}+ϵ_{ij}
+$$
 
-To estimate each regression coefficient, we solved the least squares problem:(2)(β^0,β^1⁢j)=argminβ0,β1⁢j⁢∑i=1n(y¯i-(xi⁢j⋅β1⁢j+β0))2
+where $\beta_{1j}$ is the allele effect for SNP $j$ on the TCR feature of interest $y¯_{i}$, $\beta_{0}$ is the intercept, and $ϵ_{ij}$ is the random error for subject i and SNP $j$ such that $ϵ_{ij}∼N(0,\sigma^{2})$.
 
-using the function lm in R. With each estimate of the j-th SNP effect on the TCR feature of interest, β^1j, generated by fitting the least squares problem (Equation 2), we quantified the association strength between each SNP and the TCR feature of interest by testing whether β^1j=0. To do this, we calculate the test statistic(3)Tj=β^1jse⁡(β^1j)
+To estimate each regression coefficient, we solved the least squares problem:
 
-and compare Tj to a N(0,1) distribution to obtain each P-value.
+$$
+(\beta^_{0},\beta^_{1⁢j})=argmin_{\beta_{0},\beta_{1⁢j}}⁢\sumi=1n(y¯_{i}-(x_{i⁢j}⋅\beta_{1⁢j}+\beta_{0}))^{2}
+$$
 
-## Quantifying the association strength between each SNP and TCR feature, conditional on TCRB gene type using the ‘gene-conditioned model’
+using the function lm in R. With each estimate of the j-th SNP effect on the TCR feature of interest, $\beta^_{1j}$, generated by fitting the least squares problem (Equation 2), we quantified the association strength between each SNP and the TCR feature of interest by testing whether $\beta^_{1j}=0$. To do this, we calculate the test statistic
 
-We noted that the amount of certain TCR features (such as the extent of all types of nucleotide trimming) vary by V(D)J TCRB gene choice. Thus, we can condition on this gene choice to quantify the direct association between each SNP and the amount of each TCR feature, without confounding gene choice effects. In this way, we condition on each gene type t∈{V-gene, J-gene, D-gene} corresponding to the TCR feature of interest (i.e. t=V-gene for V-gene trimming, t=J-gene for J-gene trimming, etc.). We will refer to the following model as the ‘gene-conditioned model’ in the main text. Many similarities exist between the ‘simple model’ described in the previous section and this ‘gene-conditioned model’. Thus, we will focus on the differences between the two models here. We will describe both models with added correction for population-substructure-related effects, in the sections following.
+$$
+T_{j}=\frac{\beta^_{1j}}{se⁡(\beta^_{1j})}
+$$
 
-As in the previous section, we, again, want to reduce the number of data observations. For each subject i∈{1,…,I}, we can calculate the average amount of each TCR feature y¯i⁢m by each candidate TCRB gene allele group m for the given gene type t such that m∈{1,…,Mt}. In calculating the average amount of each TCR feature across TCRs with the same candidate TCRB gene allele, we combined TCRB gene alleles which had identical CDR3 sequences and were of the same candidate TCRB gene into TCRB gene allele groups. As such, the number of observations per subject Ni in this condensed dataset will equal Mt and, thus, we will need to fit each model across ∑i=1IMt observations. In our data, for TCRβ chains, we observe 141 possible TCRB V-gene allele groups, 16 J-gene allele groups, and 3 D-gene allele groups. Thus, using the extent of nucleotide trimming as an example TCR feature within the discovery cohort, with this condensed formulation, for each SNP and productivity status, we have ∼56,000 observations for V-gene trimming, ∼6,000 observations for J-gene trimming, and ∼1,200 observations for both types of D-gene trimming.
+and compare $T_{j}$ to a $N(0,1)$ distribution to obtain each P-value.
 
-Using this condensed dataset, for each SNP, TCR feature, and productivity status, we fit the following ‘gene-conditioned model’:(4)y¯im=xij⋅β1j+β0+γjm+ϵijm
+### Quantifying the association strength between each SNP and TCR feature, conditional on TCRB gene type using the ‘gene-conditioned model’
 
-where γjm represents the gene-effect on the amount of the TCR feature of interest for SNP j and gene-allele-group m,andϵijm is the random error for subject i, SNP j, and gene-allele-group m such that ϵijm∼N(0,σ2). The variables xij,β1j,andβ0 are defined as in the ‘simple model’ description (Equation 1) in the previous section. However, since each subject had a different number of TCRs measured and varying TCRB gene usage, we calculated the proportion of TCRs from each candidate TCRB gene allele group, m, to define a weight, Wim, for each observation:Wi⁢m=Ni⁢m∑m=1MtNi⁢m.
+We noted that the amount of certain TCR features (such as the extent of all types of nucleotide trimming) vary by V(D)J TCRB gene choice. Thus, we can condition on this gene choice to quantify the direct association between each SNP and the amount of each TCR feature, without confounding gene choice effects. In this way, we condition on each gene type $t\in{V-gene, J-gene, D-gene}$ corresponding to the TCR feature of interest (i.e. $t=V-gene$ for V-gene trimming, $t=J-gene$ for J-gene trimming, etc.). We will refer to the following model as the ‘gene-conditioned model’ in the main text. Many similarities exist between the ‘simple model’ described in the previous section and this ‘gene-conditioned model’. Thus, we will focus on the differences between the two models here. We will describe both models with added correction for population-substructure-related effects, in the sections following.
 
-With this, we solved the following weighted least squares problem for each SNP, TCR feature, and productivity status combination:(5)(β^0,β^1j,γ^j)=argminβ0,β1j,γ⋅j∑i=1n∑m=1MtWim⋅(y¯im−(β0+γjm+β1jxij))2
+As in the previous section, we, again, want to reduce the number of data observations. For each subject $i\in{1,…,I}$, we can calculate the average amount of each TCR feature $y¯_{i⁢m}$ by each candidate TCRB gene allele group $m$ for the given gene type $t$ such that $m\in{1,…,M_{t}}$. In calculating the average amount of each TCR feature across TCRs with the same candidate TCRB gene allele, we combined TCRB gene alleles which had identical CDR3 sequences and were of the same candidate TCRB gene into TCRB gene allele groups. As such, the number of observations per subject $N_{i}$ in this condensed dataset will equal $M_{t}$ and, thus, we will need to fit each model across $\sum_{i=1}^{I}M_{t}$ observations. In our data, for TCRβ chains, we observe 141 possible TCRB V-gene allele groups, 16 J-gene allele groups, and 3 D-gene allele groups. Thus, using the extent of nucleotide trimming as an example TCR feature within the discovery cohort, with this condensed formulation, for each SNP and productivity status, we have $∼56,000$ observations for V-gene trimming, $∼6,000$ observations for J-gene trimming, and $∼1,200$ observations for both types of D-gene trimming.
+
+Using this condensed dataset, for each SNP, TCR feature, and productivity status, we fit the following ‘gene-conditioned model’:
+
+$$
+y¯_{im}=x_{ij}⋅\beta_{1j}+\beta_{0}+\gamma_{jm}+ϵ_{ijm}
+$$
+
+where $\gamma_{jm}$ represents the gene-effect on the amount of the TCR feature of interest for SNP $j$ and gene-allele-group $m,andϵ_{ijm}$ is the random error for subject i, SNP $j$, and gene-allele-group $m$ such that $ϵ_{ijm}∼N(0,\sigma^{2})$. The variables $x_{ij},\beta_{1j},and\beta_{0}$ are defined as in the ‘simple model’ description (Equation 1) in the previous section. However, since each subject had a different number of TCRs measured and varying TCRB gene usage, we calculated the proportion of TCRs from each candidate TCRB gene allele group, $m$, to define a weight, $W_{im}$, for each observation:
+
+$$
+W_{i⁢m}=\frac{N_{i⁢m}}{\sum_{m=1}^{M_{t}}N_{i⁢m}}.
+$$
+
+With this, we solved the following weighted least squares problem for each SNP, TCR feature, and productivity status combination:
+
+$$
+(\beta^_{0},\beta^_{1j},\gamma^_{j})=argmin_{\beta_{0},\beta_{1j},\gamma_{⋅j}}\sumi=1n\summ=1M_{t}W_{im}⋅(y¯_{im}−(\beta_{0}+\gamma_{jm}+\beta_{1j}x_{ij}))^{2}
+$$
 
 using the lm function in R.
 
-With each estimate of the j-th SNP effect on the amount of the TCR feature of interest, β^1⁢j, generated using the models described above, we quantified the association strength between each SNP and the amount of the TCR feature by testing whether β^1⁢j=0. To do this, we applied a t-test (described in the previous section) using the test statistic (Equation 3) to obtain each p-value. However, because our condensed dataset contains a total of Mt observations from each subject i, these p-values may be inflated due to intra-subject observations being potentially correlated. Thus, to increase the accuracy of the p-value calculation, for each association p-value below a certain threshold (we chose P<5×10−5), we recalculated the p-value using a clustered bootstrap (with subjects as the sampling unit). To do so, for each bootstrap iterate, we resampled subjects from the condensed dataset with replacement. Using this re-sampled data, we fit the model in Equation 5 to estimate each coefficient. We repeated this bootstrap process 100 times and used the resulting 100 coefficient estimates to estimate a standard error for each model coefficient. With this re-calculated standard error of the estimate of the j-th SNP effect on the amount of the TCR feature of interest, se⁡(β^1⁢j), we wanted to test whether β^1⁢j=0 by recalculating the test-statistic, Equation 3, and applying a t-test to obtain each ‘corrected’ p-value. As noted in the multiple testing correction methods section, when accounting for multiple testing via Bonferroni correction, we used the entire number of TCR features and SNPs considered (not just those that were sufficiently promising to warrant use of the bootstrap to get a more accurate p-value): This ensures that our correction will not be anti-conservative.
+With each estimate of the $j$-th SNP effect on the amount of the TCR feature of interest, $\beta^_{1⁢j}$, generated using the models described above, we quantified the association strength between each SNP and the amount of the TCR feature by testing whether $\beta^_{1⁢j}=0$. To do this, we applied a t-test (described in the previous section) using the test statistic (Equation 3) to obtain each p-value. However, because our condensed dataset contains a total of $M_{t}$ observations from each subject i, these p-values may be inflated due to intra-subject observations being potentially correlated. Thus, to increase the accuracy of the p-value calculation, for each association p-value below a certain threshold (we chose $P<5\times10^{−5}$), we recalculated the p-value using a clustered bootstrap (with subjects as the sampling unit). To do so, for each bootstrap iterate, we resampled subjects from the condensed dataset with replacement. Using this re-sampled data, we fit the model in Equation 5 to estimate each coefficient. We repeated this bootstrap process 100 times and used the resulting 100 coefficient estimates to estimate a standard error for each model coefficient. With this re-calculated standard error of the estimate of the $j$-th SNP effect on the amount of the TCR feature of interest, $se⁡(\beta^_{1⁢j})$, we wanted to test whether $\beta^_{1⁢j}=0$ by recalculating the test-statistic, Equation 3, and applying a t-test to obtain each ‘corrected’ p-value. As noted in the multiple testing correction methods section, when accounting for multiple testing via Bonferroni correction, we used the entire number of TCR features and SNPs considered (not just those that were sufficiently promising to warrant use of the bootstrap to get a more accurate p-value): This ensures that our correction will not be anti-conservative.
 
-## Correcting for population-substructure-related effects
+### Correcting for population-substructure-related effects
 
 Structure within our SNP genotype data (such as population-substructure-related biases due to ancestry), if present, may produce false positive associations when quantifying the association strength between each SNP and our phenotype of interest. To account for this, we implemented principal component analysis as commonly applied to genome-wide genotype data for population substructure inference. Specifically, we used the PC-AiR algorithm (Conomos et al., 2015) which identifies principal components that capture ancestry while accounting for relatedness in the samples. As such, the top principal components calculated from the genotype data reflect population substructure among the samples. When plotting the proportion of variance explained by each PC, we find that the majority of variability appears to be explained by the top eight PCs (Figure 9). This conclusion is supported when plotting each PC score by ancestral group (Figure 9). With this, we incorporated the top eight principal components as covariates into our GWAS models described above.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/73475/elife-73475-fig9-v1.jpg)
 
-**Figure 9.:** (A) The majority of the ancestry-informative principal component analysis variance is explained by the first eight principal components. (B) The first eight principal components show distinct separation by PCA cluster. Each colored line represents one of the 398 samples. The first 32 principal components are shown on the X-axis and their scaled component values for each subject on the Y-axis.Figure 9—source data 1.Figure 9—source data 2.
+**Figure 9.:** (A) The majority of the ancestry-informative principal component analysis variance is explained by the first eight principal components. (B) The first eight principal components show distinct separation by PCA cluster. Each colored line represents one of the 398 samples. The first 32 principal components are shown on the X-axis and their scaled component values for each subject on the Y-axis.
 
-As such, to quantify the association strength between each SNP and TCR feature without conditioning on gene usage as in Equation 1, while incorporating principal component terms to correct for population-substructure-related bias due to ancestry, we fit the model:(6)y¯i=xij⋅β1j+β0+∑p=18β2jp⋅Pip+ϵij
+As such, to quantify the association strength between each SNP and TCR feature without conditioning on gene usage as in Equation 1, while incorporating principal component terms to correct for population-substructure-related bias due to ancestry, we fit the model:
 
-where y¯,xij,β1j,β0andϵij are defined as in Equation 1, β2jp is the population-substructure-related bias correction term for SNP j and the p-th principal component, and Pip is the p-th principal component for subject i as calculated above. To estimate each regression coefficient, we solved the following least squares problem for each SNP, TCR feature, and productivity status combination:(β^0,β^1⁢j,β^→2⁢j)=argminβ0,β1⁢j,β→2⁢j⁢∑i=1n(y¯i-(xi⁢j⋅β1⁢j+β0+∑p=18β2⁢j⁢p⋅Pi⁢p))2.
+$$
+y¯_{i}=x_{ij}⋅\beta_{1j}+\beta_{0}+\sump=18\beta_{2jp}⋅P_{ip}+ϵ_{ij}
+$$
 
-Furthermore, to quantify the association strength between each SNP and TCR feature, conditional on gene usage as in Equation 4, while incorporating principal component terms to correct for population-substructure-related bias due to ancestry, we fit the model:(7)y¯im=xij⋅β1j+β0+γjm+∑p=18β2jp⋅Pip+ϵijm
+where $y¯,x_{ij},\beta_{1j},\beta_{0}andϵ_{ij}$ are defined as in Equation 1, $\beta_{2jp}$ is the population-substructure-related bias correction term for SNP $j$ and the p-th principal component, and $P_{ip}$ is the p-th principal component for subject i as calculated above. To estimate each regression coefficient, we solved the following least squares problem for each SNP, TCR feature, and productivity status combination:
 
-where y¯im,xij,β1j,β0,γjmandϵij are defined as in Equation 4 and β^1jandPip are defined as in Equation 6. Again, to estimate each regression coefficient, we solved the following weighted least squares problem for each SNP, TCR feature, and productivity status combination:(β^0,β^1j,γ^j,β^→2j)=argminβ0,β1j,γj,β→2j∑i=1n∑m=1MtWim⋅(y¯im−(β0+γjm+β1jxij+∑p=18β2jp⋅Pip))2.
+$$
+(\beta^_{0},\beta^_{1⁢j},\beta^→_{2⁢j})=argmin\beta_{0},\beta_{1⁢j},\beta→_{2⁢j}⁢\sumi=1n(y¯_{i}-(x_{i⁢j}⋅\beta_{1⁢j}+\beta_{0}+\sump=18\beta_{2⁢j⁢p}⋅P_{i⁢p}))^{2}.
+$$
 
-With these estimates for the population-substructure-corrected j-th SNP effect on the amount of the TCR feature of interest, β^1j, we calculated a P-value using the methods described in the methods section for each model type.
+Furthermore, to quantify the association strength between each SNP and TCR feature, conditional on gene usage as in Equation 4, while incorporating principal component terms to correct for population-substructure-related bias due to ancestry, we fit the model:
 
-## Correcting for TRBD2 allele genotype, SNP genotype linkage when quantifying SNP, TCR feature associations within the TCRB locus
+$$
+y¯_{im}=x_{ij}⋅\beta_{1j}+\beta_{0}+\gamma_{jm}+\sump=18\beta_{2jp}⋅P_{ip}+ϵ_{ijm}
+$$
 
-Within the TCRB locus, we noted that SNP genotypes were associated with TRBD2 allele genotype (Figure 3—figure supplement 1). Associations between gene-alleles and TCRB locus SNP genotypes, if present, may produce false positive associations when implementing the ‘gene-conditioned model’ to infer associations between SNPs and TCR repertoire features, conditional on gene usage. To explore this phenomenon further, we zoomed in to the TCRB locus and incorporated a TRBD2 allele genotype correction procedure into our model formulation. As such, to quantify the association strength between each TCRB locus SNP and TCR feature, conditional on gene usage and correcting for population-substructure-related effects as in Equation 7, while incorporating TRBD2 allele genotype correction terms, we fit the model:y¯im=zi⋅αj+xij⋅β1j+β0+γjm+∑p=18β2jp⋅Pip+ϵijm
+where $y¯_{im},x_{ij},\beta_{1j},\beta_{0},\gamma_{jm}andϵ_{ij}$ are defined as in Equation 4 and $\beta^_{1j}andP_{ip}$ are defined as in Equation 6. Again, to estimate each regression coefficient, we solved the following weighted least squares problem for each SNP, TCR feature, and productivity status combination:
 
-where zi represents the qualitative TRBD2 allele genotype status for subject i such that zi∈ {``TRBD2*01 homozygous``, ``heterozygous``, ``TRBD2*02 homozygous``}, αj is the TRBD2 allele genotype effect for SNP j, and the remaining variables are defined as in Equation 7. With this model formulation, we can estimate each regression coefficient by solving the following weighted least squares problem for each TCRB SNP, TCR feature, and productivity status combination:(α^j,β^0,β^1j,γ^j,β^→2j)=argminαj,β0,β1j,γj,β→2j∑i=1n∑m=1MtWim⋅(y¯im−(αjzi+β0+γjm+β1jxij+∑p=18β2jp⋅Pip))2.
+$$
+(\beta^_{0},\beta^_{1j},\gamma^_{j},\beta^→_{2j})=argmin_{\beta_{0},\beta_{1j},\gamma_{j},\beta→_{2j}}\sumi=1n\summ=1M_{t}W_{im}⋅(y¯_{im}−(\beta_{0}+\gamma_{jm}+\beta_{1j}x_{ij}+\sump=18\beta_{2jp}⋅P_{ip}))^{2}.
+$$
 
-With these estimates for the TRBD2 allele genotype and population-substructure-corrected j-th SNP effect on the amount of the TCR feature of interest, β^1⁢j, we calculated a p-value using the methods described in the Materials and methods section for the ‘gene-conditioned model’.
+With these estimates for the population-substructure-corrected $j$-th SNP effect on the amount of the TCR feature of interest, $\beta^_{1j}$, we calculated a P-value using the methods described in the methods section for each model type.
 
-## Multiple testing correction for associations
+### Correcting for TRBD2 allele genotype, SNP genotype linkage when quantifying SNP, TCR feature associations within the TCRB locus
+
+Within the TCRB locus, we noted that SNP genotypes were associated with TRBD2 allele genotype (Figure 3—figure supplement 1). Associations between gene-alleles and TCRB locus SNP genotypes, if present, may produce false positive associations when implementing the ‘gene-conditioned model’ to infer associations between SNPs and TCR repertoire features, conditional on gene usage. To explore this phenomenon further, we zoomed in to the TCRB locus and incorporated a TRBD2 allele genotype correction procedure into our model formulation. As such, to quantify the association strength between each TCRB locus SNP and TCR feature, conditional on gene usage and correcting for population-substructure-related effects as in Equation 7, while incorporating TRBD2 allele genotype correction terms, we fit the model:
+
+$$
+y¯_{im}=z_{i}⋅\alpha_{j}+x_{ij}⋅\beta_{1j}+\beta_{0}+\gamma_{jm}+\sump=18\beta_{2jp}⋅P_{ip}+ϵ_{ijm}
+$$
+
+where zi represents the qualitative TRBD2 allele genotype status for subject i such that $z_{i}\in$ ${``TRBD2*01 homozygous``, ``heterozygous``, ``TRBD2*02 homozygous``}$, $\alpha_{j}$ is the TRBD2 allele genotype effect for SNP $j$, and the remaining variables are defined as in Equation 7. With this model formulation, we can estimate each regression coefficient by solving the following weighted least squares problem for each TCRB SNP, TCR feature, and productivity status combination:
+
+$$
+(\alpha^_{j},\beta^_{0},\beta^_{1j},\gamma^_{j},\beta^→_{2j})=argmin_{\alpha_{j},\beta_{0},\beta_{1j},\gamma_{j},\beta→_{2j}}\sumi=1n\summ=1M_{t}W_{im}⋅(y¯_{im}−(\alpha_{j}z_{i}+\beta_{0}+\gamma_{jm}+\beta_{1j}x_{ij}+\sump=18\beta_{2jp}⋅P_{ip}))^{2}.
+$$
+
+With these estimates for the TRBD2 allele genotype and population-substructure-corrected $j$-th SNP effect on the amount of the TCR feature of interest, $\beta^_{1⁢j}$, we calculated a p-value using the methods described in the Materials and methods section for the ‘gene-conditioned model’.
+
+### Multiple testing correction for associations
 
 For each TCR feature (i.e. extent of trimming, number of N-insertions, etc.), we considered the significance of associations using a Bonferroni-corrected threshold. To establish each threshold, we corrected for each TCR feature subtype (i.e. V-gene trimming, J-gene trimming, etc. for the TCR trimming feature), the two TCR productivity types (productive and non-productive), and the total number of SNPs tested. When considering associations in the whole-genome context, we corrected for the approximately 6.5 million SNPs (remaining after filtering). When considering associations in a gene-level context, we corrected for the number of SNPs within 200 kb of the gene of interest. For the validation analysis, we considered associations in a SNP-level context and did not correct for multiple SNPs. However, for the validation analysis, we considered the significance of associations within both TCRα and TCRβ chains and, thus, corrected the significance threshold accordingly.
 
-## Genomic inflation factor calculations
+### Genomic inflation factor calculations
 
-We defined the genomic inflation factor λ to be the ratio of the median of the empirically observed squared test statistic to the expected median (Devlin and Roeder, 1999; Freedman et al., 2004; Price et al., 2010). For each GWAS analysis implemented using the ‘simple model’, we used the test statistic Tj given by Equation 3 for each SNP j={1⁢…⁢J} tested genome-wide. For each GWAS analysis implemented using the ‘gene-conditioned model’, it was not computational feasible to calculate a test statistic Tj for all SNPs tested genome-wide using the bootstrapping protocol described in the ‘gene-conditioned model’ Materials and methods section. Thus, instead, we randomly sampled 10,000 SNPs and calculated the test statistic Tj for each SNP in the random subset. Let S={T12,…,TJ2} be the set of all squared test statistics. As such,λ=median⁡(S)0.456
+We defined the genomic inflation factor $\lambda$ to be the ratio of the median of the empirically observed squared test statistic to the expected median (Devlin and Roeder, 1999; Freedman et al., 2004; Price et al., 2010). For each GWAS analysis implemented using the ‘simple model’, we used the test statistic $T_{j}$ given by Equation 3 for each SNP $j={1⁢…⁢J}$ tested genome-wide. For each GWAS analysis implemented using the ‘gene-conditioned model’, it was not computational feasible to calculate a test statistic $T_{j}$ for all SNPs tested genome-wide using the bootstrapping protocol described in the ‘gene-conditioned model’ Materials and methods section. Thus, instead, we randomly sampled 10,000 SNPs and calculated the test statistic $T_{j}$ for each SNP in the random subset. Let $S={T_{1}^{2},…,T_{J}^{2}}$ be the set of all squared test statistics. As such,
 
-where 0.456 is the median of a chi-squared distribution with one degree of freedom. If the GWAS analysis results follow the chi-squared distribution, the expected value of λ is 1. Thus, when λ<1.03, we concluded that there was no evidence of systemic population-substructure-related bias in the analysis (Price et al., 2010; Conomos et al., 2016).
+$$
+\lambda=\frac{median⁡(S)}{0.456}
+$$
 
-## Conditional analysis to test for multiple independent association signals
+where 0.456 is the median of a chi-squared distribution with one degree of freedom. If the GWAS analysis results follow the chi-squared distribution, the expected value of $\lambda$ is 1. Thus, when $\lambda<1.03$, we concluded that there was no evidence of systemic population-substructure-related bias in the analysis (Price et al., 2010; Conomos et al., 2016).
+
+### Conditional analysis to test for multiple independent association signals
 
 Within the DNTT and DCLRE1C loci, we performed a stepwise series of nested regression analyses to test for independent SNP associations within each locus for N-insertion and nucleotide trimming, respectively. We used the same models and covariates as the primary analyses (‘simple model’ for associations between N-insertion and DNTT variation and the ‘gene-conditioned model’ for associations between nucleotide trimming and DCLRE1C variation) and included the most significant SNP within each locus as an additional covariate. We inferred the association between each SNP within each locus and the TCR feature of interest using this new conditional model and considered significant associations at a gene-level Bonferroni-corrected significance threshold for each locus. From here, we repeated this analysis (if necessary), identifying and adding additional SNPs one-by-one as a covariate to each successive model. Once the p-value of top SNP within the locus was no longer significant, we concluded the analysis. SNPs which were added as as additional covariates in the final conditional model were considered to be independent signals.
 
-## Ancestry-informative PCA cluster classification
+### Ancestry-informative PCA cluster classification
 
 In order to correct for population-substructure-related biases due to ancestry in our GWAS analyses, we used ancestry-informative principal component analysis. The original genotyping dataset (Martin et al., 2020) contained self-reported ancestry. However, a number of subjects did not self-report ancestry in the original data collection. Further, for some subjects, their self-reported ancestry was discordant with clusters observed in a principal component analysis. Therefore, for analysis purposes, we used the minimum covariance determinant method (Rousseeuw and Driessen, 1999; Conomos et al., 2016) with the original self-identified labels to group the subjects into six ancestry-informative PCA clusters: ‘African’-associated (8), ‘Asian’-associated (23), ‘Caucasian’-associated (322), ‘Hispanic’-associated (30), ‘Middle Eastern’-associated (5), and ‘Native American’-associated (10).
 
-## Quantifying associations between TRBD2 allele genotype and SNP genotype within the TCRB locus
+### Quantifying associations between TRBD2 allele genotype and SNP genotype within the TCRB locus
 
 For each significantly associated SNP within the TCRB locus as shown in Figure 3, we compared SNP genotype to TRBD2 allele genotype across all subjects. We used Pearson correlation to measure the correlation between the two genotypes.
 
-## Quantifying TCR repertoire feature and SNP minor allele frequency variations by ancestry-informative PCA cluster
+### Quantifying TCR repertoire feature and SNP minor allele frequency variations by ancestry-informative PCA cluster
 
 To quantify PCA cluster variation of TCR repertoire features (such as total N-insertions [V-D N-insertion and D-J N-insertion]), we first calculated an average of each TCR repertoire feature by subject and productivity status. We also calculated a population mean of each TCR repertoire feature by productivity status. Each subject was classified into one of six PCA clusters. Thus, we compared the mean of the TCR repertoire features within each PCA cluster to the population mean using a one-sample t-test to compute each P-value. We used Bonferroni multiple testing correction to adjust each p-value.
 
-We also calculated SNP minor allele frequencies for the whole population and for each PCA cluster individually such that(8)MAFj⁢r=∑i=1Irxi⁢j2*Ir.
+We also calculated SNP minor allele frequencies for the whole population and for each PCA cluster individually such that
 
-Here, MAFj⁢r is the minor allele frequency for SNP marker j and PCA cluster r, Ir is the number of individuals in the PCA cluster r, and xi⁢j is the number of alleles in the genotype of SNP marker j for subject i∈{1,…,Ir}. For each SNP j, the minor allele was defined as the allele with the lowest frequency in the total population. To quantify minor allele frequency differences by PCA cluster for select SNPs within various loci of interest (i.e. DNTT gene), we compared the minor allele frequencies calculated within PCA-clusters to the minor allele frequencies calculated for the entire population using a one-sample t-test to compute each P-value. Again, we used Bonferroni multiple testing correction to adjust each p-value.
+$$
+MAF_{j⁢r}=\frac{\sum_{i=1}^{I_{r}}x_{i⁢j}}{2*I_{r}}.
+$$
+
+Here, $MAF_{j⁢r}$ is the minor allele frequency for SNP marker $j$ and PCA cluster $r$, $I_{r}$ is the number of individuals in the PCA cluster $r$, and $x_{i⁢j}$ is the number of alleles in the genotype of SNP marker $j$ for subject $i\in{1,…,I_{r}}$. For each SNP $j$, the minor allele was defined as the allele with the lowest frequency in the total population. To quantify minor allele frequency differences by PCA cluster for select SNPs within various loci of interest (i.e. DNTT gene), we compared the minor allele frequencies calculated within PCA-clusters to the minor allele frequencies calculated for the entire population using a one-sample t-test to compute each P-value. Again, we used Bonferroni multiple testing correction to adjust each p-value.
 
 For both of these analyses, we used the t_test function from the rstatix package in R.
 
-## Implementation and Code
+### Implementation and Code
 
 R code implementing the genome-wide association inferences described here is available at https://github.com/phbradley/tcr-gwas, (copy archived at swh:1:rev:fd4f43562a63d45721d61f54d99d4bc493cb4066; Russell, 2022). The following tools were especially helpful:

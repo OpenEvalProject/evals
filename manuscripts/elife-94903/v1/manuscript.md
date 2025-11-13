@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/048sx0r50 William A. Brookshire Department of Chemical and Biomolecular Engineering, University of Houston Houston United States
+1. William A. Brookshire Department of Chemical and Biomolecular Engineering, University of Houston Houston United States ([ROR:048sx0r50](https://ror.org/048sx0r50))
 
 † Corresponding author
 
@@ -29,9 +29,17 @@ Previous studies underscore the potential role of metabolic mutations in aminogl
 
 ## Results
 
-## Deletions of the TCA cycle and ETC genes increased tolerance to aminoglycosides
+### Deletions of the TCA cycle and ETC genes increased tolerance to aminoglycosides
 
 Given the crucial role of energy metabolism in aminoglycoside tolerance, our initial objective was to assess various knockout strains that involved the deletion of genes associated with the TCA cycle, such as sucA, gltA, mdh, sdhC, icd, acnB, and fumA, as well as the NADH (nicotinamide adenine dinucleotide) dehydrogenase enzyme of ETC, including nuoM and nuoI from E. coli MG1655. To conduct the experiments, both wild-type and mutant strains were cultured overnight and then diluted 100-fold in fresh 2 ml Lysogeny Broth (LB) in test tubes. The cultures were grown until the mid-exponential phase (t = 3.5 hr) in a shaker at 37°C and 250 rpm. Subsequently, the cultures were exposed to various aminoglycosides (50 µg/ml streptomycin, 50 μg/ml gentamicin, and 50 μg/ml amikacin) for a duration of 5 hr. Samples were collected before and after the treatments and plated on LB agar to quantify the surviving cell fractions. Analysis of the results indicates that most of the knockout strains (ΔsucA, ΔgltA, Δmdh, ΔsdhC, ΔnuoM, and ΔnuoI) exhibited increased tolerance to streptomycin, gentamicin, and amikacin treatments when compared to the wild-type strain (Figure 1A–C). However, it is worth noting that mutant strains such as Δicd, ΔacnB, and ΔfumA did not always exhibit increased tolerance (Figure 1A–C), underscoring the complex interplay between energy metabolism and specific antibiotic tolerance, as well as the pleiotropic effects of the gene deletions. Moreover, the surviving cells measured in these assays may not necessarily represent antibiotic-resistant cells, as the antibiotic tolerance assays were conducted at concentrations well above the minimum inhibitory concentration (MIC) levels. The MIC levels of the strains for the tested antibiotics displayed no drastic alterations compared to those of the wild type, despite some minor variations among them (Supplementary file 1a).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/94903/elife-94903-fig1-v1.jpg)
+
+**Figure 1.:** In the mid-exponential phase (t = 3.5 hr), E. coli MG1655 wild-type and knockout strains underwent (A) streptomycin, (B) gentamicin, and (C) amikacin treatments at a concentration of 50 μg/ml for a duration of 5 hr in test tubes. Following the treatments, cells were washed to eliminate the antibiotics and then plated on LB agar plates to quantify the surviving cell fractions. CFU: colony-forming units; WT: wild type. For pairwise comparisons, one-way analysis of variance (ANOVA) with Dunnett’s post hoc test was used where **p < 0.01, ***p < 0.001, and ****p < 0.0001. N = 3. Data points represent mean and standard error.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/94903/elife-94903-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** In the mid-exponential phase (t = 3.5 hr), E. coli MG1655 wild-type and knockout strains underwent gentamicin treatments at a concentration of 5 μg/ml for a duration of 5 hr in test tubes. Following the treatments, cells were washed to eliminate the antibiotics and then plated on LB agar plates to quantify the surviving cell fractions. For pairwise comparisons, one-way analysis of variance (ANOVA) with Dunnett’s post hoc test was used where ***p < 0.001 and ****p < 0.0001. N = 4. Data points represent mean and standard error.
 
 To gain a thorough understanding of the observed tolerance, we chose four mutant strains that exhibit either high tolerance (sucA, gltA, and nuoI) or low tolerance (icd) to gentamicin for the subsequent assays. Our initial objective was to delineate the time-dependent profiles of antibiotic-tolerant cells within cultures. To achieve this, cells from overnight cultures were diluted in fresh media and cultured for 6 hr in LB in flasks (see Materials and methods). Hourly samples were collected for cell quantification and antibiotic tolerance assays. We opted for flow cytometry for precise cell quantification, a more reliable method than optical density measurements (Mohiuddin et al., 2020; Figure 2A). In the antibiotic tolerance assays, samples were treated with gentamicin (50 μg/ml) for 5 hr and plated before and after the treatments (Figure 2B). Notably, the observed tolerance in these mutant strains is not linked to cell growth. For instance, the mutant strains associated with sucA, gltA, and nuoI genes exhibited higher tolerance to aminoglycosides although they did not show significantly altered cell growth compared to the wild type (Figure 2A, B). These mutant strains displayed a substantial increase in the number of tolerant cells (more than 104-fold) between time points t = 3 and t = 4 hr during the mid-exponential growth phase when compared to the wild-type strain (Figure 2B). Conversely, while the icd mutant exhibited a reduction in cell growth, it was observed to be as sensitive to gentamicin as the wild type during the exponential growth phase and the formation of tolerant cells in this mutant strain was only evident after the time point t = 5 hr (Figure 2A, B). We emphasize that the observed tolerance in the mutant strains is transient or reversible, as they all exhibit high sensitivity to aminoglycosides, similar to the wild type, during the lag phase of growth (Figure 2B). Given that antibiotic concentrations may influence the number of surviving cells, we also treated cells with 5 μg/ml gentamicin at the mid-exponential phase. Although we observed a greater number of surviving cells in all strains when lower gentamicin concentrations were employed compared to higher concentrations, we still observed a similar trend; ΔsucA, ΔgltA, and ΔnuoI exhibited higher levels of surviving cells compared to Δicd and the wild-type strain (Figure 1—figure supplement 1).
 
@@ -39,21 +47,65 @@ To gain a thorough understanding of the observed tolerance, we chose four mutant
 
 **Figure 2.:** (A) Growth of E. coli MG1655 wild type, ΔsucA, ΔgltA, ΔnuoI, and Δicd strains was assessed by measuring the number of cells per ml with flow cytometry. (B) The cells of both the E. coli MG1655 WT and mutant strains were collected from culture flasks (see Materials and methods for details) at indicated time intervals and then subjected to gentamicin treatment. The figure shows the colony-forming unit (CFU) levels of both the treated and untreated cultures, indicating the surviving and total cell populations, respectively. N = 3. Data points represent mean and standard error.
 
-## Energy-dependent aminoglycoside uptake is not a contributing factor
+### Energy-dependent aminoglycoside uptake is not a contributing factor
 
 Aminoglycoside uptake is a unique and energy-requiring mechanism that depends on the electrochemical potential across the cytoplasmic membrane (Taber et al., 1987). Initially, we hypothesized that the genetic perturbations in these strains may have decreased PMF and aminoglycoside uptake. The mutant strains exhibiting increased aminoglycoside tolerance demonstrated no consistent pattern in metabolic activities during the mid-exponential growth phase, which was assessed using redox sensor green (RSG) dye for the indicated time points (t = 3, 4, 5, and 6 hr) of the cell growth (Figure 3A). When RSG molecules are reduced by bacterial reductases, critical components of energy metabolism, these molecules emit green fluorescence. This fluorescence signal should be suppressed by the presence of a metabolic inhibitor, such as carbonyl cyanide 3-chlorophenylhydrazone (CCCP) (Figure 3—figure supplement 1). Given that ATP is a pivotal product of PMF, we also quantified intracellular ATP levels in both wildtype and mutant strains, employing the BacTiter-Glo Microbial Cell Viability Assay (Catalog# G8230, Promega Corporation, Madison WI). This assay utilizes a single reagent to lyse cells and produce luminescence through the luciferase reaction, with the luminescent signal being directly proportional to the ATP content (Figure 3—figure supplement 2). We found no consistent pattern in ATP levels between the antibiotic-sensitive and tolerant strains, particularly during the mid-exponential growth phase (at t = 3 and 4 hr) (Figure 3B). While the ΔsucA mutant generally showed reduced ATP levels, this was not the case for the other strains, which showed increased ATP levels around t = 6 hr (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/94903/elife-94903-fig3-v1.jpg)
+
+**Figure 3.:** (A) Redox sensor green (RSG) staining was conducted by suspending wild-type and mutant strains in 0.85% sodium chloride solution during the mid-exponential and early stationary phases, as outlined in the Materials and methods section. (B) The ATP levels were measured in wild-type and mutant cells during the mid-exponential and early stationary growth phases. (C) A comparison of the cytoplasmic pH of the WT and mutant cells during the mid-exponential and early stationary phases was performed using the ratiometric pHluorin. For pairwise comparisons, one-way analysis of variance (ANOVA) with Dunnett’s post hoc test was used where *p < 0.05, **p < 0.01, and ***p < 0.001. N ≥ 3. Data points represent mean and standard error.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94903/elife-94903-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** E. coli MG1655 wild-type cells in the exponential phase (t = 3.5 hr) were subjected to staining with 1 μM redox sensor green (RSG) for 10 min at 37°C, followed by analysis using flow cytometry. Controls included unstained cells and cells treated with a combination of 20 μM carbonyl cyanide 3-chlorophenylhydrazone (CCCP) and 1 μM RSG. CCCP was introduced into cell suspensions 5 min before RSG staining, aiming to reduce cellular redox activities. The presented panel serves as a representative biological replicate.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/94903/elife-94903-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** ATP was subjected to 10-fold serial dilutions (10 µM, 1 µM, 100 nM, and 10 nM), starting from an initial concentration of 10 μM in a culture medium. The resulting dilutions were then transferred to a 96-well plate, and an equivalent volume of BacTiter-Glo Reagent was introduced in a 1:1 ratio. The combined mixtures were incubated for 1 min, followed by luminescence measurement using a plate reader.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/94903/elife-94903-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The pH vs. fluorescence ratio (410/470 nm) was established for E. coli MG1655. The standard curve data were fitted using a Boltzmann sigmoid curve.
 
 Furthermore, since the proton gradient is a vital element of PMF and a reduced H+ ion gradient across the cell membrane is linked to reduced membrane potential, we conducted measurements of intracellular pH using the ratiometric pHluorin, known as a pH-sensitive derivative of green fluorescent protein (GFP) (Miesenböck et al., 1998). This GFP variant exhibits a bimodal excitation spectrum characterized by peaks at 410 and 470 nm, along with an emission maximum at 530 nm (Martinez et al., 2012). When subjected to acidification, the excitation at 410 nm diminishes while the excitation at 470 nm concurrently rises, which allows us to construct standard curves for the measurement of intracellular pH (Figure 3—figure supplement 3). For these assessments, we introduced pGFPR01 plasmids, where pHluorin is expressed under the arabinose-induced promoter, into the mutant strains utilized. Our results revealed that there was no anticipated acidification of the cytoplasm in the TCA and ETC mutants compared to the wild type, both during the mid-exponential and early stationary phases (Figure 3C).
 
 Finally, we utilized fluorophore-labeled aminoglycoside (Gentamicin-Texas Red, or GTTR) to investigate the cellular uptake of the drug. Specifically, cells in the mid-exponential phase of both wild-type and mutant strains (at t = 3.5 hr when a significant increase in gentamicin tolerance was observed in the mutant strains) were exposed to GTTR for an hour, followed by the analysis of cells using flow cytometry. A short-term treatment was preferred, in line with a previous study (Bruni and Kralj, 2020) as cells treated with aminoglycosides become permeabilized at later time points (Bruni and Kralj, 2020), potentially introducing artificial impacts on drug uptake. Notably, the deletion of genes related to the TCA cycle and the ETC did not induce a significant alteration in GTTR uptake in cells during the exponential phase when compared to the wild type (Figure 4A, B). We note that the aminoglycoside concentration utilized in this study exceeds that of previous studies demonstrating the correlation between aminoglycoside uptake and PMF (Taber et al., 1987). Given that higher concentrations of aminoglycosides (>30 µg/ml) might obscure energy-dependent aminoglycoside uptake (Taber et al., 1987), we investigated a lower concentration of GTTR (5 µg/ml) and observed similar GTTR uptake across all tested strains (Figure 4—figure supplement 1). Collectively, these findings from multiple approaches strongly suggest that energy-dependent drug uptake is not the primary determinant of the observed antibiotic tolerance.
 
-## Membrane potential dysregulation is not associated with the observed aminoglycoside tolerance
+![Figure 4.](https://cdn.elifesciences.org/articles/94903/elife-94903-fig4-v1.jpg)
+
+**Figure 4.:** (A) Exemplary quantification of Gentamicin-Texas Red (GTTR) uptake in cells during the exponential growth phase (t = 3.5 hr). (B) GTTR assays were performed on cells in the mid-exponential phase for both the wild-type and mutant strains, followed by fluorescence measurement using flow cytometry after one hour. The concentration of GTTR is 25 µg/ml. For pairwise comparisons, one-way analysis of variance (ANOVA) with Dunnett’s post hoc test was used (no statistical significance was detected). N = 3. Data points represent mean and standard error.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/94903/elife-94903-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Gentamicin-Texas Red (GTTR) assays were performed on cells in the mid-exponential phase (t = 3.5 hr) for both the wild-type and mutant strains, followed by fluorescence measurement using flow cytometry. The concentration of GTTR is 5 µg/ml. For pairwise comparisons, one-way analysis of variance (ANOVA) with Dunnett’s post hoc test was used (no statistical significance was detected). N = 4. Data points represent mean and standard error.
+
+### Membrane potential dysregulation is not associated with the observed aminoglycoside tolerance
 
 Fluorescent sensors for voltage and calcium have been utilized to monitor electrophysiology in bacteria at the single-cell level (Bruni and Kralj, 2020), and the findings revealed that the dysregulated membrane voltage was not essential for aminoglycoside uptake or inner membrane pore formation in E. coli, but it proved crucial for bactericidal activity (Bruni and Kralj, 2020). To assess the significance of dysregulated PMF, we employed a well-established assay based on 3,3′-dipropylthiadicarbocyanine iodide [DiSC3(5)] (Stokes et al., 2020; Wu et al., 1999), a fluorescent dye commonly used for monitoring cell membrane potential. During cell hyperpolarization, DiSC3(5) infiltrates the cell membrane, undergoing self-quenching and resulting in reduced fluorescence intensity. Conversely, during depolarization, the fluorescence intensity of DiSC3(5) increases as it exits the cell membrane. Polymyxin B served as a control (Figure 5—figure supplement 1), as the polycationic peptide ring of polymyxin B binds to a negatively charged site within the lipopolysaccharide layer of the cellular membrane (Domingues et al., 2012), leading to the dissipation of the electric potential gradient which enhances the fluorescence intensity of DiSC3(5) (Figure 5—figure supplement 1). To assess the effect of gentamicin on membrane potential, metabolically active cells from exponential phase cultures at time points t = 3, 4, 5, and 6 hr were transferred to a buffer solution containing 1  µM DiSC3(5) (Figure 5). Upon reaching equilibrium, the cells were treated with gentamicin. At designated time points, samples were collected, and fluorescence levels were measured using a plate reader (Figure 5). Similar to polymyxin B treatments, gentamicin disrupts the electric potential gradient of PMF, leading to an increase in the fluorescence intensity of DiSC3(5) (Figure 5). Despite significant and rapid alterations in membrane potential observed upon gentamicin treatment, there was no significant difference in membrane potential between aminoglycoside-sensitive and tolerant strains (Figure 5). Moreover, if any of the gene deletions had an impact on membrane potential, we would have expected to observe altered fluorescence intensity in the specific knockout strain compared to that of the wild type during the equilibrium stage (before the addition of the drug), as previously reported (Mohiuddin et al., 2022). However, no significant difference in DiSC3(5) fluorescence intensities was observed among the strains tested during the equilibrium phase (the initial 20 min, as illustrated in Figure 5). Furthermore, we did not observe significant differences in PMF between mutant and wild-type strains when lower concentrations of gentamicin (5 µg/ml) were used (Figure 5—figure supplement 2).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/94903/elife-94903-fig5-v1.jpg)
+
+**Figure 5.:** Deletions of the tricarboxylic acid (TCA) cycle and electron transport chain genes resulted in no significant change in proton motive force (PMF). Mid-exponential and early stationary phase cells of wild-type and mutant strains were stained with DiSC3(5), and at specified time intervals their fluorescence was measured using a plate reader. Cells were treated with gentamicin (50 µg/ml) after 20 min and fluorescence was measured again. N = 4. Data points represent mean and standard error.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/94903/elife-94903-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** This disruption results in the release of DiSC3(5) from the membrane, accompanied by a concurrent increase in fluorescence. Polymyxin B achieves this effect by attaching its polycationic peptide ring to a negatively charged site within the lipopolysaccharide layer of the cellular membrane. N = 3. Data points represent mean and standard error.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/94903/elife-94903-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** The mutant and wild-type strains showed no significant change in PMF. Mid-exponential phase cells of wild-type and mutant strains (t = 3.5 hr) were stained with DiSC3(5), and at specified time intervals their fluorescence was measured using a plate reader. Cells were treated with gentamicin (5 µg/ml) after 20 min and fluorescence was measured again. N = 4. Data points represent mean and standard error.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/94903/elife-94903-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) During the mid-exponential phase (t = 3.5 hr), ATP synthase knockout strains of E. coli BW25113 were subjected to gentamicin treatment at a concentration of 50 μg/ml in test tubes for 5 hr. After the treatments, cells were washed to remove the antibiotics and then plated on LB agar plates to quantify the surviving cell fractions in terms of colony-forming units (CFU). (B) The cells of E. coli MG1655 wild-type and ATP synthase knockout strains were collected from flasks at indicated time intervals and then subjected to gentamicin treatment. The figure shows CFU levels of both the treated and untreated cultures. For pairwise comparisons, a one-way analysis of variance (ANOVA) with Dunnett’s post hoc test was employed, where ****p < 0.0001. N = 3. Data points represent mean and standard error.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/94903/elife-94903-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** The cells of E. coli MG1655 wild-type and ATP synthase knockout strains were exposed to 5 μg/ml gentamicin at the mid-exponential phase (t = 3.5 hr) for 5 hr in test tubes. After the treatments, cells were washed to remove the antibiotics and then plated on LB agar plates to quantify CFU levels. For pairwise comparisons, one-way analysis of variance (ANOVA) with Dunnett’s post hoc test was used where ****p < 0.0001. N = 4. Data points represent mean and standard error.
+
 The membrane potential dysregulation induced by aminoglycosides was previously attributed to the combined activity of NADH dehydrogenase and a reversed F1Fo-ATPase (Bruni and Kralj, 2020), and the knockout strains targeting the proton-conducting Fo domain (ΔatpB, ΔatpE, ΔatpF), as well as ΔatpG, exhibited increased colony-forming units in response to aminoglycoside treatments in E. coli BW25113 (Bruni and Kralj, 2020). However, when we tested ATP synthase knockout strains of E. coli BW25113 from the Keio collection, we did not observe a comparable trend as reported earlier (Bruni and Kralj, 2020). In fact, the strains ΔatpB, ΔatpE, ΔatpF, and ΔatpG exhibited similar sensitivity to gentamicin compared to the wild type under the conditions studied here (Figure 5—figure supplement 3A). Interestingly, we observed a drastic increase in gentamicin tolerance in the ΔatpC mutant strain (Figure 5—figure supplement 3A), which was not reported in the previous study (Bruni and Kralj, 2020), possibly due to the different experimental conditions used here. The atpC gene encodes an F1 complex subunit of ATP synthase, promoting motor activity in the direction of ATP production rather than the reversed direction (Bruni and Kralj, 2020; Guo et al., 2019). We acknowledge potential variations between E. coli BW25113 and E. coli MG1655 strains, due to differences in their genomic DNA. To address this, we deleted two Fo components (ΔatpA and ΔatpB) and two F1 components (ΔatpC and ΔatpD) from E. coli MG1655 and assessed their gentamicin survival profiles. While a moderate increase in tolerance was observed for mutant strains of F1 components during the mid-exponential phase (t = 3 and 4 hr) compared to the wild type, no clear trend was observed for mutant strains of Fo components (Figure 5—figure supplement 3B). The upregulation of tolerance in one of the mutant strains of F1 components (ΔatpD) was also evident during the mid-exponential phase when cells were exposed to a lower concentration of gentamicin (Figure 5—figure supplement 4). Overall, despite some variations in tolerance among ATP synthase mutants across different E. coli strains (MG1655 vs. BW25113) and gentamicin concentrations (Figure 5—figure supplement 3 and Figure 5—figure supplement 4), the observed gentamicin-induced dysregulation in membrane potential may not be the primary factor contributing to the differences in antibiotic tolerance levels between the wild-type and TCA cycle mutant strains studied here.
 
-## Proteomic analysis reveals molecular responses in mutant strains, unveiling potential mechanisms underlying aminoglycoside tolerance
+### Proteomic analysis reveals molecular responses in mutant strains, unveiling potential mechanisms underlying aminoglycoside tolerance
 
 In order to gain further insights beyond the conducted experiments and elucidate the mechanism responsible for the observed tolerance in TCA cycle and ETC mutants, we utilized untargeted mass spectrometry to quantify proteins within these mutants and subsequently compared them to their wild-type counterparts. Proteomics data analysis, specifically involving the determination of protein fold change and calculation of p-value (using F-test and t-test), was carried out through a process involving data transformation, normalization, and statistical procedures, as detailed elsewhere (Aguilan et al., 2020). Proteins exhibiting a positive log2(fold change) and a p-value less than 0.05 were categorized as significantly upregulated while those displaying a negative log2(fold change) and a p-value less than 0.05 were categorized as significantly downregulated in the mutant strains compared to the wild type (see Supplementary file 2a–d for upregulated proteins, and Supplementary file 2e–h for downregulated proteins). The STRING database was employed to predict both the physical and functional interactions between proteins by inputting the upregulated and downregulated proteins into the STRING interaction network (Szklarczyk et al., 2023). STRING carries out an automated pathway-enrichment analysis, focusing on the proteins entered and identifying pathways that occur more frequently than expected. The analysis is based on the statistical background of the entire genome and encompasses Gene Ontology annotations (all three domains), KEGG (Kyoto Encyclopedia of Genes and Genomes) pathways, Uniprot keywords, and the hierarchical clustering of the STRING network itself (see Supplementary file 2i–p for significantly altered pathways identified). When discussing our findings, we primarily reference the STRING network, as it offers the advantage of broader coverage, including potential novel modules that might not yet be classified as pathways (Szklarczyk et al., 2019).
 
@@ -64,6 +116,14 @@ In the context of the upregulated protein–protein association networks in the 
 **Figure 6.:** Cells from both wild-type and mutant strains at the mid-exponential phase (t = 3.5 hr) were collected after which protein extraction and digestion were carried out for mass spectrometry analysis. The STRING visual network depicts upregulated protein interactions of ΔsucA (A), ΔgltA (B), and ΔnuoI (C) mutants, compared to those of the wild-type strain. The protein clusters and their corresponding gene names are visually distinguished through color-coding on the networks. N = 3.
 
 In the context of downregulated protein networks, the substantial functional enrichments unveiled through analysis using the STRING database were found to be intricately associated with both the large and small ribosomal subunits, denoted by the specific ribosomal proteins RplX, RplM, RplT, RplY, RplP, RplS, RpsE, RpsG, RpsH, RpsM, RpsT, RpsI, RpsP, RpsK, RpsC, RpsD, RpsL, RpmG, RpmF, and RpmB (Figure 7A–C and Supplementary file 2m–o). These enrichments extended to domains encompassing translation factor activities, translation processes, and protein export mechanisms, featuring proteins RimM, InfA, InfC, Tsf, YeiP, NusG, Efp, PrfC, Mfd, GlyS, CysS, AspS, ArgS, and Tig (Figure 7A–C). Additionally, a noteworthy connection was established with the ribonucleoside monophosphate biosynthetic process, as characterized by proteins CarA, CarB, PyrD, PyrF, and PyrL (Figure 7A–C). The consistent downregulation of ribosomal binding proteins, ribosome biogenesis, translation factor activity, and the biosynthesis of ribonucleoside monophosphates is observed in the three mutant strains (ΔsucA, ΔgltA, and ΔnuoI), providing an explanation for the observed aminoglycoside tolerance in these mutants (Figure 7A–C). However, genome-level proteomics trends, specifically the drastic upregulation in energy metabolism and the drastic downregulation in ribosomal proteins, were not observed in the Δicd mutant strain (Figure 7—figure supplement 1 and Supplementary file 2l and p). This may be expected, as the Δicd mutant strain did not consistently exhibit an increased tolerance trend to aminoglycosides compared to ΔsucA, ΔgltA, and ΔnuoI.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/94903/elife-94903-fig7-v1.jpg)
+
+**Figure 7.:** The STRING visual network displays downregulated protein interactions for ΔsucA (A), ΔgltA (B), and ΔnuoI (C) mutants. N = 3.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/94903/elife-94903-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** The STRING visual networks depict both up- and downregulated protein interactions specific to the Δicd mutant (A, B), respectively.
 
 ## Discussion
 
@@ -79,48 +139,282 @@ In summary, our study revealed that deletions in TCA cycle and ETC genes, includ
 
 ## Materials and methods
 
-## Bacterial strains, chemicals, media, and growth conditions
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli MG1655ΔsucA mutant</td>
+      <td>other</td>
+      <td></td>
+      <td>Ngo HG, Ngo et al., 2024. Unraveling Crp/cAMP-mediated metabolic regulation in Escherichia coli persister cells. bioRxiv.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli MG1655ΔgltA mutant</td>
+      <td>other</td>
+      <td></td>
+      <td>Ngo et al., 2024</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli MG1655ΔnuoI mutant</td>
+      <td>other</td>
+      <td></td>
+      <td>Ngo et al., 2024</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli MG1655Δicd mutant</td>
+      <td>other</td>
+      <td></td>
+      <td>Ngo et al., 2024</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli MG1655ΔsdhC mutant</td>
+      <td>other</td>
+      <td></td>
+      <td>Ngo et al., 2024</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli MG1655Δmdh mutant</td>
+      <td>other</td>
+      <td></td>
+      <td>Ngo et al., 2024</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli MG1655ΔacnB mutant</td>
+      <td>other</td>
+      <td></td>
+      <td>Ngo et al., 2024</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli MG1655ΔfumA mutant</td>
+      <td>other</td>
+      <td></td>
+      <td>Ngo et al., 2024</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli MG1655ΔnuoM mutant</td>
+      <td>other</td>
+      <td></td>
+      <td>Ngo et al., 2024</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli MG1655ΔatpA mutant</td>
+      <td>other</td>
+      <td></td>
+      <td>Ngo et al., 2024</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichi. coli MG1655ΔatpB mutant</td>
+      <td>other</td>
+      <td></td>
+      <td>Ngo et al., 2024</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli MG1655ΔatpC mutant</td>
+      <td>other</td>
+      <td></td>
+      <td>Ngo et al., 2024</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli MG1655ΔatpD mutant</td>
+      <td>other</td>
+      <td></td>
+      <td>Ngo et al., 2024</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli K-12 BW25113ΔatpA mutant</td>
+      <td>Horizon Discovery</td>
+      <td>Catalog # OEC4988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli K-12 BW25113ΔatpB mutant</td>
+      <td>Horizon Discovery</td>
+      <td>Catalog # OEC4988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli K-12 BW25113ΔatpC mutant</td>
+      <td>Horizon Discovery</td>
+      <td>Catalog # OEC4988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli K-12 BW25113ΔatpD mutant</td>
+      <td>Horizon Discovery</td>
+      <td>Catalog # OEC4988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli K-12 BW25113ΔatpE mutant</td>
+      <td>Horizon Discovery</td>
+      <td>Catalog # OEC4988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli K-12 BW25113ΔatpF mutant</td>
+      <td>Horizon Discovery</td>
+      <td>Catalog # OEC4988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli K-12 BW25113ΔatpG mutant</td>
+      <td>Horizon Discovery</td>
+      <td>Catalog # OEC4988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli K-12 BW25113ΔatpH mutant</td>
+      <td>Horizon Discovery</td>
+      <td>Catalog # OEC4988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Escherichia coli K-12 BW25113ΔatpI mutant</td>
+      <td>Horizon Discovery</td>
+      <td>Catalog # OEC4988</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>pGFPR01</td>
+      <td>Martinez et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BacTiter-Glo Microbial Cell Viability assay</td>
+      <td>Promega Corporation</td>
+      <td>Catalog # G8230</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BacLight Redox Sensor Green Vitality kit</td>
+      <td>Thermo Fisher</td>
+      <td>Catalog # B34954</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Gentamicin-Texas Red Conjugate</td>
+      <td>AAT Bioquest, Inc</td>
+      <td>Catalog # 24300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>Polymyxin B Sulfate</td>
+      <td>Millipore Sigma</td>
+      <td>Catalog # 52-91-1GM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound or drug</td>
+      <td>DiSC3(5) (3,3′-Dipropylthiadicarbocyanine Iodide)</td>
+      <td>TCI America</td>
+      <td>Catalog # D4456</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MIC Test Strips</td>
+      <td>Fisher Scientific</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism (version 10.1.2)</td>
+      <td>GraphPad</td>
+      <td>RRID: SCR_002798</td>
+      <td>http://www.graphpad.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo(version 10.10.0)</td>
+      <td>Becton, Dickinson &amp; Company</td>
+      <td>RRID: SCR_008520</td>
+      <td>https://www.flowjo.com/solutions/flowjo</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains, chemicals, media, and growth conditions
 
 We employed the in-house E. coli K-12 MG1655 strain for our experiments. The gene deletions in E. coli K-12 MG1655 were established in our prior studies (Ngo et al., 2024) utilizing the Datsenko and Wanner method (Datsenko and Wanner, 2000). E. coli K-12 BW25113 and its corresponding knockout strains were procured from the Keio collection, purchased from Horizon Discovery (Catalog # OEC4988, Lafayette, CO). The validity of all deletions was confirmed through the use of check primers (Ngo et al., 2024). All chemicals utilized in the study were purchased from Fisher Scientific (Atlanta, GA) or VWR International (Pittsburg, PA) unless stated otherwise. The Gentamicin-Texas Red Conjugate (Catalog # 24300) was purchased from AAT Bioquest, Inc (CA, USA). The ATP measurement kit (Catalog # G8230) was acquired from Promega Corporation (Madison, WI). Standard LB broth was prepared by dissolving 5 g yeast extract, 10 g tryptone, and 10 g sodium chloride in 1 l of deionized (DI) water. LB agar was made by dissolving 40 g of pre-mixed LB agar powder in 1 l DI water. Sterilization of LB broth and LB agar was done via autoclaving at 121°C and 103.421 kPa. To determine tolerant cells in cultures, gentamicin (50 μg/ml), streptomycin (50 μg/ml), and amikacin (50 μg/ml) were used, and their concentrations were selected to be much higher than the MICs. Whenever specified, gentamicin at various concentrations (e.g., 5 μg/ml) was also tested. MICs of antibiotics for E. coli (Andrews, 2001) were determined using MIC Test strips (Fisher Scientific) and the results are presented in Supplementary file 1a. Ampicillin (100 μg/ml) was utilized to maintain plasmids in the cells. 0.2% L-arabinose at 13.3 mM was added to the media to induce GFP expression. To decrease the antibiotic concentration below the MIC, a sterile 1× phosphate-buffered saline (PBS) solution was utilized to wash the cells. Antibiotics were dissolved in DI water and sterilized using a 0.2-μm PES (polyether sulfone) syringe filter. Overnight cultures were prepared in 14 ml round-bottom tubes (Catalog # 14-959-1B, Fisher Scientific) by incubating cells from a frozen 25% glycerol stock (−80°C) in 2 ml of LB at 37°C and 250 rpm. After 24 hr, cells from the overnight cultures were diluted 1:100-fold in 2 ml of fresh LB medium in 14 ml round bottom test tubes or 25 ml LB in 250 ml baffled flasks and cultured further to achieve the desired growth phase for the assays.
 
-## Cell growth assay
+### Cell growth assay
 
 To prepare overnight precultures, cells from frozen stocks were inoculated into 2 ml of LB medium in 14 ml round-bottom tubes and cultured for 24 hr at 37°C with shaking at 250 rpm. The overnight precultures were then diluted 100-fold in 14 ml round-bottom tubes containing 2 ml of LB medium and incubated in the shaker at 250 rpm and 37°C. The growth of the cultures was determined by measuring the number of cells per ml using flow cytometry. To perform this task, cells were transferred to PBS at specified time points and analyzed with a flow cytometer (NovoCyte Flow Cytometer, NovoCyte 3000RYB, ACEA Biosciences Inc, San Diego, CA). The cell populations were delineated on flow diagrams utilizing the forward and side scatter parameters, with controls including PBS with cells and PBS without cells. The inclusion of a PBS solution without cells aids in noise determination. The instrument is capable of quantifying both the number of events and the volume of the solution under analysis. Roughly 30,000–50,000 events were analyzed for each sample.
 
-## Clonogenic survival assay
+### Clonogenic survival assay
 
 Overnight cultures were prepared in 14 ml round-bottom test tubes by incubating cells from a frozen 25% glycerol stock (−80°C) in 2 ml of LB at 37°C and 250 rpm. After 24 hr, cells from the overnight cultures were diluted 1:100-fold in 2 ml of fresh medium and cultured in the incubator at 37°C with shaking. At the designated growth phase or time points, cells were exposed to antibiotics at the specified concentrations (5 or 50 μg/ml gentamicin, 50 μg/ml streptomycin, and 50 μg/ml amikacin) for a duration of 5 hr. To determine the number of live cells before antibiotic exposure, 10 μl of cell cultures were serially diluted in PBS and plated on an LB agar plate, which was incubated for 16 hr at 37°C. During the antibiotic treatments, 1 ml cultures were collected after 5 hr and washed twice with PBS through centrifugation at 13,300 rpm (17,000 × g) for 3 min to remove antibiotics. After the final centrifugation, 900 μl of supernatant was removed using a pipette, and the cell pellets were resuspended in the remaining 100 μl of PBS. Next, 10 μl of the cell suspensions were serially diluted in PBS, and 10 μl of the diluted cell suspensions were spotted onto LB agar plates. The plates were then incubated at 37°C for at least 16 hr, and the colony-forming units (CFU) were counted to determine the number of live cells present in the cultures. Survival fractions were calculated by dividing the number of surviving cells (after treatment) by the initial number of cells (before treatment).
 
 To generate survival time profiles, cells from the overnight cultures were diluted 1:100 in 25 ml of fresh LB medium in 250 ml baffled flasks and incubated in the incubator at 37°C with shaking. At the designated time points, 2 ml of cell cultures were transferred to 14 ml round-bottom test tubes and subjected to antibiotic treatment at the specified concentration (50 μg/ml gentamicin) for a duration of 5 hr. Following treatment, cells were collected, washed to remove antibiotics, and plated for CFU enumeration, as previously described.
 
-## RSG dye staining
+### RSG dye staining
 
 To measure bacterial reductase and ETC activities, we used the BacLight Redox Sensor Green Vitality kit (Catalog # B34954, Thermo Fisher) following the manufacturer’s instructions. Overnight cultures were prepared in 14 ml Falcon tubes by incubating cells from a frozen 25% glycerol stock (−80°C) in 2 ml of LB at 37°C and 250 rpm. After 24 hr, cells from the overnight cultures were diluted 1:100-fold in 2 ml of fresh medium and cultured in the incubator at 37°C with shaking. For analyzing the cell populations during mid-exponential and early stationary phases (t = 3, 4, 5, and 6 hr), we diluted the cells in 1 ml of 0.85% sodium chloride solution in flow cytometry tubes (5 ml round bottom Falcon tubes) by varying amounts (10-, 20-, 20-, and 50-fold, respectively). After that, RSG dye was added to the cells at a concentration of 1 μM, and the samples were incubated at 37°C for 10 min before flow cytometry analysis. For the negative controls, cell suspensions were treated with 20 μM CCCP 5 min prior to RSG staining to disrupt membrane electron transport (Figure 3—figure supplement 1). Positive controls consisted of mid-exponential phase cells. The cell populations were gated on flow diagrams using the forward and side scatter parameters of unstained controls. Cells were excited at 488 nm with a solid-state laser, and green fluorescence was collected with a 530/30 bandpass filter.
 
-## ATP measurement
+### ATP measurement
 
 The BacTiter-Glo Microbial Cell Viability assay kit (Catalog # G8230, Promega Corporation) was used to measure the intracellular ATP levels of both E. coli MG1655 WT and mutant strains during a specified growth phase, following the manufacturer’s instructions. To generate a standard curve, ATP solutions of known concentrations were used (Figure 2, Figure 3—figure supplement 2). Background luminescence was measured using LB broth.
 
-## pH measurement
+### pH measurement
 
 For pH measurements in E. coli, a pGFPR01 plasmid was used, in which the GFP derivative ratiometric pHluorin is expressed from the arabinose-induced promoter PBAD. This plasmid was kindly provided by Keith A. Martinez II (Department of Biology, Kenyon College, Gambier, Ohio). A comprehensive pH measurement protocol was obtained from a prior study (Van den Bergh et al., 2022). Overnight cultures of WT and mutant strains were prepared in 14 ml tubes by incubating cells carrying the pGFPR01 plasmid from a frozen 25% glycerol stock (−80°C) in 2 ml of LB, 0.2% L-arabinose and 100 mg/ml ampicillin, at 37°C and 250 rpm. After 24 hr, cells from the overnight cultures were diluted 1:100-fold in 2 ml of fresh medium, 0.2% L-arabinose and 100 mg/ml ampicillin and cultured in the incubator at 37°C with shaking. Fluorescence was measured at 410 and 470 nm using a plate reader at different time points, after measuring and normalizing the optical density of cells in liquid culture. The 410/470 fluorescence ratios were recorded to determine the cytoplasmic pH using the standard curve (Figure 3—figure supplement 3). To generate standard pH versus fluorescence ratio curves for E. coli MG1655 cells, transmembrane pH was collapsed by adding 40 mM potassium benzoate and 40 mM methylamine hydrochloride to the cells, equalizing the difference between the external and internal pH. The cultures were then buffered to different pH levels ranging from 5 to 10 using a 50 mM concentration of 2-(N-morpholino) ethanesulfonic acid or 3-(N-morpholino) propanesulfonic acid, and corresponding fluorescence values at 410 and 470 nm were obtained using a plate reader. The Boltzmann equation was used to establish the standard curve for each bacterial strain based on the provided data (Martinez et al., 2012).
 
-## DiSC3(5) assay
+### DiSC3(5) assay
 
 The fundamental mechanism of this assay and the assessment of PMF components using DiSC3(5) have been extensively detailed elsewhere (Farha et al., 2013; Panta and Doerrler, 2020; Stokes et al., 2020). E. coli MG1655 wild-type and mutant cells in both exponential and early stationary phases (at time points t = 3, 4, 5, and 6 hr) were collected and subjected to two washes with an assay buffer containing 5 mM HEPES (N-[2-Hydroxyethyl]piperazine-N-[2-ethanesulfonic] hemisodium salt) and 20 mM glucose. The cell density was set to OD600=0.1, and the cells were stained with 1 μM DiSC3(5). Fluorescence readings were taken at specified intervals using a plate reader, with excitation and emission wavelengths set at 620 and 670 nm, respectively. Gentamicin (5 μg/ml, 50 μg/ml, or other specified concentrations) was introduced 20 min after cells reached equilibrium. At this point, the probe was released into the medium, leading to an upsurge in fluorescence. Polymyxin B (32 μg/ml) was included as controls and administered 20 min after equilibrium to dissipate the electron gradient of PMF. The concentration of polymyxin B was determined based on a prior study (Stokes et al., 2020).
 
-## Gentamicin uptake assay
+### Gentamicin uptake assay
 
 Overnight cultures were prepared in 14 ml tubes by incubating cells from a frozen 25% glycerol stock (−80 °C) in 2 ml of LB at 37°C and 250 rpm. After 24 hr, cells from the overnight cultures were diluted 1:100-fold in 2 ml of fresh medium and cultured in the incubator at 37°C with shaking. At the mid-exponential phase (t = 3.5 hr), 100 μl of cell cultures for both wild type and mutants were exposed to GTTR at a final concentration of 25 or 5 μg/ml. Untreated mid-exponential phase cells were used as negative controls. The samples containing GTTR were then incubated for 1 hr at 37°C with shaking at 250 rpm. Subsequently, 20 μl from each sample was washed with 500 μl of PBS (1×). After the final washing step, cell pellets were resuspended in 500 μl of PBS. All samples were subjected to analysis using a flow cytometer equipped with lasers emitting light at a wavelength of 561 nm, and the resulting red fluorescence was detected using a 615/20 nm bandpass filter.
 
-## Proteomics sample preparation and analysis
+### Proteomics sample preparation and analysis
 
 Cells from both wild-type and mutant strains at the mid-exponential phase (t = 3.5 hr) were collected after which protein extraction and digestion were carried out for liquid chromatography–mass spectrometry (LC–MS) analysis by following the Sample Preparation by Easy Extraction and Digestion (SPEED) procedure. The experiments were conducted at the University of Houston Mass Spectrometry Laboratory under a service fee. Comprehensive details regarding the protein isolation and digestion methods can be found elsewhere (Doellinger et al., 2020). Briefly, cell pellets were added 20 μg trifluoroacetic acid and incubated at room temperature for 5 min followed by addition of 200 μl of 2 M trisbase. After adding Tris(2-carboxyethyl) phosphine (10 mM) and 2-chloroacetamide (40 mM), the reaction mixture was heated at 95°C for 5 min. Digestion was performed by adding trypsin (1/40, wt/wt) and incubation at 37°C overnight. The digested peptides were cleaned up using a C18 Ziptip and vacuum dried using a CentriVap (Labconco, Kansas City, MO). Each dried sample was resuspended in 2% acetonitrile (ACN) with 0.1% formic acid (FA) for LC–MS analysis. The method involving LC–MS has been detailed in a separate publication (Qin et al., 2022). Specifically, a NanoElute LC system connected to a timsTOF Pro (Bruker Daltonics, Germany) through a CaptiveSpray source was utilized. Samples were loaded onto an in-house packed column (75 μm × 20 cm, 1.9 μm ReproSil-Pur C18 particle from Dr. Maisch GmbH, Germany) with a column temperature of 40°C. Mobile phases included buffer A (0.1% FA in water) and buffer B (0.1% FA in ACN). The short gradient was 0–17.8 min, from 2% B to 30% B, followed by 18.3 min to 95% B, and 20.7 min to 95% B. The parallel accumulation-serial fragmentation (PASEF) mode with 4 PASEF scans per cycle was employed. The electrospray voltage was set at 1.4 kV, and the ion transfer tube temperature was maintained at 180°C. Full MS scans were conducted across the mass-to-charge (m/z) range of 150–1700. The target intensity value was 2.0 × 105 with a threshold of 2,500. A fixed cycle time of 0.53 s was established, and a dynamic exclusion duration of 0.4 min with a ±0.015 amu tolerance was applied. Only peaks with a charge state of ≥2 were chosen for fragmentation. The default settings of MSFragger, a database search tool designed for peptide identification in MS-based proteomics (Yu et al., 2020), were applied to analyze data obtained from the mentioned instrument. The UniProt-SwissProt E. coli K12 database (Taxon ID 83333, downloaded on 6/19/2023, 4518 entries) served as the reference. Fixed modification involved cysteine carbamidomethylation, while variable modifications included methionine oxidation and acetylation. Peptide length was restricted to 7–50, allowing for 2 missed cleavages. Both precursor and product ion masses were set as monoisotopic. The false discovery rate was controlled at <1% at the peptide spectrum match, peptide, and protein levels. The raw data of proteomics analysis are provided in Supplementary file 3. The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2022) partner repository with the dataset identifier PXD053082.
 
-## Proteomics data analysis
+### Proteomics data analysis
 
 The processing of proteomics data and the calculations of fold change were essentially carried out following the methods described in the paper by Aguilan et al., 2020. In summary, we utilized Excel spreadsheets for key stages of data transformation, normalization, fold change, and p-value calculation. Initially, proteins lacking quantitative values were excluded, and a logarithm transformation was applied to achieve a normal distribution of data. Normalization, using both average and slope methods, was then employed to minimize intragroup variation in technical replicates and log fold change calculations compared to the transformed unnormalized data. Subsequently, missing values were imputed by replacing them with approximated values using the Probabilistic Minimum Imputation method. Following imputation, we determined the relative ratio of each protein in mutant and wild-type strains, along with p-value calculation using the parametric t-test. The selection of the t-test type involved an F-test to evaluate whether the replicates for each protein exhibited homoscedastic (equal variances) or heteroscedastic (unequal variances) characteristics. For the identification of significant networks among input proteins, we utilized the STRING tool V 12.0. This entailed inputting proteins that were significantly upregulated and downregulated based on specified thresholds, as detailed elsewhere (Szklarczyk et al., 2023).
 
-## Statistical analysis
+### Statistical analysis
 
 All assays were conducted using at least three independent biological replicates. The figures display the mean value and standard error for each data point. Statistical analysis was performed using GraphPad Prism software, with one-way analysis of variance with Dunnett’s post hoc test to determine significance. The p-value threshold was set at *p < 0.05, **p < 0.01, ***p < 0.001, and ****p < 0.0001.

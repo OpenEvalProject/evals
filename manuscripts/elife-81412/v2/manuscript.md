@@ -10,7 +10,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02xjrkt08 Department of Cardiology, The Second Affiliated Hospital of Soochow University Suzhou China
+1. Department of Cardiology, The Second Affiliated Hospital of Soochow University Suzhou China ([ROR:02xjrkt08](https://ror.org/02xjrkt08))
 
 † Corresponding author
 
@@ -42,7 +42,90 @@ In recent years, numerous studies have demonstrated that eccDNAs may be involved
 
 **Figure 2.:** Several eccDNAs have been identified in multiple human systems such as nervous system, circulatory system, digestive system, immune system, musculoskeletal system, and genitourinary system.
 
-## eccDNA in cancer
+**Table 1.**
+ Summary of extrachromosomal circular DNAs (eccDNAs) identified in various diseases.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Disease</th>
+      <th>Function</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>eccDNA (EGFR)</td>
+      <td>Glioblastoma</td>
+      <td>Endogenous enhancer elements</td>
+      <td>Morton et al., 2019</td>
+    </tr>
+    <tr>
+      <td>ecDNA (ecEGFRx1, ecCCAT1, ecEGFR, and ecCCDC26)</td>
+      <td>Glioblastoma</td>
+      <td>Uneven segregation of ecDNA during mitosis</td>
+      <td>Yi et al., 2022</td>
+    </tr>
+    <tr>
+      <td>eccDNA (PDGFRA, CDK4)</td>
+      <td>Radiation-induced high-grade glioma</td>
+      <td>eccDNA-mediated amplification of oncogenes</td>
+      <td>DeSisto et al., 2021</td>
+    </tr>
+    <tr>
+      <td>eccDNA (TRPS1)</td>
+      <td>Breast cancer</td>
+      <td>TRPS1-driven genome deletions</td>
+      <td>Yang et al., 2021b</td>
+    </tr>
+    <tr>
+      <td>ecDNA (ecMYC)</td>
+      <td>Prostate cancer</td>
+      <td>Mobile transcriptional enhancers</td>
+      <td>Zhu et al., 2021</td>
+    </tr>
+    <tr>
+      <td>ecDNA/eccDNA (cyclin-E1, ERBB2, CDK12, EGFR, MYC)</td>
+      <td>Gastric cardia adenocarcinoma</td>
+      <td>Focal amplifications of oncogene prognostic molecular markers</td>
+      <td>Zhao et al., 2021</td>
+    </tr>
+    <tr>
+      <td>eccDNA (RAB3B)</td>
+      <td>Hypopharyngeal squamous cell carcinoma</td>
+      <td>Promote cisplatin resistance</td>
+      <td>Lin et al., 2022</td>
+    </tr>
+    <tr>
+      <td>eccDNA (MYCN, CDK4, MDM2)</td>
+      <td>Neuroblastoma</td>
+      <td>Seismic amplification model</td>
+      <td>Rosswog et al., 2021</td>
+    </tr>
+    <tr>
+      <td>eccDNA (entire genome)</td>
+      <td>Immune system</td>
+      <td>Trigger immune response</td>
+      <td>Wang et al., 2021</td>
+    </tr>
+    <tr>
+      <td>TTNcircle</td>
+      <td>Musculoskeletal system</td>
+      <td>Function of transcription</td>
+      <td>Møller et al., 2018</td>
+    </tr>
+    <tr>
+      <td>MI-related eccDNA (MIRECD)</td>
+      <td>Myocardial infarction (MI)</td>
+      <td>MI prognosis prediction and risk stratification</td>
+      <td>Not yet published</td>
+    </tr>
+  </tbody>
+</table>
+
+### eccDNA in cancer
 
 Numerous studies have suggested that eccDNAs are strongly associated with the oncogenesis or development and progression of tumors (Karami Fath et al., 2021; Ling et al., 2021; Wu et al., 2022b) and can function as a promising biomarker in diagnosing and the prognoses of these diseases. Many studies have focused on intracranial tumors, particularly glioblastoma (GBM) (Shiras and Mondal, 2021). In GBM, Morton et al. identified two enhancers located upstream of the epidermal growth factor receptor (EGFR) gene, which regulate EGFR gene amplification and subsequent cellular fitness (Morton et al., 2019). EGFR enhancers also increase extrachromosomal EGFR gene amplification; this change in amplification modifies chromatin topology and results in new contacts between the promoter and other enhancers within the loop domain. Their research further investigated whether a variation in enhancers on ecDNA can affect cell viability by modulating an oncogene. The conjecture was confirmed using the CRISPR interference screening approach. Tumor cells are rapidly proliferating malignant cells. It is also of interest to know how these molecules are transmitted to daughter cells and whether eccDNA is heritable. Many studies have shown the potential of uneven eccDNA segregation during mitosis, but direct evidence is still lacking (Verhaak et al., 2019). Recently, Yi et al. established a CRISPR-based DNA tracking system (ecTag) and confirmed the uneven segregation of eccDNA in GBM-derived neurosphere cells (Yi et al., 2022). It has also been reported that Cajal bodies and promyelocytic leukemia protein (PML) nuclear bodies contain hyperphosphorylated RNA polymerase II (RNAP II) (Gall et al., 1999; Kiesslich et al., 2002). The colocalization between Cajal/PML bodies and ecDNA confirmed that ecDNA hubs can function as sites of active transcription after mitosis (Yi et al., 2022). In addition to GBM, pediatric radiation-induced high-grade glioma (RIG) is also an intracranial tumor that commonly develops following cranial radiotherapy. DeSisto et al. identified two examples of chromothripsis-derived eccDNA when analyzing the focal genetic alterations of RIG that led to the upregulation of oncogenes such as platelet-derived growth factor receptor alpha (PDGFRA) and cyclin-dependent kinase 4 (CDK4) (DeSisto et al., 2021).
 
@@ -50,27 +133,27 @@ Genitourinary tumors have also been the subject of many eccDNA studies, includin
 
 Research focusing on eccDNA-associated digestive system tumors has increased in recent years. Sun et al. performed Illumina high-throughput eccDNA sequencing to examine the distribution and function of eccDNAs in esophageal squamous cell carcinoma. Sun et al. identified five upregulated candidate eccDNAs, validated by PCR and Sanger sequencing (Sun et al., 2021). This study suggests that eccDNAs can function as biomarkers in cancer research. Zhao et al. explored the role of focal amplifications in gastric cardia adenocarcinoma (GCA) revealing an in-depth mechanism of eccDNA (Zhao et al., 2021). Zhao et al. first performed whole-genome sequencing and genome annotation to validate the existence of oncogene focal amplifications in GCA, including cyclin-E1 (CCNE1), ERBB2, CDK12, EGFR, and MYC, among others. They then found that chromothripsis can lead to the progression of GCA through the focal amplification of oncogenes. They then compared the prognostic value of oncogene focal amplification in GCA and hypothesized that ERBB2 focal amplification might function as a good prognostic marker in GCA patients with the disease for longer than 2 years. Lin et al. showed that eccDNAs are also involved in treatment resistance (Lin et al., 2022). Using Illumina sequencing, Lin et al. defined the size distribution, gene location, and expression level of eccDNAs in hypopharyngeal squamous cell carcinoma. Subsequent analysis suggested RAB3B might be transcribed from eccDNA and could induce autophagy to exert cisplatin (DDP) resistance. The knockdown of RAB3B significantly enhanced the sensitivity of DDP and decreased their autophagy in DDP-resistant cells. However, Lin et al. did not provide experimental evidence to prove that transcriptional products were directly produced by eccDNA. Overall, these studies suggest eccDNA may have the potential to benefit the diagnosis, prognosis, and treatment of digestive system tumors.
 
-## eccDNA and neurological diseases
+### eccDNA and neurological diseases
 
 DNA plasticity plays an important role in neurological diseases (Penndorf et al., 2018). Somatic mosaicism, including single-nucleotide variants, mobile element insertions, and structural changes in DNA, is ubiquitous in the human central nervous system. The current study mainly focused on the discovery and biogenesis of eccDNA in neural cells. Sekar et al. unintentionally discovered an eccDNA and a reciprocal chromosomal deletion in an adult neuron (Sekar et al., 2020). Following a prefrontal cortex dataset analysis, they found a deletion and duplication of chromosomal fragments on Chromosome Y in one of the study samples (Lodato et al., 2015). In addition, they highlighted that the deletion and duplication events occurred in an intergenic genomic region, and no microhomologies were observed between the breakpoints of the chromosome and the identified circular DNA. The authors speculated that the nonhomologous end-joining (NHEJ) DNA repair mechanism was involved in repairing DNA double-stranded breaks (DSBs). This hypothesis indicates that eccDNA originates from the NHEJ-mediated rejoining of the deleted genes after DSBs, though no further investigation was performed to confirm NHEJ is a mechanism for the generation of eccDNA molecules. Rosswog et al. proposed a new type of genomic amplification called seismic amplification in neuroblastoma (Rosswog et al., 2021). Seismic amplification is initiated by chromothripsis, and the DNA fragments realign randomly to form circular DNA structures. The stabilization of amplicons follows three distinct fates: (1) maintaining a circular structure as DMs, (2) integrating into a chromosome as homogeneously staining regions, or (3) forming neochromosomes. These mechanistic studies have deepened the understanding of eccDNA relating to neurological diseases and can provide new insights into the function of eccDNA.
 
-## eccDNA in pregnancy and related disorders
+### eccDNA in pregnancy and related disorders
 
 Sin et al. identified the presence of eccDNA in the plasma of pregnant women (Sin et al., 2020). Circular DNA molecules were isolated from maternally derived plasma and linearized via MspI restriction digestion; next-generation sequencing was then performed to characterize the eccDNA species. The DNA fragments were classified into maternally and fetally derived eccDNAs characterized by single-nucleotide polymorphisms. Both groups exhibited two major peaks at 202 and 338 bp and showed 10 bp periodicity of eccDNA sizes. In another study, Sin et al. reported the methylation densities of both maternal and fetal molecules and found that the methylation of fetal eccDNA was significantly lower (p = 0.02, paired t-test) (Sin et al., 2021). The same study also showed that fetally derived eccDNAs were shorter than the maternally derived species and were rapidly reduced after birth. These characteristics have shown consistency between eccDNA and their linear counterparts in plasma. Genomic annotation also revealed that these molecules were enriched in 5′-untranslated regions (5′-UTRs), exonic regions, and CpG island regions, while Alu repeat regions had less enrichment (Sin et al., 2020). Another interesting finding of their study is the discovery of dual direct repeats in the head and tail regions of eccDNA molecules, which might function in the biogenesis of eccDNA through homologous recombination or microhomology-mediated end-joining mechanism (Mehanna et al., 2017; Møller et al., 2015; Paulsen et al., 2018). To investigate the potential mechanism of length variation of eccDNAs, the authors constructed knockout mouse models with deficiencies in deoxyribonuclease 1-like 3 (DNASE1L3) and found that plasma eccDNA in Dnase1l3−/− mice exhibited larger size distributions than that in wild-type mice. eccDNAs in the maternal plasma were shorter in Dnase1l3−/− mice pregnant with Dnase1l3+/− fetuses than in the maternal plasma of Dnase1l3−/− mice carrying Dnase1l3−/− fetuses. This study demonstrates the biological association between plasma eccDNA and nuclease (Sin et al., 2022).
 
 Such findings are not restricted to the plasma. According to a study by Yang et al., human placenta-derived eccDNAs also contained two peaks at 146 and 340 bp, and double-repeated trinucleotide sequences were equally present on both sides of these circular molecules (Yang et al., 2021a). In addition, their sequencing data revealed that the repertoires of eccDNAs in the placenta overlapped considerably with chromosomal regions, including gene regions, CpG islands, introns, and transposable elements (TEs). Yang et al. revealed that the length of eccDNAs corresponds to the wrapping length of DNA in nucleosomes, which indicates that eccDNAs are derived from nucleosomes (Dillon et al., 2015; Shibata et al., 2012). The distribution characteristics of eccDNAs, including GC content, genomic distribution, and repetitive sequences, were also consistent with those reported in previous studies on eccDNAs in humans and mice (Møller et al., 2018; Shibata et al., 2012; Zhu et al., 2017). However, important differences were identified between normal pregnancy and fetal growth restriction patients. A noticeable difference was the total number of eccDNAs, which was slightly higher than the control group (Yang et al., 2021a). Biological function analysis revealed apoptosis might play an important role in fetal growth restriction, which could, to some extent, relate to the shallow implantation of placental trophoblast cells (Paules et al., 2019). The same research also found that pathological states contributed to the elevation of eccDNAs in placentas, but whether these molecules were under the influence of gestational age requires further research.
 
-## eccDNA in the immune system
+### eccDNA in the immune system
 
 The finding of immunostimulatory activity induced by eccDNAs through apoptosis was a breakthrough discovery regarding the role of eccDNA in the immune system (Wang et al., 2021). Wang et al. examined the genomic distributions of eccDNAs by using a novel purification method. The method consisted of three steps. First, DNA strands were extracted using a modified alkaline buffer at pH 11.8. Next, the restriction enzyme PacI was used to linearize mitochondrial DNA (mtDNA) before the digestion of linear DNA by Plasmid-Safe ATP-dependent DNase. Finally, the silica column and silica beads were calibrated to further extract residual linear DNA in the solution. Mouse embryonic stem cells were selected as the main object of their research due to their genetic integrity. Although eccDNAs are widespread across the entire genome, unique characteristics such as their stochastic origins and fixed nucleosome sizes strongly suggest that the ligation of oligonucleosomal DNA fragments may be involved in the generation of these obscure molecules. There is substantial evidence demonstrating that these fragments are the feature of apoptosis (Marichal et al., 2011), and it is speculated that apoptotic DNA fragmentation (ADF) may participate in the formation of eccDNA (Wang et al., 2021). Follow-up experiments confirmed this speculation and revealed that the process was mediated through DNase γ (Shiokawa et al., 2002; Wang et al., 2021). Circularization research was performed on ADF using the CH12F3 mouse B-lymphocyte cell line and confirmed Lig3 was a vital enzyme for eccDNA generation (Lu et al., 2016; Wang et al., 2021). By using bone marrow-derived dendritic cells and bone marrow-derived macrophages, Wang et al. found that the circular structure of eccDNA and not the sequence stimulated the transcription of cytokine genes. The same study showed that the eccDNA molecules remained fully functional to induce an immune response through the coincubation of bone marrow-derived dendritic cells with the supernatant of apoptotic cells, which initiated a more robust cytokine activation than the cytokine inducer poly(dG:dC) (Wang et al., 2008). Gene ontology enrichment analysis and in vivo experiments on mouse lines suggested that eccDNA triggered innate immune responses through the Sting1 (stimulator of interferon genes) pathway. This research has provided an additional hypothesis that the genesis of cytokine storms in pathological conditions results from abnormal apoptosis (Moore and June, 2020; Wang et al., 2021).
 
 The determination of how tumors escape the immune response is critical to understand the mechanisms of tumor progression. Wu et al. investigated the presence of ecDNA and its association with biomarkers of tumor immune evasion (Wu et al., 2022b). The authors found that the presence of eccDNA could result in a decreased immune cell infiltration status as measured by mRNA expression data. A gene set enrichment analysis revealed that major histocompatibility complex (classes I and II) associated genes were also significantly downregulated in tumors with ecDNA. The expression of immune inhibitory checkpoint genes such as PD-L1 and CTLA4 were also downregulated, maintaining tumor immunogenicity (Wu et al., 2022b). Consequently, these studies indicate that immune checkpoint inhibitor therapy is not a promising option for treating eccDNA-associated tumors.
 
-## eccDNA in the musculoskeletal system
+### eccDNA in the musculoskeletal system
 
 The study of Møller et al. provided new insights into the function of eccDNA in the musculoskeletal system. They identified junction transcripts from eccDNAs in muscle samples from healthy male volunteers. For instance, by comparing sequences between the transcripts of the TTN gene and the associated eccDNA sequences, they proved that its production resulted from TTNcircle and demonstrated that a fraction of eccDNAs residing inside the nucleus had transcription functions (Møller et al., 2018). A new study characterized plasma eccDNA in gouty arthritis and identified several eccDNA genes such as COL1A1 and EPB42, which were considered to be closely associated with hyperuricemia and gout (Pang et al., 2022). Several genes involved in inflammation or immune response were also identified by enrichment analysis. However, basic research on the mechanism by which eccDNA affects the musculoskeletal system is lacking, and an in-depth understanding of its role in musculoskeletal diseases is required.
 
-## eccDNA in myocardial infarction
+### eccDNA in myocardial infarction
 
 Our studies have shown that eccDNA may function as a biomarker for myocardial infarction (MI) prognosis (unpublished). We extracted plasma eccDNAs from the blood samples of patients with acute MI and performed circularization for in vitro reporting of cleavage effects by sequencing (CIRCLE-seq) to identify MI-related eccDNAs (MIRECDs). The CIRCLE-seq results were validated by qPCR analysis, and Sanger sequencing was used to validate the accurate sequence and the loop structure of the identified molecules. We identified a MIRECD and determined through gene annotation that it may function as an isoform-specific transcriptional enhancer by regulating different isoform usage of the Chromodomain Y Like gene. The Kaplan–Meier survival curves showed that high plasma MIRECD levels were associated with poor prognosis of acute MI. The incorporation of the expression of MIRECD into the prognostic model resulted in a better predictive value of the model. Our research confirmed that MIRECD could serve as a promising predictor for MI prognosis and risk stratification.
 

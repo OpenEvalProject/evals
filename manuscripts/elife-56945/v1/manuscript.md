@@ -14,7 +14,7 @@
 
 ## Abstract
 
-In endoplasmic reticulum-associated protein degradation (ERAD), membrane proteins are ubiquitinated, extracted from the membrane, and degraded by the proteasome. The cytosolic ATPase Cdc48 drives extraction by pulling on polyubiquitinated substrates. How hydrophobic transmembrane (TM) segments are moved from the phospholipid bilayer into cytosol, often together with hydrophilic and folded ER luminal protein parts, is not known. Using a reconstituted system with purified proteins from Saccharomyces cerevisiae , we show that the ubiquitin ligase Doa10 (Teb-4/MARCH6 in animals) is a retrotranslocase that facilitates membrane protein extraction. A substrate’s TM segment interacts with the membrane-embedded domain of Doa10 and then passively moves into the aqueous phase. Luminal substrate segments cross the membrane in an unfolded state. Their unfolding occurs on the luminal side of the membrane by cytoplasmic Cdc48 action. Our results reveal how a membrane-bound retrotranslocase cooperates with the Cdc48 ATPase in membrane protein extraction.
+In endoplasmic reticulum-associated protein degradation (ERAD), membrane proteins are ubiquitinated, extracted from the membrane, and degraded by the proteasome. The cytosolic ATPase Cdc48 drives extraction by pulling on polyubiquitinated substrates. How hydrophobic transmembrane (TM) segments are moved from the phospholipid bilayer into cytosol, often together with hydrophilic and folded ER luminal protein parts, is not known. Using a reconstituted system with purified proteins from Saccharomyces cerevisiae, we show that the ubiquitin ligase Doa10 (Teb-4/MARCH6 in animals) is a retrotranslocase that facilitates membrane protein extraction. A substrate’s TM segment interacts with the membrane-embedded domain of Doa10 and then passively moves into the aqueous phase. Luminal substrate segments cross the membrane in an unfolded state. Their unfolding occurs on the luminal side of the membrane by cytoplasmic Cdc48 action. Our results reveal how a membrane-bound retrotranslocase cooperates with the Cdc48 ATPase in membrane protein extraction.
 
 ## Introduction
 
@@ -36,6 +36,22 @@ Here, we developed a reconstituted system with purified proteins to investigate 
 
 We reconstituted purified and fluorescently labeled Doa10 and its substrate Ubc6 into separate liposome populations, together with complementary SNARE proteins (Figure 1A and Figure 1—figure supplement 1, A to F). The tail-anchored (TA) membrane protein Ubc6 was chosen as a model substrate, to limit the number of membrane proteins in our system and thus its complexity. To achieve efficient liposome fusion, we employed previously well-characterized engineered versions of rat SNAREs involved in synaptic vesicle exocytosis (Cypionka et al., 2009; Hernandez et al., 2012). Indeed, mixing of the two liposome sets led to SNARE-mediated co-reconstitution of Ubc6 and Doa10 (Figure 1—figure supplement 1G). This approach ensures that Doa10 and Ubc6 only interact in the phospholipid bilayer, avoiding non-native interactions that can occur when membrane proteins are mixed in the presence of detergents for co-reconstitution. Protease protection experiments showed that Doa10 was reconstituted mostly in the correct orientation (Figure 1—figure supplement 1H). For Ubc6, 45% was correctly oriented, another 45% wrong-side out oriented, and a minor fraction not properly membrane inserted (Figure 1—figure supplement 1, I to K).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/56945/elife-56945-fig1-v1.jpg)
+
+**Figure 1.:** (A) SNARE-mediated co-reconstitution of Ubc6 and Doa10. Engineered versions of SNAREs involved in synaptic exocytosis were used, that is a Syntaxin 1A fragment, SNAP-25A, and Synaptobrevin 2 (Pobbati et al., 2006). Sybsol, a cytoplasmic fragment of Synaptobrevin (Syb). SybΔ84, Syb mutant that results in a docked state (Hernandez et al., 2012). See Figure 1—figure supplement 1, E to K for characterization of liposomes. (B) Working hypothesis for retrotranslocation by Doa10. (C) Membrane release of Ubc6 in the presence of Get3. Fluorescently labeled Ubc6 was co-reconstituted with Doa10 by SNARE-mediated fusion (+ Doa10), as shown in (A). Where indicated, Ubc6 liposomes were fused to liposomes lacking Doa10 (– Doa10), or fusion was inhibited with Sybsol (Inhibited). After incubation with the indicated Get3 variants or buffer, liposomes were immobilized (Figure 1—figure supplement 2B). Input and supernatant samples were analyzed by SDS-PAGE and fluorescence scanning. Final concentrations (f.c.): 0.1 µM Ubc6, 40 nM Doa10, 10 µM Get3. (D) Quantification (mean ± SD) of three independent experiments as in (C). (E) Retrotranslocation of Ubc6, measured as quenching of a C-terminal AlexaFluor488 (A488) label by an antibody. Liposomes were generated as shown in (A). Where indicated, liposomes lacked Doa10 (– Doa10), or co-reconstitution was inhibited by using SybΔ84 (docked). Arrows indicate addition of the quenching antibody or of solubilizing amounts of detergent (Triton X-100). F.c.: 0.2 µM Ubc6, 80 nM Doa10. (F) Quantification (mean ± SD) of four experiments as in (E). The fraction of accessible dye after 30 min was compared between conditions with and without Doa10. F, normalized fluorescence. (G) Retrotranslocation of Ubc6, measured by a protease protection assay. Ubc6 with an N-terminal SUMO tag (SUMO-Ubc6) and a TEV protease cleavage site between the C-terminus and the fluorescent dye was used. Arrow heads indicate cleavage sites for Ulp1 and TEV protease. SUMO-Ubc6 liposomes with or without Doa10 were incubated with Ulp1. Ulp1-treated liposomes were then incubated with buffer or TEV protease. Indicated reactions contained detergent to solubilize liposomes (det). Aliquots were taken at the indicated times and analyzed by SDS-PAGE and fluorescence scanning. F.c. during incubation with TEV protease: 0.1 µM Ubc6, 40 nM Doa10, 10 µM TEV protease. (H) Quantification (mean ± SD) of the fraction of Ubc6 and SUMO-Ubc6 inaccessible to TEV protease, from three experiments as in (G). Band intensities from samples treated with TEV protease were normalized to the corresponding band intensities of samples without TEV protease.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56945/elife-56945-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Coomassie Blue stained SDS-PAGE showing purification of Ubc6 from an E. coli membrane fraction by immobilized nickel ion chromatography and gel filtration. The protein was expressed with an N-terminal H14-SUMO tag that was cleaved with Ulp1 on beads. Samples of the membrane fraction before and after solubilization are denoted as Total and Input, respectively. (B) Chromatogram for gel filtration of Ubc6 on a Superdex 200 column. Peak fractions were analyzed by SDS PAGE, as shown in (A). (C) Coomassie Blue stained SDS-PAGE showing purification of SBP-tagged Doa10 from S. cerevisiae by streptavidin-affinity chromatography and gel filtration (Superose six column). SBP, streptavidin binding peptide. (D) Chromatogram for gel filtration of Doa10 purification shown in (C). Shaded area indicates fractions that were pooled. (E) Liposomes with co-reconstituted t-SNARE and Ubc6, fluorescently labeled with DyLight680 (DL680, left), and liposomes with co-reconstituted Doa10 and synaptobrevin (Syb, right) were subjected to a Nycodenz step gradient. After ultracentrifugation, the gradient was fractionated and analyzed by SDS-PAGE and Coomassie Blue staining (top) and fluorescence scanning (bottom). (F) Liposomes containing Syb and truncated versions of Doa10 used in Figure 4, Figure 5 and Figure 5—figure supplement 2 were analyzed as in (E). (G) Analysis of SNARE-dependent interaction of liposomes. Liposomes containing Syb and different SBP-tagged Doa10 versions were mixed with Ubc6 (fluorescently labeled)/t-SNARE liposomes in the absence (Fused) or presence (Inhibited) of Sybsol. Liposomes were then immobilized using streptavidin magnetic beads, washed, and eluted with biotin. Input, unbound, and elution fractions were analyzed by SDS-PAGE followed by Western blotting using an anti-SBP antibody to detect Doa10 variants (top), or fluorescence scanning to detect Ubc6 (bottom). Numbers below unbound fractions indicate the depletion of Ubc6 relative to input fractions. Doa10-N, and -C, refer to variants of Doa10 used in Figure 4, Figure 5 and Figure 5—figure supplement 2. Doa10-FL, full length Doa10. (H) Liposomes containing different Doa10 versions were subjected to either TEV protease (Doa10TEV-SBP and Doa10-NTEV-SBP) or a mutant version of Ulp1 (SBP-SUMO*Doa10-C Liu et al., 2008) for the indicated times in the absence or presence of Triton-X100 (det), and analyzed by SDS-PAGE and Western blotting using an anti-SBP antibody. Protease cleavage sites are only accessible in correctly oriented Doa10. (I) Liposomes containing fluorescently labeled Ubc6 and t-SNARE were subjected to a tryptic digest for the indicated times in the absence or presence of Triton-X100 (det). Samples were analyzed by SDS-PAGE and fluorescence scanning. The percentage of protected protein is indicated at the bottom. (J) Evaluation of Ubc6 reconstitution by protease protection. Liposomes containing Ubc6 with an N-terminal SUMO-moiety, and a TEV cleavage site between the TM anchor and the fluorescent dye (SUMO-Ubc6), were incubated with either TEV protease, Ulp1, or both proteases for the indicated times. Samples were analyzed by SDS-PAGE and fluorescence scanning. Ulp1 cleavage results in a size-shift in SDS-PAGE, TEV cleavage removes the dye, indicating correctly and wrongly oriented protein, respectively. Accessibility to both proteases indicates improper reconstitution. (K) Quantification (mean ± SD) of the fraction of non-cleaved Ubc6 from three experiments as in (J). 46.8 ± 3.1% of SUMO-Ubc6 was protected from TEV protease and is thus right-side out oriented. 45.5 ± 1.6% of SUMO-Ubc6 was protected from Ulp1 protease and is thus wrong-side out oriented. This indicates that a fraction of SUMO-Ubc6 (7.7 ± 3.5%) was not protected from either protease. In line with this, 26.9 ± 2.5% Ulp1-cleaved Ubc6 was also cleaved by TEV protease, corresponding to 14.7 ± 1.4% of total Ubc6. Thus, we estimate that about 10% of Ubc6 is not properly reconstituted.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/56945/elife-56945-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Aggregation of Ubc6 in detergent-free buffer. Ubc6 in 0.03% (w/v) dodecyl maltoside was diluted 25-fold (f.c. 1.8 µM) into buffer containing no, 1.8 µM or 3.6 µM Get3. Optical density was measured at 360 nm. (B) Immobilization efficiency of liposomes used in Figure 1C,D was quantified (mean ± SD) via co-reconstituted fluorescent Rhodamine-phosphatidyl ethanolamine (PE). n = 3 independent experiments. (C) Release of Ubc6 in the presence of Get3, as in Figure 1C,D, but for shorter incubation times.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/56945/elife-56945-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Liposomes with co-reconstituted ATP synthase and synaptobrevin (Syb) were subjected to a Nycodenz step gradient. After ultracentrifugation, the gradient was fractionated and analyzed by SDS-PAGE and Coomassie Blue staining. Bacillus PS3 ATP synthase is a multiprotein complex with a subunit composition of α3β3γδε ab2c20 (Guo et al., 2019). (B) Analysis of co-reconstitution efficiency of ATP synthase and Ubc6 upon SNARE-mediated fusion. Liposomes containing Syb and ATP synthase (tagged with His10-tag at β-subunit) were mixed with Ubc6 (fluorescently labeled)/t-SNARE liposomes in the absence (Fused) or presence (Inhibited) of Sybsol. Liposomes were then immobilized via the His-tag of ATP synthase with magnetic beads. Input (I) and unbound (U) fractions were analyzed by SDS-PAGE followed by Western blotting using an anti-His antibody to detect ATP synthase (top), or fluorescence scanning to detect Ubc6 (bottom). Numbers below unbound fractions indicate the depletion of Ubc6 relative to input fractions. (C) Retrotranslocation of Ubc6 in the presence of Doa10 or ATP synthase, measured as quenching of a C-terminal AlexaFluor488 (A488) label by an antibody. Where indicated, liposomes lacked Doa10 or ATP synthase (no multipass TM protein). Arrows indicate addition of the quenching antibody or of solubilizing amounts of detergent (Triton X-100). F.c.: 0.2 µM Ubc6, 80 nM Doa10/80 nM ATP synthase. (D) Quantification (mean ± SD) of four experiments as in (C). The fraction of accessible dye after 30 min was compared between conditions with and without a multipass TM protein. F, normalized fluorescence.
+
 We postulated that retrotranslocase activity of Doa10 facilitates release of a substrate into the aqueous solution, but that such an event should be energetically disfavored unless the membrane-released state was stabilized by chaperones and re-insertion prevented (Figure 1B). To test this hypothesis, we incubated Ubc6 liposomes with Get3, a chaperone for TA proteins (Mateja et al., 2009) that also interacts with Ubc6 (Figure 1—figure supplement 2A). Liposomes were then immobilized to separate soluble and membrane-bound proteins (Figure 1—figure supplement 2B). In the presence of Get3, 43 ± 4% Ubc6 was released from liposomes with co-reconstituted Doa10 (Figure 1C,D and Figure 1—figure supplement 2C). When co-reconstitution of Doa10 with Ubc6 was prevented by inhibiting SNARE-mediated fusion or when Ubc6 liposomes were fused with liposomes lacking Doa10, only 7–9% of Ubc6 were found in the soluble fraction, representing the fraction of Ubc6 sticking to the outside of the liposome surface. In the absence of Get3, or when we used a Get3 mutant defective in TA protein binding (Get3 I193D) (Mateja et al., 2009), we observed no, or drastically reduced release, respectively. Nucleotide hydrolysis was not required for Ubc6 release and an ATPase deficient mutant (Get3 D57N) behaved indistinguishably from wild-type (WT) Get3. This suggests that Doa10 allows for passive movement of its substrate Ubc6 out of the membrane.
 
 Release of Ubc6 from the liposome membrane involves movement of the TM anchor and the luminally encapsulated C-terminus across the lipid bilayer. To directly measure exposure of the C-terminus upon retrotranslocation we used a Ubc6 variant labeled with an AlexaFluor488 (A488) dye at the C-terminus. An anti-A488 antibody quenches A488 fluorescence and reports on accessibility of the C-terminus (Figure 1E). In the absence of Doa10, we observed a sudden decrease in fluorescence by 50% upon antibody addition, corresponding to the fraction of wrong-side out protein that exposes its C-terminus on the outside of liposomes. Upon solubilization of liposomes, the antibody quenches the fluorescence of all A488 epitopes. However, in the presence of Doa10, the sudden decrease in fluorescence was followed by a slower decrease to about 10% of the original fluorescence signal within 30 min. Thus, in the presence of Doa10, the luminally-encapsulated part of Ubc6 becomes accessible to the antibody over time. Ubc6 and Doa10 need to reside in the same membrane as we observed only minor quenching above background when we used a mutant SNARE that only supports liposome docking (Figure 1E,F).
@@ -48,17 +64,61 @@ The observation that traps such as Get3 or the antibody are sufficient to drive 
 
 To test this directly, we next investigated membrane extraction of Ubc6 by Cdc48. As Cdc48 acts on polyubiquitin chains, we first reconstituted Ubc6 polyubiquitination. Degradation of Ubc6 requires its own E2 activity, the E2 Ubc7 and its adapter, the membrane-anchored Cue1 (Biederer et al., 1997; Swanson et al., 2001; Walter et al., 2001). Using the fusion system, we co-reconstituted Doa10 and Cue1 with Ubc6. When we added ubiquitin activating enzyme (E1), ubiquitin, ATP, and Ubc7, we observed robust polyubiquitination of Ubc6 (complete reaction, Figure 2A). In the absence of Ubc7 or Cue1, polyubiquitination was abolished, and we observed ubiquitin adducts of lower molecular weight (Figure 2A,B). These represent multiple monoubiquitinations, as the ubiquitination pattern was very similar when we used a ubiquitin mutant in which all lysines are mutated to arginine (Ubiquitin K0) and that thus cannot form ubiquitin chains (Figure 2—figure supplement 1A). Monoubiquitination also occurred in the absence of Doa10 (Figure 2—figure supplement 1B), but was enhanced in its presence (Figure 2—figure supplement 1C,D). Kinetics of transfer of the first ubiquitin onto Ubc6 were independent of the presence of Ubc7/Cue1 (Figure 2C), suggesting that monoubiquitination is a prerequisite for Ubc7-dependent polyubiquitination. This is indeed the case, as a catalytically inactive Ubc6 mutant (Ubc6C87A) was not ubiquitinated, but an N-terminal fusion of ubiquitin with inactive Ubc6 (Ub-Ubc6C87A) was a substrate for Ubc7-dependent polyubiquitination (Figure 2D,E and Figure 2—figure supplement 1E). Together, these results establish that after active site loading of Ubc6 with ubiquitin, Doa10 catalyzes Ubc6-monoubiquitination, followed by Ubc7/Cue1-dependent polyubiquitination (Figure 2F). These results agree with observations made in intact cells and with recombinant soluble fragments of Doa10 and Ubc6 (Walter et al., 2001; Weber et al., 2016). Furthermore, they indicate that our reconstituted system faithfully recapitulates the in vivo ubiquitination pathway for Ubc6.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/56945/elife-56945-fig2-v1.jpg)
+
+**Figure 2.:** (A) Time course of ubiquitination of Ubc6. Final concentrations in the complete reaction: 40 nM Doa10, 10 nM Cue1, 1 µM Ubc7, 100 nM Ubc6, 100 nM E1, 120 µM ubiquitin, and 2.5 mM ATP. Where indicated, individual components were omitted or co-reconstitution was inhibited by using SybΔ84 (Docked). For each reaction, a 60 min sample in the absence of ATP is shown. Samples were analyzed by SDS-PAGE and fluorescence scanning. (B) Analysis of ubiquitin-chain length on Ubc6 from an experiment as in (A). Line-scans were performed on fluorescence images for the complete reaction and in the absence of Ubc7 at t = 30 min. Approximate molecular weights are indicated on top. # ub. denotes number of ubiquitin moieties attached. (C) Quantification (mean ± SD) of the fraction of unmodified Ubc6 from three experiments as in (A). (D) Time course of ubiquitination of Ub-Ubc6C87A compared to Ubc6 WT and Ubc6C87A in the presence of Doa10, Cue1, and Ubc7. Concentrations and analysis as in (A). (E) Quantification (mean ± SD) of the fraction of unmodified Ubc6 variants from three experiments as in (D). (F) Model for ubiquitination of Ubc6. Ubc6 autoubiquitination activity results in transfer of ubiquitin from its active site cysteine to a non-cysteine residue (Weber et al., 2016). In the presence of Doa10, this activity is enhanced and Ubc6 is multi-monoubiquitinated. Ubc7/Cue1 are then required to form polyubiquitin chains on monoubiquitinated Ubc6.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56945/elife-56945-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Time course of ubiquitination of Ubc6 in the absence of Ubc7/Cue1 using either WT ubiquitin or a ubiquitin mutant with all Lys mutated to Arg (K0). 40 nM Doa10 and 0.1 µM Ubc6 in liposomes were incubated with 0.1 µM E1, 120 µM ubiquitin, and 2.5 mM ATP. A 60 min sample in the absence of ATP is shown for each reaction. Samples were analyzed by SDS-PAGE and fluorescence scanning. (B) Doa10-independent autoubiquitination of Ubc6. Liposomes containing fluorescently labeled Ubc6 were incubated with E1, ubiquitin, and ATP. Samples at indicated time points were analyzed by SDS-PAGE under non-reducing (left) and reducing conditions (right) and fluorescence scanning. Reactions lacking ATP are denoted as –ATP. Final concentrations: 0.1 µM Ubc6, 0.1 µM Uba1, 120 µM ubiquitin, 2.5 mM ATP. SB, SDS sample buffer. (C) Time course of ubiquitination of Ubc6 in the absence of Ubc7/Cue1. Ubc6 liposomes containing or lacking Doa10 were used. Where indicated, co-reconstitution was inhibited using either a soluble Syb fragment (Sybsol) or a Syb mutant (SybΔ84). Concentrations and analysis as in (A). (D) Quantification (mean ± SD) of the fraction of unmodified Ubc6 from three experiments as in (C). (E) Ub-Ubc6C87A/t-SNARE liposomes were subjected to a Nycodenz step gradient. After ultracentrifugation, the gradient was fractionated and analyzed by SDS-PAGE and Coomassie Blue staining (top) and fluorescence scanning (DL680, bottom).
+
 Next, we tested for membrane extraction of polyubiquitinated Ubc6 by the Cdc48 ATPase. To this end, we immobilized Doa10/Ubc6 liposomes after the ubiquitination reaction, then incubated with Cdc48 and its co-factors Ufd1 and Npl4 (UN), and analyzed soluble and membrane-bound fractions (Figure 3A and Figure 3—figure supplement 1,A to D). We observed Cdc48- and ubiquitination-dependent extraction of Ubc6 (Figure 3A,B and Figure 3—figure supplement 1E,F). Extraction efficiency was dependent on the length of ubiquitin chains, with five ubiquitin moieties being minimally required (Figure 3—figure supplement 1G). In the presence of Cdc48/UN, 45 ± 17% of Ubc6 molecules with more than five attached ubiquitin moieties were extracted, compared to 15 ± 4% in the absence of the Cdc48 complex (Figure 3A,C). No extraction above this background was observed when either Cdc48 or Ufd1/Npl4 were omitted. Furthermore, ATP hydrolysis by the Cdc48 complex was necessary, as Cdc48E588A was inactive. Polyubiquitin chains were required because we found no extraction above background when ubiquitination was performed in the absence of Ubc7 or less than five ubiquitins were attached (Figure 3A,C,D). Similar observations were made when we used Ub-Ubc6C87A instead of WT Ubc6 to increase the efficiency of polyubiquitination (Figure 3B,C). Together, these observations show that the Cdc48 complex provides the driving force for the extraction of a polyubiquitinated membrane protein. We currently do not understand what limits the efficiency of Cdc48 mediated extraction in our assay. It is possible that a stabilizing chaperone or an accessory factor such as the Cdc48 co-factor Ubx2 would contribute to complete extraction (Neuber et al., 2005; Schuberth and Buchberger, 2005).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/56945/elife-56945-fig3-v1.jpg)
+
+**Figure 3.:** (A) Extraction of Ubc6 by Cdc48 and Ufd1/Npl4 (UN). After ubiquitination, liposomes were immobilized (Figure 3—figure supplement 1,A to D). One bead equivalent was removed, and bound protein was eluted with SDS sample buffer (Input). Beads were then incubated with the indicated components. Soluble (S) and membrane-bound (M) material were analyzed by SDS-PAGE and fluorescence scanning. Colored bars indicate categorization of ubiquitin chain length as used for quantification in (C) and (D). For better visibility, bottom and top gel parts are scaled differently. See Figure 3—figure supplement 1E for uncut image. Final concentrations: 50 nM Ubc6, 20 nM Doa10, 0.1 µM Cdc48 hexamer, 0.1 µM Ufd1 and Npl4. (B) As in (A), but with Ub-Ubc6C87A instead of Ubc6. See Figure 3—figure supplement 1F for uncut image. (C) Quantification (mean ± SD) of three experiments as in (A) and (B). Ubiquitinated species were categorized according to ubiquitin chain length, as indicated in (A) and (B). The signal in the soluble fraction was normalized to that in the input. (D) Quantification (mean ± SD) of three experiments as in (A), when ubiquitination was performed in the absence of Ubc7.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56945/elife-56945-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Samples from ubiquitination and immobilization under conditions described in Figure 3A. Liposomes containing Ubc6, Doa10 and Cue1 were incubated with E1, ubiquitin, and ATP, with or without Ubc7. After 20 min, the ubiquitination reaction was stopped by adding EDTA. Liposomes were then immobilized to streptavidin magnetic beads. Input (I) and unbound (U) fractions were analyzed by SDS-PAGE and fluorescence scanning. (B) Samples from ubiquitination and immobilization under conditions described in Figure 3B. As in (A), but with Ub-Ubc6C87A instead of Ubc6 and ubiquitination in presence of Ubc7. (C) Quantification (mean ± SD) of protein immobilization efficiency from three experiments as in (A) and (B). (D) Quantification (mean ± SD) of the efficiency of liposome immobilization in experiments described in Figure 3A,B, measuring the fluorescence of Rhodamine-PE that was co-reconstituted into liposomes. Rhodamine content of Input and Unbound fraction from immobilization reaction (as in (A) and (B)) as well as of the soluble fraction after extraction (as in Figure 3A,B) was determined. n = 3 independent experiments. (E) Uncut image with uniform scaling of Figure 3A. (F) Uncut image with uniform scaling of Figure 3B. (G) Comparison of extraction efficiency of Ub-Ubc6C87A modified with ubiquitin chains of different length as shown in Figure 3B.
+
 To define structural elements in Doa10 important for its retrotranslocase activity, we generated two truncated versions of Doa10 that encompassed either only the N-terminal RING domain and the first two TM segments (Doa10-N), or the C-terminal part containing TM segments 3–14 (Doa10-C) (Figure 1—figure supplement 1,F to H). The sites of truncation were chosen based on the finding that in the yeast Kluyveromyces lactis, Doa10 is expressed as two separate polypeptides with similar boundaries (Stuerner et al., 2012). We then tested if those Doa10 variants retrotranslocate Ubc6 using the antibody accessibility assay. Doa10-C behaved similarly to full-length Doa10, whereas Doa10-N resulted in only minor quenching above background (Figure 4A,B). Corresponding observations were made when we tested for retrotranslocation using the protease protection assay (Figure 4C). These results show that TM segments 3–14 in Doa10 are sufficient to mediate retrotranslocation of Ubc6.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/56945/elife-56945-fig4-v1.jpg)
+
+**Figure 4.:** (A) Retrotranslocation of Ubc6 by Doa10 variants, as measured by accessibility of a fluorescence quenching antibody to a C-terminal A488 dye on Ubc6, as described in Figure 1E. Ubc6 liposomes containing the indicated Doa10 variants were used. Doa10-N, residues 1–468; Doa10-C, residues 434–1319. Arrows indicate addition of antibody or detergent. Final concentrations (f.c.): 0.2 µM Ubc6, 80 nM Doa10 variants. (B) Quantification (mean ± SD) of three experiments as in (A). The fraction of accessible dye after 30 min was compared between conditions with the indicated Doa10 variant and without Doa10. F, normalized fluorescence. (C) Retrotranslocation of Ubc6 by Doa10 variants, as measured by accessibility of TEV protease to the C-terminus of Ubc6, as described in Figure 1G. SUMO-Ubc6 liposomes with either Doa10-N or Doa10-C were treated with Ulp1 to identify right-side out oriented Ubc6. TEV protease was added and samples at different time points were analyzed by SDS-PAGE and fluorescence scanning. Quantification as in Figure 1H, but only for Ulp1-cleaved Ubc6. F.c. during incubation with TEV protease: 0.1 µM Ubc6, 40 nM Doa10 variants, 10 µM TEV protease. (D) Retrotranslocation of Ubc6 variants measured as in (A). A488-labeled Ubc6, Ubc6SybTM, or SybUbc6TM were directly co-reconstituted with Doa10 because SybUbc6TM was incompatible with SNARE-mediated co-reconstitution. Liposomes containing Doa10 were affinity-purified for this experiment (Figure 4—figure supplement 1A,B). (E) Quantification (mean ± SD) of three experiments as in (D). The fraction of accessible dye after 30 min was compared between conditions with and without Doa10.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56945/elife-56945-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Doa10 liposomes directly co-reconstituted with fluorescently labeled Ubc6SybTM or SybUbc6TM were subjected to a Nycodenz step gradient. After ultracentrifugation, the gradient was fractionated and analyzed by SDS-PAGE and Coomassie Blue staining (top) and fluorescence scanning (bottom). The asterisk indicates a dimer of Ubc6SybTM that occurred in some sortase mediated labeling reactions of this construct. (B) Affinity-purification of Doa10-SBP liposomes for experiment in Figure 4D using streptavidin beads. Inputs (I), unbounds (U) and biotin-elutions (E) were analyzed by SDS-PAGE and by either Western Blot using an anti-SBP antibody (Doa10-SBP), or fluorescence scanning (Ubc6/Syb chimera). As an indication of the specificity of the pull-down, we also tested for binding of liposomes lacking Doa10, and for co-purification of Ubc6 liposomes, when Doa10-SBP and Ubc6 were reconstituted in separate liposome sets. Numbers at the bottom indicate the percentage of Ubc6 in the unbound fraction. Note that different intensities are due to different labeling efficiencies. (C) Liposomes containing t-SNARE, Ubc6SybTM and Ubc6, either fluorescently labeled on Ubc6SybTM or Ubc6, were subjected to a Nycodenz step gradient. After ultracentrifugation, the gradient was fractionated and analyzed by SDS-PAGE and Coomassie Blue staining (top) and fluorescence scanning (bottom). The asterisk indicates a dimer of Ubc6SybTM that occurred in some sortase mediated labeling reactions of this construct. (D) Antibody accessibility assay with liposomes containing both, Ubc6 and Ubc6SybTM, and with or without Doa10. In separate liposomes populations, A488 was either attached to Ubc6 or Ubc6SybTM. Arrows indicate addition of antibody or solubilizing detergent. Final concentrations: 0.2 µM for Ubc6 and Ubc6SybTM, 80 nM Doa10. (E) Quantification (mean ± SD) of three experiments as in (D). The fraction of accessible dye after 30 min was compared between conditions with and without Doa10. F, normalized fluorescence.
 
 To test for structural elements in Ubc6 relevant for retrotranslocation, we generated mutants in which either its TM anchor or its cytoplasmic part were replaced with the corresponding segments of the TA protein synaptobrevin (Ubc6SybTM and SybUbc6TM, respectively). We then tested for retrotranslocation of these mutants using the antibody accessibility assay (Figure 4—figure supplement 1A,B). We only observed retrotranslocation of the Ubc6 TM, but not of the Syb TM (Figure 4D,E). A similar experimental setup also allowed us to exclude leakage or liposome rupture as the cause for antibody accessibility (Figure 4—figure supplement 1,C to E). Thus, the identity of the substrate’s TM segment is important for retrotranslocation.
 
 Next, we tested how these mutations in the TM domains of Doa10 and Ubc6 affect ubiquitination of Ubc6. To specifically test for effects on polyubiquitination, we again used Ub-Ubc6C87A, for which the initial ubiquitination steps (ubiquitin loading and monoubiquitination) are bypassed. Replacement of the Ubc6 TM with the TM of Syb mildly affected polyubiquitination as seen by the emergence of shorter ubiquitin chains in the case of the Syb TM (Figure 5A,B; Figure 5—figure supplement 1A,B). To test for effects of TM replacement on monoubiquitination of Ubc6, we compared Ubc6 and Ubc6SybTM. Doa10-dependent monoubiquitination of Ubc6SybTM was impaired (Figure 5C,D; Figure 5—figure supplement 1C,D), while E3-independent autoubiquitination of this mutant was unaffected (Figure 5—figure supplement 1E,F). Thus, the Ubc6 TM anchor contributes to the efficient Doa10-dependent ubiquitination of Ubc6, indicating a more efficient recruitment to Doa10.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/56945/elife-56945-fig5-v1.jpg)
+
+**Figure 5.:** (A) Time course of ubiquitination of Ub-Ubc6C87A or Ub-Ubc6C87A/SybTM by Doa10 in the presence of Cue1/Ubc7. For each reaction, a 60 min sample in the absence of ATP is shown. Samples were analyzed by SDS-PAGE and fluorescence scanning. Final concentrations: 40 nM Doa10, 10 nM Cue1, 1 µM Ubc7, 100 nM Ubc6 variants, 100 nM E1, 120 µM ubiquitin, and 2.5 mM ATP. See Figure 5—figure supplement 1A for quantification of unmodified Ubc6 variants. (B) Comparison of ubiquitin-chain length on Ub-Ubc6C87A or Ub-Ubc6C87A/SybTM. Line-scans were performed on fluorescence images of two representative gel samples (30 min timepoint) as in (A). Approximate molecular weights are indicated on top. # Ub., number of ubiquitin moieties attached. (C) Time-course of Ubc6 WT or Ubc6SybTM ubiquitination in the absence of Ubc7/Cue1. Analysis and concentrations as in (A). See Figure 5—figure supplement 1C for quantification of unmodified Ubc6 variants. (D) Quantification (mean ± SD) of total ubiquitin-transfer to Ubc6 or Ubc6SybTM from three experiments as in (C). Intensities of Ubc6 variants with one to four ubiquitin moieties attached were determined as described in Figure 5—figure supplement 1D, summed up for each time point and normalized to total Ubc6 in the reaction. (E) Time course of ubiquitination of Ub-Ubc6C87A by Doa10 variants in the presence of Cue1/Ubc7. Liposomes contained Ub-Ubc6C87A and either full-length Doa10, only Doa10-N, or both Doa10-N and -C. Analysis and concentrations as in (A). (F) Quantification (mean ± SD) of unmodified Ub-Ubc6C87A from three experiments as in (E).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/56945/elife-56945-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Quantification (mean ± SD) of the fraction of unmodified Ub-Ubc6C87A or Ub-Ubc6C87A/SybTM from three experiments as in Figure 5A. (B) Liposomes with t-SNARE co-reconstituted with either Ubc6SybTM or Ub-Ubc6C87A/SybTM (fluorescently labeled) were subjected to a Nycodenz step gradient. After ultracentrifugation, the gradient was fractionated and analyzed by SDS-PAGE and Coomassie Blue staining (top) and fluorescence scanning (bottom). (C) Quantification (mean ± SD) of the fraction of unmodified Ubc6 or Ubc6SybTM from three experiments as in Figure 5C. (D) Quantification (mean ± SD) of mono-, di-, and tetra-ubiquitinated Ubc6 species relative to total Ubc6 from three experiments as in Figure 5C. (E) Time course of E3-independent autoubiquitination of Ubc6 and Ubc6SybTM. Liposomes containing the indicated Ubc6 variants (100 nM) were incubated with 100 nM E1, 120 µM ubiquitin, and 2.5 mM ATP. A 60 min sample in the absence of ATP is shown for each reaction. Samples were analyzed by SDS-PAGE and fluorescence scanning. (F) Quantification (mean ± SD) of the fraction of unmodified Ubc6 or Ubc6SybTM from three experiments as in (E).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/56945/elife-56945-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Time course of Ubc6 ubiquitination in the presence of different Doa10 variants in the absence of Ubc7/Cue1. Indicated liposomes were incubated with 100 nM E1, 120 µM ubiquitin, and 2.5 mM ATP (f.c. 100 nM Ubc6, 10 nM Cue1, and 40 nM for Doa10-variants). A 60 min sample in the absence of ATP is shown for each reaction. Samples were analyzed by SDS-PAGE and fluorescence scanning. (B) Quantification (mean ± SD) of the fraction of unmodified Ubc6 from three experiments as in (A). (C) Quantification (mean ± SD) of total ubiquitin-transfer relative to Ubc6 from three experiments as in (A). Intensities of Ubc6 with one to four ubiquitin moieties attached were summed up for each time point and normalized to total Ubc6 in the reaction, as described in Figure 5D and Figure 5—figure supplement 1D.
+
 Moreover, efficient ubiquitination of Ubc6 requires the TM domain of Doa10. Ubc6 polyubiquitination by Doa10-N was less efficient compared to full-length Doa10 (Figure 5E,F). This was not due to impaired E3 activity, because co-reconstitution of Doa10-N and Doa10-C together restored ubiquitination to WT levels. Monoubiquitination in the absence of Ubc7 was similarly affected (Figure 5—figure supplement 2,A to C). We conclude that the Doa10 region that includes TMs 3–14 plays a role in ubiquitination of Ubc6. Both ubiquitination and retrotranslocation of Ubc6 are sensitive to changes in the membrane-embedded regions of Ubc6 and Doa10, indicating a specific interaction of Doa10 with the TM domain of Ubc6. Previous observations suggested that the identity of the TM segment played a role in substrate degradation (Habeck et al., 2015; Ruggiano et al., 2016; Walter et al., 2001). Our results show that the TM domain of Doa10 recognizes substrates and thereby contributes to the specificity of substrate selection. The observation that the mutant version of Ubc6 (Ubc6SybTM) is still ubiquitinated to some extent suggests that other factors might contribute to substrate discrimination. Deubiquitinating enzymes have previously been shown to sharpen substrate selectivity in ERAD and might also play such a role in the context of Doa10-mediated ERAD (Zhang et al., 2013).
 
 Substrates of Doa10 exhibit a wide range of topologies. They may contain multiple TM segments, such as the misfolded variants of the multi-spanning membrane proteins Pma1 and Ste6, called Pma* and Ste6*, respectively (Huyer et al., 2004; Wang and Chang, 2003), or luminal folded domains (Vashist and Ng, 2004). We next asked the question how the presence of an additional luminal polypeptide segment or an interaction with another luminal protein affects retrotranslocation. We appended a streptavidin binding peptide (SBP) to the C-terminus of Ubc6 (Ubc6-SBP), and formed a complex with streptavidin (Figure 6—figure supplement 1A,B). When we co-reconstituted this complex with Doa10, we observed no quenching over time upon antibody addition (Figure 6A,B). When we added biotin, which breaks the high affinity SBP-streptavidin interaction (Keefe et al., 2001), we observed Doa10-dependent quenching over time. This was only the case when biotin was used, but much reduced when we used a biotinylated protein, which is still capable of dissociating streptavidin from Ubc6-SBP on the outside of liposomes (Figure 6—figure supplement 1, C to E), but cannot pass the membrane. Together, this shows that a protein-protein interaction on the luminal side of the membrane, mimicking the presence of a folded domain, acts as an anchor and prevents retrotranslocation of Ubc6.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/56945/elife-56945-fig6-v1.jpg)
+
+**Figure 6.:** (A) Retrotranslocation of Ubc6 with a C-terminal streptavidin binding peptide (SBP), reconstituted in complex with streptavidin, was measured by accessibility of a fluorescence quenching antibody to a C-terminal A488 dye on Ubc6, as described Figure 1E. Liposomes were incubated with buffer, biotin or a biotinylated protein prior to addition of the antibody. Final concentrations: 0.2 µM Ubc6, 80 nM Doa10, 0.25 µM streptavidin, 1.5 µM biotin or biotinylated protein. (B) Quantification (mean ± SD) of three experiments as in (A). The fraction of accessible dye after 30 min was compared between conditions with and without Doa10. F, normalized fluorescence. (C) Effect of Cdc48 and Ufd1/Npl4 (UN) on retrotranslocation of Ubc6-SBP in complex with streptavidin, measured using the antibody accessibility assay as in (A). Prior to the fluorescence measurement, liposomes were incubated with ubiquitination mix with or without Ubc7. Arrows indicate when antibody, with or without Cdc48/UN, or detergent were added. Final concentrations: 0.17 µM Ubc6-SBP, 68 nM Doa10, 0.17 µM hexameric Cdc48, Ufd1, and Npl4. See Figure 6—figure supplement 1F for gel samples of ubiquitination reaction. (D) Quantification (mean ± SD) of three experiments as in (C). The fraction of accessible dye after 30 min was compared between conditions with and without Cdc48/UN. In addition, experiments lacking ubiquitin or with the Cdc48 mutant E588A were quantified. (E) Determination of liposome-encapsulated streptavidin after extraction. Samples from experiments as in (D) were taken at t = 30 min. Biotin was added, and liposomes floated in a Nycodenz gradient. Co-floating streptavidin was detected in SDS-PAGE using stain-free technology. Two replicates are shown for each condition. (F) Quantification (mean ± SD) of the relative amount of streptavidin co-floating from three experiments as in (E). Each data point represents the mean of two replicates as shown in (E).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56945/elife-56945-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Liposomes containing t-SNARE and fluorescently labeled Ubc6-SBP in complex with streptavidin were subjected to a Nycodenz step gradient. After ultracentrifugation, the gradient was fractionated and analyzed by SDS-PAGE and Coomassie Blue staining (top), fluorescence scanning (middle), and using stain-free dye technology (bottom) to distinguish between streptavidin and Syntaxin, which is not visible with this technique as it lacks tryptophan residues. (B) The orientation of Ubc6-SBP in liposomes was assessed by testing for accessibility of TEV-protease to the TEV-cleavage site between the Ubc6 TM anchor and the SBP-tag. Liposomes were incubated with buffer or TEV protease with or without TX-100 (det) for the indicated times. Samples were analyzed by SDS-PAGE and fluorescence scanning. Numbers at the bottom indicate the fraction of protein right-side out oriented. (C) Streptavidin affinity pulldown of biotinylated protein in the presence and absence of biotin showing complete biotinylation of the protein. Samples of Input (In) and unbound (Ub) fractions were analyzed by SDS-PAGE and scanning of the gel using stain-free dye technology. (D) Streptavidin was added to liposomes containing fluorescently labeled Ubc6-SBP. After addition of buffer, biotin, or biotinylated protein, liposomes were floated in a sucrose step gradient. The top fraction of the gradient was analyzed by SDS-PAGE and the gel scanned using stain-free dye technology to visualize streptavidin. Ubc6 gives a strong signal here, because the fluorescent dye is also detected with the scanner used. (E) Quantification of co-floating streptavidin from two experiments as in (D). Streptavidin signal was first normalized to Ubc6-SBP signal and then normalized to the signal in buffer only control. (F) Ubiquitination of fluorescently labeled Ubc6-SBP. Samples of the ubiquitination reaction from experiments as in Figure 6C were analyzed by SDS-PAGE and fluorescence scanning.
 
 Finally, we tested if this anchoring can be overcome by the Cdc48 complex. Liposomes containing Doa10 and Ubc6-SBP in complex with streptavidin were incubated with ubiquitination mix followed by the addition of Cdc48 complex and anti-A488 antibody. Retrotranslocation occurred depending on polyubiquitination and Cdc48 activity (Figure 6C,D and Figure 6—figure supplement 1F). In the absence of ubiquitin, when Ubc7 was omitted, or when we used the catalytically inactive Cdc48E588A, no fluorescence quenching above background was observed. Importantly, streptavidin remained encapsulated in liposomes in reactions where Ubc6-SBP was extracted (Figure 6E,F). Thus, Cdc48 action on the cytosolic side of the membrane leads to dissociation of streptavidin from the SBP-tag in the liposome lumen. As this reaction entails the breaking of bonds that are comparable to the intramolecular interactions that keep a protein folded, we interpret the dissociation of the SBP tag from streptavidin as unfolding. Our results thus show that Doa10 retrotranslocates a luminal protein segment in an unfolded state. Cdc48, acting on cytoplasmic polyubiquitin chains, generates a mechanical force that results in luminal unfolding und drives retrotranslocation. The integrity of the membrane is maintained in this process.
 
@@ -78,19 +138,393 @@ How exactly Doa10 facilitates release of proteins from the membrane is unclear. 
 
 ## Materials and methods
 
-## Strains used for protein expression
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>DOA10</td>
+      <td></td>
+      <td>YIL030C</td>
+      <td>Amplified from BY4741</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBC6</td>
+      <td></td>
+      <td>YER100W</td>
+      <td>Amplified from BY4741</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBA1</td>
+      <td></td>
+      <td>YKL210W</td>
+      <td>Amplified from BY4741</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBC7</td>
+      <td></td>
+      <td>YMR022W</td>
+      <td>Amplified from BY4741</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>CUE1</td>
+      <td></td>
+      <td>YMR264W</td>
+      <td>Amplified from BY4741</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>CDC48</td>
+      <td></td>
+      <td>YDL126C</td>
+      <td>Amplified from BY4741</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UFD1</td>
+      <td></td>
+      <td>YGR048W</td>
+      <td>Amplified from BY4741</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>NPL4</td>
+      <td></td>
+      <td>YBR170C</td>
+      <td>Amplified from BY4741</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>GET3</td>
+      <td></td>
+      <td>YDL100C</td>
+      <td>Amplified from BY4741</td>
+    </tr>
+    <tr>
+      <td>Gene (Rattus norvegicus)</td>
+      <td>Synaptobrevin 2</td>
+      <td></td>
+      <td>NP_036795</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741</td>
+      <td>GE Dharmacon</td>
+      <td></td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>Δdoa10</td>
+      <td>GE Dharmacon</td>
+      <td></td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 doa10::kanR</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21 (DE3)</td>
+      <td>New England Biolabs</td>
+      <td>C2527I</td>
+      <td>Competent Cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21-CodonPlus (DE3)-RIPL</td>
+      <td>Agilent</td>
+      <td># 230280</td>
+      <td>Competent Cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SBP (clone 20), mouse monoclonal</td>
+      <td>Merck</td>
+      <td>Cat#: MAB10764</td>
+      <td>(1:2500) diluted in 5% milk TBS-T</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-His6(Clone13/45/31‐2), mouse monoclonal</td>
+      <td>Dianova</td>
+      <td>Cat#: DIA-900</td>
+      <td>(1:500) diluted in 2% BSA PBS-T</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse IgG secondary antibody (IRDye 800 CW)</td>
+      <td>Li-Cor Biosciences</td>
+      <td>Cat#: 926–32210 RRID:AB_2687825</td>
+      <td>(1:15000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-mouse IgG secondary antibody (IRDye 680 RD)</td>
+      <td>Li-Cor Biosciences</td>
+      <td>Cat# 926–68070, RRID:AB_10956588</td>
+      <td>(1:15000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti- Alexa Fluor 488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11094f, RRID:AB_221544</td>
+      <td>(1:15) diluted</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin</td>
+      <td>New England Biolabs</td>
+      <td>N7021S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Gly-Gly-Gly-Cys peptide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td></td>
+      <td>for Sortase-mediated labeling</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gibson Assembly Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>E2611S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 Site-Directed Mutagenesis Kit</td>
+      <td>New England Biolabs</td>
+      <td>E0554S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MasterPure Yeast DNA Purification Kit</td>
+      <td>Epicentre (Lucigen)</td>
+      <td>MPY80200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Decyl Maltose Neopentyl Glycol (DMNG)</td>
+      <td>Anatrace</td>
+      <td>NG322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GDN</td>
+      <td>Anatrace</td>
+      <td>GDN101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Octyl β-D-glucopyranoside (OG)</td>
+      <td>Glycon Biochemicals</td>
+      <td>D97001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Decyl β-D-Maltopyranoside (DM)</td>
+      <td>Glycon Biochemicals</td>
+      <td>D99003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dodecyl-β-D-maltoside (DDM)</td>
+      <td>Carl Roth</td>
+      <td>CN26.5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Anapoe-X-100 (Triton X-100)</td>
+      <td>Anatrace</td>
+      <td>APX100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium cholate hydrate</td>
+      <td>Sigma</td>
+      <td>C1254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-palmitoyl-2-oleoyl-glycero3-phospho-choline (POPC)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>850457P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dioleoyl-sn-glycero-3-phosphoethanolamine (DOPE)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>850725P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2,-dioleoyl-sn-glycero-3-phospho-L-serine (DOPS)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>840035P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dioleoyl-sn-glycero-3-phosphoethanolamine-N-(biotinyl)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>870282P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dioleoyl-sn-glycero-3-phosphoethanolamine-N-(lissamine rhodamine B sulfonyl) (Rhd-PE)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>810150P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ergosterol (&gt;95%, HPLC)</td>
+      <td>Sigma-Aldrich</td>
+      <td>45480</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ATP</td>
+      <td>PanReac AppliChem</td>
+      <td>A1348</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AlexaFluor488 maleimide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A10254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DyLight 680 maleimide</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>46618</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pierce Detergent removal spin columns</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>87777</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ubiquitin (WT), yeast</td>
+      <td>Boston Biochem</td>
+      <td>U-100Sc</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ubiquitin (K0)</td>
+      <td>LifeSensors</td>
+      <td>SI209</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>YEP broth</td>
+      <td>Formedium</td>
+      <td>CCM0410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Yeast Nitrogen Base (YNB)</td>
+      <td>US Biological Life Sciences</td>
+      <td>C19032801</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CSM,-Ura</td>
+      <td>Formedium</td>
+      <td>DCS0161</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-(+)-Galactose</td>
+      <td>PanReac AppliChem</td>
+      <td>A1131</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HisPur NiNTA resin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>88223</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pierce High Capacity Streptavidin Agarose</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>20361</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Pierce Streptavidin Magnetic Beads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>88817</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Novex DYNAL Dynabeads His-tag Isolation and Pulldown</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>10103D</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains used for protein expression
 
 For protein expression in E. coli, BL21-CodonPlus (DE3)-RIPL competent cells (Agilent) were used. Where indicated, BL21 (DE3) competent cells (NEB) were used instead. To express Doa10 in S. cerevisiae, we used a doa10 deletion strain derived from BY4741.
 
-## Constructs
+### Constructs
 
 All sequences were from S. cerevisiae, except for SNARE proteins which were from rattus norvegicus.
 
-## Doa10
+#### Doa10
 
 As full-length DOA10 is toxic for E. coli (Mandart et al., 1994), the DOA10 sequence was split in two parts and cloned into two separate plasmids, similarly to as described before (Swanson et al., 2001). Sequences coding for Doa10 (amino acids (aa) 1–468, Doa10-N) and Doa10 (aa 225–1319), were both cloned into a pRS426-pGal1 plasmid (Mumberg et al., 1994) using XhoI/SpeI restriction sites (plasmids #376 and #375, respectively). At the carboxy terminus, both constructs were appended with a tobacco etch virus (TEV) protease cleavage site followed by a streptavidin-binding peptide (SBP) tag (Keefe et al., 2001), in which the single lysine was mutated to arginine, and a short sequence for sortase-mediated labeling with fluorescent dyes (Popp et al., 2009). The full C-terminal tag for Doa10 had the sequence GSGENLYFQSGGGMDERTTGWRGGHVVEGLAGELEQLRARLEHHPQGQREPLPETGG. A plasmid containing full-length Doa10 was subsequently generated in S. cerevisiae (DOA10 deletion strain) by homologous recombination. To do so, plasmid #375 was linearized (starting from Doa10 residue 225) and an N-terminal fragment was generated from plasmid #376 (Doa10 residues 1–257) by PCR. The N-terminal fragment contained 80 to 100 nt overlaps with the linearized plasmid. Both PCR-products were co-transformed into S. cerevisiae. Correct homologous recombination was confirmed by sequencing of the PCR-amplified insert after preparation of total DNA of the generated strain (yAST112). The construct for expression of Doa10-C (aa 434–1319) contained an N-terminal SBP-SUMO* tag (Liu et al., 2008) and a C-terminal sortase (LPETGG) tag.
 
-## Ubc6
+#### Ubc6
 
 UBC6 from S. cerevisiae and its variants were cloned into the K27SUMO vector using the SfoI restriction site (Stein et al., 2014). This vector encodes an N-terminal His14-SUMO-tag. Ubc6 and its variants were appended with a C-terminal LPETGG tag for sortase-mediated labeling. Expression constructs for Ubc6 and its variants were generated by Gibson assembly (NEB) and site-directed mutagenesis (NEB):
 
@@ -104,23 +538,104 @@ SUMO-Ubc6 contained a C-terminal TEV-cleavage site flanked by linker sequences w
 
 Ubc6-SBP contained a C-terminal TEV-cleavage site separated from Ubc6 by a linker (GSGENLYFQSGGG) followed by an SBP-tag and residues LPETGG for sortase-mediated labeling. The coding sequence for His14-SUMO-Ubc6-SBP was inserted into a pET39b(+) vector (Novagen) right after the DsbA signal sequence.
 
-## Cue1
+#### Cue1
 
 Cue1 was engineered with an N-terminal His14-SUMO-tag and a C-terminal TEV-cleavage site followed by an SBP-tag separated from Cue1 by a linker (resulting in the same C-terminal tag as the one for Ubc6-SBP). A short linker (coding for SGS) was introduced between the His14-SUMO tag and Cue1. The coding sequence for this construct was inserted into the pET39b(+) vector (Novagen) right after the DsbA signal sequence. After TEV-cleavage during purification, the sequence for the C-terminal end of Cue1 is GSGENLYFQ.
 
-## Get3
+#### Get3
 
 The coding sequence for Get3 (and Get3D57N) was inserted into the K27SUMO vector using the SfoI restriction site. The expression construct contained an N-terminal His14-SUMO tag.
 
 Get3I193D was expressed from a pET28 vector (kind gift from Blanche Schwappach).
 
-## SNAREs
+#### SNAREs
 
 All constructs for expression of SNAREs have been previously described (Hernandez et al., 2012; Stein et al., 2007).
 
-ConstructPlasmid NumberDoa10 (aa 1–468, Doa10-N) in pRS426-pGal1376Doa10 (aa 225–1319) in pRS426-pGal1375Doa10 (aa 434–1319, Doa10-C) in pRS426-pGal1557Ubc6 in K27SUMO343Ubc6C87A in K27SUMO682Ub-Ubc6C87A in K27SUMO702SybUbc6TM in K27SUMO509Ubc6SybTM in K27SUMO536Ub-Ubc6C87A/SybTM in K27SUMO815Ubc6 (incl. C-terminal TEV cleavage site) in K27SUMO508Ubc6-SBP in pET39b(+)633Cue1 in pET39b(+)672Get3 in K27SUMO504Get3 D57N in K27SUMO522Get3 I193DMateja et al., 2009Syntaxin 1A 183–288, Syb2 49–96 in pETDuet-1Stein et al., 2007SNAP25Anocys in pET28aFasshauer et al., 1999Synaptobrevin 2 in pET28aStein et al., 2007
+<table>
+  <thead>
+    <tr>
+      <th>Construct</th>
+      <th>Plasmid Number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Doa10 (aa 1–468, Doa10-N) in pRS426-pGal1</td>
+      <td>376</td>
+    </tr>
+    <tr>
+      <td>Doa10 (aa 225–1319) in pRS426-pGal1</td>
+      <td>375</td>
+    </tr>
+    <tr>
+      <td>Doa10 (aa 434–1319, Doa10-C) in pRS426-pGal1</td>
+      <td>557</td>
+    </tr>
+    <tr>
+      <td>Ubc6 in K27SUMO</td>
+      <td>343</td>
+    </tr>
+    <tr>
+      <td>Ubc6C87A in K27SUMO</td>
+      <td>682</td>
+    </tr>
+    <tr>
+      <td>Ub-Ubc6C87A in K27SUMO</td>
+      <td>702</td>
+    </tr>
+    <tr>
+      <td>SybUbc6TM in K27SUMO</td>
+      <td>509</td>
+    </tr>
+    <tr>
+      <td>Ubc6SybTM in K27SUMO</td>
+      <td>536</td>
+    </tr>
+    <tr>
+      <td>Ub-Ubc6C87A/SybTM in K27SUMO</td>
+      <td>815</td>
+    </tr>
+    <tr>
+      <td>Ubc6 (incl. C-terminal TEV cleavage site) in K27SUMO</td>
+      <td>508</td>
+    </tr>
+    <tr>
+      <td>Ubc6-SBP in pET39b(+)</td>
+      <td>633</td>
+    </tr>
+    <tr>
+      <td>Cue1 in pET39b(+)</td>
+      <td>672</td>
+    </tr>
+    <tr>
+      <td>Get3 in K27SUMO</td>
+      <td>504</td>
+    </tr>
+    <tr>
+      <td>Get3 D57N in K27SUMO</td>
+      <td>522</td>
+    </tr>
+    <tr>
+      <td>Get3 I193D</td>
+      <td>Mateja et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Syntaxin 1A 183–288, Syb2 49–96 in pETDuet-1</td>
+      <td>Stein et al., 2007</td>
+    </tr>
+    <tr>
+      <td>SNAP25Anocys in pET28a</td>
+      <td>Fasshauer et al., 1999</td>
+    </tr>
+    <tr>
+      <td>Synaptobrevin 2 in pET28a</td>
+      <td>Stein et al., 2007</td>
+    </tr>
+  </tbody>
+</table>
 
-## Expression and purification of proteins
+### Expression and purification of proteins
 
 For expression of Doa10, yeast cells were grown in synthetic complete medium containing 2% (w/v) Glucose and amino acid drop-out supplements at 30°C (Formedium). An overnight culture (grown for 24 hr) was diluted 1:50 into fresh medium. After 24 hr of growth, expression was induced by addition of yeast extract, peptone and galactose to final concentrations of 1%, 2%, and 2% (w/v), respectively. After 17–19 hr, the cells were harvested at 3000 x g, washed once with ddH2O, resuspended in a minimal amount of H2O and stored at −80°C.
 
@@ -146,19 +661,19 @@ ATP synthase (from Bacillus PS3) was expressed and purified as described previou
 
 To express Syb, a plasmid encoding His6-thrombin-Syb was transformed into BL21 (DE3) E. coli cells (NEB). Expression and preparation of a membrane fraction were done as described above, in buffer Im15 (50 mM Tris/HCl pH 8.0, 500 mM NaCl, 15 mM imidazole). The membrane fraction was solubilized in buffer Im15 supplemented with 2.5% (w/v) sodium cholate for 30 min. After ultracentrifugation, solubilized material was incubated with Ni-NTA slurry (6 mL for 6 L culture) for 3 hr. Beads were filtered off and washed with 2 × 50 mL wash buffer Im15 supplemented with 1.5% (w/v) sodium cholate and subsequently with 4 × 50 mL wash buffer Im15 supplemented with 5 mM decylmaltoside (DM, Glycon Biochemicals). Protein was eluted with buffer Im15 containing 400 mM imidazole and 5 mM DM. The solution was dialyzed overnight against 10 mM MOPS, 50 mM NaCl, 1 mM DTT, 1 mM EDTA pH 7.0 (10 kDa MWCO), in the presence of 0.05 mg/mL thrombin. The protein was further purified by ion exchange chromatography on a MonoS column (GE healthcare) equilibrated with 10 mM MOPS, 50 mM NaCl, 1 mM EDTA and 1 mM DTT pH 7.0 and eluted in a salt gradient to 500 mM NaCl.
 
-## Sortase-mediated labeling
+### Sortase-mediated labeling
 
 Proteins were labeled at their C-terminal LPETGG tag with the previously described technique sortase-mediated transpeptidation (Popp et al., 2009). A peptide with the sequence GGGC was labeled at its cysteine residue with a maleimide dye. Peptide dissolved in 100 mM HEPES/KOH pH 7.4 was added to dye (DyLight680 maleimide or DyLight800 maleimide, Thermo Scientific) in 1.5-fold molar excess. After labeling at RT for 2 hr, the reaction was stopped with 10 mM DTT. To label peptide with AlexaFluor 488 C5 Maleimide (Thermo Scientific), peptide and dye were both dissolved in 100 mM HEPES/KOH pH7.4 and then mixed in a 1:1 molar ratio. A pentamutant P94R/D160N/D165A/K190E/K196T of SrtA from S. aureus was purified from E. coli (Chen et al., 2011).To label proteins, 3-fold molar excess of labeled peptide, 10 mM CaCl2 and SortA were added to the protein. SortA was added to 1/7 of the total concentration of reactants (peptide and protein). After labeling for 16–20 hr at 4°C, the reaction was separated by size-exclusion chromatography.
 
-## Reconstitution into proteoliposomes
+### Reconstitution into proteoliposomes
 
-## Preparation of protein-free liposomes
+#### Preparation of protein-free liposomes
 
 The following lipids were purchased from Avanti Polar Lipids: 16:0-18:1 PC (POPC, 1-palmitoyl-2-oleoyl-glycero3-phosphocholine), 18:1 (Δ9-Cis) PE (DOPE, 1,2-dioleoyl-sn-glycero-3-phosphoethanolamine), 18:1 PS (DOPS, 1,2,-dioleoyl-sn-glycero-3-phospho-L-serine), 18:1 Biotinyl PE (Biotinyl-PE, 1,2-dioleoyl-sn-glycero-3-phosphoethanolamine-N-(biotinyl)), 18:1 Liss Rhod PE (Rhd-PE, 1,2-dioleoyl-sn-glycero-3-phosphoethanolamine-N-(lissamine rhodamine B sulfonyl)). Ergosterol (≥95%, HPLC) was purchased from Sigma-Aldrich.
 
 Large unilamellar liposomes were prepared by reverse-phase evaporation as described (Hernandez et al., 2012). Briefly, lipids were dissolved in chloroform and mixed at a molar ratio of 60:20:10:10 (POPC: DOPE: DOPS: Ergosterol). Chloroform was subsequently removed using a rotary evaporator by lowering the pressure step-wise to 20mbar. The lipid film was then dissolved in 1 mL diethyl ether (when preparing 1 mL of liposomes with a final concentration of 20 mM lipid) and 300 µL of buffer L (20 mM HEPES/KOH pH7.4, 150 mM potassium chloride, 5 mM magnesium acetate) was added. The sample was sonicated for 1 min on ice (Branson Sonifier 450, 100% duty cycle, microtip limit 1). Afterwards the ether was removed at 500 mbar. After 10 min, 700 µL of buffer L was added and the pressure was gradually decreased to 100 mbar until diethyl ether was completely removed. The volume was adjusted to 1 mL with ddH2O. The resulting lipid suspension was extruded through a polycarbonate filter (11 x through a 0.4 µM filter, 21x through a 0.1 µM filter) using the Mini extruder kit (Avanti Polar Lipids). Protein-free liposomes were used for up to 2 weeks after preparation. For pulldown experiments via co-reconstituted biotinylated lipids, lipids were used in a molar ratio of 57.5:20:10:10:0.5:2 (POPC: DOPE: DOPS: Ergosterol: Rhd-PE: Biotinyl-PE).
 
-## Reconstitution of proteins into liposomes
+#### Reconstitution of proteins into liposomes
 
 To reconstitute proteins into liposomes, protein-free liposomes were mixed with detergent and proteins and subsequently incubated for 1 hr at RT prior to detergent removal. The detergent concentration used for solubilization can be described by the R-value (Rigaud and Lévy, 2003). The R-value is defined as the ratio of the total detergent concentration above the critical micellar concentration and the total lipid concentration (R = [Dtotal – DCMC]/[lipid]).
 
@@ -170,11 +685,11 @@ After reconstitution into separate liposomes, Ubc6 and Doa10 were subsequently c
 
 For the experiment in Figure 4, D and E, Doa10 was co-reconstituted with either Ubc6SybTM, SybUbc6TM, or Ubc6 directly in a 1-step protocol. For this protocol, Doa10 purified in DMNG (f.c. 0.5 mM) was used. Protein-free liposomes (10 mM final lipid concentration) were mixed with DMNG (R-value of 1.5), proteins and buffer T. Ubc6 and Doa10 were both reconstituted at a molar lipid: protein ratio of 10,000. After incubation for 1 hr at RT, the detergent was removed by incubation with Pierce detergent removal spin columns that were pre-washed with buffer T in three subsequent steps (one spin column for 100 µL reconstitution mix in each step). Incubation was performed at RT for 10, 20 and 30 min and the sample eluted by centrifugation at 3,500 rpm for 2 min in a table top centrifuge. To reconstitute Ubc6 or its variants alone (without Doa10), protein-free liposomes (10 mM final lipid concentration) were mixed with OG (R-value of 2.0), proteins and buffer T. Ubc6 was reconstituted at a molar lipid: protein ratio of 10,000. After incubation for 1 hr at RT, the detergent was removed by adding resin from Pierce detergent removal spin columns in three subsequent steps (40, 60, 60 mg resin to 160 µL reconstitution mix in step 1, 2 and 3, respectively). Resin incubation was performed while rotating the sample, at RT for 20 min each and the sample eluted by centrifugation at 3,500 rpm for 2 min in a table top centrifuge.
 
-## Flotation of liposomes
+#### Flotation of liposomes
 
 To test for reconstitution of proteins, liposomes were floated in a Nycodenz step gradient. Nycodenz stocks were prepared in buffer L. 50 µL of liposomes were mixed with 50 µL of 80% (w/v) Nycodenz and overlaid with 40 µL of 30% and 15% (w/v) Nycodenz and 40 µL of buffer L. The gradients were ultracentrifuged at 50,000 rpm for 1 hr at 4°C (S55-S rotor). The gradient was disassembled in six fractions, starting from the top of the gradient. Fractions were analyzed by SDS-PAGE.
 
-## Protease protection
+#### Protease protection
 
 To check the orientation of Ubc6 reconstituted into liposomes, trypsin protease was used. Liposomes were diluted (1:10 in buffer D) and incubated with 6.6 µg/mL trypsin (Roche) at RT. The detergent control contained in addition 1% Triton-X100 (TX100, Anatrace, Anapoe-X-100). The reaction was stopped with 4 mM PMSF and samples were analyzed by SDS-PAGE.
 
@@ -182,49 +697,49 @@ The orientation of Doa10TEV-SBP or Doa10-NTEV-SBP in liposomes was determined by
 
 The reconstitution quality of Ubc6 was assessed with a Ubc6 construct containing an N-terminal SUMO tag and a C-terminal TEV-cleavage site followed by a fluorescent dye (SUMO-Ubc6). Liposomes containing SUMO-Ubc6 and t-SNARE were diluted into buffer T 1:20 (f.c. 0.1 µM Ubc6). Ulp1 and/or TEV-protease were added to a f.c. of 10 µM each.
 
-## Pulldowns
+#### Pulldowns
 
 For pulldown experiments via the SBP-tag of Doa10, 20 µL of the fusion reaction (supplemented with 0.25 mg/mL bovine serum albumin (BSA)) were incubated with 20 µL of Pierce Streptavidin Magnetic Beads (Thermo Scientific) prewashed with buffer B (buffer T supplemented with 0.25 mg/mL BSA). After binding for 1 hr (rotating, RT), the supernatant of the binding reaction was taken off, the beads washed three times with 100 µL of buffer B and bound proteins eluted with 20 µL of buffer B supplemented with 2 mM biotin. Samples from input, supernatant and elution fractions were analyzed by SDS-PAGE.
 
 For pulldowns via the His-tag of ATP synthase, the fusion reaction was supplemented with 200 mM imidazole and 0.4 mg/mL BSA, and incubated with 20 µL magnetic Dynabeads (His-tag Isolation and Pulldown, ThermoFisher Scientific) (f.c. of 0.2 µM Ubc6, 80 nM ATP synthase). After binding for 30 min (rotating, RT), the supernatant was removed. Samples of input and supernatant were analyzed by SDS-PAGE and immunoblotting for His-tagged β-subunit of ATP Synthase.
 
-## Assays for release by Doa10
+### Assays for release by Doa10
 
-## Get3 capture assay
+#### Get3 capture assay
 
 Liposomes were prepared with protein-free liposomes containing 2 mol% biotinyl-PE and 0.5 mol% Rhd-PE and fused as described above. The fusion reaction was diluted 1:2 into buffer T (f.c. Ubc6 = 0.1 µM) and incubated with an excess of Get3 (f.c. 10 µM). After incubation at RT for 16 hr, the reaction was diluted to a f.c. of lipid of 0.2 mM (1:2 dilution) and 0.25 mg/mL BSA was added. The diluted mix was then added to an equal volume of Pierce Streptavidin Magnetic beads (Thermo Scientific, prewashed with buffer B). After binding for 1 hr, the supernatant was removed. Input and supernatant samples were analyzed by SDS-PAGE, and the Rhodamine fluorescence measured as described below.
 
 For the turbidity assay, Ubc6 (in 0.03% (w/v) DDM) was diluted 1:25 into buffer L (f.c. of 1.8 µM Ubc6) in the presence or absence of Get3 (f.c. 1.8 µM or 3.6 µM). The optical density at 360 nm was measured using a UV-2401PC spectrophotometer (Shimadzu Corporation).
 
-## Protease protection assay
+#### Protease protection assay
 
 For this experiment, both sets of liposomes (SUMO-Ubc6, t-SNARE and Syb liposomes containing no, full-length or truncated Doa10 versions) were diluted 1:5 for the fusion reaction. First, Ulp1 cleavage was performed (f.c. 2 µM Ulp1, 0.2 µM Ubc6, 0.08 µM Doa10). For the subsequent TEV-cleavage, the Ulp1-cleaved sample was diluted 1:2 and incubated with 10 µM TEV-protease. During TEV-cleavage, 0.5 mM DTT was present. Detergent controls contained 1% TX100. Reactions were stopped by adding SDS sample buffer.
 
-## Antibody accessibility assay
+#### Antibody accessibility assay
 
 AlexaFluor 488 fluorescence was measured in a Tecan Genios Pro microplate reader using 495/10 nm and 535/25 nm for excitation and emission, respectively. The fluorescence of 30 µL of the fusion reaction was measured in a 96-well plate (Corning, REF 3686) with a f.c. of Ubc6 (labeled with A488) of 0.2 µM. After the signal was stable, the measurement was stopped, anti-Alexa Fluor 488 polyclonal antibody (Invitrogen, #A-11094) was added (diluted 1:15) and the measurement started again. After approx. 40 min, 1 µL TX100 (f.c. 1%) was added to solubilize the liposomes. To analyze the fluorescence traces, the three measurements (equilibration, antibody and detergent addition) were merged. The background (stabilized A488 signal after detergent addition) was subtracted from all measurements. The fluorescence traces were subsequently normalized to the average signal of the last 10 timepoints before antibody addition. To quantify the fraction of released Ubc6, the difference between the normalized values of the samples with and without Doa10 30 min after antibody addition was calculated.
 
 To test for the release of the Ubc6/Syb chimera, liposomes containing Doa10 directly co-reconstituted with A488-labeled Ubc6, Ubc6SybTM or SybUbc6TM were first subjected to a pulldown via the SBP-tag of Doa10. Liposomes were diluted 1:8 (f.c. Ubc6 0.125 µM, 0.25 mg/mL BSA) and 50 µL of diluted liposomes were added to 50 µL of Pierce Streptavidin Magnetic Beads (Thermo Scientific) prewashed with buffer B. For the controls, Ubc6-only liposomes were also diluted 1:8 (in the presence or absence of 1:8 diluted Doa10-liposomes) and incubated with beads. After binding for 1 hr (rotating, RT), the supernatant of the binding reaction was taken off, the beads washed three times with 200 µL of buffer B and bound Doa10-liposomes eluted with 40 µL of buffer B supplemented with 2 mM biotin. Samples from input, supernatant and elution fractions were analyzed by SDS-PAGE. 30 µL of eluted fractions (Doa10-containing liposomes) were then added into a 96-well plate. Liposomes lacking Doa10 (containing Ubc6, Ubc6SybTM or SybUbc6TM) were diluted 1:15 in buffer T. The antibody quenching assay was then carried out as described above.
 
-## Ubiquitination assays
+### Ubiquitination assays
 
 All ubiquitination reactions were performed at 30°C in a thermocycler. The fusion reaction was diluted 1:2 (f.c. of 0.1 µM Ubc6, 0.01 µM Cue1 and 0.04 µM Doa10). The following components were used at the indicated concentrations unless stated otherwise: 0.1 µM Uba1 (E1), 1 µM Ubc7, 120 µM ubiquitin (from S. cerevisiae, R and D Systems) and 2.5 mM ATP. All reactions contained 0.1 mg/mL BSA. The ubiquitin mutant K0 (Lifesensors) is derived from human ubiquitin. Reactions were stopped by adding reducing SDS-sample buffer and samples were analyzed by SDS-PAGE.
 
-## Analysis of ubiquitination reactions
+#### Analysis of ubiquitination reactions
 
 To analyze the fraction of non-modified protein, the non-ubiquitinated band was quantified and normalized to the 0 min timepoint. To analyze the ubiquitin chain profile, the fluorescence intensity was quantified along a vertical axis starting from the top of the gel using the line scan function in ImageJ (Figure 2B and Figure 5B). When different Ubc6-variants were compared (Ubc6 vs Ubc6SybTM), the line scan values were normalized to the integral of the whole scan (Figure 5B), to account for different sortase labeling efficiencies. To quantify the kinetics for generation of mono-, di-, tri- and tetraubiquitinated species, each band corresponding to one, two, three and four ubiquitins was quantified for every time point and normalized to the non-ubiquitinated band at the 0 min timepoint (Figure 5—figure supplement 1D). To calculate the total number of ubiquitins transferred relative to total Ubc6, the values for species modified with 1 to 4 ubiquitins obtained as above were summed up for each timepoint (Figure 5D and Figure 5—figure supplement 2C).
 
-## Measuring extraction by the Cdc48-complex
+### Measuring extraction by the Cdc48-complex
 
 Proteoliposomes were prepared with protein-free liposomes containing 2 mol% biotinyl-PE and 0.5 mol% Rhd-PE. Fusion and ubiquitination was carried out as described above. To immobilize liposomes after ubiquitination, the ubiquitination reaction was diluted 1:2 to a final lipid concentration of 0.2 mM total lipid (f.c. of 0.05 µM Ubc6) and BSA was added to a f.c. of 0.25 mg/ml. The diluted mix was then added to an equal volume of Pierce Streptavidin Magnetic Beads (Thermo Scientific, prewashed with buffer B). After incubation for 1 hr at RT (rotating), the unbound fraction was removed and the beads were subsequently washed 3 x with buffer B. The beads were then resuspended in the same volume of buffer B and 30 µL of the suspension aliquoted in a PCR-strip. The buffer was removed and the beads resuspended in 1 x extraction mixes or 1 x SDS sample buffer. 1 x extraction mixes contained 0.25 mg/mL BSA and where indicated 0.1 µM Cdc48 (hexamer) and 0.1 µM Ufd1/Npl4. Beads were incubated for 30 min at 30°C. The supernatant was removed (containing extracted and soluble proteins). After washing the beads 3 x with buffer B, the bound proteins were eluted by adding 30 µL of 1x SDS sample buffer. Samples of the supernatant and the elution fractions were analyzed by SDS-PAGE. To quantify the liposome immobilization efficiency, the Rhodamine fluorescence was measured in a Tecan Genios Pro microplate reader using 550/10 nm and 590/20 nm for excitation and emission, respectively. To quantify the protein immobilization efficiency, the DyLight680 (Ubc6/Ub-Ubc6C87A) fluorescence was measured using the Odyssey scanner (384-well plate, transparent bottom).
 
-## Analysis of extraction reactions
+#### Analysis of extraction reactions
 
 To quantify the extraction efficiency of Ub-Ubc6C87A relative to its ubiquitination status (Figure 3—figure supplement 1G), bands corresponding to Ub-Ubc6C87A modified with 1 to 10 ubiquitins were quantified separately and normalized to the corresponding band of the input sample (beads treated with sample buffer).
 
 To quantify the fraction of Ubc6 in the supernatant (Figure 3C,D), the fluorescence intensity for Ubc6 modified with 0–5 ubiquitins and for Ubc6 modified with more than five ubiquitins was quantified by drawing a single rectangular box around the respective area using Image Studio and subsequently normalized to the Input (beads treated with 1 x SDS sample buffer). For Ub-Ubc6C87A, the unmodified band was counted as monoubiquitinated.
 
-## Experiments with Ubc6-SBP
+### Experiments with Ubc6-SBP
 
 To reconstitute Ubc6-SBP into proteoliposomes, Ubc6-SBP was preincubated with a 1.25-fold molar excess of tetrameric streptavidin (NEB) for 15 min at RT in the presence of 0.03% DDM to allow for complex formation. The reconstitution conditions were otherwise the same as for the co-reconstitution of Ubc6 and t-SNARE (with 2 µM Ubc6-SBP and 2.5 µM Streptavidin).
 
@@ -240,7 +755,7 @@ To measure extraction of Ubc6-SBP by the Cdc48-complex using the antibody access
 
 To test, if streptavidin stays in the liposome lumen during extraction (Figure 6E,F), samples were floated after the extraction assay in a Nycodenz step gradient as described above. The samples were prepared with the following modifications: To ensure sufficient detection levels, the liposomes were diluted 1:4 for the fusion reaction. The ubiquitination reaction (f.c. 0.3 µM Ubc6, 0.12 µM Doa10, 0.03 µM Cue1, 0.1 µM Uba1, 1 µM Ubc7, 120 µM ubiquitin and 2.5 mM ATP) was carried out as described above. After 30 min of ubiquitination, the extraction assay was performed in the plate reader as described above, in the presence of 0.3 µM Cdc48/UN complex (f.c. Ubc6 = 0.25 µM). After 30 min, 2 mM biotin was added to 50 µL sample, a Nycodenz step gradient was assembled and the flotation carried out as described above. Samples were analyzed by SDS-PAGE and stain-free scanning using a GelDoc EZ Imager. Streptavidin levels were quantified using ImageJ. Intensity values were normalized to the sample without Cdc48/UN.
 
-## Analysis
+### Analysis
 
 Samples were mixed with SDS sample buffer (stock used as 3 x contained 12% (w/v) SDS, 30% (w/v) glycerol, 0.05% Coomassie blue G-250, 150 mM Tris/HCl pH 7.0% and 6% (v/v) ß-mercaptoethanol for reducing sample buffer (Schägger, 2006). Samples were heated at 70°C (Streptavidin-containing samples were boiled) and analyzed by SDS-PAGE using CRITERION TGX stain-free precast gels (Bio-Rad).
 

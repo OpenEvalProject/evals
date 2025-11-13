@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.36097.001 Coupling of synaptic vesicle fusion and retrieval constitutes a core mechanism ensuring maintenance of presynaptic function. Recent studies using fast-freeze electron microscopy and capacitance measurements reported an ultrafast mode of endocytosis operating at physiological temperatures. Here, using rat hippocampal neurons, we optically monitored single synaptic vesicle endocytosis with high time resolution using the vesicular glutamate transporter, synaptophysin and the V0a1 subunit of the vacuolar ATPase as probes. In this setting, we could distinguish three components of retrieval operating at ultrafast (~150–250 ms, ~20% of events), fast (~5–12 s, ~40% of events) and ultraslow speeds (>20 s, ~40% of events). While increasing Ca 2+ slowed the fast events, increasing temperature accelerated their time course. In contrast, the kinetics of ultrafast events were only mildly affected by these manipulations. These results suggest that synaptic vesicle proteins can be retrieved with ultrafast kinetics, although a majority of evoked fusion events are coupled to slower retrieval mechanisms.
+Coupling of synaptic vesicle fusion and retrieval constitutes a core mechanism ensuring maintenance of presynaptic function. Recent studies using fast-freeze electron microscopy and capacitance measurements reported an ultrafast mode of endocytosis operating at physiological temperatures. Here, using rat hippocampal neurons, we optically monitored single synaptic vesicle endocytosis with high time resolution using the vesicular glutamate transporter, synaptophysin and the V0a1 subunit of the vacuolar ATPase as probes. In this setting, we could distinguish three components of retrieval operating at ultrafast (~150–250 ms, ~20% of events), fast (~5–12 s, ~40% of events) and ultraslow speeds (>20 s, ~40% of events). While increasing Ca2+ slowed the fast events, increasing temperature accelerated their time course. In contrast, the kinetics of ultrafast events were only mildly affected by these manipulations. These results suggest that synaptic vesicle proteins can be retrieved with ultrafast kinetics, although a majority of evoked fusion events are coupled to slower retrieval mechanisms.
 
 ## Introduction
 
@@ -23,7 +23,7 @@ In the present study, we aimed to monitor retrieval of single synaptic vesicles 
 
 ## Results
 
-## Monitoring endocytosis with vGluT1-pHluorin
+### Monitoring endocytosis with vGluT1-pHluorin
 
 The vesicular glutamate transporter 1 (vGluT1) bound to the pH sensitive derivative of GFP, pHluorin has been widely used to track synaptic vesicle trafficking based on its low plasma membrane expression and high signal-to-noise ratio (Voglmaier et al., 2006; Balaji and Ryan, 2007; Leitz and Kavalali, 2011). The pHluorin fluorescence is quenched in the acidic environment of the synaptic vesicle lumen and peaks after fusion with the plasma membrane (Figure 1A). Under strong stimulation (e.g. 40 Hz 5 s in Figure 1A–C), recapture of synaptic proteins from the plasma membrane results in a decay in fluorescence, reflecting synaptic vesicle retrieval and subsequent vesicle re-acidification (Figure 1A). At room temperature (~24°C), increasing extracellular Ca2+ concentration from 2 mM to 8 mM leads to an increase in the number of fused vesicles (seen as an increase in peak amplitude) and a slight increase in the decay time, suggesting saturation of the endocytic machinery under strong, repetitive stimulation (Figure 1A–C). Earlier studies have demonstrated that at physiological temperatures (34–36°C) the time course of bulk synaptic vesicle endocytosis seen after strong stimulation shows accelerated kinetics (Fernández-Alfonso and Ryan, 2004; Renden and von Gersdorff, 2007; Soykan et al., 2017) possibly via activation of ultrafast endocytosis mechanisms (Delvendahl et al., 2016; Watanabe et al., 2013). In agreement with this premise, in our experiments, increasing the temperature from ~24 to 34°C led to a ~ 2.5 fold decrease in the fluorescence decay time constants after 40 Hz stimulation (Figure 1C). Moreover, at 34°C we observed faster fluorescence rise times at stimulation onset compared to room temperature (Figure 1D), consistent with an increase in the synchronicity of release seen in previous electrophysiological studies (Pyott and Rosenmund, 2002).
 
@@ -32,6 +32,14 @@ The vesicular glutamate transporter 1 (vGluT1) bound to the pH sensitive derivat
 **Figure 1.:** (A) Average non-normalized 40 Hz (200 AP) traces of vGluT1-pHluorin at 24°C and 2 mM (light-blue) or 8 mM extracellular Ca2+ (blue), or at 34°C and 2 mM (orange) or 8 mM Ca2+ (red). (B) Amplitude of fluorescence responses after 40 Hz stimulation. (C) Average decay time constants (τ) of the fluorescence return to baseline after 40 Hz stimulation, calculated with a single exponential decay fit. (D) Slope of the rise in fluorescence triggered by 40 Hz stimulation, expressed as change in fluorescence over time and calculated by linear regression. Statistical analysis was performed applying Kruskal-Wallis analysis (non-parametric ANOVA) with Dunn’s multiple comparisons post-test. *p<0.05; **p<0.01; ***p<0.001; ***p<0.0001.
 
 In the next set of experiments, we focused on single synaptic vesicle fusion and retrieval events induced during sparse low frequency stimulation (0.05 Hz). At the single vesicle level, fluorescence dwell times detected after fusion are representative of the time the pHluorin-tagged protein resides at the presynaptic plasma membrane before being retrieved. For action potential (AP) evoked release the kinetics of this process is negatively regulated by Ca2+ concentration in a synaptotagmin-dependent manner (Leitz and Kavalali, 2011; Li et al., 2017). To visualize potential ultrafast retrieval of single synaptic vesicles, we monitored single fusion events at near physiological temperatures. Moreover, we increased the time resolution of our measurements, by a combination of faster image acquisition settings and time-domain de-noising of fluorescence signals based on methods originally developed to de-noise electrophysiological single channel recordings (Chung and Kennedy, 1991). This non-linear algorithm consists of a series of backward and forward predictors, similar to moving averages, used to calculate the probability of occurrence of fast changes in the signal, i.e. sharp changes in amplitude above the noise, in a Bayesian framework (Figure 2A). This type of noise reduction preserves the amplitude of the measured signal without major distortion of the edges compared to other classical methods based on the fast Fourier transform (see Figure 2B and Figure 2—figure supplement 1). As the filtering method we used assumes Gaussian distribution of the noise (Chung and Kennedy, 1991), we first validated that our experimental noise shows a Gaussian distribution (Figure 2—figure supplement 1A–B). These new settings enabled us to probe the fastest rate at which synaptic vesicle protein retrieval takes place at physiological temperatures. Noise reduction of the fluorescence traces from each region of interest (ROI) allowed us to detect small amplitude fusion events and reliably estimate release probability using failure analysis (Figure 2C). Moreover, dwell times of the fluorescent probe at the plasma membrane prior to retrieval could be determined with higher precision, enabling a clear discrimination between dwell times and the subsequent decay in fluorescence due to reacidification. Dwell time was defined as the total time after fusion that maintains maximum (peak) amplitude until the first derivative starts to be negative (due to re-acidification and the consequent decay of the signal). To estimate the accuracy of our event detection algorithm, we generated negative imaging controls with no stimulation in the presence of TTX or in 0 mM extracellular Ca2+ following EGTA-AM treatment to buffer intracellular Ca2+. In these control experiments, we detected events with a probability of ~0.03% or less (likely reflecting false positives along with spontaneous fusion events), well within acceptable boundaries (~5 fold less than typical event detection rate under normal conditions) (Figure 2D–E). To assess the precision of the dwell time calculation, artificial traces with different release probabilities and dwell time distributions were simulated and similarly de-noised and analyzed. This analysis corroborated the limited contribution of false positives to the dwell time durations obtained (Figure 2—figure supplement 1C–E). In conclusion, all these experimental and simulated controls enabled us to tune the de-noising parameters to analyze the duration of dwell times in the experimental traces (Chung and Kennedy, 1991).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/36097/elife-36097-fig2-v2.jpg)
+
+**Figure 2.:** (A) Formulas and schematic representation of the Chung – Kennedy non-linear filter (for detailed explanation see Chung and Kennedy, 1991). (B) Example fluorescence trace before (top) and after processing using the Chung – Kennedy de-noising (middle) or the fast Fourier transform (FFT) filtering at 2 Hz (bottom). Appreciate the reduction in peak amplitude caused by FFT. (C) Comparison of original not processed vGluT1-pHluorin traces with the result signal after bleaching, background and noise corrections, at different extracellular Ca2+ concentrations and temperatures. The failure analysis used to quantify probability of release is exemplified. (D) Example fluorescence trace over time, before and after de-noising, of a negative control bouton imaged at room temperature in the presence of tetrodotoxin (TTX). (E) Cumulative histogram of probability of release measured at room temperature, for positive control boutons (2 mM extracellular Ca2+) and two negative control groups: TTX group corresponds to boutons imaged in the presence of TTX, 2 mM Ca2+ and absence of electrical stimulation; EGTA-AM group corresponds to cultures pretreated with EGTA-AM 100 μM for 15 min in a 0 mM Ca2+ medium, and posteriorly imaged at room temperature with 0 mM extracellular Ca2+ and similar stimulation paradigm applied to the positive control group. The release probability for negative controls is <0.03, which corresponds to <20% of the mean release probability in the positive control group. Positive control: 368 boutons; Negative control – TTX: 401 boutons; Negative control – EGTA-AM: 260 boutons. All data are from 2 to 3 independent experiments. Also see Figure 2—figure supplement 1 for controls regarding recovery and analysis of simulated traces.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36097/elife-36097-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Distribution of noise amplitudes for experimental data (fluorescence traces) measured at room temperature and 2 mM extracellular Ca2+ concentration (empty circles) showing the Gaussian fit (red line). The distribution of the noise amplitude after de-noising is also shown (grey histogram). Note the dramatic effect of the filtering in noise reduction. (B) Distribution of noise amplitudes measured experimentally at 34°C and 2 mM extracellular Ca2+ concentration (empty circles) showing the Gaussian fit (red line) and the distribution of the noise amplitude after de-noising (grey histogram). (C) Top: simulated fluorescence trace with a release probability of 0.2. Middle: simulated trace with added random Gaussian noise with an amplitude of ~75% the amplitude of the signal (to properly simulate real experimental traces). Bottom: recovered trace after de-noising, note that most of the fusion events are recovered with minimal morphological alterations. (D) Comparison of cumulative histograms of probability of detection (comparable to release probability for real experimental data), for the original simulated trace (before adding noise, shown in grey) and for the recovered simulated trace after de-noising (shown in red). Insets: corresponding Tukey plots. (E) Distribution of recovered events’ amplitudes (red) in comparison with the simulated amplitude (black). Note the similitude between the averages, showing only a small reduction in amplitude determination after processing. (F) Distribution of dwell time lengths in the original simulated trace (black) and the recovered events (red), showing the exponential fit with the respective mean values (τ). (G) Proportion of different dwell time length ranges for the simulated events (left) and the recovered ones (right), showing similar sensitivity of detection for all types of dwell times. (H) Distribution of the error in dwell time determination, calculated as the absolute value of the difference between the simulated (original) event and the obtained one. ~ 40% of events were fitted with a dwell time with 0 to 0.5 s difference of the original, and ~75% of events had an error in determination of dwell time of 0 to 1 s. (I) Error in the determination of dwell time grouped by range. This error was smaller for faster events (~300 ms in average) and increased for longer dwell time events. Data from four independent simulations with 250 boutons (traces) per simulation and a total of ~9000 events.
 
 Example vGluT1-pHluorin fluorescence traces of single synaptic vesicle fusion events after de-noising are depicted in Figure 3A. As shown in Figure 3B and C, mean release probability at 2 mM extracellular Ca2+ is ~0.15, in agreement with previous reports (Leitz and Kavalali, 2011; Murthy et al., 1997). Increasing Ca2+ concentration to 8 mM leads to a marked increase in release probability (Figure 3B–C), although switching from room temperature (~24°C) to 34°C, did not result in a major change in release probability, consistent with previous electrophysiological measurements (Kushmerick et al., 2006; Pyott and Rosenmund, 2002). Initially, we detected that 40 ± 2% of all fusion events did not return to baseline during the course of imaging (>20 s, and see Figure 3H) suggesting an ultraslow pathway for endocytosis (Gandhi and Stevens, 2003; Zhu et al., 2009). The remaining events (~60%) showed dwell times of variable lengths which displayed a non-normal distribution (Figure 3D–G) with a peak at ~250 ms. Further analysis of the histograms revealed that they are best represented by a double exponential decay function, pointing to the co-existence of two endocytic mechanisms with different mean rates. The fitting of dwell time distributions for the experimental groups revealed an ultrafast endocytic component with an average time course of about 150–250 ms, and a fast process that proceeds with an order of magnitude slower time course of around 5–12 s (arrows in Figure 3D–G). Increasing extracellular Ca2+ concentration from 2 to 8 mM led to only a 10–15% slowdown of ultrafast endocytosis at both temperatures (Figure 3D–G). The fast component of endocytosis, on the other hand, showed a steeper temperature dependence. Increasing extracellular calcium concentration from 2 to 8 mM led to a ~ 60% slowdown of fast endocytosis at 24°C, while increasing calcium at 34°C led to only a ~ 10% slowdown (Figure 3D–G). This result indicates that increasing temperature triggers an overall acceleration of vGluT1-pHluorin retrieval mainly through regulation of the fast component of endocytosis, and this form of regulation is more evident at higher Ca2+ concentrations (compare insets in Figure 3E and G). Kolmogorov-Smirnov pair-wise comparison of cumulative distributions, as well as Kruskal-Wallis non-parametric analysis of variances, further corroborated that Ca2+ concentration and temperature had a significant effect on the shift of the distributions (Figure 3D–G, legend). While the mean speed of endocytosis for both fast and ultrafast pathways was regulated by temperature and Ca2+, the relative contribution of each mode to total protein retrieval did not change significantly (Figure 3H). Overall under all conditions around 40% of fusion events were not followed by endocytosis in the imaging period (>20 s), 13–18% undergo ultrafast endocytosis and 38–48% of vGluT1-pHluorins were retrieved through a slow pathway (Figure 3H). The mean amplitude of fusion events was similar for all types of retrieval (data not shown). In addition, to test whether the two components of retrieval we identified were a consequence of denoising, we averaged non-denoised traces in an unbiased manner and found two phases of fluorescence decay with ultrafast (~250 ms) and fast kinetics (~3–7 s) (Figure 4A). Although, this analysis does not distinguish dwell time and re-acidification kinetics, it supports our conclusion that two kinetically distinct processes retrieve vesicle proteins with ultrafast and fast speeds. Interestingly, in neurons where the Ca2+ sensor synaptotagmin-1 (syt1) was knocked-down (KD) the fast component is greatly reduced and vGluT1-pHluorin is retrieved almost exclusively by ultrafast endocytosis (70–80% of all fusion events, Figure 4B–C), suggesting that ultrafast endocytosis is syt1-independent (see Li et al., 2017). Moreover, ultraslow retrieval (>20 s) is also abolished in syt1 KD neurons (Figure 4C). This was not the case for synaptotagmin-7 (syt7) KD neurons, where averaged single vesicle traces showed a double exponential decay (τ1 = 0.31 ± 0.05 s, τ2 = 8.5 ± 4.8 s) similarly to control synapses. Taken together, these results indicate that the speed of fast single vesicle retrieval is markedly accelerated by temperature and slowed down by extracellular Ca2+ concentration, possibly through syt1, whereas the kinetics of ultrafast events are less sensitive to these factors.
 
@@ -45,7 +53,7 @@ Example vGluT1-pHluorin fluorescence traces of single synaptic vesicle fusion ev
 
 Approximately 60% of total fusion events displayed dwell times and subsequent decay. Among these, only in 50% the fluorescence returned back to baseline completely, consistent with full quantal retrieval of vGluT1-pHluorins (fractional retrieval of 1.0 ± 0.2, see Figure 4D–E). Approximately, 35% of the fusion events that were followed by a measurable dwell time, showed partial retrieval, indicating that some vGluT1-pHluorin molecules might diffuse away from the site of fusion and are temporarily unavailable for endocytosis. The remaining ~15% of events showed excess retrieval, suggesting that more vGluT1-pHluorin molecules were retrieved compared to the ones that fused (Figure 4D–E), similar to what was described in other systems (e.g. Chung and Kavalali, 2009; Van Hook and Thoreson, 2012; Zhu et al., 2009). Plotting the fraction of retrieval for each fusion event as a function of the duration of its dwell time revealed that the dispersion of retrieval values increased with longer dwell times (Figure 4F). While the dispersion was ±20% for ultrafast events (dwell times of 0.0 to 0.5 s), for fast events dispersion increased from approximately ±40% to around ±80–90% as the values of dwell times increased (see legend of Figure 4F). This increasing variability in the retrieved fraction occurred similarly for all the temperatures and extracellular Ca2+ concentrations tested. This result implies that as endocytosis gets slower, the probability of having partial retrieval of synaptic vesicle proteins or of having retrieval of double amount of protein compared to the amount that fused increases. As mentioned before, for neurons lacking syt1 the majority of fusion events were followed by ultrafast endocytosis, for these events vGluT1-pHluorin is endocytosed very efficiently, with ~80% of vGluT1-pHluorin fusion events showing quantal retrieval (1.0 ± 0.2, Figure 4G–H). Our results suggest that ultrafast endocytosis is Ca2+, syt1 and temperature independent, and it rapidly retrieves approximately the same amount of protein that fused.
 
-## Ultrafast and fast retrieval of synaptophysin and V0a1 subunit of the v-ATPase
+### Ultrafast and fast retrieval of synaptophysin and V0a1 subunit of the v-ATPase
 
 Distinct synaptic vesicle proteins are typically coupled to diverse endocytic mechanisms (Chanaday and Kavalali, 2017; Li et al., 2017; Pan et al., 2015; Voglmaier and Edwards, 2007) Therefore, to evaluate the general validity of our results, we tested the trafficking of synaptophysin-1 fused to the red pH sensitive protein pHTomato (Syp1-pHTomato, Figure 5A) (Li and Tsien, 2012) under the same conditions. At 40 Hz stimulation, the increase of temperature from 24 to 34°C caused a ~ 2.5 fold rise in the bulk endocytic rate of Syp1-pHTomato (Figure 5B) coupled with a faster signal rise time (Figure 5C), consistent with our observations using vGluT1-pHluorin. At the single vesicle level, as before, we did not detect a change in release probability in response to increase in temperature (~0.15 at both tested temperatures) (Figure 5D). Sample traces of single synaptic vesicle fusion events detected with Syp1-pHTomato are shown in Figure 5E. Histograms of detectable dwell times (50 ± 2% of events) were best fitted with a double exponential, revealing the presence of two parallel endocytic processes for synaptophysin (Figure 5F–I). The mean time courses of these two processes were about 175–300 ms and 5–11 s, comparable to our previous results with vGluT1-pHluorin (arrows in Figure 5F–I). While the increase in temperature did not produce a significant effect in the overall endocytic rate at 2 mM Ca2+ (Figure 5F–G, and inset in 5G), it caused an almost two-fold acceleration of retrieval at 8 mM extracellular Ca2+ (Figure 5H–I, and inset in 5I). As observed for vGluT1-pHluorin, even though both ultrafast and fast processes are regulated by Ca2+ and temperature, the effect of these manipulations are more striking for the fast component and at 8 mM Ca2+. Statistical analysis confirmed this finding (Figure 5F–I, legend). In contrast, the charts in Figure 5J show that there is only a modest effect of temperature and Ca2+ in the proportion of the different modes of endocytosis after single AP stimulation. Our results so far revealed the co-existence of two rapid endocytic processes at hippocampal synapses (ultrafast and fast), whose speed is differentially regulated by Ca2+ and temperature.
 
@@ -55,9 +63,25 @@ Distinct synaptic vesicle proteins are typically coupled to diverse endocytic me
 
 VGluT1 and Syp1 proteins are present in high copy numbers on synaptic vesicles (~9 and~31 per vesicle, respectively) (Takamori et al., 2006). As discussed above, it is possible that they are not completely retrieved after fusion (Gimber et al., 2015); and also see Figure 4D–H). In our experiments, about 40% of all vGluT1-pHluorin events and 50% of Syp1-pHTomato events do not show protein retrieval during the recording period, probably reflecting fully collapsed vesicles after fusion (ultraslow retrieval events). Taken together, these observations suggest that three modes of vesicle recycling take place; a mode where synaptic vesicle proteins remain at the surface membrane for extended time period albeit in a clustered fashion, an ultrafast mode of retrieval that occurs in the timescale of 150–300 ms, and a fast mode of endocytosis happening in the order of several seconds. To evaluate this premise further, we designed a probe with V0a1 subunit of the vacuolar ATPase (v-ATPase) responsible for vesicle acidification with pHluorin attached to one of its intraluminal loops (V0a1-pHluorin, Figure 6). V-ATPase and its subunits show low levels of expression in synapses and they have a low copy number per synaptic vesicle (~1) (Takamori et al., 2006). Co-localization experiments revealed that V0a1-pHluorin is properly trafficked to synapses, with about 10–30% of the probe co-localizing with the presynaptic marker Synapsin-1, also showing a similar subcellular distribution to the endogenous V0a1 protein (Figure 6A–B) and similar to what was described previously (Bagh et al., 2017). V0a1 over-expression or V0a1-pHluorin expression did not produce significant alterations in synaptic transmission, as indicated by similar to control single AP evoked response amplitudes and charge transfer, as well as similar paired-pulse ratios (Figure 6—figure supplement 1A–D). V0a1-pHluorin expression also had no effect on spontaneous, miniature excitatory postsynaptic current (mEPSC) amplitudes and frequency, and only caused a 2-fold increase in miniature inhibitory postsynaptic currents (mIPSC) frequency, with no changes in amplitude (Figure 6C–E). Application of a depolarizing high potassium solution accentuated synaptic localization and demonstrated activity-dependent trafficking of V0a1-pHluorin (Figure 6F). We used acid quenching (pH ~5) to suppress surface fluorescence followed by NH4Cl perfusion to alkalinize intracellular compartments and determined the ratio of intracellular and surface V0a1-pHluorin (Figure 6G–H). The subcellular distribution was highly variable among synapses, with ~40% of the probe present in internal organelles and ~60% on the plasma membrane on average, resembling what was described for endogenous V0a1 (Morel et al., 2003). Due to the low copy number per synapse, 40 Hz stimulation only led to a small increase in fluorescence, which could be clearly visualized after treatment with folimycin to prevent re-acidification (Figure 6—figure supplement 1E). Nevertheless, we could detect single vesicle fusion events in response to single AP stimulation albeit with a low probability where ~ 50% of the ROIs did not respond to stimulation. Application of v-ATPase inhibitor folimycin (200 μM) converted 80–90% of these events to a non-decaying time course with a monophasic distribution of amplitudes supporting their basis in quantal fusion of single vesicles (Leitz and Kavalali, 2011; Li et al., 2017) (Figure 6—figure supplement 1F–G). The distribution of V0a1-pHluorin dwell times at 34°C could be fitted with a double exponential decay, again reflecting ultrafast and fast time constants of ~250–300 ms and 3–10 s, respectively (Figure 6J–K). As observed with the previous indicators, the time scale of the fast component of endocytosis was more sensitive to changes in extracellular Ca2+ concentration, showing more than two-fold decrease in speed compared to a ~ 30% slow down of the ultrafast component. The proportion of each mode of endocytosis for V0a1-pHluorin retrieval is shown in Figure 6L.
 
-## Detection of synaptic vesicle retrieval at rapid image acquisition settings
+![Figure 6.](https://cdn.elifesciences.org/articles/36097/elife-36097-fig6-v2.jpg)
+
+**Figure 6.:** (A) Immunofluorescence of control (empty vector) and V0a1-pHluorin expressing hippocampal neurons. Top: control neuron stained with anti-V0a1 antibody to reveal endogenous V0a1 levels and distribution in RED. Bottom: V0a1-pHluorin expressing neuron immunostained with anti-GFP to show levels and distribution of the fusion protein in RED. For both, in GREEN staining against synapsin one is shown. White scale bar = 10 μm. (B) Quantification of colocalizing signal between Synapsin one and V0a1 or V0a1-pluorin. Colocalization analysis was object based, using a custom macro for Fiji. Positive colocalization was defined as an overlap in the area with above threshold signal in both channels after image segmentation. The % of colocalizing area was calculated. (C) Example traces of miniature inhibitory (mIPSC) and excitatory (mEPSC) postsynaptic currents for control (mock virus transfected), V0a1 over-expression and V0a1-pHluorin groups. Current clamp experiments were performed at room temperature and recorded for 5 min. (D) Frequency (Hz) of mIPSC (top) and mEPSC (bottom) for control, V0a1 and V0a1-pHluorin groups. (E) Amplitude (pA) of mIPSC (top) and mEPSC (bottom) for control, V0a1 and V0a1-pHluorin groups. For D to F: mIPSC: control = 9 cells; V0a1 = 7 cells; V0a1-pHluorin = 13 cells; mEPSC: control = control = 18 cells; V0a1 = 12 cells; V0a1-pHluorin = 10 cells. 1–3 neurons were patched per coverslip, 4–5 independent experiments (cultures). Also see the analysis of evoked neurotransmission in V0a1 and V0a1-pHluorin groups in Figure 6—figure supplement 1. (F) Representative wide-field fluorescence image from V0a1-pHluorin expressing neurons, before (basal signal) and after stimulation with 90 mM KCl, showing exocytosis of the probe. White arrowheads: presynaptic boutons. The quantification of fluorescence intensity over time for one of the boutons is shown in below images. White scale bars = 2 μm. (G) Example trace (average from one experiment) of V0a1-pHluorin fluorescence changes after Tyrode’s buffer pH = 5.5 perfusion and NH4+ 50 mM application. (H) Quantification of the distribution (ratio) of V0a1-pHluorin in internal membranes (internal – purple) and plasma membrane (surface – green). 420 boutons analyzed from five coverslips (three independent experiments – cultures). (I) Example traces of de-noised single synaptic vesicle fusion events measured with V0a1-pHluorin, showing different dwell time lengths. Example traces after strong stimulation (40 Hz, 5 s) and folimycin treatment are shown in Figure 6—figure supplement 1. (J) Distribution of dwell time durations at 34°C and 2 mM extracellular Ca2+. Black line: double exponential decay fit (R-square = 0.837; RRS = 0.01181). Arrows: decay constants for the fast and slow component of the exponential. 95 boutons from six coverslips. (K) Distribution of dwell time durations at 34°C and 8 mM extracellular Ca2+. Black line: double exponential decay fit (R-square = 0.885; RRS = 0.009151). Arrows: decay constants for the fast and slow component of the exponential. (L) Pie charts depicting the ratio of each mode of retrieval respect to the total number of measured events, at 34°C and 2 or 8 mM extracellular Ca2+. Green: ultrafast retrieval (dwell time duration between 0 and 1 s). Blue: fast endocytosis (dwell time of 1 to 20 s). Yellow: ultra-slow retrieval (>20 s). For J to L. 140 boutons from six coverslips. Inset: cumulative histogram comparing the effect of different Ca2+ concentration at 34°C. Kolmogorov-Smirnov test of cumulative histogram: 34°C 2 mM Ca2+ vs. 34°C 8 mM Ca2+: p=0.0086.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/36097/elife-36097-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Example single action-potential evoked inhibitory post-synaptic currents (IPSC) for control (mock lentivirus infected neurons), V0a1 overexpression and V0a1-pHluorin expression. (B) IPSC amplitudes for control, Va01 and Va01-pHluorin groups are similar. (C) Normalized cumulative charge transfer of IPSC for control (blue line), V0a1 (red line) and V0a1-pHluorin (green line) groups showing no differences in the synchronicity of neurotransmission. (D) Paired-pulse ratio for IPSC at different inter-stimuli intervals, the same behavior was observed for control (blue line), V0a1 (red line) and V0a1-pHluorin (green line) groups. For A to D. Data from 16 control pyramidal neurons (hippocampal), 16 neurons overexpressing V0a1 and 10 neurons expressing V0a1-pHluorin, from 5 to 8 coverslips and four independent experiments (cultures). (E) Average fluorescence trace of V0a1-pHluorin expressing boutons after 40 Hz 200 AP (5 s) stimulation in the presence of the v-ATPase inhibitor folimycin (200 μM). Data show the average of traces from 14 boutons from one representative experiment. (F) Example of single vesicle fusion events in the absence and presence of folimycin (200 μM), stimulated at 0.05 Hz and recorded at room temperature and 2 mM extracellular Ca2+. (G) Histogram of amplitudes of single vesicle fusion events measured with Va01-pHluorin in the presence of folimycin (200 μM), showing a quantal distribution for both, 2 and 8 mM Ca2+ groups. 24°C – 2 mM Ca2+: 482 boutons from eight coverslips; 24°C – 8 mM Ca2+: 204 boutons from five coverslips.
+
+### Detection of synaptic vesicle retrieval at rapid image acquisition settings
 
 Our measurements suggest that the ultrafast endocytic mechanism occurs at an average speed of ~150–300 ms, consistent with the recent flash-and-freeze electron microscopy-based estimates of ultrafast endocytosis in hippocampal synapses (Watanabe et al., 2013). Although, these estimates are close to the Nyquist limit of detection based on our imaging speed of 10 Hz, our analysis of simulated single event traces (see Figure 2—figure supplement 1C–E) suggests that aliasing at this rate is not a major factor altering our measurements. Nevertheless, to address this potential concern, we repeated the experiments using vGluT1-pHluorin at an imaging speed of 40 Hz (Figure 7), taking advantage of the considerable improvement in signal-to-noise ratio and sensitivity added by signal de-noising (see negative controls and artificial traces test in Figure 7—figure supplement 1B–I). Example single synaptic vesicle fusion events are shown in Figure 7A. The distribution of dwell times calculated at 40 Hz imaging speed closely resembled those obtained at 10 Hz, with a peak at 200 ms and a double exponential behavior (Figure 7B–E). The mean endocytic speed for the ultrafast component of the distribution is ~150–250 ms, 3–5 times higher than the Nyquist limit. As observed before, at both 24°C and 34°C, endocytosis is slowed down by higher Ca2+ concentration, although this effect is more pronounced at room temperature and particularly for the fast endocytic component (at 24°C there is a ~50 and ~60% increase in decay time at 8 mM Ca2+ for the ultrafast and fast components, respectively, while at 34°C the change is ~20 and ~40%, respectively; see arrows in Figure 7B–E). Statistical analysis of the distributions corroborated this observation, demonstrating that the overall effect of Ca2+ rise in the whole event distribution is only significant at 24°C while the effect of temperature rise is significant exclusively at 8 mM extracellular Ca2+ concentration (insets in Figure 7D and E, and legend). As observed previously, temperature and Ca2+ did not have a major impact in the proportion of each mode of endocytosis (Figure 7F).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/36097/elife-36097-fig7-v2.jpg)
+
+**Figure 7.:** (A) Example traces for single vesicle fusion events after de-noising, measured with vGluT1-pHluorin imaging at a speed of 40 Hz. Arrows and insets: expansion of the peak showing dwell time lengths in detail. (B) Distribution of dwell time durations at 24°C and 2 mM extracellular Ca2+. Black line: double exponential decay fit (R-square = 0.8377; RRS = 0.00115). Arrows: decay constants for the ultrafast and fast component of the exponential. (C) Distribution of dwell time durations at 34°C and 2 mM extracellular Ca2+. Black line: double exponential decay fit (R-square = 0.7768; RRS = 0.00121). Arrows: decay constants for the ultrafast and fast component of the exponential. Inset: cumulative histogram comparing the effect of temperature on dwell times at 2 mM Ca2+, there is no significant effect. (D) Distribution of dwell time durations at 24°C and 8 mM extracellular Ca2+. Black line: double exponential decay fit (R-square = 0.8667; RRS = 0.00119). Arrows: decay constants for the ultrafast and fast component of the exponential. (E) Distribution of dwell time durations at 34°C and 8 mM extracellular Ca2+. Black line: double exponential decay fit (R-square = 0.770; RRS = 0.0023). Arrows: decay constants for the ultrafast and fast component of the exponential. Inset: cumulative histogram comparing the effect of temperature on dwell times at 8 mM Ca2+, **=p < 0.01. (F) Pie charts depicting the relative contribution of the three modes of retrieval to total endocytosis for all experimental groups. Green: ultrafast retrieval (dwell time duration between 0 and 1 s). Blue: fast endocytosis (dwell time of 1 to 20 s). Yellow: ultra-slow retrieval (>20 s). Note that the percentage of each type of endocytosis is not greatly affected by changes in Ca2+ or temperature. For B to E. Kolmogorov-Smirnov test: 24°C 2 mM Ca2+ vs. 24°C 8 mM Ca2+: p<0.0001; 34°C 2 mM Ca2+ vs. 34°C 8 mM Ca2+: p=0.0043; 24°C 2 mM Ca2+ vs 34°C 2 mM Ca2+: p=0.08271; 24°C 8 mM Ca2+ vs 34°C 8 mM Ca2+: p<0.0001. Kruskal-Wallis test: p<0.0001; Dunn’s post-test: 24°C 2 mM Ca2+ vs. 24°C 8 mM Ca2+: p<0.0001; 34°C 2 mM Ca2+ vs. 34°C 8 mM Ca2+: non-significant; 24°C 2 mM Ca2+ vs 34°C 2 mM Ca2+: non-significant; 24°C 8 mM Ca2+ vs 34°C 8 mM Ca2+: p<0.0001. For all the data presented in this figure: 24°C – 2 mM Ca2+: 558 boutons from eight coverslips; 24°C – 8 mM Ca2+: 474 boutons from seven coverslips; 34°C – 2 mM Ca2+: 327 boutons from seven coverslips; 34°C – 8 mM Ca2+: 209 boutons from five coverslips. At least three independent experiments (cultures). Also see Figure 7—figure supplement 1 for analysis of negative controls and simulated traces. Legends to the figure supplements.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/36097/elife-36097-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Comparison of original not processed vGluT1-pHluorin traces imaged at 40 Hz with the resulting signal after bleaching, background and noise corrections, at different Ca2+ concentrations and temperatures. The failure analysis used to quantify probability of release is exemplified. (B) Example of a fluorescence trace over time, before and after de-noising, of a negative control bouton from neurons pretreated with EGTA-AM 100 μM for 15 min in a 0 mM Ca2+ medium, and then imaged at 34°C with 0 mM extracellular Ca2+ and similar stimulation paradigm applied to the positive control group. (C) Cumulative histogram of probability of release measured at 34°C, for positive control boutons (2 mM extracellular Ca2+) and negative control group measured as described in B. The release probability of the negative control is <0.02, which corresponds to <15% of the mean release probability in the positive control group. Positive control: 418 boutons; Negative control – EGTA-AM: 120 boutons. All data are from 2 to 3 independent experiments. (D) and (E) Distribution of experimental noise amplitudes (empty circles) measured at 2 mM extracellular Ca2+ and 24°C or 34°C, respectively. Red lines: Gaussian fit. The noise distribution after de-noising is superimposed (grey histogram). Note the dramatic effect of the filtering in noise reduction. (F) Top: simulated fluorescence trace with a release probability of 0.5. Middle: simulated trace with added random Gaussian noise with an amplitude of ~75% the amplitude of the signal (to properly simulate real experimental traces). Bottom: recovered trace after de-noising, note that most of the fusion events are recovered with minimal morphological alterations. (G) Comparison of cumulative histograms of dwell times for the original simulated trace (before adding noise, shown in black) and for the recovered simulated trace after de-noising (shown in red). Insets: corresponding Tukey plots of dwell times and probability of detection. (H) Relative proportion of different types of simulated events (with no dwell, with a dwell followed by retrieval – including fast and ultrafast events –, with no retrieval – similar to ultra-slow endocytosis –) before (original simulated trace) and after de-noising (recovered), showing similar distribution. Note the presence of <15% contribution of false detection or false positives (yellow). For G and H. Data from two independent simulations with 100 boutons (traces) and 47 events per simulation.
 
 ## Discussion
 
@@ -79,43 +103,235 @@ The speed of endocytosis is a limiting step in the maintenance of synaptic trans
 
 ## Materials and methods
 
-## Dissociated hippocampal cultures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-GFP</td>
+      <td>Cell Signaling</td>
+      <td>Catalog # 29565</td>
+      <td>dil. 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-V0a1</td>
+      <td>Synaptic Systems</td>
+      <td>Catalog # 109 002</td>
+      <td>dil. 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Synapsin 1</td>
+      <td>EMD Millipore</td>
+      <td>Catalog # MABN894</td>
+      <td>dil. 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-GDI</td>
+      <td>Synaptic Systems</td>
+      <td>Catalog # 130 011</td>
+      <td>dil. 1:5000</td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>6-Cyano-7-nitroquinoxaline-2,3-dione disodium salt hydrate (CNQX)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog # C239</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>D(−)−2-Amino-5-phosphonopentanoic acid (AP-5)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog # A8054</td>
+      <td>50 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>Tetrodotoxin (TTX)</td>
+      <td>Enzo Life Sciences</td>
+      <td>Catalog # BML-NA120-0001</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>Picrotoxin (PTX)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog # P1675</td>
+      <td>50 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>Folimycin from Streptomyces sp.</td>
+      <td>Calbiochem/EMD</td>
+      <td>Catalog # 344085</td>
+      <td>200 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>Trypsin from bovine pancreas</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog # T9935</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>DNase</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog # D5025-375KU</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>Matrigel</td>
+      <td>Corning</td>
+      <td>Catalog # 354234</td>
+      <td>dil. 1:25</td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>FuGENE 6</td>
+      <td>Promega</td>
+      <td>Catalog # E2692</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical, compound, drug</td>
+      <td>QX-314</td>
+      <td>EMD-Millipore</td>
+      <td>Catalog # 552233</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>Highly transfectable derivative of human embryonic kidney-293 epithelial adherent cells (HEK293T)</td>
+      <td>ATCC</td>
+      <td>Catalog # CRL-1573</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Organism/Strain</td>
+      <td>Sprague-Dawley rat pups (P2-P4)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombi-nant DNA</td>
+      <td>Plasmid: pRSV-REV (lentiviral packaging)</td>
+      <td>Addgene</td>
+      <td>Catalog # 12253</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombi-nant DNA</td>
+      <td>Plasmid: pCMV-VSV-G (lentiviral packaging)</td>
+      <td>Addgene</td>
+      <td>Catalog # 8454</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombi-nant DNA</td>
+      <td>Plasmid: pMDLg/pRRE (lentiviral packaging)</td>
+      <td>Addgene</td>
+      <td>Catalog # 12251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombi-nant DNA</td>
+      <td>Plasmid: pFUGW-vGlut1-pHGFP</td>
+      <td>Voglmaier et al. (2006)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombi-nant DNA</td>
+      <td>Plasmid: pFU-Syp1-pHTomato</td>
+      <td>Li and Tsien (2012) Leitz and Kavalali (2011)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombi-nant DNA</td>
+      <td>Plasmid: pFUGW-Va01</td>
+      <td>(see Materials and methods section)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombi-nant DNA</td>
+      <td>Plasmid: pFUGW-Va01-pHluorin</td>
+      <td>(see Materials and methods section)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>Forward-backward non-linear filter: noise reduction (NoiseReduc) function for Matlab from Nigel Reuel</td>
+      <td>Chung and Kennedy (1991) Reuel et al. (2012)</td>
+      <td>http://web.mit.edu/stranogroup/index.php/resources/19-simulation-and-analysis-codes/norse-code-files/40-norse-algorithm.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software and Algorithms</td>
+      <td>Single-vesicle-fusion-events</td>
+      <td>Present work</td>
+      <td>https://github.com/nchanaday/Single-vesicle-fusion-events</td>
+      <td>Copy archived at https://github.com/elifesciences-publications/Single-vesicle-fusion-events</td>
+    </tr>
+  </tbody>
+</table>
+
+### Dissociated hippocampal cultures
 
 Postnatal day 2–4 Sprague-Dawley rats were used for the experiments. Both hippocampi were dissected in sterile conditions and posteriorly dissociated using 10 mg/ml trypsin and 0.5 mg/ml DNAase for 10 at 37°C. After careful trituration using a P1000 pipette, cells were resuspended to a concentration of 1 pups per 16 coverslips and plated onto 12 mm coverslip coated with 1:25 MEM:Matrigel solution. Basic growth medium consisted of MEM medium (no phenol red), 5 g/l D-glucose, 0.2 g/l NaHCO3, 100 mg/l transferrin, 5% of heat inactivated fetal bovine serum, 0.5 mM L-glutamine, 2% B-27 supplement, and 2–4 μM cytosine arabinoside. Cultures were kept in humidified incubators at 37°C and gassed with 95% air and 5% CO2.
 
-## Cloning
+### Cloning
 
 The super-ecliptic pHluorin was inserted between Gly-677 and Thr-678 of V0a1 from Mus musculus (Atp6v0a1 gene – UniProtKB database number Q9Z1G4). The construct was subcloned into pFU-GW lentiviral vector from Addgene.
 
-## Lentiviral infection
+### Lentiviral infection
 
 Lentiviruses were produced in HEK293T cells (catalog number CRL-1573; ATCC, Manassas, VA, US) by contransfection of pFUGW transfer vectors and three packaging plasmids (pCMV-VSV-G, pMDLg/pRRE, pRSV-Rev) using Fugene six transfection reagent (catalog number E2692; Promega, Madison, WI, US). The supernatants of the cultures were collected 72 hr after the transfection and clarified by centrifugation (2000 rpm 15 min), and subsequently used for infection of DIV four hippocampal neurons. All experiments were performed on 16–20 DIV cultures when synapses were mature and lentiviral expression of constructs of interest was optimal (Mozhayeva et al., 2002; Deák et al., 2006). All experiments were performed following protocols approved by the UT Southwestern Institutional Animal Care and Use Committee.
 
-## Western blotting
+### Western blotting
 
 Western blots were performed as described in Nosyreva and Kavalali (2010). Primary antibodies against GDI and V0a1 were used in 1:1000 and 1:500 dilution, respectively. Immunoreactive bands were visualized by enhanced chemiluminescence (ECL), captured on autoradiography film and analyzed using GelAnalyzer2010 software (http://www.gelanalyzer.com). V0a1 protein levels were normalized to GDI loading control.
 
-## Immunofluorescence
+### Immunofluorescence
 
 16–18 DIV neuron cultures were fixed for 10 min in PBS containing 4% para-formaldehyde (PFA) and processed for as previously described (Ramirez et al., 2008). Primary antibody against GFP was used to detect pHluorin-tagged proteins (1:200), antibody against V0a1 subunit of the V-ATPase was used to detect total V0a1 in control and V0a1-pHluorin expressing neurons (1:250), and anti-Synapsin1 antibody was used to detect presynaptic boutons (1:1000; control experiments were performed using Synaptobrevin two antibody to corroborate the results). Alexa-conjugated secondary antibodies (1:1000) were used to label the cells and then coverslips were mounted and imaged using an LSM 510 META confocal microscope (Carl Zeiss, Oberkochen, Germany) with a 63X (NA1.4) objective.
 
-## Electrophysiology
+### Electrophysiology
 
 Cultured pyramidal neurons between 14 to 18 DIV were used for whole cell recordings at a clamped voltage of −70 mV by means of Axopatch 200B and Clampex 8.0 software (Molecular Devices, San Jose, CA, US), filtering at 2 kHz and sampling at 5 kHz. The cells were visualized using a Nikon DIAPHOT 200 microscope (Nikon, Minato, Tokyo, Japan). The internal pipette solution contained 115 mM CsMeSO3, 10 mM CsCl, 5 m M NaCl, 10 mM HEPES, 0.6 mM EGTA, 20 mM tetraethylammonium chloride, 4 mM Mg-ATP, 0.3 mM Na2GTP and 10 mM QX-314 (lidocaine N-ethyl bromide). The final solution was adjusted to pH 7.3 and 304 mOsM. Final resistance of the electrode tips was ~3–6 MΩ. For all experiments, the extracellular solution was a modified Tyrode’s solution containing 150 mM NaCl, 4 mM KCl, 10 mM glucose, 10 mM HEPES, 2 mM MgCl2 and 2 mM CaCl2, adjusted to pH 7.4 and 310 mOsM. To isolate inhibitory postsynaptic currents, agonists of ionotropic glutamate receptors were added: 10 μM 6-cyano-7-nitroquinoxaline-2,3-dione (CNQX) and 50 μM aminophosphonopentanoic acid (AP-5). To isolate excitatory currents (AMPA-mediated) 50 μM AP-5 and 50 μM picrotoxin (PTX, ionotropic GABA receptor inhibitor) were added to the bath solution. To elicit evoked responses, electrical stimulation was delivered through parallel platinum electrodes with a constant current unit (WPI A385; World Precision Instruments, Sarasota, FL, US) set at 35 mA. Spontaneous activities (mIPSCs and mEPSCs) were recorded with the addition of 1 μM TTX. Miniature events were identified with a 5 pA detection threshold and analyzed with MiniAnalysis (Synaptosoft, Fort Lee, NJ, US).
 
-## Fluorescence imaging
+### Fluorescence imaging
 
 Cultured hippocampal neurons at 16–20 DIV transfected with either vGluT1-pHluorin, Syp1-pHTomato or V0a1-pHluorin were used for the imaging experiments. The modified Tyrode's buffer from above containing 2 or 8 mM Ca2+ was used with 10 μM CNQX and 50 μM AP-5 to prevent recurrent network activity. For experiments performed at ~34°C solutions were heated using a bipolar temperature controller (CL-1000) attached to a multi-line solution heater (SHM-828; Warner Instruments, Hamden, CT). The objective was heated with an objective collar connected to a single channel temperature controller (H401-T-SINGLE-BL; Okolab, Shanghai, China), and the stage and microscope were isolated from the room with a protective case to minimize temperature variances. Fluorescence was recorded using a Nikon Eclipse TE2000-U microscope with a 100X Plan Fluor objective (Nikon, Minato, Tokyo, Japan) attached to an Andor iXon + back illuminated EMCCD camera (Model no. DU-897E-CSO-#BV; Andor Technology, Belfast, UK). For illumination, we used a Lambda-DG4 illumination system (Sutter Instruments, Novato, CA, US) with a FITC or TRITC filter. Images were acquired at 10 or 40 Hz with binning of 4 by four to optimize the signal-to-noise ratio. Neurons were stimulated using parallel bipolar electrodes (FHC, Bowdoin, ME, US) delivering 35 mA pulses at 20 s intervals, followed by a rest period prior to the delivery of 200 APs at 40 Hz. Boutons were visualized by the addition of Tyrode’s solution with 50 mM NH4Cl at the end of each experiment. Circular regions of interests (ROIs) of 2.27 μm diameter were automatically drawn around local fluorescence maximums using a custom-made macro for Fiji (Schindelin et al., 2012) and the fluorescent traces obtained were exported to Matlab (Mathworks, Natick, MA, US) for analysis.
 
 To calculate surface versus intracellular distribution of V0a1-pHluorin, we perfused a modified Tyrode’s solution at pH = 5.5 (buffered by MES instead of HEPES) to quench surface pHluorin and recorded for 30 s. After imaging putative boutons for another 30 s, a modified Tyrode’s solution containing 50 mM NH4Cl was perfused for 30 s, in order to alkalinize all compartments. The difference of the mean fluorescence during acid buffer perfusion and normal Tyrode’s solution correspond to the surface pool of pHluorin, while the difference in mean fluorescence between NH4Cl perfusion and normal Tyrode’s solution correspond to the internal pool of pHluorin.
 
-## Fluorescence analysis
+### Fluorescence analysis
 
 Fluorescence intensity traces were analyzed using a custom made Matlab script (Chanaday, 2018; https://github.com/nchanaday/Single-vesicle-fusion-events; copy archived at https://github.com/elifesciences-publications/Single-vesicle-fusion-events), based on our previous analysis with some modifications (Leitz and Kavalali, 2011). Photobleaching was corrected with a single exponential decay and background was subtracted linearly, both photobleaching and background values were calculated based on fluorescence measurements of background in each imaging experiment and also for each ROI. De-noising was performed using a time-domain forward-backward non-linear filter developed originally by Chung and Kennedy (1991) and implemented for Matlab by Nigel Reuel (Reuel et al., 2012). Minor changes were made to the code in order to improve de-noising of our data, based on the original paper by Chung and Kennedy (1991). To find single vesicle fusion events, successful events were defined as those whose fluorescence amplitude was greater than three times the standard deviation of the baseline (average of ~2 s prior to the event). To avoid multivesicular fusion events, the upper limit was set at the mean value of single event amplitude plus half the difference between the mean single vesicle amplitude and the mean of the next amplitude peak in the distribution (corresponding to two quantums). This value was calculated comparing amplitude distributions for experiments performed in different extracellular Ca2+ concentration with or without TTX and with or without folymicin. Also, the event time has to be coincident with the time of stimulation. Dwell times were calculated as the time between the initial fluorescence step and the start of fluorescence decay defined as a switch to negative values of the first derivative. For 40 Hz stimulation, amplitude measurement, single exponential decay fitting and rise slope linear fitting were also performed in an automatized way using Matlab (Mathworks, Natick, MA, US).
 
 The authors are open to share the Matlab script developed by our lab for the analysis of single synaptic vesicle fusion and endocytosis events used in the present work, upon request to ETK or NLC.
 
-## Statistical analysis
+### Statistical analysis
 
 Histograms of single vesicle dwell time distributions were fitted using Matlab and OriginPro 8.1 (OriginLab, Northampton, MA, US), to corroborate the results. The comparison of reduced R-square and F (from F test) values between single exponential decay and double exponential decay fittings revealed a better fit (higher R-square and F values) for the double exponential model. R-square and residuals are informed in the figure legends.
 

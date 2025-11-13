@@ -17,7 +17,7 @@
 
 ## Abstract
 
-Acoustic overexposure and aging can damage auditory synapses in the inner ear by a process known as synaptopathy. These insults may also damage hair bundles and the sensory transduction apparatus in auditory hair cells. However, a connection between sensory transduction and synaptopathy has not been established. To evaluate potential contributions of sensory transduction to synapse formation and development, we assessed inner hair cell synapses in several genetic models of dysfunctional sensory transduction, including mice lacking transmembrane channel-like ( Tmc ) 1 , Tmc2 , or both, in Beethoven mice which carry a dominant Tmc1 mutation and in Spinner mice which carry a recessive mutation in transmembrane inner ear ( Tmie ). Our analyses reveal loss of synapses in the absence of sensory transduction and preservation of synapses in Tmc1 -null mice following restoration of sensory transduction via Tmc1 gene therapy. These results provide insight into the requirement of sensory transduction for hair cell synapse development and maturation.
+Acoustic overexposure and aging can damage auditory synapses in the inner ear by a process known as synaptopathy. These insults may also damage hair bundles and the sensory transduction apparatus in auditory hair cells. However, a connection between sensory transduction and synaptopathy has not been established. To evaluate potential contributions of sensory transduction to synapse formation and development, we assessed inner hair cell synapses in several genetic models of dysfunctional sensory transduction, including mice lacking transmembrane channel-like (Tmc) 1, Tmc2, or both, in Beethoven mice which carry a dominant Tmc1 mutation and in Spinner mice which carry a recessive mutation in transmembrane inner ear (Tmie). Our analyses reveal loss of synapses in the absence of sensory transduction and preservation of synapses in Tmc1-null mice following restoration of sensory transduction via Tmc1 gene therapy. These results provide insight into the requirement of sensory transduction for hair cell synapse development and maturation.
 
 ## Introduction
 
@@ -31,47 +31,47 @@ Our analyses reveal an unanticipated and complex relationship between sensory tr
 
 ## Results
 
-## Tmc deletion alters synapse development and maturation
+### Tmc deletion alters synapse development and maturation
 
 To determine whether initial ribbon formation was influenced by the presence of functional mechanosensory transduction channels, the number of CtBP2-positive puncta per IHC was quantified in five wild-type (WT) and six Tmc1Δ/Δ;Tmc2Δ/Δ mice at postnatal day 2 (P2) from cochlear regions corresponding to 8, 11.3, 16, 22.6, and 32 kHz. Counts of CtBP2-positive puncta were similar in both groups of mice and to those previously reported for WT C57/BL6 mice at P2 (Huang et al., 2012). No significant differences in counts were observed between WT and Tmc1Δ/Δ;Tmc2Δ/Δ groups across all frequency regions (Figure 1, Supplementary file 1), suggesting the initial formation of presynaptic ribbon precursors is independent of the acquisition of sensory transduction, which begins at the base at P0 and progresses tonotopically toward the apex by P4 (Lelli et al., 2009).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/69433/elife-69433-fig1-v2.jpg)
 
-**Figure 1.:** Tmc1 mice lacking sensory transduction are similar to those in wild-type (WT) mice at postnatal day 2 (P2).Δ/Δ;Tmc2Δ/Δ(A) Representative 3D projections of confocal z-stacks of P2 WT and Tmc1 (Δ/Δ;Tmc2Δ/ΔB) inner hair cells (IHCs) from the 16 kHz region. Scale bar: 7 µm. The tissue was immunostained with anti-Myosin7a (blue) and anti-CtBP2 (red). (C) To determine a mean number of ribbon precursors/IHC, the total number of CtBP2+ puncta from 8 to 10 IHCs was counted for each frequency region. Individual points represent counts from one mouse. Data from WT (black; n = 5) and Tmc1 (red; n = 5–6) groups are illustrated. Bold lines indicate mean ± SD.Δ/Δ; Tmc2Δ/ΔFigure 1—source data 1.Tmc1 mice lacking sensory transduction are similar to those in wild-type (WT) mice at postnatal day 2 (P2).Δ/Δ;Tmc2Δ/Δ
+**Figure 1.:** (A) Representative 3D projections of confocal z-stacks of P2 WT and Tmc1Δ/Δ;Tmc2Δ/Δ (B) inner hair cells (IHCs) from the 16 kHz region. Scale bar: 7 µm. The tissue was immunostained with anti-Myosin7a (blue) and anti-CtBP2 (red). (C) To determine a mean number of ribbon precursors/IHC, the total number of CtBP2+ puncta from 8 to 10 IHCs was counted for each frequency region. Individual points represent counts from one mouse. Data from WT (black; n = 5) and Tmc1Δ/Δ; Tmc2Δ/Δ (red; n = 5–6) groups are illustrated. Bold lines indicate mean ± SD.
 
 To assess the consequences of Tmc1 and Tmc2 deletion on synaptic development, ribbon synapses were further evaluated at P7, P14, and P28 in WT and Tmc1Δ/Δ;Tmc2Δ/Δ mice. These three timepoints were selected to encompass events crucial to the maturation of the inner ear with P7 following acquisition and maturation of IHC sensory transduction, P14 following hearing onset in mice, and P28 reflecting the nearly mature organ of Corti and auditory function. For each timepoint and cochlear region, the average number of synapses per IHC was estimated by counting the total number of presynaptic CtBP2 juxtaposed to postsynaptic GluA2 puncta, divided by the number of IHCs sampled in each region (Figure 2).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/69433/elife-69433-fig2-v2.jpg)
 
-**Figure 2.:** Tmc1 mice relative to wild-type (WT) mice.Δ/Δ;Tmc2Δ/Δ(A–B) Representative image of P7 WT and Tmc1 inner hair cells (IHCs) from 16 kHz region immunostained for anti-Myosin7a (gray), anti-CtBP2 (red), and anti-GluA2 (green). Higher magnification images are shown below. (Δ/Δ;Tmc2Δ/ΔC–D) P28 WT and Tmc1 IHCs from 16 kHz region. Scale bars: 10 µm (upper) and 5 µm (lower).Δ/Δ;Tmc2Δ/Δ
+**Figure 2.:** (A–B) Representative image of P7 WT and Tmc1Δ/Δ;Tmc2Δ/Δ inner hair cells (IHCs) from 16 kHz region immunostained for anti-Myosin7a (gray), anti-CtBP2 (red), and anti-GluA2 (green). Higher magnification images are shown below. (C–D) P28 WT and Tmc1Δ/Δ;Tmc2Δ/Δ IHCs from 16 kHz region. Scale bars: 10 µm (upper) and 5 µm (lower).
 
 While ribbon counts were unaltered in P2 Tmc1Δ/Δ;Tmc2Δ/Δ mice, the lack of Tmc1 and Tmc2 resulted in elevated synapse counts at P7 across all frequency regions relative to those in WT mice (Figure 3A, Supplementary file 2A). There were ~43% more synapses in Tmc1Δ/Δ;Tmc2Δ/Δ mice, suggesting there may be a correlation between the developmental acquisition of sensory transduction in IHCs during the first postnatal week and the developmental increase in the number of ribbons and postsynaptic densities. In WT mice, ~50% of ribbon synapses are lost between the end of the first and second postnatal weeks (Sundaresan et al., 2016). This decrease is thought to result from pruning, refinement, and fusion of ribbons and postsynaptic densities (Michanski et al., 2019; Sundaresan et al., 2016; Wong et al., 2014; Huang et al., 2012; Sendin et al., 2007). Consistent with these findings, we found a 46–57% reduction in synapses counts in WT mice between P7 and P14 between 8 and 32 kHz. In Tmc1Δ/Δ;Tmc2Δ/Δ mice, a more drastic decrease in synapse counts was evident during the second postnatal week. The number of synapses decreased by 67 to 73% at P14 relative to P7 between 8 and 32 kHz (Figure 3A and B). As a result, synapse numbers at P14 did not differ significantly between WT and Tmc1Δ/Δ;Tmc2Δ/Δ groups except at the 32 kHz region where Tmc1Δ/Δ;Tmc2Δ/Δ mice exhibited ~27% fewer synapse counts (Figure 3B, Supplementary file 2B).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/69433/elife-69433-fig3-v2.jpg)
 
-**Figure 3.:** Tmc1 and Tmc2 and diminished at P28 in the absence of Tmc1 and Tmc2 or Tmc1 alone.(A–C) The mean number of synapses/inner hair cell (IHC) was calculated for each frequency region. Data from wild-type (WT) (black), Tmc1 (red), Δ/Δ;Tmc2Δ/ΔTmc1 (blue), and Δ/ΔTmc2 (dark yellow) groups are shown. Individual points represent counts from one mouse. Temporal changes in synapse counts differed by genotype (two-way ANOVA; p < 0.001 based on two-way interaction between genotype and timepoints for all frequencies; Δ/ΔSupplementary file 3A). However, genotype-specific trajectories of synaptic development did not vary by frequency (three-way ANOVA; p = 0.73 based on three-way interaction between group, time, frequency; Supplementary file 3A). Bolded lines depict mean ± SD. Black horizontal bars and asterisks represent statistically significant differences between group means (multiple pairwise comparisons, *p < 0.05, **p < 0.01, ***p < 0.001; p values are listed in Supplementary file 2A-C). Number of cochleas: 4–9 WT, 5–12 Tmc1, 4 Δ/Δ;Tmc2Δ/ΔTmc1, 4–5 Δ/ΔTmc2.Δ/ΔFigure 3—source data 1.Tmc1 and Tmc2 and diminished at P28 in the absence of Tmc1 and Tmc2 or Tmc1 alone.
+**Figure 3.:** (A–C) The mean number of synapses/inner hair cell (IHC) was calculated for each frequency region. Data from wild-type (WT) (black), Tmc1Δ/Δ;Tmc2Δ/Δ (red), Tmc1Δ/Δ (blue), and Tmc2Δ/Δ (dark yellow) groups are shown. Individual points represent counts from one mouse. Temporal changes in synapse counts differed by genotype (two-way ANOVA; p < 0.001 based on two-way interaction between genotype and timepoints for all frequencies; Supplementary file 3A). However, genotype-specific trajectories of synaptic development did not vary by frequency (three-way ANOVA; p = 0.73 based on three-way interaction between group, time, frequency; Supplementary file 3A). Bolded lines depict mean ± SD. Black horizontal bars and asterisks represent statistically significant differences between group means (multiple pairwise comparisons, *p < 0.05, **p < 0.01, ***p < 0.001; p values are listed in Supplementary file 2A-C). Number of cochleas: 4–9 WT, 5–12 Tmc1Δ/Δ;Tmc2Δ/Δ, 4 Tmc1Δ/Δ, 4–5 Tmc2Δ/Δ.
 
 Following hearing onset in WT mice, ribbon synapse counts remain stable into adulthood (Michanski et al., 2019; Huang et al., 2012). As expected, our WT synapse counts did not differ significantly between P14 and P28 in any of the frequency regions examined (Figure 3B and C). However, synapse counts were markedly decreased in P28 Tmc1Δ/Δ;Tmc2Δ/Δ mice relative to WT mice and relative to P14 Tmc1Δ/Δ;Tmc2Δ/Δ numbers at all frequencies (Figure 3C, Supplementary file 2C). Though synapse counts remain stable in WT mice post-hearing onset, changes in the distribution of ribbon sizes and continued reduction in the sizes of presynaptic/postsynaptic densities are observed until their full development around P34 (Payne et al., 2021). As with the abnormally elevated synapse counts at P7 in Tmc1Δ/Δ;Tmc2Δ/Δ mice, the rapid loss of more mature ribbon synapses further suggests a role for sensory transduction in the development of synapses.
 
-## Synapse counts in Tmc single knockouts differ from those of double knockouts
+### Synapse counts in Tmc single knockouts differ from those of double knockouts
 
 Since Tmc2 expression coincides with the developmental onset of sensory transduction in OHCs (Lelli et al., 2009; Kawashima et al., 2011) and IHCs (Pan et al., 2013) at P0 in the base and P2-P4 in the apex and is followed several days later by expression of Tmc1, we wondered whether genetic deletion of Tmc2 would cause a delay in the developmental pattern of synapse development. In addition, to determine whether the changes observed in Tmc1Δ/Δ;Tmc2Δ/Δ synapses were due to deletion of Tmc1, we examined synapses in single knockouts of Tmc1 or Tmc2. At P7 and P14, synapse counts in neither Tmc1Δ/Δ nor Tmc2Δ/Δ mice differed significantly from those of WT mice across all frequencies (Figure 3A and B, Supplementary file 2A and B), suggesting that expression of either Tmc1 or Tmc2 was sufficient for acquisition of normal synapse counts and juxtaposition of presynaptic ribbons and their postsynaptic densities. However, it remains possible that synaptic function and development are altered in mice lacking Tmc1, Tmc2, or both in ways that cannot be captured by immunohistochemistry and synapse counts alone.
 
 At P28, there was a significant deviation in the number of synapses observed between Tmc1Δ/Δ and Tmc2Δ/Δ groups. Synapse counts in Tmc1Δ/Δ mice were significantly reduced compared to WT mice and similar to those of Tmc1Δ/Δ;Tmc2Δ/Δ mice at all frequencies (Figure 3C, Supplementary file 2C). Synapse counts in Tmc2Δ/Δ mice, on the other hand, were not different from those in WT mice at any of the frequencies (Figure 3C, Supplementary file 2C). Thus, it appears the absence of Tmc1 specifically, in Tmc1Δ/Δ and Tmc1Δ/Δ;Tmc2Δ/Δ mice, accounts for the loss of synapses after hearing onset.
 
-## Tmie deletion leads to loss of synapses
+### Tmie deletion leads to loss of synapses
 
 While the results obtained from Tmc1Δ/Δ, Tmc2Δ/Δ, and Tmc1Δ/Δ;Tmc2Δ/Δ mice implicated a role for sensory transduction in the development and maturation of ribbon synapses, the possibility of ribbon synapses being affected by targeted deletion of Tmc1, Tmc2, or both via a mechanism unrelated to inhibition of sensory transduction remained a possibility. To determine whether the change in synapse counts was a specific consequence of Tmc deletion or a general consequence of the loss of sensory transduction, we investigated deletion of a different gene known to cause loss of hair cell sensory transduction. Synapses were counted in Spinner mice, which carry a spontaneous nonsense mutation at the Tmie locus (Tmiesr) (Mitchem et al., 2002). TMIE encodes transmembrane inner ear protein, which is an essential component of the transduction channel complex (Gleason et al., 2009; Shen et al., 2008; Zhao et al., 2014). While loss of functional TMIE in homozygous Spinner mice causes complete absence of sensory transduction (Zhao et al., 2014) and mislocalization of TMC proteins (Pacentine and Nicolson, 2019; Cunningham et al., 2020), it does not affect TMC expression (Cunningham et al., 2020). As shown in Figure 4A, Tmiesr synapse counts at P7 were significantly elevated compared to WT mice. There were no significant differences between Tmiesr and Tmc1Δ/Δ;Tmc2Δ/Δ synapse counts in any frequency region (Figure 4A, Supplementary file 4A). At P28, Tmiesr mice showed decreased synapse counts at all frequencies, with values that did not differ significantly from those in Tmc1Δ/Δ;Tmc2Δ/Δ mice (Figure 4B, Supplementary file 4B). The similarities in synapse counts in Tmc1Δ/Δ;Tmc2Δ/Δ and Tmiesr mice at P7 and P28 provide compelling evidence that the loss of normal synapse development and maturation is a consequence of the absence of sensory transduction and not disruption of a specific gene.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/69433/elife-69433-fig4-v2.jpg)
 
-**Figure 4.:** Tmc1 and Tmc2 specifically, results in the synaptic differences observed at postnatal day 7 (P7) and P28.(A–C) The mean number of synapses/inner hair cell (IHC) at each frequency region. Data from wild-type (WT) (black), Tmc1 (red), Δ/Δ;Tmc2Δ/ΔTmc1 (blue), Δ/ΔTmie (purple), and srTmc1 (gold) groups are shown. WT, BthTmc1, and Δ/ΔTmc1 data are the same as those depicted in Δ/Δ;Tmc2Δ/ΔFigure 3, reprinted here to facilitate comparison. Individual points represent counts from one mouse. In A and B two-way interactions between genotype and timepoints were statistically significant for all frequencies based on two-way ANOVA (p < 0.001; Supplementary file 3B), suggesting the trajectory of synaptic development varies by genotype. The genotype-specific trajectory of synaptic development did not vary by frequency (three-way ANOVA; p = 0.68 based on three-way interaction between genotype, timepoints, and frequency; Supplementary file 3B). Frequency-specific synapse counts differed by genotype in C (two-way ANOVA; p = 0.002 based on two-way interaction between genotype and frequency; Supplementary file 3B). Bolded lines depict mean ± SD. Black horizontal bars and asterisks represent statistically significant differences in group means (multiple pairwise comparisons, *p < 0.05, **p < 0.01, ***p < 0.001; exact p values listed in Supplementary file 4A-C). Number of cochleas: 4 WT, 5–12 Tmc1, 4 Δ/Δ;Tmc2Δ/ΔTmc1, 5–6 Δ/ΔTmie, 4–6 srTmc1.BthFigure 4—source data 1.Tmc1 and Tmc2 specifically, results in the synaptic differences observed at postnatal day 7 (P7) and P28.
+**Figure 4.:** (A–C) The mean number of synapses/inner hair cell (IHC) at each frequency region. Data from wild-type (WT) (black), Tmc1Δ/Δ;Tmc2Δ/Δ (red), Tmc1Δ/Δ (blue), Tmiesr (purple), and Tmc1Bth (gold) groups are shown. WT, Tmc1Δ/Δ, and Tmc1Δ/Δ;Tmc2Δ/Δ data are the same as those depicted in Figure 3, reprinted here to facilitate comparison. Individual points represent counts from one mouse. In A and B two-way interactions between genotype and timepoints were statistically significant for all frequencies based on two-way ANOVA (p < 0.001; Supplementary file 3B), suggesting the trajectory of synaptic development varies by genotype. The genotype-specific trajectory of synaptic development did not vary by frequency (three-way ANOVA; p = 0.68 based on three-way interaction between genotype, timepoints, and frequency; Supplementary file 3B). Frequency-specific synapse counts differed by genotype in C (two-way ANOVA; p = 0.002 based on two-way interaction between genotype and frequency; Supplementary file 3B). Bolded lines depict mean ± SD. Black horizontal bars and asterisks represent statistically significant differences in group means (multiple pairwise comparisons, *p < 0.05, **p < 0.01, ***p < 0.001; exact p values listed in Supplementary file 4A-C). Number of cochleas: 4 WT, 5–12 Tmc1Δ/Δ;Tmc2Δ/Δ, 4 Tmc1Δ/Δ, 5–6 Tmiesr, 4–6 Tmc1Bth.
 
-## Altered sensory transduction permeability is inconsequential for synapses
+### Altered sensory transduction permeability is inconsequential for synapses
 
 To explore whether the changes in synapses were the result of calcium entry through sensory transduction channels, we performed a similar analysis in Beethoven mice with a dominant mutation in Tmc1. IHCs in Tmc1Bth mice (Vreugde et al., 2002) have normal sensory transduction current amplitudes, but reduced calcium permeability relative to control IHCs (Pan et al., 2013; Beurg et al., 2015; Corns et al., 2016). Marcotti et al., 2006 reported Tmc1Bth hair cells have normal resting potentials but altered basolateral currents, leading Pan et al., 2013 to speculate that altered calcium permeability in Tmc1Bth hair cell may have consequences for basolateral hair cell functions, perhaps including synapse development and maturation. No significant differences in P28 synapse counts were evident between Tmc1Bth and WT groups except in the 32 kHz region (Figure 4C, Supplementary file 4C), suggesting reduced calcium entry via sensory transduction channels does not cause a significant loss of ribbon synapses. However, the difference observed in the 32 kHz region suggests a tonotopic role for calcium signaling cannot be discounted.
 
-## Restoration of sensory transduction preserves auditory synapses
+### Restoration of sensory transduction preserves auditory synapses
 
 Next, we wondered whether gene therapy restoration of sensory transduction could prevent synapse loss. Recent inner ear gene therapy studies have demonstrated the efficacy of a novel utricle injection technique and a synthetic AAV9-PHP.B capsid for transducing nearly 100% of cochlear hair cells with high specificity (Lee et al., 2020) and restoring ABR thresholds with WT Tmc1 injected into Tmc1Δ/Δ mouse inner ears (Wu et al., 2021). Although AAV-mediated gene therapy for otoferlin, a synaptic protein, has demonstrated recovery of auditory synapses (Akil et al., 2019; Al-Moyed et al., 2019), the consequences of Tmc1 gene therapy on auditory synapses has not been assessed. To characterize the consequences of Tmc1 gene therapy on IHC synapses, 12 Tmc1Δ/Δ mice were injected at P1 with AAV9-PHP.B-Tmc1 via the utricle and ABRs/synapses were assessed at P28.
 
@@ -79,13 +79,13 @@ At P28, Tmc1Δ/Δ mice are profoundly deaf with no measurable ABR thresholds up 
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/69433/elife-69433-fig5-v2.jpg)
 
-**Figure 5.:** Tmc1 restores ABR thresholds in Tmc1 mice.Δ/Δ(A) Representative ABR waveforms recorded at postnatal day 28 (P28) using 16 kHz tone bursts at sound pressure levels of increasing 5 dB increments. Waveforms from uninjected Tmc1 mouse (left), three Δ/ΔTmc1 mice injected with AAV9-PHP.B-Δ/ΔTmc1, representing best (green), average (blue), and worst (red) recovery and one wild-type (WT) control (black) are shown. Thresholds determined by the presence of Peak 1 and indicated by bolded, colored traces. (B) ABR thresholds plotted as a function of stimulus frequency for 12 Tmc1 mice injected with AAV9-PHP.B-Δ/ΔTmc1 tested at P28 (gray traces). Mice with the best (green), median (blue), and worst (red) recovery are indicated and correspond to the best, average, and worst traces in (A). Black dotted lines show mean ± SD thresholds from eight previously tested WT mice. Green dotted line shows mean ± SD thresholds from the 12 injected mice. (C) Peak 1 amplitudes measured from 16 kHz ABR waveforms (A) for 12 Tmc1 mice injected with AAV9-PHP.B-Δ/ΔTmc1. Colors correspond to conditions indicated in B. (D) Peak 1 latencies measured from 16 kHz ABR waveforms (A) for 12 Tmc1 mice injected with AAV9-PHP.B-Δ/ΔTmc1. Colors correspond to conditions indicated in B.Figure 5—source data 1.B-Tmc1 restores ABR thresholds in Tmc1 mice.Δ/Δ
+**Figure 5.:** (A) Representative ABR waveforms recorded at postnatal day 28 (P28) using 16 kHz tone bursts at sound pressure levels of increasing 5 dB increments. Waveforms from uninjected Tmc1Δ/Δ mouse (left), three Tmc1Δ/Δ mice injected with AAV9-PHP.B-Tmc1, representing best (green), average (blue), and worst (red) recovery and one wild-type (WT) control (black) are shown. Thresholds determined by the presence of Peak 1 and indicated by bolded, colored traces. (B) ABR thresholds plotted as a function of stimulus frequency for 12 Tmc1Δ/Δ mice injected with AAV9-PHP.B-Tmc1 tested at P28 (gray traces). Mice with the best (green), median (blue), and worst (red) recovery are indicated and correspond to the best, average, and worst traces in (A). Black dotted lines show mean ± SD thresholds from eight previously tested WT mice. Green dotted line shows mean ± SD thresholds from the 12 injected mice. (C) Peak 1 amplitudes measured from 16 kHz ABR waveforms (A) for 12 Tmc1Δ/Δ mice injected with AAV9-PHP.B-Tmc1. Colors correspond to conditions indicated in B. (D) Peak 1 latencies measured from 16 kHz ABR waveforms (A) for 12 Tmc1Δ/Δ mice injected with AAV9-PHP.B-Tmc1. Colors correspond to conditions indicated in B.
 
 Following ABR recording, injected cochleas were immediately harvested and stained for synapses. Average synapse counts were greater in injected Tmc1Δ/Δ mice at all frequency regions (11.3 kHz p = 0.008, 16 kHz p = 0.001, 22.6 kHz p = 0.008, 32 kHz p = 0.012) except at 8 kHz (p = 0.377), than in uninjected Tmc1Δ/Δ mice (Figure 6A, Supplementary file 6A). Synapse counts were variable across injected mice, similar to ABR threshold recoveries. However, we did note a correlation between the level of ABR threshold recovery and the number of synapses/IHC. We calculated pure tone average (PTA) thresholds from 8 to 22.6 kHz and plotted the values as a function of average number of IHC synapses across the corresponding cochlear region for 12 mice (Figure 6B). The data were fit with a linear regression (r = 0.86) which indicated a statistically significant correlation (p = 0.00032) with an improvement of PTA threshold by 13 dB/synapse. The increased synapse counts in Tmc1Δ/Δ mice injected with AAV9-PHP.B-Tmc1 provide a novel line of evidence supporting the potential for Tmc1 gene therapy in preserving ribbon synapses, a requirement for normal auditory function.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/69433/elife-69433-fig6-v2.jpg)
 
-**Figure 6.:** Tmc1 preserves synapse counts and ribbon volume distributions in Tmc1 mice.Δ/Δ(A) The mean number of synapses/inner hair cell (IHC) was counted at each frequency region from postnatal day 28 (P28) wild-type (WT) (black), Tmc1Δ/Δ (blue), and injected Tmc1 (green) mice. WT and Δ/ΔTmc1 ribbon counts are the same as those depicted in Δ/ΔFigure 3. Individual points represent counts from one mouse. Frequency-specific synapse counts did not differ by group (two-way ANOVA; p = 0.49 based on two-way interaction between genotype and frequency; Supplementary file 3C). Bolded lines indicate mean ± SD. Black horizontal bars and asterisks represent statistically significant differences in group means (multiple pairwise comparisons, *p < 0.05, **p < 0.01, ***p < 0.001). Number of cochleas: 4 WT, 4 Tmc1 cochleas, 11–12 injected Δ/ΔTmc1 cochleas. (Δ/ΔB) Pure tone average (PTA) thresholds were calculated for frequencies between 8 and 22.6 kHz for 12 Tmc1 mice injected with 1 µL AAV9-PHP.B-Δ/ΔTmc1 at P1. PTA thresholds were plotted as a function of the mean synapses/IHC (circles) based on synapse counts from corresponding cochlear regions. The data were fitted with a linear regression (red line) that had a slope of 13 dB/synapse, a correlation coefficient of 0.86; p = 0.00032. (C) Histograms showing distributions of ribbon volumes from confocal z-stacks plotted for each frequency region. Scale bars indicate volume counts on the Y-axis and ribbon volumes in µm3 on the X-axis. Data were obtained from four P28 WT (gray) cochleas, four Tmc1 (blue) cochleas, and four injected Δ/ΔTmc1 (green) cochleas for each of the 8–32 kHz regions.Δ/ΔFigure 6—source data 1.B-Tmc1 preserves synapse counts and ribbon volume distributions in Tmc1 mice.Δ/Δ
+**Figure 6.:** (A) The mean number of synapses/inner hair cell (IHC) was counted at each frequency region from postnatal day 28 (P28) wild-type (WT) (black), Tmc1Δ/Δ (blue), and injected Tmc1Δ/Δ (green) mice. WT and Tmc1Δ/Δ ribbon counts are the same as those depicted in Figure 3. Individual points represent counts from one mouse. Frequency-specific synapse counts did not differ by group (two-way ANOVA; p = 0.49 based on two-way interaction between genotype and frequency; Supplementary file 3C). Bolded lines indicate mean ± SD. Black horizontal bars and asterisks represent statistically significant differences in group means (multiple pairwise comparisons, *p < 0.05, **p < 0.01, ***p < 0.001). Number of cochleas: 4 WT, 4 Tmc1Δ/Δ cochleas, 11–12 injected Tmc1Δ/Δ cochleas. (B) Pure tone average (PTA) thresholds were calculated for frequencies between 8 and 22.6 kHz for 12 Tmc1Δ/Δ mice injected with 1 µL AAV9-PHP.B-Tmc1 at P1. PTA thresholds were plotted as a function of the mean synapses/IHC (circles) based on synapse counts from corresponding cochlear regions. The data were fitted with a linear regression (red line) that had a slope of 13 dB/synapse, a correlation coefficient of 0.86; p = 0.00032. (C) Histograms showing distributions of ribbon volumes from confocal z-stacks plotted for each frequency region. Scale bars indicate volume counts on the Y-axis and ribbon volumes in µm3 on the X-axis. Data were obtained from four P28 WT (gray) cochleas, four Tmc1Δ/Δ (blue) cochleas, and four injected Tmc1Δ/Δ (green) cochleas for each of the 8–32 kHz regions.
 
 Lastly, we wondered whether the distribution of ribbon volumes was altered by loss and recovery of sensory transduction. Confocal z-stacks of cochleas stained with GluA2 and CtBP2 were acquired using Zeiss Airyscan from four WT mice, four uninjected Tmc1Δ/Δ mice, and four injected Tmc1Δ/Δ mice with the best ABR threshold recovery and synapse count preservation. For each z-stack, ribbon volumes were calculated using the ‘Surfaces’ module in Imaris.
 
@@ -99,7 +99,7 @@ We began with Tmc1Δ/Δ;Tmc2Δ/Δ mice, which fail to acquire sensory transducti
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/69433/elife-69433-fig7-v2.jpg)
 
-**Figure 7.:** (A) Number of synapses/IHC from the 32 kHz region of wild-type (WT), Tmc1, Δ/Δ;Tmc2Δ/ΔTmc1, and Δ/ΔTmc2 cochleas as a function of age. (Δ/ΔB) Schematic diagram summarizing changes in IHC synapses between postnatal day 7 (P7) and P28 in five genetic models.
+**Figure 7.:** (A) Number of synapses/IHC from the 32 kHz region of wild-type (WT), Tmc1Δ/Δ;Tmc2Δ/Δ, Tmc1Δ/Δ, and Tmc2Δ/Δ cochleas as a function of age. (B) Schematic diagram summarizing changes in IHC synapses between postnatal day 7 (P7) and P28 in five genetic models.
 
 In WT mice, the number of synapses progressively increases and then undergoes a reduction during the second postnatal week until the onset of hearing (Sundaresan et al., 2016; Wong et al., 2014; Huang et al., 2012; Sendin et al., 2007). While the reduction of synapses still occurred in our Tmc1Δ/Δ;Tmc2Δ/Δ mice, the lack of sensory transduction led to a larger decline in the number of synapses by P14. Tmc1Δ/Δ;Tmc2Δ/Δ mice also displayed reduced synapse counts at P28, in a manner similar to that reported in previous studies assessing synaptic consequences of genetic disruption of synaptic transmission. For example, mice lacking Cav1.3 Ca2+ channels, which are critical for calcium-dependent neurotransmission at IHC synapses (Platzer et al., 2000; Brandt et al., 2005), lost IHC synapses 4 weeks after birth (Nemzou N. et al., 2006; Brandt et al., 2003). Another study assessed the synaptic consequences of genetic deletion of vesicular glutamate transporter type 3 (Kim et al., 2019) and found roughly half of IHC synapses were lost by 9 weeks of age. Although the genetic targets are different, disruption of synaptic proteins or transduction proteins lead to similar loss of IHC-SGN synapses suggesting they may converge upon similar molecular pathways that regulate synaptic development and maturation.
 
@@ -119,34 +119,163 @@ In summary, our study provides novel insight into the role of sensory transducti
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57B/L6-Cdh23753A&gt;G</td>
+      <td>Derived from Lentz et al., 2010</td>
+      <td>C57BL6</td>
+      <td>Lentz et al. Dev. Neurobiol (2010)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>019146 - B6.129-Tmc1tm1.1Ajg/J</td>
+      <td>Available from Jackson Lab, obtained initially from Dr A Griffith (NIH/NIDCD)</td>
+      <td>Tmc1 Targeted (Reporter, Null/Knockout)</td>
+      <td>Kurima et al. Nat Genet. (2002)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>019147 - B6.129-Tmc2tm1.1Ajg/J</td>
+      <td>Available from Jackson Lab, obtained initially from Dr A Griffith (NIH/NIDCD)</td>
+      <td>Tmc2 Targeted (Reporter, Null/Knockout)</td>
+      <td>Kawashima et al. J Clin Invest (2011)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>003929 - BXA4/Pgn-Tmiesr-J/J</td>
+      <td>Available from Jax C57BL/6-Tmiesr (‘spinner’) mice</td>
+      <td>Spontaneous mutation in Tmie</td>
+      <td>Stock No. 000543Mitchem et al. Hum Mol Genet. (2002)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Tmc1Bth</td>
+      <td>Tmc1Bth/Bth mice were obtained from M Hrabé de Angelis and H Fuchs, Institute of Experimental Genetics, Neuherberg, Germany</td>
+      <td>Point mutation at residue 412 (M412K)</td>
+      <td>Vreugde et al. Nat Genet. (2002)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CtBP2 (Mouse IgG1 monoclonal)</td>
+      <td>BD Transduction Laboratories</td>
+      <td>Cat #: 612044</td>
+      <td>Primary antibody, IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GluA2 (Mouse IgG2a monoclonal)</td>
+      <td>Millipore Sigma</td>
+      <td>Cat #: MABN1189</td>
+      <td>Primary antibody, IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MyosinVIIA (Rabbit polyclonal)</td>
+      <td>Proteus Biosciences</td>
+      <td>Cat #: 25–6790</td>
+      <td>Primary antibody, IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit Alexa Fluor 647 (Donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #: A-31573</td>
+      <td>Secondary antibody, IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG2a Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #: A-21131</td>
+      <td>Secondary antibody, IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse IgG1 Alexa Fluor 546 (Goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat #: A-21123</td>
+      <td>Secondary antibody, IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Vectashield Antifade</td>
+      <td>Vector Laboratories</td>
+      <td>Cat #: H-1000–10</td>
+      <td>Mounting medium</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AAV9-PHP.B- CMV-Tmc1e × 1</td>
+      <td>Wu et al., 2021</td>
+      <td></td>
+      <td>Nucleic acid, Titer: 3.9 E + 13 gc/mL</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>https://imaris.oxinst.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ software</td>
+      <td>http://imagej.nih.gov/ij/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Eaton-Peabody Laboratories Cochlear Function Test Suite</td>
+      <td>https://www.masseyeandear.org/research/otolaryngology/eaton-peabody-laboratories/engineering-core</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 WT control mice were C57B/L6 – Cdh23753A>G with a corrected ahl allele as described by Lentz et al., 2010. Tmc mutant mice carried mutant alleles of Tmc1, Tmc2, or both on a C57BL/6J background (Tmc1Δ/Δ, Tmc2Δ/Δ, Tmc1Δ/Δ;Tmc2Δ/Δ) (Vreugde et al., 2002; Kawashima et al., 2011). Spinner mice carrying a spontaneous mutation at the Tmie locus (Tmiesr) on C57BL/6J backgrounds were obtained from Jackson Laboratories. Beethoven mice carrying a dominant mutation in Tmc1Bth associated with DFNA36 in humans were initially donated by Martin Hrabé de Angelis and Helmut Fuchs at the University of Munich. Genotyping was performed as previously described (Kawashima et al., 2011; Mitchem et al., 2002). Mice ages P2, P7, P14, and P28 were used for ribbon synapse characterizations. Tmc1Δ/Δ mice ages P0-P1 were used for in vivo delivery of AAV vectors. Mice of both sexes were used in similar numbers and in accordance with protocols approved by the Institutional Animal Care and Use Committee (Protocols #20-02-4149R and #00001240) at Boston Children’s Hospital.
 
-## Viral vector preparation
+### Viral vector preparation
 
 Tmc1ex1 was cloned into an AAV2 vector driven by a CMV promoter and followed with a woodchuck hepatitis virus post-transcriptional regulatory element (WPRE) site, as previously described (Wu et al., 2021). The AAV2 vector was then packaged into the AAV9-PHP.B capsid by the Viral Core at Boston Children’s Hospital and purified by iodixanol gradient ultracentrifuge followed by ion-exchange chromatography. The titer of genome-containing particles for the AAV2-PHP.B vector was determined using TaqMan quantitative PCR to detect amplicons located in inverted terminal repeats, as previously described (D’Costa et al., 2016). The titer of the AAV2/9-PHP.B-CMV-Tmc1ex1 WPRE was calculated to be 3.91E+13 gc/mL. The vector was aliquoted, stored at –80°C, and thawed immediately before use. Generation and use of AAV vectors were approved by the BCH Institutional Biosafety Committee (Protocol #IBC-P00000447).
 
-## Inner ear injections
+### Inner ear injections
 
 Utricle injections were approved by the Institutional Animal Care and Use Committees at BCH (Protocols #20-02-4149R and #00001240) and performed as previously described (Lee et al., 2020). Briefly, P1 mice were anesthetized with hypothermia and a postauricular incision was made to expose the semicircular canals. A small puncture into the temporal bone surrounding the utricle was made and a glass micropipette was inserted into the puncture to manually inject 1 µL AAV. After the injection, standard postoperative care was applied.
 
-## ABR acquisition
+### ABR acquisition
 
 ABR recordings were performed, as previously described (Nist-Lund et al., 2019). Mice were anesthetized with 0.5 mg of ketamine and 0.15 mg of xylazine per 10 g body weight via intraperitoneal injection. Subcutaneous needle electrodes were inserted at the vertex (reference electrode), pinna (active electrode), and rump (ground electrode). Acoustic stimuli were delivered directly into the ear through a custom probe tube speaker/microphone system (EPL PXI Systems) consisting of two electrostatic earphones (CUI Miniature Dynamics) to generate primary tones and a Knowles microphone (Electret Condenser) to record sound pressures from the ear canal. In a sound-proof chamber, mice were presented 5 ms pure tone stimuli of 8, 11.3, 16, 22.6, and 32 kHz at SPL of 10–115 dB in 5 dB increment steps; 512 responses of alternating stimulus polarity were collected and averaged for each SPL. ABR potentials were amplified (10,000×), band-pass filtered (0.3–10 kHz), and digitized using custom data acquisition software from the Eaton-Peabody Laboratories Cochlear Function Test Suite.
 
 Waveforms with peak to trough amplitudes greater than 15 µV were discarded by an artifact-reject function. Sound stimuli and electrode voltages were sampled at 40 µs increments using a National Instruments digital input-output board and stored for offline analyses.
 
-## Tissue dissection, immunohistochemistry, and imaging
+### Tissue dissection, immunohistochemistry, and imaging
 
 Temporal bones were dissected and fixed in 4% paraformaldehyde for 1 hr at room temperature. Temporal bones were then decalcified in 120 mM EDTA for 2 hr for 7-day-old mice and up to 20 hr for 4-week-old mice. Following decalcification, the entire length of the organ of Corti was microdissected in PBS for whole-mount processing. Tissues were then permeabilized by freezing on dry ice in 30% sucrose and blocked for 1 hr at room temperature in PBS with 0.3% Triton X + 5% normal horse serum. Tissues were then stained with the following primary antibodies and incubated at 37°C overnight: (1) mouse isotype IgG1 anti-C-terminal binding protein 2 (CtBP2, 1:200, BD Transduction Laboratories #612044), (2) mouse isotype IgG2a anti-glutamate receptor 2 (GluA2, 1:2000, Millipore #MABN1189), and (3) rabbit anti-myosin VIIa (Myo7a, 1:200: Proteus Biosciences #25–6790). Tissues were washed in PBS and incubated for 2 hr at 37°C with the following secondary antibodies diluted in 1% normal horse serum + 0.3% Triton X: (1) goat anti-mouse IgG1 Alexa Fluor 546 (1:1000, Thermo Fisher #A-21123), (2) goat anti-mouse IgG2a Alexa Fluor 488 (1:1000, Thermo Fisher #A-21131), and (3) donkey anti-rabbit Alexa Fluor 647 (1:200, Thermo Fisher #A-31573). Finally, samples were mounted on glass coverslips with Vectashield mounting medium (Vector Laboratories).
 
 Using the 10× air objective on an LSM 800 (Carl Zeiss), low-power images of the myosin channel were obtained from each microdissected piece. Using a custom ImageJ plugin, a cochlear frequency map was generated by measuring the full length of the cochlea from apex to base using all microdissected pieces (Müller et al., 2005). Full z-stacks were then acquired at cochlear regions corresponding to five frequencies (8, 11.3, 16, 22.6, 32 kHz) using a 63 × 1.4 NA oil objective lens (Carl Zeiss, z step = 0.36 μm, scaling per pixel: 0.068 μm × 0.068 μm); 9–12 IHCs per field were imaged with z-stacks spanning the entire length of the hair cells. For volume estimations, confocal z-stacks were acquired using the 63× oil objective with AiryScan processing (Carl Zeiss, z step = 0.18 μm, scaling per pixel: 0.034 μm × 0.034 μm).
 
-## Ribbon synapse counts and volume distribution measurements
+### Ribbon synapse counts and volume distribution measurements
 
 Confocal z-stacks were ported to Imaris, an image analysis software, for creation of 3D projections and quantitative analyses of synapse counts and volumes. The ‘Spots’ module in Imaris was used for automated identification and counting of all ribbons in a given z-stack. All counts were manually reviewed and verified. Synapses were defined as juxtaposition of presynaptic ribbons labeled with anti-CtBP2 with postsynaptic AMPA receptor puncta labeled with anti-GluA2. Juxtaposition was verified manually for every ribbon identified using the ‘Spots’ module. The total number of synapses was divided by the number of IHCs in the image to calculate the average number of synapses/IHC. For estimation of ribbon volume distributions, confocal z-stacks of ribbon synapses were obtained from P28 control, Tmc1Δ/Δ, and Tmc1Δ/Δ mice injected with AAV2/9-PHP.B-CMV- Tmc1ex1WPRE using Airyscan processing and ported to Imaris. 3D projections of Airyscan z-stacks were generated and ribbon volumes were segmented from each projection using the ‘Surfaces’ module in Imaris. Identical settings were applied across image stacks, including the threshold for ‘background subtraction (local contrast)’. This threshold was fixed to ensure digital analyses in Imaris were consistent across images (despite potential variability in immunostaining quality and image acquisition confocal settings) and to prevent subjective biases from affecting ribbon volume calculations. As with the synapse counts, ribbons identified using the ‘Surfaces’ module were manually verified to be juxtaposed with anti-GluA2 staining. Calculated volumes from each z-stack for each mouse were normalized to the median volume of all ribbons in the z-stack to account for differences in immunostaining quality and image acquisition settings across mice, genotypes, and cochlear regions. Standard deviations of normalized ribbon volumes from each z-stack for each mouse were compared to determine if significant differences in ribbon volume distributions were evident between groups.
 
-## Experimental design and statistical analyses
+### Experimental design and statistical analyses
 
 The Wilcoxon rank sum test was used for comparison of P2 WT and Tmc1Δ/Δ;Tmc2Δ/Δ CtBP2+ puncta counts in Figure 1C. For the synapse counts in Figure 3A-C and Figure 4A-C, three-way ANOVAs were first conducted to evaluate whether genotype differences in the trajectory of synaptic development varied by frequency. In Figure 3, the interaction effect between four genotypes (WT, Tmc1Δ/Δ;Tmc2Δ/Δ, Tmc1Δ/Δ, Tmc2Δ/Δ), three timepoints (P7, P14, P28), and five frequency regions (8, 11.3, 16, 22.6, 32 kHz) was evaluated. In Figure 4A–B, the interaction effect between three genotypes (WT, Tmc1Δ/Δ;Tmc2Δ/Δ, Tmiesr), two timepoints (P7, P28), and five frequency regions (8, 11.3, 16, 22.6, 32 kHz) was evaluated. For Figure 3A-C and Figure 4A-B, two-way ANOVAs were also used to examine the effects of genotype on synapse development at each frequency region. For Figures 4 and 6, two-way ANOVAs were used to examine the interaction effect between three genotypes (Figure 4C: WT, Tmc1Δ/Δ, Tmc1Bth; Figure 6A: WT, Tmc1Δ/Δ, injected Tmc1Δ/Δ) and five frequency regions (8, 11.3, 16, 22.6, 32 kHz). Following three-way and two-way ANOVAs, multiple pairwise comparisons were conducted to determine which specific genotype groups differed from one another at each timepoint and frequency region. Six paired comparisons were made between the four groups in Figure 3A–C and three paired comparisons were made between the three groups in Figures 4A–C ,–6A. The Bonferroni correction was applied to correct for the multiple comparisons and the reported p values are the original p values multiplied by the number of paired comparisons made. The Wilcoxon rank sum test was also used to compare average ABR thresholds in WT and Tmc1Δ/Δ mice injected with Tmc1 gene therapy in Figure 5B. To evaluate whether the size of ribbon volume distribution differed between control, Tmc1Δ/Δ and Tmc1Δ/Δ mice injected with Tmc1 gene therapy, standard deviations of normalized ribbon volumes from each z-stack were compared using Kruskal-Wallis tests followed by Dunn’s multiple comparisons tests using Bonferroni correction. Exact p values are reported. Statistical analyses were performed in GraphPad Prism, R, and SAS statistical software. Figures were created using OriginLab, OriginPro.

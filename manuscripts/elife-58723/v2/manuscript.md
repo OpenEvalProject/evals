@@ -33,9 +33,21 @@ To do so, we took advantage of a high-throughput automated behavioral monitoring
 
 ## Results
 
-## Male and female dominance hierarchies
+### Male and female dominance hierarchies
 
 We first explored the hierarchical structure of grouped CD-1 mice over four days of baseline monitoring as well as the stability of hierarchies following an acute stressor (15 min of restraint stress). Social dominance was assessed by calculating the David’s Score (DS), an established method for inferring social hierarchies (David, 1987; Gammell et al., 2003). We based the DS on the numbers and directionality of chases between each pair of individuals in a group. A cumulative DS for the four baseline days of the SB assessment was used as a final measure of social dominance. In line with previous studies (Schuhr, 1987; van den Berg et al., 2015; Varholick et al., 2019; Varholick et al., 2018; Williamson et al., 2019), we were able to detect some stability in the hierarchies of both sexes (Figure 1a).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/58723/elife-58723-fig1-v2.jpg)
+
+**Figure 1.:** (a) David’s Scores (DS) based on chases during the four baseline days of Social Box (SB) assessment show relatively stable social hierarchies in both male and female groups (each line represents an individual, colors represent the cumulative social rank on day 4, points are mean values for each rank ± standard error of the mean). (b) Male-specific associations between social dominance scores and behaviors related to locomotion and exploration. Dominant males had increased overall locomotion, spend more time outside the nest, and moved through the SB environment in a more unpredictable manner. These associations were not found in females. (c) Rank maintenance odds over the four-day baseline period. Depicted are odds of maintaining the same rank between consecutive days relative to chance-level (25%). Data is summarized according to the cumulative social rank on day 4; numbers indicate the number of individuals per rank. (d) Baseline DS predicts DS following acute restraint stress in both sexes, indicating that social dominance hierarchies may be relatively robust against acute stress. (e) Numbers of chases in male and female groups at baseline as well as following acute restraint stress. Both sexes display significantly fewer chases following an acute physiological stressor. The x-axis shows the absolute number of chases between pairs of mice. Dot: median, whisker: 1.5 x IQR.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58723/elife-58723-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a–d) The following properties of social hierarchies were computed for each group of mice: steepness, despotism, directional consistency, and Landau’s modified h’. Male groups had overall higher scores for steepness (F(1, 20) = 12.6, p = 0.00201), despotism (F(1, 20) = 10.84, p = 0.00364, note: variances were heterogenous between conditions), and directional consistency (F(1, 20) = 21.16, p = 1.73×10−4). Means of Landau’s modified h’ over the baseline days also differed between the sexes (KW test: χ2(1) = 8.2458, p = 0.0041). None of the measures showed evidence of a sex x acute stress interaction. All tests are based on n = 22 groups (10 males, 12 females).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58723/elife-58723-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Depicted are cumulative baseline David’s Score correlations with batch-adjusted inverse rank-transformed readouts from the SB (averages of each behavioral readout for SB days 2–4). Only behaviors that are not used for building the DS directly and only correlations with a q-value < 0.05 following multiple testing correction are displayed (Benjamini-Hochberg adjustment within each sex, for a full list of the behavioral readouts tested here, see Materials and methods). DS show relatively similar correlation patterns with other behaviors between the sexes, indicating that social dominance status may have largely similar effects on overall behavior for each sex. Nevertheless, several behavioral readouts, including Distance Outside, Entropy/Grid Entropy [6 × 6], and Fraction of Time Outside show associations with David’s Scores in males that are conspicuously absent in females (Figure 1c).
 
 We further calculated several properties of male and female hierarchies to explore potential differences in their characteristics. Namely, we calculated: (1) steepness – a measure of social distance between each individual in the hierarchy, (2) despotism – a measure of the extent to which the top-ranking individuals dominate over the rest of the group, (3) directional consistency – the extent to which the directionality of the interactions follow the expected direction from higher to lower rank, and (4) Landau’s modified h’ – a measure of hierarchy linearity (de Vries, 1995; Landau, 1951; Figure 1—figure supplement 1). We found that male hierarchies were steeper, more linear, more despotic, and had higher directional consistency than those of females. Interestingly, mice housed in larger groups show analogous relationships between sexes (Williamson et al., 2019).
 
@@ -47,7 +59,7 @@ In addition to stability over time during baseline recordings, individual DS als
 
 The apparent robustness of social hierarchies over time and in response to acute stress suggested that predictions from the baseline assessment may carry information that would still be relevant to behavioral outcomes following a long-term intervention. More specifically, we hypothesized that occupancy of the highest-ranking positions in the social hierarchy in both sexes and additionally the lowest in males might be sufficiently stable to allow for long-term predictions.
 
-## Effects of CMS on behavior and physiology
+### Effects of CMS on behavior and physiology
 
 To investigate the effects of pre-existing social dominance status on the behavioral response to chronic stress, we employed a CMS protocol adapted for group-housed animals.
 
@@ -59,9 +71,21 @@ In short, groups were exposed to a weekly schedule of two daily randomly combine
 
 As expected, we found that both bodyweight change and cumulative coat quality were significantly reduced following CMS in both males and females (Figure 2b–c, Bodyweight: F(1, 82) = 7.394, p = 0.00798, Coat quality: KW test, χ2(1) = 18.586, p = 1.6×10−5), although post-hoc pairwise comparisons indicated a bodyweight difference in females only (females: t(43.784) = 3.9447, p = 0.000285, males: t(36.937) = 1.1064, p = 0.27). Bodyweight-adjusted adrenal weights were increased after CMS in males only (Figure 2d and -way ANOVA, sex by condition interaction, F(1, 80) = 4.42, p = 0.039, followed by pairwise within-sex 2-sided t-tests: males: t(27.03) = −3.143, p = 0.004; Females: t(41.18) = 0.0726, p = 0.94). For all further analyses, these physiological outcomes were combined with the behavioral ones in a single dataset.
 
-## Sex-specific effects of dominance on CMS outcomes
+### Sex-specific effects of dominance on CMS outcomes
 
 To explore how exposure to chronic stress shapes behavior in groups of mice, we investigated the major drivers of variance in the dataset containing all behavioral and physiological readouts following CMS using principal components analysis (PCA, Figure 3a–d). The first principal component (PC1), explained approximately 21.6% of the variance in the outcome data (Figure 3a). To our surprise, neither sex nor condition (CMS vs controls) appeared to capture variance contained in PC1 (Figure 3b, condition effect: F(1, 82) = 0.608, p = 0.44). Instead, sex and condition were associated with PC2 and PC3 respectively (Figure 3—figure supplement 1). Since none of the expected variables (sex, condition, or their interaction) contributed to the main source of variance in the dataset, we investigated whether social dominance was a contributing factor. We tested the association between PC1 scores and DS (Figure 3c). Remarkably, baseline DS significantly predicted scores on PC1 in CMS individuals only and this association was in opposite directions between the two sexes (sex by DS interaction: F(1, 43) = 6.016, p = 0.0183). Thus, the principal source of variation in the outcome dataset contained an interaction between baseline dominance scores and sex in the CMS mice.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58723/elife-58723-fig3-v2.jpg)
+
+**Figure 3.:** (a) Percentage of variance explained by the first five components of a principal components analysis conducted on the batch-adjusted behavioral and physiological outcome data. PC1 explains ca. 21% of the variance in this dataset. (b) PC1 is not significantly different between sexes or conditions, indicating that this component did not capture variance associated with either variable. (c) Association between baseline David’s Scores and PC1 in control and CMS individuals. Baseline dominance predicted scores on PC1, the major source of variance in the outcome data, in a sex-specific manner in the CMS group, but not in the control group. (d) Spearman’s rank correlations between PC1 and the physiological and behavioral outcome variables. The strongest associations for PC1 are variables derived from the open field test (OFT) and elevated plus maze (EPM). Black circles around points identify associations significant at p < 0.05 after adjustment for multiple testing (Bonferroni correction). (e-f) Examples of interactions between baseline dominance and sex on CMS behavioral outcomes. Males and females show significant opposite correlations between dominance and example of locomotion and anxiety-like behavior. (Boxplots: line – median, box limits – 1st and 3rd quartile, whiskers – 1.5 x IQR. Scales for behavioral outcomes are relative to female controls).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58723/elife-58723-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Depicted are scores for two further principal components from the analysis described in Figure 3. Individual scores on PC2 (13.6% variance explained) differ between the sexes (F(1, 82) = 48.269, p = 8.1×10−10), while PC3 (11.2% variance explained) captures the effect of chronic mild stress (CMS, F(1, 82) = 5.92, p = 0.0171).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/58723/elife-58723-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Pearson’s product-moment correlations between David’s Scores and behavioral outcomes within each sex and condition. Each cell contains the correlation estimate with p-values for nominally significant correlations (p-value < 0.05) shown in parentheses.
 
 To better assess the set of behaviors responsible for this association, we correlated PC1 scores with all the input features from the behavioral and physiological readouts (Figure 3d). We found that seventeen readouts were significantly correlated with PC1 scores in this dataset (Spearman’s rank correlation, Bonferroni-adjusted p < 0.05). Among the strongest correlates of PC1 were measures derived from the OFT and EPM, and specifically features related to locomotion and anxiety-like behavior, such as distance traveled and visits to the anxiogenic regions of test chambers. Interestingly, these behaviors do not typically differentiate CMS and control individuals. Instead, CMS exposure appeared to create relationships between dominance and the outcome variables that were not present in controls (the top examples from the OFT and EPM are depicted in Figure 3e–f, correlations between individual readouts and DS within each sex and condition are available in Figure 3—figure supplement 2). To conclude, we were able to narrow down a portion of the variance in a broad range of behavioral and physiological outcomes following CMS to an interaction between dominance and sex with more subordinate CMS males showing apparent increases in measures of overall activity (distance/speed in the OFT and EPM) and more subordinate males and more dominant females showing an apparent reduction in anxiety-like behavior. Thus, we were able to identify a novel role for social rank belonging in modulating behavior following chronic stress in a sexually dimorphic way.
 
@@ -91,23 +115,82 @@ Taken together, this work suggests that social dominance might influence the per
 
 ## Materials and methods
 
-## Animal housing and care
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Corticosterone Double Antibody RIA Kit</td>
+      <td>MP Biomedicals</td>
+      <td>SKU 0712010-CF</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Tidyverse, ecosystem of packages</td>
+      <td>R Core Development Team, 2013 doi:10.21105/joss.01686</td>
+      <td></td>
+      <td>R version 4.0.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>‘RNOmni R package</td>
+      <td>McCaw, 2019</td>
+      <td>v 0.7.1</td>
+      <td>R version 4.0.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>‘cowplot’ R package</td>
+      <td>Wilke, 2019</td>
+      <td>v 1.0.0</td>
+      <td>R version 4.0.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>‘compete’ R package</td>
+      <td>Curley et al., 2015</td>
+      <td>v 0.1</td>
+      <td>R version 4.0.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>‘steepness’ R package</td>
+      <td>Leiva and de Vries, 2014</td>
+      <td>v 0.2–2</td>
+      <td>R version 4.0.2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal housing and care
 
 Male and female ICR CD-1 mice at 7–9 months old were employed for all experiments (Charles River, Sulzfeld, Germany). Mice were housed in groups of four in the animal facilities of the Max Planck Institute of Psychiatry in Munich, Germany, from weaning and were maintained under standard conditions (12L:12D light cycle, lights on at 07:00 AM, temperature 23 ± 2°C) with food and water available ad libitum. All experiments were approved by and conducted in accordance with the regulations of the local Animal Care and Use Committee (Government of Upper Bavaria, Munich, Germany), under licenses Az.: 55.2-1-54-2532-148-2012, Az.:55.2-1-54-2532-32-2016 and ROB-55.2–2532.Vet_02-18-50. The fur of all mice was marked using four different colors under mild isoflurane anesthesia and mice were left to recover for several days before the start of the experiment. On day 1, animals were transferred to the SB (see ‘The ‘Social Box’ paradigm’ section), for a total of 5 days (five light periods and five dark periods). On day 6, animals were removed from the SB and placed in their original cage under standard housing conditions for the rest of the experimental procedure (see ‘Chronic mild stress protocol’ and ‘Behavioral battery’ sections).
 
-## Behavior in a semi-naturalistic environment
+### Behavior in a semi-naturalistic environment
 
-## The ‘Social Box’ paradigm
+#### The ‘Social Box’ paradigm
 
 The ‘Social Box’ is a behavioral arena wherein groups of mice live under continuous observation over a period of several days (Forkosh et al., 2019; Shemesh et al., 2013). Mouse identities are maintained using fur markings in four different colors (Shemesh et al., 2020; Forkosh et al., 2019). The entire SB observation period was recorded using cameras mounted above each arena. Videos of the dark periods of the light cycle (7:00 PM to 7:00 AM) were then compressed and analyzed using a custom automated tracking system which determines mouse locations over time based on color segmentation (Shemesh et al., 2013; Shemesh et al., 2020). From the location data we inferred agonistic interactions as well a variety of other behavioral readouts as described in Forkosh et al., 2019. Briefly, we used the absolute locations and smoothed movements of individuals as well as location and movement with respect to regions of interest in the SB to compute readouts related to overall locomotion, feeding/drinking, etc. (e.g., distance and speed outside the nest, distance from walls, distance from the nest, time spent in the feeders, on ramps, in the S-wall). Exploratory behavior is assessed by estimating the unpredictability of movement (entropy) outside the nest using spatial bins of either the regions of interest or a 6 by 6 10 cm grid overlaid on the SB. We model social interactions using a Hidden Markov Model which takes into consideration the relative trajectories and distances between pairs of mice and determines who initiates a contact, its progression and its properties using a simple topology states (idle, approach/avoid, contact, follow/avoid, described in detail in Forkosh et al., 2019).
 
 Social dominance was assessed using the David’s Score (DS), a measure based on the pairwise directionalities and numbers of agonistic interactions in a group (David, 1987). Chases during the four days of the baseline period were used to build the DS, which was then normalized to group number (n = 4), creating a continuous range between 0 (least dominant) and 3 (most dominant). The steepness of the social hierarchy was characterized as described in de Vries et al., 2006 by using the slope of a line fitted to the DS from a ranked DS using Ordinary Least Squares regression. We used an implementation of this procedure made available in the open-source ‘steepness’ R package (Leiva and de Vries, 2014), whose output ranges between 0 and 1, with one meaning a very steep hierarchy in which power is unequally distributed between dominant and subordinate individuals. Despotism was defined as the fraction of the group’s total number of chases that were initiated by the highest-ranking individual. Its values range as well between 0 and 1, in which one represents the presence of a very strong alpha who initiate all chases. Directional consistency was calculated using the average fraction of pairwise social interactions that occur in the direction from the individual who displayed more instances of an agonistic behavior to the individual who displayed fewer instances (van Hooff and Wensing, 1987; Williamson et al., 2016). A directional consistency equal to one indicates that all agonist interactions are directed from an individual with a higher DS to one with a lower DS. Finally, we used Landau’s modified h’ to assess the linearity of a social hierarchy, as described in de Vries, 1995, in which hierarchies which are fully linearly ordered are assigned a value of 1. We calculated both directional consistency and Landau’s modified h’ using functions made available in the R package ‘compete’ (Curley et al., 2015).
 
-## Acute restraint
+### Acute restraint
 
 Before the beginning of the fifth night in the SB, mice were removed from the SB and restrained in a ventilated tube for 15 min. To account for the smaller size of females, we employed a smaller sized ventilated tube to ensure the same degree of movement restriction between sexes. At the end of the acute restraint, groups of mice were put back in their original SB and tracked for additional 12 hr.
 
-## CMS protocol
+### CMS protocol
 
 Two separate batches of mice were exposed to three weeks of CMS prior to the behavioral test battery. A random combination of two stressors per day (one in the a.m. and one in the p.m. hours) was chosen among the followings: acute restraint in the dark (15 min), acute restraint in bright light (15 min, ~200 lux), acute restraint witnessing (half of the group at a time was restrained and placed inside the cage, 15 min each), removal of nesting material (24 hr), cage-tilt 30° along the vertical axis (6 hr), no bedding or nesting material (8 hr), wet bedding (6 hr), water avoidance (15 min), cage change (fresh cage every 30 min for a total of 4 hr), cage switching (mice are assigned the cage of another group of the same sex), overcrowding (eight mice per cage, 1 hr). For the water avoidance stress, an empty rat cage (395 × 346 cm) was filled with room temperature water. Mice were placed on a platform (10 × 12 cm), 2 cm above the water level, for 15 min.
 
@@ -117,54 +200,54 @@ Cumulative coat state was calculated as the sum of the seven daily scores.
 
 Control mice were kept in an adjacent room to the stressed mice and handled twice per week to obtain weight and coat scores.
 
-## Behavioral battery
+### Behavioral battery
 
 The day after the last stressor, mice started a behavioral test battery consisting of the OFT, 2-hr SPT, grouped SPT, the splash test (SPL), the nest building test (NBT), the EPM, a grouped sucrose preference, and the TST. Throughout the testing period, mice were maintained in their original groups and habituated to the testing room for at least one hour prior the start of the test. Forty-eight hours after the last test, mice were terminally anesthetized in isoflurane and sacrificed. Terminal bodyweight, plasma, adrenal glands, and thymus were collected. Adrenal glands and thymus were cleaned from fat tissue and weighed. Absolute values were adjusted to bodyweight using the bodyweights collected on day 1. Tissue weighing, corticosterone measurement, and behavioral scoring were performed by an experimenter blind to sex, condition, and social rank.
 
-## Open field test
+### Open field test
 
-On the day following the last stressors (day 22), mice locomotor activity and exploratory behavior were assessed in the OFT for 10 min. The apparatus consisted in round arenas (diameter 38 cm) made of black polyvinylchloride (PVC) under dim illumination (3 lux). Mice were automatically tracked with ANYmaze Video Tracking System 6.13 (Stoelting, IL, USA). The space was virtually divided in an inner zone (diameter 16 cm) and an outer zone. Total distance traveled, distance from the center, speed, and turn angle were calculated across the full 10 min. In addition, distance traveled, speed, visits, and time spent in each of the subdivisions were used as parameters. Preference was calculated as follows: outerzonetimeinnerzonetime.
+On the day following the last stressors (day 22), mice locomotor activity and exploratory behavior were assessed in the OFT for 10 min. The apparatus consisted in round arenas (diameter 38 cm) made of black polyvinylchloride (PVC) under dim illumination (3 lux). Mice were automatically tracked with ANYmaze Video Tracking System 6.13 (Stoelting, IL, USA). The space was virtually divided in an inner zone (diameter 16 cm) and an outer zone. Total distance traveled, distance from the center, speed, and turn angle were calculated across the full 10 min. In addition, distance traveled, speed, visits, and time spent in each of the subdivisions were used as parameters. Preference was calculated as follows: $\frac{outerzonetime}{innerzonetime}$.
 
-## Two-hour daily sucrose preference test
+### Two-hour daily sucrose preference test
 
-Twenty-four hours after the OFT, the anhedonia phenotype was tested with a modified version of the SPT. Each group was assigned a test cage containing one water bottle and one bottle with 2% sucrose. One mouse per group at a time was placed in the test cage for two hours, across three consecutive days during the light phase (days 23, 24, and 25). At the end of each session, the bottles were weighed. At the end of the test the amounts of water and sucrose consumed were summed across the three sessions. Sucrose preference was calculated as sucrosewater+sucrose*100.
+Twenty-four hours after the OFT, the anhedonia phenotype was tested with a modified version of the SPT. Each group was assigned a test cage containing one water bottle and one bottle with 2% sucrose. One mouse per group at a time was placed in the test cage for two hours, across three consecutive days during the light phase (days 23, 24, and 25). At the end of each session, the bottles were weighed. At the end of the test the amounts of water and sucrose consumed were summed across the three sessions. Sucrose preference was calculated as $\frac{sucrose}{water+sucrose}*100$.
 
-## Grouped sucrose preference test
+### Grouped sucrose preference test
 
 On day 27, sucrose preference was tested at a group level. Each group was given a bottle of water and a bottle of 2% sucrose within their home-cage. Their sucrose preference was calculated after 24 hr as above. A grouped sucrose preference value was obtained for each group.
 
-## Splash test
+### Splash test
 
 On day 24, during the dark period, mice were tested in the splash test under dim light (3 lux). Mice were placed in their test cage for 5 min prior being sprayed on their dorsal coat twice (approximately 1 ml) with 10% sucrose solution. Mice were recorded for 5 min and total time spent grooming, and latency to the first grooming bout was manually scored using Solomon Coder 17.03.32 (https://solomon.andraspeter.com/).
 
-## Nest building test
+### Nest building test
 
 During the third day of the 2-hr sucrose preference, mice in the test cage were given a small square cotton pad of approximately 23 g. The cotton pad was weighed at the beginning of the test and at the end of the two hours and the percentage of intact material was calculated. The built nest was scored from 0 to 4 according to the following criteria:
 
 For nests matching only partially the description (e.g., identifiable flat nest, but less than 50% of torn material), half points were assigned.
 
-## Elevated plus maze
+### Elevated plus maze
 
-On day 26, during the light phase, anxiety phenotype was assessed using the EPM test. An apparatus composed of four arms made of gray polyvinylchloride (PVC), two open without walls, two enclosed by 14 cm walls and a central platform (5 × 5 cm) was used. The apparatus was placed 33 cm from the ground under dim illumination (3 lux). Mice were placed on the central platform facing the open arms and let free to explore the apparatus for 10 min. Mice were automatically tracked using ANYmaze Video Tracking System 6.13 (Stoelting, IL, USA). Number of entries in each arms, time, and distance were calculated. In addition, closed arm preference was calculated as timeinclosedarmstimeinclosed+timeinopenarms.
+On day 26, during the light phase, anxiety phenotype was assessed using the EPM test. An apparatus composed of four arms made of gray polyvinylchloride (PVC), two open without walls, two enclosed by 14 cm walls and a central platform (5 × 5 cm) was used. The apparatus was placed 33 cm from the ground under dim illumination (3 lux). Mice were placed on the central platform facing the open arms and let free to explore the apparatus for 10 min. Mice were automatically tracked using ANYmaze Video Tracking System 6.13 (Stoelting, IL, USA). Number of entries in each arms, time, and distance were calculated. In addition, closed arm preference was calculated as $\frac{timeinclosedarms}{timeinclosed+timeinopenarms}$.
 
-## Tail suspension test
+### Tail suspension test
 
 Stress coping behavior was assessed using the TST on day 28. Mice were hung by their tail 50 cm above the surface and their behavior recorded for 6 min. Immobility was automatically scored using ANYmaze Video Tracking System 6.13 (Stoelting, IL, USA) and number of immobility episodes and total time immobile were used as parameters.
 
-## Corticosterone assessment
+### Corticosterone assessment
 
 At sacrifice, trunk blood was collected in EDTA-coated tubes. Blood was centrifuged at 1,000 g for 15 min at 4°C. Plasma was retrieved and corticosterone levels were measured using [125I] radioimmunoassay kit (MP Biomedicals), according to the manufacturer’s instructions.
 
-## Data analysis
+### Data analysis
 
-## Quality control and outlier removal
+#### Quality control and outlier removal
 
 Low-quality tracks from the SBs were labeled by estimating the number of large (>100 pixels) interruptions in the mouse trajectories as well as the fraction of time mice were spotted outside the nest. Tracks where a mouse had more than 200 trajectory interruptions or was found outside the nest for less than 2% of the total monitoring time were excluded from further analyses. Additionally, all the tracks of an individual were excluded in cases when more than two of the four baseline day recordings of a mouse did not pass quality control thresholds. Based on these criteria, the complete SB data of four mice was excluded. A single value from the corticosterone outcomes was labeled as outlier and removed (453.4 ng/ml, >3.5 standard deviations away from the mean of the appropriate sex and condition grouping). The results of the EPM test for one mouse and the ones from the splash test for two mice were excluded due to a technical recording failure and the nest building test ‘percent intact’ value for one mouse was lost due to experimental failure.
 
-## Statistical testing
+#### Statistical testing
 
 All statistical analyses were performed in R version 4.0.2 assisted by the ‘Tidyverse’ ecosystem of packages (R Core Development Team, 2013; Wickham et al., 2019). The tests employed for each specific analysis are reported in the Results section. All inverse rank-transformed behavioral outcomes (Blom transform, RNOmni R package) (McCaw, 2019) were adjusted for batch effects using the standardized residuals of a linear model with each variable of interest as outcome and batch as a factorial predictor. Figure panels were assembled with the help of the ‘cowplot’ R package (Wilke, 2019). Outcome data distributions were tested for deviations from normality (Shapiro-Wilk test) and heteroscedasticity (Levene’s test). Whenever normality was violated and the data could not be transformed to fit a normal distribution, non-parametric tests were employed. Violations of homogeneity of variances are reported with each test. As this was an exploratory set of experiments without an a priori hypothesis regarding the association between dominance, stress response, and sex, no power calculations were performed, and sample sizes were chosen based published work with CMS interventions.
 
-## Principal component analysis
+#### Principal component analysis
 
 Principal component analysis (PCA) was employed to explore the sources of variance in our multi-dimensional behavioral dataset. Specifically, we performed PCA using singular value decomposition on scaled and centered data from the behavioral and physiological outcomes following CMS. Prior to decomposition, missing data points (for a maximum of two values per individual) were replaced with the median of the respective outcome. The principal components (PCs) obtained were ranked by the total amount of variance explained. The top 3 PCs, namely PC1, PC2, and PC3, contained most of the variance in our dataset and were thus used to investigate the effects of known variables (sex, stress condition, social dominance status). To evaluate the influence of social dominance we assessed the association between PC1 and the David’s Score within each experimental group.

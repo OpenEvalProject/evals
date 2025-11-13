@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.39514.001 Many important gram-negative bacterial pathogens use highly sophisticated type III protein secretion systems (T3SSs) to establish complex host-pathogen interactions. Bacterial-host cell contact triggers the activation of the T3SS and the subsequent insertion of a translocon pore into the target cell membrane, which serves as a conduit for the passage of effector proteins. Therefore the initial interaction between T3SS-bearing bacteria and host cells is the critical step in the deployment of the protein secretion machine, yet this process remains poorly understood. Here, we use high-throughput cryo-electron tomography (cryo-ET) to visualize the T3SS-mediated Salmonella -host cell interface. Our analysis reveals the intact translocon at an unprecedented level of resolution, its deployment in the host cell membrane, and the establishment of an intimate association between the bacteria and the target cells, which is essential for effector translocation. Our studies provide critical data supporting the long postulated direct injection model for effector translocation.
+Many important gram-negative bacterial pathogens use highly sophisticated type III protein secretion systems (T3SSs) to establish complex host-pathogen interactions. Bacterial-host cell contact triggers the activation of the T3SS and the subsequent insertion of a translocon pore into the target cell membrane, which serves as a conduit for the passage of effector proteins. Therefore the initial interaction between T3SS-bearing bacteria and host cells is the critical step in the deployment of the protein secretion machine, yet this process remains poorly understood. Here, we use high-throughput cryo-electron tomography (cryo-ET) to visualize the T3SS-mediated Salmonella-host cell interface. Our analysis reveals the intact translocon at an unprecedented level of resolution, its deployment in the host cell membrane, and the establishment of an intimate association between the bacteria and the target cells, which is essential for effector translocation. Our studies provide critical data supporting the long postulated direct injection model for effector translocation.
 
 ## Introduction
 
@@ -32,15 +32,88 @@ In many bacterial species the activity of these protein injection machines is st
 
 ## Results
 
-## In situ structures of the T3SS injectisome in the presence or absence of protein translocases
+### In situ structures of the T3SS injectisome in the presence or absence of protein translocases
 
 An intrinsic property of many T3SSs is that their activity is stimulated by contact with the target host cell membrane (Ménard et al., 1994; Zierler and Galán, 1995). This interaction results not only in the stimulation of secretion but also in the deployment of the protein translocases in the host cell membrane, a poorly understood process that is orchestrated by the tip complex of the injectisome’s needle filament. In the case of the S. Typhimurium SPI-1 T3SS the tip complex is thought to be composed of a single protein, SipD, which organizes as a pentamer at the tip of the needle filament (Rathinavelan et al., 2014). However, it has been previously proposed that in Shigella spp., in addition to IpaD, a homolog of SipD, the tip complex also contains IpaB, a homolog of SipB (Cheung et al., 2015). To get insight into the structural organization of the tip complex prior to bacterial contact with cultured cells, we compared the in situ structures of fully assembled injectisomes from minicells obtained from wild-type, ∆sipB, and ∆sipD S. Typhimurium strains (Figure 1A–D, Table 1). We found that injectisomes from wild-type or the ∆sipB strains were indistinguishable from one another. In contrast, injectisomes from a ∆sipD strain exhibited a shorter needle (~45 nm) in comparison to the needle filaments of injectisomes from the wild-type or ∆sipB strains (~50 nm). These observations suggest that SipD is the only structural component of the tip complex (Figure 1E). To further explore this hypothesis, we examined by cryo-ET the injectisomes of minicells obtained from S. Typhimurium strains expressing FLAG-epitope-tagged versions of SipB, SipC, and SipD, after labeling with anti-FLAG antibodies (Lara-Tejero and Galán, 2009) (Figure 1F–H, Figure 1—figure supplement 1). Only injectisomes from minicells obtained from the strain expressing SipD-FLAG showed the antibodies bound to the needle tip (Figure 1H, Figure 1—figure supplement 1D,I). This observation is consistent with the notion that, prior to cell contact, SipD is the main, and most likely only component of the tip-complex (Lara-Tejero and Galán, 2009).
 
-## High-resolution imaging of the T3SS mediated Salmonella-host cell interface
+![Figure 1.](https://cdn.elifesciences.org/articles/39514/elife-39514-fig1-v2.jpg)
+
+**Figure 1.:** (A) A central section of a tomogram showing S. Typhimurium minicell containing multiple injectisomes. (B–D) Central sections of sub-tomogram averages showing injectisomes of WT, ΔsipB, and ΔsipD, respectively. (E) A schematic of the injectisome. Outer membrane (OM), peptidoglycan (PG), sorting platform, and inner membrane (IM) of S. Typhimurium are annotated. (F–H) Central sections of tomograms showing injectisomes from strains expressing epitope-tagged (FLAG) SipB, SipC, and SipD, respectively. Yellow arrow indicates antibody bound to the epitope-tag.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39514/elife-39514-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) sipB-FLAG, (B) sipC-FLAG, (C) antibody-free sipD-FLAG, and (D) antibody-bound sipD-FLAG needles. (E-H) Sub-tomogram averages of FLAG-epitope-tagged S. Typhimurium strains shown in panels (A-D), respectively. Yellow arrows indicate anti-FLAG antibodies bound to the epitope-tag. (I) Quantification of anti-FLAG antibody bound needles.
+
+**Table 1.**
+ Needle lengths of S. Typhimurium WT, ΔsipB, ΔsipD and ΔsipBCD cells.A summary of statistical measures including needle length average, standard deviation, and standard error of mean. Data were compared using an unpaired t test.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Sample size</th>
+      <th>Average (nm)</th>
+      <th>Standard Deviation</th>
+      <th>Standard Error of Mean(nm)</th>
+      <th>P value campared to WT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>135</td>
+      <td>51.0</td>
+      <td>4.8</td>
+      <td>0.42</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>∆sipB</td>
+      <td>46</td>
+      <td>50.6</td>
+      <td>4.0</td>
+      <td>0.59</td>
+      <td>0.62</td>
+    </tr>
+    <tr>
+      <td>∆sipD</td>
+      <td>61</td>
+      <td>46.5</td>
+      <td>3.9</td>
+      <td>0.50</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>∆sipBCD</td>
+      <td>46</td>
+      <td>45.3</td>
+      <td>3.0</td>
+      <td>0.44</td>
+      <td>&lt;0.0001</td>
+    </tr>
+  </tbody>
+</table>
+
+### High-resolution imaging of the T3SS mediated Salmonella-host cell interface
 
 It is well established that effector translocation through the T3SS requires an intimate association between the bacteria and the host cell (Grosdent et al., 2002). It has also been previously demonstrated that such intimate attachment requires an intact type III secretion machine, and in particular, the protein translocases, which most likely mediate such bacteria/host cell interaction (Lara-Tejero and Galán, 2009). Despite its central role in effector translocation, however, very little is known about the architecture of this specialized host/bacteria interface. This is largely because of the lack of amenable experimental approaches that would allow a detail view of this interface. Cryo-ET is uniquely suited to examine host/pathogen interactions at high resolution. However, sample thickness limits the utility of this approach. To get around this limitation we used bacterial minicells as a surrogate for whole bacteria since it has been previously shown that they are capable of assembling functional T3SS injectisomes that can deliver de novo synthesized T3SS substrates into cultured cells (Carleton et al., 2013). However, minicells are inefficient at triggering membrane ruffling, actin filament remodeling, and bacterial internalization due to inefficient partitioning of the effector proteins that trigger these responses. Consequently, while minicells are proficient at establishing a T3SS-mediated intimate association with cultured epithelial cells, they are inefficient at triggering their own internalization thus remaining firmly attached on the cell surface. These features make them ideally suited for high-resolution cryo-ET imaging. Therefore, we applied bacterial minicells obtained from wild-type S. Typhimurium onto cultured epithelial cells grown on cryo-EM grids. We found that the periphery of adherent cells is sufficiently thin (<500 nm) for high-resolution imaging (Figure 2—figure supplement 1). We readily observed T3SS injectisomes at the interface between minicells and the plasma membrane of cultured epithelial cells (Figure 2A,B). We found that in the presence of the injectisomes, the spacing between the surface of the S. Typhimurium minicells and the cultured-cell plasma membrane was ~50 nm, which matches the needle length of the injectisome imaged prior to their application to cultured cells (Figure 2—figure supplement 2A–F,M). The orientation of the injectisomes in the bacteria/target cell interface was perpendicular relative to the host PM, and the needle of the host-interacting injectisomes appeared straight (Figure 2C). We also observed that the interaction of the injectisome and the target cell resulted in a noticeable inward bend of the PM (Figure 2C, Video 1). Consistent with this observation, the distance between the bacterial cell and the PM was shorter (~30 nm) than the distance observed in areas immediately adjacent to the injectisomes (Figure 2—figure supplement 2A–L). However, we did not observe any sign of penetration of the needle filament through the host cell plasma membrane as it has been previously proposed (Hoiczyk and Blobel, 2001). The length of the bacterial-envelope-embedded injectisome base substructure before (30.5 ± 2.3 nm) and after (30.8 ± 2.2 nm) the bacteria/target cell interactions remained unchanged (Figure 2—figure supplement 2M,N). This is in contrast to the Chlamydia T3SS, which has been reported to undergo significant conformational changes upon contact with host cells (Nans et al., 2015). The reasons for these differences are unclear and may either reflect intrinsic differences between these T3SS, or differences in the methodology used, which resulted in higher resolution of the visualized S. Typhimurium T3SS structures. Together, these observations indicate that (1) the interactions of the T3SS injectisome with the target cell results in the bending of the PM without penetration of the needle filament, and (2) upon contact with target cells the injectisome does not undergo conformational changes that could be seen at this level of resolution.
 
-## Visualization of the formation of the translocon in the target host cell membrane
+![Figure 2.](https://cdn.elifesciences.org/articles/39514/elife-39514-fig2-v2.jpg)
+
+**Figure 2.:** (A) A central slice showing a S. Typhimurium minicell interacting with a host. Plasma membrane (PM) of HeLa cell, outer membrane (OM) and inner membrane (IM) of S. Typhimurium are annotated. (B) 3D rendering of the tomogram shown in (A). (C) Tomographic slices showing injectisomes interacting with the host PM. Blue arrows indicate needles attached to the host PM. Direction of the arrow represents the angle of needle perpendicular to the host PM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39514/elife-39514-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Phase contrast microscopy image of HeLa cells grown on a gold Quantifoil grid. (B) A zoom-in view of the boxed area in panel a. (C) A snapshot of HeLa cell edge in a low-magnification montage. (D) Tomographic slice of the boxed area in panel C showing cellular features such as actin filaments and microtubules.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/39514/elife-39514-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A-C) Central slices of tomograms showing different Salmonella - host cell contacts in the presence of T3SS injectisomes. (D-F) The zoom-in views of the boxed regions in the tomographic slices from panels (A-C) respectively. (G-I) Central slices of tomograms showing different Salmonella - host cell contacts without the presence of T3SS injectisomes. (J-L) The zoom-in views of the boxed regions in the tomographic slices from panels (G-I), respectively. Plasma membrane (PM) of HeLa cell, outer membrane (OM) and cytoplasmic membrane (CM) of S. Typhimurium are annotated. (M) Average membrane spacing between S. Typhimurium minicells and HeLa cells at different positions as indicated across the bottom of the bar graph. Error bars indicate s.e.m. Data were compared using an unpaired t test. (N) A summary of statistical measures including average, standard deviation, and standard error of mean.
+
+![Video 1.](https://cdn.elifesciences.org/articles/39514/elife-39514-video1.mp4.jpg)
+
+### Visualization of the formation of the translocon in the target host cell membrane
 
 The deployment of the translocon is an essential step in the T3SS-mediated delivery of effector proteins. However, very little information is available on both, the architecture of the assembled translocon, as well as the mechanisms leading to its deployment on the target cell. It is believed that the deployment process must be initiated by a sensing step most likely mediated by the tip complex (i.e. SipD), a step that must be followed by the subsequent secretion of the translocon components (i.e. SipB and SipC) destined to be inserted on the target eukaryotic cell PM. To capture the formation of the translocon, we analyzed over 600 injectisomes adjacent to the host PM. Classification of sub-tomograms depicting the region of the tip complex (Figure 3A) showed the PM at various conformations and distances to the needle tip (Figure 3B–I), which presumably represent intermediate steps prior to the deployment of the translocon and the resulting intimate attachment of the bacteria to the PM. After further alignment and classification of the injectisomes in intimate association with the PM, we obtained a distinct structure of the putative translocon in the host PM (Figure 3J). Sub-tomogram averages of injectisomes from the S. Typhimurium translocase-deficient mutants ΔsipB or ΔsipD in close proximity to the target cell PM did not show this distinct structure (Figure 3K,L), thus confirming that this density most likely corresponds to the assembled translocon. To better visualize the translocon in 3D, we segmented the distinct translocon structure in the context of the host PM, the needle, and its tip complex (Figure 3M,N). We found that the translocon has a thickness of 8.1 nm spanning the host PM and a diameter of 13.5 nm on its protruding portion (Figure 3J). This size is substantially smaller than reported size of the translocon of enteropathogenic E. coli assembled from purified proteins in vitro, which was estimated to be 55–65 nm in diameter (Ide et al., 2001). One half of the translocon is embedded in the host PM, while the other half protrudes towards the host cytoplasm. In the middle of the protruded portion, we observed a hemispherical hole, which may represent the channel through which effectors make their way into the target cell plasma membrane (Figure 3N). The presence of this structure is entirely consistent with the long-standing notion that the translocon forms a conduit through the host PM to facilitate the translocation of effectors (Mueller et al., 2008).
 
@@ -50,11 +123,21 @@ The deployment of the translocon is an essential step in the T3SS-mediated deliv
 
 Comparison of the arrangement of the injectisomes in relation to the target cell PM in wild-type and translocase-deficient strains revealed marked differences. In comparison to wild-type, bacterial cells obtained from translocase-deficient mutants showed a smaller proportion of injectisomes attached to the host PM (Figure 4A). We also noticed that, unlike wild-type injectisomes, which most often appeared perpendicular to the target cell PM (Figure 2C), the injectisomes from the translocase deficient mutant strains ΔsipB, ΔsipD, or ΔsipBCD appeared arranged at various angles relative to the PM (Figure 4B–J, Figure 4—figure supplement 1). These observations are consistent with the observations indicating that in the absence of the translocases, the injectisomes do not intimately attach to the target cell PM (Lara-Tejero and Galán, 2009). These data also further support the notion that the distinct structure embedded in host membrane in close apposition to the T3SS injectisome needle tip is formed by the translocon.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/39514/elife-39514-fig4-v2.jpg)
+
+**Figure 4.:** (A) Percentage of minicells attached to the host membrane via needle-membrane contact. Data were compared using a chi-squared test. (B, C) Central slices from tomograms showing the ΔsipBCD injectisomes interacting with the host PM. (E, F) Central slices from tomograms showing the ΔsipB injectisomes interacting with the host PM. (H, I) Central slices from tomograms showing the ΔsipD injectisomes interacting with the host PM. Blue arrows indicate needles attached to the host PM. Red arrows indicate unattached needles. (D, G, J) Schematic models depicting needle-attachment patterns from three mutants, respectively.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39514/elife-39514-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Central slices from representative tomograms showing (A) host-free and (B) host-interacting S. Typhimurium minicells from WT, ΔsipB, ΔsipD, ΔsipBCD, and ΔspaO strain.
+
 One of the striking features associated with the intimate T3SS mediated contact and the formation of the translocon is the target cell PM remodeling around the translocon-injectisome needle tip interface, appearing in a ‘tent-like’ conformation (Figure 2C, Video 1). This feature is likely the result of the close association between the bacteria and the target cell presumably mediated not only by the T3SS but also by multiple additional adhesins encoded by S. Typhimurium. In fact, the distance of the bacteria OM and the target cell is shorter than the length of the needle itself, which results in the bending of the target cell PM and the ‘tent-like’ conformation around the injectisome target cell PM interface. It is possible that this intimate association may facilitate the T3SS-mediated translocation of effector proteins (Figure 5, Video 2). These observations are also consistent with previous reports indicating that needle length, which presumably influences the ability of the bacteria to ‘push’ the needle against the host cell membrane, does contribute to type III secretion translocation efficiency (Mota et al., 2005).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/39514/elife-39514-fig5-v2.jpg)
 
-**Figure 5.:** S. Typhimurium injectisome interacting with the host cell membrane.(A) A schematic diagram of S. Typhimurium interacting with the host cell. (B) Molecular model of the T3SS injectisome at the Salmonella-host cell interface.
+**Figure 5.:** (A) A schematic diagram of S. Typhimurium interacting with the host cell. (B) Molecular model of the T3SS injectisome at the Salmonella-host cell interface.
+
+![Video 2.](https://cdn.elifesciences.org/articles/39514/elife-39514-video2.mp4.jpg)
 
 ## Discussion
 
@@ -66,38 +149,305 @@ In summary, our studies have provided a close-up view of the interface between t
 
 ## Materials and methods
 
-## Bacterial strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resources</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>SB1780 (Salmonella enterica serovar Typhymurium SL1344)</td>
+      <td>PMID: 23481398</td>
+      <td>minD::cat (wt)</td>
+      <td>Galán Laboratory (Yale University)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>SB3542</td>
+      <td>This study</td>
+      <td>ΔsipB minD::cat</td>
+      <td>Galán Laboratory (Yale University)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>SB3543</td>
+      <td>This study</td>
+      <td>ΔsipD minD::cat</td>
+      <td>Galán Laboratory (Yale University)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>SB3141</td>
+      <td>This study</td>
+      <td>ΔsipBCD minD::cat</td>
+      <td>Galán Laboratory (Yale University)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>SB3046</td>
+      <td>PMID: 28283062</td>
+      <td>ΔspaO minD::cat</td>
+      <td>Galán Laboratory (Yale University)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>SB3544</td>
+      <td>This study</td>
+      <td>sipB3xFLAG minD::cat</td>
+      <td>Galán Laboratory (Yale University)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>SB3545</td>
+      <td>This study</td>
+      <td>sipB3xFLAG minD::cat</td>
+      <td>Galán Laboratory (Yale University)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>SB3546</td>
+      <td>This study</td>
+      <td>sipB3xFLAG minD::cat</td>
+      <td>Galán Laboratory (Yale University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>pSB3292 (Plasmid)</td>
+      <td>PMID: 28283062</td>
+      <td>hilA in pBAD24</td>
+      <td>Galán Laboratory (Yale University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent</td>
+      <td>minD::cat P22 (P22 bacteriophage lysate)</td>
+      <td>Galán Laboratory (Yale University)</td>
+      <td>P22 lysate from SB1780 S. Typhimurium strain</td>
+      <td>Source of minD:: cat allele</td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>HeLa</td>
+      <td>ATCC</td>
+      <td>Hela (ATCC CCL-2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>M2</td>
+      <td>Sigma-Aldrich</td>
+      <td>F3165</td>
+      <td>1:1000 by volume</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LB Broth</td>
+      <td>Fisher BioReagents</td>
+      <td>BP1426</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LB Agar</td>
+      <td>Fisher BioReagents</td>
+      <td>BP1425</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-arabinose</td>
+      <td>VWR</td>
+      <td>1B1473</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ampicillin Sodium Salt</td>
+      <td>Fisher BioReagents</td>
+      <td>BP1760-25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gold grid</td>
+      <td>Quantifoil</td>
+      <td>R 2/1 on Au 200 mesh</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>PMID: 16182563</td>
+      <td>http://bio3d.colorado.edu/SerialEM/</td>
+      <td>Data acquisition</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>PMID: 28250466</td>
+      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>
+      <td>Motion correction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Tomoauto</td>
+      <td>PMID: 26863591</td>
+      <td>https://github.com/DustinMorado/tomoauto</td>
+      <td>Tomogram reconstruction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Tomo3D</td>
+      <td>PMID: 25528570</td>
+      <td>https://sites.google.com/site/3demimageprocessing/tomo3d</td>
+      <td>Tomogram reconstruction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMOD</td>
+      <td>PMID: 8742726</td>
+      <td>http://bio3d.colorado.edu/imod/</td>
+      <td>Tomogram reconstruction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>I3</td>
+      <td>PMID: 16973379</td>
+      <td>http://www.electrontomography.org/</td>
+      <td>Sub-tomogram averaging</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>PMID: 15264254</td>
+      <td>http://www.cgl.ucsf.edu/chimera/</td>
+      <td>3D rendering</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF ChimeraX</td>
+      <td>PMID: 28710774</td>
+      <td>https://www.rbvi.ucsf.edu/chimerax/</td>
+      <td>3D rendering</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains
 
 The minicell producing S.Typhimurium ΔminD, which is referred to in this study as wild-type, has been previously described (Carleton et al., 2013; Hu et al., 2017). Mutations in the genes encoding the translocases (∆sipB, ∆sipC) or tip complex (∆sipD) proteins where introduced in into the ∆minD S. Typhimurium strain by allelic exchange as previously described (Lara-Tejero et al., 2011). The strains were listed in Key Resources Table.
 
-## Isolation of minicells
+### Isolation of minicells
 
 Minicell producing bacterial strains were grown overnight at 37°C in LB containing 0.3M NaCl. Fresh cultures were prepared from a 1:100 dilution of the overnight culture and then grown at 37°C to late log phase in the presence of ampicillin (200 μg/mL) and L-arabinose (0.1%) to induce the expression of regulatory protein HilA and thus increase the number of injectisomes partitioning to the minicells (Carleton et al., 2013). To enrich for minicells, the culture was centrifuged at 1000 x g for 5 min to remove bacterial cells, and the supernatant fraction was further centrifuged at 20,000 x g for 20 min to collect the minicells. The minicell pellet was resuspended in Dulbecco’s Modified Eagles Medium (DMEM) prior to their application to cultured HeLa cells.
 
-## Antibody labeling
+### Antibody labeling
 
 Minicells expressing 3xFLAG-epitope-tagged versions of SipB, SipC, and SipD were incubated with a saturating amount of anti-FLAG antibody (1:1000 by volume) for 30 min at room temperature. After incubation, minicells were pelleted and resuspended in a fresh LB broth containing ampicillin (200 μg/ml) for 3 times to remove unbound antibodies.
 
-## HeLa cell culture on EM grid and infection
+### HeLa cell culture on EM grid and infection
 
 HeLa cells were cultured in DMEM supplemented with 10% fetal bovine serum and gentamicin (50 μg/ml). The day before plating, gold EM grids with 2/1 Quantifoil were placed in glass bottom MatTek dishes (facilitating fluorescence imaging and removal for cryo-preservation) and coated with 0.1 mg/ml poly-D-lysine overnight at 37°C. After rinsing the grids with sterile water, freshly trypsinized HeLa cells were plated on top of the pre-treated grids that were allowed to grow overnight at 37°C/5% CO2. To infect HeLa cells with S. Typhimurium minicells, grids with adherent HeLa cells were removed from the culture dish and minicells were directly applied to the grids.
 
-## Vitrification and cryoEM sample preparation
+### Vitrification and cryoEM sample preparation
 
 At different time points after infection, the EM grids with HeLa cells and S. Typhimurium minicells were blotted with filter paper and vitrified in liquid ethane using a gravity-driven plunger apparatus as described (Hu et al., 2017; Hu et al., 2015).
 
-## Cryo-ET data collection and reconstruction
+### Cryo-ET data collection and reconstruction
 
 The frozen-hydrated specimens were imaged with 300kV electron microscopes. 713 tomograms were acquired from single-axis tilt series at ~6 μm defocus with cumulative does of ∼80 e−/Å2 using Polara equipped with a field emission gun and a direct detection device (Gatan K2 Summit). 313 tomograms were acquired from single-axis tilt series at ~1 μm defocus with cumulative does of ∼50 e−/Å2 using Titan Krios equipped with a field emission gun, an energy filter, Volta phase plate, and a direct detection device (Gatan K2 Summit). The tomographic package SerialEM (Mastronarde, 2005) was utilized to collect 35 image stacks at a range of tilt angles between −51° and +51° for each data set. Each stack contained 10–15 images, which were first aligned using Motioncorr (Li et al., 2013) and were then assembled into the drift-corrected stacks by TOMOAUTO (Hu et al., 2015). The drift-corrected stacks were aligned and reconstructed by using marker-free alignment (Winkler and Taylor, 2006) or IMOD marker-dependent alignment (Kremer et al., 1996). In total, 1051 tomograms (3,600 × 3,600 × 400 pixels) were generated for detailed examination of the Salmonella-host interactions (Table 2). The softwares used in the study were listed in Key Resources Table.
 
-## Sub-tomogram analysis
+**Table 2.**
+ Number of tomograms collected and analyzed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Number of tomograms collected</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT - HeLa</td>
+      <td>458</td>
+    </tr>
+    <tr>
+      <td>ΔsipB - HeLa</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>ΔsipD - HeLa</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td>ΔsipBCD - HeLa</td>
+      <td>86</td>
+    </tr>
+    <tr>
+      <td>ΔspaO - HeLa</td>
+      <td>84</td>
+    </tr>
+    <tr>
+      <td>WT minicells</td>
+      <td>85</td>
+    </tr>
+    <tr>
+      <td>ΔsipB minicell</td>
+      <td>115</td>
+    </tr>
+    <tr>
+      <td>ΔsipD minicell</td>
+      <td>142</td>
+    </tr>
+    <tr>
+      <td>sipB-FLAG - HeLa</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>sipC-FLAG - HeLa</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>sipD-FLAG - HeLa</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>sipB-FLAG</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>sipB-FLAG</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>sipB-FLAG</td>
+      <td>13</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>1051</td>
+    </tr>
+  </tbody>
+</table>
+
+### Sub-tomogram analysis
 
 Sub-tomogram analysis was accomplished as described previously (Hu et al., 2015) to analyze over 700 injectisomes extracted from 458 tomograms. Briefly, we first identified the injectisomes visually on each minicell. Two coordinates along the needle were used to estimate the initial orientation of each particle assembly. For initial analysis, 4 × 4 × 4 binned sub-tomograms (128 × 128 × 128 voxels) of the intact injectisome were used for alignment and averaging by using the tomographic package I3 (Winkler and Taylor, 2006; Winkler et al., 2009). Then multivariate statistical analysis and hierarchical ascendant classification were used to analyze the needle tip complex (Winkler et al., 2009).
 
-## 3-D visualization and molecular modeling
+### 3-D visualization and molecular modeling
 
 Outer membrane (OM) and inner membrane (IM) of S. Typhimurium, Plasma membrane (PM) of HeLa cells, actin filaments, and ribosomes were segmented using EMAN2 (Chen et al., 2017). UCSF Chimera (Pettersen et al., 2004) and UCSF ChimeraX (Goddard et al., 2018) were used to visualize the sub-tomogram average structures in 3-D and build atomic model of the T3SS injectisome. The atomic model was built as described briefly (Hu et al., 2017) except for the basal body, which we docked PDB-5TCR (Worrall et al., 2016) and PDB-3J1W (Bergeron et al., 2013). Video clips for the supplemental videos were generated using UCSF Chimera, UCSF Chimera X, and IMOD, and edited with iMovie.
 
-## Distance measurement and statistical analysis
+### Distance measurement and statistical analysis
 
 IMOD (3dmod Graph) was used to measure lengths (in pixels) of various features. Each measurement was recorded in MS Excel for statistical analysis: Mean, standard deviation, standard error of mean, and Welch’s t-test.

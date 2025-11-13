@@ -12,14 +12,14 @@
 
 ### Affiliations
 
-1. https://ror.org/0387jng26 Otto Hahn Group Cognitive Neurogenetics, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany
+1. Otto Hahn Group Cognitive Neurogenetics, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))
 2. International Max Planck Research School on Neuroscience of Communication: Function, Structure, and Plasticity (IMPRS NeuroCom) Leipzig Germany
-3. https://ror.org/028hv5492 Department of Cognitive Neurology, University Hospital Leipzig and Faculty of Medicine, University of Leipzig Leipzig Germany
-4. https://ror.org/02nv7yv05 Institute of Neuroscience and Medicine (INM-7: Brain and Behavior), Research Centre Jülich Jülich Germany
-5. https://ror.org/01bfgxw09 Center for the Developing Brain, Child Mind Institute New York United States
-6. https://ror.org/013meh722 Department of Psychiatry, University of Cambridge Cambridge United Kingdom
-7. https://ror.org/01pxwe438 McConnell Brain Imaging Centre, Montréal Neurological Institute and Hospital, McGill University Montréal Canada
-8. https://ror.org/024z2rq82 Institute of Systems Neuroscience, Heinrich Heine University Düsseldorf Düsseldorf Germany
+3. Department of Cognitive Neurology, University Hospital Leipzig and Faculty of Medicine, University of Leipzig Leipzig Germany ([ROR:028hv5492](https://ror.org/028hv5492))
+4. Institute of Neuroscience and Medicine (INM-7: Brain and Behavior), Research Centre Jülich Jülich Germany ([ROR:02nv7yv05](https://ror.org/02nv7yv05))
+5. Center for the Developing Brain, Child Mind Institute New York United States ([ROR:01bfgxw09](https://ror.org/01bfgxw09))
+6. Department of Psychiatry, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+7. McConnell Brain Imaging Centre, Montréal Neurological Institute and Hospital, McGill University Montréal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+8. Institute of Systems Neuroscience, Heinrich Heine University Düsseldorf Düsseldorf Germany ([ROR:024z2rq82](https://ror.org/024z2rq82))
 
 † Corresponding author
 
@@ -41,13 +41,53 @@ Here, we investigated the genetic basis of asymmetry of functional organization.
 
 ## Results
 
-## Hemispheric functional connectivity gradients (Figure 1)
+### Hemispheric functional connectivity gradients (Figure 1)
+
+![Figure 1.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig1-v3.jpg)
+
+**Figure 1.:** (a) Parcellation using Glasser atlas (Glasser et al., 2016) in each hemisphere and Cole-Anticevic (CA) networks (Ji et al., 2019) for humans. (b) Individual FC in each hemispheric pattern, that is left-left (LL, intra-hemisphere), right-right (RR, intra-hemisphere), left-right (LR, inter-hemisphere), and right-left (RL, inter-hemisphere). (c) Time series of two parcels and the mean functional connectivity (FC) matrix between left and left hemisphere (LL). (d) Gradient template using the group-level gradient of LL. Dots represent parcels and are colored according to CA networks. The decomposition scatter on the right below depicts x-axis (number of eigenvectors) and y-axis (the contribution of each eigenvector to the total). (e) Correlation between left and right mean gradients across subjects of intra- and inter-hemispheric patterns. Left panel is the correlation between gradients of FC LL and FC RR (intra-hemispheric pattern). Right panel is the correlation between gradients of FC LR and FC RL (inter-hemispheric pattern). All correlation coefficients along G1, G2, and G3 are greater than 0.9.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig1-figsupp1-v3.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig1-figsupp2-v3.jpg)
 
 To obtain intra-hemispheric gradients, we first computed the functional connectivity (FC) in 180 homologous parcels per hemisphere using a multimodal parcellation (MMP, Glasser et al., 2016) for each subject (n=1014). For the network level analyses, we employed the Cole-Anticevic atlas (Ji et al., 2019) based on the MMP (Figure 1a). For each individual, FC was summarized in two different patterns (Figure 1b): FC within the left hemisphere (LL mode, intra-hemispheric pattern), within the right hemisphere (RR mode, intra-hemispheric pattern), from left to right hemisphere (LR mode, inter-hemispheric pattern), and from right to left hemisphere (RL mode, inter-hemispheric pattern). We selected the LL mode as the reference template for the gradients approach, and therefore assessed the mean FC that was determined by averaging LL FC across subjects (lower panel in Figure 1c). Here, the reference matches the order and direction of the gradient but does not rescale the gradients. The template gradients were computed by implementing diffusion map embedding, a non-linear dimension reduction technique (Coifman et al., 2005), on the mean LL FC using BrainSpace (Vos de Wael et al., 2020). The current study analyzed asymmetry and its heritability using the first three gradients that explained the most variance (Figure 1d). Each gradient has reasonably well-described functional associations (G1: unimodal-transmodal gradient with 24.1%, G2: somatosensory-visual gradient with 18.4%, G3: multi-demand gradient with 15.1%). However, given that we extracted 10 gradients to maximize the degree of fit (Margulies et al., 2016; Mckeown et al., 2020). We describe mean asymmetry of G4-10 in Figure 1—figure supplement 1.
 
 Next, individual gradients were computed for each subject and the four different FC modes and aligned to the template gradients with Procrustes rotation. It was applied without a scaling factor so that the reference template only matters for matching the order and direction of the gradients. The procedure rotates a matrix to maximum similarity with a target matrix minimizing the sum of squared differences. As noted, Procrustes matching was applied without a scaling factor so that only the reference template matters for matching the order and direction of the gradients. Therefore, it allows comparison between individuals and hemispheres. The individual mean gradients showed high correlation with the group gradients LL (all Spearman r>0.97, P spin <0.001). Figure 1e shows the correlation between LL and RR, LR, and RL modes. In each case, the gradients were highly similar. Similar to previous work (Coifman et al., 2005) we observed that the principal gradient (G1) traversed between unimodal regions and transmodal regions (e.g. default-mode network: DMN) whereas a visual to somatosensory gradient was found for G2. The tertiary gradient (G3) dissociated control from DMN and sensory-motor networks (Figure 1d and e, and Figure 1—figure supplement 2). We employed spin permutations for correcting spatial Spearman correlation p values, that is p spin. For the intra-hemispheric pattern, the mean gradients of LL were strongly correlated with those of RR (Spearman rG1=0.988, Pspin <0.001, rG2=0.989, Pspin <0.001, rG3=0.967, Pspin <0.001). For the inter-hemispheric pattern, the mean gradients of LR were also strongly correlated with those of RL (Spearman rG1=0.993, Pspin <0.001, rG2=0.985, Pspin <0.001, rG3=0.969, Pspin <0.001).
 
-## Asymmetry of functional gradients in humans (Figure 2)
+### Asymmetry of functional gradients in humans (Figure 2)
+
+![Figure 2.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig2-v3.jpg)
+
+**Figure 2.:** (a) Mean asymmetry index (AI) of intra- and inter-hemispheric patterns in humans. Red and blue indicate rightward and leftward asymmetry respectively. (b) FDR correction for the P values of AI shown in A; (c) Violin plots of mean AI network loading across individuals (n=1014), with median, 25%-75%, and distribution at 25/75% -/+1.5 interquartile range. Networks are ranked from leftward (language) to rightward asymmetry (frontoparietal) along the intra-hemispheric principal gradient.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** The upper panel is LL versus RR, and the lower panel is LR versus RL as well as their difference in connectivity (right panel), blue and red reflect leftward and rightward FC.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig2-figsupp2-v3.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig2-figsupp3-v3.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig2-figsupp4-v3.jpg)
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig2-figsupp5-v3.jpg)
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig2-figsupp6-v3.jpg)
+
+**Figure 2—figure supplement 6.:** To test the vertex-wise asymmetry, we randomly chose 100 subjects and used the vertex-wise FC gradients to calculate the asymmetry.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig2-figsupp7-v3.jpg)
+
+**Figure 2—figure supplement 7.:** Upper panel is the map with Procrustes alignment (main findings). Lower panel is the map without alignment. Blue color indicates the leftward asymmetry and red color indicates the rightward asymmetry.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig2-figsupp8-v3.jpg)
+
+**Figure 2—figure supplement 8.:** Upper panel is the map with Procrustes alignment (main findings). Lower panel is the map without alignment. Blue color indicates the leftward asymmetry and red color indicates the rightward asymmetry.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig2-figsupp9-v3.jpg)
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig2-figsupp10-v3.jpg)
 
 Next, we computed the asymmetry index (AI) by subtracting the right hemispheric gradient scores of each parcel from the corresponding left hemispheric scores for our intra- and inter-hemispheric connectivity patterns (Figure 2a). A red AI indicates rightward dominance in gradient scores, whereas blue indicates leftward dominance. The differences in gradient loadings (parcel No.25: Peri-Sylvian language area) reflect differences in connectivity profiles (top 10%) between LL versus RR, or LR versus RL, respectively (Figure 2—figure supplement 1). The significance of AI scores for the intra- and inter-hemispheric patterns were reported after false discovery rate adjustment (P FDR < 0.05) (Figure 2b), and Cohen’s d maps can be seen in Figure 2—figure supplement 2. Frontal and temporal lobes showed the greatest intra-hemispheric asymmetry in G1 (Supplementary file 1). In particular, regions in ventral- and dorsolateral PFC (11 l, p9-46v, p10p) were the three most rightward asymmetric areas and regions in temporal polar cortex, dorso/posterior superior temporal sulcus, and inferior frontal gyrus (TGv, STSdp, and 55b) were the three most leftward asymmetric areas in the intra-hemispheric pattern. Network-level analyses (Figure 2c) indicated that the language (t=41.3, df = 1013, P FDR < 0.001) and default mode (t=17.3, df = 1013, P FDR < 0.001) networks had a high leftward AI, while the frontoparietal network (t=–26.0, df = 1013, P FDR < 0.001) had a high rightward AI. We observed no significant difference of AI in primary and secondary visual networks. Overall, asymmetry was widely present along the first three connectivity gradients, including G2 and G3. Detailed numbers can be seen at online ipython notebook (code availability).
 
@@ -55,13 +95,25 @@ For the inter-hemispheric pattern, a large portion of the cerebral cortex showed
 
 The mean AI scores across individuals for the intra- and inter-hemispheric patterns showed high similarity (Spearman r G1 = 0.645, P spin <0.001). This may indicate that the asymmetric functional organization is a feature that is captured both by inter- and intra-hemispheric connectivity patterns.
 
-## Heritability of asymmetry of functional gradients in humans (Figure 3)
+### Heritability of asymmetry of functional gradients in humans (Figure 3)
+
+![Figure 3.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig3-v3.jpg)
+
+**Figure 3.:** (a) Heritability (orange colorbar) and p values after FDR correction (green colorbar). (b) Scatter plot of heritability and AI scores. The x- and y-axes are the mean asymmetry index and heritability, respectively. Dots represent parcels and are colored according to CA networks. The small scatter plots with a regression line are the corresponding absolute mean asymmetry index (x-axis) and heritability (y-axis).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig3-figsupp1-v3.jpg)
 
 We next computed the heritability of the AI scores of the functional gradient for the intra- and inter-hemispheric patterns using Solar-Eclipse 8.5.1 beta (http://solar-eclipse-genetics.org/). We found that left-right differences observed in large-scale functional organization axes were heritable (Figure 3a). Specifically, for the intra-hemispheric pattern, we found sensory-motor regions, middle temporal regions, dorso-lateral, and medial prefrontal regions to be heritable (P FDR < 0.05). In the case of the inter-hemispheric pattern, all cortical regions with the exception of visual areas and superior temporal and insular regions were heritable (P FDR < 0.05). Notably, language-associated areas such as the PSL (Peri-Sylvian language area) and 55b had the highest heritability in both the hemispheric patterns (PSL: intra: h2=0.46, P FDR < 0.001 and inter: h2=0.34, P FDR < 0.001, Supplementary file 1). However, BA area 44 (Broca’s area) showed low heritability (intra: hGüntürkün et al., 2020 = 0.12, P FDR = 0.026 and inter: h2=0.12, P FDR = 0.018). The G2 and G3 results are shown in Figure 3—figure supplement 1.
 
 To assess whether regions showing higher asymmetry had an increased heritability of G1, we plotted our cortical maps of asymmetry along those reporting heritability (Figure 3b). For the correlation between the absolute asymmetry index and heritability (Figure 3b small scatter), gradients of the intra-hemispheric FC patterns were significant (Pearson r=0.245, P spin = 0.005) while gradients of the inter-hemispheric FC were not (Pearson r=0.055, P spin = 0.613).
 
-## Asymmetry of functional gradients in macaques (Figure 4)
+### Asymmetry of functional gradients in macaques (Figure 4)
+
+![Figure 4.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig4-v3.jpg)
+
+**Figure 4.:** (a) Parcellation used Markov atlas in macaques Markov et al., 2014. (b) Template gradients of group level connectivity of LL. (c) Mean asymmetry index of G1 in macaques. (d) Normalized (Cohen’s d) asymmetry of G1 in macaques and humans aligned to macaque’s surface. Purple indicates leftward asymmetry, whereas yellow indicates rightward asymmetry. (e) Similarity of normalized asymmetry of G1 between humans and macaques. (f) The details of how the human Cole-Anticevic network atlas is projected to the macaque surface can be seen in the Methods. Bold colors indicate human mean cohen's D values in a given network and pastel colors indicate macaque mean cohen's D values in a given network. Networks are ranked from leftward (language) to rightward asymmetry (frontoparietal) along the intra-hemispheric principal gradient in humans for comparison.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig4-figsupp1-v3.jpg)
 
 To probe the phylogenetic conservation of asymmetry of functional organization in primates, we performed the same diffusion map embedding analysis on macaque resting-state FC data (n=19, PRIMATE-DE sample Xu et al., 2020; Milham et al., 2018). We used the Markov parcellation (Markov et al., 2014) in macaques, resulting in 91 parcels per hemisphere (Figure 4a) and then computed FC in the four patterns: LL and RR (intra-hemispheric patterns), and LR and RL (inter-hemispheric patterns). Following the same connectome gradients analysis pipeline as deployed on the human FC data, we obtained the template gradients on the LL intra-hemispheric FC pattern (Figure 4b). The first three template gradients explained 20.0%, 15.2%, and 12.8% of total variance, respectively. G1 described an axis traversing dorsolateral prefrontal and parietal regions (anterior-posterior).
 
@@ -71,11 +123,17 @@ To compare human and macaque connectomic gradients, we aligned human gradients t
 
 We then projected the human functional networks (Ji et al., 2019) on the macaque surface (Xu et al., 2020), to qualitatively compare differences in human functional networks between humans and macaques (Figure 4f and Figure 4—figure supplement 1). In the case of the intra-hemispheric asymmetry of the principal FC gradient, we observed that humans showed high leftward asymmetry in the language and default mode networks but macaques did not. Moreover, humans showed high rightward asymmetry in the frontoparietal and cingulo-opercular networks but macaques did not. Humans and macaques showed an opposite direction of asymmetry in auditory, orbito-affective, and secondary visual networks. For the inter-hemispheric FC pattern, macaques and humans showed only subtle differences.
 
-## Functional decoding along the normalized asymmetry of G1 (Figure 5)
+### Functional decoding along the normalized asymmetry of G1 (Figure 5)
+
+![Figure 5.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig5-v3.jpg)
+
+**Figure 5.:** The 20 bins were generated by normalized (Cohen’s d) asymmetry of G1 in humans. Cool color indicates regions showing leftward dominance and warm color indicates regions showing rightward dominance. The order of the terms of the y-axis was generated by the weighted score of activation (z-score >0.5) * normalized asymmetry.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77215/elife-77215-fig5-figsupp1-v3.jpg)
 
 Finally, we investigated the relationship between patterns of asymmetry of functional organization in humans and task-based meta-analytic functional activations. To do so, we projected meta-analytical fMRI activation maps (Yarkoni et al., 2011) along the normalized (Cohen’s d) asymmetry of G1 (Figure 5). Our choice for the 24 cognitive domain terms were consistent with prior literature (Margulies et al., 2016). Here, we calculated the weighted score by activation z-score (parcels where activation z-score was greater than 0.5) multiplied by the normalized asymmetry, suggesting leftward to rightward preference, seen from top to bottom of the y-axis of Figure 5. Language, semantics, and reading domains were associated with leftward hemispheric preference, whereas cognitive control, inhibition, and working memory were associated with rightward hemispheric preference. For the asymmetry of the inter-hemispheric FC gradient, we observed a similar pattern of association (Figure 5—figure supplement 1). This indicates that patterns of asymmetry in functional organization also align with task-based activations consistently reported in the literature.
 
-## Robustness analyses
+### Robustness analyses
 
 Complementing our main AI calculation (L-R), we additionally used AI_norm (L-R)/(L+R), with rescaling the distribution of gradients to positive values, to explore whether our results were robust with respect to AI calculation (Figure 2—figure supplement 3). We found that for G1, asymmetric effects were highly correlated with the main asymmetric effects (Spearman r intra- hemisphere = 0.851, P uncorrected <0.001; r inter-hemisphere = 0.863, P uncorrected <0.001). Significant correlation was also found in G2 (Spearman r intra-hemisphere = 0.681, P uncorrected <0.001; r inter-hemisphere = 0.228, P uncorrected = 0.002) and in G3 (Spearman r intra-hemisphere = 0.795, P uncorrected <0.001; r inter- hemisphere = 0.879, P uncorrected <0.001).
 
@@ -113,62 +171,62 @@ To conclude, we investigated the genetic and phylogenetic basis of asymmetry of 
 
 The current research complies with all relevant ethical regulations as set by The Independent Research Ethics Committee at the Medical Faculty of the Heinrich-Heine-University of Duesseldorf (study number 2018–317).
 
-## Participants
+### Participants
 
-## Humans
+#### Humans
 
 For the analyses in humans, we used the Human Connectome Project (HCP) S1200 data release (Van Essen et al., 2013). That release contains four sessions of resting state (rs) fMRI scans for 1206 healthy young adults and their pedigree information (298 monozygotic and 188 dizygotic twins as well as 720 singletons). We included individuals with a complete set of four fMRI scans that passed the HCP quality assessment (Van Essen et al., 2013; Glasser et al., 2013). Finally, our sample consisted of 1014 subjects (470 males) with a mean age of 28.7 years (range: 22–37).
 
 For the replication, we employed the UKB dataset (application ID: 41655) including 34,830 subjects’ imaging data. Details on data processing and acquisition can be found in the UKB Brain imaging documentation (https://biobank.ctsu.ox.ac.uk/crystal/crystal/docs/brain_mri.pdf). Briefly, resting-state imaging data was motion corrected, intensity normalized, high-pass temporally filtered, and further denoised using the ICA-FIX pipeline, all implemented in FSL. MPM parcellation was warped to subject-space based on the high-resolution T1-weighted anatomical image. Individual warping parameters were applied to map the MPM parcellation to the functional space following T1-rsfMRI alignment. The age range of the UKB sample was from 40 to more than 70 years.
 
-## Macaques
+#### Macaques
 
 We selected rhesus macaque monkeys’ rs-fMRI data from the non-human primate (NHP) consortium PRIME-DE (http://fcon_1000.projects.nitrc.org/indi/indiPRIME.html) from Oxford. The full dataset consisted of 20 rhesus macaque monkeys (macaca mulatta) scanned on a 3T with a 4-channel coil (Noonan et al., 2014). The rs-fMRI data were collected with 2 mm isotropic resolution, TR = 2 s, 53.3 mins (1600 volumes). Details can be seen in Xu et al., 2020. Nineteen macaques with successful preprocessing and surface reconstruction were included in the current study (all males, age = 4.01 ± 0.98 years, weight = 6.61 ± 2.04 kilograms).
 
 Macaque data were preprocessed with an HCP-like pipeline (Xu et al., 2015)⁠, described elsewhere (Xu et al., 2020). In brief, it included temporal compression, motion correction, 4D global scaling, nuisance regression using white matter (WM), cerebrospinal fluid (CSF), and Friston-24 parameter models, bandpass filtering (0.01–0.1 Hz), detrending, and co-registration to the native anatomical space. The data were then projected to the native midcortical surface and smoothed along the surface with FWHM = 3 mm. Finally, the preprocessed data were down-sampled to the surface space (with resolution of 10,242 vertices in each hemisphere).
 
-## Parcellations
+### Parcellations
 
-## Multimodal parcellation and Cole-Anticevic network
+#### Multimodal parcellation and Cole-Anticevic network
 
 We used multimodal parcellation (MMP) of 360 areas (180 per hemisphere) for humans (Glasser et al., 2016)⁠. This atlas has been generated using the gradient-based parcellation approach with similar gradient ridges presenting in roughly corresponding locations in both hemispheres, which is suitable for studying asymmetry across homologous parcels. Additionally, based on MMP, we used the Cole-Anticevic Brain-wide Network Partition (CA network), which includes in total 12 functional networks (Ji et al., 2019).
 
-## Desikan-Killiany atlas
+#### Desikan-Killiany atlas
 
 To ensure our results were reliable we repeated the analysis in humans using a different brain atlas. The Desikan-Killiany atlas (Desikan et al., 2006) contains 34 cortical parcels per hemisphere in humans and has high correspondence across two hemispheres.
 
-## Markov parcellation
+#### Markov parcellation
 
 For the macaques, we used 91 cortical areas per hemisphere in the Markov M132 architectonic parcellation (Markov et al., 2014). This directed and weighted atlas is generated based on the connectivity profiles. The 91-area parcellation in macaques is valuable for comparison with connectivity analyses in humans.
 
-## Functional connectivity
+### Functional connectivity
 
 All rs-fMRI data underwent HCP’s minimal preprocessing (Glasser et al., 2013) and were coregistered using a multimodal surface matching algorithm (MSMAll) (Robinson et al., 2014) to the HCP template 32 k_LR surface space. The template consists of 32,492 total vertices per hemisphere (59,412 excluding the medial wall). Cortical time series were averaged within a previously established multi-modal parcellation schemes: for humans the 360-parcel Glasser atlas (180 per hemisphere) (Glasser et al., 2016) and the 182-parcel Markov atlas (91 per hemisphere) for macaques (Markov et al., 2014). To compute the functional connectivity (FC), time-series of cortical parcels were correlated pairwise using the Pearson product moment and then Fisher’s z-transformed in human and macaque data, separately. Individual FC maps were also averaged across four different rs-fMRI sessions for humans ([LR1], [LR2], [RL1], and [RL2]). We computed the FC in four different patterns, both for human and macaque data: FC within the left and right hemispheres (LL intra-hemisphere, RR intra-hemisphere), from the left to right hemisphere (LR inter-hemisphere) and from the right to left hemisphere (RL, inter-hemisphere).
 
-## Connectivity gradients
+### Connectivity gradients
 
 Next we employed the nonlinear dimensionality reduction technique (Margulies et al., 2016) to generate the group level gradients of the mean LL FC across individuals. We then set the group-level gradients as the template and aligned each individual gradient with Procrustes rotation to the template. Finally, the comparative individual functional gradients of each FC pattern were assessed. All steps were accomplished in the Python package Brainspace (Vos de Wael et al., 2020). In brief, the algorithm estimates a low-dimensional embedding from a high-dimensional affinity matrix. Along these low-dimensional axes, or gradients, cortical nodes that are strongly interconnected, by either many suprathreshold edges or few very strong edges, are closer together. Nodes with little connectivity similarly are farther apart. Regions having similar connectivity profiles are embedded together along the gradient axis. The name of this approach, which belongs to the family of graph Laplacians, is derived from the equivalence of the Euclidean distance between points in the diffusion embedded mapping (Coifman et al., 2005; Margulies et al., 2016; Vos de Wael et al., 2020). It is controlled by a single parameter α, which controls the influence of the density of sampling points on the manifold (α=0, maximal influence; α=1, no influence). On the basis of the previous work (Margulies et al., 2016), we followed recommendations and set α=0.5, a choice that retains the global relations between data points in the embedded space and has been suggested to be relatively robust to noise in the covariance matrix.
 
 The input of the analysis was the FC matrix, which was cut off at 90% similar to previous studies (Margulies et al., 2016). The current study selected the first three FC LL gradients (G1, G2, and G3) that explained 24.1, 18.4, and 15.1% of total variance in humans, as well as 18.9, 15.2, and 12.8% of total variance in macaques.
 
-## Asymmetry index
+### Asymmetry index
 
 To quantify the left and right hemisphere differences, we chose left-right as the asymmetry index (AI) (Liang et al., 2021; Raemaekers et al., 2018). In addition, we also calculated the normalized AI with the following formula, (left-right)/(left +right), which is usually used in structural studies to verify whether there is a difference between unnormalized AI and normalized AI. For the intra-hemispheric pattern, the AI was calculated using LL-RR. A positive AI-score meant that the hemispheric feature dominated leftwards, while a negative AI-score dominated rightwards. For the inter-hemispheric pattern we used LR-RL to calculate the AI. Notably, we added ‘minus’ to the AI scores or Cohen’s d scores in the figures in order to conveniently view the lateralization direction.
 
-## Heritability analysis
+### Heritability analysis
 
 To map the heritability of functional gradient asymmetry in humans, we used the Sequential Oligogenic Linkage Analysis Routines (SOLAR, v8.5.1b) (Almasy and Blangero, 1998). In brief, heritability indicates the impact of genetic relatedness on a phenotype of interest. SOLAR uses maximum likelihood variance decomposition methods to determine the relative importance of familial and environmental influences on a phenotype by modeling the covariance among family members as a function of genetic proximity (Valk et al., 2020; Almasy and Blangero, 1998). Heritability (i.e. narrow-sense heritability h2) represents the proportion of the phenotypic variance (σ2p) accounted for by the total additive genetic variance (σ2g), that is h2 = σ2g / σ2p. Phenotypes exhibiting stronger covariances between genetically more similar individuals than between genetically less similar individuals have higher heritability. In this study, we quantified the heritability of asymmetry of functional gradients. We added covariates to our models including age, sex, age2, and age ×sex.
 
-## Alignment of humans to macaques
+### Alignment of humans to macaques
 
 To phylogenetically map the asymmetry of functional gradients across macaques and humans, we transformed the human gradients to macaque cortex surface based on a functional joint alignment technique (Xu et al., 2020). This method leverages advances in representing functional organization in high-dimensional common space and provides a transformation between human and macaque cortices, also previously used in Valk et al., 2020; Valk et al., 2022.
 
 In the present study, we aligned Cohen’s d of the human asymmetry index to the macaque surface. Cohens’ d explains the effect size of the asymmetry index. Following the joint alignment, we further computed the Spearman correlation between macaques and humans to evaluate the similarity in asymmetric patterns of the functional gradients. Finally, we compared Cohen’s d between macaques and humans and summarized the results with Markov parcellation (Markov et al., 2014). To illustrate our findings at the functional network level, we projected human networks (Ji et al., 2019) on the macaque surface.
 
-## NeuroSynth meta-analysis
+### NeuroSynth meta-analysis
 
 To evaluate the association of function decoding and asymmetry of the principal gradient, we projected the meta-analytical task-based activation along the normalized asymmetry (Cohen’s d) of G1. Our choice for the 24 cognitive domain terms were consistent with (Margulies et al., 2016). The activation database we used for meta-analyses was the Neurosynth V3 database (Yarkoni et al., 2011). The surface-based V3 database is available in the github depository (data availability). In the present study, to look at how the right hemisphere and left hemisphere decode functions separately, the leftward normalized asymmetry was put on and the rightward normalized asymmetry was put on the right hemisphere. Other regions became zero. We generated 20 bins along the normalized asymmetry averagely (5% per bin). Thus, each function term had a mean activation z-score per bin. To assess how much the function term was leftward or rightward lateralized, we calculated a weighted score by mean activation (where activation z-score greater than 0.5) multiplied by normalized asymmetry. We roughly regarded this score as the lateralization level. The order of the function terms generated by this calculation reflected the left-right lateralization dominance axis.
 
-## Data availability
+### Data availability
 
 All human data analyzed in this manuscript were obtained from the open-access HCP young adult sample (https://www.humanconnectome.org/), UK Biobank (https://www.ukbiobank.ac.uk/). Macaque data came from PRIME-DE (http://fcon_1000.projects.nitrc.org/indi/indiPRIME.html). Gradient analyses and visualization were performed using the Python package Brainspace (Vos de Wael et al., 2020) (https://brainspace.readthedocs.io/en/latest/index.html). Heritability analyses were performed using Solar Eclipse 8.5.1b (https://www.solar-eclipse-genetics.org). Task-based function association analyses were based on NeuroSynth (Yarkoni et al., 2011) (https://neurosynth.org/). Full statistical scripts can be found at https://github.com/CNG-LAB/cngopen/tree/main/asymmetry_functional_gradients (copy archived at swh:1:rev:07d4a1a03267dac12ac8bfbccc8e09049cac9f31;path=/asymmetry_functional_gradients; Bayrak et al., 2022).

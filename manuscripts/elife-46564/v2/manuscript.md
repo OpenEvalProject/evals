@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.46564.001 The chromosomal replication origin region ( ori ) of characterised bacteria is dynamically positioned throughout the cell cycle. In slowly growing Escherichia coli , ori is maintained at mid-cell from birth until its replication, after which newly replicated sister ori s move to opposite quarter positions. Here, we provide an explanation for ori positioning based on the self-organisation of the Structural Maintenance of Chromosomes complex, MukBEF, which forms dynamically positioned clusters on the chromosome. We propose that a non-trivial feedback between the self-organising gradient of MukBEF complexes and the ori s leads to accurate ori positioning. We find excellent agreement with quantitative experimental measurements and confirm key predictions. Specifically, we show that ori s exhibit biased motion towards MukBEF clusters, rather than mid-cell. Our findings suggest that MukBEF and ori s act together as a self-organising system in chromosome organisation-segregation and introduces protein self-organisation as an important consideration for future studies of chromosome dynamics.
+The chromosomal replication origin region (ori) of characterised bacteria is dynamically positioned throughout the cell cycle. In slowly growing Escherichia coli, ori is maintained at mid-cell from birth until its replication, after which newly replicated sister oris move to opposite quarter positions. Here, we provide an explanation for ori positioning based on the self-organisation of the Structural Maintenance of Chromosomes complex, MukBEF, which forms dynamically positioned clusters on the chromosome. We propose that a non-trivial feedback between the self-organising gradient of MukBEF complexes and the oris leads to accurate ori positioning. We find excellent agreement with quantitative experimental measurements and confirm key predictions. Specifically, we show that oris exhibit biased motion towards MukBEF clusters, rather than mid-cell. Our findings suggest that MukBEF and oris act together as a self-organising system in chromosome organisation-segregation and introduces protein self-organisation as an important consideration for future studies of chromosome dynamics.
 
 ## Introduction
 
@@ -34,9 +34,17 @@ With this model in hand, we now investigate how MukBEF clusters could position c
 
 ## Results
 
-## ori is attracted towards MukBEF foci
+### ori is attracted towards MukBEF foci
 
 As discussed above, perturbative experiments support the hypothesis that MukBEF clusters position oris in E. coli (Badrinarayanan et al., 2012a; Nicolas et al., 2014). However, it is unclear if this hypothesis is supported by the observed colocalisation of MukBEF clusters with oris in unperturbed cells. It is possible that MukBEF clusters and ori could be positioned independently of one another as a result of the global organisation of the chromosome with the result that they show colocalisation but without their positions being correlated. To examine this possibility, we revisited the colocalisation of MukBEF clusters and oris. We used only cells with a single ori focus, because, unlike cells with two oris, they can be grouped together without scaling by simply aligning them according to their mid-cell positions and are more amenable to statistical analysis. To enrich for such cells, we treated a strain carrying fluorescently labelled MukB and ori (Figure 1a) with DL serine hydroxamate (SHX). This structural analogue of serine triggers the stringent response thereby inhibiting DNA replication initiation (Ferullo et al., 2009). We then measured the position of fluorescent foci along the long axis of the cell as has been done previously (Nicolas et al., 2014; Nolivos et al., 2016) and found very similar distributions for ori and MukB as expected (Figure 1b).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig1-v2.jpg)
+
+**Figure 1.:** A strain with FROS (LacI-mCherry) labelled ori and MukB-mYPet was treated with DL serine hydroxamate to obtain cells with a single non-replicating chromosome and imaged at 1 min intervals. (a) Overlay of phase contrast and fluorescence images showing three representative cells. Bar indicates 2 µm. (b) The position distribution (along the long axis of the cell) of fluorescent foci of ori (red) and MukB (blue). N = 31820 from 952 cells tracked over up to 56 frames. Cells have a mean length of 2.2 µm. (c) The expected distribution (dashed line) of the distance between ori and MukB foci given that the distributions in (b) are independent. The measured distribution (circles and solid line) of separation distances from the same cells. (d) The step-wise velocity of ori as a function of position relative to mid-cell (blue) and to the MukB focus (red). (e) The step-wise velocity of MukB as a function of position relative to mid-cell (blue) and the ori (red). Shaded regions indicate standard error. See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Histogram of cell lengths of the cells analysed in Figure 1b,c. The mean cell length is 2.2 µm. (b) The predicted and measured distributions of the distance between ori and MukB-mYPet foci (in cells with a single focus of each) as in Figure 1c but without treatment with SHX. N = 16961 from 2401 cells imaged every five mins. (c) Histogram of cell lengths of the cells analysed in (b). The mean cell length is 2.2 µm. (d) The relative position distribution along the short axis of the cell for the same cells analysed in Figure 1 and (a). 95% of ori foci are within the centre 44% of the cell width, corresponding to a region 0.33 µm wide. 95% of MukB-mYPet foci are within the centre 39% of the cell width, corresponding to a region 0.30 µm wide. Note that the centre 40% region consists of 50% of the cross-sectional area. (e) Histogram of cell widths of the cells analysed in (d). The mean cell width is 0.756 µm. (f) The relative position distribution of ori along the short axis of the cell in cells lacking MukB. (a). 95% of ori foci are within the centre 50% of the cell width, corresponding to a region 0.42 µm wide. The centre 50% region consists of 61% of the cross-sectional area. N = 33001 from 1190 cells imaged every minute. (g) Histogram of cell widths of the cells analysed in (f). The mean cell width is 0.859 µm.
 
 To investigate if MukBEF and ori are positioned independently of one another, we next compared the distribution of the measured distance between them to the distribution that would be expected if they were positioned independently (the null hypothesis). This latter distribution is obtained by randomly selecting pairs of positions from the two measured position distributions and calculating the distance between them. When we did this, we found that MukBEF foci and ori are much more colocalised than would be expected if they were positioned independently (Figure 1c). This was confirmed by the relatively strong positive correlation (r = 0.8) between MukBEF and ori positions (using a robust correlation based on the median absolute deviation [Shevlyakov, 1997]). Importantly, the result was not due to treatment with SHX (Figure 1—figure supplement 1b).
 
@@ -46,15 +54,39 @@ We next asked whether the relationship is bi-directional i.e. is MukBEF position
 
 The above results also confirm that ori has a special relationship with MukBEF compared to other genetic loci. This is supported by the observation that co-localisation with MukBEF is strongest for ori and becomes progressively weaker for ori-distant loci (Danilova et al., 2007). What is the nature of this relationship? This has been an open question for many years, despite the application of tools such as chromatin immunoprecipitation (Nolivos et al., 2016) and single-molecule microscopy (Badrinarayanan et al., 2012b; Zawadzki et al., 2015). In the following, we take an abductive reasoning approach common in theoretical physics. We make a starting assumption or ansatz for the nature of the MukBEF-ori relationship in order to build a computational model of the system and take confirmation of model predictions as evidence in support of this ansatz. In particular, we propose that MukBEF is preferentially loaded onto the chromosome within the ori region. This is the case for SMC, a distant relative of MukBEF (see Gruber, 2018 for a review). In Bacillus subtilis and other bacteria SMC is loaded onto the chromosome at parS sites by the protein ParB. While no analogue of ParB/parS has yet been discovered in E. coli, in the following we will focus on exploring the effect of preferential loading and examining whether it gives results that are consistent with experimental observations. We discuss other plausible scenarios in the discussion.
 
-## Model of ori positioning by self-organised MukBEF reproduces mid-cell positioning
+### Model of ori positioning by self-organised MukBEF reproduces mid-cell positioning
 
 As a first step in building a model of ori positioning, we incorporated the ori into our previous stochastic model of MukBEF self-organisation and positioning (Murray and Sourjik, 2017), reviewed in the methods section and illustrated in Figure 2a. Briefly, MukBEF exists in three states corresponding to different conformations and associations with DNA, a well-mixed cytosolic fraction and two DNA-associated states. The differing diffusion constants and nonlinear interaction between the two latter states leads to the spontaneous formation of dynamic MukBEF foci (to be understood as regions of high density) via the Turing mechanism. The positions of these foci are determined by the balancing of fluxes originating from the well-mixed cytosolic state (Figure 2b). The flux of molecules (number per second) reaching the MukBEF focus is proportional to the length of the nucleoid on each side since the flux of molecules arriving from the cytosol is proportional to these lengths. Thus, if the MukBEF focus is off-centre (in the case of a single focus), it experiences a differential in the incoming fluxes from either side, resulting in movement toward the equilibrium position (the centre). This flux-balance mechanism was first described in the context of plasmid positioning (Ietswaart et al., 2014; Murray and Howard, 2019; Sugawara and Kaneko, 2011) but is valid quite generally. Note that in this model, the chromosome is not modelled explicitly. While one could theoretically use a combined particle and polymer based approach, such simulations are not yet feasible. Rather, the action of condensins is typically implemented in polymer simulations implicitly (Fudenberg et al., 2016; Miermans and Broedersz, 2018). However, we are explicitly interested in the fact that MukBEF forms discrete positioned foci. We therefore take a protein-centric approach and model the chromosome implicitly but MukBEF explicitly.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig2-v2.jpg)
+
+**Figure 2.:** (a) Schematic showing the reactions of the previous MukBEF model (Murray and Sourjik, 2017) (see methods). Species w diffuses in the cytosol (red). Species u (green) and v (blue) diffuse on the nucleoid. Binding and species interaction are indicated by arrows. Diffusion is not shown. See the methods for a review of the model and the model parameters. (b) Schematic showing the flux-balance mechanism. The thinner arrows represent binding/unbinding and diffusion. Species w (red) is well-mixed and therefore converts to species u (green) uniformly across the nucleoid. If a molecule of species u explores a sufficiently large region of the nucleoid before it detaches again, then the flux of u molecules reaching a high density region (focus) of species v (blue) from either side is proportional to the length of the nucleoid on either side. This difference in fluxes leads to net movement of the self-organised focus towards the position at which the fluxes balance, the mid-cell in the case of a single focus. (c) The stochastic model is implemented using the spatial Gillespie method which discretises the spatial dimension into compartments in which molecules react and between which molecules can diffuse. Colours label species as in (a). The cytosolic species is taken to be well-mixed and its concentration is therefore not simulated spatially. This is the same implementation as was used previously (Murray and Sourjik, 2017). In this work, we extend these simulations by incorporating the ori as a single diffusing particle (outlined red circle). However, unlike MukBEF its diffusion is biased, being determined by forward (F) and backward (B) jump rates that depend on the gradient of MukBEF concentration (blue circles, v) (see methods). (d) Kymograph from a single simulation showing the number of MukBEF molecules (colour scale) and the position of the ori (white line). (e) and (f) A comparison between the experimental data of Kuwada et al. (2013) and the results of simulations in the case of a single ori and 6x preferential loading. (e) Histograms of ori position (unscaled) along the long axis of the cell. Zero is the middle position. (f) Mean (top) and variance (bottom) of the step-wise velocity as a function of position relative to mid-cell. Bars indicate standard error. The linear velocity profile at mid-cell is indicative of diffusion in a harmonic potential ($Vx=\frac{1}{2}fx^{2}$). In such a model the variance of the step-wise velocity is independent of position. Thus we obtain the apparent diffusion constant $D_{a}$ and drift rate $d_{a}=\frac{fD_{a}}{kT}$ by fitting to the central region. Bounds are 95% confidence intervals. Red lines are weighted linear fits. Simulated data are from 100 independent runs, each of 600 min duration. Experimental data are based on over 16000 data points from 377 cells. Both data sets use 1 min time-intervals. Simulations are from 2.5 μm cells, whereas experimental data is from a range of cell lengths. See methods for further details and model parameters. See also Figure 2—figure supplement 1–5.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The total number of v molecules as a function of compartment size in one, two and three dimensions. Simulations were performed as in Figure 2d but without ori and with a cell length of 2.8 µm. The width of the simulated rectangle (2D), rectangular cuboid (3D) is 0.7 µm. Individual compartments are square (2D) or cubic (3D). The number of compartments along the short axis is overlayed for 2D and 3D. The number of compartments along the long axis is four times this number.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) The differential equations of the model in Figure 2a. Given for reference and to specify the nature of the reaction terms. In this work, we exclusively use the stochastic implementation of the model (Figure 2c). (b) Average kymographs from 100 simulations showing the distributions of MukBEF and ori positions. (c) The average MukBEF profile in the simulations (blue dots) is well approximated by a Gaussian.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** A fit to the experimental data of Kuwada et al. (2013) and the results of simulations in the case of a single ori (without preferential loading). (a) Histograms of ori position (unscaled) along the long axis of the cell. Zero is the middle position. (b) Mean (top) and variance (bottom) of the step-wise velocity as a function of position relative to mid-cell. Bars indicate standard error. The linear velocity profile at mid-cell is indicative of diffusion in a harmonic potential ($Vx=\frac{1}{2}fx^{2}$). In such a model the variance of the step-wise velocity is independent of position. Thus we obtain the apparent diffusion constant $D_{a}$ and drift rate $d_{a}=\frac{fD_{a}}{kT}$ by fitting to the central region. Bounds are 95% confidence intervals. Red lines are weighted linear fits. Simulated data are from 100 independent runs, each of 600 min duration. Experimental data are based on over 16000 data points from 377 cells. Both data sets use 1 min time-intervals. Simulations are from 2.5 μm cells, whereas experimental data is from a range of cell lengths.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (a) The variance of the MukBEF and ori position distributions for different preferential loading ratios for the case of a single ori. (b) Cumulative probability distribution of the separation distance between ori and MukBEF peaks. (c) The change in the apparent diffusion constant and drift rate as a function of the preferential loading rate.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (a–c) Simulated position distributions of MukBEF and ori for no (a), six times (b) and 12 (c) times preferential loading. The MukBEF position is the centroid of the simulated MukBEF peak. (d–i) Simulated step-wise ori (d–f) and MukBEF velocities (g–i) for no (d,g), six times (e,h) and 12 (f,i) times preferential loading as above. Shaded region indicates standard error. Note the inversion in the dominant MukBEF restoring velocity as preferential loading is increased. The position distribution and ori step-wise velocity for the case of no preferential loading are reproduced from Figure 2—figure supplement 3. Note that MukBEF is not affected by ori in the absence of preferential loading. The apparent restoring velocity of MukBEF towards ori in (g) is not physical and is likely due to the higher variability (diffusivity) of the MukBEF focus compared to ori.
 
 We treat the ori as a diffusing particle, the movement of which is biased in the direction of increasing MukBEF concentration (Figure 2c) (see methods for details). That is, the probability is higher that ori will move up the MukBEF gradient than down it. We perform the simulations in one dimension, representing the long axis of the cell, the dimension along which positioning and segregation occur. This is justified as both ori and MukB are confined within the transverse direction to the centre region of the cell: 95% of foci are within the centre 40% (300 nm) of the cell width (Figure 1—figure supplement 1d–g). MukBEF is also a very large molecule complex, with the arc length from its hinge domain to either of its two head domains being about 70 nm (Matoba et al., 2005). This suggests it can be treated as operating on a coarser level than individual strands of DNA. However the primary reason is due to an inherent limitation of the Reaction Diffusion Master Equation method for non-linear reactions. Every voxel (compartment) must be well-mixed and this condition is violated by non-linear reactions at small voxel volumes (Isaacson, 2009; Isaacson and Peskin, 2006). While this can be overcome for bimolecular reactions (Erban and Chapman, 2009; Hellander and Petzold, 2016; Isaacson, 2013), there is currently no such remedy for tri-molecular reactions, as present in our (and most) Turing models. As a quantification of the resulting artefacts, we measured the mean total number of species v as a function of compartment size (Figure 2—figure supplement 1). While the mean number is stable in one dimension, it decreases rapidly in two and three dimensions as the compartment size is decreased. One might hope for a range of compartment sizes, small enough to realise the geometry but large enough to avoid small compartment-size effects. However, no such range exists. We will therefore confine our stochastic simulations to one dimension. However, as we shall show, this limitation does not prevent us from explaining the observed experimental behaviour and making falsifiable predictions.
 
 We take initially the case of short cells (2.5 µm) with a single ori. For the moment, we do not implement the effect of preferential loading at ori on MukBEF dynamics. We found, as expected, that ori tracks the self-organised MukBEF focus, resulting in mid-cell positioning (Figure 2d and Figure 2—figure supplement 2b). To more carefully examine the directed movement of ori, we measured the ori velocity as a function of position as we did previously (Figure 1d). Given the self-organising and fluctuating nature of the MukBEF gradient in our model (which is representative of the in vivo behaviour), it was not obvious that the model would reproduce the observed relationship. However, we indeed found a similarly linear velocity profile. Furthermore, quantitative comparison of our simulations with the experimental data from Kuwada et al. (2013) was carried out by fitting the data in the mid-cell region to a theoretical model of diffusion in a harmonic potential, thereby obtaining an apparent diffusion constant and drift rate. We found that by adjusting only two parameters, the ori diffusion constant and drift parameter, we were able to obtain good agreement with the values obtained from the experimental data (Figure 2—figure supplement 3b). However, the resultant position distribution did exhibit somewhat fatter tails (Figure 2—figure supplement 3a).
 
-This fitting of the experimental data also allows us to estimate the spring-like force on the ori. At a distance x from mid-cell, the force is given by F=-fx, where f is obtained from the slope and variance of the velocity profile (Figure 2—figure supplement 3b). At 0.2 µm from mid-cell this gives a restoring force of 0.02 pN, similar to the value measured in an in vitro reconstitution of a plasmid partitioning ParABS system (Vecchiarelli et al., 2014). Note that the data in Kuwada et al. are from growing cells and we use them rather than our data in Figure 1 for consistency with later simulations that incorporate growth.
+This fitting of the experimental data also allows us to estimate the spring-like force on the ori. At a distance x from mid-cell, the force is given by $F=-fx$, where f is obtained from the slope and variance of the velocity profile (Figure 2—figure supplement 3b). At 0.2 µm from mid-cell this gives a restoring force of 0.02 pN, similar to the value measured in an in vitro reconstitution of a plasmid partitioning ParABS system (Vecchiarelli et al., 2014). Note that the data in Kuwada et al. are from growing cells and we use them rather than our data in Figure 1 for consistency with later simulations that incorporate growth.
 
 In the previous simulations ori moves up the MukBEF gradient but has no effect on the MukBEF gradient itself as we have not yet implemented that MukBEF is preferentially loaded onto the DNA within the ori region. In previous work, we showed that preferential loading at a fixed spatial location perturbs the positioning of the self-organised MukBEF foci due to the modified flux differential across foci (Murray and Sourjik, 2017). In the case of a single MukBEF focus, the equilibrium position is no longer at mid-cell but somewhere between mid-cell and the location of preferential loading, depending on the strength of the loading. Thus the presence of a preferential loading site in the ori should lead to an effective mutual attraction between ori and MukBEF foci i.e. ori is attracted up the MukBEF gradient, while at the same time the’ home’ position of the MukBEF focus is shifted towards ori. We expected this to increase the association between the two and reinforce mid-cell positioning.
 
@@ -64,9 +96,17 @@ We next examined if the simulations could reproduce the observed experimental ve
 
 Given that preferential loading was found to have an effect on the apparent diffusion constant and drift rate (Figure 2—figure supplement 4c), we needed to refit the model to the experimental ori velocity data. To do so we chose a particular value for preferential loading ratio, the one that minimised the variance, 6x (this choice will be justified in the section). We were able to find new values for the diffusion and drift parameters that lead to excellent agreement with the experimental values (Figure 2f). Furthermore, the resulting distribution of the ori positions showed better agreement with the experimental distribution, with the fat tails observed in the absence of preferential loading no longer present (Figure 2e).
 
-## Preferential loading leads to stable and accurate partitioning
+### Preferential loading leads to stable and accurate partitioning
 
 While promising, the above results are not sufficient to suggest that MukBEF can explain the in vivo behaviour of ori. The challenge arises after ori has been replicated. A true partitioning mechanism must ensure that each replicated ori is maintained at a different quarter position. A simple gradient based mechanism cannot, a priori, satisfy this requirement as both oris could just as easily move towards the same quarter position. Furthermore, the experimental data suggests that once oris separate they do not subsequently interchange their positions (cross paths). This ordering is essential during multi-fork replication, where the multiple oris of each segregated chromosome must be positioned to the appropriate cell half to avoid guillotining the chromosome upon cell division.To examine if the model is capable of accurate and ordered partitioning, we performed simulations with two oris in longer cells of 5 µm, in which MukBEF self-organises into, on average, two foci, one at each quarter position. With or without preferential loading, the average profile of ori positions displayed two peaks centred on the quarter positions (Figure 3d, blue line). However, we found that without preferential loading approximately half of the individual simulations have both oris near the same quarter position (Figure 3a), clearly indicating that partitioning was not accurate. This was the case even though the simulations were initialised with oris at opposite quarter positions. Evidently, a model of ori simply moving up the MukBEF gradient is not sufficient to explain partitioning as the noise inherent to the system means that it can switch stochastically between partitioned and un-partitioned states.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig3-v2.jpg)
+
+**Figure 3.:** (a) Example simulated kymograph showing two ori (white lines) diffusing around the same MukBEF peak (colour scale). This occurs approximately 50% of the time. (b) The addition of 6x preferential loading of MukBEF at ori positions results in correct partitioning of ori. The loading rate in each of the spatial compartments containing ori is six times that of the other 48 compartments. The total loading rate is unchanged. (c) Partitioning accuracy is measured by the fraction of simulations with ori in different cell halves. Stability is measured by the number of times ori cross paths. Both partitioning accuracy and stability increase with preferential loading up to approximately 6x. Preferential loading ratios are as in (f). Points and bars indicate mean and standard error over independent simulations. See also Figure 3—figure supplement 1c. (d) Histograms of ori positions for 1x, 6x and 16x preferential loading. Positioning is more precise at 6x than with no or 16x preferential loading. See Figure 3—figure supplement 1a for MukBEF distributions. (e) The cumulative probability distribution for the separation distance between ori and MukBEF peaks. Experimental data (black line) is from Nolivos et al. (2016). The addition of preferential loading leads to substantially better agreement. Preferential loading ratios are as in (f). See also Figure 2—figure supplement 4b. (f) The variances of individual peaks (obtained by reflecting the data around the mid-position) have a minimum at approximately 6x preferential loading. Solid lines are from simulations with ori initially at the quarter positions, as for (a)-(e). Dashed lines are from simulations with random initial ori positions. Simulations were performed for a 5 µm domain and two ori.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Histograms of MukBEF numbers for 1x, 6x and 16x preferential loading. Positioning is more precise at 6x than with no or 16x preferential loading. (b) Fraction of simulation time with two MukBEF foci as a function of the preferential loading ratio. Error bars indicate standard deviation. (c) Partitioning accuracy and stability as in Figure 3c but using random initial ori positions. Data is from the last 100 min of 600 min simulations. Due to both ori sometimes being in close initial proximity, the occurrence of the undesirable configuration (both ori associated to the same MukBEF peak) is higher. Nevertheless the system eventually tends to transition (irreversibly) to the correct configuration, promoted by high preferential loading rates. The loading ratios are as in (b). (d) Partitioning accuracy as a function of time and preferential loading ratio for different initial ori positions. Note that simulations were run for 30 min. before the system state was recorded in order to allow the self-organised MukBEF profile to establish and stabilise. Hence, ori have already moved from their initial positions at the first recorded time-point.
 
 However we found that preferential loading resulted in stable and accurate partitioning (Figure 3b). A preferential loading ratio greater than six (i.e. six times more loading than elsewhere) was sufficient to ensure that one and only one ori was positioned to each quarter position and they do not interchange (Figure 3c). These simulations had oris initialized at opposite quarter positions (so as to investigate the intrinsic stability of that configuration). However, the bias of the system towards the desirable quarter-positioned configuration was present when both oris were initialized at mid-cell or at random positions (Figure 3—figure supplement 1c,d). While configurations with both oris associated to the same MukBEF peak occurred more frequently under these conditions, in the presence of sufficient preferential loading the system eventually and irreversibly transitions to the quarter positioned configuration.
 
@@ -74,7 +114,7 @@ As previously observed in simulations of short cells, we found that preferential
 
 These results demonstrate that preferential loading of MukBEF changes the stability of the different steady states of the system. In its absence, the desirable (ori associated to opposite quarter-positioned MukBEF peaks) and undesirable (both oris associated to the same MukBEF peak) configurations have equal likelihood, as measured by partitioning accuracy (Figure 3c, Figure 3—figure supplement 1d), and the system can stochastically jump from one state to the other. As preferential loading is increased, the desirable configuration becomes more stable until the system is found almost exclusively in that state.
 
-## Accurate partitioning during growth
+### Accurate partitioning during growth
 
 The previous simulations were of non-growing cells and of long duration. While, they were useful to examine the intrinsic stability of the different states in order to understand why oris remain partitioned, they do not demonstrate that our model can explain how oris become partitioned within the timescale and setting of a growing cell. We therefore incorporated exponential growth and ori replication into our simulations. The former was implemented by randomly adding a new spatial compartment after every time interval corresponding to growth by one compartment length (0.1 µm). The ori was duplicated at a randomly chosen time-point obtained from an experimentally derived distribution (the mean time of duplication was 40 min into the cell cycle). After duplication, the compartment that previously contained a single ori, then contains two oris, which are free to move independently of each other (but dependent on the local MukBEF concentration).
 
@@ -86,13 +126,41 @@ This introduced two unknown parameters, the depth of the potential and its range
 
 On the other hand, combining preferential loading with short-range entropic repulsion of ori, gave the properties of both and allowed the model output to move much closer to the measured partitioning accuracy and relative separation (Figure 4—figure supplement 2) and resulted in kymographs with the experimentally observed behaviours (Figure 4a–d). The short-range entropic repulsion destabilises the undesirable configuration so that system switches, in a timely manner, to the quarter positioned configuration. As we saw for non-growing cells, preferential loading stabilises this configuration, keeping ori in close association with their corresponding quarter-positioned MukBEF peak, thereby preventing both diffusive excursions and any attempts to return to the undesirable configuration.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig4-v2.jpg)
+
+**Figure 4.:** (a) and (b) Two example kymographs from individual simulations during exponential growth (doubling time of 120 min) in the presence of a repulsive force between ori. Shown is the number of MukBEF molecules (colour scale) overlayed with the ori position (while lines). (c) and (d) Average kymographs of MukBEF (c) and ori position (d). (e) and (f) Segregation velocity (the step-wise rate of change of the absolute distance between ori) (e) and partitioning accuracy (f) plotted as function of the time since ori duplication (simulations, blue) or separation (experiment, green). Experimental data is from Kuwada et al. (2013). Shading indicates 95% confidence intervals. The segregation velocity has been corrected for growth. Simulation results in (c–f) are from 450 independent simulations and use 10x preferential loading ratio and a repulsion range of 200 nm (as indicated by the black circle in Figure 4—figure supplement 2).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Two randomly selected individual simulations of exponential growth with homogeneous loading. The colour scale represents the number of MukBEF molecules; white lines show the positions of ori. (b) Average kymograph of the number of MukBEF molecules (top) and ori positions (bottom). (c) and (d) As in (a) and (b) but with 10x preferential loading. Simulation results are from 450 independent runs and use a doubling time of 120 min.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Results from a parameter sweep over the two properties specifying the repulsion, its range (symbols) and its strength (increasing as indicated). Different colours indicate different levels of preferential loading (1x-14x). The dark red points are from simulations without repulsion, with only the preferential loading varying. Each data point is the mean over 450 independent simulations (performed as in Figure 4—figure supplement 1). The output is the partitioning accuracy and relative separation measured 20 min. after ori duplication (which varies stochastically). Error bars are standard errors. The experimental data point is from an analysis of the data of Kuwada et al. (2013) (see also Figure 4f). The black circle indicates the simulations subsequently shown and analysed in Figure 4. The black rectangle indicates the simulations shown in Figure 4—figure supplement 3.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Two representative kymographs of the number of MukBEF molecules and ori positions during exponential group (doubling time 120 min.) with repulsion between ori but without preferential loading. The colour scale represents the number of MukBEF molecules; white lines show the positions of ori. The range of the repulsive force is 200 nm and indicted by the rectangle in Figure 4—figure supplement 2.
+
 While the output looks qualitatively promising, we wanted to make a quantitative comparison of ori dynamics. Therefore, we compared the simulated time-courses (using the preferential loading and the range and strength of ori repulsion suggested from the parameter sweep) with previous experimental results. To reduce the dimension of the data and accommodate the variation in cell length and cell cycle duration, we examined the dynamics of ori from the time of duplication (simulated data) or the time of initial ori foci separation (experimental data [Kuwada et al., 2013]). We found good agreement between two cell length independent measures: the segregation velocity (the change of the absolute distance between oris between time points) and the partitioning accuracy (Figure 4e,f). Thus, with the addition of entropic repulsion, the model is capable of reproducing the observed ori dynamics in growing cells.
 
-## Directed movement of ori can arise from spatially-dependent looping interactions
+### Directed movement of ori can arise from spatially-dependent looping interactions
 
 Our experimental data indicates, and our model assumes, that the ori experiences directed movement up the gradient constituting a MukBEF focus. How could such an attraction arise? It has previously been argued in the DNA relay and Brownian ratchet models of partition complex positioning by the ParABS system (Hu et al., 2017; Hu et al., 2015; Lim et al., 2014; Surovtsev et al., 2016) that the elastic nature of the chromosome itself (Wiggins et al., 2010) can be harnessed to power directed motion of partitioning complexes. The elastic fluctuations of the chromosome allow partitioning complexes to detect local differences in ParA-ATP, a protein that tethers them non-specifically to the nucleoid. The result is that complexes move in the direction of greatest ParA-ATP concentration. However, this idea has never been tested polymerically. This is critical for migrating ori, since, unlike plasmids, the ori would experience an entropic counter force due to the polymeric nature of the chromosome. Nevertheless, we wondered whether a similar mechanism might underlie the biased movement of ori towards MukBEF foci.
 
 In particular, we wondered whether directed movement of ori can arise due to the DNA bridging activity of MukBEF (Petrushenko et al., 2010). It has recently been demonstrated in vivo that MukBEF promotes long-range DNA interactions (Lioy et al., 2018). Given the association between MukBEF and ori, it is plausible that MukBEF preferentially forms DNA contacts involving the ori region. As such contacts would reduce the mobility of the DNA polymer, we would expect that ori would colocalise with MukBEF foci. To study this possibility, we turned to polymer simulations. We modelled the chromosome as a self-avoiding ring polymer confined in a rectangular cuboid and used the dynamic loop model (Bohn and Heermann, 2010b) to mimic the formation of DNA loops (bridges) between ori (a specific monomer of polymer chain) and distant DNA sites (other monomers) (see methods for details). As it is not computationally feasible to explicitly include the reaction-diffusion dynamics of MukBEF into the polymer simulations, we instead incorporated MukBEF implicitly via a spatially dependent looping probability along the long axis of the cuboid (nucleoid) representing the MukBEF concentration profile (Figure 5a). We found that this resulted in the ori being positioned to the middle of the nucleoid, where the looping probability was greatest (Figure 5b, blue line). This was in contrast to the uniform position distribution observed when a uniform looping probability was applied (red line). We also found that the positioning of ori affected the organisation of the entire polymer, which took with up a left-ori/ter-right configuration (Figure 5—figure supplement 1), consistent with previous results on the effect of a forced localisation of ori (Junier et al., 2014).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig5-v2.jpg)
+
+**Figure 5.:** (a) A diagram illustrating how the elastic fluctuations of ori allow it sample the spatial looping probability distribution. It is therefore more likely to form a loop with a locus that is closer to mid-cell, where the probability of looping, p, is higher. (b) Probability density of relative ori position along the long axis of the cuboid (aspect ratio 4:1) with (blue) and without (red) a spatially-varying looping probability (a Gaussian shaped distribution centred at 0 with standard deviation 0.1 in units of long-axis length; the looping probabilty at 0, pmax, is 0.02.). See also Figure 5—figure supplement 1. (c) The mean ori velocity along the long axis as a function of relative position. Shaded area indicates standard error. In (b) and (c), the ori position was read out every 50000 Monte Carlo time-steps (MCS) and data is from 50 independent simulations with approximately 10000 data points from each. (d) The mean relative position of oris along the long axis of the cuboid during segregation. Simulations were initialized with two overlapping polymers with the ori monomers at the middle position. We used a looping probability distribution (black line) with the shape of the sum of two Gaussians centred at the quarter positions with standard deviation 0.1 in units of long-axis length. Results for different values of the looping probability at the quarter positions, pmax, are shown. Data is from 500 independent simulations read out as in (c). Shading indicates the standard error. (e) Probability density of relative ori positions in simulations of two polymers described in (d) after equilibration i.e. the polymers have segregated to opposite ends of the cuboid. (f) The mean step-wise ori velocity for one of the two segregated polymers. This polymer is confined to the left side of the cuboid. The ori experiences a restoring velocity to the approximate −1/4 position. The right half of the curve is due to infrequent excursions of the ori into the other half of the cuboid. The shaded region indicates standard error. See also Figure 5—figure supplement 2.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Probability density of relative ori (0°), L (−90°), R (+90°), and ter (180°) position along the long axis of the cuboid in the presence of a spatially-varying probability for ori to forms loops as in Figure 5b. L and R are generally positioned at the ends of the cuboid, while the ter is positioned roughly a mid-cell, though with a substantially broader distribution than ori. Data is from 50 independent simulations. Results are consistent with the histograms (from a single simulation) of Junier et al. (2014), in which the ori is localised to mid-cell by an imposed strong harmonic potential.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** This polymer is confined to the right side of the cuboid and its ori experiences a restoring velocity to the approximate +1/4 position. Otherwise as in Figure 5f.
 
 We next asked whether the distribution of the ori arises as a time-average or whether the movement of ori is directed. When we examined the velocity of the ori as a function of the long-axis position, we found that the ori indeed experiences a restoring velocity towards mid-cell i.e. directed movement (Figure 5c). We envisage this working as follows. On a short timescale, the ori fluctuates about its current ‘home’ position. This allows it to locally sample the spatially-varying looping probability. It is then most likely to form a loop with another monomer in the direction in which the looping probability is greatest i.e. the direction of greatest MukBEF. The polymer subsequently relaxes, the ori is released to a new ‘home’ position and the cycle repeats. In this way, elastic fluctuations of the polymer power the movement of ori up the gradient in the looping probability. Thus, directed movement of ori up the MukBEF gradient can plausibly arise due to a MukBEF-mediated, spatially-varying looping probability.
 
@@ -104,13 +172,21 @@ In this work, we have presented a quantitative explanation for positioning of th
 
 To formulate the model, we needed to specify a particular ansatz for the nature of MukBEF-ori relationship. Motivated by SMC in other bacteria (Gruber, 2018) and our previous computational results (Murray and Sourjik, 2017), we assumed that MukBEF is preferentially loaded onto the DNA at sites within the ori. We found that the resultant feedback from ori to MukBEF led to robust ori partitioning. Preferential loading stabilises the desirable quarter-positioned configuration, preventing stochastic switching to the undesirable configuration having both oris associated to the same MukBEF focus (Figure 6a). We describe in more detail how this occurs in Figure 6—figure supplement 1. In essence, preferential loading leads to a non-trivial mutual attraction between MukBEF and ori that results in robust association, positioning and partitioning of oris as an emergent property. We determined the ori drift and diffusion rates by fitting to the experimental ori velocity profiles (Figure 2f). This also lead to excellent agreement with other experimental measurements that were not used in the fitting, namely the distributions of ori positions (Figure 2e) and the MukBEF-ori separation distance (Figure 3e, Figure 2—figure supplement 4b), thereby providing further quantitative support for the model. Additionally, we found evidence of the mutual attraction between MukBEF foci and ori. MukBEF foci were found to be attracted to ori to a similar degree as their attraction to mid-cell (Figure 1e), consistent with what we observed in our simulations (Figure 2—figure supplement 5).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig6-v2.jpg)
+
+**Figure 6.:** (a) Schematic illustrating the effect of preferential loading of MukBEF at ori in the simulations of non-growing cells. In the presence of preferential loading ori (red) and MukBEF foci (blue) are strongly associated with both each other and the quarter positions. This acts to stabilise the desirable correctly partitioned configuration (bottom) over the un-partitioned one (top). In the absence of preferential loading, both configurations have equal stability (are equally likely). See also Figure 6—figure supplement 1. (b) Short-range entropic repulsion promotes the timely separation of newly duplicated ori. Their separation promotes splitting of MukBEF foci. MukBEF-ori then move together to opposite quarter positions with preferential loading promoting their association and the stability of the quarter-positioned configuration.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) MukBEF self-organises via a Turing instability into regions of high local density (foci). The position of these foci is determined by the balancing of fluxes originating from the well-mixed cytosolic state. With spatially homogeneous loading of the well-mixed state onto the nucleoid, the fluxes balance, in the case of a single focus, at the mid-cell position (i). An object (the ori) that is attracted up the resulting gradient will also be positioned at mid-cell. However, if loading is not homogeneous, then the position at which the fluxes balance changes (ii). If higher loading occurs at the ori, then the mutual attraction between the self-organised MukBEF focus and the ori results in the suppression of fluctuations, strong colocalisation and positioning at mid-cell (iii). The system is analogous to a compound spring with the fixed end at mid-cell (but with a non-trivial relationship between the spring constants and preferential loading ratio). At high levels of preferential loading, colocalised MukBEF-ori becomes less sensitive to the (decreased) incoming flux from other regions, and is therefore less attracted towards mid-cell, resulting in more diffusive behaviour and a broader position distribution. (b) Suppose both ori have been pulled towards the same MukBEF focus. Due to the flux imbalance, the MukBEF focus without an ori will be effectively pulled towards the other one (i) until the fluxes balance (ii). The stochastic nature of ori and MukBEF movement means that at some point one ori leaves the influence of its MukBEF focus and becomes associated to the other focus (iii). This is aided by the fact that the two MukBEF foci repulse each other so that the first MukBEF focus is prevented from following the ori. After the ori associates to the other MukBEF focus, the balance of fluxes is again disturbed and MukBEF-ori move as single units towards opposite quarter positions (iv). Due the strong association and reduced spatial fluctuations caused by preferential loading, this is the stable configuration and the system does not revert back to (i). See also Figure 6.
+
 The model could also reproduce the correct ori dynamics of a growing cell. This required adding entropic effects (Jun and Wright, 2010) to the model. Preferential loading and short-range entropic repulsion are individually not sufficient for both timely and accurate segregation and positioning. However, combined, they give very good agreement with the observed dynamics (Figure 4). The repulsion between newly duplicated oris is needed to push the system out of the undesirable configuration immediately after ori duplication but is not required for the existence, stability or high colocalisation of the desirable quarter-positioned state (as was seen in simulations of long cells without repulsion) (Figure 6b). These properties are the result of preferential loading and the mutual interaction between oris and self-organising MukBEF foci.
 
 Supported by our experimental results, the model assumes that ori moves up the MukBEF gradient. What is the physics underlying this biased movement? Since MukBEF can bridge distant regions of the chromosome, it is conceivable that the MukBEF-ori relationship, however it is mediated, leads to a higher probability for MukBEF to form bridges between ori and other regions of DNA than for other genetic loci. Using polymer simulations, we showed that, combined with the elastic fluctuations of DNA, this can result in directed movement of ori up the self-organised MukBEF gradient (Figure 5), similar to the DNA relay model (Lim et al., 2014; Surovtsev et al., 2016) proposed for ParABS-based positioning. However, the situation here is different in that the protein gradient is not generated entirely by the ori itself (partition complex in the case of ParABS). In this sense, it is similar to the proposed bulk segregation of chromosomes by membrane-based protein gradients (Di Ventura et al., 2013). The proposed mechanism leads to directed movement of oris to the positions of greatest looping (bridging) probability - the middle or quarter-cell positions according to the distribution of MukBEF, as well as accelerated entropic segregation of duplicated ori.
 
 It is interesting to compare our results to a previous study of how macro-domain formation and positioning affect chromosome organisation (Junier et al., 2014). It was found that a macrodomain formed by spatially independent condensation of the ori region led to it being pushed to the poles of the cell. The authors therefore needed to additionally impose the mid-cell localisation of the ori macrodomain. In our case, the mid-cell location is marked by MukBEF and the increased looping that it induces suffices to keep the ori region at that location. Since MukBEF foci are self-positioned (as explained by our stochastic model), no external determinants of location are imposed.
 
-## Predictions
+### Predictions
 
 Our model assumes that MukBEF is loaded onto the chromosome at positions within the ori region. However, there are other plausible hypotheses for the MukBEF-ori relationship. In general, we expect that any relationship that induces a mutual attraction between MukBEF foci and ori would result in similar dynamics. Indeed, initial simulations have indicated one possibility is that the ori region acts as a ‘stop’ site for translocating MukBEF complexes. Therefore, the fundamental prediction of our model is not necessarily that MukBEF is loaded at sites within the ori region, as for SMC, but rather that whatever the nature of the MukBEF-ori relationship, it is such that it leads to an effective mutual attraction between ori and MukBEF foci.
 
@@ -118,7 +194,15 @@ In any case, the specificity of ori must be specified, directly or indirectly, b
 
 The focus of this work was on ori positioning in slow-growing cells. However, an important question and one about which has received comparably little attention, is how ori are positioned during faster growth in which cells have multiple replication forks. Youngren et al. have examined the positioning of several genetic loci for the case of four replication forks, i.e. two to four ori (Youngren et al., 2014). They found that cells are born with two quarter positioned ori, that after replication, move to the quarter positions of each cell half. While polymeric effects and bulk chromosome segregation likely play an important role in this behaviour, we nonetheless wondered whether our simplified model could recapitulate these results. Taking into account the higher copy number of MukBEF in faster growing cells (Li et al., 2014), we found very consistent ori dynamics (Figure 7, Figure 7—figure supplement 1). At birth, the two ori are quarter positioned, while after replication they migrate to the quarter positions of each cell half. Similar to the slow growth case, we observed that ori and MukBEF remain in tight association and MukBEF splitting is coincident with ori separation, so that there are approximately as many MukBEF foci as ori. This behaviour requires the aforementioned higher copy number. Without it, the number of MukBEF is not substantially different from the slow-growing case and hence correct positioning was not observed. These predictions could be tested in the future by examining MukBEF in these cells as well as the effect of modulating MukBEF expression on the number of foci and on ori positioning.
 
-## Outlook
+![Figure 7.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig7-v2.jpg)
+
+**Figure 7.:** An example kymograph showing multi-fork replication. See also Figure 7—figure supplement 1. Results qualitatively agree with Youngren et al. (2014). All parameters are as in Figure 4, except for the total number of MukBEF molecules, which was increased from 520 nM to 1000 nM, broadly in line with previous measurements (Li et al., 2014).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/46564/elife-46564-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Histogram of relative ori positions at time points at which there are two ori. (b) Histogram of relative ori positions at time points at which there are four ori. Results are from 450 independent simulations performed as in Figure 7.
+
+### Outlook
 
 Overall the agreement with the experimental data is very promising given the simplistic nature of the model and that we did not perform a systemic fitting of the parameters to the experimental data (we fit only the ori-related parameters – see methods). Nevertheless the depth of the comparison is beyond what has been achieved previously for origin positioning in other bacterial systems. Hence, we suggest that this approach warrants further consideration and that protein self-organisation may have an unappreciated role in chromosome organisation.
 
@@ -130,61 +214,234 @@ For future work, combining particle and polymer simulations, at least to whateve
 
 ## Materials and methods
 
-## Review of the model
+### Review of the model
 
 We briefly summarise the underlying model for MukBEF self-organisation (Murray and Sourjik, 2017). The general model scheme consists of three ‘species’ (Figure 2a). Species u and v exist on the surface (the nucleoid), while species w exists in the bulk (the cytosol). Species v diffuses slower than u. In the context of MukBEF, v is the basic functional complex, the ATP-bound dimer of dimer, in a state in which it has entrapped multiple strands of DNA and is therefore relatively immobile. Species u represents the dimer of dimers in state in which it is non-specifically associated to DNA but without being immobilised e.g. it has not entrapped any DNA strands. These two species interconvert with the latter becoming the former at a basal rate α and cooperatively at a rate β, while the former becomes the latter at a rate γ. The cytosolic state w is the ATP-unbound dimer state which converts to and from the DNA associated states with linear rates ϵ and δ respectively. The differential equations describing the model are given in Figure 2—figure supplement 2a. Parameter values are specified below.
 
 This system exhibits Turing pattern formation i.e. the differing diffusion rates and the reactions of the system are such that a diffusion-driven instability can occur that leads to the spontaneous formation of spatially varying concentration profiles. The two states u and v generate the Turing pattern while the cytosolic state w is responsible for positioning the pattern. The latter is required to be well-mixed and it is so because it interconverts with the Turing species u and v on a sufficiently slow timescale. Note that more generally this state is not required to be cytosolic, only well-mixed. The kymographs and distributions shown in this work are of v (which we simply refer to as MukBEF). See Murray and Sourjik (2017) for further details and a detailed justification of the model.
 
-## Stochastic simulations
+### Stochastic simulations
 
-Stochastic simulations were performed in C++. We used the Gillespie method (also called the Stochastic Simulation Algorithm) (Gillespie, 2007; Gillespie et al., 2013) to obtain exact realisations of the Reaction Diffusion Master Equation (RDME) as described previously (Murray and Sourjik, 2017) but with some changes for efficiency and the addition of simulated ori. We replaced the binary tree search of the enhanced direct method (Gibson and Bruck, 2000) with a 2D search as proposed by Mauch and Stalzer (Mauch and Stalzer, 2011) and switched from 32-bit uniform random numbers (using the Ziggurat method) to 64-bit numbers (using std::mt19937_64) to ensure enough significant digits to accurately sample reactions occurring with very low relative rates (namely, ori diffusion). As before, the spatial domain (the long axis of the cell) is divided into discrete compartments, each having a width of h=0.1 µm and between which the species can diffuse (Figure 2c). The cytosolic state is well-mixed and is therefore treated implicitly. The system state was read out every 60s for consistency with the experimental procedure. For simulations with growth, the simulation was paused after every time-duration that corresponded to growth by one compartment. An additional (empty) compartment was then inserted at a random position and the volume and total number of molecules (via the cytosolic fraction) were increased, maintaining the same overall concentration.
+Stochastic simulations were performed in C++. We used the Gillespie method (also called the Stochastic Simulation Algorithm) (Gillespie, 2007; Gillespie et al., 2013) to obtain exact realisations of the Reaction Diffusion Master Equation (RDME) as described previously (Murray and Sourjik, 2017) but with some changes for efficiency and the addition of simulated ori. We replaced the binary tree search of the enhanced direct method (Gibson and Bruck, 2000) with a 2D search as proposed by Mauch and Stalzer (Mauch and Stalzer, 2011) and switched from 32-bit uniform random numbers (using the Ziggurat method) to 64-bit numbers (using std::mt19937_64) to ensure enough significant digits to accurately sample reactions occurring with very low relative rates (namely, ori diffusion). As before, the spatial domain (the long axis of the cell) is divided into discrete compartments, each having a width of $h=0.1µm$ and between which the species can diffuse (Figure 2c). The cytosolic state is well-mixed and is therefore treated implicitly. The system state was read out every 60s for consistency with the experimental procedure. For simulations with growth, the simulation was paused after every time-duration that corresponded to growth by one compartment. An additional (empty) compartment was then inserted at a random position and the volume and total number of molecules (via the cytosolic fraction) were increased, maintaining the same overall concentration.
 
 The simulations were extended from those of the previous work by the addition of ori. We treated the ori as an additional diffusing species (with only one to four copies as appropriate) and implemented its biased diffusion up the MukBEF gradient, its duplication and its repulsion from other ori as follows.
 
-## Diffusion of ori subject to the MukBEF gradient
+#### Diffusion of ori subject to the MukBEF gradient
 
 We assume that MukBEF is linearly related to the potential surface experienced by ori. This is the simplest choice and is supported by the agreement of the resultant linear velocity profile with the experimental one. Furthermore, since any symmetric potential is approximately quadratic around its minimum (up to third order due to symmetry), we would in any case expect a linear velocity profile and since we have the best statistics near the minimum (the MukBEF peak), we would likely not be able distinguish other relationships between the MukBEF concentration and the potential it generates.
 
-Given a linear relationship, the drift ori experience is based on the derivative of the local MukBEF concentration. We use jump rates (the rate at which ori jump between neighbouring compartments, illustrated in Figure 2c) derived by Wang, Peskin and Elston (Wang et al., 2003). The forward and backward jump rates from compartment i to i+1 and i-1 respectively areFi,i+1=Dorih2αi,i+11-e-αi,i+1Bi,i-1=Dorih2αi,i-1eαi,i-1-1where the dimensionless quantity αi,j=μ(vj-vi)h is, up to a factor, the difference in the MukBEF concentration between the compartments (vi is the number of molecules of slowly diffusing MukBEF species in compartment i), Dori is the diffusion constant and μ is the drift parameter determining the strength of the attraction up the MukBEF gradient. We use the difference in the slowly-diffusing species only as MukBEF clusters have been shown in vivo to consist only of this state (Badrinarayanan et al., 2012b). This form for the jump rates respects detailed balance since the exchange between two neighbouring compartments balances i.e. Fi,i+1=Bi+1,i. The derivation of these rates relies on the assumptions that, within individual compartments, the probability density for ori is at steady state and that the MukBEF gradient is approximately linear. Both of these requirements can be satisfied for sufficiently small compartment widths. However, it is not feasible to decrease the compartment width much below 0.1 µm due to the increased computationally cost. Yet, the often sharp MukBEF profile (at a fixed moment in time) suggested that shorter compartment widths might be required. We therefore introduced sub-compartments within every compartment but only for ori positions. This approach has previously been applied to stochastic Turing patterns (Cao and Erban, 2014) but here we apply it to a ‘non-Turing’ species (ori). Each compartment was divided into an odd number of sub-compartments and the MukBEF concentration was linearly interpolated across sub-compartments. The jump rates between sub-compartments were then defined as above. Performing simulations for different numbers of sub-compartments, we found that the apparent diffusion constant and drift rate (see below and Figure 2) stabilised with greater than approximately 5 sub-compartments. The apparent diffusion was approximately 40% higher without sub-compartments. Since higher numbers of sub-compartments carried very little computational cost, we chose an arbitrary but relatively high value of 21 sub-compartments for the simulations presented in this work in order to be confident that there are no sub-compartment-size dependent effects.
+Given a linear relationship, the drift ori experience is based on the derivative of the local MukBEF concentration. We use jump rates (the rate at which ori jump between neighbouring compartments, illustrated in Figure 2c) derived by Wang, Peskin and Elston (Wang et al., 2003). The forward and backward jump rates from compartment $i$ to $i+1$ and $i-1$ respectively are
 
-## Duplication of ori
+$$
+F_{i,i+1}=\frac{D_{ori}}{h^{2}}\frac{\alpha_{i,i+1}}{1-e^{-\alpha_{i,i+1}}}
+$$
+
+
+
+$$
+B_{i,i-1}=\frac{D_{ori}}{h^{2}}\frac{\alpha_{i,i-1}}{e^{\alpha_{i,i-1}}-1}
+$$
+
+where the dimensionless quantity $\alpha_{i,j}=\frac{\mu(v_{j}-v_{i})}{h}$ is, up to a factor, the difference in the MukBEF concentration between the compartments ($v_{i}$ is the number of molecules of slowly diffusing MukBEF species in compartment $i$), $D_{ori}$ is the diffusion constant and $\mu$ is the drift parameter determining the strength of the attraction up the MukBEF gradient. We use the difference in the slowly-diffusing species only as MukBEF clusters have been shown in vivo to consist only of this state (Badrinarayanan et al., 2012b). This form for the jump rates respects detailed balance since the exchange between two neighbouring compartments balances i.e. $F_{i,i+1}=B_{i+1,i}$. The derivation of these rates relies on the assumptions that, within individual compartments, the probability density for ori is at steady state and that the MukBEF gradient is approximately linear. Both of these requirements can be satisfied for sufficiently small compartment widths. However, it is not feasible to decrease the compartment width much below 0.1 µm due to the increased computationally cost. Yet, the often sharp MukBEF profile (at a fixed moment in time) suggested that shorter compartment widths might be required. We therefore introduced sub-compartments within every compartment but only for ori positions. This approach has previously been applied to stochastic Turing patterns (Cao and Erban, 2014) but here we apply it to a ‘non-Turing’ species (ori). Each compartment was divided into an odd number of sub-compartments and the MukBEF concentration was linearly interpolated across sub-compartments. The jump rates between sub-compartments were then defined as above. Performing simulations for different numbers of sub-compartments, we found that the apparent diffusion constant and drift rate (see below and Figure 2) stabilised with greater than approximately 5 sub-compartments. The apparent diffusion was approximately 40% higher without sub-compartments. Since higher numbers of sub-compartments carried very little computational cost, we chose an arbitrary but relatively high value of 21 sub-compartments for the simulations presented in this work in order to be confident that there are no sub-compartment-size dependent effects.
+
+#### Duplication of ori
 
 The timing of ori replication was chosen randomly in each simulation by picking a duplication length from a normal distribution with mean 3 m and coefficient of variation 0.16 (based on the distribution of ori-foci splitting length of the data in Kuwada et al., 2013). As we use a fixed growth range (2.5-5 µm) and doubling time (120 min), we truncate the distribution to this range. This duplication length is then converted to a duplication time via the exponential relationship between cell length and time. The simulation is paused when it reaches this time, the ori is duplicated (remaining within the same sub-compartment) and the simulation continued. Note that we do not mimic cohesion of newly replicated stands so that what we refer to in the simulation as ori duplication actually more closely corresponds to initial ori separation in vivo, which occurs 10-15 minutes after replication initiation.
 
-## ori repulsion
+#### ori repulsion
 
-As discussed in the text, newly duplicated ori are likely to experience, for entropic reasons, a repulsive force between them (Jun and Mulder, 2006). Numerical studies have shown that the corresponding potential has the qualitative form of a Gaussian in the centre-of-mass separation (Bohn and Heermann, 2011; Bohn and Heermann, 2010a). We assume that we are in the overdamped regime such that the separation velocity vs due to this force is proportional to the force. We therefore have the form vs=k d e-12dσ2, where d is the separation between ori, σ is the range and k is the strength.
+As discussed in the text, newly duplicated ori are likely to experience, for entropic reasons, a repulsive force between them (Jun and Mulder, 2006). Numerical studies have shown that the corresponding potential has the qualitative form of a Gaussian in the centre-of-mass separation (Bohn and Heermann, 2011; Bohn and Heermann, 2010a). We assume that we are in the overdamped regime such that the separation velocity $v_{s}$ due to this force is proportional to the force. We therefore have the form $v_{s}=kde^{-\frac{1}{2}\frac{d}{\sigma}^{2}}$, where d is the separation between ori, σ is the range and k is the strength.
 
-## Parameters
+#### Parameters
 
 All parameters of the core MukBEF model are given in Table 1 and are as previously described and justified (Murray and Sourjik, 2017), except for the total species concentration C, which is increased by 30% to 520 nM but which is still within the experimentally justified range (Badrinarayanan et al., 2012b; Li et al., 2014). This was done for compatibility of the MukBEF splitting time with the lower range of cell lengths used in this work (2.5 µm – 5 µm), which were chosen to more closely match the range of the experimental data in Kuwada et al. (2013). The cell volume (V = 1.25×10−15 L at birth (2.5 µm)) was taken to scale linearly with length and is required to convert the parameter β to the appropriate dimensions for use in the stochastic simulations. With the above total concentration and cell volume, there are 391 simulated molecules at birth. The remaining (ori-related) parameters were chosen by comparison with experimental data as described below and are given in Table 2, Table 3, Table 4 and Table 5.
 
-## Initialisation of simulations
+**Table 1.**
+ Common Parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>α</td>
+      <td>0.5 s−1</td>
+    </tr>
+    <tr>
+      <td>β</td>
+      <td>1.5 × 10−4 nM−2 s−1</td>
+    </tr>
+    <tr>
+      <td>γ</td>
+      <td>3.6 s−1</td>
+    </tr>
+    <tr>
+      <td>δ</td>
+      <td>log(2)/50 s−1</td>
+    </tr>
+    <tr>
+      <td>ϵ</td>
+      <td>3δ</td>
+    </tr>
+    <tr>
+      <td>Du</td>
+      <td>0.3 µm2 s−1</td>
+    </tr>
+    <tr>
+      <td>Dv</td>
+      <td>0.012 µm2 s−1</td>
+    </tr>
+    <tr>
+      <td>V (volume at length 2.5 µm)</td>
+      <td>1.25 × 10−15 L</td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td>520 nM</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Additional parameters used in Figure 2d, Figure 2—figure supplements 1–4, Figure 3, Figure 3—figure supplement 1.Obtained by fitting the model without preferential loading to the data of Kuwada et al. Some simulations use preferential loading as stated in the legend or on the plot axis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dori</td>
+      <td>5.4 × 10−5 µm2 s−1</td>
+    </tr>
+    <tr>
+      <td>μ</td>
+      <td>0.026 µm</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Additional parameters used in Figure 2e,f, Figure 4, Figure 4—figure supplement 1–3.Obtained by fitting the model with 6X preferential loading to the data of Kuwada et al. (Figure 2e,f).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Dori</td>
+      <td>5.1 × 10−5 µm2 s−1</td>
+    </tr>
+    <tr>
+      <td>μ</td>
+      <td>0.052 µm</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Additional parameters (together with those in Table 3) used in Figure 4—figure supplement 3.ori repulsion without preferential loading.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>k</td>
+      <td>5 s−1</td>
+    </tr>
+    <tr>
+      <td>σ</td>
+      <td>200 nm</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 5.**
+ Additional parameters (together with those in Table 3) used in Figure 4.ori repulsion with 10x preferential loading.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>k</td>
+      <td>1 s−1</td>
+    </tr>
+    <tr>
+      <td>σ</td>
+      <td>200 nm</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Initialisation of simulations
 
 Initial concentrations were set to the integer homogenous configuration closest to the deterministic homogeneous state. Unless stated otherwise, single ori were initially placed at mid-cell, while in simulations starting with two ori, they were placed at the quarter positions. Simulations were first run for 30 min to equilibrate and then read out every 1 min (chosen to match the experimental data).
 
-## Apparent ori diffusion constant and drift rate
+### Apparent ori diffusion constant and drift rate
 
-To be able to quantitatively compare the experimental and simulated data, we needed quantitative descriptors of the ori dynamics. We compared both data sets to a theoretical model of particle diffusion in a harmonic potential U=12fx2 over an infinite 1D domain. Given a particle at position x0, the probability density that it is at position x at time δt later is (Doi and Edwards, 1988)px,δtx0=f/kT2πSexp-f/kT2S(x-x0e-δt/τ)2,where S=1-e-2δt/τ and τ=kTfD. From this, it is straightforward to calculate the expected value and variance of the step-wise velocity v:=x-x0δt:Ev= e-δtτ-1δtx0≈-x0τVarv=Dτδt21-e-2δt/τ≈2Dδt,where the second equality holds for 2δt/τ≪1 (the full expression is used when fitting). Note the expected value of the step-wise velocity depends linearly on position, while the variance is independent of position. This is observed in both experiments and simulations close within the neighbourhood of the ori ‘home’ position. We therefore use the measured slope of the velocity relationship and its variance to determine an apparent diffusion constant Da and drift rate da=1τ=fDakT. Linear fitting (Figure 2, Figure 2—figure supplement 3) was performed using the fit function in Matlab with the inverse square of the standard errors as weights.
+To be able to quantitatively compare the experimental and simulated data, we needed quantitative descriptors of the ori dynamics. We compared both data sets to a theoretical model of particle diffusion in a harmonic potential $U=\frac{1}{2}fx^{2}$ over an infinite 1D domain. Given a particle at position $x_{0}$, the probability density that it is at position $x$ at time $\deltat$ later is (Doi and Edwards, 1988)
 
-## ori drift and diffusion parameters
+$$
+px,\deltatx_{0}=\sqrt{\frac{f/kT}{2\piS}}exp-\frac{f/kT}{2S}(x-x_{0}e^{-\deltat/\tau})^{2},
+$$
 
-To search for parameter values for the ori diffusion constant (Dori) and the strength of attraction towards MukBEF () that gave agreement between the measured apparent diffusion constants (Da) and drift rates (da), we performed simple parameters sweeps. For the initial fitting (Figure 2—figure supplement 3), we chose Dori to be a percentage of the experimentally measured diffusion constant Da, ranging from 70% to 110% in 5% intervals, while the drift parameter was ranged from 0.5 to 2.5 times a nominal value of 0.026 µm (in steps of 0.5). The combination giving the best agreement and shown in Figure 2—figure supplement 3 was Dori = 0.9 Dori = 5.4 × 10-5 μm2s-1 and μ = 0.026 μm. These values were also used for the simulations shown in Figure 2d, Figure 2—figure supplements 1–5, Figure 3 and Figure 3—figure supplement 1.
+where $S=1-e^{-2\deltat/\tau}$ and $\tau=\frac{kT}{fD}$. From this, it is straightforward to calculate the expected value and variance of the step-wise velocity $v:=\frac{x-x_{0}}{\deltat}$:
 
-To produce Figure 2e, f, we performed the same parameter sweep in the presence of 6x preferential loading and found that the best agreement was obtained with Dori = 0.85 Da = 5.1 × 10-5 μm2s-1 and μ = 2 × 0.026 μm. It should be noted that given the stochastic nature of the simulations, even with 100 runs of 600 min each, there was quite some variability in the data. These parameters were used for subsequent simulations with growth.
+$$
+Ev=\frac{e^{\frac{-\deltat}{\tau}}-1}{\deltat}x_{0}≈-\frac{x_{0}}{\tau}
+$$
 
-## Entropic repulsion of ori
 
-We performed a parameter sweep of the strength and range of the ori repulsion and the preferential loading ratio (Figure 4—figure supplement 2). The range σ was varied over the values 50, 100, 200, 300, 400 nm, while the strength k was varied over 0.2, 1, 5, 25, 125 s−1. We performed 450 independent simulations of a growing cell as described and measured the partitioning accuracy and relative separation of ori 20 min after ori duplication. We repeated this for different preferential loading ratios. The result was Figure 4—figure supplement 2.
 
-## Polymer simulations
+$$
+Varv=\frac{D\tau}{\deltat^{2}}1-e^{-2\deltat/\tau}≈\frac{2D}{\deltat},
+$$
+
+where the second equality holds for $2\deltat/\tau≪1$ (the full expression is used when fitting). Note the expected value of the step-wise velocity depends linearly on position, while the variance is independent of position. This is observed in both experiments and simulations close within the neighbourhood of the ori ‘home’ position. We therefore use the measured slope of the velocity relationship and its variance to determine an apparent diffusion constant $D_{a}$ and drift rate $d_{a}=\frac{1}{\tau}=\frac{fD_{a}}{kT}$. Linear fitting (Figure 2, Figure 2—figure supplement 3) was performed using the fit function in Matlab with the inverse square of the standard errors as weights.
+
+### ori drift and diffusion parameters
+
+To search for parameter values for the ori diffusion constant ($D_{ori}$) and the strength of attraction towards MukBEF () that gave agreement between the measured apparent diffusion constants ($D_{a}$) and drift rates ($d_{a}$), we performed simple parameters sweeps. For the initial fitting (Figure 2—figure supplement 3), we chose $D_{ori}$ to be a percentage of the experimentally measured diffusion constant $D_{a}$, ranging from 70% to 110% in 5% intervals, while the drift parameter was ranged from 0.5 to 2.5 times a nominal value of 0.026 µm (in steps of 0.5). The combination giving the best agreement and shown in Figure 2—figure supplement 3 was $D_{ori}$ = 0.9 $D_{ori}$ = 5.4 × 10-5 μm2s-1 and $\mu$ = 0.026 μm. These values were also used for the simulations shown in Figure 2d, Figure 2—figure supplements 1–5, Figure 3 and Figure 3—figure supplement 1.
+
+To produce Figure 2e, f, we performed the same parameter sweep in the presence of 6x preferential loading and found that the best agreement was obtained with $D_{ori}$ = 0.85 $D_{a}$ = 5.1 × 10-5 μm2s-1 and $\mu$ = 2 × 0.026 μm. It should be noted that given the stochastic nature of the simulations, even with 100 runs of 600 min each, there was quite some variability in the data. These parameters were used for subsequent simulations with growth.
+
+### Entropic repulsion of ori
+
+We performed a parameter sweep of the strength and range of the ori repulsion and the preferential loading ratio (Figure 4—figure supplement 2). The range σ was varied over the values 50, 100, 200, 300, 400 nm, while the strength $k$ was varied over 0.2, 1, 5, 25, 125 s−1. We performed 450 independent simulations of a growing cell as described and measured the partitioning accuracy and relative separation of ori 20 min after ori duplication. We repeated this for different preferential loading ratios. The result was Figure 4—figure supplement 2.
+
+### Polymer simulations
 
 In order to investigate the interplay between MukBEF and ori positioning within the nucleoid, we used a coarse-grained lattice polymer (Bohn and Heermann, 2010b). Within this framework, the DNA is described as a self-avoiding ring polymer that is confined in an elongated cuboid with an aspect ratio of 4:1 comparable to that of the E. coli nucleoid. Using a ring polymer composed of 464 monomers, we chose a lattice of size 22 × 22 × 88 that leads to a system density (monomer-to-volume ratio) of around 10%. Dynamic looping interactions were enabled between one specific monomer (ori) and distant monomers. For simplicity, we did not include loop formation between any two arbitrary sites but we do not expect this to change the nature of our results other than giving a homogeneous background of looping events. The looping probability is set to be dependent on the spatial position of ori along the long axis of the nucleoid and is drawn from a Gaussian distribution centred around mid-cell with a standard deviation of 8.8 lattice units. A lifetime of 10000 Monte-Carlo steps (MCS) was assigned to each loop. 50 independent Monte-Carlo trajectories were used to sample the dynamics of the system. In each simulation, 10000 polymer conformations were recorded, one every 50000 MCS. The initial position of ori was varied in each simulation in order to uniformly cover the long axis of the cuboid.
 
 In the simulations of the two chromosomes, each chromosome was modelled as a ring polymer composed of 232 monomers in a cuboid of the same size. Hence, the system density of 10% stayed the same compared to the single-chromosome simulations. The spatially-varying probability for looping between both either of the two oris and a distant monomers of any of the two polymers were drawn from the superposition of two Gaussian distributions centred around the two quarter positions of the cuboid with a standard deviation of 8.8 lattice units. 500 independent Monte-Carlo trajectories were used to sample the dynamics of the two polymer system. The simulations were initialized with two overlapping polymers with the two oris at the centre of the cuboid.
 
-## Experiments
+### Experiments
 
 Strain SN192 (AB1157 lacO240-hyg at ori1, tetO240-gen at ter3, Plac-lacI-mCherry-frt at leuB, Plac-tetR-mCerulean-frt at galK, mukB-mYPet-frt) (Nolivos et al., 2016) was grown in M9 minimal medium supplemented with 0.2% glycerol and required amino acids (threonine, leucine, proline, histidine and arginine—0.1 mg ml−1) at 30°C. Cells were grown O/N, diluted 1000-fold and grown to an A600 of 0.05–0.2. Unlike longer cells with two (quarter positioned) ori foci, cells with a single (mid-cell localised) ori focus, can be analysed together in absolute, rather than scaled, coordinates by simply measuring foci positions relative to mid-cell (as we did in Figure 2 for the dataset of Kuwada et al., 2013). We therefore, unless otherwise indicated, treated cells with DL serine hydroxamate (SHX) (Sigma-Aldrich, S4503) to a final concentration of 1 mg/ml. During the treatment, cells do not initiate a new round of replication, but complete any ongoing rounds (Ferullo et al., 2009). To allow sufficient time for replication to complete to termination, cultures were grown for 3 hr in the presence of SHX (generation time ~170 min). Finally, cells were spotted onto an M9-glycerol 1% agarose pad with the growth medium on a slide for imaging.
 

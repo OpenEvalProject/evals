@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.43630.001 We report the crystal structure of nuclear import receptor Importin-9 bound to its cargo, the histones H2A-H2B. Importin-9 wraps around the core, globular region of H2A-H2B to form an extensive interface. The nature of this interface coupled with quantitative analysis of deletion mutants of H2A-H2B suggests that the NLS-like sequences in the H2A-H2B tails play a minor role in import. Importin-9•H2A-H2B is reminiscent of interactions between histones and histone chaperones in that it precludes H2A-H2B interactions with DNA and H3-H4 as seen in the nucleosome. Like many histone chaperones, which prevent inappropriate non-nucleosomal interactions, Importin-9 also sequesters H2A-H2B from DNA. Importin-9 appears to act as a storage chaperone for H2A-H2B while escorting it to the nucleus. Surprisingly, RanGTP does not dissociate Importin-9•H2A-H2B but assembles into a RanGTP•Importin-9•H2A-H2B complex. The presence of Ran in the complex, however, modulates Imp9-H2A-H2B interactions to facilitate its dissociation by DNA and assembly into a nucleosome.
+We report the crystal structure of nuclear import receptor Importin-9 bound to its cargo, the histones H2A-H2B. Importin-9 wraps around the core, globular region of H2A-H2B to form an extensive interface. The nature of this interface coupled with quantitative analysis of deletion mutants of H2A-H2B suggests that the NLS-like sequences in the H2A-H2B tails play a minor role in import. Importin-9•H2A-H2B is reminiscent of interactions between histones and histone chaperones in that it precludes H2A-H2B interactions with DNA and H3-H4 as seen in the nucleosome. Like many histone chaperones, which prevent inappropriate non-nucleosomal interactions, Importin-9 also sequesters H2A-H2B from DNA. Importin-9 appears to act as a storage chaperone for H2A-H2B while escorting it to the nucleus. Surprisingly, RanGTP does not dissociate Importin-9•H2A-H2B but assembles into a RanGTP•Importin-9•H2A-H2B complex. The presence of Ran in the complex, however, modulates Imp9-H2A-H2B interactions to facilitate its dissociation by DNA and assembly into a nucleosome.
 
 ## Introduction
 
@@ -43,11 +43,116 @@ Here, we solved the crystal structure of Imp9 bound to the full-length H2A-H2B d
 
 ## Results
 
-## Structure of the Imp9•H2A-H2B complex
+### Structure of the Imp9•H2A-H2B complex
 
 The major nuclear importer for H2A-H2B in S. cerevisiae is Kap114 (Mosammaparast et al., 2002b; Mosammaparast et al., 2001). Imp9, the human homolog of Kap114, was previously shown to bind and import H2A-H2B (Jäkel et al., 2002a; Kimura et al., 2017; Mühlhäusser et al., 2001). We show Imp9-histone interactions in immunoprecipitation from the cytoplasmic fraction of a stable HeLa cell line expressing mCherry-H2B (Figure 1A). We also show by fluorescence microscopy that Imp9 in these cells localizes mostly to the cytoplasm (Figure 1B). Similar cytoplasmic localization of Imp9 was reported in the Human Protein Atlas (Thul et al., 2017; Uhlen et al., 2017). To understand how Imp9 recognizes histones for nuclear import, we solved the crystal structure of human Imp9 bound to full-length X. laevis H2A-H2B (dissociation constant, KD = 30 nM; Table 1 and Figure 1—figure supplement 1) by single wavelength anomalous dispersion to 2.7 Å resolution (Figure 1—source data 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/43630/elife-43630-fig1-v2.jpg)
+
+**Figure 1.:** (A) Coimmunoprecipitation (CoIP) studies of H2BmCherry from whole cell, cytoplasmic and nuclear fractions of the lysates from HeLa cells stably expressing H2BmCherry, followed by immunoblots with Imp9, Ran, RFP antibodies. PCNA and MAb414 antibodies are used as loading control antibodies. 10 µg of 1.5 mg lysates are analyzed as CoIP input. Blots are representative of three identical experiments. (B) Subcellular localization of Imp9 and Ran in Hela::H2BmCherry cells. HeLa cells were fixed, permeabilized, incubated with affinity-purified rabbit polyclonal Imp9 antibody and mouse monoclonal anti–Ran antibody, and visualized by confocal microscopy. The secondary antibodies were Alexa 488 conjugated anti–rabbit and Alexa 405 conjugated anti-mouse, respectively. The column on the right contains two-color merge images. (C). The crystal structure of human Imp9 (blue) in complex with X. laevis H2A (yellow)-H2B (red).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43630/elife-43630-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A-H) The GUSSI output for global analysis of each experiment (binding proteins mentioned above the panel) carried out in triplicates. The top panel shows the SVD-reconstructed thermogram provided by NITPIC, the middle panel shows the isotherms and the bottom panel shows the residuals. Individual experiments in the triplicate sets are differently color-coded. DP - differential power.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/43630/elife-43630-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Organization of the 20 HEAT repeats of Imp9. The H19loop, which is not modeled, is shown with a dashed line. (B) Structure of the Imp9•H2A-H2B complex shown in cartoon representation, for comparison with the surface representations. Two views (180° rotation about the vertical axis) of the electrostatic surface potential (from −8 kV to +8 kV) of H2A-H2B and Imp9. The left view is the same as the cartoon representation, with the two proteins separated for viewing of the surfaces. The structures in the panel below show approximate open-book views. Interfaces on Imp9 and H2A-H2B are outlined in black. The electrostatic surface was generated in PyMol using APBS plugin (Baker et al., 2001).
+
+**Table 1.**
+ Imp9-H2A-H2B binding affinities by Isothermal Titration Calorimetry.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Binding species</th>
+      <th>KD(nM)*</th>
+      <th>ΔH (kCal/mol)</th>
+      <th>ΔS (Cal/mol.K)</th>
+      <th>ΔG (kCal/mol)</th>
+      <th>Imp9 concentration correction factor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Imp9 + H2A-H2B</td>
+      <td>30 [10, 70]†</td>
+      <td>−10.2 [−10.6, -9.8]‡</td>
+      <td>−0.6</td>
+      <td>−10.0</td>
+      <td>0.90 [0.88, 0.92]§ 0.90 [0.87, 0.93] 0.90 [0.88, 0.92]</td>
+    </tr>
+    <tr>
+      <td>Imp9 + H2AΔTail¶ -H2B</td>
+      <td>40 [20, 60]</td>
+      <td>−11.9 [−12.4,–11.5]</td>
+      <td>−6.7</td>
+      <td>−10.0</td>
+      <td>0.83 [0.81,0.84] 0.86 [0.84,0.88] 0.85 [0.83,0.86]</td>
+    </tr>
+    <tr>
+      <td>Imp9 + H2A-H2BΔ(1-35)</td>
+      <td>40 [10, 110]</td>
+      <td>−12.5 [−13.2,–11.9]</td>
+      <td>−8.5</td>
+      <td>−10.0</td>
+      <td>0.87 [0.82, 0.91] 0.89 [0.86, 0.91] 0.87 [0.83, 0.91]</td>
+    </tr>
+    <tr>
+      <td>Imp9 + H2AΔTail-H2BΔTail††</td>
+      <td>40 [10, 100]</td>
+      <td>−11.7 [−12.2,–11.2]</td>
+      <td>−5.9</td>
+      <td>−9.9</td>
+      <td>1.0 [0.98, 1.03] 0.97 [0.92, 1.01] 0.92 [0.88, 0.96]</td>
+    </tr>
+    <tr>
+      <td>Imp9ΔH8loop + H2A-H2B</td>
+      <td>10 [1, 20]</td>
+      <td>−10.1 [−10.4,–9.9]</td>
+      <td>2.4</td>
+      <td>−10.8</td>
+      <td>0.97 [0.96, 0.99] 1.06 [1.05, 1.07] 0.99 [0.98, 1.00]</td>
+    </tr>
+    <tr>
+      <td>Imp9ΔH18-H19loop + H2A-H2B</td>
+      <td>450 [350, 600]</td>
+      <td>7.9 [7.6, 8.3]</td>
+      <td>56</td>
+      <td>−8.5</td>
+      <td>1.12 [1.1, 1.2] 1.16 [1.12, 1.2] 1.15 [1.11, 1.19]</td>
+    </tr>
+    <tr>
+      <td>Imp9ΔH19loop + H2A-H2B</td>
+      <td>40 [10, 100]</td>
+      <td>−11.0 [−11.4,–10.5]</td>
+      <td>−3.5</td>
+      <td>−9.9</td>
+      <td>0.99 [0.98,1.02] 1.00 [0.98,1.03] 1.00 [0.97,1.04]</td>
+    </tr>
+  </tbody>
+</table>
+
+_* The KD value corresponds to a best-fit value obtained from global analysis of each experimental set carried out in triplicate.† The 68.3% confidence interval for KD determined by global fit analysis of the triplicates in each experimental set.‡ The 68.3% confidence interval for ΔH determined by global fit analysis of the triplicates in each experimental set.§ The 68.3% confidence interval for concentration correction factor of Imp9 is determined by local fit analysis of each individual experiment in an experimental set of triplicates.¶ H2AΔTail – globular domain of H2A (residues 14–119).†† H2AΔTail-H2BΔTail - heterodimer of residues 14–119 of H2A with residues 25–123 of H2B.The following supplement is available for Table 1:Figure 1—figure supplement 1_
+
 Imp9 is made up of twenty tandem HEAT repeats, each containing two antiparallel helices A and B that line the convex and concave surfaces of superhelical-shaped protein, respectively (Figure 1C and Figure 1—figure supplement 2A,B). The concave surface of Imp9 is mostly acidic, with a few small basic patches (Figure 1—figure supplement 2B). This charged concave surface of Imp9 wraps around H2A-H2B, burying 1352 Å2 (26% of the H2A-H2B surface) at three distinct interfaces 1–3 (Figure 2A–D and Figure 2—figure supplements 1–3). The Imp9-bound H2A-H2B has a canonical histone-fold as in nucleosomes (151 Cα atoms aligned, r.m.s.d. 0.505 Å; PDB ID 1AOI) (Luger et al., 1997). In our structure, the N-terminal and C-terminal tails of H2A (residues 1–16, 101–130) and H2B (1-27, 125-126), the first 14 residues of Imp9 and its H19loop (residues 936–996) were not modeled due to missing electron density.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/43630/elife-43630-fig2-v2.jpg)
+
+**Figure 2.:** (A) The Imp9•H2A-H2B structure is oriented as in Figure 1C. The histones H2A (yellow)-H2B (red) are drawn as cartoons. Imp9 (blue) is represented as surface showing three distinct H2A-H2B binding interfaces (dark blue). (B–D). Details of Interface 1 (B), Interface 2 (C) and Interface 3 (D). Intermolecular contacts are shown as dashed lines.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43630/elife-43630-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A-C) Cross-eyed stereo view of Interface 1 (A), Interface 2 (B) and Interface 3 (C). (D) Interactions between the main chain of Imp9 and H2A-H2B. Interactions between Imp9 (blue) and the histones (H2A is yellow and H2B is red) are shown with dashed lines.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/43630/elife-43630-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A-D) Cross-eyed stereo views of representative 2Fo-Fc omit map electron density within Interface 1 (contoured at 1σ A); residues 90–102 of Imp9 and residues 80–89 of H2B omitted), Interface 2 (contoured at 1σ in B), and contoured at 0.6σ in C); residues 390-397of Imp9 and residues 28–36 of H2B omitted) and Interface 3 (contoured at 1σ D); residues 886–909 on Imp9 omitted).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/43630/elife-43630-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A-C) Sequence alignment of Imp9 sequences (human, X. laevis, D. melanogaster and S. cerevisiae) from the region that forms Interface 1 (A), Interface 2 (B) and Interface 3 (C) in Imp9•H2A-H2B structure. Residues in the three interfaces are mostly conserved, with Interface three being the most conserved. The level of conservation is consistent with many Imp9 residues, especially in Interface 1, using their main chain for interactions with histone residues.
 
 The N- and C-terminal HEAT repeats of Imp9 (Interfaces 1 and 3) clamp the histone-fold domain while the inner surface of central HEAT repeats 7–8 (Interface 2) interacts with a five-residue segment of the H2B N-terminal tail (Figure 2). Interface 1 on Imp9 comprises the loop that follows helix 2B and the last turns of helices 3B, 4B and 5B (Figure 2B, Figure 2—figure supplements 1A, 2A and 3A). Hydrogen-bonding with H2A-H2B residues caps the C-terminal ends of these Imp9 B helices (Figure 2—figure supplement 1D). Of note is the end-to-end capping of the last turn of Imp9 helix 4B by the first turn of histone H2B helix α2. Interface 1 on the histones involves α2-L2-α3 of H2A and α1-L1-α2 of H2B, which constitute a significant portion of the basic DNA-binding surface found in nucleosomes. Although histones and Imp9 surfaces at this interface are electrostatically complementary (Figure 1—figure supplement 2B), interactions also involve many hydrogen bonds, hydrophobic interactions and main chain interactions (Figure 2—figure supplement 1A,D).
 
@@ -55,7 +160,7 @@ Interface 2 involves Imp9 helices 7B, 8B and the H8loop (connects helices 8A to 
 
 Interface 3 involves the last three HEAT repeats of Imp9, specifically the last turn of helix 18A and the short loop that follows, the H18-19loop, the C-terminal half of helix 19A and the first turn of helix 20B (Figure 2D, Figure 2—figure supplements 1C, 2D and 3C). Instead of the typical basic H2A-H2B residues interacting with the acidic Imp9 residues, charges at Interface 3 are reversed (Figure 1—figure supplement 2B). A basic patch formed by the Imp9 H18-19loop and nearby helices complement an acidic surface on the histones formed by residues from H2A helices α2 and αC, and the C-terminal half of H2B that comprises α2-α3-αC. Of note here are salt bridges between Imp9 residue Arg898 and several acidic residues of H2A (Figure 2D). Many hydrophobic contacts are also found at this interface, and several helices (Imp9 H18A, H19A and histone H2B α2) are capped through hydrogen-bonding with partner proteins (Figure 2—figure supplements 1C and 3C).
 
-## Distribution of binding energy in the Imp9•H2A-H2B complex
+### Distribution of binding energy in the Imp9•H2A-H2B complex
 
 We analyzed the distribution of binding energy of the extensive Imp9-H2A-H2B interface through mutagenesis of the N-terminal histone tails and several long Imp9 loops and determined KDs of the mutants using isothermal titration calorimetry (ITC; Table 1 and Figure 1—figure supplement 1). Imp9 binds full-length H2A-H2B with high affinity (KD = 30 nM). We did not make mutations to Interface 1 because of the many main-chain interactions found there (Figure 2—figure supplement 1D). Interface 2 involves the H8 loop of Imp9 and the N-terminal tail of H2B, both of which are convenient for deletion mutagenesis. Similarly, two long Imp9 loops (H18-19loop and H19loop) in Interface 3 are convenient for deletion mutagenesis.
 
@@ -63,7 +168,7 @@ H2A-H2B mutant assembled with the core of H2A (residues 14–119) and full-lengt
 
 At Interface 3, the basic H18-19loop of Imp9 contacts the acidic patch of the histones while the nearby H19loop is mostly disordered and its contribution to histone binding is uncertain. Removal of the H18-19loop reduced the affinity 15-fold (KD = 450 nM; Table 1, Figure 1—figure supplement 1F). We note the endothermic binding reaction that occurred upon truncation of this 40-residue loop. This result suggests substantial contribution of Interface three to the total binding energy. Removal of the H19loop did not affect affinity (KD = 40 nM; Table 1, Figure 1—figure supplement 1G), suggesting that this disordered loop does not participate in H2A-H2B binding.
 
-## Imp9 functions biochemically like a histone chaperone
+### Imp9 functions biochemically like a histone chaperone
 
 A large portion of the Imp9 interface on H2A-H2B overlaps with the DNA-binding and H3-H4-binding interfaces used in nucleosomes (Figure 3A–C). This feature of Imp9 occluding interfaces used in the nucleosome is common to many H2A-H2B histone chaperones of H2A-H2B (Hammond et al., 2017). Imp9 in fact buries more surface area on H2A-H2B (1352 Å2) than well-characterized H2A-H2B chaperones such as Nap1 (387 Å2), Swr1 (488 Å2), Anp32e (533 Å2), Chz1 (906 Å2), Spt16 of FACT (185 Å2) and YL1 (883 Å2) (Hondele et al., 2013; Hong et al., 2014; Kemble et al., 2015; Luger et al., 1997; Mosammaparast et al., 2002a; Obri et al., 2014; Zhou et al., 2008).
 
@@ -73,9 +178,37 @@ A large portion of the Imp9 interface on H2A-H2B overlaps with the DNA-binding a
 
 Histone chaperones are a class of functionally, structurally and mechanistically diverse histone-binding proteins that ‘chaperone’ histones to protect them from promiscuous DNA-histone interactions (Elsässer and D'Arcy, 2012; Mattiroli et al., 2015) in many different contexts surrounding the formation of nucleosomes (Laskey et al., 1978). The observation that Imp9 buries more surface area on H2A-H2B than well-characterized histone chaperones raises the question of whether Imp9 might also function as a histone chaperone. This function is manifested biochemically by the protein outcompeting DNA from non-nucleosomal DNA•H2A-H2B complexes (Andrews et al., 2010; Andrews et al., 2008; Hondele et al., 2013; Hong et al., 2014). To test if Imp9 can compete H2A-H2B from DNA like histone chaperone Nap1, we performed native gel-based competition assays. Titration of Nap1 or Imp9 against DNA•H2A-H2B complexes leads to the release of free DNA as Nap1 or Imp9 binds H2A-H2B (Figure 3D,E). These results suggest that Imp9 can act as a histone chaperone by shielding H2A-H2B from promiscuous interactions while it accompanies the histones from the cytoplasm to the nucleus.
 
-## RanGTP does not release H2A-H2B but assembles to form RanGTP•Imp9•H2A-H2B
+### RanGTP does not release H2A-H2B but assembles to form RanGTP•Imp9•H2A-H2B
 
 RanGTP generally binds importins with high affinity to dissociate Importin-cargo complexes and release cargos into the nucleus. However, this appears not to be the case with Imp9•H2A-H2B. When increasing concentrations of RanGTP (5–30 molar equivalents S. cerevisiae Ran(1–177/Q71L)) are added to an immobilized MBP-Imp9•H2A-H2B complex, the histones are not released (Figure 4A; controls shown in Figure 4—figure supplement 1A,C). The RanGTP protein used in these experiments is fully active as it easily dissociates a cargo/NLS from Kapβ2 (Figure 4B and Figure 4—figure supplement 1B). In a separate experiment, the Imp9•H2A-H2B complex also remains intact when added to immobilized MBP-RanGTP (Figure 4C). MBP-RanGTP binds to H2A-H2B-bound Imp9 to form what seems to be a heterotetrameric MBP-RanGTP•Imp9•H2A-H2B complex (Figure 4C).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/43630/elife-43630-fig4-v2.jpg)
+
+**Figure 4.:** (A) Pull-down binding assay to probe RanGTP (S. cerevisiae Ran(1–179/Q71L)) interactions with the Imp9•H2A-H2B complex. Increasing concentrations of RanGTP (12.5 μM, 25 μM, 50 μM or 75 μM) were added to 2.5 μM MBP-Imp9•H2A-H2B that is immobilized on amylose resin. After extensive washing, the bound proteins were visualized by Coomassie-stained SDS-PAGE. Controls are shown in Figure 4—figure supplement 1. (B) Pull-down binding assays to show RanGTP mediated dissociation of the GST-Kapβ2•MBP-PY-NLS complex. Increasing concentrations of RanGTP (12.5 μM, 25 μM, 50 μM or 75 μM) were added to 2.5 μM GST-Kapβ2•MBP-PY-NLS (immobilized). After extensive washing, bound proteins were visualized by Coomassie-stained SDS-PAGE. Controls are shown in Figure 4—figure supplement 1. (C) Pull-down binding assay where preformed Imp9•H2A-H2B was added to immobilized MBP-RanGTP. After washing, the bound proteins were visualized by Coomassie-stained SDS-PAGE. (D) EMSA of Imp9 titrated at 0.5–2.5 molar equivalents to constant H2A-H2B. Upward shift of the Imp9 band shows that Imp9 interacts with H2A-H2B. (E) EMSA of Ran titrated at 1–3 molar equivalents to constant Imp9 (lanes 3–6) or Imp9•H2A-H2B (lanes 7–10). Downward shift of the Imp9 band shows that Imp9 interacts with Ran to form Imp9•RanGTP (compare lanes 4–6 to lane 3), while upward shift of the Imp9•H2A-H2B band shows that a heterotetrameric Ran•Imp9•H2A-H2B complex forms (compare lanes 8–10 to lane 7). No Imp9 or Imp9•RanGTP band is present in lanes 8–10 indicating no dissociation of the Imp9•H2A-H2B complex by RanGTP. Proteins inputs for lanes 1–10 are shown in Figure 4—figure supplement 1D. (F) Analytical ultracentrifugation produced sedimentation profiles for Imp9, H2A-H2B, RanGTP, the 1:1 molar ratio mix of Imp9 and H2A-H2B dimer, the 1:1 molar ratio mix of Imp9 and RanGTP, and the 1:1:3 molar ratio mix of Imp9, H2A-H2B dimer and RanGTP. (G) Molecular weights estimated from merged SAXS profiles (MWSAXS) for Imp9, Imp9•H2A-H2B, Imp9•RanGTP, and RanGTP•Imp9•H2A-H2B, compared with molecular weights from the protein sequences (MWseq).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/43630/elife-43630-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Pull-down binding assays to probe RanGTP (S. cerevisiae Gsp1 (1–179/Q71L) interactions with the Imp9•H2A-H2B complex. Increasing concentrations of RanGTP (12.5 μM, 25 μM, 50 μM or 75 μM) was added to 2.5 μM MBP-Imp9•H2A-H2B. After washing, bound proteins were visualized by Coomassie-stained SDS-PAGE. 2% of input RanGTP for the corresponding to binding reactions in lanes 6–9 are shown lanes 15–18. 2% of the flow-through from the corresponding to binding reactions in lanes 6–9 are shown lanes 24–27. (B) Pull-down binding assays to probe RanGTP mediated dissociation of MBP-PYNLS from the GST-Kapβ2•MBP-PY-NLS complex. Increasing concentrations of RanGTP (12.5 μM, 25 μM, 50 μM or 75 μM) was added to 2.5 μM GST-Kapβ2•MBP-PY-NLS. After washing, the bound proteins were visualized by Coomassie-stained SDS-PAGE. 2% of input RanGTP for the corresponding binding reactions in lane 6–9 are shown in lanes 21–24. 2% of flow-through from the corresponding binding reactions in lanes 6–9 are shown in lanes 11–14. (C) Controls for pull-down binding assays. Imp9 (lanes 3–5), H2A-H2B (lane 7–9) or RanGTP (lane 11–13) was added to immobilized MBP. The flow-through (FT), the last wash and the proteins that remain bound on beads after washing were visualized by Coomassie-stained SDS-PAGE. (D) Coomassie-stained SDS-PAGE of the protein inputs for the native gel in Figure 4E.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/43630/elife-43630-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Size exclusion chromatography (SEC) of 20 μM Imp9 alone (black), 60 μM RanGTP alone (dark grey), Imp9 +H2A-H2B 1:1 (20 μM; blue), and Imp9 +H2A-H2B 1:1 (20 μM) with Ran at 0.5 (10 μM; green), 1 (20 μM; red), 2 (40 μM; light grey) or 3 (60 μM; grey). The buffer was 20 mM HEPES pH 7.4, 200 mM sodium chloride, 2 mM magnesium acetate, 2 mM TCEP and 8% (v/v) glycerol. Column was Superdex S200 Increase 10/300. Imp9 alone elutes at 13.6 mL, while the 1:1 Imp9•H2A-H2B complex elutes at 13.5 mL. We see the formation of a 1:1:1 RanGTP•Imp9•H2A-H2B complex. Addition of an equimolar amount of RanGTP causes the Imp9•H2A-H2B peak to shift from 13.5 mL to 13.4 mL. Continued addition of RanGTP beyond a 1:1:1 mixture, results in the appearance of free RanGTP that elutes at 17.1 mL. Comparison to a Ran only control (60 μM; dark grey) shows that the Imp9•H2A-H2B•Ran complex has a 1:1:1 stoichiometry. Quantitatively, the free RanGTP peak is absent in the 1:1:1 sample, is one-third of the control in a 1:1:2 sample, and two-thirds of the control in a 1:1:3 sample. (B) SEC of 1:1 Imp9 +H2A-H2B (70 μM; blue) and 1:1:1 Imp9, H2A-H2B, and Ran (70 μM; red). The buffer was 20 mM HEPES pH 7.4, 200 mM NaCl, 2 mM magnesium acetate, 2 mM TCEP and 8% (v/v) glycerol. Column was Superdex S200 Increase 10/300. Peak fractions (Fractions 1–13) were analyzed on 15% SDS-PAGE stained with Coomassie blue. As in A), Imp9•H2A-H2B elutes at 13.5 mL and the peak eluting at 13.4 mL contains 1:1:1 RanGTP•Imp9•H2A-H2B. Analysis of peak fractions by SDS-PAGE shows the presence of Imp9, H2A-H2B, and Ran in the peak. Each protein stains in proportion to that seen in the input lane, consistent with the formation of a 1:1:1 complex. Also, in the SEC there is no free H2A-H2B or free Ran.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/43630/elife-43630-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A-D) Experimental SAXS profiles of Imp9 (A), Imp9•H2A-H2B (B), Imp9•RanGTP (C), and RanGTP•Imp9•H2A-H2B (D) were used to compute radius of gyration (Rg), maximum particle size (Dmax), pair distribution function (P(r)) and estimated molecular weights (Figure 4G and Figure 4—source datas 1 and 2). Left panels: experimental SAXS profile (blue dots with black error bars) is shown along with the extrapolation curve (red). The corresponding Kratky plot, used to depict the level of flexibility, is also shown in blue dots along with the extrapolation curve (red). Right panels: The left plot shows the pair distribution function, P(r). The maximum particle size (Dmax) was determined as the maximum pair distance in the plot. The right plot shows the corresponding Guinier plot with the calculated Rg fit value in Å. The linearity of the Guinier plots confirms a high degree of homogeneity for each of the SAXS samples.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/43630/elife-43630-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A-F) Structural alignment of HEAT repeats 1–4 of six different importin-RanGTP complexes to HEAT repeats 1–4 of Imp9. The complexes compared are Importin-β(1-462)•RanGTP (A; 1IBR), Kap95•RanGTP (B); 2BKU), Kapβ2•RanGTP (C); 1QBK), Kap121•RanGTP (D); 3W3Z), Transportin-SR2• RanGTP (E); 4C0Q) and Importin-13•RanGTP (F); 2 × 19). The importins are shown with different colors, Ran in green and the aligned N-terminal HEAT repeats of Imp9 are in light blue. All structures are shown with the same orientation of the aligned Imp9 (HEAT repeats 1–4). Ran is oriented very similarly and binds at very similar locations, at the B helices of HEAT repeats 1–4 of the importins, in all six structures. The pitches of the importin superhelices are different, resulting in the second importin-Ran interface (located at the bottom of Ran in A–F) interacting with different central or C-terminal HEAT repeats of the importins.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/43630/elife-43630-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A-E) RanGTP binding interfaces- at the N-termini of the importins: Kap95•RanGTP (A); 2BKU), Kap121•RanGTP (B); 3W3Z), Importin-β(1-462)•RanGTP (C; 1IBR), Importin-13•RanGTP (D); 2 × 19) and Transportin-SR2• RanGTP (E); 4C0Q). Interactions are shown with dashed lines and all structures are shown in similar orientations. (F) HEAT repeats 1–4 of Imp9, oriented similarly as importins in A–E), showing side chains on the B helices may contact RanGTP. (G) Sequence alignment of residues in HEAT repeats 1–4 of Imp9, Kap95, Kap121, Importin-β, Importin-13 and Transportin-SR2. Importin positions with identical amino acids are shaded red, and those with conserved amino acids are shown in boxes. There are 18–23 residues/positions in each importin that contact Ran, and they are shaded yellow. Of these, 20 positions contact Ran in ≥3 importins (marked with black circles). The majority of Ran contacts in each of the five importins are among these 20 most commonly used positions but only 8 of the 20 most common Ran contact positions show sequence conservation (marked with black circles and boxed). Flexibility of the HEAT repeat architecture and diversity of importin-Ran interactions at any site within the interface results in structural conservation at the interface between the N-termini of importins and the switch 1, 2 regions of RanGTP even when sequence conservation is not high. For example, the position of Q37 (marked with arrow) in Imp9 is not conserved in sequence but the side chains in Kap121, Importin-13 and Transportin-SR2 (all at the N-terminal end of the B helix of HEAT repeat 1) interact with the N-terminal end of the β2 strand of Ran (part of switch 1). Pro24 of Transportin-SR2 and Ile39 of Importin-13 make hydrophobic interactions with a Val47 side chain of Ran, but Asn24 of Kap121 make polar contacts with the main chain of Ran Val47. The majority of Imp9 side chains in the most common/structurally conserved Ran contact sites (marked with black circles) are the same as or have similar chemical characteristics as at least one of the five other importin side chains in that same position, supporting the prediction that RanGTP will likely contact Imp9 at the same location as shown in A–E), on the B-helices of HEAT repeats 1–4.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/43630/elife-43630-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** (A) A zoomed in view (the N-terminal half of Imp9) of the Imp9•H2A-H2B structure shown in the same orientation as the importins in Figure 4—figure supplement 5D. Imp9 is in blue, H2A in yellow and H2B in red. Imp9 is structurally aligned with the 1st four HEAT repeats of Kap121 (shown in dark blue) in the Kap121•RanGTP structure (3W3Z). RanGTP from the Kap121•RanGTP structure is not shown but is schematically depicted by the light-green heart-shape drawing to mark the predicted location of the Ran site on Imp9. (B) Top panel, same view of the Imp9•H2A-H2B structure as in A), with Imp9 residues at the predicted RanGTP binding site colored green. Bottom panel shows the view upon 90° rotation about the vertical axis.( C–E) Size exclusion chromatography of MBP-Imp9Δ1–144 + excess RanGTP (C), MBP-Imp9Δ1–144 + H2A-H2B (D) and previously purified MBP-Imp9Δ1–144•H2A-H2B + excess RanGTP (E). 500 μL protein samples were loaded on to a Superdex S200 Increase 10/300 column and the size exclusion chromatography experiments were performed in buffer containing 20 mM HEPES pH 7.4, 200 mM sodium chloride, 2 mM magnesium acetate, 2 mM DTT and 10% glycerol. The elution volume for each protein peak is shown and proteins in the fractions are visualized by Coomassie-stained SDS-PAGE gels shown above the chromatograms. SEC analysis shows that RanGTP does not interact with the Imp9 mutant. No interaction is seen at micromolar concentrations even when RanGTP is added at a 6-fold molar excess. This is obvious from the SDS-PAGE analysis of SEC fractions, showing that the Imp9 mutant and RanGTP do not co-migrate (C). The Imp9 mutant protein is functional as the interaction is maintained with H2A-H2B (D). This is consistent with the crystal structure showing that the region spanning HEAT repeats 1–3 of Imp9 (residues 1–144) is only a very small portion of the very large Imp9•H2A-H2B interface. Not surprisingly, like Imp9 mutant alone in C), the histone-bound Imp9 mutant also does not bind RanGTP when the GTPase is added at a molar excess (E).
 
 We examined the interactions of Imp9•H2A-H2B with RanGTP in solution using electrophoretic mobility shift assays and size exclusion chromatography. Electrophoretic mobility shift assays (EMSA) show the formation of a 1:1 complex between Imp9 and H2A-H2B (Figure 4D) as well as between Imp9 and RanGTP (Figure 4E, lanes 3–6). A complex containing equimolar amounts of Imp9, H2A-H2B and RanGTP can also form (Figure 4E, lanes 7–10). Size exclusion chromatography of Imp9•H2A-H2B in the presence of excess RanGTP also shows a large complex that contains Imp9, H2A-H2B and Ran (Figure 4—figure supplement 2).
 
@@ -87,9 +220,17 @@ We compared the Imp9•H2A-H2B structure with the structures of different import
 
 Structural alignment of HEAT repeats 1–4 of Imp9 and Kap121•RanGTP allows us to predict the RanGTP binding site at the N-terminus of Imp9 (Figure 4—figure supplement 6A,B). The prediction is supported by an Imp9 mutant with HEAT repeats 1–3 removed that no longer binds RanGTP (Figure 4—figure supplement 6C–E). This likely Ran-binding site at the N-terminus of Imp9 appears separate from but adjacent to the H2A-H2B binding site (Figure 4—figure supplement 6A,B). The GTPase can most likely access Imp9 without dislodging H2A-H2B but proximity of RanGTP to the histones could modulate Imp9-histones interactions especially the kinetics of binding.
 
-## RanGTP•Imp9•H2A-H2B is tuned to release histones for nucleosome assembly
+### RanGTP•Imp9•H2A-H2B is tuned to release histones for nucleosome assembly
 
 We performed native gel-based competition assays to titrate DNA against Imp9•H2A-H2B or RanGTP•Imp9•H2A-H2B. DNA is unable to compete H2A-H2B from Imp9•H2A-H2B (Figure 3D–E and Figure 5A, lanes 5–7) but can compete H2A-H2B from RanGTP•Imp9•H2A-H2B to produce Imp9•RanGTP and DNA•H2A-H2B (Figure 5A–B, lanes 8–10). Unlike Imp9, which efficiently displaces DNA from the DNA•H2A-H2B complex (Figure 5C–D, lanes 4–6), Imp9•RanGTP does not displace DNA from the DNA•H2A-H2B complex (Figure 5C–D, lanes 8–10). These results show that the interaction between Imp9 and H2A-H2B is altered by RanGTP.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/43630/elife-43630-fig5-v2.jpg)
+
+**Figure 5.:** (A, B) DNA is titrated at 0.5, 1 and 2 molar equivalents of preformed Imp9•H2A-H2B (equimolar Imp9 and H2A-H2B mixed together) or RanGTP•Imp9•H2A-H2B (equimolar Imp9, H2A-H2B and RanGTP added together). Images of the same native gel, Coomassie stained in (A) and ethidium bromide stained in (B), are aligned for comparison. DNA cannot compete for H2A-H2B from the Imp9•H2A-H2B, leaving free DNA (B, increasing amounts from lanes 5 to 7) and intact Imp9•H2A-H2B (A, lanes 5–7). In contrast, DNA can compete for H2A-H2B from RanGTP•Imp9•H2A-H2B resulting in Imp9•RanGTP complexes (A, lanes 8–10), DNA•H2A-H2B complexes and very little free DNA (B, lanes 8–10). (C, D) Imp9 or Imp9•RanGTP (equimolar Imp9 and RanGTP added together) is titrated at 0.5–1.5 molar equivalents of H2A-H2B (in a DNA•H2A-H2B 1:7 complex). Images of the same native gel, ethidium bromide stained in (C) and Coomassie stained in (D), are aligned for comparison. Imp9 releases free DNA from DNA•H2A-H2B (C, lanes 3–6) and binds histones to form an Imp9•H2A-H2B complex (D, lanes 4–6). By comparison, Imp9•RanGTP releases little free DNA from DNA•H2A-H2B (C, lanes 7–10). (E) The presence of RanGTP and Imp9 facilitates H2A-H2B deposition onto the nucleosome. Nucleosome assembly assay where either H2A-H2B, Nap1•H2A-H2B, Imp9•H2A-H2B or RanGTP•Imp9•H2A-H2B is titrated in molar equivalents of 0.5 and 0.75 to tetrasome (TET; 2.5 µM). Nap1 and Imp9•RanGTP can form nucleosomes (NUC) while Imp9 cannot. Coomassie staining in Figure 5—figure supplement 1B. (F) Nucleosome disassembly assay where either Nap1, Imp9 or Imp9•Ran is titrated in molar equivalents of 0.5 and 0.75 to constant nucleosome (NUC; 2.5 µM). Imp9 can disassemble nucleosomes to tetrasomes while Nap1 and Imp9-Ran cannot. Coomassie staining in Figure 5—figure supplement 1C.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/43630/elife-43630-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Controls for nucleosome assembly assay where either Nap1, Imp9 or Imp9•RanGTP is titrated in molar equivalents of 0.25, 0.5 and 0.75 to tetrasome (TET; 2.5 µM). These proteins do not alter the tetrasome. (B) Nucleosome assembly assay where either H2A-H2B, Nap1•H2A-H2B, Imp9•H2A-H2B or RanGTP•Imp9•H2A-H2B is titrated in molar equivalents of 0.5 and 0.75 to tetrasome (TET; 2.5 µM). Nap1 and Imp9•RanGTP can form nucleosomes (NUC) while Imp9 cannot. Gels are Coomassie stained (ethidium bromide stained gels are shown in Figure 5E). (C) Nucleosome disassembly assay where either Nap1, Imp9 or Imp9•RanGTP is titrated in molar equivalents of 0.5 and 0.75 to constant nucleosome (NUC; 2.5 µM). Imp9 can disassemble nucleosomes to tetrasomes while Nap1 and Imp9-RanGTP cannot. Gels are Coomassie stained (ethidium bromide stained gels are shown in Figure 5F).
 
 We next tested the ability of Imp9 and Imp9•RanGTP to assemble and disassemble nucleosomes (Figure 5E,F). Like Nap1, Imp9 and Imp9•RanGTP do not influence the stability of the tetrasome (Figure 5—figure supplement 1A). To monitor nucleosome assembly, we titrated H2A-H2B alone or with Nap1, Imp9 or Imp9 +RanGTP against tetrasome and assayed the formation of nucleosomes (Figure 5E). Nucleosomes form from H2A-H2B alone or with H2A-H2B and Nap1 or Imp9 +RanGTP (Figure 5E, lanes 4–5 and 8–9) but not with Imp9 alone (Figure 5E, lanes 6–7). Imp9 will bind H2A-H2B preventing its deposition on tetrasomes to make a nucleosome (Figure 5—figure supplement 1B, lanes 6–7). Notably, in the presence of RanGTP, Imp9 is better at promoting H2A-H2B deposition than either Nap1 or no chaperone. To monitor nucleosome disassembly, we titrated Nap1, Imp9, or Imp9 +RanGTP against nucleosomes (Figure 5F). We see that Imp9 can extract H2A-H2B from the nucleosome to produce tetrasome and Imp9•H2A-H2B (Figure 5F, lanes 5–6; Figure 5—figure supplement 1C), while Nap1 and Imp9 +RanGTP have no effect (Figure 5F, lanes 3–4 and 7–8). These data reinforce the chaperone-like activity of Imp9 and show that Ran influences the interaction between Imp9 and H2A-H2B, possibly through an allosteric mechanism as comparative analysis with other importin•RanGTP complexes suggests that the RanGTP binding site does not overlap with the H2A-H2B binding site. The RanGTP binds the Imp9•H2A-H2B complex to modulate importin-histones interactions to facilitate release of the histones for nucleosome assembly.
 
@@ -109,7 +250,7 @@ Although histones can be deposited by RanGTP•Imp9•H2A-H2B onto DNA or the te
 
 ## Materials and methods
 
-## Constructs, protein expression and purification
+### Constructs, protein expression and purification
 
 Wild-type human Imp9 and Imp9 mutants (Imp9ΔH8loop, residues 371–396 replaced with SGSTGGSGS linker; Imp9ΔH18-19loop, residues 890–906 replaced with GSGTGSGSS; Imp9ΔH19loop, residues 941–996 (GGS)12) were cloned into the pGEX-4T3 vector (GE Healthcare, USA) or the pmalE vector (New England BioLabs, Ipswich, MA) modified to contain a TEV cleavage site (Chook and Blobel, 1999; Chook et al., 2002) and express His6-MBP instead of MBP (pHis6-Mal-TEV). Plasmids expressing the X. laevis histones H2A and H2B were a gift from Bing Li, UT Southwestern Medical Center. The construct for mutant H2BΔ(1-35) was PCR-amplified from the wildtype H2B construct and cloned into pET-3A vector (Novagen, USA).
 
@@ -123,7 +264,7 @@ His-tagged full-length S. cerevisiae Nap1(C200A/C249A/C272A) in pHAT4 vector was
 
 Ran (Gsp1 (1–179, Q71L)) and MBP-Ran were expressed in E.coli BL21 (DE3) cells as His6 –tag proteins (induced with 0.5 mM IPTG for 12 hr at 20°C). Harvested cells were lysed with the EmulsiFlex-C5 cell homogenizer (Avestin, Ottawa, Canada) and the proteins purified by affinity chromatography on Ni-NTA column. Eluted proteins were loaded with GTP, and RanGTP and MBP-RanGTP were further purified by cation exchange chromatography followed by exchanging into buffer containing 20 mM HEPES (pH 7.5), 100 mM NaCl, 4 mM magnesium acetate, 1 mM DTT, 10% glycerol (Chook and Blobel, 1999; Fung et al., 2015).
 
-## Imp9•H2A-H2B complex assembly, crystallization, crystal structure determination
+### Imp9•H2A-H2B complex assembly, crystallization, crystal structure determination
 
 Purified Imp9 was mixed with 10-fold molar excess of H2A-H2B in gel filtration buffer (20 mM HEPES (pH 7.3), 110 mM potassium acetate, 2 mM magnesium acetate, 2 mM DTT, 15% glycerol). Imp9•H2A-H2B was separated from excess histones by size-exclusion chromatography and concentrated to 18 mg/ml for crystallization. Selenomethionyl-labeled Imp9 was expressed as described previously (Doublié, 1997) and purified as for Imp9. Selenomethionyl-Imp9•H2A-H2B complex was assembled as for the native complex. Initial crystals were obtained by the sitting drop vapor diffusion method from commercial screens (reservoir solution - 40 mM MES pH 6.5, 3 M potassium formate, and 10% glycerol) and were further optimized by the hanging drop vapor diffusion method. Crystals were cryoprotected in reservoir solution that was supplemented with 15% glycerol, and flash frozen in liquid nitrogen. Selenomethionyl-Imp9•H2A-H2B crystals were obtained in the same conditions as native crystals and were prepared similarly for crystallographic data collection.
 
@@ -131,11 +272,11 @@ Imp9•H2A-H2B native crystals diffracted to a minimum Bragg spacing (dmin) of 2
 
 Phases were obtained from a single wavelength anomalous dispersion (SAD) experiment using the selenomethionyl-Imp9•H2A-H2B protein with data to 2.65 Å. Fifty-four selenium sites were located, phases improved and an initial model containing over 50% of all Imp9•H2A-H2B residues was automatically generated in the AutoBuild routine of the Phenix (Adams et al., 2010) program suite. Completion of this model was performed by manual rebuilding in the program Coot (Emsley et al., 2010). Positional and isotropic atomic displacement parameter (ADP) as well as TLS ADP refinement of native Imp9•H2A-H2B with NCS restraints was performed to a resolution of 2.70 Å using the Phenix program suite with a random 2.1% of all data set aside for an Rfree calculation. The final model for Imp9•H2A-H2B (Rwork = 20.9%, Rfree = 24.0%) contained 2275 residues and 356 waters. The relatively high Rwork and Rfree values are likely due to the presence of translational pseudosymmetry. A Ramachandran plot generated with the program MolProbity (Chen et al., 2010) indicated that 97.1% of all protein residues are in the most favored regions and 0.1% in disallowed regions. Illustrations were prepared with PyMOL (Schrodinger LLC, 2015). Data collection and structure refinement statistics are summarized in Figure 1—source data 1.
 
-## Quantification of binding affinities by isothermal titration calorimetry (ITC)
+### Quantification of binding affinities by isothermal titration calorimetry (ITC)
 
 Imp9 and mutant Imp9 proteins were expressed and purified as described above. The wild type full-length H2A, H2B and mutant H2BΔ(1-35) proteins were purified as described above. Mutant H2AΔTail and H2BΔTail proteins were obtained from Histone Source (Colorado, USA). H2A-H2B, H2AΔTail -H2B, H2A-H2BΔ(1-35) and H2AΔTail-H2BΔTail heterodimers were reconstituted and purified as described above. Imp9 or mutant Imp9 proteins and H2A-H2B or H2A-H2B mutant dimers were dialyzed in ITC buffer containing 20 mM Tris-HCl (pH 7.5), 150 mM NaCl, 5 mM TCEP and 5% glycerol. ITC experiments were carried out using ITC-200 calorimeter (Microcal, LLC, Northampton, MA, USA) at 20°C with 0.035 mM of Imp9 or mutant Imp9 protein in the sample cell and 0.35 mM H2A-H2B or mutant H2A-H2B protein in the syringe. All samples were thoroughly degassed and then centrifuged at 16000 g for 10 min to remove precipitates. 21 injections each of 1.9 μl except for the first (0.5 μl) were sequentially made in each experiment. The injections were mixed at 300 rpm and consecutive injections were separated by 300 s to allow the peak to return to baseline. All experiments were carried out in triplicates. Data were integrated and baseline corrected using NITPIC (Keller et al., 2012). The baseline corrected and integrated data were globally analyzed in SEDPHAT (Houtman et al., 2007; Zhao et al., 2015) using a model considering a single class of binding sites. SVD-reconstructed thermogram provided by NITPIC, the fit-isotherms and the residuals from SEDPHAT were all plotted using GUSSI (Brautigam, 2015). Individual experiments in the triplicate sets are differently color-coded in Figure 1—figure supplement 1A. For error reporting, we used F-statistics and error-surface projection method to calculate the 68.3% confidence intervals of the fitted data (Bevington). The KD (nM), ΔH (kCal/mol), ΔS (Cal/mol.K), ΔG (kCal/mol) and the Imp9 local concentration correction factors for each set of triplicate experiments are reported in the Table 1.
 
-## Pull-down binding assays
+### Pull-down binding assays
 
 Pull-down binding assays were performed by immobilizing purified MBP-Imp9 or MBP-RanGTP (S. cerevisiae Gsp1(1–179/Q71L) on amylose resin (New England BioLabs, Ipswich, MA). 40 μl of 100 μM MBP-Imp9 or MBP-RanGTP was immobilized on 200 μl of amylose resin (50% slurry) in binding assay (BA) buffer containing 20 mM HEPES pH 7.3, 110 mM potassium acetate, 2 mM magnesium acetate, 2 mM DTT and 15% glycerol. 100 μl of ~20 μM of immobilized MBP-Imp9 resin was incubated with 100 μl of 400 μM of purified H2A-H2B in a total reaction volume of 400 μl for 30 min at 4°C, followed by five washes each with 400 μl BA buffer. 100 μl of ~20 μM of MBP–RanGTP resin were incubated with 100 μl of 50 μM of purified Imp9•H2A-H2B in a total volume of 400 μl for 30 min at 4°C, followed by five washes each with 400 μl BA buffer.
 
@@ -143,31 +284,31 @@ For RanGTP dissociations assays, a gradient of 10 μl, 20 μl, 40 μl or 60 μl 
 
 Pull-down binding assay to probe Ran binding to Imp9 versus Imp9Δ1–144 were performed by immobilizing GST-Imp9 or GST-Imp9Δ1–144 on Glutathione Sepharose 4B resin (GE Healthcare Life Sciences). 12.5 ml of lysate from 500 ml cell culture (OD600 = 1) pellet of E. coli expressing GST-Imp9 or GST-Imp9Δ1–144 (containing ~8 mg/ml of GST-Imp9 protein) were incubated on 1 ml of 50% Glutathione Sepharose 4B slurry in BA buffer. The GST-Imp9 or GST-Imp9Δ1–144 bound resin was washed five times, each with 6 ml BA buffer, before the binding assay. 200 μl of 50% slurry GST-Imp9 or GST-Imp9Δ1–144 resin (~12 μM proteins) was incubated with 10 μl of ~500 μM RanGTP in a total reaction volume of 400 μl for 30 min at 4°C, followed by five washes (each with 400 μl BA buffer). After washing, 30 μl of 50% beads slurry was suspended in 30 μl BA buffer. 10 μl of the resulting bead slurry sample was analyzed by Coomassie-stained SDS-PAGE. A control experiment using empty GSH sepharose beads and RanGTP was performed as described above.
 
-## Size Exclusion Chromatography
+### Size Exclusion Chromatography
 
 The interaction between RanGTP and Imp9•H2A-H2B complex was probed by size exclusion chromatography (SEC). Imp9, RanGTP, H2A-H2B were purified as described above. First, a series of SEC experiments titrating RanGTP was performed. SEC of Imp9 alone (20 μM), RanGTP alone (60 μM), H2A-H2B alone (20 μM), Imp9 +H2A-H2B 1:1 molar ratio (20 μM) with no RanGTP, 0.5, 1, 2 and 3 molar equivalents of RanGTP were performed in buffer containing 20 mM HEPES pH 7.4, 200 mM sodium chloride, 2 mM magnesium acetate, 2 mM TCEP and 8% (v/v) glycerol. The experiments were performed using a Superdex 200 Increase 10/300 GL column. A second series of SEC experiments using 1:1 Imp9 +H2A-H2B (70 μM) and 1:1:1 Imp9, H2A-H2B, and Ran (70 μM) in the same column and the same buffer were performed with higher concentrations of proteins for visualization of proteins in the SEC fractions by Coomassie-stained SDS-PAGE. A third SEC series involves the mutant MBP-Imp9Δ1–144 that does not bind RanGTP and using a different Superdex 200 Increase10/300 GL column with buffer containing 20 mM HEPES pH 7.4, 200 mM sodium chloride, 2 mM magnesium acetate, 2 mM DTT and 10% glycerol.
 
-## Analytical ultracentrifugation
+### Analytical ultracentrifugation
 
 The sedimentation coefficients of individual proteins and protein complexes in the mixture were estimated by monitoring their sedimentation properties in a sedimentation velocity experiment carried out in Beckman-Coulter Optima XL-1 Analytical Ultracentrifuge (AUC). The individual proteins and mixtures of proteins were analyzed in AUC buffer containing 20 mM HEPES pH 7.3, 200 mM sodium chloride, 2 mM magnesium chloride, 2 mM TCEP and 8% glycerol (details below). Protein samples (450 µl) and AUC buffer (450 µl) were loaded into a double sector centerpiece and centrifuged in an eight-hole An-50Ti rotor to 50000 rpm at 20°C. The double sectors were monitored for absorbance at 280 nm (A280). A total of 140 scans were collected and the first 80 scans were analyzed. Buffer density, viscosity of the buffer and partial specific volume of the protein was estimated using SEDNTERP (http://www.rasmb.bbri.org/software/windows/sednterp-philo/). Sedimentation coefficient distributions c(s) (normalized for absorption differences) were calculated by least squares boundary modeling of sedimentation velocity data using SEDFIT program (Schuck, 2000). Sedimentation coefficients sw (weighted-average obtained from the integration of c(s) distribution) and frictional ratios f/f0 were obtained by refining the fit data in SEDFIT (Schuck, 2000). For error reporting, F-statistics and Monte-Carlo for integrated weight-average s values were used (Bevington). Data were plotted using GUSSI (Brautigam, 2015).
 
 Individual proteins, Imp9, RanGTP and H2A-H2B, were purified as described above and dialyzed into the AUC buffer before mixing the samples to the final volume of 450 μL for the AUC experiments. Samples for the AUC experiments contain: 1) 450 μL Imp9 alone (3 μM), 2) 450 μL RanGTP alone (10 μM), 3) 450 μL H2A-H2B (10 μM), 4) 3 μM Imp9 + 3 μM RanGTP in a total volume of 450 μL, 5) 3 μM Imp9 +3 μM H2A-H2B in a total volume of 450 μL, 6) 3 μM Imp9 + 3 μM H2A-H2B + 10 μM RanGTP in a total volume of 450 μL. The proteins were mixed overnight before loading into the AUC cell.
 
-## Native gel shift assays
+### Native gel shift assays
 
-## Electrophoretic Mobility Shift Assays
+#### Electrophoretic Mobility Shift Assays
 
 One protein component was held constant at 10 µM and the other was titrated. Samples were separated by 5% polyacrylamide gel electrophoresis. Gels were run for 100 min at 150 V at 4°C in 0.5x TBE (40 mM Tris-HCl pH 8.4, 45 mM boric acid, 1 mM EDTA). Gels were stained with Coomassie Blue.
 
-## Competition Assays
+#### Competition Assays
 
 Nap1, Imp9 or Imp9-Ran (equimolar Imp9 and RanGTP added together without further purification) were titrated (at 0.5, 1.0 and 1.5 molar equivalents of H2A-H2B) against 147 bp Widom 601 DNA mixed with H2A-H2B at 1:7 (1.5 µM:10.5 µM), or 147 bp Widom 601 DNA was titrated against 10.5 μM Nap1, Imp9 or Imp9-Ran (1:1) pre-mixed with an equimolar amount of H2A-H2B. Samples were separated by 5% polyacrylamide gel electrophoresis. Gels were run for 75 min at 150 V at 4°C in 0.5x TBE. Gels were stained with ethidium bromide and then Coomassie Blue.
 
-## Nucleosome Assays
+#### Nucleosome Assays
 
 Tetrasomes containing H3-H4 and 147 bp Widom 601 DNA were reconstituted as described in Dyer et al (Dyer et al., 2004). To monitor nucleosome assembly, tetrasomes were held constant at 2.5 µM and H2A-H2B or pre-formed complexes of Nap1-H2A-H2B (1:1), Imp9-H2A-H2B (1:1), or Imp9-H2A-H2B-Ran (1:1:1) were titrated. To monitor nucleosome disassembly, Nap1, Imp9, or Imp9-Ran (1:1) complex was titrated against nucleosomes (2.5 µM). Samples were separated by 5% polyacrylamide gel electrophoresis. Gels were run for 75 min at 150 V at 4°C in 0.5x TBE. Gels were stained with ethidium bromide and then Coomassie Blue.
 
-## Small angle x-ray scattering
+### Small angle x-ray scattering
 
 SAXS experiments examining Imp9, Imp9•H2A-H2B, Imp9•RanGTP, and RanGTP•Imp9•H2A-H2B samples were carried out at Beamline 4–2 of the Stanford Synchrotron Radiation Lightsource (SSRL) in the SLAC National Accelerator Laboratory. At SSRL, the beam energy and current were 11 keV and 500 mA, respectively. A silver behenate sample was used to calibrate the q-range and detector distance. Data collection was controlled with Blu-Ice (McPhillips et al., 2002). We used an automatic sample delivery system equipped with a 1.5 mm-diameter thin-wall quartz capillary within which a sample aliquot was oscillated in the X-ray beam to minimize radiation damage(Martel et al., 2012). The sample was placed at 1.7 m from a MX225-HE (Rayonix, USA) CCD detector with a binned pixel size of 292 by 292 μm (Figure 4—source data 1).
 
@@ -175,13 +316,13 @@ All protein samples for SAXS were expressed and purified as described above. Pur
 
 The merged SAXS profiles were initially analyzed using the ATSAS package (Petoukhov et al., 2012) to calculate radius of gyration (Rg), maximum particle size (Dmax), and pair distribution function (P(r)) (Figure 4—figure supplement 3 and Figure 4—source datas 1 and 2). The molecular weight (MWSAXS) of each SAXS sample was estimated using SAXS MOW (Fischer et al., 2010) with a threshold of qmax = 0.25–0.3 Å−1 (Figure 4G and Figure 4—source datas 1 and 2).
 
-## Co-immunoprecipitation and immunoblotting
+### Co-immunoprecipitation and immunoblotting
 
 HeLa cells expressing H2BmCherry (Ke et al., 2011) (gift from Prof. Hongtao Yu, UT Southwestern). The HeLa Tet-ON cells (Cellosaurus Accession: HeLa Tet-On (CVCL_IY74)) stably expressing H2B-mCherry were originally created (with cell identity confirmation carried out by STR profiling) in Dr. Hongtao Yu’s lab at University of Texas Southwestern Medical Center, Dallas, Texas USA. Mycoplasma negative status of the cell line was confirmed using the LookOut Mycoplasma PCR Detection kit, Sigma MP0035-1KT. The cells were grown to 80% confluency, and total-cell lysate was prepared by suspending the cells in TB buffer containing 20 mM HEPES–KOH pH 7.3, 110 mM potassium acetate, 2 mM magnesium acetate, 5 mM sodium acetate, 0.1 mM EGTA, 1 mM DTT and protease inhibitor cocktail (Kimura et al., 2017) on ice for 15 min, sonicating three times (5 s pulse, 10 s rest), then centrifuging the lysed cells at 15,000 g for 20 min at 4°C. Nuclear and cytoplasmic fractions were prepared using the NE-PER Nuclear and Cytoplasmic Extraction reagents (Thermo Scientific) as per manufacturer’s instruction. Protein concentration was quantitated using the Bradford protein assay kit (BioRad). The RFP-Trap (high quality Red Fluorescent Protein (RFP) binding protein coupled to a monovalent magnetic matrix, ChromoTek GmbH) was incubated with the cell lysates for 2 hr at 4°C. The matrix was first washed with TB buffer supplemented with 200 mM NaCl, and then once with TB buffer supplemented with 150 mM NaCl. The proteins bound to the beads were dissolved in SDS sample buffer for immunoblot analysis.
 
 Cell lysate and protein samples dissolved in SDS sample buffer were separated by SDS–PAGE, and blotted with the indicated antibodies: Rabbit polyclonal antibody against tagRFP (1:1000 dilution, Cat no. AB233, Evrogen), rabbit polyclonal antibody against Imp9 (1:1000 dilution, Cat no. A305-474A-T, Bethyl Laboratories, Inc), mouse monoclonal against Ran (1:2000 dilution, Cat no. 610340, BD Biosciences), mouse monoclonal against Nuclear Pore Complex Proteins Antibody [MAb414] (1:5000 dilution, Cat no. 902903, BioLegend) and mouse monoclonal against PCNA (1:2000 dilution, Cat no. 307901, BioLegend). Goat anti-Rabbit IgG (H + L), HRP-conjugated (1:6000 dilution, Cat no. 31460, Thermo Fisher Scientific) and Goat anti-Mouse IgG (H + L), HRP-conjugated (1:6000 dilution, Cat no. 31430, Thermo Fisher Scientific) were used as the secondary antibodies, and immunoblots were developed using the SuperSignal West Pico PLUS Chemiluminescent Substrate (Cat no. 34580, Thermo Fisher Scientific) according to the manufacturer's protocols and followed by detection using a Gel Doc EZ System (Bio-Rad Laboratories, Hercules, CA, USA.
 
-## Confocal microscopy imaging
+### Confocal microscopy imaging
 
 Cells (5 × 104 cells per chamber) were seeded into collagen coated culture coverslip (BD Falcon) The next day, cells were rinsed with ice-cold PBS and fixed with 4% paraformaldehyde for 10 min at room temperature followed by permeabilization with 0.1% sodium citrate plus 0.1% Triton X-100. The cells were subjected to immunofluorescence staining using rabbit polyclonal antibody against Imp9 (1:250 dilution, Cat no. A305-474A-T, Bethyl Laboratories, Inc) and mouse monoclonal antibody against Ran (1:250 dilution, Cat no. 610340, BD Biosciences), for 2 hr at room temperature. The cells were then washed with cold PBS three times for 1 min each and incubated with Alexa 480-labeled anti-rabbit secondary antibody (1:800) (Invitrogen) and Alexa 405-labeled anti-mouse secondary antibody (1:800) (Invitrogen) at room temperature for 1 hr. Subsequently cells were washed with cold PBS three times for 1 min each and mounted with ProLong Gold Antifade Mountant (Invitrogen).
 

@@ -41,7 +41,7 @@
 
 ## Abstract
 
-10.7554/eLife.15272.001 Zika virus was discovered in Uganda in 1947 and is transmitted by Aedes mosquitoes, which also act as vectors for dengue and chikungunya viruses throughout much of the tropical world. In 2007, an outbreak in the Federated States of Micronesia sparked public health concern. In 2013, the virus began to spread across other parts of Oceania and in 2015, a large outbreak in Latin America began in Brazil. Possible associations with microcephaly and Guillain-Barré syndrome observed in this outbreak have raised concerns about continued global spread of Zika virus, prompting its declaration as a Public Health Emergency of International Concern by the World Health Organization. We conducted species distribution modelling to map environmental suitability for Zika. We show a large portion of tropical and sub-tropical regions globally have suitable environmental conditions with over 2.17 billion people inhabiting these areas. DOI: http://dx.doi.org/10.7554/eLife.15272.001
+Zika virus was discovered in Uganda in 1947 and is transmitted by Aedes mosquitoes, which also act as vectors for dengue and chikungunya viruses throughout much of the tropical world. In 2007, an outbreak in the Federated States of Micronesia sparked public health concern. In 2013, the virus began to spread across other parts of Oceania and in 2015, a large outbreak in Latin America began in Brazil. Possible associations with microcephaly and Guillain-Barré syndrome observed in this outbreak have raised concerns about continued global spread of Zika virus, prompting its declaration as a Public Health Emergency of International Concern by the World Health Organization. We conducted species distribution modelling to map environmental suitability for Zika. We show a large portion of tropical and sub-tropical regions globally have suitable environmental conditions with over 2.17 billion people inhabiting these areas.
 
 ## Introduction
 
@@ -55,43 +55,118 @@ In this paper, we use species distribution modelling techniques that have been u
 
 ## Results
 
+Figure 1A shows the locations of the 323 standardized occurrence records in the final dataset, classified by the following date ranges: (i) up until 2006 (before the outbreak in FSM); (ii) between 2007 (the year of the FSM outbreak) and 2014; and (iii) since 2015, the first reporting of ZIKV in the Americas. This map is accompanied by the graph in Figure 1B, showing the number of reported occurrence locations globally by year. These figures highlight the more sporadic nature of reporting until recent years, with the majority of occurrences in the dataset (63%) coming from the recent 2015–2016 outbreak in Latin America.
+
 ![Figure 1.](https://cdn.elifesciences.org/articles/15272/elife-15272-fig1-v2.jpg)
 
-**Figure 1.:** A) Map showing the distribution of the final set of 323 ZIKV occurrence locations entered into the ensemble Boosted Regression Tree modelling procedure.Locations are classified by year of occurrence to show those which took place (i) prior to the 2007 outbreak in Federated States of Micronesia; (ii) between 2007–2014; and (iii) during the 2015–2016 outbreak; (B) the total number of locations reporting symptomatic ZIKV occurrence in humans globally over time.DOI: http://dx.doi.org/10.7554/eLife.15272.003
+**Figure 1.:** Locations are classified by year of occurrence to show those which took place (i) prior to the 2007 outbreak in Federated States of Micronesia; (ii) between 2007–2014; and (iii) during the 2015–2016 outbreak; (B) the total number of locations reporting symptomatic ZIKV occurrence in humans globally over time.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/15272/elife-15272-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) probability of being urban, 2015; (B) enhanced vegetation index; (C) minimum relative humidity; (D) cumulative annual precipitation (mm); (E) temperature suitability for dengue via Ae. aegypti; (F) temperature suitability for dengue via Ae. albopictusDOI: http://dx.doi.org/10.7554/eLife.15272.004
+**Figure 1—figure supplement 1.:** (A) probability of being urban, 2015; (B) enhanced vegetation index; (C) minimum relative humidity; (D) cumulative annual precipitation (mm); (E) temperature suitability for dengue via Ae. aegypti; (F) temperature suitability for dengue via Ae. albopictus
 
-The final map that resulted from the mean of 300 ensemble Boosted Regression Tree (BRT) models is shown in
+The final map that resulted from the mean of 300 ensemble Boosted Regression Tree (BRT) models is shown in Figure 2A (with greater detail shown for each region in Figures 2B–D). Figure 2—figure supplement 1 shows the distribution of uncertainty based upon the upper and lower prediction quantiles from the 300 models. We restricted our models to make predictions only within areas where i) mosquito vectors (in this case Ae. aegypti) were able to persist and ii) where temperature was sufficient for arboviral replication within the mosquito. The former of these was calculated by taking the Ae. aegypti probability of occurrence (Kraemer et al., 2015c) value that incorporated 90% of all known occurrences (Kraemer et al., 2015b) (giving a threshold value of 0.8 and greater) while the latter was evaluated using a mechanistic mosquito model (Brady et al., 2013; 2014), which identified regions where arboviral transmission could be sustained for at least 355 days (one year minus the human incubation period) in an average year. Figure 3 is a country-level map distinguishing between those countries that are currently reporting ZIKV, those which have reported ZIKV in the past, those which have highly suitable areas for transmission, and those which are unsuitable. Our models predicted high levels of risk for ZIKV in many areas within the tropical and sub-tropical zones. Large portions of the Americas are suitable for transmission, with the largest areas of risk occurring in Brazil, followed by Colombia and Venezuela, all of which have reported high numbers of cases in the 2015–2016 outbreak. In Brazil, where the highest numbers of ZIKV are reported in the ongoing epidemic, the coastal cities in the south as well as large areas of the north are identified to have the highest environmental suitability of ZIKV. The central region of Brazil, on the other hand, has low population densities and smaller mosquito populations, which is reflected in the relatively low suitability for ZIKV transmission seen in the map. Although ZIKV has yet to be reported in the USA, a large portion of the southeast region of the country, including much of Texas through to Florida, is also highly suitable for transmission. Potential risk for ZIKV transmission is high in much of sub-Saharan Africa, with continuous suitability in the Democratic Republic of Congo and surrounding areas and several sporadic case reports in western sub-Saharan countries since the 1950s. Although no symptomatic cases have yet been reported in India, a large portion of this country is at potential risk for ZIKV transmission (over 2 million square kilometres), with environmental suitability extending from its northwest regions through to Bangladesh and Myanmar. The Indochina region, southeast China, and Indonesia all have large areas of environmental suitability as well, extending into Oceania. While only representing less than ten percent of Australia’s total land area, the area shown to be suitable for ZIKV transmission in its northernmost regions is considerable (comprising nearly 250,000 square kilometres).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/15272/elife-15272-fig2-v2.jpg)
 
-**Figure 2.:** A) global environmental suitability for ZIKV, ranging from 0 (grey) to 1 (red), showing greater detail for (B) the Americas, (C) Africa, and (D) Asia and Oceania.DOI: http://dx.doi.org/10.7554/eLife.15272.005
-
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/15272/elife-15272-fig2-figsupp1-v2.jpg)
-
-**Figure 2—figure supplement 1.:** Figure 2, ranging from less than 0.01 (very little uncertainty) to 0.94 (greatest uncertainty).DOI: http://dx.doi.org/10.7554/eLife.15272.006
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/15272/elife-15272-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** (A) minimum relative humidity; (B) cumulative annual precipitation (mm); (C) enhanced vegetation index; (B) probability of being urban (%); (E) temperature suitability for dengue via Ae. aegypti; (F) temperature suitability for dengue via Ae. albopictus.DOI: http://dx.doi.org/10.7554/eLife.15272.007
+**Figure 2—figure supplement 2.:** (A) minimum relative humidity; (B) cumulative annual precipitation (mm); (C) enhanced vegetation index; (B) probability of being urban (%); (E) temperature suitability for dengue via Ae. aegypti; (F) temperature suitability for dengue via Ae. albopictus.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/15272/elife-15272-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** via Aedes albopictus.Covariate effects are as follows: cumulative annual precipitation (67.4%); temperature suitability for dengue via Ae. aegypti (16.9%); probability of being urban, 2015 (8.2%); enhanced vegetation index (5.1%); minimum relative humidity (2.4%).DOI: http://dx.doi.org/10.7554/eLife.15272.008
+**Figure 2—figure supplement 3.:** Covariate effects are as follows: cumulative annual precipitation (67.4%); temperature suitability for dengue via Ae. aegypti (16.9%); probability of being urban, 2015 (8.2%); enhanced vegetation index (5.1%); minimum relative humidity (2.4%).
 
 ![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/15272/elife-15272-fig2-figsupp4-v2.jpg)
 
-**Figure 2—figure supplement 4.:** Bhatt et al., 2013, Nature) vs those which are predicted to have greater Zika suitability in the current study.These values are restricted to areas where both diseases had non-zero predictions.DOI: http://dx.doi.org/10.7554/eLife.15272.009
+**Figure 2—figure supplement 4.:** These values are restricted to areas where both diseases had non-zero predictions.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/15272/elife-15272-fig3-v2.jpg)
 
-**Figure 3.:** DOI: http://dx.doi.org/10.7554/eLife.15272.010
-
 Our models showed ZIKV risk to be particularly influenced by annual cumulative precipitation, contributing 65.0% to the variation in the ensemble of models. The next most important predictor in the model was temperature suitability for DENV transmission via Ae. albopictus, contributing 14.6%. These are followed by urban extents (8.3%), temperature suitability for DENV via Ae. aegypti (5.7%), the Enhanced Vegetation Index (EVI; 3.8%), and minimum relative humidity (2.5%). Effect plots for each covariate are provided in Figure 2—figure supplement 2. Validation statistics indicated high predictive performance of the BRT ensemble mean map evaluated in a 10-fold cross-validation procedure, with area under the receiver operating characteristic (AUC) of 0.829 ( ± 0.121 SD). Due to the uncertainty about Ae. albopictus as a competent vector for ZIKV, we also provide results for an ensemble of models which did not include temperature suitability for dengue via this mosquito species in Figure 2—figure supplement 3.
 
-A threshold environmental suitability value of 0.397 in our final map was determined to incorporate 90% of all ZIKV occurrence locations. This was used to classify each 5 km x 5 km pixel on our final map as suitable or unsuitable for ZIKV transmission to humans. Using high-resolution global population estimates (WorldPop, 2015; SEDAC, 2015), we summed the populations living in Zika-suitable areas and have identified 2.17 billion people globally living within areas that are environmentally suitable for ZIKV transmission. Table 1 shows a breakdown of this figure by major world region, also showing the top four contributing countries to the potential population at risk. Asia has the most people living in areas that are suitable for ZIKV transmission at 1.42 billion, accounted for in large part by those living in India. In Africa, roughly 453 million people are living in areas suitable for ZIKV transmission, the largest proportion of which live in Nigeria. In the Americas, more than 298 million people live in ZIKV-suitable transmission zones, with approximately 40 percent of these people living in Brazil. Within the majority of environmentally suitable areas for ZIKV in the Americas, prolonged year-round transmission is possible. Southern Brazil and Argentina, however, are more likely to see transmission interrupted throughout the year, as is the case with the USA should autochthonous ZIKV transmission occur there. Using high-resolution data on births for the year 2015 (WorldPop, 2015), we also estimate that 5.42 million births will occur in the Americas over the next year within areas and times of environmental suitability for ZIKV transmission.10.7554/eLife.15272.011Table 1.Population living in areas suitable for ZIKV transmission within each major world region and top four countries contributing to these populations at risk.DOI: http://dx.doi.org/10.7554/eLife.15272.011Region/CountryPopulation living in areas suitable for ZIKV transmission (millions)Africa452.58Nigeria111.97Democratic Republic of the Congo68.95Uganda33.43United Republic of Tanzania22.70Americas298.36Brazil120.65Mexico32.22Colombia29.54Venezuela22.22Asia1,422.13India413.19Indonesia226.04China213.84Bangladesh133.29World2,173.27
+A threshold environmental suitability value of 0.397 in our final map was determined to incorporate 90% of all ZIKV occurrence locations. This was used to classify each 5 km x 5 km pixel on our final map as suitable or unsuitable for ZIKV transmission to humans. Using high-resolution global population estimates (WorldPop, 2015; SEDAC, 2015), we summed the populations living in Zika-suitable areas and have identified 2.17 billion people globally living within areas that are environmentally suitable for ZIKV transmission. Table 1 shows a breakdown of this figure by major world region, also showing the top four contributing countries to the potential population at risk. Asia has the most people living in areas that are suitable for ZIKV transmission at 1.42 billion, accounted for in large part by those living in India. In Africa, roughly 453 million people are living in areas suitable for ZIKV transmission, the largest proportion of which live in Nigeria. In the Americas, more than 298 million people live in ZIKV-suitable transmission zones, with approximately 40 percent of these people living in Brazil. Within the majority of environmentally suitable areas for ZIKV in the Americas, prolonged year-round transmission is possible. Southern Brazil and Argentina, however, are more likely to see transmission interrupted throughout the year, as is the case with the USA should autochthonous ZIKV transmission occur there. Using high-resolution data on births for the year 2015 (WorldPop, 2015), we also estimate that 5.42 million births will occur in the Americas over the next year within areas and times of environmental suitability for ZIKV transmission.
+
+**Table 1.**
+ Population living in areas suitable for ZIKV transmission within each major world region and top four countries contributing to these populations at risk.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region/Country</th>
+      <th>Population living in areas suitable for ZIKV transmission (millions)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Africa</td>
+      <td>452.58</td>
+    </tr>
+    <tr>
+      <td>Nigeria</td>
+      <td>111.97</td>
+    </tr>
+    <tr>
+      <td>Democratic Republic of the Congo</td>
+      <td>68.95</td>
+    </tr>
+    <tr>
+      <td>Uganda</td>
+      <td>33.43</td>
+    </tr>
+    <tr>
+      <td>United Republic of Tanzania</td>
+      <td>22.70</td>
+    </tr>
+    <tr>
+      <td>Americas</td>
+      <td>298.36</td>
+    </tr>
+    <tr>
+      <td>Brazil</td>
+      <td>120.65</td>
+    </tr>
+    <tr>
+      <td>Mexico</td>
+      <td>32.22</td>
+    </tr>
+    <tr>
+      <td>Colombia</td>
+      <td>29.54</td>
+    </tr>
+    <tr>
+      <td>Venezuela</td>
+      <td>22.22</td>
+    </tr>
+    <tr>
+      <td>Asia</td>
+      <td>1,422.13</td>
+    </tr>
+    <tr>
+      <td>India</td>
+      <td>413.19</td>
+    </tr>
+    <tr>
+      <td>Indonesia</td>
+      <td>226.04</td>
+    </tr>
+    <tr>
+      <td>China</td>
+      <td>213.84</td>
+    </tr>
+    <tr>
+      <td>Bangladesh</td>
+      <td>133.29</td>
+    </tr>
+    <tr>
+      <td>World</td>
+      <td>2,173.27</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 
@@ -105,7 +180,7 @@ For all arboviral diseases, public health education about reducing populations a
 
 A great deal of basic epidemiological information specific to ZIKV is lacking. As a result, information must be leveraged from our knowledge about transmission of related arboviruses. Previous work has focused on mapping other vector borne diseases that share much of the ecology of Zika, such as DENV (Bhatt et al., 2013) and CHIKV, as well as for its primary vectors, Ae. aegypti and Ae. albopictus (Kraemer et al., 2015c). For this reason, temperature suitability for dengue (Brady et al., 2013, 2014) was entered into the models due to the greater number of field and laboratory studies available for parameterising this metric for DENV. Until more studies related to vector competence and temperature constraints on ZIKV transmission to humans are conducted, this is the most accurate indicator of arboviral disease transmission via Aedes mosquitoes currently available. Indeed, all other covariates in our models could equally be applied to mapping DENV and CHIKV, and ZIKV-specific refinements to modelling covariates will be possible as the disease continues to expand to allow for improvements in future iterations of the map. The relatively smaller amount of occurrence data available for ZIKV (especially prior to recent outbreaks) means that this dataset should also be updated with new information as necessary, leading to a stronger global evidence base and improved accuracy of future maps. Better understanding of ZIKV transmission dynamics will eventually allow for further cartographic refinements to be made, such as the differentiation between endemic- and epidemic-prone areas. Still, all covariates included in the current study have been updated and refined since (Bhatt et al., 2013), and when combined with the most extensive occurrence database available for ZIKV, the resulting map we present here is currently the most accurate depiction of the distribution of environmental suitability for ZIKV. A map highlighting differences in predicted suitability for both diseases is provided in Figure 2—figure supplement 4.
 
-## Conclusion
+### Conclusion
 
 In this study, we produced the first global high spatial-resolution map of environmental suitability for ZIKV transmission to humans using an assembly of known records of ZIKV occurrence and environmental covariates in a species distribution modelling framework. While it is clear that much remains to be understood about ZIKV, this first map serves as a baseline for understanding the change in the geographical distribution of this globally emerging arboviral disease. Knowledge of the potential distribution can encourage more vigilant surveillance in both humans and Aedes mosquito populations, as well as help in the allocation of limited resources for disease prevention. Public health awareness campaigns and advice for mitigation of individual risk can also be focused in the areas we have predicted to be highly suitable for ZIKV transmission, particularly during the first wave of infection in a population. The maps we have presented may also inform existing travel advisories for pregnant women and other travellers. The maps and underlying data are freely available online via figshare (http://www.figshare.com).
 
@@ -113,7 +188,7 @@ In this study, we produced the first global high spatial-resolution map of envir
 
 To map environmental suitability for ZIKV transmission to humans, we applied a species distribution modelling approach to establish a multivariate empirical relationship between the probability of ZIKV occurrence and the environmental conditions in locations where the disease has been confirmed. We employed an ensemble boosted regression trees (BRT) methodology (De'ath, 2007; Elith et al., 2008), which required the generation of: (i) a comprehensive compendium of known locations of disease occurrence in humans; (ii) a set of background points representing locations where ZIKV has not yet been reported; and (iii) a set of high-resolution globally gridded environmental and socioeconomic covariates hypothesised to affect ZIKV transmission. The resulting model produces a 5 x 5 km spatial-resolution global map of environmental suitability for ZIKV transmission to humans.
 
-## Assembly of the geo-referenced ZIKV occurrence dataset
+### Assembly of the geo-referenced ZIKV occurrence dataset
 
 Information about the locations of ZIKV occurrence in humans was extracted from peer-reviewed literature, case reports, and informal online sources following previously established protocols (Kraemer et al., 2015b; Messina et al., 2014; 2015a). To collate the peer-reviewed dataset, literature searches were undertaken using PubMed (http://www.ncbi.nlm.nih.gov/pubmed) and ISI Web of Science (http://www.webofknowledge.com) search engines using the search term 'Zika'. No language restrictions were placed on these searches; however, only those citations with a full title and abstract were retrieved, resulting in the review of 148 references ranging in publication dates between 1951 and 2015. In-house language skills allowed review of all English, French, Portuguese and Spanish articles for useable location information for human ZIKV occurrence. ProMED-mail (http://www.promedmail.org) was also searched using the term 'Zika', resulting in the review of 139 reports between 27 June 2007 and 18 January 2016. Additionally, the most current database of ZIKV case locations in Brazil was obtained directly from the Brazilian Ministry of Health. From all sources, only laboratory confirmation of symptomatic ZIKV infection in humans was entered into the dataset (mention of suspected cases was not entered). Serological evidence from healthy individuals could represent a past infection, with transmission potentially occurring in a different location to that where the individual currently resides (Darwish et al., 1983), or could be an artefact from possible cross-reactivity with a variety of different viruses (Smithburn et al., 1954). As a result, these less reliable diagnoses of ZIKV were excluded.
 
@@ -121,41 +196,45 @@ All available location information was extracted from each peer-reviewed article
 
 Due to the potential for multiple independent reports referring to the same cases temporal and spatial standardization was required, as we have described previously in detail for dengue mapping efforts (Messina et al., 2014). In brief, an occurrence was defined as a unique location with one or more confirmed cases of ZIKV occurring within one calendar year (the finest temporal resolution available across all records). Point locations were considered to be overlapping if they lay on the same 5 km x 5 km pixel, and polygon locations were identified by a unique administrative unit code. Furthermore, all polygons whose geographic area was greater than one square decimal degree (approximately 111 square kilometers at the equator) were removed from the dataset to avoid averaging covariate values over very large areas, and only those occurrences comprising symptomatic individuals were retained for modelling purposes to ensure an accurate location of infection. In total, the final occurrence dataset contained 323 unique occurrences to be entered into our BRT modelling procedure. A map of the final set of occurrence locations is provided as Figure 1A.
 
-## Generation of the background location dataset
+### Generation of the background location dataset
 
 Separate maps of the relative probability of occurrence of Ae. aegypti and Ae. albopictus (Kraemer et al., 2015c) were used to compute a combined metric of the relative probability of vector occurrence, by taking the maximum value from the two layers for all 5 km x 5 km gridded cells globally. The inverse of this combined-Aedes occurrence probability layer (higher values indicating greater certainty of absence) was then used to draw a biased sample of 10,000 background locations. As such, a greater number of background points were sampled in areas where we are more certain that Ae. aegypti or Ae. albopictus do not occur, and therefore where ZIKV is less likely to be transmitted to humans. While it has been demonstrated that predictive accuracy from presence-background species distribution models can be improved by biasing background record locations toward areas with greatest reporting probabilities (Phillips et al., 2009), information on possible reporting biases, or proxies of such spatial bias, are currently unavailable for ZIKV. These 10,000 background locations were combined with the standardized occurrence dataset to serve as comparison data locations in the BRT species distribution modelling procedure. The background locations were weighted such that their total sum was equal to the total number of occurrence locations (n=237; pseudo-absence weighting=0.0237), in order to aid in the discrimination capacity of the model (Barbet-Massin et al., 2012).
 
-## Explanatory covariates
+### Explanatory covariates
 
 A set of six covariates hypothesized to influence the global distribution of ZIKV transmission to humans were used in our models to establish an empirical relationship between ZIKV presence or absence and underlying environmental conditions. These six covariates included: (i) an index of temperature suitability for dengue transmission to humans via Ae. aegypti; (ii) temperature suitability for dengue transmission to humans via Ae. albopictus; (iii) minimum relative humidity; (iv) annual cumulative precipitation; (v) an enhanced vegetation index (EVI); and (vi) urban versus rural habitat type. The underlying hypothesis behind each of the covariates is discussed in more detail below, along with a description of data sources and any processing that was undertaken before entering these covariates into our models. Maps of each covariate layer are provided in the supplementary information in Figure 1—figure supplement 1.
 
-## Temperature suitability for dengue transmission to humans
+#### Temperature suitability for dengue transmission to humans
 
 via Ae. aegypti or Ae. albopictus: Temperature affects key physiological processes in Aedes mosquitoes, including age- and temperature-dependent adult female survival, as well as the duration of the extrinsic incubation period (EIP) of arboviruses and the length of the gonotrophic cycle (Brady et al., 2013). While these parameters have yet to be measured experimentally for ZIKV, they have been for the closely related DENV. We obtained temperature data from WorldClim v1.03 (http://www.wordclim.org), which uses historic global meteorological station data from 1961–2005 to interpolate global climate surfaces. MARKSIM software (Jones and Thornton, 2000) was then used to apply the coefficients of 17 Global Climate Models (GCMs) to estimate temperature values for the year 2015. This enabled us to incorporate the quantified effects of temperature on DENV transmission into a cohort simulation model that analysed the cumulative effects of both diurnal and inter-seasonal changes in temperature on DENV transmission within an average year, both for Ae. aegypti and Ae. albopictus separately. The models were then applied to the 2015 temperature data for each 5 km x 5 km grid cell globally. This resulted in maps of temperature suitability for DENV transmission by either Aedes species ranging from 0 (no suitable days) to 1 (365 suitable days). These measures were then used as a proxy for temperature suitability for ZIKV transmission to humans.
 
-## Annual cumulative precipitation
+#### Annual cumulative precipitation
 
 Presence of static surface water in natural or man-made containers is a pre-requisite for Aedes oviposition and larval and pupal development. While fine-scale spatial and temporal heterogeneities have been observed between precipitation, vector abundance, and incidence of human DENV infections, there is evidence that areas with greater amounts of precipitation are generally associated with higher DENV infection risk (Chandy et al., 2013; Chowell and Sanchez, 2006; Dom et al., 2013; Pinto et al., 2011; Restrepo et al., 2014; Sang et al., 2014; Sankari et al., 2012; Campbell et al., 2015). Although studies that directly connect levels of precipitation to ZIKV transmission have yet to exist, we assumed for Zika a similar association of precipitation as closely related flaviruses. WorldClim v1.03 precipitation data and MARKSIM software were used as described above for temperature, to estimate annual cumulative precipitation for the year 2015 for each 5 km x 5 km grid cell globally.
 
-## Minimum relative humidity
+#### Minimum relative humidity
 
-Greater relative humidity has been found to promote DENV propagation in Ae. aegypti mosquitoes in several localized settings (Colón-González et al., 2011; Thu et al., 1998), and has also been found to be an important contributor when predicting DENV risk at a global scale (Hales et al., 2002). Therefore, we again assumed a similar association for ZIKV in the absence of any direct studies, and included the minimum annual relative humidity in our models as a potential limiting factor to ZIKV transmission. Relative humidity (RH) was calculated as a percent of saturation humidity, or the amount of water vapour required to saturate the air given a particular temperature, using the temperature data from WorldClim v1.03 described earlier. The saturation, or 'dew', point (Tdew) was calculated using a tabular relationship (Linacre, 1977). RH was then calculated as follows:RH=V(Tx)V(Tdew)×100
+Greater relative humidity has been found to promote DENV propagation in Ae. aegypti mosquitoes in several localized settings (Colón-González et al., 2011; Thu et al., 1998), and has also been found to be an important contributor when predicting DENV risk at a global scale (Hales et al., 2002). Therefore, we again assumed a similar association for ZIKV in the absence of any direct studies, and included the minimum annual relative humidity in our models as a potential limiting factor to ZIKV transmission. Relative humidity (RH) was calculated as a percent of saturation humidity, or the amount of water vapour required to saturate the air given a particular temperature, using the temperature data from WorldClim v1.03 described earlier. The saturation, or 'dew', point ($T_{dew})$ was calculated using a tabular relationship (Linacre, 1977). RH was then calculated as follows:
 
-Where V(Tdew) = 611.21×exp(17.502×T240.97+T) and V(Tx) is the humidity at the given temperature. We then extracted the minimum annual RH for each 5 km x 5 km pixel globally for the year 2015.
+$$
+RH=\frac{V(T_{x})}{V(T_{dew})}\times100
+$$
 
-## Enhanced vegetation index (EVI)
+Where $V(T_{dew})$ = $611.21\timesexp(17.502\times\frac{T}{240.97+T})$ and $V(T_{x})$ is the humidity at the given temperature. We then extracted the minimum annual RH for each 5 km x 5 km pixel globally for the year 2015.
+
+#### Enhanced vegetation index (EVI)
 
 A close association has been shown between local moisture supply, vegetation canopy development, and abundance of mosquito reproduction (Linthicum et al., 1999), with previous studies highlighting the importance of moisture-related measures such as relative humidity to DENV occurrence (Hales et al., 2002). Although resistant to desiccation, both Aedes eggs and adults require moisture to survive (Cox et al., 2007; Sota and Mogi, 1992; Reiskind and Lounibos, 2009; Costa et al., 2010; Luz et al., 2008), with low dry season moisture levels substantially affecting Aedes mortality (Russell et al., 2001; Trpis, 1972; Luz et al., 2008). Vegetation canopy cover has previously been associated with higher Aedes larvae density (Fuller et al., 2009; Troyo et al., 2009; Bisset Lazcano et al., 2006; Barrera et al., 2006) by reducing evaporation from containers, decreasing sub-canopy wind speed, and protecting outdoor habitats from direct sunlight. To account for these factors, we included a 5 km x 5 km resolution measure of the EVI derived from NASA’s Moderate Resolution Imaging Spectrometer (MODIS, Boulder, Colorado) imagery (Wan et al., 2002; Lin, 2012), summarized from gap-filled, 8-day, 1 km x 1 km resolution images acquired globally for years 2000 through 2014 (Weiss et al., 2014) to produce a mean annual EVI layer. This mean EVI product is indicative of amount of photosynthesis taking place in the environment over the course of a year, which is positively correlated with the density of vegetation, and is thus a proxy for the level of moisture available given the relationship between precipitation and vegetative growth.
 
-## Urban versus rural habitat type
+#### Urban versus rural habitat type
 
 There is a well-established link between urban areas, some vector borne diseases, and their vectors. In particular, Ae. aegypti is found in close proximity to human dwellings often breeding in artificial containers (Brown et al., 2011; Powell and Tabachnick, 2013; Kraemer et al., 2015c). To identify the relationship between urbanisation and ZIKV presence we adapted probabilistic spatial modelling techniques to predict the spatial distribution of global urban extents at a 5 km x 5 km spatial resolution. We used urban growth rates from the United Nations Population Division (Division, 2014), paired with urban extents measured and tested by the Moderate Resolution Imaging Spectroradiometer Collection 5 (MODIS C5) land-cover product for Asia (Schneider et al., 2009; 2010; 2015). A set of spatial covariate datasets hypothesized to influence the spatial patterns of urban expansion was generated, including the time to travel from each 5 km x 5 km pixel to a major city (Nelson, 2008), the proportion of urbanised land within a buffer of 20 km, human population density (Linard and Tatem, 2012; Stevens et al., 2015; Gaughan et al., 2013), slope (Becker et al., 2009), and distance to water (Arino et al., 2008). A BRT modelling approach was then used to predict areas that would become urban in 2015 (Linard et al., 2013). Outputs were tested against a training dataset comprising points from Asia only, and showed good overall predictive performance (AUC=0.82). The output raster is a 5 km x 5 km gridded surface with urban (1) vs. rural (0) pixels.
 
-## Ensemble boosted regression trees approach
+### Ensemble boosted regression trees approach
 
 The boosted regression tree (BRT) modelling procedure combines regression trees with gradient boosting (Friedman, 2001). In this procedure, an initial regression tree is fitted and iteratively improved upon in a forward stagewise manner (boosting) by minimising the variation in the response not explained by the model at each iteration. It has been shown to fit complicated response functions efficiently, while guarding against over-fitting by use of extensive internal cross-validation. As such, this approach has been successfully employed in the past to map dengue and its Aedes mosquito vectors, as well as other vector-borne diseases (Bhatt et al., 2013; Pigott et al., 2014b; Messina et al., 2015b; Kraemer et al., 2015c). To increase the robustness of model predictions and quantify model uncertainty, we fitted an ensemble (Araújo and New, 2007) of 300 BRT models to separate bootstraps of the data. We then evaluated the central tendency as the mean across all 300 BRT models (Bhatt et al., 2013). Each of the 300 individual models was fitted using the gbm.step subroutine in the dismo package in the R statistical programming environment (Elith et al., 2008). All other tuning parameters of the algorithm were held at their default values (tree complexity= 4, learning rate= 0.005, bag fraction= 0.75, step size= 10, cross-validation folds=10). Each of the 300 models predicts environmental suitability on a continuous scale from 0 to 1, with a final prediction map then being generated by calculating the mean prediction across all models for each 5 km x 5 km pixel. Cross-validation was applied to each model, whereby ten subsets of the data comprising 10% of the presence and background observations were assessed based on their ability to predict the distribution of the other 90% of records using the mean area under the curve (AUC) statistic. This AUC value was then averaged across the ten sub-models and finally across all 300 models in the ensemble in order to derive an overall estimate of goodness-of-fit. Additionally, to avoid AUC inflation due to spatial sorting bias, a pairwise distance sampling procedure was used, resulting in a final AUC which is lower than would be returned by standard procedures but which gives a more realistic quantification of the model’s ability to extrapolate predictions to new regions (Wenger and Olden, 2012). We restricted our models to make predictions only within areas where either Ae. aegypti probability of occurrence (Kraemer et al., 2015c) is more than 0.8 or temperature is conducive to transmission for at least 355 days in an average year. A second ensemble of 300 models was executed which did not take into account temperature suitability for dengue transmission via Ae. albopictus, due to the uncertainty of this species as a competent ZIKV vector. The results of this ensemble of models are provided in Figure 2—figure supplement 3.
 
-## Population and births at risk
+### Population and births at risk
 
 To calculate the number of people located in an area that is at any level of risk for ZIKV transmission, the global ZIKV environmental suitability map was combined with fine-scale global population surfaces (SEDAC, 2015; WorldPop, 2015). Firstly, the continuous ZIKV environmental suitability map (ranging from 0 to 1) was converted into a binary surface indicating whether there is any risk of transmission. To do this, we carried out a protocol previously used in (Pigott et al., 2015a), choosing a threshold environmental suitability value that encompasses 90% of the ZIKV occurrence point locations. This threshold cut-off of 90% was chosen (rather than 100%) to reflect potential errors or inaccurate locations in the occurrence point dataset. Every 5 km x 5 km pixel in the suitability map with a value above this threshold value was considered at risk for ZIKV transmission. Finally, to estimate the population at risk, we multiplied this binary ZIKV risk map by the global population counts (aligned and aggregated to the same 5 x 5 km grid) for the year 2015 and summed across all cells.
 

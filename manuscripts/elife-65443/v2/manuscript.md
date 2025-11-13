@@ -39,33 +39,81 @@ In this study, we took advantage of the ability of iPS cells to differentiate in
 
 ## Results
 
-## Impaired α-DG functional glycosylation in WWS iPS cell-derived myotubes
+### Impaired α-DG functional glycosylation in WWS iPS cell-derived myotubes
 
 Using an integration-free approach, we generated iPS cells from a 1-year-old WWS male patient (FP4) harboring two mutations in exon 4 of the FKRP gene, dc.558dupC (p.A187fs) and c.1418T>G(p.F473C) (Kava et al., 2013). FP4 iPS cells express pluripotency markers, display normal karyotype, and develop teratomas containing cell types from all three germ layers (Figure 1—figure supplement 1). Using inducible expression of PAX7 (Darabi et al., 2012), we differentiated FP4 and control wild type (WT) iPS cells into myogenic progenitors and subsequently into terminally differentiated myosin heavy chain (MHC)-positive myotubes (Figure 1A). Immunostaining for MHC showed similar differentiation between WT and mutant FP4 myotubes (Figure 1A, upper panel). Staining with IIH6, a monoclonal antibody specific to the laminin binding domain of α-DG (Ervasti and Campbell, 1993), showed drastically reduced IIH6 immunoreactivity in FP4 myotubes (Figure 1A, lower panel), which was corroborated by western blot. In accordance with the loss of α-DG functional glycosylation, WWS FP4 myotubes showed decreased molecular weight for α-DG core (Figure 1B), marked reduction in IIH6 (Figure 1B and C), and most importantly, lack of laminin binding, as demonstrated by the laminin overlay assay (LOA) following enrichment by wheat germ agglutinin (WGA) pull-down (Figure 1B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig1-v2.jpg)
+
+**Figure 1.:** (A) Representative immunostaining of wild type (WT) and FP4 iPS cell-derived myotubes for myosin heavy chain (MHC) and IIH6 (in red). DAPI stains nuclei (in blue). Scale bar, 200 μm. (B) Representative western blot for α-DG core and α-DG functional glycosylation (IIH6) in WT and FP4 myotubes. β-DG was used as loading control. Lower panel shows wheat germ agglutinin (WGA) pull-down for these samples and representative laminin overlay assay (LOA) of WGA elutes shows laminin detection only in WT samples. (C) Graph bars show respective quantification of IIH6 (B) normalized to β-DG and shown as the fold difference of WT. Error bars represent standard errors of five independent experiments. Significance was evaluated by the unpaired Student’s t test. ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–C) Representative images show typical (A) pluripotent colony morphology, (B) alkaline phosphatase activity, and (C) immunostaining for OCT3/4, SOX2, and NANOG (red). DAPI stains nuclei (in blue). Scale bar is 200 μm. (D) Cytogenetic analyses show normal karyotype. (E) Subcutaneous injection of FP4 iPS cells into NOD scid gamma (NSG) mice results in teratoma formation. Representative image shows hematoxylin-eosin staining of a teratoma denoting the presence of tissues derived from all three germ layers.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative immunofluorescence staining of control (empty vector LV) and FKRP-LV FP4 iPS cell-derived myotubes for myosin heavy chain (MHC) and IIH6 (in red). Wild type (WT) myotubes were used as reference. DAPI stains nuclei (in blue). Scale bar, 200 μm. (B) RT-qPCR analysis shows increased expression levels of FKRP in FKRP-LV FP4 iPS cell-derived myotubes compared to control. Error bars represent standard errors of three independent experiments. (C–D) Introduction of FKRP rescues impaired functional glycosylation of α-DG in FP4 FKRP myotubes, as shown by western blot for IIH6 (C) and laminin overlay assay (LOA) denoting laminin detection (D). β-DG was used as loading control. Lower panel shows representative wheat germ agglutinin (WGA) pull-down. Significance was evaluated by the unpaired Student’s t test. ***p<0.001.
+
 As proof of concept, we introduced a WT FKRP transgene into FP4 cells to determine whether WT FKRP could restore functional glycosylation of α-DG. FKRP-overexpressing FP4 myogenic progenitors gave rise to MHC-positive myotubes (Figure 1—figure supplement 2A) that displayed increased FKRP expression (Figure 1—figure supplement 2B) and enhanced immunoreactivity to IIH6 (Figure 1—figure supplement 2A and C), which led to rescue of laminin binding capacity (Figure 1—figure supplement 2D).
 
-## Ribitol and ribose rescue α-DG functional glycosylation in FP4 iPS cell-derived myotubes
+### Ribitol and ribose rescue α-DG functional glycosylation in FP4 iPS cell-derived myotubes
 
 Having developed this platform, we tested whether ribitol, a precursor for CDP-ribitol (Figure 2A), would be able to increase functional α-DG glycosylation in the human context using the FP4 patient-specific iPS cell-derived model. At the onset of terminal myogenic differentiation, we treated myogenic progenitors with increasing concentrations of ribitol (25 mM, 50 mM, 100 mM, and 200 mM) for 5 days. Following evaluation of cell morphology and IIH6 immunoreactivity (Figure 2—figure supplement 1A and B), the 50 mM concentration was chosen for the studies described here. Treated cells retained differentiation capacity, as shown by MHC levels (Figure 2B, Figure 2—figure supplement 1C), and exhibited rescue of α-DG functional glycosylation (Figure 2B,C and D). Importantly, this increase in functional glycosylation of α-DG was sufficient to increase binding between α-DG and laminin, as shown by the detection of laminin only in ribitol-treated FP4 myotubes (Figure 2C).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig2-v2.jpg)
+
+**Figure 2.:** (A) Scheme denoting the role of ribose and ribitol in the generation of Rbo5P, which is required by fukutin (FKTN) and fukutin-related protein (FKRP) for glycosylation of α-DG. (B) Representative immunostaining for myosin heavy chain (MHC) and IIH6 (in red) in WWS FP4 induced pluripotent stem (iPS) cell-derived myotubes that had been treated or not with ribitol. DAPI stains nuclei (in blue). Scale bar, 200 μm. (C–D) Western blot shows increased IIH6 staining in WWS FP4 myotubes upon ribitol supplementation. MHC (MF-20) and β-DG were used as differentiation and loading controls, respectively. Lower panel shows wheat germ agglutinin (WGA) pull-down for these samples, and laminin overlay assay (LOA) of WGA elutes shows laminin detection in ribitol-treated FP4 myotubes. Wild type (WT) myotubes were used as positive control. (D) Bar graph shows quantification of IIH6 (from C) normalized to β-DG and shown as the fold difference of WT. Error bars represent standard errors of five independent experiments. (E) Representative immunostaining for MHC and IIH6 (in red) in FP4 iPS cell-derived myotubes that had been treated or not with ribose. DAPI stains nuclei (in blue). Scale bar, 200 μm. (F–G) Western blot for IIH6 in FP4 myotubes that had been treated with ribose. MF-20 and β-DG were used as differentiation and loading controls, respectively. Lower panel shows representative WGA, and LOA shows laminin detection in ribose-treated FP4 myotubes. WT myotubes were used as positive control. (G) Bar graph shows increased IIH6 in ribose-treated myotubes. Quantification of IIH6 (F) was normalized to β-DG and shown as the fold difference of WT. Error bars represent standard errors of five independent experiments. Significance was evaluated by the unpaired Student’s t test. *p<0.05, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–B) Phase contrast images of FP4 myogenic progenitors that upon induction of differentiation were treated with the indicated concentrations of ribitol for 5 days. (B) Western blot shows enhanced IIH6 immunoreactivity was observed as ribitol concentration increased. β-Dystroglycan (β-DG) was used as loading control. Scale bar, 200 μm. (C) Bar graph shows quantification of myosin heavy chain (MHC) from ribitol-treated myotubes normalized to β-DG and shown as the fold difference to basal. Error bars represent standard errors of seven independent experiments. (D–E) Phase contrast images of FP4 myogenic progenitors that were differentiated to myotubes and treated with increasing concentrations of ribose for 5 days. (E) Western blot shows IIH6 immunoreactivity. β-DG was used as loading control. Scale bar, 200 μm. (F) Bar graph shows quantification of MHC from ribose-treated myotubes normalized to β-DG and shown as the fold difference to basal. Error bars represent standard errors of seven independent experiments. Significance was evaluated by the unpaired Student’s t test.
+
 Since ribitol is endogenously generated by the reduction of ribose via an oxidoreductase (Figure 2A), we hypothesized that supplementing FP4 myogenic cells with ribose might also recover α-DG functional glycosylation. As before, we treated FP4 cultures with increasing concentrations of ribose, ranging from 5 to 100 mM. Because the lowest concentration of ribose able to enhance α-DG functional glycosylation was 10 mM and higher concentrations led to cell death (>50 mM), we chose the concentration of 10 mM for further analysis (Figure 2—figure supplement 1D to F). As shown in Figure 2E,F and G, we found a significant increase in functional glycosylation of α-DG upon 10 mM ribose supplementation. This increase was sufficient to enhance laminin binding capacity in FP4 myotubes (Figure 2F).
 
-## Ribitol and ribose treatment is associated with significant increases in ribitol-5-P and CDP-ribitol
+### Ribitol and ribose treatment is associated with significant increases in ribitol-5-P and CDP-ribitol
 
 To determine the effect of ribitol and ribose supplementation on the synthesis of ribitol-5-P and CDP-ribitol, we quantified the levels of these PPP metabolites after 5 days of treatment by liquid chromatography with tandem mass spectrometry (LC/MS-MS). Quantification of each metabolite was determined based on generated standard curves (Figure 3—figure supplement 1). The data from this analysis revealed that both ribitol and ribose supplementation result in significant increases in ribitol, ribose, ribitol-5-P, and CDP-ribitol compared to untreated cultures (Figure 3A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig3-v2.jpg)
+
+**Figure 3.:** (A) Detection of ribitol, ribose, ribitol-5-P, and CDP-ribitol in WWS FP4 myotubes that had been treated or not with ribitol or ribose for 5 days (n = 3 for each cohort). Error bars represent standard errors of three independent experiments. (B–C) Sorbinil treatment for 5 days results in decreased α-dystroglycan (α-DG) functional glycosylation, as shown by western blot for IIH6 in wild type (WT) myotubes (B). β-DG was used as loading control. (C) Bar graph shows quantification of IIH6 (from B) normalized to β-DG and shown as the fold difference of WT. Error bars represent standard errors of three independent experiments. (D–E) Sorbinil treatment counteracts the positive effect of ribose on α-DG functional glycosylation. (D) Representative western blot shows reduction of IIH6 staining in FP4 myotubes that had been treated with both ribose and sorbinil. β-DG was used as loading control. (E) Bar graph shows quantification of IIH6 (from D) normalized to β-DG and shown as the fold difference of FP4 + ribose. Error bars represent standard errors of five independent experiments. Significance was evaluated by the one-way ANOVA followed by the Sidak’s multiple comparison test in (A) and the unpaired Student’s t test in (C and E). *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–D) Standard curves from serial dilution of metabolites (A) ribitol, (B) ribose, (C) ribitol-5-P, and (D) cytidine diphosphate (CDP)-ribitol.
+
 The reduction of ribose to ribitol has been suggested to be mediated by the sorbinil sensitive aldose reductase (AKR1B1) (Gerin et al., 2016). To determine whether inhibition of this aldose reductase would diminish α-DG functional glycosylation and counteract the ribose-mediated rescue, we treated WT cells at the onset of terminal differentiation with sorbinil. This resulted in a 40% reduction in IIH6 levels in WT myotubes (Figure 3B and C). Most importantly, sorbinil treatment counteracted the positive effect of ribose in FP4 myotubes by 63%, as shown by the diminished rescue of IIH6 levels (Figure 3D and E).
 
-## Rescue of α-DG function by PPP metabolites is significantly enhanced by addition of NAD+
+### Rescue of α-DG function by PPP metabolites is significantly enhanced by addition of NAD+
 
 Since NAD+ has been shown to improve muscle function in the FKRP dystroglycanopathy zebrafish model (Bailey et al., 2019), we tested the effect of NAD+ alone or in combination with ribitol or ribose. We treated FP4 cultures with 100 μM of NAD+, as this concentration has been previously documented (Goody et al., 2012). In FP4 myotubes treated with NAD+ alone, we observed a small, yet significant increase in functional glycosylation of α-DG (Figure 4—figure supplement 1). However, when we combined NAD+ supplementation with PPP metabolites, we observed, on average, a 59% increase in IIH6 positivity in ribitol/NAD+ when compared to ribitol alone (Figure 4A and C). The same synergistic effect was observed when FP4 cells were treated with the NAD+/ribose combination, as levels of IIH6 increased on average 50% compared to ribose alone (Figure 4B and D). Importantly, in both cases, the combination also promoted increased laminin binding capacity (Figure 4A and B). We also tested the effect of ribitol and ribose in combination with NAD+ in established myotubes. For this, we differentiated FP4 myogenic progenitors into myotubes, and 4 days later, added the compounds for 24–72 hr. Again, a synergistic effect was observed upon the combination of NAD+ with PPP metabolites. Ribitol/NAD+ treatment led to an 85% increase in IIH6 immunoreactivity compared to ribitol alone (Figure 4E and F). Likewise, ribose/NAD+ treatment on average doubled functional glycosylation of α-DG at 48 hr when compared to ribose alone (Figure 4G and H). These results support the beneficial effect of combining ribitol or ribose with NAD+ to enhance α-DG functional glycosylation.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig4-v2.jpg)
+
+**Figure 4.:** (A–B) Western blots show increased IIH6 staining in Walker-Warburg syndrome (WWS) FP4 myotubes that had been supplemented with ribitol and NAD+ compared to ribitol alone (A) or with ribose and NAD+ compared to ribose alone (B). Myosin heavy chain (MHC) (MF-20) and β-DG were used as differentiation and loading controls, respectively. Lower panel shows wheat germ agglutinin (WGA) pull-down for these samples, and respective laminin overlay assay (LOA) of elutes shows increased laminin detection in FP4 myotubes that were treated with ribitol/NAD+ or ribose/NAD+. Wild type (WT) myotubes were used as positive control. (C–D) Bar graph shows quantification of IIH6 (A and B, respectively) normalized to β-DG and shown as the fold difference of WT. Error bars represent standard errors of 8 (for C) or 7 (for D) independent experiments. (E–H) Western blot of IIH6 in FP4 D4 differentiated myotubes treated with ribitol and ribitol/NAD+ (E) or ribose and ribose/NAD+ (F) for 24, 48, or 72 hr. MF-20 and β-DG were used as differentiation and loading controls, respectively. (G–H) Bar graph shows quantification of IIH6 (from E and F, respectively) normalized to β-DG and shown as the fold difference of WT. Error bars represent standard errors of four independent experiments. Significance was evaluated by the paired Student’s t test in (C and D) and by the one-way ANOVA followed by the Sidak’s multiple comparison test in (F and H). *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Representative immunostaining of FP4 myotubes treated with NAD+ and respective control wild type (WT) myotubes for myosin heavy chain (MHC) and IIH6 (in red). DAPI stained nuclei (in blue). Scale bar, 200 μm. (B) Representative western blot for IIH6 shows increased immunoreactivity in NAD+ treated FP4 myotubes. MF-20 and β-DG were used as differentiation and loading controls, respectively. (C) Bar graph shows quantification of IIH6 (B) normalized to β-DG and shown as the fold difference of WT. Error bars represent standard errors of six independent experiments. Significance was evaluated by the unpaired Student’s t test. *p<0.05.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Liquid chromatography with tandem mass spectrometry (LC/MS-MS) detection of ribitol, ribose, ribitol-5-P, and cytidine diphosphate (CDP)-ribitol from FP4 myotubes untreated or supplemented with NAD+ for 5 days (n = 3). Error bars represent standard errors of three independent experiments. (B) Detection of ribitol, ribose, ribitol-5-P, and CDP-ribitol from FP4 myotubes supplemented with ribitol, ribose, ribitol/ NAD+, or ribose/NAD+ for 5 days (n = 3 for each cohort). Error bars represent standard errors of three independent experiments. Significance was evaluated by the two-way ANOVA followed by the Sidak’s multiple comparison test (A) and the one-way ANOVA followed by the Sidak’s multiple comparison test in (B). *p<0.05.
+
 Whereas ribitol and ribose rescue functional glycosylation of α-DG by increasing the generation of the FKRP substrate CDP-ribitol, the mechanism for NAD+ remains unclear. Since several forms of NAD act as cofactors for oxidoreductases, we hypothesized that NAD+ could enhance the generation of ribitol-5-P and CDP-ribitol. To test this, we quantified the levels of PPP metabolites in NAD+-treated cells by LC/MS-MS, as described above for ribitol/ribose (Figure 3A). We found that NAD+ treatment led to a small increase in ribose levels compared to untreated counterparts, but no significant differences were detected in ribitol-5-P and CDP-ribitol, as shown by comparing untreated vs. NAD+, ribitol vs. ribitol/NAD+, and ribose vs. ribose/NAD+ (Figure 4—figure supplement 2). These results suggest that the synergistic effect of NAD+ is independent of the FKRP substrate CDP-ribitol.
 
-## Functional FKRP is indispensable for the rescue of α-DG functional glycosylation by ribitol and ribose
+### Functional FKRP is indispensable for the rescue of α-DG functional glycosylation by ribitol and ribose
 
 Because the null mutation for FKRP is embryonic lethal (Chan et al., 2010), most FKRP mutations are thought to have some residual activity. To determine whether such residual activity of FKRP is required for the effects observed upon ribitol and ribose supplementation, we generated an FKRP-deficient pluripotent stem cell line (FKRP knockout [KO]) using CRISPR/Cas9 genome editing. Immunostaining for MHC showed similar differentiation between FKRP KO myotubes and respective control WT counterparts (Figure 5A), but as anticipated, FKRP KO myotubes lacked functional glycosylation of α-DG, as evidenced by immunostaining and western blot to IIH6 (Figure 5A and B) and absence of laminin binding (Figure 5B). Importantly, treatment of FKRP KO myotubes with ribitol, ribose, or NAD+ did not rescue α-DG functional glycosylation (Figure 5C).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative immunostaining of FKRP knockout (KO) and respective control wild type (WT) isogenic PS cell-derived myotubes for myosin heavy chain (MHC) and IIH6 (in red). DAPI stained nuclei (in blue). Scale bar, 200 μm. (B) Western blot for IIH6 shows absence of α-DG functional glycosylation in FKRP KO myotubes. β-DG was used as loading control. Lower panel shows representative wheat germ agglutinin (WGA) pull-down for these samples and laminin overlay assay (LOA) shows the lack of laminin detection in FKRP KO myotubes. Parental WT myotubes were used as positive control. (C) Deletion of FKRP abolishes ribitol, ribose, and NAD+ mediated rescue of α-DG functional glycosylation, as shown by western blot for IIH6. β-DG was used as loading control. (D) Representative immunostaining of parental WT (WT-2) and FKRP C318Y iPS cell-derived myotubes for MHC (upper panel) and IIH6 (lower panel). DAPI stains nuclei (in blue). Scale bar, 200 μm. (E) FKRP C318Y abolishes ribitol, ribose, and combinations with NAD+ mediated rescue of α-DG functional glycosylation, as shown by western blot for IIH6. β-DG was used as loading control.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65443/elife-65443-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–B) Western blot for core α-DG and β-DG in FKRP C318Y myotubes treated with NAD+. (B) Total protein stain was used as loading control. (C) Bar graphs shows quantification of α-DG and β-DG normalized to total protein stain. Error bars represent standard errors of eight independent experiments. Significance was evaluated by the unpaired Student’s t test. *p<0.05.
 
 To investigate whether other mutations associated with the WWS phenotype are amenable to rescue by these metabolites, we introduced the WWS-clinically associated FKRP-C318Y mutation (Beltran-Valero de Bernabé et al., 2004) located in the zinc finger loop of the FKRP catalytic domain into WT iPS cells using CRISPR-Cas9 genome editing. Isogenic myotubes generated from FKRP-C318Y iPS cells displayed a similar phenotype to patient-specific FP4 myotubes (Figure 5D), thus confirming the in vitro WWS phenotype. We tested ribitol, ribose, or combinations with NAD+ supplementation in cultures of FKRP-C318Y myotubes, as described above for FP4, and none of the metabolites were able to rescue α-DG functional glycosylation in these cells (Figure 5E), suggesting that rescue is mutation specific.
 
@@ -89,25 +137,287 @@ Dietary interventions can provide a feasible and economically accessible solutio
 
 ## Materials and methods
 
-## iPS cell reprogramming and cell lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens, male)</td>
+      <td>FP4</td>
+      <td>This study</td>
+      <td></td>
+      <td>Available from the Anne Bang lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens, male)</td>
+      <td>FKRP C318Y</td>
+      <td>This study</td>
+      <td>TC1133 FKRP C318Y</td>
+      <td>Available from the Rita Perlingeiro lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens, male)</td>
+      <td>FKRP KO</td>
+      <td>This study</td>
+      <td>H9 FKRP KO</td>
+      <td>Available from the Rita Perlingeiro lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, male)</td>
+      <td>WT</td>
+      <td>PMID:22560081</td>
+      <td>PLZ</td>
+      <td>Control line, available from the Rita Perlingeiro lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, male)</td>
+      <td>Parental WT FKRP KO</td>
+      <td>WiCell</td>
+      <td>H9</td>
+      <td>ESC control line (WA09)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens, male)</td>
+      <td>Parental WT FKRP C318Y</td>
+      <td>PMID:26411904</td>
+      <td>TC-1133</td>
+      <td>Control line, available with RUCDR Infinite Biologics</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHIR99021</td>
+      <td>Tocris</td>
+      <td>Cat# 4423</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LDN193189</td>
+      <td>Cayman chemical</td>
+      <td>Cat# 19396</td>
+      <td>200 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB431542</td>
+      <td>Cayman chemical</td>
+      <td>Cat# 13031</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPT</td>
+      <td>Cayman chemical</td>
+      <td>Cat# 13197</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dexamethasone</td>
+      <td>Cayman chemical</td>
+      <td>Cat# 11015</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Forskolin</td>
+      <td>Cayman chemical</td>
+      <td>Cat# 11018</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ribitol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A5502</td>
+      <td>50 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-(−)-ribose</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# R9629</td>
+      <td>10 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NAD+</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# N0632</td>
+      <td>100 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sorbinil</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# S7701</td>
+      <td>100 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D9891</td>
+      <td>1 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Recombinant human FGF-basic</td>
+      <td>Peprotech</td>
+      <td>Cat# 100-18B</td>
+      <td>5 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-alpha dystroglycan (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat# 05–593, RRID:AB_309828</td>
+      <td>Dilution 1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-alpha dystroglycan (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# IIH6 C4, RRID:AB_2617216</td>
+      <td>Dilution 1:50 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human dystroglycan (sheep polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>Cat# AF6868, RRID:AB_10891298</td>
+      <td>Dilution 1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MHC (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# MF20, RRID: AB_2147781</td>
+      <td>Dilution 1:50 (IF) 1:200 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-laminin (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# L9393, RRID:AB_477163</td>
+      <td>Dilution 1:1000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-beta dystroglycan, concentrated (mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat# MANDAG2 clone 7D11, RRID:AB_2211772</td>
+      <td>Dilution 1:1500 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-OCT3/4 (mouse monoclonal)</td>
+      <td>SCBT</td>
+      <td>Cat# C-10, RRID: AB_628051</td>
+      <td>Dilution 1:50 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SOX2 (goat polyclonal)</td>
+      <td>SCBT</td>
+      <td>Cat# Y-17, RRID: AB_2286684</td>
+      <td>Dilution 1:50 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NANOG (mouse monoclonal)</td>
+      <td>SCBT</td>
+      <td>Cat# H-2, RRID: AB_10918255</td>
+      <td>Dilution 1:50 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SSEA4 (mouse monoclonal)</td>
+      <td>SCBT</td>
+      <td>Cat# sc-21704, RRID: AB_628289</td>
+      <td>Dilution 1:50 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa fluor 555 goat anti-mouse IgG and IgM (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21424, RRID: AB_141780 Cat# A-21042, RRID:AB_2535711</td>
+      <td>Dilution 1:500 (IF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DyLight 680 anti-rabbit IgG (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 35568, RRID:AB_614946</td>
+      <td>Dilution 1:10000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DyLight 680 anti-mouse IgM (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# SA5-10154, RRID:AB_2556734</td>
+      <td>Dilution 1:10000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DyLight 680 anti-sheep IgG (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# SA5-10058, RRID:AB_2556638</td>
+      <td>Dilution 1:10000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DyLight 800 anti-mouse IgG (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# SA5-10176, RRID:AB_2556756</td>
+      <td>Dilution 1:10000 (WB)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>SCBT</td>
+      <td>sc-3598</td>
+      <td>(1.5 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Laminin from Engelbreth-Holm-Swarm murine sarcoma basement membrane</td>
+      <td>Millipore Sigma</td>
+      <td>Cat# L2020</td>
+      <td>1 µg/µl</td>
+    </tr>
+  </tbody>
+</table>
+
+### iPS cell reprogramming and cell lines
 
 FKRP mutant fibroblasts obtained from a 1-year-old male patient (Kava et al., 2013) were reprogrammed into iPS cells, named FP4, using the CytoTune-iPS 2.0 Sendai Reprogramming Kit (Thermo Fisher Scientific) using feeder-free conditions, according to the manufacturer’s instructions. FP4 iPS cells were passaged with ReLeSR (STEMCELL Technologies) and cultured on Matrigel-coated dishes using mTeSR1 medium (STEMCELL Technologies). Newly generated and previously described WT iPS/embryonic stem (ES) cells (Darabi et al., 2012; Selvaraj et al., 2019b) are listed in the key resources table. Cell lines were authenticated by verification of genetic mutation by sanger sequencing. All cell lines were negative for mycoplasma contamination.
 
-## Mice and teratoma studies
+### Mice and teratoma studies
 
 Experiments were carried out according to protocols (protocol ID 2002-37833A) approved by the University of Minnesota Institutional Animal Care and Use Committee. NOD scid gamma (NSG) mice (Jackson laboratory) were used to perform teratoma studies. FP4 cells (1.5 × 106) were suspended in a 1:1 Dulbecco's Modified Eagle Medium: Nutrient Mixture F-12 (DMEM-F12, ThermoScientific) and Matrigel (Corning) solution and injected in the quadriceps of NSG mice. The teratoma was harvested 2 months after injection.
 
-## Myogenic differentiation and cell culture
+### Myogenic differentiation and cell culture
 
 Inducible PAX7 FP4 human iPS cells were generated by lentiviral transduction of the pSAM2-PAX7-IRES-GFP and pFUGW-rtTA constructs. Inducible Pax7 WT iPS cells were generated previously (Darabi et al., 2012), and they were maintained on Matrigel-coated flasks using mTeSR 1 (STEMCELL Technologies). iPAX7-iPS cells were dissociated with Accumax (Innovative Cell Technologies), and 1 × 106 cells were plated on a 6 cm non-adherent Petri dishes using mTeSR1 medium supplemented with 10 µM Y-27632 (ROCK inhibitor) and incubated on a shaker at 60 rpm (day 0). On day 2, the medium was replaced with embryoid body (EB) differentiation medium (15% fetal bovine serum (FBS), 10% horse serum, 1% KnockOut Serum Replacement, 1% GlutaMax, 1% penicillin-streptomycin, 50 µg/ml ascorbic acid, and 4.5 mM monothioglycerol in Iscove’s modified Dulbecco’s medium) supplemented with 10 µM CHIR990217 (GSK3 inhibitor). After 2 days of incubation of EBs in suspension, the medium was replaced with fresh EB differentiation medium containing 10 µM SB-431542 and 200 nM LDN-193189. On day 5, 1 µg/ml doxycycline was added to promote PAX7 induction. After 24 hr the media was changed with fresh (EB) differentiation medium with 1 µg/ml doxycycline. Day 8 EBs were collected and plated as a monolayer on gelatin-coated flasks using EB differentiation medium supplemented with 10 ng/ml human basic fibroblast growth factor and 1 µg/ml doxycycline. On day 12, GFP+ cells (PAX7+ myogenic progenitors) were sorted using a FACS Aria II (BD Biosciences) and expanded on gelatin-coated flasks using the same medium. At 90% cell density, cells were passaged using Trypsin-EDTA (Gibco) and replated on new gelatin-coated flasks.
 
 Myogenic progenitors were terminally differentiated into myotubes by growing them to confluency and then switching to terminal differentiation medium, which consisted of DMEM low glucose supplemented with 2% horse serum, 1% insulin-transferrin-selenium, 1% penicillin-streptomycin, 10 µM SB-431542, 10 µM LY-374973, 10 µM Forskolin, and 10 µM dexamethasone (Selvaraj et al., 2019b). At this point, cultures were exposed to different treatments as follows: ribitol (A5502, Sigma-Aldrich), D-(−)-ribose (R9629, Sigma-Aldrich), 100 μM NAD+ (N0632, Sigma-Aldrich), and/or 100 μM sorbinil (S7701, Sigma-Aldrich). Media was replenished on day 3 of differentiation, and myotubes characterization was performed after 5–8 days of terminal differentiation.
 
-## Cytogenetic analysis
+### Cytogenetic analysis
 
 Live iPS cells were submitted to the Cytogenomics core at the University of Minnesota Masonic Cancer Center for G-band karyotype analysis. Cells were treated with colcemid for 3 hr to arrest cells, and 20 different metaphases were analyzed at a resolution of 400–450 band level.
 
-## Generation of FKRP isogenic cell lines
+### Generation of FKRP isogenic cell lines
 
 To generate the FKRP KO pluripotent stem cell line, the previously published gRNA (CATGCGGCTCACCCGCTGCCAGG) targeting the start codon of FKRP (Yagi et al., 2016) was cloned into pSpCas9(BB)−2A-GFP (PX458; Addgene plasmid # 48138) (Ran et al., 2013). The ES cell line H9 was nucleofected using the Human Stem Cell Nucleofector Kit 1 (Lonza) and sorted for GFP at 48 hr post-nucleofection. ES cells were expanded, and IIH6 negative cells were sorted by FACS. The deletion was confirmed by sequencing.
 
@@ -115,34 +425,34 @@ FKRP C318Y mutant iPS cells were generated using an HDR donor vector as previous
 
 The FKRP vector was generated by cloning the full-length FKRP coding sequence from Dharmacon (clone 3160297) into pSAM-ires-mCherry vector (Bosnakovski et al., 2008). Plasmids were prepared using an Endofree Midiprep kit (Nucleobond). Lentiviruses were produced by co-transfection of the transfer vector and the packaging constructs (pVSV-G and pΔ8.74) into HEK 293 T cells. Transfections were performed using Lipofectamine LTX with Plus Reagent (Invitrogen) following manufacturer instructions. Supernatants containing the lentiviral particles were collected 36 hr after transfection and passed through a 0.45 μm filter. Myogenic progenitors were transduced with pSAM-ires-mCherry (empty-LV FP4) or pSAM-FKRP-iresmCherry (FKRP FP4), and subsequently mCherry-positive cells were purified by FACS.
 
-## IIH6 FACS analysis
+### IIH6 FACS analysis
 
 IIH6 staining for FACS was performed as previously described with minor modifications (Rojek et al., 2007). iPS cells were washed once with phosphate buffer saline (PBS) and then harvested using enzyme-free cell dissociation buffer (Gibco) following the manufacturer’s instructions. Cells were collected, centrifuged, washed with PBS, and then resuspended in PBS supplemented with 10% FBS (PBSF) in the presence of Fc Block (1 μl/million cells – BD Bioscience) and incubated for 5 min. Staining was performed by adding 1 μl of anti-α-DG antibody IIH6C4 (Millipore) or normal mouse IgM (Santa Cruz Biotechnology) antibody per million cells followed by 20 min incubation on ice. Cells were then washed with PBS and labeled with 488- or 555-conjugated secondary antibodies (1:500 in FACS buffer) for 20 min on ice in the dark. Cells were washed with PBS and filtered through a 70 μm strain to remove cell clumps, then resuspended in PBSF. Samples were sorted using a FACS Aria II (BD Biosciences).
 
-## Immunoblot analysis and WGA pull-downs
+### Immunoblot analysis and WGA pull-downs
 
 Frozen cells were homogenized in Tris-Buffer Saline (TBS, 50 mM Tris-Cl, pH 7.5, 150 mM NaCl) with 1% Triton X-100 and a cocktail of protease inhibitors (Complete – Millipore-Sigma) at 4°C by vortexing and then centrifuged for 30 min at 30000 g. Solubilized proteins from the supernatant were quantified with Bradford reagent (Millipore-Sigma). Protein samples were prepared in Laemmli Sample Buffer (LSB, BioRad). WGA pull-downs were performed using 350–600 μg of protein lysate that was loaded on 35–60 μl of WGA-bound agarose beads (Vector Laboratories, Inc) and incubated with end-over-end mixing at 4°C overnight. After three washes with PBS (150 mM NaCl, 8 mM NaH2PO4, 42 mM Na2HPO4, pH 7.5) with 0.1% Triton X-100, bound protein was eluted with 2x LSB and incubated at 100°C for 5 min. Protein samples were separated on 4–15% using precast polyacrylamide gel (BioRad) by electrophoresis and then transferred to Immobilon-FL PVDFmembranes (Millipore) for detection with the indicated antibodies using Licor’s Odyssey Infrared Imaging System. Total protein detection using was preformed using LI-COR REVERT kit according to the manufacturer's instructions. Used antibodies are described in the key resources table.
 
-## Laminin overlay assay
+### Laminin overlay assay
 
 The LOA was performed as previously described with minor modifications (Pall et al., 1996). Briefly, 20 μl of WGA purified samples were separated on 4–15% SDS-polyacrylamide gels by electrophoresis and then transferred to Immobilon-FL PVDF membranes. Transfers were blocked with PBS and 5% nonfat dry milk for 1 hr at room temperature, and then briefly rinsed with TBS and incubated for 2 hr at room temperature in TBS containing 1 mM CaCl2, 1 mM MgCl2 (TBSS), 3% bovine serum albumin (BSA), and 1 mg/ml native laminin (L2020, Sigma). Transfers were washed twice for 10 min in TBSS and incubated overnight at 4°C with TBSS 3% BSA and anti-laminin (L9393, Sigma). Afterward, the membrane was washed with TBSS twice for 10 min and incubated with anti-rabbit DyLight 680 for 45 min at room temperature. Finally, membranes were washed with TBSS and visualized using Licor’s Odyssey Infrared Imaging System. As a negative control, TBSS without 1 mM CaCl2 was used during incubation and washes.
 
-## Metabolite extraction and LC/MS-MS analysis
+### Metabolite extraction and LC/MS-MS analysis
 
 Ribitol-5-phosphate and CDP-ribitol were synthesized by Z Biotech (Aurora, CO). Myogenic progenitors were serum-starved after changing to differentiation medium only or supplemented with ribitol, ribose, ribitol/NAD+, ribose/NAD+, or NAD+ for 5 days, washed with cold PBS three times and harvested by scrapping the cells. In a blinded manner, samples were subjected to the following procedures. Cells were homogenized with 300 μl of MeOH:acetonitrile (1:1) and then centrifugated for 5 min at 11,000 rpm. The supernatants were removed, transferred to individual wells of 96-well plate, and analyzed by LC/MS-MS. An Applied Biosystems Sciex 4000 (Applied Biosystems, Foster City, CA) equipped with a Shimadzu HPLC (Shimadzu Scientific Instruments, Inc, Columbia, MD) and Auto-sampler (LEAP Technologies, Carrboro, NC) were used to detect ribitol, ribose, ribitol-5-P, and CDP-ribitol. The analysis of metabolites was performed by Z Biotech as described previously (Cataldi et al., 2018).
 
-## Molecular modeling
+### Molecular modeling
 
 Modeling of FKRP with its CDP-ribitol and M3 substrates (PDB: 6KAM) (Kuwabara et al., 2020) was carried out using the Schrodinger modeling suite package (Schrödinger Release 2018-4, 2018). All missing side chains and hydrogens atoms were added according to the default protein preparation protocol at pH 7.0, followed by energy minimization using OPLS2005 force field (Jorgensen et al., 1996) to optimize all hydrogen-bonding networks. The crystallographic Ba2+ ion was replaced by its native Mg2+ ion. The relative change in substrate-binding free energy due to the effect of mutation, ΔΔGbind(F473C), was performed based on the molecular mechanics generalized Born solvent accessible method (Still et al., 1990). It is evaluated as the difference in the protein stability between the unbound and bound states of FKRP and its F473C mutant.
 
-## Immunofluorescence analysis
+### Immunofluorescence analysis
 
 Immunofluorescence staining was performed by fixing cells with 4% paraformaldehyde in PBS for 10 min at 4°C, followed by permeabilization with 0.1% Triton in PBS and blocking with 3% BSA in PBS, before incubation with the primary antibodies. Samples were rinsed with PBS, blocked with 3% BSA in PBS, and then incubated with DAPI and respective secondary antibodies. Antibodies used in this study are described in the key resources table.
 
-## RT-qPCR
+### RT-qPCR
 
 Samples were collected with TRIzol Reagent (Invitrogen), and RNA was purified using a Direct-zol RNA Miniprep Plus Kit (Zymo Research). Purified RNA was quantified with NanoDrop 2000 (Thermo Fisher Scientific) and retrotranscribed using SuperScript VILO cDNA Synthesis Kit (Invitrogen) following the manufacturer’s instructions. Gene expression analyses were performed using the cDNA corresponding to 12.5 ng of starting RNA for each reaction. The RT-qPCR analysis was performed using TaqMan Universal PCR Master Mix and TaqMan probes (Applied Biosystems).
 
-## Statistical analysis
+### Statistical analysis
 
 For comparisons of two independent samples, we used the unpaired or paired Student’s t test. For comparisons of multiple groups, we used the two-way ANOVA followed by the Tukey’s multiple comparisons test. The one-way ANOVA followed by the Sidak’s multiple comparisons test was used when measuring one variable. p-values < 0.05 were considered significant. Statistical comparisons were performed using GraphPad Prism software.

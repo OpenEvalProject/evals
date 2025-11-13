@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01yc7t268 Department of Orthopedic Surgery, Washington University in St. Louis St. Louis United States
-2. https://ror.org/01yc7t268 Departments of Orthopedic Surgery, Biomedical Engineering, and Mechanical Engineering and Materials Science, Washington University in St. Louis St. Louis United States
+1. Department of Orthopedic Surgery, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+2. Departments of Orthopedic Surgery, Biomedical Engineering, and Mechanical Engineering and Materials Science, Washington University in St. Louis St. Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
 
 † Corresponding author
 

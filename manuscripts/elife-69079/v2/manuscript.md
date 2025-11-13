@@ -33,7 +33,7 @@ To focus on the higher order cortex, we did not adopt a test of binocular rivalr
 
 ## Results
 
-## Validation of energy landscape analysis in EEG
+### Validation of energy landscape analysis in EEG
 
 As a preparation, we examined whether the current EEG system captured qualitatively the same brain state dynamics as those found in our previous fMRI study employing the same SFM stimulus (Watanabe et al., 2014c). To this end, we recorded gamma-band EEG signals from the seven cortical regions (Watanabe et al., 2014c; Figure 1b) of 65 healthy adults while they were experiencing the SFM-induced bistable visual perception (left panel of Figure 1c) and applied an offline energy landscape analysis to the data (Control Experiment I).
 
@@ -51,7 +51,7 @@ Finally, we confirmed that, as shown in our fMRI work, the length of such neural
 
 In sum, these findings show that, at least with an offline analysis, the current EEG system can identify qualitatively the same brain state dynamics underpinning the SFM-induced bistable visual perception as seen in our previous fMRI study (Watanabe et al., 2014c).
 
-## Validation of state-dependent neural stimulation
+### Validation of state-dependent neural stimulation
 
 These results have sufficient information to categorise each neural activity pattern at each timepoint into either of the three major states. In the Control Experiment II, we implemented such classification information into an online EEG analysis (Stefanou et al., 2018; Zrenner et al., 2018; right panel of Figure 1c) and examined whether the online analysis could track the bran state dynamics accurately and enable us to administer TMS while the brain activity pattern was dwelling in a specific brain state.
 
@@ -61,7 +61,7 @@ First, we confirmed that the brain state identification in the online analysis w
 
 **Figure 3.:** The online EEG analysis tracked brain state dynamics as accurately as the offline analysis did (a). Brain-state-dependent TMS triggering system also achieved accurate neural tracking (b) with short delays (c). Note that the accuracy in the TMS trigger (b) tended to be higher than that in simple brain-state tracking (a), presumably because TMS was triggered only when a specific brain state was expected to continue in a certain period (here, 150 ms) and resultantly reduce the rate of false negative. Also, such a criterion should work as temporal smoothing and improve the signal-to-noise ratio. Each dot represents each participant. *** indicates PBonferroni <0.001 in paired t-tests (df = 64).
 
-## State-dependent causality
+### State-dependent causality
 
 By applying this state-dependent TMS over the three PFC regions (i.e. DLPFC, IFC and FEF; Figure 4), we found that the three prefrontal areas had different causal behavioural effects on the spontaneous perceptual switching in a brain-state-dependent manner (N = 34; F8,33=25.9, p < 10–3 for the main effect in a two-way ANOVA; Figure 4b).
 
@@ -75,7 +75,7 @@ Regarding IFC, the F-state-dependent TMS destabilised the visual perception (t33
 
 The F-state-dependent TMS over FEF reduced the percept duration (t33 = 10.5, PBonferroni < 0.001, d = 1.9), whereas no behavioural change was observed in the other FEF TMS conditions (t33 <0.8, PBonferroni > 0.05, d < 0.39).
 
-## State-history-dependent causality
+### State-history-dependent causality
 
 If some behavioural causalities are detectable when the whole-brain neural activity pattern is dwelling in specific brain states, others may emerge when the neural activity pattern has finished travelling a particular brain state trajectory. We then tested this hypothesis and found such state-history-dependent causality (F5,33=85.6, p < 10–3 for the main effect in a two-way ANOVA; Figure 4c). Here, we focused on Int state because it is the sole brain state that had two incoming pathways (i.e. a path from F state and one from V state).
 
@@ -87,7 +87,7 @@ No change in the percept duration was observed when we administered TMS over FEF
 
 Given that no significant behavioural change was induced by longer and stronger TMS (here, 30 min quadripulse TMS)(Hamada et al., 2009; Hamada et al., 2007; Watanabe et al., 2015; Watanabe et al., 2014a) over the same PFC regions (N = 14; F2,13=0.16, p = 0.85 for the main effect in a two-way ANOVA; Figure 4d), these results suggest that the causal behavioural roles of the PFC areas in the bistable visual perception become explicit and measurable only when we intervene in the neural activity in state-/state-history-dependent manners.
 
-## Effects on Energy Landscape Structure
+### Effects on Energy Landscape Structure
 
 These brain-state-dependent behavioural responses imply that the underlying neural mechanisms could be accounted for by brain state dynamics. .
 
@@ -103,7 +103,7 @@ Regarding IFC (Figure 5c), the neural inhibition of the region should alleviate 
 
 For FEF (Figure 5d), its neural suppression should lower the energy barrier from F to Int state (F4,33=32.4, p < 10–3 for the main effect in a two-way ANOVA; t33=25.3, PBonferroni < 0.001, d = 4.4) but induce no significant change in the other barriers (t33 <1.7, PBonferroni > 0.05, d < 0.27).
 
-## Effects on brain state dynamics
+### Effects on brain state dynamics
 
 These structural changes in the energy landscapes indicate how the TMS affected the brain state dynamics (Figure 6a).
 
@@ -125,7 +125,7 @@ In the TMS-over-FEF conditions, the lower F-to-Int barrier was associated with t
 
 These results clarify TMS-induced effects on the brain state dynamics during the bistable visual perception and demonstrate that such neural effects are underpinned by the structural changes in the energy landscapes.
 
-## Temporal decay of neural effects
+### Temporal decay of neural effects
 
 How long did such neural effects continue after each TMS? To answer this question, we tracked the magnitudes of the correlations between the empirical neural effects and the numerically-calculated energy barrier changes (Figure 6b,c,d,e,f) when we were sliding the time window that was used to empirically quantify such neural effects (Figure 7a). This analysis detected that all the correlations began to weaken approximately 1.5 s after each TMS (Figure 7b). This result indicates that the current TMS-induced neural effects started to decay within ~1.5 s after the stimulation, and the brain state dynamics began to return to the original forms in such a time scale.
 
@@ -133,7 +133,7 @@ How long did such neural effects continue after each TMS? To answer this questio
 
 **Figure 7.:** To assess the duration of the TMS-induced neural effects, we examined how the correlations seen in Figure 6 changed when we slided the 4 s time window that was used to measure the neural effects. In all the correlations, the correlation strength (here, the absolute value of the Fisher-transformed correlation coefficient, |z|) began to decay ~1.5 s after the TMS. The X-axis shows the start timing of the 4 s time window (Tstart).
 
-## Neural mechanisms behind behavioural causality
+### Neural mechanisms behind behavioural causality
 
 Finally, we evaluated associations between these behavioural, numerical and neural responses by mediation analysis and found that the causal behavioural effects are induced by transient changes in the brain state dynamics and attributable to structural changes in the energy landscapes (P < 0.05 for all the indirect effects, α×β; Figure 8).
 
@@ -149,7 +149,7 @@ Conversely, the longer percept duration yielded by the Post-V Int-state-dependen
 
 The mediation analysis showed that the state-history-dependent causal roles of IFC were also accountable by the same logic. The longer percept duration yielded by the TMS over IFC during Post-F Int state could be regarded as a behavioural manifestation of the slowdown of the F-Int-V travel due to the more frequent backward Int-to-F transitions, which was originated from the relatively lower Int-to-F energy barrier (Figure 8f). In contrast, the shorter percept duration induced by the TMS over IFC during Post-V Int state can be seen as results of the acceleration of the F-Int-V travel due to the more frequent forward moves from Int to F state, which was induced by the lower Int-to-F energy barrier (Figure 8g).
 
-## Replicability
+### Replicability
 
 The main behavioural findings were replicated in a small but independent cohort (N = 14; t13 >2.9, P < 0.01 in one-sample t-tests; Figure 9). Moreover, another independent experiment (N = 15) showed that, as in our previous work (Watanabe et al., 2015; Watanabe et al., 2014a), the excitatory TMS induced behavioural effects opposite to those yielded by the inhibitory stimulation (t14 >2.8, P < 0.01 in one-sample t-tests; Figure 9b), which added indirect but empirical support for the current observations.
 
@@ -157,7 +157,7 @@ The main behavioural findings were replicated in a small but independent cohort 
 
 **Figure 9.:** (a) All the main behavioural causal responses were replicated in an independent cohort (N = 14). (b) In another independent experiment (N = 15), we administered excitatory TMS over the same PFC regions. The excitatory stimulaton induced behavioural effects opposite to those seen in the inhibitory TMS experiments. Each circle represents each participant. *** and ** indicate P < 0.001 and P < 0.01 in one-sample t-tests (df = 13 for panel a and df = 14 for panel b), respectively. The error bars show the s.e.m.
 
-## Long-term effects
+### Long-term effects
 
 To examine the potential of future clinical applications of this brain-state-dependent neural stimulation system, we conducted another two-month longitudinal experiment (N = 63) and found accumulative effects of this closed-loop TMS system. Despite its weak power—approximately 78 % of the power of the similar TMS protocol (Watanabe et al., 2015; Watanabe et al., 2014a)—, the behavioural effects became larger along with the weekly TMS sessions (t12 >3.2, PBonferroni < 0.05 in paired t-tests; Figure 10a). Moreover, the F-state-dependent TMS affected the baseline perceptual stability, which was detectable even one week after the 2-month TMS experiments (F6,12=16.4, P < 10–3 for the main effect in a two-way ANOVA; PBonferroni < 0.01 in post-hoc one-sample t-tests; Figure 10b).
 
@@ -195,7 +195,7 @@ This study has resolved the long-lasting controversy over prefrontal causal role
 
 ## Materials and methods
 
-## Overall study design
+### Overall study design
 
 This study consisted of seven experiments and one numerical simulation (Figure 11).
 
@@ -213,7 +213,7 @@ The other 15 individuals participated in a validation experiment that examined w
 
 The 63 individuals who completed either of these experiments participated in a longitudinal experiment, which evaluated the accumulative effects of the current neural stimulation method.
 
-## Participants and ethics
+### Participants and ethics
 
 All the 65 participants were right-handed adults (Edinburgh Handedness Inventory laterality score = 75 ± 16, mean ± sd). None of them had neurological, psychiatric or other medical history and was free from any contraindication to TMS experiments (Wassermann, 1998).
 
@@ -221,7 +221,7 @@ Except for the control experiments and 30 min QPS experiment, all the experiment
 
 This study was approved by Institutional Ethics Committees in RIKEN and The University of Tokyo (20-132). The TMS protocols used here complied with the guideline issued by the Japanese Society for Clinical Neurophysiology and that by International Federation of Clinical Neurophysiology (Rossi et al., 2009). All the participants provided written informed consents before any experiment and were financially compensated for their participation.
 
-## Device setup: test of bistable visual perception
+### Device setup: test of bistable visual perception
 
 The test design of bistable visual perception paradigm in this study is essentially the same as that used in our previous work (Watanabe et al., 2014c; Watanabe et al., 2019a). The participants were presented with a structure-from-motion (SFM) stimulus (Figure 1a), a sphere consisting of 200 sinusoidally moving white dots in a black background (angular velocity, 120°/s) with a fixation cross (0.1° × 0.1°) at the centre of the 27-inch LCD monitor (BenQ PD2710, resolution: 2560 × 1440).
 
@@ -229,7 +229,7 @@ In each run, the participants were instructed to see the SFM stimulus for 90 s w
 
 The proportion of the mixture perception was sufficiently small in all the participants, all the experiments (1.4% ± 0.5% of all stimulus presentation times, mean ± sd). Thus, we focused on the time during which participants were clearly aware of the direction of the rotation. For each participant, we measured the duration of the clear perception and calculated the median of the duration to evaluate their perceptual stability. The median duration was adopted because the perceptual durations showed long-tailed distributions.
 
-## Device setup: EEG
+### Device setup: EEG
 
 Throughout entire this study, we recorded EEG signals from seven regions of interest (ROIs) to monitor brain state transitions using a TruScan Research EEG system with 32 TMS compatible Ag/AgCl ring electrodes (Deymed Diagnostic, Czech Republic).
 
@@ -243,7 +243,7 @@ Using a stereoscopic neuro-navigation system (Brainsight Neuronavigation, Rogue 
 
 After confirming that the impedance was less than 5 kΩ in all the electrodes, we recorded the EEG signals with a 32-channel amplifier (TruScan EEG LT 32ch Headbox, Deymed Diagnostic; 6 kHz of analogue sampling frequency), in which the signals underwent low-pass filtering (cut-off frequency: 1.25 kHz) and were down-sampled to 3 kHz at almost simultaneously (latency <5 ms).
 
-## Device setup: TMS
+### Device setup: TMS
 
 To deliver both inhibitory and excitatory stimulation, we used a quadripulse TMS system that can deliver a train of four monophasic magnetic pulses at once from interconnected four magnetic stimulators (70mm-diameter double coil, DuoMag MP, DeyMed Diagnostic, Czech Republic).
 
@@ -259,11 +259,11 @@ The mean AMT across the entire participant cohort in the three types of the curr
 
 In one TMS condition, we placed the TMS coil over one of the PFC areas in the same method using the stereoscopic neuro-navigation system (Brainsight Neuronavigation, Rogue Research, UK). We confirmed that the coil did not substantially move throughout the experiment by re-measing the location with the neuro-navigation system at the end of each experiment day. The green circles in Figure 4a show such end-of-the-day locations averaged across the four-day sessions in the main experiment.
 
-## EEG analysis
+### EEG analysis
 
 In this study, we analysed the EEG data in both offline and online manners. We described the details of the two types of EEG analysis in the following sections.
 
-## Offline EEG analysis: preprocessing
+### Offline EEG analysis: preprocessing
 
 The offline EEG analysis was applied to data obtained in the control experiment. We conducted the following conventional preprocessing (Watanabe et al., 2019b) to the EEG data using MATLAB (MathWorks, US) and EEGLAB (Delorme and Makeig, 2004). Note that we used no behavioural response, such as the timing of perceptual switch, in the following preprocessing procedure and energy landscape analysis.
 
@@ -273,31 +273,31 @@ Next, we marked epochs whose mean global field power was too large ( > 5 SD of m
 
 We used the Hilbert envelope amplitude for the gamma band as a neural signal for each electrode, because the aim of the current EEG recording was to trace the brain state dynamics that was seen in our previous fMRI study (Watanabe et al., 2014c) and the gamma-band signal dynamics were correlated with fMRI signals (Deligianni et al., 2014; Watanabe et al., 2019b). Finally, after removing autocorrelation, we calculated a Hjorth signal for each ROI in the following sum-of-difference manner (Hjorth, 1970): Hjorth signal for ROIi = (electrode just above ROIi – surrounding electrode 1) + (electrode just above ROIi – surrounding electrode 2) + (electrode just above ROIi – surrounding electrode 1).
 
-## Offline EEG analysis: fitting of pairwise maximum entropy model
+### Offline EEG analysis: fitting of pairwise maximum entropy model
 
-We then conducted the energy landscape analysis (Ezaki et al., 2017; Gu et al., 2018; Kang et al., 2017; Watanabe et al., 2014c; Watanabe and Rees, 2017) of the preprocessed datasets of the seven ROIs. For each participant, the EEG signals were concatenated across different runs. Then, as in our previous fMRI work on the brain dynamics (Ezaki et al., 2017; Watanabe et al., 2014c; Watanabe et al., 2014b; Watanabe and Rees, 2017), we binarised each ROI time-series data using the temporal average of the signals as the thresholds. After this operation, a neural activity pattern of the seven ROIs at time t was described such as Vt=σ1t,σ2t,…,σNt , where σit represents a binary activity of ROIi at time t (i.e. σit=+1∨-1) and N denotes the number of the ROIs (here, N = 7).
+We then conducted the energy landscape analysis (Ezaki et al., 2017; Gu et al., 2018; Kang et al., 2017; Watanabe et al., 2014c; Watanabe and Rees, 2017) of the preprocessed datasets of the seven ROIs. For each participant, the EEG signals were concatenated across different runs. Then, as in our previous fMRI work on the brain dynamics (Ezaki et al., 2017; Watanabe et al., 2014c; Watanabe et al., 2014b; Watanabe and Rees, 2017), we binarised each ROI time-series data using the temporal average of the signals as the thresholds. After this operation, a neural activity pattern of the seven ROIs at time t was described such as $V^{t}=\sigma_{1}^{t},\sigma_{2}^{t},…,\sigma_{N}^{t}$ , where $\sigma_{i}^{t}$ represents a binary activity of ROIi at time t (i.e. $\sigma_{i}^{t}=+1∨-1$) and N denotes the number of the ROIs (here, N = 7).
 
-## Fitting a pairwise maximum entropy model
+### Fitting a pairwise maximum entropy model
 
-The first goal of the energy landscape analysis is to calculate a hypothetical energy value for each neural activity pattern Vk1≤k≤2N,N=7 . The energy value is not related to metabolic consumption but an index that shows the stability of each state: the more stable and more frequent neural activity pattern should have the lower energy value.
+The first goal of the energy landscape analysis is to calculate a hypothetical energy value for each neural activity pattern $V_{k}1\leqk\leq2^{N},N=7$ . The energy value is not related to metabolic consumption but an index that shows the stability of each state: the more stable and more frequent neural activity pattern should have the lower energy value.
 
-To this end, we fitted a pairwise maximum entropy model (MEM) to the seven binary time-series signals (Watanabe et al., 2014c; Watanabe and Rees, 2017). We adopted this model because of its simplicity. It consists of two types of parameters: hi and Jij . The hi represents the basal activity of ROIi and Jij indicates a pairwise interaction between ROIi and ROIj. In terms of neurobiology, this model simply assumes that different brain regions have different intrinsic activity hi and different pairs of brain areas have different coupling strengths Jij .
+To this end, we fitted a pairwise maximum entropy model (MEM) to the seven binary time-series signals (Watanabe et al., 2014c; Watanabe and Rees, 2017). We adopted this model because of its simplicity. It consists of two types of parameters: $h_{i}$ and $J_{ij}$ . The hi represents the basal activity of ROIi and $J_{ij}$ indicates a pairwise interaction between ROIi and ROIj. In terms of neurobiology, this model simply assumes that different brain regions have different intrinsic activity $h_{i}$ and different pairs of brain areas have different coupling strengths $J_{ij}$ .
 
-Now, how do we determine the two parameters? In the energy landscape analysis, we determine hi and Jij so that the model-based ROI average activity σim and model-based average pairwise interactions σiσjm is sufficiently close to the average ROI activity ⟨σi⟩ and average pairwise interaction ⟨σiσj⟩. We calculated the model-based mean ROI activity σim=Σl=12NσiVlPVl and model-based mean pairwise interaction σiσjm=Σl=12NσiVlσjVlPVl, where σiVk is the binary activity of ROIi in the activity pattern Vk and PVk is the appearance probability of an neural activity pattern Vk .
+Now, how do we determine the two parameters? In the energy landscape analysis, we determine $h_{i}$ and $J_{ij}$ so that the model-based ROI average activity $\sigma_{i}_{m}$ and model-based average pairwise interactions $\sigma_{i}\sigma_{j}_{m}$ is sufficiently close to the average ROI activity $⟨\sigma_{i}⟩$ and average pairwise interaction $⟨\sigma_{i}\sigma_{j}⟩$. We calculated the model-based mean ROI activity $\sigma_{i}_{m}=Σ_{l=1}^{2^{N}}\sigma_{i}V_{l}PV_{l}$ and model-based mean pairwise interaction $\sigma_{i}\sigma_{j}_{m}=Σ_{l=1}^{2^{N}}\sigma_{i}V_{l}\sigma_{j}V_{l}PV_{l}$, where $\sigma_{i}V_{k}$ is the binary activity of ROIi in the activity pattern Vk and $PV_{k}$ is the appearance probability of an neural activity pattern $V_{k}$ .
 
-This appearance probability is given as PVk=e-EVk/Σl=12Ne-EVl, where EVk=-Σi=1NhiσiVk-1/2Σi=1NΣj=1NJijσiVkσjVk. This formulation of PVk is determined by the principle of maximum entropy. That is, the information entropy of PVk is maximised by making the PVk obey Boltzmann distribution. In other words, to maximise the information entropy of PVk and minimise any possible constraints, we set the PVk in the form of Boltzmann distribution.
+This appearance probability is given as $PV_{k}=e^{-EV_{k}}/Σ_{l=1}^{2^{N}}e^{-EV_{l}}$, where $EV_{k}=-Σ_{i=1}^{N}h_{i}\sigma_{i}V_{k}-1/2Σ_{i=1}^{N}Σ_{j=1}^{N}J_{ij}\sigma_{i}V_{k}\sigma_{j}V_{k}.$ This formulation of $PV_{k}$ is determined by the principle of maximum entropy. That is, the information entropy of $PV_{k}$ is maximised by making the $PV_{k}$ obey Boltzmann distribution. In other words, to maximise the information entropy of $PV_{k}$ and minimise any possible constraints, we set the $PV_{k}$ in the form of Boltzmann distribution.
 
-Based on this definition, we adjusted hi and Jij until these the ⟨σi⟩m and ⟨σiσj⟩m were approximately equal to the empirically obtained ⟨σi⟩ and ⟨σiσj⟩ using a gradient ascent algorithm.
+Based on this definition, we adjusted hi and Jij until these the $⟨\sigma_{i}⟩_{m}$ and $⟨\sigma_{i}\sigma_{j}⟩_{m}$ were approximately equal to the empirically obtained $⟨\sigma_{i}⟩$ and $⟨\sigma_{i}\sigma_{j}⟩$ using a gradient ascent algorithm.
 
 The accuracy of this MEM fitting was examined by estimating a Pearson correlation coefficient between the model-based appearance probability and empirically obtained appearance probability and calculating a proportion of Kullback-Leibler (KL) divergence in this second-order model (D2) to that in the first-order model (D1) as follows Watanabe et al., 2014c; Watanabe et al., 2013; Watanabe and Rees, 2017: (D1 – D2)/D1. In the control experiment, the Pearson correlation was larger than 0.95 and the KL-divergence-based accuracy was larger than 84 % (Figure 2a).
 
-## Offline EEG analysis: disconnectivity graph in energy landscape analysis
+### Offline EEG analysis: disconnectivity graph in energy landscape analysis
 
 Next, we built an energy landscape and searched for major brain states. The energy landscape was defined as a network of brain activity patterns Vk (k = 1, 2, …, 2 N) with their energy E(Vk), in which two activity patterns were regarded as adjacent if and only if they took the opposite binary activity at a single ROI. We then searched for local energy minima, whose energy values were smaller than those of all the N adjacent patterns.
 
 We then examined hierarchal structures between the local minima by building disconnectivity graphs as follows Watanabe et al., 2014c; Watanabe and Rees, 2017: (i) first, we prepared a so-called hypercube graph, in which each node representing a brain activity pattern was adjacent to the N neighbouring nodes. (ii) Next, we set a threshold energy level, Ethreshold, at the largest energy value among the 2 N nodes. (iii) We then removed the nodes whose energy values were≥ Ethreshold. (iv) We examined whether each pair of local minima was connected by a path in the reduced network. (v) We repeated steps (iii) and (iv) after moving Ethreshold down to the next largest energy value. We ended up with a reduced network in which each local min was isolated. (vi) Based on the obtained results, we built a hierarchical tree whose leaves (i.e., terminal nodes down in the tree) represented the local minima and internal nodes indicated the branching points of different local minima.
 
-## Offline EEG analysis: structure of energy landscape
+### Offline EEG analysis: structure of energy landscape
 
 Based on this dysconnectivity graph, we then estimated basin sizes of the local minima as follows. We first chose a node i from the 2 N nodes. If any of its neighbour nodes had a smaller energy value than the node i, we moved to the neighbour node with the smallest energy value. Otherwise, we did not move, indicating that the node was a local min. We repeated this protocol until we reached a local min. The initial node i was then assigned to the basin of the local min that was finally reached. This classification procedure was repeated for all the 2 N nodes. The basin size was defined as the fraction of the number of the nodes belonging to the basin.
 
@@ -309,19 +309,19 @@ Through this coarse-graining procedure, we defined the three major brain states 
 
 Note that a ‘brain state’ in this study is not a so-called ‘miscrostate’ in conventional EEG research; it indicates an activity pattern of multiple (here, seven) brain regions or a group of such activity patterns. Although other analyses, such as hidden Markov model (HMM), can also identify brain states (Baker et al., 2014; Ezaki et al., 2021; Miller and Katz, 2010; Vidaurre et al., 2018), we adopted the energy landscape analysis in this study because it was previously used to identify the brain states underpinning the bistable visual perception (Watanabe et al., 2014c).
 
-## Offline EEG analysis: simulation of brain state dynamics
+### Offline EEG analysis: simulation of brain state dynamics
 
 In the final part of the energy landscape analysis, we probed the brain state dynamics by a random-walk simulation on the energy landscape (Watanabe et al., 2014c; Watanabe and Rees, 2017). This simulation was performed based on a Markov chain Monte Carlo method with the Metropolis-Hastings algorithm (Girvan and Newman, 2002; Massen and Doye, 2005).
 
-In this simulation, any brain activity pattern Vi could move only to a neighbouring pattern Vj. In other words, this simulation allowed the brain activity pattern to change the activity of only one ROI. Technically, first, one of such neighbouring patterns was randomly chosen. Then, whether actual movement occurred or not was determined at the probability Pij=min⁡1,eEVi-EVj . That is, if the Vi was more unstable than Vj (i.e. EVi§amp;gt;EVj), the brain activity pattern should always move from Vi to Vj. This rule enhanced the movement to local minima. In the meantime, even if the Vi was more stable than Vj (i.e., EVi§amp;lt;EVj), there was some room to move to Vj, which prevented the brain activity pattern from being trapped in a local minimum forever.
+In this simulation, any brain activity pattern Vi could move only to a neighbouring pattern Vj. In other words, this simulation allowed the brain activity pattern to change the activity of only one ROI. Technically, first, one of such neighbouring patterns was randomly chosen. Then, whether actual movement occurred or not was determined at the probability $P_{ij}=min⁡1,e^{EV_{i}-EV_{j}}$ . That is, if the Vi was more unstable than Vj (i.e. $EV_{i}§amp;gt;EV_{j}$), the brain activity pattern should always move from Vi to Vj. This rule enhanced the movement to local minima. In the meantime, even if the Vi was more stable than Vj (i.e., $EV_{i}§amp;lt;EV_{j}$), there was some room to move to Vj, which prevented the brain activity pattern from being trapped in a local minimum forever.
 
-For each individual, we repeated this random walk 105 steps with a randomly chosen initial pattern and obtained a trajectory of the brain activity pattern such as V1,V2,…,V105 . After discarding the first 100 steps to minimise the influence of the initial condition, we then classified all the Vt into either of the major brain states (i.e. Frontal, Visual, and Intermediate state) and converted V101,V102,…,V105 to, for example, [Frontal, Frontal, Intermediate, …., Visual]. Finally, we counted how long each of the major brain states continued in the brain state trajectory (dwelling time) and how often one major brain state transited to another major state (transition frequency).
+For each individual, we repeated this random walk 105 steps with a randomly chosen initial pattern and obtained a trajectory of the brain activity pattern such as $V^{1},V^{2},…,V^{10^{5}}$ . After discarding the first 100 steps to minimise the influence of the initial condition, we then classified all the $V^{t}$ into either of the major brain states (i.e. Frontal, Visual, and Intermediate state) and converted $V^{101},V^{102},…,V^{10^{5}}$ to, for example, [Frontal, Frontal, Intermediate, …., Visual]. Finally, we counted how long each of the major brain states continued in the brain state trajectory (dwelling time) and how often one major brain state transited to another major state (transition frequency).
 
 Our previous work demonstrated a strong correlation between the percept duration and the length of return travel between Frontal state and Visual state via Intermediate state (Watanabe et al., 2014c). Given this, we compared the behaviourally observed percept duration to the length of the F–Int–V–Int–F travel that was calculated in the above random-walk simulation.
 
-## Offline EEG analysis: temporal smoothing
+### Offline EEG analysis: temporal smoothing
 
-In parallel with the random-walk simulation, we examined empirical brain state dynamics probing the binary neural vectors with seven elements, Vt . For this purpose, we first categorised all Vt into either of the three major brain states based on the classification information that was obtained in the above ‘Offline EEG analysis: structure of energy landscape’ section. The vectors that were not classified into any of the three major brain states were labelled as ‘Other state’.
+In parallel with the random-walk simulation, we examined empirical brain state dynamics probing the binary neural vectors with seven elements, $V^{t}$ . For this purpose, we first categorised all $V^{t}$ into either of the three major brain states based on the classification information that was obtained in the above ‘Offline EEG analysis: structure of energy landscape’ section. The vectors that were not classified into any of the three major brain states were labelled as ‘Other state’.
 
 To reduce the effects of signal fluctuation, we then applied the following temporal smoothing to the time-series of the brain states. First, in a sliding window manner (window length = 10 ms), we calculated the appearance frequency for each brain state in the time window (Figure 13a), which was assigned to each centre time point in the window as the representative appearance frequency for each brain state (Figure 13b). Next, a Gaussian smoothing filter (FWHM = 10 ms) was applied to the representative appearance frequency curves (Figure 13c). Based on the resultant appearance frequency values, we chose the most frequent brain state and assigned it as the brain state at the time point (Figure 13d and e). Note that this temporal smoothing eliminated the ‘other state’.
 
@@ -331,7 +331,7 @@ To reduce the effects of signal fluctuation, we then applied the following tempo
 
 This empirical brain state dynamics would be used to evaluate the accuracy of the following online EEG analysis.
 
-## Online EEG analysis: preprocessing
+### Online EEG analysis: preprocessing
 
 The Online EEG analysis was conducted in all the state-dependent TMS experiments, and its protocol was conceptually the same as that in the previous studies (Chen et al., 2013; Schaworonkow et al., 2019; Stefanou et al., 2018; Zrenner et al., 2018). The preprocessed EEG signals ( < 1.25 kHz and 3kHz-downsampled) were input to the real-time target PC machine through a DAQ board (sampling rate, 2 kHz), in which Simulink Real-Time model and xPC Target in Simulink (MathWorks, US) were running to analyse the EEG signals and trigger the TMS system via a TTL signal. We set the analysis model in the target PC through an Ethernet-connected host PC prior to the experiments for each participant.
 
@@ -345,11 +345,11 @@ Using the remaining 800 ms of the neural signals, we then conducted an autoregre
 
 We obtained such 280 msec time-series signal for each ROI and used them in the following analysis.
 
-## Online EEG analysis: binarisation
+### Online EEG analysis: binarisation
 
 We then conducted online binarisation of the neural signals during the predicted time period. The binarisation threshold was calculated for each ROI based on the EEG data obtained in a control run that was conducted right before every TMS experiment. Technically, we applied the above-stated "Online EEG analysis: preprocessing" procedure to the EEG data during the control run and calculated the average of the Hilbert envelop amplitude for each ROI in each participant.
 
-## Online EEG analysis: brain-state-/history-dependent TMS
+### Online EEG analysis: brain-state-/history-dependent TMS
 
 These preprocessing and binarisation processes yielded a binary neural vector with seven elements ( + 1 or –1) at each time point in the 280 ms period (from T = –100 to T = 180). We then categorised the binary neural vectors into either of the three major brain states based on the classification information that was obtained in the offline energy landscape analysis in the control experiment. The binary neural vectors that were not categorised into any of the three major brain states were labelled as ‘Other state’.
 
@@ -369,21 +369,21 @@ For the neural-history-specific TMS, we looked into both the forthcoming period 
 
 Note that, for both the brain-state-/history-specific stimulation, once a TMS was administered, we did not conduct the next stimulation until at least 9 s passed. Such an interval gave the current brain-state-dependent TMS system a sufficient length of clean EEG data before the next TMS.
 
-## Experiment design and statistics
+### Experiment design and statistics
 
 In the above sections, we stated all the essential device setups and analysis procedures. In the following sections, we elaborated on the actual designs of the experiments using such devices and analyses protocols.
 
-## Control experiments
+### Control experiments
 
 The control experiment consisted of two parts: EEG part and EEG/TMS part. The Control Experiment I was conducted to (i) identify the brain state dynamics in the offline EEG analysis and (ii) validate the locations of the EEG electrodes, whereas Control Experiment II was performed to (iii) verify the accuracy of the online EEG analysis and brain-state-dependent TMS system. Both the parts employed the same 65 individuals and were performed at least two-day intervals.
 
-## Control experiment I: EEG part (day 1)
+### Control experiment I: EEG part (day 1)
 
 In the Control Experiment I, we collected EEG signals while the participants were conducting the test of bistable visual perception (1.5 min/run × 10 runs). The participants started this EEG recording sessions after sufficient training of the test.
 
 For the aim (i), we applied the offline energy landscape analysis to the EEG data and examined whether the brain dynamics seen in our previous fMRI study (Watanabe et al., 2014c) were qualitatively reproduced in the current EEG experiment. This analysis was conducted for the aim (ii) as well: if we successfully confirmed the reproducibility, such observations would provide face validation to the locations of the EEG electrodes. The details of this offline energy landscape were stated above (see ‘Offline EEG analysis’ sections).
 
-## Control experiment II: EEG/TMS part (Day 2)
+### Control experiment II: EEG/TMS part (Day 2)
 
 In the Control Experiment II, the participants underwent test of bistable visual perception (1.5 min/run × 11 runs) with the brain-state-dependent TMS system, which was almost the same as stated in the sections (see ‘Device setup: TMS’ and ‘Online EEG analysis’) except for the locations of the TMS coil and an EEG electrode. We placed one of the 32 TMS-compatible Ag/AgCl ring electrodes—which was located on A1 in the original setting—on a wooden table that was set remotely from the participants. The TMS coil was placed over the electrode. Using the signal from this electrode, we measured when each TMS stimulation was conducted without causing significant artefacts on the EEG data.
 
@@ -399,7 +399,7 @@ In sum, these two types of EEG analysis gave us two time-series vectors represen
 
 In parallel, we examined the temporal accuracy of the TMS. The brain-state-dependent TMS system was designed to administer a TMS train 25 ms after a specific brain state was detected in the EEG signals. Using the signal from the EEG electrode that was placed on the wooden table and covered by the TMS coil, we measured the actual latency from the brain-state detection to the TMS stimulation and calculated the difference between the empirical latency and the presumed time-lag (i.e. 25 ms). We repeated this estimation for all the five temporal conditions in each participant.
 
-## Main experiment: design
+### Main experiment: design
 
 In the main experiment, we examined causal behavioural effects of state-/state-history-dependent TMS on the median percept duration in a test of SFM-induced bistable visual perception. The participants underwent TMS over three different brain sites (DLPFC, IFC and FEF) in five different neural timings (F-. V-, Int-, Post-F Int- and Post-V Int-state-dependent TMS). In addition, we conducted an experiment using sham stimulation, in which mock TMS was applied over one of the three PFC sites. The choice of the target site in the sham condition was randomised and balanced across the participants.
 
@@ -409,31 +409,31 @@ These experiments were conducted on four different days with more than one-week 
 
 **Figure 16.:** For each participant, the experiment was conducted over four different days with> one week intervals. On each day, they received TMS/sham over one of the three PFC days in five different timings. The stimulation site for the sham condition was randomly chosen from the three PFC areas and balanced across the participants.
 
-## Main experiment: behavioural and neural analysis
+### Main experiment: behavioural and neural analysis
 
 Behaviourally, we calculated the median percept duration for each TMS condition and control session. The behavioural effects of the TMS were evaluated as the ratio of the median percept duration in the TMS conditions to that in the control runs conducted at the beginning of the entire main experiment.
 
 Neurobiologically, we examined TMS’s effects on the brain state dynamics. Using the results of the online EEG analysis, we evaluated the dwelling time lengths for the three major brain states and transition frequencies between them after each TMS administration. To reduce the artefacts induced by the TMS, we discarded EEG signals recorded between the beginning of the TMS (T = 25 ms) and 100 ms after the end of the TMS (T = 175 ms + 100 ms = 275 ms) and analysed the data in the first 4 s time window in the remaining data (i.e. the period from T = 275 ms to T = 4275 ms).
 
-## Main experiment: numerical simulation of TMS effects on energy landscape
+### Main experiment: numerical simulation of TMS effects on energy landscape
 
 To investigate the neurobiological changes in the brain state dynamics, we also numerically examined how the inhibitory TMS affected the structures of the individual energy landscape, such as the height of the energy barrier.
 
-This simulation was conducted based on the Hi and Jij that were obtained in the offline energy landscape analysis using the EEG data recorded during the control experiment. If ROIi was the target site of the inhibitory TMS, we removed all the binary neural vectors Vt whose element i, σi , was set at +1 (i.e. active). Then, using the same Hi and Jij , we built the disconnectivity graph (see ‘Offline EEG analysis: disconnectivity graph in energy landscape analysis’) and estimated the structural properties of the energy landscape (see ‘Offline EEG analysis: structure of energy landscape’). When the local minimum that represented any of the major brain states was removed in this simulation, we alternatively used the brain state that included the neighbouring neural vector as the major brain state. The neighbouring neural vector was defined as a vector that was different from the vector for the local minimum only in one element. In such numerical simulation, all the three major brain states were preserved whichever PFC site was inhibited.
+This simulation was conducted based on the $H_{i}$ and $J_{ij}$ that were obtained in the offline energy landscape analysis using the EEG data recorded during the control experiment. If ROIi was the target site of the inhibitory TMS, we removed all the binary neural vectors $V^{t}$ whose element i, $\sigma_{i}$ , was set at +1 (i.e. active). Then, using the same $H_{i}$ and $J_{ij}$ , we built the disconnectivity graph (see ‘Offline EEG analysis: disconnectivity graph in energy landscape analysis’) and estimated the structural properties of the energy landscape (see ‘Offline EEG analysis: structure of energy landscape’). When the local minimum that represented any of the major brain states was removed in this simulation, we alternatively used the brain state that included the neighbouring neural vector as the major brain state. The neighbouring neural vector was defined as a vector that was different from the vector for the local minimum only in one element. In such numerical simulation, all the three major brain states were preserved whichever PFC site was inhibited.
 
-## Main experiment: comparison between the numerical simulation, neural effects and behavioural causality
+### Main experiment: comparison between the numerical simulation, neural effects and behavioural causality
 
 We compared the results of the numerical simulation, changes in the brain state dynamics and causal behavioural effects. First, we built hypotheses about the changes in the brain state dynamics based on the numerical simulation and tested them by comparing the results of the numerical simulation with the effects on the brain state dynamics. After confirming the validity of the hypotheses, we examined the relationship between the energy landscape changes, effects on the brain state dynamics and causal behavioural responses using the mediation analysis.
 
-## Replication experiment
+### Replication experiment
 
 We examined the replicability of the findings of the main experiments by repeating the main experiment with focusing on the seven conditions that yielded significant behavioural effects. This experiment employed a small but independent cohort (originally N = 15; N = 14 after one participant dropped out).
 
-## Validation experiment with excitatory TMS
+### Validation experiment with excitatory TMS
 
 We also examined the validity of the main findings in experiments using the excitatory TMS (see details on the TMS protocol in ‘Device setup: TMS’ section). As shown in our previous work (Watanabe et al., 2015; Watanabe et al., 2014a), the excitatory TMS was expected to induce behavioural and neural effects opposite to those yielded by the inhibitory TMS. To test this, we repeated the main experiment using the excitatory TMS with an independent cohort (N = 15). Like the replication experiment, we focused on the seven TMS conditions that induced significant behavioural changes in the main experiment.
 
-## Conventional quadripulse TMS experiment
+### Conventional quadripulse TMS experiment
 
 For comparison, we examined the behavioural effects of conventional 30 min inhibitory quadripulse TMS (QPS) by employing the 14 individuals who completed the replication experiment at least 1 month before.
 
@@ -441,7 +441,7 @@ In this experiment, we adopted the inhibitory QPS protocols that were used in ou
 
 In each day, the participants first completed the six control runs of bistable visual perception tests and then underwent the 30 min TMS session over one of the three PFC sites. In the sham condition, the TMS coil was placed over one of the three PFC areas, which was randomly chosen and balanced across the participants. During the TMS session, they were asked to rest with their eyes open. Ten minutes after the end of the TMS, they took the six runs of the bistable visual perception tests.
 
-## Longitudinal experiment
+### Longitudinal experiment
 
 We investigated accumulative effects of the brain-sate-/history-specific TMS by a longitudinal TMS experiment that employed the 63 participants who completed the main, replication or validation experiment.
 
@@ -455,7 +455,7 @@ For each day, we analysed the behavioural effects of the state-/state-history-de
 
 In the last week (week 9), the participants underwent the control sessions only. Such baseline responses were used to evaluate whether the two-month weekly TMS affected the baseline perceptual stability.
 
-## Validation of the specificity of the EEG recording
+### Validation of the specificity of the EEG recording
 
 We examined whether the current EEG system had sufficient specificity to distinguish between the neighbouring prefrontal activities (i.e. the DLPFC activity and IFC activity).
 
@@ -473,7 +473,7 @@ In fact, when we administered TMS over DLPFC, the DLPFC signal showed a signific
 
 In sum, these two analyses indicate sufficient spatial sensitivity and specificity in the current EEG system.
 
-## Effects of microsaccade on EEG Recording
+### Effects of microsaccade on EEG Recording
 
 In the current study, we adopted a derivation method (i.e. Hjorth signal calculation) (Keren et al., 2010; Pulvermüller et al., 1997; Trujillo et al., 2005; Zion-Golumbic et al., 2010) and independent component analysis (ICA) (Hassler et al., 2011; Jung et al., 2000; Lee et al., 1999) to reduce the artefacts of microsaccades on gamma-band EEG signals (Yuval-Greenberg et al., 2008). We confirmed the effectiveness of these signal processing procedures in an additional EEG experiment employing 30 healthy individuals (age = 25.1 ± 2.1; female = 11).
 
@@ -491,6 +491,6 @@ As a result, we found that both the derivation method and ICA reduced the micros
 
 The ICA was effective as well. The procedure reduced the signal increase induced by a microsaccade (Figure 18d) in all the ROIs (p > 0.05 in one-sample t-tests; Figure 18e).
 
-## Statistics
+### Statistics
 
 In the case of multiple comparisons, basically, we conducted a two-way ANOVA (participant× condition) and post-hoc t-tests with Bonferroni correction.

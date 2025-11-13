@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.28468.001 The diversity of life on Earth is a result of continual innovations in molecular networks influencing morphology and physiology. Plant specialized metabolism produces hundreds of thousands of compounds, offering striking examples of these innovations. To understand how this novelty is generated, we investigated the evolution of the Solanaceae family-specific, trichome-localized acylsugar biosynthetic pathway using a combination of mass spectrometry, RNA-seq, enzyme assays, RNAi and phylogenomics in different non-model species. Our results reveal hundreds of acylsugars produced across the Solanaceae family and even within a single plant, built on simple sugar cores. The relatively short biosynthetic pathway experienced repeated cycles of innovation over the last 100 million years that include gene duplication and divergence, gene loss, evolution of substrate preference and promiscuity. This study provides mechanistic insights into the emergence of plant chemical novelty, and offers a template for investigating the ~300,000 non-model plant species that remain underexplored.
+The diversity of life on Earth is a result of continual innovations in molecular networks influencing morphology and physiology. Plant specialized metabolism produces hundreds of thousands of compounds, offering striking examples of these innovations. To understand how this novelty is generated, we investigated the evolution of the Solanaceae family-specific, trichome-localized acylsugar biosynthetic pathway using a combination of mass spectrometry, RNA-seq, enzyme assays, RNAi and phylogenomics in different non-model species. Our results reveal hundreds of acylsugars produced across the Solanaceae family and even within a single plant, built on simple sugar cores. The relatively short biosynthetic pathway experienced repeated cycles of innovation over the last 100 million years that include gene duplication and divergence, gene loss, evolution of substrate preference and promiscuity. This study provides mechanistic insights into the emergence of plant chemical novelty, and offers a template for investigating the ~300,000 non-model plant species that remain underexplored.
 
 ## Introduction
 
@@ -28,13 +28,41 @@ Previous studies investigating the emergence of lineage-specific metabolite clas
 
 Acylsugars are lineage-specific plant specialized metabolites detected in multiple genera of the Solanaceae family including Solanum (King et al., 1990; Schilmiller et al., 2010; Ghosh et al., 2014), Petunia (Kroumova and Wagner, 2003; Liu et al., 2017), Datura (Forkner and Hare, 2000) and Nicotiana (Kroumova and Wagner, 2003; Kroumova et al., 2016). These compounds, produced in the tip cell of trichomes on leaf and stem surfaces (Schilmiller et al., 2012; 2015; Ning et al., 2015; Fan et al., 2016a), typically consist of a sucrose or glucose core esterified to groups derived from fatty acid or branched chain amino acid metabolism (Figure 1A). Despite these simple building blocks, the combinations of the sugar cores and the different acyl chains can generate diverse structures. For example, ~81 acylsugars were detected across just two accessions of the wild tomato Solanum habrochaites (Ghosh et al., 2014). Multiple studies performed under controlled lab settings (Puterka et al., 2003; Simmons et al., 2004; Leckie et al., 2016; Luu et al., 2017) or in the wild (Weinhold and Baldwin, 2011) demonstrated that acylsugars mediate plant-insect and plant-fungus interactions, and hence acylsugar production has been a target for tomato breeding efforts (Rodríguez-López et al., 2012; Smeda et al., 2016). Under lab conditions, the diversity of acyl chains and the sugar cores has been shown to be functionally important in deterring insects such as spider mites, thrips and whiteflies (Puterka et al., 2003; Leckie et al., 2016). In ecological settings, ants living near Datura wrightii plants that produced hexanoic acid-containing acylsugars were significantly more attracted to the smell of hexanoic acid, compared to ants growing near Nicotiana attenuata whose acylsugars lacked hexanoic acid (Weinhold and Baldwin, 2011). This suggests that acyl chain diversity may be of functional consequence in the wild. However, the contribution of the large number of acylsugar structural variants in plant-insect and plant-microbe interactions is still an open question.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig1-v2.jpg)
+
+**Figure 1.:** (A) An example acylsugar from tomato. The nomenclature of acylsugars and the ASAT enzymes responsible for acylation of specific positions are described. Carbon numbering is shown in red. Sl refers to S. lycopersicum. The phylogenetic position of the ASAT enzymes is shown in Figure 1—figure supplement 1. (B) Species sampled for acylsugar extractions. Phylogeny is based on the maximum likelihood tree of 1075 species (Särkinen et al., 2013). Species with black squares show presence of acylsugars in mass spectrometry. Species highlighted in blue were cultivated for RNA-seq. Species in red are Convolvulaceae species. Species in pink were not sampled in this study but have been extensively studied in the context of acylsugar biosynthesis (see main text). More information about these species sampled at the NYBG is provided in Figure 1—source data 1,2. (C,D and E): Individual acylsugars from three representative species. Color scale ranges from no acylsugar (white) to maximum relative intensity in that species (orange). Peak areas of isomeric acylsugars were combined. S. nigrum produced acylsugars consistent with a hexose (H) core. Acylsugars identified from other species are described in Figure 1—figure supplements 2 and 3, and the raw peak intensity values obtained from different species are provided in Figure 1—source data 2,3. Figure 1—figure supplement 4 shows fragmentation patterns of select acylsugars under positive ionization mode. (F) Shannon Entropy as a function of number of peaks identified. Red dots represent acylsugar producing species. Parameters used for Shannon Entropy determination and the final output are provided in Figure 1—source data 5. (G) Peaks shared between samples. Each row and each column represent a unique sample, with different tissues from the same species clustered together (see Figure 1—source data 5). Values in each cell refer to percentage of total peaks in row sample shared with the column sample. LC gradients used for all LC/MS experiments in this study are described in Figure 1—figure supplement 6.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) SlASATs shown in a phylogenetic tree with all other BAHDs in cultivated tomato genome. The ‘Solyc’ in the gene names has been shortened to ‘S’. BAHD is an acronym for four acyltransferase enzymes: benzyl alcohol O-acetyltransferase (BEAT), anthocyanin O-hydroxycinnamoyltransferase (AHCT), N-hydroxycinnamoyl/benzoyltransferase (HCBT), deacetylvindoline 4-O-acetyltransferase (DAT) - the first discovered members of this family. Please refer to Figure 1 for the biochemical activities of SlASATs. Only sequences > 200 aa in length were used in this analysis. Tree was constructed using Maximum Likelihood with the PROTGAMMAJTT model in RAxML v8.0.6 with 1000 rapid bootstrap replicates specified.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–J) Peak area of each acylsugar was normalized using the internal standard peak area and dry weight, and were summed across different isomers of the same acylsugar. Colors represent % normalized peak area of a given acylsugar compared to the total normalized acylsugar peak area in the given tissue. The color scale ranges from no acylsugars (white square) to the species-specific maximum peak area (orange square). The described acylsugars are only a subset of all the detectable acylsugar-like peaks in the plant extract. UA: Unidentified acylsugar, H:Hexose.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Undiluted trichome extracts collected from plants at the NYBG were run on a 110 min gradient on a C18 column as described in the Methods (Figure 1—figure supplement 6). Peaks consistent with acylsugar masses and fragmentation patterns eluted between 30/40 min and 100 min for all species. Most of the peaks shown in chromatograms above have m/z and fragmentation patterns consistent with being acylsugars with aliphatic acyl chains. The most abundant peaks were identified, and have been described in Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A–E) Each spectrum was generated at elevated collision energy to generate fragment ions. Selected fragment ions obtained at the same retention time as the assigned pseudomolecular ion of the acylsugar are annotated. The pseudomolecular ion masses are masses of the adducts of the depicted acylsugars ([M + NH4]+). The mass difference between the pseudomolecular ion (intact acylsugar) and the fragment ion provides information about the number of acyl carbon atoms on each of the pyranose and furanose rings. We interpreted the losses and the fragment ions as involving the pyranose vs. furanose ring based on knowledge about their fragmentation patterns derived from previous studies.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) As shown in Figure 1G, the peaks are largely limited to single samples. Hence, the peak specificity (Si) is at the theoretical maximum. (B) A plot of tissue specialization vs Shannon Entropy shows that in general, tissue specialization is quite high, consistent with the results in Figure 1G. However, acylsugar producing species (red dots) have a slightly lower specialization than non-producers likely because overall, more peaks are shared between acylsugar producing species than non-producers, as can be seen in Figure 1—source data 5.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** First column includes the method run time and the column used.
+
 Acylsugars, compared to other specialized metabolic classes such as alkaloids, phenylpropanoids and glucosinolates, are biosynthetically rather simple, allowing reconstruction of the pathway in vitro. Previous research from our lab showed that cultivated tomato (Solanum lycopersicum) and its wild relatives produce these compounds in the tip cell of the long glandular secreting trichomes using a set of enzymes called acylsugar acyltransferases (ASATs). These enzymes catalyze sequential addition of specific acyl chains to the sucrose molecule using acyl CoA donors (Figure 1A) (Schilmiller et al., 2012; 2015; Fan et al., 2016a). ASATs are members of Clade III of the large and functionally diverse BAHD enzyme family (St Pierre and Luca, 2000; D'Auria, 2006) (Figure 1—figure supplement 1). Despite their evolutionary relatedness, S. lycopersicum ASATs (SlASATs) are only ~40% identical to each other at the amino acid level. ASATs exhibit different activities across wild tomatoes due to ortholog divergence, gene duplication and neo-functionalization, leading to divergence in acceptor and donor substrate repertoire of ASATs between wild tomato species (Schilmiller et al., 2015; Fan et al., 2016a). For example, a recent study showed that the acyl CoA preference of the ASAT2 enzyme orthologs in closely related Solanum species is influenced by a single amino acid change, resulting in accumulation of different acylsugar products (Fan et al., 2016a). Similarly, duplication of the ASAT3 enzyme followed by retention and duplicate gene divergence led to the emergence of different acylsugar chemotypes across different accessions of S. habrochaites (Schilmiller et al., 2015). In addition, loss of the ASAT4 enzyme activity in northern accessions of S. habrochaites leads to accumulation of acylsugars lacking R2 position acetylation (Kim et al., 2012). Changes that alter acylsugar profiles can also occur upstream of the biosynthetic pathway — duplication of the isopropylmalate synthase enzyme involved in amino acid biosynthesis and divergence of the duplicate was shown to alter the acyl chain composition in different accessions of S. pennellii, presumably due to changes in the acyl CoA pools in trichomes (Ning et al., 2015). These evolutionary mechanisms that contribute to emergence of novel acylsugar phenotypes were studied in closely related wild tomato species and demonstrate the plasticity of the acylsugar biosynthesis in this clade of Solanum. Acylsugar biosynthesis and diversity, although studied very recently in Petunia axillaris (Petunia) (Liu et al., 2017), is relatively underexplored in the broader Solanaceae family, prompting the question of how the pathway evolved over a much longer time period.
 
 In this study, we sought to understand the timeline for emergence of the ancestral ASAT activities and to explore the evolution of the acylsugar biosynthetic pathway since the origin of the Solanaceae. Typically, significant hits obtained using BLAST searches are analyzed in a phylogenetic context to understand enzyme origins (Frey et al., 1997; Ober and Hartmann, 2000; Qi et al., 2004; Benderoth et al., 2006). However, ASAT orthologs can experience functional diversification due to single amino acid changes and/or duplication (Schilmiller et al., 2015; Fan et al., 2016a), precluding functional assignment based on sequence similarity. Thus, we inferred the origins and evolution of the pathway with a bottom-up approach; starting by assessing the diversity of acylsugar phenotypes across the family using mass spectrometry. Our findings not only catalogue the diversity of acylsugars in different plants of the family but also illustrate the varied mechanisms by which the specialized metabolic pathway evolved. These results have broader implications for the study of chemical novelty in the plant kingdom.
 
 ## Results and discussion
 
-## Diversity of acylsugar profiles across the Solanaceae
+### Diversity of acylsugar profiles across the Solanaceae
 
 While the Solanaceae family comprises 98 genera and >2700 species (Olmstead and Bohs, 2007), there are extensive descriptions of acylsugar diversity reported for only a handful of species (Severson et al., 1985; King et al., 1990; Shinozaki et al., 1991; Ghosh et al., 2014). In this study, we sampled vegetative tissue surface metabolites from single plants of 35 Solanaceae and four Convolvulaceae species. These species were sampled at the New York Botanical Gardens and Michigan State University (Figure 1B; Figure 1—source data 1A), and acylsugar profiles were obtained using liquid chromatography-mass spectrometry (LC/MS) with collision-induced dissociation (CID; see Materials and methods) (Schilmiller et al., 2010; Ghosh et al., 2014; Fan et al., 2016b). Molecular and substructure (fragment) masses obtained by LC/MS-CID were used to annotate acylsugars in Solanum nigrum, Solanum quitoense, Physalis alkekengi, Physalis viscosa, Iochroma cyaneum, Atropa belladonna, Nicotiana alata, Hyoscyamus niger and Salpiglossis sinuata (Salpiglossis) (Figure 1B,C; Figure 1—figure supplement 2; Figure 1—source data 2). Plant extracts without detectable acylsugars generally lacked glandular trichomes (Fisher Exact Test p=2.3e-6) (Figure 1—source data 1B). In addition, the acylsugar phenotype is quite dynamic and can be affected by factors such as developmental stage, environmental conditions and the specific accession sampled (Kim et al., 2012; Ning et al., 2015; Schilmiller et al., 2015). These factors may also influence the detection of acylsugars in some species.
 
@@ -48,17 +76,136 @@ These findings illustrated that species across the family show very diverse acyl
 
 These results demonstrate the substantial acylsugar diversity across the Solanaceae family, most of which is unique to any given species. To identify the enzymes that contribute to this diversity, we performed RNA-seq in four phylogenetically-spaced species with interesting acylsugar profiles, namely S. nigrum, S. quitoense, H. niger and Salpiglossis.
 
-## Transcriptomic profiling of trichomes from multiple Solanaceae species
+### Transcriptomic profiling of trichomes from multiple Solanaceae species
 
 Our previous studies in cultivated tomato (Schilmiller et al., 2012; 2015; Ning et al., 2015; Fan et al., 2016a) demonstrated that identifying genes with expression enriched in stem/petiole trichomes compared to shaved stem/petiole without trichomes is a productive way to find acylsugar biosynthetic enzymes. We sampled polyA RNA from these tissues from four species and performed de novo read assembly (Table 1). These assemblies were used to find transcripts preferentially expressed in the trichomes (referred to as ‘trichome-high transcripts’) and to develop hypotheses regarding their functions based on homology.
+
+**Table 1.**
+ RNA-seq data statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Item</th>
+      <th>S. nigrum</th>
+      <th>S. quitoense</th>
+      <th>H. niger</th>
+      <th>S. sinuata</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Original read pairs</td>
+      <td>81,314,841</td>
+      <td>85,374,110</td>
+      <td>86,161,659</td>
+      <td>80,302,734</td>
+    </tr>
+    <tr>
+      <td>Filtered read pairs (% original)</td>
+      <td>73346531 (90.2%)</td>
+      <td>76734781 (89.9%)</td>
+      <td>76819022 (89.2%)</td>
+      <td>71129160 (88.6%)</td>
+    </tr>
+    <tr>
+      <td>Normalized read pairs (% normalized)</td>
+      <td>17301238 (23.6%)</td>
+      <td>15350023 (20.0%)</td>
+      <td>20779972 (27.1%)</td>
+      <td>17905057 (25.2%)</td>
+    </tr>
+    <tr>
+      <td>Total transcript isoforms</td>
+      <td>160,583</td>
+      <td>124,958</td>
+      <td>189,711</td>
+      <td>149,136</td>
+    </tr>
+    <tr>
+      <td>Longest isoforms (% total)</td>
+      <td>78,020 (49%)</td>
+      <td>72,426 (58%)</td>
+      <td>96,379 (51%)</td>
+      <td>77,970 (52.3%)</td>
+    </tr>
+    <tr>
+      <td>With &gt; 10 reads</td>
+      <td>32,105</td>
+      <td>32,044</td>
+      <td>38,252</td>
+      <td>32,798</td>
+    </tr>
+    <tr>
+      <td>With predicted peptide &gt; 50aa</td>
+      <td>23,224</td>
+      <td>22,289</td>
+      <td>26,262</td>
+      <td>23,570</td>
+    </tr>
+    <tr>
+      <td>Differentially expressed*,† (%&gt;10 reads)</td>
+      <td>10,386 (32%)</td>
+      <td>12,194 (38%)</td>
+      <td>9007 (24%)</td>
+      <td>7091 (22%)</td>
+    </tr>
+    <tr>
+      <td>Trichome high† (% differentially expressed)</td>
+      <td>2292 (22.1%)</td>
+      <td>3547 (29.1%)</td>
+      <td>3321 (36.8%)</td>
+      <td>1888 (26.6%)</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Differentially expressed genes at p<0.05 (corrected for multiple testing); 2 p<0.05, fold change >2† Some differentially expressed transcripts were confirmed by RT-PCR, as shown in Figure 2—figure supplement 3._
 
 Overall, 1888–3547 trichome-high transcripts (22–37% of all differentially expressed transcripts) were identified across all four species (False Discovery Rate adjusted p<0.05, fold change ≥2) (Table 1). These transcripts were subjected to a detailed analysis including coding sequence prediction, binning into 25,838 orthologous groups, assignment of putative functions based on tomato gene annotation and Gene Ontology enrichment analysis (see Materials and methods, Table 1). Analysis of the enriched categories (Fisher exact test corrected p<0.05) revealed that only 20 of 70 well-supported categories (≥10 transcripts) were enriched in at least three species (Supplementary file 1), suggesting existence of diverse transcriptional programs in the trichomes at the time of their sampling. Almost all enriched categories were related to metabolism, protein modification or transport, with metabolism-related categories being dominant (Supplementary file 1). These results support the notion of trichomes as ‘chemical factories’ (Schilmiller et al., 2008) and point to the metabolic diversity that might exist in trichomes across the Solanaceae.
 
 A major goal of this study was to define the organization of the acylsugar biosynthetic pathway at the origin of the Solanaceae, prompting us to focus on Salpiglossis, whose phylogenetic position is of special interest in inferring the ancestral state of the biosynthetic pathway. We first validated the plant under study as Salpiglossis using a phylogeny based on ndhF and trnLF sequences (Figure 2—figure supplement 1A,B). A previously published maximum likelihood tree of 1075 Solanaceae species suggested Salpiglossis as an extant species of the earliest diverging lineage in Solanaceae (Särkinen et al., 2013). However, some tree reconstruction approaches show Duckeodendron and Schwenckia as emerging from the earliest diverging lineages, and Salpiglossis and Petunioideae closely related to each other (Olmstead et al., 2008; Särkinen et al., 2013). Thus, our further interpretations are restricted to the last common ancestor of Salpiglossis-Petunia-Tomato (hereafter referred to as the Last Common Ancestor [LCA]) that existed ~22–28 mya. To infer the ancestral state of the acylsugar biosynthetic pathway in the LCA, we characterized the pathway in Salpiglossis using in vitro and in planta approaches.
 
-## In vitro investigation of Salpiglossis acylsugar biosynthesis
+### In vitro investigation of Salpiglossis acylsugar biosynthesis
 
 The acylsugar structural diversity and phylogenetic position of Salpiglossis led us to characterize the biosynthetic pathway of this species. NMR analysis of Salpiglossis acylsugars revealed acylation at the R2, R3, R4 positions on the pyranose ring and R1′, R3′, R6′ positions on the furanose ring (Figure 2A; Figure 2—source data 1) . The acylation positions are reminiscent of Petunia axillaris (Pa) acylsucroses where PaASAT1, PaASAT2, PaASAT3 and PaASAT4 acylate with aliphatic precursors at R2, R4, R3 and R6 on the six-carbon pyranose ring, respectively (Nadakuduti et al., 2017). Thus, we tested the hypothesis that PaASAT1,2,3 orthologs in Salpiglossis function as SsASAT1,2,3 respectively.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig2-v2.jpg)
+
+**Figure 2.:** (A) NMR derived structures of three Salpiglossis acylsugars. NMR resonances used to interpret the first three structures are described in Figure 2—source data 1. We verified the plant under study as Salpiglossis using genetic markers. These results are shown in Figure 2—figure supplement 1A,B. (B) Results of enzyme assays for SsASAT1 (black), SsASAT2 (blue) and SsASAT3 (red). Numbers above the peaks represent the retention times of the individual compounds (see Materials and methods), whose predicted structures are shown alongside. Validation of trichome-high expression of candidate enzymes (Figure 2—figure supplement 2) is shown in Figure 2—figure supplement 3. Additional validation of the in vitro results is described in Figure 2—figure supplements 4–7. (C,D) The SsASAT5 reactions, whose products have the same retention time as in planta compounds. Inset in panel C shows positive mode fragmentation and predicted acyl chains on pyranose [P] and furanose [F] rings. SsASAT5 also performs additional acylation activities as shown in Figure 2—figure supplement 8. (E) Testing various ASAT candidates with different acceptor (top) and donor (bottom) substates. Red indicates no activity seen by LC/MS, dark blue indicates a likely true activity, which results in a product usable by the next enzyme and/or a product that co-migrates with the most abundant expected compound. Light blue color indicates that the enzyme can acylate a given substrate, but the product cannot be used by the next enzyme or does not co-migrate with the most abundant expected compound. The relationships of the enzymes with each other are shown in Figure 2—figure supplement 1C.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A,B) Phylogeny based on the ndhF (A) and trnLF spacer (B) sequence amplified from Salpiglossis and Hyoscyamus DNA (this study) and other sequences downloaded from NCBI. Accession numbers of NCBI sequences are noted. Trees were constructed using maximum likelihood approach using the GTRGAMMA model with five rate categories and with 1000 bootstrap replicates. (C) Maximum likelihood tree obtained using PROTGAMMAJTT model in RAxML v8.0.6, with BAHD enzymes described in D'Auria (2006), SlASAT protein sequences (blue squares) and protein sequences of candidate Salpiglossis enzymes (red squares). 1000 bootstraps were specified with bootstopping based on majority rule, and all sites with <70% coverage were discarded. The blue clade represents Clade III as described by D'Auria (2006).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Additional information about the transcripts is provided.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A, B) Verification of trichome high expression of certain transcripts using semi-quantitative RT-PCR in S.quitoense (A) and Salpiglossis (B). The comparisons between Trichome (T) and Shaved stem (S) tissues involved using the same amount of starting cDNA, stopping the reactions after 28 or 35 cycles of PCR and running them on an agarose gel. Phytoene desaturase (PDS) which was not estimated to be differentially expressed based on RSEM/EBSeq analysis was used as control.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Shown are extracted ion chromatograms of SsASAT1 reactions using sucrose as the substrate and various acyl CoAs as donors. No product was found with acetyl CoA as donor. LC/MS analyses were conducted using a C18 column in the negative ionization mode as described in the Methods. Descriptions of different parts of the chromatogram that aid in understanding the chromatogram are highlighted in red.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A,B) Comparison between S1:5(5) produced by SsASAT1, PaASAT1 and SlASAT1 on the C18 (A) and the BEH amide (B) column. The dashed line connect the peaks aligned based on their retention times, and shows that the SsASAT1 product peaks align precisely with the PaASAT1 product peaks with two different chromatographic methods (A,B), suggesting structural identity. (C,D) Comparisons between SsASAT2, PaASAT2 and SlASAT2 enzymes similar to those shown above, suggest that SsASAT2 and PaASAT2 acylate the same positions on the sucrose molecule. Inset in (A) shows negative ion mode fragmentation of S1:6(6) product of the SsASAT1 reaction using aiC6 CoA as donor. Inset in (C) shows positive ion mode fragmentation of S2:11(5,6) product of SsASAT2 using S1:6(6) produced by SsASAT1 as substrate. Inset in (C) shows that both aiC5 and aiC6 are added on the same (pyranose) ring.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** Extracted ion chromatogram of masses corresponding to S1:4(4), S1:5(5) and S1:6(6). No peaks corresponding to these products are seen. Additional reactions with individual CoAs -- aiC6 CoA and nC12 CoA -- are shown in Figure 7—figure supplement 1.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** An indirect assessment of SsASAT3 positional specificity using Petunia ASAT4, which acylates at the pyranose R6 position (A) The chromatogram shows that Petunia ASAT4, which is known to acylate at the R6 position, can acylate the tri-acylated sugar S3:17(5,6,6) produced by SsASAT3 using the SsASAT2 product S2:10(5,5). The inset shows positive mode data suggesting all four chains are on the same ring. Given R6 is the only free hydroxyl group available on the pyranose ring in S3:17(5,6,6), and since SsASAT1 and SsASAT2 acylate R2 and R4 positions, the only position SsASAT3 can acylate without inhibiting PaASAT4 is R3. (B) Negative control with no enzyme (C) Positive control with S3:15 P(5,5,5) purified from BIL6180, with R2, R3 and R4 positions substituted by C5 chains based on NMR data (unpublished data).
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** (A) SsASAT5 can transfer C2 to S3:15 (5,5,5) isolated from Solanum pennellii-derived Backcross Inbred Line BIL6180 (unpublished data; Ofner et al., 2016), which has the three acyl chains on the R2, R3 and R4 pyranose (abbr: P) ring, same as Salpiglossis. (B) The C2 addition likely occurs on the furanose (abbr: F) ring, as seen by the presence of the m/z 205.07 in the positive-ion mode elevated collision energy mass spectrum. (C,D) SsASAT5 can transfer C2 to penta-acylated sucroses, and the product co-migrates with an acylsugar of the same molecular mass produced in the plant. Co-migrating peaks are aligned by the dashed line. Central panel in (D) shows that the S6 sugar produced by SsASAT5 is not the same as the most abundant acylsugar produced by the plant purified for NMR, which has two C2s on the furanose ring. Shown are extracted ion LC/MS chromatograms for the expected masses. (E,F) The most abundant fragment ions (m/z: 289.09, 289.13) are consistent with C2 addition occurring on the furanose and pyranose rings, respectively.
 
 Thirteen Salpiglossis trichome-high BAHD family members were found (Figure 2—figure supplement 1C), with nine expressed in Escherichia coli (Figure 2—figure supplement 2; Supplementary file 2). Activities of the purified enzymes were tested using sucrose or partially acylated sucroses (Fan et al., 2016a; Fan et al., 2016b) as acceptor substrates. Donor C2, aiC5 and aiC6 acyl CoA substrates were tested based on the common occurrence of these ester groups in a set of 16 Salpiglossis acylsucroses purified for NMR. Representative NMR structures that illustrate the SsASAT positional selectivity described in the results below are shown in Figure 2A. Four of the tested candidates catalyzed ASAT reactions (Figure 2B–E). In the following description, we name the enzymes based on their order of acylation in the Salpiglossis acylsugar biosynthetic pathway. A description is provided in Figure 2—figure supplement 4 to assist in understanding the chromatograms.
 
@@ -72,13 +219,41 @@ We could not identify the SsASAT4 enzyme(s) that performs aiC5 and C2 acylations
 
 Overall, in vitro analysis revealed four enzymes that could catalyze ASAT reactions and produce compounds also detected in plant extracts (Figure 2E). We further verified that these enzymes are involved in acylsugar biosynthesis by testing the effects of perturbing their transcript levels using Virus Induced Gene Silencing (VIGS).
 
-## In planta validation of acylsugar biosynthetic enzymes
+### In planta validation of acylsugar biosynthetic enzymes
 
 To test the role of the in vitro identified ASATs in planta, we adapted a previously described tobacco rattle virus-based VIGS procedure (Dong et al., 2007; Velásquez et al., 2009) for Salpiglossis. We designed ~300 bp long gene-specific silencing constructs for transient silencing of SsASAT1, SsASAT2, SsASAT3 and SsASAT5 (Supplementary files 2,3), choosing regions predicted to have a low chance of reducing expression of non-target genes (see Materials and methods). The Salpiglossis ortholog of the tomato phytoene desaturase (PDS) carotenoid biosynthetic enzyme was used as positive control (Figure 3A), with transcript level decreases confirmed for each candidate using qRT-PCR in one of the VIGS replicates (Figure 3B). As no standard growth or VIGS protocol was available for Salpiglossis, we tested a variety of conditions for agro-infiltration and plant growth, and generated at least two biological replicate experiments for each construct, run at different times (Supplementary file 4). ASAT knockdown phenotypes were consistent, regardless of variation in environmental conditions.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig3-v2.jpg)
+
+**Figure 3.:** (A) Two representative plants with the phytoene desaturase gene silenced using VIGS shown with 18% reflectance gray card. SsPDS-1 and SsPDS-2 have two different regions of the SsPDS transcript targeted for silencing. (B) qPCR results of SsASAT VIGS lines. Relative fold change in ASAT transcript abundance in VIGS knockdown plants compared to empty vector plants. Error bars indicate standard error obtained using three technical replicates. Expression level of the phytoene desaturase (PDS) gene was used as the reference control. Figure 3—source data 1 includes values obtained from qPCR analysis. (C,D) SsASAT1 knockdown using two different constructs (SsASAT1-1, SsASAT1-2) shows reduction in acylsugar levels. The SsASAT1-1 phenotype is more prominent than the ASAT1-2 phenotype, being significantly lower (p=0.05; KS test). One construct for SsASAT2 (SsASAT2-1) also showed significant decrease in acylsugar levels (p=0.03; KS test). Note that the Y-axis total ion intensity in (C) is different for each chromatogram. (E,F) SsASAT2 knockdown leads to drops in levels of higher molecular weight acylsugars. In (C–F), number of plants used for statistical analysis is noted. Figure 3—source data 2 describes normalized peak areas from VIGS plants used for making these inferences. Results of the second set of biological replicate experiments performed at a different time under a different set of conditions -- as described in Supplementary file 4 -- is shown in Figure 3—figure supplement 1. Figure 3—figure supplement 2 is a more detailed analysis of the SsASAT2 knockdown phenotype showing the individual acylsugar levels under the experimental conditions.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) SsASAT1 knockdown shows reduction of acylsugar levels. (B) SsASAT2 and SsASAT5 knockdown causes substantial changes in Salpiglossis acylsugar profiles. The accumulating acylsugars in these two knockdowns are different, as seen by the co-eluting m/z ratios. Number of plants showing depicted phenotype out of the total number of analyzed plants is noted on the right side of each chromatogram.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** The boxplots denote the summed normalized acylsugar peak areas, obtained using the LC/MS extracted ion chromatograms, across all plants in the experiment. Blue and red asterisks indicate significant changes in SsASAT2-1_TRV2-LIC and SsASAT2-2_TRV2-LIC comparisons, respectively. *p<0.05; **p<0.01 using the KS test. Acylsugar names in green show significant increases and the names in red show significant decreases compared with the TRV2-LIC control. These results show that C2 acylated derivatives of S3:16(5,5,6), S3:17(5,6,6) and S3:18(6,6,6) [e.g.: S4:18(2,5,5,6); S5:20(2,2,5,5,6)] increased significantly, while C5 derivatives of these acylsugars [eg: S4:21(5,5,5,6); S5:25(2,5,6,6,6)] decreased significantly in the silenced lines. One possible explanation for this result is that another transcript was silenced in addition to SsASAT2. However, the single Salpiglossis transcript with 100% identity to the silencing fragment over 18 nucleotides is not preferentially expressed in the trichomes of uninfected Salpiglossis (~360 reads in trichome;~550 reads in shaved stem) and is annotated as an ion channel. Thus, the reason for this unusual phenotype is still unclear.
 
 SsASAT1 VIGS revealed statistically significant reductions in acylsugar levels in at least one construct across two experimental replicates (Kolmogorov-Smirnov [KS] test, p-value=0.05) (Figure 3C,D; Figure 3—figure supplement 1A), consistent with its predicted role in catalyzing the first step in acylsugar biosynthesis. SsASAT2 expression reduction also produced plants with an overall decrease in acylsugar levels (Figure 3E,F; Figure 3—figure supplement 1B) (KS test, p=0.03). However, these plants also showed some additional unexpected acylsugar phenotypes, namely increases in lower molecular weight acylsugars (m/z ratio: 651–700, 701–750; KS test p<0.05), decreases in levels of higher molecular weight products (m/z ratio: 751–800, 801–850) (Figure 3E,F) as well as changes in levels of some individual acylsugars as described in Figure 3—figure supplement 2. These results provide in planta support for the involvement of SsASAT2 in acylsugar biosynthesis, and suggest the possibility of discovering additional enzymatic activities in the future.
 
 Silencing the SsASAT3 transcript also led to an unexpected result - significantly higher accumulation of the normally very low abundance tri-acylsugars [S3:13(2,5,6); S3:14(2,6,6); S3:15(5,5,5); S3:16(5,5,6); S3:18(6,6,6)] and their acetylated tetra-acylsugar derivatives (KS test p<0.05), compared to empty vector control infiltrated plants (Figure 4A,B; Figure 4—figure supplement 1). The tetra-acylsugars contained C2 or C5 acylation on the furanose ring (Figure 4—figure supplement 2). These observations are consistent with the hypothesis that di-acylated sugars accumulate upon SsASAT3 knockdown and then serve as substrate for one or more other enzyme (Figure 4—figure supplement 3). Our working hypothesis is that this inferred activity is the as-yet-unidentified SsASAT4 activity; this is based on comparisons of in vitro enzyme assay products and in vivo purified acylsugars from Salpiglossis plants (Figure 2A) . We propose that the hypothesized SsASAT4 may promiscuously acylate di-acylated sugars in addition to performing C2/C5 additions on tri-acylsugars.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig4-v2.jpg)
+
+**Figure 4.:** In each sub-figure, the left hand panel shows a representative chromatographic phenotype while the right hand panel shows distributions of the aggregated peak areas of all plants of the tested genotypes. (A,B) SsASAT3 VIGS knockdown experiment using a single targeting fragment SsASAT3-1 resulted in appearance of novel acylsugar peaks whose levels are significantly higher (p<0.05, KS test) vs. control. Error bars indicate standard error. Individual acylsugar peak areas are shown in Figure 4—figure supplement 1, while positive mode fragmentation patterns of the novel acylsugars are shown in Figure 4—figure supplement 2. (C) SsASAT5-1 and SsASAT5-2 chromatograms are from individual plants with two different regions of the SsASAT5 transcripts targeted for silencing. (D) Distributions of the aggregated peak areas of all plants of the tested genotypes. The boxplots show that SsASAT5 knockdown leads to a significant (*: KS test p<0.05; #: KS test 0.05 < p < 0.1) accumulation of tri-and tetra-acylsugars, and the effect is prominent in the SsASAT5-2 construct. A graphical explanation of the SsASAT3 and SsASAT5 knockdown results is presented in Figure 4—figure supplement 3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Statistical significance of the difference between TRV2-LIC and ASAT3-2 was tested using Kolmogorov-Smirnov test. ** represents p<0.01 and * represents p<0.05. Boxes where the acylsugars had significantly different levels compared to TRV2-LIC are highlighted in green. Acylsugar peak area was normalized as described in the Methods.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** In (A,B,C), mass spectra obtained at elevated collision energies of three different novel acylsucrose peaks are shown. We make the assumption that fragment ions and the most abundant pseudomolecular ions appearing at the same retention time are associated. In all three cases, assuming that the original mono- and di-acylations occurred on the pyranose (P) ring, we can infer that the subsequent C2 and C5 additions giving rise to the tri- and tetra-acylated sugars occurred on the furanose (F) ring.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) SsASAT3 knockdown and (B) SsASAT5 knockdown. The perturbed pathway steps are denoted by a blurred arrow and two red lines. All acylation positions are hypothesized based on in vitro data and knowledge of the enzyme activities.
 
 SsASAT5, based on in vitro analysis, was proposed to catalyze acetylation of tetra- to penta-acylsugars. As expected, its knockdown led to accumulation of tri- and tetra-acylsugars (Figure 4C,D; Figure 4—figure supplement 3B). The accumulating tetra-acylsugars were C2/C5 furanose ring-acylated derivatives of the tri-acylsugars, suggesting presence of a functional SsASAT4 enzyme and further validating the annotation of the knocked down enzyme as SsASAT5 (Figure 4—figure supplement 3B). Thus, in summary, we identified four ASAT enzymes and validated their impact on acylsugar biosynthesis in Salpiglossis trichomes using VIGS.
 
@@ -90,9 +265,29 @@ Taken together, the Salpiglossis metabolites produced in vivo, combined with in 
 
 Our results are consistent with the existence of at least two additional activities – SsASAT4 and SsASAT6. These enzymes may be included in the five BAHD family candidates highly expressed in both the trichome and stem (average number of reads >500), and thus not selected for our study because they did not meet the differential expression criterion. Also, the fact that there are >300 detectable acylsugar-like peaks in the Salpiglossis trichome extracts suggests the existence of additional ASAT activities, either promiscuous activities of characterized ASATs or of other uncharacterized enzymes. Nonetheless, identification of the four primary ASAT activities can help us to investigate the origins and evolution of the acylsugar biosynthetic pathway over time.
 
-## The evolutionary origins of acylsugar biosynthesis
+### The evolutionary origins of acylsugar biosynthesis
 
 We used our analysis of SsASAT1, SsASAT2, SsASAT3 and SsASAT5 activities, with information about ASATs in Petunia and tomato species (Schilmiller et al., 2012; 2015; Fan et al., 2016a; Nadakuduti et al., 2017), to infer the origins of the acylsugar biosynthetic pathway. Based on BLAST searches across multiple plant genomes, ASAT-like sequences are very narrowly distributed in the plant phylogeny (Figure 6—figure supplement 1). This led us to restrict our BLAST searches, which used SlASATs and SsASATs as query sequences, to species in the orders Solanales, Lamiales, Boraginales and Gentianales, which are all in the Lamiidae clade (Refulio-Rodriguez and Olmstead, 2014). Phylogenetic reconstruction was performed with the protein sequences of the most informative hits obtained in these searches to obtain a ‘gene tree’. Reconciliation of this gene tree with the phylogenetic relationships between the sampled species (Figure 6B) allowed inference of the acylsugar biosynthetic pathway before the emergence of the Solanaceae (Figure 6C; Figure 6—figure supplements 2A–C and 3A–C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig6-v2.jpg)
+
+**Figure 6.:** (A) Gene tree showing the characterized ASATs (blue squares) and other BAHDs in Clade III of the BAHD family of enzymes (D'Auria, 2006). Only Lamiid species are included in this tree, given significantly similar ASAT sequences were not detected elsewhere in the plant kingdom, as shown in Figure 6—figure supplement 1. The blue sub-clade is where most ASAT activities lie, while the red monophyletic sub-clade with high bootstrap support does not contain ASAT activities. Pink sub-clade includes enzymes present in outgroup species beyond Solanales. The purple squares highlight the closest homologs in the Lamiales order. Numbers in circles are used to denote important evolutionary events and track with the circled numbers used in (panel C), except for (5), which refers to the whole genome duplication event (panel D) that occurred prior to Solanaceae emergence. The robustness of this topology was also tested using additional tree reconstruction approaches showed in Figure 6—figure supplements 2 and 3. Alignment file in the MEGA mas format used for making this tree is provided in Supplementary file 5. Figure 6—source data 1 shows the results of BLAST against the 1kp database. (B) Known relationships between different families and orders included in the study, based on Refulio-Rodriguez and Olmstead (2014). The times indicated are based on a range of studies as described in the main text. (C) Reconciled evolutionary history of the blue ASAT sub-clade based on (panels A and B). Grey color indicates loss or lack of BLAST hits in the analyzed sequence datasets from that lineage. Species in this clade also do not produce acylsugars, as shown in Figure 6—figure supplement 4. ** is shown next to Lamiales to state the uncertainty in this inference given some uncertainty in the relationships between Lamiidae orders. Our inference is based on the strongly supported relationships in Refulio-Rodriguez and Olmstead (2014)(D) Synonymous substitution rate (dS) distribution of all Petunia axillaris (PA) - Solanum lycopersicum (SL) homologs. The red line plot shows the density of the histogram. The green curve shows the density of all SL-SL gene pairs in syntenic blocks. The blue curve is derived from dS of only those SL-SL gene pairs in the syntenic block encompassing SlASAT1 and Solyc07g043670, showing most gene pairs were derived using the Solanaceae-specific WGT event.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Results of protein BLAST (BLASTP) between SlASAT sequences and proteomes of each species in the Phytozome database. The % identity (% IDT) values for the top BLASTP hits in each species are shown.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) A maximum likelihood tree obtained using the best model (JTT + G + I + F with five rate categories) as per maximum likelihood based search of multiple models. Sites with <70% coverage were deleted. (B) NJ tree using mostly the sequences in the pink +blue + red clade, with 100% site coverage and JTT model (C) NJ tree of all the sequences obtained using JTT. Only sites with 100% coverage were used for this analysis. Please see Figure 6A for explanation of the various branch and label colors. Bootstrap support values are a result of 100 iterations.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Hits obtained using various BLAST strategies (A,B) and using Petunia Clade III BAHDs (C) are shown in a phylogenetic context with ASATs and other relevant homologs. The novel hits that were not included in the final gene tree in Figure 6 are shown by a green square. All trees were generated using NJ, using the JTT model with 100 bootstraps. All sites with <80% coverage were eliminated.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** Positive controls S. lycopersicum M82 and Salpiglossis sinuata are also included. Samples were run on a C18 column as described in the Methods. These profiles show that peaks with m/z ratios consistent with acylsugars are found only in the Solanaceae species.
 
 Three major subclades in the gene tree – highlighted in blue, red and pink – are relevant to understanding the origins of the ASATs (Figure 6A). A majority of characterized ASATs (blue squares in the blue subclade, Figure 6A) are clustered with Capsicum PUN1 — an enzyme involved in biosynthesis of the alkaloid capsaicin — in a monophyletic group with high bootstrap support (Group #2, red and blue subclades Figure 6A). Two of the most closely related non-Solanales enzymes in the tree — Catharanthus roseus minovincinine-19-O-acetyltransferase (MAT) and deacetylvindoline-4-O-acetyltransferase (DAT) — are also involved in alkaloid biosynthesis (Magnotta et al., 2007). This suggests that the blue ASAT subclade emerged from an alkaloid biosynthetic enzyme ancestor.
 
@@ -110,9 +305,17 @@ These findings, which provide insights into the origin of acylsugar biosynthesis
 
 Overall, these observations support a view of the origins of the ASAT1,2,3 blue subclade from an alkaloid biosynthetic ancestor via a single duplication event >50 mya, prior to the establishment of the Solanaceae. This duplicate underwent further rounds of duplication prior to and after the Solanaceae-specific WGT event to generate the multiple ASATs found in the blue subclade. Thus, a logical next question is ‘what was the structure of the acylsugar biosynthetic network early in the Solanaceae family evolution?’ To address this, we focused on ASAT evolution across the Solanaceae family.
 
-## Evolution of acylsugar biosynthesis in the Solanaceae
+### Evolution of acylsugar biosynthesis in the Solanaceae
 
 ASAT enzymes in the blue subclade represent the first three steps in the acylsugar biosynthetic pathway. The likely status of these three steps in the Salpiglossis-Petunia-Tomato last common ancestor (LCA) was investigated using the gene tree displayed in Figure 7A. Mapping the pathway enzymes on the gene tree suggests that the LCA likely had at least three enzymatic activities, which we refer to as ancestral ASAT1 (aASAT1), ASAT2 (aASAT2) and ASAT3 (aASAT3); these are shown in Figure 7A as red, dark blue and yellow squares, respectively. We further traced the evolution of the aASAT1,2,3 orthologs in the Solanaceae using existing functional data and BLAST-based searches. These results reveal that the aASAT1 ortholog (red squares, Figure 7A) was present until the Capsicum-Solanum split ~17 mya (Särkinen et al., 2013) and was lost in the lineage leading to Solanum. This loss is evident both in similarity searches and in comparisons of syntenic regions between genomes of Petunia, Capsicum and tomato (Figure 7B). On the other hand, the aASAT2 (dark blue squares, Figure 7A) and aASAT3 orthologs (yellow squares, Figure 7A) have been present in the Solanaceae species genomes at least since the last common ancestor of Salpiglossis-Petunia-Tomato~25 mya, and perhaps even in the last common ancestor of the Solanaceae family.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig7-v2.jpg)
+
+**Figure 7.:** (A) ASAT activities overlaid on the Solanaceae phylogenetic relationships. Each colored square represents a single ASAT, starting from ASAT1 and moving sequentially down the pathway to ASAT5 (left to right, sequentially). Homologs are represented by the same color. Squares not contained within a box are experimentally validated activities. A solid black box indicates that a highly identical transcript exists in the RNA-seq dataset and is trichome-high. A dashed box indicates that, based on a BLAST search, the sequence exists in the genome for the contained enzymes. In vitro validated S. nigrum and H. niger activities, including their phylogenetic positions, are highlighted in pink and Convolvulaceae species are in red. See Figure 7—source data 1 for results of the BLAST analysis. (B) Orthologous genomic regions between three species harboring aASAT1 orthologs. Each gene in the region is shown by a colored block. Orthologous genes are represented by the same color. The PaASAT1 gene (red box) has two homologous sequences in the Capsicum syntenic region, but one of them is truncated. aASAT1 ortholog is not seen in the syntenic region in tomato. Genes used to make this figure are described in Figure 7—source data 2. (C) Substrate utilization of aASAT2 orthologs from multiple species is described based on the activities presented in Figure 7—figure supplement 1. Hyoscyamus niger (Hn), Salpiglossis sinuata (Ss), Solanum nigrum (Sn), Solanum lycopersicum (Sl). The hydroxyl group highlighted in red shows the predicted position of acylation by the respective aASAT2 ortholog.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/28468/elife-28468-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Neighbor-joining tree made using Salpiglossis and tomato ASATs and their best hits in S. nigrum (Sn) and H. niger (Hn) transcriptome database. Tree was made using default parameters in MEGA6 for alignment and phylogeny, and identifies putative aASAT2 orthologs in Sn and Hn. (B–D) LC/MS extracted ion chromatograms for S1:6(6) [B], S1:12(12) [C] and S2:10(5,5) [D]. All reactions were run on a C18 LC column. Results show that Hn, Ss, Sn and SlASAT1s can catalyze sucrose to mono-acylsucrose conversion using aiC6 and nC12 CoA. However, aASAT2 orthologs in Hn and Ss are not able to catalyze this reaction. (D) HnASAT2 is able to catalyze di-acylsucrose formation using the HnASAT1 product.
 
 One inference from this analysis is that aASAT2 orthologs switched their activity from ASAT2-like acylation of mono-acylsucroses in Salpiglossis/Petunia to ASAT1-like acylation of unsubstituted sucrose in cultivated tomato (Figure 7A). Interestingly, despite the switch, both aASAT2 and aASAT3 orthologs in tomato continue to acylate the same pyranose-ring R4 and R3 positions, respectively (Figure 7C; Figure 8). In addition, cultivated tomato has two ‘new’ enzymes — SlASAT3 and SlASAT4 — which were not described in Petunia or Salpiglossis acylsugar biosynthesis.
 
@@ -126,7 +329,7 @@ Functional divergence between aASAT2 orthologs may have occurred by one of two m
 
 These results point to a second round of major innovation in the acylsugar biosynthetic pathway. This round involved the following three steps: (i) Potentiation: the similarity in activities of aASAT1,2 and 3, allowing changes in substrate preferences with relatively few amino acid changes. In fact, aASAT1 and aASAT2 appear to be clustered together in the gene tree, perhaps making the aASAT2 activity switch more likely. (ii) Actualization: this refers to the first instance of the emergence of the ASAT1 activity in aASAT2 orthologs. It is unclear whether this switch occurred prior to aASAT1 loss or after. (iii) Refinement: after the actualization of the ASAT1 activity, this activity was likely refined over time to the SlASAT1 activity we see today. To understand the specific order of the events in aASAT2 evolution in the Solanaceae, ASAT1 and ASAT2 enzymes from additional species between H. niger and Solanum will need to be tested.
 
-## Conclusions
+### Conclusions
 
 We performed experimental and computational analysis of BAHD enzymes from several lineages spanning ~100 million years, and characterized the emergence and evolution of the acylsugar metabolic network. We identified four biosynthetic enzymes in Salpiglossis sinuata, the extant species of an early emerging Solanaceae lineage, characterized in vitro activities, validated in planta roles of these ASATs and studied their emergence over 100 million years of plant evolution. These results demonstrate the value of leveraging genomics, phylogenetics, analytical chemistry and enzymology with a mix of model and non-model organisms to understand the evolution of biological complexity.
 
@@ -142,86 +345,102 @@ In this study, we primarily focused on Salpiglossis because of a unique acylsuga
 
 ## Materials and methods
 
-## Plant acylsugar extractions and mass spectrometric analyses
+### Plant acylsugar extractions and mass spectrometric analyses
 
 Acylsugar extractions were carried out from plants at the New York Botanical Gardens and from other sources (Figure 1—source data 1). The plants sampled were at different developmental stages and were growing in different environments. The extractions were carried out using acetonitrile:isopropanol:water in a 3:3:2 proportion similar to previous descriptions (Schilmiller et al., 2010; Ghosh et al., 2014; Fan et al., 2016a) with the exception of gently shaking the tubes by hand for 1–2 min. All extracts were analyzed on LC/MS (Waters Corporation, USA) using 7 min, 22 min or 110 min LC gradients on Supelco Ascentis Express C18 (Sigma Aldrich, USA) or Waters BEH amide (Waters Corporation, USA) columns (Figure 1—figure supplement 6), as described previously (Schilmiller et al., 2010; Ghosh et al., 2014; Fan et al., 2016a). While the 110 min method was used to minimize chromatographic overlap in support of metabolite annotation in samples with diverse mixtures of acylsugars, targeted extracted ion chromatogram peak area quantification was performed using the 22 min method data. The QuanLynx function in MassLynx v4.1 (Waters Corporation, USA) was used to integrate extracted ion chromatograms for manually selected acylsugar and internal standard peaks. Variable retention time and chromatogram mass windows were used, depending on the experiment and profile complexity. Peak areas were normalized to the internal standard peak area and expressed as a proportion of mg of dry weight.
 
-## Calculation of shannon entropy
+### Calculation of shannon entropy
 
 The concept of Shannon Entropy, originally developed in the field of information theory to quantify the amount of uncertainty or information content of a message (Shannon, 1948), is used in ecology to quantify species diversity (Peet, 1974). More recently, this approach was used to quantify transcriptomic and metabolic diversity and specialization (Martínez and Reyes-Valdés, 2008; Li et al., 2016).
 
 To calculate Shannon Entropy, we explored three different software packages for processing the RAW files from the Waters LCT Premier Mass Spectrometer, namely (i) the MarkerLynx function in MassLynx software v4.1 (Waters Corporation, USA), (ii) Progenesis QI suite (Nonlinear Dynamics, USA) and (iii) mzMine 2 (Pluskal et al., 2010). We found mzMine 2 most appropriate for our use, because it had several options for customization and processing of background data. The batch parameters used for processing 88 RAW files are provided in Figure 1—source data 4. Two values – peak height and peak areas – were obtained for all peaks with an intensity >500 in each sample. This threshold was set to eliminate most of the background noise, based on empirical observations of raw chromatograms.
 
-We further calculated different measures of diversity using the approach highlighted previously (Martínez and Reyes-Valdés, 2008; Li et al., 2016). Specifically, using peak intensity as a measure of count, we calculated Shannon Entropy (H) as follows:Hj=−∑i=1mPij.log⁡2(Pij)
+We further calculated different measures of diversity using the approach highlighted previously (Martínez and Reyes-Valdés, 2008; Li et al., 2016). Specifically, using peak intensity as a measure of count, we calculated Shannon Entropy (H) as follows:
 
-where Pij indicates the relative frequency of the ith m/z peak (i=1,2,...,m) in the jth sample (j=1,2,...t).
+$$
+Hj=−\sumi=1mPij.log⁡2(Pij)
+$$
 
-The average frequency pi of the ith m/z peak among all samples was calculated as:Pi=1t ∑j=1tPij
+where Pij indicates the relative frequency of the $i$th $m/z$ peak ($i=1,2,...,m$) in the $j$th sample ($j=1,2,...t$).
 
-The specificity of the ith m/z peak (Si) ws calculated as:Si=1t ∑j=1t(Pij/Pi).log⁡2(Pij/Pi)
+The average frequency $p_{i}$ of the $i$th $m/z$ peak among all samples was calculated as:
 
-The specialization index of each sample δj was measured for each jth sample as the average of the peak specificities using the following formula:δj=∑i=1mPijSi
+$$
+Pi=\frac{1}{t} \sumj=1tPij
+$$
 
-## Purification and structure elucidation of acylsugars using NMR
+The specificity of the $i$th $m/z$ peak ($Si$) ws calculated as:
+
+$$
+Si=\frac{1}{t} \sumj=1t(Pij/Pi).log⁡2(Pij/Pi)
+$$
+
+The specialization index of each sample $\deltaj$ was measured for each $j$th sample as the average of the peak specificities using the following formula:
+
+$$
+\deltaj=\sumi=1mPijSi
+$$
+
+### Purification and structure elucidation of acylsugars using NMR
 
 For metabolite purification, aerial tissues of 28 Salpiglossis plants (aged 10 weeks) were extracted in 1.9 L of acetonitrile:isopropanol (AcN:IPA, v/v) for ~10 mins, and ~1 L of the extract was concentrated to dryness on a rotary evaporator and redissolved in 5 mL of AcN:IPA. Repeated injections from this extract were made onto a Thermo Scientific Acclaim 120 C18 HPLC column (4.6 × 150 mm, 5 µm particle size) with automated fraction collection. HPLC fractions were concentrated to dryness under vacuum centrifugation, reconstituted in AcN:IPA and combined according to metabolite purity as assessed by LC/MS. Samples were dried under N2 gas and reconstituted in 250 or 300 µL of deuterated NMR solvent CDCl3 (99.8 atom % D) and transferred to solvent-matched Shigemi tubes for analysis. 1H, 13C, J-resolved 1H, gCOSY, gHSQC, gHMBC and ROESY NMR experiments were performed at the Max T. Rogers NMR Facility at Michigan State University using a Bruker Avance 900 spectrometer equipped with a TCI triple resonance probe. All spectra were referenced to non-deuterated CDCl3 solvent signals (δH = 7.26 and δC = 77.20 ppm).
 
-## Extraction and sequencing of RNA
+### Extraction and sequencing of RNA
 
 Total RNA was extracted from 4 to 5 week old (S. nigrum, S. quitoense) or 7–8 week old plants (H. niger, Salpiglossis) using Qiagen RNEasy kit (Qiagen, Valencia, California) with on-column DNA digestion. In addition to trichome RNA, total RNA was extracted from shaved stems of S. nigrum and Salpiglossis, and shaved petioles of S. quitoense and H. niger. The quality of extracted RNA was determined using Qubit (Thermo Fisher Scientific, USA) and Bioanalyzer (Agilent Technologies, Palo Alto, California). Total RNA from all 16 samples (4 species x 2 tissues x two biological replicates) was sequenced using Illumina HiSeq 2500 (Illumina, USA) in two lanes (8X multiplexing per lane). Libraries were prepared using the Illumina TruSeq Stranded mRNA Library preparation kit LT, sequencing carried out using Rapid SBS Reagents in a 2 × 100 bp paired end format, base calling done by Illumina Real Time Analysis (RTA) v1.18.61 and the output of RTA was demultiplexed and converted to FastQ format by Illumina Bcl2fastq v1.8.4.
 
-## RNA-seq data analysis
+### RNA-seq data analysis
 
 The mRNA-seq reads were adapter-clipped and trimmed using Trimmomatic v0.32 using the parameters (LEADING:20 TRAILING:20 SLIDINGWINDOW:4:20 MINLEN:50). The quality-trimmed reads from all datasets of a species were assembled de novo into transcripts using Trinity v.20140413p1 after read normalization (max_cov = 50,KMER_SIZE = 25,max-pct-stdev=200,SS_lib_type = RF) (Grabherr et al., 2011). We tested three different kmer values (k = 25, 27, 31) and selected the best kmer value for each species based on contig N50 values, BLASTX hits to the S. lycopersicum annotated protein sequences and CEGMA results (Parra et al., 2007). A minimum kmer coverage of 2 was used to reduce the probability of erroneous or low abundance kmers being assembled into transcripts. After selecting the best assembly for each species, we obtained a list of transcripts differentially expressed between trichomes and stem/petiole for each species using RSEM/EBSeq (Li and Dewey, 2011; Leng et al., 2013) at an FDR threshold of p<0.05. The differential expression of five transcripts in S. quitoense and four transcripts in Salpiglossis was confirmed using semi-quantitative RT-PCR, along with the PDS as negative control (Figure 2—figure supplement 3).
 
-## Prediction of protein sequences and orthologous group assignments
+### Prediction of protein sequences and orthologous group assignments
 
 The protein sequences corresponding to the longest isoform of all expressed transcripts (read count >10 in at least one dataset in a given species) were obtained using TransDecoder (Haas et al., 2013) and GeneWise v2.1.20c (Birney et al., 2004). Only the protein sequences of transcripts with ≥10 reads as defined by RSEM were used for constructing orthologous groups using OrthoMCL v5 (Li et al., 2003). We defined orthologous relationships between S. lycopersicum, S. nigrum, S. quitoense, H. niger, N. benthamiana, Salpiglossis and Coffea canephora (outgroup) using an inflation index of 1.5.
 
-## Gene ontology enrichment analyses
+### Gene ontology enrichment analyses
 
 We transferred the tomato gene ontology assignments to the homologs from other species in the same orthologous group. GO enrichment analysis was performed using a custom R script, and enriched categories were obtained using Fisher Exact Test and correction for multiple testing based on Q-value (Storey, 2002).
 
-## qRT-PCR
+### qRT-PCR
 
 Primers to specific regions of the targeted transcript were designed with amplicons between 100–200 bp using Primer3 (Untergasser et al., 2012). The regions selected for amplification did not overlap with the region targeted in the VIGS analysis. Primer sets for Salpiglossis orthologs of PDS and elongation factor alpha (EF1a) were used as controls. We used 1 µg of total RNA from a single VIGS plant with an acylsugar phenotype to generate cDNA using the Thermo Fisher Superscript II RT kit. An initial amplification and visualization on a 1% agarose gel was performed to ensure that the primers yielded an amplicon with the predicted size and did not show visible levels of primer dimers. We first tested multiple primer sets per gene and selected primers within 85–115% efficiency range using a dilution series of cDNA from uninoculated plants. These primers were used for the final qRT-PCR reaction. The Ct values for the transcripts (on 1x template) were measured in triplicate, which were averaged for the analysis. Both uninoculated and empty vector controls were measured with all primer sets for ΔΔCt calculations.
 
-## Confirmation of Salpiglossis sinuata
+### Confirmation of Salpiglossis sinuata
 
 We confirmed the phylogenetic positions of Salpiglossis and Hyoscyamus niger using the chloroplast ndhF and trnLF marker based phylogenies (Figure 2—figure supplement 1A,B). Specifically, we amplified these regions using locus-specific primers, sequenced the amplicons and assembled the contigs using Muscle (Edgar, 2004). A neighbor joining tree including ndhF and trnLF sequences from NCBI Genbank was used to confirm the identity of the plant under investigation. Phylogenetic position of S. nigrum was confirmed based on BLASTN vs. all S. nigrum nucleotide sequences from NCBI. Several DNA barcodes (e.g. trnLF intergenic spacer, atpFH cds) showed 100% identity to S. nigrum RNA-seq transcripts over 100% of their lengths.
 
-## Candidate gene amplification and enzyme assays
+### Candidate gene amplification and enzyme assays
 
 Enzyme assays were performed as previously described (Fan et al., 2016b) with the following modifications: Enzyme assays were performed in 30 µL reactions (3 µL enzyme +3 µL 1 mM acyl CoA +1 µL 10 mM (acylated) sucrose +23 µL 50 mM NH4Ac buffer pH 6.0) or 20 µL reactions with proportionately scaled components. Reactions that used an NMR-characterized substrate were performed with 0.2 µL substrate and 23.8 µL buffer. Reaction products were characterized using Waters Xevo G2-XS QToF LC/MS (Waters Corporation, USA) using previously described protocols (Fan et al., 2016b).
 
-## Characterizing the SsASAT5 activity
+### Characterizing the SsASAT5 activity
 
 Identification of SsASAT5 activity required a significant amount of the starting substrate, however, standard sequential reactions used to isolate SsASAT1,2,3 activities do not produce enough starting substrate for SsASAT5. Hence, we used S3:15(5,5,5) purified from a back-crossed inbred line (BIL6180, [Ofner et al., 2016]) whose NMR resolved structure shows R2, R3, R4 positions acylated by C5 chains (unpublished data) — same as Salpiglossis tri-acylsugars. SsASAT5 could use this substrate to acylate the furanose ring (Figure 2—figure supplement 8A,B), however, the tetra-acylsugar thus produced is not further acetylated to penta-acylsugar, suggesting the C2 acylation by SsASAT5 is not the same as the C2 acylation on tetra-acylsugars in vivo. SsASAT5 also acetylated the acceptors S4:21(5,5,5,6) and S4:19(2,5,6,6) purified from Salpiglossis trichome extracts on the furanose ring to penta-acylsugars that co-migrated with the most abundant penta-acylsugars purified from the plant (Figure 2C,D). Finally, S5:23(2,5,5,5,6) and S5:21(2,2,5,6,6) purified from plant extracts were enzymatically acetylated to hexa-acylsugars, which co-migrated with two low abundance hexa-acylsugars from the plant (Figure 2—figure supplement 8C,D). Positive mode fragmentation patterns suggested that SsASAT5 possessed the capacity to acetylate both pyranose (weak) and furanose rings of the penta-acylsugars (Figure 2—figure supplement 8E,F).
 
-## Virus induced gene silencing
+### Virus induced gene silencing
 
 Primers to amplify fragments of transcripts for VIGS were chosen to minimize probability of cross silencing other Salpiglossis transcripts due to sequence similarity or due to homopolymeric regions (Supplementary files 2,3). This was achieved using a custom Python script (Moghe, 2017; copy archived at https://github.com/elifesciences-publications/2017_Solanaceae), which divided the entire transcript of interest in silico into multiple overlapping 20nt fragments, performed a BLAST against the Salpiglossis transcriptome and tomato genome and flagged fragments with >95% identity and/or >50% homopolymeric stretches. Contiguous transcript regions with >12 unflagged, high-quality fragments were manually inspected and considered for VIGS. 1–2 300 bp regions were cloned into the pTRV2-LIC vector (Dong et al., 2007) and transformed into Agrobacterium tumefaciens GV3101. Agro-infiltration of Salpiglossis plants was performed as described previously (Velásquez et al., 2009) using the prick inoculation method. Salpiglossis phytoene desaturase was used as the positive control for silencing. Empty pTRV2-LIC or pTRV2 vectors were used as negative controls. Each VIGS trial was done slightly differently while modifying the growth, transformation and maintenance conditions of this non-model species. The experimental details, including the optimal growth and VIGS conditions that give the fastest results, are noted in Supplementary file 4.
 
-## Phylogenetic inference
+### Phylogenetic inference
 
 All steps in the phylogenetic reconstruction were carried out using MEGA6 (Tamura et al., 2013). Amino acid sequences were aligned using Muscle with default parameters. Maximum likelihood and/or neighbor joining (NJ) were used to generate phylogenetic trees. For maximum likelihood, the best evolutionary model (JTT[Jones-Taylor-Thornton]+G + I with five rate categories) was selected based on the Akaike Information Criterion after screening several models available in the MEGA6 software, while for NJ, the default JTT model was used. Support values were obtained using 1000 bootstrap replicates, however trees obtained using 100 bootstrap replicates also showed similar overall topologies. Trees were generated either using ‘complete deletion’ or ‘partial deletion with maximum 30% gaps/missing data’ options for tree reconstruction. Sequences < 350 aa (eg: Solyc10g079570) were excluded from this analysis. Trees were also generated using RAxML v8.0.6 (Stamatakis, 2006) with 1000 rapid bootstrap replicates, using the best models as specified by the Akaike Information Criterion in MEGA6.
 
-## Similarity searches using BLAST
+### Similarity searches using BLAST
 
 Similarity searches against the 1kp and NCBI nr databases were performed using TBLASTN, using SlASAT1, SlASAT3, SsASAT1 and SsASAT2 protein sequences as queries. For the 1kp database, TBLASTN was performed against all Asterid sequences, and the best non-Solanaceae sequences were analyzed using phylogenetic tree reconstruction (see below; Figure 6—source data 1). The BLAST at NCBI was performed against several specific groups of species, namely (i) orders Gentianales + Boraginales + Lamiales + Solanales-(family Solanaceae), (ii) Only Convolvulaceae, (iii) Solanaceae-(sub-family Solanoideae), (iv) Solanoideae-(genera Solanum + Capsicum), (v) Solanoideae-(genus Solanum), (vi) Solanum-(section Lycopersicon +species tuberosum). The top 10 hits from each search were manually curated and analyzed in a phylogenetic context with SlASATs and SsASATs (Figure 6—figure supplements 2 and 3). We used a similar approach to search the annotated peptide sequences in C. canephora (Denoeud et al., 2014) and Ipomoea trifida (Hirakawa et al., 2015) sequence databases. Sequences that provided additional insights into the evolution of the ASAT clade were integrated into the final gene tree shown in Figure 6A.
 
-## Identification of Solanaceae-specific WGT event
+### Identification of Solanaceae-specific WGT event
 
 We used the overall approach employed in Supplementary Note 5 of (Bombarely et al., 2016), where the authors obtained dS distributions between S. lycopersicum and Petunia homologs. We identified homologs using an all-vs-all protein BLAST, followed by selection of five top matches. The BLAST results and the genomic locations of the two gene sets were provided as input to MCScanX (Wang et al., 2012) with default parameters. The collinear blocks identified by MCScanX were used for calculation of dS values using the yn00 utility in PAMLv4.4 (Yang, 2007).
 
-## Synteny analysis
+### Synteny analysis
 
 Synteny between the Petunia, Capsicum and tomato genomes was determined as previously described using MCScanX (Moghe et al., 2014; Wang et al., 2012). Regions corresponding to PaASAT1 and its best matching homologs were used to make Figure 7B.
 
-## Estimating the number of acylsugars
+### Estimating the number of acylsugars
 
 This and previous studies provide evidence for a number of acyl chains esterified to sucrose, classified into short (C2, C3, C4, iC5, aiC5, iC6, aiC6, C8), long (nC10, iC10, nC11, nC12) and non-aliphatic (malonyl). We only focused on aliphatic chains for this estimate. We typically see one long chain and 3–4 short chains on the sugar molecule across different Solanaceae species. In our calculation, we assumed that each acyl chain has the same probability of being incorporated into the acylsugar, with the core being a sucrose core. Under these assumptions, there are eight acyl chains that could be incorporated at three positions on a tetra-acylsugar and 12 acyl chains on the fourth position. This gives a theoretical estimate of 8*8*8*12 = 6144 acylsucroses that could be produced with the above acyl chains.
 
-## Data release
+### Data release
 
 All RNA-seq datasets are deposited in the NCBI Short Read Archive under the BioProject PRJNA263038. Coding sequences of ASATs are provided in Supplementary file 2 and have been deposited in GenBank (KY978746-KY978750). RNA-seq transcripts and orthologous group membership information has been uploaded to Dryad (provisional DOI: 10.5061/dryad.t7r64).

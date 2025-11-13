@@ -12,10 +12,10 @@
 
 ### Affiliations
 
-1. https://ror.org/035b05819 Department of Drug Design and Pharmacology, University of Copenhagen Copenhagen Denmark
-2. https://ror.org/0161xgx34 Institute for Research in Immunology and Cancer (IRIC), and Department of Biochemistry and Molecular Medicine, Université de Montréal Montréal Canada
+1. Department of Drug Design and Pharmacology, University of Copenhagen Copenhagen Denmark ([ROR:035b05819](https://ror.org/035b05819))
+2. Institute for Research in Immunology and Cancer (IRIC), and Department of Biochemistry and Molecular Medicine, Université de Montréal Montréal Canada ([ROR:0161xgx34](https://ror.org/0161xgx34))
 3. Domain Therapeutics North America Montréal Canada
-4. https://ror.org/01dq60k83 Graduate School of Pharmaceutical Sciences, Tohoku University Sendai Japan
+4. Graduate School of Pharmaceutical Sciences, Tohoku University Sendai Japan ([ROR:01dq60k83](https://ror.org/01dq60k83))
 
 † Corresponding author
 
@@ -33,17 +33,180 @@ Here, we analyze the GtP, Inoue, and Bouvier coupling datasets to determine conf
 
 ## Results
 
-## Tools and resources – common coupling map unifying GPCR-G protein data
+### Tools and resources – common coupling map unifying GPCR-G protein data
 
-## Systematic profiling doubles the average number of G protein family couplings of GPCRs
+#### Systematic profiling doubles the average number of G protein family couplings of GPCRs
 
 To obtain an overview of the coverages of GPCR-G protein coupling sources, we compared all couplings reported by both the Bouvier (Avet et al., 2020) and Inoue (Inoue et al., 2019) groups and annotated in the GtP database (Armstrong et al., 2020; Figure 1; Table 1). This shows that the three sources together comprise couplings for 265 (67%) out of the 398 nonolfactory GPCRs, and that 70 of these receptors are present in all datasets (Figure 1B). The Bouvier and Inoue datasets have collectively quantified individual G protein couplings of 178 receptors using one assay, whereas the remaining 87 receptors have so far only been annotated in GtP on the G protein family level from a multitude of publications and assays.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/74107/elife-74107-fig1-v2.jpg)
+
+**Figure 1.:** (A) Biosensor principles used by the Bouvier and Inoue groups, and literature annotation stored in the GtP database. (B) Intersection of the G protein-coupled receptors (GPCRs) included in the Bouvier (n = 100), Inoue (n = 150), and GtP (n = 254) datasets. (C) Relative family distributions of G protein couplings across datasets. (D) Comparison of the G protein family coupling profiles of 70 GPCRs present in all of the Bouvier, Inoue, and GtP datasets. More detailed analysis of common G protein couplings for just the Bouvier and Inoue datasets is given in Figure 1—figure supplement 1. (A–D) Note: All analyses herein cover the 12 G proteins: Gs, Gi1, Gi2, GoA, GoB, Gz, Gq, G11, G14, G15, G12, and G13. Golf and Gi3 could not be analyzed, as they had not been tested by the Bouvier group. The Inoue data for the pairs Gi1-Gi2, GoA-GoB, and Gq-G11 were generated with identical chimera inserting the Gα C-terminal hexamer into a Gq backbone (Inoue et al., 2019) meaning that identical datapoints were used to assess their coverage and agreement with other datasets (Table 1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74107/elife-74107-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Black bars represent couplings not in Guide to Pharmacology (GtP) and therefore considered novel (novel couplings are listed in Figure 3). Frequencies are percent couplings among all receptors common to Bouvier and Inoue (the 100% includes noncoupling receptors). Gi3 and Golf (chimeras) are not included herein as they were only tested by the Inoue group. Inoue used the same chimeras to represent the pairs GoA-GoB, Gi1-Gi2, and Gq-G11 (Table 1).
+
+**Table 1.**
+ G proteins tested by Bouvier et al. and Inoue et al.The two published datasets contain 11 common G proteins (Gs, Gi1, Gi2, Go, Gz, Gq, G11, G14, G15, G12, and G13), two Inoue et al. specific G proteins (Golf and Gi3) and two Bouvier specific isoforms (GoA and GoB) of the Go protein that spring from the same gene (GNAO1). Inoue et al. Gq chimera replacing the six C-terminal amino acids have identical sequences for Gi1-2, GoA-B, and Gq and G11. All analyses herein used the 11 common G proteins, a Go average of the GoA and GoB isoforms and left out Golf and Gi3 (not present in Bouvier et al.) while identical chimeras from Inoue et al. were used to represent the both members of the pairs Gi1-2, GoA-B, and Gq and G11, respectively. Abbreviations: wt: wildtype; RlucII: Renilla luciferase 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Family</th>
+      <th>G protein(protein)</th>
+      <th>Gene name</th>
+      <th>UniProt name</th>
+      <th>UniProt identifier</th>
+      <th>Bouvier</th>
+      <th>Inoue</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Gs</td>
+      <td>Gs</td>
+      <td>GNAS</td>
+      <td>GNAS2</td>
+      <td>P63092</td>
+      <td>wt +RlucII at pos 67</td>
+      <td>Gq1-353-RQYELL</td>
+    </tr>
+    <tr>
+      <td>Golf</td>
+      <td>GNAL</td>
+      <td>GNAL</td>
+      <td>P38405</td>
+      <td>-</td>
+      <td>Gq1-353-KQYELL</td>
+    </tr>
+    <tr>
+      <td rowspan="9">Gi/o</td>
+      <td>Gi1</td>
+      <td>GNAI1</td>
+      <td>GNAI1</td>
+      <td>P63096-1</td>
+      <td>wt</td>
+      <td rowspan="2">Gq1-353- KDCGLF</td>
+    </tr>
+    <tr>
+      <td>Gi2</td>
+      <td>GNAI2</td>
+      <td>GNAI2</td>
+      <td>P04899-1</td>
+      <td>wt</td>
+    </tr>
+    <tr>
+      <td>Gi3</td>
+      <td>GNAI3</td>
+      <td>GNAI3</td>
+      <td>P08754</td>
+      <td>-</td>
+      <td>Gq1-353-KDCGLY</td>
+    </tr>
+    <tr>
+      <td>GoA</td>
+      <td>GNAO1</td>
+      <td>GNAO</td>
+      <td>P09471-1</td>
+      <td>wt</td>
+      <td rowspan="2">Gq1-353-RGCGLY</td>
+    </tr>
+    <tr>
+      <td>GoB</td>
+      <td>GNAO1</td>
+      <td>GNAO</td>
+      <td>P09471-2</td>
+      <td>wt</td>
+    </tr>
+    <tr>
+      <td>Gz</td>
+      <td>GNAZ</td>
+      <td>GNAZ</td>
+      <td>P19086-1</td>
+      <td>wt</td>
+      <td>Gq1-353-KYIGLC</td>
+    </tr>
+    <tr>
+      <td>Gt1 (transducin)</td>
+      <td>GNAT1</td>
+      <td>GNAT1</td>
+      <td>P11488</td>
+      <td>-</td>
+      <td rowspan="3">Identical toGq1-353-Gi1-2chimera</td>
+    </tr>
+    <tr>
+      <td>Gt2 (transducin)</td>
+      <td>GNAT2</td>
+      <td>GNAT2</td>
+      <td>P19087</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Ggust (gustducin)</td>
+      <td>GNAT3</td>
+      <td>GNAT3</td>
+      <td>A8MTJ3</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Gq/11</td>
+      <td>Gq</td>
+      <td>GNAQ</td>
+      <td>GNAQ</td>
+      <td>P50148-1</td>
+      <td>wt</td>
+      <td rowspan="2">wtGq1-353-KEYNLV</td>
+    </tr>
+    <tr>
+      <td>G11</td>
+      <td>GNA11</td>
+      <td>GNA11</td>
+      <td>P29992-1</td>
+      <td>wt</td>
+    </tr>
+    <tr>
+      <td>G14</td>
+      <td>GNA14</td>
+      <td>GNA14</td>
+      <td>O95837-1</td>
+      <td>wt</td>
+      <td>Gq1-353-REFNLV</td>
+    </tr>
+    <tr>
+      <td>G15</td>
+      <td>GNA15</td>
+      <td>GNA15</td>
+      <td>P30679-1</td>
+      <td>wt</td>
+      <td>Gq1-353-DEINLL</td>
+    </tr>
+    <tr>
+      <td rowspan="2">G12/13</td>
+      <td>G12</td>
+      <td>GNA12</td>
+      <td>GNA12</td>
+      <td>Q03113-1</td>
+      <td>wt</td>
+      <td>Gq1-353-KDIMLQ</td>
+    </tr>
+    <tr>
+      <td>G13</td>
+      <td>GNA13</td>
+      <td>GNA13</td>
+      <td>Q14344-1</td>
+      <td>wt</td>
+      <td>Gq1-353- KQLMLQ</td>
+    </tr>
+  </tbody>
+</table>
 
 To allow the comparison of coupling densities and distributions across datasets, we selected the Emax threshold (1.4 standard deviations [SDs] above basal) that gives the best agreement between the Bouvier and Inoue dataset. We believe that this is the best possible means to estimate what is correct data (rather than false negative/positive couplings), as large-scale information about what G proteins and GPCRs couple physiologically is not available. This cut-off is more stringent than the minimum of 3% signal above basal used in Inoue’s original report (Inoue et al., 2019). We also aggregated G protein subtype couplings of the families (see Materials and methods). This reveals that while GtP covers the largest number of receptors they have relatively few couplings – only 38% of all GPCR-G protein family pairs are ‘couplers’ compared to 65% in the Bouvier and 75% in the Inoue dataset (average of 1.5, 2.6, and 3.0 G protein families per GPCR, respectively; Figure 1C). In particular G12/13 couplings are underrepresented in GtP where they account for 3% of GPCR-G protein pair datapoints compared to 13% in Bouvier and 17% in Inoue. The Bouvier and Inoue datasets share a more similar overall distribution of couplings, expect for Gs coupling which is twice as frequent within the latter dataset (16% compared to 8%). This demonstrates that the two first systematic coupling profiling studies have substantially expanded the known GPCR-G protein ‘couplome’ and that their assay platforms are amenable to high-throughput profiling also for the G12/13 family for which robust activation assays appeared only recently (Quoyer et al., 2013; Olsen et al., 2020; Maziarz et al., 2020).
 
 Given that the Bouvier and Inoue groups used different biosensors and GtP annotates literature reports from very diverse assays, we sought to determine to which extent they report the same couplings for the same GPCRs, that is, their 70 common receptors (data in tab ‘BIG-QualComp’ in Source data 3). We find that all three sources agree on an average of 49% of G protein family couplings/noncouplings (distributed as Gs: 55%, Gi/o: 64%, Gq/11: 50%, and G12/13: 25%, Figure 1D). When instead analyzing the quantitative studies alone (excluding GtP), the agreement increases to 70% across G protein families. This agreement is 68% for individual G protein datapoints, which display an even larger span ranging from at least 53% for G15 up to 81% for GoA (Figure 1—figure supplement 1). These findings define a sizeable reference set of consensus G protein couplings and show that consistent large-scale profiling studies generate more comparable results than literature.
 
-## Common coupling map unifies GPCR-G protein datasets and opens analysis
+#### Common coupling map unifies GPCR-G protein datasets and opens analysis
 
 To enable quantitative correlation of the Bouvier, Inoue, and future couplings, we established a data processing protocol giving the highest similarity and correlation of coupling measurements across datasets (Materials and methods). This uses log transformed EC50 values and minimum-maximum normalized Emax values combined into a unified log(Emax/EC50) value and an aggregation of G proteins onto families based on the maximum subtype values (Figure 2A). Based on this protocol, we created a common coupling map, integrating the Bouvier, Inoue, and GtP datasets (Figure 2B). This unified coupling map establishes that it is possible to obtain comparable quantitative values despite the differences between biosensors and enables quantitative cross-study comparisons herein and in future studies from the field.
 
@@ -53,9 +216,46 @@ To enable quantitative correlation of the Bouvier, Inoue, and future couplings, 
 
 To enable any researcher to use the coupling map, we have availed a ‘G protein couplings’ browser (https://gproteindb.org/signprot/couplings) in GproteinDb (Pándy-Szekeres et al., 2022), which is a separate database but also accessible via the GPCRdb web site (Kooistra et al., 2021). By default, the coupling map (Figure 2B) and browser only show ‘supported’ couplings with evidence from two datasets, but there is an option (first blue button) to change the level of support to only one (for most complete coverage of GPCRs) or to three (for the highest confidence) sources. As an exception, GtP couplings do not require additional support, as they are in most cases supported by multiple independent publications. We propose a standardized terminology to describe couplings based on their level of experimental support from independent groups (Table 2). The criterion of supporting independent data, and the terms ‘proposed’ and ‘supported’, are already used by the Nomenclature Committee of IUPHAR for GPCR deorphanization. Furthermore, the online coupling browser allows any researcher to use only a subset of datasets, or to apply filters to the Log(Emax/EC50), Emax, and EC50 values. Finally, users can filter datapoints based on a statistical reliability score in the form of the number of SDs from basal response.
 
-## Research advances – insights on GPCR-G protein selectivity
+**Table 2.**
+ Terms and definitions used to classify G protein-coupled receptor (GPCR-G) protein couplings.
 
-## The Bouvier and Inoue datasets jointly support 101 novel G protein couplings
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Supported</td>
+      <td>Coupling or noncoupling datapoints that are supported by at least one other dataset, that is, at least two in total. An exception is made for couplings reported only in the GtP database, and not yet tested in a quantitative dataset, as the couplings in GtP are in most cases supported by multiple independent publications.</td>
+    </tr>
+    <tr>
+      <td>Novel</td>
+      <td>Coupling that is supported by Bouvier and Inoue but not present in GtP.</td>
+    </tr>
+    <tr>
+      <td>Proposed</td>
+      <td>Coupling identified in one but not yet tested in a second quantitative dataset (here Bouvier or Inoue). This refers to mainly receptors, but also G protein subtypes, that have only been tested in one quantitative dataset. Couplings reported only in the GtP database are not considered ‘proposed’ but ‘supported’ because they in most cases are based on the annotation of multiple independent publications.</td>
+    </tr>
+    <tr>
+      <td>Unique</td>
+      <td>Coupling that is unique in one dataset (other datasets have no coupling).</td>
+    </tr>
+    <tr>
+      <td>Missing</td>
+      <td>Noncoupling in the given dataset but coupling in the other compared datasets.</td>
+    </tr>
+  </tbody>
+</table>
+
+_GtP: Guide to Pharmacology._
+
+### Research advances – insights on GPCR-G protein selectivity
+
+#### The Bouvier and Inoue datasets jointly support 101 novel G protein couplings
 
 We next identified the ‘novel’ G protein couplings for which a family annotation is missing in GtP but have high confidence from dual support by the Bouvier and Inoue groups (Figure 1—figure supplement 1). This revealed 38 receptors with novel couplings to 101 G proteins distributed across all families: Gs: 4, Gi/o: 15, Gq/11: 10, and G12/13: 21 (Figure 3). The largest expansions – an increase by three of G protein families – were obtained for the histamine H1 and endothelin ETA receptors which were found to couple to all G protein families but only have Gq/11-coupling in GtP. Whereas it could be expected that GtP would miss couplings, we also analyzed if its expert curation excluded couplings that may be false positives as they are contradicted by both quantitative studies. This uncovered such Gs-coupling to the α2C-adrenoceptor and cannabinoid CB1-2 receptors, G12/13 coupling to the purinergic P2Y2 receptor and Gi/o-coupling to the β2-adrenoceptor, which however had weak Gz and GoB coupling in the Bouvier study but did not cross the signal threshold (Avet et al., 2020). Notably, this is only 2% (5/254) of all GtP’s GPCR-G protein family pairs. Taken together, these findings serve to quantify the expansion of the GPCR-G protein ‘couplome’ while also confirming the outstanding accuracy of the expert annotation in the GtP database. Therefore, the large number of new couplings is mainly due to missing investigations in literature rather than incorrect curation.
 
@@ -63,7 +263,7 @@ We next identified the ‘novel’ G protein couplings for which a family annota
 
 **Figure 3.:** Novel couplings identified by the Bouvier and Inoue groups but not in Guide to Pharmacology. G protein families are here considered shared if at least one specific subtype is found to couple in both dataset, which is not the case for the bottommost four receptors.
 
-## Half of GPCRs are selective for a single whereas 5% promiscuously activate all G protein families
+#### Half of GPCRs are selective for a single whereas 5% promiscuously activate all G protein families
 
 To gain insight into their levels of coupling selectivity, we intersected the G protein profiles of all receptors and counted the number of coupling partners for GPCRs and G proteins (Figure 4). On the G protein family level (topmost in Figure 4), our analysis spans 90 receptors with data only in GtP and 166 GPCRs with data from the Bouvier and/or Inoue groups – totaling 256 receptors. We require couplings from the Bouvier and Inoue groups to be supported by a second dataset (GtP couplings are already typically supported by several publications). We find that these 256 GPCRs couple to on average 1.7 G protein families distributed as 126 single-, 83 double-, 34 triple- and 13 all-family activating receptors. The share of fully selective (single-family activating) receptors differs largely across G protein families spanning from 6% for G12/13 to 22% for Gq/11, 26% for Gs and up to 40% for Gi/o (tab ‘Fig_4’ in Source data 5).
 
@@ -73,13 +273,13 @@ To gain insight into their levels of coupling selectivity, we intersected the G 
 
 Interestingly, all fully promiscuous receptors are class A GPCRs: adenosine A1, adrenergic α1A,2A and β1, bradykinin B2, cannabinoid CB1, cholecystokinin CCK1, endothelin ETA, prostanoid FP, GPR4, histamine H1, lysophospholipid LPA4, and orexin OX2 receptors (216 class A, 11 class B1, and 5 class C GPCRs have been profiled, so far). Conversely, a G protein family has supported couplings to on average 112 GPCRs (28% of all receptors) distributed as Gs: 87, Gi/o: 176, Gq/11: 134, and G12/13: 49 receptors (34%, 69%, 52%, and 19%, respectively of all receptors, Figure 4C). Given that 101 of the GPCR-G protein family pairs tested by the Bouvier and Inoue groups represent novel couplings (above), more couplings are expected to be identified as expanding and confirmatory studies emerge. Hence, whereas the results described here represent the currently known supported couplings, the total ‘couplome’ will undoubtedly comprise additional yet undetected and unconfirmed couplings, especially among receptors never profiled with a pan-G protein platform.
 
-## Three-quarters of GPCR activate all G proteins belonging to the same family
+#### Three-quarters of GPCR activate all G proteins belonging to the same family
 
 Within each G protein family (rows 2–5 in Figure 4), on average 73% of GPCRs promiscuously activate all its members (Gq/11: 73%, G12/13: 66%, Gi/o: 75%, and Gs: 80%). In contrast, activation of only one subtype of a G protein family is only observed for 11 Gs, 4 Gz, 1 G14, 10 G15, 5 G12, and 10 G13-coupled receptors (Figure 2 or Source data 5). Most other receptors activate a subset of G proteins in each family. Strikingly, P2Y1,4 (G15), P2Y14 (Gz), and GPR55 (G13) are fully selective also when considering G proteins from all families, that is, they only couple to a single of the 16 human G proteins (1.4 × SD cut-off applied, 6 Gs-coupling receptors are left out, as Golf has so far only been tested by the Inoue group). However, the three purinergic receptors have additional couplings although not supported by a second dataset (P2Y4 and P2Y14) or above the 1.4 × SD cut-off (P2Y1 was below), and it is possible that as the characterizations expand even fewer, or no receptors are found to engage only a single G protein.
 
 The abundant coupling of Gi/o and Gq/11 to many receptors with dual (or more) pathways suggests that these G proteins often have more versatile functions. In all, our meta-analysis of GPCR-G protein selectivity points to intriguing differences where some receptors selectively signal via a single effector whereas other GPCRs promiscuously activate all four G protein pathways. Such selective or combined profiles, in interplay with differential spatiotemporal expression (Avet et al., 2020), can be critical to achieve a specific physiological effect.
 
-## G protein co-coupling reflects phylogeny, but all G protein families have an odd member
+#### G protein co-coupling reflects phylogeny, but all G protein families have an odd member
 
 To assess whether the evolutionary classification dividing G proteins into four families is also representative of their pharmacology, we investigated the correlated coupling of G proteins to receptors. The overall correlation was assessed with Pearson standard correlation coefficients (Figure 5A–B) and broken down into shared coupling/noncoupling (from Jaccard indices, Figure 5C) and activation levels mean log(Emax/EC50, Figure 5D). We find that all three comparisons show the strongest correlations for G proteins belonging to the same G protein family (boxed in Figure 5A and C–D). This demonstrates that the pharmacological relationships, that is, the coupling selectivity and activation level, do indeed reflect the phylogenetic relationships. This is important, as this is how the human G proteins into four families have been classified traditionally, but it had not been tested if this classification applies to pharmacological profiles of the scales analyzed herein and likely increasingly more common in future studies.
 
@@ -89,21 +289,29 @@ To assess whether the evolutionary classification dividing G proteins into four 
 
 Several G protein pairs stand out with exceptionally high overall correlated coupling (Pearson standard correlation coefficient): Gi1-Gi2 (0.99), GoA-GoB (0.96), and Gq-G11 (0.99). Interestingly, the correlated coupling is lower for the only pairs within the Gs and G12/13 families, Gs-Golf (0.77) and G12-G13 (0.79), respectively. Furthermore, both Gi/o and Gq/11 have an ‘odd’ member, Gz and G15, respectively (mean of 0.78 and 0.76 to other family members, respectively). The fact that all G protein families have an odd member shows that all signaling pathways have a transducer toolbox allowing them to differentiate signaling.
 
-## Gs or Gi/o coupling is selective while G12/13 is promiscuously activated with Gi/o and Gq/11
+#### Gs or Gi/o coupling is selective while G12/13 is promiscuously activated with Gi/o and Gq/11
 
 The Gs and Gi/o families have an inverse correlation in all of the overall, coupling/noncoupling, and activation level comparisons (darkest red in Figure 5A and C–D). This means that Gs and Gi/o rarely co-couple to GPCRs and, when they do, they do so with a large difference in their strength of activation. This inverse correlation where only one or the other G protein is activated is in agreement with their function, as Gs stimulates, and Gi/o inhibits production of the same cellular second messenger, cAMP. This allows opposite physiological responses to be mediated with temporal selectivity in the same cell by activating different receptors at different times. Differential engagement of the Gi/o family could also have functional consequences through other pathways, as Gi was recently shown to be required for scaffolding β-arrestin binding and signaling for some receptors (Smith et al., 2021).
 
 For G12/13, we instead find a positive correlation with the Gi/o and Gq/11 families. This is in agreement with Figure 4 (first Venn) which shows that only 3 GPCRs couple to only G12/13 and 3 couple to the rare G12/13-Gs family pair, whereas the vast majority of GPCRs, 38 couple to G12/13 also couple to the Gi/o and/or Gq/11 family. Furthermore, we find an intriguing unique selectivity mechanism for the Gi/o and Gq/11 families. These families have the most frequent co-coupling (light blue in Figure 5C) but have a high difference in average activation levels (red in Figure 5D). Together, this shows that selective binding of only Gi/o or Gq/11 is uncommon, but selectivity can be achieved by differential levels of activation. This possibility to achieve selectivity via differential activation is likely important, as many GPCRs, 81 couple to both the Gi/o and Gq/11 families. Their high difference in activation levels allows for a selective activation, which could shift upon the presentation of alternative endogenous or surrogate ligands with a signaling bias. Furthermore, it should be pointed out that many reported dual couplings to Gi and Gq may be because phospholipase c (PLC), a direct effector of Gq, can also be activated by Gβγ from Gi (i.e. sensitive to the Gi inhibitor pertussis toxin). Thus, the concept of potential scaffolding of PLC by Gq may be required for Gi-derived Gβγ activation (Pfeil et al., 2020).
 
-## Differential tissue expression gives G proteins in the same family large spatial selectivity
+#### Differential tissue expression gives G proteins in the same family large spatial selectivity
 
 To study how tissue expression may influence G protein selectivity, we analyzed consensus transcript expression levels for 50 tissues and 16 organs (here aggregated into 8) from the Human Protein Atlas (HPA) (Uhlén et al., 2015), which also includes data from the Genotype-Tissue Expression (GTeX) project (Lonsdale et al., 2013; Figure 6). We find that the most ubiquitously expressed G proteins are Gs and Gi2 which are expressed in all 50 tissues and all organ categories at a level that is within the first quartile of all normalized transcripts per million (nTPM) values. In contrast, Gi3, Gt1, Gt2, Gt3, and G14 have none or only one tissue with a first quartile expression. To facilitate comparison across G proteins, we employed HPA’s nTPM values after z-score transformation of each G protein across tissues. A z-transformation of the same G proteins visualizing the relative tissue levels of expression, shows a very focused expression of the transducins, Gt1 and Gt2, in the retina and gustducin Gt3 in the gastrointestinal tract reflecting their role in vision and taste, respectively (Figure 6—figure supplement 1A). Notably, each G protein family has at least one subtype that is preferentially expressed in the brain: Gs: Golf, Gi/o: Go and Gz, Gq/11: Gq, and G12/13: G12 (Figure 6 and Figure 6—figure supplement 1A).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/74107/elife-74107-fig6-v2.jpg)
+
+**Figure 6.:** (A) Expression heatmap of all 16 human G proteins across 50 tissues and 16 organs (here grouped in 8 categories) extracted from the Human Protein Atlas (Uhlén et al., 2015), which also includes data from the Genotype-Tissue Expression project (Lonsdale et al., 2013). The coloring denotes the normalized transcripts per million (nTPM) for each G protein and tissue capped at the median of all maximum G protein expression values (Gt3 at 80 nTPM in retina). (B) Number of tissues for which the given G protein has an expression ≥ the first quartile expression threshold (28.4 nTPM) across all 16 G proteins and 50 tissues.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74107/elife-74107-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Expression heatmap like in Figure 6 but with a z-transformation across tissues, thereby visualizing their relative expression for each G protein. (B) Correlated G protein expression across tissues as a function of normalized transcripts per million (nTPM), which is a consensus normalized transcript expression value across the Genotype-Tissue Expression and Human Protein Atlas datasets (see Materials and methods). Pairwise correlation of nTPM expression values by Pearson standard correlation coefficient gives positive and negative correlations between G protein pairs. Expression clusters are distinct from the G protein families, which are denoted with color-coded labels.
+
 Given that the tissue expression varies largely for G proteins, we next sought to determine to what extent their tissue expression correlations differ from the traditional four G protein families that represent phylogeny and GPCR coupling (Figure 5) relationships. To this end, we calculated the co-expression for each G protein pair using Pearson standard correlation coefficients (Figure 6—figure supplement 1B). Notably, we find that all four G protein families have members that group apart in the dendrogram (the two members of the Gs family, Gs and Golf, do not cluster adjacently but not as a pair). Instead, we find a coherent cluster for the G proteins that are predominantly expressed in the brain, Golf, Go, Gz, Gq, and G12 and cover all four families. Furthermore, among the remaining co-expressing G proteins, three out of the four closest pairs also span families (Gi3-G15, Gi2-G13, and Gt3-G11 but not Gt1-Gt2). Taken together, this shows that there is no overall clustering of subtypes within the G protein families, which instead exploit differential expression to gain spatial selectivity. For example, in the Gi/o family Go and Gz are restricted to brain regions, while the other subtypes have four different peripheral profiles.
 
-## Technological considerations – biosensor sensitivity
+### Technological considerations – biosensor sensitivity
 
-## Bouvier and Inoue biosensors appear more sensitive for G15 and, Gs and G12, respectively
+#### Bouvier and Inoue biosensors appear more sensitive for G15 and, Gs and G12, respectively
 
 To evaluate the sensitivity of the Bouvier and Inoue biosensors for different G proteins, we compared their observed couplings for the 70 common receptors to identify ‘unique’ and ‘missing’ couplings (defined in Table 2). For G15, Bouvier reported 30% unique couplings, several of which were validated in Ca2+ assays (Avet et al., 2020), whereas Inoue instead misses 13% of couplings present in GtP (Figure 7). This indicates that G15 couplings are underrepresented in Inoue’s data and in literature (annotated in GtP). The few published couplings for G15 are likely explained by its lack of expression in the cells most used for in vitro experiments, such as HEK293 cells (Avet et al., 2020), the lack until recently of enough sensitive sensors to directly measuring G15 activity, and by the lack or weak (at very high concentration) effect on this subtype by Gq/11 inhibitor tools YM-254890 and FR900359, respectively (Malfacini et al., 2019).
 
@@ -129,44 +337,44 @@ In all, our cross-dataset analysis has established a protocol and reference set 
 
 ## Materials and methods
 
-## Study design
+### Study design
 
 The primary objective of this study was to generate a unified map of G protein couplings (Figure 2) across the three available large datasets from the Bouvier (Avet et al., 2020) and Inoue (Inoue et al., 2019) groups, and the GtP database (Armstrong et al., 2020), respectively. To do this, we identified the Emax SD cut-off, quantitative normalization protocol, and aggregation of G proteins into families giving the best possible agreement between the GPCR-G protein couplings from the Bouvier and Inoue groups. This analysis also involved assessing the agreement of the Bouvier and Inoue group datasets and determining the number of high-confidence novel couplings supported by these two datasets but not reported in the GtP database. Furthermore, it included a benchmarking of techniques to determine which biosensor produces the most reproducible qualitative coupling determination (coupling vs. noncoupling) for each G protein family. To this end, we compared the three datasets to pinpoint, for each dataset and G protein family, the fraction of couplings supported by another dataset. The scientific analyses based on the map feature the most comprehensive analysis to date of GPCR-G protein selectivity. This was done by intersecting the 11 G proteins tested by both Bouvier and Inoue, within and across their families, with respect to the common and unique receptors that they couple to. Finally, the receptor profiles were also used to classify G proteins and to determine any co-correlation between different G protein subtypes and families to GPCRs.
 
-## Coupling datasets
+### Coupling datasets
 
 Updated spreadsheets containing the pEC50, Emax, basal signals, and SD values were supplied by Asuka Inoue. Basal signals, spontaneous AP-TGF-α release (in % of total AP- TGF-α surface expression) were recalculated from raw data of the previous coupling-profiling campaign (Inoue et al., 2019) and their SD values were computed from independent experiments (n ≥3). This file contains the NTS1 and TRH1 receptors not included in the previous publication (Inoue et al., 2019). In the Inoue dataset, the protease-activated receptors PAR3-4 had negative pEC50 values (concentration of mU/ml because the ligand, thrombin, was supplied with its enzymatic activity). For the easiness of integration into the coupling map, we added a value of 10 to their pEC50 values. Data qualities (sigmoidal curves) for the individual GPCR-G protein pairs were manually inspected and concentration-response curves that did not converge nor exceed a threshold (typically, 3% AP-TGF-α release) were regarded as no activity.
 
 The Bouvier dataset (n ≥3) contained some datapoints that were included or excluded based on dedicated analyses. First, we excluded ligand-promoted responses of overexpressed receptors that were equivalent to those of endogenously expressed receptors (yellow fill in tab ‘B-EmEC’ in Source data 1). Second, couplings with only approximate Emax and pEC50 values because the dose-response curve did not converge were only included if supported, and not contradicted, by the Inoue and/or GtP datasets (orange fill in tab ‘B-EmEC’ and analyzed separately in tab ‘UnconvergedDRV’ in Source data 1). This is because a coupling with an unprecise quantitative value is better than no coupling, especially when making qualitative comparisons (coupling vs. non-coupling). Based on these criteria seven couplings were included: 5-HT1D-Gz, BLT1-G11, FFA3-G13, GPR4-Gi1-2, GPR84-GoA, and κ-G12, and six couplings were excluded: CCR5-G14, CXCR5-Gq/G11/G14, GPR183-G13, and κ-G13.
 
-## Standard deviation cut-off
+### Standard deviation cut-off
 
 We made a special investigation of couplings that have a full dose-response curve but an Emax less than two SDs from the basal signal (red fill in tab ‘B-EmEC’ and analyzed separately in tab tabs ‘B- < 2SDs’ and ‘I- < 2SDs’ in Source data 1). To achieve the best possible separation of putative false and real but weak couplings, we identified the threshold value (a number of SDs from basal signal) that gives the best agreement between the Bouvier and Inoue dataset among the common receptors and G proteins tested by both groups. The obtained cut-off, 1.4 SDs, was applied as a filter to exclude all Bouvier and Inoue Emax and pEC50 values for couplings below this cut-off (columns with ‘ >1.4 SDs’ in the heading in tabs ‘B-EmEC’ and ‘I-EmEC’ in Source data 1). As a note, while intraday measurement error is small for the TGF-α shedding assay (typically, 1%–2% AP-TGF-α release), interday variability varies widely depending on cell conditions. Since the SD represents interday variability, the basal SD cut-off removes more couplings than the SD cut-off of ligand-induced signal or the significance of individual experiments. As a consequence, some of manually annotated couplings in the Inoue dataset are regarded as noncoupling by the basal SD cut-off criteria, including for P2RY2 and P2RY6 that had no couplings above this cut-off.
 
-## Generating a subset of comparable GPCR-G protein couplings
+### Generating a subset of comparable GPCR-G protein couplings
 
 To enable qualitative comparison of corresponding datapoints in the datasets from the Bouvier (Avet et al., 2020) and Inoue (Inoue et al., 2019) groups, we used the subset of 70 GPCRs present in both datasets and belonging to the same class, A (removed only two receptors from class B1). The quantitative comparisons focused on a smaller subset of 51 GPCRs tested with the same ligand and excluded noncoupling GPCR-G protein pairs, as they could not be represented by 0 values (e.g. an underrepresentation of couplings in a given datasets and G proteins, see Results). All analyses herein included the 12 G proteins: Gs, Gi1, Gi2, GoA, GoB, Gz, Gq, G11, G14, G15, G12, and G13. Golf and Gi3 could not be analyzed, as they had not been tested by the Bouvier group (Table 1). The Inoue data for the pairs Gi1-2, GoA-B, and Gq and G11, respectively, were generated with identical chimera inserting the Gα C-terminal hexamer into a Gq backbone (Inoue et al., 2019). Qualitative analyses compared the presence or absence of each GPCR-G protein coupling while the quantitative analyses were limited to common G protein couplings, that is, data points in which both the Bouvier and Inoue groups generated a pEC50 and Emax value.
 
-## Validation of comparability when Emax or reference agonist differ
+### Validation of comparability when Emax or reference agonist differ
 
 To get an overview of the distribution of data in the two datasets, we determined the pEC50 and Emax mean, median, min, max, span, and SD values and plotted box and whiskers plots for each G protein (Source data 1). This showed that the Emax values vary much more across the different G proteins than pEC50 values. The Emax variation is largest in the Bouvier data wherein G15 ranges across three orders of magnitude (16–1067). The Bouvier dataset has low means and spans for Gs (42 and 47) and G12 (71 and 101) indicating a narrow assay signal window (low signal to noise). We find that minimum-maximum normalization (to 100%) of each G protein across receptors gives a more uniform distribution (SDs for Bouvier: 19–31 and Inoue: 22–26, rightmost plot pair in Source data 1).
 
 Whereas both studies tested a majority of receptors with their endogenous ligand, surrogate agonists were used for 15 and 4 GPCRs in the data from the Inoue and Bouvier groups, respectively. Although those ligands were selected for their reference character with similar pharmacology to the endogenous ligand, they could introduce differences in a receptor’s G protein profile due to ligand-dependent signaling bias. Analysis of GPCR-G protein couplers and noncouplers (tab ‘BI’ in Source data 2) shows that on average 74% and 71% agreeing qualitative couplings (i.e. coupling vs. noncoupling GPCR-G protein pairs) for receptors tested with the same and different agonists, respectively. This is a rather small difference providing confirmation that receptors tested with different ligands can be compared on the qualitative coupling/noncoupling level and be included in the comparison of the different G protein coupling datasets and determination of novel G protein couplings.
 
-## Dataset integration into a unified coupling map – normalization and log(Emax/EC50) values
+### Dataset integration into a unified coupling map – normalization and log(Emax/EC50) values
 
 To enable quantitative correlation of the Bouvier and Inoue couplings, we further filtered the 70 common GPCRs to yield 51 common class A GPCRs tested with the same ligand (excluding 29 receptors tested with different ligands and two class B1 GPCRs). To assess the value of normalization, we calculated the average ‘similarity’ (Bouvier/Inoue ratio) of individual values (tabs ending with ‘-sim’ in Source data 4) and the ‘linear correlation’ (r2 value) of each receptor across all G proteins (reported below as averages of individual couplings and G proteins, respectively) (tabs ending with ‘-r2’ in Source data 4). Linear correlation was only done for receptors with at least three common G proteins/families. Minimum-maximum normalized Emax values were represented as percentage values while decimal values (0–1) were used for the calculation of log(Emax/EC50) values as recommended in Kenakin, 2017. For both the Bouvier and Inoue groups, the minimum and maximum represent the signal without (0%) and with (100%) an agonist, respectively, in each experiment replica. The minimum Emax value was therefore set 0 while the maximum was set to the highest value for the given G protein (first, use normalization) or receptor (second, tested but not used normalization).
 
 Minimum-maximum normalization of Emax measurements increased the average from 0.22 to 0.61 and the linear correlation r2 value from 0.28 to 0.30. In contrast, non-normalized pEC50 measurements have the most similar values (0.89 compared to 0.66) and an identical linear correlation (0.37). We combined the minimum-maximum normalized Emax and non-normalized EC50 values into log(Emax/EC50) (Kenakin, 2017). The log(Emax/EC50) values have an average similarity that is nearly as high (0.86 compared to 0.89) and an average linear correlation that is better (0.41 compared to 0.37) than for pEC50, the best individual measure. We did not apply a double normalization, that is, also across G proteins after across receptors, as this worsens the Emax, pEC50, and log(Emax/EC50) value similarity (0.61–0.39, 0.89–0.42, and 0.86–0.47, respectively) and linear correlation of each G protein across receptors (0.11–0.05, 0.49–0.20, and 0.46–0.23, respectively).
 
-## Dataset integration into a unified coupling map – G protein family aggregation
+### Dataset integration into a unified coupling map – G protein family aggregation
 
 Given that G proteins belong to families that are functionally grouped by sharing downstream signaling pathways, we next investigated the best member-to-family aggregation scheme – specifically, whether the most comparable G protein family values are obtained if using the maximum value from any single subtype or the mean of all subtype members. We found that aggregation using max rather than mean values gives a better similarity for Emax (0.69 vs. 0.65), marginally lower similarities for pEC50 (0.89 relative 0.90), and identical similarities for log(Emax/EC50) (0.88). However, max performs better overall than mean in the comparisons correlating a receptor across G proteins; Emax (0.63 and 0.53), pEC50 (0.56 and 0.56), and log(Emax/EC50) (0.65 and 0.59) or one G protein across receptors; Emax (0.29 and 0.20), pEC50 (0.71 and 0.74), and log(Emax/EC50) (0.69 and 0.71). Notably, the correlation of each receptor across max-aggregated G protein families compared to nonaggregated subtypes is much stronger when considering any of the three pharmacological parameters: Emax (0.63 vs. 0.36), pEC50 (0.56 vs. 0.30), and log(Emax/EC50) (0.65 vs. 0.41). Altogether, this establishes the highest value (max) as the aggregation that yields the most comparable quantitative value for G protein families.
 
-## Tissue expression analysis
+### Tissue expression analysis
 
 Consensus transcript expression levels were extracted for 50 different tissues aggregated into 16 organs or systems in the HPA (Uhlén et al., 2015), which also includes data from the GTEx project (Lonsdale et al., 2013). The G protein expression was quantified in the form of nTPM, which is a consensus normalized transcript expression value (see https://www.proteinatlas.org/about/assays+annotation#rna). The correlation analysis was performed using a default Pearson correlation analysis using Seaborn’s clustermap.
 
-## Statistical Analysis
+### Statistical Analysis
 
 The aggregated sample size is n = 3 or higher for all analyzed GPCR-G protein couplings. The specific sample size for each such coupling is described in the original articles reporting these data and referenced in the present manuscript. The Bouvier dataset contained some datapoints that were included or excluded based on dedicated analyses (see ‘Coupling datasets’ above). For all figures, the values for N, P, and the specific statistical test are included in the figure legend or associated manuscript text. For Figure 5, pairwise correlation of log(Emax/EC50) values was assessed as a measure of the strength of the linear relationship between two pathways. The pairwise distances between pathways were calculated in python scipy package using the spatial.distance.pdist method using the correlation metric. Statistical significance was determined by Pearson standard correlation coefficient with a two-tailed p-value as implemented in scipy’s stats.pearsonr method.

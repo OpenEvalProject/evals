@@ -12,12 +12,12 @@
 
 ### Affiliations
 
-1. https://ror.org/00b30xv10 Department of Neuroscience, Perelman School of Medicine, University of Pennsylvania Philadelphia United States
-2. https://ror.org/00b30xv10 Department of Psychology, University of Pennsylvania Philadelphia United States
-3. https://ror.org/00b30xv10 Department of Neurosurgery, University of Pennsylvania Philadelphia United States
-4. https://ror.org/00b30xv10 Department of Bioengineering, University of Pennsylvania Philadelphia United States
-5. https://ror.org/046rm7j60 Department of Neurosurgery, Neurosurgery, David Geffen School of Medicine and Semel Institute for Neuroscience and Human Behavior, University of California, Los Angeles Los Angeles United States
-6. https://ror.org/04mhzgx49 Faculty of Medicine, Tel-Aviv University Tel-Aviv Israel
+1. Department of Neuroscience, Perelman School of Medicine, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+2. Department of Psychology, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+3. Department of Neurosurgery, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+4. Department of Bioengineering, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+5. Department of Neurosurgery, Neurosurgery, David Geffen School of Medicine and Semel Institute for Neuroscience and Human Behavior, University of California, Los Angeles Los Angeles United States ([ROR:046rm7j60](https://ror.org/046rm7j60))
+6. Faculty of Medicine, Tel-Aviv University Tel-Aviv Israel ([ROR:04mhzgx49](https://ror.org/04mhzgx49))
 
 † Corresponding author
 
@@ -37,19 +37,96 @@ In humans, macroelectrode LFP recordings in epilepsy patients have revealed spor
 
 Subjects were implanted with depth electrodes in the hippocampus, EC, amygdala, parahippocampal gyrus (PHG), superior temporal gyrus (STG), orbitofrontal cortex (OFC), and anterior cingulate cortex (ACC). From microwires that extended from the tips of these depth probes, we recorded extracellular spikes from 1,854 single- and multi-units (hereafter called ‘neurons’ Table 1) as subjects navigated through a virtual environment while completing one of several spatial memory tasks whose data we pooled for this analysis (see ‘Materials and methods’). In total, we identified 10–71 (median = 30.0) neurons per session across 55 recording sessions, and the firing rates of these neurons were log-normally distributed (median = 2.0 Hz). In addition, every subject had at least one microwire bundle implanted in the hippocampus, permitting neuronal firing to be analyzed simultaneously with oscillatory activity in the hippocampal LFP.
 
-## Identifying oscillations in hippocampal microwire LFPs
+**Table 1.**
+ Neurons by region.Table shows how many subjects had at least one neuron in each brain region, how many neurons were recorded in each region, and the median, lower-, and upper-quartile firing rates for these neurons.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Region</th>
+      <th>Subjects</th>
+      <th>Neurons</th>
+      <th>Firing rate (Hz)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hippocampus</td>
+      <td>27</td>
+      <td>391</td>
+      <td>1.6 (0.6, 4.7)</td>
+    </tr>
+    <tr>
+      <td>Entorhinal cortex</td>
+      <td>19</td>
+      <td>341</td>
+      <td>2.3 (1.0, 5.5)</td>
+    </tr>
+    <tr>
+      <td>Amygdala</td>
+      <td>23</td>
+      <td>439</td>
+      <td>1.5 (0.6, 3.7)</td>
+    </tr>
+    <tr>
+      <td>Parahippocampal gyrus</td>
+      <td>15</td>
+      <td>217</td>
+      <td>2.2 (0.8, 4.5)</td>
+    </tr>
+    <tr>
+      <td>Superior temporal gyrus</td>
+      <td>5</td>
+      <td>139</td>
+      <td>3.4 (1.4, 8.6)</td>
+    </tr>
+    <tr>
+      <td>Orbitofrontal cortex</td>
+      <td>15</td>
+      <td>193</td>
+      <td>2.0 (0.9, 4.9)</td>
+    </tr>
+    <tr>
+      <td>Anterior cingulate cortex</td>
+      <td>8</td>
+      <td>134</td>
+      <td>3.1 (1.4, 6.8)</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>28</td>
+      <td>1854</td>
+      <td>2.0 (0.8, 5.0)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Identifying oscillations in hippocampal microwire LFPs
 
 Earlier studies that have reported oscillatory properties of the human hippocampus during navigation have primarily utilized implanted macroelectrodes that integrate activity over hundreds of thousands of neurons (Ekstrom et al., 2005; Watrous et al., 2011; Aghajan et al., 2017; Vass et al., 2016). As the microwires used in the present study record at far smaller spatial scales, we first considered whether microwires exhibit oscillatory properties comparable to those observed in macroelectrode LFPs. We focused on 1–30 Hz signals for this analysis, avoiding higher frequencies at which spike-related artifacts can complicate LFP interpretation (Manning et al., 2009; Buzsáki et al., 2012; Ray, 2015). Many individual electrodes showed peaks in spectral power that rose above the background 1/f line in session-averaged LFP spectrograms (Figure 1A), indicating the potential presence of oscillatory activity (Donoghue et al., 2020). The frequency and magnitude of these spectral peaks varied considerably across subjects (compare Figure 1A subpanels) yet appeared nearly exclusively between 2–20 Hz.
 
-To determine if spectral peaks were associated with sustained oscillations versus asynchronous, high-amplitude events, we used the BOSC (Better OSCillation) detection method to identify time-resolved oscillatory ‘bouts’ in each hippocampal microwire recording (Whitten et al., 2011). Briefly, BOSC (alternatively called ‘Pepisode’) defines an oscillatory bout according to two threshold criteria: Spectral power at a given frequency must exceed (1) a statistically defined amplitude above the 1/f spectrum, for (2) a minimum defined duration (we used 3 cycles; see ‘Materials and methods’ for more details). Figure 1B shows an example hippocampal LFP in which an initially aperiodic, ‘1/f-like’ signal transitioned into a strong, 6 Hz oscillation that persisted for 6 cycles, with the BOSC-defined oscillatory bout highlighted in pink.
+![Figure 1.](https://cdn.elifesciences.org/articles/85753/elife-85753-fig1-v2.jpg)
+
+**Figure 1.:** (A) Spectral power across the recording session is shown for hippocampal local field potentials (LFPs) from three example subjects. Arrows indicate spectral peaks above the background 1/f spectrum. (B) A hippocampal LFP trace (gray line = raw LFP, cyan line = 6 Hz–filtered LFP) is shown immediately before and during a Better OSCillation (BOSC)–detected theta oscillation, highlighted in pink. (C) Mean ± SEM percent time, across 28 subjects, that BOSC-detected oscillations were present in hippocampal LFPs at each frequency from 1 to 30 Hz.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85753/elife-85753-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Subpanels show the mean ± SEM percent time, across n subjects, that Better OSCillation (BOSC)–detected oscillations were present in each region at 1–30 Hz frequencies. Regions in which neurons were recorded from fewer subjects exhibit greater variance across subjects, so y-axis scaling varies among subpanels to accommodate the visualization of differing variances.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/85753/elife-85753-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) LFP traces show the mean waveform of the first three cycles of hippocampal oscillatory bouts at 3 Hz, 7 Hz, and 15 Hz, respectively. (B) Mean ± SEM asymmetry index of hippocampal oscillatory bouts at 3 Hz, 7 Hz, and 15 Hz. (C) Dice similarity coefficients show the overlap between 3 Hz, 7 Hz, and 15 Hz oscillatory bouts, respectively, and oscillatory bouts at all other examined frequencies in the hippocampal LFP. All figure panels show across-subject means after first aggregating each measure within-subject. Error bars and error shading show SEM across the 28 participants.
+
+To determine if spectral peaks were associated with sustained oscillations versus asynchronous, high-amplitude events, we used the BOSC (Better OSCillation) detection method to identify time-resolved oscillatory ‘bouts’ in each hippocampal microwire recording (Whitten et al., 2011). Briefly, BOSC (alternatively called ‘$P_{episode}$’) defines an oscillatory bout according to two threshold criteria: Spectral power at a given frequency must exceed (1) a statistically defined amplitude above the 1/f spectrum, for (2) a minimum defined duration (we used 3 cycles; see ‘Materials and methods’ for more details). Figure 1B shows an example hippocampal LFP in which an initially aperiodic, ‘1/f-like’ signal transitioned into a strong, 6 Hz oscillation that persisted for 6 cycles, with the BOSC-defined oscillatory bout highlighted in pink.
 
 Across subjects, hippocampal oscillatory bouts were present ∼1–6% of the time at the examined frequencies (Figure 1C; Figure 1—figure supplement 2 shows oscillatory prevalence in other regions for comparison). The prevalence of these oscillations was not uniform across frequencies, but instead clustered around three, well-separated bands with peaks at 3 Hz, 7 Hz, and 15 Hz. These frequencies are consistent with the hippocampal slow theta (alternatively ‘delta’ 2–4 Hz), fast theta (6–10 Hz), and beta band rhythms (13–20 Hz) previously described in macroelectrode recordings, and the prevalence of oscillatory bouts in our data was comparable to these earlier studies (Ekstrom et al., 2005; Lega et al., 2012; Watrous et al., 2013a; Goyal et al., 2020).
 
 As peaks at 3 Hz, 7 Hz, and 15 Hz could reflect harmonic resonance or waveform asymmetries of a single oscillation, we sought to verify whether oscillatory bouts at these frequencies occurred independently. Mean LFP waveforms during the first three cycles of each oscillatory bout showed symmetrical, sinusoidal shapes at each peak frequency, without any apparent harmonics (Figure 1—figure supplement 1A). We computed an asymmetry index for each waveform and confirmed that, on average across subjects, the 3 Hz and 7 Hz oscillations were nearly perfectly symmetrical, while the 15 Hz oscillation showed a very small asymmetry associated with a longer (by <1 ms) ascending than descending period (Figure 1—figure supplement 1B). Finally, we examined the extent to which oscillatory bouts at each peak frequency occurred at overlapping times, measuring the Dice similarity coefficient between oscillatory bouts at each peak frequency and all remaining frequencies. We found that the 3 Hz, 7 Hz, and 15 Hz oscillations occurred at largely separable times (Figure 1—figure supplement 1C). We concluded that hippocampal oscillatory bouts occur in three independent bands, centered at 3 Hz, 7 Hz, and 15 Hz.
 
-Oscillatory prevalence varied between these frequency bands (χ2(2)=13.9, p<0.0001, likelihood ratio test between linear mixed-effects models testing frequency band as a fixed effect and holding subject as a random effect), such that slow theta was more prevalent than fast theta (z=2.4, p=0.0336, post-hoc pairwise z-tests, Bonferroni-Holm–corrected for multiple comparisons) or beta oscillations (z=3.9, p=0.0002), while fast theta and beta oscillations occurred at similar rates (z=1.5, p=0.1218). These findings indicate that the human hippocampus exhibits several distinct, low-frequency oscillations that are conserved across spatial scales spanning several orders of magnitude, from microwire to macroelectrode fields. Moreover, theta oscillations are the predominant oscillatory component of the hippocampal LFP during virtual navigation.
+Oscillatory prevalence varied between these frequency bands ($χ^{2}(2)=13.9$, $p<0.0001$, likelihood ratio test between linear mixed-effects models testing frequency band as a fixed effect and holding subject as a random effect), such that slow theta was more prevalent than fast theta ($z=2.4$, $p=0.0336$, post-hoc pairwise z-tests, Bonferroni-Holm–corrected for multiple comparisons) or beta oscillations ($z=3.9$, $p=0.0002$), while fast theta and beta oscillations occurred at similar rates ($z=1.5$, $p=0.1218$). These findings indicate that the human hippocampus exhibits several distinct, low-frequency oscillations that are conserved across spatial scales spanning several orders of magnitude, from microwire to macroelectrode fields. Moreover, theta oscillations are the predominant oscillatory component of the hippocampal LFP during virtual navigation.
 
-## Individual neuron phase-locking to hippocampal oscillations
+### Individual neuron phase-locking to hippocampal oscillations
 
 Having confirmed the presence of hippocampal theta and beta oscillations, we next asked how these oscillations interacted with the timing of neuronal firing throughout recorded regions (Table 1). We quantified the phase-locking strength of individual neurons to ipsilateral hippocampal oscillations at a range of frequencies, 1–30 Hz. A neuron’s phase-locking strength was defined as the mean resultant length (MRL) of hippocampal LFP phases across spike times at a given frequency, z-scored against a null distribution of MRLs obtained by circularly shifting the neuron’s spike train 10,000 times at random (see ‘Materials and methods’). To control for the possibility that some neurons might phase-lock to asynchronous events in the hippocampal LFP, such as sharp waves or interictal discharges (Skelin et al., 2021; Reed et al., 2020), we restricted our analysis to spikes that coincided with BOSC-detected oscillatory bouts at each frequency, excluding 11% of neurons for which the number of included spikes did not suffice to accurately gauge phase-locking (see ‘Materials and methods’).
 
@@ -59,15 +136,23 @@ Figure 2A illustrates the phase-locking of an EC neuron whose spikes appear in r
 
 **Figure 2.:** (A) Spikes from an EC neuron (top, vertical lines) are shown alongside local field potential (LFP) activity in the hippocampus during a slow theta oscillation (gray line = raw LFP, cyan line = 3 Hz–filtered LFP). Panel (C) shows phase-locking statistics for this neuron across the recording session. (B–J) Shown are nine neurons in the HPC (left column), EC (middle column), AMY (right column, top two rows), and OFC (right column, bottom row) that phase-locked to oscillatory signals in the hippocampus while subjects navigated through a virtual environment. The left subpanel for each neuron shows the mean hippocampal LFP centered on the time of each spike. The middle subpanel shows the phase-locking strength at each frequency relative to a null distribution of circularly shifted spikes. The right subpanel shows the spike–phase distribution at the maximum phase-locking frequency. Dark gray (HPC), blue (EC), red (AMY), and purple (OFC) lines correspond to true spike times, while light gray lines correspond to circularly shifted spike times from a single draw from the null distribution. HPC = hippocampus; EC = entorhinal cortex; AMY = amygdala; OFC = orbitofrontal cortex.
 
-## Regional differences in hippocampal phase-locking
+### Regional differences in hippocampal phase-locking
 
-We next examined phase-locking at the population level, first considering the percentage of neurons in each region that significantly phase-locked to ipsilateral hippocampal LFP oscillations, irrespective of frequency. For each neuron, we derived an empirical phase-locking p-value by comparing the neuron’s maximum phase-locking strength, across frequencies, to its null distribution of maximum phase-locking strengths (see ‘Materials and methods’). We then applied false discovery rate (FDR) correction at α=0.05 to the distribution of p-values within each region. Finally, for each region outside the hippocampus, we performed the same analyses and statistical corrections with respect to LFP oscillations in each neuron’s local region, proximal to the electrode from which a neuron was recorded. This last step allowed us to directly compare phase-locking rates to local versus remote hippocampal oscillations.
+We next examined phase-locking at the population level, first considering the percentage of neurons in each region that significantly phase-locked to ipsilateral hippocampal LFP oscillations, irrespective of frequency. For each neuron, we derived an empirical phase-locking p-value by comparing the neuron’s maximum phase-locking strength, across frequencies, to its null distribution of maximum phase-locking strengths (see ‘Materials and methods’). We then applied false discovery rate (FDR) correction at $\alpha=0.05$ to the distribution of p-values within each region. Finally, for each region outside the hippocampus, we performed the same analyses and statistical corrections with respect to LFP oscillations in each neuron’s local region, proximal to the electrode from which a neuron was recorded. This last step allowed us to directly compare phase-locking rates to local versus remote hippocampal oscillations.
 
-Figure 3A illustrates these analyses. As expected, neurons within the hippocampus phase-locked to hippocampal oscillations at the highest rate among recorded regions, with 59% of hippocampal neurons significantly phase-locked after FDR correction. High phase-locking rates to the hippocampus were also found for neurons in the EC (41%) and amygdala (29%), with phase-locking rates in the EC significantly higher than those in the amygdala (z=3.6, p=0.0004, post-hoc pairwise z-test from a logistic mixed-effects model testing neuron region as a fixed effect and holding subject as a random effect). Whereas amygdala neurons phase-locked to local oscillations at significantly higher rates (46%) than to oscillations in the hippocampus (χ2(1)=32.6, p<0.0001), neurons in the EC phase-locked to local (40%) and hippocampal oscillations at indistinguishable rates (χ2(1)=0.2, p=0.6672, likelihood ratio tests between logistic mixed-effects models testing oscillation region as a fixed effect and holding subject as a random effect).
+Figure 3A illustrates these analyses. As expected, neurons within the hippocampus phase-locked to hippocampal oscillations at the highest rate among recorded regions, with 59% of hippocampal neurons significantly phase-locked after FDR correction. High phase-locking rates to the hippocampus were also found for neurons in the EC (41%) and amygdala (29%), with phase-locking rates in the EC significantly higher than those in the amygdala ($z=3.6$, $p=0.0004$, post-hoc pairwise z-test from a logistic mixed-effects model testing neuron region as a fixed effect and holding subject as a random effect). Whereas amygdala neurons phase-locked to local oscillations at significantly higher rates (46%) than to oscillations in the hippocampus ($χ^{2}(1)=32.6$, $p<0.0001$), neurons in the EC phase-locked to local (40%) and hippocampal oscillations at indistinguishable rates ($χ^{2}(1)=0.2$, $p=0.6672$, likelihood ratio tests between logistic mixed-effects models testing oscillation region as a fixed effect and holding subject as a random effect).
 
-These results stood in stark contrast to all remaining regions, where phase-locking to the hippocampus occurred at rates below 5%. Phase-locking to local oscillations was nonetheless prevalent in the PHG (24%) and STG (49%), indicating that many of these neurons fired at specific phases of LFP oscillations — just not those recorded in the hippocampus. In two regions of the prefrontal cortex, local phase-locking rates were relatively low (16% of OFC neurons and 6% of ACC neurons) although still significantly higher than phase-locking rates to the hippocampus (OFC: χ2(1)=20.9, p<0.0001; ACC: χ2(1)=5.6, p=0.0178; likelihood ratio tests between logistic mixed-effects models, as above). Altogether, these results highlight a triad of regions — the hippocampus, EC, and amygdala — that features strong spike-time synchronization to hippocampal oscillations, while neurons in more remote, cortical regions that are known to interact with hippocampus-dependent processes (Eichenbaum, 2000; Squire, 2011; Ranganath and Ritchey, 2012) phase-locked minimally to hippocampal rhythms.
+![Figure 3.](https://cdn.elifesciences.org/articles/85753/elife-85753-fig3-v2.jpg)
 
-## Frequencies of hippocampal phase-locking
+**Figure 3.:** (A) Bars show the percentage of neurons in each region that phase-locked to locally recorded local field potential (LFP) oscillations (light gray) and hippocampal LFP oscillations (dark gray). (Note that local and hippocampal LFP is identical for hippocampal neurons.) Phase-locking significance was set at false discovery rate (FDR)–corrected $p<0.05$ within each bar group. (B) Heatmaps show the phase-locking strength (z-MRL; color scale intensity) by hippocampal LFP oscillation frequency (x-axis) for all significantly phase-locked neurons (y-axis; each row = one neuron) in the HPC, EC, AMY, and remaining regions (CTX), respectively. Neurons in each region are sorted from top to bottom by frequency of maximum phase-locking strength. Neurons depicted match the dark gray bars in (A). (C) Mean ± SEM phase-locking strength by hippocampal oscillation frequency is shown for all neurons in each region, regardless of their individual phase-locking significance as depicted in (A) and (B). HPC = hippocampus; EC = entorhinal cortex; AMY = amygdala; PHG = parahippocampal gyrus; STG = superior temporal gyrus; OFC = orbitofrontal cortex; ACC = anterior cingulate cortex.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85753/elife-85753-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Heatmaps show the phase-locking strength (z-MRL; color scale intensity) by local oscillation frequency (x-axis) for all significantly phase-locked neurons (y-axis; each row = one neuron) in each region, respectively. Within the heatmap for each region, the order of neurons from top to bottom follows increasing preferred phase-locking frequency. The population of neurons depicted in these heatmaps matches the population represented by the light gray bars in Figure 3A.
+
+These results stood in stark contrast to all remaining regions, where phase-locking to the hippocampus occurred at rates below 5%. Phase-locking to local oscillations was nonetheless prevalent in the PHG (24%) and STG (49%), indicating that many of these neurons fired at specific phases of LFP oscillations — just not those recorded in the hippocampus. In two regions of the prefrontal cortex, local phase-locking rates were relatively low (16% of OFC neurons and 6% of ACC neurons) although still significantly higher than phase-locking rates to the hippocampus (OFC: $χ^{2}(1)=20.9$, $p<0.0001$; ACC: $χ^{2}(1)=5.6$, $p=0.0178$; likelihood ratio tests between logistic mixed-effects models, as above). Altogether, these results highlight a triad of regions — the hippocampus, EC, and amygdala — that features strong spike-time synchronization to hippocampal oscillations, while neurons in more remote, cortical regions that are known to interact with hippocampus-dependent processes (Eichenbaum, 2000; Squire, 2011; Ranganath and Ritchey, 2012) phase-locked minimally to hippocampal rhythms.
+
+### Frequencies of hippocampal phase-locking
 
 Individual neuron examples suggested that phase-locking to the hippocampus occurred most commonly at theta frequencies (Figure 2), although our analysis of hippocampal LFPs revealed oscillations extending up to ∼20 Hz (Figure 1). Does this observation of preferential theta phase-locking hold at the population level, and does the frequency of hippocampal phase-locking vary by a neuron’s region of origin? To answer these questions, we generated heatmaps of phase-locking strength by frequency for all neurons that phase-locked significantly to hippocampal oscillations at any frequency, as defined in the previous section (Figure 3B; these neurons correspond to the dark gray bars in Figure 3A). We made separate heatmaps for neurons in the hippocampus, EC, amygdala, and remaining regions, sorting the neurons in each region by frequency of maximum phase-locking strength. Figure 3—figure supplement 1 shows analogous heatmaps for neurons in each region with respect to local, rather than hippocampal, oscillations, matching the population of neurons represented by the light gray bars in Figure 3A.
 
@@ -77,11 +162,23 @@ Among neurons outside the hippocampus, phase-locking to hippocampal oscillations
 
 We confirmed these conclusions in a secondary analysis that examined the mean phase-locking strength at each frequency across all neurons in each region, regardless of individual phase-locking significance (Figure 3C). This approach benefited from not requiring an explicit significance threshold to be defined. Instead, we assumed that if the neurons in a given region did not phase-lock measurably to the hippocampus, then the mean phase-locking strength across these neurons would approach zero with increasing sample size, since they would exhibit no difference against the null distribution. Indeed, population phase-locking strengths were close to zero across frequencies for neurons in the PHG, STG, OFC, and ACC, consistent with the relative absence of individually phase-locked neurons in these regions. In contrast, neurons in both the EC and the amygdala phase-locked strongly to slow hippocampal theta frequencies, while neurons in the EC, but not the amygdala, exhibited a secondary rise in phase-locking strength to fast hippocampal theta. Finally, neurons in the hippocampus showed stronger phase-locking to hippocampal oscillations at all frequencies than neurons in any other region, with peaks in phase-locking strength at all three oscillatory bands: slow theta, fast theta, and beta.
 
-## Local oscillation effects on remote hippocampal phase-locking
+### Local oscillation effects on remote hippocampal phase-locking
 
 Our data reveal that neurons not only within the hippocampus, but in remote regions — particularly the entorhinal cortex and amygdala — phase-lock to hippocampal theta oscillations. How do these remote spike–phase associations occur? One possibility, given the strength of phase-locking to local oscillations (Figure 3—figure supplement 1), is that phase-locking to the hippocampus is an indirect phenomenon, facilitated by transient phase coupling between oscillations in different regions (Figure 4—figure supplement 1, blue arrows). In rodents, however, neurons in some regions phase-lock to hippocampal theta even in the absence of a local theta rhythm (Siapas et al., 2005), suggesting that interregional oscillatory coupling is not a strict requirement for remote spike–phase associations (Figure 4—figure supplement 1, red arrow).
 
 To examine how interregional oscillatory coupling contributed to remote spike–phase associations, we first considered the co-occurrence of oscillatory bouts in the hippocampus and in each extrahippocampal region. We reasoned that if remote spike–phase associations were mediated by oscillatory coupling, then regions where neurons phase-locked to the hippocampus at higher rates should also show higher levels of oscillatory co-occurrence. Consistent with this hypothesis, hippocampal oscillations overlapped more with oscillations in the EC and amygdala than with oscillations in the STG, OFC, and ACC at most frequencies (Figure 4A; overlap calculated using the Dice similarity coefficient). However, hippocampal and PHG oscillations also overlapped strongly despite the relative absence of PHG neuron phase-locking to the hippocampus (Figure 3A) and abundant PHG neuron phase-locking to local theta (Figure 3—figure supplement 1). Moreover, the overlap between local and hippocampal oscillations never exceeded 20% in any region at any frequency, indicating that neurons could, in principle, phase-lock to hippocampal oscillations independent of local oscillations, and vice versa. Overall, these results provide a mixed view for the hypothesis that interregional oscillatory coupling and remote spike–phase associations are interchangeable.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/85753/elife-85753-fig4-v2.jpg)
+
+**Figure 4.:** (A) Mean ± SEM (across 28 subjects) Dice coefficient across subjects shows the percent overlap between oscillatory bouts in the hippocampus and in each extrahippocampal region. (B) Bars show the percentage of neurons in each region that phase-locked to hippocampal oscillations when local oscillations were present (light gray) or absent (dark gray). Phase-locking significance was set at false discovery rate (FDR)-corrected $p<0.05$ within each bar group. (C) Heatmaps show the phase-locking strength by hippocampal LFP oscillation frequency for all significantly phase-locked neurons in the EC (top row), AMY (middle row), and remaining regions (CTX; bottom row), when hippocampal and local oscillations co-occurred (left column) versus when only hippocampal oscillations occurred (middle column). The right column shows the left column minus middle column values. Neurons in each region are sorted from top to bottom by frequency with the maximum phase-locking strength, and the sorting order is constant across columns within each row. Neurons depicted match the union of light gray and dark gray bars in (B). (D) Phase-locking to the hippocampus is shown during co-occurring local and hippocampal oscillations (left) or only hippocampal oscillations (right). Each subpanel shows the mean ± SEM (across 28 subjects) phase-locking strength by hippocampal oscillation frequency for all neurons in each region, regardless of their individual phase-locking significance as depicted in (B) and (C). HPC = hippocampus; EC = entorhinal cortex; AMY = amygdala; PHG = parahippocampal gyrus; STG = superior temporal gyrus; OFC = orbitofrontal cortex; ACC = anterior cingulate cortex.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85753/elife-85753-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Figure illustration shows two ways in which phase-locking of extrahippocampal neurons to hippocampal theta could occur. In the first scenario, an entorhinal cortex (EC) neuron phase-locks to the local theta rhythm, which in turn exhibits phase-synchrony with hippocampal theta (‘indirect phase-locking,’ blue arrows). In the second scenario, the EC neuron is directly entrained to hippocampal theta, such that phase-locking can occur even absent a local theta rhythm (‘direct phase-locking,’ red arrow).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/85753/elife-85753-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Bars show the percentage of neurons in each region that phase-locked to local oscillations when hippocampal oscillations were present (light gray) or absent (dark gray). Phase-locking significance was set at false discovery rate (FDR)–corrected $p<0.05$ within each bar group.
 
 Next, we directly compared how remote phase-locking to the hippocampus varied as a function of local phase-locking effects. For each extrahippocampal neuron, we divided spikes into two categories: (1) spikes that occurred when an oscillation was present in both the hippocampus and a neuron’s local region, and (2) spikes that occurred when an oscillation was present in the hippocampus but not the neuron’s local region. As chance-level phase-locking values depend on sample size, for each neuron we matched the number of spikes in each group, at each frequency, excluding neurons with insufficient sample size (<50 spikes at any frequency; see ‘Materials and methods’). We then applied the same methods for determining phase-locking strength and significance as described in the previous section.
 
@@ -107,56 +204,100 @@ Still little is known about the relations between theta phase-locking and human 
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Subjects were 28patients with pharmacoresistant epilepsy who were implanted with depth electrodes to monitor seizure activity. Clinical teams determined the location and number of implanted electrodes in each patient. We conducted bedside cognitive testing on a laptop computer. Subjects completed one of two experiments (see ‘Spatial navigation tasks’): Yellow Cab (18 subjects) or Goldmine (10 subjects). Demographic information was unavailable for Yellow Cab participants and is given below in aggregate for 11 Goldmine subjects, including the 10 analyzed subjects plus 1 pilot subject for whom technical problems prevented successful data collection.
 
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Sex</th>
+      <th colspan="2">Race</th>
+      <th colspan="2">Age</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Female</td>
+      <td>7</td>
+      <td>Asian</td>
+      <td>1</td>
+      <td>20–25</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>4</td>
+      <td>Black</td>
+      <td>1</td>
+      <td>25–31</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>White</td>
+      <td>6</td>
+      <td>32–37</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Unknown or Not Reported</td>
+      <td>3</td>
+      <td>38–43</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
 All testing was completed under informed consent. Institutional review boards at the University of California, Los Angeles, and the University of Pennsylvania approved all experiments. The number of the UCLA IRB protocol on which the Goldmine experiment was conducted is #10–000973.
 
-## Spatial navigation tasks
+### Spatial navigation tasks
 
 We analyzed data from 55 recording sessions (1–4 sessions per subject, mean duration = 33.6 min). During each session, subjects played one of two first-person navigation games, Yellow Cab or Goldmine, in which they freely explored a virtual environment and retrieved objects or navigated to specific locations. Previous studies have described the details of these experiments (Ekstrom et al., 2003; Jacobs et al., 2010; Schonhaut et al., 2023); for the present study, we pooled data across these studies to generate a large sample for conducting electrophysiological analyses. We analyzed intervals in which subjects could freely navigate through the virtual environment.
 
-## Recording equipment
+### Recording equipment
 
 Each subject was implanted with 6–12 Behnke-Fried depth electrodes that feature macroelectrode contacts for clinical monitoring and 40 µm–diameter, platinum-iridium microwires for measuring microscale LFPs and extracellular action potentials (Fried et al., 1999). Electrode localizations were confirmed by the clinical team from post-operative structural MRIs or post-operative CT scans co-registered to pre-operative structural MRIs. Microwires were packaged in bundles of eight high-impedance recording wires and one low-impedance wire that served as the recording reference. Each microwire bundle was threaded through the center of a depth probe and extended 5 mm from the implanted end. As microwires splay out during implantation and cannot reliably be visualized on post-operative scans, electrode localizations are regarded with a ∼5 mm radius of uncertainty that preclude analyses at the level of regional substructures or hippocampal layers or subfields. Microwire LFPs were amplified and sampled at 28–32 kHz on a Neuralynx Cheetah (Neuralynx, Tucson, AZ) or Blackrock NeuroPort (Blackrock Microsystems, Salt Lake City, UT) recording system.
 
-## Spike sorting
+### Spike sorting
 
 We performed semi-automatic spike sorting and quality inspection on each microwire channel using the WaveClus software package in Matlab (Quiroga et al., 2004), as previously described (Ekstrom et al., 2003; Schonhaut et al., 2023). We isolated 0–8 units on each microwire channel, retaining both single-units and multi-units for subsequent analysis while removing units with low-amplitude waveforms relative to the noise floor, non-neuronal waveforms, inconsistent firing across the recording session, or other data quality issues. Spikes that clustered into separate clouds in reduced dimensional space were retained as separate units, while spikes that clustered into single clouds were merged. Repeated testing sessions occurred on different days, and we spike-sorted and analyzed these data separately.
 
-## LFP preprocessing and spectral feature extraction
+### LFP preprocessing and spectral feature extraction
 
 Microwire LFPs were downsampled to 1000 Hz, bandpass-filtered between 0.1–80 Hz using a zero-phase Hann window, and notch-filtered at 60 Hz to remove electrical line noise. Bandpass frequencies were selected to reduce signal drift at the low end and spike waveform artifacts (or other high-amplitude noise) at the high end, while maintaining sufficient distance from frequencies of interest for analysis. Lastly, we identified and removed a small number of dead or overly noisy channels, identified as those for which the mean, cross-frequency spectral power differed by >2 standard deviations from the mean spectral power across channels in each microwire bundle. The remaining LFP channels were manually inspected prior to further analysis as a secondary quality inspection step. Lastly, we extracted instantaneous spectral power and phase estimates for each preprocessed LFP channel by convolving the time domain signal with five-cycle complex wavelets at 30 frequencies, linearly spaced from 1 to 30 Hz.
 
-## Oscillatory bout identification
+### Oscillatory bout identification
 
-For each LFP channel, we identified time-resolved oscillatory bouts at the 30 frequencies defined in the previous section using the BOSC (Better OSCillation) detection method, as described previously (Whitten et al., 2011). BOSC defines an oscillatory bout according to two threshold criteria: a power threshold, PT, and a duration threshold, DT.PT is set to the 95th percentile of the theoretical χ2 probability distribution of power values at each frequency, under the null hypothesis that powers can be modeled as a straight power law decaying function (the ‘1/f’ spectrum). Defining PT for each frequency of interest requires first finding a best fit for 1/f. We obtained this fit by implementing the recently developed FOOOF (Fitting Oscillations & One-Over F) algorithm, which uses an iterative fitting procedure to decompose the power spectrogram into oscillatory components and a 1/f background fit (Donoghue et al., 2020). To avoid assuming that the 1/f spectrum was stationary across the recording session, we divided the LFP into 30 s epochs and re-fit 1/f (and PT, by extension) in each epoch. Finally, we set DT=3/f, consistent with the convention used in previous studies (Ekstrom et al., 2005; Watrous et al., 2011; Aghajan et al., 2017) that power at a given frequency f must exceed PT for a minimum of three cycles for an oscillatory bout to be detected.
+For each LFP channel, we identified time-resolved oscillatory bouts at the 30 frequencies defined in the previous section using the BOSC (Better OSCillation) detection method, as described previously (Whitten et al., 2011). BOSC defines an oscillatory bout according to two threshold criteria: a power threshold, $P_{T}$, and a duration threshold, $D_{T}.P_{T}$ is set to the 95th percentile of the theoretical $χ^{2}$ probability distribution of power values at each frequency, under the null hypothesis that powers can be modeled as a straight power law decaying function (the ‘1/f’ spectrum). Defining $P_{T}$ for each frequency of interest requires first finding a best fit for 1/f. We obtained this fit by implementing the recently developed FOOOF (Fitting Oscillations & One-Over F) algorithm, which uses an iterative fitting procedure to decompose the power spectrogram into oscillatory components and a 1/f background fit (Donoghue et al., 2020). To avoid assuming that the 1/f spectrum was stationary across the recording session, we divided the LFP into 30 s epochs and re-fit 1/f (and $P_{T}$, by extension) in each epoch. Finally, we set $D_{T}=3/f$, consistent with the convention used in previous studies (Ekstrom et al., 2005; Watrous et al., 2011; Aghajan et al., 2017) that power at a given frequency $f$ must exceed $P_{T}$ for a minimum of three cycles for an oscillatory bout to be detected.
 
 Oscillatory prevalence was calculated within three frequency bands of interest, defined as slow theta (2–4 Hz), fast theta (6–10 Hz), and beta (13–20 Hz). For each subject, we calculated the average oscillatory bout percentage across recording sessions, hippocampal microwire channels, and frequencies within each band. The resulting matrix provided a single measure of hippocampal LFP oscillation prevalence within each band, from each subject. Differences between bands were assessed using a linear mixed-effects model to account for repeated samples within subjects.
 
-## Waveform asymmetry
+### Waveform asymmetry
 
-Waveform asymmetry analyses were confined to oscillatory bouts as identified in the previous section. An inspection of the 3 Hz, 7 Hz, and 15 Hz oscillations averaged during the time windows corresponding to the first three cycles of each bout — 1000 ms, 428 ms, and 200 ms, respectively — qualitatively assessed asymmetries in these waveforms. Then, an asymmetry index was computed in keeping with previously established methods (Roux et al., 2022) for 3 Hz, 7 Hz, and 15 Hz waveforms. After initial preprocessing of the microwire LFPs (see ‘LFP preprocessing and spectral feature extraction’), we applied a bandpass linear-phase Hamming-windowed FIR filter within a window of ±2 Hz centered at the frequency of interest, and identified local maxima and minima in windows equivalent to a half-cycle at this frequency. After aligning these extrema in the filtered LFP trace to the nearest peaks and troughs within a quarter-cycle in the raw, unfiltered LFP trace, we found the average difference between the time taken to ascend from a trough to the next peak and to descend from the peak to the subsequent trough. We normalized this average difference to the range (−1,1) by dividing by the cycle length fsf, where fs is the sampling frequency, and f is the frequency of interest, giving the asymmetry index value. The asymmetry index values for each hippocampal recording were averaged first within subjects and then across subjects.
+Waveform asymmetry analyses were confined to oscillatory bouts as identified in the previous section. An inspection of the 3 Hz, 7 Hz, and 15 Hz oscillations averaged during the time windows corresponding to the first three cycles of each bout — 1000 ms, 428 ms, and 200 ms, respectively — qualitatively assessed asymmetries in these waveforms. Then, an asymmetry index was computed in keeping with previously established methods (Roux et al., 2022) for 3 Hz, 7 Hz, and 15 Hz waveforms. After initial preprocessing of the microwire LFPs (see ‘LFP preprocessing and spectral feature extraction’), we applied a bandpass linear-phase Hamming-windowed FIR filter within a window of ±2 Hz centered at the frequency of interest, and identified local maxima and minima in windows equivalent to a half-cycle at this frequency. After aligning these extrema in the filtered LFP trace to the nearest peaks and troughs within a quarter-cycle in the raw, unfiltered LFP trace, we found the average difference between the time taken to ascend from a trough to the next peak and to descend from the peak to the subsequent trough. We normalized this average difference to the range $(−1,1)$ by dividing by the cycle length $\frac{f_{s}}{f}$, where $f_{s}$ is the sampling frequency, and $f$ is the frequency of interest, giving the asymmetry index value. The asymmetry index values for each hippocampal recording were averaged first within subjects and then across subjects.
 
-## Phase-locking strength and significance
+### Phase-locking strength and significance
 
-We computed phase-locking strengths at 30 frequencies (1–30 Hz with 1 Hz spacing) between each neuron’s spike times and oscillations in the hippocampus, as well as between each neuron’s spike times and oscillations in the neuron’s local region (other microwires in the same bundle, excluding the neuron’s own recording wire due to spike contamination of the LFP). For both of these comparisons, we retained only spikes that coincided with BOSC-detected oscillatory bouts to avoid reporting spike–phase associations with non-oscillatory LFP phenomena. Phase-locking strength was then calculated as follows. First, at each frequency, we calculated the MRL of hippocampal LFP phases across spike times. The MRL is equal to the sum of phase angle unit vectors divided by the total number of samples, yielding a measure from 0 to 1 that indicates the extent to which the phase distribution is unimodal. This metric depends on sample size, with low n yielding artificially high values due to chance clustering of phases. For this reason, we excluded neurons with <50 spikes at all frequencies of interest. Several other factors can artificially inflate the MRL, including nonuniform phase distributions in an underlying LFP signal, or autocorrelated spike times (Siapas et al., 2005). To control for these potential confounds, we used a permutation-based procedure in which we circularly shifted each neuron’s spike train at random and then recalculated MRLs at each frequency, repeating this process 10,000 times per neuron to generate a null distribution. At each frequency, we then calculated phase-locking strength as the true MRL z-scored against null distribution MRLs at the same frequency.
+We computed phase-locking strengths at 30 frequencies (1–30 Hz with 1 Hz spacing) between each neuron’s spike times and oscillations in the hippocampus, as well as between each neuron’s spike times and oscillations in the neuron’s local region (other microwires in the same bundle, excluding the neuron’s own recording wire due to spike contamination of the LFP). For both of these comparisons, we retained only spikes that coincided with BOSC-detected oscillatory bouts to avoid reporting spike–phase associations with non-oscillatory LFP phenomena. Phase-locking strength was then calculated as follows. First, at each frequency, we calculated the MRL of hippocampal LFP phases across spike times. The MRL is equal to the sum of phase angle unit vectors divided by the total number of samples, yielding a measure from 0 to 1 that indicates the extent to which the phase distribution is unimodal. This metric depends on sample size, with low $n$ yielding artificially high values due to chance clustering of phases. For this reason, we excluded neurons with <50 spikes at all frequencies of interest. Several other factors can artificially inflate the MRL, including nonuniform phase distributions in an underlying LFP signal, or autocorrelated spike times (Siapas et al., 2005). To control for these potential confounds, we used a permutation-based procedure in which we circularly shifted each neuron’s spike train at random and then recalculated MRLs at each frequency, repeating this process 10,000 times per neuron to generate a null distribution. At each frequency, we then calculated phase-locking strength as the true MRL z-scored against null distribution MRLs at the same frequency.
 
-To determine which neurons phase-locked significantly to local or hippocampal oscillations, we compared a neuron’s maximum phase-locking strength across frequencies to a null distribution of maximum phase-locking strengths generated by taking the maximum of the null MRLs’ z-scores across frequencies. We calculated an empirical p-value for each neuron with the formula p=r+1n+1, where r is the number of permuted values ≥ the true value for a given test statistic, and n is the total number of permutations (North et al., 2002). Finally, we FDR–corrected p-values with the adaptive linear step-up procedure, which controls the expected proportion of true null hypotheses among rejected nulls for both independent and positively dependent test statistics, and has greater statistical power than the commonly used Benjamini-Hochberg procedure (Benjamini et al., 2006). FDR correction was applied separately to p-values from each neuron region × LFP region (local or hippocampal) pair to control the expected proportion of false positives within each of these groups. Neurons with FDR-corrected p<0.05 were deemed significantly phase-locked.
+To determine which neurons phase-locked significantly to local or hippocampal oscillations, we compared a neuron’s maximum phase-locking strength across frequencies to a null distribution of maximum phase-locking strengths generated by taking the maximum of the null MRLs’ z-scores across frequencies. We calculated an empirical p-value for each neuron with the formula $p=\frac{r+1}{n+1}$, where $r$ is the number of permuted values $\geq$ the true value for a given test statistic, and $n$ is the total number of permutations (North et al., 2002). Finally, we FDR–corrected p-values with the adaptive linear step-up procedure, which controls the expected proportion of true null hypotheses among rejected nulls for both independent and positively dependent test statistics, and has greater statistical power than the commonly used Benjamini-Hochberg procedure (Benjamini et al., 2006). FDR correction was applied separately to p-values from each neuron region × LFP region (local or hippocampal) pair to control the expected proportion of false positives within each of these groups. Neurons with FDR-corrected $p<0.05$ were deemed significantly phase-locked.
 
-## Interregional oscillatory co-occurrence
+### Interregional oscillatory co-occurrence
 
-Co-occurrence rates were determined between hippocampal and extrahippocampal oscillatory bouts by quantifying the Dice coefficient between each hippocampal electrode and each ipsilateral, extrahippocampal electrode. The Dice coefficient measures the similarity from 0 to 1 between two sets A and B, with 0 indicating that the sets do not overlap and 1 indicating that A and B are equal: Dice=2|A∩B||A|+|B|, where |A| and |B| correspond to the number of elements in each set and |A∩B| is the number of elements common to both sets. We calculated these values using binarized oscillation detection vectors (oscillation present or absent) as defined in ‘Oscillatory bout identification,’ separately at each 1–30 Hz frequency.
+Co-occurrence rates were determined between hippocampal and extrahippocampal oscillatory bouts by quantifying the Dice coefficient between each hippocampal electrode and each ipsilateral, extrahippocampal electrode. The Dice coefficient measures the similarity from 0 to 1 between two sets $A$ and $B$, with 0 indicating that the sets do not overlap and 1 indicating that $A$ and $B$ are equal: $Dice=\frac{2|A∩B|}{|A|+|B|}$, where $|A|$ and $|B|$ correspond to the number of elements in each set and $|A∩B|$ is the number of elements common to both sets. We calculated these values using binarized oscillation detection vectors (oscillation present or absent) as defined in ‘Oscillatory bout identification,’ separately at each 1–30 Hz frequency.
 
-## Phase-locking to hippocampal oscillations during co-occurring or absent local oscillations
+### Phase-locking to hippocampal oscillations during co-occurring or absent local oscillations
 
-We divided spikes from each extrahippocampal neuron into two groups according to the following criteria: (1) BOSC-detected oscillations were present in both the hippocampus and a neuron’s local region, or (2) BOSC-detected oscillations were present in the hippocampus but not the neuron’s local region (Figure 4). These spike subsets were determined separately for each 1–30 Hz frequency. Phase-locking strengths were then calculated separately within each spike group, at each frequency, and significance determined relative to null distributions as described in ‘Phase-locking strength and significance.’ As chance-level phase-locking values depend on sample size, for each neuron we matched the number of spikes in each group, at each frequency, excluding neurons with insufficient sample size (<50 spikes at any frequency). For example, for neuron i at frequency j, if 200 spikes occurred when local and hippocampal oscillations were both present and 150 spikes occurred when only hippocampal oscillations were present, we selected 150 spikes from the first group at random and proceeded to calculate phase-locking strength in each group. The same analytical approach was applied to a supplemental analysis (Figure 4—figure supplement 2) in which extrahippocampal spikes were subdivided as: (1) local and hippocampal oscillations were both present, or (2) local oscillations were present but hippocampal oscillations were absent.
+We divided spikes from each extrahippocampal neuron into two groups according to the following criteria: (1) BOSC-detected oscillations were present in both the hippocampus and a neuron’s local region, or (2) BOSC-detected oscillations were present in the hippocampus but not the neuron’s local region (Figure 4). These spike subsets were determined separately for each 1–30 Hz frequency. Phase-locking strengths were then calculated separately within each spike group, at each frequency, and significance determined relative to null distributions as described in ‘Phase-locking strength and significance.’ As chance-level phase-locking values depend on sample size, for each neuron we matched the number of spikes in each group, at each frequency, excluding neurons with insufficient sample size (<50 spikes at any frequency). For example, for neuron $i$ at frequency $j$, if 200 spikes occurred when local and hippocampal oscillations were both present and 150 spikes occurred when only hippocampal oscillations were present, we selected 150 spikes from the first group at random and proceeded to calculate phase-locking strength in each group. The same analytical approach was applied to a supplemental analysis (Figure 4—figure supplement 2) in which extrahippocampal spikes were subdivided as: (1) local and hippocampal oscillations were both present, or (2) local oscillations were present but hippocampal oscillations were absent.
 
-## Statistics
+### Statistics
 
-Linear and logistic mixed-effects models with fixed slopes and random intercepts were performed using the lme4 package in R (Baayen et al., 2008). All models included a single random effect of subject and a single fixed effect of interest, as specified in each result. p-values were obtained from likelihood ratio tests between nested models (with versus without inclusion of the fixed effect). We adopted this approach to control for inter-subject differences in our data that conventional methods such as linear regression would overlook, as they assume independence between neurons. This approach was particularly important for comparing effects between regions, as each subject had electrodes in only a subset of the regions that we analyzed. For models in which the independent variable was a categorical measure with three or more levels, if the likelihood ratio test revealed a significant effect (p<0.05), we performed post-hoc, pairwise z-tests on the fitted model terms with Bonferroni-Holm correction for multiple comparisons were noted in the Results.
+Linear and logistic mixed-effects models with fixed slopes and random intercepts were performed using the lme4 package in R (Baayen et al., 2008). All models included a single random effect of subject and a single fixed effect of interest, as specified in each result. p-values were obtained from likelihood ratio tests between nested models (with versus without inclusion of the fixed effect). We adopted this approach to control for inter-subject differences in our data that conventional methods such as linear regression would overlook, as they assume independence between neurons. This approach was particularly important for comparing effects between regions, as each subject had electrodes in only a subset of the regions that we analyzed. For models in which the independent variable was a categorical measure with three or more levels, if the likelihood ratio test revealed a significant effect ($p<0.05$), we performed post-hoc, pairwise z-tests on the fitted model terms with Bonferroni-Holm correction for multiple comparisons were noted in the Results.
 
-## Software
+### Software
 
 Mixed-effects models were fit using the lme4 package in R (Baayen et al., 2008). Spike sorting was performed using the Wave_clus software package in Matlab (Quiroga et al., 2004). All additional analyses were performed, and plots were generated, using code that was developed in-house in Python 3, utilizing standard libraries and the following publicly available packages: astropy (The Astropy Collaboration et al., 2022), fooof (Donoghue et al., 2020), matplotlib (Hunter, 2007), mne (Gramfort et al., 2013), numpy (Harris et al., 2020), pandas (McKinney, 2010), seaborn (Waskom, 2021), scipy (Virtanen et al., 2020), statsmodels (Seabold and Perktold, 2010), and xarray (Hoyer and Hamman, 2017).

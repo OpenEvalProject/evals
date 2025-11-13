@@ -39,31 +39,85 @@ Here, we leverage the small and optically accessible larval zebrafish to identif
 
 ## Results
 
-## Whole brain activity mapping of appetite-regulating regions
+### Whole brain activity mapping of appetite-regulating regions
 
 Larval zebrafish hunt prey such as paramecia through a sequence of motor actions that has been considered a hardwired reflex response to external prey stimuli (Bianco et al., 2011; Semmelhack et al., 2015; Trivedi and Bollmann, 2013). Only recently has evidence emerged that this behavior is flexibly modulated by satiation state (Filosa et al., 2016; Jordi et al., 2015; Jordi et al., 2018) and that larvae at 7 days post-fertilization (dpf) display enhanced hunting and enhanced food intake after a period of food deprivation. A robust readout of food intake in larval zebrafish was obtained both by the ingestion of fluorescently-labeled paramecia and by behavioral analysis, using protocols adapted for this study (Johnson et al., 2019; Jordi et al., 2015; Jordi et al., 2018; Shimada et al., 2012). A 2 hr period of food deprivation robustly enhances subsequent food intake (Figure 1a). Up to 15 min after the presentation of prey, food-deprived animals display a strong upregulation of hunting and prey intake relative to fish that have continuous access to food (referred to as fed fish; Figure 1a), on the basis of fluorescent food ingestion (left panel, Figure 1a) and hunting bouts (right panel, Figure 1a). We refer to this behavior as ‘voracious feeding’. Finally, as the fish consume food, their rate of food intake declines to that of continuously fed fish (Figure 1a). These behaviors likely represent internal states that are commonly referred to as hunger and satiety, and reflect the animal’s underlying caloric or metabolic needs.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig1-v2.jpg)
+
+**Figure 1.:** (a) Top: The protocols used to quantify feeding behavior in larval zebrafish. At 7 or 8 dpf, larvae were either food-deprived for 2 hr, or fed with excess paramecia for this duration. After 2 hr (2–4 hr in the case of behavioral imaging), they were subject to a quick wash, followed either by: 1) addition of excess fluorescently-labeled paramecia (left), 2) high-resolution behavioral imaging (right; see Johnson et al., 2019, and Materials and methods). Gut fluorescence is both cumulative and diminished by digestion (Jordi et al., 2015) and so lags the dynamics of hunting behavior. Bottom left: Gut fluorescence measurements of food-deprived (red) or fed (blue) fish as a function of duration of feeding labeled paramecia. Groups of fed or food-deprived larvae were fixed at the indicated time points (fed: n = 7/18/19/17/17 fish, food-deprived: n = 8/23/20/14/15 fish). Food-deprived fish had significantly higher gut fluorescence than fed fish overall (p = 7.5859×10−10, Two-way ANOVA, asterisk indicates corrected p-values<0.05. Bottom right: The probability of performing a hunting-related swim bout across fed and food-deprived fish groups in 3 min time bins over 45 min. Error bars represent 90% confidence intervals. For all bins except those indicated with triangles, the null hypothesis that initial feeding condition has no effect on hunting-bout probability is rejected (p<0.00001, Fisher’s Exact Test comparing binomial probability distributions per bin). Fed: n = 85655 bouts from 73 fish; Food-deprived: n = 75357 bouts from 57 fish. Since the rate of food intake and hunting behavior was highest in the first 15 min (voracious feeding phase, gray boxes), we chose this time point for subsequent MAP-mapping experiments. (b) Brain-wide activity mapping of food-deprived (Dep.) fish exposed to food for 15 min, with subtraction of activity in continuously fed (Fed) fish. Data from nine experiments were combined to generate this difference map based on anti-pERK staining fluorescence. Relative activation from feeding after food deprivation yields activated regions including the telencephalon (Tel), Arborization field 7 (AF7), cerebellum (CB), hindbrain (HB), Vagal ganglion (VG) and lateral lobe of the intermediate hypothalamus (LH). Reduced activity was observed in the caudal hypothalamus (cH) and some areas of the telencephalon. Scale bar = 100 μm. Also see Video 1. (c) ROI-specific pixel intensity analysis of LH and cH regions in nine independent MAP-mapping experiments (20–30 fish per treatment per experiment). The cH or LH ROI intensities of each individual fish was normalized to the mean cH or LH ROI intensity of all fed fish. Food-deprived fish consistently displayed higher LH and lower cH pERK fluorescence after the onset of feeding (p = 0.0019 for both cH and LH, one-tailed Wilcoxon signed-rank test). (d) Z-projection of same MAP-map as described in (b) in planes revealing the hypothalamus (right panel), where lateral regions (e.g. lateral hypothalamus, LH) display strong relative activation and medial regions (e.g. caudal hypothalamus, cH) display reduced activity in when food-deprived animals were fed for 15 min. The map is overlaid onto a stack for the transgenic line Tg(VMAT:GFP) (left panel) to localize the cH region. (e) Six examples of independent component analysis (ICA) maps. Voxels for each recovered independent component (IC) are shown as maximum projections, with intensity proportional to the z-score of the loadings of the ICA signal. These ICs, along with others (22/30) highlight LH and cH regions of opposite loadings, suggesting they may be included in a network that displays anti-correlated activity patterns between the cH and LH. A subset of these ICs (e.g. #14 and #24) only showed partial anti-correlation between the cH and the LH. All ICs are shown in Figure 1—figure supplement 3. Positive (+) loading and Negative (-) loadings (z-score values of IC signals) are reflected in green and magenta, respectively. (f) Confocal micrographs of anti-pERK antibody stained brains from animals that were continuously fed (panel (i), left), food-deprived for 2 hr (panel (i), center) and fed for 5 min after food deprivation (panel (i), right). cH (ii) and LH (iii) insets are shown at higher magnification on the bottom and right side respectively. The lateral hypothalamus is shown with subdivisions lateral lateral hypothalamus (lLH) and medial lateral hypothalamus (mLH). (i) scale bar: 50 μm; (ii) and (iii) scale bar: 20 μm. Fish are mounted ventral side up. (g) Quantification of cH and LH activities by normalized anti-pERK fluorescence intensity averaging. The normalized anti-pERK staining intensity for each region (ROI) was obtained by dividing the anti-pERK fluorescence from each fish (in all experimental groups) by the average anti-pERK fluorescence for the same ROI of continuously fed fish. Quantitative analysis performed on fish in six independent conditions (n = 13/11/9/9/13/12). Normalized anti-pERK fluorescence intensity (cH/mLH/lLH): Fed vs Dep. (p = 0.016/0.12/0.11), Dep. vs Dep. + 5 min food (p = 3.1×10−4/9.9 × 10−5/0.020), Fed vs Dep. + 5 min food (p = 0.0097/8.5 × 10−4/0.11). Asterisks denote p<0.05, one-tailed Wilcoxon rank-sum test. (h) The active cell count metric (bottom panels) was determined as described in Figure 1—figure supplement 4 by a thresholding protocol to isolate and count individual pERK-positive cells within a z-stack. This approach could be reliably performed for areas of sparse active cells (e.g. mLH and lLH) but not where individually labeled pERK-positive neurons are not well separated (such as the cH). Active cell count (mLH/lLH): Fed vs Dep. (p = 0.001/0.0038), Dep. vs Dep. + 5 min food (p = 9.7×10−5/1.3 × 10−5), Fed vs Dep. + 5 min food (p = 0.0038/0.048). Asterisks denote p<0.05, one-tailed Wilcoxon rank-sum test. (i) Schematic of inferred cH and LH activity in relation to feeding behavior. Note that, based on data in Figure 2, the LH active cell count appears to decline more rapidly than the rise in cH activity (based on cH average fluorescence intensity). Data plotted in Figure 1 are provided in Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Expression patterns of a number of feeding-related peptides in the zebrafish hypothalamus, based on antibody-staining or transgenic labels (see Materials and methods). HCRT = hypocretin (orexin), CART = cocaine and amphetamine related transcript MCH = melanin concentrating hormone, TH = tyrosine hydroxylase (labels dopaminergic and/or noradrenergic neurons), MSH = alpha melanocyte stimulating hormone, AgRP = Agouti related peptide, NPY = neuropeptide Y, VMAT = vesicular monoamine transporter (labels dopaminergic (DA) and serotonergic neurons (5-HT)). Note that MCH and HCRT staining is absent from the zebrafish LH. Though not apparent from the schematic, HCRT is located more dorsally. The preoptic area, which contains oxytocinergic as well as other peptidergic neurons, is located more dorsally and not reflected in this schematic. (b) Schematic view from the ventral perspective summarizing zebrafish hypothalamic peptide expression. GABA (dark blue) and glutamatergic (blue) neurons are found in the zebrafish LH (see Figure 1—figure supplement 2) and also throughout the medial regions of the hypothalamus. PVO = paraventricular organ, which also contains DA and 5-HT neurons. A number of peptidergic neurons are located within the anterior and posterior pituitary/hypophysis (aPit and pPit). Color code corresponds to images in (a). A = anterior, R = right.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Glutamatergic and GABAergic neuron distribution in the hypothalamus. Tg(VGlut2a:dsRed) and Tg(GAD1b:GFP) transgenic fish were dissected, imaged and registered onto a common reference hypothalamus. All fish in this figure were food-deprived for 2 hr and fixed for analysis after 15 min of feeding. (b) Glutamatergic cells, labeled by Tg(VGlut2a:dsRed), overlap with active (pERK-positive) neurons in both the lLH and outer rim of the mLH. (i) Z-projection of hypothalamus. (ii) Higher magnification images of LH (iii-iv) Inset showing overlap of lLH and outer rim of mLH with glutamatergic cells. (c) GABAergic cells, labeled by Tg(Gad1b:GFP), overlap with active neurons in the inner rim of the mLH but not the lLH. (i) Z-projection of hypothalamus. (ii) Higher magnification images of LH showing a subset of z-planes. (iii-iv) Inset showing overlap of inner rim of mLH with GABAergic cells. White arrows point to examples of overlapping cells. All fish were mounted ventral side up. Scale bar (i and ii) = 50 μm. Inset (iii and iv) scale bar = 20 μm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** This method separates pERK signals into statistically independent components based on their correlated and anti-correlated activities, thus identifying putative functional connectivity (both positive or negative relationships) between different brain regions (Randlett et al., 2015; see Materials and methods). Fish included in this analysis were either food-deprived (2 hr), food-deprived and then fed for 15 min prior to harvest, or continuously fed (n = 300 fish total). (a-c) From this analysis, multiple independent component networks (ICs) were identified in which at least part of the LH displayed an inverse activity relationship (i.e. opposite loadings) with the cH (22/30). (d) 4/30 ICs had correlated LH and cH activity. However, in these cases lateral loci displayed some anti-correlated activity with medial loci (especially IC #15 and 29). (e) There were 4/30 ICs that displayed asymmetrical or noisy activity patterns that rendered them unclassifiable.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Method by which pERK-positive (‘active’) cell count were determined in a high-throughput manner. Brain z-stacks obtained from confocal microscopy are registered with a selected reference brain within the same dataset, using the tERK channel, though in experiments where tERK staining was not performed, unregistered images were used (for which individual ROIs have to be defined for each image). A series of processing steps were uniformly applied to segment pERK-positive cells, which were selected using a manually optimized threshold across the entire dataset. Cell counts were obtained using the Analyze Particles algorithm within the Fiji software.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (a) Dopaminergic neurons are labeled in Tg(TH2:GCaMP5) fish. These animals were food-deprived for 2 hr and then co-stained with anti-5-HT (to label serotonergic neurons) and anti-pERK antibodies in order to quantify food deprivation-induced activity in both cell types. Each row shows a different z-plane, moving from ventral to dorsal. (i) There is minimal overlap between Tg(TH2:GCaMP5)-positive cells (magenta) and 5-HT labeling (green). There is higher overlap of anti-pERK staining (magenta) with (iii) 5-HT-positive cells (green) as compared to (ii) Tg(TH2:GCaMP5)-positive cells (green). White arrows point to examples of overlapping cells. White boxes indicate region shown in insets. Scale bar = 20 μm. Full z-stacks for (ii) pERK overlap with anti-5-HT staining (Video 2) and (iii) TH2:GCaMP5 expression (Video 3) are also provided. (b) Quantification of overlap between pERK-positive cells and anti-5-HT staining or Tg(TH2:GCaMP5) expression. Other cH cell types, including histaminergic neurons (Chen et al., 2016) are not labeled. Fish one corresponds to the fish shown in (a).
+
 As a first step toward understanding the homeostatic control of feeding in this simple vertebrate system, we employed whole-brain neuronal activity mapping via phosphorylated ERK visualization in post-fixed animals (MAP-mapping; Randlett et al., 2015). Whole brain confocal image datasets of phospho-ERK expression were gathered from animals sacrificed after 15 min of voracious feeding that followed a 2 hr period of food deprivation. For comparison, image sets were also gathered from animals that had been fed continuously (fed fish). The image volumes were registered to a standardized brain atlas. A difference map (Figure 1b) reveals significant specific differences in neural activity when comparing voracious feeding with continuous feeding (Figure 1b–d, Video 1, Supplementary files 1–2). Since both experimental groups experienced the same sensory stimuli (i.e. exposure to paramecia) prior to sacrifice, differences in brain activity should primarily reflect the animals’ internal states, which could include manifestations of an altered sensitivity to food cues, activity related to hunting and prey capture, or the motivational history resulting from food deprivation. Indeed, multiple sensorimotor loci related to hunting showed enhanced activity during feeding that followed the food-deprived condition, consistent with the increased feeding behavior observed in food-deprived animals. These loci included the retinal Arborization Fields (AFs; optic tectum and AF7), pretectum, as well as downstream hindbrain loci, such as reticulospinal and oculomotor neurons, all of which are known to be engaged during prey capture behavior (Bianco and Engert, 2015; Muto et al., 2017; Semmelhack et al., 2015). In addition, enhanced activity was observed in the cerebellum, inferior olive, vagal sensory and motor neurons, area postrema and locus coeruleus, areas that have been implicated in feeding regulation and behavior (Ahima and Antwi, 2008; Ammar et al., 2001; Dockray, 2009; Zhu and Wang, 2008).
+
+![Video 1.](https://cdn.elifesciences.org/articles/43775/elife-43775-video1.mp4.jpg)
 
 We focused our attention on brain areas likely to be involved in motivational states related to feeding. These included an area of particularly strong differential activity in the lateral region of the intermediate hypothalamus (Lateral Hypothalamus, LH; Figure 1b–d), which has recently been identified as part of the feeding pathway in larval zebrafish (Muto et al., 2017) and whose mammalian analog has been strongly implicated in appetite control (Sternson and Eiselt, 2017). However, the zebrafish LH, unlike its mammalian counterpart, does not harbor melanin-concentrating hormone (MCH)-positive, orexin (hypocretin)-positive neurons, or other major feeding-related peptides (Figure 1—figure supplements 1 and 2). We therefore characterized the expression of multiple appetite-related neuromodulators (AgRP, MSH, CART, NPY, MCH, Orexin) and found that they are instead expressed in nearby areas of the hypothalamus (Figure 1—figure supplement 1). The zebrafish LH region does however contain glutamatergic and GABAergic cell types (Figure 1—figure supplement 2); these non-peptidergic LH cell types have been shown in rodents to be important for the regulation of feeding (Jennings et al., 2015; Stuber and Wise, 2016).
 
 Among areas that showed relatively decreased neural activity upon feeding food-deprived animals, the most significant was the adjacent caudal hypothalamus (cH), which contains monoaminergic neurons -- mainly serotonergic and dopaminergic cells, with a small fraction of histaminergic cells (Chen et al., 2016; Kaslin and Panula, 2001; Lillesaar, 2011). Indeed, in all of nine independent MAP-mapping experiments, activity was reduced in the cH and increased in the LH within 15 min of food presentation (Figure 1c). The evident inverse relationship between LH and cH neural activity is supported by independent component analysis (Randlett et al., 2015), which was applied to feeding-related MAP-mapping data (Figure 1e, Figure 1—figure supplement 3). Multiple components were uncovered in which cH and LH activities were strongly anti-correlated. These results led us to hypothesize that the lateral and caudal hypothalamic regions form a functionally interconnected network with opposing activity patterns.
 
-## Cellular dissection of hypothalamus neural activity reveals modulation by satiation state
+### Cellular dissection of hypothalamus neural activity reveals modulation by satiation state
 
 To probe these neural activity changes at higher resolution, we performed anti-pERK antibody staining on isolated brains and examined the hypothalamus in time course experiments spanning a period of food deprivation and subsequent feeding (Figure 1f–h, Figure 2). We quantified the mean anti-pERK fluorescence within a region-of-interest (ROI; Figure 1g) as well as the number of active cells or cell clusters (Figure 1h; Figure 1—figure supplement 4). These two metrics were employed because the high density of pERK-positive cells in the cH of food-deprived animals made high-throughput quantitation of active cells unreliable, whereas use of this metric in areas of sparse activity (e.g. mLH and lLH) yielded better differential sensitivity than ROI averaging. Using these respective metrics, we observed that mean fluorescence in the cH was significantly increased in food-deprived fish, while the number of active neurons in the medial and lateral lobes of the LH (mLH and lLH, respectively) was relatively low (Figure 1f–h). Within the cH, enhanced pERK activity during food deprivation was most prevalent in serotonergic neurons, but also present in a smaller proportion of dopaminergic neurons (Figure 1—figure supplement 5, Videos 2 and 3).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig2-v2.jpg)
+
+**Figure 2.:** (a) Representative images showing that cH, mLH and lLH activities in the presence and absence of food vary with the extent of food deprivation (dataset quantified in b and c). (b) Normalized pERK average fluorescence intensity in cH significantly increases with food deprivation, and is significantly reduced when food is presented to food-deprived fish. Normalized mLH and lLH pERK average fluorescence intensity does not change significantly during food deprivation and strongly increases during voracious feeding (Dep. 2 hr + 15 min food). Asterisks denote p<0.05. Normalized pERK intensity (cH/mLH/lLH): Fed vs Dep. 30 min (p = 0.53/0.47/0.15), Fed vs Dep. 2 hr (p = 0.0022/0.41/0.59), Dep. 30 min + food vs Dep. 2 hr + food (p = 0.041/0.0022/0.0022), Dep. 30 min vs Dep. 30 min + food (p = 0.62/0.73/0.62), Dep. 2 hr vs Dep. 2 hr + food (p = 0.0022/0.0011/0.0022), Fed vs Dep. 2 hr + food (0.047/0.0011/0.0011). Anti-pERK staining fluorescence was averaged over each entire region of interest (i.e. cH, mLH and lLH; see Materials and methods for details). The normalized anti-pERK staining intensity for each region (ROI) was obtained by dividing the anti-pERK fluorescence from each fish (in all experimental groups) by the average anti-pERK fluorescence for the same ROI of continuously fed fish. (c) The number of active mLH and lLH cells declines within 30 min of food deprivation, and is significantly enhanced during feeding, particularly after a longer period of food deprivation. Active cell count (mLH/lLH): Fed vs Dep. 30 min (p = 0.155/5.8 × 10−4), Fed vs Dep. 2 hr (p = 0.047/0.011), Dep. 30 min + food vs Dep. 2 hr + food (p = 0.0022/0.0043), Dep. 30 min vs Dep. 30 min + food (p = 0.07/0.013), Dep. 2 hr vs Dep. 2 hr + food (p = 0.0011/0.0011), Fed vs Dep. 2 hr + food (p = 0.0022/0.07), n = 6/7/5/6/6 fish, one-tailed Wilcoxon rank-sum test. Data plotted in Figure 2 are provided in Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The dataset (n = 41 fish) includes animals food-deprived for 30 min (n = 16), 2 hr (n = 11), or 4 hr (n = 14), and subsequently fed labeled paramecia for 15 min. Brains from these animals were individually-stained with anti-pERK antibody in multi-well plates in order to correlate each fish's food intake with cH, mLH and lLH neural activity. (a) Gut fluorescence (i.e. food intake) of all fish as a function of mean cH pERK fluorescence, mean LH (mLH and lLH) anti-pERK staining average fluorescence and active cell count. Mean pERK fluorescence reflects the average fluorescence within the cH, mLH or lLH regions of interest. This dataset was not normalized. Each datapoint represents an individual fish. (b) Top: mLH and lLH mean pERK fluorescence (left), and active cell count (right) of all fish (n = 41) plotted as a function of food deprivation time (denoted by color intensity). Bottom: mLH and lLH mean fluorescence (left) and cell count (right) of all fish (n = 41) plotted as a function of gut fluorescence (i.e. food intake) after 15 min of feeding (denoted by color intensity). (c-e) Quantification of gut fluorescence, cH and LH mean pERK fluorescence and LH active cell count across the different food deprivation times (30 min, 2 hr, and 4 hr). Note that in this dataset, because anti-pERK was conducted on each brain individually, there is higher variance between specimens and reduced statistical significance in cH quantification data (compare with Figure 2b, left panel). Asterisks denote p<0.05. (c) Food intake: After 30 min vs 2 hr dep. (p = 2.8×10−4), 30 min vs 4 hr dep. (p = 4.0×10−4), 2 hr vs 4 hr dep. (p = 0.56). Asterisk denotes p<0.05, n = 16/11/14 fish (30 min/2 hr/4 hr dep. + 15 min food), one-tailed Wilcoxon rank-sum test. (d) Mean pERK fluorescence (cH/mLH/lLH): After 30 min vs 2 hr dep. (p = 0.55/0.001/5.9 × 10−4), 30 min vs 4 hr dep. (p = 0.0084/8.6 × 10−4/0.0058), 2 hr vs 4 hr dep. (p = 0.02/0.24/0.54). Sample sizes as in (c). (e) Active cell count (mLH/lLH): After 30 min vs 2 hr dep. (p = 0.0073/0.0094), 30 min vs 4 hr dep. (p = 1.6×10−4/0.0017), 2 hr vs 4 hr dep. (p = 0.056/0.053). Sample sizes as in (c).
+
+![Video 2.](https://cdn.elifesciences.org/articles/43775/elife-43775-video2.mp4.jpg)
+
+![Video 3.](https://cdn.elifesciences.org/articles/43775/elife-43775-video3.mp4.jpg)
+
 During the period of voracious feeding that followed food deprivation, the pERK-reported activity of cH neurons fell dramatically to a level significantly below that observed in continuously fed fish (Figure 1f–h). This characteristically low cH activity level coincided with a large increase in LH activity, measured by either mean anti-pERK fluorescence or by measurement of the number of individually active neurons, that lasted throughout the period of voracious feeding. Thereafter, as feeding continued at a more moderate pace, and the rate of food ingestion declined, LH neuronal activity likewise declined (especially for lLH neurons; Figure 1h). Reciprocally, cH activity slowly increased back towards baseline levels. After 30 min of feeding, neural activity in both the cH and LH had mostly converged to the baseline level observed for continuously fed fish, consistent with the time course of hunting behavior reduction (Figure 1a, right panel). Thus these cH and LH populations displayed anti-correlated activity over time frames that spanned a progression of distinct behaviors associated with food deprivation, voracious feeding and a gradual return to apparent satiety (Figure 1i).
 
-## Satiation state influences the responses of cH and LH populations to food
+### Satiation state influences the responses of cH and LH populations to food
 
 To more closely align the activity patterns of cH and LH neuronal populations with feeding behavior, we examined these areas after a 30 min (i.e. short) or 2–4 hr (i.e. long) period of food deprivation, with or without a subsequent period of feeding (Figure 2, Figure 2—figure supplement 1). Following food removal, cH activity increased, with an especially large anti-pERK average fluorescence intensity increase after 2 hrs of food deprivation (Figure 2a–b). In contrast to the cH, food removal quickly reduced the frequency of active mLH and lLH neurons (Figure 2a,c). Despite the reduction in LH active cell count over food deprivation, there were no obvious changes in mean LH anti-pERK fluorescence over the course of food deprivation (Figure 2b). This is because there are few active LH cells in continuously fed and food-deprived fish, thus their overall contribution to the fluorescence average of the mLH and lLH regions of interest is small.
 
 Notably, the addition of prey (paramecia) rapidly reversed the food deprivation- induced patterns of cH and LH neural activity, with an amplitude of change that was correlated with the length of food deprivation (Figure 2a–c, Figure 2—figure supplement 1d–e). Fish that had been food-deprived for longer periods (2 hr or 4 hr) displayed a greater increase in the number of active LH neurons compared to feeding animals that had been food-deprived for only 30 min (Figure 2a–c; Figure 2—figure supplement 1d–e). Likewise, the reduction in cH activity after food presentation was greater when it followed a longer period of prior deprivation (Figure 2a–b; Figure 2—figure supplement 1d). In general, the presence of highly active neurons in the LH was correlated with higher food consumption (as measured by gut fluorescence, Figure 2—figure supplement 1a–e).
 
-## Caudal and lateral hypothalamic responses to food sensory cues are anti-correlated over short timescales
+### Caudal and lateral hypothalamic responses to food sensory cues are anti-correlated over short timescales
 
 We next set out to characterize acute effects of food sensory cues on both the cH and LH, and also to analyze in more detail the apparent negative activity relationship between these two nuclei. Such analyses require higher temporal resolution than afforded by anti-pERK staining analysis, thus we switched to in vivo calcium imaging of the cH and LH in live animals (Figure 3). To that end, two transgenic Gal4 drivers, Tg(116A:Gal4) and Tg(76A:Gal4), were combined to express GCaMP6s (Tg(UAS:GCaMP6s)) in neuronal subsets of both the cH and LH (Figure 3—figure supplements 1–2). The 116A:Gal4 transgene drives expression mainly in serotonergic neurons of the cH (88.9 ± 0.8% 5-HT positive) and paraventricular organ (PVO; Figure 3—figure supplement 1), whereas 76A:Gal4 drives expression in a large proportion of LH cells (Figure 3—figure supplement 2; Muto et al., 2017).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig3-v2.jpg)
+
+**Figure 3.:** (a) Top: Transgenic fish (2 hr food-deprived) with GCaMP6s expressed in cH and LH neurons were paralyzed, tethered in agarose with their eyes and nostrils freed and exposed to live paramecia (prey), as described in Materials and methods. Top image: GCaMP expression in the cH and LH driven by two transgenic lines, Tg(116A:Gal4) and Tg(76A:Gal4) respectively. Bottom image: Downsampled image stack used for analysis in (f). (b) Top: Mean calcium activity (Δf/f) from respective hypothalamic ROIs (shown in (a)) from four individual fish during a baseline food-deprived period (Dep.), exposure to water alone (Water), and a dense water drop of paramecia (Para). Traces from left and right hypothalamic lobes of the same animal are overlain, revealing a high degree of correlated activity on opposite sides of the midline. Paramecia presentation increases activity in the LH and reduces activity in the cH, revealing opposing activity on short timescales. Bottom: Δf/f traces within area marked by gray box (top), displayed at higher magnification. An increase in LH activity and corresponding reduction in cH activity is observable within seconds of paramecia presentation, except for fish D in which maximal responses only occur after a few minutes (beyond the displayed time window). (c) Average Δf/f triggered on lLH calcium spikes (left and right lobes averaged) shows a mean corresponding reduction in cH activity (n = 159 lLH spikes extracted from mean Δf/f traces from 14 fish across the entire duration of the experiment). (d) Raster plots showing mean calcium activity from the hypothalamic lobes (left and right lobes averaged) of 14 fish before and after presentation of water alone and water with paramecia. (e) Quantification of integrated fluorescence (sum Δf/f %), calcium spike frequency (spikes/min) and calcium spike amplitude (Δf/f %) per fish across experimental epochs (300 s food-deprived baseline (D), 300 s after water (W) delivery or 600 s after paramecia delivery (P)). Each colored line represents data from an individual fish (left and right lobes averaged). Water alone was sufficient to significantly reduce cH integrated fluorescence (p = 6.1×10−5) and spike frequency (p = 0.0127) but not spike amplitude (p = 0.9324). Water alone was similarly sufficient to increase lLH integrated fluorescence (p = 0.029) and spike frequency (p = 0.0098) but not spike amplitude (p = 0.13). Conversely, water alone was not sufficient to significantly modulate mLH integrated fluorescence (p = 0.48) or spike frequency (p = 0.20), but was sufficient to increase spike amplitude (p = 0.039). Paramecia delivery significantly increased mLH and lLH integrated fluorescence (mLH, p = 1.2×10−4; lLH, p = 0.045) and spike frequency (mLH, p = 6.1×10−5; lLH, 6.1 × 10−4), while only significantly increasing mLH spike amplitude (mLH, p = 0.045; lLH, p = 0.43), relative to water delivery. In contrast, paramecia delivery significantly reduced cH integrated fluorescence relative to water delivery alone (p = 3.1×10−4), but not spike frequency (p = 0.52) nor spike amplitude (p = 0.85). Asterisks denote p<0.05, one-tailed Wilcoxon signed-rank test. (f) Top: Cross-correlogram of hypothalamic cell-sized voxels (cells and/or neuropil from downsampled image stacks, see (a)) from four fish. The cH and LH voxels were mostly anti-correlated, whereas voxels within each cluster displayed correlated activity. Black arrowheads indicate region of lLH that appears to be most anti-correlated with the cH. Bottom: Correlation coefficients of other hypothalamic voxels relative to a selected voxel with the cH, mLH or lLH. See color key for numerical translation of color maps. (g) Summary of data from 14 fish, showing the probability of the nth most anti-correlated voxel belonging to each of the other regions (cH, mLH or lLH), normalized to chance probability (gray line) of belonging to each region (i.e. the fraction of all voxels occupied by each region). For example, if we consider all the voxels within the cH, there is a four-fold probability relative to chance of their most anti-correlated voxels (Rank = 1) being part of the lLH.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Z-projection images of whole mount Tg(116A:Gal4;UAS:GFP) fish at low (left) and high (right) intensities. Scale bar = 100 μm. (b) Overlap of Tg(116A:Gal4;UAS:GFP) (green) with anti-5-HT (magenta) immunostaining is seen in all layers of the caudal hypothalamus, as well as the anterior and posterior paraventricular organ (aPVO and pPVO). Each row shows a different z-plane, moving from dorsal to ventral. Scale bar = 50 μm. (c) Higher magnification images of the cH, aPVO and pPVO from left side of image in (c). (d) Minimal overlap of Tg(116A:Gal4;UAS:nfsb-mCherry) (magenta) with dopaminergic neurons labeled by Tg(TH2:GCaMP5) (green). Note that the Tg(116A:Gal4;UAS:nfsb-mCherry) transgenic, which is used in ablation experiments, shows sparser labeling than with Tg(UAS:GFP). In this fish, 2 out of 17 (11.8%) of Tg(116A:Gal4;UAS:nfsb-mCherry) cells overlapped with Tg(TH2:GCaMP5) expression. Scale bar = 50 μm. (e) Quantification of 5-HT overlap with Tg(116A:Gal4;UAS:GFP) in the cH, aPVO and pPVO.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) mLH and lLH activity in voraciously-feeding (food-deprived 2 hr + 15 min paramecia) fish overlaps with Tg(76A:Gal4;UAS:GCaMP6s) expression (green, dissected brains). All visible pERK-positive neurons (magenta) were also co-labeled with GCaMP6s. Tg(116A:Gal4) is also expressed (green). Scale bar = 50 μm. (b) mLH and lLH activity in voraciously-feeding fish overlaps with Tg(76A:Gal4;UAS:GCaMP6s) expression (whole-mount). All visible pERK-positive neurons were also co-labeled with GFP. Note that more dorsally and anteriorly (as visible in the third panel of (i), and the z-projection in (ii)) other neurons beyond the LH are labeled by Tg(76A:Gal4;UAS:GCaMP6s). Scale bar = 50 μm. (c) pERK-positive cells (magenta) in 2 hr food-deprived fish overlap partially with Tg(116A:Gal4) expression (green, dissected brains). (i) Overlap with Tg(116A:Gal4;UAS:GFP) (ii) Overlap with Tg(116A:Gal4;UAS:nfsb-mCherry). Scale bar = 20 μm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Note that fish were imaged ~20 min after embedding, thus initial food deprivation time is already 20 min. Hence, the initial reduction in LH active cell count, which occurs within 30 min (Figure 2) may not be observable using this imaging method. (a) Fish 1 and 2 were imaged using volumetric imaging for 115 min, whereas fish 3 and 4 were imaged only at a single plane, and for a slightly shorter time period of 90 min (see images in (b)) (i): Mean Δf/f across the entire (both lobes) of the cH, mLH and lLH (i.e. raw) show increases in baseline fluorescence over time. (ii) Mean Δf/f with baseline subtracted (i.e. detrended). Since a rising baseline over long imaging periods is difficult to interpret (see text for discussion), we also display detrended traces. (b) (i): Average intensity projection images showing imaged regions with ROIs outlined. (ii) Spike-triggered averages based on extracted lLH calcium spikes (from detrended traces) usually reveal an accompanying reduction in cH calcium fluorescence (Δf/f). (c) Calcium spike frequency (spikes/min, left) and calcium spike amplitude (Δf/f %, right) for each ROI averaged over 5 min bins throughout the imaging session for the above four fish. Colored lines are the means, shaded areas reflects SEM. (d) Over the entire imaging period, calcium spike frequency (left) was significantly higher in the cH as compared to the mLH (p = 0.014) and lLH (p = 0.014). Calcium spike amplitude (right) was also significantly higher in the cH as compared to the mLH (p = 0.014), but not the lLH (p = 0.057), asterisks denote p<0.05, one-tailed Wilcoxon rank-sum test.
 
 Using these transgenic animals, we examined calcium dynamics in the cH and LH regions in tethered animals during the controlled presentation of prey stimuli (Figure 3a). In these experiments, live paramecia were released in a puff of water in the vicinity of the immobilized fish, which can neither hunt nor ingest prey. Consistent with the results of anti-pERK analysis of post-fixed brains (Figures 1 and 2), activity in the mLH and lLH regions was increased and cH activity quickly reduced, in fact within seconds of paramecia release (Figure 3b,d). Neurons in all three hypothalamic loci also responded to water flow alone, but these responses were significantly less than those elicited by paramecia (Figure 3b,d,e). These prey-induced changes in activity were particularly striking for the mLH region, which displayed both a strongly enhanced calcium spike frequency and spike amplitude upon the introduction of prey. Thus, prey sensory cues, even in the absence of hunting or prey ingestion, strongly and differentially regulate neuronal activity in the caudal and lateral hypothalamus.
 
@@ -71,17 +125,21 @@ The activities of cH and LH neurons also appeared remarkably anti-correlated; bo
 
 In addition to these studies over short timescales, we also analyzed live imaging traces that spanned extended time periods (up to 2 hr) of food deprivation (Figure 3—figure supplement 3a). This long-term imaging resulted in some confounding modulation of baseline fluorescence over these timescales (Figure 3—figure supplement 3a, particularly lLH trace), that do not necessarily reflect changes in neural firing (Berridge, 1998; Verkhratsky, 2005) and may well be related to modified internal states caused by tethering and immobilization. Nonetheless, we observed significantly higher calcium spike frequencies and amplitudes in the cH as compared to LH regions over the course of food deprivation (Figure 3—figure supplement 3a,c–d), activity patterns that were the opposite of those observed for these regions when prey was presented (Figure 3b,e). For example, the calcium spike amplitude and frequency of the cH region were many-fold greater than those observed in the mLH region during food deprivation (Figure 3—figure supplement 3d), whereas after prey presentation, these relative activities were reversed, with the mLH displaying significantly greater spike amplitude and frequency than the cH (Figure 3b,e). Likewise, lLH calcium spike frequency is significantly lower than the cH during food deprivation, but increases significantly after prey presentation (Figure 3—figure supplement 3d, Figure 3e). Thus, the cH is more active over food deprivation, and the LH under conditions where food is present.
 
-## Separation of cH and LH neuronal activities associated with prey detection and ingestion
+### Separation of cH and LH neuronal activities associated with prey detection and ingestion
 
 We next sought to characterize the responses of hypothalamic regions to prey ingestion, as opposed to the mere detection of prey. To distinguish between the consequences of sensory and consummatory inputs, we compared neural activities in food-deprived fish exposed to paramecia or artemia. Artemia are live prey commonly fed to adult zebrafish and are actively hunted by fish at all stages, including larvae (Figure 4a, Video 4). Thus, artemia provide sensory inputs that elicit hunting behavior in larval animals. They are however too large to be swallowed and consumed by larvae. Hence, the comparison between these two types of prey dissociates neural activity triggered by prey detection and hunting from that of food ingestion.
+
+![Video 4.](https://cdn.elifesciences.org/articles/43775/elife-43775-video4.mp4.jpg)
+
+**Video 4.:** Prey-capture behavior, such as J-turns and pursuits, but no capture swims, were observed in response to artemia larvae. Recording rate: 30 fps. Playback rate: Real time.
 
 Prey ingestion can only occur in freely behaving animals and thus we needed to return to pERK- based activity mapping in post-fixed animals for our analysis. We found that artemia exposure caused significant increases in both mLH and lLH activity, whereas little change was detected in cH neurons (Figure 4a–c). Exposure to paramecia on the other hand triggered an even larger response in both LH lobes and led, as expected, to a significant reduction in cH activity. In order to quantify the relative changes in the mLH and lLH lobes, we compared the artemia-induced activity change (θA) to the paramecia-induced activity change (θP) for each lobe. The average mLH anti-pERK fluorescence only displayed a marginally greater artemia-induced increase (θA/θP = 41%) than the lLH region (θA/θP = 38%; Figure 4c, top panel). However, when the frequency of active neurons was compared, the mLH displayed a much larger response (θA/θP = 32%) to artemia than the lLH (θA/θP = 15%) (Figure 4c, bottom panel). Taken together with our calcium imaging results (Figure 3), these observations indicate that while all three hypothalamic regions (cH, mLH and lLH) are modulated by prey sensory cues, they respond more strongly to prey ingestion. Among these regions, the mLH appears to be the most highly tuned to prey detection in the absence of prey ingestion (Figure 4d).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig4-v2.jpg)
 
-**Figure 4.:** (a) Representative images of activity induced by exposure of 7–8 dpf larval zebrafish to paramecia or artemia larvae, as examined by anti-pERK antibody staining. Hatched artemia are actively hunted but are too large to consume, allowing for the dissociation of sensory cues and hunting behavior from prey consumption. Scale bar = 50 μm. Rightmost two panels (top and bottom): Larval zebrafish hunt live artemia, performing J-turns and pursuits with eyes converged (see Video 4; Bianco et al., 2011). (b) cH activity (normalized pERK fluorescence intensity) is significantly reduced by exposure to paramecia but not by exposure to artemia (p = 0.016 (paramecia), 0.648 (artemia)). Asterisks denote p<0.05. (c) LH activity can be induced by artemia, and more strongly by paramecia. Both normalized pERK intensity (mLH: p = 2.06×10−5 (paramecia vs control), p = 7.09×10−4 (artemia vs control), p = 5.43×10−5 (artemia vs paramecia); lLH: p = 2.06×10−5 (paramecia vs control), p = 0.020 (artemia vs control), p = 0.0019 (artemia vs paramecia)) and active cell count (mLH: p = 2.06×10−5 (paramecia vs control), p = 9.58×10−5 (artemia vs control), p = 1.77×10−4 (artemia vs paramecia); lLH: p = 2.06×10−5 (paramecia vs control), p = 9.75×10−5 (artemia vs control), p = 9.86×10−5 (artemia vs paramecia)) are shown, with n = 9/9/11 fish, one-tailed Wilcoxon rank-sum test. Anti-pERK staining fluorescence was averaged over each entire region of interest (cH, mLH and lLH; see Materials and methods for details). The normalized anti-pERK staining intensity for each region (ROI) was obtained by dividing the anti-pERK fluorescence from each fish (in all experimental groups) by the average anti-pERK fluorescence for the same ROI of food-deprived (i.e. control) fish. We also compared the artemia-induced activity change (θA) to the paramecia-induced activity change (θP) for each lobe (see main text). (d) Differential neural activation of the cH and LH regions in response to prey sensation and hunting as compared to prey ingestion. Data plotted in Figure 4 are provided in Figure 4—source data 1.Figure 4—source data 1.Figure 4b-c.
+**Figure 4.:** (a) Representative images of activity induced by exposure of 7–8 dpf larval zebrafish to paramecia or artemia larvae, as examined by anti-pERK antibody staining. Hatched artemia are actively hunted but are too large to consume, allowing for the dissociation of sensory cues and hunting behavior from prey consumption. Scale bar = 50 μm. Rightmost two panels (top and bottom): Larval zebrafish hunt live artemia, performing J-turns and pursuits with eyes converged (see Video 4; Bianco et al., 2011). (b) cH activity (normalized pERK fluorescence intensity) is significantly reduced by exposure to paramecia but not by exposure to artemia (p = 0.016 (paramecia), 0.648 (artemia)). Asterisks denote p<0.05. (c) LH activity can be induced by artemia, and more strongly by paramecia. Both normalized pERK intensity (mLH: p = 2.06×10−5 (paramecia vs control), p = 7.09×10−4 (artemia vs control), p = 5.43×10−5 (artemia vs paramecia); lLH: p = 2.06×10−5 (paramecia vs control), p = 0.020 (artemia vs control), p = 0.0019 (artemia vs paramecia)) and active cell count (mLH: p = 2.06×10−5 (paramecia vs control), p = 9.58×10−5 (artemia vs control), p = 1.77×10−4 (artemia vs paramecia); lLH: p = 2.06×10−5 (paramecia vs control), p = 9.75×10−5 (artemia vs control), p = 9.86×10−5 (artemia vs paramecia)) are shown, with n = 9/9/11 fish, one-tailed Wilcoxon rank-sum test. Anti-pERK staining fluorescence was averaged over each entire region of interest (cH, mLH and lLH; see Materials and methods for details). The normalized anti-pERK staining intensity for each region (ROI) was obtained by dividing the anti-pERK fluorescence from each fish (in all experimental groups) by the average anti-pERK fluorescence for the same ROI of food-deprived (i.e. control) fish. We also compared the artemia-induced activity change (θA) to the paramecia-induced activity change (θP) for each lobe (see main text). (d) Differential neural activation of the cH and LH regions in response to prey sensation and hunting as compared to prey ingestion. Data plotted in Figure 4 are provided in Figure 4—source data 1.
 
-## Optogenetic cH activation suppresses lLH neural activity
+### Optogenetic cH activation suppresses lLH neural activity
 
 The observed anti-correlated patterns of caudal and lateral hypothalamus neural activity in both our calcium imaging and pERK-based activity data suggest they might interact via mutual inhibition. For example, during food deprivation, rising cH activity (and the absence of food) could restrain LH activity, while a subsequent experience of prey detection and ingestion might trigger LH activity that inhibits cH activity. This reduction in cH activity may, in turn, relieve suppression of LH activity, a neural ‘switch’ that could drive voracious feeding behavior.
 
@@ -89,11 +147,35 @@ As an initial test of this hypothesis, we determined whether optogenetic excitat
 
 These tethered transgenic fish were subjected to targeted laser (633 nm) illumination of the cH region to locally activate the ReaChR channel. We showed that ReaChR activation in the cH was sufficient to induce cH neural activity (Figure 5a,c). In contrast, ReaChR activation significantly reduced spontaneous lLH calcium spike activity within a 90 s period that followed laser illumination (Figure 5b,d), whereas no significant decrease was observed in mLH activity (Figure 5b,d). Illumination of a control preoptic area region, where Tg(y333:Gal4)-driven ReaChR is not expressed, did not affect lLH activity, though we did observe a small increase in mLH activity (Figure 5e). This effect might be visually induced or driven by light-sensitive opsins known to be expressed in the preoptic area (Fernandes et al., 2012). Since no such increase was observed when the cH itself was optogenetically activated, it is plausible that an inhibitory effect of cH stimulation on the mLH is masked by an opposing light response sensitivity. In sum, optogenetic stimulation of cH neural activity is sufficient to inhibit lLH neural activity, consistent with the notion that cH and LH regions interact to modulate the animal’s motivational state in response to food deprivation and feeding.
 
-## Functional dissection of the role of cH serotonergic neurons in feeding behavior
+![Figure 5.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig5-v2.jpg)
+
+**Figure 5.:** (a) ReaChR activation of neurons. Top Panels: Targeted 633 nm laser illumination (see Materials and methods) of a defined cH area (imaged area) in Tg(y333:Gal4;UAS:ReaChR-RFP; UAS:GCaMP6s) fish. These animals express a Tg(UAS:GCaMP6s) reporter in the cH under Tg(y333:Gal4) control. The animals were subjected to repetitive 10 s laser illumination, with a periodicity of 120 s. Following the 633 nm laser pulses, there is widespread induction of cH activity, as indicated by GCaMP fluorescence (Δf/f) in most regions of interest plotted to the right of the image panel. Scale bar = 50 μm. Bottom Panel: Mean Δf/f across the entire outlined cH region versus time. Laser illumination pulses are indicated by orange bars. Gray bars indicate pre- and post-stimulation periods for which metrics shown in (c–e) were determined. (b) Inhibition of LH activity by activation of cH neurons in Tg(y333:Gal4;UAS:ReaChR-RFP; HuC:GCaMP6s) fish. The animals were subjected to repetitive 10 s laser illumination, with a periodicity of 180 s. Laser pulses were delivered to the cH (orange lightning symbol) as in a, and calcium imaging was recorded from the indicated LH areas (white outlines). Region of interest traces are shown to the right of the image panel for the indicated areas (cells and neuropil (NP)). There is an apparent reduction of spontaneous lLH GCaMP fluorescence spikes in the post-stimulation period. Scale bar = 50 μm. Bottom: Mean Δf/f across mLH and lLH ROIs over time. (c–e) Comparison of mean, summed and maximum Δf/f metrics for a 90 s window before and after ReaChR stimulation (gray bars in bottom panels in a and b). Each data point represents a single stimulation event, like those shown in a and b. Asterisks denote p<0.05. (c) cH activity increases after illumination of Tg(y333:Gal4; UAS:ReaChR-RFP)-positive cH neurons, n = 29 stimulations across eight fish, p = 0.0002 (max Δf/f) / 0.036 (sum Δf/f) / 9.2×10−5 (mean Δf/f), one-tailed Wilcoxon signed-rank test. (d) lLH activity is inhibited (p = 0.0003 (max Δf/f) / 1.8×10−6 (sum Δf/f) / 0.049 (mean Δf/f)), whereas mLH activity appears unchanged after after illumination of Tg(y333:Gal4; UAS:ReaChR-RFP)-positive cH neurons (p = 0.74 (max Δf/f) / 0.85 (sum Δf/f) / 0.13 (mean Δf/f)), n = 108 stimulations across nine fish, two-tailed Wilcoxon signed-rank test. (e) Illumination of a control preoptic region (outside of the area labeled by Tg(y333:Gal4; ReaChR-RFP) expression) resulted in a small increase in mLH activity (p = 0.0003 (max Δf/f) / 0.039 (sum Δf/f) / 0.039 (mean Δf/f)) and no change lLH activity (p = 0.099 (max Δf/f) / 0.65 (sum Δf/f) / 0.096 (mean Δf/f)), n = 37 stimulations across five fish, two-tailed Wilcoxon signed-rank test. Data plotted in Figure 5 are provided in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) We used an alternative cH-labeling Gal4 line, Tg(y333:Gal4) (Marquart et al., 2015) to drive Tg(UAS:ReaChR-RFP) expression, as we were unable to detect any Tg(116A:Gal4)-driven ReaChR expression on the basis of its Red Fluorescent Protein tag. Top: Whole mount confocal z-stack of a Tg(y333:Gal4;UAS:ReaChR-RFP) (green) shows relatively specific expression in the caudal hypothalamus, as well as some labeling in the olfactory bulb (white arrow) and other scattered cells. Scale bar = 100 μm. A = anterior, R = right. Bottom: Z-projection image of an isolated anti-5-HT (magenta) stained brain mounted ventral side up. Scale bar = 50 μm. (b) Overlap of Tg(y333:Gal4;UAS:ReaChR-RFP) (green) with anti-5-HT immunostaining (magenta) visible in all layers of the caudal hypothalamus. There is also a lower amount of overlapping expression in the paraventricular organ (PVO). Each row displays a different z-plane, from dorsal (top) to ventral. Brains are mounted ventral side up. Scale bar = 50 μm. (c) Higher magnification view showing moderate overlap of Tg(y333:Gal4;UAS:ReaChR-RFP) with anti-5-HT staining in the cH and PVO. Arrows indicate cells with overlapping RFP and 5-HT expression. Scale bar = 20 μm. (d) Quantification of overlap between 5-HT and Tg(y333:Gal4;UAS:ReaChR-RFP) expression in the cH and PVO.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The Tg(y333:Gal4; UAS:ReaChR-RFP) line (green) was crossed to Tg(TH2:GCaMP5) (magenta) to quantify the overlap of Tg(y333:Gal4) with dopaminergic (TH2-positive) cells. (a) High magnification image showing moderate overlap of Tg(y333:Gal4;UAS:ReaChR-RFP) (green) with TH2-expressing cells (magenta) in the cH and PVO. Arrows indicate cells with overlapping RFP and TH2 expression. Scale bar = 20 μm. A = anterior, R = right. (b) Z-projection image of the same brain shown in (a), with Tg(TH2:GCaMP5) expression shown in magenta. Scale bar = 20 μm. (c) Quantification of overlap between Tg(TH2:GCaMP5) and Tg(y333:Gal4;UAS:ReaChR-RFP) expression in the cH and PVO.
+
+### Functional dissection of the role of cH serotonergic neurons in feeding behavior
 
 The opposing patterns of cH and LH activity suggest they might encode opposing functions in the motivation and control of feeding behavior. Increased cH activity during food deprivation might encode a motivated state that leads to enhanced prey detection, enhanced hunting behavior and increased prey ingestion following food presentation. In contrast, the incremental increase in cH activity during feeding (Figure 1g) might progressively inhibit lLH activity (Figure 5) and thus inhibit prey ingestion (Muto et al., 2017). To test these expectations, we used optogenetic ReaChR activation to increase cH neuron activity during food deprivation or during voracious feeding. We reasoned that since after a short period of food deprivation (≤30 minutes), cH activity is relatively low (Figure 2a,b), optogenetic cH neuron activation in such animals would mimic a longer food deprivation and yield subsequent voracious feeding. In contrast, animals that are already feeding voraciously will have very low cH activity (Figures 1f–g and 2a–b); cH activation in these animals might thus reduce voracious feeding by mimicking the ‘satiated’ state (Figure 1f,g).
 
 Accordingly, animals expressing ReaChR in cH neurons (Tg(y333:Gal4;UAS:ReaChR-RFP)) were exposed to 630 nm illumination and assessed for ingestion of fluorescently labeled paramecia (Figure 6). Such animals exhibited enhanced cH activity following illumination (Figure 6; Figure 6—figure supplement 1). As expected, animals that had been illuminated during a short period of food deprivation subsequently consumed significantly more paramecia than control fish, which were similarly food-deprived and illuminated, but lacked the ReaChR transgene (Figure 6a). In contrast, fish that had been illuminated at the end of a two-hour food deprivation period displayed a high level of prey ingestion irrespective of whether the ReaChR channel was present. Thus, the high level of cH activity produced by two hours long food deprivation could not be augmented by optogenetic activation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig6-v2.jpg)
+
+**Figure 6.:** (a) Animals expressing the ReaChR transgene Tg(UAS:ReaChR-RFP) under control of the Tg(y333:Gal4) driver were exposed to 630 nm illumination (orange bar in schematic) for 10 min prior to feeding and assessed for subsequent ingestion of fluorescently labeled paramecia. Tg(y333:Gal4; UAS:ReaChR-RFP) stimulation increased food intake in 30 min food-deprived but not 2 hr food-deprived fish, during subsequent food presentation. Dep. (30 min): n = 27/26 (ReaChR-/ReaChR+), p = 0.005. Dep. (2 hr): n = 25/29 (ReaChR-/ReaChR+), p = 0.36, one-tailed Wilcoxon rank-sum test. Asterisks denote p<0.05. Since ReaChR expression via Tg(116A:Gal4) was negligible, we used another Gal4 (Tg(y333:Gal4)) line that is also specific to the cH when ReaChR is expressed. Fed and food-deprived fish were assayed simultaneously, thus all results were normalized to fed controls. ReaChR- controls do not have visible Tg(y333:Gal4;UAS:ReaChR-RFP) expression, and thus are a mixture of siblings expressing Tg(y333:Gal4) only, Tg(UAS:ReaChR-RFP) or neither of these transgenes, each with ⅓ probability. (b) Left: Optogenetic activation of Tg(y333:Gal4; UAS:ReaChR-RFP) fish (orange bar in schematic) during feeding in fish that were food-deprived for 30 min does not significantly reduce food intake: n = 19/16 (ReaChR-/ReaChR+), p = 0.44 (N.S.); Right: Optogenetic activation of Tg(y333:Gal4; UAS:ReaChR-RFP) fish during feeding in 2 hr food-deprived fish reduces food intake: n = 53/44 (ReaChR-/ReaChR+), p = 0.042. Since 30 min and 2 hr food-deprived fish were assayed in different experiments, gut fluorescence normalized to their respective controls, one-tailed Wilcoxon rank-sum test. (c) Nitroreductase-mediated ablation of the cH in Tg(116A:Gal4;UAS:nfsb-mCherry)-positive or negative fish treated with metronidazole (MTZ) from 5 to 7 dpf significantly enhances food intake in 8 dpf fish. p = 0.0042/0.041/1.4 × 10−5 (fed control vs fed ablated, 2 hr dep. control vs 2 hr dep. ablated, fed vs 2 hr dep.), n = 29 (fed control)/28 (fed ablated)/22 (dep. control)/29 (dep. ablated), two-tailed Wilcoxon rank-sum test. Controls do not have visible Tg(116A:Gal4;UAS:nfsb-mCherry) expression, and thus are a mixture of siblings expressing Tg(116A:Gal4) only, Tg(UAS:nfsb-mCherry) or neither of these transgenes, each with ⅓ probability. (d) Schematic summarizing our results. We propose distinct roles of the cH during hunger, depending on the presence or absence of food. See Appendix 1 – Conceptual Circuit Model for elaboration. Data plotted in Figure 6 are provided in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Tg(y333:Gal4;UAS:ReaChR-RFP) (magenta) optogenetic stimulation during feeding is sufficient to induce pERK activity (green) in many transgene-positive neurons. Fish were food-deprived for 2 hr and then fed in the presence of whole-field 630 nm LED illumination (as in Figure 6). White arrows indicate examples of cells with higher pERK activity. Scale bar = 20 μm. Insets (white boxes) are shown at higher magnification on the right. Width of insets = 40 μm. (b) The pERK intensities of ReaChR-positive and -negative cells (normalized to the mean pERK intensity of ReaChR-negative cells for each fish) are plotted for three individual fish. To sample ReaChR-negative cells, all visible cells lacking red channel expression were selected in every 3rd to 5th z-plane (to minimize oversampling). Fish one corresponds to the fish in (a). Box plot indicates mean value (horizontal line), 1 SD (gray box) and 95% confidence intervals (vertical line). Individual cells are plotted as circles. In Tg(y333:Gal4;UAS:ReaChR-RFP) transgene-positive fish, ReaChR positive cells have significantly higher pERK fluorescence intensity, demonstrating the effectiveness of optogenetic activation (p = 2.7×10−6/2.7 × 10−8/6.5 × 10−13 for each fish respectively, one-tailed Wilcoxon rank-sum test).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/43775/elife-43775-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (a) Ablation of Tg(116A:Gal4;UAS:nfsb-mCherry)-labeled neurons. Note that due to sparse expression of the transgenes, ablation of the cH/PVO populations is likely to be partial (<50%). Representative projection images are shown of non-ablated animals (left) and animals following exposure to the chemical MTZ (right, see Materials and methods). Scale bar = 50 μm. Insets (white boxes) show the locations of higher-magnification single-plane images of transgene-labeled cH, aPVO and pPVO areas and neuronal overlap with 5-HT expression (anti-5-HT antibody staining, green color). Scale bar = 20 μm. (b) Quantification of ablation efficiency. When Tg(116A:Gal4;UAS:nfsb-mCherry) fish were incubated with MTZ, we observed 6.1 ± 0.66 (mean ± SEM) mCherry-positive cells (n = 54 fish). When MTZ was omitted, 31 ± 1.5 cells were mCherry-positive (n = 3 fish). The reduction resulting from ablation was thus ~80% (p = 0.0019, one-tailed Wilcoxon rank-sum test). pPVO (4.3 ± 1.5 control vs 1.4 ± 0.2 ablated, p = 0.0162) and aPVO (8.0 ± 0.6 control vs 1.9 ± 0.3 ablated, p = 0.0015) cells were also affected. Some of the remaining mCherry-positive cells were dimly fluorescent and misshapen/deformed, indicating damage that might impair function. (c) Similar to Tg(116A:Gal4;UAS:GFP) (Figure 3—figure supplement 1), there is strong overlap of Tg(116A:Gal4;UAS:nfsb-mCherry) with anti-5-HT immunostaining (green color). Scale bar = 50 μm. Insets (white boxes) show higher-magnification single-plane images of cH, aPVO and pPVO labeling by this transgene and overlap with 5-HT expression. Scale bar = 20 μm. (d) The Tg(116A:Gal4;UAS:nfsb-mCherry) transgene does not affect feeding in the absence of MTZ, relative to siblings lacking transgene expression. Fed: p = 0.64, n = 11(negative)/10(positive); Dep.: p = 0.91, n = 11(negative)/10(positive), Fed vs Dep.: p = 0.035(negative)/7.7 × 10−4(positive), two-tailed Wilcoxon rank-sum test.
 
 On the other hand, when cH activity was optogenetically excited during voracious feeding (where cH activity would normally be very low), prey ingestion was reduced (Figure 6b). We presume that increased cH activity inhibits lLH activity (Figure 5), which in turn is associated with satiation and lack of feeding (Figure 1f,g). Indeed, inhibition of LH signaling has been shown to reduce prey capture success in comparable studies (Muto et al., 2017).
 
@@ -103,7 +185,7 @@ Finally, we asked what would happen if cH activity was reduced by partial ablati
 
 Decades-old studies on appetite regulation in mammals have suggested that the hypothalamus consists of modular units that functionally interact to suppress or enhance food intake. Here we show that the larval zebrafish hypothalamic network can similarly be divided into medial and lateral units on the basis of neural activity and function. These units show anti-correlated activity patterns extending through various states and distinct behaviors during periods of food deprivation and feeding. We propose these states are analogous to those commonly referred to as hunger and satiety and reflect the animal’s drive to maintain energy homeostasis (Figure 6d). Furthermore, we show that within these broad neural response classes lie subpopulations that encode specific stimuli and perform distinct functions depending on the timing of their activation.
 
-## Mutually opposing hypothalamic networks control zebrafish appetite
+### Mutually opposing hypothalamic networks control zebrafish appetite
 
 We show that the medial hypothalamic zone, especially the caudal hypothalamus (cH), is strongly activated by food deprivation and silent during voracious feeding, and that these changes in activity occur on a timescale of seconds to minutes. Here, we focused mainly on the cH serotonergic neurons, although many medially localized neurons show similar activity patterns. In contrast, the lateral hypothalamus (LH), which contains GABAergic and glutamatergic neurons, can be inhibited by the cH (Figure 5) and is weakly active in the absence of food; conversely it is most strongly active during voracious feeding when cH serotonergic neurons are silent. Interestingly, fish that display satiated feeding behavior exhibit intermediate activity levels in the two hypothalamic regions (Figure 1). Thus, "hunger" in the larval zebrafish is encoded by two alternative and distinct states of activity in opposing brain regions, depending on whether food is absent or present, with the restoration of energy homeostasis (i.e. satiety) paralleled by a return to an intermediate state of balanced activity.
 
@@ -111,7 +193,7 @@ While generally anti-correlated, the cH and LH also appear to be differentially 
 
 When prey is presented to a food-deprived animal, a rapid state change occurs as LH neural activity is strongly increased and cH activity rapidly diminishes (Figures 1–4). Importantly, the silence of cH neurons and strength of LH activity were correlated with the extent of prior food deprivation (Figure 2), suggesting a role for these nuclei in regulating food intake based on energy needs. The quick timescale of these changes in activity suggests that they do not reflect an alleviation of caloric deficit (i.e. a change in hunger state), which would take a significantly longer time to occur. Further, the striking anti-correlation between the cH and LH is consistent with their mutual inhibition, and suggests that the acute reduction in cH activity allows for rapid LH excitation upon the presentation of prey cues. We supported this notion by showing that optogenetic stimulation of a subset of cH neurons could inhibit lLH activity (Figure 5). However, the mechanisms for cH and LH mutual interactions are still unknown. It is possible that the cH may act via nearby inhibitory GABAergic neurons, and/or exert its effects through direct secretion of monoamines into the ventricles or perineuronal space. The fast (seconds) anti-correlation between cH and LH calcium activity (Figure 3), suggests the presence of direct inhibitory connections. The LH, which was previously characterized in Muto et al. (2017), similarly does not appear to send direct projections to the cH, but could potentially interact via intermediary neurons in the medial/periventricular regions of the hypothalamus.
 
-## The cH and LH show differential sensitivity to prey sensory and consummatory cues
+### The cH and LH show differential sensitivity to prey sensory and consummatory cues
 
 Ingestive behavior has been proposed to comprise a series of sequential phases: 1) the initiation phase, triggered by energy deficit, in which the animal begins to forage; 2) the procurement phase, triggered by the presence of food sensory cues, in which the animal seeks and pursues food; and 3) the consummatory phase, which usually involves more stereotyped motor programs (Berthoud, 2002; Watts, 2000). An animal’s energy status is sensed internally and may influence the initiation, procurement and consummatory stages of ingestive behavior. Thus, a hungry animal will be more alert to food cues, seek food more persistently and also eat more voraciously.
 
@@ -121,7 +203,7 @@ Notably, cH inhibition and LH activation during the sensory stage is not as stro
 
 Finally, our data raise the possibility of functional compartmentalization within the LH. Especially in terms of cellular pERK activity, the lLH is more weakly activated by food sensory cues compared to the mLH, suggesting that the lLH, similar to the cH, may be more sensitive to consummatory cues than sensory food cues alone. These results are also consistent with a generally stronger anti-correlation of lLH and cH activity (compared to mLH), as observed in our calcium imaging and optogenetic experiments. Further molecular, cellular, and functional dissection of the individual LH lobes will allow for a better understanding of their behavioral roles.
 
-## Functional roles of the cH and LH in and beyond appetite control
+### Functional roles of the cH and LH in and beyond appetite control
 
 Finally, we test the hypothesis that the cH and LH form mutually antagonistic functional units that dominate different phases of hunger and drive appropriate behavioral responses during each phase (Figure 6). In particular, we show that the activation state of the cH is a crucial regulator of satiation state-dependent food intake. Artificial cH activation in satiated fish prior to feeding is sufficient to drive subsequent voracious feeding. Based on observed cH dynamics, we propose that the degree of cH inhibition during voracious feeding is proportional to the degree of cH activation prior to feeding. This could be mediated by the release of serotonin/other neuromodulators over the course of food deprivation, which may be capable of sensitizing the LH even in the absence of food cues. In this way, zebrafish are able to retain a ‘memory’ of their hunger state, which is released once food is presented. This motif might help ensure that the animal eventually returns to a stable equilibrium, that is, satiety.
 
@@ -139,17 +221,202 @@ In conclusion, we have shown here how anatomically-segregated hypothalamic nucle
 
 ## Materials and methods
 
-## Fish husbandry and transgenic lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(pGal4FF:116A)</td>
+      <td>Characterized in this manuscript</td>
+      <td></td>
+      <td>Dr. Koichi Kawakami (NIG, Japan)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(pGal4FF:76A)</td>
+      <td>PMID: 28425439</td>
+      <td></td>
+      <td>Dr. Koichi Kawakami (NIG, Japan)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(y333:Gal4)</td>
+      <td>PMID: 26635538</td>
+      <td></td>
+      <td>Dr. Harold Burgess (NIH)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(HuC:GCaMP6s)</td>
+      <td>PMID: 28892088</td>
+      <td></td>
+      <td>Dr. Florian Engert (Harvard)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(UAS:GCaMP6s)</td>
+      <td>PMID: 28425439</td>
+      <td></td>
+      <td>Dr. Koichi Kawakami (NIG, Japan)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(UAS:ReaChR-RFP)</td>
+      <td>Characterized in this manuscript</td>
+      <td></td>
+      <td>Dr. Misha Ahrens (Janelia Research Campus)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(UAS-E1b:NTR-mCherry)</td>
+      <td>PMID: 17335798</td>
+      <td></td>
+      <td>Available from ZIRC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(Vglut2a:dsRed)</td>
+      <td>PMID: 19369545</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(Gad1b:loxP-dsRed-loxP-GFP)</td>
+      <td>PMID: 23946442</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(Gad1b:GFP)</td>
+      <td>PMID: 23946442</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(TH2:GCaMP5)</td>
+      <td>PMID: 26774784</td>
+      <td></td>
+      <td>Dr. Adam Douglass (University of Utah)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(ETvmat2:GFP)</td>
+      <td>PMID:18164283</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(HCRT:RFP)</td>
+      <td>PMID: 25725064</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit monoclonal anti-pERK</td>
+      <td>Cell Signaling</td>
+      <td>4370 RRID:AB_2315112</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-ERK</td>
+      <td>Cell Signaling</td>
+      <td>4696 RRID:AB_390780</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-5-HT</td>
+      <td>Sigma-Aldrich</td>
+      <td>S5545 RRID:AB_477522</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-5-HT</td>
+      <td>AbCam</td>
+      <td>ab66047 RRID:AB_1142794</td>
+      <td>IHC (1:500), 2% BSA in PBS, 0.3% Triton blocking solution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat polyclonal anti-MSH</td>
+      <td>EMD Millipore</td>
+      <td>AB5087 RRID:AB_91683</td>
+      <td>IHC (1:500), 2% BSA in PBS, 0.3% Triton blocking solution)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-AGRP</td>
+      <td>Phoenix Pharmaceuticals</td>
+      <td>H-003–53 RRID:AB_2313908</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-MCH</td>
+      <td>Phoenix Pharmaceuticals</td>
+      <td>H-070–47 RRID:AB_10013632</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-CART</td>
+      <td>Phoenix Pharmaceuticals</td>
+      <td>55–102 RRID:AB_2313614</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-NPY</td>
+      <td>Immunostar</td>
+      <td>22940 RRID:AB_2307354</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-TH</td>
+      <td>Immunostar</td>
+      <td>22941 RRID:AB_1624244</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DiD’ solid (lipid dye)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>D-7757</td>
+      <td>Stock solution (10 mg/ml), working solution (2.5 mg/ml), in ethanol</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fish husbandry and transgenic lines
 
 Larvae and adults were raised in facility water and maintained on a 14:10 hr light:dark cycle at 28°C. All protocols and procedures involving zebrafish were approved by the Harvard University/Faculty of Arts and Sciences Standing Committee on the Use of Animals in Research and Teaching (IACUC). WIK wildtype larvae and mit1fa-/- (nacre) larvae in the AB background, raised at a density of ~40 fish per 10 cm petri dish, were used for behavioral and MAP-mapping experiments.
 
 Transgenic lines Tg(UAS-E1b:NTR-mCherry) (Davison et al., 2007) (referred to as UAS:nfsb-mCherry), Tg(UAS:GCaMP6s) (Muto and Kawakami, 2011; Muto et al., 2017) Tg(HuC:GCaMP6s) (Kim et al., 2017), Tg(Vglut2a:dsRed) (Miyasaka et al., 2009), Tg(Gad1b:loxP-dsRed-loxP-GFP and Tg(Gad1b:GFP) (Satou et al., 2013), Tg(TH2:GCaMP5) (McPherson et al., 2016), Tg(ETvmat2:GFP) (referred to as VMAT:GFP) (Wen et al., 2008), Tg(HCRT:RFP) (Liu et al., 2015) have all been previously described and characterized. Tg(pGal4FF:116A) (referred to as 116A:Gal4) was isolated from a gene trap screen by the Kawakami group (Kawakami et al., 2010), Tg(pGal4FF:76A) was recently published by the same group (Muto et al., 2017). Tg(y333:Gal4) from a different enhancer trap screen was used to drive expression in the cH in cases where 116A:Gal4-driven expression was sparse (Marquart et al., 2015). Tg(UAS:ReaChR-RFP) was generated by Chao-Tsung Yang (Ahrens lab, Janelia Research Campus) using Tol2 transgenesis. The same optogenetic channel was previously validated in zebrafish in Dunn et al. (2016).
 
-## MAP-mapping of appetite regions
+### MAP-mapping of appetite regions
 
 More details on the MAP-mapping procedure can be found in Randlett et al. (2015). 5–6 dpf, mit1fa-/- (nacre) larvae in the AB background were fed an excess of paramecia once daily. On the day of the experiment (at 7 dpf), the larvae were distributed randomly into two treatment groups: 1) Food-deprived, where larvae were transferred into a clean petri dish of facility water, taking care to rinse out all remaining paramecia or 2) Fed, where after washing and transferring they were fed again with an excess of paramecia. After two hours, larvae in both groups were fed with paramecia. After 15 min, larvae were quickly funneled through a fine-mesh sieve, and the sieve was then immediately dropped into ice-cold 4% paraformaldehyde (PFA) in PBS (PH 7.2–7.4). Fish were then immunostained with procedures as reported below (see Immunostaining methods). The rabbit anti-pERK antibody (Cell Signaling, #4370) and mouse anti-ERK (p44/42 MAPK (Erk1/2) (L34F12) (Cell Signaling, #4696) were used at a 1:500 dilution. Secondary antibodies conjugated with alexa-fluorophores (Life Technologies) were diluted 1:500. For imaging, fish were mounted dorsal-up in 2% (w/v) low melting agarose in PBS (Invitrogen) and imaged at ~0.8/0.8/2 μm voxel size (x/y/z) using an upright confocal microscope (Olympus FV1000), using a 20 × 1.0 NA water dipping objective. All fish to be analyzed in a MAP-Mapping experiment were mounted together on a single imaging dish, and imaged in a single run, alternating between treatment groups.
 
-## ICA analysis
+### ICA analysis
 
 ICA analysis was performed exactly as reported in Randlett et al. (2015). The central brain (not including eyes, ganglia, or olfactory epithelia) from each fish was downsampled into 4.7 um3 sized voxels to generate a pERK level vector for each fish. Fish in which any of the voxels was not imaged (due to incomplete coverage) were excluded from the analysis. Fish were normalized for overall brightness by dividing by the 10th percentile intensity value, and voxels normalized by subtracting the mean value across fish. The fish-by-voxel array was then analyzed for spatially independent components using FastICA (http://research.ics.aalto.fi/ica/fastica/, Version 2.5), treating each fish as a signal and each voxel as sample, using the symmetric approach, ‘pow3’ nonlinearity, retaining the first 30 principal components and calculating 30 independent components. Independent component (IC) maps are displayed as the z-score values of the IC signals.
 
@@ -157,43 +424,43 @@ Since ICA analysis requires a substantial sample size, the original analysis rep
 
 Here, to focus the analysis on more naturalistic feeding conditions, we restricted the dataset to n = 300 fish that were either food-deprived (2 hr), or presented with food in food-deprived or fed conditions.
 
-## Whole-mount immunostaining
+### Whole-mount immunostaining
 
 24 hr after fixation (4% paraformaldehyde (PFA) in PBS), fish were washed in PBS + 0.25% Triton (PBT), incubated in 150 mM Tris-HCl at pH 9 for 15 min at 70°C (antigen retrieval), washed in PBT, permeabilized in 0.05% Trypsin-EDTA for 45 min on ice, washed in PBT, blocked in blocking solution (10% Goat Serum, 0.3% Triton in Balanced Salt Solution or 2% BSA in PBS, 0.3% Triton) for at least an hour and then incubated in primary and secondary antibodies for up to 3 days at 4°C diluted in blocking solution. In-between primary and secondary antibodies, fish were washed in PBT and blocked for an hour. If necessary, pigmented embryos were bleached for 5 min after fixation with a 5%KOH/3%H2O2 solution.
 
 The protocol was similar for dissected brains, except that the brains were dissected in PBS after 24 hr of fixation, and the permeabilization step in Trypsin-EDTA and occasionally Tris-HCL antigen retrieval were omitted. Dissected brains were mounted ventral up on slides in 70% glycerol prior to imaging. Confocal images of dissected brains were obtained using either a Zeiss LSM 700 or Olympus FV1000.
 
-## Quantification of food intake
+### Quantification of food intake
 
 Paramecia cultures (~1–2 500 ml bottles) were harvested, spun down gently (<3000 rpm) and concentrated, and subsequently incubated with lipid dye (DiD’ solid, D-7757, Thermo Fisher Scientific, dissolved in ethanol) for >2 hr (5 µl of 2.5 mg/ml working solution per 1 ml of concentrated paramecia) on a rotator with mild agitation. They were then spun down gently (<3000 rpm), rinsed and reconstituted in deionized water. An equal amount (100 µl,~500 paramecia) was pipetted into each 10 cm dish of larvae. This method was adapted from Shimada et al. (2012). After the experiment, larvae were fixed and mounted on their sides on glass slides or placed in wells of a 96 well plate. They were then imaged using the AxioZoom V16 (Zeiss) and analyzed using custom Fiji (Schindelin et al., 2012) software. In cases where the identity of larvae needed to be maintained, for example, to correlate food intake with brain activity, larvae were imaged and subsequently stained individually in 96 well plates. This led to more variable staining which affects analysis of mean fluorescence.
 
 Larvae were always distributed randomly into experimental groups.
 
-## Quantification of LH and cH activity in dissected brains
+### Quantification of LH and cH activity in dissected brains
 
 Brains within each dataset were usually registered onto a selected reference image from the same dataset using the same CMTK registration software used in MAP-mapping. Further analysis was then performed using custom Fiji and MATLAB software.
 
-## Quantification of mean anti-pERK fluorescence
+#### Quantification of mean anti-pERK fluorescence
 
 For quantification of cH, mLH and lLH pERK fluorescence intensity, ROIs were manually defined using the reference image, and pERK intensity was quantified over all registered images and averaged across the entire lobe (multiple z-planes) as well as across both lobes. Analysis of cH pERK fluorescence was restricted to the most ventral planes, as more dorsal cH neurons show weaker correlation with feeding states (e.g. Figure 1—figure supplement 5).
 
-## Quantification of active cell count
+#### Quantification of active cell count
 
 For quantification of mLH and lLH active cell count, automated analysis of cell count was again performed using custom Fiji software, namely: 1) Image processing to reduce background and enhance contrast 2) Adaptive thresholding to isolate strongly-stained cells 3) Applying the ‘Analyze Particles’ function to quantify the number of cells within each manually-defined ROI. Aggregation and visualization of results were performed using custom MATLAB software.
 
 Note that, in experiments in which the data were collected without the tERK channel (e.g. from Figure 2), thus prohibiting image registration, ROIs were drawn manually over each region across all z-planes and averaged to obtain mean fluorescence values. For Figure 2—figure supplement 1, where individual fish were stained, all measurements, including cell count, were made manually. In addition, background fluorescence was measured for each sample and subtracted from measured values.
 
-## Semi-automated quantification of ReaChR overlap with anti-pERK staining
+#### Semi-automated quantification of ReaChR overlap with anti-pERK staining
 
 This section describes the analysis method for Figure 6—figure supplement 1. The multi-point picker on ImageJ was first used to select all visible ReaChR-positive or ReaChR-negative cells within each z-stack for each fish. A custom Fiji macro was then used to extract mean pERK intensities from all identified cells, and data were further processed using MATLAB. Data were plotted using the notBoxPlot.m Matlab function.
 
-## Calcium imaging
+### Calcium imaging
 
 For confocal calcium imaging of the cH and LH simultaneously in the presence of food, Tg(76A:Gal4;116A:Gal4; UAS:GCaMP6s) triple transgenic fish were embedded in 1.8% agarose, with their eyes/nostrils released. GCaMP activity from a single z-plane (where the cH and LH neurons could be seen) was imaged using a confocal microscope (Olympus FV1000) at one fps. After a 5 min habituation period and a 5 min baseline period, a dense drop of water, followed by paramecia (5 min later) was pipetted into the dish. Due to paramecia phototaxis, most of the paramecia moved into close vicinity of the fish’s head under the laser, allowing for strong visual/olfactory exposure to paramecia. After image registration (TurboReg Fiji Plugin, Thévenaz et al., 1998), and downsampling (Fiji/MATLAB), manually-segmented ROIs were selected and total fluorescence within the ROI was calculated. Cross-correlation and other analyses were performed using custom MATLAB software.
 
 For long-term 2P imaging of the cH and LH simultaneously in the absence of food (Figure 3—figure supplement 3), Tg(76A:Gal4;116A:Gal4; UAS:GCaMP6s) triple transgenic fish were embedded in 1.8% agarose. GCaMP activity from either multiple slices (3 z-planes spanning a ~ 20 µm volume of the intermediate hypothalamus using an electrically-tunable liquid lens (Edmund Optics, 83–922), 237 ms per z-plane) or a single z-plane where the cH and LH neurons (1.5 fps) could be seen was imaged using custom 2P microscopes. After image registration (Fiji/MATLAB), manually segmented ROIs were selected and total fluorescence within the ROI was calculated. Calcium spike detection and other analyses were performed using custom MATLAB software. Baseline detrending was performed on ‘raw’ Δf/f traces by fitting a quadratic polynomial and subtracting it from the trace. Calculations on calcium spike frequency and amplitude were subsequently performed using baseline-detrended calcium traces.
 
-## Optogenetic stimulation and simultaneous calcium imaging
+### Optogenetic stimulation and simultaneous calcium imaging
 
 Optogenetic stimulation and calcium imaging was performed on a confocal microscope (Zeiss LSM 880) using a 633 nm laser for ReaChR activation, and a 488 nm laser for calcium imaging. Tg(y333:Gal4;UAS:ReaChR-RFP; HuCGCaMP6s) triple-transgenic fish were used to record LH activity after ReaChR activation. As Tg(HuC:GCaMP6) does not label the cH, in some cases we used fish that also had Tg(UAS:GCaMP6s) co-expressed in the cH, allowing for monitoring of cH activity directly.
 
@@ -201,26 +468,26 @@ The ReaChR activation spectrum is wide and 488 nm laser power at sufficiently hi
 
 Fed fish were embedded in 1.8–2% agarose, with tails, mouth and eyes freed, 15–20 min before imaging in the absence of food. For baseline recording, spontaneous activities in cH or LH were recorded. ReachR activation was then induced in one side of cH periodically for 10–15 s, and ensuing activity in one or both sides of LH or cH was recorded continuously during intervals (of 120–180 s) between stimuli.
 
-## Nitroreductase-mediated ablations
+### Nitroreductase-mediated ablations
 
 Larvae expressing Tg(116A:Gal4;UAS:nfsb-mCherry), or their non-transgenic siblings were incubated in 2.5 mM Metronidazole (Sigma-Aldrich, M3761) from 4-6 dpf/5–7 dpf. MTZ was subsequently washed out, and food intake was measured at 7 or 8 dpf. For these experiments, the MTZ-treated non-transgenic siblings were used as the control group. Each control or ablated group was food-deprived or fed for 2 hr, and labeled food was added to quantify food intake. In the case of fed fish, unlabeled food was very gently washed out 15 mins before the experiment and the food-deprived fish were also agitated slightly to simulate a short washout.
 
-## Optogenetic stimulation with behavior
+### Optogenetic stimulation with behavior
 
 Optogenetic stimulation was done by placing a square LED panel (630 nm, 0.12 mW/mm2 driven at full current, Soda Vision, Singapore) directly on top of petri dishes containing ReaChR positive or negative fish, for 10 min continuously before or during feeding. We had attempted other methods of stimulating the fish (e.g. pulsed LED stimulation) but found that it was disruptive to behavior.
 
-## Artemia hunting video
+### Artemia hunting video
 
 7 dpf larval fish were food-deprived for 2 hr, acclimatized in 24 well plates for 30 min, and then fed either an excess of hatched artemia or paramecia. Raw videos of hunting behavior were then recorded for 10 min at 30 fps using a high-resolution monochrome camera (Basler acA4924) and custom Python-based acquisition software.
 
-## High-resolution behavioral tracking
+### High-resolution behavioral tracking
 
 We developed a system (Johnson et al., 2019) in which a high-speed infrared camera moves on motorized rails to automatically track a zebrafish larvae in a large pool (300 × 300×4 mm). A single fish is recruited to the arena center with motion cues delivered from a projector to initiate each trial. Paramecia are dispersed throughout the middle of the pool. For analysis 60 Hz image frames are centered and aligned. In every frame, the tail was skeletonized and the gaze angle of each eye is calculated. The eyes can each move from around zero degrees (parallel to body-axis) to 40 degrees (converged for hunting). Each bout was then represented as a point in 220-dimensional posture space by accumulating 22 posture measurements (20 tail tangent angles to encode tail shape, and two eye gaze angles) across 10 image frames (~167 ms) from the beginning of each bout. All bouts were then mapped to a 2-D space with t-distributed stochastic neighbor embedding (t-SNE), Four major hunting bout types can be identified from this embedding. Hunts begin with the ‘j-turn’, and fish follow and advance toward prey objects with ‘pursuit’ bouts. Hunts end with an ‘abort’ or a ‘strike’. When the fish is not actively involved in a hunt, it explores the arena with ‘exploratory’ bouts. Fractions of hunting bouts were then compared between fed and food-deprived fish in 3 min time bins over 45 min.
 
-## Statistics
+### Statistics
 
 All error bars show mean ± SEM over fish. Significance was reported as follows: *p<0.05. Significance was determined using the non-parametric Wilcoxon signed-rank test for paired data and the Wilcoxon rank-sum test for independent samples. One-tailed tests were performed in cases where there was a prior prediction regarding the direction of change. A one-or two-way ANOVA (Tukey-Kramer correction, MATLAB statistical toolbox) was used in cases where multiple comparisons were involved.
 
-## Code availability
+### Code availability
 
 Analysis code used in this manuscript is available at https://github.com/carolinewee/ROIbasedpERKanalysis (Wee, 2019a; copy archived at https://github.com/elifesciences-publications/ROIbasedpERKanalysis), https://github.com/carolinewee/gutfluorescence (Wee, 2019b; copy archived at https://github.com/elifesciences-publications/gutfluorescence) and https://github.com/carolinewee/CellularpERKanalysis (Wee, 2019c; copy archived at https://github.com/elifesciences-publications/CellularpERKanalysis).

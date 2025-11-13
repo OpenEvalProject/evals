@@ -17,7 +17,7 @@
 
 ## Abstract
 
-ESCRT-III polymerization is required for all endosomal sorting complex required for transport (ESCRT)-dependent events in the cell. However, the relative contributions of the eight ESCRT-III subunits differ between each process. The minimal features of ESCRT-III proteins necessary for function and the role for the multiple ESCRT-III subunits remain unclear. To identify essential features of ESCRT-III subunits, we previously studied the polymerization mechanisms of two ESCRT-III subunits Snf7 and Vps24, identifying the association of the helix-4 region of Snf7 with the helix-1 region of Vps24 (Banjade et al., 2019a). Here, we find that mutations in the helix-1 region of another ESCRT-III subunit Vps2 can functionally replace Vps24 in Saccharomyces cerevisiae . Engineering and genetic selections revealed the required features of both subunits. Our data allow us to propose three minimal features required for ESCRT-III function – spiral formation, lateral association of the spirals through heteropolymerization, and binding to the AAA + ATPase Vps4 for dynamic remodeling.
+ESCRT-III polymerization is required for all endosomal sorting complex required for transport (ESCRT)-dependent events in the cell. However, the relative contributions of the eight ESCRT-III subunits differ between each process. The minimal features of ESCRT-III proteins necessary for function and the role for the multiple ESCRT-III subunits remain unclear. To identify essential features of ESCRT-III subunits, we previously studied the polymerization mechanisms of two ESCRT-III subunits Snf7 and Vps24, identifying the association of the helix-4 region of Snf7 with the helix-1 region of Vps24 (Banjade et al., 2019a). Here, we find that mutations in the helix-1 region of another ESCRT-III subunit Vps2 can functionally replace Vps24 in Saccharomyces cerevisiae. Engineering and genetic selections revealed the required features of both subunits. Our data allow us to propose three minimal features required for ESCRT-III function – spiral formation, lateral association of the spirals through heteropolymerization, and binding to the AAA + ATPase Vps4 for dynamic remodeling.
 
 ## Introduction
 
@@ -29,15 +29,31 @@ One of the most important features of Vps2 that has previously been described is
 
 ## Results
 
-## Overexpressing Vps2 can replace the function of Vps24 in MVB sorting
+### Overexpressing Vps2 can replace the function of Vps24 in MVB sorting
 
 In our previous work (Banjade et al., 2019a), we observed that overexpressing VPS24 suppresses the defect of a snf7 allele (snf7-D131K) that encodes a Snf7 mutant with a lower affinity to Vps24. The overexpression, however, does not rescue other snf7 alleles that encode defective Snf7 homopolymers. We also observed that overexpression of Vps2 rescues the defect of snf7-D131K. These data are consistent with the observations that Vps24 and Vps2 bind synergistically to Snf7 (Adell et al., 2017; Mierzwa et al., 2017; Babst et al., 2002). Following these observations, we sought to test whether expressing a high level of Vps2 also rescued the lack of Vps24 in cells, with the hypothesis that Vps2 may possess a lower affinity binding surface for Snf7, which could be overcome with an increased availability of Vps2 in the cytoplasm. These ideas are also consistent with previous binding-constant measurements with mammalian Vps2 (CHMP2A) and Vps24 (CHMP3), which showed that CHMP3 possesses a 16-fold tighter affinity than CHMP2A to mammalian Snf7 (CHMP4A) (Effantin et al., 2013).
 
 To test these hypotheses, we first utilized MVB cargo sorting assays (for cargoes Mup1 and Can1) in Saccharomyces cerevisiae (Banjade et al., 2019a; Banjade et al., 2019b). In a vps24∆ strain overexpressing VPS2, we observed that Mup1-pHluorin is sorted at about 40% compared to that of the wild type (WT), and that the canavanine sensitivity of vps24∆ is partially rescued (Figure 1A). We also noted that VPS2 overexpression rescues the temperature sensitivity of vps24∆ (Figure 1—figure supplement 1A), suggesting that the increased concentration of Vps2 could replace the cellular function of Vps24 beyond MVB cargo sorting.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/67709/elife-67709-fig1-v1.jpg)
+
+**Figure 1.:** (A) Overexpression of Vps2 can rescue the defect of vps24∆ for Mup1 sorting. Image on the left represents Mup-pHluorin sorting through a flow cytometry assay and the image on the right represents an immunoblot for pHluorin upon methionine addition. Overexpression (OE) was achieved through a CMV promoter and Tet operator containing plasmid. (B) Flowchart of the random mutagenesis approach. (C) Top figure shows the flow cytometry and canavanine sensitivity assays with the mutants of Vps2 that can rescue the sorting defects of vps24∆. Bottom figure shows the domains of Vps2 highlighting the mutations in Vps2* .
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67709/elife-67709-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Vps2 overexpression with a CMV promoter/Tet operator rescues the temperature sensitivity defect of vps24∆. (B) Immunoblot of pHluorin showing the cleavage of Mup1-pHluorin after 90 min of methionine addition. Vps2 was expressed either in a single-copy centromeric (CEN) plasmid or under a doxycycline-inducible CMV promoter. Expression of Vps2 was controlled by titrating the concentration of doxycycline. (C) Mup1-sorting characterization with changes in Vps2 expression level. The different colors represent different set of titration experiments. (D) Plot showing the control of Vps2 expression levels with doxycycline titration.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/67709/elife-67709-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Sequence alignment of helix 1 of Vps24 and Vps2. Cyan-colored residues are basic amino acids, and red colors represent acidic amino acids. Arrows in Vps24 sequence point to location of charge-inversion mutations that rescue the defect of the snf7D131K allele (Banjade et al., 2019a). Arrows in Vps2 sequence represent the location of the mutations that rescue vps24∆. (B) Helical wheel representation of part of the helix-1 region of Vps2 (Heliquest).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/67709/elife-67709-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Flow cytometry for Mup1-pHluorin sorting and canvanine sensitivity assay in vps24∆ for the N-terminal helix-1 mutations in Vps2 (compare with Figure 1C). In these constructs, the promoters were endogenous, wild-type (WT) promoters. (B) In a vps2∆ background, the suppressors vps2RM and vps2* also have higher sorting capabilities in both Mup1-sorting assay and canavanine sensitivity assay. The promoter regions of vps2RM and vps2* contain mutations, but other constructs used here are with WT promoters. (C) Immunoblots of various Vps2 mutants, the same constructs as used in Figure 1C, and A and B. (D) Design of the randomly mutagenized VPS2 plasmid – primers bind to the 5’ and 3’ UTR regions of VPS2.
+
 With a Tet-off regulatable operator, we next used doxycycline to titrate the expression level of Vps2. As a result, we determined that about eightfold overexpression of Vps2 is necessary for restoring Mup1 sorting (Figure 1—figure supplement 1B–D). These data suggested that Vps2 contains features that can replace the function of Vps24 when present in higher concentrations in cells.
 
-## Random mutagenesis and selection of vps2 mutants that are capable of replacing both VPS2 and VPS24
+### Random mutagenesis and selection of vps2 mutants that are capable of replacing both VPS2 and VPS24
 
 To identify the features in Vps2 that could replace the function of Vps24, we utilized an unbiased random mutagenesis selection approach, as we have done previously (Banjade et al., 2019a; Tang et al., 2016). Since vps24∆ is sensitive to the drug canavanine, we selected for vps2 mutants that conferred canavanine resistance to vps24∆ cells. We performed error-prone PCR and assembled a vps2 mutant library in a vps24∆ strain. We next selected vps2 alleles using canavanine at a concentration that the WT VPS2 does not grow (Figure 1B). From this selection, one of the alleles (hereafter referred to as Vps2RM) strongly rescues the canavanine sensitivity of vps24∆ (Figure 1C) and sorts Mup1-pHluorin to 45% of that of the WT (Figure 1C). Vps2RM contains mutations in its promoter region, three missense mutations in helix 1 (N21K T28A E31K), and two missense mutations in helix 4 (S136N M146I).
 
@@ -53,9 +69,25 @@ One of the early identified functions of Vps24 in yeast was as an adaptor for V
 
 Consistent with the model of helix-1 region of Vps24 and Vps2 interacting with helix-4 region of Snf7, Teis and colleagues report that defects resulting from charge inversion mutations in helix-4 region of Snf7 are rescued by helix-1 charge-inversion mutations in Vps2 (Sprenger et al., 2021). Collectively, these results provide strong evidence of the similarity between Vps24 and Vps2, supporting the idea that Vps2 associates with Snf7 in a lateral assembly mechanism, similar to Vps24.
 
-## Binding to the AAA + ATPase Vps4 is a critical feature of the Vps24-Vps2 module
+### Binding to the AAA + ATPase Vps4 is a critical feature of the Vps24-Vps2 module
 
 In contrast to Vps2 overexpression rescuing the defects of vps24∆, the reverse does not occur – Vps24 overexpression by ~16-fold did not rescue the defect of a vps2∆ (Figure 3). One of the critical features of Vps2 is the presence of the C-terminal MIM motif that has a higher affinity to the AAA + ATPase Vps4 than other ESCRT-III proteins (Obita et al., 2007). While other ESCRT-III proteins also possess the MIM motifs, the Vps2 MIM has the strongest affinity for Vps4 in solution (~20 µM, Obita et al., 2007). In addition, helix 5 of Vps2 has been identified as a second binding site of Vps4 with an affinity of ~3 µM (Han et al., 2015; Han et al., 2017; Han et al., 2019). We therefore hypothesized that a Vps24 variant with Vps4 binding sites could possess the properties of both Vps24 and Vps2. To test this, we replaced the C-terminus of Vps24 with that of Vps2 and assayed the functions of the chimeric protein.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/67709/elife-67709-fig3-v1.jpg)
+
+**Figure 3.:** (A) The domain organization of Vps2, highlighting the C-terminal region important for Vps4 binding. (B) Left panel denotes the chimeras made to replace regions of Vps2 onto Vps24. Cyan arrows in the helices are positions of the E114K mutation. Right panel represents Mup1-pHluorin sorting and canavanine sensitivity assays. In this assay, the constructs were overexpressed under a CMV promoter-Tet-off operator system.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67709/elife-67709-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Top figure depicts the domain organization of Vps2 and Vps24. (A) Mup-pHluoring sorting assay with several chimeras of Vps24-Vps2, showing that the replacement of the C-terminal regions of Vps2 onto Vps24 keeps the constructs functional. (B) The same constructs as in (A) do not suppress vps2∆, as they are under endogeneous promoters. ‘CEN’ represents denotation for centromeric plasmid.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/67709/elife-67709-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Canavanine sensitivity assays of Snf7 constructs with the helix-5 and MIM regions replaced from Vps2 onto Snf7. Similar replacements were also done with Snf7***, which consists of the triple mutation R52EQ90LN100I. Bottom models illustrate the idea that Vps24-Vps2 copolymer and recruitment of Vps4 through the copolymer may be required to obtain the functional heteropolymer.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/67709/elife-67709-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Under the endogenous promoter and centromeric plasmid (CEN), various chimeras of Vps24-Vps2 do not support the sorting of Mup1-pHluorin, but some of the same constructs when overexpressed can rescue vps24∆ (B). Note that the N-terminus of Vps2 needs to be intact to mimic Vps24. Overexpression was achieved with a CMV promoter, Tet operator system.
 
 We designed various chimeric constructs of Vps24/Vps2 under the control of their endogenous promoters to first demarcate the regions that maintain function in a vps24∆ strain (Figure 3—figure supplement 1A). Consistent with the sequence analysis, replacing the MIM and helix 5 of Vps24 with the homologous region of Vps2 kept the protein functional, but truncations beyond residue ~152 resulted in functional defects. In summary, the C-terminus (residues ~152 and beyond) of Vps24 can be replaced with that of Vps2 and still retain function.
 
@@ -71,9 +103,19 @@ However, we found that these chimeras were unable to replace either Vps24 or Vps
 
 Therefore, the presence of a Vps24/Vps2-like molecule is critical for proper ESCRT-III function. Since previous publications (Adell et al., 2017; Bertin et al., 2020) and we ourselves (Teis et al., 2008) have found that Vps24-Vps2 act as laterally interacting proteins to Snf7 polymers that induce 3D helicity, an ESCRT-III functional protein requires this lateral copolymerization, perhaps to regulate Vps4-mediated subunit turnover of the heteropolymers.
 
-## Minor modifications in Vps24, most likely ‘activating’ mutations, can replace Vps2
+### Minor modifications in Vps24, most likely ‘activating’ mutations, can replace Vps2
 
 In the ‘closed’ conformation of ESCRT-III subunits, the region from helix 3 and beyond bind back to alpha helices 1–2 (Bajorek et al., 2009 McCullough et al., 2018). It is hypothesized that during activation, the extension of helices 2–3 into an elongated helix triggers ‘opening’ of the protein, which enhances polymerization due to the availability of an extended surface for self-assembly. Therefore, mutations that trigger conformational changes to an ‘open’ state are able to enhance polymerization in vivo and in vitro. Consistent with these ideas, Vps24E114K in cell lysates (containing both the membrane and soluble fragments) forms higher molecular weight species in glycerol-gradient experiments (Figure 4A). In in vitro assays, while the WT Vps24 does not form polymers by itself or with Vps2 (Figure 4A, Figure 4—figure supplement 1C), Vps24E114K readily associates into linear filaments with Vps2 (Figure 4A, Figure 4—figure supplement 1A). In comparison, previous experiments with Vps24WT required 70-fold higher concentrations to observe similar linear polymers (Ghazi-Tabatabai et al., 2008). With Snf7 and Vps2, both WT and the mutant Vps24 are able to form 3D spirals, which we previously described as the copolymeric structure of Snf7, Vps24, and Vps2 (Figure 4—figure supplement 1B). The increased ability to form polymers is consistent with the interpretation that E114K shifts the equilibrium of Vps24 to a polymerization-competent state. This polymerization-competent state, along with Vps4 binding sites, replaces the function of Vps2 in cells.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/67709/elife-67709-fig4-v1.jpg)
+
+**Figure 4.:** (A) Left: Glycerol-gradient experiments with Vps24 and Vps24E114K suggest that the mutant can form higher molecular-weight species. Right: Negative stain electron microscopy of Vps24 E114K or wild-type (WT) Vps24 at 1 µM each of the proteins in the presence of Vps2. (B) Mup1-pHluorin assays with Vps24 mutations in the asparagines (N99 and N103) ɑ2/ɑ3 hinge region to Ala or Gly residues in constructs that have the Vps4 binding sites H5 (helix 5) and MIM from Vps2 (V2). These constructs are expressed with the CMV promoter, Tetoff system. See Figure 3 for direct comparison with other Vps24 mutants and chimeras. (C) Top: Sequences of the ɑ2/ɑ3 hinge region of Vps24 and Vps2. Bottom left: Model showing the two conformations of ESCRT-III proteins. Structural model on the right is that of CHMP3 (closed) (Bajorek et al., 2009) and of Snf7 (open) (Tang et al., 2015). (D) Mup1-pHluorin sorting and canavanine sensitivity assays with overexpression of Vps2 (CMV-Tet) and with a mutant replacing the ɑ2/ɑ3 hinge region of Vps2 with that of Vps24 (also CMV-Tet system).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67709/elife-67709-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Electron microscopy images of Vps24E114K assembled with Vps2 at concentrations of 5 µM each. Two images on the right are zoomed-in images of the same polymers. Vps24 E114K alone or Vps24 with Vps2 do not form such polymers. (B) Vps24E114K mutant with Vps2 and Snf7-R52E still form 3D helices. Snf7-R52E is a mutant that has a lower critical concentration for polymerization as a higher fraction of this protein is in an open conformation (Henne et al., 2012). (C) Vps24-Vps2 at higher concentrations (15 µM each) form amorphous structures.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/67709/elife-67709-fig4-figsupp2-v1.jpg)
 
 From sequence alignment analysis (Figure 4C), we noticed low conservation between Vps24 and Vps2 in the hinge between α2 and α3. Vps24 contains two potential helix-breaking asparagine residues in between these alpha helices (N99 and N103), while Vps2 lacks these helix-breaking residues (Figure 4C). We found that mutating the Asn to helix-stabilizing Ala (in addition to the Vps4 binding motifs) in Vps24 rescues the defect of vps2∆, while the helix-breaking glycine does not rescue the defect (Figure 4B). Therefore, it appears that the hinge region, that contains residues which may affect the conformational flexibility of ESCRT-III proteins, in addition to the Vps4 binding sites, accounts for the majority of the difference between Vps24 and Vps2. We note that these data are indicative of mutations that control the conformations of the proteins. However, further biophysical analyses will be required for definitive evidence of this conformational flexibility.
 
@@ -81,7 +123,7 @@ Consistent with this, when we overexpress a variant that replaces the hinge regi
 
 Collectively, these data suggest that Vps24 and Vps2 contain similar features. Laterally interacting with Snf7, inducing the formation of an ESCRT-III super-helix, and recruiting Vps4 are three features for the Vps24-Vps2 module.
 
-## ‘Accessory’ ESCRT-III genes promote intraluminal vesicle formation
+### ‘Accessory’ ESCRT-III genes promote intraluminal vesicle formation
 
 In S. cerevisiae, there are eight ESCRT-III genes. One of the defining features of these ESCRT-III proteins is the N-terminal alpha-helical bundle, which is sometimes referred to as the ESCRT-III domain. The other defining feature is the C-terminal flexible region that contains at least one MIM, which binds to the MIT domain of Vps4. The N-termal regions, the ESCRT-III domains, are similar in sequence and structure in the eight ESCRT-III proteins. However, the specific functions of all these ESCRT-III proteins remain unclear.
 
@@ -89,7 +131,23 @@ To quantitatively assess the relative contributions among the ESCRT proteins, we
 
 These differences in function during MVB formation occur despite similarity in structure and sequence between these ESCRT-III proteins. Inspired by the observation that VPS2 overexpression suppresses vps24∆, we investigated whether overexpressing other ESCRT-III genes could suppress the deletions of a different ESCRT-III gene. We used the CMV promoter to overexpress each of the ESCRT-III genes: Snf7 is overexpressed by ~5-fold, and Vps24 and Vps2 by ~16-fold. Most of the overexpression constructs did not rescue the defect of the other ESCRT-III deletions, except in two cases (Figure 5). As described above, Vps2 overexpression rescued the defect of vps24∆ and also partially rescued the defect of a did2∆ (Figure 5).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/67709/elife-67709-fig5-v1.jpg)
+
+**Figure 5.:** In the annotated mutants, ESCRT-III proteins were expressed with a CMV promoter/Tet operator system and plated in canavanine-containing plates. Vps2 overexpression can rescue the defect of vps24∆. Vps2 overexpression in a did2∆ partially rescues canavanine sensitivity. Vps60 overexpression appears to be dominant negative.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67709/elife-67709-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Cargo sorting analysis with ESCRT-III mutants using the Mup1-pHluorin assay. Fluorescence of 100,000 cells were measured after 90 min of adding of 20 µg methionine. (B) Canavanine sensitivity assays of the ESCRT-III mutants.
+
 Evolutionary analyses have grouped ESCRT-III into two groups: Snf7-Vps20-Vps60 and Vps24-Vps2-Did2 (Figure 6A; Leung et al., 2008; Caspi and Dekker, 2018). Vps20 nucleates formation of Snf7 spirals, and Vps24-Vps2 induces bundling and helix formation of spirals (Banjade et al., 2019a). In in vitro assays with lipid monolayers, we found that Did2 forms tube-like helices (Figure 6B, and as previously shown in McCullough et al., 2015; Nguyen et al., 2020 for mammalian Did2 named CHMP1). However, Vps60 lacks the ability to form long helices/tubes, and preferentially forms spiral-like structures, reminiscent of Snf7 (Figure 6B). Consistent with Vps60 mimicking Snf7 structurally, the N-terminal region of Snf7 fused to the C-terminal region of Vps60 rescues the defects of vps60∆ (Figure 6C). Vps60-GFP is localized to endosomal and vacuolar membranes with a hint of plasma membrane signal (Figure 6—figure supplement 1). This localization is primarily cytosolic in vps20∆, snf7∆, or vps2∆, and unchanged in did2∆ (Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/67709/elife-67709-fig6-v1.jpg)
+
+**Figure 6.:** (A) Domain subunits of the eight ESCRT-III proteins in yeast. The mammalian names are in parentheses. (B) Electron microscopy images of 1 µM Vps60 or 1 µM Did2 on lipid monolayers, incubated for 1 hr. Bar is 200 nm each. Top two images (highlighted by an asterisk, *) are different constrast-adjusted depictions of the same image. (C) Domain swaps from Snf7 onto Vps60 can rescue the defects of canavanine sensitivity and Mup1-pHluorin sorting in a vps60∆ strain.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/67709/elife-67709-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Top panel represents grayscaled GFP fluorescence and bottom panel represents a merge of GFP and DIC channels. While in wild-type (WT) strains VPS60-GFP primarily localizes to punctae (membranes), in various mutants the cytoplasmic signal is increased.
 
 In summary, among Vps20-Snf7-Vps20, Snf7 serves as the main scaffold which can be engineered to substitute for Vps20 (Tang et al., 2016) or Vps60 (Figure 6A). Among Vps24-Vps2-Did2, modifications within Vps24-Vps2 can functionally replace each other; Did2 resembles Vps24-Vps2 as it readily forms 3D helices, and did2∆ can be partially suppressed by Vps2 overexpression. Our data suggest that although ESCRT-III subunits have evolved for divergent roles in ordered assembly, rational modifications in ESCRT-III subunits can allow one to consolidate the functions of two ESCRT-III proteins into one ESCRT-III protein.
 
@@ -119,44 +177,44 @@ Our earlier understanding of Vps24 and Vps2 suggested that they bound cooperativ
 
 ## Materials and methods
 
-## Random mutagenesis selection
+### Random mutagenesis selection
 
 Error-prone PCR was used to generate random mutations in the plasmid harboring the S. cerevisiae Vps2 gene. The primers used for this PCR bind the 5’ UTR and the 3’ UTR regions of Vps2. The PCR fragment was transformed into the vps24∆ strain in the presence of a linearized Vps2 plasmid by digesting with HindIII and NarI enzymes. The transformants were plated onto plates containing 0.5 µg/mL canavanine, and then replica plated into 4 µg/mL plates. Plasmids were rescued from these colonies that grew on canavanine and then re-transformed into the vps24∆ strain to confirm the suppression of vps24∆. Confirmation of vps24∆ suppression was done by testing Mup1-pHluorin sorting ability (see below) of the mutants.
 
-## Canavanine spot plates
+### Canavanine spot plates
 
 Mid-log cells were serially diluted to an OD600 of 0.1. They were then diluted 10-fold serially, and spot-plated in plates containing various concentrations of canavanine. Images of the plates were taken at 3 and 5 days.
 
-## Mup1-pHluorin flow cytometry and immunoblots
+### Mup1-pHluorin flow cytometry and immunoblots
 
 Strains harboring Mup1-pHluorin were used to assay endocytosis of this cargo upon methionine addition. Assays were performed as described before (Tang et al., 2016). Briefly, mid-log cells in the presence of synthetic drop-out media were treated with 20 µg/mL L-methionine for 90 min and assayed for quenching of pHluorin. Over time as Mup1-pHluorin traffics to the vacuole, fluorescence decreases due to quenching of the pH-sensitive pHluorin. Experiments were performed at room temperature and analyses were done on a C6 Accuri flow cytometer from BD Biosciences; 100,000 cells were used for each measurement, and the mean fluorescence was used for analyses. Mup1-pHluorin sorting data (Figure 1A and C, Figure 1—figure supplements 1C, 2B, Figure 3—figure supplements 1A, Figure 3—figure supplements 1B, Figure 3—figure supplement 3A, Figure 3—figure supplement 3B, Figure 4B and D, Figure 6C) presented contains bar graphs representing averages, and also the independent replicate denoted by scatter plots. Error bars, when present, in Figure 1—figure supplement 3, and Figure 5—figure supplement 1A represent standard deviation from three independent experiments.
 
 Immunoblots after methionine treatment were performed to analyze free pHlourin, upon degradation of Mup1, as described (Banjade et al., 2019a). Blots were performed using primary antibody against GFP from Torrey Pines. Imaging of the western blots was performed using an Odyssey CLx imaging system and analyzed using the Image Studio Lite 4.0.21 software (LI-COR Biosciences).
 
-## Doxycycline-mediated shutdown of the Tet-off operator
+### Doxycycline-mediated shutdown of the Tet-off operator
 
 Plasmids (pCM189) used in this study that under the Tet-off operator have a CMV promoter and can be regulated by doxycycline titration. For titration experiments, cells were diluted to an OD600 of 0.01. Doxycyline was added at a concentration of 0.25 µg/mL and serially diluted twofold over eight times. Cultures were grown until an OD600 of 0.5, and then treated with methionine for Mup1-pHlourin sorting assays or used for co-immunoprecipitation. Error bar for quantitation of overexpression through doxycycline titration in Figure 1—figure supplement 1D represents standard deviation from three independent blots.
 
-## Protein purification
+### Protein purification
 
 Vps24, Snf7R52E, and Vps2 constructs used in this study were purified as described before (Banjade et al., 2019a). A combination of affinity (Cobalt Talon resin) and size exclusion chromatography (SD200increase, GE) were used to purify the proteins. The final buffer under which the proteins are stored was 25 mM Hepes pH 7.5, 150 mM NaCl, and 2 mM β-ME. His6-tagged Vps60 and Did2 were purified through cobalt and anion exchange chromatography.
 
-## Electron microscopy
+### Electron microscopy
 
 Lipid monolayers were prepared with a mixture of 60% POPC, 30% POPS, and 10% PI3P in chloroform. Carbon-coated electron microscope grids were used to make monolayers and incubate with proteins, as described before (Banjade et al., 2019b). Grids were stained with 2% ammonium molybdate and imaged on an FEI Morgagni 268 TEM.
 
-## Glycerol gradient
+### Glycerol gradient
 
 For Vps24 and Vps24 E114K glycerol gradients, vps24∆ was transformed with pCM189 Vps24 or pCM189 Vps24 E114K. Thirty ODs of cells expressing these constructs were harvested in phosphate saline buffer (PBS). Lysis was performed with PBS buffer, 10% glycerol, 1 mM DTT, Roche protease cocktail, and 0.5% Tween-20. Gradient Master 108 from Biocomp was used to make glycerol gradients of 10–40%. Centrifugation was performed at 100,000 × g for 4 hr at 4°C; 1 mL fractions were collected from the solutions, TCA-precipitated, and immunoblotted.
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 One milliliter of mid-log cells was harvested and resuspended in 25 µL water. Imaging was performed on a Deltavision Elite system with an Olympus IX-71 inverted microscope, using a 100×/1.4 NA oil objective. Image extraction and analysis were performed using the FiJi software.
 
-## Sequence and structural analyses
+### Sequence and structural analyses
 
 Mafft (Katoh et al., 2002) and Jalview (Clamp et al., 2004) were used to analyze sequences. Heliquest was used for helical wheel analysis (Gautier et al., 2008). Structural models were made using UCSF Chimera (Pettersen et al., 2004).
 
-## Co-immuoprecipitation
+### Co-immuoprecipitation
 
 Thirty ODs of mid-log cells were harvested and washed with cold MilliQ H2O, and resuspended in 1 mL PBS, 10% glycerol, 1 mM DTT, and 1 mM EDTA, including protease inhibitor cocktail from Roche. Lysis was performed by bead-beating (Zirconia-Silicon beads) twice for 30 s, with 30 s intervals on ice. Lysate was treated with 1% Triton X-100 and rotated for 20 min. Lysate was cleared by centrifugation at 16,000 × g at 4°C. The supernatant was treated with protein G beads (Dynabeads) for 30 min at 4°C to remove nonspecific binding. The magnetic beads used for this assay were allowed to settle with a magnetic Eppendorf-tube rack, and the supernatant was applied with 1/250 v/v of anti-Snf7 antibody. After 1 hr incubation at 4°C, the beads were washed twice with 20×-fold bead volume of the lysis buffer. Proteins were eluted by incubating the beads at 65°C for 10 min in sample buffer (150 mM Tris-Cl, pH 6.8, 8 M urea, 10% SDS, 24% glycerol, 10% v/v β-ME, and bromophenol blue). Anti-Snf7 and anti-Vps2 antibodies were used to probe for eluted proteins through Western blots.

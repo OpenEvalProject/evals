@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/02r3e0967 Center of Excellence for Data-Driven Discovery, Department of Structural Biology, St Jude Children’s Research Hospital Memphis United States
+1. Center of Excellence for Data-Driven Discovery, Department of Structural Biology, St Jude Children’s Research Hospital Memphis United States ([ROR:02r3e0967](https://ror.org/02r3e0967))
 
 † Corresponding author
 

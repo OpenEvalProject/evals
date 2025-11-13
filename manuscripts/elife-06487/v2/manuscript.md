@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.06487.001 The dynamics of predator-prey pursuit appears complex, making the development of a framework explaining predator and prey strategies problematic. We develop a model for terrestrial, cursorial predators to examine how animal mass modulates predator and prey trajectories and affects best strategies for both parties. We incorporated the maximum speed-mass relationship with an explanation of why larger animals should have greater turn radii; the forces needed to turn scale linearly with mass whereas the maximum forces an animal can exert scale to a 2/3 power law. This clarifies why in a meta-analysis, we found a preponderance of predator/prey mass ratios that minimized the turn radii of predators compared to their prey. It also explained why acceleration data from wild cheetahs pursuing different prey showed different cornering behaviour with prey type. The outcome of predator prey pursuits thus depends critically on mass effects and the ability of animals to time turns precisely. DOI: http://dx.doi.org/10.7554/eLife.06487.001
+The dynamics of predator-prey pursuit appears complex, making the development of a framework explaining predator and prey strategies problematic. We develop a model for terrestrial, cursorial predators to examine how animal mass modulates predator and prey trajectories and affects best strategies for both parties. We incorporated the maximum speed-mass relationship with an explanation of why larger animals should have greater turn radii; the forces needed to turn scale linearly with mass whereas the maximum forces an animal can exert scale to a 2/3 power law. This clarifies why in a meta-analysis, we found a preponderance of predator/prey mass ratios that minimized the turn radii of predators compared to their prey. It also explained why acceleration data from wild cheetahs pursuing different prey showed different cornering behaviour with prey type. The outcome of predator prey pursuits thus depends critically on mass effects and the ability of animals to time turns precisely.
 
 ## Introduction
 
@@ -45,51 +45,160 @@ Our approach reveals that the dynamics of movements by predators and prey of var
 
 ## Results
 
-## The predator-prey pursuit model
+### The predator-prey pursuit model
 
-Our model for deriving the characteristics of a defined turn as a function of speed in equivalent-sized predators and prey predicted that single turns initiated by the prey lead to one of primarily two phenomena: Either the predator cuts the corner, reducing the predator-prey distance (
+Our model for deriving the characteristics of a defined turn as a function of speed in equivalent-sized predators and prey predicted that single turns initiated by the prey lead to one of primarily two phenomena: Either the predator cuts the corner, reducing the predator-prey distance (Figure 1A) benefitting the predator, or it overshoots the corner, increasing the predator-prey distance (Figure 1B) benefitting the prey. A third scenario might be where the predator follows the prey trajectory precisely, in which case there is no change in benefit to either party although in this circumstance, the predator, with its higher speed, will eventually converge on the prey (Figure 1C). Although a single turn may not lead to capture or escape of the prey, multiple turns with consistent undershooting by the predator can do so (Figure 1). For any given turn, the change in predator-prey distance over time was predicted to be critically dependent on; (i) the distance between the parties at the moment of the turn (Figure 2A), with shorter distances (for distances >0) at the moment of the turn leading to greater overshoot by the predator, (ii) the difference in speed between parties (Figure 2B), with greater speed differences leading to greater overshoot by the predator, and (iii) the reaction time of the predator (Figure 2C), with slower reaction times leading to greater overshoot.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/06487/elife-06487-fig1-v2.jpg)
 
-**Figure 1.:** A) too early or (B) correctly timed by the prey, leading to corner-cutting or overshooting, respectively, by the predator.(C) shows the scenario where the predator and prey adopt identical trajectories. The right hand figures show how the distance between the predator and prey varies with time for the shown trajectories.DOI: http://dx.doi.org/10.7554/eLife.06487.003
+**Figure 1.:** (C) shows the scenario where the predator and prey adopt identical trajectories. The right hand figures show how the distance between the predator and prey varies with time for the shown trajectories.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/06487/elife-06487-fig2-v2.jpg)
 
-**Figure 2.:** A) different predator-prey distances at the moment of the execution of the turn by the prey (indicated by the dashed vertical line) [reaction time of the predator = 0.3 s, predator and prey speeds 20 and 15 m/s, respectively], (B) different predator speeds (black line shows a speed of 18 m/s and increasingly pale lines show speeds of 19 and 20 m/s respectively) [reaction time of predator = 0.3 s ] (C) different reaction times by the predator (black line shows a reaction time of 0.5 s and increasingly pale lines show reactions times of 1.0, 1.5 and 2.0 s, respectively) [predator and prey speeds = 20 and 15 m/s, respectively].DOI: http://dx.doi.org/10.7554/eLife.06487.004
-
-Where predators and prey have different masses, the model predicted mass-dependent distances travelled in a given turn, with larger animals having to run farther during cornering (
+Where predators and prey have different masses, the model predicted mass-dependent distances travelled in a given turn, with larger animals having to run farther during cornering (Figure 3). Thus, during a single 90° turn, a 250 kg predator (an example of which may be a lion or tiger) is predicted to have to run farther than all considered prey (potential prey ranging between a 3 kg and a 200 kg), whereas a 30 kg predator (e.g., a cheetah or a wolf) is predicted to travel shorter distances during a turn than 3 of the 5 prey masses considered (Figure 3). Thus, cornering is predicted to be more advantageous as an escape manoeuvre as the prey size decreases relative to that of the predator and we would expect to see evidence of that in wild animal data.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/06487/elife-06487-fig3-v2.jpg)
 
-**Figure 3.:** Prey masses might correspond to for example, 3 kg—a hare, 10 kg—a steenbok, 40 kg—a springbok, 100 kg—a white-tailed deer, 200 kg—a hartebeest. Positive values show a greater distance run by the predator, negative values show greater distance run by the prey. Note that not all speeds reach 15 m/s due to the smallest prey not being predicted to reach this maximum (see text).DOI: http://dx.doi.org/10.7554/eLife.06487.005
+**Figure 3.:** Prey masses might correspond to for example, 3 kg—a hare, 10 kg—a steenbok, 40 kg—a springbok, 100 kg—a white-tailed deer, 200 kg—a hartebeest. Positive values show a greater distance run by the predator, negative values show greater distance run by the prey. Note that not all speeds reach 15 m/s due to the smallest prey not being predicted to reach this maximum (see text).
 
-This prediction could be examined in the data derived from the fieldwork on free-living cheetahs, where we observed 36 pursuits involving 7 prey species (Table 1), of which 33 had corresponding acceleration data for 5 species totalling 899 s.10.7554/eLife.06487.006Table 1.Summary of the characteristics of cheetah-prey pursuits with prey nominally ranked in order of mass (top smallest to bottom largest)DOI: http://dx.doi.org/10.7554/eLife.06487.006PreyChase parametersNo. huntsSuccessTotal duration (s)No. of turnsTurn rate (Hz)N%MeanSDMeanSDMeanSDHare210010.8–50.50.26Steenbok195328.711.95.472.970.320.19Duiker1100––––––Springbok75728.376.173.060.320.17Ostrich1100––––––Wildebeest250353.26.50.710.220.09Gemsbok47518.610.62.331.530.150.05Two species were pursued where no corresponding acceleration data were available.
+This prediction could be examined in the data derived from the fieldwork on free-living cheetahs, where we observed 36 pursuits involving 7 prey species (Table 1), of which 33 had corresponding acceleration data for 5 species totalling 899 s.
 
-Identifying cornering behaviour via lateral g-forces, we documented a total of 547 turns within all chases from all animals. In these, there was a significant interaction between prey species and turn number (turns were sequentially numbered within each chase) on the rate of turn: specifically, different prey species had different turn rates as the turn numbers progressed (
+**Table 1.**
+ Summary of the characteristics of cheetah-prey pursuits with prey nominally ranked in order of mass (top smallest to bottom largest)
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3">Prey</th>
+      <th colspan="8">Chase parameters</th>
+    </tr>
+    <tr>
+      <th>No. hunts</th>
+      <th>Success</th>
+      <th colspan="2">Total duration (s)</th>
+      <th colspan="2">No. of turns</th>
+      <th colspan="2">Turn rate (Hz)</th>
+    </tr>
+    <tr>
+      <th>N</th>
+      <th>%</th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>Mean</th>
+      <th>SD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Hare</td>
+      <td>2</td>
+      <td>100</td>
+      <td>10.8</td>
+      <td>–</td>
+      <td>5</td>
+      <td></td>
+      <td>0.5</td>
+      <td>0.26</td>
+    </tr>
+    <tr>
+      <td>Steenbok</td>
+      <td>19</td>
+      <td>53</td>
+      <td>28.7</td>
+      <td>11.9</td>
+      <td>5.47</td>
+      <td>2.97</td>
+      <td>0.32</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>Duiker</td>
+      <td>1</td>
+      <td>100</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Springbok</td>
+      <td>7</td>
+      <td>57</td>
+      <td>28.3</td>
+      <td>7</td>
+      <td>6.17</td>
+      <td>3.06</td>
+      <td>0.32</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>Ostrich</td>
+      <td>1</td>
+      <td>100</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Wildebeest</td>
+      <td>2</td>
+      <td>50</td>
+      <td>35</td>
+      <td>3.2</td>
+      <td>6.5</td>
+      <td>0.71</td>
+      <td>0.22</td>
+      <td>0.09</td>
+    </tr>
+    <tr>
+      <td>Gemsbok</td>
+      <td>4</td>
+      <td>75</td>
+      <td>18.6</td>
+      <td>10.6</td>
+      <td>2.33</td>
+      <td>1.53</td>
+      <td>0.15</td>
+      <td>0.05</td>
+    </tr>
+  </tbody>
+</table>
+
+_Two species were pursued where no corresponding acceleration data were available._
+
+Identifying cornering behaviour via lateral g-forces, we documented a total of 547 turns within all chases from all animals. In these, there was a significant interaction between prey species and turn number (turns were sequentially numbered within each chase) on the rate of turn: specifically, different prey species had different turn rates as the turn numbers progressed (Figure 4) (χ2 = 11.13, p = 0.03, df = 4) (Table 1). We also noted that cheetah turns became shorter as the chase progressed (Spearman's ρ = −0.347, p < 0.0001, although g-values reached during turns did not change significantly over time (ρ = 0.031, p = 0.72). Critically, these dynamics were different in successful and unsuccessful pursuits. Turn duration decreased with increasing turn number within any particular chase (χ2 = 26.52, df = 1, p < 0.0001) and turn durations were shorter in successful pursuits (χ2 = 6.24, df = 1, p = 0.013).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/06487/elife-06487-fig4-v2.jpg)
 
-**Figure 4.:** Joined points show chases referring to individual prey. Longer turns will tend to have larger turn radii so while, overall, pursuit of larger prey is characterized by larger turn radii, turn radii diminish as the chase progresses.DOI: http://dx.doi.org/10.7554/eLife.06487.007
+**Figure 4.:** Joined points show chases referring to individual prey. Longer turns will tend to have larger turn radii so while, overall, pursuit of larger prey is characterized by larger turn radii, turn radii diminish as the chase progresses.
 
-Extending our modelling exercise to derive maximum cornering ability as a function of mass and speed for a suite of theoretical mammalian cursorial predators and their prey indicated that, within the animal mass range considered, mass affects maximum speed (by a factor of less than 6) much less than it affects minimum turning radius at maximum speed (which affects it by a factor of up to 260). This is due to the combined effect of generally increasing maximum speeds with mass (see above) and the additional effect of mass on turn radius (
+Extending our modelling exercise to derive maximum cornering ability as a function of mass and speed for a suite of theoretical mammalian cursorial predators and their prey indicated that, within the animal mass range considered, mass affects maximum speed (by a factor of less than 6) much less than it affects minimum turning radius at maximum speed (which affects it by a factor of up to 260). This is due to the combined effect of generally increasing maximum speeds with mass (see above) and the additional effect of mass on turn radius (Figure 5). Importantly though, the surface describing comparative turn abilities showed that predators turn tighter relative to prey in a specific area of the surface defined in terms of predator and prey mass ratios (Figure 5). Insertion of the mean mass of 54 species of canids and felids and their (predominantly mammalian) prey from an extensive database (Carbone et al., 1999) into this plot, shows that all predators were located in the area where predator turn capabilities were maximized compared to their prey (Figure 5). The implication from this is that there is strong selection pressure for turning ability in predators and that (i) predators evolve to take particular sized prey with a mass that results in the minimum turn radius ratio most in favour of the predator, and/or (ii) prey sizes that have minimum turn radii that most closely accord with those of the predators tend to be caught more often than other-sized prey.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/06487/elife-06487-fig5-v2.jpg)
 
-**Figure 5.:** Performance is expressed as maximum speed ratio (Vmax pred/Vmax prey; higher values indicate relatively faster predators) and minimum turn radius (Tmin prey/Tmin pred; higher values indicate relatively tighter turning predators). The grey spheres indicate the range of possible options computed systematically, the blue spheres represent single predator species computed against their mean prey masses, while the cyan spheres indicate the specific case of the cheetah, taking variously sized prey items across the size range.DOI: http://dx.doi.org/10.7554/eLife.06487.008
+**Figure 5.:** Performance is expressed as maximum speed ratio (Vmax pred/Vmax prey; higher values indicate relatively faster predators) and minimum turn radius (Tmin prey/Tmin pred; higher values indicate relatively tighter turning predators). The grey spheres indicate the range of possible options computed systematically, the blue spheres represent single predator species computed against their mean prey masses, while the cyan spheres indicate the specific case of the cheetah, taking variously sized prey items across the size range.
 
 ## Discussion
 
-## Chase strategies
+### Chase strategies
 
 The outcome of a predator-prey pursuit depends on performance, both in terms of speed and cornering capacity (Wilson et al., 2013a, 2013b), and how these relate to power requirements and timing. Our work echoes that of Howland (1974), which dealt with the same issue using a different approach, emphasising that high speed, aside from being necessary for the predator to gain on the prey, also increases the likelihood that the predator will overshoot the prey turn trajectory (Figure 1B) (Howland, 1974; Alexander, 2003). Conversely, as speed decreases, the difference in distance covered during any turn between predator and prey decreases (Figures 1–3), fulfilling the fundamental game rule for the predator. The optimum strategy for a pursuit predator should, therefore, be to attempt to elicit turns by the prey which, if the prey are working close to maximum power, will result in a reduction in their speed (Shubkina et al., 2012), because energy is needed for the turn (Wilson et al., 2013c). Invoking multiple rapid turns might therefore be a strategy that predators seek to promote. Here, decreasing turn duration over time is expected during successful chases, as we observed (Figure 4), coupled with generally decreasing speed, as reported by Wilson et al. (Wilson et al., 2013b). However, turning is also critical for survival of prey because maintenance of a straight line trajectory leads to inevitable capture if the predator is faster. This seemingly contradictory situation of whether the predators or prey benefit most from prey turns is clarified by timing. When the predator is far from the prey, the prey should not turn since to do so allows the predator to cut the corner of the prey's trajectory and decrease the distance between itself and the prey more rapidly (Eilam, 2005) (Figure 1). However, turns by the prey do benefit the prey if the timing is correct because this leads to an overshoot by the predator (Figure 1, Figure 2). Where such overshoot turns are consistent, they should generally lead to rarefying turn rates with reduced chances of capture (Wilson et al., 2013b).
 
-The outcome of extended pursuits is also likely influenced by endurance. Both parties will have power limitations restricting their options on instantaneous performance, as well as ultimately limiting how long the chase can continue before exhaustion. A multiple turn terrestrial chase has energetic costs associated with straight line travel that are a (linear) function of speed (
+The outcome of extended pursuits is also likely influenced by endurance. Both parties will have power limitations restricting their options on instantaneous performance, as well as ultimately limiting how long the chase can continue before exhaustion. A multiple turn terrestrial chase has energetic costs associated with straight line travel that are a (linear) function of speed (Taylor and Heglund, 1982) so, all other things being equal, at such times the predator should be expending energy faster if it is to gain on the prey. However, there are substantial costs to turning above those of straight line travel (Wilson et al., 2013c) so the angular extent of the turn and the time spent turning will both affect the rate of energy expenditure (Wilson et al., 2013c). Thus, where the predator cuts the corner compared to the trajectory taken by the prey (Figure 1), the reduced turn costs should act to reduce its overall rate of energy expenditure, making the predator energy expenditure closer to that of the prey. This will tend to lead to similarity in power use between parties resulting in similar giving-up times, assuming both parties can allocate similar amounts of energy to a pursuit (Figure 6). However, where a predator overshoots the cornering trajectory of the prey (Figure 1), it has to contend with the increased energetic demands of travelling farther, and with a greater turn angle, than the prey (Figure 2). Thus, where overshooting occurs consistently, it will tend to make cumulative energy expenditure between the two parties more disparate resulting in the predator reaching endurance limits earlier than the prey (Figure 6). In reality, multiple turn pursuits, such as we observed in our cheetah-prey interactions, will consist of a both corner-cutting and overshooting by the predators with the proportion of either perhaps biasing the likelihood of prey capture or the chase being abandoned.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/06487/elife-06487-fig6-v2.jpg)
 
-**Figure 6.:** The prey (dashed line) has lower energy expenditure than the predator during straight-line sections because it is travelling slower. However, because extra power is required for a turn (Wilson et al., 2013c), a predator that consistently cuts the corner (dark grey line—‘predator with undershoot’—cf. Figure 1) spends less time cornering, expending less energy for the corner, and may maintain energy expenditure at levels similar to those of the prey despite travelling faster: Here both parties may reach limits to endurance performance at a similar time. However, a predator that consistently overshoots the corner (light grey line—‘predator with overshoot’—cf. Figure 1) spends longer turning, expending markedly more energy than the prey at all times, reaching endurance limits earlier. (In this depiction, predators and prey are assumed to have the same geometry, performances and masses).DOI: http://dx.doi.org/10.7554/eLife.06487.009
+**Figure 6.:** The prey (dashed line) has lower energy expenditure than the predator during straight-line sections because it is travelling slower. However, because extra power is required for a turn (Wilson et al., 2013c), a predator that consistently cuts the corner (dark grey line—‘predator with undershoot’—cf. Figure 1) spends less time cornering, expending less energy for the corner, and may maintain energy expenditure at levels similar to those of the prey despite travelling faster: Here both parties may reach limits to endurance performance at a similar time. However, a predator that consistently overshoots the corner (light grey line—‘predator with overshoot’—cf. Figure 1) spends longer turning, expending markedly more energy than the prey at all times, reaching endurance limits earlier. (In this depiction, predators and prey are assumed to have the same geometry, performances and masses).
 
-## The role of mass in chase strategies
+### The role of mass in chase strategies
 
 Our data and theoretical considerations based on the literature highlight the extent to which mass drives physical abilities in predator-prey pursuits. The fact that maximum speed generally increases with mass (Garland, 1983) has been variously linked to factors such as absolute and relative leg length, stride length and stride frequency (cf. Schmidt-Nielsen, 1984; Biewener, 1989, 2003; Alexander, 2002a). This is complicated by the degree of geometric similarity between animals and models for elastic similarity (cf. Garland, 1983 and refs therein), all factors which might also help explain the modest reverse trend in the maximum speed vs mass relationship for animals exceeding about 70 kg (Garland, 1983). That greater mass leads to greater turn radii, because the forces that animals can exert for a turn relate to a mass exponent of less than one, whereas the forces required for a turn scale to a mass exponent of one has not, to our knowledge, been previously discussed. Both these mass-dependent attributes lead to a tendency for larger animals to be faster, but less able to turn than smaller animals, which presumably has profound consequences for strategies adopted by predators and prey during pursuits.
 
@@ -99,17 +208,17 @@ Thus, varying masses between predators and prey changes the nature of pursuits s
 
 Where predators pursue prey larger than themselves, however, and assuming that the predator can travel faster than their prey, there is no advantage to be gained by the prey executing the sudden turns characteristic of small prey (cf. Figure 4). This explains the straight-line trajectories of for example, gemsbok Oryx gazelle being pursued by spotted hyaenas Crocuta crocuta (Mills, 1990). The primary deterrent to smaller predators hunting larger animals may come from the danger of injury (Mills, 1990), or the predator not having the strength to overcome its prey, something that can be mitigated to an extent by co-operative hunting or following the prey to exhaustion (Estes and Goddard, 1967).
 
-Our treatise assumes that both predators and prey interact on a homogeneous, flat surface but we expect any variation in the topography and vegetation to modulate the tactics adopted by both predators and prey.
+Our treatise assumes that both predators and prey interact on a homogeneous, flat surface but we expect any variation in the topography and vegetation to modulate the tactics adopted by both predators and prey. Shepard et al., (2013) note how substrate type affects the costs of animals moving over it (hence their term ‘energy landscape’), which is predicted to affect route choice in a general sense. We expect high power pursuits of the type discussed here to be subject to the same rules, with changes in the energy landscape that differentially affect predators and their prey to be exploited by the relevant party. Of particular note is the work by Taylor et al., (1972), who noted that larger animals incur a proportionately greater increase in metabolic rate for movement up inclines, and this has been shown to affect area use in some species (Wall et al., 2006). Correspondingly, we would expect smaller prey to favour selection of uphill gradients during pursuits. Similarly, smaller prey are expected to ‘run for cover’ (Domenici et al., 2011), partly because such cover may represent an impossibly high-cost energy landscape for the predators. In addition, vegetation in patches, such as bushes or trees, may constrain turn radii, precluding small prey from perhaps turning as tightly as they might, to the advantage of the predator while, conversely, such features may allow prey to execute a turn without giving the predator the option of cutting the corner (Figure 7).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/06487/elife-06487-fig7-v2.jpg)
 
-**Figure 7.:** The use of environmental features such as this makes the timing of the turn less critical since the cheetah cannot cut the corner substantially, even if the prey turns too early.DOI: http://dx.doi.org/10.7554/eLife.06487.010
+**Figure 7.:** The use of environmental features such as this makes the timing of the turn less critical since the cheetah cannot cut the corner substantially, even if the prey turns too early.
 
 Within the general context of predator-prey pursuits, some authors have noted that unpredictable (protean) movement by prey can enhance their chances of escape (Jones et al., 2011). The theory is that unpredictable movement may catch the predator by surprise (Humphries and Driver, 1970), not least because, in our case of cursorial predator-prey interactions, the prey may execute a turn when the predator-prey distance is not yet critical. Clearly, if this occurs in planar environments, choices for changing trajectory can only amount to movement that is either left or right, and should not be executed too early where there are substantial corner-cutting benefits to be gained by the predator. However, since the timing of corners would appear so critical (see above), we would expect selection pressure for random turns just before the critical phase. Future work would do well to consider this. Finally, predator-prey pursuit options by terrestrial animals will undoubtedly be altered when the condition changes from single to multiple predators. Here, observed manoeuvres are complex and include fanning out of predators (Kelley, 1973; Mills, 1990) which should allow larger predators to mitigate for the effects of their reduced turning radii with respect to those of their prey. Indeed, understanding the precise advantages of group hunting as a function of group size, predator and prey masses, and the distribution of all parties in space in relation to environmental variability promises to be a major challenge.
 
 ## Materials and methods
 
-## Providing a framework for a terrestrial predator-prey pursuit model
+### Providing a framework for a terrestrial predator-prey pursuit model
 
 There are a number of different strategies recognised within ‘pursuit’ scenarios (e.g., athletes chasing balls, children’s games of ‘tag’, missiles, and insects involved in territorial disputes) including, primarily ‘pure’ pursuit, and more ‘predictive’ strategies such as ‘constant bearing’ pursuit, and ‘constant absolute target direction’ (CATD) pursuit (for definitions see Shneydor, 1998; Wei et al., 2009; Nahin, 2012).
 
@@ -121,50 +230,78 @@ In developing a model that highlights the effect of mass on turn performance, we
 
 We represent the pursuit of prey by plotting trajectories based on vectors representing a predator moving directly towards the prey at a speed greater than that of the prey. We then modify trajectories according to the model (see below). We define the pursuit as consisting of two fundamental stages; stage 1, which involves straight line travel by the predator towards the prey and, if the prey is not caught immediately, straight line travel by the prey in response to this, and stage 2, where the prey initiates turns to reduce the chances of being caught and the predator responds by turning during pursuit.
 
-## Stage 1, the predator moves in a straight line
+#### Stage 1, the predator moves in a straight line
 
-It is assumed that the predator initiates the chase by starting from a concealed position and accelerating towards a stationary or near-stationary prey some distance s away. The predator eventually reaches a maximum approach speed and continues to close on the prey still at, or near, its initial position. The prey does not move in response until the predator approaches within a certain distance x, determined by its ability to sense the predator's approach and its reaction time. In this initial rush, the predator's acceleration is a function of its speed:(1)apred=fpred(vpred).
+It is assumed that the predator initiates the chase by starting from a concealed position and accelerating towards a stationary or near-stationary prey some distance s away. The predator eventually reaches a maximum approach speed and continues to close on the prey still at, or near, its initial position. The prey does not move in response until the predator approaches within a certain distance x, determined by its ability to sense the predator's approach and its reaction time. In this initial rush, the predator's acceleration is a function of its speed:
 
-For example, in the case of a cheetah, this relationship would be;
+$$
+a_{pred}=f_{pred}(v_{pred}).
+$$
+
+For example, in the case of a cheetah, this relationship would be;apred=47.041vpred −0.945,where this is taken from the tangential acceleration vs speed graph given by Wilson et al. (Wilson et al., 2013a) for a calculated cheetah power of 90 W/kg. During the chase, the predator starts with an initial constant velocity vpred(0) and then accelerates (magnitude apred) up to its maximum velocity vpred(max). Thereafter, when the predator's speed is constant, the distance between it and the prey continues to close at a rate of vpred(max)t. The prey's response should nominally be to react by accelerating away from the predator according to some function of speed (cf. Equation 1). The prey can choose to move at any angle (θ) relative to the predator's approach so that, at the end of the predator's reaction time, treact, the heading for the prey relative to the predator (Figure 8) will be given by ϕ where;Dsinθ=spreysinϕ.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/06487/elife-06487-fig8-v2.jpg)
 
-**Figure 8.:** Φ of a prey to a predator at a time t after the prey begins to move.reactD is the distance between the predator and prey after the predator's reaction time.DOI: http://dx.doi.org/10.7554/eLife.06487.011
+**Figure 8.:** D is the distance between the predator and prey after the predator's reaction time.
 
-## Stage 2; the predator turning to follow the prey
+#### Stage 2; the predator turning to follow the prey
 
 The approach given above for stage 1 is an approximation describing the best escape strategy for the prey when the distances between predator and prey are appreciable. However, as the predator-prey distance (D) decreases, the prey must adopt a different trajectory or inevitably be caught. We propose that this strategy can only involve a turn (which we define as a change in heading angle by the prey), for the following reasons:i. straight line deceleration will reduce D faster,ii. in a straight line trajectory, the prey can only maximise D by maximizing its speed,iii. turning can exploit any response delay by the predator treact leading to the predator continuing with an inappropriate trajectory for a period, andiv. the predator's speed must exceed that of the prey in order for it to gain ground, so that, other things being equal, the predator will have a greater turn radius and overshoot the prey (cf. [Wilson et al., 2013a]).
 
-We model the condition of the predator pursuing prey, with both parties initially travelling in the same line and both travelling at constant speed, with the predator travelling faster
+We model the condition of the predator pursuing prey, with both parties initially travelling in the same line and both travelling at constant speed, with the predator travelling faster at vpred(max). We then assume that the prey makes a turn of a given angle at this speed with the radius of the turn defined by the relationship between turn radius and speed (cf. Equation 1). After a defined treact, the predator will turn in the same direction as the prey, with its own turn radius being dependent on its speed. We modelled the subsequent motion of the predator using the following assumptions:A. The predator will initially move towards the prey using its minimum turn radius at that speed and will continue this turn until such time as its velocity vector is aimed directly at the prey.B. Thereafter, the predator will aim directly at the current position of the prey, until such a time as the prey is either caught or the prey turns in a new direction (Figure 9).
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/06487/elife-06487-fig9-v2.jpg)
 
-**Figure 9.:** DOI: http://dx.doi.org/10.7554/eLife.06487.012
-
 We note that the predator may adopt strategies other than direct pursuit, such as aiming for the place that the prey is predicted to be after a defined time. While these strategies lead to differences in distance run by the predator until contact with the prey, or time to intercept, they do not change the general functional response in the variables we examine for the purposes of examining the effect of mass on strategies.
 
-## Animal body mass, muscle strength and turning ability
+#### Animal body mass, muscle strength and turning ability
 
-The muscle mass and body mass of an animal is proportional to L3;(2)M∝L3,where L represents one of the (equal) linear dimensions of the animal assuming that animals may be represented in this manner. The muscle force development (almost independent of animal type (Schmidt-Nielsen, 1984)) is proportional to L2(because the force is proportional to the cross sectional area of the muscle [Schmidt-Nielsen, 1984]) so that;(3)Fm∝L2
+The muscle mass and body mass of an animal is proportional to $L^{3}$;
 
-The centripetal force required for a turn moving at speed v is;(4)Fc=Mv2r,where r is the radius of the turn.
+$$
+M∝L^{3},
+$$
 
-Clearly, the ultimate turning ability of an animal is limited by the mechanical strength of its bones, muscles and tendons since this determines the maximum force available to the animal that can be applied to the ground. However, for a simplistic and approximate model, we propose here that the force available is kL2 where k is a constant representative of the material making up the limb. For example, the ultimate compressive strength of compact bone is 170 × 106 N/m2, the tensile strength of ligament and tendon is 50–100 × 106 N/m2, while these values for muscle are lower, in the range 105–106 N/m2. It follows that, when an animal is taking a turn at the minimum radius of curvature at that speed,(5)mv2r=kL2 so that k=ρLv2r,where we assume that k is nominally a constant (although there will be appreciable variability given the variation in animal morphology). However, for example, taking a cheetah of mass 30 kg running at 20 m/s, with a minimum turn radius of 40 m (Wilson et al., 2013a), k would be approximately 3100 and, for convenience, we use this value in our model (noting assumption (e) above).
+where L represents one of the (equal) linear dimensions of the animal assuming that animals may be represented in this manner. The muscle force development (almost independent of animal type (Schmidt-Nielsen, 1984)) is proportional to $L^{2}$(because the force is proportional to the cross sectional area of the muscle [Schmidt-Nielsen, 1984]) so that;
 
-## Field trials to examine model predictions on free-living cheetahs
+$$
+F_{m}∝L^{2}
+$$
+
+The centripetal force required for a turn moving at speed v is;
+
+$$
+F_{c}=\frac{Mv^{2}}{r},
+$$
+
+where r is the radius of the turn.
+
+Clearly, the ultimate turning ability of an animal is limited by the mechanical strength of its bones, muscles and tendons since this determines the maximum force available to the animal that can be applied to the ground. However, for a simplistic and approximate model, we propose here that the force available is $kL^{2}$ where k is a constant representative of the material making up the limb. For example, the ultimate compressive strength of compact bone is 170 × 106 N/m2, the tensile strength of ligament and tendon is 50–100 × 106 N/m2, while these values for muscle are lower, in the range 105–106 N/m2. It follows that, when an animal is taking a turn at the minimum radius of curvature at that speed,
+
+$$
+\frac{mv^{2}}{r}=kL^{2} so that k=\frac{ρLv^{2}}{r},
+$$
+
+where we assume that k is nominally a constant (although there will be appreciable variability given the variation in animal morphology). However, for example, taking a cheetah of mass 30 kg running at 20 m/s, with a minimum turn radius of 40 m (Wilson et al., 2013a), k would be approximately 3100 and, for convenience, we use this value in our model (noting assumption (e) above).
+
+### Field trials to examine model predictions on free-living cheetahs
 
 We examined the perspectives from our models with respect to prey pursuit behaviour observed directly, and quantified using collar-fitted tri-axial accelerometers (G6a, Cefas, UK —recording rate 30 Hz), on six free-ranging cheetahs in the Kgalagadi Transfrontier Park (25°46′S 20°23′E), southern Africa. Cheetahs, which varied in mass between 30 and 45 kg, were equipped for a total of 66 animal days during which 36 pursuits of prey were observed.
 
-The orthogonal, tri-axial acceleration data were first sorted to identify the periods of active pursuit by matching times with periods when the animals were observed to hunt. Data from the sway and heave axes were somewhat interchangeable due to a partially rotating collar, but co-varied directly and changed with lateral acceleration and thus cornering behaviour (the surge axis varied with longitudinal acceleration or deceleration). Thus, the mediolateral acceleration data (heave and sway axes) were initially smoothed over 2 s to derive a measure of the static (nominally gravity-based) acceleration (
+The orthogonal, tri-axial acceleration data were first sorted to identify the periods of active pursuit by matching times with periods when the animals were observed to hunt. Data from the sway and heave axes were somewhat interchangeable due to a partially rotating collar, but co-varied directly and changed with lateral acceleration and thus cornering behaviour (the surge axis varied with longitudinal acceleration or deceleration). Thus, the mediolateral acceleration data (heave and sway axes) were initially smoothed over 2 s to derive a measure of the static (nominally gravity-based) acceleration (Shepard et al., 2008) and were found to show obvious waveforms due to the bounding gait of the cheetahs (Figure 10). These data were thus further smoothed over 0.5 s to minimize the influence of these waveforms while not overly compromising smoothed values (Figure 10). Turns were identified as increasing departures of the doubly smoothed data from 1×g. The specific points of their maxima were identified by values that departed maximally from 1.0. Immediately adjacent (and lower) peaks which occurred as a result of the bounding behaviour (which could be readily identified in the single-smoothed data—see Figure 10) were precluded.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/06487/elife-06487-fig10-v2.jpg)
 
-**Figure 10.:** The grey lines show the values using a running mean window of 2 s, which still shows appreciable signal noise due to the bounding movement of the animal. These values have been further smoothed over 0.5 s to give the black line which shows the main features of the lateral acceleration during turns with maximum g-forces developed during turns displayed as peaks.DOI: http://dx.doi.org/10.7554/eLife.06487.013
+**Figure 10.:** The grey lines show the values using a running mean window of 2 s, which still shows appreciable signal noise due to the bounding movement of the animal. These values have been further smoothed over 0.5 s to give the black line which shows the main features of the lateral acceleration during turns with maximum g-forces developed during turns displayed as peaks.
 
 Analyses of these data were performed in R version 3.0.2 (R Core Team, 2013). The relationship between prey species, hunt success and turn number on turn rate was determined using a general linear model (Bates et al., 2013). Turn number was entered as a covariate, prey species and hunt success as factors and cheetah ID as a random factor to account for repeated measurements within animals. The relationship between turn number and hunt success on turn duration was determined using a similar model with turn number entered as a covariate, hunt success as a factor and cheetah ID a random factor. For both models, function ‘lmer’ was used in the package lme4. Wald χ2 statistics and p values were obtained using the function ‘Anova’ in the package ‘car’. Data were tested for normality and homoscedasticity of variance using Shapiro–Wilk and Levene's tests.
 
-## Trends in turn performance with respect to predator and prey size within mammals
+### Trends in turn performance with respect to predator and prey size within mammals
 
-We used the approach outlined in our model to undertake a broad-based analysis to examine how the mass of terrestrial predators and prey (using ranges between 0.05 and 5000 kg) affected the interplay of maximum speed and minimum turn radius at that speed. Predictions for maximum speed were derived from an allometric relationship between mass (M, kg) and speed (V, km/h) for mammals of (Garland, 1983);log10Vmax=1.478+0.2589(log10M)−0.0623(log10M)2.
+We used the approach outlined in our model to undertake a broad-based analysis to examine how the mass of terrestrial predators and prey (using ranges between 0.05 and 5000 kg) affected the interplay of maximum speed and minimum turn radius at that speed. Predictions for maximum speed were derived from an allometric relationship between mass (M, kg) and speed (V, km/h) for mammals of (Garland, 1983);
+
+$$
+log_{10}V_{max}=1.478+0.2589(log_{10}M)−0.0623(log_{10}M)^{2}.
+$$
 
 We then took data from an extensive data base on the mass of mammalian predators and their mammal prey (Carbone et al., 1999) so as to place data from wild animals in this context to determine whether any trends were apparent.

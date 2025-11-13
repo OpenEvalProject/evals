@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05rzcwg85 Peking University Sixth Hospital, Peking University Institute of Mental Health, National Clinical Research Center for Mental Disorders (Peking University Sixth Hospital), NHC Key Laboratory of Mental Health (Peking University) Beijing China
-2. https://ror.org/034t30j35 State Key Laboratory of Brain and Cognitive Science, Institute of Psychology, Chinese Academy of Sciences Beijing China
-3. https://ror.org/05qbk4x57 Department of Psychology, University of Chinese Academy of Sciences Beijing China
+1. Peking University Sixth Hospital, Peking University Institute of Mental Health, National Clinical Research Center for Mental Disorders (Peking University Sixth Hospital), NHC Key Laboratory of Mental Health (Peking University) Beijing China ([ROR:05rzcwg85](https://ror.org/05rzcwg85))
+2. State Key Laboratory of Brain and Cognitive Science, Institute of Psychology, Chinese Academy of Sciences Beijing China ([ROR:034t30j35](https://ror.org/034t30j35))
+3. Department of Psychology, University of Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))
 
 † Corresponding author
 
@@ -44,15 +44,67 @@ Experiment 1 examined three specific BM perception abilities in children with AD
 
 ## Results
 
-## Children with ADHD exhibit atypical BM perception
+### Children with ADHD exhibit atypical BM perception
 
 Thirty-six TD children (age = 9.09 ± 2.18, 14 male) and 39 children with ADHD (age = 9.88±2.23, 28 male) participated in Experiment 1 (Table 1). The groups did not differ by age (t73=–1.550, p=0.126) but differed in sex (χ2=8.964, p=0.004). Figure 3 displays the mean accuracies (ACC) for both the TD and ADHD groups across the three tasks in Experiment 1. We examined the difference in the ACC between the TD and ADHD groups for each task using a two-sample t-test. The results of BM-Local showed a significant difference (TD: 0.52±0.13, ADHD: 0.44±0.09, t73=3.059, p=0.003, Cohen’s d=0.71), indicating that children with ADHD exhibited impaired local BM processing ability. For BM-Global and BM-General, where children were asked to detect the presence or discriminate the direction the target walker was facing, the TD group had higher accuracies than the ADHD group (BM-Global - TD: 0.70±0.12, ADHD: 0.59±0.12, t73=3.677, p<0.001, Cohen’s d=0.85; BM-General - TD: 0.79±0.12, ADHD: 0.63±0.17, t73=4.702, p<0.001, Cohen’s d=1.09). These findings suggest the presence of impaired global and general BM perception in children with ADHD. To ensure that sex did not influence the results, we conducted a subsampling analysis with balanced data (Pirracchio et al., 2012), and the results remained consistent (see Appendix 1).
+
+**Table 1.**
+ Demographic characteristics of typically developing (TD) and attention deficit hyperactivity disorder (ADHD) groups.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Experiment 1</th>
+      <th rowspan="2">p-value</th>
+      <th colspan="2">Experiment 2</th>
+      <th rowspan="2">p-value</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>TD</th>
+      <th>ADHD</th>
+      <th>TD</th>
+      <th>ADHD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sample</td>
+      <td>36</td>
+      <td>39</td>
+      <td></td>
+      <td>33</td>
+      <td>42</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>9.09±2.18</td>
+      <td>9.88±2.23</td>
+      <td>0.126</td>
+      <td>8.75±1.94</td>
+      <td>9.34±1.89</td>
+      <td>0.191</td>
+    </tr>
+    <tr>
+      <td>Sex ratio (% male)</td>
+      <td>38.89%</td>
+      <td>71.79%</td>
+      <td>0.004</td>
+      <td>42.42%</td>
+      <td>64.28%</td>
+      <td>0.059</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/90313/elife-90313-fig3-v1.jpg)
 
 **Figure 3.:** Typically developing (TD) children had higher accuracies than children with attention deficit hyperactivity disorder (ADHD) in the three tasks in Experiment 1. Error bars show standard deviations. TD group: n = 36, ADHD group: n = 39; two-sample t-tests; **p<0.01, ***p<0.001.
 
-## Atypical perception of local BM information predicts impaired social interaction in ADHD
+### Atypical perception of local BM information predicts impaired social interaction in ADHD
 
 Experiment 1 provides evidence of atypical BM perception in children with ADHD. Previous studies have revealed that BM processing ability is a hallmark of social cognition (Pavlova, 2012) and is negatively correlated with social ability (Wang et al., 2018). Substantial evidence indicates that children with ADHD often experience problems with social interaction. We hypothesised that compromised social interaction in children with ADHD would be associated with BM processing. To confirm this hypothesis, we recruited 42 naïve children with ADHD (age = 9.34±1.89, 27 male) to participate in Experiment 2 and examined the relationship between their social interaction abilities and BM perception. Parents or caregivers completed the Social Responsiveness Scale (SRS). A higher SRS total score indicates worse social ability. The SRS total score of the ADHD group was higher than that of the TD group (SRS total score - ADHD: 54.64±18.42, TD: 38.64±12.47, t73=–4.277, p<0.001). We found that children with higher total SRS scores performed worse on the three tasks; that is, the abilities of BM processing were negatively correlated with SRS total score (BM-Local: r=–0.264, false discovery rate [FDR]-corrected p=0.033; BM-Global: r=–0.238, FDR-corrected p=0.039; BM-General: r=–0.359, FDR-corrected p=0.006).
 
@@ -62,13 +114,159 @@ The correlations encompassing all data from both groups might reflect group disp
 
 **Figure 4.:** The ability to process local cues is significantly correlated with the SRS total score in the attention deficit hyperactivity disorder (ADHD) group. The shading represents the 95% confidence interval. **FDR-corrected p<0.01.
 
+**Table 2.**
+ The correlation between the ability of local biological motion (BM) processing and the subdimensions of social responsiveness scale (SRS) in attention deficit hyperactivity disorder (ADHD) children.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Correlation coefficient (r)</th>
+      <th>FDR-corrected p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Social awareness</td>
+      <td>-0.333</td>
+      <td>0.039</td>
+    </tr>
+    <tr>
+      <td>Social cognition</td>
+      <td>-0.416</td>
+      <td>0.020</td>
+    </tr>
+    <tr>
+      <td>Social communication</td>
+      <td>-0.381</td>
+      <td>0.022</td>
+    </tr>
+    <tr>
+      <td>Social motivation</td>
+      <td>-0.406</td>
+      <td>0.020</td>
+    </tr>
+    <tr>
+      <td>Autistic mannerisms</td>
+      <td>-0.245</td>
+      <td>0.117</td>
+    </tr>
+  </tbody>
+</table>
+
 To determine the specificity of the correlation between local BM processing and SRS total score in the ADHD group, we constructed general linear models to further compare these correlations (Zhonglin et al., 2005) (see Appendix 2). We observed a significantly stronger correlation between SRS total score and response accuracy in the ADHD group compared to the TD group (p=0.003) for the BM-Local, but not for the BM-Global (p=0.381) or BM-General (p=0.455). Additionally, our results showed trends towards significance, indicating that the correlation between the SRS total score and response accuracy of the ADHD group in BM-Local was more negative than that in BM-Global (p=0.074) or in BM-General (p=0.073). These findings suggest that the atypical local BM processing ability may be specifically related to the impairment of social interaction in children with ADHD.
 
-## Global BM processing develops with age and is regulated by reasoning intelligence and attention function
+### Global BM processing develops with age and is regulated by reasoning intelligence and attention function
 
 Many factors can affect social cognition in ADHD, such as general cognitive impairment (Bora and Pantelis, 2016), symptom severity (McKay et al., 2023), and age (Bora and Pantelis, 2016). To better understand their role in atypical BM processing, we examined the relationship between BM task performance and factors such as age, full-scale intellectual quotient (FIQ), and attention function in the ADHD group. Children with ADHD in Experiments 1 and 2 completed the QB test for assessing attention function (see Materials and methods). Data from the ADHD group in both Experiments 1 and 2 were integrated, resulting in 80 ADHD participants (one child did not complete the QB test). Three linear models were built to investigate the contributing factors: (a) ACCBM-Local = β0 + β1 * age + β2 * gender + β3 * FIQ + β4 * QbInattention, (b) ACCBM-Global = β0 + β1 * age + β2 * gender + β3 * FIQ + β4 * QbInattention, and (c) ACCBM-General = β0 + β1 * age + β2 * gender + β3 * FIQ + β4 * QbInattention + β5 * ACCBM-Local + β6 * ACCBM-Global. ACCBM-Local, ACCBM-Global and ACCBM-General refer to the response accuracies of the three tasks in the ADHD group, and QbInattention is the standardised score for sustained attention function. We screened the factors with the largest contribution to the models using stepwise regression. In model (a), no variable remained after stepwise regression, suggesting that local BM processing remained stable with age and was not affected by attention or IQ. In model (b), the ability to process global BM cues was enhanced with age (standardised β1=0.251, p=0.025). In model (c), higher FIQ, particularly on the subdimension of Perceptual Reasoning (standardised β3=0.271, p=0.005), and better performance in global BM processing (standardised β6=0.290, p=0.004) predicted better performance in general BM processing. Furthermore, as children aged, the ability to probe general BM information improved (standardised β1=0.365, p<0.001). It is worth noting that QbInattention showed a strong negative correlation with Perceptual Reasoning (r=–0.355, p=0.001) and general BM perception (r=–0.246, p=0.028). Owing to the potential collinearity issue, we employed a post hoc path analysis to visualise these relationships (Figure 5). The results indicated that sustained attention (i.e. QbInattention) did not directly predict performance in BM-General but was significantly indirectly predicted by Perceptual Reasoning ability. Furthermore, as children with ADHD aged, their performance in BM-General improved, both directly and through the enhanced processing of global BM cues.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/90313/elife-90313-fig5-v1.jpg)
+
+**Figure 5.:** Post hoc path analysis confirmed that the effect of sustained attention on performance in BM-General was entirely mediated by Perceptual Reasoning, and the ability of global BM processing partly mediated the effect of age on performance in BM-General.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/90313/elife-90313-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** No statistically significant mediator effect was found in path analysis.
+
 We also built three models to explore further the effects of Reasoning IQ and age on BM perception in TD children: (d) ACCBM-Local = β0 + β1 * age + β2 * gender + β3 * FIQ. (e) ACCBM-Global = β0 + β1 * age + β2 * gender + β3 * FIQ; (f) ACCBM-General = β0 + β1 * age + β2 * gender + β3 * FIQ + β4 * ACCBM-Local + β5 * ACCBM-Global. In model (d), no regressor remained significant after stepwise regression. However, in models (e) and (f), we observed positive relationships between age and performance (model e: standardized β1=0.396, p=0.017; model f: standardised β1=0.330, p=0.049). We also conducted a path analysis similar to that in the ADHD group and found no statistically significant mediator effect (Figure 5—figure supplement 1). The complete information about models a-f can be found in Table 3.
+
+**Table 3.**
+ Coefficients and summaries of models a-f.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th>Predictor</th>
+      <th>Standardised coefficient</th>
+      <th>95% confidence interval</th>
+      <th>T statistic</th>
+      <th>p-value</th>
+      <th>R square</th>
+      <th>Std. error of the estimate*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Model a</td>
+      <td>No significant variable</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Model b</td>
+      <td>age</td>
+      <td>0.251</td>
+      <td>[0.033, 0.469]</td>
+      <td>2.289</td>
+      <td>0.025</td>
+      <td>0.063</td>
+      <td>0.974</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Model c</td>
+      <td>age</td>
+      <td>0.365</td>
+      <td>[0.172, 0.559]</td>
+      <td>3.759</td>
+      <td>&lt;0.001</td>
+      <td rowspan="3">0.339</td>
+      <td rowspan="3">0.829</td>
+    </tr>
+    <tr>
+      <td>Perceptual Reasoning</td>
+      <td>0.271</td>
+      <td>[0.082, 0.459]</td>
+      <td>2.862</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>ACCBM-Global</td>
+      <td>0.290</td>
+      <td>[0.097, 0.484]</td>
+      <td>2.987</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>Model d</td>
+      <td>No significant variable</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+      <td>—</td>
+    </tr>
+    <tr>
+      <td>Model e</td>
+      <td>age</td>
+      <td>0.396</td>
+      <td>[0.076, 0.716]</td>
+      <td>2.515</td>
+      <td>0.017</td>
+      <td>0.157</td>
+      <td>0.932</td>
+    </tr>
+    <tr>
+      <td>Model f</td>
+      <td>age</td>
+      <td>0.330</td>
+      <td>[0.001, 0.659]</td>
+      <td>2.039</td>
+      <td>0.049</td>
+      <td>0.109</td>
+      <td>0.958</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Std. error of the estimate is the standard deviation of the error term, and is the square root of the Mean Square Residual (or Error)._
 
 In summary, our findings suggest that the ability to perceive global and general BM cues, rather than local BM cues, improves with age in both groups. We speculated that age-related improvement was different when processing different BM cues and in different groups. Therefore, we examined the differences between the age-related improvement in processing local cues and that in processing global and general cues (see Appendix 2). In the ADHD group, we observed that the ability to process general BM cues significantly improved with age compared to local cues (p<0.001) and a trend that the improvement in processing global BM cues with age was greater than that in processing local BM cues (p=0. 073). However, these patterns were not observed in the TD group. In addition, we examined the differences in the improvements in processing of BM cues with age between the two groups for each task. There was no difference in the effect of age on the response accuracy between the TD and ADHD groups for the three tasks (see Appendix 2).
 
@@ -88,48 +286,68 @@ Overall, our study reveals two distinct and atypical fundamental abilities under
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 One hundred seventeen children with and without ADHD were recruited for this study. Eighty-one children met the ADHD diagnostic criteria of the Diagnostic and Statistical Manual of Mental Disorders (DSM-5) (American Psychiatric Association, 2013). The clinical diagnosis was first made by an experienced child and adolescent psychiatrist in the Child and Adolescent Psychiatric Outpatient Department of Peking University Sixth Hospital, based on the ADHD Rating Scale. The Chinese version of the Kiddie-Schedule for Affective Disorders and Schizophrenia-Present and Lifetime Version DSM-5 (K-SADS-PL-C DSM-5) (Dun et al., 2022; Kaufman et al., 2016), a semi-structured interview instrument, was then implemented to confirm the diagnosis. Thirty-six TD children from ordinary primary schools in Beijing were screened for the presence of ADHD, ASD, affective disorders, and behavioural disorders by a trained psychiatrist. All participants in the ADHD group had a full-scale IQ >75 (fifth upper percentile) on the Wechsler Intelligence Scale for Children-Fourth Edition, and all TD children had a full-scale IQ above the fifth percentile on Raven’s Standard Progressive Matrices (Pind et al., 2003), which is used to measure reasoning ability and is regarded as a non-verbal estimate of intelligence. The exclusion criteria for both groups were as follows: (a) neurological diseases; (b) other neurodevelopmental disorders (e.g. ASD, mental retardation, and tic disorders), affective disorders, and schizophrenia; (c) disorders that would impact the completion of the experiment; (d) taking psychotropic drugs or stimulants within the past 30 days; and (e) previous head trauma or neurosurgery.
 
 Thirty-six TD children (age = 9.09±2.18, 14 male) and 39 children with ADHD (age = 9.88±2.23, 28 male) participated in Experiment 1. The groups did not differ by age (t73=–1.550, p=0.126) but differed in sex (χ2=8.964, p=0.004). Forty-two ADHD children (age = 9.34±1.89, 27 male) participated in Experiment 2. The participants did not participate in Experiment 1. The participants’ demographic characteristics are presented in Table 1. Currently, there is no comparable study on ADHD that indicates effect size as a reference. Studies investigating BM perception in children with ASD typically have sample sizes ranging from 15 to 35 participants per group (Todorova et al., 2019). Considering the mild impairment of social function in children with ADHD, we determined that a sample size of 35–40 participants per group was reasonable for this study. All individuals in each group had normal or corrected-to-normal vision and were naïve to the experimental objectives. Written informed consent, and consent to publish, was obtained from the parents of all the children before testing. This study was approved by the Institutional Review Boards of Peking University Sixth Hospital and the Institute of Psychology, Chinese Academy of Sciences.
 
-## Assessment
+### Assessment
 
-## K-SADS-PL-C DSM-5
+#### K-SADS-PL-C DSM-5
 
 The K-SADS-PL-C DSM-5 is a semi-structured interview instrument used to evaluate mental disorders in children and adolescents aged 6–18 years (Kaufman et al., 2016). It involves 35 diagnoses based on the diagnostic criteria of the DSM-5. A trained psychiatrist confirmed the diagnosis by interviewing the parents and children. The Chinese version has demonstrated great psychometric properties (Dun et al., 2022).
 
-## ADHD rating scale
+#### ADHD rating scale
 
 The ADHD Rating Scale was adapted from the ADHD diagnostic criteria of the DSM (Reid et al., 1998), which requires parents or teachers to complete the scale independently. Its Chinese version has excellent psychometric properties and consists of two subscales (Su et al., 2015): inattention (IA, nine items) and hyperactivity-impulsivity (HI, nine items). Each item is rated on a four-point Likert scale ranging from 1 (the symptom appears ‘never or rarely’) to 4 (the symptom appears ‘very often’). The final results create three scores: (1) IA dimension score, (2) HI dimension score, and (3) total score. Higher scores indicate more severe ADHD symptoms.
 
-## Social responsiveness scale
+### Social responsiveness scale
 
 The social responsiveness scale (SRS) is a widely used quantitative measure with 65 items used to assess the severity of social impairment in many mental disorders (Constantino and Gruber, 2005), and the psychometric properties of the Chinese version are reliable (Cen et al., 2017). It includes five sub-dimensions: social awareness, social cognition, social communication, social motivation, and autistic mannerisms. Each item is rated on a scale from 0 (never true) to 3 (almost always true), with higher scores indicating worse social ability.
 
-## Wechsler intelligence scale for children-fourth edition
+### Wechsler intelligence scale for children-fourth edition
 
 The Wechsler Intelligence Scale for Children-Fourth Edition (WISC-IV) is widely used to test comprehensive intelligence in individuals aged 6–17 years. It contains 15 subtests comprising four broad areas of intellectual functioning: Verbal Comprehension, Perceptual Reasoning, Working Memory, and Processing Speed. The scores in the four broad areas constitute the full-scale intellectual quotient (FIQ).
 
-## QB test
+### QB test
 
 The QB test is a 15 min continuous performance test (CPT) for assessing inattention and impulsivity, with a high-resolution infrared camera monitoring the participant’s activity (QbTech, 2010). Previous psychometric studies have validated its good measurement properties (Hult et al., 2018). After the test is completed, several Q scores are calculated to summarise the participants’ performances. The Q scores are standardised based on normative data matched for sex and age. A higher Q score implies more abnormal performance. In this study, we focused on QbInattention, the Q score indicating sustained attention, particularly when children are focused on tasks.
 
-## Stimuli and procedure
+### Stimuli and procedure
 
 Point-light BM stimuli sequences adopted in this study have been used in previous studies (Vanrie and Verfaillie, 2004), which were derived from the configurations of individual walking motions on a treadmill and did not contain an overall translation. Each frame of BM sequences consisted of 13 white dots representing the human head and major joints and was displayed on a grey background (see Video 1). Each walking cycle lasted 1 s with 30 frames. For each trial, the initial frame of BM sequences was randomised. The entire point-lighted BM walker was presented at approximately a 5.7° vertical visual angle. Stimuli were presented on a 14-inch monitor, and responses were evaluated using MATLAB together with PsychToolbox extensions. All subjects completed the experiments in a dimly lit room with their heads on a chinrest to ensure that their eyes were 50 cm away from the monitor.
+
+![Video 1.](https://cdn.elifesciences.org/articles/90313/elife-90313-video1.mp4.jpg)
+
+**Video 1.:** The dots in the video are rendered in chromatic colors for better illustration and displayed in white in the actual experiments.
 
 In Experiment 1, the children were required to complete three tasks that were similar to but slightly modified from the versions implemented in our previous study (Wang et al., 2018; Figure 2). Each trial began with a fixation cross (0.6 ° × 0.6°). Following a random interval of 1200–1500 ms, the monitor displayed a task-specific BM sequence lasting for 2 s (60 frames).
 
 BM-Local assessed participants’ ability to process local BM cues. During the task, the monitor displayed only a scrambled walker facing either the left or right (Video 2). Specifically, the 13 dots constituting the intact walker were randomly relocated within the original range of the BM walker (randomly presented in 2D). This manipulation disrupted the global configuration of the intact walker while retaining local kinematics. After the display, we required the children to press a left or right button to indicate the direction of motion of the unidentified creature (i.e. the scrambled BM walker) as accurately as possible. Children did not receive feedback on the accuracy of each response. Thirty trials were conducted, with 15 trials for each condition (left and right).
 
+![Video 2.](https://cdn.elifesciences.org/articles/90313/elife-90313-video2.mp4.jpg)
+
+**Video 2.:** The chromatic dots in this video correspond to the major joints of the intact walker in Video 1 and are displayed in white in the actual experiments.
+
 BM-Global tested the ability to process the global configuration cues of the BM walker. A target walker (scrambled or intact) was displayed within the mask (Video 3) during this task. The mask consisted of two scrambled target walkers (26 dots) with the same locomotion direction as the target walker, displayed within a boundary approximately 1.44 times larger than the intact walker. A scrambled or intact version of the target walker was randomly embedded in the mask and entirely overlaid. Thus, the global BM component could be isolated as two conditions (i.e. scrambled and intact walkers) containing the same local kinematics information, rendering the local motion cues uninformative. The children were required to judge whether there was an intact walker on the mask. A correct response relied on the extraction of global cues from an intact walker. To prevent children from learning the shape of the walker (Chang and Troje, 2009a), we set target walkers that possibly faced one of five equally spaced directions from left to right. Of the five walkers used, two-faced straight to the left or right, orthogonal to the viewing direction. Two walked with their bodies oriented at a 45 degree angle to the left or right of the observer. The last one walked towards the observer. Video 4 shows the five-facing directions of the walker. Thirty trials were conducted consisting of two conditions (intact or scrambled target).
+
+![Video 3.](https://cdn.elifesciences.org/articles/90313/elife-90313-video3.mp4.jpg)
+
+**Video 3.:** The chromatic dots in this video correspond to the major joints of the intact walker in Video 1 and are displayed in white in the actual experiments.
+
+![Video 4.](https://cdn.elifesciences.org/articles/90313/elife-90313-video4.mp4.jpg)
+
+**Video 4.:** The dots in this video are rendered in black for better illustration and displayed in white in the actual experiments.
 
 BM-General tested participants’ ability to process general BM cues (local and global). In BM-General, the monitor displayed an intact walker (facing either the left or right) embedded within a mask (see Video 5). The mask used in this task was similar to that used in BM-Global. The children were required to judge the direction the target walker was facing (left or right). Because the mask and target walker contained the same local BM cues and the target walker was presented with additional global configuration cues, children could rely on general BM information (i.e. a combination of local and global cues) to perform the task. BM-General consisted of 30 trials, with 15 trials for each facing direction. The other parameters of BM-Global and BM-General were similar to those of BM-Local. Before each task, the children practiced for five trials to ensure a good understanding. We performed the three tasks in a fixed order so that the participants were naïve to the nature of the local BM cues in BM-Local.
 
+![Video 5.](https://cdn.elifesciences.org/articles/90313/elife-90313-video5.mp4.jpg)
+
+**Video 5.:** The chromatic dots in this video correspond to the major joints of the intact walker in Video 1 and are displayed in white in the actual experiments.
+
 In Experiment 2, 42 children with ADHD completed the same procedure as in Experiment 1. In addition, the parents completed the SRS to assess social interaction.
 
-## Statistics
+### Statistics
 
 Two-sample t-tests were used to examine the difference in BM perception abilities between TD and ADHD children (Fagerland, 2012; Rochon et al., 2012), and Pearson’s correlation analyses were used to assess the relationship between the accuracy of each task and the SRS score. Additionally, general linear models and path analyses were used to explore potential factors influencing BM perception. A p-value <0.05 was considered statistically significant. Path analyses were conducted using AMOS, whereas other analyses were conducted using SPSS.

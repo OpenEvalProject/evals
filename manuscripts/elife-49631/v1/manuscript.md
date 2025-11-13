@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.49631.001 Mechanical loading, such as caused by exercise, stimulates bone formation by osteoblasts and increases bone strength, but the mechanisms are poorly understood. Osteocytes reside in bone matrix, sense changes in mechanical load, and produce signals that alter bone formation by osteoblasts. We report that the ion channel Piezo1 is required for changes in gene expression induced by fluid shear stress in cultured osteocytes and stimulation of Piezo1 by a small molecule agonist is sufficient to replicate the effects of fluid flow on osteocytes. Conditional deletion of Piezo1 in osteoblasts and osteocytes notably reduced bone mass and strength in mice. Conversely, administration of a Piezo1 agonist to adult mice increased bone mass, mimicking the effects of mechanical loading. These results demonstrate that Piezo1 is a mechanosensitive ion channel by which osteoblast lineage cells sense and respond to changes in mechanical load and identify a novel target for anabolic bone therapy.
+Mechanical loading, such as caused by exercise, stimulates bone formation by osteoblasts and increases bone strength, but the mechanisms are poorly understood. Osteocytes reside in bone matrix, sense changes in mechanical load, and produce signals that alter bone formation by osteoblasts. We report that the ion channel Piezo1 is required for changes in gene expression induced by fluid shear stress in cultured osteocytes and stimulation of Piezo1 by a small molecule agonist is sufficient to replicate the effects of fluid flow on osteocytes. Conditional deletion of Piezo1 in osteoblasts and osteocytes notably reduced bone mass and strength in mice. Conversely, administration of a Piezo1 agonist to adult mice increased bone mass, mimicking the effects of mechanical loading. These results demonstrate that Piezo1 is a mechanosensitive ion channel by which osteoblast lineage cells sense and respond to changes in mechanical load and identify a novel target for anabolic bone therapy.
 
 ## Introduction
 
@@ -34,13 +34,41 @@ Herein we sought to identify calcium channels involved in mechanosensation in os
 
 ## Results
 
-## Piezo1 mediates mechanotransduction in an osteocyte cell line
+### Piezo1 mediates mechanotransduction in an osteocyte cell line
 
 To identify calcium channels that respond to mechanical signals in osteocytes, we compared gene expression profiles of the osteocytic cell line MLO-Y4 under static and fluid flow conditions by RNA-seq. Principal components analysis and volcano plot of transcripts indicated that a significant number of genes were differentially expressed in MLO-Y4 cells under static versus fluid shear stress (Figure 1—figure supplement 1A,B). GO-enrichment analysis revealed enrichment in genes known to respond to mechanical signals, thereby validating the fluid flow experiment (Figure 1—figure supplement 2A). We then identified differentially expressed genes related to calcium channels. Piezo1 was the most highly expressed among 78 calcium channels detected in MLO-Y4 cells under static condition (Figure 1—figure supplement 2B). In addition, Piezo1 was also highly up-regulated by fluid flow in MLO-Y4 cells as determined by RNA-seq (Figure 1A) and RT-qPCR (Figure 1B). The Piezo ion channel family consists of two members, Piezo1 and Piezo2. While Piezo2 is expressed predominately in neurons, Piezo1 is mainly expressed in non-neuronal cells (Murthy et al., 2017). Consistent with this previous evidence, the expression of Piezo1 was approximately 200-fold higher than that of Piezo2 in MLO-Y4 cells (Figure 1B). Piezo1 expression was also much higher than Piezo2 in osteocyte-enriched cortical bone isolated from 12-week-old mice (Figure 1C). Therefore, we focused our remaining analysis on Piezo1. Knock-down of Piezo1 mRNA in MLO-Y4 cells significantly blunted the increase in intracellular calcium induced by fluid-flow (Figure 1D). Knock-down of Piezo1 also blunted fluid-flow stimulation of Ptgs2 and Tnfrsf11b (Figure 1E), two well-known targets of fluid shear stress in osteocytes (Wadhwa et al., 2002; Zhao et al., 2016). Conversely, overexpression of Piezo1 in MLO-Y4 cells increased the expression of Ptgs2 and Tnfrsf11b and enhanced their induction by fluid shear stress (Figure 1F). These results demonstrate that Piezo1 contributes to the response of MLO-Y4 cells to fluid shear stress.
 
-## Loss of Piezo1 in osteoblasts and osteocytes decreases bone formation and bone mass
+![Figure 1.](https://cdn.elifesciences.org/articles/49631/elife-49631-fig1-v1.jpg)
+
+**Figure 1.:** (A) mRNA levels of calcium channels regulated by fluid shear stress in MLO-Y4 cells determined by RNA-seq (here and throughout, values are the mean ± s.d.). (B) qPCR of Piezo1 and Piezo2 mRNA in MLO-Y4 cells cultured under static or fluid shear stress conditions for 2 hr. *p<0.05 versus static, using Student’s t-test. (C) Piezo1 and Piezo2 mRNA levels in cortical bone of 3-month-old wildtype C57BL/6J mice. (D) Intracellular calcium concentration measured in control or Piezo1 knock-down MLO-Y4 cells before and after the start of fluid flow. Arrow indicates the time when fluid flow starts. (E) qPCR of Piezo1, Ptgs2, and Tnfrsf11b in control or Piezo1 knock-down MLO-Y4 cells cultured under static or fluid shear stress conditions for 2 hr. n = 3 per group. (F) qPCR of Piezo1, Ptgs2, and Tnfrsf11b in control or Piezo1 overexpressed MLO-Y4 cells cultured under static or fluid shear stress conditions for 2 hr. n = 3 per group. *p<0.05 with the comparisons indicated by the brackets using 2-way ANOVA. Gray indicates the static condition and teal indicates fluid shear stress.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49631/elife-49631-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) PCA analysis of RNAseq. (B) Volcano plot of differentially expressed transcripts in MLO-Y4 cells cultured under fluid shear stress (FF) versus static (ST) conditions.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49631/elife-49631-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) GO-enrichment analysis of genes isloated from MLO-Y4 cells cultured under fluid shear stress (FF) and static (ST) conditions. (B) Calcium channels expressed in MLO-Y4 cells.
+
+### Loss of Piezo1 in osteoblasts and osteocytes decreases bone formation and bone mass
 
 To determine the role of Piezo1 in osteocytes in vivo, we deleted Piezo1 by crossing Piezo1f/f mice (Cahalan et al., 2015) with Dmp1-Cre transgenic mice, which express the Cre recombinase in osteoblasts and osteocytes (Bivi et al., 2012; Xiong et al., 2015). Deletion of the Piezo1 gene was confirmed by qPCR of genomic DNA isolated from osteocyte-enriched cortical bone (Figure 2A). Mice lacking the Piezo1 gene in osteoblasts and osteocytes, hereafter referred to as Dmp1-Cre;Piezo1f/f mice, exhibited normal body weight compared to their control Piezo1f/f littermates (Figure 2—figure supplement 1A). Both female and male Dmp1-Cre;Piezo1f/f mice exhibited low bone mineral density (BMD) at 5, 8, and 12 weeks of age as measured by dual energy x-ray absorptiometry (DXA) and the difference increased as the mice matured (Figure 2B and Figure 2—figure supplement 1B). Since the three control groups, including wild-type (WT), Dmp1-Cre, and Piezo1f/f littermates, displayed similar BMD, we used Piezo1f/f littermates as controls in the remaining studies. Spontaneous fractures were observed in the tibia of conditional knockout mice at a frequency of 0.16 (Figure 2C). Detailed analysis of the skeletal phenotype of these mice at 12 weeks of age by micro-CT revealed that femoral cortical thickness was lower in Dmp1-Cre;Piezo1f/f mice compared with controls in both sexes (Figure 2D,E and Figure 2—figure supplement 1C). Periosteal and endocortical circumferences were also decreased in the femur of Dmp1-Cre;Piezo1f/f mice (Figure 2E). In line with these changes, the total cross sectional area, cortical bone area, and medullary area were reduced in the conditional knockout mice (Figure 2—figure supplement 1D). In contrast to the changes in bone width, the length of the femurs was not different between genotypes indicating that longitudinal bone growth was normal in conditional knockout mice (Figure 2—figure supplement 1E). A decrease in cortical bone thickness was also detected in vertebrae of Dmp1-Cre;Piezo1f/f female and male mice (Figure 2F and Figure 2—figure supplement 1F). Analysis of cancellous bone in the femur and vertebra revealed that bone volume over tissue volume, trabecular number, and trabecular thickness were decreased, while trabecular separation was increased in female Dmp1-Cre;Piezo1f/f mice compared to their control littermates (Figure 2G,H and Figure 2—figure supplement 1G,H). Similar results were obtained in male mice (Figure 2—figure supplement 1I,J).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/49631/elife-49631-fig2-v1.jpg)
+
+**Figure 2.:** (A) qPCR of loxP-flanked Piezo1 genomic DNA isolated from tibial cortical bone of Dmp1-Cre;Piezo1f/f (n = 6) and Piezo1f/f (n = 6) littermates. *p<0.05 using Student’s t-test. (B) Serial BMD of female Dmp1-Cre;Piezo1f/f mice and their littermate controls at 5, 8, and 12 weeks of age. *p<0.05 using 2-way ANOVA at a given age. (C) X-ray images of tibia from 12-week-old Dmp1-Cre;Piezo1f/f and Piezo1f/f littermate. Arrowhead indicates the location of fracture. (D, E) Representative µCT images (scale bar, 0.1 mm) (D) and cortical thickness, periosteal circumference, and endocortical circumference analysis (E) of the femoral diaphysis in Dmp1-Cre;Piezo1f/f (n = 9) and Piezo1f/f (n = 9) littermates. (F) Cortical thickness measured in the 4th lumbar vertebra of 12-week-old female Dmp1-Cre;Piezo1f/f (n = 9) and Piezo1f/f (n = 9) littermates. (G) Bone volume per tissue volume (BV/TV) measured in the femur and the L4 vertebra of 12-week-old female Dmp1-Cre;Piezo1f/f (n = 9) and Piezo1f/f (n = 7) mice. (H) Representative µCT images of the distal femur. Scale bar, 1 mm. (I) Stiffness, ultimate force, Young’s modulus, and ultimate stress measured in the femurs of Dmp1-Cre;Piezo1f/f (n = 9) and Piezo1f/f (n = 9) littermates. (J) Tissue mineral density measured in cortical bone in femoral diaphysis of Dmp1-Cre;Piezo1f/f (n = 9) and Piezo1f/f (n = 9) littermates. (K) Representative histological cross sections (left, yellow dotted line indicates periosteal surface and white dotted line indicates endocortical surface; scale bar = 100 µm) and quantification of mineralizing surface in periosteal and endocortical surface (right) at the femoral diaphysis of 5-week-old female Dmp1-Cre;Piezo1f/f (n = 7) and Piezo1f/f (n = 5) littermates. (L, M) Mineralizing surface per bone surface (MS/BS), mineral apposition rate (MAR), and bone formation rate per bone surface (BFR/BS) (L), Osteoblast number (N.Ob/B.Pm), and osteoclast number (N.Oc/B.Pm) (M) measured in cancellous bone of lumbar vertebra 1–3 from 12-week-old female Dmp1-Cre;Piezo1f/f (n = 5) and Piezo1f/f (n = 5) littermates. *p<0.05 using Student’s t-test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49631/elife-49631-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Body weight of female and male Dmp1-Cre;Piezo1f/f (n = 9 f, 8 m) and Piezo1f/f (n = 9 f, 9 m) mice at 12 weeks of age. (B) Femoral, spinal, and total body bone mineral density of male mice of indicated genotypes at 5, 8, and 12 weeks of age. (C) Femoral cortical thickness of 12-week-old male Dmp1-Cre;Piezo1f/f (n = 8) and Piezo1f/f mice (n = 9). (D) Total cross sectional area, cortical bone area, medullary area in the midshaft of femur in 12-week-old female Dmp1-Cre;Piezo1f/f (n = 5) and Piezo1f/f (n = 5) mice. (E) Femur length of 12-week-old female and male Dmp1-Cre;Piezo1f/f (n = 9 f, 8 m) and Piezo1f/f (n = 9 f, 9 m) mice. *p<0.05 using 2-way ANOVA. (F) Vertebral cortical thickness of 12-week-old male Dmp1-Cre;Piezo1f/f (n = 8) and Piezo1f/f (n = 9) mice. (G,H) Trabecular number (Tb. N), trabecular thickness (Tb. Th), and trabecular separation (Tb. Sp) measured in the femur (G) and the L4 vertebra (H) of 12-week-old female Dmp1-Cre;Piezo1f/f (n = 9) and Piezo1f/f (n = 9) mice. (I,J) Bone volume per tissue volume (BV/TV), trabecular number, trabecular thickness, and trabecular separation measured in the femur (I) and the L4 vertebra (J) of 12-week-old male Dmp1-Cre;Piezo1f/f (n = 8) and Piezo1f/f (n = 9) mice. *p<0.05 using Student’s t-test.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/49631/elife-49631-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative images of cross sections of femoral diaphysis from 5-week-old Dmp1-Cre;Piezo1f/f and Piezo1f/f mice. (B,C) Empty lacunae (B) and osteocyte number (C) measured in the longitudinal section of L1-3 vertebrae in 12-week-old female Dmp1-Cre;Piezo1f/f (n = 5) and Piezo1f/f (n = 5) mice. (D) Representative histological images of osteocytes in vertebral cortical and cancellous bone of 12-week-old female Dmp1-Cre;Piezo1f/f and Piezo1f/f mice. (C) Caspase three activity measured in Piezo1 knock-down MLO-Y4 and control cells. (D) Alizarin Red staining of bone marrow stromal cells isolated from 5-week-old female Dmp1-Cre;Piezo1f/f (n = 3) and Piezo1f/f (n = 3) mice and cultured for 21 days in osteoblast differentiation medium (n = 3 wells/group).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/49631/elife-49631-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Abundance of Piezo1 genomic DNA measured by qRT-PCR in gastrocnemius of Dmp1-Cre;Piezo1f/f and Piezo1f/f mice. (B) Piezo1 mRNA in tibia and gastrocnemius muscle in male wild type mice (n = 5). (C,D) Lean body weight (C) and gastrocnemius muscle mass (D) measured in 12-week-old Dmp1-Cre;Piezo1f/f (n = 9 f, 8 m) and Piezo1f/f (n = 9 f, 9 m) mice. *p<0.05 using Student’s t-test.
 
 Biomechanical testing by 3-point bending showed that the femurs from Dmp1-Cre;Piezo1f/f mice had reduced stiffness and ultimate force (Figure 2I). However, the Young’s modulus and ultimate stress did not change, suggesting that the lower strength was due to differences in size and mass rather than changes in bone material properties (Figure 2I). Consistent with this, the tissue mineral density of femoral cortical bone was unaffected by deletion of Piezo1 (Figure 2J).
 
@@ -50,23 +78,43 @@ To evaluate whether cell death could account for the changes seen with Piezo1 de
 
 Since the Dmp1-Cre transgene also leads to recombination in a sub-population of muscle cells (Lim et al., 2017), we measured Piezo1 deletion in gastrocnemius muscle, lean body weight, and gastrocnemius muscle mass to determine whether altered muscle mass could have contributed to the skeletal phenotype. We detected about 20% deletion of the Piezo1 gene in the conditional knockout mice (Figure 2—figure supplement 3A). In addition, Piezo1 expression in gastrocnemius muscle was about 10 times lower than that in bone (Figure 2—figure supplement 3B). More importantly, we did not observe any difference in lean body weight or gastrocnemius muscle mass between the conditional knockout mice and their control littermates (Figure 2—figure supplement 3C,D). These results demonstrate that Piezo1 in osteoblasts, osteocytes, or both, is essential for normal bone size and mass.
 
-## Loss of Piezo1 in osteoblasts and osteocytes blunts the skeletal response to mechanical loads
+### Loss of Piezo1 in osteoblasts and osteocytes blunts the skeletal response to mechanical loads
 
 To determine whether Piezo1 in osteoblasts or osteocytes is required for the skeletal response to increased mechanical loading, we loaded the left tibia of 16-week-old female Dmp1-Cre;Piezo1f/f mice and their control littermates with +1200µε peak strain at the midshaft, as illustrated in Figure 3A. Two weeks of anabolic loading increased tibial cortical thickness in control mice but not in conditional knockout mice (Figure 3B). Consistent with the changes in bone mass, loading increased periosteal bone formation rate in control mice, due to increases in both mineralizing surface and mineral apposition rate (Figure 3C,D). The load-stimulated bone formation was significantly blunted in conditional knockout mice (Figure 3C,D). These results suggest that Piezo1 in osteoblasts, osteocytes, or both, plays an essential role in the response of the skeleton to mechanical loads.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/49631/elife-49631-fig3-v1.jpg)
 
-**Figure 3.:** (A) Schematic illustration of anabolic loading on mouse tibia. (B) Cortical thickness (Ct.Th) in the tibial shaft of 4-month-old loaded or control Dmp1-Cre;Piezo1 (f/fn = 5) and Piezo1 (f/fn = 7) littermates. (C) Mineralizing surface (MS/BS), mineral apposition rate (MAR), and bone formation rate (BFR/BS) in periosteal surface of the tibia of 4-month-old female Dmp1-Cre;Piezo1 (f/fn = 5) and Piezo1 (f/fn = 7) littermates. (D) Representative histological cross section images of the tibial shaft of 4-month-old female Dmp1-Cre;Piezo1 and f/fPiezo1 littermates. Scale bar, 100 µm. *p<0.05 with the comparisons indicated by the brackets using 2-way ANOVA.f/f
+**Figure 3.:** (A) Schematic illustration of anabolic loading on mouse tibia. (B) Cortical thickness (Ct.Th) in the tibial shaft of 4-month-old loaded or control Dmp1-Cre;Piezo1f/f (n = 5) and Piezo1f/f (n = 7) littermates. (C) Mineralizing surface (MS/BS), mineral apposition rate (MAR), and bone formation rate (BFR/BS) in periosteal surface of the tibia of 4-month-old female Dmp1-Cre;Piezo1f/f (n = 5) and Piezo1f/f (n = 7) littermates. (D) Representative histological cross section images of the tibial shaft of 4-month-old female Dmp1-Cre;Piezo1f/f and Piezo1f/f littermates. Scale bar, 100 µm. *p<0.05 with the comparisons indicated by the brackets using 2-way ANOVA.
 
-## Piezo1 controls Wnt1 expression via YAP1 and TAZ
+### Piezo1 controls Wnt1 expression via YAP1 and TAZ
 
 To understand the molecular mechanisms by which Piezo1 increases bone mass, we compared expression of genes known to influence bone formation and resorption between Dmp1-Cre;Piezo1f/f mice and control littermates. Production of Wnt1 or the Wnt signaling inhibitor Sclerostin (Sost) by osteocytes represent critical stimulatory or inhibitory signals to bone formation, respectively (Luther et al., 2018; Li et al., 2008). Wnt1 mRNA was lower in cortical bone shafts of conditional knockout mice at both 5 and 12 weeks of age while the expression of Sost was unaffected (Figure 4A,B). Consistent with increased osteoclast number, expression of the essential pro-osteoclastogenic cytokine RANKL (Tnfsf11) was higher in the conditional knockout mice (Figure 4B). In contrast, expression of OPG (Tnfrsf11b), a secreted decoy receptor for RANKL, was not different between the genotypes (Figure 4B), despite our observation of reduced Tnfrsf11b expression in MLO-Y4 cells lacking Piezo1 (Figure 1E).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/49631/elife-49631-fig4-v1.jpg)
+
+**Figure 4.:** (A) qPCR of Wnt1 mRNA in tibial cortical bone of 5-week-old female Piezo1f/f (n = 6) and Dmp1-Cre;Piezo1f/f mice (n = 6). *p<0.05 using Student’s t-test. (B) Relative mRNA levels of Wnt1, Sost, Tnfsf11 (RANKL), and Tnfrsf11b (OPG) in tibia cortical bone of 12-week-old female Piezo1f/f (n = 9) and Dmp1-Cre;Piezo1f/f (n = 9) mice. *p<0.05 using Student’s t-test. (C) Wnt1 and Cyr61 mRNA levels in control or Piezo1 knock-down MLO-Y4 cells cultured under static or fluid shear stress conditions. *p<0.05 with the comparisons indicated by the brackets using 2-way ANOVA. (D) Ptgs2, Wnt1, and Cyr61 mRNA levels in control or Yap1/Taz knock-down MLO-Y4 cells cultured under static or fluid shear stress conditions. *p<0.05 with the comparisons indicated by the brackets using 2-way ANOVA. (E) YAP1 immunofluorescence in control or Piezo1 knock-down MLO-Y4 cells cultured under static or fluid shear stress conditions. Scale bar, 100 µm. (F) Quantification of mean fluorescence intensity in nucleus versus cytoplasm in the cells described in (E). (G) Wnt1 and Cyr61 mRNA levels measured in tibia of female Dmp1-Cre;Piezo1f/f (n = 8) and Piezo1f/f (n = 7) mice loaded with one bout of compressive loading. Mice were harvested 5 hr after loading. *p<0.05 with the comparisons indicated by the brackets using 2-way ANOVA.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49631/elife-49631-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Cortical thickness (left), periosteal circumference (middle), and endocortical circumference (right) at the femoral diaphysis of Dmp1-Cre;Yap1f/f,Tazf/f (n = 10) and Yap1f/f,Tazf/f (n = 12) littermates. (B) mRNA of Piezo1 in control and Piezo1 knock-down MLO-Y4 cells. (C) mRNA levels of Yap1 and Taz in control and Yap1/Taz knock-down MLO-Y4 cells. *p<0.05 using Student’s t-test.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/49631/elife-49631-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** qRT-PCR of Piezo1, Ptgs2, Wnt1, and Cyr61 in control (Cas9) and Piezo1 knockout (Cas9 + Piezo1 sgRNAs) UAMS-32 cells cultured under static and fluid flow conditions. *p<0.05 using 2-way ANOVA. Osteoblastic UAMS-32 cells were transfected with Cas9 or Cas9 with two sgRNAs targeting introns 3 and 4 of the Piezo1 gene. Single Cells were then flow-sorted into 96-well plates for screening. Cells with homologous deletion of the exon 4 of Piezo1 were pooled together for analysis.
+
 The expression of Wnt1 can be stimulated by mechanical loading in mice (Holguin et al., 2016). Therefore, we determined whether mechanical signals increase Wnt1 expression via Piezo1. Fluid shear stress increased Wnt1 expression in MLO-Y4 cells but this was blunted after knock-down of Piezo1 (Figure 4C). Basal expression of Wnt1 was also reduced by Piezo1 knock-down (Figure 4C). YAP1 and TAZ are two related transcriptional cofactors that can be activated by mechanical signals, including fluid flow and matrix rigidity, and recently Piezo1 has been shown to control their activity (Wang et al., 2016; Dupont et al., 2011; Pathak et al., 2014). We have shown previously that deletion of Yap1 and Taz using Dmp1-Cre decreases bone mass, due to both reduced bone formation and increased osteoclast number (Xiong et al., 2018). Here, we analyzed the diaphysis of femurs of these mice and found that cortical thickness, periosteal circumference, and endocortical circumference were significantly decreased in Dmp1-Cre;Yap1f/f,Tazf/f mice compared to their Yap1f/f,Tazf/f littermates (Figure 4—figure supplement 1A). Because these changes were similar to the ones seen in cortical bone of Dmp1-Cre;Piezo1f/f mice, we examined whether Piezo1 controls Wnt1 expression via YAP1 and TAZ. Silencing the Piezo1 gene in MLO-Y4 cells decreased the expression of Cyr61, a YAP1 and TAZ target gene, and blunted fluid shear stress induction of Cyr61 expression (Figure 4C). We then silenced the Yap1 and Taz genes in MLO-Y4 cells to examine whether these factors are required for the stimulation of Wnt1 by fluid shear stress. We found that lack of Yap1 and Taz blunted the response to fluid flow including the increase in Ptgs2, Wnt1, and Cyr61 expression (Figure 4D). Knock-down of Piezo1 and Yap1/Taz was confirmed by mRNA abundance (Figure 4—figure supplement 1B,C). Importantly, silencing Piezo1 blunted YAP1 activation caused by fluid shear stress, indicated by blunted nuclear translocation of YAP1 (Figure 4E,F). Similarly, we deleted Piezo1 in UAMS-32 cells, a murine osteoblastic cell line, using CRISPR/Cas9 and found that expression of Ptgs2, Wnt1, and Cyr61 induced by fluid flow were blunted in Piezo1 knock out cells (Figure 4—figure supplement 2). To determine whether Piezo1 is required for Wnt1 expression induced by mechanical loading in vivo, we applied one bout of compressive loading on the tibia of Dmp1-Cre;Piezo1f/f mice and their Piezo1f/f littermates with +1200µε peak strain at the midshaft. Mechanical loading increased Wnt1 and Cyr61 expression in control mice (Figure 4G). However, these increases were blunted in Dmp1-Cre;Piezo1f/f mice (Figure 4G). Taken together, these results indicate that stimulation of Piezo1 by mechanical signals increases Wnt1 expression at least in part via activation of YAP1 and TAZ.
 
-## Activation of Piezo1 mimics the effects of mechanical stimulation on osteocytes
+### Activation of Piezo1 mimics the effects of mechanical stimulation on osteocytes
 
 Finally, we determined whether activation of Piezo1 is sufficient to mimic the effects of mechanical stimulation in osteocytes and bone. Treatment of MLO-Y4 cells with Yoda1, a small molecule agonist of Piezo1 (Syeda et al., 2015), increased intracellular calcium concentration (Figure 5A), and stimulated expression of Ptgs2, Wnt1, and Tnfrsf11b (Figure 5B), similar to the effect of fluid flow on these cells. Importantly, silencing of Piezo1 completely prevented the increase of intracellular calcium (Figure 5A), as well as the changes in gene expression induced by Yoda1 (Figure 5B). Likewise, silencing Yap1 and Taz in MLO-Y4 cells significantly blunted the increase of Ptgs2, Wnt1, and Tnfrsf11b by Yoda1, indicating that the response to Yoda1 also requires YAP1 and TAZ (Figure 5C). Yoda1 also promoted expression of Ptgs2, Wnt1, Tnfrsf11b, Cyr61, and decreased Sost in cortical bone organ cultures from C57BL/6J mice (Figure 5D). Importantly, Yoda1 increased Wnt1 expression in osteocyte-enriched cortical bone in vivo (Figure 5E). These results demonstrated that Yoda1 mimics the response to fluid flow in authentic osteocytes.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/49631/elife-49631-fig5-v1.jpg)
+
+**Figure 5.:** (A) Intracellular calcium concentration measured in control or Piezo1 knock-down MLO-Y4 cells immediately after the treatment of DMSO or 10 µM Yoda1. (B) qPCR of Ptgs2, Wnt1, and Tnfrsf11b in control or Piezo1 knock-down MLO-Y4 cells treated with DMSO or 10 µM Yoda1 for 2 hr. n = 3 per group. *p<0.05 versus vehicle treated controls of the same genotype by 2-way ANOVA. (C) qPCR of Ptgs2, Wnt1, and Tnfrsf11b in control or Yap1/Taz knock-down MLO-Y4 cells treated with DMSO or 10 µM Yoda1 for 2 hr. n = 3 per group. *p<0.05 versus vehicle treated controls of the same genotype by 2-way ANOVA. (D) qPCR of Ptgs2, Wnt1, Tnfrsf11b, Cyr61, and Sost in ex vivo cultured femoral cortical bone from 5-week-old mice treated with DMSO or 10 µM Yoda1 for 4 hr. n = 3 per group. (E) qPCR of Wnt1 in tibia of C57BL/6J mice treated with Veh or Yoda1 for 4 hr. n = 12 per group. (F) Schedule of in vivo Yoda1 administration. (G, H) Cortical thickness and cancellous BV/TV in distal femur (G) and the 4th lumbar (H) of 4-month-old vehicle or Yoda1 treated female C57BL/6J mice (n = 12 per group). (I) Circulating osteocalcin levels in the serum of 4-month-old vehicle or Yoda1 treated female C57BL/6J mice (n = 12 per group). *p<0.05 versus vehicle treated controls by Student’s t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49631/elife-49631-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Body weight of C57BL/6J mice before and after 2 weeks of vehicle or Yoda1 administration (n = 12 mice per group). (B) Serum CTX measured by ELISA in mice as described in (A).
 
 To determine whether Yoda1 is able to increase bone mass in vivo, we administered Yoda1 to 4-month-old female WT C57BL/6J mice for 2 weeks (Figure 5F). Yoda1 did not alter body weight (Figure 5—figure supplement 1A) but increased cortical thickness and cancellous bone mass in the distal femur (Figure 5G). Yoda1 also increased cortical thickness in the vertebra (Figure 5H). However, we did not detect changes in cancellous bone volume in vertebrae (Figure 5H). Consistent with the effect on bone mass, the serum levels of osteocalcin, a bone formation marker, were increased in Yoda1-treated mice (Figure 5I). In contrast, we did not observe changes in the serum levels of CTX, a bone resorption marker (Figure 5—figure supplement 1B). Our results demonstrate that activation of Piezo1 by Yoda1 mimics the effects of fluid shear stress on osteocytes and increases bone mass in mice.
 
@@ -90,64 +138,340 @@ In summary, our studies demonstrate a critical role for Piezo1 in the maintenanc
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mouse: Piezo1f/f(Piezo1tm2.1Apat/J)</td>
+      <td>Jackson Laboratories</td>
+      <td>JAX: 029213; RRID:IMSR_JAX:029213</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mouse: Dmp1-Cre</td>
+      <td>Bivi et al., 2012</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mouse: Yap1f/f;Tazf/f</td>
+      <td>Xin et al., 2013</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mouse: WT C57BL/6J</td>
+      <td>Jackson Laboratories</td>
+      <td>JAX: 000664; RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse Osteocalcin Immunoassay Kit</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# J64239</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fluo-8 Calcium Flux Assay Kit</td>
+      <td>Abcam</td>
+      <td>Cat# ab112129</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RatLaps (CTX-I) EIA kit</td>
+      <td>Immunodiagnostic Systems</td>
+      <td>Cat# AC-06F1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq stranded mRNA kit</td>
+      <td>Illumina</td>
+      <td>Cat# 20020594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High-capacity cDNA reverse transcription kit</td>
+      <td>Life Technologies</td>
+      <td>Cat# 4368813</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy mini kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 74106</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Murine)</td>
+      <td>293T</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Murine)</td>
+      <td>MLO-Y4</td>
+      <td>Kato et al., 1997</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line(Murine)</td>
+      <td>UAMS-32</td>
+      <td>O'Brien et al., 1999</td>
+      <td></td>
+      <td>Cell line maintained in Charles O’Brien lab</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>Piezo1 shRNA forward</td>
+      <td>Zhang et al., 2017</td>
+      <td>Oligo</td>
+      <td>CCGGTCGGCGCTTGCTAGAACTTCACTCGAGTGAAGTTCTAGCAAGCGCCGATTTTTG</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>Piezo1 shRNA reverse</td>
+      <td>Zhang et al., 2017</td>
+      <td>Oligo</td>
+      <td>AATTCAAAAATCGGCGCTTGCTAGAACTTCACTCGAGTGAAGTTCTAGCAAGCGCCGA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>Yap1 shRNA</td>
+      <td>Sigma-Aldrich</td>
+      <td>TRCN0000238432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>Taz shRNA</td>
+      <td>Sigma-Aldrich</td>
+      <td>TRCN0000095951</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Piezo1</td>
+      <td>Life Technologies</td>
+      <td>Mm01241549_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Piezo2</td>
+      <td>Life Technologies</td>
+      <td>Mm01265861_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Ptgs2</td>
+      <td>Life Technologies</td>
+      <td>Mm00478374_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Cyr61</td>
+      <td>Life Technologies</td>
+      <td>Mm00487498_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Wnt1</td>
+      <td>Life Technologies</td>
+      <td>Mm01300555_g1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Yap1</td>
+      <td>Life Technologies</td>
+      <td>Mm01143263_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Taz</td>
+      <td>Life Technologies</td>
+      <td>Mm01289583_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tnfsf11</td>
+      <td>Life Technologies</td>
+      <td>Mm00441906_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tnfrsf11b</td>
+      <td>Life Technologies</td>
+      <td>Mm00435452_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sost</td>
+      <td>Life Technologies</td>
+      <td>Mm00470479_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mrps2</td>
+      <td>Life Technologies</td>
+      <td>Mm00475529_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Piezo1 sgRNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GGTTATTCCTGTGAGGCCCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Piezo1 sgRNA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>TTAGGATTCGGCTCACAGAG</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Yoda1</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# SML1558</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin dihydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P8833</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>G418 disulfate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# G8168</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>YAP1</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 14074S; RRID:AB_2650491</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG (Alexa Fluor 488)</td>
+      <td>Abcam</td>
+      <td>Cat# ab150077; RRID:AB_2630356</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 8</td>
+      <td>GraphPad</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 The generation of mice harboring Piezo1 conditional allele, termed Piezo1f/f mice, was described previously (Cahalan et al., 2015). Mice harboring both Yap1 and Taz conditional alleles, termed Yap1f/f;Tazf/f mice were kindly provided by Eric N. Olson (UT Southwestern Medical Center, Texas) and were described previously (Xin et al., 2013). The 8 kb Dmp1-Cre transgenic mice were described previously (Bivi et al., 2012). To generate Dmp1-Cre; Piezo1f/f mice and littermates, we mated Piezo1f/f mice (crossed into C57BL/6J for more than 10 generations) and Dmp1-Cre mice (crossed into C57BL/6J for more than 10 generations). Dmp1-Cre; Yap1f/f,Tazf/f mice and littermates were obtained by mating Yap1f/f,Tazf/f mice (mixture of 129/Sv and C57BL/6J) and Dmp1-Cre mice (crossed into C57BL/6J for more than 10 generations). We housed all mice in the animal facility of the University of Arkansas for Medical Sciences. Animal studies were performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. Animal use protocols (3782, 3805, and 3897) were approved by the Institutional Animal Care and Use Committee (IACUC) of the University of Arkansas for Medical Sciences. All of the animals were handled according to approved protocols.
 
 To quantify cancellous bone formation, we injected mice with calcein (20 mg/kg body weight) intraperitoneally 7 and 3 days before harvest. To quantify periosteal and endocortical bone formation, we injected mice with calcein (20 mg/kg body weight) and Alizarin Red (20 mg/kg body weight) 10 and 3 days before harvest. For gene expression, we injected Yoda1 into 4-month-old female C57BL/6J mice one time and harvested tibiae 4 hr later for RNA extraction. For bone mass evaluation, we injected Yoda1 into 4-month-old female C57BL/6J mice five consecutive days per week for 2 weeks (day 1–5 and day 8–12) and harvested the mice at day 15 for analysis. Yoda1 (Sigma, St. Louis, MO) was dissolved in DMSO at 40 mM as a stock, diluted in 5% ethanol, and injected intraperitoneally at 5 µmol/kg body weight. Mice were rank-ordered by body weight and then assigned to Veh or Yoda1 groups to give identical group means. All investigators involved in data collection were blinded as to the genotype and group of the mice.
 
-## Cell line
+### Cell line
 
 HEK 293 T cells were authenticated by ATCC. MLO-Y4 cells were created and authenticated in Dr. Lynda Bonewald’s lab (Kato et al., 1997). We tested the MLO-Y4 cells by morphology and osteocytic gene expression such as RANKL and OPG. UAMS-32 cells were created and authenticated by Dr. Charles O’Brien (O'Brien et al., 1999; Fu et al., 2002). Cells were treated with plasmocin to prevent potential mycoplasma contamination.
 
-## Cell cultures
+### Cell cultures
 
 MLO-Y4 cells were cultured in α-MEM supplemented with 5% FBS, 5% BCS, and 1% penicillin/streptomycin/glutamine. Fifteen dynes/cm2 oscillatory fluid shear stress was applied on MLO-Y4 cells at 1 Hz for 2 hr using an IBDI pump system (IBIDI, Germany). For Yoda1 treatment, cells were cultured in the presence of 10 µM Yoda1 (Sigma, St. Louis, MO) or DMSO for 2 hr. Immediately after the treatments, we isolated RNA from cells using RNeasy mini kit (Qiagen, Germany) for qPCR or RNA-seq analysis. To silence Piezo1, we generated Piezo1 shRNA expression plasmid using the following oligonucleotides in the pLKO.1-TRC cloning vector (Addgene Plasmid #10878, a gift from David Root): forward oligo: 5’-CCGGTC-GGCGCTTGCTAGAACTTCACTCGAGTGAAGTTCTAGCAAGCGCCGATTTTTG-3’; reverse oligo: 5’- AATTCAAAAATCGGCGCTTGCTAGAACTTCACTCGAGTGAAGTTCTAGCAAGCGC-CGA-3’ (Zhang et al., 2017). Yap1 shRNA (TRCN0000238432) and Taz shRNA (TRCN0000095951) were purchased from Sigma (St. Louis, MO). A shRNA against firefly luciferase was used as a control (Sigma, St. Louis, MO). For virus production, HEK293T cells were cultured in a 6-well culture plate and co-transfected with a total 3 μg of lentiviral shRNA vector, pMD2G (Addgene plasmid #12259, a gift from Didier Trono), and psPAX2 (Addgene plasmid # 12260, a gift from Didier Trono) at the ratio of 2:0.9:0.4 using TransIT-LT1 transfection reagent (Mirus, Madison, WI). Culture media was changed 12 hr after transfection and viral supernatants were collected 48 hr after media change. Viral supernatants were filtered through a 0.45 µm filter and used immediately to transduce cells cultured in a 10 cm dish. Cells were then subjected to selection with G418 (100 µg/ml) or puromycin (25 µg/ml) for 5 days before treatment. To overexpress Piezo1 in MLO-Y4 cells, we transfected mPiezo1-IRES-eGFP (Addgene plasmid # 80925, a gift from Ardem Patapoutian) into MLO-Y4 cells using TransIT-LT1 transfection reagent (Mirus, Madison, WI) and then treated these cells with 15 dynes/cm2 oscillatory fluid shear stress at 1 Hz for 2 hr. Plasmids for expression of Cas9 and sgRNAs for knocking out Piezo1 in UAMS-32 cells were prepared by inserting oligonucleotides encoding the desired sgRNA sequence into the pX458 vector using the protocol recommended by the Zhang laboratory (Cong et al., 2013). Plasmids expressing Cas9 and Piezo1 sgRNAs were transfected into UAMS-32 cells using TransIT-LT1 transfection reagent (Mirus, Madison, WI). Cells were sorted into 96-well plates for single cell cloning 48 hr after transfection. Single cell colonies were then screened for homozygous deletion using the following primers: Forward: 5’-GCTGTCAGGGTAAGCAGTATC-3’, Reverse: 5’-GGAATATGAGGACAGCAGTCC-3’. All homozygous mutant cell colonies were then pooled together for further analysis. Cas9 transfected cells were used as a control. All in vitro cell culture experiments were performed three times with three technical replicates.
 
-## Femoral organ culture
+### Femoral organ culture
 
 Female mice at 5 weeks of age were euthanized in a CO2 chamber. Femurs were dissected and both ends were removed in a culture hood. Bone marrow was then flushed out using PBS and the periosteal surface was scraped to remove periosteal cells. Femoral shafts were then cultured in a 12-well-plate with 1 ml of α-MEM supplemented with 10% FBS and 1% penicillin/streptomycin/glutamine for 24 hr. We then treated femur shafts with 10 µM Yoda1 (Sigma, St. Louis, MO) or DMSO for 4 hr. Femur shafts were then collected for RNA isolation and qPCR analysis. Ex vivo femoral organ culture was repeated twice with three biological replicates.
 
-## In vitro osteoblast differentiation
+### In vitro osteoblast differentiation
 
 Bone marrow stromal cells were flushed out from long bones, collected into a 50 ml cubical tube, and filtered through a 40 µm cell strainer to obtain a single cell suspension. Bone marrow stromal cells were then seeded into a 12-well-plate at 5 × 106 cells/well and cultured in α-MEM containing 10% fetal bovine serum, 1% penicillin/streptomycin/glutamine, 1% ascorbic acid, and 10 mM β-glycerolphosphate. Culture medium was changed every 3 days. After 21 days, the cultures were fixed with 10% buffered formalin and stained with an aqueous solution of 40 mM Alizarin Red to evaluate osteoblastogenesis.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 Purified RNA was used as input for sequencing library preparation and indexing using the TruSeq stranded mRNA kit (Illumina, CA), following the manufacturer’s protocol. The libraries were then pooled and sequenced using a NextSeq sequencer with 75 cycles of sequencing reaction. Data handling and processing were performed on the basis of a previous bioinformatics pipeline (Nookaew et al., 2012). The high-quality reads (phred quality score,>25; length after trimming,>20 bases) were obtained with the dynamic trimming algorithm in the SolexaQA++ toolkits (Cox et al., 2010), and aligned with the mouse genome version GRCm38 using BWA software (Li and Durbin, 2009). Then the alignment files (.bam) were used to generate read counts for statistical analysis. The differential gene expression analysis was performed using negative binomial based statistic (Love et al., 2014). The adjusted p-values were used for gene enrichment analysis based on Gene Ontology using the piano package (Väremo et al., 2013). Raw RNA-seq results have been deposited in GEO database under BioProject PRJNA551282 with accession numbers: SRR9598498, SRR9598497, SRR9598496, SRR9598495, SRR9598494, and SRR9598493. Detailed RNAseq analysis was shown in Supplementary file 1.
 
-## Calcium concentration measurement
+### Calcium concentration measurement
 
 For intracellular calcium concentration measurement under fluid flow condition, 1 × 105 MLO-Y4 cells were seeded in a µ-Slide I Luer (0.4 mm) fluid chamber slide (IBIDI, Germany) overnight. One hour before initiating fluid flow, the culture medium was removed and 100 µl Hank's Buffer with Hepes (HHBS) containing 4 µM Fluo-8 (Abcam, Cambridge, MA) was added to the culture, as described by the manufacturer. The cells were then cultured at 37°C for 30 min. After additional incubation at room temperature for 30 min, the chamber slide was placed under a confocal microscope in order to record the intensity of fluorescence of MLO-Y4 cells. Fluorescence was recorded for 3 min before starting fluid flow using HHBS and then recorded for another 10 min. The increase of intracellular concentration was calculated by subtracting the initial mean fluorescence. For measuring intracellular calcium concentration in cells with Yoda1 treatment, we cultured 4,000 MLO-Y4 cells per well in a 96-well-plate. We preloaded the cells with Fluo-8 as described by the manufacturer and read the intensity of the fluorescence using a Victor X3 multi-label plate reader (Perkin Elmer, Waltham, MA) immediately after the treatment. We measured the fluorescence for 5 min at an interval of 20 s. The percentage of increase in intracellular calcium concentration was calculated as (Fx-F0)/F0.
 
-## Skeletal analysis
+### Skeletal analysis
 
 Tibial X-rays were obtained using an UltraFocus X-ray machine (Faxitron Bioptics, Tucson, Arizona) and BMD of the lumbar spine and femur were measured by dual-energy X-ray absorptiometry using a PIXImus Densitometer (GE-Lunar Corp.) Three dimensional bone volume and architecture of L4 vertebra, femur, and tibia were measured by µCT (model μCT40, Scanco Medical, Wayne, PA). The femur, vertebrae (L4), or tibia, were cleaned of soft tissues and fixed in 10% Millonig’s formalin for 24 hr. Bone were then gradually dehydrated into 100% ethanol. Bone samples were loaded into a 12.3 mm diameter scanning tube and images acquired in the μCT40. The scans were integrated into 3D voxel images (1024 × 1024 pixel matrices for each individual planar stack) and a Gaussian filter (sigma = 0.8, support = 1) was used to reduce signal noise. Scanco Eval Program v.6.0 was used for measuring bone volume. A threshold of 220 mg/cm3 was applied to all scans at medium resolution (E = 55 kVp, I = 145 µA, integration time = 200 ms) for trabecular bone measurements. The cortical bone and the primary spongiosa were manually excluded from the analysis. Trabecular bone measurements at the distal femur were made on 151 slices beginning 8–10 slices away from the growth plate and proceeding proximally. Trabecular bone measurements in the vertebra was determined using 100 slices (1.2 mm) of the anterior (ventral) vertebral body immediately inferior (caudal) to the superior (cranial) growth plate. All trabecular measurements were made by drawing contours every 10 to 20 slices and voxel counting was used for bone volume per tissue volume and sphere filling distance transformation indices, without pre-assumptions about the bone shape as a rod or plate for trabecular microarchitecture. Femoral cortical thickness, periosteal circumference, and endocortical circumference were measured at the mid-diaphysis. For tibial cortical thickness, we analyzed 18 slices 5 mm proximal from the distal tibiofibular junction. Vertebral cortical bone thickness was determined on the ventral cortical wall using contours of cross-sectional images, drawn to exclude trabecular bone. Cortical analysis were measured at a threshold of 260 mg/cm3. Calibration and quality control were performed weekly using five density standards and spatial resolution was verified monthly using a tungsten wire rod. We based beam-hardening correction on the calibration records. Corrections for 200 mg hydroxyapatite were made for all energies.
 
-## Histology
+### Histology
 
 Lumbar vertebrae were fixed for 24 hr in 10% Millonig’s formalin, dehydrated into 100% ethanol, embedded in methyl methacrylate, and then 5 μm longitudinal sections were obtained. After removal of plastic and rehydration, we stained sections for TRAP activity and counter-stained with T-blue. Quantitative histomorphometry was performed to determine osteoblast and osteoclast number using Osteomeasure system (OsteoMetrics, Decatur, GA) interfaced to an Axio image M2 (Carl Zeiss, NY). Bone formation rate was measured using unstained sections in Osteomeasure system. We used terminology recommended by the Histomorphometry Nomenclature Committee of the American Society for Bone and Mineral Research (Dempster et al., 2013). For quantification of periosteal and endocortical bone formation, femurs or tibiae were fixed in 10% Millonig’s formalin for 24 hr, dehydrated into 100% ethanol, embedded in methyl methacrylate, and then 80 μm cross sections were obtained at the femoral mid-diaphysis for femoral sections and 5 mm proximal from the distal tibiofibular junction for tibial sections. We then measured mineralizing surface and mineral apposition rate using the Osteomeasure system.
 
-## Tibia axial loading
+### Tibia axial loading
 
 A cyclic axial load was applied to left tibia of mice to achieve +1200 µε peak strain at the tibial midshaft using an Electroforce TA 5500 (TA Instruments, New Castle, DE). To determine the required load to achieve +1200 µε peak strain for each genotype of experimental mice, axial loading was applied to harvested tibiae ex vivo. A single-element strain gauge (C2A-06-015LW-120, VPG Micro-Measurements, Wendell, NC) was attached to the antero-medial surface of the tibia located 5 mm proximal from the distal tibiofibular junction using M-Bond 200 adhesive kit (VPG Micro-Measurements). We recorded the force-strain regressions using Electroforce TA 5500 software. We then applied the same amount of load to mice in vivo according to their genotype (8.5 Newton for Piezo1f/f mice and 7.5 Newton for Dmp1-Cre; Piezo1f/f mice). The left tibia of each mouse was loaded for five consecutive days per week for 2 weeks (day 1–5 and day 8–12), and the load was applied in 1200 cycles with 4 Hz triangle waveform and 0.1 s rest time between each cycle, a protocol shown to be anabolic (Sun et al., 2018). We injected calcein (Sigma, St. Louis, MO) and Alizarin Red (Sigma) intraperitoneally into mice 10 days and 3 days before euthanasia to label new bone formation. We euthanized the mice and collected tissues at day 15 for skeletal analysis. For gene expression analysis, we loaded left tibia of 4-month-old female mice with one bout of loading and harvested tibiae 5 hr after loading for RNA extraction.
 
-## Biomechanical testing
+### Biomechanical testing
 
 We performed three-point bending test on femurs at room temperature using a miniature bending apparatus with the posterior femoral surface lying on lower supports (7 mm apart) and the left support immediately proximal to the distal condyles. Load was applied to the anterior femoral surface by an actuator midway between the two supports moving at a constant rate of 3 mm/min to produce a physiological in vivo strain rate of 1% for the average murine femur. Maximum load (N) and displacement (mm) were recorded. The external measurements (length, width and thickness) of the femora were recorded with a digital caliper. We measured the moment of inertia in the midshaft of femur using µCT (model μCT40, Scanco Medical). The mechanical properties were normalized for bone size and ultimate strength and stress (N/mm2; in megapascals and MPa) was calculated.
 
-## Quantitative PCR
+### Quantitative PCR
 
 Organs and whole bones were harvested from animals, removed of soft tissues, and stored immediately in liquid nitrogen. We prepared osteocyte-enriched bone by removing the ends of femurs and tibias and then flushing the bone marrow with PBS. We then scraped the bone surface with a scalpel and froze them in liquid nitrogen for later RNA isolation, or decalcified them for genomic DNA isolation. We isolated total RNA using TRIzol (Life Technologies, NY), according to the manufacturer’s instructions and prepared cDNA using High Capacity first strand cDNA synthesis kit (Life Technologies). We performed quantitative RT-PCR using the following Taqman assays from Applied Biosystems: Piezo1 (Mm01241549_m1); Piezo2 (Mm01265861_m1); Ptgs2 (Mm00478374_m1); Cyr61 (Mm00487498_m1); Wnt1 (Mm01300-555_g1); Yap1 (Mm011432-63_m1); Taz (Mm01289583_m1); Tnfsf11 (Mm00441906_m1); Tnfrsf11b (Mm00435452_m1); Sost (Mm00470479_m1); and ribosomal protein S2 (Mrps2) (Mm00475529_m1). We calculated relative mRNA amounts using the ∆Ct method (Livak and Schmittgen, 2001). We isolated genomic DNA from decalcified cortical bone after digestion with proteinase K and phenol/chloroform extraction. We obtained two custom Taqman assays from Applied Biosystems for quantifying Piezo1 gene deletion efficiency: one specific for sequences between the loxP sites and the other specific for sequences downstream from the 3′ loxP site.
 
-## Immunostaining
+### Immunostaining
 
 Cultured cells were fixed in 4% freshly prepared paraformaldehyde for 15 min. Slides were washed in PBST for 5 min, pretreated with PBS containing 0.1% Triton X-100 for 20 min, and blocked in 2.5% normal goat serum for one hour. Anti-YAP1 antibody (14074S, Cell Signaling, Danvers, MA) was diluted 1:200 in PBST containing 2.5% normal goat serum and incubated with the chamber slides overnight at 4°C followed by rinsing and additional incubation for 1 hr with goat anti-rabbit IgG H and L (Alexa Fluor 488) (1:200) (ab150077, Abcam, Cambridge, MA). Non-immune goat IgG was used as a negative control. Slides were mounted with aqueous mounting medium (H-1000, VECTOR LABORATORIES, INC., Burlingame, CA). Stained slides were imaged using Axio imager M2 fluorescence microscope (Carl Zeiss, NY). Mean fluorescence intensity was quantified using ImageJ (NIH, Bethesda, Maryland).
 
-## Osteocalcin and CTX ELISA
+### Osteocalcin and CTX ELISA
 
 Circulating osteocalcin and CTX in serum was measured using a mouse Osteocalcin enzyme immunoassay kit (Thermo Fisher) and RatLaps (CTX-I) EIA kit (Immunodiagnostic Systems, Boldon, UK) respectively according to the manual provided by manufacturers. Blood was collected by retro-orbital bleeding into 1.7 mL microcentrifuge tubes. Blood was then kept at room temperature for one hour and centrifuged at 1500 x g for 10 min to separate serum from cells.
 
-## Statistical analysis
+### Statistical analysis
 
 GraphPad Prism seven software (GraphPad, San Diego) was used for statistical analysis. Two-way analysis of variance (ANOVA) or Student’s t-test were used to detect statistically significant treatment effects, after determining that the data were normally distributed and exhibited equivalent variances. All t-tests were two-sided. P-values less than 0.05 were considered as significant. Error bars in all figures represent s.d..

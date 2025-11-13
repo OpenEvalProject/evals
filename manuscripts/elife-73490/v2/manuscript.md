@@ -13,16 +13,16 @@
 
 ### Affiliations
 
-1. https://ror.org/007ps6h72 Division of Human Biology, Fred Hutchinson Cancer Research Center Seattle United States
-2. https://ror.org/007ps6h72 Division of Public Health Sciences, Fred Hutchinson Cancer Research Center Seattle United States
-3. https://ror.org/00cvxb145 Department of Medicine, University of Washington Seattle United States
-4. https://ror.org/007ps6h72 Computational Biology Program, Fred Hutchinson Cancer Research Center Seattle United States
+1. Division of Human Biology, Fred Hutchinson Cancer Research Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+2. Division of Public Health Sciences, Fred Hutchinson Cancer Research Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
+3. Department of Medicine, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+4. Computational Biology Program, Fred Hutchinson Cancer Research Center Seattle United States ([ROR:007ps6h72](https://ror.org/007ps6h72))
 
 † Corresponding author
 
 ## Abstract
 
-Control of the COVID-19 pandemic will rely on SARS-CoV-2 vaccine-elicited antibodies to protect against emerging and future variants; an understanding of the unique features of the humoral responses to infection and vaccination, including different vaccine platforms, is needed to achieve this goal. The epitopes and pathways of escape for Spike-specific antibodies in individuals with diverse infection and vaccination history were profiled using Phage-DMS. Principal component analysis was performed to identify regions of antibody binding along the Spike protein that differentiate the samples from one another. Within these epitope regions, we determined potential sites of escape by comparing antibody binding of peptides containing wild-type residues versus peptides containing a mutant residue. Individuals with mild infection had antibodies that bound to epitopes in the S2 subunit within the fusion peptide and heptad-repeat regions, whereas vaccinated individuals had antibodies that additionally bound to epitopes in the N- and C-terminal domains of the S1 subunit, a pattern that was also observed in individuals with severe disease due to infection. Epitope binding appeared to change over time after vaccination, but other covariates such as mRNA vaccine dose, mRNA vaccine type, and age did not affect antibody binding to these epitopes. Vaccination induced a relatively uniform escape profile across individuals for some epitopes, whereas there was much more variation in escape pathways in mildly infected individuals. In the case of antibodies targeting the fusion peptide region, which was a common response to both infection and vaccination, the escape profile after infection was not altered by subsequent vaccination. The finding that SARS-CoV-2 mRNA vaccination resulted in binding to additional epitopes beyond what was seen after infection suggests that protection could vary depending on the route of exposure to Spike antigen. The relatively conserved escape pathways to vaccine-induced antibodies relative to infection-induced antibodies suggests that if escape variants emerge they may be readily selected for across vaccinated individuals. Given that the majority of people will be first exposed to Spike via vaccination and not infection, this work has implications for predicting the selection of immune escape variants at a population level. This work was supported by NIH grants AI138709 (PI JMO) and AI146028 (PI FAM). JMO received support as the Endowed Chair for Graduate Education (FHCRC). The research of FAM was supported in part by a Faculty Scholar grant from the Howard Hughes Medical Institute and the Simons Foundation. Scientific Computing Infrastructure at Fred Hutch was funded by ORIP grant S10OD028685.
+Background:Control of the COVID-19 pandemic will rely on SARS-CoV-2 vaccine-elicited antibodies to protect against emerging and future variants; an understanding of the unique features of the humoral responses to infection and vaccination, including different vaccine platforms, is needed to achieve this goal.Methods:The epitopes and pathways of escape for Spike-specific antibodies in individuals with diverse infection and vaccination history were profiled using Phage-DMS. Principal component analysis was performed to identify regions of antibody binding along the Spike protein that differentiate the samples from one another. Within these epitope regions, we determined potential sites of escape by comparing antibody binding of peptides containing wild-type residues versus peptides containing a mutant residue.Results:Individuals with mild infection had antibodies that bound to epitopes in the S2 subunit within the fusion peptide and heptad-repeat regions, whereas vaccinated individuals had antibodies that additionally bound to epitopes in the N- and C-terminal domains of the S1 subunit, a pattern that was also observed in individuals with severe disease due to infection. Epitope binding appeared to change over time after vaccination, but other covariates such as mRNA vaccine dose, mRNA vaccine type, and age did not affect antibody binding to these epitopes. Vaccination induced a relatively uniform escape profile across individuals for some epitopes, whereas there was much more variation in escape pathways in mildly infected individuals. In the case of antibodies targeting the fusion peptide region, which was a common response to both infection and vaccination, the escape profile after infection was not altered by subsequent vaccination.Conclusions:The finding that SARS-CoV-2 mRNA vaccination resulted in binding to additional epitopes beyond what was seen after infection suggests that protection could vary depending on the route of exposure to Spike antigen. The relatively conserved escape pathways to vaccine-induced antibodies relative to infection-induced antibodies suggests that if escape variants emerge they may be readily selected for across vaccinated individuals. Given that the majority of people will be first exposed to Spike via vaccination and not infection, this work has implications for predicting the selection of immune escape variants at a population level.Funding:This work was supported by NIH grants AI138709 (PI JMO) and AI146028 (PI FAM). JMO received support as the Endowed Chair for Graduate Education (FHCRC). The research of FAM was supported in part by a Faculty Scholar grant from the Howard Hughes Medical Institute and the Simons Foundation. Scientific Computing Infrastructure at Fred Hutch was funded by ORIP grant S10OD028685.
 
 ## Introduction
 
@@ -36,7 +36,7 @@ To compare antibody immunity elicited by SARS-CoV-2 infection and vaccination, w
 
 ## Results
 
-## Samples from individuals with varying SARS-CoV-2 infection and mRNA vaccination histories profiled using high-resolution Spike Phage-DMS library
+### Samples from individuals with varying SARS-CoV-2 infection and mRNA vaccination histories profiled using high-resolution Spike Phage-DMS library
 
 We collected serum samples from two cohorts, termed the Moderna Trial Cohort and the Hospitalized or Ambulatory Adults with Respiratory Viral Infections (HAARVI) Cohort (Garrett et al., 2021; Jackson et al., 2020). The Moderna Trial Cohort were participants in a Phase I trial and consisted of 49 individuals, 34 who received the 100 µg dose of mRNA-1273 (Moderna) and 15 who received the 250 µg dose. Serum samples were taken at days 36 and 119 post first dose (7 and 90 days post second dose, respectively; Jackson et al., 2020). The HAARVI Cohort included 64 individuals, 44 who had confirmed SARS-CoV-2 infection and 20 who had no reported infection; among this group, 44 were also vaccinated. Those with infection history were stratified by severity based on hospitalization status (39 nonhospitalized/mild vs. 5 hospitalized/severe), and serum was sampled at timepoints ranging from 8 to 309 days post symptom onset. Of these 44 individuals, 24 were also sampled after vaccination with two doses of either mRNA-1273 (Moderna, n = 8) or BNT162b2 (Pfizer/BioNTech, n = 15), with 23 from the nonhospitalized group and one from the hospitalized group. All 20 SARS-CoV-2-naïve individuals were sampled post vaccination, with 18 having an additional sample taken pre vaccination (0–98 days). Post-vaccination timepoints for all naïve and convalescent individuals ranged from 23 to 65 days after the first dose (5–42 days after the second dose, respectively). Figure 1 provides an illustration of the two cohorts and their respective samples’ infection and vaccination statuses. Additional details are available in Supplementary file 1.
 
@@ -46,27 +46,51 @@ We collected serum samples from two cohorts, termed the Moderna Trial Cohort and
 
 We used a previously described Spike Phage-DMS library to profile the epitopes bound by serum antibodies in the samples described above (Garrett et al., 2021). This library consists of peptides displayed on the surface of T7 bacteriophage that are 31 amino acids long, tiling across the length of Spike in one amino acid increments. Peptides in the library correspond to the wild-type Wuhan Hu-1 Spike sequence as well as sequences that contain every possible single amino acid mutation at the central position of the peptide. Serum samples were screened with this library by performing immunoprecipitation (IP) followed by sequencing of the pool of phage enriched by the serum antibodies as previously described (Garrett et al., 2021; Garrett et al., 2020; Mohan et al., 2018).
 
-## Serum antibodies bind to distinct epitopes in infected and vaccinated individuals
+### Serum antibodies bind to distinct epitopes in infected and vaccinated individuals
 
 We first examined the wild-type peptides in the Spike Phage-DMS library that were enriched by each serum sample to determine the epitopes bound by antibodies in each sample from these cohorts (Figure 2A). The major targeted epitopes across all the cohorts were in the NTD, CTD, FP, and SH-H regions. Serum from nonvaccinated infected individuals who were not hospitalized mostly bound to immunodominant epitopes in the FP and SH-H, both of which are epitopes previously identified in infected individuals using Phage-DMS (Garrett et al., 2021). Samples from hospitalized/severe COVID-19 cases and vaccinated individuals also bound to the FP and SH-H regions, but additionally bound to epitopes within the NTD and CTD regions. In naïve serum samples, there were antibodies that occasionally bound to the FP and SH-H peptides. These findings likely reflect that some individuals have preexisting cross-reactive antibodies that bind to these conserved regions between SARS-CoV-2 and endemic coronaviruses, as suggested by previous studies (Shrock et al., 2020; Stoddard et al., 2021).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/73490/elife-73490-fig2-v2.jpg)
+
+**Figure 2.:** (A) Heatmap with a sample in each row and groups of samples colored on the left. Columns represent peptide locations, with each square on the heatmap indicating the summed enrichment value within a 10-peptide interval. Darker purple indicates higher enrichment values, and values above 150 were capped. Transparent boxes above the heatmap annotate the Spike protein domains, while the smaller gray boxes indicate epitope binding regions defined in this analysis (B) The loading vectors from the principal component analysis with the four epitope sites highlighted; enrichments in each of these regions are summed together for subsequent analysis. (C) Boxplots describing the distribution of summed wild-type enrichment values for each sample within each of the four epitope sites, each named according to its associated protein domain. Color indicates the sample group. The bars between boxplots give statistical significance (p-value) tests using a Mann–Whitney–Wilcoxon test. All sample group comparisons with the nonhospitalized infected group were performed, and only significant values are shown.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73490/elife-73490-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Scatterplot depicting the unit scaled sample ‘scores’ represented by the columns to visualize sample relationship in principal component space. Colors represent the group that each sample belongs to. (B) Vector plots showing the component loadings, scaled by the square root of the respective eigenvalues in the eigendecomposition. Colors represent the genomic location of each component loading score. (C) Line plots showing the first three principal axes/directions in feature space, plotted as a function of the wild-type peptide feature location on Spike.
+
 A principal component analysis (PCA) was used to further investigate differences between the infected and/or vaccinated groups (Figure 2—figure supplement 1). This analysis indicated that binding to epitopes in the NTD, CTD, FP, and SH-H regions was the driving difference between samples (Figure 2B). To quantify differences in antibody binding between groups, for each sample we summed together the enrichment values within each identified epitope region and performed pairwise comparisons between nonhospitalized infected people and all other groups (Figure 2C). Most strikingly, we found nontrivial group differences in the magnitude of humoral responses to these major epitopes on the Spike protein. Specifically, antibodies from both hospitalized infected and vaccinated individuals had significantly higher binding to the NTD, CTD, and SH-H regions compared to nonhospitalized infected individuals. However, antibodies from nonhospitalized infected individuals displayed significantly higher binding to the FP epitope than samples from hospitalized or vaccinated individuals. There was no significant difference in any epitope binding in these four regions between vaccinated samples with and without prior infection (p>0.05, Mann–Whitney–Wilcoxon [MWW]).
 
-## Effect of age, dose, vaccine type, and timepoint on epitope binding
+### Effect of age, dose, vaccine type, and timepoint on epitope binding
 
 In order to determine if there were covariates that contributed to differences in antibody binding, we examined the effect of participant age, vaccine dose and type, and timepoint post infection or vaccination on binding to the four epitopes identified above (Figure 3). For samples in the Moderna Trial Cohort, there was significantly decreased binding to the CTD epitope and SH-H epitope (p=0.008, p=0.011, Wilcoxon rank-sum test with Bonferroni correction) at the later timepoint post first dose (day 119) compared to the earlier timepoint (day 36) (Figure 3A). To examine the effect of dosage, we compared 100 µg and 250 µg mRNA-1273 groups for those between the age of 18–55, as that was the only age group included for the 250 µg dose (Figure 3B). There was no significant difference by vaccine dosage for any of the four epitope regions (NTD, CTD, FP, or SH-H). Participant age was also examined as a variable; there appeared to be a difference in epitope binding in the SH-H region, but this did not survive multiple testing correction (Figure 3C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/73490/elife-73490-fig3-v2.jpg)
+
+**Figure 3.:** Boxplots of summed wild-type enrichment within epitope binding regions for samples grouped by (A) timepoint post vaccination, (B) vaccine dose, or (C) participant age. Samples were taken either at 36 (n = 64) or 119 (n = 64) days post vaccination. (B) and (C) are additionally separated by timepoint post vaccination. Results of a Wilcoxon rank-sum test between the groups appear only where p<0.05 after Bonferroni multiple testing correction (36 group comparisons). Figures containing all p-values for both replicate batches are available at https://github.com/matsengrp/phage-dms-vacc-analysis (swh:1:rev:d4c770ad49ed2f8ab31e499265dd02273cff6f86, Matsen, 2022).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73490/elife-73490-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Boxplots of summed wild-type enrichment within epitope binding regions for samples grouped by (A) timepoint post symptom onset or (B) vaccine type (Pfizer/BioNTech BNT162b2 or Moderna mRNA-1273). Results of a Mann–Whitney test between the groups are shown. p-Values were adjusted for multiple testing using Bonferroni correction. *p<0.05, ns, not significant.
+
 In infected individuals, the effect of time post symptom onset on epitope binding was examined using nonhospitalized infected individuals in the HAARVI Cohort, who were sampled between 26 and 309 days post symptom onset (Figure 3—figure supplement 1). Samples were binned into three groups: 0–60, 60–180, and 180–360 days post symptom onset. At all times post symptom onset, there was no significant difference in binding to the four identified epitopes (p>0.05, MWW). Individuals in the HAARVI Cohort were given either the Moderna mRNA-1273 or Pfizer/BioNTech BNT162b2 mRNA vaccine, and comparison of the epitope binding response between the two vaccine types revealed no significant differences in all epitope regions (Figure 3—figure supplement 1B, p>0.05, MWW).
 
-## Infection and vaccination shape pathways of escape
+### Infection and vaccination shape pathways of escape
 
 The Spike Phage-DMS library contains peptides with every possible single amino acid substitution in addition to the wild-type sequence, enabling us to assay the impact of mutations on antibody binding. The effect of site-specific substitutions in critical antibody binding regions not only provides a high-resolution picture of the likely epitope intervals, but also identifies mutations that confer escape within the binding region. The effect of each mutation on serum antibody binding was quantified by calculating its scaled differential selection value, a metric that reports log-fold change of mutant peptide binding over wild-type peptide binding at any given site (see ‘Materials and methods’) (Garrett et al., 2020). Site mutations that cause a loss of binding when compared to the wild-type peptide centered at that same site are reported as having negative differential selection values, whereas those that bind better than the wild-type peptide have positive differential selection values. In order for differential selection to be meaningful, however, we must ensure that we do not include weak or sporadic signals that may be due to nonspecific binding. Accordingly, we set a threshold of summed wild-type peptide binding in any one region. By doing so, we lose samples in the analysis but can be confident in the results presented by samples passing this curation step (Figure 4—figure supplement 1). For samples that passed this threshold, we compared the effect of prior infection and/or time post vaccination on the pathways of escape in each epitope region as follows. Plots depicting the effect of mutations for all samples are publicly explorable at https://github.com/matsengrp/vacc-dms-view-host-repo (copy archived at swh:1:rev:6519940a17ea2489f445b897485e621d8c6b781d, Galloway, 2022a).
 
-## N-terminal domain (NTD) and C-terminal domain (CTD)
+### N-terminal domain (NTD) and C-terminal domain (CTD)
 
 We examined the sites of escape within the NTD and CTD epitope regions, focusing on vaccinated individuals from the Moderna Trial Cohort because these epitopes were notable targets of the vaccine response and not commonly found in infected individuals. Vaccination elicited antibodies with a strikingly uniform escape profile in the NTD epitope across samples (Figure 4A), with the majority of samples being sensitive to mutation at sites 291, 294–297, 300–302, and 304, which are in the very C-terminal portion of NTD as well as the region between NTD and RBD. The CTD region appeared to consist of multiple epitopes, the dominant being located at the N-terminal region between positions 545–580 (termed CTD-N). Antibodies that bound to this dominant CTD epitope had a less uniform escape profile, but sites 561 and 562 were common sites of escape in most samples (Figure 4B). For antibodies to both the NTD and CTD-N epitopes, the pathways of escape tended to drift over time and were different at 119 days post vaccination as compared to 36 days post vaccination.
 
-## Fusion peptide (FP)
+![Figure 4.](https://cdn.elifesciences.org/articles/73490/elife-73490-fig4-v2.jpg)
+
+**Figure 4.:** (A, B) Logo plots depicting the effect of mutations on epitope binding in either the NTD (A) or CTD-N (B) epitope for paired samples from the Moderna Trial Cohort. The height of the letters corresponds to the magnitude of the effect of that mutation on epitope binding, that is, its scaled differential selection value. Letters below zero indicate mutations that cause poorer antibody binding as compared to wild-type peptide, and letters above zero indicate mutations that bind better than the wild-type peptide. Letter colors denote the chemical property of the amino acids. Logo plots on the left and right are paired samples from the same individual, with the participant ID noted on the left.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73490/elife-73490-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Histogram showing the summed enrichment values within each epitope region for every sample in the Moderna Trial Cohort (left two panels) or Hospitalized or Ambulatory Adults with Respiratory Viral Infections (HAARVI) Cohort (right two panels). Blue line delineates the threshold chosen for each epitope region. Samples above the line were included in the escape profile analyses.
+
+### Fusion peptide (FP)
 
 Antibodies against the FP epitope are strongly stimulated after infection but are less strongly induced after subsequent vaccination (Figure 2). Thus, we investigated whether the pathways of escape for serum antibodies also changed after vaccination within samples from previously infected individuals in the HAARVI Cohort. The escape profiles of antibodies in paired samples that strongly bound to the FP epitope both after infection and after subsequent vaccination are shown as a logo plot (Figure 5A). The major sites of escape within the FP epitope for these samples were sites 819, 820, 822, and 823, and these sites of escape did not appear to change after vaccination, although we noted that there was more variability in the escape profiles after vaccination.
 
@@ -76,7 +100,7 @@ Antibodies against the FP epitope are strongly stimulated after infection but ar
 
 We next examined the pathways of escape for FP binding antibodies in vaccinated individuals from the Moderna Trial Cohort. In people with no prior infection, vaccination induced diverse pathways of escape in the FP region (Figure 5B). For example, for participant M10 escape was focused on sites 814, 816, and 818, whereas for participant M38 escape was focused on 819, 820, and 823. There appeared to be some differences in the escape profile at 119 days as compared to 36 days post vaccination, as exemplified by participants M15, M17, and M20. However, in general many of the major sites of escape were shared at both timepoints within each individual and as a group.
 
-## Stem helix-heptad repeat 2 (SH-H)
+### Stem helix-heptad repeat 2 (SH-H)
 
 In order to determine the effect of prior infection on the binding profiles of antibodies after vaccination within the SH-H epitope region, we explored the pathways of escape for paired samples from patients with prior infection in the HAARVI Cohort before and after vaccination as was done for the FP region. Samples from previously infected individuals with no vaccination history had diverse pathways of escape within the SH-H epitope (Figure 6A). For example, site 1149 was only sensitive to mutation for participant 217C, and site 1157 was only sensitive to mutations for participants 120C and 146C. In contrast, the samples from vaccinated individuals, regardless of infection history, tended to have a uniform pathway of escape. The most prominent and consistent sites of escape for vaccinated individuals, both with and without prior infection, were at sites 1148, 1152, 1155, and 1,156. Of note, the pre-vaccination sample from an individual with prior infection requiring hospitalization (participant 6C) displayed an escape profile highly similar to those from vaccinated individuals, and this escape profile did not change after vaccination.
 
@@ -100,41 +124,100 @@ Our finding that vaccinated individuals have a broader response across the Spike
 
 ## Materials and methods
 
-## Sample collection
+**Key resources table**
 
-## Moderna Trial Cohort
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Other</td>
+      <td>Protein A Dynabeads</td>
+      <td>Invitrogen</td>
+      <td>10001D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein G Dynabeads</td>
+      <td>Invitrogen</td>
+      <td>10003D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Q5 High-Fidelity 2X Master Mix</td>
+      <td>NEB</td>
+      <td>M0492L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>AMPure XP beads</td>
+      <td>Beckman Coulter</td>
+      <td>A63881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quant-iT PicoGreen dsDNA Assay Kit</td>
+      <td>Invitrogen</td>
+      <td>P11496</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA Library Quantification Kit</td>
+      <td>Roche</td>
+      <td>KK4824</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Sample collection
+
+#### Moderna Trial Cohort
 
 We obtained post-vaccination serum samples via the National Institute of Allergy and Infection Disease that were taken as part of a phase I clinical trial testing the safety and efficacy of the Moderna mRNA-1273 vaccine (NCT04283461) (Jackson et al., 2020). All samples were de-identified, and thus all work was approved by the Fred Hutchinson Cancer Research Center Institutional Review Board as nonhuman subjects research. Trial participants were given either 100 µg or 250 µg doses of the mRNA-1273 vaccine, and serum was sampled from all trial participants at 36 days and 119 days post vaccination. See Supplementary file 1 for detailed metadata related to each participant and serum sample.
 
-## HAARVI Cohort
+#### HAARVI Cohort
 
 We obtained plasma samples from individuals enrolled in the HAARVI study conducted in Seattle (Garrett et al., 2021). Individuals were either enrolled upon PCR-confirmed diagnosis with SARS-CoV-2 infection or as control subjects prior to receiving vaccination with either BNT162b2 (Pfizer/BioNTech) or mRNA-1273 (Moderna). See Supplementary file 1 for detailed metadata related to each participant and plasma sample. For convenience, all plasma and serum samples in this study are referred to as serum. This study was approved by the University of Washington Institutional Review Board.
 
-## Spike Phage-DMS assay
+#### Spike Phage-DMS assay
 
 The Spike Phage-DMS library used in this study contained 24,820 designed peptides that tile across the length of the Spike protein. Peptides are each 31 amino acids long and tile by one amino acid increments, and correspond to either the wild-type sequence or a sequence containing a single mutation. Serum samples were profiled using the Spike Phage-DMS library as previously described (Garrett et al., 2021). Following this method, the Spike Phage-DMS library was diluted in Phage Extraction Buffer (20 mM Tris-HCl, pH 8.0, 100 mM NaCl, 6 mM MgSO4) to a concentration of 2.964 × 109 plaque-forming units/mL, which corresponds to approximately 200,000-fold coverage of each peptide. 10 µL of serum or plasma was added to 1 mL of the diluted library and incubated in a deep 96-well plate overnight at 4°C on a rotator. 40 µL of a 1:1 mixture of Protein A and Protein G Dynabeads (Invitrogen) were added to each well and then incubated at 4°C for 4 hr on a rotator. Beads bound to the antibody-phage complex were magnetically separated and washed 3× with 400 µL wash buffer (150 mM NaCl, 50 mM Tris-HCl, 0.1% [vol/vol] NP-40, pH 7.5). Beads were resuspended in 40 µL of water and lysed at 95°C for 10 min. The diluted Spike Phage-DMS library was also lysed to capture the starting frequencies of peptides. All samples were run twice, once each with two independently generated Spike Phage-DMS libraries.
 
 DNA from lysed samples were amplified and sequenced as previously described (Garrett et al., 2021). Two rounds of PCR were performed using Q5 High-Fidelity 2X Master Mix (NEB). For the first round of PCR, 10 µL of lysed phage was used as the template in a 25 µL reaction using the primers described in Garrett et al., 2021. For the second round of PCR, 2 µL of the round 1 PCR product was then used as the template in a 50 µL reaction, with primers that add dual indexing sequences on either side of the insert. PCR products were then cleaned using AMPure XP beads (Beckman Coulter) and eluted in 50 µL water. DNA concentrations were quantified via Quant-iT PicoGreen dsDNA Assay Kit (Invitrogen). Equimolar amounts of DNA from the samples, along with 10× the amount of the input library samples, was pooled, gel purified, and the final library was quantified using the KAPA Library Quantification Kit (Roche). Pools were sequenced on an Illumina HiSeq 2500 machine using the rapid run setting with single end reads.
 
-## Sample curation and replicate structure
+#### Sample curation and replicate structure
 
 All sample IPs and downstream analysis were run in duplicate across two separate phage display library batches to ensure reproducibility, with the exception of the four acute samples from hospitalized HAARVI participants that were run in singlicate. All results were cross-checked with the set of batch replicates to ensure significance fell within one order of magnitude where applicable. For brevity, we present only figures resulting from the single complete set of batch-specific replicates; however, all figures using the second set of library batch replicates are available (see ‘Code availability’ and ‘Data availability’). Additionally, some samples were run with ‘in-line’ technical replicates within the same batch. In the case with more than one technical replicate, we selected the sample with the highest reads mapped from each set of batch replicates for our downstream analysis.
 
-## Short-read alignment and peptide counts processing
+#### Short-read alignment and peptide counts processing
 
 Samples were aliquoted and sequenced targeting 10× coverage of total sample reads to the peptide library reference. We demultiplexed samples using Illumina MiSeq Reporter software. Post sample demultiplexing, we used a Nextflow pipeline to process the peptide counts as well as alignment stats for all samples (Di Tommaso et al., 2017). The tools and parameters describing the workflow are as follows. The index creation and short-read alignment step were done using Bowtie2. During alignment, we allowed for zero mismatches in the default seed length of each read (20, very sensitive) after trimming 32 bases from the 3′ end of each 125 bp read to match the 93 bp peptides in our reference library (Langmead and Salzberg, 2012). Samtools was subsequently used to gather sequencing statistics as well as produce the final peptide counts using the stats and idxstats modules. Finally, the pipeline collected all reference peptide alignment counts and merged them into a single xarray dataset coupling sample and peptide metadata with their respective count.
 
 Each of the processing steps described here, as well as downstream analysis and plotting, was run using static and freely available Docker containers for reproducibility. We provide an automated workflow and the configuration scripts defining exact parameters. See ‘Code availability’ and ‘Data availability’ section for more information.
 
-## Epitope binding region identification
+#### Epitope binding region identification
 
-PCA via singular value decomposition was performed on each set of batch replicates using the scikit-learn package (Pedregosa et al., 2011). We first subset our dataset to only include wild-type peptide count enrichments from either infected or vaccinated individuals as input. This curation resulted in the matrix, X of size n×p with n biologically distinct replicates and p enrichment features across the spike protein. All enrichment values were calculated as a fold change in the frequency for any one sample enrichment over the library control enrichment at the same sites. Each feature was mean centered before performing the PCA such that the covariance matrix of X is equivalent to XTX/n-1 . We can then use the eigendecomposition, X=USVT, to describe the data. The principal axes in feature space are then represented by the columns of V and represent the direction of maximum variance in the data. Figure 2—figure supplement 1 shows three facets of this decomposition; Figure 2—figure supplement 1A shows the unit scaled sample ‘scores’ represented by the columns to visualize sample relationship in principal component space; Figure 2—figure supplement 1B shows the component loadings (scaled by the square root of the respective eigenvalues in S); and Figure 2—figure supplement 1C shows the first three principal axes/directions in feature space plotted as a function of the WT peptide feature location on the Spike protein. Together, these provide a visualization of key features in the data used in our downstream analysis. We chose our epitope regions as contiguous regions of nonzero value in the loadings in the first three principal axes.
+PCA via singular value decomposition was performed on each set of batch replicates using the scikit-learn package (Pedregosa et al., 2011). We first subset our dataset to only include wild-type peptide count enrichments from either infected or vaccinated individuals as input. This curation resulted in the matrix, X of size $n\timesp$ with $n$ biologically distinct replicates and $p$ enrichment features across the spike protein. All enrichment values were calculated as a fold change in the frequency for any one sample enrichment over the library control enrichment at the same sites. Each feature was mean centered before performing the PCA such that the covariance matrix of $X$ is equivalent to $X^{T}X/n-1$ . We can then use the eigendecomposition, $X=USV^{T}$, to describe the data. The principal axes in feature space are then represented by the columns of $V$ and represent the direction of maximum variance in the data. Figure 2—figure supplement 1 shows three facets of this decomposition; Figure 2—figure supplement 1A shows the unit scaled sample ‘scores’ represented by the columns to visualize sample relationship in principal component space; Figure 2—figure supplement 1B shows the component loadings (scaled by the square root of the respective eigenvalues in S); and Figure 2—figure supplement 1C shows the first three principal axes/directions in feature space plotted as a function of the WT peptide feature location on the Spike protein. Together, these provide a visualization of key features in the data used in our downstream analysis. We chose our epitope regions as contiguous regions of nonzero value in the loadings in the first three principal axes.
 
-## Identifying high-resolution pathways of escape
+#### Identifying high-resolution pathways of escape
 
 In order to ensure reliable measurements of differential selection of single AA variants compared to the ancestral sequence variant, we threw out samples whose respective sum of wild-type enrichment was below a threshold set for each of the defined binding regions (Figure 4—figure supplement 1). Once curated, we computed the log-fold change in each of the 19 possible variant substitutions at each site. This metric was then scaled by the average of the wild-type sequence enrichment coupled with both the preceding and following wild-type peptide enrichments at any given site. To evaluate escape at each site, we then sum the differential selection metric as described for each variant at a site to examine a more complete picture of the data defining escape patterns in each sample group.
 
-## Code availability
+#### Code availability
 
 We provide a fully reproducible automated workflow that ingests raw sequencing data and performs all analyses presented in the paper. The workflow defines and runs the processing steps within publicly available and static Docker software containers, including phippery and phip-flow described in the ‘Materials and methods’ section. The source code, Nextflow script, software dependencies, and instructions for rerunning the analysis can be found at https://github.com/matsengrp/phage-dms-vacc-analysis (copy archived at swh:1:rev:d4c770ad49ed2f8ab31e499265dd02273cff6f86, Matsen, 2022).
 
@@ -144,6 +227,6 @@ All raw sequencing data was submitted to the NCBI SRA under PRJNA765705. Preproc
 
 For more information regarding code and data availability, please email jgallowa@fredhutch.org. For original data from the NIH Moderna trial, please see Jackson et al., 2020; and for information on the HAARVI Cohort, please contact HYC.
 
-## Statistical analysis
+#### Statistical analysis
 
 Estimates of significance presented between group continuous distributions of wild-type enrichment were reported using a Mann–Whitney–Wilcoxon test with the exception of analysis that included only paired longitudinal samples – such as the comparison of 36 and 119 days post vaccination – in this case, we used a Wilcoxon signed-rank test. Bonferroni correction was applied where applicable, and adjusted p-values 0.05 were presented as significant. All statistical analyses were done using Python 3.6 and plotted using the statannot package found at https://github.com/webermarcolivier/statannot, Weber, 2022. The static Docker container used for all statistical analyses is publicly hosted at https://quay.io/repository/matsengrp/vacc-ms-analysis.

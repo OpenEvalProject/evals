@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.48710.001 Music producers, whether original composers or performers, vary in their ability to acquire and faithfully transmit music. This form of variation may serve as a mechanism for the emergence of new traits in musical systems. In this study, we aim to investigate whether individual differences in the social learning and transmission of music relate to intrinsic neural dynamics of auditory processing systems. We combined auditory and resting-state functional magnetic resonance imaging (fMRI) with an interactive laboratory model of cultural transmission, the signaling game, in an experiment with a large cohort of participants (N=51). We found that the degree of interhemispheric rs-FC within fronto-temporal auditory networks predicts—weeks after scanning—learning, transmission, and structural modification of an artificial tone system. Our study introduces neuroimaging in cultural transmission research and points to specific neural auditory processing mechanisms that constrain and drive variation in the cultural transmission and regularization of musical systems.
+Music producers, whether original composers or performers, vary in their ability to acquire and faithfully transmit music. This form of variation may serve as a mechanism for the emergence of new traits in musical systems. In this study, we aim to investigate whether individual differences in the social learning and transmission of music relate to intrinsic neural dynamics of auditory processing systems. We combined auditory and resting-state functional magnetic resonance imaging (fMRI) with an interactive laboratory model of cultural transmission, the signaling game, in an experiment with a large cohort of participants (N=51). We found that the degree of interhemispheric rs-FC within fronto-temporal auditory networks predicts—weeks after scanning—learning, transmission, and structural modification of an artificial tone system. Our study introduces neuroimaging in cultural transmission research and points to specific neural auditory processing mechanisms that constrain and drive variation in the cultural transmission and regularization of musical systems.
 
 ## Introduction
 
@@ -41,11 +41,11 @@ We assessed this hypothesis by combining resting-state and auditory fMRI and sig
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Fifty-two right-handed volunteers (33 females, mean age 24.5 years, range 20–34) with normal hearing participated in the study (two additional participants did not go through the entire experimental MRI session since they experienced discomfort). Fifty-one of them completed the entire experiment: one person (female) dropped out before the behavioral part, due to reasons unrelated to the study. Participants were all musically naive individuals (i.e., none of them had three or more years of formal musical training; mean 0.6 years ± 0.98). All participants gave their written consent and filled out an fMRI safety form before the experiment. The study was approved by the local ethics committee of the Central Denmark Region (nr. 1083).
 
-## Study design
+### Study design
 
 Each participant took part in two sessions occurring on two separate days (mean 20 days apart, range 13–30 days). The MRI session on day 1 consisted of 3 main scans, including: one resting state run, where the subject was instructed to keep her eyes closed and let her thoughts wander; one run of acquisition of high-resolution anatomical images (T1-weighted); and one functional localizer run, consisting of a passive auditory oddball task (Figure 1), to identify brain regions preferentially responding to automatic detection of deviant sounds (see ‘Session 1: MRI’). At the end of each MRI session, the short-term and working-memory spans of participants were measured using a forward and backward digit-span test (Orsini et al., 1987).
 
@@ -55,67 +55,207 @@ The second session consisted of a cultural transmission experiment (Figure 3), i
 
 **Figure 3.:** (a) Example of a trial from the signaling games played by participants in the second session of the study. The top and bottom rows show what senders and receivers saw on the screen, respectively. For the sender, the task was to compose an isochronous five-tone sequence to be used as a signal for the simple and compound emotions expressed by the image shown on the screen at the start of each trial. For the receiver, the task was to respond to that signal by guessing the image the sender had seen. The sender and the receiver converged over several trials on a shared mapping of signals (tone sequences) to meanings (emotions). Hand symbols indicate when the sender or the receiver had to produce a response. Feedback was provided to both players simultaneously, showing the face seen by the sender and the face selected by the receiver in a green frame (matching faces; correct) or in a red frame (mismatching faces; incorrect). Time flows from left to right. (b) Experimental transmission design in signaling games. The participant played as receiver (R) with a confederate of the experimenters playing as sender (S) in Game 1. Roles switched in Game 2.
 
-## Bohlen-Pierce scale
+### Bohlen-Pierce scale
 
 The tone sequences used in the oddball task and in the behavioral experiment were built using pure tones from the Bohlen-Pierce (BP) scale (Mathews et al., 1988). In the equal-tempered version of the BP scale, a tritave (3:1 frequency ratio) is divided into 13 logarithmically even steps, and the frequency (F) of each tone is given by the formula F = k X 3 (n/13), where n is the number of steps, and k is the fundamental frequency (see below).
 
-## Session 1: MRI
+### Session 1: MRI
 
-## Oddball stimuli and task
+#### Oddball stimuli and task
 
 We adopted the same stimuli and task as used in Lumaca and Baggio (2016) (Figure 1). Sequences consisted of five 50 ms sinusoidal tones (5 ms rise and fall) from the frequencies 440, 521, 567, 617, 730.6 Hz (low register). Each tone was followed by 50 ms of silence with an ISI (intersequence interval) of 750 ms. To avoid adaptation effects, the stimuli were randomly transposed at different registers of the BP scale (lowest frequencies: 440, 478, 567 Hz).
 
 In a single run, participants were presented with repeated Standard sequences (80% of the trials), interspersed with Contour (10%) and Interval deviant sequences, adding up to 1260 stimuli. In contour deviants, the fourth tone violated the surface structure (‘ups’ and ‘downs’) of a sequence, but not the interval size; vice versa for the interval deviants. To obtain a stronger oddball BOLD response, two deviant sequences of the same type (contour or interval) were always presented in close temporal succession (range 2400–4800 ms).
 
-## MR image acquisition
+### MR image acquisition
 
 Whole-brain data were acquired on a 3T MRI scanner (Siemens Prisma). Participants laid in supine position in the scanner, with cushions fit around their heads to reduce motion artifacts. Participants were instructed to keep their eyes closed during the rs-fMRI (resting state) scan, and they watched a subtitled silent movie during the subsequent oddball scan. During the fMRI oddball scan, the participant was asked to ignore the auditory stimulation and focus on the movie. The movie was shown on an MRI-compatible screen, located at the rear of the scanner, viewed by participants through a mirror mounted on the head coil. All stimuli were presented by MRI-compatible headphones using Presentation software (https://www.neurobs.com/).
 
 For the rs-fMRI (resting state), a total of 600 volumes were acquired over 10 min using fast T2*-weighted echo-planar imaging (EPI) multiband sequence (TR, 1000 ms; TE, 29.6 ms; voxel size, 2.5 mm3). For the functional localizer task, a total of 1535 volumes were acquired over 25 min using the same multiband EPI sequence (TR, 1000 ms; TE, 29.6 ms; voxel size, 2.5 mm3). High-resolution T1-weighted images (TR, 5000 ms; TE = 2.87 ms; voxel size, 0.9 mm3) were obtained using an MP2RAGE sequence.
 
-## Preprocessing and analysis of auditory functional localizer data
+### Preprocessing and analysis of auditory functional localizer data
 
 Pre-processing and statistical analyses of fMRI data were performed using SPM12 (r7487), implemented in Matlab R2016b (Mathworks), and included all 52 participants. During preprocessing, functional data (EPI) of each subject were realigned to the first image of the session to correct for head motion. High-resolution anatomical images of individual subjects were coregistered to the mean functional EPI and segmented using the default SPM12 settings. The resulting deformation fields were used to normalize the functional images to standard Montreal Neurological Institute (MNI) space, resampled to 2 mm3 voxels, and spatially smoothed by means of an isotropic Gaussian kernel of 6 mm full-width at half-maximum (FWHM).
 
 To remove low-frequency noise, the data were high-pass filtered (cutoff 1/128 Hz) and corrected for serial autocorrelation using an AR(1) function. At the single-subject level, we set up a general linear model (GLM) including three experimental regressors, standard (STD), deviant contour (C-deviant), and deviant interval (I-deviant), convolved with a canonical hemodynamic response function (HRF), plus the six rigid-body parameters (three rotational, three translational) to account for head motion. To obtain a balanced contrast between standards and deviants in the second-level analysis, we randomly extracted a number of standard events (onsets of the fourth tone) equal to the number of deviant events (n = 126), with the only constraint that standard patterns had to be preceded and followed by at least five other standard patterns. These standard events were implicitly modeled in the GLM design matrix. The remaining standard events (STD) (n = 882) were explicitly modeled in the GLM matrix, together with deviant contour events (C-deviant) (n = 126) and deviant interval events (I-deviant) (n = 126). At the group level, we used a whole-brain random effects analysis using t-test contrasts for C-deviant >STD and I-deviant >STD. Whole-brain significant activations were identified at p<0.001, familywise error (FWE) corrected at voxel-level.
 
-## Seed region definition
+### Seed region definition
 
 Different regions of interest (ROIs), or seeds, were constructed as 5 mm spheres centered on the peak voxels from the auditory functional localizer task. Following this procedure, four ROIs were generated, centered on the following MNI coordinates (x y z): [54 2 -4], [−52–14 4], [66 -16 4], [−66–22 6]. These seeds were used in rs-FC (resting-state functional connectivity) and psychophysiological interaction (PPI) analyses (details below), and to extract task-based activation changes from functional localizer data. To this end, mean percent signal changes were extracted from each ROI and condition (STD, C-deviant, I-deviant) using MarsBaR Toolbox (http://marsbar.sourceforge.net/; Brett et al., 2002).
 
-## Preprocessing and analysis of rs-FC data
+### Preprocessing and analysis of rs-FC data
 
 Resting-state functional connectivity (rs-FC) preprocessing and analysis were implemented by using a standard pipeline in the SPM CONN toolbox (Whitfield-Gabrieli and Nieto-Castanon, 2012). Preprocessing included: realignment, direct segmentation and normalization to the MNI space (2 mm3), outlier detection (ART-based identification of outlier scans for scrubbing; motion correction = 0.9 mm; global-signal z-value threshold = 5) (https://www.nitrc.org/projects/artifact_detect), and smoothing (FWHM = 6 mm). The realignment and scrubbing parameters and the BOLD signal from white matter and cerebrospinal fluid were regressed out in the GLM. Data were band-pass filtered at 0.008–0.09 Hz to reduce the effects of low-frequency drifts and high-frequency noise.
 
-## Neural predictors of behavioral performance
+### Neural predictors of behavioral performance
 
 Using a seed-based correlation analysis (SCA) approach, for each participant, we first tested the functional relationship between the seeds identified in the localizer task. The mean time course of all voxels within each seed was used to calculate individual ROI-to-ROI pairwise linear Pearson’s correlations, and the resulting r values were normalized to z values via Fisher’s z-transformation. Pairwise correlations were computed for all ROIs. From each participant we obtained 6 z values, each reflecting the degree of connectivity between any pair of ROIs. We computed Pearson’s correlations between Fisher’s z values and performance measures in signaling games (see below). Second, using CONN, we performed whole-brain FC analyses separately for each auditory seed. In this analysis, we explored whether the rs-FC between auditory ROIs and other (e.g., parietal and prefrontal) brain areas could predict behavioral performance. Single-subject seed-to-voxel correlation maps were calculated by extracting the residual BOLD time course from each seed, and by computing Pearson’s correlation coefficients between that time course and the time course of all other voxels in the brain. Correlation coefficients were normalized to z values via Fisher’s z-transformation. At group-level, we implemented a linear regression analysis for each seed, by defining the simple main effect of performance as between-subject contrast. Statistical thresholds were set to p<0.001 (uncorrected) at single voxel level, and the resulting cluster(s) were thresholded to a cluster-mass FWE p<0.05 using non-parametric permutation testing two-tailed (n = 1000).
 
 To examine whether task-dependent functional connectivity was related to signaling game performance, we also conducted a PPI analysis (Friston et al., 1997). We tested whether oddball-evoked changes in the functional connectivity of the same auditory network could predict behavioral performance and structural modification in signaling games. Volumes of interest (VOIs) were created as 5 mm spheres centered on single-subject global maxima for the contrast of interest (C-deviant >STD: p<0.05 uncorrected; minimum voxel extent 3). This subject-specific global maximum was identified within a sphere of 10 mm radius centered on the peak of the group effect (C-deviant >STD). In participants where no active cluster could be found, the statistical threshold was lowered to p<0.5 uncorrected. The BOLD signal was summarized in each participant using the first eigenvariate (principal component) of suprathreshold voxels within the VOIs. The PPI design matrix contained the following three variables: (1) a ‘psychological’ variable that represents the contrast of interest (C-deviant >STD), (2) a ‘physiological’ variable that represents the time-course of the seed region, and (3) an interaction term between the psychological and physiological variables. Individual β images of the interaction term were entered into a whole-brain second-level regression analysis (Ofen et al., 2012) with each behavioral variable as a covariate of interest—that is one behavioral variable at a time. We constrained the whole-brain regression analysis to a ‘target’ region—a spherical binary mask of 5 mm radius centered on the peak of the group effect. In line with previously described resting-state analyses, we performed a regression analysis for each possible seed-to-target combination.
 
-## Session 2: Signaling games
+### Session 2: Signaling games
 
-## Signaling games
+#### Signaling games
 
 In the version adopted here, signaling games are cooperative games of incomplete information (Lewis, 1969), where a sender and a receiver exchange signals without a prior agreement on pairings of signals to meanings: players should then agree, over multiple signaling rounds, on a ‘common code’ (i.e. a shared set of signals-meaning mappings). A typical interaction may consist in the sender privately witnessing a state of affairs, which must be communicated to the receiver using a signal. Upon receiving the signal, the receiver must take appropriate action to match the initial state of affairs. Feedback may follow, providing players with information about whether they associated the signal with corresponding states and actions.
 
-## Procedure and stimuli
+#### Procedure and stimuli
 
 shows an example of a single signaling round or trial. A facial expression (state) is privately displayed on the screen to the sender, who is in turn instructed to produce a five-tone pattern (signal) matching the observed event. The signal is produced using digits (1-5) of the computer keyboard and is sent to the receiver. The receiver listens to the signal through headphones and is asked to select one of the five facial expressions (i.e., the one he believes the sender has seen) by using the keyboard’s numeric keypad. A feedback (3 s) is then provided to both participants, showing on their screen the state as seen by the sender and the one chosen by the receiver. There was no reward for speed, either in a trial or in the game. Successful coordination was the only reward for participants. In this study, player roles were fixed throughout a game, which consisted of several trials (see below). Moreno and Baggio (2015) demonstrate that, with fixed roles, it is (mostly) the receiver who modifies her code to adapt to the sender. Asymmetry in the information flow from senders to receivers is a core property of cultural transmission. The signals were five isochronous melodic patterns of 5 sinusoidal tones, with each tone drawn from the BP scale (k = 440 Hz; n = 0, 4, 6, 7, 10); the states were five emotions, simple (peace, joy, sadness) and compound (peace X joy; peace X sadness), shown as facial expressions of one actor (for more details, see Lumaca and Baggio, 2016; Lumaca and Baggio, 2017).
 
-## Transmission design
+#### Transmission design
 
 Each participant played sequentially two signaling games with a confederate of the experimenters, changing his/her role from the first game (receiver) to the next (sender) (Figure 3b). Players converged on (i.e. learned or transmitted) a melodic signaling system, that is a set of melodic patterns with mappings to emotions. At the start of Game 1, one of two sets of stimuli (starting material) was delivered by the confederate player. The confederate was instructed to press, on the computer keyboard, a numeric digit showed on the screen (1 to 5). Each key was mapped to one of the five melodic patterns of the seeding material: in Game 1, he played with no sound feedback (volume set at 0), to prevent him from learning the starting material and be biased in Game 2. The confederate was instructed to use consistently that mapping throughout Game 1, regardless of what the participant (receiver) would do. In each set, signals had different melodic contour complexity: two high-entropy (Shannon Entropy, H = 1 bit), two low-entropy (H = 0.81 bits), and a monotone stimulus (control; H = 0 bits) (details below). The participant was instructed to learn the signaling system in Game 1 and to re-transmit it as faithfully as possible to the receiver in Game 2 (see Procedure and stimuli). The starting material was counterbalanced across participants. Each participant played 70 trials in Game 1 and 30 trials in Game 2.
 
-## Data analysis
+#### Data analysis
 
 The aim of this study is to investigate whether individual differences in the intrinsic connectivity between regions of auditory networks, identified by means of an auditory-cortex functional localizer for melodic processing, can predict various aspects of the evolution of an auditory signaling system: coordination, learning, transmission, code innovation, and structural modification (Figure 2) (see below for details). A Pearson’s correlation analysis was conducted between the ROI-to-ROI z values obtained by rs-FC (i.e., from each of the six possible ROI-to-ROI combinations), the digit span scores, and information theoretic measures of cultural behavior (i.e., edit distance and entropy), as observed in signaling games. All p-values were Bonferroni corrected at α = 0.05/7 = 0.007 (7 is the number of independent tests involving each behavioral variable) (Table 1).
 
-## Signaling measures
+**Table 1.**
+ Pearson product-moment correlations (r) between neural predictors (Fisher’s z-transformed ROI-to-ROI rs-FC values), neuropsychological predictors (digit span), and behavioral measures related to learning (coordination, transmission, innovation, accuracy) and structural regularization (proximity, melodic regularization).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>lHG- rHG</th>
+      <th>lHG- lSTG</th>
+      <th>lHG- rSTG</th>
+      <th>rHG- lSTG</th>
+      <th>rHG- rSTG</th>
+      <th>lSTG- rSTG</th>
+      <th>Digit Span</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Learning</td>
+      <td colspan="7"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td rowspan="2">Coordination</td>
+      <td>Tone</td>
+      <td>0.05</td>
+      <td>0.26</td>
+      <td>0.10</td>
+      <td>0.17</td>
+      <td>0.12</td>
+      <td>0.41</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>Contour</td>
+      <td>0.15</td>
+      <td>0.33</td>
+      <td>0.13</td>
+      <td>0.10</td>
+      <td>0.02</td>
+      <td>0.35</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Transmission</td>
+      <td>Tone</td>
+      <td>-0.09</td>
+      <td>0.23</td>
+      <td>0.01</td>
+      <td>0.13</td>
+      <td>0.14</td>
+      <td>0.41</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Contour</td>
+      <td>-0.08</td>
+      <td>-0.04</td>
+      <td>-0.05</td>
+      <td>-0.10</td>
+      <td>-0.04</td>
+      <td>0.009</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Innovation</td>
+      <td>Tone</td>
+      <td>-0.01</td>
+      <td>-0.41</td>
+      <td>-0.10</td>
+      <td>-0.20</td>
+      <td>-0.12</td>
+      <td>-0.40</td>
+      <td>0.05</td>
+    </tr>
+    <tr>
+      <td>Contour</td>
+      <td>-0.03</td>
+      <td>-0.10</td>
+      <td>-0.05</td>
+      <td>0.01</td>
+      <td>0.004</td>
+      <td>-0.04</td>
+      <td>0.08</td>
+    </tr>
+    <tr>
+      <td>Accuracy</td>
+      <td></td>
+      <td>-0.08</td>
+      <td>0.21</td>
+      <td>0.04</td>
+      <td>0.12</td>
+      <td>-0.01</td>
+      <td>0.36</td>
+      <td>0.17</td>
+    </tr>
+    <tr>
+      <td>Structural regularization</td>
+      <td colspan="7"></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Proximity</td>
+      <td></td>
+      <td>0.33</td>
+      <td>0.07</td>
+      <td>0.01</td>
+      <td>0.21</td>
+      <td>0.04</td>
+      <td>-0.05</td>
+      <td>-0.17</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Melodic Regularization</td>
+      <td>Tone</td>
+      <td>0.20</td>
+      <td>-0.07</td>
+      <td>-0.05</td>
+      <td>0.03</td>
+      <td>-0.09</td>
+      <td>-0.12</td>
+      <td>-0.14</td>
+    </tr>
+    <tr>
+      <td>Contour</td>
+      <td>0.43</td>
+      <td>0.08</td>
+      <td>0.21</td>
+      <td>0.29</td>
+      <td>0.12</td>
+      <td>0.02</td>
+      <td>-0.16</td>
+    </tr>
+  </tbody>
+</table>
+
+_Notes: Correlation coefficients marked in bold are significant under Bonferroni correction (α=0.05/7 = 0.007; seven is the number of independent tests on each behavioral variable). r = right hemisphere; l = left hemisphere. STG = superior temporal gyrus; HG = Heschl’s gyrus; Tone = measure computed using tone distance; Contour = measure computed using contour distance._
+
+#### Signaling measures
 
 We used Hamming distances (Hamming, 1986) as a measure of degrees of cross-player coordination, code transmission, and innovation in signaling games. Hamming distance is the number of pointwise substitutions (S) necessary to make two strings of equal length (L) identical, and the normalized value [0 to 1] is given by S/L. Values close to one are associated to different strings. The strings compared were pairs of patterns of five tones (tone distance) or of four interval directions (i.e. ups and downs) between adjacent tones (contour distance). Coordination (as a learning index) was measured as tone and contour similarity (i.e. inverse Hamming distance) between the signals used by the confederate (sender) and the signals most frequently paired with corresponding emotions during the second half of Game 1 by the participant (receiver). A value close to one indicates that the melodic material was effectively learned by the participant during Game 1. Transmission was calculated as the similarity between the signals used by senders of adjacent generations (between-player measure). A value close to one indicates an accurate recall of the initial melodic material by the participant during Game 2. Innovation was measured as the distance between signals learned by the participant in one game as receivers and transmitted in the next game as senders (within-player measure). Furthermore, an asymmetry index A=(S-R)/(S+R), measuring the direction of information flow, was computed. In the equation, asymmetry (A) is the difference between the code changes made by the sender (S) and those made by the receiver (R), divided the total number of changes. Finally, we used the number of correct trials in game one as a measure of individual performance accuracy.
 
-## Entropy
+#### Entropy
 
 The complexity of melodic signals (and of their contour) was measured using Shannon Entropy (Shannon, 1948):
 
@@ -123,19 +263,19 @@ H(X) = -Σ P(xi) log2p(xi)
 
 where X is the pattern of five tones (sequence complexity) or the four interval directions (contour complexity), and p(xi) the probability of the ith outcome. A mean entropy value was calculated separately for the tone sequences and their contour transforms, for Game 1 and Game 2. The difference in this value between Games 1–2 was used as a measure of regularization. A positive value indicates regularization made by the participant on the initial melodic material (or its contour transforms) during recall in Game 2.
 
-## Pitch proximity
+#### Pitch proximity
 
 A key property of melodic structure is pitch proximity. It represents the tendency of small pitch intervals to outnumber large ones in music (Savage et al., 2015). The interval compression ratio (ICR) was used here as a measure of melodic proximity (Tierney et al., 2011), and it is computed as follows: first, all the tones of a sequence are randomly shuffled, and a mean absolute interval is computed for the resulting sequence; this procedure is repeated 100 times; a mean of these averages is computed and is used as the numerator of the ICR equation. The denominator is the mean absolute interval of the original sequence. Large values indicate a bias towards small intervals. The difference in this value between Games 1–2 was used as a measure of regularization toward smaller melodic intervals.
 
 ## Results
 
-## Signaling games
+### Signaling games
 
 Our results indicate a net flow of information from senders to receivers across games, with more efficient transmission of contour than interval information. Asymmetry in Game 1 was −1 by design: following the experimenter’s instructions, the confederates never adjusted their code to the one used by the participants (receivers). Asymmetry in Game two was negative and significantly different from zero (one sample Wilcoxon signed rank test: median −0.4, n = 51, Z = −6.05, p<0.001): there was a tendency for participants (now senders) to maintain their code and for receivers to adjust more frequently their mappings during coordination than senders did. Coordination in Game one was positive and significantly different from 0 using both tone distance (median 0.76) and contour distance (one sample Wilcoxon signed rank test: median 0.84, n = 51, Z = 6.21, p<0.001). Transmission was positive and different from 0, with better accuracy observed using contour distance (one sample Wilcoxon signed rank test: median 0.65, n = 51, Z = 6.22, p<0.001) than tone distance (one sample Wilcoxon signed rank test: median 0.36, n = 51, Z = 6.21, p<0.001). The initial material was successfully learned and then transmitted by all participants. Innovation was positive and different from 0, and it was higher for tone distance (one sample Wilcoxon signed rank test: median 0.64, n = 51, Z = 6.22, p<0.001) than for contour distance (one sample Wilcoxon signed rank test: median 0.64, n = 51, Z = 6.16, p<0.001).
 
 Melodic material was reorganized from Game 1 to 2. In Game 2, melodic signals were made less entropic, especially in their melodic contour (Wilcoxon signed rank test: code regularization, median mean change 0.08, n = 51, Z = 1.60, p=0.1; contour regularization, mean change 0.07, n = 51, Z = 4.42, p<0.001) and were biased toward smaller intervals (mean ICR change 0.15, n = 51, Z = −3.92, p<0.001).
 
-## Auditory-cortex functional localizer
+### Auditory-cortex functional localizer
 
 Whole-brain analysis conducted for the contrast between deviant contour and standard stimuli (DC >SS) revealed sharp activations (pFWE <0.001) in regions of the left and right superior temporal gyrus (Table 2). Specifically, the analysis revealed four distinct clusters of activation in the bilateral STG: two anterior clusters, localized in Heschl’s gyrus (HG; cytoarchitectonic areas Te1 and Te1.2, in the left and right hemisphere, respectively), and two more posterior, localized in the planum temporale (PT; cytoarchitectonic area Te3) (Morosan et al., 2005) (Figure 4). Conversely, no significant activations were detected for the contrast between interval deviant and standard stimuli (I-deviant >SS). Accordingly, only peak activations DC >STD were used to define the ROIs for the correlation analysis between rs-FC and behavioral data.
 
@@ -143,13 +283,69 @@ Whole-brain analysis conducted for the contrast between deviant contour and stan
 
 **Figure 4.:** (a) Lateral and (b) axial and coronal views of active voxels in temporal cortex overlaid onto an MNI standard brain for the contrast between contour deviant and standard stimuli (DC > SS). Significant activations were observed in the bilateral posterior superior temporal cortex, specifically in Heschl’s gyrus (HG) and the planum temporale (PT) bilaterally (see Table 2) (N = 52 participants). Contrasts were family-wise error (FWE) corrected for multiple comparisons at α = 0.001. Colormap intensities indicate indicate t-values. (c) Bar plots show percent changes in BOLD signal in HG and PT of the right hemisphere (upper panel) and left hemisphere (lower panel) in the comparison between contour deviants (DC) and standard sequences (SS). Error bars indicate the standard error of the mean.
 
-## ROI-to-ROI resting state FC results
+**Table 2.**
+ Brain regions activated in the C-deviant >STD contrast (Height threshold: T = 6.76, pFWE <0.001; Extent threshold: k = 0 voxels).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>T statistic</th>
+      <th>MNI peak activation coordinates</th>
+      <th>Number of active voxels in the cluster</th>
+      <th>Anatomical region</th>
+      <th>Probabilistic atlas1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>8.83</td>
+      <td>[54 2 -4]</td>
+      <td>54</td>
+      <td>rSTG</td>
+      <td>Area TE (1.2) 28% OP4 (PV) 17%</td>
+    </tr>
+    <tr>
+      <td>8.54</td>
+      <td>[66 -16 4]</td>
+      <td>60</td>
+      <td>rSTG</td>
+      <td>Area TE (3) 57%</td>
+    </tr>
+    <tr>
+      <td>7.93</td>
+      <td>[−52–14 4]</td>
+      <td>26</td>
+      <td>lSTG</td>
+      <td>Area TE (1) 46% Area TE (1.2) 13%</td>
+    </tr>
+    <tr>
+      <td>7.88</td>
+      <td>[−66–22 6]</td>
+      <td>32</td>
+      <td>lSTG</td>
+      <td>Area TE (3) 73%</td>
+    </tr>
+  </tbody>
+</table>
+
+_Notes: Negative coordinates denote left-hemispheric regions. C-deviant = contour deviant; STD = standard; r = right hemisphere; l = left hemisphere. STG = superior temporal gyrus. FWE = familywise error corrected. 1Anatomical classification using the SPM anatomy toolbox (Eickhoff et al., 2005)._
+
+### ROI-to-ROI resting state FC results
 
 Figure 5 shows the correlations between rs-FC and behavioral measures (coordination, transmission, innovation, accuracy). Individuals with stronger inter-hemispheric rs-FC between ROIs of lateral STG displayed better learning performance and less innovation. Fisher’s z values were positively correlated with coordination (r = 0.41; p=0.002), accuracy (r = 0.36; p=0.007), and transmission (r = 0.41; p=0.002) and negatively correlated with innovation (r = -0.41; p=0.003). A negative correlation was also observed between innovation and rs-FC between left STG and left HG (r = −0.41; p=0.002).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/48710/elife-48710-fig5-v1.jpg)
+
+**Figure 5.:** (a) Tilted axial view of regions activated by the auditory functional localizer task in the posterior STG (red spheres) and anterior STG (blue spheres). (b) Pearson’s product-moment correlations between rs-FC (among regions activated in the functional localizer) and measures of behavior in signaling games: coordination (r = 0.41; p=0.002), accuracy (r = 0.36; p=0.007), transmission (r = 0.41; p=0.002), innovation (r = −0.41; p=0.003), proximity (r = 0.35; p=0.01), and regularization of melodic contour (r = 0.43; p=0.001). All p-values were Bonferroni corrected at α = 0.05/7 = 0.007. Fisher’s z-transformed correlation coefficients were obtained between pairs of 5 mm ROIs from session one and measures of behavior (accuracy, coordination, transmission, innovation) or structural features of tone sequences (proximity, regularization of melodic contours) from the signaling games on session 2. Behavioral measures were defined as the extent to which the code learned by a participant in Game 1 (accuracy and coordination) was faithfully recalled and transmitted in Game 2 (transmission) and reorganized between Games 1–2 (innovation). Each point on a scatterplot is one participant (N = 51).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48710/elife-48710-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Pearson’s correlation coefficients (Bonferroni-corrected for multiple comparisons at α = 0.05/10 = 0.005; 10 is the number of tests involving each variable). Abbreviations and variables are listed underneath the matrix.* p<0.005 CT: coordination tone; CC: coordination contour; IT: innovation tone; IC: innovation contour; TT: Transmission tone; TC: transmission contour; P: proximity; RT: regularization tone; RC: regularization contour; A: accuracy.
+
 A similar pattern was found for correlations between rs-FC and melodic structure, this time between left and right HG ROIs. We observed that Fisher’s z values were positively correlated with regularization behaviors. Individuals with stronger connectivity tend to regularize the signals’ melodic contour more (i.e. they tend to reduce contour entropy) (r = 0.43; p=0.001) and to introduce smaller intervals in signals compared to players with weaker rs-FC (this result did not survive Bonferroni correction; p=0.01) (see also Figure 5—figure supplement 1 for a correlation across all behavioral measures).
 
-## Whole-brain regression analyses on resting state FC
+### Whole-brain regression analyses on resting state FC
 
 Prediction of behavioral performance by interhemispheric FC extended from auditory to dorsolateral prefrontal regions. Figure 6 shows that FC between left HG ROI and a cluster including right middle and superior frontal gyri was negatively correlated with melodic regularization (r = −0.58; p<0.001). Individuals who reproduced smoother melodic material in Game 2 tended to have a stronger negative correlation between spontaneous activity in the left primary auditory cortex and right prefrontal regions.
 
@@ -157,15 +353,15 @@ Prediction of behavioral performance by interhemispheric FC extended from audito
 
 **Figure 6.:** (a) Axial view of the left anterior STG (blue sphere) (top) and the voxel-wise FC correlation map (Fisher Z-transformed) (bottom). One cluster was identified by non-parametric permutation tests as showing a significant negative correlation between temporo-frontal connectivity values and melodic regularization (p<0.05, cluster-mass FWE corrected). (b) Pearson’s product moment correlation (r) between melodic regularization and mean FC connectivity between seed and all significant voxels in the frontal cluster (r = −0.58; p<0.001). Each point on a scatterplot is one participant (N = 51).
 
-## Digit span
+### Digit span
 
 As shown in Table 1, digit span scores were not predictive of learning behavior and structural regularization in signaling games (Table 1).
 
-## Localizer task-based activity
+### Localizer task-based activity
 
 Percent signal change values obtained for each ROI in the same contrast (DC >SS) did not predict behavior or structural changes in signaling games (all p-values>0.05 uncorrected).
 
-## Task-dependent functional connectivity (PPI)
+### Task-dependent functional connectivity (PPI)
 
 We measured changes in the functional coupling between seed and target regions during deviant events (C-deviants). Changes in task-dependent functional connectivity did not predict behavior or structural changes in signaling games (no suprathreshold voxel were found; all p-values>0.05 uncorrected).
 

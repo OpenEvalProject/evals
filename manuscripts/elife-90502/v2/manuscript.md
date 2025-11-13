@@ -23,14 +23,14 @@
 
 ### Affiliations
 
-1. https://ror.org/03c4atk17 Institute for Research in Biomedicine, Faculty of Biomedical Sciences, USI Lugano Switzerland
-2. https://ror.org/05a28rw58 Department of Information Technology and Electrical Engineering, ETH Zurich Zürich Switzerland
-3. https://ror.org/03c4atk17 Euler Institute, USI Lugano Switzerland
-4. https://ror.org/02k7v4d05 Institute of Cell Biology, University of Bern Bern Switzerland
-5. https://ror.org/02gfys938 University of Manitoba Winnipeg Canada
-6. https://ror.org/043nxc105 Instituto de Biotecnología y Biomedicina (BioTecMed), Universitat de València Valencia Spain
-7. https://ror.org/02qs1a797 Centro Nacional de Investigaciones Cardiovasculares Madrid Spain
-8. https://ror.org/013355g38 Dalle Molle Institute for Artificial Intelligence, IDSIA Lugano Switzerland
+1. Institute for Research in Biomedicine, Faculty of Biomedical Sciences, USI Lugano Switzerland ([ROR:03c4atk17](https://ror.org/03c4atk17))
+2. Department of Information Technology and Electrical Engineering, ETH Zurich Zürich Switzerland ([ROR:05a28rw58](https://ror.org/05a28rw58))
+3. Euler Institute, USI Lugano Switzerland ([ROR:03c4atk17](https://ror.org/03c4atk17))
+4. Institute of Cell Biology, University of Bern Bern Switzerland ([ROR:02k7v4d05](https://ror.org/02k7v4d05))
+5. University of Manitoba Winnipeg Canada ([ROR:02gfys938](https://ror.org/02gfys938))
+6. Instituto de Biotecnología y Biomedicina (BioTecMed), Universitat de València Valencia Spain ([ROR:043nxc105](https://ror.org/043nxc105))
+7. Centro Nacional de Investigaciones Cardiovasculares Madrid Spain ([ROR:02qs1a797](https://ror.org/02qs1a797))
+8. Dalle Molle Institute for Artificial Intelligence, IDSIA Lugano Switzerland ([ROR:013355g38](https://ror.org/013355g38))
 
 † Corresponding author
 
@@ -50,15 +50,23 @@ Computational methods could address this need by automatically detecting individ
 
 ## Results
 
-## An in vitro and in vivo live-cell imaging data
+### An in vitro and in vivo live-cell imaging data
 
 Curated and high-quality datasets containing numerous instances of training samples are critical for developing data-hungry methods such as supervised DL algorithms (Adadi, 2021). To this end, we generated two distinct datasets encompassing epithelial cells (in vitro) and leukocytes (in vivo) undergoing apoptotic cell death. In addition, the two datasets include different imaging modalities (confocal and intravital two-photon), biological models, and training-set dimensionalities. A meaningful difference between the datasets pertains to the staining methods and the morphological hallmarks, which define the apoptotic process in both models. In the in vitro model, the expression of nuclear markers allowed us to observe apoptotic features such as chromatin condensation and nuclear shrinkage (Saraste and Pulkki, 2000), whereas in the in vivo model, cytoplasmic and membrane staining highlighted morphological changes such as membrane blebbing and the formation of apoptotic bodies (Saraste and Pulkki, 2000). Accordingly, we have manually annotated these datasets based on the presence of the specific hallmarks, ensuring that each dataset includes two class labels depicting either apoptotic or nonapoptotic cells. These two datasets constitute the first step toward creating, testing, and validating our proposed apoptosis detection routine.
 
 To generate the in vitro dataset, we used epithelial cells because, among the human tissues, they have the highest cellular turnover driven by apoptosis (van der Flier and Clevers, 2009). Nevertheless, from the bioimaging perspective, the epithelium is a densely packed tissue with almost no extracellular matrix, making it extremely challenging to analyze. As such, in epithelial research, there is a pressing need for computational tools to identify apoptotic events automatically. To this end, we imaged and annotated the human mammary epithelial cells expressing a nuclear fluorescent marker (Figure 1A), obtaining 13,120 apoptotic nuclei and 301,630 nonapoptotic nuclei image sequences (Figure 1B and C, Figure 1—figure supplement 1A). Nuclear shrinkage and chromatin condensation, two of the most prototypical hallmarks of apoptosis (Figure 1C), formed our criteria for manual annotation. We confirmed that nonapoptotic nuclei had constant area and chromatin density from the generated timelapses. In contrast, apoptotic nuclei underwent a decrease in area and an increase in chromatin condensation (Figure 1D). The resulting dataset captured the heterogeneity of apoptotic cells in epithelial tissue, including early nuclear fragmentation, a rapid shift along the x and y axes, and extrusion through the z dimension (Figure 1—figure supplement 1B and C). Moreover, our dataset incorporates the typical difficulties of automatically annotating apoptotic events from live microscopy of a densely packed tissue (Figure 1—figure supplement 1D) with the accumulation of apoptotic bodies (Figure 1—figure supplement 1E) and across multiple microscope hardware settings (Figure 1—figure supplement 1F).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/90502/elife-90502-fig1-v2.jpg)
+
+**Figure 1.:** (A) Micrographs depicting mammary epithelial MCF10A cells transduced with H2B-miRFP703 marker and grown to form a confluent monolayer. The monolayer was acquired with a fluorescence microscope for several hours with 1, 2, or 5 min time resolution. (B) The centroid (x, y) and the time (t) of apoptotic events were annotated manually based on morphological features associated with apoptosis. Nonapoptotic cells were identified by automatic segmentation of nuclei. (C) Image timelapses showing a prototypical apoptotic event (upper panels), with nuclear shrinkage and chromatin condensation, and a nonapoptotic event (bottom panels). (D) Charts showing the quantification of nuclear size (left) and the standard deviation (SD) of the nuclear pixel intensity (right) of apoptotic and nonapoptotic cells (n = 50). Central darker lines represent the mean, and gray shades bordered by light-colored lines represent the standard deviation. Nuclear area over time expressed as the ratio between areas at Tn and T0. (E) Simplified drawing showing the surgical setup for lymph node and spleen. (F, G) Organs are subsequently imaged with intravital two-photon microscopy (IV-2PM, F), generating 3D timelapses (G). (H) Representative IV-2PM micrograph and (I) selected crops showing GFP-expressing neutrophils (white) undergoing apoptosis. The apoptosis sequence is depicted by raw intensity signal (upper panels) and 3D surface reconstruction (bottom panels).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90502/elife-90502-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Table reporting the number of entries of the dataset in vitro. (B) Timelapses showing the heterogeneity of the morphological appearance of apoptotic events. (C) Pie chart representing the frequency of the classes of morphological appearance in the entire dataset. (D) The density of the epithelium is quantified by comparing the diameter of the nuclei versus the distance to the nearest neighbor (NN), and to the six nearest neighbors (6-NN). Violin plot showing the mean of all cells of the first frame from (n = 219 field of views [FOVs]). (E) Data from a single FOV shows the accumulation of apoptotic debris over time, making the identification of newer apoptotic events difficult. In this experiment, MCF10A cells were treated with 1.25 µM doxorubicin for 40 hr. The image crops show the original nuclear channel and the binary images with identification of debris with a machine learning approach (Ilastik) and thresholding. The chart represents the area occupied by debris over time. (F) Two imaging modalities were used (40×, 20×), representative nuclear masks are shown in the left images. Violin plots show the mean number of nuclei in the first frame per FOV (40×: n = 39, 20×: n = 180). (G) Table reporting the number of entries of the dataset in vivo. (H–J) Quantification of cell numbers, shortest distance, and signal-to-noise ratio (SNR) in the generated intravital two-photon microscopy (IV-2PM) movies (n = 30). (K, L) Histograms representing the duration of the apoptotic events expressed in frames (K) and minutes (L). (M) Quantification of the track length (left) and cell speed (right) of apoptotic cells before disruption compared to arrested and migrating cells. Statistical comparison was performed with nonparametric Kruskal–Wallis test. Columns and error bars represent the mean and standard deviation, respectively. Significance is expressed as: *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001.
+
 To generate an in vivo dataset, we focused on polymorphonucleated leukocytes (neutrophils and eosinophils) that expressed a fluorescent marker. In these early immune responders, apoptosis is a crucial process that orchestrates their disposal, consequently determining the duration of the inflammation (Fox et al., 2010). To acquire instances of apoptotic leukocytes, we performed MP-IVM in anesthetized mice by surgically exposing either the spleen or the popliteal lymph node (Figure 1E and F). The resulting timelapses (Figure 1G) provided 3D imaging data encompassing consecutive multifocal planes (3D) and multiple imaging channels. Then, from the generated MP-IVM movies, we generated cropped sequences of fixed size that tracked apoptotic cells for the duration of their morphological changes (59 × 59 pixels + time; Figure 1H and I). This procedure was applied to 30 MP-IVM movies, generating 120 apoptotic sequences (Figure 1—figure supplement 1G). Furthermore, we annotated random instances of nonapoptotic events, generating 535 cropped samples. To characterize the heterogeneity of the movies, we manually quantified the cell number per field of view (87 ± 76), the shortest distance between cells (21.2 μM ± 15.4), and the signal-to-noise ratio (SNR) (8.9 ± 3.6; Figure 1—figure supplement 1H–J). We assumed that the morphological changes associated with apoptosis occur within defined time windows for detection purposes. Hence, we estimated the median duration of the morphological changes corresponding to eight frames (Figure 1—figure supplement 1K and L, respectively). In addition, to classify apoptotic cells within defined spatial regions, we considered them to be nonmotile. This assumption was confirmed when we found that apoptotic cells, despite having a longer track length due to passive transport, exhibited a speed that was not significantly different from those of arrested cells (Figure 1—figure supplement 1M).
 
-## ADeS: A pipeline for apoptosis detection
+### ADeS: A pipeline for apoptosis detection
 
 Detecting apoptosis in live-cell imaging is a two-step process involving the correct detection of apoptotic cells in the movies (x,y) and the correct estimation of the apoptotic duration (t). To fulfill these requirements, we designed ADeS as a set of independent modules assigned to distinct computational tasks (Figure 2). As an input, ADeS receives a 2D representation of the microscopy acquisitions (Figure 2A) obtained from the normalization of 2D raw data or the maximum projection of 3D data (Shi, 2015). This processing step ensures the standardization of the input, which might differ in bit depth or acquisition volume. After that, we employ a selective search algorithm (Girshick, 2015; Uijlings et al., 2013) to compute regions of interest (ROIs) that might contain apoptotic cells (Figure 2B). For each ROI at time (t), ADeS extracts a temporal sequence of n frames ranging from t – n/2 to t + n/2 (Figure 2C). The resulting ROI sequence is standardized in length and passed to a DL classifier (Figure 3), which determines whether it is apoptotic or nonapoptotic. Finally, each apoptotic sequence is depicted as a set of bounding boxes and associated probabilities (Figure 2D) generated from the predicted trajectories (x, y, t, ID; Figure 2E). From this readout, ADeS can generate a heatmap representing the likelihood of apoptotic events throughout a movie (Figure 2F, left), together with a cumulative sum of the predicted cell deaths (Figure 2F, right).
 
@@ -72,19 +80,86 @@ Detecting apoptosis in live-cell imaging is a two-step process involving the cor
 
 For the classification of apoptotic sequences, we proposed a Conv-Transformer architecture (Figure 3). In the proposed architecture, a convolutional module extracts the spatial features of the apoptotic cells, whereas attention-based blocks evaluate the temporal relationship between consecutive frames.
 
-## Training and deployment in vitro
+### Training and deployment in vitro
 
 As previously described, ADeS is a multiple-block pipeline, and its application and validation to detect apoptotic cells in live-cell imaging follow two main steps: (1) the training of the DL classifier with a target dataset and (2) its deployment on live-cell imaging acquisitions. As opposed to in vivo acquisitions, in vitro timelapses are more homogeneous in their content and quality, thus representing the first dataset in order of complexity for the training of ADeS (Figure 4). For this reason, we formulated the learning problem as a binary classification task that assigned nonapoptotic sequences to the class label 0 and apoptotic sequences to the class label 1 (Figure 4—figure supplement 1A). The class label 0 included instances of healthy nuclei and nuclei undergoing mitotic division (which can resemble apoptotic events).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/90502/elife-90502-fig4-v2.jpg)
+
+**Figure 4.:** (A) Confusion matrix of the trained model at a decision-making threshold of 0.5. (B) Receiver-operating characteristic displaying the false positive rate (FPR) (specificity) corresponding to each true positive rate (TPR) (sensitivity). (C). Training accuracy of the final model after 100 epochs of training. (D) Representative example of apoptosis detection in a timelapse acquired in vitro (five replicates). (E) Multiple detection of nuclei undergoing apoptosis displays high sensitivity in densely packed field of views. (F) Heatmap representation depicting all apoptotic events in a movie and the respective probabilities. (G) Bar plots showing the TPR and FPR of ADeS applied to five testing movies, each one depicting an average of 98 apoptosis. (H) Time course showing the cumulative sum of ground-truth apoptosis (blue) and correct predictions (red). (I) 2D visualization of spatial–temporal coordinates of ground-truth (blue) and predicted apoptosis (red). In the 2D representation, the radius of the circles maps the temporal coordinates of the event. (J) Pixel distance between ADeS predictions and the nearest neighbor (NN) of the ground truth (left) in comparison with the NN distance obtained from a random distribution (right). The plot depicts all predictions of ADeS, including true positives and false positives. (K) Scatterplot of the spatial distance between ground truth and true positives of ADeS. Ground-truth points are centered on the X = 0 and Y = 0 coordinates. (L) Distribution of the temporal distance (frames) of the correct predictions from the respective ground-truth NN. Statistical comparison was performed with Mann–Whitney test. Columns and error bars represent the mean and standard deviation, respectively. Statistical significance is expressed as *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90502/elife-90502-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The training set describes a binary classification task in which the class label 1 contains the nuclei of epithelial cells undergoing apoptosis, while the class label 0 includes healthy and mitotic nuclei. (B) The class label 0 has been further expanded by iteratively including false positives generated by a trained network and applied to movies that contained no apoptotic events.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/90502/elife-90502-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) In vitro micrographs showing the same acquisition with the addition of different levels of noise measured in decibels (dB). High signal-to-noise ratio (SNR) values represent better video quality. (B) Plot showing the effect of increasing noise levels on the true positive rate (TPR) and false positive rate (TPR) of ADeS predictions (C) Noise effect visualized as a likelihood heatmaps. Higher noise generates frequent low-confidence predictions.
+
 Successively, to validate the proposed Conv-Transformer architecture for apoptosis classification, we compared it with the performances of a convolutional neural network (CNN), a 3DCNN, and a convolutional long-short term memory (Conv-LSTM) network. To this end, the four models were trained on a dataset containing 13.120 apoptotic and 13.120 nonapoptotic events using a 0.12 validation split (Table 1). Results show that the frame accuracy of the CNN is low, possibly due to morphological heterogeneity over consecutive frames, and therefore unsuitable for the task. By contrast, the 3DCNN and the Conv-LSTM displayed high-sequence accuracy, F1 score, and area under the curve (AUC), confirming that the temporal information within frames is pivotal to correctly classifying image sequences containing apoptotic cells. Nonetheless, the proposed Conv-Transformer outperformed both the 3DCNN and the Conv-LSTM, establishing itself as the final DL architecture at the core of ADeS.
+
+**Table 1.**
+ Comparison of deep learning architectures for apoptosis classification.Comparative table reporting accuracy, F1, and AUC metrics for a CNN, 3DCNN, Conv-LSTM, and Conv-Transformer. The classification accuracy is reported for static frames or image sequences. The last column shows which cell death study employed the same baseline architecture displayed in the table.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Classifier architecture</th>
+      <th>Frame accuracy</th>
+      <th>Sequence accuracy</th>
+      <th>F1</th>
+      <th>AUC</th>
+      <th>Study</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CNN</td>
+      <td>74% ± 1.3</td>
+      <td>NA</td>
+      <td>0.77</td>
+      <td>0.779</td>
+      <td>La Greca et al., 2021; Verduijn et al., 2021</td>
+    </tr>
+    <tr>
+      <td>3DCNN</td>
+      <td>NA</td>
+      <td>91.22 % ± 0.15</td>
+      <td>0.91</td>
+      <td>0.924</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Conv-LSTM</td>
+      <td>NA</td>
+      <td>97.42% ± 0.09</td>
+      <td>0.97</td>
+      <td>0.994</td>
+      <td>Kabir et al., 2022; Mobiny et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Conv-Transformer</td>
+      <td>NA</td>
+      <td>98.27% ± 0.25</td>
+      <td>0.98</td>
+      <td>0.997</td>
+      <td>Our</td>
+    </tr>
+  </tbody>
+</table>
+
+_CNN, convolutional neural network; NA, nonapplicable._
 
 Successively, we deployed a preliminary trained network on control movies without apoptotic events to collect false positives that we used to populate the class label 0, thus ensuring a systematic decrease in the misclassification rate (Figure 4—figure supplement 1B). Using the latter generated dataset, we trained the Conv-Transformer for 100 epochs using an unbalanced training set with a 1:10 ratio of apoptotic to nonapoptotic cells (Figure 4A). After deploying the trained model on 1000 testing samples, the confusion matrix (Figure 4B) displayed a scant misclassification rate (2.68%), similarly distributed between false positives (1.04%) and false negatives (1.64%). Accordingly, the receiver-operating characteristic (ROC) of the model skewed to the left (AUC = 0.99, Figure 4C). This skew indicates a highly favorable tradeoff between the true positive rate (TPR) and false positive rate (FPR), which the overall predictive accuracy of 97.32% previously suggested (Figure 4B). Altogether, these metrics suggest an unprecedented accuracy of the DL model in the classification of apoptotic and nonapoptotic sequences. However, they only reflect the theoretical performances of the classifier applied to cropped sequences depicting a single cell at a time.
 
 To validate ADeS on full-length microscopy acquisitions, we deployed it on six testing movies that were not part of the training set. Each testing movie had been annotated manually and contained a variable number of ground-truth apoptosis (98 ± 21) and a comparable cell density (1705 ± 124). Moreover, all movies had identical magnification (20×), duration (21 hr), and sampling rate (5 min). In order to test ADeS on these movies, we adopted an unbiased approach and we did not hard-tune the hyperparameters of the model (see ‘Materials and methods’), specifying only a stringent confidence threshold (0.995) and a temporal window based on the average duration of the nuclear hallmarks (nine frames). As a result, ADeS could predict the location and timing of the apoptotic nuclei (Figure 4D, Video 1), enabling the detection of multiple apoptoses in a densely packed field of view (Figure 4E and F). To quantify these performances, we compared the prediction of ADeS to the annotated ground truths (x,y,t). By doing this, we found that the average TPR, or sensitivity, was 82.01% (ranging from 77 to 92%), while the average FPR was 5.95% (Figure 4G). The undetected apoptotic events were likely a consequence of the heterogeneity of nuclear fragmentation, which can vastly differ in signal intensity, size, focal plane, and duration (Figure 1—figure supplement 1). Nonetheless, hard-tuning the model could further increase the sensitivity without additional training data, such as by adjusting the temporal interval or by lowering the confidence threshold. With respect to the false positives, most were mitotic cells due to their morphological similarities with apoptotic nuclei. Nevertheless, the FPR was contained, translating into a new false positive every four frames (or 20 min of acquisition). This rate confirmed that ADeS is overall robust, especially in light of movies depicting 1700 cells per frame.
 
+![Video 1.](https://cdn.elifesciences.org/articles/90502/elife-90502-video1.mp4.jpg)
+
 Concerning the spatial–temporal dynamics, the apoptotic count over time highlighted a tight relationship between ground-truth apoptosis and correct detections of ADeS (Figure 4H). Accordingly, the two curves were divergent but highly correlative (Pearson r = 0.998), proving that ADeS can successfully capture cell death dynamics. A 2D scatterplot (x, y, t = radius; Figure 4I) visually depicted the spatial–temporal proximity between ADeS and the ground truth, indicating overlap between the two scatter populations. Nearest neighbor (NN) analysis further captured this relationship; the average distance between all ADeS predictions (true positives + false positives), and the NN in the ground truth was 30 pixels. In contrast, randomly generated predictions had a ground-truth NN within a 52-pixel radius (Figure 4J). Considering instead the true positives only, we observed that they were in close spatial proximity to the ground truth, with most predictions falling within a 20-pixel radius (Figure 4K). The difference between the predicted timing of apoptosis and the one annotated in the ground truth was also slight, with an average discard of 3.46 frames (Figure 4L). Interestingly, ADeS showed a bias toward late detections, which is explained considering that operators annotated the beginning of the apoptosis, whereas ADeS learned to detect nuclear disruption, occurring at the end of the process. Altogether, these quantifications indicate that ADeS detects apoptotic nuclei with high spatial and temporal accuracy, establishing a novel comparative baseline for this task.
 
-## 3D rotation of the in vivo dataset
+### 3D rotation of the in vivo dataset
 
 Upon the successful application of ADeS in vitro, the next step in complexity was detecting apoptosis in vivo timelapses. The latter is inherently more challenging due to different factors, including high background signal, autofluorescence, and the presence of collagen (Pizzagalli et al., 2018), among others. For this purpose, we retrained ADeS using the in vivo data described in Figure 1. However, one of the main limitations of supervised DL is the need for large datasets, and the finite number of MP-IVM acquisitions and apoptotic instances represented a bottleneck for the training of ADeS. To overcome this limitation, we implemented a custom data augmentation strategy that exploits 3D volumetric rotations, as previously performed in other studies (Xu et al., 2020; Zhuang, 2019). Accordingly, each 3D apoptotic sequence underwent multiple spatial rotations and was successively projected in 2D (Figure 5A). This procedure enabled us to increase the dataset of a 100-fold factor without introducing imaging artifacts as each volume rotation was a physiological representation of the cell (Figure 5B).
 
@@ -92,27 +167,176 @@ Upon the successful application of ADeS in vitro, the next step in complexity wa
 
 **Figure 5.:** (A) Depiction of a 3D volume cropped around an apoptotic cell. Each collected apoptotic sequence underwent multiple 3D rotation in randomly sampled directions. The rotated 3D images were successively flattened in 2D. (B) Gallery showing the result of multiple volume rotations applied to the same apoptotic sequence. The vertical axis depicts the sequence over time, whereas the horizontal describes the rotational degree applied to the volumes.
 
-## Training and deployment in vivo
+### Training and deployment in vivo
 
 To train ADeS using the latter rotated in vivo dataset (Figure 6), we defined a binary classification task in which ROIs containing apoptotic cells were assigned to the class label 1. In contrast, all remaining ROIs, including healthy cells and background elements, were assigned to the class label 0 (Figure 6—figure supplement 1A). Subsequently, we trained the DL classifier for 200 epochs. Finally, we performed fivefold cross-validation according to the ID of the movies (Figure 6A). The resulting confusion matrix demonstrated a classification accuracy of 97.80% and a 2.20% misclassification rate that is primarily due to type II error (1.80% false negatives) (Figure 6B). Analogous to the tests in vitro, classification in vivo proved highly effective in predicting apoptotic and nonapoptotic instances. The ROC of the model, which indicated high sensitivity and a low FPR, supported this favorable result (Figure 6C).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/90502/elife-90502-fig6-v2.jpg)
+
+**Figure 6.:** (A) Confusion matrix of the trained model at a decision-making threshold of 0.5. (B) Receiver-operating characteristic displaying the false positive rate (FPR) corresponding to each true positive rate (TPR). (C) Training accuracy of the final model trained for 200 epochs with data augmentations. (D) Image gallery showing ADeS classification to sequences with different disruption timing. The generated heatmap reaches peak activation (red) at the instant of cell disruption. (D) Representative snapshots of a neutrophil undergoing apoptosis. Green bounding boxes represents ADeS detection at the moment of cell disruption. (E) Representative micrograph depicting the detection of two eosinophils undergoing cell death in the spleen (left) and the respective probability heatmap (right). (F) ADeS performances expressed by means of TPR and FPR over a panel of 23 videos. (G) Tracking accuracy metric (TRA) measure distribution of the trajectories predicted by ADeS with respect to the annotated ground truth (n = 8) (H) Comparison between human and ADeS by means of TPR and FPR on a panel of five randomly sampled videos. (I) Hierarchical clustering of several video parameters producing two main dendrograms (n = 23). The first dendrogram includes videos with reduced sensitivity and is enriched in several parameters related to cell density and signal intensity. (J) Graph showing the effect of cell density on the performances expressed in terms of TPR and FPR (n = 13). (K) Comparison of the positive predictive value between videos with large and small signal-to-noise ratio (left) and videos with large and small shortest cell distance (right). (L, M) Selected video parameters are combined into a quality score that weakly correlates with the TPR in overall data (M, n = 23) and strongly correlates with the TPR in selected underperforming data (N, n = 8). Statistical comparison was performed with Mann–Whitney test. Columns and error bars represent the mean and standard deviation, respectively. Statistical significance is expressed as *p≤0.05, **p≤0.01, ***p≤0.001, ****p≤0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/90502/elife-90502-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) The designed training set describes a binary classification task in which the class label 1 contains only apoptotic cells and the class label 0 encompasses all nonapoptotic content, including healthy cells, filaments, background, and cell debris. (B) Representative snapshots of variable and potentially challenging conditions in multiphoton intravital microscopy (MP-IVM), including high cell density, autofluorescence, dim signal, and noisy background. (C) Representative micrographs depicting the detection of apoptotic cells at increasing cell densities. (D) Graph showing the accuracy of ADeS in predicting the class label (0 or 1) of sequences containing different biological content. Red bars represent an accuracy below 80%.
+
 We then benchmarked ADeS in the detection task performed on a set of 23 MP-IVM acquisitions of immune cells undergoing apoptosis. Unlike in vitro settings, in vivo acquisitions displayed high variability in cell number, autofluorescence, signal intensity, and noise levels (Figure 6—figure supplement 1B). Still, ADeS correctly predicted the location and timing of cells undergoing apoptosis (Figure 6H, Video 2), indicating its robustness to increasingly populated fields of view (Figure 6—figure supplement 1C). In addition, we successfully applied the pipeline to neutrophils imaged in the lymph node (Figure 6D) and eosinophils in the spleen (Figure 6E). By comparing ADeS predictions with the annotated ground truths, we found that our pipeline detected apoptotic events with a TPR of 81.3% and an FPR of 3.65% (Figure 6F). The detections, provided in the form of bounding boxes and trajectories, indicated the coordinates and duration of the events. Hence, to measure how close they were to the annotated trajectories, we employed the tracking accuracy metric (TRA), a compound measure that evaluates the similarities between predicted and ground-truth trajectories. The average TRA was above 0.9, indicating the high fidelity of the trajectories predicted by ADeS (Figure 6G).
+
+![Video 2.](https://cdn.elifesciences.org/articles/90502/elife-90502-video2.mp4.jpg)
 
 Next, we compared ADeS to human annotation performed by three operators on five testing movies. As a result, ADeS displayed an upward trend of the TPR and a downward trend of the FPR. However, we found no significant difference in the TPR and FPR (Figure 6H). Regardless, ADeS performances appeared to be distributed across two distinct groups: a predominant group with an average sensitivity of 100% (>75% range) and a smaller group with an average sensitivity of 53% (41–75% range, Figure 6H). To understand this discrepancy, we applied hierarchical clustering to the testing videos according to their imaging properties and biological content (Figure 6I), thus generating two major dendrograms. The first dendrogram mostly contained videos with reduced sensitivity (yellow) and was defined by a high cell number, high noise levels, short cell distance, and a saturated and fluctuating image signal. Most notably, the cell number played a crucial role in overall performance, as reflected in the fact that an increment of this parameter resulted in a pronounced decrease in the TPR and a moderate increase in the FPR (Figure 6J). Incidentally, the positive predictive value (PPV) was significantly lower in videos with poor SNR and, although not statistically significant, the PPV was lower when the signal standard deviation was higher (Figure 6K, Video 3). As similar findings were observed in vitro (Figure 4—figure supplement 2), we hypothesized that the quality of a movie predicts ADeS performance. Hence, we combined the parameters highlighted by the clustering analysis (Figure 6I) into a single score ranging from 0 to 1 (1 indicating the highest and ideal score) and, in doing so, found there to be a weak correlation between the video quality and the sensitivity of ADeS (Figure 6L). However, this trend was evident only when we considered videos with suboptimal sensitivity; indeed, in these cases, we found a strong correlation (0.72), confirming that the video quality partially explains the observed performances (Figure 6M).
 
+![Video 3.](https://cdn.elifesciences.org/articles/90502/elife-90502-video3.mp4.jpg)
+
 Finally, we evaluated how the biological variability in vivo could affect the readout of ADeS, defining nine distinct biological categories, including apoptotic cells, healthy cells, and background elements. For all biological categories, the classification accuracy was above 80%, except for overlapping cells and cells with high membrane plasticity (Figure 6—figure supplement 1D).
 
-## Comparison with the state-of-the-art
+### Comparison with the state-of-the-art
 
 To compare the performance of ADeS with other state-of-the-art algorithms for cell death quantification, we conducted a comprehensive literature review. For each study, we reported the attained classification accuracy, the experimental setup, the architecture of the classifier, the capability of detecting cell death events in movies, and the number of cell deaths in the training set (Table 2). Initial results indicate that ADeS achieved the highest classification accuracy, but a direct comparison in terms of accuracy is not meaningful due to the differences in datasets, including distinct cell types, different types of cell death, and varying dataset sizes. For a more appropriate benchmark, we refer to Table 1, which shows that our classifier outperformed the baseline reimplementations of the main classifiers used in other studies.
 
+**Table 2.**
+ Comparison of cell death identification studies.Table reporting all studies on cell death classification based on machine learning. For each study, we included the reported classification accuracy, the experimental conditions of the studies, the target input of the classifier, and the capability of performing detection on static frames or microscopy timelapses. Met conditions are indicated with a green check. Moreover, for each study we reported the architecture of the classifier and the number of apoptotic cells in the training set. NA stands for not available and indicates that the information is not reported in the study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study</th>
+      <th>Input of the classifier</th>
+      <th>Reported classification accuracy</th>
+      <th>In vitro</th>
+      <th>In vivo</th>
+      <th>DetectionIn frame</th>
+      <th>Detection in movies</th>
+      <th>Classifier architecture</th>
+      <th>N cell death</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Our</td>
+      <td>Frame sequence</td>
+      <td>98.27%</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>Conv-Transformer</td>
+      <td>13,120</td>
+    </tr>
+    <tr>
+      <td>Jin et al., 2022</td>
+      <td>Frame</td>
+      <td>93%</td>
+      <td>✓</td>
+      <td>✘</td>
+      <td>✘</td>
+      <td>✘</td>
+      <td>Logistic regression</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Verduijn et al., 2021</td>
+      <td>Frame</td>
+      <td>87%</td>
+      <td>✓</td>
+      <td>✘</td>
+      <td>✘</td>
+      <td>✘</td>
+      <td>VGG-19</td>
+      <td>19,339</td>
+    </tr>
+    <tr>
+      <td>Kabir et al., 2022</td>
+      <td>Frame sequence</td>
+      <td>93%</td>
+      <td>✓</td>
+      <td>✘</td>
+      <td>✘</td>
+      <td>✘</td>
+      <td>ResNet101-LSTM</td>
+      <td>3172</td>
+    </tr>
+    <tr>
+      <td>La Greca et al., 2021</td>
+      <td>Frame</td>
+      <td>96.58%</td>
+      <td>✓</td>
+      <td>✘</td>
+      <td>✘</td>
+      <td>✘</td>
+      <td>ResNet50</td>
+      <td>11,036</td>
+    </tr>
+    <tr>
+      <td>Mobiny et al., 2020</td>
+      <td>Frame sequence</td>
+      <td>93.8%</td>
+      <td>✓</td>
+      <td>✘</td>
+      <td>✘</td>
+      <td>✘</td>
+      <td>CapsNet-LSTM</td>
+      <td>41,000</td>
+    </tr>
+    <tr>
+      <td>Kranich et al., 2020</td>
+      <td>Frame</td>
+      <td>93.2%</td>
+      <td>✓</td>
+      <td>✘</td>
+      <td>✘</td>
+      <td>✘</td>
+      <td>CAE-RandomForest</td>
+      <td>27,224</td>
+    </tr>
+    <tr>
+      <td>Vicar et al., 2020</td>
+      <td>Frame sequence</td>
+      <td>NA</td>
+      <td>✓</td>
+      <td>✘</td>
+      <td>✓</td>
+      <td>✓</td>
+      <td>biLSTM</td>
+      <td>1745</td>
+    </tr>
+    <tr>
+      <td>Jimenez-Carretero et al., 2018</td>
+      <td>Frame</td>
+      <td>NA</td>
+      <td>✓</td>
+      <td>✘</td>
+      <td>✓</td>
+      <td>✘</td>
+      <td>R-CNN</td>
+      <td>255,215</td>
+    </tr>
+  </tbody>
+</table>
+
 From Table 2, we observe that ADeS is the only algorithm for cell death quantification that has been applied in vivo. Additionally, only ADeS and the study by Vicar et al., 2020 effectively detected apoptotic cells in fully uncropped microscopy movies, which is a significant achievement given the computational challenge associated with the task. However, Vicary and colleagues relied on the temporal analysis of cell trajectories, while ADeS used vision-based methods to directly analyze consecutive frames of a movie. As a result, ADeS offers a comprehensive and pioneering pipeline for effectively applying vision-based classifiers to detect cell death in imaging timelapses.
 
-## Applications for toxicity assay in vitro
+### Applications for toxicity assay in vitro
 
 A common application of cell death staining is the evaluation of the toxicity associated with different compounds (Atale et al., 2014; Schmid et al., 2007) or the efficacy of an apoptotic-inducing treatment. Here, we show that ADeS has analogous purposes and can effectively quantify the toxicity of different compounds in vitro. For this application, we grew epithelial cells in vitro, treating them with PBS and three increasing concentrations of doxorubicin, a chemotherapeutic drug that elicits apoptosis in the epithelium (Eom et al., 2005). Epithelial cells were seeded with the same density of cells per well, and all four conditions had the same confluence before the treatment. However, at 24 hr post-acquisition, the number of survivor cells was inversely proportional to the doxorubicin concentration (Figure 7A). We confirmed this trend using ADeS (Videos 4–7), which measured the lowest mortality after 24 hr in PBS (62 cells), followed by doxorubicin concentrations of 1.25 μM (95 cells), 2.50 μM (167 cells), and 5.00 μM (289 cells). Moreover, ADeS predicted distinct pharmacodynamics (Figure 7B), which can define the drug concentration and experimental duration required to reach a specific effect in the apoptotic count. To this end, each time point in Figure 7B also defines a dose–response relationship. Here we provide two dose–responses curves at 5 hr and 24 hr post-treatment, showing different pharmacodynamics (EC50 5 hr = 2.35, Hill slope 5 hr = 3.81, EC50 24 hr = 4.47, Hill slope 24 hr = 1.93, Figure 7C and D). Notably, the fit can project the dose–responses for higher drug concentrations, predicting the maximum effect size at a given time. For instance, at 24 hr post treatment, a 10 μM titration attains 86% of the maximum effect (456 apoptotic cells), whereas a further increase in the concentration of the drug leads only to a moderate increase of the toxicity (Figure 7E). We argue that this approach helps to maximize the effect of a drug on a designated target, while minimizing collateral damage done to nontarget cells. For instance, in chemotherapies employing doxorubicin, apoptosis of epithelial cells is an undesired effect. Therefore, researchers can select a titration of the drug and a duration of the treatment that does not affect the epithelium yet still positively affects the tumor. Finally, we also demonstrated the reproducibility of the toxicity assay by targeting another cell type (T cells) treated with a different apoptotic inducer (staurosporine, Figure 7—figure supplement 1).
 
-## Measurement of tissue dynamics in vivo
+![Figure 7.](https://cdn.elifesciences.org/articles/90502/elife-90502-fig7-v2.jpg)
+
+**Figure 7.:** (A) Representative snapshots depicting epithelial cells in vitro at 0 and 24 hr after the addition of PBS and three increasing doses of doxorubicin, a chemotherapeutic drug and apoptotic inducer (three replicates). (B) Plot showing the number of apoptotic cells detected by ADeS over time for each experimental condition. (C, D) Dose–response curves generated from the drug concentrations and the respective apoptotic counts at 5 hr and 24 hr post-treatment. Vertical dashed lines indicate the EC50 concentration. (E) Dose–response curve projected from the fit obtained in (D). The predicted curve allows to estimate the response at higher drug concentrations than the tested ones.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/90502/elife-90502-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Schematic drawing representing in vitro-cultured T cells treated with staurosporine. (B) Confocal micrograph snapshot showing T cells at 60 min after treatment with staurosporine (left) compared to the untreated control group (right). (C) Survival assay plot of control (dotted lined) and treated samples (solid line) during the first 60 min post-treatment with staurosporine.
+
+![Video 4.](https://cdn.elifesciences.org/articles/90502/elife-90502-video4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/90502/elife-90502-video5.mp4.jpg)
+
+![Video 6.](https://cdn.elifesciences.org/articles/90502/elife-90502-video6.mp4.jpg)
+
+![Video 7.](https://cdn.elifesciences.org/articles/90502/elife-90502-video7.mp4.jpg)
+
+### Measurement of tissue dynamics in vivo
 
 To test the application of ADeS in an in vivo setting, we applied it to study the response of bystander cells following apoptotic events in the lymph nodes of mice treated with an influenza vaccine. We computed the spatial and temporal coordinates of a neutrophil undergoing apoptosis (Figure 8A), which, combined with the tracks of neighboring cells, allowed us to characterize cellular response patterns following the apoptotic event. Among other parameters, we observed a sharp decrease in the distance between the neighboring cells and the apoptotic centroid (Figure 8B) in addition to a pronounced increase in the instantaneous speed of the cells (Figure 8C).
 
@@ -140,78 +364,78 @@ In conclusion, ADeS constitutes a novel solution for apoptosis detection that co
 
 ## Materials and methods
 
-## MCF10A cell line and image acquisition
+### MCF10A cell line and image acquisition
 
 The normal-like mammary epithelial MCF10A cells (provided by Joan Brugge; Debnath et al., 2003), stably expressing the nuclear marker, were generated as previously described (Gagliardi et al., 2021). Briefly, the nuclear marker H2B-miRFP703, provided by Vladislav Verkhusha (Addgene plasmid #80001) (Shcherbakova et al., 2016), was subcloned in the PiggyBac plasmid pPBbSr2-MCS. After cotransfection with the transposase plasmid (Yusa et al., 2011), cells were selected with 5 µg/ml Blasticidin and subcloned. For time-lapse imaging, the cells were seeded on 5 µg/ml fibronectin (PanReac AppliChem)-coated 1.5 glass-bottom 24-well plates (Cellvis) at 1 × 105 cells/well density. After 48 hr, when the optical density was reached, the confluent cell monolayer was acquired every 1 or 5 min for several hours with a Nikon Eclipse Ti inverted epifluorescence microscope with 640 nm LED light source, ET705/72m emission filter, and a Plan Apo air 203 (NA 0.8) or a Plan Apo air 403 (NA 0.9) objectives. The collection of biological experiments used in this study includes different stimulation of apoptosis, such as growth factors, serum starvation, and doxorubicin at various concentrations.
 
-## Apoptosis induction of MCF10A cells with doxorubicin
+### Apoptosis induction of MCF10A cells with doxorubicin
 
 Normal-like mammary epithelial MCF10A cells were grown in 24-well glass coated with fibronectin with a seeding of 1 × 105 cells/well. After 2 d, cells were starved for 3 hr and treated with doxorubicin at 1.25, 2.50, and 5.00 μM concentrations.
 
-## Mice
+### Mice
 
 Prior to imaging, LysM-cre-GFP mice were anesthetized with a cocktail of ketamine (100 mg/kg) and xylazine (10 mg/kg) as previously described (Sumen et al., 2004). All animals (females between 6 and 12 mo) were maintained in specific pathogen-free facilities at the Institute for Research in Biomedicine (Bellinzona, CH). All experimental procedures were performed according to the regulations of the local authorities and approved by the Swiss Federal Veterinary Office (licensing national number 39015).
 
-## Intravital two-photon microscopy
+### Intravital two-photon microscopy
 
 Surgery in the popliteal lymph node was performed as previously reported (Miller et al., 2004). The exposed organs were imaged on a custom up-right two-photon microscope (TrimScope, LaVision BioTec). Probe excitation and tissue second-harmonic generation were achieved with two Ti:sapphire lasers (Chamaleon Ultra I, Chamaleon Ultra II, Coherent) and an optical oscillator that emits in the 1010–1340 nm range (Chamaleon Compact OPO, Coherent) and has an output wavelength between 690 and 1080 nm.
 
-## Neutrophil isolation from mouse bone marrow
+### Neutrophil isolation from mouse bone marrow
 
 Bone marrow samples were extracted via flushing with PBS from the long bones of UBC-GFP mice (https://www.jax.org/strain/004353). Then, the bone marrow was filtered through a 40 um strainer and resuspended in PBS. Primary bone marrow neutrophils were isolated with Ficoll gradient and resuspended in PBS.
 
-## T-cell culture in a 3D collagen matrix
+### T-cell culture in a 3D collagen matrix
 
 Human CD4+ T cells were isolated from the PBMC fraction of healthy donors obtained from NetCAD (Canadian Blood Services). Cell purity was above 95%. Naïve CD4+ T cells were activated by adding Dynabeads coated with anti-human CD3e/CD28 antibody (1:1 bead:cell ratio, Life Technologies, Cat# 11131D) in RPMI1640 supplemented with 10% FBS (VWR Seradigm, Cat# 1500-500), 2 mM GlutaMAX (Gibco, Cat# 3050-061), 1 mM sodium pyruvate (Corning, Cat# 25-000CI), and 10 mM HEPES (Sigma-Aldrich, Cat# H4034). After 2 d, beads were removed and cells were cultured for another 4–6 d in a medium containing 50 IU/ml human rIL-2 (Biotechne, Cat# 202-IL-500), keeping cell density at 2 × 105 cells/ml. Cells were used for all experiments between days 6–8. All work with human blood has been approved by the University of Manitoba Biomedical Research Ethics Board (BREB).
 
-## Apoptosis live-cell imaging of T cells in 3D collagen chambers
+### Apoptosis live-cell imaging of T cells in 3D collagen chambers
 
 T cells were labeled at days 6–8 using CMAC (10 µM) cell tracker dye (Invitrogen), and glass slide chambers were constructed as previously described (Lopez et al., 2019; Lopez et al., 2022). Briefly, 2 × 106 cells were mixed in 270 µl of bovine collagen (Advanced Biomatrix, Cat# 5005-100ML) at a final concentration of 1.7 mg/ml. Collagen chambers were solidified for 45 min at 37°C/5% CO2 and placed onto a custom-made heating platform attached to a temperature control apparatus (Werner Instruments). For the induction of apoptosis, 1 µM of staurosporine (Sigma, Cat# 569397-100UG) and 800 ng of TNF-a (BioLegend, Cat# 570104) in 100 µl RPMI were added on top of the solidified collagen. Cells were imaged as soon as the addition of apoptosis inducers using a multiphoton microscope with a Ti:sapphire laser (Coherent), tuned to 800 nm for optimized excitation of CMAC. Stacks of 13 optical sections (512 × 512 pixels) with 4 mm z-spacing were acquired every 15 s to provide imaging volumes of 44 mm in depth (with a total time of 60–120 min). Emitted light was detected through 460/50 nm, 525/70 nm, and 595/50 nm dichroic filters with non-descanned detectors. All images were acquired using the 20 × 1.0 N.A. Olympus objective lens (XLUMPLFLN; 2.0 mm WD).
 
-## Data processing and image analysis
+### Data processing and image analysis
 
 The raw video data, composed by uint8 or uint16 TIFFs, were stored as HDF5 files. No video preprocessing was applied to the raw data before image analysis. Cell detection, tracking, and volumetric reconstruction of microscopy videos were performed using Imaris (Oxford Instruments, v9.7.2). The resulting data were further analyzed with custom MATLAB and Python scripts (see ‘Code availability’ section).
 
-## Apoptosis annotation of epithelial MCf10A cells in vitro
+### Apoptosis annotation of epithelial MCf10A cells in vitro
 
 We manually annotated apoptotic events of MCF10A cells by visual inspection of the movies. The annotation was done by observing the morphological changes associated with apoptosis (e.g., nuclear shrinkage, chromatin condensation, epithelial extrusion, nuclear fragmentation) across multiple consecutive frames. Using a custom Fiji (Schindelin et al., 2012) macro, we automatically stored x and y centroids of the apoptotic nucleus. The time t of each apoptotic annotation was defined as the beginning of nuclear shrinkage.
 
-## Generation of thein vitro training dataset
+### Generation of thein vitro training dataset
 
 The 16-bit raw movies were min-max scaled to the 0.001 and 0.999 quantiles and downsampled to 8-bit resolution. Using the database of manually labeled coordinates of apoptotic events (x,y,t), we extracted crops with 59 × 59 pixels resolution (2× scaling for the FOV acquired with the 20× objective). Seven time steps of the same location were extracted, with linear spacing from –10 min to +50 min relative to the apoptosis annotation. This time frame was chosen to capture the cell before the onset of apoptosis, and the morphological changes associated with apoptosis (nuclear shrinkage, decay into apoptotic bodies, extrusion from epithelium). The resulting image cube has dimensions of 59 × 59 × 7. To create the training data for the nonapoptotic class, we excluded areas with an annotated apoptotic event with a safety margin from the movies. From the remaining regions without apoptoses, we extracted image cubes from cells detected with StarDist (Fazeli et al., 2020) and from random locations. The random crops also included debris, apoptotic bodies from earlier apoptotic events, empty regions, and out-of-focus nuclei.
 
-## Apoptosis annotation of leukocyte cells in vivo
+### Apoptosis annotation of leukocyte cells in vivo
 
 Three operators independently annotated the videos based on selected morphological criteria. To label apoptotic cells, the annotators considered only the sequences of cells that displayed membrane blebbing followed by apoptotic bodies formation and cell disruption (Figure 2B). For each frame in the apoptotic sequence, the operators placed a centroid at the center of the cell with the Imaris ‘Spots’ function, generating an apoptotic track. Successively, ground-truth tracks were generated according to a majority voting system, and 3D volume reconstruction was performed on ground-truth cells using the Imaris ‘Surface’ function. Nearby nonapoptotic cells were also tracked. In addition, other nonapoptotic events were automatically subsampled from regions without apoptotic cells.
 
-## 3D rotation of the in vivo annotations
+### 3D rotation of the in vivo annotations
 
 In vivo annotations presented a class unbalance in favor of nonapoptotic cells, with a relative few apoptotic instances. Hence, to compensate for this bias, we produced several representations of the raw data by interpolating the raw image stacks in 3D volumes and rotating them in randomly sampled directions, with rotational degrees between 0° and 45°. After each manipulation, the rotated volume underwent flattening by maximum projection and symmetric padding to preserve the original dimension. The 2D images were successively resized and cropped to match the 59 × 59 pixels input of the classifier. Finally, the training sequences were saved as uint8 grayscale TIFF files.
 
-## Generation of the in vitro and in vivo training datasets
+### Generation of the in vitro and in vivo training datasets
 
 To detect apoptotic cells in microscopy acquisitions, we defined a 2D binary classification task in which apoptotic events are labeled with class 1, while nonapoptotic events belonged to the class label 0. The resulting unprocessed data consisted of frame sequences composed of 3D crops. The content of the class label 0 in vitro included healthy nuclei, background, cell debris, and mitotic cells. The content of the class label 0 in vivo included motile cells, arrested cells, highly deformed cells, overlapping cells, cell debris or blebs, empty background, noisy background, and collagen.
 
-## Data augmentation and data loader
+### Data augmentation and data loader
 
 Given the varying length of the training sequences contained in the TIFFs, upon training, we used a custom data loader that uniformly samples the input data and produces sequences with a fixed number of frames. The fixed number of frames was set to 5, corresponding to the frame length of the shortest apoptotic sequence. During training, each sample underwent horizontal shift, vertical shift, zoom magnification, rotation, and flipping. All data augmentations were performed in Python using the Keras library.
 
-## Deep learning architecture
+### Deep learning architecture
 
 As a deep learning classifier, we employed a custom architecture relying on time-distributed convolutional layers stacked on top of a transformer module (Conv-Transformer). The input size consists of five single-channel images with 59 × 59 pixel size. The convolutional network has three layers of size 64, 128, and 256 length. Each layer has a 3 × 3 kernel, followed by Relu activation, batch normalization, and a dropout set to 0.3. The inclusion of padding preserves the dimension of the input, while 2D max pooling is at the end of each convolutional block. After 2D max pooling, the output is passed to a transformer module counting six attention heads, and successively to a fully connected decision layer. The fully connected network has four layers with 1024, 512,128, and 64 nodes, each one followed by Relu activation and a 0.3 dropout layer. The last layer is a softmax activation, which predicts a decision between the two classes.
 
-## Training and hyperparameters
+### Training and hyperparameters
 
 Our model was trained in TensorFlow with Adam optimizer using binary cross-entropy loss and an initial learning rate of 0.0001. The optimal mini-batch size was 32, and the number of training epochs was 200. In training mode, we set a checkpoint to save the model with the best accuracy on the validation dataset, and a checkpoint for early stopping with patience set to 15 epochs. In addition, the learning rate decreased when attending a plateau.
 
-## ADeS deployment
+### ADeS deployment
 
 For the deployment of the classifier on microscopy videos, we generative region proposals using the selective search algorithm, obtaining a set of ROIs for each candidate frame of the input movie. For each ROI computed by the region proposal at time t, a temporal sequence is cropped around t and classified with the Conv-Transformer. The resulting bounding boxes are filtered according to a probability threshold and processed with the non-maxima suppression utils from Pytorch. Consecutive bounding boxes classified as apoptotic are connected using a custom multiobject tracking algorithm based on Euclidean distance. The generated trajectories are filtered by discarding those with less than two objects.
 
-## Default and user-defined parameters
+### Default and user-defined parameters
 
 ROIs detected with the region proposal are filtered according to their size, discarding the ones with edges below 20 pixels and above 40 pixels. Furthermore, a threshold on intensity is applied to exclude uint8 patches with an average brightness below 40. Upon classification, a temporal window corresponding to the expected duration of the apoptotic event is set by the user (nine frames by default). This temporal window is subsampled to match the number of input frame of the classifier (five). The filtering of the predictions depends on a user-specified threshold, which by default corresponds to 0.95 in vivo and 0.995 in vitro. Non-maxima suppression is based on the overlapping area between bounding boxes, set to 0.1 by default. The centroid tracking has the following adjustable parameters: gap and distance threshold. The ‘gap’ parameter, set to three frames, specifies for how long a centroid can disappear without being attributed a new ID upon reappearance. A threshold on the distance, set by default to 10 pixels, allows the connection of centroids within the specified radius. All the reported quantifications had default parameters.
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical comparisons and plotting were performed using GraphPad Prism 8 (GraphPad, La Jolla, USA). All statistical tests were performed using nonparametric Kruskal–Wallis test or Mann–Whitney test For significance, p value is represented as *p<0.05, **p<0.005, and ***p<0.0005.

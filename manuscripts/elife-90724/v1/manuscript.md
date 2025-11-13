@@ -15,7 +15,7 @@
 
 ### Affiliations
 
-1. https://ror.org/0388c3403 Key Laboratory for Animal Disease-Resistance Nutrition of China Ministry of Education, Institute of Animal Nutrition, Sichuan Agricultural University Chengdu China
+1. Key Laboratory for Animal Disease-Resistance Nutrition of China Ministry of Education, Institute of Animal Nutrition, Sichuan Agricultural University Chengdu China ([ROR:0388c3403](https://ror.org/0388c3403))
 
 † Corresponding author
 
@@ -35,57 +35,139 @@ Eugenol contains a vanilloyl fragment that may bind to TRPV1 similarly to capsai
 
 ## Results
 
-## Eugenol promotes fast-to-slow muscle fiber transformation in mice and in C2C12 myotubes
+### Eugenol promotes fast-to-slow muscle fiber transformation in mice and in C2C12 myotubes
 
 As depicted in Figure 1A and B, eugenol did not have any effect on the body weight or skeletal muscle weight in mice. However, the skeletal muscle in the EUG50 and EUG100 groups exhibited a redder muscle color (Figure 1C), indicating a shift from fast-to-slow muscle fiber in these two groups. Further experiments showed that EUG50 and EUG100 increased the expression of slow MyHC and decreased the expression of fast MyHC protein in gastrocnemius (GAS) and tibialis anterior (TA) muscles (Figure 1D and E). Additionally, the mRNA expression of Myh7, Myh2, Myh1, and Myh4 was generally consistent with protein expression (Figure 1G). As our in vivo studies demonstrated that the EUG200 group had no effect on muscle fiber type, we suspected that high doses of eugenol may have no impact on muscle fiber type. Therefore, we selected a broad range of eugenol doses (0–200 μM) based on the safe range of eugenol doses determined by the CCK-8 assay (Figure 1—figure supplement 1) to treat C2C12 myotubes and replicate these results in vivo. As indicated in Figure 1F, 12.5–50 μM eugenol boosted slow MyHC expression, while 12.5–100 μM eugenol decreased fast MyHC expression. Furthermore, as shown in Figure 1H, 100 μM eugenol increased the mRNA expression of Myh7, and 12.5–100 μM eugenol increased the mRNA expression of Myh2, whereas 50 μM eugenol decreased the mRNA expression of Myh4. Consistent with our in vivo studies, our in vitro findings again suggested that high doses (200 μM) of eugenol had no effect on muscle fiber type. In summary, our results suggest that eugenol promotes a transformation from fast-to-slow muscle fiber. However, it should be noted that high doses of eugenol may have no effect on muscle fiber type.
 
-## Eugenol promotes oxidative metabolism activity, mitochondrial function, and endurance performance
+![Figure 1.](https://cdn.elifesciences.org/articles/90724/elife-90724-fig1-v1.jpg)
+
+**Figure 1.:** (A) The body weight of the mice. (B, C) Skeletal muscle weight and representative images of skeletal muscle. (D–F) The protein expression of muscle fiber type in gastrocnemius (GAS) and tibialis anterior (TA) muscle and in C2C12 myotubes. (G, H) The mRNA expression of muscle fiber type in GAS and TA muscle and in C2C12 myotubes. For A, N=20 per group. For B, N=14 per group. For D and E, N=3 per group. For F and H, N=4 per group. For G, N=6 per group. One-way ANOVA test was used to determine statistical significance. *p<0.05, **p<0.01, and ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90724/elife-90724-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Cells were treated with 0, 12.5, 25, 50, 100, 200 μM eugenol (EUG) for 1 day after 4 days of differentiation. The C2C12 cell viability was measured using CCK-8 kit. N=5 per group. One-way ANOVA test was used to determine statistical significance. *p<0.05, **p<0.01, and ***p<0.001.
+
+### Eugenol promotes oxidative metabolism activity, mitochondrial function, and endurance performance
 
 An increase in the proportion of slow muscle fibers is often accompanied by an increase in skeletal muscle oxidative metabolism activity, mitochondrial function, and endurance performance. Therefore, we examined these indicators in our study. As shown in Figure 2A, EUG100 increased the exhaustion time of mice. As shown in Figure 2B, EUG50 and EUG100 decreased lactate dehydrogenase (LDH) activity and increased succinic dehydrogenase (SDH) activity in the GAS muscle. In the TA muscle, LDH activity was decreased in all EUG groups, and EUG100 increased the activities of SDH and malate dehydrogenase (MDH). Then, we chose 100 mg/kg eugenol (as the optimal dose) for the exhausting swimming test. In addition, the transcript levels of mitochondrial transcription factors Pgc1a, Nrf1, and Tfam and the mRNA expression of components of the mitochondrial electron transport chain were increased in eugenol-treated mice (Figure 2C). The protein expression of mitochondrial electron transport complex I and complex V was upregulated in eugenol-treated mice (Figure 2D). Furthermore, EUG100 improved the mtDNA copy number in the GAS and TA muscle (Figure 2E), and 12.5–100 μM EUG increased the mtDNA copy number in C2C12 myotubes (Figure 2F).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/90724/elife-90724-fig2-v1.jpg)
 
-**Figure 2.:** (A) The effect of eugenol on exhausting swimming time in mice. (B) The effect of eugenol on metabolism enzymes activity in gastrocnemius (GAS) and tibialis anterior (TA) muscle. (C) The heatmap for the mRNA expression of genes encoding mitochondrial complex components and transcription factors controlling mitochondrial biogenesis in GAS muscle. Color gradient represents relative mRNA expression with darker colors indicating higher expression. (D) Protein expression of mitochondrial electron transport complexes in GAS muscle. Complex I (NDUFA1), complex II (SDHA), complex III (UQCRC1), complex IV (MTCO1), and complex V (ATP5B). (E) mtDNA copy number in muscles. (F) mtDNA copy number in C2C12 myotubes. For A, N=15 per group. For B, N=6 per group. For C and F, N=4 per group. For D, N=3 per group. For E, N=6 per group. One-way ANOVA test was used to determine statistical significance for B and F, student’s t-test was used to determine statistical significance for other panels. #p<0.1, *p<0.05, **p<0.01, and ***p<0.001.Figure 2—source data 1.Figure 2A).Figure 2—source data 2.Figure 2B).Figure 2—source data 3.Figure 2C).Figure 2—source data 4.Figure 2D).Figure 2—source data 5.Figure 2D and original scans of the relevant western blot analysis, with cropped areas.Figure 2—source data 6.Figure 2E).Figure 2—source data 7.Figure 2F).
+**Figure 2.:** (A) The effect of eugenol on exhausting swimming time in mice. (B) The effect of eugenol on metabolism enzymes activity in gastrocnemius (GAS) and tibialis anterior (TA) muscle. (C) The heatmap for the mRNA expression of genes encoding mitochondrial complex components and transcription factors controlling mitochondrial biogenesis in GAS muscle. Color gradient represents relative mRNA expression with darker colors indicating higher expression. (D) Protein expression of mitochondrial electron transport complexes in GAS muscle. Complex I (NDUFA1), complex II (SDHA), complex III (UQCRC1), complex IV (MTCO1), and complex V (ATP5B). (E) mtDNA copy number in muscles. (F) mtDNA copy number in C2C12 myotubes. For A, N=15 per group. For B, N=6 per group. For C and F, N=4 per group. For D, N=3 per group. For E, N=6 per group. One-way ANOVA test was used to determine statistical significance for B and F, student’s t-test was used to determine statistical significance for other panels. #p<0.1, *p<0.05, **p<0.01, and ***p<0.001.
 
-## Eugenol promotes lipolysis and browning of fat
+### Eugenol promotes lipolysis and browning of fat
 
 Our research has found that both EUG100 and EUG200 promoted average daily feed intake (ADF) (Figure 3A). However, interestingly, there was no change in body weight (Figure 1A). This indicates that there was an increase in ADF/average daily weight gain (ADG) (Figure 3A). In addition, eugenol decreased inguinal white adipose tissue (iWAT) and gonadal white adipose tissue (gWAT) weight while promoting brown adipose tissue (BAT) weight (Figure 3B). And eugenol decreased T-CHO and LDL while increasing HDL level in serum (Figure 3C). These apparent results suggest that eugenol may increase the energy metabolism rate in mice, offsetting the weight gain and increased fat synthesis resulting from increased food intake. Therefore, we further speculate that eugenol may promote lipolysis and fat thermogenesis. As we speculated, we found that eugenol promoted the mRNA expression of the fat synthesis-related genes Pparg and Hsl, as well as the fatty acid transport gene Fabp4, in iWAT (Figure 3D). In gWAT, it was found that eugenol promoted the mRNA expression of the Fasn and Fabp4 (Figure 3D). We further examined the mRNA expression of key genes involved in browning of fat, and found that eugenol promoted the mRNA expression of Cd137, Tbx1, Ucp1, Prdm16, Dio2, and Cidea in iWAT, while eugenol promoted the mRNA expression of Tmem26, Ucp1, Prdm16, Dio2, and Cidea in gWAT (Figure 3E). At the protein level, eugenol promoted the expression of the fatty acid transport protein FABP-1, as well as the UCP-1 protein expression in gWAT (Figure 3F). In addition, we also examined the effects of eugenol on the browning-related proteins and mitochondrial complex proteins in BAT. It was found that eugenol promoted the UCP-1 and PGC-1α protein expression (Figure 3G), as well as the mitochondrial electron transport complex III and complex V protein expression (Figure 3H). Together, these results indicate that eugenol promotes lipolysis and browning of fat.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/90724/elife-90724-fig3-v1.jpg)
 
-**Figure 3.:** (A) The average daily feed intake (ADF) and the ration of ADF to average daily weight gain (ADG). (B) Tissue weight of adipose weight. (C) The level of T-CHO, LDL, and HDL in serum. (D) The mRNA expression of genes related to lipolysis, lipogenesis, and lipid transport in inguinal white adipose tissue (iWAT) and gonadal white adipose tissue (gWAT). (E) The mRNA expression of genes related to adipose browning and thermogenesis in iWAT and gWAT. (F) The protein expression of FABP1 and UCP1 in iWAT and gWAT. (G) The expression of protein related to adipose browning and thermogenesis in brown adipose tissue (BAT). (H) The protein expression of mitochondrial electron transport complexes in BAT. For A, N=20 per group. For B, N=14 per group. For C, N=8 per group. For D and E, N=6 per group. For F and H, N=3 per group. One-way ANOVA test was used to determine statistical significance for A-C, student’s t-test was used to determine statistical significance for other panels. #p<0.1, *p<0.05, **p<0.01, and ***p<0.001.Figure 3—source data 1.Figure 3A).Figure 3—source data 2.Figure 3B).Figure 3—source data 3.Figure 3C).Figure 3—source data 4.Figure 3D).Figure 3—source data 5.Figure 3E).Figure 3—source data 6.Figure 3F).Figure 3—source data 7.Figure 3F and original scans of the relevant western blot analysis, with cropped areas.Figure 3—source data 8.Figure 3G).Figure 3—source data 9.Figure 3G and original scans of the relevant western blot analysis, with cropped areas.Figure 3—source data 10.Figure 3H).Figure 3—source data 11.Figure 3H and original scans of the relevant western blot analysis, with cropped areas.
+**Figure 3.:** (A) The average daily feed intake (ADF) and the ration of ADF to average daily weight gain (ADG). (B) Tissue weight of adipose weight. (C) The level of T-CHO, LDL, and HDL in serum. (D) The mRNA expression of genes related to lipolysis, lipogenesis, and lipid transport in inguinal white adipose tissue (iWAT) and gonadal white adipose tissue (gWAT). (E) The mRNA expression of genes related to adipose browning and thermogenesis in iWAT and gWAT. (F) The protein expression of FABP1 and UCP1 in iWAT and gWAT. (G) The expression of protein related to adipose browning and thermogenesis in brown adipose tissue (BAT). (H) The protein expression of mitochondrial electron transport complexes in BAT. For A, N=20 per group. For B, N=14 per group. For C, N=8 per group. For D and E, N=6 per group. For F and H, N=3 per group. One-way ANOVA test was used to determine statistical significance for A-C, student’s t-test was used to determine statistical significance for other panels. #p<0.1, *p<0.05, **p<0.01, and ***p<0.001.
 
-## Eugenol activates TRPV1-mediated CaN/NFATc1 signaling pathway in skeletal muscle
+### Eugenol activates TRPV1-mediated CaN/NFATc1 signaling pathway in skeletal muscle
 
 Based on the gene expression profiling, it was observed that TRPV1 is expressed in all tissues, including adipose and muscle tissues, with the highest expression in skeletal muscle compared to other TRP channels (Figure 4A and Figure 4—figure supplement 1A). Quantitative PCR (qPCR) analysis confirmed the expression of TRPV1 and TRPV2 in skeletal muscle, and the mRNA expression of only Trpv1 was promoted by EUG50 and EUG100 in TA muscle. In C2C12 cells, only TRPV1-4 were expressed, and only Trpv1 mRNA expression was promoted by 25 and 50 μM eugenol (Figure 4C). Adipose tissue expressed TRPV1 and TRPV2 genes, and EUG100 and EUG200 promoted Trpv1 mRNA expression, while EUG50 promoted Trpv2 mRNA expression (Figure 4—figure supplement 1B and C). The effect of eugenol on TRPV1 protein expression was consistent with its effect on Trpv1 mRNA expression in both skeletal muscle tissue and C2C12 cells (Figure 4D–F). Moreover, taking the TRPV1-capsaicin binding sites (TYR511, SER512, THR550, and GLU570) (Carnevale and Rohacs, 2016) as the potential binding pocket, molecular docking analysis showed that eugenol bound at the binding pocket and interacted with THR550, ASN551, LEU553, TYR554, ALA566, ILE569, GLU570, and ILE573 (Figure 4—figure supplement 2). Based on the above results, we conclude that eugenol has the potential to activate TRPV1 in both skeletal muscle and adipose tissue. We further investigated the TRPV1-mediated CaN/NFATc1 signaling pathway in skeletal muscle. CnA is a catalytic subunit of CaN, and its expression level reflects the activity of CaN. Our results showed that EUG50 and EUG100 increased CnA protein expression in the GAS and TA muscles (Figure 4D and E), and 12.5–100 μM eugenol promoted CnA protein expression in C2C12 myotubes (Figure 4F). The regulator of calcineurin 1 (MCIP1) is a biomarker to reflect the CaN activity (Yang et al., 2000), the mRNA expression of Mcip1 was increased in EUG100 groups (Figure 4—figure supplement 3). Furthermore, the nuclear translocation of NFATc1 was promoted by EUG50 and EUG100 in the GAS and TA muscles, and by 12.5–50 μM eugenol in C2C12 myotubes (Figure 4G–I). In summary, our in vivo and in vitro studies both suggest that eugenol can activate the TRPV1-mediated CaN/NFATc1 signaling pathway in skeletal muscle. Interestingly, similar to the effects of eugenol on muscle fiber types, we again found that high doses of eugenol have no effect on the signaling pathway.
 
-## Eugenol promotes fast-to-slow muscle fiber transformation by activating TRPV1-mediated CaN/NFATc1 signaling pathway
+![Figure 4.](https://cdn.elifesciences.org/articles/90724/elife-90724-fig4-v1.jpg)
+
+**Figure 4.:** (A) The gene expression profile of transient receptor potential (TRP) channels in skeletal muscle was obtained from the GTEx dataset in The Human Protein Atlas (https://www.proteinatlas.org/). (B, C) The mRNA expression of TRP channels in tibialis anterior (TA) muscle and C2C12 myotubes. (D–F) The TRPV1 and CnA protein expression in gastrocnemius (GAS) and TA muscle and in C2C12 myotubes. (G–I) The protein expression of NFATc1 in GAS and TA muscle and in C2C12 myotubes. For B, N=6 per group. For C, F, and I, N=4 per group. For D, E and G, H, N=3 per group. One-way ANOVA test was used to determine statistical significance. *p<0.05, **p<0.01, and ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90724/elife-90724-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The gene expression profile was obtained from the GTEx dataset in The Human Protein Atlas (https://www.proteinatlas.org/). (A) TRPV1 expression profiles in tissues. (B) TRP channels expression profiles in adipose tissue. (C) The mRNA expression of TRP channels in adipose tissue. For C, N=6 per group. One-way ANOVA test was used to determine statistical significance. #p<0.1, *p<0.05, **p<0.01, and ***p<0.001.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/90724/elife-90724-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** The capsaicin binding sites (TYR511, SER512, THR550, and GLU570) were selected as the binding pocket. The figure showed TRPV1 amino acid residues interacting with eugenol and the intermolecular force.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/90724/elife-90724-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** N=6 per group. One-way ANOVA test was used to determine statistical significance. *p<0.05, **p<0.01, and ***p<0.001.
+
+### Eugenol promotes fast-to-slow muscle fiber transformation by activating TRPV1-mediated CaN/NFATc1 signaling pathway
 
 To further investigate the role of TRPV1 in regulating fast-to-slow muscle fibers, we treated C2C12 myotubes with 25 μM eugenol and either 1 μM TRPV1 inhibitor AMG-517 or 0.5 μM CaN inhibitor cyclosporine A (CsA). The results showed that TRPV1 inhibition weakened the increase in intracellular Ca2+ levels induced by eugenol, suggesting that eugenol acts via TRPV1 (Figure 5A). Furthermore, the inhibition of TRPV1 and CaN attenuated the effect of eugenol on CaN (Figure 5B). In addition, eugenol increased the mitochondrial electron transport complex I, II, III, and V protein expression, the inhibition of TRPV1 and CaN attenuated the effect of eugenol on complex I, III, and V (Figure 5C). Importantly, immunofluorescence and western blot analysis revealed that eugenol promoted the fast-to-slow muscle fiber transformation, while the inhibition of TRPV1 and CaN eliminated this effect (Figure 5D and Figure 5E).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/90724/elife-90724-fig5-v1.jpg)
 
-**Figure 5.:** C2C12 myotubes were treated by 25 μM eugenol and 1 μM TRPV1 inhibitor AMG-517 or 0.5 μM CaN inhibitor cyclosporine A (CsA) for 1 day after 4 days of differentiation. (A) The flow cytometry assay was used to detect Ca2+ levels in C2C12 myotubes; FITC means the fluo-4 fluorescence and SSC means side scatter. (B) Western blot was used to detect CnA protein expression in C2C12 myotubes. (C) Western blot was used to detect mitochondrial electron transport complexes protein expression in C2C12 myotubes. (D) Western blot was used to detect slow myosin heavy chain (MyHC) and fast MyHC protein expression in C2C12 myotubes. (E) Representative immunofluorescence images of slow MyHC (green fluorescence) and relative mean fluorescence intensity quantification. Magnification: ×200. For A–D, N=4 per group. One-way ANOVA test was used to determine statistical significance. *p<0.05, **p<0.01, and ***p<0.001.Figure 5—source data 1.Figure 5A).Figure 5—source data 2.Figure 5B).Figure 5—source data 3.Figure 5B and original scans of the relevant western blot analysis, with cropped areas.Figure 5—source data 4.Figure 5C).Figure 5—source data 5.Figure 5C and original scans of the relevant western blot analysis, with cropped areas.Figure 5—source data 6.Figure 5D).Figure 5—source data 7.Figure 5D and original scans of the relevant western blot analysis, with cropped areas.Figure 5—source data 8.Figure 5E).
+**Figure 5.:** C2C12 myotubes were treated by 25 μM eugenol and 1 μM TRPV1 inhibitor AMG-517 or 0.5 μM CaN inhibitor cyclosporine A (CsA) for 1 day after 4 days of differentiation. (A) The flow cytometry assay was used to detect Ca2+ levels in C2C12 myotubes; FITC means the fluo-4 fluorescence and SSC means side scatter. (B) Western blot was used to detect CnA protein expression in C2C12 myotubes. (C) Western blot was used to detect mitochondrial electron transport complexes protein expression in C2C12 myotubes. (D) Western blot was used to detect slow myosin heavy chain (MyHC) and fast MyHC protein expression in C2C12 myotubes. (E) Representative immunofluorescence images of slow MyHC (green fluorescence) and relative mean fluorescence intensity quantification. Magnification: ×200. For A–D, N=4 per group. One-way ANOVA test was used to determine statistical significance. *p<0.05, **p<0.01, and ***p<0.001.
 
-## The myokines regulated by CaN
+### The myokines regulated by CaN
 
 To investigate which myokines are controlled by CaN, C2C12 myotubes were treated with the Ca2+ ionophore A23187. As shown in Figure 6A–C, A23187 increased the mRNA expression of MCIP1, the protein expression of CnA, and CaN activity. We chose 0.5 μM A23187 for subsequent experiments and confirmed that it increased intracellular Ca2+ levels (Figure 6D). To identify CaN-controlled myokines, we next detected the mRNA expression of several myokines that have been well documented to improve metabolic homeostasis (Eckel, 2019; Whitham and Febbraio, 2016) and promote fast-to-slow muscle fiber transformation (Correia et al., 2021; Knudsen et al., 2020; Men et al., 2021; Quinn et al., 2013; Table 1). As shown in Figure 6E, A23187 significantly increased the mRNA expression of Fndc5, Il6, Il15, and Metrnl. However, Il13 mRNA expression was not detected in C2C12 myotubes. In addition, a correlation heatmap showed the highest correlation coefficient (R=0.954) between Mcip1 expression and Il15 expression, followed by Mcip1 and Il6 (R=0.846), Mcip1 and Metrnl (0.77), and Mcip1 and Fndc5 (0.651) (Figure 6F). Furthermore, a TFBS prediction revealed more potential binding sites between the Il15 promoter and NFATc1 (Figure 6G). Based on the correlation and TFBS analysis, it was suggested that IL-15 is the myokine most likely to be regulated by the CaN/NFATc1 signaling pathway, and we selected it for further study.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/90724/elife-90724-fig6-v1.jpg)
 
-**Figure 6.:** C2C12 myotubes were treated for 16 hr with 0, 0.1, 0.5, and 1 μM Ca2+ ionophore after 2 days of differentiation. (A) The mRNA expression of Mcip1. (B) The protein expression of CnA. (C) The enzyme activity of CaN. (D) Fluo-4 was used to stain the Ca2+ and the flow cytometry assay was used to detect Ca2+ fluorescence in C2C12 myotubes in control and 0.5 μM A23187 groups. (E) The heatmap for the myokines mRNA expression in control and 0.5 μM A23187 groups. Color gradient represents relative mRNA expression with darker colors indicating higher expression. (F) Correlation analysis of gene expression values of myokines and MCIP1 gene performed by linear regression with Pearson’s correlation coefficient (r). Color gradient represents correlation coefficient with darker colors indicating higher positive correlation. (G) The number of binding sites for transcription factors NFATc1 were predicted by hTFtarget and JASPAR. For A, N=6 per group. For B and C, N=3 per group. For D, N=4 per group. For E, N=6 per group. One-way ANOVA test was used to determine statistical significance for A-C, student’s t-test was used to determine statistical significance for other panels. *p<0.05, **p<0.01, and ***p<0.001.Figure 6—source data 1.Mcip1 (Figure 6A).Figure 6—source data 2.Figure 6B).Figure 6—source data 3.Figure 6B and original scans of the relevant western blot analysis, with cropped areas.Figure 6—source data 4.Figure 6C).Figure 6—source data 5.Figure 6D).Figure 6—source data 6.Figure 6E).Figure 6—source data 7.Figure 6F).
+**Figure 6.:** C2C12 myotubes were treated for 16 hr with 0, 0.1, 0.5, and 1 μM Ca2+ ionophore after 2 days of differentiation. (A) The mRNA expression of Mcip1. (B) The protein expression of CnA. (C) The enzyme activity of CaN. (D) Fluo-4 was used to stain the Ca2+ and the flow cytometry assay was used to detect Ca2+ fluorescence in C2C12 myotubes in control and 0.5 μM A23187 groups. (E) The heatmap for the myokines mRNA expression in control and 0.5 μM A23187 groups. Color gradient represents relative mRNA expression with darker colors indicating higher expression. (F) Correlation analysis of gene expression values of myokines and MCIP1 gene performed by linear regression with Pearson’s correlation coefficient (r). Color gradient represents correlation coefficient with darker colors indicating higher positive correlation. (G) The number of binding sites for transcription factors NFATc1 were predicted by hTFtarget and JASPAR. For A, N=6 per group. For B and C, N=3 per group. For D, N=4 per group. For E, N=6 per group. One-way ANOVA test was used to determine statistical significance for A-C, student’s t-test was used to determine statistical significance for other panels. *p<0.05, **p<0.01, and ***p<0.001.
 
-## The myokine IL-15 expression depends on CaN/NFATc1 signaling pathway
+**Table 1.**
+ Myokines to be tested in our study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Myokines</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Myokines that improve metabolic homeostasis</td>
+      <td>CX3CL1, FGF21, FNDC5, IL-6, IL-8, IL-15</td>
+      <td>Whitham and Febbraio, 2016</td>
+    </tr>
+    <tr>
+      <td>Metrnl, FGF21, FNDC5, Myonectin (Erfe)</td>
+      <td>Eckel, 2019</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Myokines that improve endurance capacity and promote fast-to-slow muscle fiber transformation</td>
+      <td>FNDC5</td>
+      <td>Men et al., 2021</td>
+    </tr>
+    <tr>
+      <td>IL-13</td>
+      <td>Knudsen et al., 2020</td>
+    </tr>
+    <tr>
+      <td>IL-15</td>
+      <td>Quinn et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Neurturin (Nrtn)</td>
+      <td>Correia et al., 2021</td>
+    </tr>
+  </tbody>
+</table>
+
+### The myokine IL-15 expression depends on CaN/NFATc1 signaling pathway
 
 Firstly, it was observed that treatment with 0.5 and 1 μM Ca2+ ionophore led to upregulation of IL-15 protein expression (Figure 7A). Subsequently, we treated C2C12 myotubes with 0.5 μM Ca2+ ionophore and 0.5 μM CsA to investigate their effects. We found that Ca2+ ionophore treatment upregulated the expression of CnA, NFATc1, and IL-15 proteins, while inhibition of CaN eliminated these effects (Figure 7B–D). Furthermore, Ca2+ ionophore treatment increased the expression of slow MyHC and decreased the expression of fast MyHC, while CsA blocked this effect (Figure 7—figure supplement 1). Based on the transcription factor motif databases (JASPAR and hIFtarget), it was predicted that a sequence (5’-AATGGAAAA-3’) in the promoter regions of IL-15 was a potential binding site of NFATc1 (Figure 7E), and DNA-protein docking analysis also revealed a high probability of binding between this sequence and the NFATc1 protein (Figure 7F). We then performed an electrophoretic mobility shift assay (EMSA) to validate the binding of NFATc1 to this sequence. The probes used in the EMSA were shown in Figure 7G and the EMSA results were shown in Figure 7H. We observed upward migration bands when the C2C12 nuclear protein extract (NE) was incubated with the bio-NFATc1 probe (lanes 2–4), and compared to the control (lane 2) and CsA inhibition group (lane 4), Ca2+ treatment group showed higher expression of the band (lane 3). Moreover, the use of competing cold-NFATc1 probes showed no upward migration band (lane 5), while using the mut-NFATc1 probe again showed the band (lane 6). These findings suggest that NFATc1 may bind to the promoter of IL-15. We further investigated whether NFATc1 transcriptionally activates IL-15 through luciferase reporter assays. As shown in Figure 7I, overexpression of NFATc1 promoted NFATc1 protein expression in HEK293T cells. Additionally, after transfection with the IL-15 reporter plasmid, overexpression of NFATc1 enhanced the relative fluorescence intensity (Figure 7J), suggesting that the transcriptional activation of IL-15 is regulated by NFATc1.
 
-## Eugenol promotes IL-15 level by TRPV1-mediated CaN/NFATc1 signaling pathway
+![Figure 7.](https://cdn.elifesciences.org/articles/90724/elife-90724-fig7-v1.jpg)
+
+**Figure 7.:** (A) C2C12 myotubes were treated for 16 hr with 0, 0.1, 0.5, and 1 μM Ca2+ ionophore after 2 days of differentiation. The protein expression of IL-15. (B–D) C2C12 myotubes were treated by 0.5 μM A23187 and 0.5 μM cyclosporine A (CsA) for 16 hr after 2 days of differentiation. The protein expression of CnA, NFATc1, and IL-15. (E) Sequence logo of NFATc1 motif and the predicted NFATc1 binding sites in the promoter region of IL-15. (F) NFATc1 and the key sequence of IL-15 (5’-AATGAAAA-3’) docking. Confidence scores above 0.7 indicate high probability of binding, scores between 0.5 and 0.7 suggest possible binding, and scores below 0.5 indicate unlikely binding. (G) The probe sequence of NFATc1. The underline represents the predicted binding site of NFATc1, bio-NFATc1 means oligonucleotide probes that labeled with biotin at the 5’ end, cold-NFATc1 means oligonucleotide probes that did not label with biotin, mu-NFATc1 means oligonucleotide probes that were mutated at the binding site. (H) Nuclear protein extracts (NE) with NFATc1 probe were used for electrophoretic mobility shift assay (EMSA). (I) The protein expression of NFATc1 after transfecting 1 μg/mL pcDNA3.1 vector, 0.5 μg/mL or 1 μg/mL pcDNA3.1-NFATc1 in HEK293T cells. (J) The relative luciferase intensity referred to the ratio between firefly luciferase intensity and Renilla luciferase intensity. For A–D, N=3 per group. For J, N=6 per group. One-way ANOVA test was used to determine statistical significance. *p<0.05, **p<0.01, and ***p<0.001.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/90724/elife-90724-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A–C) The mRNA and protein expression of muscle fiber type in C2C12 myotubes. For B, N=6 per group. For A and C, N=3 per group. One-way ANOVA test was used to determine statistical significance. *p<0.05, **p<0.01, and ***p<0.001.
+
+### Eugenol promotes IL-15 level by TRPV1-mediated CaN/NFATc1 signaling pathway
 
 We conducted further experiments to examine the effect of eugenol on IL-15 expression. Our results (Figure 8A–C) showed that EUG50 and EUG100 promoted the mRNA and protein expression of IL-15 in both GAS and TA muscle. Interestingly, in extensor digitorum longus (EDL) and soleus (SOL) muscle, which are dominated by fast and slow muscle fibers respectively, EUG100 promoted Il15 mRNA expression (Figure 8D). We also found that the mRNA expression of Il15 was higher in SOL muscle than in EDL muscle (Figure 8D). Moreover, Pearson’s correlation analysis showed that Il15 expression positively correlated with Myh7 (R=0.714) and Myh2 (R=0.774) expression, and negatively correlated with Myh4 (R=−0.568) (Figure 8D). Consistent with the mRNA expression data, the IL-15 protein expression was also higher in SOL muscle than in EDL muscle (Figure 8E). Additionally, EUG50 and EUG100 increased the concentration of IL-15 in the serum (Figure 8F). These findings suggested that IL-15 was a oxidative muscle fiber type-specific myokine that was promoted by eugenol. Our in vitro experiments showed that 25 and 50 μM eugenol increased the mRNA expression and secretion of IL-15 (Figure 9A and B), which was consistent with our in vivo experiments. In addition, the inhibition of TRPV1 and CaN decreased the upregulation of eugenol on IL-15 mRNA and protein expression (Figure 9C and D). Immunofluorescence staining with IL-15 also showed similar results (Figure 9—figure supplement 1).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/90724/elife-90724-fig8-v1.jpg)
 
-**Figure 8.:** (A) The IL-15 mRNA expression in gastrocnemius (GAS) and tibialis anterior (TA) muscle. (B, C) The IL-15 protein expression in GAS and TA muscle. (D) Left: The mRNA expression of Myh7, Myh2, Myh4, and Il15 in extensor digitorum longus (EDL) and soleus (SOL) muscle of mice. Right: Correlation analysis of gene expression values performed by linear regression with Pearson’s correlation coefficient (r). Color gradient represents correlation coefficient with darker colors indicating higher positive correlation. (E) The protein expression of slow myosin heavy chain (MyHC), fast MyHC, and IL-15. (F) The concentration of IL-15 in serum. For A and D, N=6 per group. For B and C and E, N=3 per group. For F, N=8 per group. One-way ANOVA test was used to determine statistical significance. *p<0.05, **p<0.01, and ***p<0.001.Figure 8—source data 1.IL-15 mRNA expression in gastrocnemius (GAS) and tibialis anterior (TA) muscle (Figure 8A).Figure 8—source data 2.Figure 8B).Figure 8—source data 3.Figure 8B and original scans of the relevant western blot analysis, with cropped areas.Figure 8—source data 4.Figure 8C).Figure 8—source data 5.Figure 8C and original scans of the relevant western blot analysis, with cropped areas.Figure 8—source data 6.Figure 8D).Figure 8—source data 7.Figure 8E).Figure 8—source data 8.Figure 8E and original scans of the relevant western blot analysis, with cropped areas.Figure 8—source data 9.Figure 8F).
+**Figure 8.:** (A) The IL-15 mRNA expression in gastrocnemius (GAS) and tibialis anterior (TA) muscle. (B, C) The IL-15 protein expression in GAS and TA muscle. (D) Left: The mRNA expression of Myh7, Myh2, Myh4, and Il15 in extensor digitorum longus (EDL) and soleus (SOL) muscle of mice. Right: Correlation analysis of gene expression values performed by linear regression with Pearson’s correlation coefficient (r). Color gradient represents correlation coefficient with darker colors indicating higher positive correlation. (E) The protein expression of slow myosin heavy chain (MyHC), fast MyHC, and IL-15. (F) The concentration of IL-15 in serum. For A and D, N=6 per group. For B and C and E, N=3 per group. For F, N=8 per group. One-way ANOVA test was used to determine statistical significance. *p<0.05, **p<0.01, and ***p<0.001.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/90724/elife-90724-fig9-v1.jpg)
+
+**Figure 9.:** C2C12 myotubes were treated by 0–200 eugenol for 1 day after 4 days of differentiation. (A) The effect of eugenol on Il15 mRNA expression in C2C12 myotubes. (B) The effect of eugenol on IL-15 protein expression in the C2C12 cell medium. Coomassie staining as loading control. (C, D) C2C12 myotubes were treated by 25 μM eugenol and 1 μM TRPV1 inhibitor AMG-517 or 0.5 μM calcineurin (CaN) inhibitor cyclosporine A (CsA) for 1 day after 4 days of differentiation. The mRNA and protein expression of IL-15. N=4 per group. One-way ANOVA test was used to determine statistical significance. *p<0.05, **p<0.01, and ***p<0.001.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/90724/elife-90724-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** IL-15 (green fluorescence) and 4,6-diamidino-2-phenylindole (DAPI) (blue fluorescence). Magnification: ×200.
 
 ## Discussion
 
@@ -105,66 +187,66 @@ In conclusion, our findings indicate that eugenol can promote the transformation
 
 ## Materials and methods
 
-## Animals, treatments, and sample collection
+### Animals, treatments, and sample collection
 
 A total of eighty 4-week-old male C57BL/6J mice (Dashuo Experimental Animal Co. Ltd., Chengdu, China) were divided into four treatments (n=20) using a simple randomization method. The control group were fed a basal diet supplemented with 0% eugenol (EUG, purity ≥98%, Sigma, St. Louis, MO, USA), other groups were fed a basal diet supplemented with 50, 100, and 200 mg/kg eugenol, respectively (EUG50, EUG100, and EUG200). All mice were housed in individual cages (23°C ± 2°C, 12 hr light/12 hr dark cycle) and provided with free access to feed and water. The experiment lasted for 4 weeks. The weight of mice was measured every week. At the end of the experiment, 14 mice (n=14) anesthetized with CO2 were sacrificed. After being weighed and photographed, skeletal muscle (including TA, GAS, SOL, and EDL), fat (including iWAT, gWAT, BAT) were collected and stored at –80°C for subsequent analyses. All procedures of animal experiments were performed according to the protocols approved by the Animal Care Advisory Committee of Sichuan Agricultural University under permit No. YYS20200929.
 
-## Exhausting swimming test
+### Exhausting swimming test
 
 The forced swimming capacity test was employed in this study to evaluate the effects of eugenol on endurance capacity in mice. A total of thirty 4-week-old mice were divided into the control and EUG100 group (n=15). After 4 weeks of feeding, the mice with a load of lead wire (7% of body weight) attached to its tail were placed in individual swimming pools (25°C ± 1°C, 35 cm depth). Exhaustive swimming time was immediately recorded when the mice failed to return to the surface continuously over a 7 s time frame and showed a lack of coordinated movements.
 
-## Cell lines
+### Cell lines
 
 The C2C12 cell lines, sourced from the Shanghai Cell Bank of the Chinese Academy of Sciences, have been authenticated using the STR profiling method and tested negative for mycoplasma.
 
-## Cell culture and treatments
+### Cell culture and treatments
 
 C2C12 cells (Shanghai Cell Bank, Chinese Academy of Sciences, passages 3–8) were cultured in Dulbecco’s modified Eagle medium (Invitrogen, Carlsbad, CA, USA) supplemented with 10% fetal bovine serum (Gibco, Paisley, Scotland, UK), 100 mg/L streptomycin and 100 U/mL penicillin (Gibco) at 37°C in a 5% CO2 atmosphere. When cells reached ~80% confluence, 2% horse serum (Gibco) replaced 10% fetal bovine serum to induce differentiation. For eugenol treatment, cells were treated with 0, 12.5, 25, 50, 100, 200 μM EUG for 1 day after 4 days of differentiation. For Ca2+ ionophore A23187 (Sigma) treatment, cells were treated with 0, 0.1, 0.5, 1 μM A23187 for 16 hr after 2 days of differentiation, or cells were treated with 0.5 μM A23187 and 0.5 μM CsA. For the following mechanism studies, cells were treated with 25 μM EUG and 1 μM TRPV1 inhibitor AMG-517 or 0.5 μM CaN inhibitor cyclosporin A (CsA, Sigma).
 
-## Cell viability assay
+### Cell viability assay
 
 Cell viability was analyzed using Cell-Counting Kit-8 (Beyotime, Jiangsu, China) to determine the safe dose of EUG on C2C12 myotubes. Briefly, cells were treated with EUG (0, 12.5, 25, 50, 100, 200, 400, 800, 1600 μM) for 1 day after 4 days of differentiation, 10 μL CCK-8 solution was then added to each well and then incubated for 1 hr at 37°C. After incubation, the OD value was immediately measured at 450 nm using the SpectraMax 190 Absorbance Plate Reader.
 
-## Measurement of intracellular calcium ion (Ca2+)
+### Measurement of intracellular calcium ion (Ca2+)
 
 After 1 day of treatment with C2C12 myotubes in 24-well cell culture plates, the cells were digested using Trypsin-EDTA solution and transferred from each well into a centrifuge tube. The Trypsin-EDTA solution was removed and the cells were washed three times with a calcium-free PBS solution. Following this, the PBS solution was removed and 200 μL of 5 μM Ca2+ fluorescent probe Fluo-4 (Beyotime) was added to the cells and incubated at 37°C for 30 min. After the incubation, the probe was removed by washing the cells three times with PBS. Finally, Ca2+ fluorescence was detected using flow cytometry (FACSVerse, BD Biosciences, East Rutherford, NJ, USA) and analyzed using FlowJo 10.0.7 software.
 
-## Gene expression and mitochondrial DNA qPCR
+### Gene expression and mitochondrial DNA qPCR
 
 Total RNA was extracted using RNA Isolater Total RNA Extraction Reagent (Vazyme, Nanjing, China) and genomic DNA was extracted using mammalian genomic DNA extraction kit (Beyotime) according to the instructions. After measuring the concentration of total RNA, total RNA reverse-transcribed to cDNA using HiScript II Q RT Supermix (Vazyme). qPCR was performed using ChamQ SYBR Color qPCR Master Mix (Vazyme) on a 7900 HT Real-time PCR system (384-cell standard block) (Applied Biosystems). Relative mtDNA was quantified by qPCR using primers for mitochondrially encoded Nd1 normalized to nuclear-encoded 36b4 (Rplp0) DNA. And Gapdh was used as an endogenous control for normal qPCR. The primer sequences are listed in Supplementary file 1.
 
-## Protein extraction and western blot
+### Protein extraction and western blot
 
 RIPA lysis buffer (Beyotime) was used to extract total protein. The nuclear protein was extracted using NE-PER Nuclear and Cytoplasmic Extraction Reagents (Thermo Fisher). Protein from conditioned media was extracted using methanol-chloroform precipitation method as previously described (Jakobs et al., 2013). Protein concentration was determined by the BCA assays, and then proteins were transferred to a nitrocellulose membrane using a wet Trans-Blot system (Bio-Rad, Hercules, CA, USA). The primary antibodies used were anti-slow MyHC (Sigma, cat. no. M8421), anti-fast MyHC (Sigma, cat. no. M4276), anti-TRPV1 (Alomone, cat. no. ACC030), anti-Calcineurin A (CnA, Abcam, cat. no. ab90540), anti-NFATc1 (Cell Signaling Technology, cat. no. #8032), anti-IL-15 (R&D Systems, cat. no. AF447), anti-PGC-1α (Proteintech, cat. no. 66369-1-Ig), anti-NDUFA9 (GeneTex, cat. no. GTX132978), anti-SDHA (GeneTex, cat. no. GTX636098), anti-UQCRC1 (GeneTex, cat. no. GTX630393), anti-MTCO1(Bioss, cat. no. bs-3953R), anti-ATP5B (GeneTex, cat. no. GTX132925), anti-FABP1 (Cell Signaling Technology, cat. no. #13368), anti-UCP-1 (Proteintech, cat. no. 23673-1-AP), anti-PRDM16 (R&D Systems, cat. no. AF6295), anti-β-actin (TransGen, cat. no. HC201-01), and anti-Histone H3 (Beyotime, cat. no. AF0009). Coomassie staining is depicted as loading control for conditioned media protein (Welinder and Ekblad, 2011). The signal was visualized using a Clarity Western ECL Substrate (Bio-Rad, Hercules, CA, USA) and a ChemiDoc XRS Imager System (Bio-Rad). The target band density was identified using Image Lab 5.1 (Bio-Rad).
 
-## Immunofluorescence
+### Immunofluorescence
 
 After treatment, C2C12 myotubes were washed three times (5 min each time) with phosphate-buffered saline (PBS) and fixed in Immunol Staining Fix Solution (Beyotime) for 20 min. Then C2C12 myotubes were permeabilized with 0.5% Triton X-100 for 20 min, blocked with blocking buffer for 2 hr at 37°C, incubated with the primary antibodies including slow MyHC (1:50, Sigma, Cat. No. M8421) for 16 hr, and incubated with the fluorescent secondary antibody (1:1000, Cell Signaling, USA) for 2 hr at 37°C. Finally, 4,6-diamidino-2-phenylindole (Beyotime) was used to stain cell nucleus for 10 min at room temperature. A positive signal was detected and captured using fluorescence microscopy (Lecia DMI4000 B).
 
-## Molecular-protein docking and DNA-protein docking
+### Molecular-protein docking and DNA-protein docking
 
 The protein structures of TRPV1 (PDB codes: 5IS0) and NFATc1 (PDB codes: 1A66) were downloaded from the Research Collaboratory for Structural Bioinformatics Protein Data Bank database (RCSB PDB, https://www.rcsb.org/) (Burley et al., 2019). The structure of eugenol (ZINC1411) was downloaded from the ZINC database (https://zinc.docking.org/substances/). The DNA structure was generated using Discovery Studio 2019 software (Discovery Studio 2019; BIOVIA; San Diego, CA, USA). Discovery Studio 2019 software was used to perform molecular-protein docking. HDOCK (http://hdock.phys.hust.edu.cn/) was used to perform DNA-protein docking.
 
-## Prediction of TFBS
+### Prediction of TFBS
 
 The gene promoter sequences of mouse (upstream 2 kb) were acquired from National Center for Biotechnology Information. hIFtarget (https://guolab.wchscu.cn/hTFtarget/#!/) and JASPAR (https://jaspar.elixir.no/) applied to predict the potential NFATc1 binding sites at the promoter of genes. A putative binding sites predicted by both the tools were selected for further EMSA probes design.
 
-## Electrophoretic mobility shift assay
+### Electrophoretic mobility shift assay
 
 After synthesizing the single-stranded probes for EMSA, annealing buffer for DNA oligos (5×) (Beyotime) was used to anneal to form double-stranded DNA probes. EMSA were performed using chemiluminescent EMSA Kit (Beyotime) according to the instructions. Briefly, 10 µL reaction system with nuclease-free water, EMSA/Gel-Shift Binding Buffer, nuclear protein, and probe was transferred to a nitrocellulose membrane using a wet Trans-Blot system. The reaction system includes negative control reaction (no nuclear protein), sample reaction, probe cold competition reaction (100-fold unlabeled probe), mutation probe cold competition reaction (100-fold unlabeled mutation probe). The signal was visualized using a Clarity Western ECL Substrate (Bio-Rad, Hercules, CA, USA) and a ChemiDoc XRS Imager System (Bio-Rad).
 
-## Plasmid construction and extraction
+### Plasmid construction and extraction
 
 The plasmid of pcDNA3.1 vector, pCDNA3.1-NFATc1 (the NFATc1 coding sequences were inserted into the pcDNA3.1 vector), pGL3 vector, and pGL3-IL15 (the sequence of 2 kb upstream of the IL-15 promoter sequence were inserted into the pGL3 vector) were from Tsingke Biotechnology Co., Ltd (Beijing, China). Plasmid amplification is provided in Escherichia coli bacteria cells. Plasmid Maxi Preparation Kit for All Purpose (Beyotime) was used to extract plasmids.
 
-## Dual-luciferase reporter gene assay
+### Dual-luciferase reporter gene assay
 
 HEK293T cells in 48-well plates were transfected with pcDNA3.1 together with pGL3 or pcDNA3.1-NFATc1 together with pGL3 or pcDNA3.1 together with pGL3-IL15 or pcDNA3.1-NFATC1 together with pGL3-IL15. Luciferase activity was detected by a Dual-Luciferase assay kit (Beyotime) with Glomax 96 microplate luminometer (Promega) in luminometer mode. The raw values of firefly luciferase were normalized to Renilla luciferase.
 
-## Enzyme activities analysis
+### Enzyme activities analysis
 
 The tissue and C2C12 myotube were homogenized in saline and centrifuged at 3500×g 4°C for 10 min. The supernatant was carefully transferred to a centrifuge tube. Total protein concentration was determined by the BCA assays. The enzyme activity of LDH, MDH, SDH, and CaN was measured using commercial assay kits (Nanjing Jiancheng Bioengineering Institute, Nanjing, China).
 
-## Statistical analyses
+### Statistical analyses
 
 SAS 9.4 software was used to perform one-way ANOVA and t test. After the normality and homogeneity test, one-way ANOVA followed by Duncan’s multiple-range test was performed for multiple-groups comparisons. Student’s t test was performed for two-groups comparisons. Correlation analysis was performed by Pearson’s correlation coefficient analysis. Statistical methods were not used to predetermine sample size. GraphPad Prism 8.0 (GraphPad Software, Inc, San Diego, CA, USA) software was used to draw column charts and Omicstudio tools (https://www.omicstudio.cn/tool.) was used to draw heatmaps. Data were expressed as mean ± SEM. Statistical significance was defined as #p<0.1, *p<0.05, **p<0.01, and ***p<0.001 for all figures.

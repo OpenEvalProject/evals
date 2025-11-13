@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.33562.001 Spontaneous brain activity, typically investigated using resting-state fMRI (rsfMRI), provides a measure of inter-areal resting-state functional connectivity (RSFC). Although it has been established that RSFC is non-stationary, previous dynamic rsfMRI studies mainly focused on revealing the spatial characteristics of dynamic RSFC patterns, but the temporal relationship between these RSFC patterns remains elusive. Here we investigated the temporal organization of characteristic RSFC patterns in awake rats and humans. We found that transitions between RSFC patterns were not random but followed specific sequential orders. The organization of RSFC pattern transitions was further analyzed using graph theory, and pivotal RSFC patterns in transitions were identified. This study has demonstrated that spontaneous brain activity is not only nonrandom spatially, but also nonrandom temporally, and this feature is well conserved between rodents and humans. These results offer new insights into understanding the spatiotemporal dynamics of spontaneous activity in the mammalian brain.
+Spontaneous brain activity, typically investigated using resting-state fMRI (rsfMRI), provides a measure of inter-areal resting-state functional connectivity (RSFC). Although it has been established that RSFC is non-stationary, previous dynamic rsfMRI studies mainly focused on revealing the spatial characteristics of dynamic RSFC patterns, but the temporal relationship between these RSFC patterns remains elusive. Here we investigated the temporal organization of characteristic RSFC patterns in awake rats and humans. We found that transitions between RSFC patterns were not random but followed specific sequential orders. The organization of RSFC pattern transitions was further analyzed using graph theory, and pivotal RSFC patterns in transitions were identified. This study has demonstrated that spontaneous brain activity is not only nonrandom spatially, but also nonrandom temporally, and this feature is well conserved between rodents and humans. These results offer new insights into understanding the spatiotemporal dynamics of spontaneous activity in the mammalian brain.
 
 ## Introduction
 
@@ -33,15 +33,53 @@ In this study, we investigated the temporal transitions between spontaneous brai
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/33562/elife-33562-fig1-v1.jpg)
 
-## Characteristic RSFC patterns in the awake rat brain
+### Characteristic RSFC patterns in the awake rat brain
 
 An example of a characteristic RSFC pattern is shown in Figure 2, and the other 39 characteristic RSFC patterns are shown in Figure 2—figure supplements 1–5. As the whole-brain parcellation scheme we adopted maximized within-parcel and minimized cross-parcel RSFC profile similarity, these 40 group-level seed-based RSFC maps represented a set of characteristic RSFC patterns in the awake rat brain, and were used as the reference patterns. Notably, the number 40 was arbitrarily selected as an example of low-dimensionality parcellation of the rat brain. Similar analysis can be applied using other parcel numbers.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/33562/elife-33562-fig2-v1.jpg)
+
+**Figure 2.:** Left: seed region; Mid: RSFC pattern of the seed. Color bar indicates t values; Right: average of rsfMRI frames matched to the RSFC pattern. Color bar shows BOLD amplitude. Distance to bregma is listed at the bottom of each slice. CC: spatial correlation coefficient between the average of rsfMRI frames (Right) and the corresponding seed map (Mid).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33562/elife-33562-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Left: seed region; Mid: RSFC pattern of the seed; Right: average of rsfMRI frames matched to the RSFC pattern. Distance to bregma for each slice is the same as those shown in Figure 2. CC: spatial correlation coefficient between the average of rsfMRI frames and the corresponding seed map.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/33562/elife-33562-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Left: seed region; Mid: RSFC pattern of the seed; Right: average of rsfMRI frames matched to the RSFC pattern. Distance to bregma for each slice is the same as those shown in Figure 2. CC: spatial correlation coefficient between the average of rsfMRI frames and the corresponding seed map.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/33562/elife-33562-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Left: seed region; Mid: RSFC pattern of the seed; Right: average of rsfMRI frames matched to the RSFC pattern. Distance to bregma for each slice is the same as those shown in Figure 2. CC: spatial correlation coefficient between the average of rsfMRI frames and the corresponding seed map.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/33562/elife-33562-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Left: seed region; Mid: RSFC pattern of the seed; Right: average of rsfMRI frames matched to the RSFC pattern. Distance to bregma for each slice is the same as those shown in Figure 2. CC: spatial correlation coefficient between the average of rsfMRI frames and the corresponding seed map.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/33562/elife-33562-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Left: seed region; Mid: RSFC pattern of the seed; Right: average of rsfMRI frames matched to the RSFC pattern. Distance to bregma for each slice is the same as those shown in Figure 2. CC: spatial correlation coefficient between the average of rsfMRI frames and the corresponding seed map.
+
 Figure 2 (right panel) also shows the averaged pattern of rsfMRI frames that were matched to the reference RSFC pattern, which demonstrated high reminiscence between the BOLD co-activation pattern of single rsfMRI frames and the RSFC pattern it corresponded to (correlation coefficient = 0.91).
 
-## Reproducible temporal transitions between RSFC patterns
+### Reproducible temporal transitions between RSFC patterns
 
 We first demonstrated that temporal transitions between RSFC patterns were highly reproducible at the group level. We randomly split all rats into two subgroups and obtained the transition matrix for each subgroup. Both matrices exhibited high similarity (Figure 3a), reflected by a significant correlation (r = 0.86, p ≈ 0) between the corresponding off-diagonal entries. To control for the possible bias that transitions between similar RSFC patterns may have a higher chance to occur in both subgroups, which can inflate the reproducibility, we regressed out the spatial similarities between reference RSFC patterns from both transition matrices. The reproducibility remained high after regression, with a significant correlation value of 0.77 (p ≈ 0, Figure 3b). Taken together, these results suggest that transitions between RSFC patterns are not random but follow specific temporal sequences in awake rats, and these transition sequences are not dictated by the similarity between RSFC patterns.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/33562/elife-33562-fig3-v1.jpg)
+
+**Figure 3.:** (a) RSFC pattern transition matrices of subgroups 1 and 2 without regression of spatial similarities between reference RSFC patterns. (b) RSFC pattern transition matrices of subgroups 1 and 2 with regression of spatial similarities between reference RSFC patterns. Entries in each transition matrix were normalized to the range of [0, 1].
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33562/elife-33562-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/33562/elife-33562-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Left: without regression of RSFC pattern similarities. Right: with regression of RSFC pattern similarities. Red lines: the reproducibility of RSFC pattern transition matrices between FD-based group division with (right) and without (left) regression of RSFC pattern similarities.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/33562/elife-33562-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Left: RSFC pattern transition matrices at the motion censoring threshold of FD <0.1 mm without (top) and with (bottom) regression of RSFC pattern similarities. Right: RSFC pattern transition matrices at the motion censoring threshold of FD <0.2 mm without (top) and with (bottom) regression of RSFC pattern similarities. The correlations between the RSFC pattern transition matrices at FD <0.1 mm and those at FD <0.2 mm were 0.83 and 0.88 with and without regression of seed map similarities, respectively.
 
 To further examine whether reproducible RSFC pattern transitions were dominated by a small portion of rats, we assessed the reproducibility of RSFC pattern transitions for each individual animal by computing Pearson correlation between each individual-level transition matrix and the group-level transition matrix. Fisher Z-transformed correlation values were then averaged across rats. Our data showed a significant individual-level reproducibility (mean (±SD)=0.57 (±0.14), p ≈ 0). These results collectively indicate that nonrandom RSFC pattern transitions are a characteristic feature in awake rats.
 
@@ -51,7 +89,7 @@ In the second analysis, we directly compared the motion level between rsfMRI fra
 
 To examine whether our results were dependent on the motion censoring threshold selected (FD <0.2 mm), we reanalyzed our data using a more stringent censoring threshold (FC <0.1 mm). At this threshold and also keeping all other motion control criteria identical, very similar RSFC pattern transition matrices were obtained (Figure 3—figure supplement 3). The correlations between the RSFC pattern transition matrices at FD <0.1 mm and those at FD <0.2 mm were 0.83 and 0.88 with and without regression of RSFC pattern similarities, respectively, suggesting that our results were robust and insensitive to the motion censoring threshold applied.
 
-## Within- and between-brain system transitions
+### Within- and between-brain system transitions
 
 Figure 4 shows the group-level transition matrix thresholded using a permutation test (p<0.05, FDR corrected). Rows/columns in the transition matrix were arranged based on the brain system that the seed region of the reference RSFC pattern belonged to. Transitions between RSFC patterns tended to occur within the same brain system, as shown by a relatively denser distribution of near-diagonal nonzero elements in the matrix. However, cross-system transitions such as striatal-thalamic, striatal-somatosensory, striatal-prefrontal, striatal-hippocampal, hippocampal-amygdala, amygdala-motor transitions were observed.
 
@@ -59,7 +97,7 @@ Figure 4 shows the group-level transition matrix thresholded using a permutation
 
 **Figure 4.:** Rows/columns are arranged based on the brain system of the seed regions. Numbers next to/below rows/columns correspond to the seed map number in Figure 2 and Figure 2—figure supplement 1.
 
-## Organization of RSFC pattern transitions
+### Organization of RSFC pattern transitions
 
 A directed weighted graph of the RSFC pattern transition network was constructed based on the group-level thresholded transition matrix (Figure 4), as shown in Figure 5. The number of edges was 242, yielding a connection density of 15.5%. The transition network exhibited a prominent community structure with nine modules identified using the Louvain community detection algorithm (Vincent et al., 2008), suggesting that RSFC patterns belonging to the same modules had a higher probability to transit between each other than RSFC patterns across modules. The corresponding seed regions of RSFC patterns were color coded based on the community affiliations (Figure 5 inlet). Module one primarily covered hippocampal and retrohippocampal networks as well as caudal visual networks. Module two included caudal midbrain networks. Module three was comprised of brainstem and rostral midbrain networks. Module four covered rostral visual, amygdala, hypothalamic as well as motor and olfactory networks. Module five was dominated by auditory and somatosensory networks. Module six captured posterior ventral thalamic networks. Module seven included anterior thalamic networks. Module eight covered striatal and prefrontal networks. Module nine mainly included anterior cingulate cortex network. Networks from the same system usually fell into the same community, again indicating transitions between RSFC patterns frequently occurred within the same brain system. However, networks from different systems were also observed in the same modules, which highlights the importance of cross-system transitions.
 
@@ -79,7 +117,7 @@ Figure 7 shows RSFC pattern transitions of four representative hubs (red nodes),
 
 **Figure 7.:** Green arrows denote bidirectional transitions between RSFC patterns. Orange arrows denote unidirectional transitions between RSFC patterns. Pattern numbers correspond to the seed map numbers shown in Figure 2 and Figure 2—figure supplement 1—5. The brain system of the seed for each pattern is listed in the circle. Th and Hypoth, Thalamus and Hypothalamus; HP and RetroHP, Hippocampus and Retrohippocampus.
 
-## RSFC pattern transitions in humans
+### RSFC pattern transitions in humans
 
 To assess whether temporal transitions between RSFC patterns were also nonrandom in humans, we applied the same analysis to rsfMRI data from 812 human subjects in the HCP. Each frame was matched to one of 333 characteristic RSFC patterns defined by a well-established RSFC-based parcellation in humans (Gordon et al., 2016), and the number of transitions between every two RSFC patterns was counted for each subject. All subjects were then randomly split into two subgroups (406 subjects in each subgroup). The reproducibility between two subgroups was 0.9955 (without regression of seed map similarities, Figure 8a), and 0.9954 (with the regression of seed map similarities, Figure 8b). To assess the reproducibility at the individual level, the correlation between the transition matrix of each individual subject versus the group-level transition matrix was calculated. The mean correlation (±SD) across all subjects was 0.60 (±0.05). All these results were highly consistent with our findings in awake rats, suggesting that nonrandom transitions between RSFC patterns are conserved across species and might represent a characteristic feature of the mammalian brain.
 
@@ -103,7 +141,7 @@ The hub score of each RSFC pattern was calculated in the same way as the rat dat
 
 In the present study, we investigated temporal sequential transitions between intrinsic brain activity patterns in the awake rat and human brain. We showed that transitions between RSFC patterns exhibited high reproducibility across animals and were significantly above chance (Figures 3 and 4). In addition, the RSFC pattern transition network was constructed using the thresholded transition matrix (Figure 4), and its topological organization including the community structure (Figure 5) and hubness (Figure 6) was evaluated. Moreover, the transitions of four representative hub RSFC patterns in rats were demonstrated (Figure 7). Importantly, non-random RSFC pattern transitions were also observed in humans (Figure 8), and the organization of the human transition network was further analyzed using the same graph analysis approach (Figures 9 and 10). Taken together, the present study for the first time characterized the temporal organization between successive brain connectivity configurations. It demonstrates that spontaneous brain activity was not only far from random spatially, but also far from random temporally. Similar results in rats and humans indicate that this feature might be well conserved across species. These data collectively have provided new insight into understanding the spatiotemporal dynamics of spontaneous activity in the mammalian brain.
 
-## Method to unveil the temporal relationship between characteristic RSFC patterns
+### Method to unveil the temporal relationship between characteristic RSFC patterns
 
 Although it has been well recognized that RSFC is dynamic in nature (Hutchison et al., 2013a), previous studies in this research line generally focused on revealing the spatial features of recurring RSFC patterns. Meanwhile, we have relatively sparse knowledge in the temporal relationship between characteristic RSFC patterns (Majeed et al., 2011; Zalesky et al., 2014; Vidaurre et al., 2017). To bridge this gap, we set out to systematically investigate temporal transitions between RSFC patterns.
 
@@ -111,7 +149,7 @@ To tackle this issue, we first need a set of representative RSFC patterns in the
 
 To examine the temporal relationship between these characteristic RSFC patterns, we adapted a recently developed method showing that BOLD co-activation patterns of rsfMRI frames well correspond to their instantaneous RSFC patterns (Liu et al., 2013; Liu and Duyn, 2013). This notion has been demonstrated in both humans, as well as in awake and anesthetized rats (Liang et al., 2015). Using this notion, each rsfMRI frame was corresponded to one of the 40 characteristic RSFC patterns based on the spatial similarity to the frame’s BOLD co-activation pattern. The validity of this matching process was confirmed by high spatial similarity between averaged rsfMRI frames and matched characteristic RSFC patterns, quantified by their spatial correlations (Figure 2 and Figure 2—figure supplements 1–5). This step resulted in a time sequence of RSFC patterns, which allowed us to systematically investigate the temporal transitions between these RSFC patterns.
 
-## Nonrandom temporal transitions between RSFC patterns in rats
+### Nonrandom temporal transitions between RSFC patterns in rats
 
 Our data showed that temporal transitions between RSFC patterns were highly reproducible in rats, reflected by significant reproducibility between randomly divided subgroups. In addition, these reproducible transitions were not dominated by a small portion of animals, evidenced by highly significant reproducibility at the individual level. To rule out the possible inflation of reproducibility resulting from the possibility that transitions between more similar RSFC patterns may occur at a higher chance in both subgroups, spatial similarities between characteristic RSFC patterns were regressed out in the transition matrices of both subgroups, and we found that the reproducibility of transitions remained high. These data show that transitions between RSFC patterns were robust and not dictated by RSFC pattern similarities. In addition, using permutation tests, we identified a number of transitions between RSFC patterns that were statistically above chance, further demonstrating that these transitions were non-random.
 
@@ -119,13 +157,13 @@ We also ruled out the possibility that RSFC pattern transitions were driven by h
 
 Taken together, these data provide strong evidence indicating that RSFC patterns do not transit from/to each other in a random manner, but follow specific temporal sequences. This result well agrees with a recent report that spontaneous activity from ensembles of simultaneously recorded neurons was characterized by ongoing spatiotemporal activity patterns (Mazzucato et al., 2015), which recurred during all trials, and transitions between patterns could be reliably extracted using a hidden Markov model (Mazzucato et al., 2015).
 
-## Transitions between RSFC patterns within and across brain systems in rats
+### Transitions between RSFC patterns within and across brain systems in rats
 
 We found that transitions between RSFC patterns occurred frequently between networks from the same brain system (Figure 4). This result might be attributed to the factor that seed regions of networks in the same brain system typically subserve similar brain function. In addition, regions in the same brain system are usually strongly connected with each other (Liang et al., 2013), and thus transitions between their RSFC patterns can frequently occur.
 
 Our data also showed prominent cross-system transitions (Figure 4). For instance, switching between striatal networks and somatosensory/prefrontal cortical networks frequently occurred. Such cortical-subcortical system transitions might rely on the structural basis of corticostriatal projections identified in the rat brain (Paxinos, 2015). We speculate that bidirectional transitions between striatal and somatosensory/prefrontal RSFC networks might indicate the presence of both ‘bottom-up’ and ‘top-down’ processing involving high-order cortical and low-order subcortical regions at rest (Gurney et al., 2015; Piray et al., 2016). In addition, significant transitions from striatal to thalamic/hippocampal RSFC networks indicate a close relationship between these subcortical systems, which can be further supported by strong RSFC between the CPu and thalamus found in the awake rat brain (Liang et al., 2013). Taken together, these results show non-trivial transitions between RSFC patterns within and across systems in the awake rat brain, and such transitions might play a critical role in coordinating spontaneous brain activity in separating brain systems.
 
-## Organization of the RSFC pattern transition network in rats
+### Organization of the RSFC pattern transition network in rats
 
 A graph characterizing the transition network between RSFC patterns was constructed with each node representing a characteristic RSFC pattern and each edge denoting a statistically significant transition relationship between two nodes. We investigated the topological organization of this weighted directed graph including its community structure (Figure 5) and hubness (Figure 6). The transition network exhibited a prominent community structure evidenced by a high modularity, indicating that the global transition network between RSFC patterns was organized in a non-trivial manner.
 
@@ -135,47 +173,47 @@ In accordance with our previous report that anterior ventral thalamus was a crit
 
 Further, our data revealed a hub of the RSFC pattern of the ventral CPu. As a part of the striatum, CPu is linked to multiple corticostriatal projections (Paxinos, 2015), and it might play a centralized role in transitions involving multiple cortical RSFC patterns (Lee et al., 2017). Taken together, these data indicate that hub RSFC patterns were central nodes linking multiple brain systems and might be critical for us to understand how activities from different brain systems are integrated to maintain normal brain function in rodents.
 
-## RSFC pattern transitions in humans
+### RSFC pattern transitions in humans
 
 To examine whether nonrandom RSFC pattern transitions we observed were only a specific feature in the rat brain, we investigated RSFC pattern transitions in humans by applying the same analysis approach to rsfMRI data from the HCP. We found that, like rats, transitions between RSFC patterns were also nonrandom in humans, evidenced by highly consistent transition matrices between two randomly divided subject subgroups. This result well agrees with a recent study showing that dynamic switching between human brain networks was not random (Vidaurre et al., 2017). Interestingly, the split-group reproducibility was somewhat higher in humans than those observed in rats (both with and without regression of RSFC pattern similarities). This difference is likely due to much more human data used (406/406 human subjects v.s. 20/21 rats in each subgroup), which would average out larger amount of individual variability. This concept can be further supported by comparable reproducibility rates if we randomly picked 20 human subjects for each subgroup (reproducibility = 0.91 for human data v.s. reproducibility = 0.86 for rat data), as well as similar reproducibility at the individual level (human data: 0.6(±0.05); rat data: 0.57 (±0.14)). Collectively, these results suggest that nonrandom transitions between characteristic RSFC patterns are not merely a specific feature in rodents, but conserved in both humans and rats.
 
 The group-level RSFC pattern transition matrix was also thresholded using the permutation test. We found that, consistent with rat data, RSFC pattern transitions in humans more frequently occurred within the same brain system, but considerable cross-system transitions were also observed. We further calculated the hubness of individual nodes in the human RSFC transition network, and found multiple hubs belonging to separate brain systems including default-mode, cingulo-opercular, dorsal attention, ventral attention, fronto-parietal, parietal memory and visual networks. Intriguingly, virtually all hubs were integrative networks (with the only exception of the visual network) that are known to integrate information from multiple areas (e.g. sensori-motor systems). Our data suggest that these integrative networks are central in human RSFC pattern transitions. It has to be noted that direct comparisons of hubs between human and rat data is still premature as the human brain parcellation in Gordon et al.’s scheme did not include subcortical regions, while most transition hubs in the rat brain were subcortical networks. Such comparison is warranted in more detailed studies in the future. Nonetheless, these findings still highlight the translational utility of the analysis applied in the present study, which might shed light onto comparative neuroanatomy. Our results have also provided new insight into understanding the spatiotemporal dynamics of spontaneous activity in the mammalian brain.
 
-## Potential limitation
+### Potential limitation
 
 One limitation of the present study is that single rsfMRI frames could exhibit features of more than one RSFC pattern. It should be noted that corresponding a rsfMRI frame to its most similar reference RSFC pattern is only an approximation for the purpose of investigating spatiotemporal dynamics of spontaneous brain activity. To mitigate this issue, we set a minimal threshold (correlation coefficient >0.1, p<10−13) to remove rsfMRI frames that were not similar to any of 40 reference RSFC patterns (e.g. rsfMRI frames dominated by noise), and ensured that the similarity between each rsfMRI frame and the RSFC pattern it corresponded to was statistically significant after Bonferroni correction (p<0.05/40834 rsfMRI volumes ≈ 10−6). 89.9% of total rsfMRI volumes met this criterion, indicating that reference RSFC patterns indeed captured most spontaneous brain activity patterns in the awake rat brain.
 
-## Conclusions
+### Conclusions
 
 In conclusion, the present study investigated temporal transitions between spontaneous brain activity patterns in the awake rat and human brain. We found that these transitions were far from random in both species, demonstrating that this feature might be a general phenomenon in the mammalian brain. Using graph theory analysis, our study further revealed central RSFC patterns in the transition networks. This study has opened a new avenue to investigating the spatiotemporal organization of spontaneous activity in the mammalian brain.
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 41 Long-Evans (LE) adult male rats were used. Data from 31 rats were also used in another study (Ma et al., 2016) and were reanalyzed for the purpose of the present study. All rats were housed in Plexiglas cages with controlled ambient temperature (22–24°C) and maintained on a 12 hr light:12 hr dark schedule. Food and water were provided ad libitum. The experiment was approved by the Institutional Animal Care and Use Committee (IACUC) at the Pennsylvania State University.
 
-## Rat MRI experiments
+### Rat MRI experiments
 
 Rats were acclimated to the MRI environment for seven days following the procedures described in (Zhang et al., 2010; Liang et al., 2011, 2012a, 2012b, 2014; Gao et al., 2017) to minimize motion and stress. For the setup of awake animal imaging, the rat was first briefly anesthetized with 2–3% isoflurane and fit into a head holder with a built-in coil and a body tube. Isoflurane was then discontinued and the rat was placed into the magnet. All rats were fully awake during imaging. We measured the respiratory rate in a separate cohort of animals (n = 16) that were imaged using the same setting. The mean (±SD) breathing rate = 86.2 (±15.5), which was well within the normal range of breathing rate in rats (70–100 Hz). This measurement was also consistent with the normal physiological state measured in rats acclimated to MRI environment using similar methods in other labs (King et al., 2005; Ferenczi et al., 2016), suggesting that animals were well adapted to the MRI environment during imaging. A similar approach has also been used for awake rodent fMRI in other groups (Bergmann et al., 2016; Chang et al., 2016b; Yoshida et al., 2016).
 
 MRI data acquisition was conducted on a Bruker 7T small animal MRI scanner (Billerica, MA). Anatomical MRI images were acquired using a T1-weighted rapid imaging with refocused echoes (RARE) sequence with the following parameters: repetition time (TR) = 1500 ms; echo time (TE) = 8 ms; matrix size = 256 × 256; field of view (FOV) = 3.2 × 3.2 cm2; slice number = 20; slice thickness = 1 mm; RARE factor = 8. rsfMRI images were acquired using a T2*-weighted gradient-echo echo planar imaging (EPI) sequence with the following parameters: TR = 1000 ms; TE = 15 ms; matrix size = 64 × 64; FOV = 3.2 × 3.2 cm2; slice number = 20; slice thickness = 1 mm. 600 EPI volumes were acquired for each run, and two to four runs were acquired for each animal.
 
-## Rat image preprocessing
+### Rat image preprocessing
 
 Detailed description of the image preprocessing pipeline can be found in (Ma et al., 2016) and is briefly summarized as follows. Relative FD (Power et al., 2012) of rat brain EPI images was calculated, and EPI volumes with FD >0.2 mm and their immediate temporal neighbors were removed (1.75% of total rsfMRI volumes). The first 10 volumes of each rsfMRI run were also removed to warrant a steady state of magnetization. Brain normalization to a standard rat brain was performed using Medical Image Visualization and Analysis (MIVA, http://ccni.wpi.edu/). Head motion was corrected using SPM12 (http://www.fil.ion.ucl.ac.uk/spm/). In-plane spatial smoothing was carried out using a Gaussian filter (FWHM = 0.75 mm). Nuisance regression was performed with the regressors of three translation and three rotation motion parameters estimated by SPM as well as white matter and ventricle signals. Band-pass filtering was performed with the frequency band of 0.01–0.1 Hz.
 
-## Characteristic RSFC patterns
+### Characteristic RSFC patterns
 
 To obtain a library of characteristic RSFC spatial patterns in the awake rat brain, we used a RSFC-based whole-brain parcellation scheme (40 non-overlap parcels) we previously published (Ma et al., 2016). In this scheme, voxels with similar RSFC patterns were grouped together, so that RSFC patterns were similar within parcels but dissimilar across parcels (Ma et al., 2016). As a result, these 40 RSFC patterns represented a set of characteristic RSFC patterns in the awake rat brain and were used as the references (also see Supplemental Information).
 
 All characteristic RSFC patterns were obtained using seed-based correlational analysis with each parcel as the seed. Specifically, the regionally-averaged time course from all voxels within the seed region was used as the seed time course, and the Pearson cross-correlation coefficient between the seed time course and the time course of each individual brain voxel was calculated. Correlation analysis was performed for the first 540 volumes of each rsfMRI run to ensure the same degree of freedom. Correlation coefficients were then Fisher's Z-transformed. For each parcel, its group-level RSFC map was voxelwise calculated using one-sample t-test based on a linear mixed-effect model with the random effect of rats and the fixed effect of Z values for each run. The spatial similarity between these reference RSFC patterns was determined by pairwise spatial correlations between every two characteristic RSFC patterns.
 
-## Temporal transitions between RSFC patterns
+### Temporal transitions between RSFC patterns
 
 To analyze temporal transitions between RSFC patterns, a time sequence of framewise RSFC patterns (1 s each frame) was first obtained by matching each rsfMRI frame to one of the 40 reference RSFC patterns, based on the notion that BOLD co-activation patterns in single rsfMRI frames also represent their RSFC patterns (Liu et al., 2013; Liu and Duyn, 2013; Liang et al., 2015). To do so, preprocessed rsfMRI time series were first demeaned and variance normalized. Subsequently, the spatial Pearson correlation coefficients between each rsfMRI frame and individual reference RSFC patterns in the library were respectively calculated. The reference RSFC pattern that best matched the rsfMRI frame (i.e. the reference RSFC pattern that had the highest spatial correlation) was selected. To ensure the correspondence between each rsfMRI frame and the matched RSFC pattern was statistically meaningful, we set a minimal threshold of the spatial correlation coefficient >0.1 (p value < 10−13). 89.9% of total volumes met this criterion. Frames that did not meet this criterion (10.09% of total volumes) were labeled as not corresponding to any reference RSFC patterns. This step generated a time sequence of framewise RSFC patterns. In this sequence, each rsfMRI frame was denoted by a number between 1 and 40, representing its correspondence to one of the 40 reference RSFC patterns. The number 0 was used to denote rsfMRI frames not corresponding to any reference RSFC patterns, as well as frames removed in image preprocessing (e.g. frames with large FD). In the sequence, the number of transitions between every two RSFC patterns was counted (i - > j, where i ≠ j, i ≠ 0 and j ≠ 0). Transitions involving 0 (i.e., 0 - > 0, or 0 - > i, or i - > 0, where i ≠ 0) were not counted. This procedure yielded a 40 × 40 RSFC pattern transition matrix, where its entry (i, j) represented the number of transitions between RSFC pattern i to pattern j.
 
-## Reproducibility of temporal transitions between RSFC patterns
+### Reproducibility of temporal transitions between RSFC patterns
 
 The reproducibility of temporal transitions between RSFC patterns was assessed at both the group and individual levels. At the group level, we used a split-group approach. All 41 rats were randomly divided into two subgroups with 20 rats in subgroup 1 and 21 rats in subgroup 2. The RSFC pattern transition matrix was computed for each subgroup. Entries in each matrix were normalized to the range of [0, 1], and the correlation of the corresponding off-diagonal matrix entries between the two subgroups was assessed.
 
@@ -183,7 +221,7 @@ It is possible that spatially similar RSFC patterns had a higher chance to trans
 
 Reproducibility of temporal transitions between RSFC patterns was also evaluated at the individual level. For each rat, its individual-level transition matrix was obtained, and the reproducibility was computed using Pearson correlation of the corresponding off-diagonal matrix entries between this individual-level transition matrix and the group-level transition matrix.
 
-## Organization of RSFC pattern transitions
+### Organization of RSFC pattern transitions
 
 The group-level transition matrix was thresholded to identify transitions that were statistically significant. The p value of each entry in the transition matrix was calculated using the permutation test. Since we were only interested in transitions between two different RSFC patterns, before the permutation test, the temporal sequence of RSFC patterns was consolidated by combining consecutively repeated appearances of the same pattern to one appearance of the pattern. For example, four consecutive appearances of Pattern ‘x’ (i.e. ‘xxxx’) were replaced by one ‘x’. This consolidated temporal sequence was then permuted 10000 times, and a transition matrix was obtained for each permuted sequence. This step generated an empirical null distribution for each off-diagonal entry in the transition matrix, and the p value of the entry was obtained accordingly. p values were further adjusted using false-discovery rate (FDR) correction at the rate of 0.05 (Genovese et al., 2002). Entries with insignificant p values were set to zero. All entries were then rescaled to the range of [0,1]. Finally, similarities between RSFC patterns were regressed out from nonzero entries.
 
@@ -193,7 +231,7 @@ Graph theory analysis of this RSFC pattern transition network was performed usin
 
 To identify the hub nodes in the transition graph, local graph measures of node strength, betweenness centrality, local characteristic path length and local clustering coefficient of each node were first computed. Using these node metrics, hub nodes with high node strength, high betweenness centrality, short distance to other nodes, and low local clustering coefficient (Bullmore and Sporns, 2009) were identified using the method described in (van den Heuvel et al., 2010). Briefly, a hub score (0 to 4) was given to each node according to the total number of the following criteria the node met: (1) upper 20 percentile in node strength; (2) upper 20 percentile in betweenness centrality; (3) lower 20 percentile in characteristic path length; and (4) lower 20 percentile in local clustering coefficient. Node met at least three criteria was defined as a hub (i.e. hub score ≥3), indicating its pivotal role in transitions between RSFC patterns.
 
-## Reproducibility of RSFC pattern temporal transitions in the human brain
+### Reproducibility of RSFC pattern temporal transitions in the human brain
 
 The reproducibility of temporal transitions between RSFC patterns in the human brain was evaluated using a similar process. The human data used were the ‘extensively preprocessed 3T rsfMRI data’ from 812 subjects, which were a subset of the S1200 Subjects Data Release of the Human Connectome Project (HCP, https://www.humanconnectome.org/) (Van Essen et al., 2013). All rsfMRI data were acquired on a 3T Siemens Skyra MRI scanner using a multi-band EPI sequence with the parameters of TR = 720 ms, TE = 33.1 ms, flip angle = 52°, FOV = 208 × 180 mm2, matrix size = 104 × 90, voxel size = 2 × 2×2 mm3, slice number = 72, slice thickness = 2 mm, multiband factor = 8 (Feinberg et al., 2010; Moeller et al., 2010; Setsompop et al., 2012; Glasser et al., 2013). Data preprocessing used the HCP minimal preprocessing pipelines (Glasser et al., 2013), MSM-All brain registration (Robinson et al., 2014). Head motion correction was conducted using the ICA + FIX pipeline (Griffanti et al., 2014; Salimi-Khorshidi et al., 2014), and these procedures were completed by the HCP.
 

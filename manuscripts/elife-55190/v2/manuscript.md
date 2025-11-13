@@ -27,19 +27,95 @@ Pioneering studies have suggested that both human and mouse embryonic stem cell 
 
 To address this question, we established an ex vivo system to culture zebrafish blastoderm tissue explants lacking the yolk cell and its associated YSL. For this, blastoderm explants were prepared from embryos at early cleavage stages (256 cell stage), before YSL formation or germ layer induction, and kept in serum-free medium until stage-matched control embryos had completed gastrulation (bud stage; Figure 1A). We found that these blastoderm explants initially rounded up in culture, but eventually became ‘pear’-shaped by forming an extension (Figure 1B,C, Video 1). Interestingly, this extension began to form when stage-matched control embryos initiated body axis extension at shield stage (Sepich et al., 2005; Solnica-Krezel and Sepich, 2012), pointing at the possibility that these processes might be related. Contrary to intact embryos, however, blastoderm explants formed a large luminal cavity, reminiscent of a blastocoel (Krens et al., 2017), which was typically positioned at the opposite end of the explant extension (Figure 1B, Figure 1—figure supplement 1A,B, Video 2). Importantly, cells within explants appeared to normally complete their rounds of cleavages and divisions following explant preparation, as evidenced by the similar average diameter of explant and stage-matched embryo cells (Figure 1—figure supplement 1C). Moreover, we found that the onset of zygotic genome activation (ZGA), as monitored by the expression of the two zygotic genes tbx16 and chrd (Gagnon et al., 2018; Lee et al., 2013), was similar in stage-matched embryos and blastoderm explants (Figure 1—figure supplement 1D). Finally, comparable morphological changes could be observed when blastoderm explants were prepared from earlier (64 and 128 cell-stage) or later (high stage) embryos (Figure 1—figure supplement 2A–D), suggesting that the exact time point of explant preparation during pre-gastrula stages has no decisive influence on explant morphogenesis.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic representation of the preparation method of blastoderm explants from 256 cell stage (256 c) stage embryos. (B) Bright-field single-plane images of stage-matched embryo and blastoderm explants from oblong to bud stage. The white dashed lines outline the shape of the explant. (C) Circularity of blastoderm explants from oblong to bud stage (oblong: n = 42, dome: n = 34, 50% epiboly: n = 35, shield: n = 40, 70% epiboly: n = 35, 90% epiboly: n = 36, bud: n = 38; N = 2). (D) Expression of ectoderm (gata2), neuroectoderm (six3) and mesendoderm (hgg, ntl and papc) marker genes as determined by whole mount in situ hybridization of bud stage embryos and blastoderm explants. Schematic representation of the different views for embryos and blastoderm explants is shown on the left. The proportion of embryos or blastoderm explants with a phenotype similar to the images shown is indicated in the lower right corner (gata2: embryos, n = 21, N = 4, explants, n = 33, N = 6; six3: embryos, n = 20, N = 3, explants, n = 26, N = 4; hgg: embryos, n = 34, N = 5, explants, n = 49, N = 5; ntl: embryos, n = 46, N = 4, explants, n = 48, N = 4; papc: embryos, n = 43, N = 4, explants, n = 55, N = 5). (E) Normalized expression domain of ectoderm (gata2: n = 31, N = 6), neuroectoderm (six3: n = 20, N = 4) and mesendoderm (hgg: n = 20, N = 5; ntl: n = 41, N = 4; papc: n = 37, N = 5) marker genes along the back-tip axis of bud stage blastoderm explants. (F-G) Schematic representation of ectoderm, neuroectoderm, mesendoderm and endoderm marker gene expression domains in intact embryos (F) and blastoderm explants (G). White asterisks denote the main luminal cavity in explants. Scale bars: 200 µm (B, D).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Exemplary high-resolution fluorescence image of a blastoderm explant cross-section at bud stage. Interstitial fluid (grey) is marked by dextran cascade blue and mesendoderm tissue (green) by expression of gsc::GFP-CAAX. (B) Normalized distance of the main luminal cavity from the extension tip (a) or the explant back (b) (n = 90, N = 3). Schematic representation of the quantification method is shown at the top. (C) Cell diameter in stage-matched embryos and blastoderm explants from high to shield stage (high: embryo, number of cells = 270, n = 9, N = 3, explants, number of cells = 270, n = 9, N = 3; sphere: embryo, number of cells = 270, n = 9, N = 3, explants, number of cells = 270, n = 9, N = 3; 30% epiboly: embryo, number of cells = 240, n = 8, N = 3, explant, number of cells = 280, n = 9, N = 3; 50% epiboly: embryo, number of cells = 270, n = 9, N = 3, explant, number of cells = 270, n = 9, N = 3; germ ring: embryo, number of cells = 280, n = 9, N = 3, explant, number of cells = 270, n = 9, N = 3; shield: embryo, number of cells = 180, n = 6, N = 3, explant, number of cells = 240, n = 9, N = 3). ns, not significant (Kruskal-Wallis test). (D) Expression of two ZGA marker genes (chrd and tbx16) in stage-matched embryos (animal view) and blastoderm explants (side view) at sphere stage as determined by whole mount in situ hybridization. The proportion of embryos or blastoderm explants with a phenotype similar to the images shown is indicated in the lower right corner (chrd: embryos, n = 16, N = 3, explants, n = 33, N = 3; tbx16: embryos, n = 25, N = 3, explants, n = 45, N = 3). (E) High-resolution fluorescence images of krt4::EGFP-CAAX-expressing embryos (animal view) and blastoderm explants (side view) at bud stage. The proportion of embryos or blastoderm explants with a phenotype similar to the images shown is indicated in the lower right corner (embryos: n = 8, N = 2; explants: n = 9, N = 2). (F) Intensity of krt4::EGFP-CAAX in stage-matched embryos and blastoderm explants from late sphere stage onwards (embryos: n = 7, N = 3; explants: n = 8, N = 3). Time in min. (G) Expression of additional mesendoderm (gsc, flh, tbx6 and myoD) and endoderm (sox32) marker genes as determined by whole mount in situ hybridization of bud stage embryos and blastoderm explants. Schematic representation of the different views for embryos and blastoderm explants is shown on the left. The proportion of embryos or blastoderm explants with a phenotype similar to the images shown is indicated in the lower right corner (gsc: embryos, n = 46, N = 4, explants, n = 58, N = 6; flh: embryos, n = 17, N = 2, explants, n = 21, N = 2; tbx6: embryos, n = 27, N = 3, explants, n = 22, N = 3; myoD: embryos, n = 20, N = 3, explants, n = 20, N = 3; sox32: embryos, n = 22, N = 3, explants, n = 18, N = 3). (H) Percentage of bud stage blastoderm explants expressing or not neuroectoderm (six3: n = 26, N = 4), ectoderm (gata2: n = 33, N = 6), mesendoderm (hgg: n = 49, N = 5; gsc: n = 58, N = 6; myoD: n = 20, N = 3; ntl: n = 48, N = 4; flh: n = 21, N = 2; papc: n = 55, N = 5; tbx6: n = 22, N = 3) and endoderm (sox32: n = 18, N = 3) marker genes as determined by whole mount in situ hybridization. (I) Normalized expression domain of additional mesendoderm marker genes (gsc: n = 22, N = 6; flh: n = 17, N = 2; tbx6: n = 17, N = 3; myoD: n = 7, N = 3) along the back-tip axis of bud stage blastoderm explants. (J) Percentage of blastoderm explants showing expression of sox32 in a single cell cluster, a cluster and some more individual cells, only individual cells or no expression at bud stage as determined by whole mount in situ hybridization (n = 18, N = 3). White asterisks denote the main luminal cavity in explants. Scale bars: 100 µm (A, E), 200 µm (D, G).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Bright-field single-plane images of bud stage blastoderm explants prepared from 64 c (n = 28, N = 3), 128 c (n = 34, N = 3), 256 c (n = 39, N = 3) or high (n = 17, N = 2) stage embryos. The white dashed lines outline the shape of the explant, while the white asterisks denote the main luminal cavity. Scale bar, 200 µm. (B) Percentage of extended or not-extended bud stage blastoderm explants prepared from 64 c (n = 28, N = 3), 128 c (n = 34, N = 3), 256 c (n = 39, N = 3) or high stage (n = 17, N = 2) embryos. (C) Circularity of bud stage blastoderm explants prepared from 64 c (n = 28, N = 3), 128 c (n = 34, N = 3), 256 c (n = 39, N = 3) or high stage (n = 17, N = 2) embryos. (D) Normalized extension length of extended blastoderm explants, prepared from 64 c (n = 20, N = 3), 128 c (n = 30, N = 3), 256 c (n = 31, N = 3) or high stage (n = 12, N = 2) embryos, at bud stage. (C,D) ns, not significant (ANOVA test).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Co-expression of ectoderm (gata2), neuroectoderm (six3), mesendoderm (hgg, papc) and endoderm (sox32) marker genes in blue with ntl, a mesodermal maker exhibiting a similar pattern to the posterior axial mesoderm marker flh in blastoderm explants, in red as determined by double whole mount in situ hybridization of bud stage explants (side view). Both ectoderm (gata2: n = 20, N = 3) and neuroectoderm (six3: n = 24, N = 3) marker genes were expressed predominantly within the round portion of the explant (as shown in the figure). In some cases, six3 expression was also detected in two domains located at the base and at the tip of the extension or, even less frequently, in a single domain at the extension tip (not shown). In contrast to the ectoderm progenitors, mesendoderm marker genes were exclusively found within or adjacent to the extension. Anterior axial mesendoderm (hgg: n = 17, N = 3) was found to localize directly adjacent to the extended region (as schematized in Figure 1G) or at variable positions along the extension (as shown in the figure). Paraxial mesoderm (papc: n = 22, N = 3) was consistently found adjacent to the posterior axial mesoderm (ntl), either exhibiting a single or two flanking domains. Finally, sox32 expression was found both in a compact cell cluster plus some sporadic cells (right), exclusively in a compact cluster (middle) or exclusively in sporadic cells distributed throughout the extension (left) (n = 31, N = 3). Scale bars: 200 µm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Expression of YSL marker genes (slc26a1, slc40a1, mxtx2, gata6 and camsap1l1) in stage-matched embryos (side view) and blastoderm explants (side view), as determined by whole mount in situ hybridization at 50% epiboly. The proportion of embryos or blastoderm explants with a phenotype similar to the images shown is indicated in the lower right corner (slc26a1: embryos, n = 29, N = 3, explants, n = 38, N = 3; slc40a1: embryos, n = 21, N = 3, explants, n = 26, N = 3; mxtx2: embryos, n = 24, N = 4, explants, n = 28, N = 4; gata6: embryos, n = 24, N = 3, explants, n = 29, N = 3; camsap1l1: embryos, n = 23, N = 3, explants, n = 29, N = 3). (B) Percentage of blastoderm explants showing normal, strongly reduced or no expression of YSL marker genes (slc26a1: n = 38, N = 3; slc40a1: n = 26, N = 3; mxtx2: n = 28, N = 4; gata6: n = 29, N = 3; camsap1l1: n = 29, N = 3) as determined by whole mount in situ hybridization at 50% epiboly. (C) High-resolution fluorescence images of a blastoderm explant at 50% epiboly (top views shown at different optical sections). Cell membranes (grey) are marked by lyn::tdTomato and nuclei (green) by h2b::EGFP. The proportion of blastoderm explants with a phenotype similar to the images shown is indicated in the lower right corner (n = 14, N = 3). Yellow circle denotes the wounding site. Scale bars: 200 µm (A), 100 µm (C).
+
+![Video 1.](https://cdn.elifesciences.org/articles/55190/elife-55190-video1.mp4.jpg)
+
+**Video 1.:** Bright-field time-lapse imaging of a blastoderm explant (cross-section) from late sphere to bud stage (n = 10, N = 3). The white dashed lines outline the initial and final shape of the explant. White asterisks denote the main luminal cavity. Time in min. Scale bar: 200 µm.
+
+![Video 2.](https://cdn.elifesciences.org/articles/55190/elife-55190-video2.mp4.jpg)
+
+**Video 2.:** High-resolution fluorescence time-lapse imaging of a blastoderm explant (cross-section) from oblong stage onwards (n = 9, N = 2). Interstitial fluid (green) is marked by dextran Alexa Fluor 647 and the cell membranes (white) are marked by Membrane-GFP. White asterisks denote the two luminal cavities. Time in min. Scale bar: 100 µm.
+
 To analyze how these distinct changes in explant morphology relate to the specification of different progenitor cell types therein, we analyzed the expression of various progenitor cell marker genes by whole mount in situ hybridization. Strikingly, we found distinct expression domains for all tested marker genes outlining ectoderm, neuroectoderm, endoderm and different types of mesoderm progenitor cell populations. While ectoderm (gata2) and neuroectoderm (six3) marker genes were expressed predominantly at the opposite end of the explant extended portion, the region where the cavity was also forming (Figure 1D–G, Figure 1—figure supplement 1A,B,H, Figure 1—figure supplement 3A), all mesendoderm and endoderm marker genes were exclusively found within or adjacent to the extension (Figure 1D–G, Figure 1—figure supplement 1G–J, Figure 1—figure supplement 3A). Specifically, we found that markers of posterior axial mesoderm (ntl and flh) were expressed in the central region of the extension, flanked by paraxial and lateral mesoderm (papc, myoD, tbx6) (Figure 1D–G, Figure 1—figure supplement 1G–I, Figure 1—figure supplement 3A). In contrast, anterior axial mesendoderm markers (hgg and gsc) were found to be expressed at variable positions along the extended region or directly adjacent to it (Figure 1D–G, Figure 1—figure supplement 1G–I, Figure 1—figure supplement 3A). Finally, sporadic endoderm progenitors (sox32) could be found throughout the extension (Figure 1G, Figure 1—figure supplement 1G,H,J, Figure 1—figure supplement 3A). On the explant surface, much like in the intact embryo, we found that cells expressed elevated levels of Keratin 4, a marker of enveloping layer (EVL) cell differentiation (Figure 1—figure supplement 1E,F). Collectively, these findings suggest that the blastoderm explants contain all main germ layer progenitors also found in intact embryos and display a seemingly complete patterning of the mesendoderm anlage. They also indicate that, although explants undergo extensive morphogenesis, mesendoderm progenitors do not clearly internalize and, instead, organize into an extension (Video 3). This is highly reminiscent of the ‘exogastrula’ phenotype observed in embryos with defective mesendoderm internalization and, more recently, in mouse gastruloids (Beccari et al., 2018; Branford and Yost, 2002; Turner et al., 2017; van den Brink et al., 2014).
+
+![Video 3.](https://cdn.elifesciences.org/articles/55190/elife-55190-video3.mp4.jpg)
+
+**Video 3.:** High-resolution fluorescence time-lapse imaging of a blastoderm explant from late 50% epiboly onwards (n = 14, N = 14). The cell nuclei (white) are marked by H2A-chFP and the mesendoderm tissue (green) by expression of gsc::GFP-CAAX. The explant is shown both from the top and from a side view along the extension axis. Time in min. Scale bar: 100 µm.
 
 To ensure that all extraembryonic tissues were efficiently removed during explant preparation and that explants do not form a secondary YSL, we analyzed the expression of marker genes, normally present within the YSL in intact embryos, in blastoderm explants. We found that all of these genes were either not expressed in explants or showed only sporadic expression in small groups of blastoderm cells (Figure 1—figure supplement 4A,B). Moreover, we failed to detect any clearly recognizable syncytium in explants, a hallmark of the YSL in intact embryos (Figure 1—figure supplement 4C). Together, these data strongly support the notion that germ layer specification and mesendoderm patterning in blastoderm explants can occur in the absence of the extraembryonic yolk and YSL.
 
 To understand how mesendoderm tissues are formed within explants, we first analyzed whether Nodal ligands, critical for mesendoderm specification and patterning in vivo (Erter et al., 1998; Feldman et al., 1998; Gritsman et al., 2000; Gritsman et al., 1999; Rebagliati et al., 1998), are also expressed in explants. We observed expression of both Nodal ligands sqt and cyc in blastoderm explants (Figure 2—figure supplement 1A,B), consistent with previous observations in intact embryos (Erter et al., 1998; Fan et al., 2007; Feldman et al., 1998; Rebagliati et al., 1998; van Boxtel et al., 2015). In addition to this, we detected nuclear localization of phosphorylated SMAD2/3 (pSMAD2/3), a well-established readout of Nodal/TGFβ signaling activation (Economou and Hill, 2020; Schier, 2009; van Boxtel et al., 2015; van Boxtel et al., 2018), in cells located close to the wounding site of explants (Figure 2A, Figure 2—figure supplement 1C,D), indicative of local Nodal signaling activation. A comparison of the spatiotemporal dynamics of Nodal signaling establishment between explants and intact embryos further revealed that, while blastoderm explants showed initially fewer and less bright pSMAD2/3 positive nuclei than intact embryos, both parameters continued to increase in explants until stage-matched embryos had reached shield stage (Figure 2A–C, Figure 2—figure supplement 1C–J). This differs from the temporal dynamics of Nodal signaling in intact embryos, where nuclear accumulation of pSMAD2/3 peaks already by 50% epiboly (Figure 2A–C, Figure 2—figure supplement 1C–J). Notably, the wounding site of blastoderm explants, where Nodal signaling was activated corresponds to the former blastoderm margin where explants were removed from the yolk cell (Figure 2D, Figure 2—figure supplement 1E–J). Given that Nodal signaling in intact embryos is initiated in the blastoderm margin (Dubrulle et al., 2015; Harvey and Smith, 2009; Schier, 2009; van Boxtel et al., 2015), this points at the intriguing possibility that Nodal signaling is active in similar cells in embryos and explants. This notion was further substantiated by our observation that cells close to the wounding site in explants display only very limited dispersal during explant maturation (Figure 2—figure supplement 2A–D). Moreover, similar to intact embryos, a gradient of BMP signaling was also detectable in blastoderm explants (Figure 2—figure supplement 2E,F), suggesting that explants might also use a BMP signaling gradient for patterning along their dorsoventral axis.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig2-v2.jpg)
+
+**Figure 2.:** (A) High-resolution fluorescence images of stage-matched embryos (dorsal view) and blastoderm explants (top view) at 50% epiboly, germ ring and shield stage stained for both pSMAD2/3 (pink) and DAPI (grey). Nuclear pSMAD2/3 is color-coded using a fire lookup table (highest intensities in yellow) and was masked based on the DAPI signal. Insets are zoom-in images of the highlighted regions (dashed boxes). Yellow circles denote the wounding site in explants. The proportion of embryos and explants with a phenotype similar to the images shown is indicated in the lower left corner (50% epiboly: embryos, n = 12, N = 4, explants, n = 21, N = 4; germ ring: embryos, n = 16, N = 4, explants, n = 25, N = 4 and shield: embryos, n = 6, N = 3, explants, n = 10, N = 3). (B) Percentage of pSMAD2/3 positive nuclei in stage-matched embryos and blastoderm explants at 50% epiboly (embryos: n = 7, N = 3; explants: n = 10, N = 3), germ ring (embryos: n = 10, N = 4; explants: n = 10, N = 4) and shield stage (embryos: n = 6, N = 3; explants: n = 8, N = 3). ****p<0.0001, ns, not significant (ANOVA test). (C) Normalized intensity of the brightest pSMAD2/3 nuclei (for details see Materials and methods) in stage-matched embryos and blastoderm explants at 50% epiboly (embryos: n = 7, N = 3; explants: n = 10, N = 3), germ ring (embryos: n = 10, N = 4; explants: n = 10, N = 4) and shield stage (embryos: n = 6, N = 3; explants: n = 8, N = 3). ****p<0.0001 (Kruskal-Wallis test). (D) Normalized distance, expressed as cell tiers, of the brightest pSMAD2/3 nuclei (for details see Materials and methods) from the YSL or wounding site in stage-matched embryos and blastoderm explants at 50% epiboly (embryos: n = 7, N = 3; explants: n = 10, N = 3), germ ring (embryos: n = 10, N = 4; explants: n = 10, N = 4) and shield stage (embryos: n = 6, N = 3; explants: n = 8, N = 3). ****p<0.0001 (Kruskal-Wallis test). (E) Bright-field single-plane images of bud stage MZoep (n = 40, N = 3), DMSO (treated from 256 c to bud, n = 81, N = 5) or Nodal inhibitor (SB-505124)-treated blastoderm explants (treated from 256 c to bud, n = 49, N = 4; 256 c to shield, n = 38, N = 3; shield to bud, n = 43, N = 4). (F) Percentage of extended or not-extended wildtype (n = 26, N = 3), MZoep (n = 40, N = 3), DMSO (treated from 256 c to bud, n = 81, N = 5) and Nodal inhibitor (SB-505124)-treated blastoderm explants (treated from 256 c to bud, n = 49, N = 4; 256 c to shield, n = 38, N = 3; shield to bud, n = 43, N = 4) at bud stage. (G) Circularity of bud stage wildtype (n = 26, N = 3), MZoep (n = 40, N = 3), DMSO (treated from 256 c to bud, n = 81, N = 5) and Nodal inhibitor (SB-505124)-treated blastoderm explants (treated from 256 c to bud, n = 49, N = 4; 256 c to shield, n = 38, N = 3; shield to bud, n = 43, N = 4). ****p<0.0001, *p=0.0112 (Kruskal-Wallis test). (H) Normalized extension length of extended DMSO (treated from 256 c to bud, n = 77, N = 5) and Nodal inhibitor (SB-505124)-treated blastoderm explants (treated from shield to bud, n = 33, N = 4) at bud stage. ns, not significant (Unpaired t test). Scale bars: 100 µm (A), 200 µm (E).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Expression of sqt, as determined by whole mount in situ hybridization in 50% epiboly embryos (side view) and blastoderm explants (side view). (B) Expression of cyc, as determined by whole mount in situ hybridization in shield stage embryos (dorsal view) and blastoderm explants (side view). (A-B) The proportion of embryos or blastoderm explants with a phenotype similar to the images shown is indicated in the lower right corner (sqt: embryos, n = 29, N = 4, explants, n = 44, N = 4; cyc: embryos, n = 27, N = 4, explants, n = 24, N = 4). (C) High-resolution fluorescence images of stage-matched embryos (side view) and blastoderm explants (top view) at high (embryos: n = 13, N = 3; explants: n = 22, N = 3) and sphere (embryos: n = 16, N = 3; explants: n = 29, N = 3) stage stained for both pSMAD2/3 (pink) and DAPI (grey). Nuclear pSMAD2/3 is color-coded using a fire lookup table (highest intensities in yellow) and was masked based on the DAPI signal. Insets are zoom-in images of the highlighted regions (dashed boxes). Yellow circles denote the wounding site in explants. The proportion of embryos and explants with a phenotype similar to the images shown is indicated in the lower left corner. (D) High-resolution fluorescence images of stage-matched embryos and blastoderm explants expressing gsc::GFP-CAAX, at 50% epiboly (embryos: n = 12, N = 4; explants: n = 21, N = 4), germ ring (embryos: n = 16, N = 4; explants: n = 25, N = 4) and shield stage (embryos: n = 6, N = 3; explants: n = 10, N = 3). Embryos are shown from the dorsal side, and explants are shown as top views. Images correspond to the embryos and explants shown in Figure 2A. (E-J) Normalized intensity of pSMAD2/3 positive nuclei as a function of the distance to the YSL (embryos) or the wounding site (explants), expressed as cell tiers, at 50% epiboly (E,H; embryos: n = 7, N = 3; explants: n = 10, N = 3), germ ring (F,I; embryos: n = 10, N = 4; explants: n = 10, N = 4) and shield stage (G,J; embryos: n = 6, N = 3; explants: n = 8, N = 3). Scale bars: 200 µm (A,B), 100 µm (C,D).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Schematic representation of the injection method used to label a single marginal cell in 128 c embryos. (B) High-resolution fluorescence images of a blastoderm explant (top view) from late sphere stage onwards (n = 10, N = 3). Cell membranes (grey) are marked by Membrane-RFP and injected cells (grey) by H2A-chFP expression. Time in min. The explant and clone edges are outlined with a white or yellow dashed line, respectively. (C) Average normalized distance of positive cells (marked by H2A-chFP expression) to the clone center from sphere stage onwards (n = 10, N = 3). (D) Average normalized distance between positive cells (marked by H2A-chFP expression) from sphere stage onwards (n = 10, N = 3). (E) Expression of chrd (embryos, n = 20, N = 3; explants, n = 20, N = 3) and bmp2b (embryos, n = 24, N = 3; explants, n = 41, N = 3) in stage-matched embryos and blastoderm explants at 50% epiboly, as determined by whole mount in situ hybridization. The view shown for both embryos and blastoderm explants is indicated at the top. The proportion of embryos or blastoderm explants with a phenotype similar to the images shown is indicated in the lower right corner. (F) High-resolution fluorescence images of stage-matched embryos (lateral view) and blastoderm explants (top view) expressing gsc::GFP-CAAX stained both for pSMAD1/5 (purple) and DAPI (grey) at 50% epiboly (embryos: n = 13, N = 4; explants: n = 29, N = 4). Nuclear pSMAD1/5 is color-coded using a fire lookup table (highest intensities in yellow) and was masked based on the DAPI signal. Insets are zoom-in images of the highlighted regions (dashed boxes). Yellow circle denotes the wounding site in the explant. Scale bars: 100 µm (B,F), 200 µm (E).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) High-resolution images of bud stage blastoderm explants treated with DMSO (treated from 256 c to Bud, n = 20, N = 4) or Nodal inhibitor (SB-505124; treated from 256 c to Bud, n = 18, N = 4; 256 c to Shield, n = 20, N = 4 and Shield to Bud, n = 28, N = 3). In all cases, blastoderm explants were prepared from sebox::EGFP-expressing embryos (green) and are shown as side views. The proportion of blastoderm explants with a phenotype similar to the images shown is indicated in the lower right corner. Scale bar: 100 µm. (B) Percentage of DMSO (treated from 256 c to bud: n = 20, N = 4) or Nodal inhibitor (SB-505124)-treated explants (treated from 256 c to bud: n = 18, N = 4; 256 c to shield: n = 20, N = 4; shield to bud: n = 28, N = 3) showing normal, reduced or no sebox::EGFP expression at bud stage (see Materials and methods for additional details). (C) Area of the sebox::EGFP domain in DMSO (treated from 256 c to bud: n = 20, N = 4) or Nodal inhibitor (SB-505124)-treated explants (treated from 256 c to bud: n = 18, N = 4; 256 c to shield: n = 20, N = 4; shield to bud: n = 28, N = 3) at bud stage. ****p<0.0001, ns, not significant (Kruskal-Wallis test). (D) Area of the sebox::EGFP domain versus the normalized extension length in DMSO (treated from 256 c to bud: n = 20, N = 4) or Nodal inhibitor (SB-505124)-treated explants (treated from 256 c to bud: n = 18, N = 4; 256 c to shield: n = 20, N = 4; shield to bud: n = 28, N = 3) at bud stage.
+
 To test whether and when Nodal signaling is required for mesendoderm induction and morphogenesis in blastoderm explants, we prepared explants from maternal-zygotic (MZ) mutants of the Nodal co-receptor Oep (MZoep), previously shown to be essential for Nodal signaling and proper mesendoderm induction during embryogenesis (Gritsman et al., 1999). We found that blastoderm explants obtained from MZoep mutants failed to extend, indicative of strongly reduced mesendoderm formation (Figure 2E–G). This suggests that, similar to the situation in intact embryos, proper Nodal signaling is critical for mesendoderm induction and morphogenesis in blastoderm explants. To determine when Nodal signaling is required for mesendoderm induction and morphogenesis, we cultured explants in the presence of the selective and reversible Nodal inhibitor SB-505124 (50 µM) (DaCosta Byfield et al., 2004; Fan et al., 2007; Hagos and Dougan, 2007) for different time-periods during explant maturation. We found that blocking Nodal signaling from 256 cell to shield stage was sufficient to completely abolish mesendoderm induction and explant extension (Figure 2E–G, Figure 2—figure supplement 3A–D), while blocking Nodal signaling after shield stage had no strong impact on these processes (Figure 2E–H, Figure 2—figure supplement 3A–D). This is highly reminiscent of the early requirement of Nodal signaling for mesendoderm induction and morphogenesis in intact embryos (Gritsman et al., 1999; Hagos and Dougan, 2007; Pinheiro and Heisenberg, 2020), suggesting that Nodal signaling functions similarly in embryos and blastoderm explants.
 
 Nodal-dependent mesendoderm induction has previously been shown to promote convergence and extension movements and body axis elongation by inducing the non-canonical Wnt/Planar Cell Polarity (Wnt/PCP) signaling module (Djiane et al., 2000; Gray et al., 2011; Tada and Heisenberg, 2012; Wallingford, 2012; Williams and Solnica-Krezel, 2019). To analyze whether explant extension also relies on non-canonical Wnt/PCP signaling, we prepared explants from MZ mutant embryos for different components of the Wnt/PCP signaling module, which display strongly diminished body axis elongation in vivo. Blastoderm explants prepared from MZ mutants for the Wnt/PCP components wnt11, wnt5b and fz7a/b also exhibited reduced or no extension (Figure 3A–D). This suggests that explant extension, similar to body axis elongation in intact embryos, critically depends on non-canonical Wnt/PCP signaling. In line with this, we also found that during explant maturation, the extension length increased, and the width of the non-extended portion decreased (Figure 3—figure supplement 1A–C), and that explant extension was largely independent of cell proliferation (Figure 3—figure supplement 1D–F). This points at the intriguing possibility that explants, like intact embryos, might undergo some type of convergence and extension movements, independent of cell proliferation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig3-v2.jpg)
+
+**Figure 3.:** (A) Bright-field single-plane images of wildtype (n = 120, N = 8), MZfz7a/b (n = 31, N = 3), MZwnt11 (n = 69, N = 5) and MZwnt5b (n = 75, N = 4) blastoderm explants at bud stage. Scale bars: 200 µm. (B) Percentage of extended or not-extended wildtype (n = 120, N = 8), MZfz7a/b (n = 31, N = 3), MZwnt11 (n = 69, N = 5) and MZwnt5b (n = 75, N = 4) blastoderm explants at bud stage. (C) Circularity of wildtype (n = 120, N = 8), MZfz7a/b (n = 31, N = 3), MZwnt11 (n = 69, N = 5) and MZwnt5b (n = 75, N = 4) blastoderm explants at bud stage. ****p<0.0001, *p=0.0424 (Kruskal-Wallis test). (D) Normalized extension length of extended wildtype (n = 108, N = 8), MZwnt11 (n = 46, N = 5) and MZwnt5b (n = 66, N = 4) blastoderm explants at bud stage. ****p<0.0001, *p=0.0461 (ANOVA test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Total blastoderm explant area prior and from shield stage onwards (−60 min: n = 24, N = 3; 0 min: n = 23, N = 3; 30 min: n = 23, N = 3; 60 min: n = 22, N = 3; 90 min: n = 21, N = 3; 120 min: n = 22, N = 3; 150 min: n = 23, N = 3; 180 min: n = 22, N = 3; 210 min: n = 23, N = 3). (B) Width of the round portion of blastoderm explants from shield stage onwards (90 min: n = 20, N = 3; 120 min: n = 22, N = 3; 150 min: n = 23, N = 3; 180 min: n = 22, N = 3; 210 min: n = 23, N = 3). (C) Length of the explant extension from shield stage onwards (90 min: n = 20, N = 3; 120 min: n = 22, N = 3; 150 min: n = 23, N = 3; 180 min: n = 22, N = 3; 210 min: n = 23, N = 3). Time in min. Schematic representation of the quantification method is shown at the top (A-C). (D) Bright-field single-plane images DMSO or HUA-treated blastoderm explants (treated from shield to bud stage; DMSO: n = 29, N = 3; HUA: n = 35, N = 3) at bud stage. Scale bar: 200 µm. (E) Percentage of extended or not-extended DMSO or HUA-treated blastoderm explants (treated from shield to bud stage; DMSO: n = 28, N = 3; HUA: n = 34, N = 3) at bud stage. (F) Normalized extension length of extended DMSO or HUA-treated blastoderm explants (treated from shield to bud stage; DMSO: n = 28, N = 3; HUA: n = 32, N = 3) at bud stage. ns, not significant (Unpaired t test).
+
 Our data, so far, suggest that mesendoderm specification and morphogenesis in explants relies on the activation of Nodal signaling around the wounding site. In intact embryos, Nodal ligand expression, and thus activation of Nodal signaling, at the blastoderm margin depends both on initial maternal activation of the transcriptional co-activator β-catenin (β-cat) and Nodal signals emanating from the YSL (van Boxtel et al., 2015; Feldman et al., 1998; Gagnon et al., 2018; Hong et al., 2011; Langdon and Mullins, 2011; Marlow, 2020; Xu et al., 2012). Since explants contain, at most, remnants of the YSL (Figure 1—figure supplement 4A–C), we tested whether Nodal signaling activation in this context might be triggered by β-cat. Indeed, analysis of nuclear localization of β-cat in explants shortly after preparation revealed elevated levels of nuclear β-cat in blastoderm cells close to the wounding site (Figure 4A–C). This suggests that in explants, similar to intact embryos, β-cat nuclear accumulation might be responsible for Nodal signaling activation, and consequently, mesendoderm induction and morphogenesis.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig4-v2.jpg)
+
+**Figure 4.:** (A) High-resolution fluorescence images of blastoderm explants 30 and 90 min post-explanting stained for both β-catenin (grey) and DAPI (not shown). Both full projection and substack top views are shown to facilitate simultaneous visualization of the wounding site (yellow circle) and nuclear accumulation of β-catenin (yellow arrowheads). Insets are zoom-in images of the highlighted regions (dashed boxes). The proportion of blastoderm explants with a phenotype similar to the images shown is indicated in the lower left corner (30 min: n = 20, N = 6; 90 min: n = 16, N = 4). (B) Number of β-catenin positive nuclei 30 min post-explant preparation as a function of the distance to the wounding site, expressed as cell tiers (n = 16, N = 6). (C) Angular dispersion of β-catenin positive nuclei 30 min post-explant preparation (for details see Materials and methods; n = 16, N = 6). (D) High-resolution fluorescence images of control, dorsal determinants-removed (DD-removed) and animal pole explants at 50% epiboly stained for both pSMAD2/3 (pink) and DAPI (grey). Nuclear pSMAD2/3 is color-coded using a fire lookup table (highest intensities in yellow) and was masked based on the DAPI signal. Insets are zoom-in images of the highlighted regions (dashed boxes) and the yellow circles denote the wounding site. The proportion of blastoderm explants with a phenotype similar to the images shown is indicated in the lower left corner (control: n = 73, N = 14; DD-removed: n = 30, N = 7; animal pole: n = 22, N = 6). (E) Percentage of control (n = 73, N = 14), DD-removed (n = 30, N = 7) and animal pole (n = 22, N = 6) explants showing a domain of pSMAD2/3 positive nuclei (present), a few sporadic pSMAD2/3 positive nuclei (strongly reduced) or no positive nuclei (absent) at 50% epiboly (see Materials and methods for additional details). (F) Bright-field single-plane images of control (n = 228, N = 15), DD-removed (n = 75, N = 8) and animal pole (n = 42, N = 5) explants at bud stage. Control explants partially correspond to explants shown in Figure 1—figure supplement 2A–D. (G) Percentage of extended or not-extended control (n = 228, N = 15), DD-removed (n = 75, N = 8) and animal pole (n = 42, N = 5) explants at bud stage. (H) Circularity of control (n = 228, N = 15), DD-removed (n = 75, N = 8) and animal pole (n = 42, N = 5) explants at bud stage. ****p<0.0001 (Kruskal-Wallis test). (I) Normalized extension length of extended control (n = 199, N = 15) and DD-removed (n = 40, N = 8) blastoderm explants at bud stage. ****p<0.0001 (Unpaired t test). Scale bars: 100 µm (A,D), 200 µm (F).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Bright-field single-plane images of dorsal determinants removed (DD-removed) embryos at pharyngula stage (24 hpf). The proportion of embryos with a phenotype similar to the images shown is indicated in the lower right corner (n = 49, N = 4). The color-coded rectangles refer to the different phenotypic classes shown in (B). (B) Percentage of pharyngula stage DD-removed embryos displaying either a fully ventralized phenotype, some residual dorsal structures, both dorsal and head structures or various abnormalities (n = 49, N = 4). (C) High-resolution fluorescence images of control, DD-removed and animal pole explants 30 min after explant preparation stained for both β-catenin (grey) and DAPI (not shown). Both full projection and substack top views are shown to facilitate simultaneous visualization of the wounding site (yellow circle) and nuclear accumulation of β-catenin (yellow arrowheads). Insets are zoom-in images of the highlighted regions (dashed boxes). The proportion of blastoderm explants with a phenotype similar to the images shown is indicated in the lower left corner (control: n = 30, N = 6; DD-removed: n = 18, N = 4; animal pole: n = 10, N = 2). (D) Percentage of control (n = 30, N = 6), DD-removed (n = 18, N = 4) and animal pole (n = 10, N = 2) explants showing nuclear β-catenin staining 30 min after explant preparation. (E) High-resolution images of control (n = 84, N = 8), DD-removed (n = 44, N = 5) and animal pole (n = 27, N = 5) blastoderm explants at bud stage. In all cases, blastoderm explants were prepared from sebox::EGFP-expressing embryos (green) and are shown as side views. The proportion of blastoderm explants with a phenotype similar to the images shown is indicated in the lower right corner. (F) Percentage of control (n = 84, N = 8), DD-removed (n = 44, N = 5) and animal pole (n = 27, N = 5) blastoderm explants showing normal, reduced or no sebox::EGFP expression at bud stage (see Materials and methods for additional details). (G) Area of the sebox::EGFP domain in control (n = 84, N = 8), DD-removed (n = 44, N = 5) and animal pole (n = 27, N = 5) blastoderm explants at bud stage. ****p<0.0001 (Kruskal-Wallis test). (H) Area of the sebox::EGFP domain versus the normalized extension length in control (n = 77, N = 8), DD-removed (n = 44, N = 5) and animal pole (n = 27, N = 5) blastoderm explants at bud stage. Scale bars: 500 µm (A), 100 µm (C, E).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) High-resolution fluorescence images of 50% epiboly control and dorsal determinants removed (DD-removed) embryos stained both for pSMAD2/3 (pink) and DAPI (grey). Nuclear pSMAD2/3 is color-coded using a fire lookup table (highest intensities in yellow) and was masked based on the DAPI signal. Insets are zoom-in images of the highlighted regions (dashed boxes). The proportion of embryos with a phenotype similar to the images shown is indicated in the lower left corner (control: n = 24, N = 8; DD-removed: n = 25, N = 7). (B) Percentage of control (n = 24, N = 8) and DD-removed (n = 25, N = 7) embryos showing a domain of pSMAD2/3 positive nuclei (present), a few sporadic pSMAD2/3 positive nuclei (strongly reduced) or no positive nuclei (negative) at 50% epiboly (see Materials and methods for additional details). (C) Percentage of pSMAD2/3 positive nuclei in control (n = 10, N = 3) and DD-removed (n = 9, N = 3) embryos at 50% epiboly. ns, not significant (Unpaired t test). (D) Normalized intensity of the brightest pSMAD2/3 nuclei (for details see Materials and methods) in control (n = 10, N = 3) and DD-removed (n = 9, N = 3) embryos at 50% epiboly. ns, not significant (Mann-Whitney test). (E) High-resolution images of sebox::EGFP-expressing control (n = 20, N = 2) and DD-removed (n = 29, N = 2) embryos at bud stage. The embryos are shown as side views and the proportion of embryos expressing sebox::EGFP shown is indicated in the lower right corner. (F) Percentage of control (n = 20, N = 2) and DD-removed (n = 29, N = 2) embryos showing normal, reduced or no sebox::EGFP expression at bud stage (see Materials and methods for additional details). (G) High-resolution fluorescence images of 50% epiboly control (n = 18, N = 4) and CA-Alk8 (30 pg; n = 10, N = 4) overexpressing blastoderm explants stained for both pSMAD2/3 (pink) and DAPI (grey). Nuclear pSMAD2/3 is shown in a fire lookup table and was masked based on the DAPI signal. Insets are zoom-in images of the highlighted regions (dashed boxes). Yellow circles denote the wounding site. The proportion of blastoderm explants with a phenotype similar to the images shown is indicated in the lower left or right corner. (H) Percentage of control (n = 18, N = 4) and CA-Alk8-overexpressing (30 pg; n = 10, N = 4) blastoderm explants showing a domain of pSMAD2/3 positive nuclei (present), a few sporadic pSMAD2/3 positive nuclei (strongly reduced) or no positive nuclei (negative) at 50% epiboly (see Materials and methods for additional details). Scale bars: 100 µm (A,E,G).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Schematic representation of the preparation method of blastomere reaggregates from high stage embryos. (B) High-resolution fluorescence images of a blastomere reaggregate (top view) from late sphere stage onwards (30–45 min after reaggregate preparation; n = 8, N = 8). Cell membranes (grey) are marked by Membrane-RFP and nuclei (red) by H2A-chFP expression. Time in min. The reaggregate edges at the end of the acquisition are outlined by a white dashed line. Insets are zoom-in images of a cell division event completed at 136 min (dashed boxes). The dividing cell is highlighted with an asterisk and the two daughter cells with white arrowheads. (C) Cell diameter in blastomere reaggregates from late sphere stage onwards (0 min: number of cells = 211, n = 8, N = 8; 32 min: number of cells = 209, n = 8, N = 8; 64 min: number of cells = 208, n = 8, N = 8; 96 min: number of cells = 199, n = 8, N = 8; 128 min: number of cells = 197, n = 8, N = 8; 160 min: number of cells = 198, n = 8, N = 8; 192 min: number of cells = 210, n = 8, N = 8; 224 min: number of cells = 199, n = 8, N = 8). (D) Bright-field single-plane images of blastomere reaggregates (top view) prepared at a density of one or three embryos/well (indicated at the top) and subsequently cultured in either Ringer’s (one embryo/well: n = 233, N = 3; three embryos/well: n = 202, N = 3), Ringer’s with methylcellulose (MC 0.3%; three embryos/well: n = 184, N = 3) or L15 (three embryos/well: n = 227, N = 3) media until bud stage. (E) Circularity of bud stage blastomere reaggregates prepared at a density of one or three embryos/well (indicated at the side) and cultured in either Ringer’s (one embryo/well: n = 233, N = 3; three embryos/well: n = 202, N = 3), Ringer’s with methylcellulose (MC 0.3%; three embryos/well: n = 184, N = 3) or L15 (three embryos/well: n = 227, N = 3) media. (F) Expression of the mesodermal marker ntl, as determined by whole mount in situ hybridization in blastomere reaggregates (top view) prepared at a density of one or three embryos/well (indicated at the top) and subsequently cultured in either Ringer’s (one embryo/well: n = 56, N = 4; three embryos/well: n = 64, N = 4), Ringer’s with methylcellulose (MC 0.3%; three embryos/well: n = 52, N = 3) or L15 (three embryos/well: n = 75, N = 5) media until bud stage. The proportion of blastomere reaggregates with a phenotype similar to the images shown is indicated in the lower right corner. (G) Percentage of bud stage blastomere reaggregates prepared at a density of one or three embryos/well (indicated at the side) and cultured in either Ringer’s (one embryo/well: n = 56, N = 4; three embryos/well: n = 64, N = 4), Ringer’s with methylcellulose (MC 0.3%; three embryos/well: n = 52, N = 3) or L15 (three embryos/well: n = 75, N = 5) media showing or not ntl expression, as determined by whole mount in situ hybridization. (H) Percentage of bud stage blastomere reaggregates prepared at a density of one or three embryos/well (indicated at the side) and cultured in either Ringer’s (one embryo/well: n = 45, N = 4; three embryos/well: n = 64, N = 4), Ringer’s with methylcellulose (MC 0.3%; three embryos/well: n = 52, N = 3) or L15 (three embryos/well: n = 27, N = 4) media showing a single coherent ntl expression domain, several compact ntl-positive cell clusters (example shown for L15 cultured reaggregates in F), few sparse ntl positive cells (example shown for Ringer’s, Ringer’s + MC and L15 cultured reaggregates in F) or randomly scattered groups of ntl expressing cells (examples shown for Ringer’s or Ringer’s + MC cultured reaggregates in F), as determined by whole mount in situ hybridization. Scale bars: 100 µm (B), 500 µm (D), 150 µm (F).
+
 Nuclear accumulation of β-cat is thought to be triggered by maternal factors, which are transported to the future dorsal side of the zebrafish embryo upon fertilization (Langdon and Mullins, 2011; Marlow, 2020). To determine whether this β-cat nuclear accumulation at the dorsal blastoderm margin is indeed responsible for Nodal signaling activation and mesendoderm induction in explants, we prepared explants from embryos depleted of maternal dorsal determinants (DD-removed) and analyzed the formation of the Nodal signaling domain therein. To this end, we mechanically removed the vegetal-most part of the zygote cortex, where these factors are thought to localize prior to transport to the future dorsal side of the embryo soon after fertilization (Langdon and Mullins, 2011; Marlow, 2020; Mizuno et al., 1999; Ober and Schulte-Merker, 1999). As expected, in blastoderm explants prepared from DD-removed embryos, a large portion (>50%) of which displayed a fully ventralized phenotype one day after fertilization (1 dpf), nuclear accumulation of β-cat was strongly diminished (Figure 4—figure supplement 1A–D). Interestingly, we found that explants originating from DD-removed embryos showed a clear reduction in Nodal signaling (Figure 4D,E, Video 4) and reduced expression of the pan-mesendodermal marker sebox (Figure 4—figure supplement 1E–G). Consistent with the notion that Nodal-mediated mesendoderm specification was reduced in DD-removed explants, we also found that the proportion of blastoderm explants forming an extension and the degree of explant extension were reduced (Figure 4F–I). Moreover, the extent of mesendoderm induction in DD-removed explants closely correlated with the degree of explant extension at bud stage (Figure 4—figure supplement 1H). This suggests that in blastoderm explants, maternal deposition of dorsal determinants in cells close to the future wounding site is required for Nodal signaling activation and mesendoderm induction, much more than in embryos that retain Nodal signals emanating from the YSL (Figure 4D,E, Figure 4—figure supplement 1E–H, Figure 4—figure supplement 2A–F). To exclude that the effect of β-cat depletion on Nodal signaling is a mere secondary consequence of embryo ventralization (Mizuno et al., 1999; Ober and Schulte-Merker, 1999), we analyzed Nodal signaling in blastoderm explants prepared from embryos ventralized by overexpression of a constitutively active (CA) form of the BMP receptor Alk8 (Payne et al., 2001). CA-Alk8-overexpressing blastoderm explants did not display a strong reduction in the establishment of a Nodal signaling domain (Figure 4—figure supplement 2G,H), supporting the notion that β-cat does not affect Nodal signaling through its effect on dorsoventral embryo patterning.
+
+![Video 4.](https://cdn.elifesciences.org/articles/55190/elife-55190-video4.mp4.jpg)
+
+**Video 4.:** High-resolution fluorescence images of 50% epiboly control (left; n = 73, N = 14), dorsal determinants-removed (DD-removed, middle; n = 30, N = 7) and animal pole (right; n = 22, N = 6) explants stained for both pSMAD2/3 (pink) and DAPI (grey). A full stack projection (also shown in Figure 4D) for each condition is shown first, followed by the individual z stacks. The explants are shown as top views and the yellow circles denote the wounding site. Scale bar: 100 µm.
 
 To further challenge the notion that maternal pre-patterning of blastoderm explants is critical for mesendoderm induction and morphogenesis, we sought to prepare explants lacking all pre-patterning. To this end, we prepared explants from the animal pole (AP) of the blastoderm, which should be devoid of marginal cells and dorsal determinants (Xu et al., 2014). In these explants, no accumulation of β-cat was observed in the nuclei of cells close to the wounding site (Figure 4—figure supplement 1C,D). Moreover, AP-derived explants showed strongly reduced nuclear pSMAD2/3 accumulation, mesendoderm induction and tissue extension (Figure 4D–H, Figure 4—figure supplement 1E–H, Video 4). These findings therefore suggest that maternal pre-patterning by dorsal determinants is needed for proper mesendoderm induction and morphogenesis in blastoderm explants.
 
@@ -47,7 +123,23 @@ To determine whether positional information retained within the blastoderm and s
 
 Our analysis of blastoderm explants and reaggregates so far indicates that in isolation from extraembryonic signaling sources, the spatially localized pre-patterning within the blastoderm margin can still drive a large degree of mesendoderm patterning and morphogenesis. This seems to contradict previous claims from embryo analysis that Nodal signaling from the extraembryonic YSL is needed for these processes (Carvalho and Heisenberg, 2010; Fan et al., 2007; Gagnon et al., 2018; Hong et al., 2011; van Boxtel et al., 2015; Veil et al., 2018; Xu et al., 2012). To understand this apparent discrepancy, we directly compared mesendoderm induction in blastoderm explants with intact embryos where Nodal signal production within the YSL is blocked. To block Nodal expression within the YSL, we injected sqt and cyc MOs specifically into the YSL of high stage embryos. Consistent with previous observations (Fan et al., 2007), we found that injection of high amounts of both sqt (2 ng/embryo) and cyc (4 ng/embryo) MOs impaired induction of endoderm (sox32) and head mesoderm (hgg and gsc) (Figure 5A, Figure 5—figure supplement 1A,B), the two mesendoderm progenitor cell types whose induction is thought to require the highest dose of Nodal signaling (Dougan et al., 2003; Gritsman et al., 2000; Schier et al., 1997; Thisse and Thisse, 1999). The induction of notochord (ntl), paraxial (papc) and ventrolateral mesoderm (myoD and tbx6), in contrast, appeared normal in the morphant embryos (Figure 5A, Figure 5—figure supplement 1A,B). This also became apparent by 32 hpf, when most morphant embryos displayed severe cyclopia, indicative of defective induction of anterior mesendoderm structures, but largely normal trunk and tail structures (Figure 5B). Together, these observations suggest that - consistent with previous findings (Fan et al., 2007) - the YSL is needed for robust induction of endoderm and head mesoderm, and that this signaling source might be specifically required to achieve peak levels of Nodal signaling along the blastoderm margin.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig5-v2.jpg)
+
+**Figure 5.:** (A) Expression of mesendoderm (hgg and ntl) and endoderm (sox32) marker genes, as determined by whole mount in situ hybridization in control MO (6 ng) or sqt (2 ng) + cyc (4 ng) MO YSL-injected embryos at bud stage. Schematic representation of the embryo views is shown on the left. The proportion of embryos with a phenotype similar to the images shown is indicated in the lower right corner (hgg: control, n = 69, N = 4, sqt/cyc, n = 57, N = 4; ntl: control, n = 50,N = 4, sqt/cyc, n = 28, N = 4 and sox32: control, n = 48, N = 3, sqt/cyc, n = 23, N = 3). (B) Bright-field single-plane images of pharyngula stage (32 hpf) control MO (6 ng) or sqt (2 ng) + cyc (4 ng) MO YSL-injected embryos. The proportion of embryos with a phenotype similar to the images shown is indicated in the lower right corner (n = 19, N = 2; n = 14, N = 2). (C) High-resolution fluorescence images of control MO (6 ng) or sqt (2 ng) + cyc (4 ng) MO YSL-injected embryos stained both for pSMAD2/3 (pink) and DAPI (grey) at 50% epiboly (dorsal domain: control, n = 10, N = 4; sqt/cyc, n = 7, N = 4; lateral domain: control, n = 9, N = 4; sqt/cyc, n = 7, N = 4) and germ ring (dorsal domain: control, n = 7, N = 4; sqt/cyc, n = 8, N = 4; lateral domain: control, n = 8, N = 4; sqt/cyc, n = 7, N = 4). Nuclear pSMAD2/3 is color-coded using a fire lookup table (highest intensities in yellow) and was masked based on the DAPI signal. Insets are zoom-in images of the highlighted regions (dashed boxes). (D) Percentage of pSMAD2/3 positive nuclei in control MO (6 ng) or sqt (2 ng) + cyc (4 ng) MO YSL-injected embryos at 50% epiboly (dorsal domain: control, n = 10, N = 4; sqt/cyc, n = 7, N = 4; lateral domain: control, n = 9, N = 4; sqt/cyc, n = 7, N = 4) and germ ring (dorsal domain: control, n = 7, N = 4; sqt/cyc, n = 8, N = 4; lateral domain: control, n = 8, N = 4; sqt/cyc, n = 7, N = 4). ****p<0.0001, **p=0.0093, **p=0.0023, respectively (ANOVA test). (E) Normalized intensity of the brightest pSMAD2/3 positive nuclei (for details see Materials and methods) in control MO (6 ng) or sqt (2 ng) + cyc (4 ng) MO YSL-injected embryos at 50% epiboly (dorsal domain: control, n = 10, N = 4; sqt/cyc, n = 7, N = 4; lateral domain: control, n = 9, N = 4; sqt/cyc, n = 7, N = 4) and germ ring (dorsal domain: control, n = 7, N = 4; sqt/cyc, n = 8, N = 4; lateral domain: control, n = 8, N = 4; sqt/cyc, n = 7, N = 4). ****p<0.0001, ***p=0.0010 (Kruskal-Wallis test). (F,G) Normalized intensity of the brightest pSMAD2/3 positive nuclei as a function of the distance to the YSL, expressed as cell tiers, in control MO (6 ng) or sqt (2 ng) + cyc (4 ng) MO YSL-injected embryos at 50% epiboly (for details see Materials and methods; dorsal domain: control, n = 10, N = 4; sqt/cyc, n = 7, N = 4; lateral domain: control, n = 9, N = 4; sqt/cyc, n = 7, N = 4) and germ ring (dorsal domain: control, n = 7, N = 4; sqt/cyc, n = 8, N = 4; lateral domain: control, n = 8, N = 4; sqt/cyc, n = 7, N = 4). (C-G) The position along the dorsal-ventral axis is indicated at the top. Scale bars: 200 µm (A), 500 µm (B), 100 µm (C).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Expression of additional mesendoderm marker genes (papc, myoD, tbx6 and gsc) as determined by whole mount in situ hybridization in control MO (6 ng) or sqt (2 ng) + cyc (4 ng) MO YSL-injected embryos at bud stage. Schematic representation of the embryo views is shown in the left. The proportion of embryos with a phenotype similar to the images shown is indicated in the lower right corner (papc: control, n = 52, N = 3, sqt/cyc, n = 27, N = 3; myoD: control, n = 39, N = 3, sqt/cyc, n = 19, N = 3; tbx6: control, n = 25, N = 3, sqt/cyc, n = 20, N = 3 and gsc: control, n = 44, N = 3, sqt/cyc, n = 28, N = 3). (B) Percentage of bud stage sqt (2 ng) + cyc (4 ng) MO YSL-injected embryos showing expression of mesendoderm (hgg: n = 57, N = 4; gsc: n = 28, N = 3; myoD: n = 19, N = 3; ntl: n = 28, N = 4; papc: n = 27, N = 3; tbx6: n = 20, N = 3) and endoderm (sox32: n = 23, N = 3) marker genes, as determined by whole mount in situ hybridization. (C) High-resolution images of control MO (6 ng) or sqt (2 ng) + cyc (4 ng) MO YSL-injected embryos expressing gsc::GFP-CAAX and H2B-EGFP (injection control) at 50% epiboly (dorsal domain: control, n = 10, N = 4; sqt/cyc, n = 7, N = 4; lateral domain: control, n = 9, N = 4; sqt/cyc, n = 7, N = 4) and germ ring (dorsal domain: control, n = 7, N = 4; sqt/cyc, n = 8, N = 4; lateral domain: control, n = 8, N = 4; sqt/cyc, n = 7, N = 4). The position along the dorsal-ventral axis is indicated at the top. Images correspond to the embryos shown in Figure 5C. Scale bars: 200 µm (A), 100 µm (C).
+
 To address this possibility, we analyzed the number and intensity of nuclear pSMAD2/3 in cells along the blastoderm margin of embryos injected with control (6 ng/embryo) or sqt (2 ng/embryo) and cyc (4 ng/embryo) MOs into the YSL. We found a strong and persistent reduction of both the number and intensity of nuclear pSMAD2/3 positive cells along the blastoderm margin in sqt/cyc morphants (Figure 5C–G, Figure 5—figure supplement 1C), indicating that YSL-derived Nodal signals are needed to enhance Nodal signaling in the overlying blastoderm. Next, we asked whether injecting lower amounts of sqt/cyc MOs into the YSL would result in a less pronounced reduction in endoderm and head mesoderm specification. YSL-specific injection of lower amounts of sqt (1 or 0.4 ng/embryo) and cyc (2 or 0.8 ng/embryo) MOs led to a dose-dependent reduction in both the number of morphant embryos expressing the ppl marker hgg and the size of the ppl, as determined by the expression area of hgg, in those embryos at bud stage (Figure 6A–C). Likewise, by 32 hpf, the severity of the cyclopia phenotype closely correlated with the amount of sqt/cyc MOs injected within the YSL (Figure 5B, Figure 6—figure supplement 1A). Endoderm induction, visualized by sox32 expression (Kikuchi et al., 2001), was also strongly reduced in morphant embryos even with the lowest amount of YSL-injected sqt/cyc MOs (0.4 ng sqt + 0.8 ng cyc MO; Figure 6—figure supplement 1B,C). Consistent with such dose-dependent reduction in head mesoderm and endoderm specification, we found that Nodal signaling, assayed by pSMAD2/3 nuclear localization, was decreased to a lesser extent in embryos YSL-injected with low compared to high amounts of sqt/cyc MOs (2 ng sqt and 4 ng cyc MO) (Figure 6D–G, Figure 6—figure supplement 1D; compare to Figure 5C–G). Collectively, these findings indicate that robust induction of head mesoderm and endoderm structures in intact embryos critically relies on the right dosage of extraembryonic Nodal ligands.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig6-v2.jpg)
+
+**Figure 6.:** (A) Expression of hgg, a head mesoderm marker gene, in bud stage control MO (6 ng) or varying dosages of sqt + cyc MO YSL-injected embryos (1/2x: 1 ng sqt + 2 ng cyc MO and 1/5x: 0.4 ng sqt + 0.8 ng cyc MO), as determined by whole mount in situ hybridization. All embryos are shown as an animal view (schematic representation in the left). The proportion of embryos with a phenotype similar to the images shown is indicated in the lower right corner (control MO: n = 52, N = 3; 1/2x sqt/cyc: n = 59, N = 3; 1/5x sqt/cyc: n = 47, N = 3). (B) Percentage of control MO (n = 52, N = 3) or sqt + cyc MO YSL-injected embryos (1/2x sqt/cyc: n = 59, N = 3; 1/5x sqt/cyc: n = 47, N = 3) showing expression of hgg as determined by whole mount in situ hybridization at bud stage. (C) Ppl area (based on hgg staining, as determined by whole mount in situ hybridization) in control MO (n = 52, N = 3) or sqt + cyc MO YSL-injected embryos (1/2x sqt/cyc: n = 14, N = 3; 1/5x sqt/cyc: n = 37, N = 3), uninjected wildtype embryos (n = 31, N = 4) or blastoderm explants, prepared from 256 c embryos (n = 20, N = 5). ****p<0.0001, ns, not significant. (Kruskal-Wallis test). (D) High-resolution fluorescence images of control MO (6 ng) or 1/5x sqt (0.4 ng) + cyc (0.8 ng) MO YSL-injected embryos stained both for pSMAD2/3 (pink) and DAPI (grey) at 50% epiboly (dorsal domain: control, n = 11, N = 5; 1/5x sqt/cyc, n = 8, N = 3; lateral domain: control, n = 9, N = 4; 1/5x sqt/cyc, n = 7, N = 3). Nuclear pSMAD2/3 is color-coded using a fire lookup table (highest intensities in yellow) and was masked based on the DAPI signal. Insets are zoom-in images of the highlighted regions (dashed boxes). (E) Percentage of pSMAD2/3 positive nuclei in control MO (6 ng) or 1/5x sqt (0.4 ng) + cyc (0.8 ng) MO YSL-injected embryos at 50% epiboly (dorsal domain: control, n = 11, N = 5; 1/5x sqt/cyc, n = 8, N = 3; lateral domain: control, n = 9, N = 4; 1/5x sqt/cyc, n = 7, N = 3). **p=0.0086, ns, not significant (Kruskal-Wallis test). (F) Normalized intensity of the brightest pSMAD2/3 nuclei (for details see Materials and methods) in control MO (6 ng) or 1/5x sqt (0.4 ng) + cyc (0.8 ng) MO YSL-injected embryos at 50% epiboly (dorsal domain: control, n = 11, N = 5; 1/5x sqt/cyc, n = 8, N = 3; lateral domain: control, n = 9, N = 4; 1/5x sqt/cyc, n = 7, N = 3). ****p<0.0001 (Kruskal-Wallis test). (G) Normalized intensity of pSMAD2/3 positive nuclei as a function of the distance to the YSL, expressed as cell tiers, in control MO (6 ng) or 1/5x sqt (0.4 ng) + cyc (0.8 ng) MO YSL-injected embryos at 50% epiboly (see Materials and methods for additional details; dorsal domain: control, n = 11, N = 5; 1/5x sqt/cyc, n = 8, N = 3; lateral domain: control, n = 9, N = 4; 1/5x sqt/cyc, n = 7, N = 3). (D-G) The position along the dorsal-ventral axis is indicated in the top right corner or at the bottom. Part of the control MO samples for (A-G) is also shown in Figure 5A and C–G. Scale bars: 200 µm (A), 100 µm (D).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/55190/elife-55190-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Bright-field single-plane images of control MO (6 ng), 1/2x or 1/5x sqt (1 or 0.4 ng, respectively) + cyc (2 or 0.8 ng, respectively) MO YSL-injected embryos at pharyngula stage (32 hpf). The proportion of embryos with a phenotype similar to the images shown is indicated in the lower right corner (control: n = 19, N = 2; 1/2x sqt/cyc: n = 21, N = 2 and 1/5x sqt/cyc: n = 22, N = 2). The control MO samples are also shown in Figure 5B. (B) Expression of sox32, an endoderm marker gene, as determined by whole mount in situ hybridization in control MO (6 ng) or 1/5x sqt (0.4 ng) + cyc (0.8 ng) MO YSL-injected embryos (side views) at bud stage. Embryos are shown as an animal view (schematic representation shown on the left). The proportion of embryos with a phenotype similar to the images shown is indicated in the lower right corner (control MO: n = 33, N = 3 and 1/5x sqt/cyc: n = 30, N = 3). (C) Percentage of bud stage control MO (n = 33, N = 3) or 1/5x sqt (0.4 ng) + cyc (0.8 ng) MO YSL-injected embryos (n = 30, N = 3) showing normal, strongly reduced or no expression of sox32, as determined by whole mount in situ hybridization. (D) High-resolution images of control MO (6 ng) or 1/5x sqt (0.4 ng) + cyc (0.8 ng) MO YSL-injected embryos expressing gsc::GFP-CAAX and H2B-EGFP (injection control) at 50% epiboly (dorsal domain: control, n = 11, N = 5; sqt/cyc, n = 8, N = 3; lateral domain: control, n = 9, N = 4; sqt/cyc, n = 7, N = 3). The position along the dorsal-ventral axis is indicated at the top. Images correspond to the embryos also shown in Figure 6D. Scale bars: 500 µm (A), 200 µm (B), 100 µm (C).
 
 Finally, to understand how the variable induction of head mesoderm in sqt/cyc MO morphants might relate to our observations in blastoderm explants, we performed a detailed analysis of the induction of these structures within the explants. Notably, we found that in explants the induction of head mesoderm and endoderm was highly variable (Figure 1D, Figure 1—figure supplement 1G,H), and both the size of the ppl and the number of sox32-positive endoderm cells were strongly reduced (Figure 6C, Figure 1—figure supplement 1G,H,J). This is consistent with our observations from the embryo analysis that Nodal signals from the extraembryonic YSL are needed for robust induction of these structures.
 
@@ -65,25 +157,350 @@ Collectively, our findings suggest that zebrafish blastoderm explants undergo wh
 
 ## Materials and methods
 
-## Fish lines and husbandry
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Zebrafish: wildtype ABxTL</td>
+      <td>MPI-CBG dresden</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Zebrafish: Tg(gsc::EGFP-CAAX)</td>
+      <td>(Smutny et al., 2017)</td>
+      <td>ZFINID:ZDB-ALT-170811–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Zebrafish: Tg(sebox::EGFP)</td>
+      <td>(Ruprecht et al., 2015)</td>
+      <td>ZFINID:ZDB-ALT-150727–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Zebrafish: Tg(krt4::EGFP-CAAX)</td>
+      <td>(Krens et al., 2011)</td>
+      <td>ZFINID:ZDB-ALT-111207–5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Zebrafish: Tg(actb2::lyntdtomato;actb2::H2B-EGFP)</td>
+      <td>(Stegmaier et al., 2016)</td>
+      <td>ZFINID:ZDB-ALT-161017–9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Zebrafish: MZoep</td>
+      <td>(Gritsman et al., 1999)</td>
+      <td>ZFINID:ZDB-ALT-980203–1256</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Zebrafish: MZfz7a/b</td>
+      <td>(Quesada-Hernández et al., 2010)</td>
+      <td>ZFINID:ZDB-FISH-150901–19586</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Zebrafish: MZfz7a/b; Tg(gsc::EGFP-CAAX)</td>
+      <td>(Čapek et al., 2019)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Zebrafish: MZwnt11</td>
+      <td>(Heisenberg et al., 2000)</td>
+      <td>ZFINID:ZDB- ALT-980203–1302</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. rerio)</td>
+      <td>Zebrafish: MZwnt5b</td>
+      <td>(Kilian et al., 2003)</td>
+      <td>ZFINID:ZDB- ALT-980203–1630</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2+-Membrane-GFP plasmid for mRNA synthesis</td>
+      <td>(Kimmel and Meyer, 2010)</td>
+      <td></td>
+      <td>60–100 pg (1 c injection)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2-Membrane-RFP plasmid for mRNA synthesis</td>
+      <td>(Iioka et al., 2004)</td>
+      <td></td>
+      <td>80 pg (1 c injection)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2+-H2B-eGFP plasmid for mRNA synthesis</td>
+      <td>(Keller et al., 2008)</td>
+      <td></td>
+      <td>50 pg (1 c or YSL injection)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2-H2A-mCherry plasmid for mRNA synthesis</td>
+      <td>(Arboleda-Estudillo et al., 2010)</td>
+      <td></td>
+      <td>6.5 pg (128 c injection)50 pg (1 c injection)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCS2+-CA-Alk8 plasmid for mRNA synthesis</td>
+      <td>(Payne et al., 2001)</td>
+      <td></td>
+      <td>30 pg (1 c injection)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human β-Globin Morpholino: 5′-CCTCTTACCTCAG TTACAATTTATA-3′</td>
+      <td>Gene Tools</td>
+      <td></td>
+      <td>6 ng (YSL injection)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>sqt Morpholino: 5’-ATGTCAAATCAAGG TAATAATCCAC-3′</td>
+      <td>Gene Tools</td>
+      <td>ZFINID:ZDB-MRPHLNO-060809–1</td>
+      <td>0.4–2 ng (YSL injection)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>cyc Morpholino: 5’-GCGACTCCGAGCGTGTGCATGATG-3′</td>
+      <td>Gene Tools</td>
+      <td>ZFINID:ZDB-MRPHLNO-060930–4</td>
+      <td>0.8–4 ng (YSL injection)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-Smad2 (Ser465/467)/Smad3 (Ser423/425) (clone D27F4)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 8828, RRID:AB_2631089</td>
+      <td>1:1000 (WMIF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-Catenin (clone 15B8)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C7207, RRID:AB_476865</td>
+      <td>1:500 (WMIF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Phospho-Smad1/5 (Ser463/465) (clone 41D10)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 9516, RRID:AB_491015</td>
+      <td>1:100 (WMIF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 546 Goat Anti-rabbit IgG (H + L)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A-11010; RRID:AB_2534077</td>
+      <td>1:500 (WMIF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 Goat Anti-mouse IgG (H + L)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: A-11001; RRID:AB_2534069</td>
+      <td>1:500 (WMIF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 Goat Anti-mouse IgG (H + L)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-21235; RRID:AB_2535804</td>
+      <td>1:500 (WMIF)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Digoxigenin-AP Fab fragments</td>
+      <td>Roche</td>
+      <td>Cat#11093274910 RRID:AB_2734716</td>
+      <td>1:1000 (WMISH)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Fluorescein-AP Fab fragments</td>
+      <td>Roche</td>
+      <td>Cat#11426338910 RRID :AB_2734723</td>
+      <td>1:500 (WMISH)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMSO</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#D8418</td>
+      <td>50 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SB-505124</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# S4696</td>
+      <td>50 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran Alexa Fluor 647</td>
+      <td>Invitrogen</td>
+      <td>Cat#D22914</td>
+      <td>2 ng (Sphere stage injection)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran Cascade Blue</td>
+      <td>Invitrogen</td>
+      <td>Cat# D1976</td>
+      <td>2 ng (Sphere stage injection)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydroxyurea</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#H8627</td>
+      <td>60 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aphidicolin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#A0781</td>
+      <td>300 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Invitrogen</td>
+      <td>Cat#D1306</td>
+      <td>1 µg/mL (WMIF)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methylcellulose</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#M0387</td>
+      <td>0.3%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digoxigenin (DIG)-modified nucleotides</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#11277073910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluorescein-labeled nucleotides</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#11685619910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SIGMAFAST Fast Red TR/Naphthol AS-MX Tablets</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#F4648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell culture reagent</td>
+      <td>L15</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# L4386</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td>https://imaris.oxinst.com/packages</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Fiji</td>
+      <td>(Schindelin et al., 2012)</td>
+      <td>https://fiji.sc/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>MATLAB</td>
+      <td>MATLAB Software</td>
+      <td>https://www.mathworks.com/products/ matlab.html</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>pSMAD2/3 and β-catenin analysis (custom-made script)</td>
+      <td>This paper</td>
+      <td>Source code 1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, Algorithm</td>
+      <td>Excel</td>
+      <td>Microsoft</td>
+      <td>https://products.office.com/en-us/?rtc=1</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fish lines and husbandry
 
 Zebrafish (Danio rerio) handling was performed as described (Westerfield, 2000). The mutant and transgenic lines used in this study are detailed in the key resources table. Embryos were raised at 25–31°C in Danieau’s solution or E3 medium and staged according to Kimmel et al. (1995).
 
-## Blastoderm explant preparation
+### Blastoderm explant preparation
 
 Embryos for blastoderm explant preparation were manually dechorionated with watchmaker forceps. Explants were then prepared at 256 cell stage, unless stated otherwise, by removing the entire blastoderm from the yolk cell using forceps, and then washed by gentle pipetting to remove residual yolk granules (schematic representation in Figure 1A). Animal pole explants were prepared by removing only the animal portion of the blastoderm at 256 cell stage using a hair knife instead of forceps. All explants were cultured in Ringer’s solution (116 mM NaCl, 2.9 mM KCl, 1.8 m M CaCl2, 5.0 mM HEPES, pH 7.2) or Danieau’s medium (58 mM NaCl, 0.7 mM KCl, 0.4 mM MgSO4, 0.6 mM Ca(NO3)2, 5 mM HEPES, pH 7.6). Approximately 1 hour (hr) after explant preparation, explants with delayed cell cleavages, as assessed by increased cell size, were removed from the dish. The remaining explants were then staged based on sibling embryos from the same egg lay. To analyze explant morphology, bright-field side view images of blastoderm explants were acquired using a stereo-microscope (Olympus SZX 12) equipped with a QImaging Micropublisher 5.0 camera.
 
-## Embryo microinjections
+### Embryo microinjections
 
 mRNAs were synthesized using the mMessage mMachine Kit (Ambion). Injections at 1 cell stage were carried out as described (Westerfield, 2000) and the plasmids used for mRNA production are detailed in the key resources table. Labelling the interstitial fluid was performed by injecting 2 ng of Dextran Alexa Fluor 647, or Dextran Cascade Blue, between the deep cells of blastoderm explants corresponding to high stage or sphere stage embryos, as described in Krens et al. (2017). For time-lapse imaging of the interstitial fluid, embryos were also injected at 1 cell stage with 80 pg of Membrane-GFP. For high-resolution live imaging of gastrulating blastoderm explants, Tg(gsc::EGFP-CAAX) expressing embryos were injected at 1 cell stage with 50 pg of H2A-chFP to label the cell nuclei. For the clone dispersal analysis, the plasma membrane of all cells was labelled by injecting 80 pg of Membrane-RFP mRNA at 1 cell stage. 6.5 pg of H2A-chFP mRNA was subsequently injected into a single marginal blastomere at 128 cell stage (schematic representation in Figure 2—figure supplement 2A). To constitutively activate BMP signaling, 30 pg of CA-Alk8 mRNA were injected together with 60 pg of Membrane-GFP mRNA at 1 cell stage.
 
 YSL injections were performed right after its formation, between 1 k and high stage. As a control for homogeneous YSL injections, 50 pg of H2B-EGFP mRNA and 0.2% Phenol Red were co-injected into the YSL. To block YSL-derived Nodal signals, 0.4–2 ng of sqt MO (sqt MO: 5′-ATGTCAAATCAAGGTAATAATCCAC-3′ [Feldman and Stemple, 2001]) were co-injected with 0.8–4 ng of cyc MO (cyc MO: 5′-GCGACTCCGAGCGTGTGCATGATG-3′ [Karlen and Rebagliati, 2001]) into the YSL. As a control for MO injections, 6 ng of a standard negative control MO (human β-globin MO: 5′-CCTCTTACCTCAGTTACAATTTATA-3′) were also injected.
 
-## Live imaging of blastoderm explants
+### Live imaging of blastoderm explants
 
 Bright-field time-lapse imaging of explants was performed using a Zeiss LSM 800 upright microscope equipped with a Zeiss Plan-Apochromat 20x/1.0 water immersion objective starting when stage-matched control embryos had reached sphere-early dome stage. High-resolution live imaging of developing blastoderm explants was performed using a LaVision Trim 2-photon microscope equipped with a Zeiss Plan-Apochromat 16x/0.8 water immersion objective and a Ti:Sa laser (Chameleon, Coherent) set to 830 nm and an OPO laser set at 1100 nm. In this case, imaging was started when stage-matched control embryos had reached 50% epiboly-germ ring stage. In both cases, blastoderm explants were oriented in a side view, and the acquired images were then processed using Fiji and/or Imaris.
 
-## Analysis of fluid accumulation, YSL formation and EVL differentiation
+### Analysis of fluid accumulation, YSL formation and EVL differentiation
 
 Imaging of the explant interstitial fluid at bud stage was performed using a LaVision Trim 2-photon microscope equipped with a Zeiss Plan-Apochromat 20x/1.0 water immersion objective and a Ti:Sa laser (Chameleon, Coherent) set to 800 nm and an OPO laser set at 1100 nm, or a Zeiss LSM 880 upright confocal microscope equipped with a Zeiss Plan-Apochromat 20x/1.0 water immersion objective. Time-lapse imaging of the explant interstitial fluid was performed using a Zeiss LSM 800 upright microscope equipped with a Zeiss Plan-Apochromat 20x/1.0 water immersion objective, starting when stage-matched control embryos had reached high-oblong stage. In both cases, blastoderm explants were oriented in a side view, and the acquired images were then processed using Fiji and/or Imaris.
 
@@ -91,17 +508,17 @@ Imaging of YSL-like features in blastoderm explants was performed when correspon
 
 To analyze EVL differentiation in blastoderm explants, both animal-pole oriented embryos and explants were imaged in parallel on a Zeiss LSM 880 upright confocal microscope equipped with a Zeiss Plan-Apochromat 20x/1.0 water immersion objective. To assess whether the entire explant was covered by EVL, explants and embryos were then fixed at bud stage in 4% paraformaldehyde (PFA) at 4°C overnight, washed 5x with PBS and then imaged on a Zeiss LSM 880 upright confocal microscope equipped with a Zeiss Plan-Apochromat 20x/1.0 water immersion objective. The acquired images for both embryos (side view) and explants (side view) were then processed using Fiji and/or Imaris (Bitplane).
 
-## Sample preparation for live imaging
+### Sample preparation for live imaging
 
 Dechorionated embryos were mounted in 2% agarose molds on petri dishes and immobilized in 0.7% low melting point agarose. Explants were mounted in smaller agarose molds (800 × 800 µm from Microtissues) and cultured in Ringer’s or Danieau’s solution.
 
-## Whole mount in situ hybridization (WMISH)
+### Whole mount in situ hybridization (WMISH)
 
 Embryos were fixed with 4% PFA overnight at 4°C. Antisense RNA probes were synthesized using SP6, T7 or T3 RNA polymerase from mMessage mMachine kits (ThermoFisher, AM1344) with Roche digoxigenin (DIG)-modified nucleotides, or fluorescein (FITC)-labeled nucleotides, from partial cDNA sequences. WMISHs were performed as previously described (Thisse and Thisse, 2008) with the following modifications: (i) proteinase K treatment was performed only for sox32 in situ hybridization and for double WMISHs; (ii) 5% dextran sulfate was added to the hybridization solution for sox32, mxtx2, tbx16 and bmp2b probes and all double WMISHs; and, (iii) 0.05x SSC was used for more stringent washes for sqt in situ hybridizations. Single WMISHs were performed with DIG-labeled antisense RNA probes, while for double WMISHs, a mixture of DIG- and FITC-labeled RNA probes were added simultaneously during the hybridization step.
 
 For double WMISHs, hybridization and visualization of DIG-labelled probes with the chromogenic NBT/BCIP substrate were performed as previously described (Thisse and Thisse, 2008). When the signal was sufficiently intense, the staining solution was replaced with a solution of 100 mM glycine-HCl pH2.2 for 10 min at room temperature as described in Denker et al. (2008). The samples were then washed several times with fresh PBS + 0.1% (w/v) Tween (PBST) and blocked in blocking buffer (1 × PBST, 2% sheep serum (v/v), 2 mg/ml BSA) for 2 hr at room temperature and incubated overnight at 4°C with Anti-Fluorescein-AP Fab fragments (1:500) in fresh blocking buffer. Afterwards, the samples were washed 6x for 10–20 min at room temperature in PBT and 3x in 0.1 M Tris-HCl pH8.2 + 0.1% (w/v) Triton. The staining solution for red staining was prepared using SIGMAFAST Fast Red TR/Naphthol AS-MX Tablets according to the manufacturer’s protocol and added to the samples. After staining, the samples were cleared for 10 min in 100% EtOH and washed several times in PBT. Blastoderm explants and corresponding stage-matched embryos were always processed in the same tube, and the staining reaction was therefore stopped simultaneously. All WMISHs were imaged on a stereo-microscope (Olympus SZX 12) equipped with a QImaging Micropublisher 5.0 camera.
 
-## Whole mount immunofluorescence (WMIF)
+### Whole mount immunofluorescence (WMIF)
 
 α-pSMAD2/3 and α-β-catenin whole mount immunofluorescence was performed as described previously (van Boxtel et al., 2015). In short, dechorionated embryos and explants were fixed in 4% PFA (in PBS) overnight at 4°C, washed in PBS and then directly transferred into 100% MeOH and stored at −20°C for, at least, 2 hr. The samples were then washed 5x in PBSTr (PBS + 1% (w/v) Triton X-100), blocked 2x in blocking solution (PBSTr + 10% goat serum + 1% DMSO) for 2 hr and then incubated overnight at 4°C with α-pSMAD2/3 antibody (1:1000) and/or α-β-catenin antibody (1:500) diluted in blocking solution. Afterwards, the samples were washed 5x in PBSTr for 10 min, washed 3x in PBS + 0.1% (w/v) Triton for 1 hr and then incubated overnight at 4°C in secondary antibody (1:500) diluted in blocking solution. For labelling cell nuclei, the samples were incubated in DAPI (1:1000) diluted in blocking solution for 18 min at room temperature. After secondary antibody incubation, the samples were washed 2x for 5 min in PBSTr and 5x for 10–20 min in PBS + 0.1% Triton.
 
@@ -109,29 +526,29 @@ For double WMISHs, hybridization and visualization of DIG-labelled probes with t
 
 Immunostained embryos and blastoderm explants were imaged using an upright confocal microscope (Zeiss LSM 880 or a Zeiss LSM 800 upright microscope equipped with a Zeiss Plan-Apochromat 20x/1.0 water immersion objective) and mounted in 2% agarose molds and subsequently covered with PBS. Embryos and explants were oriented using the Tg(gsc::EGFP-CAAX) line to identify the dorsal side (embryos) or wounding site (explants). Imaging conditions were kept similar between different samples and replicates of the same experiment.
 
-## Nodal inhibitor treatment
+### Nodal inhibitor treatment
 
 Blastoderm explants together with stage-matched control embryos were incubated in 0.1% DMSO or in 50 µM of the reversible Nodal inhibitor SB-505124 (DaCosta Byfield et al., 2004; Fan et al., 2007; Hagos and Dougan, 2007; Hagos et al., 2007; Rogers et al., 2017; van Boxtel et al., 2015; Vogt et al., 2011). For inhibitor washout experiments, embryos and explants were washed 5x in Danieau’s solution for 5 min.
 
-## Cell division inhibition (HUA treatment)
+### Cell division inhibition (HUA treatment)
 
 To block cell division events during explant extension, blastoderm explants were incubated in 0.1% DMSO or a cocktail of 60 mM Hydroxyurea and 300 μM Aphidicolin (HUA) from shield to bud stage, as determined by stage-matched control embryos. To assess explant morphology, bright-field side view images of bud stage blastoderm explants treated with DMSO or HUA were then acquired using a stereo-microscope (Olympus SZX 12) equipped with a QImaging Micropublisher 5.0 camera.
 
-## Removal of dorsal determinants
+### Removal of dorsal determinants
 
 Removal of dorsal determinants was performed as described (Mizuno et al., 1999; Ober and Schulte-Merker, 1999). In short, embryos were dechorionated immediately after egg laying in Danieau’s solution and the vegetal-most part of the yolk cell was removed using a hair knife. The whole procedure was carried out within 15 min after the first eggs were laid. Manipulated embryos were then allowed to heal for 10 min before being transferred to fresh Danieau’s medium. Dorsal determinants removed embryos were used as staging controls for the corresponding explants.
 
-## Assessment of mesendoderm induction
+### Assessment of mesendoderm induction
 
 For assessing changes in mesoderm induction upon Nodal inhibitor treatment, after dorsal determinants removal and in animal pole explants, corresponding explants were prepared from Tg(sebox::EGFP) transgenic embryos to mark mesendoderm progenitors. At bud stage, these explants together with control explants were fixed in 4% PFA at 4°C overnight and washed 5x in PBS. The samples were then imaged on a Zeiss LSM 800 Upright microscope equipped with a Zeiss Plan-Apochromat 20x/1.0 water immersion objective. Imaging conditions were kept similar between all samples and replicates.
 
-## Blastomere reaggregate preparation
+### Blastomere reaggregate preparation
 
 For dissociation, manually dechorionated embryos were transferred to 1 ml of dissociation buffer (calcium-free Ringer’s + 5 mM EGTA for reaggregates cultured in Ringer’s solution and L15 + 5 mM EGTA for reaggregates cultured in L15) at high stage. The embryos were then mechanically dissociated by pipetting and washed 3x with the corresponding culture medium, followed by centrifugation at 200 g for 3 min to remove residual yolk proteins and EGTA. The dissociated cells were then seeded in agarose microwells cast from PDMS molds (Microtissues, diameter 800 µm, depth 800 µm) at a density of one or three dissociated embryo(s)/microwell. After a settlement period of around 30 min, the petri dish with dissociated cells was filled with the respective culture medium (schematic representation in Figure 4—figure supplement 3A). Blastomere reaggregates were analyzed for their morphology and fixed for in situ hybridization, when control embryos had reached bud stage.
 
 To assess whether cells keep dividing in culture - as a proxy for their health status and continued development - small reaggregates (one embryo/microwell), prepared from a mix of embryos with labelled nuclei and cell membranes (1 cell stage injection of 80–100 pg Membrane-GFP and 50 pg of H2A-chFP) and unlabeled embryos, were cultured in Ringer’s solution. These reaggregates were then imaged at a Zeiss LSM 880 upright confocal microscope equipped with a Zeiss Plan-Apochromat 20x/1.0 water immersion objective shortly after reaggregation. The size of 15–30 randomly selected cells on the inside of the reaggregate was measured every 32 min using the Line tool in Fiji.
 
-## Analysis of explant morphology
+### Analysis of explant morphology
 
 To quantify the morphology of blastoderm explants, bright-field side view images of explants were acquired as described above. Explants were considered as extended when a clear indentation was observed between the round ‘back’ and extended ‘tip’ of the explant. Explant circularity was then determined by manually outlining the shape of the explant using the Circularity plugin from Fiji. All explants, independently of whether they formed a clearly recognizable extension or not, were pooled for the circularity analysis.
 
@@ -139,25 +556,25 @@ To quantify the relative length of the explant extension, the extension length s
 
 To analyze the change in area during explant extension, side view images of explants at the indicated time points were manually outlined using the freehand tool (schematic representation in Figure 3—figure supplement 1A). The width of the explants was measured at the point where the explant was thickest using the Line tool from Fiji (schematic representation in Figure 3—figure supplement 1B). The length of the extension over time was measured as described above (schematic representation in Figure 3—figure supplement 1C).
 
-## Analysis of explant cavity localization
+### Analysis of explant cavity localization
 
 To quantify the average location of the explant cavity, bright-field side view images of explants were acquired as described above. The segmented line tool in Fiji was used to determine the distances from the tip of the extension to the closest edge of the cavity, and from the opposite edge of the cavity to the other end of the explant. The measured distances were then normalized to the total explant length, as schematically represented in Figure 1—figure supplement 1B. If an explant formed more than one cavity, the location of the biggest lumen was used for this quantification.
 
-## Analysis of cell size
+### Analysis of cell size
 
 Cell size in blastoderm explants and stage-matched control embryos was measured using the Line tool in Fiji. For this, explants and embryos were fixed at various developmental stages (high stage, sphere, 30% epiboly, 50% epiboly, germ ring and shield stage) and immunostained for β-catenin to outline cell-cell contacts. Approximately 30 randomly selected deep cells from both explants and embryos were measured for this analysis.
 
-## Analysis of gene expression domains
+### Analysis of gene expression domains
 
 For this analysis, only blastoderm explants expressing the gene of interest, as determined by in situ hybridization, and where the back-tip axis could be clearly delineated, were analyzed. To quantify the location of a gene expression domain along the back-tip axis of the explant, the distances from the tip of the extension to the start and end of the expression domain were measured and normalized by the total explant length using the Segmented Line tool in Fiji. The normalized length of the explant was then binned in 10 windows and the presence (1) or absence (0) of expression within a certain bin was plotted in a binary fashion and, ultimately, averaged across explants and experimental replicates. For six3-positive explants, which in some cases exhibited more than one expression domain, the measurement was performed for each expression domain separately. For hgg-positive explants, only samples with a single ppl were considered for this analysis.
 
 To compare the size of the hgg expression domains in different experimental conditions, the boundaries of the expression domain, as determined by in situ hybridization, was manually outlined and measured in Fiji. Animal or side views were used respectively for intact embryos and blastoderm explants, and only samples with a single ppl were considered for this analysis.
 
-## Analysis of EVL differentiation
+### Analysis of EVL differentiation
 
 Analysis of early EVL differentiation was performed using Tg(krt4::EGFP-CAAX) embryos, expressing EGFP in differentiating EVL cells. Analysis of EGFP expression in surface cells of both stage-matched embryos and explants , was used as a readout for EVL differentiation and this analysis was started shortly after the first visible accumulation of EGFP in the intact embryo. For quantifying EGFP accumulation, the same number of z planes were SUM projected in explants and embryos using Fiji. A ROI of 400.90 μm2 was drawn in the center of the samples, and EGFP mean intensity was measured every 15 min. For background subtraction, an ROI of 24.91 × 24.91 μm2 was analyzed outside of the sample.
 
-## Analysis of pSMAD2/3 nuclear accumulation
+### Analysis of pSMAD2/3 nuclear accumulation
 
 For a quantitative analysis of pSMAD2/3 nuclear accumulation, randomly selected embryos and stage-matched blastoderm explants exhibiting pSMAD2/3 positive nuclei were used. The Imaris Spot detection plugin was used to automatically determine the 3D coordinates of all nuclei based on the DAPI signal. Nuclei belonging to the EVL, undergoing cell division or displayed inhomogeneous and/or barely visible DAPI signal, were manually excluded from the analysis. Moreover, only nuclei within a Z-volume of 100 µm were considered for this analysis in order to avoid depth-related intensity changes. The mean fluorescence intensities of pSMAD2/3 and DAPI as well as the corresponding nuclei 3D coordinates were extracted using the Spot Detection plugin. As a reference point to calculate nuclei distribution within the explants or embryos, the wounding site of the explant, detectable by increased and irregular junctional staining of β-catenin and/or comparatively lower and more irregular nuclei density, or the YSL nuclei in the intact embryo were manually determined using the same plugin and, subsequently, extracted. To determine the distance of each nucleus to the wounding site or YSL, a custom MATLAB script (Source code 1) was used to project all nuclei into a 2D plane along a manually defined axis. For embryos, all nuclei were projected along their Z axis. For explants, an additional reference point was manually provided and used to re-position the wounding site in the center of the image. The geometric distance of all nuclei to the closest YSL/wounding site spot in this 2D plane was then automatically calculated using the aforementioned script.
 
@@ -167,20 +584,20 @@ The brightest pSMAD2/3 positive nuclei were defined as the top 30% brightest nor
 
 To classify pSMAD2/3 nuclear accumulation in blastoderm explants and embryos at 50% epiboly as present, strongly reduced or absent, we manually counted the number of bright pSMAD2/3 positive nuclei using Imaris. Wildtype blastoderm explants and embryos had an average of ±22 or ±81 very bright pSMAD2/3 positive nuclei, respectively. A strongly reduced pSMAD2/3 domain was defined as a 50% reduction in the number of bright pSMAD2/3 nuclei as compared to the average number detected at this stage in control explants and embryos. Samples were defined as negative when no pSMAD2/3 nuclei could be detected.
 
-## Analysis of cell clone dispersal
+### Analysis of cell clone dispersal
 
 To analyze cell clone dispersal, explants expressing Membrane-RFP in all cells and H2A-chFP in cell clones were imaged on a Zeiss LSM 880 upright confocal microscope equipped with a Zeiss Plan-Apochromat 20x/1.0 water immersion objective. The Imaris Spot detection plugin was used to automatically determine the 3D coordinates of all H2A-chFP-expressing nuclei at the start of acquisition (typically corresponding to late sphere stage) and after 1 and 2 hr. As proxies for cell dispersion, both the distance between all labelled nuclei (averaged over all pairs of cells), and the average distance between each cell and the center of mass of the labelled cell cluster were computed for each time point.
 
-## Analysis of nuclear β-catenin positive nuclei
+### Analysis of nuclear β-catenin positive nuclei
 
 Non-dividing β-catenin positive nuclei were manually selected using the Imaris Spot detection plugin based on their nuclear β-catenin signal. Projection and calculation of distances were performed as described for pSMAD2/3 nuclear immunostainings. To plot the number of β-catenin positive nuclei as a function of the distance to the wounding site, expressed as cell tiers, we measure the diameter of 10 randomly selected cells from each sample using the Line tool using Fiji as described above.
 
 To analyze the clustering of β-catenin positive nuclei, the angular distribution of all positive nuclei in reference to an axis drawn between the wounding site and the brightest β-catenin nuclei was automatically calculated (note that these nuclei were then excluded from the subsequent angle analysis), using the same MATLAB script described for analysis of pSMAD2/3 immunostainings (Source code 1).
 
-## Analysis of the sebox::EGFP-expressing domain
+### Analysis of the sebox::EGFP-expressing domain
 
 To assess the extent of mesendoderm induction, as assayed by the pan-mesendodermal marker sebox, the same number of z planes were MAX projected in explants of different experimental conditions (Nodal inhibitor treatments, DD-removed and animal pole explants) and corresponding controls using Fiji. To compare the size of the mesendodermal domain, the freehand tool was used to manually outline the sebox::EGFP-positive area. For this analysis, only explants, where the complete sebox::EGFP was detectable, were included. Based on this selection, explants with a domain 50% smaller than the average area in control explants were categorized as reduced mesendoderm induction. Explants, which did not show any obvious EGFP accumulation, were considered to be negative, and the corresponding area of the sebox::EGFP domain was considered to be 0.
 
-## Statistics
+### Statistics
 
 The number of embryos, blastoderm explants or blastoderm reaggregates analyzed (n) and the number of experimental replicates (N) are indicated in the figure legends. No statistical tests were used to assess sample sizes. No inclusion/exclusion criteria were used and all analyzed samples were included in the analysis. In the graphs, the error bars shown correspond to ± s.d., except in Figure 1E and Figure 1—figure supplement 1I where the error bars denote ± s.e.m. In box plots, the error bars correspond to the minimum and maximum of the dataset distribution. The statistical test used to assess significance is stated in the figure legends and was chosen after the distribution of each group was tested using the Shapiro-Wilk normality test. To compare two groups, we used either a two-tailed Student t test or a two-tailed Mann-Whitney test, depending on whether the dataset shows normal distribution. When using the t test, the variances were assessed using the F-test. To compare more than two groups, we used either ANOVA or Kruskal-Wallis test, depending on whether the dataset shows normal distribution. In these cases, a correction for multiple comparisons was used to increase statistical power. All statistical analyses were performed using GraphPad Prism.

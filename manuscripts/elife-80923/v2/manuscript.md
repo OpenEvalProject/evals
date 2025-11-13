@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/013sk6x84 HHMI Janelia Research Campus Ashburn United States
-2. https://ror.org/00za53h95 The Solomon H. Snyder Department of Neuroscience, Johns Hopkins University School of Medicine Baltimore United States
-3. https://ror.org/02m9kbe37 Aix-Marseille Univ, Université de Toulon, CNRS, CPT (UMR 7332), Turing Centre for Living Systems Marseille France
+1. HHMI Janelia Research Campus Ashburn United States ([ROR:013sk6x84](https://ror.org/013sk6x84))
+2. The Solomon H. Snyder Department of Neuroscience, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+3. Aix-Marseille Univ, Université de Toulon, CNRS, CPT (UMR 7332), Turing Centre for Living Systems Marseille France ([ROR:02m9kbe37](https://ror.org/02m9kbe37))
 
 † Corresponding author
 
@@ -34,9 +34,17 @@ In this study, we combined neural activity measurements with behavioral experime
 
 ## Results
 
-## Precision of memory recall depends on MB compartment
+### Precision of memory recall depends on MB compartment
 
 Previous work has shown that flies are capable of high levels of performance on both hard discrimination and generalization tasks (Campbell et al., 2013). This study identified a trio of odors to use for experiments on the specificity of memory, based on the degree of overlap of KC response patterns: pentyl acetate (PA) butyl acetate (BA) and ethyl lactate (EL) (Figure 1A, left). PA and BA are chemically similar and elicit highly overlapping response patterns in the KC population (Campbell et al., 2013). EL is distinct, both chemically and in terms of KC response patterns. Choices between different combinations of these cues can be used to test flies’ ability to flexibly classify odors and measure memory specificity. Take, for example, an experiment where flies are trained to form an association with PA. We can present flies with a difficult discrimination task by giving them a choice between the similar odors (PA and BA), or an easy discrimination with a choice between the paired odor (PA) and the dissimilar odor (EL) (Figure 1A, right). We can also test whether the association with PA generalizes to the similar odor BA, by giving flies a choice between BA and EL. Since we use these odors in many different combinations for different task structures, with and without reciprocal design, here we will use A to refer to the paired odor (PA or BA) and A’ to refer to the other similar odor, which is unpaired, while B always refers to the dissimilar odor, EL. With this nomenclature, hard discrimination involves an A versus A’ choice, easy discrimination is A versus B and generalization is A’ versus B (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig1-v2.jpg)
+
+**Figure 1.:** (A) Left: Chemical structures of the three odors used in the study, the similar odors butyl acetate (BA) and pentyl acetate (PA) and the dissimilar odor ethyl lactate (EL). Middle: During training the similar odors are interchangeably used as the odors that are paired (A) or unpaired (A’) with optogenetic reinforcement (LED). Right: Trained flies are then given one of three different choices between odors in opposing arena quadrants. These choices represent the three kinds of tasks used here to study memory specificity. Performance index measures the bias in the distribution of flies across the different quadrants (see Methods). The circles depict fly population behavior in our arenas and the vertical bars depict stimulus choices. The dashed, red line depicts the discrimination boundary in each choice. This boundary shifts relative to the light-green stimulus, depending on the options. (B) Mushroom body learning schematic. KCs activated by an odor (blue) form synapses on MBONs in two compartments (red and gray shading). Reinforcement stimulates the DAN projecting to one compartment (red) leading to synaptic depression. (C) Behavior protocols for discrimination tasks at two levels of difficulty. Colored bars represent odor delivery periods, red dashes indicate LED stimulation for optogenetic reinforcement. A represents the paired odor, A’ the similar odor and B the dissimilar odor. (D) Significantly lower performance on the hard discrimination task with reinforcement to α3 (p=0.007, n=12). Flies received 10 cycles of training and were tested for memory 24 hours later. CsChrimson-mVenus driven in DAN PPL1-α3 by MB630B-Gal4. (E) No significant difference in performance on easy versus hard discrimination with reinforcement to γ2α’1 (p=0.08, n=12 reciprocal experiments). Flies received three cycles of training and were tested for memory immediately after. CsChrimson-mVenus driven in DAN PPL1 γ2α’1 by MB296B-Gal4. (F) Behavior protocol for generalization. Scores here are compared to a control protocol where light stimulation is not paired with odor presentation in time. (G) No significant difference in performance on generalization and easy discrimination with reinforcement to α3 (p=0.84, n=12). Flies received 10 cycles of training and were tested 24 hr later. (H) No significant difference in performance on generalization and easy discrimination with reinforcement to γ2α’1 (p=0.89, n=12 unpaired control performance scores). Flies received three cycles of training and were tested immediately after. (I) Rescue of the dopamine biosynthesis pathway in DAN PPL1-γ2α’1 is sufficient for performance on the hard discrimination task (p=0.04, n=8). Black circles and error bars are mean and SEM. Statistical comparisons made with an independent sample Wilcoxon rank sum test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A and B) Flies with Chrimson driven by an empty split-Gal4 driver, i.e. with no Chrimson expression did not learn any of the tasks. Performance indices not significantly different from 0 (n=12, p=0.052, 0.38 and 0.91 and for easy, hard discrimination and generalization; single-sample, Wilcoxon signed rank test). (C) Flies with no expression of dopamine in their nervous systems (knockout) are capable of performing the easy discrimination task as well as flies with dopamine rescued in DAN PPL1-γ2α’1 (rescue n=6, knockout n=12, p=0.22, Wilcoxon rank sum test). (D) Flies with dopamine expression rescued in DAN PPL1-γ2α’1 alone are capable of generalization, while flies with dopamine knockout are not (n=6 for rescue and knockout, p=0.041, Wilcoxon rank sum test).
 
 Although previous work showed flies can flexibly categorize odors and learn both generalization and discrimination tasks using these odors, electric shock was used as the reinforcement (Campbell et al., 2013). Consequently the synaptic changes responsible were likely distributed across many areas of the mushroom body, and possibly elsewhere. To confine plasticity to a more restricted region of the brain, we used optogenetic reinforcement, pairing the activation of specific DANs with odor presentation (Figure 1B; Claridge-Chang et al., 2009; Schroll et al., 2006). We used drivers to express CSChrimson in specific DANs from the PPL1 cluster that target different compartments involved in aversion learning: α3 (MB630B) and γ2α’1 (MB296B) (Aso et al., 2014a; Aso and Rubin, 2016). Since compartments have different time courses for memory acquisition and recall (Aso and Rubin, 2016), the number of repetitions of odor-reinforcement pairing and the time between training and testing differed depending on the compartment tested (see Methods).
 
@@ -50,15 +58,23 @@ Although the experiments above target optogenetic punishment to specific sites w
 
 These results show that a single memory trace formed via plasticity confined to γ2α’1 supports strong performance on the hard discrimination and generalization tasks. We note that the choice outcomes of these paradigms are opposite: in the generalization experiments flies distribute away from odor A’, while in the hard discrimination task, flies accumulate in the A’ quadrant. We next sought to understand how plasticity in this one compartment can result in this flexible categorization of A’.
 
-## KC inputs to both MB compartments contain enough information for discrimination
+### KC inputs to both MB compartments contain enough information for discrimination
 
 We started by evaluating whether the odor inputs to the γ2α’1 and α3 compartments carry enough information to discriminate between the two similar odors used in our behavior experiments. Previous measurements of KC responses to these odors showed that they exhibit overlapping response patterns, but did not determine whether that overlap was differentially distributed across different KC subtypes (Campbell et al., 2013). We used two-photon calcium imaging to measure cell population responses in the KC subtypes that send axons to γ2α’1 (γ and α’/β’ KCs) and α3 (α/β KCs) (Figure 2A and B). In separate sets of flies, GCaMP6f (Chen et al., 2013) was expressed in γ KCs (d5HT1b Yuan et al., 2006), α’/β’ KCs (c305a Armstrong et al., 2006; Krashes et al., 2007) and α/β KCs (c739 McGuire et al., 2001). γ and α’/β’ KCs had to be imaged separately since there is no driver that exclusively labels both subtypes. The trial-averaged response traces of individual KCs for each of the three subtypes showed that many of the same cells respond to the two similar odors (PA and BA), but representations did not completely overlap (Figure 2C). Responses were very different for the dissimilar odor, EL. KC population response vectors from single trials, plotted as projections along the first two principal component axes (Figure 2D), also show the similarity in KC representations between the chemically similar odors. Finally, we examined the similarity of responses for individual KCs to the different pairs of odors. Pooling cells across all imaged flies, we found that similar odors elicited similar response strengths in individual KCs (Figure 2—figure supplement 1A, γ KCs: r=0.74, p<0.001; α’/β’ KCs: r=0.76, p<0.001 and α/β KCs: r=0.63, p<0.001). Correlation coefficients were lower and were not significant for the dissimilar odors (Figure 2—figure supplement 1B, γ KCs: r=0.04, p=0.60; α’/β’ KCs: r=0.06, p=0.55 and α/β KCs: r=–0.04, p=0.77).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of in vivo imaging preparation. (B) Example single-trial odor response patterns in α/β KCs. ΔF/F responses (color bar) are shown overlaid on baseline fluorescence (grayscale). Numbered circles indicate cells for which ΔF/F traces are plotted below. Black bar indicates odor delivery. (C) ΔF/F responses of different KC subtypes to the three odors used in this study. Rows show responses of individual KCs, averaged across trials, sorted by responses to PA. GCaMP6f was driven in γ KCs by d5HT1b-Gal4, in α’/β’ KCs by c305a-Gal4 and in α/β KCs by c739-Gal4. Colored bars above plots indicate the odor delivery period. (D) Odor response patterns for the same example flies as in C, projected onto the first two principal component axes to show relative distances between representations for the different odors. (E) Decoder prediction accuracies, plotted across flies. Each gray circle is the accuracy of the decoder for one fly for a given odor, averaged across all trials. Black circles and error bars are means and SEM. For γ KCs (top), decoder accuracies for PA (n=7 flies, p=0.06) and BA (p=0.08) were not significantly different from EL accuracy. This was also true for α’/β’ KCs (middle, n=5 flies, p=0.13 for the PA-EL comparison and p=0.13 for BA-EL) and α/β KCs (bottom, n=6 flies, p=0.63 for PA-EL and p=0.73 for BA-EL). All statistical testing was done with a paired-sample, Wilcoxon signed rank test with a Bonferroni-Holm correction for multiple comparisons. (C,D) In this figure, each shade of green denotes one of the two similar odor chemicals. But in subsequent figures, the darker shade represents the odor paired with reinforcement and the lighter shade, the unpaired, similar odor. In the reciprocal design we use, each of the odor chemicals is the paired odor in half the experimental repeats.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Scatter plots showing the similarity of the mean odor response of individual KCs to the two similar odors PA and BA. Correlations were significant across all three KC subtypes (γ KCs: Pearson’s correlation coefficient, r=0.74, p<0.001; α’/β’ KCs: r=0.76, p<0.001; α/β KCs: r=0.63, p<0.001). (B) Scatter plots as in A, but for dissimilar odors PA and EL. No significant correlations in this case (γ KCs: r=0.044, p=0.60; α’/β’ KCs: r=0.06, p=0.55; α/β KCs: r=–0.04, p=0.77). (C) Decoder-predicted probability that the odor delivered was PA, plotted against time. Prediction for trials on which PA was delivered are plotted in dark green, BA – light green and EL – purple. The red line indicates the positive prediction threshold. The black bar at the top indicates odor delivery period. Solid lines are mean, and shading indicates SEM. Probabilities are plotted for the same example fly as in Figure 2C for each KC type.
 
 To quantify how effectively KC activity patterns could distinguish between odors, we used logistic regression models to determine the probability a particular odor evoked the KC activity pattern observed on a given trial. We trained logistic regression decoders to recognize KC response patterns using leave-one-out cross-validation. We computed the average decoder accuracy for the 8 odor presentation trials of each odor for each fly. Decoder accuracies for the two similar odors were as high as they were for the dissimilar odor, across all KC subtypes (Figure 2E)(γ KCs: comparing accuracies for PA and EL p=0.06, BA-EL p=0.08, n=7 flies; α’/β’ KCs: PA-EL p=0.13, BA-EL p=0.13, n=5 flies; α/β KCs: PA-EL p=0.63, BA-EL p=0.73, n=6 flies).
 
 Even though compartments γ2α’1 and α3 receive olfactory input from totally distinct subsets of KCs, input activity patterns appear capable of supporting fine discrimination in all three KC subtypes. Is this information retained one synapse downstream, when hundreds of KCs converge onto the MBONs in these two compartments?
 
-## Plasticity in MBON γ2α’1 is not sufficiently odor-specific for discrimination
+### Plasticity in MBON γ2α’1 is not sufficiently odor-specific for discrimination
 
 We next examined plasticity in the downstream MBONs, to test whether activity of MBON-γ2α’1 could potentially support fine discrimination after training. We carried out on-rig optogenetic reinforcement, and imaged MBON-γ2α’1 odor responses pre- and post-pairing (Figure 3A). γ2α’1 spans parts of both the γ and α’ MB lobes, but receives reinforcement from the single DAN, PPL1-γ2α’1 (Aso et al., 2014a). Two MBONs send dendrites to the same region of neuropil; here we treat them as a single cell type, MBON-γ2α’1, and we imaged from their overlapping dendritic projections (Figure 3B and C). We expressed Chrimson88.tdTomato (Strother et al., 2017) in the DAN PPL1-γ2α’1 (driven by 82C10-LexA which also drives weak expression in compartments α2 and α3 Pfeiffer et al., 2013) and opGCaMP6f selectively in MBON-γ2α’1 (MB077B Aso et al., 2014a). We imaged MBON-γ2α’1 responses to pulses of all three odors, before and after pairing one of the similar odors with optogenetic reinforcement (Figure 3A–C). We delivered two presentations of each odor stimulus before and after pairing, and imaged only one, to minimize adaptation effects (Berry et al., 2018). Based on previous studies, we expected to see depression of the MBON-γ2α’1 response specifically (or at least preferentially) for the reinforced odor (Berry et al., 2018; Cohn et al., 2015; Hige et al., 2015a; Owald et al., 2015; Perisse et al., 2016; Séjourné et al., 2011). However, after pairing, MBON-γ2α’1 responses to A and A’ were both strongly depressed (Figure 3D and E, p=0.001 for A and p=0.001 for A’, n=11 flies). In fact we could not detect a difference in response size between the two, even though only one (A) had been paired with reinforcement (Figure 3F, p=0.77). As expected, responses to the dissimilar odor (B) were not affected (p=0.18).
 
@@ -68,11 +84,31 @@ We next examined plasticity in the downstream MBONs, to test whether activity of
 
 This strong depression of MBON-γ2α’1 responses to both similar odors suggests that downstream of the KCs, A and A’ are grouped into the same category. Such a grouping should elicit the same behavior response to both odors and allow for generalization. How then do flies discriminate between them after learning in our hard discrimination task? We postulated that the apparent discrepancy between our behavioral observations and measurements of MBON activity might be because we did not adequately reproduce the fly’s sensory experience when it is presented as a choice between two odors.
 
-## MBON responses to odor transitions reflect discrimination behavior
+### MBON responses to odor transitions reflect discrimination behavior
 
 When flies make a choice between two odors in the behavioral arena, they encounter an odor boundary, where the concentration of one odor rapidly drops off and the other rises. To mimic this experience while imaging neural activity on the microscope, we designed an odor delivery system to deliver rapid transitions between odors. We characterized the performance of this odor delivery system with a photo-ionization detector to measure odor concentration changes and an anemometer to measure airflow (Figure 4—figure supplement 1).
 
 We then examined how plasticity affects MBON-γ2α’1 responses to these odor transitions. As above, we used single odor pulses for training, to match how flies are trained behaviorally. However, we examined MBON responses to odor transitions pre- and post-pairing, to match how flies experience the choice between odors. These results showed a sharp contrast to our observations with single odor pulses. Surprisingly, the depression of responses to A’ seen in single pulses was not readily apparent in an A to A’ transition (Figure 4A). Responses were similar to pre-pairing levels when A’ was preceded by A, but not when the order was reversed (Figure 4B). Indeed, quantifying the size of the MBON response to the second pulse showed A’ responses were not significantly different pre- and post-pairing (Figure 4C; p=0.376, n=13). As expected, responses to A as the second pulse were significantly lower after pairing (Figure 4C; p<0.001, n=13). The contrast with the single odor pulse results is clearest when comparing responses to A versus A’ as the second pulse in a transition, where A’ responses were now significantly larger (Figure 4—figure supplement 2C p=0.004). Control experiments where LED stimulation was omitted showed no significant differences pre- and post-mock pairing (Figure 4—figure supplement 3A–C). Additionally, when we examined responses to A-B and A’-B transitions before and after training, we saw no effect on responses to odor B, indicating that transitions selectively enhance the otherwise depressed responses to the similar odor A’ (Figure 4—figure supplement 3D–F).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schematic of experimental design to assess plasticity in MBON-γ2α’1. Protocol was identical to Figure 3A, except odor transitions were used as pre- and post-pairing test stimuli to mimic odor boundaries from the behavioral arena. See Figure 4—figure supplement 2A for the detailed protocol. (B) MBON-γ2α’1 ΔF/F response time courses pre- (gray) and post- (black) pairing to different odor transitions (mean +- SEM, n=13 flies). Colored bars indicate timing of odor delivery, dark green: paired odor, light green: unpaired, similar odor, purple: dissimilar odor. Schematic of the corresponding fly movement in the behavior arena at left. (C) Response sizes in MBON-γ2α’1 pre- and post-pairing for the second odor in the transition. Responses calculated as mean over an 8 s window starting at the onset of the second odor (inset). Responses when the paired odor is second are significantly reduced after pairing (dark green n=13 flies, p<0.001). By contrast there is no significant reduction when the unpaired similar odor comes second (light green p=0.376). The dissimilar odor control showed no significant change (purple, p=1). Connected circles indicate data from individual flies. (D) Schematic of experimental design for MBON-α3. Flies were trained by pairing odor with shock in a conditioning apparatus and odor responses were imaged 24 hr later. Plasticity was assessed by comparing responses against those from a control group of flies exposed to odor and shock but separated by 7 min. See Figure 4—figure supplement 2B for the detailed protocol. GCaMP6f was driven in MBON-α3 by MB082C-Gal4 (bottom). (E) MBON-α3 ΔF/F response traces as in B. Light gray traces are from control shock-exposed flies (n=12 flies), dark gray traces are from odor-shock paired flies (pooled n=14 PA-paired and n=12 BA-paired flies). Averaged control traces were pooled across trials where either PA or BA was the second odor in a transition. (F) Response sizes in MBON-α3 in control (gray) and trained flies (colored) for the second odor in the transition (computed as in C). Responses are significantly reduced in trained flies both when the paired odor is second (dark green, n=14 PA-paired and n=12 BA-paired flies pooled, p<0.001) and when the unpaired similar odor is second (light green, p<0.001). Responses to the dissimilar odor were not significantly different (purple, p=0.48). Plotted control responses were pooled across trials where PA or BA was the second odor in a transition. (C,F) Statistical comparisons for MBON-γ2α’1 made with the paired sample, Wilcoxon signed-rank test. For MBON-α3, where responses were compared across different flies, we used the independent samples Wilcoxon’s rank-sum test. p-values were Bonferroni-Holm corrected for multiple comparisons.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic showing a fly crossing a boundary between the paired and unpaired odor quadrants in the behavior arena. As the fly crosses the boundary, it experiences odors as a transition in time. (B) Photo-ionization detector (PID) signals for the odor stimuli used in this study. Single odor pulses from odor machine 1 shown in black (traces for five repeats overlaid) and pulses from odor machine 2 in gray. Note that at a given concentration in air, each odor-chemical can generate different ionization signal amplitudes. (C) PID traces for odor transitions PA to BA (top) and BA to PA (bottom). Throughout this study, the first odor pulse was always delivered by odor machine 1 and the second pulse by machine 2. (D) Hot-wire anemometer measurements of change in air velocity relative to steady-state flow. Top two panels are single stimulus pulses from each odor machine, bottom is for a transition stimulus. Hollow bars indicate that these measurements were taken without odorants in the airflow to avoid chemical interactions with the anemometer. Steady state flow rate as measured with a floating-ball flowmeter was 400 mL/min.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A,B) Detailed schematics for training protocols used in Figure 4. (A) For MBON-γ2α’1, we imaged pre- and post-pairing responses to 5 s pulses of the two similar odors presented as transitions, and the dissimilar odor presented singly. Each pairing trial consisted of a single 5 s odor stimulus paired with 5 s of LED flashes, followed by 5 s presentations of the similar unpaired odor and the dissimilar odor, with 45 s in between each odor presentation. Pairing was repeated three times with 45 s between pairing trials. Each of the similar odors was paired with LED reinforcement for every alternate imaged fly as part of a reciprocal experiment design. (B) For MBON-α3, we only imaged post-pairing responses, 24 hr after odor-shock reinforcement. This is because learning is only expressed hours after reinforcement in this compartment. A pairing trial consisted of a single, 60 s odor presentation paired with shock, followed by 60 s presentations of the unpaired similar and dissimilar odors, with 60 s in between each odor presentation. Pairing was repeated 10 times, with 15 min between pairing trials. PA and BA were used as the paired odor alternate sets of flies as odor reciprocals. We could not measure the odor responses of flies before learning. So, we measured un-paired odor responses in flies that were exposed to shock and odor stimuli of equal durations, except with a 7-min interval between shock and the first odor stimulus in mock-pairing trials. These were the shock-exposed controls. (C) Same data as Figure 4C, quantifying responses to the second odor pulse, but re-plotted to compare responses to the paired odor with responses to the unpaired, similar odor before and after training. Pre-pairing, the responses to the paired odor were slightly but significantly higher (p=0.02), but post-pairing, responses to the unpaired similar odor were higher (p=0.004). (D) Contrast scores at the different odor transitions for MBON-γ2α’1 responses. Labels indicate the odor coming second in the transition. Contrast calculated as the difference between the maximum ΔF/F value during the second pulse and the minimum during the first pulse (inset). Pre-pairing, contrast was not different for the two kinds of transitions (p=0.19). Post-pairing contrast was higher for the transition to the unpaired, similar odor (p=0.001). Connected circles indicate data from individual flies. Statistical comparisons made using the paired sample Wilcoxon signed rank test with a Bonferroni Holm correction for multiple comparisons. (E) Contrast scores as D, for MBON-α3 responses in arena-trained flies. Contrast scores were not significantly different for the two directions of the transition (n=14 PA-paired and 12 BA-paired flies, pooled, p=0.86). Statistical comparison made with independent sample Wilcoxon’s rank-sum test, with Bonferroni-Holm corrections for multiple comparisons.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Protocol schematic. Same as in Figure 4—figure supplement 2A, except with no LED flashes in the training trials. (B) MBON-γ2α’1 ΔF/F response time courses to different odor transitions pre- (gray) and post- (black) no-LED control training (mean +- SEM, n=14 flies). Colored bars indicate timing of odor delivery, dark green: paired odor, light green: unpaired similar odor, purple: dissimilar odor. (C) Response sizes in MBON-γ2α’1 for the second odor in the transition with no-LED control training protocol. Response amplitude calculated as mean over an 8 s window starting at the onset of the second odor (inset). Responses are not significantly reduced for any stimulus (n=14 flies; paired odor: p=0.06; unpaired, similar odor p=0.17; dissimilar odor p=0.19). (D) Protocol schematic. Same as in Figure 4—figure supplement 2A, except with transitions from odors A or A’ to the dissimilar odor B. (E) MBON-γ2α’1 ΔF/F response time courses as in B, except for transitions from the paired odor or the similar, unpaired odor to the dissimilar odor. (F) Response sizes computed as in C, during the second, dissimilar odor pulse in each kind of transition stimulus plotted in E (n=8 flies, pared p=0.148, unpaired p=0.945).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) Maximum intensity z-projection image of GFP expression under MB630B split-Gal4 that was used to drive Chrimson in PPL1-α3 DANs for the behavior experiments in Figure 1. (B) Expression images for two split-LexA lines corresponding to MB630B.
 
 These results indicate that the way the fly encounters the odor has a profound effect on MBON responses after learning. Isolated pulses of A and A’ elicit similar strongly depressed responses, while transitioning from one odor to the next, as at an odor boundary, responses were clearly distinct, with the A’ response now much stronger. To quantify how effectively MBON-γ2α’1 activity captures an odor boundary, we computed a contrast score reflecting the change in MBON activity at the transition. This score was the difference between the minimum ΔF/F value during the first pulse and the maximum during the second pulse. After learning, contrast around the odor transition was significantly higher for A to A’ transitions than the reverse (Figure 4—figure supplement 2D; p=0.001). These results show that the way the animal experiences the odors has a significant effect on how differentially the downstream MBON-γ2α’1 responds to them.
 
@@ -84,19 +120,39 @@ We found that in response to odor transitions, there was no modulation in MBON-�
 
 Mimicking the fly’s experience in the behavioral arena by presenting odor transitions revealed a strong concordance between neural activity and behavior. In MBON-γ2α’1, when odors are presented in isolation, responses to A and A’ were not measurably different (Figure 3). This would allow flies to generalize learning between these odors in most circumstances. But when the two similar odors are juxtaposed in time, matching what they experience when making a choice, MBON-γ2α’1 responses were clearly distinct and could support fine discrimination (Figure 4). The ability of MBON-γ2α’1 to respond differently in these two conditions likely reflects the flexible categorization that enables flies to perform both generalization and discrimination. In agreement with this hypothesis, the effect of odor transitions is absent in the α3 compartment, which does not support fine discrimination.
 
-## Odor transition effects on MBONs are not present in the KCs
+### Odor transition effects on MBONs are not present in the KCs
 
 We have shown that MBON-γ2α’1 responses show a stimulus-history dependent modulation at odor transitions, but MBON-α3 does not. To determine whether this arises upstream of the MBONs, we examined KC responses to odor transitions. Early sensory processing in the antennal lobe could alter odor representations when delivered as transitions, as seen in locusts (Nizampatnam et al., 2018; Saha et al., 2013). So we examined responses to odor transitions in the input KC populations for MBON-γ2α’1 (γ and α’/β’ KCs) and MBON-α3 (α/β KCs) (Figure 5A). We attempted to use the KC activity patterns we measured to reproduce our observations of MBON activity. Specifically, we used logistic regression models, adjusting the weights of KC inputs so that model outputs were low for A and A’ and high for B. To match the training procedure the flies experienced, we first trained the models using isolated odor pulses, and tested predictions for odor transition stimuli. To ensure we did not penalize cells that responded uniquely to transitions, weights were initialized at 1 and we trained models without any weight regularization. Trained weights were negatively correlated with responses to A, as expected (Figure 5B, top, Pearson correlation coefficient for γ KCs = - 0.39, α’/β’ = - 0.28 and α/β = - 0.22). These weights were then used to calculate model output for A’-A and A-A’ transitions. In contrast to our observations of MBON activity, model outputs were not significantly different between the two transitions, and were low for both (Figure 5B), indicating that transition-evoked changes in the KC odor representations do not underlie the effects on MBON-γ2α’1 activity.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig5-v2.jpg)
+
+**Figure 5.:** (A) ΔF/F responses of different KC subtypes to odor transitions. Rows show responses of individual KCs, averaged across trials, sorted by responses to BA-PA. GCaMP6f was driven in γ KCs by d5HT1b-Gal4 (left), in α’/β’ KCs by c305a-Gal4 (middle) and in α/β KCs by c739-Gal4 (right). The odor delivery periods are indicated by colored bars at the top. (B) We fitted KC weights with logistic regression to give high or low outputs to odors consistent with measured MBON outputs (synaptic weight plots, black circles are individual fitted weights, pooled across flies). Individual logistic regression model outputs for held out test data for all types of odor stimuli are plotted in black. The gray background indicates that odor transition data was not part of the training set (n=96 models for γ, n=80 for α’/β’ and n=96 for α/β KCs, respectively), red circles and error bars are mean +/-SEM. The dashed, gray line at 0.5 indicates the logistic regression output threshold. Mean model outputs were below the decision threshold for A and A’ and were not significantly different (p=1 for γ, p=1 for α’/β’ and p=1 for α/β KCs, respectively), as was the case for A’-A and A-A’ (p=1 for γ, p=0.95 for α’/β’ and p=1 for α/β KCs, respectively). (C) Fitted weights and outputs for logistic regression models as in B, except that these were trained on single pulse as well as odor transitions. Average model outputs for A and A’ were below the decision threshold and were significantly different only for one KC sub-type (p=0.026 for γ, p<0.001 for α’/β’ and p=0.062 for α/β KCs, respectively). Mean outputs for A’-A were below the decision threshold, but outputs for A-A’ were above it and significantly different for all KC subtypes (p<0.001 for γ, p<0.001 for α’/β’ and p<0.001 for α/β KCs, respectively). All statistical comparisons were made with the Wilcoxon signed-rank test with a Bonferroni-Holm correction for multiple comparisons.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) KC population odor responses for the same example flies as in Figure 2C, projected onto the first two principal component axes to show relative distances between representations for the different odors delivered as single pulses (filled circles) or as the second pulse in a transition (empty circles). (B) Decoder-predicted probability that the second odor in a transition was PA, plotted against time. Prediction for trials on which PA was the second pulse are plotted in dark green, and BA – light green. The red line indicates the positive prediction threshold. The black and gray bars at the top indicate the two odor pulse delivery periods. Solid lines are mean, and shading indicates SEM. Probabilities are plotted for the same example fly as in Figure 2C for each KC type. (C) Decoder prediction accuracies for odor transitions, plotted across flies. Each gray circle is the accuracy of the decoder for one fly for a given odor, averaged across all trials. Black circles and error bars are means and SEM. For γ KCs (top), decoder accuracies for PA (n=7 flies, p=0.098) and BA (p=0.047) were not significantly different from when they were delivered second in transitions. This was also true for α’/β’ KCs (middle, n=5 flies, p=0.817 for the PA v/s BA-PA comparison and p=0.94 for BA v/s PA-BA) and α/β KCs (bottom, n=6 flies, p=0.082 for PA v/s BA-PA and p=0.14 for BA v/s PA-BA). All statistical testing was done with a paired-sample, Wilcoxon signed rank test with a Bonferroni-Holm correction for multiple comparisons.
 
 In fact, KC responses to single odor pulses were coarsely similar to responses when those odors came second in a transition; these decoders could also effectively discriminate odors in a transition, although accuracy was slightly lower than with isolated pulses (Figure 5—figure supplement 1). To directly evaluate how distinctively the KC population responds to odor transitions, we re-trained the models, adding the requirement that they respond differentially to A-A’ versus A’-A transitions. We found that all three KC subtypes could distinguish odor transitions when trained to do so (Figure 5C, p<0.001 for all KC subtypes). These results show that it is possible for the model to discriminate transitions, but only if trained using transition-evoked KC activity. By contrast flies learn to discriminate when trained solely with the isolated odor pulses.
 
 Overall, these results show that MBON activity is modulated by a temporal comparison of the alternatives presented to the fly. These observations lead us to the prediction that even if learning is restricted to the γ2α’1 compartment, flies would only be able to discriminate odors if they experienced odor transitions. We tested this prediction with behavioral experiments using odor sequences.
 
-## Odor sequences show that a temporal comparison contributes to odor discrimination
+### Odor sequences show that a temporal comparison contributes to odor discrimination
 
 We have shown that MBON-γ2α’1 responses to the similar odors only became distinguishable when presented as transitions. We predicted that flies’ behavioral response to these odors should also be indistinguishable, unless they are encountered as transitions. Further, since MBON-γ2α’1 signals positive valence (Aso et al., 2014b), our activity measurements predict that flies might be attracted to A’ if they encounter an A to A’ transition. To test these predictions, we examined behavioral responses to temporal sequences of odor, converting the spatial odor border flies encountered in our earlier behavioral experiments, into an odor transition in time. Flies were trained in the circular arena, and then tested by flooding the entire arena with a sequence of odor pulses. We then compared their behavioral response to direct odor transitions to their response when we interrupted the transition with 25 s of clean air. We determined the timing of odor pulse transitions using photo-ionization detector measurements at the exhaust outlet of the arena (Figure 4—figure supplement 1), and analyzed fly behavior around these timepoints.
 
 Attraction to an odor was quantified by how much the flies move upwind; in the arena odors flow inwards from the periphery so we measured displacement away from the center of the arena. We examined the time course of upwind displacement for direct and interrupted transitions (Figure 6A–E). We observed strong upwind displacement during the second pulse of an A-A’ transition, which was significantly larger than during the reverse A’-A sequence (Figure 6B, C and F, p=0.004, n=12). This contrasted with results observed with a 25 s gap in between the two odor pulses. In these interrupted transitions, responses to the second pulse were not significantly different depending on transition order (Figure 6 D, E and G, p=0.85, n=12 for A-gap-A’, n=13 for A’-gap-A,), and showed a similar degree of upwind displacement to that evoked during the first pulse, as expected. Note that starting locations at the onset of the second odor pulse were not significantly different in any condition, ruling out the possibility that flies go more upwind with the A-A’ transition because they start from further downwind in the arena (Figure 6—figure supplement 1B, n=12 for A-A’, n=12 for A’-A, p=0.08 for direct; n=12 for A-gap-A’, n=13 for A’-gap-A, p=0.39 for interrupted). Additionally, we ruled out the possibility that the increased upwind displacement during such a transition comes from a linear combination of the response to the end of the first odor pulse and the beginning of the second (Figure 6—figure supplement 1C-G). These results show that behavioral responses to A’ are distinct only when it immediately follows the paired odor A, matching the odor transition responses we observed in MBON-γ2α’1.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig6-v2.jpg)
+
+**Figure 6.:** (A) Experimental strategy for measuring behavioral responses to odor transitions. Flies were trained by pairing one of the similar odors with optogenetic activation of DAN PPL1-γ2α’1. They were then tested with 30 s odor pulses presented either as direct transitions (left) or interrupted by a 25 s air period (right). Schematics illustrate A-A’ transitions but both sequences were tested, as indicated by the bars on top of panels B-E. (B) Upwind displacement during the first and second pulses of an A-A’ odor transition, as indicated by the green bars up top. This was computed as the increase in each fly’s distance from the arena center over the odor delivery period, then averaged across all flies in an arena (approximately 15 flies per arena). Traces in dark and light green are responses to A and A’ respectively. Plots are mean +/-SEM (n=12 arena runs for all stimulus types). (C) Upwind displacement for the reverse odor transition i.e. A’-A. (D) Upwind displacement for A-gap-A’ interrupted transition. (E) Upwind displacement for the reverse A’-gap-A interrupted transition. (F) Upwind displacement in response to the first odor pulse, averaged across flies in each arena experiment. Mean displacement was not significantly different between unpaired and paired odors for experiments with no gap (n=12, 12 experiments for paired and unpaired odors, p=0.70) and a 25 s gap (n=12, 13, p=0.40). (G) As in F except for responses to the second odor pulse. Displacement was significantly different for transitions with no gap between pulses (n=12, 12 experiments for paired and unpaired odors, p=0.004) but not different when transitions were interrupted by a 25 s gap (n=12, 13, p=0.85). Statistical comparisons in F and G were made with the independent-sample Wilcoxon rank sum test with a Bonferroni-Holm correction for multiple comparisons.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) PID measurements of odor time courses in the behavioral arena, measured at the central exhaust port. The black trace depicts odor pulses delivered with no gap and the gray trace depicts pulses interrupted by a 25 s air period. The vertical red line indicates the time point identified as the onset of the second odor pulse. (B) Mean distances of flies from the arena center at the onset of the second odor pulse in each experiment. Distances from the center were not significantly different between experiments with the unpaired and paired odor, with a 0 s gap (n=12, 12 resp. p=0.08) or with a 25 s gap (n=12, 13, p=0.39). Statistical comparisons made with the independent samples, Wilcoxon’s rank sum test followed by a Bonferroni-Holm correction for multiple comparisons. (C) The off response trace after the first odor pulse for A-A’ transitions without an air gap (top) and A’-A transitions with an air gap (bottom). (D) The response at the onset of the second odor pulse for A-A’ transitions without an air-gap (top) and A’-A transitions with an air gap (bottom). (E) The linear sum of upwind displacement traces in C and D. This is the null model to compare with responses to an odor transition. (F) Actual displacement during the second odor pulse in unpaired to paired transition stimuli with no air-gap. Traces in C–F are mean +/-SEM. (G) Mean upwind displacement over the duration of the second odor pulse for the two transitions (dark green: A’ to A, light green; A to A’). In gray is the mean and bootstrapped SEM of the linear sum of component responses in C. The measured displacements are significantly greater than the sum when odor A’ is second (n=12, p=0.001) but not when odor A is second (n=12, p=0.09). Displacements were compared with the Wilcoxon’s signed rank test followed by a Bonferroni-Holm correction for multiple comparisons.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/80923/elife-80923-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Flies were trained by pairing one of the similar odors with optogenetic activation of DAN PPL1-α3. They were then tested with 30 s odor pulses presented either as direct transitions (A,B) or interrupted by a 25 s air period (C,D), as in Figure 6. Transition order indicated by the bars on top of panels A-D. (A) Upwind displacement in the first and second pulses of an A-A’ odor transition. Traces in dark and light green are responses to A and A’ respectively. Plots are mean +/-SEM (n=8 arena runs for all stimulus types). (B) Upwind displacement for the reverse odor transition i.e. A’-A. (C) Upwind displacement for A-gap-A’ interrupted transition. (D) Upwind displacement for the reversed, A’-gap-A interrupted transition. (E) Upwind displacement in response to the first odor pulse, averaged across flies in each arena experiment. Mean displacement was not significantly different between unpaired and paired odors for experiments with no gap (n=8 experiments each for paired and unpaired odors, p=0.28) and a 25 s gap (n=8, p=0.69). (F) As in E except for responses to the second odor pulse. Unlike with DAN PPL1-γ2α’1, displacement was not significantly different for transitions with no gap between pulses (n=8, p=0.78) or when transitions were interrupted by a 25 s gap (n=8, p=0.57). Statistical comparisons in E and F were made with the independent-sample Wilcoxon rank sum test with a Bonferroni-Holm correction for multiple comparisons.
 
 The upwind displacement during the A-A’ transition is consistent with our observation that MBON-γ2α’1, a positive valence MBON that drives upwind behavior, is highly active during these transitions. In fact, the mean upwind displacement after an A-A’ transition was similar to that caused by optogenetic activation of MBON-γ2α’1 in the arena (unpublished communication - Y. Aso). Overall, these results show that flies compare available alternatives ‘side-by-side’ in time and that stimulus history is important for flexible categorization and behavior. When the two odors are encountered separately, both MBON-γ2α’1 output and fly behavior are indistinguishable for the two similar odors. However, when they are closely apposed in time, MBON-γ2α’1 activity is enhanced and flies are attracted to A’.
 
@@ -104,13 +160,13 @@ The upwind displacement during the A-A’ transition is consistent with our obse
 
 Using a pair of perceptually similar odors (A and A’) and one distinct odor (B), we identified a site in the MB circuit that switches the neuronal and behavioral categorization of A’ depending on whether flies are presented an A’ vs A or an A’ vs B choice. Learning-related synaptic plasticity resulted in depressed neuronal responses to both similar odors when presented in isolation, consistent with strong behavioral generalization. However, when the odors were presented sequentially, as at an odor boundary, neuronal responses to A and A’ were distinct. Moreover, behavioral experiments with carefully timed odor delivery showed that flies’ response to A’ was distinct from A only if they were delivered in a transition. These results demonstrate how presenting cues as a choice can influence behavioral responses. An odor boundary presents an opportunity to compare stimuli, and this comparison modulates memory traces by amplifying small differences between stimuli to change categorization and behavior.
 
-## Memory specificity is determined by more than overlap of KC somatic activity patterns
+### Memory specificity is determined by more than overlap of KC somatic activity patterns
 
 KC representations are conventionally thought to be the key player in determining whether to discriminate or generalize. KC activity patterns in response to distinct odors have little overlap (Perez-Orive et al., 2002; Murthy et al., 2008; Turner et al., 2008; Honegger et al., 2011; Campbell et al., 2013), and this allows synaptic changes to be highly stimulus specific (Hige et al., 2015a). However, activity patterns are not so sparse that pattern separation is complete (Campbell et al., 2013; Dasgupta et al., 2017; Endo et al., 2020; Hige et al., 2015b). Overlap between different odor response patterns exists, and correlates with both the strength of generalization and the specificity of plastic changes in MBONs. Importantly, prior work did not examine whether the extent of overlap is distributed differentially across different KC subtypes. This could serve as the basis for differences in discrimination we observe between compartments, with optogenetic training in γ2α’1 but not α3 capable of supporting hard discrimination. However, we found that all three major subtypes of KCs exhibit similar levels of overlap across our odor test set. Furthermore, we found that odor representations in all three KC subtypes contain enough information for A-A’ discrimination. Despite this, when we examined KC responses to odor transitions, we found that they could not account for the odor-transition responses we observed in MBON-γ2α’1.
 
 Another factor that could potentially contribute to the different specificity in these compartments are the numbers of KC inputs. Theoretical work suggests that – holding the absolute number of responding KCs constant – the larger the total population of KCs, the less overlap there will be between different odor response patterns (Marr, 1969; Albus, 1971; Babadi and Sompolinsky, 2014; Cayco-Gajic and Silver, 2019). However, contrary to theoretical expectations, of the two MBON types we studied MBON-α3 received more synaptic inputs from a greater number of KCs, however it was poorer at hard discrimination (MBON γ2α’1=2,959 synapses from 336 α’/β’ KCs and 3773 synapses from 683 γ KCs per hemisphere; MBON α3=11,360 synapses from 888 α/β KCs per hemisphere; Clements et al., 2020; Li et al., 2020), again indicating that compartments’ different capabilities for hard discrimination were not a result of differences in sensory representations. We note that our KC activity measurements are all from cell bodies, while KC output synapses are the site of plasticity (Bilz et al., 2020), and we cannot formally exclude that activity at KC synapses may differ based on type-specific integrative properties (DasGupta et al., 2014; Groschner et al., 2018; Vrontou et al., 2021), or axo-axonic connections between KCs (Bielopolski et al., 2019; Manoim et al., 2022).
 
-## Adapting memory usage through stimulus comparisons
+### Adapting memory usage through stimulus comparisons
 
 Our work instead highlights the importance of comparisons in determining how a stimulus is categorized. In particular we observe that flies make a temporal comparison of inputs and identify the underlying neural implementation of comparison in the MB. Prior work has shown history-dependent effects at multiple layers of the olfactory circuit. For example, in the rodent olfactory bulb, responses to odor sequences are linear combinations of the responses to individual pulses (Gupta et al., 2015). On the other hand, in locusts, presenting odors singly or in transitions altered odor representations non-linearly in KCs (Broome et al., 2006). The extent of response alteration correlated with the accuracy of behavioral recall (Saha et al., 2013). In Drosophila, odor transitions can cause similar changes in PN representations that result in altered innate odor preference (Badel et al., 2016). In another locust study (Nizampatnam et al., 2018), presenting an odor in a transition altered its representation to enhance contrast in the locust antennal lobe glomeruli. These observations suggest that changes in response to transitioning stimuli are mediated by a mechanism that takes place early on in the olfactory circuit. However, our observations of KC activity indicate that, although KCs response patterns to an odor presented as a single pulse versus in a transition are distinct, they are not sufficiently so to generate the sequence-specific transition effect we observe here.
 
@@ -122,13 +178,80 @@ Many animals use a stored memory to support different behaviors based on the cho
 
 ## Methods
 
-## Fly strains
+### Fly strains
 
 Drosophila melanogaster were raised on standard cornmeal food at 21 °C at 60% relative humidity on standard cornmeal food on a 12–12 hr light-dark cycle. For optogenetics behavior experiments, crosses were set on food supplemented with 0.2 mM all-trans-retinal and moved to 0.4 mM after eclosion and kept in the dark throughout.
 
+<table>
+  <thead>
+    <tr>
+      <th>Transgene</th>
+      <th>Expression target/reporter description</th>
+      <th>Bloomington stock number, reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MB296B split Gal4</td>
+      <td>DAN PPL1-γ2α’1</td>
+      <td>BDSC:68253 Aso and Rubin, 2016</td>
+    </tr>
+    <tr>
+      <td>MB630B split Gal4</td>
+      <td>DAN PPL1-α3</td>
+      <td>BDSC:68290 Aso and Rubin, 2016</td>
+    </tr>
+    <tr>
+      <td>d5HT1b-Gal4</td>
+      <td>γ KCs</td>
+      <td>BDSC:27637 Yuan et al., 2006</td>
+    </tr>
+    <tr>
+      <td>c305a-Gal4</td>
+      <td>α’/β’ KCs</td>
+      <td>BDSC:30829 Krashes et al., 2007</td>
+    </tr>
+    <tr>
+      <td>c739-Gal4</td>
+      <td>α/β KCs</td>
+      <td>BDSC:7362 McGuire et al., 2001</td>
+    </tr>
+    <tr>
+      <td>MB077B split Gal4</td>
+      <td>MBONs γ2α’1</td>
+      <td>BDSC:68283 Aso et al., 2014a</td>
+    </tr>
+    <tr>
+      <td>MB082C split Gal4</td>
+      <td>MBONs α3</td>
+      <td>BDSC:68286 Aso et al., 2014a</td>
+    </tr>
+    <tr>
+      <td>R82C10-LexA</td>
+      <td>DANs PPL1-γ2α’1, α2, α3</td>
+      <td>BDSC:54981 Pfeiffer et al., 2013</td>
+    </tr>
+    <tr>
+      <td>20XUAS-CsChrimson-mVenus attp18</td>
+      <td>Optogenetic activation for behavior</td>
+      <td>BDSC:55134 Klapoetke et al., 2014</td>
+    </tr>
+    <tr>
+      <td>13XLexAop2-IVS-Syn21-Chrimson88-tdT-3.1-P10</td>
+      <td>Optogenetic activation for imaging</td>
+      <td>BDSC: n.a. Strother et al., 2017</td>
+    </tr>
+    <tr>
+      <td>20XUAS-IVS-Syn21-opGCaMP6f-P10</td>
+      <td>Codon-optimized Ca2+ reporter</td>
+      <td>BDSC: n.a. Chen et al., 2013</td>
+    </tr>
+  </tbody>
+</table>
+
 Expression patterns of split-GAL4 lines produced by Janelia FlyLight (Jenett et al., 2012) can be viewed online (http://splitgal4.janelia.org/cgi-bin/splitgal4.cgi).
 
-## Behavior
+### Behavior
 
 DAN driver split Gal4 crossed with 20XUAS-CsChrimson-mVenus attp18
 
@@ -150,7 +273,7 @@ crossed with
 
 w; R73F07-p65ADZp attP40 /CyO; ple2, DTHFS ±BAC attP2 /TM6B
 
-## KC imaging
+### KC imaging
 
 γ KCs: w; +/+; d5HT1b-Gal4/20XUAS-IVS-Syn21-opGCaMP6f-P10 VK00005
 
@@ -158,21 +281,21 @@ w; R73F07-p65ADZp attP40 /CyO; ple2, DTHFS ±BAC attP2 /TM6B
 
 α/β KCs: w; c739-Gal4/+; 20XUAS-IVS-Syn21-opGCaMP6f-P10 VK00005/+
 
-## MBON γ2α’1 imaging
+### MBON γ2α’1 imaging
 
 20XUAS-IVS-Syn21-opGCaMP6f-P10 Su(Hw)attP8 /w; R25D01-ZpGAL4DBD attP40 /82C10-LexAp65 attP40; R19F09-p65ADZp attP2 /13XLexAop2-IVS-Syn21-Chrimson88::tdT-3.1-p10 in VK00005
 
 R25D01 and R19F09 are components of the MB077B stable split-GAL4 driver (BDSC: 68283)
 
-## MBON α3 imaging
+### MBON α3 imaging
 
 w; +/+; 20XUAS-IVS-Syn21-opGCaMP6f-P10 VK00005 /R23C06-ZpGAL4DBD in attP2, R40B08-p65ADZp VK00027
 
 R23C06 and R40B08 are components of the MB082C stable split-GAL4 driver (BDSC: 68286)
 
-## Behavior experiments
+### Behavior experiments
 
-## Odor quadrant choice assay
+#### Odor quadrant choice assay
 
 Groups of approximately 20 females, aged 4–10 d post-eclosion were anaesthetized on a cold plate and collected at least two day prior to experiments. After a day of recovery on 0.4 mM all-trans-retinal food, they were transferred to starvation vials containing nutrient-free agarose. Starved females were trained and tested at 25 °C at 50% relative humidity in a dark circular arena described in Aso and Rubin, 2016. The arena consisted of a circular chamber surrounded by four odor delivery ports that divide the chamber into quadrants. The input flow rate through each port was 100 mL/min, which was actively vented out a central exhaust at 400 mL/min. Odors were pentyl acetate, butyl acetate and ethyl lactate (Sigma-Aldrich product numbers 109584, 287725, and W244015 respectively). Except for the TH-rescue experiments shown in Figure 1I, these odors were diluted 1:10000 in paraffin oil (Sigma-Aldrich product number 18512). For the experiments in Figure 1I, we used a different odor delivery system which utilizes air dilution of saturated odorant vapor, and delivered odors at a 1:16 dilution of saturated vapor.
 
@@ -182,15 +305,15 @@ To optimize learning scores, we used different training regimes depending on the
 
 Following training, testing was carried out with the appropriate odors for each task. In the test configuration, the two different odor choices are presented in opposing quadrants for 60 s. Videos of fly behavior were captured at 30 frames per second using MATLAB (Mathworks, USA) and BIAS (http://archive.iorodeo.com/content/basic-image-acquisition-software-bias.html) and analyzed using custom-written code in MATLAB.
 
-## Odor attraction assay
+#### Odor attraction assay
 
 For the odor attraction assay, the outputs of odor machines were re-configured to inject the output of a single odor machine into all four quadrants. We switched output from one machine to the other to deliver rapid odor transitions in time. About 15 flies were introduced into the arena for each experiment. The rest of the behavioral procedures were identical to those used in the quadrant choice assay.
 
-## Optogenetic MBON-activation assay
+#### Optogenetic MBON-activation assay
 
 For this assay, a clean air stream was delivered into all four arena quadrants throughout the experiment. Flies expressed CSChrimson in MBON γ2α’1. Flies received six 10 s long LED flashes, separated by 60 s of darkness. The rest of the behavioral procedures were identical to those used in the quadrant choice assay.
 
-## Calcium imaging
+### Calcium imaging
 
 Flies were imaged on a resonant-scanning, Janelia, jET MIMMS2.0 custom-designed two-photon microscope, with a Chameleon Ultra II, Titanium-sapphire laser (Coherent, USA) tuned to emit 920 nm. Images were acquired using a 20 x, NA 1.0, water-immersion objective lens XLUMPLFLN (Olympus, Japan) and a GaAsP PMT H11706P-40 SEL (Hamamatsu, Japan). Power after the objective ranged from 4 to 5 mW for MBON imaging and 4–7 mW for KC imaging, depending on the preparation. Microscope control and data acquisition ran on the Scanimage platform (Vidrio, USA). Frames were acquired at 30 Hz, but three frames at a time were averaged during acquisition, for a final frame rate of 10 Hz. For KC imaging, pixels were sampled at 0.22 μm/pixel and for MBON imaging, at 0.18 μm/pixel. For photostimulation, flies were fully illuminated from beneath with 617 nm light through a liquid light-guide (LLG-03-59-340-0800-2, Mightex, USA) butt-coupled to an LED light source (GCS-0617–04 A0510, Mightex, USA). Intensity at the fly was 1 mW/mm2. LED pulses were delivered at a frequency of 1 Hz, with a duty-cycle of 50%, for 5 s, starting 2 s after paired-odor onset.
 
@@ -198,7 +321,7 @@ For optogenetics imaging experiments, crosses were set on food supplemented with
 
 For KC imaging, 8 repeats of single odor pulses and each kind of odor transition were delivered with an inter trial interval of 45 s. Stimulus types were randomly interleaved. For MBON γ2α’1 imaging, we delivered two repeats of either single odor pulses or transitions before and after odor-reinforcement pairing (Figure 4—figure supplement 4A), adapted from Berry et al., 2018. Only one repeat was imaged before and after pairing. For MBON α3 imaging, only the second presentation of each transition stimulus type was imaged (Figure 4—figure supplement 4B).
 
-## Odor delivery for imaging experiments
+### Odor delivery for imaging experiments
 
 To deliver rapid odor transitions, we set up two separate odor delivery machines (Honegger et al., 2011) and joined their outputs upstream of the final tube delivering odor to the fly. These systems use saturated odor vapor which is then serially diluted in clean air to a final dilution of 0.8% (v/v). This was delivered to the fly at a flow rate of 400 mL/min from a tube with an inner diameter of 3 mm.
 
@@ -206,9 +329,9 @@ We measured relative odor concentrations with a photoionization detector (200B m
 
 Final air flow rate and odor concentration were adjusted to best match the odor flux a fly would experience in the arena. Since odor flows inward from the circumference of the arena, odor flux increases with distance from the periphery. We computed the odor flux on the circle that covers half the arena area and matched the flux delivered on the rig to it.
 
-## Data analysis
+### Data analysis
 
-## Behavior
+#### Behavior
 
 Videos recorded during the test phase were analyzed using custom-written MATLAB code. The centroid of each fly was identified and the number of centroids in each quadrant computed for every frame of the experiment.
 
@@ -220,24 +343,32 @@ Statistical testing was done as described in figure legends. We used the non-par
 
 For the odor attraction and the MBON-activation assays, computing upwind displacement required us to track each fly’s trajectory in time. We used the Caltech Fly Tracker (Eyjolfsdottir et al., 2014) to automatically extract fly trajectories from videos. Odor stimulus onset time in the arena was determined from PID measurements of odor concentration at the arena exhaust port. For the MBON-activation assay, stimulus onset was set as the moment the LED turned on. Upwind displacement was computed as the increase in the distance from the center for each fly, relative to its location at stimulus onset, for each time-point over the entire stimulus window. The displacement for all flies in an arena experiment were then averaged before plotting and statistical testing.
 
-## Calcium imaging
+#### Calcium imaging
 
 For KC data, fluorescence time-series images were first analyzed with the Suite2P analysis pipeline (Pachitariu et al., 2016) running in Matlab to register data and identify active single-cell regions of interest (ROIs). For MBON imaging data, ROIs were manually drawn using a custom Matlab script. For both types of experiments, average, raw fluorescence intensity for each ROI was then extracted by a separate, custom script. A background region with no labeling in each imaging field was manually defined, and background fluorescence (this consisted of the PMT offset and autofluorescence) was subtracted from all measured fluorescence values for that field. ΔF/F was computed according to the following equation ΔF/Fi = (Fi - F0)/F0.
 
 where Fi is the fluorescence of a given cell ROI at a given time-point in a trial, and F0 is the same ROI’s fluorescence in an 8 s window during the baseline period on that trial, prior to odor delivery. For all plotted fluorescence traces, ΔF/F time-series data was boxcar filtered with a window-width of 0.2 s. All other analysis was done with un-filtered ΔF/F data. For making statistical comparisons, ΔF/F values during stimulus presentation were averaged over time windows as indicated in each figure.
 
-## KC population activity decoders
+#### KC population activity decoders
 
 The objective of this analysis was to determine whether a linear classifier can discriminate trials of a particular odor based on the KC responses. We fitted logistic regression models to predict whether or not KC activity on a given trial was evoked by a particular odor. For example, an odorA classifier received KC population activity vectors as input and then made a prediction whether the input activity was evoked by odorA/not odorA. Separate classifiers were fitted for each fly, for each odor. We used leave-one-out cross validation (LOOCV): of the 8 repeats acquired for each odor, one was left out as a test trial and the remaining trials were used to fit the model. In this way, we systematically fitted models for each combination of training and test trail sets. All plotted accuracy scores are for model predictions on test trials not used for fitting. Model weights were initialized by sampling from a distribution of weights obtained from EM connectome synapse counts (Clements et al., 2020). Synapse counts from a KC to an MBON were assumed to be linearly related to KC-MBON weight, and normalized to the maximum weight observed. Initial model weights were uniformly sampled from this biological distribution and then fitted without regularization.
 
-The cost function used to estimate goodness of fit was the binary cross-entropy with a quadratic regularization, defined ascost=−1m∑i=1myi×log⁡(hi)−(1−yi)×log⁡(1−hi)+λ2m∑j=1nθj2
+The cost function used to estimate goodness of fit was the binary cross-entropy with a quadratic regularization, defined as
 
-where m is the number of training trials, yi is the correct odor label for a given trial (0 or 1), hi is the model’s prediction (or probability that the input activity vector was in response to a given odor) for the same trial, λ is the regularization constant (we used  λ = 1, but this was not a sensitive parameter), n is the number of neurons in a given dataset and θj are the weights of the neurons. For logistic regression models fitted without regularization (shown in Figure 5B), λ was set to 0.
+$$
+cost=−\frac{1}{m}\sumi=1my_{i}\timeslog⁡(h_{i})−(1−y_{i})\timeslog⁡(1−h_{i})+\frac{\lambda}{2m}\sumj=1n\theta_{j}^{2}
+$$
 
-The model’s prediction, h was computed according to the equationh=11+e−(X×θ)
+where $m$ is the number of training trials, $y_{i}$ is the correct odor label for a given trial (0 or 1), $h_{i}$ is the model’s prediction (or probability that the input activity vector was in response to a given odor) for the same trial, $\lambda$ is the regularization constant (we used  $\lambda$ = 1, but this was not a sensitive parameter), $n$ is the number of neurons in a given dataset and $\theta_{j}$ are the weights of the neurons. For logistic regression models fitted without regularization (shown in Figure 5B), $\lambda$ was set to 0.
 
-here X is the m×n activity matrix for m training trials and θ is the n×1 vector of weights.
+The model’s prediction, $h$ was computed according to the equation
 
-## Code availability statement
+$$
+h=\frac{1}{1+e^{−(X\times\theta)}}
+$$
+
+here X is the $m\timesn$ activity matrix for $m$ training trials and $\theta$ is the $n\times1$ vector of weights.
+
+### Code availability statement
 
 The custom Matlab code used for analysis in this manuscript is publicly available at https://github.com/mehrabmodi1/Drosophila_flexible_recall (Modi, 2023a; copy archived at Modi, 2023b).

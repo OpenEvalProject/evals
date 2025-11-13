@@ -15,9 +15,9 @@
 
 ### Affiliations
 
-1. https://ror.org/04b08hq31 Cell Biology of Viral Infection Lab, Instituto Gulbenkian de Ciência Oeiras Portugal
-2. https://ror.org/03mstc592 European Molecular Biology Laboratory Heidelberg Germany
-3. https://ror.org/03b9snr86 Cell Biology of Viral Infection Lab, Universidade Católica Portuguesa, Católica Medical School, Católica Biomedical Research Centre Lisbon Portugal
+1. Cell Biology of Viral Infection Lab, Instituto Gulbenkian de Ciência Oeiras Portugal ([ROR:04b08hq31](https://ror.org/04b08hq31))
+2. European Molecular Biology Laboratory Heidelberg Germany ([ROR:03mstc592](https://ror.org/03mstc592))
+3. Cell Biology of Viral Infection Lab, Universidade Católica Portuguesa, Católica Medical School, Católica Biomedical Research Centre Lisbon Portugal ([ROR:03b9snr86](https://ror.org/03b9snr86))
 
 † Corresponding author
 
@@ -37,9 +37,9 @@ The objective of this project is to determine the most effective and precise app
 
 ## Results
 
-## Framework to identify perturbations that harden IAV liquid inclusions
+### Framework to identify perturbations that harden IAV liquid inclusions
 
-We previously demonstrated that viral inclusions formed by IAV infection display a liquid profile in the sense that they drip, acquire a spherical shape upon fusion, and dissolve in response to hypotonic shock or brefeldin A treatment (Alenquer et al., 2019). Here, we seek to identify the best strategies to harden viral inclusions to investigate if altering their material properties may be a novel antiviral therapy. For this, we systematically probed and compared the impact of temperature, concentration, and number/strength of ligations on the material properties of liquid viral inclusions, as a proxy of entropic, molecular, and valency contributions, respectively. We selected these parameters given the deep understanding on how they regulate the interactions amongst components and the material properties of condensates (Riback et al., 2020; Sanders et al., 2020; Quiroz and Chilkoti, 2015; Figure 1A). Methodologically, we employed established protocols for imposing the selected thermodynamic perturbations. We quantified the impact of these perturbations on the number, nucleation density (ρ=number of inclusionCytoplasm Area, µm-2), size, shape, dynamics, supersaturation (S=InCdiluteCsaturation, in which Csaturation is the concentration above which molecules demix from an homogenous system), and the Gibbs free energy of partition (ΔG = -RTInK, in which K=CdenseCdilute is the partition coefficient) to define how our system adapts to the perturbations. Material concentrations inside (Cdense) and outside (Cdilute) viral inclusions were measured using the analytical strategies described in Riback et al., 2020; Shimobayashi et al., 2021, and shown in Figure 1B (and validated as described in Materials and methods and in Figure 2—figure supplement 1). For this, we used the mean fluorescence intensity (MFI) of NP as proxy of vRNP concentration (Amorim et al., 2011; Vale-Costa et al., 2016), as it is well established that the majority of cytosolic NP is in the form of vRNPs (Avilov et al., 2012; Momose et al., 2011; Eisfeld et al., 2011; Amorim et al., 2011).
+We previously demonstrated that viral inclusions formed by IAV infection display a liquid profile in the sense that they drip, acquire a spherical shape upon fusion, and dissolve in response to hypotonic shock or brefeldin A treatment (Alenquer et al., 2019). Here, we seek to identify the best strategies to harden viral inclusions to investigate if altering their material properties may be a novel antiviral therapy. For this, we systematically probed and compared the impact of temperature, concentration, and number/strength of ligations on the material properties of liquid viral inclusions, as a proxy of entropic, molecular, and valency contributions, respectively. We selected these parameters given the deep understanding on how they regulate the interactions amongst components and the material properties of condensates (Riback et al., 2020; Sanders et al., 2020; Quiroz and Chilkoti, 2015; Figure 1A). Methodologically, we employed established protocols for imposing the selected thermodynamic perturbations. We quantified the impact of these perturbations on the number, nucleation density ($ρ=\frac{number of inclusion}{Cytoplasm Area}$, µm-2), size, shape, dynamics, supersaturation ($S=In\frac{Cdilute}{Csaturation}$, in which Csaturation is the concentration above which molecules demix from an homogenous system), and the Gibbs free energy of partition (ΔG = -RTInK, in which $K=\frac{Cdense}{Cdilute}$ is the partition coefficient) to define how our system adapts to the perturbations. Material concentrations inside (Cdense) and outside (Cdilute) viral inclusions were measured using the analytical strategies described in Riback et al., 2020; Shimobayashi et al., 2021, and shown in Figure 1B (and validated as described in Materials and methods and in Figure 2—figure supplement 1). For this, we used the mean fluorescence intensity (MFI) of NP as proxy of vRNP concentration (Amorim et al., 2011; Vale-Costa et al., 2016), as it is well established that the majority of cytosolic NP is in the form of vRNPs (Avilov et al., 2012; Momose et al., 2011; Eisfeld et al., 2011; Amorim et al., 2011).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/85182/elife-85182-fig1-v2.jpg)
 
@@ -47,21 +47,53 @@ We previously demonstrated that viral inclusions formed by IAV infection display
 
 Our goal was to identify which perturbations translated into significant shifts in ΔG to further explore whether these resulted in dramatic alterations in the material properties of viral inclusions, by assessing their kinetics and dynamics (Figure 1C) and determine how they impact viral replication in vivo (Figure 1D).
 
-## Changes in temperature mildly perturb IAV inclusions
+### Changes in temperature mildly perturb IAV inclusions
 
 Cellular steady state is maintained at a narrow permissive physiological range, including of temperature. However, biomolecular condensates respond to fluctuations in temperature, and we took advantage of this to assess the entropic contribution of free energy and evaluate whether regulating host cell metabolism could offer future solutions to harden IAV liquid inclusions (Figure 2A). We quantitatively analysed the viral inclusions formed in cells incubated at 4°C, 37°C, and 42°C for 30 min at 8 hr post-infection (hpi) (representative images in Figure 2B). This short duration in temperature shift did not alter the levels of cytosolic vRNPs, as expected (Figure 2C). Increasing the temperature from 37°C to 42°C did not significantly change the size (Figure 2D), aspect ratio, or number of viral inclusions (Figure 2D–G), but decreased the concentration of vRNPs in condensates (Cdense), and increased the nucleation density despite not altering the concentration of vRNPs in the milieu (Cdilute) (Figure 2H–M, Supplementary file 1 (Sheet 1)). This means that increasing the temperature up to 42°C still maintains the system in a two-phase regime, but affects the nucleation capacity, increasing the number of inclusions. Of note, vRNPs become homogenously distributed in the cytosol at 43.5°C (data not shown), pointing that the entire system may undergo regulatory processes. Importantly, this increase in temperature modestly destabilised the structure, as observed by an increase in Gibbs free energy (–2167.3±2361 J/mol @ 37°C to –1477.9±228 J/mol @ 42°C, mean ± SD, Figure 2N–O, Supplementary file 1 (Sheet 1)). Conversely, decreasing the temperature until 4°C leads to an increase in the size of inclusions that is statistically significant considering 42°C to 4°C shifts only (shift in area from 0.2896±0.02 µm2 at 42°C to 0.3474±0.05 at 4°C), rounds up liquid inclusions, and decreases their nucleation capacity and abundance (the latter significant only considering 42°C and 4°C, Figure 2D–H and Supplementary file 1 (Sheet 1)). A drop in temperature increases the concentration of vRNPs in inclusions (Cdense at 37°C of 3116.0±0.05 AU, mean ± SD, and at 4°C of 2144.5±0.04 AU, Supplementary file 1 (Sheet 1)), and does not significantly change the stability of IAV inclusions as determined by Gibbs free energy (–2415.6±273 J/mol @ 4°C, Figure 2N and O). Overall, the data indicate that the temperature increasing from 4°C to 42°C shifts our system to smaller inclusions that have less vRNPs. Cdilute did not change but there is an increase in nucleation density which indicates that heat disruption of weak molecular interactions leads to alterations in nucleation, fusion, and fission, as reported previously (Iserman et al., 2020). However, we did not observe significant alterations in the stabilisation of our system, supporting that alterations in the conditions tested for temperature do not affect the material properties of viral inclusions.
 
-## Changes in concentration of viral inclusions’ drivers do not impact their liquid profile
+![Figure 2.](https://cdn.elifesciences.org/articles/85182/elife-85182-fig2-v2.jpg)
+
+**Figure 2.:** A549 were infected at a multiplicity of infection (MOI) of 3 with PR8 virus for 8 hr, incubated at different temperatures (4°C, 37°C, 42°C) for 30 min, fixed, and analysed by immunofluorescence using antibody staining against Rab11 and nucleoprotein (NP) as a proxy for viral ribonucleoprotein (vRNP). The biophysical parameters were extracted from immunofluorescence images (n=15–20), adapting the method published by Riback et al., 2020; Shimobayashi et al., 2021, to determine concentration Cdense as the mean fluorescence intensity of vRNPs in the segmented influenza A virus (IAV) inclusions, while concentration Cdilute was extrapolated from the cytoplasmic vRNP intensity outside the inclusions. Each dot is the average value of a measured parameter within or outside IAV inclusions per cell. Also, size and shape of inclusion were extracted from inclusions after image segmentation. Parameters that were normalised to an infection state without IAV inclusions (3 hr post-infection [hpi]) are indicated by a dashed horizontal line. Above each boxplot, same letters indicate no significant difference between them, while different letters indicate a statistical significance at α=0.05. All data are displayed in Supplementary file 1 (Sheet 1). Abbreviations: AU, arbitrary unit. (A) Representative depiction of the experimental analysis workflow. (B) Representative images of fixed A549 cells infected with PR8 virus showing alterations in viral inclusions at different temperatures. (C). Boxplot depicting the fold change in cytoplasmic to nuclear vRNP concentration; p=0.684 by one-way ANOVA followed by Tukey multiple comparisons of means. (D) Boxplot of mean viral inclusion area (µm2) per cell; p=0.00234 by Kruskal Wallis Bonferroni treatment. (E) Boxplot of aspect ratio of inclusion; p<0.001 by one-way ANOVA followed by Tukey multiple comparisons of means. (F) Scatter plot of inclusions circularity versus roundness. (G) Boxplot showing number of viral inclusions per cell; p<0.001 by one-way ANOVA, followed by Tukey multiple comparisons of means. (H) Scatter plot of nucleation density (ρ = $\frac{numberofinclusion}{cytoplasmArea}$ µm–2) versus degree of supersaturation (S=In $\frac{Cdilute}{Csat}$), as a measure of propensity to remain dispersed in the cytoplasm. (I) Boxplot of of vRNP concentration within inclusions (Cdense (AU)) p<0.001 by one-way ANOVA, followed by Tukey multiple comparisons of means. (J) Scatter plot of Cdense (AU) versus surrounding cytoplasm (Cdilute, AU). (K) Scatter plot Cdense (AU) versus its total cytoplasmic vRNP concentration (Ccytoplasm, AU). (L) Boxplot showing Cdilute (AU); p=0.203 by one-way ANOVA followed by Tukey multiple comparisons of means. (M) Scatter plot of Cdilute (AU) versus Ccytoplasm (AU). (N) Scatter plot of fold change in free energy of partition (ΔΔG, J/mol) where ΔG = -RTInK, and K = ($\frac{Cdense}{Cdilute}$), and ΔΔG = ΔG – ΔG3 hpi, versus Cdilute (AU). (O) Boxplot of ΔΔG (J/mol); p<0.001 by one-way ANOVA followed by Tukey multiple comparisons of means.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85182/elife-85182-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** A549 cells expressing (A–D, G–H) endogenous levels of Ras-related in brain 11a (Rab11a) or (E–F) overexpressing Rab11a were infected at an MOI of 3 with PR8 virus for (A–B, G–H) 8 hr before incubating the cells at the indicated (A–B) temperatures, (G–H) nucleozin (Ncz) residence time, or (C–F) at the indicated timepoints. After this, the cells were fixed, and analysed by immunofluorescence using antibody against nucleoprotein (NP) (as a proxy for viral ribonucleoproteins [vRNPs]). Each dot is the average value of measured parameter within or outside influenza A virus (IAV) inclusions per cell. (Number of cells (n)=14-25). (A, C, E, G) are the scatterplots comparing image segmentation strategies to calculate partition coefficient and extrapolate the free energy (see Materials and methods) while (B,D,F,H) is a scatter plot comparing methods for calculating the degree of supersaturation.
+
+### Changes in concentration of viral inclusions’ drivers do not impact their liquid profile
 
 Two factors were shown to drive the formation of IAV inclusions – vRNPs and Rab11a (Amorim et al., 2011; Eisfeld et al., 2011; Lakdawala et al., 2014; Vale-Costa et al., 2016; Alenquer et al., 2019; Veler et al., 2022). In fact, vRNP accumulation in liquid viral inclusions requires its association with Rab11a directly via the viral polymerase PB2 (Veler et al., 2022; Amorim et al., 2011), and the liquid character may be maintained by an incompletely understood network of intersegment interactions bridging several cognate vRNP-Rab11 units on flexible membranes (Vale-Costa et al., 2016). As the concentration of material is a key determinant for the physical properties of condensates (Riback et al., 2020; Weber and Brangwynne, 2015; Hernández-Vega et al., 2017), we evaluated how concentration of these two drivers impacts the behaviour of IAV inclusions.
 
 For this, we took advantage of the fact that vRNP levels increase during infection (Kawakami et al., 2011), and analysed viral inclusions over a time course, in two conditions: with endogenous levels of Rab11a (using cells expressing GFP, as in Alenquer et al., 2019), and overexpressing Rab11a (in the form of GFP-Rab11a, as in Alenquer et al., 2019; Figure 3A–B, Figure 3—figure supplement 2). With this approach, we aimed at analysing whether the material properties of viral inclusions changed over time and whether increasing the levels of Rab11 would alter these properties. This strategy would reveal if regulating Rab11a activity could harden IAV liquid inclusions.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/85182/elife-85182-fig3-v2.jpg)
+
+**Figure 3.:** (A–H) A549 cells stably expressing GFP, or GFP-Rab11a-WT were infected at an MOI of 3 with PR8 virus and, at the indicated timepoints, were fixed, and analysed by immunofluorescence using an antibody against nucleoprotein (NP) (as a proxy for vRNPs). (Number of cells (n)=14–18 for GFP and 19–25 for GFP-Rab11-WT). (C–H) Each dot is the average value of measured parameters per cell. Above each boxplot, same letters indicate no significant difference between them, while different letters indicate a statistical significance at α=0.05 using one-way ANOVA, followed by Tukey multiple comparisons of means for parametric analysis, or Kruskal Wallis Bonferroni treatment for non-parametric analysis. All thermodynamic related values are displayed in Supplementary file 1 (Sheets 2 and 3). Abbreviations: AU, arbitrary unit. (A) Representative depiction of the experimental analysis workflow. (B) Immunofluorescence images of infected cells at different hours post-infection (hpi) in cells overexpressing GFP (left) or GFP-Rab11 (right) (both in green); NP (red, as a proxy of vRNPs), and nucleus (blue). Scale bar = 10 µm. (C) Boxplot depicting the fold change in the ratio of cytoplasmic to nuclear vRNPs concentration at different times of infection, with endogenous or overexpressed Rab11a; p<0.001; Kruskal Wallis Bonferroni treatment. (D) Boxplot of mean inclusion area (µm2) per cell; p<0.001 by one-way ANOVA, followed by Tukey multiple comparisons of means. (E) Scatter plot showing nucleation density (ρ, µm–2) versus degree of supersaturation (S). (F) Boxplot of Cdense (AU); p<0.001 by Kruskal Wallis Bonferroni treatment. (G) Boxplot of Cdilute (AU); p<0.001 by Kruskal Wallis Bonferroni treatment. (H) Boxplot of ΔΔG (J/mol); p<0.001 by Kruskal Wallis Bonferroni treatment. Conditions were normalised to an infection state without IAV inclusions (3 hpi) that is indicated by the dashed black line.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/85182/elife-85182-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** A549 cells expressing (A–D, G–H) endogenous levels of Ras-related in brain 11a (Rab11a) or (E–F) overexpressing Rab11a were infected at an MOI of 3 with PR8 virus for (A–B, G–H) 8 hr before incubating the cells at the indicated (A–B) temperatures, (G–H) nucleozin (Ncz) residence time, or (C–F) at the indicated timepoints. After this, the cells were fixed, and analysed by immunofluorescence using antibody against nucleoprotein (NP) (as a proxy for viral ribonucleoproteins [vRNPs]). Each dot is the average value of measured parameter within or outside influenza A virus (IAV) inclusions per cell. (Number of cells (n)=14-25) (A, C, E, G) are the scatter plots comparing image segmentation strategies to calculate partition coefficient and extrapolate the free energy (see Materials and methods) while (B,D,F,H) is a scatter plot comparing methods for calculating the degree of supersaturation.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/85182/elife-85182-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A–H) A549 cells stably expressing GFP, or Rab11a-WT, as indicated, were infected at an MOI of 3 with PR8 virus and, at the indicated timepoints, were fixed, and analysed by immunofluorescence using antibody against nucleoprotein (NP) (as a proxy for vRNPs). The cytoplasmic vRNP concentration increases with time of infection (hr post-infection [hpi]) and was used as a proxy for cytoplasmic vRNP concentration changes. Each dot is the average value of measured parameter within or outside influenza A virus (IAV) inclusions per cell. (Number of cells (n)=14-18 for GFP and 19-25 for GFP-Rab11-WT). Above each boxplot, same letters indicate no significant difference between them, while different letters indicate a statistical significance at α=0.05 using one-way ANOVA, followed by Tukey multiple comparisons of means for parametric analysis, or Kruskal Wallis Bonferroni treatment for non-parametric analysis. Abbreviations: AU, arbitrary unit. (A) Boxplot of inclusion aspect ratio at different hpi. p=0.033422; Kruskal Wallis Bonferroni treatment. (B) Scatter plot of inclusion circularity versus roundness at different time post-infection (hpi). (C) Dot plot and model depicting nucleation density (ρ, µm–2) over time of infection (hpi). p=0.001; Kruskal Wallis Bonferroni treatment. (D) Scatter plot of Cdense (AU) versus Cdilute (AU) at different hpi. (E) Scatter plot of Cdense (AU) and Ccytoplasm (AU). (F) Scatter plot of Cdilute (AU) versus Ccytoplasm (AU) with time of infection. (G–H) Conditions were normalised to an infection state without IAV inclusions (3 hpi) that is indicated by the dashed black line. (G) Scatter plot of ΔΔG (J/mol) relative to 3 hpi versus area of inclusion. (H) Scatter plot of ΔΔG versus Cdilute (AU) with time of IAV infection. (I) Boxplot of inclusion number per cell at different hpi. p=0.001; Kruskal Wallis Bonferroni treatment.
+
 In GFP expressing cells, as the progeny vRNP pool reaches the cytosol (Figure 3B and C), viral inclusions augment in size (from 0.172±0.04 to 0.289±0.06 µm2, mean ± SD, Figure 3D), with similar aspect ratio (Figure 3—figure supplement 2A and B). There is a mild reduction in the number of inclusions from 8 hpi onwards, as measured by the nucleation density (ρ) (Figure 3E, Figure 3—figure supplement 2C, all topological data in Supplementary file 1 (Sheet 2)). As infection progresses, the concentration of vRNPs inside condensates increases until 8 hpi (Figure 3F and Figure 3—figure supplement 2D and E), accompanied by an increase in the diluted cytosolic phase (Figure 3G and Figure 3—figure supplement 2D and F, Supplementary file 1 (Sheet 2)), and both parameters stabilise thereafter, indicating that the critical concentration occurs around 8 hpi. This indicates that the liquid inclusions behave as a multi-component system and allow us to speculate that the differences in length, RNA sequence, and valency that each vRNP may be key for the integrity and behaviour of condensates. Importantly, Gibbs free energy (normalised to 3 hpi) is lowest at 6 hpi (–1799.0±623 J/mol) and destabilises mildly onwards (–1139.8±382, –1131.2±444, and –833.8±342 J/mol @ 8, 12, and 16 hpi, respectively) (Figure 3H, Figure 3—figure supplement 2G, H, Supplementary file 1 (Sheet 2)). These results are consistent with the increase in cytosolic vRNP leading to bigger sized inclusions that overall maintain the same concentration although becoming modestly destabilised, suggesting that the material properties are also modestly affected. When overexpressing Rab11a (right side of each graph), cytosolic vRNPs also accumulated in viral inclusions that increased with infection (Figure 3C–D, from 0.243±0.03 to 0.385±0.04 µm2), but were significantly bigger than viral inclusions in GFP expressing cells. In addition, the nucleation density was higher (Figure 3E and Figure 3—figure supplement 2C), despite having similar aspect ratio (Figure 3—figure supplement 2A and B), Cdense (Figure 3F and Figure 3—figure supplement 2D and E) and Cdilute (Figure 3G, Figure 3—figure supplement 2D and F). The lowest value of Gibbs free energy occurs at 8 hpi (–1337.7±331 J/mol) and destabilises from then onwards (–1145.3±443 and –895.3±394 J/mol @ 12 and 16 hpi, respectively, Figure 3H, Figure 3—figure supplement 2G and H, all thermodynamic data in Supplementary file 1 (Sheet 3)). This is consistent with Rab11a overexpression giving rise to bigger viral inclusions than cells expressing native levels of Rab11a that overall contained the same vRNP concentration and destabilise slightly later in the time course of infection, confirming that Rab11a is involved in nucleating and/or maturating viral inclusions. Therefore, these data indicate that altering the concentration of vRNPs and/or Rab11a affects the size but modestly impact IAV inclusions’ material properties.
 
-## The increase in type/strength of vRNP interactions dramatically stabilises IAV inclusions
+### The increase in type/strength of vRNP interactions dramatically stabilises IAV inclusions
 
 Another critical regulator of condensate properties is the type and strength of interactions among its components (Alberti and Hyman, 2021). Therefore, we predict that oligomerising vRNPs to each other, or to Rab11a, will change the viscoelasticity of condensates in similar manner to iPOLYMER in intracellular hydrogels (Nakamura et al., 2018). For IAV, it was shown by many independent groups that the drug nucleozin operates as a pharmacological modulator that oligomerises (sticks together) all forms of NP (Amorim et al., 2013; Nakano et al., 2021; Kao et al., 2010). In fact, it was demonstrated that this drug has affinity for three different sites in NP (Kao et al., 2010) chemically polymerising NP either free or in vRNPs in a reversible manner (Amorim et al., 2013). Interestingly, nucleozin was described as a novel class of influenza antivirals targeting the viral protein NP, potently inhibiting IAV replication in cultured cells and in a mouse model of influenza infection (Cianci et al., 2012). However, it readily evolved escape mutant viruses carrying the single substitution tyrosine to histidine in position 289 of NP (NP-Y289H) (Kao et al., 2010). Despite its capacity to evolve resistance, our strategy is to take advantage of a well-known tool to probe the effects of increasing the number and type of intra- and inter-vRNP interactions in the material properties of IAV inclusions (Figure 4A).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/85182/elife-85182-fig4-v2.jpg)
+
+**Figure 4.:** A549 cells were infected at an MOI of 3 with PR8 virus for 8 hr, then incubated with 5 µM of nucleozin (Ncz), a viral ribonucleoprotein (vRNP) pharmacological modulator, for different time periods from 5 min to 2 hr, before fixing. Cells were processed for immunofluorescence analysis, using antibodies against nucleoprotein (NP) and Ras-related in brain 11a (Rab11a) (n=20–21). Each dot is the average value of a measured parameter per cell. Conditions normalised to an infection state without IAV inclusions (3 hr post-infection [hpi]) are indicated by a dashed black horizontal line. Above each boxplot, same letters indicate no significant difference between them, while different letters indicate a statistical significance at α=0.05 using one-way ANOVA, followed by Tukey multiple comparisons of means for parametric analysis, or Kruskal Wallis Bonferroni treatment for non-parametric analysis. All the values calculated for the thermodynamics parameters have been included as Supplementary file 1 (Sheet 4). Abbreviations: AU, arbitrary unit, CM, complete media, and Ncz, nucleozin. (A) Representative depiction of the experimental and analysis workflow. (B) Representative images of infected A549 cells subjected (or not) to increasing periods of Ncz treatment. NP (green), Rab11a (red), and nucleus (blue). Scale bar = 10 µm. (C) Boxplot depicting the fold change in the ratio of cytoplasmic to nuclear vRNPs concentration before and after Ncz treatment at 8 hpi; p=6.16e-14 by Kruskal Wallis Bonferroni treatment. (D) Boxplot of mean inclusion area per cell; p<0.001 by Kruskal Wallis Bonferroni treatment. (E) Boxplot of inclusion aspect ratio; p<2e-16 by Kruskal Wallis Bonferroni treatment. (F) Scatter plot of inclusion circularity versus roundness. (G) Boxplot showing the number of inclusions per cell; p<0.001 by Kruskal Wallis Bonferroni treatment. (H) Scatter plot of nucleation density (ρ, µm–2) versus degree of supersaturation (S). (I) Boxplot showing increasing inclusion Cdense (AU) with increasing Ncz incubation period; p<0.001 by Kruskal Wallis Bonferroni treatment. (J) Scatter plot of Cdense (AU) versus Cdilute (AU). (K) Scatter plot of Cdense (AU) and Ccytoplasm (AU). (L) Boxplot showing Cdilute (AU); p<0.001 by Kruskal Wallis Bonferroni treatment. (M) Scatter plot of Cdilute (AU) versus Ccytoplasm (AU). (N) Scatter plot of ΔΔG, J/mol versus Cdilute. (O) Boxplot of fold change in free energy of partition (ΔΔG, cal/mol); p<0.001; Kruskal Wallis Bonferroni treatment. (P) Representative images of A549 cells infected and mock infected with PR8 containing NP-WT and NP-Y289H treated and untreated with nucleozin for 1 hr (n=17–22). Scale bar = 10 µm. (Q) Boxplot of mean inclusion area per cell, per treatment p<0.001 by Kruskal Wallis Bonferroni treatment. (R) Boxplot of fold change in free energy of partition (ΔΔG, cal/mol) of viral inclusions arising in A549 cells infected and mock infected with PR8 containing NP-WT and NP-Y289H; p<0.001; Kruskal Wallis Bonferroni treatment.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85182/elife-85182-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** A549 cells expressing (A–D, G–H) endogenous levels of Ras-related in brain 11a (Rab11a) or (E–F) overexpressing Rab11a were infected at an MOI of 3 with PR8 virus for (A–B, G–H) 8 hr before incubating the cells at the indicated (A–B) temperatures, (G–H) nucleozin (Ncz) residence time, or (C–F) at the indicated timepoints. After this, the cells were fixed, and analysed by immunofluorescence using antibody against nucleoprotein (NP) (as a proxy for viral ribonucleoprotein [vRNPs]). Each dot is the average value of measured parameter within or outside influenza A virus (IAV) inclusions per cell. (Number of cells (n)=14-25). (A, C, E, G) are the scatterplots comparing image segmentation strategies to calculate partition coefficient and extrapolate the free energy (see Materials and methods) while (B,D,F,H) is a scatter plot comparing methods for calculating the degree of supersaturation.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/85182/elife-85182-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** A459 cells were infected with PR8 at an MOI of 3. At 7.5 hr post-infection (hpi) the infected cells were treated with 5 µM nucleozin (Ncz) or dimethyl sulfoxide (DMSO) for 30 min at 37°C before being subjected to thermal stress at 4°C, 37°C, and 42°C for 20 min and fixed for immunofluorescence analysis by staining with antibody against nucleoprotein (NP) (green), Ras-related in brain 11a (Rab11) (red), and nucleus (blue). Biological replicate = 3. (Representative images of 20-21 cells (n)). Scale bar = 10 µm.
 
 With this reasoning, we evaluated the thermal stability of inclusions in the presence or absence of nucleozin in order to confirm its pharmacological modulator activity on liquid viral inclusions (Sridharan et al., 2019). It is well established that increasing temperature shifts a thermodynamic system to a homogeneous mix. In agreement, when we exposed IAV infected cells to a range of temperatures (4°C, 37°C, and 42°C), we found that higher temperatures yield smaller inclusions (Figure 2, Figure 4—figure supplement 2) during the two-phase regime, but tending towards its homogenous distribution in the cytoplasm that was achieved at 43.5°C. Interestingly, when infected cells were exposed to the same thermal conditions after nucleozin treatment, inclusions were irresponsive to thermal fluctuation, which indicates that nucleozin stabilises viral inclusions (Figure 4—figure supplement 2).
 
@@ -71,7 +103,7 @@ Using the knowledge that the viral protein NP is critical to vRNP-nucleozin bind
 
 Together, the data suggest that stabilising vRNP interactions changes inclusions more efficiently than the other strategies tested above.
 
-## Modifiers of strength/type of interactions among vRNPs but not concentration or temperature harden liquid IAV inclusions
+### Modifiers of strength/type of interactions among vRNPs but not concentration or temperature harden liquid IAV inclusions
 
 Changing the strength of interactions amongst vRNPs impacted viral inclusions’ thermodynamics the most and our assumption is that this translated into modification in the material properties.
 
@@ -79,7 +111,15 @@ To validate our assumption, we compared the material properties of viral inclusi
 
 We first assessed the material properties of viral inclusions upon changes in concentration of Rab11a. Initially, we tested whether, in the two conditions, viral inclusions could fuse and divide. We observed that both fusion and fission events were taking place at late timepoints (Figure 5A, Figure 5—video 1, Figure 5—video 2, Figure 5—video 3, Figure 5—video 4). In a second approach, we measured the internal rearrangement in viral inclusions. Because of the small size and highly dynamic nature of IAV inclusions, previous attempts to perform fluorescence recovery after photobleaching experiments resulted in highly variable recovery rates (Alenquer et al., 2019; Amorim et al., 2011) that were unable to accurately determine if internal rearrangements were taking place viral inclusions. As the microtubule depolymerising drug nocodazole largely blocks the movement of IAV inclusions, rendering them larger and more spherical (Amorim et al., 2011; Avilov et al., 2012), we opted for bleaching IAV inclusions upon treating them with nocodazole (Figure 5B, Figure 5—videos 5; 6). We observed that at late stages of infection, vRNPs were able to internally rearrange in normal conditions as well as when Rab11a was overexpressed (Figure 5C). These two experiments were important to validate that concentration did not impact the material properties of viral inclusions. However, to establish if Rab11a overexpression had any impact in the dynamics of viral inclusions, we tested the inclusion molecular dynamics by fluorescence loss after photoactivation (FLAPh, Figure 5D). In a live imaging experiment, a region of interest (ROI) was photoactivated (Figure 5E), its decay profile was monitored for 120 s and the plot fitted to a single exponential model. At late points of infection, native levels of Rab11a versus overexpressed Rab11 conditions exhibited distinct vRNP decay profiles (Figure 5F), half-lives (14.48±2.2 s [mean ± SEM] and 52.15±9.6 s, respectively) and rate constants (0.06±0.04 s-1 [mean ± SEM] and 0.02±0.003 s-1, respectively), despite not changing the mobile and immobile fractions (Figure 5G–I, Supplementary file 1 (Sheet 5) and Figure 5—videos 7–12). This indicates that although maintaining a liquid character, in conditions of overexpressing Rab11a, inclusions become less dynamic.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/85182/elife-85182-fig5-v2.jpg)
+
+**Figure 5.:** (A–I) A549 cells stably expressing GFP, or Rab11a-WT were transfected with a plasmid encoding mCherry-NP and simultaneously co-infected with PR8 virus at an MOI of 10 and were live imaged at 12–16 hr post-infection (hpi). (Number of cells (n)=10–18 for GFP and GFP-Rab11-WT.) (F–I) Each dot is the average value of measured parameters per cell. Above each boxplot, same letters indicate no significant difference between them, while different letters indicate a statistical significance at α=0.05 using one-way ANOVA, followed by Tukey multiple comparisons of means for parametric analysis, or Kruskal Wallis Bonferroni treatment for non-parametric analysis. All related values are displayed in Supplementary file 1 (Sheet 5). (A) Representative time lapse images of fission (blue arrow) and fusion (yellow arrow) dynamics of viral inclusions in cells with endogenous levels or overexpressing Rab11a (Figure 5—videos 1–4). (B) Schematic depiction of an internal rearrangement of viral inclusion after an ROI within the inclusion is photobleached. (C) At 12 hpi, cells were treated with nocodazole (10 µg/mL) for 2 hr to reduce the highly stochastic motion of liquid influenza A virus (IAV) inclusions in GFP and GFP-Rab11a lines. Small regions inside IAV inclusions were photobleached to assess internal rearrangement of vRNPs (mCherry-NP as proxy). Time lapse pseudo-colour images show internal rearrangements after photobleaching (extracted from Figure 5—videos 5; 6). Scale bar = 2 µm. (D) Schematic of a fluorescence loss after photoactivation (FLAPh) experiment. (E) Time lapse pseudo-colour images showing the fluorescence loss in photoactivated IAV inclusions (photoactivatable paCherry-NP used as proxy) in GFP (n=10) or GFP-Rab11a cell lines (n=10) (extracted from Figure 5—videos 7–12). The analysis is a representative of two biological replicates. Bar = 2 µm. (F) Fluorescence intensity decay of photoactivated (paCherry-NP) normalised to GFP. Coloured lines are single exponential model fitting (y0 = (1-a) + ae-kt) of the data point, dots are the mean of the data per second, and vertical lines denote the standard deviation (SD) per time (s), (Supplementary file 1 (Sheet 5)). (G) Half-life (t1/2 = $\frac{In(2)}{k}, k=rate constant$) of GFP and GFP-Rab11a developed inclusions decay post-activation (s); p=0.0003 by Kruskal Wallis Bonferroni treatment (Supplementary file 1 (Sheet 5)). (H) Boxplot showing the rate constant, k, of liquid inclusions (using paCherry-NP as proxy) arising in GFP and GFP-Rab11a cell lines; p=0.0003 by Kruskal Wallis Bonferroni treatment (Supplementary file 1 (Sheet 5)). (I) Boxplot showing the immobile fractions from FLAPh experiment calculated by the formula y0 = (1-a) + ae-kt, where 1-a is the immobile fraction arising from GFP and GFP-Rab11a cell lines; p=0.898 by Kruskal Wallis Bonferroni treatment (Supplementary file 1 (Sheet 5)).
+
 Next, we sought to assess if nucleozin altered the material properties of IAV inclusions. We first checked if nucleozin-treated viral inclusions maintained the ability to dissolve upon shock treatments, as illustrated in Figure 6A. We observed that native inclusions responded to shock treatment as expected, however, nucleozin strongly held inclusions together that did not dissolve when exposed to either hypotonic or 1,6-hexanediol shock treatments (Figure 6B and C, Supplementary file 1 (Sheet 11)). This unresponsiveness to shock suggests that IAV inclusions undergo hardening when vRNP interactions are stronger.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/85182/elife-85182-fig6-v2.jpg)
+
+**Figure 6.:** (A–C) A549 cells were infected at an MOI of 3 with PR8 virus and treated with 5 µM nucleozin (Ncz) or dimethyl sulfoxide (DMSO) at 7 hr post-infection (hpi). An hour later, cells were treated for 30 min with 80% water (hypotonic shock, Hyp), with 1,6-hexanediol (Hex) or complete media (CM) as control, before allowing recovery from stress treatment in CM for 1 hr. Cells were fixed, stained for NP for analysis by immunofluorescence, and the percentage of cells with IAV inclusions was scored manually. (D–K, P–Q) A549 cells were infected with PR8 virus at an MOI of 10 and simultaneously transfected with plasmids encoding (D–G) GFP-NP, (H–K) mcherry-NP, or (L–O) paGFP-NP and mcherry-NP. Cells were then live imaged after 12 hpi. (A) Experimental schematics of inclusion shock assay. (B) Representative images showing the response of IAV inclusions (nucleoprotein [NP], as proxy) to shock treatments after incubation in Ncz or DMSO. Scale bar = 10 µm. (C) Boxplot showing percentage cells with inclusions, after DMSO or Ncz treatment, by manual scoring; p<0.001 by Kruskal Wallis Bonferroni treatment. Analyses is a representative of three biological replicates. (Number of areas counted =15–17 and number of cells per area counted =39–56, Supplementary file 1 (Sheet 11).) (D) Scheme showing how IAV inclusions were tracked over time. (E) Plot showing inclusion (GFP-NP, as proxy) particle trajectory when treated with DMSO (n=13) or Ncz (n=27). Data analysis was pooled from two biological replicates, Supplementary file 1 (Sheet 6). (F) Graph showing the mean square displacement (µm2) versus time (s) of IAV. (G) Boxplot depicting the resulting mean square displacement (µm2) after 100 s tracking of IAV inclusions; p<0.001 by Kruskal Wallis Bonferroni treatment. (H) Schematics of the coarsening assay model, in which liquid and hardened IAV inclusions are represented by orange and blue dots, respectively. Unlike hardened inclusions, native liquid inclusions would fuse and relax to a spherical droplet. (I) Aspect ratio (AR) was used as a measure of IAV inclusion coalescence into a sphere (analysis is a pool of two biological replicates, n=10 for DMSO and 29 for Ncz). Horizontal grey dash lines depict a perfect sphere (aspect ratio =1). (J) Pseudo-coloured time lapse images of coalescing viral inclusions (GFP-NP used as proxy; extracted from Figure 6—videos 1; 2) in the presence or absence of Ncz. Scale bar = 2 µm. (K) Boxplot of the fusion time (s) of IAV liquid inclusions. Dots represent fusion time of individual fusion event (Supplementary file 1 (Sheet 7)). (L) Schematic of a fluorescence loss after photoactivation (FLAPh) experiment. (M) Time lapse pseudo-colour images showing the fluorescence loss in photoactivated IAV inclusions (photoactivatable GFP-NP used as proxy) upon treatment with Ncz (n=16) or DMSO (n=17) (extracted from Figure 6—videos 3–8). The analysis is a representative of two biological replicates. Bar = 10µm. (N) Fluorescence intensity decay of photoactivated (paGFP-NP) normalised to the corresponding IAV inclusions expressing mcherry-NP. Coloured lines are single exponential model fitting (y0 = (1-a) + ae-kt) of the data point, dots are the mean of the data per second, and vertical lines denote the standard deviation (SD) per time (s), (Supplementary file 1 (Sheet 8)). (O) Half-life (t1/2 = $\frac{In(2)}{k}, k=rate constant$) of liquid and hardened IAV inclusions decay post-activation (s); p=1.386e-6 by Kruskal Wallis Bonferroni treatment (Supplementary file 1 (Sheet 8)). (P) Schematic depiction of an internal rearrangement of viral inclusion after an ROI within the inclusion is photobleached. (Q) A549 cells were transfected with plasmids encoding mcherry-NP and co-infected with PR8 virus at an MOI of 10. At 12 hr post-infection (hpi), cells were treated with nocodazole (10 µg/mL) for 2 hr to reduce the highly stochastic motion of liquid IAV inclusions and subsequently treated with DMSO or Ncz. Small regions inside IAV inclusions were photobleached to assess internal rearrangement of vRNPs (mCherry-NP as proxy). Time lapse pseudo-colour images show internal rearrangements after photobleaching (extracted from Figure 6—videos 9; 10). Scale bar = 10 µm.
 
 Lastly, we measured the internal rearrangement in viral inclusions (Figure 6P). In native conditions, the photobleached region quickly disappeared, consistent with internal rearrangement of vRNPs inside IAV inclusions, whilst in nucleozin-treated inclusions, the photobleached area remained unaltered, revealing stiffness (several examples in Figure 6Q and Figure 6—videos 9 and 10).
 
@@ -91,19 +131,23 @@ In a third approach, inclusion molecular dynamics was tested by FLAPh (Figure 6L
 
 Taken together, DMSO- and nucleozin-treated IAV inclusions exhibit distinct responses to shocks, dynamics, internal rearrangement, and coalescing properties, supporting that nucleozin hardens IAV liquid inclusions.
 
-## Modifiers of strength/type of interactions between vRNPs hardens IAV liquid inclusions in vivo
+### Modifiers of strength/type of interactions between vRNPs hardens IAV liquid inclusions in vivo
 
 Recently, the condensate-hardening drugs steroidal alkaloid cyclopamine and its chemical analogue A3 were shown to reduce viral titres in respiratory syncytial virus (RSV) infected mice (Risso-Ballester et al., 2021). However, at the organismal level, it was not demonstrated that RSV inclusion bodies in infected cells retained hardened features. To test if we could phenocopy the in vitro function of nucleozin, we aimed at analysing vRNP morphology inside the lung cells of infected mice. For this, we challenged mice with the IAV strain X31 for 2 days. At 30 min, 1 or 2 hr before the collection of the lungs, each mouse was treated with PBS (sham vehicle) or nucleozin, administered intranasally (Figure 7A–C). Interestingly, when we analysed viral inclusions under control conditions in cells of lungs of infected mice, we observed a punctate-like NP distribution. Upon nucleozin treatment, these cytosolic inclusions grew larger (inclusions per cell mean ± SEM: nucleozin 30 min, 0.101±0.006 µm2; 2 hr, 0.226±0.012 µm2, Figure 7B, Supplementary file 1 (Sheet 9)). This indicates that the pharmacological induced modulator activity of nucleozin on liquid inclusions (Kao et al., 2010; Amorim et al., 2013) was retained in vivo. Having seen an effect in vRNP cytosolic localisation in vivo, we aimed at confirming a nucleozin-dependent abrogation of IAV infection in our system as reported before (Kao et al., 2010). In fact, nucleozin was reported to affect viral titres by 1 log and increase survival of IAV (A/Vietnam/1194/04 H5N1) infected mice by 50%. For this, we challenged nucleozin pre-treated mice with X31 and treated them with a daily dose of PBS (sham vehicle) or nucleozin. We found that nucleozin-treated mice had a faster recovery from viral infection (Figure 7C, Supplementary file 1 (Sheet 10)). In sum, the data serves as proof of concept that the material properties of condensates may be targeted in vivo, in agreement with Risso-Ballester et al., 2021.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/85182/elife-85182-fig7-v2.jpg)
 
-**Figure 7.:** in vivo when infected mice are treated with nucleozin.(A–B) Mice were intranasally infected with 4000 plaque forming units (PFU) of X31 virus, and after 2 days were intranasally administered PBS or 8.3 nmoles/g mice of nucleozin (Ncz) at 30 min, 1 or 2 hr before the collection of the lungs. Data were extracted from inclusions (nucleoprotein [NP], as proxy) from fixed immunofluorescence images of lung tissues (number of cells counted = 446–1694). (A) Representative immunofluorescence images show sections of lung tissue stained for NP (red) and nucleus (blue) after PBS or Ncz treatment. (B) Boxplot showing the mean area (µm2) of inclusions from cells in lung section; p=3.378e-8 by Kruskal Wallis Bonferroni treatment (Supplementary file 1 (Sheet 9)). (C) Mice were pre-treated intraperitoneally with 8.3 nmoles/g mice Ncz or PBS for 1 hr before being intranasally infected with 1000 PFU of X31 virus, injected with a daily dose of Ncz or PBS for 11 days and the weight loss monitored daily. Body weight analysis is from a pool of two biological replicates. The number of mice is, in total, 23 for mock infected mice and 33 for infected mice (Supplementary file 1 (Sheet 10)).
+**Figure 7.:** (A–B) Mice were intranasally infected with 4000 plaque forming units (PFU) of X31 virus, and after 2 days were intranasally administered PBS or 8.3 nmoles/g mice of nucleozin (Ncz) at 30 min, 1 or 2 hr before the collection of the lungs. Data were extracted from inclusions (nucleoprotein [NP], as proxy) from fixed immunofluorescence images of lung tissues (number of cells counted = 446–1694). (A) Representative immunofluorescence images show sections of lung tissue stained for NP (red) and nucleus (blue) after PBS or Ncz treatment. (B) Boxplot showing the mean area (µm2) of inclusions from cells in lung section; p=3.378e-8 by Kruskal Wallis Bonferroni treatment (Supplementary file 1 (Sheet 9)). (C) Mice were pre-treated intraperitoneally with 8.3 nmoles/g mice Ncz or PBS for 1 hr before being intranasally infected with 1000 PFU of X31 virus, injected with a daily dose of Ncz or PBS for 11 days and the weight loss monitored daily. Body weight analysis is from a pool of two biological replicates. The number of mice is, in total, 23 for mock infected mice and 33 for infected mice (Supplementary file 1 (Sheet 10)).
 
-## Nucleozin rescues formation of hardened IAV inclusions in the absence of Rab11a
+### Nucleozin rescues formation of hardened IAV inclusions in the absence of Rab11a
 
 Given the possibility to harden IAV inclusions, it is important to define the molecular mechanisms conferring the liquid material properties of these condensates, which remain elusive. As Rab11a drives the formation of IAV inclusions (Amorim et al., 2011; Eisfeld et al., 2011; Lakdawala et al., 2014; Vale-Costa et al., 2016; Alenquer et al., 2019; Veler et al., 2022), we asked if nucleozin could artificially reform viral inclusions and mimic its behaviour in the absence of Rab11a. Stable cell lines expressing Rab11a dominant negative (DN) (henceforward Rab11a-DN) did not form IAV inclusions, as expected, maintaining vRNPs dispersed throughout the cytosol (Figure 8A). Interestingly, both Rab11a-WT and Rab11a-DN cell lines, in the presence of nucleozin, exhibited cytosolic puncta (despite smaller in Rab11a-DN lines, Figure 8A–B). This indicates that nucleozin bypasses the need for Rab11a to concentrate vRNPs, forming aberrant inclusions as predicted. We next tested the fusion ability of nucleozin-induced IAV inclusions in Rab11a-DN cell lines. Unlike native inclusions in WT cells, nucleozin-induced IAV inclusions in Rab11a-DN are not able to fuse in coarsening assays (Figure 8C–E). In sum, the liquid properties of IAV inclusions derived from flexible intersegment interactions and interaction with Rab11a harden to form stiff aggregates upon nucleozin treatment even when active Rab11a is absent.
 
-## Nucleozin affects vRNP solubility in the absence of Rab11a without altering host proteome profile
+![Figure 8.](https://cdn.elifesciences.org/articles/85182/elife-85182-fig8-v2.jpg)
+
+**Figure 8.:** (A–B) A549 cells constitutively expressing GFP-Rab11a-WT and GFP-Rab11a-DN were infected for 10 hr with PR8 at an MOI of 3 and treated with 5 µM nucleozin (Ncz) (n=10) or dimethyl sulfoxide (DMSO) (n=10) before fixing for analysis by immunofluorescence. The data are a representative analysis from biological duplicates. (A) Representative images of cells analysed by immunofluorescence staining using antibodies against viral protein nucleoprotein (NP) (magenta), host Rab11 (green), and ER (cyan). Nuclei and cell periphery delimited by yellow and white dashed line respectively, and white boxes are insets showing presence or absence of viral inclusions. Scale bar = 10 µm. (B) Scatter plot of circularity versus roundness of viral inclusions. (C–E) A549 cells constitutively expressing GFP-Rab11a-DN were transfected with mcherry-NP and co-infected with PR8 virus at an MOI of 3. At 12 hr post-infection (hpi), the cells were treated with 5 µM Ncz or DMSO for 10 min before imaging. (C) Schematic depicting the possible outcomes when Rab11a-DN cell lines are treated with Ncz. (D) Representative time lapse pseudo-colour images show fusion of IAV inclusions in a coarsening assay of PR8 infected Rab11a-DN cell line treated with Ncz or DMSO (extracted from Figure 8—videos 1–6). (E) Plot depicting the aspect ratio of fusing inclusions over time in infected Rab11a-DN cell line treated with Ncz.
+
+### Nucleozin affects vRNP solubility in the absence of Rab11a without altering host proteome profile
 
 Next, to understand how both the viral and host proteomes remodel in response to nucleozin treatment, we used a recently developed quantitative mass spectrometry-based approach called SPP (Sridharan et al., 2019). This is a lysate centrifugation assay, which can distinguish the soluble (supernatant) from insoluble (dense assemblies) protein pools. The majority of proteins annotated to be part of membraneless organelles, as well as many cytoskeletal proteins, exhibit prominent insolubility. In SPP, two aliquots of cellular lysates are extracted with either a strong (SDS) or a mild (NP40) detergent. Protein extracted with SDS represent the total proteome, while the supernatant of NP40-extracted lysate represents the soluble sub-pool. The ratio of NP40- and SDS-derived protein abundance represents the solubility of a protein (Figure 9A). Protein solubility is a proxy to track phase transition events in different cellular states. However, this measurement cannot distinguish between different events, such as solidification, phase separation, percolation, and gelation (Alberti and Hyman, 2021) that may underlie the phase transition.
 
@@ -127,31 +171,391 @@ Defining the rules for hardening the condensates is important for understanding 
 
 In this work, we explored the rules for hardening IAV liquid condensates. Other alternatives to modulate the material properties tailored for function can be developed. For example, accumulating evidence shows that blocking viral inclusion formation hinders viral infection (Amorim et al., 2011; Eisfeld et al., 2011; Momose et al., 2011; Vale-Costa et al., 2016; de Castro Martin et al., 2017; Vale-Costa and Amorim, 2017; Alenquer et al., 2019; Han et al., 2021; Veler et al., 2022). Herein, we observe that increase in temperature biases the system to dissolving viral inclusions (that is complete at 43.5°C), therefore activating exothermic reactions close to IAV inclusions may lead to their dissolution. Furthermore, it has been previously demonstrated that blocking Rab11 pathway, directly or indirectly, hampers viral infection (Amorim et al., 2011; Eisfeld et al., 2011; Momose et al., 2011; Han et al., 2021). Future research could also explore this route. As Rab11a has emerged as a key factor for the replication of members of many unrelated viral families relevant for human health (Bunyaviridae, Filoviridae, Orthomyxoviridae, Paramyxoviridae, and Pneumoviridae), targeting its activity may serve as a pan-antiviral strategy (Amorim et al., 2011; Bruce et al., 2010; Nakatsu et al., 2013; Nanbo and Ohba, 2018; Cosentino et al., 2022).
 
-## Limitations of the study
+### Limitations of the study
 
 Understanding condensate biology in living cells is physiological relevant but complex because the systems are heterotypic and away from equilibria. This is especially challenging for influenza A liquid inclusions that are formed by eight different vRNP complexes, which although sharing the same structure, vary in length, valency, and RNA sequence. In addition, liquid inclusions result from an incompletely understood interactome where vRNPs engage in multiple and distinct intersegment interactions bridging cognate vRNP-Rab11 units on flexible membranes (Chou et al., 2013; Gavazzi et al., 2013; Sugita et al., 2013; Shafiuddin and Boon, 2019; Haralampiev et al., 2020; Le Sage et al., 2020). At present, we lack an in vitro reconstitution system to understand the underlying mechanism governing demixing of vRNP-Rab11a-host membranes from the cytosol. This in vitro system would be useful to explore how the different segments independently modulate the material properties of inclusions, explore if condensates are sites of IAV genome assembly, determine thermodynamic values, thresholds accurately, perform rheological measurements for viscosity and elasticity, and validate our findings. The results could be compared to those obtained in cell systems to derive thermodynamic principles happening in a complex system away from equilibrium. Using cells to map how liquid inclusions respond to different perturbations provide the answer of how the system adapts in vivo, but has limitations. One of the constraints of using cells in this work relates to the range and precision of the concentrations we can vary in our system. Herein, we compared endogenous Rab11a cellular levels to a single pool of transduced cells that contained low, but still heterogeneous, levels of Rab11a as a way to avoid toxicity and/or uncharacterised effects of exceedingly high concentration of Rab11a in the cell. To minimise this limitation, we combined overexpressing Rab11a with a range of low and high levels of vRNPs (analysing the entire time course of infection) to understand if a combination of high levels of vRNPs and of Rab11a could synergistically change the material properties of IAV inclusions. Technically, we retrieved thermodynamic parameters (such as Cdense, Cdilute, shape, size) from images in which vRNPs were stained using antibodies. As mentioned above, antibodies may have some difficulty accessing the inner of the condensates, which could affect measurements of Cdense or the total concentration of vRNPs in the cytosol. This could, in turn, affect the calculation of some thermodynamic parameters, including nucleation density and Gibbs free energy. Importantly, differences in antibody access may depend on some condensate properties, which may even change during infection, inducing artefactual trends. Alternatives to using antibodies comprise viruses with fluorescently tagged vRNPs, like the reported virus with the viral polymerase PA tagged with GFP (Bhagwat et al., 2018). This virus could be the ideal approach to evaluate inclusion thermodynamics for the whole study, were it not for the fact that the virus is attenuated, exhibiting delayed infection, reduced levels of viral proteins and of accumulation of vRNPs in the cytosol, with viral inclusions forming later in infection. As such, the use of these viruses would also affect the thermodynamic analyses. Future assessment of when one approach is more suitable over the other is needed. A second technical limitation relates that we acquired data from images in z-stacks as the sum of slices at specific snapshots of infection. However, although requiring a very complex imaging analysis that we lack, in the ideal scenario, the analysis should have been done using the whole volumetry of each viral inclusion, and using live images quantified over time that is yet to be reported.
 
 ## Materials and methods
 
-## Resources availability
+**Key resources table**
 
-## Lead contact
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>A549</td>
+      <td>ATCC</td>
+      <td>CCL-185</td>
+      <td>Human alvelolar basal cell</td>
+    </tr>
+    <tr>
+      <td>Cell line (Canis familiaris)</td>
+      <td>MDCK.1</td>
+      <td>ATCC</td>
+      <td>CRL-2935</td>
+      <td>Mardin-Darby canine kidney cell</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rab11a (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat# 15903-1-AP, RRID:AB_2173458</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Calnexin (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#22595; RRID:AB_2069006</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NP (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#20343; RRID: AB_445525</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-NP (plasmid)</td>
+      <td>Amorim et al., 2011</td>
+      <td>N/A</td>
+      <td>GFP version of NP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mCherry-NP (plasmid)</td>
+      <td>Amorim et al., 2011</td>
+      <td>N/A</td>
+      <td>Cherry version of NP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>paCherry-NP (plasmid)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Cherry photoactivatable version of NP</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>paGFP-NP (plasmid)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>GFP photoactivatable version of NP</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gipc1_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGGAAAGGACAAAAGGAACCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gipc1_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAGGGCATTTGCACCCCATGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>paGFP_L64F/T65S_Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCCTCGTGACCACCTTCAGCTACGGCGTGCAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>paGFP_T203H/A206K_Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GACAACCACTACCTGAGCCACCAGTCCAAGCTGAGCAAAGACCCCAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>paGFP_V163A_Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAAGAACGGCATCAAGGCGAACTTCAAGATCCGCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>paCherry_NP_NheI_Fw</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GATCCGCTAGCGGTCGCCACCATGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>paCherry_NP_XhoI_Rv</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCGCCTCGAGGATCTGAGTCCGGACTTGTA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM, high glucose, pyruvate, no glutamine (Gibco)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 21969035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Glutamine</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 25030024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>OPTIMEM-I W/GLUTAMAX-I (CE)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 51985026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Leibovitz’s L-15 Medium, no phenol red (Gibco)</td>
+      <td>Life Technologies</td>
+      <td>Cat# 21083–027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine LTX Reagent with PLUS Reagent (Invitrogen)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 15338100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin-Streptomycin Solution</td>
+      <td>Biowest</td>
+      <td>Cat# L0022-100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dimethyl sulfoxide (DMSO)</td>
+      <td>BioLabs</td>
+      <td>Cat# B0515A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formaldehyde, extra pure, solution 37–41%, AR grade (Fisher Chemical)</td>
+      <td>Acros</td>
+      <td>Cat# 10231622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal Bovine Serum, qualified, heat inactivated, Brazil (Gibco)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 10500064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nucleozin</td>
+      <td>Target Mol</td>
+      <td>Cat# 282T7330</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,6-Hexanediol</td>
+      <td>Aldrich</td>
+      <td>Cat# 240117–50G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma</td>
+      <td>Cat# X100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dako Faramount Aqueous Mounting Medium</td>
+      <td>Agilent Technologies</td>
+      <td>Cat# S3025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Complete protease inhibitor cocktail</td>
+      <td>Merck</td>
+      <td>Cat# 11836170001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PhosphoStop</td>
+      <td>Merck</td>
+      <td>Cat# 4906837001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNasin Plus RNase Inhibitor</td>
+      <td>Promega</td>
+      <td>Cat# N2615</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NP-40</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# FNN0021</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SDS</td>
+      <td>NZYTech</td>
+      <td>Cat# MB01501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Benzonase Nuclease HC</td>
+      <td>Merck</td>
+      <td>Cat# 71206-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethanol</td>
+      <td>VWR Chemicals</td>
+      <td>Cat# 20821.330</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sequencing Grade Modified Trypsin</td>
+      <td>Promega</td>
+      <td>Cat# V5111</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lysyl Endopeptidase, Mass Spectrometry</td>
+      <td>Wako</td>
+      <td>Cat# 125-05061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES</td>
+      <td>Alfa Aesar</td>
+      <td>Cat# A14777</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TMT-16plex reagents</td>
+      <td>Thermo</td>
+      <td>Cat# A44522</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PIERCE BCA protein assay</td>
+      <td>Thermo</td>
+      <td>Cat# 23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>ImageJ</td>
+      <td>RRID:SCR_002285</td>
+      <td>https://imagej.net/software/fiji/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Project for Statistical Computing</td>
+      <td>R</td>
+      <td>RRID:SCR_001905</td>
+      <td>https://www.r-project.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trackmate plugin</td>
+      <td>Tinevez et al., 2017; Ershov et al., 2022</td>
+      <td>RRID:SCR_002285</td>
+      <td>https://imagej.net/plugins/trackmate/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>limma</td>
+      <td>Ritchie et al., 2015.</td>
+      <td>RRID:SCR_010943</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/limma.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ClusterProfiler (R Bioconductor)</td>
+      <td>Yu et al., 2012.</td>
+      <td>RRID:SCR_016884</td>
+      <td>https://bioconductor.org/packages/release/bioc/html/clusterProfiler.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>isobarQuant</td>
+      <td>Quant</td>
+      <td>https://doi.org/doi:10.18129/B9.bioc.isobar</td>
+      <td>https://www.bioconductor.org/packages/release/bioc/html/isobar.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Mascot 2.4 (Matrix Science)</td>
+      <td>Mascot</td>
+      <td>RRID:SCR_014322</td>
+      <td>http://www.matrixscience.com/server.html</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hoechst stain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>H3570</td>
+      <td>(1 µg/mL)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Resources availability
+
+#### Lead contact
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the lead contact, Maria Joao Amorim (mjamorim@igc.gulbenkian.pt, mjamorim@ucp.pt).
 
-## Materials availability
+#### Materials availability
 
 Materials produced under this study, including the photo-activatable GFP-NP (paGFP-NP) and photo-activatable mCherry-NP (paCherry-NP), may be requested to the corresponding author. Materials are subjected to MTA agreement to acknowledge the work of the authors.
 
-## Cell lines
+### Cell lines
 
 GFP-Rab11a-WT and GFP-Rab11a-DN cell lines were produced in-house and characterised in Vale-Costa et al., 2016, from the human alvelolar basal cell (A549, ATCC (CCL-185)), that were also used in this study. These cells were authenticated by ATCC with STR Profiling Results (StRC3941). Madin-Darby Canine Kidney (MDCK-I, acquired from ATCC) were used for their phenotypic properties (plaque assays) as an assay tool to titrate virus, but not the subject of the study themselves. MDCKs were not authenticated. A549s and MDCKs were obtained from Prof. Paul Digard, Roslin Institute, UK, as part of collaborative work. All cells are routinely checked for mycoplasma contamination and tested negative. Cells are routinely checked for mycoplasma contamination and tested negative. Cells were cultured in Dulbecco’s Modified Eagle Medium (DMEM) supplemented with 10% fetal bovine serum (FBS), 2 mM L-glutamine, and 1% (v/v) penicillin-streptomycin. GFP-Rab11a cell lines were cultured/maintained in DMEM supplemented with 1.25 µg/mL puromycin. Cells were maintained in a humidified incubator at 37°C and 5% v/v atmospheric CO2.
 
-## Viruses
+### Viruses
 
 Reverse-genetics engineered A/Puerto Rico/8/34 virus (PR8 WT; H1N1) (de Wit et al., 2007) wild-type or carrying the mutation in NP Y289H as described in Kao et al., 2010, was used to infect all cell types and titrated by plaque assay in MDCK cells, while X31 virus (a reassortant virus carrying HA and NA segments from A/Hong-Kong/1/1968 (H3N2) [Matrosovich et al., 2007] in the background of PR8) was used to infect mice. Infection for live imaging were done at an MOI of 10, with viral infections for immunofluorescence at an MOI of 3 or 5.
 
-## Plasmids construct
+### Plasmids construct
 
 Plasmids used in the study and their source are found in Key resources table. Two plasmids were created for this work: paGFP-NP and paCherry-NP.
 
@@ -159,25 +563,25 @@ The paGFP-NP was generated based on the GFP-NP plasmid. Mutations as described i
 
 To construct paCherry-NP, paCherry was amplified from pPAmCherry1-C1 (pPAmCherry1-C1, which was a gift from Vladislav Verkhusha [Addgene plasmid # 31929; http://n2t.net/addgene:31929; RRID:Addgene_31929, Subach et al., 2009]). The subsequent PCR was subcloned into pEGFP-NP plasmid (without GFP) using NheI and XhoI restriction sites. The following primers were used:
 
-## Animals
+### Animals
 
 All experiments involving mice were performed using 8-week-old littermate C57BL/6J, female mice grouped by random sampling under specific pathogen-free conditions at the Instituto Gulbenkian de Ciência (IGC) biosafety level 2 animal facility (BSL-2).
 
-## Mice infection
+### Mice infection
 
 Female C57Bl/6 mice were infected with 1000 pfu of X31 (A/X31; H3N2) virus, 1 hr after being intraperitoneally injected with DMSO or 450 µg of nucleozin. In the following 6 days, mice were injected daily with DMSO or 450 µg of nucleozin. At days 3 and 6 post-infection, mice were sacrificed, and lungs were collected to determine viral titres by plaque assays (using MDCK infected with a set of serial dilutions from the homogenised lung tissue samples). Mice were daily weighed for bodyweight assessment during all the course of infection (until 11 dpi).
 
 For in vivo analysis of viral inclusions, female C57Bl/6 mice were infected with 4000 pfu of X31 (A/X31; H3N2) virus for 2 days. At 30 min, 1 hr, or 2 hr before the collection of the lungs, each mouse was intranasally treated with DMSO (vehicle) or 69 µg of nucleozin. Then, lungs were collected to determine viral titres by plaque assays (for controlling infection) and for histology processing. All animals were included in data analysis except animals that when being infected did not inhale the total 30 µL of PBS containing viruses (four mice), and four animals that crossed the 20% weight limit and were euthanised. Processing for the immunofluorescence of lung slices is under the Microscopy and image processing.
 
-## Plaque assay
+### Plaque assay
 
 For viral titre measurement, A549 cells were seeded for 24 hr, infected at MOI of 3 in DMEM supplemented with 2 mM L-glutamine and 1% (v/v) penicillin/streptomycin and devoid of sera for 45 min at 37°C and 5% CO2. The supernatants were subjected to a plaque assay in MDCK cells to calculate the virus titres, as described previously (Matrosovich et al., 2006).
 
-## Drug treatment
+### Drug treatment
 
 Nucleozin was dissolved in DMSO and used at a final concentration of 2 µM (immunofluorescence staining and virus titres) or 5 µM (live imaging), while 1,6-hexanediol was dissolved in DMEM and used at 5% (w/v).
 
-## Microscopy and image processing
+### Microscopy and image processing
 
 For immunofluorescence, A549 cells were fixed in 4% (v/v) paraformaldehyde for 10 min and permeabilised with Triton X-100 (0.2% (v/v)), incubated in primary antibodies for 1 hr at room temperature (RT), washed (3×) in PBS/1% FBS (v/v) and finally incubated in Hoechst and Alexa Fluor conjugated secondary antibodies for 45 min at RT. Antibodies used were rabbit polyclonal against Rab11a (1:100; Proteintech, 15903-1-AP) and calnexin (1:1000, Abcam, 22595). Antibody against NP was mouse monoclonal (1:1000; Abcam, 20343). Secondary antibodies were all from the Alexa Fluor range (1:1000; Life Technologies). Following washing in PBS, cells were mounted with Dako Faramount Aqueous Mounting Medium and single optical sections were imaged with a Leica SP5 live or stellaris confocal microscope using the photon counter mode.
 
@@ -185,62 +589,62 @@ For immunofluorescence of lung slices, heat-induced epitope retrieval was perfor
 
 Using the function sum of slices, all z-stacked images were projected to 2D and inclusion and its cytoplasmic milieu were segmented and analysed using Lab-custom ImageJ macros and R analytics scripts.
 
-## Determining inclusion topology and thermodynamics
+### Determining inclusion topology and thermodynamics
 
-Data was acquired from independent biological replicates of at least two experiments. All data, including sample size, mean, standard error of mean, median, standard deviation, tailored to each experiment can be found in Supplementary file 1. To assess the shape of liquid inclusions, we used ImageJ plugins to measure a series of parameters with the following formulas: Circularity = 4π × Area/(Perimeter)2 with a value of 1 indicating a perfect circle. As the value approaches 0, it indicates an increasingly elongated shape. Uses the heading Circ (circularity); Aspect ratio=Major Axis/Minor axis. The aspect ratio of the particle’s fitted ellipse. Uses the heading AR; Roundness = 4 × Area/(π × (Major axis)2) or the inverse of Aspect Ratio. Uses the heading Round; Solidity = Area/Convex Area. To determine the total concentration of vRNPs (NP as proxy) transported to the cytoplasm in relation to vRNPs produced in the nucleus (CcytoplasmCnucleus), a sum of slices of z-stacked images were used, otherwise, single plane images were analysed for other parameters. We used a custom (Fiji Is Just) ImageJ 2.1.0/1.53p script for image processing using the following pipeline: (1) Segment cell periphery. (2) Segment and remove nucleus from the cell to make the cytoplasm. (3) From the cytoplasm, segment inclusions. (4) Analyse the cytoplasm, nucleus, and inclusions for number and topological shape descriptors. (5) Using the appropriate segmented region, measure the MFI (as proxy of concentration) of cell, nucleus, cytoplasm, and cytoplasmic inclusion (see Figure 1B).
+Data was acquired from independent biological replicates of at least two experiments. All data, including sample size, mean, standard error of mean, median, standard deviation, tailored to each experiment can be found in Supplementary file 1. To assess the shape of liquid inclusions, we used ImageJ plugins to measure a series of parameters with the following formulas: Circularity = 4π × Area/(Perimeter)2 with a value of 1 indicating a perfect circle. As the value approaches 0, it indicates an increasingly elongated shape. Uses the heading Circ (circularity); Aspect ratio=Major Axis/Minor axis. The aspect ratio of the particle’s fitted ellipse. Uses the heading AR; Roundness = 4 × Area/(π × (Major axis)2) or the inverse of Aspect Ratio. Uses the heading Round; Solidity = Area/Convex Area. To determine the total concentration of vRNPs (NP as proxy) transported to the cytoplasm in relation to vRNPs produced in the nucleus $(\frac{Ccytoplasm}{Cnucleus})$, a sum of slices of z-stacked images were used, otherwise, single plane images were analysed for other parameters. We used a custom (Fiji Is Just) ImageJ 2.1.0/1.53p script for image processing using the following pipeline: (1) Segment cell periphery. (2) Segment and remove nucleus from the cell to make the cytoplasm. (3) From the cytoplasm, segment inclusions. (4) Analyse the cytoplasm, nucleus, and inclusions for number and topological shape descriptors. (5) Using the appropriate segmented region, measure the MFI (as proxy of concentration) of cell, nucleus, cytoplasm, and cytoplasmic inclusion (see Figure 1B).
 
 Using the method published by Riback et al., 2020, as template, we determined Cdense as the MFI of the segmented inclusion while Cdilute was extrapolated from remaining cytoplasmic vRNP intensity outside the inclusions. We picked the best approach out of three to measure Cdilute. (1) Use ROIs from randomly selected cytoplasmic areas lacking inclusions. The limitation with this method is that inclusions are highly abundant in the cytoplasm of infected cells and are nearly impossible to manually or automatically draw without selecting regions containing inclusions. (2) Use an enlarged ROI band around the inclusions. This was easy to automate but limited by the overlap with other ROI bands due to the density of IAV inclusions in the infected cell. (3) Use ROI of the entire cytoplasm devoid of viral inclusions. This was easy to automate, lacks overlap with other ROIs and serves as the cleanest strategy when compared to strategy 2 (Figure 2—figure supplement 1, Figure 3—figure supplement 1, Figure 4—figure supplement 1A–H). We used strategy 3 to determine the Cdilute.
 
-Partition coefficient (K) and free energy (ΔG) were derived based on Riback et al., 2020, publication; where K = cdensecdilute and ΔG = -RTInK. Inclusion saturation concentration (Csat) is the threshold Cdilute where inclusion begins to appear (~6 hpi) and is calculated as the minimum Cdilute in cells with observable viral inclusions. The change in free energy was normalised to 3 hpi an infection stage with nuclear vRNP staining lacking cytoplasmic inclusions and was represented as ΔΔG = ΔG – ΔG(3 hpi).
+Partition coefficient (K) and free energy (ΔG) were derived based on Riback et al., 2020, publication; where K = $\frac{cdense}{cdilute}$ and ΔG = -RTInK. Inclusion saturation concentration (Csat) is the threshold Cdilute where inclusion begins to appear (~6 hpi) and is calculated as the minimum Cdilute in cells with observable viral inclusions. The change in free energy was normalised to 3 hpi an infection stage with nuclear vRNP staining lacking cytoplasmic inclusions and was represented as ΔΔG = ΔG – ΔG(3 hpi).
 
-## Live imaging, photoactivation, photobleaching
+### Live imaging, photoactivation, photobleaching
 
 All experiments resulted from at least two biological replicates. A549 cells were seeded in eight-well glass-bottomed dish (Ibidi) and grown overnight in OptiMEM (37°C, 5% CO2). Cells infected with PR8 at an MOI of 10 were transfected simultaneously with 200 ng/µL GFP-NP or cherry-NP plasmid and/or either paCherry-NP or paGFP-NP using lipofectamine LTX . Cells were imaged using OptiMEM or Leibovitz medium with a 63× oil immersion Nikon objective (NA = 1.4) on Roper TIRF, AiryScan, or spinning disk confocal (SoRa) microscopes equipped with temperature (37°C) and CO2 (5%) regulated chamber and stage. Inclusions at a specified ROI was activated by blue light (405 nm laser) at 100% intensity and imaged at 1 frame/s for 2 min using 488 and 568 nm lasers for GFP and cherry, respectively. Photoactivation data were post-processed in FIJI (Image J) using a modified FLAPh algorithm and analysed with a lab-custom R script. Model was obtained using single exponential curve fitting. y = (1-a) + ae-kt, a=mobile fraction, K=decay rate constant (per second, s-1), t=time (s).
 
 For image-based pulse-chase photobleaching, cells were transfected with 250 ng of GFP-NP and immediately superinfected with PR8 at an MOI of 10. At 12 hpi, media was substituted for Leibovitz L-15 media to buffer CO2 and data acquisition started on Zeiss AiryScan LSM 980 microscope with a caged incubator to control temperature at 37°C. An ROI inside the inclusion was pulsed with an excitation laser (455 nm) and internal rearrangement of the bleached region was monitored (chase) by live imaging for 120 s.
 
-## Particle tracking and coarsening assay
+### Particle tracking and coarsening assay
 
 Coarsening assays were calculated from two biological replicates in which several events were imaged. TrackMate plugin ((Fiji Is Just) ImageJ 2.1.0/1.53p, FIJI) was used to track inclusions at a timescale of 1 s/frame in live imaging samples and XY trajectories were subsequently analysed in a custom R (version 4.1.0) script. Using (FIJI and R), coarsening assay was analysed from time-lapsed tracking of two inclusions, starting from the point they first touch to the point they relax into a rounded puncta with an aspect ratio (AR) of 1.
 
-## Solubility proteome profiling
+### Solubility proteome profiling
 
 Data was acquired from independent biological replicates of at least two experiments. A549, GFP-Rab11a-WT, and GFP-Rab11a-DN cells were mock-infected or infected with PR8 virus between 4 and 16 hpi and treated with nucleozin or DMSO. Frozen cell pellets containing 1×106 cells were shipped to Proteomics Core Facility at EMBL, Heidelberg, for further sample processing.
 
 Samples for mass spectrometry analysis were prepared as described (Zhang et al., 2022). Briefly, 1×106 cells were resuspended in 100 µL lysis buffer (0.8%(v/v)) NP-40, 1× cOmplete protease inhibitor cocktail (Roche), 1× PhosphoStop (Roche), 1 U/mL RNAsin (Promega), 1.5 mM MgCl2 in PBS (2.67 mM KCl, 1.5 mM KH2PO4, 137 mM NaCl, and 8.1 mM NaH2PO4, pH 7.4). The sample aliquot for total proteome was incubated directly with benzonase on ice, while the sample aliquot for the soluble proteome was spun down at 100,000 × g at 4°C for 20 min. The supernatant was incubated with benzonase. Both total and soluble aliquots were incubated for 10 min with final 1% SDS. Protein concentration was determined for the total proteome sample and aliquots equal to 5 µg protein were taken for sample preparation for MS analysis. Both soluble and total lysate of each sample was combined in a multiplexing MS experiment.
 
-## Mass spectrometry sample preparation
+### Mass spectrometry sample preparation
 
 Sample preparation for mass spectrometric measurements were performed as described in Sridharan et al., 2019; Mateus et al., 2020.
 
-## Protein digestion and labelling
+### Protein digestion and labelling
 
 Protein digestion was performed using a modified SP3 protocol (Hughes et al., 2014; Hughes et al., 2019). Five µg of proteins (per condition) were diluted to a final volume of 20 µL with 0.5% (v/v) SDS and mixed with a bead slurry (Sera-Mag Speed beads, Thermo Fisher Scientific in ethanol) and incubated on a shaker at RT for 15 min. The beads were washed four times with 70% ethanol. Proteins on beads were overnight reduced (1.7 mM TECP), alkylated (5 mM chloroacetamide) and digested (0.2 µg trypsin, 0.2 µg LysC) 100 mM HEPES, pH 8. On the next day, peptides were eluted from the beads, dried under vacuum, reconstituted in 10 µL of water, and labelled with TMT-16plex reagents for 1 hr at RT. The labelling reaction was quenched with 4 µL of 5% (v/v) hydroxylamine and the conditions belonging to a single MS experiment were pooled together. The pooled sample was desalted with solid-phase extraction after acidification with 0.1% formic acid. The samples were loaded on a Waters OASIS HLB µelution plate (30 µm), washed twice with 0.05% formic acid, and finally eluted in 100 µL of 80% (v/v) acetonitrile containing 0.05% (v/v) formic acid. The desalted peptides were dried under vacuum and reconstituted in 20 mM ammonium formate. The samples were fractionated using C18-based reversed-phase chromatography running at high pH. Mobile phases constituted of 20 mM ammonium formate pH 10 (buffer A) and acetonitrile (buffer B). This system was run at 0.1 mL/min on the following gradient: 0% B for 0–2 min, linear increase 0–35% B in 2–60 min, 35–85% B in 60–62 min, maintain at 85% B until 68 min, linear decrease to 0% in 68–70 min, and finally equilibrated the system at 0% B until 85 min. Fractions were collected between 2 and 70 min and every 12th fraction was pooled together and vacuum dried.
 
-## LC-MS-MS measurement
+### LC-MS-MS measurement
 
 Samples were resuspended in 0.05% formic acid, 4% ACN in LC-MS grade water, and analysed on Q Exactive Plus mass spectrometer (Thermo Fisher Scientific) connected to UltiMate 3000 RSLC nano system (Thermo Fisher Scientific) equipped with a trapping cartridge (Precolumn; C18 PepMap 100, 5 μm, 300 μm ID×5 mm, 100 Å) and an analytical column (Waters nanoEase HSS C18 T3, 75 μm×25 cm, 1.8 μm, 100 Å) for chromatographic separation. Mobile phase constituted of 0.1% formic acid in LC-MS grade water (buffer A) and 0.1% formic acid in LC-MS grade acetonitrile (buffer B). The peptides were loaded on the trap column (30 μL/min of 0.05% (v/v) trifluoroacetic acid in LC-MS grade water for 3 min) and eluted using a gradient from 2% to 30% (v/v) buffer B over 103 min at 0.3 μL/min (followed by an increase to 40% B, and a final wash to 80% B for 2 min before re-equilibration to initial conditions). The outlet of the LC- system was directly fed for MS analysis using a Nanospray-Flex ion source and a Pico-Tip Emitter 360 μm OD×20 μm ID; 10 μm tip (New Objective). The mass spectrometer was operated in positive ion mode. The spray voltage and capillary temperature was set to 2.2 kV and 275°C, respectively. Full-scan MS spectra with a mass range of 375–1200 m/z were acquired in profile mode using a resolution of 70,000 (maximum fill time of 250 ms or a maximum of 3e6 ions (automatic gain control [AGC])). Fragmentation was triggered for the top 10 peaks with charge 2–4 on the MS scan (data-dependent acquisition) with a 30 s dynamic exclusion window (normalised collision energy was 30), and MS/MS spectra were acquired in profile mode with a resolution of 35,000 (maximum fill time of 120 ms or an AGC target of 2e5 ions).
 
-## Protein identification and quantification
+### Protein identification and quantification
 
 The MS data was processed as described in Sridharan et al., 2019. Briefly, the raw MS data was processed with isobarQuant and identification of peptides and proteins was performed with Mascot 2.4 (Matrix Science) against a database containing Homo sapiens Uniprot FASTA (proteome ID: UP000005640, downloaded on 14 May 2016) and Influenza A virus (strain A/Puerto Rico/8/1934 H1N1, proteome ID: UP000009255) along with known contaminants and the reverse protein sequences (search parameters: trypsin; missed cleavages 3; peptide tolerance 10 ppm; MS/MS tolerance 0.02 Da; fixed modifications included carbamidomethyl on cysteines and TMT16plex on lysine; variable modifications included acetylation of protein N-terminus, methionine oxidation, and TMT16plex on peptide N-termini).
 
-## Mass spectrometry data analysis and normalisation
+### Mass spectrometry data analysis and normalisation
 
 All MS data analysis was performed using R studio (version 1.2.1335 and R version 3.6.1). Data normalisation of NP40- and SDS-derived proteomes was performed with vsn (Huber et al., 2002). The overall signal sum intensities distributions from all TMT channels of all replicates were corrected for technical variations.
 
-## Differential analysis of protein abundance
+### Differential analysis of protein abundance
 
 The log2 transformed vsn normalised SDS-derived signal sum intensities of proteins from different samples were analysed for differential abundances using limma (Ritchie et al., 2015). Proteins with |log2(fold change) |>0.5 and adjusted p-value (Benjamini Hochberg)<0.1 were considered significantly changed.
 
-## Differential analysis of protein solubility
+### Differential analysis of protein solubility
 
 Solubility is defined as the ratio of NP40- and SDS-derived abundances of proteins. This ratio was computed for all proteins measured in a dataset. The log2 transformed protein solubility was compared between different conditions (timepoints of infection or different cell line at 12 hr post-infection) using limma. Proteins with |log2(fold change) |>0.5 and adjusted p-value (Benjamini Hochberg)<0.1 were considered significantly changed.
 
-## Gene ontology overrepresentation analysis
+### Gene ontology overrepresentation analysis
 
 Differential abundant or soluble human proteins from infection time course or different cell line datasets were used for GO term ‘Biological processes’ and/or ‘Cellular compartments’ overrepresentation analysis using clusterProfiler (R Bioconductor) (Yu et al., 2012). All identified proteins in each dataset served as the background. Standard settings were used for representing enriched GO terms (p-value cutoff: 0.05, Benjamini-Hochberg procedure for multiple testing adjustment and q-value cutoff of 0.2).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Data were analysed using the R statistical package (R version 4.1.0), but visualisation of body weight changes was done in GraphPad Prism 9.4.1 (681). To quantify thermodynamics and topological variables, we extracted imaging data using an ImageJ custom plugin and a custom R analytics pipeline. For particle tracking, coarsening assay, photoactivation, photobleaching, and shock treatments, we compared two groups: cells treated with DMSO and nucleozin. In mice, comparison also involved the Mock- and PR8- infection. After data transformation in R, we assessed for homogeneity of variance. Homogenously distributed data were assessed by parametric test using either one-way ANOVA to analyse independent variables, followed by a post hoc analysis by Tukey multiple comparisons of means or t-test for comparison of two groups only. When the data is not homogenous, we used non-parametric analysis with statistical levels determined after Kruskal Wallis Bonferroni treatment. For simplicity, the details of the test used for each experiment are included in the figure legends. In our case, when two groups were compared, they were not homogenously distributed, hence a non-parametric analysis was done instead of a t-test. Alphabets above each boxplot represents the statistical differences between groups. Same alphabets indicate lack of significant difference between groups while different alphabets infer a statistically significant difference at α=0.05.

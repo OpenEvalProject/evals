@@ -15,13 +15,13 @@
 
 ### Affiliations
 
-1. https://ror.org/04xysgw12 Department of Life Sciences, Pohang University of Science and Technology Pohang Republic of Korea
+1. Department of Life Sciences, Pohang University of Science and Technology Pohang Republic of Korea ([ROR:04xysgw12](https://ror.org/04xysgw12))
 
 † Corresponding author
 
 ## Abstract
 
-Dendritic spines are the central postsynaptic machinery that determines synaptic function. The F-actin within dendritic spines regulates their dynamic formation and elimination. Rai14 is an F-actin-regulating protein with a membrane-shaping function. Here, we identified the roles of Rai14 for the regulation of dendritic spine dynamics associated with stress-induced depressive-like behaviors. Rai14-deficient neurons exhibit reduced dendritic spine density in the Rai14 +/- mouse brain, resulting in impaired functional synaptic activity. Rai14 was protected from degradation by complex formation with Tara, and accumulated in the dendritic spine neck, thereby enhancing spine maintenance. Concurrently, Rai14 deficiency in mice altered gene expression profile relevant to depressive conditions and increased depressive-like behaviors. Moreover, Rai14 expression was reduced in the prefrontal cortex of the mouse stress model, which was blocked by antidepressant treatment. Thus, we propose that Rai14-dependent regulation of dendritic spines may underlie the plastic changes of neuronal connections relevant to depressive-like behaviors.
+Dendritic spines are the central postsynaptic machinery that determines synaptic function. The F-actin within dendritic spines regulates their dynamic formation and elimination. Rai14 is an F-actin-regulating protein with a membrane-shaping function. Here, we identified the roles of Rai14 for the regulation of dendritic spine dynamics associated with stress-induced depressive-like behaviors. Rai14-deficient neurons exhibit reduced dendritic spine density in the Rai14+/- mouse brain, resulting in impaired functional synaptic activity. Rai14 was protected from degradation by complex formation with Tara, and accumulated in the dendritic spine neck, thereby enhancing spine maintenance. Concurrently, Rai14 deficiency in mice altered gene expression profile relevant to depressive conditions and increased depressive-like behaviors. Moreover, Rai14 expression was reduced in the prefrontal cortex of the mouse stress model, which was blocked by antidepressant treatment. Thus, we propose that Rai14-dependent regulation of dendritic spines may underlie the plastic changes of neuronal connections relevant to depressive-like behaviors.
 
 ## Introduction
 
@@ -35,15 +35,39 @@ In the present study, we aimed to gain insights into the function of Rai14 in th
 
 ## Results
 
-## Rai14-depleted neurons exhibit decreased dendritic spine density
+### Rai14-depleted neurons exhibit decreased dendritic spine density
 
 To investigate the function of Rai14 in dendritic spine development, we examined dendritic morphology in Rai14-deficient mice. Since Rai14 homozygous knockout (Rai14-/-) mice showed perinatal lethality (Figure 1—figure supplement 1), Rai14 heterozygous knockout (Rai14+/-) mice were used for the in vivo experiments and behavioral analyses. Rai14-deficient neurons in mouse cortex and hippocampus displayed a significantly lower number of dendritic spines than wild-type neurons (Figure 1A and B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/77755/elife-77755-fig1-v2.jpg)
+
+**Figure 1.:** (A) Golgi-stained basal dendrites of cortical layer II/ III pyramidal neurons from adult wild-type (WT) and Rai14+/- mouse brains. Representative images (left) and quantitative analysis of the dendritic spine density (right) are shown (n = 4 for each group, 7–11 neurons for each mouse were analyzed). (B) Golgi-stained basal dendrites of hippocampal CA1 pyramidal neurons from adult WT and Rai14+/- mouse brains. Representative images (left) and quantitative analysis of the dendritic spine density (right) are shown. (n = 4 for each group, 8–11 neurons for each mouse were analyzed). (C–E) Dendritic spine analysis of WT and Rai14-/- primary cultured hippocampal pyramidal neurons (DIV19) derived from WT and Rai14-/- embryos. GFP-empty vector was transfected to analyze neuronal morphology. (C) Representative images (left) and quantitative analysis of the dendritic spine density (right) are shown. (n = 24 neurons for WT, 38 neurons for Rai14-/- from three separate experiments). (D) Quantification of mature spine density of the dendritic segments shown in (C). For spine type classification criteria, please see Materials and methods. (E) Cumulative probability plot of the spine length (left, n = 2165 spines from WT and 2207 spines from Rai14-/- neurons) and the maximal diameter of spine head width (right, n = 1131 mature spines from wild type, and 1210 mature spines from Rai14-/- neurons). (F–G) Spine density analysis of primary cultured cortical (F) and hippocampal (G) pyramidal neurons expressing scrambled shRNA (CTL) or Rai14 shRNA (Rai14 KD). Neurons were transfected at DIV15, and fixed and analyzed at DIV19–20. (F) Representative images of dendritic segment from cortical neurons (left) and quantitative analysis of the dendritic spine density (right) are shown (n = 20 neurons for each group from three independent cultures). (G) Representative images of dendritic segment from hippocampal neurons (left) and quantitative analysis of the dendritic spine density (right) are shown (n = 41 neurons for CTL, 40 neurons for Rai14 KD from 4 independent cultures). (H) Spine density analysis of cortical layer II/ III pyramidal neurons expressing scrambled shRNA (CTL) or Rai14 shRNA (Rai14 KD) from mouse brains. Embryos were electroporated in utero with scrambled or Rai14 shRNA at E16, and brains were analyzed at P14. Representative images (left) and quantitative analysis of the dendritic spine density (right) are shown (n = 17 neurons from 3 mice for CTL, 18 neurons from 3 mice for Rai14 KD). Scale bars represent 5 μm. Data are presented as mean ± SEM. *p < 0.05, **p < 0.01, and ***p < 0.001 determined by student’s t-test for (A), (B), (C), (D), (F), (G) and (H). Kolmogorov-Smirnov test was used for (E). All experiments were repeated at least three times. See also Figure 1—figure supplement 1 and Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77755/elife-77755-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Knockout scheme of Rai14-/- mouse (Rai14em1(IMPC)J, The Jackson Laboratory). Cas9 RNA and four guide sequences results in the deletion of exon 3 and 336 bp of flanking intronic sequences including the splice acceptor and donor, followed by a change in amino acid sequence after residue 12 and early truncation 59 amino acid later (asterisk) (MGI Ref ID: J:188991). (B) Genotype distribution of E17.5–E18 embryos derived from the timed breeding of Rai14+/- mice. Embryos from the timed mating were isolated at E17.5–E18, and genotyped by PCR from the arms, legs, and tail snips. (C) Genotype distribution of pups derived from the timed breeding of Rai14+/- mice. Pups were separated from dams at P21–P28 and genotyped by PCR from the tail snips. (D) Morphology of Rai14-deificient (Rai14+/- and Rai14-/-) and wild-type (WT) littermate embryos at E18.5 (upper) and embryonic brains (lower). (E) A western blot of endogenous Rai14 in brain lysates of Rai14-deificient (Rai14+/- and Rai14-/-) and WT littermate embryos.
+
 To analyze the structure of dendritic spines, we adopted primary neuron culture system. Primary cultured hippocampal neurons from Rai14-/- embryos showed significantly lower dendritic spine density (Figure 1C and D) without significant differences in spine length or spine head size (Figure 1E). Similarly, knockdown of Rai14 in primary cortical and hippocampal neurons (Figure 1F and G) and P14 mouse cortical neurons (Figure 1H) reduced the numbers of dendritic spines, indicating that the loss of dendritic spines upon Rai14 downregulation is cell-autonomous.
 
-## Tara stabilizes Rai14
+### Tara stabilizes Rai14
 
 To get a clue how Rai14 regulates dendritic spines, we examined the Rai14 protein interactome. Protein-protein interaction databases disclosed the potential association of Rai14 with Tara, another F-actin binding protein (Huttlin et al., 2017; Schweppe et al., 2018; Seipel et al., 2001; Woo et al., 2019). Rai14 and Tara share multiple additional interaction partners (Figure 2—figure supplement 1A), indicating that they likely form a functional complex. Indeed, a yeast two-hybrid screening using a human fetal brain cDNA library validated this interaction (Figure 2A), which was also confirmed by co-immunoprecipitation (co-IP) of Rai14 and Tara from mouse brain lysates (Figure 2B). Notably, knockdown of Tara led to the downregulation of Rai14 protein levels (Figure 2C), whereas overexpression of Tara brought about the upregulation of endogenous Rai14 protein levels (Figure 2—figure supplement 1B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/77755/elife-77755-fig2-v2.jpg)
+
+**Figure 2.:** (A) Yeast two-hybrid assay of Rai14 and Tara. pPC97-Tara and pPC86-Rai14 co-transformants were analyzed byβ-galactosidase activity assay using X-gal as substrate (left) and growth on minimal media in decreasing concentrations of yeast (right). (B) Co-immunoprecipitation of endogenous Rai14 and Tara from P14 mouse brain lysates. (C) Down-regulation of Rai14 by Tara KD. Western blot image of endogenous Rai14 from HEK293 cell lysates transfected with scrambled shRNA (CTL) or Tara shRNA (Tara KD) (left) and relative Rai14 band intensity normalized to α-tubulin (right) are shown (n = 22 for CTL, 22 for Tara KD). (D) Spine density analysis of Tara and/or Rai14 KD conditions. Representative images of dendritic segments from DIV19 primary cultured hippocampal pyramidal neurons expressing indicated shRNA(s) (left) and quantification of the dendritic spine density (right) are shown (n = 25 neurons for CTL, 24 neurons for Rai14 KD, 25 neurons for Tara KD, and 26 neurons for double KD). (E) Localization of Tara region for interaction with Rai14. Co-immunoprecipitation of endogenous Rai14 with Tara deletion mutants was carried out in HEK293 cells. CTL: GFP-empty vector. (F) Up-regulation of Rai14 by Tara interaction. Western blot image of endogenous Rai14 from HEK293 cell lysates transfected with indicated plasmids (left), and relative Rai14 band intensity normalized to α-tubulin (right) are shown (n = 9). CTL: GFP-empty vector (G) Stabilization of Rai14 by deletion of C-terminal tip. Western blot image of Rai14 from HEK293 cell lysates transfected with indicated plasmids (left) and relative Rai14 band intensity normalized to α-tubulin (right) are shown (n = 7). (H) Regulation of spine density by Tara-Rai14 interaction. Representative images of dendritic segments from DIV17–19 primary cultured hippocampal pyramidal neurons expressing indicated plasmids (left) and quantification of the dendritic spine density (right) are shown (n = 30 neurons for CTL, 24 neurons for Rai14 +Tara and Rai14 +TaraΔ241–330). (I) Regulation of spine density by Rai14 stabilization. Representative images of dendritic segments from DIV17–19 primary cultured hippocampal pyramidal neurons expressing indicated plasmids (left) and quantification of the dendritic spine density (right) are shown (n = 15 neurons for CTL, 19 neurons for Rai14 and Rai14 +Tara, and 18 neurons for Rai14Δ948–967). Scale bars represent 5 μm. Data are presented as mean ± SEM. *p < 0.05, **p < 0.01, and ***p < 0.001 from student’s t-test for (C), (G) and one-way ANOVA with Bonferroni’s multiple comparison test for (D), (F), (H), and (I). Experiments were repeated at least three times. See also Figure 2—figure supplements 1 and 2, and 3, and Figure 2—source data 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77755/elife-77755-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Rai14 and TRIOBP (Tara) protein interactome image generated from BioPlex (Huttlin et al., 2017; Schweppe et al., 2018) (Modified for clear representation). Shared interactors are indicated by light yellow nodes and bold lines. Secondary network Gene Ontology annotations with significant adjusted p-values are listed below, and GO terms associated with the protein are indicated by designated colors in the circle. (B) Increased Rai14 protein level by Tara overexpression. A western blot image of endogenous Rai14 in the lysate of HEK293 cell transfected with GFP-Tara. Relative intensity of the Rai14 band intensity normalized against α-tubulin is shown (n = 10). Data are plotted as mean ± SEM. *p < 0.05, **p < 0.01, and ***p < 0.001 from student’s t-test.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/77755/elife-77755-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Mapping of Tara domain involved in Rai14 interaction. Upper, The diagram of human Tara deletion mutants: Tara1–160, Tara161–499, Tara500–593. PH: Pleckstrin homology domain. CC: coiled-coil domain. Lower, Co-immunoprecipitation of FLAG-Rai14 with Tara deletion mutants in HEK293 cells. IP with anti-FLAG antibody. The Tara mutant fragment containing amino acid residues 161–499 interacted with FLAG-Rai14. (B) Mapping of Tara domain involved in Rai14 upregulation. Upper, The diagram of the domain structure of human Tara and its deletion mutants: TaraΔ161–240, TaraΔ241–330, TaraΔ331–412, and TaraΔ413–499. Lower, Western blots using HEK293 cell lysates transfected with FLAG-Rai14 and indicated Tara constructs. The Tara mutant lacking amino acid residues 241–330 failed to upregulate FLAG-Rai14.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/77755/elife-77755-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Mapping of Rai14 domain involved in Tara interaction. Upper, The diagram of the domain structure of human Rai14 and its deletion mutants: Rai14Δ401–600, Rai14Δ601–800, and Rai14Δ801–980. ANK: ankyrin repeat domain, CC: coiled-coil domain. Lower, Co-immunoprecipitation of endogenous Tara with Rai14 deletion mutants in HEK293 cells. IP with anti-GFP antibody. The Rai14 mutant lacking amino acid residues 801–900 lost its interaction with Tara. (B–C) Mapping of Rai14 domain involved in Tara-mediated Rai14 upregulation. (B) Upper, The diagram of the domain structure of human Rai14 and its deletion mutants: Rai14Δ801–860, Rai14Δ861–920, and Rai14Δ921–980. Lower, Western blots using HEK293 cell lysates transfected with indicated Rai14 constructs with or without GFP-Tara. CTL: GFP-empty vector. The Rai14 mutant lacking 921–980 amino acid sequence showed upregulated protein level even if Tara was not co-expressed. (C) Upper, The diagram of the domain structure of human Rai14 and its deletion mutants: Rai14Δ921–940, Rai14Δ941–960, Rai14Δ961–980, and Rai14Δ948–967. Amino acid residues 921–980 are highlighted with light yellow box. Black lines under the sequence represent predicted protease cleavage sites (Kumar et al., 2020; Li et al., 2020). Lower, Western blots using HEK293 cell lysates transfected with indicated Rai14 constructs with or without Myc-Tara. The Rai14 mutant lacking amino acid residues 948–967 showed upregulated protein level even if Tara was not co-expressed. (D) Co-immunoprecipitation of endogenous Tara with Rai14-GFP or Rai14Δ948–967-GFP in HEK293 cells. IP with anti-GFP antibody. CTL: GFP-empty vector. Deletion of amino acid residues 948–967 completely abolished the interaction of Rai14 with Tara.
 
 We therefore asked whether the functional effects of Rai14 on dendritic spine density were associated with Tara. First, we measured dendritic spine density upon Rai14 and/or Tara depletion (Figure 2D). Tara knockdown resulted in a similar reduction in dendritic spine density to those expressing Rai14 shRNA. In addition, the simultaneous knockdown of Rai14 and Tara also decreased spine density to a similar extent.
 
@@ -53,19 +77,47 @@ We also mapped the Tara-binding region in the Rai14 protein (Figure 2—figure s
 
 Next, we tested whether Rai14 stability was directly linked to the regulation of dendritic spine density. The co-expression of Rai14 and Tara, which led to Rai14 upregulation, resulted in increased spine density, whereas the co-expression of Rai14 and TaraΔ241–330 failed to increase dendritic spine density (Figure 2H). Moreover, unlike wild-type Rai14, the expression of Rai14Δ948–967, a stabilized form of Rai14, alone was sufficient to increase spine density (Figure 2I), further supporting the hypothesis that Tara stabilizes Rai14 by physical interaction to positively regulate dendritic spine density.
 
-## Tara-Rai14 complex accumulates at the neck of dendritic spines and protects spines from elimination
+### Tara-Rai14 complex accumulates at the neck of dendritic spines and protects spines from elimination
 
 To understand how Tara-mediated Rai14 stabilization affects dendritic spine density, we analyzed the subcellular localization of Rai14 and Tara in neuron, especially focusing on the dendritic spines. Consistently, co-expression of Rai14 and Tara remarkably enhanced the intensity of Rai14 compared to ectopically expressed Rai14 without co-expression of Tara (Figure 3A, Figure 3—figure supplement 1A). Interestingly, when Tara was co-expressed, both Tara and Rai14 displayed a strong tendency to cluster at the neck and/or base of the dendritic spines (Figure 3A and B). Rai14Δ948–967 also accumulated at the neck of some spines without Tara-co-expression. In contrast, when Rai14ΔANK, which lacked membrane-binding ability (Wolf et al., 2019), was co-expressed with Tara, it did not exhibit selective accumulation at the neck of dendritic spines. The accumulation of the stabilized Rai14 at the spine neck was in a tight correlation with dendritic spine density (Figure 3C); Rai14Δ948–967 effectively enhanced spine density whereas Rai14ΔANK, which was able to interact with and was upregulated by Tara (Figure 3—figure supplement 1B and C), failed to increase dendritic spine density compared to Rai14 and Tara co-expressing dendrites.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/77755/elife-77755-fig3-v2.jpg)
+
+**Figure 3.:** (A–B) Localization analyses of Rai14 at the dendritic spine. (A) Dendritic segments of DIV17–18 primary cultured hippocampal pyramidal neurons transfected with indicated Rai14-GFP and/or FLAG-Tara constructs are shown with an intensity heat map of Rai14 and Rai14 mutants (left, green: Rai14WT/mut-GFP, blue: FLAG-Tara, magenta: RFP). Spines indicated by white arrowhead are shown in higher magnification with an intensity heat map of Rai14 and Rai14 mutants (middle). Representative intensity profiles of Rai14 and Rai14 mutants in the indicated spines are also shown (right, RFP: a morphology marker). Scale bar represents 5 μm for dendritic segments and 1 μm for magnified spine images. The contours of the dendritic shaft and spines are outlined by dashed lines. (B) Fraction of Rai14 clusters at spine neck relative to total Rai14 clusters within the designated dendritic segments. (n = 6 neurons) (C) Impact of stabilized (Rai14Δ948–967) or mislocalized forms of Rai14 (Rai14ΔANK) expression on dendritic spine density of primary hippocampal pyramidal neurons (n = 7 neurons, DIV17–18). (D–E) Spine dynamics of dendritic spines with or without Rai14 from time-lapse imaging on DIV15–17 primary cultured hippocampal pyramidal neurons expressing Rai14-GFP, FLAG-Tara, and RFP. Rai14-positive spines: spines containing Rai14-GFP clusters within their neck at time 0 min, Rai14-negative spines: spines that does not contain Rai14-GFP clusters within their neck at time 0 min. (D) Representative images of a stable Rai14-positive spine (upper) and an eliminated Rai14-negative spine (lower). Scale bar represents 2 μm. (E) Quantification on the dynamics of Rai14-positive and Rai14-negative spines at 120 min compared to 0 min. (n = 5 neurons) (F) Representative images of newly formed dendritic spines in which Rai14-GFP recruited (upper, Rai14-positive) or not (lower, Rai14-negative) at the spine neck. (G–H) Impact of Rai14 and Tara expression on spine maintenance upon latrunculin A (LatA) treatment. (G) Representative images of hippocampal dendritic segments (left, morphology marker: RFP-LifeAct) and normalized spine density at indicated time points after LatA treatment (right, 20 μΜ) are shown (n = 9 neurons, DIV17–18). Each spine density after LatA treatment was normalized to the spine density before LatA treatment. Scale bar represents 5 μm. (H) Fractions of the eliminated spines and newly formed spines at 120 min time point after LatA treatment. Data are presented as mean ± SEM. *p < 0.05, **p < 0.01, and ***p < 0.001 determined by one-way ANOVA for (B) and (C), student’s t-test for (H), and two-way ANOVA with Bonferroni’s multiple comparison test for (E) and (G). All experiments were repeated at least three times. See also Figure 3—figure supplement 1, and Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77755/elife-77755-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Localization of Rai14-GFP at the dendritic spines. Dendritic segments of DIV17–18 hippocampal pyramidal neurons transfected with Rai14-GFP (left, upper) are shown with an intensity heat map of Rai14 (left, lower). Spines indicated by white arrowheads are shown in higher magnification with an intensity heat map of Rai14-GFP (middle). Representative intensity profile of Rai14 in the indicated spine is also shown (right, RFP: a morphology marker). Scale bar represents 5 μm for dendritic segments and 1 μm for magnified spine images. The contours of the dendritic shaft and spines are outlined by dashed lines. (B) Co-immunoprecipitation of endogenous Tara with Rai14-GFP or Rai14ΔANK-GFP in HEK293 cell. CTL: GFP-empty vector. ANK: ankyrin repeat domains (amino acid residues 17–252). The interaction of Rai14 with Tara was not compromised by deletion of ankyrin repeat domain of Rai14. (C) Representative western blot image of Rai14-GFP or Rai14ΔANK-GFP from HEK293 cell lysates co-transfected with/without FLAG-Tara. ANK: ankyrin repeat domains. The Rai14 mutant lacking ankyrin repeat domain was upregulated upon increased Tara expression.
+
 Next, to examine the contribution of the Tara-Rai14 cluster for the dynamic nature of the dendritic spines, we monitored the process of spinogenesis in primary neurons co-expressing Rai14 and Tara by time-lapse imaging. Dendritic spines were grouped into Rai14-positive spines (those containing Rai14-GFP within their neck at 0 min) and Rai14-negative spines (those without Rai14-GFP at their neck) (Figure 3D and E). Both Rai14-positive and Rai14-negative spines underwent morphological changes, such as growth and shrinkage, with no significant temporal differences. However, the fraction of eliminated spines was markedly decreased in the Rai14-positive spines. While 33% of Rai14-negative spines were eliminated, most of the Rai14-positive spines survived, with only 2.6% of these spines eliminated. Rai14 sometimes gathered at the base and entered the neck of newly formed dendritic spines (Figure 3F). These spines mostly remained until the last of the imaging period, while newly formed Rai14-negative spines shrank or disappeared. To further test the role of Rai14 in spine maintenance, we induced the elimination of dendritic spines by treating neurons with latrunculin A (LatA) (Allison et al., 1998; Nestor et al., 2011; Vlachos et al., 2009), an actin destabilizer, and monitored spine dynamics (Figure 3G and H). Dendritic spines with ectopic expression of Rai14 and Tara showed significantly higher survival rates against LatA treatment than controls, indicating that Rai14 protects dendritic spines from the pressure of elimination by actin destabilization. Collectively, these data support that the Rai14-Tara complex helps in the maintenance of dendritic spines.
 
-## Rai14 affects functional synaptic activity
+### Rai14 affects functional synaptic activity
 
 Next, we attempted to see if Rai14-dependent spine maintenance contributed to excitatory synaptogenic events as dendritic spines are major postsynaptic compartments that receive most excitatory presynaptic inputs. We labeled primary hippocampal neurons with synaptophysin and PSD95, presynaptic and postsynaptic markers, respectively, to monitor excitatory synapse formation. As expected, neurons co-expressing Rai14 and Tara displayed more spines with both synaptophysin and PSD95 puncta on the spine head compared to control neurons (Figure 4A and B, Figure 4—figure supplement 1A). Within Rai14-Tara overexpressing neurons, spines containing the Rai14 cluster tended to bear synapses with higher probability than the spines without Rai14 signal (Figure 4C, Figure 4—figure supplement 1B). Concurrently, Rai14-/- neurons had less number of spines marked simultaneously with synaptophysin and PSD95 puncta on the spine head than wild-type neurons (Figure 4D). Consistently, when we evaluated the functional consequence of Rai14 depletion on synaptic transmission, miniature excitatory postsynaptic currents (mEPSCs) measured from acute brain slices of Rai14+/- mice showed significantly lower mean frequency without alteration of the amplitude (Figure 4E–G). To test further consequences of synaptic function upon Rai14 depletion, we assessed the spatial memory retention of Rai14+/- mice with the Morris water maze test. On the probe test day, Rai14+/- mice stayed significantly less in the platform-containing quadrant, whereas wild-type littermates spent more time in the platform area (Figure 4H–K). In addition, Rai14+/- mice also displayed mild deficits in contextual fear memory without fear generalization (Figure 4L–N). On the other hand, Rai14+/- mice had no significant difference in locomotor activity and anxiety levels (Figure 4—figure supplement 2). These results demonstrate that the structural deficits in spine maintenance caused by Rai14 deficiency extend to functional alterations in synapses.
 
-## Rai14-deficient mice exhibit depressive-like behaviors
+![Figure 4.](https://cdn.elifesciences.org/articles/77755/elife-77755-fig4-v2.jpg)
+
+**Figure 4.:** (A–C) Enhanced synapses in the hippocampal pyramidal neurons over-expressing Rai14 and Tara. (A) Representative images of DIV17–18 dendritic segments and spines are shown (magenta: PSD95, cyan: Synaptophysin, green: Rai14-GFP). Spines indicated with white arrowheads are shown in higher magnification. Scale bar represents 5 μm for dendritic segment image (left) and 1 μm for magnified spine images (right). Dashed lines indicate the contours of the dendritic shaft and spines. (B) Fractions of synapse-bearing spines (n = 9 neurons for CTL, 8 neurons for Rai14 +Tara). SYP: Synaptophysin. The fraction of synaptic clusters co-localized with dendritic spines relative to entire spines was analyzed. (C) Fractions of synapse-bearing spines in Rai14-positive and Rai14-negative spines in hippocampal neurons expressing Rai14 and Tara (n = 8 neurons). SYP: Synaptophysin, Rai14-positive spines: spines containing Rai14-GFP clusters within their neck, Rai14-negative spines: spines without Rai14-GFP within their neck. (D) Decreased synapse number in the DIV18–20 hippocampal Rai14-/- pyramidal neurons. The fraction of synaptic clusters co-localized with dendritic spines relative to entire spines was analyzed. Representative images of dendritic segments (left,) and fractions of synapse-bearing spines (right, n = 13 neurons for WT, 18 neurons for Rai14-/-). Dashed lines: contours of the dendritic shaft and spines. Scale bar: 5 μm. magenta: PSD95, cyan: SYP (synaptophysin) (E–G) miniature excitatory postsynaptic currents (mEPSCs) recorded from principal hippocampal CA1 pyramidal neurons of WT and Rai14+/- mice. mEPSCs were recorded at –70 mV holding potential in the presence of picrotoxin (PTX) and tetrodotoxin (TTX). (E) Representative mEPSC traces. Scale bars represent 0.5 s and 10 pA. (F) Left, Average mEPSC frequency of principal hippocampal neurons from WT and Rai14+/- mice. Right, Cumulative probability distributions of mEPSC inter-spike intervals (n = 3 for each group, 10–12 neurons for each mouse were analyzed). (G) Average (left) and cumulative probability distributions (right) of mEPSC amplitude in neurons analyzed in (F). (H–K) Morris water maze test. Performance was assessed by comparing 11- to 12-week-old male WT and Rai14+/- mice (n = 10 for WT, 14 for Rai14+/-). (H) Experimental scheme of Morris water maze test (upper) and representative trajectories of WT and Rai14+/- mice during the probe test (lower). Pre-training: training with visible platform (5 trials/ day, on day 0), training: training with hidden platform (5 trials/ day, on day 1–day 6), probe test: test with platform removed (5 min/ test, on day 7). The platform is indicated with a yellow circle. (I) Permanence time of WT and Rai14+/- mice in indicated quadrants during the probe test. (J) Number of platform entries during the probe test. (K) Total traveled distance during the probe test. (L–N) Contextual fear conditioning test (n = 14 for WT, 13 for Rai14+/-, 11–12 week old). (L) Experimental scheme of the contextual fear conditioning test. In fear context A, two electric foot-shocks (0.4 mA for 1 s) were delivered with a 50 s interval. (M) Mean fractions of freezing time in the fear context (N) Mean percentage of freezing time in the neutral context. Error bars indicate the mean ± SEM. *p < 0.05, **p < 0.01, and ***p < 0.001 determined by student’s t-test for (B), (C), (D), (J), (K), (M), and (N), two-way ANOVA with Bonferroni’s multiple comparison test for (I). Unpaired t-test with Welch’s correction was used for bar graphs, and Kolmogorov-Smirnov test was used for cumulative graphs in (F) and (G). All experiments were repeated at least three times. See also Figure 4—figure supplement 1, and 2, and Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77755/elife-77755-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The fractions of PSD95-bearing and synaptophysin-positive spines (n = 8 neurons for CTL, 8 neurons for Rai14 +Tara). SYP: synaptophysin. The numbers of PSD95 /SYP-positive spines are normalized to those of CTL. (B) The fractions of PSD95-bearing and synaptophysin-positive spines in the Rai14-positive or Rai14-negative spine groups (n = 8 neurons). SYP: synaptophysin, Rai14-positive spines: spines containing Rai14-GFP clusters within their neck, Rai14-negative spines: spines without Rai14-GFP within their neck. The numbers of PSD95 /SYP-positive spines are normalized to those of CTL. Data are plotted as mean ± SEM. *p < 0.05, **p < 0.01, and ***p < 0.001 from student’s t-test.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/77755/elife-77755-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–B) Open-field test. Performance was assessed by comparing 10- to 12-week-old male WT and Rai14+/- mice (n = 18 mice for WT, 20 mice for Rai14+/-). (A) Total travelled distance of WT and Rai14+/- mice in the open field test. (B) The fraction of time spent in periphery in the open field test. (C) Elevated plus maze (EPM) test. The fraction of time spent in closed arms, open arms, and center during EPM test. Performance was assessed by comparing 10- to 12-week-old male WT and Rai14+/- mice (n = 14 for WT, 19 for Rai14+/-). Data are plotted as mean ± SEM. *p < 0.05, **p < 0.01, and ***p < 0.001 from student’s t-test (A), (B), and one-way ANOVA (C).
+
+### Rai14-deficient mice exhibit depressive-like behaviors
 
 To investigate the pathological features relevant to Rai14 depletion, we next performed RNA sequencing-based gene expression profiling on whole brains of Rai14-deficient mice (Rai14+/-) and littermate controls followed by gene set enrichment analysis (GSEA) using curated CGP gene sets (MSigDB) (Figure 5A and B). Among the significant gene sets enriched in Rai14+/- mouse brains, Aston-Major Depressive Disorder_DN (the set of downregulated genes in the temporal cortex samples from patients with major depressive disorder) showed a relatively high NES rank. The distribution of the gene set was significantly enriched in the downregulated genes of Rai14+/- group, and indeed, 17 genes out of 18 significant DEGs that are included in the Aston-Major Depressive Disorder DN gene set were downregulated in Rai14+/- mouse brain (Figure 5C and D, Figure 5—figure supplement 1).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/77755/elife-77755-fig5-v2.jpg)
+
+**Figure 5.:** (A–D) RNA sequencing and gene set enrichment analysis (GSEA) on whole brains of 9-week-old Rai14+/- and littermate controls. (A) Heat map of the one-way hierarchical clustering for gene expression value (log2 based normalized). 273 genes showing |fold change| ≥ 2 and raw p-value < 0.05. Green: higher expression, magenta: lower expression, F: female, M: male (n = 4 mice, 2 females + 2 males). (B) GSEA results using curated chemical and genetic perturbations (CGP) gene set collection from MSigDB. Significant gene sets (nominal p-value < 0.05) negatively enriched in Rai14+/- mouse brains are listed in the order of normalized enrichment score (NES), and gene sets associated with the nervous system are indicated with red color. *p < 0.05, **p < 0.01, and ***p < 0.001. (C) The enrichment plot of the genes in the gene set ‘Aston_Major depressive disorder_DN’ generated from GSEA (Mootha et al., 2003; Subramanian et al., 2005). Upper: Profile of running enrichment score. Lower: Positions of the gene set members on the ranked ordered list. Green line: enrichment profile, black line: hits of gene set members, red zone: upregulated in Rai14+/- brain, blue zone: downregulated in Rai14+/- brain. (D) Heat map representation of transcripts included both in the ‘ASTON-Major depressive disorder_DN’ gene set and significant DEGs in Rai14+/- mouse brains. Green: higher expression, magenta: lower expression, F: female, M: male. (E) Sucrose preference test. Ten- to 12-week-old male WT and Rai14+/- mice were individually housed and given a free choice between 2% sucrose solution and plain water (n = 16 for WT, 17 for Rai14+/-). (F) Porsolt’s forced swim test. Performance was assessed by comparing 10- to 12week old male WT and Rai14+/- mice (n = 10 for WT, 12 for Rai14+/-). The fractions of immobile time are shown. (G) Porsolt’s forced swim test upon anti-depressant administration. Fluoxetine (FLX, 10 mg/ kg) or saline were treated for 15 days ahead of the test (n = 9 for WT-saline, 7 for Rai14+/--saline, and 8 for Rai14+/--FLX) (H) Effects of fluoxetine (FLX) on dendritic spine density. FLX (10 mg/ kg) or saline was treated for 15 days ahead of the sampling. Representative images of Golgi-stained dendrites of cortical layer II/ III pyramidal neurons (left) and quantitative analysis of the dendritic spine density (right) are shown (n = 4 for each group, 8–12 neurons for each mouse were analyzed). (I–K) Effects of chronic restraint stress (CRS) and fluoxetine treatment (FLX). For CRS, C57BL/6 mice received two-hour of daily restraint stress procedures for 15 days. CRS + FLX group was administered CRS while receiving i.p. injections of 10 mg/ kg of FLX 10 min before each CRS session. (I) Effects of CRS and FLX on body weight gain (n = 6 for CTL, 7 for CRS, and 7 for CRS + FLX). (J) Relative Rai14 mRNA level in the prefrontal cortex of the mice prepared in (I). (K) Relative Rai14 protein level in the prefrontal cortex of the mice prepared in (I). Representative western blot image (left) and densitometric analysis of Rai14 band intensity normalized to α-tubulin (right). Error bars indicate the mean ± SEM. *p < 0.05, **p < 0.01, and ***p < 0.001 determined by student’s t-test for (E) and (F), one-way ANOVA with Bonferroni’s multiple comparison test for (G), (H), (J), and (K), and two-way ANOVA for (I). See also Figure 5—figure supplement 1, and Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77755/elife-77755-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** FPKM values of individual genes in (Figure 5D). Data are plotted as mean ± SEM. p-Values were obtained from RNA sequencing analysis. FPKM: Fragments Per Kilobase of exon per Million.
 
 As the gene expression analysis hints at the potential link between Rai14 deficiency and depressive disorder, Rai14+/- mice were tested in depression-like behavioral paradigms. Indeed, Rai14+/- mice showed a reduced preference for sucrose solution, an anhedonic behavior (Figure 5E). They also exhibited longer immobile periods in the Porsolt’s forced swim test, indicative of behavioral despair (Figure 5F), which was reversed by fluoxetine, an antidepressant, administration (Figure 5G). In addition, chronic fluoxetine treatment rescued loss of dendritic spines in Rai14+/- mouse brain (Figure 5H).
 
@@ -77,17 +129,17 @@ Here, we identified the function of Rai14 in the development of dendritic spines
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/77755/elife-77755-fig6-v2.jpg)
 
-## Stabilization of Rai14 by Tara
+### Stabilization of Rai14 by Tara
 
 According to the data, Tara acts as a stabilizing factor for Rai14 in the Rai14-Tara complex. The Rai14 full-length protein displayed very low stability that was significantly reversed by its physical interaction with Tara. The interaction of Tara at Rai14 amino acid residues 948–967 or deletion of this region appeared to be sufficient to confer stabilization of Rai14. This type of regulatory mode is not uncommon. For example, intrinsically disordered proteins such as neuroligin 3 and tumor protein p53 are highly susceptible to 20 S proteasomal degradation; however, their specialized binding partners, S-SCAM (MAGI2) or PSD95, and MDM4, respectively, protect them from degradation (Tsvetkov et al., 2008; Tsvetkov et al., 2009). The binding of NQO1 to p53, tumor protein p73, or the ODC1 monomer also protects them from proteasomal digestion (Tsvetkov et al., 2010). Hsp90 shows a similar protective effect on CHEK1 (Oh et al., 2017). In these cases, a potential accession motif for degradation machinery resides in the interaction interface, and the interaction seems to shield the motif by interfering degradation process effectively. Indeed, favorable cleavage sites for PCSK (Kumar et al., 2020) and cathepsins (Li et al., 2020) were predicted in the region covering Rai14 amino acid residues 948–967. Moreover, large-scale protein-protein interaction studies suggested that Rai14 has interaction partners functioning in the proteasomal ubiquitination-dependent process; namely, PSMC3, UBE2V2, RBX1, LRSAM1 (Huttlin et al., 2017; Schweppe et al., 2018), and COP1 (Szklarczyk et al., 2019). Therefore, in addition to the regulation of Rai14 expression at the transcription level (Fang et al., 2013; Gokce et al., 2009; Kutty et al., 2001), a Tara-mediated post-translational regulatory mechanism for Rai14 protein expression appears to contribute to the developmental processes of the dendritic spine in the brain.
 
-## Localization of Rai14 at the spine neck
+### Localization of Rai14 at the spine neck
 
 When Tara stabilizes Rai14 in neurons, the selective accumulation of Rai14 cluster at the neck of a sub-population of dendritic spines becomes more prominent. The Rai14ΔANK mutant loses this unique localization and just clusters at the dendritic shaft proximal to the base of dendritic spines. Because ankyrin repeats are often provided as an interface for membrane binding and protein-protein interaction (Bennett and Baines, 2001; Wolf et al., 2019), Rai14 is likely localized at the dendritic spine neck via its ankyrin repeats by binding to membrane proteins or other actin regulatory proteins within the spine neck. Furthermore, since self-assembly is one of the requirements for membrane-shaping proteins to enhance membrane curvature (Qualmann et al., 2011), stabilization of Rai14 by Tara co-expression or by deletion of degradation-related motifs may enhance the local Rai14 concentration required for self-assembly for larger arrays locally around the neck of the spines.
 
 A few other proteins, including βIII-spectrin (SPTBN2) (Efimova et al., 2017), ankyrin-G (Smith et al., 2014), synaptopodin (Deller et al., 2000), septin 7 (Ewers et al., 2014), and DARPP-32 (PPP1R1B) (Blom et al., 2013), have been reported to localize to the spine neck. Including Rai14, these proteins share a common characteristic: actin binding and regulation of actin dynamics. Unlike the spine head filled with branched F-actin and a pool of G-actin at dynamic equilibrium (Hotulainen and Hoogenraad, 2010), the spine neck consists of actin in the form of a linear F-actin and periodic F-actin with a ring structure (Bär et al., 2016; Bucher et al., 2020). In particular, this periodic F-actin structure is so stable that it can give mechanical support to the spine neck. The mathematical calculation also supported that deviatoric curvature in the dendritic spine neck helps spine formation and maintenance with little force required (Miermans et al., 2017). That is, periodic F-actin along the spine neck can affect spine stabilization by constricting the spine neck, providing structural support for the spine head as a relatively biochemically and electrically separate compartment from the dendritic shaft (Tonnesen et al., 2014; Yuste et al., 2000). For example, ankyrin-G acts as a diffusional barrier that limits the mobility of GluA1 (GRIA1), thereby promoting AMPA receptor retention within the spine (Smith et al., 2014). βΙΙΙIII-spectrin prevents microtubule invasion into dendritic protrusions within proximal dendrites to avoid the extension of dendritic protrusions into neurites (Fujishima et al., 2020). In this regard, it will be of immediate interest to investigate the potential cooperation of Rai14 and previously known machinery for spine stabilization working at the neck to maintain the functional integrity of dendritic spines.
 
-## Rai14 deficiency and depressive-like behaviors
+### Rai14 deficiency and depressive-like behaviors
 
 Excessive, uncontrollable chronic stress is tightly linked to the expression of depressive behaviors (Kendler et al., 1999). In this line, chronic exposure of animals to highly stressful events is one of the well-characterized methods to establish an animal depression model that resembles clinical depression in humans (Christoffel et al., 2011; Wang et al., 2017). Therefore, it is interesting to see that a significant reduction in Rai14 expression was observed in the prefrontal cortex of mouse stress models such as the chronic restraint stress model and that Rai14-deficient mice mimicked stress-induced depressive-like behaviors, including behavioral despair, anhedonia, and cognitive deficits.
 
@@ -99,11 +151,651 @@ Recent studies suggest that various factors, including inflammatory cytokines, n
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background(M. musculus)</td>
+      <td>IcrTac:ICR</td>
+      <td>IMSR</td>
+      <td>Cat# TAC:icr, RRID:IMSR_TAC:icr</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(M. musculus)</td>
+      <td>C57BL/6NJ</td>
+      <td>IMSR</td>
+      <td>Cat# JAX:005304 RRID:IMSR_JAX:005304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(M. musculus)</td>
+      <td>C57BL/6NJ-Rai14em1(IMPC)J</td>
+      <td>MGI</td>
+      <td>Cat# MGI:5755416</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line(H. sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>Cat# PTA-4488, RRID:CVCL_0045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rai14 (rabbit polyclonal)</td>
+      <td>Proteintech Group</td>
+      <td>Cat# 17507–1-AP, RRID: AB_2175992</td>
+      <td>WB (1:1,000)IP (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tara (rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# PA5-29092, RRID: AB_2546568</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PSD95, clone 7E31B8 (mouse monoclonal)</td>
+      <td>Enzo Life Sciences</td>
+      <td>Cat# ADI-VAM-PS001-E, RRID: AB_2039457</td>
+      <td>ICC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Synaptophysin 1, Rb7.2 (rabbit monoclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat# 101 008, RRID: AB_2864779</td>
+      <td>ICC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F7425, RRID: AB_439687</td>
+      <td>WB (1:2,000)ICC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG, M2 (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F1804, RRID:AB_262044</td>
+      <td>WB (1:2,000)IP (1:1,000)ICC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (rabbit polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-11122, RRID:AB_221569</td>
+      <td>WB (1:3,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP, B-2 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-9996, RRID:AB_627695</td>
+      <td>WB (1:1,000)IP (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-α-tubulin, DM1A (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-32293, RRID:AB_628412</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-α-tubulin, 1E4C11 (mouse monoclonal)</td>
+      <td>Proteintech Group</td>
+      <td>Cat# 66031–1-Ig, RRID:AB_11042766</td>
+      <td>WB (1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-c-Myc, clone 9E10 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat# sc-40, RRID:AB_627268</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit IgG, polyclonal – Isotype Control (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab37415, RRID:AB_2631996</td>
+      <td>IP (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Sheep Anti-Mouse IgG - Horseradish Peroxidase antibody (sheep monoclonal)</td>
+      <td>GE Healthcare</td>
+      <td>Cat# NA931, RRID:AB_772210</td>
+      <td>WB (1:7,500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey Anti-Rabbit IgG, Whole Ab ECL Antibody, HRP Conjugated</td>
+      <td>GE Healthcare</td>
+      <td>Cat# NA934, RRID:AB_772206</td>
+      <td>WB (1:7,500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG (H + L) cross-Adsorbed antibody, Alexa Fluor 488 (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# A-11008, RRID:AB_143165</td>
+      <td>ICC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Rabbit IgG (H + L) Antibody, Alexa Fluor 568 Conjugated (goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-11011, RRID:AB_143157</td>
+      <td>ICC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit IgG, Flamma 648 (goat polyclonal)</td>
+      <td>BioActs</td>
+      <td>Cat# RSA1261</td>
+      <td>ICC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse IgG (H + L) cross-Adsobed Secondary antibody, Alexa Fluor 488 (goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat#A-11001,RRID: AB_2534069</td>
+      <td>ICC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgG (H + L) Antibody, Alexa Fluor 568 Conjugated (goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-11004, RRID:AB_141371</td>
+      <td>ICC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse IgG (H + L) Antibody, Alexa Fluor 647 Conjugated (goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-21235, RRID:AB_141693</td>
+      <td>ICC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-N1</td>
+      <td>Clontech</td>
+      <td>Cat# 6085–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-C3</td>
+      <td>Clontech</td>
+      <td>Cat# 6082–1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFLAG-CMV2</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# E7033</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3.1/myc-His</td>
+      <td>Invitrogen</td>
+      <td>Cat# V80020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDsRed2-N1</td>
+      <td>Clontech</td>
+      <td>Cat# 632,406</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hRai14-EGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from EGFP-hRai14</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-hRai14</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Insertion of hRai14 CDS into pEGFP-C3</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FLAG-hRai14</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Insertion of hRai14 CDS into pFLAG-CMV2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hRai14 Δ401-600-EGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from hRai14-EGFP with fusion-PCR method</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hRai14 Δ601-800-EGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from hRai14-EGFP with fusion-PCR method</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hRai14 Δ801-980-EGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from hRai14-EGFP with fusion-PCR method</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hRai14 Δ801-860-EGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from hRai14-EGFP with fusion-PCR method</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hRai14 Δ861-920-EGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from hRai14-EGFP with fusion-PCR method</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hRai14 Δ921-980-EGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from hRai14-EGFP with fusion-PCR method</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hRai14 Δ921-940-EGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from hRai14-EGFP with fusion-PCR method</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hRai14 Δ941-960-EGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from hRai14-EGFP with fusion-PCR method</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hRai14 Δ961-980-EGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from hRai14-EGFP with fusion-PCR method</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hRai14 Δ948-967-EGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from hRai14-EGFP with fusion-PCR method</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hRai14 ΔANK -EGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from hRai14-EGFP with fusion-PCR method</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-hTara</td>
+      <td>Woo et al., 2019 (PMID:31815665)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FLAG-hTara</td>
+      <td>Woo et al., 2019 (PMID:31815665)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>hTara-Myc</td>
+      <td>Woo et al., 2019 (PMID:31815665)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-hTara 1-160</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from EGFP-hTara</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-hTara 161-499</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from EGFP-hTara</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-hTara 500-593</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from EGFP-hTara</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-hTara 241-330</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from EGFP-hTara</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-hTara Δ161-240</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from EGFP-hTara with fusion-PCR method</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-hTara Δ241-330</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from EGFP-hTara with fusion-PCR method</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-hTara Δ331-412</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from EGFP-hTara with fusion-PCR method</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-hTara Δ413-499</td>
+      <td>Woo et al., 2019 (PMID:31815665)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RFP-N1-LifeAct</td>
+      <td>Woo et al., 2019 (PMID:31815665)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-N1-LifeAct</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Subcloned from RFP-N1-LifeAct</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLL3.7-scrambled shRNA-EGFP</td>
+      <td>Woo et al., 2019 (PMID:31815665)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLL3.7-hTara shRNA-EGFP</td>
+      <td>Woo et al., 2019 (PMID:31815665)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLL3.7-mTara shRNA-EGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Core sequence: GAAGGAGAATGAACTCCAGTA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLL3.7-hRai14 shRNA-EGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Core sequence: TCGGGAAAGGAATCGGTATTT</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLL3.7-mRai14 shRNA-EGFP</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Core sequence: CGAACACTGTGGACGCCTTAA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EndoFree plasmid maxi kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 12,362</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FD Rapid GolgiStainTM Kit</td>
+      <td>FD Neurotechnologies</td>
+      <td>Cat# PK401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MAX Efficiency DH5α Competent Cells</td>
+      <td>Invitrogen</td>
+      <td>Cat# 18258012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ara-C (Cytosine β-D-arabinofuranoside)</td>
+      <td>Sigma-Aldrich</td>
+      <td>C1768</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>B27 supplement</td>
+      <td>Gibco</td>
+      <td>Cat# 17504044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clarity Western ECL Substrate</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 1705061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Complete Protease Inhibitor Cocktail</td>
+      <td>Roche</td>
+      <td>Cat# 11697498001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNase I</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# DN25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>fetal bovine serum (FBS)</td>
+      <td>Gibco</td>
+      <td>Cat# 10082147</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluoxetine hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 1279804</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ketamine hydrochloride</td>
+      <td>Yuhan Corporation</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Laminin</td>
+      <td>Corning</td>
+      <td>Cat# 354,239</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Latrunculin A</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# CAY-10010630–2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000</td>
+      <td>Invitrogen</td>
+      <td>Cat# 11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>penicillin/streptomycin</td>
+      <td>Gibco</td>
+      <td>Cat# 15140122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-D-lysine hydrobromide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P6407</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polyethylenimine</td>
+      <td>Polysciences</td>
+      <td>Cat# 23,966</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNAlaterTM Solution</td>
+      <td>Invitrogen</td>
+      <td>Cat# AM7020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Surgipath FSC22 Clear OCT solution</td>
+      <td>Leica Biosystems</td>
+      <td>Cat# FSC22</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vivamagic</td>
+      <td>Vivagen</td>
+      <td>Cat# VM001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Xylazine</td>
+      <td>Bayer AG</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ (Fiji)</td>
+      <td>Schindelin et al., 2012</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Bitplane</td>
+      <td>RRID:SCR_007370</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Olympus cellSens Software</td>
+      <td>Olympus</td>
+      <td>RRID:SCR_016238</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ECM 830 Square Wave Electroporation System</td>
+      <td>Harvard Apparatus</td>
+      <td>Cat# W3 45–0052</td>
+      <td>Materials and methods – In utero electroporation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Leica VT1000S vibrating blade microtome</td>
+      <td>Leica Microsystems</td>
+      <td>N/A</td>
+      <td>Materials and methods – Golgi-Cox impregnation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Olympus Confocal Laser Scanning Microscope Fluoview FV3000</td>
+      <td>Olympus</td>
+      <td>RRID:SCR_017015</td>
+      <td>Materials and methods – Microscopy, Time-lapse imaging of live neurons</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Pregnant C57BL/6 and ICR mice were purchased from Hyochang Science (Daegu, South Korea) and used for primary hippocampal neuron culture and in utero electroporation, respectively. Rai14 knockout heterozygous mice (C57BL/6NJ-Rai14em1J/J) were obtained from the Jackson Laboratory (Bar Harbor, ME). The animals were group-housed under diurnal light conditions (12 hr light, 12 hr dark cycle) and had free access to food and water. (temperature 22°C ± 2°C, humidity 50% ± 5%). Male Rai14+/- mice and wild-type littermates were kept for 10–12 weeks and subjected to behavioral analysis and brain preparation. Pregnant female Rai14+/- mice were sacrificed for primary neuron culture. All animal procedures were approved by the Institutional Animal Care and Use Committee (IACUC) of Pohang University of Science and Technology (POSTECH-2017–0037, POSTECH-2019–0025, POSTECH-2020–0008, and POSTECH-2020–0018). All experiments were carried out under the approved guidelines.
 
-## Cell/ Neuron culture and transfection
+### Cell/ Neuron culture and transfection
 
 HEK293 cells were cultured in DMEM (HyClone, South Logan, UT, USA) supplemented with 10% (v/v) fetal bovine serum (FBS) (Gibco, Gaithersburg, MD, USA) and 1% penicillin/streptomycin (Gibco) under 5% CO2 at 37 °C. The cell line was authenticated using STR profiling method and tested negative for mycoplasma contamination. Cells were transfected by using either VivaMagic (Vivagen), Polyethylenimine (PEI, Polysciences, Inc, 1 mg/mL, pH 7.0), or Lipofectamine 2000 (Thermo Fisher Scientific) according to the manufacturer’s instructions.
 
@@ -113,35 +805,35 @@ For primary cultures of Rai14-/- hippocampal/ cortical neurons, male Rai14+/- an
 
 The neurons were transfected at days in vitro (DIV) 15–17 with Lipofectamine 2000, and the medium was replaced with the culture medium 4 hr after transfection.
 
-## Antibodies and plasmids
+### Antibodies and plasmids
 
 Anti-Rai14 rabbit polyclonal antibody (Cat# 17507–1-AP, RRID: AB_2175992) was purchased from Proteintech Group (Rosemont, IL, USA). Anti-Tara rabbit polyclonal antibody (Cat# PA5-29092, RRID: AB_2546568) was purchased from Thermo Fisher Scientific (Waltham, MA, USA). Anti-PSD95 mouse monoclonal antibody (Cat# ADI-VAM-PS001-E, RRID: AB_2039457) was purchased from Enzo Life Sciences (Farmingdale, NY, USA). Anti-Synaptophysin 1 rabbit monoclonal antibody (Cat# 101 008, RRID: AB_2864779) was purchased from Synaptic Systems (Goettingen, Germany). Anti-FLAG rabbit polyclonal and mouse monoclonal (Cat# F7425, RRID: AB_439687 and Cat# F1804, RRID: AB_262044, respectively, Sigma-Aldrich, St. Louis, MO, USA), anti-GFP rabbit polyclonal (Cat# A-11122, RRID: AB_221569, Molecular Probes, Eugene, OR, USA), anti-GFP mouse monoclonal (Cat# sc-9996, RRID: AB_627695, Santa Cruz Biotechnology, Santa Cruz, CA, USA), anti-α-tubulin mouse monoclonal (Cat# sc-32293, RRID: AB_628412, Santa Cruz Biotechnology, and Cat# 66031–1-Ig, RRID: AB_11042766, Proteintech Group), and anti-c-Myc mouse monoclonal (Cat# sc-40, RRID: AB_627268, Santa Cruz Biotechnology) were used for immunoblotting, immunoprecipitation, and immunostaining experiments. As a negative control for immunoprecipitation, normal rabbit IgG (Cat# ab37415, RRID: AB_2631996, Abcam, Cambridge, UK) was used. For immunoblotting, HRP-conjugated sheep anti-mouse IgG (Cat# NA931, RRID: AB_772210, GE Healthcare, Buckinghamshire, UK) and donkey anti-rabbit IgG (Cat# NA934, RRID: AB_772206, GE Healthcare) were used as secondary antibodies. For immunostaining, Alexa Fluor 488, Alexa Fluor 568, or Flamma 648 conjugated goat anti-rabbit IgG (Cat# A-11008, RRID: AB_143165 and Cat# A-11011, RRID: AB_143157, Molecular Probes and Cat# RSA1261, BioActs, Incheon, South Korea) and Alexa Fluor 488 or 568 conjugated goat anti-mouse antibodies (Cat# A-11004, RRID: AB_141371 and Cat# A-21235, RRID: AB_141693, Molecular Probes) were used as secondary antibodies.
 
 All constructs for human Rai14 were prepared by cloning hRai14 (Retinoic acid-induced protein 14) canonical isoform into pEGFP-N1, pEGFP-C3 (Clontech, Mountain View, CA, USA), and pFLAG-CMV2 (Sigma-Aldrich). To construct the deletion mutant of Rai14, regions of human Rai14 corresponding to the designated codon were amplified by PCR using Rai14-GFP plasmid as a template and cloned into pEGFP-N1 and pEGFP-C3. Constructs for human Tara were prepared by cloning full-length TRIOBP1 (Trio and F-actin binding protein1) isoform into pEGFP-C3 (Clontech, Mountain View, CA, USA), pFLAG-CMV2 (Sigma-Aldrich), and pcDNA3.1/myc-His (Invitrogen). Constructs for hTara mutants were prepared by cloning them into pEGFP-C3. Constructs for LifeAct were prepared by cloning into pEGFP-N1 and dsRed-N1. Tara and scrambled shRNA constructs were designed by cloning 19–21 nt of core sequences combined with TTCAAGAGA as the loop sequence into pLentiLox3.7 vector as described previously (Woo et al., 2019). Core sequences of human Tara shRNA and control scrambled shRNA were GCTGACAGATTCAAGTCTCAA and CTACCGTTGTATAGGTG, respectively. All Rai14 shRNA constructs were designed by cloning 21 nt of core sequences combined with TCTCTTGAA as the loop sequence into pLentiLox3.7 vector. The core sequence of human Rai14 shRNA and mouse Rai14 shRNA were TCG GGA AAG GAA TCG GTA TTT and CGA ACA CTG TGG ACG CCT TAA, respectively.
 
-## Mouse lethality analysis
+### Mouse lethality analysis
 
 For lethality analysis, embryos from timed breeding of Rai14+/- mice were isolated at E17.5–E18 embryonic developmental stages and genotyped by PCR from arms, legs, and tail snips. For lethality after birth, pups from the timed mating of Rai14+/- mice were separated from their dams at P21–P28 and genotyped by PCR from tail snips.
 
-## Golgi-Cox impregnation
+### Golgi-Cox impregnation
 
 Golgi-Cox impregnation was performed using an FD Rapid GolgiStain Kit (FD Neurotechnologies, Inc) according to the manufacturer’s instructions. Briefly, adult Rai14+/- mice and their wild-type littermates were anesthetized with an intraperitoneal (i.p.) injection of ketamine (75 mg/kg) (Yuhan Corporation, Seoul, South Korea) and xylazine (11.65 mg/kg) (Bayer AG, Leverkusen, Germany) in PBS, and euthanized for brain isolation. Isolated brains were rinsed quickly with DW to remove blood from the surface and immersed in the impregnation solution for 14 days. Then brains were moved into solution C, and 7 days later, coronal sections in the 100 μm thickness were prepared using Leica VT1000S vibrating blade microtome (Leica Microsystems GmbH, Wetzlar, Germany). Each section was mounted on Superfrost Plus microscope slides (Fisher Scientific, Pittsburgh, PA, USA) with solution C. Excess solution was removed with pipette and filter paper. For staining, sections were rinsed with DW and then incubated with a mixture of solution D, E, and DW for 10 min. After rinsing with DW, sections were dehydrated with 50%, 75%, 95 %, and 100% ethanol. Coverslips were cleared in xylene and mounted on the section with Permount.
 
 Images were acquired by using the FV3000 confocal laser scanning microscope (Olympus, Tokyo, Japan) and processed by using ImageJ (Fiji) software (RRID: SCR_002285, National Institute of Health, Bethesda, MD, USA).
 
-## In utero electroporation
+### In utero electroporation
 
 Pregnant ICR mice at E16 were anesthetized with an i.p. injection of ketamine (75 mg/ kg) (Yuhan Corporation, Seoul, South Korea) and xylazine (11.65 mg/kg) (Bayer AG, Leverkusen, Germany) in PBS. Rai14 shRNA or scrambled shRNA sequence in pLL3.7-EGFP vectors were purified by using EndoFree plasmid maxi kit (Qiagen, Germantown, MD, USA). Each DNA solution (2.0 μg/μL) mixed with Fast Green solution (0.001%) was injected into the lateral ventricles of the embryo through pulled microcapillary tube (Drummond Scientific, Broomall, PA, USA). Tweezer-type electrode containing two disc-type electrodes was located with appropriate angle and electric pulses were given as 35 V, 50ms, five times with 950ms intervals using an electroporator (Harvard Apparatus, Holliston, MA, USA). After electroporation, embryos were put back into their dam’s abdomen, the incision was sutured, and the mice were turned back to their home cage.
 
 The mice were sacrificed for brain isolation at P14. Isolated brains were fixed with 4% paraformaldehyde and 10% sucrose in PBS for 24 hr, dehydrated with 10%, 20%, and 30% sucrose in PBS for more than 24 hr/session, soaked and frozen in Surgipath FSC22 Clear OCT solution (Leica Biosystems, Richmond, IL, USA). Brain tissue was sectioned by cryostats (Leica Biosystems) with 100 μm thickness, and each section was immediately bound to Superfrost Plus microscope slides (Fisher Scientific, Pittsburgh, PA, USA).
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Primary cultured cortical/ hippocampal neurons at DIV 17–20 were fixed with 4% paraformaldehyde and 4% sucrose in PBS for 15 min, permeabilized with 0.2% TritonX-100 in PBS for 3 min, and incubated in the blocking solution (3% BSA in PBS) for 30 min at RT. Cells were incubated with primary antibodies diluted in the blocking solution for 1.5 hr at RT or overnight at 4 °C, rinsed with PBS three times, and incubated with Alexa Fluor-conjugated secondary antibodies (Molecular Probe) diluted in the blocking solution for 1 hr at RT. Coverslips were rinsed with PBS three times and mounted in the antifade medium.
 
 For sequential immunostaining, cells were incubated with the first primary antibody diluted in the blocking solution for 2 hr followed by two rounds of incubation with Alexa Fluor 488-conjugated secondary antibody in the blocking solution for 1 hr each at RT. Cells were rinsed with PBS for more than three times, incubated with the second primary antibody diluted in the blocking solution for 2 hr at RT, and treated with Alexa Fluor 647-conjugated secondary antibody in the blocking solution for 1 hr at RT.
 
-## Microscopy
+### Microscopy
 
 Dendritic spine images from primary cultured cortical or hippocampal pyramidal neurons were acquired using an FV3000 confocal laser scanning microscope (Olympus, Tokyo, Japan), with the UPLSAPO 60XO / 1.35 NA or 100 X / 1.4 NA oil-immersion objective lens and 2 x digital zoom. Images were taken in a 1024 × 1024 format, and laser power did not exceed 2% to avoid fluorescent bleaching. Stack interval of z-section was 0.56 μm for 60 x lens and 0.38 μm for 100 x lens, respectively.
 
@@ -153,7 +845,7 @@ For dendritic spine images from P14 mouse brains, fluorescence images were acqui
 
 For Rai14 localization and synapse analysis, fluorescence images were acquired using FV3000 confocal laser scanning microscope (Olympus, Tokyo, Japan), with the UPLSAPO 100XO / 1.4 NA oil-immersion objective lens in a 1024 × 1024 format, with 0.47 or 0.42 μm z-section stack interval for Rai14 localization analysis or synapse analysis, respectively.
 
-## Image analysis
+### Image analysis
 
 IMARIS 9.21 (Bitplane AG, Andor Technology; Belfast, Northern Ireland) was used to reconstruct z-stacks into 3D models to analyze dendritic spine images from primary cultured neurons. Dendritic spine density and spine morphology were analyzed semi-automatically using IMARIS Filament Tracer module. Small protrusions that extended ≤4 μm from the parent dendrite were considered dendritic spines, and dendritic spines on the nearest secondary dendritic branches from soma were analyzed. For mature spine density analysis, dendritic spines were classified into three standard categories (i.e. mushroom, stubby and thin) based on the morphological characteristics of spine head width, neck width, and spine length (Bian et al., 2015; Zagrebelsky et al., 2005). Mushroom spine: maximum spine head width is greater or equal to 1.5 times of spine neck width (Dh/Dn ≥ 1.5), stubby spine: spine head and neck are approximately of same width, and spine length is not significantly longer than the head diameter (Dh/Dn < 2, L/ Dh <2), and thin spine: maximum spine head width and spine neck width are nearly equal, and spine length is greater or equal to 2 times of maximum spine head width (Dh/Dn < 1.5, L/ Dh ≥ 2). Mature spines include mushroom-type spines and stubby spines. For dendritic spine analysis from Golgi-stained mouse brains, dendritic spine density was analyzed using Image J software (National Institute of Health, Bethesda, MD, USA).
 
@@ -163,17 +855,17 @@ For Rai14 distribution analysis, cellSens software (Olympus) was used to project
 
 For quantification of synapse bearing spines, images underwent deconvolution using advanced constrained iterative (CI) algorithm-based deconvolution program of cellSens software (Olympus). Co-localization of the synaptic marker with dendritic spines was determined in the merged images using ImageJ software. The fraction of synaptic clusters co-localized with dendritic spines relative to entire spines was calculated.
 
-## Time-lapse imaging of live neurons
+### Time-lapse imaging of live neurons
 
 For live imaging on naïve state, primary hippocampal neurons were transfected with Rai14-GFP and FLAG-Tara on DIV13–15 and subjected to time-lapse imaging on DIV15–17. Live neurons were transferred to the imaging chamber (5% CO2, 37 °C). Confocal images were acquired using Olympus FV3000, with the UPLSAPO 20 X / 0.75 NA objective lens in a 1024 × 1024 format with 2.5 x digital zoom. Laser power did not exceed 2% to avoid fluorescence bleaching. The stack interval of z-section was 1.04 μm. Images were taken every 10 min for 3 hr. Spines were monitored to measure fractions of spines grown, shrunk, disappeared, or with no change at 120 min. Rai14-positive spine refers to the spine containing Rai14-GFP within its neck at 0 min, whereas Rai14-negative spine refers to the spine without Rai14-GFP within its neck at 0 min.
 
 For latrunculin A treatment, latrunculin A (LatA, CAY-10010630–2, Cayman Chemical Company) was used at a final concentration of 20 μM. Images were taken every 10 min: 20 min and 10 min before adding LatA, and 10 min – 2 hr 10 min after LatA treatment. For spine survival ratio analysis, each spine density after LatA treatment was normalized to spine density before LatA treatment. The eliminated or newly formed spine ratio was calculated as (the number of disappeared or newly formed spines at 120 min/ total spine at 0 min) x 100, respectively.
 
-## Yeast-two hybrid screening
+### Yeast-two hybrid screening
 
 The human Tara coding sequence was amplified by PCR and cloned into the pPC97 vector (Invitrogen). Host Saccharomyces cerevisiae strain MaV203 cells were co-transformed with pPC97-Tara and human fetal brain cDNA library plasmids cloned in pPC86 (GibcoBRL). A total of 3 × 106 co-transformants was initially screened for growth on synthetic defined media (SD)-Leu-/ Trp-/ Ura-/ His- media containing 20 mM of 3-amino-1,2,4-triazole (3-AT, Sigma-Aldrich). Plasmids were isolated from the potential positive colonies, amplified in Escherichia coli DH5α, and analyzed by DNA sequencing. Colonies on SD-Leu-/ Trp- plates were streaked onto yeast peptone dextrose (YPD) plates, and colony-lifting assays for β-galactosidase expression were carried out. For growth test on the selective media, transformants resuspended in distilled water were dropped onto a dried SD-Leu-/ Trp-/ Ura-/ His- plate containing 20 mM 3-AT and incubated for 3 d at 30 °C.
 
-## Western blotting and immunoprecipitation
+### Western blotting and immunoprecipitation
 
 Transfected HEK293 cells were lysed in 1 X ELB lysis buffer supplemented with 2 mM NaPPi, 10 mM NaF, 2 mM Na3VO4, 1 mM DTT, and protease inhibitor cocktail (Roche). Mouse brain tissues were isolated from anesthetized and perfused mice. Then, they were homogenized, and lysed in 1 X modified RIPA lysis buffer (50 mM Tris [pH7.5], 150 mM NaCl, 1% NP-40, 5 mM EDTA, 1% Triton X-100, 0.5% sodium deoxycholate) supplemented with 2 mM NaPPi, 10 mM NaF, 2 mM Na3VO4, 1 mM DTT, and protease inhibitor cocktail (Roche).
 
@@ -181,11 +873,11 @@ For western blotting, proteins were denatured by mixing lysates with 5 X SDS sam
 
 For co-IP, lysates were incubated with 1 μg of antibody at 4 °C for more than 6 hr with constant rotation. Protein-A agarose beads (Roche) washed three times with lysis buffer were mixed with IPed lysates and incubated at 4 °C for 2 hr or overnight with constant rotation. Beads were collected by centrifugation, washed three times, and mixed with SDS sample buffer for immunoblotting analysis.
 
-## Ex vivo electrophysiology
+### Ex vivo electrophysiology
 
 Three-week-old mice were anesthetized with an i.p. injection of ketamine (70 mg/kg) and xylazine (5 mg/kg) in PBS, and the brains were quickly decapitated after transcardial perfusion and chilled using ice-cold carbogenated slicing solution containing 175 mM sucrose, 20 mM NaCl, 3.5 mM KCl, 1.4 mM NaH2PO4, 26 mM NaHCO3, 11 mM D-(+)-glucose, and 1.3 mM MgCl2 (pH 7.4). Brain slices were prepared in 350 µm thickness with a vibratome (VT1000S, Leica Microsystems GmbH, Germany) and recovered at 32 °C for 30 min in artificial cerebrospinal fluid (aCSF) (119 mM NaCl, 2.5 mM KCl, 2.5 mM CaCl2, 2 mM MgSO4, 1.25 mM NaH2PO4, 26 mM NaHCO3, and 10 mM D-glucose while equilibrated with 95% O2 and 5% CO2; pH 7.3–7.4). During the recording, brain slices were placed in the recording chamber and continuously superfused with aCSF at RT. Hippocampal pyramidal neurons were selected by morphological guidance at the CA1 area. Whole-cell patch recordings in the voltage-clamp mode were controlled with a MultiClamp 700B amplifier (Molecular Devices) and acquired with a Clampex 10.7 (Molecular Devices). Recording electrodes (5–7 MΩ) were filled with a cesium-based internal solution (117 mM CsMeSO4, 20 mM HEPES, 0.4 mM EGTA, 2.8 mM NaCl, 5 mM TEA-Cl, 2.5 mM MgATP, 0.25 mM Na3GTP, and 5 mM QX-314; pH 7.2 and 275–285 mOsm adjusted with CsOH and HEPES, respectively). mEPSCs were recorded at –70 mV holding potential in the presence of 100 μM picrotoxin (Sigma) and 1 μM tetrodotoxin (Tocris). After recording, analyses were performed using Clampfit 10.7 (Molecular Devices). Briefly, spike events were manually selected to construct a template representing spike trace including several parameters, and tested build template whether clearly distinguish between noise and spikes. mEPSCs that matched the template were automatically analyzed, and the average number of events per second and peak amplitudes of events were present as frequency (Hz) and amplitude (pA), respectively.
 
-## Mouse behavior tests
+### Mouse behavior tests
 
 For the Morris water maze test, a large circular pool (80 cm height x 120 cm diameter) with four distinct visual cues on the wall was filled with the water (25–26 °C) to a depth of 30 cm was used as testing apparatus. Skim milk was used to make the water opaque to hide a transparent circular platform (height 28.5 cm, diameter 12 cm) submerged 1.5 cm beneath the water surface. The platform was located at a fixed position, 20 cm from the nearest pool wall throughout pre-training and training procedures. For pre-training with visible platform and training with a hidden platform, mice were given 5 trials (maximum 1 min/ trial) per day. The entry point into the maze was changed every trial to avoid track memorization. At the end of the trial, either when the mouse had found the platform or when 60 s had elapsed, mice were allowed to rest on the platform for 40 s. One day before training with the hidden platform, mice were trained to find a visible platform with a distinct flag for habituation to the testing room and exclusion of mice with visual impairments. Following the pre-training with the visible platform, mice were trained to find the hidden platform for 6 consecutive days. In this phase, a fixed platform was hidden 1 cm below the water surface. After six-day-training with the hidden platform, mice were subjected to a probe test to evaluate memory retention. In this test, platform was removed and mice were allowed to swim for 5 min. Behavior was video recorded using a CCD camera above the pool. The time spent in each quadrant and number of platform crossings were automatically calculated by the video tracking system (SMART v2.5, Panlab).
 
@@ -199,15 +891,15 @@ For the sucrose preference test, mice were singly housed and subjected to the te
 
 The Porsolt’s forced swim test was performed according to a standard procedure. The cylindrical tank (30 cm height x 20 cm diameter) was filled with water (25°C–28 °C) up to a height of 15 cm. Sets of dividers (47 cm height x 23 cm depth) were placed between the tanks to prevent mice from seeing each other during the test. Each mouse was gently placed in the water, and activity was monitored for 6 min by video recording. The tanks were refilled with clean water after each test session. For the analysis, the time that each mice spent mobile during the last four minutes of the test was measured. Mobility was defined as any movements other than those necessary to balance the body and keep the head above the water. Immobile time was calculated as (total 240 s-mobile time). For forced swim test with Rai14+/- mice with fluoxetine treatment, mice were singly housed for 7 days before fluoxetine or saline treatment. Rai14+/--Fluoxetine group received i.p. injection of 10 mg/kg fluoxetine hydrochloride (Sigma Aldrich, USP) in the volume of 10 ml/kg at every 11:30 a.m. for 16 days, whereas WT-Saline and Rai14+/--Saline group received i.p. injection of 0.9% saline in the volume of 10 ml/kg. Three hours after the last injection, the mice were subjected to the forced swim test.
 
-## Chronic restraint stress (CRS) and Fluoxetine treatment
+### Chronic restraint stress (CRS) and Fluoxetine treatment
 
 Seven-week-old male C57BL/6 mice were divided into three groups: control, CRS + Saline, CRS + Fluoxetine, and singly housed for 7 days before CRS treatment. For CRS, mice were placed into a 50 ml polypropylene conical tube (BD Falcon, 352070) with 11 holes for air ventilation. A paper towel was fixed just behind the mouse to prevent further movement in the tube. Restraint stress was introduced to mice for 2 hr per day (11:00–13:00) for 15 days. For the CRS group, mice were administered CRS while receiving i.p. injections of 10 mg/kg Fluoxetine hydrochloride (Sigma Aldrich, USP) or 0.9% saline in the volume of 10 ml/kg before each CRS session. For the control group, mice received i.p. injections of 0.9% saline and were put back to their home cage. Twenty-four hr after the last stress session, the mice were euthanized and the brains were isolated. Hippocampal and prefrontal cortical tissues from the left hemisphere were kept in RNAlater Solution (Invitrogen) and stored at –80 °C for later RNA preparation; ones from the right hemisphere were stored at –80 °C for later protein preparation.
 
-## Quantitative real-time PCR (qRT-PCR)
+### Quantitative real-time PCR (qRT-PCR)
 
 The mouse brains were homogenized in TRI-Solution (Bio Science Technology) to extract total RNA according to manufacturer’s instructions. Total RNA was quantified photometrically, and underwent reverse transcription with ImProm-II Reverse transcriptase (Promega Corporation). Quantitative real-time PCR (qRT-PCR) was performed using FastStart Universal SYBR Green Master (Roche) and the StepOnePlus thermocycler (Applied Biosystems). The relative expression among the groups was calculated using 2-ΔΔCt method. The primer sequences used were mouse Rai14: forward GTGGATGTGACTGCCCAAGA/ reverse TTTCCCCGAGTTGTCAATGT, mouse GAPDH: forward CACTGAAGGGCATCTTGG/ reverse TTACTCCTTGGAGGCCATG.
 
-## RNA-sequencing and bioinformatics analysis
+### RNA-sequencing and bioinformatics analysis
 
 The brains from two 9-week-old male Rai14+/- mice and two male wild-type littermate controls and two 9-week-old female Rai14+/- mice and two female wild-type littermate controls were used for RNA-sequencing. The mice were deeply anesthetized with isoflurane inhalation and transcardially perfused with PBS. Then brains except the cerebellum and pons (left cerebral hemispheres) were isolated and kept in RNAlater Solution (Invitrogen) with dry ice and subjected for further RNA-Seq library construction and transcriptome sequencing.
 
@@ -215,6 +907,6 @@ RNA-Seq library construction, transcriptome sequencing, and expression profiling
 
 GSEA (v4.1.0, Broad Institute)(Mootha et al., 2003; Subramanian et al., 2005) was performed using the entire ranked list of the expression data set determined from RNA sequencing on whole brains of wild-type and Rai14+/- mice. Gene sets were obtained from curated chemical and genetic perturbations (CGP) gene set collection from from MSigDB (Liberzon et al., 2015; Liberzon et al., 2011; Subramanian et al., 2005). GSEA calculated whether genes within a gene set are randomly distributed, enriched at the top or bottom of the ranked list. Significant gene sets from curated CGP gene sets were determined using the nominal p-values. Normalized enrichment scores and p-values were measured to find enrichments with statistical significance (p < 0.05).
 
-## Statistical analysis
+### Statistical analysis
 
 All graphs were presented as the mean ± SEM. All statistical analyses were performed using GraphPad Prism 5.0 software. Statistical significance of the data was analyzed by two-tailed Student’s t-test for comparisons between two groups and one-way or two-way ANOVA followed by Bonferroni’s post-hoc test for comparisons among multiple groups.

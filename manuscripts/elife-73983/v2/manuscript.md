@@ -12,18 +12,18 @@
 
 ### Affiliations
 
-1. https://ror.org/03vek6s52 Department of Organismic and Evolutionary Biology, Harvard University Cambridge United States
-2. https://ror.org/03vek6s52 NSF-Simons Center for Mathematical and Statistical Analysis of Biology, Harvard University Cambridge United States
-3. https://ror.org/03vek6s52 Quantitative Biology Initiative, Harvard University Cambridge United States
-4. https://ror.org/042nb2s44 Department of Physics, Massachusetts Institute of Technology Cambridge United States
-5. https://ror.org/03vek6s52 Department of Molecular and Cellular Biology, Harvard University Cambridge United States
-6. https://ror.org/02jzgtq86 Department of Data Science, Dana-Farber Cancer Institute Boston United States
-7. https://ror.org/03vek6s52 Department of Biostatistics, Harvard T.H. Chan School of Public Health Boston United States
-8. https://ror.org/03vek6s52 Department of Stem Cell and Regenerative Biology, Harvard University Cambridge United States
-9. https://ror.org/02jzgtq86 Center for Cancer Evolution, Dana-Farber Cancer Institute Boston United States
-10. https://ror.org/03vek6s52 The Ludwig Center at Harvard Boston United States
-11. https://ror.org/05a0ya142 The Broad Institute of MIT and Harvard Cambridge United States
-12. https://ror.org/03vek6s52 Department of Physics, Harvard University Cambridge United States
+1. Department of Organismic and Evolutionary Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+2. NSF-Simons Center for Mathematical and Statistical Analysis of Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+3. Quantitative Biology Initiative, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+4. Department of Physics, Massachusetts Institute of Technology Cambridge United States ([ROR:042nb2s44](https://ror.org/042nb2s44))
+5. Department of Molecular and Cellular Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+6. Department of Data Science, Dana-Farber Cancer Institute Boston United States ([ROR:02jzgtq86](https://ror.org/02jzgtq86))
+7. Department of Biostatistics, Harvard T.H. Chan School of Public Health Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+8. Department of Stem Cell and Regenerative Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+9. Center for Cancer Evolution, Dana-Farber Cancer Institute Boston United States ([ROR:02jzgtq86](https://ror.org/02jzgtq86))
+10. The Ludwig Center at Harvard Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+11. The Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))
+12. Department of Physics, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 
 † Corresponding author
 
@@ -43,67 +43,367 @@ More recently, numerous studies have worked to advance the power and resolution 
 
 Here, rather than adopting any of these more complex study designs, we sought to increase the power and resolution of QTL mapping in budding yeast simply by dramatically increasing sample size. To do so, we introduce a barcoded bulk QTL (BB-QTL) mapping approach that allows us to construct and measure phenotypes in a panel of 100,000 F1 segregants from a single yeast cross, a sample size almost two orders of magnitude larger than the current state of the art (Figure 1A). We combined several recent technical advances to overcome the challenges of QTL mapping at the scale of 100,000 segregants: (i) unique DNA barcoding of every strain, which allows us to conduct sequencing-based bulk phenotype measurements; (ii) a highly multiplexed sequencing approach that exploits our knowledge of the parental genotypes to accurately infer the genotype of each segregant from low-coverage (<1x) sequence data; (iii) liquid handling robotics and combinatorial pooling to create, array, manipulate, and store this segregant collection in 96/384-well plates; and (iv) a highly conservative cross-validated forward search approach to confidently infer large numbers of small-effect QTL.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig1-v2.jpg)
+
+**Figure 1.:** (A) Construction, genotyping, and phenotyping of segregant panel. Founding strains BY (blue) and RM (red) are transformed with diverse barcode libraries (colored rectangles) and mated in bulk. Cre recombination combines barcodes onto the same chromosome. After meiosis, sporulation, and selection for barcode retention, we sort single haploid cells into 96-well plates. Top: whole- genome sequencing of segregants via multiplexed tagmentation. Middle: barcode-well association by combinatorial pooling. Bottom: bulk phenotyping by pooled competition assays and barcode frequency tracking. See Figure 1—figure supplements 1–3, and Materials and methods for details. (B) Histogram and cumulative distribution function (CDF) of genotyping coverage of our panel (Figure 1—source data 1). (C) Inferred probabilistic genotypes for two representative individuals from low coverage (solid) and high coverage (dashed) sequencing, with the genotyping error (difference between low and high coverage probabilistic genotypes) indicated by shaded blue regions (Figure 1—source data 2). (D) Distribution of genotyping error by SNP for the two individuals shown in (C). (E) Reproducibility of phenotype measurements in 30 C environment (see Figure 1—figure supplement 4 for other environments). Here, fitness values are inferred on data from each individual replicate assay. For all other analyses, we use fitness values jointly inferred across both replicates (see Appendix 2, Figure 1—source data 3).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The first type (A) has configuration pAN3H5a-1/2URA3-KanP1-ccdB-LoxPR, while the second type (B) has configuration pAN3H5a-LoxPL-HygP1-ccdB-2/2URA3. The ccdB gene is later replaced by diverse barcode libraries, as described in the Materials and methods and shown in Figure 1—figure supplement 2.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Generating the barcode plasmid library: (1) Oligonucleotides containing random nucleotides are flanked by BsaI restriction endonuclease sites, converted to dsDNA, and cloned into a recipient plasmid using a Golden Gate reaction. The recipient plasmid contains a ccdB gene, which is toxic to sensitive E. coli strains. (2) Plasmid libraries are transformed into E. coli by electroporation and (3) the cells are recovered in a thin layer of media containing soft agar. (b) Generating sorted F1 segregants: (1) Barcode libraries are transformed into parental strains. (2) Barcoded parental strains are mated and their barcodes recombined by Cre-Lox recombination. (3) Diploid cells are sporulated, and (4) MATa haploid spores are germinated and (5) sorted into single wells.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The dashed line indicates 50% frequency. Marker loci used in the cross are indicated with arrows: the mating locus MAT on chromosome III and CAN1::pSTE2-SpHIS5 on chromosome V are selected for the BY allele, and the barcode locus HO on chromosome IV is selected for the Cre-induced recombination of two barcodes (the first from the RM parent and the second from the BY parent).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig1-figsupp4-v2.jpg)
+
 Using this BB-QTL approach, we mapped the genetic basis of 18 complex phenotypes. Despite the fact that earlier lower-powered QTL mapping studies in yeast have successfully explained most or all of the heritability of similar phenotypes with models involving only a handful of loci, we find that the increased power of our approach reveals that these traits are in fact highly polygenic, with more than a hundred causal loci contributing to almost every phenotype. We also exploit our increased power to investigate widespread patterns of pleiotropy across the eighteen phenotypes, and to analyze the role of epistatic interactions in the genetic architecture of each trait.
 
 ## Results
 
-## Construction of the barcoded segregant panel
+### Construction of the barcoded segregant panel
 
 To generate our segregant collection, we began by mating a laboratory (BY) and vineyard (RM) strain (Figure 1A), which differ at 41,594 single-nucleotide polymorphisms (SNPs) and vary in many relevant phenotypes (Bloom et al., 2013). We labeled each parent strain with diverse DNA barcodes (a random sequence of 16 nucleotides), to create pools of each parent that are isogenic except for this barcode (12 and 23 pools of ∼1000 unique barcodes in the RM and BY parental pools, respectively). Barcodes are integrated at a neutral locus containing Cre-Lox machinery for combining barcodes, similar to the ‘renewable’ barcoding system we introduced in recent work (Nguyen Ba et al., 2019). We then created 276 sets by mating all combinations of parental pools to create heterozygous RM/BY diploids, each of which contains one barcode from each parent. After mating, we induce Cre-Lox recombination to assemble the two barcodes onto the same chromosome, creating a 32-basepair double barcode. After sporulating the diploids and selecting for doubly-barcoded haploid MATa offspring using a mating-type specific promoter and selection markers (Tong et al., 2001), we used single-cell sorting to select ∼100,000 random segregants and to array them into individual wells in 1,104 96-well plates. Because there are over 1 million possible barcodes per set, and only 384 offspring selected per set, this random sorting is highly unlikely to select duplicates, allowing us to produce a strain collection with one uniquely barcoded genotype in each well that can be manipulated with liquid handling robotics. Finally, we identified the barcode associated with each segregant by constructing orthogonal pools (e.g. all segregants in a given 96-well plate, all segregants in row A of any 96-well plate, all segregants from a set, etc.), and sequencing the barcode locus in each pool. This combinatorial pooling scheme allows us to infer the barcode associated with each segregant in each individual well, based on the unique set of pools in which a given barcode appears (Erlich et al., 2009).
 
-## Inferring segregant genotypes
+### Inferring segregant genotypes
 
 We next conducted whole-genome sequencing of every strain using an automated library preparation pipeline that makes use of custom indexed adapters to conduct tagmentation in 384-well plates, after which samples can be pooled for downstream library preparation (Figure 1A). To limit sequencing costs, we infer segregant genotypes from low-coverage sequencing data (median coverage of 0.6 x per segregant; Figure 1B). We can obtain high genotyping accuracy despite such low coverage due to our cross design: because we use an F1 rather than an advanced cross, we have a high density of SNPs relative to recombination breakpoints in each individual (>700 SNPs between recombination breakpoints on average). Exploiting this fact in combination with our knowledge of the parental genotypes, we developed a Hidden Markov Model (HMM) to infer the complete segregant genotypes from this data (see Appendix 1). This HMM is similar in spirit to earlier imputation approaches (Arends et al., 2010; Marchini and Howie, 2010; Bilton et al., 2018); it infers genotypes at unobserved loci (and corrects for sequencing errors and index-swapping artifacts) by assuming that each segregant consists of stretches of RM and BY loci, separated by relatively sparse recombination events. We note that this model produces probabilistic estimates of genotypes (i.e. the posterior probability that segregant genotypes is either RM or BY at each SNP; Figure 1C), which we account for in our analysis below.
 
 We assessed two key aspects of the performance of this sequencing approach: the confidence with which it infers genotypes, and the accuracy of the genotypes assigned. We find that at 0.1 x coverage and above, our HMM approach confidently assigns genotypes at almost all loci (posterior probability of >92% of the inferred genotype at >99% of loci; see Appendix 1—figure 2 and Appendix 1 for a discussion of our validation of these posterior probability estimates). Loci not confidently assigned to either parental genotype largely correspond to SNPs in the immediate vicinity of breakpoints, which cannot be precisely resolved with low-coverage sequencing (we note that these uncertainties do affect mapping resolution, as the precise location of breakpoints is important for this purpose; see Appendix 1-1.4 for an extensive discussion and analysis of this uncertainty). To assess the accuracy of our genotyping, we conducted high-coverage sequencing of a small subset of segregants and compared the results to the inferred genotypes from our low-coverage data. We find that the genotyping is accurate, with detectable error only very near recombination breakpoints (Figure 1C and D). In addition, we find that our posterior probabilities are well calibrated (e.g. 80% of the loci with an RM posterior probability of 0.8 are indeed RM; see Appendix 1). We also note that, as expected, most SNPs are present across our segregant panel at an allele frequency of 0.5 (Figure 1—figure supplement 3), except for a few marker loci that are selected during engineering of the segregants.
 
-## Barcoded bulk phenotype measurements
+### Barcoded bulk phenotype measurements
 
 Earlier QTL mapping studies in budding yeast have typically assayed phenotypes for each segregant in their mapping panels independently, primarily by measuring colony sizes on solid agar plates (Steinmetz et al., 2002; Bloom et al., 2013; Bloom et al., 2015; She and Jarosz, 2018; Bloom et al., 2019; Jakobson and Jarosz, 2019). These colony size phenotypes can be defined on a variety of different solid media, but while they are relatively high throughput (often conducted in 384-well format), they are not readily scalable to measurements of 100,000 segregants.
 
 Here, we exploit our barcoding system to instead measure phenotypes for all segregants in parallel, in a single bulk pooled assay for each phenotype. The basic idea is straightforward: we combine all segregants into a pool, sequence the barcode locus to measure the relative frequency of each segregant, apply some selection pressure, and then sequence again to measure how relative frequencies change (Smith et al., 2009). These bulk assays are easily scalable and can be applied to any phenotype that can be measured based on changes in relative strain frequencies. Because we only need to sequence the barcode region, we can sequence deeply to obtain high-resolution phenotype measurements at modest cost. In addition, we can correct sequencing errors because the set of true barcodes is known in advance from combinatorial pooling (see above). Importantly, this system allows us to track the frequency changes of each individual in the pool, assigning a phenotype to each specific segregant genotype. This stands in contrast to ‘bulk segregant analysis’ approaches that use whole-genome sequencing of pooled segregant panels to track frequency changes of alleles rather than individual genotypes (Ehrenreich et al., 2010; Michelmore et al., 1991); our approach increases power and allows us to study interaction effects between loci across the genome.
 
-Using this BB-QTL system, we investigate eighteen complex traits, defined as competitive fitness in a variety of liquid growth conditions (‘environments’), including minimal, natural, and rich media with several carbon sources and a range of chemical and temperature stressors (Table 1). To measure these phenotypes, we pool all strains and track barcode frequencies through 49 generations of competition. We use a maximum likelihood model to jointly infer the relative fitness of each segregant in each assay—a value related to the instantaneous exponential rate of change in frequency of a strain during the course of the assay (Figure 1A, lower-right inset; see Appendix 2). These measurements are consistent between replicates (average R2 between replicate assays of 0.77), although we note that the inherent correlation between fitness and barcode read counts means that errors are inversely correlated with fitness (Figure 1E; Figure 1—figure supplement 4). While genetic changes such as de novo mutations and ploidy changes can occur during bulk selection, we estimate their rates to be sufficiently low such that they impact only a small fraction of barcode lineages and thus do not significantly bias the inference of QTL effects over the strain collection (see Appendix 2).
+Using this BB-QTL system, we investigate eighteen complex traits, defined as competitive fitness in a variety of liquid growth conditions (‘environments’), including minimal, natural, and rich media with several carbon sources and a range of chemical and temperature stressors (Table 1). To measure these phenotypes, we pool all strains and track barcode frequencies through 49 generations of competition. We use a maximum likelihood model to jointly infer the relative fitness of each segregant in each assay—a value related to the instantaneous exponential rate of change in frequency of a strain during the course of the assay (Figure 1A, lower-right inset; see Appendix 2). These measurements are consistent between replicates (average $R^{2}$ between replicate assays of 0.77), although we note that the inherent correlation between fitness and barcode read counts means that errors are inversely correlated with fitness (Figure 1E; Figure 1—figure supplement 4). While genetic changes such as de novo mutations and ploidy changes can occur during bulk selection, we estimate their rates to be sufficiently low such that they impact only a small fraction of barcode lineages and thus do not significantly bias the inference of QTL effects over the strain collection (see Appendix 2).
 
-## Modified stepwise cross-validated forward search approach to mapping QTL
+**Table 1.**
+ Phenotyping growth conditions.Summary of the eighteen competitive fitness phenotypes we analyze in this study. All assays were conducted at 30 °C, except when stated otherwise. YP: 1% yeast extract, 2% peptone. YPD: 1% yeast extract, 2% peptone, 2% glucose. SD: synthetic defined medium, 2% glucose. YNB: yeast nitrogen base, 2% glucose. Numbers of inferred additive QTL and epistatic interactions are also shown.
 
-With genotype and phenotype data for each segregant in hand, we next sought to map the locations and effects of QTL. The typical approach to inferring causal loci would be to use a forward stepwise regression (Bloom et al., 2013; Arends et al., 2010). This method proceeds by first computing a statistic such as p-value or LOD score for each SNP independently, to test for a statistical association between that SNP and the phenotype. The most-significant SNP is identified as a causal locus, and its estimated effect size is regressed out of the data. This process is then repeated iteratively to identify additional causal loci. These iterations proceed until no loci are identified with a statistic that exceeds a predetermined significance threshold, which is defined based on a desired level of genome-wide significance (e.g. based on a null expectation from permutation tests or assumptions about the numbers of true causal loci). However, although this approach is fast and simple and can identify large numbers of QTL, it is not conservative. Variables added in a stepwise approach do not follow the claimed F or χ2-distribution, so using p-values or related statistics as a selection criterion is known to produce false positives, especially at large sample sizes or in the presence of strong linkage (Smith, 2018). Because our primary goal is to dissect the extent of polygenicity by resolving small-effect loci and decomposing ‘composite’ QTL, these false positives are particularly problematic and we therefore cannot use this traditional approach.
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Additive QTL</th>
+      <th>Epistatic QTL</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>23 C</td>
+      <td>YPD, 23 °C</td>
+      <td>112</td>
+      <td>185</td>
+    </tr>
+    <tr>
+      <td>25 C</td>
+      <td>YPD, 25 °C</td>
+      <td>134</td>
+      <td>189</td>
+    </tr>
+    <tr>
+      <td>27 C</td>
+      <td>YPD, 27 °C</td>
+      <td>149</td>
+      <td>255</td>
+    </tr>
+    <tr>
+      <td>30 C</td>
+      <td>YPD, 30 °C</td>
+      <td>159</td>
+      <td>247</td>
+    </tr>
+    <tr>
+      <td>33 C</td>
+      <td>YPD, 33 °C</td>
+      <td>147</td>
+      <td>216</td>
+    </tr>
+    <tr>
+      <td>35 C</td>
+      <td>YPD, 35 °C</td>
+      <td>117</td>
+      <td>250</td>
+    </tr>
+    <tr>
+      <td>37 C</td>
+      <td>YPD, 37 °C</td>
+      <td>128</td>
+      <td>265</td>
+    </tr>
+    <tr>
+      <td>sds</td>
+      <td>YPD, 0.005% (w/v) SDS</td>
+      <td>175</td>
+      <td>263</td>
+    </tr>
+    <tr>
+      <td>raff</td>
+      <td>YP, 2% (w/v) raffinose</td>
+      <td>167</td>
+      <td>221</td>
+    </tr>
+    <tr>
+      <td>mann</td>
+      <td>YP, 2% (w/v) mannose</td>
+      <td>169</td>
+      <td>341</td>
+    </tr>
+    <tr>
+      <td>cu</td>
+      <td>YPD, 1 mM copper(II) sulfate</td>
+      <td>143</td>
+      <td>225</td>
+    </tr>
+    <tr>
+      <td>eth</td>
+      <td>YPD, 5% (v/v) ethanol</td>
+      <td>149</td>
+      <td>247</td>
+    </tr>
+    <tr>
+      <td>suloc</td>
+      <td>YPD, 50 µM suloctidil</td>
+      <td>173</td>
+      <td>314</td>
+    </tr>
+    <tr>
+      <td>4NQO</td>
+      <td>SD, 0.05 µg/ml 4-nitroquinoline 1-oxide</td>
+      <td>153</td>
+      <td>394</td>
+    </tr>
+    <tr>
+      <td>ynb</td>
+      <td>YNB, w/o AAs, w/ ammonium sulfate</td>
+      <td>145</td>
+      <td>303</td>
+    </tr>
+    <tr>
+      <td>mol</td>
+      <td>molasses, diluted to 20% (w/v) sugars</td>
+      <td>111</td>
+      <td>235</td>
+    </tr>
+    <tr>
+      <td>gu</td>
+      <td>YPD, 6 mM guanidinium chloride</td>
+      <td>185</td>
+      <td>277</td>
+    </tr>
+    <tr>
+      <td>li</td>
+      <td>YPD, 20 mM lithium acetate</td>
+      <td>83</td>
+      <td>42</td>
+    </tr>
+  </tbody>
+</table>
+
+### Modified stepwise cross-validated forward search approach to mapping QTL
+
+With genotype and phenotype data for each segregant in hand, we next sought to map the locations and effects of QTL. The typical approach to inferring causal loci would be to use a forward stepwise regression (Bloom et al., 2013; Arends et al., 2010). This method proceeds by first computing a statistic such as $p$-value or LOD score for each SNP independently, to test for a statistical association between that SNP and the phenotype. The most-significant SNP is identified as a causal locus, and its estimated effect size is regressed out of the data. This process is then repeated iteratively to identify additional causal loci. These iterations proceed until no loci are identified with a statistic that exceeds a predetermined significance threshold, which is defined based on a desired level of genome-wide significance (e.g. based on a null expectation from permutation tests or assumptions about the numbers of true causal loci). However, although this approach is fast and simple and can identify large numbers of QTL, it is not conservative. Variables added in a stepwise approach do not follow the claimed $F$ or $χ^{2}$-distribution, so using p-values or related statistics as a selection criterion is known to produce false positives, especially at large sample sizes or in the presence of strong linkage (Smith, 2018). Because our primary goal is to dissect the extent of polygenicity by resolving small-effect loci and decomposing ‘composite’ QTL, these false positives are particularly problematic and we therefore cannot use this traditional approach.
 
 Fortunately, due to the high statistical power of our study design, we are better positioned to address the question of polygenicity using a more conservative method with lower false discovery rate. To do so, we carried out QTL mapping through a modified stepwise regression approach, with three key differences compared to previous methods (see Appendix 3 for details). First, we use cross-validation rather than statistical significance to terminate the model search procedure, which reduces the false positive rate. Specifically, we divide the data into training and test sets (90% and 10% of segregants respectively, chosen randomly), and add QTL iteratively in a forward stepwise regression on the training set. We terminate this process when performance on the test set declines, and use this point to define an L0-norm sparsity penalty on the number of QTL. We repeat this process for all possible divisions of the data to identify the average sparsity penalty, and then use this sparsity penalty to infer our final model from all the data (in addition, an outer loop involving a validation set is also used to assess the performance of our final model). The second key difference in our method is that we jointly re-optimize inferred effect sizes (i.e. estimated effect on fitness of having the RM versus the BY version of a QTL) and lead SNP positions (i.e. our best estimate of the actual causal SNP for each QTL) at each step. This further reduces the bias introduced by the greedy forward search procedure. Finally, the third key difference in our approach is to estimate the 95% credible interval around each lead SNP using a Bayesian method rather than LOD-drop methods, which is more suitable in polygenic architectures. We describe and validate this modified stepwise regression approach in detail in Appendix 3. Simulations under various QTL architectures show that this approach has a low false positive rate, accurately identifies lead SNPs and credible intervals even with moderate linkage, and generally calls fewer QTL than in the true model, only missing QTL of extremely small effect sizes. The behavior of this approach is simple and intuitive: the algorithm greedily adds QTL to the model if their expected contribution to the total phenotypic variance exceeds the bias and increasing variance of the forward search procedure, which is greatly reduced at large sample size. Thus, it may fail to identify very small effect size variants and may fail to break up composite QTL in extremely strong linkage.
 
-## Resolving the highly polygenic architecture of complex phenotypes in yeast
+### Resolving the highly polygenic architecture of complex phenotypes in yeast
 
-We used our modified stepwise cross-validated forward search to infer the genetic basis of the 18 phenotypes described in Table 1, assuming an additive model. We find that these phenotypes are highly polygenic: we identify well over 100 QTL spread throughout the genome for almost every trait, an order of magnitude more than that found for similar phenotypes in most earlier studies (∼0.3% of SNPs in our panel; Figures 2 and 3B). This increase can be directly attributed to our large sample size: inference on a downsampled dataset of 1000 individuals detects no more than 30 QTL for any trait (see Appendix 3).
+We used our modified stepwise cross-validated forward search to infer the genetic basis of the 18 phenotypes described in Table 1, assuming an additive model. We find that these phenotypes are highly polygenic: we identify well over 100 QTL spread throughout the genome for almost every trait, an order of magnitude more than that found for similar phenotypes in most earlier studies ($∼0.3%$ of SNPs in our panel; Figures 2 and 3B). This increase can be directly attributed to our large sample size: inference on a downsampled dataset of 1000 individuals detects no more than 30 QTL for any trait (see Appendix 3).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig2-v2.jpg)
+
+**Figure 2.:** QTL mapping for (A) YPD at 30 °C and (B) SD with 4-nitroquinoline (4NQO). Inferred QTL are shown as red bars; bar height shows effect size and red shaded regions represent credible intervals. For contrast, effect sizes inferred by a Student’s t-test at each locus are shown in blue. Gray bars at top indicate loci with log-odds (LOD) scores surpassing genome-wide significance in this t-test, with shading level corresponding to log-LOD score. See Figure 2—figure supplements 1–4 for other environments. See Supplementary file 2 for all inferred additive QTL models.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig2-figsupp1-v2.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig2-figsupp2-v2.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig2-figsupp3-v2.jpg)
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig2-figsupp4-v2.jpg)
+
+![Figure 3.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig3-v2.jpg)
+
+**Figure 3.:** (A) Pairwise Pearson correlations between phenotype measurements, ordered by hierarchical clustering (Figure 3—source data 1). (B) Inferred genetic architecture for each trait. Each inferred QTL is denoted by a red or blue line for a positive or negative effect of the RM allele, respectively; color intensity denotes effect size on a log scale. Notable genes are indicated above. See Figure 3—figure supplement 1 for effect size comparison of the most pleiotropic genes. (C) Smoothed distribution of absolute effect sizes for each trait, normalized by the median effect for each trait. See Figure 3—figure supplement 2 for a breakdown of the distributions by QTL effect sign. (D) Distribution of the number of genes within the 95% credible interval for each QTL (Figure 3—source data 2). (E) Distribution of SNP types. “High posterior” lead SNPs are those with >50% posterior probability. (F) Fractions of synonymous SNPs, nonsynonymous SNPs, and QTL lead SNPs as a function of their frequency in the 1011 Yeast Genomes panel (Figure 3—source data 3). (G) Pairwise model similarity scores (which quantify differences in QTL positions and effect sizes between traits; see Appendix 3) across traits. (H) Pairwise model similarity scores for each temperature trait against all other temperature traits (Figure 3—source data 4). See Figure 3—figure supplement 3 for effect size comparisons between related environments. (I) Cumulative distribution functions (CDFs) of differences in effect size for each locus between each pair of traits (orange). Grey traces represent null expectations (differences between cross-validation sets for the same trait). The least and most similar trait pairs are highlighted in red and purple, respectively, and indicated in the legend.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** For QTL that are observed in nine or more environments, we plot effect sizes for uncorrelated traits (4NQO, YNB, suloc, gu, li, mol; black dots) and for correlated traits (all others; colored dots). Effect sizes with magnitudes larger than 2.5% are shown on the boundaries.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Fraction of inferred QTL with a positive effect sign. (B) Effect size magnitude of both positive and negative inferred QTL.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Scatterplots of QTL effects for QTL matched by pairwise model comparison. Left, 30 C vs Li; right, 30 C vs 27 C. Regression slopes and $R^{2}$ values are indicated. (B) Scatterplots of effect size changes for pleiotropic genes detected along a temperature gradient. Left, 30C–27C vs 27C–25C changes; right, 27C–25C vs 25C–23C changes.
 
 The distribution of effect sizes of detected QTL shows a large enrichment of small-effect loci, and has similar shape (though different scale) across all phenotypes (Figure 3C), consistent with an exponential-like distribution above the limit of detection. This distribution suggests that further increases in sample size would reveal a further enrichment of even smaller-effect loci. While our SNP density is high relative to the recombination rate, our sample size is large enough that there are many individuals with a recombination breakpoint between any pair of neighboring SNPs (over 100 such individuals with breakpoints between each SNP on average). This allows us to precisely fine-map many of these QTL to causal genes or even nucleotides. We find that most QTL with substantial effect sizes are mapped to one or two genes, with dozens mapped to single SNPs (Figure 3D). In many cases these genes and precise causal nucleotides are consistent with previous mapping studies (e.g. MKT1, Deutschbauer and Davis, 2005; PHO84, Perlstein et al., 2007; HAP1, Brem et al., 2002); in some cases we resolve for the first time the causal SNP within a previously identified gene (e.g. IRA2, Smith and Kruglyak, 2008; VPS70, Duitama et al., 2014). However, we note that because our SNP panel does not capture all genetic variation, such as transposon insertions or small deletions, some QTL lead positions may tag linked variation rather than being causal themselves.
 
-The SNP density in our panel and resolution of our approach highly constrain these regions of linked variation, providing guidance for future studies of specific QTL, but as a whole we find that our collection of lead SNPs displays some characteristic features of causal variants. Across all identified lead SNPs, we observe a significant enrichment of nonsynonymous substitutions, especially when considering lead SNPs with posterior probability above 0.5 (Figure 3E; p<10−10 , χ2-test, df=2), as expected for causal changes in protein function. Lead SNPs are also more likely to be found within disordered regions of proteins (1.22 x fold increase, p<10−5, Fisher’s exact test), even when constrained to nonsynonymous variants (1.28 x fold increase beyond the enrichment for nonsynonymous variants in disordered regions, p<10−4, Fisher’s exact test), indicating potential causal roles in regulation (Dyson and Wright, 2005). Lead SNP alleles, especially those with large effect size, are observed at significantly lower minor allele frequencies (MAF) in the 1011 Yeast Genomes collection (Peter et al., 2018) compared to random SNPs (Figure 3F; p=0.0004, Fisher’s exact test considering alleles with effect >1% and rare alleles with MAF <5%) and minor alleles are more likely to be deleterious (p=0.006, permutation test) regardless of which parental allele is rarer. These results are consistent with the view that rare, strongly deleterious alleles subject to negative selection can contribute substantially to complex trait architecture (Bloom et al., 2019; Fournier et al., 2019). However, we were unable to detect strong evidence of directional selection (see Appendix 3-1.7), possibly as a consequence of high polygenicity or weak concordance between our assay environments and selection pressure in the wild.
+The SNP density in our panel and resolution of our approach highly constrain these regions of linked variation, providing guidance for future studies of specific QTL, but as a whole we find that our collection of lead SNPs displays some characteristic features of causal variants. Across all identified lead SNPs, we observe a significant enrichment of nonsynonymous substitutions, especially when considering lead SNPs with posterior probability above 0.5 (Figure 3E; $p<10^{−10}$ , $χ^{2}$-test, $df=2$), as expected for causal changes in protein function. Lead SNPs are also more likely to be found within disordered regions of proteins (1.22 x fold increase, $p<10^{−5}$, Fisher’s exact test), even when constrained to nonsynonymous variants (1.28 x fold increase beyond the enrichment for nonsynonymous variants in disordered regions, $p<10^{−4}$, Fisher’s exact test), indicating potential causal roles in regulation (Dyson and Wright, 2005). Lead SNP alleles, especially those with large effect size, are observed at significantly lower minor allele frequencies (MAF) in the 1011 Yeast Genomes collection (Peter et al., 2018) compared to random SNPs (Figure 3F; $p=0.0004$, Fisher’s exact test considering alleles with effect >1% and rare alleles with MAF <5%) and minor alleles are more likely to be deleterious ($p=0.006$, permutation test) regardless of which parental allele is rarer. These results are consistent with the view that rare, strongly deleterious alleles subject to negative selection can contribute substantially to complex trait architecture (Bloom et al., 2019; Fournier et al., 2019). However, we were unable to detect strong evidence of directional selection (see Appendix 3-1.7), possibly as a consequence of high polygenicity or weak concordance between our assay environments and selection pressure in the wild.
 
-## Patterns of pleiotropy
+### Patterns of pleiotropy
 
 Our eighteen assay environments range widely in their similarity to each other: some groups of traits exhibit a high degree of phenotype correlation across strains, such as rich medium at a gradient of temperatures, while other groups of traits are almost completely uncorrelated, such as molasses, rich medium with suloctidil, and rich medium with guanidinium (Figure 3A). Because many of these phenotypes are likely to involve overlapping aspects of cellular function, we expect the inferred genetic architectures to exhibit substantial pleiotropy, where individual variants are causal for multiple traits. In addition, in highly polygenic architectures, pleiotropy across highly dissimilar traits is also expected to emerge due to properties of the interconnected cellular network. For example, SNPs in regulatory genes may affect key functional targets (some of them regulatory themselves) that directly influence a given phenotype, as well as other functional targets that may, in turn, influence other phenotypes (Liu et al., 2019a).
 
-Consistent with these expectations, we observe diverse patterns of shared QTL across traits (Figure 3B). To examine these pleiotropic patterns at the gene level, we group QTL across traits whose lead SNP is within the same gene (or in the case of intergenic lead SNPs, the nearest gene). In total, we identify 449 such pleiotropic genes with lead SNPs affecting multiple traits (see Appendix 3). These genes encompass the majority of QTL across all phenotypes, and are highly enriched for regulatory function (Table 2) and for intrinsically disordered regions, which have been implicated in regulation (p<0.005, Fisher’s exact test; Dyson and Wright, 2005). The most pleiotropic genes (Figure 3—figure supplement 1) correspond to known variants frequently associated with quantitative variation in yeast (e.g. MKT1, HAP1, IRA2).
+Consistent with these expectations, we observe diverse patterns of shared QTL across traits (Figure 3B). To examine these pleiotropic patterns at the gene level, we group QTL across traits whose lead SNP is within the same gene (or in the case of intergenic lead SNPs, the nearest gene). In total, we identify 449 such pleiotropic genes with lead SNPs affecting multiple traits (see Appendix 3). These genes encompass the majority of QTL across all phenotypes, and are highly enriched for regulatory function (Table 2) and for intrinsically disordered regions, which have been implicated in regulation ($p<0.005$, Fisher’s exact test; Dyson and Wright, 2005). The most pleiotropic genes (Figure 3—figure supplement 1) correspond to known variants frequently associated with quantitative variation in yeast (e.g. MKT1, HAP1, IRA2).
+
+**Table 2.**
+ Summary of significant GO enrichment terms (Table 2—source data 1).Table 2—source data 1.Full results of GO analysis on pleiotropic genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Go id</th>
+      <th>Term</th>
+      <th>Corrected p-value</th>
+      <th># Genes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GO:0000981</td>
+      <td>RNA polymerase II transcription factor activity, sequence-specific DNA binding</td>
+      <td>0.000026</td>
+      <td>30</td>
+    </tr>
+    <tr>
+      <td>GO:0140110</td>
+      <td>Transcription regulator activity</td>
+      <td>0.000066</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td>GO:0000976</td>
+      <td>Transcription regulatory region sequence-specific DNA binding</td>
+      <td>0.000095</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>GO:0044212</td>
+      <td>Transcription regulatory region DNA binding</td>
+      <td>0.000113</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>GO:0003700</td>
+      <td>DNA binding transcription factor activity</td>
+      <td>0.000148</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>GO:0001067</td>
+      <td>Regulatory region nucleic acid binding</td>
+      <td>0.000161</td>
+      <td>29</td>
+    </tr>
+    <tr>
+      <td>GO:0043565</td>
+      <td>Sequence-specific DNA binding</td>
+      <td>0.000269</td>
+      <td>41</td>
+    </tr>
+    <tr>
+      <td>GO:0001227</td>
+      <td>Transcriptional repressor activity, RNA polymerase II transcription regulatory region sequence-specific DNA binding</td>
+      <td>0.000417</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>GO:0003677</td>
+      <td>DNA binding</td>
+      <td>0.000453</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td>GO:0043167</td>
+      <td>Ion binding</td>
+      <td>0.000999</td>
+      <td>143</td>
+    </tr>
+    <tr>
+      <td>GO:1990837</td>
+      <td>Sequence-specific double-stranded DNA binding</td>
+      <td>0.001449</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>GO:0000977</td>
+      <td>RNA polymerase II regulatory region sequence-specific DNA binding</td>
+      <td>0.007709</td>
+      <td>21</td>
+    </tr>
+    <tr>
+      <td>GO:0001012</td>
+      <td>RNA polymerase II regulatory region DNA binding</td>
+      <td>0.007709</td>
+      <td>21</td>
+    </tr>
+  </tbody>
+</table>
 
 The highly polygenic nature of our phenotypes highlights the difficulty in identifying modules of target genes with interpretable functions related to the measured traits (Boyle et al., 2017). However, we can take advantage of our high-powered mapping approach to explore how pleiotropy leads to diverging phenotypes in different environments. Specifically, to obtain a global view of pleiotropy and characterize the shifting patterns of QTL effects across traits, we adopt a method inspired by sequence alignment strategies to match (or to leave unmatched) QTL from one trait with QTL from another trait, in a way that depends on the similarity in their effect sizes and distance between lead SNPs (see Appendix 3). From this, for each pair of environments we can find the change in effect size for each QTL, as well as an overall metric of model similarity (essentially a Pearson’s correlation coefficient between aligned model parameters, with highest score of 1 meaning two identical models, and a score of 0 meaning no similar QTL detected in both position and effect size). We find that pairwise model similarity scores recapitulate the phenotype correlation structure (Figure 3G), including smoothly varying similarity across the temperature gradient (Figure 3H), indicating that changes in our inferred model coefficients accurately capture patterns of pleiotropy.
 
 For most comparisons between environments, substantial effect size changes are distributed over all QTL, indicating a broad response to the environmental shift (Figure 3I). For example, while growth in Li (rich medium+ lithium) is strongly affected by a single locus directly involved in salt tolerance (three tandem repeats of the ENA cluster in S288C, corresponding to 82% of explained variance; Wieland et al., 1995), 63 of the remaining 82 QTL are also detected in 30 C (rich medium only), explaining a further 15% of variance. To some extent, these 63 QTL may represent a ‘module’ of genes with functional relevance for growth in rich medium, but their effect sizes are far less correlated than would be expected from noise or for a similar pair of environments (e.g. 30 C and 27 C, Figure 3—figure supplement 3). For the temperature gradient, while we observe high correlations between similar temperatures overall, these are not due to specific subsets of genes with simple, interpretable monotonic changes in effect size. Indeed, effect size differences between temperature pairs are typically uncorrelated; thus, QTL that were more beneficial when moving from 30C to 27C may become less beneficial when moving from 27C to 25C or 25C to 23C (Figure 3—figure supplement 3). Together, these patterns of pleiotropy reveal large numbers of regulatory variants with widespread, important, and yet somewhat unpredictable effects on diverse phenotypes, implicating a highly interconnected cellular network while obscuring potential signatures of specific functional genes or modules.
 
-## Epistasis
+### Epistasis
 
 To characterize the structure of this complex cellular network in more detail, numerous studies have used genetic perturbations to measure epistatic interactions between genes, which in turn shed light on functional interactions (Tong et al., 2001; Horlbeck et al., 2018; Butland et al., 2008; Dixon et al., 2008; Costanzo et al., 2016; Costanzo et al., 2010). However, the role of epistasis in GWAS and QTL mapping studies remains controversial; these studies largely focus on variance partitioning to measure the strength of epistasis, as they are underpowered to infer specific interaction terms (Huang et al., 2016). We sought to leverage the large sample size and high allele frequencies of our study to infer epistatic interactions, by extending our inference method to include potential pairwise interactions among the loci previously identified as having an additive effect (see Appendix 3). Our approach builds on the modified stepwise cross-validated search described above: after obtaining the additive model, we perform a similar iterative forward search on pairwise interactions, re-optimizing both additive and pairwise effect sizes at each step and applying a second L0-norm sparsity penalty, similarly chosen by cross-validation, to terminate the model search. We note that restricting our analysis of epistasis to loci identified as having an additive effect does not represent a major limitation. This is because a pair of loci that have a pairwise interaction but no additive effects will tend to be (incorrectly) assigned additive effects in our additive-only model, since the epistatic interaction will typically lead to background-averaged associations between each locus and the phenotype. These spurious additive effects will then tend to be reduced upon addition of the pairwise interaction term.
 
-Using this approach, we detect widespread epistasis: hundreds of pairwise interactions for each phenotype (Figure 4A and B, Table 1; detected interactions are broadly consistent with results of a pairwise regression approach, as in Figure 4—figure supplement 4), which corresponds to an average of 1.7 epistatic interactions per QTL, substantially more than has been detected in previous mapping studies (Bloom et al., 2015). Most of these epistatic effects are modest, shifting predicted double mutant fitness values by a small amount in relation to additive predictions, although a small number largely exaggerate or completely suppress additive effects (Figure 4—figure supplement 5A). Overall, a slight majority of epistatic interactions are compensatory (Figure 4—figure supplement 5B), and nearly 55% of epistatic interactions have a positive sign (i.e. RM/RM and BY/BY genotypes are more fit than the additive expectation; Figure 4—figure supplement 5C). Finally, our procedure picks more epistatic interactions among intra- than between inter-chromosomal pairs of QTL (2.9% vs 2.3% among all environments; χd⁢f=12=25.5, p<10−6).
+Using this approach, we detect widespread epistasis: hundreds of pairwise interactions for each phenotype (Figure 4A and B, Table 1; detected interactions are broadly consistent with results of a pairwise regression approach, as in Figure 4—figure supplement 4), which corresponds to an average of 1.7 epistatic interactions per QTL, substantially more than has been detected in previous mapping studies (Bloom et al., 2015). Most of these epistatic effects are modest, shifting predicted double mutant fitness values by a small amount in relation to additive predictions, although a small number largely exaggerate or completely suppress additive effects (Figure 4—figure supplement 5A). Overall, a slight majority of epistatic interactions are compensatory (Figure 4—figure supplement 5B), and nearly 55% of epistatic interactions have a positive sign (i.e. RM/RM and BY/BY genotypes are more fit than the additive expectation; Figure 4—figure supplement 5C). Finally, our procedure picks more epistatic interactions among intra- than between inter-chromosomal pairs of QTL (2.9% vs 2.3% among all environments; $χ_{d⁢f=1}^{2}=25.5$, $p<10^{−6}$).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig4-v2.jpg)
+
+**Figure 4.:** (A, B) Inferred pairwise epistatic interactions between QTL (with additive effects as shown in outer ring) for (A) the 4NQO environment and (B) the ynb environment. Interactions that are also observed for at least one other trait are highlighted in purple. See Figure 4—figure supplements 1–3 for other environments, Figure 4—figure supplement 4 for a simpler pairwise regression method, and Figure 4—figure supplement 5 for a breakdown of epistatic effects and comparison to additive effects. (C) Network statistics across environments (Figure 4—source data 1). The pooled degree distribution for the eighteen phenotype networks is compared with 50 network realizations generated by an Erdos-Renyi random model (white) or an effect-size-correlation-preserving null model (orange; see Appendix 3). Inset: average clustering coefficient for the eighteen phenotypes, compared to 50 realizations of the null and random models. (D) Consensus network of inferred epistatic interactions. Nodes represent genes (with size scaled by degree) and edges represent interactions that were detected in more than one environment (with color and weight scaled by the number of occurrences). Notable genes are labeled. See Figure 4—figure supplement 6 for the same consensus network restricted to either highly-correlated or uncorrelated traits.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig4-figsupp2-v2.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig4-figsupp3-v2.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A, B) Interaction coefficient and assoociated LOD for all pairs of QTL for which we previously infer an additive effect, estimated by linear regression of the measured 4NQO fitness on the genotype posterior probabilities at two sites at a time. (C) Epistatic interaction coefficients selected by the forward search procedure described in the text. (D) Comparison of forward search interaction coefficients and their respective pairwise regression estimates. In (A–C) QTL are organized in genomic order, with vertical and horizontal lines indicating chromosome limits. Among highlighted genes, MAT and HO are marker loci used in our cross. CAN1 is linked to the the highlighted FLO8 QTL. See Figure 1—figure supplement 3 for more info.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A) Sum of additive and epistatic effects versus sum of additive effects only for all pairs of interacting QTL selected across all our epistatic models. Notable examples are highlighted and labeled with corresponding pair of genes and environment. Diagonal dashed line is the identity. Inset is zoomed in the indicated region. Breakdown of epistatic interactions between (B) synergistic or compensatory, and (C) positive or negative, classified in relation to panel A as indicated in the diagrams. Error bars are 95% confidence intervals of the binomial proportion estimate.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** (A) Consensus network for correlated traits (23 C, 25 C, 27 C, 30 C, 33 C, 35 C, 37 C, cu, eth, mann, raff, sds). (B) Consensus network for uncorrelated traits (4NQO, li, gu, mol, suloc, ynb).
 
 To interpret these epistatic interactions in the context of cellular networks, we can represent our model as a graph for each phenotype, where nodes represent genes with QTL lead SNPs and edges represent epistatic interactions between those QTL (this perspective is distinct from and complementary to Costanzo et al., 2010, where nodes represent gene deletions and edges represent similar patterns of interaction). Notably, in contrast to a random graph, the epistatic graphs across phenotypes show heavy-tailed degree distributions, high clustering coefficients, and small average shortest paths (∼three steps between any pair of genes; Figure 4C); these features are characteristic of the small-world networks posited by the ‘omnigenic’ view of genetic architecture (Boyle et al., 2017). These results hold even when accounting for ascertainment bias (i.e. loci with large additive effects have more detected epistatic interactions; see Appendix 3).
 
-We also find that hundreds of epistatic interactions are repeatedly found across environments (Figure 4D and Figure 4—figure supplement 6). Overall, epistatic interactions are more likely to be detected in multiple environments than expected by chance, even when considering only uncorrelated environments (simulation-based p<10−3; see Appendix 3), as expected if these interactions accurately represent the underlying regulatory network. Considering interactions found in all environments, we see a small but significant overlap of detected interactions with previous genome-wide deletion screens (Costanzo et al., 2016; p=0.03, χ2=4.46, df=1; see Appendix 3). Taken together, these results suggest that inference of epistatic interactions in a sufficiently high-powered QTL mapping study provides a consistent and complementary method to reveal both global properties and specific features of underlying functional networks.
+We also find that hundreds of epistatic interactions are repeatedly found across environments (Figure 4D and Figure 4—figure supplement 6). Overall, epistatic interactions are more likely to be detected in multiple environments than expected by chance, even when considering only uncorrelated environments (simulation-based $p<10^{−3}$; see Appendix 3), as expected if these interactions accurately represent the underlying regulatory network. Considering interactions found in all environments, we see a small but significant overlap of detected interactions with previous genome-wide deletion screens (Costanzo et al., 2016; $p=0.03$, $χ^{2}=4.46$, $df=1$; see Appendix 3). Taken together, these results suggest that inference of epistatic interactions in a sufficiently high-powered QTL mapping study provides a consistent and complementary method to reveal both global properties and specific features of underlying functional networks.
 
-## Validating QTL inferences with reconstructions
+### Validating QTL inferences with reconstructions
 
 We next sought to experimentally validate the specific inferred QTL and their effect sizes from our additive and additive-plus-pairwise models. To do so, we reconstructed six individual and nine pairs of RM SNPs on the BY background and measured their competitive fitness in 11 of the original 18 conditions in individual competition assays (although note that for technical reasons these measurement conditions are not precisely identical to those used in the original bulk fitness assays; see Materials and methods). These mutations were chosen because they represent a mixture of known and unknown causal SNPs in known QTL, were amenable to the technical details of our reconstruction methods, and had a predicted effect size larger than the detection limit of our low-throughput assays to measure competitive fitness (approximately 0.5%) in at least one environment. We find that the QTL effects inferred with the additive-only models are correlated with the phenotypes of these reconstructed genotypes, although the predicted effects are systematically larger than the measured phenotypes (Figure 5A, cyan). To some extent, these errors may arise from differences in measurement conditions, undetected smaller-effect linked loci that bias inferred additive effect sizes, and from the confidence intervals around the lead SNP, which introduce uncertainty about the identity of the precise causal locus, among other factors. However, this limited power is also somewhat unsurprising even if our inferred lead SNPs are correct, because the effect sizes inferred from the additive-only model measure the effect of a given locus averaged across the F1 genetic backgrounds in our segregant panel. Thus, if there is significant epistasis, we expect the effect of these loci in the specific strain background chosen for the reconstruction (the BY parent in this case) to differ from the background-averaged effect inferred by BB-QTL.
 
-In agreement with this interpretation, we find that the predictions from our additive-plus-pairwise inference agree better with the measured values in our reconstructed mutants (Figure 5A, magenta). Specifically, we find that the correlation between predicted and measured phenotypes is similar to the additive-only model, but the systematic overestimates of effect sizes are significantly reduced (Figure 5A, inset; p<10−4 from permutation test; see Materials and Methods). This suggests a substantial effect of nonlinear terms, although the predictive power of our additive-plus-pairwise model remains modest. As above, this limited predictive power could be a consequence of undetected linked loci or errors in the identification of interacting loci. However, it may also indicate the presence of further epistasis of higher order than the pairwise terms we infer. To explore these potential effects of higher-order interactions, we trained a dense neural network to jointly predict 17 out of our 18 phenotypes from genotype data (see Appendix 3). The network architecture involves three densely connected layers, allowing it to capture arbitrary nonlinear mappings. Indeed, we find that this neural network approach does explain slightly more phenotypic variance (on average 1% more variance than the additive-plus-pairwise QTL model, Figure 5B; see Appendix 4), although specific interactions and causal SNPs are harder to interpret in this case. Together, these results suggest that although our ability to pinpoint precise causal loci and their effect sizes is likely limited by a variety of factors, the models with epistasis do more closely approach the correct genetic architecture despite explaining only marginally more variance than the additive model (Appendix 4—figure 1), as suggested by previous studies (Forsberg et al., 2017).
+![Figure 5.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig5-v2.jpg)
+
+**Figure 5.:** (A) Comparison between the measured fitness of reconstructions of 6 single (crosses) and nine double mutants (circles) in 11 environments, and their fitness in those environments as predicted by our inferred additive-only (cyan) or additive-plus-pairwise-epistasis models (magenta). The one-to-one line is shown in gray. $R^{2}$ values correspond to to shown fitted linear regressions for each type of model (colored lines), excluding MKT1 mutants measured in gu environment (outliers indicated by arrows). Inset shows the histogram of the absolute difference between observed and predicted reconstruction fitness under our two models, with the $p$-value from the permutation test of the difference between these distributions indicated. See Figure 5—figure supplements 1 and 2 for a full breakdown of the data, and Figure 5—source data 1 for measured and predicted fitness values. (B) Comparison between estimated phenotypic variance explained by the additive-plus-pairwise-epistasis model and a trained dense neural network of optimized architecture.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** We also compare the measured fitness of double mutants, with the sum of the measured fitness of the respective single mutants. Highlighted in yellow are outlier strains removed from analyses and Figure 5, as explained in the Materials and Methods: BUL2-MKT1, HAP1-BUL2, HAP1-VPS70, and MKT1-VPS70. Arrow indicates the strains containing the MKT1 mutation in Gu, which were also removed from analyses. In gray is the 1:1 line. Dashed lines show a linear regression (excluding outliers), with their $R^{2}$-values indicated.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/73983/elife-73983-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The histogram of the absolute difference between predicted and observed values is shown for both single and double mutation reconstructions with their respective permutation test $p$-values indicated above each.
+
+In agreement with this interpretation, we find that the predictions from our additive-plus-pairwise inference agree better with the measured values in our reconstructed mutants (Figure 5A, magenta). Specifically, we find that the correlation between predicted and measured phenotypes is similar to the additive-only model, but the systematic overestimates of effect sizes are significantly reduced (Figure 5A, inset; $p<10^{−4}$ from permutation test; see Materials and Methods). This suggests a substantial effect of nonlinear terms, although the predictive power of our additive-plus-pairwise model remains modest. As above, this limited predictive power could be a consequence of undetected linked loci or errors in the identification of interacting loci. However, it may also indicate the presence of further epistasis of higher order than the pairwise terms we infer. To explore these potential effects of higher-order interactions, we trained a dense neural network to jointly predict 17 out of our 18 phenotypes from genotype data (see Appendix 3). The network architecture involves three densely connected layers, allowing it to capture arbitrary nonlinear mappings. Indeed, we find that this neural network approach does explain slightly more phenotypic variance (on average 1% more variance than the additive-plus-pairwise QTL model, Figure 5B; see Appendix 4), although specific interactions and causal SNPs are harder to interpret in this case. Together, these results suggest that although our ability to pinpoint precise causal loci and their effect sizes is likely limited by a variety of factors, the models with epistasis do more closely approach the correct genetic architecture despite explaining only marginally more variance than the additive model (Appendix 4—figure 1), as suggested by previous studies (Forsberg et al., 2017).
 
 ## Discussion
 
@@ -125,11 +425,147 @@ However, despite these limitations, our BB-QTL mapping approach helps bridge the
 
 ## Materials and methods
 
-## Design and construction of the barcoded cross
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741</td>
+      <td>Baker Brachmann et al., 1998</td>
+      <td>–</td>
+      <td>BY parent background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>RM11-1a</td>
+      <td>Brem et al., 2002</td>
+      <td>–</td>
+      <td>RM parent background</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>YAN696</td>
+      <td>This paper</td>
+      <td>–</td>
+      <td>BY parent</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>YAN695</td>
+      <td>This paper</td>
+      <td>–</td>
+      <td>RM parent</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BB-QTL F1 strain library</td>
+      <td>This paper</td>
+      <td>–</td>
+      <td>100,000 strains of barcoded BYxRM F1 produced, genotyped and characterized in this paper</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3)</td>
+      <td>NEB</td>
+      <td>NEB:C2527I</td>
+      <td>Zymolyase and barcoded Tn-5 expression system</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAN216a pGAL1-HO pSTE2-HIS3 pSTE3 LEU2 (plasmid)</td>
+      <td>This paper</td>
+      <td>–</td>
+      <td>For MAT-type switching</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAN3H5a 1/2URA3 KanP1 ccdB LoxPR (plasmid)</td>
+      <td>This paper</td>
+      <td>–</td>
+      <td>Type one barcoding plasmid, without barcode library</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAN3H5a LoxPL ccdB HygP1 2/2URA3 (plasmid)</td>
+      <td>This paper</td>
+      <td>–</td>
+      <td>Type two barcoding plasmid, without barcode library</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom Tn5 adapter oligos</td>
+      <td>This paper</td>
+      <td>Tn5-L and -R</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom sequencing adapter primers</td>
+      <td>This paper</td>
+      <td>P5mod and P7mod</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom barcode amplification primers</td>
+      <td>This paper</td>
+      <td>P1 and P2</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Custom sequencing primers for Illumina</td>
+      <td>This paper</td>
+      <td>Custom_read_1 through 4</td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom code for genotype inference</td>
+      <td>This paper</td>
+      <td>–</td>
+      <td>See code repository</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom code for phenotype inference</td>
+      <td>This paper</td>
+      <td>–</td>
+      <td>See code repository</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom code for compressed sensing</td>
+      <td>This paper</td>
+      <td>–</td>
+      <td>See code repository</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Custom code for qtl inference</td>
+      <td>This paper</td>
+      <td>–</td>
+      <td>See code repository</td>
+    </tr>
+  </tbody>
+</table>
+
+### Design and construction of the barcoded cross
 
 A key design choice in any QTL mapping study is what genetic variation will be included (i.e. the choice of parental strains) and how that variation will be arranged (i.e. the cross design). In choosing strains, wild isolates may display more genotypic and phenotypic diversity than lab-adapted strains, but may also have poor efficiency during the mating, sporulation, and transformation steps required for barcoding. In designing the cross, one must balance several competing constraints, prioritizing different factors according to the goals of the particular study. Increasing the number of parental strains involved increases genetic diversity, but can also increase genotyping costs (see Appendix 1); increasing the number of crosses or segregants improves fine-mapping resolution by increasing the number of recombination events, but also increases strain production time and costs. For a study primarily interested in precise fine-mapping of strong effects, a modest number of segregants from a deep cross may be most appropriate She and Jarosz, 2018; for a study interested in a broad view of diversity across natural isolates, a modest number of segregants produced from a shallow multi-parent cross may be preferred (Bloom et al., 2019). However, we are primarily interested in achieving maximum statistical power to map large numbers of small-effect loci; for this, we choose to map an extremely large number of segregants from a simple, shallow cross. We begin in this section by describing our choice of strains, cross design, and barcoding strategy.
 
-## Strains
+#### Strains
 
 The two parental strains used in this study, YAN696 and YAN695, are derived from the BY4741 (Baker Brachmann et al., 1998) (S288C: MATa, his3Δ1, ura3Δ0, leu2Δ0, met17Δ0) and RM11-1a (haploid derived from Robert Mortimer’s Bb32(3): MATa, ura3Δ0, leu2Δ0, ho::KanMX; Brem et al., 2002) backgrounds respectively, with several modifications required for our barcoding strategy. We chose to work in these backgrounds (later denoted as BY and RM) due to their history in QTL mapping studies in yeast (Ehrenreich et al., 2010; Bloom et al., 2013; Brem et al., 2002), which demonstrate a rich phenotypic diversity in many environments.
 
@@ -137,7 +573,7 @@ The ancestral RM11-1a is known to incompletely divide due to the AMN1(A1103) all
 
 The BY4741 strain was first converted to methionine prototrophy by transforming the MET17 gene into Δmet17, generating YAN599. The CAN1 gene was subsequently replaced with a MATa mating type reporter construct (Tong and Boone, 2006) (pSTE2-SpHIS5) which expresses the HIS5 gene from Schizosaccharomyces pombe (orthologous to the S. cerevisiae HIS3) in MATa cells. A landing pad was introduced into this strain with CaURA3MX-NAT-pGAL1-Cre, yielding YAN696; this landing pad differs from the one in YAN695 by the location of the pGAL1-Cre and the presence of a NAT marker rather than a G418 marker (see Figure 1—figure supplement 2).
 
-## Construction of barcoding plasmids
+#### Construction of barcoding plasmids
 
 The central consideration in designing our barcoding strategy was ensuring sufficient diversity, such that no two out of 100,000 individual cells sorted from a pool will share the same barcode. To ensure this, the total number of barcodes in the pool must be several orders of magnitude larger than 105, which is infeasible even with maximal transformation efficiency. Our solution employs combinatorics: each spore receives two barcodes, one from each parent, such that mating two parental pools of ∼104 unique barcodes produces a pool of ∼108 uniquely barcoded spores. This requires efficient barcoding of the parental strains, efficient recombination of the two barcodes onto the same chromosome in the mated diploids, and efficient selection of double-barcoded haploids after sporulation.
 
@@ -145,13 +581,13 @@ Our barcoding system makes use of two types of barcoding plasmids, which we refe
 
 We next introduced a diverse barcode library into the barcoding plasmids using a Golden Gate reaction (Engler, 2009), exploiting the fact that the ccdB gene (with BsaI site removed) is flanked by two BsaI restriction endonuclease sites. Barcodes were ordered as single-stranded oligos from Integrated DNA Technologies (IDT) with degenerate bases (ordered as ‘hand-mixed’) flanked by priming sequences: P_BC1 = CTAGTT ATTGCT CAGCGG AGGTCT CAtact NNNatN NNNNat NNNNNg cNNNcg ctAGAG ACCGTC ATAGCT GTTTCC TG, P_BC2 = CTAGTT ATTGCT CAGCGG AGGTCT CAtact NNNatN NNNNgc NNNNNa tNNNcg ctAGAG ACCGTC ATAGCT GTTTCC TG. These differ only in nucleotides inserted at the 16 degenerate bases (represented by ‘N’), which comprise the barcodes; these barcodes are flanked by two BsaI sites that leave ‘tact’ and ‘cgct’ as overhangs. Conversion of the oligos to double-stranded DNA and preparation of the Escherichia coli library was performed as in Nguyen Ba et al., 2019. Briefly, Golden Gate reactions were carried out to insert P_BC1 and P_BC2 barcodes into Type 1 and Type 2 barcoding plasmids, respectively. Reactions were purified and electroporated into E. coli DH10β cells (Invitrogen) and recovered in about 1 L of molten LB (1% tryptone, 0.5% yeast extract) containing 0.3% SeaPrep agarose (Lonza) and 100 µg/mL ampicillin. The mixture was allowed to gel on ice for an hour and then placed at 37 °C overnight for recovery of the transformants. We routinely observed over 106 transformants from this procedure, and the two barcoded plasmid libraries were recovered by standard maxiprep (Figure 1—figure supplement 2a).
 
-## Parental barcoding procedure
+#### Parental barcoding procedure
 
 Distinct libraries of barcoded parental BY and RM strains were generated by transforming parental strains with barcoded plasmid libraries (Figure 1—figure supplement 2b): YAN696 (BY) with Type 1, and YAN695 (RM) with Type 2. Barcoded plasmids were digested with PmeI (New England Biolabs) prior to transformation, and transformants were selected on several SD –leu agar plates (6.71 g/L yeast nitrogen base, complete amino acid supplements lacking leucine, 2% dextrose). In total, 23 pools of ∼1000 transformants each were obtained for BY, and 12 pools of ∼1,000 transformants each were obtained for RM. After scraping the plates, we grew these pools overnight in SD –leu +5 FOA (6.71 g/L yeast nitrogen base, complete amino acid supplements lacking leucine, 2% dextrose, 1 g/L 5-fluoroorotic acid) to select for integration at the correct locus. Each of the BY and RM libraries were kept separate, and for each library we sequenced the barcode locus on an Illumina NextSeq to confirm the diversity and identity of parental barcodes. This allows for 23 × 12 distinct sets of diploid pools with approximately 1 million possible barcode combinations each, for a total of ∼3 × 108 barcodes.
 
-## Generation of 100,000 barcoded F1 segregants
+#### Generation of 100,000 barcoded F1 segregants
 
-Each of the 23 × 12 combinations of BY and RM barcoded libraries was processed separately, from mating through sorting of the resulting F1 haploids (Figure 1—figure supplement 2b). For each distinct mating, the two parental libraries were first grown separately in 5 mL YPD (1% Difco yeast extract, 2% Bacto peptone, 2% dextrose) at 30 °C. The overnight cultures were plated on a single YPD agar plate and allowed to mate overnight at room temperature. The following day, the diploids were scraped and inoculated into 5 mL YPG (1% Difco yeast extract, 2% Bacto peptone, 2% galactose) containing 200 µg/mL G418 (GoldBio) and 10 µg/mL Nourseothricin (GoldBio) at a density of approximately 2⋅106 cells/mL and allowed to grow for 24 hr at 30 °C. The next day, the cells were again diluted 1:25 into the same media and allowed to grow for 24 hr at 30 °C. This results in ∼10 generations of growth in galactose-containing media, which serves to induce Cre recombinase to recombine the barcoded landing pads, generating Ura+ cells (which therefore contain both barcodes on the same chromosome) at very high efficiency.
+Each of the 23 × 12 combinations of BY and RM barcoded libraries was processed separately, from mating through sorting of the resulting F1 haploids (Figure 1—figure supplement 2b). For each distinct mating, the two parental libraries were first grown separately in 5 mL YPD (1% Difco yeast extract, 2% Bacto peptone, 2% dextrose) at 30 °C. The overnight cultures were plated on a single YPD agar plate and allowed to mate overnight at room temperature. The following day, the diploids were scraped and inoculated into 5 mL YPG (1% Difco yeast extract, 2% Bacto peptone, 2% galactose) containing 200 µg/mL G418 (GoldBio) and 10 µg/mL Nourseothricin (GoldBio) at a density of approximately $2⋅10^{6}$ cells/mL and allowed to grow for 24 hr at 30 °C. The next day, the cells were again diluted 1:25 into the same media and allowed to grow for 24 hr at 30 °C. This results in ∼10 generations of growth in galactose-containing media, which serves to induce Cre recombinase to recombine the barcoded landing pads, generating Ura+ cells (which therefore contain both barcodes on the same chromosome) at very high efficiency.
 
 Recombinants were selected by 10 generations of growth (two cycles of 1:25 dilution and 24 hr of growth at 30 °C) in SD –ura (6.71 g/L Yeast Nitrogen Base with complete amino acid supplements lacking uracil, 2% dextrose). Cells were then diluted 1:25 into pre-sporulation media (1% Difco yeast extract, 2% Bacto peptone, 1% potassium acetate, 0.005% zinc acetate) and grown for 24 hr at room temperature. The next day, the whole culture was pelleted and resuspended into 5 mL sporulation media (1% potassium acetate, 0.005% zinc acetate) and grown for 72 hr at room temperature. Sporulation efficiency typically reached >75%.
 
@@ -159,7 +595,7 @@ Cells were germinated by pelleting approximately 100 µL of spores and digesting
 
 F1 segregants obtained using our approach are expected to be prototrophic haploid MATa cells, with approximately half their genome derived from the BY parent and half from the RM parent, except at marker loci (see Figure 1—figure supplement 3).
 
-## Sorting F1 segregants into single wells
+#### Sorting F1 segregants into single wells
 
 After growth, germinated cells in soft agar were mixed by thorough shaking. Fifty µL of this suspension was inoculated in 5 mL SD –leu –ura –his + canavanine and allowed to grow for 2–4 hr at 30 °C. The cells were then stained with DiOC6(3) (Sigma) at a final concentration of 0.1 µM and incubated for 1 hr at room temperature. DiOC6(3) is a green-fluorescent lipophilic dye that stains for functional mitochondria (Petit et al., 1996). We used flow cytometry to sort single cells into individual wells of polypropylene 96-well round-bottom microtiter plates containing 150 µL YPD per well. During sorting we applied gates for front and side scatter to select for dispersed cells as well as a FITC gate for functional mitochondria. From each mating, we sorted 384 single cells into 4 96-well plates; because the possible diversity in each mating is about 106 unique barcodes, the probability that two F1 segregants share the same barcode is extremely low.
 
@@ -167,17 +603,17 @@ The single cells were then allowed to grow unshaken for 48 hr at 30 °C, forming
 
 We expect F1 segregants obtained using our approach to be prototrophic haploid MATa cells, with approximately half their genome derived from the BY parent and half from the RM parent, except at marker loci in chromosome III, IV, and V (see Figure 1—figure supplement 3 for allele frequencies).
 
-## Reference parental strains
+#### Reference parental strains
 
 Although not strictly necessary for future analysis, it is often informative to phenotype the parental strains in the same assay as the F1 segregants. However, the parental strains described above (YAN695 and YAN696) do not contain the full recombined barcode locus and are thus not compatible with bulk-phenotyping strategies described in Appendix 2. We therefore created reference strains whose barcode locus and selection markers are identical to the F1 segregants, while their remaining genotypes are identical to the parental strains.
 
 The parental BY strain YAN696 required little modification: we simply transformed its landing pad with a known double barcode (barcode sequence ATTTGACCCAAAGCTT – GGCATGGCGCCGTACG). In contrast, the parental RM strain is of the opposite mating type to the F1 segregants and differs at the CAN1 locus. From the YAN501xYAN503 diploid, we generated a MATa spore containing otherwise identical genotype as YAN515, producing YAN516. The CAN1 locus of this strain was replaced with the MATa mating type reporter as described previously (pSTE2-SpHIS5) producing YAN684. Finally, we transformed the landing pad with a known double barcode (barcode sequence AGAAGAAGTCACCGTA – TACTACGTCTTATTTA). We refer to these strains as RMref and BYref in Appendix 2.
 
-## Whole-genome sequencing of all F1 segregants
+### Whole-genome sequencing of all F1 segregants
 
 The SNP density in the BYxRM cross is such that there is on average one SNP every few hundred basepairs (i.e. on the order of one SNP per sequencing read), making whole-genome sequencing an attractive genotyping strategy. However, there are obvious time and cost constraints to preparing 100,000 sequencing libraries and sequencing 100,000 whole genomes to high coverage. We overcome these challenges by creating a highly automated and multiplexed library preparation pipeline, and by utilizing low-coverage sequencing in combination with genotype imputation methods. In this section we describe the general procedure for producing sequencing libraries, while sections below describe how we automate the procedure in 96-well format using liquid handling robots.
 
-## Cell lysis and zymolyase purification
+#### Cell lysis and zymolyase purification
 
 Typical tagmentase-based library preparation protocols start with purified genomic DNA of normalized concentration (Baym et al., 2015). However, we found that the transposition reaction is efficient in crude yeast lysate, provided that the yeast cells are lysed appropriately. This approach significantly reduces costs and increases throughput of library preparation.
 
@@ -187,7 +623,7 @@ We produce two isoforms of beta-1,3-glucanase. One is an N-terminal 6xHIS-tag ve
 
 We mix the two purified enzymes at a 1:1 ratio, and find that these enzymes act synergistically in the presence of DTT to lyse yeast cells. Cell lysis of the F1 segregants is carried out by mixing saturated cultures with glucanase mix at a 5:3 ratio and incubating for 45 min at 30 °C for cell wall digestion. Cells are then heated to 80 °C for 5 min to lyse the nuclei and denature DNA binding proteins. The resulting lysate can be stored at 4 °C and used directly for tagmentation.
 
-## Barcoded Tn5-mediated sequencing
+#### Barcoded Tn5-mediated sequencing
 
 The tagmentase enzyme Tn5 is often used in library preparation for its ability to fragment double-stranded DNA and add oligos to both ends of each fragment in a single isothermal reaction, a process first described by Adey et al., 2010 and later commercialized as Nextera by Illumina. The attached oligos serve as priming sites for the addition of indexed sequencing adaptors by PCR, which identify individual samples in a multiplexed pool. Since carrying out 100,000 individual PCR reactions would be challenging, we aimed to incorporate indexed oligos during the tagmentation reaction itself, which would allow us to pool samples for the following PCR step. Similar reaction protocols are commercially available (e.g. plexWell by seqWell).
 
@@ -203,11 +639,11 @@ We then perform a double-size selection with AMPure beads (Beckman Coulter) to s
 
 To reduce sequencing costs, we sequence each individual only to low coverage and then impute the full genotypes (see Appendix 1). We can quantify the SNP coverage (average number of reads per SNP) and SNP coverage fraction (number of SNPs seen in at least one read) for each individual. From a single NovaSeq S4 sequencing flowcell and 4 NextSeq 500 High flowcells (total ∼11.5 billion reads), we obtained a median coverage of 0.57 X (median coverage fraction 0.26) and a mean coverage of 1.23 X (mean coverage fraction 0.34).
 
-## Combinatorial indexing and sequencing of barcodes
+### Combinatorial indexing and sequencing of barcodes
 
 One consequence of low-coverage sequencing of our individuals is that the barcode locus is not guaranteed to be observed. Therefore, we need a separate method to associate the genotype of each individual with its barcode. The genotype information is already associated to the physical location of each segregant in the 384-well plates, via the Tn5-L and -R indices used during tagmentation and the P5mod and P7mod indices used during PCR. We can therefore match barcodes with segregants by associating the physical location of each segregant with its barcode. We achieve this with minimal additional sequencing cost using a multidimensional pooling approach (Erlich et al., 2009).
 
-## Combinatorial pooling
+#### Combinatorial pooling
 
 The key idea of multidimensional pooling is to identify the location of many points using only a few measurements, by projecting the points onto several orthogonal axes and measuring them in bulk along each axis. In our case, we construct various orthogonal pools of all of the segregants (such that each segregant is present in a unique set of pools). We then perform bulk barcode sequencing on each pool, to identify all the barcodes present in that pool. Because we know which segregant is in which specific set of pools, from its physical location, we can then associate barcodes with segregants by looking for the unique barcode which is present in the set of pools corresponding to that segregant.
 
@@ -215,7 +651,7 @@ There are many equivalent choices of pooling strategies; our choice was mainly i
 
 Amplicon barcode sequencing is performed as described below for bulk phenotyping measurements. Each pool contains between 4608 and 26,496 barcodes, and we sequence the pools with on average 61 x coverage per barcode per pool.
 
-## Barcode assignment to single wells
+#### Barcode assignment to single wells
 
 In theory, with enough orthogonal pools and exact measurements of each pool, the reconstruction of the full data is unambiguous: each barcode appears in exactly one of the row pools, giving its row location, and exactly one of the column pools, giving its column location, and so on. However, because sequencing readout is not exact, there are several types of errors that can occur. First, there can be sequencing errors in the barcode regions themselves, producing novel barcodes. Second, due to index-swapping and PCR chimera artifacts, a barcode may appear in multiple of one type of pool (e.g. some reads in multiple row pools), leaving its location partially undetermined (e.g. missing row information). Third, due to differences in coverage, a barcode may not appear in any of one type of pool (e.g. no reads in any row pool), again leaving its location partially undetermined. Fourth, due to PCR chimera artifacts, some reads are observed with a barcode pair that does not correspond to a real segregant; these typically appear as singletons in one instance of one type of pool. And finally, our observation for each pool is an integer number of read counts, which can contain more useful information than a simple binary presence/absence.
 
@@ -227,31 +663,81 @@ Next, we extract those barcodes with unambiguous assignments (i.e. barcodes that
 
 From inspection of the remaining unassigned barcodes, we find that most either appear in multiple pools of one type or do not appear in any pool of one type (i.e. the second and third problems mentioned above). However, given that they tend to have clear assignments for three or four of the five pool types, and that we already have many wells successfully matched, we might expect that in some cases the ambiguous pools could be identified by deduction (e.g. if one barcode has a known column but is missing row information, and the other seven of eight wells in that particular column have already been assigned, then this barcode must belong to the only unoccupied well). Once that well is assigned, perhaps other ambiguities in that row will be resolved, and so forth. This is an example of a linear assignment problem (LAP), for which fast algorithms have been developed (Jonker and Volgenant, 1987). We can use such an algorithm to identify matches between our remaining unassigned wells and unassigned barcodes.
 
-To implement a LAP solver, we need to define a suitable cost function for assigning a barcode to a well based on read count data. Our intuition is that larger read counts for a particular barcode in any pool should decrease the cost of an assignment to that pool, relative to others. Formally we calculate the likelihood of observing a certain pattern of counts across pools, and our cost function is given by the negative log-likelihood. Our cost function will produce an n×w matrix where n is the number of barcodes to be assigned and w is the number of wells to be assigned. Specifically, after the first pass and after removing blank wells, we have n=53,560 barcodes and w=54,483 wells.
+To implement a LAP solver, we need to define a suitable cost function for assigning a barcode to a well based on read count data. Our intuition is that larger read counts for a particular barcode in any pool should decrease the cost of an assignment to that pool, relative to others. Formally we calculate the likelihood of observing a certain pattern of counts across pools, and our cost function is given by the negative log-likelihood. Our cost function will produce an $n\timesw$ matrix where $n$ is the number of barcodes to be assigned and $w$ is the number of wells to be assigned. Specifically, after the first pass and after removing blank wells, we have n=53,560 barcodes and w=54,483 wells.
 
-For clarity we first consider a single type of pool, here row pools (of which there are 8). We consider a particular barcode belonging to segregant i. This segregant exists at some true frequency fi,r in each row pool r=1,…,8. One of these pools (that representing the true location) should have a substantial frequency, while the frequency in the other pools would represent index-swapping, cross-contamination, or other sources of error. Instead of these frequencies, what we observe are read counts mi,r for each of the eight pools.
+For clarity we first consider a single type of pool, here row pools (of which there are 8). We consider a particular barcode belonging to segregant i. This segregant exists at some true frequency $f_{i,r}$ in each row pool $r=1,…,8$. One of these pools (that representing the true location) should have a substantial frequency, while the frequency in the other pools would represent index-swapping, cross-contamination, or other sources of error. Instead of these frequencies, what we observe are read counts $m_{i,r}$ for each of the eight pools.
 
-Let us consider a particular pool r, where barcode i has true frequency fi,r and is observed with read counts mi,r. We will calculate the probability for the observed pattern of read counts under the assumption that this pool r is the true pool, and the other pools r′≠r are ‘error’ pools (we will evaluate this probability for each pool in turn, and then normalize to obtain posterior probabilities, see below). We group the other pools together into one error pool where the barcode i exists at a true frequency f~i,r and is observed with read counts(1)m~i,r=∑r′≠rmi,r′.
+Let us consider a particular pool $r$, where barcode i has true frequency $f_{i,r}$ and is observed with read counts $m_{i,r}$. We will calculate the probability for the observed pattern of read counts under the assumption that this pool $r$ is the true pool, and the other pools $r^{′}\neqr$ are ‘error’ pools (we will evaluate this probability for each pool in turn, and then normalize to obtain posterior probabilities, see below). We group the other pools together into one error pool where the barcode i exists at a true frequency $f~_{i,r}$ and is observed with read counts
 
-We also define the total read counts observed for the pool under consideration and the remaining pools, respectively, as(2)Mr=∑inmi,r,(3)M~r=∑inm~i,r,
+$$
+m~_{i,r}=\sumr^{′}\neqrm_{i,r^{′}}.
+$$
 
-where the sums are taken over all segregant barcodes i. Since we have observed two counts mi,r and m~i,r sampled from two underlying frequencies fi,r and f~i,r, we write the probability of observing the count data as a product of two binomials:(4)P⁢(mi,r,m~i,r|Mr,M~r,fi,r,f~i,r)=[(fi,r)mi,r⁢(1-fi,r)Mr-mi,r]⁢[(f~i,r)m~i,r⁢(1-f~i,r)M~r-m~i,r].
+We also define the total read counts observed for the pool under consideration and the remaining pools, respectively, as
 
-Since we do not have access to the true frequencies fi,r and f~i,r, we replace them with their maximum likelihood estimates, that is, the observed frequencies in the read count data:(5)fi,r→mi,rMr,(6)f~i,r→m~i,rM~r.
+$$
+M_{r}=\suminm_{i,r},
+$$
 
-Under the assumption that pool r is the correct pool, we expect f~i,r<fi,r. To enforce this prior, we set(7)fi,r→max⁢(mi,rMr,m~i,rM~r),(8)f~i,r→min⁢(mi,rMr,m~i,rM~r).
 
-This also breaks the symmetry inherent in Equation 4 when there are counts in only two pools (i.e. if there are only pools r and r′, then mi,r′=m~i,r′, and thus P(mi,r,m~i,r|Mr,M~r,fi,r,f~i,r)=P(mi,r′,m~i,r′|Mr,M~r′,fi,r′,f~i,r′), such that the probabilities for r and r′ to be the true pool would be equal even when the counts are very different.)
 
-We evaluate this probability (Equation 4 with replacements from Equation 7 and Equation 8) for each pool r in turn. We then normalize to obtain the final posterior probabilities for the observed read counts:(9)P(i,r)≡P(mi,r,m~i,r|Mr,M~r,fi,r,f~i,r)=P(mi,r,m~i,r|Mr,M~r,fi,r,f~i,r)∑r8P(mi,r,m~i,r|Mr,M~r,fi,r,f~i,r).
+$$
+M~_{r}=\suminm~_{i,r},
+$$
 
-Our cost function for assigning barcode i to any well in row r is then given by the negative log posterior probability:(10)C(i,r)=−log⁡P(i,r).
+where the sums are taken over all segregant barcodes i. Since we have observed two counts $m_{i,r}$ and $m~_{i,r}$ sampled from two underlying frequencies $f_{i,r}$ and $f~_{i,r}$, we write the probability of observing the count data as a product of two binomials:
 
-For the row in the cost matrix corresponding to segregant i, and for one out of every eight columns (i.e. all of the wells across all of the plates that correspond to row r), we add this cost. We then repeat for all of the other row pools, completing the row costs for this segregant.
+$$
+P⁢(m_{i,r},m~_{i,r}|M_{r},M~_{r},f_{i,r},f~_{i,r})=[(f_{i,r})^{m_{i,r}}⁢(1-f_{i,r})^{M_{r}-m_{i,r}}]⁢[(f~_{i,r})^{m~_{i,r}}⁢(1-f~_{i,r})^{M~_{r}-m~_{i,r}}].
+$$
 
-Next we proceed in the same manner with the 12 column pools, 4 plate pools, 12 set pools, and 23 batch pools. For each type of pool, we scan through each pool, evaluating the probability for each pool, normalizing by the sum across pools, taking the negative log, and adding the resulting cost to all wells corresponding to that pool. Once this process is complete, we have finished calculating the costs for segregant i, that is, we have filled in one complete row of the cost matrix. Each entry in this row represents one assignment (i.e. one unique row/column/plate/set/batch combination r,c,p,s,b paired with segregant barcode i), and since we have summed the costs over all of the 5 types of pools, the final posterior probability for each assignment is given by(11)P(i,r,c,p,s,b)=P(i,r)⋅P(i,c)⋅P(i,p)⋅P(i,s)⋅P(i,b).
+Since we do not have access to the true frequencies $f_{i,r}$ and $f~_{i,r}$, we replace them with their maximum likelihood estimates, that is, the observed frequencies in the read count data:
 
-Finally, we repeat this process for all segregants i=1,…,n. This produces our final cost matrix of dimension n=53,560 barcodes by w=54,483 wells.
+$$
+f_{i,r}→\frac{m_{i,r}}{M_{r}},
+$$
+
+
+
+$$
+f~_{i,r}→\frac{m~_{i,r}}{M~_{r}}.
+$$
+
+Under the assumption that pool $r$ is the correct pool, we expect $f~_{i,r}<f_{i,r}$. To enforce this prior, we set
+
+$$
+f_{i,r}→max⁢(\frac{m_{i,r}}{M_{r}},\frac{m~_{i,r}}{M~_{r}}),
+$$
+
+
+
+$$
+f~_{i,r}→min⁢(\frac{m_{i,r}}{M_{r}},\frac{m~_{i,r}}{M~_{r}}).
+$$
+
+This also breaks the symmetry inherent in Equation 4 when there are counts in only two pools (i.e. if there are only pools $r$ and $r^{′}$, then $m_{i,r^{′}}=m~_{i,r^{′}}$, and thus $P(m_{i,r},m~_{i,r}|M_{r},M~_{r},f_{i,r},f~_{i,r})=P(m_{i,r^{′}},m~_{i,r^{′}}|M_{r},M~_{r^{′}},f_{i,r^{′}},f~_{i,r^{′}})$, such that the probabilities for $r$ and $r^{′}$ to be the true pool would be equal even when the counts are very different.)
+
+We evaluate this probability (Equation 4 with replacements from Equation 7 and Equation 8) for each pool $r$ in turn. We then normalize to obtain the final posterior probabilities for the observed read counts:
+
+$$
+P(i,r)≡P(m_{i,r},m~_{i,r}|M_{r},M~_{r},f_{i,r},f~_{i,r})=\frac{P(m_{i,r},m~_{i,r}|M_{r},M~_{r},f_{i,r},f~_{i,r})}{\sumr8P(m_{i,r},m~_{i,r}|M_{r},M~_{r},f_{i,r},f~_{i,r})}.
+$$
+
+Our cost function for assigning barcode i to any well in row $r$ is then given by the negative log posterior probability:
+
+$$
+C(i,r)=−log⁡P(i,r).
+$$
+
+For the row in the cost matrix corresponding to segregant i, and for one out of every eight columns (i.e. all of the wells across all of the plates that correspond to row $r$), we add this cost. We then repeat for all of the other row pools, completing the row costs for this segregant.
+
+Next we proceed in the same manner with the 12 column pools, 4 plate pools, 12 set pools, and 23 batch pools. For each type of pool, we scan through each pool, evaluating the probability for each pool, normalizing by the sum across pools, taking the negative log, and adding the resulting cost to all wells corresponding to that pool. Once this process is complete, we have finished calculating the costs for segregant i, that is, we have filled in one complete row of the cost matrix. Each entry in this row represents one assignment (i.e. one unique row/column/plate/set/batch combination $r,c,p,s,b$ paired with segregant barcode i), and since we have summed the costs over all of the 5 types of pools, the final posterior probability for each assignment is given by
+
+$$
+P(i,r,c,p,s,b)=P(i,r)⋅P(i,c)⋅P(i,p)⋅P(i,s)⋅P(i,b).
+$$
+
+Finally, we repeat this process for all segregants $i=1,…,n$. This produces our final cost matrix of dimension $n=53,560$ barcodes by $w=54,483$ wells.
 
 With the cost matrix in hand, we use the Python package lapsolver (Heindl, 2020) to find the optimal assignment. Since our cost matrix is rectangular (fewer barcodes than wells), we obtain an assignment for every barcode but some wells remain unassigned. These can be clearly interpreted as “quasi-blanks”: in our plate scans, we see a small number of wells that contain only tiny colonies after two days of growth, large enough to be distinguished by eye from true blanks but too small to be represented well in pool sequencing, genotyping, or bulk fitness assays.
 
@@ -261,7 +747,7 @@ Next we consider several validations of these assignments. If mis-assignments oc
 
 While we cannot have complete confidence in every assignment, especially those with sparse read data, we can validate that the large majority of assignments are indeed correct by making use of our knowledge of parental barcodes. Recall that each segregant contains two barcodes, the first from its BY parent (the ‘BY barcode’) and the second from its RM parent (the ‘RM barcode’), and that the matings were done from 23 × 12 separate pools with unique barcodes. Here the 23 BY parental libraries were used for the 23 batches, and the 12 RM parental libraries were used for 12 ‘sets’ of 4 96-well plates within each batch. We also deeply sequenced each parental library, so that we know which BY barcodes belong to each batch and which RM barcodes belong to each set. Thus, for each assignment, we can check whether the batch and set, obtained from the above procedure, agree with the parental libraries. For the first-pass barcodes (those with complete and unique addresses), we observe that 99.5% of the 46,403 assignments have correct matches for both batch and set. For the second-pass barcodes (those obtained through the LAP algorithm), the fraction with both batch and set correct is 97.7% of the 53,560 assignments. Although this method does not allow us to verify the other three types of pools (plate, row, and column), these high fractions of correct assignments indicate that both passes are extremely effective at extracting robust assignments from our noisy read count data.
 
-## High-throughput liquid handling of the F1 segregants
+### High-throughput liquid handling of the F1 segregants
 
 All of the procedures described in sections above (i.e. the segregant production, selection, and sorting, the combinatorial pooling, and the individual whole genome sequencing library preparation) must be performed at the scale of 100,000 segregants, corresponding to more than 1000 96-well plates. To accomplish this within time and cost constraints, we relied on extensive use of liquid-handling robots as well as a batch process workflow. Here we describe the operational protocol for large-scale processing.
 
@@ -269,19 +755,19 @@ Many of our processes require simple pipetting in 96-well format and/or pooling 
 
 We chose to break the full experiment into manageable ‘batches’ to reduce equipment costs (by reusing consumables and equipment for each batch) and improve consistency (by ensuring each step is performed near-simultaneously for all segregants in a batch). Due to our time and equipment constraints, we chose a batch size of 48 96-well plates, or 4608 segregants. Each batch requires 14 days to process, but multiple batches can be processed concurrently in a staggered fashion. We regularly maintained 2–6 batches in various stages, allowing us to complete 23 batches in about 6 months.
 
-## Production of barcoded F1 segregants
+#### Production of barcoded F1 segregants
 
 As described above, we produced multiple separate parental barcode libraries (23 for BY and 12 for RM). For each of the 23 batches, we mated one of the BY barcoded libraries to all 12 RM libraries separately, each mating representing a ‘set’ within that batch. We proceeded with mating, barcode recombination, barcode selection, sporulation, single-cell sorting and growth as described above, with the 12 sets kept separate throughout. From each of the 12 sets, we sorted 384 individual cells into four 96-well plates, resulting in the 48 96-well plates for that batch. From these plates, we use a portion of cells for the archive construction, combinatorial pool construction, and genotyping as described below. Note that because we sequenced each of the BY and RM parental libraries, we can identify in which batch and set each segregant was produced based on its first (BY) and second (RM) barcode, respectively.
 
-## Archiving of the F1 segregants
+#### Archiving of the F1 segregants
 
 Once the cells have grown, we create a frozen archive with segregants individually arrayed in 384-well format, to serve as an ultimate repository of the strain collection. For each batch, we use the Biomek to fill twelve 384-well ‘archive’ plates (Bio-Rad, Hard-Shell #HSP3801) with 10 µL of 15% glycerol. The 48 96-well plates of saturated cultures were shaken in a tabletop plate shaker (Heidolph Titramax 100) to ensure cell dispersion. The Biomek was then used to transfer and mix 20 µL of culture into each well of the archive plates (final concentration of 5% glycerol) in groups of 8 plates at a time. Archive plates were sealed with aluminum foil and stored at –80 °C.
 
-## Cell lysis
+#### Cell lysis
 
 After archiving, another portion of cells is transferred to 384-well ‘lysis’ plates for the lysis, extraction, and tagmentation reactions. We first use the Biomek to transfer 3 µL of glucanase mix to the twelve 384-well lysis plates. We use the Biomek to add and mix 5 µL of saturated culture into each well, again processing eight plates at a time. We seal the plates with PCR sealing film (VWR 89134–428) and then incubate at 37 °C in an air-incubator for 45 min, followed by heating in a thermocycler at 80 °C for 5 min. The cell lysates are stable at 4 °C or can be immediately processed.
 
-## Tn5 transposition
+#### Tn5 transposition
 
 According to our indexed tagmentation design, each well in a 384-well plate is uniquely indexed by the combination of L-indexed and R-indexed Tn5 preparations that it receives. We implement this reaction by first using the Biomek Span-8 to array the concentrated enzymes in four 96-well master mix plates; for each 384-well lysis plate in the batch, we then add enzyme mixture to the corresponding wells, perform the tagmentation reaction, and then pool the samples into one tube for later purification and PCR.
 
@@ -293,7 +779,7 @@ To form the final tagmentation reaction, we add 12 µL of master mix (10 µL of 
 
 Once completed, the reaction is quickly stopped by adding 2.5 µL of stop buffer to every well using the Biomek. We then use the Span-8 head to pool each 384-well plate into a single 1.5 mL microfuge tube, resulting in 12 tubes per batch. Column purification and PCR are performed as described above.
 
-## Combinatorial pooling
+#### Combinatorial pooling
 
 For our combinatorial pooling barcode association, we chose to create the following pools: 12 column pools, each drawn from one of twelve columns from every 96-well plate in the experiment; eight row pools, each drawn from one of eight rows from every 96-well plate in the experiment; four plate pools, each drawn from one of the four 96-well plates in every set of the experiment; 12 set pools, each drawn from one of the twelve sets in every batch of the experiment; and 23 batch pools, each drawn from a whole batch of the experiment. This resulted in 59 total pools, each containing between 4608 and 26,496 barcodes, depending on the type of pool.
 
@@ -301,29 +787,29 @@ We constructed these pools by processing four 96-well plates at a time on the Bi
 
 For each batch, we also pooled each of the 48 96-well plates into their own single tube. These tubes are later pooled by hand across plates, sets, or batches as appropriate to produce the plate pools, set pools, and batch pools.
 
-## Producing pools for bulk phenotyping assays
+#### Producing pools for bulk phenotyping assays
 
 It is convenient for our bulk phenotyping assays to produce frozen stocks containing all of our segregants, as well as the reference parental strains BYref and RMref, in a single pool. As we process each batch, we use the Biomek to pool across all 48 96-well plates of segregants into a single tube, to which we manually add glycerol to a final concentration of 5% before storage at –80 °C. After we have processed all 23 batches, these 23 individual pools can be later thawed, diluted 1:25 in 5 mL YPD, and grown for 24 hr, after which they are combined at equal frequency into a master pool containing all 99,950 lineages. To this pool, we add our reference (parental) strains BYref and RMref at a frequency approximately 100 times larger than the average barcode frequency. We then add glycerol to 5% final concentration and store this master pool in aliquots at –80 °C. Each aliquot can then be thawed as needed to conduct bulk phenotyping assays.
 
-## Material reuse by washing
+#### Material reuse by washing
 
 In an effort to reduce material cost and waste, we wash and reuse both Biomek liquid handling tips and polypropylene 96-well plates. Polypropylene 96-well plates used to grow and pool yeast cells are thoroughly washed with water and sterilized by autoclave, after which they can be reused with no ill effects.
 
 We developed Biomek-based tip washing protocols that successfully prevent cell and DNA cross-contamination between wells. Tips that contact living cells are sterilized by pipette-mixing several times with sterile water, followed by pipette-mixing several times in 100% ethanol. After air-drying in boxes overnight, tips are ready to be reused. However, this protocol is insufficient for potential DNA cross-contamination during the tagmentation reaction. Tips that contact DNA are first decontaminated by pipette-mixing several times in 20% bleach, followed by water and ethanol wash steps as above. We found this to be sufficient to remove any traces of DNA contamination.
 
-## Bulk phenotyping
+### Bulk phenotyping
 
-A key challenge for QTL mapping at scale is performing large numbers of accurate phenotype measurements. In our case, we require millions of measurements (dozens of phenotypes for each of ∼100,000 segregants). Each measurement must be made with high precision to achieve accurate mapping of polygenic traits. We achieve this using barcode-based assays which we can perform in bulk and read out by sequencing. The key simplification is that, because we know the genotype corresponding to each barcode, sequencing the barcode locus compresses each segregant’s full genotype information into a single sequencing read. This high information density, combined with the flexibility of sequencing-based assays and the decreasing cost per base of next-generation sequencing, allow us to collect a wide variety of phenotype measurements for reasonable cost and time expenditures.
+A key challenge for QTL mapping at scale is performing large numbers of accurate phenotype measurements. In our case, we require millions of measurements (dozens of phenotypes for each of $∼100,000$ segregants). Each measurement must be made with high precision to achieve accurate mapping of polygenic traits. We achieve this using barcode-based assays which we can perform in bulk and read out by sequencing. The key simplification is that, because we know the genotype corresponding to each barcode, sequencing the barcode locus compresses each segregant’s full genotype information into a single sequencing read. This high information density, combined with the flexibility of sequencing-based assays and the decreasing cost per base of next-generation sequencing, allow us to collect a wide variety of phenotype measurements for reasonable cost and time expenditures.
 
-One type of trait that lends itself well to bulk sequencing-based assays is growth rate in different media conditions, which we refer to here as ‘fitness’. Previous QTL mapping work in yeast often measured growth rate by observing the growth of individual colonies on agar plates (Bloom et al., 2013; Bloom et al., 2019). Instead, we can combine all of our segregants into one well-mixed liquid culture, resulting in an all-to-all competition throughout multiple rounds of serial dilution passaging. Barcoded lineages will change in frequency in the population according to their relative fitness, which we read out by population barcode sequencing at multiple timepoints. Note that in our serial dilution assays, ‘fitness’ is determined from the frequency change over multiple passages (see Appendix 2), which is not exactly equal to the growth rate as measured in log phase. We typically maintain such bulk fitness assays for about 50 generations, which provides enough time for lineages of similar fitness to be distinguished, while not allowing for lineages to fix in the population or acquire additional mutations that would significantly impact the frequency trajectories. To avoid the introduction of noise from genetic drift, we maintain effective population sizes of ∼108.
+One type of trait that lends itself well to bulk sequencing-based assays is growth rate in different media conditions, which we refer to here as ‘fitness’. Previous QTL mapping work in yeast often measured growth rate by observing the growth of individual colonies on agar plates (Bloom et al., 2013; Bloom et al., 2019). Instead, we can combine all of our segregants into one well-mixed liquid culture, resulting in an all-to-all competition throughout multiple rounds of serial dilution passaging. Barcoded lineages will change in frequency in the population according to their relative fitness, which we read out by population barcode sequencing at multiple timepoints. Note that in our serial dilution assays, ‘fitness’ is determined from the frequency change over multiple passages (see Appendix 2), which is not exactly equal to the growth rate as measured in log phase. We typically maintain such bulk fitness assays for about 50 generations, which provides enough time for lineages of similar fitness to be distinguished, while not allowing for lineages to fix in the population or acquire additional mutations that would significantly impact the frequency trajectories. To avoid the introduction of noise from genetic drift, we maintain effective population sizes of $∼10^{8}$.
 
 All of the phenotypes reported in this paper are ‘fitness’ phenotypes, obtained by bulk fitness assays as we describe here. However, we also note that bulk barcode-based phenotyping is not limited to fitness phenotypes. Any phenotype that can be translated by some assay into barcode frequency changes is amenable. This includes ‘shock’ phenotypes, where frequencies are measured before and after a sudden perturbation; plating-based phenotypes, like mating efficiency and transformation efficiency; and fluorescence phenotypes, obtained by flow cytometry sorting and sequencing, among others.
 
-## Growth experiments
+#### Growth experiments
 
 The complete frozen pool of F1 segregants (containing reference parental strains) was grown in 5 mL YPD by inoculating approximately 107 total cells. We diluted these populations by 1:27 daily by passaging 781 µL into 100 mL fresh media in 500 mL baffled flasks. Whole population pellets, obtained from 1.5 mL of saturated culture, were stored daily at –20 °C for later sequencing. As previously described (Nguyen Ba et al., 2019), this protocol results in about seven generations per day, with a daily bottleneck size of about 108 in most assay environments. We performed two replicates of each assay and sampled for 49 generations (seven timepoints). Only five timepoints (representing 7, 14, 28, 42, and 49 generations) were sequenced.
 
-## Amplicon barcode sequencing
+#### Amplicon barcode sequencing
 
 Genomic DNA from cell pellets was processed as in Nguyen Ba et al., 2019. Briefly, DNA was obtained by zymolyase-mediated cell lysis (5 mg/mL Zymolyase 20T (Nacalai Tesque), 1 M sorbitol, 100 mM sodium phosphate pH 7.4, 10 mM EDTA, 0.5% 3-(N,N-Dimethylmyristylammonio)propanesulfonate (Sigma, T7763), 200 µg/mL RNAse A, and 20 mM DTT) and binding on silica mini-preparative columns with guanidine thiocyanate buffer (4 volumes of 100 mM MES pH 5, 4.125 M guanidine thiocyanate, 25% isopropanol, and 10 mM EDTA). After binding, the columns were washed with a first wash buffer (10% guanidine thiocyanate, 25% isopropanol, 10 mM EDTA) and then a second wash buffer (80% ethanol, 10 mM Tris pH 8), followed by elution into elution buffer (10 mM Tris pH 8.5). 1.5 mL of pelleted cells eluted into 100 µL routinely provided about 1–2 µg of total DNA.
 
@@ -335,7 +821,7 @@ This initial processing results in a set of putative barcodes. However, these pu
 
 Finally, we can calculate the counts of each error-corrected true barcode by removing duplicate reads, using the unique molecular identifiers from the first-stage PCRs. Frequencies calculated from these counts are used to infer fitnesses for all segregants, as explained in Appendix 2. After all filtering, and across all assays, our final mean (median) sequencing coverage was 185 (48) reads per barcode per timepoint per replicate.
 
-## Reconstruction of causal variants
+### Reconstruction of causal variants
 
 To confirm the estimated fitness effects of candidate lead SNPs and their interactions from our model, we reconstructed potentially causal variants either as single or double-mutants onto the BY background. Briefly, we started from YAN564 (MATα, his3Δ1, ura3Δ0, leu2Δ0, lys2Δ0, RME1pr::ins-308A, ybr209w:: Gal10pr-Cre, can1::Ste2pr-SpHIS5-Ste3pr-LEU2, HO::SpCas9-B112-ER), which expresses Cas9 under an inducible promoter with 20 μM estradiol. Cells were induced with estradiol and co-transformed with a plasmid expressing a guide RNA targeting the SNP of interest under the SNR52 promoter and with a double-stranded linear fragment that simultaneously removes the guide targeting sequence and introduces the SNP of interest (allele from RM11-1a). In some cases, guide RNAs were not effective and reconstructions were performed using Delitto Perfetto. Resulting strains also harbor synonymous mutations on the vicinity of the reconstructed SNP as required for the mutagenesis procedure. Reconstructed SNPs were all confirmed by Sanger sequencing. To maximize the probability to observe an effect, we chose lead SNPs that had predicted effects in multiple environments and had small credible intervals, prioritizing non-synonymous variants, and reconstructed key known QTL. In total, we reconstructed the following QTL: HAP1(Ty1*), IRA2(A345T), VPS70(P199L), BUL2(L883F), PHO84(L259P) and MKT1(D30G). For practical reasons, we reconstructed only 13 out of the 15 possible pairwise combinations of these 6 QTL.
 
@@ -343,4 +829,4 @@ The reconstruction strains, as well as YAN564, were individually competed agains
 
 We compared the measured fitness of each reconstruction strain to the predictions from our additive-only and additive-plus-pairwise models, for both single and double-mutant strains (Figure 5—figure supplement 1 top and middle row). We find general concordance between predicted and measured fitnesses, except for discrepancies in magnitude (as discussed in the main text). We also find that four out of the double-mutant strains largely depart from values predicted from the models, as well as from the sum of the measured fitnesses of the respective single mutants (Figure 5—figure supplement 1 yellow-highlighted datapoints), suggesting either a much larger epistatic effect than estimated by our models, or unaccounted mutations from the transformation process such as ploidy changes or mitochondrial disruptions. In line with the second hypothesis, we found that three out of four of these mutants were non-respiring petites (MKT1/VPS70 being the one that respires), and therefore we removed all four incongruent strains from further analyses. We also excluded the outlier measurements from MKT1 mutants assayed in Gu; a measurement that has been independently confirmed in other experiments from our group (unpublished). Possible explanations for this and other discrepancies between predicted and measured effects are additional epistatic terms not detected by our QTL models (e.g. closely linked, or higher-order effects), systematic differences between the environments in bulk fitness assays and reconstruction competition assays, or differences between the panel and reconstruction strains.
 
-To compare how well the additive-only and the additive-plus-pairwise model predictions match measured reconstruction fitness values, we used a permutation test (H0: additive-only and additive-plus-epistasis terms fit measured effects equally well; H1: additive-plus-epistasis terms fit measured effects better than additive-only). We calculated the ratio between the sum squared errors (SSE) between measured and predicted values of the two models, and computed a one-sided p-value from an empirical distribution obtained through 10,000 random permutations of the data. This test rejected H0 when pooling single and double mutant data (SSE ratio of 0.46, p<10−4; Figure 5A, inset), as well as when keeping single and double-mutant data separate (Figure 5—figure supplement 2; single: SSE ratio of 0.40, p<0.01; double: SSE ratio of 0.48, p<10−4).
+To compare how well the additive-only and the additive-plus-pairwise model predictions match measured reconstruction fitness values, we used a permutation test (H0: additive-only and additive-plus-epistasis terms fit measured effects equally well; H1: additive-plus-epistasis terms fit measured effects better than additive-only). We calculated the ratio between the sum squared errors (SSE) between measured and predicted values of the two models, and computed a one-sided p-value from an empirical distribution obtained through 10,000 random permutations of the data. This test rejected H0 when pooling single and double mutant data (SSE ratio of 0.46, $p<10^{−4}$; Figure 5A, inset), as well as when keeping single and double-mutant data separate (Figure 5—figure supplement 2; single: SSE ratio of 0.40, $p<0.01$; double: SSE ratio of 0.48, $p<10^{−4}$).

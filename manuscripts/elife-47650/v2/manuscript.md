@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.47650.001 RET is a receptor tyrosine kinase (RTK) that plays essential roles in development and has been implicated in several human diseases. Different from most of RTKs, RET requires not only its cognate ligands but also co-receptors for activation, the mechanisms of which remain unclear due to lack of high-resolution structures of the ligand/co-receptor/receptor complexes. Here, we report cryo-EM structures of the extracellular region ternary complexes of GDF15/GFRAL/RET, GDNF/GFRα1/RET, NRTN/GFRα2/RET and ARTN/GFRα3/RET. These structures reveal that all the four ligand/co-receptor pairs, while using different atomic interactions, induce a specific dimerization mode of RET that is poised to bring the two kinase domains into close proximity for cross-phosphorylation. The NRTN/GFRα2/RET dimeric complex further pack into a tetrameric assembly, which is shown by our cell-based assays to regulate the endocytosis of RET. Our analyses therefore reveal both the common mechanism and diversification in the activation of RET by different ligands.
+RET is a receptor tyrosine kinase (RTK) that plays essential roles in development and has been implicated in several human diseases. Different from most of RTKs, RET requires not only its cognate ligands but also co-receptors for activation, the mechanisms of which remain unclear due to lack of high-resolution structures of the ligand/co-receptor/receptor complexes. Here, we report cryo-EM structures of the extracellular region ternary complexes of GDF15/GFRAL/RET, GDNF/GFRα1/RET, NRTN/GFRα2/RET and ARTN/GFRα3/RET. These structures reveal that all the four ligand/co-receptor pairs, while using different atomic interactions, induce a specific dimerization mode of RET that is poised to bring the two kinase domains into close proximity for cross-phosphorylation. The NRTN/GFRα2/RET dimeric complex further pack into a tetrameric assembly, which is shown by our cell-based assays to regulate the endocytosis of RET. Our analyses therefore reveal both the common mechanism and diversification in the activation of RET by different ligands.
 
 ## Introduction
 
@@ -30,41 +30,91 @@ Signaling through RET plays essential regulatory roles in the development of the
 
 Both RET and the co-receptors are expressed on the cell surface and use their extracellular domains to interact with the ligands. Several structures of the complexes between ligands and co-receptors of RET have been solved by X-ray crystallography, which all display a 2:2 architecture where each subunit in the dimeric ligands binds the second domain (D2) of one co-receptor molecule (Hsu et al., 2017; Sandmark et al., 2018; Wang et al., 2006; Parkash and Goldman, 2009). The angle between the two halves of these 2:2 complexes however differ substantially (Hsu et al., 2017; Parkash and Goldman, 2009), raising the question how such different configurations of the ligands/co-receptors are all capable of inducing the activation of the RET kinase. The extracellular region of RET contains four atypical cadherin-like domains (CLD1-4) followed by a cysteine-rich domain (CRD) (Figure 1A), which have all been implicated in interacting with ligands or co-receptors (Goodman et al., 2014; Amoresano et al., 2005). The crystal structure of the CLD1-2 tandem shows an unusual clamshell-like arrangement (Kjaer et al., 2010), whereas high-resolution structures of the other domains in the RET extracellular region are not available. The structure of the intact RET extracellular region in complex with GDNF and GFRα1 has been determined at low resolution by negative-stain electron microscopy (EM), showing an overall batwing-like shape in which the two wing-shaped RET molecules are tethered together by the dimeric GDNF/GFRα1 complex in the middle, and suggesting that the CRD is important for the dimerization and activation of RET (Goodman et al., 2014). This structure however does not clearly resolve the individual domains in RET or their interactions with GDNF and GFRα1. In particular, the conformation and location of the membrane proximal domain CRD in RET remain unclear. High-resolution structures of RET ternary complexes are required for addressing the questions how the different ligands and co-receptors interact with RET and whether they can lead to different downstream signaling.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/47650/elife-47650-fig1-v2.jpg)
+
+**Figure 1.:** (A) Domain organization of the ligands, co-receptors and RET. The domains in gray are absent in the cryo-EM structures. (B) Cartoon representations of the four RET ternary complexes. The angles between the two wings are indicated -in the side views. Dotted lines indicate the connection from the CRD to the transmembrane region of RET.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/47650/elife-47650-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The SDS-PAGE analyses of each protein component on its own. (B) The upper and lower panels show the gel filtration profiles and SDS-PAGE analyses of the proteins, respectively. The right shifts of the complex peaks relative to that of RET alone suggest that the complexes were stable and remained intact during gel filtration chromatography. The earlier elution times and multiple peaks of the GDNF/GFRα1/RET, NRTN/GFRα2/RET and ARTN/GFRα3/RET complexes suggest that they formed larger oligomers in addition to the 2:2:2 complexes.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/47650/elife-47650-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The workflow for the NRTN/GFRα2/RET complex is shown as the representative. For the other three datasets, the image processing was carried out with the same workflow, except that tetramer refinement was only performed for NRTN/GFRα2/RET complex and no focused refinement was performed for the GDNF/GFRα1/RET complex. (B) Unsharpened cryo-EM maps colored by local resolution.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/47650/elife-47650-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Refined maps of the 2:2:2 complexes. RET, the co-receptors and ligands were colored cyan, green and yellow, respectively. (B) Symmetry expansion and focused refinement of one dimeric ligand bound to one RET and one co-receptor molecule (C) Gold standard Fourier Shell Correlation (FSC) curves of the focused refined maps. Yellow, GDNF/GFRα1/RET; green, NRTN/GFRα2/RET; Red, ARTN/GFRα3/RET. cyan, GDF15/GFRAL/RET; (D) FSC curves between the maps and atomic models. The color scheme is the same as in (C).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/47650/elife-47650-fig1-figsupp4-v2.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/47650/elife-47650-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (A) and (B) 3D reconstructions of the GDF15/GFRAL/RET and ARTN/GFRα3/RET complexes, respectively, at a low contour level showing extra density underneath the ligands. This weak density likely represents the linker region between the CRD and transmembrane region in RET. (C) 3D reconstruction of RET in the apo-state. The RET atomic model from the ARTN/GDFRα3/RET complex is fit into the map to show the similarity between apo-RET and RET in the ternary complexes.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/47650/elife-47650-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** This comparison shows that the different angles of the two wings in the complexes are caused by both the different conformations of the ligand dimers and their different interactions with their respective co-receptors.
+
 Here, we report the cryo-EM structures of four extracellular 2:2:2 ligand/co-receptor/RET complexes, including GDF15/GFRAL/RET, GDNF/GFRα1/RET, NRTN/GFRα2/RET and ARTN/GFRα3/RET, at near-atomic resolution. The structures show that the extracellular region of RET adopts a ‘C-clamp’ shape, which is stabilized by extensive inter-domain interactions as well as binding of calcium ion at multiple sites. Due to this unique C-clamp shape, the recruitment of two RET molecules onto dimeric ligand/co-receptor complexes brings the two RET-CRDs to close proximity to promote the dimerization and trans-autophosphorylation of the intracellular kinase domain. Surprisingly, our cryo-EM results reveal that two 2:2:2 NRTN/GFRα2/RET complexes can dimerize to form a 4:4:4 complex through a novel ligand/receptor interface. We found that the 4:4:4 complex suppresses RET endocytosis. These findings suggest that, while activating RET through a common mechanism, the different ligands can use distinct interactions and mechanisms to fine-tune RET activity, which may lead to different signaling outcomes.
 
 ## Results
 
-## Structure determination of RET extracellular ternary complexes
+### Structure determination of RET extracellular ternary complexes
 
 To understand the activation mechanisms of RET by different ligands, we successfully reconstituted four RET extracellular ternary complexes, GDF15/GFRAL/RET, GDNF/GFRα1/RET, NRTN/GFRα2/RET and ARTN/GFRα3/RET, for cryo-EM structure determination (Figure 1—figure supplement 1). The initial 3D reconstruction of the 2:2:2 GDF15/GFRAL/RET complex with 2-fold symmetry applied was determined at relatively low-resolution (4.0 Å), partly due to the relative movement between the two wings in the batwing-shaped complexes. To improve the resolution, we used the symmetry expansion approach as well as focused refinement with signal subtraction as described in our previous work (Figure 1—figure supplements 2–4) (Bai et al., 2015; Zhou et al., 2015). The resulting reconstruction comprising one RET and GFRAL with the GDF15 dimer bound reached 3.7 Å resolution. This reconstruction in combination with the intact map with the 2-fold symmetry allowed us to build an accurate atomic model for the entire 2:2:2 complex (Figure 1 and Figure 1—figure supplement 4). The same procedure was used for the structure determination of the 2:2:2 NRTN/GFRα2/RET and ARTN/GFRα3/RET complexes, leading to reconstructions to 3.4 Å and 3.5 Å resolution, respectively (Figure 1—figure supplement 3). The reconstruction of the GDNF/GFRα1/RET complex reached lower resolution (4.4 Å) due to preferred orientation of particles (see Materials and methods for details) (Figure 1—figure supplement 3).
 
-## Overall architecture of RET extracellular ternary complexes
+### Overall architecture of RET extracellular ternary complexes
 
 All four complexes show the same batwing-like architecture as shown in the previously reported negative-stain EM structure of the GDNF/GRFα1/RET (Goodman et al., 2014), with the dimeric ligands located at the center connecting the two wings formed together by RET and the co-receptors (Figure 1). A recently published medium resolution (5.7 Å) cryo-EM structure of the NRNT/GFRα2/RET complex displays a similar overall architecture (Bigalke et al., 2019). The outer edge of the wing is defined by RET, which assumes an overall ‘C’-shape to clamp on both the ligands and co-receptors. Low-resolution reconstructions of RET in the apo-state with cryo-EM by us (Figure 1—figure supplement 5C) and with small-angle X-scattering reported previously both show a similar C-clamp shape (Goodman et al., 2014), suggesting that the RET extracellular region is relatively rigid and does not undergo substantial conformational changes upon binding of the ligands/co-receptors. Extensive interactions are formed between the consecutive domains in the RET extracellular region, explaining this rigidity (Figure 2A–2D). As expected, all the four CLDs in RET adopt the cadherin-like fold characterized by a two-layered β-sandwich. CLD1 and CLD2 pack tightly against each other to form the clamshell-like structure as shown in the published crystal structure of these two domains (Figure 2A) (Kjaer et al., 2010). CLD3 is connected to CLD2 with an inter-domain angle of ~ 144°, which is maintained by binding of three calcium ions at the inter-domain junction (Figure 2B). The calcium ions are coordinated by a number of conserved negatively charged residues from CDL2 and CLD3 that have been identified as classical cadherin calcium-binding motifs and important for the correct folding of RET (Figure 2B) (Goodman et al., 2014; van Weering et al., 1998; Kjaer and Ibáñez, 2003; Anders et al., 2001). The inter-domain angle between CLD3 and CLD4 is ~ 130°, leading to a smooth curved shape of CLD2, CLD3 and CLD4. The interface between CLD3 and CLD4 is dominated by hydrophobic residues (Figure 2C). CRD docks onto CLD4 in an orthogonal orientation through an extensive interface containing both hydrophobic and polar interactions, completing the bottom portion of the C-clamp (Figure 2D).
 
-## Structure of CRD in RET
+![Figure 2.](https://cdn.elifesciences.org/articles/47650/elife-47650-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) Overall structure and the inter-domain interactions in the RET extracellular region. (E) Structure of the CRD domain of RET. The expanded view shows the details of the putative calcium binding site. The density for the calcium ion is very strong, displayed as blue mesh at the 20σ threshold. (F) Topology diagram of the CRD domain. (G) Calcium binding site in calmodulin (PDB ID: 1cll). (H) Sequence alignment of the calcium binding segment in the CRD domain of RET from human (h), mouse (m), chicken (c) and Drosophila (d). Circles and triangles highlight residues coordinating the calcium ion with sidechains and backbone carbonyl, respectively.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/47650/elife-47650-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Mutations summarized in the entry for RET in the Uniprot database are highlighted as spheres in the structure. Several of mutations found in Hirschsprung disease (R77, H114 and R175) are at the co-receptor binding surface. D300 is a part of the calcium binding site in CLD3.
+
+### Structure of CRD in RET
 
 Notably, CRD in RET adopts a new fold that does not show significant similarity to other proteins in the PDB database. This small globular domain is composed of three small 2-or 3-stranded β-sheets and two short helices, which are connected by extensive loops (Figure 2E and F). These structural elements are stapled together by seven disulfide bonds. Cys630 and Cys634 in the linker between CRD and the transmembrane region of RET have been shown to form another disulfide bond, but the corresponding density is not well-resolved in our cryo-EM maps (Chappuis-Flament et al., 1998). There is a strong blob of density in a pocket surrounded by a number of conserved acidic residues in CRD, including Asp567, Glu574 and Asp584, as well as several backbone carbonyl groups (Figure 2E and H). The arrangement of the oxygen atoms around the site resembles closely the calcium binding site in calmodulin (Figure 2G). We therefore tentatively assign this as a new calcium binding site in RET.
 
 The structure of the RET extracellular region provides a basis for understanding disease-causing mutations of some cysteine residues in RET-CRD. For example, mutations of Cys609, Cys611, Cys618, Cys620 and Cys634 cause MEN2A (Figure 2—figure supplement 1) (Mulligan et al., 1993; Mulligan, 2014). These cysteine residues sit either at the periphery of CRD or in the linker between CRD and the transmembrane region of RET (Figure 2E and Figure 2—figure supplement 1). Mutations of these residues may not dramatically affect the folding or cell surface localization of RET, but leave one unpaired cysteine residue at the periphery of the protein, which can subsequently induce ligand-independent dimerization and constitutive activation of RET by forming an inter-chain disulfide bond (Chappuis-Flament et al., 1998; Kjaer et al., 2006). On the other hand, loss-of-function mutations throughout the RET extracellular region have been associated with Hirschsprung’s disease (Edery et al., 1994; Pelet et al., 1998; Iwashita et al., 1996). Many of these mutations are distributed in the core of the protein, the co-receptor binding site or the calcium binding sites, thus likely affecting the stability or co-receptor binding of RET (Manié et al., 2001) (Figure 2—figure supplement 1).
 
-## Inter-subunit interactions in the RET ternary complexes
+### Inter-subunit interactions in the RET ternary complexes
 
 In all of the four ternary complex structures, the ligands use the convex face formed mostly by the two ‘finger’ loops to bind to the second domain (D2) of their respective co-receptors, similar to those shown by the previously determined X-ray structures of the ligand/co-receptor complexes (Hsu et al., 2017; Sandmark et al., 2018; Wang et al., 2006; Parkash and Goldman, 2009); therefore, we will not describe the ligand/co-receptors interface in detail here.
 
 RET makes contacts with the co-receptors and ligands by its N-terminal and C-terminal domains, respectively. The D3 domain of the co-receptors forms bipartite interfaces (denoted as interface I and II) with the N-terminal portion of the RET C-clamp in all of our reconstructions, although the detailed interactions are different in each (Figure 3A, Figure 3—figure supplement 1A, C and E). In the GDF15/GFRAL/RET complex, interface I is formed between a helix-loop-helix-loop motif (residues 246–265) in the D3 domain of GFRAL and the concave surface on CLD1 and CLD2 in RET (Figure 3A). The interface includes Trp37, Ala35, Thr120, Tyr146 and Thr170 from RET, Lys251, Thr261 and Ser263 from GFRAL. Interface II is made between a short loop (residues 295–299) in GFRAL and the CLD2-CLD3 junction near the calcium binding sites (Figure 3A). The segments in GFRα1, GFRα2 and GFRα3 corresponding to the helix-loop-helix-loop motif in GFRAL are much shorter and adopt extended loop conformations (Figure 3—figure supplement 1A, C and E). As a result, interfaces I in GFRα1/RET, GFRα2/RET and GFRα3/RET are much smaller (buried surface areas less than 700 Å2) and likely weaker than that in GFRAL/RET (buried surface area ~ 1500 Å2). Interfaces II of GFRα1, GFRα2 and GFRα3 with RET (buried surface areas ~ 730–1010 Å2) however are more extensive than that in GFRAL/RET (buried surface areas ~ 680 Å2), which may partially compensate for their weaker interfaces I. The D1 domain of the co-receptors is invisible in the 3D reconstructions of GDF15/GFRAL/RET, GDNF/GFRα1/RET, and ARTN/GFRα3/RET, suggesting that it is not involved in the binding to either RET or the ligands in these three complexes. In contrast, the D1 domain of GFRα2 is resolved in the cryo-EM map of the NRTN/GFRα2/RET complex, and packs closely with the D3 domain as seen in the crystal structure of the NRTN/GFRα2 complex (Sandmark et al., 2018). The D1 domain of GFRα2 makes a few contacts with RET-CLD1, which may help stabilize the ternary complex.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/47650/elife-47650-fig3-v2.jpg)
+
+**Figure 3.:** (A) Interface between RET and GFRAL. An overall view of the complex structure is shown in the middle as a reference. (B) Interface between RET-CRD and GDF15. (C) Pull-down assays for the GDF15/GFRAL/RET ternary complex. Strep-tagged GFRAL bound to Streptavidin-conjugated beads was used to pull down GDF15 and RET. Streptavidin beads without Strep-GFRAL bound served as negative control. Mutations in either GFRAL or GDF15 abolish binding of RET. The results shown are representative of three biological repeats. (D) GDF15-induced ERK phosphorylation in HEK293 cells expressing full-length myc-tagged RET and GFRAL. Cells were treated with GDF15 at 10 nM for 15 min. ERK phosphorylation levels (pERK) were assessed by western blot. Expression levels of RET and GFRAL were monitored by anti-myc western blot. The results shown are representative of three biological repeats.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/47650/elife-47650-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A), (C) and (E) Interface between RET and the co-receptors. (B), (D) and (F) Interface between RET-CRD and the ligands.
+
 At the C-terminal portion of the RET C-clamp, RET-CRD interacts directly with the concave surface of the finger loops in the ligands, opposite to the side that binds the co-receptors (Figure 3B). As a result, the finger loops in the ligands appear to wedge between RET-CRD and the co-receptors. In the GDF15/GFRAL/RET complex, GDF15 embraces the surface formed by strands β3–7 along with several inter-strand loops in RET-CRD, through mainly hydrophobic interactions, burying Trp228, Met253 and Tyr297 in GDF15 and Ile551, Val591, Gly593, Tyr606 and Phe619 of CRD (Figure 3B). The interface also contains polar residues, such as Gln247 and Gln256 in GDF15. Similar ligand/CRD interfaces are formed in the other three ternary complexes (Figure 3—figure supplement 1B, D and F).
 
 The simultaneous binding of RET to both the ligand and co-receptor explains the cooperativity in the formation of the ternary complexes, while neither the ligand nor co-receptor alone is sufficient for activation of RET (Schlee et al., 2006). To confirm the binding mode as shown in our structures, we introduced a T261R mutations in GFRAL to disrupt its interface I with RET. Our pull-down assay results showed that wild-type GFRAL was able to pull down RET and GDF15 simultaneously, indicating the formation of the ternary complex (Figure 3C). In contrast, the T261R mutant of GFRAL failed to support the formation of the GDF15/GFRAL/RET ternary complex (Figure 3C). Similarly, the mutations W228E and Y297E in GDF15, which target the interaction with RET-CRD, also abolished the formation of the ternary complex (Figure 3C). Furthermore, we examined the effects of these mutations on RET signaling by monitoring ERK phosphorylation in cells. Treatment of cells stably expressing both RET and GFRAL with wild-type GDF15 induced robust phosphorylation of ERK (Figure 3D). However, the W228E and Y297E mutations in GDF15 led to dramatically decreased phosphorylation of ERK (Figure 3D). Similarly, cells expressing wild-type RET but the T261R mutant of GFRAL showed lower levels of ERK phosphorylation when stimulated with wild-type GDF15 (Figure 3D). These results together confirm that the interfaces as seen in the structure are important for the formation of the GDF15/GFRAL/RET ternary complex as well as the activation of RET in cells.
 
-## Activation mechanism of RET
+### Activation mechanism of RET
 
 In all of the four ternary complex structures, the ligand dimer directly interacts with the two CRDs from the two RET molecules and thereby bring them into close proximity. In addition, clear but relatively weak cryo-EM densities at the bottom faces of the ligands were observed for the linker between CRD and the transmembrane region of RET (Figure 1—figure supplement 5A and B). These observations suggest that the two copies of the linker converge near the plasma membrane. This configuration of the two RET molecules is poised to induce the dimerization of the transmembrane region and intracellular kinase domain, leading to cross-autophosphorylation of RET and subsequent activation of the downstream signaling cascades. Therefore, all the ligand/co-receptor pairs use the same general mechanism to activate RET. However, there are large differences in the angle between the two wings of the batwing-shaped complexes (Figure 1B), which mainly originate from the different conformations of the ligand dimers and their different interfaces with the co-receptors as noted previously (Figure 1—figure supplement 6) (Hsu et al., 2017; Sandmark et al., 2018; Parkash and Goldman, 2009). This angle in the GDF15/GFRAL/RET complex (~60°) is much more acute than that in the complexes of GDNF/GFRα1/RET (130°), NRTN/GFRα2/RET (105°) and ARTN/GFRα3/RET (108°) (Figure 1B). Associated with this angular variation, the distances between two CRDs in the complexes also differ to some extent. It is appealing to speculate that the differences in the angle and distance between the two RET molecules in the complexes may provide a mechanism in defining RET signaling specificity, which could potentially allow the five different ligands of RET to generate distinct signaling outputs from the same but versatile receptor.
 
-## RET can form higher-order oligomeric complexes
+### RET can form higher-order oligomeric complexes
 
 Surprisingly, some 2D class averages of the NRTN/GFRα2/RET and ARTN/GFRα3/RET complexes appear to be larger than the 2:2:2 complexes. With further 3D classification for the dataset of the NRTN/GFRα2/RET complex, we identified one class showing two 2:2:2 complexes arranged in a staggered fashion to form a 4:4:4 complex that resembles a four-bladed propeller. Subsequent 3D refinement yielded a map at 4.3 Å resolution, allowing us to build a complete model of the 4:4:4 complex by rigid-body fitting the atomic models of the protein components into cryo-EM map (Figure 4, Figure 4—figure supplement 1 and Video 1). We performed the same image processing procedure for the dataset of the ARTN/GFRα3/RET complex, but the 3D reconstruction failed due to inadequate number of particles.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/47650/elife-47650-fig4-v2.jpg)
+
+**Figure 4.:** (A) Refined map of the 4:4:4 NRTN/GFRα2/RET complex. (B) Atomic model of the 4:4:4 NRTN/GFRα2/RET complex shown in the surface representation. (C) Distance of the four RET molecules in the 4:4:4 complex to the plasma membrane. The gray box represents the plasma membrane. NRTN and GFRα2 are rendered semi-transparent to clearly show the position of the four RET molecules relative to the membrane. (D) Detailed view of the new interface between NRTN and RET that mediate the formation of the 4:4:4 complex. The view is expanded from the boxed region in the left panel of (B). (E) 3D class averages of the NRTN(WT)/GFRα2/RET and NRTN(R101E/R155E)/GFRα2/RET complexes. Wild-type NRTN formed complexes with RET and GFRα2 larger than the 2:2:2 stoichiometry, which were eliminated by the R101E/R155E mutation.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/47650/elife-47650-fig4-figsupp1-v2.jpg)
+
+![Video 1.](https://cdn.elifesciences.org/articles/47650/elife-47650-video1.mp4.jpg)
 
 Simple modeling of the 4:4:4 NRTN/GFRα2/RET complex on the surface of the plasma membrane shows that the distances of the four RET molecules to the membrane surface are different, due to a relative rotation of ~ 50° between the two 2:2:2 complexes (Figure 4C). As shown in Figure 4C, the distance between the end of the CRD in the two centrally located RET molecules (RET1 and RET2’) and the membrane is ~ 35 Å, whereas that of the two peripheral RET molecules (RET2 and RET1’) is ~ 15 Å. The linker (residues 623–636) between the last residue in RET-CRD and the N-terminus of transmembrane region is 14-residue long, but its linear span is shortened by the disulfide linkage between Cys630 and Cys634 to approximately equivalent to a 11-residue linker. This linker can readily bridge the 15 Å distance for the peripheral RET2 and RET1’, but may be stretched to some extent in order to span the 35 Å distance for the central RET1 and RET2’. These analyses together suggest that the 4:4:4 complex can be formed by full-length RET on the cell surface, but it may display preference for membrane areas with a positive curvature.
 
@@ -72,15 +122,15 @@ The 4:4:4 NRTN/GFRα2/RET complex is mediated by a novel interface, formed betwe
 
 In the 4:4:4 NRTN/GFRα2/RET complex, two of the RET molecules (RET1 and RET2’ in Figure 4) are sandwiched between the two wings of the adjacent 2:2:2 complex. This configuration is only compatible with the structures of the NRTN/GFRα2/RET, GDNF/GFRα1/RET and ARTN/GFRα3/RET complexes where the angle between the two wings is large (Figure 1B). The angle between the two wings in the GDF15/GFRAL/RET complex is however much tighter, and therefore cannot accommodate the third RET molecule for the formation of the 4:4:4 complex. Indeed, no class averages of the 4:4:4 complex can be identified in the cryo-EM dataset of the GDF15/GFRAL/RET complex. Thus, assembling distinct signaling complexes of different oligomeric states may be a mechanism for the five ligands of RET to trigger distinct signaling outcomes through the same receptor. This difference seems to be in line with the fact that the signaling of the GDF15/GFRAL/RET complex is mostly involved in regulating metabolic responses, whereas the other RET complexes control cell growth, proliferation and survival.
 
-## Higher-order oligomerization regulates RET - endocytosis
+### Higher-order oligomerization regulates RET - endocytosis
 
 Ligand-induced RET internalization through clathrin-mediated endocytosis plays a role in regulating signaling (Crupi et al., 2015; Richardson et al., 2012; Richardson et al., 2006). We speculated that the potential preference of the 4:4:4 NRTN/GFRα2/RET complex for positive membrane curvature mentioned above might impede its entrance to clathrin-coated pits, which have negative membrane curvature. It has been shown that the geometry and size of proteins can regulate vesicle secretion or endocytosis by changing the curvature of membrane, through mechanisms that are distinct from the membrane-bending effects of the BAR domains (DeGroot et al., 2018; Shurer et al., 2019). To examine the effect of the 4:4:4 complex on RET endocytosis, we treated COS7 cells stably expressing full length RET and GFRα2 with fluorescence-labeled NRTN and monitored its endocytosis. The results showed that most wild-type NRTN remained on the cell surface as long as 15 min (Figure 5A). Very few intracellular puncta of NRTN were formed and co-localized with the early endosome marker EEA1 (early endosome antigen 1) (Figure 5A). In contrast, the NRTN(R101E/R155E) mutant were internalized quickly and formed many puncta co-localizing with EEA1 at the 5 min time point, which progressed to higher levels at 10 and 15 min (Figure 5A). For comparison, we carried out similar experiments for the GDF15/GFRAL/RET complex, which does not form higher-order oligomers. GDF15 underwent quick internalization, even faster than the NRTN(R101E/R155E) mutant (Figure 5A). We used the Pearson’s correlation coefficient between the ligands and EEA1 as a quantitative indicator of the internalization of NRTN and GDF15 (Manders et al., 1992). The quantification results show that the colocalization of wild-type NRTN with EEA1 remained at low levels at all of the three time points (Figure 5B). The NRTN(R101E/R155E) mutant displayed significantly higher levels of co-localization with EEA1, but lower than that of GDF15 (Figure 5B). These results together support the idea that the different oligomeric states of RET induced by the ligands can regulate the internalization. The slower endocytosis of the 4:4:4 NRTN/GFRα2/RET complex allows it to maintain the active state on the cell surface for a longer period of time, which may lead to distinct signaling outcomes as compared with the GDF15/GFRAL/RET complex that undergoes fast endocytosis.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/47650/elife-47650-fig5-v2.jpg)
 
-**Figure 5.:** (A) Endocytosis of the NRTN/GFRα2/RET and GDF15/GFRAL/RET complexes. Fluorescently labeled NRTN (wild-type or the R101E/R155E mutant) and GDF15 were incubated with COS7 cells expressing GFRα2/RET and GFRAL/RET, respectively, and imaged at indicated time points. EEA1 were immuno-stained to serve as an early endosome marker. (B) Quantification of the colocalization of NRTN wild-type, the R101E/R155E mutant and GDF15 with EEA1. Pearson’s correction coefficients between the ligands and EEA1 were calculated for 35 cells in each group from two biological repeats. Each dot in the scatter plot represent one cell. The bars represent mean and standard deviation. P-values were calculated using the two-tailed Welch’s t-test. ****p<0.0001.10.7554/eLife.47650.017Figure 5—source data 1.Figure 5B.
+**Figure 5.:** (A) Endocytosis of the NRTN/GFRα2/RET and GDF15/GFRAL/RET complexes. Fluorescently labeled NRTN (wild-type or the R101E/R155E mutant) and GDF15 were incubated with COS7 cells expressing GFRα2/RET and GFRAL/RET, respectively, and imaged at indicated time points. EEA1 were immuno-stained to serve as an early endosome marker. (B) Quantification of the colocalization of NRTN wild-type, the R101E/R155E mutant and GDF15 with EEA1. Pearson’s correction coefficients between the ligands and EEA1 were calculated for 35 cells in each group from two biological repeats. Each dot in the scatter plot represent one cell. The bars represent mean and standard deviation. P-values were calculated using the two-tailed Welch’s t-test. ****p<0.0001.
 
-## Oligomerization of RET in the apo-state
+### Oligomerization of RET in the apo-state
 
 Some RTKs such as the epidermal growth factor receptor (EGFR), insulin-like growth factor receptor and insulin receptor (Kavran et al., 2014; Kovacs et al., 2015) can form inactive dimers on the cell surface in the absence of ligand. Using analytical ultracentrifugation (AUC), we found that the extracellular region of apo-RET exhibits an intrinsic ability to oligomerize, existing in an equilibrium favoring the monomeric (4.8 S) form at the concentrations used, but evincing higher-order oligomers ranging from dimers (ca. 8 S) to perhaps tetramers or pentamers (13.5 S) (Figure 6E). This solution behavior comports with the appearance in apo-RET cryo-EM micrographs of elongated entities that were clearly larger than monomeric apo-RET (2D class averages are shown in Figure 6D). We were unable to determine the structures of these oligomers due to conformational heterogeneity. Interestingly, a crystallographic dimer of the CLD1-2 domains of RET has been reported previously (Figure 6A) (Kjaer et al., 2010). We constructed a dimer of the full-length extracellular region of RET by superimposing two protomers of our RET model with the CLD1-2 crystallographic dimer, which resembles some of the 2D class averages (Figure 6B and D). This dimer model is further supported by the AUC results showing that a double mutation of Arg77 and Arg144 in the dimer interface abolished the oligomerization of the RET extracellular region (Figure 6E). In this ligand-free RET dimer model, the C-termini of the two CRD domains point to the same direction, consistent with their connection to the transmembrane region of RET expressed on the cell surface. However, the two CRDs in this dimer are placed far apart (~120 Å), suggesting that it is in an inactive state of RET, because it imposes a large spatial separation of the two kinase domains that is unfavorable for cross-phosphorylation. The interface of the apo-RET dimer partially overlaps with the binding interface for the co-receptors (Figure 6C). Therefore, binding of a co-receptor to RET can both disrupt the inactive dimer and facilitate the ligand/RET interaction, eventually leading to the active dimer conformation of RET as seen in the structures of the ternary complexes.
 
@@ -100,7 +150,493 @@ Our analyses suggest that the formation of the high-order oligomeric complex is 
 
 ## Materials and methods
 
-## Protein expression and purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Myc tag</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 2276S; RRID: AB_331783</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-p44/42 MAPK (Erk1/2)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4695; RRID: AB_390779</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Phospho-p44/42 MAPK (Erk1/2) (Thr202/Tyr204)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 4370; RRID: AB_2315112</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-EEA1(C45B10)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat# 3288; RRID: AB_2096811</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG H and L (HRP)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 31430</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG H and L (HRP)</td>
+      <td>Abcam</td>
+      <td>Cat# ab6721; RRID: AB_955447</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG H and L (Alexa Fluor 488)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11034</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>FreeStyle 293 F</td>
+      <td>Invitrogen</td>
+      <td>Cat#R79007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293S GnTI-</td>
+      <td>ATCC</td>
+      <td>Cat#CRL-3022; RRID: CVCL_A785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>Cat# PTA-4488, RRID: CVCL_0045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>Cat#CRL-3216; RRID: CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cercopithecus aethiops)</td>
+      <td>COS-7</td>
+      <td>ATCC</td>
+      <td>Cat# CRL-1651, RRID: CVCL_0224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E. coli BL21(DE3)</td>
+      <td>New England Biolabs</td>
+      <td>Cat# C2527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>XL10-Gold Ultracompetent Cells</td>
+      <td>Agilent</td>
+      <td>Cat# 200315</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>MAX Efficiency DH10Bac Competent Cells</td>
+      <td>Invitrogen</td>
+      <td>Cat# 10361012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>isopropyl b-D-thiogalatopyranoside (IPTG)</td>
+      <td>Fisher Scientific</td>
+      <td>Cat# BP1620-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Imidazole</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# I5513</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Arginine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A5006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L(-)-Glutathione, oxidized</td>
+      <td>ACROS Organics</td>
+      <td>Cat# AC320220050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Guanidine-HCl</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# 24110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Glutathione reduced</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# G4251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Urea</td>
+      <td>RPI</td>
+      <td>Cat# U20200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>InvivoGen</td>
+      <td>Cat# ant-pr-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical Compound, drug</td>
+      <td>Blasticidin</td>
+      <td>InvivoGen</td>
+      <td>Cat# ant-bl-1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Antibiotic Antimycotic Solution (100×)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A5955</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cellfectin II Reagent</td>
+      <td>Gibco</td>
+      <td>Cat# 10362100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Butyrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 303410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Halt Protease and Phosphatase Inhibitor Cocktail (100X)</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# 78442</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SuperSignal West Dura Extended Duration Substrate</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# 34075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI (4',6-Diamidino-2-Phenylindole, Dihydrochloride)</td>
+      <td>Invitrogen</td>
+      <td>Cat# D1306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 555 NHS Ester</td>
+      <td>Invitrogen</td>
+      <td>Cat# A20009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pEZT-BM vector</td>
+      <td>Ryan Hibbs Lab</td>
+      <td>Addgene plasmid # 74099</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pEZT-RET-ECD-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: Protein expression and purification</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pEZT-GFRAL-ECD-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: Protein expression and purification</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pEZT-GFRA1-ECD-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: Protein expression and purification</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pEZT-GFRA2-ECD-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: Protein expression and purification</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pEZT-GFRA3-ECD-His</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: Protein expression and purification</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Escherichia coli)</td>
+      <td>pET-28a vector</td>
+      <td>Novagen</td>
+      <td>Millipore Cat# 69864</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Escherichia coli)</td>
+      <td>pET-15b vector</td>
+      <td>Novagen</td>
+      <td>Millipore Cat# 69661</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Escherichia coli)</td>
+      <td>pET-28a-GDF15-WT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: Protein expression and purification</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Escherichia coli)</td>
+      <td>pET-28a-GDF15-W228E</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: Protein expression and purification</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Escherichia coli)</td>
+      <td>pET-28a-GDF15-Y297E</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: Protein expression and purification</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Escherichia coli)</td>
+      <td>pET-28a-sumo-NRTN-WT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: Protein expression and purification</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Escherichia coli)</td>
+      <td>pET-28a-sumo-NRTN-R101E/R155E</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: Protein expression and purification</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Escherichia coli)</td>
+      <td>pET-15b-GDNF-WT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: Protein expression and purification</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Escherichia coli)</td>
+      <td>pET-28a-sumo- ARTN-WT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: Protein expression and purification</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pLVX-IRES-Puro</td>
+      <td>Clontech</td>
+      <td>Cat#632183</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pLVX-RET-myc-IRES-Puro</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: Cell-based phosphorylation assay for RET</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pLVX-myc-GFRAL-WT-IRES-Blast</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: Cell-based phosphorylation assay for RET</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pLVX-myc-GFRAL-T261R-IRES-Blast</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: Cell-based phosphorylation assay for RET</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>pLVX-GFRA2-IRES-Blast</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Materials and methods subsection: Cell-based phosphorylation assay for RET</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCorr2</td>
+      <td>Zheng et al., 2017</td>
+      <td></td>
+      <td>http://msg.ucsf.edu/em/software/motioncor2.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GCTF</td>
+      <td>Zhang, 2016</td>
+      <td></td>
+      <td>https://www.mrc-lmb. cam.ac.uk/kzhang/Gctf/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EMAN2</td>
+      <td>Tang et al., 2007</td>
+      <td></td>
+      <td>https://blake.bcm.edu/ emanwiki/EMAN2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION</td>
+      <td>Scheres, 2012b</td>
+      <td></td>
+      <td>https://www3.mrc-lmb. cam.ac.uk/relion/index.php/Download_%26_install</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>Emsley et al., 2010</td>
+      <td></td>
+      <td>https://www2.mrc-lmb.cam. ac.uk/personal/pemsley/coot/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix.refine</td>
+      <td>Afonine et al., 2018</td>
+      <td></td>
+      <td>https://www.phenix-online. org/documentation/reference/refinement.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad prism 7.04</td>
+      <td>Graphpad</td>
+      <td></td>
+      <td>https://www.graphpad.com/ scientific-software/prism/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td></td>
+      <td>https://imagej.net/Fiji</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>μManager</td>
+      <td>Open Imaging</td>
+      <td></td>
+      <td>https://micro-manager.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SEDFIT</td>
+      <td>Schuck, 2000</td>
+      <td></td>
+      <td>http://www.analyticalult racentrifugation.com/download.htm</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>REDATE</td>
+      <td>Zhao et al., 2013</td>
+      <td></td>
+      <td>http://biophysics.swmed.edu/ MBR/software.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GUSSI</td>
+      <td>Brautigam, 2015</td>
+      <td></td>
+      <td>http://biophysics.swmed.edu/MBR/software.html</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ni Sepharose 6 Fast Flow</td>
+      <td>GE Healthcare</td>
+      <td>Cat# 17531802</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Strep-TactinXT Superflow</td>
+      <td>IBA Lifesciences</td>
+      <td>Cat# 2-4010-025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superdex 200 Increase 10/300 GL</td>
+      <td>GE Healthcare</td>
+      <td>Cat# 28990944</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bolt 4–12% Bis-Tris Plus Gels, 10-well</td>
+      <td>Invitrogen</td>
+      <td>Cat# NW04120BOX</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression and purification
 
 All the protein sequence information can be found in Supplementary file 1. The human Ret extracellular region (residues 1–635) and GFRα1 (residues 1–426) with a C-terminal His8-tag were sub-cloned into the pEZT-BM vector (Morales-Perez et al., 2016). GFRAL (residues 20–352), GFRα2 (residues 24–362) and GFRα3 (residues 32–363) with the alkaline phosphatase (AP) signal peptide fused at the N-terminus and a C-terminal His8-tag were sub-cloned into the same vector. All of these proteins were expressed as secreted proteins in FreeStyle 293 F cells (Invitrogen, #R79007) or HEK293S-GnTI− cells (ATCC, #CRL-3022) using the BacMam system following the standard protocol (Morales-Perez et al., 2016). Briefly, bacmids carrying the target genes was generated by transforming the E. coli strain DH10BacY (Geneva Biotech). Baculoviruses were produced by transfecting Sf9 cells with bacmids. Baculoviruses (at 1:50 ratio) were used to infect FreeStyleTM 293 F or HEK293S-GnTI− cells at the density of ~ 2 × 106 cells/ml. Twelve hours later, 3 mM sodium butyrate was supplemented to boost protein expression. Culture medium was collected 3 days after infection by centrifugation at 3500 g at 4°C. Proteins were first captured by Ni2+-Sepharose 6 Fast Flow resin (GE healthcare) and then further purified by gel filtration chromatography with a Superdex S200 column (GE healthcare). All of the mutants were expressed and purified in the same manner as the respective wild type proteins. A double strep-tagged version of GFRAL was expressed and purified for the pull-down binding assays as well.
 
@@ -108,17 +644,105 @@ The genes coding the mature part of GDNF (residues 77-end) was inserted into pET
 
 The RET protein was mixed with GDF15 protein and GFRAL protein at the molar ratio of 1:1:1 to form the ternary complex. The proteins mixture was incubated for half an hour before being further purified by gel filtration chromatography. In the gel filtration experiment, the superdex 200 increase 10/300 column was firstly equilibrated with two column volumes of buffer (10 mM Tris buffer with 150 mM NaCl and 1 mM CaCl2 (pH 7.4)) at 4°C.~300 µl sample was injected into the column. A 96-Well plate was placed at the fraction collector for the sample collection. The peak containing the ternary complex was collected and concentrated to 1 mg/ml for cryo-EM analyses (Figure 1—figure supplement 1). The GDNF/GFRα1/RET, NRTN/GFRα2/RET and ARTN/GFRα3/RET complexes were obtained with the same method (Figure 1—figure supplement 1).
 
-## Cell lines
+### Cell lines
 
 293FT, Human embryonic kidney: from Invitrogen, identifier: R70007. HEK293 GNT-, Human embryonic kidney. from ATC, identifier: CRL-3022. HEK293, Human embryonic kidney. from ATC, identifier: PTA-4488. HEK293T, Human embryonic kidney. from ATC, identifier: CRL-3216. COS-7. from ATC, identifier: CRL-1651. E. coli BL21(DE3). from New England Biolabs, identifier: C2527. XL10-Gold Ultracompetent Cells. from Agilent, identifier: 200315. MAX Efficiency DH10Bac Competent Cells. from Invitrogen, identifier: 10361012. The identities of all these cell lines have been authenticated. The mycoplasma contamination testing was performed and shown to be negative.
 
-## EM data acquisition
+### EM data acquisition
 
 All cryo-EM grids were prepared by applying 3 μl of protein samples (1 mg/ml) to glow-discharged Quantifoil R1.2/1.3 300-mesh gold holey carbon grids (Quantifoil, Micro Tools GmbH, Germany). Grids were blotted for 5.0 s under 100% humidity at 4°C before being plunged into liquid ethane using a Mark IV Vitrobot (FEI). Micrographs were acquired on a Titan Krios microscope (FEI) operated at 300 kV with a K2 Summit direct electron detector (Gatan), using a slit width of 20 eV on a GIF-Quantum energy filter. EPU software (FEI) was used for automated data collection following standard FEI procedure. A calibrated magnification of 46,730X was used for imaging, yielding a pixel size of 1.07 Å on images. The defocus range was set from −1.5 μm to −3 μm. Each micrograph was dose-fractionated to 30 frames under a dose rate of 4 e-/pixel/s, with a total exposure time of 15 s, resulting in a total dose of about 50 e-/Å2.
 
-## Image processing
+### Image processing
 
 For all the four datasets of the different RET ternary complexes, the image processing was carried out with the same workflow, and the detailed data collection and processing statistic is summarized in Table 1. Motion correction was performed using the MotionCorr2 program (Zheng et al., 2017), and the CTF parameters of the micrographs were estimated using the GCTF program (Zhang, 2016). Initially,~5000 particles were picked with EMAN2 from a few micrographs (Tang et al., 2007). All other steps of image processing were performed using RELION (Scheres, 2012b; Scheres, 2012a). Class averages representing projections in different orientations selected from the initial 2D classification were used as templates for automatic particle picking from the full datasets. Extracted particles were binned three times and subjected to 2D classification. Particles from the classes with fine structural feature were selected for 3D classification. Approximately 20,000 particles were selected to generate the initial mode in RELION. Particles from the 3D classes showing good secondary structural features were selected and re-extracted into the original pixel size of 1.07 Å. 3D refinements with C2 symmetry imposed resulted in 3D reconstructions to relatively low resolution for all the 4 datasets of the different RET ternary complexes. The density for the outer edge of RET appeared blurred, suggesting relative swinging motions of the two wings in the complexes. To improve the resolution, we performed symmetry expansion and focused refinement as described previously (Bai et al., 2015; Zhou et al., 2015; Nguyen et al., 2016). To do so, all particles in the dataset were duplicated and rotated by 180° according to the C2 symmetry by using the ‘relion_particle_symmetry_expand’ command. The original and rotated particles were combined to form the symmetry expanded dataset. Subsequently, the density for one RET and one co-receptor from one wing was subtracted from the particles in the symmetry expanded dataset. These operations resulted in a new particle set representing one RET, one co-receptor and the ligand dimer from both the left and right wings of the original dataset. The modified particle set was subjected to another round of 3D refinement with a soft mask around one RET, one co-receptor and ligand dimer, leading to a markedly improved resolution for the entire single wing complex. For the NRTN/GFRα2/RET data, we performed a separate 3D refinement with 2-fold symmetry imposed for the particles corresponding to the 4:4:4 complex, resulting a map at 4.3 Å resolution.
+
+**Table 1.**
+ Cryo-EM data collection and model statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>GDF15/GFRAL /RET</th>
+      <th>GDNF/GFRα1/RET</th>
+      <th>NRTN/GFRα2/RET</th>
+      <th>ARTN/GFRα3/RET</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>46,730</td>
+      <td>46,730</td>
+      <td>46,730</td>
+      <td>46,730</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/Å2)</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>Defocus range (µm)</td>
+      <td>1.6–3</td>
+      <td>1.6–3</td>
+      <td>1.6–3</td>
+      <td>1.6–3</td>
+    </tr>
+    <tr>
+      <td>Pixel size (Å)</td>
+      <td>1.07</td>
+      <td>1.07</td>
+      <td>1.07</td>
+      <td>1.07</td>
+    </tr>
+    <tr>
+      <td>Final particle number</td>
+      <td>520,480</td>
+      <td>37,098</td>
+      <td>247,157</td>
+      <td>114,344</td>
+    </tr>
+    <tr>
+      <td>Map resolution (Å)</td>
+      <td>3.7</td>
+      <td>4.4</td>
+      <td>3.4</td>
+      <td>3.5</td>
+    </tr>
+    <tr>
+      <td>Map Sharpening B factor</td>
+      <td>−190</td>
+      <td>−200</td>
+      <td>−140</td>
+      <td>−140</td>
+    </tr>
+    <tr>
+      <td>Model Refinement Rms deviations Bonds (Å) Angles (°) Validation Molprobity score Clashscore Rotamer outliers (%) Ramachandran plot Favored (%) Allowed (%) Outliers (%)</td>
+      <td>0.006 0.978 1.59 4.43 0.12 94.6 5.3 0.1</td>
+      <td>0.005 0.994 2.02 8.53 0.41 89.5 10.4 0.1</td>
+      <td>0.005 0.797 1.45 2.74 0 94.2 5.8 0</td>
+      <td>0.007 1.040 1.73 4.35 0.12 91.1 8.9 0</td>
+    </tr>
+  </tbody>
+</table>
 
 All resolutions were estimated by applying a soft mask around the protein density using the gold-standard Fourier shell correlation (FSC) = 0.143 criterion (Scheres and Chen, 2012). It worth mentioning that the resolution of the GDNF/GFRα1/RET complex estimated by the FSC between two half maps (4.4 Å) is not consistent with the one measured by the FSC between the map and model (7.5 Å), suggesting that the resolution of the cryo-EM map is overestimated, presumably due to the preferred orientation issue in this dataset. Nevertheless, the map with clearly resolved secondary structural features provides adequate quality for the rigid body docking and restrained refinement of the model. The symmetry expansion and focused refinement approaches failed to significantly improve the map quality of the GDNF/GFRα1/RET complex. Therefore, we only used the map refined with C2 symmetry imposed for the model building and refinement.
 
@@ -126,22 +750,22 @@ The datasets of the complexes contained a subset of particles of RET without the
 
 We also collected a dataset for the oligomeric peak of apo-RET, but could not obtain a reliable 3D reconstruction due to structural flexibility. Instead, we performed a 2D analysis for this data set showing features of the inhibitory dimer of apo-RET.
 
-## Model building and refinement
+### Model building and refinement
 
 Model building of the GDF15/GFRAL/RET complex was initiated by docking the crystal structures of the GDF15/GFRAL complex (PDB ID: 5VZ4) (Hsu et al., 2017) and the CLD1/CDL2 domains of RET (PDB ID: 2X2U) (Kjaer et al., 2010) into the high-resolution one-wing map from the focused refinement in the program Coot (Emsley et al., 2010). CLD3, CLD4 and CRD of RET are built de novo in Coot. While the D1 domain of GFRAL was present in the protein sample, it was completely disordered and invisible in the density map. Density at the bottom of the GDF15 dimer for the linker (Residues 623–635) between the CRD and transmembrane region of RET is weak but clearly visible when the map is contoured at lower levels (Figure 1—figure supplement 5A). This part was not included in the model because the map does not show enough features for reliable model building. The model containing the GDF15 dimer, one GFRAL and one RET was manually adjusted in Coot and refined against the map by using the real space refinement module with secondary structure and non-crystallographic symmetry restraints in the Phenix package (Adams et al., 2010; Afonine et al., 2018). Model geometries were assessed by using Molprobity as a part of the Phenix validation tools and summarized in Table 1. The refined model was rotated by 180° according to the 2-fold symmetry in the GDF15 dimer. The two models were combined to construct the entire 2:2:2 GDF15/GFRAL/RET complex, which shows good agreement with the 3D reconstruction of the entire complex. The model building of the 2:2:2 complexes of NRTN/GFRα2/RET and ARTN/GFRα3/RET was initiated by docking the RET model refined above and the crystal structure of the NRTN/GFRα2 (PDB ID: 5MR4) (Sandmark et al., 2018) and ARTN/GFRα3 complexes (PDB ID: 2GH0) (Wang et al., 2006) into the one-wing map. The rest of the process was the same as that for the GDF15/GFRAL/RET complex. A model containing two 2:2:2 NRTN/GFRα2/RET complexes were built and refined based on the cryo-EM map of 4:4:4 NRTN/GFRα2/RET complex to generate the entire model of 4:4:4 NRTN/GFRα2/RET complex (Figure 4—figure supplement 1). The density for the GDNF/GFRα1/RET complex was relatively poor, but sufficient for manual docking of the individual domains of RET, GFRα1 and the GDNF dimer (PDB ID: 3FUB) (Parkash and Goldman, 2009). The entire 2:2:2 GDNF/GFRα1/RET complex was refined against the whole map in Phenix using the same methods as above but with tighter geometric restraints.
 
-## Analytical ultracentrifugation
+### Analytical ultracentrifugation
 
 The sedimentation velocity centrifugation experiments were carried out for both of the two peaks of the RET extracellular region from gel filtration chromatography by using a Beckman Coulter Optima XL-I ultracentrifuge. The centrifugation buffer contained 20 mM HEPES pH 7.4, 300 mM NaCl, 4 mM CaCl2. Proteins (400 μL) at three different concentrations (O.D. at 280 nm of 0.8, 0.25, 0.08) were loaded into the ‘sample’ side of dual-sectored, charcoal-filled Epon centerpieces, while equal volumes of the centrifugation buffer were loaded into the ‘reference’ sectors. Sapphire windows were employed to sandwich the centerpieces. Filled cells were loaded into an An50Ti rotor and equilibrated at 20°C for about 2.5 hr under vacuum before centrifugation. Data were acquired at 50,000 rpm at 20°C via absorbance at 280 nm running overnight. Data were analyzed by using the c(s) methodology in the program SEDFIT (Schuck, 2000). A time-dilation factor was applied to the data using the program REDATE (Zhao et al., 2013). The program GUSSI was used to generate the all figures featuring c(s) distributions (Brautigam, 2015).
 
-## Pull-down assay
+### Pull-down assay
 
 Streptavidin conjugated beads (IBA Lifesciences) (10 µl) are incubated with 2 µg GDF15 and 6 µg double strep-tagged GFRAL by head-to-head rotation in 650 µl binding buffer (10 mM HEPES, pH 7.4, 150 mM NaCl, 2 mM CaCl2) for 1 hr at 4°C. Beads were washed with 700 µl binding buffer for three times, and then incubated with12 µg Ret in 650 ul binding buffer for 1 hr at 4°C. Beads were further washed with 700 µl binding buffer for three times and subjected to SDS-PAGE analyses.
 
-## Cell-based phosphorylation assay for RET
+### Cell-based phosphorylation assay for RET
 
 The coding sequence for full-length human RET with a C-terminal Myc-tag was inserted into the lentivirus vector pLVX-IRES-Puro with puromycin as the selection marker (Clontech). The coding sequence for human GFRAL (wild-type and the T261R mutant) and GFRα2 with a N-terminal Myc-tag were inserted into the lentivirus vector pLVX-IRES-Blast with blasticidin as the selection marker. HEK293 Cells stably expressing RET and GFRAL were selected with 2 µg/ml puromycin and 10 µg/ml blasticidin for 7 days. Cells were cultured in 6-well plates and then serum-starved for 12 hr before treatment with GDF15 wild-type and mutants at 10 nM for 15 min at 37°C. Cells were lysed in the lysis buffer containing 50 mM Tris pH7.5, 5 mM EDTA and 150 mM NaCl, 1% Triton X-100, and protease and phosphatase inhibitor cocktails (Invitrogen). Cleared lysates were resolved on 4–20% Tris-Glycine PAGE gels and subjected to western blot analyses. Images were acquired by using a ChemiDoc imaging system (Bio-Rad). The primary antibodies against Myc (cat. #2276), ERK1/2 (cat. #4695), phosphor-ERK1/2 (cat. #4370) were purchased from Cell Signaling Technology.
 
-## Immuno-fluorescence imaging
+### Immuno-fluorescence imaging
 
 RET endocytosis was analyzed with a protocol similar to that used for plexin in a previous study (Shang et al., 2017). Briefly, COS-7 cells stably expressing RET/GFRAL or RET/GFRα2 were seeded on coverslips in 6-well plates and cultured for 16 hr. Cells were washed with PBS three times, and then treated with Alexa Fluor-555 labeled GDF15 or NRTN at 15 nM for 5, 10 or 15 min. Cells were immediately put on ice, washed with ice-cold PBS buffer three times and fixed with 4% (w/v) paraformaldehyde (PFA) for 30 min at room temperature. Cells were permeabilized with 0.05% (w/v) saponin for 5 min and non-specific binding sites were blocked by a quenching buffer (0.01% (w/v) saponin, 2% (w/v) BSA, 0.1% (w/v) lysine in PBS, pH7.4) for 20 min. Cells were stained with rabbit anti-EEA1 antibody over night at 4°C and goat anti-rabbit secondary antibody for 1 hr at room temperature. Cells were imaged with a Plan Apo 60 × 1.4 objective (Nikon) on a spinning-disc confocal system built around a Ti-E Perfect Focus microscope (Nikon) with an EM camera (c9100-13; Hamamatsu) controlled by Micro-Manager software (Edelstein et al., 2010). Excitation wavelengths used were 405 nm (for DAPI), 488 nm (for EEA1), 561 nm (for Alexa Fluor-555 labeled ligands) with the corresponding emission filters 460/50, 525/50 and 595/50, respectively. Confocal images were processed using the Fiji distribution of ImageJ (Schindelin et al., 2012). A central slice from the stack of confocal images was chosen for calculating the Pearson’s correlation coefficient (PCC) between EEA1 and NRTN or GDF15 by using the Coloc two plugin in Fiji. PCC values were calculated for individual cells defined as regions of interest. P-values were calculated using two-tailed Welch’s t-test in Prism 7.04.

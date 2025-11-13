@@ -39,49 +39,109 @@ Here, we identify the Drosophila PDGF/VEGF ortholog, Pvf1, as a tubular muscle d
 
 ## Results
 
-## Muscle-specific loss of Pvf1 leads to increased lipid accumulation in the adipose tissue and oenocytes
+### Muscle-specific loss of Pvf1 leads to increased lipid accumulation in the adipose tissue and oenocytes
 
 To investigate tissue-specific roles of Pvfs in regulating lipid homeostasis, we knocked down pvf1, pvf2, and pvf3 in various metabolically active tissues in the adult male fly using temperature-inducible drivers and looked for effects on the adiposity of the fly. Strikingly, knockdown of pvf1 in the adult muscle (musts>pvf1-i), but not in other organs such as the gut, adipose tissue, or oenocytes, was associated with a severe obesity phenotype characterized by increased lipid droplet size in the adipose tissue cells (Figure 1A, B and Figure 1—figure supplement 1A). Additionally, the experimental animals showed increased accumulation of lipid droplets in the oenocytes which are normally devoid of or have very few lipid droplets (Figure 1A, B and Figure 1—figure supplement 1A). musts>pvf1-i flies also showed significantly higher levels of whole animal triacylglycerol (TAG) content than control flies (Figure 1C). The increase in total TAG content was observed for two independent RNAi lines against pvf1 (Figure 1C). The increase in TAG content of musts>pvf1-i flies was more pronounced when flies were challenged with a mildly high-sugar diet (15% w/v added sugar to our standard food) (Figure 1—figure supplement 1B). Note that we used this food condition for all our experiments unless mentioned otherwise. Knocking down either pvf2 or pvf3 in the adult muscle did not affect total TAG content of the animals, further demonstrating that the phenotype is specifically associated with muscle-specific loss of Pvf1 (Figure 1D). When fed with 14C-U-Glucose for 24 hrs, musts>pvf1-i and control flies showed comparable incorporation of 14C in whole fly homogenates (Figure 1—figure supplement 1C), indicating that musts>pvf1-i flies do not eat more than control animals and that the obesity phenotype observed is most likely caused by metabolic defects.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/56969/elife-56969-fig1-v3.jpg)
+
+**Figure 1.:** (A) BODIPY staining showing neutral lipid accumulation in the adult male adipose tissue (AT) and oenocytes (dorsal abdominal cuticle) of flies in which pvf1 was knocked down using an RNAi transgene (VDRC: kk102699) specifically in the adult: muscle (musts= muscle-Gal4Gal80ts), oenocytes (oenots = oenocyte-Gal4Gal80ts), gut (gutts = gut-Gal4Gal80ts), and adipose tissue (ATts = AdiposeTissue-Gal4Gal80ts). The RNAi transgene alone is shown as a control. Similar results were observed using a different RNAi line (NIG: 7103 R-2, data not shown). (B) Mean lipid droplet size (≥10 microns in diameter) in the adipose tissue of flies shown in (A). Only muscle-specific loss of pvf1 show a significant increase compared to the control genotype, N = 6 animals, One-way ANOVA followed by Tukey’s HSD test, *** denotes p≤0.001, error bars = SEM. (C) Triacylglycerol (TAG) assay showing TAG/protein ratio in adult males in which pvf1 was knocked down specifically in the muscle. Knocking down pvf1 using two independent RNAi lines (pvf1-i1::VDRC kk102699 and pvf1-i2::NIG 7103 R-2) leads to a significant increase in total TAG content of the flies. (musts>v-i = muscle-Gal4Gal80ts>vermilion RNAi). (SF+15% Suc = standard lab food supplemented with 15% sucrose w/w). N = 6, Cohorts of eight males were used for each data point. One-way ANOVA followed by Tukey’s HSD test, **** denotes p≤0.0001, error bars = SEM. (D) Total TAG content of adult males with adult muscle-specific (musts) knockdown of pvf1, pvf2 and pvf3. N = 6, Cohorts of eight males were used for each data point. One-way ANOVA followed by Tukey’s HSD test, **** denotes p≤0.0001, error bars = SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/56969/elife-56969-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) BODIPY staining showing neutral lipid accumulation in the adult male adipose tissue (AT) and oenocytes (dorsal abdominal cuticle) of control (musts = muscle-Gal4Gal80ts) flies and flies with muscle-specific knockdown of pvf1 (musts>pvf1-i2) (NIG: 7103 R-2) (B) Total TAG content of adult males with adult muscle-specific knockdown of pvf1 (musts>pvf1-i2) (NIG: 7103 R-2) reared on standard lab food (SF) and 15% w/v high-sugar diet (HSD). (SF = standard lab food). (SF+15% Suc = standard lab food supplemented with 15% sucrose w/w). N = 6, Cohorts of eight males were used for each data point. Two-way ANOVA followed by Tukey’s HSD test, * denotes p≤0.05, *** denotes p≤0.001, **** denotes p≤0.0001, error bars = SEM. (C) 14C counts per minute of whole fly homogenates of control (musts) and UAS-pvf1-i1/+ flies and flies with muscle-specific knockdown of pvf1 (musts>pvf1-i1) (VDRC: kk102699) that were fed with [U-14C]-Glucose for 24 hrs. N = 3, Cohorts of 25 males were used for each data point. One-way ANOVA followed by Tukey’s HSD test, * denotes p≤0.05, ns denotes Not Significant, error bars = SEM. (D) Distribution of Pvf1 protein (anti-Pvf1 antibody:: Green) in the leg muscle of control (pvf1-i1/+) (D1, D1’, D3, D3’) flies and flies with muscle-specific knockdown of pvf1 (musts>pvf1-i1) (VDRC: kk102699) (D2, D2’, D4, D4’). Figures D1, D1’ and D2, D2’ show cross-section of the leg muscle. Figures D3, D3’ and D4, D4’ show transverse section of the leg muscle.
 
 Since the density at which animals are reared can have a significant effect on metabolic parameters such as total protein and total TAG levels, we tightly controlled the rearing conditions for all our experiments (see Materials and methods for more details). We regularly retrieved ~ 30–40 males and an equal number of females from our crosses that were carried out in standard 10 cm food vials. We discarded vials that had an aberrantly low (≤60) or high number (≥80) of adults eclosing from them. The adult adipose tissue dissection, staining, and imaging protocol is quite laborious. This makes inclusion of a large number of controls in every experiment quite difficult. Therefore, we kept the number of control genotypes that were processed in parallel in a given experiment to a manageable number while processing additional control genotypes separately to determine the baseline for lipid droplet size in the adult adipose tissue (Figure 4—figure supplement 3A, B). Overall, we looked at nine control genotypes (pvf1-i/+ || oneots/+ || oenots>UAS empty || inrDN/+ || tsc2-i/+ || akt1-i/+ || Pi3K21B-i/+ || Pi3K92E-i/+ and UAS-tsc1, UAS-tsc2/+) and the average lipid droplet area remained similar in all these controls. The use of GFP overexpression or knockdown of an unrelated gene such as vermillion is often used in the field as a genetic background control. These controls sometimes tend to manifest unpredictable phenotypes either due to toxicity from GFP or yet unknown function for the presumed to be unrelated gene while providing little to no benefit in terms of being ideal genetic background control. Hence, we did not use them in our study. Rather we relied on the fact that multiple experimental approaches in our study culminated to the same logical end to draw our conclusions.
 
 To verify the presence and distribution of Pvf1 protein in adult muscles, we immunostained the indirect flight muscles (IFMs) and leg muscles using an anti-Pvf1 antibody (Duchek et al., 2001; Rosin et al., 2004). Pvf1 is abundantly present in the striated tubular leg muscles (Figure 1—figure supplement 1D) where it is stored between the individual myofibrils (Figure 1—figure supplement 1D1', D3') and is more concentrated at both the M and Z discs (Figure 1—figure supplement 1D3,3',3’). To verify the specificity of the signal, we immunostained the leg muscles of musts>pvf1-i flies with anti-Pvf1 antibody and observed a strong reduction in Pvf1 protein level (Figure 1—figure supplement 1D2',D4,D4'). Interestingly, the IFMs did not show any staining for Pvf1 indicating that the protein is primarily stored in the striated tubular muscles in the fly.
 
-## Single-nuclei RNA-sequencing (snRNA-Seq) identifies enrichment of PvR RTK signaling pathway in the Oenocytes
+### Single-nuclei RNA-sequencing (snRNA-Seq) identifies enrichment of PvR RTK signaling pathway in the Oenocytes
 
 Single-nuclei sequencing presents unprecedented access to the transcriptomes of cell types residing in complex tissue structures or organs that are difficult to dissect and segregate (Birnbaum, 2018; Chen et al., 2018; Kulkarni et al., 2019; Wu et al., 2019). We took advantage of this tool to understand the transcriptomes of tissue types residing in the adult abdominal cuticle that harbors several metabolically active tissues such as the fat body, abdominal-muscles, and oenocytes, which are functionally analogous to adipose tissue, skeletal muscle, and liver, respectively, in higher vertebrates (Droujinine and Perrimon, 2016; Musselman and Kühnlein, 2018). To delineate the patterns of gene expression in each of these tissues, we dissected and dissociated a total of 80 adult fly abdominal cuticles (along with the attached adipose tissue and oenocytes) and subjected the single nuclei to 10X genomics-based (Zheng et al., 2017) single-nuclei RNA-sequencing (snRNA-seq) (Figure 2A). Two independent rounds of sequencing were performed on two biological replicates (with 40 animals per replicate) to obtain a median read depth of 8904 reads per nucleus (Figure 2—figure supplement 1A). Because tissue dissociations for the single nuclei preparations are often associated with the risk of ambient RNA contamination, our quality control pipeline included SoupX (Young and Behjati, 2018) to eliminate potential ambient RNA from our analysis. Further, we used Harmony (Korsunsky et al., 2019) that is integrated into Seurat (Stuart et al., 2019) to correct for batch effects in the two replicates to finally retain 15,280 nuclei with a median of 192 genes per nucleus for downstream analysis (Figure 2—figure supplement 1B, D; Supplementary file 1). Our clustering analysis at resolution 0.1 (see Materials and methods) identified 10 unique clusters, where three major clusters were assigned to adipose tissue, oenocytes, and muscle based on known markers for each of these tissue types including apolpp, fasn3, and mhc, respectively (Figure 2B; Figure 2—figure supplement 1E; Supplementary file 2). We validated our snRNA-seq data using GAL4 lines for certain top enriched and novel genes such as Pellino (Pli), sallimus (sls), and geko and found that they specifically express in adipose tissue, muscle, and oenocytes, respectively (Figure 2—figure supplement 1F-I). With regard to the rest of the minor clusters (4-10), we believe most of them are remnant tissues most likely pertaining to gut/malpighian tubule based on the enrichment of alphaTry, Whe, and Mur18B (Clusters 4–6, respectively; Supplementary file 2). On the other hand, we consider clusters 7–10 likely to be part of the ejaculatory bulb (Eb) as they are enriched in certain male-specific genes such as bond, EbpIII, soti, and Ebp, respectively (Figure 2—figure supplement 1I-J; Supplementary file 2). Interestingly, increasing the resolution of the clustering analysis to 0.4 leads to the identification of 15 unique clusters with unique gene expression signatures (Figure 2—figure supplement 3). Some of these clusters may reflect potential heterogeneity within the adult adipose tissue.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/56969/elife-56969-fig2-v3.jpg)
+
+**Figure 2.:** (A) Schematic of snRNA-seq workflow. Adult fly abdomens are dissected and dissociated to obtain high-quality single nuclei for downstream encapsulation by 10X genomics-based snRNA-seq platform and subsequent sequencing and analysis using Harmony. (B) Uniform Manifold Approximation and Projection (UMAP) plot representing 10 unique clusters identified while using a resolution of 0.1 for the clustering analysis. Each color and dot in the plot represent a cluster and a single nucleus, respectively. (C) Pathway enrichment analysis reveals EGFR and Pvr Receptor Tyrosine Kinase (RTK) signaling pathway enriched in oenocytes (OE) when compared to other clusters including adipose tissue (AT) and muscle (Mus). (D) UMAP plot representing the average expression of Pvr, which is highly enriched in oenocytes and to a lesser extent in adipose tissue and muscle. (E) Anti-PvR (Green) and phalloidin-594 (Red) staining of w1118 (VDRC isogenic stock) adult male leg musculature (cross-section), adipose tissue, and oenocytes. Yellow and red arrowheads show the leg axon bundle and trachea respectively. Blue arrowheads show the sarcolemma of individual leg muscle bundles. (F) BODIPY staining showing neutral lipid accumulation in adult male adipose tissue and oenocytes (dorsal abdominal cuticle) of control males and males over-expressing pvrDN in the adult oenocytes (oenots>pvrDN). (G) Total TAG content of adult males over-expressing pvrDN in the adult adipose tissue (ATts>pvrDN), muscle (musts>pvrDN), and oenocytes (oenots>pvrDN). Flies containing the UAS construct and the tissue-specific drivers alone serve as controls. N = 5–6, Cohorts of six males were used for each data point. One-way ANOVA followed by Tukey’s HSD test, ** denotes p≤0.01, *** denotes p≤0.001, error bars = SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56969/elife-56969-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Distribution of number of reads per nucleus in each replicate (Rep. 1 and 2). (B) Distribution of number of genes per nucleus in each replicate (Rep. 1 and 2). (C) UMAP plots representing batch effects due to replicates prior to Harmony (D) UMAP plots representing correction of the batch effects after Harmony. (E) Violin plots representing the normalized expression of marker genes specific for the metabolically active tissues: adipose tissue, oenocytes, and muscle. (F–I) Validation of novel marker genes for the three major clusters dipose tissue, muscle and oenocyte. Trojan-Gal4 lines for each of the candidate genes (pliMI00302-TG4.2, slsMI10783-TG4.1, and gekoMI02663-TG4.1) were used to drive expression of EGFP to mimic the pattern of expression of the genes themselves. One-week-old adult male abdomens were dissected and stained with anti-EGFP to revel the expression pattern of each of the three genes. (F) w1118 adult male abdomen stained with anti-EGFP shows background staining pattern. Muscle cells that were damaged during dissection tend to uptake the antibody and show some staining on the edges of the sample. (G) pliMI00302-TG4.2>UAS-2xEGFP adult male abdomens show EGFP staining primarily in the adipose tissue. Staining was not seen in the abdominal muscles or in the oenocytes. (H) slsMI10783-TG4.1>UAS-2xEGFP adult male abdomens show EGFP staining in the abdominal tubular muscles and in the alary muscles. (I) gekoMI02663-TG4.1>2 xEGFP adult males abdomens show EGFP staining in the oenocytes and in the tracheal tubes. Staining above the background sample was not seen in the adipose tissue or the abdominal muscles. (J) Dot plot representation of top five genes enriched per cluster based on average logFC. The size of the dot represents the percentage of cells expressing a gene while the color gradient represents the level of gene expression.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56969/elife-56969-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) BODIPY staining showing neutral lipid accumulation in adult male adipose tissue (AT) and oenocytes (dorsal abdominal cuticle) of control males and males over-expressing pvrDN in the adult muscle (musts>pvrDN) and adipose tissue (ATts>pvrDN). Loss of PvR signaling in the muscle or adipose tissue does not have any effect on the neutral lipid content of either the adipose tissue or the oenocytes. (B) Distribution of PvR protein (anti-PvR antibody::Green) in the thoracic muscle of control (musts) males. A cross-section of the indirect flight muscles is shown. (C) BODIPY staining showing neutral lipid accumulation in the adult female adipose tissue and oenocytes (dorsal abdominal cuticle) of control (oenots = oenocyte-Gal4Gal80ts) flies and flies with oenocyte-specific over-expression of (oenots>pvrDN). (D) BODIPY staining showing neutral lipid accumulation in the adult male adipose tissue and oenocytes (dorsal abdominal cuticle) of control (oenots) flies and flies with oenocyte-specific knockdown of pvr (oenots>pvr i) (NIG: 8222 R-2).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/56969/elife-56969-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** (A) UMAP of the WT control snRNA-seq analysis at a higher resolution of 0.4 reveals a potential heterogeneity within the major tissues such as adipose tissue (clusters 0, 2, 4, and 8), oenocyte (clusters 1 and 6), and muscle (clusters 3 and 5). (B) Dot plot representing top three genes enriched per cluster pertaining to the snRNA-seq expression data of the abdominal cuticle at resolution 0.4. The genes are ranked based on the average expression of each gene per cluster.
+
 To explore the pathways that are enriched in each of these clusters, we performed pathway enrichment analysis (Figure 2C). Interestingly, we found that EGFR and PVR RTK signaling pathway is highly enriched in the oenocytes (Figure 2C; Supplementary file 3). While the expression of Egfr is specifically enriched in the adipose tissue (Figure 2—figure supplement 1I-j), we identify the Pvf1 receptor Pvr to be highly enriched in the oenocytes, albeit a mild enrichment seen in the other clusters (Figure 2D). We examined the distribution of PvR in the major metabolic tissues of interest: muscle, adipose tissue, and the oenocytes, by immunostaining with an anti-PvR antibody (Rosin et al., 2004). Consistent with the prediction from the snRNA-seq analysis, PvR is present most prominently on the surface of the oenocytes followed by the adipose tissue cells (Figure 2E). In the leg muscles and indirect flight muscles, PvR localizes to the muscle sarcolemma (Figure 2E and Figure 2—figure supplement 2B), although the level of the protein on the sarcolemma of the leg muscles is relatively weak (Figure 2E).
 
-## Oenocyte-specific loss of Pvf-Receptor (PvR) signaling leads to obesity
+### Oenocyte-specific loss of Pvf-Receptor (PvR) signaling leads to obesity
 
 Since our data shows PvR and PvR-signaling to be enriched in the oenocytes, we asked whether PvR signaling in the oenocyte is necessary for protecting the adult flies against obesity. To test this possibility, we inhibited PvR signaling specifically in the oenocyte and determined the effect on whole animal TAG levels and lipid accumulation in the adipose tissue and oenocytes. Impairing PvR signaling in the adult oenocytes, by over-expressing a dominant negative form of the receptor, pvrDN, (oenots>pvrDN) (Brückner et al., 2004) led to obesity phenotypes similar to musts>Pvf1-i flies (Figure 2F, G). Similarly, impairing PvR signaling in the oenocyte by expressing an RNAi against pvr (oenots>pvr-i) also leads to obesity (Figure 2—figure supplement 2D). The obesity phenotype was also observed in oenots>pvrDN female flies, indicating that the phenotype is not caused by loss of PvR signaling in the male accessory glands where the PromE-Gal4 driver is also expressed (Figure 2—figure supplement 2C; Billeter et al., 2009). Surprisingly, over-expressing pvrDN in the adult adipose tissue and muscle did not lead to an obesity phenotype indicating that Pvf/PvR signaling is primarily required in the oenocytes to regulate lipid abundance (Figure 2G and Figure 2—figure supplement 2A). These results suggest that muscle-derived Pvf1 signals specifically to the oenocytes to regulate lipid content of the adipose tissue and steatosis in the oenocytes.
 
-## Oenocyte-specific loss of TOR signaling leads to obesity
+### Oenocyte-specific loss of TOR signaling leads to obesity
 
 Downstream of PvR, Pvf signaling primarily activates the Ras/Raf/MEK/ERK pathway. To determine whether oenocyte-specific ERK signaling regulates lipid homeostasis, we measured neutral lipid storage in oenots>ERK-i flies. Two independent and validated RNAi transgenes against ERK failed to replicate the obesity phenotype observed in oenots>pvrDN flies, suggesting that PvR signaling in the oenocytes regulates lipid levels via an ERK-independent mechanism (Figure 3A, C). Previous studies in Drosophila S2 and Kc cells have shown that PvR can also activate the TOR pathway (Sopko et al., 2015; Tran et al., 2013). To test whether oenocyte-specific TOR signaling is involved in regulating lipid homeostasis, we inhibited TOR signaling in the oenocytes by over-expressing both tsc1 and tsc2 (oenots>tsc1,tsc2). Similar to musts>pvf1-i and oenots>pvrDN flies, oenots>tsc1,tsc2 flies showed massive accumulation of neutral lipids in both the adipose tissue and the oenocytes (Figure 3B, C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/56969/elife-56969-fig3-v3.jpg)
+
+**Figure 3.:** (A) BODIPY staining showing neutral lipid accumulation in the adipose tissue and oenocytes of control males (oenots = oenocyte-Gal4Gal80ts) and males with oenocyte-specific knockdown of ERK (oenots>ERKi-1 and oenots>ERKi-2) using two independent RNAi lines. (B) BODIPY staining showing neutral lipid accumulation in the adipose tissue and oenocytes of control males (oenots) and males with oenocyte-specific over-expression of tsc1 and tsc2 (oenots>tsc1,tsc2). (C) Mean lipid droplet size (≥10 microns in diameter) in the adipose tissue of flies shown in Figure 2A and B. Only oenocyte-specific loss of TOR signaling (oenots>tsc1,tsc2) show a significant increase (p<0.001) compared to the control genotype. N = 6 animals, One-way ANOVA followed by Tukey’s HSD test, **** denotes p≤0.0001, error bars = SEM. (D) BODIPY staining showing neutral lipid accumulation in the adipose tissue and oenocytes of control males (oenots) and males with oenocyte-specific over-expression of inrDN (oenots>inrDN) and oenocyte-specific (oenots>) knockdown of Pi3K92E (Dp110), Pi3K21B (Dp60) and akt1. (E) Mean lipid droplet size (≥10 microns in diameter) in the adipose tissue of flies shown in Figure 2D. Oenocyte-specific (oenots>) knockdown of Pi3K92E (Dp110), Pi3K21B (Dp60), and akt1 lead to a significant increase (p<0.001 for Pi3K92E, and, p<0.0001 for Pi3K21B and akt1) compared to the control genotype. N = 6 animals, One-way ANOVA followed by Tukey’s HSD test, *** denotes p≤0.001, **** denotes p≤0.0001, error bars = SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56969/elife-56969-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** BODIPY staining showing neutral lipid accumulation in the adult male adipose tissue and oenocytes (dorsal abdominal cuticle) of control (oenots = oenocyte-Gal4Gal80ts) flies and flies with oenocyte-specific (oenots>) knockdown of: Pi3K92E; Pi3K21B, Pi3K59F and Pi3K68D.
+
 Since PvR is a potent receptor tyrosine kinase, we further investigated whether PvR signaling can activate TOR signaling in the oenocyte via activation of Pi3K/Akt1 and regulate lipid homeostasis. The Drosophila genome encodes three Pi3Ks (Pi3K92E, Pi3K59F, and Pi3K68D) and one regulatory subunit (Pi3K21B). We knocked down each of the Pi3K components in the oenocytes and determined the effect on lipid accumulation in the oenocytes and adipose tissue (Figure 3—figure supplement 1). Oenocyte-specific loss of either Pi3K92E and the regulatory subunit Pi3K21B led to steatosis phenotypes (Figure 3D,E). Additionally, oenocyte-specific loss of akt1 also led to steatosis phenotypes indicating that the Pi3K-Akt1 pathway in the oenocytes regulates lipid homeostasis (Figure 3D, E). Taken together, these results reveal that Pi3K/Akt1/TOR signaling in the oenocyte protects against obesity.
 
-## TOR signaling acts downstream of PvR in the oenocytes to regulate systemic lipid stores
+### TOR signaling acts downstream of PvR in the oenocytes to regulate systemic lipid stores
 
 We next analyzed whether PvR signaling in the oenocytes regulates lipid metabolism by activating the TOR pathway. For this, we first measured the levels of phospho-4EBP (p4EBP), a direct target of TOR, in the oenocytes of musts>pvf1-i and oenots>pvrDN flies. Both musts>pvf1-i flies and oenots>pvrDN flies showed a strong and significant down-regulation of p4EBP signal in the oenocytes compared to Gal4 alone controls (Figure 4A, B, C), indicating that muscle Pvf regulates TORC1 signaling in the oenocyte. Consistently, the extent of p4EBP down-regulation is similar to what is observed in oenots>tsc1,tsc2 flies that were used as a positive control for the assay (Figure 4B, C). Interestingly, oenocyte-specific loss of insulin receptor signaling (oenots>inrDN) failed to affect p4EBP levels (Figure 4B , C). In addition, we tested whether the obesity phenotype of oenots>pvrDN flies could be rescued by activating TOR signaling. To do this, we co-expressed pvrDN and a tsc2-RNAi transgene in the oenocytes (oenots>pvrDN; tsc2-i) and compared the lipid content of these flies to control fly lines. tsc2 knockdown strongly suppressed the obesity phenotype induced by oenocyte-specific expression of pvrDN (Figure 4D, E). Tsc1/2 regulates TOR signaling by suppressing the activity of Rheb which directly activates TORC1. We further investigated whether TORC1 functions downstream of PvR signaling to regulate lipid accumulation by testing whether co-expression of a constitutively active form of rheb (rhebAV4) can rescue the obesity phenotype observed in oenots>pvrDN flies. Oenocyte-specific co-expression of rhebAV4 completely rescued the obesity phenotype observed in oenots>pvrDN flies (Figure 4—figure supplement 1A, B). Altogether, these observations suggest that TOR signaling functions downstream of PvR in the oenocyte to negatively regulate lipid deposits.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/56969/elife-56969-fig4-v3.jpg)
+
+**Figure 4.:** (A) p4EBP staining (Red) of the oenocytes from control (musts = muscle-Gal4Gal80ts) and flies with muscle-specific knockdown of pvf1 (musts>pvf1-i1). Muscle-specific loss of pvf1 leads to a significant decrease (p<0.01) in p4EBP levels in the oenocytes. N = 10 animals, student t-test, ** denotes p≤0.01, error bars = SEM. (B) p4EBP staining (Green) of oenocytes from control flies (oenots = oenocyte-Gal4Gal80ts) and flies with oenocyte-specific over-expressing tsc1/tsc2 (oenots>tsc1,tsc2), pvrDN (oenots>pvrDN) or inrDN (oenots>inrDN). (C) Quantification of p4EBP staining intensity in the oenocytes for samples shown in Figure 3C. Oenocyte-specific over-expression of tsc1/tsc2 (oenots>tsc1,tsc2) and pvrDN (oenots>pvrDN) led to a significant reduction in p4EBP levels (p<0.0001). Over-expression of inrDN (oenots>inrDN), however, does not affect p4EBP levels significantly. N = 6/7 animals, Student t-test, **** denotes p≤0.0001, error bars = SEM. (D) BODIPY staining showing neutral lipid accumulation in the adipose tissue and oenocytes of control males (oenots) and males with oenocyte-specific over-expression of either pvrDN (oenots>pvrDN) or over-expression of pvrDN along with tsc2 knockdown (oenots>pvrDN,tsc2-i). Flies over-expressing pvrDN in the oenocytes along with an empty UAS construct (oenots>pvrDN,UAS) serve as an additional control to account for any effect of Gal4 dilution on the obesity phenotype. (E) Mean lipid droplet size (≥10 microns in diameter) in the adipose tissue of flies shown in (D). Oenocyte-specific knockdown of tsc2 along with pvrDN over-expression (oenots>pvrDN,tsc2-i) significantly rescues the obesity phenotype observed flies with oenocyte-specific over-expression of pvrDN (p<0.001). N = 5 animals, One-way ANOVA followed by Tukey’s HSD test, *** denotes p≤0.001, **** denotes p≤0.0001, error bars = SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56969/elife-56969-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) BODIPY staining showing neutral lipid accumulation in the adipose tissue and oenocytes of males with oenocyte-specific over-expression of either pvrDN (oenots>pvrDN) or over-expression of pvrDN along with over-expression of a constitutively active form of rheb (oenots>pvrDN; rhebAV4). oenots = oenocyte-Gal4Gal80ts. (B) Mean lipid droplet size (≥10 microns in diameter) in the adipose tissue of flies shown in (A). Oenocyte-specific over-expression of rehbAV4 along with pvrDN over-expression (oenots>pvrDN; rhebAV4) significantly rescues the obesity phenotype observed flies with oenocyte-specific over-expression of pvrDN (p<0.001). N = 6 animals, One-way ANOVA followed by Tukey’s HSD test, *** denotes p≤0.001, **** denotes p≤0.0001, error bars = SEM. (C) BODIPY staining showing neutral lipid accumulation in the adipose tissue and oenocytes of control males (oenots and tsc2-i) and males with oenocyte-specific tsc2 knockdown (oenots>tsc2-i). (D) Mean lipid droplet size (≥10 microns in diameter) in the adipose tissue of flies shown in (C). Oenocyte-specific knockdown of tsc2 showed a mild increase in mean lipid droplet size only compared to once control. N = 6 animals, One-way ANOVA followed by Tukey’s HSD test, error bars = SEM.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/56969/elife-56969-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A) BODIPY staining showing neutral lipid accumulation in the adipose tissue and oenocytes of control males (oenots = oenocyte-Gal4Gal80ts and inrDN = UAS-inrDN/+) and males with oenocyte-specific overexpression of pvrDN either by itself (oenots>pvrDN) or along with overexpression of inrDN (oenots>pvrDN; inrDN). Flies over-expressing pvrDN in the oenocytes along with an empty UAS construct (oenots>pvrDN,UAS) serve as an additional control to account for any effect of Gal4 dilution on the obesity phenotype. (B) Mean lipid droplet size (≥10 microns in diameter) in the adipose tissue of flies shown in (A). Oenocyte-specific over-expression inrDN along with pvrDN (oenots>pvrDN; inrDN) rescues lipid accumulation in the oenocytes. However, the flies still show a significant increase in lipid droplet size in the adipose tissue compared to controls. N = 6 animals, One-way ANOVA followed by Tukey’s HSD test, *** denotes p≤0.001, **** denotes p≤0.0001, error bars = SEM. (C) DAPI staining showing the density of nuclei in the oenocytes of control flies (oenots and akt1-i = akt1-i/+) and flies lacking Akt signaling (oenotye-specific knockdown of akt1: oenots>akt1-i), TOR signaling (oenotye-specific overexpression of tsc1 and tsc2: oenots>tsc1, tsc2) and InR signaling (oenocyte-specific overexpression of inrDN: oenots>inrDN). Loss of Akt signaling and InR signaling leads to a significant decrease in oenocyte size as reflected by an increase in oenocyte density per unit area. N = 5/6 animals (about three oenocyte clusters were measured per animal), One-way ANOVA followed by Tukey’s HSD test, *** denotes p≤0.001, **** denotes p≤0.0001, error bars = SEM. Representative images of adipose tissue lipid droplets for each genotype is also shown. Note that the images were drawn from experiments already reported elsewhere in the manuscript and quantification of lipid droplet size is already reported in Figure 3C, E and Figure 4—figure supplement 3B.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/56969/elife-56969-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** (A) BODIPY staining showing neutral lipid accumulation in the adipose tissue and oenocytes of control males flies. oenots = oenocyte-Gal4Gal80ts. (B) Mean lipid droplet size (≥10 µm in diameter) in the adipose tissue of flies shown in (A). N = 6 animals, One-way ANOVA followed by Tukey’s HSD test, *** denotes p≤0.001, **** denotes p≤0.0001, error bars = SEM.
+
 Similar to vertebrates, the Drosophila TOR pathway can be activated by insulin/Pi3K/Akt signaling. To determine the potential involvement of oenocyte-specific insulin signaling in regulating lipid homeostasis, we over-expressed a dominant negative form of InR (oenots>inrDN) and examined the effect on lipid accumulation. oenots>inrDN flies did not show any increase in accumulation of lipids either in the adipose tissue or the oenocytes compared to control flies (Figure 3D, E). To further test the potential interaction between PvR signaling and InR signaling in regulating lipid accumulation, we co-expressed inrDN and pvrDN in oenocytes and determined the effect on lipid accumulation. Strikingly, while oenots>pvrDN; inrDN flies were still obese and showed excessive accumulation of lipids in the adipose tissue, lipid accumulation in oenocytes was suppressed (Figure 4—figure supplement 2A, Right most panels, and Figure 4—figure supplement 2B), indicating that InR signaling is required for lipid accumulation in the oenocytes. Interestingly, a previous report showed that activation of InR signaling in oenocytes led to accumulation of lipids both under fed and starved conditions (Chatterjee et al., 2014). However, whether InR signaling functions through TOR to activate lipid accumulation in the oenocyte was not tested. To further characterize the oenocyte-specific role of TOR on lipid accumulation, we activated TOR in the oenocytes (oenots>tsc2-i) and did not detect lipid accumulation either in the oenocytes or the adipose tissue (Figure 4—figure supplement 1C, D). Altogether, we demonstrate that in Drosophila, muscle-derived Pvf1 signals through PvR in the oenocyte to activate TOR, which in turn protects the animal against obesity.
 
-## Muscle-to-Oenocyte Pvf1 signaling regulates lipid synthesis
+### Muscle-to-Oenocyte Pvf1 signaling regulates lipid synthesis
 
 Drosophila oenocytes are known to facilitate starvation-induced lipid mobilization in the Drosophila larvae and loss of this tissue leads to increased starvation sensitivity (Gutierrez et al., 2007). Similarly, in adult flies the oenocytes play a role in imparting starvation resistance by regulating production of very long chain fatty acids (VLCFAs) for waterproofing of the cuticle, especially when flies are starved under lower humidity conditions, and possibly by regulating lipid mobilization (Chatterjee et al., 2014; Storelli et al., 2019). We first investigated whether muscle-to-oenocyte Pvf1 signaling plays a role in starvation resistance. Compared to control flies, musts>pvf1-i and oenots>pvrDN animals showed increased starvation resistance, suggesting that they are capable of mobilizing stored nutrients in response to starvation (Figure 5A). The improved starvation resistance of musts>pvf1-i and oenots>pvrDN flies most likely reflects the fact that these animals had higher levels of stored TAGs and hence were able to use these reserves for a longer duration. As starvation can induce strong catabolic signals that can easily mask minor defects in lipid mobilization in musts>pvf1-i and oenots>pvrDN flies, we measured the rate of lipid mobilization under steady state feeding conditions using radioisotope chasing. We labeled the TAG stores of control and experimental flies with [1-14C]-Oleate for 3 days. Subsequently, we shifted the labeled flies to cold food and collected samples at 24, 48 and 72 hr post-transfer and measured 14C label in the TAG fractions using thin-layer chromatography (TLC). Interestingly, musts>pvf1-i flies showed similar rates of lipid mobilization from TAG stores compared to control flies (Figure 5B). Similarly, oenots>tsc1, tsc2 and oenots>pvrDN flies also showed comparable rates of lipid mobilization compared to control animals, indicating that loss of the muscle-to-oenocyte Pvf1 signaling axis does not impair lipid mobilization (Figure 5C). Since loss of the muscle-to-oenocyte Pvf1 signaling axis did not affect lipid mobilization, we tested whether flies lacking this pathway show increased lipid synthesis. To test this possibility, we transferred experimental and control animals to 14C-U-Sucrose containing food and measured the levels of 14C-incorporation over time in the TAG fraction of the flies using TLC. We found that musts>pvf1-i, oenots>tsc1, tsc2, and oenots>pvrDN flies all showed an increased rate of 14C incorporation into TAG fractions compared to control animals (Figure 5D, E). In absence of any effects on lipid mobilization, the increased rate of lipid incorporation indicates an increased rate of lipid synthesis in the experimental flies.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/56969/elife-56969-fig5-v3.jpg)
 
-**Figure 5.:** (A) Starvation resistance of adult male flies on 1% sucrose and 0.8% agar food. Males with muscle-specific knockdown of pvf1 (mus) and oenocyte-specific loss of PvR signaling (ts>pvf1-i1oeno>tspvr) were significantly more resistant to starvation compared to respective controls flies (DNmus = tsmuscle-Gal4 and Gal80tsUAS-pvr). N = 100 (animals), Log rank (Mantel-Cox) test, p≤DN/+0.0001 for both comparisons, error bars = SEM. (B) Rate of lipid mobilization in control (mus) and flies with muscle-specific loss of tspvf1 (mus). N = 4, Cohorts of 23 adult males were used per data point. Multiple Student t-test, error bars = SEM. Note: The control and experimental TLC bands were rearranged for representation from the same TLC plate. Junctions are marked with a dotted line. (ts>pvf1-i1C) Rate of lipid mobilization in control (oeno = tsoenocyte-Gal4) and flies with oenocyte-specific loss of TOR signaling (Gal80tsoeno) and PvR signaling (ts>tsc1,tsc2oeno). N = 4, Cohorts of 23 adult males were used per data point. Multiple Student t-test, error bars = SEM. Note: The control and experimental TLC bands were rearranged for representation from the same TLC plate. Junctions are marked with a dotted line. (ts>pvrDND) Rate of lipid synthesis and incorporation from [U-14C]-Sucrose in control (musts) and flies with muscle-specific loss of pvf1 (mus). Flies lacking Pvf1 in the muscle show a significantly faster rate of lipid incorporation compared to control animals. N = 4, Cohorts of 23 adult males were used per data point. ** denotes p≤ts>pvf1-i10.01 at 72 hr on hot food. Multiple student t-test, error bars = SEM. Note: The control and experimental TLC bands were rearranged for representation from the same TLC plate. Junctions are marked with a dotted line. (E) Rate of lipid synthesis and incorporation from [U-14C]-Sucrose in control flies (oeno) and flies with oenocyte-specific loss of TOR signaling (tsoeno) and PvR signaling (ts>tsc1,tsc2oeno). Flies lacking TOR or PvR signaling in the oenocytes show a significantly faster rate of lipid incorporation compared to control animals. N = 4, Cohorts of 23 adult males were used per data point. *** denotes p≤ts>pvrDN0.001 at 72 hr on hot food. Multiple student t-test, error bars = SEM. Note: The control and experimental TLC bands were rearranged for representation from the same TLC plate. Junctions are marked with a dotted line. (F) Expression level of key lipid synthesis genes in control (oeno) and flies with oenocyte-specific loss of TOR signaling (tsoeno). Only oenocyte-specific fatty acid synthases, ts>tsc1,tsc2fasn2 and fasn3, show a significant reduction in expression in the experimental flies. N = 4, Cohorts of 23 adult males were used per data point. One-way ANOVAa followed by Tukey’s HSD test, **** denotes p≤0.0001, error bars = SEM.
+**Figure 5.:** (A) Starvation resistance of adult male flies on 1% sucrose and 0.8% agar food. Males with muscle-specific knockdown of pvf1 (musts>pvf1-i1) and oenocyte-specific loss of PvR signaling (oenots>pvrDN) were significantly more resistant to starvation compared to respective controls flies (musts = muscle-Gal4Gal80ts and UAS-pvrDN/+). N = 100 (animals), Log rank (Mantel-Cox) test, p≤0.0001 for both comparisons, error bars = SEM. (B) Rate of lipid mobilization in control (musts) and flies with muscle-specific loss of pvf1 (musts>pvf1-i1). N = 4, Cohorts of 23 adult males were used per data point. Multiple Student t-test, error bars = SEM. Note: The control and experimental TLC bands were rearranged for representation from the same TLC plate. Junctions are marked with a dotted line. (C) Rate of lipid mobilization in control (oenots = oenocyte-Gal4Gal80ts) and flies with oenocyte-specific loss of TOR signaling (oenots>tsc1,tsc2) and PvR signaling (oenots>pvrDN). N = 4, Cohorts of 23 adult males were used per data point. Multiple Student t-test, error bars = SEM. Note: The control and experimental TLC bands were rearranged for representation from the same TLC plate. Junctions are marked with a dotted line. (D) Rate of lipid synthesis and incorporation from [U-14C]-Sucrose in control (musts) and flies with muscle-specific loss of pvf1 (musts>pvf1-i1). Flies lacking Pvf1 in the muscle show a significantly faster rate of lipid incorporation compared to control animals. N = 4, Cohorts of 23 adult males were used per data point. ** denotes p≤0.01 at 72 hr on hot food. Multiple student t-test, error bars = SEM. Note: The control and experimental TLC bands were rearranged for representation from the same TLC plate. Junctions are marked with a dotted line. (E) Rate of lipid synthesis and incorporation from [U-14C]-Sucrose in control flies (oenots) and flies with oenocyte-specific loss of TOR signaling (oenots>tsc1,tsc2) and PvR signaling (oenots>pvrDN). Flies lacking TOR or PvR signaling in the oenocytes show a significantly faster rate of lipid incorporation compared to control animals. N = 4, Cohorts of 23 adult males were used per data point. *** denotes p≤0.001 at 72 hr on hot food. Multiple student t-test, error bars = SEM. Note: The control and experimental TLC bands were rearranged for representation from the same TLC plate. Junctions are marked with a dotted line. (F) Expression level of key lipid synthesis genes in control (oenots) and flies with oenocyte-specific loss of TOR signaling (oenots>tsc1,tsc2). Only oenocyte-specific fatty acid synthases, fasn2 and fasn3, show a significant reduction in expression in the experimental flies. N = 4, Cohorts of 23 adult males were used per data point. One-way ANOVAa followed by Tukey’s HSD test, **** denotes p≤0.0001, error bars = SEM.
 
 Since loss of TOR signaling in the oenocytes led to increased lipid synthesis, we investigated the role of TOR signaling in regulating lipid synthetic genes in the oenocytes. We extracted total RNA from adult oenocyte/adipose tissue complexes and measured the expression levels of two oenocyte-specific fatty acid synthases, fasn2 and fasn3. In addition, we measured the expression of two lipogenic genes, acc and fasn1, that are not exclusively expressed in the adult oenocytes in Drosophila. While expression levels of acc and fasn1 did not change in oenots>tsc1,tsc2 flies, expression levels of fasn2 and fasn3 were strongly downregulated (Figure 5F). This indicates that loss of TOR signaling downregulates lipogenic genes in the oenocytes, and that the increased lipid synthesis observed in oenots>tsc1,tsc2 flies is caused by a mechanism independent of the role of TOR in regulating the expression of lipogenic genes in the oenocytes.
 
-## Muscle-to-Oenocyte Pvf1 signaling regulates post-eclosion restoration of stored lipids in adult adipose tissue
+### Muscle-to-Oenocyte Pvf1 signaling regulates post-eclosion restoration of stored lipids in adult adipose tissue
 
 When adult flies emerge from their pupal cases the adult adipose tissue has very low stored lipid content (Storelli et al., 2019), and adipose tissue cells of post-eclosion flies are also notably small in size (Figure 6—figure supplement 1, left most panels). Over the course of the next 3 to 7 days the adipose tissue builds up its lipid stores through feeding and de novo lipid synthesis and expands significantly in size both at cellular and tissue levels (Figure 6—figure supplement 1, middle and right most panels). While the average size of the lipid droplets does not change drastically during this period, the number of lipid droplets per cell increases drastically and a large number of smaller lipid droplets start appearing in the adipose tissue cells (Figure 6—figure supplement 1). These observations suggest that build up of adipose tissue lipid stores happens by formation of new lipid droplets that become bigger in size as adipose tissue lipid build up progresses. Since muscle-to-oenocyte Pvf1 signaling axis negatively regulates lipid synthesis, we hypothesized that this pathway is needed to inhibit lipid synthesis once the build up of adipose tissue lipid stores reaches completion. Consistent with this hypothesis, we find that muscle-specific expression levels of pvf1 is low in newly eclosed flies and increases rapidly over the course of the next 7 days (Figure 6A). To further test the hypothesis that muscle-Pvf1 limits the extent of TAG build up in the adipose tissue of newly eclosed flies, we over-expressed pvf1 in the adult muscle from day 1 of eclosion and measured the frequency of large lipid droplets (LD ≥ 5 μm in diameter/cell) per cell in the adult adipose tissue using BODIPY staining. Compared to controls, musts>pvf1 flies tend to accumulate much lower number of large lipid droplets per adipose tissue cell (Figure 6B, D). Additionally, the experimental animals tend to have larger number of empty adipose tissue cells per animal compared to control flies (Figure 6C). These results suggest that muscle-derived Pvf1 helps terminate the adipose tissue lipid build up phase by suppressing lipid synthesis by signaling to the Drosophila oenocytes.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/56969/elife-56969-fig6-v3.jpg)
+
+**Figure 6.:** (A) Muscle-specific expression of pvf1 in freshly eclosed w1118 males on days 0, 3 and 7 post eclosion. N = 4, 10 adult male abdominal cuticles were used per data point. One-way Anova followed by Dunnett multiple comparison test, ns denotes Not Significant with p=0.202, **** denotes p≤0.0001, error bars = SEM. (B) BODIPY staining of adipose tissue from 7-day-old control males (musts = muscle-Gal4Gal80ts) and males with muscle-specific over-expression of pvf1 (musts>Pvf1) from Day 0 of eclosion. Panels on the right show identification of lipid droplets (LD) that are ≥ 5 μm in diameter using Cell Profiler. DAE = days after eclosion. (C) Quantification of number of adipose tissue cells that do not contain LDs that are ≥ 5 µm in diameter for control (musts) flies and flies with muscle-specific over-expression of pvf1 (musts>pvf1). N = 5/6 animals, Student t-test, **** denotes p≤0.0001, error bars = SEM. (D) Quantification of number of large (≥5 μm in diameter) LDs per cell in control (musts) flies and flies with muscle-specific over-expression of pvf1 (musts>pvf1). N = 5/6 animals, Student t-test, *** denotes p≤0.001, error bars = SEM. (E) Model of the role of muscle-derived Pvf1 in regulating systemic lipid content by signaling to the oenocytes of adult male flies.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56969/elife-56969-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** BODIPY, DAPI and Phalloidin staining of adipose tissue preparations from w1118 flies on day 0, day 3 and day 7 after eclosion. Topmost row shows images acquired with a 25x eyepiece. Bottom three rows show images acquired with a 40x eyepiece. Dotted white boxes show the regions that were re-imaged with the 40x lens. On day 0 post-eclosion, the adipose tissue is small with each cell having two nuclei that are positioned very close to each other. By day 3 and day 7, the adipose tissue cells become progressively larger and fill up with more lipid droplets per cell (both large and small).
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/56969/elife-56969-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** BODIPY staining showing neutral lipid accumulation in the adult male adipose tissue and oenocytes (dorsal abdominal cuticle) of control (oenots>UAS) flies and flies with oenocyte-specific over-expression of fasn3 and fasn1 (oenots>fasn3 and oenots>fasn1). oenots = oenocyte-Gal4Gal80ts.
 
 ## Discussion
 
@@ -89,7 +149,7 @@ The presence in vertebrates of multiple PDGF/VEGF signaling ligands and cognate 
 
 The Drosophila larval and adult adipose tissues have distinct developmental origins. The larval adipose tissue undergo drastic morphological changes during metamorphosis and dissociate into individual large spherical cells (Nelliot et al., 2006). These free-floating adipose cells persist to the young adult stage where they play a crucial role in protecting the animal from starvation and desiccation (Aguila et al., 2007; Storelli et al., 2019). These larval adipose tissue cells are ultimately removed via cell death (Aguila et al., 2007). Adult-specific adipose tissue cells develop during the pupal stage from yet unknown progenitor cells and have very little lipid stores in newly eclosed flies (Figure 6—figure supplement 1). Over the period of next 3–5 days the adult adipose tissue builds up its lipid reserves through feeding and de-novo lipid synthesis. However, at the end of the lipid build-up phase, the rate of lipid synthesis must be suppressed to avoid over-loading of the adipose tissue and prevent lipid toxicity. Our data suggests that muscle Pvf1 signaling suppresses lipid synthesis at the end of the adult adipose tissue lipid build-up phase. Pvf1 production in the adult muscles peaks around the time when adult adipose tissue lipid stores reach steady state capacity. In turn, muscle-derived Pvf1 suppresses lipid synthesis and lipid incorporation by activating TOR signaling in the oenocytes.
 
-## Drosophila Pvf1 functions as a myokine that suppresses lipid synthesis
+### Drosophila Pvf1 functions as a myokine that suppresses lipid synthesis
 
 Our study reveals that Pvf1 is abundant in the tubular muscles of the Drosophila leg and abdomen. In these striated muscles, the protein localizes between individual myofibrils and is particularly enriched at the M and Z bands. Drosophila musculature can be broadly categorized into two groups, the fibrillar muscles and the tubular muscles, with distinct morphological and physiological characteristics. Drosophila IFMs of the thorax belong to the fibrillar muscle group and are stretch-activated, oxidative, slow twitch muscles that are similar to vertebrate cardiac muscles (Schönbauer et al., 2011). By contrast, Drosophila leg muscles and abdominal muscles belong to the tubular muscle group. These muscles are striated, Ca2+ activated, and glycolytic in nature. The tubular muscles are structurally and functionally closer to vertebrate skeletal muscles (Schnorrer et al., 2010; Schönbauer et al., 2011). Expression of Pvf1 in the tubular muscles of the Drosophila leg may reflect a potentially conserved role of this molecule as a skeletal-muscle-derived myokine. The fact that most of the myokines in vertebrates were identified in striated skeletal muscles supports this possibility (Pedersen and Febbraio, 2012; So et al., 2014). Moreover, vertebrate VEGF ligands, VEGF-A and VEGF-B, have also been shown to be stored and released from skeletal muscles (Boström et al., 2012; Vind et al., 2011).
 
@@ -97,7 +157,7 @@ Interestingly, in vertebrates, the expression and release of VEGF ligands are re
 
 We have previously shown that Pvf1 released from gut tumors generated by activation of the oncogene yorkie leads to wasting of Drosophila muscle and adipose tissue (Song et al., 2019). Adipose tissue wasting in these animals is characterized by increased lipolysis and release of free fatty acids (FFAs) in circulation. However, we did not observe any role of Pvf signaling in regulating lipolysis in the adipose tissue of healthy well-fed flies without tumors. Loss of PvR signaling in the adipose tissue did not have any effect on lipid content. Additionally, over-expressing Pvf1 in the muscle did not lead to the bloating phenotype commonly seen in cachectic animals with gut tumors (Kwon et al., 2015; Song et al., 2019). We conclude that Pvf1 affects wasting of the adipose tissue only in the context of gut tumors and that the effect could involve the following mechanisms: (1) the gut tumor releases pathologically high levels of Pvf1 into circulation leading to ectopic activation of PvR signaling in the adipose tissue, and, that such high levels of Pvf1 are not released by the muscle (even when pvf1 is over-expressed in the muscle); (2) Pvf1 causes adipose tissue wasting in the context of other signals that emanate from the gut tumor that are not available in flies that do not have tumors.
 
-## Drosophila oenocytes regulate lipid synthesis and lipid content of the adipose tissue
+### Drosophila oenocytes regulate lipid synthesis and lipid content of the adipose tissue
 
 Only oenocyte-specific loss of PvR signaling phenocopies the obesity phenotype caused by muscle-specific loss of Pvf1, indicating that muscle-Pvf1 primarily signals to the oenocytes to regulate systemic lipid content. Additionally, muscle-specific loss of Pvf1, as well as oenocyte-specific loss of PvR and its downstream effector TOR, leads to an increase in the rate of lipid synthesis. These observations indicate a role for the Drosophila oenocytes in lipid synthesis and lipid accumulation in the adipose tissue. Oenocytes have been implicated in lipid metabolism previously and these cells are known to express a diverse set of lipid metabolizing genes including but not limited to fatty acid synthases, fatty acid desaturases, fatty acid elongases, fatty acid β-oxydation enzymes and lipophorin receptors (reviewed in Makki et al., 2014). Functionally, the oenocytes are proposed to mediate a number of lipid metabolism processes. Oenocytes tend to accumulate lipids during starvation (presumably for the purpose of processing lipids for transport to other organs and generation of ketone bodies) and are necessary for starvation induced mobilization of lipids from the adipose tissue (Gutierrez et al., 2007; Makki et al., 2014). This role is similar to the function of the liver in clearing FFAs from circulation during starvation for the purpose of ketone body generation, and redistribution of FFAs to other organs by converting them to TAG and packaging into very-low density lipoproteins. However, our [1-14C]-oleate chase assay did not show any effect of oenocyte-specific loss of PvR/TOR signaling on the rate of lipid utilization, indicating that this pathway does not affect oenocyte-dependent lipid mobilization.
 
@@ -105,7 +165,7 @@ Oenocytes also play a crucial role in the production of VLCFAs needed for waterp
 
 Insect oenocytes were originally believed to be lipid synthesizing cells because they contain wax-like granules (Makki et al., 2014). These cells express a large number of lipid-synthesizing genes and the abundance of smooth endoplasmic reticulum further suggest a role for this organ in lipid synthesis and transport (Chatterjee et al., 2014; Jackson and Locke, 1989; Wigglesworth, 1988). However, evidence for potential involvement of the oenocytes in regulating lipid synthesis and lipid deposition in the adipose tissue has been lacking. The fact that two of the three fatty acid synthases (fasn2 and fasn3) encoded by the Drosophila genome are expressed specifically in adult oenocytes suggests a potential role for these cells in lipid synthesis (Chung et al., 2014). Our observation that oenocyte-specific loss of PvR and its downstream effector TOR leads to increased lipid synthesis and increased lipid content of the adipose tissue strongly supports this possibility. Our data further suggests that involvement of the oenocytes in mediating lipid synthesis is more pronounced in newly eclosed adults when the adipose tissue needs to actively build up its lipid stores. In later stages of life, the lipid synthetic role of the oenocytes is repressed by the muscle-to-oenocyte Pvf1 signaling axis. Our observation also raises the question of whether FFAs made in the oenocytes can be transported to the adipose tissue for storage. We tested this possibility by over-expressing the lipogenic genes fasn1 and fasn3, which regulate the rate limiting steps of de-novo lipid synthesis, in the oenocytes. We found that excess lipids made in the oenocytes do end up in the adipose tissue of the animal leading to increased lipid droplet size in the adipose tissue (Figure 6—figure supplement 2). Taken together, these results provide evidence for the role of Drosophila oenocytes in lipid synthesis and storage of neutral lipids in the adipose tissue of the animal. Interestingly, the vertebrate liver is also one of the primary sites for de-novo lipid synthesis and lipids synthesized in the liver can be transported to the adipose tissue for the purpose of storage (Gibbons et al., 2000; Meex and Watt, 2017). Hence, the fundamental role of the oenocytes and the mammalian liver converge with respect to their involvement in lipid synthesis.
 
-## A unique role of oenocyte-specific TOR signaling in lipid synthesis
+### A unique role of oenocyte-specific TOR signaling in lipid synthesis
 
 We observed that oenocyte-specific loss of the components of the Pi3K/Akt1/TOR signaling pathway leads to increased lipid synthesis. The increased rate of lipid synthesis in flies lacking TOR signaling in the oenocytes is paradoxical to our current knowledge of how TOR signaling affects expression of lipid synthesis genes. In both vertebrates and flies, TOR signaling is known to facilitate lipid synthesis by inducing the expression of key lipid synthesis genes such as acetyl CoA-carboxylase and fatty acid synthase via activation of SREBP-1 proteins (Han and Wang, 2018; Heier and Kühnlein, 2018; Porstmann et al., 2008). We therefore checked how oenocyte-specific loss of TOR signaling affects expression of oenocyte-specific fatty acid synthases (fasn2 and fasn3) and oenocyte non-specific fatty acid synthesis genes (fasn1 and acc). We observed that oenocyte-specific loss of TOR strongly down-regulates only fasn2 and fasn3, while the expression of adipose tissue specific fasn1 and acc did not change, indicating that TOR signaling is required for the expression of lipogenic genes in the oenocytes. An increase in lipid synthesis in response to loss of TOR in the oenocytes is quite intriguing and the mechanism remains to be addressed. We do not think the increase in lipid synthesis happens in the oenocytes since loss of TOR signaling rather reduces expression of lipogenic genes in the oenocytes. The increase in lipid synthesis could happen either as a result of compensatory upregulation of lipid synthesis in the adipose tissue or due to disruption of an as yet unknown role of the oenocytes in lipid synthesis that hinges on TOR signaling. The fact that the expression levels of fasn1 and acc does not change significantly in animals lacking TOR signaling in the oenocytes indicates that compensatory upregulation of lipid synthesis, if present, does not happen through transcriptional upregulation of lipid synthesis genes in the adipose tissue. It is still possible, however, that the increase in lipid synthesis is caused by post-translational modifications of the enzymes. Alternatively, loss of TOR in the oenocyte could affect tissue distribution of lipids or impair clearing of dietary lipids via formation of cuticular hydrocarbons. Understanding the tissue specific alterations in gene expression and changes in the phosphorylation states of key lipogenic proteins in the adipose tissue of animals lacking TOR signaling in oenocytes could shed more light on the mechanisms involved.
 
@@ -115,75 +175,491 @@ Drosophila larval oenocytes are known to accumulate lipids in response to starva
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/56969/elife-56969-fig7-v3.jpg)
 
-**Figure 7.:** (A) Integrated Uniform Manifold Approximation and Projection (UMAP) plot of snRNA-seq data derived from the abdominal cuticle samples pertaining to oenocyte-specific overexpression of tuberous sclerosis complex 1 and 2 (tsc1, tsc2), which results in the blockade of TOR activity. The UMAP shows 10 distinct clusters (0–9) with the Adipose (0), Muscle (1), and Oenocytes (2) as the major tissue clusters. oeno = tsoenocyte-Gal4. (Gal80tsB) UMAPs separated (from A) based on samples oenocyte-specific overexpression of EGFP control (oeno) and ts>EGFPtsc1, tsc2 (oeno). (ts>tsc1, tsc2C) Bar graphs depicting the percentages of nuclei between the two genotypes oeno (red) and ts >EGFPoeno (blue). Note that the fraction of nuclei did not change in cluster 2, which represents the Oenocytes. (ts>tsc1, tsc2D) Dot plot representing top three genes enriched per cluster based on average expression (logFC). Color gradient of the dot represents the expression level, while the size represents percentage of cells expressing any gene per cluster. The dots within each cluster are separated based on the two genotypes oeno (red) and ts>EGFPoeno (blue) to showcase changes in gene expression, if any. (ts>tsc1, tsc2E) Scatter plot depicting the differentially expressed genes within the Oenocyte cluster pertaining to the two genotypes, oeno and ts>EGFPoeno[log(average expression +1)]. The differential gene expression analysis reveals that certain genes known to be induced upon starvation (highlighted as red dots) remain unchanged upon loss of TOR activity within oenocytes compared to controls. See ts>tsc1,tsc2 Supplementary file 4 for the list of starvation-induced genes.
+**Figure 7.:** (A) Integrated Uniform Manifold Approximation and Projection (UMAP) plot of snRNA-seq data derived from the abdominal cuticle samples pertaining to oenocyte-specific overexpression of tuberous sclerosis complex 1 and 2 (tsc1, tsc2), which results in the blockade of TOR activity. The UMAP shows 10 distinct clusters (0–9) with the Adipose (0), Muscle (1), and Oenocytes (2) as the major tissue clusters. oenots = oenocyte-Gal4Gal80ts. (B) UMAPs separated (from A) based on samples oenocyte-specific overexpression of EGFP control (oenots>EGFP) and tsc1, tsc2 (oenots>tsc1, tsc2). (C) Bar graphs depicting the percentages of nuclei between the two genotypes oenots >EGFP (red) and oenots>tsc1, tsc2 (blue). Note that the fraction of nuclei did not change in cluster 2, which represents the Oenocytes. (D) Dot plot representing top three genes enriched per cluster based on average expression (logFC). Color gradient of the dot represents the expression level, while the size represents percentage of cells expressing any gene per cluster. The dots within each cluster are separated based on the two genotypes oenots>EGFP (red) and oenots>tsc1, tsc2 (blue) to showcase changes in gene expression, if any. (E) Scatter plot depicting the differentially expressed genes within the Oenocyte cluster pertaining to the two genotypes, oenots>EGFP and oenots>tsc1,tsc2 [log(average expression +1)]. The differential gene expression analysis reveals that certain genes known to be induced upon starvation (highlighted as red dots) remain unchanged upon loss of TOR activity within oenocytes compared to controls. See Supplementary file 4 for the list of starvation-induced genes.
 
 Since Pi3K, Akt, and TOR signaling also control cellular growth, there is a possibility that manipulating these genes lead to changes in oenocyte size that in turn leads to the lipid accumulation phenotypes we observe. Indeed, we saw changes in oenocyte size when we disrupted some of these pathways. Since all our studies involved conditional knockdown or over-expression in post-developmental adult animals, the effect on size is most likely caused by changes in the size of individual oenocytes. Consistently, we find that genotypes that lead to smaller oenocytes tend to have more densely packed nuclei. We therefore used nuclei density as a readout to quantify the effect of losing PvR, TOR, Akt1, or InR signaling on oenocyte size. Loss of PvR signaling did not have any effect on oenocyte size (Figure 4—figure supplement 2C, D) and loss of TOR signaling leads to a small but not significant increase in oenocyte size. Whereas loss of InR signaling or akt1 leads to significant decrease in oenocyte size. However, we did not observe any clear correlation between oenocyte size and the obesity phenotype (Figure 4—figure supplement 2C, D). Thus, while oenocyte size could potentially affect lipid metabolism, at least in our study, the size of the oenocytes was not the driving force for the phenotypes observed.
 
 Serum levels of VEGF-A is high in obese individuals and drops rapidly in response to bariatric surgery, suggesting a role for VEGF-A in obesity (García de la Torre et al., 2008; Loebig et al., 2010; Silha et al., 2005). However, evidence on whether VEGF-A or other VEGFs are deleterious vs beneficial in the context of the pathophysiology of obesity is unclear. Adipose tissue-specific over-expression of both VEGF-B and VEGF-A has been shown to improve adipose tissue vascularization, reduce hypoxia, induce browning of fat, increase thermogenesis, and protect against obesity (Elias et al., 2012; Robciuc et al., 2016; Sun et al., 2012; Sung et al., 2013). At the same time, blocking VEGF-A signaling in the adipose tissue of genetically obese mice leads to reduction of body weight gain, improvement in insulin sensitivity, and a decrease in adipose tissue inflammation (Sun et al., 2012). Moreover, systemic inhibition of VEGF-A or VEGF-B signaling by injecting neutralizing monoclonal antibodies have also shown remarkable effects in improving insulin sensitivity in the muscle, adipose tissue, and the liver of high-fat diet-induced mouse models of obesity and diabetes (Hagberg et al., 2012; Wu et al., 2014). Although the evidence on the roles of VEGF/PDGF signaling ligands in obesity and insulin resistance is well established, the mechanisms clearly are quite complex and are often context dependent. Consequently, a wider look at various tissue specific roles of PDGF/VEGF signaling will be necessary to comprehensively understand the roles of PDGF/VEGF signaling in lipid metabolism. Our work demonstrates an evolutionarily conserved role for PDGF/VEGF signaling in lipid metabolism and a non-endothelial cell dependent role of the signaling pathway in lipid synthesis. Additionally, our findings suggest an atypical tissue-specific role of TOR signaling in suppressing lipid synthesis at the level of the whole organism. Further studies will be required to determine whether vertebrate VEGF/PDGF and TOR signaling exerts similar roles either in the vertebrate liver or in other specialized organ.
 
-## A transcriptomic resource of adipose/oenocyte/muscle tissues
+### A transcriptomic resource of adipose/oenocyte/muscle tissues
 
 We made use of snRNA-Seq technology to identify expression of Pvr precisely in certain tissues in the complex abdominal region, which harbors several metabolically active tissues including adipose tissues, oenocytes, and muscle in Drosophila. As yet, there is no systematic study of a complete transcriptomics resource of each of these tissues considering the difficulty in dissecting and segregating these tissues for downstream sequencing. Thus, our study also provides a rich resource of gene expression profiles, paving way for a systems-level understanding of each of these tissues in Drosophila.
 
 ## Materials and methods
 
-## Drosophila strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th colspan="2">Designation</th>
+      <th colspan="2">Source or reference</th>
+      <th>Identifiers</th>
+      <th colspan="2">Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">Pvf1</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0030964</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">Pvf2</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0031888</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">Pvf3</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0085407</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">Pvr</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0085407</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">Pi3K21B</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0020622</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">Pi3K92E</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0015279</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">Akt1</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0010379</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">Tsc1</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0026317</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">Tsc2</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0005198</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">Pli</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0025574</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">sls</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0086906</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">geko</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0020300</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">Pi3K59F</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0015277</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">Pi3K68D</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0015278</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">rl</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0003256</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">InR</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0283499</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">FASN1</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0283427</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Gene (D. melanogaster)</td>
+      <td colspan="2">FASN3</td>
+      <td colspan="2">FlyBase</td>
+      <td>FLYB: FBgn0287184</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td colspan="2">w1118</td>
+      <td colspan="2">Vienna Drosophila Resource Center</td>
+      <td>VDRC ID: 60000</td>
+      <td colspan="2">1w[1118]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">UAS-pvf1i/UAS-pvf1-i1</td>
+      <td colspan="2">Vienna Drosophila Resource Center</td>
+      <td>VDRC ID: 102699</td>
+      <td colspan="2">Genotype: P{KK112211}VIE-260B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">UAS-pvf1-i2</td>
+      <td colspan="2">National Institute of Genetics</td>
+      <td>NIG Fly: 7103 R-2</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">UAS-pvf2-i</td>
+      <td colspan="2">Vienna Drosophila Resource Center</td>
+      <td>VDRC ID: 102072</td>
+      <td colspan="2">Genotype: P{KK110608}VIE-260B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">UAS-pvf3-i</td>
+      <td colspan="2">Vienna Drosophila Resource Center</td>
+      <td>VDRC ID: 105008</td>
+      <td colspan="2">Genotype: P{KK112796}VIE-260B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">musts</td>
+      <td colspan="2">Perrimon Lab stock</td>
+      <td>PMID:28739899</td>
+      <td colspan="2">Genotype: w[*]; P[w[+mC]=tub]P-Gal80{[ts]}10; P{w[+mC]}=Gal4-{Mef2.R}3</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">v-i</td>
+      <td colspan="2">National Institute of Genetics</td>
+      <td>NIG Fly: 2115 R-1</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">pli-troj-Gal4</td>
+      <td colspan="2">Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 77693</td>
+      <td colspan="2">Genotype: y[1] w[*]; Mi{Trojan-GAL4.2}Pli[MI00302-TG4.2]/TM3, Sb[1] Ser[1]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">sls-troj-Gal4</td>
+      <td colspan="2">Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 67495</td>
+      <td colspan="2">Genotype: y[1] w[*]; Mi{Trojan-GAL4.1}sls[MI10783-TG4.1]/TM3, Sb[1] Ser[1]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">geko-troj-Gal4</td>
+      <td colspan="2">Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 66833</td>
+      <td colspan="2">Genotype: y[1] w[*]; Mi{Trojan-GAL4.1}geko[MI02663-TG4.1]/TM3, Sb[1] Ser[1]</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">pvrDN</td>
+      <td colspan="2">Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 58430</td>
+      <td colspan="2">w[1118]; P{w[+mC]=UASp Pvr.DN}D1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">ATts</td>
+      <td colspan="2">Perrimon lab</td>
+      <td>FBrf0234453</td>
+      <td colspan="2">yw/w; tub-Gal80ts/Cyo; Lpp-Gal4/TM6BTby+</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">oenots</td>
+      <td colspan="2">Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 65700</td>
+      <td colspan="2">Genotype: P{w[+mC]=Desat1 GAL4.E800}4M, P{w[+mC]=tubP-GAL80[ts]}2</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td colspan="2">pvr-i</td>
+      <td colspan="2">National Institute of Genetics</td>
+      <td>NIG-FLY: 8222 R-2</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td colspan="2">NA</td>
+      <td colspan="2">NA</td>
+      <td>NA</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Biological sample (D. melanogaster)</td>
+      <td colspan="2">Adult Abdominal Cuticle</td>
+      <td colspan="2">NA</td>
+      <td>NA</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">Anti-Pvr (Rat, Polyclonal)</td>
+      <td colspan="2">Rosin et al., 2004</td>
+      <td>PMID:15056618</td>
+      <td colspan="2">1/400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">Anti-Pvf1 (Rat, Polyclonal)</td>
+      <td colspan="2">Rosin et al., 2004</td>
+      <td>PMID:15056618</td>
+      <td colspan="2">1/100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td colspan="2">Anti-p4E-BP (Rabbit, monoclonal)</td>
+      <td colspan="2">Cell Signaling</td>
+      <td>2855S</td>
+      <td colspan="2">1/200</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td colspan="2">NA</td>
+      <td colspan="2">NA</td>
+      <td>NA</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">FASN1 (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PP32811</td>
+      <td colspan="2">For: ATTATTGACGCTGGCCTAAACC Rev: TGCTGCTCAGTCTCCGAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">FASN2 (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PP1235</td>
+      <td colspan="2">For: ACATTGTGATCTCGGGACTTTC Rev:CGCTAAAGAACTTGTCGTCGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">FASN3 (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PP17912</td>
+      <td colspan="2">For: CGCCGATGGCGTCATTTTAAT Rev:CTCCAAAGAAGGTTGCATCAAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">Pvf1 (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PP26981</td>
+      <td colspan="2">For: AATCAACCGTGAGGAATGCAA Rev: GCACGCGGGCATATAGTAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td colspan="2">ACC (primer)</td>
+      <td colspan="2">FlyPrimerBank</td>
+      <td>PP34306</td>
+      <td colspan="2">For: CGAGCGGGCCATTAGGTTT Rev: GCCATCTTGATGTATTCGGCAT</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td colspan="2">NA</td>
+      <td colspan="2">NA</td>
+      <td>NA</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">Chromium Single Cell 3’ Library and Gel Bead Kit v2</td>
+      <td colspan="2">10x Genomics</td>
+      <td>PN-120267</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">Chromium i7 Multiplex Kit</td>
+      <td colspan="2">10x Genomics</td>
+      <td>PN-120262</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">Chromium Single Cell A Chip Kit</td>
+      <td colspan="2">10x Genomics</td>
+      <td>PN-1000009</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td colspan="2">Nuclei Isolation Kit: Nuclei PURE Prep</td>
+      <td colspan="2">Sigma-Aldrich</td>
+      <td>Cat# NUC201-1KT</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td colspan="2">NA</td>
+      <td colspan="2">NA</td>
+      <td>NA</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">Seurat</td>
+      <td colspan="2">Stuart et al., 2019</td>
+      <td>PMID:31178118</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">Harmony</td>
+      <td colspan="2">Korsunsky et al., 2019</td>
+      <td>PMID:31740819</td>
+      <td colspan="2">NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">SoupX</td>
+      <td colspan="2">Young and Behjati, 2018</td>
+      <td>Biorxiv</td>
+      <td colspan="2">doi: https://doi.org/10.1101/303727</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td colspan="2">Biorender</td>
+      <td colspan="2">https://biorender.com/</td>
+      <td>NA</td>
+      <td colspan="2">Biorender was utilized to make the schematic diagrams used in this study.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td colspan="2">DAPI (nuclear stain)</td>
+      <td colspan="2">Vector Laboratories</td>
+      <td>Cat# H-1200</td>
+      <td colspan="2">Ready to use</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td colspan="2">BODIPY</td>
+      <td colspan="2">ThermoFischer</td>
+      <td>Cat# D3823</td>
+      <td colspan="2">1/500 dilution of a 1 mg/ml stock in DEPC</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td colspan="2">SyBr Green</td>
+      <td colspan="2">Bio-Rad iQ SYBR Green Supermix</td>
+      <td>Cat# 1708880</td>
+      <td colspan="2">Working concentration: 1X</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td colspan="2">Phalloidin</td>
+      <td colspan="2">ThermoFischer</td>
+      <td>A12381</td>
+      <td colspan="2">1/100 dilution of a 1 mg/ml stock in Methanol</td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila strains
 
 A detailed list of fly strains and genotypes used for each figure is provided in the Key Resources Table. For tissue-specific transgene expression, we used the following temperature-sensitive strains. PromE-Gal4, tub-Gal80ts (BDSC:65406) for the oenocytes (oenots), tub-Gal80ts; mef2-Gal4 and tub-Gal80ts; mhc-Gal4 for the muscle (musts), tub-Gal80ts; Lpp-Gal4 for the adipose tissue (ATts)and myo1A-Gal4; tub-Gal80ts for the gut (gutts). Control animals throughout the paper were generated by either crossing the temperature-sensitive driver lines to the isogenized w1118 flies from VDRC or by crossing relevant UAS-lines to the isogenized w1118 flies from VDRC (VDRC60000). The UAS-fasn3 line was generated in the lab. For gene silencing, we used RNAi lines from the TRiP (https://fgr.hms.harvard.edu/fly-in-vivo-rnai) available through BDSC, NIG-Fly (https://shigen.nig.ac.jp/fly/nigfly/) and VDRC (https://stockcenter.vdrc.at/control/main).
 
-## Fly food and temperature
+### Fly food and temperature
 
 Flies strains were routinely kept at 25°C or 18°C on standard lab food (SF) composed of 15 g yeast, 8.6 g soy flour, 63 g corn flour, 5 g agar, 5 g malt, 74 ml corn syrup per liter. 15 w/v HSD was prepared by adding 10 g of Sucrose to 50 g of standard lab food that was melted using a microwave. The sucrose was thoroughly mixed and dissolved completely before pouring 3 ml of food in standard vials. For all experiments fly crosses were maintained at 18°C on SF. We ensured that the density of our experimental animals was kept optimum for proper growth and uniformity of growth conditions. To do so, all crosses consisted of 8 virgin females that were crossed to six males in standard Drosophila food vials. The crosses were allowed to sit in a vial for 6 days at 18°C and then the adults were discarded. We found that 6 days of egg laying at 18°C led to eclosion of 30–40 healthy adult males and an equal number of females. These animals were very comparable in size. We discarded animals that came from vials that yielded ≤ 60 adults or ≥ 80 adults. We regularly reared multiple crosses in parallel to obtain the final number of males that are necessary for a given experiment. Once adults eclosed, they were aged 3–5 days at 18°C and then shifted to 29°C for respective experimental regimes. For knockdown experiments, flies were maintained at 29°C for 7 days on SF and then shifted to HSD (29°C) for another 7 days before collection. For over-expression experiments, flies were maintained at 29°C for 3–4 days and then transferred to HSD (29°C) for 4–5 days before collection.
 
 For all radioactivity feeding experiments, the radioactive compounds were added in the HSD and feeding was started from day 1 of transfer to HSD (29°C). For lipid mobilization assays, the flies were kept on [1-14C]-oleate containing HSD for 3 days and then transferred to cold SF for radioactive chase. For lipid incorporation assays, the flies were transferred to [U-14C]-Sucrose containing HSD and samples were collected every 24 hr. U-14C-Glucose feeding behavior assay was performed as described before (Kwon et al., 2015). For all radio-isotope feeding experiments, we reared the flies on cold food for 7–8 hr between the time that the flies stopped feeding on hot food and the start of our experiment. This ensured that radiolabeled food from the gut is eliminated and that the signal measured comes only from the radioactivity that was incorporated in the cells of the animals (Kwon et al., 2015).
 
-## Preparation of radioactive food
+### Preparation of radioactive food
 
 4 μCi of radioactive material was prepared in 15 μl Ethanol ([1-14C]-oleate) or water ([U-14C]-Sucrose) along with 5 μl of FIDC blue food dye (to visually confirm that the radioactive material is spread evenly on the food surface). HSD food was poured into empty vials without creating any bubbles to make sure to have an even surface when the food solidifies. The radioactive mixture was added on the surface of solidified HSD food dropwise using a pipette and making sure that it is evenly distributed. Importantly, the vials were then appended to a rotor that allowed slow rotation of the vials along the longitudinal axis to assist even spreading of the liquid as it dries overnight.
 
-## BODIPY staining and imaging
+### BODIPY staining and imaging
 
 The abdominal dorsal cuticle was dissected in relaxing buffer (1X PBS, 5 mM MgCl2 and 5 mM EGTA) using micro-scissors with the adipose tissue attached to the cuticle as described before (Rajan et al., 2017). The samples were fixed with 4% paraformaldehyde in relaxing buffer for 20 min. Subsequently the samples were washed with PBS, permeabilized with 0.1% PBT (PBS + 0.1% TritonX100) in PBS for 30 min. PBT was removed by washing with PBS, three times, 5 min each, before adding BODIPY. For BODIPY staining, 500 μl of BODIPY in PBS (1/500 dilution of a 1 mg/ml stock in DMSO) was added to the samples and the samples were placed on a rotator for 30 min at room temperature. The samples were then washed in PBS, two times, 10 min each, incubated in PBS with DAPI for 10 min, washed two more times in PBS, 10 min each, and then mounted with Vectashield mounting media (VectaShield 1000). Samples were mounted with a bridge using two pieces of scotch tapes (3M) with the adipose tissue facing the cover slip. Samples were imaged using a Zeiss LSM780 confocal microscope. Images were acquired at room temperature.
 
-## Triacylglycerol (TAG) assays
+### Triacylglycerol (TAG) assays
 
 Whole animal TAG was measured as described previously (Tennessen et al., 2014). Briefly, eight males were homogenized in 96-well deep well plates with 250 μl of ice cold PBT using a TissueLyser II (1 mm Zirconium beads, frequency: 30/s, time: 30 s). The plates were centrifuged at 1500 rpm for 3 min to remove any debris and 10 μl of the supernatant and triglyceride standards (Sigma: G7793-5ML) was added to 20 μl of triglyceride reagent (Sigma: T2449-10ML) in 96 well black clear bottom plates (Greiner bio-one; non-binding, black plates 655906) and the mixture was incubated at 37°C for 40–45 min. 100 μl of free-glycerol reagent (Sigma: F6428-40ML) was subsequently added to each well and the samples were incubated at 37°C for 5–10 min before reading absorbance at 540 nm using a 96-well plate reader.
 
-## Immunohistochemistry to detect Pvf1 and PvR proteins
+### Immunohistochemistry to detect Pvf1 and PvR proteins
 
 Rat anti-Pvf1 and Rat anti-PvR sera were used at a dilution of 1/200 and 1/500 respectively in blocking solution (BS: 1X PBS+0.1% TritonX100+5% BSA). Anti-Rat secondary antibody was used at a dilution of 1/500. Rabbit monoclonal antibody to p4EBP and secondary antibody (Donkey anti-Rabbit-488) for p4EBP detection were pre-cleared with fixed embryos (w1118) at a dilution of 1/50 in BS and then used at a dilution of 1/200 and 1/500 in BS, respectively.
 
-## Oenocytes/adipose tissue
+#### Oenocytes/adipose tissue
 
 The abdominal dorsal cuticle was dissected in relaxing buffer (1X PBS, 5 mM MgCl2 and 5 mM EGTA) using micro-scissors with the adipose tissue attached to the cuticle. The samples were fixed with 4% paraformaldehyde in relaxing buffer for 20 min. The samples were then washed in 1X PBS three times, 5 min each. The samples were permeabilized with 1X PBS+0.1% TritonX100 (PBT) for 30 min and then incubated with BS for 2 hr at room temperature. Primary antibody staining was performed in BS at 4°C overnight or 48 hr for staining the oenocytes with constant rotation (a long incubation is necessary for the antibody to percolate into the oenocytes) with constant rotation. Post primary incubation, samples were washed generously (five times, 15 min washes with PBT) at room temperature. Secondary, antibody incubation was done at room temperature for 2 hr in BS diluted 1/5 in PBT. Post secondary-incubation samples were washed in PBT and mounted with Vectashield mounting media. For phalloidin staining, PBT was exchanged with PBS with three washes and samples were incubated with phalloidin in PBS for 30 min at RT. Samples were then washed in PBS and mounted with vecta-shield mounting media.
 
-## Muscle
+#### Muscle
 
 Adult male thoraxes were prepared for fixation by removing the head and abdomen. Additionally, the tips of the legs were cut using micro-scissors to allow easy access to the leg muscles for the fixative. The dissected samples were fixed in 4% paraformaldehyde for 30 min. The samples were subsequently embedded in 4% low-melt agarose and left at 4°C over night for the agarose to solidify. Samples in agarose blocks were mounted on to the stage of a vibratome (Leica VT1000M) in ice-cold PBS and 100 μm sections were cut. The sections were further trimmed under the microscope tissue sections with some surrounding agarose were transferred to 2 ml tubes. Subsequent immuno-staining steps were similar to as discussed in the previous section. Stained sections were mounted in Vectashield mounting media and imaged using a Zeiss LSM 780 confocal microscope.
 
-## RT-qPCR
+### RT-qPCR
 
 Real-time quantitative PCR (RT-qPCR) experiments were conducted using a Biorad CFX 96/384 device. The iQ SYBR green super mix and i-Script RT-reaction mix was used as per the manufacturer’s instructions for the qPCR reactions. 7.5 μl of the 2x reaction mix, primer-mix final concentration of 133 nM and 20 ng of cDNA (assuming 1:1 conversion of RNA to cDNA) were regularly used per reaction. Reagents and samples were dispensed using a Formulatrix Mantis small volume liquid handler. The ΔΔCt method was used to calculate fold change in experimental conditions. Four to five biological replicates were used in all experiments. Transcript levels were normalized to Drosophila Rp49, tub and gapdh. Standard curves were run for each primer before use and we only used primers that showed an efficiency above 95%.
 
-## Folch extraction and thin-layer chromatography (TLC)
+### Folch extraction and thin-layer chromatography (TLC)
 
-## Folch extraction
+#### Folch extraction
 
 Animals were collected in 1.5 ml screw cap tubes along with 1 mm zirconium beads and were frozen on dry ice. Samples were stored at −80°C if necessary, until all samples were ready for processing. For processing of the samples, 600 μl of Methanol:ChCl3:H2O (10:5:4) was added to the tubes using a graduated glass Hamilton syringe and the animals were homogenized using the Qiagen TissueLyser II instrument. Two rounds of homogenization at a frequency of 30/sec and total duration of 30 s per round were performed to ensure complete homogenization of the tissues. The samples were placed on a rotor at 37°C for 1 hr. Subsequently, 160 μl of ChCl3 and 160 μl of 1 M KCl were added to each sample. The samples were shaken vigorously for 5 s and briefly vortexed before centrifuging at 3000 rpm for 2 min on a standard Eppendorf bench top centrifuge for phase separation. 220 μl of the organic phase (bottom layer) was pipetted out into new clean 1.5 ml centrifuge tubes using a graduated glass Hamilton syringe. The samples were then placed in a vacuum concentrator (Labcono centrivap console) and the organic solvent was completely removed. The dried samples were stored at −80 if needed or run directly on a TLC plate.
 
-## Thin-layer chromatography
+#### Thin-layer chromatography
 
 For TLC, the dried samples were resuspended in 40 μl CHCl3 and the entire volume was loaded on to Analtech channeled TLC plates with preadsorbent zones that allow loading of large volumes of samples (Analtech P43911). The lipids were then separated using hexane:diethyl ether:acetic acid (80:20:1) solvent system. The plates were exposed to phosphor imager screens overnight and revealed by using a Typhoon FLA 7000 phosphor imager. The density of the TAG bands was calculated using imageJ/Fiji.
 
-## Preparation of single nuclei suspension from adult Drosophila abdominal cuticle
+### Preparation of single nuclei suspension from adult Drosophila abdominal cuticle
 
 Forty adult male abdomens were quickly dissected in ice cold relaxing buffer (1xPBS, 10 mM EGTA and 10 mM MgCl2) by cutting off the last 2nd and abdominal segment with micro-scissors and hollowing out the abdomen by removing the intestines and male reproductive organs. The dissected tissue was then roughly chopped and transferred to a Dounce homogenizer. The relaxing buffer was replaced with 1.3 ml of nuclei lysis buffer from the Sigma NUC-201 Nuclei isolation kit. Single nuclei suspension from the homogenate was prepared according to the manufacturer’s instruction the in the NUC-201 kit. Briefly, a 1.5 M sucrose cushion was used for generating the gradient for density gradient centrifugation. Density gradient centrifugation was performed in 2 ml tubes using a SW55Ti rotor on a Beckman ultracentrifuge.
 
-## Analysis of snRNA-Seq data
+### Analysis of snRNA-Seq data
 
 We used the 10X Genomics cellranger count pipeline (version 3.1.0) to analyze the demultiplexed FASTQ data and generated the single cell count matrix, once for each sample. We aligned the reads to a custom ‘pre-mRNA’ reference which was generated as described by 10X Genomics based on FlyBase R6.29. We applied SoupX (version 0.3.1) (Young and Behjati, 2018) to directly correct the count matrix from cellranger with fixed contamination value equals 0.45 for each sample. We filtered the cells beyond UMI counts ± 2 fold Standard Deviation of the average total sample counts (log10) after SoupX, which were regarded as doublets or dead cells in droplet. The quality filtered datasets were combined into a single Seurat (version 3.1.2) object (Stuart et al., 2019) and integrated using Harmony (version 1.0) (Korsunsky et al., 2019) with default analysis workflow and parameters. FindClusters function in Seurat was applied to identify cell clusters. The number of cell clusters identified depended on the number of PCs used for the clustering analysis (resolution). A resolution of 0.1 was chosen as clustering parameter for Figure 2B. A resolution of 0.4 was chosen as clustering parameter for Figure 2—figure supplement 3A. The code for the snRNA-Seq analysis can be found at https://github.com/liuyifang/Drosophila-PDGF-VEGF-signaling-from-muscles-to-hepatocyte-like-cells-protects-against-obesity (Ghosh, 2020; copy archived at; swh:1:rev:f1ad799015c901dad378f6e488dc38f4a19fd703) Dot-and-Violin plots were generated using the Seurat DotPlot and VlnPlot functions. We performed pathway enrichment analysis on marker genes with positive fold change for each cluster as described in Tang et al., 2018. Gene sets of Transcription Factor (TF) target genes of major signaling pathways were assembled manually (unpublished data). Enrichment p-value was calculated based on the hypergeometric distribution using the background of 11863 genes identified as expressed in this dataset. The strength of enrichment was calculated as negative of log10(p-value), which is used to plot the heatmap. The snRNA-seq data is available at the gene expression omnibus (GEO) under the accession code GSE147601.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Graphical representation and statistical analysis of all quantitative data was performed using GraphPad Prism eight software (www.graphpad.com). Quantification of lipid droplet size was performed using CellProfiler and the pipeline used will be made available upon request to the corresponding author (Lamprecht et al., 2007). For each data point a total of about 10 images acquired from one of the adipose tissue lobes of each animal was analyzed. We counted hundreds of lipid droplets per image and the mean lipid droplet size from these images is reported as a single data point per animal. Quantification of fluorescent intensities of immunostained samples was performed using a custom-made ImageJ (Fiji) macro (also available upon request).
 

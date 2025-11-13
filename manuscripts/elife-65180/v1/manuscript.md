@@ -33,7 +33,7 @@ Parasitic helminths have infected humans throughout their evolutionary history. 
 
 Using a mouse model, Crowe et al., 2020 recently provided the first tantalizing evidence that helminth therapy can protect against aging through anti-inflammatory mechanisms. In the light of their study, we have taken a conceptual research approach (surveying and repurposing published findings) (Blagosklonny and Pardee, 2002) to investigate the plausibility of anti-inflammaging helminth therapy. We will begin by describing the idea of helminth therapy in more detail.
 
-## Helminth therapy as a treatment for putative old friend loss disorders
+### Helminth therapy as a treatment for putative old friend loss disorders
 
 A variety of inflammatory disorders that afflict people prior to aging have been linked to a loss of old friend helminths. These include asthma, atopic eczema, inflammatory bowel disease, multiple sclerosis (MS), rheumatoid arthritis, and type 1 diabetes (Maizels, 2020). For example, a study from Argentina found that accidental acquisition of helminth infections not only caused a reduction in inflammatory cytokines, but also alleviated disease symptoms in MS patients, and that clearance of parasites reversed these effects (Correale and Farez, 2007; Correale and Farez, 2011). In a similar vein, studies from Uganda found that hookworm infections in pregnant women confer protection against infantile atopic eczema, protection that is abrogated by anthelmintic treatment during pregnancy (Mpairwe et al., 2011; Mpairwe et al., 2014).
 
@@ -45,7 +45,7 @@ Another strategy is to identify the mechanisms by which helminths manipulate hos
 
 Taken together, helminth therapy currently shows promise as a means to treat inflammatory conditions such as allergy and autoimmunity (Figure 2a). But could it also protect against inflammaging? Could maintaining half a dozen hookworms in your bowel help slow aging?
 
-## Helminth therapy to counter inflammaging?
+### Helminth therapy to counter inflammaging?
 
 Inflammaging can be detected as a sterile, persistent elevation of pro-inflammatory molecules in the blood, including cytokines such as IL-6 and TNF-α and acute phase proteins such as C-reactive protein (CRP). Interestingly, reduced levels of circulating pro-inflammatory cytokines and CRP have been seen in people infected by strongylid and filarial helminths in a number of studies (Aravindhan et al., 2010; George et al., 2014; Rajamanickam et al., 2019; Rajamanickam et al., 2020) (though not all [Aravindhan et al., 2012]), and experimental helminth infection similarly reduces pro-inflammatory cytokines in human serum (Gaze et al., 2012). Furthermore, expulsion of helminths by anthelmintic medication induces elevated pro-inflammatory cytokine responsiveness in human blood (Bourke et al., 2013; Wammes et al., 2016). Thus, it is possible that helminth infections could attenuate the systemic inflammation that is inflammaging. But what about actual benefits in terms of improved health outcomes, such as reduced pathology and increased lifespan?
 
@@ -67,7 +67,7 @@ There is also some very limited evidence that helminth therapy might promote res
 
 There is also some evidence linking helminth loss to other inflammaging-linked conditions. This includes COPD, given that some helminths are known to suppress lung inflammation and to reduce levels of the pro-inflammatory cytokine IL-33, a driver of COPD pathology (Osbourn et al., 2017). It should be noted however that other helminths such as N. brasiliensis can promote COPD pathology (Marsland et al., 2008). Meanwhile, IL-33 also promotes age-related macular degeneration (Xi et al., 2016), another late-life inflammaging-linked disease. Anecdotal evidence from home-users of live helminth therapy suggests that old friend helminths may also provide protection against Parkinson’s disease and depression, although whether the latter includes geriatric depression is not known (Cheng et al., 2015). Both Parkinson’s disease and geriatric depression are considered to be inflammaging-linked conditions (Teixeira et al., 2012; Calabrese et al., 2018).
 
-## Perspectives
+### Perspectives
 
 There is clear evidence that an absence of helminth infection leads to increased incidence of inflammatory disorders, including some inflammaging-linked conditions, such as rheumatoid arthritis. Furthermore, experimental and clinical work has demonstrated the protective benefits of restorative helminth therapy against some inflammaging-linked diseases. Whether this reflects the ability of helminth therapy to reduce inflammaging remains uncertain, but this possibility clearly warrants further investigation.
 
@@ -77,6 +77,6 @@ The possibility of anti-aging helminth therapy raises various questions. How do 
 
 Effective application of helminth therapy would also require a clear understanding of its specific anti-inflammaging mechanisms. Theoretically, helminths could counter inflammaging in several ways. For example, they could inhibit sources of inflammaging by preventing gut barrier permeabilization and obesity, neutralize existing inflammaging by increasing the proportion of anti-inflammatory to pro-inflammatory cytokines, or repair inflammaging-afflicted tissue damage, for example through promotion of IL-22 secretion (Figure 2b).
 
-## Conclusions
+### Conclusions
 
 It goes without saying that improvements in hygiene and elimination of helminth parasites have been of incalculable benefit to humanity. But a cost coupled with this benefit is abnormalities of immune function, specifically inflammatory hyperfunction. Available evidence suggests that restorative helminth therapies are effective against not only allergic and autoimmune inflammatory disorders, but also age-associated inflammation in later life, at least to some extent. Should this be confirmed, helminth therapy could provide protection against the wide spectrum of age-related diseases promoted by inflammaging. In the wake of successes during the last century in eliminating the evils of helminth infections, the time now seems propitious to explore further their possible benefits, particularly for our aging population – strange though this may sound.

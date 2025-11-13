@@ -9,9 +9,9 @@
 
 ### Affiliations
 
-1. https://ror.org/056wdpc91 Cognitive Neuroimaging Unit, Université Paris-Saclay, INSERM, CEA, CNRS, NeuroSpin center Gif/Yvette France
-2. https://ror.org/00vpwhm04 Institute of Neuroscience, Key Laboratory of Primate Neurobiology, CAS Center for Excellence in Brain Science and Intelligence Technology, Chinese Academy of Sciences Shanghai China
-3. https://ror.org/013cjyk83 Collège de France, Université Paris Sciences Lettres (PSL) Paris France
+1. Cognitive Neuroimaging Unit, Université Paris-Saclay, INSERM, CEA, CNRS, NeuroSpin center Gif/Yvette France ([ROR:056wdpc91](https://ror.org/056wdpc91))
+2. Institute of Neuroscience, Key Laboratory of Primate Neurobiology, CAS Center for Excellence in Brain Science and Intelligence Technology, Chinese Academy of Sciences Shanghai China ([ROR:00vpwhm04](https://ror.org/00vpwhm04))
+3. Collège de France, Université Paris Sciences Lettres (PSL) Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))
 
 † Corresponding author
 
@@ -41,7 +41,7 @@ Two subtleties further qualify this overall theoretical picture. First, at the h
 
 ## Results
 
-## The LoT for binary sequences
+### The LoT for binary sequences
 
 As used in the present work, the LoT hypothesis postulates that humans encode mental objects such as sequences or geometric shapes using ‘mental programs’, that is expressions in a symbolic language characterized by (1) a small set of primitives and (2) the capacity to recursively combine these primitives through three operators: concatenation, repetition (possibly with variations), and recursive nesting (i.e. calling of a subprogram) (Dehaene et al., 2022; Sablé-Meyer et al., 2022). In this framework, defining a language requires the selection of a vocabulary of primitives that be recursively combined.
 
@@ -53,7 +53,7 @@ The description length of a mental program is computed as a weighted sum of the 
 
 In our previous work, we compared extensively the proposed LoT to other sequence encoding models such as entropy, change complexity, or algorithmic complexity (Planton et al., 2021). The findings indicated that LoT complexity for chunk-preserving expressions, that is those that do not split any chunk of repetitions, provided the best fit of participants’ behavior, over and above all other competing models. The present study builds on these results and investigates the neural code of the LoT.
 
-## Stimulus design
+### Stimulus design
 
 We designed a hierarchy of sequences (Figure 1) of fixed length (16 items) that should systematically vary in complexity according to our previously proposed LoT (Planton et al., 2021) and whose gradations separate the lower-level representations of sequences that may be accessible to non-human primates (as outlined in Dehaene et al., 2015) from the more abstract ones that may only be accessible to humans (Figure 1A).
 
@@ -65,9 +65,17 @@ The next level required nested structures, that is a hierarchical representation
 
 Finally, as a control, our paradigm also includes a high-complexity, largely incompressible sequence, with balanced transition probabilities and minimal chunking possibilities. We selected a sequence which our language predicted to be of maximal complexity (highest MDL), and which was therefore predicted to challenge the limits of working memory (Figure 1A). Note that because such a complex sequence, devoid of recurring regularities, is not easily encodable within our language (except for a trivial concatenation of chunks), we expect the brain areas involved in nested sequence coding to exhibit no further increase in activation, or even a decrease (Vogel and Machizawa, 2004).
 
-## Behavior in deviant detection
+### Behavior in deviant detection
 
 Similar to Planton et al., 2021, we used task performance in the fMRI deviant detection task to quantify the LoT model’s ability to predict behavior. Sensitivity (d’) was calculated by examining the hit rate for each sequence and each violation position, relative to the overall false-alarm rate on standard no-violation trials. On average, participants managed to detect the deviants at above chance level in all sequences and at all positions (min d’=0.556, min t(22) = 2.919, p<0.0080). Thus, they were able to detect a great variety of violation types in regular sequences (unexpected alternations, repetitions, change in number, or chunk boundaries). However, performance worsened as the 16-item sequences became too complex to be easily memorized. The group-averaged performance in violation detection for each sequence (regardless of deviant position) was linearly correlated with LoT complexity, both for response times to correctly detected items (RTs) (F(1, 8)=43.87, p<0.0002, R²=0.85) and for sensitivity (d’) (F(1, 8)=159.4, p<0.0001, R²=0.95) (see Figure 2A). When including the participants as a random factor in a linear mixed model, we obtained a very similar result for sensitivity (F(1, 206)=192.92, p<0.0001, with estimates of –0.092±0.007 for the LoT complexity predictor, and 3.39±0.17 for the intercept), as well as for responses times (F(1, 203)=110.87, p<0.0001, with estimates of 17.4 ms±1.6 for the LoT complexity predictor, and 475.4 ms±38.6 for the intercept). As for false alarms, they were rare, and no significant linear relationship with LoT complexity was found in group averages (F(1, 8)=2.18, p=0.18), although a small effect was found in a linear mixed model with participant as the random factor (F(1, 206)=4.83, p<0.03, with estimates of 0.038±0.017 for the LoT complexity predictor, and 1.57±0.39 for the intercept).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/84376/elife-84376-fig2-v1.jpg)
+
+**Figure 2.:** (A) Group-averaged sensitivity (d’) and response times for each sequence in the deviant detection task, plotted against the language of thought (LoT) complexity. A significant linear relationship with LoT complexity was found in both cases. The Pearson correlation coefficient and associated p-value are reported. Error bars represent SEM. (B) Comparison of the goodness of fit (indexed by the Akaike information criterion) of 12 mixed models (for sensitivity, top, and for response time, bottom), that is, each testing one out of six different complexity metrics (see main text) and including or not a transition-based surprise predictor. Δ(AIC) is the difference in AIC with the best model of the 12. A lower value indicates a better fit. The best model (Δ(AIC)=0) is marked by a green rectangle on the vertical axis. (C) The heatmap for each sequence represents the vector of the average number of brackets drawn by the participants around each item in the sequence bracketing task (after smoothing for illustration purposes). The Pearson correlation coefficient with the vector of brackets predicted by the LoT model is reported on the right side. A high correlation was obtained for all sequences but Alternate, since several subjects segmented this sequence in eight groups of two items, while the shortest LoT expression represented it in a single group of 16 items with 15 alternations.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84376/elife-84376-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Error bars represent SEM.
 
 We evaluated whether these results could be explained by statistical learning, that is whether deviants were more easily or more rapidly detected when they violated the transition probabilities of the current sequence. For sensitivity (d’), a likelihood ratio test showed that adding a transition-probability measure of surprise (Maheu et al., 2019; Meyniel et al., 2016) to the linear regression with LoT complexity improved the goodness of fit (χ²(1)=4.35, p<0.038). The effect of transition-based surprise was indeed significant in the new model (F(1, 205)=4.35, p<0.039), but LoT complexity effect remained highly significant (F(1, 205)=106.28, p<0.0001). Similarly, for RTs, adding transition-based surprise to the model significantly improved model fit (χ²(1)=12.27, p<0.0005). Transition-based surprise explained some of the variance in RTs (F(1, 202)=12.51, p<0.0006), but again the effect of LoT complexity remained highly significant (F(1, 202)=46.3, p<0.0001).
 
@@ -77,7 +85,7 @@ We then assessed whether alternative models of sequence complexity could better 
 
 In summary, using a partially different set of sequences, we replicated the behavioral findings of Planton et al., 2021: for long sequences that largely exceed the storage capacity in working memory, violation detection and response speed (both indexing the ease of memorizing the sequence and anticipating the next item) were well correlated with the LoT model of sequence compression, which outperformed other approaches for quantifying sequence complexity.
 
-## Behavioral bracketing task
+### Behavioral bracketing task
 
 After brain imaging, we also asked all participants to report their intuitions of how each sequence should be parsed by drawing brackets on a visual representation of its contents (after listening to it). The results (see heatmaps in Figure 2C) indicated that participants agreed about how a sequence should be parsed and used bracketing levels appropriately for nested sequences. For instance, they consistently placed brackets in the middle of sequences that consisted of two repetitions of eight items, but did so less frequently both within those phrases and when the midpoint was not a predicted parsing point (CenterMirror in Figure 2C). In order to assess the correspondence between the parsings and the organization proposed by the LoT model, we computed for each sequence the correlation between the group-averaged number-of-brackets vector and the LoT model vector (obtained from the sequence segmentation derived from the LoT description in terms of repeat, alternate, and concatenate instructions). A strong correlation was found for sequences Repeat (Pearson r=0.96, p<0.0001), Pairs (r=0.88, p<0.0001), Quadruplets (r=0.96, p<0.0001), Pairs&Alt.1 (r=0.94, p<0.0001), Shrinking (r=0.93, p<0.0001), Pairs&Alt.2 (r=0.85, p<0.0001), ThreeTwo (r=0.95, p<0.0001), CenterMirror (r=0.95, p<0.0001), and Complex (r=0.84, p<0.0001), but not for Alternate (r=0.08, p=0.77). For the latter, a departure from the proposed encoding was found: while the shortest LoT representation encodes it as ‘15 alternations’, the participants’ parses corresponded to ‘8 AB pairs’. In the discussion, we explain how this small departure from theory could have arisen from the specifics of the visual bracketing task, rather than the actual encoding of the auditory sequence.
 
@@ -85,15 +93,414 @@ It could be suggested that, rather than the structure predicted by the LoT model
 
 In summary, using a partially different set of sequences, we replicated the behavioral findings of Planton et al., 2021, showing that, especially for long sequences that largely exceed the storage capacity in working memory, violation detection (an index of learning quality) and response speed (potentially indexing the degree of predictability) were well predicted by our LoT model of sequence compression.
 
-## fMRI data
+### fMRI data
 
-## A positive effect of complexity during sequence learning and tracking
+#### A positive effect of complexity during sequence learning and tracking
 
 As predicted, during the habituation phase (i.e. during sequence learning), fMRI activation mostly increased with sequence complexity in a broad and bilateral network involving supplementary motor area (SMA), precentral gyrus (preCG) abutting the dorsal part of Brodmann area 44, cerebellum (lobules VI and VIII), superior and middle temporal gyri (STG/MTG), and the anterior intraparietal sulcus (IPS) region (close to its junction with the postcentral gyrus) (Figure 3A and Table 1). These regions partially overlapped with those observed in sequence learning for a completely different domain, yet a similar language: the visuo-spatial sequences of Wang et al., 2019. In the opposite direction, a reduction of activation with complexity was seen in a smaller network, mostly corresponding to the default-mode network, which was increasingly deactivated as working memory load increased (Mazoyer et al., 2001; Raichle, 2015): medial frontal cortex, left middle cingulate gyrus, left angular gyrus (AG), and left pars orbitalis of the inferior frontal gyrus (IFGorb) (Table 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/84376/elife-84376-fig3-v1.jpg)
+
+**Figure 3.:** (A) Brain areas showing an increase (hot colors) or a decrease (cold colors) in activation with sequence LoT complexity during habituation (voxel-wise p<0.001, uncorrected; cluster-wise p<0.05, FDR corrected). Scatterplots represent the group-averaged activation for each of the ten sequences as a function of their LoT complexity (left panels: habituation trials; right panels, deviant trials) in each of nine regions of interest (ROIs). Data values are from a participant-specific ROI analysis. Error bars represent SEM. Linear trends are represented by a solid line (with 95% CI in dark gray) and quadratic trend by a dashed line (with 95% CI in light gray). Pearson linear correlation coefficients are also reported. (B) Time course of group-averaged BOLD signals for each sequence, for four representative ROIs. Each mini-session lasted 160 s and consisted of 28 trials divided into 5 blocks (2×5 habituation and 3×6 test trials), interspersed with short rest periods of variable duration (depicted in light gray). The full time course was reconstituted by resynchronizing the data at the onset of each successive block (see Materials and methods). Shading around each time course represents one SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84376/elife-84376-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/84376/elife-84376-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Each mini-session lasted 160 s and was composed of five blocks (two habituation and three tests) interspersed with short rest periods of variable duration (depicted in light gray). The full time course was reconstituted by resynchronizing the data at the onset of each successive block (see Materials and methods). Shading around each time course represents one SEM.
+
+**Table 1.**
+ Coordinates of brain areas modulated by language of thought (LoT) complexity during habituation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Positive LoT complexity effect in habituation trials</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Region</th>
+      <th>H</th>
+      <th>k</th>
+      <th>p(unc.)</th>
+      <th>p(FWE-corr)</th>
+      <th>T</th>
+      <th>x</th>
+      <th>y</th>
+      <th>z</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">Supplementary motor area, precentral gyrus, superior frontal gyrus (dorsolateral), middle frontal gyrus</td>
+      <td>L/R</td>
+      <td>8991</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.0001</td>
+      <td>6.62</td>
+      <td>1</td>
+      <td>5</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.001</td>
+      <td>5.82</td>
+      <td>8</td>
+      <td>12</td>
+      <td>49</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.05</td>
+      <td>5.59</td>
+      <td>27</td>
+      <td>5</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td>Lobule VIII of cerebellar hemisphere</td>
+      <td>L</td>
+      <td>1411</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.0001</td>
+      <td>6.19</td>
+      <td>22</td>
+      <td>68</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td>Lobule VI and Crus I of cerebellar hemisphere</td>
+      <td>L</td>
+      <td>939</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.001</td>
+      <td>5.97</td>
+      <td>29</td>
+      <td>56</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Superior temporal gyrus, middle temporal gyrus</td>
+      <td>L</td>
+      <td>2022</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.05</td>
+      <td>5.56</td>
+      <td>68</td>
+      <td>23</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.05</td>
+      <td>4.80</td>
+      <td>59</td>
+      <td>35</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>0.213</td>
+      <td>4.25</td>
+      <td>55</td>
+      <td>42</td>
+      <td>23</td>
+    </tr>
+    <tr>
+      <td>Lobule VI of cerebellar hemisphere</td>
+      <td>R</td>
+      <td>1216</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.05</td>
+      <td>5.45</td>
+      <td>27</td>
+      <td>58</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Lobule VIII of cerebellar hemisphere</td>
+      <td>L</td>
+      <td>1549</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.05</td>
+      <td>5.04</td>
+      <td>22</td>
+      <td>67</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>0.118</td>
+      <td>4.44</td>
+      <td>33</td>
+      <td>54</td>
+      <td>55</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Superior temporal gyrus</td>
+      <td>R</td>
+      <td>1039</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.05</td>
+      <td>4.93</td>
+      <td>48</td>
+      <td>30</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.05</td>
+      <td>4.79</td>
+      <td>67</td>
+      <td>44</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>0.880</td>
+      <td>3.55</td>
+      <td>69</td>
+      <td>23</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Postcentral gyrus, Inferior parietal gyrus</td>
+      <td>R</td>
+      <td>1478</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.05</td>
+      <td>4.79</td>
+      <td>36</td>
+      <td>46</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>0.061</td>
+      <td>4.63</td>
+      <td>46</td>
+      <td>35</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>0.170</td>
+      <td>4.33</td>
+      <td>46</td>
+      <td>32</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Superior parietal gyrus, Precuneus</td>
+      <td>R</td>
+      <td>547</td>
+      <td>&lt;0.0001</td>
+      <td>0.085</td>
+      <td>4.54</td>
+      <td>17</td>
+      <td>67</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>0.792</td>
+      <td>3.65</td>
+      <td>24</td>
+      <td>60</td>
+      <td>42</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Inferior parietal gyrus, Postcentral gyrus</td>
+      <td>L</td>
+      <td>1570</td>
+      <td>&lt;0.0001</td>
+      <td>0.106</td>
+      <td>4.47</td>
+      <td>31</td>
+      <td>42</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>0.149</td>
+      <td>4.37</td>
+      <td>45</td>
+      <td>35</td>
+      <td>38</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>0.530</td>
+      <td>3.90</td>
+      <td>40</td>
+      <td>42</td>
+      <td>61</td>
+    </tr>
+    <tr>
+      <td>Negative LoT complexity effect in habituation trials</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Region</td>
+      <td>H</td>
+      <td>k</td>
+      <td>p(unc.)</td>
+      <td>p(FWE-corr)</td>
+      <td>T</td>
+      <td>x</td>
+      <td>y</td>
+      <td>z</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Superior frontal gyrus (dorsolateral, medial, medial orbital), middle frontal gyrus</td>
+      <td>L/R</td>
+      <td>12366</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.001</td>
+      <td>5.86</td>
+      <td>19</td>
+      <td>67</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.05</td>
+      <td>5.42</td>
+      <td>29</td>
+      <td>25</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.05</td>
+      <td>5.33</td>
+      <td>6</td>
+      <td>44</td>
+      <td>58</td>
+    </tr>
+    <tr>
+      <td>Middle cingulate and paracingulate gyri, precuneus</td>
+      <td>L</td>
+      <td>1444</td>
+      <td>&lt;0.0001</td>
+      <td>&lt;0.05</td>
+      <td>5.26</td>
+      <td>1</td>
+      <td>33</td>
+      <td>51</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Angular gyrus</td>
+      <td>L</td>
+      <td>1530</td>
+      <td>&lt;0.0001</td>
+      <td>0.060</td>
+      <td>4.63</td>
+      <td>43</td>
+      <td>65</td>
+      <td>37</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>0.816</td>
+      <td>3.63</td>
+      <td>33</td>
+      <td>54</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.001</td>
+      <td>0.938</td>
+      <td>3.45</td>
+      <td>27</td>
+      <td>82</td>
+      <td>44</td>
+    </tr>
+    <tr>
+      <td rowspan="3">IFG pars orbitalis</td>
+      <td>L</td>
+      <td>522</td>
+      <td>&lt;0.0001</td>
+      <td>0.354</td>
+      <td>4.07</td>
+      <td>52</td>
+      <td>35</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>0.473</td>
+      <td>3.95</td>
+      <td>34</td>
+      <td>40</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>&lt;0.0001</td>
+      <td>0.645</td>
+      <td>3.80</td>
+      <td>27</td>
+      <td>33</td>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+
 We then computed the same contrast with the standard trials of the test phase (sequences without violation). The network of areas showing a positive complexity effect was much smaller than during habituation: it included bilateral superior parietal cortex extending into the precuneus, left dorsal premotor area, as well as two cerebellar regions (right lobule IV, left lobule VIII) (Figure 2—figure supplement 1, Supplementary file 2). These areas were also found during the habituation phase, although the (predominantly left) parietal superior/precuneus activation was larger and extended more posteriorily than during habituation. Regions showing a negative LoT complexity effect in standard trials (reduced activation for increasing complexity) were more numerous: medial frontal regions, middle cingulate gyri, bilateral AG, bilateral anterior part of the inferior temporal gyrus, bilateral putamen, as well as left frontal orbital region and left occipital gyrus. Here again, they largely resemble what was already observed in habituation trials (i.e. a deactivation of a default-mode network), with a few additional elements such as the putamen.
 
-## A negative effect of complexity on deviant responses
+#### A negative effect of complexity on deviant responses
 
 The effect of LoT complexity at the whole-brain level was first assessed on the responses to all deviant stimuli (whether detected or not). A positive linear effect of complexity was only found in a small cluster of the medial part of the superior frontal gyrus (SFG) (Supplementary file 3). As predicted, a much larger network showed a negative effect (i.e. reduced activation with complexity or increased activation for less complex sequences): bilateral postcentral gyrus (with major peak in the ventral part), supramarginal gyrus (SMG), IPS, STG, posterior MTG, ventral preCG, insula, SMA and middle cingulate gyrus, cerebellum (lobules VI, VIII, and vermis), right pars triangularis of the IFG (red activation map of Figure 4, Supplementary file 3). This network is thus the possible brain counterpart of the increase in deviant detection performance observed as sequences become less and less complex. However, this result could be partly due to a motor effect, since manual motor responses to deviants were less frequent for more complex sequences, as attested by an effect of LoT complexity on sensitivity. We therefore computed the same contrast using an alternative GLM modeling-only deviant trials to which the participant correctly responded (note that this model consequently included fewer trials, especially for higher complexity sequences). Negative effects of LoT complexity were still present in this alternative model, now unconfounded by motor responses. As shown in Figure 4 (yellow) the negative effect network was a subpart of the network identified in the previous model, and concerned bilateral STG, MTG, SMG/postcentral gyrus, insula, SMA, and middle cingulate gyrus. A positive effect was still present in a medial SFG cluster, part of the default-mode network showing less deactivation for deviants as complexity increased.
 
@@ -101,7 +508,7 @@ The effect of LoT complexity at the whole-brain level was first assessed on the 
 
 **Figure 4.:** Colors indicate the brain areas whose activation on deviant trials decreased significantly with complexity, in two distinct general linear models (GLMs): one in which all deviant stimuli were modeled (red), and one in which only correctly detected deviant stimuli were modeled (green) (voxel-wise p<0.001, uncorrected; cluster-wise p<0.05, FDR corrected). Overlap is shown in yellow.
 
-## ROI analyses of the profile of the complexity effect
+#### ROI analyses of the profile of the complexity effect
 
 We next used individual ROIs to measure the precise shape of the complexity effect and test the hypothesis that (1) activation increases with complexity but may reach a plateau or decrease for the most complex, incompressible sequence; and (2) on deviant trials, the complexity effect occurs in the opposite direction. Because merely plotting the signal at peaks identified by a linear or quadratic contrast would bias the results (Vul et al., 2009), we designed cross-validated individual ROI analyses, which consisted in (1) considering half of the runs to identify responsive subject-specific voxels within each ROI, using a contrast of positive effect of complexity during habituation; and (2) considering the other half to extract the activation levels for each standard or deviant sequence. Only the initial search volumes were defined on the basis of the entire data from the present study, which is likely to introduce only a minimal degree of circularity. We focused on nine areas that exhibited a positive complexity contrast in habituation (Figure 3), where the effect was robust and was computed on the learning phase of the experiment, therefore uncontaminated by deviant stimuli and manual motor responses.
 
@@ -113,7 +520,7 @@ The ROI analyses were next performed with data from the deviant trials, in order
 
 As in the whole-brain analysis, we finally conducted a complementary analysis using activation computed with correctly detected deviants trials only. The linear LoT complexity was now only significant in four of the nine ROIs: R-STG: β=–0.48, t(197) = –7.64, p.corr <0.0001; L-IPS: β=–0.34, t(197) = –4.54, p.corr <0.0001; L-STG: β=–0.42, t(197) = –4.12, p.corr <0.0006; R-CER8: β=–0.15, t(197) = –3.17, p.corr <0.02. When adding a quadratic term, no significant effects were observed at the predefined threshold, although uncorrected ones were present for L-STG: β=0.03, t(196) = 2.37, p<0.02 and R-CER8: β=0.01, t(196) = 2.05, p<0.05.
 
-## Overlap with the brain networks for language and mathematics
+#### Overlap with the brain networks for language and mathematics
 
 Past and present behavioral results suggest that an inner ‘language’ is required to explain human memory for auditory sequences – but is this language similar to natural language, or to the language of mathematics, and more specifically geometry, from which it is derived (Al Roumi et al., 2021; Amalric et al., 2017b; Wang et al., 2019)? By including in our fMRI protocol an independent language and mathematics localizer experiment, we tested whether the very same cortical sites are involved in natural sentence processing, mathematical processing, and auditory sequences.
 
@@ -129,11 +536,31 @@ On the contrary, in the mathematics-related network, all areas showed a positive
 
 To summarize, all dorsal regions previously identified as involved in mathematical-processing regions were sensitive to the complexity of our auditory binary sequences, as manifested by an increase, up to a certain level of complexity, during habituation; and, for most regions, a reduction of the novelty to deviants (especially for SMA, left preCG, and IPS). Such a sensitivity to complexity was conspicuously absent from language areas, except for the left pars opercularis of the IFG.
 
-## MEG results
+### MEG results
 
 The low temporal resolution of fMRI did not permit us to track the brain response to each of the 16 successive sequence items, nor to any local sequence properties such as item-by-item variations in surprise. To address this limit, a similar paradigm was tested with MEG. To maximize signal-to-noise, especially on rare deviant trials, only seven sequences were selected (Figures 1 and 6). Unlike the fMRI experiment, during MEG we merely asked participants to listen carefully to the presented sequences of sounds, without providing any button response, thus yielding pure measures of violation detection uncontaminated by the need to respond.
 
-## Neural signatures of complexity at the univariate level
+![Figure 6.](https://cdn.elifesciences.org/articles/84376/elife-84376-fig6-v1.jpg)
+
+**Figure 6.:** (A) Global field power computed for each sequence (see color legend) from the evoked potentials of the habituation, standard, and deviant trials. 0 ms indicates sound onset. Note that the time window ranges until 350 ms for habituation and standard trials (with a new sound onset at S0A=250 ms), and until 600 ms for deviant trials and for the others. Significant correlation with sequence complexity was found in habituation and deviant GFPs and are indicated by the shaded areas. (B) Regressions of MEG signals as a function of sequence complexity. Left: amplitude of the regression coefficients β of the complexity regressor for each MEG sensor. Insets show the projection of those coefficients in source space at the maximal amplitude peak, indicated by a vertical dotted line. Right: spatiotemporal clusters where regression coefficients were significantly different from 0. While several clusters were found (see text and Figure 6—figure supplement 3), for the sake of illustration, only one is shown for each trial type. The clusters involved the same sensors but on different time windows (indicated by the shaded areas) and with an opposite t-value for deviant trials. Neural signals were averaged over significant sensors for each sequence type and were plotted separately.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/84376/elife-84376-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Global field power computed for the deviant / matched standard contrast for each sequence (see color legend). 0 ms indicates sound onset. Significant correlation with sequence complexity is indicated by the shaded areas. (B) Regressions of contrast as a function of sequence complexity. Left: amplitude of the regression coefficients β of the complexity regressor for each magneto-encephalography (MEG) sensor. Right: spatiotemporal clusters where regression coefficients were significantly different from 0. Two clusters were found, the sake of illustration, only one is shown here. Unsurprisingly, the clusters involved the same sensors as in Figure 6. Neural signals were averaged over significant sensors for each sequence type and were plotted separately.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/84376/elife-84376-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Left: amplitude of the regression coefficients β of the complexity regressor for each MEG sensor, in a general linear model where transition-based surprise, repetition, and alternation were also modeled. Insets show the projection of these coefficients on the source space for its maximal amplitude value, indicated by the vertical dotted lines. Right: illustration of spatiotemporal clusters where regression coefficients were significantly different from 0. The time windows identified by the permutation test are indicated by the shaded areas and have an opposite t-value for deviant trials. Neural signals were averaged over the cluster sensors for each sequence type and were plotted separately (see color legend). Note that the time window goes until 600 ms for deviant trials and until 350 ms for the other trials.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/84376/elife-84376-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** The clusters are very similar in all three cases, suggesting a robust effect of complexity irrespectively of transition statistics.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/84376/elife-84376-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** The transition-based surprise predictor is computed using an ideal observer estimating surprise over 100 past observations. The projection on the source space at the time of its maximal amplitude is also shown.
+
+#### Neural signatures of complexity at the univariate level
 
 We first determine if a summary measure of brain activity, the global field power, is modulated by sequence complexity. To do so, we consider the brain responses to sounds occurring in the habituation phase, to non-deviant sounds occurring in the test phase (referred to as standard sounds) and to deviant sounds. On habituation trials, the late part of the auditory response (108–208 ms) correlated positively with complexity (p=0.00024, see shaded area in the top panel of Figure 6A): the more complex the sequence, the larger the brain response. On standard trials, this modulation of the GFP by complexity had vanished (middle panel of Figure 6A). Finally, as predicted, the GFP computed on the deviant exhibited the reversed effect, that is a negative correlation with complexity on the 116–300 ms time window (p=0.0005) and on the 312–560 ms time window (p=0.0005), indicating that deviants elicit larger brain responses in sequences with lower complexity (bottom panel of Figure 6A).
 
@@ -141,13 +568,13 @@ To better characterize the mechanisms of sequence coding, we ran a linear regres
 
 The same analyses were performed on the contrast of deviants-matched standards conditions. Matched-standard trials are selected such that they matched the deviants’ ordinal position, which was specific to each sequence. These results are reported in Figure 6—figure supplement 1. The clusters shown involve the same sensors but exhibit opposite regression signs for the brain responses to deviant sounds, suggesting that, as in fMRI, the same brain regions are involved in the processing of standard and deviant items but are affected by complexity in an opposite manner.
 
-## Controlling for local transition probabilities
+#### Controlling for local transition probabilities
 
 Several studies have shown that human EEG/MEG responses are sensitive to the statistics of sounds and sound transitions in a sequence (Maheu et al., 2019; Meyniel et al., 2016; Näätänen et al., 1989; Todorovic et al., 2011; Todorovic and de Lange, 2012; Wacongne et al., 2012), including in infants (Saffran et al., 1996). When listening to probabilistic binary sequences of sounds, early brain responses reflect simple statistics such as item frequency while later brain responses reflect more complex, longer-term inferences (Maheu et al., 2019). Since local transition-based surprise and global complexity were partially correlated in our sequences, could this surprise alone account for our results? To disentangle the contributions of transition probabilities and sequence structure in the present brain responses, we regressed the brain signals as a function of complexity and of surprise based on transition probabilities. To capture the latter, we added several predictors: the presence of a repetition or an alternation and the surprise of an ideal observer that makes optimal inferences about transition probabilities from the past 100 items (see Maheu et al., 2019, for details). Both predictors were computed for two consecutive items: the one at stimulus onset (t=0 ms) and the next item (t=250 ms later) and included together with LoT complexity as multiple regressors of every time point.
 
 Figure 6—figure supplement 2 shows the temporal profile of the regression coefficient for sequence complexity for each MEG sensor and its projection onto the source space, once these controlling variables were introduced. The contribution of auditory regions was slightly diminished compared to the simple regression of brain signals as a function of complexity. To assess the significance of the regression coefficient, we ran a spatiotemporal cluster-based permutation test at the sensor level. Several significant clusters were found for each of the three trial types (habituation: cluster 1 from 96 to 244 ms, p=0.0162, cluster 2 from 112 to 220 ms, p=0.014; standard: cluster 1 from 104.0 to 180.0 ms, cluster value=1.50, p=0.0226, cluster 2 from 100 to 220 ms, p=0.0004; deviant: cluster 1 from 224 to 600 ms, p=0.0088, cluster 2 from 116 to 600 ms, p=0.0006; see Figure 6—figure supplement 3 for complete cluster profiles). The results remained even when the transition-based surprise regressors were entered first, and then the regression on complexity was performed on the residuals (Figure 6—figure supplement 2, right column). In summary, the positive effect of complexity on habituation and standard trials, and its negative effect on deviant trials, were not solely due to local transition-based surprise signals.
 
-## Time-resolved decoding of violation responses
+#### Time-resolved decoding of violation responses
 
 The above results were obtained by averaging sensor data across successive stimuli and across participants. A potentially more sensitive analysis method is multivariate decoding. It is a manner similar to King and Dehaene, 2014, which searches, at each time point and within each participant, for an optimal pattern of sensor activity reflecting a given type of mental representation. Therefore, to further characterize the brain representations of sequence structure and complexity, we next used multivariate time-resolved analyses, which allowed us to track sequence coding for each item in the sequence, at the millisecond scale.
 
@@ -161,7 +588,7 @@ Decoding of deviants reached significance for all sequences except for the most 
 
 The time courses of the decoder performance on habituation trials also revealed a clear hierarchy in the time it took for the brain to decide that a given tone was not a deviant (Figure 7B). The seven curves were ordered by predicted sequence complexity. Thus, the decoder’s classification as standard, quantified as the projection on the decision vector, decreased significantly with sequence complexity over two time windows (temporal cluster from ~90–220 ms and ~330–460 ms). This suggests that the more the sequence is complex, the more brittle its classification as standard is.
 
-## Decoder performance over the full extent of each sequence
+#### Decoder performance over the full extent of each sequence
 
 To characterize the time course of brain activity over the entire course of each sequence, we projected each MEG time point onto the decoding axis of the standard/deviant decoder trained on data from a 130–210 ms time window (Figure 8). The projection was computed separately for each sequence, separately for habituation, standard, and the four possible positions of deviant trials. We determined if deviants differed from standards using a cluster-based permutation test on a 0–600 ms window after each violation (colored lines at the bottom of each sequence in Figure 8A).
 
@@ -207,11 +634,11 @@ The present results therefore support the hypothesis that the human brain hosts 
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Nineteen participants (10 men, Mage = 27.6 years, SDage = 4.7 years) took part in the MEG experiment and 23 (11 men, Mage = 26.1 years, SDage = 4.7 years) in the fMRI experiment. The two groups of participants were distinct. We did not test any effect of gender on the results of this study. All participants had normal or corrected to normal vision and no history or indications of psychological or neurological disorders. In compliance with institutional guidelines, all subjects gave written informed consent prior to enrollment and received 90€ as compensation. The experiments were approved by the national ethical committees (CPP Ile-de-France III and CPP Sud-Est VI).
 
-## Stimuli and tasks
+### Stimuli and tasks
 
 Auditory binary sequences of 16 sounds were used in both experiments. They were composed of low-pitch and high-pitch sounds, constructed as the superimposition of sinusoidal signals of respectively f=350 Hz, 700 Hz, and 1400 Hz, and f=500 Hz, 1000 Hz, and 2000 Hz. Each tone lasted 50 ms and the 16 tones were presented in sequence with a fixed SOA of 250 ms.
 
@@ -223,17 +650,17 @@ In the MEG experiment, habituation and test sequences followed each other seamle
 
 In the fMRI experiment, participants were explicitly instructed to detect and respond to violations, by pressing a button, as quickly as possible, with either their right or left hand. The correct response button (left or right, counterbalanced over the two repetitions of each sequence) was indicated by a 2 s visual message on the screen during the rest period preceding the first test trial. In order to optimize the estimation of the BOLD response, trials were presented in two blocks of five trials for the habituation phase, then three blocks of six trials for the test phase, separated by rest periods of variable duration (6 s±1.5). The 10 sequences appeared twice, once in each version (starting with A or B). The 20 mini-sessions were presented across five fMRI sessions of approximately 11 min.
 
-## Post-experimental sequence bracketing task
+### Post-experimental sequence bracketing task
 
 After the experiment, participants were given a questionnaire to assess their own representation of the structure of the sequence. For each sequence of the experiment (i.e. 7 for the MEG participants, 10 for the fMRI participants), after listening to it several times if needed, participants were asked to segment the sequence by drawing brackets (opening and closing) on its visual representation (As and Bs were respectively represented by empty and filled circles on a sheet of paper). In this way, they were instructed to indicate how they tended to group consecutive items together in their mind when listening to the sequence, if they did.
 
-## fMRI experiment procedures
+### fMRI experiment procedures
 
-## Localizer session
+#### Localizer session
 
 Together with the main sequence-processing task described above, the fMRI experimental protocol also included a 6 min localizer session designed to localize cerebral regions involved in language processing and in mathematics. This localizer was already used in our previous work (Planton and Dehaene, 2021) and is a variant of a previously published functional localizer which is fully described elsewhere (Pinel et al., 2007). A sentence-processing network was identified in each subject by contrasting sentence reading/listening conditions (i.e. visually and auditorily presented sentences) from control conditions (i.e. meaningless auditory stimuli consisting in rotated sentences, and meaningless visual stimuli of the same size and visual complexity as visual words). A mathematics network was identified in each subject by contrasting mental calculation conditions (i.e. mental processing of simple subtraction problems, such as 7–2, presented visually, and auditorily) from sentence reading/listening conditions.
 
-## fMRI acquisition and preprocessing
+#### fMRI acquisition and preprocessing
 
 MRI acquisition was performed on a 3T scanner (Siemens, Tim Trio), equipped with a 64-channel head coil. 354 functional scans covering the whole brain were acquired for each of the five sessions of the main experiment, as well as 175 functional scans for the localizer session, all using a T2*-weighted gradient echo-planar imaging sequence (69 interleaved slices, TR = 1.81 s, TE = 30.4 ms, voxel size = 1.75 mm3, multiband factor = 3). To estimate distortions, two volumes with opposite phase encoding direction were acquired: one volume in the anterior-to-posterior direction (AP) and one volume in the other direction (PA). A 3D T1-weighted structural image was also acquired (TR = 2.30 s, TE = 2.98 ms, voxel size = 1.0 mm3).
 
@@ -241,13 +668,13 @@ Data processing (except the TOPUP correction) was performed with SPM12 (Wellcome
 
 In addition to the 6 motion regressors from the realignment step, 12 regressors were computed using the aCompCor method (Behzadi et al., 2007), applied to the CSF and to white matter (first five components of two principal component analyses, and one for the raw signal), in order to better correct for motion-related and physiological noise in the statistical models (using the PhysIO Toolbox; Kasper et al., 2017). Additional regressors for motion outliers were also computed (framewise displacement larger than 0.5 mm; see Power et al., 2012), they represented 0.5% of volumes per subject on average. One participant was excluded from the fMRI analyses due to excessive movement in the scanner (average translational displacement of 2.9 mm within each fMRI session, which was 3.3 SD above group average).
 
-## fMRI analysis
+#### fMRI analysis
 
-## General linear model
+##### General linear model
 
 Statistical analyses were performed using SPM12 and GLM that included the motion-related and physiological noise-related regressors (described above) as covariates of no interest. fMRI images were high-pass filtered at 0.01 Hz. Time series from the sequences of stimuli of each condition (each tone modeled as an event) were convolved with the canonical hemodynamic response function. Specifically, for each of the 20 mini-sessions (i.e. each sequence being tested twice, reverting the attribution of the two tones), one regressor for the items of the habituation phase, one for the items of the test phase, and one for the deviant items were included in the GLM. Since motor responses and deviant trials were highly collinear, manual motor responses were not modeled. However, motor responses could be less frequent for more complex sequences (i.e. increased miss rate), thus creating a potential confound with the effect of complexity in deviant trials. We thus also computed an alternative model in which only correctly detected deviants trials were included. In order to test for a relationship between brain activation and LoT complexity in different trial types (i.e. habituation trials, deviant trials), corresponding beta maps for each of the 10 sequences and each participant were entered in second-level within-subject ANOVA. Linear parametric contrasts using the LoT complexity value were then computed.
 
-## Cross-validated ROI plots and analyses
+##### Cross-validated ROI plots and analyses
 
 To further test the reliability of the complexity effect across participants, a cross-validated ROI analysis, using individually defined fROIs, was conducted. Nine of the most salient peaks from the positive LoT complexity contrast in habituation were first selected, and used to build nine 20-mm-diameter spherical search volumes: SMA (coordinates: –1, 5, 65), right precentral gyrus (R-preCG; 46, 2, 44), left precentral gyrus (L-preCG; –47, 0, 45), right intraparietal sulcus (R-IPS; 36, –46, 56), left intraparietal sulcus (L-IPS; −31, –42, 44), right superior temporal gyrus (R-STG; 48, –32, 3), left superior temporal gyrus (L-STG; −68, –23, 5), lobule VI of the left cerebellar hemisphere (L-CER6; −29, –56, –28) and lobule VI of the right cerebellar hemisphere (R-CER8; 22, –68, –51). Since these search volumes were defined on group-level results, to reduce the degree of circularity when extracting the individual ROI data, these were extracted in a cross-validated manner, by separating each participant data into two halves. Individual fROIs were then defined for each participant by selecting the 20% most active voxels at the intersection between each search volume and the contrast ‘LoT complexity effect in habituation’ computed on half of the blocks (i.e. blocks of sequences starting with ‘A’). Mean contrast estimates for each fROI and each condition was then extracted using the other half of the blocks (i.e. blocks of sequences starting with ‘B’). The same procedure was repeated a second time by reversing the role of the two halves (i.e. fROIs computed using blocks of sequences starting with ‘B’, data extracted from blocks of sequences starting with ‘A’). It should be noted that this procedure does not fully eliminate the circularity in the analysis, since the initial search volumes were still based on whole-group data – however, such circularity should be minimal, as the ROIs themselves. To test for the significance of the complexity effect in each ROI, the mean of the output of the two procedures (i.e. the cross-validated activation value), for each of the 10 conditions (i.e. habituation blocks for each of the 10 sequences) and each participant, was entered in a linear mixed-effect model with participant as random factor and LoT complexity value as a fixed-effect predictor. p-Values were corrected for multiple comparison using Bonferroni correction for nine ROIs. Along with such a linear effect of complexity, we also tested a quadratic effect by adding a quadratic term in the mixed-effect model.
 
@@ -255,62 +682,62 @@ In order to track activation over time, we also extracted, using the same cross-
 
 Finally, two set of ROIs were selected in order to test for the involvement of language and mathematics-related areas in the present sequence-processing task, and especially to assess a potential sequence complexity effect. Seven language-related ROIs came from the sentence-processing experiment of Pallier et al., 2011: pars orbitalis (IFGorb), triangularis (IFGtri), and opercularis (IFGoper) of the inferior frontal gyrus, TP, TPJ, aSTS, and pSTS. Seven mathematics-related ROIs came from the mathematical thinking experiment of Amalric and Dehaene, 2016: left and right IPS, left and right SFG, left and right precentral/inferior frontal gyrus (preCG/IFG), SMA. These two sets of ROIs were already used in the past (Planton and Dehaene, 2021; Wang et al., 2019). In order to build individual and functional ROIs from these literature-based ROIs, we used the same procedure as Planton and Dehaene, 2021, consisting in selecting, for each subject, the 20% most active voxels within the intersection between the ROI mask and an fMRI contrast of interest from the independent localizer session. The contrast of interest was ‘Listening & reading sentences > Rotated speech & false font script’ for the ROIs of the language network, and ‘Mental calculation visual & auditory > Sentence listening & reading’ for the ROIs of the mathematics network. Mean contrast estimates for each fROI and each condition was then extracted, and entered into linear mixed-effect model with participant as random factor and LoT complexity value as a fixed effect predictor. A Bonferroni correction for 14 ROIs was applied to the p-values.
 
-## Behavioral data analysis
+### Behavioral data analysis
 
 Data for the sequence bracketing task included all productions collected in the fMRI and MEG experiment (42 participants for seven sequences, and 23 participants for the three that were only presented during fMRI). For each production, we counted the total number of brackets (opening and closing) drawn at each interval between two consecutive items (as well as before the first and after the last item, resulting in a vector of length 17) (see Figure 2A). To determine if participants’ reported sequence structure matched the predictions of the LoT model, we computed the correlation between the average over participants of the number of brackets in each interval and the postulated bracketing of the sequence (derived from its expression in the LoT). For the first two sequences, the representations ‘[A][A][A]…’ and ‘[AAA…]’, as well as ‘[A][B][A]…’, and ‘[ABA…]’, respectively, derived from the expressions [+0]^16 and [+0]^16<b >, were considered as equivalent.
 
 For the violation detection task of the fMRI experiment, we considered as a correct response (or ‘hit’) all button presses occurring between 200 ms and 2500 ms after the onset of a deviant sound. We thus allowed for potential delayed responses (but found that 97.7% of correct responses were below 1500 ms). An absence of response in this interval was counted as a miss, a button press outside this interval was counted as a false alarm. We then computed, for each subject and each sequence, the average response time as well as, using the proportions of hits and false alarms, the sensitivity (or d’). The method of Hautus, 1995, was used to adjust extreme values. To test whether subject performance correlated with LoT complexity, we performed linear regressions on group-averaged data, as well as linear mixed models including participant as the (only) random factor. The random effect structure of the mixed models was kept minimal, and did not include any random slopes, to avoid the convergence issues often encountered when attempting to fit more complex models. Analyses were performed in R 4.0.2 (R Development Core Team, 2020), using the lme4 (Bates et al., 2015) and lmerTest (Kuznetsova et al., 2017) packages. Surprise for each deviant item was computed from transition probabilities, within each block for each subject, using an ideal observer Bayesian model (Maheu et al., 2019; Meyniel et al., 2016) and tested as an additional predictor in the mixed-effect models. For the analysis of d’, we used the average surprise of the deviant items of the block (i.e. all deviants presented to the subject, whether or not they detected them). For the analysis of response times, we used the average transition-based surprise of the correctly detected deviant items of the block.
 
-## MEG experiment procedures
+### MEG experiment procedures
 
-## MEG recordings
+#### MEG recordings
 
 Participants listened to the sequences while sitting inside an electromagnetically shielded room. The magnetic component of their brain activity was recorded with a 306-channel, whole-head MEG by Elekta Neuromag (Helsinki, Finland). 102 triplets, each comprising one magnetometer and two orthogonal planar gradiometers composed the MEG helmet. The brain signals were acquired at a sampling rate of 1000 Hz with a hardware high-pass filter at 0.1 Hz. The data was then resampled at 250 Hz.
 
 Eye movements and heartbeats were monitored with vertical and horizontal electro-oculograms (EOGs) and electrocardiograms (ECGs). Head shape was digitized using various points on the scalp as well as the nasion, left and right pre-auricular points (FASTTRACK, Polhemus). Subjects’ head position inside the helmet was measured at the beginning of each run with an isotrack Polhemus Inc system from the location of four coils placed over frontal and mastoïdian skull areas. Sounds were presented using Eatymotic audio system (an HiFi-quality artifact-free headphone system with wide-frequency response) while participants had to fixate a central cross. The analysis was performed with MNE Python (Gramfort et al., 2013; Jas et al., 2018), version 0.23.0.
 
-## Data cleaning: maxfiltering
+##### Data cleaning: maxfiltering
 
 We applied the signal space separation algorithm mne.preprocessing.maxwell_filter (Taulu et al., 2004) to suppress magnetic signals from outside the sensor helmet and interpolate bad channels that we identified visually in the raw signal and in the power spectrum. This algorithm also compensated for head movements between experimental blocks by realigning all data to an average head position.
 
-## Data cleaning: independent component analysis
+##### Data cleaning: independent component analysis
 
 Oculomotor and cardiac artifacts were removed performing an independent component analysis on the four last runs of the experiment. The components that correlated the most with the EOG and ECG signals were automatically detected. We then visually inspected their topography and correlation to the ECG and EOG time series to confirm their rejection from the MEG data. A maximum of one component for the cardiac artifact and two components for the ocular artifacts were considered. Finally, we removed them from the whole recording (14 runs).
 
-## Data cleaning: autoreject
+##### Data cleaning: autoreject
 
 We used an automated algorithm for rejection and repair of bad trials (Jas et al., 2017) that computes the optimal peak-to-peak threshold per channel type in a cross-validated manner. It was applied to baselined epochs and removed on average 4.6% of the epochs.
 
-## Epoching parameters and projection on magnetometers
+##### Epoching parameters and projection on magnetometers
 
 Epochs on items were baselined from –50 to 0 ms (stimulus onset) and epochs on the full sequences were baselined between –200 and 0 ms (first sequence item onset). For sensor level analyses, instead of working with the 306 sensors (102 magnetometers and 206 gradiometers), we projected the spherical sources of signal onto the magnetometers using MNE epochs method epochs.as_type(‘mag’,mode=’accurate’).
 
-## Univariate analyses
+### Univariate analyses
 
-## GFP and linear regressions
+#### GFP and linear regressions
 
 Global field power was computed as the root-mean-square of evoked responses or the difference of evoked responses. Linear regressions were computed using fourfold cross-validation and with the linear_model.LinearRegression function of scikit-learn package version 0.24.1. Pearson correlation was computed with the stats.pearsonr function from scipy package. The predictors for surprise from transition probabilities were computed using an ideal observer Bayesian model learning first-order transitions with an exponential memory decay over 100 items. This was done thanks to the TransitionProbModel python package, which is the python version of the Matlab version used in Maheu et al., 2019; Meyniel et al., 2016.
 
-## Source reconstruction
+#### Source reconstruction
 
 A T1-weighted anatomical MRI image with 1 mm isometric resolution was acquired for each participant (3T Prisma Siemens scanner). The anatomical MRI was segmented with FreeSurfer (Dale et al., 1999; Fischl et al., 2002) and co-registered with MEG data in MNE using the digitized markers. A three-layer boundary element model (inner skull, outer skull, and outer skin) was used to estimate the current-source density distribution over the cortical surface. Source reconstruction was performed on the linear regression coefficients using the dSPM solution with MNE default values (loose orientation of 0.2, depth weighting of 0.8, SNR value of 3) (Dale et al., 2000). The noise covariance matrix used for data whitening was estimated from the signal within the 200 ms preceding the onset of the first item of each sound sequence. The resulting sources estimates were transformed to a standard anatomical template (fsaverage) with 20,484 vertices using the MNE morphing procedure, and averaged across subjects.
 
-## Multivariate analyses
+### Multivariate analyses
 
 Data was smoothed with a 100 ms sliding window and, instead of working with the 306 sensors (102 magnetometers and 206 gradiometers), we projected the spherical sources of signal onto the magnetometers using MNE epochs method epochs.as_type(‘mag’,mode=’accurate’).
 
-## Time-resolved multivariate decoding of brain responses to standard and deviant sounds
+#### Time-resolved multivariate decoding of brain responses to standard and deviant sounds
 
 The goal of multivariate of time-resolved decoding analyses was to predict from single-trial brain activity (X) a specific categorical variable (y), namely if the trial corresponded to the presentation of a deviant sound or not. These analyses were performed using MNE-python function GeneralizingEstimator from version 0.23.0 (Gramfort et al., 2013) and with Scikit-learn package version 1.1.1 (Pedregosa et al., 2011). Prior to model fitting, channels were z-scored across trials for every time point. The estimator was fitted on each participant separately, across all MEG sensors using the parameters set to their default values provided by the Scikit-Learn package (Pedregosa et al., 2011).
 
-## Cross-validation
+#### Cross-validation
 
 One run was dedicated to each version of the sequence (7 sequence types × 2 versions [starting with A or starting with B]=14 runs). To build the training set, we randomly picked one run for each sequence, irrespectively of the sequence version. We trained the decoder on all deviant trials of the 7 sequences and on standard trials (non-deviant trials from the test phase) that were matched to sequence-specific deviants in ordinal position. We then tested this decoder on the remaining 7 blocks, determining its performance for the 7 sequences separately. The training and the testing sets were then inverted, resulting in a twofold cross-validation. This procedure avoided any confound with item identity, as the sounds A and B were swapped in the cross-validation folds.
 
-## Generalization across time
+#### Generalization across time
 
 To access the temporal organization of the neural representations, we computed the generalization-across-time matrices (King and Dehaene, 2014). These matrices represent the decoding score of an estimator trained at time t (training time on the vertical axis) and tested with data from another time t’ (testing time on the horizontal axis).
 
-## Statistical analyses
+#### Statistical analyses
 
 Temporal, spatiotemporal, and temporal-temporal cluster-based permutation tests were computed on the time windows of interest (0–350 ms for habituation and standard items and 0–600 ms for deviants) using stats.permutation_cluster_1samp_test from MNE python package. To obtain the significance results presented in Figure 8, we ran the temporal permutation test on the difference between the predictions of the deviancy decoder for standard and deviant sounds for a time window from 0 to 600 ms after deviant onset. To compute spatiotemporal clusters, we provided the function with an adjacency matrix from mne.channels.find_ch_connectivity.

@@ -15,7 +15,7 @@
 
 ## Abstract
 
-The calcium release-activated calcium channel Orai regulates Ca 2+ entry into non-excitable cells and is required for proper immune function. While the channel typically opens following Ca 2+ release from the endoplasmic reticulum, certain pathologic mutations render the channel constitutively open. Previously, using one such mutation (H206A), we obtained low (6.7 Å) resolution X-ray structural information on Drosophila melanogaster Orai in an open conformation (Hou et al., 2018). Here we present a structure of this open conformation at 3.3 Å resolution using fiducial-assisted cryo-electron microscopy. The improved structure reveals the conformations of amino acids in the open pore, which dilates by outward movements of subunits. A ring of phenylalanine residues repositions to expose previously shielded glycine residues to the pore without significant rotational movement of the associated helices. Together with other hydrophobic amino acids, the phenylalanines act as the channel’s gate. Structured M1–M2 turrets, not evident previously, form the channel’s extracellular entrance.
+The calcium release-activated calcium channel Orai regulates Ca2+ entry into non-excitable cells and is required for proper immune function. While the channel typically opens following Ca2+ release from the endoplasmic reticulum, certain pathologic mutations render the channel constitutively open. Previously, using one such mutation (H206A), we obtained low (6.7 Å) resolution X-ray structural information on Drosophila melanogaster Orai in an open conformation (Hou et al., 2018). Here we present a structure of this open conformation at 3.3 Å resolution using fiducial-assisted cryo-electron microscopy. The improved structure reveals the conformations of amino acids in the open pore, which dilates by outward movements of subunits. A ring of phenylalanine residues repositions to expose previously shielded glycine residues to the pore without significant rotational movement of the associated helices. Together with other hydrophobic amino acids, the phenylalanines act as the channel’s gate. Structured M1–M2 turrets, not evident previously, form the channel’s extracellular entrance.
 
 ## Introduction
 
@@ -33,7 +33,7 @@ In this study, we present a cryo-electron microscopy (cryo-EM) structure of Orai
 
 ## Results
 
-## Antibody development and characterization
+### Antibody development and characterization
 
 The remarkable advances in structural biology enabled by cryo-EM require that individual protein complexes embedded in vitreous ice can be identified within micrographs and that their orientations can be accurately determined (Cheng, 2015). As a consequence, complexes greater than 200 kDa and/or those with distinctly recognizable shapes typically yield higher resolution cryo-EM structures than smaller complexes or those with fewer distinguishing features. The somewhat spherical overall shape of the Orai channel and its relatively low molecular weight (~144 kDa) make obtaining a high-resolution cryo-EM reconstruction difficult. We therefore pursued a structure of OraiH206A in complex with monoclonal Fab antibody fragments that increase mass and serve as fiducial markers for determining particle orientations.
 
@@ -41,13 +41,49 @@ The monoclonal antibody 19B5 was developed by immunizing mice with purified Orai
 
 Having identified 19B5 as a candidate for structural analysis, we sought to investigate the effect of the antibody on the function of the channel. To do so we performed Ca2+ influx measurements in mammalian cells that expressed OraiH206A or wild-type Orai and STIM components. The addition of 19B5 antibody had no discernable effect on Ca2+ influx through the channels, even though it can bind to Orai in a cellular context (Figure 1 and Figure 1—figure supplement 1). We conclude that 19B5 does not markedly inhibit Ca2+ flux through OraiH206A or through wild-type Orai when activated by STIM.
 
-## Cryo-EM structure determination of the OraiH206A–Fab complex
+![Figure 1.](https://cdn.elifesciences.org/articles/62772/elife-62772-fig1-v2.jpg)
+
+**Figure 1.:** Ca2+ influx measurements were made from mammalian (HEK293) cells co-expressing wild-type Drosophila Orai with Drosophila STIM (A) or expressing the H206A mutant of Orai alone (B). Cytosolic [Ca2+] levels were detected using a genetically encoded fluorescent Ca2+ indicator, GCaMP6s (Chen et al., 2013), as described previously (Hou et al., 2018). Data are plotted as the change in fluorescence intensity (ΔF). Indicted concentrations of 19B5 antibody were used. Thapsigargin (TG), 2 mM CaCl2, and purified 19B5 antibody were added at the indicated times (horizontal bars). Controls (Orai or STIM alone) indicate background fluorescence levels. Standard error, derived from three independent measurements, is shown for each condition.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62772/elife-62772-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) ELISA analysis indicates that 19B5 preferentially binds to native rather than denatured Orai. An ELISA assay was performed using plates that had been coated with purified Orai (native Orai) or with purified Orai that had been denatured using SDS (denatured Orai). Absorbance (at 450 nM) indicates binding of 19B5. (B) Western blot analysis of 19B5 showing that 19B5 does not recognize denatured Orai. A polyclonal antibody against Orai (obtained from the mouse used to generate 19B5) contains antibodies that recognize denatured Orai protein (~24 kDa) and is shown as a control. (C and D) Raw data for the Ca2+ influx measurements shown in Figure 1, with fluorescence intensity on the y-axis. The variable initial intensity value for H206A Orai (D) can be attributed to the constitutive activity of this mutant. (E) 19B5 preferentially binds to cells that express Orai or H206A Orai in comparison to cells that express mCherry alone (vector). Details of the experiment are described in the Materials and methods. (F) Fluorescence-detection size-exclusion chromatography (FSEC) analysis confirms cellular expression of the constructs in (E). Peaks within the vertical dashed lines correspond to mCherry-tagged Orai proteins. The vector control indicates expression of free mCherry (peak at ~24 min).
+
+### Cryo-EM structure determination of the OraiH206A–Fab complex
 
 Purified OraiH206A was reconstituted into amphipols and combined with an excess of the 19B5 Fab antibody fragment for single particle cryo-electron microscopy (cryo-EM) analysis (Materials and methods). Classification of the particle images revealed Orai–Fab complexes containing one, two, or three Fabs bound per channel, as well as some free Fab fragments (Figure 2—figure supplements 1 and 2). We generated ab initio 3D reconstructions from particles that contained channels and found that these reconstructions contained six Orai subunits regardless of the number of Fab molecules that were bound, which indicated that the channels were uniformly composed of six Orai subunits (Figure 2—figure supplement 2). The Fab molecules bound to the same epitope regardless of their stoichiometry with the channel (Figure 2—figure supplement 2). As expected from the biochemical analyses, this epitope was located on the channel’s extracellular side (Figure 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/62772/elife-62772-fig2-v2.jpg)
+
+**Figure 2.:** (A and B) Overall structure of the complex is shown from the perspective of the membrane (A) and from the extracellular side (B). The cryo-EM map (left) and the cartoon representation of the structure (right) are shown. Each Fab is colored individually; the α-helices of Orai are colored as indicated. Horizontal bars in (A) denote approximate boundaries of the plasma membrane.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62772/elife-62772-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Details can be found in the Materials and methods.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/62772/elife-62772-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** 3D reconstructions of complexes containing between one and three Fabs are shown in the upper panels (Chimera representations). Slices of the Fab and transmembrane portions of the 3D reconstructions are shown in the middle and lower panels, respectively (the views are from the extracellular side of the reconstruction in these panels). The halo in the lower panels is due to the amphipols surrounding the transmembrane portion of Orai. Complexes containing two Fab molecules have Fabs arranged in two alternative configurations (1,4) or (1,3).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/62772/elife-62772-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Densities (blue mesh) of indicated regions of Orai in the Orai–Fab complex are shown in the context of the atomic model (cartoon and stick representation). A superposition of the M1–M2 turrets from two neighboring subunits is also shown (lower left panel, main chain RMSD = 0.39 Å). (B) Local resolution of the map estimated using the Local Resolution Estimation function of Cryosparc2 (colored as indicated). An overall view (left panel) and a cross-section (right panel) are shown. (C) Angular orientation distribution of the particles used in the final reconstruction. (D) Gold-standard FSC curve of the final 3D reconstruction. The resolution is 3.3 Å at the FSC cutoff of 0.143. (E) FSC curve showing the correlation of the atomic model and cryo-EM map.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/62772/elife-62772-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Cartoon representations of the antibody (violet) and two neighboring subunits of Orai (labeled A and B and colored according to transmembrane α-helices as in Figure 2) are shown with the corresponding cryo-EM density (semitransparent surfaces). Amino acids in the Fab–Orai binding interface are drawn as sticks (with carbon atoms colored violet for the Fab and gray for Orai, and with oxygen and nitrogen atoms colored red and blue, respectively). Dashed lines indicate hydrogen bonds. Two perspectives are shown (left and right panels). (B) Analogous depictions as in (A) with the density removed for clarity.
 
 Particles of Orai–Fab complexes that contained three Fabs yielded higher-resolution cryo-EM maps and were used for structure determination. On account of the antibodies, cryo-EM reconstructions displayed threefold (C3) symmetry even when symmetry was not imposed (Figure 2—figure supplements 1 and 2) and therefore C3 symmetry was incorporated during subsequent cryo-EM processing. Fourier shell correlation (FSC) curves indicate that the final 3D reconstruction is determined at 3.3 Å overall resolution (Figure 2 and Figure 2—figure supplements 1 and 3). Local resolution estimates and visual inspection of the maps indicate that the central region of the complex comprising the M1, M2, and M3 helices and the variable domains of the Fabs have the most well-defined density (at ~3.1 Å resolution), while the M4 helices and the constant domains of the Fabs on the periphery are less well defined (Figure 2—figure supplement 3). The atomic model has good stereochemistry and good correlation with the cryo-EM density (Figure 2—figure supplements 3 and Figure 2—source data 1). It contains the variable domains of three Fab molecules and amino acids 156–305 of Orai (except for the disordered M2–M3 loop, amino acids 217–239). The M4-ext helices (amino acids 306–341) and the N-terminal ends of the M1 helices (amino acids 144–156), which were observed in the X-ray structures, are not visible in the cryo-EM map, possibly due to flexibility in these regions and/or their peripheral locations in the cryo-EM reconstruction.
 
 Each Fab binds to the extracellular side of Orai, adjacent to the entrance of the pore (Figure 2 and Figure 2—figure supplement 4). There are six identical binding sites for the Fabs, on account of the hexameric architecture of Orai. While there are no visible contacts between the antibodies, the channel can only accommodate up to three Fabs because of steric restraints (Figure 2). In accord with the Ca2+ influx results (Figure 1), there is adequate room for Ca2+ entry with Fabs bound (Figure 2). Each antibody primarily interacts with the connection between the M1 and M2 helices (Figure 2—figure supplement 4). This connection, which was not visible in previous X-ray structures of Orai and comprises amino acids 179–189, forms a structured ‘turret’ (Figure 3). Six turrets, from the six subunits, constitute the extracellular entrance of the pore (as described below). Each Fab predominately interacts with the M1–M2 turret of one subunit, but some contacts are also made with the turret of a neighboring subunit (Figure 2 and Figure 2—figure supplement 4). These two adjacent turrets adopt indistinguishable conformations (Figure 2—figure supplement 3). This correspondence, in spite of the different interactions between the Fab and the two turrets, suggests that the antibody has minimal effects on the structure of the turret. The previously mentioned property that the antibody preferentially binds to the intact channel rather than to denatured protein provides further evidence that the turret is a structured element of the channel. Reinspection of the electron density from our previous X-ray studies of Orai (Hou et al., 2018; Hou et al., 2012) reveals weak density for the turret in both closed and open conformations (Figure 4). Although this density was not strong enough to direct model building, the density corroborates the conclusion that the turrets are structurally ordered.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62772/elife-62772-fig3-v2.jpg)
+
+**Figure 3.:** Cryo-EM density is displayed as semitransparent surface, showing the M1 through M2 portions of the channel from two opposing subunits (M3–M4 and other subunits are omitted for clarity). The atomic model is shown in cartoon representation, with amino acid side chains drawn as sticks. Amino acid side chains on M1 and on the M1–M2 turret that face the ion conduction pathway have yellow colored carbon atoms. Nitrogen and oxygen atoms are colored dark blue and red, respectively. Regions of the pore are indicated.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62772/elife-62772-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A and B) Cryo-EM density of the selectivity filter region, viewed from the extracellular side. Density is displayed as a semitransparent surface at two contour levels: (0.4 in [A] and 0.6 in [B]). The six Glu 178 residues are displayed as sticks; M1 helices are shown as cartoons. (C and D) Side and top views showing distances between Ca2+ (green sphere) and the Glu 178 residues in the final model.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/62772/elife-62772-fig4-v2.jpg)
 
@@ -57,13 +93,21 @@ The overall structure of the channel agrees with the low-resolution X-ray struct
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/62772/elife-62772-fig5-v2.jpg)
 
-**Figure 5.:** H206A with other structures of the channel.(A) Comparison between the cryo-EM structure and a previous low-resolution X-ray structure of OraiH206A (Hou et al., 2018). Two opposing subunits of Orai are depicted in cartoon representation and colored as indicated (four subunits are omitted for clarity). The X-ray structure (PDB: 6BBF) is colored in lighter shades. The M1–M2 turrets revealed by the cryo-EM structure, which create the extracellular entrance of the pore, are indicated. The mainchain RMSD between the structures is 1.5 Å. (B) Comparison between the cryo-EM structure of OraiH206A and a 3.3 Å resolution X-ray structure of a closed conformation (quiescent conformation, PDB: 4HKR). The mainchain RMSD between these two structures is 2.7 Å. The depiction is as in (A), with the closed structure drawn in lighter shades. Arrows highlight dilation of the pore and the tilting of subunits. Superpositions in (A and B) were made by aligning complete hexameric channels. (C and D) Superposition of an individual subunit from OraiH206A with an individual subunit of the closed structure (PDB: 4HKR), shown in two orientations (C and D). The mainchain RMSD between these two subunits is 0.74 Å. Aside from a slight displacement of the C-terminal portion of M4b (arrow), the conformations of an isolated subunit are highly similar between the open and closed structures.
+**Figure 5.:** (A) Comparison between the cryo-EM structure and a previous low-resolution X-ray structure of OraiH206A (Hou et al., 2018). Two opposing subunits of Orai are depicted in cartoon representation and colored as indicated (four subunits are omitted for clarity). The X-ray structure (PDB: 6BBF) is colored in lighter shades. The M1–M2 turrets revealed by the cryo-EM structure, which create the extracellular entrance of the pore, are indicated. The mainchain RMSD between the structures is 1.5 Å. (B) Comparison between the cryo-EM structure of OraiH206A and a 3.3 Å resolution X-ray structure of a closed conformation (quiescent conformation, PDB: 4HKR). The mainchain RMSD between these two structures is 2.7 Å. The depiction is as in (A), with the closed structure drawn in lighter shades. Arrows highlight dilation of the pore and the tilting of subunits. Superpositions in (A and B) were made by aligning complete hexameric channels. (C and D) Superposition of an individual subunit from OraiH206A with an individual subunit of the closed structure (PDB: 4HKR), shown in two orientations (C and D). The mainchain RMSD between these two subunits is 0.74 Å. Aside from a slight displacement of the C-terminal portion of M4b (arrow), the conformations of an isolated subunit are highly similar between the open and closed structures.
 
-## Regions of the pore
+### Regions of the pore
 
 With the additional appreciation of the structured extracellular turrets, the pore has five distinct sections (Figures 3 and 6A). From the extracellular to the intracellular side, these are: the extracellular entrance, the selectivity filter, a hydrophobic section, a basic section, and a cytosolic section. Aside from residues on the turret, the walls of the pore are formed by the M1 helices. As such, the amino acid side chains emanating from M1 create the physiochemical environment for the majority of the pore. The conformations of most of the pore-lining side chains are resolved in the cryo-EM map, providing a detailed view of the open pore of OraiH206A (Figure 3). Figure 6A shows the approximate dimensions of the open pore and indicates the residues lining its walls. Changes are evident along the length of M1 in comparison to the closed conformation of the pore (Figure 6B). These changes increase the diameter of the pore along its entire length. The regions of the open pore are described in more detail below.
 
-## The extracellular entrance
+![Figure 6.](https://cdn.elifesciences.org/articles/62772/elife-62772-fig6-v2.jpg)
+
+**Figure 6.:** (A) Open pore of OraiH206A. Two opposing subunits are shown as cartoons around the ion pore, which is depicted as a gray surface and represents the minimal radial distance to the nearest van der Waals contact. Amino acids lining the pore are shown as sticks (yellow carbon, red oxygen, and blue nitrogen atoms). These amino acids are labeled (the side chain of K159 is only partially modeled due to weak density); parentheses denote human Orai1 counterparts. A green sphere indicates Ca2+. (B) Closed pore of Orai. Two opposing M1 helices from the X-ray structure of the quiescent conformation (PDB: 4HKR) are shown (ribbons) with amino acids that line the pore drawn as sticks. The ion pore is depicted as in (A); red spheres represent iron/anion binding sites. (C) Comparison of the dimensions of the closed and open pores. Pore radius (x-axis) denotes the minimal radial distance to the nearest van der Waals contact along the axis of the pore (y-axis). The positions and scale along the y-axis correspond to (A and B). The selectivity filter and hydrophobic regions are shaded. The blue trace indicates the radius for the final structure. Additional traces shown in Figure 6—figure supplement 1 indicate the pore dimensions when all six Glu 178 residues are modeled in up or down conformations. The dotted line denotes uncertainty in the basic region due to weaker cryo-EM density. The ionic radius for dehydrated Ca2+ (1.0 Å) and the radius of a hydrated Ca2+ ion (approximately 4 Å) are indicated as vertical dashed lines.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62772/elife-62772-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** The depiction is as in Figure 7C. The blue trace is for the final structure, with Glu 178 residues in the up–down arrangement. Green and orange traces indicate hypothetical dimensions of the selectivity filter when all of the Glu 178 side chains are modeled in up or in down conformations, respectively. The ionic radius for dehydrated Ca2+ (1.0 Å) and the radius of a hydrated Ca2+ ion (approximately 4 Å) are indicated by dotted vertical lines.
+
+### The extracellular entrance
 
 The six M1–M2 turrets, one from each subunit, constitute the extracellular entrance of the pore (Figures 3 and 5). The amino acid sequence of the M1–M2 turret and its length are highly conserved among Orai channels (Figure 7). The cryo-EM structure establishes that the M2 helix of a given subunit is located directly behind the M1 helix of the same subunit (Figures 3 and 5A). The polypeptide of the turret adopts an extended secondary structure that connects the C-terminal end of M1 (at Glu 178) with the N-terminal end of M2 (at Gly 190). The turrets extend approximately 20 Å above the selectivity filter at Glu 178 and have a shape somewhat like that of an inverted ‘V’. The improved resolution of this region indicates that the C-terminal end of the M1 α-helix is partially stabilized by hydrogen bonds between backbone oxygen atoms (at Met 176 and Val 177) and Lys 270 from the M3 helix of a neighboring subunit (Figure 7D). Amino acid sequence conservation of Lys 270 and of the surrounding region suggest that the corresponding residue in human Orai1, Lys 178, participates in similar interactions (Figure 7E).
 
@@ -79,7 +123,7 @@ The extracellular entrance of the pore created by the turrets is considerably la
 
 **Figure 8.:** (A–C) Molecular surface of OraiH206A viewed from the membrane (A), extracellular (B), and intracellular (C) perspectives. Coloring is according to the electrostatic potential, which is contoured from –5 kT (red) to +5 kT (blue) (dielectric constant: 80).
 
-## The selectivity filter
+### The selectivity filter
 
 A ‘glutamate ring’ of Glu 178 residues from the six subunits is the narrowest constriction of the open pore (Figure 6A and C). Previous functional and structural data indicate that the glutamate ring forms the selectivity filter of the channel that is responsible for the channel’s high selectivity for Ca2+ (Hou et al., 2012; Prakriya et al., 2006; Vig et al., 2006; Yeromin et al., 2006). Accordingly, density consistent with Ca2+ is present at the center of the glutamate ring (Figure 3). The density corresponds to the binding location of Ba2+, a permeable surrogate for Ca2+, that was identified from our previous X-ray studies of OraiH206A (Hou et al., 2018).
 
@@ -89,23 +133,45 @@ In the closed conformation of the pore observed in the X-ray structure of wild-t
 
 In spite of some ambiguity regarding the conformations of the glutamate side chains in the selectivity filter of Orai, it is clear that the helical backbone of each M1 helix at Glu 178 is shifted away from the central axis of the pore by approximately 1 Å relative to the closed conformation (Figures 5B and 6). Thus, opening of the channel involves a degree of dilation within the selectivity filter.
 
-## The hydrophobic region
+### The hydrophobic region
 
 Three perfectly conserved residues that are positioned on successive helical turns of each M1 helix, Leu 167, Phe 171, and Val 174 (Leu 95, Phe 99, and Val 102 in human Orai1), comprise a hydrophobic region of the pore (Figure 6). The entire hydrophobic region is markedly wider in the open conformation than when the pore is closed. Relative to the closed conformation, the helical backbone of each M1 helix is displaced by more than 2 Å away from the center of the pore in the open structure (Figure 6 and Figure 9).
 
+![Figure 9.](https://cdn.elifesciences.org/articles/62772/elife-62772-fig9-v2.jpg)
+
+**Figure 9.:** (A–F) Slices through the hydrophobic region of the pore from the closed (PDB 4HKR) and OraiH206A open structures (upper and lower panels, respectively). Close up views in panels B and E highlight changes in the dimensions of the pore near Phe 171. The structures are represented as ribbons with amino acids side chains in the hydrophobic region drawn as sticks (dark red). Gly 170 is depicted as a blue sphere. The perspectives are from the extracellular side, perpendicular to the pore, which is centrally located. The slices correspond to approximately 4 Å slabs centered at Val 174, Phe 171, and Leu 167, as indicated. The M1–M4 helices of a single subunit are labeled. Inspection of the upper and lower panels indicates the outward rigid body movements of subunits. Videos 1 and 2 depict these conformational changes.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/62772/elife-62772-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A and B) Slices analogous to Figure 9, showing a slab containing the entire hydrophobic region of each pore.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/62772/elife-62772-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** (A) In the closed structure (PDB ID:4HKR), His 206 forms a hydrogen bond with Ser 165 (dashed line) and is in van der Waals contact with Leu 202, Leu 168, and Ser 169. (B) Modeling of a histidine residue at position 206 into the OraiH206A open structure. The side chain of His 206 can be accommodated in the cryo-EM structure of OraiH206A with minor adjustments to the surrounding amino acid side chains (refer to panel c for these adjustments). In the model, and in a similar manner as in the closed structure, His 206 forms a hydrogen bond with Ser 165 (dashed line) and is in van der Waals contact with Leu 202, Leu 168, and Ser 169. (C) Depiction of the structure of OraiH206A. In this open structure, the alanine at residue 206 eliminates the hydrogen bond to Ser 165 but the H206A residue still interacts with Leu 168 and Leu 202. The structures in (A–C) are drawn as ribbons with the indicated residues shown as sticks. Residue 206 is colored magenta; residues that are in close contact with it are colored yellow; and the residues of M1 that form the hydrophobic region of the pore are colored dark red.
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/62772/elife-62772-fig9-figsupp3-v2.jpg)
+
+**Figure 9—figure supplement 3.:** (A) Ion flux measurements of purified Orai mutants. K+ flux measurements for Orai with the H206A, P288L, or V174A mutations under divalent-free conditions. The assay was performed as previously described (Hou et al., 2018; Hou et al., 2012). Proteoliposomes containing purified Orai with the indicated mutations were loaded with 150 mM KCl and were diluted 50-fold into flux buffer containing a fluorescent pH indicator (ACMA) and 150 mM N-methyl-D-glucamine (NMDG) to establish a K+ gradient (Materials and methods). After stabilization of the fluorescence signal (150 s), a proton ionophore (CCCP) was added. An electric potential arising from K+ efflux drives the uptake of protons, which quenches the fluorescence of ACMA. The time-dependent decrease in fluorescence observed for the H206A and V174A after the addition of CCCP is indicative of K+ flux, whereas K+ flux is not detected for the P288L mutant. Valinomycin, which renders the vesicles permeable to K+, was added near the end of the experiment (black arrows) as a positive control and to establish baseline fluorescence. Traces were normalized by dividing by the initial fluorescence value, which was within ±10% for each experiment. The experiments shown used a protein-to-lipid ratio of 1:100 (wt/wt). Higher concentrations of the P288L mutant (ratios of 1:10 and 1:50) yielded analogous results; ion flux was not detected through P288L Orai. As expected, wild-type Orai does not show K+ flux in this assay as it is not active without STIM (Hou et al., 2018; Hou et al., 2012). (B) Superposition of an X-ray structure of P288L Orai (Liu et al., 2019) with an X-ray structure of Orai without this mutation (WT Orai) in the unlatched-closed conformation, in which the pore is closed (Hou et al., 2018). Two opposing subunits from each structure are shown, with the WT and P288L structures depicted as blue and magenta ribbons, respectively. The RMSD of the superposition is 1.5 Å (for Cα atoms from M1 to M4). (C) Superposition of the electron densities. Electron densities for WT and P288L Orai are drawn in blue and magenta mesh representations, respectively, covering the two subunits shown in (B). The map of WT Orai (contoured at 1.3 σ) was calculated from 20 to 6.9 Å resolution using amplitudes and MR-SAD phases that had been improved by NCS averaging, solvent flattening, and histogram matching (as described in Hou et al., 2018). The density from the P288L Orai structure (2Fo-Fc electron density map, contoured at 1.5 σ) was generated using map coefficients FWT and PHWT downloaded from RCSB Protein Data Bank (PDB ID: 6AKI). The structure and electron density superpositions show that the two structures are indistinguishable within the transmembrane region of the channel and that both structures contain the narrow hydrophobic region characteristic of a closed pore. An asterisk indicates the density assigned to an anion/iron complex that was observed in the basic region of the closed pore (Hou et al., 2018; Hou et al., 2012). Similar density is present in the P288L structure, but this density was modeled as Cl− (Liu et al., 2019). However, because Cl− ions would not be visible in low-resolution maps, we suggest that the density more likely represents the anion/iron complex that is observed when the pore is closed (Hou et al., 2018; Hou et al., 2012).
+
 Changes within the hydrophobic region at and around Phe 171 are particularly noteworthy. In the closed conformation, the side chains of the six Phe 171 residues (from the six subunits) are in close proximity and are located near the central axis of the pore (Figure 9B and Figure 9—figure supplement 1). The conformation of this ring of phenylalanine residues is stabilized by hydrophobic packing among these residues and by close van der Waals contacts with the ring of Gly 170 residues behind them (Figure 9B). The packing is such that a Phe 171 residue of one subunit interacts with the Gly 170 residue of a neighboring subunit. The positioning of the Phe 171 residues shield the Gly 170 residues from the pore in the closed state (Figure 9B). Opening of the channel increases the exposure of Gly 170 to the pore by an outward ‘sliding’ movement of Phe 171 that results from outward movements of the subunits (Figure 9E). Other than the increased exposure of Gly 170 to the pore in the open state, all of the amino acids that line the walls of the pore in the closed conformation also do so in the open conformation. Notably, the opening transition does not involve appreciable rotation of the M1 helices. Rather, rigid body movement of the helices away from the center of the pore constitutes the opening transition (Figure 5B and C, Figure 6, Figure 9, and Videos 1 and 2).
 
-## The basic region
+![Video 1.](https://cdn.elifesciences.org/articles/62772/elife-62772-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/62772/elife-62772-video2.mp4.jpg)
+
+**Video 2.:** Depicted similar to Figure 9, this video shows a side view of a morph between the closed and open conformations. Two opposite subunits are drawn as ribbons with amino acids in the hydrophobic region of the pore depicted as red sticks. Gly 170 residues are shown as blue spheres.
+
+### The basic region
 
 Oddly for a cation channel, the pore of Orai contains a highly basic region. Located just below the hydrophobic region, this basic region comprises 18 lysine or arginine residues (three residues from each of the six subunits) (Figure 6). These residues (Arg 155, Lys 159, and Lys 163 in Drosophila Orai) are conserved as lysine or arginine residues in all Orai channels (the corresponding amino acids are Arg 83, Lys 87, and Arg 91 in human Orai1). In the closed conformation of the pore, the basic amino acids are in close proximity and form binding sites for anions (Hou et al., 2012). Although the identity of the physiological anion is not yet established, X-ray and mass-spectrometry analyses indicate that purified wild-type Orai contains an iron complex within the basic region site that may be in the form of (FeCl6)−3 (Hou et al., 2012). The basic region is markedly wider in the open conformation owing to the outward movement of the M1 helices; the Cα positions of Lys 159 on opposing M1 helices are 12 Å further apart than in the closed structure (Figure 6). As was the case in the X-ray structure of OraiH206A (Hou et al., 2018), density for the anion/iron complex is not present within the widened basic region in the cryo-EM structure. Although side chain densities for the basic residues are less well defined than for other residues on M1, which suggests their flexibility, the helical register of M1 and some side-chain density for Lys 163 (Figure 3) indicate that the basic residues are exposed to the pore in the open state. We hypothesize that small cellular anions such as chloride would shield the basic amino acids from Ca2+ ions permeating through the open channel.
 
-## Gating conformational changes in the channel
+### Gating conformational changes in the channel
 
 The changes between the closed and open conformations of the channel are best described as rigid-body shifts in which the M1–M4 portion of each of the six subunits moves away from the center of the pore (Figures 5, 6, and 9 and Videos 1 and 2). For instance, an ~2.5 Å outward movement of the M1 helix at Phe 171 within the hydrophobic region is accompanied by outward movements of similar magnitude for the M2, M3, and M4 helices (~1.6 Å,~2.0 Å, and ~1.7 Å measured at residues within the same horizontal plane as Phe 171, respectively) (Figure 9B and E). The outward movement is more dramatic on the cytosolic side of the channel and this results in slight tilting of subunits away from the pore on that side (Figure 5B and Video 2). In addition to these rigid body motions, a bend in the M4 helix at Pro 288, which delineates it into M4a and M4b, is less bent in the cryo-EM structure of OraiH206A than it is in the quiescent conformation. This results in ~5 Å outward movement of each of the M4b helices from its position in the quiescent conformation (measured at Ser 303) (Figure 5B and D).
 
 His 206, the amino acid that when mutated to alanine gives rise to the constitutively activated channel, is located on M2 and would not contribute to the walls of the ion pore in either the closed or the open conformation (Figure 9—figure supplement 2). In the wild-type channel, His 206 makes a hydrogen bond with Ser 165 from M1 and is within a network of van der Waals interactions that involves residues from M1, M2, and M3 (Frischauf et al., 2017; Hou et al., 2018; Hou et al., 2012; Yeung et al., 2018). The H206A mutation eliminates this hydrogen bond, diminishes the van der Waals interactions (Figure 9—figure supplement 2c), and evidently alters the free energy profile of the channel sufficiently to favor an open state in the absence of STIM. A histidine can be readily modeled back into the OraiH206A structure, which suggests that the wild-type channel would be able to adopt the observed conformation (e.g. when activated by STIM) (Figure 9—figure supplement 2b).
 
-Remarkably, the opening observed in OraiH206A structure does not involve notable side chain conformational changes, either in the pore or in the remainder of the channel. This can be appreciated by comparing amino acid conformations in Figure 9 and the opening transition depicted in Videos 1 and 2. Because the subunits of Orai do not interdigitate and the α helices are nearly perpendicular to the membrane, we predict that the movement of an individual subunit would be relatively independent of neighboring subunits.
+Remarkably, the opening observed in OraiH206A structure does not involve notable side chain conformational changes, either in the pore or in the remainder of the channel. This can be appreciated by comparing amino acid conformations in Figure 9 and the opening transition depicted in Videos 1 and 2. Because the subunits of Orai do not interdigitate and the $\alpha$ helices are nearly perpendicular to the membrane, we predict that the movement of an individual subunit would be relatively independent of neighboring subunits.
 
 ## Discussion
 
@@ -133,31 +199,272 @@ A theme has emerged from the studies of channels with different architectures th
 
 ## Materials and methods
 
-## Protein expression, purification, and cryo-EM sample preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene Drosophila melanogaster</td>
+      <td>Orai</td>
+      <td>NCBI</td>
+      <td>Gene ID: 37040</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene Drosophila melanogaster</td>
+      <td>STIM</td>
+      <td>NCBI</td>
+      <td>Gene ID: 32556</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>gCamp6s plasmid</td>
+      <td>Chen et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNEH-mCHerry plasmid</td>
+      <td>Modified from the pNGFP-EU vector (Kawate and Gouaux, 2006)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293</td>
+      <td>ATCC</td>
+      <td>CRL-1573, Lot #: 61714301</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Drosophila Orai-19B5 (mouse monoclonal)</td>
+      <td>Monoclonal Antibody Core Facility of the Memorial Sloan Kettering Cancer Center</td>
+      <td></td>
+      <td>(1 μM for ELISA)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Peroxidase AffiniPure Goat Anti-Mouse IgG, Fcγ fragment specific</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>115-035-071</td>
+      <td>(1:2000 for ELISA)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>YL1/2 (rat monoclonal)</td>
+      <td>Kilmartin et al., 1982</td>
+      <td></td>
+      <td>(20 mg per 1 g of CNBr resin)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-Palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine</td>
+      <td>Avanti Polar Lipids</td>
+      <td>850757</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-Palmitoyl-2-oleoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (sodium salt)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>840457</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Dodecyl-β-D-Maltopyranoside</td>
+      <td>Anatrace</td>
+      <td>O310S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Amphipol A8-35</td>
+      <td>Anatrace</td>
+      <td>A835</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Octyl-β-D-maltopyranoside</td>
+      <td>Anatrace</td>
+      <td>O310</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Decyl-β-D-maltopyranoside</td>
+      <td>Anatrace</td>
+      <td>D322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Deferoxamine mesylate</td>
+      <td>Sigma-Aldrich</td>
+      <td>D9533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thapsigargin</td>
+      <td>Sigma-Aldrich</td>
+      <td>T9033</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 3000 Transfection Reagent</td>
+      <td>Thermo Fisher</td>
+      <td>L3000008</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1-Step Ultra TMB-ELISA Substrate</td>
+      <td>Thermo Scientific</td>
+      <td>34029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>Zheng et al., 2017</td>
+      <td>RRID:SCR_016499</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CtfFind 4.1.10</td>
+      <td>Rohou and Grigorieff, 2015</td>
+      <td>RRID:SCR_016731</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION 3.0</td>
+      <td>Scheres, 2016</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/relion RRID:SCR_016274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>Mastronarde, 2005</td>
+      <td>RRID:SCR_017293</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC v2</td>
+      <td>Structura Biotechnology</td>
+      <td>https://cryosparc.com/ RRID:SCR_016501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>Liebschner et al., 2019</td>
+      <td>https://www.phenix-online.org/ RRID:SCR_014224</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>COOT</td>
+      <td>Emsley et al., 2010</td>
+      <td>https://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/ RRID:SCR_014222</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>Schrödinger, 2020</td>
+      <td>https://pymol.org/2/ RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td>https://www.cgl.ucsf.edu/chimera RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 7</td>
+      <td>GraphPad Software</td>
+      <td>https://cryosparc.com/ RRID:SCR_016501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Hole</td>
+      <td>Smart et al., 1996</td>
+      <td>http://www.holeprogram.org</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF ChimeraX</td>
+      <td>Goddard et al., 2018</td>
+      <td>https://www.cgl.ucsf.edu/chimerax/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>QUANTIFOIL R1.2/1.3 holey carbon grids</td>
+      <td>Quantifoil</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Others</td>
+      <td>FEI Vitrobot Mark IV</td>
+      <td>FEI Thermo Fisher</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein expression, purification, and cryo-EM sample preparation
 
 The construct used to express OraiH206A is identical to the one previously used (Hou et al., 2018). This construct, spanning amino acids 133–341 of Drosophila melanogaster Orai, contains a C-terminal YL½-antibody affinity tag (EGEEF), mutations of two non-conserved cysteine residues that improve protein stability (C224S and C283T), and the H206A mutation. The expression of OraiH206A in Pichia pastoris and its purification were also as described (Hou et al., 2018) with minor modifications. Briefly, lysed cells were resuspended in buffer (8.3 ml of buffer for each 1 g of cells) containing 150 mM NaCl, 20 mM sodium phosphate, pH 7.5, 0.1 mg/ml deoxyribonuclease I (Sigma-Aldrich), 1:1000 dilution of Protease Inhibitor Cocktail Set III, EDTA free (CalBiochem), 1 mM benzamidine (Sigma-Aldrich), 0.5 mM 4-(2-aminoethyl) benzenesulfonyl fluoride hydrochloride (Gold Biotechnology), and 0.1 mg/ml soybean trypsin inhibitor (Sigma-Aldrich). Lysate was adjusted to pH 8.5 using 1 N KOH while stirring. Next, 0.1 g of n-dodecyl-β-D-maltopyranoside (DDM, Anatrace, solgrade) was added per gram of cells. The sample was stirred at 4°C for 1 hr to extract OraiH206A from the cell membranes. Following extraction, the pH of the sample was adjusted to 7.5 using 1 N KOH. The sample was centrifuged at 30,000 g for 45 min, and the sample supernatant was filtered using low-protein binding bottle-top filters (Millipore Express Plus 0.22 μm). This filtered supernatant was supplemented with final concentrations of 2 mM EDTA (stock EDTA 200 mM, pH 8.0), 2 mM EGTA (stock EGTA 200 mM, pH 7.0), and 0.2 mM deferoxamine mesylate (Sigma-Aldrich, 20 mM stock in water). YL½ antibody (IgG, expressed from hybridoma cells and purified by ion exchange chromatography) was coupled to CNBr-activated sepharose beads (GE Healthcare) according to the manufacturer’s protocol. Approximately 0.2 ml of beads were added to the sample for each 1 g of P. pastoris cells and the mixture was rotated at 4°C for 1 hr. The beads were collected on a column and washed with seven column volumes of buffer consisting of 150 mM NaCl, 20 mM sodium phosphate, pH 7.5, 1 mM EDTA, 1 mM EGTA, 0.1 mM deferoxamine mesylate, and 3 mM DDM. Protein was eluted from the beads using a buffer consisting of 150 mM NaCl, 100 mM Tris, pH 8.5, 1 mM EDTA, 1 mM EGTA, 0.1 mM deferoxamine mesylate, 3 mM DDM, and 1 mM EEF peptide (Peptide 2.0). The elutant was concentrated to 500 μl (using an Amicon Ultra 15 100 kDa concentrator at 4°C), filtered using a 0.22 μm filter, and further purified using size exclusion chromatography (Superose 6 Increase 10/300 GL, GE Healthcare) at 4°C in SEC buffer (150 mM NaCl, 20 mM Tris, pH 8.5, and 1 mM DDM). Purified OraiH206A protein fractions were pooled and used to reconstitute into amphipols.
 
 For reconstitution into amphipols, amphipol A8-35 (Anatrace, added as powder) was combined with the purified OraiH206A protein (12:1 wt/wt ratio, amphipol:protein) and the mixture was incubated at 4°C for 14 hr. Subsequently, approximately 0.333 g of wet Bio-Beads SM2 (Bio-Rad) were added to the sample for each milliliter of protein/amphipol mixture. After incubation at 4°C for 5 hr (with rocking), the Bio-Beads were removed by spin filtration and the protein sample was concentrated to 500 μl using an Amicon Ultra 4 (100kDa) concentrator at 4°C. This amphipol-reconstituted sample was then purified by size exclusion chromatography (Superose 6 Increase 10/300 GL, GE Healthcare) at 4°C in buffer consisting of 150 mM NaCl, 20 mM Tris, pH 8.5, and 0.1 mM deferoxamine mesylate prior to combining it with purified 19B5 Fab.
 
-## Fab production and complex preparation
+### Fab production and complex preparation
 
 A monoclonal antibody (designated 19B5) of isotype IgG1 was raised in mice by the Monoclonal Antibody Core Facility of the Memorial Sloan Kettering Cancer Center. The antigen used for immunization was that previously used for X-ray studies: purified Orai (amino acids 133–341 followed by the EEF affinity tag, PDB 6BBH) containing the K163W mutation, which improved protein stability, and has the same overall structure as channel without this mutation (Hou et al., 2018; Hou et al., 2012). The antibody selection process included ELISA, western blot, and FSEC analysis (Kawate and Gouaux, 2006) to identify antibodies that bound to native Orai and not SDS-denatured protein. For mapping its binding epitope, experiments included using a construct of Orai that contained an insertion of a Gly-Ala-Gly-Ala sequence in the M1–M2 loop combined with FSEC analysis, which indicated that it bound at or near this loop. We confirmed that 19B5 binds to the extracellular side of the channel by an ELISA-based pull-down experiment using intact HEK293 cells (ATCC CRL-1573, validated by the ATCC, tested negative for mycoplasma) that had been transfected with Orai or vector alone. The sequence of the antibody was determined by cDNA sequencing of hybridoma cells (SYD Labs). Intact IgG was expressed using mouse hybridoma cells, purified by ion exchange chromatography, and cleaved using papain (1:40 weight-to-weight ratio of papain [Worthington] to IgG) for 3 hr at 37°C to generate the Fab fragment. The Fab fragment was purified using ion exchange chromatography (Mono S, GE Healthcare; using a gradient of 10–500 mM NaCl in 20 mM sodium acetate, pH 5.0), dialyzed into 150 mM NaCl, 20 mM Tris-HCl, pH 8.5, and further purified using size exclusion chromatography (Superose 6 Increase 10/300 GL, GE Healthcare) in SEC buffer (150 mM NaCl, 20 mM Tris, pH 8.5, and 0.1 mM deferoxamine mesylate).
 
 Prior to complex formation CaCl2 was added to both purified OraiH206A and 19B5 Fab to 5 mM final concentration. The proteins were then combined at a molar ratio of 0.78:1 (Fab to Orai monomer, which corresponds to approximately 4.7 Fab molecules per channel assembly) and incubated on ice for 30 min. The sample was then concentrated to ~7 mg/ml (using a 10K Vivaspin two concentrator) and spin-filtered (0.22 μm, Costar). Three microliters of the sample was applied to glow-discharged (10 s) Quantfoil R1.2/1.3 holey carbon grids (Au 400, Electron Microscopy Sciences) and plunge-frozen in liquid ethane using a Vitrobot Mark IV (FEI) robot (settings: 6°C, blotting time of 2 s, 0 blot force, and 100% instrument humidity). Grids were stored in liquid nitrogen prior to data collection.
 
-## Cryo-EM data acquisition
+### Cryo-EM data acquisition
 
 Clipped grids were loaded into a 300 keV Titan Krios microscope (FEI) equipped with a Gatan K2 Summit direct electron detector (Gatan). Grids were screened first for quality control based on particle distribution, particle density, and the estimated CTF resolution limit across grid regions. Images from the best regions of a single grid were collected at a magnification of 22,500× with a super-resolution pixel size of 0.5442 Å and a defocus range of −0.9 to −2.5 μm. The dose rate was nine electrons per physical pixel per second, and images were recorded for 10 s with 0.25 s subframes (40 total frames) corresponding to a total dose of approximately 76 electrons per Å2.
 
-## Cryo-EM data processing and structure determination
+### Cryo-EM data processing and structure determination
 
 Figure 2—figure supplement 1 represents the cryo-EM data processing workflow. Movie stacks were dark and gain reference corrected, and subjected to twofold Fourier cropping to a pixel size of 1.0884 Å. These images were motion corrected and dose weighted using MotionCor2 (Zheng et al., 2017). Contrast Transfer Functions for motion-corrected micrographs were estimated using CTFFIND4 (Rohou and Grigorieff, 2015). Micrographs were inspected manually; those with poor-quality features, such as obvious cracks or ice contamination, as well as those micrographs with estimated CTF fits worse than 5 Å were excluded. Out of a total of 4212 collected movies, 3902 passed these two curation criteria. From these micrographs a population of 2,151,623 particles were picked using the Laplacian-of-Gaussian autopicking feature in RELION 3 (Zivanov et al., 2018) and extracted using a particle box size of 384 pixels. 2D classification was conducted in Cryosparc2 (Punjani et al., 2017) and classes clearly representing contaminants were excluded, resulting in retention of 1,851,514 particles (86% of the data). These particles were used as input for Cryosparc2 Ab initio 3D model generation, requesting four output models (Figure 2—figure supplement 1). Particles that yielded Ab initio 3D models that appeared to contain an Orai channel bound to one or more Fabs by visual inspection were subjected to additional rounds of ab initio 3D model generation, from which four distinct models that contained one to three Fab molecules per channel emerged (Figure 2—figure supplements 1 and 2). Particles containing three Fab molecules per channel yielded maps with the highest resolution, exhibited threefold rotational symmetry (C3), and were selected for all further cryo-EM processing steps. Following Cryosparc2 nonuniform refinement, the selected particles were further sorted by five iterations of heterogeneous 3D classification in Cryosparc2 (using C1 symmetry) to remove remaining assembles that contained fewer than three Fabs or poor particle images; this procedure yielded the final particle set of 85,614 particles. At this point, nonuniform refinement yielded a 3.7 Å reconstruction. The particles were then used for Bayesian polishing in RELION 3. Nonuniform refinement of the polished particles (in cryosparc2) was used to generate the final reconstruction at 3.3 Å. All resolution estimates are based on gold-standard FSC calculations.
 
-## Model building and refinement
+### Model building and refinement
 
 The atomic model of OraiH206A was manually built into the sharpened cryo-EM map and refined in real space using the COOT software (Emsley et al., 2010). Previous X-ray structures of Orai (PDB: 4HKR and 6BBH) were used as reference. Further refinement of the atomic model was carried out in PHENIX (Adams et al., 2010) using real-space refinement. The final model has good stereochemistry and good FSC with the map (Figure 2—figure supplements 3e and Figure 2—source data 1). Structural figures were prepared with Pymol (pymol.org), Chimera (Pettersen et al., 2004), and HOLE (Smart et al., 1996). Electrostatic calculations used the APBS (Baker et al., 2001) plugin in Pymol.
 
-## Live cell Ca2+ influx measurements
+### Live cell Ca2+ influx measurements
 
 Orai constructs were expressed with N-terminal mCherry tags using a vector that was modified from the pNGFP-EU vector, as described previously (Hou et al., 2018; Kawate and Gouaux, 2006). Constructs for wild-type Orai (amino acids 120–351) for and full-length Drosophila melanogaster STIM (denoted as ‘Orai’ and ‘STIM’ in Figure 1 and Figure 1—figure supplement 1C and D) have been reported previously (Hou et al., 2018). H206A mutation was introduced into the wild-type Orai construct (amino acids 120–351) by mutagenesis PCR and is referred to as ‘H206A Orai’.
 
@@ -167,7 +474,7 @@ To assess the ability of 19B5 to bind to the channel in a cellular setting, we p
 
 FSEC was used to evaluate protein expression in cells that were used for Ca2+ influx and live-cell ELISA assays. Transfected cells were solubilized in buffer (40 mM Tris pH 8.5, 150 mM NaCl, 10 mM DDM, and 1:500 dilution of Protease Inhibitor Cocktail Set III, EDTA free [CalBiochem]) at 4°C with gentle agitation for 1 hr. Cell lysates were clarified by centrifugation (20,000 × g at 4 °C for 1 hr) and the supernatants were injected onto a size exclusion column (Superdex 200 Increase 10/300 GL; GE healthcare) in buffer (10 mM Tris-HCl pH 8.5, 150 mM NaCl, and 1 mM DDM) and the fluorescence of mCherry (ex: 585 nm, em: 615 nm) of the eluate was monitored (Figure 1—figure supplement 1f).
 
-## Reconstitution and flux assay
+### Reconstitution and flux assay
 
 Orai constructs were purified and reconstituted into lipid vesicles using published procedures (Hou et al., 2018; Hou et al., 2012). The constructs (amino acids 133–341 of Orai with P288L, H206A, or V174A mutations) are identical to one another except for the indicated mutations (Hou et al., 2018; Hou et al., 2012). Briefly, a lipid mixture containing 15 mg/ml POPE (1-palmitoyl-2-oleoyl-sn-glycero-3-phosphoethanolamine) and 5 mg/ml POPG (1-palmitoyl-2-oleoyl-sn-glycero-3-phospho(1’-rac-glycerol)) was prepared in water and solubilized with 8% (w/vol) n-octyl-β-D-maltopyranoside (V174A and P288L) or 8% (w/vol) n-decyl-β-D-maltopyranoside (H206A). Purified Orai protein was mixed with the solubilized lipids to obtain a final protein concentration of 0.1 mg/ml and a lipid concentration of 10 mg/ml. Detergent was removed by dialysis (15 kDa molecular weight cutoff) at 4°C for 5–7 days against a reconstitution buffer containing 10 mM HEPES pH 7.0, 150 mM KCl, and 0.2 mM ethylene glycol tetraacetic acid (EGTA), with daily buffer exchanges and utilizing a total volume of 14 l of reconstitution buffer. The reconstituted sample was sonicated (~30 s), aliquoted, flash-frozen in liquid nitrogen, and stored at −80°C.
 

@@ -15,12 +15,12 @@
 ### Affiliations
 
 1. Department of Movement Sciences, Movement Control and Neuroplasticity Research Group Leuven Belgium
-2. https://ror.org/05f950310 LBI - KU Leuven Brain Institute, KU Leuven Leuven Belgium
-3. https://ror.org/03r0ha626 Department of Health and Kinesiology, College of Health, University of Utah Salt Lake City United States
-4. https://ror.org/041c8tt83 Center for Advanced Research in Sleep Medicine, Centre Intégré Universitaire de Santé et de Services Sociaux du Nord-de-l'Ile de Montréal Montreal Canada
-5. https://ror.org/01pxwe438 McConnell Brain Imaging Centre, Department of Neurology and Neurosurgery, Montreal Neurological Institute, McGill University Montreal Canada
-6. https://ror.org/0420zvk78 Department of Psychology, Concordia University Montréal Canada
-7. https://ror.org/0161xgx34 Department of Psychology, Université de Montréal Montreal Canada
+2. LBI - KU Leuven Brain Institute, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+3. Department of Health and Kinesiology, College of Health, University of Utah Salt Lake City United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
+4. Center for Advanced Research in Sleep Medicine, Centre Intégré Universitaire de Santé et de Services Sociaux du Nord-de-l'Ile de Montréal Montreal Canada ([ROR:041c8tt83](https://ror.org/041c8tt83))
+5. McConnell Brain Imaging Centre, Department of Neurology and Neurosurgery, Montreal Neurological Institute, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+6. Department of Psychology, Concordia University Montréal Canada ([ROR:0420zvk78](https://ror.org/0420zvk78))
+7. Department of Psychology, Université de Montréal Montreal Canada ([ROR:0161xgx34](https://ror.org/0161xgx34))
 
 † Corresponding author
 
@@ -44,27 +44,55 @@ We designed a within-participant experiment (Figure 1) pre-registered in the Ope
 
 The analyses presented in the current paper that were not pre-registered are referred to as exploratory.
 
-## Behavioral data
+### Behavioral data
 
 As per our pre-registration, behavioral analyses focused on performance speed (i.e. response time (RT) on correct key presses) on the motor sequence learning task measured at three time points: pre-nap, post-nap, and post-night (Figure 1a). Results of the analyses on performance accuracy are presented in Figure 2—figure supplement 1.
 
 Analyses of the pre-nap training data indicated that participants learned the two sequence conditions (reactivated and non-reactivated sequences) to a similar extent during initial learning (16 blocks of training; main effect of Block: F(15, 345)=34.82; p-value = 2.04e-26; η²=0.6; main effect of Condition: F(1, 23)=0.16; p-value = 0.69; Block by Condition interaction: F(15, 345)=1.09; p-value = 0.37; Figure 2a). After initial training, participants were offered a short break (~5 min) and were then tested again on the learned motor sequences. This short pre-nap test session was designed to offer a fatigue-free measure of the end-of-training, asymptotic performance to be used as baseline for the computation of subsequent offline changes in performance (see description below) (Pan and Rickard, 2015). Before computing offline changes in performance, we first assessed whether participants reached stable and similar performance levels between conditions during the pre-nap test session. Results showed that while performance reached similar levels between conditions (4 blocks; main effect of Condition: F(1,23) = 3.39e-5; p-value = 0.99; Block by Condition interaction: F(3,69) = 1.21; p-value = 0.31), asymptotic performance levels were not reached as shown by a significant Block effect (F(3,69) = 6.67; p-value = 0.001; η²=0.22). To meet the performance plateau pre-requisite to compute offline changes in performance, the first block of the pre-nap test session driving this effect was removed from further analyses. Performance on remaining blocks was stable as indicated by a non-significant Block effect (F(2,46) = 1.56; p-value = 0.22). Similar to above, the main effect of Condition (F(1,23) = 0.04; p-value = 0.85) and the Block by Condition interaction (F(2,46) = 1.81; p-value = 0.18) were not significant. Altogether, these results indicate that a performance plateau was ultimately reached and both sequence conditions were learned similarly (Figure 2a).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/73930/elife-73930-fig2-v2.jpg)
+
+**Figure 2.:** (a) Performance speed (N = 24; mean reaction time in ms) across participants plotted as a function of blocks of practice during the pre- and post-nap sessions (+/-standard error in shaded regions) for the reactivated (magenta) and the non-reactivated (blue) sequences and for the random SRTT (Black overlay). (b) Offline changes in performance speed (N = 24; % of change) averaged across participants (box: median (horizontal bar), mean (diamond) and first(third) as lower(upper) limits; whiskers: 1.5 x InterQuartile Range (IQR)) for post-nap and post-night time-points and for reactivated (magenta) and non-reactivated (blue) sequences. Using a repeated-measure ANOVA, the results highlighted a main effect of Time-point (***: p-value <0.001) and a main effect of Condition (*: p-value <0.05). Note that the main effect of condition is marginally significant when excluding the extreme participant (p=0.077).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73930/elife-73930-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Performance accuracy (N = 24; mean percentage of correct responses) across participants plotted as a function of blocks of practice during the pre and post-nap sessions (+/-standard error) for the reactivated (magenta) and the non-reactivated (blue) sequences. Negative control analyses on the pre-nap training session revealed no main effects (Condition: F(1,23) = 0.74; pvalue = 0.4; Block: F(15,345) = 1.3; p-value = 0.2) nor interaction (F(15,345) = 0.39; p-value = 0.98) using a repeated-measure ANOVA. This was also the case for the pre-nap test (Condition: F(1,23) = 1.01; p-value = 0.75; Block: F(3,69) = 2.24; p-value = 0.88; Interaction: F(3,69) = 1.06; p-value = 0.37). (b) TMR effect. Offline gains in performance accuracy averaged across participants (N = 24; box: median and first(third) as lower(upper) limits; whiskers: 1.5 x InterQuartile Range (IQR)) for post-nap and post-night time-points and for reactivated (magenta) and non-reactivated (blue) sequences. Offline gains in performance accuracy were significantly higher at the post-night time-point as compared to the post-nap time point (F(1,23) = 18.84; p-value = 0.0002; η²=0.91). Yet, the offline gains in performance accuracy were not different between the reactivated and the non-reactivated sequences (F(1,23) = 0.54; p-value = 0.47). The interaction between the Condition and the Time-point was also not significant (F(1,23) = 0.2; p-value = 0.66).***: p-value <0.001 (rmANOVA).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/73930/elife-73930-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Performance speed (N = 24; mean reaction time in ms and +/-standard error in shaded regions) across participants plotted as a function of blocks of practice during the pre-nap session (Training and Test) for the sequence A (1 6 3 5 4 8 2 7; Blue) and the sequence B (7 2 6 4 5 1 8 3; orange). Negative control analyses (rmANOVA) on the pre-nap training performances revealed no significant difference between the sequence A and the sequence B (main of effect Sequence: F(1,23) = 2.18; p-value = 0.15). The RT significantly decreased across blocks (Main effect of Block: F(15,345) = 34.82; p-value = 2.04e-26; η²=0.6). However, this decrease was not different between the two sequences (Block by Sequence interaction: F(15, 345)=1.11; p-value = 0.35). Pre-nap test performances showed no significant main effect of Sequence (F(1,23) = 0.99; p-value = 0.33) nor of Block (F(2,46) = 1.56; p-value = 0.22). The interaction between the Block and the Sequence was significant (F(2,46) = 3.37; p-value = 0.043; η²=0.13). However, as reactivation conditions were counterbalanced between sequences A and B, this small effect is not considered as confounding to test our hypothesis. (b) Performance accuracy (N = 24; mean percentage of correct responses +/-standard error in shaded regions) across participants plotted as a function of blocks of practice during the pre-nap session (Training and Test) for the sequence A (1 6 3 5 4 8 2 7; Blue) and the sequence B (7 2 6 4 5 1 8 3; orange). The rmANOVA performed on the pre-nap training highlighted a main effect of Sequence (F(1,23) = 7.28; p-value = 0.01; η²=0.24), but no significant effect of the Block factor nor interaction (F(15,345) = 1.3; p-value = 0.2 and F(15,345) = 1.03; p-value = 0.43, respectively). The sequence effect was not significant during the pre-nap test and no block effect or block by sequence interaction were observed (Sequence: F(1,23) = 0.25; p-value = 0.62; Block: F(3,69) = 0.22; p-value = 0.88; Interaction: F(3,69) = 0.41; p-value = 0.75).
+
 Post-nap and post-night offline changes in performance were then computed for both conditions as the relative change in speed between the three plateau blocks of the pre-nap test and the first four blocks of the post-nap and post-night sessions, respectively. As such, improvement in performance from training to retest (i.e. faster performance at retest compared to training) was reflected by positive offline changes in performance. A repeated measures analysis of variance (rmANOVA) performed on offline changes in performance with Time-point (post-nap vs. post-night) and Condition (reactivated vs. non-reactivated) as within-subject factors showed a significant Time-point effect, whereby changes in performance were significantly higher at the post-night as compared to the post-nap retest (F(1,23) = 46.53; p-value = 5.89e-7; η²=0.67; Figure 2b). Critically, offline changes in performance for the reactivated sequence were significantly higher than for the non-reactivated sequence (Condition effect: F(1,23) = 4.75; p-value = 0.0397; η²=0.17). The Condition by Time-point interaction was not significant (F(1,23) = 7.42e-4; p-value = 0.98). In conclusion, our behavioral results indicate a TMR-induced enhancement in performance that did not differ across nap and night intervals.
 
-## Electrophysiological data
+### Electrophysiological data
 
 Participants’ sleep was recorded using a 6-channel EEG montage during a 90-min episode following learning. Sleep was monitored online and sounds were presented during NREM sleep stages. Sleep characteristics resulting from the offline sleep scoring as well as the distribution of auditory cues across sleep stages are shown in in Supplementary file 1. Briefly, results indicate that all the participants slept during the nap (average total sleep time: 67 min; average sleep efficiency: 74.9%) and that cues were accurately presented in NREM sleep (average stimulation accuracy: 88.4%).
 
-## Event-related analyses
+#### Event-related analyses
 
 Event-related analyses assessed the effect of the sound condition (i.e. associated vs. unassociated) on both the potentials (ERP) but also the oscillatory activity (time-frequency analyses) evoked by the auditory cues.
 
 For the analyses of the auditory evoked potentials, we first computed ERPs on each EEG channel (see Figure 3—figure supplement 1 for channel level data) separately for associated and unassociated auditory cues presented during NREM2-3 stages and subsequently averaged ERPs across channels (Figure 3a). ERP amplitude was extracted for the 2 conditions from the temporal window highlighted in Figure 3a in which the amplitude of the auditory responses across conditions was significantly lower (trough) than zero (from 0.44 to 0.63 s relative to cue onset, see Figure 3—figure supplement 2 and Figure 3—figure supplement 3 for across- and within-channel level data, respectively). Between-condition comparisons using Wilcoxon signed-rank test showed that the amplitude of the ERP trough was significantly deeper (V=75, p-value = 0.016) following associated as compared to unassociated cues (Figure 3b).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/73930/elife-73930-fig3-v2.jpg)
+
+**Figure 3.:** (a) Potentials averaged across all EEG channels and all participants (N = 24; +/-standard error in shaded regions) evoked by the associated (magenta) and the unassociated (yellow) auditory cues from –0.3 to 2.5 s relative cue onset. The gray region represents the temporal window (trough) in which ERPs across conditions were significantly different from zero. (b) ERP amplitude (N = 24; box: median (horizontal bar), mean (diamond) and first(third) as lower(upper) limits; whiskers: 1.5 x IQR) extracted from the temporal window highlighted in panel a, that is at 0.44 – 0.63 s post-cue onset (trough) in each condition. *: p-value <0.05 (Wilcoxon signed-rank test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73930/elife-73930-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** This figure depicts the channel level data corresponding to the analyses presented in Figure 3 in the main text. Potentials evoked by the associated (magenta) and the unassociated (yellow) auditory cues from –0.3 to 2.5 s relative to cue onset averaged across all participants (N = 24; +/-standard error). Note that the effect reported in the main manuscript across channels is more pronounced on the frontal (Fz) and the central (Cz, C3, and C4) electrodes. The gray region represents the temporal window (trough) in which ERPs across conditions were significantly different from zero.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/73930/elife-73930-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Potentials averaged across all participants and all EEG channels (N = 24; +/-standard error) evoked by the auditory cue regardless of its type from –0.3 to 2.5 s relative cue onset. The gray region represents the temporal window (trough) in which ERPs across conditions were significantly different from zero. *: p-value <0.05 (cluster-based permutation test).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/73930/elife-73930-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** This figure depicts the channel level data corresponding to the analyses presented in Figure 3—figure supplement 2. Potentials evoked by the auditory cues from –0.3 to 2.5 sec relative to cue onset averaged across conditions and across participants (+/-standard error). The gray region represents the temporal window (trough) in which ERPs across conditions were significantly different from zero. Note that the effect reported in the main manuscript across channels is more pronounced on the frontal (Fz) and the central (Cz, C3, and C4) electrodes.
+
 For the analyses of the auditory evoked oscillatory activity, we investigated whether EEG sigma oscillation power (12–16 Hz) evoked by the auditory cues on each channel was modulated by the different stimulation conditions in the 2.5 s following the cue onset. Note that, for completeness, time-frequency analyses were performed on a wider frequency range (5–30 Hz) and that analyses outside the sigma band were considered as exploratory. Cluster Based Permutations (Maris and Oostenveld, 2007) (CBP) tests computed on power averaged across all channels did not highlight any significant clusters between the two auditory cues.
 
-## Sleep event detection
+#### Sleep event detection
 
 Slow waves (SWs) and spindles were detected automatically (Vallat, 2020) on all EEG channels in all NREM2-3 sleep epochs (thus including associated and unassociated sound stimulation intervals as well as non-stimulation intervals, see Figure 1b). The detection tool identified on average 424.8 [95% CI 328–521.6] slow waves and 98 [95% CI: 82.8–113.2] spindles averaged across channels during the nap episode (see methods for details on the detection algorithms and in Supplementary file 2 for the number of events detected on each channel and each condition).
 
@@ -80,19 +108,51 @@ Sleep spindle density averaged across all channels did not differ between associ
 
 **Figure 5.:** (a) Spindle density (number of spindles per total time in minute spent in stimulation or rest intervals) did not differ between stimulation intervals (irrespective of sound type; black) and rest (gray) intervals (Wilcoxon signed-rank test). (b) Spindle frequency (Hz) was lower during stimulation as compared to rest intervals (Student t-test). (c) Spindle amplitude (µV) was higher during stimulation as compared to rest intervals. All spindle features were averaged across channels (Wilcoxon signed-rank test). N = 23; Box: median (horizontal bar), mean (diamond) and first(third) as lower(upper) limits; whiskers: 1.5 x IQR; **: p-value <0.01; n.s.: not significant.
 
-## Phase-amplitude coupling
+#### Phase-amplitude coupling
 
 We investigated whether the phase of the slow oscillations in the 0.5–2 Hz frequency band was coupled to the amplitude of sigma (12–16 Hz) oscillations following either the auditory cue or the negative peak of the detected (i.e. spontaneous) SWs. The analyses presented below focus on the comparison between conditions but see Figure 6—figure supplement 1 for coupling analyses performed within each stimulation condition and at rest.
 
 Event-related phase-amplitude coupling (ERPAC) analyses were performed across channels on a wider frequency range (7–30 Hz) for completeness; thus, analyses outside the pre-registered sigma band (see red frame in Figure 6) are considered exploratory. The ERPAC values locked to the auditory cues were compared between the two stimulation conditions. The CBP test did not highlight any significant clusters (alpha threshold = 0.025, cluster p-value = 0.44). The preferred coupling phase, which represents the phase at which the maximum amplitude is observed, did not significantly differ between conditions (F(1,46) = 0.3, p-value = 0.9). These results suggest that the stimulation conditions did not influence the coupling between the phase of the slow oscillations and the amplitude of sigma oscillations at the auditory cue.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/73930/elife-73930-fig6-v2.jpg)
+
+**Figure 6.:** (a) Time-Frequency Representation (TFR) of group average (N = 22) coupling strength between the phase of the 0.5–2 Hz frequency band and the amplitude from 7 to 30 Hz (y-axis) from –1 to 2 s (x-axis) relative to SW negative peak for the three interval types. (b) ERPAC was significantly higher during the unassociated as compared to the associated sound intervals in the highlighted cluster (cluster-based permutation test). (c) ERPAC was significantly higher during the unassociated sound as compared to the rest intervals in the highlighted cluster (cluster-based permutation test). Red frames indicate the pre-registered sigma frequency band of interest. Superimposed on the TFR in panels b and c (black line): SW grand average across individuals and conditions (N = 22; y-axis on right).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/73930/elife-73930-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Density plot (and mean direction and resultant vector length in bold) of phases in degrees of the slow oscillation (SO) at the sigma band power peak during the 2.5 s following associated and unassociated cue (a,N = 24; magenta and yellow respectively). Phase of the SO at the sigma band power peak from 1 s pre- and 2 s post-trough of the detected SWs during associated, unassociated and rest intervals (b, N = 22; magenta, yellow, and gray respectively). To test for the presence of a coupling between slow oscillation phases and sigma band amplitude (Mikutta et al., 2019), we examined whether the amplitude of the sigma oscillations peaked at a preferred phase of the slow oscillation across trials within each stimulation condition and at rest. To this end, we computed the preferred phase which is defined as the phase at which the amplitude is maximum during each periods of interest (namely each trial). Next, we tested whether the preferred phases were uniformly distributed using Rayleigh test for non-uniformity of circular data (Berens, 2009); with a non-uniform distribution of the preferred phase being an indicator of coupling. Results show that the cue-locked preferred phases across trials were not distributed uniformly both following associated (Rayleigh z = 10.6, p-value = 7.7e-6 (7.7e-6 FDR-corrected)) and unassociated cues (Rayleigh z = 15.8, p-value = 4e-9 (8.1e-9 FDR-corrected)). Further, the phase at which the amplitude was the highest around the SW trough was also not distributed uniformly for SW occurring during associated (Rayleigh z = 9.7, p-value = 2e-5 (6e-5 FDR-corrected)), unassociated (Rayleigh z = 4.8, p-value = 0.007, (6.9e-3 FDR-corrected)) and rest (Rayleigh z = 5.7, p-value = 0.003 (3.8–3 FDR-corrected)) intervals. Altogether, these results indicate significant SW-sigma coupling during rest and stimulation intervals. Parametric Watson-Williams multi-sample test for equal means were used to test whether the distributions of preferred phases were different following the two cue types or during the different block of stimulation. The cue-locked preferred phase was not significantly different following associated cues as compared to unassociated cues (F(1,46) = 0.3, p-value = 0.9). Concerning the SW-locked, analyses revealed that none of the preferred phase of three conditions significantly differed (associated vs. unassociated: F(1,42) = 0;007, p-value = 0.94; associated vs. rest: F(1,42) = 0.01, p-value = 0.91; unassociated vs. rest: F(1,42) = 0.3, p-value = 0.87). Altogether, these results reveal that the highest peaks of the cue-evoked sigma amplitude were located on average at 359.2° [CI95: 372.7–345.7] regardless the cue type, whereas the preferred slow oscillation phase of sigma peak amplitude around the negative peak of the SW was located on average at 321.8° [CI95: 338.6–305] regardless the stimulation interval.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/73930/elife-73930-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** This figure depicts the channel level data corresponding to the analyses presented in Figure 6 in the main text. (a–c). Time-Frequency Representation (TFR) of group average (N = 22) coupling strength between the phase of the 0.5–2 Hz frequency band and the amplitude from 7 to 30 Hz (y-axis) and from –1 to 2 s (x-axis) relative to SW negative peak for the associated stimulation (a), the unassociated stimulation (b) and the rest stimulation (c) intervals. (d-e) Difference of phase-amplitude coupling locked to the detected slow wave negative peaks between unassociated and associated (d) and between unassociated and rest (e). PAC was significantly higher during the unassociated as compared to the associated sound intervals in the highlighted cluster (p-values <0.05). The effect reported in the main manuscript across channels is more pronounced on central (Cz, C3, and C4) electrodes. Note that Oz channel was discarded from SW-locked analyses as the number of detected SW could not allow appropriate PAC analyses.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/73930/elife-73930-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** ERPAC value during unassociated stimulation intervals were extracted in the time-frequency window where ERPAC was significantly greater for unassociated as compared to associated and rest conditions (i.e. from –0.5 to 0.5 and from 14 to 18 Hz, see Figure 7 in the main text). ERPAC negatively correlated with the properties of the SWs detected during unassociated intervals (N = 22). Specifically, the higher the PAC, the lower SW density (t=–2.9, df = 20, p-value = 0.004, right panel) and the peak-to-peak amplitude (S=2460, p-value = 0.037, left panel) during unassociated intervals (Pearson correlations).
+
 Comparison of the ERPAC locked to the negative peak of the SWs (Figure 6 and Figure 6—figure supplement 2 for channel level data) between stimulation conditions revealed a significant cluster (alpha threshold = 0.025, cluster p-value = 0.024; Cohen’s d=–0.56). Specifically, the coupling between the phase of the signal in the 0.5–2 Hz frequency band and the amplitude of the signal in the 14–18 Hz frequency band was significantly stronger around the negative SW peak (from –0.8 to 0.2 s relative to negative peak) during unassociated as compared to associated stimulation intervals (Figure 6b). The exploratory comparison between rest and associated stimulation intervals did not reveal any significant clusters (alpha threshold = 0.025, all cluster p-values > 0.6) but a significant cluster was observed between unassociated stimulation and rest (alpha threshold = 0.025, cluster p-value = 0.001; Cohen’s d=0.53; Figure 6c). This cluster was observed between 13.5 and 20 Hz and –1–0.5 s around the negative peak of the SW. The preferred phases in each of the conditions were not significantly different (associated vs. unassociated: F(1,42) = 0;007, p-value = 0.94; associated vs. rest: F(1,42) = 0.01, p-value = 0.91; unassociated vs. rest: F(1,42) = 0.3, p-value = 0.87; see Figure 6—figure supplement 1). Altogether, these results suggest that slowand sigma oscillation coupling observed just before the onset of the SW was stronger during unassociated as compared to associated and rest intervals but that the preferred coupling phase was not modulated by the experimental conditions.
 
-## Correlational analyses
+### Correlational analyses
 
 Correlation analyses between the TMR index (i.e. the difference in offline changes in performance – averaged across time points – between the reactivated and the non-reactivated sequence) and the density of SW and spindles as well as with the amplitude of the ERP did not yield any significant results (density of spontaneous SW: S=2486, p-value = 0.97) density of spontaneous spindles S=1412, p-value = 0.24; amplitude of the negative peak of the ERP S=2282, p-value = 0.73. However, the correlational CBP analysis between the TMR index and the difference in TF power elicited by the different auditory cues highlighted one significant cluster (alpha threshold = 0.025, cluster centered on 0.5 s post-cue p-value = 0.022, rho = - 0.46; Figure 7a and Figure 7—figure supplement 1 for channel level data). For illustration purposes, we extracted the difference in TF power within the significant cluster included in the pre-registered frequency band (12–16 Hz) and from 0.35 to 1 s post-cue onset (see Figure 3). The resulting scatter plot presented in Figure 7b indicates that higher TMR index (i.e. greater behavioral benefit of TMR) was related to higher sigma oscillation power for the unassociated compared to the associated sound condition.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/73930/elife-73930-fig7-v2.jpg)
+
+**Figure 7.:** (a) Time-Frequency Representation (TFR) of the rho values issued from the correlation between the TMR index and the difference between the power elicited by the associated auditory cues and the unassociated ones (N = 24). Highlighted, the negative clusters in which the TMR index is significantly correlated with the difference in power (cluster-based permutation test). Red frame indicates the pre-registered sigma frequency band of interest. Superimposed on the TFR (black line): Grand average across individuals (N = 24) and conditions of event related potentials elicited by the auditory cues (y-axis on right). (b) Negative correlation between the difference in power elicited by the associated and unassociated cues (0.35–1 s post-cue, 12–16 Hz) and the TMR index (dots represent individual datapoints).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/73930/elife-73930-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** This figure depicts the channel level data corresponding to the analyses presented in Figure 7 in the main text. Time-Frequency Representation (TFR) of the rho values issued from the correlation the TMR index and the difference between the power elicited by the associated auditory cues and the unassociated ones (N = 24; from 0 to 2.5 s post-cue and from 5 to 30 Hz). Highlighted, the negative clusters in which the TMR index is significantly correlated with the difference in power (cluster-based permutation test). Note that the effect reported in the main manuscript across channels is consistent with individual channel data although smaller at Oz.
+
 Finally, with respect to ERPAC-TMR index correlation analyses, no significant correlation was observed between the auditory-locked ERPAC metrics and the TMR index (alpha threshold = 0.025, cluster p-values >0.09). In contrast, cluster-based permutation correlational tests performed between the 12 and 16 Hz TFR SW-locked ERPAC difference between the two conditions and the TMR index revealed a significant cluster. Results show that the associated vs. unassociated difference in coupling strength between the phase of the signal in the 0.5–2 Hz frequency band and the amplitude of the signal in the 14.5–17 Hz frequency band, just after the SW peak (0.5 and 1 s), was positively correlated with the TMR index (alpha threshold = 0.025, cluster p-value = 0.0499, rho = 0.55; Figure 8a and Figure 8—figure supplement 1 for channel level data). For illustration purposes, we extracted the difference in ERPAC in the significant cluster included in the pre-registered frequency band (between 14.5 and 16 Hz) from 0.55 to 1.05 s. The resulting scatter plot (Figure 8b) indicates that the stronger the phase-amplitude coupling during associated as compared to the unassociated stimulation intervals, the higher the TMR index.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/73930/elife-73930-fig8-v2.jpg)
+
+**Figure 8.:** (a) Time-Frequency Representation (TFR) of the rho values issued from the correlation between the TMR index and the difference between the SW-locked ERPAC during the associated vs. unassociated stimulation intervals (N = 22). Highlighted, the positive cluster in which the TMR index is significantly correlated with the difference in SW-locked ERPAC (cluster-based permutation test). Superimposed on the TFR (black line): SW grand average across individuals and conditions. Red frame highlights the pre-registered sigma frequency band of interest. (b) Positive correlation between the SW-locked ERPAC difference (0.55–1.05 s post negative peak, 14.5–17 Hz) and the TMR index (dots represent individual datapoints).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/73930/elife-73930-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** This figure depicts the channel level data corresponding to the analyses presented in Figure 8 in the main text. Time-Frequency Representation (TFR) of the rho values issued from the correlation between the TMR index and the difference between the SW-locked PAC during the associated vs. unassociated stimulation intervals (N = 22). Highlighted, the positive cluster in which the TMR index tends to be correlated (p-value = 0.12) with the difference in SW-locked PAC (cluster-based permutation test). The effect reported in the main manuscript across channels is more pronounced on central (Cz) and frontal (Fz) electrodes. Note that Oz channel was discarded from SW-locked analyses as the number of detected SW could not allow appropriate PAC analyses.
 
 ## Discussion
 
@@ -114,27 +174,140 @@ In conclusion, our results depict a complex organization of the different physio
 
 This study was pre-registered in the Open Science Framework (https://osf.io/). Our pre-registration document outlined our hypotheses and intended analysis plan as well as the statistical models used to test our a priori hypotheses (available at https://osf.io/y48wq). Whenever an analysis presented in the current paper was not pre-registered, it is referred to as exploratory. Additionally, to increase transparency, any deviation from the pre-registration is marked with a (#) symbol and listed in Supplementary file 3 together with a justification for the change.
 
-## Participants
+### Participants
 
 Young healthy volunteers were recruited by local advertisements to participate in the present study. Participants gave written informed consent before participating in this research protocol, approved by the local Ethics Committee (B322201525025) and conducted according to the declaration of World Medical Association, 2013. The participants received a monetary compensation for their time and effort. Inclusion criteria were: (1) left- or right-handed# (see point #1 of Supplementary file 3); (2) no previous extensive training with a musical instrument or as a professional typist, (3) free of medical, neurological, psychological, or psychiatric conditions, including depression and anxiety as assessed by the Beck’s Depression (Beck et al., 1996) and Anxiety (Beck et al., 1988) Inventories, (4) no indications of abnormal sleep, as assessed by the Pittsburgh Sleep Quality Index (Buysse et al., 1989); (5) not considered extreme morning or evening types, as quantified with the Horne & Ostberg chronotype questionnaire (Horne and Ostberg, 1976); and, (6) free of psychoactive or sleep-affecting medications. None of the participants were shift-workers or took trans-meridian trips in the 3 months prior to participation.
 
 The sample size was determined with a power analysis performed through the G*Power software (Faul et al., 2007) and based on the paper of Cousins et al., 2016 which reports, to our knowledge, the closest paradigm to the present one in the motor memory domain (see details in the pre-registration). Sample size was estimated to 24 participants. Thirty-four participants took part in the study to reach this estimated sample size after participant exclusion. As per our pre-registration, participants were excluded if their sleep duration during the experimental nap was insufficient to provide at least 50 stimulations per condition (after EEG data cleansing). This cut-off aimed at providing enough events to reach sufficient signal-to-noise ratio for electrophysiological analyses. Ten participants did not reach this criterion; accordingly, 24 participants (12 females) completed the experimental protocol and were included in the analyses (see participants’ characteristics in Table 1).
 
-## General design
+**Table 1.**
+ Participant characteristics and sleep characteristics leading up to the experimental session and vigilance assessments at time of testing.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>N</th>
+      <th>24 (12 females)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age (yrs)</td>
+      <td>21.9 ranging from 18 to 27</td>
+    </tr>
+    <tr>
+      <td>Edinburgh Handedness (Oldfield, 1971)</td>
+      <td>78.6 [57.1–100]</td>
+    </tr>
+    <tr>
+      <td>Epworth Sleepiness Scale (Hoddes et al., 1972)</td>
+      <td>7 [5.9–8.1]</td>
+    </tr>
+    <tr>
+      <td>Beck Depression Scale (Beck et al., 1996)</td>
+      <td>1.5 [0.9–2.2]</td>
+    </tr>
+    <tr>
+      <td>Beck Anxiety Scale (Beck et al., 1988)</td>
+      <td>1.8 [1.1–2.4]</td>
+    </tr>
+    <tr>
+      <td>PSQI (Buysse et al., 1989)</td>
+      <td>3 [2.2–3.8]</td>
+    </tr>
+    <tr>
+      <td>Chronoscore (CRQ)(51)</td>
+      <td>48.8 [45.6–51.9]</td>
+    </tr>
+    <tr>
+      <td colspan="2">Sleep durationa</td>
+    </tr>
+    <tr>
+      <td>Mean across the 3 nights (minutes)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Night 1</td>
+      <td>481.5 [461.5–501.5]</td>
+    </tr>
+    <tr>
+      <td>Night 2</td>
+      <td>488.2 [471.2–505.2]</td>
+    </tr>
+    <tr>
+      <td>Night 3</td>
+      <td>502 [482.1–521.8]</td>
+    </tr>
+    <tr>
+      <td colspan="2">St. Mary’s questionnaire on Night 3 quality</td>
+    </tr>
+    <tr>
+      <td>Quality</td>
+      <td>4.7 [4.3–5.1]</td>
+    </tr>
+    <tr>
+      <td>Duration (minutes)</td>
+      <td>443.5 [423.3–463.8]</td>
+    </tr>
+    <tr>
+      <td colspan="2">Psychomotor Vigilance Taskb</td>
+    </tr>
+    <tr>
+      <td>Pre-nap</td>
+      <td>300.2ms [289.7–310.6]</td>
+    </tr>
+    <tr>
+      <td>Post-nap</td>
+      <td>297.5ms [288.9–306]</td>
+    </tr>
+    <tr>
+      <td>Post-night</td>
+      <td>294.7ms [285.1–304.2]</td>
+    </tr>
+    <tr>
+      <td>One-way rmANOVA results</td>
+      <td>F(2,46)=1.47; P-value = 0.24</td>
+    </tr>
+    <tr>
+      <td colspan="2">Stanford sleepiness score</td>
+    </tr>
+    <tr>
+      <td>Pre-nap Session</td>
+      <td>2.4 [2.1–2.7]</td>
+    </tr>
+    <tr>
+      <td>Post-nap Session</td>
+      <td>2.7 [2.3–3.1]</td>
+    </tr>
+    <tr>
+      <td>Post-night Session</td>
+      <td>2.3 [1.9–2.7]</td>
+    </tr>
+    <tr>
+      <td>One-way rmANOVA results</td>
+      <td>F(2,46)=1.69; P-value = 0.2</td>
+    </tr>
+  </tbody>
+</table>
+
+_Notes. Values are means [lower and upper limit of the 95% Confidence Interval - CI]. PSQI = Pittsburgh Sleep Quality Index; CRQ = Circadian Rhythm Questionnaire. REM: Rapid Eye Movement. a Sleep duration was computed as the mean across the actigraphy data and the sleep diary for the three nights before the experimental day. b Median of reaction times computed across the 100 trials of each session._
+
+### General design
 
 This study employed a within-participant design (Figure 1). Participants were first invited, in the early afternoon, for a habituation nap during which they completed a 90-min nap monitored with polysomnography (PSG, see below for details). Approximately 1 week later, participants returned to complete the experimental protocol. Each participant followed a constant sleep/wake schedule (according to their own rhythm +/-1 hr) for the 3 days before the experiment. Compliance was assessed with sleep diaries and wrist actigraphy (ActiGraph wGT3X-BT, Pensacola, FL). Sleep quality and quantity for the night preceding the experimental visit was assessed with the St. Mary’s sleep questionnaire (Ellis et al., 1981; see Table 1 for results about sleep data before the experimental session). During the first experimental day, participants were trained on two motor sequences simultaneously (pre-nap session: between 12 pm-1:30 pm). During learning, each of these two sequences was associated to a particular sound. Only one of these two sounds was presented during the subsequent nap episode, corresponding to the associated sound linked to the reactivated sequence. At the behavioral level, the control condition consisted of the non-reactivated sequence (i.e. a sequence that was associated to a sound during learning but the sound was not presented during the subsequent nap interval). For electrophysiological analyses, a new, unassociated, sound (i.e. a sound to which participants were not exposed during the learning episode) was presented during the post-learning sleep, serving as a control condition. The nap occurred between 1:30 pm and 3 pm and was monitored with PSG. Sleep data were monitored online by an experimenter in order to send auditory stimulations during NREM2-3 stages. Performance on the reactivated and non-reactivated sequences was tested 30 min after the end of the nap to allow sleep inertia to dissipate (post-nap session: 2 pm-5:30 pm) and on day 2 after a night of sleep (not monitored with PSG) spent at home (post-night session: 8:30 am-11:30 am). At the beginning of each behavioral session, vigilance was measured objectively and subjectively using the Psychomotor Vigilance Task (Dinges and Powell, 1985) and Stanford Sleepiness Scale (Hoddes et al., 1972), respectively (see Table 1). Finally, general motor execution was tested at the beginning of the pre-nap session and at the end of the post-night session.
 
 This design allowed to assess the specific impact of TMR on consolidation at the behavioral level, with the comparison between the changes in performance of the reactivated and non-reactivated sequences assessed during the post-nap and post-night sessions; and at the electrophysiological level, with the comparison between the neurophysiological responses to the reactivated associated sound vs. the unassociated sound that did not carry mnemonic information.
 
-## Stimuli and tasks
+### Stimuli and tasks
 
 All tasks were performed on a laptop computer (Dell Latitude 5,490 run under Microsoft Windows 10 Enterprise) and were implemented in Matlab (Math Works Inc, Natick, MA, USA) Psychophysics Toolbox version 3 (Kleiner, 2007). Participants sat comfortably in front of the computer screen with the keyboard on their knees. This configuration allowed the participants to focus their gaze on the screen and not to look at their hands/movements. Distance between participants and the screen was approximately 70 cm but was self-selected by the participants based on comfort. The sound presentation was conducted using ER3C air tube insert earphones (Etymotic Research).
 
-## Acoustic stimulation
+#### Acoustic stimulation
 
 Three different 100 ms sounds were randomly assigned to the three conditions (reactivated/associated, not-reactivated, and unassociated), for each participant. The three synthesized sounds consisted of a tonal harmonic complex created by summing a sinusoidal wave with a fundamental frequency of 543 Hz and 11 harmonics with linearly decreasing amplitude (i.e. the amplitude of successive harmonics is multiplied by values spaced evenly between 1 and 0.1); white noise band-passed between 100 and 1000 Hz and a tonal harmonic complex created with a fundamental frequency of 1480 Hz and 11 harmonics with linearly increasing amplitude (i.e. the amplitude of successive harmonics is multiplied by values spaced evenly between 0.1 and 1). A 10 ms linear ramp was applied to the onset and offset of the sound files so as to avoid earphone clicks. At the start of the experiment, auditory detection thresholds were determined by the participants themselves using a transformed 1-down 1-up procedure (Levitt, 1971; Leek, 2001) separately for each of the three sounds. Subsequently, the sound pressure level was set to 1000% of the individual auditory threshold during the tasks and 140% for auditory stimulation during sleep, thus limiting the risk of awakening during the nap (Sterpenich et al., 2014). Before the start of the nap episode, participants were instructed that they may or may not receive auditory stimulations during the nap.
 
-## Motor task
+#### Motor task
 
 A bimanual serial reaction time task (Nissen and Bullemer, 1987) (SRTT) was used to probe motor learning and memory consolidation processes. During this task, eight squares were horizontally presented on the screen meridian, each corresponding to one of the eight keys on the specialized keyboard and to one of the 8 fingers (no thumbs). The color of the outline of the squares alternated between red and green, indicating rest and practice blocks, respectively. During the practice blocks, participants had to press as quickly as possible the key corresponding to the location of a green filled square that appeared on the screen. After a response, the next square changed to green with a response-to-stimulus interval of 0 ms. After 64 presses, the practice block automatically turned into a rest block and the outline of the squares changed from green to red. The rest interval was 15 s.
 
@@ -144,37 +317,37 @@ For the pre-nap session, participants first completed 4 blocks of the random SRT
 
 Between the training and test runs as well as after the post-night session, participants completed a generation task that aimed at testing explicit knowledge of the sequences as well as the strength of the association between the sequences and their corresponding auditory cues. During the generation task, participants were presented with the auditory cues specific to the learned sequences and were instructed to self-generate the corresponding motor sequences. Participants completed 4 consecutive attempts for each cue / sequence pair. The order of the pairs was randomized. Accuracy was emphasized during this task. A trial was classified as ‘correct’ if the key pressed by the participant was in the correct ordinal position with respect to the sequence acoustically cued. The percentage of correct ordinal positions was computed per sequence and per attempt. The generation accuracy per sequence was computed by averaging across attempts for each time point separately (pre-nap and post-night sessions). We tested whether generation accuracy of the reactivated sequence during the pre-nap generation task was correlated (Pearson’s correlation) to the TMR index. Results showed that there was no significant correlation between generation accuracy and the TMR index (r=0.25, t=1.22, df = 22, p-value = 0.24).
 
-## Polysomnography and targeted memory reactivation protocol
+### Polysomnography and targeted memory reactivation protocol
 
 Both habituation and experimental naps were monitored with a digital sleep recorder (V-Amp, Brain Products, Gilching, Germany; bandwidth: DC to Nyquist frequency) and were digitized at a sampling rate of 1000 Hz (except for one participant (500 Hz) due to experimental error). Standard electroencephalographic (EEG) recordings were made from Fz, C3, Cz, C4, Pz, Oz, A1, and A2 according to the international 10–20 system (note that Fz, Pz and Oz were omitted during the habituation nap). A2 was used as the recording reference and A1 as a supplemental individual EEG channel. An electrode placed on the middle of the forehead was used as the recording ground. Bipolar vertical and horizontal eye movements (electrooculogram: EOG) were recorded from electrodes placed above and below the right eye and on the outer canthus of both eyes, respectively. Bipolar submental electromyogram (EMG) recordings were made from the chin. Electrical noise was filtered using a 50  Hz notch. Impedance was kept below 5 kΩ for all electrodes. During the experimental nap, PSG recordings were monitored by a researcher in order to detect NREM2-3 sleep based on the most recent sleep scoring guidelines from the American Academy of Sleep Medicine (Berry, 2018). To do so, PSG recordings were displayed online using 30-second-long epochs with EEG and EOG data filtered from 0.5 to 30 Hz and EMG data filtered between 20 and 200 Hz. When NREM2-3 sleep stages were reached, auditory cues were sent. The auditory stimulation was presented in a blocked design (Figure 1B). Namely, each type of auditory cue (associated or unassociated) was sent during 3-min-long stimulation intervals with an inter-stimulus interval of 5 s. The stimulation was stopped manually when the experimenter detected REM sleep, NREM1 or wakefulness. Intervals of stimulation for each sound were separated by a 1 min silent period (rest intervals).
 
-## Analysis
+### Analysis
 
 Statistical tests were performed with the open-source software (R Development Core Team, 2020; RStudio Team, 2020) and considered significant for p<0.05. When necessary, corrections for multiple comparisons was conducted with the False Discovery Rate (Benjamini and Hochberg, 1995) (FDR) procedure within each family of hypothesis tests (see details for each analysis below). Greenhouse-Geisser corrections was applied in the event of the violation of sphericity. Wilcoxon signed-rank tests were used when the Shapiro-Wilk test indicated non-normal distribution# (see point #6 of Supplementary file 3). F, t and V (or W) statistics and corrected p-values were therefore reported for ANOVAs, Student and Wilcoxon tests, respectively. Effect sizes are reported for significant comparisons using Cohen’s d for Student t-tests, r for Wilcoxon signed-rank test and η² for rmANOVAs using G*power (Faul et al., 2007). For correlation analyses, Spearman# test (see point #6 of Supplementary file 3) was used and S as well as corrected p-values were reported. Nonparametric CBP tests (Maris and Oostenveld, 2007) implemented in fieldtrip toolbox (Oostenveld et al., 2011) were used for high dimensional time and time-frequency data analyses (e.g. ERP, TF, and PAC analyses). CBP tests are composed of two subsequent tests. The first calculates paired t-tests (for contrast analyses) between conditions for each time points (or time-frequency points), which are then thresholded at a chosen p-value which sets the conservativeness of the test (reported as ‘cluster threshold’). Significant clusters are defined as showing a continuum of significant time (or time-frequency) points. Subsequently, the procedure is repeated 500 times on shuffled data in which the condition assignment within each individual is permuted randomly. On each permutation, the maximum t-value is retained, yielding a distribution of 500 t-values (for contrast analyses). Finally, this distribution is used as a reference to determine whether the statistical value (t in case of contrast analyses) of each cluster, as calculated on the real assignment of the conditions, is likely to come from the same probability distribution (p-value >0.05) or rather differs significantly from this random perturbation probability distribution (p-value <0.05). For CBP contrast analyses, Cohen’s d is reported while rho is reported for CBP correlations.
 
-## Behavior
+#### Behavior
 
-## Preprocessing
+##### Preprocessing
 
 Motor performance on both the random and sequential SRTT was measured in terms of speed (correct response time (RT) in ms) and accuracy (% correct responses) for each block of practice. Note that RTs from individual correct trials were excluded from the analyses if they were greater than 3 standard deviations above or below the participant’s mean correct response time for that block (1.73% in total). Consistent with our pre-registration, our primary analyses were performed on speed.
 
 The offline changes in performance on the sequential SRTT were computed as the relative change in speed between the pre-nap session (namely the 3 last blocks of practice#, see results and point #2 of Supplementary file 3 for details) and the post-nap session (4 blocks of practice) and the post-night session (4 first blocks of practice) separately for the reactivated and the non-reactivated sequences. A positive offline change in performance therefore reflects an increase of absolute performance from the pre-nap test to the post-nap or post-night tests. Additionally, we computed a TMR index, to be used in brain-behavior correlation analyses, which consisted of the difference in offline changes in performance - averaged across time points - between the reactivated and non-reactivated sequences. A positive TMR index reflects higher offline changes in performance for the reactivated as compared to the non-reactivated sequence.
 
-## Statistical analyses
+##### Statistical analyses
 
 We first assessed whether performance (speed and accuracy) significantly differs between conditions during initial training. To do so, two two-way rmANOVAs with Condition (reactivated vs. non-reactivated) and Block (1st rmANOVA on the 16 blocks of the pre-nap training and 2nd rmANOVA on the 4 blocks of the pre-nap test) as within-subject factors were performed on the sequential SSRT performance. Similar analyses testing for baseline differences between sequences A and B irrespective of the reactivation condition were performed. The results of these control analyses are presented in Figure 2—figure supplement 2. We then tested whether offline changes in performance on the sequential SRTT differed between reactivation conditions after a nap and night of sleep. This was done with a rmANOVA with Time-point (post-nap vs. post-night) and Condition (reactivated vs. non-reactivated) as within-subject factors on the offline changes in performance. Finally, to highlight that improvement in movement speed was specific to the learned sequences as opposed to general improvement of motor execution, we computed the overall performance change for both the sequential SRTT (first 4 blocks of pre-nap raining vs. 4 last blocks of post-night training collapsed across reactivated and non-reactivated sequences) and the pseudo-random version of the SRTT (4 blocks pre-nap session vs. 4 blocks post-night session). Two-tailed paired Student t-test revealed that overall performance changes in performance were significantly higher for the sequential SRTT as compared to the random SRTT (t=21.69, df = 23, p-value <2.2e-16; Cohen’s d=4.43). Thus, the RT decrease reported on the sequential SRTT in the result section reflect motor sequence learning rather than a mere improvement in motor execution.
 
-## Electroencephalography
+### Electroencephalography
 
-## Offline sleep scoring
+#### Offline sleep scoring
 
 A certified sleep technologist blind to the stimulation periods completed the sleep stage scoring offline according to criteria defined in Iber and Iber, 2007 using the software SleepWorks (version 9.1.0 Build 3042, Natus Medical Incorporated, Ontario, Canada). Data were visually scored in 30 s epochs and band pass filters were applied between 0.3 and 35 Hz for EEG signals, 0.3 and 30 Hz for EOG, and 10 and 100 Hz for EMG. A 50 Hz notch filter was also used (see Table 1 for details of extraction from scored data).
 
-## Preprocessing
+#### Preprocessing
 
 EEG data preprocessing was carried out using functions supplied by the fieldtrip toolbox (Oostenveld et al., 2011). Specifically, data were cleaned by manually screening each 30-s epoch. Data segments contaminated with muscular activity or eye movements were excluded. Data were filtered between 0.1 and 30 Hz.
 
-## Event-related analyses
+#### Event-related analyses
 
 Event-related data analyses (i.e. auditory-evoked potentials and oscillatory activity) were performed with the fieldtrip toolbox (Oostenveld et al., 2011) with down sampled data (100 Hz). Auditory-evoked responses were obtained by segmenting the data into epochs time-locked to auditory cue onset (from –1 to 3 s relative to auditory cue onset after correction for onset-trigger lags) separately for the associated and unassociated auditory cues and averaged across all trials# (see point #3 of Supplementary file 3) in each condition separately. During cleaning, 1.03% [95% CI: 0.49–1.58] of the trials with stimuli sent during NREM2-3 stages were discarded. The remaining number of artifact-free trials was not significantly different between the two stimulation conditions (associated vs. unassociated, t=–0.5888, df = 23, p-value = 0.5617).
 
@@ -182,7 +355,7 @@ For event-related potentials (ERPs) analyses, individual ERPs computed on each c
 
 To analyze oscillatory activity, we computed Time-Frequency Representations (TFRs) of the power spectra per experimental condition and per channel. To this end, we used an adaptive sliding time window of five cycles length per frequency (Δt=5 /f; 20 ms step size), and estimated power using the Hanning taper/FFT approach between 5 and 30 Hz# (see point #4 of Supplementary file 3). Individual TFRs were converted into baseline relative change of power (baseline from –0.3 to –0.1 s relative to cue onset), thus highlighting power modulation following the auditory cues. All six EEG channels were then averaged (but see Figure 7—figure supplement 1 for channel level data). To identify significant evoked power modulation, TFR locked to auditory cues were compared between conditions using a CBP test between 5 and 30 Hz and from 0 to 2.5 sec relative to cue onset.
 
-## Sleep-event detection
+#### Sleep-event detection
 
 Preprocessed cleaned data were down-sampled to 500 Hz and were transferred to the python environment. Slow waves and spindles were detected automatically in NREM2-3 sleep epochs on all the channels, by using algorithms implemented in the YASA open-source Python toolbox (Vallat, 2020; Vallat and Walker, 2021). Concerning the SW detection, the algorithm used is a custom adaptation of Massimini et al., 2004 and Carrier et al., 2011. Specifically, data were filtered between 0.3 and 2 Hz with a FIR filter using a 0.2 Hz transition resulting in a –6 dB points at 0.2 and 2.1 Hz. Then all the negative peaks with an amplitude between –40 and –200 μV and the positive peaks with an amplitude comprised between 10–150 μV are detected in the filtered signal. After sorting identified negative peaks with subsequent positive peaks, a set of logical thresholds are applied to identify the true slow waves: (1) duration of the negative peak between 0.3 and 1.5 sec; (2) duration of the positive peak between 0.1 and 1 sec; (3) amplitude of the negative peak between 40 and 300 µV; (4) amplitude of the positive peak between 10 and 200 µV and (5) PTP amplitude between 75 and 500 µV. Concerning spindle detection, the algorithm is inspired from the A7 algorithm described in Lacourse et al., 2019. Specifically, the relative power in the spindle frequency band (12–16 Hz) with respect to the total power in the broad-band frequency (1–30  Hz) is estimated based on Short-Time Fourier Transforms with 2-s windows and a 200ms overlap. Next, the algorithm uses a 300ms window with a step size of 100 ms to compute the moving root mean squared (RMS) of the filtered EEG data in the sigma band. A moving correlation between the broadband signal (1–30  Hz) and the EEG signal filtered in the spindle band is then computed. Sleep spindles are detected when the three following thresholds are reached simultaneously:(1) the relative power in the sigma band (with respect to total power) is above 0.2 (2) the moving RMS crosses the RMSmean +1.5 RMSSD threshold and (3) the moving correlation described is above 0.65. Additionally, detected spindles shorter than 0.5  s or longer than 2  s were discarded. Spindles occurring in different channels within 500ms of each other were assumed to reflect the same spindle. In these cases, the spindles are merged together.
 
@@ -190,10 +363,10 @@ SWs and spindles were detected in the stimulation intervals of both associated a
 
 Furthermore, we performed exploratory analyses including the SWs and the spindles detected during rest intervals (i.e. NREM 2–3 epochs without auditory stimulation). In the case of SWs, we compared these values with those obtained for the associated stimulation intervals and the unassociated stimulation intervals using two two-tailed Student t-tests or Wilcoxon signed-rank tests (rest vs. associated stimulation intervals and rest vs. unassociated stimulation intervals). In the case of spindles, as spindle characteristics did not differ between stimulation conditions (see results), they were collapsed across stimulation conditions and compared to rest intervals using two-tailed Student t-tests or Wilcoxon signed-rank tests. Correction for multiple comparisons was performed using the FDR approach (Benjamini and Hochberg, 1995).
 
-## Phase-amplitude coupling
+#### Phase-amplitude coupling
 
 In order to perform coupling analyses, preprocessed cleaned data were first down-sampled to 500 Hz. Based on the low spatial resolution of our montage that did not allow fine topographical analyses and in order to increase the signal to noise ratio to enhance the quality of the phase estimation that is particularly sensitive to noise (Gross et al., 2013), we opted to average the data across channels (but see Figure 6—figure supplement 2 and Figure 8—figure supplement 1 for channel level data). Coupling analyses were then performed using the Event-Related Phase-Amplitude Coupling (ERPAC) method proposed by Voytek et al., 2013 and implemented in the TensorPac to support multi-dimensional arrays (Combrisson et al., 2020). This method allows to compute the ERPAC at each time point of the analysis window (Lachaux et al., 1999) and is therefore optimal to preserve the time dimension. Specifically, the instantaneous phases of the slow oscillation (0.5–2 Hz) and the envelopes of amplitudes of the signal between 7 and 30 Hz# (see point # 4 of Supplementary file 3) were first calculated by Hilbert transform around the trials of interest (i.e. from –0.5 to 2.5 s around the auditory cue onset and from –1 to 2 s around the negative peak of the SWs). For each time point in the analysis window (i.e. every 2 ms), the circular-linear correlation of phase and amplitude values were computed across trials. This analysis therefore tested whether trial-by-trial differences in slow oscillation phase explained a significant amount of the inter-trial variability in signal amplitude in the analyzed time window. The PAC factor output therefore represents the corresponding correlation coefficient. ERPAC was computed separately for the two sound conditions and compared using CBP test. Additionally, we performed exploratory analyses in which ERPAC (computed relative to the negative peak of the SWs as described above) was extracted from rest intervals. We compared rest ERPAC to ERPAC derived from both the associated and unassociated stimulation intervals using CBP procedures and corrected for two comparisons using the FDR. The preferred phase (PP), which reflects whether the amplitude of the signal in a given frequency band is modulated by the phase of the signal in another band, was also computed using tensorPac (Combrisson et al., 2020) open-source Python toolbox. Based on our a priori hypotheses, these analyses focused on the amplitude of the signal in the sigma band and the phase of the SO. The amplitude was binned according to phase slices. The preferred phase is given by the phase bin at which the amplitude is maximum. The PP statistical analyses were performed using the CircStat toolbox (Berens, 2009) implementing Rayleigh test for non-uniformity and Watson-Williams multi-sample test for equal means# (see point #5 of Supplementary file 3). Similar as above, PP was also extracted from rest intervals for exploratory analyses in which rest PP was compared to the PP derived from the two different stimulation intervals using Watson test for circular data.
 
-## Correlational analyses
+### Correlational analyses
 
 Following our pre-registration, we performed correlation analyses between the TMR index and the following EEG-derived data: (1) The difference between the densities of SWs detected during the associated and unassociated cue stimulation intervals using one-sided Spearman# correlations (point #6 of Supplementary file 3); (2) The difference between the densities of spindles detected during the associated and unassociated cue stimulation intervals using one-sided Spearman# correlations ; (3) The relative change between the amplitude of the negative peak of the ERP# (point #3 of Supplementary file 3-3) following the associated and unassociated auditory cues using one-sided Spearman# correlations ; (4) The difference in auditory-locked sigma band power (0–2.5 sec relative to cue onset and from 12 to 16 Hz) between the associated and unassociated auditory cues using CBP tests# (point #7 of Supplementary file 3); and (5) The difference between SO phase and sigma oscillation amplitude (12–16 Hz) coupling strength during the associated and unassociated stimulation intervals in relation to the cue onset and to the SW event using CBP approaches# (point #6 of Supplementary file 3). For all one-sided tests, we predicted that the TMR index would be positively correlated with the EEG-derived metrics.

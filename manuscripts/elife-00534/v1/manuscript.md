@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.00534.001 Breast cancer genomes have revealed a novel form of mutation showers (kataegis) in which multiple same-strand substitutions at C:G pairs spaced one to several hundred nucleotides apart are clustered over kilobase-sized regions, often associated with sites of DNA rearrangement. We show kataegis can result from AID/APOBEC-catalysed cytidine deamination in the vicinity of DNA breaks, likely through action on single-stranded DNA exposed during resection. Cancer-like kataegis can be recapitulated by expression of AID/APOBEC family deaminases in yeast where it largely depends on uracil excision, which generates an abasic site for strand breakage. Localized kataegis can also be nucleated by an I-SceI-induced break. Genome-wide patterns of APOBEC3-catalyzed deamination in yeast reveal APOBEC3B and 3A as the deaminases whose mutational signatures are most similar to those of breast cancer kataegic mutations. Together with expression and functional assays, the results implicate APOBEC3B/A in breast cancer hypermutation and give insight into the mechanism of kataegis. DOI: http://dx.doi.org/10.7554/eLife.00534.001
+Breast cancer genomes have revealed a novel form of mutation showers (kataegis) in which multiple same-strand substitutions at C:G pairs spaced one to several hundred nucleotides apart are clustered over kilobase-sized regions, often associated with sites of DNA rearrangement. We show kataegis can result from AID/APOBEC-catalysed cytidine deamination in the vicinity of DNA breaks, likely through action on single-stranded DNA exposed during resection. Cancer-like kataegis can be recapitulated by expression of AID/APOBEC family deaminases in yeast where it largely depends on uracil excision, which generates an abasic site for strand breakage. Localized kataegis can also be nucleated by an I-SceI-induced break. Genome-wide patterns of APOBEC3-catalyzed deamination in yeast reveal APOBEC3B and 3A as the deaminases whose mutational signatures are most similar to those of breast cancer kataegic mutations. Together with expression and functional assays, the results implicate APOBEC3B/A in breast cancer hypermutation and give insight into the mechanism of kataegis.
 
 ## Introduction
 
@@ -33,77 +33,144 @@ Here we have asked whether we could recapitulate cancer-like kataegis by express
 
 ## Results
 
-## Recapitulating kataegis in yeast with AID/APOBEC deaminases
+### Recapitulating kataegis in yeast with AID/APOBEC deaminases
 
-Several members of the AID/APOBEC family members were expressed in yeast and all were found to give a significant increase in the mutation frequency as judged by the yield of colonies resistant to canavanine (Can
+Several members of the AID/APOBEC family members were expressed in yeast and all were found to give a significant increase in the mutation frequency as judged by the yield of colonies resistant to canavanine (CanR) (Figure 1—figure supplement 1). Genome sequencing, however, revealed that most CanR colonies had typically accumulated less than 10 point mutations (>98% at C:G pairs) during the period of AID/APOBEC induction and clonal expansion (Figure 1A). A hyperactive mutant of AID (AID*; Wang et al., 2009) gave a significantly higher mutation load (median of 25 mutations per genome). We therefore initially focused on the mutations in AID*-transformants (1078 mutations in total, of which all except 14 were at C:G pairs) to see if there were signs of kataegis.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/00534/elife-00534-fig1-v1.jpg)
 
-**Figure 1.:** (A) The total number of mutations detected in canavanine-resistant (CanR) AID/APOBEC yeast transformants, median frequency indicated. (B) Rainfall plot of genome-wide intermutational distances (IMD) in individual CanR AID* transformants. Clone identifier is indicated along the top, mutations shown as dots with the y-axis giving the distance to the next downstream mutation on the same chromosome. For each clone, dots are ordered sequentially along the genome. Dot colours represent: cluster mutations (at C, red; G, black), unclustered mutations (at C, pink; G, grey). Mutations at A:T (14 out of 1078 total), single mutations on individual chromosomes (15% of the database), the most downstream mutation in each chromosome and transformants without any multiply mutated chromosomes (5/40) are not depicted. Supplementary file 1B contains the location of all identified mutations. (C) Observed distribution of IMDs in the AID* dataset compared to a simulation assuming mutations are randomly scattered throughout the genome. (D) IMD plots of APOBEC3A/B/G*-expressing yeast transformants (28/78 transformants harboured no multiply mutated chromosome and are not depicted). (E) Detailed view of AID* mutation clusters. Each line represents an individual cluster with the clone identifier (grey box), number of mutations in the cluster and total mutations in the clone indicated. Mutations are coloured as in (B), a horizontal line indicates mutations that have coalesced, * indicates clusters localising within 10 kb of CAN1. All clusters containing ≥5 mutations are depicted. (F) Mutation clusters identified in yeast APOBEC3 transformants.DOI: http://dx.doi.org/10.7554/eLife.00534.003
+**Figure 1.:** (A) The total number of mutations detected in canavanine-resistant (CanR) AID/APOBEC yeast transformants, median frequency indicated. (B) Rainfall plot of genome-wide intermutational distances (IMD) in individual CanR AID* transformants. Clone identifier is indicated along the top, mutations shown as dots with the y-axis giving the distance to the next downstream mutation on the same chromosome. For each clone, dots are ordered sequentially along the genome. Dot colours represent: cluster mutations (at C, red; G, black), unclustered mutations (at C, pink; G, grey). Mutations at A:T (14 out of 1078 total), single mutations on individual chromosomes (15% of the database), the most downstream mutation in each chromosome and transformants without any multiply mutated chromosomes (5/40) are not depicted. Supplementary file 1B contains the location of all identified mutations. (C) Observed distribution of IMDs in the AID* dataset compared to a simulation assuming mutations are randomly scattered throughout the genome. (D) IMD plots of APOBEC3A/B/G*-expressing yeast transformants (28/78 transformants harboured no multiply mutated chromosome and are not depicted). (E) Detailed view of AID* mutation clusters. Each line represents an individual cluster with the clone identifier (grey box), number of mutations in the cluster and total mutations in the clone indicated. Mutations are coloured as in (B), a horizontal line indicates mutations that have coalesced, * indicates clusters localising within 10 kb of CAN1. All clusters containing ≥5 mutations are depicted. (F) Mutation clusters identified in yeast APOBEC3 transformants.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/00534/elife-00534-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) CanR frequencies of yeast transformants expressing different AID/APOBEC proteins. (B) AID/APOBEC protein levels in yeast transformants. Whole cell extracts from 24 hr galactose induced yeast transformants were immunoblotted with anti-FLAG (M2; Sigma) and anti-β-Actin (ab8224; Abcam).DOI: http://dx.doi.org/10.7554/eLife.00534.004
+**Figure 1—figure supplement 1.:** (A) CanR frequencies of yeast transformants expressing different AID/APOBEC proteins. (B) AID/APOBEC protein levels in yeast transformants. Whole cell extracts from 24 hr galactose induced yeast transformants were immunoblotted with anti-FLAG (M2; Sigma) and anti-β-Actin (ab8224; Abcam).
 
 The distances between neighbouring mutations in the AID* yeast transformants are displayed as rainfall plots (Figure 1B). While the median overall intermutational distance (IMD) is 13 kb, it is apparent that rather than the mutations being scattered randomly over the genome, mutation distribution is bimodal (Figure 1C). Dividing the mutations into two groups using k-means cluster analysis (Hartigan and Wong, 1979) reveals that one group exhibit a median IMD of 156 kb with a distribution of distances that is as expected for a set of individual mutations randomly scattered over the yeast genome as judged by Monte Carlo simulation (Figure 1C). We designate these as singlet mutations: they account for 52% of the total mutations. The remaining 48% of the mutations are much more closely spaced than would be expected on a random basis. We designate these as proximal mutations, which are separated from each other by a median IMD of only 727 bp with >99% of them being within 8.5 kb of their closest neighbour.
 
 The overwhelming majority of the proximal mutations in the AID* transformants do not occur as isolated mutational pairs but, rather, are found in clusters. Thus, if we define proximal mutations as a pair of mutations that are located <8.5 kb apart (a distance that excludes 99% of the singlet mutations) and define a cluster as a stretch of DNA containing ≥5 proximal mutations, we find that 75% of the AID*-induced proximal mutations are actually parts of clusters. These clusters typically extend over 6–15 kb (with the full range detected being 1.8–30 kb) and contain anything up to 26 mutations (Figure 1E). This clustering is far in excess of anything that would be expected on a random basis. The level of mutation clustering observed with AID* is such that more than one-third of the transformants analysed (16/40) contain at least one mutation cluster. In affected clones, a quarter to two-thirds of all the mutations in the cell are concentrated in a small number of clusters that account for <0.2% of the entire genome. Similar clusters were also observed in yeast cells transformed with APOBEC3A and APOBEC3B as well as with the hyperactive APOBEC3G mutant APOBEC3G* (Figure 1D,F). Like the cancer kataegis, the clustered mutations in the various yeast transformants showed a strong tendency towards strand polarity; mutations within a cluster occur predominantly at either a C residue or a G residue with over 88% of mutations being strand coordinated (Figure 1D,F).
 
-## Transversion mutations are preferentially associated with kataegic stretches
+### Transversion mutations are preferentially associated with kataegic stretches
 
-Exploring the mutational spectra, we find that the majority (76%) of the mutations in the yeast AID* transformants are C→T transitions, although transversions do occur and these are preferentially associated with the kataegic stretches (
+Exploring the mutational spectra, we find that the majority (76%) of the mutations in the yeast AID* transformants are C→T transitions, although transversions do occur and these are preferentially associated with the kataegic stretches (Figure 2A and Table 1). Transversions account for 54% of the kataegic mutations in the AID* transformants but for only 13% of the unclustered substitutions (Table 1). The same bias towards transversion mutations in the kataegic stretches is also observed in the APOBEC3A, 3B and 3G* transformants (Figure 2A and Table 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/00534/elife-00534-fig2-v1.jpg)
 
-**Figure 2.:** (A) IMD plots of AID*/APOBEC transformants reveal preferential association of nucleotide transversions with kataegic clusters. Mutation datasets and presentation are as in Figure 1B but with transition mutations represented by yellow dots and transversions by blue dots. Density plots depict the overall distribution of transition (Tn) and transversion (Tv) mutations at C:G pairs. (B) IMD plots of AID*/APOBEC-expressing ung1Δ yeast transformants, depicted as in Figure 2A. Density plots compare the distributions of IMDs in AID* transformants of ung1Δ and wild type yeast. (C) All mutation clusters identified in AID*/APOBEC3A-transformants of ung1Δ yeast depicted as in Figure 1E. (D) Kataegis localised to a double strand break. Mutations in the vicinity of the CAN1 locus of (I-SceI+APOBEC3G*) transformants of either control cells or of a KanMX-ISceIRS derivative carrying a CAN1-proximal I-SceI recognition sequence. The I-SceI cut site is marked with an arrow. All CAN1 mutations in control cells and 33/36 CAN1 region mutations in KanMX-ISceIRS cells occur at the canonical APOBEC3G CC context. Two-thirds of the CAN1 region mutations in the KanMX-ISceIRS cells were transversions.DOI: http://dx.doi.org/10.7554/eLife.00534.005
+**Figure 2.:** (A) IMD plots of AID*/APOBEC transformants reveal preferential association of nucleotide transversions with kataegic clusters. Mutation datasets and presentation are as in Figure 1B but with transition mutations represented by yellow dots and transversions by blue dots. Density plots depict the overall distribution of transition (Tn) and transversion (Tv) mutations at C:G pairs. (B) IMD plots of AID*/APOBEC-expressing ung1Δ yeast transformants, depicted as in Figure 2A. Density plots compare the distributions of IMDs in AID* transformants of ung1Δ and wild type yeast. (C) All mutation clusters identified in AID*/APOBEC3A-transformants of ung1Δ yeast depicted as in Figure 1E. (D) Kataegis localised to a double strand break. Mutations in the vicinity of the CAN1 locus of (I-SceI+APOBEC3G*) transformants of either control cells or of a KanMX-ISceIRS derivative carrying a CAN1-proximal I-SceI recognition sequence. The I-SceI cut site is marked with an arrow. All CAN1 mutations in control cells and 33/36 CAN1 region mutations in KanMX-ISceIRS cells occur at the canonical APOBEC3G CC context. Two-thirds of the CAN1 region mutations in the KanMX-ISceIRS cells were transversions.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/00534/elife-00534-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** RS).CanR mutation frequency of yeast cells carrying an I-SceIRS 420 bp downstream of the CAN1 polyadenylation site (KanMX-ISceIRS cells) which have been induced for APOBEC3G* and/or I-SceI expression. * indicated p<0.05.DOI: http://dx.doi.org/10.7554/eLife.00534.006
+**Figure 2—figure supplement 1.:** CanR mutation frequency of yeast cells carrying an I-SceIRS 420 bp downstream of the CAN1 polyadenylation site (KanMX-ISceIRS cells) which have been induced for APOBEC3G* and/or I-SceI expression. * indicated p<0.05.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/00534/elife-00534-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** R (I-SceI+APOBEC3G*) transformants of control or KanMX-ISceIRS cells IMD plots coloured as in Figure 1B.DOI: http://dx.doi.org/10.7554/eLife.00534.007
+**Table 1.**
+ Pattern of nucleotide substitutions at C:G pairs in AID*/APOBEC yeast transformants. All mutations at C:G pairs were computed as substitutions at C
 
-## Transversion mutations are dependent on UNG and REV1
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th colspan="3">AID*</th>
+      <th rowspan="2">ung1Δ AID*</th>
+      <th rowspan="2">rev1Δ AID*</th>
+      <th rowspan="2">A3A</th>
+      <th rowspan="2">A3B</th>
+      <th rowspan="2">A3G*</th>
+    </tr>
+    <tr>
+      <th>Kataegic</th>
+      <th>Unclustered</th>
+      <th>Total</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>C→T (%)</td>
+      <td>46</td>
+      <td>87</td>
+      <td>76</td>
+      <td>99.3</td>
+      <td>100</td>
+      <td>79</td>
+      <td>81</td>
+      <td>78</td>
+    </tr>
+    <tr>
+      <td>C→G (%)</td>
+      <td>47</td>
+      <td>11</td>
+      <td>21</td>
+      <td>0.2</td>
+      <td>0</td>
+      <td>17</td>
+      <td>16</td>
+      <td>20</td>
+    </tr>
+    <tr>
+      <td>C→A (%)</td>
+      <td>7</td>
+      <td>2</td>
+      <td>3</td>
+      <td>0.5</td>
+      <td>0</td>
+      <td>4</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>274</td>
+      <td>790</td>
+      <td>1064</td>
+      <td>2088</td>
+      <td>77</td>
+      <td>130</td>
+      <td>121</td>
+      <td>560</td>
+    </tr>
+  </tbody>
+</table>
+
+### Transversion mutations are dependent on UNG and REV1
 
 Whereas C→T transitions will likely arise through direct replication over uracils generated by cytidine deamination, transversions are presumably due to replication over abasic sites created through uracil excision by uracil-DNA glycosylase (UNG). The transversions exhibit a strong (4- to 10-fold) bias for C→G rather than C→A substitutions (Table 1) suggesting that the replication over the abasic site could be catalysed by REV1 since this translesion polymerase (by virtue of its deoxycytidyl nucleotide transferase activity) inserts C opposite abasic sites (Nelson et al., 1996). Indeed, deficiency in either REV1 or UNG led to a dramatic fall in the proportion of transversion mutations (Table 1). Deficiency in UNG also resulted in a fourfold increase in the average total mutation load in AID* transformants (Supplementary file 1B). This presumably reflects diminished repair of the AID/APOBEC-generated uracils. There was an overall decrease in average total mutation load in AID* transformants of REV1 deficient yeast that might reflect the possible non-catalytic roles of REV1 during DNA damage repair (Sale et al., 2012).
 
-## UNG-Deficiency diminishes kataegis in yeast
+### UNG-Deficiency diminishes kataegis in yeast
 
 Since UNG is required for the transversion mutations that are enriched in kataegic stretches, we asked whether UNG itself is required for kataegis. We found that the increased mutation load in AID* ung1Δ transformants was accompanied by a dramatic shift away from mutational clustering (Figure 2B). Despite the fourfold ‘increase’ in mutation load, the percentage of mutations that are <8.5 kb from their neighbour (proximal mutations) actually ‘falls’ from accounting for 48% of the AID* mutations in wild type cells to 18% in ung1Δ transformants. Similarly, using the same criterion to distinguish clustered mutations in both datasets (≥5 linked mutations separated from their neighbour by <8.5 kb), 274 of the 1064 mutations observed in AID* wild type transformants are found within clusters compared to 28 of the 2088 mutations in the AID* ung1Δ transformants (Supplementary file 1B). Thus, the median overall IMD actually ‘increases’ from 13 kb in AID* wild type transformants to 41 kb in the ung1Δ cells despite the increase in mutation load.
 
 These shifts do not simply reflect a fall in the proportion of clustered mutations due to the increased total mutation load. There is also an absolute fall in the amount of kataegis as judged by either the average number of clustered mutations per yeast transformant (6.9 in the wild type background vs 1.5 in the ung1Δ transformants) or by the frequency of kataegic events (26 kataegic stretches in 40 AID* transformants in the wild type background vs 4 kataegic stretches in 19 AID* transformants in ung1Δ background) (Supplementary file 1B). Thus, it is evident that kataegis is substantially reduced in the UNG-deficient background, but not completely lost: a few residual clusters (which exhibit evident strand polarity or bipolarity) are still detected (Figure 2C).
 
-## DNA break induction stimulates APOBEC-dependent yeast kataegis
+### DNA break induction stimulates APOBEC-dependent yeast kataegis
 
 The sensitivity of kataegis to UNG-deficiency indicates that kataegis is, at least in part, triggered through the generation of abasic sites. Cleavage at abasic sites by apyrimidinic endonucleases will lead to occasional double-stranded DNA breaks: kataegis could result from AID/APOBEC deamination of single-stranded DNA exposed during the resection phase of break repair. To determine whether the DNA break repair process predispose to kataegis, we introduced a target site for the restriction endonuclease I-SceI immediately downstream of the polyadenylation site of the CAN1 locus, and asked whether co-expression of I-SceI together with the APOBEC3G* deaminase increased the likelihood of kataegis in the vicinity. We chose to use APOBEC3G* for this experiment since it gave a good mutation load but a lower proportion of kataegic mutations than AID* (Supplementary file 1B): any enhancement of kataegis would therefore be more readily detectable. Consistent with previous findings (Poltoratsky et al., 2010), induction of I-SceI expression resulted in an increased frequency of deaminase-dependent selectable mutation at the linked CAN1 locus (Figure 2—figure supplement 1). More importantly, in the presence of APOBEC3G*, induction of a double-strand break increases the probability that mutations in its vicinity are kataegic (Figure 2D).
 
-## Comparison of yeast and breast cancer kataegis
+### Comparison of yeast and breast cancer kataegis
 
-The mutation clusters in the breast cancers were analysed in the same way as the yeast clusters. Most of the cancers identifiable by rainfall plots as harbouring major regions of kataegis also contain clusters comprising smaller numbers of same-strand nucleotide substitutions at 5′-
+The mutation clusters in the breast cancers were analysed in the same way as the yeast clusters. Most of the cancers identifiable by rainfall plots as harbouring major regions of kataegis also contain clusters comprising smaller numbers of same-strand nucleotide substitutions at 5′-T-C dinucleotides (Figure 3—figure supplements 2–4). There is some diversity amongst the breast cancers with respect to the frequency/nature of the kataegic stretches. The main outlier is tumour PD4107a which carries a dense array of highly mutated (and transition-restricted) kataegic clusters coincident with extensive genomic rearrangement in a 14 Mb region of chromosome 6 (Nik-Zainal et al., 2012). Overall, the kataegic clusters in the breast cancers are distributed over a similar range of lengths to those detected in the yeast transformants (Figure 3A) but the yeast clusters do typically contain a twofold to fivefold lower density of mutations (a mean inter-mutational distance of 1220 bp within the AID* yeast kataegic stretches compared to 209 bp in PD4107a, 335 bp in PD4103a and 763 bp in PD4199a).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/00534/elife-00534-fig3-v1.jpg)
 
-**Figure 3.:** (A) Comparison of the length, number of mutations and polarity of yeast kataegic clusters with those in breast cancers. The degree of strand polarity is indicated by colour intensity. The breast cancer data (Nik-Zainal et al., 2012) are a compilation from three tumours (PD4103a, PD4107a, PD4199a) chosen for their large number of clusters. (B) Context of the genome wide mutated C bases in yeast AID/APOBEC transformants with total numbers of mutations in each dataset indicated. (C) Context of the kataegic and singlet mutated C bases in selected breast cancers. Analyses of all sequenced breast cancers are presented in Figure 3—figure supplements 2–4. (D) Similarity of sequence contexts of C mutations in breast cancer kataegic stretches compared to those of deaminase-induced C mutations in yeast. (D1) Identity of the base at the −2 position of TC mutations in cancer kataegic regions and in APOBEC3A/B yeast transformants. The base compositions were normalised to the genomic base composition of the −2 base at TC dinucleotides. (D2) Sequence contexts similarity p-value at positions (−1 plus −2) to the mutated Cs. The contexts of all Cs throughout the yeast and human genomes are included for comparison. Mutation context of wild type versions of AID and APOBEC3G are shown in Figure 3—figure supplement 1. Analysis of additional yeast transformants and breast cancers is shown in Figure 3—figure supplements 2–4.DOI: http://dx.doi.org/10.7554/eLife.00534.009
+**Figure 3.:** (A) Comparison of the length, number of mutations and polarity of yeast kataegic clusters with those in breast cancers. The degree of strand polarity is indicated by colour intensity. The breast cancer data (Nik-Zainal et al., 2012) are a compilation from three tumours (PD4103a, PD4107a, PD4199a) chosen for their large number of clusters. (B) Context of the genome wide mutated C bases in yeast AID/APOBEC transformants with total numbers of mutations in each dataset indicated. (C) Context of the kataegic and singlet mutated C bases in selected breast cancers. Analyses of all sequenced breast cancers are presented in Figure 3—figure supplements 2–4. (D) Similarity of sequence contexts of C mutations in breast cancer kataegic stretches compared to those of deaminase-induced C mutations in yeast. (D1) Identity of the base at the −2 position of TC mutations in cancer kataegic regions and in APOBEC3A/B yeast transformants. The base compositions were normalised to the genomic base composition of the −2 base at TC dinucleotides. (D2) Sequence contexts similarity p-value at positions (−1 plus −2) to the mutated Cs. The contexts of all Cs throughout the yeast and human genomes are included for comparison. Mutation context of wild type versions of AID and APOBEC3G are shown in Figure 3—figure supplement 1. Analysis of additional yeast transformants and breast cancers is shown in Figure 3—figure supplements 2–4.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/00534/elife-00534-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** Mutation context of CanR transformants expressing APOBEC3G and AID.DOI: http://dx.doi.org/10.7554/eLife.00534.010
+**Figure 3—figure supplement 1.:** Mutation context of CanR transformants expressing APOBEC3G and AID.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/00534/elife-00534-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** Analysis of tumours PD3851a to PD4086a. For each tumour, somatic mutations are displayed as intermutational distance (IMD) plots (top left), as described in Figure 1B. Dots are coloured according to kataegic mutations (black) or singlet mutations (red). The sequence context of C mutations in unclustered and kataegic locations are shown (lower plots), with the number of mutations indicated, coloured as in Figure 3B. The length and number of mutations within each cluster is displayed (top right), with the dot colour intensity indicating polarity. Data are taken from Nik-Zainal et al. (2012).DOI: http://dx.doi.org/10.7554/eLife.00534.011
+**Figure 3—figure supplement 2.:** Analysis of tumours PD3851a to PD4086a. For each tumour, somatic mutations are displayed as intermutational distance (IMD) plots (top left), as described in Figure 1B. Dots are coloured according to kataegic mutations (black) or singlet mutations (red). The sequence context of C mutations in unclustered and kataegic locations are shown (lower plots), with the number of mutations indicated, coloured as in Figure 3B. The length and number of mutations within each cluster is displayed (top right), with the dot colour intensity indicating polarity. Data are taken from Nik-Zainal et al. (2012).
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/00534/elife-00534-fig3-figsupp3-v1.jpg)
 
-**Figure 3—figure supplement 3.:** Analysis of tumours PD4088a to PD4194a. For each tumour, somatic mutations are displayed as intermutational distance (IMD) plots (top left), as described in Figure 1B. Dots are coloured according to kataegic mutations (black) or singlet mutations (red). The sequence context of C mutations in unclustered and kataegic locations are shown (lower plots), with the number of mutations indicated, coloured as in Figure 3B. The length and number of mutations within each cluster is displayed (top right), with the dot colour intensity indicating polarity. Data are taken from Nik-Zainal et al. (2012).DOI: http://dx.doi.org/10.7554/eLife.00534.012
+**Figure 3—figure supplement 3.:** Analysis of tumours PD4088a to PD4194a. For each tumour, somatic mutations are displayed as intermutational distance (IMD) plots (top left), as described in Figure 1B. Dots are coloured according to kataegic mutations (black) or singlet mutations (red). The sequence context of C mutations in unclustered and kataegic locations are shown (lower plots), with the number of mutations indicated, coloured as in Figure 3B. The length and number of mutations within each cluster is displayed (top right), with the dot colour intensity indicating polarity. Data are taken from Nik-Zainal et al. (2012).
 
 ![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/00534/elife-00534-fig3-figsupp4-v1.jpg)
 
-**Figure 3—figure supplement 4.:** Analysis of tumours PD4198a to PD4248a. For each tumour, somatic mutations are displayed as intermutational distance (IMD) plots (top left), as described in Figure 1B. Dots are coloured according to kataegic mutations (black) or singlet mutations (red). The sequence context of C mutations in unclustered and kataegic locations are shown (lower plots), with the number of mutations indicated, coloured as in Figure 3B. The length and number of mutations within each cluster is displayed (top right), with the dot colour intensity indicating polarity. Data are taken from Nik-Zainal et al. (2012).DOI: http://dx.doi.org/10.7554/eLife.00534.013
+**Figure 3—figure supplement 4.:** Analysis of tumours PD4198a to PD4248a. For each tumour, somatic mutations are displayed as intermutational distance (IMD) plots (top left), as described in Figure 1B. Dots are coloured according to kataegic mutations (black) or singlet mutations (red). The sequence context of C mutations in unclustered and kataegic locations are shown (lower plots), with the number of mutations indicated, coloured as in Figure 3B. The length and number of mutations within each cluster is displayed (top right), with the dot colour intensity indicating polarity. Data are taken from Nik-Zainal et al. (2012).
 
-## APOBEC3A and APOBEC3B deamination context preferences in yeast are similar to that in several breast cancers kataegic regions
+### APOBEC3A and APOBEC3B deamination context preferences in yeast are similar to that in several breast cancers kataegic regions
 
 The vast majority of the breast cancer kataegic mutations occur at C residues preceded by a T (Figure 3—figure supplements 2–4). In tumours PD4103a, PD4107a and PD4199a, over 91% of the kataegic C mutations are preceded by a T (Figure 3C and Figure 3—figure supplement 2–4). However, any sensitivity to the identity of the base at position −2 is exceedingly mild (average across the kataegic stretches in these three tumours is A:C:G:T = 32:20:19:29 compared to the human genome average of 30:20:20:30) (Figure 3C).
 
@@ -113,13 +180,13 @@ The mutation spectra obtained in yeast allow the consensus motifs for individual
 
 Comparing the contexts of the mutations obtained with the individual deaminases in yeast to those of the kataegic mutations in the cancers reveals that APOBEC3B has a signature that fits extremely well with the kataegis in PD4107a and PD4103a whereas APOBEC3A fits better with PD4199a (p values in all three cases <0.005) (Figure 3D). Interestingly, a marked bias towards a 5′-T is also seen amongst the individual singlet C mutations in several of the breast tumours (e.g., PD4199a, PD4005a and PD4120a; Figure 3C and Figure 3—figure supplement 2–4).
 
-## APOBEC3B is highly expressed in breast cancer cell-lines and, like APOBEC3A, can cause genomic damage in mammalian cells
+### APOBEC3B is highly expressed in breast cancer cell-lines and, like APOBEC3A, can cause genomic damage in mammalian cells
 
-Although APOBEC3A has been shown to be capable of causing genomic damage in mammalian cells (
+Although APOBEC3A has been shown to be capable of causing genomic damage in mammalian cells (Vartanian et al., 2008; Stenglein et al., 2010; Landry et al., 2011), the same has not been shown for APOBEC3B. We find that induction of APOBEC3B expression in stably transfected human KBM7 cells (like that of APOBEC3A) results in loss of viability as well as in genomic DNA damage as judged by the induction of γH2AX (a marker of the DNA damage response) and of 53BP1 foci (which identify DNA breaks) (Figure 4A,B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/00534/elife-00534-fig4-v1.jpg)
 
-**Figure 4.:** (A) Effect of enforced APOBEC expression on cell viability. (A1) Stable transfectants of KBM7 cells that inducibly express APOBEC proteins were incubated with inducer (doxycyclin) and viability was monitored after 72 hr. (A2) Expression of FLAG-tagged APOBECs after 24 hr doxycyclin treatment. (B) Enforced expression of APOBEC3A and APOBEC3B leads to induction of histone γH2AX and of 53BP1 foci. The percentage of cells (B1) positive for histone γH2AX expression quantified by flow cytometry and (B2) exhibiting punctate rather than diffuse 53BP1 staining quantified by immunofluorescence microscopy, with the foci number per cell indicated. (C) Expression of APOBEC family members in six human breast cancer cell-lines as well as in HEK293 cells was analysed by qRT-PCR of total cellular RNA. Expression is shown relative to the average of housekeeping genes HPRT and HMBS. The effect of phorbol ester (PMA) and interferon alpha (INFα) treatment on APOBEC3A and APOBEC3B levels is also shown. In all cases, * indicates p<0.1, ** indicates p<0.0001 compared to control (unpaired t-test).DOI: http://dx.doi.org/10.7554/eLife.00534.014
+**Figure 4.:** (A) Effect of enforced APOBEC expression on cell viability. (A1) Stable transfectants of KBM7 cells that inducibly express APOBEC proteins were incubated with inducer (doxycyclin) and viability was monitored after 72 hr. (A2) Expression of FLAG-tagged APOBECs after 24 hr doxycyclin treatment. (B) Enforced expression of APOBEC3A and APOBEC3B leads to induction of histone γH2AX and of 53BP1 foci. The percentage of cells (B1) positive for histone γH2AX expression quantified by flow cytometry and (B2) exhibiting punctate rather than diffuse 53BP1 staining quantified by immunofluorescence microscopy, with the foci number per cell indicated. (C) Expression of APOBEC family members in six human breast cancer cell-lines as well as in HEK293 cells was analysed by qRT-PCR of total cellular RNA. Expression is shown relative to the average of housekeeping genes HPRT and HMBS. The effect of phorbol ester (PMA) and interferon alpha (INFα) treatment on APOBEC3A and APOBEC3B levels is also shown. In all cases, * indicates p<0.1, ** indicates p<0.0001 compared to control (unpaired t-test).
 
 Although kataegis could easily have resulted from a transient spike in deaminase expression during tumour development, it was interesting to ascertain whether APOBEC3A or APOBEC3B expression could be detected or induced in breast cancer-derived cells. RNA analysis revealed that although several APOBEC3s can be expressed in individual breast cancer cell-lines, the highest and broadest pattern of expression was evident with APOBEC3B (Figure 4C). Consistent with studies in other cell-types (Madsen et al., 1999; Koning et al., 2009; Stenglein et al., 2010), the expression of APOBEC3A and APOBEC3B in some of the breast cancer cell-lines could be enhanced by treatment with phorbol ester or interferon alpha.
 
@@ -147,7 +214,7 @@ Thus, APOBEC3B and/or APOBEC3A are the deaminases likely responsible for the bre
 
 ## Materials and methods
 
-## Yeast transformants
+### Yeast transformants
 
 Yeast strain BY4741 (MATa; his3Δ1; leu2Δ0; met15Δ0; ura3Δ0) and the ung1Δ::kanMX4 derivative were from Euroscarf (Frankfurt, Germany). The rev1Δ::LEU2 derivative was generated by homologous recombination to remove the open reading frame of REV1 using a LEU2 cassette generated by PCR using 157-bp 5′ homology arm and 200-bp 3′ homology arm. The CAN1::KanMX-ISceIRS strain was generated by inserting a 1.4-kb module containing the I-SceI-recognition site and the KanMX selection cassette (Wach et al., 1994) immediately after its poly-A site by homologous recombination. Correct integration of the targeting constructs was confirmed by PCR.
 
@@ -157,28 +224,28 @@ For canavanine resistance assays, single yeast colonies (at least 12 independent
 
 For genome sequence determination, individual CanR colonies selected as above were subcloned by streaking out on selective plates, grown for 3 days in canavanine selection media (10 ml) and DNA prepared using Gentra Puregene Yeast/Bact. Kit (Qiagen Ltd, Manchester, UK) following manufacturers instructions.
 
-## Sample preparation and massively parallel DNA sequencing
+### Sample preparation and massively parallel DNA sequencing
 
 Short insert 500-bp library construction, flowcell preparation and cluster generation was in accordance with the Illumina no-PCR library protocol (Kozarewa et al., 2009). 100-bp paired-end sequencing was performed on Illumina Hiseq 2000 analysers as described in the Illumina Genome Analyzer operating manual. Short insert 2 × 100 bp paired-end reads were aligned to the reference yeast genome (SacCer_Apr2011/sacCer3) using BWA (Li and Durbin, 2009). An average of approximately 25-fold sequence coverage was achieved for each yeast genome.
 
-## Mutation calling
+### Mutation calling
 
 A bespoke substitution-calling algorithm, CaVEMan (manuscript in preparation) was used for calling somatic substitutions where these were identified as alleles present in an AID/APOBEC-transformant genome but absent in the parental BY4741 genome. All high-confidence mutations included in this analysis were present in more than 0.5 variant allele fractions but were more frequently present in all reads reporting that genomic position. Post-processing filters were developed to improve the specificity of substitution calling. These filters removed false positive variants that were generated by genomic features resulting in mapping errors or systematic sequencing artefacts. All substitutions were visually assessed using a genome browser in order to ensure a high specificity of mutation-calling.
 
-## Cluster calling
+### Cluster calling
 
 K-cluster analysis (Hartigan and Wong, 1979) was used to divide intermutational distances (IMDs) into two groups, which we designated distal and proximal. An IMD which excluded 99% of the distal group was then used as a threshold for cluster calling. For all the yeast analysis, the IMD threshold was set using the combined dataset of mutations from the wild type transformants. For the breast cancer analysis, IMDs combined from all tumours were used for threshold setting (except PD4120 because of its much higher mutation load). A cluster was called when a minimum of 5 adjacent mutations were identified each with IMDs below the threshold. This 5 mutation threshold was chosen since such clusters are likely to arise with a probability of <0.001 by randomly scattered mutations.
 
-## Sequence context similarity
+### Sequence context similarity
 
 Sequence contexts were compared in pairwise fashion with the Tomtom motif comparison tool using Sandelin-Wasserman similarity (MEME Suite; http://tools.genouest.org/tools/meme/cgi-bin/tomtom.cgi) and are displayed as p-values.
 
-## Analysis of APOBEC-expressing mammalian transfectants
+### Analysis of APOBEC-expressing mammalian transfectants
 
 APOBEC expressing vectors were generated by cloning the appropriate C-terminally FLAG-tagged cDNAs into a self-inactivating retroviral plasmid. The self-inactivating retroviral plasmid was generated by cloning a pTRE-(pTRE-TIGHT; Clontech, Saint-Germain-en-Laye, France)-IRES-GFP (pMX-IG) cassette into the BglII- and 3′LTR XbaI site of pMSCVpuro. The tetracycline transactivator (TET-ON; Clontech) was cloned into a modified pMSCVpuro (Clontech) which contained an IRES-mCherry cassette at the BglII–ClaI site, to generate pTET-ON-ImC. A derivative of the KBM7 human myelocytic leukemia line that stably expressed TET-ON protein was established by retroviral infection with virus particles produced from 293 cells that had been co-transformed with pTET-ON-ImC and packaging vectors using GeneJuice (Merck KGaA, Darmstadt, Germany) according to manufacturers instructions. This KBM7[pTET-ON-ImC] cell-line was then superinfected with pMSCV/APOBEC retrovirus to yield derivatives expressing the AID/APOBEC proteins under doxycyclin-inducible control. Expression of the FLAG-tagged AID/APOBEC proteins in the KBM7 transfectants was monitored by Western blot analysis of whole cell lysates after 24 hr of doxycyclin induction using HRP-conjugated anti-FLAG antibody M2 (A8592; Sigma, Gillingham, UK), probing with anti-lamin antibody (ab16048; Abcam, Cambridge, UK) as a loading control.
 
 Stable derivatives of KBM7 cells harbouring regulatable APOBEC proteins were induced for 72 hr with doxycyclin (inducer) and viability measured by flow cytometry by DAPI exclusion. γH2AX and 53BP1 induction and localisation was analysed by flow cytometry and confocal immunofluorescence after 24hr induction with doxycyclin; caspase inhibitor (20 μM Z-VAD-FMK; Promega, Southampton, UK) was included in the cultures for γH2AX expression analysis to maintain cell viability. For γH2AX staining, ethanol-fixed cells were stained sequentially for 1 hr with anti-γH2AX (05-636; Millipore, Watford, UK) and Alexa568-conjugated anti-mouse IgG (A-11004; Invitrogen Life Technologies Ltd, Paisley, UK) prior to resuspension in PBS containing 5 μg/ml DAPI and flow cytometry. For 53BP1 staining, cells were allowed to adhere to poly-L-lysine-coated cover slips and stained using anti-53BP1 (NB100-304; Novus Biologicals, Cambridge, UK) and Alexa 568-conjugated anti-rabbit IgG (A-11011; Invitrogen) prior to mounting with DAPI. 20-30 fields per sample were imaged with a Bio-Rad Radiance 2100 confocal microscope using a 63x oil immersion objective. Images were processed using ImageJ (default settings), and cells were scored as exhibiting either diffuse or punctate staining with punctate cells further scored for the number of foci.
 
-## RNA analysis of breast cancer cell lines
+### RNA analysis of breast cancer cell lines
 
 Breast cancer cell lines were kindly provided by Dr Kerstin Meyer (Cancer Research Institute, Cambridge, United Kingdom) and RNA extracted using RNeasy Plus Mini Kit (Qiagen). cDNA was prepared using GoScript Reverse Transcription System (Promega) prior to APOBEC expression quantification by qPCR using QuantiFast SYBR Green PCR Kit using an ABI ViiA-7 system (Applied Biosystems, Paisley, UK). The primers (which were selected for specificity and equivalent amplification on APOBEC ORF templates) are given in Supplementary file 1C.

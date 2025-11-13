@@ -7,16 +7,16 @@
 
 ### Affiliations
 
-1. https://ror.org/03av75f26 Auditory Neuroscience and Synaptic Nanophysiology Group, Max Planck Institute for Multidisciplinary Sciences Göttingen Germany
-2. https://ror.org/021ft0n22 Institute for Auditory Neuroscience, University Medical Center Göttingen Göttingen Germany
-3. https://ror.org/01y9bpm73 Collaborative Research Center, University of Göttingen Göttingen Germany
+1. Auditory Neuroscience and Synaptic Nanophysiology Group, Max Planck Institute for Multidisciplinary Sciences Göttingen Germany ([ROR:03av75f26](https://ror.org/03av75f26))
+2. Institute for Auditory Neuroscience, University Medical Center Göttingen Göttingen Germany ([ROR:021ft0n22](https://ror.org/021ft0n22))
+3. Collaborative Research Center, University of Göttingen Göttingen Germany ([ROR:01y9bpm73](https://ror.org/01y9bpm73))
 4. Cluster of Excellence 'Multiscale Bioimaging of Excitable Cells' Göttingen Germany
 
 † Corresponding author
 
 ## Abstract
 
-Neural diversity can expand the encoding capacity of a circuitry. A striking example of diverse structure and function is presented by the afferent synapses between inner hair cells (IHCs) and spiral ganglion neurons (SGNs) in the cochlea. Presynaptic active zones at the pillar IHC side activate at lower IHC potentials than those of the modiolar side that have more presynaptic Ca 2+ channels. The postsynaptic SGNs differ in their spontaneous firing rates, sound thresholds, and operating ranges. While a causal relationship between synaptic heterogeneity and neural response diversity seems likely, experimental evidence linking synaptic and SGN physiology has remained difficult to obtain. Here, we aimed at bridging this gap by ex vivo paired recordings of murine IHCs and postsynaptic SGN boutons with stimuli and conditions aimed to mimic those of in vivo SGN characterization. Synapses with high spontaneous rate of release ( SR ) were found predominantly on the pillar side of the IHC. These high SR synapses had larger and more temporally compact spontaneous EPSCs, lower voltage thresholds, tighter coupling of Ca 2+ channels and vesicular release sites, shorter response latencies, and higher initial release rates. This study indicates that synaptic heterogeneity in IHCs directly contributes to the diversity of spontaneous and sound-evoked firing of SGNs.
+Neural diversity can expand the encoding capacity of a circuitry. A striking example of diverse structure and function is presented by the afferent synapses between inner hair cells (IHCs) and spiral ganglion neurons (SGNs) in the cochlea. Presynaptic active zones at the pillar IHC side activate at lower IHC potentials than those of the modiolar side that have more presynaptic Ca2+ channels. The postsynaptic SGNs differ in their spontaneous firing rates, sound thresholds, and operating ranges. While a causal relationship between synaptic heterogeneity and neural response diversity seems likely, experimental evidence linking synaptic and SGN physiology has remained difficult to obtain. Here, we aimed at bridging this gap by ex vivo paired recordings of murine IHCs and postsynaptic SGN boutons with stimuli and conditions aimed to mimic those of in vivo SGN characterization. Synapses with high spontaneous rate of release (SR) were found predominantly on the pillar side of the IHC. These high SR synapses had larger and more temporally compact spontaneous EPSCs, lower voltage thresholds, tighter coupling of Ca2+ channels and vesicular release sites, shorter response latencies, and higher initial release rates. This study indicates that synaptic heterogeneity in IHCs directly contributes to the diversity of spontaneous and sound-evoked firing of SGNs.
 
 ## Introduction
 
@@ -32,25 +32,61 @@ Here, we aimed to bridge the gap between ex vivo presynaptic physiology and in v
 
 Simultaneous paired patch-clamp recordings from IHCs and one of the postsynaptic SGN boutons were performed on mice after the onset of hearing (postnatal days [p] 14–20). We performed perforated-patch whole-cell configuration from IHCs, held at their presumed physiological resting potential (–58 mV; Johnson, 2015), and ruptured-patch whole-cell recordings from one of the postsynaptic SGN boutons (Figure 1). Due to the technical difficulty of establishing the paired recording, typically only one bouton was recorded per IHC. Recordings were made at body temperature and in artificial perilymph-like solution (Wangemann and Schacht, 1996). To establish the paired recording, we approached boutons facing either the pillar or the modiolar side of the IHC in an effort to elucidate synaptic differences between both sides (Figure 1A). We nickname the synapse location as ‘pillar’ and ‘modiolar’ based on the DIC image, but note that efforts to stain and image the recorded boutons by fluorescence microscopy were not routinely successful. In addition, the recorded boutons were classified based on their spontaneous rate of synaptic transmission (Figure 1B, Figure 2, and related figure supplements; SR, Low SR<1 sEPSC/s vs High SR≥1 sEPSC/s according to Taberner and Liberman, 2005). We then performed an in-depth biophysical analysis of evoked release (Figure 1C, Figure 3, Figure 4, and related figure supplements).
 
-## Spontaneous synaptic transmission
+![Figure 1.](https://cdn.elifesciences.org/articles/93749/elife-93749-fig1-v1.jpg)
+
+**Figure 1.:** (A) Differential interference contrast (DIC) image of an explanted murine organ of Corti. In this example, supporting cells from the pillar side were removed to gain access to the IHCs and their contacting boutons. The recorded boutons were classified based on their position (△ pillar or ❍ modiolar) and on their spontaneous rate (SR) (Low SR<1 sEPSC/s vs High SR>1 sEPSC/s). Scale bar: 10 µm. (B) Spontaneous release was recorded in absence of stimulation (i.e. IHC holding potential = –58 mV; Supplementary file 1; dashed line represents the threshold for sEPSC detection). sEPSCs were classified as monophasic (a steady rise to peak and monoexponential decay, temporally more compact) or as multiphasic (multiple inflections and slowed raising and decaying kinetics, non-compact). (C) Evoked release: depolarizing pulses (black trace) were used to trigger whole IHC Ca2+ influx (ICa, blue trace) and ensuing release of neurotransmitter that evoked EPSCs (eEPSCs, light orange trace). Ca2+ charge and eEPSC charge were estimated by taking the integral of the currents (shaded light blue and light orange areas).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93749/elife-93749-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–E) Values for IHC’s series resistance (Rs, A) and membrane capacitance (Cm, B), and bouton’s Rs (C), Cm (D) and membrane resistance (Rm, E) were comparable between paired recordings with low and high SR. (F) Average sEPSC amplitudes and maximal evoked EPSCs (eEPSC) amplitudes plotted against bouton Rs. (G) Cumulative fraction of amplitude of sEPSCs and of eEPSCs recorded from the 13 synapses included in Figure 4. The eEPSCs correspond to voltage-evoked EPSCs occurring in the last 20 ms of the Masker stimulus. The two distributions differ significantly (p<0.0001, Kolmogorov-Smirnov test). Average sEPSC amplitude of –97.28±2.22 pA (median 82.10 pA) vs average eEPSC amplitude of –135.8±3.24 pA (median 120.0 pA). Panels A–E show individual data points with the median and interquartile range overlaid (line). Synapses were classified as △ pillar or ❍ modiolar, and as Low SR<1 sEPSC/s≤High SR.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/93749/elife-93749-fig2-v1.jpg)
+
+**Figure 2.:** (A) sEPSCs recorded in the absence of stimulation (i.e. inner hair cell [IHC] holding potential = –58 mV) from two exemplary paired recordings with different spontaneous rate (SR: gray for low SR, orange for high SR). ‘Pair #’ identifies individual paired recordings. Insets show the selected sEPSCs in an expanded time scale. (a, b) correspond to multiphasic sEPSCs, while (c) represents a typical monophasic sEPSC. (B) Cumulative sEPSC amplitude plots for 23 paired synapses that had spontaneous release. (C–D) Average sEPSC amplitude (C) and charge (D) from individual synapses recorded from the pillar or modiolar side of the IHC. (E–F) Pooled sEPSC amplitude (E) and charge (F) distributions show a distinct peak at –40 pA and 40 pC, respectively. Bin size: 10 pA or pC. (G) Percentage of monophasic sEPSCs in pillar and modiolar synapses. (H) Cumulative fraction (left axis) and normalized histogram (right axis) of the spontaneous rate (bin size is 1 sEPSC/s) of 33 pairs. (I) Pillar synapses had higher rates of sEPSCs. (J–L) High SR synapses had significantly larger sEPSC amplitudes (J), a tendency to bigger sEPSC charges (K) and higher percentages of monophasic sEPSCs (L). Panels G, I–L show individual data points with the median and interquartile range overlaid (line). Synapses were classified as △ pillar or ❍ modiolar, and as Low SR<1 sEPSC/s≤High SR.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93749/elife-93749-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (Ai–Aii) Ruptured-patch whole-cell recordings from postsynaptic spiral ganglion neuron (SGN) boutons (without the inner hair cell [IHC]) displayed spontaneous rates from 0 up to 16.33 sEPSC/s. Pooled sEPSC amplitude (Aii) show a peak at –40 pA, with amplitudes ranging from around –10 to –670 pA. Bin size: 10 pA. (B) Kinetics of sEPSCs, such as amplitude, 10–90% rise time, time constant of decay (τdecay), and full-width half-maximum (FWHM), were calculated with Neuromatic (Rothman and Silver, 2018). (C–E) Pillar synapses had faster 10–90% rise times (C) than modiolar synapses, while their τdecay (D) and FWHM (E) were comparable. (Fi–Fii) Cumulative fraction of amplitude and charge of sEPSCs from low and high SR synapses. (G–I) High SR synapses had faster 10–90% rise times (G) than modiolar synapses, while their τdecay (H) and FWHM (I) were comparable. Panels C–E, G–I show individual data points with the median and interquartile range overlaid (line). Synapses were classified as △ pillar or ❍ modiolar, and as Low SR<1 sEPSC/s≤High SR.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/93749/elife-93749-fig3-v1.jpg)
+
+**Figure 3.:** (A) Voltage-protocol (top left), inner hair cell (IHC) Ca2+ current (ICa, bottom left and top right, blue and gray) and evoked EPSCs (eEPSCs) (bottom right, orange and gray) of a high and a low SR pair, respectively, in response to 10 ms depolarizations (dashed vertical lines on top of eEPSC data indicate the onset and offset of the depolarization) to different potentials ranging from –58 to –19 mV in 5 mV steps. The upper right panel shows the current-voltage relationships for the two pairs. (Bi–Bii) The peak of whole-cell Ca2+ current (Bi) and the voltage eliciting maximum Ca2+ current (Bii) of IHCs were comparable between high and low SR synapses. (C) Upper panel: Fractional activation of the Ca2+ channels (blue and gray data points from the examples shown in A) was obtained from the normalized chord conductance. Voltage of half-maximal activation (Vhalf ICa; dotted line) and voltage sensitivity of activation (slope) were determined using a Boltzmann fit (black trace) to the activation curve. Lower panel: Release-intensity curve (orange and gray data points from the examples shown in A) was obtained from the QEPSC for each depolarization step. A sigmoidal function (black trace) was fitted to obtain the voltage of half-maximal synaptic release (Q50 EPSC; dotted line) and the voltage sensitivity of the release (slope), as well as the dynamic range for which the exocytosis changes from 10% to 90% (gray area). (Di–Dii) Voltage dependence of whole-cell Ca2+ channel activation (activation curve; Di) and fits to release-intensity curves (Dii) for 31 synapses. Averages (thick lines) and individual curves (thin lines) are overlaid. The release-intensity curve of two low SR pairs could not be fitted (gray dotted lines). (Ei–Fi) The threshold of Ca2+ influx (Ei) and Vhalf ICa (Fi) did not differ between low and high SR synapses. (Eii–Fii) Voltage of 10% maximum release (Q10 EPSC, Eii) and Q50 EPSC (Fii) were significantly more hyperpolarized in high SR synapses. (G) Dynamic range of release was comparable between low and high SR synapses. (H) Ca2+ cooperativity (m) estimated from fitting a power function to the QEPSC – QCa relationship for each individual synapse (see Figure 3—figure supplement 2) was significantly lower in high SR synapses. (I) Scatter plot of normalized QEPSC vs the corresponding normalized QCa. The solid lines are a least-squares fit of a power function (QEPSC = a(QCa)m) to the data, yielding mhigh SR of 0.8 and mlow SR of 1.4. Panels B, E–H show individual data points with the median and interquartile range overlaid (line). Synapses were classified as △ pillar or ❍ modiolar, and as Low SR<1 sEPSC/s≤High SR.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/93749/elife-93749-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) The reversal potential (A) and the voltage sensitivity of ICa (B) were comparable between low and high SR synapses.(C) Triggered single active zone evoked EPSCs (eEPSCs) (release intensity curves) of 31 pairs of low and high SR. Averages (thick lines) and individual curves (thin lines) are overlaid. The release-intensity curve of two low SR pairs could not be fitted with the sigmoidal function (gray dotted lines). (D–E) Q90 EPSC (D) and voltage sensitivity of the release (E) were comparable between high and low SR synapses. (Fi–Fii) The peak of Ca2+ current (Fi) and the voltage eliciting maximum Ca2+ current (Fii) were comparable between modiolar and pillar synapses. (Gi–Ji) The threshold of Ca2+ influx (Gi), Vhalf ICa (Hi), reversal potential of ICa (Ii), and voltage sensitivity of ICa (Ji) did not differ between modiolar and pillar synapses. (Gii–Jii) Q10 EPSC (Gii), Q50 EPSC (Hii), Q90 EPSC (Iii) and voltage sensitivity of the release (Jii) were comparable between modiolar and pillar synapses. (K) Dynamic range of release was comparable between modiolar and pillar synapse. (L) Ca2+ cooperativity (m) estimated for each individual synapse was significantly lower in pillar synapses. All panels but C show individual data points with the median and interquartile range overlaid (line). Synapses were classified as △ pillar or ❍ modiolar, and as Low SR<1 sEPSC/s≤High SR.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/93749/elife-93749-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Scatter plots of the EPSC charges (QEPSC) vs the corresponding Ca2+ current integrals (QCa) for each individual synapse in response to 10 ms depolarizations from –58 to –19 mV. The solid line is a least-squares fit of a power function (QEPSC = a(QCa)m) to each pair data. Synapses were classified as △ pillar or ❍ modiolar, and as Low SR<1 sEPSC/s≤High SR.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/93749/elife-93749-fig4-v1.jpg)
+
+**Figure 4.:** (A) ‘Forward masking’ voltage protocol to study depletion and recovery of RRP and data of an exemplary high SR synapse (left panels, blue and orange) and low SR synapse (right panels, gray): Ca2+ currents (second from top, ICa), evoked EPSCs (eEPSCs) (second from bottom), and QEPSC (bottom). The stimulus (top panel) consists of two sequential voltage steps (‘masker’ and ‘probe’) separated by different interstimulus intervals (ISI). Dashed vertical lines on top of eEPSC data indicate the onset and offset of the masker stimulus. (B) Latencies of the eEPSCs (eEPSConset – Maskeronset) were significantly shorter in high SR than low SR synapses. (C) High SR synapses also had less latency jitter. (D) Pool depletion dynamics were studied by fitting the sum of a single exponential and a line function (black discontinuous line) to the first 50 ms of the average QEPSC trace in response to the masker stimulus. (E–I) RRP, time constant (τ) of depletion, initial release rate, and sustained release were calculated from the fits and the mean QsEPSC for each pair. High SR synapses depleted the RRP with faster time constants (F) and reached higher initial release rates (G) followed by a stronger adaptation (I) (J) Recovery from RRP depletion shown as ratio of QEPSC probe and QEPSC masker (mean ± sem) during the first 10 ms of the stimulus. (K) Time constant of recovery from RRP depletion obtained from single exponential fits to the traces shown in J (see Figure 4—figure supplement 1L). Panels B, C, E–I, and K show individual data points with the median and interquartile range overlaid (line). Synapses were classified as △ pillar or ❍ modiolar, and as Low SR<1 sEPSC/s≤High SR.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/93749/elife-93749-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–D) Presynaptic inner hair cell (IHC) peak (A), initial (B), and final (C) Ca2+ current (ICa) and Ca2+ charge (QCa) during the masker stimuli were comparable regardless the SR of postsynaptic bouton. (E) Latencies of the evoked EPSCs were also significantly shorter in high SR than low SR synapses when compared in a bigger sample size (31 pairs from Figure 4). (F–G) High SR synapses had significantly larger amplitudes of evoked EPSCs in response to the masker stimulus (F), while the EPSC charge (QEPSC) did not differ (G). (H) Exemplary average QEPSC response of a high SR and a low SR synapse to the masker stimuli. We fitted an exponential plus line function to the first 50 ms of the response (discontinuous lines) to study SV pool depletion dynamics. From these fits, we can retrieve information about RRP size (amplitude of the exponential component, A1), RRP depletion time constant (τ of the exponential component), and sustained release (linear slope of the line component). (I–J) Amplitude (I) and linear slope (J) obtained from the fits of the exponential plus line function to the QEPSC from individual pairs (Figure 4E). (K) Latencies of the response to the probe stimuli (eEPSConset – Probeonset) for different ISI. (L) Single exponential fits from 16 to 20,000 ms (black dotted lines) to estimate the recovery kinetics from RRP depletion. (M) The spontaneous release after the probe offset recovered slower in high SR synapses. Panels A–G, I, J, M show individual data points with the median and interquartile range overlaid (line). Synapses were classified as △ pillar or ❍ modiolar, and as Low SR<1 sEPSC/s≤High SR.
+
+### Spontaneous synaptic transmission
 
 In order to recapitulate synaptic transmission in the absence of sound stimulation, we held the IHC at their presumed physiological resting potential (–58 mV; Johnson, 2015). Since CaV1.3 Ca2+ channels activate at low voltages (−65 to –45 mV; Koschak et al., 2001; ; Picher et al., 2017a; Platzer et al., 2000; Xu and Lipscombe, 2001), their open probability at the IHC resting potential is thought to be sufficient to trigger spontaneous release (Glowatzki and Fuchs, 2002; Özçete and Moser, 2021; Robertson and Paki, 2002). Under our experimental conditions, spontaneous, i.e., excitatory postsynaptic currents in the absence of IHC stimulation (sEPSCs) were observed in 23 of 33 pairs (Figure 1B, Figure 2, 20 recordings were targeted to the pillar side and 13 to the modiolar side). We used the rate of sEPSCs (SR) as a surrogate of SGN SR as sEPSCs trigger SGN firing with >90% probability (Rutherford et al., 2012). Regardless of all efforts to maintain the physiological integrity in the ex vivo experiments, we expect our estimated rates of sEPSC to underestimate the SGN SR for the same age group (Wong et al., 2013). For each paired recording, we quantified the SR during 5 or 10 s of a continuous recording, or during the segment before and after the step depolarization protocols (Supplementary file 1). Amplitudes of sEPSCs typically varied from around –10 to –400 pA across all recorded IHC-SGN synapses (Figure 2B). The amplitude histogram for all pairs was slightly skewed toward smaller amplitudes (skewness of 1.06) with a coefficient of variation (CV) of 0.68 (a similar distribution was obtained from 12 bouton-only recordings during which the IHC was not patched [Figure 2—figure supplement 1A]). The charge distribution for all pairs displayed a prominent peak at 40 fC, with a skewness of 2.00 and a CV of 0.77. SR ranged from 0 to about 18 sEPSC/s (Figure 2H; a similar range of 0 to about 16 sEPSC/s was recorded without patch-clamping the IHC). The SR distribution was highly skewed, with a median of 0.2 sEPSC/s. Following the spontaneous firing rate classification of mouse SGNs by Taberner and Liberman, 2005, we classified the synapses into low (<1 sEPSC/s, ~70%) or high (≥1 sEPSC/s, ~30%) SR synapses (see Figure 2A for examples). Next, we analyzed the recordings as a function of (i) synapse position and (ii) rate of spontaneous synaptic transmission.
 
-## Position dependence of synaptic transmission
+#### Position dependence of synaptic transmission
 
 Of the 33 obtained paired recordings, 20 were classified as pillar synapses. The mean amplitude (Figure 2C) and charge (Figure 2D) of the sEPSCs were comparable between modiolar and pillar SGN boutons (AmpsEPSC –69.37±13.91 pA [n=8 modiolar] vs –87.21±9.49 pA [n=15 pillar]; p=0.2913, unpaired t-test; QsEPSC 63.74±7.77 fC [modiolar] vs 72.54±9.57 fC [pillar]; p=0.5463, unpaired t-test). sEPSC of pillar SGN boutons showed significantly shorter 10–90% rise times than the modiolar ones (Figure 2—figure supplement 1B and C; 0.38±0.04 ms vs 0.57±0.06 ms; p=0.0111, unpaired t-test), yet similar decay times and full-width half-maximum (FWHM, Figure 2—figure supplement 1B, D–E; p=0.7997 and p=0.9198, respectively, unpaired t-test). As a second approach to sEPSC properties, we quantified the percentage of monophasic (or temporally more compact) sEPSCs (Chapochnikov et al., 2014; Glowatzki and Fuchs, 2002) and found a non-significant trend toward higher percentages of monophasic sEPSCs for pillar synapses (Figure 2G; 25.57 ± 6.9% for modiolar vs 46.65 ± 7.06% for pillar; p=0.0681, unpaired t-test). Finally, SR was significantly higher for the pillar synapses (Figure 2I, mean SR of 2.30±0.96 sEPSC/s; median 0.59; n=20) compared to modiolar ones (Figure 2I, mean SR of 0.22±0.09 sEPSC/s; median 0.05; n=13; p=0.0311, Mann-Whitney U test).
 
-## Relation of synaptic properties to the rate of spontaneous synaptic transmission
+#### Relation of synaptic properties to the rate of spontaneous synaptic transmission
 
 High SR synapses had significantly larger sEPSCs (Figure 2J, Figure 2—figure supplement 1Fi; average sEPSC amplitude of –105.2±8.47 pA for high SR [n=10] vs –62.39±9.67 pA for low SR [n=13]; p=0.0042, unpaired t-test). sEPSC charge tended to be larger in high SR SGN synapses (Figure 2K, Figure 2—figure supplement 1Fii; QsEPSC 84.23±10.38 fC for high SR vs 58.14±7.79 fC for low SR; p=0.0527, unpaired t-test). The fraction of monophasic sEPSCs was significantly higher in high SR synapses (Figure 2L; 52.08 ± 6.65%; median 43.71%) compared to low SR synapses (29.49 ± 7.43%; median 22.22%; p=0.0185, Mann-Whitney U test). High SR synapses also showed a significantly faster 10–90% rise times (Figure 2—figure supplement 1G; 0.36±0.04 ms) than low SR synapses (0.51±0.05 ms; p=0.0420, unpaired t-test).
 
 Other sEPSCs kinetics, such as decay time constant and FWHM, were not different between low and high SR pairs (Figure 2—figure supplement 1H and I; p=0.7969 and p=0.9948, respectively, unpaired t-test). Taken together, these results indicate that high SR synapses are characterized by sEPSCs with larger amplitudes, faster rising times, and a more compact waveform, while significant differences of pillar and modiolar synapses were limited to sEPSC rise times. Yet, 9 out of 10 synapses with SR≥1 sEPSC were located on the pillar side of the IHC.
 
-## Evoked synaptic transmission differs between afferent synapses with high and low SR
+### Evoked synaptic transmission differs between afferent synapses with high and low SR
 
 Next, we compared the physiology of afferent synapses with high and low SR by adapting stimulation protocols routinely employed for in vivo characterization of sound encoding by SGNs. We used step depolarizations to emulate physiological receptor potentials given that mature IHCs of the ‘high-frequency’ mouse cochlea have graded receptor potentials that primarily represent the rectified envelope of an acoustic stimulus (i.e. the DC component; Russell and Sellick, 1978).
 
-## Stimulus intensity encoding at IHC synapses
+#### Stimulus intensity encoding at IHC synapses
 
 Sound intensity encoding by SGNs primarily relies on a spike rate code: the average discharge rate increases with the strength of the acoustic stimuli from threshold to saturation of the response. These so-called ‘rate level functions’ are typically analyzed by fitting a sigmoidal function, of which the range of sound pressure level between 10% and 90% of the maximal discharge rate represents the operational or dynamic range (Sachs and Abbas, 1974; Taberner and Liberman, 2005; Winter et al., 1990). To understand stimulus intensity coding at mouse IHC synapses, we measured whole-cell IHC Ca2+ currents and the eEPSCs of SGNs in 31 paired recordings. We stimulated the IHC with 10 ms depolarizations to different potentials ranging up to 57 mV in 5 mV steps (IV protocol; Figure 3A). We deemed it incompatible with a reasonable productivity of the technically challenging, low-throughput paired recordings to combine them with imaging of Ca2+ at single AZs. Therefore, this study relies on analysis of the presynaptic Ca2+ influx at the level of the whole IHC (i.e. summing over all synapses and a low density of extrasynaptic Ca2+ channels, Frank et al., 2009; Wong et al., 2014). IHCs with synapses classified as high (n=10) or low SR (n=21) had similar Ca2+ current-voltage (IV) relationships: comparable maximal Ca2+ currents (Figure 3Bi; p=0.6939, Mann-Whitney U test) elicited at similar potentials (Figure 3Bii; p=0.1795, unpaired t-test) and comparable reversal potentials (Figure 3—figure supplement 1A; p=0.4034, unpaired t-test). The fractional activation of Ca2+ channels was determined from the normalized chord conductance of the IHC. Fitting a Boltzmann function to these activation curves (Figure 3C, upper panel), we obtained the voltages of half-maximal activation (Vhalf ICa) and the voltage-sensitivity of activation (slope) of the IHC Ca2+ channels.
 
@@ -60,7 +96,7 @@ The voltage dependence of activation of whole-cell Ca2+ influx was similar betwe
 
 Finally, we studied the apparent Ca2+ dependence of SV release during the aforementioned IV protocol, i.e., in the range of IHC receptor potentials. This protocol varies Ca2+ influx mainly via changing the channel open probability and to a lesser extent by changing the single channel current. We note that a supralinear intrinsic Ca2+ dependence of exocytosis in IHCs (i.e. Ca2+ cooperativity, m~3–4 when changing the single channel current) has been observed for IHCs of the cochlear apex in mice after hearing onset (Brandt et al., 2005; Jaime Tobón and Moser, 2023; Özçete and Moser, 2021; Wong et al., 2014). This is thought to reflect the cooperative binding of ~4 Ca2+ ions required to trigger IHC exocytosis (Beutner et al., 2001). In contrast, a lower Ca2+ cooperativity was observed in these studies when primarily changing the number of open Ca2+ channels (m<2). This difference in m observed for the apparent Ca2+ dependence of exocytosis has been taken to suggest a tight, Ca2+ nanodomain-like control of release sites by one or few Ca2+ channel(s) in line with classical studies of the Ca2+ dependence of transmitter release (Augustine et al., 1991). Here, we related changes of release at individual synapses (ΔQEPSC) to the change of the integrated IHC Ca2+ influx (ΔQCa). We fitted power functions (QEPSC = a(QCa)m) to the relationships for individual synapses (Figure 3—figure supplement 2) and found Ca2+ cooperativities of m<2 for all but 2 synapses. This result suggests a tight, Ca2+ nanodomain-like control of release sites by one or few Ca2+ channel(s). Interestingly, however, high SR synapses, on average, had significantly lower Ca2+ cooperativities than low SR synapses (Figure 3H; mhighSR of 0.8±0.1 [median 0.75; n=10] vs mlowSR of 1.4±0.1 [median 1.37; n=21]; p=0.0016, Mann-Whitney U test). The fit to pooled normalized data of high and low SR synapses yielded the same Ca2+ cooperativities of mhighSR of 0.8 and mlowSR of 1.4 (Figure 3I). When grouped based on their modiolar or pillar location, pillar synapses showed significantly lower Ca2+ cooperativities than modiolar synapses (Figure 3—figure supplement 1L; mpillar of 1.0±0.08 [median 0.88; n=19] vs mmodiolar of 1.6±0.2 [median 1.3; n=12]; p=0.0202, Mann-Whitney U test). Our findings indicate that most afferent IHC synapses of hearing mice employ a tight, Ca2+ nanodomain-like control of release sites by one or few Ca2+ channel(s) for physiological sound encoding. Yet, quantitative differences in coupling seem to exist between high SR/pillar synapses and low SR/modiolar synapses, whereby a control of SV release by ~1 Ca2+ channel prevails at high SR/pillar synapses.
 
-## SV pool dynamics at individual IHC AZs
+#### SV pool dynamics at individual IHC AZs
 
 In 13 of the 31 aforementioned paired recordings (6 classified as low SR and 7 as high SR; 2 belonging to modiolar and 11 to pillar synapses), we employed a forward masking paradigm to study SV pool dynamics of single afferent synapses. The forward masking paradigm (Harris and Dallos, 1979) is commonly used for in vivo analysis of SGN spike rate adaptation and recovery from adaptation, which has been attributed to the depletion of readily releasable pool of SVs (RRP) and the recovery from depletion (Avissar et al., 2013; Frank et al., 2010; Furukawa and Matsuura, 1978; Goutman, 2017; Goutman and Glowatzki, 2007; Li et al., 2009; Moser and Beutner, 2000; Schroeder and Hall, 1974). Typically, the in vivo protocol is applied at saturating sound pressure levels, which we aimed to mimic using strong step IHC depolarizations (to –19 mV from –58 mV) separated by different interstimulus intervals (ISI: 4, 16, 64, and 256 ms) (Figure 4A). In analogy to the in vivo forward masking paradigm, the first stimulus - called masker, as it depresses the response to a subsequent stimulus when applied in rapid succession - had a duration of 100 ms. The second stimulus - denominated probe - lasted for 15 ms. The recordings included a time frame of 400 ms preceding the ‘masker’ and 400 ms following the ‘probe’, and the interval between masker and masker was 20 s. Applied to recordings of eEPSCs, the forward masking protocol provides experimental access to the initial RRP release rates, kinetics, and extent of RRP depletion, sustained exocytosis, as well as recovery from RRP depletion. To accommodate the stochasticity of SV release from the RRP of IHC AZs, we run each protocol several times (≥3 to ≤20), which is routinely done for in vivo SGN physiology, but challenging ex vivo given the fragile and typically short-lived paired pre- and postsynaptic recordings (e.g. Goutman, 2017; Goutman and Glowatzki, 2007). Note that we did not employ cyclothiazide to inhibit AMPA receptor desensitization and reduce its contribution to postsynaptic eEPSC depression (Goutman, 2017), given the potential presynaptic effects of cyclothiazide in synaptic release (Diamond and Jahr, 1995; Dittman and Regehr, 1998).
 
@@ -74,7 +110,7 @@ Finally, we determined RRP recovery from depletion using the ratio QEPSC Probe/Q
 
 Much of the information on synaptic sound encoding at afferent IHC-SGN synapses has been obtained from either juxtacellular recordings of SGN firing in vivo or from ex vivo patch-clamp recordings. Yet, it has remained difficult to reconcile those in vivo and ex vivo results and to establish a unified account of sound intensity coding in the auditory nerve given differences in experimental conditions, animal models, and protocols employed. Here, we biophysically characterized the heterogeneous function of afferent SGN synapses in hearing mice with reference to their rate of spontaneous transmission (SR) as a surrogate of SGN SR that informs their functional properties. We performed paired pre- and postsynaptic patch-clamp recordings from single IHC synapses of hearing mice under near-physiological conditions using protocols adapted from in vivo characterization of SGN’s response properties. Using this approach, we were able to distinguish synapses with low and high SR, which we propose to provide the input into low and high SR SGNs. We found that about 90% of high SR synapses were located at the pillar side of the IHC. High SR synapses had larger sEPSCs with a monophasic (or more compact) waveform, lower voltage thresholds of release, shorter synaptic delays, tighter coupling of release sites to Ca2+ channels, as well as higher initial release rates and shorter RRP depletion time constants. RRP size, rate of sustained exocytosis, and kinetics of RRP recovery from depletion were comparable between high and low SR synapses. We conclude that high SR synapses exhibit higher release probability which likely reflects the tighter coupling of Ca2+ channels and release sites. This diversity in the response properties of individual synapses most likely expands the capacity of a single IHC to encode sound intensity over the wide range of audible sound pressures.
 
-## Diversity of spontaneous release and their topographical segregation
+### Diversity of spontaneous release and their topographical segregation
 
 The SR range observed in our paired recordings from mouse afferent synapses (0–18 sEPSC/s) agrees with results obtained without patch-clamping the IHC (0–16 sEPSC/s) and with previous ex vivo reports using loose patch recordings from SGNs of p15–17 rats (0.1–16.42 spikes/s; Wu et al., 2016). However, the maximum rate is considerably smaller than those recorded in vivo from single SGNs of p14–15 mice (up to 60 spikes/s; Wong et al., 2013). This threefold difference between ex vivo and in vivo recordings of the same age group could indicate that, in vivo, the IHC resting potential might be more depolarized and/or subject to spontaneous fluctuations that can trigger Ca2+ channel openings and release. Additionally, the presence of K+ channel blockers (tetraethylammonium [TEA] and Cs+) and differences in pH could all have an impact on the excitability of the cell and the kinetics of the cellular processes.
 
@@ -88,7 +124,7 @@ Alternatively and our favorite hypothesis, each sEPSC corresponds to a unitary r
 
 Finally, we note that sEPSC amplitudes of IHC synapses in hearing mice (present study and Niwa et al., 2021) seem lower than in previous ex vivo studies on IHC synapses of hearing rats (Chapochnikov et al., 2014; Grant et al., 2010; Huang and Moser, 2018; Young et al., 2021). In rats, the EPSC amplitude distribution changes with maturation, from highly skewed to the left with a peak around –30 pA to a Gaussian-like distribution with a peak at –375 pA (Grant et al., 2010). This does not seem to be the case in mouse IHC synapses. Average EPSC amplitudes in pre-hearing mice are around –100 to –150 pA (Chapochnikov et al., 2014), even with 40 mM K+ stimulation (Jing et al., 2013; Takago et al., 2018). On the contrary, mean EPSC amplitudes in hearing mice remained small (around –100 pA) in resting conditions (Niwa et al., 2021 and the present study), but became significantly larger upon stimulation with 40 mM K+ (Niwa et al., 2021) or voltage depolarizations (the present study, Figure 1—figure supplement 1G).
 
-## Candidate mechanisms distinguishing evoked release at low and high SR synapses
+### Candidate mechanisms distinguishing evoked release at low and high SR synapses
 
 The temporal and quantal resolution offered by paired recordings allowed us to analyze the biophysical properties of evoked synaptic transmission in relation to the SR of the given synapse. In an intriguing resemblance with in vivo evoked firing properties of high SR SGNs (Bourien et al., 2014; Buran et al., 2010; Relkin and Doucet, 1991; Rhode and Smith, 1985; Taberner and Liberman, 2005), high SR synapses showed lower voltage (~sound pressure in vivo) thresholds of synaptic transmission (~firing in vivo), shorter and less variable synaptic latencies (~first spike latencies in vivo), and higher initial release rates (~onset firing rate in vivo). In addition, we found stronger synaptic depression at high SR synapses, which agrees well with the finding of a greater ratio of peak to adapted firing rate in high SR SGNs recorded in vivo (Taberner and Liberman, 2005). These results support the hypothesis that IHC synaptic heterogeneity (Frank et al., 2009; Hua et al., 2021; Ohn et al., 2016; Özçete and Moser, 2021; Reijntjes et al., 2020) contributes to the diversity of spontaneous and sound-evoked SGN firing.
 
@@ -102,7 +138,7 @@ Besides SV release probability, RRP size co-determines neurotransmitter release.
 
 Finally, the heterogeneity in the functional properties of IHC synapses could arise from molecular heterogeneity of the AZ. In central glutamatergic synapses, molecular heterogeneity of synaptic proteins plays a critical role in the modulation of SV release probability and priming state (Neher and Brose, 2018; Wichmann and Kuner, 2022). For instance, differential isoforms of priming factors and scaffold proteins have been suggested to tune the functional synaptic diversity of central synapses (Fulterer et al., 2018; Rebola et al., 2019; Rosenmund et al., 2002). Cochlear IHCs have an unconventional fusion machinery that appears to work without neuronal SNARES (Nouvian et al., 2011) (but see Calvet et al., 2022) and priming factors such as Munc13 and CAPS (Vogl et al., 2015). Therefore, future studies will need to determine the molecular nanoanatomy underlying the specific AZ nanophysiology and functional synaptic heterogeneity at IHCs. Promising candidates include RBPs (Butola et al., 2021; Grauel et al., 2016; Krinner et al., 2021; Krinner et al., 2017; Petzoldt et al., 2020), RIMs (Jung et al., 2015; Picher et al., 2017b), and Septin (Fekete et al., 2019; Yang et al., 2010).
 
-## Challenges for relating synaptic and neural response properties
+### Challenges for relating synaptic and neural response properties
 
 Next to providing support for the presynaptic hypothesis of functional SGN diversity, the present study also highlights some of the challenges met when aiming to bridge the gap between presynaptic hair cell function and neural sound encoding. Despite major efforts undertaken to match experimental conditions and protocols, it remains difficult to reconcile some findings of ex vivo and in vivo physiology. Parameters such as RRP size (~# spikes of the rapidly adapting component of firing), sustained exocytosis (~adapted firing rate in vivo), recovery of spontaneous and evoked release (~recovery from forward masking in vivo) did not differ among our high and low SR synapses, and contrasts with in vivo data (e.g. Bourien et al., 2014; Buran et al., 2010; Relkin and Doucet, 1991; Rhode and Smith, 1985; Taberner and Liberman, 2005).
 
@@ -112,11 +148,84 @@ Clearly more work is needed to elucidate the mechanisms of SGN firing diversity 
 
 ## Materials and methods
 
-## Animals and tissue preparation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6N</td>
+      <td>Jackson Laboratory (https://www.jax.org)</td>
+      <td>RRID:IMSR_JAX:005304</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Patchmaster</td>
+      <td>HEKA Elektronik, (http://www.heka.com/products/products_main.html#soft_pm)</td>
+      <td>RRID:SCR_000034:</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro software package</td>
+      <td>WaveMetrics (http://www.wavemetrics.com/products/igorpro/igorpro.htm)</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Patchers Power Tools</td>
+      <td>Igor Pro XOP (http://www3.mpibpc.mpg.de/groups/neher/index.php?page=software)</td>
+      <td>RRID:SCR_001950</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NeuroMatic</td>
+      <td>ThinkRandom (http://www.neuromatic.thinkrandom.com/)</td>
+      <td>RRID:SCR_004186</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel</td>
+      <td>Microsoft (https://www.microsoft.com/en-gb/)</td>
+      <td>RRID:SCR_016137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism software</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator</td>
+      <td>Adobe (http://www.adobe.com/products/illustrator.html)</td>
+      <td>RRID:SCR_010279</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals and tissue preparation
 
 c57BL/6N mice of either sex between p14 and p27 were used. For paired recordings, the number of animals per age was: p14 (9), p15 (7), p16 (9), p17 (5), p18 (2), p20 (1). For the bouton recordings of Figure 2—figure supplement 1A, the number of animals per age was: p14 (2), p15 (3), p16 (3), p21 (1), p24 (1), p25 (1), p27 (1). The animal handling and euthanizing complied with national animal care guidelines and were announced to the local animal welfare committee of the University of Göttingen and the Max Planck Institute for Multidisciplinary Sciences, as well as to the Animal Welfare Office of the State of Lower Saxony, Germany (announcement T 37.03). Animals were sacrificed by decapitation and the cochleae were extracted in modified Hepes Hank’s solution containing: 5.36 mM KCl, 141.7 mM NaCl, 1 mM MgCl2-6H2O, 0.5 mM MgSO4-7H2O, 10 mM HEPES, 0.5 mg/ml L-glutamine, and 1 mg/ml D-glucose (pH 7.2, osmolarity of ~300 mOsm). The apical coil of the organ of Corti was dissected and placed under a grid in the recording chamber. Pillar or modiolar supporting cells were removed using soda glass pipettes in order to gain access to the basolateral face of the IHCs and to the postsynaptic boutons of type I SGNs. Dissection of the organ of Corti and cleaning of the supporting cells were performed at room temperature (20–25°C).
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Pre- and postsynaptic paired patch-clamp recordings were performed at near physiological temperature (32–37°C) using an EPC-9 amplifier (HEKA electronics) (Figure 1). Patch electrodes were positioned using a PatchStar micromanipulator (Scientifica, UK). Whole-cell recordings from IHCs were achieved using the perforated-patch-clamp technique (Moser and Beutner, 2000) using Sylgard-coated 1.5 mm borosilicate pipettes with typical resistances between 3.5 and 6 MΩ. The IHC pipette solution contained: 129 mM Cs-gluconate, 10 mM TEA-Cl, 10 mM 4-AP, 10 mM HEPES, 1 mM MgCl2 (pH 7.2, osmolarity of ~290 mOsm), as well as 300 μg/ml amphotericin B added prior to the experiment. Once the series resistance of the IHC reached below 30 MΩ, whole-cell voltage-clamp recordings from a contacting bouton was established as described in previous studies (Glowatzki and Fuchs, 2002; Grant et al., 2011; Huang and Moser, 2018). For two pairs, the bouton recording was established first and then the IHC. Sylgard-coated 1.0 mm borosilicate pipettes with typical resistances between 7 and 12 MΩ were used for the postsynaptic recordings. The bouton pipette solution contained: 137 mM KCl, 5 mM EGTA, 5 mM HEPES, 1 mM Na2-GTP, 2.5 mM Na2-ATP, 3.5 mM MgCl2·6H2O, and 0.1 mM CaCl2 (pH 7.2 and osmolarity of ~290 mOsm). The organ of Corti was continuously perfused with an extracellular solution containing 4.2 mM KCl, 95–100 mM NaCl, 25 mM NaHCO3, 30 mM TEA-Cl, 1 mM Na-pyruvate, 0.7 mM NH2PO4·H2O, 1 mM CsCl, 1 mM MgCl2·H2O, 1.3 mM CaCl2, and 11.1 mM D-glucose (pH 7.3, osmolarity of ~310 mOsm). 2.5 µM tetrodotoxin (Tocris or Santa Cruz) was added to block voltage-gated Na+ channels in the postsynaptic bouton.
 
@@ -124,25 +233,45 @@ Data were acquired using the Patchmaster software (HEKA electronics). The curren
 
 The threshold for sEPSC detection was four times SD of the baseline. Spontaneous activity was calculated from time windows without stimulation with the IHC held at –58 mV; either from a 5–10 s recording or by averaging the number of events from the segments before and after a depolarizing pulse (Figure 1B, Supplementary file 1). To study the depletion and recovery of the pool of vesicles, we used a protocol adapted from the forward masking protocol performed during in vivo extracellular recordings of SGNs (Harris and Dallos, 1979; Jean et al., 2018). It consisted of two consecutive depolarizing pulses to the voltage that elicited the highest peak of Ca2+ current (–19 mV; Figure 1C). The first pulse, called masker, lasted 100 ms and it was followed by a second pulse, called probe, which lasted 15 ms. The two pulses were separated by intervals without depolarization (ISI) that lasted 4, 16, 64, and 256 ms. The waiting time between masker and masker was 20 s and each protocol was repeated between 3 and 20 times. To study the dynamic voltage range of synaptic transmission, we used a current-voltage (IV) protocol with 10 ms pulses of increasing voltage (from –70 mV/–60 mV to 70 mV in 5 mV steps). The interval between two stimuli was 1.5 s.
 
-## Data analysis
+### Data analysis
 
 Electrophysiological data was analyzed using the IgorPro 6 Software Package (WaveMetrics), GraphPad Prism 9 and Excel. Ca2+ charge (QCa) and EPSC charge (QEPSC) were estimated by taking the integral of the current. Kinetics of sEPSCs, such as amplitude, 10–90% rise time, time constant of decay (τdecay), and FWHM, were calculated with Neuromatic (Rothman and Silver, 2018).
 
-To obtain IV curves, we averaged the evoked Ca2+ currents (ICa) during 10 ms after the start of each depolarization. Fractional activation of the Ca2+ channels was obtained from the normalized chord conductance, g,g=I(V−Vrev)
+To obtain IV curves, we averaged the evoked Ca2+ currents (ICa) during 10 ms after the start of each depolarization. Fractional activation of the Ca2+ channels was obtained from the normalized chord conductance, g,
 
-where V is the membrane potential and Vrev is the reversal potential determined by fitting a line function between the voltage of ICa peak+10 mV and the maximal depolarization. The activation curve was approximated by a first-order Boltzmann equation:g=gmax1+exp⁡(VhalfICa−VS)
+$$
+g=\frac{I}{(V−V_{rev})}
+$$
+
+where V is the membrane potential and Vrev is the reversal potential determined by fitting a line function between the voltage of ICa peak+10 mV and the maximal depolarization. The activation curve was approximated by a first-order Boltzmann equation:
+
+$$
+g=\frac{g_{max}}{1+exp⁡(\frac{V_{half}I_{Ca}−V}{S})}
+$$
 
 where gmax is the maximum chord conductance, Vhalf ICa is the membrane potential at which the conductance is half activated, and S is the slope factor describing the voltage sensitivity of activation.
 
-Release intensity curves were obtained by calculating QEPSC by the end of each depolarization step and fitted using a sigmoidal function:Q=Qmax1+exp⁡(Q50EPSC−Vrate)
+Release intensity curves were obtained by calculating QEPSC by the end of each depolarization step and fitted using a sigmoidal function:
+
+$$
+Q=\frac{Q_{max}}{1+exp⁡(\frac{Q_{50EPSC}−V}{rate})}
+$$
 
 where Qmax is the maximal QEPSC (normalized to 1), Q50 EPSC corresponds to the voltage of half-maximal release (or Vh EPSC), and Q is the EPSC charge. The dynamic range was determined as the voltage range between 10% and 90% of the maximal vesicle release. For statistical analysis of dynamic range, we included only pairs for which both the Ca2+ fractional activation and the rate level curves were possible to fit.
 
-The apparent Ca2+ dependence of neurotransmitter release was studied from the 10 ms step depolarizations of the IV curves. The resulting QEPSC vs IHC QCa plots from each individual pair were fitted with a power function:QEPSC=a(QCa)m
+The apparent Ca2+ dependence of neurotransmitter release was studied from the 10 ms step depolarizations of the IV curves. The resulting QEPSC vs IHC QCa plots from each individual pair were fitted with a power function:
+
+$$
+Q_{EPSC}=a(Q_{Ca})^{m}
+$$
 
 where m corresponds to the Ca2+ cooperativity. Some pairs showed a clear saturation of release at high IHC QCa. In these cases, the fit was restricted to the data points before the plateau, which was determined by visual inspection. For the pooled data, the power function was fitted to the normalized QEPSC vs normalized QCa. For the pairs with saturation of release, QCa was normalized to a point before the plateau.
 
-For forward masking experiments, the postsynaptic response was averaged for all the repetitions for each paired recording (between 3 and 20, depending on the stability of the pair). Single AZ pool dynamics were determined by fitting an exponential plus line function to the first 50 ms of the average QEPSC trace in response to the masker stimulus for each ISI,y0+A1(1−exp{−(x−x0)τ})+(x−x0)slope
+For forward masking experiments, the postsynaptic response was averaged for all the repetitions for each paired recording (between 3 and 20, depending on the stability of the pair). Single AZ pool dynamics were determined by fitting an exponential plus line function to the first 50 ms of the average QEPSC trace in response to the masker stimulus for each ISI,
+
+$$
+y_{0}+A1(1−exp{\frac{−(x−x_{0})}{\tau}})+(x−x_{0})slope
+$$
 
 where A1 is the amplitude of the exponential component, τ is the time constant of the exponential component. RRP size (in SVs) was estimated from dividing A1 by the charge of the average sEPSC for each pair. Sustained exocytosis rate (in SV per s) was calculated from the slope of the linear function divided the charge of the average sEPSC. Individual recovery kinetics were determined from the ratio of probe and masker responses at 10 ms of the depolarization, with the ratio between masker and masker being 1. The recovery traces were fitted with a single exponential function from 16 to 20,000 ms to determine the time constant of RRP recovery.
 

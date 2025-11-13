@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.46075.001 The syndrome of Anosognosia for Hemiplegia (AHP) can provide unique insights into the neurocognitive processes of motor awareness. Yet, prior studies have only explored predominately discreet lesions. Using advanced structural neuroimaging methods in 174 patients with a right-hemisphere stroke, we were able to identify three neural systems that contribute to AHP, when disconnected or directly damaged: the (i) premotor loop (ii) limbic system, and (iii) ventral attentional network. Our results suggest that human motor awareness is contingent on the joint contribution of these three systems.
+The syndrome of Anosognosia for Hemiplegia (AHP) can provide unique insights into the neurocognitive processes of motor awareness. Yet, prior studies have only explored predominately discreet lesions. Using advanced structural neuroimaging methods in 174 patients with a right-hemisphere stroke, we were able to identify three neural systems that contribute to AHP, when disconnected or directly damaged: the (i) premotor loop (ii) limbic system, and (iii) ventral attentional network. Our results suggest that human motor awareness is contingent on the joint contribution of these three systems.
 
 ## Introduction
 
@@ -76,7 +76,7 @@ In conclusion, on the basis of a large (N = 174) and advanced grey and white m
 
 ## Materials and methods
 
-## Design and statistical analysis
+### Design and statistical analysis
 
 The aim of the study was to explore the white matter disconnections involved in AHP. To this end, we investigated the neural systems that contribute to the symptoms of AHP. To the best of our knowledge, this approach has never been applied to the study of AHP and it can shed light on the theoretical and phenomenological complexity of the disease, by integrating and going beyond existing findings gained through classic lesion studies (Vocat et al., 2010; Karnath et al., 2005; Berti et al., 2005; Moro et al., 2016; Fotopoulou et al., 2010; Moro et al., 2011).
 
@@ -86,7 +86,7 @@ Finally, when computing the AHP map of lesions and disconnections we controlled 
 
 The tracts emerging from this analysis were further analysed by means of Bayesian models to confirm the individual involvement of each tract and test their joint contribution to AHP (see details below).
 
-## Patients
+### Patients
 
 Data from 195 stroke patients with unilateral right hemisphere damage were collected from two collaborating centers based in Italy and the United Kingdom over a period of 10 years.
 
@@ -94,9 +94,100 @@ Patients’ inclusion criteria were: (i) unilateral right hemisphere damage, sec
 
 The MRI or CT neuroimaging data were available for 174 out of 195 patients. They were divided into two groups according to the presence/absence of AHP (see below for AHP assessment details), resulting in a group of 95 AHP patients and 79 non-AHP, hemiplegic control (HP) subjects. Among these, clinical and anatomical data of 40 AHP patients and 27 controls has been described in a previous study (Moro et al., 2016). Groups were balanced for demographic data (age, education, interval period between lesion onset and assessments) and lesion size. As the data were collected from different stroke recovery units, we took into account the neurological and neuropsychological tests that were most commonly administrated to all the patients across the different centers (Table 1).
 
+**Table 1.**
+ For AHP and control groups, mean and (±standard deviation) of demographic and clinical variables, neurological and neuropsychological assessments are reported.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Ahp (N = 95)</th>
+      <th>Hp (N = 79)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Demographic and clinical</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>68.48 ± 12.54</td>
+      <td>63,01 ± 13.49</td>
+    </tr>
+    <tr>
+      <td>Education (years)</td>
+      <td>9.46 ± 3.74</td>
+      <td>11 ± 3.77</td>
+    </tr>
+    <tr>
+      <td>Interval (days)</td>
+      <td>35.74 ± 40.58</td>
+      <td>44.42 ± 46.7</td>
+    </tr>
+    <tr>
+      <td>Lesion Size (voxels)</td>
+      <td>134327.74 ± 113196.17</td>
+      <td>113082.73 ± 120844.22</td>
+    </tr>
+    <tr>
+      <td>Anosognosia</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bisiach score</td>
+      <td>2.46 ± 0.6</td>
+      <td>0 ± 0</td>
+    </tr>
+    <tr>
+      <td>Personal neglect</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Comb(left−rightstrokesleft+ambiguous+rightstrokes)</td>
+      <td>−0.3 ± 0.4</td>
+      <td>−0.06 ± 0.47</td>
+    </tr>
+    <tr>
+      <td>Extra-personal neglect</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Line cancellation (number of items cancelled)</td>
+      <td>19.26 ± 11.9</td>
+      <td>28.35 ± 10.77</td>
+    </tr>
+    <tr>
+      <td>Memory Span</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Digit/verbal span (number of items recalled)</td>
+      <td>5.65 ± 2.14</td>
+      <td>6.83 ± 2.46</td>
+    </tr>
+    <tr>
+      <td>Motor index</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MRC (LUL)</td>
+      <td>0.15 ± 0.42</td>
+      <td>0.6 ± 0.99</td>
+    </tr>
+  </tbody>
+</table>
+
 All patients gave written, informed consent and the research was conducted in accordance with the guidelines of the Declaration of Helsinki (2013) and approved by the Local Ethical Committees of each center (Comitato Etico per la sperimentazione clinica delle province di Verona e Rovigo, Proj. 602CESC, Prot. 47566 frl 14/10/2015; National Health System Research Ethics Committee, with ref no: 05/Q0706/218 and 04/Q2602/77).
 
-## Neurological and neuropsychological assessment
+### Neurological and neuropsychological assessment
 
 Patients were identified as anosognosic or control according to their score in the Bisiach scale (Bisiach et al., 1986). This investigates the explicit form of awareness related to one’s limb paralysis. During the scale administration, patients were required to verbally answer a 4-point interview about their current condition: a ‘0’ score indicates a spared consciousness of the disease (=the disorder is spontaneously reported or mentioned by the patient following a general question about his/her complains), a ‘1’ score is assigned when patients refer to their disability only after specific questions about the strength of their left limbs, while patients scoring ‘2’ or ‘3’ are considered anosognosic for their awareness of the disease emerging only after a demonstration through a routine technique of neurological examination (score 2) or not emerging at all (score 3). In the study, all the patients in the AHP group had a score ≥2, while those in the HP group had a score = 0.
 
@@ -106,7 +197,7 @@ Personal neglect was assessed by means of the ‘Comb’ test, from the ‘Comb/
 
 In order to compare results expressed in different scoring ranges, all the scores from neuropsychological tests were transformed to z-scores, with higher scores corresponding to better performances.
 
-## Lesions drawing
+### Lesions drawing
 
 Patients’ neuroimaging data was acquired via Computerised Tomography (CT, 85%) and Magnetic Resonance (MRI, 15%) and lesions were segmented and co-registered using the manual procedure already described by Moro and colleagues (Moro et al., 2016).
 
@@ -114,21 +205,21 @@ The lesion drawing was performed blindly and independently by two of the authors
 
 Scans were registered on the ICBM152 template of the Montreal Neurological Institute, furnished with the MRIcron software (ch2, http://www.mccauslandcenter.sc.edu/mricro/mricron/). First the standard template was rotated on the three plans (size: 181 × 217×181 mm, voxel resolution: 1 mm2) in order to match the orientation of patient’s MRI or CT scan. Lesions were outlined on the axial slices of the rotated template. The resulting lesion volumes were then rotated back into the canonical orientation, as to align the lesion volumes of each patient to the same stereotaxic space. Finally, in order to remove voxels of lesions outside the white and grey matter brain tissue, lesion volumes were filtered by means of custom masks based on the ICBM152 template.
 
-## Disconnectome maps
+### Disconnectome maps
 
 Disconnectome maps were computed with the ‘disconnectome map’ tool of the BCBToolkit software (Foulon et al., 2018). The first step of the procedure is the tracking of white matter fibres passing through each patient’s lesion, by means of the registration of lesions on the diffusion weighted imaging dataset of 10 healthy controls (Thiebaut de Schotten et al., 2017). This produces a percentage overlap map that takes into account the inter-individual variability of tractography in healthy controls’ dataset (Croxson et al., 2018). Therefore, in the resulting disconnectome maps computed for each lesion, voxels show the probability of disconnection from 0% to 100% (Thiebaut de Schotten et al., 2015). These disconnection probabilities of each patient are then used for statistical analyses.
 
-## Statistical analysis producing the sites of lesion and tract disconnection
+### Statistical analysis producing the sites of lesion and tract disconnection
 
 We ran two separate regression analyses for lesion sites and tract disconnections, using the same procedure. We used the tool ‘randomize’ (Winkler et al., 2014), part of FSL package (http://www.fmrib.ox.ac.uk/fsl/, version 5.0), which performs nonparametric statistics on neuroimaging data. Lesion drawings or disconnectome maps were considered as dependent variables within the general linear model implemented in ‘randomize’, in order to test the difference between the two groups in terms of disconnected brain regions. In these analyses white matter tracts and grey matter structures were not a-priori selected but the lesion and disconnection profiles of the whole right hemisphere were considered for each patient. Demographic (age, education), clinical (lesion size, lesion onset- assessment interval, motor deficit) and neuropsychological (personal and extra-personal neglect and memory impairment) data were considered in the model as control covariates. Threshold-Free Clusters Enhancement option was applied as to boost cluster-like structures of voxels and results that survived 5000 permutations testing were controlled for family-wise error rate (p>0.95).
 
-## Comparison of regression results with brain atlases
+### Comparison of regression results with brain atlases
 
 The involvement of the anatomical structures emerging as significant from the regression analysis results were compared with the probability maps of the insula, temporal pole and putamen (thresholded at 80%) of the Harvard-Oxford Atlas (Makris et al., 2006; Desikan et al., 2006). These masks were also used to compute the proportion of the insula, the Putamen and the TP affected by each patient’s lesion.
 
 In order to confirm the identity of the white matter tracts disconnected, we used an atlas of human brain connections (Rojkova et al., 2016). Results were compared with the probability maps (thresholded at 90%) of the cingulum, the frontal aslant (FAT) and the fronto-striatal tracts (FST) as well as the third branch of the superior longitudinal fasciculus (SLF III). Then, these masks were used to extract the probabilities of disconnection for each tract from each patient’s disconnectome map. These probabilities were used to investigate the contribution of each tract and their disconnection co-occurrence.
 
-## Bayesian post-hoc analyses
+### Bayesian post-hoc analyses
 
 To test whether AHP emerges from the damage to grey matter structures and disconnection of each of these tracts independently or together as a whole, statistical analyses were conducted by using Bayesian models (R software, R Development Core Team, 2018; brms package, Bürkner, 2017) and generalised linear multilevel models were computed (Stan, Carpenter et al., 2017).
 
@@ -138,6 +229,6 @@ As a first step, we tested whether the clinical/demographic model alone can pred
 
 After this, we fitted several binomial models, starting from the clinical/demographic model (i.e., with only the control covariates) to the full model (i.e. with all the clinical/demographic covariates, the grey regions, the tracts, and all the interactions among them), analysing the possible combinations of tracts and their interaction. The posterior samples were obtained by four chains, with 2500 burn-in and 2500 sampling iterations, resulting in a total of 10000 iterations for each posterior sample. Models including insula, temporal pole and putamen (i.e. all grey), fronto-striatal, frontal aslant tracts, cingulum and superior longitudinal fasciculus III (i.e. all white) as well as their full combination (i.e. all) were compared two by two.
 
-## Data availability
+### Data availability
 
 The raw data used for this research (lesions) as well as the dependent variable and covariates are provided in full as Source data 1.

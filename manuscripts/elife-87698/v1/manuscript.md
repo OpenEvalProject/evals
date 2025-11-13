@@ -37,29 +37,29 @@
 
 ### Affiliations
 
-1. https://ror.org/057qpr032 University of Bordeaux, CNRS Bordeaux France
-2. https://ror.org/054qv7y42 Bordeaux INP, Microbiologie Fondamentale et Pathogénicité Bordeaux France
-3. https://ror.org/02rx3b187 CHU Grenoble-Alpes, UM de Génétique Chromosomique Grenoble France
-4. https://ror.org/02rx3b187 Institute for Advanced Biosciences, INSERM U1209, CNRS UMR 5309, Université Grenoble Alpes, Team Genetics Epigenetics and Therapies of Infertility Grenoble France
-5. https://ror.org/051sk4035 Institut Cochin, INSERM U1016, CNRS UMR 8104, Université Paris Cite Paris France
-6. https://ror.org/057qpr032 Université Bordeaux, Plateforme Protéome Bordeaux France
-7. https://ror.org/02exhb815 Department of Genetics, Reproductive Biomedicine Research Center, Royan Institute for Reproductive Biomedicine, ACECR Tehran Islamic Republic of Iran
-8. https://ror.org/02exhb815 Department of Andrology, Reproductive Biomedicine Research Center, Royan Institute for Reproductive Biomedicine, ACECR Tehran Islamic Republic of Iran
+1. University of Bordeaux, CNRS Bordeaux France ([ROR:057qpr032](https://ror.org/057qpr032))
+2. Bordeaux INP, Microbiologie Fondamentale et Pathogénicité Bordeaux France ([ROR:054qv7y42](https://ror.org/054qv7y42))
+3. CHU Grenoble-Alpes, UM de Génétique Chromosomique Grenoble France ([ROR:02rx3b187](https://ror.org/02rx3b187))
+4. Institute for Advanced Biosciences, INSERM U1209, CNRS UMR 5309, Université Grenoble Alpes, Team Genetics Epigenetics and Therapies of Infertility Grenoble France ([ROR:02rx3b187](https://ror.org/02rx3b187))
+5. Institut Cochin, INSERM U1016, CNRS UMR 8104, Université Paris Cite Paris France ([ROR:051sk4035](https://ror.org/051sk4035))
+6. Université Bordeaux, Plateforme Protéome Bordeaux France ([ROR:057qpr032](https://ror.org/057qpr032))
+7. Department of Genetics, Reproductive Biomedicine Research Center, Royan Institute for Reproductive Biomedicine, ACECR Tehran Islamic Republic of Iran ([ROR:02exhb815](https://ror.org/02exhb815))
+8. Department of Andrology, Reproductive Biomedicine Research Center, Royan Institute for Reproductive Biomedicine, ACECR Tehran Islamic Republic of Iran ([ROR:02exhb815](https://ror.org/02exhb815))
 9. Polyclinique les Jasmins, Centre d'Aide Médicale à la Procréation, Centre Urbain Nord Tunis Tunisia
-10. https://ror.org/011ashp19 Human Sperm Bank, West China Second University Hospital of Sichuan University Sichuan China
-11. https://ror.org/011ashp19 NHC Key Laboratory of Chronobiology, Sichuan University Sichuan China
-12. https://ror.org/011ashp19 Key Laboratory of Birth Defects and Related Diseases of Women and Children (Sichuan University), Ministry of Education Sichuan China
-13. https://ror.org/013q1eq08 Obstetrics and Gynecology Hospital, Fudan University Fudan China
-14. https://ror.org/02rx3b187 Université Grenoble Alpes, CNRS Grenoble France
-15. https://ror.org/02rx3b187 CHU Grenoble Alpes, Laboratoire de Génétique Moléculaire: Maladies Héréditaires et Oncologie Grenoble France
-16. https://ror.org/02rx3b187 CHU de Grenoble, UM GI-DPI Grenoble France
-17. https://ror.org/02rx3b187 Institute for Advanced Biosciences, INSERM U 1209, CNRS UMR 5309, Université Grenoble Alpes, Team Physiology and Pathophysiology of Sperm cells Grenoble France
+10. Human Sperm Bank, West China Second University Hospital of Sichuan University Sichuan China ([ROR:011ashp19](https://ror.org/011ashp19))
+11. NHC Key Laboratory of Chronobiology, Sichuan University Sichuan China ([ROR:011ashp19](https://ror.org/011ashp19))
+12. Key Laboratory of Birth Defects and Related Diseases of Women and Children (Sichuan University), Ministry of Education Sichuan China ([ROR:011ashp19](https://ror.org/011ashp19))
+13. Obstetrics and Gynecology Hospital, Fudan University Fudan China ([ROR:013q1eq08](https://ror.org/013q1eq08))
+14. Université Grenoble Alpes, CNRS Grenoble France ([ROR:02rx3b187](https://ror.org/02rx3b187))
+15. CHU Grenoble Alpes, Laboratoire de Génétique Moléculaire: Maladies Héréditaires et Oncologie Grenoble France ([ROR:02rx3b187](https://ror.org/02rx3b187))
+16. CHU de Grenoble, UM GI-DPI Grenoble France ([ROR:02rx3b187](https://ror.org/02rx3b187))
+17. Institute for Advanced Biosciences, INSERM U 1209, CNRS UMR 5309, Université Grenoble Alpes, Team Physiology and Pathophysiology of Sperm cells Grenoble France ([ROR:02rx3b187](https://ror.org/02rx3b187))
 
 † Corresponding author
 
 ## Abstract
 
-Male infertility is common and complex, presenting a wide range of heterogeneous phenotypes. Although about 50% of cases are estimated to have a genetic component, the underlying cause often remains undetermined. Here, from whole-exome sequencing on samples from 168 infertile men with asthenoteratozoospermia due to severe sperm flagellum, we identified homozygous ZMYND12 variants in four unrelated patients. In sperm cells from these individuals, immunofluorescence revealed altered localization of DNAH1, DNALI1, WDR66, and TTC29. Axonemal localization of ZMYND12 ortholog TbTAX-1 was confirmed using the Trypanosoma brucei model. RNAi knock-down of TbTAX-1 dramatically affected flagellar motility, with a phenotype similar to the sperm from men bearing homozygous ZMYND12 variants. Co-immunoprecipitation and ultrastructure expansion microscopy in T. brucei revealed TbTAX-1 to form a complex with TTC29. Comparative proteomics with samples from Trypanosoma and Ttc29 KO mice identified a third member of this complex: DNAH1. The data presented revealed that ZMYND12 is part of the same axonemal complex as TTC29 and DNAH1, which is critical for flagellum function and assembly in humans, and Trypanosoma . ZMYND12 is thus a new asthenoteratozoospermia-associated gene, bi-allelic variants of which cause severe flagellum malformations and primary male infertility.
+Male infertility is common and complex, presenting a wide range of heterogeneous phenotypes. Although about 50% of cases are estimated to have a genetic component, the underlying cause often remains undetermined. Here, from whole-exome sequencing on samples from 168 infertile men with asthenoteratozoospermia due to severe sperm flagellum, we identified homozygous ZMYND12 variants in four unrelated patients. In sperm cells from these individuals, immunofluorescence revealed altered localization of DNAH1, DNALI1, WDR66, and TTC29. Axonemal localization of ZMYND12 ortholog TbTAX-1 was confirmed using the Trypanosoma brucei model. RNAi knock-down of TbTAX-1 dramatically affected flagellar motility, with a phenotype similar to the sperm from men bearing homozygous ZMYND12 variants. Co-immunoprecipitation and ultrastructure expansion microscopy in T. brucei revealed TbTAX-1 to form a complex with TTC29. Comparative proteomics with samples from Trypanosoma and Ttc29 KO mice identified a third member of this complex: DNAH1. The data presented revealed that ZMYND12 is part of the same axonemal complex as TTC29 and DNAH1, which is critical for flagellum function and assembly in humans, and Trypanosoma. ZMYND12 is thus a new asthenoteratozoospermia-associated gene, bi-allelic variants of which cause severe flagellum malformations and primary male infertility.
 
 ## Introduction
 
@@ -73,9 +73,167 @@ Here, following analysis of an initial cohort of 167 MMAF individuals by whole-e
 
 ## Results
 
-## WES identified homozygous truncating variants in ZMYND12 in MMAF individuals
+### WES identified homozygous truncating variants in ZMYND12 in MMAF individuals
 
 In our cohort of 167 MMAF individuals, we previously identified 83 individuals (49.7%) with harmful gene variants in known MMAF-related genes. Reanalysis of the remaining negative exomes identified three unrelated MMAF individuals (ZMYND12_1–3) (Figure 1A, Table 1) carrying homozygous variants in ZMYND12 (Zinc Finger MYND-Type Containing 12, NM_032257.5). This gene was not previously associated with any pathology. Two individuals (ZMYND12_1 and ZMYND12_3) originated from Tunisia, and one individual (ZMYND12_2) was of Iranian origin.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/87698/elife-87698-fig1-v1.jpg)
+
+**Figure 1.:** (A) Light microscopy analysis of spermatozoa from fertile control individuals and from individuals ZMYND12_2 and ZMYND12_3. Most spermatozoa from ZMYND12 individuals had short (#), coiled (@), or irregular caliber (&) flagella. Head malformations were also observed (δ). (B) Location of the variants identified within the ZMYND12 gene (NM_032257.5) and protein according to UniprotKB (Q9H0C1). The blue box represents a Zinc Finger domain and the orange boxes represent TPR domains (tetratricopeptide repeat). (C) Sanger sequencing electropherograms indicating the homozygous state of the c.433C>T variant located in exon 4 in the three individuals ZMYND12_1,3 and 4. The substituted nucleotide is highlighted in red. Variants are annotated in line with HGVS recommendations. (D) Confirmation of ZMYND12 exon deletion by MLPA. MLPA profiles obtained for control and ZMYND12_2 individuals. Each set contains three control probes for normalization purposes (c1–c3) and three ZMYND12-specific probes. Blue arrows indicate homozygous deletion of exons 6 and 8 in the ZMYND12 gene. ZMYND12 exon 5 is not included in the deletion. (E) Sperm cells from a fertile control individual and from individual ZMYND12_3 – carrier of the c.433C>T variant – were stained with anti-ZMYND12 (green) and anti-acetylated tubulin (red) antibodies. Sperm nuclear DNA was counterstained with DAPI (4′,6-diamidino-2-phenylindole) (blue). In control sperm, ZMYND12 immunostaining was present along the whole length of the flagellum; no staining was observed in sperm cells from individual ZMYND12_3. Scale bars: 10 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/87698/elife-87698-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Quantitative real-time RT-PCR (RT-qPCR) was performed with cDNAs from various human tissues purchased from Life Technologies. A panel of 10 organs was used for experiments: placenta, lung, pancreas, testis, trachea, kidney, whole brain, skeletal muscle, liver, and heart. Each sample was assayed in triplicate for each gene on a StepOnePlus (Life Technologies) with Power SYBRGreen PCR Master Mix (Life Technologies). The PCR cycle was as follows: 10 min at 95°C, 1 cycle for enzyme activation; 15 s at 95C, 60 s at 60C with fluorescence acquisition, 40 cycles for the PCR. RT-qPCR data were normalized using the two reference housekeeping genes RPL6 and RPL27 for human samples, applying the −ΔΔCt method (Livak and Schmittgen, 2001). The 2−ΔΔCt value was set to 0 in brain cells, resulting in an arbitrary maximum expression of 1. The efficacy of primers was checked using a standard curve. Melting curve analysis was used to verify the presence of a single PCR product. Statistical significance of differences in expression of ZMYND12 transcripts in several organs was determined by applying a two-tailed t-test using Prism 4.0 software (GraphPad, San Diego, CA). ***p < 0.001.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/87698/elife-87698-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Compared with the control individuals (blue), affected individual ZMYND12_2 (red) showed a complete absence of sequence coverage for exons 6–8. ZMYND12 is on the reverse genomic strand. The five samples shown were processed by exome-seq in a single batch, using the same Agilent Clinical Research capture kit, Illumina HiSeq 4000 sequencing technology, and bioinformatics pipeline (see Supplemental Methods).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/87698/elife-87698-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Sperm cells from a fertile control individual, two MMAF patients, carriers of mutations in ARMC2 and WDR66, and one MMAF patient with unknown genetic cause were stained with anti-ZMYND12 (green) and anti-acetylated tubulin (red) antibodies. Sperm nuclear DNA was counterstained with DAPI (blue). ZMYND12 immunostaining was present throughout the flagellum in all samples, regardless of phenotype. Variants are specified for each patient. Scale bars: 10 μm.
+
+**Table 1.**
+ Detailed semen parameters in the four Multiple Morphological Abnormalities of the sperm Flagellum (MMAF) individuals harboring a ZMYND12 variant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">ZMYND12 mutated individuals</th>
+      <th colspan="17">Semen parameters</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Individuals</td>
+      <td>Homozygous ZMYND12variants</td>
+      <td>Sperm volume (ml)</td>
+      <td>Sperm concentration (106/ml)</td>
+      <td>Total motility 1 hr</td>
+      <td>Vitality</td>
+      <td>Normal spermatozoa</td>
+      <td>Absent flagella</td>
+      <td>Short flagella</td>
+      <td>Coiled flagella</td>
+      <td>Bent flagella</td>
+      <td>Flagella of irregular caliber</td>
+      <td>Tapered head</td>
+      <td>Thin head</td>
+      <td>Micro-cephalic</td>
+      <td>Macro-cephalic</td>
+      <td>Multiple heads</td>
+      <td>Abnormal base</td>
+      <td>Abnormal acrosomal region</td>
+    </tr>
+    <tr>
+      <td>ZMYND12_1</td>
+      <td>c.433C&gt;T</td>
+      <td>2</td>
+      <td>6.5</td>
+      <td>4</td>
+      <td>70</td>
+      <td>0</td>
+      <td>35</td>
+      <td>48</td>
+      <td>10</td>
+      <td>0</td>
+      <td>34</td>
+      <td>22</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+      <td>6</td>
+      <td>20</td>
+      <td>80</td>
+    </tr>
+    <tr>
+      <td>ZMYND12_2</td>
+      <td>Del ex6-8</td>
+      <td>2.5</td>
+      <td>4.25</td>
+      <td>2</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>72</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>ZMYND12_3</td>
+      <td>c.433C&gt;T</td>
+      <td>3</td>
+      <td>34</td>
+      <td>2</td>
+      <td>50</td>
+      <td>0</td>
+      <td>20</td>
+      <td>20</td>
+      <td>28</td>
+      <td>0</td>
+      <td>46</td>
+      <td>22</td>
+      <td>6</td>
+      <td>8</td>
+      <td>2</td>
+      <td>2</td>
+      <td>24</td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <td>ZMYND12_4</td>
+      <td>c.433C&gt;T</td>
+      <td>2.6</td>
+      <td>0.1</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>70</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td colspan="2">Reference limits*</td>
+      <td>1.5 (1.4–1.7)</td>
+      <td>15 (12–16)</td>
+      <td>40 (38–42)</td>
+      <td>58 (55–63)</td>
+      <td>23 (20–26)</td>
+      <td>5 (4–6)</td>
+      <td>1 (0–2)</td>
+      <td>17 (15–19)</td>
+      <td>13 (11–15)</td>
+      <td>2 (1–3)</td>
+      <td>3 (2–4)</td>
+      <td>14 (12–16)</td>
+      <td>7 (5–9)</td>
+      <td>1 (0–2)</td>
+      <td>2 (1–3)</td>
+      <td>42 (39–45)</td>
+      <td>60 (57–63)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Values are percentages unless specified otherwise. NA: not available.*Reference limits (5th centiles and their 95% confidence intervals) according to World Health Organization (WHO) standards (Cooper et al., 2010) and the distribution range of morphologically normal spermatozoa observed in 926 fertile individuals (Auger et al., 2016)._
 
 ZMYND12 is located on chromosome 1 and contains eight exons encoding the Zinc Finger MYND domain-containing protein 12, a predicted 365-amino acid protein (Q9H0C1). According to data from GTEx, ZMYND12 is strongly expressed in the testis and is associated with cilia and flagella (Yamamoto et al., 2021; Yamamoto et al., 2006). Moreover, quantitative single-cell RNA sequencing datasets from human adult testis (ReproGenomics Viewer) (Darde et al., 2019) indicate abundant expression in germ cells from zygotene spermatocyte to late spermatid stages. This expression pattern suggests a role in sperm cell differentiation and/or function. ZMYND12 protein was also detected at significant levels in the human sperm proteome (Wang et al., 2013), but at very low levels in human airway cilia (Blackburn et al., 2017). We performed quantitative real-time RT-PCR (RT-qPCR) experiments on human tissue panels (Figure 1—figure supplement 1), and results confirmed that expression of ZMYND12 mRNA is predominant in testis as compared with the other tissues tested.
 
@@ -85,17 +243,37 @@ Using the ExomeDepth software package (Plagnol et al., 2012), individual ZMYND12
 
 For the individuals carrying ZMYND12 mutations, analysis of control databases revealed no low-frequency variants in other genes reported to be associated with cilia, flagella, or male fertility. We therefore focused our study on ZMYND12, which appeared as the best MMAF candidate gene. All of the ZMYND12 variants identified here have been deposited in ClinVar under reference SUB12540308.
 
-## ZMYND12 is located in the sperm flagellum, its variants cause severe axonemal disorganization
+### ZMYND12 is located in the sperm flagellum, its variants cause severe axonemal disorganization
 
 To further investigate the pathogenicity of the ZMYND12 variants identified, we examined the distribution of the ZMYND12 protein in control and mutated sperm cells by immunofluorescence (IF). Due to sample availability, these analyses were only carried out for individual ZMYND12_3 – carrier of the recurrent stop-gain variant c.433C>T. In sperm from control individuals, ZMYND12 antisera decorated the full length of the sperm flagellum (Figure 1E). Conversely, and in line with a truncation or degradation of the mutated protein, ZMYND12 was totally absent from all sperm cells from individual ZMYND12_3 (Figure 1E). Importantly, ZMYND12 was detected in sperm cells from MMAF individuals bearing mutations in other genes (ARMC2 and WDR66) or with unknown genetic causes (Figure 1—figure supplement 3). Thus, the absence of ZMYND12 is not a common feature of the MMAF phenotype, and is specifically associated with ZMYND12 variants.
 
 To explore the ultrastructural defects induced by ZMYND12 variants in human sperm cells, we next studied the presence of proteins present in various axonemal and peri-axonemal substructures by IF. The following proteins were investigated: AKAP4 (fibrous sheath, FS), CFAP70 (axoneme-binding protein with unknown precise location), DNAI1 (outer arm intermediate chain), DNALI1 (inner arm light intermediate chain), DNAH1 (inner arm heavy chain), DNAH8 (outer arm heavy chain), DNAH17 (outer arm heavy chain), GAS8 (Nexin-Dynein Regulatory Complex, N-DRC), RSPH1 (radial spoke, RS), SPAG6 (central pair complex, CPC), WDR66/CFAP251 (calmodulin- and spoke-associated complex, CSC), and TTC29 (axoneme-binding protein with unknown precise location). In sperm cells from ZMYND12_3, we first observed a total lack of SPAG6 staining (Figure 2—figure supplement 1A), suggesting severe CPC defects. This type of defect is a common feature of MMAF spermatozoa (Coutton et al., 2015). In addition, no immunostaining for DNAH1, DNALI1, or WDR66 was detected in sperm from individual ZMYND12_3 (Figure 2A, B and Figure 2—figure supplement 1B). These results suggested a strong disorganization of the IDAs (Inner dynein arms) and the CSC. ZMYND12 could therefore be a key axonemal component responsible for stability of these structures.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/87698/elife-87698-fig2-v1.jpg)
+
+**Figure 2.:** Immunofluorescence experiments were performed using sperm cells from control individuals and from individual ZMYND12_3 carrying the nonsense variant c.433C>T. Although tubulin staining remained detectable, sperm cells from individual ZMYND12_3 showed no immunostaining for (A) DNAH1, (B) WDR66, (C) CFAP70, and (D) TTC29. Scale bars: 10 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/87698/elife-87698-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Immunofluorescence experiments were performed using sperm cells from control individuals and from individual ZMYND12_3 carrying the nonsense variant c.433C>T. Although tubulin staining remained detectable, sperm cells from individual ZMYND12_3 showed no immunostaining for (A) SPAG6 and (B) DNALI1. The central pair complex (CPC) and the IDAs were therefore strongly disorganized in these cells. Scale bars: 10 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/87698/elife-87698-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Sperm cells from a fertile control individual and a TTC29 individual carrying the previously reported c.1761+1G>A splice-variant (Lorès et al., 2019) were stained with anti-ZMYND12 (green) and anti-acetylated tubulin (red) antibodies. DAPI counterstaining was used to reveal sperm nuclear DNA (blue). In control sperm, ZMYND12 immunostaining decorated the full length of the flagellum, but in sperm from TTC29 individuals, a total absence of ZMYND12 was recorded. Scale bars: 10 μm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/87698/elife-87698-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Sperm cells from a fertile control individual and from individual ZMYND12_3 stained with anti-RSPH1 (green) – located in the radial spokes – and anti-acetylated tubulin (red) antibodies. RSPH1 immunostaining is uniformly present along the length of the flagellum in control sperm cells. Sperm cells from individual ZMYND12_3 show heterogeneous staining regardless of flagellar morphology, suggesting that the radial spokes are inconsistently present in sperm cells from this individual. Scale bars: 10 µm. Lower panel: Histogram showing the percentage of analyzed spermatozoa of various morphologies displaying or lacking RSPH1 immunostaining (number of sperm cells analyzed = 200).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/87698/elife-87698-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Immunofluorescence (IF) experiments were performed using sperm cells from control individuals and from individual ZMYND12_3, carrier of the nonsense variant c.433C>T. Immunostaining patterns for AKAP4, DNAH2, DNAH8, DNAH17, DNAI1, and GAS8 in sperm from individual ZMYND12_3 were comparable to those observed in control sperm cells, demonstrating that the fibrous sheath, outer dynein arms (ODAs) and the N-DRC were not directly affected by ZMYND12 variants. Scale bars: 10 µm.
+
 We subsequently examined the presence of TTC29 and CFAP70, two proteins with as yet incompletely characterized function and localization. In control sperm, TTC29 and CFAP70 immunostaining decorated the full length of the flagellum, but neither protein was detected in cells from individual ZMYND12_3 (Figure 2C, D). Intriguingly, ZMYND12 was undetectable in the sperm flagellum from an MMAF individual carrying a previously reported TTC29 splicing variant c.1761+1G>A (Lorès et al., 2019; Figure 2—figure supplement 2). Unfortunately, no sample from an individual carrying a bi-allelic CFAP70 variant could be analyzed. Nevertheless, the available data suggest that TTC29, CFAP70, and ZMYND12 may be physically or functionally associated within the same axonemal complex.
 
 We also observed heterogeneous RSPH1 staining with all flagellar morphologies (Figure 2—figure supplement 3), indicating that RSs are inconsistently present in sperm cells from individual ZMYND12_3. In contrast, the immunostaining patterns for AKAP4, DNAH8, DNAH17, DNAI1, and GAS8 were comparable to those observed in control sperm cells. This result indicates that the FS, the outer dynein arms (ODAs), and the N-DRC were not directly affected by ZMYND12 variants (Figure 2—figure supplement 4). Transmission electron microscopy (TEM), which could provide direct evidence of ultrastructural defects, could not be performed due to the very low number of sperm cells available from ZMYND12 individuals.
 
-## TbTAX-1, the Trypanosoma brucei ortholog of ZMYND12, is an axoneme-associated protein involved in flagellar motility
+### TbTAX-1, the Trypanosoma brucei ortholog of ZMYND12, is an axoneme-associated protein involved in flagellar motility
 
 To validate our candidate gene and better characterize ZMYND12 localization and function, we used the Trypanosoma model. Forward and reverse genetic approaches are well established for this model, and have largely contributed to the characterization of the molecular pathogenesis of a number of human diseases caused by defective cilia and/or flagella (Vincensini et al., 2011). BlastP analysis of the T. brucei genome database (Aslett et al., 2010) identified the putative ortholog of ZMYND12 as Tb927.9.10370. The T. brucei gene encodes TbTAX-1, a 363 amino acid protein previously identified by proteomics analyses as a flagellar protein, annotated as the inner dynein arm protein/p38 (FAP146) (Broadhead et al., 2006; Ralston et al., 2009). Human ZMYND12 (Q9H0C1) and TbTAX-1 share 29% protein identity and 48% similarity. Both proteins contain a TPR motif domain potentially involved in protein–protein interaction (D’Andrea and Regan, 2003; Figure 3—figure supplement 1).
 
@@ -103,17 +281,41 @@ RNAi knock-down of TbTAX-1 in the bloodstream form (BSF) of T. brucei is reporte
 
 Here, to analyze the protein’s localization by IF on detergent-extracted cells (cytoskeletons, CSK), we generated a procyclic T. brucei cell line endogenously expressing myc-tagged TbTAX-1 (mycTbTAX-1). MycTbTAX-1 specifically localized to the flagellum, as shown by co-staining with the Paraflagellar Rod-2 protein (PFR2), a marker of the para-axonemal and axoneme-associated structure (PFR) (Figure 3A). Importantly, MycTbTAX-1 was found to associate with the axoneme fraction of the flagellum, with staining observed in the distal part of the flagellum, beyond the limit of PFR labeling (Figure 3A). Furthermore, mycTbTAX-1 labeling was observed in both the old flagellum (OF) and the new flagellum (NF), indicating that the protein is present at all stages of the cell cycle, in line with proteomics data reported for the Trypanosoma cell cycle (Crozier et al., 2018).
 
-## T. brucei TAX-1 is involved in flagellum motility
+![Figure 3.](https://cdn.elifesciences.org/articles/87698/elife-87698-fig3-v1.jpg)
+
+**Figure 3.:** (A) Representative image of a post-mitotic detergent-extracted cell immunolabelled with anti-PFR2 (magenta) staining the paraflagellar rod (a para-axonemal structure) and anti-myc (yellow) to reveal mycTbTAX-1. The protein was detected on the axoneme in both the old flagellum (OF) and the new flagellum (NF). Immunolabeling indicated that the axonemal localization of mycTbTAX-1 extended distally along the flagellum beyond the region labelled by PFR2 (see zoom). The mitochondrial genome (kinetoplast, k) and nuclei (N) were stained with DAPI. The outline of the cell body is indicated by the dashed white line. Scale bars: 5 μm in whole-cell images; 1 μm in zoomed images. (B) Anti-myc western blot analysis of RNAiTbTAX-1 knock-down 24-, 48-, or 72-hr post-induction. mycTbTAX-1 protein levels were reduced in induced cells (I) compared to non-induced cells (NI); TbSAXO, a flagellum-specific protein, was used as loading control. (C) Representative image of a detergent-extracted post-mitotic cell after RNAiTbTAX-1 induction, showing a strong decrease in mycTbTAX-1 labeling in the NF compared to the OF. (D) Comparative T. brucei growth curves for wild-type (WT), non-induced (NI), and tetracycline-induced RNAiTbTAX-1 cell lines at 0-, 24-, 48-, and 72-hr post-induction. (E) Mobility tracking from video microscopy recordings of live cells: WT and RNAiTbTAX-1 after induction for 72 hr. The positions of individual cells are plotted at 0.28 s intervals; circles indicate start positions, arrowheads indicate end positions. A dramatic loss of progressive mobility was observed after TbTAX1 protein knock-down. Scale bars: 20 μm. (F) Sedimentation assays for T. brucei WT, non-induced (NI), and tetracycline-induced RNAiTbTAX-1 at 24-, 48-, and 72-hr post-induction. The percentage of cells sedimenting increased from 20 to 70% after depletion of the TbTAX-1 protein.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/87698/elife-87698-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Clustal Omega alignment of human ZYMND12 and TbTAX-1. (B) Schematic representation of wild-type and truncated forms of ZYMND12 and TbTAX-1.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/87698/elife-87698-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Micrograph of wild-type (WT) cells and TbTAX-1 RNAi-induced cells (48 hr) in thin section. The characteristic 9+2 structure of the axoneme and the paraflagellar structure (PFR) are visible, and no obvious structural defects are observed in RNAi-induced cells.
+
+### T. brucei TAX-1 is involved in flagellum motility
 
 To assess the functional role of TbTAX-1 in the procyclic parasite model, we used a tetracycline-inducible RNA interference (RNAi) system (Wirtz et al., 1999) to knock-down TbTAX-1 expression. Using the mycTbTAX-1/TbTAX-1RNAi T. brucei cell line (Figure 3), we observed the effects of TbTAX-1 knock-down following the addition of tetracycline. Western blot analysis confirmed successful RNA interference, leading to a significant reduction in TbTAX-1 protein levels (Figure 3B). These results were confirmed by IF, where expression of MycTbTAX-1 was strongly reduced in the NF compared to the OF (Figure 3C). Comparison of TEM images of thin sections from wild-type (WT) and RNAi-induced cells after 7 days revealed no obvious differences in flagellum ultrastructure (Figure 3—figure supplement 2), and TbTAX-1 knock-down had no effect on cell growth (Figure 3D). However, video microscopy evidence pointed to a strong mobility defect (Videos 1 and 2). Tracking analysis (Figure 3E) indicated that reduced mobility was linked to problems with flagellar beating. In line with these observations, sedimentation assays showed that after induction for 48 hr, 70% of RNAi-induced cells had sedimented (Figure 3F).
 
-## The truncated TbTAX-1 protein is not associated with the flagellum and cannot rescue the motility defect induced by TbTAX-1 RNAi
+![Video 1.](https://cdn.elifesciences.org/articles/87698/elife-87698-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/87698/elife-87698-video2.mp4.jpg)
+
+### The truncated TbTAX-1 protein is not associated with the flagellum and cannot rescue the motility defect induced by TbTAX-1 RNAi
 
 The p.Arg145Ter mutation of ZYMND12 identified in MMAF individuals could theoretically produce a truncated form of the protein (aa 1–144). To assess where a similar truncated protein – TbTAX-1 (aa 1–128) – would localize, we generated a TAX-1HA Trypanosoma cell line expressing the truncated form TbTAX-1TruncTy1 alongside the tagged full-length form. The relative sizes of the mutated, truncated ZMYND12 protein potentially encoded in human patients and the equivalent modified, truncated protein – TbTAX1Trunc – are presented in Figure 3—figure supplement 1B.
 
 In this cell line, expression of TbTAX-1RNAi – specifically targeting the full-length protein and not the truncated form – was inducible (Figure 4A). Western blot analysis of fractionated samples (whole cells (WC), detergent-extracted cells or CSK, and the flagellum fraction (FG)), we localized the truncated TbTAX-1TruncTy1 protein (Figure 4B). The full-length TbTAX-1 protein was strongly associated with the axoneme, and was detected in the salt-extracted flagellum fraction. In contrast, the truncated TbTAX-1TruncTy1 form was detected neither in the flagellum nor in the CSK-associated fractions (Figure 4B). These results were confirmed by IF on CSK (Figure 4C). As expected, induction of TbTAX-1RNAi led to decreased TbTAX-1 levels, but had no effect on TbTAX-1TruncTy1 (Figure 4D). Cell growth was not affected (Figure 4E), and the sedimentation phenotype was still observed (Figure 4F). Thus, it appears that the N-terminal domain of TbTAX-1 is not involved in protein targeting and function, and cannot complement TbTAX-1 RNAi knock-down.
 
-## TbTTC29 and TAX-1 belong to the same protein complex; TbTTC29 expression depends on TbTAX-1
+![Figure 4.](https://cdn.elifesciences.org/articles/87698/elife-87698-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic representation of full-length TbTAX-1 and its truncated form. The TPR-like domain is illustrated in light blue, and the targeted RNA interference sequence in dark blue. (B) Western blot analysis of subcellular fractions to determine localization of TbTAX-1HA and its truncated form TbTAX-1TruncTy1. Enolase (cytoplasm) and tubulin (cytoskeleton) were used as loading controls. (C) Immunofluorescence labeling of detergent-extracted cytoskeletons to detect TbTAX-1HA (yellow) and TbTAX-1TruncTy1 (stained green, but not visible as the protein was eliminated during detergent extraction). Scale bars: 5 μm. (D) Western blot analysis of the impact of RNAiTbTAX-1 expression on TbTAX-1TruncTy1 levels. Enolase was used as a loading control. (E) Growth curves of wild-type (WT), non-induced (NI), and RNAiTbTAX-1-induced cells expressing TbTAX-1HA and TbTAX-1TruncTy1. (F) Sedimentation assays for T. brucei WT, non-induced (NI), and RNAiTbTAX-1-induced cells at 24, 48, and 72 hr.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/87698/elife-87698-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) TbWDR66, TbCFAP70, and TbSPAG6 are axoneme-associated proteins according to western blot analysis of whole-cell (WC) lysate, detergent-extracted cytoskeletons (CSK), salt-extracted flagella (Fg). Enolase was used as extraction control for cytoskeleton and flagella samples. (B) Co-immunoprecipitation assays using anti-Ty1 (IPTy1) in cell lines expressing TbTAX-1HA alongside TbWDR66Ty1 or TbCFAP70 or TbSPAG6Ty1. Proteins were detected simultaneously by western blotting using anti-Ty1 and anti-HA antibodies and their corresponding fluorescent secondary antibodies. (C) Western blot analysis of the fate of TbWDR66Ty1, TbCFAP70Ty1, or TbPF16/SPAG6Ty1 in TbTAX-1 RNAi cells; non-induced (NI) cells, and cells induced for 24, 48, or 72 hr. Enolase served as loading control. (D) Ultrastructure expansion microscopy (U-ExM) co-immunolabeling of TbTAX-1HA (cyan) and TbWDR66Ty1, TbCFAP70Ty1, or TbSPAG6Ty1 (magenta).
+
+#### TbTTC29 and TAX-1 belong to the same protein complex; TbTTC29 expression depends on TbTAX-1
 
 As indicated above, in IF analyses of spermatozoa from individuals bearing a mutated ZYMND12, proteins CFAP70, WDR66, TTC29, and SPAG6 were undetected. To further study associations between these proteins, we generated T. brucei TbTAX-1HA/TbTAX-1RNAi background cell lines expressing their respective orthologs, that is, TbCFAP70Ty1 (Tb927.10.2380), TbWDR66Ty1 (Tb927.3.1670), TbTTC29Ty1 (Tb927.3.1990), and Ty1TbPF16/SPAG6 (Tb927.1.2670).
 
@@ -123,11 +325,11 @@ In contrast, decreased TbTAX-1 levels were associated with decreased TbTTC29 exp
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/87698/elife-87698-fig5-v1.jpg)
 
-**Figure 5.:** (A) Analysis of the impact of TbTAX-1 RNAi on TbTTC29Ty1 protein levels. Western blot (upper panel) and quantification (lower panel). (B) Analysis of the impact of TbTTC29 RNAi induction on TbTAX-1HA protein levels. Western blot (upper panel) and quantification (lower panel). (C) Ultrastructure expansion microscopy (U-ExM) analysis of TbTAX-1HA (yellow) and TbTTC29TY1 (purple) colocalization in a dividing cell with an old flagellum (OF) and a new flagellum (NF). Kinetoplast (k) and nuclei (N) were counterstained with Hoechst (blue). (D) Confocal image of U-ExM labeling of TbTAX-1HA (yellow) and TbTTC29TY1 (magenta) (upper panel). Lower panel: profile plot along the white line showing overlapping intensity peaks for TbTAX-1 and TbTTC29, confirming true colocalization. (E) Anti-Ty1 (IPTy1) or anti-HA (IPHA) co-immunoprecipitation assays in cell lines expressing both TbTAX-1HA and TbTTC29Ty1, or TbTTC29Ty1 alone or TbTAX-1HA alone to verify IP specificity. Proteins were detected simultaneously by western blotting using anti-Ty1 and anti-HA antibodies and fluorescent anti-mouse (detecting mouse anti-Ty1) and anti-rabbit (detecting rabbit anti-HA) secondary antibodies. IP assays on cell lines expressing only one or the other tagged protein did not pull down the other tagged protein.Figure 5—source data 1.Figure 5A.Figure 5—source data 2.Figure 5B.Figure 5—source data 3.Figure 5E.
+**Figure 5.:** (A) Analysis of the impact of TbTAX-1 RNAi on TbTTC29Ty1 protein levels. Western blot (upper panel) and quantification (lower panel). (B) Analysis of the impact of TbTTC29 RNAi induction on TbTAX-1HA protein levels. Western blot (upper panel) and quantification (lower panel). (C) Ultrastructure expansion microscopy (U-ExM) analysis of TbTAX-1HA (yellow) and TbTTC29TY1 (purple) colocalization in a dividing cell with an old flagellum (OF) and a new flagellum (NF). Kinetoplast (k) and nuclei (N) were counterstained with Hoechst (blue). (D) Confocal image of U-ExM labeling of TbTAX-1HA (yellow) and TbTTC29TY1 (magenta) (upper panel). Lower panel: profile plot along the white line showing overlapping intensity peaks for TbTAX-1 and TbTTC29, confirming true colocalization. (E) Anti-Ty1 (IPTy1) or anti-HA (IPHA) co-immunoprecipitation assays in cell lines expressing both TbTAX-1HA and TbTTC29Ty1, or TbTTC29Ty1 alone or TbTAX-1HA alone to verify IP specificity. Proteins were detected simultaneously by western blotting using anti-Ty1 and anti-HA antibodies and fluorescent anti-mouse (detecting mouse anti-Ty1) and anti-rabbit (detecting rabbit anti-HA) secondary antibodies. IP assays on cell lines expressing only one or the other tagged protein did not pull down the other tagged protein.
 
 The co-immunoprecipitated proteins were further analyzed by mass spectrometry. Comparative analysis of the significant hits in each co-IP (anti-Ty1 and anti-HA) (enrichment fold ≥2) identified two additional proteins enriched in both IPs: Tb927.11.3880 – a flagellar actin-like protein (Ersfeld and Gull, 2001) – and Tb927.11.8160 – a putative inner arm dynein heavy chain protein belonging to the IAD-4 protein family (data summarized in Supplementary file 1). Tb927.11.8160 is potentially involved in flagellum motility (Wickstead and Gull, 2007), it localizes along the T. brucei axoneme according to the TrypTag genome-wide protein localization resource (http://tryptag.org/; Dean et al., 2017). Significantly, BlastP searches of mammalian genomes for Tb927.11.8160 orthologs identified DNAH1 (Protein ID: XP_828890.1).
 
-## DNAH1 and DNALI1 both interact with TTC29 in mouse
+### DNAH1 and DNALI1 both interact with TTC29 in mouse
 
 In a recent human study, we showed that the presence of bi-allelic TTC29 variants induces an MMAF phenotype and male infertility (Lorès et al., 2019). By CRISPR/Cas9 mutagenesis and RNAi silencing, we demonstrated that the orthologous TTC29 proteins in mouse and in T. brucei, respectively, also constitute flagellar proteins that are required for proper flagellum beating, indicating an evolutionarily conserved function for TTC29 (Lorès et al., 2019).
 
@@ -149,37 +351,37 @@ The results presented here demonstrate that the combined use of exome sequencing
 
 ## Materials and methods
 
-## Study participants
+### Study participants
 
 WES data from a previously established cohort of 167 MMAF individuals were analyzed (Coutton et al., 2019). All individuals presented a typical MMAF phenotype characterized by severe asthenozoospermia (total sperm motility below 10%), with >5% of the spermatozoa displaying at least three of the following flagellar abnormalities: short, absent, coiled, bent, or irregular flagella (Coutton et al., 2019). All individuals had a normal somatic karyotype (46,XY) with normal bilateral testicular size, hormone levels, and secondary sexual characteristics. Sperm were analyzed in the source laboratories during routine biological examination of the individuals according to World Health Organization (WHO) guidelines (Wang et al., 2014). An additional Chinese individual was included in the study from a familial case. This individual was enrolled from the Human Sperm Bank of West China Second University Hospital of Sichuan University; he presented with severe asthenoteratozoospermia and a typical MMAF phenotype. WES analysis for this subject was performed as described in the previous report (Liu et al., 2021). Sperm morphology was assessed following Papanicolaou staining (Figure 1A). Detailed semen parameters of the four individuals carrying ZMYND12 mutations (ZMYND12_1–4) are presented in Table 1. Sperm samples for additional phenotypic characterization were obtained from ZMYND12_3. Written informed consent was obtained from all individuals participating in the study, and institutional approval was given by the local medical ethics committee (CHU Grenoble Alpes institutional review board #6705). Samples were stored in the Fertithèque collection registered with the French Ministry of Health (DC-2015-2580) and the French Data Protection Authority (DR-2016-392).
 
-## WES and bioinformatics analysis
+### WES and bioinformatics analysis
 
 Genomic DNA was isolated from EDTA blood using DNeasy Blood & Tissue Kits (QIAGEN SA). Genetic data were obtained through several sequencing centers, in particular Novogene, Genoscope, and Integragen. Coding regions and intron/exon boundaries were sequenced after enrichment using Agilent SureSelect Human All Exon V5, V6, or Clinical Research capture kits. An alignment-ready GRCh38 reference genome (including ALT, decoy, and HLA) was produced using ‘run-gen-ref hs38DH’ from Heng Li’s bwakit package (https://github.com/lh3/bwa; Li, 2017). Exomes were analyzed using a bioinformatics pipeline developed in-house. The pipeline consists of two modules, both distributed under the GNU General Public License v3.0 and available on github (grexome-TIMC-Primary TIMC primary, https://github.com/ntm/grexome-TIMC-Primary; copy archived at Thierry-Mieg, 2023a, TIMC secondary, https://github.com/ntm/grexome-TIMC-Secondary; copy archived at Thierry-Mieg, 2023b). The first module takes FASTQ files as input and produces a single merged GVCF file per variant-caller, as follows: trim adaptors and filter low-quality reads with fastp 0.23.2, align reads with BWA-MEM 0.7.17, mark duplicates using samblaster 0.1.26, and sort and index BAM files with samtools 1.15.1. SNVs and short indels are called from each BAM file using strelka 2.9.10 (Kim et al., 2018) and GATK 4.1.8.1 to produce individual GVCF files from each variant-caller. These files are finally merged using mergeGVCFs.pl to obtain a single multi-sample GVCF per caller. Using several variant-callers helps to compensate for each caller’s flaws. The second module takes each merged GVCF as input and produces annotated analysis-ready TSV files. Annotation involved 17 streamlined tasks: Low-quality variant calls (DP <10, GQ <20, or less than 15% of reads supporting the ALT allele) were discarded. Variant Effect Predictor v108 (McLaren et al., 2016) was used to annotate variants and predict their impact, in order to filter out low-impact (MODIFIER) variants and/or prioritize high-impact ones (e.g., stop-gain or frameshift variants). Variants with a minor allele frequency greater than 1% in gnomAD v.2.1 or 3% in 1000 Genomes Project phase 3 were excluded. The pipeline performs an integrative analysis of all available exomes, both at the individual variant level and at the gene level. Thus, recurring genomic variants are readily identified alongside genes that are severely impacted in several patients but not in control subjects. Additional information can be found in Arafah et al., 2021. Copy number variants were searched using the ExomeDepth software package, as previously reported (Kherraf et al., 2018; Plagnol et al., 2012).
 
-## Sanger sequencing
+### Sanger sequencing
 
 ZMYND12 single-nucleotide variants identified by exome sequencing were validated by Sanger sequencing as previously described (Coutton et al., 2019). PCR primers and protocols used for each individual are listed in Supplementary file 3.
 
-## MLPA analysis
+### MLPA analysis
 
 Deletion of exons 6–8 identified in individual ZMYND12_2 by exome sequencing was confirmed by custom MLPA analysis, according to our previously described method (Coutton et al., 2012). The MLPA probes were designed, and the MLPA reaction was performed according to the recommendations set out in the MRC-Holland synthetic protocol (https://mlpa.com/). Data analysis was also performed in line with this protocol. For this study, three synthetic MLPA probes specific for exons 5, 6, and 8 of ZMYND12 were designed. MLPA probes are listed in Supplementary file 4.
 
-## RT-qPCR analysis
+### RT-qPCR analysis
 
 RT-qPCR experiments were performed as previously described (Coutton et al., 2019) with cDNAs extracted from various human tissues purchased from Life Technologies. A panel of 10 organs was used for experiments: testis, brain, trachea, lung, kidney, liver, skeletal muscle, pancreas, placenta, and heart. Human RT-qPCR data were normalized relative to the two reference housekeeping genes RPL6 and RPL27 by the −ΔΔCt method (Livak and Schmittgen, 2001). Primer sequences and RT-qPCR conditions are indicated in Supplementary file 5. Relative expression of ZMYND12 transcripts was compared in several organs, and statistical analysis involved a two-tailed t-test (Prism 4.0 software; GraphPad, San Diego, CA). A p-value ≤0.05 was considered significant.
 
-## Immunostaining in human sperm cells
+### Immunostaining in human sperm cells
 
 IF experiments were performed on sperm cells from control individuals, from individual ZMYND12_3 – carrier of the nonsense variant c.103C>T – and from a previously reported MMAF individual – carrier of the TTC29 splicing variant c.1761+1G>A (Lorès et al., 2019). For each MMAF individual, 200 sperm cells were analyzed by two experienced operators, and the IF staining intensity and patterns were compared to those obtained from fertile control individuals. Sperm cells were fixed in phosphate-buffered saline (PBS)/4% paraformaldehyde for 1 min at room temperature. After washing in 1 ml PBS, the sperm suspension was spotted onto 0.1% poly L-lysine pre-coated slides (Thermo Scientific). After attachment, sperm were permeabilized with 0.1% (vol/vol) Triton X-100–DPBS (Dulbecco's Phosphate-buffered saline) (Triton X-100; Sigma-Aldrich) for 5 min at RT. Slides were then blocked by applying 5% normal serum–DPBS (normal goat or donkey serum; Gibco, Invitrogen) before incubating overnight at 4°C with the primary antibody. The following primary antibodies were used: ZMYND12, DNAI1, DNALI1, DNAH1, DNAH8, DNAH17, RSPH1, SPAG6, GAS8, CFAP70, WDR66 (also known as CFAP251), TTC29, AKAP4, and acetylated-α-tubulin. The primary antibody references and dilutions are fully detailed in Supplementary file 6. Slides were washed with 0.1% (vol/vol) Tween 20–DPBS before incubating for 1 hr at room temperature with secondary antibodies. Highly cross-adsorbed secondary antibodies (Dylight 488 and Dylight 549, 1:1000) were purchased from Jackson Immunoresearch. Experimental controls were treated similarly, but omitting the primary antibodies. Samples were counterstained with DAPI and mounted with DAKO mounting media (Life Technology). Fluorescence images were captured with a confocal microscope (Zeiss LSM 710).
 
-## T. brucei cell lines, culture, and transfection
+### T. brucei cell lines, culture, and transfection
 
 The trypanosome cell lines used in this study are derived from the procyclic parental form, T. brucei SmOxP427 (Sunter, 2016). The absence of contamination of the cell line by Mycoplasma was verified by PCR. Our PCR and sequencing data also confirmed that all cell lines were T. brucei brucei Lister 427 and carried in situ or episomal the designated sequence. These cells co-express the T7 RNA polymerase and the tetracycline repressor and were grown and transfected as previously described (Kherraf et al., 2018). When required, the culture medium was supplemented with puromycin (1 μg/ml), neomycin (10 μg/ml), phleomycin (5 μg/ml), or hygromycin (25 μg/ml). Cells were transfected using an AMAXA electroporator (Lonza) as previously described (Schumann Burkard et al., 2011). TbTAX-1 RNA interference was induced with tetracycline (10 μg/ml).
 
 Tagged proteins were obtained from SmOxP427 cells, by inserting epitope-tagged transgenes at the endogenous locus. Transgenes were N- or C-terminally tagged with 10myc, 10Ty1, or 10HA tags using the pPOTv7 vector series, as previously described (Dean et al., 2015; Kherraf et al., 2018). For RNAiTbTAX-1 knock-down, bp 219–667 were cloned between the XhoI and XbaI sites of p2T7tiB (LaCount et al., 2002) and the linearized vector was transfected into endogenously tagged TbTAX-1-background cell lines. To target the full-length TbTAX-1 and not the shorter form, similar cloning was performed with bp 493–917. The TbTTC29Ty1 RNAi cell line is described elsewhere (Lorès et al., 2019).
 
-## Co-immunoprecipitation and mass spectrometry on Trypanosoma cells
+### Co-immunoprecipitation and mass spectrometry on Trypanosoma cells
 
 In a 15-ml polycarbonate tube, 2 × 108 cells expressing the different tagged proteins were washed in PBS and incubated for 5 min at RT in 1 ml of immunoprecipitation buffer for cell lysis (IP buffer; 25 mM Tris–HCl pH 7.4, 100 mM NaCl, 0.25% Nonidet P-40 (Igepal), 1 mM DTT(Dithiothréitol), protease inhibitor cocktail, and 1 unit of nuclease) (Pierce). Lysis was completed by sonication (5 × 30 s ON/30 s OFF) in a Bioruptor sonication system. Cell lysates were clarified by centrifugation (10 min, 16,000 × g, 4°C) and split into two samples each. One was incubated with 3 μl of anti-Ty1 and the other with 2 μl of mouse anti-HA for 1 hr at 4°C on a rotating wheel. Protein-G Dynabead (Invitrogen 10003D) slurry (40 µl) was washed in IP buffer and incubated with the samples for 1 hr at 4. After washing three times in IP buffer, beads were resuspended in 40 μl sample buffer and boiled before loading 20 μl on sodium dodecyl sulfate–polyacrylamide gel electrophoresis (SDS–PAGE).
 
@@ -187,27 +389,27 @@ For mass spectrometry analyses, 1.8 × 109 cells were washed in PBS, resuspended
 
 Protein-G Dynabeads were resuspended in Laemmli buffer and boiled. Supernatants were loaded on a 10% acrylamide SDS–PAGE gel, and proteins were revealed by Colloidal Blue staining. Sample preparation and protein digestion by trypsin were performed as previously described (Allmann et al., 2014). NanoLC-tandem mass spectrometry (MS/MS) analyses were performed using an Ultimate 3000 RSLC Nano-UPHLC system (Thermo Scientific, USA) coupled to a nanospray Orbitrap Fusion Lumos Tribrid Mass Spectrometer (Thermo Fisher Scientific, California, USA). Each peptide extract was loaded on a 300 µm ID × 5 mm PepMap C18 pre-column (Thermo Scientific, USA) at a flow rate of 10 µl/min. After a 3-min desalting step, peptides were separated on a 50-cm EasySpray column (75 µm ID, 2 µm C18 beads, 100 Å pore size; ES903, Thermo Fisher Scientific) by applying a 4–40% linear gradient of solvent B (0.1% formic acid in 80% acetonitrile [ACN]) over 48 min. The flow rate for separation was set to 300 nl/min. The mass spectrometer was operated in positive ion mode at a 2.0 kV needle voltage. Data were acquired using Xcalibur 4.4 software in data-dependent mode. MS scans (m/z 375–1500) were recorded at a resolution of R = 120,000 (@ m/z 200) and an Automated Gain Control (AGC) target of 4 × 105 ions collected within 50 ms was applied along with a top speed duty cycle of up to 3 s for MS/MS acquisition. Precursor ions (2–7 charge states) were isolated in the quadrupole within a mass window of 1.6 Th, and fragmented by Higher-energy Collisional Dissociation (HCD), applying 28% normalized collision energy. MS/MS data were acquired in the Orbitrap cell at a resolution of R = 30,000 (m/z 200), a standard AGC target and a maximum injection time in automatic mode. A 60-s exclusion window was applied to previously selected precursors. Proteome Discoverer 2.5 was used to identify proteins and perform label-free quantification (LFQ). Proteins were identified in batch mode using MS Amanda 2.0, Sequest HT, and Mascot 2.5 algorithms, with searches performed against a T. brucei brucei TREU927 protein database (9788 entries, release 57, https://tritrypdb.org/ website). Up to two missed trypsin cleavages were allowed. Mass tolerances in MS and MS/MS were set to 10 ppm and 0.02 Da, respectively. Oxidation (M) and acetylation (K) were included as dynamic modifications, and carbamidomethylation (C) as a static modification. Peptides were validated using the Percolator algorithm (Käll et al., 2007), retaining only ‘high confidence’ peptides, corresponding to a 1% false discovery rate at the peptide level. The minora feature-detector node (LFQ) was used along with the feature-mapper and precursor ion quantifier. The following quantification parameters were applied: (1) unique peptides; (2) precursor abundance based on intensity; (3) no normalization; (4) protein abundance calculation: summed abundances; (5) protein ratio calculation: pairwise ratios; (6) imputation mode: low abundance resampling; and (7) hypothesis test: t-test (background based). For master proteins, quantitative data were considered based on a minimum of two unique peptides, a fold-change greater than 2 and a Benjamini–Hochberg-corrected p-value for the FDR of less than 0.05. Mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE partner repository (Adhikari et al., 2020), under dataset identifier PXD039470.
 
-## IF on Trypanosoma cells
+### IF on Trypanosoma cells
 
 Cells were harvested, washed, and processed for immunolabeling on methanol-fixed detergent-extracted cells (CSK) as described in Albisetti et al., 2017. The antibodies used and their dilutions are listed in Supplementary file 7. Images were acquired on a Zeiss Imager Z1 microscope, using a Photometrics Coolsnap HQ2 camera, with a ×100 Zeiss objective (NA 1.4) using Metamorph software (Molecular Devices), and processed with ImageJ (NIH).
 
-## U-ExM on Trypanosoma cells
+### U-ExM on Trypanosoma cells
 
 The U-ExM protocol has been adapted and optimized for use on trypanosomes, as described (Gambarotto et al., 2021). Protocol details can be found online at https://doi.org/10.17504/protocols.io.bvwqn7dw (Casas et al., 2022). Images were acquired on a Zeiss AxioImager Z1 using a ×63 (1.4 NA) objective, or at the Bordeaux Imaging Center with a Leica TCS SP5 on an upright stand DM6000 (Leica Microsystems, Mannheim, Germany), fitted with a HCX Plan Apo CS ×63 oil NA 1.40 objective. Images were processed and analyzed using ImageJ and Fiji software (Schindelin et al., 2012; Schneider et al., 2012).
 
-## Trypanosoma cells: sedimentation assays and video microscopy
+### Trypanosoma cells: sedimentation assays and video microscopy
 
 Sedimentation assays were performed as described (Dacheux et al., 2012). Briefly, cells were placed in cuvettes and incubated for 24 hr without shaking. Optical density (OD600 nm) was measured before mixing (ODb, to detect ‘swimming’ cells) and after mixing (ODa, to detect ‘swimming’ plus ‘sedimenting’ cells). The percentage of sedimented cells was calculated as 100 − (ODb/ODa) × 100 for the WT and RNAi cells. Sedimentation of RNAi cells was normalized relative to the tagged TbTAX-1 parental cell line. Video microscopy was carried out as described (Lorès et al., 2019). Briefly, PCF(Procyclic Form) cells (WT cell and RNAiTbTAX-1 cells 72 hr after induction) were washed in PBS, and cell mobility was recorded by phase-contrast microscopy on a Zeiss AxioImager Z1, ×40 lens (NA 1.3). A 28-s sequence of digital video was captured from separate regions and analyzed using Metamorph software (Molecular Devices) (speed x8). The positions of individual cells were plotted over 0.28-s intervals. The start and end positions of each cell were marked.
 
-## TEM on Trypanosoma cells
+### TEM on Trypanosoma cells
 
 TEM blocks of Trypanosoma cells and thin sections were prepared as previously described (Albisetti et al., 2017). Thin sections were visualized on an FEI Tecnai 12 electron microscope. Images were captured on an ORIUS 1000 11M Pixel camera (resolution 3 ± 5 nm) controlled by Digitalmicrograph, and processed using ImageJ (NIH).
 
-## Western blot analyses of Trypanosoma cells
+### Western blot analyses of Trypanosoma cells
 
 Proteins from WCs, detergent-extracted CSK and flagella, or co-IPs were separated on SDS–PAGE gels. Separated proteins were transferred by semi-dry transfer to PVDF(polyvinylidene difluoride) and low-fluorescence PVDF membranes for further processing, as described (Albisetti et al., 2017). The antibodies used and their dilutions are listed in Supplementary file 7. For IP analysis, primary antibodies – anti-TY1 and rabbit anti-HA (GTX115044) – and fluorescent secondary antibodies – anti-mouse Starbright Blue 520 (Bio-Rad 12005867) and anti-rabbit Starbright Blue 700 (Bio-Rad 12004162) – were used.
 
-## Co-immunoprecipitation and mass spectrometry analysis on Ttc29−/− mouse testes
+### Co-immunoprecipitation and mass spectrometry analysis on Ttc29−/− mouse testes
 
 Testes from WT and Ttc29−/− L5 and L7 mice (Lorès et al., 2019) were dissected in cold PBS; the albuginea was removed and the seminiferous tubules were dissociated and pelleted by brief centrifugation. Proteins from the pellets were extracted in 1 ml lysis buffer: 50 mM Tris–HCl, pH 8, 150 mM NaCl, 10 mM MgCl2, 0.5% NP40, and Complete protease inhibitor cocktail (Roche Applied science). Immunoprecipitation was performed on total-protein lysate using 1 μg of rabbit polyclonal TTC29 antibody (HPA061473, Sigma-Aldrich) and 15 μl of Protein A/G magnetics beads (Bio-Ademtec) according to the manufacturer’s instructions. The experiment was replicated with four mice for each genotype.
 

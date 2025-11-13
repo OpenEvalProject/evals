@@ -25,7 +25,7 @@
 
 ## Abstract
 
-Fatal Familial Insomnia (FFI) is a genetic prion disease caused by the D178N mutation in the prion protein gene (PRNP) in coupling phase with methionine at PRNP 129. In 2017, we have shown that the olfactory mucosa (OM) collected from FFI patients contained traces of PrPSc detectable by Protein Misfolding Cyclic Amplification (PMCA). In this work, we have challenged PMCA-generated products obtained from OM and brain homogenate of FFI patients in BvPrP-Tg407 transgenic mice expressing the bank vole prion protein to test their ability to induce prion pathology. All inoculated mice developed mild spongiform changes, astroglial activation, and PrPSc deposition mainly affecting the thalamus. However, their neuropathological alterations were different from those found in the brain of BvPrP-Tg407 mice injected with raw FFI brain homogenate. Although with some experimental constraints, we show that PrPSc present in OM of FFI patients is potentially infectious. This work was supported in part by the Italian Ministry of Health (GR-2013-02355724 and Ricerca Corrente), MJFF, ALZ, Alzheimer’s Research UK and the Weston Brain Institute (BAND2015), and Euronanomed III (SPEEDY) to FM; by the Spanish Ministerio de Economía y Competitividad (grant AGL2016-78054-R [AEI/FEDER, UE]) to JMT and JCE; AM-M was supported by a fellowship from the INIA (FPI-SGIT-2015-02).
+Background:Fatal Familial Insomnia (FFI) is a genetic prion disease caused by the D178N mutation in the prion protein gene (PRNP) in coupling phase with methionine at PRNP 129. In 2017, we have shown that the olfactory mucosa (OM) collected from FFI patients contained traces of PrPSc detectable by Protein Misfolding Cyclic Amplification (PMCA).Methods:In this work, we have challenged PMCA-generated products obtained from OM and brain homogenate of FFI patients in BvPrP-Tg407 transgenic mice expressing the bank vole prion protein to test their ability to induce prion pathology.Results:All inoculated mice developed mild spongiform changes, astroglial activation, and PrPSc deposition mainly affecting the thalamus. However, their neuropathological alterations were different from those found in the brain of BvPrP-Tg407 mice injected with raw FFI brain homogenate.Conclusions:Although with some experimental constraints, we show that PrPSc present in OM of FFI patients is potentially infectious.Funding:This work was supported in part by the Italian Ministry of Health (GR-2013-02355724 and Ricerca Corrente), MJFF, ALZ, Alzheimer’s Research UK and the Weston Brain Institute (BAND2015), and Euronanomed III (SPEEDY) to FM; by the Spanish Ministerio de Economía y Competitividad (grant AGL2016-78054-R [AEI/FEDER, UE]) to JMT and JCE; AM-M was supported by a fellowship from the INIA (FPI-SGIT-2015-02).
 
 ## Introduction
 
@@ -35,11 +35,329 @@ In the present study, we verified whether PMCA-generated products possess infect
 
 ## Materials and methods
 
-## BvPrP-Tg407 animal model
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>BvPrP-Tg407 mice</td>
+      <td>DOI:10.1128/JVI.01592-16</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>recBvPrP90-231</td>
+      <td>DOI:10.1038/srep46269</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>6D11</td>
+      <td>Covance</td>
+      <td>Catalog # SIG-399810 RRID:AB_2564735</td>
+      <td>WB: 0.2 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Sha31</td>
+      <td>SPI Bio</td>
+      <td>Catalog # A03213</td>
+      <td>WB: 0.4 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse IgG HRP Linked F(ab’)2 Fragment</td>
+      <td>GE</td>
+      <td>Catalog # NA9310V</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Saf34</td>
+      <td></td>
+      <td></td>
+      <td>Gently provided by Prof. Jacques Grassi DOI:10.1111/j.1471-4159.2004.02356.x DOI:10.1006/bbrc.1999.1730 IHC: 1.25 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFAP antibody</td>
+      <td>DAKO</td>
+      <td>Catalog # Z0334 RRID:AB_10013382</td>
+      <td>IHC: 0.5 µg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PBS</td>
+      <td>Gibco</td>
+      <td>Catalog # 14200-067</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isofluorane</td>
+      <td>Isoba vet Schering-Plough S.A. (Merck company)</td>
+      <td>Catalog # 792632</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glucose</td>
+      <td>Gibco</td>
+      <td>Catalog # A2494001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Proteinase K</td>
+      <td>Invitrogen</td>
+      <td>Catalog # AM2542</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Guanidine hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog # 50950</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NaCl</td>
+      <td>Carlo Erba</td>
+      <td>Catalog # 479686</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EDTA</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog # 03690</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NP40</td>
+      <td>BDH</td>
+      <td>Catalog # 56009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Deoxycholic acid, sodium salt</td>
+      <td>Millipore</td>
+      <td>Catalog # 264101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris-hydroxymethyl-aminomethane (Tris-HCl)</td>
+      <td>Carlo Erba</td>
+      <td>Catalog # 489973</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blotto, non-fat dry milk</td>
+      <td>Santa Cruz</td>
+      <td>Catalog # SC-2325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Lauroylsarcosine sodium salt (sarkosyl)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog # 61747</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphate buffered saline -RT-QuIC</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog # P5493</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium dodecyl sulfate solution</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog # 71736</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thioflavin T</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog # T3516</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethanol (for Carnoy fixative preparation)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog # 32221</td>
+      <td>DOI:10.1111/j.1750-3639.2000.tb00240.x</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetic acid glacial (for Carnoy fixative preparation)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog # 33209</td>
+      <td>DOI:10.1111/j.1750-3639.2000.tb00240.x</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraffin</td>
+      <td>Bio Optica</td>
+      <td>Catalog # 08-7920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chloroform (for Carnoy fixative preparation)</td>
+      <td>Carlo Erba</td>
+      <td>Catalog # 438614</td>
+      <td>DOI:10.1111/j.1750-3639.2000.tb00240.x</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Guanidine thiocyanate</td>
+      <td>Merck-Millipore</td>
+      <td>Catalog # 1.04167.0250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bolt 12%, Bis-Tris, 1.0 mm, Mini Protein Gel, 10-well</td>
+      <td>Invitrogen</td>
+      <td>Catalog # NW00120BOX</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Immobilon-P, PVDF, 0.45 µm</td>
+      <td>Millipore</td>
+      <td>Catalog # IPVH00010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>4X Bolt LDS Sample Buffer</td>
+      <td>Invitrogen</td>
+      <td>Catalog # B0007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>10X Bolt Sample Reducing Agent</td>
+      <td>Invitrogen</td>
+      <td>Catalog # B0009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ECL Prime Western Blotting System</td>
+      <td>Amersham</td>
+      <td>Catalog # RPN2232</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ARK (Animal Research Kit)</td>
+      <td>DAKO</td>
+      <td>Catalog # K3954</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Liquid DAB Substrate Chromogen System</td>
+      <td>DAKO</td>
+      <td>Catalog # K3468</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PNGase F</td>
+      <td>New England Biolabs</td>
+      <td>Catalog # P0704S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nanosep Centrifugal Devices</td>
+      <td>Pall Corporation</td>
+      <td>Catalog # OD100C34</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hematoxylin</td>
+      <td>Bio Optica</td>
+      <td>Catalog # 05-06012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Eosin</td>
+      <td>Bio Optica</td>
+      <td>Catalog # 05-10002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Thioflavin S</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog # T-1892</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>PMID:22743772</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad PRISM 5.0 v</td>
+      <td>N/A</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Nikon ACT-1 acquisition software</td>
+      <td>N/A</td>
+      <td>https://www.nikon.com/products/microscope-solutions/support/download/software/camerasfor/act1_v263.htm</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>G:BOX Chemi XT4</td>
+      <td>N/A</td>
+      <td>http://www.alphametrix.de/page/index.php?category=geldoc&amp;pageid=219</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### BvPrP-Tg407 animal model
 
 BvPrP-Tg407 transgenic mice were used for bioassay of the FFI and AD products as previously described. These mice express physiological levels of bank vole PrPC with methionine at codon 109 in the absence of murine PrPC (Espinosa et al., 2016).
 
-## Preparation and analysis of the inocula
+### Preparation and analysis of the inocula
 
 Frozen samples of frontal cortex collected from a patient with FFID178N-129MM or a patient with AD homozygous for methionine at 129 PRNP codon were homogenized at 10% (weight/volume; w/v) in PBS. These samples were named FFI-BH and AD-BH. Both specimens were subjected to three rounds of PMCA (as described in Redaelli et al., 2017) and named FFI-BH_PMCA or AD-BH_PMCA, respectively. OM samples collected from a patient with FFID178N-129MM and a patient with AD (PRNP-129MM) were named FFI-OM and AD-OM. These samples were subjected to three rounds of PMCA (see Redaelli et al., 2017) and named FFI-OM_PMCA and AD-OM_PMCA, respectively. All PMCA reactions were performed using the brain of bank vole homozygous for methionine at codon 109 of the Prnp (Bv109M).
 
@@ -47,47 +365,47 @@ All samples were treated with PK and subjected to Western blot (Wb) analysis to 
 
 For the inoculation, (1) FFI-BH and AD-BH did not need any pretreatment; (2) FFI-OM and AD-OM were not challenged because of the lack of material (see BvPrP-Tg407 mouse bioassay section); and (3) FFI-BH_PMCA, FFI-OM_PMCA, AD-BH_PMCA, and AD-OM_PMCA were centrifuged at high speed (100,000 × g) for 1 hr at 4°C and final pellets were suspended in the same volume of PBS before the injections.
 
-## BvPrP-Tg407 mouse bioassay
+### BvPrP-Tg407 mouse bioassay
 
 Animals have been divided into six groups according to the inoculum: (1) FFI-BH (n = 6), (2) FFI-BH_PMCA (n = 5), (3) FFI-OM_PMCA (n = 7), (4) AD-BH (n = 4), (5) AD-BH_PMCA (n = 6), and (6) AD-OM_PMCA (n = 5). For the inoculations, animals from 6- to 7-week-old were intracerebrally inoculated after isoflurane anesthesia (Isoba vet Schering-Plough S.A.) with 20 µL of the different inocula that were placed in the right parietal lobe by using a 25-gauge disposable hypodermic needle. After inoculation, mice were checked twice a week. When progression of prion disease was evident or at the end of mice lifespan (650 dpi), mice were sacrificed and the survival time was calculated. Brains were collected and divided into two parts: one dedicated to biochemical analysis and the other dedicated to histological analysis (when possible).
 
 Unfortunately, we could not inoculate FFI-OM because the sample was not enough and we did not have time to recollect it before the death of the patient.
 
-## Preparation of BvPrP-Tg407 brains for biochemical analysis
+### Preparation of BvPrP-Tg407 brains for biochemical analysis
 
 Half of the brain collected from BvPrP-Tg407-inoculated mice was homogenized at 10% (w/v) in 5% glucose and subjected to Wb for testing the presence of PK-resistant PrP (PrPres). In particular, the samples were digested with 50 μg/mL of PK (1 hr, 37°C, 550 rpm; Invitrogen) before Wb analysis. To verify the migration pattern of the un-glycosylated PrP band, samples were treated with PNGase F. To better characterize the biochemical properties of the PrPres, samples were subjected to PK-resistance assay, conformational stability assay, and RT-QuIC analysis. As PrPres migration controls, 10% (w/v) brain homogenates from (1) FFI, (2) sporadic Creutzfeldt–Jakob disease homozygous for methionine at codon 129 and type 1 PrPres (sCJD-129MM1), and (3) AD patients were prepared in lysis buffer (100 mM NaCl, 10 mM EDTA, 0.5% NP-40, 0.5% sodium deoxycholate, 10 mM Tris-HCl, pH 7.4), digested with 50 μg/mL of PK (1 hr, 37°C, 550 rpm; Invitrogen) and analyzed by Wb.
 
-## Wb analysis
+### Wb analysis
 
 Samples were subjected to Wb analysis using 12% Bis-Tris plus gels (ThermoScientific) and then transferred into polyvinylidene difluoride membranes (PVDF, Millipore). Before the electrophoretic separation, samples were boiled at 100°C for 10 min in loading buffer (Bolt LDS Sample Buffer and DTT, ThermoScientific). After blocking with non-fat dry milk (1 hr at room temperature), the membranes were probed with the monoclonal anti-PrP antibodies 6D11 (which recognizes the N-terminal part of the PrP [a.a. 93–109]; 0.2 µg/mL – Covance SIG-399810) or Sha31 antibody (which recognizes a more C-terminal region of the PrP [a.a. 145–152]; 0.4 µg/mL – SPI Bio a03213). After incubation with secondary antibody (Fab fragment anti-mouse IgG conjugated with horseradish peroxidase [HRP], GE), membranes were developed using the ECL Prime detection system (Amersham) and chemiluminescence was visualized using a G:BOX Chemi Syngene system.
 
-## PK-resistance assay
+### PK-resistance assay
 
 10 μL of (1) FFI-BH (10-fold concentrated by means of high-speed centrifugation), (2) FFI-BH_PMCA, and (3) brain homogenates of BvPrP-Tg407-inoculated mice were treated with five increasing concentrations of PK (50, 100, 250, 500, and 1000 μg/mL) and incubated for 1 hr at 37°C under shaking (500 rpm). The enzymatic activity was stopped by boiling the samples at 100°C for 10 min in loading buffer (Bolt LDS Sample Buffer and DTT, ThermoScientific). Samples were subjected to Wb analyses and membranes immunoblotted with the 6D11 antibody. Resulting PK-resistant PrP bands were subjected to three independent measurements, and densitometric quantification was performed using the ImageJ software.
 
-## Conformational stability assay
+### Conformational stability assay
 
 50 μL of (1) FFI-BH (10-fold concentrated by means of high-speed centrifugation), (2) FFI-BH_PMCA, and (3) brain homogenates of BvPrP-Tg407-inoculated mice were treated with 450 μL of guanidine hydrochloride (Gdn-HCl; Sigma) at different molar concentrations (1.5, 3, 4.5, and 6 M) for 2 hr at 25°C under shaking (550 rpm). Subsequently, an equal volume of sarkosyl 20% (Sigma) was added to the preparation that was incubated for 10 min with gentle shaking. Samples were centrifuged at 100,000 × g for 1 hr at 4°C. Pellets were washed with PBS and then centrifuged at high speed (100,000 × g, 30 min at 4°C). The resulting pellets were suspended in 50 μL of loading buffer (Bolt LDS Sample Buffer and DTT, ThermoScientific) and then subjected to Wb analysis as described. Membranes were immunoblotted using the 6D11 antibody. Each densitometric analysis of the resulting bands was performed (at least three times per sample) using ImageJ software.
 
-## PNGase F analysis
+### PNGase F analysis
 
 PNGase experiments were performed according to the manufacturer's protocol (New England Biolabs PNGase F P0704S). Briefly, 10 μL of BvPrP-Tg407 brain homogenates was treated with PK (50 μg/mL, 1 hr at 37°C) and the digestion was stopped by the addition of 2 μL of Denaturing Buffer (10X) followed by boiling at 100°C for 10 min. Subsequently, the samples were supplemented with 2 μL of PNGase F, 2 μL of NP-40, 2 μL of GT buffer, and 2 μL of PBS 1×. The samples were incubated overnight at 37°C under continuous shaking (550 rpm). Samples were then analyzed by Wb and membranes immunoblotted with the 6D11 antibody. As controls for PrPres migration, brain homogenates of FFI (un-glycosylated PrP migrating at 19 kDa), sCJD-129MM1 (un-glycosylated PrP migrating at 21 kDa), and AD (negative control) were used.
 
-## RT-QuIC analysis
+### RT-QuIC analysis
 
 Before RT-QuIC analysis, brain homogenates of all BvPrP-Tg407-inoculated mice were diluted at 10−3 (volume/volume) in PBS (Gibco). As a reaction substrate, the recombinant truncated BvPrP with methionine at codon 109 (recBvPrP90-231) was prepared and used as already described (Redaelli et al., 2017). The substrate was allowed to thaw at room temperature and filtered through a 100 kDa Nanosep centrifugal device (Pall Corporation). The final reaction mix was composed by 10 mM PBS, 1 mM EDTA, 150 mM NaCl, 0.002% SDS, 10 μM Thioflavin T, and 0.13 mg/mL of recBvPrP90-231. 2 μL of each diluted brain sample was added to 98 μL of reaction mix. Every sample was analyzed at least three times in triplicate in a 96-well optical flat bottom plate (ThermoScientific) that was inserted into a FLUOstar OPTIMA microplate reader (BMG Labtech) and subjected to cycles of shaking (1 min, 600 rpm, double orbital) and incubation (1 min) at 55°C. Fluorescence readings (480 nm) were taken every 15 min (450 nm, 30 flashes per well). A sample was considered positive if the mean of the highest two fluorescence values (AU) of the replicates was higher than 10,000 AU and at least two out of three replicates crossed this threshold before 18 hr. Data were plotted in a graph showing the time taken for each replicate (black dots) to reach the fluorescence threshold (lag phase).
 
-## Neuropathological analysis
+### Neuropathological analysis
 
 Half of the brain collected from BvPrP-Tg407 mice was fixed in Carnoy solution and embedded in paraffin (Giaccone et al., 2006). 7-μm-thick serial sections were stained with hematoxylin and eosin (H&E) and thioflavin S, or immunostained with monoclonal antibodies to PrP (Saf34; 1.25 μg/mL; a.a. 59–89, gently provided by Prof. Jacques Grassi), and polyclonal antibodies to glial fibrillary acidic protein (GFAP; 0.5 μg/mL; Dako Z0334). Before PrP immunostaining, sections were treated with PK (5 μg/mL, 5 min, room temperature) and guanidine isothiocyanate (3 M, 20 min, room temperature). Non-specific bindings of the primary antibody were prevented using the ARK kit (Dako). Reactions were visualized using the 3–3′ diaminobenzidine (DAB, Dako) as chromogen. Samples were analyzed under a Nikon Eclipse E800 microscope equipped with a Nikon digital camera DXM 1200 and Nikon ACT-1 (v2.63) acquisition software.
 
-## Statistical analysis
+### Statistical analysis
 
 Log-rank test was used for the analysis of the survival time. Two-way ANOVA followed by Bonferroni post-tests was used for p calculation (* ° ♦ □p<0.05, ** °° ♦♦ □□p<0.01, *** °°° ♦♦♦ □□□p<0.001). Mean values are presented with their standard errors of the mean (SEM). Statistical analysis and graphic representations were performed with Prism software (v. 5.0 GraphPad). Densitometric analysis was performed using ImageJ software (v. 1.48). Samples analyzed by RT-QuIC were considered positive if the mean of the highest two fluorescence values (AU) of the replicates was higher than 10,000 AU and at least two out of three replicates crossed this threshold before 18 hr.
 
 ## Results
 
-## Biochemical analysis of the inocula
+### Biochemical analysis of the inocula
 
 Before injections, all inocula were subjected to Wb analysis to evaluate the presence of PrPres (Figure 1). Notably, the prions observed in FFI-BH, FFI-BH_PMCA, and FFI-OM_PMCA showed analogous biochemical properties that were characterized by a predominance of the di-glycosylated PrP band and the migration of un-glycosylated one at 19 kDa. As a control of migration, we have included the brain homogenate of a patient with sCJD-129MM1 (sCJD-BH T1) that is instead characterized by a PrPres with high levels of the mono-glycosylated PrP species with the un-glycosylated one migrating at 21 kDa. As expected, we did not detect PrPres in FFI-OM sample before amplification. None of the samples collected from patients with Alzheimer’s disease showed a PrPres signal. Asterisks indicate samples that were not inoculated because of the lack of material (see BvPrP-Tg407 mouse bioassay section in Materials and methods).
 
@@ -95,7 +413,7 @@ Before injections, all inocula were subjected to Wb analysis to evaluate the pre
 
 **Figure 1.:** Prions were detected in all Fatal Familial Insomnia (FFI) samples except for the raw olfactory mucosa (FFI-OM). Notably, the glycoform ratio of all PrPres was identical and characterized by a predominance of the di-glycosylated band with the un-glycosylated one migrating at 19 kDa. No PrPres was found in samples collected from patients with AD. Three rounds of Protein Misfolding Cyclic Amplification (PMCA) were performed for each sample (brain homogenate [BH] or OM) before the analysis. BH of a sCJD-129MM1 patient (sCJD-BH T1) was used as migration control. Asterisks indicate samples that were not inoculated in mice. MK: molecular weight marker. Samples were immunoblotted with anti-PrP 6D11 antibody.
 
-## Survival time
+### Survival time
 
 All animals inoculated with FFI-BH, FFI-BH_PMCA, and FFI-OM_PMCA (continuous lines in Figure 2) succumbed to prion disease, while those inoculated with AD-BH, AD-BH_PMCA, and AD-OM_PMCA did not and were sacrificed at the end of the experiment (dashed lines in Figure 2). The clinical presentation of the disease was similar between groups and mainly characterized by the presence of typical prion signs and symptoms including, ataxia, generalized tremor, sustained hunched posture, and extensive piloerection. Although animals inoculated with FFI-BH showed clinical alterations earlier (431 ± 58 dpi) than those inoculated with FFI-BH_PMCA (489 ± 13 dpi) and FFI-OM_PMCA (474 ± 27 dpi), the differences in the survival times did not reach a statistical significance (p=0.085, log-rank test) (Figure 2).
 
@@ -103,17 +421,37 @@ All animals inoculated with FFI-BH, FFI-BH_PMCA, and FFI-OM_PMCA (continuous lin
 
 **Figure 2.:** All animals inoculated with FFI-BH, FFI-BH_PMCA, and FFI-OM_PMCA succumbed to prion disease with similar survival time (431 ± 58 dpi, 489 ± 13 dpi, and 474 ± 27 dpi, respectively; p=0.085, log-rank test), while those inoculated with AD-BH, AD-BH_PMCA, and AD-OM_PMCA did not and were sacrificed at the end of the experiment. FFI: Fatal Familial Insomnia; PMCA: Protein Misfolding Cyclic Amplification; OM: olfactory mucosa; BH: brain homogenate.
 
-## Biochemical analysis of prions generated in BvPrP-Tg407-inoculated mice
+### Biochemical analysis of prions generated in BvPrP-Tg407-inoculated mice
 
 Five out of six animals of the FFI-BH group developed a PrPres mainly characterized by a predominance of the di-glycosylated band with the un-glycosylated one migrating at 19 kDa. Unexpectedly, in one of these animals (the number #5), we have detected a PrPres characterized by a predominance of the mono-glycosylated band with the un-glycosylated one migrating at 19 kDa. These findings were confirmed using either the 6D11 antibody or the Sha31 antibody (Figure 3a, Figure 3—figure supplement 1). This suggests that a different prion might have emerged in this mouse. Therefore, we have decided to remove this animal from the group and analyze it separately. Moreover, the last mouse of this group (the number #6) that was sacrificed at 605 dpi showed lower PrPres signal (Figure 3a, Figure 3—figure supplement 1) compared to all the other animals sacrificed at earlier time points. All the animals inoculated with FFI-BH_PMCA showed a PrPres signal characterized by a predominance of the di-glycosylated band with the un-glycosylated one migrating at 19 kDa (Figure 3b). Similar findings were observed in the brains of animals inoculated with FFI-OM_PMCA (Figure 3c). These results were confirmed using both the 6D11 and the Sha31 antibodies (Figure 3—figure supplement 1). However, animal number #1 of the FFI-OM_PMCA group was characterized by the presence of two faint un-glycosylated PrPres fragments detectable only with the use of the N-terminal 6D11 antibody. This difference could not be appreciated with the use of the C-terminal Sha31 antibody where a single un-glycosylated band migrating at 19 kDa was detected (Figure 3—figure supplement 1). Thus, almost all PMCA-inoculated mice developed a PrPres with the typical glycoform profile of the FFI prion. However, it should be kept in mind that, at different levels, the human FFI prions present in BH and OM have been subjected to several analyses performed using the bank vole PrPC (either as PMCA reaction substrate or as transgenic mice). In particular, the original FFI strains have been subjected to PMCA analyses with bank vole brain (Bv109M) (see Redaelli et al., 2017) and these reaction products as well as the raw FFI-BH were inoculated in animals that express the BvPrP (BvPrP-Tg407). Therefore, even if some biochemical features of the human FFI have been retained by the prions generated in these mice, they represent a bank vole-adapted version of the original FFI strain. To better analyze the migration profile of the un-glycosylated PrP bands, we have performed PNGase F experiments and observed that all prions generated in the brain of BvPrP-Tg407 mice migrated at 19 kDa, regardless of the inoculum (Figure 3d). Also in the case of animal number #1 of the FFI-OM_PMCA group, the PNGase F treatment of the sample resulted in the appearance of a single un-glycosylated band migrating at 19 kDa. No PrPres was found in the brain of BvPrP-Tg407 mice inoculated with AD-BH, AD-BH_PMCA, and AD-OM_PMCA.
 
-## Evaluation of PK-resistance and conformational stability of prions generated in BvPrP-Tg407-inoculated mice
+![Figure 3.](https://cdn.elifesciences.org/articles/65311/elife-65311-fig3-v2.jpg)
+
+**Figure 3.:** BvPrP-Tg407 mice inoculated with FFI-BH (a), FFI-BH_PMCA (b), and FFI-OM_PMCA (c) showed the presence of PrPres while those inoculated with AD-BH, AD-BH_PMCA, and AD-OM_PMCA did not. All PrPres were characterized by the predominance of the di-glycosylated band except for the animal number #5 of the group FFI-BH, which showed a PrPres with the mono-glycosylated band predominant over the others. Samples were immunoblotted with anti-PrP 6D11 antibody. Similar findings have been observed using the Sha31 antibody (Figure 3—figure supplement 1). The brain homogenate of a FFI patient with PrPres migrating at 19 kDa (FFI-BH T2) and the brain homogenate of a sCJD patient with PrPres migrating at 21 kDa (sCJD-BH T1) were used as migration controls. PNGase F analyses showed that the un-glycosylated band migrated at 19 kDa in all cases, thus confirming the results obtained from animals with less clear migration pattern (e.g., animal number #3 of the FFI-BH_PMCA group and animal number #1 of the FFI-OM_PMCA group). Samples were immunoblotted with anti-PrP 6D11 antibody (d). FFI: Fatal Familial Insomnia; PMCA: Protein Misfolding Cyclic Amplification; OM: olfactory mucosa; BH: brain homogenate.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65311/elife-65311-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** BvPrP-Tg407-inoculated mice were analyzed with Sha31 antibody that recognizes a C-terminal region of the PrP (a.a. 145–152). All prion-inoculated animals, except the number #5 of the FFI-BH group, showed PrPres characterized by a prevalence of the di-glycosylated band. A PrPres characterized by a prevalent mono-glycosylated band was found in the brain of animal number #5 of the group FFI-BH (framed in red). No PrPres was found in the brain of animals inoculated with AD-related samples. FFI: Fatal Familial Insomnia; BH: brain homogenate.
+
+### Evaluation of PK-resistance and conformational stability of prions generated in BvPrP-Tg407-inoculated mice
 
 Brain homogenates of BvPrP-Tg407 were treated with increasing concentrations of PK. As shown in Figure 4, prions found in the brains of animals inoculated with FFI-BH were significantly more resistant to proteolytic digestion than those found in the brains of animals inoculated with either FFI-BH_PMCA or FFI-OM_PMCA (Figure 4a). As already mentioned, we decided to separate animal number #5 from the FFI-BH group because of the divergent glycoform profile of its PrPres. Moreover, this prion was less resistant to PK digestion and more stable towards Gdn-HCl treatment compared to all the others of the same group (Figure 4—figure supplement 1). Conversely, the PK-resistance profile of the PrPres found in animals inoculated with FFI-BH_PMCA and FFI-OM_PMCA was comparable. This suggests that the PMCA might have favored the in vitro amplification/selection of a similar prion isolate from brain and OM of FFI patients, which then resulted in a homogeneous pathological picture of the disease in both animals’ groups (Figure 4a). The same brain homogenates were then treated with increasing concentrations of Gdn-HCl. Results of this analysis are shown in Figure 4 and confirmed that prions found in the brains of FFI-BH_PMCA and FFI-OM_PMCA-inoculated animals were more stable than those found in the brain of FFI-BH-challenged mice. Notably, this difference was statistically significant, thus supporting the hypothesis that PMCA could have amplified a PrPSc with distinctive biochemical and pathological features than that typically present in the FFI brain homogenate, finally leading to the development of different pathological changes in FFI-BH_PMCA and FFI-OM_PMCA groups of mice (also in this case, animal number #5 was excluded from the analysis) (Figure 4b). To deepen this aspect, we decided to investigate whether the PMCA itself might have modified the biochemical properties of the FFI-PrPSc after amplification, prior to injection in BvPrP-Tg407 mice. To this aim, we have subjected FFI-BH and its product of amplification (FFI-BH_PMCA) to PK digestion and Gdn-HCl treatments. We have found that, after amplification, the PrPSc did not change the PK-resistant properties (Figure 4—figure supplement 2a) but became significantly more stable towards Gdn-HCl treatment (Figure 4—figure supplement 2b). Thus, we have observed that the PMCA has indeed slightly altered the biochemical properties of the original FFI-PrPSc, especially in terms of conformational stability.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/65311/elife-65311-fig4-v2.jpg)
+
+**Figure 4.:** Proteinase K (PK) resistance assay (a) and conformational stability analysis (b) were performed to characterize the prions present in the brains of animals inoculated with FFI-BH, FFI-BH_PMCA, and FFI-OM_PMCA. These analyses revealed that prions found in the brain of FFI-BH-inoculated mice were more resistant to proteolytic digestion and less stable to guanidine hydrochloride (Gdn-HCl) treatment (black line) than those found in the brain of mice inoculated with FFI-BH_PMCA and FFI-OM_PMCA (gray and purple lines, respectively). In both cases, these differences were statistically significant (two-way ANOVA followed by Bonferroni post-tests; FFI-BH vs. FFI-BH_PMCA: *p<0.05; FFI-BH vs. FFI-OM_PMCA: ° p<0.05, °° p<0.01, °°° p<0.001; error bars: ± standard error of the mean [SEM]). In contrast, prions found in the brain of mice inoculated with FFI-BH_PMCA and FFI-OM_PMCA showed comparable PK-resistance profile and stability towards Gdn-HCl treatment. Separate PK and Gdn-HCl analysis were performed for animal number #5 that was excluded from the FFI-BH group (Figure 4—figure supplement 1). Analysis performed on FFI-BH sample and its PMCA product (FFI-BH_PMCA) showed that the amplification altered the PK and Gdn-HCl properties of PrPSc (Figure 4—figure supplement 2). FFI: Fatal Familial Insomnia; PMCA: Protein Misfolding Cyclic Amplification; OM: olfactory mucosa; BH: brain homogenate.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65311/elife-65311-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** PK-resistance (a) and conformational stability (b) profiles of mouse #5 (gray line) was compared to those of all the other animals of the same group (black line). The PrPres found in the brain of mouse #5 appeared to be significantly more sensitive to PK digestion and more resistant to guanidine hydrochloride (Gdn-HCl) treatment compared to all the other prions, thus indicating that it might be a different isolate. Error bars:± standard error of the mean (SEM). FFI: Fatal Familial Insomnia; BH: brain homogenate.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/65311/elife-65311-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** PK-resistance (a) and conformational stability (b) of FFI-BH and FFI-BH_PMCA before (solid lines) and after (dashed lines) injection in BvPrP-Tg407 mice. Before the injection, the PK resistance of PrPSc associated with FFI-BH (green solid line) and FFI-BH_PMCA (blue solid line) was comparable. After the injection, both PrPSc became more resistant to PK digestion compared to the original inocula (FFI-BH, dashed black line; FFI-BH_PMCA dashed gray line) (a). Before the injection, the conformational stability of PrPSc associated with FFI-BH (green solid line) was significantly lower than that of FFI-BH_PMCA (blue solid line). After the injection, the stability of PrPSc associated with FFI-BH did not change (black dashed line), while that associated with FFI-BH_PMCA (gray dashed line) decreased in a statistically significant manner (b). Two-way ANOVA followed by Bonferroni post-tests; FFI-BH before vs. after injection: ♦♦♦ p<0.001, ♦♦ p<0.01; FFI-BH_PMCA before vs. after injection: □ p<0.05, □□ p<0.01, □□□p<0.001; error bars:± standard error of the mean (SEM). FFI: Fatal Familial Insomnia; PMCA: Protein Misfolding Cyclic Amplification; BH: brain homogenate.
+
 We have then compared the biochemical properties of the PrPSc present in FFI-BH and the PrPSc generated in FFI-BH-injected mice. The results confirmed that the PrPSc present in FFI-BH was significantly less resistant to PK than that generated in BvPrP-Tg407-inoculated animals, thus suggesting that the original PrPSc properties were not retained upon animal transmission (Figure 4—figure supplement 2a). Then, we have also verified whether the biochemical properties of the PrPSc present in FFI-BH_PMCA changed after the inoculation in mice. In this case, we have found that PrPSc generated in mice was significantly more resistant to PK digestion and significantly less stable towards Gdn-HCl treatment (Figure 4—figure supplement 2). Therefore, also the PrPSc properties of FFI-BH_PMCA changed after animal transmission. Unfortunately, due to the lack of material we could not make similar comparisons between FFI-OM and FFI-OM_PMCA samples. However, it is conceivable that analogous events could have occurred even in this case.
 
-## Neuropathological analysis of BvPrP-Tg407-inoculated mice
+### Neuropathological analysis of BvPrP-Tg407-inoculated mice
 
 All groups of prion-inoculated animals showed mild spongiform changes mainly affecting the thalamus, the striatum, and to a lesser extent the frontal cortex. In particular, these alterations were slightly more pronounced in the brain of mice challenged with FFI-BH compared to that of the other groups. No vacuolation was observed in animals inoculated with AD-related samples (Figure 5a). Notably, the ventricles of most of the animals inoculated with FFI-BH were significantly enlarged (Figure 5b). Severe glial activation was observed in all groups of mice inoculated with FFI-related materials and mostly affected the thalamus. We did not find these alterations in the brain of all the other groups of mice inoculated with AD-related samples, which showed very faint glial activation, likely related to aging (Figure 5b).
 
@@ -123,7 +461,31 @@ All groups of prion-inoculated animals showed mild spongiform changes mainly aff
 
 Animals inoculated with FFI-BH showed a synaptic and diffuse pattern of PrPres deposition that mainly affected the thalamus, the striatum, and the deep layers of the frontal cortex. Plaque-like deposits (negative at ThS staining) were also found in the striatum and sometimes in the frontal cortex (Figure 6, Figure 6—figure supplement 1, Figure 6—figure supplement 3). Notably, animals #5 and #6 of this group did not show any PrPres detectable by means of immunohistochemistry (although we could see a PrPres signal by Wb) even in the thalamus and striatum where we observed a mild vacuolation and significant astroglial activation (Figure 6—figure supplement 2, Figure 7, Figure 7—figure supplement 1). These results were confirmed even after the treatment of the samples with lower concentrations of PK. Mice inoculated with FFI-BH_PMCA or FFI-OM_PMCA did not show any synaptic PrPres deposition but only focal and plaque-like aggregates, negative at ThS staining (Figure 6, Figure 6—figure supplement 3) prevalently affecting thalamus, striatum, and cerebral cortex. These deposits were more abundant in animals inoculated with FFI-BH_PMCA compared to those inoculated with FFI-OM_PMCA (Figure 6—figure supplement 1). The possibility that this latter group of mice has developed a slightly different manifestation of the disease cannot be completely ruled out at this moment, and additional studies are needed to further investigate this aspect. As expected, no PrPres immunoreactivity was found in the brain of mice inoculated with AD-BH, AD-BH_PMCA, or AD-OM_PMCA (Figure 6, Figure 6—figure supplement 1). Faint astroglial activation was observed in the striatum of these mice, but this might be associated with a normal aging process that is not an indicator of pathology (Figure 7, Figure 7—figure supplement 1).
 
-## RT-QuIC results
+![Figure 6.](https://cdn.elifesciences.org/articles/65311/elife-65311-fig6-v2.jpg)
+
+**Figure 6.:** BvPrP-Tg407 mice inoculated with FFI-BH showed synaptic distribution of PrPres with the presence of focal and plaque-like deposits mainly affecting the thalamus, striatum, and frontal cortex. Notably, animals #5 and #6 of this group did not show any PrPres (Figure 6—figure supplement 2). Animals inoculated with FFI-BH_PMCA showed only plaque-like deposits of PrPres mainly occurring in the thalamus and striatum. Similarly, but to a lesser extent, plaque-like deposits of PrPres were found in the thalamus, striatum, and frontal cortex of BvPrP-Tg407 mice inoculated with FFI-OM_PMCA (Figure 6—figure supplement 1). Focal deposits observed in the brain of FFI-BH, FFI-BH_PMCA, and FFI-OM_PMCA-injected mice were completely negative at ThS staining (Figure 6—figure supplement 3). No PrPres was found in the brain of mice inoculated with AD-BH, AD-BH_PMCA, and AD-OM_PMCA (Figure 6—figure supplement 1). Sections were immunostained with anti-PrP Saf34 antibody. Scale bar: 10 μm. FFI: Fatal Familial Insomnia; PMCA: Protein Misfolding Cyclic Amplification; OM: olfactory mucosa; BH: brain homogenate.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/65311/elife-65311-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** These cartoons summarize the PrPres distribution and the pattern of deposition in the brains of BvPrP-Tg407 mice inoculated with FFI-BH (left), FFI-BH_PMCA (central), and FFI-OM_PMCA (right). Synaptic and diffuse PrPres deposition pattern is represented with solid purple color while plaque-like deposits with purple dots. Animals inoculated with FFI-BH showed mixed synaptic-diffuse and plaque-like patterns of PrPres deposition mainly affecting the striatum, thalamus, and deep layers of the frontal cortex. No PrPres immunoreactivity was detectable in mice numbers #5 and #6. In the brain of animals inoculated with FFI-BH_PMCA, the deposition was characterized by focal plaque-like deposits of PrPres affecting the thalamus, striatum, and frontal cortex. A similar pattern of deposition was observed in the brain of animal number #2 inoculated with FFI-OM_PMCA. Surprisingly, animal number #1 of the same group did not show any detectable PrPres by immunohistochemistry (even if a PrPres signal was clearly detectable by western blot). All AD-BH, AD-BH_PMCA, and AD-OM_PMCA-inoculated animals did not show any PrPres signal. FFI: Fatal Familial Insomnia; PMCA: Protein Misfolding Cyclic Amplification; OM: olfactory mucosa; BH: brain homogenate.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/65311/elife-65311-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** BvPrP-Tg407 mice numbers #5 and #6 inoculated with FFI-BH did not show any PrPres detectable by immunohistochemistry (anti-PrP Saf34 antibody) even in the presence of marked astroglial activation mainly affecting the thalamus, striatum, and frontal cortex (anti-glial fibrillary acidic protein antibody). Scale bar: 40 µm. FFI: Fatal Familial Insomnia; BH: brain homogenate.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/65311/elife-65311-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** The PrPres deposits found in the thalamus, striatum, and frontal cortex of many animals inoculated with FFI-BH, FFI-BH_PMCA, and FFI-OM_PMCA were negative at ThS staining and confirmed the lack of the typical amyloid properties. Scale bar: 40 µm. FFI: Fatal Familial Insomnia; PMCA: Protein Misfolding Cyclic Amplification; OM: olfactory mucosa; BH: brain homogenate.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/65311/elife-65311-fig7-v2.jpg)
+
+**Figure 7.:** Animals inoculated with FFI-BH, FFI-BH_PMCA, and FFI-OM_PMCA showed severe glial activation in the thalamus and striatum. Moderate immunoreactivity was also found in the deep layer of the cerebral cortex of the animals inoculated with BH-FFI (Figure 7—figure supplement 1). Mild astroglial reactivity was observed in the striatum and thalamus of mice inoculated with AD-BH, AD-BH_PMCA, and AD-OM_PMCA. This activation is often detectable in healthy aged mice and is not an indicator of pathological processes (Figure 7—figure supplement 1). Sections were immunostained with anti-glial fibrillary acidic protein antibody. Scale bar: 10 μm. FFI: Fatal Familial Insomnia; PMCA: Protein Misfolding Cyclic Amplification; OM: olfactory mucosa; BH: brain homogenate.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/65311/elife-65311-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** These cartoons summarize the degree of the astroglial activation in the brains of BvPrP-Tg407 mice inoculated with FFI-BH (left), FFI-BH_PMCA (central), and FFI-OM_PMCA (right). Light green refers to a low degree of glial activation while dark green refers to a severe degree of glial activation. Regardless of the inocula, astroglial activation was mainly found in the thalamus, striatum, and frontal cortex of all challenged mice. Mild immunoreactivity was observed in the striatum, thalamus, and frontal cortex of AD-BH, AD-BH_PMCA, and AD-OM_PMCA-inoculated mice, indicating that this finding might be the result of physiological aging. FFI: Fatal Familial Insomnia; PMCA: Protein Misfolding Cyclic Amplification; OM: olfactory mucosa; BH: brain homogenate.
+
+### RT-QuIC results
 
 RT-QuIC analysis of BvPrP-Tg407 mice confirmed that the brains of animals inoculated with FFI-BH, FFI-BH_PMCA, and FFI-OM_PMCA were able to promote the aggregation of recBvPrP90-231 with high efficiency. The aggregation kinetics were in general very rapid and the threshold of fluorescence was crossed by all samples before 10 hr, regardless of the inocula (Figure 8). From the analysis of the aggregation kinetics, we could not identify peculiar properties eventually useful to discriminate between the three different FFI inocula. Animals inoculated with AD-BH, AD-BH_PMCA, and AD-OM_PMCA induced recBvPrP90-231 aggregation after 18 hr and were considered negative.
 

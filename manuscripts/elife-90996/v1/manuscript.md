@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/012p63287 Department of Biochemistry, Groningen Biomolecular Science and Biotechnology Institute, University of Groningen Groningen Netherlands
-2. https://ror.org/038t36y30 Biochemistry Center, Heidelberg University Heidelberg Germany
+1. Department of Biochemistry, Groningen Biomolecular Science and Biotechnology Institute, University of Groningen Groningen Netherlands ([ROR:012p63287](https://ror.org/012p63287))
+2. Biochemistry Center, Heidelberg University Heidelberg Germany ([ROR:038t36y30](https://ror.org/038t36y30))
 
 † Corresponding author
 
@@ -24,6 +24,14 @@ All cells undergo passive fluxes of water into and out of the cell due to the se
 
 OpuA from Lactococcus lactis is one of the best-studied compatible solute importers. The activity and expression of OpuA are increased by ionic strength, and are inhibited by cyclic-di-AMP (van der Heide et al., 2001; Sikkema et al., 2020; Pham et al., 2018; Romeo et al., 2007; Mahmood et al., 2006). OpuA belongs to the type I subfamily of ABC-importers. It is a tetrameric protein complex consisting of two different types of subunits: two cytosolic OpuAA proteins consisting of a nucleotide-binding domain (NBD) and a cyclic-di-AMP-sensing (CBS) domain, and two OpuABC proteins, consisting of a transmembrane domain (TMD), a scaffold domain and an extracellular single substrate-binding domain (SBD; Figure 1A). The NBDs hydrolyze ATP to fuel transport and sense ionic strength through interactions of a cationic helix-turn-helix motif with the negatively charged membrane (Sikkema et al., 2020). The SBD is a two-lobed protein that binds glycine betaine with micromolar affinity and delivers it to the transporting unit. In contrast to the covalently linked SBDs found in OpuA, substrate binding units in many other ABC importers are expressed as an independent soluble or lipid-anchored protein, called then a substrate-binding protein (SBP; van der Heide and Poolman, 2002).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/90996/elife-90996-fig1-v1.jpg)
+
+**Figure 1.:** (A) A cryo-EM structure of OpuA (PDB: 7AHH). Mutations K521C and N414C are highlighted as grey spheres. (B) Size-exclusion chromatography profiles of OpuA-nanodiscs that were purified according to the previously described protocol (Sikkema et al., 2020) (blue) or according to the new protocol that is described here (yellow). The Latin numbers refer to the four different nanodisc species as is described in the first paragraph of the Results section. The other numbers refer to the elution fractions that were loaded on an SDS-PAA gel. (C) SDS-PAA gel with the size exclusion fractions of the blue line in (B). (D) SDS-PAA gel with the size-exclusion fractions of the yellow line in (B). (E) A schematic representation of how confocal, solution-based smFRET was used to study different states of the SBDs. (F) A representation of a fluorescent burst time trace, displaying the photon counts in the donor (green) and acceptor (red) detection channel over time (left). The zoom-in is a representation of a photon time trace, in which single photons are represented as lines and the most likely state path from the Viterbi algorithm in mpH2MM as a blue line.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/90996/elife-90996-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** A standard sample contains 50 mM HEPES-K pH 7.0, 450 mM KCl, 20 mM Mg-ATP, 100 µM glycine betaine, 4 mM phosphoenolpyruvate, 600 μM NADH, 2.1–3.5 U of pyruvate kinase plus 3.2–4.9 U of lactate dehydrogenase. Standard deviation over at least two measurements with different protein purifications and membrane reconstitutions, each consisting of three technical replicates is represented as shaded areas.
+
 There is much interest in understanding the transport mechanisms of ABC-transporters (ter Beek et al., 2014; Oldham et al., 2008). In the case of type I ABC-importers, pioneering studies have been performed on the maltose and histidine import systems, MalFGK2-E and HisQMP2, respectively. In both transporters, the soluble substrate-loaded SBP (MalE or HisQ) is needed to fully stimulate ATPase activity, although the SBP can also bind the TMDs and slightly stimulate ATPase activity in the absence of substrate (Mächtel et al., 2019; Chen, 2013; Heuveling et al., 2014; Sippach et al., 2014; Ames et al., 1996; Bao and Duong, 2012). The binding of MalE to the TMDs is tight in the presence of inhibiting nucleotides and goes through cycles of docking and release under transport conditions (Bao and Duong, 2012; Chen et al., 2001). There are no indications that either the MalE or HisQ proteins cooperate together. In fact, empty MalE SBPs and SBDs from the amino acid importer GlnPQ have been shown to compete with their substrate-bound equivalents for binding to the TMDs (Merino et al., 1995; Gouridis et al., 2015).
 
 In contrast to MalE SBP and the SBDs of GlnPQ, the two SBDs in OpuA act cooperatively during transport. The cooperativity increases the import efficiency to overcome osmotic stress as quickly as possible (Biemans-Oldehinkel and Poolman, 2003). Despite the beauty of the cooperative mechanism, the molecular basis for the cooperativity in OpuA remains unresolved. On the contrary, MalE from E. coli, ProX from Synechococcus spp., ArtJ from Thermatoga maritima, and the SBPs TakP and TM0322 from the family of tripartite ATP-independent periplasmic (TRAP) transporters can form dimers in solution, but there is no data on the functional role of the dimeric states (Cuneo et al., 2008; Gonin et al., 2007; Richarme, 1983; Ford et al., 2022; Luchansky et al., 2010; Ruggiero et al., 2014). A substrate channel through a dimer of TakP SBPs is observed in the crystal structure of the proteins (Gonin et al., 2007), which provides a possibility for cooperativity between two TakP SBPs.
@@ -34,11 +42,11 @@ We designed cysteine mutations in the SBD of OpuA to study interdomain dynamics 
 
 ## Results
 
-## Optimization of OpuA purification and nanodisc reconstitution
+### Optimization of OpuA purification and nanodisc reconstitution
 
 Previously, a protocol for the purification of OpuA and subsequent reconstitution in MSP-based nanodiscs was used to obtain cryo-EM structures of the protein complex. This protocol was suitable for obtaining high-resolution 3D-images, but the size-exclusion chromatography (SEC) profile showed that the nanodisc sample consisted of protein complexes with different molecular weights (Figure 1B). The resolution of the Superdex 200 Increase 10/300 column is not high enough to fully separate the different macromolecular species. Based on SDS-PAGE and electron microscopy analyses, the first peak in the SEC profile corresponds to OpuA-containing lipid structures that are distinct from OpuA nanodiscs (second peak) (Karasawa et al., 2013). The second peak has both subunits of OpuA (OpuAA and OpuABC) in the nanodiscs. The third peak represents OpuA nanodiscs with one or two OpuAA subunits lost. The fourth peak consists of lipid nanodiscs lacking any OpuA components (Figure 1C). Because the first three peaks overlap, it was not possible to obtain monodisperse OpuA nanodiscs. This is acceptable for cryo-EM studies but complicates the analysis of protein dynamics by smFRET. Therefore, we optimized the purification and reconstitution on various aspects, and we were able to achieve monodisperse OpuA nanodiscs (see Materials and methods; Figure 1B and D). The new procedure yielded OpuA nanodiscs with similar glycine betaine-, KCl-, and ATP-dependent activity profiles as before (Figure 1—figure supplement 1). Furthermore, the absolute activity was constant between different replicates and was not reduced after storage at –80 °C.
 
-## Purification and labeling of OpuA cysteine variants
+### Purification and labeling of OpuA cysteine variants
 
 smFRET is a powerful tool for studying membrane protein dynamics (Lerner et al., 2018; Bartels et al., 2021). In order to study single-molecule dynamics of OpuA, we made use of thiol-reactive, maleimide-based donor and acceptor fluorophores Alexa Fluor 555 and Alexa Fluor 647, respectively, that were linked to engineered cysteines in natively cys-less OpuA. We record fluorescent bursts of a few milliseconds in duration, which come from single molecules that transit through the focal spot of a confocal microscope (Figure 1E and F). Every molecule gets excited by a pulsed laser that alternates between a donor and an acceptor excitation wavelength at a pulse rate of 40 MHz. Consequently, every molecule gets excited many times. The relative fluorescent intensity of the fluorophores after excitation of the donor is used to calculate an apparent FRET efficiency for each burst (E*). The real FRET efficiency (E) is obtained by applying the usual correction factors (see Materials and methods). The fluorescence after excitation of the acceptor is used together with the total fluorescence after donor excitation to calculate a stoichiometry (S) of fluorescence. The Python-based package FRETbursts was used to filter out molecules that were labeled with only donor (S≈1) or only acceptor (S≈0) fluorophores (Figure 2—figure supplement 1; Ingargiola et al., 2016b).
 
@@ -46,31 +54,403 @@ Several double-cysteine variants have been constructed in a soluble variant of t
 
 Both mutants purified very well and retained full ATPase activity in the presence of 1 mM DTT (Figure 1—figure supplement 1). They retained 70–80% of their original activity when labeled with the Alexa fluorophores (Table 1). The labeling efficiency varied between 60% and 90% across different purifications.
 
-## SBD dynamics under high ionic strength conditions
+**Table 1.**
+ ATPase activity of OpuA variants K521C and N414C before and after labeling with maleimide dyes*.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Activity unlabeled variant (min–1)</th>
+      <th>Activity labeled variant (min–1)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>K521C</td>
+      <td>342+/-71†</td>
+      <td>263+/-52</td>
+    </tr>
+    <tr>
+      <td>N414C</td>
+      <td>332+/-25</td>
+      <td>246+/-55</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Buffer conditions: 50 mM HEPES-K pH 7.0, 100 µM glycine betaine, 10 mM Mg-ATP plus 600 mM KCl.†The errors refer to the standard deviation over at least two measurements with different protein purifications and membrane reconstitutions, each consisting of three technical replicates._
+
+### SBD dynamics under high ionic strength conditions
 
 An SBD of OpuA has limited space to diffuse because it is connected to the TMD via a transmembrane anchoring helix and a soluble linker of eleven amino acids long. Theoretically, the non-docked SBDs can sample inter-domain distances that would cover the entire FRET range from 3 to 10 nm, with low FRET values corresponding to long distances, whereas high FRET values are indicative of shorter distances. The mobility of the undocked SBDs will be higher than the diffusion of the whole complex, allowing the sampling of varying interdomain distances within a single burst. However, these dynamic variations are subsequently averaged to a singular FRET value during FRET calculations for each burst, and may appear as a single low FRET state in the FRET histograms.
 
 Both OpuA-N414C and OpuA-K521C were first analyzed in a high salt condition without substrate or Mg-ATP (50 mM HEPES-K pH 7.0, 600 mM KCl). As expected, most FRET bursts fall within a low-FRET population when OpuA is in the apo state (Figure 2A and B; upper panels). However, the FRET distributions tail towards higher FRET values, especially in OpuA-K521C. We performed a burst variance analysis (BVA) to qualitatively assess if the broad FRET distribution represents different fixed states or a mixture of states that can alternate within a single burst (see Materials and methods; Torella et al., 2011). A large part of the FRET population exhibits within-burst dynamics, which was higher than expected from shot noise alone (Figure 2A and B; third panel). We then analyzed the data by multi-parameter photon-by-photon hidden Markov modeling (mpH2MM; Harris et al., 2022). This new approach uses raw photon data from both donor and acceptor excitation periods to find the number of hidden Markov states that best describe the data. A Viterbi algorithm identifies the optimal state path within bursts. Each state within a burst is then considered separately as a dwell (Figure 1F).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/90996/elife-90996-fig2-v1.jpg)
+
+**Figure 2.:** The proteins were analyzed in 50 mM HEPES-K pH 7.0, 600 mM KCl with the following additions: (A) OpuA-N414C without further additions. (B) OpuA-K521C without further additions. (C) OpuA-E190Q-K521C with 20 mM Mg-ATP plus 100 µM glycine betaine. (D) OpuA-K521C with 20 mM Mg-ATP. From top to bottom: (i) FRET histogram showing the corrected bursts that were selected after removing donor-only and acceptor-only bursts. (ii) 2D E-S histogram showing the same data as in (i). Black dots represent the average value of each state after mpH2MM and after application of the correction factors. (iii) Burst variance analysis of the same burst data as in (i). The standard deviation of FRET in each burst is plotted against its mean FRET. Black squares represent average values per FRET bin. The black dotted line shows the expected standard deviation in the absence of within-burst dynamics. (iv) E-S scatter plot of the corrected dwells. Dwells are colored on the basis of the assigned state of the chosen mpH2MM model. Black dots represent the average value of each state and the numbers at the arrows show transition rate constants (s–1) between the two FRET states. (v) Plot of the ICL-values for each final model. The model used in the analysis is shown as a red star.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/90996/elife-90996-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Graphs represent data of OpuA-K521C in 50 mM HEPES-K pH 7.0, 600 mM KCl. Left graph shows the bursts after burst selection with a cut-off of minimally 35 photons per burst. Right graph shows the bursts after removal of donor-only and acceptor-only bursts. To filter out acceptor-only bursts, a threshold of minimally 15 photons after donor excitation was set. To filter out donor-only bursts, a threshold of minimally 15 photons was set. Similar graphs for all other OpuA variants and conditions can be found in the publicly available python notebooks (https://doi.org/10.34894/GSIEBW).
+
 The FRET data of both OpuA variants is best explained by a four-state model (Figure 2A and B; fourth and fifth panel). Two of the four states represent donor-only (S≈1) or acceptor-only (S≈0) dwells. The full bursts belonging to donor-only and acceptor-only molecules were excluded prior to mpH2MM. This means that some molecules transit to a donor-only or acceptor-only state within the burst period, which most likely reflects blinking or bleaching of one of the fluorophores. These donor-only and acceptor-only states were also excluded during further analysis. The other two states reflect genuine FRET dwells that were analyzed by mpH2MM. They represent different conformations of the SBDs. In other words, the SBDs do not only freely diffuse in the absence of substrate and Mg-ATP (most likely represented by the low-FRET state with a high burst variance), but they also adopt a conformation where they move closer together. The transition rate constants from the high- to the low-FRET state was 193 s–1 for OpuA-N414C and 173 s–1 for OpuA-K521C. This is in the range of a burst size of 5–10ms and indicates that some proteins moved from one state to the other while being excited in the confocal volume. This also explains at least a part of the elevated burst variance in the BVA plots. Within-burst transitions from low- to high-FRET were less frequent than those from high- to low-FRET, making the estimated transition rate constants below 100 s–1 less accurate.
 
 Assuming that the low-FRET state represents a situation where the SBDs diffuse freely, we note that the mean FRET efficiency for OpuA-K521C is higher (0.18) than for OpuA-N414C (0.10). Position 414 is located farther from the transmembrane helix that anchors the SBD to the transporter. Hence, N414C has a larger sampling space and the two dyes can move farther apart, which explains the difference in mean FRET efficiency between OpuA-K521C and OpuA-N414C.
 
-## SBD dynamics under turnover conditions
+### SBD dynamics under turnover conditions
 
 OpuA transports glycine betaine in the presence of Mg-ATP and at high ionic strength. The transport-competent docking of the SBD onto the TMDs has been resolved by cryo-EM in a pre-hydrolysis state by using Mg-ATP and glycine betaine in combination with the E190Q mutation, which prevents OpuA from hydrolyzing ATP (Sikkema et al., 2020). It is unknown whether SBD docking also occurs in other states of the transport cycle.
 
 The SBD dynamics were tested in the presence of Mg-ATP, under turnover conditions (20 mM Mg-ATP, 100 µM glycine betaine), in a pre-hydrolysis inhibited state (20 mM Mg-ATP, 100 µM glycine betaine, OpuA-E190Q) and in a post-hydrolysis inhibited state (20 mM Mg-ATP, 100 µM glycine betaine, 500 µM ortho-vanadate). The mean FRET efficiency of the high-FRET states in OpuA-K521C shifted by 0.1 FRET unit in all conditions (Figure 2C and D; Table 2). For OpuA-N414C, the high-FRET state got less populated but did not shift (Table 3). It was hard to estimate the mean FRET efficiency of this state because of the low number of dwells. Nonetheless, it is clear that the changes in the FRET state are not likely to reflect a change in docking, since the same effect is observed when Mg-ATP is present without glycine betaine (Figure 2D).
 
-## SBD dynamics in a mutant with reduced docking efficiency
+**Table 2.**
+ The FRET (E) and Stoichiometry (S) of the FRET states of OpuA-K521C, their relative abundance and the transition rate constants between the states.Table 2—source data 1.Burst variance analysis and mpH2MM of the FRET bursts of OpuA-K521C (variants) in different buffers.(A) From top to bottom: (1) Burst variance analysis of the bursts which were corrected by the leakage, crosstalk, and γ-correction factors and which were selected after removing donor-only and acceptor-only bursts. The standard deviation of FRET in each burst is plotted against its mean FRET. Black squares show average values per FRET bin. Black dotted line shows the expected standard deviation in the absence of within-burst dynamics. (2) 2D E-S histogram shows the same data as in (1), with on both sides a histogram that represents the same bursts. (B) Plot of the ICL-values for each final model. The model used in the downstream analysis and following figures is shown as a star. (C) Plot of the BIC’-values for each final model. The red line represents a 0.05 cut-off. The model used is shown as a star. (D) Burst-based 2D E-S scatter plot. Bursts are colored on the basis of the assigned state of the chosen mpH2MM model. If a burst contains more than one state, it is assigned as being dynamic. (E) Dwell-based 2D E-S scatter plot. Dwells are colored on the basis of the assigned state of the chosen mpH2MM model. The dwells were corrected for leakage, direct excitation and the γ-factor. Black dots in A, D and E represent the average value of each state.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Condition*</th>
+      <th colspan="3">Low-FRET state (L)</th>
+      <th colspan="3">High-FRET state (H)</th>
+      <th colspan="2">Transition rate (s–1)</th>
+      <th rowspan="2">Number of FRET dwells</th>
+    </tr>
+    <tr>
+      <th>S</th>
+      <th>E</th>
+      <th>% dwells</th>
+      <th>S</th>
+      <th>E</th>
+      <th>% dwells</th>
+      <th>L-H</th>
+      <th>H-L</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>50 mM BIS-TRIS pH 7.0, 0 mM KCl</td>
+      <td>0.537</td>
+      <td>0.250</td>
+      <td>64.1</td>
+      <td>0.521</td>
+      <td>0.749</td>
+      <td>35.9</td>
+      <td>118</td>
+      <td>153</td>
+      <td>16,788</td>
+    </tr>
+    <tr>
+      <td>0 mM KCl</td>
+      <td>0.531</td>
+      <td>0.248</td>
+      <td>66.9</td>
+      <td>0.519</td>
+      <td>0.742</td>
+      <td>33.1</td>
+      <td>123</td>
+      <td>175</td>
+      <td>27,047</td>
+    </tr>
+    <tr>
+      <td>0 mM KCl, 100 µM glycine betaine</td>
+      <td>0.532</td>
+      <td>0.245</td>
+      <td>68.3</td>
+      <td>0.517</td>
+      <td>0.781</td>
+      <td>31.7</td>
+      <td>120</td>
+      <td>166</td>
+      <td>17,364</td>
+    </tr>
+    <tr>
+      <td>50 mM KCl</td>
+      <td>0.526</td>
+      <td>0.225</td>
+      <td>68.0</td>
+      <td>0.516</td>
+      <td>0.735</td>
+      <td>32.0</td>
+      <td>88</td>
+      <td>153</td>
+      <td>14,708</td>
+    </tr>
+    <tr>
+      <td>100 mM KCl</td>
+      <td>0.525</td>
+      <td>0.202</td>
+      <td>74.6</td>
+      <td>0.513</td>
+      <td>0.691</td>
+      <td>25.4</td>
+      <td>78</td>
+      <td>178</td>
+      <td>13,532</td>
+    </tr>
+    <tr>
+      <td>200 mM KCl</td>
+      <td>0.519</td>
+      <td>0.183</td>
+      <td>81.4</td>
+      <td>0.518</td>
+      <td>0.663</td>
+      <td>18.6</td>
+      <td>41</td>
+      <td>153</td>
+      <td>16,454</td>
+    </tr>
+    <tr>
+      <td>400 mM KCl</td>
+      <td>0.516</td>
+      <td>0.168</td>
+      <td>82.0</td>
+      <td>0.518</td>
+      <td>0.620</td>
+      <td>18.0</td>
+      <td>28</td>
+      <td>120</td>
+      <td>15,946</td>
+    </tr>
+    <tr>
+      <td>600 mM KCl</td>
+      <td>0.497</td>
+      <td>0.180</td>
+      <td>82.6</td>
+      <td>0.490</td>
+      <td>0.628</td>
+      <td>17.4</td>
+      <td>42</td>
+      <td>173</td>
+      <td>38,604</td>
+    </tr>
+    <tr>
+      <td>600 mM KCl (V149Q)</td>
+      <td>0.495</td>
+      <td>0.164</td>
+      <td>81.9</td>
+      <td>0.492</td>
+      <td>0.608</td>
+      <td>18.1</td>
+      <td>31</td>
+      <td>112</td>
+      <td>11,034</td>
+    </tr>
+    <tr>
+      <td>1000 mM KCl</td>
+      <td>0.505</td>
+      <td>0.148</td>
+      <td>79.9</td>
+      <td>0.511</td>
+      <td>0.591</td>
+      <td>20.1</td>
+      <td>26</td>
+      <td>109</td>
+      <td>12,666</td>
+    </tr>
+    <tr>
+      <td>600 mM KCl, 20 mM Mg-ATP</td>
+      <td>0.524</td>
+      <td>0.157</td>
+      <td>81.5</td>
+      <td>0.527</td>
+      <td>0.510</td>
+      <td>18.5</td>
+      <td>16</td>
+      <td>121</td>
+      <td>12,061</td>
+    </tr>
+    <tr>
+      <td>600 mM KCl, 20 mM Mg-ATP, 100 µM glycine betaine</td>
+      <td>0.515</td>
+      <td>0.155</td>
+      <td>78.5</td>
+      <td>0.511</td>
+      <td>0.507</td>
+      <td>21.5</td>
+      <td>0</td>
+      <td>52</td>
+      <td>17,155</td>
+    </tr>
+    <tr>
+      <td>600 mM KCl, 20 mM Mg-ATP, 100 µM glycine betaine (E190Q)</td>
+      <td>0.540</td>
+      <td>0.141</td>
+      <td>81.4</td>
+      <td>0.547</td>
+      <td>0.505</td>
+      <td>18.6</td>
+      <td>7</td>
+      <td>38</td>
+      <td>10,832</td>
+    </tr>
+    <tr>
+      <td>600 mM KCl, 20 mM Mg-ATP, 100 µM glycine betaine, 500 µM orthovanadate</td>
+      <td>0.517</td>
+      <td>0.154</td>
+      <td>78.9</td>
+      <td>0.513</td>
+      <td>0.529</td>
+      <td>21.5</td>
+      <td>17</td>
+      <td>87</td>
+      <td>21,052</td>
+    </tr>
+    <tr>
+      <td>600 mM KCl, 50 mM glutamate, 50 mM arginine</td>
+      <td>0.510</td>
+      <td>0.162</td>
+      <td>79.9</td>
+      <td>0.513</td>
+      <td>0.549</td>
+      <td>20.1</td>
+      <td>19</td>
+      <td>133</td>
+      <td>12,722</td>
+    </tr>
+  </tbody>
+</table>
+
+_*All conditions, except the first, contained 50 mM HEPES-K pH 7.0._
+
+**Table 3.**
+ The FRET (E) and Stoichiometry (S) of the FRET states of OpuA-N414C, their relative abundance, and the transition rate constants between the states.Table 3—source data 1.Burst variance analysis and mpH2MM of the FRET bursts of OpuA-N414C (variants) in different buffers.(A) From top to bottom: (1) Burst variance analysis of the bursts which were corrected by the leakage, crosstalk, and γ-correction factors and which were selected after removing donor-only and acceptor-only bursts. The standard deviation of FRET in each burst is plotted against its mean FRET. Black squares show average values per FRET bin. Black dotted line shows the expected standard deviation in the absence of within-burst dynamics. (2) 2D E-S histogram shows the same data as in (1), with on both sides a histogram that represents the same bursts. (B) Plot of the ICL-values for each final model. The model used in the downstream analysis and following figures is shown as a star. (C) Plot of the BIC’-values for each final model. The red line represents a 0.05 cut-off. The model used is shown as a star. (D) Burst-based 2D E-S scatter plot. Bursts are colored on the basis of the assigned state of the chosen mpH2MM model. If a burst contains more than one state, it is assigned as being dynamic. (E) Dwell-based 2D E-S scatter plot. Dwells are colored on the basis of the assigned state of the chosen mpH2MM model. The dwells were corrected for leakage, direct excitation and the γ-factor. Black dots in A, D and E represent the average value of each state.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Condition*</th>
+      <th colspan="3">Low-FRET state (L)</th>
+      <th colspan="3">High-FRET state (H)</th>
+      <th colspan="2">Transition rate (s–1)</th>
+      <th rowspan="2">Number of FRET dwells</th>
+    </tr>
+    <tr>
+      <th>S</th>
+      <th>E</th>
+      <th>% dwells</th>
+      <th>S</th>
+      <th>E</th>
+      <th>% dwells</th>
+      <th>L-H</th>
+      <th>H-L</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0 mM KCl</td>
+      <td>0.527</td>
+      <td>0.099</td>
+      <td>72.2</td>
+      <td>0.543</td>
+      <td>0.509</td>
+      <td>27.8</td>
+      <td>15</td>
+      <td>68</td>
+      <td>12,162</td>
+    </tr>
+    <tr>
+      <td>600 mM KCl</td>
+      <td>0.483</td>
+      <td>0.100</td>
+      <td>88.5</td>
+      <td>0.476</td>
+      <td>0.497</td>
+      <td>11.5</td>
+      <td>24</td>
+      <td>193</td>
+      <td>18,130</td>
+    </tr>
+    <tr>
+      <td>600 mM KCl, 20 mM Mg-ATP</td>
+      <td>0.548</td>
+      <td>0.090</td>
+      <td>94.4</td>
+      <td>0.536</td>
+      <td>0.456</td>
+      <td>5.6</td>
+      <td>2</td>
+      <td>141</td>
+      <td>10,447</td>
+    </tr>
+    <tr>
+      <td>600 mM KCl, 20 mM Mg-ATP, 100 µM glycine betaine</td>
+      <td>0.538</td>
+      <td>0.087</td>
+      <td>95.7</td>
+      <td>0.555</td>
+      <td>0.499</td>
+      <td>4.7</td>
+      <td>2</td>
+      <td>59</td>
+      <td>14,898</td>
+    </tr>
+    <tr>
+      <td>600 mM KCl, 20 mM Mg-ATP, 100 µM glycine betaine (E190Q)</td>
+      <td>0.479</td>
+      <td>0.106</td>
+      <td>94.8</td>
+      <td>0.464</td>
+      <td>0.540</td>
+      <td>5.2</td>
+      <td>25</td>
+      <td>317</td>
+      <td>8024</td>
+    </tr>
+    <tr>
+      <td>600 mM KCl, 20 mM Mg-ATP, 100 µM glycine betaine, 500 µM orthovanadate</td>
+      <td>0.538</td>
+      <td>0.085</td>
+      <td>94.6</td>
+      <td>0.578</td>
+      <td>0.568</td>
+      <td>5.4</td>
+      <td>5</td>
+      <td>186</td>
+      <td>7236</td>
+    </tr>
+  </tbody>
+</table>
+
+_*All conditions contained 50 mM HEPES-K pH 7.0._
+
+### SBD dynamics in a mutant with reduced docking efficiency
 
 To further corroborate the notion that neither the low- nor high-FRET states reflect a docked state, we designed OpuA-V149Q in the OpuA-K521C background to alter the docking interface between the SBD and TMDs (Figure 3A). Each valine-149 located on the TMD of the two OpuABC subunits interacts with a different lobe of a single docked SBD. V149Q was designed as a mild mutation that would reduce docking efficiency and thereby substrate loading, but leave the ionic strength sensing in the NBD and the binding of glycine betaine and ATP intact. Accordingly, a reduced docking efficiency should result in a lower absolute glycine betaine-dependent ATPase activity. At the same time the responsiveness of the system to varying KCl, glycine betaine, or Mg-ATP concentrations should not change. OpuA-V149Q-K521C exhibited a two- to three-fold reduction in glycine betaine-dependent ATPase activity, whereas the futile hydrolysis of ATP in the absence of substrate was unaffected (Figure 3B). The glycine betaine-dependent ATPase activities of wild type OpuA and OpuA-V149Q-K521C are comparable when they are plotted relative to their maximal activities (Figure 3C). The same holds for the dependencies on Mg-ATP and ionic strength (KCl concentration) (Figure 3—figure supplement 1). This confirms that the V149Q mutation affects the docking interface but not any other property of OpuA.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/90996/elife-90996-fig3-v1.jpg)
+
+**Figure 3.:** (A) A cryo-EM structure of OpuA (PDB: 7AHH) highlighting Val-149 and the two most important residues in the vicinity of Val-149. Coloring of the domains is similar to that in Figure 1A. (B) Results of an enzyme-coupled ATPase assay for OpuA-WT (filled circles, grey) and OpuA-V149Q-K521C (open circles, yellow). Each sample contains 50 mM HEPES-K pH 7.0, 450 mM KCl, 10 mM Mg-ATP, 4 mM phosphoenolpyruvate, 600 μM NADH, 2.1–3.5 U of pyruvate kinase, and 3.2–4.9 U of lactate dehydrogenase. Standard deviation over at least two measurements with different protein purifications and membrane reconstitutions, each consisting of three technical replicates is represented as shaded areas. (C) Results of (B) represented as activity relative to the activity at 100 µM glycine betaine. (D) smFRET results for OpuA-V149Q-K521C in 50 mM HEPES-K pH 7.0, 600 mM KCl. From top to bottom: (i) FRET histogram showing the corrected bursts that were selected after removing donor-only and acceptor-only bursts. (ii) 2D E-S histogram showing the same data as in (i). Black dots depict the average value of each state after mpH2MM and after application of the correction factors. (iii) Burst variance analysis of the same burst data as in (i). The standard deviation of FRET in each burst is plotted against its mean FRET. Black squares represent average values per FRET bin. Black dotted line shows the expected standard deviation in the absence of within-burst dynamics. (iv) E-S scatter plot of the corrected dwells. Dwells are colored on the basis of the assigned state of the chosen mpH2MM model. Black dots represent the average value of each state and the numbers at the arrows show transition rate constants (s–1) between the two FRET states. (v) Plot of the ICL-values for each final model. The model used in the analysis is shown as a red star.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/90996/elife-90996-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** A standard sample contains 50 mM HEPES-K pH 7.0, 450 mM KCl, 20 mM Mg-ATP, 100 µM glycine betaine, 4 mM phosphoenolpyruvate, 600 μM NADH, 2.1–3.5 U of pyruvate kinase plus 3.2–4.9 U of lactate dehydrogenase. Standard deviation over at least two measurements with different protein purifications and membrane reconstitutions, each consisting of three technical replicates is represented as shaded areas.
+
 We then studied OpuA-V149Q-K521C by smFRET at apo conditions, similarly as described above, in a high salt buffer (50 mM HEPES-K pH 7.0, 600 mM KCl) without glycine betaine or Mg-ATP. The FRET dwells of OpuA-V149Q-K521C also belong to two states with very similar transition rate constants and relative abundances compared to OpuA-K521C (Figure 3D; Table 2). Therefore, it is highly unlikely that any of the FRET states represents a conformation in which one SBD is docked.
 
-## KCl and glycine betaine-dependent changes in FRET states
+### KCl and glycine betaine-dependent changes in FRET states
 
 Because the change in FRET in the presence of Mg-ATP does not reflect a change in docking dynamics, we tested whether the difference in ionic strength between a buffer with or without Mg-ATP was causing the shift. FRET bursts of OpuA-K521C were recorded in the presence of KCl concentrations, ranging from 0 to 1000 mM. Notably, the mean FRET efficiency of the high-FRET state gradually shifted from 0.74 to 0.59 in the salt range of 0–1000 mM KCl (Figure 4A; Table 2). This is indicative of a structural change. Also the percentage of dwells that reside in the high-FRET state changed from 33% to 17% (Table 2). Interestingly, the transition rate constant from the high- to low-FRET population did not differ much between high and low KCl, whereas the transition rate constant from the low- to high-FRET population decreased from around 120 s–1 to 26 s–1 (Table 2). In other words, the increase in high-FRET dwells is caused by an increased tendency to go from low to high-FRET, while the tendency to go from high to low-FRET does not change.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/90996/elife-90996-fig4-v1.jpg)
+
+**Figure 4.:** (A, B) FRET (E) histograms of OpuA-K521C (A) and OpuA-N414C (B) corresponding to the corrected dwells of the two FRET states after mpH2MM. Black lines show the mean E of the two states. (C) A schematic representation of the diffusion freedom in 2D of the SBDs, shown as blue semicircles. The radius is defined as the sum of the radius of an SBD and the length of the linker region in a fully extended conformation. The sequence of the linker region was defined based on the occluded OpuA structure (PDB: 7AHD) and spans the N- and C-terminal end of the SBD and anchoring helix, respectively. (D) Lowpass-filtered cryo-EM density maps of OpuA-WT in three different ionic strength conditions (50 mM, 100 mM and 200 mM KCl). The top-views of each condition are horizontally aligned (left) and super-positioned (right) for better comparison. The densities corresponding to the SBDs are highlighted in teal, blue and brown ellipses, respectively.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/90996/elife-90996-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** lactis. The alignment was made by the Clustal Omega webserver using the default settings. The alignment was visualized and the JPRED secondary structure prediction were performed in Jalview (version 2.11.2.6). The black box indicates the linker region, based on OpuA from L. lactis. Jnetpred shows the consensus prediction of the different predictions in JPRED; α-helices are shown as red tubes and β-sheets as dark green arrows. JNETCONF is a confidence estimate of the jnetpred prediction. NCBI reference sequence IDs are: L. lactis, WP_003130445.1; L. taiwanensis, WP_205272268.1; L. allomyrinae, WP_120771492.1; L. garvieae, WP_004257235.1; L. hircilactis, WP_153496572.1; W. confusa, WP_199402959.1; W. muntiaci, WP_187387617.1;, W. ceti, WP_213409458.1; W. soli, WP_147152447.1; L. citreum, WP_040177303.1; W. halotolerans, WP_022790870.1; W. paramesenteroides, WP_150189650.1; L. plantarum, WP_068161132.1; L. fallax, WP_010007192.1; W. bombi, WP_092461275.1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/90996/elife-90996-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Representative elution profile from Superdex 200 increase 10/300 GL size-exclusion column. The collected fraction for cryo-EM sample preparation is indicated by dashed lines. (B) Representative micrograph at 1.3 μm defocus followed by detailed overview of the image processing leading to the map used. Abbreviations: gmodel t=crYOLO general model and K=number of classes. Scale bar, 10 nm.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/90996/elife-90996-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Representative elution profile from Superdex 200 increase 10/300 GL size-exclusion column. The collected fraction for cryo-EM sample preparation is indicated by dashed lines. (B) Representative micrograph of the sample at 1.3 μm defocus, followed by detailed overview of the image processing leading to the map used. Abbreviations: model03=in-house trained crYOLO model generated by Sikkema et al., 2020, K=number of classes and T=tau_fudge. Scale bar, 10 nm.
 
 The high-FRET state of OpuA-N414C decreased from 28% to 12% when the KCl concentration was increased from 0 to 600 mM (Figure 4B; Table 3). However, this was not accompanied by a change in FRET or an increase in the transition rate constant from low- to high-FRET, but rather a decrease in the transition rate constant from high- to low-FRET (Table 3). Assuming that the high-FRET states in OpuA-K521C and OpuA-N414C are a result of the same conformation, this could mean that there is more conformational flexibility across different conditions between the two Cys-521 positions than between the Cys-414 positions.
 
@@ -78,7 +458,7 @@ Notably, in contrast to many other ABC transporters, the SBDs are covalently lin
 
 smFRET was also performed in the absence of KCl and with a saturating concentration of glycine betaine (100 µM). The mean FRET efficiency of the high-FRET state of OpuA-K521C increased to 0.78, which corresponds to an inter-dye distance of about 4 nm. This indicates that the dyes at the two SBDs move very close towards each other (Figure 4A; Table 2). It also shows that the high-FRET state can be sensitive to the conformation of the SBD. In high-salt conditions plus Mg-ATP, glycine betaine does not induce a significant FRET shift, indicating that the high-FRET state under high-salt conditions is not affected by SBD closing. Taken together, these data show that the high-FRET state is present in both the open-unliganded and closed-liganded states of the SBDs.
 
-## Direct interactions between SBDs observed by single particle cryo-EM
+### Direct interactions between SBDs observed by single particle cryo-EM
 
 Recent advances in both hardware and software for single-particle cryo-EM have drastically improved the resolution of protein structures, and they also provided the capability to sample the dynamic conformational landscape of proteins at a given condition. More specifically, during image processing, single particles of various orientations are aligned and their signal is combined, resulting in a 3D density map that represents their average state. Depending on the degree of flexibility, the signal of individual domains can align (static) or be averaged out (inherently flexible). The latter is what we anticipated for the SBDs of OpuA, but such low-resolution data can still provide invaluable information and serve to complement smFRET data. While they might not allow to unambiguously model the atomic structure of a protein domain, they reveal its predominant relative localization relative to the rest of the protein complex.
 
@@ -104,6 +484,67 @@ Firstly, the SBDs do not physically interact but bind simultaneously to the TMDs
 
 Secondly, the SBDs interact with each other in an upright orientation, either back-to-back, front-to-front, back-to-front or something in between (Figure 5). For back-to-back and back-to-front conformations, the distance between the cysteines would be less than 4 nm in both OpuA-K521C and OpuA-N414C. This cannot explain the mean FRET efficiency of the high-FRET state in both OpuA variants, which would correspond to 4.1 nm for OpuA-K521C and 4.9 nm for OpuA-N414C in the conditions with the highest mean FRET (assuming a Förster distance (R0) of 0.51) (Tables 2 and 3). Moreover, both situations would reduce the rotational freedom of the fluorophores on the back of the SBD and hence their steady-state anisotropy, especially in the absence of KCl when the high-FRET state is more populated. However, the steady-state anisotropy is not different for conditions with 0 mM and 300 mM KCl (Table 4). A front-to-front conformation could reflect the observed mean FRET efficiency and at the same time would not interfere with the rotational freedom of the fluorophores. However, this conformation would not be able to dock. Since the high-FRET state is short-lived, docking should reduce the prevalence of this state, which is not what we observe (Tables 2 and 3).
 
+**Table 4.**
+ Steady-state anisotropy values of free dyes and dyes which were attached to different proteins.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Condition*</th>
+      <th>Alexa Fluor 555†</th>
+      <th>Alexa Fluor 647†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Free dye</td>
+      <td>50 mM KCl</td>
+      <td>0.21</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>Free dye</td>
+      <td>300 mM KCl</td>
+      <td>0.21</td>
+      <td>0.16</td>
+    </tr>
+    <tr>
+      <td>MalE-T36C-S352C</td>
+      <td>300 mM KCl</td>
+      <td>0.26</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>OpuA-K521C</td>
+      <td>50 mM KCl</td>
+      <td>0.30</td>
+      <td>0.28</td>
+    </tr>
+    <tr>
+      <td>OpuA-K521C</td>
+      <td>300 mM KCl</td>
+      <td>0.29</td>
+      <td>0.27</td>
+    </tr>
+    <tr>
+      <td>OpuA-N414C</td>
+      <td>50 mM KCl</td>
+      <td>0.28</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>OpuA-N414C</td>
+      <td>300 mM KCl</td>
+      <td>0.28</td>
+      <td>0.23</td>
+    </tr>
+  </tbody>
+</table>
+
+_*All conditions contained 50 mM HEPES-K pH 7.0.†Standard deviation between triplicates was less than 0.001._
+
 Thirdly, the SBDs interact sideways (Figure 5C). In this scenario, the mean FRET efficiency of the high-FRET state can reflect the distance between the fluorophores, the fluorophores would not be restricted in their rotational freedom, and the SBDs would be able to dock onto the TMDs. Furthermore, this would be in line with our cryo-EM data which hint to two flexible SBDs that on average move closer toward each other in low ionic strength conditions. Therefore, we consider this state type to be the most plausible explanation. It is possible that the apparent high concentration of the SBDs induces transient and not very strong interactions, explaining why the FRET can shift between different experimental conditions.
 
 In other words, the high FRET state may comprise an ensemble of weakly interacting states rather than a singular stable conformation, resembling the quinary structure of proteins. The quinary structure of proteins is typically revealed in highly crowded cellular environments and describes the weak interactions between protein surfaces that contribute to their stability, function, and spatial organization (Guin and Gruebele, 2019). Despite the current study being conducted under dilute conditions, the local concentration of SBDs (~4 mM) mimics a densely populated environment and reveal quinary structure.
@@ -114,15 +555,328 @@ In conclusion, the SBDs of OpuA transiently interact in a docking competent conf
 
 ## Materials and methods
 
-## Materials
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Lactococcus lactis IL1403)</td>
+      <td>OpuAA</td>
+      <td>NA</td>
+      <td>Q9RQ05</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Lactococcus lactis IL1403)</td>
+      <td>OpuABC</td>
+      <td>NA</td>
+      <td>Q9KIF7</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Lactococcus lactis)</td>
+      <td>Opu401</td>
+      <td>10.1073/pnas.0603871103;Biemans-Oldehinkel et al., 2006</td>
+      <td></td>
+      <td>Lactococcus lactis NZ9000 with OpuA gene deleted</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21(DE3)</td>
+      <td>NA</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pNZopuAhis</td>
+      <td>10.1073/pnas.97.13.7102;van der Heide and Poolman, 2000</td>
+      <td></td>
+      <td>Expression plasmid for OpuA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMSP1E3D1</td>
+      <td>Addgene</td>
+      <td>CAT#:20066</td>
+      <td>Expression plasmid for MSP1E3D1</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Protein Assay Kit</td>
+      <td>ThermoFisher Scientific Inc.</td>
+      <td>CAT#:23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 555</td>
+      <td>ThermoFisher Scientific Inc.</td>
+      <td>CAT#: A20346</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 647</td>
+      <td>ThermoFisher Scientific Inc.</td>
+      <td>CAT#: A20347</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dioleoyl-sn-glycero-3-phosphoethanolamine (DOPE)</td>
+      <td>Avanti Polar Lipids Inc.</td>
+      <td>CAT#: 850725 P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dioleoyl-sn-glycero-3-phosphocholine (DOPC)</td>
+      <td>Avanti Polar Lipids Inc.</td>
+      <td>CAT#: 850375 P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-dioleoyl-sn-glycero-3-phospho-(1'-rac-glycerol) (DOPG)</td>
+      <td>Avanti Polar Lipids Inc.</td>
+      <td>CAT#: 840475 P</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>n-Dodecyl-β-d-maltoside (DDM)</td>
+      <td>Glycon Biochemicals GmbH</td>
+      <td>CAT#: D97002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Adenosine 5′-triphosphate (ATP)</td>
+      <td>Roche Holding AG</td>
+      <td>CAT#: 10519987001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>ß-Nicotine amide adenine dinucleotide (NADH)</td>
+      <td>Carl Roth Gmbh</td>
+      <td>CAT#: AE12.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphoenolpyruvic acid (PEP)</td>
+      <td>Carl Roth Gmbh</td>
+      <td>CAT#: 8397.3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pyruvate Kinase/Lactic Dehydrogenase enzymes from rabbit muscle (PK/LDH)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: P0294</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycine betaine</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: 61962</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-glutamine</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: G3126</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-arginine</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: A5006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Orthovanadate</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: 450243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FRETbursts</td>
+      <td>10.1371/journal.pone.0160716;Ingargiola et al., 2016b</td>
+      <td></td>
+      <td>Version 0.7.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bursth2m</td>
+      <td>10.1038/s41467-022-28632-x;Harris et al., 2022</td>
+      <td></td>
+      <td>Version 0.1.6</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phconvert</td>
+      <td>phconvert.rtfd.io;Ingargiola et al., 2016a</td>
+      <td></td>
+      <td>Version 0.9</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ggplot2</td>
+      <td>10.1007/978-3-319-24277-4;Wickham, 2016</td>
+      <td></td>
+      <td>Version 3.3.5</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SymPhoTime 64</td>
+      <td>PicoQuant</td>
+      <td>RRID:SCR_016263</td>
+      <td>Version 2.6</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>10.1016/j.jsb.2005.07.007;Mastronarde, 2005</td>
+      <td></td>
+      <td>Version 4.0.10</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FOCUS</td>
+      <td>10.1016/J.JSB.2017.03.007;Biyani et al., 2017</td>
+      <td></td>
+      <td>Version 1.0.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MotionCor2</td>
+      <td>10.1038/nmeth.4193;Zheng et al., 2017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CTFFIND4</td>
+      <td>10.1016/J.JSB.2015.08.008;Rohou and Grigorieff, 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>crYOLO</td>
+      <td>10.1038/s42003-019-0437-z;Wagner et al., 2019</td>
+      <td></td>
+      <td>Version 1.8.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Relion</td>
+      <td>10.1042/BCJ20210708;Kimanius et al., 2021</td>
+      <td></td>
+      <td>Version 4.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cryoSPARC</td>
+      <td>10.1038/nmeth.4169;Punjani et al., 2017</td>
+      <td></td>
+      <td>Version 4.1.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF ChimeraX</td>
+      <td>10.1002/pro.3235;Goddard et al., 2018</td>
+      <td></td>
+      <td>Version 1.5</td>
+    </tr>
+  </tbody>
+</table>
+
+### Materials
 
 All the oligonucleotide primers are listed in Table 5. The OpuA mutations were introduced in pNZopuAhis by means of USER cloning (van der Heide and Poolman, 2000). This plasmid contains the opuA genes from L. lactis IL1403 with a C-terminal His6-tag on the opuABC gene. The ultracentrifuge rotors were from Beckman Coulter, Brea, California.
+
+**Table 5.**
+ Primers used in this study to generate mutations in OpuA.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Oligo nr.</th>
+      <th>Oligo name</th>
+      <th>Sequence (from 5' to 3') *</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>9053</td>
+      <td>UOpuAC-K521C fw</td>
+      <td>aaaggttUgaagTGTgaaaatccagaagcttataaag</td>
+    </tr>
+    <tr>
+      <td>9054</td>
+      <td>UOpuAC-K521C rev</td>
+      <td>aaaccttUacgaacaatgg</td>
+    </tr>
+    <tr>
+      <td>9511</td>
+      <td>UOpuAC-N414C fw</td>
+      <td>aattgaagaUttaacaaatcaagc</td>
+    </tr>
+    <tr>
+      <td>9512</td>
+      <td>UOpuAC-N414C rev</td>
+      <td>atcttcaatUgaattaacACAcatataacttggaac</td>
+    </tr>
+    <tr>
+      <td>9617</td>
+      <td>UOpuAA-E190Q fw</td>
+      <td>aagctttcUctgctcttgac</td>
+    </tr>
+    <tr>
+      <td>9618</td>
+      <td>UOpuAA-E190Q rev</td>
+      <td>agaaagcTUGatccatgagcaaaatc</td>
+    </tr>
+    <tr>
+      <td>9619</td>
+      <td>UOpuAC-V149Q fw</td>
+      <td>atttgatUccagcgCAAgcattctttgg</td>
+    </tr>
+    <tr>
+      <td>9620</td>
+      <td>UOpuAC-V149Q rev</td>
+      <td>aatcaaaUaaacgaaaccagg</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Mutated triplets and introduced uracils are in capitals._
 
 The general purification buffer for OpuA purification in detergent consisted of 50 mM KPi pH 7.0, 200 mM KCl, 20% glycerol (v/v) plus 0.04% DDM (w/w) (Buffer 1). The general purification buffer for OpuA purification in nanodiscs consisted of 20 mM K-HEPES pH 7.0 plus 300 mM KCl (Buffer 2). During the different purification steps, the buffers were supplemented with variable concentrations of imidazole pH 7.5 as described below. In case of the cysteine variants of OpuA, 1 mM DTT was added to each step of the protocol from the breaking of the cells and onwards.
 
 A detailed purification and nanodisc reconstitution procedure for OpuA has been made publicly available at protocol.io (https://doi.org/10.17504/protocols.io.bp2l624pzgqe/v1). This protocol also encompasses details regarding the optimized parameters of the procedure.
 
-## Expression and purification of OpuA
+### Expression and purification of OpuA
 
 OpuA variants were expressed as described before (Sikkema et al., 2020). The cells with an optical density at 600 nm (OD600) of less than 200 were stored at –80 °C in 50 mM KPi pH 7.5 with 20% glycerol (v/v).
 
@@ -130,7 +884,7 @@ The cells were thawed and supplemented with 100 µg/mL DNAse, 2 mM MgSO4 and 1 m
 
 For solubilization the CMVs were thawed and incubated in an open MLA-80 centrifuge tube for 30 min at 4 °C in 6 mL Buffer 1, supplemented with 0.5% DDM (w/w), at a total protein concentration of 3 mg/mL. The sample was mixed once after 15 min by gently pipetting. Insolubilized material was spun down by ultracentrifugation (20 min, 337,000 x g, 4 °C) and 10 mM imidazole pH 7.5 was added to the supernatant. The supernatant was poured into a column with a closed outlet that was loaded with 0.5 mL Ni2+-Sepharose resin (GE Healthcare, Chicago, Illinois), which was pre-washed two times with 6 column volumes of MQ and equilibrated with 4 column volumes of Buffer 1, supplemented with 10 mM imidazole pH 7.5. The solution was mixed by gently pipetting. After 10–20 min, the solution was mixed again by pipetting. Once a part of the resin was sedimented, the column outlet was opened to let the protein solution flow through. The resin was washed with two times 10 column volumes of Buffer 1, supplemented with 50 mM imidazole pH 7.5. OpuA was eluted with Buffer 1, supplemented with 200 mM imidazole pH 7.5, in a first fraction of 0.6 column volume and four subsequent fractions of 0.4 column volume. Purified OpuA was directly used for reconstitution in nanodiscs.
 
-## Expression and purification of MSP1E3D1 without His-tag
+### Expression and purification of MSP1E3D1 without His-tag
 
 The expression and purification method of MSP1E3D1 was adapted from a previously described method (Ritchie et al., 2009). An E. coli BL21(DE3) colony, transformed with pMSP1E3D1, was grown during the day in 2 mL Luria–Bertani (LB) medium (1% bactotrypton, 0.5% yeast extract, 1% NaCl)+30 µg/mL kanamycin at 37 °C and 200 rpm. A total of 500 μL of the culture was used to make a dilution series of four samples for overnight growth at 37 °C and 200 rpm with 50 mL LB +30 µg/mL kanamycin, with dilution factors of 100 between the samples. The sample with the highest overall dilution and having visible growth was used as starter culture for 2 L of phosphate-buffered Terrific Broth medium, 200 μL antifoam 204 plus 10 μg/mL kanamycin. The bioreactor (2 L) temperature was set at 37 °C, and the mixing speed was set at 500 rpm with a linear increase to 1000 rpm in 4 hr. Aeration was provided by a filtered airflow of 40 L/min through the media. Expression was induced with 1 mM IPTG at an OD600 of 2. After 3 hr, the cells were harvested at 6000 x g for 15 min at 4 °C, washed in 50 mM KPi pH 7.8, and finally resuspended in 50 mM KPi pH 7.8 in less than 10% of the original volume, flash frozen in liquid nitrogen, and stored at –80 °C. Cells from one bioreactor were enough for two separate purifications.
 
@@ -140,11 +894,11 @@ For purification of MSP1E3D1, 7.5 mL of Ni2+-Sepharose resin was used, which was
 
 After dialysis, 2.5 mL of Ni2+-Sepharose resin was used to remove the TEV-protease and noncleaved MSP1E3D1. The resin was washed with 6 column volumes of demi water and 6 column volumes of 20 mM Tris-HCl pH 7.4, 100 mM NaCl. The flow-through was reapplied twice to make sure all TEV-protease and noncleaved MSP1E3D1 was bound to the resin. The third time, the flowthrough was collected as a single fraction. Subsequently, the column was washed with 20 mM Tris-HCl pH 7.4, 100 mM NaCl plus 40 mM imidazole in nine 2 mL fraction. All MSP1E3D1 containing fractions were pooled and concentrated to 150–175 µM MSP1E3D1, using a Vivaspin 20 centrifugation filter (10 kDa cutoff). Aliquots were flash frozen in liquid nitrogen and stored at –80 °C.
 
-## Preparation synthetic lipids stock
+### Preparation synthetic lipids stock
 
 The three lipid species DOPE, DOPC, DOPG were separately dissolved in chloroform to a concentration of 25 mg/mL and mixed in a volume ratio of 50:12:38 (DOPE:DOPC:DOPG). The lipids were dried in a rotary evaporator at 40 °C and ~450 mbar for 20 min, followed by 30 min at full vacuum. The lipids were then resuspended in diethyl ether and subsequently dried in a rotary evaporator at 40 °C and ~900 mbar for 20 min, followed again by 30 min at full vacuum. Residual diethyl ether was removed by applying a gentle N2 flow to the lipid film for 5 min. The lipids were resuspended in 50 mM KPi pH 7.0 to a concentration of 25 mg/mL and sonicated in an ice-water bath for 16 cycles of 15 s with a 45 s interval and with an amplitude of 77 µm. Aliquots of the lipids were fast frozen in liquid nitrogen and slowly thawed at room temperature in three cycles. Subsequently, the aliquots were stored in liquid nitrogen.
 
-## Reconstitution of OpuA in nanodiscs
+### Reconstitution of OpuA in nanodiscs
 
 Lipids were thawed, diluted four times in 50 mM KPi pH 7.0 and sonicated in an ice-water bath for 8 cycles of 15 s with a 45 s interval at an amplitude of 77 µm. Afterwards, 1% DDM (w/w) was added from a 10% stock to fully solubilize the lipids at a concentration of 5.63 mg/mL lipids. The solution was left at RT for at least 2 hr before it was used.
 
@@ -152,13 +906,13 @@ For optimal reconstitution, 0.9 mM lipids, 45 µM MSP1E3D1 plus 4.5 µM OpuA (ba
 
 The next day, the nanodiscs were separated from the Bio-Beads by means of a syringe with a needle. Aggregates were removed by centrifugation (15 min, 20,000 x g, 4 °C). The sample was loaded to 0.2 mL Ni2+-Sepharose resin, which was washed two times with 5 column volumes of MQ and equilibrated with 5 column volumes of 50 mM KPi pH 7.0. The flowthrough was reapplied twice, before the resin was washed two times with 5 column volumes of Buffer 2, supplemented with 25 mM imidazole pH 7.5. OpuA was eluted with Buffer 2, supplemented with 200 mM imidazole pH 7.5, in a first fraction of 0.8 column volume and a second fraction of 2.5 column volumes. The second fraction was directly further purified by size exclusion chromatography using a Superdex 200 increase 10/300 GL column in Buffer 2. The purified protein was flash frozen in liquid nitrogen and stored at –80 °C.
 
-## ATPase assays
+### ATPase assays
 
 The ATPase activity assays were performed as is described in Sikkema et al., 2020. In this coupled enzyme assay, the synthesis of ATP from ADP is coupled to oxidation of NADH to NAD+, which can be monitored over time by measuring NADH-based absorbance at 340 nm. In other words, for each ATP hydrolysis reaction, one NADH molecule gets dehydrogenated.
 
 In short, each measured sample contained 50 mM K-HEPES pH 7.0, 4 mM phosphoenolpyruvate, 600 μM NADH, 2.1–3.5 U of pyruvate kinase, 3.2–4.9 U of lactate dehydrogenase plus approximately 5 µg/mL OpuA in nanodiscs. The concentrations of glycine betaine, KCl, and Mg-ATP were varied as described in the Results section (Figure 1—figure supplement 1, Figure 3). Absolute activities in min–1 are based on a molecular weight of two MSP1E3D1 and one full-length OpuA complex (total mass 278,126 Da). The data was analyzed in R, using ggplot2 (Wickham, 2016).
 
-## Labeling of OpuA for smFRET experiments
+### Labeling of OpuA for smFRET experiments
 
 For the stochastic labeling, only half of the reconstituted nanodisc sample was used (i.e. ~3 nmol of cysteines). Therefore, the sample was loaded to 0.1 mL Ni2+-Sepharose resin, which had been washed and equilibrated as described under ‘Reconstitution of OpuA in nanodiscs’. The flow through was reapplied twice, before the resin was washed twice with 5 column volumes of Buffer 2 to remove the DTT. Directly after the wash steps 4 column volumes of Buffer 2, supplemented with 50 nmol of Alexa Fluor 555 plus 50 nmol of Alexa Fluor 647, were added to the resin. The flow was stopped by closing the outlet when more than 2 column volumes were flown through, but before the column ran dry.
 
@@ -166,19 +920,27 @@ The column was wrapped with parafilm and aluminium foil, and incubated on ice fo
 
 The efficiency of labeling with Alexa fluorophores was determined before aliquoting and storage, by means of an absorbance scan using a UV-VIS spectrophotometer (Cary 100 Bio; Varian Inc, Palo Alto, California).
 
-## smFRET measurements
+### smFRET measurements
 
 Pulsed Interleaved Excitation (PIE) and solution-based smFRET experiments were performed on a MicroTime 200 confocal microscope (PicoQuant, Berlin, Germany). Prior to the recording, microscope slides (170 µm thickness, No. 1.5 H precision cover slides, VWR Marienfeld, Leicestershire, Great Britain; LH26.1) were coated for at least one min with 1 mg/mL filtered (0.2 µm) bovine serum albumin (BSA) in 50 mM HEPES-K pH 7.0, after which the BSA solution was removed by pipetting and replaced by 150–200 µL of the sample.
 
 The laser pulse rate was set at 40 MHz. Fluorophores were alternately excited, using a 532 nm (LDH-P-FA-530-B; PicoQuant, Berlin, Germany) and 638 nm (LDH-D-C-640; PicoQuant, Berlin, Germany) laser. The laser beam was focused 7 µm away from the glass-solution interface in the z-direction, by means of an oil-immersed objective lens (UPlanSApo 100x1.40 NA; Olympus, Tokyo, Japan). The emitted photons from the sample were coordinated through a 100 µm pinhole, separated through a laser beam-splitter (ZT640RDC; Chroma Technology, Bellows Falls, Vermont), filtered by either a HQ690/70 (Chroma Technology, Bellows Falls, Vermont) or a 582/75 (Semrock, Rochester, New York) emission filter, and recorded by two photon counting modules (donor photons: SPCM-AQRH-14-TR, acceptor photons: SPCM-CD-3516-H; Excelitas Technologies, Waltham, Massachusetts).
 
-## smFRET data analysis
+### smFRET data analysis
 
 Raw data were saved as.PTU file extensions by the SymPhoTime 64 software (PicoQuant, Berlin, Germany), but was converted to.HDF5 file extensions, using the Python package phconvert (Ingargiola et al., 2016a). Fluorescent bursts were identified by the all photon burst search (APBS) method, using the Python based software package FRETbursts (Ingargiola et al., 2016b). The Python codes for the downstream analysis were adapted from published codes (Harris et al., 2022). Burst cut-off settings were set to a minimum of m=10 consecutive photons per sliding window and at least F=6 times higher than the background signal. The background signal was calculated over each 30 s of the measurement. The initial burst selection considered all detected photons in the donor and acceptor channel during both the donor and acceptor excitation periods. This was done with a cut-off of minimally 35 photons per burst.
 
-Three types of photon counts were extracted from each burst: donor-based donor emission (FDD), donor-based acceptor emission (FDA) and acceptor-based acceptor emission (FAA). These were used to calculate the apparent FRET efficiency E* and stoichiometry S of each burst. Apparent FRET efficiency was defined as:(1)E∗=FDAFDA+FDD
+Three types of photon counts were extracted from each burst: donor-based donor emission (FDD), donor-based acceptor emission (FDA) and acceptor-based acceptor emission (FAA). These were used to calculate the apparent FRET efficiency E* and stoichiometry S of each burst. Apparent FRET efficiency was defined as:
 
-The stoichiometry of a burst was defined as the ratio between overall donor-based fluorescence over the total fluorescence of the burst, that is:(2)S=FDA+FDDFDA+FDD+FAA
+$$
+E^{∗}=\frac{F_{DA}}{F_{DA}+F_{DD}}
+$$
+
+The stoichiometry of a burst was defined as the ratio between overall donor-based fluorescence over the total fluorescence of the burst, that is:
+
+$$
+S=\frac{F_{DA}+F_{DD}}{F_{DA}+F_{DD}+F_{AA}}
+$$
 
 For mpH2MM, the Python package bursth2mm was used and run with default parameters. All calculations can be found back in the supplemented Jupyter notebooks. The model optimization process for each model is based on the ICL criterion. This criterion takes into account the probability of the most likely state path through the bursts and penalizes for the number of states that is needed to explain the data (Harris et al., 2022). The model with lowest ICL was adopted for downstream analysis. For each calculation, also the BIC’ value was inspected, which was usually slightly above the 0.05 cut-off for the optimal model, based on the ICL criterion.
 
@@ -186,24 +948,32 @@ The γ-correction factor was calculated on the basis of the resulting two FRET s
 
 The bursts were also analyzed by BVA (Torella et al., 2011). In a BVA, the mean FRET efficiency of each burst is plotted against its standard deviation (σ) from the mean during the burst. The data was binned with a bin size of 0.1 E and plotted in the same graph. The σ of the binned data was compared with what would be expected from theory. Deviation from the expected σ was considered as a qualitative indication for within-burst dynamics.
 
-## Steady-state fluorescence anisotropy measurements
+### Steady-state fluorescence anisotropy measurements
 
-To measure polarized fluorescence, a Jasco FP-8300 scanning spectrofluorometer (Jasco Inc, Easton, Maryland) with polarized filters was used. Alexa Fluor 555 and Alexa Fluor 647 were excited at 535 nm and 635 nm, respectively (10 nm bandwidth). Emission was recorded at 580 nm and 660 nm (10 nm bandwidth). Anisotropy (r) was calculated by:(3)r=IVV−G∗IVHIVV+2G∗IVH
+To measure polarized fluorescence, a Jasco FP-8300 scanning spectrofluorometer (Jasco Inc, Easton, Maryland) with polarized filters was used. Alexa Fluor 555 and Alexa Fluor 647 were excited at 535 nm and 635 nm, respectively (10 nm bandwidth). Emission was recorded at 580 nm and 660 nm (10 nm bandwidth). Anisotropy (r) was calculated by:
 
-where IVV and IVH represent fluorescence intensities after vertical excitation in the vertical and horizontal plane, respectively. Parameter G is a correction factor to compensate for different sensitivity of the machine in the vertical versus the horizontal plane:(4)G=IHVIHH
+$$
+r=\frac{I_{VV}−G∗I_{VH}}{I_{VV}+2G∗I_{VH}}
+$$
 
-## Sample preparation for single particle cryo-EM and data acquisition
+where IVV and IVH represent fluorescence intensities after vertical excitation in the vertical and horizontal plane, respectively. Parameter G is a correction factor to compensate for different sensitivity of the machine in the vertical versus the horizontal plane:
+
+$$
+G=\frac{I_{HV}}{I_{HH}}
+$$
+
+### Sample preparation for single particle cryo-EM and data acquisition
 
 Freshly purified wild type OpuA in MSP1E3D1 nanodiscs was concentrated to 1 mg/ml with a Vivaspin 500 (100 kDA). A concentrated sample (2.8 μl) was applied to holey carbon grids (Au R1.2/1.3, 300 mesh, Quantifoil, Jena, Germany) previously glow-discharged for 30 s at 5 mA. The grids were blotted for 3–5 s at 15–22°C and 100% humidity in a Vitrobot Mark IV (ThermoFisher Scientific Inc, Waltham, Massachusetts), subsequently plunge-frozen into a liquid ethane/propane mixture, and stored in liquid nitrogen for data collection.
 
 Datasets for each condition were collected in-house using a 200 kV Talos Arctica microscope (ThermoFisher Scientific Inc, Waltham, Massachusetts). Movies were recorded with a K2 summit (Gatan Inc, Pleasanton, California) with a post-column BioQuantum energy filter (Gatan Inc, Pleasanton, California) with a zero-loss slit width of 20 eV. Automatic data collection was performed using SerialEM ver 4.0.10 with a 100 μm objective aperture, a pixel size of 1.022 Å (calibrated magnification 48,924), a defocus range of –0.5 to –2.0 μm, a total exposure time of 9 s captured in 60 frames (150 ms subframe exposure) and total electron exposure of 50.9 e- per Å2 (Mastronarde, 2005; Schorb et al., 2019). Target holes for data acquisition were qualitatively screened and selected based on their ice thickness (20–50 nm) with an in-house-developed script (Rheinberger et al., 2021). Data quality was monitored on-the-fly using FOCUS version 1.0.0 (Biyani et al., 2017).
 
-## Cryo-EM image processing of wild type OpuA in 50 mM KCl
+### Cryo-EM image processing of wild type OpuA in 50 mM KCl
 
 A total of 5462 movies were collected from five grids (containing samples from the same purification and frozen in the same session) and were gain corrected and pre-processed on-the-fly with FOCUS version 1.0.0 utilizing MotionCor2 and CTFFIND4 for motion correction (frame-dose weighting) and CTF estimation, respectively (Zheng et al., 2017; Rohou and Grigorieff, 2015). In total, 4482 images were selected for further processing after removing those of lower quality (visual inspection, poor CTF estimation and contamination). A total of 1,879,237 particles were picked utilizing the PhosaurusNet architecture of crYOLO version 1.8.4 with the general model and subsequently extracted in Relion 4.0 with a box size of 256 pixels and downscaled to 2.044 Å/pixel (Wagner et al., 2019; Kimanius et al., 2021). Extracted particles were processed in parallel both in Relion 4.0 and CryoSPARC 4.1.1.
 
 In CryoSPARC, particles were subjected to two rounds of 2D classification using default settings with the exception of ‘Number of final full iterations’ set to 5 and an ‘Initial classification uncertainty factor’ of 1 and 2 for the first round and the second round, respectively. Selected particles (552,280) were subjected to ab initio reconstruction and subsequently to hetero refinement. The best class (166,066 particles) was further refined using non-uniform refinement which resulted in 6.21 Å resolution. The final map was low pass filtered to 15 Å for comparison. All processing was done without imposing any symmetry (C1).
 
-## Cryo-EM image processing of wild type OpuA in 100 mM KCl
+### Cryo-EM image processing of wild type OpuA in 100 mM KCl
 
 A total of 1,474 movies were collected from a single grid and were gain corrected and pre-processed on-the-fly with FOCUS version 1.0.0 utilizing MotionCor2 and CTFFIND4 for motion correction (frame-dose weighting) and CTF estimation, respectively. In total, 1051 images were selected for further processing after removing those of lower quality (visual inspection, poor CTF estimation and contamination). A total of 559,491 particles were picked utilizing the PhosaurusNet architecture of crYOLO version 1.8.4 with a pretrained model as described in Sikkema et al., 2020 and subsequently extracted in Relion 4.0 with a box size of 256 pixels and downscaled to 2.044 Å/pixel. Extracted particles were subjected to a round of 2D classifications with a mask of 200 Å. Selected particles (264,267) were classified in 3D by limiting the E-step size to 7 Å, regularization parameter T=4 and a mask of 200 Å. The best three classes (97,369 particles) were selected and re-extracted with a box size of 256 pixels with no downscaling. These particles were subsequently imported into CryoSPARC and subjected to ab initio reconstruction and subsequently to hetero refinement. The best classes (80,348 particles) were further refined using non-uniform refinement which resulted in 7 Å resolution. The final map was low-pass filtered to 15 Å for comparison. All processing was done without imposing any symmetry (C1).

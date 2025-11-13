@@ -18,17 +18,17 @@
 
 ### Affiliations
 
-1. https://ror.org/0524sp257 MRC Integrative Epidemiology Unit, University of Bristol Bristol United Kingdom
-2. https://ror.org/0524sp257 Population Health Sciences, Bristol Medical School, University of Bristol Bristol United Kingdom
-3. https://ror.org/0524sp257 University of Bristol Dental School Bristol United Kingdom
-4. https://ror.org/00v452281 Genomic Epidemiology Branch, International Agency for Research on Cancer, World Health Organization Lyon France
-5. https://ror.org/00a0jsq62 London School of Hygiene & Tropical Medicine London United Kingdom
+1. MRC Integrative Epidemiology Unit, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+2. Population Health Sciences, Bristol Medical School, University of Bristol Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+3. University of Bristol Dental School Bristol United Kingdom ([ROR:0524sp257](https://ror.org/0524sp257))
+4. Genomic Epidemiology Branch, International Agency for Research on Cancer, World Health Organization Lyon France ([ROR:00v452281](https://ror.org/00v452281))
+5. London School of Hygiene & Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
 
 † Corresponding author
 
 ## Abstract
 
-Adiposity has been associated with an increased risk of head and neck cancer (HNC). Although body mass index (BMI) has been inversely associated with HNC risk among smokers, this is likely due to confounding. Previous Mendelian randomization (MR) studies could not fully discount causality between adiposity and HNC. Hence, we aimed to revisit this using the largest genome-wide association study (GWAS) of HNC available, which has more granular data on HNC subsites. We assessed the genetically predicted effects of BMI (N=806,834), waist-to-hip ratio (WHR; N=697,734) and waist circumference (N=462,166) on the risk of HNC (N=12,264 cases) and its subsites using a two-sample MR framework. We used inverse variance weighted (IVW) MR and multiple sensitivity analyses, including multivariable MR (MVMR), to explore the direct effects of the adiposity measures on HNC, while accounting for smoking behaviour (a well-known HNC risk factor). In univariable MR, higher genetically predicted BMI increased the risk of overall HNC (IVW OR = 1.17 per 1-SD higher BMI, 95% CI 1.02–1.34). However, the IVW effect was attenuated when smoking was included in the MVMR model (OR accounting for comprehensive smoking index = 0.96 per 1-SD higher BMI, 95% CI 0.80–1.15). Furthermore, we did not find a link between genetically predicted WHR (IVW OR = 1.05 per 1-SD higher WHR, 95% CI 0.89–1.24) or waist circumference and HNC risk (IVW OR = 1.01 per 1-SD higher waist circumference, 95% CI 0.85–1.21). Our findings suggest that adiposity does not play a major role in HNC risk. FMB was supported by a Wellcome Trust PhD studentship in Molecular, Genetic and Lifecourse Epidemiology (224982/Z/22/Z). RCR was supported by a Cancer Research UK grant (C18281/A29019). MCB is supported by a University of Bristol Vice Chancellor’s Fellowship, the British Heart Foundation (AA/18/1/34219) and the UK Medical Research Council (MC_UU_00032/5). GDS works within the MRC Integrative Epidemiology Unit at the University of Bristol, which is supported by the Medical Research Council (MC_UU_00032/1). CLR was supported by the Medical Research Council (MC_UU_00011/5) and by a Cancer Research UK (C18281/A29019) programme grant (the Integrative Cancer Epidemiology Programme). SV was funded by an EU Horizon 2020 grant (agreement number 825771) and NIDCR National Institutes of Dental and Craniofacial Health (R03DE030257). JK works in a unit that receives support from the University of Bristol, a Cancer Research UK grant (C18281/A29019) and the UK Medical Research Council (grant number: MC_UU_00032/7).
+Background:Adiposity has been associated with an increased risk of head and neck cancer (HNC). Although body mass index (BMI) has been inversely associated with HNC risk among smokers, this is likely due to confounding. Previous Mendelian randomization (MR) studies could not fully discount causality between adiposity and HNC. Hence, we aimed to revisit this using the largest genome-wide association study (GWAS) of HNC available, which has more granular data on HNC subsites.Methods:We assessed the genetically predicted effects of BMI (N=806,834), waist-to-hip ratio (WHR; N=697,734) and waist circumference (N=462,166) on the risk of HNC (N=12,264 cases) and its subsites using a two-sample MR framework. We used inverse variance weighted (IVW) MR and multiple sensitivity analyses, including multivariable MR (MVMR), to explore the direct effects of the adiposity measures on HNC, while accounting for smoking behaviour (a well-known HNC risk factor).Results:In univariable MR, higher genetically predicted BMI increased the risk of overall HNC (IVW OR = 1.17 per 1-SD higher BMI, 95% CI 1.02–1.34). However, the IVW effect was attenuated when smoking was included in the MVMR model (OR accounting for comprehensive smoking index = 0.96 per 1-SD higher BMI, 95% CI 0.80–1.15). Furthermore, we did not find a link between genetically predicted WHR (IVW OR = 1.05 per 1-SD higher WHR, 95% CI 0.89–1.24) or waist circumference and HNC risk (IVW OR = 1.01 per 1-SD higher waist circumference, 95% CI 0.85–1.21).Conclusions:Our findings suggest that adiposity does not play a major role in HNC risk.Funding:FMB was supported by a Wellcome Trust PhD studentship in Molecular, Genetic and Lifecourse Epidemiology (224982/Z/22/Z). RCR was supported by a Cancer Research UK grant (C18281/A29019). MCB is supported by a University of Bristol Vice Chancellor’s Fellowship, the British Heart Foundation (AA/18/1/34219) and the UK Medical Research Council (MC_UU_00032/5). GDS works within the MRC Integrative Epidemiology Unit at the University of Bristol, which is supported by the Medical Research Council (MC_UU_00032/1). CLR was supported by the Medical Research Council (MC_UU_00011/5) and by a Cancer Research UK (C18281/A29019) programme grant (the Integrative Cancer Epidemiology Programme). SV was funded by an EU Horizon 2020 grant (agreement number 825771) and NIDCR National Institutes of Dental and Craniofacial Health (R03DE030257). JK works in a unit that receives support from the University of Bristol, a Cancer Research UK grant (C18281/A29019) and the UK Medical Research Council (grant number: MC_UU_00032/7).
 
 ## Introduction
 
@@ -42,13 +42,13 @@ It is important to acknowledge that previous MR studies on adiposity (i.e. BMI, 
 
 ## Methods
 
-## Study design
+### Study design
 
 We used a two-sample MR framework to assess the genetically predicted effects of BMI, WHR and waist circumference on the risk of HNC and its subsites (oral, laryngeal, hypopharyngeal, and oropharyngeal cancers) among individuals of European ancestry (Figure 1). Genetic variants associated with these adiposity traits were used as instrumental variables to estimate causal effects under the three core MR assumptions (Davies et al., 2018): (1) the genetic variants are strongly associated with the adiposity trait of interest (relevance assumption); (2) the distribution of the genetic variants in the population is not influenced by factors that also influence HNC risk, such as population stratification, assortative mating and dynastic effects (independence assumption); and (3) the genetic variants can only influence HNC risk via their effect on the adiposity trait of interest (exclusion restriction assumption). This work was conducted and reported according to the STROBE-MR guidelines (Skrivankova et al., 2021) (STROBE-MR checklist).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/106075/elife-106075-fig1-v1.jpg)
 
-## Head and neck cancer GWAS
+### Head and neck cancer GWAS
 
 GWAS summary statistics for HNC were obtained from a European HEADSpAcE consortium GWAS that excluded UK Biobank participants (N=31,523, including 12,264 cases and 19,259 controls) to avoid overlapping samples across the exposure and outcome datasets. It includes the European GAME-ON data used by Lesseur et al., 2016 and has more granular data on HNC subsites (i.e. oral cavity [N=21,269, including 3091 cases and 18,178 controls], hypopharynx [N=18,652, including 474 cases and 18,178 controls], HPV positive oropharynx [N=20,146, including 1980 cases and 18,166 controls], HPV negative oropharynx [N=19,114, including 948 cases and 18,166 controls] and larynx [N=20,668, including 2490 cases and 18,178 controls]; Ebrahimi et al., 2024).
 
@@ -56,25 +56,25 @@ HNC was defined based on the 10th revision of the International Classification o
 
 Further detail on the HEADSpAcE GWAS has been published elsewhere (Ebrahimi et al., 2024). In brief, genotype data were obtained using nine different genotyping arrays. They were subsequently converted to genome build 38 for consistency across datasets. Quality control (QC) procedures were conducted by genotyping array rather than by study. Samples were excluded for the following reasons: sex mismatch (heterozygosity <0.8 for males and >0.2 for females), autosomal heterozygosity (>3 standard deviation [SD] units from the mean), missingness (>0.03), and cryptic relatedness (identity-by-decent>0.185). Single nucleotide polymorphisms (SNPs) were removed due to genotype missingness (>0.01), deviations from Hardy-Weinberg equilibrium (p<1e-05) and low minor allele count (<20). Imputation was performed using the TOPMed Imputation Server. Only SNPs with an imputation score r2 >0.3 and a minor allele frequency (MAF) >0.005 were included in the GWAS. The analyses were conducted in PLINK using logistic regressions adjusted for sex, the top principal components and imputation batch (six in total, which account for both genotyping array and study differences).
 
-## Genetic instruments for adiposity
+### Genetic instruments for adiposity
 
 GWAS summary statistics for waist circumference (N=462,166) in SD units were obtained from the UK Biobank available via the IEU OpenGWAS platform (id: ukb-b-9405). GWAS summary statistics for BMI (N=806,834) and WHR (N=697,734) in SD units were obtained from the latest Genetic Investigation of Anthropometric Traits (GIANT) consortium’s GWAS meta-analysis by Pulit et al., 2019 available at https://zenodo.org/records/1251813. The meta-analysis is the biggest to date, as it combines the meta-analysis by Shungin et al., 2015 with UK Biobank data. The UK Biobank GWAS (Pulit et al., 2019) was conducted using imputed data and the BOLT-LMM software (Loh et al., 2015). The linear mixed models (LMMs) were solely adjusted for genotyping array. GIANT and UK Biobank data were meta-analysed (Pulit et al., 2019) using an inverse-weighted fixed-effect meta-analysis in METAL (Willer et al., 2010).
 
 We extracted GWAS-significant SNPs for waist circumference using the standard threshold (p<5e-08). For BMI and WHR, we extracted them according to the stringent threshold recommended by Pulit et al., 2019 to account for denser imputation data (p<5e-09). We then performed LD-clumping to select independent lead SNPs for each exposure (r2=0.001, 10,000 kb). In total, 458 and 283 and 375 SNPs remained for BMI, WHR, and waist circumference, respectively.
 
-## Data harmonisation
+### Data harmonisation
 
 We extracted HNC GWAS summary statistics that corresponded to the list of SNPs selected as instruments for the exposures. Proxy SNPs (r2 >0.8) were used when the instrumental SNPs were not available in the outcome datasets. Proxies were identified using the ‘extract_outcome_data’ function of the ‘TwoSampleMR’ R package and the 1000 Genomes Project European reference panel. We harmonised the exposure and outcome datasets using the ‘harmonise_data’ function of the ‘TwoSampleMR’ R package (Hemani et al., 2018). Positive strands were inferred using allele frequencies and ambiguous palindromic SNPs with MAFs ≥0.3 were removed. The harmonised data used in the analyses are available in Supplementary file 1A, Supplementary file 1B, Supplementary file 1C, Supplementary file 1D, Supplementary file 1E and Supplementary file 1F.
 
 We calculated mean F-statistics and total R2 values to assess the strength of our genetic instruments after data harmonisation (Palmer et al., 2012; Burgess and Thompson, 2011). Consequently, we used the total R2 values to examine the statistical power in our study (Brion et al., 2013). However, we acknowledge the value of post-hoc power calculations is limited, since the statistical power estimated for an observed association is already reflected in the 95% confidence interval presented alongside the point estimate (Heinsberg and Weeks, 2022).
 
-## Statistical analysis
+### Statistical analysis
 
-## Main analyses
+#### Main analyses
 
 The multiplicative random effects inverse-variance weighted (IVW) MR approach (Burgess et al., 2013; the default IVW method of the ‘TwoSampleMR’ package [Hemani et al., 2018]) was used to investigate the genetically predicted effects of BMI, WHR, and waist circumference on HNC risk. We did not correct our results for multiple testing, as all our exposures are strongly correlated (Pulit et al., 2019; Shungin et al., 2015).
 
-## Sensitivity analyses
+#### Sensitivity analyses
 
 Because the IVW method assumes all genetic variants are valid instruments (Burgess et al., 2013), which is unlikely the case, three pleiotropy-robust two-sample MR methods (i.e. MR-Egger [Bowden et al., 2015], weighted median [Bowden et al., 2016], and weighted mode [Hartwig et al., 2017]) were used in sensitivity analyses. When the magnitude and direction of effect estimates are consistent across methods that rely on different assumptions, the main findings are more convincing. As we cannot be sure about the presence and nature of horizontal pleiotropy, it is useful to compare results across methods even if they are not equally powered. We also performed tests for SNP heterogeneity (i.e. Q statistic test; Bowden et al., 2019) and directional horizontal pleiotropy (i.e. MR-Egger intercept test; Bowden et al., 2015). When directional horizontal pleiotropy was identified, we used the intercept value to evaluate the extent of the bias. The MR-PRESSO (Verbanck et al., 2018) method was used to identify outliers (outlier test p<0.05) and calculate outlier-corrected causal estimates when there was evidence of SNP heterogeneity. The MR-PRESSO distortion test was used to evaluate differences between the outlier-corrected and IVW estimates.
 
@@ -84,19 +84,105 @@ Since we used large GWAS datasets for the selection of our genetic instruments, 
 
 Moreover, we used the MR-Clust algorithm (Foley et al., 2021) to find distinct SNP clusters underlying the relationship between adiposity measures with evidence of a total effect in our main analyses and HNC. The identification of substantial clusters could provide insight into potential causal mechanisms. It could also flag pleiotropic variables that are associated with SNPs in each cluster. We filtered SNPs with conditional probabilities <0.8. At least four SNPs needed to remain per cluster for a substantial cluster to be reported.
 
-## Secondary analyses
+#### Secondary analyses
 
 In secondary analyses, we investigated the role of BMI, WHR and waist circumference on the risk of HNC by subsite (i.e. oral cavity, hypopharynx, HPV positive oropharynx, HPV negative oropharynx, and larynx). We used a Cochran’s Q test to examine heterogeneity across HNC subsites.
 
 We also explored the role of other adiposity-related anthropometric measures on the risk of HNC and its subsites. These anthropometric measures included: (1) four body shape principal components (Ried et al., 2016), (2) childhood and adulthood body size (Richardson et al., 2020), (3) metabolically favourable and unfavourable adiposity (Martin et al., 2021), (4) body fat percentage, and (5) brain and adipose tissue-specific BMI (Leyden et al., 2022). The data sources for these traits are summarised in Table 1.
 
-## Statistical software
+**Table 1.**
+ Data sources and instruments for other adiposity-related anthropometric measures.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study</th>
+      <th>Year</th>
+      <th>Data source</th>
+      <th>Trait</th>
+      <th>Unit</th>
+      <th>Download link or OpenGWAS ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="4">Ried et al., 2016</td>
+      <td rowspan="4">2016</td>
+      <td rowspan="4">GIANT</td>
+      <td>Body shape PC1 (overall adiposity)</td>
+      <td>SD</td>
+      <td rowspan="4">https://www.joelhirschhornlab.org/giant-consortium-results</td>
+    </tr>
+    <tr>
+      <td>Body shape PC2 (tall and slim vs short and plump)</td>
+      <td>SD</td>
+    </tr>
+    <tr>
+      <td>Body shape PC3 (tall with small hip vs short with big hip)</td>
+      <td>SD</td>
+    </tr>
+    <tr>
+      <td>Body shape PC4 (high BMI and weight with small hip and waist vs low BMI and weight with big hip and waist)</td>
+      <td>SD</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Richardson et al., 2020</td>
+      <td rowspan="2">2020</td>
+      <td rowspan="2">UKB</td>
+      <td>Childhood body size</td>
+      <td>Change in body size category</td>
+      <td>‘ieu-b-5107’</td>
+    </tr>
+    <tr>
+      <td>Adulthood body size</td>
+      <td>Change in body size category</td>
+      <td>‘ieu-b-5118’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Martin et al., 2021</td>
+      <td rowspan="2">2021</td>
+      <td rowspan="2">UKB</td>
+      <td>Metabolically favourable adiposity</td>
+      <td>SD</td>
+      <td rowspan="2">https://doi.org/10.2337/figshare.14555463.v1</td>
+    </tr>
+    <tr>
+      <td>Metabolically unfavourable adiposity</td>
+      <td>SD</td>
+    </tr>
+    <tr>
+      <td>MRC-IEU (Elsworth)</td>
+      <td>2018</td>
+      <td>UKB</td>
+      <td>Body fat percentage</td>
+      <td>SD</td>
+      <td>‘ukb-b-8909’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Leyden et al., 2022</td>
+      <td rowspan="2">2022</td>
+      <td rowspan="2">GIANT +UKB</td>
+      <td>Brain tissue-specific BMI</td>
+      <td>SD</td>
+      <td rowspan="2">https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8874216/bin/mmc2.xlsx</td>
+    </tr>
+    <tr>
+      <td>Adipose tissue-specific BMI</td>
+      <td>SD</td>
+    </tr>
+  </tbody>
+</table>
+
+_BMI, body mass index; GIANT, Genetic Investigation of Anthropometric Traits; N, number; PC, principal component; SD, standard deviation; SNP, single-nucleotide polymorphism; UKB, UK Biobank._
+
+### Statistical software
 
 We completed all MR analyses using R software version 4.4.0 and the ‘TwoSampleMR’ v0.6.3, ‘MRPRESSO’ v1.0, ‘MVMR’ v0.4, ‘cause’ v1.2.0 and ‘mrclust’ v0.1.0 R packages. The ‘ggplot2’ v3.5.1 and ‘ggforestplot’ v0.1.0 R packages were used to create forest plots. The code used to run the MR analyses is available at http://github.com/fernandam93/adiposity_HNC_MR.
 
 ## Results
 
-## Genetic instruments for BMI, WHR, and waist circumference
+### Genetic instruments for BMI, WHR, and waist circumference
 
 After data harmonisation and the removal of ambiguous palindromic SNPs, 442 genetic variants remained as instruments for BMI, while 267 remained for WHR and 353 for waist circumference (Supplementary file 1A). The mean F-statistic for BMI was 77 (range 33–844) and the total variance explained was 4.8%. For WHR, the mean F-statistic was 73 (range 33–820) and the total variance explained was 3.1%. For waist circumference, the mean F-statistic was 58 (range 30–940) and the total variance explained was 4.4%.
 
@@ -104,7 +190,92 @@ Using the BMI genetic instruments (total R2=4.8%) and an α of 0.05, we had 80% 
 
 The F-statistics and R2 values for the other adiposity-related anthropometric measures have been summarised in Table 2.
 
-## Genetically predicted effects of BMI, WHR, and waist circumference on HNC risk
+**Table 2.**
+ F-statistics and variance explained for other adiposity-related anthropometric measures.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Trait</th>
+      <th>N SNPs before/after harmonisation</th>
+      <th>Total R2</th>
+      <th>Mean F-statistics (range)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Body shape PC1 (overall adiposity)</td>
+      <td>29/28</td>
+      <td>16%</td>
+      <td>54 (28–302)</td>
+    </tr>
+    <tr>
+      <td>Body shape PC2 (tall and slim vs short and plump)</td>
+      <td>84/81</td>
+      <td>3.4%</td>
+      <td>54 (30–211)</td>
+    </tr>
+    <tr>
+      <td>Body shape PC3 (tall with small hip vs short with big hip)</td>
+      <td>28/27</td>
+      <td>0.9%</td>
+      <td>41 (30–82)</td>
+    </tr>
+    <tr>
+      <td>Body shape PC4 (high BMI and weight with small hip and waist vs low BMI and weight with big hip and waist)</td>
+      <td>10/10</td>
+      <td>24.7%</td>
+      <td>42 (30–98)</td>
+    </tr>
+    <tr>
+      <td>Childhood body size</td>
+      <td>206/198</td>
+      <td>3.4%</td>
+      <td>78 (28–1102)</td>
+    </tr>
+    <tr>
+      <td>Adulthood body size</td>
+      <td>339/324</td>
+      <td>4.2%</td>
+      <td>59 (30–1109)</td>
+    </tr>
+    <tr>
+      <td>Metabolically favourable adiposity</td>
+      <td>34/31</td>
+      <td>0.4%</td>
+      <td>64 (25–400)</td>
+    </tr>
+    <tr>
+      <td>Metabolically unfavourable adiposity</td>
+      <td>29/27</td>
+      <td>0.8%</td>
+      <td>131 (25–400)</td>
+    </tr>
+    <tr>
+      <td>Body fat percentage</td>
+      <td>377/360</td>
+      <td>4.7%</td>
+      <td>59 (30–682)</td>
+    </tr>
+    <tr>
+      <td>Brain tissue-specific BMI</td>
+      <td>140/133</td>
+      <td>1.2%</td>
+      <td>61 (29–270)</td>
+    </tr>
+    <tr>
+      <td>Adipose tissue-specific BMI</td>
+      <td>86/81</td>
+      <td>0.7%</td>
+      <td>63 (30–270)</td>
+    </tr>
+  </tbody>
+</table>
+
+_BMI, body mass index; N, number; PC, principal component; SNP, single-nucleotide polymorphism._
+
+### Genetically predicted effects of BMI, WHR, and waist circumference on HNC risk
 
 In univariable MR, higher genetically predicted BMI increased the risk of overall HNC (IVW OR = 1.17 per 1 standard deviation [1-SD] higher BMI, 95% CI 1.02–1.34, p=0.03), with no heterogeneity across subsites (Q p=0.78; Figure 2, Appendix 1—figure 3 and Supplementary file 1G). However, the positive relationship between genetically predicted BMI and HNC risk was not consistent across the MR-Egger, weighted median and weighted mode analyses, with point estimates in opposing directions and confidence intervals including the null. The Q statistic and MR-Egger intercept tests suggested that there was heterogeneity across individual SNP estimates (Q=609, p<0.001) and a minor degree of unbalanced horizontal pleiotropy (intercept = 0.007, p=0.03) that could have biased the main IVW results (Supplementary file 1H and Supplementary file 1I). Although the MR-PRESSO analysis identified two outliers (i.e. rs11611246 and rs9603697), the distortion test suggested the outlier-corrected estimate (outlier-corrected IVW OR = 1.14 per 1-SD higher BMI, 95% CI 1.00–1.30, p=0.05) was not statistically different to the main IVW estimate (p=0.94; Supplementary file 1J).
 
@@ -118,7 +289,7 @@ Similarly, we did not find a genetically predicted effect of waist circumference
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/106075/elife-106075-fig4-v1.jpg)
 
-## MVMR estimates for BMI on HNC risk after accounting for smoking behaviour
+### MVMR estimates for BMI on HNC risk after accounting for smoking behaviour
 
 In univariable IVW MR, both CSI and SI were linked to an increased risk of HNC (CSI OR = 4.47 per 1-SD higher CSI, 95% CI 3.31–6.03, p<0.001; SI OR = 2.07 per 1-SD higher SI 95% CI 1.60–2.68, p<0.001; note in Supplementary file 1K).
 
@@ -128,19 +299,19 @@ The effect of BMI on HNC risk was attenuated when smoking behaviour was included
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/106075/elife-106075-fig6-v1.jpg)
 
-## MR estimate for BMI on HNC risk after Steiger filtering SNPs more strongly associated with smoking behaviour than BMI
+### MR estimate for BMI on HNC risk after Steiger filtering SNPs more strongly associated with smoking behaviour than BMI
 
 After removing six SNPs (i.e. rs10002111, rs2503185, rs264941, rs10858334, rs225882, rs2273175) that were more strongly associated with smoking behaviour (i.e. CSI or smoking initiation) than BMI, the genetically predicted effect of BMI on HNC risk slightly attenuated towards the null (Steiger filtered IVW OR = 1.14 per 1-SD higher BMI, 95% CI 1.00–1.31, p=0.05) (Supplementary file 1L).
 
-## CAUSE estimate for BMI on HNC risk
+### CAUSE estimate for BMI on HNC risk
 
 We did not find evidence against bias due to correlated pleiotropy, since the causal model did not fit the data much better than the sharing model (CAUSE OR 1.12 per 1-SD higher BMI, 95% credible interval 0.93–1.34, delta ELPD for sharing vs causal = −0.07, p=0.47; Appendix 1—figure 6). Interestingly, neither the sharing nor the causal model fitted the data much better than the null model (delta ELPD for null vs sharing = −0.39, p=0.36; and delta ELPD for null vs causal = −0.46, p=0.41).
 
-## MR-Clust estimates for the relationship between BMI and HNC risk
+### MR-Clust estimates for the relationship between BMI and HNC risk
 
 After filtering SNPs with conditional probabilities <0.8 and clusters with fewer than four SNPs (e.g. cluster 1, as only three of 17 SNPs remained after probability filtering), only a null cluster including 372 SNPs (424 before filtering) remained in the MR-Clust output for BMI and HNC risk (Appendix 1—figure 7 and Supplementary file 1M). Hence, the MR-Clust analysis did not reveal any mechanistic pathways underlying the effect observed.
 
-## Genetically predicted effects of other adiposity-related anthropometric measures on HNC risk
+### Genetically predicted effects of other adiposity-related anthropometric measures on HNC risk
 
 We did not find consistent evidence of genetically predicted effects of other anthropometric measures on HNC risk (Appendix 1—figure 8, Appendix 1—figure 9, Appendix 1—figure 10, Appendix 1—figure 11, Appendix 1—figure 12 and Supplementary file 1N). The IVW estimate for PC2 capturing a combination of taller height and slimmer waist suggested this body shape decreased HNC risk (OR = 0.86, 95% CI 0.75–0.99, p=0.04; Appendix 1—figure 8b). Similarly, the IVW estimate for PC3 capturing a combination of taller height and narrower hips suggested this body shape also reduced HNC risk (OR = 0.73, 95% CI 0.55–0.97, p=0.03; Appendix 1—figure 8c). However, these inverse relationships were not consistent with results obtained using pleiotropy-robust methods (i.e. MR-Egger, weighted median, and weighted mode).
 
@@ -158,6 +329,6 @@ We acknowledge that a major limitation of MR studies, including ours, is that se
 
 While our study contributes valuable evidence on the role of adiposity in the development of HNC, we recognise there is a need for additional research on the subject. Our study was limited to individuals of European ancestry, so our findings should be replicated in other ancestry groups before being generalised to non-European populations. Moreover, further research is needed to understand the biology underlying the complex relationship between smoking and adiposity, especially since it may be difficult to intervene on one without influencing the other (Taylor et al., 2019).
 
-## Conclusions
+### Conclusions
 
 In conclusion, this study indicates that adiposity does not play a major role in HNC risk. Although we did not find strong evidence of a causal effect of adiposity on HNC, obesity is an established risk factor for multiple cancers and other chronic diseases (Larsson and Burgess, 2021; Lauby-Secretan et al., 2016; Mariosa et al., 2019). Hence, there is still value in aiming to reduce the levels of excess adiposity in the population.

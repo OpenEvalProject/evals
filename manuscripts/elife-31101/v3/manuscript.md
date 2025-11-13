@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.31101.001 Neurite initiation is the first step in neuronal development and occurs spontaneously in soft tissue environments. Although the mechanisms regulating the morphology of migratory cells on rigid substrates in cell culture are widely known, how soft environments modulate neurite initiation remains elusive. Using hydrogel cultures, pharmacologic inhibition, and genetic approaches, we reveal that paxillin-linked endocytosis and adhesion are components of a bistable switch controlling neurite initiation in a substrate modulus-dependent manner. On soft substrates, most paxillin binds to endocytic factors and facilitates vesicle invagination, elevating neuritogenic Rac1 activity and expression of genes encoding the endocytic machinery. By contrast, on rigid substrates, cells develop extensive adhesions, increase RhoA activity and sequester paxillin from the endocytic machinery, thereby delaying neurite initiation. Our results highlight paxillin as a core molecule in substrate modulus-controlled morphogenesis and define a mechanism whereby neuronal cells respond to environments exhibiting varying mechanical properties.
+Neurite initiation is the first step in neuronal development and occurs spontaneously in soft tissue environments. Although the mechanisms regulating the morphology of migratory cells on rigid substrates in cell culture are widely known, how soft environments modulate neurite initiation remains elusive. Using hydrogel cultures, pharmacologic inhibition, and genetic approaches, we reveal that paxillin-linked endocytosis and adhesion are components of a bistable switch controlling neurite initiation in a substrate modulus-dependent manner. On soft substrates, most paxillin binds to endocytic factors and facilitates vesicle invagination, elevating neuritogenic Rac1 activity and expression of genes encoding the endocytic machinery. By contrast, on rigid substrates, cells develop extensive adhesions, increase RhoA activity and sequester paxillin from the endocytic machinery, thereby delaying neurite initiation. Our results highlight paxillin as a core molecule in substrate modulus-controlled morphogenesis and define a mechanism whereby neuronal cells respond to environments exhibiting varying mechanical properties.
 
 ## Introduction
 
@@ -35,47 +35,103 @@ Neurite initiation is the very first step of a single neuron toward neuronal net
 
 ## Results
 
-## Bistable substrate modulus-dependent behavior in neurite initiation
+### Bistable substrate modulus-dependent behavior in neurite initiation
 
 We used polymerized hydrogels to define the mechanisms underlying neurite initiation in soft environments. Gels of three elastic moduli—0.1, 1 and 20 kPa—were engineered and verified by atomic force microscopy (see Materials and methods, and Figure 1—figure supplement 1A–D). Culturing hippocampal cells isolated from embryonic day 17.5 (E17.5) rat brain on these compliant gels can selectively enrich the population of neurons by up to 80% and minimize growth of glial cells (Figure 1—figure supplement 1E). After seeding cells onto gels and incubating them for either 5 or 16 hr in regular neurobasal medium, we assessed potential morphogenetic changes in cells over time. Upon initial gel contact, cells formed a uniform lamellipodial extension (Figure 1A1, and Figure 1—figure supplement 2A,B), which became segmented into multiple, separated lamellipodia if the gel was sufficiently soft (see Figure 1—figure supplement 2A–D). Lamellipodia are well-known morphological precursors of neurites (Figure 1—figure supplement 2; Dehmelt et al., 2003). However, we observed that neurites formed only if their preceding lamellipodia occupied less than a third of the entire cell periphery; lamellipodia occupying >1/3 of the periphery failed to form neurites even at the 16 hr time-point (Figure 1A2–A4, and Figure 1—figure supplement 2A–D). Therefore, we defined each lamellipodium with <1/3 occupancy of the entire cell periphery as a ‘segmented’ lamellipodium (SL), and those occupying >1/3 as a ‘broad’ lamellipodium (BL). In most, if not all, cases of the 5 hr cultures, a single cell could not have both SL and BL.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig1-v3.jpg)
+
+**Figure 1.:** (A) Substrate modulus-dependent biphasic distribution of lamellipodium occupancy. (A1) Representative intensity profile of phalloidin-stained hippocampal neurons on a soft hydrogel (E = 0.1 kPa). Lamellipodium occupancy (LO) of each phalloidin-positive segment is calculated by the formula shown in the box at bottom right. (A2) Representative images of neurons grown on substrates for 5 hr or 16 hr and stained with phalloidin (Red), DAPI (Blue), and antibodies against Tuj-1 (Green), as indicated. Scale bar: 20 μm. (A3) Histograms of LO distributions at 5 hr showing two distinct patterns in 0.1, 1, or 20 kPa cultures (n > 68 cells for each experiment). Simplified drawings above histograms illustrate the typical segmented lamellipodium (‘SL’) and broad lamellipodium (‘BL’) phenotypes in 5 hr neuronal cultures, as indicated. (A4 and A5) Histograms summarizing the percentages of lamellipodium phenotypes seen in 5 hr cultures (A4) and the distributions of neurite numbers (A5) in 16 hr cultures. Data represent mean ±SEM (n > 3 independent experiments; 150 cells for each culture; *p<0.05; **p<0.01; ****p<0.0001; one way ANOVA with Dunnett’s post hoc test). (B) Enhanced membrane endocytosis in 0.1 kPa cultures. Time-lapse images (20 frames; 2 min intervals) of neurons isolated from E17.5 rat cortices transfected in utero at E16 without (B1) or with (B2) IRES constructs harboring control EGFP and/or a dominant-negative dynamin II mutant (DynIIK44A), cultured on 0.1 kPa or 20 kPa gels for 5 hr, followed by endocytosis assay in the presence or absence of the endocytosis inhibitors Dynole 2–24 or Dyngo 4a, as indicated. Dashed lines surround the region of interest (ROI) in quantitative FM4-64 measurements. Asterisks in B2 mark non-transduced neighboring cells. Graph at right summarizes the accumulation curves of FM4-64 signal (±SEM, n > 3 independent experiments, 10–20 cells per group, normalized to t = 0 value; ****p<0.0001; two-way RM ANOVA with Dunnett’s post hoc test), which reflects the rate of FM4-64 uptake at different time-points after FM4-64 loading. The data were fitted to a single exponential to determine the time (t1/2) required to reach half of the plateau value. (B3) Representative images of neurons plated on 0.1 kPa or 20 kPa gels overnight, followed by incubation of quantum dot-conjugated brain-derived neurotrophic factor (QD-BDNF) for 5 hr. Dot plot showing that 0.1 kPa cultures exhibited a significantly higher level (n = 39–46 cells from three independent experiments; **p<0.001; ****p<0.0001; one-way ANOVA with Dunnett’s post hoc test) of QD-BDNF internalization (as reflected by a ~2-fold greater quantity of intracellular QD-BDNF) than 20 kPa cultures. (C) Expression of DynIIK44A prevents neurite formation and cortical neuron migration in vivo. (C1) Fluorescence images of P0 rat cortices transfected in utero at E16 with IRES constructs harboring control EGFP and/or DynIIK44A. The middle panels show 16x magnifications of boxed regions of the corresponding P0 cortex in the top panels. The bottom panels show sample tracings of 2D projections from confocal images of typical cortical neurons in the corresponding P0 cortex. Bar, 100 μm. (C2 and C3) Histograms showing the localization (C2) and the percentage (C3) of transfected cortical neurons exhibiting unipolar/bipolar polarized processes (‘polarized’), multiple short neurites without a long tailing process (‘unpolarized’), or no process (‘no neurite’; arrowheads in the middle panels) in the cortical plate (‘CP’) or subventricular zone/intermediate zone (‘SVZ/IZ’) regions. Datasets (mean ±SEM, n > 150 cells per cortex, >5 cortices each; ***p<0.001, multiple t test) showing significant differences are marked.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of the three-layer assembly of polyacrylamide (PA) hydrogels (diameter = 1.8 mm, thickness = 200 μm). Light blue, the poly-L-Lysine/laminin-coated side of the coverslip. (B) Atomic force microscopy measurement of elastic modulus (±SEM, n = 3) of PA gels. Table shows the ratio of acrylamide and bis-acrylamide used to determine the crosslink density and the stiffness (0.1 kPa, 1 kPa, and 20 kPa) of the polymers. (C, D) Transfer printing of laminin on hydrogels. (C) Representative images of PA hydrogel peeled from laminin-coated coverslips, both immunostained with antibodies against laminin (shown in green). Note that laminin was completely transferred from the laminin-coated coverslip to the gel surface. (D) Quantification of laminin fluorescence intensity (±SEM, n > 3; ‘ns’, no significance; t-test) on the gel surface before and after incubation for 16 hr with culture medium. Acid-washed coverslips were pre-coated with laminin (a stock concentration of 1.62 mg/ml) in a 1:50 dilution. Note that the staining intensity of surface laminin was comparable between 0.1 kPa and 20 kPa gels. (E) Cell type enrichment analysis for hippocampal cultures. Cultured neurons plated on substrates were immunostained with antibodies against the neuron-specific marker Tuj-1 and the astroglial marker glial fibrillary acidic protein (GFAP). Histogram showing percentages (±SEM; n > 200 cells for each group from more than three independent experiments; *p<0.05; relative to that of 0.1 kPa culture, t-test) of Tuj-1- or GFAP-positive cells in hippocampal cultures at 3 days in vitro (DIV). (F) Cell viability analysis for hippocampal neurons cultured on PA gels and glass. DIV3 cultures were subjected to propidium iodide (PI) staining. Arrow, apoptotic cells with fragmented nuclei (PI positive). Dimethyl sulfoxide (2%) was used as a positive control of maximum cytotoxicity. Data represent mean ±SEM (n > 200 cells for each group from more than three independent experiments; *p<0.05; ***p<0.001; relative to that of glass culture, t-test).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A, B) Phalloidin intensity profiling of neurons on soft (E = 0.1 kPa; A) and stiff (E = 20 kPa; B) hydrogels stained with phalloidin (Red) for F-actin filaments and antibodies against Tuj-1 (Green), as indicated. Lamellipodium occupancy (LO) of phalloidin-positive segments (‘S’) along the cell periphery was calculated according to the formula shown in the lower panel. Cells exhibiting typical morphologies of the segmented lamellipodium (‘SL’, A) or broad lamellipodium (‘BL’, B) are shown. (C, D) Time-lapse bright-field images of newly plated neurons on 0.1 kPa (C) or 20 kPa (D) gels. Note that neurite initiation sites (arrowheads at time-point = 15:10:00) are correlated with the positions of initial segmented lamellipodia (delimited by the dashed line in panel C; individual LO < 0.33). Broad lamellipodia of a neuron grown on a 20 kPa gel are delimited by solid lines in panel D. Scale bar = 20 μm. (E, F) Distribution of individual lamellipodium occupancy (E) and total lamellipodium occupancy (F) from the same sets of experiments shown in main Figure 1A3. Simplified drawings above histograms illustrate the typical segmented lamellipodium and broad lamellipodium phenotypes of hippocampal neurons grown on soft (E = 0.1 kPa or 1 kPa) and stiff (E = 20 kPa) PA hydrogels.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Up-regulation of clathrin-associated endocytosis genes in 0.1 kPa cultures. Gene expression patterns emerging from microarray analysis were grouped into four modules: expression increased with substrate softness in 5 hr (i) or 16 hr (iii) cultures, or increased with substrate stiffness in 5 hr (ii) or 16 hr (iv) cultures (cut off: >1.5-fold change, p<0.05, n = 3 independent experiments). Normalized expression levels are represented by a color-coded heatmap. (B) A QuantiGene Plex branched-chain DNA amplification assay validated the relatively increased levels of mRNAs encoding the clathrin-associated endocytosis factors Dab2, Myo6, and Cltc in neurons grown on 0.1 kPa gels. Data represent fold changes in RNA levels (±SEM; n = 4–5 independent experiments; relative to that of 0.1 kPa culture; *p<0.05; t test). (C) Representative single-molecule RNA fluorescence in situ hybridization (smRNA FISH) images of mRNA encoding Myo6, Dab2, Chd11, Vcl, or Cry61 on segmented lamellipodium (SL) or broad lamellipodium (BL) neurons in 5 hr cultures, as indicated. Histograms showing average number (±SEM; n = 42–52 cells; *p<0.05; **p<0.01; ****p<0.0001; t test) of smRNA FISH puncta for each gene per single neurons of the SL and BL cells.
+
 We identified a bistable substrate modulus-dependent behavior by measuring the distribution of SL and BL over various substrates of varying stiffness (Figure 1A3, and Figure 1—figure supplement 2E,F). Cells could be segregated into two populations, that is, those with or without SL formation, in a substrate modulus-dependent manner. For example, in 5-hr soft-gel cultures (0.1 kPa), nearly 100% of cells formed SL (Figure 1A4, A5, and Figure 1—figure supplement 2E), whereas most cells (~71.5%) on stiff-gel cultures (E = 20 kPa) or coverslips (glass) failed to form SL and instead formed a single BL (Figure 1A4, and Figure 1—figure supplement 2E,F). In 16 hr cultures, the SL of most (~98%) cells on soft gels had become neurites, whereas more than half (~57.3%) of the cells on stiff gels possessed BL and lacked neurites (Figure 1A5). Such bistable behavior suggests the existence of two distinct states in early stages of neuritogenesis; a ‘segmentable state’ in which cells can form segmented lamellipodia as morphological predecessors of neurites, and a ‘non-segmentable state’ in which cells retain a spreading morphology with broad lamellipodia. The fact that cells form neurites on soft gels in the absence of neurite-promoting growth factors suggests that culturing cells on environments with elastic moduli <1 kPa, which match the mechanical properties of brain (E = 0.1—1 kPa; (Christ et al., 2010; Georges et al., 2006), is sufficient to initiate neurite formation. Moreover, surface laminin was detectable on 0.1 kPa, 20 kPa and glass surfaces, and it was comparable following 5 and 16 hr incubation periods in neuronal culture media (see Figure 1—figure supplement 1D), ruling out a difference due to coating. Note that when culturing cells on coverslips, lower laminin/PLL concentrations may be required for proper laminin/integrin interaction to overcome the influences of high substrate rigidity (please see Appendix 1—figure 1).
 
-## Substrate modulus-dependent morphogenesis is associated with distinct cell signaling and gene expression patterns
+### Substrate modulus-dependent morphogenesis is associated with distinct cell signaling and gene expression patterns
 
 To ascertain whether changes in gene expression are associated with segmentable or non-segmentable states, we undertook genetic profiling of cells grown on soft or stiff substrates at 5 or 16 hr time-points. Using mRNA microarray and Gene Ontology analyses, we identified 114 differentially expressed mRNA transcripts in cells grown on 0.1 kPa and 20 kPa gels at the 5 hr time-point (filtering criteria: fold change ≥1.5, p<0.05; Figure 1—figure supplement 3A, and Appendix 1—table 1, 2). Among them, 66 were upregulated in 0.1 kPa gel cultures and the remainder were downregulated (compared to cells grown on stiffer substrates). Notably, three genes—Cltc, Dab2, and Myo6, all of which function in clathrin-mediated endocytosis—were co-upregulated in 0.1 kPa gel cultures at the 5 hr time-point (Figure 1—figure supplement 3B), suggesting that cells enter a high endocytic state on a soft substrate (E = 0.1 kPa). By contrast, several adhesion factors, including Vcl, Nrcam, Robo2 and Cdh11, were relatively upregulated in 20 kPa gel cultures at 5 hr and/or 16 hr compared to cells grown on softer substrates (Figure 1—figure supplement 3B).
 
 To verify that changes in gene expression associated with endocytosis or adhesion were correlated with phenotypic changes, we performed single molecular RNA fluorescent in situ hybridization (smFISH, see Materials and methods for details), which enables mRNA quantitation in two groups of single cells based on their morphological signatures, that is, BL or SL (Figure 1—figure supplement 3C). For this analysis, we examined nine genes involved in three different types of cellular activities: endocytosis, adhesion, and the Hippo-YAP pathway. All these pathways regulate membrane mechanics under certain conditions. In 5 hr cultures, we found that SL cells expressed relatively lower (2.3- to 10-fold) and higher (1.2- to 4-fold) levels of adhesion-related (Vcl, Cdh11 and Robo2) and endocytic (Cltc, Dab2, and Myo6) mRNA, respectively, compared to those of BL cells (Figure 1—figure supplement 3C). However, no significant differences were observed in levels of the Hippo-YAP-related (DKK1 and CYR61) mRNA between SL and BL cells. Although fold-changes in gene expression vary across signal detection methods (Figure 1—figure supplement 3), these findings are consistent with the microarray data and suggest that cells with segmented lamellipodia undergo preferential gene expression of endocytic- but not adhesion-related genes.
 
-## Elevated endocytic activity is associated with soft substrate environments and is critical for neurite development in vivo
+### Elevated endocytic activity is associated with soft substrate environments and is critical for neurite development in vivo
 
 To ascertain whether neurons enter an endocytic-dominant state upon contact with soft environments, we measured endocytic activity in cells grown on soft or stiff gels. To assess endocytosis, first we monitored uptake of the lipophilic dye FM4-64 over a 40 min period (at 2 min intervals) in 5 hr cultures (Figure 1B1). The rate of FM4-64 uptake was reflected by the time required to reach half of the maximum FM4-64 intensity measured in cells, defined as t½. We observed that cells grown on 0.1 kPa gels exhibited a ~1.6-fold greater FM4-64 intensity at the end-point of the measurements (t = 40 min), and a ~1.7-fold greater uptake rate [t½ (0.1 kPa) v.s. t½ (20 kPa)=16.8 min v.s. 24.8 min] than cells grown on 20 kPa gels (Figure 1B1). Robust dye uptake was pharmacologically and genetically abolished by applying inhibitors of dynamin GTPase and by ectopically expressing a dominant-negative Dynamin II mutant (DynIIK44A; (Damke et al., 1994; Herskovits et al., 1993) in 0.1 kPa cultures, respectively (Figure 1B1, B2). These results suggest that dye uptake is primarily endocytosis-associated. Note that constructs encoding DynIIK44A were in utero eletroporated (IUE, (Saito and Nakatsuji, 2001) into the developing brain of E16 rat embryos. Cultures were prepared 24 hr after electroporation to allow for sufficient expression of DynIIK44A. To confirm that levels of legend-mediated endocytosis were elevated in neurons grown on soft substrates, we then quantified invagination of quantum dot-conjugated brain-derived neurotrophic factor (denoted as QD-BDNF and exhibiting a 1:1 BDNF:QD conjugation ratio; see Materials and methods) in 16 hr cultures (Figure 1B3). We observed an average invagination rate of ~7 dots per cell in 0.1 kPa cultures over the first 5 hr after bath application of QD-BDNF. That rate was significantly decreased to two dots per cell in 20 kPa cultures (Figure 1B3), and comparable results were seen following dynamin inhibition (Figure 1B2). These findings suggest that cells grown on soft substrates undergo a high level of endocytosis.
 
 These findings prompted us to examine the functional relevance of endocytic activity on neurite formation in vivo. To do so, we used in utero electroporation to express constructs encoding a dominant-negative Dynamin II mutant (DynIIK44A) in a subpopulation of neural progenitor cells (Figure 1C). To aid observations of morphogenetic phenotypes, brain slices were obtained from newborn (P0) rat cortex when most newly differentiated neurons had extended their neurites and migrated towards the cortical plate. Nearly all (~100%) control cortical neurons (i.e. those solely expressing marker protein) exhibited a neurite-bearing, polarized morphology (Figure 1C1, C3), with dendritic arbors being oriented toward the pial surface and the axon being oriented radially in the cortical plate. By contrast, cortical neurons expressing DynIIK44A exhibited an apparent migration defect (Figure 1C1, C2), with a high percentage of cells having a non-polarized morphology without extension of minor processes (termed ‘no neurite’) and a reduced percentage of cells exhibiting a polarized morphology (unipolar or bipolar) (Figure 1C3). Thus, a normal level of endocytic reactions is required for proper neurite formation and radial migration of newly generated cortical neurons; two tightly linked events during neuronal development in vivo.
 
-## The endocytic-dominant state on soft substrates favors Rac1 signaling and neurite formation
+### The endocytic-dominant state on soft substrates favors Rac1 signaling and neurite formation
 
 Endocytosis enhances membrane translocation and Rac1 activation (Palamidessi et al., 2008) and, although in opposing manners, both RhoA and Rac1 function in neurite formation (Aoki et al., 2004; Da Silva et al., 2003; Govek et al., 2005; Machacek et al., 2009); reviewed in Guilluy et al. (2011). Given the dominance of endocytosis events on soft gels, we wondered whether the substrate modulus governed Rac1 activity. Using an active Rac1 pulldown assay, immunofluorescent staining of Rac1 or active Rac1, and the FRET biosensor Rac1-2G (Fritz et al., 2013; Fritz et al., 2015), we observed that, unlike RhoA, Rac1 activity decreased with increasing stiffness of the substrate in 5 hr neuronal cultures (Figure 2—figure supplement 1A). In addition, active Rac1 accumulated in SL and the tips of growing neurites, whereas there was no accumulation in BL (Figure 2A1, A3). Consistently, ratiometric FRET imaging confirmed accumulation of active Rac1 at segmented neuronal lamellipodia on soft gels (0.1 kPa), with FRET signal decreasing from the leading edge to the cell body (Figure 2B1, B2). Moreover, either expression of DynIIK44A or treatment of the 0.1 kPa cultures with inhibitors of endocytosis significantly blocked accumulation of active Rac1 (Figure 2A1–A3). These results suggest that Rac1 accumulation requires endocytosis.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig2-v3.jpg)
+
+**Figure 2.:** (A) Inhibition of endocytosis suppresses Rac1 activity in 0.1 kPa cultures. (A1–A3) Representative images of 5 hr neuronal cultures treated with the endocytosis inhibitors dynasore (50 μM, 1 hr), Dynole 2–24 (2–24, 2 μM, 1 hr), Dyngo 4a (4a, 2 μM, 1 hr) or monodansylcadaverine (MDC, 100 μM, 1 hr) and immunostained with antibodies against Rac1, GTP-bound Rac1 (‘active Rac1’; A1, left panel), or RhoA (A1, right panel). The same staining procedure was applied to the IUE neuron (A2, arrow) expressing control EGFP and/or DynIIK44A as shown in A2. Asterisks mark non-transduced neighboring cells. Intensities of active Rac1 and RhoA correspond to linear pseudocolor maps. (A3) Histograms, all from experiments similar to those described above, showing that endocytosis inhibition significantly decreases levels of total Rac1 and active Rac1 (but not RhoA) at lamellipodial protrusions (at 5 hr) in 0.1 kPa cultures. Data represent mean intensity ±SEM (n > 50 per group from three independent experiments; ***p<0.001; one-way ANOVA with Dunnett’s post hoc test). (B) Representative FRET-based imaging of hippocampal neurons transfected with a FRET indicator for GTP-bound Rac1 (Rac1-2G; see Materials and methods). (B1) Images of monomeric Teal fluorescent protein 1 (mTFP1) and FRET signals (presented as pseudocolor maps in a linear scale) acquired from neurons plated on 0.1 kPa gels in the presence or absence of dynasore (50 μM) or MDC (100 μM) for 1 hr. Bar, 20 μm. (B2) Traces depict active Rac1 levels at protrusions, measured across the dashed line as shown in B1, and indicated by FRET signal calculated as the ratio of Venus to mTFP1 fluorescence [F(Venus)/F(mTFP1)]. (B3) Quantitative measurement of FRET signals (±SEM, n = 5 cells for each group; *p<0.05, compared to time = 0 value; multiple t tests) before and after bath application of 50 μM dynasore or 100 μM MDC. Arrow marks drug addition (time = 0). (C) Inhibition of endocytosis decreases the probability of lamellipodium segmentation and delays neurite initiation on soft gels. (C1) Representative fluorescent images of neurons plated on 0.1 kPa gels for 5 hr in the absence or presence of indicated endocytosis inhibitors. Scale bar: 20 μm. (C2) Representative fluorescent images of transfected IUE neurons (arrow) expressing control EGFP and/or a dominant-negative dynamin II mutant (DynIIK44A), cultured on 0.1 kPa gels for 16 hr, and stained with phalloidin (Red), DAPI (Blue), and antibodies against Tuj-1 (Green). Asterisks mark non-transduced neighboring cells. Scale bar: 20 μm. Histograms summarize the percentages (±SEM; ***p<0.001, one way ANOVA with Dunnett’s post hoc test) of 16 hr neurons bearing neurites in the presence or absence of dynasore (50 μM, 5 hr treatment) or MDC (100 μM, 5 hr treatment), as indicated.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Active Rac1 and active RhoA pull-down assay of neurons grown on 0.1 kPa or 20 kPa hydrogels. Cell lysates obtained from cortical neurons grown on substrates (5 hr of culture) were subjected to a GST resin pull-down assay using PAK-GST (upper panel) or GST-Rhotekin-RBD (lower panel), as indicated. The precipitants were analyzed by Western blotting with antibodies specific against Rac1 or RhoA. Histograms reflect quantitative measurement of band intensities (±SEM, n = 3; normalized to the corresponding protein input and relative to that of 0.1 kPa culture; *p<0.05; **p<0.001, t test) of the active GTP-bound forms of Rac1 or RhoA. (B) Pharmacological inhibition of Rac1 activation significantly increases the lamellipodium occupancy in 5 hr neuronal cultures on 0.1 kPa gels. Right panel shows representative images of neuronal cultures on 0.1 kPa gels, in the absence and presence of the selective Rac1-GEF inhibitor NSC-23766 (1 µM; 1 hr treatment), the PI3K inhibitor LY-294002 (10 µM; 1 hr treatment), or the ROCK inhibitor Y-27632 (25 µM; 1 hr treatment), stained with phalloidin (red) at the 5 hr or 48 hr time-points after cell plating, as indicated. Dashed line delimits lamellipodium area. Bar, 20 µm. Histograms summarize average lamellipodium occupancy in 5 hr neurons and percentages of neurite-bearing neurons in 16 hr cultures (±SEM; n = 300 total cells for each group from three independent experiments; ****p<0.0001, unpaired t test) from all experiments similar to that shown in the right panel.
+
 Previous studies have shown that Rac1 activation induces cell protrusions through actin filament polymerization (reviewed in [Hall, 1998; Ridley, 2011]). To ascertain whether Rac1 increase and accumulation on soft gels (0.1 kPa) was responsible for neurite initiation, we treated cells grown on soft gels with the Rac1 inhibitor NSC 23766 immediately after plating and assessed phenotypes at the 5 hr time-point, which resulted in the onset of lamellipodial segmentation being significantly delayed (see 48 hr time-point in Figure 2—figure supplement 1B). In support of the idea that Rac1 accumulation requires endocytosis (Figure 2A), inhibition of endocytosis in soft-gel cultures for 1 hr also significantly increased manifestation of the BL phenotype at the 5 hr time-point (Figure 2C1), with >90% of cells exhibiting sparsely distributed and less activated Rac1 and broad lamellipodia that resembled those seen on 20 kPa gels (Figure 2A,B). The number of neurite-bearing neurons was also decreased to ~13% compared to the untreated control (Figure 2C2). In contrast, bath-application of Y27632 (an inhibitor of Rho-associated protein kinase, ROCK) or the PI3k inhibitor LY294002 to 0.1 kPa cultures did not alter the onset of lamellipodial segmentation (Figure 2—figure supplement 1B). These results suggest that culturing cells on a soft substrate is sufficient to promote a neuritogenic state through endocytosis-associated Rac1 activation.
 
-## Model for competitive recruitment of paxillin to divergent cellular machineries as part of a bistable switch
+### Model for competitive recruitment of paxillin to divergent cellular machineries as part of a bistable switch
 
 In many biological systems, selection between two distinguishable states requires changes in gene expression, which are then amplified via a bistable switch (reviewed in [Ferrell, 2002; Smits et al., 2006]). Our results suggest that newborn neurons possess two morphological states: one with the ability to form segments and neurites and the other without. These states are associated with specific genetic changes that are governed by substrate stiffness, cell contractility, and endocytic activity (Figure 1 and Figure 2). To account for both endocytosis and adhesion, here we assume a simple ‘sequestering’ mechanism whereby a factor/switcher required for both endocytosis and cell-substrate adhesion exists (mathematical model and figure shown in Appendix). To identify the molecular switch, we evaluated by western blot analysis the protein levels of candidate molecules functioning in adhesion or the endocytosis machinery. In 5 hr cultures on stiff substrates (20 kPa gels or glass), cells expressed higher levels of adhesion factors (such as integrin β1; for the level of active integrin, please see Appendix 1—figure 3) than endocytic factors (Figure 3A,B). Although pFAK levels increased slightly on stiff substrates, the changes were not statistically significant. By contrast, cells grown on soft gels (0.1 kPa and 1 kPa) expressed higher levels of factors associated with clathrin-mediated endocytosis, including myosin VI, clathrin heavy chain (CHC) and Cdc42 interacting protein 4 (CIP4) (Figure 3A,B). Among the candidates of interest, we also evaluated the scaffolding protein paxillin, which is known to be an integral component of focal adhesions that bind vinculin and FAK (Schaller, 2001; Turner et al., 1990). We observed that expression levels of paxillin and phosphorylated paxillin in cultured neurons did not match the profiles of other adhesion factors, but instead matched the profiles of endocytic factors (Figure 3A and B). Further analysis of relative paxillin expression in 5 hr cultures indicated that cells grown on soft substrates (0.1 kPa gels) expressed significantly higher levels of paxillin than those grown on stiff substrates (Figure 3B). These observations strongly suggest that paxillin is associated with the endocytic machinery in soft cultures and may serve as the proposed switcher.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig3-v3.jpg)
+
+**Figure 3.:** (A) Representative western blots of endocytic or adhesion molecules. Cell lysates obtained from cortical neurons grown on substrates with differing stiffness were subjected to immunoblotting with antibodies to indicated proteins. (B) Summary histograms, all from experiments similar to that described in A, showing greater (>2 fold) abundance of paxillin, phospho-paxillinY118 (p-paxillin), myosin VI (myo6), CIP4 and clathrin heavy chain (CHC) proteins in neurons grown on soft substrates (0.1 and 1 kPa) compared to those grown on stiff substrates (20 kPa and glass). Note the inverse expression of endocytic factors and adhesion molecules (i.e., talin1/2, integrinβ1, vinculin and p-FAKY397). Data represent mean ±SEM (n ≥ 3, normalized to control actin; compared to 0.1 kPa cultures; *p<0.05; **p<0.01; ***p<0.001; t-test). (C–F) Paxillin co-localizes with the endocytosis complex at neuronal growth cones on soft substrates. (C) Representative confocal images of 16 hr neurons on 0.1 kPa gels co-immunostained with antibodies against paxillin (Green in merge panel), adaptor-associated kinase1 (AAK1, Red in merge panel), p-FAKY397 (Red in merge panel), or F-actin, as indicated. Right panels show the region of interest ROI (marked by numbers) of neurite tips represented at higher magnification. Bar: 20 μm. (D and E) Similar to C, except the resolution of images has been enhanced (~1.7X higher) using Airyscan. Note that surface rendering was applied at neurite tips to more clearly show co-localization (yellow) of paxillin with indicated factors. Bar: 20 μm. (F) Histograms, all from experiments similar to those described in d and e, summarizing percentages of paxillin co-localized with indicated endocytic or adhesion factors on hydrogels. Data represent percentages (±SEM, n = 15 neurons for each set of experiments; ROI, 5 × 5 µm within one lamellipodium; **p<0.01; ***p<0.001; ****p<0.0001; t test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Membrane flotation assay of embryonic brain (A) and heart (B) tissue lysates. Representative western blot of gradient fractionations probed with antibodies against endocytic factors (Rab5 and CHC), adhesion-associated molecules (vinculin, and phospho-FAKY397), paxillin, and actin, as indicated. Histogram in A reflects quantitative measurements of the protein levels (±SEM; n = 3 independent experiments; **p<0.01; compared to that of paxillin; multiple t test for each fraction) found in the floating fraction (collective measurement from fraction 10 to fraction 18) out of the total gradient fractions. (C) Traces depict the differential protein levels (±SEM; from all experiments similar to that described in A and B, ***p<0.001; multiple t test) in each gradient fraction between embryonic brain and heart lysates, as indicated.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** Representative image (A) and kymograph (B) of paxillin-mCherry trajectories (x-axis, distance; y-axis, time) generated from 180 s time-lapse images (90 frames; 0.5 frames per second), showing bidirectional movement of paxillin-mCherry along the axon (dashed line). Summary of directionality (C) and velocity distribution (D) of paxillin-mCherry along axons from all experiments similar to that described in B. Data represent means ±SEM (n = 15 cells).
+
 Evidence for a role of paxillin in endocytosis is limited (but see [Duran et al., 2009]). To examine this possibility, we assessed if paxillin is associated with endocytic vesicles using a detergent-free membrane flotation assay of embryonic rat cortex (with cardiac tissue used for comparison). We found >30% of paxillin from brain lysates co-fractionated with the endocytosis factors Rab5 and CHC (in floating membrane fractions), whereas co-fractionation was <5% in cardiac lysates (Figure 3—figure supplement 1), suggesting that a significant proportion of paxillin is associated with endocytic vesicles in neurons. Live cell imaging also revealed a long-range, predominantly retrograde transport of paxillin-mCherry from axonal tips (Figure 3—figure supplement 2; Figure 3—video 1); a behavior similar to that seen in neuronal signaling endosomes (Cosker and Segal, 2014; Yap and Winckler, 2012). Next, we wondered whether paxillin preferentially binds to endocytic rather than adhesion factors in the segmentable state. Using 5 hr soft-gel cultures, we conducted immunostaining of endocytosis-associated kinase AAK1 (Conner and Schmid, 2002; Ricotta et al., 2002) or adhesion kinase p-FAKY397. A significant proportion (~39%) of paxillin staining colocalized with that of AAK1 rather than p-FAKY397 on soft gels (0.1 kPa; Figure 3C). This outcome was quantitatively confirmed by confocal microscopy with enhanced resolution (~1.7X greater using Airyscan). In cells exhibiting an SL phenotype on soft gels (0.1 kPa), enhanced resolution confocal microscopy also revealed that a significant portion (>40%) of paxillin appeared in a punctate pattern and co-localized with the endocytic factors CHC or AAK1 (Pearson’s coefficient >0.75) rather than adhesion factors p-FAKY397 or vinculin (Pearson’s coefficient <0.45) (Figure 3D,F). Interestingly, paxillin preferentially associated with p-FAKY397 and vinculin in cells exhibiting BL on stiff gels (20 kPa; Figure 3E,F). Together, these observations suggest that paxillin functions in both endocytic and adhesion activities.
 
-## Endocytic factor CIP4 and adhesion factor vinculin are potential competitors for paxillin binding
+### Endocytic factor CIP4 and adhesion factor vinculin are potential competitors for paxillin binding
 
 Validation of our model requires that a molecular switch binds to endocytic and adhesion machineries in a competitive and substrate modulus-dependent manner. To determine whether paxillin meets these criteria, we tested its binding to the endocytic machinery using liquid chromatography-tandem mass spectrometry (LC−MS/MS) of lysates from rat embryonic brain and in vivo co-immunoprecipitation of cortical neurons cultured on hydrogels. Our analyses identified several endocytic factors that bind to paxillin, including clathrin, dynamin, and CIP4 (Figure 4A–C, and Appendix 1—table 3). Moreover, the binding affinity of paxillin to these factors increased with substrate compliance, whereas the binding affinity of paxillin to vinculin increased with substrate stiffness (Figure 4A). These findings indicate that paxillin can switch its binding preference in a substrate modulus-dependent manner.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig4-v3.jpg)
+
+**Figure 4.:** (A) Paxillin preferentially binds endocytic factors in neurons grown on soft substrates. Paxillin-associated complexes were immunoprecipitated (IP) in lysates made from E17.5 rat brain or from cortical neuronal cultures grown on different substrates using a specific paxillin antibody and were then detected by western blot analysis. Normal rabbit IgG (‘IgG’) served as a negative control. Histograms show the opposing binding preference of paxillin toward CIP4/CHC or vinculin when grown on soft (0.1 kPa or 1 kPa) versus rigid (20 kPa or glass) substrates. Data represent mean intensity ±SEM (n = 3 independent experiments; *p<0.05; t-test). (B) Western blot showing direct interaction of paxillin with CIP4. Bacterially expressed His-CIP4 was purified by fast protein liquid chromatography and subjected to a GST pull-down assay using GST-PXNFL, GST-PXN∆LIM3-4 or GST alone. Precipitants were analyzed by western blotting with antibodies specific to CIP4. Histograms summarize protein levels as determined by immunoblotting of full-length (His-CIP4) or F-BAR domain-deleted (His-ΔF-BAR) CIP4 pulled-down by GST-paxillin variants (±SEM, n = 3; normalized to the corresponding GST-PXNFL or GST-PXN∆LIM3-4 inputs; **p<0.01, t test). (C and D). Mapping of paxillin domains interacting with CIP4 or vinculin. (C) GST pull-down and immunoblotting of vinculin, myc-CIP4, and CHC in lysates of myc-CIP4-expressing HEK293T cells. Histograms reflect quantification of levels of proteins pulled-down by GST fusions of full-length (“FL“) or LIM domain- and/or LD motif-deleted forms of paxillin, all from experiments similar to those shown in top panels (±SEM, n ≥ 3 independent experiments; *p<0.05; **p<0.01; ***p<0.001; t test). (D) Schematic of GST fusion proteins used in c. Table summarizing relative CIP4 or vinculin (‘Vin’) binding by paxillin deletion mutants or full-length protein. Solid lines mark primary sites of interaction, and dashed lines mark accessory interaction motifs for strong binding to vinculin or CIP4. Binding strength relative to full-length paxillin indicated as: ‘++++' >75% > ‘+++' >50% > ‘++' >25% > '+' >5% > '+/-'. (E) In vitro protein interaction and competitive binding assays in HEK293T cells transfected with various amounts (1, 6, and 12 µg) of plasmids encoding myc-tagged CIP4 protein (myc-CIP4) and/or control vectors, as indicated. Cell lysates were subjected to a GST pull-down assay with GST-PXNFL or GST alone, and immunoblotted with vinculin and myc antibodies. Line chart depicts averaged protein levels as determined by immunoblotting of CIP4 or vinculin pulled-down by GST-PXNFL (±SEM, n = 4; normalized to band intensity of corresponding GST-paxillin variant). (F) In vivo protein interaction and competitive binding assays in HEK293T cells transfected with various amounts (7.5 μg and 15 μg) of plasmids encoding the F-BAR domain (‘F-BAR’) alone or F-BAR-domain-deleted (‘ΔN’-F-BAR’) CIP4 and/or control vectors, as indicated. Cell lysates were immunoprecipitated by paxillin antibodies and blotted with myc or vinculin antibodies. Histograms show relative protein levels as determined by immunoblotting of vinculin co-immunoprecipitated by paxillin antibodies (±SEM, n = 3; *p<0.05, t test).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Structures of the vinculin tail (PDB ID: 1QKR; top panel) and the CIP4 F-BAR domain (PDB ID: 2EFK; bottom panel) constructed by JMOL, version 14.4.4. Yellow marks indicate the predicted paxillin-binding subdomain (PBS) for vinculin (951K to 970Q) or CIP4 (35R to 55P). Secondary structures were predicted by the DSSP or STRIDE databases. (B) Mapping of paxillin domains interacting with CIP4 or vinculin. GST pull-down and immunoblotting of vinculin and myc-CIP4 in lysates of myc-CIP4-expressing HEK293T cells. Histograms reflect quantification of levels of proteins pulled-down by GST fusions of full-length ('FL') or LD motif-deleted forms of paxillin, all from experiments similar to those shown in top panels (±SEM, n ≥ 3 independent experiments; **p<0.01; ***p<0.001; multiple t test). Schematic of GST fusion proteins and table summarizing relative CIP4 or vinculin (‘Vin’) binding by paxillin deletion mutants or full-length protein shown in the top panel. Binding strength relative to full-length paxillin indicated as: ‘++++' >75% > ‘+++' >50% > ‘++' >25% > '+' >5% > '+/-'. Note that although CIP4 primarily associates with LIM domains, deletion of the paxillin LD1-3 domain reduced its affinity for CIP4. (C) Mapping of CIP4 domains interacting with paxillin. GST fusion proteins of full-length CIP4 (‘FL’) or its variants with F-BAR domain, HR1 and/or SH3 domain truncations were subjected to GST pull-down assays in HEK293T cell lysates, followed by immunoblotting for paxillin and actin. Histogram reflects quantitative measurement of relative protein levels (±SEM, n ≥ 3 independent experiments; compared to that of FL experiment; **p<0.01; t-test) pulled down by GST-CIP4, as indicated. (D) Schematic of GST fusion proteins used in B. Table summarizes relative paxillin binding by CIP4 deletion mutants or full-length protein. Binding strength relative to that of full-length CIP4 is represented as: ‘++++' >75% > ‘+++' >50% > ‘++' >25% > '+'. (E) In vivo protein interactions in HEK293T cells co-transfected with plasmids encoding paxillin-GFP and myc-tagged CIP4 deletion mutants or full-length protein, as indicated. Cell lysates were immunoprecipitated by myc antibody and blotted with paxillin or myc antibodies. Histograms show relative protein levels as determined by immunoblotting for paxillin co-immunoprecipitated by myc antibody. Data represents mean (±SEM from more than three independent experiments; compared to that of F-BAR experiment; *p<0.05; t-test). (F) In vitro protein interaction and competitive binding assays in HEK293T cells transfected with various amounts (1, 6, and 12 µg) of plasmids encoding myc-tagged CIP4 protein (myc-CIP4) and/or control vectors, as indicated. Cell lysates were subjected to a GST pull-down assay with GST-PXNFL, GST-PXN∆LD1, GST-PXN∆LIM3-4 or GST alone, and immunoblotted with vinculin and myc antibodies. Line chart depicts averaged protein levels as determined by immunoblotting of CIP4 or vinculin pulled-down by GST-PXN variant (±SEM, n = 3–4; normalized to band intensity of corresponding GST-paxillin variant).
 
 Next, we examined whether binding of paxillin to endocytic or adhesion factors is competitive. Structurally, paxillin is an adaptor protein composed of N-terminal LD motifs and C-terminal LIM domains, both of which are important for binding to focal adhesion factors (Brown et al., 1996; Brown et al., 1998). Among those factors, vinculin exhibits a well-characterized paxillin-binding subdomain or ‘PBS’ (Tachibana et al., 1995; Wood et al., 1994). By evaluating potential structural similarities between endocytic factors and the vinculin PBS, we found that the F-BAR domain of CIP4 shares the greatest degree of similarity with the PBS (Figure 4—figure supplement 1A). To ascertain whether this domain binds paxillin, we used GST-fused full-length paxillin (GST-PXNFL) to pull down bacterially expressed, histidine-tagged full-length (His-CIP4FL) or F-BAR domain-deleted (His-CIP4ΔF-BAR) CIP4. Both proteins were HPLC-purified and biochemically confirmed by mass spectrometry. GST-PXNFL associated with His-CIP4FL but not His-CIP4ΔF-BAR (Figure 4B), confirming that the F-BAR domain is required for paxillin binding.
 
 Furthermore, using an in vitro GST pulldown assay and domain mapping analysis in HEK293T cell lysates, we found that deletion of the LIM3-4 domain reduced paxillin affinity for vinculin and CIP4 (Figure 4C,D). However, the paxillin interaction domains for vinculin and CIP4 do not fully overlap, as vinculin and CIP4 primarily associated with LD motifs (LD1, 2, and/or 4; [Turner et al., 1999]) and the LIM domain, respectively (Figure 4—figure supplement 1). In addition, deletion of LIM domains and the last two LD domains (as seen in the paxillinLD1-3 construct) was required to completely attenuate binding of vinculin and CIP4 to paxillin (see Figure 4C,D). Given that CIP4 dimerizes in vitro and in vivo via its F-BAR domain (as verified by small angle X-ray scattering analysis), we asked whether increased CIP4 binding to paxillin LIM domains may spatially hinder vinculin from accessing the LD motifs. Indeed, ectopic expression of full-length CIP4 or the F-BAR domain alone in HEK293T cells decreased association of both GST-PXNFL (Figure 4E) and endogenous paxillin (Figure 4F) with vinculin dose-dependently, but ectopic expression of the F-BAR-deleted CIP4 mutant (ΔN'-F-BAR) did not (Figure 4F, and Figure 4—figure supplement 1B–D). In addition, competition assays using the paxillin variants GST-PXNFL, GST-PXNΔLD1, and GST-PXNΔLIM3-4 showed that the CIP4-binding LIM 3–4 region, but not the vinculin-binding LD1 motif, is required for high affinity CIP4 binding, as CIP4 could not out-compete vinculin for binding to the paxillin-∆LIM3-4 construct (Figure 4E, and Figure 4—figure supplement 1F). These findings indicate that endocytic factors interact with the paxillin LIM domain and are suggestive of a competitive-binding mechanism.
 
-## Paxillin is required for robust neurite formation on soft substrates
+### Paxillin is required for robust neurite formation on soft substrates
 
 Given that endocytic activity is required for neurite initiation on a soft substrate, we wondered whether paxillin and CIP4 function in endocytosis. To assess this, we evaluated FM4-64 uptake in hippocampal neurons grown on soft substrates with or without paxillin/CIP4 knockdown by shRNA (Figure 5—figure supplement 1). Reducing paxillin and CIP4 levels in this way significantly decreased the rate and level of FM4-64 uptake (endocytosis) in neurons grown on soft gels (0.1 kPa; Figure 5A,C and Figure 5—figure supplement 2). This outcome was not seen following ectopic expression of the shRNA-resistant paxillin mutant PXN-R (Figure 5A,C). Furthermore, ectopic expression of full-length paxillin potentiated FM4-64 uptake in neurons grown on both soft and stiff gels (0.1 kPa or 20 kPa; relative to untransfected neighboring control cells); an effect not seen following ectopic expression of paxillinΔLIM3-4 or paxillinLD1-3, which lacks the LIM-domain required for CIP4 association (Figure 5B,D and E). These findings suggest that paxillin assists endocytosis on soft substrates via its interaction with components of the endocytic machinery. Note that in neurons cultured on 20 kPa gels, but not on 0.1 kPa gels, we observed an altered CIP4 distribution along the enlarged lamella edge (Figure 5—figure supplement 2); a pattern similar to that reported for coverslips (Saengsawang et al., 2012) on which the endocytic role of CIP4 may have been compromised.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig5-v3.jpg)
+
+**Figure 5.:** (A) Paxillin knockdown suppresses the endocytic activity of neurons grown on 0.1 kPa gels. Representative time-lapse images of FM4-64 uptake in 3-DIV neurons on substrates of varying elasticity. Hippocampal neurons on 0.1 kPa gels were transduced with lentiviral particles harboring an shRNA-resistant construct (‘PXN-R’) and/or constructs harboring scrambled control or paxillin (‘PXN shRNA C + D’) shRNA at 5 hr after cell plating. Dashed circles surround the region of interest (ROI) in quantitative FM4-64 measurements. Bar: 20 μm. (B) Similar to A, except constructs encoding GFP fusions of wild-type paxillin (‘PXNWT-GFP’; B1 and B2) or the corresponding LIM domain deletion mutant (‘PXNLD1-3-GFP’; B3) were used for lentiviral transduction. Asterisk: non-transduced neighboring cells. Arrows: neurons expressing GFP-tagged paxillin proteins. Bar: 20 μm. (C–E) Quantitative measurements of cumulative FM4-64 intensity (±SEM, n > 3 independent experiments, 7–12 cells for each set of experiments; *p<0.05; **p<0.001; ***p<0.0001; compared to control groups; multiple t tests), all from experiments similar to those described in A and B. Note that ectopic expression of wild-type paxillin, but not PXNLD1-3, restored rapid endocytic FM4-64 uptake on 20 kPa stiff gels.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Western blot showing efficiency of shRNA-mediated paxillin knockdown. Mouse neuroblastoma Neuro-2a (N2a) cells were transfected with plasmids encoding scrambled shRNA (‘scr’) or one of four paxillin shRNAs (sequence A, B, C, or D) targeting to different regions of the paxillin sequence. Summary histograms showing that shRNA D exerted a ~2-fold suppression on paxillin expression and it had no effect on vinculin expression. Data represent mean ±SEM (n = 5, normalized to control actin, compared to that of scr experiment; *p<0.05; t-test **p<0.01, ****p<0.0001; t test). (B) Images of neurons transfected with plasmids encoding scrambled shRNA or paxillin shRNAs (shRNA C + shRNA D), immunostained with antibody specific against paxillin. Right-most panels show the region of interest (ROI, dashed box) of neurite tips at a higher magnification, with the intensity of paxillin staining coded by pseudocolors in a linear scale. Bar: 5 μm. Dot plot reflects quantification of paxillin immunostaining intensity (±SEM, n = 20 cells each, normalized to EGFP intensity and relative to scramble control; ****p<0.0001; one-way ANOVA with Dunnett’s post hoc test).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A) CIP4 knockdown suppresses endocytic activity of neurons grown on 0.1 kPa gels. (A1) Western blot showing efficiency of shRNA-mediated CIP4 knockdown. HEK293T cells were transfected with plasmids encoding scrambled shRNA (‘scr’) or one of four CIP4 shRNAs (sequence A, B, C, or D) targeting to different regions of the CIP4 sequence. (A2) Representative time-lapse images of FM4-64 uptake in 5 hr neurons grown on 0.1 kPa gels. Time-lapse images (20 frames; 2 min intervals) of neurons isolated from E17.5 rat cortices which were transfected in utero at E16 with constructs encoding scrambled control or CIP4 (‘CIP4 shRNA A-D’) shRNA, and/or CIP4-GFP, cultured on 0.1 kPa for 5 hr, followed by endocytosis assay. Dashed circles surround the region of interest (ROI) for quantitative FM4-64 measurements. Asterisk marks non-transduced neighboring cells. Graph at right summarizes the accumulation curves of FM4-64 signal (±SEM, n > 3 independent experiments, 5–10 cells per group, normalized to t = 0 value; compared to that of scrambled control experiment *p<0.05; multiple t tests for each time point). (B) Images of neurons transfected with plasmids encoding CIP4-GFP, stained with phalloidin and DAPI. Right-most panels show the region of interest (ROI, dashed box) of neurite tips at a higher magnification. Note that CIP4-GFP was distributed along the enlarged lamella edge when neurons were cultured on 20 kPa gels. (C) Fluorescence images (C1) of P0 rat cortices transfected in utero at E16 with IRES constructs harboring GFP control or CIP4-GFP. The bottom panels show 4x magnifications of boxed regions corresponding to the P0 cortex in the top panels. Bar, 100 μm. (C2) Histograms showing the percentages (±SEM, n > 3 cortices each; ‘n.s.”, not significant, multiple t test) of neurons residing in the cortical plate (‘CP’), intermediate zone (‘IZ’), or subventricular zone (‘SVZ’) regions. (C3) Histograms showing the percentage (±SEM, n > 150 cells per cortex, >3 cortices each; ‘n.s.', not significant, multiple t test) of transfected cortical neurons exhibiting unipolar/bipolar polarized processes (‘polarized’), multiple short neurites without a long tailing process (‘unpolarized’), or no process (‘no neurite’) in cortices.
 
 Based on its physical and functional association with CIP4 and CHC (Figure 4 and Figure 5), we wondered whether paxillin might participate in vesicle invagination during clathrin-coated pit formation. To test this possibility, we quantified QD-BDNF invagination in HEK293T cells with or without paxillin knockdown. Note that HEK293T cells respond to BDNF only when transfected with a BDNF receptor (TrkB) expression construct (see Figure 6A). We did not observe detectable QD-BDNF invagination into non-TrkB-expressing HEK293T cells but, following transfection of cells with a TrkB expression construct, we observed an average invagination rate of ~32 dots per cell over the first hour after bath application of QD-BDNF. That rate significantly decreased to four dots per cell on paxillin knockdown, and comparable results were seen following CIP4 knockdown or dynasore treatment (Figure 6A,B). The decreased rates were rescued by ectopic expression of shRNA-resistant PXN-R in the paxillin knockdown experiment (Figure 6A). These findings suggest that paxillin is required for efficient vesicle invagination.
 
@@ -85,7 +141,23 @@ Based on its physical and functional association with CIP4 and CHC (Figure 4 and
 
 The effect of paxillin loss on neurite formation was further evaluated by measuring the rate at which paxillin knockdown cells enter a segmentable state. On soft substrates (0.1 kPa), paxillin knockdown significantly increased the percentage of neurons exhibiting the BL morphology and reduced the number of neurons bearing neurites in 16 hr cultures, with these effects being similar to those seen following treatment with the endocytosis inhibitors (Figure 2B, and Figure 7A,B). Further, paxillin knockdown significantly reduced levels of active Rac1 accumulation at the protruding edge (Figure 7C,D). These findings suggest that paxillin is a putative factor participating in a substrate modulus-dependent bistable switch in neurite formation in vitro (Figure 7H). We also asked whether manipulating paxillin binding affinity for endocytic or adhesion molecules could lead to a SL-BL phenotypic switch. Based on the domain mapping results in Figure 4C, we conclude that the paxillin-∆LD1 variant favors CIP4/clathrin association and that paxillin-∆LIM3-4 favors vinculin association. Using this approach, we found that ectopic PXN∆LIM3-4 expression in 0.1 kPa cultures enhanced the neuritogenesis-delaying BL phenotype, whereas PXN∆LD1 expression reduced the BL population in 20 kPa cultures (Figure 7—figure supplement 1). By contrast, ectopic expression of PXNLD1-3, which cannot bind vinculin or CIP4, had no significant effect on neurite outgrowth (Figure 7—figure supplement 1). These results support the idea that whether paxillin forms a complex with either endocytic or adhesion molecules determines the probability that newborn neurons will form proper neurites.
 
-## Paxillin is required for neurite development in vivo
+![Figure 7.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig7-v3.jpg)
+
+**Figure 7.:** (A and B). Paxillin knockdown impairs lamellipodium segmentation and neurite formation in neuronal cultures on 0.1 kPa gels. (A) Images of 16 hr hippocampal neurons transfected with scrambled control or paxillin siRNA at 30 min after cell plating on 0.1 kPa gels, followed by phalloidin staining for F-actin (Red) and immunostaining for the neuronal marker Tuj-1 (Green) at 16 hr after cell plating. (B) Histograms showing that paxillin knockdown significantly decreased the percentage of neurite-bearing neurons (left y-axis) and increased the percentage of neurons exhibiting the BL phenotype (right y-axis) in 0.1 kPa cultures. Data represent mean (±SEM; n > 3 independent experiments, >250 cells for each group; *p<0.05; **p<0.01; t test). (C) Similar to A, except that 16 hr neuronal cultures were immunostained with antibodies against active Rac1-GTP (Gray). Fluorescence intensity of active Rac1 (boxed region) is coded by pseudocolors in the linear scale (right panel in C). Scale bar: 20 μm. (D) Quantification of active Rac1 levels at segmented lamellipodia (averaged pixel value of a 2 µm X 2 µm area) in 0.1 kPa cultures transfected with paxillin-siRNA or control scrambled siRNA. Data represent mean ±SEM (n > 3 independent experiments, >250 cells for each group; ***p<0.001; ANOVA with Dunnett’s post hoc test). (E) Paxillin knockdown promotes aberrant neurite formation and cortical neuron migration in vivo. Fluorescence images of E20 rat cortices transfected in utero at E17.5 with IRES constructs harboring EGFP plus scrambled-shRNA control, paxillin shRNA C + D, and/or shRNA C + D resistant PXN-R. The middle panels show 4x magnifications of boxed regions of the corresponding E20 cortex in the top panels. Bottom panels show sample tracings of 2D projections from confocal images of eight typical cortical neurons in the subventricular zone (‘SVZ’) of the corresponding E20 cortex. Bar, 100 μm. (F) Histograms showing the percentage (±SEM, n = 3 cortices each; *p<0.05, two-tailed t test) of neurons residing in the cortical plate (‘CP’), intermediate zone (‘IZ’), or subventricular zone (‘SVZ’) regions. (G) Calculation of the percentages (±SEM, n > 150 cells per cortex,>5 cortices each; ***p<0.001, multiple t test) of transfected cortical neurons exhibiting unipolar/bipolar processes or no process (‘none’; arrowheads in e) in the cortical SVZ/IZ region for cortices described in e. Datasets (connected by dashed lines) showing significant differences are marked. (H) Schematic illustrating the proposed substrate elasticity-controlled, paxillin-dependent bistable mechanism, comprising a genetic response and mutual inhibition of endocytosis by adhesion and vice versa. Growth on a soft substrate shifts neurons to a Rac1-activated neuritogenic state.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Representative fluorescent images of transfected IUE neurons (yellow arrows) expressing control EGFP and/or a paxillin deletion mutation (Green), cultured on 0.1 kPa (A1) or 20 kPa (A2) gels for 16 hr, and stained with phalloidin (Red), DAPI (Blue), and antibodies against Tuj-1 (Gray). (B) Histograms summarize the percentages (±SEM; *p<0.05; **p<0.001, one-way ANOVA with Dunnett’s post hoc test) of 16 hr neurons bearing segmented lamellipodia (‘SL’) or broad lamellipodia ('BL’) in neurons expressing different paxillin deletion mutations, as indicated. The top panel shows schematic of the neurite phenotype switch observed in the PXN∆LIM3-4 expressing neuron on 0.1 kPa gel and the PXN∆LD1 expressing neuron on 20 kPa gel.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig7-figsupp2-v3.jpg)
+
+**Figure 7—figure supplement 2.:** Representative Western blots (A) and quantitative analysis (B) of embryonic E18 brain, heart and liver lysates. Note that endocytic factors (CHC, Rab5 and CIP4) are more abundant in brain than in heart. Data represent mean ±SEM in more than three independent experiments. (C) Pie charts depicting the relative levels of adhesion and endocytic factors in brain, cardiac and hepatic tissues at E18, from all experiments similar to that described in B. The size of each pie slice is proportional to the sum of adhesion molecules (including integrin β1, talin1/2, vinculin and paxillin) or endocytic accessory factors (including paxillin, CIP4, CHC and Rab5) over all proteins measured. Paxillin and actin are assigned to dual function (endocytosis and adhesion). Note that endocytic factors are highly abundant in embryonic brain tissue.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/31101/elife-31101-fig7-figsupp3-v3.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Western blots of mouse brain lysates showing protein expression profiles at different developmental stages (including E13, E15, E18, P1, P4, P7, P14, and adult), as indicated. (B) Quantification of protein levels, from all experiments similar to that described in A, at different time-points compared to corresponding levels at E13. Data represents mean ±SEM from more than three independent experiments.
+
+### Paxillin is required for neurite development in vivo
 
 We next evaluated the effect of paxillin activity on neurite development in vivo by monitoring the protein expression of endocytic factors in embryonic rat brain. We observed high levels of endocytosis-related factors and low levels of adhesion-related molecules in embryonic rat brains compared to hepatic and cardiac control tissues (Figure 7—figure supplement 2). In addition, paxillin abundance increased between E13 and E18 and declined postnatally (between P1 and P14) in the developing cortex (Figure 7—figure supplement 3). This time-course is compatible with and parallels that of neurite formation in the developing rat brain.
 
@@ -105,11 +177,224 @@ Looking forward, our observations and our model for a molecular switch that is i
 
 ## Materials and methods
 
-## Plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cell line</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>ATCC Cat# CRL-3216, RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-FLAG M2</td>
+      <td>Sigma-Aldrich</td>
+      <td>Sigma-Aldrich Cat# F1804, RRID:AB_262044</td>
+      <td>dilution: 1:1000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>c-Myc Tag Monoclonal Antibody (9E10)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Thermo Fisher Scientific Cat# MA1-980, RRID:AB_558470</td>
+      <td>dilution: 1:1000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Anti-beta III tublin Antibody</td>
+      <td>Millpore</td>
+      <td>Millipore Cat# AB9354, RRID:AB_570918</td>
+      <td>dilution: 1:1000 in IF</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>MAP2</td>
+      <td>Millpore; PMID:26244549</td>
+      <td>Millipore Cat# AB5622, RRID:AB_11213363</td>
+      <td>dilution: 1:1000 in IF</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>actin</td>
+      <td>Millpore</td>
+      <td>Millipore Cat# MAB1501, RRID:AB_2223041</td>
+      <td>dilution: 1:2000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tau-1</td>
+      <td>Millpore</td>
+      <td>Millipore Cat# MAB3420, RRID:AB_94855</td>
+      <td>dilution: 1:1000 in IF</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Anti-Paxillin (N-Term), Rabbit Monoclonal, clone Y113 antibody</td>
+      <td>Millpore</td>
+      <td>Millipore Cat# 04–581, RRID:AB_838293</td>
+      <td>dilution: 1:1000 in WB; 1:200 in IF</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>p-PaxillinY118</td>
+      <td>ECM Biosciences</td>
+      <td>ECM Biosciences Cat# PP4501</td>
+      <td>dilution: 1:1000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mouse Anti-Paxillin Monoclonal Antibody, Unconjugated, Clone 349</td>
+      <td>BD Biosciences; PMID:28362576</td>
+      <td>BD Biosciences Cat# 612405, RRID:AB_647289</td>
+      <td>dilution: 1:1000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Anti-Vinculin, clone V284 antibody</td>
+      <td>millpore; PMID:28697342</td>
+      <td>Millipore Cat# 05–386, RRID:AB_309711</td>
+      <td>dilution: 1:1000 in WB; 1:200 in IF</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Anti-Integrin Beta1, activated, Clone HUTS-4, Azide Free antibody</td>
+      <td>Millore; PMID:28602620</td>
+      <td>Millipore Cat# MAB2079Z, RRID:AB_2233964</td>
+      <td>dilution: 1:1000</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>TRIP/CIP4</td>
+      <td>Bethyl Laboratories; A301-186A</td>
+      <td></td>
+      <td>dilution: 1:1000 in WB; 1:200 in IF</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Clathrin heavy chain antibody</td>
+      <td>Abcam; PMID:28231467, PMID:28575669</td>
+      <td>Abcam Cat# ab21679, RRID:AB_2083165</td>
+      <td>dilution: 1:1000 in WB; 1:200 in IF</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Talin 1 and 2 antibody [8D4]</td>
+      <td>Abcam</td>
+      <td>Abcam Cat# ab11188, RRID:AB_297828</td>
+      <td>dilution: 1:1000 in WB</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rabbit Anti-Rab5 Polyclonal Antibody, Unconjugated</td>
+      <td>Abcam; PMID:28408870, PMID:28669519</td>
+      <td>Abcam Cat# ab18211, RRID:AB_470264</td>
+      <td>dilution: 1:1000 in WB</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Integrin beta 1 antibody [EP1041Y] - Carboxyterminal end</td>
+      <td>Abcam; PMID:25330147, PMID:28552668, PMID:28609658</td>
+      <td>Abcam Cat# ab52971, RRID:AB_870695</td>
+      <td>dilution: 1:1000 in WB; 1:200 in IF</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Phospho-FAK (Tyr397) Antibody (31H5L17), ABfinity(TM) Rabbit Monoclonal</td>
+      <td>Thermo Fisher Scientific; PMID:22049075, PMID:25280968, PMID:26056143, PMID:26381152, PMID:26393679, PMID:26984758</td>
+      <td>Thermo Fisher Scientific Cat# 700255, RRID:AB_2532307</td>
+      <td>dilution: 1:1000 in WB; 1:200 in IF</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rabbit Anti-FAK [pY397] Polyclonal Antibodies, Unconjugated antibody</td>
+      <td>Thermo Fisher Scientific; PMID:27474796, PMID:28069919, PMID:28520937</td>
+      <td>Thermo Fisher Scientific Cat# 44–624G, RRID:AB_2533701</td>
+      <td>dilution: 1:1000 in WB; 1:200 in IF</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Akt1/2/3 (H-136) antibody</td>
+      <td>Santa Cruz Biotechnology; PMID:27316329, PMID:27410235, PMID:28911175</td>
+      <td>Santa Cruz Biotechnology Cat# sc-8312, RRID:AB_671714</td>
+      <td>dilution: 1:200 in WB</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rac 1 (C-11) antibody</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Santa Cruz Biotechnology Cat# sc-95, RRID:AB_2176125</td>
+      <td>dilution: 1:200 in WB</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cdc42 (P1) antibody</td>
+      <td>PMID:28181299, PMID:28457749</td>
+      <td>Santa Cruz Biotechnology Cat# sc-87, RRID:AB_631213</td>
+      <td>dilution: 1:200 in WB</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Rho A (26C4) antibody</td>
+      <td>Santa Cruz Biotechnology; PMID:28287395, PMID:28323616</td>
+      <td>Santa Cruz Biotechnology Cat# sc-418, RRID:AB_628218</td>
+      <td>dilution: 1:200 in WB</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Anti-Active Rac1-GTP Mouse Monoclonal Antibody</td>
+      <td>NewEast Biosciences</td>
+      <td>NewEast Biosciences Cat# 26903, RRID:AB_1961793</td>
+      <td>dilution: 1:200 in WB and IF</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Anti-RhoA antibody (mouse MAb)+control</td>
+      <td>Cytoskeleton Inc; PMID:27822498</td>
+      <td>Cytoskeleton Cat# ARH03, RRID:AB_10708069</td>
+      <td>dilution: 1:200 in WB and IF</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Anti-Rac1 specific mouse MAb antibody</td>
+      <td>Cytoskeleton Inc</td>
+      <td>Cytoskeleton Cat# ARC03-A, RRID:AB_10709099</td>
+      <td>dilution: 1:200 in WB and IF</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Anti-Cdc42 Mouse Monoclonal Antibody</td>
+      <td>Cytoskeleton Inc</td>
+      <td>Cytoskeleton Cat# ACD03-A, RRID:AB_10716593</td>
+      <td>dilution: 1:200 in WB and IF</td>
+    </tr>
+    <tr>
+      <td>peptide, recombinant protein</td>
+      <td>PAK-GST, GST-Photekin-RBD</td>
+      <td>Cytoskeleton Inc</td>
+      <td>Cytoskeleton Inc Cat. #BK035; Cat. # BK036</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids
 
 Plasmids used are as follows: fluorescence resonance energy transfer (FRET) reporters for Rac1 activity assays, Rac1-2G (Plasmid #66111; [Fritz et al., 2013], GFP-Dynamin 2 K44A (Plasmid #22301;(Ochoa et al., 2000) and paxillin-pEGFP plasmid (Plasmid # 15233; (Laukaitis et al., 2001) were obtained from Addgene. Lentiviral transfer plasmid pLenti-C-Myc-DDK-CIP4 (also known as TRIP10) was generated by subcloning the C-Myc-DDK-CIP4 fragment from pCMV-C-Myc-DDK-TRIP10 (OriGene Technologies, Rockville, MD) into pLenti vector using AsiSI and PmeI restriction sites. GST- or His-tagged fusion protein expression constructs encoding full-length or truncated versions of paxillin or CIP4 were cloned into pDONR/Zeo vectors (Invitrogen, Carlsbad, CA) by PCR-based methods and transferred to T7 promoter-driven pDEST15 or pEXP2-6xHis-DEST Gateway destination vectors (Invitrogen, Carlsbad, CA) by recombination‐based Gateway technology according to the manufacturer's protocols (Invitrogen, Carlsbad, CA). Paxillin-mCherry plasmid was generated by replacing the EGFP fragment from paxillin-pEGFP with the mCherry sequence. Lentiviral-based short hairpin RNA (shRNA) constructs were purchased from OriGene Technologies (Rockville, MD). For paxillin shRNA constructs, 29-oligonucleotide duplexes targeting rat paxillin cDNA sequences (PXN-shRNA A targeting position 1505, PXN-shRNA B targeting position 1571, PXN-shRNA C targeting position 346, and PXN-shRNA D targeting position 952 of the corresponding paxillin sequence) and a control non-effective scrambled shRNA cassette (5’- CACAAGCTGGAGTACAACTACAACAGCCA-3’) were cloned into pGFP-C-shLenti vector (OriGene Technologies, Rockville, MD). For CIP4 shRNA constructs, TRIP10-shRNA A targeting position 172, TRIP10-shRNA B targeting position 351, TRIP10-shRNA C targeting position 811, and TRIP10-shRNA D targeting position 983 of the corresponding CIP4 coding sequence were also cloned into pGFP-C-shLenti vector (OriGene Technologies, Rockville, MD). The encoding regions of shRNAs contained a 29-nucleotide sense strand, a TCAAGAG loop structure, and the reverse complementary sequence, followed by a TTTTTT termination sequence. The chicken ortholog of a mammalian paxillin expression plasmid, paxillin-pEGFP, was used as the shRNA-resistant construct (PXN-shRNA-R), the sequence of which is resistant to PXN-shRNA targeting. pLenti-C-mGFP-PXN (rat paxillin) was purchased from OriGene Technologies (Rockville, MD). The plasmid encoding mCherry-TrkB used in QD-BDNF internalization assays was kindly provided by Dr. Mu-Ming Poo, UC Berkeley, USA.
 
-## Reagents
+### Reagents
 
 Sources of antibodies, proteins, and chemicals are as follows. Purified PAK-GST and GST-Rhotekin-RBD for active Rac1 and RhoA pulldown assays were from Cytoskeleton Inc. (Denver, CO). Primary antibodies: monoclonal anti-FLAG M2 was from Sigma-Aldrich (Saint Louis, MO). Polyclonal antibodies to neuronal class III β-tubulin (Tuj-1, AB9354) and MAP2 (AB5622), as well as monoclonal antibodies to actin (clone C4, MAB1501), Tau-1 (clone PC1C6, MAB3420), paxillin (N-term, 04–581), vinculin (clone V284, 05–386) and activated integrin β1 (clone HUTS-4, MAB 2079Z) were from EMD Millipore Corp. (Billerica, MA). Polyclonal antibodies to TRIP/CIP4 (A301-186A). was from Bethyl Laboratories, Inc. (Montgomery, TX). Clathrin heavy chain (ab21679), Rab5 (ab18211), and monoclonal antibodies to integrin β1 (ab52971) and talin 1/2 (ab11188) were from Abcam Inc. (Cambridge, MA). Polyclonal antibody to p-FAKY397(44–624G) and monoclonal antibody to p-FAKY397 (700255) were from Thermo Fisher Scientific. Polyclonal antibody to p-PaxillinY118 (PP4501) was from ECM Biosciences (Versailles, KY). Monoclonal antibody to paxillin (612405) was from BD Biosciences (Franklin Lakes, NJ). Polyclonal antibodies to Akt1/2/3 (H-136), Rac1 (C-11, sc-95), Cdc42 (P1, sc-87), as well as monoclonal antibody to RhoA (26C4, sc-418), were from Santa Cruz Biotechnology (Santa Cruz, CA). Monoclonal antibody to c-Myc (9E10, MA1-980) was from Thermo Scientific (Waltham, MA). Monoclonal antibody to active Rac1-GTP (26903) was from NewEast Biosciences (King of Prussia, PA). Monoclonal antibodies to RhoA (ARH03), Rac1 (ARC03) and Cdc42 (ACD03) were from Cytoskeleton Inc. (Denver, CO).
 
@@ -117,7 +402,7 @@ Pharmacological reagents: recombinant human BDNF was from PeproTech (Rocky Hill,
 
 Fluorescent reagents: Alexa Fluor 488, Alexa Fluor 546, Alexa Fluor 647, fluorescent dye FM1-43FX (F35355) and FM4-64FX (F34653) were from Invitrogen (Carlsbad, CA). DAPI (D9542), Acrylamide (A4058) and N'-N'-methylenebisacrylamide solution (M1533) were purchased from Sigma-Aldrich (Saint Louis, MO). Phalloidin-iflour 488 conjugate, phalloidin-iflour 555 conjugate and phalloidin-iflour 647 conjugate were from AAT Bioquest Inc. (Sunnyvale, CA).
 
-## Cell culture, protein lysate preparations, and immunostaining
+### Cell culture, protein lysate preparations, and immunostaining
 
 Hippocampal neurons were prepared from E17.5 rat embryos as previously described (Dotti et al., 1988), and were cultured in neurobasal medium supplemented with Gem21 NeuroPlex (GEMINI bio-products, West Sacramento, CA). A similar procedure was applied to preparation of cortical neuronal cultures. Human Embryonic Kidney 293T (HEK293T; ATCC Cat# CRL-3216) cells used for biochemical assays were tested for Mycoplasma and characterized by STR profiling as indicated in the ATCC online catalog. HEK293T cells were cultured in Dulbecco's Modified Eagle's Medium supplemented with 10% fetal bovine serum (Biological Industries, Beit Haemek, Israel). Transfection of these cultures was performed using a lentivirus-based expression system or Lipofectamine 2000 (Invitrogen, Carlsbad, CA), according to the manufacturer's instructions. Unless otherwise stated, hippocampal neurons were used as a standard model for in vitro immunocytochemistry to analyze neuronal morphology. Cortical neuronal cultures were used to obtain a sufficient number of cells for biochemical assays not requiring transfection of exogenous proteins.
 
@@ -125,56 +410,85 @@ For cortical neurons grown on gel or glass substrates, protein lysate was harves
 
 For immunostaining, cultured hippocampal neurons were fixed with 4% paraformaldehyde for 12 min and then permeabilized in 0.3% Triton X-100 for 12 min and blocked with 3% BSA for 1 hr. The fixed cells were processed further for immunostaining according to standard procedures and imaged with a confocal microscope (Zeiss LSM700) equipped with a 63 × oil immersion objective (NA1.4; Zeiss) and a 40 × water immersion objective (NA1.1; Zeiss). For quantitative measurements of colocalization, images were acquired using a Zeiss LSM880 confocal microscope with an Airyscan module (32-channel GaAsP detector array) equipped with a Plan Apo 63 × oil immersion objective (NA1.4). The axial step size was set to 125 nm. Surface rendering of the three-dimensional images was performed using ZEN (Zeiss) and Imaris (Bitplane) software without Z-correction. Images were analyzed and processed for presentation in the figures, using brightness and contrast adjustments with NIH ImageJ software and following the guidelines of Rossner and Yamada (Rossner and Yamada, 2004).
 
-## Polyacrylamide gel preparation
+### Polyacrylamide gel preparation
 
 Fabrication of polyacrylamide gels with tunable mechanical stiffness was slightly modified from a previous protocol (Tse and Engler, 2010). Briefly, uniform polyacrylamide gels were fabricated in a three-layer assembly of 200 μm thickness. The bottom layer was a hydrophilic amino-silanized coverslip prepared according to the following protocol. A thin film of sodium hydroxide was allowed to form on the coverslips at approximately 90°C. The entire surface of each coverslip was then immersed with a sufficient volume of (3-aminopropyl) triethoxysilane (Sigma-Aldrich, Saint Louis, MO) for 5 min. The (3-aminopropyl) triethoxysilane was then completely rinsed off to prevent precipitation before 0.5% (v/v) glutaraldehyde (Sigma-Aldrich, Saint Louis, MO) in PBS was added onto the silanized coverslips for 30 min. Fluids were removed by suction before the amino-silanized coverslips were air-dried and sterilized with 70% ethanol for 16 hr prior to gel preparation. The top layer comprised a laminin-coated coverslip prepared by sterilizing an acid-washed coverslip with 70% ethanol and then coating it with 5 μg/ml of poly-L-Lysine (Sigma Aldrich, Saint Louis, MO) and 0.08 μg/ml of laminin (Corning, NY) by absorption for an hour at 37°C.
 
 For the middle gel layers of differing stiffness, a prepolymer mixture was prepared as shown in the table below. Polymerization of the prepolymer mixture was carried out by adding 10 μl of 10% ammonium persulfate, 2 μl of TEMED (Bio-Rad Laboratories, Hercules, CA) and sufficient deionized water to yield a final volume of 1000 μl. The resulting prepolymer-catalyst mixture was dropped onto hydrophobic amino-silanized coverslips. The three-layer assembly was formed by transferring the pre-coated poly-L-Lysine and laminin coverslips to the surfaces of the polyacrylamide gels during polymerization. After 30 min, the top layer was gently peeled off and washed three times with HEPES solution to remove unreacted monomer and excess coatings.
 
-4% acrylamide (μl)2%N'-N'-methylenebisacrylamide (μl)Deionized water (μl)0.1 kPa75259001 kPa1005085020 kPa200240560
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>4% acrylamide (μl)</th>
+      <th>2%N'-N'-methylenebisacrylamide (μl)</th>
+      <th>Deionized water (μl)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0.1 kPa</td>
+      <td>75</td>
+      <td>25</td>
+      <td>900</td>
+    </tr>
+    <tr>
+      <td>1 kPa</td>
+      <td>100</td>
+      <td>50</td>
+      <td>850</td>
+    </tr>
+    <tr>
+      <td>20 kPa</td>
+      <td>200</td>
+      <td>240</td>
+      <td>560</td>
+    </tr>
+  </tbody>
+</table>
 
-## Substrate elasticity measurements
+### Substrate elasticity measurements
 
 Substrate elasticity of uniform gels was measured by using a JPK NanoWizard II AFM system installed above the stage of an inverted light microscope (Zeiss Axio Observer) in a custom-built anti-noise, anti-vibration system. A 5 µm (in diameter) polystyrene bead-modified tip-less cantilever (ARROW-TL1-50, NanoWorld, US) was utilized. The spring constants, calibrated by a thermal noise-based method, were at a range of 0.02 to 0.08 N/m for all cantilevers. All indentation depth curves were calculated using the manufacturer’s software (Hertz model, JPK instruments, Berlin, Germany). The average value of Young’s modulus of tensile elasticity was acquired from 25 measurements for each independent experiment.
 
-## Phalloidin intensity profiling
+### Phalloidin intensity profiling
 
-Images of 5 hr neuronal cultures stained with phalloidin were analyzed in a circular coordinate system using an oval-profile ImageJ plugin (courtesy of Bill O’Connell, http://rsbweb.nih.gov/ij/plugins/oval-profile.html). The pixel intensities along each radian in a circle (radius = 8 µm) covering the cell periphery were normalized against the background value and plotted as an intensity-distribution profile. The lamellipodium occupancy (LO) refers to the proportion of the individual phalloidin arc length (angular span) to the entire cell periphery (2πr), calculated by the formula phalloidin arc length 2πr. The major LO represents the maximum LO value of each cell.
+Images of 5 hr neuronal cultures stained with phalloidin were analyzed in a circular coordinate system using an oval-profile ImageJ plugin (courtesy of Bill O’Connell, http://rsbweb.nih.gov/ij/plugins/oval-profile.html). The pixel intensities along each radian in a circle (radius = 8 µm) covering the cell periphery were normalized against the background value and plotted as an intensity-distribution profile. The lamellipodium occupancy (LO) refers to the proportion of the individual phalloidin arc length (angular span) to the entire cell periphery ($2\pir)$, calculated by the formula $\frac{phalloidinarclength}{2\pir}$. The major LO represents the maximum LO value of each cell.
 
-## Single molecule FISH
+### Single molecule FISH
 
 Neurons grown on gel or glass substrates were fixed in 4% paraformaldehyde at room temperature for 10 min, and then permeabilized in 0.3% Triton X-100 for 12 min and rinsed in 70% ethanol for subsequent RNA FISH. For hybridization, samples were briefly washed once with wash buffer (10% deionized formamide, 2 × SSC) for 5 min, and then hybridized with RNA FISH probes in hybridization buffer (10% formamide, 10% dextran sulfate, 2 × SSC) overnight at 37°C. Following hybridization, samples were washed twice with wash buffer (30 min per wash), and washed once with 1 × PBS. Samples were then imaged with a Delta Vision microscopy system equipped with a PlanApoN 60X oil-immersion objective (1.42 NA; Olympus). Images were collected and analyzed with NIH Image software. Alexa Fluor 488 phalloidin was used to identify the lamellipodium phenotypes of the stained cells. smRISH probe sets targeting the rat transcripts of CLTC, MYO6, DAB2, VCL, CDH11, ROBO2, DKK1, and CYR61 were ordered from Stellaris with Quasar 570 dye (Bioserach Technologies, Petaluma, USA).
 
-## FRET imaging and analysis
+### FRET imaging and analysis
 
 Cultured hippocampal neurons were imaged with a Rolera EM-C2 EMCCD camera (QImaging) and Yokogawa CSU-X1 spinning-disk confocal microscopy (Zeiss) and a 40 × water immersion objective (NA1.1; Zeiss). Excitation spectra were excited by a solid-state 445 nm diode laser, through a 457 nm dichroic filter. Emission spectra were sequentially acquired using 485 ± 20 nm and 535 ± 30 nm band-pass emission filters for mTFP1 and Venus fluorescence, respectively. Images were collected and analyzed with NIH ImageJ software. All filters and dichroics were from Chroma Technology. Live images were acquired for 150 milliseconds at 3 s intervals. The intensity of mTFP1 and Venus fluorescence was measured at a level below saturation for all neurites. Measurements were not performed on the soma due to fluorescence saturation being at the excitation level suitable for neurite measurements. For the ratiometric FRET analysis, the mTFP1 and Venus signals were background-subtracted (with background intensity taken from a nearby cell-free region), normalized against the control value (averaged over 3 min), and the FRET value was calculated as a ratio (mTFP1/Venus). The intensity of the FRET signal was calculated with NIH ImageJ software and is represented by pseudocolors.
 
-## Expression of GST- and His-tagged proteins, and in vitro binding assays
+### Expression of GST- and His-tagged proteins, and in vitro binding assays
 
 For protein expression and purification, GST fusion proteins were produced as previously described. Briefly, GST- or His-tagged proteins were expressed in E. coli BL21(DE3) induced by 0.4 mM IPTG overnight at 30°C in LB medium. Bacteria were lysed by sonication in short pulses of 15 s in lysis buffer [(50 mM Tris-HCl, pH = 7.4, 50 mM NaCl, 5 mM DTT, 1 mM phenylmethylsulfonyl fluoride, 1% Triton X-100 containing 1% Triton X-100, 1 mM EDTA, 1 mM dithiothreitol and protease inhibitors (Complete EDTA-free; Roche)]. Cell debris was removed by centrifugation at 9000 g for 10 min at 4°C. The resulting supernatant was applied onto a Glutathione Sepharose 4B or HisTrap column (GE Healthcare). After washing, GST- and His-tagged proteins were eluted in buffer containing 10 mM reduced glutathione and 300 mM imidazole, respectively. We added 1 M imidazole to samples shortly after elution to prevent precipitation of His-tagged protein. Protein concentrations were measured using the Bio-Rad DC Protein Assay. Protein purity was further assessed by fast protein liquid chromatography, followed by SDS- PAGE and Coomassie blue staining.
 
 For GST pull-down assays, cell lysate/His-tagged protein and GST fusion proteins were incubated together with glutathione-agarose beads. Complexes recovered from the beads were resolved by SDS-PAGE and analyzed by western blotting.
 
-## FM4-64 dye imaging
+### FM4-64 dye imaging
 
 Hippocampal neurons grown on various substrates were starved in neurobasal medium for 30 min and transferred to extracellular solution (145 mM NaCl, 10 mM HEPES, 8 mM glucose, 3 mM CaCl2, 2 mM MgCl2 and 3 mM KCl) before loading with the fluorescent dye FM 4-64FX (Invitrogen, Carlsbad, CA). Time-lapse images of neurons loaded with 20 μM FM4-64 were acquired as 10 μm z-series stacks (spaced at 0.5 μm) at 2 min intervals for 40 min using Yokogawa CSU-X1 spinning-disk confocal microscopy (Zeiss). Image analysis of FM dye intensity of the region of interest in cell bodies was performed by NIH ImageJ software. All pictures were taken at equal exposure for control and experimental groups.
 
-## Measurements of QD-BDNF internalization
+### Measurements of QD-BDNF internalization
 
 Quantum dot-labeled BDNF (QD-BDNF) was prepared as previously described (Xie et al., 2012). Briefly, streptavidin-conjugated QD655 (Invitrogen, Carlsbad, CA) mixed with human BDNF-biotin (Alomone Labs, Jerusalem, Israel) at a molar ratio of 1:2 was incubated overnight at 4°C. Unbound BDNF was separated from QD-BDNF with Sephacryl S-300 HR beads (Sigma-Aldrich, Saint Louis, MO), and the elution fractions (in 20 mM HEPES buffer, pH 7.2) with the highest fluorescence were regarded as the purified QD-BDNF. HEK293T cells transfected with TrkB expression constructs or hippocampal neurons were exposed to 0.1 nM QD-BDNF in 2% BSA containing extracellular solution for 30 min, followed by a period of washout before image acquisition. The fluorescence images of internalized QD-BDNF were acquired by spinning-disk confocal microscopy (Zeiss, multiple emission set: E460 SPUVv2, EX; 475DCXRU dichroic mirror, BS; D655/40 m, EM) in the presence of the quencher QSY-21 (2 μM) to prevent signals of extracellular QD-BDNF. We quantified amounts of BDNF-Qdots taken up by cells and correlated them with TrkB expression in transfected cells. BDNF-Qdot uptake by HEK293T cells requires TrkB expression, but TrkB levels do not show a linear correlation with numbers of intracellular BDNF-Qdots. Based on TrkB levels seen in our experiments, the amount of receptor is already saturating and sufficient to accurately assess BDNF-Qdot uptake by HEK293T cells. We omitted analysis of cells whose TrkB intensity is relatively low (cut-off = 5% of highest TrkB intensity in each group). This adjustment does not alter overall observation that loss of paxillin expression significantly reduces BDNF-Qdot uptake.
 
-## cDNA microarray and data validations
+### cDNA microarray and data validations
 
 Total RNA of cortical neurons growing on gels of differing stiffness and glass was extracted at different time-points using a QuickGene RNA cultured cell kit from Kurabo Industries Ltd. (Osaka, Tokyo). RNA concentrations were quantified using a NanoDrop Spectrophotometer ND-1000 (NanoDrop Technologies, Wilmington, ED). RNA quality was assessed using a 2100 Bioanalyzer (Agilent Technologies, Santa Clara, CA) based on the following criteria: RNA integrity (number) >8.0, rRNA ratio (28S/18S) >1.8, and the proportion of 28S and 18S (amount) >40%. cDNA probe labeling and hybridization on rat gene expression microarray slides (Agilent Technologies, Santa Clara, CA) was conducted according to the manufacturers’ protocols and carried out in the Institute of Molecular Biology Genomics Core Facility. Microarray data (19956 entrez genes) were analyzed using GeneSpring GX software (version 12.1, Agilent). In brief, gene expression levels were subjected to quantile normalization and averaged from three independent experiments. Gene modules of the differential expressions were identified using a volcano plot (filtering criteria: >1.5 fold change, p<0.05, t test), followed by Gene Ontology analysis (cut off: p<0.02; Appendix 1—table 1). Validation of results was achieved by overlaying the microarray-identified genes with a global molecular network (the IPA knowledge base), which revealed that the 114 genes were eligible to generate networks with a p-value<0.02. We prioritized the 114 genes based on their significance (p-value), and ‘endocytosis-related reaction’ came out as the top-ranked GO term for molecular functions among genes in the list. Three out of 37 genes that were selectively upregulated in 5 hr 0.1 kPa cultures are directly linked to endocytic processes. Based on significant shared GO terms, the correlations between the stiffness of substrates and the expression levels of genes associated with endocytosis, adhesion, neuronal development and cytoskeleton (see Appendix 1—table 2) were further verified by using QuantiGene Plex 2.0 assays according to the manufacturer’s instructions (Affymetrix, Santa Clara, CA). The two housekeeping genes, GAPDH and HPRT, were used for data normalization. GEO accession number of the microarray data set is GSE102350.
 
-## In utero electroporation
+### In utero electroporation
 
 In utero electroporation followed previously described procedures (Saito and Nakatsuji, 2001), with minor modifications. Timed-pregnant Sprague-Dawley rats were anesthetized at E17.5 with isoflurane, and the uterine horns were exposed by way of a laparotomy. Saline solution containing the expression plasmid of interest (2 mg/ml) together with the dye Fast Green (0.3 mg/ml; Sigma-Aldrich, Saint Louis, MO) was injected (1–2 μl) through the uterine wall into one of the lateral ventricles of the embryos. The embryo's head was electroporated by tweezer-type circular electrodes across the uterus wall, and five electrical pulses (50 V, 50 ms duration at 100 ms intervals) were delivered with a square-wave electroporation generator (model ECM 830, BTX Inc.). The uterine horns were then returned to the abdominal cavity, the wall and skin were sutured, and the embryos continued normal development. Control embryos were electroporated with the tdTomato construct together with the GFP construct (1:2 ratio), and experimental embryos were electroporated with DynIIK44A or PXN-shRNA (both sequence C and D) (see also Supplemental Materials), control scramble-shRNA, and the shRNA-resistant construct (PXN-shRNA-R), each in addition to the tdTomato construct. Control and experimental E20 embryos were obtained from the same litter and the injections were always made into the left and right ventricles, respectively, for later identification. Maximum intensities of the z-projection of tile images (20 µm thickness) were attained from spinning-disk confocal microscopy (Zeiss). Animal protocols were approved by the Animal Care and Use Committee of Academia Sinica.
 
-## Membrane floatation assay
+### Membrane floatation assay
 
 Dissected embryonic rat brain and heart at E17.5 were sonicated (four cycles of 20 s on and 10 s off) and mixed with 90% (w/w) sucrose to a final concentration of 45% sucrose in detergent-free lysis buffer (20 mM Tris-HCl, 5 mM MgCl2 and 1 mM DTT with Complete protease inhibitor). Samples (1.5 ml) were overlaid with 1.5 ml of 35% sucrose and 9 ml of 5% sucrose and centrifuged at 175,000 x g for 18 hr at 4°C. Fractions (300 μl each) were collected from the top and subjected to immunoblot analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 To choose the statistical test for comparisons between two datasets, we first examined whether the data in each set was normally distributed using a Jarque-Bera test. A t test was used for normally distributed datasets. One-way ANOVA followed by a Dunnett’s post hoc test was used for comparisons involving multiple datasets.

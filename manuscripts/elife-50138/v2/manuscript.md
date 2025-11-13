@@ -27,9 +27,17 @@ Building on these findings in developing and intact adult nerves, we now report 
 
 ## Results
 
-## YAP/TAZ expression in Schwann cells is axon-dependent
+### YAP/TAZ expression in Schwann cells is axon-dependent
 
 Transcriptional regulation of SC proliferation and differentiation by YAP/TAZ depends on their nuclear localization. Nuclear YAP/TAZ in SCs of adult mice promote myelin gene expression, essentially maintaining peripheral nerve myelination (Grove et al., 2017). As the first step to determine the roles of YAP/TAZ in nerve repair, we examined spatiotemporal expression patterns of YAP/TAZ in adult mice after sciatic nerve crush injury (Figure 1). The nerve crush model evokes active axon degeneration in the distal nerve stump, while permitting new axons from the proximal nerve stump to regenerate through the crushed site within 1–2 days post injury (dpi) (Kang and Lichtman, 2013; Jang et al., 2016; Frendo et al., 2019). New axons then keep regenerating within the basal lamina tubes filled with SCs and their processes, at the speed of 1–4 mm/day, although the debris of degenerating axons and myelin is not yet completely removed. We killed these mice 1, 3, 6, 9, 12, and 24 dpi and immunostained proximal and distal nerve stumps of ~5 mm in length with an antibody specific for both YAP and TAZ (Figure 1A; at 12 dpi). At one dpi when distal axons remained largely intact, nuclear expression of YAP/TAZ in associated SCs was unchanged (Figure 1B; 1D-dstl). Strikingly, at three dpi when axon degeneration was robust and SCs lost axon contacts, YAP/TAZ were almost undetectable in SC nuclei (Figure 1B; 3D-dstl). Thus, SCs lose nuclear expression of YAP/TAZ as associated axons degenerate.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/50138/elife-50138-fig1-v2.jpg)
+
+**Figure 1.:** YAP/TAZ expression in crushed sciatic nerves of adult mice, shown by IHC (A, B) and Western blotting (C). Axons and Schwann cell (SC) nuclei are marked by neurofilament (NF) or Sox10, respectively. (A) A surgery schematic for nerve crush, which permits regeneration of axons into the distal nerve stump, illustrated by a low-magnification, longitudinal section of a sciatic nerve at 12 dpi, immunostained for YAP and TAZ. (B) Dramatic loss of YAP/TAZ in SC nuclei by three dpi, concomitant with axon degeneration, followed by upregulation of YAP/TAZ after six dpi, concomitant with axon regeneration. Right-most panels: zoomed area of merged images, as indicated, showing nuclear expression of YAP/TAZ in SCs associated with large diameter axons, before and after injury. Arrows point to large diameter axons in distal nerves before injury or 1 dpi, associated with YAP/TAZ+ SC nuclei. Arrowheads point to regenerating axons. Note that SC nuclei associated with a thin regenerating axon at 3 dpi do not express nuclear YAP/TAZ, but those in contact with a large diameter axon after 6 dpi do. Scale bars; 500 μm (A), 20 μm (B). (C) Western blotting of intact and crushed nerve lysates, showing loss of YAP and TAZ by 3 dpi, followed by full recovery of TAZ but not YAP by 12 dpi. Quantification of Western blots: n = 3–5 mice per experiment. ns = not significant, 2-way ANOVA. YAP: 1 dpi intact vs 1dpi crushed, p=0.9991; 1 dpi crushed vs 3 dpi crushed, ****p<0.0001; 1 dpi crushed vs 6 dpi crushed, ***p=0.0009; 1 dpi crushed vs 12 dpi crushed, ****p<0.0001; 3 dpi intact vs 3 dpi crushed, ****p<0.0001; 3 dpi crushed vs 6 dpi crushed, p=0.0652; 3 dpi crushed vs 12 dpi crushed, p=0.3479; 6 dpi intact vs 6 dpi crushed, ***p=0.0009; 6 dpi crushed vs 12 dpi crushed, **p=0.0018; 12 dpi intact vs 12 dpi crushed, ****p<0.0001. TAZ: 1 dpi intact vs 1 dpi crushed, p=0.9909; 1 dpi crushed vs 3 dpi crushed, ****P<0.0001; 1 dpi crushed vs 6 dpi crushed, p=0.6855; 1 dpi crushed vs 12 dpi crushed, p=0.9692; 3 dpi intact vs 3 dpi crushed, ****p<0.0001; 3 dpi crushed vs 6 dpi crushed, ****p<0.0001; 3 dpi crushed vs 12 dpi crushed, ****p<0.0001; 6 dpi intact vs 6 dpi crushed, p=0.9828; 6 dpi crushed vs 12 dpi crushed, p=0.9810; 12 dpi intact vs 12 dpi crushed, p>0.9999.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50138/elife-50138-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Validation of a YAP-specific antibody. The antibody labels perineurial cells but not SC nuclei in intact sciatic nerves of Yap cKO (Mpz-Cre; Yapfl/fl; Taz+/+, Upper panel), whereas it labels SC nuclei in Taz cKO mice (Mpz-Cre; Yap+/+; Tazfl/fl, Bottom panel). (B) Longitudinal sections of crushed nerves, showing loss of YAP from SC nuclei in distal nerves by three dpi, followed by re-upregulation at or after six dpi. Scale bars = 15 μm (A, B).
 
 YAP/TAZ reappeared in the nuclei of SCs at 6 dpi, and these SCs were associated with regenerating axons (Figure 1B; 6D-dstl). By 12 dpi, as axon regeneration and maturation progressed further, more SCs exhibited strong nuclear expression of YAP/TAZ, comparable to that of SCs in the proximal neve stumps (Figure 1B; 12D-dstl, see also Figure 1A). These observations suggest that SCs upregulate nuclear YAP/TAZ, when they regain axon contacts as axons regenerate.
 
@@ -45,21 +53,37 @@ The dramatic down- and upregulation of YAP/TAZ concurrent with axon degeneration
 
 We also used an antibody specific for transcriptionally inactive, phosphorylated YAP (p-YAP), which is located preferentially in cytoplasm and exhibits perinuclear and membrane accumulation (Grove et al., 2017). We found that p-YAP became undetectable in SCs of transected/tied nerves by 12 dpi (Figure 2C). In contrast, p-YAP expression recovered in SCs of crushed nerves at 12 dpi (Figure 2D). These findings suggest that SCs are dependent on axons for both nuclear and cytoplasmic expression of YAP/TAZ.
 
-## YAT/TAZ are dispensable for Schwann cell proliferation after nerve injury
+### YAT/TAZ are dispensable for Schwann cell proliferation after nerve injury
 
 SCs rapidly dedifferentiate and convert to repair SCs after nerve injury. During this transdifferentiation process, SCs begin to proliferate ~3 dpi (Clemence et al., 1989; Jessen and Mirsky, 2016; Tricaud and Park, 2017). Our observation that YAP/TAZ disappear in SCs by 3 days after axotomy raises the interesting possibility that YAP/TAZ are not involved in injury-elicited SC proliferation. Alternatively, levels of YAP/TAZ that are too low to be detected by IHC may be sufficient to promote transcription of the genes activating SC proliferation. To test these possibilities, we used an inducible knockout mouse (Plp1-creERT2; Yapfl/fl; Tazfl/fl, hereafter Yap/Taz iDKO) to inactivate YAP/TAZ selectively in SCs after nerve injury. We induced recombination at 6 weeks of age, completely transected and tied the sciatic nerve in one leg, killed the mice 5 days later when SCs actively proliferate, and compared SC proliferation in intact and transected nerves of WT and iDKO mice (Figure 3A, n = 3 mice per genotype). We first confirmed efficient ablation of YAP/TAZ in SCs by analyzing contralateral, intact nerves of iDKO mice (Figure 3B and F). We excluded mice with poor deletion (i.e., exhibiting YAP/TAZ in >20% SCs) from further analysis. Notably, pulse labeling with EdU indicated that the transected nerves of WT and iDKO contained similar numbers of dividing SCs in S phase (Figure 3C and G). Numbers of Ki67+ proliferating SCs (Figure 3D and H) and of total SCs (Figure 3E and I) were also similar in the transected nerves of WT and iDKO.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/50138/elife-50138-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic showing timeline of tamoxifen injection, sciatic nerve transection and sacrifice of adult WT or Yap/Taz iDKO. (B) Longitudinal sections of intact sciatic nerves showing efficient deletion of YAP/TAZ in iDKO. SC nuclei are marked by Sox10 (red). All cell nuclei are marked by DAPI (blue). (C) Longitudinal sections of transected nerves of WT or iDKO showing SCs in S-phase of the cell cycle marked by EdU (green). (D) Longitudinal sections of transected nerves of WT or iDKO showing proliferating SCs marked by Ki67 (green). (E) Transverse sections of transected nerves of WT or iDKO showing SCs marked by Sox10 (red). (F) Quantification of SCs expressing nuclear YAP/TAZ in intact sciatic nerves of WT or iDKO. n = 3 mice per genotype, *p=0.0495, Mann-Whitney. (G) Quantification of EdU+ SCs in transected nerves of WT or iDKO. n = 3 mice per genotype, *p=0.0463, Mann-Whitney. (H) Quantification of Ki67+ proliferating SCs in transected nerves of WT or iDKO. n = 3 mice per genotype, ns, not significant, p=0.5127, Mann-Whitney. (I) Quantification of Sox10+ SCs in transected nerves of WT or iDKO. n = 3 mice per genotype. ns, not significant, p=0.8273, Mann-Whitney. Scale bars = 30 μm (B–E).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50138/elife-50138-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Schematic showing experimental procedures analyzing contralateral intact nerves of WT or iDKO at 12 dpi. (B) Longitudinal sections showing absence of EdU+ SCs in S-phase in intact nerves of iDKO, as in WT. Asterisks denote EdU+ cells that are not SCs, as indicated by their lack of Sox10. (C) Longitudinal sections of contralateral intact nerves, showing absence of apoptotic SCs identified by FITC-dUTP incorporation in iDKO, as in WT. (D) Transverse sections of intact nerves, showing similar numbers of SCs (marked by Sox10) in intact nerves of WT and iDKO at 12 dpi. All nuclei are marked by DAPI. (E) Quantification of SCs in intact nerves of WT or iDKO, showing no significant difference. n = 3 mice per genotype. ns, not significant, p=0.5127, Mann-Whitney. Scale bars = 50 μm (B–D).
+
 If adult SCs lacking YAP/TAZ in iDKO die or proliferate independently of axotomy, our analysis of injury-elicited SC proliferation might be confounded. To exclude this possibility, we examined contralateral, intact nerves of WT and iDKO mice at 12 dpi for SC proliferation and death (Figure 3—figure supplement 1A). Contralateral iDKO nerves contained neither EdU+ SCs (Figure 3—figure supplement 1B) nor apoptotic SCs, as assessed by TUNEL assays (Figure 3—figure supplement 1C). We also found that SC numbers did not differ significantly from those in intact nerves of WT mice (Figure 3—figure supplement 1D and E). Collectively, these results strongly indicate that YAP/TAZ do not regulate SC proliferation after nerve injury.
 
-## SCs lacking YAP/TAZ convert to repair SCs and support axon regeneration
+### SCs lacking YAP/TAZ convert to repair SCs and support axon regeneration
 
 Next, we investigated if transdifferentiation to repair SCs proceeds normally in iDKO nerves after injury. We first examined expression of c-Jun, phosphorylated c-Jun (pc-Jun), p75 and Oct-6, which are associated with formation of repair SCs during nerve regeneration (Scherer et al., 1994; Parkinson et al., 2008; Arthur-Farraj et al., 2012; Fontana et al., 2012). Repair SC formation principally depends on the upregulation of c-Jun, which promotes expression of regeneration-associated genes (RAG), such as p75 neurotrophin receptor (NTR) (Parkinson et al., 2008; Arthur-Farraj et al., 2012; Fontana et al., 2012). Immunohistochemical analysis of transected sciatic nerves at five dpi showed that cJun, pc-Jun, p75 NTR and Oct-6 were all upregulated in denervated SCs of iDKO mice after nerve injury, as in WT mice (Figure 4, Figure 4—figure supplement 1 and Figure 4—source data 3). Notably, injured nerves of WT and iDKO mice contained similar numbers of SCs expressing c-Jun (Figure 4A and E) and active pc-Jun (Figure 4B and F). There was minimal expression of c-Jun in contralateral, intact nerves of iDKO at five dpi (Figure 4—figure supplement 1). p75 NTR expression was also strongly upregulated in iDKO SCs, as in WT SCs (Figure 4C and G), and Oct-6 expression in WT and iDKO SCs did not differ (Figure 4D and H). Western blotting analysis confirmed upregulation of these proteins in injured nerves and validated the specificity of the antibodies used in the immunohistochemical analysis (Figure 4—figure supplement 1 and Figure 4—source data 3).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50138/elife-50138-fig4-v2.jpg)
+
+**Figure 4.:** Longitudinal sections of transected sciatic nerves of WT and Yap/Taz iDKO immunostained by various markers of growth-promoting repair SCs at five dpi. SCs are marked by Sox10 (red). (A) Representative sections showing upregulation of c-Jun in iDKO SCs, as in WT SCs. (B) Upregulation of active phospho-S63 c-Jun in iDKO SCs, as in WT. (C) Upregulation of p75 in iDKO SCs, as in WT SCs. (D) Upregulation of Oct-6 in iDKO SCs, as in WT SCs. (E) Quantification of c-Jun+ SCs in WT and iDKO. n = 3 mice per genotype. ns, not significant, p=0.1266, Mann-Whitney. (F) Quantification of pc-Jun+ SCs in WT and iDKO. n = 3 mice per genotype. *p=0.0495, Mann-Whitney. (G) Quantification of p75+ SCs in WT and iDKO. n = 3 mice per genotype. ns, not significant, p=0.5127, Mann-Whitney. (H) Quantification of Oct-6+ SCs in WT and iDKO. n = 3 mice per genotype. ns, not significant, p=0.8273, Mann-Whitney. Scale bars = 30 μm (A–D).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50138/elife-50138-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Western blots of lysates prepared from contralateral (intact) or distal crushed sciatic nerves of WT and iDKO adult mice five dpi. c-Jun, active pS63-c-Jun and p75 are strongly upregulated in iDKO, as in WT. Oct6 is strongly upregulated in WT and remains elevated before and after crush in iDKO. (B) Quantification of Western blots. ns = not significant, 2-way ANOVA. c-Jun: WT intact vs WT crushed, **p=0.0035; WT intact vs iDKO intact, p=0.9388; WT crushed vs iDKO, p>0.9999; iDKO intact vs iDKO crushed, **p=0.0045. pc-Jun: WT intact vs WT crushed, ***p=0.0009; WT intact vs iDKO intact, p=0.6737; WT crushed vs iDKO crushed, p=0.9962; iDKO intact vs iDKO crushed, **p=0.0015. p75: WT intact vs WT crushed, *p=0.0112; WT intact vs iDKO intact, p=0.9993; WT crushed vs iDKO crushed, p=0.5521; iDKO intact vs iDKO crushed, **p=0.0056. Oct6: WT intact vs WT crushed, *p=0.0139; WT intact vs iDKO intact, *p=0.0157; WT crushed vs iDKO crushed, p=0.2109; iDKO intact vs iDKO crushed, p=0.2541.
 
 SCs are essential for successful nerve regeneration (Scheib and Höke, 2013; Jessen and Mirsky, 2016). As the definitive test of whether iDKO SCs convert normally to repair SCs, we next examined if the absence of YAP/TAZ in SCs impairs nerve regeneration. Because Yap/Taz iDKO mice die ~14 days after tamoxifen treatment (Grove et al., 2017), we crushed sciatic nerves and analyzed them on 12–13 dpi. To minimize variability, we crushed nerves at the same site close to the sciatic notch and analyzed nerve segments immunohistochemically or ultrastructurally at the same distance distal to the injury (Figure 5A). An anti-β3 tubulin antibody, which identifies all axons, intensely labeled many axons that had regenerated through the ~10 mm long distal nerve stumps of iDKO mice (Figure 5B and D). These axons were as thick and numerous in iDKO as in WT nerves (Figure 5B and F, see also Figure 7—figure supplement 1). Similar numbers of axons were also present in contralateral intact nerves of WT and iDKO (Figure 7—figure supplement 1), indicating that there was no axon degeneration in intact nerves of iDKO at 12–13 dpi.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/50138/elife-50138-fig5-v2.jpg)
 
-**Figure 5.:** (A) Schematic showing relative locations and sizes of the distal nerve segments used for ultrastructural or light microscopic analysis of axon regeneration in WT or Yap/Taz iDKO, 12–13 days after nerve crush. (B) Low magnification views of longitudinal sections of ~5 mm long nerve segments distal to the crush site, showing regenerated axons in iDKO as abundant as in WT. Axons are marked by TuJ1. (C, D) High magnification views of boxed area in (B), ~8 mm distal to the crush site. (E) Low and high magnification views of TEM, taken at 5 mm distal to the crush site, showing numerous axons that regenerated within basal lamina tubes in iDKO, as in WT. ‘ax’ denotes an axon. Numerous axons are large (>1 μm) but unmyelinated in iDKO. Examples of single large myelinated axons in WT (E–a, E–b), single large unmyelinated axon in iDKO (E–c) and axon bundles containing a large unmyelinated axon in iDKO (E–d). (F) Quantification of the axon density in crushed nerves of WT and iDKO, n = 4 mice for WT and three mice for iDKO. ns, not significant, p=0.4715, Mann-Whitney. (G) Quantification of the percentage of BL tubes containing axons in crushed nerves of WT and iDKO, n = 4 mice for WT and three mice for iDKO. ns, not significant, p=0.7237, Mann-Whitney (H) Quantification of the percentage of BL tubes containing at least one axon >1 μm in diameter, in crushed nerves of WT and iDKO. n = 4 mice for WT and three mice for iDKO. ns, not significant, p=0.1573, Mann-Whitney. (I) Quantification of the percentage of BL tubes containing multiple axons, at least one of which is >1 μm in diameter, in crushed nerves of WT and iDKO. n = 4 mice for WT and three mice for iDKO. *p=0.0339, Mann-Whitney. Scale bars = 500 μm (B), 100 μm (C, D), 2 μm (E).Figure 5—source data 1.This zip archive contains the TEM images for one WT and one iDKO used for quantitative analysis shown in Figure 5G–I. Images were taken using a JEOL 1010 electron microscope fitted with a Hamamatsu digital camera and AMT Advantage image capture software. Contrast of the images was adjusted using Photoshop software. The images in this archive were also used for the analysis in Figure 7.Figure 5—source data 2.This zip archive contains the raw data for WT and iDKO used for the quantitative analysis shown in Figure 5F, G, H and I. The data are contained in both a text document and an Excel file, both labeled as Mann Whitney data. These files also contain data for Figure 3—figure supplement 1, Figures 3, 4, 6, 7, 8A, Figure 8—figure supplement 1A.
+**Figure 5.:** (A) Schematic showing relative locations and sizes of the distal nerve segments used for ultrastructural or light microscopic analysis of axon regeneration in WT or Yap/Taz iDKO, 12–13 days after nerve crush. (B) Low magnification views of longitudinal sections of ~5 mm long nerve segments distal to the crush site, showing regenerated axons in iDKO as abundant as in WT. Axons are marked by TuJ1. (C, D) High magnification views of boxed area in (B), ~8 mm distal to the crush site. (E) Low and high magnification views of TEM, taken at 5 mm distal to the crush site, showing numerous axons that regenerated within basal lamina tubes in iDKO, as in WT. ‘ax’ denotes an axon. Numerous axons are large (>1 μm) but unmyelinated in iDKO. Examples of single large myelinated axons in WT (E–a, E–b), single large unmyelinated axon in iDKO (E–c) and axon bundles containing a large unmyelinated axon in iDKO (E–d). (F) Quantification of the axon density in crushed nerves of WT and iDKO, n = 4 mice for WT and three mice for iDKO. ns, not significant, p=0.4715, Mann-Whitney. (G) Quantification of the percentage of BL tubes containing axons in crushed nerves of WT and iDKO, n = 4 mice for WT and three mice for iDKO. ns, not significant, p=0.7237, Mann-Whitney (H) Quantification of the percentage of BL tubes containing at least one axon >1 μm in diameter, in crushed nerves of WT and iDKO. n = 4 mice for WT and three mice for iDKO. ns, not significant, p=0.1573, Mann-Whitney. (I) Quantification of the percentage of BL tubes containing multiple axons, at least one of which is >1 μm in diameter, in crushed nerves of WT and iDKO. n = 4 mice for WT and three mice for iDKO. *p=0.0339, Mann-Whitney. Scale bars = 500 μm (B), 100 μm (C, D), 2 μm (E).
 
 To confirm these findings, we examined transverse nerve segments 5 mm distal to the injury by TEM (Transmission Electron Microscopy). In this ultrastructural analysis, we took advantage of the fact that regenerating axons extend through the basal lamina (BL) tubes that surround SCs and their processes (Scheib and Höke, 2013; Jessen and Mirsky, 2016). We found that the percentage of BL tubes containing axons (single or multiple) was similar in WT and iDKO nerves (Figure 5E and G). Furthermore, the percentage of BL tubes containing axons large enough to be myelinated (i.e.,>1 μm) did not differ (Figure 5H). However, the large axons in iDKO nerves were more frequently accompanied by one or multiple, often thin, axons, which presumably represent transient collateral sprouts (Figure 5E–d and I).
 
@@ -67,29 +91,45 @@ Next, we examined iDKO nerves at an earlier time point after injury to investiga
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/50138/elife-50138-fig6-v2.jpg)
 
-**Figure 6.:** (A) Schematic showing relative locations of crushed site, axon quantification and sizes of the distal nerve segments used for light microscopic analysis of axon regeneration in WT or Yap/Taz iDKO, 3 days after nerve crush. (B) Low magnification views of longitudinal sections, showing abundant axon regeneration in both WT and iDKO. Regenerating axons are marked by SCG10. (C, D) High magnification views of boxed areas in (B), showing numerous thin regenerating axons. (E) Quantification of the axon density measured at 2 mm distal to the crushed site. n = 3 mice per genotype. ns, not significant, p=0.2752, Mann-Whitney. (F) Quantification of the distance regenerated by the longest axon. n = 3 mice per genotype. ns, not significant, p=0.8273, Mann-Whitney. Scale bars = 1 mm (B), 100 μm (C, D).Figure 6—source data 1.This zip archive contains the raw data for WT and iDKO used for the quantitative analysis shown in Figure 6E and F. The data are contained in both a text document and an Excel file, both labeled as Mann Whitney data. These files also contain data for Figure 3—figure supplement 1, Figures 3, 4, 5, 7, 8A, Figure 8—figure supplement 1E.
+**Figure 6.:** (A) Schematic showing relative locations of crushed site, axon quantification and sizes of the distal nerve segments used for light microscopic analysis of axon regeneration in WT or Yap/Taz iDKO, 3 days after nerve crush. (B) Low magnification views of longitudinal sections, showing abundant axon regeneration in both WT and iDKO. Regenerating axons are marked by SCG10. (C, D) High magnification views of boxed areas in (B), showing numerous thin regenerating axons. (E) Quantification of the axon density measured at 2 mm distal to the crushed site. n = 3 mice per genotype. ns, not significant, p=0.2752, Mann-Whitney. (F) Quantification of the distance regenerated by the longest axon. n = 3 mice per genotype. ns, not significant, p=0.8273, Mann-Whitney. Scale bars = 1 mm (B), 100 μm (C, D).
 
-## YAP/TAZ are required for Schwann cells to remyelinate axons
+### YAP/TAZ are required for Schwann cells to remyelinate axons
 
 We have previously reported that developing SCs lacking YAP/TAZ arrest as promyelinating SCs, and are therefore unable to initiate myelin formation (Grove et al., 2017). To determine if adult SCs lacking YAP/TAZ can myelinate regenerating axons, we next analyzed the extent of myelination in the same iDKO nerves analyzed for axon regeneration on 12–13 dpi (Figure 7A shows the same nerves as Figure 5B). As expected, there was strong expression of myelin basic protein (MBP), a major structural component of the myelin sheath, in the crushed nerves of WT mice (Figure 7A and B). MBP immunoreactivity was also abundant in the contralateral, intact nerves of iDKO mice (Figure 7A; bottom panel), in which our previous ultrastructural analysis found segmental demyelination (Grove et al., 2017). In contrast, iDKO crushed nerves revealed remarkably little, if any, MBP immunoreactivity (Figure 7A and C, see also Figure 7—figure supplement 1 for higher magnification images). Consistent with this immunohistochemical analysis, semithin (Figure 7D) and ultrathin sections processed for EM (Figures 5E and 7E) contained many myelinated axons in WT but almost none in iDKO crushed nerves (Figure 7F and G). Moreover, iDKO SCs frequently surrounded and established a 1:1 relationship with large axons, but none of these axons exhibited a myelin sheath (Figures 5E and 7E). These findings suggest that adult SCs lacking YAP/TAZ fail to remyelinate axons because they arrest at the promyelinating stage after injury.
 
-## YAP and TAZ are functionally redundant and required for optimal remyelination
+![Figure 7.](https://cdn.elifesciences.org/articles/50138/elife-50138-fig7-v2.jpg)
+
+**Figure 7.:** Ultrastructural and light microscopic analyses of remyelination in distal nerves of WT or Yap/Taz iDKO, 12–13 days after nerve crush. (A) Low magnification views of longitudinal sections of intact or crushed nerves of WT and iDKO, showing no myelination of regenerated axons in crushed nerves of iDKO as indicated by the lack of MBP immunostaining. Refer to Figure 5B for robustly regenerated axons in the same iDKO mouse. (B, C) High magnification views of boxed area in (A), showing abundant regenerated axons in crushed nerves of both WT (B) and iDKO (C). Note that regenerated axons in iDKO are not myelinated. Axons and myelin are marked by TuJ1 and MBP, respectively. (D) Semi-thin sections stained with toluidine blue showing numerous myelinated axons in crushed nerves of WT but not in iDKO. (E) TEM images of representative single large axons, myelinated in WT (left panel) but unmyelinated in iDKO (right panel). (F) Quantification of the percentage of single axons that are myelinated. n = 4 mice for WT and three mice for iDKO. *p=0.0323, Mann-Whitney. (G) G-ratio in WT and iDKO. Myelinated axons in WT are compared to unmyelinated single axons in iDKO. n = 3 mice per genotype. *p=0.0495 Mann-Whitney. Scale bars = 500 μm (A), 100 μm (B, C), 10 μm (D), 2 μm (E).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/50138/elife-50138-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** High magnification views of longitudinal sections of intact or crushed nerves of WT and iDKO, 12–13 days after nerve crush. Axons and myelin are marked by TuJ1 (green) and MBP (red), respectively. Numerous axons regenerated in crushed nerves of iDKO, as in WT, but they are unmyelinated. Myelin remains ample, as indicated by abundant MBP, in contralateral intact nerves of iDKO at 12–13 dpi. Scale bar = 50 μm.
+
+### YAP and TAZ are functionally redundant and required for optimal remyelination
 
 Mindos et al., 2017 recently reported that expression of YAP, assessed by Western blotting, selectively increases after nerve injury in mutant nerves lacking Merlin in SCs, but not in WT nerves, whereas TAZ increases in both WT and mutant nerves. They also reported that elevated YAP levels prevent axon regeneration and remyelination, and that inactivation of YAP alone is sufficient to restore full functional recovery of the Merlin mutants (Mindos et al., 2017). These observations suggest that the function of TAZ in adult SCs may differ from that of YAP. We next examined axon regeneration and remyelination when SCs express YAP but not TAZ after injury. We reasoned that, if YAP prevents regeneration, regardless of expression levels (see Discussion), and if it differs functionally from TAZ, then we would find axon regeneration and remyelination to be poor.
 
 Using a TAZ-selective tamoxifen inducible line to inactivate TAZ in SCs (Plp1-creERT2; Yap+/+; Tazfl/fl, hereafter Taz iKO), we crushed sciatic nerves unilaterally and compared the mutants to WT and Yap/Taz iDKO mice at 12 dpi. We first confirmed efficient ablation of TAZ and no compensatory elevation of YAP levels in Taz iKO (Figure 8A, Figure 8—source data 4). We then used anti-β3 tubulin antibody to assess axon regeneration up to 15 mm distal to the crushed site (Figure 8—figure supplement 1A,B). We found that regenerating axons were as thick and numerous in Taz iKO, as in WT mice (Figure 8—figure supplement 1C,D). Axon density measured at 8 ~ 10 mm distal to the crush site showed no significant difference among WT, Taz iKO and Yap/Taz iDKO nerves (Figure 8B, Figure 8—figure supplement 1E).
 
+![Figure 8.](https://cdn.elifesciences.org/articles/50138/elife-50138-fig8-v2.jpg)
+
+**Figure 8.:** (A) Western blotting of intact sciatic nerve lysates, showing markedly reduced TAZ in Taz iKO, whereas YAP levels remain relatively unchanged. YAP band is tighter and faster migrating in Taz iKO, than in WT, indicative of reduced phosphorylation. Quantification of Yap and Taz in WT and Taz iKO, n = 3 mice per genotype. YAP: ns, not significant, p=0.2752, Mann-Whitney. TAZ: *p=0.0495, Mann-Whitney. (B) Quantification of axon density in WT, Yap/Taz iDKO and Taz iKO nerves at 12 dpi, 8–10 mm distal to crush site (also see Figure 5B,F and Figure 8—figure supplement 1B, (E). n = 4 mice for WT, three mice for iDKO and Taz iKO: WT vs iDKO, p=0.72; WT vs iKO, p=0.41; iDKO vs iKO, p=0.18, all not significant, one-way ANOVA with Tukey’s multiple comparison test. (C–G) Comparative analysis of axon regeneration and remyelination in WT and Taz iKO, 12–13 days after nerve crush. (C) Representative TEM images of WT and Taz iKO nerves, taken at 5 mm distal to the crush site, showing numerous axons that regenerated within basal lamina tubes in Taz iKO, as in WT. ‘ax’ denotes a single axon. Some large axons are myelinated in Taz iKO. (D) Quantification of the percentage of BL tubes containing axons of any diameter in WT, Taz iKO and Yap/Taz iDKO nerves. n = 4 mice for WT, three mice for iDKO and two mice for Taz iKO: WT vs. iDKO, p=0.99; WT vs. iKO, p=0.90; iDKO vs. Taz iKO, p=0.92, all not significant, one-way ANOVA with Tukey’s multiple comparison test. (E) Quantification of the percentage of BL tubes containing at least one axon larger than 1 μm in diameter in WT, Taz iKO and Yap/Taz iDKO nerves. n = 4 mice for WT, three mice for iDKO and two mice for Taz iKO: WT vs. iDKO, p=0.73; WT vs. iKO, p=0.22; iDKO vs. iKO, p=0.52, all not significant, one-way ANOVA with Tukey’s multiple comparison test. (F) Quantification of the percentage of single axons that are remyelinated in WT, Taz iKO and Yap/Taz iDKO nerves. n = 4 mice for WT, three mice for iDKO and two mice for Taz iKO: WT vs. iDKO, ****p<0.0001; WT vs. iKO, **p=0.0094; iDKO vs. Taz iKO, **p=0.0016, one-way ANOVA with Tukey’s multiple comparison test. (G) G-ratios of remyelinated axons in WT and Taz iKO nerves, compared to unmyelinated axons in Yap/Taz iDKO nerve. WT and Taz iKO remyelinated axons have equivalent G-ratios. n = 6 mice for WT, three mice for iDKO and two mice for iKO: WT vs. iDKO, ****p<0.0001; WT vs. iKO, not significant, p=0.074; iDKO vs. iKO, ***p=0.0008, one-way ANOVA with Tukey’s multiple comparison test. Scale bar = 2 μm (C).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/50138/elife-50138-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Schematic showing relative locations and sizes of the distal nerve segments used for light microscopic and TEM analysis of axon regeneration in WT or Taz iDKO, 12 days after nerve crush. (B) Low magnification views of longitudinal nerve sections beginning 5 mm distal to the crush site, showing regenerated axons in iKO as abundant as in WT. Axons are marked by TuJ1. (C, D) High magnification views of boxed areas in (B). Scale bars = 1 mm (B) and 100 μm (C, D). (E) Quantification of axon density measured at ~10 mm distal to the crush site. n = 3 mice per genotype. ns, not significant, p=0.2118, Mann-Whitney.
+
 Ultrastructural analysis of nerve segments at 5 mm distal to the injury revealed many BL tubes containing single or multiple axons in Taz iKO, as in WT (Figure 8C). These axon-containing BL tubes were as numerous in iKO as in WT and iDKO (Figure 8D). Counts of BL tubes containing axons large enough to be myelinated also did not differ (Figure 8E). Taken together, these results show that axons regenerated as robustly in Taz iKO as in WT and iDKO nerves, indicating that SCs expressing only YAP supported axon regeneration.
 
 We also found that, whereas iDKO nerves contained no myelinated axons (e.g., Figure 7D), myelinated axons were frequent in Taz iKO nerves (Figure 8C and F), and G-ratios did not differ in Taz iKO and WT (Figure 8G), demonstrating that SCs expressing only YAP were capable of myelinating regenerated axons. Notably, however, a significantly smaller percentage of single axons were myelinated in Taz iKO than in WT (Figure 8F), indicating that remyelination is less advanced in Taz iKO nerves whose SCs express only YAP. Taken together, these results show that YAP, at normal levels (see Discussion), does not prevent axon regeneration or remyelination after injury, and that both YAP and TAZ are required for optimal remyelination.
 
-## Redifferentiation of Schwann cells lacking YAP/TAZ
+### Redifferentiation of Schwann cells lacking YAP/TAZ
 
 Following axon regeneration, denervated SCs that have regained axon contacts downregulate dedifferentiation-associated genes while upregulating genes promoting their differentiation (Stassart et al., 2013; Quintes et al., 2016; Wu et al., 2016). It is possible that YAP/TAZ-deficient iDKO SCs fail to myelinate regenerated axons because their capacity to carry out one or both processes is defective. To test if iDKO SCs correctly downregulate dedifferentiation-associated genes, we compared expression of c-Jun, Ki67 and Oct-6 by WT and iDKO SCs at 5 and 12 dpi after crush. The number of c-Jun+ SCs was markedly, but similarly, reduced in nerves of both WT and iDKO at 12 dpi (Figure 9A,E), and proliferating SCs were rare (Figure 9B,F). Oct-6 expression was also reduced in both WT and iDKO (Figure 9C,G), although it remained statistically higher in iDKO SCs. These results suggest that iDKO SCs are capable of downregulating dedifferentiation genes and withdraw gradually from dedifferentiation as like WT SCs.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/50138/elife-50138-fig9-v2.jpg)
 
-**Figure 9.:** Longitudinal sections of crushed nerves of WT and Yap/Taz iDKO at 12 dpi, immunostained by various markers of SC dedifferentiation (c-Jun and Oct-6), proliferation (Ki67) and redifferentiation (Krox20). SCs are marked by Sox10. (A) Representative sections showing c-Jun+ SCs markedly reduced in iDKO, as in WT. (B) Representative sections showing rarely observed Ki67+ proliferating SCs in iDKO, as in WT. (C) Representative sections showing Oct-6+ SCs reduced in iDKO, as in WT. (D) Representative sections showing failed upregulation of Krox20 in iDKO SCs. (E) Quantitative comparison of c-Jun+ SCs at 5 and 12 dpi, showing similar downregulation of c-Jun in WT and iDKO SC. n = 3 mice per genotype, 2-way ANOVA, ns = not significant. WT five dpi vs WT 12 dpi, **p=0.0069; WT five dpi vs iDKO five dpi, p=0.4260; WT 12 dpi vs iDKO 12 dpi, p=0.9574; iDKO five dpi vs iDKO 12 dpi, **p=0.0018. (F) Quantitative comparison of Ki67+ SCs, showing similar reduction in proliferating SCs in WT and iDKO nerves between 5 dpi and 12 dpi. n = 3 mice per genotype, 2-way ANOVA, ns = not significant. WT five dpi vs WT 12 dpi, ****p<0.0001; WT five dpi vs iDKO five dpi, p>0.9999; WT 12 dpi vs iDKO 12 dpi, p=0.6775; iDKO five dpi vs iDKO 12 dpi, ****p<0.0001. (G) Quantitative comparison of Oct-6+ SCs, showing significant downregulation of Oct-6 in WT and iDKO SCs between 5 dpi and 12 dpi. n = 3 mice per genotype, ns = not significant, 2-way ANOVA. WT five dpi vs WT 12 dpi, ***p=0.0005; WT five dpi vs iDKO five dpi, p=0.9817; WT 12 dpi vs iDKO 12 dpi, *p=0.0221; iDKO five dpi vs iDKO 12 dpi, *p=0.0299. (H) Quantitative comparison of Krox20+ SCs, showing upregulation of Krox20 in WT SCs, but not in iDKO SCs between 5 dpi and 12 dpi. n = 3 mice per genotype, 2-way ANOVA, ns = not significant. WT five dpi vs WT 12 dpi, ****p<0.0001; WT five dpi vs iDKO five dpi, p>0.9999; WT 12 dpi vs iDKO 12 dpi, ****p<0.0001; iDKO five dpi vs iDKO 12 dpi, p>0.9999. Scale bar = 10 μm (A–D).Figure 9—source data 1.+ SC data.This zip archive contains the IHC for one WT and one iDKO used for quantitative analysis shown in Figure 9E. Leica SP8 confocal lif images were processed using Imaris software and saved as tiffs.Figure 9—source data 2.This zip archive contains the raw data for WT and iDKO used for the quantitative analysis shown in Figure 9E, F, G and H. The data are contained in GraphPad Prism files, as indicated.
+**Figure 9.:** Longitudinal sections of crushed nerves of WT and Yap/Taz iDKO at 12 dpi, immunostained by various markers of SC dedifferentiation (c-Jun and Oct-6), proliferation (Ki67) and redifferentiation (Krox20). SCs are marked by Sox10. (A) Representative sections showing c-Jun+ SCs markedly reduced in iDKO, as in WT. (B) Representative sections showing rarely observed Ki67+ proliferating SCs in iDKO, as in WT. (C) Representative sections showing Oct-6+ SCs reduced in iDKO, as in WT. (D) Representative sections showing failed upregulation of Krox20 in iDKO SCs. (E) Quantitative comparison of c-Jun+ SCs at 5 and 12 dpi, showing similar downregulation of c-Jun in WT and iDKO SC. n = 3 mice per genotype, 2-way ANOVA, ns = not significant. WT five dpi vs WT 12 dpi, **p=0.0069; WT five dpi vs iDKO five dpi, p=0.4260; WT 12 dpi vs iDKO 12 dpi, p=0.9574; iDKO five dpi vs iDKO 12 dpi, **p=0.0018. (F) Quantitative comparison of Ki67+ SCs, showing similar reduction in proliferating SCs in WT and iDKO nerves between 5 dpi and 12 dpi. n = 3 mice per genotype, 2-way ANOVA, ns = not significant. WT five dpi vs WT 12 dpi, ****p<0.0001; WT five dpi vs iDKO five dpi, p>0.9999; WT 12 dpi vs iDKO 12 dpi, p=0.6775; iDKO five dpi vs iDKO 12 dpi, ****p<0.0001. (G) Quantitative comparison of Oct-6+ SCs, showing significant downregulation of Oct-6 in WT and iDKO SCs between 5 dpi and 12 dpi. n = 3 mice per genotype, ns = not significant, 2-way ANOVA. WT five dpi vs WT 12 dpi, ***p=0.0005; WT five dpi vs iDKO five dpi, p=0.9817; WT 12 dpi vs iDKO 12 dpi, *p=0.0221; iDKO five dpi vs iDKO 12 dpi, *p=0.0299. (H) Quantitative comparison of Krox20+ SCs, showing upregulation of Krox20 in WT SCs, but not in iDKO SCs between 5 dpi and 12 dpi. n = 3 mice per genotype, 2-way ANOVA, ns = not significant. WT five dpi vs WT 12 dpi, ****p<0.0001; WT five dpi vs iDKO five dpi, p>0.9999; WT 12 dpi vs iDKO 12 dpi, ****p<0.0001; iDKO five dpi vs iDKO 12 dpi, p>0.9999. Scale bar = 10 μm (A–D).
 
 Lastly, we examined expression of Krox 20 (also known as Egr2), the master transcription factor that drives myelin gene expression (Topilko et al., 1994; Decker et al., 2006). Notably, whereas WT SCs upregulated Krox 20 expression at 12 dpi, concomitant with remyelination, few if any iDKO SCs exhibited Krox 20 immunoreactivity (Figure 9D,H). These results suggest that iDKO SCs fail to myelinate regenerated axons at least in part due to failure to upregulate Krox 20.
 
@@ -113,32 +153,322 @@ The present study, together with earlier work, strongly suggests that the levels
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57Bl/6</td>
+      <td>Jackson Laboratory</td>
+      <td>Stock #: 000664; RRID:IMSR JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Plp1-Cre-ERT2</td>
+      <td></td>
+      <td>MGI:2663093</td>
+      <td>(Leone et al., 2003)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Yap/Taz (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>D24E4, #8418 RRID:AB_10950494</td>
+      <td>IHC 1:200 Western 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SCG10 (rabbit monoclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>NBP1-49461 RRID:AB_10011569</td>
+      <td>IHC 1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Yap (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>D8H1X, #14074 RRID:AB_2650491</td>
+      <td>IHC 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Sox10 (goat polyclonal)</td>
+      <td>R and D Systems</td>
+      <td>#AF-2864 RRID:AB_442208</td>
+      <td>IHC 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Sox10 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>EPR4007, #ab155279 RRID:AB_2650603</td>
+      <td>IHC 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Egr2 (rabbit polyclonal)</td>
+      <td>Professor Dies Meijer, University of Edinburgh</td>
+      <td></td>
+      <td>IHC 1:4000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Oct6 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>EP5421, #ab126746 RRID:AB_11130256</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Oct6 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>#ab31766 RRID:AB_776899</td>
+      <td>IHC 1:800</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-c-Jun (mouse monoclonal)</td>
+      <td>BD Transduction Laboratories</td>
+      <td>#610326 RRID:AB_397716</td>
+      <td>IHC 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-c-Jun (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>60A8, #9165 RRID:AB_2130165</td>
+      <td>WB 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-pS63-c-Jun (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>#9261 RRID:AB_2130162</td>
+      <td>IHC 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ki67 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>#ab15580 RRID:AB_443209</td>
+      <td>IHC 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-p75NGFR (goat polyclonal)</td>
+      <td>Neuromics</td>
+      <td>#GT15057 RRID:AB_2737189</td>
+      <td>IHC 1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Tubulin β3 (rabbit polyclonal)</td>
+      <td>Biolegend</td>
+      <td>#802001 RRID:AB_2564645</td>
+      <td>IHC 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IRDye-680 (goat anti-mouse)</td>
+      <td>LI-COR</td>
+      <td>#926–32220 RRID:AB_621840</td>
+      <td>WB 1:15,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-Goat anti-mouse secondary antibody</td>
+      <td>Jackson Immunoresearch</td>
+      <td>#715-035-150 RRID:AB_2340770</td>
+      <td>WB 1:12,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-Goat anti-rabbit secondary antibody</td>
+      <td>Jackson Immunoresearch</td>
+      <td>#115-055-062 RRID:AB_2338533</td>
+      <td>WB 1:12,000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Araldite 6005</td>
+      <td>EMS</td>
+      <td>#10920</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DDSA</td>
+      <td>EMS</td>
+      <td>#13710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DBP</td>
+      <td>EMS</td>
+      <td>#13101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BDMA</td>
+      <td>EMS</td>
+      <td>#11400–25</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Coated grids (100 mesh)</td>
+      <td>EMS</td>
+      <td>#FF100-Cu</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Osmium tetroxide (4% solution)</td>
+      <td>EMS</td>
+      <td>#19170</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lead nitrate</td>
+      <td>EMS</td>
+      <td>#17900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium citrate</td>
+      <td>EMS</td>
+      <td>#21140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Uranyl acetate</td>
+      <td>EMS</td>
+      <td>#22400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium borate</td>
+      <td>EMS</td>
+      <td>#21130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Toluidine blue</td>
+      <td>EMS</td>
+      <td>#22050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Sigma-Aldrich</td>
+      <td>#158127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-It EdU Alexa Fluor 594 kit</td>
+      <td>ThermoFisher Scientific</td>
+      <td>#C10339</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EdU</td>
+      <td>ThermoFisher Scientific</td>
+      <td>#E10187</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Sigma-Aldrich</td>
+      <td>#T5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>#D1306</td>
+      <td>IHC 1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488, 568 or 647 secondaries</td>
+      <td>Jackson Immunoresearch</td>
+      <td></td>
+      <td>IHC 1:250 to 1:1000</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image Studio Lite</td>
+      <td>LI-COR, Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad Software, Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Stata</td>
+      <td>StataCorp LP</td>
+      <td></td>
+      <td>Mann-Whitney test</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All surgical procedures and animal maintenance complied with the National Institute of Health guidelines regarding the care and use of experimental animals and were approved by the Institutional Animal Care and Use Committee of Temple University, Philadelphia, PA, USA (Protocol 4920). Both male and female mice were used in all experiments, and were maintained on the C57BL/6 background. Plp1-creERT2; Yapfl/fl; Tazfl/fl, Plp1-creERT2; Yap+/+; Tazfl/fl, Mpz-cre;Yapfl/fl and Mpz-cre; Tazfl/fl mice used in this study were generated and genotyped as described previously (Grove et al., 2017). C57BL/6 mice were used for immunohistochemical analysis of YAP/TAZ.
 
-## Tamoxifen administration
+### Tamoxifen administration
 
 Tamoxifen was injected into 6–8 week old Yap/Taz iDKO or Taz iKO mice as previously described (Grove and Brophy, 2014). A 10 mg/ml solution of tamoxifen was made in 10:1 sunflower oil: 100% ethanol. This solution was injected intraperoneally at a concentration of 0.2 mg/g body weight. Injection was once daily for 5 days, followed by a 2 day break, then once daily for 5 consecutive days.
 
-## Nerve crush or transection
+### Nerve crush or transection
 
 Sciatic nerves of right hindlimbs were crushed or transected 24 hr after the final tamoxifen injection, using standard protocols (Son and Thompson, 1995). Briefly, a small skin incision was made in the posterior thigh and calf of the animals anesthetized by isoflurane. For crush, the sciatic nerve was crushed with a fine forceps (#5) for 10 s (3X) adjacent to the sciatic notch. The crush site was marked using charcoal-coated forceps, and the wound was closed. For transection, the exposed sciatic nerve was ligated at two directly adjacent sites, then cut with iridectomy scissors between the ligated sites. Ligated proximal and distal nerve endings were then sewn to adjacent muscle to prevent regeneration of axons from the proximal to distal nerve stumps. To identify proliferating Schwann cells, we intraperitoneally injected EdU (80 μg/g) eighty minutes before killing mice, as previously described (Grove et al., 2017).
 
-## Western blotting
+### Western blotting
 
 Mice were perfused with PBS, sciatic nerves removed, and epineurium and perineurium carefully stripped from the nerves. Western blotting followed the same procedure described previously (Grove et al., 2017), except for IRDye 680RD goat anti-mouse IgG (LiCor #926–68070; 1:5,000). Image Studio Lite (LI-COR Biosciences) was used for quantifying protein expression.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Sciatic nerves were removed, and immediately fixed in 4% paraformaldehyde in PBS for 1 hr on ice. Nerves were washed 3 times in PBS, then stored in 15% sucrose in PBS overnight at 4°C for cryoprotection. Nerves were frozen-embedded in cryoprotectant medium (Thermo Fisher Scientific, Waltham, MA) in isomethylbutane at −80°C. 7–10 μm sections from the nerves were cut using a cryostat (Leica Microsystems, Germany) and collected directly onto glass slides. For immunolabeling, nerve sections were rehydrated in PBS, permeabilized in 0.5% Triton/PBS for 20 min, washed with PBS, then blocked in 2% bovine serum albumin (BSA) in PBS for 1 hr. Sections were incubated with primary antibodies in blocking buffer overnight at 4°C in a hydrated chamber, washed with PBS, and incubated with secondary antibodies in blocking buffer for 2 hr at room temperature. Sections were washed with PBS, stained with DAPI for 10 min, and mounted with Vectashield mounting medium (Vector Labs, Burlingame, CA). Nerve sections were incubated with antibodies previously described (Grove et al., 2017), except for the following: rabbit anti-Krox20 (kind gift from Professor Dies Meijer, Edinburgh, UK; 1:4000), rabbit anti-Yap (Cell Signaling #14074; 1:200), rabbit anti-SCG10 (Novus Biologicals #49461; 1:5000), goat anti-Sox10 (Santa Cruz #sc-17342; 1:200), goat anti-Sox10 (R and D Systems #AF-2864; 1:100), goat anti-p75 (Neuromics #GT15057; 1:400), rabbit anti-Ki67 (Abcam #ab15580; 1:1000), mouse anti-Tubulin β3 (clone Tuj1, Covance #MMS-435P; 1:1000), mouse anti-cJun (BD Biosciences #610326; 1:500), rabbit anti-cJun (CST #9165; 1:500), rabbit anti-phospho-cJun (CST #9261; 1:100).
 
-## Electron microscopy, histology and morphometry
+### Electron microscopy, histology and morphometry
 
 Sciatic nerves were removed and immediately fixed in EM buffer, as previously described (Grove et al., 2017). After nerve crush or transection, a 5 mm piece of the nerve was taken immediately distal to the injury site. The proximal end of the section was nicked with a razor blade for orientation during embedding. Fixation was for 2 hr at room temperature, followed by overnight at 4°C, with rotation. Post-fixation processing, embedding, cutting, staining and image capture were as previously described. For crushed or transected nerves, 500 nm semi-thin and 70 nm ultra-thin transverse sections were cut from the segment 5 mm distal to the crush/transection site.
 
 For analysis of axon regeneration and remyelination, 7500x TEM sections were examined. This magnification allowed unambiguous identification of basal lamina tubes through which axons regenerate. Multiple non-overlapping images were taken for each section, such that all regions of each section were sampled. Image J was used for image analysis. After counting the total number of basal lamina (BL) tubes per image, we next counted the number of BL tubes in the following categories: contains no axon(s); contains axon(s); contains at least one axon >1 μm in diameter; contains a single axon >1 μm in diameter; contains a myelinated axon. This procedure enabled us to calculate the percentage of BL tubes in each category. Using an ImageJ G-ratio calculator plug-in, G ratios for each genotype were calculated in two different ways: (1) All single large axons were counted, whether or not they were myelinated; (2) Only myelinated axons were counted.
 
-## Data analysis
+### Data analysis
 
 In each experiment, data collection and analysis were performed identically, regardless of mouse genotype. Data are presented as mean + / - SD. Statistical analysis was done using the two-sample Mann-Whitney test for two-group comparisons and analysis of variance (ANOVA) with Tukey’s test for multiple comparisons, according to the number of samples and the analysis of mice at multiple ages. Sample sizes were similar to those employed in the field and are indicated in the main text, methods or figure legends. A p-value of 0.05 or less was considered statistically significant.

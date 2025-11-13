@@ -38,7 +38,7 @@ For these reasons, we have developed brainrender: an open-source python package 
 
 ## Results
 
-## Design principles and implementation
+### Design principles and implementation
 
 A core design goal for brainrender was to generate a visualization software compatible with any reference atlas, thus providing a generic and flexible tool (Figure 1A). To achieve this goal, brainrender has been developed as part of the BrainGlobe’s computational neuroanatomy software suite. In particular, we integrated brainrender directly with BrainGlobe’s AtlasAPI (Claudi et al., 2020). The AtlasAPI can download and access atlas data from several supported atlases in an unified format. Brainrender uses the AtlasAPI to access 3D mesh data from individual brain regions as well as metadata about the hierarchical organization of the brain’s structures (Figure 1B). Thus, the same programming interface can be used to access data from any atlas (see code examples in Figure 2), including recently developed ones (e.g. the enhanced and unified mouse brain atlas, Chon et al., 2019).
 
@@ -56,9 +56,398 @@ One of the goals of brainrender is to facilitate the creation of high-resolution
 
 High-resolution renderings of rich 3D scenes can be produced rapidly (e.g. 10,000 cells in less than 2 s) in standard laptop or desktop configurations. Benchmarking tests across different operating systems and machine configurations show that using a GPU can increase the framerate of interactive renderings by a factor of 3.5 (see Tables 1 and 2 in Materials and methods). This performance increase, however, depends on the complexity of the pre-processing steps, such as data loading and mesh generation, which run on the CPU. As one the main goals of brainrender is to produce high-resolution visualizations, we have made the rendering quality independent of hardware configuration, which only affects the rendering time. Animated videos and online visualizations can be produced with a few lines of code in brainrender. Several options are provided for easily customizing the appearance of rendered objects, thus enabling high-quality, rich data visualizations that combine multiple data sources.
 
+**Table 1.**
+ Machine configurations used for benchmark tests.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>N</th>
+      <th>OS</th>
+      <th>CPU</th>
+      <th>GPU</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Macos Mojave 10.14.6</td>
+      <td>2.3 ghz Intel Core i9</td>
+      <td>Radeon Pro 560 × 4 GB GPU</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>Ubuntu 18.04.2 LTS x86 64</td>
+      <td>Intel i7-8565U (x) @ 4.5 ghz</td>
+      <td>NO GPU</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>Windows 10</td>
+      <td>Intel(R) Core i7-7700HQ 2.8 ghz</td>
+      <td>NO GPU</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Windows 10</td>
+      <td>Intel(R) Xeon(R) CPU E5-2643 v3 3.4 ghz</td>
+      <td>NVIDIA geforce GTX 1080 Ti</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Benchmark tests results.The number of actors refers to the total number of elements rendered, and the number of vertices refers to the total number of mesh vertices in the rendering.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Test</th>
+      <th>Machine</th>
+      <th>GPU</th>
+      <th># actors</th>
+      <th># vertices</th>
+      <th>FPS</th>
+      <th>Run duration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>10 k cells</td>
+      <td>1</td>
+      <td>Yes</td>
+      <td>3</td>
+      <td>1,029,324</td>
+      <td>24.76</td>
+      <td>0.81</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>No</td>
+      <td>3</td>
+      <td>1,029,324</td>
+      <td>22.46</td>
+      <td>1.16</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>No</td>
+      <td>3</td>
+      <td>1,029,324</td>
+      <td>20.00</td>
+      <td>1.41</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>Yes</td>
+      <td>3</td>
+      <td>1,029,324</td>
+      <td>100.00</td>
+      <td>1.34</td>
+    </tr>
+    <tr>
+      <td>100 k cells</td>
+      <td>1</td>
+      <td>Yes</td>
+      <td>3</td>
+      <td>9,849,324</td>
+      <td>18.87</td>
+      <td>3.23</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>No</td>
+      <td>3</td>
+      <td>9,849,324</td>
+      <td>14.91</td>
+      <td>4.34</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>No</td>
+      <td>3</td>
+      <td>9,849,324</td>
+      <td>0.43</td>
+      <td>7.94</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>Yes</td>
+      <td>3</td>
+      <td>9,849,324</td>
+      <td>1.20</td>
+      <td>1.13</td>
+    </tr>
+    <tr>
+      <td>1 M cells</td>
+      <td>1</td>
+      <td>Yes</td>
+      <td>3</td>
+      <td>98,049,324</td>
+      <td>2.65</td>
+      <td>31.01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>No</td>
+      <td>3</td>
+      <td>98,049,324</td>
+      <td>2.55</td>
+      <td>96.49</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>No</td>
+      <td>3</td>
+      <td>98,049,324</td>
+      <td>0.03</td>
+      <td>86.75</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>Yes</td>
+      <td>3</td>
+      <td>9,8049,324</td>
+      <td>0.13</td>
+      <td>36.57</td>
+    </tr>
+    <tr>
+      <td>Slicing 10 k cells</td>
+      <td>1</td>
+      <td>Yes</td>
+      <td>3</td>
+      <td>237,751</td>
+      <td>37.64</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>No</td>
+      <td>3</td>
+      <td>237,751</td>
+      <td>39.10</td>
+      <td>1.25</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>No</td>
+      <td>3</td>
+      <td>237,751</td>
+      <td>26.32</td>
+      <td>1.88</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>Yes</td>
+      <td>3</td>
+      <td>237,751</td>
+      <td>200.00</td>
+      <td>1.34</td>
+    </tr>
+    <tr>
+      <td>Slicing 100 k cells</td>
+      <td>1</td>
+      <td>Yes</td>
+      <td>3</td>
+      <td>276,092</td>
+      <td>31.79</td>
+      <td>7.77</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>No</td>
+      <td>3</td>
+      <td>276,092</td>
+      <td>25.98</td>
+      <td>9.09</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>No</td>
+      <td>3</td>
+      <td>276,092</td>
+      <td>21.28</td>
+      <td>16.88</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>Yes</td>
+      <td>3</td>
+      <td>276,092</td>
+      <td>111.11</td>
+      <td>9.65</td>
+    </tr>
+    <tr>
+      <td>Slicing 1 M cells</td>
+      <td>1</td>
+      <td>Yes</td>
+      <td>3</td>
+      <td>275,069</td>
+      <td>11.23</td>
+      <td>91.31</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>No</td>
+      <td>3</td>
+      <td>275,069</td>
+      <td>5.39</td>
+      <td>104.79</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>No</td>
+      <td>3</td>
+      <td>275,069</td>
+      <td>5.03</td>
+      <td>158.99</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>Yes</td>
+      <td>3</td>
+      <td>275,069</td>
+      <td>37.04</td>
+      <td>97.43</td>
+    </tr>
+    <tr>
+      <td>Brain regions</td>
+      <td>1</td>
+      <td>Yes</td>
+      <td>1678</td>
+      <td>1,864,388</td>
+      <td>9.38</td>
+      <td>11.78</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>No</td>
+      <td>1678</td>
+      <td>1,864,388</td>
+      <td>7.61</td>
+      <td>27.40</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>No</td>
+      <td>1678</td>
+      <td>1,864,388</td>
+      <td>6.49</td>
+      <td>46.79</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>Yes</td>
+      <td>1678</td>
+      <td>1,864,388</td>
+      <td>11.90</td>
+      <td>35.83</td>
+    </tr>
+    <tr>
+      <td>Animation</td>
+      <td>1</td>
+      <td>Yes</td>
+      <td>8</td>
+      <td>96,615</td>
+      <td>9.91</td>
+      <td>18.98</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>No</td>
+      <td>8</td>
+      <td>96,615</td>
+      <td>22.12</td>
+      <td>12.63</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>No</td>
+      <td>8</td>
+      <td>96,615</td>
+      <td>15.15</td>
+      <td>11.92</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>Yes</td>
+      <td>8</td>
+      <td>96,615</td>
+      <td>47.62</td>
+      <td>12.29</td>
+    </tr>
+    <tr>
+      <td>Volume</td>
+      <td>1</td>
+      <td>Yes</td>
+      <td>12</td>
+      <td>49,324</td>
+      <td>1.79</td>
+      <td>2.31</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>No</td>
+      <td>12</td>
+      <td>49,324</td>
+      <td>1.66</td>
+      <td>1.95</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>No</td>
+      <td>12</td>
+      <td>49,324</td>
+      <td>3.55</td>
+      <td>2.15</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>Yes</td>
+      <td>12</td>
+      <td>49,324</td>
+      <td>23.26</td>
+      <td>1.21</td>
+    </tr>
+  </tbody>
+</table>
+
 Finally, we aimed for brainrender to empower scientists with little or no programming experience to generate advanced visualizations of their anatomically registered data. To make brainrender as user-friendly as possible we have produced extensive documentation, tutorials and examples for installing and using the software. We have also developed a graphic user interface (GUI) to access most of brainrender’s core functionality. This GUI can be used to perform actions such as rendering of brain regions and labeled cells (e.g. from cellfinder) and creating images of the rendered data, without writing custom python code (Figure 1C), (Video 1).
 
-## Visualizing brain regions and other structures
+![Video 1.](https://cdn.elifesciences.org/articles/65751/elife-65751-video1.mp4.jpg)
+
+**Video 1.:** Short demonstration of how brainrender's GUI can be used to interactively visualize brain regions, labeled cells, and custom meshes.
+
+### Visualizing brain regions and other structures
 
 A key element of any neuroanatomical visualization is the rendering of the entire outline of the brain as well as the borders of brain regions of interest. In brainrender, this can easily be achieved by specifying which brain regions to include in the rendering. The software will then use BrainGlobe’s AtlasAPI to load the 3D data and subsequently renders them (Figure 1B).
 
@@ -72,7 +461,7 @@ Brainrender also simplifies visualizing the location of devices implanted in the
 
 Finally, brainrender can be used to visualize any object represented by the most commonly used file formats for 3D design (e.g. .obj, .stl), thus ensuring that brainrender can flexibly adapt to the visualization needs of the user (Figure 3D).
 
-## Individual neurons and mesoscale connectomics
+### Individual neurons and mesoscale connectomics
 
 Recent advances in large field of view and whole-brain imaging allow the generation of brain-wide data at single neuron resolution. Having a platform for visualizing these datasets with ease is critical for exploratory data analyses. Several open-source software packages are available for registering large amounts of such imaging data and automatically identify labeled cells (e.g. expressing fluorescent proteins) (Tyson et al., 2020a; Fürth et al., 2018; Goubran et al., 2019; Renier et al., 2016). This processing step outputs a table of coordinates for a set of labeled cells, which can be directly imported into brainrender to visualize a wealth of anatomical data at cellular resolution (Figure 4A).
 
@@ -82,9 +471,25 @@ Recent advances in large field of view and whole-brain imaging allow the generat
 
 Beyond the location of cell bodies, visualizing the entire dendritic and axonal arbors of single neurons registered to a reference atlas is important for understanding the distribution of neuronal signals across the brain. Single-cell morphologies are often complex 3D structures and therefore poorly represented in 2D images. Generating 3D interactive renderings is thus important to facilitate the exploration of this type of data. Brainrender can be used to parse and render .swc files containing morphological data, and it is fully integrated with morphapi, a software for downloading morphological data from publicly available datasets (e.g. from neuromorpho.org, Ascoli et al., 2007; Figure 4B).
 
-## Producing figures, videos, and interactive visualizations with brainrender
+### Producing figures, videos, and interactive visualizations with brainrender
 
 A core goal of brainrender is to facilitate the production of high-quality images, videos, and interactive visualizations of anatomical data. Brainrender leverages the functionality provided by vedo (Musy et al., 2019) to create images directly from the rendered scene. Renderings can also be exported to HTML files to create interactive visualizations that can be hosted online. Finally, functionality is provided to easily export videos from rendered scenes. Animated videos can be created by specifying parameters (e.g. the position of the camera or the transparency of a mesh) at selected keyframes. Brainrender then creates a video by animating the rendering between the keyframes. This approach facilitates the creation of videos while retaining the flexibility necessary to produce richly animated sequences (Videos 2–5). All example figures and videos in this article were generated directly in brainrender, with no further editing.
+
+![Video 2.](https://cdn.elifesciences.org/articles/65751/elife-65751-video2.mp4.jpg)
+
+**Video 2.:** Visualization of neuronal morphologies for two layer 5b pyramidal neurons in the secondary motor area of the mouse brain. Winnubst et al., 2019, downloaded with morphapi from neuromorpho.org. The secondary motor area and thalamus are also shown.
+
+![Video 3.](https://cdn.elifesciences.org/articles/65751/elife-65751-video3.mp4.jpg)
+
+**Video 3.:** Frontal view of all brain regions in the Allen Mouse Brain atlas as the brain is progressively 'sliced' in the rostro-caudal direction.
+
+![Video 4.](https://cdn.elifesciences.org/articles/65751/elife-65751-video4.mp4.jpg)
+
+**Video 4.:** Visualization of the location of three implanted neuropixel probes from multiple mice (data from Steinmetz et al., 2019). Every 0.5 s, a subset of the probes’ electrodes that detected a neuron's action potential are shown in salmon to visualize neuronal activity.
+
+![Video 5.](https://cdn.elifesciences.org/articles/65751/elife-65751-video5.mp4.jpg)
+
+**Video 5.:** In dark blue: streamline visualization of efferent projections from the retrosplenial cortex following injection of an anterogradely transported virus expressing fluorescent proteins (data from Oh et al., 2014).
 
 ## Discussion
 
@@ -92,7 +497,7 @@ In this article, we have presented brainrender, a python software for creating 3
 
 Brainrender addresses the current lack of python-based and user-friendly tools for redeanatomical data. Being part with BrainGlobe’s suite of software tools for the analysis of anatomical data brainrender facilitates the development of integrated analysis pipelines and the re-usability of software tools across model species, minimizing the need for additional software development. Finally, brainrender promises to improve how anatomically registered data are disseminated both in scientific publications and in other media (e.g., hosted online).
 
-## Limitations and future directions
+### Limitations and future directions
 
 With brainrender, we aimed to make the rendering process as simple as possible. Nevertheless, some more technically demanding pre-processing steps of raw image data are necessary before they can be visualized in brainrender. In particular, a critical step for visualizing anatomical data is the registration to a reference template (e.g., one of the atlases provided by the AtlasAPI). While this step can be challenging and time-consuming, the brainglobe suite provides software to facilitate this process (e.g., brainreg and bg-space), and alternative software tools have been developed before for this purpose (e.g., Song et al., 2020; Jin et al., 2019). Additional information about data registration can be found in brainglobe’s and brainrender’s online documentation, as well as in the examples in brainrender’s GitHub repository. A related challenge is integrating new anatomical atlases into the AtlasAPI. While we anticipate that most users will not have this need, it is a non-trivial task that requires considerable programming skills. We believe that brainglobe’s AtlasAPI greatly facilitates this process, which is presented in Claudi et al., 2020 and has extensive online documentation.
 
@@ -100,7 +505,73 @@ Brainrender has been optimized for rendering quality instead of rendering perfor
 
 ## Materials and methods
 
-## Brainrender’s workflow
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Numpy</td>
+      <td>https://doi.org/10.1038/s41586-020-2649-2</td>
+      <td>RRID:SCR_008633</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Vtk</td>
+      <td>https://doi.org/10.1016/j.softx.2015.04.001</td>
+      <td>RRID:SCR_015013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Vedo</td>
+      <td>https://zenodo.org/record/4287635</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BrainGlobe Atlas API</td>
+      <td>https://doi.org/10.21105/joss.02668</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pandas</td>
+      <td>https://doi.org/10.5281/zenodo.3509134</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Matplotlib</td>
+      <td>doi: 10.1109/MCSE.2007.55</td>
+      <td>RRID:SCR_008624</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Jupyter</td>
+      <td>doi:10.3233/978-1-61499-649-1-87</td>
+      <td>RRID:SCR_018416</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Brainrender’s workflow
 
 Brainrender is written in Python three and depends on standard python packages such as numpy, matplotlib, and pandas (Harris et al., 2020; Hunter, 2007; The pandas development team, 2020) and on vedo (Musy et al., 2019) and BrainGlobe’s AtlasAPI (Claudi et al., 2020). Extensive documentation on how to install and use brainrender can be found at docs.brainrender.info, and we provide here a only brief overview of the workflow in brainrender. The GitHub repository also contains detailed examples of Python scripts and Jupyter notebooks (Kluyver et al., 2016). All brainrender’s code is open-source and has been deposited in full in the GitHub repository and at PyPI (a repository of Python software) under a permissive BSD 3-Clause license. We welcome any user to download and inspect the source code, modify it as needed, or contribute to brainrender’s development directly.
 
@@ -114,7 +585,7 @@ In addition to data loaded from external files, brainrender can directly load at
 
 Visualizing morphological data with reconstructions of individual neurons can be done by loading these type of data directly from .swc files or by downloading them in Python using morphapi – software from the BrainGlobe suite that provides a simple and unified interface with several databases of neuron morphologies (e.g., neuromorpho.org, Ascoli et al., 2007). Data downloaded with morphapi can be loaded directly into a brainrender scene for visualization.
 
-## Example code
+### Example code
 
 As a demonstration of how easily renderings can be created in brainrender, the Python code (Figure 5) illustrates how to create a Scene and add Actors by loading 3D data from an .obj file and then adding brain regions to the visualization. Brainrender’s GitHub repository provides several simple and concise examples about how to use brainrender to load user data, atlas data, to edit rendered meshes (e.g., to change color or cut them with a plane), to save screenshots from rendered scenes, and to create animated videos.
 
@@ -130,7 +601,7 @@ While brainrender is intended to be mainly a visualization tool, simple analyses
 
 The code and data used to generate the figures and videos in this article are made freely available at brainrender’s GitHub repository and provides examples of more advanced usage of brainrender’s functionality.
 
-## Benchmark tests
+### Benchmark tests
 
 We designed a series of benchmark tests aimed at evaluating brainrender’s performance with different combinations of hardware and operating system. We used five tests designed to cover most aspects of brainrender’s functionality:
 

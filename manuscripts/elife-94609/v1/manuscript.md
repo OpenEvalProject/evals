@@ -12,16 +12,16 @@
 
 ### Affiliations
 
-1. https://ror.org/04qr3zq92 Department of Health Management and Institute of Health Management, Sichuan Provincial People's Hospital, University of Electronic Science and Technology of China Chengdu China
-2. https://ror.org/04qr3zq92 Laboratory of Aging Research, School of Medicine, University of Electronic Science and Technology of China Chengdu China
-3. https://ror.org/01qh26a66 Department of Laboratory Medicine, Sichuan Academy of Medical Sciences and Sichuan Provincial People’s Hospital, School of Medicine, University of Electronic Science and Technology of China Sichuan China
-4. https://ror.org/043mz5j54 Department of Biochemistry and Biophysics, University of California San Francisco San Francisco United States
+1. Department of Health Management and Institute of Health Management, Sichuan Provincial People's Hospital, University of Electronic Science and Technology of China Chengdu China ([ROR:04qr3zq92](https://ror.org/04qr3zq92))
+2. Laboratory of Aging Research, School of Medicine, University of Electronic Science and Technology of China Chengdu China ([ROR:04qr3zq92](https://ror.org/04qr3zq92))
+3. Department of Laboratory Medicine, Sichuan Academy of Medical Sciences and Sichuan Provincial People’s Hospital, School of Medicine, University of Electronic Science and Technology of China Sichuan China ([ROR:01qh26a66](https://ror.org/01qh26a66))
+4. Department of Biochemistry and Biophysics, University of California San Francisco San Francisco United States ([ROR:043mz5j54](https://ror.org/043mz5j54))
 
 † Corresponding author
 
 ## Abstract
 
-The regulation of cellular metabolism and growth in response to nutrient availability is crucial for cell survival and can significantly impact on lifespan. Central to this regulation is a class of transporters that sense and transport specific nutrients and transduce the signal downstream to control genes responsible for growth and survival. In this study, we identified SUL1, a plasma membrane transporter responsible for regulating the entry of extracellular sulfate in Saccharomyces cerevisiae , as a key gene for regulating lifespan. We conducted a systematic analysis to delineate the downstream mechanism underlying the lifespan extension by SUL1 deletion. Surprisingly, we found that the lifespan-extending effect of SUL1 deletion is not due to decreased sulfate transport. The SUL1 deletion mutant exhibited decreased PKA signaling, resulting in a series of downstream effects, including increased stress-protective trehalose and glycogen, increased nuclear translocation of MSN2, elevated expression of general stress response genes, enhanced autophagy, and reduced expression of amino acid biosynthetic and ribosomal genes. We demonstrated that the observed increase in lifespan is dependent on MSN2 and autophagy pathways. Our findings exemplify the influence of nutrient signaling rather than the nutrient itself on lifespan regulation and further substantiate the pivotal role of the PKA pathway in this process.
+The regulation of cellular metabolism and growth in response to nutrient availability is crucial for cell survival and can significantly impact on lifespan. Central to this regulation is a class of transporters that sense and transport specific nutrients and transduce the signal downstream to control genes responsible for growth and survival. In this study, we identified SUL1, a plasma membrane transporter responsible for regulating the entry of extracellular sulfate in Saccharomyces cerevisiae, as a key gene for regulating lifespan. We conducted a systematic analysis to delineate the downstream mechanism underlying the lifespan extension by SUL1 deletion. Surprisingly, we found that the lifespan-extending effect of SUL1 deletion is not due to decreased sulfate transport. The SUL1 deletion mutant exhibited decreased PKA signaling, resulting in a series of downstream effects, including increased stress-protective trehalose and glycogen, increased nuclear translocation of MSN2, elevated expression of general stress response genes, enhanced autophagy, and reduced expression of amino acid biosynthetic and ribosomal genes. We demonstrated that the observed increase in lifespan is dependent on MSN2 and autophagy pathways. Our findings exemplify the influence of nutrient signaling rather than the nutrient itself on lifespan regulation and further substantiate the pivotal role of the PKA pathway in this process.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ In this study, we examined the regulatory mechanism of SUL1 in relation to yeast
 
 ## Results
 
-## SUL1 deletion increases yeast RLS in a sulfate metabolism-independent way
+### SUL1 deletion increases yeast RLS in a sulfate metabolism-independent way
 
 In budding yeast, SUL1 and SUL2 serve as two plasma membrane transporters responsible for regulating the import of extracellular sulfate. The SUL1 functions as a transporter with a high affinity for sulfate (Cherest et al., 1997). Sulfate is converted into various sulfur-containing substances, including methionine, cysteine, glutathione, and S-adenosylmethionine through the SAP (Marzluf, 1997). SUL2 is the homolog of SUL1 and may function as a redundant sulfate transporter. We first measured the RLS of SUL1 deletion and found that the mutant has a significantly extended lifespan (Figure 1A).
 
@@ -49,21 +49,45 @@ We then seek to understand the mechanism underlying the lifespan extension. Our 
 
 In order to investigate the influence of sulfur metabolism on the extension of lifespan in the SUL1 knockout strain, we generated three strains that modulate the SAP at various levels. These strains include a SUL2 knockout strain, a site-directed mutant strain SUL1E427Q, which has been previously demonstrated to disrupt sulfate transport (Kankipati et al., 2015), and a MET3 knockout strain that specifically affects a key enzyme in the SAP (Thomas and Surdin-Kerjan, 1997). We found that inhibition of the sulfur-transporting function of SUL1 (SUL1E427Q) does not extend lifespan. In addition, neither the depletion of SUL2-dependent sulfate transport nor the disruption of SAP through MET3 deletion leads to an increase in the RLS of yeast cells (Figure 1B). We then compared the rapid uptake of sulfur following sulfate stimulation in WT, SUL1Δ, SUL2Δ, and SUL1E427Q to evaluate the impact of sulfur transport ability on RLS. Compared with the WT, SUL1Δ, SUL2Δ, and SUL1E427Q all exhibited a delayed sulfur uptake process, but there was no significant difference in the final concentration of intracellular sulfur ion in all groups, and the kinetics of sulfur uptake in SUL1Δ and SUL1E427Q exhibit comparable patterns (Figure 1C). These findings indicate that the extended lifespan associated with the deletion of the SUL1 gene is not attributable to alterations in intracellular sulfur ion levels.
 
-## SUL1 deletion induces global transcriptional changes indicative of conserved longevity promotion mechanisms
+### SUL1 deletion induces global transcriptional changes indicative of conserved longevity promotion mechanisms
 
 To gain a deeper understanding of the mechanisms that contribute to the extension of lifespan in SUL1Δ strains, we conducted a comprehensive analysis of the global gene expression profiles of the SUL1Δ strains in comparison with the wild-type strains through RNA-seq. We observed a wide range of changes in the transcript levels of genes in strains lacking SUL1 (Figure 2A). A total of 182/57 genes were upregulated/downregulated (|Log2 FC|＞0.5) (Figure 2A). Genes upregulated are significantly enriched for several biological processes (BP), such as transposition, RNA-mediated regulation, ascospore wall assembly, stress response, protein catabolic process, and carbohydrate metabolism (Figure 2B and C, left). On the other hand, genes downregulated are significantly enriched for cellular amino acid biosynthesis, metabolic processes, and ribosome biogenesis (Figure 2B and C, right).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/94609/elife-94609-fig2-v1.jpg)
+
+**Figure 2.:** (A) A volcano plot illustrating the differentially expressed genes (DEGs) between the SUL1Δ and WT strains. Log10 of the p-values plotted against the Log2 FC of the fragments per kilobase million (FPKM). (B) Enrichment analysis of biological processes associated with the DEGs identified between the SUL1Δ and WT strains. Upregulated genes (p<0.1, Log2 FC>0.5) and downregulated genes (p<0.1, Log2 FC<–0.5) are included in this analysis. (C) Heatmaps showing changes of stress response (left) and amino acid biosynthetic and ribosome biogenesis genes (right). (D) Association analysis of the potential transcription factors and the DEGs in the enriched biological processes.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/94609/elife-94609-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) A volcano plot illustrating the differentially expressed genes (DEGs) between the SUL2Δ and WT strains. Log10 of the p values plotted against the Log2 FC of the fragments per kilobase million (FPKM). (B) Enrichment analysis of biological processes associated with the DEGs identified between the SUL2Δ and WT strains. Upregulated genes (p<0.1, Log2 FC>0.5) and downregulated genes (p<0.1, Log2 FC<–0.5) are included in this analysis. (C) A volcano plot illustrating the DEGs between the SULE427Q and WT strains. Log10 of the p values plotted against the Log2 FC of the FPKM. (D) Enrichment analysis of biological processes associated with the DEGs identified between the SULE427Q and WT strains. Upregulated genes (p<0.1, Log2 FC>0.5) and downregulated genes (p<0.1, Log2 FC<–0.5) are included in this analysis.
 
 The increase in stress response and production of carbohydrates such as trehalose are considered beneficial factors for promoting longevity (Zhang and Cao, 2017). Additionally, the suppression of protein biogenesis and ribosomal function is also known to extend lifespan (McCormick et al., 2015; Steyfkens et al., 2018). Our analysis of gene expression suggests that the deletion of the SUL1 gene triggers a universal, conserved anti-aging mechanism, resulting in an increased lifespan. In contrast, the stress responses that promote longevity and the elevated production of carbohydrates, such as trehalose, are diminished in both the SUL2Δ strains and the SUL1E427Q strains. This observation further supports the genetic mechanism underlying the longevity phenotype, which is exclusively observed in the SUL1Δ strains (Figure 2—figure supplement 1).
 
 We observed considerable upregulation of several stress response genes, specifically those controlled by MSN2, in the SUL1 deletion mutant. These genes are involved in the synthesis of trehalose and glycogen, such as TPS1, TPS2, GSY2, and others (Figure 2C, left). To identify potential transcriptional regulators, we performed association analysis between TFs and differentially expressed genes (DEGs) (see ‘Materials and methods’). We observed that a number of upregulated DEGs in the SUL1 mutant are associated with six stress-related transcription factors, namely SUA7, MSN2, IXR1, FKH1, FKH2, and SFP1 (Figure 2D). Interestingly, besides MSN2, which is a well-known general stress response regulator (Gasch et al., 2000). We also identified IXR1, a transcriptional repressor that regulates hypoxic genes during normoxia, suggesting that SUL1 deletion induces a gene expression program similar to diauxic shift, a phenomenon also observed in a constitutively active MSN2 mutant that mimics lower PKA activity (Pfanzagl et al., 2018).
 
-## SUL1 deletion inhibits the PKA activity and promotes the nuclear translocation of MSN2
+### SUL1 deletion inhibits the PKA activity and promotes the nuclear translocation of MSN2
 
 Based on our observations, it is evident that the lifespan extension in the SUL1 mutant does not depend on reduced sulfate transport. It has been reported that SUL1 exhibits the ability to react to environmental stress via signaling through the PKA pathway (Kankipati et al., 2015). Under conditions of nutrient starvation, yeast cells display traits associated with decreased activity of PKA, including the accumulation of stress-protective carbohydrates such as glycogen and trehalose, enhanced resistance to stress, increased expression of stress response genes, and decreased expression of ribosomal genes (Kankipati et al., 2015). Additionally, the transcription factors MSN2/MSN4, which are involved in stress resistance, are suppressed by PKA activity. The RNA profile data obtained in our study suggest that the deletion of the SUL1 gene is associated with a decrease in PKA activity and an increase in the expression of genes targeted by MSN2. Thus, to understand the downstream mechanisms for the lifespan extension by SUL1 deletion, we turned our attention to the PKA signaling pathway and its influence on the transcriptional control of MSN2.
 
 The downregulation of the PKA pathway occurs in yeast cells when they are deprived of a crucial nutrient (Thevelein and de Winde, 1999). This downregulation leads to adaptive stress protection and the accumulation of trehalose and glycogen (Lillie and Pringle, 1980). Consequently, trehalose and glycogen serve as a practical indicator for evaluating the activity of the PKA pathway in vivo (Schepers et al., 2012).
 
 We found that the mRNA levels of TPS1 (Trehalose-6-P synthase) and stress-related genes were notably elevated in the SUL1 deletion mutant (Figure 3A). Additionally, the concentrations of trehalose and glycogen were significantly increased, indicating a decrease in PKA activity due to SUL1 deletion (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/94609/elife-94609-fig3-v1.jpg)
+
+**Figure 3.:** (A) The mRNA levels of several stress response genes and trehalose synthesis. ns: not significant; *p<0.05. (B) The concentrations of trehalose and glycogen in WT and SUL1Δ strains. *p<0.05; **p<0.01. (C) Representative images of EGFP-labeled endogenous MSN2 in WT and SUL1Δ strains during the exponential growth phase. BF: bright field. Scale bars: 5 μm. (D) The ratio of the mean fluorescence intensity of MSN2-EGFP in the nucleus vs. that of the total cell. Bars represent mean ± SD, n=100. ***p<0.001. (E) Representative time-lapse images of MSN2-EGFP in WT and SUL1Δ strains. White arrows represent tracking cells. Scale bars: 5 μm. (F) The normalized nuclear/cytoplasmic fluorescence intensity ratio of MSN2-EGFP as a function of age in the WT and SUL1Δ strains (number of cells WT: n=80; SUL1Δ: n=80). The dashed lines represent the nuclear/cytoplasmic ratio of MSN2-EGFP before and after the 17th generation. (G) Comparison of the nuclear/cytoplasmic mean fluorescence intensity ratio of MSN2-EGFP as a function of age in WT and SUL1Δ strains. Bars represent mean ± SD, n=80. ns: not significant; *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/94609/elife-94609-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The mean fluorescence intensity (FI) of MSN2-EGFP in each generation of WT and SUL1Δ strains during replicative lifespan (RLS) (WT: n=80; SUL1Δ: n=80). (B) Compare the whole cell mean FI of MSN2-EGFP in each generation of WT and SUL1Δ strains during RLS. Bars represent mean ± SD, n=80. ns: not significant; *p<0.05; **p<0.01.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/94609/elife-94609-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Representative time-lapse images of MSN2-EGFP in WT and SUL1Δ strains grown in complete synthetic medium (2% glucose) or in glucose restriction medium (0.05% glucose) at the indicated times. White arrows represent tracking cells. Scale bars: 5 μm. Compare the mean fluorescence intensity (B) and the nuclear/cytoplasmic mean fluorescence intensity ratio (C) of MSN2-EGFP in WT and SUL1Δ strains grown in complete synthetic medium (2% glucose) or in glucose restriction medium (0.05% glucose) at the indicated times. Bars represent mean ± SD; WT: n=43; SUL1Δ: n=40. ns: not significant; *p<0.05; **p<0.01; ****p<0.0001.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/94609/elife-94609-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Representative images of EGFP-labeled endogenous MSN4 in WT and SUL1Δ strains during the exponential growth phase. BF: bright field. Scale bars: 10 μm. (B) The ratio of the mean fluorescence intensity of MSN4-EGFP between the nucleus and the total cell. Bars represent mean ± SD, n=100. ***p<0.001. (C) Representative time-lapse images of MSN4-EGFP in WT and SUL1Δ strains. White arrows represent tracking cells. Scale bars: 5 μm. (D) Compare the nuclear/cytoplasmic mean fluorescence intensity ratio of MSN4-EGFP in each generation of WT and SUL1Δ strains during replicative lifespan (RLS). Bars represent mean ± SD, n=80. ns: not significant; *p<0.05; ***p<0.001.
 
 We then further investigated the downstream signal of PKA by examining the expression and the nuclear translocation of MSN2. We constructed an endogenous EGFP-labeled MSN2 in both wild-type and SUL1Δ strains. These strains were then cultured in log phase and subjected to DAPI staining to assess nuclear localization (Figure 3C). The ratio of fluorescence intensity (FI) in the nucleus vs. that in the whole cell was then calculated for each individual cell. We observed that the SUL1Δ strain exhibited significantly increased nuclear accumulation of MSN2-EGFP protein compared to the wild-type strain (Figure 3D).
 
@@ -73,7 +97,7 @@ However, we did observe a significant increase in nuclear localization of MSN2 o
 
 In summary, our findings indicate that the deletion of SUL1 results in a decrease in PKA activity and an increase in the nuclear localization of MSN2 (moving from cytoplasm to nucleus), consequently upregulating stress response genes.
 
-## Deletion of SUL1 promotes cellular autophagy
+### Deletion of SUL1 promotes cellular autophagy
 
 Autophagy is a universal BP that is required for the lifespan-extending effect of various genetic and environmental perturbations (Sampaio-Marques et al., 2014). In light of the downregulation of the PKA signal in the SUL1 mutant and the upregulation of the vast majority of autophagy genes identified by the transcriptomic analysis (Figure 4A), we investigated the effect of SUL1 deletion on autophagy. We decided to focus on ATG8, initially identified as an essential component of the autophagy machinery (Ichimura et al., 2000; Paz et al., 2000). We generated EGFP-labeled ATG8 in both wild-type and SUL1Δ strains. Using a microfluidic device to monitor the dynamic expression of EGFP-tagged ATG8 in individual cells in the SUL1Δ and the wild-type strains, we found that ATG8 levels steadily increase with age in the SUL1Δ strains, but not in the wild-type strain (Figure 4B and C). Additionally, a statistically significant difference in ATG8 expression was observed between SUL1Δ and wild-type strains during the middle and late stages of life (Figure 4D).
 
@@ -85,7 +109,7 @@ To further examine the difference in autophagy response between the SUL1Δ and t
 
 In summary, the SUL1Δ strain has elevated expression of autophagy genes and is better at upregulating autophagy in response to aging and nutrient depletion.
 
-## MSN2 and ATG8 are required for the lifespan extension by SUL1 deletion
+### MSN2 and ATG8 are required for the lifespan extension by SUL1 deletion
 
 Given the observation of the elevated nuclear MSN2 level and a stronger ATG8 response during aging in SULΔ strain, we further analyzed whether MNS2 and ATG8 are required for the lifespan extension by SUL1 deletion. We compared the RLS of the single mutants MSN2Δ, ATG8Δ, SUL1Δ, and the double mutants SUL1Δ/ MSN2Δ, and SUL1Δ/ ATG8Δ. We found that the deletion of MSN2 or ATG8 alone neither increases nor decreases lifespan. However, deletion of MSN2 (Figure 5A) or ATG8 (Figure 5B) in the SUL1Δ background partially abolishes the lifespan extension of SUL1 deletion, arguing that the lifespan extension by SUL1 deletion is at least partially mediated through increased stress response (MSN2) and elevated autophagy (ATG8).
 
@@ -117,7 +141,7 @@ In conclusion, our findings demonstrate that downregulation of SUL1 inhibits the
 
 ## Materials and methods
 
-## Yeast strains, plasmids, and media
+### Yeast strains, plasmids, and media
 
 All S. cerevisiae strains used in this study are in the BY4741 (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0) background and are listed in Supplementary file 1.
 
@@ -125,29 +149,29 @@ Knockout strains were generated by transforming with a PCR product encoding the 
 
 The yeast strains were cultivated in YPD complete medium containing 2% glucose, 2% peptone, 1% yeast extract, or synthetic complete medium supplemented with 0.03% essential amino acids and 2% glucose. The glucose restriction media contained the same components as the complete medium except for a reduced concentration of glucose at 0.05%. Yeast strains were grown in selective minimal media at 30°C and shaken at 250–300 rpm.
 
-## Replicative lifespan analysis
+### Replicative lifespan analysis
 
 The strains were pre-cultured overnight on YPD plates. Lifespan analyses were conducted using micromanipulation, following the previously described protocol (Lin et al., 2000). All micromanipulation dissections were performed at laboratory temperature.
 
-## Quantitative determination of intracellular sulfate concentration
+### Quantitative determination of intracellular sulfate concentration
 
 Overnight grown yeast cultures were diluted to an OD600 of 0.1 and incubated for an additional 3–4 hours to reach the exponential growth phase. Cells were then treated with 3 mM sodium sulfate (Na2SO4) and harvested at four time points: 0 min, 2 min, 5 min, and 10 min. Immediately after harvesting, the cells were washed with ice-cold PBS buffer and stored at frozen temperatures.
 
 Dilute the frozen cells with PBS buffer to an appropriate concentration and aliquot into centrifuge tubes. Add stabilizer and barium chloride crystals in equal proportions, and immediately vortex until the crystals are completely dissolved. Measure the turbidity of the resulting solution at 420 nm or 480 nm within 15 minutes using a turbidimeter, and calculate the intracellular sulfate ion concentration based on the standard curve.
 
-## RNA-seq and differential expression gene analysis
+### RNA-seq and differential expression gene analysis
 
 Yeast in the logarithmic growth phase (~0.5 OD600) was harvested, and RNA-seq experiments were conducted following the previously described protocol on BGISEQ-500 (Beijing Genomics Institute). The sequencing data discussed in this publication have been deposited with the NCBI Gene Expression Omnibus and are accessible through the GEO Series accession number GSE296216. The gene expression levels were compared across different samples using fragments per kilobase million (FPKM) values. The Log2 ratio of the FPKM value was used to determine the fold change in gene expression for each sample. The R software was then used to carry out a differential expression analysis between the samples (Sun et al., 2013).
 
-## RNA extraction, reverse transcription, and real-time qPCR
+### RNA extraction, reverse transcription, and real-time qPCR
 
 The total RNA was extracted using the TRIzol reagent (Invitrogen, #15596026) following the manufacturer’s instructions. Subsequently, residual DNA was removed using gDNA wiper mix, and 1 μg of total RNA was reverse-transcribed to cDNA utilizing HiFiScript gDNA Removal RT MasterMix (CWBIO, Jiangsu, China). Quantitative real-time PCR was performed on the 7500 Fast Real-Time PCR System (Applied Biosystems, Foster City, CA, USA) with 2×SuperFast Universal SYBR Master Mix (CWBIO, Jiangsu, China). Actin was used as the internal control for data analysis. The relative expression of each mRNA was calculated using the 2-ΔΔCT method. Each measurement consisted of three technical replicates. All primer sequences are included in Supplementary file 2.
 
-## Transcriptional factors prediction of DEGs
+### Transcriptional factors prediction of DEGs
 
 We utilized the regulator function module of the Saccharomyces Genome Database (SGD) to identify transcription factors associated with DEGs in our transcriptome sequencing data, and ranked their frequency. Transcription factors with higher frequencies were considered more likely to be common regulators of DEGs. The regulatory network of these transcription factors on DEGs was visualized using Cytoscape 3.7.1.
 
-## Glycogen and trehalose quantification
+### Glycogen and trehalose quantification
 
 A single clone of yeast was inoculated in 5 ml of YPD medium and incubated overnight at 30°C, 200 rpm. After being diluted to a concentration (OD600=0.1), the culture was incubated for 4 hours at the same temperature and speed until it entered the exponential growth phase. The cells were rinsed with 1 ml of sterile ice water and the cell concentration was quantified. 1×108 cells from the cell suspension were transferred to a 96-well plate, centrifuged, and the supernatant was then removed. After being resuspended in 125 μl of Na2CO3, the cells were incubated at 95°C for 3 hours while being rotated occasionally. The plates were then cooled to room temperature, and the cell suspension was thoroughly mixed before being equally divided into two new plates. There were three technical replicates for each strain.
 
@@ -157,18 +181,18 @@ For trehalose measurements, each reaction solution was precisely formulated by a
 
 The quantification of glucose released in the preceding procedures was carried out using the Glucose Assay Kit (Sigma-Aldrich, #MAK263) in accordance with the detailed instructions provided by the manufacturer.
 
-## Single-cell time-lapse imaging
+### Single-cell time-lapse imaging
 
 The cells were cultured overnight in synthetic complete media containing 2% glucose at 30°C until they reached an optical density of approximately 1.0. Subsequently, the cells were diluted 10-fold and further cultivated in a shaker at 30°C for an additional 4–6 hours before being loaded into the microfluidic device. The microfluidic device was employed to track single cells, following the previously described protocols (Chen et al., 2020; Xie et al., 2012). The microfluidic chip used for this experiment was generously provided by Prof. Chunxiong Luo from PKU.
 
-## Fluorescence imaging
+### Fluorescence imaging
 
 Yeast cells in the logarithmic growth phase were used to observe the nuclear localization of MSN2-EGFP or MSN4-EGFP. The nuclei were stained with DAPI at a final concentration of 2.5 µg/ml and incubated for 30 min at room temperature. Images were captured using Zeiss Axio Observer 7, and image analysis was conducted using the ImageJ software. In brief, the quantification of protein expression abundance in each cell is determined by subtracting the background intensity from the green fluorescence intensity. In each experiment, a minimum of 100 cells were subjected to analysis.
 
-## Flow cytometry
+### Flow cytometry
 
 The EGFP-labeled strains were incubated overnight, followed by being diluted to an OD600 equal to 0.01. The cultures were then grown for an additional duration of 2–4 hours until they attained an OD600 of approximately 0.05 in a 96-well plate. Subsequently, flow cytometry was employed to quantify the EGFP signals (FITC channel) in each sample at regular hourly intervals. The cellular concentration of EGFP was assessed by normalizing the EGFP signal with cell size using a forward scattering signal (FSC channel) for individual cells. Mean fluorescence intensity was utilized to compare the differences.
 
-## Statistical analysis
+### Statistical analysis
 
 The RLS was analyzed using the Kaplan–Meier method, and the survival differences were determined by the log-rank test. Other group differences were evaluated with Student’s t-test. The rapid sulfur intake experiment was analyzed using repeated measures ANOVA. The statistical analyses were conducted using SPSS 22.0 and GraphPad Prism 6. Statistical significance was considered at p-value <0.05.

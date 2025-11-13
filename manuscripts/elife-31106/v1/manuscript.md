@@ -13,4 +13,4 @@
 
 ## Abstract
 
-G protein-coupled receptor stimulation inhibits TRPM3 channel activity through direct binding of the G βγ subunit to the channel.
+G protein-coupled receptor stimulation inhibits TRPM3 channel activity through direct binding of the Gβγ subunit to the channel.

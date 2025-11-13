@@ -17,12 +17,12 @@
 
 ### Affiliations
 
-1. https://ror.org/017zqws13 Department of Medicine, Division of Hematology, Oncology and Transplantation, University of Minnesota Minneapolis United States
-2. https://ror.org/017zqws13 Department of Obstetrics, Gynecology and Women's Health, University of Minnesota Minneapolis United States
-3. https://ror.org/017zqws13 Department of Genetics, Cell Biology and Development, University of Minnesota Minneapolis United States
-4. https://ror.org/017zqws13 Department of Medicine, Division of Gastroenterology, Hepatology and Nutrition, University of Minnesota Minneapolis United States
+1. Department of Medicine, Division of Hematology, Oncology and Transplantation, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
+2. Department of Obstetrics, Gynecology and Women's Health, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
+3. Department of Genetics, Cell Biology and Development, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
+4. Department of Medicine, Division of Gastroenterology, Hepatology and Nutrition, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
 5. Novocure Ltd, Topaz Building, MATAM Center Haifa Israel
-6. https://ror.org/017zqws13 Graduate Faculty, Integrative Biology and Physiology Department, University of Minnesota Minneapolis United States
+6. Graduate Faculty, Integrative Biology and Physiology Department, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
 
 † Corresponding author
 
@@ -42,27 +42,51 @@ The bulk of studies to date on cellular effects and mechanism(s) of TTFields has
 
 ## Results
 
-## Establishing TTFields application impact on TNT formation in malignant mesothelioma cells and optimizing parameters
+### Establishing TTFields application impact on TNT formation in malignant mesothelioma cells and optimizing parameters
 
 We utilized two mesothelioma cell lines, MSTO-211H (biphasic histologic MPM subtype) and VAMT (sarcomatoid MPM), to investigate effects of TTFields application on TNT formation and function. These two cell lines were used having previously demonstrated that they reliably and reproducibly form TNTs in culture under variable conditions and are thus ideal for in vitro studies. TTFields were applied to cells in vitro using two devices: inovitro, which applies TTFields to cells in culture to which the electrodes from the power supply provide a pre-specified level of intensity and frequency of the alternating electric fields; and inovitro Live, in which the configuration is adapted for continuous administration of TTFields while permitting time-lapse microscopic imaging. We first tested the inovitro Live device to treat MSTO-211H at differing frequencies to establish parameters used to impact TNT formation. Previously, bidirectional application of TTFields has shown increased cytotoxicity relative to unidirectional delivery (Kirson et al., 2004), with highest cytotoxicity for MSTO-211H cells displayed at a frequency of 150 kHz (Mumblat et al., 2021). Instead, we sought to elucidate the initial impact of TTFields on TNT protrusion formation, which may require differing frequencies than what is demonstrated to be most effective for a cytotoxic effect. Thus, we tested differing frequencies and directional vectors for TTFields application. TTFields intensity was administered at 1.0 V/cm but a frequency of either 200 kHz or 150 kHz was delivered bidirectionally or unidirectionally over a 72 hr period to MSTO-211H cells; these two frequencies were selected for testing because the approved devices for TTFields therapeutic delivery is applied at these frequencies (Figure 1A). We found that by 24 hr, unidirectional TTFields treatment at 200 kHz had fewer TNTs than the control (p=0.004) and bidirectional application at 150 kHz (p=0.005). As compared to control, bidirectional application at 200 kHz also had statistically significantly fewer TNTs (p<0.0001). However, unidirectional application at 150 kHz resulted in no significant differences in TNT formation throughout the 72-hr period (Supplementary file 1). At times 48 and 72 hours, we also observed the decline in TNTs. As with previous studies, once cells become densely packed, they form fewer TNTs (Ady et al., 2014). Together the data indicated that applying TTFields at 200 kHz unidirectionally is more effective at decreasing TNT formation in MSTO-211H cells and we utilized this frequency for the rest of our experiments.
 
-## TTFields treatment suppresses formation of TNTs between biphasic malignant mesothelioma cells when applied at 200 kHz and 1.0 V/cm
+![Figure 1.](https://cdn.elifesciences.org/articles/85383/elife-85383-fig1-v1.jpg)
+
+**Figure 1.:** (A) TNT formation in MSTO-211H following continuous TTFields exposure at 1.0 V/cm while varying frequency and field direction. 40,000 MSTO-211H cells were plated in a 35 mm dish and exposed to TTFields treatment at 1.0 V/cm with the above varying parameters; media was changed every 24 hours. Additional data for 150 kHz Unidirectional treatment are available in Figure 1—figure supplement 1. (B–C) TNT formation and cell growth in MSTO-211H following TTFields exposure when compared to control. As above, 40,000 cells were plated and were exposed continuously to TTFields bidirectionally; at 72 hr, TTFields treatment was discontinued to assess recovery of TNT formation (n=3). (D–E) TNT formation and cell growth in VAMT following TTFields exposure with methodology as listed in B-C (n=3). (F–G) Cell viability in both MSTO-211H (F) and VAMT (G) respectively following TTFields exposure. Cell viability and cytotoxicity was measured through NucGreen Dead 488 expression, which assesses loss of plasma membrane integrity. Seven random fields of view were selected and the ratio of live:dead cells was recorded (n=3). (H) Cell viability measured by TUNEL assay and NucGreen Dead 488 expression in MSTO-211H exposed to TTFields at 150 and 200 kHz. MSTO-211H cells were treated with TTFields for 48 hr at either 150 kHz or 200 kHz. At the 48 hr time point, cell viability was measured through the TUNEL assay or through measuring fluorescent expression of Nuc Green Dead 488. The percentage of nonviable cells was graphed as compared to a control. A representative image of TUNEL positive control is displayed in Figure 1—figure supplement 2. Statistical significance was assessed as a result of three independent experiments, with a linear mixed model used in A and heteroscedastic t-test used in B.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85383/elife-85383-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** As in Figure 1A, 40,000 MSTO-211H cells were seeded in a 35 mm dish and exposed to TTFields unidirectionally over 72 hr; media was changed every 24 hr (n=3).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/85383/elife-85383-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) TUNEL assay in MSTO-211H after 48 hr of TTFields application, or (B) DNaseI treated positive control. Images were taken on a Zeiss AxioObserver M1 at 20 X, with spatial resolution (dx = dy) at 0.335 um/pixel, and processed using Zen Pro 2012 software.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/85383/elife-85383-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** TNT formation and (B) cell growth in MSTO-211H with TTFields delivered at 0.5 V/cm, 200 kHz. (C) MSTO cells. Arrows point to TNTs. (D) TNT formation and (E) cell growth in VAMT with TTFields delivered at 0.5 V/cm, 200 kHz. (F) VAMT cells. Arrows indicate TNTs.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/85383/elife-85383-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) 40,000 MSTO-211H cells were seeded in a 35 mm dish and treated with TTFields for 48 hr to assess effects of increased frequency on TNT formation (n=3). The 48 hr time point was chosen based on our previous findings demonstrating maximal TNT suppression in MSTO-211H at 48 hr. (B) Cell growth in MSTO-211H after 48 hrof TTFields exposure at 400 kHz, 1 V/cm (n=3). ns = not significant.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/85383/elife-85383-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** (A) MSTO-211H cells were seeded at 10,000 cells/ml and treated with TTFields with the above specified parameters for 96 hr. Cell count was measured every 24 hours, starting at the 48 hr time point (n=3). Significance was assessed by heteroscedastic t-tests on three independent experiments, p=0.003 at 96 hr and p=0.048 at 72 hr. (B) Representative images of MSTO-211H cells at the 48, 72, 96 hr time points.
+
+### TTFields treatment suppresses formation of TNTs between biphasic malignant mesothelioma cells when applied at 200 kHz and 1.0 V/cm
 
 Next, we tested the ability of applied TTFields using the inovitro device to treat MSTO-211H and VAMT cells independently plated on treated coverslips using a low intensity of 0.5 V/cm TTFields treatment over a 72 hr period. TTFields did not significantly alter the number of TNTs or cells at this intensity in either cell line (Figure 1—figure supplement 3). Once our experimental set-up was calibrated, we assessed effects of TTFields applied at a more standard intensity of 1.0 V/cm with a 200 kHz frequency bidirectionally to evaluate the potential impact on TNT formation. Although we demonstrated the highest impact on TNT formation with unidirectional fields, we desired to emulate clinical conditions and efficacy as closely as possible and thus utilized bidirectional electric fields. Both cell lines were treated with TTFields over a 72 hr period to assess TNT formation and cell growth, with further assessment for an additional 24 hr after TTFields was discontinued to observe any latent effect or recovery of TNT formation. Over the 72 hr treatment period, we noted a statistically significant difference in TNT formation at 48 hr with MSTO-211H cells, but this difference was not present at 72 hr (Figure 1B, p=0.018). Additionally, over the 24 hr following treatment stoppage, TNT formation decreased further in both the control and treatment groups and cell density continued to increase (Figure 1B and C). In fact, cell growth increased steadily in both treatment and control groups at nearly exponential rates, to reach confluency by the end of the experiments, indicating there was no latent effect on either TNT formation or cell growth from TTFields application. Unlike MSTO-211H, when VAMT cells were subjected to TTFields at 1.0 V/cm, no significant differences were seen between treatment and control groups in either TNT formation or cell growth (Figure 1D and E). Lastly, we examined TNT formation in MSTO-211H following TTFields exposure at peak frequency threshold of 400 kHz to assess TNT suppression at a frequency substantially higher than what is used clinically (Figure 1—figure supplement 4). We measured TNT formation and cell growth after 48 hr of treatment based on our findings of maximal TNT suppression at that time point. No significant differences in either TNT formation or cell growth were observed.
 
-## Assessment of cell viability and DNA fragmentation following TTFields treatment
+### Assessment of cell viability and DNA fragmentation following TTFields treatment
 
 With TTFields application at 1 V/cm, a cytotoxic effect on cells was expected. However, as reported above, both MSTO-211H and VAMT continued to divide, even when monitored 24 hr following treatment. To confirm that the cells were indeed viable, we next performed cell viability assays at all time points on randomly selected fields of view using NucGreen Dead 480. In all cases, cell viability of both control and treatment groups was >95% (Figure 1F and G), demonstrating no induction of cell death in the treated cells. Because TTFields exposure is known to affect cancer progression, we measured DNA fragmentation through the TUNEL assay. To confirm our earlier results with NucGreen Dead 480 and investigate cell viability at 150 kHz, we also repeated cell viability assays with NucGreen Dead 480 at both 150 kHz and 200 kHz at 1.0 V/cm. Knowing that maximum TNT suppression occurred in MSTO-211H at 48 hr, we performed both assays at the 48 hr time point. For both TUNEL and NucGreen Dead assays, we noted minimal cell death with 2.4% and 1.8% mean cell death respectively at 150 kHz and 3.2% and 1% mean cell death at 200 kHz when referenced with a negative and positive control (Figure 1H). As our findings of exponential cell growth and low cell death are in contrast to previous TTFields application studies, we repeated the experiments above at 1.0 V/cm and 200 kHz, but this time plated cells at a much lower density. In concurrence with others, we noted an 80% reduction in cell count in the TTFields-treated group when compared to control by the 72–96 hour time point (Figure 1—figure supplement 5, p=0.003).
 
-## Effect of TTFields exposure on actin polymerization and filament bundling
+### Effect of TTFields exposure on actin polymerization and filament bundling
 
 There are many unidentified molecular factors in the actin polymerization mechanism that form TNTs, including actin nucleators, elongators, bundlers, and destabilizers. In addition, there are membrane bound proteins involved in the process, and some of these components may differ between cell types. Filamentous actin forms the structural basis of the interior of TNTs. Because we observed a reduction in MSTO-211H TNTs with TTFields at 1.0 V/cm, and noting that tubulin depolymerization and polymerization has been observed to be directly impacted by TTFields treatment (Giladi et al., 2015), we next sought to determine what effects TTFields might have directly on actin at the polymer level. To accomplish this, we performed actin sedimentation experiments to examine both polymerization and bundling. Actin monomers in solution were combined with a KCl, MgCl2, and EGTA containing buffer to initiate polymerization, and for experimental samples, treated with TTFields at 1.0 V/cm- 200 kHz with the inovitro device. After one hour of incubation, solutions were spun down and run on an SDS-PAGE. Surprisingly, there was no difference between samples treated with or without TTFields (Figure 2A and B; Figure 2—source data 1). For both control and treated samples, actin was predominately found in the filamentous form. If TTFields did not directly alter actin polymerization, we considered a role for other components of the actin-based protrusion mechanism. As an initial experiment, we analyzed the actin bundling protein fascin to determine whether it was affected by TTFields. Again, there was no difference in the amount of actin bundling between TTFields-treated samples and controls, indicating that TTFields likely affect TNT formation by other factors in this system (Figure 2C and D; Figure 2—source data 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/85383/elife-85383-fig2-v1.jpg)
 
-**Figure 2.:** (A, B) Sedimentation assays quantifying actin polymerization. Purified actin monomers were polymerized for 1 hr with TTFields (200 kHz, 1.0 V/cm, 37 °C) and without TTFields (37 °C) treatment. Reactions were centrifuged at 100,000 x g to pellet filamentous actin and analyzed by SDS-PAGE. Mon refers to monomeric actin (supernatant), Fil refers to filamentous actin (pellet). A indicates the actin protein band (42 kDa). (C, D) Co-sedimentation assays quantifying bundling of actin filaments by the bundling protein fascin. Pre-polymerized actin filaments were incubated with fascin for 1 hr with TTFields (200 kHz, 1.0 V/cm, 37 °C) and without TTFields (37 °C) treatment. Reactions were spun at low-speed (10,000 x g) to pellet bundles and analyzed by SDS-PAGE. The supernatant contains monomeric actin and individual filaments. The pellet contains bundled actin. F, A indicate fascin (55 kDa) and actin (42 kDa) protein bands. The gels (A, C) represent one representative experiment. The graphs (B, D) represent the average of three experiments, and the error bars are the standard deviation.Figure 2—source data 1.Figure 2, titled ‘The effect of TTFields application on actin polymerization and actin filament bundling’.
+**Figure 2.:** (A, B) Sedimentation assays quantifying actin polymerization. Purified actin monomers were polymerized for 1 hr with TTFields (200 kHz, 1.0 V/cm, 37 °C) and without TTFields (37 °C) treatment. Reactions were centrifuged at 100,000 x g to pellet filamentous actin and analyzed by SDS-PAGE. Mon refers to monomeric actin (supernatant), Fil refers to filamentous actin (pellet). A indicates the actin protein band (42 kDa). (C, D) Co-sedimentation assays quantifying bundling of actin filaments by the bundling protein fascin. Pre-polymerized actin filaments were incubated with fascin for 1 hr with TTFields (200 kHz, 1.0 V/cm, 37 °C) and without TTFields (37 °C) treatment. Reactions were spun at low-speed (10,000 x g) to pellet bundles and analyzed by SDS-PAGE. The supernatant contains monomeric actin and individual filaments. The pellet contains bundled actin. F, A indicate fascin (55 kDa) and actin (42 kDa) protein bands. The gels (A, C) represent one representative experiment. The graphs (B, D) represent the average of three experiments, and the error bars are the standard deviation.
 
-## The addition of chemotherapeutic agents to TTFields leads to reduced TNT formation and cell growth
+### The addition of chemotherapeutic agents to TTFields leads to reduced TNT formation and cell growth
 
 TTFields are used clinically in patients concomitant with standard-of-care chemotherapy. The degree to which the interactions between and effects of TTFields and chemotherapy given together are synergistic has been shown when adding pemetrexed to cisplatin chemotherapy (Mumblat et al., 2021). Demonstrating that TTFields exposure suppresses TNTs in MSTO-211H cells, we leveraged our ability to assess dynamic changes over time through continuous application of TTFields while capturing live-cell reaction during time-lapse microscopy. To do this, we utilized inovitro Live, a device that applies continuous TTFields while inserted into a tissue culture plate, and which is placed in an environmentally controlled microscope chamber. This experimental arrangement permits continuous viewing, imaging, and management of cells undergoing TTFields treatment in real time. Thus, we posited that addition of standard-of-care chemotherapeutic drugs cisplatin (C) and pemetrexed (P) (Alimta) would work at least additively, and possibly synergistically, in combination with TTFields.
 
@@ -72,7 +96,7 @@ We performed a series of time-lapse experiments with 6 experimental groups: Cont
 
 **Figure 3.:** (A) TNT formation following treatment with cisplatin and cisplatin + pemetrexed over 72 hr. Intensity and frequency were set at 1.0 V/cm and 200 kHz respectively with bidirectional field delivery. (B) Cell growth with chemotherapeutic reagents (C, cisplatin and P, pemetrexed) at 1.0 V/cm, 200 kHz, bidirectional. Results are indicative of one independent experiment (n=1) but with 45 technical replicates (TNTs/cell measured in multiple regions within the same experiment) averaged for each time period and condition.
 
-## TNT cargo transport
+### TNT cargo transport
 
 TNTs mediate a cell contact-dependent form of transfer of cellular contents resulting in direct communication between cells. As TTFields applied at 1 V/cm suppressed formation of TNTs in MSTO-211H, we next sought to assess the effects of TTFields at these parameters on the ability of intact TNTs to mediate intercellular transport. We sought to track two kinds of TNT cargo: gondolas (bulges) representing cellular cargo being transported via TNTs that can be tracked with brightfield microscopy, and mitochondria, which we tracked using standard commercially available fluorescent labels. Gondolas were analyzed in MSTO-211H cells treated with no TTFields (control) and 200 kHz unidirectional, 200 kHz bidirectional, and 150 kHz bidirectional TTFields (Figure 4A). Images were captured every 60 s for 1 hr and analyzed by the Fiji-ImageJ Manual Tracking plugin. In the control group, the average velocity of TNT transport was 3.59 µm/min. The average velocity of TNT transport was 3.94 µm/min, 4.07 µm/min, and 3.07 µm/min for cells treated with TTFields delivered unidirectionally at 200 kHz, bidirectionally at 200 kHz, or bidirectionally at 150 kHz, respectively. These findings indicated that there were no observable differences in visible cargo velocities moving through TNTs in cells treated with or without TTFields.
 
@@ -82,7 +106,7 @@ TNTs mediate a cell contact-dependent form of transfer of cellular contents resu
 
 Transport of mitochondria through TNTs has been extensively characterized to date (Lou et al., 2012), and could indicate another way TTFields impact TNT functionality. MSTO-211H cells were stained with MitoTracker Orange (Thermo Fisher Scientific) and plated for optimal TNT formation. The following day they were either treated with or without TTFields applied unidirectionally at 1.0 V/cm and 200 kHz. Images were captured every 60 s for 1 hr, and fluorescently labeled mitochondria were analyzed using Fiji-ImageJ Manual Tracking plugin. In the control group, we showed that the average velocity of mitochondria was 3.32 µm/min, with a standard deviation of 0.504 um/min, and with TTFields treatment an average velocity of 3.43 µm/min, with a standard deviation of 0.17 µm/min (Figure 4B). This finding indicated that similar to gondolas, there was no observable effect of TTFields on mitochondrial transfer in TNTs at the intensity and frequency that suppressed formation of TNTs.
 
-## Spatial transcriptomic signatures of tumors treated with TTFields: Genetic effects of applying the TTFields to treat tumors in an in vivo animal model of malignant mesothelioma
+### Spatial transcriptomic signatures of tumors treated with TTFields: Genetic effects of applying the TTFields to treat tumors in an in vivo animal model of malignant mesothelioma
 
 At present, there is no validated specific structural biomarker for TNTs, though there are proteins known to be upregulated in TNT formation in cancer phenotypes. Approaches to molecular analysis that could uncover TNT-specific biomarkers with high sensitivity would be an important advance for the field. At the same time, there are few studies reporting alterations in molecular pathways associated with TTFields-based treatment of cells or in vivo tumor models. We thus sought to leverage a spatial genomics approach to determine whether genes that have been associated with TNT formation and maintenance, are differentially expressed in a spatially distributed manner in intact tumors; and also to identify a convergent population of genes that are both differentially expressed following treatment using TTFields and also implicated in TNT biology. Within that context, to characterize alterations induced by TTFields at the genetic and molecular levels, and potential effects in particular on TNT-associated biomarkers, we performed spatial genomic analysis on an animal model of mesothelioma treated with TTFields, or alternately with heat as a sham for a negative control.
 
@@ -90,9 +114,156 @@ Eight total mice were injected with AB1 mesothelioma cells and assessed for tumo
 
 Analysis of gene expression showed that 22 of the CTA 1812 genes analyzed were differentially expressed (Figure 5, Table 1, Figure 5—source data 1). Broadly we found that the application of TTFields results in regulation of genes involved in cell adhesion and motility, PI3K-AKT signaling, and immune response; and to a lesser extent MAPK and MET signaling, and matrix remodeling-metastasis (Figure 5A). We focused on the subset of genes from the low Ki-67 ROIs, as the extent of their differentially expressed genes (DEG) was more pronounced. We reasoned that as the cells in these regions had a low rate of cell division, they were more affected by TTFields application, and thus potentially would be more likely to reveal genes that regulate TNT formation. We also performed analysis comparing ROI from areas of high vs. low Ki-67 index, in TTFields and heat sham-treated clusters (Figure 5—figure supplement 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/85383/elife-85383-fig5-v1.jpg)
+
+**Figure 5.:** (A) Categories of genes found to be differentially expressed. () indicates the number of genes, that fall into a given category. (B–C) Heatmap and Volcano plot generated by spatial omics analysis.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/85383/elife-85383-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) TTFields treated tumors; and (B) heat sham treated tumors.
+
+**Table 1.**
+ Differentially expressed genes (DEG) of TTFields-treated tumors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Log2 Fold Change</th>
+      <th>p-Adjusted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LYZ</td>
+      <td>1.9942</td>
+      <td>2.197E-07</td>
+    </tr>
+    <tr>
+      <td>COL1A1</td>
+      <td>1.9875</td>
+      <td>6.490E-05</td>
+    </tr>
+    <tr>
+      <td>HLA-DRB</td>
+      <td>1.9839</td>
+      <td>1.179E-03</td>
+    </tr>
+    <tr>
+      <td>COL1A2</td>
+      <td>1.5858</td>
+      <td>5.548E-08</td>
+    </tr>
+    <tr>
+      <td>CSF1</td>
+      <td>1.1208</td>
+      <td>8.689E-08</td>
+    </tr>
+    <tr>
+      <td>COL3A1</td>
+      <td>1.1203</td>
+      <td>2.727E-02</td>
+    </tr>
+    <tr>
+      <td>ACTA2</td>
+      <td>1.0931</td>
+      <td>4.455E-12</td>
+    </tr>
+    <tr>
+      <td>CX3CR1</td>
+      <td>1.0117</td>
+      <td>4.598E-12</td>
+    </tr>
+    <tr>
+      <td>C1R</td>
+      <td>1.0034</td>
+      <td>8.689E-08</td>
+    </tr>
+    <tr>
+      <td>HDAC5</td>
+      <td>1.0960</td>
+      <td>4.199E-04</td>
+    </tr>
+    <tr>
+      <td>PKM</td>
+      <td>1.1221</td>
+      <td>2.744E-02</td>
+    </tr>
+    <tr>
+      <td>INHBA</td>
+      <td>1.1502</td>
+      <td>1.010E-11</td>
+    </tr>
+    <tr>
+      <td>VEGFA</td>
+      <td>1.1652</td>
+      <td>7.205E-05</td>
+    </tr>
+    <tr>
+      <td>NR4A1</td>
+      <td>1.1725</td>
+      <td>1.958E-01</td>
+    </tr>
+    <tr>
+      <td>CD9</td>
+      <td>1.1966</td>
+      <td>7.562E-03</td>
+    </tr>
+    <tr>
+      <td>MASP1</td>
+      <td>1.3157</td>
+      <td>3.359E-04</td>
+    </tr>
+    <tr>
+      <td>SLC2A1</td>
+      <td>1.3392</td>
+      <td>3.051E-03</td>
+    </tr>
+    <tr>
+      <td>STC1</td>
+      <td>1.4611</td>
+      <td>3.623E-03</td>
+    </tr>
+    <tr>
+      <td>CEBPB</td>
+      <td>1.4803</td>
+      <td>7.251E-05</td>
+    </tr>
+    <tr>
+      <td>LRP1</td>
+      <td>1.5079</td>
+      <td>2.348E-03</td>
+    </tr>
+    <tr>
+      <td>HGF</td>
+      <td>2.0459</td>
+      <td>2.519E-06</td>
+    </tr>
+    <tr>
+      <td>FST</td>
+      <td>2.2774</td>
+      <td>6.837E-06</td>
+    </tr>
+    <tr>
+      <td>TNC</td>
+      <td>2.4863</td>
+      <td>2.002E-06</td>
+    </tr>
+  </tbody>
+</table>
+
 The genes most prominently affected (downregulated) in TTFields treated tumors as compared to the heat controls, were Tenascin C (TNC), FST, and HGF (Figure 5B and C, Table 1). TNC is a glycoprotein involved in the epithelial-to-mesenchymal transition, and was previously found by our group to be upregulated in TNT promoting conditions (Ady et al., 2014). TNC expression was 2.5-fold lower in TTFields-treated tumors compared to negative control (Table 1). In contrast, upregulation was most prominent for HLA-DRB, LYZ, COL1A1, and COL1A2. LYZ is associated with neutrophil degranulation and host defense peptides, whereas COL1A1, COL1A2 along with HGF, TNC, and VEGFA are all part of the PI3K pathway, which plays an important role in cancer progression, and has been implicated in TNT regulation (Wang et al., 2011). Expression of immunogenic markers with implications for efficacy of immuno-oncology therapeutic strategies were also found, and included CX3CR1, which was upregulated in TTFields-treated tumors overall, as well as the aforementioned HLA-DRB, C1R and COL3A1. Markers of angiogenic activity, such as VEGFA, which are also implicated in EMT, hypoxia signaling pathways and cell adhesion and motility, also were notably downregulated. In sum, application of TTFields altered a spectrum of metabolic and molecular signaling pathways that are well established in cell proliferation and division, ancillary pathways associated with construction and maintenance of the tumor matrix, while at the same time upregulating certain immunogenic markers.
 
 After investigating differential gene expression in mice tumors treated with TTFields vs. control (heat sham), we imaged excised tumors using confocal fluorescence microscopy to identify and characterize TNTs and similar protrusions within the intact tumor specimens. Mice tumors were prepared as described above and sectioned into 15 μm slices, and then mounted, deparaffinized, and stained with Sytox Green 488 and Alexa Fluor 647 Phalloidin as described in Methods below. Z-stacks and images were acquired at 60 x oil immersion. In the control heat-treated native tissue, we observed TNTs, representative samples of which are shown in Figure 6 and Figure 6—figure supplement 1. The one shown in Figure 6 is in the form of a TNT protrusion in a high Ki-67 expressed ROI, 4.5 µm long in the XY plane at 60 X. Analysis of the z-stack at Nyquist sampling using IMARIS 3D revealed an additional TNT protrusion of the same length labeled by Alexa Fluor 647 phalloidin; and both were suspended three-dimensionally within the tissue microenvironment of the sample (Figure 6—video 1). In TTFields-treated tissue, we similarly identified TNTs, or at least TNT-like protrusions, via analysis of a z-stacked 60 x field of view with high Ki-67 expression measuring approximately 4 µm in length (Figure 6C; Figure 6—video 2). Each of the identified protrusions was consistent in appearance with our previous results identifying TNTs/TNT-like protrusions connecting cells in intact human tumor specimens from mesothelioma patients. The observed differences resulted primarily from a much more densely packed stromatous environment in this animal model. The protrusions were both shorter in comparison to the human version, and also much shorter in length than the TNTs we observed in vitro.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/85383/elife-85383-fig6-v1.jpg)
+
+**Figure 6.:** BALB/C mice were injected with AB1 mesothelioma cells and resulting tumors were excised, sectioned, and used for NanoString GeoMx spatial profiling, as well as for imaging on a NIKON A1RSi light confocal microscope. (A–B) Map of tumor sections and selected ROIs used for GeoMx spatial profiling (white circles) and confocal microscopy (green rings) of (A) TTFields treated tumor; and (B) heat sham treated tumor. Insets are enlarged images of the high Ki67 ROI images selected for confocal microscopy, where Ki67 is stained in red, and nuclei in gray. (C–F) Z-stack projections of TNTs identified in selected ROIs, TTFields-treated tumor slices (C, E) and heat control slices (D,F) respectively. Z-stacks were acquired at 60 X using Nyquist sampling with Sytox Green 488 nuclear stain and Alexa Fluor Phalloidin 647. Arrows point to TNT protrusions within the sample.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/85383/elife-85383-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** BALB/c mice tumors were resected and sectioned as described in Figure 6. The length of the TNT identified by a white arrow was 3.45 μm.
 
 ## Discussion
 
@@ -122,19 +293,155 @@ In this study, we report novel cellular and molecular effects of TTFields in rel
 
 ## Materials and methods
 
-## Cell lines and culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapien)</td>
+      <td>Human fascin-1</td>
+      <td>GenBank</td>
+      <td>HGNC:HGNC:11148</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 DE3pLysS</td>
+      <td>Novagen</td>
+      <td>69451</td>
+      <td>competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapien)</td>
+      <td>Biphasic Mesothelioma</td>
+      <td>ATCC</td>
+      <td>CRL-2081</td>
+      <td>MSTO-211H</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapien)</td>
+      <td>Sarcomatoid Mesothelioma</td>
+      <td>Authenticated</td>
+      <td>Authenticated</td>
+      <td>VAMT</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGV67 plasmid</td>
+      <td>This paper</td>
+      <td>GST/TEV expression vector derived from p21d (Novagen 69743)</td>
+      <td>doi: 10.1074/jbc.M111.322958 [PMID:18640983] Nolen and Pollard, 2008</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GeoMx Mouse Cancer Transcriptome Atlas panel</td>
+      <td>NanoString Technologies, Inc.</td>
+      <td>GMX-RNA-NGS-CTA-4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay or kit</td>
+      <td>NucGreen Dead 488 ReadyProbes Reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>R37109</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-iT TUNEL Alexa Fluor 488 Imaging Assay</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>C10617</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen Pro 2012</td>
+      <td>Carl Zeiss Microscopy</td>
+      <td>Version 1.1.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GeoMx DSP software</td>
+      <td>NanoString Technologies, Inc.</td>
+      <td>Version 2.4.0.421</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAS</td>
+      <td>SAS Viya</td>
+      <td>Version 9.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Deseq package in R</td>
+      <td>R Foundation for Statistical Computing</td>
+      <td>Version 3.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>Version 7.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Fiji-ImageJ software</td>
+      <td>Fiji organization</td>
+      <td>Version 2.9.0/1.53 t</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nunc Thermanox coverslips</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>174977</td>
+      <td>22 mm plastic cell-culture coverslips used with inovitro, found in “inovitro TTFields treatment” subheading in Materials and Methods</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>35 mm high wall, glass bottom dish</td>
+      <td>Ibidi</td>
+      <td>81158</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MitoTracker Orange CMTMRos</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>M7510</td>
+      <td>fluorescent dye specific to mitochondria in cells, found in “Cargo and mitochondria transfer” subheading in Materials and Methods</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell lines and culture
 
 MSTO-211H cells are a biphasic MPM cell line that was purchased from the American Type Culture Collection (ATCC, Rockville, MD, USA) for use in this study. VAMT is a sarcomatoid MPM cell line that was authenticated prior to use using STR profiling. Both cell lines were grown in RPMI-1640, supplemented with 10% Fetal Bovine Serum (FBS), 1% Penicillin-Streptomycin, 1 x GlutaMAX (all from Gibco Life Technologies, Gaithersburg, MD, USA), and 0.1% Normocin anti-mycoplasma reagent (Invivogen, San Diego, CA, USA). Cells were confirmed as negative for mycoplasma infection and were maintained in a humidified incubator at 37 °C with 5% carbon dioxide. Cell viability was assayed by treating cells with NucGreen Dead 488 ReadyProbes Reagent (Invitrogen, Carlsbad, CA, USA), imaging seven random fields of view, and quantifying these fields. Apoptosis and DNA fragmentation were assayed with Click-iT TUNEL Alexa Fluor 488 Imaging Assay (Thermo Fisher Scientific, Waltham, MA, USA) according to the manufacturer’s instructions.
 
-## inovitro TTFields treatment
+### inovitro TTFields treatment
 
 An inovitro device, provided by Novocure, Ltd (Haifa, Israel), was used to apply continuous bidirectional TTFields treatment to cells. One day prior to treatment with TTFields, 22 mm plastic cell-culture treated coverslips (Thermo Fisher Scientific Nunc Thermanox, Waltham, MA, USA) were placed inside sterile ceramic dishes. MSTO-211H cells (40,000) in 2 ml of growth media were plated onto the coverslips, and the dishes were placed in a base plate in a humidified incubator at 37 °C with 5% carbon dioxide overnight. To apply TTFields to the cells, the ceramic dishes were connected to an inovitro Generator Box. inovitro software controls and monitors the electrical resistance, voltage, and current in real time, while the temperature in the incubator is directly correlated with the intensity of the electric field. The temperature was set at 32 °C to deliver an intensity of 0.5 V/cm and at 26.5 °C for an intensity of 1.0 V/cm20. Additionally, the frequency of the electric field was set at 200 kHz for all conditions in both cell lines, barring any initial frequency testing and cell viability assessment. All intensity values were expressed in root mean square (RMS) values to illustrate the conventional depiction of alternating current measurements in physics fields. The treated group was exposed to TTFields for 72 hr in both 0.5 V/cm and 1.0 V/cm experiments. For the 1.0 V/cm experiments, the TTFields were shut off at 72 hr, and the cells were incubated for another 24 hr to assess recovery of TNTs. Cells in the control group were not treated with TTFields and were plated as described above and placed in an incubator at 37 °C with 5% carbon dioxide for the duration of the experiment. The low-density experiments were run as described above with the exception that only 10,000 cells were plated onto a coverslip, and TTFields application followed 3 hr later.
 
-## TNT analysis and quantification
+### TNT analysis and quantification
 
 Quantification and visual identification of TNTs were performed as described previously (Lou et al., 2012; Rustom et al., 2004; Ady et al., 2016; Ady et al., 2014; Thayanithy et al., 2014). Briefly, these parameters included (i) lack of adherence to the substratum of tissue culture plates, including visualization of TNTs passing over adherent cells; (ii) TNTs connecting two cells or if extending from one cell were counted if the width of the extension was estimated to be <1000 nm; and (iii) detection of a narrow base at the site of extrusion from the plasma membrane. Cellular extensions that were not clearly identified with the above parameters were excluded. Still images and time-lapse videos were analyzed using Fiji-ImageJ software. The Fiji-ImageJ Multi-point tool was used to quantify TNTs and cell number following the criteria detailed above; and the TNT index was calculated as the number of TNTs per 100 cells. The X, Y coordinate function was used to calculate the length of TNTs, using a conversion of 0.335 μm/pixel with a 20 x objective.
 
-## Time-lapse microscopic imaging with concurrent continuous administration of TTFields using inovitro Live
+### Time-lapse microscopic imaging with concurrent continuous administration of TTFields using inovitro Live
 
 An inovitro Live device, provided by Novocure, Ltd (Haifa Israel), was used to apply continuous unidirectional or bidirectional TTFields exposure to cells. One day prior to treatment, 40,000 MSTO-211H cells were plated onto a 35 mm high wall, glass bottom dish (Ibidi, Gräfelfing, Germany), and allowed to adhere overnight. For the unidirectional and bidirectional experiments, the glass bottom dish was coated with Poly-D-Lysine (Millipore Sigma, Burlington, MA) at a concentration of 1 mg/µM for 1 hr then dried for 2 hr prior to plating. The next day, an inovitro Live insert was positioned in the 35 mm dish, and placed in the microscope chamber. The plate was connected to an inovitro Live cable, and a heating element was added on top of the dish cover to minimize condensation from heat generated by TTFields. The cable was then connected to an inovitro Live Generator, and the software controlled the delivery of an electric field in either one (unidirectional) or two (bidirectional) directions at an intensity of 1.0 V/cm and either 150 or 200 kHz. Media was changed every 24 hr, during which TTFields were paused and then resumed once the cells were placed back into the incubator. The cells for the control group were plated as described above and placed in the microscope chamber at 37 °C, without TTFields, for the duration of the experiment. Seven Fields of View (FOV) were selected every 24 hr, up to 72 hr and both cell proliferation and TNT formation were quantified.
 
@@ -142,48 +449,48 @@ As an additional experimental arm, MSTO-211H cells were also treated with cispla
 
 Still images and time-lapse videos were taken on a Zeiss AxioObserver M1 Microscope. In order to deliver TTFields at an intensity of 1.0 V/cm, the microscope chamber temperature was set to 26.5 °C. Images were taken on a 20 X PlanApo-Chromat objective with a numerical aperture of 0.8. We used a Zeiss Axio Cam MR camera with 6.7x6.7 µm width, and spatial resolution (dx = dy) at 20 X was 0.335 µm/pixel. Images were acquired on Zen Pro 2012 software in brightfield.
 
-## Cargo and mitochondria transfer
+### Cargo and mitochondria transfer
 
 Cargo Transfer within TNTs was calculated using the Manual Tracking Plugin on Fiji-ImageJ. The X, Y coordinate of each cargo was recorded over time, and exported to a spreadsheet. To calculate velocity of cargo, X and Y pixel measurements were converted into microns using the scale factor 0.335 µm/pixel (20 x objective). Then, the distance formula was implemented for Xn and Yn values, where n is any subsequent location of the cargo in relation to the first location, X1 and Y1. This process was repeated for each cargo track to calculate distance. Finally, each distance was divided by the time interval between frames. To track mitochondria, MSTO-211H cells were stained with MitoTracker Orange CMTMRos (Thermo Fisher Scientific, Waltham, MA, USA) and followed the same experimental setup and analysis as described above.
 
-## Actin and fascin purification
+### Actin and fascin purification
 
 Actin was purified from chicken skeletal muscle by one cycle of polymerization and depolymerization using standard protocols in the field (Spudich et al.). It was then filtered on Sephacryl S-300 resin (GE Healthcare) in G-buffer (2 mM Tris (pH 8.0), 0.2 mM ATP, 0.5 mM DTT, 0.1 mM CaCl2) to obtain actin monomers, and stored at 4 °C. Human fascin-1 was expressed with an N-terminal glutathione s-transferase (GST) tag and a TEV cleavage recognition sequence from the pGV67 plasmid in BL21 DE3pLysS competent cells. Transformants were grown in 1 L of LB broth, induced at OD600~0.6 with 0.5 mM IPTG, and shaken overnight (200 rpm, 17 °C). To purify fascin, cell pellets were resuspended in lysis buffer (50 mM Tris, pH 8.0, 500 mM NaCl, 1 mM DTT) and sonicated. Lysed cells were centrifuged (~30,000 x g, 4 °C) for 40 min to isolate the soluble cell components. Samples were rotated with glutathione agarose resin (pH 8.0) for 1 hr at 4 °C, washed, and eluted (50 mM Tris, pH 8.0, 100 mM NaCl, 1 mM DTT, 100 mM glutathione). Eluted fractions were incubated with TEV protease (1.6 µM) for GST tag cleavage and dialyzed into glutathione-free buffer overnight. To remove GST contaminants and TEV protease, samples were filtered through glutathione resin followed by amylose resin. Collected flow throughs were concentrated using centrifugal filters (MilliporeSigma Amicon, MWCO 30 K). Samples were frozen in liquid nitrogen and stored at –80 °C.
 
-## Actin polymerization and bundling sedimentation assays
+### Actin polymerization and bundling sedimentation assays
 
 Actin was polymerized at 37 °C in KMEI buffer (50 mM KCl, 1 mM MgCl2, 1 mM EGTA, 10 mM Imidazole pH 7.0) for 1 hr with and without 1.0 V/cm inovitro device TTFields treatment. Samples were centrifuged at 100,000 x g for 30 min at 4 °C to separate filaments and monomers. Supernatant and pellet fractions were analyzed via SDS-PAGE (12% acrylamide). Gels were then stained with Coomassie Blue for 1 hr and destained for at least 6 hours (10% ethanol, 7.5% acetic acid). Band intensities were quantified via densitometry using Fiji-ImageJ. For bundling, actin (15 µM) was first polymerized for 1 hr at 37 °C in KMEI buffer. The assembled filaments were diluted to 3 µM and added to a solution with fascin (300 nM). After 1 hr with and without 1.0 V/cm TTFields treatment, samples were centrifuged at 10,000 x g for 30 min at 4 °C to pellet bundled actin. SDS-PAGE and band quantification were carried out as described previously.
 
-## Spatial genomics
+### Spatial genomics
 
 Blocks of formalin-fixed paraffin-embedded (FFPE) mesothelioma tumors that were treated with sham heat or TTFields were generously provided by Novocure, Ltd for Nanostring GeoMx spatial transcriptomic analysis. In brief, eight female mice (Mus musculus species, strain C57BL, aged 13 weeks) were subcutaneously injected with AB1 mouse mesothelioma cells. After tumors formed, mice were treated with heat or TTFields using the inovivo device (Novocure, Ltd) for a total of 14 days: 7 days of treatment, 2 days of rest, and 7 days of additional treatment. The tumors were excised, formalin fixed and paraffin embedded, and sent to our lab. With these tumor blocks, one 5 µm section from each tumor was placed on a glass slide for Nanostring GeoMx analysis (Seattle, WA). The slide was incubated with Ki-67 antibodies and the GeoMx Mouse Cancer Transcriptome Atlas panel of 1,812 RNA probes. Regions of interest (ROIs) were chosen, and the unique DNA indexing-oligonucleotide tags were cleaved from the RNA probes within the ROIs. These tags were then sequenced and analyzed with GeoMx DSP software.
 
-## Microscopy imaging of intact tumors from our animal model of MPM
+### Microscopy imaging of intact tumors from our animal model of MPM
 
 Eight BALB/c mice were injected with murine AB mesothelioma cells, and then treated with either TTFields or heat sham (negative control).Tumors were excised and sectioned into 15 µm sections. These sections were mounted on coverslips, deparaffinized, and stained with a nuclear dye (Sytox Green 488, ThermofisherScientific, USA, S7020) and a phalloidin stain (Alexa Fluor 647, Thermo Fisher Scientific, USA, A22287) following permeabilization with 0.1% Triton-X. They were then mounted with Prolong Gold Antifade reagent (Thermo Fisher Scientific, USA, P36930) and covered with 1.5 thickness coverslips.
 
 Fluorescence images were acquired by using an inverted Nikon Ti-E microscope (NIKON A1R SI, Tokyo, Japan) and an MCL NanoDrive Piezo Z Drive stage (Mad City Labs Inc Wisconsin, United States) through a 60 x oil immersion objective lens (NA = 1.4, Plan Apo lambda correction collar, Tokyo, Japan). Samples were excited with 488 nm laser power set to 3.5% and a 638 nm laser with power set to 14.2%. Lasers were scanned with Galvano mirrors at a scanning speed of 0.25 with a zoom setting of 2.392 and a line average of 8. Pinhole diameter was set to 38.31 µm and emitted light was passed through a 408/488/561/640 dichroic mirror. Emitted light was then detected by DU4 GaAsP detectors with gain settings of 54 for the blue light detector and 96 for the far-red light detector. Filter cubes from the Chroma series were used for both dyes (99022 and 99023) for Sytox 488 and Alexa Fluor 647, respectively. Images were captured on a Hamamatsu FLASH 4 camera (Hamamatsu Photonics, Hamamatsu City, Japan) with voxel dimensions of 0.108 µm in XY and 0.222 µm in Z with PMT confocal detectors and using NIKON A1 Elements software (NIKON, Melville, New York, United States) for acquisition. To calculate step size of z stacks and optimal imaging resolution, Nyquist sampling was performed. Images were processed with iterative prediction advanced denoising followed by 3D automatic deconvolution with a theoretical point spread function (based on emission wavelengths of fluorophores used), automatic background subtraction, and spherical aberration correction. Z stacks were then rendered and animated using Imaris (Oxford Instruments, Beijing, China, version 5.42.03).
 
-## Statistical Analysis
+### Statistical Analysis
 
-## inovitro Experiments
+#### inovitro Experiments
 
 Due to lower sample sizes and skewed distributions of TNTs/cell, heteroscedastic t-tests were performed to assess significance in differences between TNTs/cell. Significance tests were performed on GraphPad Prism 7.0 (GraphPad Software, Inc, La Jolla, CA, USA). p-values less than 0.05 indicated statistically significant differences; and error bars were included in graphs to depict standard error.
 
-## Bidirectional versus unidirectional inovitro experiments
+#### Bidirectional versus unidirectional inovitro experiments
 
 The number of TNTs/cell after TTFields exposure was compared within treatment groups as a function of time using a linear mixed model to account for the repeated measures at each time point and treatment condition within each experiment. A compound symmetry correlation structure was assumed. Least squares means and standard errors are reported. Overall tests and pairwise comparisons are reported; and no adjustments for multiple comparisons were made. Data were analyzed using SAS 9.4 (Cary, NC) and p-values <0.05 were considered statistically significant.
 
-## Spatial genomics
+#### Spatial genomics
 
 A Wald test was performed to assess significance in differentially expressed genes from TTFields vs heat treated mice using the Deseq package in R (R Foundation for Statistical Computing, Vienna, Australia). For each p value generated, a Benjamini-Hochberg adjusted p-value was acquired to reduce false-positive rate and reported.
 
-## Animal use and ethical approval
+#### Animal use and ethical approval
 
 This study was performed in strict accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All of the animals were handled according to approved institutional animal care and use committee (IACUC) protocols (QSF-GLP-059) of Novocure. The protocol was approved by the Israeli National Committee Council for Experiments on Animal Subjects (IL-19-12-484). All surgery was performed under ketamine-xylazine anesthesia, and every effort was made to minimize suffering.
 
 Animals specifically used were of the Mus musculus species (strain C57BL), female at 13 weeks, with no genetic modification, supplied by Envigo (Jerusalem, Israel, catalog number 2BALB/C26).
 
-## Adherence to community standards
+#### Adherence to community standards
 
 ARRIVE and ICJME guidelines were followed for this work.

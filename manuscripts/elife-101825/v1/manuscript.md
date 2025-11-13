@@ -10,7 +10,7 @@
 ### Affiliations
 
 1. Department of Neurobiology, Harvard Medical School Boston United States
-2. https://ror.org/04p491231 Department of Neural and Behavioral Sciences, The Pennsylvania State University Hershey United States
+2. Department of Neural and Behavioral Sciences, The Pennsylvania State University Hershey United States ([ROR:04p491231](https://ror.org/04p491231))
 
 † Corresponding author
 
@@ -28,13 +28,162 @@ In this study, we determine whether PCs make synapses and inhibit cells within v
 
 ## Results
 
-## Visualization of PC projections to the brainstem
+### Visualization of PC projections to the brainstem
 
 We visualized PC synapses in the brainstem of PC/synaptophysin-tdTomato mice in which synaptic boutons are intensely labeled, and axons, dendrites, and somata weakly labeled. We imaged synaptophysin-tdTomato in both sagittal (Figure 1A) and coronal sections (Figure 1B), and aligned the images to the Allen Common Coordinate Framework (CCF) (Wang et al., 2020) based on the contours of the tissue. Abbreviations are as listed in Table 1. We collapsed the vestibular subnuclei (MV, LAV, etc.) into the VN, and labeled the territories encompassing the dorsomedial pons as simply the PCG (see Methods). Likewise, the rostral/caudal or medial/lateral divisions of other nuclei are not annotated specifically (PGRN, NTS, etc.).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/101825/elife-101825-fig1-v1.jpg)
 
 **Figure 1.:** (Aa) First column. Diagram showing parasagittal slice location. Second column. Low magnification views of tdTomato (tdT) fluorescence (red) in the cerebellar cortex and brainstem. Third column. Medium magnification views of the regions indicated in Ab. Fourth column. Anatomical regions corresponding to the preceding column. Last column. i–iv. High magnification views of the regions indicated in the preceding column. (Ab–d) As in Aa, but for subsequent parasagittal slices. (B) As in A, but for coronal slices.
+
+**Table 1.**
+ Abbreviations of brainstem anatomical regions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Nuclei</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>B</td>
+      <td>Barrington’s nucleus</td>
+      <td>PRP</td>
+      <td>Prepositus nucleus</td>
+    </tr>
+    <tr>
+      <td>CU</td>
+      <td>Cuneate nucleus</td>
+      <td>SG</td>
+      <td>Supragenual nucleus</td>
+    </tr>
+    <tr>
+      <td>DCO</td>
+      <td>Dorsal cochlear nucleus</td>
+      <td>SLD</td>
+      <td>Sublaterodorsal nucleus</td>
+    </tr>
+    <tr>
+      <td>DTN</td>
+      <td>Dorsal tegmental nucleus</td>
+      <td>SPIV</td>
+      <td>Spinal vestibular nucleus</td>
+    </tr>
+    <tr>
+      <td>ECU</td>
+      <td>External cuneate nucleus</td>
+      <td>SPVI</td>
+      <td>Spinal nucleus of the trigeminal</td>
+    </tr>
+    <tr>
+      <td>GRN</td>
+      <td>Gigantocellular reticular nucleus</td>
+      <td>SUT</td>
+      <td>Supratrigeminal nucleus</td>
+    </tr>
+    <tr>
+      <td>IP</td>
+      <td>Interposed nucleus</td>
+      <td>SUV</td>
+      <td>Superior vestibular nucleus</td>
+    </tr>
+    <tr>
+      <td>LAV</td>
+      <td>Lateral vestibular nucleus</td>
+      <td>VN</td>
+      <td>Vestibular nucleus</td>
+    </tr>
+    <tr>
+      <td>LC</td>
+      <td>Locus coeruleus</td>
+      <td>X</td>
+      <td>Nucleus X</td>
+    </tr>
+    <tr>
+      <td>LDT</td>
+      <td>Laterodorsal tegmental nucleus</td>
+      <td>XII</td>
+      <td>Hypoglossal nucleus</td>
+    </tr>
+    <tr>
+      <td>MEV</td>
+      <td>Mesencephalic trigeminal nucleus</td>
+      <td>Y</td>
+      <td>Nucleus Y</td>
+    </tr>
+    <tr>
+      <td>MV</td>
+      <td>Medial vestibular nucleus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NI</td>
+      <td>Nucleus incertus</td>
+      <td></td>
+      <td>Ventricles</td>
+    </tr>
+    <tr>
+      <td>NTS</td>
+      <td>Nucleus of the solitary tract</td>
+      <td>V4</td>
+      <td>Fourth ventricles</td>
+    </tr>
+    <tr>
+      <td>NTSl</td>
+      <td>Nucleus of the solitary tract, lateral</td>
+      <td>V4r</td>
+      <td>Fourth ventricle (lateral recess)</td>
+    </tr>
+    <tr>
+      <td>NTSm</td>
+      <td>Nucleus of the solitary tract, medial</td>
+      <td></td>
+      <td>Fiber tracts</td>
+    </tr>
+    <tr>
+      <td>PARN</td>
+      <td>Parvicellular reticular nucleus</td>
+      <td>arb</td>
+      <td>Arbor vitae</td>
+    </tr>
+    <tr>
+      <td>PB</td>
+      <td>Parabrachial nuclei</td>
+      <td>icp</td>
+      <td>Inferior cerebellar peduncle</td>
+    </tr>
+    <tr>
+      <td>PCG</td>
+      <td>Pontine central gray</td>
+      <td>scp</td>
+      <td>Superior cerebellar peduncle</td>
+    </tr>
+    <tr>
+      <td>PGRN</td>
+      <td>Paragigantocellular reticular nucleus</td>
+      <td>sptv</td>
+      <td>Spinal tract of the trigeminal nerve</td>
+    </tr>
+    <tr>
+      <td>PGRNd</td>
+      <td>Paragigantocellular reticular nucleus, dorsal</td>
+      <td>VIIn</td>
+      <td>Facial nerve</td>
+    </tr>
+    <tr>
+      <td>PRNr</td>
+      <td>Pontine reticular nucleus</td>
+      <td>vVIIIn</td>
+      <td>Vestibular nerve</td>
+    </tr>
+  </tbody>
+</table>
 
 In low magnification images (Figure 1A and B, left images), labeling is observed in the cerebellar nuclei and brainstem. In sagittal views, brainstem labeling is sparser in the medial sections than in lateral sections. In coronal sections, the brainstem labeling is densest at bregma –5.85 mm, and sparser in anterior and posterior sections. Medium (Figure 1A and B, second column from left) and high magnification images (Figure 1A and B i–iv) showed highly variable densities of PC boutons in different regions. In some regions, labeling was extremely faint for medium magnification images, but putative PC boutons were apparent at higher magnifications (e.g. in the PCG in Figure 1Aa i and Ba ii).
 
@@ -44,7 +193,7 @@ Low levels of labeling were apparent in many other brainstem regions. In the PCG
 
 These fluorescence images establish that there is considerable variation in the densities of putative PC boutons between and within various brainstem regions. The highest densities of putative PC boutons are present in the range bregma –5.85 mm to –5.95 mm, and 1.5–2 mm from the midline. Notably putative PC boutons were only observed in the dorsal region of the brainstem.
 
-## Quantification of PC synapses in the brainstem
+### Quantification of PC synapses in the brainstem
 
 To quantify the densities of PC synapses in the brainstem, we detected individual PC boutons, and registered images to the Allen CCF. Experiments were performed in PC/synaptophysin-tdTomato/CGRP-GFP (Pcp2creRosa26Ai34DCalcaGFP) mice. We used synaptophysin-tdTomato fluorescence to label putative PC boutons, vesicular GABA transporter (vGAT) immunohistochemistry to visualize all GABAergic synapses, and CGRP-GFP to label subnuclei to aid in atlas alignment. The resulting alignment is shown for a coronal slice (Figure 2A, see Methods). To quantify synapses, confocal images were taken for a z-stack of 1.5 µm of the dorsal brainstem bilaterally. All regions previously observed with tdTomato signal (Figure 1) were imaged, as well as additional sections with no obvious labeling within 100 µm of labeled regions. Since weak tdTomato labeling is observed in the axons of PCs, vGAT immunohistochemistry was used to help identify putative presynaptic sites. In addition, PC contributions to total inhibition in each region can be measured by comparing GABAergic boutons without tdTomato labeling (Figure 2B, lower right, gray dots) or with tdTomato colabeling (Figure 2B, lower right, red dots, see Methods). This approach identifies putative presynaptic sites but does not identify functional synapses.
 
@@ -60,7 +209,7 @@ There is a posterior to anterior gradient of putative PC presynaptic boutons in 
 
 PC synapses are present but at low densities within the PCG and nearby subnuclei including the LC, Barrington’s nucleus, sublaterodorsal nucleus, laterodorsal tegmental nucleus, dorsal tegmental nucleus, and supragenual nucleus (Figure 2C, bregma –5.45 mm to –5.65 mm). Putative PC boutons make up a small fraction of inhibitory synapses in these areas (Figure 2F). The Barrington’s nucleus and the laterodorsal tegmental nucleus had a higher PC density and fraction of inhibition, although it is important to note that these PCG subregions are relatively small in area. The LC, which is labeled in CGRP mice, had few putative PC boutons with a slightly elevated PC density count in a few posterior sections.
 
-## Characterization of functional properties of PC synapses in the brainstem
+### Characterization of functional properties of PC synapses in the brainstem
 
 To confirm these PC connections in different brainstem regions and examine their strength, we optically stimulated PC fibers in coronal brain slices of the dorsal brainstem in PC/ChR2-YFP (Pcp2creRosa26Ai32) mice and measured IPSCs. It is likely that this approach provides a good estimate of connectivity even when PC axons are cut, because severed axons expressing ChR2 can be optogenetically activated to evoke synaptic responses (Mao et al., 2011; Petreanu et al., 2007; Petreanu et al., 2009; Jackman et al., 2014). We recorded optically evoked IPSCs in 133 of 310 neurons in the dorsal brainstem (between bregma –5.45 mm and –6.35 mm) to generate a physiological map of PC inputs to the brainstem. The IPSC amplitudes of the recorded brainstem neurons (Figure 3A, grayscale color-coded) are shown along with the density maps of putative PC boutons from Figure 2. For the density map, PC bouton counts were binned into 144×144×4 μm3 volumes, and averaged across the multiple sections. The likelihood of optically evoking a PC-IPSC varied with coronal section from anterior to posterior was 9%, 32%, 51%, and 45% (–5.45, –5.65, –6.05, and –6.35 mm to Bregma). We quantified the response amplitudes (Figure 3B), probability of evoking a PC-IPSC (Figure 3C), and the IPSC amplitudes (Figure 3D), and displayed results of notable regions.
 
@@ -72,7 +221,7 @@ In the most anterior slices (Bregma –5.45 mm and –5.65 mm), PC-IPSCs were no
 
 In more posterior slices (Bregma –6.05 mm and –6.35 mm), PC-IPSCs were evoked in a high percentage of cells in the SUV, LAV, MV, and PRP (45%, 59%, 58%, and 52% respectively, Figure 3C). The SUV and LAV had predominantly large IPSCs in responding cells, with most evoked currents larger than 500 pA and the average PC-IPSC of responding cells was several nanoamps. In the SPIV, MV, and PRP, PC-IPSCs ranged from 50 pA to ~2 nA and average IPSC amplitudes of responding cells were less than 1 nA (Figure 3B and D). Overall, PC-IPSCs were evoked in a larger percentage of cells in regions with a high density of PC boutons (Figure 3E).
 
-## Assessing PC inputs to the LC and mesencephalic trigeminal neurons
+### Assessing PC inputs to the LC and mesencephalic trigeminal neurons
 
 There are many types of molecularly distinct neurons in the brainstem (Nardone et al., 2024), which could be differentially targeted by PCs and contribute to the highly heterogeneous amplitudes of evoked PC-IPSCs we observed. We therefore took a targeted approach to record from neurons in the MEV and LC, which are distinct neuron populations with well-characterized markers that are in close proximity to PC boutons and to areas with large PC inputs (the PB and vestibular nuclei, Figure 4A). Previous trans-synaptic tracing efforts had also suggested potential PC inputs to these cells, but functional characterizations of these connections are lacking (Chen et al., 2023; Schwarz et al., 2015; Sun et al., 2020; Breton-Provencher and Sur, 2019).
 
@@ -86,29 +235,29 @@ We also used optogenetics and immunohistochemistry to examine PC-IPSCs in the LC
 
 ## Discussion
 
-## Widespread but nonuniform PC inputs to the brainstem
+### Widespread but nonuniform PC inputs to the brainstem
 
 Here, we find that PCs make direct synapses within numerous brainstem nuclei. The densities of these synapses vary widely in different nuclei. There is also a pronounced gradient of PC synapses across the dorsal-ventral axis of the several brainstem nuclei, indicating that PCs do not uniformly regulate activity within these nuclei. The combination of synaptophysin-TdT expression restricted to PCs and vGAT immunohistochemistry allowed us to quantify the absolute number and density of putative PC boutons, and the fraction of inhibitory inputs that are from PCs for each region. Putative PC boutons comprised up to 75% of the inhibitory synapses in some vestibular regions and 55% in the caudal PB. Thus, PCs make prominent contributions to inhibition in some brainstem regions that are comparable to levels observed in cerebellar nuclei (72%) (De Zeeuw and Berrebi, 1995). In contrast, in the PRP and PCG, PCs provide a low total number of inputs (PRP, PCG vs. VN; 0.002, 0.006, >0.01 synapses/µm2, respectively) and a small fraction of inhibitory inputs (4%, 8%, 15–50%), where they inhibit only a modest fraction of cells (13%, 33%, 54%). In all of these regions, PCs likely function similarly to their inputs to the cerebellar nuclei, where a very brief pause in firing can lead to large and rapid elevations in target cell firing (Han et al., 2020; Wu et al., 2024), but PCs regulate the firing of a very different fraction of cells in brainstem nuclei and can do so in a variety of different ways (Shin et al., 2011; Najac and Raman, 2015; Özcan et al., 2020).
 
-## PC synapses in the PCG and nearby regions
+### PC synapses in the PCG and nearby regions
 
 We establish that there are PC boutons within the PCG and associated nuclei, and that there are strong PC synapses in this region. This suggests that PCs play a role in regulating activity in these regions and in the behaviors they control. However, the PCG is enigmatic in structure and function, with the most commonly used mouse atlases disagreeing on the borders and identity of subnuclei (Wang et al., 2020; Paxinos and Franklin, 2019; Kronman et al., 2023) (see Methods). Barrington’s nucleus, a region that controls micturition (Hou et al., 2016; Verstegen et al., 2017), stands out as being well defined anatomically and functionally, and is a promising candidate for regulation by PCs. Our previous study raised the possibility that PCs in the posterior vermis might directly target cells in Barrington’s nucleus (Chen et al., 2023), but this study relied on AAV1 injections in the cerebellum, that in addition to anterogradely labeling PC targets, could have retrogradely labeled cells in Barrington’s nucleus if they project to the cerebellar cortex. Our results highlight the challenges in studying PC synapses in the PCG and related nuclei. We observed putative PC boutons and synaptic connections for cells in the vicinity of Barrington’s nucleus (Figures 2 and 3). As suggestive as these findings are, it remains an open question whether direct PC synapses to Barrington’s nucleus control micturition without additional experiments using molecular markers to identify Barrington’s nucleus. Similarly, further studies are needed to identify other PC targets in the PCG and determine what behaviors they control.
 
-## Gradients of PC synapses in the brainstem
+### Gradients of PC synapses in the brainstem
 
 In general, PCs inputs to brainstem nuclei are spatially heterogenous. The caudal-rostral gradient of putative PC boutons in the PB allows PCs to target specific subtypes of PB neurons (Chen et al., 2023). We find that putative PC boutons in the PCG and nearby subnuclei also exhibit a caudal-rostral gradient. Additional studies are needed to identify PC targets in these regions and to determine the significance of their spatial heterogeneity. There is also a pronounced dorsal-ventral gradient in many vestibular subnuclei and related nuclei. Previous studies suggested that PCs do not project to all regions of the VN, but they were unable to quantify the regional densities of putative PC boutons. Labeling individual PCs or those within subregions of the cerebellar cortex helped to determine their specific projections in the VN (Barmack, 2003; Wylie et al., 1994; Shojaku et al., 1987; Tabuchi et al., 1989; Blot et al., 2023), but did not label all PC boutons in the VN. Immunohistochemical methods targeting proteins selectively expressed in PCs offer the potential to label all PC boutons in the VN. Calbindin is a widely used PC marker, but its presence in vestibular afferents compromises its use in the VN (Kevetter, 1996). PKCγ is also expressed by PCs, but has the advantage that it is not present in vestibular afferents (Barmack et al., 2000). The lack of PKCγ immunoreactivity established that PC synapses are absent in the ventral VN, which is qualitatively similar to what we observe. However, the possibility that PKCγ is expressed by other cell types projecting to the VN complicates the use of PKCγ labeling as a definitive marker for identifying PC synapses. Our studies establish that PC synapses are present at high densities throughout the SUV; in the dorsal LAV, MV, PRP, SPIV; in subregions of the ECU; and there are large subregions that are devoid of PC synapses. Multiple lines of evidence suggest that PC synapses in the VN play a role in canceling self-motion related to eye movements and proprioception (Cullen, 2023). The distribution of synapses suggests that processing within VN subnuclei is spatially segregated according to the locations of PC synapses, implying that PC feedback potentially cancels signals related to self-motion specifically within these regions.
 
-## Brainstem regulation by direct PC inputs or indirectly via the deep cerebellar nuclei
+### Brainstem regulation by direct PC inputs or indirectly via the deep cerebellar nuclei
 
 PCs can also disynaptically influence the brainstem by disinhibiting cells in the deep cerebellar nuclei that in turn project to the brainstem. It is likely that some brainstem regions receive both direct PC input and indirect inputs from the deep cerebellar nuclei (Novello et al., 2024; Fujita et al., 2020; Judd et al., 2021), and that these two different pathways serve different roles. For example, direct and indirect inputs that target different regions of the PB are implicated in different behaviors (Chen et al., 2023; Hwang et al., 2023). The deep cerebellar nuclei projections to the vestibular nuclei are not well understood, but they are likely a mix of excitatory and inhibitory inputs (Fujita et al., 2020; Judd et al., 2021; Bagnall et al., 2009). This raises the possibility that the indirect pathway through the deep cerebellar nuclei has the added flexibility of providing both excitation and inhibition.
 
-## Lack of significant PC inputs to LC neurons
+### Lack of significant PC inputs to LC neurons
 
 We find that PCs do not provide a significant direct input to the LC. This has been controversial because retrograde labeling studies using rabies viruses concluded that PCs constitute one of the largest groups of cells projecting to the LC (Schwarz et al., 2015; Figure 2h and i), even though PCs did not appear to innervate the core of the LC (Chen et al., 2023 and Figures 1 and 2). We directly assessed PC to LC connection strengths using a cre line that is highly selective for PCs, and we found that in PC/ChR2-YFP mice, tiny optically evoked PC-IPSCs (~50 pA) were observed in just 3% of LC neurons. The average IPSC size for all cells was less than 2 pA. This indicates that within the LC, inhibition originates from brain regions other than PCs (Breton-Provencher and Sur, 2019). The cerebellum may still regulate firing in the LC, but it does so via connections through the deep cerebellar nuclei and the LC (Carlson et al., 2021; Cedarbaum and Aghajanian, 1978; Aston-Jones et al., 1986).
 
 Together, these findings indicate that reliance on anatomical tracing experiments alone is insufficient to establish the presence and importance of a synaptic connection. Studies highlighting PC inputs to the LC were conducted using rabies-tracing methods (Schwarz et al., 2015; Sun et al., 2020; Breton-Provencher and Sur, 2019), which have limitations. These viruses have unknown tropism, unclear synapse specificity, and critically depend on the degree to which the ‘starter’ cell population is restricted to the intended cell type, which can be complicated by inappropriate expression, and by the sensitivity of TVA-based rabies infection (Beier, 2021; Rogers and Beier, 2021). We were fortunate to have a highly selective cre line to selectively target PCs that allowed us to examine PC synapses in the brainstem while avoiding complications that can occur when using viruses.
 
-## PC targets in the brainstem
+### PC targets in the brainstem
 
 The next step in clarifying the PC to brainstem outputs and the behaviors they regulate is to determine the molecular identity of target cells. This is challenging because there are many types of neurons present in the brainstem (Nardone et al., 2024; Langlieb et al., 2023; Zhang et al., 2023; Kodama et al., 2012). We previously identified candidate PC targets by injecting AAV1 in the cerebellar cortex to anterogradely label PC targets and then using RNA-seq to determine the molecular identity of labeled cells (Chen et al., 2023). An important caveat to this approach is that while it very effectively labels anterograde PC targets, it can also retrogradely label cells that project to the cerebellar cortex. It is therefore crucial to determine if functional PC synapse is present, unless it is known that the region does not project to the cerebellar cortex.
 
@@ -118,11 +267,168 @@ We also labeled neurons in the vestibular nucleus, Barrington’s nucleus, mesen
 
 ## Methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (C57BL/6)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX #000664; RRID:IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C57BL/6)</td>
+      <td>B6.Cg-Tg(Pcp2-cre)3555Jdhu/J</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX #010536; RRID:IMSR_JAX:010536</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C57BL/6)</td>
+      <td>B6;129S-Gt(ROSA)26Sortm34.1(CAG-Syp/tdTomato)Hze/J</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX #012570; RRID:IMSR_JAX:012570; Ai34D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C57BL/6)</td>
+      <td>B6.Cg-Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze/J</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX #024109; RRID:IMSR_JAX:024109; Ai32</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Swiss Webster)</td>
+      <td>Tg(Calca-EGFP)FG104Gsat/Mmucd</td>
+      <td>MMRRC</td>
+      <td>011187-UCD; RRID:MMRRC_011187-UCD</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBQX disodium salt</td>
+      <td>Abcam</td>
+      <td>Ab120046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(R)-CPP</td>
+      <td>Abcam</td>
+      <td>Ab120159</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biocytin</td>
+      <td>Thermo Fisher</td>
+      <td>B1592</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-tyrosine hydroxylase</td>
+      <td>Sigma-Aldrich</td>
+      <td>AB152</td>
+      <td>Rabbit polyclonal; 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-parvalbumin</td>
+      <td>Sigma-Aldrich</td>
+      <td>P3088</td>
+      <td>Mouse monoclonal; 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Rabbit Alexa Fluor 647 secondary</td>
+      <td>Thermo Fisher</td>
+      <td>A32733</td>
+      <td>Goat anti-rabbit polyclonal; 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Mouse Alexa Fluor 647</td>
+      <td>Thermo Fisher</td>
+      <td>A21241</td>
+      <td>Goat anti-mouse polyclonal; 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VGAT</td>
+      <td>Synaptic Systems</td>
+      <td>131 004</td>
+      <td>Guinea pig polyclonal; 1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Guinea Pig Alexa Fluor 647</td>
+      <td>Thermo Fisher</td>
+      <td>A21450</td>
+      <td>Goat anti-guinea pig polyclonal; 1:1000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptavidin, Alexa Fluor 594 Conjugate</td>
+      <td>Thermo Fisher</td>
+      <td>S11227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Arivis</td>
+      <td>Zeiss</td>
+      <td></td>
+      <td>https://www.zeiss.com/microscopy/us/products/software/arivis-pro.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro 8</td>
+      <td>WaveMetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td>https://www.wavemetrics.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SutterPatch</td>
+      <td>Sutter</td>
+      <td></td>
+      <td>https://www.sutter.com/AMPLIFIERS/SutterPatch.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MafPC</td>
+      <td>Courtesy of MA Xu-Friedman</td>
+      <td></td>
+      <td>https://www.xufriedman.org/mafpc</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB (R2023b)</td>
+      <td>MathWorks</td>
+      <td>RRID:SCR_001622</td>
+      <td>https://www.mathworks.com/products/matlab.html</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 For anatomical studies, B6.Cg-Tg(Pcp2-cre)3555Jdhu/J (JAX #010536 [Zhang et al., 2004]) × B6;129S-Gt(ROSA)26Sortm34.1(CAG-Syp/tdTomato)Hze/J (JAX #012570) (PC/synaptophysin-tdTomato, Jackson Laboratory) was used. Tg(Calca-EGFP)FG104Gsat/Mmucd (CalcaGFP mice) were obtained from the Mutant Mouse Resource and Research Center (MMRRC) at University of California at Davis, an NIH-funded strain repository, and was donated to the MMRC by Nathaniel Heintz, Ph.D., The Rockefeller University, GENSAT (RRID:MMRRC_011187-UCD; Gong et al., 2003), and generously provided to us by David Ginty. CGRP-GFP mice were crossed with the PC/synaptophysin-tdTomato mice to further support anatomical studies. For physiology experiments, B6.Cg-Tg(Pcp2-cre)3555Jdhu/J (JAX #010536 [Zhang et al., 2004]) × B6;129S-Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze/J (JAX #024109; Madisen et al., 2012) (PC/ChR2-YFP, Jackson Laboratory) mice were used. All animal procedures were carried out in accordance with the NIH and the Institutional Animal Care and Use Committee (IACUC) guidelines and protocols approved by the Harvard Medical Area Standing Committee on Animals (protocol #IS00000124) or Pennsylvania State University College of Medicine IACUC (protocol #PROTO202202365). Mice from either sex from Jackson Laboratory were used for all experiments.
 
-## Anatomy
+### Anatomy
 
 In order to identify inhibitory synapses PCs made in the brainstem, PC/synaptophysin-tdTomato mice were crossed with CalcaGFP mice. Thus, synaptophysin-tdTomato was expressed selectively in all PCs, and GFP is expressed in the lateral parabrachial nuclei, the LC, the hypoglossal nuclei, the vestibular nerve, the spinal tract of the trigeminal nerve, and the solitary tracts. Mice were anesthetized at P56 and perfused with PBS and 4% PFA. After removal, brains were post-fixed for 1 day in 4% PFA, and sliced coronally and sagittally in 50 μm sections. Slices were stained with a vGAT antibody (Synaptic Systems, #131 004, 1:500), and visualized using an Alexa Fluor 647 secondary (Thermo Fisher, #A-21450, 1:1000). Every third section of the dorsal brainstem was imaged on a confocal microscope (Leica Stellaris 5). Acquisitions were made with an XY resolution of 361.1 nm for an area of about 10 mm2 total per section, and 300 nm z steps for 4 μm stacks. Stitched images were imported into ZEISS arivis Pro (arivis).
 
@@ -134,7 +440,7 @@ Puncta within each brainstem region were quantified using this aligned atlas. We
 
 It is important to note that the accuracy of our mapping is dependent on the accuracy of the reference maps that we register to. The PCG is one region in particular that varies substantially between reference atlases (Wang et al., 2020; Paxinos and Franklin, 2019; Kronman et al., 2023). We labeled the regions in/around the dorsomedial pons as the PCG, based off of the borders noted in the Allen CCF, but other atlases constrain the borders of the PCG, leaving parts of the dorsomedial pons effectively unlabeled. The precise location of many other regions within the dorsomedial pons also differs dramatically. Precise identification of these areas (i.e. Barrington’s nucleus) will require a molecularly targeted approach (in situ hybridization, etc.).
 
-## Electrophysiology
+### Electrophysiology
 
 Mice of both sexes ranging from p24 to p50 (n=30) were anesthetized with ketamine/xylazine and transcardially perfused with warm choline ACSF solution (34°C) containing in mM: 110 choline Cl, 2.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 25 glucose, 0.5 CaCl2, 7 MgCl2, 3.1 Na pyruvate, 11.6 Na ascorbate, 0.002 (R,S)-CPP, 0.005 NBQX, oxygenated with 95% O2/5% CO2. Coronal slices were made (200 μm) using a Leica 1200S or a Campden Instrument 7000smz-2 vibratome in warm choline ACSF (34°C). Slices were then transferred to a holding chamber with warm ACSF (34°C) containing in mM: 127 NaCl, 2.5 KCl, 1.25 NaH2PO4, 25 NaHCO3, 25 glucose, 1.5 CaCl2, 1 MgCl2 and were recovered at 34°C for 30 min before being moved to room temperature until recordings began.
 

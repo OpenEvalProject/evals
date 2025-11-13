@@ -10,11 +10,11 @@
 
 ### Affiliations
 
-1. https://ror.org/03r8z3t63 Gynaecological Cancer Research Group, Lowy Cancer Research Centre, School of Clinical Medicine, Faculty of Medicine & Health, UNSW Sydney Sydney Australia
-2. https://ror.org/021cxfs56 Gynaecological Research and Clinical Evaluation (GRACE) Unit, Royal Hospital for Women Sydney Australia
+1. Gynaecological Cancer Research Group, Lowy Cancer Research Centre, School of Clinical Medicine, Faculty of Medicine & Health, UNSW Sydney Sydney Australia ([ROR:03r8z3t63](https://ror.org/03r8z3t63))
+2. Gynaecological Research and Clinical Evaluation (GRACE) Unit, Royal Hospital for Women Sydney Australia ([ROR:021cxfs56](https://ror.org/021cxfs56))
 3. National Endometriosis Clinical and Scientific Trials (NECST) Network Sydney Australia
-4. https://ror.org/03r8z3t63 Discipline of Women’s Health, School of Clinical Medicine, UNSW Sydney Sydney Australia
-5. https://ror.org/03f0f6041 Translational Oncology Group, School of Life Sciences, Faculty of Science, University of Technology Sydney Sydney Australia
+4. Discipline of Women’s Health, School of Clinical Medicine, UNSW Sydney Sydney Australia ([ROR:03r8z3t63](https://ror.org/03r8z3t63))
+5. Translational Oncology Group, School of Life Sciences, Faculty of Science, University of Technology Sydney Sydney Australia ([ROR:03f0f6041](https://ror.org/03f0f6041))
 
 † Corresponding author
 
@@ -30,13 +30,13 @@ Endometriosis is under-represented in medical research outputs despite its high 
 
 It is imperative that this funding is funnelled into the generation of biologically relevant research. The scant clinical translation of endometriosis research has previously been reviewed in the context of the lack of physiologically relevant in vivo models (Malvezzi et al., 2020), and the prevalence of invalidated in vitro models (Romano et al., 2020). This review aims to critically appraise the rationale of current preclinical research, particularly in the selection of models and controls for experimental research and their reliance on eutopic endometrium. The literature will be reviewed to summarise key biological distinctions between endometrium and endometriosis, and examples will be given detailing how their similarities and differences could be utilised to answer three key research priorities concerning diagnosis and prognosis, disease aetiology, and treatment.
 
-## Eutopic endometrium is over-represented in endometriosis research
+### Eutopic endometrium is over-represented in endometriosis research
 
 Endometriosis is defined as a chronic inflammatory disease marked by the presence of lesions in extrauterine locations which microscopically represent endometrium-like epithelium and/or stroma (Tomassetti et al., 2021). Endometriosis lesions are cellularly heterogeneous, with significant contribution from endothelial, myeloid, and lymphocyte populations (Tan et al., 2022). The most common classification system defines phenotypes according to their macroscopic appearance during surgery, defined as superficial (<5 mm invasion of the peritoneum or serosa), deep infiltrating (>5 mm invasion), or ovarian cystic endometriomas. While peritoneal and endometrioma phenotypes can co-exist, the phenotype of peritoneal lesions is classified according to the ‘most severe’ lesion/s observed; and any extrapelvic disease is considered deep infiltrating by definition. Whether endometriomas and peritoneal lesions should be considered distinct entities remains contentious. While single-cell transcriptomic analysis of endometriotic lesions has revealed that endometriomas are highly enriched for stromal cells compared to peritoneal lesions (Fonseca et al., 2023), the sample sizes remain small, and cellular proportions are heterogenous between patients, even within the same phenotype (Tan et al., 2022). Furthermore, investigations of intrapatient mutational signatures have demonstrated that both peritoneal lesions and endometriomas can share common somatic mutations, providing evidence for potential clonal development of disease from a common initiation in some patients (Praetorius et al., 2022). Attempts to molecularly subtype endometriosis revealed distinct transcriptional signatures relating to fibrosis or immune dysfunction, which are independent of surgical phenotype (Wang et al., 2023). It is possible that molecular and cell proportion differences observed between endometriosis phenotypes, namely between peritoneal endometriosis versus endometrioma, arise from innate variations, or are emphasised over time due to unique microenvironmental pressures. It is likely that ongoing efforts to improve classification beyond macroscopic appearance, including molecular classification, will reveal further subtypes of endometriosis.
 
 By contrast, eutopic endometrium, defined as endometrium present in the native uterine cavity in those with endometriosis, is a dynamic and complex multicellular structure, with key hormonal and immunological functions beyond the reproductive role of the functional layer (Garcia-Alonso et al., 2021). Despite the structural similarities between eutopic endometrium and endometriosis lesions, there have been calls to shift the collective focus of endometriosis research away from comparing the two tissues (Colgrave et al., 2021).
 
-## Critical analysis of available datasets representing endometriosis
+### Critical analysis of available datasets representing endometriosis
 
 The ‘Big Data Revolution’ and the advent of genomics have prompted a substantial rise in secondary data analysis, particularly the reuse of omics data from gene expression profiling databases like the Gene Expression Omnibus (GEO) and other data-sharing sites such as ArrayExpress. This is particularly evident in endometriosis research, where strict time and budgetary restraints mean that many researchers rely on secondary data for some or all of their research design. To investigate the role of methodological bias in endometriosis research, a review of publicly available endometriosis data sourced from NCBI GEO and ArrayExpress as of January 27, 2025, was conducted, yielding 245 results (Figure 1). After screening, 122 datasets were reviewed for biospecimen source.
 
@@ -50,11 +50,230 @@ Most notably, 45/122 (36.89%) datasets contained eutopic endometrium only (Figur
 
 For datasets containing endometriotic cells, one dataset contained endometriosis organoids of epithelial cell origin (1/17, 6.25%), while all primary cells were stromal (16/16, 100%). By contrast, all immortalised cell lines were epithelial (13/13, 100%). The bias towards primary stromal endometriotic cells is likely contributed to by the enrichment of stromal cells in endometriotic tissues (Tan et al., 2022; Fonseca et al., 2023), as well as the difficulty in growing epithelial cells in vitro. Importantly, this demonstrates the lack of diversity in available immortalised cell lines to model endometriosis. Endometriosis phenotype was not recorded in a substantial portion of tissue (4/36, 11.43%) and primary cell culture datasets (5/17, 29.41%). For datasets where phenotype was recorded, endometriomas were disproportionately represented, constituting 70.59% of primary cell samples and 72.22% of tissue datasets (endometrioma, multiple phenotypes containing endometrioma, Table 1), despite an overall prevalence of approximately 30% amongst endometriosis lesions (Bourdon et al., 2024). This over-representation may be a result of larger lesion volume and therefore increased output, or a shared interest from those investigating endometriosis-associated ovarian cancers.
 
+**Table 1.**
+ Review of publicly available endometriosis datasets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Number</th>
+      <th>Percentage</th>
+      <th>Datasets</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Endometrium only</td>
+      <td>45</td>
+      <td>36.89</td>
+      <td>Endometrial datasets</td>
+    </tr>
+    <tr>
+      <td>Tissue</td>
+      <td>25</td>
+      <td>55.56</td>
+      <td rowspan="2">GSE101176, GSE11768, GSE107469, GSE120103, GSE130028, GSE130435, GSE134052, GSE134056, GSE135485, GSE135640, GSE139954, GSE145702, GSE14808, GSE153739, GSE153740, GSE172172, GSE174305, GSE167946, GSE17504, GSE188915, GSE19834, GSE216255, GSE202571, GSE203191, GSE223817, GSE232713, GSE31683, GSE35287, GSE40007, GSE51981, GSE6364, GSE7305, GSE73622, GSE73950, GSE94414, GSE85701, GSE7846, GSE262037, GSE193928, GSE268541, GSE212787, GSE272606, GSE275002, E-MTAB-14039, E-MTAB-14058</td>
+    </tr>
+    <tr>
+      <td>Cells</td>
+      <td>20</td>
+      <td>44.44</td>
+    </tr>
+    <tr>
+      <td>Immortal cell line</td>
+      <td>13</td>
+      <td>10.66</td>
+      <td>Cell line datasets</td>
+    </tr>
+    <tr>
+      <td>12Z</td>
+      <td>7</td>
+      <td>53.85</td>
+      <td rowspan="3">GSE114332, GSE68104, GSE86572, GSE97373, GSE261931, GSE184431, GSE152661, GSE157735, GSE174741, GSE190549, GSE202661, GSE210201, GSE279835</td>
+    </tr>
+    <tr>
+      <td>EEC16</td>
+      <td>5</td>
+      <td>38.46</td>
+    </tr>
+    <tr>
+      <td>iHEECs</td>
+      <td>1</td>
+      <td>7.69</td>
+    </tr>
+    <tr>
+      <td>Non-lesion endometriosis</td>
+      <td>14</td>
+      <td>11.48</td>
+      <td>Non-lesion endometriosis</td>
+    </tr>
+    <tr>
+      <td>Blood and blood vessels</td>
+      <td>9</td>
+      <td>64.29</td>
+      <td rowspan="2">GSE168214, GSE57832, GSE205494, GSE220787, GSE192636, E-MEXP-1251, GSE77182, GSE153813, GSE133867, GSE182983, GSE69310, GSE46735, GSE279435, GSE124010</td>
+    </tr>
+    <tr>
+      <td>Reproductive tract</td>
+      <td>5</td>
+      <td>35.71</td>
+    </tr>
+    <tr>
+      <td>Primary tissue culture</td>
+      <td>17</td>
+      <td>13.93</td>
+      <td>Primary culture datasets</td>
+    </tr>
+    <tr>
+      <td>Primary cells</td>
+      <td>16</td>
+      <td>94.12</td>
+      <td rowspan="12">GSE124010, GSE121406, GSE135122, GSE136412, GSE31515, GSE40186, GSE44207, GSE47361, GSE58178, GSE67524, GSE75427, GSE87810, GSE243158, GSE132464, GSE269530, GSE168902, GSE118928</td>
+    </tr>
+    <tr>
+      <td>Primary organoids</td>
+      <td>1</td>
+      <td>6.25</td>
+    </tr>
+    <tr>
+      <td>Endometrioma</td>
+      <td>12</td>
+      <td>70.59</td>
+    </tr>
+    <tr>
+      <td>No phenotype listed</td>
+      <td>5</td>
+      <td>29.41</td>
+    </tr>
+    <tr>
+      <td>Stromal</td>
+      <td>16</td>
+      <td>94.12</td>
+    </tr>
+    <tr>
+      <td>Epithelial</td>
+      <td>1</td>
+      <td>5.88</td>
+    </tr>
+    <tr>
+      <td>Without biological control</td>
+      <td>3</td>
+      <td>17.65</td>
+    </tr>
+    <tr>
+      <td>With biological control</td>
+      <td>14</td>
+      <td>82.35</td>
+    </tr>
+    <tr>
+      <td>Normal endometrium only</td>
+      <td>6</td>
+      <td>42.86</td>
+    </tr>
+    <tr>
+      <td>Eutopic endometrium only</td>
+      <td>5</td>
+      <td>35.71</td>
+    </tr>
+    <tr>
+      <td>Both eutopic and normal</td>
+      <td>3</td>
+      <td>21.43</td>
+    </tr>
+    <tr>
+      <td>Additional controls</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>Endometriosis tissue</td>
+      <td>36</td>
+      <td>29.51</td>
+      <td>Endometriosis tissue datasets</td>
+    </tr>
+    <tr>
+      <td>Endometrioma only</td>
+      <td>19</td>
+      <td>52.78</td>
+      <td rowspan="14">GSE279835, GSE11691, GSE197928, GSE12768, GSE141549, GSE15309, GSE157153, GSE16079, GSE179640, GSE185273, GSE196748, GSE201912, GSE213216, GSE226575, GSE230956, GSE23339, GSE239685, GSE246202, GSE25628, GSE26346, GSE37837, GSE5108, GSE56414, GSE57545, GSE71477, GSE7307, GSE86534, GSE99949, GSE229735, GSE105764, GSE248593, GSE281569, GSE247695, E-MTAB-694, GSE94414</td>
+    </tr>
+    <tr>
+      <td>Superficial only</td>
+      <td>1</td>
+      <td>2.78</td>
+    </tr>
+    <tr>
+      <td>Deep infiltrating only</td>
+      <td>1</td>
+      <td>2.78</td>
+    </tr>
+    <tr>
+      <td>Peritoneal, unknown depth</td>
+      <td>3</td>
+      <td>8.33</td>
+    </tr>
+    <tr>
+      <td>No phenotype listed</td>
+      <td>4</td>
+      <td>11.11</td>
+    </tr>
+    <tr>
+      <td>Multiple phenotypes</td>
+      <td>8</td>
+      <td>22.22</td>
+    </tr>
+    <tr>
+      <td>Without biological control</td>
+      <td>0</td>
+      <td>0.00</td>
+    </tr>
+    <tr>
+      <td>With biological control</td>
+      <td>36</td>
+      <td>100.00</td>
+    </tr>
+    <tr>
+      <td>Normal endometrium only</td>
+      <td>3</td>
+      <td>8.33</td>
+    </tr>
+    <tr>
+      <td>Eutopic endometrium only</td>
+      <td>13</td>
+      <td>36.11</td>
+    </tr>
+    <tr>
+      <td>Endometrium unknown source</td>
+      <td>2</td>
+      <td>5.56</td>
+    </tr>
+    <tr>
+      <td>Both eutopic and normal</td>
+      <td>2</td>
+      <td>5.56</td>
+    </tr>
+    <tr>
+      <td>Compared to EAOC</td>
+      <td>6</td>
+      <td>16.67</td>
+    </tr>
+    <tr>
+      <td>Additional controls</td>
+      <td>10</td>
+      <td>27.78</td>
+    </tr>
+  </tbody>
+</table>
+
+_EAOC, endometriosis-associated ovarian cancer.Full summary of the reviewed publicly available datasets, their biospecimens, and any associated publications can be found in Supplementary file 1._
+
 All endometriosis tissue datasets contained a biological control, while only 82% of primary cell experiments did (Table 1). Of these controls, the majority of endometriosis tissue biospecimens were compared to eutopic endometrium as a biological control (13/36, 36.11%), while for three datasets, endometriosis lesions were compared to ‘healthy’ (non-endometriosis) endometrium only (3/36, 8.33%). When considering both the datasets containing only endometrium-derived samples and the presence of eutopic endometrium as a biological control, the presence of endometrium far exceeds that of endometriosis (90/122, 73.77% vs 66/122, 54.10%). The use of non-endometrium tissue as a biological control was varied (Figure 2B). This includes the use of normal tissues such as peritoneum, ovary, fallopian tube and myometrium, as well as tissue directly adjacent to endometriosis lesions such as stromal tissue, ovary, or peritoneum. Collectively, these adjacent tissues, representing the only microenvironment-relevant controls in the entire cohort, accounted for less than 5% of datasets analysed (6/122, 4.92%).
 
 The lack of diverse and phenotypically defined models of endometriosis has been described previously (Gołąbek-Grenda and Olejnik, 2022) and is the rationale behind the development of defined endometriosis phenome and biospecimen collection procedures by the World Endometriosis Research Foundation (Fassbender et al., 2014; Rahmioglu et al., 2014). However, the over-representation of eutopic endometrium as an experimental model of endometriosis has been largely unexplored until now. The effect of this data bias is already apparent in the literature. Secondary use of transcriptional datasets derived from eutopic endometrium has been used to identify potential therapeutic targets for endometriosis, despite samples not representing endometriotic disease (Nayak et al., 2022). Attempts to molecularly characterise endometriosis and immune infiltration of the disease have also used datasets composed entirely of eutopic endometrial tissue (Lv et al., 2023). While there are similarities between eutopic and ectopic tissues, it is inadvisable to use one as a surrogate for the other.
 
-## Eutopic endometrium should not be used to represent endometriosis lesions
+### Eutopic endometrium should not be used to represent endometriosis lesions
 
 The frequency with which eutopic endometrium is used to represent endometriosis lesions by proxy is likely due to the ease of access to endometrial tissue via menstrual effluent or curettage versus surgically retrieved endometriotic samples. However, there are profound differences between endometrial and endometriotic tissues.
 
@@ -64,11 +283,11 @@ There is significantly increased immune cell infiltration in ectopic endometrios
 
 Despite the marked differences between eutopic endometrium and ectopic endometriosis tissues, this does not negate their utility in preclinical endometriosis research. To illustrate the role of diverse biospecimen collection in endometriosis research, three major focuses of the literature were reviewed in the context of how both eutopic and lesion-adjacent microenvironmental specimens could be utilised. There remains no simple diagnostic test for endometriosis, and while efforts are being made to improve access and accuracy of imaging, laparoscopy remains the mainstay of endometriosis diagnosis. Treatment options remain limited to surgical, hormonal, or analgesic management, and there is a significant unmet clinical need for novel therapies. While there are multiple proposed theories of pathogenesis, a clear cause of endometriosis remains elusive. These topics – diagnosis and prognosis, disease aetiology, and treatment – have also been identified as the top research priorities by endometriosis patients (Armour et al., 2023).
 
-## The value of researching eutopic endometrium
+### The value of researching eutopic endometrium
 
 Opening sentences of publications on endometriosis frequently contain the same pervasive definition: “a chronic inflammatory condition wherein cells similar to the endometrium are found outside the uterus”. Such is the similarity that the term endometriosis was selected due to the morphological likeness (Sampson, 1925). The eutopic endometrium has been extensively profiled in endometriosis research, and whilst it remains critical that the pathological distinction between endometrium and endometriosis is identified, there are clear benefits in understanding the eutopic endometrium to provide a comprehensive picture of endometriosis in its entirety.
 
-## Diagnosis and prognosis
+### Diagnosis and prognosis
 
 Eutopic endometrium from people with endometriosis demonstrates profound structural, transcriptomic, methylomic, proteomic, and immunologic differences from ‘healthy’ (control) endometrium (Tan et al., 2022; Adamczyk et al., 2022; Wu et al., 2021; Méar et al., 2022; Prašnikar et al., 2020). Understanding these differences was of significant interest in the development of an endometrial biopsy-based diagnostic test, of which neural fibre marker PGP 9.5 demonstrated comparable accuracy to traditional surgical diagnosis (Gupta et al., 2016). Since this time, greater interest in non-invasive endometrial sampling has arisen.
 
@@ -76,7 +295,7 @@ Endometrial fluid can be aspirated from the uterine cavity transcervically in an
 
 Similar attempts to establish diagnostic signatures have emerged by utilising menstrual effluent (Shih et al., 2022; Nayyar et al., 2020; Miller et al., 2022; Warren et al., 2018). A clinical trial is currently underway to develop a screening algorithm based on the immune cell population and transcriptional profile of eutopic endometrium for people with endometriosis (NCT05601596). Proteomic profiles of normal endometrium and eutopic endometrium are also being investigated for diagnostic efficacy (NCT06214260). The use of menstrual blood for disease diagnosis or management is not new. Menstrual blood is already used for clinical monitoring of glucose control in diabetes via FDA-approved menstrual pad, Q-Pad (Naseri and Therkelsen, 2021; Naseri and Therkelsen, 2017). There is great promise for similar models to use menstrual effluent as a non-invasive biospecimen in the context of endometriosis (Tindal et al., 2024).
 
-## Disease aetiology
+### Disease aetiology
 
 Comparison of eutopic and ectopic tissue somatic mutation burden supports an endometrial origin of endometriosis lesions, though the prevalence and clinical significance of this aetiology remain unresolved. An endometrial origin of endometriosis has been observed across all major phenotypes (Noë et al., 2018; Li et al., 2021a). Individual case studies show that disease evolution is unique, with heterogenous cell phylogenies between patients (Li et al., 2021a). Further research comparing acquired somatic mutations between endometrium and endometriosis may reveal the diversity of clonal lesion development and their recurrence, as well as inform how many people with endometriosis have endometrium-dependent pathogenesis.
 
@@ -86,7 +305,7 @@ It is theorised that these endometrium-derived endometriosis-initiating stem cel
 
 Understanding which aetiology, or aetiologies, has led to disease initiation could have implications in disease management, including prevention. Localised progestin treatment via levonorgestrel intrauterine systems (LNG-IUS) has been shown to decrease symptom recurrence (Kim et al., 2022) and reoperation rates in endometrioma (Choi et al., 2023). While LNG-IUS use is associated with reduced menstrual bleeding or complete amenorrhea (Parks et al., 2020), this action is independent of any effect on circulating estradiol (Tasci et al., 2009) and minimal effects on ovulation (Apter et al., 2014). This may support the notion that recurrence of both pain and lesions in some patients is initiated by de novo disease from endometrium-derived cells (Vercellini et al., 2024b; Yela et al., 2021; Tsuboshima et al., 2023). Whether this same rationale could be applied to primary prevention of endometriosis remains to be seen. The current discrepancy between age of symptom onset and achieving diagnosis has resulted in a poor understanding of early lesion development. Whether early intervention targeting endometrium, particularly during adolescence, could prevent or reduce disease burden remains theoretical (Vercellini et al., 2024a).
 
-## Treatment
+### Treatment
 
 The specificity of any treatment relies on the identification of therapeutically actionable differentially expressed biomarkers in the tissue of interest. In the context of endometriosis, eutopic endometrium is arguably the most valid choice as a reference tissue due in large part to the transcriptional similarity of the two tissues. A meta-analysis of RNA expression differences between patient-matched endometriosis and eutopic endometrium found an overall difference of only 4.74% (15,234/321,149 genes) (Riaz et al., 2024). The 11 studies amounted to 116 participants, one of which did not report disease phenotype, and the remaining disproportionately represented endometriomas (71/111, 63.96%).
 
@@ -94,11 +313,11 @@ These similarities affect the development of therapeutics for endometriosis. For
 
 The paucity of non-hormonal therapeutics available to treat endometriosis is not reflective of a lack of interest or volume of preclinical research, but instead the limited translational success linked to poor quality and non-representative models of disease often relying on endometrium (Groothuis, 2022). Clinical translation of therapies, particularly in the context of non-malignant disease, relies on the minimisation of adverse effects. There has been increasing interest in precision medicine in endometriosis by repurposing targeted agents developed for cancer (Hung et al., 2021) due to the identification of cancer-associated mutations in endometriosis tissues (Anglesio et al., 2017). However, similar mutations have been found in eutopic endometrium, limiting their specificity (Suda et al., 2018). For instance, despite growing data suggesting that PI3K/AKT and MAPK represent targets of priority for endometriosis treatment (Bao et al., 2022), inhibitors of these pathways have been shown to be more cytotoxic to cells from eutopic endometrium than endometriosis lesions (Lavogina et al., 2019). Future attempts to identify precision targets for endometriosis treatment should consider the differences between eutopic and ectopic tissues and utilise the biological drivers specific to endometriotic lesions instead of endometrial tissues, as has been observed in the literature (Nayak et al., 2022). Furthermore, preclinical testing of these agents should be conducted on endometriotic models as opposed to endometrium (Churchill et al., 2023), including complex ex vivo models (such as organoids or organ-on-a-chip derived from endometriotic tissues, as reviewed in Gołąbek-Grenda and Olejnik, 2022), or in vivo (as reviewed in Zeng et al., 2024).
 
-## The underappreciated value of non-endometrium endometriosis samples
+### The underappreciated value of non-endometrium endometriosis samples
 
 There is increasing evidence that parenchyma and the surrounding local microenvironment is not merely a passive bystander, but an active contributor to endometriosis progression. Mesothelial cells are known to be present within endometriosis lesions (Kerner et al., 1981) and undergo mesothelial-to-mesenchymal transition to promote disease progression and fibrosis (Yan et al., 2020). Even in areas without lesions of endometriosis, retroperitoneal adipose tissue from people with endometriosis demonstrate higher amounts of fibrosis, angiogenesis, and immune infiltration than controls, likely mediated by the systemic proinflammatory milieu initiated by disease (Kubo et al., 2021). Microenvironmental cues themselves seem to promote disease progression, with mere surgical translocation of murine endometrium into the peritoneum sufficient to induce an upregulation of immune, fibrosis, and angiogenesis pathways akin to endometriosis lesions (Li et al., 2024). Microenvironment-relevant control biospecimens separate from the endometrium are an under-represented and underappreciated source of valuable biological insight in endometriosis.
 
-## Diagnosis and prognosis
+### Diagnosis and prognosis
 
 Peripheral blood contains great diagnostic potential for endometriosis. Circulating cell-free non-coding RNAs, such as miRNAs and long-non-coding RNAs (lncRNAs), are abundant in blood and play important roles in normal inter-cell communication (Ramón Y Cajal et al., 2019). Both miRNAs and lncRNAs are dysregulated in endometriosis patients versus controls and have been implicated in disease pathogenesis via their involvement in inflammatory, immune, and hormonal responses (Hon et al., 2023; Ghafouri-Fard et al., 2020; Abbaszadeh et al., 2023). The difference in non-coding RNAs present in peripheral blood of those with and without endometriosis is of great interest in the identification of specific biomarkers for non-invasive diagnosis (Vanhie et al., 2024; Shan et al., 2022). Recent characterisation of the circulating miRNA transcriptome using plasma samples from 153 patients with endometriosis has informed a diagnostic signature of 86 miRNAs in adults of undisclosed phenotype (Bendifallah et al., 2022). Beyond diagnosis, circulating non-coding RNAs may also hold prognostic value. The downregulation of lncRNA, LINC01456, in serum is associated with advanced disease stage and is predictive of endometrioma recurrence (Song et al., 2024). Serum miR-1307-3p levels have also shown clinical value, predicting the efficacy of perioperative dienogest treatment for ovarian reserve preservation after endometrioma cystectomy (Yabuki et al., 2024).
 
@@ -106,19 +325,19 @@ Similar attempts to utilise blood cell-free DNA (cfDNA) for diagnosis have yield
 
 Peripheral blood-based biomarkers offer unique benefits for diagnosis compared to endometrial biospecimens like lavage or menstrual effluent. Blood tests already form a cornerstone of medical diagnostics and would require minimal additional infrastructure to implement, as may be necessary with patient-collected effluent samples. As a circulating liquid biopsy, blood may provide a more comprehensive window into the systemic effects of endometriosis, or more accurately detect lesions beyond the pelvis, such as thoracic endometriosis (Kiss et al., 2020). To date, attempts to establish an endometriosis diagnostic signature in blood have been more accurate than in menstrual effluent, with higher overall sensitivities and specificities (96.8 vs 87.5 and 100.0 vs 91.7, respectively) (Nayyar et al., 2020; Bendifallah et al., 2022). In addition, analysis of peripheral blood is specifically advantageous compared to menstrual samples, particularly for patients who do not menstruate due to hormone-induced amenorrhea (Kim et al., 2022; Prosperi Porta et al., 2021; Ferrando et al., 2021), obstructive anatomical variations (Vercellini et al., 2024b), menopause (Haas et al., 2012), and those post-hysterectomy (Soliman et al., 2017).
 
-## Disease aetiology
+### Disease aetiology
 
 The assumption that evidence of an endometrial origin of endometriosis lesions for some patients precludes any other explanation of pathogenesis is misguided. There is equivalent evidence of a non-endometrial origin of endometriosis, as shown by case reports of endometriosis in cisgender men and uterine agenesis. The true incidence of both these entities remains elusive due largely to a lack of consistency in research methods and reporting. For example, despite the 47 case reports of endometriosis arising in people with MRKH syndrome (Wang et al., 2017; Steinmacher et al., 2022; Marsh et al., 2013; Tian et al., 2022; Mok-Lin et al., 2010; Cho et al., 2009), the majority of patients (45/47, 95.7%) retained uterine remnants, of which all cases which underwent histological review contained functional endometrium (35/35, 100%) (Steinmacher et al., 2022; Marsh et al., 2013; Tian et al., 2022). In fact, only two isolated cases of endometriosis have been reported in the context of complete uterine agenesis: one endometrioma (Cho et al., 2009) and one peritoneal endometriosis (Mok-Lin et al., 2010), the latter of which was not histologically confirmed due to lesion ablation. Similarly, despite 24 case reports of endometriosis in cisgender men and one case in a transgender woman (Coleman-Belin et al., 2024), at least four of these patients presented with innate variations of sex (intersex) characteristics (Nerune et al., 2016; Vaughn and Gonzalez-angulo, 1961; Patel and Doody, 2008; Ohan et al., 2024). In addition, there is one reported case study of peritoneal endometriosis in a prepubescent child with a 46,XY karyotype, female external genitalia, and gonadal dysgenesis. While endometriosis was present histologically, the unicornuate uterine horn was not removed or sampled for functional endometrium (Harris et al., 2024). All these case reports presented with disease in areas of coelomic epithelium, derived from areas of the embryonic Müllerian ducts (Rei et al., 2018). The majority of cases arose with a background of high systemic oestradiol, namely from obesity (4/21, 19.0%) (Rei et al., 2018; Al-Obaidy and Idrees, 2019; Zámečník and Hoštáková, 2013; Balgobind et al., 2019), cirrhosis (2/21, 9.52%) (Jabr and Mani, 2014; González et al., 2014), gender-affirming care (1/21, 4.76%) (Coleman-Belin et al., 2024), or cancer-related androgen deprivation therapy (10/21, 47.6%) (Fukunaga, 2012; Taguchi et al., 2012; Pinkert et al., 1979; Beckman et al., 1985; Martin and Hauck, 1985; Oliker and Harris, 1971; Schrodt et al., 1980; Young and Scully, 1986; Scully, 1981). Additionally, one case of an endometriotic cyst showed areas of direct transformation from native mesothelium to endometriotic epithelial cells (Zámečník and Hoštáková, 2013).
 
 The concept that endometriosis may arise from a metaplastic process of mesothelial cells has previously been proposed in the literature (Zheng et al., 2005; Konrad et al., 2019). A histological review of 110 endometriomas revealed 34 cases with areas of direct transition from normal native epithelium to endometriosis (Zheng et al., 2005), an observation that is yet to be recorded in either superficial or deep infiltrating peritoneal lesions. Interestingly, all observed cases of endometriosis in non-primate (and therefore non-menstruating) animals have also presented as endometriomas (5/5 dogs, 1/1 guinea pigs), which may further support that endometriomas are more likely to develop independently of endometrium than other phenotypes of endometriosis (Demirel, 2017; Paiva et al., 2015; Baldi et al., 2017; Bartel et al., 2011). However, evidence of clonal metastasis from endometrioma to peritoneal locations indicates that the development of diverse phenotypes could arise from a single initiating event, which cannot, at this stage, exclude metaplasia (Praetorius et al., 2022). Therefore, while to date there is an absence of evidence that metaplasia may initiate peritoneal endometriosis, this does not denote evidence of absence.
 
-## Treatment
+### Treatment
 
 Investigating parenchymal tissues adjacent to endometriosis lesions may provide novel insights into disease mechanisms and development. For example, in cancer, transcriptional profiles of ‘normal’ tumour-adjacent tissue have been found to have prognostic value (Kim et al., 2023; Oh and Lee, 2023), and there are increasing efforts to target native microenvironment fibrosis, neovascularisation, and inflammation to improve patient outcomes (Xiao and Yu, 2021).
 
 Similar findings are emerging in other inflammatory diseases. In Crohn’s disease, adjacent mesenteric adipose tissue actively contributes to disease development and fibrosis (Huang et al., 2022), and may have a direct effect on the efficacy of infliximab treatment (Shen et al., 2018). Clinical trials targeting resident synovial fibroblasts are currently underway in rheumatoid arthritis (Siebert et al., 2020). However, this notion is almost entirely unexplored in endometriosis. Future endeavours to classify and potentially target adjacent tissues in endometriosis lesions may hold therapeutic benefit for patients and should be a priority for prospective research.
 
-## Conclusion
+### Conclusion
 
 With evidence supporting both endometrial-dependent (Suda et al., 2018) and endometrial-independent pathogenesis (Zheng et al., 2005), neither theory provides sufficient evidence to preclude the other, and they likely represent separate aetiological avenues of distinct subtypes of endometriosis. By focusing predominantly on endometrial-dependent pathogenesis, current preclinical research is ensuring that the collective understanding of endometriosis aetiology remains incomplete. Furthermore, the paucity of studies containing parenchymal tissues as a biological control demonstrates an underestimation in the literature at large of the contribution of the local microenvironment to disease development and progression.
 

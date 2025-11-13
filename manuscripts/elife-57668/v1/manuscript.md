@@ -14,4 +14,4 @@
 
 ## Abstract
 
-The origins of the posterior lobe, a recently evolved structure in some species of Drosophila , have become clearer.
+The origins of the posterior lobe, a recently evolved structure in some species of Drosophila, have become clearer.

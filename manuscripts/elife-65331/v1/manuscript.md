@@ -35,7 +35,7 @@ Most eukaryotic mRNAs accommodate alternative sites of poly(A) addition in the 3
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/65331/elife-65331-fig1-v1.jpg)
 
-**Figure 1.:** (A) Schematic of the yeast core cleavage and polyadenylation machinery and their interactions with the nascent mRNA strand. Cleavage and polyadenylation factor (CPF), Cleavage factor IA (CFIA) and Cleavage factor IB (CFIB) are involved in canonical 3’ end formation whereas the Nrd1-Nab3-Sen1 (NNS) complex represents an alternative cleavage pathway utilised by snRNAs, snoRNAs, CUTs and some mRNAs. (B) Yeast strains, as indicated, were serially diluted 10-fold onto YPAD rich media plates and grown at 25°C or 37°C for 2 days. (C) Integrative Genomics Viewer (IGV) (Robinson et al., 2011) representation of PAT-seq reads aligned to the 3’ end of the SUB2 gene. Indicated yeast strains were grown at 25°C until OD600 0.6 then switched to 37°C for 1 hr. Peaks indicate nucleotide depth of coverage by sequencing reads and data ranges for each sample are shown on the left. The ratio of these peaks is used to calculate 3’ end shifts. Schematic of 3’ UTR length for each peak is shown below. (D) Global 3’ end shift effects of genes observed in mutants of the indicated 3’ end processing factor subunits. Values are relative to the wild-type strain W303 at 37°C using PAT-seq data. Each dot corresponds to one gene. A positive effect size indicates a general lengthening of the 3’ UTR in the mutant relative to the wild-type, whereas a negative effect size indicates shifts towards shorter 3’ UTRs. Grey dots are the estimated effect size. Where this is significant, a corresponding dot shows the ‘confect’, a confident inner bound of this effect size (FDR < 0.05) found using the Limma and TopConfects R packages. Red indicates significant lengthening in the mutant whereas blue indicates significant shortening. The total number of detected genes (grey dots) and the number of significant shifts (red and blue dots) are indicated for each strain. Log2(RPM) is the logarithmic average number of reads per million. Data is representative of two biological replicates and is available in the Figure 1—source data 1.Figure 1—source data 1.The full list of genes undergoing APA in the 3’end processing mutant allele PAT-assay experiment and their effect size and confect values.
+**Figure 1.:** (A) Schematic of the yeast core cleavage and polyadenylation machinery and their interactions with the nascent mRNA strand. Cleavage and polyadenylation factor (CPF), Cleavage factor IA (CFIA) and Cleavage factor IB (CFIB) are involved in canonical 3’ end formation whereas the Nrd1-Nab3-Sen1 (NNS) complex represents an alternative cleavage pathway utilised by snRNAs, snoRNAs, CUTs and some mRNAs. (B) Yeast strains, as indicated, were serially diluted 10-fold onto YPAD rich media plates and grown at 25°C or 37°C for 2 days. (C) Integrative Genomics Viewer (IGV) (Robinson et al., 2011) representation of PAT-seq reads aligned to the 3’ end of the SUB2 gene. Indicated yeast strains were grown at 25°C until OD600 0.6 then switched to 37°C for 1 hr. Peaks indicate nucleotide depth of coverage by sequencing reads and data ranges for each sample are shown on the left. The ratio of these peaks is used to calculate 3’ end shifts. Schematic of 3’ UTR length for each peak is shown below. (D) Global 3’ end shift effects of genes observed in mutants of the indicated 3’ end processing factor subunits. Values are relative to the wild-type strain W303 at 37°C using PAT-seq data. Each dot corresponds to one gene. A positive effect size indicates a general lengthening of the 3’ UTR in the mutant relative to the wild-type, whereas a negative effect size indicates shifts towards shorter 3’ UTRs. Grey dots are the estimated effect size. Where this is significant, a corresponding dot shows the ‘confect’, a confident inner bound of this effect size (FDR < 0.05) found using the Limma and TopConfects R packages. Red indicates significant lengthening in the mutant whereas blue indicates significant shortening. The total number of detected genes (grey dots) and the number of significant shifts (red and blue dots) are indicated for each strain. Log2(RPM) is the logarithmic average number of reads per million. Data is representative of two biological replicates and is available in the Figure 1—source data 1.
 
 The 3’ end processing signals involved in cleavage site recognition in yeast are generally more divergent than their mammalian counterparts and lack strong consensus sequences (Graber et al., 1999). However, in S. cerevisiae, four main sequence elements are associated with cleavage site positioning. Firstly, there is an A-rich positioning element (PE) located 10–30 nucleotides upstream of the cleavage site (Tian and Graber, 2012). This is the equivalent of the mammalian polyadenylation signal (PAS) and has the same optimal sequence of AAUAAA though this motif is less conserved in yeast (Zhao et al., 1999). Secondly, a UA-rich efficiency element (EE) occurs upstream of the PE sequence. The optimal sequence for the EE is UAUAUA and is generally found 25–40 nucleotides away from the cleavage site (Tian and Graber, 2012). This sequence is not required for cleavage but improves the efficiency of the reaction and is important in site selection (Guo and Sherman, 1996). Lastly, U-rich elements exist either downstream (DUE) or upstream (UUE) of the cleavage site. Recombinant Yth1, Ydh1/Cft2, and Yhh1/Cft1 (all CPF subunits) as well as purified CPF interact with these U-rich elements (Barabino et al., 2000; Dichtl and Keller, 2001; Dichtl et al., 2002b) and mutation of these elements can result in reduced cleavage activity (Dichtl and Keller, 2001). Hrp1/Nab4, the sole CFIB subunit, interacts with the EE (Kessler et al., 1997; Chen and Hyman, 1998; Valentini et al., 1999). Rna15 (a CFIA subunit) has been found to interact with the PE motif in vitro (Gross and Moore, 2001), whereas in vivo mapping of factors on the nascent transcript suggested that binding of CFIA occurs downstream of the cleavage site (Baejen et al., 2014) similar to the CstF complex in the mammalian system (Chan et al., 2011; Mandel et al., 2008; Martin et al., 2012). Thus, the overall assembly of the 3’ end formation machinery on the pre-mRNA substrate appears to be conserved between yeast and human (Baejen et al., 2014).
 
@@ -47,9 +47,200 @@ Here, we used mutant alleles of yeast core cleavage and polyadenylation factors 
 
 ## Results
 
-## Mutations within the core cleavage and polyadenylation machinery promote lengthening of 3’ UTRs
+### Mutations within the core cleavage and polyadenylation machinery promote lengthening of 3’ UTRs
 
 A compendium of S. cerevisiae mutants with defects in the cleavage and polyadenylation machinery has been collated from members of the yeast 3’ end formation community (Table 1). This included strains with mutated subunits across the three core 3’ end processing subcomplexes CFIA, CFIB and CPF, as well as the non-canonical Nrd1-Nab3-Sen1 (NNS) complex (Figure 1A). This repository combined with modern transcriptome-wide analyses has provided a unique opportunity to further understand how 3’ end choices are globally regulated in yeast. We, therefore, sought to explore the role of individual cleavage factor subunits in cleavage site selection.
+
+**Table 1.**
+ Yeast Strains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Genotype</th>
+      <th>Relevant mutation if known</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>W303</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1-1 can1-100 ade2-1 ura3-1</td>
+      <td>Wild type</td>
+      <td>Thomas and Rothstein, 1989</td>
+    </tr>
+    <tr>
+      <td>BY4741</td>
+      <td>MATa leu2∆0 his3∆1 ura3∆0 met15∆0</td>
+      <td>Wild type</td>
+      <td>Brachmann et al., 1998</td>
+    </tr>
+    <tr>
+      <td>rna14-1</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1-1 ade2-1 ura3-1 rna14-1</td>
+      <td>T nucleotide insertion at 1986 causing a premature stop codon (replacement of last 16 amino acids with FK)</td>
+      <td>Bloch et al., 1978 (named cor1-1); Minvielle-Sebastia et al., 1994, Rouillard et al., 2000</td>
+    </tr>
+    <tr>
+      <td>rna15-1</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1-1 ade2-1 ura3-1 rna15-1</td>
+      <td>L214P</td>
+      <td>Bloch et al., 1978 (named cor2-1); Minvielle-Sebastia et al., 1994, Qu et al., 2007</td>
+    </tr>
+    <tr>
+      <td>pcf11-2</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1∆ can1-100 ade2-1 ura3-1 pcf11-2</td>
+      <td>E232G, D280G, C424R, S538G, F562S, S579P</td>
+      <td>Amrani et al., 1997, Sadowski et al., 2003</td>
+    </tr>
+    <tr>
+      <td>pcf11-13</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1∆ can1-100 ade2-1 ura3-1 pcf11-13</td>
+      <td>D68A, S69A, I70A (CID region)</td>
+      <td>Sadowski et al., 2003</td>
+    </tr>
+    <tr>
+      <td>clp1-pm</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1-1 can1-100 ade2-1 ura3-1 clp1-pm</td>
+      <td>K136A, T137A (P-loop motif)</td>
+      <td>Ramirez et al., 2008</td>
+    </tr>
+    <tr>
+      <td>nab4-1</td>
+      <td>MATa ura3-52 nab4-1</td>
+      <td>N167D, F179Y, P194H, Q265L</td>
+      <td>Minvielle-Sebastia et al., 1998</td>
+    </tr>
+    <tr>
+      <td>nab4-7</td>
+      <td>MATa ura3-52 nab4-7</td>
+      <td>S64R, K92M, T125A, I163T</td>
+      <td>Minvielle-Sebastia et al., 1998</td>
+    </tr>
+    <tr>
+      <td>yhh1-3</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1-1 can1-100 ade2-1 ura3-1 yhh1-3</td>
+      <td>L302P, N716S, N762S, Y766C, K933R, D1070E, N1136D</td>
+      <td>Dichtl et al., 2002b</td>
+    </tr>
+    <tr>
+      <td>ysh1-13</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1∆ ade2-1 ura3-1 TRP1::ysh1 [ysh1-3-HIS3-CEN]</td>
+      <td>V235A, N685H, D695V, E723V, R763G</td>
+      <td>Garas et al., 2008</td>
+    </tr>
+    <tr>
+      <td>yth1-1</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1∆ ade2-1 ura3-1 yth1::TRP1 [CEN4-ADE2-yth1-1]</td>
+      <td>frameshift at 154 in causing a premature stop codon (deletion of last 55 amino acids)</td>
+      <td>Barabino et al., 1997</td>
+    </tr>
+    <tr>
+      <td>yth1-4</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1∆ ade2-1 ura3-1 yth1::TRP1 [CEN4-ADE2 -yth1-4]</td>
+      <td>W70A</td>
+      <td>Barabino et al., 2000</td>
+    </tr>
+    <tr>
+      <td>fip1-1</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1-1 ura3-1 fip1-1</td>
+      <td>L99F, Q216X (deletion of last 111 amino acids)</td>
+      <td>Preker et al., 1995, Preker et al., 1997</td>
+    </tr>
+    <tr>
+      <td>pap1-1</td>
+      <td>MATa ade1 ade2 lys2 gal1? ura3-52 pap1-1</td>
+      <td></td>
+      <td>Patel and Butler, 1992</td>
+    </tr>
+    <tr>
+      <td>pta1-1</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1-1 ade2-1 ura3-1 pta1-1</td>
+      <td>Premature stop codon</td>
+      <td>O'Connor and Peebles, 1992, Preker et al., 1997</td>
+    </tr>
+    <tr>
+      <td>pfs2-1</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1∆ ade2-1 ura3-1 pfs2::TRP1 [pfs2-1-LEU2-CEN]</td>
+      <td></td>
+      <td>Ohnacker et al., 2000</td>
+    </tr>
+    <tr>
+      <td>mpe1-1</td>
+      <td>MATα leu2-3,112 his3-11,15 trp1-1 ade2-1 ura3-1 mpe1-1</td>
+      <td>F9S, Q268K, K337F, K354X (deletion of last 87 amino acids)</td>
+      <td>Vo et al., 2001</td>
+    </tr>
+    <tr>
+      <td>ref2-2</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1-1 can1-100 ade2-1 ura3-1 ref2-2</td>
+      <td></td>
+      <td>Dheur et al., 2003</td>
+    </tr>
+    <tr>
+      <td>pti1-2</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1-1 can1-100 ade2-1 ura3-1 pti1-2</td>
+      <td></td>
+      <td>Dheur et al., 2003</td>
+    </tr>
+    <tr>
+      <td>ssu72-2</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1-1 ade2-1 ura3-1 ssu72-2</td>
+      <td>R129A</td>
+      <td>Pappas and Hampsey, 2000, Dichtl et al., 2002a</td>
+    </tr>
+    <tr>
+      <td>glc7-5</td>
+      <td>MATa leu2-3,112 his3-11,15 can1-100 ade2-1 ura3-1 glc7::LEU2 trp1:: glc7-5</td>
+      <td>F226L</td>
+      <td>Peggie et al., 2002</td>
+    </tr>
+    <tr>
+      <td>swd2-2</td>
+      <td>MATa leu2∆0 his3∆1 ura3∆0 met15∆0 swd2-2</td>
+      <td>F14P, C27G, F41I, K185E, S253L, C257R</td>
+      <td>Dichtl et al., 2004</td>
+    </tr>
+    <tr>
+      <td>∆syc1</td>
+      <td>MATa leu2∆0 his3∆1 ura3∆0 met15∆0 syc1∆</td>
+      <td>Whole gene deletion</td>
+      <td>Zhelkovsky et al., 2006</td>
+    </tr>
+    <tr>
+      <td>nrd1-5</td>
+      <td>MATa ura3-52 trp1-1 ade2-1 leu2-3,112 his3-11,15 lys2-∆2 can1-100 met2-∆1 nrd1-5</td>
+      <td>G368V (RNA recognition motif)</td>
+      <td>Steinmetz and Brow, 1996</td>
+    </tr>
+    <tr>
+      <td>nrd1-∆CID</td>
+      <td>MATa ura3-52 trp1-1 ade2-1 leu2-3,112 his3-11,15 lys2-∆2 can1-100 met2-∆1 nrd1-∆CID</td>
+      <td>deletion of amino acids 39–169 (CTD region)</td>
+      <td>Steinmetz and Brow, 1998</td>
+    </tr>
+    <tr>
+      <td>nab3-11</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1-1 can1-100 ade2-1 ura3-1 nab3-11</td>
+      <td>F371L, P374L (RNA recognition motif)</td>
+      <td>Conrad et al., 2000</td>
+    </tr>
+    <tr>
+      <td>sen1-1</td>
+      <td>MATa leu2-3,112 his3-11,15 trp1-1 ade2-1 ura3-1 sen1-1</td>
+      <td>G1747D (helicase domain)</td>
+      <td>Winey and Culbertson, 1988, Mischo et al., 2011</td>
+    </tr>
+    <tr>
+      <td>rbp1-1</td>
+      <td>MATα ura3-52 leu2-3,112 rpb1-1</td>
+      <td></td>
+      <td>Nonet et al., 1987</td>
+    </tr>
+  </tbody>
+</table>
 
 The majority of the cleavage and polyadenylation factors are essential for life necessitating the use of primarily temperature-sensitive alleles (Figure 1B). The phenotypes associated with mutant strains analysed here have been well described in the literature (Table 1). This includes primarily loss-of-function mutations, displaying distinct phenotypes in various steps of mRNA synthesis including pre-mRNA cleavage, pre-mRNA polyadenylation, cleavage site recognition, RNA binding, or transcription termination. For consistency, irrespective of the severity of the mutation, duplicates of each strain were grown in rich media at 25°C until an OD600 of 0.6 was reached, then switched to a restrictive temperature (37°C) for 1 hr before harvesting.
 
@@ -75,15 +266,27 @@ Impairment of the NNS complex appeared to have little impact on cleavage site se
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/65331/elife-65331-fig3-v1.jpg)
 
-**Figure 3.:** (A) 3’ end shift effects of genes observed upon mutation of the NNS subunits. Values are relative to the wild-type strain W303 at 37°C using PAT-seq data as in Figure 1D. Data is representative of two biological replicates and is available in the Figure 3—source data 1. (B) Comparison of 3’ end shift effects of genes upon mutation of PCF11 (x-axis) and SEN1 (y-axis). pcf11-2 and sen1-1 shifts relative to their respective wild-type control at 37°C were compared. Grey dots indicate the estimated shift effects for all analysed features in common (n = 2267), black, red and blue dots indicate the significant shifts (n = 411, FDR < 0.05). Red indicates significant lengthening, blue indicates significant shortening and black indicates APA in opposite directions in both mutants. Lines show the linear regression for effect (grey) and confect (black) values respectively. (C) IGV representation of PAT-seq results aligned to the 3’ end of the indicated genes in W303, pcf11-2, and sen1-1 yeast strains at 37°C. Peaks indicate nucleotide depth of coverage by sequencing reads and data ranges for each sample are shown on the left. Schematic of 3’ UTR length for each peak is shown below.Figure 3—source data 1.The full list of genes undergoing APA in the NNS subunit mutant allele PAT-assay experiment and their effect size and confect values.
+**Figure 3.:** (A) 3’ end shift effects of genes observed upon mutation of the NNS subunits. Values are relative to the wild-type strain W303 at 37°C using PAT-seq data as in Figure 1D. Data is representative of two biological replicates and is available in the Figure 3—source data 1. (B) Comparison of 3’ end shift effects of genes upon mutation of PCF11 (x-axis) and SEN1 (y-axis). pcf11-2 and sen1-1 shifts relative to their respective wild-type control at 37°C were compared. Grey dots indicate the estimated shift effects for all analysed features in common (n = 2267), black, red and blue dots indicate the significant shifts (n = 411, FDR < 0.05). Red indicates significant lengthening, blue indicates significant shortening and black indicates APA in opposite directions in both mutants. Lines show the linear regression for effect (grey) and confect (black) values respectively. (C) IGV representation of PAT-seq results aligned to the 3’ end of the indicated genes in W303, pcf11-2, and sen1-1 yeast strains at 37°C. Peaks indicate nucleotide depth of coverage by sequencing reads and data ranges for each sample are shown on the left. Schematic of 3’ UTR length for each peak is shown below.
 
 In sum, these genetic data indicate that APA hinges on the level of functional machineries for cleavage and polyadenylation. However, given that each temperature sensitive allele has a unique sensitivity and severity and therefore a different degree of apparent impact on 3’ end choice, we next sought to explore the impact of cordycepin as a possible pharmacological driver of APA.
 
-## Cordycepin induces lengthening of 3’ UTRs
+### Cordycepin induces lengthening of 3’ UTRs
 
 Cordycepin, or 3’ deoxyadenosine, is an adenosine analogue that causes chain termination when incorporated into RNA during synthesis. We have previously demonstrated that independently of this role, cordycepin can interfere with normal 3’ end formation for several genes in yeast (Holbein et al., 2009). We therefore further examined the effect of cordycepin on cleavage site choice genome-wide.
 
 Wild-type BY4741 yeast cells were treated with a non-lethal dose of cordycepin (20 µg/ml) for up to 40 min. Alternative polyadenylation was assessed using the PAT-seq method over a time course of drug treatment. Similar to depletion of the canonical cleavage and polyadenylation machinery, cordycepin treatment promoted use of a distal cleavage site for the gene SUB2 (Figure 4A). Significant switching to alternative cleavage sites was observed for 1959 genes with the majority changing to longer 3’ UTRs (Figure 4B). Therefore, cordycepin treatment generally caused a switch to more distal cleavage sites. Of note, any RNA with cordycepin incorporated will lack a 3’ hydroxyl group and will therefore not be detectable by the PAT-seq assay. However, such transcripts are expected to be unstable and quickly targeted for degradation if premature termination occurs within the coding region of the gene (Kamieniarz-Gdula and Proudfoot, 2019).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/65331/elife-65331-fig4-v1.jpg)
+
+**Figure 4.:** BY4741 cells were treated with 20 µg/ml cordycepin for 0, 5, 10, 20, or 40 min and changes to 3’ UTR length were observed. (A) IGV representation of PAT-seq reads aligned to the 3’ end of the SUB2 gene. Peaks indicate nucleotide depth of coverage by sequencing reads and data ranges for each sample are shown on the left. Schematic of 3’ UTR length for each peak is shown below. (B) 3’ end shift effects of genes observed upon cordycepin treatment. Values are relative to untreated cells using PAT-seq data as for Figure 1D with positive values indicating lengthening following drug treatment. Data is representative of two biological replicates and is available in the Figure 4—source data 1. (C) Comparison of 3’ end shift effects of genes upon mutation of YSH1 (x-axis) and after cordycepin treatment (y-axis). ysh1-13 shifts were compared to W303 at 37°C and cordycepin treatment for 40 min was compared to untreated BY4741 cells at 30°C. Grey dots indicate the estimated shift effects for all analysed features in common (n = 2331), black, red, and blue dots indicate the significant shifts (n = 1610; FDR < 0.05). Red indicates significant lengthening, blue indicates significant shortening and black indicates APA in opposite directions for both the mutant and cordycepin treated cells. Lines show the linear regression for effect (grey) and confect (black) values, respectively. (D) Comparison of 3’ end shift effects of genes upon mutation of PCF11 (x-axis) and after cordycepin treatment (y-axis) as for C but with pcf11-2 shifts compared to W303 at 37°C. The total number of analysed features in common was 2328 and the number of significant shifts was 1391 (FDR < 0.05).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65331/elife-65331-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Comparison of alternative polyadenylation in different genes following 20 µg/ml cordycepin treatment for 40 min or mutation of the cleavage and polyadenylation machinery. Bars correspond to 3’ end shift scores relative to untreated BY4741 cells for the cordycepin samples and relative to W303 cells at 37°C for the mutant strains. Genes with greater than absolute 0.1 end shift confect scores for at least one condition were included (1761 genes) and numbered in arbitrary order. Red lines indicate lengthening of the 3’ UTR following cordycepin treatment or in the mutants whereas blue lines indicate shortening. Data is representative of two biological replicates.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/65331/elife-65331-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Heatmap showing changes in RNA expression of the 3’ end processing machinery subunits following cordycepin treatment. BY4741 cells were treated with 20 µg/ml cordycepin for 0, 5, 10, 20, or 40 min. Red shows an increase in expression whereas blue indicates a decrease in expression at the indicated timepoints relative to the mean log2 reads per million expression for that gene. (B) Polysome profile of BY4741 cells treatment with DMSO (control) or 20 µg/ml cordycepin for 40 min. Cell lysate was added to a sucrose density gradient column and ultracentrifuged prior to fractionation at 254 nm. (C) Protein fold change volcano plot for cells treated with DMSO (control) or 20 µg/ml cordycepin for 40 min. Black dots indicate all proteins identified via proteomics analysis with values above the dashed horizontal line (indicating a q-value less than 0.05) considered significant. Pink dots indicate genes with a q-value less than 0.05 and a fold change greater than 40%. Data is representative of five biological replicates and is available in the Figure 4—source data 2. (D) TVN-PAT analysis of the gene OM14 for the indicated yeast strains treated with DMSO (control) or 20 µg/ml cordycepin for 40 min. Samples were run relative to a 100 bp ladder. Bands from top to bottom correspond to the distal, middle, and proximal OM14 APA forms. (E) TVN-PAT analysis of the gene OM14 for BY4741 cells treated with DMSO (control) or 20 µg/ml adenine, cordycepin and the guanosine equivalent 3’ deoxyguanosine for 40 min. Samples were run as for D. (F) BY4741 treated with DMSO or cordycepin as indicated were serially diluted 10-fold onto SC media plates and grown at 30°C for two days.
 
 How cordycepin interferes with cleavage site choice remains unknown. Genes affected by cordycepin treatment were therefore compared to those affected by mutations within the cleavage and polyadenylation machinery (Figure 4—figure supplement 1). The pattern of cleavage site switching in cordycepin treated cells was most similar to that of pcf11-2 and ysh1-13, with 1391 and 1610 genes, respectively, being affected both by the drug and the mutation. However, there was also a group of 153 genes that had significant APA occurring only in the cordycepin-treated samples. This variation suggested that cordycepin did not alter cleavage site usage simply by interacting with or disabling the cleavage machinery. This is consistent with our observation above that mutants defective for in vitro cleavage retained proper APA in vivo (Figure 2B). Importantly, the genes that did significantly switch cleavage site in both cordycepin treated cells and the 3’ end factor mutants, did so in the same direction with 1365 (98.1%) and 1592 (98.9%) of genes in quadrants 2 and 3 for cordycepin compared to pcf11-2 and ysh1-13, respectively (Figure 4C,D). Overall, we conclude that cordycepin had a similar effect on cleavage site choice as mutations in the 3’ end processing machinery but that it is unlikely to cause alternative polyadenylation through direct interaction with the 3’ end formation factors.
 
@@ -95,13 +298,21 @@ We previously showed that cordycepin-triphosphate (CoTP), rather than cordycepin
 
 Excess adenine has previously been shown to suppress cordycepin’s effect on yeast cell growth (Holbein et al., 2009). To determine whether adenine addition was also able to reduce cordycepin-induced APA, wild-type BY4741 cells were treated with cordycepin and adenine. However, adenine co-treatment did not return cells to wild-type cleavage site positions (Figure 4—figure supplement 2E). Furthermore, to ask whether other 3’ deoxynucleosides can induce APA, cells were treated with the guanosine equivalent of cordycepin, 3’ deoxyguanosine (Figure 4—figure supplement 2E). However, this analogue caused no changes to cleavage site choice further supporting the idea that cordycepin is unlikely to confer APA through RNA chain termination and indicates that the effect was specific to the adenosine analogue.
 
-## Cordycepin alters yeast intermediate metabolism to promote nucleotide accumulation
+### Cordycepin alters yeast intermediate metabolism to promote nucleotide accumulation
 
 The concentration of cordycepin used in our analyses did not significantly impair cell growth (Figure 4—figure supplement 2F). To further investigate the impact of the drug treatment, we analysed cellular metabolism. When grown in glucose-rich conditions, yeast preferentially ferments glucose to ethanol rather than perform aerobic respiration despite the presence of oxygen (Broach, 2012). To ask whether this was altered by cordycepin treatment, we first performed the Seahorse Energy Phenotyping assay on wild-type BY4741 yeast cells that were treated with cordycepin. This result was then compared with both DMSO treated and untreated cells. All three conditions responded to metabolic stress by increasing oxygen consumption, suggesting that cordycepin did not affect oxygen utilisation (Figure 5—figure supplement 1A). However, cordycepin-treated cells did not as efficiently undergo the increase in glycolytic output observed with both control groups (Figure 5—figure supplement 1B). In yeast, an increase in extracellular acidification is expected to report carbon dioxide production rather than lactic acid synthesis and indicates a decrease in overall ethanol synthesis in cordycepin-treated cells. As there was sufficient glucose in the media to support an increase in the control-treated cells, this suggests that metabolites of the glycolytic pathway of cordycepin-treated cells were diverted towards alternative pathways.
 
 To probe the extent of metabolic rewiring by cordycepin, a metabolomic analysis was performed on cordycepin-treated cells. Several metabolites involved in glycolytically linked pathways were significantly upregulated following cordycepin treatment (Figure 5). The reserve carbohydrate, and stress protectant, trehalose was increased 3.8-fold, which correlated with drug-induced stress (Jain and Roy, 2009; Eleutherio et al., 2015) and signifies amplified production of storage carbohydrates. This was accompanied by a 3.1-fold increase in acetyl CoA concentration and high levels of this metabolite are associated with increased acetylation of histones (Cai et al., 2011; Donohoe et al., 2012; Lee et al., 2014) and therefore global transcriptional activity. Notably, we observed increased levels of key intermediates involved in nucleotide biosynthesis, including pentose phosphate pathway intermediates (sedoheptulose-7-phosphate and putative ribulose-5-phosphate and/or xylulose-5-phosphate), inosine monophosphate (IMP), adenylosuccinate, dihydroorotate, orotate monophosphate and several nucleotides and deoxynucleotides (CDP, CTP, UDP, UTP, dCDP, dCTP, dADP, and cAMP) indicating a major impact on nucleotide metabolism. Defective APA following cordycepin treatment was thus accompanied by a striking upsurge in nucleotide abundance, which is an important parameter for RNAP II transcription elongation rate in vitro (Uptain et al., 1997).
 
-## Slowing transcription attenuates cordycepin’s effect on alternative polyadenylation
+![Figure 5.](https://cdn.elifesciences.org/articles/65331/elife-65331-fig5-v1.jpg)
+
+**Figure 5.:** Yeast metabolomics pathway map showing metabolite fold changes following 40 min treatment with 20 µg/ml cordycepin. Solid circles indicate detected confirmed metabolites and dashed circles detected putative metabolites. Coloured circles show metabolites with significant fold change after cordycepin treatment with red indicating an increase in abundance and blue a decrease in abundance. Darker colour is used for metabolites with greater than 50% fold change. Pathways are based on the KEGG database and include starch and sucrose metabolism (orange), glycolysis/gluconeogenesis (pink), citrate cycle (TCA cycle) (purple), pentose phosphate pathway (yellow), pyrimidine metabolism (green), and purine metabolism (blue). Asterix (*) indicates metabolites that appear multiple times on the map. The pharmacological inhibition of Imd2 by mycophenolic acid (MPA) is indicated. Data is representative of six biological replicates and is available in the Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65331/elife-65331-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Seahorse metabolic flux assay mitochondrial stress analysis of cordycepin treatment. (A) Oxygen Consumption Rate (OCR) and (B) Extracellular Acidification Rate (ECAR) were measured to assess the rate of mitochondrial respiration and glycolysis respectively. BY4741 cell basal activity was measured for four cycles, prior to treatment with 20 µg/ml cordycepin, DMSO (control) or media (control) for 10 cycles and uncoupling of mitochondrial function via FCCP and oligomycin addition for six cycles. Data is representative of three independent experimental repeats consisting of 12 wells per condition in each. Data is representative of three independent repeats.
+
+### Slowing transcription attenuates cordycepin’s effect on alternative polyadenylation
 
 We and others have previously shown that the use of distal polyadenylation sites is linked to upregulation of transcriptional initiation (Swaminathan and Beilharz, 2016) and elongation rate (Pinto et al., 2011). To test the idea that a change in nucleotide metabolism caused by cordycepin treatment leads to an increase in transcription rate and thus use of distal poly(A) sites, 4-thiouracil (4tU) labelling was used. This method monitors newly synthesised transcripts through the incorporation of 4tU, which subsequently appears as a T to C conversion when sequenced. Wild-type BY4741 cells were treated with cordycepin or DMSO and 4tU for 40 min. mRNA was then analysed using a modified version of the mPAT approach that used an anchored oligo-dT (TV12VN) primer for reverse transcription to focus on APA. For the gene OM14, three major cleavage sites were detected (Figure 6A).
 
@@ -117,7 +328,7 @@ Mycophenolic acid (MPA) is an inhibitor of IMP dehydrogenase, the rate-limiting 
 
 To examine the interaction of nucleotide and cleavage factor levels in cleavage site selection, pcf11-2 and sen1-1 cells were treated with cordycepin or MPA (Figure 6G). Cordycepin treatment caused no further lengthening of the ACO1 transcript in the 3’UTR lengthening mutant pcf11-2 and was unable to suppress the shortening seen in the sen1-1 mutant. In contrast, treatment with MPA prevented pcf11-2 3’UTR lengthening and caused increased shortening in sen1-1. This shows that 3’ends cannot extend past their most distal poly(A) site and produce a functional transcript and demonstrates that a reduced nucleotide availability has a stronger impact on cleavage site choice than the pcf11-2 and sen1-1 mutations.
 
-## The ability of a gene to undergo alternative polyadenylation is dependent on the local nucleosome landscape
+### The ability of a gene to undergo alternative polyadenylation is dependent on the local nucleosome landscape
 
 A large proportion of the yeast genome displayed changes in alternative polyadenylation following cordycepin treatment. But why did specific genes alter their 3’ ends in response to both loss of the core cleavage machinery and the drug cordycepin whilst others did not? To address this question, we assessed the structural differences between genes that responded to cordycepin treatment and those that maintained their original cleavage sites.
 
@@ -125,7 +336,7 @@ For this analysis, genes were considered to be alternatively polyadenylated if m
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/65331/elife-65331-fig7-v1.jpg)
 
-**Figure 7.:** Comparison of native genetic features in genes split based on APA following cordycepin treatment. APA was considered to occur if the major cleavage site (greater than 40% of reads) shifted to another site following 20 µg/ml cordycepin treatment for 40 min and to not occur if the major cleavage site remains the same. Genes used in each comparison are included in the Figure 7—source data 1. (A) Scaled density plot comparing gene length (in kilobase pairs) for genes in which APA occurs (pink, n = 378) and does not occur (blue, n = 4302). Dashed lines and coloured values indicate the median gene length. T-test p-value=0.031. (B) Schematic of the two types of 3’ end intergenic regions. The downstream gene can either be transcribed in the same direction as the upstream gene (tandem genes) or the opposite direction (convergent genes), in which case two genes will be assigned the same 3’ end intergenic region. (C) Normalised nucleosome occupancy per base pair around the translation end site, averaged across all yeast genes, derived from Kaplan et al., 2009. For tandem genes, APA occurred in 128 genes (pink) and did not occur in 1719 genes (blue). T-test p-value=0.055. For convergent genes, APA occurred in both genes for 15 gene pairs (pink), in one gene for 155 pairs (green) and in neither gene for 746 pairs (blue). ANOVA p-value<0.001. Nucleosome occupancy values above zero indicate nucleosome enrichment compared to the genome-wide average. (D) Scaled density plot comparing 3’ end intergenic region length (in base pairs) based on APA up to 1500 bp. Dashed lines and coloured values indicate the median intergenic region length. Tandem gene t-test p-value=0.646, convergent gene ANOVA p-value<0.001.Figure 7—source data 1.Gene lists for cordycepin responsive and tandem/convergent genes used for gene length, intergenic region and nucleosome occupancy analyses. Methods. Yeast Strains and Primers.
+**Figure 7.:** Comparison of native genetic features in genes split based on APA following cordycepin treatment. APA was considered to occur if the major cleavage site (greater than 40% of reads) shifted to another site following 20 µg/ml cordycepin treatment for 40 min and to not occur if the major cleavage site remains the same. Genes used in each comparison are included in the Figure 7—source data 1. (A) Scaled density plot comparing gene length (in kilobase pairs) for genes in which APA occurs (pink, n = 378) and does not occur (blue, n = 4302). Dashed lines and coloured values indicate the median gene length. T-test p-value=0.031. (B) Schematic of the two types of 3’ end intergenic regions. The downstream gene can either be transcribed in the same direction as the upstream gene (tandem genes) or the opposite direction (convergent genes), in which case two genes will be assigned the same 3’ end intergenic region. (C) Normalised nucleosome occupancy per base pair around the translation end site, averaged across all yeast genes, derived from Kaplan et al., 2009. For tandem genes, APA occurred in 128 genes (pink) and did not occur in 1719 genes (blue). T-test p-value=0.055. For convergent genes, APA occurred in both genes for 15 gene pairs (pink), in one gene for 155 pairs (green) and in neither gene for 746 pairs (blue). ANOVA p-value<0.001. Nucleosome occupancy values above zero indicate nucleosome enrichment compared to the genome-wide average. (D) Scaled density plot comparing 3’ end intergenic region length (in base pairs) based on APA up to 1500 bp. Dashed lines and coloured values indicate the median intergenic region length. Tandem gene t-test p-value=0.646, convergent gene ANOVA p-value<0.001.
 
 Genes were then further classified based on the directionality of their downstream neighbouring gene (Figure 7B). If the neighbouring gene was transcribed in the same direction, the gene of interest was classified as ‘tandem’, whereas if the adjacent gene was transcribed in the opposite direction, this gene was termed ‘convergent’. Convergent genes share a 3’ end intergenic region and are referred to as ‘gene pairs’. Gene pairs were divided based on whether both, one or neither genes undergo APA.
 
@@ -163,7 +374,7 @@ Taken together, our results support a model where kinetic competition governs th
 
 ## Materials and methods
 
-## Yeast cell growth conditions
+### Yeast cell growth conditions
 
 For cleavage factor mutant experiments, yeast strains were grown in YPAD rich media (1% yeast extract, 2% peptone, 2% glucose, 100 µg/ml adenine hemisulphate) at 25°C to an OD600 of 0.6 then transferred to 37°C for 1 hr before cells were harvested.
 
@@ -179,11 +390,11 @@ For W303 growth with or without adenine, cells were grown in W303 background syn
 
 Rpb1 fast mutants were created by transforming L1101S (fast) and E1103G (faster) Rpb1 mutant alleles (Kaplan et al., 2012) on LEU2 pRS315 based plasmids into CKY283 cells followed by replica plating on 5-fluoroototic acid to remove cells retaining the wild-type RPB1 URA3 plasmid. Cells were then grown in YPAD media until an OD600 of 0.6.
 
-## Total RNA extraction
+### Total RNA extraction
 
 Total RNA extraction was carried out using the hot phenol method (Schmitt et al., 1990) with slight modifications. Cell pellets were resuspended in 400 µl AE buffer (50 mM sodium acetate pH 5.2, 10 mM EDTA) on ice. A total of 33 µl of 25% SDS and 400 µl acid phenol was added then samples were vortexed and transferred to a 65°C water-bath for 20 min with intermittent vortexing. Samples were incubated on ice for 5 min to precipitate the SDS then centrifuged at top speed for 5 min at 4°C in a bench-top centrifuge. The supernatant (both phases) was transferred to a fresh tube and 400 µl of chloroform was added. Samples were vortexed thoroughly and centrifuged at top speed for 5 min at room temperature. The aqueous phase was then transferred to a fresh tube, avoiding the inter-phase and another 400 µl of chloroform was added. Following vortexing and centrifugation, the aqueous phase was transferred to a fresh tube containing 1/10th volume of 3 M sodium acetate pH 5.2 and an equal volume of isopropanol was added. Tubes were mixed by inversion then centrifuged at top speed for 20 min at 4°C. Supernatant was removed and pellets were washed with 80% ethanol and centrifuged at top speed for a further 10 min. Pellets were air-dried at room temperature and resuspended in RNase-free dH2O.
 
-## PAT-seq
+### PAT-seq
 
 PAT-seq libraries were prepared as described previously (Harrison et al., 2015). A 5’ biotinylated PAT-anchor primer, compatible with Illumina index primers, was used to create a 3’ tag on adenylated RNA. This ensures that reverse transcription only occurs from true 3’ ends rather than internal A repeat regions. For this 1 µg total RNA was combined with 1 µl Bio-EE primer and brought to a volume of 12 µl with dH2O in 200 µl PCR tubes. Mixtures were incubated at 80°C for 5 min then cooled to 37°C for 5 min. Once cooled, tubes were flash-centrifuged and 8 µl of master mix was added containing 4 µl 5x SuperScript III buffer, 1 µl 100 mM DTT, 1 µl 10 mM dNTPs, 1 µl RNaseOut and 1 µl Klenow polymerase per reaction. Samples were mixed thoroughly by inversion then flash-centrifuged and incubated at 37°C for 30 min. The temperature was then increased to 80°C for 5 min and 80 µl digest buffer (300 mM NaCl, 10 mM Tris-HCl pH 7.5) added before incubating for a further 10 min. Samples were then transferred to ice for 5 min.
 
@@ -201,7 +412,7 @@ For PCR amplification, cDNA was diluted 1:5 with the addition of 100 µl of dH2O
 
 Amplicons were then purified using Macherey-Nagel NucleoSpin columns per manufacturer’s instructions and NT1 buffer diluted 1:1 with dH2O. 49 µl of 60°C dH2O was used for the final column elution. A second round of PCR amplification was carried out for each sample using 47 µl purified amplicon, 1 µl P5 universal forward primer, 2 µl Illumina TruSeq indexed primer and 50 µl Amplitaq Gold 360 Master Mix. A different TruSeq primer was used for each experimental condition and amplification as above was repeated for 10 cycles. All PCR reactions were pooled then purified using Nucleospin columns with 1:3 diluted NT1 buffer and a final elution volume of 5 µl dH2O per original sample number. mPAT sequencing was done using MiSeq Reagent kit v2 with 300 cycles (300 bases of sequencing) on the Illumina MiSeq platform according to the manufacturer's specifications at Micromon Genomics, Monash University, Australia.
 
-## Sequencing data processing and statistical tests
+### Sequencing data processing and statistical tests
 
 PAT-seq and mPAT reads were processed using the Tail Tools pipeline (Harrison et al., 2015). Read counts were produced at the level of whole genes and at the level of peaks detected by the pipeline. The reference annotation used was Ensembl Saccharomyces cerevisiae version 82 for the cordycepin PAT-seq, version 89 for the mPAT, cordycepin mTVN-PAT and NNS PAT-seq and version 93 for the rpb1 mTVN-PAT and cleavage factor PAT-seq. These counts were then used to test for differential gene expression and APA. Raw sequencing and processed data has been uploaded to GEO, accession number GSE160539.
 
@@ -209,15 +420,25 @@ Differential gene expression was tested for between experimental groups, using t
 
 Shifts in APA usage was analysed as previously described (Turner et al., 2020). Peaks were first assigned to genes with up to 400 bp down-strand of the gene (but not proceeding into another gene on the same strand) were counted as belonging to that gene. Next, peak counts were log2 transformed and linear models were fitted for each peak, using TMM normalisation, voom, and limma, producing as coefficients estimates of the log2 abundance of reads at each peak in each of two experimental conditions. For each gene, a ‘shift score’ was then estimated using these fitted coefficients, as follows.
 
-For PAT-seq experiments, considering a single gene, for two conditions i=A,B, and n peaks j=1...n, there is a fitted coefficient βi,j, and the proportion of reads for each peak within a condition ispi,j=2βi,j∑k=1n2βi,k
+For PAT-seq experiments, considering a single gene, for two conditions $i=A,B$, and n peaks $j=1...n$, there is a fitted coefficient $\beta_{i,j}$, and the proportion of reads for each peak within a condition is
 
-A shift score s is then calculated, ranging from −1 to 1 where −1 indicates all reads in condition B are up-strand of condition A and one indicates all reads in condition B are down-strand of condition A.s=∑i=1n∑j=1nsgnj-ipA,ipB,jwhere sgn is the sign function. In the simplest case of two peaks, s is equal to the proportion distal peak usage in B minus the proportion distal peak usage in A.
+$$
+p_{i,j}=\frac{2^{\beta_{i,j}}}{\sum_{k=1}^{n}2^{\beta_{i,k}}}
+$$
 
-The fitted coefficients βi,j have an associated error covariance matrix, which can be propagated through these steps by the delta method to obtain an approximate standard error associated with s. Shift scores and associated standard errors are calculated for each gene with two or more peaks, then the topconfects R package (Harrison et al., 2019) is used to provide 'confect' inner confidence bounds on the shift scores with correction for multiple testing. Confect values are only given for significantly non-zero shifts, with a False Discovery Rate of 0.05. Ordering results by absolute confect values and reading down this list only as far as is desired, a False Coverage-statement Rate of 0.05 is guaranteed for these confidence bounds.
+A shift score s is then calculated, ranging from −1 to 1 where −1 indicates all reads in condition B are up-strand of condition A and one indicates all reads in condition B are down-strand of condition A.
 
-For mPAT experiments, we use the same s statistic as above, but with a simplified calculation method. Comparing two samples, A and B, with cA,j and cB,j read count at each peak j respectively we calculate pi,j as pi,j=ci,j∑k=1nci,k and calculate s as above.
+$$
+s=\sum_{i=1}^{n}\sum_{j=1}^{n}sgnj-ip_{A,i}p_{B,j}
+$$
 
-## Metabolomics
+where $sgn$ is the sign function. In the simplest case of two peaks, $s$ is equal to the proportion distal peak usage in B minus the proportion distal peak usage in A.
+
+The fitted coefficients $\beta_{i,j}$ have an associated error covariance matrix, which can be propagated through these steps by the delta method to obtain an approximate standard error associated with s. Shift scores and associated standard errors are calculated for each gene with two or more peaks, then the topconfects R package (Harrison et al., 2019) is used to provide 'confect' inner confidence bounds on the shift scores with correction for multiple testing. Confect values are only given for significantly non-zero shifts, with a False Discovery Rate of 0.05. Ordering results by absolute confect values and reading down this list only as far as is desired, a False Coverage-statement Rate of 0.05 is guaranteed for these confidence bounds.
+
+For mPAT experiments, we use the same $s$ statistic as above, but with a simplified calculation method. Comparing two samples, A and B, with $c_{A,j}$ and $c_{B,j}$ read count at each peak $j$ respectively we calculate $p_{i,j}$ as $p_{i,j}=\frac{c_{i,j}}{\sum_{k=1}^{n}c_{i,k}}$ and calculate $s$ as above.
+
+### Metabolomics
 
 Cell pellets obtained from 10 ml culture at OD600 of 0.6 were resuspended in equal volume (10 µl) H2O and cells broken open with cryo-pulverisation using a Retsch CryoMill (50 small ball bearings per sample, 4 × 45 s at a frequency of 30 Hz with intermittent cooling in liquid nitrogen for 1 min). 140 µl CMW extraction solvent (1:3:0.8 chloroform:methanol:H2O v/v/v containing the internal standards 1 µM CHAPS, 1 µM CAPS, 1 µM PIPES and 1 µM TRIS) was added and samples vortexed intermittently with ball bearings for 5 min (20 s vortexing, 40 s on ice). Supernatant and cell debris were moved to a fresh tube and intermittent vortexing continued for 15 min. Samples were then centrifuged at top speed for 10 min at 4°C. Supernatant was extracted and stored at −80°C until analysis by liquid chromatography-mass spectrometry.
 
@@ -225,7 +446,7 @@ Chromatography was performed using a Dionex Ultimate 3000 UHPLC system (Thermo) 
 
 Untargeted metabolomics data analysis was performed using the freely availably software packages mzMatch (Scheltema et al., 2011) and IDEOM (Creek et al., 2012) as previously described (Trochine et al., 2014; Stoessel et al., 2016). A total of 226 authentic metabolites were used for verification of retention times and to aid metabolite identification. Identification of metabolites with these standards have high confidence (MSI level 1) and are highlighted yellow in Figure 5—source data 1. Other metabolites were putatively identified (MSI level 2–3) using exact mass and predicted retention times from KEGG, Lipidmaps and MetaCyc databases (Creek et al., 2011). Mean peak height was used for relative quantification and unpaired Welch’s T test used for statistical analysis. Data was not normalised, with analysis of the four spiked internal standards (CHAPS, CAPS, PIPES, and TRIS), total ion current chromatograms, median peak heights and pooled quality control samples analysed throughout the batch used to determine signal reproducibility. It is noted that one replicate from each time point was excluded during analysis due to the observation of unwanted phase separation in the samples (likely due to excess residual water in the pellet).
 
-## Gene and intergenic region length and nucleosome occupancy analysis
+### Gene and intergenic region length and nucleosome occupancy analysis
 
 Alternative polyadenylation was based on the cordycepin PAT-seq experiment. Reads per million for each peak and sample were calculated using edgeR’s TMM library size correction. A primary peak was assigned for each gene for untreated BY4741 cells (t0) and cells treated with 20 µg/ml cordycepin for 40 min (t40). The primary peak must have at least RPM ≥5 and account for at least 40% of reads for that gene at that time point. Where no primary peak was assigned, the gene was discarded. 4410 genes had a primary peak at both t0 and t40. If the primary peak differed at t0 and t40, the gene was considered to undergo APA whereas if the primary peak remained the same after cordycepin treatment, no APA has occurred.
 
@@ -241,7 +462,7 @@ Convergent gene pairs were split based on whether both genes undergo APA, one ge
 
 Nucleosome positioning data was obtained from Kaplan et al., 2009. Yeast nucleosome DNA was prepared from log-phase cells grown in YPD treated with micrococcal nuclease (MNase). Log2 normalised nucleosome occupancy per base pair values were used. Genes were characterised as above as tandem or convergent and then split based on APA. Nucleosome positioning data for 500 bp either side of the translational end site for each gene was then averaged for each category. A nucleosome occupancy value of 0 represents the genome-wide average. Values above zero indicate nucleosome enrichment relative to the genome-wide average and values below zero a relatively nucleosome depleted region. To test whether there was significant difference in 3’ end nucleosome occupancy based on APA, an unpaired two-sided t-test was used for tandem genes and ANOVA was used for convergent genes. These returned values of p=0.055 and p<0.001, respectively indicating that the difference was significant convergent genes but not tandem genes.
 
-## 4tu labelling
+### 4tu labelling
 
 BY4741 cells were grown in synthetic media (0.67% yeast nitrogen base without amino acids, 2% glucose, 20 µg/ml uracil, leucine 100 µg/ml, histidine 20 µg/ml, methionine 20 µg/ml) at 30°C. The Pol II mutant rpb1-1 cells (Olivas and Parker, 2000), carrying plasmids either with either RPB1 wild type (pCK859) or the rpb1 H1085Y slow mutation (pCK870) (Kaplan et al., 2012; Malik et al., 2017) were grown in synthetic media (0.67% yeast nitrogen base without amino acids, 2% glucose, 20 µg/ml uracil) at 30°C.
 
@@ -257,21 +478,262 @@ To create mTVN-PAT cDNA, 400 ng of total RNA and 1 µl of the mTVN-PAT reverse w
 
 PCR amplification, sequencing and data processing were carried out as for the mPAT with 21 and 12 gene-specific forward primers for the BY4741 and rpb1-1 experiments respectively and primer sequences are indicated in Table 2.
 
+**Table 2.**
+ Oligonucleotide Primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer</th>
+      <th>Sequence (5’ – 3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PAT-seq biotin end-extend</td>
+      <td>Biotin-CAGACGTGTGCTCTTCCGATCTTTTTTTTTTTTTTTTTT</td>
+    </tr>
+    <tr>
+      <td>PAT-seq splint A (200 µM)</td>
+      <td>CCCTACACGACGCTCTTCCG(rA)(rT)(rC)(rT)</td>
+    </tr>
+    <tr>
+      <td>PAT-seq Splint B (200 µM)</td>
+      <td>NNNNAGATCGGAAGAGCGTCGTGTAGGG</td>
+    </tr>
+    <tr>
+      <td>Illumina universal Rd1 forward (50 µM for mPAT)</td>
+      <td>AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCT CTTCCG</td>
+    </tr>
+    <tr>
+      <td>PAT anchor reverse</td>
+      <td>GCGAGCTCCGCGGCCGCGTTTTTTTTTTTT</td>
+    </tr>
+    <tr>
+      <td>TVN-PAT anchor reverse</td>
+      <td>GCGAGCTCCGCGGCCGCGTTTTTTTTTTTTVN</td>
+    </tr>
+    <tr>
+      <td>OM14 PAT forward</td>
+      <td>GGGTCTTTTGACGCTGGAC</td>
+    </tr>
+    <tr>
+      <td>mPAT reverse</td>
+      <td>CAGACGTGTGCTCTTCCGATCTTTTTTTTTTTT</td>
+    </tr>
+    <tr>
+      <td>mPAT-TVN reverse</td>
+      <td>CAGACGTGTGCTCTTCCGATCTTTTTTTTTTTTVN</td>
+    </tr>
+    <tr>
+      <td>AAD16 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTTGCGTTTGTGTAAGAAATATGC</td>
+    </tr>
+    <tr>
+      <td>ADE2 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTAGAAACTGTCGGTTACGAAGC</td>
+    </tr>
+    <tr>
+      <td>APQ12 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGAAACGCCTCTGCTTACTCGG</td>
+    </tr>
+    <tr>
+      <td>ARG8 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGGCTATTGAAGCGGTTTACG</td>
+    </tr>
+    <tr>
+      <td>ARP5 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGAGACAGCAAACTGAAACGC</td>
+    </tr>
+    <tr>
+      <td>CHD1 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGCTGATGGCAATGTACGAC</td>
+    </tr>
+    <tr>
+      <td>COX17 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTCTGACAGTCTGCCGACAACCA</td>
+    </tr>
+    <tr>
+      <td>CRN1 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTCGGCGGCGATAATAATGC</td>
+    </tr>
+    <tr>
+      <td>CST6 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTCTCGAGCTGCATCCTTTCTT</td>
+    </tr>
+    <tr>
+      <td>DBF2 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTTCAACTAGCACCTATGAACGC</td>
+    </tr>
+    <tr>
+      <td>ECM16 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGCTTCCAGACCATCACAGG</td>
+    </tr>
+    <tr>
+      <td>ECM25 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGCATATACGACAACAAAATACCC</td>
+    </tr>
+    <tr>
+      <td>END3 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGCAGAAATCAATTGACACCGA</td>
+    </tr>
+    <tr>
+      <td>ENT1 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGTGATTCTGTCATTCCAGTCCG</td>
+    </tr>
+    <tr>
+      <td>ERG8 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGGTAGATAATAGTGGTCCATGTGA</td>
+    </tr>
+    <tr>
+      <td>GFD1 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTCACATGGACACTTTTAAGCACG</td>
+    </tr>
+    <tr>
+      <td>HSP26 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGGTTTCTTCTCAAGAATCGTG</td>
+    </tr>
+    <tr>
+      <td>IMP2 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGAGCCATTTTAGAATGAAAATCAGC</td>
+    </tr>
+    <tr>
+      <td>LOS1 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGCAAGGTCAATAGCTTTCAGG</td>
+    </tr>
+    <tr>
+      <td>MRPL19 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTCGAGAAATTTTCAACAGACCTTCC</td>
+    </tr>
+    <tr>
+      <td>MRPL22 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGCTGAGAAAGATGAACTGCTACTC</td>
+    </tr>
+    <tr>
+      <td>MSA1 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGCATGTGAATGGAGTTGACCTTC</td>
+    </tr>
+    <tr>
+      <td>NOP16 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGGCAACTACCAATTGATTACCA</td>
+    </tr>
+    <tr>
+      <td>NOT3 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTCAGTGCTAATGGCAGTATAATTTG</td>
+    </tr>
+    <tr>
+      <td>NUP159 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGCTATATGTACGTTGTTAGTGCCG</td>
+    </tr>
+    <tr>
+      <td>OM14 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGGTCTTTTGACGCTGGACGG</td>
+    </tr>
+    <tr>
+      <td>OM45 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTCTGGAGCTCGAAAAAGGAC</td>
+    </tr>
+    <tr>
+      <td>PDE2 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTTTCCTTTTGTGAAGTATTTGTGC</td>
+    </tr>
+    <tr>
+      <td>PNT1 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTCATGACATTATCTATGCTGTACATATTG</td>
+    </tr>
+    <tr>
+      <td>PRY2 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGGATTCTTCTTTTCTAGGGTACGC</td>
+    </tr>
+    <tr>
+      <td>RCL1 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGGTGTAACTTCACGGACAACT</td>
+    </tr>
+    <tr>
+      <td>RER2 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGAGCAAGATAAATGAGTTCGC</td>
+    </tr>
+    <tr>
+      <td>RHO1 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTCAATCCCATTCCTTTTCTCA</td>
+    </tr>
+    <tr>
+      <td>RPF1 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTCCGTAAGAACCGTGGTCG</td>
+    </tr>
+    <tr>
+      <td>RSC4 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGTCTTCCCATCATATGCATGT</td>
+    </tr>
+    <tr>
+      <td>SLF1 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGGTGAAATTAGCAGGCAGTTTG</td>
+    </tr>
+    <tr>
+      <td>SNF2 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGCATGACAGAAGCGAGTGTATAG</td>
+    </tr>
+    <tr>
+      <td>SRP68 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGGTTTCTTGGGCCTATTTGG</td>
+    </tr>
+    <tr>
+      <td>TIM54 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTCCAAGGAAGAGCCAGAATCAG</td>
+    </tr>
+    <tr>
+      <td>TOM70 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGCAGCAATGACATTGACATCTCAC</td>
+    </tr>
+    <tr>
+      <td>TRP2 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTAATGATGTATAGCAGGATCCTGA</td>
+    </tr>
+    <tr>
+      <td>UBC9 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGAATCCATCTTTCCCATTCTTCC</td>
+    </tr>
+    <tr>
+      <td>VTS1 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGCATATACCAACACAGGGAACA</td>
+    </tr>
+    <tr>
+      <td>YET3 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGTCGATGTGCAAAAGCCTACA</td>
+    </tr>
+    <tr>
+      <td>YRA1 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTACCGCCACTAGGTGACGC</td>
+    </tr>
+    <tr>
+      <td>YSC84 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTGGATGGGTTCCTTATTCAGC</td>
+    </tr>
+    <tr>
+      <td>MID2 mPAT</td>
+      <td>CCTACACGACGCTCTTCCGATCTCAAGGTAACGAATTATCACCACG</td>
+    </tr>
+  </tbody>
+</table>
+
+_All primers have a concentration of 100 µM unless stated._
+
 For each read aligned to the target genes, every mismatch along this sequence compared to the reference was found and a list of SNPs created. From this, the total number of T to C nucleotide conversions, indicative of 4tU labelling, was calculated. The total reads (in reads per million) and those with T to C conversions for each read length was compared for each sample condition. Reads aligned to the OM14 gene were plotted with values representative of two replicates.
 
-## Polysome profiling
+### Polysome profiling
 
 Prior to cell harvesting, 100 µg/ml cycloheximide was added and incubation continued for another minute to stall ribosomes on the mRNA. After removal of supernatant, pellets were resuspended in 5 ml breaking buffer (20 mM Tris-HCl pH 7.5, 100 mM KCl, 0.5% NP40, 2 mM MgCl2, 200 µg/ml heparin, 100 µg/ml cycloheximide, 2 mM DTT, 0.5 mM PMSF) on ice and transferred to corex tubes. Pellets were then resuspended in 1 ml breaking buffer and 4 µl RNaseOut and approximately 500 µl worth of glass beads added. Cells were lysed by vortexing corex tubes 10 times for 1 min with 1 min on ice in between. Supernatant was then transferred to 2 ml tubes and stored at −80°C until ready for further use.
 
 Linear sucrose gradients were prepared in Beckman Coulter 14 × 96 mm centrifuge tubes with sequential loading of sucrose stocks in gradient buffer (50 mM Tris-HCl pH 7.0, 50 mM NH4Cl, 0.5% NP40, 4 mM MgCl2, 1 mM DTT and 100 µg/ml cycloheximide). From top to bottom, tubes contained 2.5 ml 17.5%, 2.5 ml 25%, 2 ml 33%, 2 ml 41% and 2.5 ml 50% sucrose solutions. Lysate was loaded to the top of the sucrose gradients and spun in a swinging bucket rotor Beckman Coulter SW40TI in a L-90K Preparative Ultracentrifuge at 38000 rpm for 2.5 hr at 4°C, max acceleration, no break. Gradients were fractionated by upward displacement with 60% sucrose at 3 ml/min and absorbance was monitored at 254 nm.
 
-## Proteomics
+### Proteomics
 
 Cell pellets were resuspended in 25 µl 1% SDC (sodium deoxycholate), 100 mM Tris and broken open with cryo-pulverisation using a cryogenic mixer mill (50 small ball bearings per sample, 4 × 45 s at a frequency of 30 Hz with intermittent cooling in liquid nitrogen for 1 min). The protein content was estimated using the bicinchoninic acid method. Samples were denatured and alkylated for 5 min at 95°C with TCEP (Tris(2-carboxyethyl phosphine hydrochloride)) and CAA (2-chloroacetamide) at final concentrations of 10 mM TCEP and 40 mM CAA. Sequencing-grade trypsin was added at an enzyme:protein ratio of 1:100 and incubated overnight at 37°C. Protein digestion was arrested through the addition of formic acid to a final concentration of 1% and two-phase extraction with water-saturated ethyl acetate was used to remove SDC. The aqueous phase containing the peptides was collected, concentrated in a vacuum concentrator and reconstituted in buffer A (0.1% formic acid).
 
 Data-independent acquisition (DIA) mass spectrometry was performed on an Orbitrap Fusion Tribrid mass spectrometer (Thermo Scientific) coupled to a Dionex UltiMate 3000 RSLCnano system and a Dionex UltiMate 3000 RS autosampler. The samples were loaded onto an Acclaim PepMap 100 trap column (100 µm x 2 cm; nanoViper; C18; 5 µm; 100 Å) and separated on an Acclaim PepMap RSLC analytical column (75 µm x 5 cm; nanoViper; C18; 2 µm; 100 Å). The parameters for the mass spectrometric DIA acquisition were described previously (Deo et al., 2020). The acquired DIA data was analysed in Spectronaut 8 Cassini (Biognosys) using an in-house generated spectral library established by acquiring the same samples with the same set-up in data-dependent acquisition mode.
 
-## TVN-PAT
+### TVN-PAT
 
 TVN-PAT was performed as previously described (Jänicke et al., 2012). To create TVN-PAT cDNA, 1 µg of total RNA and 1 µl TVN primer were combined and brought to a volume of 12 µl with dH2O in 200 µl PCR tubes. Mixtures were incubated at 80°C for 5 min then cooled to 42°C for 1 min. Once cooled, tubes were flash-centrifuged and 7 µl of master mix was added containing 4 µl 5x SuperScript III buffer, 1 µl 100 mM DTT, 1 µl 10 mM dNTPs and 1 µl RNaseOut per reaction. Samples were mixed thoroughly by inversion then flash-centrifuged and held at 42°C for 1 min. At this temperature, 1 µl of SuperScript III was added followed by mixing by inversion and flash-centrifuging. Samples were then further incubated at 42°C for 15 min, 48°C for 15 min and 55°C for 15 min followed by inactivation of reverse transcription at 80°C for 5 min and cooling to 12°C.
 
@@ -279,6 +741,6 @@ For PCR amplification, cDNA was diluted 1:10 with the addition of 200 µl of dH2
 
 Four µl 6x Orange G loading dye was added to each PCR sample. 12 µl was run on a 2% high resolution agarose gel pre-stained with SYBR safe. To estimate PCR product sizes, band migration was determined relative to a 100 bp ladder.
 
-## Seahorse metabolic analysis
+### Seahorse metabolic analysis
 
 BY4741 cells were subjected to Seahorse XF Cell Energy Phenotype assay per the manufacturer’s instructions (Agilent) with modifications as follows. Cells were grown at 30°C to OD600 0.6 in synthetic media then resuspended in assay medium (Seahorse XF media, 20 µg/ml uracil, 5 mg/ml glucose, 5 µg/ml ammonium sulphate) and plated (5 × 104 per well) in CellTak-coated XF96 plates via centrifugation (1000 g, 5 min, RT). After 1 hr recovery at 30°C, Oxygen Consumption Rate (OCR) and Extracellular Acidification Rate (ECAR) were determined using an XF96 extracellular flux analyser (Seahorse Biosciences) at 30°C. Using cycling parameters 1 min mix, 1 min wait, 2 min measure, basal activity was measured for four cycles. After addition of 20 µg/ml cordycepin, or an equivalent volume of DMSO or assay media (controls), a further 10 cycles were measured before uncoupling of mitochondrial function via stressor cocktail (3 µM FCCP, 1 µM oligomycin), followed by a further six measurement cycles. Data are representative of three independent experimental repeats, with 12 wells per condition in each. Graphs were prepared using Prism seven software.

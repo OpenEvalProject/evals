@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03efmqc40 Interdisciplinary Graduate Program in Neuroscience, Arizona State University Tempe United States
-2. https://ror.org/03efmqc40 School of Life Sciences, Arizona State University Tempe United States
-3. https://ror.org/03efmqc40 Barrett Honors College, Arizona State University Tempe United States
+1. Interdisciplinary Graduate Program in Neuroscience, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))
+2. School of Life Sciences, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))
+3. Barrett Honors College, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))
 
 † Corresponding author
 
@@ -33,7 +33,7 @@ The connectivity of different subtypes of UBCs is difficult to address. Paired e
 
 ## Results
 
-## Electrophysiological responses of GRP and P079 UBCs reveal that they are ON and OFF UBC subtypes
+### Electrophysiological responses of GRP and P079 UBCs reveal that they are ON and OFF UBC subtypes
 
 To label a population of UBCs that are excited by glutamate (ON UBCs), we used a mouse line that expressed Cre recombinase (Cre) under the control of the Grp (gastrin-releasing peptide [GRP]) promoter (Gerfen et al., 2013), a promoter that had been reported to be active in mGluR1-expressing (mGluR1(+)) UBCs in a similar mouse line (Kim et al., 2012). We crossed the GRP-Cre mouse to a tdTomato reporter (Ai9) (Madisen et al., 2010) and targeted fluorescently labeled UBCs for whole-cell recording in acute brain slices (Figure 1A). The white matter of lobe X was stimulated with an extracellular electrode to evoke synaptic currents.
 
@@ -47,7 +47,7 @@ Using the same approach, we tested the response to synaptic stimulation in a pop
 
 The slow postsynaptic currents were inward in every GRP UBC and outward in every P079 UBC (Figure 1L). The capacitance of GRP UBCs was less than half that of P079 UBCs, which suggests that the membrane area of the OFF UBCs is greater (GRP UBCs: 11.34 pF ± 0.59, n = 15; P079 UBCs: 26.08 pF ± 1.96, n = 12; t-test; p<0.0001; mean ± SEM; Figure 1M). We did not observe a significant difference in input resistance between the two cell types (GRP UBCs: 0.56 GΩ ± 0.04, n = 9; P079 UBCs: 0.64 GΩ ± 0.09, n = 10; t-test; p=0.44; mean ± SEM; Figure 1N). Current steps were injected into both UBC types to characterize their excitability. There was a significant interaction between the UBC type and response to current steps (mixed model ANOVA, p<0.0001, n = 17). GRP UBCs had a higher firing rate in response to the same level of injected current compared to P079 UBCs, despite their similar input resistance, suggesting that GRP ON UBCs are more excitable and can fire at faster rates (Figure 1O and P). Hyperpolarizing current steps produce a sag that is mediated by the h-current (Ih) in UBCs (Kim et al., 2012). P079 UBCs had a significantly more prominent sag than GRP UBCs, measured in response to a –100 pA current step (P079: 0.39 ± 0.04, n = 7; GRP: 0.16 ± 0.01, n = 15; t-test; p<0.0001; mean ± SEM) (Figure 1P and Q). This is consistent with previous work showing that OFF UBCs have a larger h-current than ON UBCs (Kim et al., 2012). In summary, electrophysiological recordings from GRP and P079 UBCs confirm that they are ON and OFF UBC subtypes, respectively.
 
-## GRP and P079 UBCs are distinct subpopulations that differ in size and distribution
+### GRP and P079 UBCs are distinct subpopulations that differ in size and distribution
 
 Besides the functional differences in the GFP and mCitrine-expressing UBCs outlined above, these neurons also showed significant differences in their size and distribution. Crossing the GRP-Cre/Ai9 mice with the P079 mice resulted in triple transgenic mice that expressed tdTomato and mCitrine in almost entirely separate subpopulations of UBCs—only 3 out of 944 UBCs that were labeled expressed both fluorescent proteins. GRP and P079 UBCs were present in the lobes of the cerebellar vermis in different densities (Figure 2A). More GRP UBCs than P079 UBCs were present in lobes VI–IX, with few of either subtype in lobes II–V. The highest density of both UBC subtypes was in lobe X, which is where we focused the following analyses (Figure 2B). UBCs have convoluted dendritic brushes that are similar in appearance to their axon terminals (Figure 2C).
 
@@ -57,7 +57,7 @@ Besides the functional differences in the GFP and mCitrine-expressing UBCs outli
 
 GRP UBCs have been reported to have smaller somas than UBCs that express calretinin (calretinin(+)), a calcium-binding protein that labels the OFF UBC population (Kim et al., 2012; Borges-Merjane and Trussell, 2015). We found that the cross-sectional area of GRP UBCs was significantly smaller than that of P079 UBCs (GRP: 68.75 ± 9.69 µm2, mean ± SD, n = 92; P079: 74.47 ± 12.53 µm2, mean ± SD, n = 114, t-test, p=0.0004), which is consistent with our electrophysiological analysis of their membrane capacitance (Figure 2D). The distribution of GRP and P079 UBCs also supports their identity as ON and OFF UBCs as the density of mGluR1(+) ON UBCs is higher in the ventral leaflet of lobe X and the density of calretinin(+) OFF UBCs is higher in the dorsal leaflet (Nunzi et al., 2002; Sekerková et al., 2014).
 
-## GRP UBCs are a subset of mGluR1(+) UBCs
+### GRP UBCs are a subset of mGluR1(+) UBCs
 
 Somatodendritic expression of mGluR1 and calretinin defines two separate populations of UBCs (termed type II and type I, respectively; Nunzi et al., 2002) and correspond to the functionally defined ON and OFF subtypes (Borges-Merjane and Trussell, 2015). To investigate the expression of mGluR1 and calretinin in GRP and P079 UBCs, we immunohistochemically labeled, imaged, and counted UBCs in both ventral and dorsal areas of lobe X in 4–8 brain slices from triple transgenic mice (n = 4 mice). We found that 98.1% (155/158) of the GRP/Ai9 UBCs expressed mGluR1 in their dendritic brushes (Figure 3A and B). The GRP/Ai9/mGluR1(+) population represented 20.9% (155/741) of the total population of mGluR1(+) UBCs. 0/149 GRP/Ai9 UBCs expressed calretinin in a separate series of slices (Figure 3C and D). Thus, the GRP line labels about 1/5th of the ON UBCs and does not label OFF UBCs.
 
@@ -65,11 +65,11 @@ Somatodendritic expression of mGluR1 and calretinin defines two separate populat
 
 **Figure 3.:** (A) Sagittal section of lobe X showing genetically expressed mCitrine (green) from the P079 mouse, tdTomato (red) from the GRP-Cre/Ai9 mouse, and immunohistochemical labeling of mGluR1 (magenta). Maximum intensity projections. (B) Example of a P079 UBC (soma indicated with O, brush indicated with arrowhead), GRP UBC (soma indicated with *, brush indicated with arrowhead). The GRP UBCs expresses mGluR1 in the somatic membrane and dendritic brush. Most P079 UBCs do not express mGluR1. Single image planes. (C) Sagittal section of lobe X showing genetically expressed mCitrine (green) from the P079 mouse, tdTomato (red) from the GRP-Cre/Ai9 mouse, and immunohistochemical labeling of calretinin (magenta). Maximum intensity projections. (D) Example of a P079 UBC (soma indicated with O), GRP UBC (soma indicated with *). The P079 UBCs express calretinin in their cytoplasm. GRP UBCs do not express calretinin.
 
-## P079 mouse line drives mCitrine expression in the majority of calretinin(+) UBCs
+### P079 mouse line drives mCitrine expression in the majority of calretinin(+) UBCs
 
 Using the same triple transgenic mice and immunohistochemical approach described above, 92.2% (284/308) of the P079 UBCs were calretinin(+) (Figure 3C and D). The P079 UBCs represent 70.5% (284/403) of the total calretinin(+) population. We were surprised to find, however, that 61.3% (200/326) of the P079 UBCs appeared mGluR1(+). This represents 27.0% (200/741) of the total mGluR1(+) population. These P079/mGluR1(+) UBCs could be differentiated from P079/mGluR1(-) UBCs by their lower expression of mCitrine: the relative labeling intensity of the mGluR1(+) P079 UBCs, after amplification with an anti-GFP antibody, was less than half of the more common mGluR1(-) P079 UBCs (43.2% soma pixel intensity relative to mGluR1(-) P079 UBCs, n = 34 z-planes with at least one of each subtype, t-test, p=8.403e-6). In addition, the cross-sectional area of the mGluR1(+) P079 somas was 60.62 ± 13.67 µm2, mean ± SD, n = 52 and significantly smaller than the mGluR1(-) P079 somas (72.48 ± 16.90 µm2 mean ± SD, n = 40, t-test, p=0.00035). It is likely that the P079 UBCs that express a low density of mCitrine were not able to be visualized in our electrophysiological experiments because their native fluorescence was below the level of detection. Unfortunately, the observation that some mGluR1(+) UBCs are labeled in the P079 mouse line precludes its use for expressing genes in OFF UBCs specifically.
 
-## GRP and P079 UBCs are distinct populations in dorsal cochlear nucleus
+### GRP and P079 UBCs are distinct populations in dorsal cochlear nucleus
 
 UBCs are also present in the dorsal cochlear nucleus, a cerebellum-like circuit in the auditory brainstem of mammals. Like granule cells in the dorsal cochlear nucleus, UBCs receive multisensory signals from various sources (Ryugo et al., 2003; Balmer and Trussell, 2021b; Balmer and Trussell, 2022). In order to test whether our findings about the identity of UBCs labeled in GRP-cre and P079 mice are generalizable across UBC populations, we examined their distribution in the dorsal cochlear nucleus. We found that 97.8% (132/135) of the GRP/Ai9 UBCs expressed mGluR1 in their dendritic brushes (Figure 4A and B). The GRP/Ai9/mGluR1(+) population represented 34.2% (132/386) of the population of mGluR1(+) UBCs and is therefore a subpopulation of about 1/3 of the mGluR1(+) ON UBCs. In a separate series of slices, 0/115 GRP/Ai9 UBCs expressed calretinin and is therefore useful for expressing genes in a subset of ON UBCs without expression in OFF UBCs in the dorsal cochlear nucleus.
 
@@ -79,7 +79,7 @@ UBCs are also present in the dorsal cochlear nucleus, a cerebellum-like circuit 
 
 We also found that 89.7% (140/156) of the P079 UBCs were calretinin(+) (Figure 4C and D). The P079 UBCs represent 85.9% (140/163) of the total calretinin(+) population. Similar to our results in the cerebellum, we found that 56.7% (127/224) of the P079 UBCs were mGluR1(+). This represents 32.9% (127/386) of the mGluR1(+) population. As in the cerebellum, these P079/mGluR1(+) UBCs were identifiable by their significantly lower intensity of mCitrine after antibody amplification (43.5% intensity compared to mGluR1(-) P079 UBCs, n = 19 z-planes with at least one of each type, t-test, p=1.352e-6). In summary, in the dorsal cochlear nucleus, the P079 mouse line expresses mCitrine in 86% of the calretinin(+) UBCs and 33% of the mGluR1(+) UBCs and the GRP line expresses Cre in 34% of the mGluR1(+) UBC population and 0% of the calretinin(+) population. Thus, the expression pattern in the dorsal cochlear nucleus of UBCs in these two mouse lines mirrors that of the cerebellum.
 
-## Axonal projections between ON UBCs and OFF UBCs
+### Axonal projections between ON UBCs and OFF UBCs
 
 Do ON and OFF UBC subtypes target one another? In the GRP/Ai9/P079 mouse line, all GRP UBCs are ON UBCs and the P079 UBCs are mostly OFF UBCs, although their OFF UBC identity must be confirmed by their expression of calretinin. Thus, we searched for red GRP UBC axon terminals that contacted green P079 UBC brushes that also expressed calretinin. These contacts were presumed to be synapses based on our previous anatomical analyses of functional synapses between mossy fibers and UBCs (Balmer and Trussell, 2019). Several examples of such synaptic connections were identified, indicating that GRP ON UBCs provide synaptic input to P079 OFF UBCs (Figure 5A and B). Using the same approach, we found OFF UBC axon terminals (P079 and calretinin(+)) contacting ON UBC brushes (GRP) (Figure 5C and D). These projections were rare and we did not attempt to characterize the proportion of ON to OFF UBC connections as both populations are subsets of ON and OFF UBCs and would be a significant underestimate. However, these results do reveal that UBC subtypes synapse on one another and may introduce complex spiking patterns.
 
@@ -87,7 +87,7 @@ Do ON and OFF UBC subtypes target one another? In the GRP/Ai9/P079 mouse line, a
 
 **Figure 5.:** (A, B) ON UBC axon terminals (GRP, red) that project to OFF UBCs (P079, green), confirmed to express calretinin (magenta). Single image sections. (C, D) OFF UBC axon terminals (P079, green), confirmed to express calretinin (magenta) contacting the dendritic brushes of ON UBCs (GRP, red). Single image sections.
 
-## Axonal projections from ON UBCs to other ON UBCs
+### Axonal projections from ON UBCs to other ON UBCs
 
 To test whether ON UBCs synapse on other ON UBCs, we searched for labeled axon terminals in the GRP/Ai9 mouse that contacted brushes of ON UBCs labeled with mGluR1. Two examples are shown in Figure 6. Care was taken to confirm that mGluR1 labeling that appeared to decorate the brush of a UBC could be traced to a soma with the characteristic expression in the somatic membrane that forms a circle. These examples show that GRP ON UBCs target mGluR1(+) UBCs that are not transgenicially labeled in the GRP mouse line.
 
@@ -101,7 +101,7 @@ In a second approach to investigate synaptic connections between ON UBCs, we uti
 
 **Figure 7.:** (A) GRP ON UBCs expressed fluorescent proteins that were either amplified with the anti-GFP antibody or anti-mCherry antibody. GRP UBCs and their axons and terminals are labeled. Maximum intensity projections. (B) Example of a GRP UBC expressing cytoplasmic YFP (green) that appears to be contacted by a presynaptic terminal from the axon of another GRP UBC that expresses both cytoplasmic YFP (green) and cytoplasmic tdimer2(12) (magenta). Single image sections. (C) Example of GRP ON UBC expressing cytoplasmic tdimer2(12) (magenta) and membrane-bound mCerulean (green) that appears to receive a synaptic terminal that expresses cytoplasmic YFP (green). Single image sections. (D) Example of GRP ON UBC that expresses cytoplasmic tdimer2(12) (magenta) receiving input from a GRP UBC axon that expresses cytoplasmic YFP (green). Single image sections.
 
-## Axonal projections from OFF UBCs to other OFF UBCs
+### Axonal projections from OFF UBCs to other OFF UBCs
 
 To address whether OFF UBCs project axons to other OFF UBCs, we exploited the observation that the P079 line expresses mCitrine in some, but not all, calretinin-expressing OFF UBCs. Thus, when calretinin is labeled immunohistochemically using a non-green fluorophore, all OFF UBCs are revealed and their brushes can be examined for the presence of connections from mCitrine-labeled P079 OFF UBCs axon terminals. Several examples for OFF to OFF UBC synaptic connections were confirmed anatomically (Figure 8). In some cases, calretinin(+) axon terminals innervated the brushes of P079 UBCs that were also calretinin(+) (Figure 8A and B). In other cases, the P079 UBC terminal contacted calretinin(+) UBCs that were not labeled transgenically in the P079 line (Figure 8C).
 
@@ -115,11 +115,11 @@ Brainbow2.1-Confetti reporter mice were crossed with a line that expresses Cre i
 
 **Figure 9.:** (A) Calretinin-Cre UBCs expressed fluorescent proteins that were either amplified with the anti-GFP antibody or anti-mCherry antibody, revealing UBCs and their axons and terminals in lobe X. Maximum intensity projections. (B) Example of a labeled calretinin-Cre axon terminal (magenta) that contacted the brush of a calretinin-Cre UBC (green), showing that these OFF UBC project to one another. (C) Example of a calretinin-Cre UBC axon terminal (magenta) that appeared to contact a spine-like extension from the soma of another calretinin-Cre UBC (green). (D) Example of a calretinin-Cre axon terminal (magenta) that projected a small fiber that made a bouton-like synapse onto the brush of another calretinin-Cre UBC (green) that is presumed to have another unlabeled input to the majority of its dendritic brush.
 
-## Computational models predict transformations of spiking patterns through synaptically connected ON and OFF UBCs
+### Computational models predict transformations of spiking patterns through synaptically connected ON and OFF UBCs
 
 To address how spiking activity may be transformed by different types of UBCs, computational models were developed to simulate the essential features of ON and OFF UBCs, including their passive electrical properties, synaptic current responses, and spiking patterns. UBCs can fire spontaneously or be silent in acute brain slices (van Dorp and De Zeeuw, 2015; Kim et al., 2012). We chose to make the OFF UBCs spontaneously active in this model so that synaptic input would produce a pause in firing (OFF response) that could be easily measured. By contrast, we made ON UBCs not spontaneously active so that synaptic input would produce a burst of action potentials (ON response). Action potentials triggered glutamate concentration transients that drove the conductance of model AMPA receptors in ON UBCs and mGluR2 in OFF UBCs (see ‘Materials and methods’). We contrasted simple cases of an excitatory input to either an ON or OFF UBC, with a more complex case in which the excitatory input drove an ‘intermediate’ UBC, which then synapsed on a second UBC. In this way, we could examine the predicted outcomes of ON to ON, ON to OFF, OFF to ON, and OFF to OFF scenarios.
 
-## Serial ON UBCs multiply burst duration
+### Serial ON UBCs multiply burst duration
 
 Presynaptic input to an ON UBC produced bursts of action potentials that multiplied in duration in a circuit with an intermediate ON UBC (Figure 10A–C). Three presynaptic spikes in a burst lasting 19.6 ms produced a burst of 12 action potentials in the first UBC, lasting 358.0 ms, and 35 action potentials in the second UBC, lasting 1175.3 ms, ~60 times longer than the initial presynaptic input (Figure 10A and B). The enhancement of the spiking duration both in the first and second ON UBC was more pronounced with shorter bursts of presynaptic input and began to plateau at longer durations of input (Figure 10C). The plateau in spiking duration occurs because the rebound AMPA receptor-mediated slow EPSC that occurs at the end of synaptic stimulation in ON UBCs reaches a maximum after ~100 ms of synaptic stimulation (Lu et al., 2017).
 
@@ -127,11 +127,11 @@ Presynaptic input to an ON UBC produced bursts of action potentials that multipl
 
 **Figure 10.:** (A) Model in which a presynaptic axon fired three action potentials (inset shows presynaptic spikes with expanded time scale) that generated an AMPA receptor-mediated synaptic current and a burst in spikes in the first ON UBC (ON1), which produced an extended AMPA receptor-mediated synaptic current in the postsynaptic UBC (ON2) and an extended burst of spikes. (B) Presynaptic spikes were amplified to longer bursts in each subsequent ON UBC. (C) Burst duration in the intermediate ON UBC (green) and second ON UBC (blue) as a function of presynaptic input duration. (D) Model in which a presynaptic axon fired three action potentials that generated an mGluR2-mediated synaptic current in an OFF UBC, which produced a pause in spontaneous firing lasting ~1 s. (E) An intermediate ON UBC between the presynaptic axon and OFF UBC generated a larger and longer-lasting mGluR2-mediated current that produced an extended pause in spontaneous firing. (F) Pause duration in an OFF UBC was extended by an intermediate ON UBC. (G) Pause duration in an OFF UBC with and without an intermediate ON UBC as a function of presynaptic input duration.
 
-## Intermediate ON UBCs extend the pause in postsynaptic OFF UBCs
+### Intermediate ON UBCs extend the pause in postsynaptic OFF UBCs
 
 A burst of presynaptic spikes causes a pause in spontaneous firing in OFF UBCs due to the outward current produced by mGluR2 (Figure 10D). When an intermediate ON UBC was present between the presynaptic axon and the OFF UBC, the synaptic signal to the OFF UBC was extended, and therefore increased the mGluR2 current, markedly lengthening the duration of the pause in spiking (Figure 10E and F). Indeed, the presence of an intermediate ON UBC increased the duration of the pause in the postsynaptic OFF UBC by ~940 ms following 1–10 presynaptic action potentials (indicated by an upward shift in the curve in Figure 10G). The small difference in how much the pause was lengthened across the range of 1–10 presynaptic spikes is due to the intermediate ON UBC’s response—even a single presynaptic spike produces a burst of action potentials that is only slightly extended by longer trains of presynaptic input. Across a population of ON UBCs, however, the size and duration of the slow inward currents that drive their firing vary and would thus extend the pause of a postsynaptic OFF UBC for different durations.
 
-## Intermediate OFF UBCs produce a delayed pause in postsynaptic ON UBC
+### Intermediate OFF UBCs produce a delayed pause in postsynaptic ON UBC
 
 Because OFF UBCs fired spontaneously in our model, an ON UBC postsynaptic to an intermediate OFF UBC fired with an irregular spiking pattern (Figure 11A). Presynaptic input to the intermediate OFF UBC paused both its firing and its release of glutamate onto the postsynaptic ON UBC, which therefore produced a pause in the postsynaptic ON UBC. However, this pause only occurred after a delay of about 370 ms due to the slow AMPA receptor-mediated EPSC in the ON UBC that decayed slowly until it no longer drove spiking. The length of the delay before the pause began is related to the strength of the AMPA receptor-mediated current in the postsynaptic ON UBC. The length of the pause in the ON UBC depends on how long the intermediate OFF UBC pauses. Thus, an intermediate OFF UBC converts the usual excitatory ON UBC response to a pause that is similar to that of the OFF UBC itself. However, the pause is distinct from that of OFF UBCs because it is delayed and briefer (Figure 11B).
 
@@ -139,7 +139,7 @@ Because OFF UBCs fired spontaneously in our model, an ON UBC postsynaptic to an 
 
 **Figure 11.:** (A) Model showing an intermediate OFF UBC (magenta) that produced a delayed pause in a postsynaptic ON UBC (blue). The spontaneous activity of the intermediate OFF UBC drove irregular spiking in the postsynaptic ON UBC. Presynaptic input (10 spikes shown in inset with expanded time scale) produced a pause in the intermediate OFF UBC, which stopped its release of glutamate onto the ON UBC, and produced a pause after a delay that is due to the slow decay of the AMPA receptor-mediated current. (B) The intermediate OFF UBC (magenta) paused for longer than the postsynaptic ON UBC (blue) because the pause in the ON UBC occurred after a delay and it ended as soon as the intermediate OFF UBC resumed firing. (C) Model showing an intermediate OFF UBC that produced delayed spikes in a postsynaptic OFF UBC. Spontaneous firing of the intermediate OFF UBC (OFF1, magenta) tonically inhibited the postsynaptic OFF UBC (OFF2, gold). Presynaptic input caused a pause in the intermediate OFF UBC, which disinhibited the postsynaptic OFF UBC, allowing it to fire with a delay that depended on the decay of the mGluR2 current. (D) The duration of the burst of action potentials in the postsynaptic UBC increased with longer durations of presynaptic input.
 
-## Serial OFF UBCs produce a delayed burst in postsynaptic OFF UBC
+### Serial OFF UBCs produce a delayed burst in postsynaptic OFF UBC
 
 Finally, we considered the case of a connection between two OFF UBCs. In a circuit with a spontaneously firing OFF UBC synapsing onto another OFF UBC (labeled OFF1 and OFF2, respectively, in Figure 11C and D), the tonic glutamatergic input and mGluR2 inhibition prevented spontaneous spiking in the postsynaptic cell. When the intermediate OFF UBC received a burst of presynaptic input, it was inhibited by its own mGluR2 current and therefore stopped firing, thereby disinhibiting the postsynaptic OFF UBC, which then fired after a delay (Figure 11C). Note that this firing would be more pronounced had we incorporated calcium and TRP conductances that contribute to a ‘late-onset response’ in UBCs (Locatelli et al., 2013; Subramaniyam et al., 2014). The duration of the delayed firing in the second postsynaptic OFF UBC depended on the duration of presynaptic input signal to the intermediate UBC (Figure 11D). Moreover, the delay between the last spike in the intermediate OFF UBC and the first spike in the postsynaptic OFF UBC was contingent on the slow decay of the mGluR2 current and was 1082.7 ms in the example in Figure 11C.
 
@@ -151,7 +151,7 @@ In summary, our modeling suggests that feed-forward circuits of ON and OFF UBCs 
 
 ## Discussion
 
-## GRP and P079 mouse lines label distinct UBC subtypes that form parallel and convergent pathways
+### GRP and P079 mouse lines label distinct UBC subtypes that form parallel and convergent pathways
 
 Transgenic mice were generated that expressed a green fluorescent protein in OFF UBCs and a red fluorescent protein in ON UBCs in the same tissue. Virtually no neurons expressed both fluorescent proteins. Immunohistochemical analysis showed that all GRP UBCs expressed mGluR1 and most P079 UBCs expressed calretinin in both cerebellum and dorsal cochlear nucleus. GRP and P079 UBCs had different average soma sizes and distributions in the cerebellum. Whole-cell recordings in acute brain slices confirmed that the GRP UBCs produce excitatory ON responses mediated by mGluR1 and AMPA receptors, and that P079 UBCs produce inhibitory OFF responses mediated by mGluR2. Their membrane capacitance and excitability were so distinct that the distributions of these properties were almost nonoverlapping. These results provide further evidence that some UBC subtypes are genetically and functionally distinct, despite the observation that when the entire population of UBCs is examined, their electrophysiological responses form a continuum from entirely excited by glutamate to entirely inhibited by glutamate (Guo et al., 2021; Kozareva et al., 2021).
 
@@ -163,11 +163,11 @@ The purpose of this study was to reveal the postsynaptic targets of UBCs with a 
 
 The approaches used here were not able to determine the existence of networks of more than two UBCs connected one after the other. If present, three or more UBCs in series could extend and transform the input in even more dramatic ways. The temporal diversity that UBC circuits generate may underlie the flexibility of the cerebellum to coordinate movements over a broad range of behaviors.
 
-## Limitations of the model
+### Limitations of the model
 
 Here we addressed how feed-forward glutamatergic excitation and inhibition is transformed from one UBC to the next depending on their subtype. The model focuses on AMPA receptor-mediated excitation and mGluR2-mediated inhibition. One limitation of the model is that it does not consider feed-forward and lateral inhibition from Golgi cells, which shapes the spiking of UBCs in response to afferent stimulation. Golgi cells receive mossy fiber input and inhibit UBCs through their corelease of GABA and glycine (Dugué et al., 2005; Rousseau et al., 2012). Golgi cells control the temporal dynamics of the firing of granule cells as well as their gain (Rossi et al., 2003; Kanichay and Silver, 2008) and are critical to larger-scale dynamics of the cerebellar cortical network (D’Angelo, 2008). Purkinje cells provide additional inhibition to ON UBCs that could influence how UBC circuits transform signals (Guo et al., 2016). A more complex model that implements Golgi cells and other critical circuit elements will be needed to investigate the role of feed-forward UBC circuits in cerebellar network dynamics and motor behaviors in vivo.
 
-## UBC circuits generate a broad range of firing patterns and may be essential for cerebellar learning
+### UBC circuits generate a broad range of firing patterns and may be essential for cerebellar learning
 
 Vestibular afferents that encode head movements synapse on both UBCs and granule cells. Granule cells that receive this input are likely to fire in phase with the input signal. A single intermediate UBC would shift the phase of firing of its postsynaptic granule cells, depending on the UBC’s response to glutamatergic input, which varies from nearly complete inhibition (e.g., P079 OFF UBC) to complete excitation (e.g., GRP ON UBC) (Guo et al., 2021; Kozareva et al., 2021). For example, an intermediate ON UBC between a presynaptic input and another UBC extended the signal markedly in our models. In circuits with an intermediate OFF UBC, the postsynaptic UBCs signal was inverted: ON UBCs paused when they were no longer driven by glutamate, and OFF UBCs fired when they were no longer inhibited by glutamate. The signal that granule cells subsequently receive would be a burst or pause in firing that lasts for hundreds or thousands of milliseconds. We suggest that these transformations could provide a circuit mechanism for maintaining a sensory representation of movement for seconds, which is thought to be necessary to modulate low-frequency vestibular responses such as compensatory eye movements.
 
@@ -177,36 +177,206 @@ Extending the duration of a sensory feedback signal may also be essential for mo
 
 The diversification of spiking patterns by intermediate UBCs may contribute to the pattern separation that is necessary for theories of cerebellar learning (Marr, 1969; Albus, 1971; Ito, 1982; Kennedy et al., 2014; Zampini et al., 2016). In one of the best understood cerebellum-like circuits, the electrosensory lobe of electric fish, UBCs are essential to produce temporally diverse and delayed spiking patterns that are necessary for accurate cancellation of self-generated signals (Kennedy et al., 2014). The authors report that a post-inhibitory rebound that occurred in UBCs may account for the delayed spiking patterns. The presence of synaptic pathways with multiple UBCs could contribute to these long pauses and delays that may be critical for adaptive learning on time scales ranging from hundreds of milliseconds to tens of seconds.
 
-## Sources of synaptic input to UBC subtypes
+### Sources of synaptic input to UBC subtypes
 
 The firing rates of putative UBCs recorded in vivo in the vestibular cerebellum of mammals follow head velocity and eye movements, in some cases with delays of hundreds of milliseconds (Simpson et al., 2005; Barmack and Yakhnitsa, 2008; Hensbroek et al., 2015). Our data suggests that these long delays could be implemented by feed-forward circuits containing multiple UBCs. It is unknown whether UBCs that are labeled in the GRP or P079 mouse lines are a subtype that receives a specific source of input. In lobe X, ON UBCs defined by their electrophysiological response or mGluR1-expression receive input from both primary vestibular afferents and second-order mossy fibers from the vestibular nucleus, while OFF UBCs only receive vestibular nuclear input (Balmer and Trussell, 2019). Understanding whether the UBCs labeled in these mouse lines receive head or eye movement signals, integrated signals that encode head orientation relative to gravity, or another type of signal would help elucidate their specific roles in cerebellar functions.
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Mice of both sexes were used from the following mouse lines and their crosses: P079 line: Et(tTA/mCitrine)P079Sbn (Shima et al., 2016); GRP-Cre line: Tg(Grp-Cre)KH107Gsat (MMRRC_031182-UCD) (Gerfen et al., 2013); Ai9 line: Gt(ROSA)26Sortm9(CAG-tdTomato)Hze (IMSR_JAX:007909) (Madisen et al., 2010); Brainbow2.1-Confetti line: Gt(ROSA)26Sortm1(CAG-Brainbow2.1)Cle/J (IMSR_JAX:017492) (Snippert et al., 2010); and calretinin-Cre line: Calb2tm2.1(cre/ERT2)Zjh/J (IMSR_JAX:013730) (Taniguchi et al., 2011). Cre-mediated recombination was induced in calretinin-Cre mice by intraperitoneal injections of 10 mg/ml tamoxifen (T5648, Sigma) in corn oil at a dose of 75 mg/kg per day for 2–3 d and perfused 2–3 wk later. Mice were bred in a colony maintained in the animal facility managed by the Department of Animal Care and Technologies, and all procedures were approved by Arizona State University’s Institutional Animal Care and Use Committee under protocol #21-1817R. Transgenic mice were genotyped by light at P0–P3 or by PCR.
 
-## Brain slice preparation
+### Brain slice preparation
 
 For acute brain slice electrophysiology, male and female P079 and GRP-Cre/Ai9 mice were used at ages P21–35. Animals were deeply anesthetized with isoflurane and the brain was extracted under ice-cold high-sucrose artificial cerebral spinal fluid (ACSF) containing the following (in mM): 87 NaCl, 75 sucrose, 25 NaHCO3, 25 glucose, 2.5 KCl, 1.25 NaH2PO4, 0.4 Na-ascorbate, 2 Na-pyruvate, 0.5 CaCl2, 7 MgCl2, bubbled with 5% CO2/95% O2. Parasagittal cerebellum sections 200–300 μm thick were cut with a vibratome (7000smz-2, Campden Instruments) in ice-cold high-sucrose ACSF. Slices recovered at 35°C for 30–40 min, in ACSF containing the following (in mM): 130 NaCl, 2.1 KCl, 1.2 KH2PO4, 3 Na-HEPES, 10 glucose, 20 NaHCO3, 0.4 Na-ascorbate, 2 Na-pyruvate, 1.5 CaCl2, 1 MgSO4, bubbled with 5% CO2/95% O2 (300–305 mOsm). Slices were maintained at room temperature (~23°C) until recording. Recordings were performed from lobe X of the cerebellum within 6 hr of preparation.
 
-## Electrophysiological recordings
+### Electrophysiological recordings
 
 Acute brain slices were perfused with ACSF using a peristaltic pump (Ismatec) at 2–3 ml/min and maintained at 32–34°C with an inline heater (Warner Instruments). ACSF contained 0.5 µM Strychnine and 5 µM SR95531 to block synaptic inhibition. The recording setup was composed of an Olympus BX51 fixed-stage microscope with Dodt gradient contrast optics, and 4× and 60× water immersion Olympus objectives. UBCs were initially identified by soma size or transgenic fluorescence and confirmed by intracellular filling with 5 μM Alexa Fluor 568 or 488 hydrazide sodium salt (Life Technologies). Patch electrodes were pulled with borosilicate glass capillaries (OD 1.2 mm and ID 0.68 mm, AM Systems) with a horizontal puller (P1000, Sutter Instruments). Intracellular recording solution contained (in mM) 113 K-gluconate, 9 HEPES, 4.5 MgCl2, 0.1 EGTA, 14 Tris-phosphocreatine, 4 Na2-ATP, 0.3 tris-GTP, 0.1–0.3% biocytin, 290 mOsm, pH 7.2–7.25. All recordings were corrected for a –10 mV junction potential. Data were acquired using a Multiclamp 700B amplifier and pClamp 11 software (Molecular Devices). Signals were acquired with 5–10× gain, sampled at 50–100 kHz using a Digidata (1550A, Molecular Devices) analog-digital converter, and low-pass filtered at 10 kHz, with further filtering applied offline. Patch pipettes tip resistance was 5–8 MΩ; series resistance was compensated with correction 20–40% and prediction 50–70%, bandwidth 2 kHz. Membrane potential was held constant at –70 mV in voltage-clamp experiments. Electrical stimulation was performed using a concentric bipolar electrode (CBBPC75, FHC) placed in the white matter of the sagittal cerebellar slice. Stimuli were evoked using a stimulus isolation unit (Iso-Flex, A.M.P.I.) delivering 100-250 μs duration pulses of 0–90 V.
 
-## Immunohistochemistry and imaging
+### Immunohistochemistry and imaging
 
 Mice were overdosed with isoflurane and perfused through the heart with 0.01 M phosphate-buffered saline, 7.4 pH (PBS) followed by 4% paraformaldehyde in PBS. Brains were extracted from the skull and incubated in 4% paraformaldehyde in PBS overnight at 4°C. 50-µm-thick sections were made on a vibratome (7000smz-2, Campden Instruments). To recover cells that were filled with biocytin during whole-cell recording, acute brain slices were fixed 1–2 hr in 4% paraformaldehyde in PBS, followed by storage in PBS. Both floating 50 µm sections and 200–300-µm-thick acute slices were treated with the following procedures. Sections were rinsed 3 × 5 min in PBS, blocked, and permeabilized in 5% BSA, 2% fish gelatin, 0.2% Triton X-100 in PBS for >1 hr at room temperature. Sections were incubated in primary antibodies overnight in 1% fish gelatin in PBS at 4°C on an orbital shaker. Primary antibodies included chicken polyclonal anti-GFP (1:2000, Aves Labs, GFP-1020, AB_10000240), goat polyclonal anti-mCherry (1:2000, Sicgen, AB0040, AB_2333093), mouse monoclonal anti-rat mGluR1a (1:800, BD Pharmingen, 556389, AB_396404), and rabbit polyclonal anti-calretinin (1:2000, Swant, 7697, AB_10000342). Sections were rinsed 3 × 5 min in PBS, followed by secondary antibodies (1:500) and streptavidin (1:2000) that were diluted in 1% fish gelatin in PBS and incubated overnight at 4°C on an orbital shaker. Secondary antibodies included donkey anti-chicken Alexa Fluor 488 (Jackson ImmunoResearch, 715-545-155, AB_2340375), donkey anti-mouse Alexa Fluor 647 (Jackson ImmunoResearch, 715-605-151, AB_2340863), donkey anti-rabbit Alexa Fluor 647 (Jackson ImmunoResearch, 711-605-152, AB_2492288), donkey anti-rabbit Cy3 (Jackson ImmunoResearch, 711-165-152, AB_2307443), donkey ant-goat Cy3 (Jackson ImmunoResearch, 705-165-147, AB_2307351), and streptavidin-Alexa Fluor 647 (Thermo Fisher Scientific, S21374, AB_2336066). Sections were mounted on microscope slides (Superfrost Plus, Fisher Scientific) and coverslipped with Fluoromount-G (Southern Biotech). Images were acquired using a confocal microscope (LSM800, Zeiss) with the Airyscan system that reconstructs super-resolution images from a series of images acquired under spatially structured illumination. Images are single optical planes unless otherwise specified.
 
-## Image quantification
+### Image quantification
 
 Sagittal brain slices containing lobe X were imaged systematically across the medial–lateral axis. One area in the dorsal region and one area in the ventral region of lobe X in each selected slice were imaged using a 63× objective. The volume was 202.8 µm × 202.8 µm × 10.8 µm for each image using ~12 z-planes. Images were annotated for transgenic expression of tdTomato or mCitrine as well as mGluR1 or calretinin labeling. tdTomato, mCitrine, and calretinin labeling is cytoplasmic, and UBCs were easily counted if they had a labeled soma and attached dendritic brush. mGluR1 is mostly expressed in the dendrite, but labeling is also present in the soma membrane, which can be observed as a circle. mGluR1 UBCs were counted if there was labeling in the dendritic brush that was attached to an apparent mGluR1-labeled soma. This necessarily conservative method of identifying mGluR1-labeled UBCs likely resulted in an underestimation of the total number of mGluR1(+) UBCs.
 
 The labeling intensity of mCitrine in P079 UBCs that were mGluR1(+) was compared to P079 UBCs that were mGluR1(-) by measuring the mean pixel intensity in the somas of each subtype of UBCs. At least one of each subtype was measured in the same image and same z-plane to account for differences in brightness that could be due to differences in immunohistochemical labeling, image acquisition settings, and depth in the slice (deeper cells are less well labeled due to more limited antibody penetration). For each z-plane with at least one mGluR1(+) and one mGluR1(-) P079 UBC, a difference in brightness was calculated and reported as a relative brightness of the mGluR1(+) P079 UBCs to the brighter mGluR1(-) P079 UBCs.
 
-## Computational modeling
+### Computational modeling
 
 Single-compartment models of ON and OFF UBCs were built using NEURON (Hines and Carnevale, 1997; Carnevale and Hines, 2006) and utilized fast voltage-gated sodium (gNa) and potassium (gK) conductances to produce action potentials (Destexhe et al., 1994), a slow voltage-gated potassium conductance from a model of cerebellar granule cells (gK-slow) (D’Angelo et al., 2001), and a passive leak conductance (gpas). A hyperpolarization-activated conductance (gH) (Kim et al., 2012; Subramaniyam et al., 2014) was added to ON and OFF UBCs to produce a voltage sag in response to hyperpolarizing current pulses that reproduced those reported in Figure 1. Input resistance of the cells was measured using a –5 pA current pulse and adjusted to approximate GRP ON UBCs and P079 OFF UBCs by adjusting the passive leak conductance. Capacitance was measured from the membrane time constant and adjusted by changing the membrane area. Specific membrane capacitance was set to 1 µF/cm2. Tables 1 and 2 show the parameters used in the ON and OFF UBC models.
 
+**Table 1.**
+ ON unipolar brush cell (UBC) conductances.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">ON UBC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Modeled conductance</td>
+      <td>gmax (S/cm2)</td>
+      <td>Erev (mV)</td>
+    </tr>
+    <tr>
+      <td>gNa</td>
+      <td>0.1</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>gK</td>
+      <td>0.03</td>
+      <td>–90</td>
+    </tr>
+    <tr>
+      <td>gH</td>
+      <td>1e-5</td>
+      <td>–30</td>
+    </tr>
+    <tr>
+      <td>gpas</td>
+      <td>2e-4</td>
+      <td>–65</td>
+    </tr>
+    <tr>
+      <td>gK-slow</td>
+      <td>8e-4</td>
+      <td>–90</td>
+    </tr>
+    <tr>
+      <td>Diameter</td>
+      <td>20 µm</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ OFF unipolar brush cell (UBC) conductances.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">OFF UBC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Modeled conductance</td>
+      <td>gmax (S/cm2)</td>
+      <td>Erev (mV)</td>
+    </tr>
+    <tr>
+      <td>gNa</td>
+      <td>0.1</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>gK</td>
+      <td>0.03</td>
+      <td>–90</td>
+    </tr>
+    <tr>
+      <td>gH</td>
+      <td>3.1e-4</td>
+      <td>–30</td>
+    </tr>
+    <tr>
+      <td>gpas</td>
+      <td>7e-5</td>
+      <td>–62</td>
+    </tr>
+    <tr>
+      <td>gK-slow</td>
+      <td>8e-4</td>
+      <td>–90</td>
+    </tr>
+    <tr>
+      <td>Diameter</td>
+      <td>27 µm</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Synaptic transmission was implemented by applying glutamate transients simulated with a three-dimensional diffusion equation to an AMPA receptor model that was fit to ON UBC data (Lu et al., 2017) and described in detail in our previous work (Balmer et al., 2021a; Tables 3 and 4). OFF UBCs have mGluR2 receptors that are thought to be distant from the presynaptic release sites (Jaarsma et al., 1998), which we approximated by reducing the amount of glutamate released by a factor of 10 and increasing the distance by 1 µm in the diffusion equation (Table 3). To model mGluR2 currents in P079 UBCs that are mediated by G-protein-coupled inwardly rectifying potassium channels, a GABA-B receptor model (Destexhe et al., 1998) was modified to approximate the kinetics of our recorded currents by increasing the unbinding rate from 0.02 ms–1 to 0.0215 ms–1. A train of 10 presynaptic release events produced an 865-ms-long burst in the ON UBC model and a 1545 ms pause in the OFF UBC model, which is within the range observed in our data set.
+
+**Table 3.**
+ Glutamate diffusion at AMPA and mGluR2 receptors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Glutamate diffusion parameter</th>
+      <th>AMPA synapse</th>
+      <th>mGluR2 synapse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Molecules released (#)</td>
+      <td>3e6</td>
+      <td>3e5</td>
+    </tr>
+    <tr>
+      <td>Distance (nm)</td>
+      <td>750</td>
+      <td>1750</td>
+    </tr>
+    <tr>
+      <td>Diffusion coefficient (cm2/s)</td>
+      <td>0.33</td>
+      <td>0.33</td>
+    </tr>
+    <tr>
+      <td>Tortuosity</td>
+      <td>1.55</td>
+      <td>1.55</td>
+    </tr>
+    <tr>
+      <td>Volume fraction</td>
+      <td>0.21</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Ambient glutamate (mM)</td>
+      <td>0.005</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 4.**
+ Synaptic conductances.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Synaptic receptor</th>
+      <th>gmax (S/cm2)</th>
+      <th>Erev (mV)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ON UBC, AMPA</td>
+      <td>4e-9</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>OFF UBC, mGluR2</td>
+      <td>1e-8</td>
+      <td>–90</td>
+    </tr>
+  </tbody>
+</table>

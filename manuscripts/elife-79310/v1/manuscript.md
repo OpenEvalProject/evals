@@ -7,7 +7,7 @@
 
 ### Affiliations
 
-1. https://ror.org/01nrxwf90 MRC Human Genetics Unit, The University of Edinburgh Edinburgh United Kingdom
+1. MRC Human Genetics Unit, The University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
 
 † Corresponding author
 

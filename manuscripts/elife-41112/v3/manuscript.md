@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.41112.001 The mitochondrial calcium uniporter is a Ca 2+ channel that regulates intracellular Ca 2+ signaling, oxidative phosphorylation, and apoptosis. It contains the pore-forming MCU protein, which possesses a DIME sequence thought to form a Ca 2+ selectivity filter, and also regulatory EMRE, MICU1, and MICU2 subunits. To properly carry out physiological functions, the uniporter must stay closed in resting conditions, becoming open only when stimulated by intracellular Ca 2+ signals. This Ca 2+ -dependent activation, known to be mediated by MICU subunits, is not well understood. Here, we demonstrate that the DIME-aspartate mediates a Ca 2+ -modulated electrostatic interaction with MICU1, forming an MICU1 contact interface with a nearby Ser residue at the cytoplasmic entrance of the MCU pore. A mutagenesis screen of MICU1 identifies two highly-conserved Arg residues that might contact the DIME-Asp. Perturbing MCU-MICU1 interactions elicits unregulated, constitutive Ca 2+ flux into mitochondria. These results indicate that MICU1 confers Ca 2+ -dependent gating of the uniporter by blocking/unblocking MCU.
+The mitochondrial calcium uniporter is a Ca2+ channel that regulates intracellular Ca2+ signaling, oxidative phosphorylation, and apoptosis. It contains the pore-forming MCU protein, which possesses a DIME sequence thought to form a Ca2+ selectivity filter, and also regulatory EMRE, MICU1, and MICU2 subunits. To properly carry out physiological functions, the uniporter must stay closed in resting conditions, becoming open only when stimulated by intracellular Ca2+ signals. This Ca2+-dependent activation, known to be mediated by MICU subunits, is not well understood. Here, we demonstrate that the DIME-aspartate mediates a Ca2+-modulated electrostatic interaction with MICU1, forming an MICU1 contact interface with a nearby Ser residue at the cytoplasmic entrance of the MCU pore. A mutagenesis screen of MICU1 identifies two highly-conserved Arg residues that might contact the DIME-Asp. Perturbing MCU-MICU1 interactions elicits unregulated, constitutive Ca2+ flux into mitochondria. These results indicate that MICU1 confers Ca2+-dependent gating of the uniporter by blocking/unblocking MCU.
 
 ## Introduction
 
@@ -25,7 +25,7 @@ The Ca2+-conducting function of mammalian uniporters are mediated by two subunit
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig1-v3.jpg)
 
-**Figure 1.:** 2+ uniporter.The MCU protein assembles into a tetrameric Ca2+ pathway across the inner mitochondrial membrane (only two subunits are illustrated to reveal the Ca2+ pore). Conserved Asp and Glu residues in MCU’s DIME signature sequence form two parallel side-chain carboxylate rings at the IMS entrance of the pore to coordinate Ca2+. The EMRE protein binds to MCU and MICU1 via its TM helix and C-terminal tail, respectively. When an intracellular Ca2+ signal arrives at the IMS surface of the uniporter, Ca2+ binding to MICUs leads to activation of the uniporter to transport Ca2+ into the matrix.
+**Figure 1.:** The MCU protein assembles into a tetrameric Ca2+ pathway across the inner mitochondrial membrane (only two subunits are illustrated to reveal the Ca2+ pore). Conserved Asp and Glu residues in MCU’s DIME signature sequence form two parallel side-chain carboxylate rings at the IMS entrance of the pore to coordinate Ca2+. The EMRE protein binds to MCU and MICU1 via its TM helix and C-terminal tail, respectively. When an intracellular Ca2+ signal arrives at the IMS surface of the uniporter, Ca2+ binding to MICUs leads to activation of the uniporter to transport Ca2+ into the matrix.
 
 The uniporter is tightly regulated by intracellular Ca2+ signals. It stays quiescent in resting cellular conditions, and becomes activated only when IMS Ca2+ increases to low micromolar levels (Csordás et al., 2013; Mallilankaraman et al., 2012). This Ca2+-dependent gating is mediated by two EF-hand (a helix-loop-helix Ca2+-coordinating motif) containing subunits: MICU1 and MICU2 (the neuron-specific MICU3 is not discussed here) (Csordás et al., 2013; Mallilankaraman et al., 2012; Perocchi et al., 2010; Plovanich et al., 2013), which are tethered to the uniporter’s TM region via the C-terminal tail of EMRE (Tsai et al., 2016). Depletion of MICU1 eliminates Ca2+-regulation of the uniporter, causing the channel to constitutively load Ca2+ into the matrix (Tsai et al., 2016; Mallilankaraman et al., 2012; Plovanich et al., 2013; Tsai et al., 2017), a condition linked to debilitating neuromuscular disorders in humans (Logan et al., 2014). Currently, the mechanism by which MICUs control Ca2+ transport via MCU remains largely unknown.
 
@@ -33,7 +33,7 @@ Here, we demonstrate that MICU1 interacts with MCU’s DIME-Asp via a Ca2+-modul
 
 ## Results
 
-## Evolutionarily conserved MCU-MICU1 interactions
+### Evolutionarily conserved MCU-MICU1 interactions
 
 Phylogenetic analyses (Sancak et al., 2013; Bick et al., 2012) have shown that uniporters in lower eukaryotes (e.g., plants and protists) contain only MCU and MICU1 subunits, raising a possibility that MICU1 might gate MCU via direct molecular contacts. If so, these interactions might be conserved in evolution to ensure proper regulation of the uniporter. To test this idea, we performed co-immunoprecipitation (CoIP) experiments to examine complex formation between human MICU1 and various MCU homologues in MCU/EMRE-KO HEK 293 cells (Tsai et al., 2016). The EMRE gene is deleted because EMRE can bind both MCU and MICU1 (Figure 1) (Tsai et al., 2016; Sancak et al., 2013), and would therefore complicate assessment of direct MCU-MICU1 contacts. Figure 2 shows that human MICU1 pulls down not only human MCU but also MCU homologues in D. melanogaster, C. elegans, D. discoideum, and A. thaliana, indicating that the MCU-MICU1 interaction is indeed evolutionarily conserved.
 
@@ -41,27 +41,87 @@ Phylogenetic analyses (Sancak et al., 2013; Bick et al., 2012) have shown that u
 
 **Figure 2.:** 1D4-tagged MCU homologues from various species (HS: Homo sapiens, DM: Drosophila Melanogaster, CE: Caenorhabditis elegans, AT: Arabidopsis thaliana, and DD: Dictyostelium discoideum) were expressed in the presence or absence of FLAG-tagged WT human MICU1 in MCU/EMRE-KO cells. MICU1 was immobilized in FLAG-affinity resins to pull down MCU. Anti-FLAG and anti-1D4 antibodies were used to detect MICU1 and MCU, respectively. SDS-PAGE was performed under reducing conditions. WCL: whole cell lysate. IP: immunoprecipitation. Asterisk: non-specific Western signals. Hash: MCU homologues that contain untruncated mitochondrial-targeting sequences.
 
-## The role of the DIME-Asp in Ca2+ transport and MICU1 binding
+### The role of the DIME-Asp in Ca2+ transport and MICU1 binding
 
 We reasoned that MICU1 might bind to the DIME-Asp, as MCU structures (Baradaran et al., 2018; Fan et al., 2018; Nguyen et al., 2018; Yoo et al., 2018) show that this Asp is the only fully-conserved residue with the side-chain exposed to the IMS, where MICU1 is localized. Accordingly, the DIME-Asp in human MCU was mutated to Ala (D261A), and the mutant was expressed in MCU-KO HEK 293 cells for analysis. Surprisingly, a standard mitochondrial Ca2+ uptake assay shows that D261A MCU is capable of importing Ca2+ (10 μM), with the rate of transport unaffected by adding 100 mM Na+, which has an ionic radius virtually identical to Ca2+ (Figure 3 and Figure 3—figure supplement 1). A quantitative 45Ca2+ flux experiment (Tsai et al., 2016) performed in 10 μM Ca2+ shows that D261A slows MCU’s Ca2+ transport by only 3.8-fold (Figure 3—figure supplement 2), an effect remarkably small considering the critical position of this residue in the pore (Baradaran et al., 2018; Fan et al., 2018; Nguyen et al., 2018; Yoo et al., 2018). In contrast, mutating the DIME-Glu (E264) to Ala, Asn, or Gln abolishes uniporter function (Figure 3 and Figure 3—figure supplements 2 and 3), as expected from its key role in coordinating Ca2+ in the selectivity filter (Baradaran et al., 2018; Fan et al., 2018; Nguyen et al., 2018; Yoo et al., 2018). To further pursue these observations, D261 was mutated to all other 18 amino-acids. Only D, E and A at this position support Ca2+ transport (Figure 3—figure supplement 3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig3-v3.jpg)
+
+**Figure 3.:** (A) A fluorescence-based mitochondrial Ca2+ uptake assay. MCU-KO HEK293 cells, transiently expressing WT MCU, were permeabilized with digitonin (dig) in the presence of an extracellular Ca2+ indicator Calcium Green-5N (CG5N). Adding 10 µM CaCl2 leads to an immediate increase of fluorescence, followed by a signal decline reflecting uniporter-mediated Ca2+ uptake. Ru360 (Ru) was added to inhibit the channel. In subsequent experiments, only traces obtained after applying Ca2+ (dashed box) are presented. (B) The activity of D261A or E264A mutants. These mutants were expressed in MCU-KO cells, with 100 mM NaCl added during Ca2+ uptake to test if the channel can select Ca2+ against Na+. The bar chart summarizes the initial rate of Ca2+ uptake, and the western blot compares expression levels of MCU constructs. Con: untransfected cells. *p<0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** 100 mM NaCl was added while WT MCU transports Ca2+ (10 µM) into mitochondria.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** WT, D261A, or E264A MCU was expressed in MCU-KO cells and their activities were quantified using a 45Ca2+ flux assay in the presence of 10 µM Ca2+. To achieve comparable expression levels of these constructs, we used 1 µg of DNA for WT or E264A and 2.2 µg of DNA for D261A in transfection. In each experiment, 45Ca2+ transported into mitochondria by MCU was measured over a 3 min time course, and the readings were fit with a linear function (red lines) to produce the rate of Ca2+ transport. Rates from three independent experiments were averaged, yielding the following: 610 ± 105 pmol/min/106 cells for WT, 160 ± 23 pmol/min/106 for D261A, and 6 ± 2 pmol/min/106 for E264A.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** Various MCU constructs were expressed in MCU-KO cells, and their function was analyzed with a fluorescence-based mitochondrial Ca2+ uptake assay as in Figure 3. Arrowheads indicate 75 nM Ru360. The D261E mutant is functional, but loses sensitivity to Ru360. Con: untransfected MCU-KO cells.
+
 We then performed CoIP to test how wild-type (WT) MICU1 binding responds to MCU mutations at D261 and E264. Results show that MICU1 binds WT, D261E, and E264A MCU, but not D261A or D261Q (Figure 4). Although the D261Q mutant cannot transport Ca2+, it still assembles as oligomers (Figure 4—figure supplement 1), suggesting that the mutation does not compromise MCU’s structural integrity. These results demonstrate that the DIME-Asp mediates MCU interaction with MICU1, instead of contributing essentially to Ca2+ permeation.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig4-v3.jpg)
+
+**Figure 4.:** FLAG-tagged WT MICU1 was used to pull down various MCU mutants co-expressed in MCU/EMRE-KO cells.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** 1D4-tagged WT MCU was used to pull down C8 (PRGPDRPEGIEE)-tagged D261 MCU mutants co-expressed in MCU-KO cells. Results show that these D261 mutants complex with WT MCU, suggesting that like WT they assemble into oligomers.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** (A) The effect of the S259A mutation on mitochondrial Ca2+ transport. WT, S259A, or S259A/D261A MCU was expressed in MCU-KO cells, with activity analyzed using the fluorescence-based Ca2+ flux assay as in Figure 3. Arrowheads mark Ru360 addition. Western images (bottom) show that the S259A/D261A double mutant is poorly expressed. (B) CoIP experiments testing the role of S259 in MICU1 binding. FLAG-tagged MICU1 was used to precipitate 1D4-tagged MCU. The IP signal of MCU was normalized to that of MICU1, as presented in the bar chart. A t-test produces a P value < 0.05.
 
 It was observed that D261A loses sensitivity to a potent and specific uniporter inhibitor Ru360 (Matlib et al., 1998),20 (Figure 3B). This is consistent with the thought that D261 contributes to a Ru360 site in MCU (Arduino et al., 2017; Cao et al., 2017), and implies that MICU1 and Ru360 inhibitory sites overlap. A previous study shows that the S259A mutation diminishes Ru360 inhibition (Baughman et al., 2011), raising a possibility that S259 might also be involved in MICU1 binding. We confirm that S259A reduces Ru360 inhibition of the uniporter by 82 ± 3% (Figure 4—figure supplement 2), and show that this mutation indeed destabilizes the MCU-MICU1 complex (Figure 4—figure supplement 2), albeit to a lesser degree than D261A. It thus appears that MCU and MICU1 form a multi-residue contact surface containing S259 and D261 in MCU, with the latter playing a more critical role in mediating tight MCU-MICU1 interactions.
 
-## Electrostatic interactions between MCU and MICU1
+### Electrostatic interactions between MCU and MICU1
 
 As DIME-Asp appears as a fourfold ring of negative charges facing the IMS, it is tempting to picture MICU1 as a classic pore-blocker (Banerjee et al., 2013; Park and Miller, 1992) electrostatically stabilized on MCU’s ion entryway. This picture is strongly supported by the observation that the MCU-MICU1 interaction can be weakened or strengthened by raising or lowering ionic strength, respectively (Figure 5A). In contrast, neither dissociation of the MICU1-MICU2 dimer nor the 1D4-tag and anti-1D4 antibody epitope interaction is affected by varying ionic strength (Figure 5—figure supplement 1). To search MICU1 for electrostatic binding partners of the DIME-Asp, we launched an Ala mutagenesis screen targeting 18 conserved Arg or Lys residues in human MICU1 (Figure 5—figure supplement 2). Only R119 and R154, two residues closely spaced on the protein’s surface (Wang et al., 2014), were found to abolish MCU binding upon mutation to Ala (Figure 5B and Figure 5—figure supplement 3). These mutants, like WT MICU1, form heterodimers with MICU2 (Patron et al., 2014) (Figure 5—figure supplement 4), indicating proper protein folding. Moreover, R119K or R154K mutants remain associated with MCU, while Glu or Gln substitutions in these two positions strongly disrupt MCU binding (Figure 5—figure supplement 5). Neither of the two Arg residues is present in MICU2, and MICU2 is indeed unable to complex with MCU (Figure 5C). Taken together, the data suggest that R119 and R154 in MICU1 mediate electrostatic interactions with the DIME-Asp in MCU.
 
-## Functional roles of the MCU-MICU1 interaction
+![Figure 5.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig5-v3.jpg)
+
+**Figure 5.:** (A) Modulation of MCU-MICU1 complex stability by ionic strength. WT MCU and MICU1 were expressed in MCU/EMRE-KO cells, and CoIP experiments were performed in the presence of 50, 150, or 500 mM of NaCl. The IP signal of MCU was normalized to that of MICU1, with the ratio presented in the bar chart. (B) The effect of MICU1 Arg mutations on MCU binding. (C) A CoIP experiment testing if MCU and MICU2 form complexes. MICU2 was FLAG-tagged to precipitate WT MCU in MCU/EMRE-KO cells. *p<0.05.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A) CoIP experiments testing how increasing [NaCl] from 50 to 500 mM affects the stability of the non-disulfide MICU1-MICU2 complex. MICU1 is FLAG-tagged, and was used to pull down V5-tagged MICU2. The Western blot was performed in non-reducing conditions, showing that when MICU2 is overexpressed, it can form disulfide or non-disulfide heterodimers with MICU1 (Patron et al., 2014). The signal of MICU2 in the non-disulfide dimer is normalized to the signal of MICU1. (B) A data-summary bar chart. Data in (A) is presented as the ratio of MICU2 and MICU1 signals (Blue bars). Green bars represent the signal of 1D4-tagged MCU bound to the anti-1D4 antibody (images not shown; intensity readings were divided by 1000).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** Amino-acid sequences of ~120 MICU1 homologues in animals, plants, and protists were aligned. Positions that have either Arg or Lys in >70% of sequences were selected for a mutagenesis screen (yellow). Of these, only R119 and R154 (in human MICU1) are fully conserved. Two canonical EF hands, the N-terminal domain, and the poly-K EMRE binding region are also highlighted.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig5-figsupp3-v3.jpg)
+
+**Figure 5—figure supplement 3.:** FLAG-tagged, Arg or Lys mutants of MICU1 were expressed with 1D4-tagged WT MCU in MCU/EMRE-KO cells. CoIP shows that only R119A and R154A mutations abolish MCU binding. As these two mutants exhibit lower expression levels than WT, we further verified these results in Figure 5B using more DNA for transfection.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig5-figsupp4-v3.jpg)
+
+**Figure 5—figure supplement 4.:** FLAG-tagged MICU1 constructs were co-expressed with V5-tagged WT MICU2 in MCU/EMRE-KO cells. Like WT MICU1, R119A and R154A MICU1 are able to complex with MICU2.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig5-figsupp5-v3.jpg)
+
+**Figure 5—figure supplement 5.:** Gln or Glu substitutions of R119 or R154 break the MCU-MICU1 complex, while R119K or R154K remain capable of forming a stable complex with MCU.
+
+### Functional roles of the MCU-MICU1 interaction
 
 We have thus far utilized transiently expressed WT or mutant MICU1 to identify molecular determinants of the MCU-MICU1 interaction. However, as MICU1 exclusively forms a disulfide-connected heterodimer with MICU2 in mammalian cells (Patron et al., 2014; Petrungaro et al., 2015), it is necessary to exclude the possibility that dimerization with MICU2 could fundamentally alter how MICU1 contacts MCU. Accordingly, we employed MCU to pull down native MICUs. Results show that the D261A mutation disrupts MCU association with the physiological MICU1-2 heterodimer (Figure 6), indicating that the MICU2-bound form of MICU1 still interacts with MCU via the DIME-Asp.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig6-v3.jpg)
 
-**Figure 6.:** 2+-dependent interaction between MCU and the MICU1-2 heterodimer.1D4-tagged WT or D261A MCU was expressed in WT HEK cells. The cell lysate, after a portion was taken for whole-cell lysate (WCL) analysis, was split into two for CoIP under Ca2+-free (EG, 1 mM EGTA) or 10 µM Ca2+ conditions. MCU was used to pull down the native, disulfide-connected MICU1-2 heterodimer (Patron et al., 2014; Petrungaro et al., 2015), which has a molecular weight of ~90 kDa. SDS-PAGE was performed in non-reducing environments. MICU1 and MICU2 were detected using anti-MICU1 and -MICU2 antibodies, respectively. WCL signals of MICU1 and MICU2 are not as clean as in previous images (e.g., Figure 2) due to the low abundance of native MICUs and lower qualities of these polyclonal MICU1 and MICU2 antibodies.
+**Figure 6.:** 1D4-tagged WT or D261A MCU was expressed in WT HEK cells. The cell lysate, after a portion was taken for whole-cell lysate (WCL) analysis, was split into two for CoIP under Ca2+-free (EG, 1 mM EGTA) or 10 µM Ca2+ conditions. MCU was used to pull down the native, disulfide-connected MICU1-2 heterodimer (Patron et al., 2014; Petrungaro et al., 2015), which has a molecular weight of ~90 kDa. SDS-PAGE was performed in non-reducing environments. MICU1 and MICU2 were detected using anti-MICU1 and -MICU2 antibodies, respectively. WCL signals of MICU1 and MICU2 are not as clean as in previous images (e.g., Figure 2) due to the low abundance of native MICUs and lower qualities of these polyclonal MICU1 and MICU2 antibodies.
 
 As binding of MICU1 to the DIME-Asp would likely block the uniporter’s pore, we hypothesize that MICU1 shuts the uniporter in resting Ca2+ (<1 µM) through this particular interaction. This hypothesis predicts that (1) raising Ca2+ to micromolar levels would disrupt MCU’s association with the MICU1-2 heterodimer, and that (2) perturbing the MCU-MICU1 interaction by mutating the DIME-Asp or R119/R154 would prevent MICU1 from shutting the uniporter. Indeed, CoIP experiments show that supplying 10 μM Ca2+ breaks the MCU-MICU1-MICU2 complex (Figure 6). The 45Ca2+ flux assay described above was subsequently used to quantify mitochondrial uptake under a low Ca2+ (0.5 μM) condition. In WT cells, little Ca2+ entry (1.6 ± 0.9 pmol/min/106 cells) into mitochondria was detected (Figure 7A). As expected, MICU1-KO induces robust Ca2+ influx (205 ± 11 pmol/min/106 cells), a phenotype partially reversed by expressing WT MICU1 (53 ± 4 pmol/min/106 cells, Figure 7A). We then introduced WT or D261A MCU into MCU-KO cells. In low Ca2+, WT MCU exhibits no activity (1.7 ± 0.5 pmol/min/106 cells) while D261A mediates a Ca2+ influx (34 ± 5 pmol/min/106 cells) 6.2-fold slower than that observed in MICU1-KO cells (Figure 7B). A few factors might underlie the rather small magnitude of the D261A-mediated Ca2+ uptake: (1) this mutant is 3.8-fold slower than WT MCU (Figure 3—figure supplement 2), (2) our transfection efficiency is ~80%, and (3) other residues (e.g., S259) are also involved in MICU1 binding. A S259A/D261A double mutant was constructed to further disrupt the MCU-MICU1 interface, but unfortunately its function could not be analyzed due to a low expression level (Figure 4—figure supplement 2). The finding that D261A catalyzes unregulated Ca2+ flux in submicromolar Ca2+ argues strongly that MICU1 must contact MCU to gate the uniporter. Lastly, we tested R119 or R154 mutants in MICU1-KO cells. All of these, except for R154Q, are less competent than WT MICU1 in restoring Ca2+ regulation of the uniporter (Figure 7C), a result confirming the critical role of the MCU-MICU1 interaction in Ca2+-activation of the uniporter.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig7-v3.jpg)
+
+**Figure 7.:** (A) Mitochondrial Ca2+ uptake in a low Ca2+ (0.5 µM) condition. Each data point represents a measurement of 45Ca2+ transported into mitochondria by the uniporter at a specific time point. These data points were fit with a linear function (red lines) to obtain the rate of Ca2+ transport. (B) The activity of WT or D261A MCU in 0.5 µM Ca2+. (C) A bar chart summarizing the rate of mitochondrial Ca2+ uptake. WT MICU1 or various R119/R154 mutants were expressed in MICU1-KO cells. Con: untransfected control. Paired t-test was performed between WT MICU1 and mutants. *p<0.05.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** 6 independent 45Ca2+ flux (low Ca2+) experiments are presented. In each experiment, 45Ca2+ readings were obtained at three different time points (black squares). Non-specific signals (red squares) were obtained by adding Ru360, or by using untransfected cells for Ru360-insensitive mutants (e.g., D261A). Uniporter-specific signals (blue squares), obtained by subtracting non-specific signals (red squares) from total Ca2+ (black squares), were fit with a linear function (red lines) to produce the rate of Ca2+ transport. Rates from at least three experiments were then used for statistical analysis.
 
 ## Discussion
 
@@ -69,7 +129,7 @@ The mitochondrial Ca2+ uniporter plays a crucial physiological role of regulatin
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/41112/elife-41112-fig8-v3.jpg)
 
-**Figure 8.:** 2+-dependent gating of the uniporter.In resting cellular conditions, MICU1 shuts the uniporter by inserting Arg fingers into MCU’s Asp ring to occlude the pore. Ca2+ activates the channel by binding to MICUs to disrupt this MCU-MICU1 interaction. MICU2 forms a heterodimer with MICU1, but does not directly contact MCU. EMRE plays dual functional roles: it binds to MCU to enable Ca2+ permeation, and also interacts with MICU1 to maintain tight association of the MICU1-2 heterodimer with the uniporter during Ca2+ stimulation.
+**Figure 8.:** In resting cellular conditions, MICU1 shuts the uniporter by inserting Arg fingers into MCU’s Asp ring to occlude the pore. Ca2+ activates the channel by binding to MICUs to disrupt this MCU-MICU1 interaction. MICU2 forms a heterodimer with MICU1, but does not directly contact MCU. EMRE plays dual functional roles: it binds to MCU to enable Ca2+ permeation, and also interacts with MICU1 to maintain tight association of the MICU1-2 heterodimer with the uniporter during Ca2+ stimulation.
 
 The EMRE subunit, which binds both MCU and MICU1 (Tsai et al., 2016), plays an important role in this mechanism. It has been shown that the EMRE-MICU1 interaction is necessary to prevent MICU1 dissociation from the uniporter complex (Tsai et al., 2016). We can now understand this observation in light of new results here: When MCU and MICU1 separate due to Ca2+ elevation, EMRE’s tether to MICU1 would prevent this subunit from dissociating away. Thus, once the Ca2+ signal is over, MICU1 could rapidly bind to MCU to terminate Ca2+ influx (Figure 8).
 
@@ -87,25 +147,196 @@ In conclusion, the current study provides a working model to understand how intr
 
 ## Materials and methods
 
-## Reagents, cell culture, and molecular biology
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line</td>
+      <td>HEK 293T</td>
+      <td>ATCC</td>
+      <td>Cat # CRL-3216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>MCU-KO HEK 293T</td>
+      <td>PMID:27099988</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>MCU/EMRE-KO HEK 293T</td>
+      <td>PMID:27099988</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>MICU1-KO</td>
+      <td>PMID:28396416</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Primary Antibody</td>
+      <td>Mouse anti-FLAG</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # F1804</td>
+      <td>Western 1:10000</td>
+    </tr>
+    <tr>
+      <td>Primary Antibody</td>
+      <td>Mouse anti-V5</td>
+      <td>ThermoFisher</td>
+      <td>Cat # R960-25</td>
+      <td>Western 1:5000</td>
+    </tr>
+    <tr>
+      <td>Primary Antibody</td>
+      <td>Mouse anti-β actin</td>
+      <td>Santa Cruz</td>
+      <td>Cat # 69879</td>
+      <td>Western 1:500</td>
+    </tr>
+    <tr>
+      <td>Primary Antibody</td>
+      <td>Rabbit anti-MICU1</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # HPA037480</td>
+      <td>Western 1:5000</td>
+    </tr>
+    <tr>
+      <td>Primary Antibody</td>
+      <td>Rabbit anti-EFHA1 (MICU2)</td>
+      <td>Abcam</td>
+      <td>Cat # ab101465</td>
+      <td>Western 1:10000</td>
+    </tr>
+    <tr>
+      <td>Primary Antibody</td>
+      <td>Mouse anti-1D4</td>
+      <td>PMID:6529569</td>
+      <td></td>
+      <td>Western 50 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Primary Antibody</td>
+      <td>Mouse anti-C8</td>
+      <td>PMID:8068416</td>
+      <td></td>
+      <td>Western 50 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Secondary Antibody</td>
+      <td>IRDye 680RD goat anti-rabbit IgG</td>
+      <td>Li-Cor</td>
+      <td>Cat # 925–68073</td>
+      <td>Western 1:10000</td>
+    </tr>
+    <tr>
+      <td>Secondary Antibody</td>
+      <td>IRDye 680RD goat anti-mouse IgG</td>
+      <td>Li-Cor</td>
+      <td>Cat # 925–68072</td>
+      <td>Western 1:15000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Ru360</td>
+      <td>PMID:2036363</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>45CaCl2</td>
+      <td>PerkinElmer</td>
+      <td>Cat # NEX01300</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Lipofectamine 3000</td>
+      <td>ThermoFisher</td>
+      <td>Cat # L3000015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Anti-FLAG M2 affinity gel</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat # A2220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>CNBr-activated Sepharose 4B</td>
+      <td>GE Healthcare</td>
+      <td>Cat # 17043001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Igor Pro 7</td>
+      <td>WaveMetrics</td>
+      <td></td>
+      <td>Figure production and data fitting</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageStudio 5</td>
+      <td>Li-Cor</td>
+      <td></td>
+      <td>Western-blot quantification</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Clustal Omega</td>
+      <td>PMID:21988835</td>
+      <td></td>
+      <td>Sequence alignment</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Excel (office 365)</td>
+      <td>Microsoft</td>
+      <td></td>
+      <td>t-test</td>
+    </tr>
+  </tbody>
+</table>
+
+### Reagents, cell culture, and molecular biology
 
 Reagents were purchased at the highest grade available. Ru360 was synthesized in-house following a previously published protocol (Ying et al., 1991). Genes encoding uniporter subunits were cloned into a pcDNA 3.1 (+) expression vector. Site-directed mutagenesis was performed using a QuickChange kit (Agilent) and confirmed with sequencing. All MCU constructs used here contain a C-terminal 1D4 tag (TETSQVAPA) for Western detection. Similarly, MICU1 is tagged with a C-terminal FLAG (DYKDDDDK), and MICU2 with a C-terminal FLAG or V5 (GKPIPNPLLGLDST). Sequences of these have been reported in a previous manuscript (Tsai et al., 2016).
 
 HEK 293 cells, obtained from ATCC and authenticated by short tandem repeat profiling, were cultured in Dulbecco’s modified Eagle’s medium (Gibco) supplemented with 10% FBS, and were incubated at 37°C with 5% CO2. Mycoplasma infection was routinely ruled out using an ATCC PCR detection kit (30–1012K). CRISPR knockout cell lines have been established in our previous work (Tsai et al., 2016; Tsai et al., 2017). Transient transfection was performed using Lipofectamine 3000 (ThermoFisher), following the manufacturer’s instructions. Cells were harvested for experiments 24–30 hr after transfection.
 
-## Co-immunoprecipitation (CoIP)
+### Co-immunoprecipitation (CoIP)
 
 All CoIP experiments were performed at 4°C. Transfected cells in 2 wells of a 6-well plate were lysed in 0.5 mL solubilization buffer (SB, 100 mM NaCl, 20 mM Tris, 1 mM EGTA, 5 mM DDM, pH 7.5-HCl) supplemented with an EDTA-free protease inhibitor cocktail (cOmplete Ultra, Roche). The lysate was clarified by spinning down. 50 μL of the supernatant was removed, with total protein concentration determined using a BCA assay (Thermo-Fisher) and 10 μg of protein used for whole-cell lysate (WCL) analysis. Then, 25 μL of FLAG (Sigma-Aldrich, A2220)- or 1D4-conjugated beads (50% slurry) were added to the rest of the supernatant for a 30 min batch binding process. The beads were then collected on a spin column, washed with 2 mL of SB, and then eluted with 0.15 mL SDS loading buffer. 10–20 μL of the elute was used for SDS-PAGE, with 5% of 2-mercaptoethanol used to produce reducing conditions. The whole CoIP procedure was completed within 45 min after cell lysis (prolonged incubation of >2 hr could lead to complete dissociation of uniporter subcomplexes). 1D4-affinity gel was produced in house using 25 mg 1D4 antibody per 1 g of CNBr-activated Sepharose 4B resin (GE Healthcare).
 
 To perform Western blot, proteins on SDS gels were transferred to low-fluoresce PVDF membranes (EMD-Millipore), which were then blocked in a TBS-based Odyssey blocking buffer (Li-Cor), and incubated with primary antibodies in TBST (TBS +0.075% Tween-20) at 4°C overnight. Then, after a 1 hr incubation with infrared fluorescent secondary antibodies in TBST at room temperature, signals were acquired using an Odyssey CLx imaging system (Li-Cor), and analyzed with an ImageStudio software (Li-Cor version 5.0). Unless specified, MCU and MICU1 were detected using α−1D4 and α-FLAG antibodies, respectively. See the key resources table for antibodies and dilutions. 1D4 and C8 antibodies were produced in house.
 
-## Mitochondrial Ca2+ flux assays
+### Mitochondrial Ca2+ flux assays
 
 For the fluorescence-based assay, 2 × 107 HEK 293 cells were suspended in 10 mL of wash buffer (WB, 120 mM KCl, 25 mM HEPES, 2 mM KH2PO4, 1 mM MgCl2, 50 µM EGTA, pH 7.2-KOH), pelleted, and then resuspended in 2.5 mL of recording buffer (RB, 120 mM KCl, 25 mM HEPES, 2 mM KH2PO4, 5 mM succinate, 1 mM MgCl2, 5 µM thapsigargin pH 7.2-KOH). 2 mL of the cell suspension were placed in a stirred quartz cuvette in a Hitachi F-2500 spectrophotometer (ex: 506 nm, ex-slit: 2.5 nm, em: 532 nm, em-slit: 2.5 nm, sampling rate: 2 Hz). Reagents were added into the cell suspension in the following order: 0.5 µM calcium green 5N (Thermo-Fisher C3737), 30 µM digitonin (Sigma-Aldrich D141), 10 µM CaCl2, and 75 nM Ru360. Upon adding Ca2+, fluorescent signals would increase by 200 to 300 a.u. Without adding Ru360, the signal would eventually drop to a steady-state level roughly the same as that before Ca2+ addition. Quantification of data is done by linear fit to the fluorescent signal between 10 s and 15 s after adding Ca2+.
 
 For the 45Ca2+ based assay, 1.2–2.4 * 106 viable cells were suspended in 1 mL WB, spun down, and then resuspended in 120 µL WB, supplemented with 5 µM thapsigargin (Sigma-Aldrich, T9033) and 30 µM digitonin. To initiate mitochondrial Ca2+ uptake, 100 µL cell suspension was transferred to 400 µL low-Ca2+ flux buffer (RB +0.69 mM EGTA, 0.5 mM CaCl2, 15 µM 45CaCl2, 30 µM digitonin, 5 µM thapsigargin, pH 7.2-KOH) or high-Ca2+ flux buffer (RB +20 µM 45CaCl2, 30 µM digitonin, 5 µM thapsigargin, pH 7.2-KOH). At desired time points, Ca2+ uptake was terminated by adding 100 µL of the sample to 5 mL ice-cold WB, and then filtered through 0.45 µM nitrocellulose membranes (Sigma-Aldrich WHA10402506) on a vacuum filtration manifold (EMD-Millipore model 1225). The membrane was washed immediately with 5 mL ice-cold WB, and later transferred into scintillation vials for counting. Nonspecific signals were measured using samples containing 75 nM Ru360 or using untransfected cells (for the Ru360-insensitive D261A mutant), and were subtracted to yield uniporter-specific Ca2+ transport. In a typical experiment, readings of 45Ca2+ in three time points were fit with a linear function to generate the rate of Ca2+ transport (e.g., Figure 7A). Rates obtained from at least three independent experiments were then averaged for data presentation (see Figure 7—figure supplement 1 for examples of the data analysis process). For experiments comparing WT and D261A, 1 µg WT DNA or 2.2 µg D261A DNA was used for transfection to ensure similar expression levels of these two constructs. Moreover, cells were harvested within 24 hr after transfection to avoid a molecular excess of overexpressed MCU over native MICU1. 45Ca2+ radioisotope was obtained from PerkinElmer, and has a specific activity of 12–15 mCi/mg.
 
-## Sequence analysis and statistics
+### Sequence analysis and statistics
 
 Sequences of MICU1 homologues were collected using PSI-BLAST. Multiple sequence alignment was performed using the Clustal Omega online server (Sievers et al., 2011).
 

@@ -28,11 +28,23 @@ Here, we demonstrate that the Stu2-dependent error correction process observed i
 
 ## Results
 
-## A pool of chTOG resides at kinetochores, independent of microtubule plus ends
+### A pool of chTOG resides at kinetochores, independent of microtubule plus ends
 
 Previous microscopy studies suggested that chTOG localizes to kinetochores (Campbell et al., 2019; Gutiérrez-Caballero et al., 2015; Ryan et al., 2020), similar to the budding yeast ortholog (Miller et al., 2016; Miller et al., 2019); however, it was unclear if this population was simply bound to microtubule tips. To address this, we used engineered HCT116 cells where the endogenous chTOG genes were epitope tagged with EGFP (Cherry et al., 2019) to determine whether chTOG specifically localizes to kinetochores throughout mitosis (Figure 1a). We found that chTOG is largely excluded from the nucleus until prometaphase, when it appeared on kinetochores as assayed by co-localization with anti-centromere antibody (ACA) (Figure 1a). As cells progress through mitosis, its kinetochore localization increased 2.5-fold (Figure 1a,b). To determine what fraction of this signal is specifically interacting with kinetochores and not microtubule tips, we treated cells with nocodazole to depolymerize microtubules. At least 60% of chTOG recruited to prometaphase kinetochores and 30% recruited to anaphase kinetochores is independent of microtubules (Figure 1a,b). This trend was also observed in HeLa cells overexpressing exogenous chTOG-EGFP (Figure 1—figure supplement 1a). To determine whether microtubule attachment delivers chTOG to kinetochores, we arrested cells in S phase with thymidine and released them into the cell cycle in the presence of nocodazole so that kinetochore-microtubule attachments never occurred. In this experiment, chTOG was still detected on kinetochores, consistent with a kinetochore-bound pool that is separate from microtubule tips (Figure 1a,b, Figure 1—figure supplement 1a). chTOG and its budding yeast ortholog, Stu2, physically interact with the Ndc80 kinetochore complex in vitro (Miller et al., 2016; Zahm et al., 2020). To test whether they associate in human cells, we immunopurified FLAG-tagged chTOG from HEK-293T cells under conditions refractory to microtubule formation and found that the endogenous Hec1 protein co-purifies (Figure 1c). We therefore tested whether the kinetochore-bound pool of chTOG depends on Hec1 by depleting Hec1 from cells and quantifying the chTOG-EGFP intensity proximal to kinetochores (Figure 1d–f, Figure 1—figure supplement 1b–e). We observed a 70% reduction in chTOG-EGFP signal (Figure 1e). However, because Hec1 depletion ablates kinetochore-MT attachments (DeLuca et al., 2006), this result was again confounded by chTOG’s localization to both kinetochores and microtubule tips. Thus, we performed the same experiment in the presence of nocodazole to separate the two chTOG populations, and again observed a 70% reduction in chTOG-EGFP signal at kinetochores (Figure 1f). We confirmed that total protein levels of chTOG were unaffected by Hec1 siRNA (Figure 1—figure supplement 2a). These data are consistent with the Ndc80 complex serving as the primary receptor for chTOG. Therefore, a pool of chTOG localizes to kinetochores in a Hec1-dependent manner that is distinct from the chTOG at the microtubule plus-ends, suggesting a function for chTOG on kinetochores.
 
-## Two residues in the basic linker are essential for viability in yeast and human cells
+![Figure 1.](https://cdn.elifesciences.org/articles/61773/elife-61773-fig1-v1.jpg)
+
+**Figure 1.:** (a) Immunofluorescence images of chTOG subcellular localization during mitosis, as visualized in HCT116 cells expressing endogenously epitope-tagged chTOG-EGFP. Anti-centromere protein antibody (ACA) staining marks the centromere-binding proteins and representative images are shown with inlays of kinetochore proximal chTOG at each stage of mitosis. (b) Quantification of chTOG kinetochore association. Each data point represents mean chTOG-EGFP fluorescence intensity at all kinetochores in a single cell normalized to the mean value of the anaphase population (c) HEK-293T cells with either an empty vector control or overexpressed chTOG-3Flag were immunoprecipitated using anti-Flag antibodies. Immunoblots of the input (left) or Flag IP (right) show that the endogenous Hec1/Ndc80 protein specifically co-purified with chTOG. Endogenous and epitope tagged chTOG cannot be individually resolved by anti-chTOG immunoblotting because the 3Flag tag increases the protein’s predicted MW by only 3%. Anti-GAPDH served as a non-specific control. (d) Immunoblotting with anti-Hec1 antibodies was performed on samples of mock-depleted lysate that were diluted to contain the indicated percent of total protein and compared to a lysate prepared from a population of HCT116 cells treated with Hec1 siRNA. Greater than 75% of Hec1 protein was depleted in the siRNA-treated cells. Anti-GAPDH is a loading control. (e) Kinetochore localization of chTOG-EGFP in Hec1 depleted HCT116 cells was determined by fluorescence microscopy. Representative images are shown and were quantified on the right to show endogenously tagged chTOG-EGFP signal at kinetochores decreased by ~70% in siRNA-treated HCT116 cells. Each data point represents mean fluorescence intensity at all kinetochores in a single cell normalized to the mean value of the mock depleted population. (f) Same as (e) but cells were treated with 10 µM nocodazole for 1 hr prior to fixation to preclude any chTOG bound to the microtubule tips from this analysis. All scale bars are 5 µm; contrast on inlays was adjusted independently; data points on graphs are grouped from three experimental replicates and colored according to each replicate with median and 95% confidence intervals displayed in black. p-Values determined by an unpaired Mann-Whitney test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61773/elife-61773-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Representative immunofluorescence images of chTOG subcellular localization during mitosis, as visualized in HeLa cells where exogenous chTOG-EGFP was expressed by addition of 1 µg/mL doxycycline. Anti-centromere antibody (ACA) staining marks the centromere-binding proteins and inlays of kinetochore proximal chTOG are shown in the boxes. (b) siRNA targeting Hec1 depleted more than 50% of the protein in a population of HeLa cells. Immunoblotting with anti-Hec1 antibodies was performed on samples of mock-depleted lysate that were diluted to contain the indicated percent of total protein and compared to a lysate prepared from a population of HeLa cells treated with Hec1 siRNA. (c) Representative images from immunofluorescence microscopy quantified in (d and e) showing Hec1 siRNA depleted 80% of the Hec1 and chTOG-EGFP proteins from kinetochores in HeLa cells. Each data point represents the mean fluorescence intensity at all kinetochores in a single cell normalized to the mean value of the mock depleted population. All scale bars are 5 µm; contrast on inlays was adjusted independently; data points on graphs are grouped from two experimental replicates and colored according to each replicate with mean and 95% confidence intervals displayed in black. p-Values determined by an unpaired t test.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61773/elife-61773-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Immunoblotting with anti-EGFP antibodies was performed on samples of mock-depleted lysate and Hec1-depelted lysate from HCT116 cells expressing endogenously epitope-tagged chTOG-EGFP. Anti-GAPDH is a loading control. (b) Immunoblotting with anti-EGFP antibodies was performed on lysates from HeLa FlpIn Trex chTOGWT cells seen in Figure 1—figure supplement 1. Cells were treated with siRNA and or doxycycline to deplete endogenous chTOG and express ectopic chTOG-EGFP, suggesting the specificity of EGFP antibodies for the fusion protein.
+
+### Two residues in the basic linker are essential for viability in yeast and human cells
 
 To determine the role of chTOG at the kinetochore, we required a mutant that specifically inhibited its kinetochore function without affecting the protein’s numerous other microtubule-based activities. However, chTOG is an extremely large, multidomain protein consisting of 2032 residues, making it difficult to identify a separation of function mutant. It regulates microtubule dynamics using an array of five TOG domains (Charrasse et al., 1998; Charrasse et al., 1995; Spittle et al., 2000; Figure 2a). Additionally, chTOG contains a flexible ‘basic linker’ region that in vitro experiments suggest provides a non-specific, electrostatic interaction with the negatively charged microtubule lattice to facilitate diffusion to the plus-end (Geyer et al., 2018; Wang and Huffaker, 1997; Widlund et al., 2011). Finally, there is a small domain within the C-terminus of chTOG that serves as a protein interaction hub to mediate its various intracellular localization patterns (Gutiérrez-Caballero et al., 2015; Hood et al., 2013; van der Vaart et al., 2011). All these protein elements are present in the budding yeast ortholog Stu2, which contains just two TOG domains but homodimerizes through a coiled-coil (CC) region (Figure 2a). We therefore took advantage of yeast genetic tools to identify mutants that potentially inactivate its kinetochore function. Previous cross-linking mass-spectrometry with yeast proteins revealed that both the Stu2 basic linker and C-terminus interact with the Ndc80 complex, but only the C-terminus was required for kinetochore association (Miller et al., 2019; Zahm et al., 2020). This suggested the basic linker may instead interact with the Ndc80 complex to regulate kinetochore-microtubule attachments.
 
@@ -46,17 +58,41 @@ Our discovery that a 15 amino acid conserved patch is sufficient for viability s
 
 We set out to determine whether these conserved residues are required for chTOG function in human cells. Past studies of chTOG have primarily focused on its binding partners or RNAi depletion phenotypes due to its large size and multiple cellular functions (Gutiérrez-Caballero et al., 2015; Hood et al., 2013). In addition, the constitutive overexpression of chTOG is toxic, making it difficult to study in mammalian cells. To overcome these technical challenges, we generated HeLa cell lines that harbor doxycycline-inducible, siRNA-resistant alleles of chTOG-EGFP (chTOGWT) or chTOG[K1142, 1143A]-EGFP (chTOGKK/AA or basic pair mutant) (Gossen and Bujard, 1992; O'Gorman et al., 1991; Taylor and McKeon, 1997; Figure 3a,b). In these cells, chTOG siRNA functioned in a dose-dependent manner allowing for partial or near-complete depletion (Figure 3—figure supplement 1a). Doxycycline treatment of depleted cells resulted in equivalent levels of chTOGWT and chTOGKK/AA proteins, indicating that the mutations do not alter protein stability (Figure 3—figure supplement 1a).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/61773/elife-61773-fig3-v1.jpg)
+
+**Figure 3.:** (a) ClustalO multiple sequence alignment generated from basic linker regions of metazoan and fungal species shown in Figure 2. The pair of basic residues mutated to alanine denoted with asterisks. (b) Assay to analyze the ability of doxycycline-inducible codon-optimized, chTOGWT and chTOGKK/AA to complement cellular activities after siRNA-mediated depletion of endogenous chTOG. Cells depleted of chTOG or expressing ectopic chTOG proteins were assayed for (c) proliferation, (d) mitotic index, and (e) chromosome segregation errors. Scale bar is 5 µm; mean values and 95% confidence intervals for three experimental replicates displayed; p-values determined by paired t test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61773/elife-61773-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Immunoblots were performed on lysates of HeLa cells expressing EGFP epitope-tagged chTOGWT and chTOGKK/AA proteins after depletion of the endogenous chTOG by siRNA with the indicated concentration of siRNA. All future experiments used 83 nM siRNA; GAPDH served as a loading control. Unlike 3FLAG epitope tag, both endogenous and EGFP tagged chTOG can be resolved with anti-chTOG antibodies. (b) Cells depleted of chTOG or expressing ectopic chTOG proteins were assayed for mitotic index after 1-hr treatment with Mps1 inhibitor, Reversine. Mean values and 95% confidence intervals for three experimental replicates displayed.
+
 To determine whether the basic pair mutant could support cell growth, we analyzed cell proliferation after depletion of endogenous protein and induction of the ectopic chTOG proteins. Expression of the WT chTOG protein restored viability, indicating that there were no major off-target siRNA effects (Figure 3c). In contrast, the chTOG basic pair mutant was not able to support cell proliferation after depletion of endogenous chTOG, despite expressing similarly to WT chTOG (Figure 3c). The failure to proliferate after chTOG depletion was previously shown to arise from a mitotic delay and resulting chromosome segregation errors (Cassimeris and Morabito, 2004; Gergely et al., 2003). To determine if chTOGKK/AA induced similar defects, we stained DNA and determined both the mitotic index and incidence of chromosome segregation errors. After chTOG depletion, we observed a fourfold increase in mitotic cells (20% of the population) as expected, which was significantly reduced when chTOGWT was expressed, but not when chTOGKK/AA was expressed (Figure 3d). The mitotic delays observed in chTOG-depleted and chTOGKK/AA-expressing cells were dependent on Mps1 kinase activity (Figure 3—figure supplement 1b), suggesting that they are the result of erroneous kinetochore-microtubule attachments that appropriately trigger the spindle assembly checkpoint. Consistent with this interpretation, the populations enriched for mitotic cells also displayed an increased incidence of chromosome segregation errors like anaphase bridges and micro or multiple nuclei (Figure 3e). These data suggest that chTOG depletion or mutation leads to defects in kinetochore-microtubule attachments that trigger the spindle assembly checkpoint, yet cells eventually exit mitosis in the presence of these defects, causing lethal chromosome segregation errors.
 
-## Mutating the basic pair does not alter dynamics or structure of the microtubule cytoskeleton
+### Mutating the basic pair does not alter dynamics or structure of the microtubule cytoskeleton
 
 The apparent kinetochore-microtubule attachment defects giving rise to observed chromosome segregation errors could arise from defects in a number of chTOG’s activities including: (i) regulating cytoskeletal dynamics by nucleating and polymerizing microtubules, (ii) organizing the mitotic spindle into a bipolar structure, or (iii) regulating kinetochore microtubule binding activity. To understand if the basic linker contributed to these activities, we first analyzed the mutant by live cell TIRF microscopy on adherent interphase cells expressing EB1-mCherry (Tinevez et al., 2017; Tirnauer et al., 2002). chTOG requires functional TOG domains to bind microtubule plus-ends and elongate the polymer (Widlund et al., 2011), thus we verified that mutating the basic linker did not prevent the protein from localizing to growing plus-ends near EB1 (Figure 4—figure supplement 1a). To determine whether microtubule assembly rates were affected, we next measured the velocity of EB1 comets after depletion of chTOG and observed an increase in microtubule assembly rates that was similarly suppressed by the expression of either chTOGWT or chTOGKK/AA in siRNA-treated cells (Figure 4a). Although this differs from other studies that reported either normal or decreased microtubule assembly rates upon chTOG knock down (Cassimeris et al., 2009; Ertych et al., 2014; van der Vaart et al., 2011), these discrepancies are likely due to technical differences (Appendix 1). Regardless, expression of the WT and basic pair mutant chTOG proteins restored microtubule dynamics equivalently (Figure 4a), suggesting that the essential function of the basic pair mutant is not related to regulating microtubule dynamics. chTOG depletion also leads to multipolar spindle formation (Cassimeris and Morabito, 2004; Gergely et al., 2003), so we next analyzed spindle morphology. As expected, nearly 50% of mitotic cells had multipolar spindles after chTOG depletion (Figure 4b). However, expression of the WT and basic pair mutant proteins fully supported bipolar spindle formation when the endogenous chTOG protein was depleted (Figure 4b). Thus, the basic pair mutant does not have detectable defects in the reported microtubule cytoskeleton functions of chTOG in vivo despite being essential for cell proliferation.
 
-## chTOG destabilizes incorrect kinetochore-microtubule attachments
+![Figure 4.](https://cdn.elifesciences.org/articles/61773/elife-61773-fig4-v1.jpg)
+
+**Figure 4.:** (a) Images isolated from live-cell TIRF microscopy were used to generate kymographs of EB1-mCherry in chTOGWT and chTOGKK/AA-expressing cells with average EB1 track speed (µm/min) in bottom left and quantifications shown below. Each data point represents the mean EB1 track speed per cell and is grouped from three experimental replicates and colored according to each replicate with median and 95% confidence intervals displayed in black. p-Values were determined with an unpaired Mann-Whitney test. (b) Representative images of each spindle phenotype observed in mitotic chTOG-depleted, chTOGWT, or chTOGKK/AA expressing cells. While bipolar spindles exhibited two distinct phenotypes, we first quantified the fraction of cells exhibiting multipolar or bipolar spindles. Mean values and 95% confidence interval for three replicates were reported, p values calculated with a paired t test. (c) Representative images (left) and quantification (right) of chTOGWT and chTOGKK/AA localization to kinetochores in the absence of endogenous chTOG. Cells were treated with nocodazole to eliminate microtubules. Each data point represents the mean chTOG-EGFP fluorescence intensity at all kinetochores in a single cell normalized to the mean value of chTOGWT-expressing cells. Data are grouped from three experimental replicates and colored according to each replicate with mean values and 95% confidence displayed in black. p-Value was determined with an unpaired t test. All scale bars are 5 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61773/elife-61773-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Representative live-cell TIRF microscopy image of chTOGWT and chTOGKK/AA binding to microtubule plus-ends as marked by EB1-mCherry. Scale bar is 1 µm. (c) chTOG was immunoprecipitated from HEK-293T cells expressing either an empty vector control, chTOGWT-3Flag, or chTOGKK/AA-3FLAG proteins, using anti-Flag antibodies. Immunoblotting of the input lysates (left) and immunoprecipitations (right) show that the WT and mutant chTOG proteins co-purify endogenous Hec1. Anti-GAPDH is shown as a non-specific control for the immunoprecipitation. This is the same immunoblot from Figure 1, and the line denotes where a single, non-relevant lane was cropped from the image. (c) Representative image of nocodazole-treated cells from Figure 4c demonstrating the complete depolymerization of microtubules in these cells at this dose of drug; the scale bar is 5 µm.
+
+### chTOG destabilizes incorrect kinetochore-microtubule attachments
 
 Microtubule dynamics and spindle formation were not affected by mutating the basic pair; thus, we tested the possibility that chTOG functions like the yeast ortholog in regulating kinetochore-microtubule attachments. First, we tested whether the basic pair mutant affected chTOG localization to the kinetochore using quantitative fluorescence microscopy and biochemical analysis in nocodazole-treated cells (Figure 4c, Figure 4—figure supplement 1b,c). There was no change in localization, consistent with our previous findings in yeast that the C-terminus of Stu2 is necessary and sufficient for stable association with the Ndc80 complex and kinetochores (Miller et al., 2019; Zahm et al., 2020). Thus, defects in the regulation of kinetochore-microtubule attachments in cells expressing the basic pair mutant are not due to altered protein localization.
 
 Further phenotypic analysis of mitotic cells expressing the basic pair mutant showed a defect in chromosome alignment, where 90% of cells formed a poorly organized metaphase plate (Figure 5a). Most of the unaligned chromosomes were clustered at the poles with an excess of astral microtubules where they appeared to form stable syntelic or monotelic attachments (Figure 5a, image inlays). These attachments were reminiscent of Aurora B kinase inhibition, suggesting that kinetochore-microtubule attachments were prematurely stabilized, allowing errors to persist and preventing chromosome alignment (Hauf et al., 2003; Kallio et al., 2002).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/61773/elife-61773-fig5-v1.jpg)
+
+**Figure 5.:** (a) Representative images of each chromosome alignment phenotype observed in mitotic chTOG-depleted, chTOGWT, or chTOGKK/AA show a large fraction of chTOGKK/AA expressing cells form bipolar spindles with excessive astral microtubules that attach to kinetochores (image inlays) and prevent chromosome alignment. Phenotypes are quantified below where mean values and 95% confidence intervals for three replicates are reported. p-Values were determined with a paired t test and contrast on inlays was adjusted independently. (b–d) Data points on graphs are grouped from three experimental replicates and colored according to each replicate with median and 95% confidence intervals displayed in black. p-Values determined by an unpaired Mann-Whitney test. (b) Representative images (left) and quantification (right) of Mad1 immunostaining as a marker for kinetochore-microtubule attachment state in chTOG depleted, chTOGWT (top), or chTOGKK/AA (bottom) expressing cells. Each data point represents the number of kinetochores with Mad1 puncta per cell. (c) Representative images (left) and quantification (right) of cold-stable astral (erroneous) kinetochore-microtubule attachments in chTOG depleted, chTOGWT (top), or chTOGKK/AA (bottom) expressing cells. Each data point represents the tubulin fluorescence intensity of all astral microtubules on one half of the mitotic spindle. (d) Monopolar spindles (top left) were formed by inhibiting Eg5/KIF11 with STLC to allow the fluorescence intensity quantification of kinetochore-bound microtubule bundles at low-tension, erroneous attachments in control cells or chTOG-depleted cells expressing chTOGWT or chTOGKK/AA (right). Each data point is relative intensity normalized to the mean of uninduced, mock-depleted cells. All scale bars are 5 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61773/elife-61773-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Cells depleted of chTOG and expressing chTOGWT or chTOGKK/AA were immunostained for Mad1 as in Figure 5b; however, cells were first treated with nocodazole to ensure the basic pair did not contribute to Mad1 kinetochore recruitment. (b) Representative images of whole cells from the experiment in Figure 5d show the anti-tubulin immunostaining for STLC-treated monopoles. (c) HeLa cells expressing chTOGWT and chTOGKK/AA in the presence of endogenous chTOG were arrested with STLC to form monopolar spindles and erroneous low-tension kinetochore-microtubule attachments. Immunofluorescence was performed with anti-tubulin and anti-ACA antibodies and the intensity of tubulin staining was quantified near kinetochores as an indirect measure of the number of microtubules within an attached bundle. The basic pair mutant prematurely stabilizes erroneous attachments even in the presence of endogenous chTOG. Data points on graphs are grouped from three experimental replicates and colored according to each replicate with median and 95% confidence intervals displayed in black. p-Values determined by an unpaired Mann-Whitney test.
 
 To better characterize the kinetochore-microtubule attachment state of chTOGKK/AA expressing cells with unaligned chromosomes, we quantified the number of kinetochores with Mad1 staining because it specifically localizes to unattached kinetochores (Hoffman et al., 2001; Howell et al., 2004). Because unperturbed prometaphase cells have many unaligned chromosomes, there is high error correction activity that destabilizes these erroneous attachments and generates an average of 36 Mad1-positive kinetochores (Figure 5b). In contrast, chTOG-depleted cells with unaligned chromosomes only average 13 Mad1-positive kinetochores, and this can be rescued by expression of WT chTOG but not the basic pair mutant (Figure 5b). To ensure that this assay was reflecting attachment state rather than a defect in Mad1 recruitment, we treated chTOGWT and chTOGKK/AA-expressing cells with nocodazole and found that ~ 50 kinetochores were Mad1 positive in both cell types (Figure 5—figure supplement 1a). These data demonstrated that more kinetochores were attached to microtubules after chTOG depletion or mutation, which could arise from attachments being prematurely stabilized. To directly test this, we asked if erroneously attached microtubules were resistant to cold-induced depolymerization. Cells were incubated in ice-cold growth medium for 8 min prior to fixation and immunostaining, then cells with bipolar spindles but unaligned chromosomes were imaged. This revealed that in untreated cells, kinetochores on the astral side of the mitotic spindle rarely formed cold-stable attachments (Figure 5c). However, in chTOG-depleted cells or those expressing the basic pair mutant, many of the erroneously attached kinetochores on the astral side of the spindle remained attached to microtubules after cold treatment (Figure 5c). We confirmed the stability of these microtubules by quantifying the fluorescence intensity of a region on the astral side of the spindle that encompassed all kinetochores and subtracting the background signal. These data suggest chTOG destabilizes erroneous kinetochore-microtubule attachments, and erroneous attachments persist when it is depleted or mutated. This would result in kinetochores bound to microtubules but lacking tension, which is consistent with our observation of a mitotic delay but eventual exit with chromosome segregation errors.
 
@@ -64,7 +100,15 @@ To further test if chTOG is required to correct low-tension, syntelic attachment
 
 Because mutation or deletion of chTOG appeared to stabilize the erroneous attachments generated by STLC treatment, we next directly tested whether chTOG is required to correct errors. We washed out the STLC and assayed if cells recovered from the monopolar state and aligned chromosomes. Immediately after STLC removal, few cells had aligned chromosomes in any experimental condition (Figure 6—figure supplement 1a). 60 min after STLC washout, a majority of control cells (not treated with siRNA) had formed a bipolar spindle and aligned chromosomes at the spindle equator (Figure 6a). As expected, chTOG-depleted cells failed to form bipolar spindles and therefore did not align chromosomes at a metaphase plate (Figure 6a, Figure 6—figure supplement 1b; Cassimeris and Morabito, 2004; Gergely et al., 2003). In contrast, expression of either chTOGWT or chTOGKK/AA after siRNA treatment rescued bipolar spindle formation after 60 min; however, only chTOGWT-expressing cells properly aligned their chromosomes (Figure 6a). Together, these data reveal that chTOG functions as a mitotic error correction factor, and this activity appears independent of its well-characterized role as a regulator of the microtubule cytoskeleton.
 
-## Aurora B kinase phosphoregulation of Hec1 cannot compensate for loss of chTOG activity
+![Figure 6.](https://cdn.elifesciences.org/articles/61773/elife-61773-fig6-v1.jpg)
+
+**Figure 6.:** (a) Mitotic error correction was assayed by inducing errors with STLC to inhibit Eg5 and then washing out the inhibitor in control cells or chTOG-depleted cells expressing chTOGWT or chTOGKK/AA. The chromosome alignment phenotype (left) was quantified 60 min after inhibitor washout. (b) The same error correction assay was performed as in (a) but was supplemented with a low dose of Aurora B kinase inhibitor ZM 447439. Untreated populations in (a and b) are the same and both display mean values and the 95% confidence interval of three or four experimental replicates; p values were determined with paired t tests. (c) Representative immunofluorescence images (left) and quantifications (right) of the relative fluorescence intensity of phosphorylated Hec1 analyzed with a phospho-specific antibody to Ser55. Each data point represents individual kinetochore intensities of Hec1 pSer55 antibody ratioed to Hec1 antibody. Data points on graphs are grouped from three experimental replicates and colored according to each replicate with median and 95% confidence intervals displayed in black. p-Values were determined by an unpaired Mann-Whitney test. All scale bars are 5 µm.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/61773/elife-61773-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Cells under all experimental conditions in Figure 4 were quantified for the fraction of mitotic cells with aligned chromosome immediately after STLC removal. In every condition, cells responded equivalently to STLC treatment and washout. (b) Fraction of cells with monopolar spindles 60 min after STLC removal show that chTOG-depleted cells struggle to form bipolar spindles, while all other experimental conditions form bipolar spindles equivalently. For all experiments, mean values and 95% confidence intervals for three experimental replicates displayed; p values determined by paired t test.
+
+### Aurora B kinase phosphoregulation of Hec1 cannot compensate for loss of chTOG activity
 
 Our work suggested that chTOG functions similarly to the budding yeast ortholog (Stu2) that confers an intrinsic tension-dependent microtubule binding behavior to kinetochores that is independent of the extrinsic signaling through the Aurora B pathway (Miller et al., 2016; Miller et al., 2019). To test this in human cells, we analyzed recovery from STLC when both pathways were inhibited. Because the complete inhibition of Aurora B with ZM447439 (ZM) prevents cells from forming bipolar spindles after STLC washout (DeLuca et al., 2011), we partially inhibited Aurora B with a lower dose (500 nM). Cells expressing WT chTOG, while Aurora B was inhibited, exhibited the same phenotype as ZM treatment alone. However, when the basic pair mutant was expressed in the presence of ZM, we observed an additive phenotype where essentially no cells formed an organized metaphase plate after 60 min (Figure 6b) despite the ability to form a bipolar spindle (Figure 6—figure supplement 1b). These data suggested that chTOG and Aurora B pathways function through separate mechanisms.
 
@@ -86,60 +130,965 @@ We also found that the conserved process of chTOG-based error correction is most
 
 ## Materials and methods
 
-## Mammalian cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nocodazole</td>
+      <td>Sigma-Aldrich</td>
+      <td>M1404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Thymidine</td>
+      <td>Sigma-Aldrich</td>
+      <td>T9250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>S-trityl-L-cysteine (STLC)</td>
+      <td>Sigma-Aldrich</td>
+      <td>164739</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Reversine</td>
+      <td>Sigma-Aldrich</td>
+      <td>R3904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ZM447439</td>
+      <td>Selleckchem</td>
+      <td>S1103</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin Dihydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>A11138-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hygromycin B</td>
+      <td>Thermo Fisher</td>
+      <td>10687010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Sigma-Aldrich</td>
+      <td>D9891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Indole-3-acetic acid (Auxin)</td>
+      <td>Sigma-Aldrich</td>
+      <td>I3750</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polyethyleneimine (PEI)</td>
+      <td>Polysciences</td>
+      <td>23966–1</td>
+      <td>Linear, MW 25000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipfectamine 2000</td>
+      <td>Thermo Fisher</td>
+      <td>11668027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine RNAiMax</td>
+      <td>Thermo Fisher</td>
+      <td>13778075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protein G Dynabeads</td>
+      <td>Thermo Fisher</td>
+      <td>10009D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Thermo Fisher</td>
+      <td>D1306</td>
+      <td>IF: 60 ng/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag (M2) [mouse monoclonal]</td>
+      <td>Millipore-Sigma</td>
+      <td>Cat# F3165; RRID:AB_259529</td>
+      <td>IP (1 µg / 60 µL Prot G bead)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (6C5) [mouse monoclonal]</td>
+      <td>Millipore-Sigma</td>
+      <td>Cat# MAB374; RRID:AB_2107445</td>
+      <td>WB (1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CKAP5(chTOG) [rabbit polyclonal]</td>
+      <td>GeneTex</td>
+      <td>Cat# GTX30693; RRID:AB_625852</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Hec1 (9G3) [mouse monoclonal]</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# MA1-23308; RRID:AB_2149871</td>
+      <td>WB (2 µg/mL) IF (1 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (JL-8) [mouse monoclonal]</td>
+      <td>Takara</td>
+      <td>Cat# 632381; RRID:AB_2313808</td>
+      <td>WB (0.5 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-mouse [sheep polyclonal]</td>
+      <td>GE Healthcare</td>
+      <td>Cat# NA931; RRID:AB_772210</td>
+      <td>WB (1:10,0000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-rabbit [sheep polyclonal]</td>
+      <td>GE Healthcare</td>
+      <td>Cat# NA934; RRID:AB_2722659</td>
+      <td>WB (1:10,0000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-centromere antibody (ACA) [human polyclonal]</td>
+      <td>Antibodies Inc</td>
+      <td>Cat# 15–235; RRID:AB_2797146</td>
+      <td>IF (1:600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-alpha tubulin (DM1A) [mouse monoclonal]</td>
+      <td>Millipore-Sigma</td>
+      <td>Cat# T6199; RRID:AB_477583</td>
+      <td>IF (2 µg/mL)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mad1 [rabbit polyclonal]</td>
+      <td>GeneTex</td>
+      <td>Cat# GTX109519; RRID:AB_1950847</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pSer55 Hec1 [rabbit purified polyclonal]</td>
+      <td>DeLuca et al., 2011 PMID:21266467</td>
+      <td></td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594 conjugated anti-mouse [goat polyclonal]</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A11005; RRID:AB_2534073;</td>
+      <td>IF (1:300; 1:600 for Tubulin)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 conjugated anti-mouse [goat polyclonal]</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A21235; RRID:AB_2535804</td>
+      <td>IF (1:300; 1:600 for Tubulin)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594 conjugated anti-rabbit [goat polyclonal]</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A11037; RRID:AB_2534095</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 conjugated anti-rabbit [goat polyclonal]</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # A21244; RRID:AB_ 2535812</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594 conjugated anti-human [goat polyclonal]</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A11014; RRID:AB_2534081</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AlexFluor 647 conjugated anti-human [goat polyclonal]</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# A21445; RRID:AB_2535862</td>
+      <td>IF (1:300)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>siRNA to Hec1 (custom sequence)</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td>CCCUGGGUCGUGUCAGGAA</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>siRNA to chTOG (flexitube)</td>
+      <td>Qiagen</td>
+      <td>Cat# SI02653588</td>
+      <td>AAGGGTCGACTCAATGATTCA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Stu2WT-3V5</td>
+      <td>Miller et al., 2016 PMID:27156448</td>
+      <td>pSB2232</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Stu2∆BL-3V5</td>
+      <td>Miller et al., 2019 PMID:31584935</td>
+      <td>pSB2260</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Stu2∆Patch-3V5</td>
+      <td>This study</td>
+      <td>pSB2634</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Cloning intermediate</td>
+      <td>This study</td>
+      <td>pSB2820</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Stu2∆BL+Patch-3V5</td>
+      <td>This study</td>
+      <td>pSB2852</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Stu2∆K598A-3V5</td>
+      <td>This study</td>
+      <td>pSB2818</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Stu2∆R599A-3V5</td>
+      <td>This study</td>
+      <td>pSB2819</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Stu2∆KR598AA-3V5</td>
+      <td>This study</td>
+      <td>pSB2781</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Stu2hBL-3V5</td>
+      <td>This study</td>
+      <td>pSB3076</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Stu2hPatch-3V5</td>
+      <td>This study</td>
+      <td>pSB3075</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Stu2h2-3 Linker-3V5</td>
+      <td>This study</td>
+      <td>pSB3089</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA3_chTOGWT-EGFP</td>
+      <td>This study</td>
+      <td>pSB2822</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA3_chTOGKK1142AA-EGFP</td>
+      <td>This study</td>
+      <td>pSB2823</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FRT/TO</td>
+      <td>Etemad et al., 2015</td>
+      <td>pSB2353</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FRT/TO_chTOGWT-EGFP</td>
+      <td>This Study</td>
+      <td>pSB2860</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FRT/TO_chTOGKK1142AA-EGFP</td>
+      <td>This Study</td>
+      <td>pSB2863</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FRT/TO_ chTOGWT-6His-3Flag</td>
+      <td>This Study</td>
+      <td>pSB2976</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FRT/TO_chTOGKK1142AA-6His-3Flag</td>
+      <td>This Study</td>
+      <td>pSB2977</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EB1-mCherry</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_55035</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLPH2</td>
+      <td>This Study</td>
+      <td>pSB2998</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLPH2_EB1-mCherry</td>
+      <td>This Study</td>
+      <td>pSB3217</td>
+      <td>See Table 1 for more details</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>W303</td>
+      <td>Miller et al., 2016 PMID:27156448</td>
+      <td>SBY3</td>
+      <td>See Table 2 for more details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>STU2-IAA7; TIR1</td>
+      <td>Miller et al., 2016 PMID:27156448</td>
+      <td>SBY13772</td>
+      <td>See Table 2 for more details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>STU2-IAA7; TIR1; Stu2WT</td>
+      <td>Miller et al., 2019 PMID:31584935</td>
+      <td>SBY13901</td>
+      <td>See Table 2 for more details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>STU2-IAA7; TIR1; Stu2∆BL</td>
+      <td>This study</td>
+      <td>SBY17069</td>
+      <td>See Table 2 for more details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>STU2-IAA7; TIR1; Stu2KR/AA</td>
+      <td>This study</td>
+      <td>SBY17206</td>
+      <td>See Table 2 for more details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>STU2-IAA7; TIR1; Stu2K598A</td>
+      <td>This study</td>
+      <td>SBY17477</td>
+      <td>See Table 2 for more details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>STU2-IAA7; TIR1; Stu2R599A</td>
+      <td>This study</td>
+      <td>SBY17479</td>
+      <td>See Table 2 for more details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>STU2-IAA7; TIR1; Stu2∆Patch</td>
+      <td>This study</td>
+      <td>SBY17519</td>
+      <td>See Table 2 for more details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>STU2-IAA7; TIR1; Stu2∆BL+Patch</td>
+      <td>This study</td>
+      <td>SBY17593</td>
+      <td>See Table 2 for more details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>STU2-IAA7; TIR1; Stu2hBL</td>
+      <td>This study</td>
+      <td>SBY18799</td>
+      <td>See Table 2 for more details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>STU2-IAA7; TIR1; Stu2hPatch</td>
+      <td>This study</td>
+      <td>SBY18797</td>
+      <td>See Table 2 for more details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>STU2-IAA7; TIR1; Stu2h2-3 Linker</td>
+      <td>This study</td>
+      <td>SBY19023</td>
+      <td>See Table 2 for more details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>HCT116 chTOG-FKBP-EGFP</td>
+      <td>Cherry et al., 2019 PMID:31058365</td>
+      <td>SBM004</td>
+      <td>See Table 3 for more details</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK 293T</td>
+      <td>Ding et al., 2013 PMID:23154965</td>
+      <td>SBM033</td>
+      <td>See Table 3 for more details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (H. sapiens)</td>
+      <td>HeLa FlpIn Trex</td>
+      <td>Etemad et al., 2015 PMID:26621779</td>
+      <td>SBM001</td>
+      <td>See Table 3 for more details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (H. sapiens)</td>
+      <td>HeLa FlpIn Trex; chTOGWT-EGFP</td>
+      <td>This study</td>
+      <td>SBM044</td>
+      <td>See Table 3 for more details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (H. sapiens)</td>
+      <td>HeLa FlpIn Trex; chTOGKK/AA-EGFP</td>
+      <td>This study</td>
+      <td>SBM046</td>
+      <td>See Table 3 for more details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (H. sapiens)</td>
+      <td>HeLa FlpIn Trex; chTOGWT-EGFP; EB1-mCherry</td>
+      <td>This study</td>
+      <td>SBM045</td>
+      <td>See Table 3 for more details</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (H. sapiens)</td>
+      <td>HeLa FlpIn Trex; chTOGKK/AA-EGFP; EB1-mCherry</td>
+      <td>This study</td>
+      <td>SBM047</td>
+      <td>See Table 3 for more details</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>STU2</td>
+      <td>Saccharomyces Genome Database</td>
+      <td>SGD:S000004035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>chTOG; CKAP5</td>
+      <td>Consensus Coding DNA Sequence Database</td>
+      <td>CCDS: 31477.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>EB1; MAPRE1</td>
+      <td>Consensus Coding DNA Sequence Database</td>
+      <td>CCDS: 13208.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 9</td>
+      <td>GraphPad Software</td>
+      <td></td>
+      <td>Version 9.0.0 (86)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TrackMate</td>
+      <td>Tinevez et al., 2017 PMID:27713081</td>
+      <td></td>
+      <td>Version 4.0.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mammalian cell culture
 
 HCT116 (Cherry et al., 2019), 293T (Ding et al., 2013), and HeLa FlpIn Cells (Etemad et al., 2015) cells were grown in a high-glucose DMEM (Thermo Fisher Scientific 11-965-118/Gibco 11965118) supplemented with antibiotic/antimycotic (Thermo Fisher Scientific 15240062) and 10% Foetal Bovine Serum (Thermo Fisher Scientific 26140095) at 37°C supplemented with 5% CO2. For microscopy experiments, cell suspensions were added to 35 mm wells containing acid washed 1.5 × 22 mm square coverslips (Fisher Scientific 152222) and grown for 12–24 hr prior to transfections or immunostaining. For live-cell microscopy experiments, cell suspensions were added to 35-mm glass-bottom dishes (Mattek Corp. P35G-1.5–20 C) and grown in standard growth media because they were performed in an environmental chamber using TIRF microscopy. Cell identity was not validated by STTR profiling, but each cell line contains unique genomic modifications (FRT recombination and zeomycin resistance, EGFP fusions) that were validated by expression of transgenes. Cell lines are regularly screened for mycoplasma contamination using DAPI staining.
 
 To entirely depolymerize the microtubule cytoskeleton, growth media were supplemented with 10 µM nocodazole (Sigma-Aldrich M1404) for one hour. To synchronize cells, they were treated with 2.5 mM thymidine (Sigma-Aldrich T9250) for 16 hr, cells were then placed in drug-free media for 8 hr. A second synchronization was achieved by supplementing media with 2.5 mM thymidine again for 16 hr. Finally, thymidine was removed and 4–5 hr later (depending on cell line) 10 µM nocodazole was added. Eg5 inhibition was achieved by supplementing growth media with 5 µM S-trityl-L-cysteine (STLC, Sigma-Aldrich 164739) for 2 hr. Partial inhibition of Aurora B kinase was performed with a one-hour long treatment of 500 nM ZM447439 (Selleckchem S1103). Mps1 was inhibited by supplementing cell culture media with 2 µM Reversine (Sigma-Aldrich R3904).
 
-## Immunoprecipitations
+### Immunoprecipitations
 
 15 cm dishes of 293 T cells were transfected with 40 µg of empty vector (pSB2353), chTOGWT-3Flag (pSB2976), or chTOGKK/AA-3Flag (pSB2977) using 85 µg of polyethyleneimine (PEI, Polysciences 23966–1) as previously reported (Longo et al., 2013). Cells were harvested by mechanical dissociation with PBS and then centrifuged. The cell pellet was resuspended in 250 µL of complete lysis buffer (25 mM HEPES, 2 mM MgCl2, 0.1 mM EDTA, 0.5 mM EGTA, 15% Glycerol, 0.1% NP-40, 150 mM KCl, 1 mM PMSF, 1 mM sodium pyrophosphate, 1x Pierce Protease Inhibitor Cocktail [Thermo Scientific 88666]) and snap frozen in liquid nitrogen. Samples were thawed and sonicated with a CL-18 microtip for 20 s at 50% maximum power with no pulsing three times using a Fisher Scientific FB50 sonicator. Approximately 150 U of Benzonase nuclease (Millipore E1014) was added to samples and incubated at room temperature for 5 min. The samples were centrifuged at 16,100 x g at 4°C in a tabletop centrifuge. Clarified lysates were moved to fresh microfuge tubes and 60 µL of Protein G Dynabeads (Thermo Fisher 10009D) conjugated with anti-FLAG(M2) monoclonal antibody (Sigma Aldrich F3165) as previously described (Akiyoshi et al., 2009) were added and incubated at 4°C with rotation for 90 min. Beads were washed four times with lysis buffer lacking PMSF, sodium pyrophosphate, and protease inhibitor cocktail. Proteins were eluted from beads in 40 µL of SDS sample buffer incubated at 95°C for 5 min.
 
-## Immunoblotting
+### Immunoblotting
 
 Clarified lysates prepared as described above were diluted in 2x SDS sample buffer and incubated at 95°C for 5 min. Immunoblots for chTOG were prepared by resolving lysates on NuPAGE 4–12% Bis-Tris Gels (Life Technologies, NP0329BOX) in 1x MOPS-SDS buffer and then transferring the proteins to 0.45 µm nitrocellulose membrane (BioRad, 1620115) for 2 hr at 4°C in transfer buffer containing 20% methanol. Membranes were washed in PBS+0.05% Tween-20 (PBS-T) and blocked with PBS-T+5% non-fat milk overnight at 4°C. Primary antibodies were diluted in PBS-T by the following factors or to the following concentrations: anti-GAPDH clone 6C5 (Millipore Sigma MAB374) 1 µg/mL; anti-CKAP5(chTOG) (GeneTex GTX30693) 1:1000; anti-HEC1 clone 9G3 (ThermoFisher Scientific, MA1-23308) 2 µg/mL; anti-GFP clone JL-8 (Takara 632381) 0.5 µg/mL. HRP-conjugated anti-mouse (GE Lifesciences, NA931) and anti-rabbit (GE Lifesciences, NA934) secondary antibodies were diluted 1:10,000 in PBS-T and incubated on membranes for 45 min at room temperature. Immunoblots were developed with enhanced chemiluminescence HRP substrates SuperSignal West Dura (Thermo Scientific, 34076) or SuperSignal West Femto (Thermo Scientific, 34094). All chemiluminescence was detected using a ChemiDoc MP system (BioRad).
 
-## Immunofluorescent staining
+### Immunofluorescent staining
 
 Upon completion of experimental manipulations, cells grown on coverslips were immediately chemically crosslinked for 15 min with 4% PFA diluted from a 16% stock solution (Electron Microscopy Sciences, 15710) with 1x PHEM (60 mM PIPES, 25 mM HEPES, 5 mM EGTA, 8 mM MgSO4). The exception was experiments where HEC1 levels were quantified, in which cells were treated with 1x PHEM+0.5% TritonX100 for 5 min prior to PFA. Coverslips were washed with 1x PHEM+0.5% TritonX100 for 5 min, then washed three more times with 1x PHEM + 0.1% TritonX100 over 10 min. Cells were blocked for 1–2 hr at room temperature in 20% goat serum in 1x PHEM. Primary antibodies were diluted in 20% goat serum to the following final concentrations/dilution factors: anti-centromere protein antibody or ACA (Antibodies Inc 15–235) 1:600; anti-HEC1 clone 9G3 (ThermoFisher Scientific, MA1-23308) 2 µg/mL; anti-alpha tubulin clone DM1A (Sigma Millipore, T6199) 2 µg/mL; anti-Mad1 (GeneTex, GTX109519) 1:1000, anti-Hec1pSer55 (Jennifer DeLuca, Colorado State University) (1:1000). Coverslips were incubated overnight at 4°C in primary antibody, then washed four times with 1x PHEM + 0.1% TritonX100 over 10 min. Goat anti-mouse, rabbit, and human secondary antibodies conjugated to AlexaFluor 488, 568, 647 (Invitrogen) were all diluted at 1:300 in 20% boiled goat serum with the exception of goat anti-mouse AlexaFluor647 used to target mouse anti-alpha tubulin where 1:600 dilution was used. Coverslips were washed four times with 1x PHEM + 0.1% TritonX100 over 10 min, then stained for 1 min with 30 ng/mL 4′,6-diamidino-2-phenylindole (DAPI, Invitrogen, D1306) in 1x PHEM. Coverslips were washed two times with 1x PHEM, then immersed in mounting media (90% glycerol, 20 mM Tris [pH = 8.0], 0.5% w/v N-propyl gallate) on microscope slides and sealed with nail polish.
 
-## Microscopy and image analysis
+### Microscopy and image analysis
 
 Fixed cell images were acquired on either a Deltavision Elite or Deltavision Ultra deconvolution high-resolution microscope, both equipped with a 60x/1.42 PlanApo N oil-immersion objective (Olympus). Slides imaged on the Elite were collected with a Photometrics HQ2 CCD 12-bit camera, while those imaged on the Ultra were equipped with a 16-bit sCMOS detector. On both microscopes, cells were imaged in Z-stacks through the entire cell using 0.2 µm steps. All images were deconvolved using standard settings. Softworx Explorer 2.0 was used to quantify kinetochore intensities by identifying the maximal ACA intensity within a Z-stack and collecting pixel intensity with a 16-pixel region of interest for the appropriate wavelength, as well as a 36-pixel region encompassing the first region for background subtraction. This region is large enough to capture both inner and outer kinetochore signals. Background intensity was found by subtracting the intensity of the 16-pixel region from the 36-pixel region. This background intensity was then divided by the difference in area (20 pixels) to give background intensity per pixel. This was then multiplied by 16 and subtracted from the initial intensity of the 16-pixel region. Representative images displayed from these experiments are projections of the maximum pixel intensity across all Z images. Intensity of cold-stable astral microtubules was quantified from maximum projections of Z-stacks. A rectangular region containing all kinetochores on the astral side of the mitotic spindle was drawn and measured, then background tubulin signal was measured in three small regions near but outside the astral region. Background signal was multiplied by the ratio of area between the two rectangles and then directly subtracted. Photoshop was used to crop, make equivalent, linear adjustments to brightness and contrast, and overlay images from different channels.
 
 Live-cell TIRF microscopy was performed on a Nikon widefield fluorescence and TIRF microscope equipped with an 100x/1.49 CFI Apo TIRF oil immersion objective (Nikon) and an Andor iXon X3 EMCCD camera. Cells were imaged briefly with dual lasers to visualize expression of EB1-mCherry and when appropriate, chTOG-EGFP. TIRF images for quantification were collected every 300 ms over a 90 s period using only the 561 nm laser to monitor EB1-mCherry. Tiff files for each timepoint were imported into FIJI (Schindelin et al., 2012), background subtracted, and ROF denoised prior to semi-automated track analysis with the TrackMate plugin (Tinevez et al., 2017) using the DoG Detector and Simple LAP Tracker. Kymographs were generated from background subtracted movies with Fiji (Schindelin et al., 2012) using a 7 µm line profile over the entire duration of the experiment.
 
-## Transfection of siRNA
+### Transfection of siRNA
 
 180,000 cells were grown on acid washed coverslips in each well of a six-well culture dish for 12–24 hr. 4–5 µL of siRNA were mixed with 6 µL of Lipofectamine RNAiMAX (Thermo Fisher 13778075) in 200 µL of DMEM containing no additives and incubated for 20 min. This was then added to cells in 1 mL of DMEM containing no additives. After 5–6 hr, culture media was replaced with DMEM with FBS and antibiotics and for induction of transgenes, doxycycline.
 
-## Statistics
+### Statistics
 
 GraphPad Prism version 8.4 was used for statistical analysis. Data normality was assessed for all experiments using the D’Agostino and Pearson test. For those with normal distributions, mean values were reported and t tests were used. For data sets failing the normality test, median values were reported, and non-parametric Mann-Whitney tests were performed for comparisons. Each test specifically identified in figure legends.
 
-## Multiple sequence alignments
+### Multiple sequence alignments
 
 Fungal proteins related to Saccharomyces cerevisiae Stu2 were identified using a PSI-BLAST (Altschul et al., 1997) search on NCBI. Multiple sequence alignments of the entire proteins were generated with ClustalOmega (Sievers et al., 2011) default parameters and displayed in JalView 1.8 (Waterhouse et al., 2009). Eukaryotic basic linker sequences were manually identified and aligned with ClustalOmega for display in JalView.
 
-## Nucleic acid reagents
+### Nucleic acid reagents
 
 All plasmids used in this study are described in Table 1. Construction of a LEU2 integrating plasmid containing wild-type pSTU2-STU2-3V5 (pSB2232) was previously described (Miller et al., 2016). STU2 variants were constructed by mutagenizing pSB2232 as described previously (Liu and Naismith, 2008; Tseng et al., 2008), resulting in pSB2260 (Miller et al., 2019; pSTU2-stu2(∆560–657::GDGAGLlinker)−3 V5, i.e. stu2∆BL), pSB2634 (pSTU2-stu2(∆592–607::GDGAGLlinker)−3 V5, i.e. stu2∆Patch), pSB3076 (pSTU2-stu2(∆551–657::chTOG1081-1167)−3 V5, i.e. stu2hBL), pSB3075 (pSTU2-stu2(∆560–657::GDGAGLlinker:chTOG1137-1150:GDGAGLlinker)−3 V5, i.e. stu2hPatch), pSB3089 (pSTU2-stu2(∆551–657::chTOG500-585)−3 V5, i.e. stu2h2-3 Linker), pSB2781 (pSTU2-stu2(K598A R599A)−3 V5, i.e. stu2KR/AA), pSB2818 (pSTU2-stu2(K598A)−3 V5, i.e. stu2K598A), pSB2819 (pSTU2-stu2(R599A)−3 V5, i.e. stu2R599A), and pSB2820 (pSTU2-stu2(∆551–657::GDGAGLlinker:592–607:GDGAGLlinker)−3 V5). pSB2820 was further mutagenized following the above protocols resulting in pSB2852 (pSTU2-stu2(∆560–657::GDGAGLlinker:592–607:GDGAGLlinker)−3 V5, i.e. stu2∆BL+Patch).
+
+**Table 1.**
+ Plasmids used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasmid</th>
+      <th>Vector backbone</th>
+      <th>Gene of interest</th>
+      <th>Mutation description</th>
+      <th>Selection marker</th>
+      <th>Primers</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>pSB2232</td>
+      <td>pSB2223/pL300</td>
+      <td>Stu2WT-3V5</td>
+      <td></td>
+      <td>LEU2</td>
+      <td>SB4372, SB4374</td>
+      <td>Miller et al., 2016 PMID:27156448</td>
+    </tr>
+    <tr>
+      <td>pSB2260</td>
+      <td>pSB2223/pL300</td>
+      <td>Stu2∆BL-3V5</td>
+      <td>∆560–657: : GDGAG</td>
+      <td>LEU2</td>
+      <td>SB4411, SB4413</td>
+      <td>Miller et al., 2019 PMID:31584935</td>
+    </tr>
+    <tr>
+      <td>pSB2634</td>
+      <td>pSB2223/pL300</td>
+      <td>Stu2∆Patch-3V5</td>
+      <td>∆592–607: : GDGAG</td>
+      <td>LEU2</td>
+      <td>SB5248, SB4413</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pSB2820</td>
+      <td>pSB2223/pL300</td>
+      <td>Cloning intermediate</td>
+      <td>∆569–657:: GDGAG+592–607+GDGAG</td>
+      <td>LEU2</td>
+      <td>SB5447</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pSB2852</td>
+      <td>pSB2223/pL300</td>
+      <td>Stu2∆BL+Patch-3V5</td>
+      <td>∆560–657:: GDGAG+592–607+GDGAG</td>
+      <td>LEU2</td>
+      <td>SB5519, SB5520</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pSB2818</td>
+      <td>pSB2223/pL300</td>
+      <td>Stu2∆K598A-3V5</td>
+      <td>K598A</td>
+      <td>LEU2</td>
+      <td>SB5458, SB4413</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pSB2819</td>
+      <td>pSB2223/pL300</td>
+      <td>Stu2∆R599A-3V5</td>
+      <td>R599A</td>
+      <td>LEU2</td>
+      <td>SB5459, SB4413</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pSB2781</td>
+      <td>pSB2223/pL300</td>
+      <td>Stu2∆KR598AA-3V5</td>
+      <td>K598A, R599A</td>
+      <td>LEU2</td>
+      <td>SB5349, SB4413</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pSB3076</td>
+      <td>pSB2223/pL300</td>
+      <td>Stu2hBL-3V5</td>
+      <td>∆560–657::chTOG1081-1167</td>
+      <td>LEU2</td>
+      <td>SB5248, SB4413</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pSB3075</td>
+      <td>pSB2223/pL300</td>
+      <td>Stu2hPatch-3V5</td>
+      <td>∆560–657::GDGG+chTOG1137-1150+GDGAG</td>
+      <td>LEU2</td>
+      <td>SB5447</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pSB3089</td>
+      <td>pSB2223/pL300</td>
+      <td>Stu2h2-3 Linker-3V5</td>
+      <td>∆560–657::chTOG500-585</td>
+      <td>LEU2</td>
+      <td>SB5519, SB5520</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pSB2822</td>
+      <td>pCDNA3.1</td>
+      <td>chTOGWT-EGFP</td>
+      <td></td>
+      <td>Neomycin</td>
+      <td>N/A</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pSB2823</td>
+      <td>pCDNA3.1</td>
+      <td>chTOGKK1142AA-EGFP</td>
+      <td>K1142A, K1143A</td>
+      <td>Neomycin</td>
+      <td>N/A</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>pSB2353</td>
+      <td>pCDNA5 FRT/TO</td>
+      <td>N/A</td>
+      <td></td>
+      <td>Puromycin</td>
+      <td>N/A</td>
+      <td>Etemad et al., 2015 PMID:26621779</td>
+    </tr>
+    <tr>
+      <td>pSB2860</td>
+      <td>pCDNA5 FRT/TO</td>
+      <td>chTOGWT-EGFP</td>
+      <td></td>
+      <td>Puromycin</td>
+      <td>SB5536, SB5537</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pSB2863</td>
+      <td>pCDNA5 FRT/TO</td>
+      <td>chTOGKK1142AA-EGFP</td>
+      <td>K1142A, K1143A</td>
+      <td>Puromycin</td>
+      <td>SB5536, SB5537</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pSB2976</td>
+      <td>pCDNA5 FRT/TO</td>
+      <td>chTOGWT-6His-3Flag</td>
+      <td></td>
+      <td>Puromycin</td>
+      <td>SB5774, SB5775</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pSB2977</td>
+      <td>pCDNA5 FRT/TO</td>
+      <td>chTOGKK1142AA-6His-3Flag</td>
+      <td>K1142A, K1143A</td>
+      <td>Puromycin</td>
+      <td>SB5774, SB5775</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pSB3062</td>
+      <td></td>
+      <td>EB1-mCherry</td>
+      <td></td>
+      <td>Neomycin</td>
+      <td>N/A</td>
+      <td>Davidson Lab (Addgene: 55035)</td>
+    </tr>
+    <tr>
+      <td>pSB2998</td>
+      <td>pLPH2</td>
+      <td>N/A</td>
+      <td></td>
+      <td>Hygromycin</td>
+      <td>N/A</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pSB3217</td>
+      <td>pLPH2</td>
+      <td>EB1-mCherry</td>
+      <td></td>
+      <td>Hygromycin</td>
+      <td>SB5938, SB5939, SB5940, SB5941</td>
+      <td>This Study</td>
+    </tr>
+  </tbody>
+</table>
 
 Codon-optimized chTOGWT and chTOGKK/AA were synthesized and sub-cloned into pCDNA3.1-C-EGFP by Genscript (pSB2822 and pSB2823, respectively). Both chTOGWT and chTOGKK/AA -EGFP fusions were cloned into pCDNA5 FRT/TO/puro (pSB2353) (Etemad et al., 2015) through PCR amplification and isothermal assembly to generate pSB2860 and pSB2863, respectively. EGFP was excised from pSB2860 and pSB2863 through restriction digestion and replaced with 6-His,3-FLAG via isothermal assembly to generate pSB2976 and pSB2977. EB1 was PCR amplified from mCherry-EB1-8, a gift from Michael Davidson (Addgene plasmid # 55035), sequence for a codon-optimized mCherry with a flexible linker was synthesized as a gBlock (IDT) and both were inserted into a third-generation lentiviral vector, pLPH2 (pSB2998) via isothermal assembly to generate pSB3217. Primers used in the construction of the above plasmids are listed in Table 1 and plasmid maps are available upon request.
 
 The siRNA targeting chTOG and Hec1 were ordered from Qiagen. Hec1 was depleted with a custom synthesized siRNA sequence (5’-CCCUGGGUCGUGUCAGGAA-3’) that targets the 5’ UTR and was previously validated (DeLuca et al., 2011). Hs_ch-TOG_6 FlexiTube siRNA (Qiagen SI02653588) targets the coding DNA sequence of endogenous chTOG (5’-AAGGGTCGACTCAATGATTCA-3’) but not the codon optimized EGFP fusion.
 
-## Generation of yeast strains
+### Generation of yeast strains
 
 S. cerevisiae strains used in this study are described in Table 2 and are derivatives of SBY3 (W303). Standard media, microbial, and genetic techniques were used (Sherman et al., 1974). Stu2-3HA-IAA7 was constructed by PCR-based methods (Longtine et al., 1998) and is described previously (Miller et al., 2016).
 
-## Yeast growth assay
+**Table 2.**
+ Yeast strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">All strains are derivatives of SBY3 (W303)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain</td>
+      <td>Relevant genotype</td>
+    </tr>
+    <tr>
+      <td>SBY3 (W303)</td>
+      <td>MATa ura3-1 leu2-3,112 his3-11 trp1-1 can1-100 ade2-1 bar1-1</td>
+    </tr>
+    <tr>
+      <td>SBY13772</td>
+      <td>MATa STU2-3HA-IAA7:KanMX DSN1-6His-3Flag:URA3 his3::pGPD1-TIR1:HIS3</td>
+    </tr>
+    <tr>
+      <td>SBY13901</td>
+      <td>MATa STU2-3HA-IAA7:KanMX DSN1-6His-3Flag:URA3 his3::pGPD1-TIR1:HIS3 leu2::pSTU2-STU2-3V5:LEU2</td>
+    </tr>
+    <tr>
+      <td>SBY17069</td>
+      <td>MATa STU2-3HA-IAA7:KanMX DSN1-6His-3Flag:URA3 his3::pGPD1-TIR1:HIS3 leu2::pSTU2-stu2(∆592–607::GDGAGLlinker)−3 V5:LEU2</td>
+    </tr>
+    <tr>
+      <td>SBY17206</td>
+      <td>MATa STU2-3HA-IAA7:KanMX DSN1-6His-3Flag:URA3 his3::pGPD1-TIR1:HIS3 leu2::pSTU2-stu2(K598A R599A)−3 V5:LEU2</td>
+    </tr>
+    <tr>
+      <td>SBY17477</td>
+      <td>MATa STU2-3HA-IAA7:KanMX DSN1-6His-3Flag:URA3 his3::pGPD1-TIR1:HIS3 leu2::pSTU2-stu2(K598A)−3 V5:LEU2</td>
+    </tr>
+    <tr>
+      <td>SBY17479</td>
+      <td>MATa STU2-3HA-IAA7:KanMX DSN1-6His-3Flag:URA3 his3::pGPD1-TIR1:HIS3 leu2::pSTU2-stu2(R599A)−3 V5:LEU2</td>
+    </tr>
+    <tr>
+      <td>SBY17519</td>
+      <td>MATa STU2-3HA-IAA7:KanMX DSN1-6His-3Flag:URA3 his3::pGPD1-TIR1:HIS3 leu2::pSTU2-stu2(∆560–657::GDGAGLlinker)−3 V5:LEU2</td>
+    </tr>
+    <tr>
+      <td>SBY17593</td>
+      <td>MATa STU2-3HA-IAA7:KanMX DSN1-6His-3Flag:URA3 his3::pGPD1-TIR1:HIS3 leu2::pSTU2-stu2(∆560–657::GDGAGLlinker:592–607:GDGAGLlinker)−3 V5:LEU2</td>
+    </tr>
+    <tr>
+      <td>SBY18799</td>
+      <td>MATa STU2-3HA-IAA7:KanMX DSN1-6His-3Flag:URA3 his3::pGPD1-TIR1:HIS3 leu2::pSTU2-Stu2(∆560–657::chTOG(1081–1167))−3 V5:LEU2</td>
+    </tr>
+    <tr>
+      <td>SBY18797</td>
+      <td>MATa STU2-3HA-IAA7:KanMX DSN1-6His-3Flag:URA3 his3::pGPD1-TIR1:HIS3 leu2::pSTU2-Stu2(∆560–657::linker-chTOG(1137–1150)-linker)−3 V5:LEU2</td>
+    </tr>
+    <tr>
+      <td>SBY19023</td>
+      <td>MATa STU2-3HA-IAA7:KanMX DSN1-6His-3Flag:URA3 his3::pGPD1-TIR1:HIS3 leu2::pSTU2-stu2(∆560–657::chTOG(500-585))−3 V5:LEU2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast growth assay
 
 The desired strains were grown overnight in yeast extract peptone plus 2% glucose (YPD) medium. The following day, cells were diluted to OD600 ~1.0 from which a serial 1:5 dilution series was made and spotted on YPD+DMSO or YPD+100 μM indole-3-acetic acid (IAA, Sigma-Aldrich I3750) dissolved in DMSO plates. Plates were incubated at 23°C for 3 days.
 
-## Generation of modified human cell lines
+### Generation of modified human cell lines
 
 All human cell lines used in this study are described in Table 3. 400,000 HeLa FlpIn TREX cells (SBM001) were grown in 60 mm dishes for 16 hr. Media was aspirated and replaced with 2.5 mL of DMEM containing no supplements. 3.2 µg of p0G44 (pSB2380) and 1 µg of pSB2860/pSB2863 were mixed with 8 µL of Lipofectamine2000 (Invitrogen 11668027) in 400 µL of DMEM (no supplements) for 20 min and then added to cells dropwise. Six hours after transfection, media was aspirated and replaced with DMEM containing 10% FBS and antibiotics. 48 hr post-transfection, media was supplemented with 2.5 µg/mL puromycin (Thermo Fisher A11138-03) and cells were negatively selected for 3 days. Upon reaching confluence, expression of EGFP fusion proteins was induced by addition of 1 µg/mL doxycycline (Sigma-Aldrich, D9891) and EGFP-expressing cells were positively selected by FACS using a SONY MA900 to sort into media lacking doxycycline. Doubly selected polyclonal populations of chTOGWT-EGFP (SBM044) and chTOGKK/AA-EGFP (SBM046) were frozen and stored for future experiments.
+
+**Table 3.**
+ Human cell lines used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell line</th>
+      <th>Parental</th>
+      <th>Modification 1</th>
+      <th>Modification 2</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>SBM004</td>
+      <td>HCT116</td>
+      <td>CKAP5e44-FKBP- EGFP/CKAP5e44-FKBP-EGFP</td>
+      <td></td>
+      <td>Cherry et al., 2019 PMID:31058365</td>
+    </tr>
+    <tr>
+      <td>SBM033</td>
+      <td>293T</td>
+      <td></td>
+      <td></td>
+      <td>Ding et al., 2013 PMID:23154965</td>
+    </tr>
+    <tr>
+      <td>SBM001</td>
+      <td>HeLa FlpIn Trex</td>
+      <td>SV40: LacZ-ZeocinR</td>
+      <td></td>
+      <td>Etemad et al., 2015 PMID:26621779</td>
+    </tr>
+    <tr>
+      <td>SBM044</td>
+      <td>HeLa FlpIn Trex</td>
+      <td>TRE: chTOGWT-EGFP SV40: PuromycinR</td>
+      <td></td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>SBM046</td>
+      <td>HeLa FlpIn Trex</td>
+      <td>TRE: chTOGKK/AA-EGFP SV40: PuromycinR</td>
+      <td></td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>SBM045</td>
+      <td>HeLa FlpIn Trex</td>
+      <td>TRE: chTOGWT-EGFP SV40: PuromycinR</td>
+      <td>hPGK1: EB1-mCherry IRES hygromycinR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>SBM047</td>
+      <td>HeLa FlpIn Trex</td>
+      <td>TRE: chTOGKK/AA-EGFP SV40: PuromycinR</td>
+      <td>hPGK1: EB1-mCherry IRES hygromycinR</td>
+      <td>This study</td>
+    </tr>
+  </tbody>
+</table>
 
 EB1-mCherry was stably transduced into SBM044 and SBM046 via lentivirus. Assembly of replication deficient viral particles was performed as previously described (Toledo et al., 2014). Briefly, pLCH2-EB1-mCherry (pSB3217), pPAX2 (pSB2636), and pMD2.G (pSB2637) were co-transfected into HEK-293T cells using PEI. Virus containing supernatant media were harvested 48 hr post transfection and passed through 0.45 µm filters and frozen at −80°C. Filtered viral supernatant media were added to dishes containing SBM044 and SBM046 and 48 hr later hygromycin B (Invitrogen 10687010) was added at 400 µg/mL. Cells were selected for 5 days to generate SBM045 and SBM047.

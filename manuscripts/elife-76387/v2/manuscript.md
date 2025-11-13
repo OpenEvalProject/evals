@@ -40,28 +40,28 @@
 
 ### Affiliations
 
-1. https://ror.org/041kmwe10 Department of Immunology and Inflammation, Centre for Inflammatory Disease, Imperial College London London United Kingdom
+1. Department of Immunology and Inflammation, Centre for Inflammatory Disease, Imperial College London London United Kingdom ([ROR:041kmwe10](https://ror.org/041kmwe10))
 2. The Department of Medicine, University of Cambridge School of Clinical Medicine Cambridge United Kingdom
-3. https://ror.org/02jx3x895 Molecular Immunology Unit, UCL Great Ormond Street Institute of Child Health London United Kingdom
-4. https://ror.org/043jzw605 Functional Proteomics, Division of Cancer Biology, Institute of Cancer Research London United Kingdom
-5. https://ror.org/02jzgtq86 Center for Cancer Systems Biology (CCSB), Dana-Farber Cancer Institute Boston United States
+3. Molecular Immunology Unit, UCL Great Ormond Street Institute of Child Health London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+4. Functional Proteomics, Division of Cancer Biology, Institute of Cancer Research London United Kingdom ([ROR:043jzw605](https://ror.org/043jzw605))
+5. Center for Cancer Systems Biology (CCSB), Dana-Farber Cancer Institute Boston United States ([ROR:02jzgtq86](https://ror.org/02jzgtq86))
 6. Department of Genetics, Blavatnik Institute, Harvard Medical School Boston United States
-7. https://ror.org/02jzgtq86 Department of Cancer Biology, Dana-Farber Cancer Institute Boston United States
-8. https://ror.org/05cy4wa09 Wellcome Trust Sanger Institute Hinxton United Kingdom
-9. https://ror.org/013meh722 Cambridge Institute of Medical Research, University of Cambridge Cambridge United Kingdom
+7. Department of Cancer Biology, Dana-Farber Cancer Institute Boston United States ([ROR:02jzgtq86](https://ror.org/02jzgtq86))
+8. Wellcome Trust Sanger Institute Hinxton United Kingdom ([ROR:05cy4wa09](https://ror.org/05cy4wa09))
+9. Cambridge Institute of Medical Research, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 10. Cambridge Institute of Therapeutic Immunology & Infectious Disease, Jeffrey Cheah Biomedical Centre Cambridge Biomedical Campus Cambridge United Kingdom
-11. https://ror.org/00ktqrd38 Department of Pharmacology, Kyoto Prefectural University of Medicine Kyoto Japan
-12. https://ror.org/0220mzb33 School of Cardiovascular Medicine and Sciences, James Black Centre, King's College London London United Kingdom
-13. https://ror.org/0220mzb33 Peter Gorer Department of Immunobiology, School of Immunology & Microbial Sciences, King's College London London United Kingdom
-14. https://ror.org/027m9bs27 Lydia Becker Institute of Immunology and Inflammation, Faculty of Biology, Medicine and Health, University of Manchester Manchester United Kingdom
-15. https://ror.org/05cy4wa09 European Molecular Biology Laboratory, European Bioinformatics Institute, Wellcome Trust Genome Campus Hinxton United Kingdom
-16. https://ror.org/00s6t1f81 Department of Biology and Biotechnology, University of Pavia Pavia Italy
+11. Department of Pharmacology, Kyoto Prefectural University of Medicine Kyoto Japan ([ROR:00ktqrd38](https://ror.org/00ktqrd38))
+12. School of Cardiovascular Medicine and Sciences, James Black Centre, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+13. Peter Gorer Department of Immunobiology, School of Immunology & Microbial Sciences, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+14. Lydia Becker Institute of Immunology and Inflammation, Faculty of Biology, Medicine and Health, University of Manchester Manchester United Kingdom ([ROR:027m9bs27](https://ror.org/027m9bs27))
+15. European Molecular Biology Laboratory, European Bioinformatics Institute, Wellcome Trust Genome Campus Hinxton United Kingdom ([ROR:05cy4wa09](https://ror.org/05cy4wa09))
+16. Department of Biology and Biotechnology, University of Pavia Pavia Italy ([ROR:00s6t1f81](https://ror.org/00s6t1f81))
 
 † Corresponding author
 
 ## Abstract
 
-EROS (essential for reactive oxygen species) protein is indispensable for expression of gp91 phox , the catalytic core of the phagocyte NADPH oxidase. EROS deficiency in humans is a novel cause of the severe immunodeficiency, chronic granulomatous disease, but its mechanism of action was unknown until now. We elucidate the role of EROS, showing it acts at the earliest stages of gp91 phox maturation. It binds the immature 58 kDa gp91 phox directly, preventing gp91 phox degradation and allowing glycosylation via the oligosaccharyltransferase machinery and the incorporation of the heme prosthetic groups essential for catalysis. EROS also regulates the purine receptors P2X7 and P2X1 through direct interactions, and P2X7 is almost absent in EROS-deficient mouse and human primary cells. Accordingly, lack of murine EROS results in markedly abnormal P2X7 signalling, inflammasome activation, and T cell responses. The loss of both ROS and P2X7 signalling leads to resistance to influenza infection in mice. Our work identifies EROS as a highly selective chaperone for key proteins in innate and adaptive immunity and a rheostat for immunity to infection. It has profound implications for our understanding of immune physiology, ROS dysregulation, and possibly gene therapy.
+EROS (essential for reactive oxygen species) protein is indispensable for expression of gp91phox, the catalytic core of the phagocyte NADPH oxidase. EROS deficiency in humans is a novel cause of the severe immunodeficiency, chronic granulomatous disease, but its mechanism of action was unknown until now. We elucidate the role of EROS, showing it acts at the earliest stages of gp91phox maturation. It binds the immature 58 kDa gp91phox directly, preventing gp91phox degradation and allowing glycosylation via the oligosaccharyltransferase machinery and the incorporation of the heme prosthetic groups essential for catalysis. EROS also regulates the purine receptors P2X7 and P2X1 through direct interactions, and P2X7 is almost absent in EROS-deficient mouse and human primary cells. Accordingly, lack of murine EROS results in markedly abnormal P2X7 signalling, inflammasome activation, and T cell responses. The loss of both ROS and P2X7 signalling leads to resistance to influenza infection in mice. Our work identifies EROS as a highly selective chaperone for key proteins in innate and adaptive immunity and a rheostat for immunity to infection. It has profound implications for our understanding of immune physiology, ROS dysregulation, and possibly gene therapy.
 
 ## Introduction
 
@@ -77,9 +77,17 @@ In this study, we show that EROS co-transfection with gp91phox markedly increase
 
 ## Results
 
-## EROS is a physiological regulator of gp91phox
+### EROS is a physiological regulator of gp91phox
 
 EROS is essential for expression of the gp91phox-p22phox components of the phagocyte NADPH oxidase in primary human cells. We have previously shown this in patient-derived material but here also introduce an induced pluripotent stem cells (iPS)-derived macrophages rendered deficient in human EROS via CRISPR-Cas9 (Figure 1—figure supplement 1A). We examined the exact mechanism of action of EROS, asking how it fitted into the canonical model of gp91phox-p22phox biology (Figure 1—figure supplement 1B). One established method to investigate gp91phox-p22phox biosynthesis and stability is to transfect components of the complex into cells that do not normally express them (Dinauer, 2019). Such reductionist studies have demonstrated the ability of p22phox to stabilise the mature 91 kDa form of gp91phox. Co-expression of murine EROS and gp91phox resulted in markedly increased gp91phox expression relative to gp91phox transfection alone in NIH3T3 and COS-7 cells (Figure 1A and B), which are known not to express endogenous p22phox (Yu et al., 1997), as well as in HEK293T cells (Figure 1C), which express some endogenous p22phox. Thus, EROS can increase the expression of mouse gp91phox and can do so in the absence of p22phox.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/76387/elife-76387-fig1-v2.jpg)
+
+**Figure 1.:** (A–C) Mouse constructs encoding EROS and gp91phox were co-transfected into NIH3T3 (A), COS-7 (B), and HEK293T (C) cell lines. gp91phox expression was analysed by immunoblotting; arrow indicates gp91phox band; ns: non-specific band. (D–F) gp91phox and p22phox expression in HEK293T cells following transfection with the indicated human constructs. (G) Left panel: analysis of the stability of the different forms of gp91phox (indicated by the arrows) following transfection in HEK293T cells in the presence or absence of EROS and treatment with 10 μg/mL cycloheximide. Right panel: quantitation of the cycloheximide assay (mean of four independent experiments; error bars indicate SD) represented as a fold change of gp91phox in cells expressing gp91phox and EROS vectors relative to gp91phox vector alone at 0 hr and normalised to actin expression. Actin and vinculin were used as loading control. (H) Stability of endogenous gp91phox in PLB985 neutrophil-like cells overexpressing lentivirus (LV) EROS-GFP vector (MW ≈ 41 kDa) and treated with 10 μg/mL cycloheximide. (I–J) gp91phox expression following lentiviral transduction of EROS-GFP, gp91phox, or both in differentiated PL985 knockout (KO) for p22phox (I) or EROS (J). Data are representative of three independent experiments. See also Figure 1—figure supplement 1 and Figure 1—source data 1–4.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76387/elife-76387-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Expression of gp91phox in human induced pluripotent stem cells (iPS)-derived macrophage deficient for EROS (lanes are triplicate). (B) Diagram depicting the different stages of gp91phox biosynthesis and formation of the heterodimer with p22phox. (C) gp91phox expression upon co-expression of gp91phox-GFP and EROS-FLAG vectors compared to gp91phox GFP alone in non-adherent HEK293-F. (D) Abundance of the 58 kDa form of gp91phox in mouse NIH3T3 cells upon co-expression of gp91phox and EROS human constructs. (E) Expression of p22phox in HEK293 cells co-transfected with p22phox and EROS mouse constructs compared to p22phox vector alone (lanes are triplicate). (F) Expression level of EROS in bone marrow-derived macrophages (BMDM) from gp91phox knockout (KO) mice compared to control mice. Data are representative of three independent experiments. (G) Histogram derived from gp91phox stability curve (Figure 1H) in absence (blue) or presence (red) of EROS (four independent experiments; p-value was determined using unpaired Student’s t-test; error bars indicate SD). See also Figure 1—figure supplement 1—source data 1–3.
 
 This result was corroborated using human constructs of EROS, gp91phox, and p22phox (Figure 1D–F). In HEK293T cells, co-transfection of human EROS with gp91phox resulted in increased expression of the predominantly lower molecular weight (immature form) of gp91phox (Figure 1D). EROS’s ability to enhance the expression of the 58 kDa form specifically was maintained when all three of gp91phox, p22phox, and EROS were transfected compared to gp91phox and p22phox only (Figure 1E). This effect was also readily observable in non-adherent HEK293-F cells and with different tags placed on EROS and gp91phox (Figure 1—figure supplement 1C). Similarly, in p22phox-deficient NIH3T3 cells, co-transfection of human EROS with gp91phox enhanced the abundance of the immature 58 kDa form (Figure 1—figure supplement 1D).
 
@@ -91,21 +99,136 @@ We complemented this co-transfection work by examining PLB985 cells which expres
 
 These data emphasise the necessary role of EROS in stabilising the immature form of gp91phox in a human hematopoietic cell line, similar to that observed in our reductionist study.
 
-## EROS can associate with the gp91phox-p22phox heterodimer through direct interaction with gp91phox
+### EROS can associate with the gp91phox-p22phox heterodimer through direct interaction with gp91phox
 
 In our previous work, we showed that FLAG-tagged EROS could immunoprecipitate with gp91phox. Similarly, we found that endogenous gp91phox immunoprecipitated with endogenous EROS in PLB985 cell line (Figure 2—figure supplement 1A). We explored the details of the association between EROS, gp91phox, and p22phox using optimised co-immunoprecipitation conditions in HEK293-F cells expressing FLAG-tagged mouse EROS followed by size-exclusion chromatography (SEC) to further purify any complexes containing EROS. In cells transfected with EROS-FLAG, gp91phox-GFP, and p22phox, EROS co-immunoprecipitated with the partially glycosylated form of gp91phox (Figure 2A). SEC further showed that it could associate with the heme-bound form of gp91phox as evidenced by the co-elution with the heme absorbance peak (Figure 2B). Immunoblotting of SEC eluate detected p22phox, indicating that EROS forms a complex with both gp91phox and p22phox (Figure 2C). Notably, inhibiting heme synthesis using succinyl acetone blocked insertion of heme into gp91phox and prevented co-immunoprecipitation with p22phox, but did not prevent the association between EROS and gp91phox (Figure 2D and E).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/76387/elife-76387-fig2-v2.jpg)
+
+**Figure 2.:** (A–D) Immunoprecipitation (IP) and size-exclusion chromatography (SEC) analysis of protein complexes associated with EROS. (A) IP of EROS in HEK293-F cells expressing StrepII-FLAG-tagged EROS, gp91phox-GFP, and p22phox with Western blot for gp91phox. Lysates treated with peptide N-glycosidase F (PNGaseF) or endoglycosidase H (EndoH) served as reference; FG: fully glycosylated; PG: partially glycosylated; NG: non-glycosylated; Tot: total lysate; RT: run through; Elu: eluate. (B) SEC profile of EROS-IP eluate indicating protein (280 nm) and heme (414 nm) content. (C) Immunoblot analysis of gp91phox-GFP, EROS-FLAG, and endogenous p22phox in SEC fractions 9–14 and 15–18. (D) SEC profile of EROS eluate from HEK293-F cells expressing EROS-FLAG, gp91phox, and p22phox constructs and treated with heme biosynthesis inhibitor succinyl acetone (10 µg/ml). (E) IP of StrepII-FLAG-tagged EROS in HEK293-F treated with succinyl acetone. (F) Interaction between gp91phox and EROS assessed through luminescence production in live HEK293T cells expressing the indicated plasmids fused with the large (LgBIT) or small (SmBIT) fragment of the NanoLuc luciferase (see ‘Methods’). Halo Tag (HT)-SmBIT is the negative control; RLU: relative luminescence unit. (G) Yeast growth phenotypes obtained with the specified selective media using gp91phox bait plasmid and EROS prey plasmid. L: leucine; W: tryptophan; H: histidine; DBD: DNA binding domain of Gal4; AD: activation domain of Gal4 (see ‘Methods’). (H) EROS localisation in HEK293 cells transfected with EROS construct (top panel; 3D stack) or EROS and Lap2-GFP constructs (bottom panel; single plane), fixed, permeabilised, and labelled with anti-EROS and anti-calnexin antibodies. Scale bar = 5 μm. Data are representative of at least three independent experiments; error bars indicate SEM of triplicates. See also Figure 2—figure supplement 1 and Figure 2—source data 1–2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76387/elife-76387-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Interaction of endogenous gp91phox and EROS analysed by immunoprecipitation (IP) of gp91phox followed by immunoblot of EROS in PLB985 cells. Immunoblot with p22phox serves as positive control (dashed lines indicate different exposure time). (B) Luminescence production from the eight different combinations of gp91phox (CYBB) and EROS (CYBC1) tagged with the large (L: LgBiT) fragment or small (S: SmBiT) fragment of the luciferase compared to combination with the Halo-Tag SmBiT (HT-S) control vector in HEK293 cells. Red box indicates selected constructs pair. (C) Nanoluc Binary Technology (NanoBiT) assay in HEK293 cells using gp91phox (CYBB) and EROS (CYBC1) encoded in a single construct (L-CYBC1-CYBB-S; see ‘Methods’); L-CYBC1 co-transfected with HT-S is the negative control. (D) HEK293 transfected with the indicated constructs were treated (right panel) or not (left panel) with succinyl acetone prior to analysis of NOX2 (gp91phox) expression. (E–G) Effect of EROS on the abundance of NOX2 homologues NOX1 (E), NOX4 (F), and NOX5 (G) in HEK293 or HEK293-F transfected with the indicated tagged constructs and treated or not with succinyl acetone (10 µg/mL). (H) Yeast 2 Hybrid analysis of EROS direct binding to NOX proteins family. (I) Expression of nox1 and nox4 in the specified tissues taken from control and EROS knockout (KO) mice (n = 4 biological replicates). Data are representative of three independent experiments; error bars indicate SEM of triplicates. See also Figure 2—figure supplement 1—source data 1–5.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/76387/elife-76387-fig2-figsupp2-v2.jpg)
 
 These data suggested that while EROS increases abundance of and stabilises the immature form of gp91phox, it can remain associated with gp91phox as it binds heme and then p22phox. Thus, we asked whether EROS interacts directly with gp91phox. To address this, we utilised the Nanoluc Binary Technology (NanoBiT) complementation reporter system (Dixon et al., 2016). We fused EROS and gp91phox to large BiT (LgBiT) and small BiT (SmBiT) subunits of the luciferase at either the N- or C-terminus. Constructs were transfected into HEK293T to test various possible combinations (Figure 2—figure supplement 1B). The LgBiT-EROS and gp91phox-LgBiT constructs paired with the negative control HaloTag-SmBiT (HT-SmBiT) gave signal within the background. Two separate construct pairs, LgBiT-EROS with gp91phox-SmBiT and SmBiT-EROS with gp91phox-LgBiT, generated high-intensity luminescence within the first 30 min of monitoring live HEK293T cells (Figure 2F). The combination LgBiT-EROS and gp91phox-SmBiT encoded in a single vector (BiBiT vector, see ‘Methods’) where expression of both gp91phox and EROS is driven by the same promotor also generated high-intensity luminescence (Figure 2—figure supplement 1C), thereby demonstrating that gp91phox and EROS interact directly. This construct, where EROS and gp91phox are encoded by a single vector, provides a convenient platform to interrogate questions such as the effect of missense mutations in either protein on their binding or whether certain small molecules can disrupt the interaction.
 
 This is further supported by Yeast 2 Hybrid experiments. Using gp91phox bait plasmid and EROS prey plasmid (Table 1), we specifically observed colonies under the selective media without leucine, tryptophan, and histidine (see ‘Methods’), which confirmed the direct interaction between EROS protein and gp91phox (Figure 2G, Figure 2—figure supplement 2H). Confocal microscopy analysis showed that EROS is found in the ER and perinuclear compartment (Figure 2H), colocalising with calnexin and the lamina-associated polypeptide-2 (Lap2; a nuclear membrane marker). This result is consistent with previous literature reporting a nuclear membrane localisation of the uncharacterised protein C17ORF62, which corresponds to human EROS (Korfali et al., 2010). Given the continuity between the nuclear membrane and the ER, these data suggest that EROS acts very early in gp91phox biosynthesis.
 
+**Table 1.**
+ Yeast 2 Hybrid interaction matrix.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">Interaction matrix</th>
+      <th colspan="3">Selection medium</th>
+    </tr>
+    <tr>
+      <th>Type</th>
+      <th>Bait</th>
+      <th>Prey</th>
+      <th>DO-2</th>
+      <th>DO-3</th>
+      <th>DO-3 + 0.5 mM3-AT</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Positive control</td>
+      <td>SMAD</td>
+      <td>SMURF</td>
+      <td>+</td>
+      <td>+</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td>Negative control</td>
+      <td>pB66∅</td>
+      <td>AD-CYBC1</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Negative control</td>
+      <td>pB66∅</td>
+      <td>AD-CYBB</td>
+      <td>+</td>
+      <td>-</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td>Negative control</td>
+      <td>DBD-CYBC1</td>
+      <td>pP7∅</td>
+      <td>+</td>
+      <td>-</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td>Negative control</td>
+      <td>DBD-CYBB</td>
+      <td>pP7∅</td>
+      <td>+</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Interaction</td>
+      <td>DBD-CYBC1</td>
+      <td>AD-CYBB</td>
+      <td>+</td>
+      <td>-</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td>Interaction</td>
+      <td>DBD-CYBB</td>
+      <td>AD-CYBC1</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+/-</td>
+    </tr>
+    <tr>
+      <td>Interaction</td>
+      <td>DBD-CYBC1</td>
+      <td>AD-CYBC1</td>
+      <td>+</td>
+      <td>-</td>
+      <td>/</td>
+    </tr>
+    <tr>
+      <td>Interaction</td>
+      <td>DBD-CYBB</td>
+      <td>AD-CYBB</td>
+      <td>+</td>
+      <td>-</td>
+      <td>/</td>
+    </tr>
+  </tbody>
+</table>
+
+_Table resuming the different conditions tested during probing of interaction between EROS (CYBC1) and gp91phox (CYBB). pB66: Gal4 DNA-Binding Domain (DBD) vector, i.e. bait vector (DBD-bait); pB66ø: empty pB66 vector; pP7: Gal4 Activation Domain (AD) vector, i.e. prey vector (AD-prey). The same AD protein is expressed from both plasmids; pP7ø: empty pP7 vector; DBD-CYBC1: aa 1–187 of EROS cloned into pB66. Hybrigenics’ reference for this construct is hgx4414v2_pB66; DBD-CYBB: aa 1–570 of gp91phox cloned into pB66. Hybrigenics’ reference for this construct is hgx5346v1_pB66; AD-CYBC1: aa 1–187 of EROS cloned into pP7. Hybrigenics’ reference for this construct is hgx4414v2_pP7; AD-CYBB: aa 1–570 of gp91phox cloned into pP7. Hybrigenics’ reference for this construct is hgx5346v1_pP7; DO-2: selective media without tryptophan and leucine. DO-3: selective media without tryptophan, leucine and histidine. 3-AT: 3-aminotriazole (see ‘Methods’)._
+
 These findings support a model where EROS directly binds and stabilises the 58 kDa gp91phox protein, remaining associated with it through heme incorporation and p22phox binding. The role of EROS is thus distinct and temporally separated from that of p22phox. In the ER, p22phox interacts with gp91phox after heme has been incorporated and stabilises the partially glycosylated form (Figure 2—figure supplement 2). Notably, in the HEK293 co-transfection system, we found that human EROS increased expression of NOX1 and NOX4, two close homologues of gp91phox (NOX2). For NOX1, NOX2, and NOX4, this process was not impaired by succinyl acetone treatment (Figure 2—figure supplement 1D–F). EROS was not able to increase NOX5 expression, which is structurally different from NOX1, 2, 4 (Figure 2—figure supplement 1G). A further Yeast 2 Hybrid experiment, using a separate method, as described in Luck et al., 2020 demonstrated direct binding of EROS to NOX2-3-4 but not NOX5 or p22phox (Figure 2—figure supplement 2H). However, Western blot analysis of whole kidney and heart lysate from EROS knockout mice showed no difference in nox4 expression in EROS knockout relative to control (Figure 2—figure supplement 1I). Thus, EROS does not regulate nox4 physiologically in the kidney and heart. We also assayed colon from control and EROS knockout mice for nox1 expression using the highly specific antibody described in Diebold et al., 2019. We did not see a difference in expression between control and EROS knockout mice (Figure 2—figure supplement 1I). Non-specific bands were seen with EROS antibody (which is common in mouse lysates) but we could not detect EROS band which is consistent with its low expression level in these tissues.
 
 Nevertheless, our co-transfection and Yeast 2 Hybrid data may provide important clues to the motifs that EROS recognises in directly binding NOX proteins.
 
-## EROS-mediated regulation of gp91phox and the OST complex
+### EROS-mediated regulation of gp91phox and the OST complex
 
 The ability of EROS to act at the earliest stage of gp91phox biosynthesis prompted us to examine its biology in greater detail. To identify EROS-associated proteins, we performed four biological replicate FLAG affinity purifications from both RAW 264.7 macrophages overexpressing FLAG-tagged EROS and untagged control cells (Thomas et al., 2017b). We used the widely adopted statistical algorithm Significance Analysis of INTeractome (SAINTexpress; Teo et al., 2014) to discriminate specific EROS interactors from non-specific or background binders. SAINTexpress uses quantitative information from the mass spectrometry data, more specifically the abundance of each identified protein in the bait experiments compared to the control purifications, to score the probability of a true interaction. The SAINT probability (SP) score represents the confidence level of potential protein interactions, with 1 being the highest possible value. We applied a stringent threshold of SP > 0.9 (false discovery rate [FDR] < 1%) to derive a list of 59 high-confidence EROS interactors (Figure 3A). Network analysis using STRING interaction database showed that the majority of these proteins were connected between them through physical interactions (Figure 3B). Gene Ontology (GO) enrichment analysis revealed ‘N-linked glycosylation’ as one of the most enriched terms in our EROS-interacting protein set, and ‘positive regulation of glycoprotein biosynthetic process’ was also enriched. High-confidence EROS interactors OST 48 kDa subunit (DDOST/OST48), ribophorin-1 (RPN1), and ribophorin 2 (RPN2) form the non-catalytic subunit of the OST complex (Pfeffer et al., 2014). Staurosporine and temperature-sensitive 3A (STT3A), which forms the catalytic subunit of the OST complex (Ramírez et al., 2019), was specifically identified in three out of four EROS pull-down experiments and not in controls, although it did not make the strict SP score cut-off, suggesting that it might also be an EROS interactor. These data point to EROS being bound to gp91phox while N- glycosylation takes place.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/76387/elife-76387-fig3-v2.jpg)
+
+**Figure 3.:** (A) EROS-FLAG affinity purification-mass spectrometry (AP-MS). Graph showing abundance (average number of peptide spectrum matches across four biological replicates) of all proteins identified in the FLAG AP-MS experiments (blue and red dots) versus their interactor specificity (SAINT probability score: SP). The red line marks the SP score cut-off (0.9) for high-confidence interacting proteins. Proteins (dots) above this cut-off (59) are deemed high-confidence interactors. The bait (EROS) and interacting proteins relevant to this study are shown in red. (B) Protein interaction network of the 59 high-confidence EROS-interacting proteins (SP >0.9). The protein interactions were derived from STRING. Coloured nodes represent proteins annotated with enriched Gene Ontology (GO) terms relevant to this study. (C, D) EROS and gp91phox localization, following fixation and labelling with anti-EROS antibody, in HEK293 cells expressing STT3A-GFP and EROS constructs (C) or STT3A-GFP, gp91phox-mRFP and EROS untagged constructs (D); scale bars = 5 μm. Graphs represent the intensity profile of STT3A-GFP and EROS signal or STT3A-GFP, gp91phox-mRFP, and EROS signal measured across the nuclear membrane (indicated in red line). (E) Expression of gp91phox in HEK293 cells transfected with the indicated constructs and treated with OST inhibitor (NGI-1) at the indicated concentration. (F) Expression of gp91phox in control and STT3A-/- or STT3B-/- HEK293 cells transfected with the indicated vectors. (G) Expression of gp91phox in PLB985 cell line treated with NGI-1 at the indicated concentration. Data are representative of three independent experiments. See also Figure 3—figure supplement 1 and Figure 3—source data 1–3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76387/elife-76387-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) gp91phox expression in control, STT3A-/-, STT3B-/- HEK293 transfected with the indicated constructs and treated with 10 µM NGI-1 or 2 µg/mL tunicamycin. (B) Expression level of the ER-stress marker BiP in control and STT3A-/- or STT3B-/- HEK293 cells transfected with the indicated constructs. (C) Immunoblot control of STT3A expression in control and STT3A-/- or STT3B-/- HEK293 cells; Exp: experiment. (D) Expression level of BiP upon treatment of PLB985 cells with different concentrations of the glycosylation inhibitors NGI-1 or tunicamycin. Data are representative of at least two independent experiments. See also Figure 3—figure supplement 1—source data 1 and 2.
 
 Translation, synthesis, and N-glycosylation of proteins transferred into the ER involve the ER translocon-machinery comprising the SEC61 channel, the translocon-associated protein (TRAP) complex, and the OST complex responsible for the addition of N-linked oligosaccharides to nascent protein (Cherepanova et al., 2016). We hypothesised that EROS may cooperate with the OST complex to facilitate the stabilisation and maturation of gp91phox. HEK293 cells expressing STT3A-GFP and EROS-mRFP constructs exhibited an ER localisation of the two proteins with a specific rim around the nucleus (Figure 3C, right panel). Quantitation of the pixel intensity of STT3A-GFP and EROS-mRFP across the nuclear membrane gave an identical profile (Figure 3C, left panel). Similarly, co-expression of STT3A-GFP, gp91phox-mRFP, and EROS untagged constructs lead to an ER and perinuclear localisation of the three proteins (Figure 3D, right panel) with an identical pixel intensity profile upon quantitation (Figure 3D, left panel). These data demonstrate that a proportion of gp91phox can be found at the site of STT3A and EROS localisation. Inhibition of the OST complex with the selective compound NGI-1 (Puschnik et al., 2017; Rinis et al., 2018) impaired the ability of EROS to increase the immature 58 kDa form in a dose-dependent manner (Figure 3E) in HEK293 cells.
 
@@ -113,7 +236,7 @@ To complement these findings, we expressed the gp91phox construct alone or in co
 
 Overall, these findings are consistent with EROS being bound to gp91phox at the early stages of its biosynthesis while N-glycosylation takes place in ER. They also reveal a previously unappreciated involvement of the OST complex in gp91phox maturation process stressing a requirement of the catalytic subunit STT3A in the co-translational glycosylation of gp91phox.
 
-## EROS targets a specific group of proteins
+### EROS targets a specific group of proteins
 
 Having defined the role of EROS in gp91phox-p22phox heterodimer maturation, we leveraged new artificial intelligence tools to gain insights into its structure. The structure of the full-length EROS protein predicted by AlphaFold 2.0 (Jumper et al., 2021) is available through the AlphaFold Protein Structure Database (Tunyasuvunakool et al., 2021). The predicted structure shows a tripartite organisation of (i) a PH domain, (ii) an integral membrane segment, and (iii) a flexible C-terminal tail (Figure 4A). The EROS protein contains a Pleckstrin Homology (PH) domain composed of residues 1–20 (containing beta strands 1 and 2) and residues 62–166 (containing beta strands 3–8 and alpha helices H3 and H4). Inserted between beta strands 2 and 3 of the PH domain are two integral membrane alpha helices (helices H1 and H2) that are packed in an antiparallel orientation. The C-terminal tail of EROS composed of residues 167–187 has a structure with very low confidence <50 plDDT (predicted local Distance Difference Test) which is usually indicative of disordered regions of proteins. Multiple independent models built with AlphaFold (data not shown) show a wide variety of conformations for this tail confirming its lack of regular structure. If confirmed experimentally, the insertion of transmembrane helices within a PH domain appears to be a hitherto unobserved feature within known structures. A similar PH domain organisation is predicted to be found in the structure of the Phosphatidylinositol Glycan Anchor Biosynthesis class H (PIGH) protein (UniProtKB-Q5M9N4). This ER-associated transmembrane protein is part of the glycosylphosphatidylinositol-N-acetylglucosaminyltransferase (GPI-GnT) complex that catalyses the transfer of N-acetylglucosamine from UDP-N-acetylglucosamine to phosphatidylinositol and participates in the first step of GPI biosynthesis. GPI is an anchor for many membrane proteins, including key immune proteins such as the receptors CD16 and CD14 (Wegner et al., 2021), as well as the complement regulatory proteins CD55 and CD59 (Tremblay-Laganière et al., 2021). Therefore, we asked whether EROS might regulate the abundance of other proteins in different immune cell types.
 
@@ -127,17 +250,33 @@ Given that EROS seemed to affect proteins that localised to the plasma membrane,
 
 Thus, the biological effects of EROS deficiency are conserved across different immune cells and targets a very selective group of transmembrane proteins.
 
-## EROS regulates the abundance of the P2X7 ion channel in mouse and human cells
+### EROS regulates the abundance of the P2X7 ion channel in mouse and human cells
 
 The purinergic receptor P2X7 was consistently downregulated in all our mass spectrometry data (Thomas et al., 2017b, Figure 4) of EROS-deficient cells and was identified as a confident EROS interactor (Figure 3A). Proteins including Elmo1, Dock2, and mTOR (Figure 3B) are also confident EROS interactors, but their expression remained unchanged in EROS-deficient cells (Figure 4B and C). Thus, P2X7 seems the only confident EROS interactor (Figure 3A and B) whose expression is regulated by EROS similarly to gp91phox. Therefore, we focused on validating EROS’s role in controlling P2X7 abundance. We verified this by Western blot (Figure 5A) and flow cytometry of both BMDM (Figure 5—figure supplement 1A) and freshly isolated peritoneal macrophages (Figure 5—figure supplement 1B) in independent cohorts of mice. The lack of P2X7 in EROS-deficient cells was not a consequence of lack of expression of the NADPH oxidase as P2X7 protein was expressed normally in gp91phox-deficient cells (Figure 5B). Consistent with our mass spectrometry data (Figure 4B), P2X7 expression was extremely low on CD4+ T cells from EROS knockout mice, measured by Western blot and flow cytometry (Figure 5—figure supplement 1C and D). Control splenocytes had high levels of P2X7 expression in NKT cells andγδT cells with much reduced expression in EROS-deficient cells (Figure 5—figure supplement 1E and F). EROS deficiency also led to reduced P2X7 expression in B cells, NK cells, and CD8+ T cells (Figure 5—figure supplement 1G–I).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/76387/elife-76387-fig5-v2.jpg)
+
+**Figure 5.:** (A–D) P2X7 expression analysed by Western blotting of macrophages isolated from control, EROS knockout (KO) (A) and gp91phox KO mice (B), induced pluripotent stem cells (iPS)-derived macrophages control or EROS-deficient (C) and of control PLB985 cells and an EROS-deficient clone (D). (E, F) P2X7 expression in RAW264.7 cells overexpressing a FLAG-tagged EROS vector (E) and in HEK293 cells transiently expressing the specified constructs (F). (G, H) Interaction between EROS and P2X7 probed by immunoprecipitation (IP) of EROS from RAW264.7 EROS-FLAG macrophages followed by immunoblot (IB) for P2X7 (G) and by Nanoluc Binary Technology (NanoBIT) assay in live HEK293 cells expressing the LgBIT-fused EROS vector with a SmBIT-fused P2X7 vector (H). (I) P2X1 expression in macrophages isolated from EROS KO mice compared to control. n = 5 biological replicates. (J) P2X1 abundance upon co-transfection with EROS construct in HEK293 cells. Data are representative of hree independent experiments; error bars indicate SEM of triplicates. See also Figure 5—figure supplement 1 and Figure 5—source data 1–4.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76387/elife-76387-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) P2X7 measured by surface flow cytometry staining of bone marrow-derived macrophages (BMDM) from control and EROS KO mice. (B) P2X7 level in peritoneal macrophages from control and EROS KO mice expressed by mean fluorescence intensity (left panel) and percentage of positive cells (right panel). (C) Western blot of P2X7, EROS, and actin expression in control and EROS-deficient whole splenic CD4 T cells. (D–I) Percentage of cells that are P2X7 positive in the specified splenic cell subsets. (J) Expression of P2X7 in HEK293 cells measured by flow cytometry following co-transfection with EROS. (K) Expression of the P2X7 homologue P2X4 in control and EROS-deficient BMDM analysed by Western blotting with the indicated antibody. n = 3–5 biological replicates. p-Value was determined using Student’s t-test; error bars indicate SEM. See also Figure 5—figure supplement 1—source data 1 and 2.
 
 P2X7 was very lowly expressed in human iPS-derived macrophages (Figure 5C) and PLB-985 cells (Figure 5D) that carried a CRISPR-mediated deletion in EROS. RAW264.7 macrophages express P2X7 endogenously and lentiviral overexpression of EROS increased P2X7 expression relative to that observed with a control vector that expressed only GFP (Figure 5E). This effect was reproduced in HEK293 cells. Co-transfection of EROS and P2X7 resulted in much higher expression of P2X7 than when P2X7 was transfected alone (Figure 5F, Figure 5—figure supplement 1J). Therefore, not only does EROS deficiency led to a lack of P2X7 expression, but EROS upregulation increased P2X7 abundance. We hypothesised that the regulation of P2X7 abundance would have a similar mechanism to that for the gp91phox-p22phox heterodimer. Accordingly, P2X7 co-immunoprecipitated with EROS from RAW264.7 macrophages that expressed an N-terminal FLAG-tagged EROS (Figure 5G). Furthermore, NanoBiT analysis using a LgBiT-EROS and P2X7-SmBiT pair constructs in HEK293 resulted in luminescence production, showing that the interaction between P2X7 and EROS was direct (Figure 5H).
 
 Macrophages express other P2X family members including P2X4 and P2X1 (Sim et al., 2007). Western blot analysis of BMDM also demonstrated a lower expression of P2X1 in EROS-deficient cells (Figure 5I). As with P2X7, co-transfection of both P2X1 and EROS caused greater expression of P2X1 compared to when P2X1 was transfected alone (Figure 5J). Thus, EROS also regulates P2X1 protein abundance. This was not, however, the case for P2X4 (Figure 5—figure supplement 1K) which is mainly found in endolysosomal compartment in macrophages (Boumechache et al., 2009; Robinson and Murrell-Lagnado, 2013). These data emphasise the role of EROS in selectively controlling P2X7 expression through a direct recruitment analogous to that observed for gp91phox.
 
-## Loss of P2X7 impairs inflammasome activation and shedding of surface ligand
+### Loss of P2X7 impairs inflammasome activation and shedding of surface ligand
 
 P2X7 is a metabotropic ion channel and ligation by adenosine-5'-triphosphate (ATP) is associated with an inward flux of calcium and sodium an outward flux of potassium ions (Bartlett et al., 2014). We measured calcium influx following treatment of control and EROS-deficient BMDM by 2′(3′)-O-(4-Benzoylbenzoyl)ATP (bzATP), which has higher affinity than ATP for the P2X7 receptor. bzATP-driven calcium flux was highly attenuated in EROS-deficient macrophages compared to their control counterpart (Figure 6A). Ionomycin-driven responses were equivalent between the two strains, showing that there was no inherent problem with calcium mobilisation in EROS deficiency (Figure 6A). Ligation of P2X7 by ATP is a key mediator of IL-1β production via the NOD-, LRR-, and pyrin domain-containing protein 3 (NLRP3) inflammasome (deTorre-Minguela et al., 2016). Lipopolysaccharide (LPS) treatment alone of the peritoneal macrophages from control and EROS knockout mice resulted in the secretion of modest amounts of IL-1β. Robust induction of IL-1β secretion was observed upon treatment of the LPS-conditioned macrophages with ATP, and this was approximately fourfold lower in EROS-deficient cells (Figure 6B). The requirement of EROS for P2X7-mediated calcium uptake and IL-1β production was previously reported in an independent study (Ryoden et al., 2020). In our in vivo data following intraperitoneal LPS and ATP injection, peritoneal washings from EROS knockout mice showed much reduced IL-1β secretion compared with control (Figure 6C). Consequently, caspase-1 activation was highly attenuated in EROS-deficient macrophages following LPS/ATP treatment (Figure 6D) compared to control macrophages. LPS treatment, either in vitro or in vivo, resulted in comparable levels of TNF-α,IL-10, IL-6, and KC/GRO secretion between control and EROS-deficient macrophages and levels of these cytokines were not altered significantly by ATP addition (Figure 6—figure supplement 1A–F).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/76387/elife-76387-fig6-v2.jpg)
+
+**Figure 6.:** (A) Calcium release tested by Rhod-3-AM calcium imaging assay, in control or EROS-deficient bone marrow-derived macrophages (BMDM) in response to bzATP treatment (with ionomycin as positive control); data is representative of three independent experiments. (B) IL-1β secretion following lipopolysaccharide (LPS) priming of peritoneal macrophages from control or EROS knockout (KO) mice before and after treatment with ATP. (C) Secretion of IL-1β following in vivo administration of LPS and then ATP to control or EROS KO mice (n = 3–5 biological replicates). (D) Decreased caspase-1 activity, detected through luminescence production (see ‘Methods’), in peritoneal macrophages from EROS KO mice compared to control mice following LPS priming and ATP treatment (n = 11 biological replicates). (E, F) Representative flow cytometry histogram of surface ligand CD62L (E) and CD27 (F) expression in CD4+ T cells isolated from EROS KO or control mice and treated with ATP (n = 5 biological replicates). Percentage of CD4+ T cells positive for CD62L or CD27 for each condition is shown on the left panel graphs. (G) Reduced phosphatidyl serine exposure and cell death in EROS-deficient CD4+ T cells compared to control CD4+ T cells following ATP treatment as analysed by flow cytometry staining with propidium iodide and annexin V. Left panel graph shows the percentage of CD4+ T cells undergoing apoptosis in each condition (representative of n = 5 biological replicates). (H) Control or EROS KO mice were infected intranasally with 3.103 PFU of A/X31 influenza. Signs of illness were monitored daily (n = 17 control, 15 EROS knockout biological replicates). p-Value was determined using unpaired Student’s t-test; error bars indicate SEM. See also Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/76387/elife-76387-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A, B) In vitro secretion of the indicated cytokines pre- and post-ATP treatment of control and EROS-deficient peritoneal macrophages (n = 3 biological replicates). (C–F) In vivo secretion of the indicated cytokines in control and EROS knockout (KO) mice following ATP injection (n = 3–5 biological replicates). (G, H) Representative flow cytometry histogram of surface ligand CD62L (G) and CD27 (H) expression in CD4 T cells isolated from EROS KO or control mice and treated with NAD. Percentage of CD4 T cells positive for CD62L or CD27 for each condition is shown on the left panel graphs (n = 5 biological replicates). p-Value was determined using Student’s t-test; error bars indicate SEM.
 
 P2X7 plays several important roles in CD4+ T cell biology, including ADAM10/17-driven shedding of cell surface molecules such as CD62L and CD27 and externalisation of phosphatidylserine (PS), pore formation, and cell death (Bartlett et al., 2014; Scheuplein et al., 2009). Accordingly, flow cytometry analysis of CD62L level following ATP treatment showed reduced staining in control CD4+ T cells with 10% of cells positive for CD62L-APC compared to 70% of positive cells pre-ATP addition (Figure 6E). In EROS-deficient CD4+ T cells, this ATP-driven CD62L shedding is significantly impaired (Figure 6E). Similar results were obtained when examining CD27 shedding (Figure 6F). Nicotinamide adenine dinucleotide (NAD)-driven shedding of CD62L and CD27 was also significantly decreased in EROS-deficient CD4+ T cells albeit to a lesser extent than with ATP treatment (Figure 6—figure supplement 1G and H). PS exposure and cell death, assessed by annexin V and propidium iodide staining, were reduced in EROS-deficient CD4+ T cells following ATP treatment (Figure 6G) consistent with published findings (Ryoden et al., 2020).
 
@@ -165,69 +304,69 @@ In conclusion, we have elucidated the mechanism by which EROS controls the abund
 
 ## Methods
 
-## Animal use
+### Animal use
 
 EROS/Cybc1-/- mice (KOMP) and gp91phox/Cybb-/- mice were previously described (Thomas et al., 2017b). The care and use of all mice were in accordance with UK Home Office regulations (UK Animals Scientific Procedures Act 1986). The mice were maintained in specific pathogen-free conditions and matched by age and sex within experiments. For the mouse infection, groups of >15 isofluorane-anaesthetised mice of wild-type or EROS knockout genotype were intranasally inoculated with 3.103 PFU of A/X-31 influenza in 50 μL of sterile PBS. Their weight was recorded daily, and they were monitored for signs of illness. Mice exceeding 25% total weight loss were killed in accordance with UK Home Office guidelines.
 
-## DNA constructs
+### DNA constructs
 
 Untagged pEGBacMam-p22phox was amplified from OHu21427 (GenScript) by PCR and subcloned in pEGBacMam vector, a kind gift from Eric Gouaux (Oregon Health & Science University; Goehring et al., 2014) using In-Fusion seamless DNA cloning (Takara Bio). PCR was used to generate the pEGBacMam-Strep-FLAG-Strep-EROS construct by amplifying the human EROS/CYBC1 gene and contextually inserting the Strep-FLAG-Strep tag at its 5′. Human NOX1 was synthesised by Genewiz with a Strep II-FLAG tag at the N-terminus and cloned into the pEGBacMam vector using In-Fusion seamless DNA cloning (Takara Bio). The cDNAs encoding for human NOX5 (isoform b) were synthesised by GeneArt and subcloned into the pNGFP-EU vector, a kind gift from Eric Gouaux (Kawate and Gouaux, 2006).
 
-## Cell line culture
+### Cell line culture
 
 HEK293T, HEK293, control HEK293, STT3A-/- HEK293, STT3B-/- HEK293, COS-7, NIH/3T3, and RAW 264.7 EROS FLAG-tagged cells were maintained in DMEM medium (21969035, Thermo Fisher) containing 10% FBS (F7524, Sigma-Aldrich) and 100 U/mL of Penicillin-Streptomycin-Glutamine (10378016, Thermo Fisher). PLB985 (ACC 139, DSMZ), PLB-clone 14 (Thomas et al., 2018b), PLB- clone 20 (Thomas et al., 2018b), and PLB985 overexpressing EROS- GFP lentivirus construct were cultured in complete RPMI medium consisting of RPMI 1640 (31870025, Thermo Fisher), 10% FBS (F7524, Sigma-Aldrich), 2 mM GlutaMAX (35050061, Thermo Fisher), 1 mM sodium pyruvate (11360070, Thermo Fisher); 0.5 mg/mL Penicillin-Streptomycin-Glutamine (10378016, Thermo Fisher), and 20 mM HEPES (H3537, Sigma-Aldrich). HEK293-F cells were grown in suspension using FreeStyle medium (Invitrogen). All cell lines were tested and confirmed mycoplasma-free using the protocol for Myco-Alert Mycoplasma Detection Kit (LT07-218, Lonza).
 
-## Primary cell culture
+### Primary cell culture
 
 To generate BMDM, bone marrow cells harvested from femurs and tibias of 6–10-week-old control or EROS knockout mice were grown in complete RPMI medium supplemented with 100 ng/mL of murine M-CSF (PeproTech) for 3 days. At day 3, 10 mL of the same medium was added to the culture and differentiated macrophages were collected at day 7 for mass spectrometry or Western blot analysis. To isolate mouse CD4 lymphocytes, mouse spleens were homogenised by manual disruption and subjected to positive selection using CD4 L3T4 magnetic beads (Miltenyi Biotec) according to the manufacturer’s protocol. Cells were counted and resuspended at a concentration of 2 × 106 cells per mL in complete RPMI medium for subsequent analysis.
 
 Control or EROS-deficient human iPS were generated by CRISPR Cas 9-targeted deletion of 46 base pairs in exon 5 of the CYBC1 sequence (Yeung et al., 2017). Human macrophages were obtained from the differentiation of the human control or EROS-deficient iPS line following previously established method (van Wilgenburg et al., 2013; Thomas et al., 2017b). Macrophages were cultured in complete RPMI in the presence of human M-CSF (PeproTech) and were used at day 7 post-differentiation.
 
-## Transient expression
+### Transient expression
 
 Cells were transfected at 60–80% confluency with 1.6–2 µg of the following constructs: mouse gp91phox, mouse GFP-tagged gp91phox, mouse EROS, human EROS, human gp91phox, human mRFP-tagged gp91phox, human p22phox, human NOX4, mouse GFP-tagged P2X7, human P2X1, and human P2X4; using Lipofectamine RNAiMAX (Thermo Fisher) reagent for HEK293T, HEK293, and COS-7 cells and Lipofectamine 2000 (Thermo Fisher) reagent for NIH3T3 cells, following the manufacturer’s recommendation. HEK293-F were transfected with polyethylenimine (Polyscience Europe GmbH) at a ratio of 1:3 DNA:polyethylenimine (Tom et al., 2008) using 0.5 μg of the indicated constructs. Equivalent amounts of the corresponding empty vector were used as negative control. Cells were harvested and analysed 48–72 hr post-transfection.
 
-## Protein stability and drug treatment
+### Protein stability and drug treatment
 
 For cycloheximide experiment, HEK293T cells (transfected with a gp91phox construct alone or in combination with an EROS construct) and PLB985 cells (parental and expressing lentivirus EROS-GFP) were treated with 10 µg/mL of cycloheximide (Sigma) and harvested at 2 hr, 4 hr, 6 hr, and 8 hr post-treatment and subjected to Western blot. Non-treated cells were used as control. For heme synthesis inhibition, 10 µg/mL succinyl acetone (Merck) was added to the cell culture 4 hr after transfection. For glycosylation inhibition, NGI-1 compound (Tocris) or tunicamycin (Sigma) was added 3 hr post-transfection of HEK293 cells and left until harvesting (48–72 hr later).
 
-## Immunoprecipitation and SEC
+### Immunoprecipitation and SEC
 
 Strep tagged-EROS was co-transfected in HEK293-F cells with GFP-gp91phox and p22phox. Then, 48 hr post-transfection cells were harvested and cell membranes were prepared as described in Ceccon et al., 2017. Membranes were solubilised with 1% LMNG in 50 mM HEPES pH 7.5, 100 mM NaCl, 20% (v/v) glycerol, and passed through Streptactin-resin. Bound proteins were eluted from the column with 5 mM desthiobiotin in 50 mM HEPES pH 7.5, 100 mM NaCl, 5% (v/v) glycerol, and then subjected to SEC using a Superose 6 30/150 column.
 
 Lysates from 3.107 to 4.107 of cells were subjected to immunoprecipitation according to the manufacturer’s protocol for the Sure Beads Protein G Magnetic Beads (161-4023, Bio-Rad) using a rat anti-FLAG antibody (BioLegend), the mouse anti-gp91phox antibody (Santa Cruz), and an IgG2aK isotype control antibody (14-4321-82, Invitrogen). Eluates from FLAG, gp91phox, and IgG control beads were analysed by Western blotting. Where indicated, lysates were treated with PNGase F or EndoH (New England Biolabs) following the manufacturer’s recommendation.
 
-## Western blot analysis
+### Western blot analysis
 
 Cells were lysed at a concentration of 2.107 cells per mL in Pierce RIPA buffer (89900, Thermo Fisher) containing cOmplete Protease Inhibitor Cocktail (11697498001, Sigma Aldrich) and Halt Protease and Phosphatase inhibitor (78440, Thermo Fisher). Protein concentration was determined by BCA assay (23225, Thermo Fisher) according to the manufacturer’s instructions. 15–20 µg of protein, mixed with 4X NuPAGE sample buffer (NP0008, Thermo Fisher), were resolved on a NuPAGE 4–12% Bis-Tris gel (NP0336BOX; NP0335BOX; Thermo Fisher) under reducing conditions in MOPS buffer (mops-sds1000, Formedium), transferred to a nitrocellulose membrane (GE10600003, Sigma-Aldrich) in NuPAGE transfer buffer (NP00061; Thermo Fisher), and probed with one of the following primary antibodies: mouse anti-gp91phox (Santa Cruz Biotechnology), rabbit anti-C17ORF62/EROS (Atlas), rabbit anti-p22phox (Santa Cruz Biotechnology), mouse anti-p22phox (Santa Cruz Biotechnology), rabbit anti-P2X1 (Alomone), rabbit anti-P2X4 (Alomone), rabbit anti-P2X7 (Alomone; Atlas), rabbit anti-P2X7 (Atlas Antibodies), rabbit anti-vinculin (Cell Signalling Technology), rabbit anti-actin (Abcam), mouse anti-α-tubulin (Abcam), mouse anti-FLAG-M2 (Sigma), a homemade rat anti-NOX1 antibody given by Dr. Misaki Matsumoto, and a rabbit anti-NOX4 antibody from Prof. Ajay Shah (King’s College London, UK). Secondary antibodies used were anti-rabbit IgG-horseradish peroxidase (7074S, Cell Signaling Technology, dilution 1:10,000), anti-rat IgG-horseradish peroxidase (62-9520, Thermo Fisher, dilution 1:5000), and anti-mouse IgG-horseradish peroxidase (7076S, Cell Signaling Technology, dilution 1:10,000). Blots were developed using one of the following: ECL (32106, Thermo Fisher), SuperSignal West Pico PLUS (34577, Thermo Fisher), or SuperSignal West Femto (34095, Thermo Fisher) reagents, and chemiluminescence was recorded on a ChemiDoc Touch imager (Bio-Rad).
 
-## NanoBiT assay for protein–protein interaction
+### NanoBiT assay for protein–protein interaction
 
 The assay was performed following the manufacturer’s protocol for the MCS Starter System (N2014, Promega). The constructs encoding EROS/CYBC1 or gp91phox/CYBB fused to the reporter subunits were custom-made by Promega and consist of the following: SmBiT-CYBC1 (TK) vector (CS1603B224), CYBC1-SmBiT (TK) vector (CS1603B225), LgBiT-CYBC1 (TK) vector, (CS1603B226), CYBC1-LgBiT (TK) vector (CS1603B227), SmBiT-CYBB (TK) vector (CS1603B228), CYBB-SmBiT (TK) vector (CS1603B229), LgBiT-CYBB (TK) vector (CS1603B230), and CYBB-LgBiT (TK) vector (CS1603B231). Promega also generated a LgBiT-CYBC1-CYBB-SmBiT BiBiT vector (CS1603B292) and a LgBiT-CYBC1 Bi-ready Vector (CS1603B290), where fusions proteins are expressed from a single bidirectional CMV promoter. NanoBiT Bi-Directional Vector Systems allow controlling transfection efficiency of separate constructs. HEK293 were plated at a concentration of 2. 104 cells per well in a 96-well plate (3917, Corning). The following day, cells were transfected either with 55 ng/well of the indicated vector combinations (1:1 ratio of interacting pairs), the Bi-BiT ready Vectors, or with the NanoBIT-negative and -positive control provided (not shown in graphs) using FugeneHD reagent (E2311, Promega) at a lipid to DNA ratio of 3:1. Then, 20 hr post-transfection, growth medium was exchanged with OPTI-MEM (51985034, Thermo Fisher) containing 2% FBS (7534, Sigma Aldrich) and 20 mM HEPES (Thermo Fisher). The plate was left to equilibrate 10 min at room temperature before addition of the freshly reconstituted Nano-Glo Live cell substrate. Luminescence was subsequently measured on a FLUOstar Omega plate reader (BMG, Labtech) using the following settings: plate mode, number of cycles: 8; cycle interval: 900 s, gain adjustment 70% of the target (positive control), orbital averaging of the well: 3; orbital shaking 300 rpm for 15 s before the first measurement.
 
-## Yeast 2 Hybrid experiment
+### Yeast 2 Hybrid experiment
 
 gp91phox and EROS analysis was performed by Hybrigenics Services (91000 Evry, France). The coding sequences of human EROS/CYBC1 (NM_001033046.3) and human gp91phox/CYBB (NM_000397.3) were PCR-amplified and cloned in frame with the Gal4 DNA binding domain (DBD) into plasmid pB66 (Fromont-Racine et al., 1997) as a C-terminal fusion to Gal4 (Gal4-DBD-bait fusion) and with the Gal4 Activation Domain (AD) into plasmid pP7 (AD-prey fusion). The diploid yeast cells were obtained using a mating protocol with both yeast strains (Fromont-Racine et al., 1997), based on the HIS3 reporter gene (growth assay without histidine). As negative controls, the bait plasmids were tested in the presence of empty prey vector and the prey plasmids were tested with the empty bait vector. The interaction between SMAD and SMURF is used as positive control (Colland et al., 2004). Controls and interactions were tested in the form of streaks of three independent yeast clones for each control and interaction on DO-2 and DO-3 selective media. The DO-2 selective medium lacking tryptophan and leucine was used as a growth control and to verify the presence of the bait and prey plasmids. The DO-3 selective medium without tryptophan, leucine, and histidine selects the interaction between bait and prey. For specific interactions, the selection pressure was increased using 0.5 mM 3-aminotriazol (3-AT). Yeast 2 Hybrid analysis of NOX family of proteins was performed as previously reported (Luck et al., 2020).
 
-## Cytokine secretion
+### Cytokine secretion
 
 For in vivo experiments, EROS knockout mice were injected with 250 ng/mL of LPS (Invivogen). Then 2 hr later, 30 mM of ATP or PBS (for control) was injected intraperitoneally. Mice were culled 2 hr later, and the peritoneal cavity washed. Supernatants and serum were analysed for the presence of the cytokines indicated in the figures using multiplex kits from Meso Scale Discovery (MD, USA) and were conducted at the Core Biochemical Assay Laboratory (Cambridge University Hospital, UK).
 
-## Caspase-1 activity measurement
+### Caspase-1 activity measurement
 
 Peritoneal macrophages from control or EROS knockout mice were primed overnight with LPS (100 ng/mL, Invivogen) and treated for 2 hr with ATP (2.5 mM, Invivogen). Supernatants were harvested and subjected to Caspase-Glo 1 inflammasome assay following the manufacturer’s protocol (G9951, Promega). Luminescence from caspase-1 activity was detected with a FLUOstar Omega plate reader (BMG, Labtech).
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells expressing human pEGFP-N2-STT3A, human pmRFP-N2-EROS/C17ORF62, and human pEGFP-N2-Lap2β constructs (generously given by Prof. Eric Schirmer, University of Edinburgh, UK) were fixed 15 min in 4% paraformaldehyde (15710S, Electron Microscopy), permeabilised with 0.1% Triton X-100 (Sigma), and quenched in 100 mm glycine (Sigma) for 15 min. To reduce background, a blocking solution consisting of 5% goat serum (Sigma), 1% BSA (Sigma) in PBS (Sigma) was applied for 1 hr prior to staining with the indicated primary antibody diluted in PBS solution with 0.5% goat serum (Sigma), 0.5% BSA (Sigma) for 1h30 at room temperature. Following extensive washes, cells were stained for 45 min at room temperature with the appropriate secondary antibodies from Life Technologies: goat anti-mouse IgG–Alexa 488 conjugated (A11029), goat anti-rabbit IgG–Alexa 555 conjugated (A21429), and/or goat anti-rabbit IgG–Alexa 647 (A21245). Nucleus was labelled with Hoechst 33342 (H3570, Thermo Fisher) before coverslips were mounted in Prolong Diamond (P36961, Life Technologies).
 
 Images were acquired on a Zeiss LSM 780 system, equipped with the following lasers: diode 405 nm, argon multiline 458/488/514 nm, HeNe 543 nm, HeNe 594 nm, and HeNe 633 nm and using a Plan Apochromat ×63/1.4 oil objective. Image processing and analysis of the intensity profile were done on Fiji using just ImageJ software (version 1.53c) using the ‘plot profile’ command.
 
-## Calcium flux assay
+### Calcium flux assay
 
 Calcium imaging was performed on EROS-deficient and control cells using the Rhod-3-AM calcium imaging kit (Invitrogen) following the manufacturer’s protocol. Images were acquired with an LSM710 laser scanning META confocal microscope (Carl Zeiss) using a ×20 objective and maximum pinhole aperture of 600 μm. Two-line averages were performed for each frame with images taken every 4 s. Then, 20 μL of media was used as a negative control. At t = 140 s, 100 µM bzATP was added to the cells. Then, 100 ng/mL ionomycin was used as a positive control at the end of the experiment to confirm correct loading of cells. Image analysis of fluorescence intensity in response to addition of negative control, bzATP, and positive control across the time course was performed with the Volocity 3D Image Analysis Software, collecting data for all cells that did not spontaneously fluoresce and had an ionomycin response.
 
-## Flow cytometry
+### Flow cytometry
 
 Single-cell suspensions of spleens were prepared by mechanical disruption in FACS buffer (D-PBS with 2 mM EDTA, 0.5% FBS, and 0.09% sodium azide) with a 100 µm smart strainer (Miltenyi Biotec). Then, 10% of the spleen was subjected to red blood cell lysis (eBioscience), washed, and blocked with 1 μg of Mouse BD FC Block for 10 min at 4°C prior to addition of multicolour antibody cocktails. After incubation for 30 min, DAPI was added (0.2 µg/mL) and the samples washed prior to acquisition on a LSRFortessa (BD Biosciences) that was standardised using BD Cytometer Setup and Tracking beads and software. Compensation was determined using Ultracomp eBeads (eBioscience). Data acquisition was controlled with BD FACSDiva v8 software. The antibody cocktails included anti-mouse antibodies from Miltenyi Biotec: CD44-FITC (clone IM7.8.1), CD62L-PerCP-Vio700 (clone REA828), CD25-PE-Vio770 (clone 7D4), NK1.1-APC (clone PK136), TCRγδ-Vioblue (clone GL3), and CD4-Viogreen (clone GK1.5). Mouse anti-CD8α-APC-H7 (clone 53-6.7) and mouse TCRβ-BV711 (clone H57.597) were from BD Biosciences. Mouse anti-P2X7-PE (clone 1F11) and mouse anti-CD45-AF700 (clone 30-F11) were from BioLegend.
 
@@ -237,7 +376,7 @@ For shedding analysis, 100 µl of CD4 cells were treated with either 29 µM NAD 
 
 For cell death analysis, NAD or ATP-treated CD4 cells (as described above) were resuspended in annexin-binding buffer (Thermo Fisher) and incubated with 1 µL 100 µg/mL propidium iodide (PI; Thermo Fisher) and 1/50 annexin V antibody (Thermo Fisher) for 10 min at room temperature. Cells were washed and resuspended in 1× annexin-binding buffer for the acquisition. Samples were acquired on an LSR X20 flow cytometer (BD).
 
-## EROS affinity purification-mass spectrometry
+### EROS affinity purification-mass spectrometry
 
 EROS-FLAG affinity purifications were carried out as described previously (Thomas et al., 2017b). Bound proteins were eluted by incubating the beads with 200 µg/mL 3xFLAG peptide (Sigma-Aldrich) in IPP150 containing 0.02% NP-40. The eluates were concentrated in Vivaspin 500 PES centrifugal filters (Vivascience), reduced with 5 mM TCEP (Sigma-Aldrich), and alkylated with 10 mM iodoacetamide prior to sample fractionation by polyacrylamide gel electrophoresis with Novex NuPAGE Bis-Tris 4–12% gels (Life Technologies). Gels were stained with colloidal Coomassie (Sigma), and whole-gel lanes were excised into 12 bands and processed for mass spectrometry analysis as previously described (Pardo et al., 2010).
 
@@ -247,7 +386,7 @@ Raw files were processed with Proteome Discover 2.3 (Thermo Fisher Scientific). 
 
 For visualisation, the protein interaction network was generated with STRING (minimum required interaction score 0.4) using interactions derived from text mining, experiments, and databases. GO term enrichment analysis was performed with STRING.
 
-## Full proteome quantitative analysis by TMT-mass spectrometry
+### Full proteome quantitative analysis by TMT-mass spectrometry
 
 Cell pellets were lysed in 1% sodium deoxylate/10% isopropanol/50 mM NaCl/100 mM tetraethylammonium bromide (TEAB, Sigma) with Halt Protease and Phosphatase Inhibitor Cocktail (1×, Thermo Scientific). Lysates were sonicated and heated at 90°C for 5 min. Then, 100 µg of proteins per sample were reduced with TCEP, alkylated with iodoacetamide, and digested with 3 µg of trypsin (Pierce MS grade, Thermo) prior to labelling with TMT10plex according to the manufacturer’s instructions. Samples were pooled, acidified, and then centrifuged to remove precipitated deoxycholic acid. The supernatant was dried, resuspended in 0.1% NH4OH, and fractionated on an XBridge BEH C18 column (2.1 mm i.d. × 150 mm, Waters) with an initial 5 min loading then linear gradient from 5% CH3CN/0.1% NH4OH (pH 10)–35% CH3CN /0.1% NH4OH for 30 min, then to 80% CH3CN/0.1% NH4OH for 5 min and stayed for another 5 min. The flow rate was at 200 µL/min. Fractions were collected every 42 s from 7.8 min to 50 min and then concatenated to 28 fractions and dried.
 
@@ -255,7 +394,7 @@ Peptides were reconstituted in 0.1% formic acid and a 25% aliquot injected for o
 
 Raw files were processed with Proteome Discoverer 2.4 (Thermo Fisher) using Sequest HT. Spectra were searched against UniProt mouse database (April 2020) and cRAP contaminant database. Search parameters were trypsin with two maximum miss-cleavage sites, mass tolerances at 20 ppm for precursors and 0.5 Da for fragment ions, dynamic modifications of deamidated (N, Q), oxidation (M), and acetyl (protein N-terminus), static modifications of carbamidomethyl (C) and TMT6plex (peptide N-terminus and K). Peptides were validated by Percolator with q-value set at 0.01 (strict) and 0.05 (relaxed). The TMT10plex reporter ion quantifier included 20 ppm integration tolerance on the most confident centroid peak at the MS3 level. The co-isolation threshold was set at 100%. Only unique peptides, with average reported signal-to-noise ratio >3, were used for protein quantification, and the SPS mass matches threshold was set at 55%. Only master proteins were reported.
 
-## Plasma membrane profiling analysis by tandem mass tagging-mass spectrometry
+### Plasma membrane profiling analysis by tandem mass tagging-mass spectrometry
 
 Cell surface proteins were labelled essentially as described previously (Weekes et al., 2012). Samples were then resuspended in 21 µL 100 mM TEAB pH 8.5 prior to labelling with tandem mass tagging (TMT) reagent (Thermo Fisher) following the manufacturer’s protocol. After checking whether each sample was at least 98% TMT labelled, total reporter ion intensities were used to normalise the pooling of the remaining samples to a 1:1 ratio of total peptide content between samples. This final pool was brought up to a volume of 1 mL with 0.1% TFA. FA was added until the pH was <2. Samples were then cleaned up by SPE using a 50 mg tC18 SepPak cartridge (Waters). The cartridge was wetted with 1 mL 100% methanol followed by 1 mL ACN, equilibrated with 1 mL 0.1% TFA, and sample loaded slowly. Samples were passed twice over the cartridge. The cartridge was washed 3× with 1 mL 0.1% TFA before eluting sequentially with 250 µL 40% ACN, 70% ACN, and 80% ACN and dried in a vacuum centrifuge.
 
@@ -265,6 +404,6 @@ For mass spectrometry, analysis was conducted on an Orbitrap Fusion instrument o
 
 Data were processed with MASCOT (Matrix Science) and Proteome Discoverer, v2.2 (Thermo Fisher). Raw files were searched against the UniProt Mouse database, including common contaminants at a MS1 Tol of 10 ppm, MS2 Tol of 0.5 Da. Fixed modifications were TMT-labelled lysines and Peptide N-Termini and carbamidomethylated cysteines. Methionine oxidation was allowed as a variable modification. Mascot Percolator was used to control the PSM FDR, and an automated decoy database search was used to determine protein FDR. Proteins with either ‘high’ (FDR <0.01) or ‘medium’ (FDR <0.05) confidence were taken forward to further analysis. Proteins and their abundances were output to .csv, imported to R, and submitted to statistical analysis using LIMMA, a moderated t-test available through the Bioconductor package. LIMMA p-values were corrected for multiple hypothesis testing using the Benjamini–Hochberg method to generate an FDR (q-value).
 
-## Data availability
+### Data availability
 
 The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2019) partner repository with the dataset identifier ‘PXD024659.’ The plasma membrane profiling mass spectrometry data has the identifier ‘PXD025149’.

@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.46149.001 Systems vaccinology approaches have been used successfully to define early signatures of the vaccine-induced immune response. However, the possibility that transcriptomics can also identify a correlate or surrogate for vaccine inflammation has not been fully explored. We have compared four licensed vaccines with known safety profiles, as well as three agonists of Toll-like receptors (TLRs) with known inflammatory potential, to elucidate the transcriptomic profile of an acceptable response to vaccination versus that of an inflammatory reaction. In mice, we looked at the transcriptomic changes in muscle at the injection site, the lymph node that drained the muscle, and the peripheral blood mononuclear cells (PBMCs)isolated from the circulating blood from 4 hr after injection and over the next week. A detailed examination and comparative analysis of these transcriptomes revealed a set of novel biomarkers that are reflective of inflammation after vaccination. These biomarkers are readily measurable in the peripheral blood, providing useful surrogates of inflammation, and provide a way to select candidates with acceptable safety profiles.
+Systems vaccinology approaches have been used successfully to define early signatures of the vaccine-induced immune response. However, the possibility that transcriptomics can also identify a correlate or surrogate for vaccine inflammation has not been fully explored. We have compared four licensed vaccines with known safety profiles, as well as three agonists of Toll-like receptors (TLRs) with known inflammatory potential, to elucidate the transcriptomic profile of an acceptable response to vaccination versus that of an inflammatory reaction. In mice, we looked at the transcriptomic changes in muscle at the injection site, the lymph node that drained the muscle, and the peripheral blood mononuclear cells (PBMCs)isolated from the circulating blood from 4 hr after injection and over the next week. A detailed examination and comparative analysis of these transcriptomes revealed a set of novel biomarkers that are reflective of inflammation after vaccination. These biomarkers are readily measurable in the peripheral blood, providing useful surrogates of inflammation, and provide a way to select candidates with acceptable safety profiles.
 
 ## Introduction
 
@@ -35,9 +35,68 @@ It is likely that the activation and maturation of the fundamental responders wi
 
 In this study, we examined the molecular signatures generated in the blood, the draining lymph node and the injection site in the muscle of mice after the administration of a number of licensed vaccines, which set the benchmark for what is safe, and of a set of known agonists of Toll-like receptors (TLRs) or adjuvants, to set an upper boundary of inflammatory response (Haziot et al., 1998; Qureshi et al., 1999; Akira and Takeda, 2004; Fitzgerald et al., 2004; Matsumoto and Seya, 2008). The four licensed vaccines used in this study have a substantial history of safe use in humans, with large datasets supporting their safety and tolerability. They ranged from protein alone to vaccines that included adjuvants or a known component that have an acceptable degree of reactogenic potential (whole cell pertussis) (Frey et al., 2003; Tregnaghi et al., 2012; Mohanty et al., 2018; Van Den Ende et al., 2017). We also used the water-in-oil emulsion incomplete Freunds adjuvant (IFA) (Montanide ISA 51) and two TLR agonists (lipopolysaccharide (LPS) and Poly I:C) (Table 1). A set of indicators of vaccine-elicited inflammation in a small animal model will provide an early warning system that can be used to inform decisions on the potential tolerability and ultimately the utility of vaccines undergoing selection and development, and will provide additional tools to de-risk late-stage failure.
 
+**Table 1.**
+ Vaccines and inflammatory agents.The vaccines, TLR agonists, adjuvant and saline used in the present study are detailed. Vaccines were administered by injection of 1/10th the human dose in a 50 µL volume. TLR agonists, IFA and saline were also given in a single 50 µL volume. All injections were into the mouse hind leg quadriceps muscle.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Vaccine/TLR</th>
+      <th>Components</th>
+      <th>Abbreviation</th>
+      <th>Manufacturer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Pentavac SD</td>
+      <td>Diphtheria, tetanus, pertussis (whole cell), hepatitis B (rDNA) and haemophilus type b conjugate vaccine</td>
+      <td>Pentavac</td>
+      <td>Serum Institute India</td>
+    </tr>
+    <tr>
+      <td>Agrippal</td>
+      <td>Trivalent flu subunits – H3N2, H1N1 and influenza B</td>
+      <td>Tri-Flu</td>
+      <td>Seqirus</td>
+    </tr>
+    <tr>
+      <td>Fluad</td>
+      <td>Trivalent flu subunits – H3N2, H1N1 and influenza B + MF59</td>
+      <td>Tri-Flu + MF59</td>
+      <td>Seqirus</td>
+    </tr>
+    <tr>
+      <td>Engerix B</td>
+      <td>Recombinant hepatitis B sAg absorbed on alum</td>
+      <td></td>
+      <td>GlaxoSmithKline</td>
+    </tr>
+    <tr>
+      <td>IFA</td>
+      <td>Montanide ISA 51 VG</td>
+      <td></td>
+      <td>Seppic</td>
+    </tr>
+    <tr>
+      <td>LPS</td>
+      <td>LPS-EB Ultrapure</td>
+      <td></td>
+      <td>Invivogen</td>
+    </tr>
+    <tr>
+      <td>Poly I:C</td>
+      <td>Polyinosinic:polycytidylic acid</td>
+      <td></td>
+      <td>Sigma</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Results
 
-## Transcriptomic profiles in muscle, draining lymph nodes and PBMCs of mice treated with different licensed vaccines and TLR agonists
+### Transcriptomic profiles in muscle, draining lymph nodes and PBMCs of mice treated with different licensed vaccines and TLR agonists
 
 High-quality RNA samples, isolated from muscle tissue excised around the injection site, the draining medial iliac lymph nodes (MLN) and total peripheral blood mononuclear cells (PBMCs), were taken at 4, 8, 24, 48, 72, 168 hr after the vaccination or treatment with LPS, polyI:C or IFA (Table 1) and subjected to genome-wide transcriptome analysis. The unvaccinated mice, and mice receiving saline alone, were used as control groups.
 
@@ -47,17 +106,41 @@ Differentially expressed genes were defined as those with a significant (Benjami
 
 **Figure 1.:** The width of each violin is scaled to the number of genes that are differentially expressed at each given time point (BH-adjusted p-value <0.01). Differentially expressed genes were defined as those with a significant (BH-adjusted p-value <0.01) change in expression in a vaccinated group, when compared to the unvaccinated group and the saline group at a given time point. The upregulated or downregulated differentially expressed genes (Log2 fold-change) are presented for each tissue sampled and at each timepoint after injection of the vaccine or TLR agonist (n = 5 mice per timepoint). The vaccines or TLR agonists that were used are indicated on the right of the figure. IFA, incomplete Freunds adjuvant; LPS, lipopolysaccharide.
 
-## Distinctive transcriptional programs elicited after immunisation: gene-set enrichment and co-expression analysis
+### Distinctive transcriptional programs elicited after immunisation: gene-set enrichment and co-expression analysis
 
 Gene-set enrichment analysis was performed to identify the functional patterns of the biological processes that are induced by the different immunisations. Gene modules that are specific to the context of immune responses in blood tissue were previously defined by Li et al. (2014). These blood transcriptional modules were used to assess the signatures induced by the immunisations at the different time points. The blood transcriptional module enrichment profiles for every tissue are compared and presented in Figure 2 and Figure 2—figure supplements 1–3, where the gene sets with significant enrichment (lower than p<10−6) in each tissue are shown. In the injected muscle tissue, each vaccine or TLR agonist (with the exception of Agrippal) primarily elicited an upregulation of expression, as compared with the expresson levels seen after injection of the saline control, of genes related to inflammation, growth factors, innate immunity and cell damage (Figure 2—figure supplement 1). The induced transcriptomic response in the MLN was more refined, probably reflecting the effect of the migration of activated immune cells and local generalised stimulation by cyto/chemokine gradients. In these draining iliac lymph nodes, the injection of LPS, Pentavac SD and Poly I:C promoted an elevation of the interferon response genes as well as of cyto/chemokines (Figure 2—figure supplement 2). Finally, in the PBMCs, the transcriptomic analysis revealed that LPS, Pentavac SD and Poly I:C elicited an increase in gene transcripts that was associated with the interferon response and with activated monocytes and neutrophils (Figure 2—figure supplement 3).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/46149/elife-46149-fig2-v2.jpg)
+
+**Figure 2.:** Tissue data sets are presented as three coloured segments along the perimeter for the injected muscle (purple), the draining lymph nodes (green), and the blood compartment (red). An ordered list of blood transcriptional modules is labelled inside the outermost perimeter. Coloured bands adjacent to the module names correspond to the vaccines and Toll-like receptor (TLR) agonists (outside to inside bands): incomplete Freunds adjuvant (IFA) (grey), lipopolysaccharide (LPS) (blue), Pentavac SD (orange), Poly I:C (green), Fluad (red), Agrippal (purple), and Engerix (blue). For each band, there are six rings corresponding to time points 4, 8, 24, 48, 72, 168 hr (from outer to inner ring). The intensity of colours indicates the significance of the enrichment. Only modules with p-value for enrichment of <10−6 and an effect size (AUC) >0.8 are shown. DC, dendritic cell; ECM, extracellular matrix.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46149/elife-46149-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Enrichment scores were calculated for blood transcriptional modules defined by Li et al. (2014) using R package tmod (version 0.34) (US National Library of Medicine, 2004). The modules (in rows) are described by the titles followed by the original IDs. Each column corresponds to a different vaccine, TLR agonist or adjuvant and a different time point. The size of each miniature graphic shows how strong the enrichment is. The intensity of the colours indicates the p-value (stronger colours indicate lower p-values). The amount of colour shows the fraction of genes in each module that are significantly up- (red) or downregulated (blue). Only the modules with a p-value for the enrichment that is lower than 10−6 and an effect size of the gene-set enrichment (area under the curve (AUC)) greater than 0.5 are shown.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46149/elife-46149-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Enrichment scores were calculated for blood transcriptional modules defined by Li et al. (2014) using R package tmod (version 0.34) (US National Library of Medicine, 2004). The modules (in rows) are described by the titles followed by the original IDs. Each column corresponds to a different vaccine, TLR agonist or adjuvant and a different time point. The size of each miniature graphic shows how strong the enrichment is. The intensity of the colours indicates the p-value (stronger colours indicate lower p-value). The amount of colour shows the fraction of genes in each module that are significantly up- (red) or downregulated (blue). Only the modules with a p-value for the enrichment of <10−6 and an effect size of the gene set enrichment (AUC) >0.5 are shown.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/46149/elife-46149-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Enrichment scores were calculated for blood transcriptional modules defined by Li et al. (2014) using R package tmod (version 0.34) (US National Library of Medicine, 2004). The modules (in rows) are described by the titles followed by the original IDs. Each column corresponds to a different vaccine, TLR agonist or adjuvant and to a different time point. The size of each miniature graphics shows how strong the enrichment is. The intensity of the colours indicates the p-value (stronger colours lower p-value). The amount of colour shows the fraction of genes in each module that are significantly up- (red) or downregulated (blue). Only the modules with p-value for enrichment of <10−6 and an effect size of for the gene-set enrichment (AUC)of >0.5 are shown.
 
 To identify transcriptional patterns in an unbiased way, gene modules were constructed using Weighted Gene Co-expression Network Analysis (WGCNA) (Langfelder and Horvath, 2008). Briefly, WGCNA discovers interacting genes by computing and matching the correlation patterns in their expression profiles over the entire time period, extracting clusters (modules) of highly correlated genes, and thereby categorizing the association between the modules and the traits (different vaccines). WGCNA was applied to the gene expression datasets for muscle, lymph nodes, and blood separately. The co-expression analyses identified 40 modules in muscle with numbers of genes ranging from 27 to 4979 (Figure 3—figure supplement 1A), 47 modules in lymph nodes with numbers of genes ranging from 26 to 3456 (Figure 3—figure supplement 1B), and 30 modules in blood with numbers of genes ranging from 24 to 9789 (Figure 3—figure supplement 1C). WGCNA assigns colours to name each module. We also added ‘mu’ for muscle, ‘ln’ for lymph nodes, or ‘bl’ for blood to each module name to avoid modules having the same name across different tissue datasets (such as muscle module (muM1_turquoise), lymph node module (lnM1_turquoise) and blood module (blM1_turquoise)). Figure 3—figure supplement 1 shows the correlations (r >0.3 positive correlations are in blue, r <−0.3 negative correlations are in red) between the modules and the immunisations. In muscle, co-expression analysis was able to identify modules that correlated with each immunisation, strongly (both positive and negative) for Pentavac SD and to a lesser degree for LPS, Fluad and Agrippal. These modules were different to those that correlated with a saline-only injection. In lymph nodes and blood, the method again revealed that Pentavac SD, LPS, Fluad and Agrippal treatments were associated with a number of positively and negatively significantly correlated modules. The connections between these highly correlated genes modules, which reveal whether the same sets of genes are co-regulated in the different tissues, are shown in Figure 3—figure supplement 1D, which identifies consensus modules associated with Agrippal, LPS and Pentavac SD.
 
 To interpret the extracted modules functionally, we compared the WGCNA modules with the reference blood transcriptional modules. A hypergeometric test was performed to quantify the overlap between the two sets of modules and the significant enrichments are reported in a heatmap (Figure 3). In muscle, the muM1-turquiose module contains genes that overlap with most of the reference modules and is associated positively with LPS and Pentavac SD; the muM2-blue module overlaps with reference modules of extracellular matrix (ECM), migration and mitochondria and is negatively associated with LPS and Pentavac SD (Figure 3 and Figure 3—figure supplement 1A). In lymph nodes, the lnM6-red module exhibits significant overlap with the reference modules associated with the cell cycle, whereas the lnM8-pink module is associated with interferon or antiviral sensing and this module contains genes that are co-regulated in LPS and Poly I:C immunisation (Figure 3 and Figure 3—figure supplement 1B). In blood, the blM1-turquoise module overlaps with reference modules of T cell, whereas the M4-yellow module overlaps with reference modules of monocytes, neutrophils and inflammatory/TLR/chemokines. The M1-turquoise and M4-yellow modules contain genes of similar transcriptional patterns that are significantly associated with LPS and Pentavac SD immunisation (Figure 3 and Figure 3—figure supplement 1C).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/46149/elife-46149-fig3-v2.jpg)
+
+**Figure 3.:** Reference modules are the blood transcriptional modules defined by Li et al. (2014). These modules are shown in rows and are annotated within a higher functional group. Only WGCNA modules that showed a significant enrichment (hypergeometric test adjusted p-value<0.05) in any of the reference modules were included and shown in columns (hypergeometric test adjusted p-value<0.05). The legends on the figure report the strength of the p-value as a gradient of green. The colours at the top of the columnsindicate the tissue being analysed, whereas rows are colour-coded to indicate their higher annotation, as indicated in the key.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/46149/elife-46149-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Modules extracted by co-expression analyses in the injected muscle (A), draining lymph nodes (B), and blood (C) datasets are in rows labelled with a colour for each treatment and an identificaton number. The number of genes contained in the given module is also listed after the identification numbers. The heatmaps are colour coded by the Pearson correlation coefficient between the given module eigengene and the trait (r > 0.3 in blue and r < −0.3 in red, *p<0.01, **p<0.001, ***p<0.0001; see legend above heatmaps). (D) Consensus modules (square-shaped nodes) across the different tissue datasets are represented in a network diagram. Nodes are scaled to the module size and coloured by their strongest associated trait, with Engerix B in light blue, Agrippal in purple, Fluad in red, Pentavac SD in orange and LPS in dark blue. The thickness of the lines is scaled to the number of genes shared between the connected modules. Modules are connected if they share more than four genes, and connected modules that are not associated with a trait are not shown (absolute correlation coefficient r < 0.35).
+
 We developed an interactive web interface (available at https://vaccinebiomarkers.com) to facilitate data access and further discovery. This website allows users to (1) query genes and visualise their transcriptional profiles for each condition, (2) filter the differentially expressed genes by their functional groups and visualise the fold changes, and (3) analyse WGCNA modules by visualising the functional enrichments and listing the genes of each module.
 
-## Identification of biomarkers that reflect potential vaccine inflammation
+### Identification of biomarkers that reflect potential vaccine inflammation
 
 In order to reveal potential connections between the different tissues, the differentially expressed genes and each sampling time point, we created a circular heatmap diagram showing genes that were common between the three tissues (Figure 4). We first selected the top 100 genes that were differentially regulated in both the injected muscle tissue and the MLN, then we assessed whether any of these genes were also differentially regulated in the circulating PBMC's RNA expression profiles. This analysis identified a set of genes that coded for soluble or cell-associated proteins present in each of the compartments that were differentially regulated by immunisation. We focused on soluble markers to simplify the sampling and quantification of potential blood biomarkers. The outside rim of the circular heatmap indicates the common individual genes, and the strength of the correlation for each tissue and each immunisation treatment is colour- and sized-coded. (Black indicates positive correlation, red indicates negative correlation; the thickness of the lines corresponds to the magnitude of the correlation coefficient.) Many of these genes encoded chemokines and/or cytokines but the analysis also identified proteins that collectively have been termed acute-phase proteins. These proteins are typically present at high levels during inflammatory events, and they include serum amyloid A-3 (SAA3) and pentraxin 3 (PTX3). Murine SAA3 is an ortholog of the human SAA3 pseudogene and is involved in the murine response to bacterial endotoxins, often acting in combination with TLR2 (Ather and Poynter, 2018; He et al., 2009), whereas the long pentraxin PTX3 facilitates pathogen recognition by macrophages and dendritic cells (Diniz et al., 2004). SAA3 was strongly induced in muscle tissue after most of the immunisations (the exception being Agrippal, whereas in the draining lymph node and the PBMC transcriptome, only LPS, Pentavac SD and poly I:C enhanced RNA expression levels. LPS caused the greatest alteration in gene expression profiles of cyto/chemokine genes in the blood, enhancing CCL2, CCL3, CCL4, CXCL1, CXCL2, CXCL3, CXCL9, CXCL10, CXCL13 and TNF-alpha expression but not affecting CXCL5. These differences were seen mainly at the very early time points of 4 and 8 hr and were not maintained at 24 hr post intramuscular immunisation with the LPS. Notably, in the draining lymph node, the TNF-alpha levels are not elevated. In the muscle, there is strong general upregulation of IL-6 and elevated expression of IL-6 also occurs in the lymph node after LPS and Pentavac SD immunisation, whereas there is a generalised downregulation of IL-6 in the PBMCs. The licensed vaccines, surprisingly including the Pentavac SD which contained the whole cell pertussis, induced minor perturbations of the RNA expression levels in the PBMC. Poly I:C strongly upregulated CCL2 and CXCL10 and mildly enhanced CXCL1, CXCL9 and CXCL13 in the blood, and interestingly this pattern was slightly different from the expression in the draining lymph node where CXCL9, CXCL10 and CCL2 were enhanced while CXCL1 and CXCL13 were unaffected (Figure 4).
 
@@ -65,11 +148,19 @@ In order to reveal potential connections between the different tissues, the diff
 
 **Figure 4.:** The three tissues analysed are organised as in Figure 2 and are indicated on the outer part of the circular map. Each outer tile has a different colour to denote which injection they received: Fluad (red), Agrippal (purple), Poly I:C (green), Pentavac SD (yellow), LPS (blue), IFA (grey) and Engerix B (light blue). Each cell in the inner circles shows the fold change for each given time point, treatment, and tissue (dark blue/blue for upregulation and dark red/red for downregulation, with the density of the colour corresponding to the magnitude of fold change). The lines connecting the different subsets of tiles represent the correlation between tissues for each gene-treatment combination with black lines showing a positive correlation and red lines a negative correlation. The thickness of the lines indicates the magnitude of the correlation.
 
-## Identification of biomarkers in the serum
+### Identification of biomarkers in the serum
 
 We next examined whether a marker identified from the transcriptomics could be measured in the blood. We measured a panel of cyto/chemokines by Luminex and SAA3 by ELISA in sera harvested from mice vaccinated with saline control, the two licensed vaccines (Pentavac SD and Fluad) and the two potent TLR agonists (LPS and Poly I:C). We selected these treatments on the basis of the range of responses observed from the transcriptomic analysis. Pentavac SD, LPS and Poly I:C had signatures of cytokine responses in the MLN, Fluad much less so, but such responses were still detectable, suggesting that these were good candidates for enabling cyto/chemokine detection in the peripheral blood sera (Figures 2 and 4). Serum was collected from five mice per itreatment and per analysis time point. LPS was clearly inflammatory at early time points after injection, eliciting strong expression of CCL2, CCL3, CCL4, CCL5, CXCL1, CXCL2 and CXCL10.Following treatment with LPS, TNF-α and IL-6 proteins were significantly above baseline and saline control levels at 4 and 8 hr, with a rapid return to much lower expression levels by 24 hr and to basal levels by 48–72 hr (Figure 5A). Levels of CXCL10 were still significantly above those in controls at 24 hr after LPS injection, having reached a peak at 4 hr after treatment which then declined to almost half by 8 hr but was still significantly (p<0.05) above controls and baseline at 503 pg/mL by 24 hr post immunisation. In addition, polyI:C elicited measurably elevated levels of a number of these cyto/chemokines, specifically CXCL10 and CCL5 at 4 hr (CXCL10 – 6,263 pg/mL; CCL5 – 8,727 pg/mL, p<0.0001) and 8 hr (CXCL10 – 1,462 pg/mL; CCL5 – 3,642 pg/mL, p<0.0001) and CCL2 and CCL4 at 4 hr (CCL2 – 3,944 pg/mL; CCL4 – 1,249 pg/mL, p<0.0001). Strikingly, all treatments apart from the saline control elicited very high levels of expression of the SAA3 protein, which were at least 1000-fold greater than those of any other measured analyte, and moreover the kinetics of SAA3 expression were also of a longer duration than those for expression of the cyto/chemokines (Figure 5A). The TLR4 agonist LPS elicited the highest peak SAA3 response of 492.8 µg/mL at 24 hr (p<0.0001), which reduced considerably by 48 hr (99.74 µg/mL, p<0.0001), reaching a level of 5.96 µg/mL by 72 hr and baseline levels after 168 hr. Although the Pentavac SD vaccination did not achieve the same peak level of SAA3 expression as the LPS injection, the levels of SAA3 continued to increase until 48 hr post-immunisation with Pentavac SD (332.6 µg/mL, p<0.0001) and were maintained until 72 hr (245.6 µg/mL, p<0.0001), remaining significantly above baseline levels at the final analysis time point of 168 hr (104.8 µg/mL, p<0.0001). A comparison of the total accumulation of SAA3 after the LPS or Pentavac SD vaccinations revealed that the AUC for Pentavac SD was more than twice that of LPS, being 31,455 µg.hr/mL and 14,572 µg.hr/mL, respectively. The TLR3 agonist Poly I:C invoked an SAA3 expression profile in which the molecule reached 33.11 µg/mL at 4 hr before falling back to 15.04 µg/mL at 8 hr and rising again to 33.54 µg/mL at 24 hr, although these differences did not reach statistical significance when compared to the saline control. Interestingly, treatment with Fluad, which contains the oil-in-water emulsion adjuvant MF59, did not generate a peak in the expression level of SAA3 in the sera until 24 hr post-injection (81.82 µg/mL, p=0.0014), suggesting that a delayed mechanism of action is induced by this emulsion. Figure 5B shows the fold changes over saline alone of measured proteins that are induced by different vaccines at the different time points, giving an indication of the degree and duration of expression over the background levels. In the case of the LPS immunisation, this analysis showed that an ‘expression set’ of cyto/chemokines and SAA3 can be defined to include CCL2, CCL3, CCL4, CCL5, CXCL1, CXCL2, CXCL10, IL-6 and TNF-α but not SAA3 at 4 hr, then the same set of cyto/chemokines but including SAA3 at 8 hr. These comparisons of the differential transcriptomic expression in the blood with the actual levels of expressed proteins measurable in the animal sera revealed that many of the proteins closely matched. The strong expression of CCL2, CCL3, CCL4, CXCL2, CXCL10, and TNF-α proteins that was elicited by LPS immunisation was in line with the measured transcriptomic changes at early time points (4, 8 and 24 hr). By contrast, there is a downregulation in transcript levels for CCL5, but CCL5 protein levels are elevated at 4, 8, and 24 hr. The sustained upregulation of SAA3 following the Pentavac SD vaccination was reflected in both transcript and protein levels.
 
-## Correlation between transcripts and circulating cytokines
+![Figure 5.](https://cdn.elifesciences.org/articles/46149/elife-46149-fig5-v2.jpg)
+
+**Figure 5.:** Serum chemokines and cytokines were measured using a Luminex bead 9-plex assay, and serum amyloid A3 was measured by quantitative ELISA. (A) Each panel shows the longitudinal expression of an individual chemokine/cytokine in murine peripheral blood sera at times 0, 4, 8, 24, 48, 72 and 168 hr post-injection with the indicated vaccine (n = 5 mice per time point). Chemokine/cytokine levels induced by different vaccines that were in excess of those induced by saline alone were analysed using two-way ANOVA followed by Dunnett’s multiple comparisons test, **p<0.01, ***p<0.001, ****p<0.0001. (B) Volcano plot representing the differential expression of all measured proteins in the sera induced by different vaccines shown as fold-change in the levels induced by saline alone at different time points. Data points corresponding to responses with adjusted p-value <0.01 are labelled with the protein name, and colour coded according to the time point.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46149/elife-46149-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Differential expression of transcripts and proteins induced by the LPS immunisation are shown. Each panel shows the fold changes (transcripts – green line; proteins – orange line) of individual chemokine/cytokines in murine peripheral blood sera at 0, 4, 8, 24, 48, 72 and 168 hr after the LPS immunisation. Fold changes in proteins levels were calculated at each time point by dividing the mean values of proteins in the LPS group by the mean values of those in the saline-alone group. Fold changes of transcripts and proteins were correlated: for CCL2, r = 0.79, p-value = 0.0614; for CCL3, r = 0.70, p-value = 0.1297; for CCL4, r = 0.73, p-value = 0.1038; for CCL5, r = −0.86, p-value = 0.0243; for CXCL1, r = 0.83, p-value = 0.0486; for CXCL2, r = 0.76, p-value = 0.0967); for CXCL10, r = 0.89, p-value=0.0216; TNF-α, r = 0.67, p-value=0.1367; for IL-6, r = 0.69, p-value = 0.1685; and for SAA3, r = 0.92, p-value = 0.0089.
+
+### Correlation between transcripts and circulating cytokines
 
 We next quantified the correlations between blood transcript and protein fold changes across all time points for all measured cyto/chemokines in the LPS immunisation group (Figure 5—figure supplement 1). CXCL1, CXCL10, and SAA3 showed strong correlations that were statistically significant (r >0.6, p-value <0.05). Although LPS generated the highest levels of cytokine expression, the transcriptomic data also revealed different patterns of differential gene expression for the other treatments. To reveal any potential relationship between the differential gene expression in the different tissues and the protein signal that is detected in the serum, we compared the differential gene expression for each vaccine, from each tissue, over the whole period of study and correlated these gene expression levels to the serum protein expression levels at the same time points (Figure 6). Each vaccine or TLR agonist had different correlation profiles. The correlation between gene expression in the lymph node and blood and the blood serum proteins was most pronounced after LPS injection, with only the differential expression of CCL5 in the blood and the level of CCL5 serum protein being significantly negatively correlated. The muscle tissue had only one significant correlation with blood SAA3 levels in the LPS condition. By contrast, after Poly I:C injection, we identified a significant correlation between IL-6 transcript levels in the muscle tissue and IL-6 protein in the blood, although a number of other blood proteins correlated well but not significantly with the differential expression of their respective genes. Interestingly, the Fluad vaccine produced the highest number of significant correlations between gene expression in the muscle and the proteins present in the blood, indicating that most of the biomarker proteins present in the sera after Fluad vaccination may be derived from the injected muscle tissue. The Pentavac SD vaccine induced no significant correlations between the differentially expressed genes in the blood and the proteins in the blood, correlations were primarily noted between changes in gene expression levels in the MLN, and partially from the injected muscle, and serum protein levels.
 
@@ -99,29 +190,130 @@ Our current study builds upon previous publications by comparing responses to 
 
 ## Materials and methods
 
-## Ethics statement
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background) M. musculus, Female)</td>
+      <td>CB6F1/Crl; Strain Code 176</td>
+      <td>Charles River</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAprotect animal blood tubes</td>
+      <td>Qiagen</td>
+      <td>Cat number: 76544</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>miRNeasy mini kit</td>
+      <td>Qiagen</td>
+      <td>Cat number: 217004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAzol lysis reagent</td>
+      <td>Qiagen</td>
+      <td>Cat number: 79306</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>9-plex Luminex</td>
+      <td>Bio-Techne</td>
+      <td>Cat number: LXSAMS-09</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pentavac SD</td>
+      <td>Serum Institute India</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Agrippal</td>
+      <td>Seqirus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluad</td>
+      <td>Seqirus</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Engerix B</td>
+      <td>GlaxoSmithKline</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IFA - Montanide ISA 51 VG</td>
+      <td>Seppic</td>
+      <td>NSC#737063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LPS-EB Ultrapure</td>
+      <td>Invivogen</td>
+      <td>Cat number: tlrl-3pelps</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly I:C</td>
+      <td>Sigma</td>
+      <td>Cat number: P1530</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethics statement
 
 The animal studies were approved by the Ethical Review Board of Imperial College London, where the experiments were carried out and work was performed in strict compliance with project and personal animal experimentation licences granted by the UK government in accordance with the Animals in Scientific Procedures Act (1986) – PPL 70–7457 Protocol #1. Animals received minimal handling and their physical condition was monitored at least twice daily. All procedures were performed under isoflurane anaesthesia when appropriate, and all efforts were made to minimize suffering. There was a detailed protocol in place, as required by the humane endpoints described in the animal licence, for early euthanasia in the event of onset of illness or significant deterioration in condition. At the end of the experiment, all animals were culled using a schedule one method and death confirmed before necropsy. Food and water were supplied ad libitum.
 
-## Animals, immunisation and sampling
+### Animals, immunisation and sampling
 
 Female CB6F1 mice of 6–8 weeks of age were purchased from Charles River. Animals received a single injection in their right hind leg quadricep muscle and were then culled at specific intervals after the immunisation, either 4, 8, 24, 48, 72 or 168 hr. A control group that did not receive an immunisation was culled and tissues harvested. A further control group received a single saline injection in the right hind leg quadriceps muscle and was then culled at the same intervals as the animals that received an active formulation. When each animal was culled, the injected muscle site and the iliac lymph nodes that drain the hind leg quadriceps muscles were harvested and flash frozen in liquid nitrogen. Peripheral blood, sampled from the mouse tail vein immediately before humane euthanasia, was collected (100 µL) in RNAprotect animal blood tubes (Qiagen, UK). Groups of mice (n = 5 per group per time point) received 1/10th of the human dose in 50 µL of one of the following licensed vaccines: Pentavac SD (diphtheria, tetanus, pertussis (whole cell), hepatitis B (rDNA) and Haemophilus influenzae type b conjugate vaccine) (Serum Institute India, Pune, India); Agrippal (trivalent flu subunits – H3N2, H1N1 and influenza B) (Novartis Vaccines, now Seqirus, UK); Fluad (trivalent flu subunits – H3N2, H1N1 and influenza B + MF59 (oil-in-water emulsion)) (Novartis Vaccines, now Sequirus, UK); Engerix B (recombinant hepatitis B surface antigen absorbed on aluminium) (GSK, Rixensart, Belgium), or either Poly I:C (Sigma, UK – P0913: 50 µL of a 1 mg/mL solution), LPS (Invivogen, UK – LPS-EB Ultrapure: 50 µL of a 0.5 mg/mL solution), IFA (Seppic, France – Montanide ISA 51 VG: 50 µL of a 1:1 mixture of IFA and Saline), or saline alone (Sigma, UK – 50 µL). The 1/10th of a human dose received by the mice was based on the ‘mouse equivalent dose’. This estimation takes into account various measures and differences between animal species including the body surface area and metabolic rate and is an FDA accepted method for dose conversion (Sharma and McNeill, 2009).
 
-## Total RNA preparation
+### Total RNA preparation
 
-## Tissue samples
+#### Tissue samples
 
 Small pieces of tissue (3 mm x 3 mm x 3 mm) were harvested and flash frozen in liquid nitrogen. Total RNA isolation (including microRNA (miRNA) species) was performed using the miRNeasy mini kit (Qiagen, UK), as described in the standard protocol for purification of miRNA and total RNA from tissues and cells. Briefly, 700 µL QIAzol lysis reagent was added to the tissue sample which was then disrupted and homogenized using a tissue homogenizer (tissueruptor) probe. Homogenate was incubated at room temperature (RT) (15–25°C) for 5 min before addition of 140 µL chloroform and vigorous shaking for 15 s. After incubation at RT for 2–3 min, the homogenate was centrifuged for 15 min at 12,000 x g at 4°C. The upper aqueous phase was then transferred to a new collection tube (350 µL). 1.5 volumes (525 µL) of 100% ethanol were added and mixed thoroughly by pipetting then transferred into a RNeasy Mini column, the liquid being pulled through the column by vacuum manifold. The RNA on the column was washed using 700 µL Buffer RWT, followed by 2 washes using 500 µL Buffer RPE. The RNeasy Mini column was then placed into a new 2 mL collection tube and centrifuged at full speed for 1 min to dry the membrane completely. The RNeasy Mini column was subsequently transferred to a new 1.5 mL collection tube and 30 µL RNase-free water was directly pipetted onto the column membrane, and centrifuged for 1 min at ≥8000 x g to elute the purified RNA, which was stored at −80°C until required for microarray hybridisation.
 
-## Blood samples
+#### Blood samples
 
 100 µL of peripheral blood harvested from the mouse tail was collected directly into an RNAprotect Animal Blood Tube and the tubes incubated at RT (15–25°C) for 2 hr. The blood tubes were then flash frozen in liquid nitrogen for storage. RNA isolation was performed as described in the kit protocol for purification of Total RNA, including miRNA, from RNAprotect stabilized animal blood tubes (100 µL). Briefly, completely thawed tubes were first centrifuged for 3 min at 5000 x g, then the supernatant removed by careful pipetting. The pellet was resuspended in 1 mL of RNAase-free water and transferred to a clean RNAse-free 2 mL tube. The pellet was completely resuspended in the water, centrifuged for 3 min at 5000 x g and the supernatant carefully removed by pipetting. The pellet was then dissolved in 240 µL Buffer RSB before addition of 200 µL Buffer RBT and 20 µL proteinase K enzyme solution. The tube was vortexed for 5 s then incubated at 55°C for 10 min in a shaking incubator at 1,200 rpm. After incubation, the sample was added into a Qiashredder spin column and centrifuged for 3 min at 10,000 x g. The supernatant was then transferred to a RNase-free tube and 690 µL 100% ethanol added, before being mixed thoroughly by pipetting. Then, the sample was transferred into a RNeasy Mini column, and pulled through the column by vacuum manifold. The sample on the column was washed using 350 µL Buffer RWT, followed by the addition of 80 µL DNase I solution (in Buffer RDD) and incubation at RT for 15 min. After DNase I treatment, the column was washed with a further 350 µL of RWT followed by two washes using 500 µL Buffer RPE and a final wash with 500 µL 80% RNase-free ethanol. The RNeasy Mini column was then placed into a new 2 mL collection tube and centrifuged at full speed for 1 min to dry the membrane completely. The column was then transferred into a new 1.5 mL collection tube and 30 µL RNase-free REB buffer was directly pipetted onto the column membrane, then centrifuged for 1 min at ≥8000 x g to elute the purified RNA, which was stored at −80°C until required for microarray hybridisation.
 
-## Whole-genome microarray analysis
+### Whole-genome microarray analysis
 
 Gene expression data were generated from high-quality RNA samples on an Agilent microarray platform (Agilent Technologies). RNA was labelled with a Low Input Quick Amp Labeling Kit (Agilent Technologies) according to the manufacturer’s instructions. Quantity and labelling efficiency were verified before hybridization to whole-genome 8 × 60 k mouse expression arrays (Agilent design ID 028005), and scanned at 5 μm using an Agilent scanner. Image analysis and data extraction were performed with Agilent's Feature Extraction software (version 11.5) to generate the raw expression data. The complete set of microarray data was deposited in the NCBI’s Gene Expression Omnibus and is accessible through GEO accession number GSE120661.
 
-## Transcriptomic analysis
+### Transcriptomic analysis
 
 Data analysis was performed in R version 3.3.2 (2016-10-31). Microarray data were pre-processed, normalised and analysed for differential expression using R package limma v3.28.14 (Ritchie et al., 2015). The raw data were first background corrected using the normexp method. Background corrected signals were quantile normalised between arrays. Linear models were fitted using the limma lmFit function. All treatments and time points were part of a single model and separate models were fitted for each tissue. There was an unvaccinated group for each treatment. Contrasts were designed to compare each of the different stimulus groups to unvaccinated animals and also to the saline control at each time point, using the interaction term (treatment.time point – treatment.unvaccinated) – (saline.time point – saline.unvaccinated). Differential expression was evaluated using the moderated t-statistics and the p-values were adjusted using Benjamini and Hochberg’s (BH) method (Benjamini and Hochberg, 1995). The violin plots visualizing the strength of the transcriptomic responses were created using ggplot2 geom_violin, in which areas are scaled proportionally to the number of differentially expressed genes (adj. p-value<0.01).
 
@@ -129,6 +321,6 @@ Genes that are orthologs in mice and humans were assigned using NCBI HomoloGene 
 
 Weighted gene correlation network analysis (R package WGCNA version 1.51) was used to find clusters of highly correlated genes among the stimulus groups (Langfelder and Horvath, 2008). Signed co-expression networks were constructed using the Pearson correlation as the similarity measure and the minimum module size was set to 20. The first principal component of the expression matrix (module eigengene) of each constructed module is calculated using the moduleEigengenes function of the WGCNA package. Sample trait is provided as a binary indicator variable of the immunisation status. The Pearson correlations of the module eigengenes with traits were calculated to determine the association between several modules of co-expressed genes and the administered vaccines. We used BTMs to reveal the functional roles of the constructed WGCNA modules. A hypergeometric test was used to test the enrichment of co-expressed genes with genes specific to the BTMs defined by Li et al. (2014). To find modules that are shared between muscle, lymph nodes, and blood networks, a consensus module analysis was carried out. Modules are connected on the basis of the number of genes they have in common and are visualized in a network diagram using the force-directed algorithm in R package igraph v1.0.1.
 
-## Luminex and ELISA analysis of mouse sera
+### Luminex and ELISA analysis of mouse sera
 
 Groups of mice (n = 5 per group per time point) received 1/10th of the human dose in 50 µL of one of the licensed vaccines (Table 1). We analysed the sera of a subset of the conditions that were used for transcriptomics. These were selected on the basis of the differential gene expression analyses that had identified significant differences in the profiles and that also had the potential for these differences to be observed in the peripheral blood. Sera from immunised mice (time points: 4, 8, 24, 48, 72 and 168 hr) and baseline sera obtained from naïve mice (n = 5) at time 0 hr were analysed using either a 9-plex Luminex or a Mouse Serum Amyloid A ELISA (Bio-Techne, Abingdon, UK), according to the manufacturer’s protocols. Briefly, the Luminex filter-bottomed microplate was first pre-wet with 100 µL wash buffer then placed on the vacuum manifold to remove the buffer through the filter. 50 µL of the microparticle bead cocktail was added to each well followed by 50 µL of the diluted standard or sample and the mixture was incubated for 2 hr at RT on a horizontal orbital shaker set at 500 rpm. Wells were washed 3x by the addition of 100 µL wash buffer, with each wash being drawn through the filter membrane using the vacuum manifold. 50 µL of diluted biotin antibody cocktail (specific for each analyte) was added to each well and the microparticle beads were incubated with the biotinylated antibody mixture for 1 hr at RT on the orbital shaker at 500 rpm. The plates were washed again using 3 × 100 µL wash buffer per well, and then 50 µL of diluted streptavidin-PE was added to each well and the microparticle beads were incubated at RT for 30 min at 500 rpm on the orbital shaker. After a final 3 × 100 µL per well wash buffer on the vacuum manifold, the beads were resuspended with 100 µL wash buffer per well by incubation on the orbital shaker at 500 rpm for 2 min and immediately analysed on a Bio-Plex 200 System (Bio-Rad Laboratories Ltd, UK). Serum samples were diluted 1:2 with the calibrator diluent provided within the Luminex kit (LXSAMS-09: CCL2/MCP-1/JE; CCL3/MIP-1 alpha; CCL4/MIP-1 beta; CCL5/RANTES; CXCL1/GRO alpha/KC; CXCL10/IP-10; CXCL2/Gro beta/MIP-2/CINC-3; IL-6; TNF-alpha). Experimental samples were quantified against the standard for each cyto/chemokine. Briefly, for SAA3, experimental samples were quantified by ELISA against the SAA3 standard on a pre-coated plate containing anti-mouse SAA3 capture antibody and a paired anti-mouse SAA3 detection antibody in a standard sandwich ELISA. Fold change of cyto/chemokine levels were calculated by dividing the mean values of proteins in immunisation groups by the mean values of proteins in the saline -alone group. The significance of the changes induced by different vaccines over those produced by saline alone were analysed using two-way ANOVA followed by Dunnett’s multiple comparisons test. Correlations between the fold changes of transcripts and proteins were calculated using the Pearson correlation coefficient.

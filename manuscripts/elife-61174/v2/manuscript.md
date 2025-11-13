@@ -24,7 +24,7 @@
 
 ## Abstract
 
-Osteocalcin (OCN) is an osteoblast-derived hormone with pleiotropic physiological functions. Like many peptide hormones, OCN is subjected to post-translational modifications (PTMs) which control its activity. Here, we uncover O -glycosylation as a novel PTM present on mouse OCN and occurring on a single serine (S8) independently of its carboxylation and endoproteolysis, two other PTMs regulating this hormone. We also show that O -glycosylation increases OCN half-life in plasma ex vivo and in the circulation in vivo. Remarkably, in human OCN (hOCN), the residue corresponding to S8 is a tyrosine (Y12), which is not O- glycosylated. Yet, the Y12S mutation is sufficient to O -glycosylate hOCN and to increase its half-life in plasma compared to wildtype hOCN. These findings reveal an important species difference in OCN regulation, which may explain why serum concentrations of OCN are higher in mouse than in human.
+Osteocalcin (OCN) is an osteoblast-derived hormone with pleiotropic physiological functions. Like many peptide hormones, OCN is subjected to post-translational modifications (PTMs) which control its activity. Here, we uncover O-glycosylation as a novel PTM present on mouse OCN and occurring on a single serine (S8) independently of its carboxylation and endoproteolysis, two other PTMs regulating this hormone. We also show that O-glycosylation increases OCN half-life in plasma ex vivo and in the circulation in vivo. Remarkably, in human OCN (hOCN), the residue corresponding to S8 is a tyrosine (Y12), which is not O-glycosylated. Yet, the Y12S mutation is sufficient to O-glycosylate hOCN and to increase its half-life in plasma compared to wildtype hOCN. These findings reveal an important species difference in OCN regulation, which may explain why serum concentrations of OCN are higher in mouse than in human.
 
 ## Introduction
 
@@ -36,51 +36,331 @@ The role of OCN in the regulation of glucose metabolism appears to be conserved 
 
 Yet, some important species divergences exist between mice and humans with regard to OCN biology. First, only 30 out of the 46 amino acids (i.e. 65%) composing mature mouse OCN are conserved in human OCN. This is in striking contrast with other peptide hormones involved in the control of energy metabolism such as leptin and insulin whose respective sequence display about 85% conservation between mouse and human. Second, the circulating concentrations of OCN, even though decreasing with age in both species, are five to ten times higher in mice than in humans throughout life span [(Mera et al., 2016a) see also Table 1]. Based on these observations, we hypothesized that the post-translational regulation of OCN may be different between these two species, resulting in increased mouse OCN half-life in circulation.
 
+**Table 1.**
+ OCN serum levels in mouse and human at different ages.Table 1—source data 1.Numerical data from Table 1.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">OCN serum levels (ng/ml)</th>
+    </tr>
+    <tr>
+      <th>Age (mice/human)</th>
+      <th>Mouse [mean ± SD (n)]</th>
+      <th>Human* [mean ± SD (n)]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2 weeks/ 1 year old</td>
+      <td>1369.7 ± 146.7 (8)</td>
+      <td>62.9 ± 8.1 (43)</td>
+    </tr>
+    <tr>
+      <td>4 weeks/ 11–13 years old</td>
+      <td>617.2 ± 192.5 (5)</td>
+      <td>74.1 ± 8.9 (41)</td>
+    </tr>
+    <tr>
+      <td>13 weeks/ 25–29 years old</td>
+      <td>252.2 ± 8.0 (4)</td>
+      <td>21.0 ± 6.3 (49)</td>
+    </tr>
+    <tr>
+      <td>60 weeks/ 50–54 years old</td>
+      <td>50.0 ± 7.2 (4)</td>
+      <td>13.5 ± 6.3 (127)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*(Hannemann et al., 2013; Cioffi et al., 1997)._
+
 Here, using proteomics and cell-based assays, we identified O-glycosylation as a novel PTM presents in mouse OCN, and showed that this modification increases mouse OCN half-life in plasma ex vivo and in vivo. In contrast, mature human OCN does not contain the O-glycosylation site found in the mouse protein and consequently is not normally glycosylated. Yet, a single point mutation in human OCN is sufficient to elicit its O-glycosylation and to increase its half-life in plasma.
 
 ## Results
 
-## Mouse OCN is O-glycosylated on a single serine residue
+### Mouse OCN is O-glycosylated on a single serine residue
 
 To better document the circulating level of OCN in humans and mice, we measured the serum concentration of OCN in wildtype mice at different ages (2 to 60 weeks) and compared the values with the reported serum level of OCN at corresponding life periods in humans (Table 1). This analysis reveals that serum OCN level is five- to ten-time lower in humans than in mice throughout life. One potential explanation for this observation could be that a mouse specific PTM increases mouse OCN half-life in circulation. Since OCN Gla residues and pro-OCN cleavage site are conserved between mouse and human, we searched for additional PTMs present in mouse OCN and characterized their impact on OCN half-life.
 
 To that end, OCN was immunoprecipitated from the secretion medium of primary mouse osteoblast cultures or from mouse bone protein extracts using specific polyclonal goat antibodies recognizing OCN C-terminus sequence (Ferron et al., 2010b). OCN was then characterized without proteolysis by reverse-phase HPLC followed by mass spectrometry (MS) and tandem mass spectrometry (MS/MS). This ‘top-down’ analysis revealed that the most abundant OCN forms have a monoisotopic mass ranging from 5767.6961 to 6441.7636 Da which exceeds the predicted mass of 5243.45 Da corresponding to the fully carboxylated (3 × Gla) OCN (Table 2 and Table 3). According to the various monoisotopic masses observed, we predict that this difference could be mainly explained by the presence of a single O-linked glycan adduct composed of one N-acetylgalactosamine (GalNAc), one galactose (Gal) and one or two N-acetylneuraminic acid (NANA). In addition to O-glycosylation, minor additional monoisotopic mass change corresponding to oxidation, unidentified modifications and/or adduct ions were also detected. Uncarboxylated OCN does not accumulate in bone ECM (Ferron et al., 2015) and accordingly, only fully or partially carboxylated OCN was detected in bone extracts, both of which were found to be O-glycosylated. In contrast, significant amount of ucOCN could be detected in osteoblast culture supernatants, most likely due to the low level of vitamin K present in fetal bovine serum. Importantly, in osteoblast supernatant the O-linked glycan adduct could be detected on both carboxylated and uncarboxylated OCN (Table 2).
 
+**Table 2.**
+ The monoisotopic mass and relative abundance of the different OCN forms detected in the supernatant of differentiated osteoblasts.Table 2—source data 1.Raw proteomic data from Table 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Monoisotopic mass range (Da)</th>
+      <th>Relative abundance (%)</th>
+      <th>Most probable modification</th>
+      <th>Most probable oligosaccharide</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>O-glycosylated OCN</td>
+      <td>83.88</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5767.6961</td>
+      <td>4.80</td>
+      <td>Glycosylation</td>
+      <td>HexNAc, Hex, NANA</td>
+    </tr>
+    <tr>
+      <td>5783.6801</td>
+      <td>0.25</td>
+      <td>Glycosylation + oxidation</td>
+      <td>HexNAc, Hex, NANA</td>
+    </tr>
+    <tr>
+      <td>5855.6676</td>
+      <td>4.60</td>
+      <td>Glycosylation + 2x Gla</td>
+      <td>HexNAc, Hex, NANA</td>
+    </tr>
+    <tr>
+      <td>5899.7161</td>
+      <td>3.16</td>
+      <td>Glycosylation + 3x Gla</td>
+      <td>HexNAc, Hex, NANA</td>
+    </tr>
+    <tr>
+      <td>5915.6386–5968.5796</td>
+      <td>5.51</td>
+      <td>Glycosylation + 3x Gla + oxidation + additional unidentified modifications or adduct ions</td>
+      <td>HexNAc, Hex, NANA</td>
+    </tr>
+    <tr>
+      <td>6058.7916</td>
+      <td>24.48</td>
+      <td>Glycosylation</td>
+      <td>HexNAc, Hex, 2x NANA</td>
+    </tr>
+    <tr>
+      <td>6074.7766–6096.7409</td>
+      <td>2.48</td>
+      <td>Glycosylation + oxidation</td>
+      <td>HexNAc, Hex, 2x NANA</td>
+    </tr>
+    <tr>
+      <td>6102.7681</td>
+      <td>7.89</td>
+      <td>Glycosylation + 1x Gla</td>
+      <td>HexNAc, Hex, 2x NANA</td>
+    </tr>
+    <tr>
+      <td>6146.7609</td>
+      <td>23.97</td>
+      <td>Glycosylation + 2x Gla</td>
+      <td>HexNAc, Hex, 2x NANA</td>
+    </tr>
+    <tr>
+      <td>6190.8061–6214.7278</td>
+      <td>6.72</td>
+      <td>Glycosylation + 3x Gla + additional unidentified modifications or adduct ions</td>
+      <td>HexNAc, Hex, 2x NANA</td>
+    </tr>
+    <tr>
+      <td>Non O-glycosylated OCN</td>
+      <td>16.12</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5127.4676</td>
+      <td>3.00</td>
+      <td>Oxidation</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>5171.4301</td>
+      <td>1.85</td>
+      <td>1x Gla + oxidation</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>5199.4446</td>
+      <td>2.08</td>
+      <td>2x Gla</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>5215.4296</td>
+      <td>8.50</td>
+      <td>2x Gla + oxidation</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>5259.4204</td>
+      <td>0.66</td>
+      <td>3x Gla + oxidation</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+_Gla: Gamma-carboxyglutamic acid residue; HexNAc: N-acetylhexosamine; Hex: Hexose; NANA: N-acetylneuraminic acid; 1x: one time; 2x: two times; 3x: three times; NA: not applicable._
+
+**Table 3.**
+ The monoisotopic mass and relative abundance of the different OCN forms detected in mouse bone homogenates.Table 3—source data 1.Raw proteomic data from Table 3.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Monoisotopic mass range</th>
+      <th>Relative abundance (%)</th>
+      <th>Most probable modification</th>
+      <th>Most probable oligosaccharide</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>O-glycosylated OCN</td>
+      <td>99.07</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5855.6676</td>
+      <td>0.54</td>
+      <td>Glycosylation + 2x Gla</td>
+      <td>HexNAc, Hex, NANA</td>
+    </tr>
+    <tr>
+      <td>5899.7161</td>
+      <td>7.43</td>
+      <td>Glycosylation + 3x Gla</td>
+      <td>HexNAc, Hex, NANA</td>
+    </tr>
+    <tr>
+      <td>5915.6386–6135.6796</td>
+      <td>36.07</td>
+      <td>Glycosylation + 3x Gla + oxidation + additional unidentified modifications or adduct ions</td>
+      <td>HexNAc, Hex, NANA</td>
+    </tr>
+    <tr>
+      <td>6146.7609–6162.7991</td>
+      <td>5.42</td>
+      <td>Glycosylation + 2x Gla + additional unidentified modifications</td>
+      <td>HexNAc, Hex, 2xNANA</td>
+    </tr>
+    <tr>
+      <td>6190.8061</td>
+      <td>4.49</td>
+      <td>Glycosylation + 3x Gla</td>
+      <td>HexNAc, Hex, 2xNANA</td>
+    </tr>
+    <tr>
+      <td>6206.8016–6441.7636</td>
+      <td>45.12</td>
+      <td>Glycosylation + 3x Gla + oxidation + additional unidentified modifications or adduct ions</td>
+      <td>HexNAc, Hex, 2xNANA</td>
+    </tr>
+    <tr>
+      <td>Non O-glycosylated OCN</td>
+      <td>0.93</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>5259.4204</td>
+      <td>0.93</td>
+      <td>3x Gla + oxidation</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+_Gla: Gamma-carboxyglutamic acid residue; HexNAc: N-acetylhexosamine; Hex: Hexose; NANA: N-acetylneuraminic acid; 1x: one time; 2x: two times; 3x: three times; NA: not applicable._
+
 Using multiple approaches, we next established that mouse OCN is indeed subjected to O-glycosylation in cells and in vivo. First, in SDS-PAGE analyses the apparent molecular weight of OCN is reduced when expressed in HEK293 cells where the O-glycosylation capacity has been engineered to truncate O-glycans by knockout of C1GALT1C1 which encodes COSMC (core 1β3-Gal-T-specific molecular chaperone), a private chaperone required for the elongation of O-glycans (Figure 1A; Steentoft et al., 2011). Second, when expressed in CHO-ldlD cells, which have defective UDP-Gal/UDP-GalNAc 4-epimerase and are hence deficient in O-glycosylation (Kingsley et al., 1986), OCN apparent molecular weight is also reduced compared to the same protein expressed in the parental CHO cell line. Supplementation of Gal and GalNAc in the culture medium rescued the O-glycosylation defect of CHO-ldlD and restored the molecular shift in the secreted OCN (Figure 1B). Third, treatment of primary osteoblasts with benzyl-N-acetyl-α-galactosaminide (GalNAc-bn), an inhibitor of N-acetylgalactosaminyltransferases (GalNAc-Ts), the enzymes responsible for initiating O-glycosylation, decreases the apparent molecular weight of OCN secreted in the medium (Figure 1C). Finally, treatment of mouse bone extracts with neuraminidase and O-glycosidase, which removes respectively NANA, and core 1 and core 3 O-linked disaccharides, also decreases the apparent molecular weight of endogenous OCN (Figure 1D).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/61174/elife-61174-fig1-v2.jpg)
 
-**Figure 1.:** (A) Western blot analysis on the secretion medium (SM) of HEK293 (WT) and HEK293 lacking COSMC (C1GALT1C1-/-) transfected with mouse OCN-V5. (B) Western blot analysis on the SM of CHO and CHO-ldlD cells transfected with mouse OCN-V5. CHO-ldlD cells were treated or not with 0.1 mM Galactose (Gal) and/or 1 mM N-acetylgalactosamine (GalNAc). (C) Effect of N-acetylgalactosaminyltransferase (GalNAc-Ts) inhibition on mouse OCN O-glycosylation in osteoblasts. Western blot analysis on the SM and cell extract (CE) of primary osteoblasts transfected with mouse OCN-V5 and treated or not with 2 mM of GalNAc-bn. (D) OCN deglycosylation assay. Bone extracts of C57BL/6J mice were treated or not with O-glycosidase and neuraminidase for 4 hr at 37°C and analyzed by western blot using anti-C-termimal OCN antibody (Cterm OCN). β-actin was used as a loading control. Rec OCN: Non-glycosylated OCN produced in bacteria. (E) Structure of mouse pre-pro-OCN and amino acid sequence of mature mouse OCN. The serine (S) and threonine (S) residues are in red. (F) Western blot analysis on the SM and cell extract (CE) of primary osteoblasts transfected with OCN-V5 containing or not the indicated mutations. In the 6XST→6XA mutant, all six serine and threonine residues from OCN were mutated to alanine. (G) Western blot analysis on the SM and cell extract (CE) of primary osteoblasts transfected with OCN-V5 containing or not the indicated mutations. (H) Annotated HCD MS/MS spectrum of a modified form of OCN (HexNAc-Hex-NANA + 3 Gla + S-S) pulled down from the bone homogenate of C57BL/6J mice. The precursor m/z value is 1180.95003 (M+5H)+5 and mass accuracy with the annotated OCN modified form is 4.6 ppm. In C, F and G, GFP co-expressed from OCN-V5 expression vector, was used as a loading control.Figure 1—source data 1.Figure 1A.Figure 1—source data 2.Figure 1B.Figure 1—source data 3.Figure 1C.Figure 1—source data 4.Figure 1D.Figure 1—source data 5.Figure 1F.Figure 1—source data 6.Figure 1G.Figure 1—source data 7.Figure 1H.
+**Figure 1.:** (A) Western blot analysis on the secretion medium (SM) of HEK293 (WT) and HEK293 lacking COSMC (C1GALT1C1-/-) transfected with mouse OCN-V5. (B) Western blot analysis on the SM of CHO and CHO-ldlD cells transfected with mouse OCN-V5. CHO-ldlD cells were treated or not with 0.1 mM Galactose (Gal) and/or 1 mM N-acetylgalactosamine (GalNAc). (C) Effect of N-acetylgalactosaminyltransferase (GalNAc-Ts) inhibition on mouse OCN O-glycosylation in osteoblasts. Western blot analysis on the SM and cell extract (CE) of primary osteoblasts transfected with mouse OCN-V5 and treated or not with 2 mM of GalNAc-bn. (D) OCN deglycosylation assay. Bone extracts of C57BL/6J mice were treated or not with O-glycosidase and neuraminidase for 4 hr at 37°C and analyzed by western blot using anti-C-termimal OCN antibody (Cterm OCN). β-actin was used as a loading control. Rec OCN: Non-glycosylated OCN produced in bacteria. (E) Structure of mouse pre-pro-OCN and amino acid sequence of mature mouse OCN. The serine (S) and threonine (S) residues are in red. (F) Western blot analysis on the SM and cell extract (CE) of primary osteoblasts transfected with OCN-V5 containing or not the indicated mutations. In the 6XST→6XA mutant, all six serine and threonine residues from OCN were mutated to alanine. (G) Western blot analysis on the SM and cell extract (CE) of primary osteoblasts transfected with OCN-V5 containing or not the indicated mutations. (H) Annotated HCD MS/MS spectrum of a modified form of OCN (HexNAc-Hex-NANA + 3 Gla + S-S) pulled down from the bone homogenate of C57BL/6J mice. The precursor m/z value is 1180.95003 (M+5H)+5 and mass accuracy with the annotated OCN modified form is 4.6 ppm. In C, F and G, GFP co-expressed from OCN-V5 expression vector, was used as a loading control.
 
 We next aimed at identifying which OCN residue(s) is(are) O-glycosylated. Mature mouse OCN contains three serine (S) and three threonine (T) residues (Figure 1E), the two main types of amino acids on which O-glycosylation occurs (Steentoft et al., 2013). As expected, mutating all serine and threonine residues into alanine abrogates OCN glycosylation in primary mouse osteoblasts as assessed by SDS-PAGE (Figure 1F). Further mutagenesis studies revealed that the O-glycosylation site resides within the N-terminal part of the protein, that is on S5, S8 or T15 (Figure 1F). Single amino acid mutagenesis allowed the identification of S8 as the O-glycosylation site of OCN in osteoblasts (Figure 1G), a result consistent with the MS/MS analysis of OCN isolated from bone which also suggested that this residue is the O-glycosylation site (Figure 1H). Together, these results establish that mouse OCN is O-glycosylated on at least one serine residue in cell culture and in vivo.
 
-## Several polypeptide N-acetylgalactosaminyltransferases (GalNAc-Ts) redundantly O-glycosylate OCN independently of its carboxylation and processing
+### Several polypeptide N-acetylgalactosaminyltransferases (GalNAc-Ts) redundantly O-glycosylate OCN independently of its carboxylation and processing
 
 Protein O-glycosylation is initiated by the transfer of a GalNAc to a serine or threonine residue, a reaction taking place in the Golgi and catalyzed by GalNAc-Ts, a family of enzymes comprising 19 different members in mice (Bennett et al., 2012). Quantitative PCR on mRNA isolated from undifferentiated and differentiated primary mouse osteoblasts revealed that several GalNAc-Ts are expressed in this cell type, with Galnt1 and Galnt2 being the most strongly expressed ones (Figure 2A). We noticed that S8A mutation abrogates OCN O-glycosylation in HEK293 cells and in primary osteoblasts (Figure 1G and data not shown). GalNAc-T3 and its paralogue GalNAc-T6 are known to be expressed in HEK293 (Narimatsu et al., 2019b) and our data shows they are also expressed in primary mouse osteoblasts and induced during osteoblast differentiation. Although these observations suggest one or both of these enzymes may be involved in OCN O-glycosylation, the inactivation of GALNT3 and/or GALNT6 genes failed to alter OCN O-glycosylation in HEK293 (Figure 2B). Since GALNT1 and GALNT2 are also highly expressed in osteoblasts and induced during osteoblast differentiation, we inactivated these two genes in combination with GALNT3, and assess the impact on OCN O-glycosylation in HEK293 cells. This partially abolished OCN glycosylation (Figure 2B), suggesting that these three GalNAc-Ts are the primary isoenzymes that redundantly initiate the O-glycosylation of OCN.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/61174/elife-61174-fig2-v2.jpg)
+
+**Figure 2.:** (A) Galnts expression in pre-osteoblasts (undifferentiated) and osteoblasts (differentiated) by quantitative PCR (n = 3 per condition). Results are represented as copy number of Galnts normalized to Actb. (B) Western blot analysis of OCN in the secretion media (SM) of HEK293 cells deficient for specific GalNAc-Ts. OCN-V5 was transfected in parental, C1GALT1C1-/- (Δ C1GALT1C1), or GALNTs deficient (Δ) HEK293 cells and analysed by western blot using anti-V5 antibody. (C) Western blot analysis on the SM of osteoblasts transfected with mouse OCN-V5 and treated or not with 2 mM of GalNAc-bn, 50 μM warfarin or 50 μM Dec-RVKR-CMK (RVKR) (upper panel), and percentage of carboxylated OCN (Gla-OCN) over total OCN measured by ELISA (lower panel; n = 2 per condition). (D) Western blot analysis on the SM of osteoblasts transfected with mouse OCN-V5 containing or not the S8A mutation and treated with 50 μM Dec-RVKR-CMK (RVKR) (upper panel), and percentage of carboxylated OCN (Gla-OCN) over total OCN measured by ELISA (lower panel; n = 3 per condition). (E) Western blot analysis on the SM of osteoblasts transfected with mouse OCN-V5 containing or not the S8A mutation and treated with 50 μM warfarin (upper panel), and percentage of carboxylated OCN over total OCN measured by ELISA (lower panel; n = 3 per condition). (F) Western blot analysis of OCN deglycosylation assay on bone extracts from Furinfl/fl and Furinfl/fl;BGLAP-Cre mice (n = 2 independent mice per genotype). Bone extracts were treated or not with O-glycosidase and neuraminidase for 4 hr at 37°C and analyzed by western blot using anti-C-termimal OCN antibody (Cterm OCN). **p<0.01; ***p<0.001 using one-way ANOVA with Bonferroni multiple comparisons test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61174/elife-61174-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Western blot analysis on the secretion media (SM) of HEK293 cells transfected with mouse OCN-V5 and treated or not with 2 mM of GalNAc-bn, 50 μM warfarin or 50 μM Dec-RVKR-CMK (RVKR).
 
 Processing of pro-OCN by the proprotein convertase furin and its γ-carboxylation are two post-translational modifications regulating OCN endocrine function (Ferron et al., 2015; Al Rifai et al., 2017). We therefore next aimed at testing whether OCN O-glycosylation can interfere with its γ-carboxylation or processing, or inversely, if O-glycosylation is modulated by γ-carboxylation or processing of pro-OCN.
 
 Pharmacological inhibition of γ-carboxylation or furin, using warfarin or Dec-RVKR-CMK (RVKR) respectively, did not impact OCN O-glycosylation in primary osteoblasts and HEK293 cells (Figure 2C and Figure 2—figure supplement 1). Similarly, inhibition of OCN O-glycosylation through GalNAc-bn treatment or the S8A mutation did not significantly affect its processing or its γ-carboxylation (Figure 2C–E and Figure 2—figure supplement 1). We also tested whether OCN processing influences its O-glycosylation in vivo. As shown in Figure 2F, both mature OCN present in control bones and pro-OCN present in furin-deficient bones are de-glycosylated by neuraminidase and O-glycosidase, indicating that pro-OCN is normally O-glycosylated in absence of processing by furin in vivo. Altogether, these results support the notion that osteocalcin O-glycosylation is not affected by its carboxylation status or by its processing by furin. Moreover, blocking O-glycosylation does not prevent pro-OCN processing by furin or its carboxylation.
 
-## O-glycosylation increases mouse OCN half-life in plasma ex vivo by preventing plasmin-mediated endoproteolysis
+### O-glycosylation increases mouse OCN half-life in plasma ex vivo by preventing plasmin-mediated endoproteolysis
 
 The results presented above suggest that O-glycosylation is not regulating the processing of pro-OCN by furin or the secretion of mature OCN by osteoblasts. It was recently observed that O-glycosylation can also increase the stability of some peptide hormones in the circulation by preventing proteolytic degradation (Hansen et al., 2019; Madsen et al., 2020). We therefore aimed at testing the impact of O-glycosylation on OCN half-life in plasma. To that end, we produced and purified O-glycosylated ucOCN from HEK293 and first compared its purity and molecular weight to native non-glycosylated ucOCN produced in bacteria by LC-MS, LC-MS/MS and SDS-PAGE (Figure 3A,B; Figure 3—figure supplement 1). Importantly, we observed that >99% of the ucOCN purified from HEK293 is O-glycosylated, with a certain proportion (~30%) containing two glycan adducts (Figure 3A), suggesting that in this context O-glycosylation may occurs on more than one residue. Freshly isolated Bglap-/- plasma, which is depleted of endogenous OCN, was next used to assess ucOCN half-life ex vivo. In all the following experiments, concentrations of ucOCN were measured with an ELISA assay recognizing both non-glycosylated and glycosylated mouse ucOCN (see Materials and methods and Figure 3—figure supplement 2). Non-glycosylated ucOCN has a half-life of ~120 min when incubated in plasma at 37°C, while O-glycosylated ucOCN is stable for more than 5 hr in the same conditions (Figure 3C). Non-glycosylated ucOCN was stable when incubated in a saline solution containing 3.5% BSA at 37°C for 2 hr (Figure 3—figure supplement 3), implying that ucOCN is not intrinsically unstable. In addition, stability of the non-glycosylated ucOCN was restored when incubated in plasma at 4°C or in heat-inactivated (HI) plasma at 37°C (Figure 3D), suggesting that non-glycosylated ucOCN’s decline involves the action of a protease. Pepstatin A (Pep A) an aspartic proteases inhibitor, RVKR a proprotein convertases inhibitor and ethylenediaminetetraacetic acid (EDTA) which inhibits metalloproteases did not affect non-glycosylated ucOCN stability in plasma ex vivo (Figure 3—figure supplement 3). The OCN sequence surrounding S8 contains several proline residues (Figure 1E) and could therefore be recognized by prolyl endopeptidases, such as the fibroblast activation protein (FAP) which is present in the circulation (Sánchez-Garrido et al., 2016; Coutts et al., 1996). We thus also tested the effect of talabostat, an inhibitor of FAP and dipeptidyl peptidases, on ucOCN stability in plasma. Surprisingly, treatment of plasma with 10 mM talabostat did not inhibit, but rather increased non-glycosylated ucOCN degradation (Figure 3E). A reduced stability of non-glycosylated OCN in plasma was also observed in the presence of PMSF (Figure 3F) at a concentration (10 mM) that was also shown to inhibit dipeptidyl peptidases and prolyl endopeptidases (Banbula et al., 2000; Bermpohl et al., 1998). One function of FAP in vivo is to activate the α2-antiplasmin precursor releasing the active α2-antiplasmin, which in turn acts as an inhibitor of plasmin activity (Lee et al., 2011; Lee et al., 2006). Interestingly, mouse OCN contains arginine residues in its N- and C-terminus (R16 and R40, respectively), which could be potential cleavage sites for plasmin (Rawlings et al., 2008). Together these observations led us to hypothesize that plasmin could be a protease responsible for ucOCN degradation in plasma. Supporting this notion, ucOCN is rapidly degraded when low concentration of recombinant plasmin is added to previously heat-inactivated plasma or in Tris buffered solution (Figure 3G and data not shown). Moreover, O-glycosylation partially protect ucOCN from plasmin-mediated degradation in the same assay (Figure 3G). Altogether, these data indicate that O-glycosylation protects ucOCN from plasmin mediated proteolysis, thereby increasing its half-life in plasma in vitro.
 
-## Glycosylation increases mouse OCN stability in vivo
+![Figure 3.](https://cdn.elifesciences.org/articles/61174/elife-61174-fig3-v2.jpg)
+
+**Figure 3.:** (A) Annotated and deconvoluted MS spectrum of purified glycosylated mouse OCN (O-gly ucOCN). (B) Annotated and deconvoluted MS spectrum of purified non-glycosylated mouse OCN (ucOCN). (C–D) Ex vivo half-life of O-gly ucOCN and ucOCN in OCN deficient (Bglap-/-) plasma. (C) 100 ng/ml of O-gly ucOCN or ucOCN were incubated in plasma at 37°C for 0 to 5 hr and OCN levels were measured at the indicated times (n = 4 independent plasma per condition). (D) 100 ng/ml of O-gly ucOCN or ucOCN were incubated in plasma for 2 hr at 37°C in different conditions or at 4°C. HI: heat-inactivated plasma (n = 3 independent plasma per condition). (E) 50 ng/ml of ucOCN was incubated in plasma from Bglap-/- mice for 4 hr at 37°C in the presence of vehicle (V) or 10 mM talabostat (T) (n = 3 per condition). (F) 50 ng/ml of ucOCN was incubated in plasma from Bglap-/- mice for 4 hr at 37°C in the presence of vehicle (V) or 10 mM phenylmethylsulfonyl fluoride (PMSF) (n = 3 per condition). (G) Effect of plasmin on OCN stability ex vivo. 50 ng/ml of O-gly ucOCN and ucOCN were incubated for two hours in Bglap-/- heat-inactivated plasma containing different concentration of plasmin (n = 2 per condition). Inset graph shows the stability of the O-gly ucOCN and ucOCN incubated for two hours with 0.3 U/ml of plasmin (n = 5). (H) OCN deficient male mice (Bglap-/-) were fasted for 16 hr, O-gly ucOCN (n = 5 mice) or ucOCN (n = 5 mice) were injected intraperitoneally at a dose of 40 ng/g of body weight and serum OCN levels were measured at the indicated time points. (I) Using the data in (H) the percentage (%) of OCN in the declining phase was calculated relative to the maxima of each OCN forms at 30 min. T0: start point, see Materials and methods; HexNAc: N-acetylhexosamine; Hex: Hexose; NANA: N-acetylneuraminic acid. OCN measurements were performed using total mouse OCN ELISA assay (see Materials and methods). Results are given as mean ± SEM. *p<0.05; **p<0.01; ***p<0.001 using two-way ANOVA for repeated measurements with Bonferroni multiple comparisons test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61174/elife-61174-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Map of the pcDNA3.1-Fc-hinge-Thr-OCN construct used to produce and purify mouse ucOCN fusion protein. (B) Coomassie staining of purified O-glycosylated mouse ucOCN (O-gly ucOCN) compared to non- glycosylated mouse ucOCN (ucOCN) produced in bacteria.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61174/elife-61174-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Standard curve of O-gly ucOCN (n = 3–5) and ucOCN (n = 3–5) ranging from 0 to 100 ng/ml.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/61174/elife-61174-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A–B) Ex vivo half-life of O-gly ucOCN and ucOCN in OCN-deficient plasma (Bglap-/-; n = 3 plasma for each condition). (A) 100 ng/ml O-gly ucOCN (n = 3) and ucOCN (n = 3) were incubated for 2 hr in plasma at 37°C or 4°C and treated with vehicle (V) or with protease inhibitors or incubated in 3.5% BSA (bovine serum albumin prepared in saline solution). (B) 100 ng/ml O-gly ucOCN and ucOCN was incubated for 2 hr in normal plasma at 37°C or 4°C and treated with vehicle (V) or with EDTA (10 mM). T0: start point, see Materials and methods; Pep A: 10 μM Pepstatin A; RVKR: 50 μM Dec-RVKR-CMK.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/61174/elife-61174-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) In vivo stability of O-gly ucOCN and ucOCN in fed condition in mice. O-gly ucOCN or ucOCN were injected intraperitoneally in OCN deficient male mice (Bglap-/-; n = 9 mice each) at a dose of 40 ng/g of body weight and serum OCN levels were measured at the indicated time points. (B) O-gly ucOCN (n = 4 mice) or ucOCN (n = 4 mice) were injected intraperitoneally in OCN deficient male mice (Bglap-/-), in fed condition, at a dose of 40 or 80 ng/g of body weight. Serum OCN level was measured two hours post-injection.
+
+### Glycosylation increases mouse OCN stability in vivo
 
 We next examined the stability of glycosylated and non-glycosylated mouse ucOCN in vivo by injecting an equal dose of each of these proteins in Bglap-/- mice which are depleted of endogenous OCN. In fasted animals, following an injection of 40 ng/g of body weight of ucOCN, the level of glycosylated ucOCN remains higher compared to the non-glycosylated form for the following 90 min (Figure 3H). Moreover, when expressed as a percentage of the maximum concentration reached at 30 min, the concentration of non-glycosylated OCN declines more rapidly than the one of glycosylated ucOCN (Figure 3I). Based on these curves, we estimated the in vivo half-life of O-glycosylated and non-glycosylated ucOCN to ~182 and~108 min respectively. In fed mice, glycosylated ucOCN serum concentration also remains higher than the one of non-glycosylated ucOCN for up to 2 hr following an injection of 40 ng/g of body weight (Figure 3—figure supplement 4). Circulating level of glycosylated ucOCN after 2 hr was further increased when 80 ng/g of body weight of protein was injected, while non-glycosylated ucOCN was not significantly increased with this higher dose (Figure 3—figure supplement 4). These results establish that O-glycosylation increases the stability of mouse OCN protein in vivo.
 
-## Impact of glycosylation on OCN activity in culture
+### Impact of glycosylation on OCN activity in culture
 
 Using a cell-based assay, we next tested if O-glycosylation impacts the biological activity of OCN. INS-1 832/3 cells, a sub-clone of the INS-1 rat insulinoma cell line previously shown to express GPRC6A and to respond to OCN (Ferron et al., 2010a; Pi et al., 2016), were treated with vehicle or low doses of non-glycosylated and glycosylated ucOCN for 8 hr. At the end of the stimulation period, the expression of Ins1, the gene encoding pro-insulin 1, was assessed by quantitative PCR as a readout of OCN activity. As shown in Figure 4A, non-glycosylated ucOCN stimulation at 0.3 ng/ml could increase Ins1 expression by 1.5-fold. However, a lower dose of glycosylated ucOCN (0.1 ng/ml) was sufficient to significantly increase the expression of Ins1 as compared to vehicle or to 0.3 ng/ml non-glycosylated ucOCN stimulation. These difference in biological activity could be explained at least in part by an increased stability of glycosylated ucOCN as compared to non-glycosylated ucOCN in INS-1 832/3 cell cultures (Figure 4B). Overall, these results suggest that glycosylated ucOCN is biologically active, at least in the setting of this cell-based assay, and that O-glycosylation also increases the stability of ucOCN in cell culture.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/61174/elife-61174-fig4-v2.jpg)
 
-**Figure 4.:** (A) Insulin gene expression (Ins1) in INS-1 832/3 cells following an 8 hr treatment with vehicle (n = 6), non-glycosylated mouse OCN (ucOCN) (n = 10) or glycosylated mouse ucOCN (O-gly ucOCN) (n = 8–10) at the indicated concentrations. (B) Concentration of OCN in the media incubated for 8 hr at 4°C without cells or for 8 hr in culture with INS-1 832/3 cells at 37°C (n = 3 for each condition). Results are shown as mean ± SEM. *p<0.05; ***p<0.001 using Student t-test or ordinary two-way ANOVA with Bonferroni multiple comparisons test.Figure 4—source data 1.Figure 4A.Figure 4—source data 2.Figure 4B.
+**Figure 4.:** (A) Insulin gene expression (Ins1) in INS-1 832/3 cells following an 8 hr treatment with vehicle (n = 6), non-glycosylated mouse OCN (ucOCN) (n = 10) or glycosylated mouse ucOCN (O-gly ucOCN) (n = 8–10) at the indicated concentrations. (B) Concentration of OCN in the media incubated for 8 hr at 4°C without cells or for 8 hr in culture with INS-1 832/3 cells at 37°C (n = 3 for each condition). Results are shown as mean ± SEM. *p<0.05; ***p<0.001 using Student t-test or ordinary two-way ANOVA with Bonferroni multiple comparisons test.
 
-## Human OCN is not glycosylated
+### Human OCN is not glycosylated
 
 Sequence alignments revealed that the residue corresponding to S8 in the mouse protein is a tyrosine (Y12) in human OCN (Figure 5A). In addition, human OCN does not contain any serine or threonine residues and migrates at a lower molecular weight compared to mouse OCN when expressed and secreted by osteoblasts, HEK293 or CHO cells (Figure 5B and data not shown). Since mouse and human ucOCN have a very similar predicted molecular weight, that is 5.1 and 5.8 kDa, respectively, these observations suggested that human OCN may not be O-glycosylated. Remarkably, introduction of a single serine residue (Y12S mutation) in the human protein is sufficient to induce its O-glycosylation in osteoblasts as visualized by western blot (Figure 5C). In contrast, introducing a leucine at the same position (Y12L) did not alter human OCN apparent molecular weight, indicating that this tyrosine residue is not normally subjected to O-glycosylation. Since the apparent molecular weight of both native and Y12S human OCN are increased following treatment with RVKR, we concluded that O-glycosylation does not affect human OCN processing by furin (Figure 5D). These results establish that mature human OCN is not normally subjected to O-glycosylation, but that a single amino acid change (Y12S) is sufficient to induce its O-glycosylation in osteoblasts.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/61174/elife-61174-fig5-v2.jpg)
+
+**Figure 5.:** (A) Amino acid alignment of mouse and human OCN. The six serine and threonine residues present in the mouse protein and their corresponding amino acids in human OCN are highlighted in gray. The site of O-glycosylation in mouse OCN (S8) is indicated by an arrow. (B) Western Blot analysis on the secretion media (SM) of primary osteoblasts transfected with human OCN-V5 (hOCN) and mouse OCN-V5 (OCN). (C) Western blot analysis on the SM of primary osteoblasts transfected with hOCN-V5 containing or not the indicated mutations. (D) Western Blot analysis on the SM of primary osteoblasts transfected with hOCN-V5 containing or not the Y12S mutations and treated or not with 50 μM Dec-RVKR-CMK (RVKR). (E) Annotated and deconvoluted MS spectrum of purified O-glycosylated uncarboxylated human OCN (O-gly uc-hOCN). (F) Annotated and deconvoluted MS spectrum of and purified non-glycosylated uncarboxylated human OCN (uc-hOCN). (G–H) Ex vivo half-life of O-gly uc-hOCN and uc-hOCN in mouse plasma. (G) 60 ng/ml of O-gly uc-hOCN and uc-hOCN were incubated at 37°C in plasma of OCN deficient mice (Bglap-/-) (n = 4) for 0 to 5 hr and hOCN levels were measured at the indicated time. (H) O-gly uc-hOCN and uc-hOCN were incubated in Bglap-/- plasma for 2 hr at 37°C in different conditions or at 4°C (n = 4 independent plasma per condition). T0: start point, see Materials and methods; HI: heat-inactivated plasma; HexNAc: N-acetylhexosamine; Hex: Hexose; NANA: N-acetylneuraminic acid. Uc-hOCN levels were measured at the indicated time points using an uc-hOCN ELISA assay. Results are given as mean ± SEM. **p<0.01; ***p<0.001 using two-way ANOVA for repeated measurements with Bonferroni multiple comparisons test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61174/elife-61174-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Map of pcDNA3.1-Fc-hinge-Thr-hOCN (Y12S) construct used to produce and purify O-glycosylated human ucOCN fusion protein. (B) Coomassie staining of purified O-glycosylated human ucOCN (O-gly uchOCN) compared to non-glycosylated human ucOCN (uc-hOCN) produced in bacteria.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/61174/elife-61174-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Standard curve of O-gly uc-hOCN (n = 2) and uc-hOCN (n = 2) ranging from 0 to 100 ng/ml.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/61174/elife-61174-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Ex vivo half-life of O-gly uc-hOCN and uc-hOCN in OCN deficient plasma (Bglap-/-; n = 3–4 plasma). 650 ng/ml O-gly uc-hOCN (n = 3) and uc-hOCN (n = 3) were incubated for 2 hr in normal plasma at 37°C or 4°C and treated with vehicle (V) or with protease inhibitors. T0: start point, see Materials and methods; Pep A: 10 μM Pepstatin A; RVKR: 50 μM Dec-RVKR-CMK.
 
 Because O-glycosylation impacts mouse ucOCN half-life in plasma, we next tested whether this PTM had a similar effect on human ucOCN. We produced and purified O-glycosylated human ucOCNY12S from HEK293 and compared its purity and molecular weight to native non-glycosylated human ucOCN by LC-MS, LC-MS/MS and SDS-PAGE (Figure 5E and F, and Figure 5—figure supplement 1). Confirming what was observed in osteoblasts, human ucOCN containing the Y12S mutation purified from HEK293 was found to be O-glycosylated (Figure 5E). These proteins were then incubated in Bglap-/- mouse plasma at 37°C and the concentration of ucOCN monitored over time using a specific ELISA assay (Lacombe et al., 2020), which can quantify both non-glycosylated and O-glycosylated human ucOCN (see Figure 5—figure supplement 2 and Materials and method). As shown in Figure 5G, in the conditions of this assay, non-glycosylated human ucOCN level declines by 50% within 180 min, while the concentration of the O-glycosylated version remains stable over the course of the experiment (i.e. 5 hr). As observed with the mouse protein, human ucOCN degradation was only inhibited when the plasma was heat-inactivated or incubated at 4°C (Figure 5H and Figure 5—figure supplement 3), suggesting that glycosylation protects mouse and human ucOCN from degradation through a similar mechanism.
 
@@ -104,17 +384,412 @@ In summary, this work identified O-glycosylation as a previously unrecognized OC
 
 ## Materials and methods
 
-## Animal models
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Bglap</td>
+      <td>GenBank</td>
+      <td>Gene ID: 12096</td>
+      <td>Mouse osteocalcin gene 1</td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Bglap2</td>
+      <td>GenBank</td>
+      <td>Gene ID: 12097</td>
+      <td>Mouse osteocalcin gene 2</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>BGLAP</td>
+      <td>GenBank</td>
+      <td>Gene ID: 632</td>
+      <td>Human osteocalcin gene</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Bglap-/-</td>
+      <td>PMID:8684484</td>
+      <td>Bglap/Bglap2tm1Kry RRID:MGI:3837364</td>
+      <td>Genetic background: C57BL/6J</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Furinfl/fl</td>
+      <td>PMID:15471862</td>
+      <td>Furintm1Jwmc RRID:MGI:3700793</td>
+      <td>Genetic background: C57BL/6J</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>BGLAP-Cre</td>
+      <td>PMID:12215457</td>
+      <td>Tg(BGLAP-cre)1Clem RRID:IMSR_JAX:019509</td>
+      <td>Genetic background: C57BL/6J</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6J wildtype mice</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No: 000664 RRID:IMSR_JAX:000664</td>
+      <td>For primary osteoblasts preparation</td>
+    </tr>
+    <tr>
+      <td>Cell line (R. norvegicus)</td>
+      <td>INS-1 832/3</td>
+      <td>Millipore-Sigma</td>
+      <td>SCC208 RRID:CVCL_ZL55</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (C. griseus)</td>
+      <td>Chinese hamster ovary (CHO-K1) cells</td>
+      <td>ATCC</td>
+      <td>CCL-61 RRID:CVCL_0214</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (C. griseus)</td>
+      <td>Chinese hamster ovary ldlD cells (CHO-ldlD)</td>
+      <td>PMID:3948246</td>
+      <td>RRID:CVCL_1V03</td>
+      <td>Cell maintained in N. Seidah lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Primary osteoblasts</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Prepared from C57BL/6J wildtype mice newborn calvaria</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Human embryonic kidney cells HEK293</td>
+      <td>ATCC</td>
+      <td>CRL-1573 RRID:CVCL_0045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>COSMC knockout HEK293 cells (C1GALT1C1-/-)</td>
+      <td>PMID:23584533</td>
+      <td>RRID:CVCL_S025</td>
+      <td>Cell maintained in H. Clausen lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>GALNT3/6 knockout HEK293 cells</td>
+      <td>PMID:31040225</td>
+      <td></td>
+      <td>Cell maintained in H. Clausen lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>GALNT3 knockout HEK293 cells</td>
+      <td>PMID:31040225</td>
+      <td></td>
+      <td>Cell maintained in H. Clausen lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>GALNT6 knockout HEK293 cells</td>
+      <td>PMID:31040225</td>
+      <td></td>
+      <td>Cell maintained in H. Clausen lab.</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>GALNT1/2/3 knockout HEK293 cells</td>
+      <td>PMID:31040225</td>
+      <td></td>
+      <td>Cell maintained in H. Clausen lab.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pIRES2-EGFP-mOCN-V5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>To express mouse OCN V5 tagged in primary osteoblasts, CHO-K1, CHO-ldlD and HEK293</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pIRES2- EGFP-mOCN (S5A/S8/AT15A) -V5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>To express (S5A/S8/AT15A) mutant mouse OCN V5 tagged in primary osteoblasts</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pIRES2- EGFP-mOCN (S29A/T36A/T45A) -V5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>To express (S29A/T36A/T45A) mutant mouse OCN V5 tagged in primary osteoblasts</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pIRES2- EGFP-mOCN (6XST→6XA)-V5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>To express (6XST→6XA) mutant mouse OCN V5 tagged in primary osteoblasts</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pIRES2- EGFP-mOCN (S5A)-V5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>To express (S5A) mutant mouse OCN V5 tagged in primary osteoblasts</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pIRES2- EGFP-mOCN (S8A)-V5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>To express (S8A) mutant mouse OCN V5 tagged in primary osteoblasts</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (M. musculus)</td>
+      <td>pIRES2- EGFP-mOCN (T15A)-V5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>To express (T15A) mutant mouse OCN V5 tagged in primary osteoblasts</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pIRES2-EGFP-hOCN-V5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>To express human OCN V5 tagged in primary osteoblasts</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pIRES2-EGFP-hOCN (Y12S)-V5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>To express (Y12S) mutant human OCN V5 tagged in primary osteoblasts</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pIRES2-EGFP-hOCN (Y12L)-V5</td>
+      <td>This paper</td>
+      <td></td>
+      <td>To express (Y12L) human OCN V5 tagged in primary osteoblasts</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pcDNA3.1-Fc-hinge-Thr-mOCN</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Used to produce O-gly ucOCN in HEK293</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (H. sapiens)</td>
+      <td>pcDNA3.1-Fc-hinge-Thr-hOCN (Y12S)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Used to produce O-gly uc-hOCN in HEK293</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP, mouse monoclonal, clones 7.1 and 13.1</td>
+      <td>Sigma-Aldrich</td>
+      <td>11814460001 RRID:AB_390913</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V5, mouse monoclonal, clone V5-10</td>
+      <td>Sigma-Aldrich</td>
+      <td>V8012 RRID:AB_261888</td>
+      <td>WB (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti–β-actin, mouse monoclonal, clone AC-15</td>
+      <td>Sigma-Aldrich</td>
+      <td>A5441 RRID:AB_476744</td>
+      <td>WB (1:7000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Gla-OCN goat polyclonal antibody (recognize amino acids 11–26 of carboxylated mature mouse OCN)</td>
+      <td>PMID:20570657</td>
+      <td></td>
+      <td>WB (1:3000) ELISA (2 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CTERM OCN goat polyclonal antibody recognize amino acids26–46 of mature mouse OCN</td>
+      <td>PMID:20570657</td>
+      <td></td>
+      <td>WB (1:3000) ELISA (1:600) IP (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MID OCN goat polyclonal antibody recognize amino acids11 to 26 of mature mouse OCN</td>
+      <td>PMID:20570657</td>
+      <td></td>
+      <td>ELISA (1.5 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTT5-Fc1_CTL</td>
+      <td>PMID:23951290</td>
+      <td></td>
+      <td>Used as PCR template to amplify Fc and hinge region</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Collagenase type 2</td>
+      <td>Worthington Biochemical Corporation</td>
+      <td>LS004176</td>
+      <td>For primary osteoblasts preparation</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>O-Glycosidase and Neuraminidase Bundle</td>
+      <td>NEB</td>
+      <td>E0540S</td>
+      <td>Deglycosylation assay</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Thrombin</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td>27-0846-01</td>
+      <td>Protein purification</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human plasmin</td>
+      <td>Sigma</td>
+      <td>P1867</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Warfarin</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-205888</td>
+      <td>VKORC1 inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Decamoyl-RVKR-CMK</td>
+      <td>Tocris</td>
+      <td>3501/1</td>
+      <td>Furin inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-acetylgalactosaminyltransferase inhibitor (GalNAc-bn)</td>
+      <td>Sigma</td>
+      <td>200100</td>
+      <td>GalNAc-Ts inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Benzamidine sepharose</td>
+      <td>GE healthcare</td>
+      <td>17-5123-10</td>
+      <td>Protein purification</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pepstatin A</td>
+      <td>Sigma</td>
+      <td>P5318</td>
+      <td>Aspartyl proteases inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Talabostat</td>
+      <td>Tocris,</td>
+      <td>3719/10</td>
+      <td>FAP inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phenylmethylsulfonyl fluoride (PMSF)</td>
+      <td>Amresco</td>
+      <td>329-98-6</td>
+      <td>Serine proteases inhibitor</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vitamin K1</td>
+      <td>Sigma</td>
+      <td>V3501</td>
+      <td>Cofactor for gamma carboxylation</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiTrap protein A high performance</td>
+      <td>GE Healthcare Life Sciences</td>
+      <td>GE29-0485-76</td>
+      <td>Protein purification</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human ucOCN ELISA</td>
+      <td>BioLegend (PMID:31935114)</td>
+      <td>446707</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>JetPrime</td>
+      <td>Polypus transfection</td>
+      <td>114–15</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Lipofectamine 2000</td>
+      <td>Thermo Fisher</td>
+      <td>11668019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism version 7.03</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Xcalibur 4.0</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:SCR_014593</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal models
 
 The Furinfl/fl;BGLAP-Cre mice were generated by breeding Furinfl/fl (Furintm1Jwmc/Furintm1Jwmc) mice with BGLAP-Cre (Tg(BGLAP-cre)1Clem) transgenic mice that express Cre recombinase under the control of human OCN promoter as described previously (Al Rifai et al., 2017). Bglap-/- mice (Bglap/Bglap2tm1Kry/Bglap/Bglap2tm1Kry) were generated using homologous recombination to replace OCN1 (Bglap1) and OCN2 (Bglap2) genes in the mouse Bglap cluster with a neomycin resistance cassette (Ducy et al., 1996). All strains used in this study were backcrossed on a C57BL/6J genetic background more than 10 times and maintained under 12 hr dark/12 hr light cycles in a specific pathogen–free (SPF) animal facility at IRCM. Male mice were used in all experiments, and they were fed a normal chow diet. All animal use complied with the guidelines of the Canadian Committee for Animal Protection and was approved by IRCM Animal Care Committee.
 
-## DNA constructs
+### DNA constructs
 
 Mouse pro-OCN cDNA was cloned into the pIRES2-EGFP-V5 plasmid in EcoRI and AgeI cloning sites. S5A/S8/AT15A pro-OCN, S29A/T36A/T45A pro-OCN and S5S/S8A/T15A/S29A/T36A/T45A (i.e. 6XST→6XA) pro-OCN mutant were purchased from Thermo Fisher. Human pre-pro-OCN cDNA cloned into pcDNA3 was purchased from GenScript. Each construct was used as PCR template for amplification and to introduce EcoRI and AgeI cloning sites and cloned in pIRES2-EGFP-V5 plasmid. Point mutations in mouse pro-OCN (S5A, S8A, T15A) and Y12S in human pro-OCN were generated by site-directed mutagenesis using specific primer (Appendix 1—table 1).
 
 The cDNA coding of the Fc and hinge region of human immunoglobulin flanked with HindIII-BamHI restriction sites was amplified using standard PCR (Appendix 1—table 1) and pTT5-Fc1_CTL vector as a template (Saavedra et al., 2013). The PCR product was cloned in pcDNA3.1-myc-His B in HindIII-BamHI cloning site, generating the pcDNA3.1-Fc-hinge-myc-His vector. The cDNA coding for mature hOCN(Y12S) was generated using pIRES2-EGFP-hOCN (Y12S)-V5 as a template, to which a thrombin (Thr) cleavage site was added at the N-terminus and BglII and EcoRI restriction sites were introduced by standard PCR amplifications. The Thr-hOCN(Y12S) product was cloned in the pcDNA3.1-Fc-hinge-myc-His vector. The generated vector pcDNA3.1-Fc-hinge-Thr-hOCN(Y12S) is an expression vector of human OCN fusion protein composed of the Fc and hinge region of human IgG1, thrombin cleavage site and human OCN (Y12S). Mouse OCN fused to Fc were generated following the same procedure and using different primers (Appendix 1—table 1).
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 All cell lines tested negative for mycoplasma. The identity of the cell lines was confirmed by STR when obtained from ATCC or Millipore. Otherwise, the identity was based on the phenotype reported by the providing investigator (e.g. lack of glycosylation for CHO-ldld, lack of expression of the GALNTs for the knockout HEK293 cell lines).
 
@@ -128,42 +803,42 @@ Human embryonic kidney cells HEK293 were originally purchased from ATCC. C1GALT1
 
 For western blot analysis, proteins were resolved on 15% Tris-tricine gel and blotted overnight with indicated antibody. Antibody used in this study are: anti-V5 (mouse, clone V5-10, V8012; Sigma-Aldrich), anti–β-actin (mouse, clone AC-15, A5441; Sigma-Aldrich), anti-GFP (mouse, clones 7.1 and 13.1, 11814460001; Sigma), anti-Gla-OCN goat antibody which recognize amino acids 11–26 of carboxylated mature OCN and anti-Cterm OCN goat antibody which recognize amino acids 26–46 of mature mouse OCN (Ferron et al., 2010b).
 
-## In-vitro de-glycosylation assay
+### In-vitro de-glycosylation assay
 
 Flushed mouse femur and tibia from C57BL/6J were homogenized in lysis buffer (20 mM Tris-HCl pH 7.4, 150 mM NaCl, 1 mM EDTA, 1 mM EGTA, 1% Triton, 1 mM PMSF, and 1 × protease inhibitors cocktail). Tissue homogenates were then centrifuged for 10 min at 4000 rpm to remove insoluble material. In-vitro de-glycosylation assay was performed on 10 μg of bone homogenate. Briefly, proteins were denatured in denaturing buffer (0.5% SDS, 40 mM DTT) at 95°C for 5 min and incubated with 80000 units of O-glycosidase and 100 units of neuraminidases for 4 hr at 37 °C following the NEB kit protocol (E0540S; NEB). Samples were resolved on 15% Tris-tricine SDS-PAGE gel and blotted using anti-Cterm OCN goat antibody.
 
-## Top-down LC-MS/MS analysis MS analysis of OCN in osteoblasts secretion media and bone extracts
+### Top-down LC-MS/MS analysis MS analysis of OCN in osteoblasts secretion media and bone extracts
 
 Differentiated osteoblast secretion medium was spun down at 1500 rpm for 5 min to remove cells debris. The supernatant was then incubated overnight at 4°C with anti-Cterm OCN antibody in the presence of 1 × protease inhibitors cocktail. For bone extract, flushed femur and tibia from wild type mice were homogenized in lysis buffer containing (20 mM Tris-HCl pH 7.4, 150 mM NaCl, 1 mM EDTA, 1 mM EGTA, 1% Triton, 1 mM PMSF, and 1 × protease inhibitors cocktail). 100 μg of protein homogenate was diluted in 1,6 ml of 100 mM phosphate buffer pH 7.4 and incubated overnight at 4°C with anti-OCN antibody. After overnight incubation, samples were centrifuged at 10000 rpm for 10 min to remove precipitate and supernatant was incubated with protein-G agarose beads pre-washed with 1X PBS. After for 4 hr of rotation at 4°C, beads were spun down, washed twice with 1X PBS and three times with 50 mM Ammonium Bicarbonate pH 8.0. OCN was then eluted with 100 μl of 0.5 M NH4OH, snap frozen in liquid nitrogen and evaporated under vacuum using speedvac concentrator (Thermo scientific).
 
 Samples were diluted in 25% ACN 0.3%TFA and loaded onto a 50 × 4.6 mm PLRP-S 300A column (Agilent Technologies) connected to an Accela pump (Thermo Scientific) and a RTC autosampler (Pal systems). The buffers used for chromatography were 0.1% formic acid (buffer A) and 100% acetonitrile/0.1% formic acid (buffer B). Proteins and peptides were eluted with a two slopes gradient at a flowrate of 120 µL/min. Solvent B first increased from 12% to 50% in 4.5 min and then from 50% to 70% in 1.5 min. The HPLC system was coupled to a Q Exactive mass spectrometer or an Orbitrap Fusion (Thermo Scientific) through an Ion Max electrospray Ion Source equipped with a HESI-II probe and operated in positive ion mode. The spray and S-lens voltages were set to 3.6 kV and 60 V, respectively. Capillary temperature was set to 225°C. Full scan MS survey spectra (m/z 600–2000) in profile mode were acquired in the Orbitrap with a resolution of 70,000 or 120,000 with a target value at 3e6. The four most intense protein/peptide ions were fragmented in the HCD (higher-energy collision dissociation) collision cell upon collision with nitrogen gas and analyzed in the Orbitrap with a target value at 5e5 and a normalized collision energy at 33. The data acquisition software were Xcalibur 3.1 and Q Exactive 2.8 SP1 for the Q Exactive instrument and Xcalibur 4.0 and Tune 2.0 for the Orbitrap Fusion instrument. Data processing protocol: the identification of the different forms of OCN was performed by manual denovo sequencing using Qual Browser (Xcalibur 4.0). The source files for the proteomics analyses can be downloaded through this link: https://doi.org/10.6084/m9.figshare.13259891.v1.
 
-## Galnts expression in osteoblasts
+### Galnts expression in osteoblasts
 
 RNA was extracted from non-differentiated and differentiated calvariae osteoblasts using Trizol reagent (Thermo Fisher Scientific) following standard protocol. RNA was treated with DNAse I and reverse transcribed using poly dT primers, random primers and MMLV reverse transcriptase (Thermo Fisher Scientific). QPCR was performed on standards of diluted genomic DNA and cDNA products using specific primers (Appendix 1—table 1) on a ViiA 7 Real-Time PCR system (Thermo Fisher Scientific). Galnts gene copy numbers were calculated using the genomic DNA as a standard curve and variation between biological replicate was normalized using Actb expression level.
 
-## Generation of stable HEK293 clones expressing mouse and human OCN fused to the Fc region of human immunoglobulin
+### Generation of stable HEK293 clones expressing mouse and human OCN fused to the Fc region of human immunoglobulin
 
 To generate stable clonal cell lines expressing glycosylated human and mouse OCN, HEK293 were transfected with pcDNA3.1-Fc-hinge-Thr-hOCNY12S and pcDNA3.1-Fc-hinge-Thr-OCN respectively using Lipofectamine 2000 reagent. Following 48 hr of transfection, cells were trypsinized and resuspended in sorting buffer containing (1 × sterile PBS, 2% FBS and 1 mM EDTA). Cells were sorted at a concentration of 5–10 cells/well in 96 well plates containing the selection media EMEM, 10% FBS supplemented with G418 sulfate (500 μg/ml; Wisent). Following two weeks of selection, isolated colonies appeared and the expression of mouse and human OCN was assessed using ELISA assay described below. Clones expressing the highest levels of OCN were amplified and frozen.
 
-## Purification of mouse and human OCN fused to the Fc region of human immunoglobulin
+### Purification of mouse and human OCN fused to the Fc region of human immunoglobulin
 
 TM102F12 clone expressing IgFc-mOCN fusion protein and 22H5 clone expressing IgFc-hOCNY12S fusion protein were cultured in triple layer 175 cm2 flasks. After reaching 100% confluency, cells were kept in secretion media (EMEM media supplemented with 1% FBS and 10 μM warfarin to block γ-carboxylation) for 72 hr. Secretion media was collected, filtered with 0.45 μm filter, and media was pH buffered with 10 × binding buffer (0.2 M phosphate buffer, pH 7). This cell supernatant was then loaded into protein A affinity column (HiTrap protein A high performance, GE29-0485-76; GE Healthcare Life Sciences,) using liquid chromatography system (GE AKTA Prime Plus). Column was then washed with 20 ml of 1 × binding buffer (0.02 M phosphate buffer, pH 7) and 5 ml of filtered 1 × PBS. To release OCN from the column, OCN fusion protein was digested with thrombin (27-0846-01, GE Healthcare Life Sciences) and eluted with 1 × PBS. Thrombin was subsequently removed using benzamidine sepharose (17-5123-10, GE healthcare). Mouse and human OCN purity were assessed using Coomassie staining and liquid chromatography-mass spectrometry (LC-MS) analysis compared to purified non-glycosylated mouse or human ucOCN. Mouse OCN was quantified using ELISA assay as described previously (Ferron et al., 2010b). Human ucOCN measurements were performed using a commercially available human ucOCN ELISA (BioLegend, 446707) (Lacombe et al., 2020), which recognizes equally glycosylated and non-glycosylated human OCN (Figure 5—figure supplement 2). The capture antibody in this assay is a mouse monoclonal antibody (8H4) specific to the C-terminal region of human OCN (i.e. amino acids 30 to 49). The detection antibody is a mouse monoclonal antibody (4B6) specific to the mid-region of human ucOCN (i.e. amino acids 12 to 28 in ucOCN).
 
-## Ex vivo half-life and plasmin enzymatic assays
+### Ex vivo half-life and plasmin enzymatic assays
 
 The mouse OCN ex vivo half-life assays were performed with fresh plasma (lithium heparin) collected from four independent Bglap-/- mice. Glycosylated OCN produced in HEK293 cells and non-glycosylated OCN, produced in bacteria as previously described (Ferron et al., 2012), were incubated at 100 ng/ml in plasma at 37°C and OCN level was measured at indicated time points using the total mouse OCN ELISA assay described previously (Ferron et al., 2010b). In this assay, the capture antibody is a goat polyclonal antibody directed against the central part (amino acids 11 to 26) of mouse OCN (anti-MID OCN) and recognizing with equal affinity the uncarboxylated and carboxylated OCN proteins. The detection antibody is a goat polyclonal antibody directed against the C-terminal region (amino acids 26 to 46) of mouse OCN (anti-CTERM OCN). This assay detects with the same sensitivity glycosylated and non-glycosylated mouse OCN at concentration of 50 ng/ml or less (Figure 3—figure supplement 2). Therefore, all samples were diluted to be in this range before being measured by the ELISA. Human OCN half-life assay was performed ex vivo using Bglap-/- mice plasma and human OCN at 60 ng/ml. Human OCN level was measured at different time point using the human ucOCN ELISA described above. At the experiment start point (T0), an aliquot of plasma was diluted in ELISA assay buffer and kept on ice for OCN measurements. In some experiments, plasma was heat-inactivated for 30 min at 56°C, or treated with EDTA (10 mM, Wisent), phenylmethylsulfonyl fluoride (PMSF, 10 mM, Sigma), pepstatin A (Pep A, 10 μM, Sigma) which inhibits aspartic proteases (pepsin, cathepsin D, renin, chymosin), RVKR (Dec-RVKR-CMK, 50 μM; Tocris) or talabostat (10 mM; Tocris). Results are calculated in percentage relative to the initial concentration of non-glycosylated and glycosylated OCN respectively.
 
 The plasmin enzymatic assay was performed on plasma ex vivo in the presence of non-glycosylated OCN and glycosylated OCN as follows: plasma from Bglap-/- mice was heat-inactivated for 30 min at 56°C, then diluted two times in the enzyme assay buffer containing 100 mM Tris buffer pH 7.5. Non-glycosylated OCN or glycosylated OCN was incubated at 50 ng/ml in the diluted plasma for two hours in the presence of different concentration of human plasmin (Sigma) ranging from 0 to 0.3 U/ml. After two hours, OCN level was measured using total mouse OCN ELISA. Results are represented as percentage of initial concentration of non-glycosylated and glycosylated OCN respectively.
 
-## In vivo half-life assay
+### In vivo half-life assay
 
 For in vivo half-life assay, Bglap-/- male mice were injected intraperitoneally with 40 or 80 ng/g of body weight of mouse O-glycosylated ucOCN or non-glycosylated ucOCN, serum OCN level was analyzed at indicated time points using total mouse OCN ELISA. In all ex vivo and in vivo studies, mouse or human proteins were prepared in saline solution (0.9% NaCl) containing BSA (35 mg/ml) as a carrier.
 
-## INS-1 832/3 treatment with ucOCN
+### INS-1 832/3 treatment with ucOCN
 
 The INS-1 832/3 rat insulinoma cell line (Millipore-Sigma) was cultured in RPMI-1640 with 11.1 mM D-glucose, supplemented with 2 mM L-glutamine, 1 mM sodium pyruvate, 10 mM HEPES, 0.05 mM β-mercaptoethanol and 10% FBS (Hohmeier et al., 2000). On day 1, cells were plated at 3 × 105 cells per well in 12-well plates and on day 5, cells were washed with PBS and incubated with culture media containing 5 mM D-glucose. Twenty-four hours later, cells were washed with PBS and incubated for 4 hr in culture media containing 1% FBS, 5 mM D-glucose and 0.1% BSA. OCN was added for 8 hr before supernatants and cells were harvested. ucOCN and O-gly ucOCN concentration were measured in supernatants by ELISA and cells were lyzed and RNA extracted as described in the material and methods section. Gene expression was analyzed using rat specific primers for Ins1 and Gapdh.
 
-## Statistics
+### Statistics
 
 Statistical analyses were performed using GraphPad Prism software version 7.03. Results are shown as the mean ± SEM. For single measurements, an unpaired, 2-tailed Student’s t test was used, while one-way or two-way ANOVA followed by Bonferroni’s post-test were used for comparison of more than two groups. For repeated measurements (e.g. half-life study ex vivo and in vivo), a repeated-measurement two-way ANOVA followed by Bonferroni’s post-test was used. A P value of less than 0.05 was considered statistically significant. All experiments were repeated at least three times or performed on at least three independent animals or included at least three independent biological replicates. In the in vivo half-life experiments, the Bglap-/- mice were randomized before the experiment into experimental groups such that the average body weight of each group was similar.

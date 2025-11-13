@@ -39,13 +39,29 @@
 
 ## Abstract
 
-10.7554/eLife.31097.001 The functions of most proteins are yet to be determined. The function of an enzyme is often defined by its interacting partners, including its substrate and product, and its role in larger metabolic networks. Here, we describe a computational method that predicts the functions of orphan enzymes by organizing them into a linear metabolic pathway. Given candidate enzyme and metabolite pathway members, this aim is achieved by finding those pathways that satisfy structural and network restraints implied by varied input information, including that from virtual screening, chemoinformatics, genomic context analysis, and ligand -binding experiments. We demonstrate this integrative pathway mapping method by predicting the L-gulonate catabolic pathway in Haemophilus influenzae Rd KW20. The prediction was subsequently validated experimentally by enzymology, crystallography, and metabolomics. Integrative pathway mapping by satisfaction of structural and network restraints is extensible to molecular networks in general and thus formally bridges the gap between structural biology and systems biology.
+The functions of most proteins are yet to be determined. The function of an enzyme is often defined by its interacting partners, including its substrate and product, and its role in larger metabolic networks. Here, we describe a computational method that predicts the functions of orphan enzymes by organizing them into a linear metabolic pathway. Given candidate enzyme and metabolite pathway members, this aim is achieved by finding those pathways that satisfy structural and network restraints implied by varied input information, including that from virtual screening, chemoinformatics, genomic context analysis, and ligand -binding experiments. We demonstrate this integrative pathway mapping method by predicting the L-gulonate catabolic pathway in Haemophilus influenzae Rd KW20. The prediction was subsequently validated experimentally by enzymology, crystallography, and metabolomics. Integrative pathway mapping by satisfaction of structural and network restraints is extensible to molecular networks in general and thus formally bridges the gap between structural biology and systems biology.
 
 ## Introduction
 
-## Problem and approach
+### Problem and approach
 
 The functions of most sequenced proteins have not been determined by experiment (Gerlt et al., 2011; Jacobson et al., 2014; Schnoes et al., 2009). They are also difficult to predict for enzymes with less than 60% sequence identity to characterized enzymes (Radivojac et al., 2013). The problem is much greater when seeking to predict the functions of entire metabolic pathways. Here, we propose a computational approach that outputs an enzymatic pathway and corresponding ligands, given a set of potential enzymes and metabolites, using information derived by experiment and/or computational analyses (Figure 1). The approach benefits from two considerations. First, predicting an entire pathway may sometimes be easier than predicting individual enzymatic functions in isolation, because the product of one enzyme is the substrate for the next in the pathway. Thus, even when each enzyme’s ligand assignment is ambiguous, the ligand assignments consistent with both enzymes may be more precise and accurate. Second, while it may be impossible to identify a pathway using information from any single method, there may be sufficient information provided by several methods. Our approach was inspired by the previous work using metabolite docking to multiple enzymes and substrate-binding proteins hypothesized to participate in the pathway (Jacobson et al., 2014; Kalyanaraman and Jacobson, 2010; Macchiarulo et al., 2004; Zhao et al., 2013), integrative structure determination of large macromolecular assemblies (Alber et al., 2007; Russel et al., 2012), and comparative genomics approaches for metabolic reconstructions (Markowitz et al., 2010; Karp et al., 2016; Osterman and Overbeek, 2003; Overbeek et al., 2005; Yamanishi et al., 2007; Ye et al., 2005).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/31097/elife-31097-fig1-v1.jpg)
+
+**Figure 1.:** The four stages of integrative modeling are: (1) Gathering information, (2) Designing model representation and evaluation, (3) Sampling good models, and (4) Analyzing models and information. (1) Here, the input information is gathered from seven different sources used to determine the candidate proteins, such as co-localization and conservation in the genome neighborhood, and the scoring restraints (docking scores from virtual screening, chemical transformations, ensemble similarity calculations of virtual screening hits from similarity ensemble approach, DSF screening hits, metabolic endpoints, and characterized chemical reactions). (2) A pathway model is represented as a graph composed of protein and ligand nodes. Proteins are depicted as diamonds and ligands are depicted as circles, with lines showing the node patterns evaluated by a given type of information. (3) The combinatorial optimization problem is solved by Monte Carlo simulated annealing sampling, consisting of randomly swapping nodes in and out of the pathway model and rearranging the edges between the nodes. (4) The final analysis stage involves assessing the sampling, precision, and accuracy of the models.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/31097/elife-31097-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** The preparation of the input data entails identification of the candidate proteins and candidate ligands (outlined in red) and the generation of information to be used as scoring restraints (outlined in blue). The initial step was sequence analysis of the TRAP solute binding proteins, and target proteins were identified for follow-up screening by DSF and genome neighborhood analysis (Uniprot ID P71336 and Uniprot ID A7JQX0). Analysis of the genome neighborhood network led to the selection of possible pathway proteins. In this case, the candidate proteins were hypothesized to be involved in sugar catabolism, so metabolic endpoints were selected from intermediates in central metabolism mapped in the KEGG database. The functions of close homologs (>70% sequence identity) were identified, which in this case, included D-mannonate dehydratase. Chemical transformation patterns were inferred by the Pfam annotations of each of the candidate proteins. Structural models of the candidate proteins were created by comparative modeling, and metabolite docking of a large screening library against each of these models was performed. The chemical structures of the metabolites with the top docking scores were compared chemoinformatically to produce SEA scores. With the chemical transformations and docking scores, the metabolite library was filtered down to a smaller set of candidate ligands. For every candidate ligand, each chemical transformation was applied in silico, and the results were compared chemoinformatically with every other candidate ligand to produce chemical transformation scores. This workflow resulted in the following sources of information to be used in scoring: DSF hits, metabolic endpoints, functions of close homologs, docking scores, SEA scores, and chemical transformation scores.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/31097/elife-31097-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Five enzyme families are extracted from the Pfam GNN, they are identified by cluster 223 in the SSN indicated by red circles. The Pfam families include; (A) alcohol dehydrogenases, (B) short chain dehydrogenases, (C) UxuA family sugar dehydratases, (D) pfkB family carbohydrate kinases, and (E) aldolases.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/31097/elife-31097-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Cytoscape app loads in good-scoring pathway models and displays them as a network built from the union of edges present in the ensemble of models. The automated yFiles hierarchic layout was applied to the network. The thickness of the edge represents the frequency that the edge appears in the ensemble. (B) The slider in the Results Panel can adjust the score cutoff for the models included in the network. In this view, the automated yFiles hierarchic layout is reapplied and singleton nodes are hidden for clarity. (C) An individual model is selected in the Results Panel, and the nodes and edges in the individual model are highlighted in the model’s unique color (in blue, here) on the network. The restraints are represented by the hatched edges connecting nodes corresponding to the restraints. Restraints that are violated in the mode are colored red.
 
 A pathway model is represented as a graph in which the enzymes, substrates, and products are nodes and the enzymatic reactions are edges (Figure 1). Input information, such as scores from experimental ligand screening, molecular docking screens, and chemical similarity, is encoded as ‘network’ restraints on the identity of the nodes and edges in the pathway; these restraints are combined into a scoring function. An ensemble of pathways consistent with the input information is computed by a Monte Carlo algorithm that samples well-scoring pathways over possible enzymes and metabolites. The resulting ensemble of good-scoring pathway models is assessed by its precision, its satisfaction of the input restraints, and ideally experimental observations not used in its construction. In addition to gauging the accuracy and precision of the models and the observations, this analysis can identify the most informative future experiments. Because the approach ranks alternative pathways using all available information, it in principle produces maximally accurate, precise, and complete pathway models given that information. The process of data gathering and modeling can iterate until a satisfactory model is obtained. We suggest that the four stages of integrative pathway mapping by satisfaction of network restraints mimic how human experts often derive and test pathway models.
 
@@ -53,15 +69,47 @@ A pathway model is represented as a graph in which the enzymes, substrates, and 
 
 The approach begins with a list of candidate proteins (here enzymes, binding proteins, and transporters) and a list of endogenous metabolites that are candidate substrates or products of these enzymes (Figure 1, Figure 1—figure supplement 1). The pathway members can be winnowed from the entire proteome by predicting functionally related proteins using information about the genome organization that is often available for bacterial pathways (Zhao et al., 2014). For example, for the gulonate pathway, we identified five metabolic enzymes that are conserved in the genome neighborhood of the TRAP transporter gene by constructing a genome neighborhood network (GNN) (Figure 1—figure supplement 2); the GNN approach has been demonstrated to accurately predict enzymes and transporters that function together in metabolic pathways based on conserved protein families in genome neighborhoods across different species (Zhao et al., 2014). The network restraints can then be inferred in multiple ways, exemplified by the following restraints in this study (Figure 2A). First, for each candidate, the libraries of endogenous metabolites are docked against either an experimentally determined structure if available or a comparative structure model (Mysinger and Shoichet, 2010). In the case of glycolysis, 2965 sugars in the KEGG database were screened against two crystal structures and eight comparative models for the 10 enzymes in this pathway (Kalyanaraman and Jacobson, 2010). Second, with the top 500 metabolites docked-and-ranked against each of the enzymes, the pathway enzymes may be linked by the similarity of their high-ranking docked ligands, here using the chemoinformatic Similarity Ensemble Approach (SEA) (Keiser et al., 2007; Lin et al., 2013); other related approaches can also be used (Besnard et al., 2012; Gregori-Puigjané and Mestres, 2006; Mestres et al., 2006; Nidhi et al., 2006; Paolini et al., 2006). The restraint can be informative because enzymes are often more likely to be pathway neighbors when their high-scoring docked ligands resemble each other. For instance, the top 500 metabolites of 3-phosphate dehydrogenase in the glycolysis pathway (as ranked by docking) are dominated by six chemotypes, while the phosphoglycerate kinase has three of these chemotypes overrepresented. This similarity is captured by the SEA E-value of 9.5 10−63, suggesting that the observed level of similarity between the two predicted ligand lists is unlikely to have occurred by chance (Figure 2—figure supplement 1C). Thus, the two enzymes are linked by their related predicted metabolites. Third, consideration of the enzymatic reaction types assigned to the enzymes’ superfamilies restrains the reactions in the pathway models. We require that the predicted metabolites can actually be substrates or products of an enzyme, given its reaction profile extracted from its protein family annotation. As an example, the glyceraldehyde 3-phosphate dehydrogenase is assigned the reactions that can convert an aldehyde to a phosphate and vice versa (Supplementary file 6). Finally, all available experimental screening hits, substrate specificities from homology, constraints on the pathway endpoints, and other information can also be considered. Each of these considerations is added to a scoring function that ranks alternative pathway models by assessing their consistency with the available information (Figure 2B). Thus, pathway models are preferred when they contain (i) good-scoring metabolite-enzyme pairs, (ii) pairs of neighboring enzymes that share chemotypes, (iii) pairs of neighboring enzymes catalyzing chemical reactions that allow the product of an upstream enzyme to be a substrate of the downstream enzyme, etc. This integrative approach does not require that each type of restraint be available for each protein and metabolite, nor that each restraint is accurate or precise; it only requires that the scoring function consisting of all restraints is sufficiently accurate and precise.
 
-## Benchmarking
+![Figure 2.](https://cdn.elifesciences.org/articles/31097/elife-31097-fig2-v1.jpg)
+
+**Figure 2.:** (A) Example of three alternative models evaluated using different types of restraints based on modeling of the glycolysis pathway with a subset of pathways shown. The restraints on node patterns are shown using colored lines (blue – docking restraints, green – SEA restraints, purple – chemical transformation restraints, red – restraints with unfavorable scores). Metabolites are labeled by KEGG ID and enzymes are labeled by step in glycolysis pathway. On the left, alternate model one is consistent with docking scores, but not with all SEA scores and chemical transformations. In the middle, alternate model two is consistent with the docking scores and SEA scores, but not with chemical transformations. On the right, alternate model three is consistent with docking scores, SEA scores, and chemical transformations, thus increasing the rank of the correct enzyme-substrate pairings. (B) Alternative models shown with chemical structures. (C), Ranks of correct substrate for the corresponding enzyme at each step in the glycolysis benchmark case. 1 – glucokinase, 2 – phosphoglucose isomerase, 3 – phosphofructokinase, 4 – fructose bisphosphate aldolase, 5 – triosephosphate isomerase, 6 – glyceraldehyde 3-phosphate dehydrogenase, 7 – phosphoglycerate 8 – phosphoglycerate mutase 9 – enolase and 10 – pyruvate kinase.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/31097/elife-31097-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Two decoy enzymes were included with the four enzymes in the CMP KDO-8P biosynthesis pathway, with lengths from three to six enzymes sampled. Pathway models with the best score for different number of protein pathway members. For comparison, the correct pathway is outlined in green. (B) Scores of pathway models at different pathway lengths. The top-scoring models consisted of the four known CMP KDO-8P pathway enzymes. The best score at each pathway length is shown as a blue circle, the score of the pathway model that matches the correct pathway is shown as a green triangle, and all other scores as black dots. The cutoff for good-scoring models, which is two standard deviations below the best score, is shown as a red dashed line. (C) Enzymes in the same pathway often cluster together in dendrograms constructed based on the SEA score as a distance metric. Such clustering is illustrated for glycolysis here. (D) Assessments of the three benchmark pathways for which the candidate enzyme set is incomplete. In each pathway, one enzyme is replaced with a ‘dummy’ enzyme, for which there is a lack of input information. For serine biosynthesis, the correct pathway remained the top-scoring model. For the other cases, the inclusion of the dummy enzyme lowered the correct pathway ranking, which, nevertheless, remained within the top-scoring models.
+
+### Benchmarking
 
 The method was tested by retrospectively ordering enzymes and identifying their substrates in three well characterized pathways: glycolysis (10 enzymes) (Kalyanaraman and Jacobson, 2010), cytidine monophosphate 3-deoxy-D-manno-octulosonate 8-phosphate (CMP KDO-8P) biosynthesis (four enzymes), and serine biosynthesis (five enzymes) (Supplementary files 1 and 2). Docking screens of several thousand metabolites against comparative models of the enzymes, chemical transformation annotations of the enzymes, and the chemoinformatic SEA analysis were the input information for mapping each pathway. Because the functions of these enzymes have been characterized, homology-based annotations were not included as restraints for the purposes of the retrospective benchmark. The method successfully identified the substrates and products and correctly ordered all pathway components in the top-scoring models (Figure 2; Supplementary files 1 and 2). The method performed well even when the number and identity of pathway enzymes were unspecified (Figure 3AB) or when the candidate enzymes set was incomplete (Figure 2—figure supplement 1D).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/31097/elife-31097-fig3-v1.jpg)
+
+**Figure 3.:** (A) 12 representative pathway models of TRAP SBP pathway predictions ordered by score, starting from the top with the best-scored prediction. The scores of the representative pathways are listed to the right of the corresponding pathway. Pathway enzymes are labeled by numbers as follows: 1 – HiGulD, 2 – HiUxuB, 3 – HiUxuA, 4 – HiKdgK, 5 – HiKdgA. (B) Graphical representation of an ensemble of representative pathway models. The predicted components in the ensemble of pathway models at each position are vertically aligned to the corresponding position in the gray pathway on the top. Ligand components are shown as circle nodes with the color corresponding to the ligand identity. Chemical structures are shown in Figure 3—figure supplement 2. Pathway enzymes are shown as diamond nodes with the same numbering as above. Edges are colored by individual pathway model prediction. The validated prediction is shown by black edges, enzyme nodes are colored black, and substrate/product nodes are outlined in black.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/31097/elife-31097-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Independent Monte Carlo sampling runs were performed, and the number of clusters of similar pathways for each number of runs was computed. (A) Glycolysis pathway, (B) CMP KDO-CMP biosynthesis pathway, (C) Serine synthesis pathway, and (D) L-gulonate catabolism pathway. (E) Probability of acceptance at the MC step in a sampling run, where D is the difference between the scores of the current pathway model and the new pathway model.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/31097/elife-31097-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The colored nodes correspond to the coloring in Figure 3..
 
 The accuracy of the predicted benchmark pathways is not limited by the lack of sampling (Figure 3—figure supplement 1), but rather by the input information (Figure 2A). Thus, the integration of multiple types of information improves the accuracy and precision of pathway prediction (Figure 2BC). For example, the correct substrate of the dehydrogenase in the glycolysis pathway, glyceraldehyde 3-phosphate (G3P), is predicted to be most consistent with all the input information. Although by docking alone, the rank of G3P is only 117 out of the 2965 metabolites docked, the additional restraints from SEA and chemical transformations lead to the overall top ranking of G3P (Figure 2A).
 
 Several caveats bear mentioning. Both thorough sampling and accurate scoring become more difficult when the number of possible pathways increases (which in turn arises from a large set of candidate enzymes and metabolites), when some enzymes or metabolites are not in the input set, when the pathway is long, or its length is unknown. Here, only linear pathways are sampled; thus, non-linear pathways, including cyclic pathways, are not modeled. The preparation of input information requires manual processing. Although docking, chemoinformatics, comparative modeling, chemical transformations, and differential scanning fluorimetry (DSF) screening information may be collected in an automated way, the quality of information often benefits from expert choices. For example, comparative model building can be especially time consuming when low sequence similarity structures are available for target building, and docking may require expert intervention when parameterization of cofactors is necessary for correctly defining the binding site. Nevertheless, we emphasize that once the input information is provided, its conversion into the predicted pathway is automated and does not require human intervention. Finally, docking against modeled structures will sometimes fail, even with the added advantages of insisting on consistency in docking hit lists. Some of these pitfalls can be detected through testing the thoroughness of sampling (Figure 3—figure supplement 1), statistical bootstrapping and jack-knifing tests (Efron, 1981), and by direct experimental testing of predictions (Figure 4). The method becomes more robust when the pathway start and end are defined. More generally, failures can also be reduced by introducing restraints or constraints that limit the size of the input enzyme and metabolite sets, by improving the accuracy of the scoring function, by limiting the sampling, or by further filtering the set of good-scoring solutions.
 
-## Prospective prediction of the L-gulonate catabolic pathway in Haemophilus influenzae Rd KW20
+![Figure 4.](https://cdn.elifesciences.org/articles/31097/elife-31097-fig4-v1.jpg)
+
+**Figure 4.:** (A) The best-scoring pathway identified using the integrative mapping approach is annotated with experimental evidence: enzyme activity (blue), fitness growth determinants (red), transcript analyses on L-gulonate media (orange), atomic structure (green), and isotopic metabolic labeling (purple). The pathway demonstrates L-gulonate degradation into glyceraldehyde 3-phosphate and pyruvate. Bonds undergoing changes in the subsequent steps are colored in red. (B) Kinetics of pathway enzymes on predicted substrates. (C) Crystal structure of L-gulonate bound to SBP TRAP (PDB ID: 4PBQ). (D) Knockout growth assays of H. influenzae strains, ΔGulP (gulonate transporter periplasmic subunit) and ΔGulD (L-gulonate dehydrogenase), when grown on D-glucose vs. L-gulonate as a sole carbon source. (E) Fold change in expression for each gene when grown on the indicated carbon source, relative to growth on glucose. Error bars indicate one standard deviation for three biological replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/31097/elife-31097-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Time-dependent labeling of central metabolites utilizing 50% U-13C-L-gulonate as sole carbon source. 3 PG (3-phosphoglycerate). PEP (phosphoenolpyruvate). (B) Time-dependent labeling of fructuronate utilizing 50% U-13C-L-gulonate as sole carbon source. (C) The catalysis of L-gulonate (orange) enters central metabolism (blue) of Hemophilus influenzae str. Rd KW20 at glyceraldehyde 3-phosphate and pyruvate. This metabolic network also outlines the truncated TCA cycle found in Hemophilus influenza (Othman et al., 2014). Metabolites detectable via GC-MS are marked with an asterisks (*).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/31097/elife-31097-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Genomic context of L-gulonate, D-glucuronate, and L-galactonate utilization genes and regulons in 45 bacteria from the Pasteurellales lineage. The L-gulonate catabolic pathway from H. influenzae Rd KW20 was projected onto the pathogenic gammaproteobacteria, using the subsystems approach in the SEED genomic platform (Overbeek et al., 2005). Analysis of the adjacent metabolic pathways for use of hexuronates (D-glucuronate, D-galacturonate) and another 6-carbon aldonic acid (L-galactonate) revealed that the signature enzymes for the L-gulonate and the D-glucuronate (GlcA) pathways are the L-gulonate dehydrogenase; the GulD and the GlcA isomerases; and UxaC, respectively. Predicted sugar utilization phenotypes are given in parentheses. Among 21 analyzed strains of H. influenzae, 17 strains possess the uronate catabolic genes. Genes with the same functional roles are marked in matching colors. Pairwise similarity between orthologs in different H. influenzae strains is highlighted by light green (>95% protein identity), yellow (>50%), and pink (<50%). Tripartite TRAP transporters are shown by magenta arrows. Experimentally defined specificities of TRAP SBPs are indicated for gulP/uxuP/lgoP (LGul, L-gulonate, GlcA, D-glucuronate, LGal, L-galactonate), these genes are outlined in red and their locus tags are given below. Transcriptional regulators are shown by black arrows. Predicted DNA-binding sites of GulR and UxuR regulators are shown by black pins, and their common DNA motif is shown as a logo. For reconstruction of UxaR and GulR regulons, we used an established comparative genomics approach, based on identification of candidate regulator-binding sites using RegPredict tool (Novichkov et al., 2010). LGul pathway gene organization is conserved in 8 out of 21 hr. influenza strains into a single genetic locus containing two divergently transcribed operons, gulD-gulPQM-kdgK-uxuB-kdgA and gulR-uxuA, that are controlled by candidate GulR-binding sites in their common promoter region. Glucuronide hydrolases from different families are shown by white arrows. (B) Genomic context of D-glucuronate and D-galacturonate utilization genes and regulons in E. coli K-12. (C) Reconstructed metabolic pathways for utilization of hexuronic and aldonic acids. Solid and broken arrows indicate enzymatic reactions and transport, respectively. The TRAP and MFS transporter families are indicated by red stars and squares, respectively. (D) Genomic context of GulD orthologs in Enterobacteria. The uncharacterized genes gulT and gulR-II encode a novel MFS-transporter and a GntR-family regulator that are likely specific to L-gulonate. (E) Phylogenetic tree for selected zinc-dependent dehydrogenases from the COG1063 family. The analyzed GulD orthologs from the Pasteurellales and Enterobacteria are 62% identical to each other, while within the Pasteurellales lineage all GulDs are >70 identical. The previously characterized L-gulonate-specific dehydrogenases from E. coli K-12 and Halomonas spp. (Wichelecki et al., 2014) belong to the RspB branch, which is distinct from the GulD branch established in this work.
+
+### Prospective prediction of the L-gulonate catabolic pathway in Haemophilus influenzae Rd KW20
 
 L-gulonate and D-mannonate were identified as potential ligands of the TRAP solute binding protein (SBP) from H. influenzae (Supplementary file 3), using DSF screening of a library of 189 compounds (Vetting et al., 2015). The HiGulPQM TRAP transporter consists of three subunits, including the periplasmic SBP HiGulP, and two membrane components HiGulQ and HiGulM. SBPs recognize substrates to be imported into the cytosol by the transporter. Because these sugars are not involved in central carbon metabolism, the observation suggested an uncharacterized pathway that converts L-gulonate or D-mannonate into substrates for central carbon metabolism. While this pathway had been proposed based on the DSF screening hits and genome neighborhood analysis, we sought to predict it using integrative pathway mapping, based on the following information (Figure 1, Figure 1—figure supplement 1).
 
@@ -69,7 +117,7 @@ First, the position of TRAP SBP was fixed at the pathway start and its ligand wa
 
 The sampling algorithm found 154 unique high-scoring pathways, which clustered into 12 groups (Figure 3AB). The best-scoring pathway, starting from L-gulonate as the ligand of the TRAP SBP, begins with its oxidation to D-fructuronate by the first dehydrogenase (HiGulD) as the first catalytic step (Figure 4A). Next, reduction of D-fructuronate by the second dehydrogenase (HiUxuB) produces D-mannonate; its dehydration by the dehydratase (HiUxuA) produces 2-keto-3-deoxy-D-gluconate. The last few steps in the pathway model are part of a conserved Entner-Dourdoroff pathway, ending with glyceraldehyde 3-phosphate and pyruvate, known members of central metabolism. Even when individual restraints are excluded from the input information, the best-scoring pathway falls within the top-scoring pathway models. For example, the same pathway has the highest score if either the starting or end point is not restrained. If information about both starting and end points is excluded, this pathway model drops to 15th in score.
 
-## Experimental testing of the L-gulonate catabolic pathway
+### Experimental testing of the L-gulonate catabolic pathway
 
 The pathway model was tested experimentally in five independent ways, including by enzyme activity, X-ray crystallography, fitness growth assays of the deletion mutants, transcript analyses, and isotopic metabolic labeling (Figure 4A–E).
 
@@ -83,17 +131,244 @@ Integrative pathway mapping provides a flexible and general approach to function
 
 ## Materials and methods
 
-## Computational methods
+**Key resources table**
 
-## Integrative pathway mapping
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Haemophilus influenzae)</td>
+      <td>UxuA</td>
+      <td>This paper, pNYCOMPSC-tagless HiUxuA vector</td>
+      <td>Uniprot:P44488</td>
+      <td>See Supplementary file 7. cloned into the C-terminal TEV cleavable 10x-Histag containing vector pNYCOMPS-LIC-TH10- ccdB (C-term) such that the tag is out of frame</td>
+    </tr>
+    <tr>
+      <td>Gene (H. influenzae)</td>
+      <td>GulD</td>
+      <td>This paper, pNYCOMPSC-tagless HiGulD vector</td>
+      <td>Uniprot:Q57517</td>
+      <td>See Supplementary file 7. cloned into the C-terminal TEV cleavable 10x-Histag containing vector pNYCOMPS-LIC-TH10- ccdB (C-term) such that the tag is out of frame</td>
+    </tr>
+    <tr>
+      <td>Gene (H. influenzae)</td>
+      <td>KdgK</td>
+      <td>This paper, HiKdgK-pSGC-His vector</td>
+      <td>Uniprot:P44482</td>
+      <td>See Supplementary file 7. cloned into the N-terminal TEV cleavable 6x-Histag containing vector pNIC28-Bsa4</td>
+    </tr>
+    <tr>
+      <td>Gene (H. influenzae)</td>
+      <td>UxuB</td>
+      <td>This paper, HiUxuB-pSGC-His vector</td>
+      <td>Uniprot:P44481</td>
+      <td>See Supplementary file 7. cloned into the N-terminal TEV cleavable 6x-Histag containing vector pNIC28-Bsa4</td>
+    </tr>
+    <tr>
+      <td>Gene (H. influenzae)</td>
+      <td>KdgA</td>
+      <td>This paper, HiKdgA-pSGC-His vector</td>
+      <td>Uniprot:P44480</td>
+      <td>See Supplementary file 7. cloned into the N-terminal TEV cleavable 6x-Histag containing vector pNIC28-Bsa4</td>
+    </tr>
+    <tr>
+      <td>Gene (H. influenzae)</td>
+      <td>GulP</td>
+      <td>This paper</td>
+      <td>Uniprot:P71336</td>
+      <td>See Supplementary files 8 and 9</td>
+    </tr>
+    <tr>
+      <td>Gene (H. influenzae)</td>
+      <td>GulQ</td>
+      <td>This paper</td>
+      <td>Uniprot:P44484</td>
+      <td>See Supplementary files 8 and 9</td>
+    </tr>
+    <tr>
+      <td>Gene (H. influenzae)</td>
+      <td>GulM</td>
+      <td>This paper</td>
+      <td>Uniprot:P44483</td>
+      <td>See Supplementary files 8 and 9</td>
+    </tr>
+    <tr>
+      <td>Gene (H. influenzae)</td>
+      <td>UxuR</td>
+      <td>This paper</td>
+      <td>Uniprot:P44487</td>
+      <td>See Supplementary files 8 and 9</td>
+    </tr>
+    <tr>
+      <td>Oligonucleotide (H. influenzae)</td>
+      <td>UxuA, UxuR, GulD, GulP, GulQ, GulM, KdgK, UxuB, KdgA, Hflu</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 8. qRT-PCR oligonucleotide sequences used for gene expression profiling</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (H. influenzae Rd KW20)</td>
+      <td>H. flu</td>
+      <td>https://www.atcc.org</td>
+      <td>ATCC 51907</td>
+      <td>Supplementary file 9. Genetic deletion mutants of the putative L-gulonate catabolism pathway in H. influenzae Rd KW20</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (H. influenzae)</td>
+      <td>∆GulP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 8. Genetic deletion mutants of the putative L-gulonate catabolism pathway in H. influenzae Rd KW20</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (H. influenzae)</td>
+      <td>∆GulD</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 8. Genetic deletion mutants of the putative L-gulonate catabolism pathway in H. influenzae Rd KW20</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (E. coli BL21 (DE3)</td>
+      <td>BL21 (DE3) E. coli containing the pRIL plasmid</td>
+      <td>Stratagene</td>
+      <td></td>
+      <td>Growth media contain 25 μg/mL Kanamycin or 100 μg/mL Carbomycin and 34 μg/mL Chloramphenicol</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNAprotect Bacteria Reagent</td>
+      <td>Qiagen</td>
+      <td>Cat No./ID: 76506</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat No./ID: 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ProtoScript First Strand cDNA Synthesis Kit</td>
+      <td>New England BioLabs</td>
+      <td>Cat No./ID: E6300S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-keto-3-deoxy-D- gluconate</td>
+      <td>Enzymatically synthesized</td>
+      <td>CAS: 17510-99-5</td>
+      <td>Enzymatic synthesis by D-mannonate dehydratase (Uniprot ID B0T0B1). Verified via 1H-NMR</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-keto-3-deoxy-D- gluconate-6- phosphate</td>
+      <td>Enzymatically synthesized</td>
+      <td>CAS: 884312-23-6</td>
+      <td>Enzymatic synthesis by D-mannonate dehydratase (Uniprot ID B0T0B1) and 1 μM 2-keto-3-deoxy-D-gluconate kinase (Uniprot ID A4XF21). Verified via 1H-NMR</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Integrative Pathway Mapping</td>
+      <td>This paper</td>
+      <td>https://github.com/salilab/pathway_mapping</td>
+      <td>The source code for the IMP program, benchmark, input scripts files, and output files for the benchmark and the gulonate pathway calculations are available here(50)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IMP program</td>
+      <td>Russel D, et al, Putting the pieces together: integrative structure determination of macromolecular assemblies. PLoS Biology. 10(1):e1001244, 2012</td>
+      <td>http://integrativemodeling.org</td>
+      <td>Integrative modeling</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MODELLER</td>
+      <td>B. Webb, A. Sali. Comparative Protein Structure Modeling Using Modeller. Current Protocols in Bioinformatics, John Wiley &amp; Sons, Inc., 5.6.1- 5.6.32, 2014.</td>
+      <td>https://salilab.org/modeller/</td>
+      <td>Comparative modeling</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DOCK3.6</td>
+      <td>Mysinger MM, Shoichet BK. Rapid context-dependent ligand desolvation in molecular docking. J Chem Inf Model. 50(9):1561-73, 2010.</td>
+      <td>http://dock.compbio.ucsf.edu/</td>
+      <td>Docking</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Automated version DOCK3.6</td>
+      <td>Irwin JJ, et al. Automated Docking Screens: A Feasibility Study. J. Med. Chem. 52(18)5712–5720, 2009.</td>
+      <td>http://blaster.docking.org/</td>
+      <td>Docking</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Similarity Ensemble Approach (SEA)</td>
+      <td>Keiser MJ, et al. Relating protein pharmacology by ligand chemistry. Nat Biotechnol. 25(2): 197-206, 2007.</td>
+      <td>http://sea.bkslab.org/</td>
+      <td>SEA chemo-informatic calculations</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>OpenEye Scientific Software</td>
+      <td>OpenEye Scientific Software I. OEChem. 2.0.2 ed2014.</td>
+      <td>https://www.eyesopen.com/</td>
+      <td>In silico chemical transformations</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RDKit</td>
+      <td>Landrum G. RDKit: Open-source cheminformatics. Release_2016.03.1 ed2016</td>
+      <td>http://www.rdkit.org/</td>
+      <td>Chemical similarity calculations</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EFI-EST</td>
+      <td>Gerlt JA, et al. Enzyme Function Initiative-Enzyme Similarity Tool (EFI-EST): A web tool for generating protein sequence similarity networks. Biochim. Biophys. Acta. 1854(8):1019- 1037, 2015.</td>
+      <td>http://efi.igb.illinois.edu/efi-est/index.php</td>
+      <td>Genome neighborhood networks</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pythoscape v1.0</td>
+      <td>Barber AE, Babbitt PC. Pythoscape: a framework for generation of large protein similarity networks. Bioinformatics. 28(21):2845- 2846, 2012.</td>
+      <td>http://www.rbvi.ucsf.edu/trac/Pythoscape</td>
+      <td>Sequence similarity networks</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cytoscape v3.4</td>
+      <td>Shannon P, et al. Cytoscape: a software environment for integrated models of biomolecular interaction networks. Genome Res. 13(11):2498-504, 2003.</td>
+      <td>http://www.cytoscape.org/</td>
+      <td>Network visualization</td>
+    </tr>
+  </tbody>
+</table>
+
+### Computational methods
+
+#### Integrative pathway mapping
 
 The method computes all linear pathway models consistent with the input information, in a four-stage process (Figure 1). First, input information has to be collected from computational and/or experimental sources. Here, three established and convenient computational methods (i.e. molecular docking, Similarity Ensemble Approach, and chemical transformation analysis) were selected to illustrate the idea of integrative pathway mapping and to benchmark it on three known pathways. In principle, subsets of input information can be missing. Moreover, additional types of information can be added, hopefully improving the accuracy, precision, and applicability of the approach, as illustrated by the gulonate pathway prediction that also depends on DSF data, pathway anchor points, and protein homology considerations. Second, each data point is converted into a pathway restraint via a Z-score. The score of a pathway model is then a sum of these Z-scores. Third, the good scoring pathways are found by Monte Carlo sampling of pathways consisting of input enzymes and metabolites. Finally, the good scoring pathways are analyzed. Next, we describe the four stages of integrative pathway mapping in turn, using the L-gulonate catabolic pathway as an example (Figure 1).
 
-## Stage 1: Gathering information
+#### Stage 1: Gathering information
 
 Information for the pathway mapping cases comes from the following sources: high-throughput DSF screening, genome context, structure-based docking screens, chemical transformations based on Pfam classification (Finn et al., 2016), and knowledge of central metabolism. With this information in hand, we use it to design representation, scoring, and sampling, which determine the output models.
 
-## Stage 2: Designing pathway model representation and evaluation
+#### Stage 2: Designing pathway model representation and evaluation
 
 For pathways of unknown length, we model pathways of each possible length independently, and then select an optimal combination of pathway length and score. The pathway model is represented as a linear graph, in which the molecular components are represented by nodes and the interactions are represented by edges. In the specific case of a metabolic pathway, the two classes of molecular components are the metabolites (substrates and products) and the proteins, which are binding proteins, transporters, or enzymes converting substrates to products. In addition, we allow for the inclusion of a dummy node representing an unknown and uncharacterized protein in the pathway. The sampling space of the models is constrained by the candidate enzyme and metabolite node identities that are given as input, as well as the linearity and length of the pathway.
 
@@ -101,75 +376,137 @@ A sequence similarity network (SSN) and genome neighborhood network (GNN) were c
 
 To obtain the smallest candidate subset of KEGG that contains all metabolites needed to predict a pathway, we considered only the metabolites with good virtual screening scores against any of the candidate proteins as well as metabolites that can be derived from the virtual screening hits by applying chemical transformations related to the known activities of enzymes in the relevant superfamilies. Therefore, the top 1000-scoring metabolites from each docking screen are added to a single list of metabolites. Chemical transformations performed by each predicted enzyme are applied on the top-scoring metabolites using OEChem Tools (OpenEye Scientific Software I, 2014) excluding metabolites with no matches to the substrate motifs. Products of these reactions are compared by RDKit Morgan fingerprints (Landrum, 2016; Rogers and Hahn, 2010) to the metabolites from the KEGG LIGAND database (Kanehisa et al., 2016; Kanehisa and Goto, 2000). KEGG metabolites that have a Tanimoto coefficient above 0.75 to the products are added to the list of metabolites. This final list of metabolites contains 3650 unique ligands that are considered as the sampling space for candidate metabolite nodes.
 
-## Scoring pathway models
+#### Scoring pathway models
 
-Information about the pathway is encoded as pathway restraints that are summed into a scoring function. For example, a candidate edge between a given enzyme and metabolite is restrained by a virtual screening score for the pair. In an attempt to ‘weigh’ each piece of information optimally, each term in the scoring function is expressed as a Z-score. Our scoring function can in principle benefit from all available information, even when some information is not available for every enzyme or ligand. In such cases, the corresponding terms are simply omitted from the scoring function. A dummy node in a model contributes no score, except towards the chemical transformation term. Thus, the scoring function (ZPathway) for ranking alternative L-gulonate pathways is a sum of Z-scores for each type of restraint, including virtual screening (ZVS), chemical transformations (ZCT), SEA analysis (ZSEA), known pathway boundaries (ZCM), high-throughput screening (ZHTS), and homology to characterized enzymes (ZHS):ZPathway= ZVS+ ZCT+ZSEA +ZCM+ ZHTS+ZHS
+Information about the pathway is encoded as pathway restraints that are summed into a scoring function. For example, a candidate edge between a given enzyme and metabolite is restrained by a virtual screening score for the pair. In an attempt to ‘weigh’ each piece of information optimally, each term in the scoring function is expressed as a Z-score. Our scoring function can in principle benefit from all available information, even when some information is not available for every enzyme or ligand. In such cases, the corresponding terms are simply omitted from the scoring function. A dummy node in a model contributes no score, except towards the chemical transformation term. Thus, the scoring function (ZPathway) for ranking alternative L-gulonate pathways is a sum of Z-scores for each type of restraint, including virtual screening (ZVS), chemical transformations (ZCT), SEA analysis (ZSEA), known pathway boundaries (ZCM), high-throughput screening (ZHTS), and homology to characterized enzymes (ZHS):
+
+$$
+Z_{Pathway}=Z_{VS}+Z_{CT}+Z_{SEA}+Z_{CM}+Z_{HTS}+Z_{HS}
+$$
 
 Next, we define these specific pathway restraints.
 
-## Molecular docking screens
+#### Molecular docking screens
 
-Favorable binding interactions predicted by docking can illuminate the identity of a ligand-protein pair. Pathway models with ligand-protein pairs that have favorable docking scores are more likely to be correct than those that have unfavorable docking scores. For each candidate pathway protein, a crystal structure or homology model, generated by MODELLER (Sali and Blundell, 1993; Eswar et al., 2006), was prepared with an automated pipeline for docking (Irwin et al., 2009) (Supplementary files 5 and 6). The proposed active site for each enzyme was identified by superimposing liganded structures of closely related family members or related domains; for the enzymes considered here, identical results would have been obtained by identifying the largest cavity on the structure, for example, by using program PocketPicker (Coleman and Sharp, 2010). Co-factors (as generated by PRODRG server [Schüttelkopf and van Aalten, 2004]), metal ions, and water molecules were included in the protein structure preparation where required for enzyme function (Irwin et al., 2005; Korczynska et al., 2014; London et al., 2014). The KEGG database (Kanehisa et al., 2016; Kanehisa and Goto, 2000) of 14,212 unique metabolites from the ZINC database (Irwin et al., 2012) was docked against each target with DOCK3.6 in an automated fashion (Mysinger and Shoichet, 2010) (http://dock.compbio.ucsf.edu/). Compounds were ranked by a physics-based scoring function that evaluates ligand-protein complementarity considering van der Waals and electrostatic interactions, corrected for ligand desolvation (Mysinger and Shoichet, 2010; Meng et al., 1992; Wei et al., 2002). For each protein, the docking scores were converted to Z-scores by subtracting the mean and dividing by the standard deviation of the docking scores. The docking Z-score for the entire pathway model is the normalized sum of the Z-scores for all substrate-enzyme and product-enzyme pairs:ZVS = −1N∑iNZi,where N is the total number of enzyme-substrate and enzyme-product pairs in the pathway model. Similar normalizations of docking scores have been described for other applications (Casey et al., 2009).
+Favorable binding interactions predicted by docking can illuminate the identity of a ligand-protein pair. Pathway models with ligand-protein pairs that have favorable docking scores are more likely to be correct than those that have unfavorable docking scores. For each candidate pathway protein, a crystal structure or homology model, generated by MODELLER (Sali and Blundell, 1993; Eswar et al., 2006), was prepared with an automated pipeline for docking (Irwin et al., 2009) (Supplementary files 5 and 6). The proposed active site for each enzyme was identified by superimposing liganded structures of closely related family members or related domains; for the enzymes considered here, identical results would have been obtained by identifying the largest cavity on the structure, for example, by using program PocketPicker (Coleman and Sharp, 2010). Co-factors (as generated by PRODRG server [Schüttelkopf and van Aalten, 2004]), metal ions, and water molecules were included in the protein structure preparation where required for enzyme function (Irwin et al., 2005; Korczynska et al., 2014; London et al., 2014). The KEGG database (Kanehisa et al., 2016; Kanehisa and Goto, 2000) of 14,212 unique metabolites from the ZINC database (Irwin et al., 2012) was docked against each target with DOCK3.6 in an automated fashion (Mysinger and Shoichet, 2010) (http://dock.compbio.ucsf.edu/). Compounds were ranked by a physics-based scoring function that evaluates ligand-protein complementarity considering van der Waals and electrostatic interactions, corrected for ligand desolvation (Mysinger and Shoichet, 2010; Meng et al., 1992; Wei et al., 2002). For each protein, the docking scores were converted to Z-scores by subtracting the mean and dividing by the standard deviation of the docking scores. The docking Z-score for the entire pathway model is the normalized sum of the Z-scores for all substrate-enzyme and product-enzyme pairs:
 
-## Chemical transformations
+$$
+Z_{VS} = −\frac{1}{N}\sumiNZ_{i},
+$$
+
+where N is the total number of enzyme-substrate and enzyme-product pairs in the pathway model. Similar normalizations of docking scores have been described for other applications (Casey et al., 2009).
+
+#### Chemical transformations
 
 Chemical transformations derived from protein family annotations can help identify the substrate and product of an enzyme. These generic chemical transformations describe the enzymatic reaction without precise knowledge of the substrate, encoding the differences between the reactant and product on a more general level. While the full Enzyme Commission (EC) number describes the substrate specificity of an enzyme, the generic chemical transformation typically corresponds to the third level EC classification (Hatzimanikatis et al., 2005). For example, a serine acetyltransferase is a transferase that catalyzes the reaction of converting an alcohol into an ester. Pathway models with substrate-product pairs that match the chemical transformations are more likely to be correct than those pairs that do not (however, the final predicted reactions reflect the totality of all restraints, not only chemical transformation restraints).
 
 The chemical transformation is determined from the Pfam classification (Finn et al., 2016) from the generic chemical reaction or reactions that are conserved across members of the protein family. Multiple chemical transformations may be considered for a single family. Relying on the library generation tool in OEChem Tools, the in silico transformation using SMIRKS strings was performed on each metabolite, represented as a SMILES string (Supplementary files 5 and 6). SMIRKS strings encode a generic reaction composed of a structural motif or pattern in the substrate and the corresponding pattern in the resulting product. Using RDKit, the Tanimoto coefficient between the transformed molecule and every other metabolite is computed based on the Morgan fingerprints, which are graph-based circular fingerprints useful for structural comparisons, with chirality taken into account. Because no transformation is defined for a dummy node, the Tanimoto coefficient between the substrate of the dummy node and every other metabolite is computed. For molecules with undefined stereocenters, the highest Tanimoto coefficient for up to 16 distinct stereoisomers was used.
 
-Tanimoto coefficients were converted into Z-scores, similarly to the docking Z-scores. The score for transformations is the average Z-score over the Z-scores of all substrate-product-enzyme node triads in a model:ZCT = 1N∑iNZi,where N is the total number of substrate-product-enzyme triads in the pathway model.
+Tanimoto coefficients were converted into Z-scores, similarly to the docking Z-scores. The score for transformations is the average Z-score over the Z-scores of all substrate-product-enzyme node triads in a model:
 
-## Similarity ensemble approach
+$$
+Z_{CT} = \frac{1}{N}\sumiNZ_{i},
+$$
+
+where N is the total number of substrate-product-enzyme triads in the pathway model.
+
+#### Similarity ensemble approach
 
 Comparison of ensembles of ligands using the Similarity Ensemble Approach (SEA) version 1.0 can predict functionally-linked proteins from the similarity of their ligands (Keiser et al., 2007), irrespective of their sequence or structural similarities (Lin et al., 2013). It is more likely that enzymes with high ligand similarity than enzymes with low ligand similarity are adjacent to each other in a pathway, as exemplified by a DUDE analysis (Irwin et al., 2012) (Figure 2—figure supplement 1C). Ensembles of predicted ligands can be obtained from virtual screening and used to restrain the identities of pairs of enzymes in a pathway (Fan et al., 2013). The top 500 docking-ranked metabolites for each enzyme were considered as the ligand ensemble. SEA E-values were calculated based on the similarity between these top 500 metabolites for each pair of enzymes in a putative pathway. The SEA E-value reflects the significance of the similarity between ligand ensembles for a pair of enzymes, compared to an expectation for two similarly sized sets of randomly selected metabolites from KEGG.
 
-Specifically, the SEA E-value (evalue) for two consecutive pathway proteins A and B is first converted into the SAB score:SAB= wAB*FAB ,    wAB=min⁡(-log⁡evalue, 50)where FAB is 150min⁡(wAA,wBB), modeling our confidence in the SEA analysis. Next, the SAB score is normalized into a Z-score Si by subtracting the mean and dividing by the standard deviation obtained from the distribution of SAB  scores for all pairs of input enzymes, whether or not they are linked in the pathway. Finally, the SEA component (ZSEA) of the integrative pathway score ZPathway is the Si score averaged over all consecutive protein pairs in the tested pathway:ZSEA=  1N∑iNSi
+Specifically, the SEA E-value ($e_{value}$) for two consecutive pathway proteins A and B is first converted into the $S_{AB}$score:
 
-## Pathway nodes and boundaries
+$$
+S_{AB}=w_{AB}*F_{AB},w_{AB}=min⁡(-log⁡e_{value},50)
+$$
+
+where $F_{AB}is\frac{1}{50}min⁡(w_{AA},w_{BB})$, modeling our confidence in the SEA analysis. Next, the $S_{AB}$score is normalized into a Z-score Si by subtracting the mean and dividing by the standard deviation obtained from the distribution of $S_{AB}$ scores for all pairs of input enzymes, whether or not they are linked in the pathway. Finally, the SEA component ($Z_{SEA}$) of the integrative pathway score ZPathway is the Si score averaged over all consecutive protein pairs in the tested pathway:
+
+$$
+Z_{SEA}=\frac{1}{N}\sum_{i}^{N}S_{i}
+$$
+
+#### Pathway nodes and boundaries
 
 Any known nodes of the pathway can be easily specified as constraints on the search for pathways that satisfy all input information. In the particular case of the L-gulonate catabolic pathway, a solute-binding protein (SBP) subunit of a TRAP transporter was identified, based on its strong sequence similarity to the TRAP SBP family. Thus, this transporter defines the start of the metabolic pathway to be modeled, with the rest of the pathway corresponding to intracellular enzymes acting on the transporter’s substrate in series.
 
 Similarly, knowledge about the endpoints of metabolic pathways can also constrain integrative pathway mapping. For catabolic pathways of sugars, we assume that the pathway produces a compound that feeds into central carbohydrate metabolism. Therefore, pathways in which the final product is a compound in central metabolism are more likely to be correct (Supplementary file 4).
 
-The final metabolite in the model is compared by the Tanimoto coefficient using RDKit Morgan Fingerprints to all metabolites in central metabolism, and the maximum Tanimoto coefficient is used. The central metabolism endpoint score is:ZCM=TC− TC− SD,where TC is the Tanimoto coefficient between the final product in the pathway model and the most similar compound in central metabolism. TC- is the average and SD is the standard deviation of Tanimoto coefficients for all comparisons between each candidate metabolite and all compounds in central metabolism.
+The final metabolite in the model is compared by the Tanimoto coefficient using RDKit Morgan Fingerprints to all metabolites in central metabolism, and the maximum Tanimoto coefficient is used. The central metabolism endpoint score is:
 
-## Differential scanning fluorimetry screening hits
+$$
+Z_{CM}=\frac{TC− TC− }{SD},
+$$
 
-In our predicted pathway, L-gulonate and D-mannonate were identified as hits for the TRAP solute binding protein (ie, the first protein in the pathway), using screening of 189 compounds by DSF (Vetting et al., 2015). We assume that true substrates have high chemical similarity to the screening hits. Thus, the hits are compared by the Tanimoto coefficient using RDKit Morgan Fingerprints to the substrate of the screened enzyme in the pathway model.ZHTS=TC− TC− SD,where TC is the Tanimoto coefficient between the substrate in the pathway model and the hit in the screening assay. For multiple screening hits, the maximum of the Tanimoto coefficients between the substrate and hits is used. TC- is the average and SD is the standard deviation of Tanimoto coefficients between the substrate and all metabolites.
+where TC is the Tanimoto coefficient between the final product in the pathway model and the most similar compound in central metabolism. $TC-$ is the average and SD is the standard deviation of Tanimoto coefficients for all comparisons between each candidate metabolite and all compounds in central metabolism.
 
-## Homology to a characterized enzyme
+#### Differential scanning fluorimetry screening hits
 
-Substrates of enzymes in the pathway model are expected to be the same or similar to substrates of homologs that share high sequence similarity. For the L-gulonate pathway, the dehydratase has 73% sequence identity to a characterized mannonate dehydratase in E. coli. Therefore, pathways in which the substrate of the dehydratase is similar to D-mannonate are more likely to be correct than others. The proposed dehydratase substrate in an evaluated pathway model was compared to D-mannonate by the Tanimoto coefficient, using RDKit Morgan Fingerprints:ZHS=TC− TC− SD,where TC is the Tanimoto coefficient between the proposed substrate and the known substrate. TC- is the average and SD is the standard deviation of Tanimoto coefficients for all comparisons between each candidate metabolite and the known substrate.
+In our predicted pathway, L-gulonate and D-mannonate were identified as hits for the TRAP solute binding protein (ie, the first protein in the pathway), using screening of 189 compounds by DSF (Vetting et al., 2015). We assume that true substrates have high chemical similarity to the screening hits. Thus, the hits are compared by the Tanimoto coefficient using RDKit Morgan Fingerprints to the substrate of the screened enzyme in the pathway model.
 
-## Stage 3: Sampling good models
+$$
+Z_{HTS}=\frac{TC− TC− }{SD},
+$$
 
-With the scoring function in hand, the next step is to find pathway models that score well. These models are obtained by sampling candidate metabolites and proteins at each position in the linear pathway of a given length. We use Monte Carlo (MC) sampling by the Metropolis-Hastings algorithm with simulated annealing (Hastings, 1970; Kirkpatrick et al., 1983). The set of MC moves includes (i) swapping components of the same type within the graph and (ii) replacing a component in the graph with an unused candidate component of the same type. At each MC step, if the pathway score improves, the new model is accepted. Otherwise, the new model is accepted if a randomly sampled number from the uniform distribution between 0 and 1 is less than the acceptance probability computed by the standard Metropolis criterion:p=exp⁡-DT where D is the difference between the old and new pathway scores and T is the simulated annealing ‘temperature’ parameter. The temperature drops over the course of the MC run:T=0.3*0.2N+0.1where N is the MC step number normalized by the total number of MC steps. With these parameters, a sampling run generally converges (Figure 3—figure supplement 1E), terminating after 5,000,000 MC steps. 1000 independent runs are performed, and the models sampled from all runs are combined. The unique sampled models with a score above a cutoff (good-scoring models) are considered in the analysis; the cutoff is two standard deviations below the best score. For the glycolysis pathway, which is about twice as long as the other pathways, a more stringent cutoff of 1.5 standard deviations was used such that the number of good-scoring pathways is comparable to that for the other benchmark pathways. The standard deviation is calculated from a distribution of scores of random models. Convergence of sampling was tested by determining the fraction of unique clusters as a function of the number of independent runs (Figure 3—figure supplement 1).
+where TC is the Tanimoto coefficient between the substrate in the pathway model and the hit in the screening assay. For multiple screening hits, the maximum of the Tanimoto coefficients between the substrate and hits is used. $TC-$ is the average and SD is the standard deviation of Tanimoto coefficients between the substrate and all metabolites.
 
-## Stage 4: Analyzing models and information
+#### Homology to a characterized enzyme
+
+Substrates of enzymes in the pathway model are expected to be the same or similar to substrates of homologs that share high sequence similarity. For the L-gulonate pathway, the dehydratase has 73% sequence identity to a characterized mannonate dehydratase in E. coli. Therefore, pathways in which the substrate of the dehydratase is similar to D-mannonate are more likely to be correct than others. The proposed dehydratase substrate in an evaluated pathway model was compared to D-mannonate by the Tanimoto coefficient, using RDKit Morgan Fingerprints:
+
+$$
+Z_{HS}=\frac{TC− TC− }{SD},
+$$
+
+where TC is the Tanimoto coefficient between the proposed substrate and the known substrate. $TC-$ is the average and SD is the standard deviation of Tanimoto coefficients for all comparisons between each candidate metabolite and the known substrate.
+
+#### Stage 3: Sampling good models
+
+With the scoring function in hand, the next step is to find pathway models that score well. These models are obtained by sampling candidate metabolites and proteins at each position in the linear pathway of a given length. We use Monte Carlo (MC) sampling by the Metropolis-Hastings algorithm with simulated annealing (Hastings, 1970; Kirkpatrick et al., 1983). The set of MC moves includes (i) swapping components of the same type within the graph and (ii) replacing a component in the graph with an unused candidate component of the same type. At each MC step, if the pathway score improves, the new model is accepted. Otherwise, the new model is accepted if a randomly sampled number from the uniform distribution between 0 and 1 is less than the acceptance probability computed by the standard Metropolis criterion:
+
+$$
+p=exp⁡\frac{-D}{T}
+$$
+
+where D is the difference between the old and new pathway scores and T is the simulated annealing ‘temperature’ parameter. The temperature drops over the course of the MC run:
+
+$$
+T=0.3*0.2^{N}+0.1
+$$
+
+where N is the MC step number normalized by the total number of MC steps. With these parameters, a sampling run generally converges (Figure 3—figure supplement 1E), terminating after 5,000,000 MC steps. 1000 independent runs are performed, and the models sampled from all runs are combined. The unique sampled models with a score above a cutoff (good-scoring models) are considered in the analysis; the cutoff is two standard deviations below the best score. For the glycolysis pathway, which is about twice as long as the other pathways, a more stringent cutoff of 1.5 standard deviations was used such that the number of good-scoring pathways is comparable to that for the other benchmark pathways. The standard deviation is calculated from a distribution of scores of random models. Convergence of sampling was tested by determining the fraction of unique clusters as a function of the number of independent runs (Figure 3—figure supplement 1).
+
+#### Stage 4: Analyzing models and information
 
 The resulting ensemble of good-scoring models is analyzed in terms of its precision and satisfaction of the restraints (Figure 2). Using hierarchical clustering in the scikit-learn python package (Pedregosa et al., 2011), the pathway models are clustered by a pairwise distance metric (here, the Hamming distance). The Hamming distance is the number of positions at which the corresponding nodes are differently divided by the number of nodes in the pathway (including both proteins and ligands). Clusters are determined at the cutoff distance of 0.2.
 
 A Cytoscape (Shannon et al., 2003) app, NetIMP, was written to perform visualization of the models (Figure 1—figure supplement 3). The app takes as input a JSON formatted file of with the IMP results, including the overall scores and the scores for the individual restraints. The app constructs a ‘union network’ that is the union of all models and presents it to the user. A slider is available to adjust the minimum score for inclusion in the union network. Each of the corresponding models are shown in a results panel to the right of the network. The user can highlight the model in the relevant network by selecting the row. Checkboxes allow the user to view the individual restraints, including whether or not the model satisfies the restraint. NetIMP is available in the Cytoscape app store.
 
-## Computational cost
+#### Computational cost
 
 The total computation time depends on the numbers of enzymes and ligands considered. The computationally most demanding part of integrative pathway mapping is the preparation of the input information, not the sampling of the alternative pathways. For the three benchmark and L-gulonate pathways, the computing times for various steps in the process are as follows. Parallelized virtual screening of a library of ~20,000 compounds by docking each ligand against each of ~10 enzymes takes just over an hour on a cluster of 1400 nodes. The SEA analysis takes ~15 min to screen ~20,000 compounds against ~10 target proteins on 10 computing nodes. Finally, chemical transformation calculations take ~1 hr for 10 enzymes on a single node. Once the inputs are in hand, the runtime for a single Monte Carlo sampling run is approximately 1 hr on a single computing node; a few hundred independent Monte Carlo optimizations are typically performed in parallel on a cluster of compute nodes. In conclusion, the entire process, from preparation of inputs to the sampling of the pathways, can be performed in a few hours on a cluster of a few hundred nodes.
 
-## Benchmarking
+#### Benchmarking
 
 We assess our method on three known metabolic pathways, including the glycolysis pathway (10 enzymes, 2965 potential ligands), CMP KDO-8P biosynthesis pathway (four enzymes, 3336 potential ligands), and serine biosynthesis (five enzymes, 3494 potential ligands) (Supplementary file 1). Pathway docking was performed against crystal structures and comparative models (Supplementary file 5). The score of the pathway model is a sum of the individual Z-score terms for the docking screen, SEA calculation, and chemical transformations. The ability to recover the true ligand-enzyme pair is evaluated by the relative frequency of the ligand-enzyme edge occurring in the good-scoring pathway models. Therefore, we compare the rank of the substrate or product for a given enzyme based on the initial docking score to the rank based on the frequency of the corresponding ligand-enzyme edge.
 
-## Benchmark assessment for decoy and dummy enzymes
+#### Benchmark assessment for decoy and dummy enzymes
 
 The enzyme composition of a pathway is not always known with certainty, so we considered other scenarios beyond the simple case (Figure 3AB). We tested whether or not our method could detect the correct pathway when non-pathway enzymes, or decoys, are included in the initial candidate set of enzymes. An additional term that considers membership in the same gene cluster is included in the scoring function. Conserved gene clusters identified from comparative genome neighborhood analysis (Figure 1—figure supplement 2) can be informative about the functional relationships of genes acting in the same pathway (Overbeek et al., 1999). Pathway models with all members of a gene cluster are more likely to be correct than those that are missing members or containing non-members.
 
-The set of protein pairs associated with the gene cluster identified by genome neighborhood analysis is compared to sets of protein pairs from all possible subsets of the protein candidates. The intersection between the sets of pairs is normalized by the larger of the number of pairs in the sets. The possible subsets range in number from as few as three to the number of total candidate proteins. The gene cluster score is:ZGC=GC −GC−SD,where GC is the normalized intersection between the set of protein pairs in the gene cluster and the set of protein pairs in the pathway model. GC- is the average and SD is the standard deviation of the normalized intersection for all comparisons between the proteins associated with the gene cluster and possible subsets of candidate proteins.
+The set of protein pairs associated with the gene cluster identified by genome neighborhood analysis is compared to sets of protein pairs from all possible subsets of the protein candidates. The intersection between the sets of pairs is normalized by the larger of the number of pairs in the sets. The possible subsets range in number from as few as three to the number of total candidate proteins. The gene cluster score is:
+
+$$
+Z_{GC}=\frac{GC −GC−}{SD},
+$$
+
+where GC is the normalized intersection between the set of protein pairs in the gene cluster and the set of protein pairs in the pathway model. $GC-$ is the average and SD is the standard deviation of the normalized intersection for all comparisons between the proteins associated with the gene cluster and possible subsets of candidate proteins.
 
 For the case in which the candidate set of enzymes is incomplete, a dummy enzyme that represents an unknown pathway enzyme was used (Figure 2—figure supplement 1D). For each of the pathways, one enzyme was replaced with a dummy enzyme in the initial set of candidate enzymes. For the serine biosynthesis case, the correct pathway with the dummy enzyme included was ranked as the top-scoring model (Figure 2—figure supplement 1D). For the other test cases, the inclusion of the dummy lowered the overall ranking of the correct pathway model, but the correct pathway was still within the top-scoring models.
 
-## Experimental methods
+### Experimental methods
 
-## Cloning, expression, and purification of HiUxuB, HiKdgK, and HiKdgA
+#### Cloning, expression, and purification of HiUxuB, HiKdgK, and HiKdgA
 
 The genes HiUxuB (Uniprot ID P44481), HiKdgK (Uniprot ID P44482), and HiKdgA (Uniprot ID P44480) were amplified from H. influenzae strain Rd KW20 (ATCC 51907) genomic DNA. PCR was performed using KOD Extreme DNA Polymerase (Novagen) according to the manufacturer’s guidelines. The conditions were: 2 min at 95°C, followed by 40 cycles of 20 s at 95°C, 20 s at 66°C, and 20 s at 72°C. Primers are listed in Supplementary file 7. The amplified fragments were cloned into the N-terminal TEV cleavable 6x-Histag containing vector pNIC28-Bsa4 (pSGC-His), by ligation-independent cloning (Aslanidis and de Jong, 1990; Savitsky et al., 2010).
 
@@ -177,21 +514,21 @@ The HiUxuB-pSGC-His, HiKdgK-pSGC-His, HiKdgA-pSGC-His vectors were transformed i
 
 Cells were suspended in lysis buffer (20 mM HEPES, pH 7.5, 500 mM NaCl, 20 mM imidazole, and 10% Glycerol) and lysed by sonication. The lysate was clarified by centrifugation at 35,000 x g for 30 min, loaded onto a 5-mL Strep-Tactin column (IBA) on an AKTAxpress FPLC (GE Healthcare), and washed with five column volumes of lysis buffer, and eluted in StrepB buffer (20 mM HEPES, pH 7.5, 500 mM NaCl, 20 mM Imidazole, 10% glycerol, and 2.5 mM desthiobiotin). The eluent was loaded onto a 1-mL HisTrap FF column (GE Healthcare), washed with 10 column volumes of lysis buffer, and eluted in buffer containing 20 mM HEPES pH 7.5, 500 mM NaCl, 500 mM Imidazole, and 10% glycerol. The purified sample was loaded onto a HiLoad S200 16/60 PR gel filtration column, which was equilibrated with SECB buffer (20 mM HEPES, pH 7.5, 150 mM NaCl, 10% glycerol, and 5 mM DTT). Peak fractions were collected, protein was analyzed by SDS-PAGE, concentrated to 2.4 g/L, 1.9 g/L, and 2.0 g/L, respectively, flash frozen in liquid nitrogen, and stored at −80°C.
 
-## Cloning, expression, and purification of HiGulD and HiUxuA
+#### Cloning, expression, and purification of HiGulD and HiUxuA
 
 The genes HiGulD (Uniprot ID Q57517) and HiUxuA (Uniprot ID P44488) were amplified from H. influenzae strain Rd KW20 (ATCC 51907) genomic DNA. PCR was performed using KOD Extreme DNA Polymerase (Novagen) according to the manufacturer’s guidelines. The conditions were: 2 min at 95°C, followed by 40 cycles of 20 s at 95°C, 20 s at 66°C, and 20 s at 72°C. Primers are listed in Supplementary file 7. The amplified fragment was cloned into the C-terminal TEV cleavable 10x-Histag containing vector pNYCOMPS-LIC-TH10-ccdB (C-term) such that the tag is out of frame (pNYCOMPSC-tagless), by ligation-independent cloning (Aslanidis and de Jong, 1990; Savitsky et al., 2010).
 
 The pNYCOMPSC-tagless HiGulD and HiUxuA constructs were transformed into E. coli BL21 (DE3) for expression. Both HiGulD and HiUxuA were purified from 1 L of culture using DEAE Sepharose, Q‐Sepharose, and phenyl-Sepharose columns (all Amersham Biosciences) as previously described (Wichelecki et al., 2014). Proteins were concentrated to 15 g/L and 6 g/L, respectively, flash frozen in liquid nitrogen, and stored at −80°C.
 
-## Preparation of 2-keto-3-deoxy-D-gluconate
+#### Preparation of 2-keto-3-deoxy-D-gluconate
 
 2-Keto-3-deoxy-D-gluconate was synthesized via an enzymatic procedure. The reaction (1.5 mL) contained 50 mM potassium HEPES, pH 7.9, 10 mM MgCl2, 100 mM D-mannonate, and 1 μM D-mannonate dehydratase (Uniprot ID B0T0B1). The reaction was left to proceed at 37°C for 48 hr. Afterward, the enzyme was removed by filtration using 30,000 NMWL ultrafiltration membranes (Millipore). The identity of the product was verified via 1H-NMR.
 
-## Preparation of 2-keto-3-deoxy-D-gluconate-6-phosphate
+#### Preparation of 2-keto-3-deoxy-D-gluconate-6-phosphate
 
 2-Keto-3-deoxy-D-gluconate-6P was synthesized via an enzymatic procedure. The reaction (1.5 mL) contained 100 mM potassium HEPES, pH 7.9, 10 mM MgCl2, 120 mM ATP, 100 mM D-mannonate, 1 μM D-mannonate dehydratase (Uniprot ID B0T0B1), and 1 μM 2-keto-3-deoxy-D-gluconate kinase (Uniprot ID A4XF21). The reaction was left to proceed at 37°C for 48 hr. Afterward, the enzyme was removed by filtration using 10,000 NMWL ultrafiltration membranes (Millipore). The identity of the product was verified via 1H-NMR.
 
-## Kinetic assays of L-gulonate catabolic pathway proteins
+#### Kinetic assays of L-gulonate catabolic pathway proteins
 
 The kinetic assays were run in 200 μL aliquots at 37°C and monitored using a continuous spectrophotometric assay. The identities of all products were verified via 1H-NMR.
 
@@ -205,15 +542,15 @@ Phosphorylation was quantitated by measuring the decrease in absorbance at 340 n
 
 Cleavage was quantitated by measuring the decrease in absorbance at 340 nm (ε = 6220 M−1 cm‐1) of 2-keto-3-deoxy-D-gluconate-6P by HiKdgA in a coupled assay with lactate dehydrogenase (50 mM potassium HEPES, pH 7.9, 10 mM MgCl2, 1.5 mM PEP, 0.16 mM NADH, 9 units of lactate dehydrogenase, and 200 nM HiKdgA). The substrate concentration was varied from 100 μM to 5 mM.
 
-## Bacterial strains and growth conditions
+#### Bacterial strains and growth conditions
 
 H. influenzae Rd KW20 (ATCC 51907) was grown aerobically at 37°C with shaking at 225 rpm, and was routinely cultured in Brain Heart Infusion (BHI, Difco) broth or on BHI solid medium, supplemented with nicotinamide adenine dinucleotide (NAD) and hemin at 10 µg mL−1 (sBHI). For gene expression analyses and carbon utilization studies, the defined medium of Coleman et al. (2003) was used. Glucose-free RPMI-1640 (Sigma R1383) was supplemented with the following additives: HEPES, 6 mg mL−1; NaHCO3, 2 mg mL−1; inosine, 1.75 mg mL−1; uracil, 87 µg mL−1; NAD, 10 µg mL−1; hemin, 10 µg mL−1. D-glucose, L-gulonate, or D-mannonate (10 mM) served as the source of carbon. Kanamycin was added at 10 µg mL−1 when appropriate.
 
-## Growth curves
+#### Growth curves
 
 Growth curves were recorded using the Bioscreen C instrument (Growth Curves, USA) and 100-well plates. Starter cultures of H. influenzae Rd KW20 were grown overnight in sBHI, washed in minimal medium lacking carbon source, and re-suspended in an equivalent volume of minimal medium lacking carbon source. Each well contained 300 µL minimal medium with D-glucose, L-gulonate, or D-mannonate (10 mM), and was inoculated to 1% with washed starter culture. Plates were incubated at 37°C with continuous shaking at medium amplitude and the optical density at 600 nanometers (OD600) was recorded every 30 min for 48 hr.
 
-## Transcriptional analysis
+#### Transcriptional analysis
 
 Starter cultures of H. influenzae Rd KW20 were grown overnight in sBHI, washed in minimal medium lacking carbon source, and re-suspended in an equivalent volume of minimal medium lacking carbon source. This culture was used to inoculate 5 mL minimal medium (1% inoculum) with 10 mM glucose, and cultures were grown until OD6000.3–0.5. Cells were washed and re-suspended in 4 mL minimal medium lacking carbon source. Cultures were divided into two equal 2 mL volumes, 10 mM glucose was added to one volume and 10 mM L-gulonate or D-mannonate was added to the other, and the cultures were grown until OD6000.8–1.0. At the time of cell harvest, one volume of RNAprotect Bacteria Reagent (Qiagen) was immediately added to two volumes of each actively growing culture. Samples were mixed by vortexing for 10 s and incubated for 5 min at room temperature. Cells were pelleted, flash frozen in liquid nitrogen, and stored at −80°C.
 
@@ -221,7 +558,7 @@ RNA isolation was performed in an RNAse-free environment at room temperature usi
 
 cDNA synthesis was performed using 300 ng of total isolated RNA with the ProtoScript First Strand cDNA Synthesis Kit (NEB), according to the manufacturer’s instructions. Primers for quantitative real-time (qRT) PCR were designed using the Primer3 primer tool; amplicons were 150–200 bps in length. Primers were 18 to 24 nucleotides in length and had a theoretical Tm of 55–60°C. Primer efficiency was determined to be at least 90% for each primer pair. Primer sequences are provided in Supplementary file 8. qRT-PCRs were carried out in 96-well plates using the LightCycler 480 II instrument (Roche) with the LightCycler 480 SYBR Green I Master Mix (Roche), according to the manufacturer’s instructions. Minus-RT controls were performed to verify the absence of genomic DNA in each RNA sample, for each gene target analyzed. Relative changes in gene expression were analyzed by the 2-∆∆CT method (Livak and Schmittgen, 2001), using the 16S rRNA gene as a reference. Each qRT-PCR was performed in triplicate, and fold-changes are the averages of at least three biological replicates.
 
-## Gene disruption
+#### Gene disruption
 
 To create a genetic deletion of the putative L-gulonate SBP (HI0052), triple overlap extension PCR was used. Briefly, using Pfu Ultra High-Fidelity DNA polymerase (Agilent), three PCR fragments were generated: (a) a fragment corresponding to the genomic region ~1000 bps upstream of HI0052 was amplified from H. influenzae Rd KW20 genomic DNA with primers Del_HI0052_arm1fwd and Del_HI0052_arm1rev, (b) the kanamycin resistance cassette from p34s-Km (Dennis and Zylstra, 1998) was amplified with primers Kan_OL_delHI0052_fwd and Kan_OL_delHI0052_rev, and (c) a fragment corresponding to the genomic region ~1000 bps downstream of HI0052 was amplified from H. influenzae Rd KW20 genomic DNA with primers Del_HI0052_arm2fwd and Del_HI0052_arm2rev. The 3’ end of fragment ‘a’ and the 5’ end of the kanamycin resistance cassette (fragment ‘b’) were engineered with 50 bps of identical overlapping sequence, as were the 3’ of the kanamycin resistance cassette and the 5’ end of fragment ‘c’. One hundred ng of each of these PCR fragments were combined in a triple overlap extension PCR with primers Del_HI0052_arm1fwd and Del_HI0052_arm2rev to generate a ~3 kb fragment with arms homologous to the genomic regions flanking HI0052, with an intervening kanamycin resistance cassette.
 
@@ -229,12 +566,12 @@ The same approach was used to create a genetic deletion of the putative L-gulona
 
 Each of the triple overlap PCR products was gel-purified and 100 ng was transformed into 1 mL of H. influenzae Rd KW20 cells made competent by the M-IV method (Poje and Redfield, 2003). Double crossover recombinants were selected by resistance to kanamycin and confirmed by genomic PCRs.
 
-## Cell preparation and metabolite extraction
+#### Cell preparation and metabolite extraction
 
 GC-MS-based metabolic analysis of whole cell extracts was carried out with samples of H. influenzae Rd KW20 grown with 13C labeled L-gulonate or D-glucose, following the procedure of Zhao et al. (2013). Cells grown in rich medium were diluted 1:100 into defined medium with 10 mM unlabeled L-gulonate or D-glucose as added carbon source and grown to an OD600 of 0.6 (approximately 18 hr). Cells were harvested by centrifugation (4000 × g, 10 min, 4°C), washed twice in defined medium without added carbon source, and re-suspended in this medium. Cell density was adjusted to OD600 = 6.0, and the cell suspension was then depleted of catabolic metabolites by incubation at 37°C for 30 min before transferring to ice. A mixture of 5 mM 13C labeled L-gulonate plus 5 mM unlabeled L-gulonate, or a mixture of 5 mM 13C labeled D-glucose plus 5 mM unlabeled D-glucose, was added to the samples followed by incubation at 37°C. At time points of 1, 2, 10, and 60 min, samples were pelleted by centrifugation (16,000 × g for 1 min), supernatants were removed, and cell pellets were flash frozen in liquid nitrogen. Samples were stored at −80°C prior to extraction. Metabolites were extracted directly from cell pellets by re-suspension in 0.5 mL extraction buffer (40:40:20 mixture of methanol:acetonitrile:water spiked with 1 mM L-norvaline for an internal standard) followed by 10 min of vortexing at room temperature. Cell extracts were cleared of debris via two rounds of centrifugation at 16,000 × g for 1 min, split into two equal portions, dried, and stored at −80°C prior to analysis.
 
 Cell extracts were derivatized by one of two methods. To determine labeling of small metabolites of central carbon metabolism (glycolysis, TCA cycle and amino acids), extracts were derivatized with isobutylhydroxylamine and N-tert-butyldimethylsilyl-N-​methyltrifluoroacetamide (TBDMS), and analyzed by GC-MS as described before (Ratnikov et al., 2015). Data were calculated in terms of fractional 13C labeling (the average 13C labeling across all metabolite carbons). Alternatively, to determine the labeling of gulonate and other 6-carbon molecules in the proposed pathway for L-gulonate metabolism, extracts were derivatized with 30 µL methoxyamine hydrochloride (Sigma, 20 mg/ml in pyridine) for 20 min at 80°C, followed by 30 µL BSTFA (trimethylsilylating reagent, Thermo) for 60 min at 80°C. Derivatized metabolites were analyzed by GC-MS as described before (Scott et al., 2011), using a modified temperature gradient: initial temperature was 60°C, held for 4 min, rising at 20 °C/min to 280°C, held for 4 min. Metabolites were identified by matching elution times and mass fragment patterns to standards. Labeling data for D-fructuronate were calculated as the ratio of mass 268: mass 264. Mass 264 corresponds to the fragment of D-fructuronate containing the four carbon atoms C3-C6 of the carbon backbone plus the complete derivatized side-chains (methoxaminated keto group and three trimethylsilylated hydroxyl groups) of this C3-C6 fragment, formula C14H34NO4Si3. Mass 268 corresponds to the same fragment with the backbone carbons 13C-labeled.
 
-## Code availability
+### Code availability
 
 The source code for the IMP program, benchmark, input scripts files, and output files for the benchmark and the gulonate pathway calculations are available at http://integrativemodeling.org and https://github.com/salilab/pathway_mapping (Calhoun, 2017; copy available at https://github.com/elifesciences-publications/pathway_mapping). Open access metabolite docking and libraries at http://metabolite.docking.org/ and at http://blaster.docking.org/. NetIMP is available in the Cytoscape app store.

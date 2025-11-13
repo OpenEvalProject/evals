@@ -14,19 +14,19 @@
 
 ### Affiliations
 
-1. https://ror.org/00a2xv884 College of Life Sciences, Zhejiang University Hangzhou China
-2. https://ror.org/042t7yh44 Zhejiang Provincial Key Laboratory of Precision Diagnosis and Therapy for Major Gynecological Diseases, Women’s Hospital, Zhejiang University School of Medicine Hangzhou China
-3. https://ror.org/00a2xv884 Institute of Genetics, Zhejiang University School of Medicine Hangzhou China
-4. https://ror.org/00a2xv884 Cancer Center, Zhejiang University Hangzhou China
-5. https://ror.org/00a2xv884 Institute of Immunology and Sir Run Run Shaw Hospital, Zhejiang University School of Medicine Hangzhou China
+1. College of Life Sciences, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+2. Zhejiang Provincial Key Laboratory of Precision Diagnosis and Therapy for Major Gynecological Diseases, Women’s Hospital, Zhejiang University School of Medicine Hangzhou China ([ROR:042t7yh44](https://ror.org/042t7yh44))
+3. Institute of Genetics, Zhejiang University School of Medicine Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+4. Cancer Center, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+5. Institute of Immunology and Sir Run Run Shaw Hospital, Zhejiang University School of Medicine Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
 6. Zhejiang University Shanghai Institute for Advanced Study, Shanghai Shanghai China
-7. https://ror.org/01mdfdm06 Monell Chemical Senses Center Philadelphia United States
+7. Monell Chemical Senses Center Philadelphia United States ([ROR:01mdfdm06](https://ror.org/01mdfdm06))
 
 † Corresponding author
 
 ## Abstract
 
-Tuft cells are a group of rare epithelial cells that can detect pathogenic microbes and parasites. Many of these cells express signaling proteins initially found in taste buds. It is, however, not well understood how these taste signaling proteins contribute to the response to the invading pathogens or to the recovery of injured tissues. In this study, we conditionally nullified the signaling G protein subunit G γ 13 and found that the number of ectopic tuft cells in the injured lung was reduced following the infection of the influenza virus H1N1. Furthermore, the infected mutant mice exhibited significantly larger areas of lung injury, increased macrophage infiltration, severer pulmonary epithelial leakage, augmented pyroptosis and cell death, greater bodyweight loss, slower recovery, worsened fibrosis and increased fatality. Our data demonstrate that the G γ 13-mediated signal transduction pathway is critical to tuft cells-mediated inflammation resolution and functional repair of the damaged lungs.To our best knowledge, it is the first report indicating subtype-specific contributions of tuft cells to the resolution and recovery.
+Tuft cells are a group of rare epithelial cells that can detect pathogenic microbes and parasites. Many of these cells express signaling proteins initially found in taste buds. It is, however, not well understood how these taste signaling proteins contribute to the response to the invading pathogens or to the recovery of injured tissues. In this study, we conditionally nullified the signaling G protein subunit Gγ13 and found that the number of ectopic tuft cells in the injured lung was reduced following the infection of the influenza virus H1N1. Furthermore, the infected mutant mice exhibited significantly larger areas of lung injury, increased macrophage infiltration, severer pulmonary epithelial leakage, augmented pyroptosis and cell death, greater bodyweight loss, slower recovery, worsened fibrosis and increased fatality. Our data demonstrate that the Gγ13-mediated signal transduction pathway is critical to tuft cells-mediated inflammation resolution and functional repair of the damaged lungs.To our best knowledge, it is the first report indicating subtype-specific contributions of tuft cells to the resolution and recovery.
 
 ## Introduction
 
@@ -42,27 +42,67 @@ Although they are normally only found in the nasal cavity and trachea, rarely fo
 
 ## Results
 
-## Severe injury induces the generation of taste signaling proteins-expressing ectopic tuft cells
+### Severe injury induces the generation of taste signaling proteins-expressing ectopic tuft cells
 
 To verify the previously reported ectopic generation of lung tuft cells upon severe injury, we intranasally inoculated adult mice with a sublethal dose of H1N1 viruses, and observed the bodyweight changes over a course of 25 days post infection (dpi) (Figure 1A). The mice were then killed and their lungs were dissected out for analyses (Figure 1A). The mice showed bodyweight loss over the days post-infection with a peak loss of up to 25% of their original bodyweight around 8–9 dpi, and their lungs displayed lesion areas, of which the histological analysis showed massive alveolar damage and severe epithelial dysplasia with altered tissue structures as well as an increased number of CD45+ immune cells in comparison with the uninfected control (Figure 1B, C and D). Analysis of the H1N1 injured-lungs of the Chat-Cre: Ai9 mice, which express tdTomato proteins in the ChAT-expressing cells, showed that about 78% of ChAT-expressing cells also expressed the tuft cell marker Dclk1 whereas about 60% and 12% of ChAT-expressing cells expressed the other two taste signaling proteins Gα-gustducin and Plcβ2, respectively (Figure 1E, F). In addition, chemically induced severe lung injury with bleomycin, lipopolysaccharide, and powder of house dust mite extracts also led to the generation of dysplastic tuft cells, but to a lesser extent (Figure 1—figure supplement 1), confirming the severe injury-induced formation of ectopic tuft cells in the lung parenchyma (Rane et al., 2019; Barr et al., 2022; Huang, 2022).
 
-## Ectopic lung tuft cells respond to bitter tasting compounds
+![Figure 1.](https://cdn.elifesciences.org/articles/92956/elife-92956-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of H1N1 intranasal inoculation procedure. (B) Bodyweight changes of uninfected control and H1N1-infected mice over 25 days post infection. Data are presented as means ± SD (n=6). Unpaired two-tailed student t-tests were performed. (C) Representative images of lungs at 0 and 25 dpi, and their hematoxylin and eosin (H&E) tissue sections (Bars: 5 mm in the whole lung images and 100 µm in the lung section images). (D) Immunostaining images of lung sections of 0 and 25 dpi with an antibody to CD45. (E) Immunostaining of the Chat-Cre: Ai9 lung sections of 0 and 25 dpi with the antibody to the tuft cell marker Dclk1 (green), and Ai9 (red tdTomato). (F) Immunostaining of the Chat-Cre: Ai9 lung sections of 25 dpi with antibodies to Dclk1 (green), Gα-gustducin (green) or Plcβ2 (green) and Ai9 (red tdTomato). Scale bars in (D, E, F): 50 µm. ***p<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92956/elife-92956-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Top three rows: Immunostaining with an antibody to Dclk1 (green) on the tissue sections of the injured lungs induced by bleomycin (BLM), extract of house dust mite (HDM), or lipopolysaccharides (LPS), respectively. Bottom row: double-immunostaining an LPS-injured lung section with antibodies to Dclk1 and Gαgust (Gα-gustducin). Scale bars: 50 μm.
+
+### Ectopic lung tuft cells respond to bitter tasting compounds
 
 To assess how the severe lung injury may affect the bitter taste receptor expression, we quantified and comparatively analyzed Tas2r expression levels by performing quantitative reverse transcription-PCR on the WT lung tissues before and after H1N1 infection. The results showed that the expression levels of most of murine 35 Tas2rs remained unchanged while Tas2r105, Tas2r108, Tas2r118, Tas2r137, and Tas2r138 were upregulated, and Tas2r135 and Tas2r143 were downregulated (Figure 2A), which is largely consistent with the single-cell RNAseq data (Figure 2—figure supplement 1; Barr et al., 2022), suggesting that the upregulated Tas2rs are indeed expressed in these ectopic tuft cells.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/92956/elife-92956-fig2-v1.jpg)
+
+**Figure 2.:** (A) Quantitative RT-PCR analysis of bitter taste receptor expression in the lung tissues at 0 dpi versus 25 dpi. Expression of Tas2r105, Tas2r108, Tas2r118, Tas2r137, and Tas2r138 was upregulated whereas Tas2r135 and Tas2r143 were downregulated at 25 dpi. Data are presented as means ± SD (n=3). Unpaired two-tailed student t-tests were performed. (B–K) Calcium imaging and response traces of FACs-sorted tuft cells isolated from H1N1-infected lungs at 25 dpi. (B, D, F, H, and J) Left panels are gray images of tuft cells at rest in the HBSS buffer whereas the right panels are gray images of the same cells after being stimulated by denatonium benzoate (D.B.) or quinine. Activated cells appeared brighter. (C, E, G, I, K) traces of calcium responses of tuft cells on the left. Some tuft cells responded to D.B, which was inhibited by allyl isothiocyanate (AITC) (B, C), gallein (F, G), or U73122 (J, K) whereas others responded to quinine, which was also inhibited by AITC (D, E), or gallein (H, I). Scale bars: 50 µm. **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92956/elife-92956-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Reanalysis of the single-cell RNA sequencing data GSE197163 (Barr et al., 2022) using the Uniform manifold approximation and projection (UMAP) method. Among 613 Trpm5-GFP+ tuft cells, Tas2r108 was expressed in the greatest number of cells, i.e., 67 cells, followed by Tas2r105, Tas2R138, Tas2r137, Tas2r118, and Tas2r102, which were detected in 11,10, 10, 5 and 4 cells, respectively. The clustering analysis results also indicate that different cells may express a different subset of Tas2rs.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/92956/elife-92956-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** ChAT-tdTomato reporter expression in live lung epithelial cells post-influenza via FACs.
+
 To determine whether the taste signal transduction pathways present in these ectopic lung tuft cells are functional, we isolated these tuft cells from the Chat-Cre: Ai9 mice at 25 dpi by fluorescence-activated cell sorting (FACs) (Figure 2—figure supplement 2) and assessed their intracellular calcium responses to two common bitter taste substances denatonium benzoate (D.B.) and quinine. It is known that D.B. activates mouse bitter taste receptor Tas2r105 whereas quinine can stimulate multiple Tas2rs, including 3 of the 5 upregulated bitter taste receptors: Tas2r105, Tas2r108, and Tas2r137 (Lossow et al., 2016). The results showed that subsets of tuft cells responded to these two compounds by increasing the intracellular calcium concentrations. Application of the bitter taste inhibitor allyl isothiocyanate (AITC), G protein βγ moiety inhibitor gallein or Plcβ2 inhibitor U73122 was able to completely inhibit these cells’ calcium responses to the bitter compounds (Figure 2B-K), indicating that the Tas2rs and their downstream signaling proteins are functional in subsets of tuft cells, and may play some physiological roles during the transition from inflammatory response to resolution.
 
-## Conditional nullification of the taste signaling protein Gγ13 exacerbates the H1N1-inflicted disease severity and suppresses ectopic tuft cell expansion
+### Conditional nullification of the taste signaling protein Gγ13 exacerbates the H1N1-inflicted disease severity and suppresses ectopic tuft cell expansion
 
 To determine what role the taste signaling proteins may play in the H1N1 infection-triggered lung injury, we inoculated H1N1 to the whole-body Trpm5 knockout mice (Trpm5-/-) and the conditional Gγ13 knockout mice (Chat-Cre: Gng13flox/flox, i.e., Gng13-cKO) as well as WT control mice. Results indicated that while WT and Trpm5-/- mice showed similar bodyweight loss/recovery curves with nearly no mortality, Gng13-cKO mice exhibited significantly more bodyweight loss with a maximum of 30% instead of 20% of the original bodyweight, and a slower recovery process with a shifted maximum bodyweight loss from 9 dpi to 10 dpi, and a significant increase in the mortality rate to 37.5%, the majority of which occurred between 8 and 12 dpi (Figure 3A, B). Furthermore, the H1N1-infected lungs of WT and Trpm5-/- mice at 25 dpi displayed similar injured surface areas and damaged tissue volumes whereas those of Gng13-cKO showed significantly greater injured areas and volumes (Figure 3C, D, Figure 3—figure supplement 1). And the ratios of wet-to-dry lung masses of both WT and Gng13-cKO mice at 25 dpi were significantly greater than their respective ones at 0 dpi whereas the ratio of the Gng13-cKO mice at 25 dpi was even greater than that of the WT mice at 25 dpi (Figure 3E), supporting the notion that Gng13-cKO mice experienced severer damage following H1N1 infection compared with WT control.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/92956/elife-92956-fig3-v1.jpg)
+
+**Figure 3.:** (A) Gng13-cKO mice showed greater bodyweight loss than WT or Trpm5-/- mice over days post-infection. Data are presented as means ± SD (n=6). Unpaired two-tailed t-tests were performed. (B) Kaplan-Meier survival curves of WT, Trpm5-/- and Gng13-cKO mice following H1N1 inoculation. A significant number of Gng13-cKO mice died between 9 and 12 dpi (i.e., 2, 4, 2 mice, and 1 mouse died at 9, 10, 11, 12 dpi, respectively), reducing the overall survival rate to 62.5%, significantly lower than those of Trpm5-/- or WT mice, of which nearly all survived. Data are presented as means ± SEM (n=44, 17 and 14 for WT, Trpm5-/-, and Gng13-cKO mice, respectively). The curves were determined by a log-rank test. (C, D) Images and statistical analysis of the injured areas on the lungs of WT, Trpm5-/-, and Gng13-cKO mice at 25 dpi. The injured areas that are marked by dashed lines were significantly greater in the Gng13-cKO mice than in Trpm5-/- or WT mice while no significant difference was found between the latter two. Data are presented as means ± SD (n=5), and unpaired two-tailed student t-tests were performed. Scale bar: 5 mm. (E) Comparative analysis of wet-to-dry weight ratios of WT and Gng13-cKO lungs at 0 and 25 dpi. While no difference in the ratio was found between WT and Gng13-cKO mice at 0 dpi, the ratios of these mice at 25 dpi were significantly greater than their corresponding ones at 0 dpi. However, the Gng13-cKO ratio was even greater than the WT ratio at 25 dpi. Data are presented as means ± SD (n=6), and unpaired two-tailed student t-tests were performed. (F–M) Identification of tuft cells in the Krt5-expressing tissue areas of H1N1-injured lungs of WT and Gng13-cKO mice at 14, 20, 25, and 50 dpi using antibodies to Krt5 and to the tuft cell marker Dclk1. The densities of tuft cells were significantly higher in WT than in Gng13-cKO lungs at 20, 25, and 50 dpi, but not at an earlier time point of 14 dpi. Data are presented as means ± SD (n=3), and unpaired two-tailed student t-tests were performed. Scale bars in (L): 50 µm and 15 µm. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92956/elife-92956-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Sections of WT, Trpm5-/-, and Gng13-cKO mice at 25 dpi. Areas inside the dotted lines were determined as the severely damaged area. Scale bars: 0.5 mm. (B) Statistical analysis of the injured tissue volumes on the lungs of WT, Trpm5-/-, and Gng13-cKO mice at 25 dpi. The thickness of each section was 12 μm, and the area of lung injury in each section was determined using imageJ. The volume of the lung injury in each section was the area of the lung injury area multiplied by the section thickness. Each section of lung tissue was collected, and the sum of the lung injury volumes of all sections was the final volume for the whole lung. Data are presented as means ± SD (n=3), and unpaired two-tailed student t-tests were performed. **p<0.01.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/92956/elife-92956-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A, B, C, D, E) Immunostaining and quantitative analyses of the abundance of Dclk1+ tuft cells in the Krt5+ regions of the injured lung tissues at 14 and 25 dpi, respectively. Data are presented as means ± SD (n=3), and unpaired two-tailed student t-tests were performed. Scale bars in (A, C): 50 µm. (F) Comparative analysis of Dclk1+ tuft cell numbers in the Krt5+ regions of WT versus Gng13-cKO over days post-infection. Data are presented as means ± SD (n=3), and unpaired two-tailed student t-tests were performed. (G,H) Double immunostaining of lung tissue sections of 25 dpi with antibodies to Dclk1 and Gγ13 shows a subset of Dclk1+ tuft cells expressing Gγ13 in WT but not in Gng13-cKO mice. Data are presented as means ± SD (n=3), and unpaired two-tailed student t-tests were performed. Scale bars: 50 µm and 15 µm. (I) Uniform manifold approximation and projection (UMAP) analyses of the single-cell RNAseq dataset GSE197163 (Barr et al., 2022) indicate that out of 613 Trpm5-GFP+ tuft cells, 350, i.e., 57% of them, expressed Gγ13. (J) UMAP analyses of the single-cell RNAseq dataset GSE197163 (Barr et al., 2022) indicate that out of 350 Gγ13+ tuft cells, 277, i.e., 79% of them expressed Alox5. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 To investigate how the abolishment of taste signaling proteins affects the formation of ectopic lung tuft cells in response to H1N1 infection, we performed immunohistochemistry on lung tissue sections, using an anti-Krt5 antibody to demarcate H1N1-damaged areas and an anti-Dclk1 antibody to identify tuft cells. We found as early as 14 dpi a small number, i.e., ∼6 and ∼4 tuft cells per mm2 of the Krt5-expressing tissue area in WT and Gng13-cKO lungs, respectively, and no significant differences in the tuft cell density between these two genotypes were found at this time point. However, at 20 and 25 dpi, the densities of tuft cells in WT were increased to 120 and 175 cells per mm2, respectively, which are significantly more than the corresponding densities of Gng13-cKO, i.e., 17 and 57 cells/mm2, respectively; and at 50 dpi, the tuft cell density in WT was decreased to 102 cells/mm2, which, however, was still significantly higher than 56 cells/mm2 of Gng13-cKO (Figure 3F-M). In contrast, the densities of tuft cells in Trpm5-/- mice were nearly identical to those of WT at both 14 and 25 dpi, and no significant difference was found between WT and Trpm5-/- mice (Figure 3—figure supplement 2A-E). Thus, although tuft cells first appeared at 14 dpi in all WT, Trpm5-/- and Gng13-cKO mice, and no statistic difference in their densities was found among these mice, the subsequent densities were increased in all WT, Trpm5-/-, and Gng13-cKO mice; and the increase was much less in the Gng13-cKO mice than in WT or Trpm5-/-, and consequently, the densities in the Gng13-cKO mice were significantly less than in WT or Trpm5-/- mice at 20, 25, and 50 dpi (Figure 3—figure supplement 2F).
 
 To determine how many ectopic tuft cells in the infected WT lung express Gγ13 and whether any remaining ectopic tuft cells in the infected Gng13-cKO lung express Gγ13, double immunostaining was carried out with antibodies to Dclk1 and to Gγ13 on the lung tissue sections of 25 dpi of both WT and Gng13-cKO mice. The results showed that about 28.6% of Dclk1+ ectopic tuft cells express Gγ13 in WT sections while none of the remaining Dclk1+ tuft cells in the Gng13-cKO sections was Gγ13+ (Figure 3—figure supplement 2G, H), indicating an effective conditional ablation of Gγ13 expression. Furthermore, reanalysis of the previously published single tuft cell RNAseq dataset GSE197163 showed that about 57% of the Trpm5-GFP+ tuft cells were Gγ13+ in WT mice, some of which also expressed Alox5, a key enzyme to the biosynthesis of pro-resolving mediators (Figure 3—figure supplement 2I,J; Barr et al., 2022; Halade et al., 2022). This result is consistent with the previous report indicating the heterogeneity of dysplastic tuft cells in the severely injured lungs, and this study ablated the Gγ13+ tuft cells including some expressing the pro-resolving enzyme Alox5.
 
-## Gγ13 mutant mice display stronger inflammation and augmented pyroptosis following H1N1 infection
+### Gγ13 mutant mice display stronger inflammation and augmented pyroptosis following H1N1 infection
 
 To determine whether Gγ13 conditional knockout affects the inflammation resolution following H1N1 infection, we performed immunohistochemistry on the lung sections with an antibody to the immune cell marker CD64. The results showed that at both 20 and 25 dpi, the Gng13-cKO mice had significantly more CD64+ immune cells in the injured areas than WT, although both types of mice indicated a trend of inflammation resolution with a reduction in the number of immune cells from 20 to 25 dpi (Figure 4A, B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/92956/elife-92956-fig4-v1.jpg)
+
+**Figure 4.:** (A, B) Immunostaining of wild-type (WT) and Gng13-cKO lung tissue sections with an antibody to the immune cell marker CD64 indicates significantly more immune cells in the mutant lung than in WT at both 20 and 25 dpi. Scale bar: 50 µm. Data are presented as means ± SD (n=3), and unpaired two-tailed student t tests were performed. (C) qRT-PCR indicates that expression levels of gasdermin D and E (Gsdmd, Gsdme) and other proteins of the pyroptosis pathway: Tlr4, Nlpr3, Asc, Casp1, and Il1b were significantly upregulated in both WT and Gng13-cKO lungs at 25 dpi compared with those at 0 dpi. Furthermore, the expression levels of these genes in Gng13-cKO were significantly higher than in WT at 25 dpi. Data are presented as means ± SD (n=3). Unpaired two-tailed student t-tests were performed. (D, E) Western blot analysis shows that the protein levels of NLRP3, full-length Gasdermin D (Gsdmd-FL), N-terminal fragment of Gasdermin D (Gsdmd-N), pro-caspase 1 (pro-Casp1), cleaved caspase 1 (Cleaved Casp-1 (p20)), and IL-1β in the Gng13-cKO lungs were significantly higher than the corresponding levels of WT at both 20 and 25 dpi (β-actin as an internal control). And over this phase, the expression levels of these proteins were reduced at 25 dpi in comparison with those at 20 dpi in both genotypes. Data are presented as means ± SD (n=4), and unpaired two-tailed t-tests were performed. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92956/elife-92956-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Quantitative RT-PCR analysis of gasdermin gene expression in the lung tissues at 0 and 25 dpi in WT and Gng13-cKO. Data are presented as means ± SD (n=3). Unpaired two-tailed student t tests were performed. **p<0.01, ***p<0.001, ****p<0.0001.
 
 We also carried out quantitative reverse transcription-PCR (qRT-PCR) to assess the expression of pyroptosis-related gasdermin genes, and found that Gsdmd and Gsdme were the two most abundantly expressed ones (Figure 4—figure supplement 1). Further analysis showed that before H1N1 infection, the expression levels of Gsdmd and Gsdme were similar between WT and Gng13-cKO mice at 0 dpi; and at 25 dpi, their expression levels were significantly higher than those at 0 dpi in both WT and Gng13-cKO mice; furthermore, Gsdmd and Gsdme expression levels were significantly higher in the Gng13-cKO mice than in WT at 25 dpi (Figure 4C). We then performed additional qRT-PCR to examine the expression patterns of other genes involved in the pyroptosis, Tlr4, Nlpr3, Asc, Casp1 and Il1b, and found a similar pattern for all these genes, i.e., both WT and Gng13-cKO mice showed more expression at 25 dpi than at 0 dpi, whereas Gng13-cKO exhibited even higher expression levels than WT at 25 dpi (Figure 4C).
 
@@ -70,27 +110,39 @@ To validate their expression at the protein level, we isolated proteins from the
 
 To determine which cells underwent pyroptosis, we performed immunohistochemistry on the injured lung sections with antibodies to the two most highly expressed gasdermins, Gsdmd, and Gsdme. Results showed that at 25 dpi, there were about 180 and 77 cells/mm2 in Gng13-cKO mice expressing Gsdmd and Gsdme, respectively, which are significantly higher than the corresponding densities of 88 and 50 cells/mm2 in WT (Figure 5A, B; Figure 5—figure supplement 1A, B). Colocalization of immunostaining with antibodies to Gsdmd, the macrophage marker F4/80 and the epithelial cell marker EpCAM, indicated that the majority of Gsdmd+ cells, i.e., about 76.7% and 80.6% in WT and Gng13-cKO mice, respectively, at 25 dpi were also F4/80+, and the remaining Gsdmd+ cells, i.e., 21.9% and 17.8% of Gsdmd+ cells in WT and Gng13-cKO mice, respectively, were EpCAM+, suggesting that most of Gsdmd-expressing cells were macrophages whereas the remaining were epithelial cells (Figure 5C, Figure 5—figure supplement 2A). Interestingly, nearly all (i.e. 98.5% and 95.5% in WT and Gng13-cKO, respectively) of Gsdme+ cells were F4/80+, indicating that almost all Gsdme-expressing cells were macrophages in the two genotypes at 25 dpi (Figure 5—figure supplement 2B). Finally, the density of cells expressing IL-1β and caspase 3 was 153 cells/mm2 and 267 cells/mm2, respectively, in Gng13-cKO mice at 25 dpi, and significantly greater than the corresponding density of 63 and 66 cells/mm2 in WT mice (Figure 5D, E; Figure 5—figure supplement 1C, D), indicating more programmed cell death in the H1N1-infected Gng13-cKO lung. Similar to that of Gsdme, the majority, i.e., 93% and 91%, of IL-1β-expressing cells in WT and Gng13-cKO mice, respectively, were F4/80+ macrophages (Figure 5—figure supplement 2C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/92956/elife-92956-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) Immunostaining of H1N1-infected lung sections antibody to gasdermin D (Gsdmd) indicates significantly more gasdermin D-expressing cells in the Gng13-cKO sections than in wild-type (WT). Data are presented as means ± SD (n=3), and unpaired two-tailed student t-tests were performed. (C) Co-immunostaining shows that nearly the same percentage, i.e., 98.5% and 95.5% of Gsdmd+ cells in WT and Gng13-cKO, respectively, were F4/80+. (D) Immunostaining of H1N1-infected lung sections at 25 dpi with an antibody to IL-1β indicate significantly more IL-1β-expressing cells in the Gng13-cKO sections than in WT. Data are presented as means ± SD (n=4), and unpaired two-tailed t-tests were performed. Scale bars: 50 µm. ***p<0.001, ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92956/elife-92956-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Immunostaining of WT and Gng13-cKO lung tissue sections with anti-Gsdme in WT and Gng13-cKO at 25 dpi. Data are presented as means ± SD (n=3). Unpaired two-tailed student t tests were performed. (C, D) Immunostaining of WT and Gng13-cKO lung tissue sections with anti-Caspase-3 in WT and Gng13-cKO at 25 dpi. Data are presented as means ± SD (n=3). Unpaired two-tailed student t tests were performed. Scale bars: 50 μm. *p<0.05, ***p<0.001.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/92956/elife-92956-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Immunostaining of WT and Gng13-cKO lung tissue sections with anti-EpCAM and anti-Gsdmd in WT and Gng13-cKO at 25 dpi. (B) Immunostaining of WT and Gng13-cKO lung tissue sections with anti-F4/80 and anti-Gsdme in WT and Gng13-cKO at 25 dpi. (C) Immunostaining of WT and Gng13-cKO lung tissue sections with anti-F4/80 and anti-IL-1β in WT and Gng13-cKO at 25 dpi. Scale bars: 50 μm.
+
 To obtain a snapshot of cells indeed undergoing pyroptosis, we intranasally administrated Sytox to label dead cells (Xi et al., 2021). Histochemical analysis showed that Gng13-cKO mice at 20 and 25 dpi had 211 and 96 Sytox+ cells/mm2, respectively, significantly more than the corresponding 96 and 62 cells/mm2 in WT (Figure 6A, B). Double staining of Sytox with an anti-CD64 antibody indicated that more than half of CD64+ macrophages, i.e., 61.5% and 57% in WT and Gng13-cKO mice at 25 dpi, respectively, were Sytox+, undergoing pyroptosis (Figure 6C). Together, these data indicate that the injured lungs exhibited immune cell infiltration, expressed pyroptotic genes, and cell death of macrophages and some epithelial cells; and from 20 to 25 dpi, the injured animals showed some inflammation resolution; but at both time points, the Gng13-cKO mice showed stronger inflammatory responses and slower inflammation resolution than WT.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/92956/elife-92956-fig6-v1.jpg)
 
-**Figure 6.:** (A, B) Histological analysis of lung tissue sections following Sytox administration reveals that significantly more Sytox+ cells were found in the mutant lung sections than the corresponding wild-type (WT) tissues at both 20 and 25 dpi while in both types of mice the numbers of the Sytox+ cells at 25 dpi seemed to be fewer than that at 20 dpi. (C) Immunostaining with an antibody to the macrophage marker CD64 indicates that most of the Sytox+ cells were macrophages in both WT and Gng13-cKO mice (circled by dashed lines in the bright field images on the far right). Data are presented as means ± SD (n=3), and unpaired two-tailed student t-tests were performed. Scale bars: 50 µm. *p<0.05, **p<0.01.Figure 6—source data 1.+ cell densities in the injured lung tissues of wild-type (WT) and Gng13-cKO mice.
+**Figure 6.:** (A, B) Histological analysis of lung tissue sections following Sytox administration reveals that significantly more Sytox+ cells were found in the mutant lung sections than the corresponding wild-type (WT) tissues at both 20 and 25 dpi while in both types of mice the numbers of the Sytox+ cells at 25 dpi seemed to be fewer than that at 20 dpi. (C) Immunostaining with an antibody to the macrophage marker CD64 indicates that most of the Sytox+ cells were macrophages in both WT and Gng13-cKO mice (circled by dashed lines in the bright field images on the far right). Data are presented as means ± SD (n=3), and unpaired two-tailed student t-tests were performed. Scale bars: 50 µm. *p<0.05, **p<0.01.
 
-## Gγ13 disruption leads to severer leakage of the lung epithelia
+### Gγ13 disruption leads to severer leakage of the lung epithelia
 
 Increased pyroptosis in the mutant lungs prompted us to assess the integrity of lung epithelia. We collected total bronchoalveolar lavage fluid (BALF) from both WT and Gng13-cKO mice at 0, 20, and 25 dpi, and the average numbers of cells per mouse present in the BALF from WT and Gng13-cKO mice at 0 dpi were determined to be 0.23 × 106 and 0.37 × 106 cells, respectively, and no significant difference was found between these BALF samples. However, the cell numbers were significantly increased to 1.22 × 106 and 5.19 × 106 in WT and Gng13-cKO BALF at 20 dpi, and 0.93 × 106 and 2.63 × 106 in WT and Gng13-cKO BALF at 25 dpi, respectively, and the latter was still significantly more than the former (Figure 7A). The BALF protein content also showed a similar pattern, i.e., a basal amount of protein was found in both WT and Gng13-cKO BALF at 0 dpi, that is, 0.36 and 0.33 mg/mL, respectively, and no significant difference was found between the two groups. At 20 dpi, however, both WT and Gng13-cKO BALF contained much more proteins than their corresponding samples at 0 dpi, but at 20 dpi, the Gng13-cKO BALF had more proteins than that of WT (2.01 vs 0.88 mg/mL), and the same is true at 25 dpi (1.65 vs 0.52 mg/mL) (Figure 7B). In WT, the BALF protein concentration was significantly decreased from 0.88 mg/mL at 20 dpi to 0.52 mg/mL at 25 dpi whereas the decrease of the BALF protein concentration in the Gng13-cKO was insignificant over the same period. The lactate dehydrogenase (LDH) activity and IL-1β content in the BALF also showed similar patterns. No significant difference in the basal LDH activity or IL-1β content was found between WT BALF (LDH, 33.81 U/L; IL-1β, 3.60 pg/ml) and Gng13-cKO BALF (LDH, 32.17 U/L; IL-1β, 3.35 pg/ml) at 0 dpi. The LDH activity then rose significantly to 73.86 U/L and 91.67 U/L at 20 dpi in WT and Gng13-cKO BALF, respectively, followed by a significant decrease to 53.12 U/L and 76.40 U/L, respectively, at 25 dpi. However, at both time points, the Gng13-cKO LDH activities were always greater than the corresponding WT activities (Figure 7C). WT BALF IL-1β content also significantly increased to 38.82 pg/ml at 20 dpi, then significantly decreased to 22.03 pg/ml at 25 dpi, while the Gng13-cKO BALF IL-1β levels at the two time points were 75.57 and 82.12 pg/ml, respectively, significantly higher than the corresponding WT levels. Interestingly, different from the LDH activity dynamics, the Gng13-cKO BALF IL-1β level at 25 dpi did not appear to be reduced compared with that at 20 dpi (Figure 7D). These results indicate that while the WT injured lungs showed significant improvements in the epithelial leakage from 20 to 25 dpi, the Gng13-cKO injured lungs displayed higher levels of leakage and a slower repair with a significant reduction only in the BALF LDH level, but not in the total BALF protein or IL-1β level, from 20 to 25 dpi.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/92956/elife-92956-fig7-v1.jpg)
 
-**Figure 7.:** (A) Average numbers of cells per mouse found in both WT and Gng13-cKO BALFs at both 20 and 25 dpi were significantly more than those at 0 dpi while those of the Gng13-cKO BALF were even more than those of wild-type (WT) at both 20 and 25 dpi. Data are presented as means ± SD (n=6), and unpaired two-tailed student t-tests were performed. (B) The protein contents of both WT BALF and Gng13-cKO BALF at 20 dpi and 25 dpi were significantly more than their corresponding ones at 0 dpi, but the Gng13-cKO BALF had significantly more proteins than WT at both 20 and 25 dpi. And in WT, the protein content was significantly reduced from 20 dpi to 25 dpi, but the reduction in the Gng13-cKO was insignificant. Data are presented as means ± SD (n=5), and unpaired two-tailed student t-tests were performed. (C) Lactate dehydrogenase (LDH) activity assays showed that at both 20 and 25 dpi, LDH activities in both WT and Gng13-cKO BALF were significantly higher than their corresponding ones at 0 dpi, but the Gng13-cKO BALF at both 20 and 25 dpi showed higher activities than the corresponding WT BALF. And both WT and Gng13-cKO BALF displayed significant LDH activity reduction from 20 to 25 dpi. Data are presented as means ± SD (n=3), and unpaired two-tailed student t-tests were performed. (D) IL-1β ELISA assays showed a similar pattern to that of LDH, except that the reduction in the IL-1β concentration from 20 to 25 dpi was insignificant in the Gng13-cKO BALF. Data are presented as means ± SD (n=4), and unpaired two-tailed student t-tests were performed. *p<0.05, **p<0.01, ***p<0.001 ****p<0.0001.Figure 7—source data 1.Gng13-cKO mice.
+**Figure 7.:** (A) Average numbers of cells per mouse found in both WT and Gng13-cKO BALFs at both 20 and 25 dpi were significantly more than those at 0 dpi while those of the Gng13-cKO BALF were even more than those of wild-type (WT) at both 20 and 25 dpi. Data are presented as means ± SD (n=6), and unpaired two-tailed student t-tests were performed. (B) The protein contents of both WT BALF and Gng13-cKO BALF at 20 dpi and 25 dpi were significantly more than their corresponding ones at 0 dpi, but the Gng13-cKO BALF had significantly more proteins than WT at both 20 and 25 dpi. And in WT, the protein content was significantly reduced from 20 dpi to 25 dpi, but the reduction in the Gng13-cKO was insignificant. Data are presented as means ± SD (n=5), and unpaired two-tailed student t-tests were performed. (C) Lactate dehydrogenase (LDH) activity assays showed that at both 20 and 25 dpi, LDH activities in both WT and Gng13-cKO BALF were significantly higher than their corresponding ones at 0 dpi, but the Gng13-cKO BALF at both 20 and 25 dpi showed higher activities than the corresponding WT BALF. And both WT and Gng13-cKO BALF displayed significant LDH activity reduction from 20 to 25 dpi. Data are presented as means ± SD (n=3), and unpaired two-tailed student t-tests were performed. (D) IL-1β ELISA assays showed a similar pattern to that of LDH, except that the reduction in the IL-1β concentration from 20 to 25 dpi was insignificant in the Gng13-cKO BALF. Data are presented as means ± SD (n=4), and unpaired two-tailed student t-tests were performed. *p<0.05, **p<0.01, ***p<0.001 ****p<0.0001.
 
-## Gng13 conditional nullification exacerbates H1N1-induced fibrosis
+### Gng13 conditional nullification exacerbates H1N1-induced fibrosis
 
 To assay how the Gng13 mutation affects the recovery of the severely injured lungs, we first conducted qRT-PCR to determine the expression levels of fibrotic genes: Col1a1, Fn1, and Timp1. The results showed that at 0 dpi, there was no significant difference in the expression levels of these three genes between WT and Gng13-cKO lungs; and at 25 dpi, however, the expression levels of these genes were significantly increased in both genotypes compared with their corresponding levels at 0dpi. Comparison between the two genotypes revealed that at 25 dpi, the expression levels of all these three genes were significantly higher in the Gng13-cKO lungs than in WT. At 50 dpi, the expression levels of these genes showed a downward trend in both WT and Gng13-cKO lungs, consistent with the phase of return to homeostasis of the remodeled lungs. More specifically, the Col1a1 expression was reduced to a similar level in WT and Gng13-cKO, but still significantly higher than those at 0 dpi. For Fn1 and Timp1, their expression in WT at 50 dpi was much reduced, to a level similar to those at 0 dpi; and their expression in Gng13-cKO at 50 dpi was reduced comparing with that at 25 dpi, but still higher than that at 0 dpi or in WT at 50 dpi (Figure 8A).
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/92956/elife-92956-fig8-v1.jpg)
 
-**Figure 8.:** Gng13-cKO lungs.(A) Quantitative reverse transcription-PCR (qRT-PCR) analysis of Col1a1, Fn1, and Timp1 expression. While the expression levels of these three genes at 20 dpi in both wild-type (WT) and Gng13-cKO injured lungs were significantly greater than their corresponding ones at 0 dpi, the expression in Gng13-cKO at 25 dpi was much stronger than WT at 25 dpi. At 50 dpi, the expression levels of all these three genes were reduced compared with those at 25 dpi in both WT and Gng13-cKO mice, but those of Fn1 and Timp1 in Gng13-cKO mice at 50 dpi were still significantly higher than WT at 50 dpi. Data are presented as means ± SD (n=3), and unpaired two-tailed student t-tests were performed. (B, C) Masson’s trichrome staining showed that at 25 dpi, the fibrosis percentages in WT and Gng13-cKO were significantly more than their corresponding ones at 0 dpi, which were reduced at 50 dpi. Data are presented as means ± SD (n=3), and unpaired two-tailed student t-tests were performed. Scale bars : 500 µm and 100 µm. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.Figure 8—source data 1.Gng13-cKO mice.
+**Figure 8.:** (A) Quantitative reverse transcription-PCR (qRT-PCR) analysis of Col1a1, Fn1, and Timp1 expression. While the expression levels of these three genes at 20 dpi in both wild-type (WT) and Gng13-cKO injured lungs were significantly greater than their corresponding ones at 0 dpi, the expression in Gng13-cKO at 25 dpi was much stronger than WT at 25 dpi. At 50 dpi, the expression levels of all these three genes were reduced compared with those at 25 dpi in both WT and Gng13-cKO mice, but those of Fn1 and Timp1 in Gng13-cKO mice at 50 dpi were still significantly higher than WT at 50 dpi. Data are presented as means ± SD (n=3), and unpaired two-tailed student t-tests were performed. (B, C) Masson’s trichrome staining showed that at 25 dpi, the fibrosis percentages in WT and Gng13-cKO were significantly more than their corresponding ones at 0 dpi, which were reduced at 50 dpi. Data are presented as means ± SD (n=3), and unpaired two-tailed student t-tests were performed. Scale bars : 500 µm and 100 µm. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 Masson’s trichrome staining was used to determine the extent of fibrosis. The results showed that 3.2% and 3.1% of fibrosis areas were found in WT and Gng13-cKO lungs at 0 dpi, respectively, and no significant difference was found between these two genotypes. At 25 dpi, the percentages of fibrosis areas in WT (12.3%) and Gng13-cKO (26.3%) were significantly more than their corresponding ones at 0 dpi. And between the two genotypes, the fibrosis in Gng13-cKO was even more than that in WT at 25 dpi. At 50 dpi, the fibrosis in WT (7.9%) and Gng13-cKO (15%) appeared to be reduced compared with those at 25 dpi, but they were still more than those at 0 dpi; and furthermore, fibrosis in Gng13-cKO at 50 dpi seemed to be more than that of WT at 50 dpi (Figure 8B and C). These results indicate that Gng13-cKO mice recovered not as fast as WT mice and displayed a higher levels of fibrosis.
 
@@ -112,60 +164,700 @@ In conclusion, to our knowledge, it is the first time to postulate that differen
 
 ## Materials and methods
 
-## Experimental design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Chat-IRES-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat#: 006410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Trpm5-/-</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat#: 005848</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Gng13flox/flox</td>
+      <td>Li et al., 2013</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Gng13-cKO</td>
+      <td>The Jackson Laboratory; Li et al., 2013</td>
+      <td>Cat#006410</td>
+      <td>Strain: Chat-IRES-Cre × Gng13flox/flox</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Dclk1 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab31704; RRID:AB_873537</td>
+      <td>IF (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Dclk1-488 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab202754</td>
+      <td>IF (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Gαgust (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-395</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Plcβ2 (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-206</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab10558; RRID:AB_442810</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD64 (rabbit monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>MA5-29706; RRID:AB_2785530</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Gsdmd (rabbit polyclonal)</td>
+      <td>Affinity</td>
+      <td>AF4012; RRID:AB_2846776</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Gsdme (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>13075-1-AP; RRID:AB_2093053</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-F4/80-FITC (rabbit monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11-4801-81; RRID:AB_2735037</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EpCAM (rabbit monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>11-5791-82; RRID:AB_11151709</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Krt5 (rabbit polyclonal)</td>
+      <td>BioLegend</td>
+      <td>905504; RRID:AB_2734679</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Trpm5 (rabbit polyclonal)</td>
+      <td>Sigma-aldrich</td>
+      <td>AV35242; RRID:AB_1858368</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Caspase-3 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab32351</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Gγ13 (rabbit polyclonal)</td>
+      <td>Huang et al., 1999</td>
+      <td>N/A</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit IgG H&amp;L (Alexa Fluor488)</td>
+      <td>Abcam</td>
+      <td>ab150073; RRID:AB_2636877</td>
+      <td>Secondary antibody IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbitIgG H&amp;L (Alexa Fluor568)</td>
+      <td>Abcam</td>
+      <td>ab175470; RRID:AB_2783823</td>
+      <td>Secondary antibody IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NLRP3 (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab263899; RRID:AB_2889890</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Gsdmd (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab219800; RRID:AB_2888940</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-caspase-1 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-56036; RRID:AB_781816</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IL-1 (goat polychonal)</td>
+      <td>R&amp;D Systems</td>
+      <td>AF-401-SP</td>
+      <td>WB (1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin (mouse monoclonal)</td>
+      <td>Beyotime</td>
+      <td>AA128-1</td>
+      <td>WB (1:1,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit (goat polychonal)</td>
+      <td>Beyotime</td>
+      <td>A0208</td>
+      <td>HRP-conjugated secondary antibody WB (1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-goat (donkey polychonal)</td>
+      <td>Beyotime</td>
+      <td>A0181</td>
+      <td>HRP-conjugated secondary antibody WB (1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse (goat polychonal)</td>
+      <td>Beyotime</td>
+      <td>A0216</td>
+      <td>HRP-conjugated secondary antibody WB (1:2,000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR/ sequencing primers</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>Table 1</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LDH-GloTM Cytotoxicity Assay</td>
+      <td>Promega</td>
+      <td>Cat#: J2380</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IL-1 beta DuoSet ELISA</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#: DY401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Modified Masson’s Trichrome Stain Kit</td>
+      <td>absin</td>
+      <td>Cat#: abs9348</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bleomycin</td>
+      <td>Selleck</td>
+      <td>Cat#: s1214</td>
+      <td>6 mg/kg bodyweight</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>House dust mite extract</td>
+      <td>Biolead</td>
+      <td>Cat#: XPb70D3A2.5</td>
+      <td>2 mg/kg bodyweight</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipopolysaccharide</td>
+      <td>Sigma</td>
+      <td>Cat#: L2630</td>
+      <td>1 mg/kg bodyweight</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Denatonium benzoate</td>
+      <td>Sigma</td>
+      <td>Cat#: D5765</td>
+      <td>1 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Quinine</td>
+      <td>MedChemExpress</td>
+      <td>Cat#: HY-D0143</td>
+      <td>100 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Allylisothiocyanate</td>
+      <td>Sigma</td>
+      <td>Cat#: 36682</td>
+      <td>3 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gallein</td>
+      <td>APExBIO</td>
+      <td>Cat#: B7271</td>
+      <td>100 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>U73122</td>
+      <td>Sigma</td>
+      <td>Cat#: U6756</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1× Sytox Green</td>
+      <td>Beyotime</td>
+      <td>Cat#: C1070S</td>
+      <td>1×</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism 9</td>
+      <td>Graphpad</td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www.graphpad-prism.cn/?c=i&amp;a=prism</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental design
 
 This study was designed to investigate the possible roles of the taste signaling proteins, the heterotrimeric G protein subunit Gγ13 and the transient receptor potential ion channel Trpm5, in the host response to H1N1 influenza virus infection as well as in the subsequent inflammation resolution, tissue remodeling, and recovery using transgenic and conditional gene knockout mouse models with wild-type (WT) mice as control. Animals were intranasally inoculated with H1N1 viruses at a sublethal dosage, their bodyweights were measured, mortality rates determined; the lung tissues and bronchoalveolar lavage fluid were molecularly, biochemically, immunologically, and statistically analyzed.
 
-## Animals
+### Animals
 
 C57BL/6 mice were purchased from the Shanghai SLAC Laboratory animal company. Chat-IRES-Cre, Trpm5-knockout/lac Z knockin (i.e., Trpm5-/-), and Ai9 (Jax stock numbers 006410, 005848 and 7909) were obtained from the Jackson laboratory. The Gng13flox/flox mice were generated previously (Li et al., 2013) and bred with the Chat-IRES-Cre mice to conditionally knock out the Gng13 gene in the choline acetyl-transferase (ChAT)-expressing cells of the Gng13-cKO mutant mice. Mice were bred to more than 98% of C57BL/6 genetic background and maintained under a 12-hr light/dark cycle with access to water and food ad libitum in the Laboratory Animal Center of Zhejiang University. Progeny was genotyped by PCR, and both male and female mice at 6 to 8 weeks old were used in the experiments. Studies involving animals were approved by the Zhejiang University Institutional Animal Care and Use Committee, and performed following the NIH ‘Guidelines for the Care and Use of Laboratory Animals’.
 
-## Animal models of virally or chemically induced lung injury
+### Animal models of virally or chemically induced lung injury
 
 Mice were anesthetized with 5% chloral hydrate (Sangon Biotech, A600288), and then intranasally administrated with 120 pfu of influenza virus A/Puerto Rico/8/1934 in 25 µl PBS at 0 day post infection (dpi). Control mice were intranasally instilled with 25 µl PBS only. The mice were checked every day and weighted every two days and euthanized for analysis at specific time points.
 
 For chemically injured mouse models, mice were intraperitoneally administrated with a single dose of bleomycin (Selleck, s1214) at 6 mg/kg bodyweight, or first anesthetized and then injected into the trachea with the house dust mite extract (Biolead, XPb70D3A2.5) at 2 mg/kg bodyweight, one dose per day for three consecutive days, or injected through the trachea a single dose of lipopolysaccharide (LPS) (Sigma, L2630) at 1 mg/kg bodyweight. The lung tissues were dissected out for studies 14 days after the first injection.
 
-## Fluorescence-activated cell sorting
+### Fluorescence-activated cell sorting
 
 The heterogeneous Chat-Cre: Ai9 mice at 25 dpi were anesthetized and transcardially perfused with cold PBS; their lungs were then isolated and dissociated into single cells as described previously (Zhao et al., 2020; Barkauskas et al., 2013). Briefly, the lung tissues were minced into pieces of 1 mm3 by a pair of ophthalmic scissors, which were then digested with 1 mg/mL dispase II (Sigma, D4693), 3 mg/mL collagenase I (Sigma, C0130), and 0.5 mg/mL DNase I (Sigma, DN25) in DMEM/F12 medium (Thermo Fisher Scientific, C11330500BT) with 1% P/S for 50 min at 37°C on a shaker. The cell suspension was then filtered with a 70-µm cell strainer (Biosharp, BS-70-XBS) and treated by red blood cell lysis buffer (Beyotime, C3702) for 3 min at RT. The cell suspension was then again filtered by a 40-µm cell strainer (Biosharp, BS-40-XBS), and the cells were collected and resuspended in the collection buffer (DPBS plus 0.04% BSA) (Figure 2—figure supplement 2). Cell sorting and data analyses were performed on a Beckman Coulter FACS flow cytometer.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Lungs were harvested and processed as described previously (Zhao et al., 2020). Briefly, freshly dissected mouse lungs were fixed with 4% paraformaldehyde (PFA) at RT for 2.5 hr on a shaker, followed by cryoprotection in 30% sucrose in PBS at 4°C overnight. The lungs were incubated in 30% sucrose in PBS pre-mixed with an equal volume of optimal cutting temperature compound (OCT, Tissue-Tek) at RT for 2 hr on a shaker, and then embedded in 100% OCT and placed in a −80°C freezer for 2 hr, which were then sliced into 12 µm-thick sections on a cryostat (Thermo scientific, HM525). The tissue sections were blocked in the blocking buffer (PBS plus 3% BSA, 0.3% Triton X-100, 2% donkey serum, and 0.1% sodium azide) for 1 hr at RT, followed by incubation at 4°C overnight with primary antibodies diluted in the blocking buffer (rabbit anti-Dclk1 1:1000, Abcam, ab31704; rabbit anti-Dclk1-488 1:1000, Abcam, ab202754; rabbit anti-Gαgust 1:500, Santa Cruz Biotechnology, sc-395; rabbit anti-Plcβ2 1:500, Santa Cruz Biotechnology, sc-206; rabbit anti-CD45 1:500, Abcam, ab10558; rabbit anti-CD64 1:200, Thermo Fisher Scientific, MA5-29706; rabbit anti-Gsdmd 1:400, Affinity, AF4012; rabbit anti-Gsdme 1:500, Proteintech, 13075-1-AP; rabbit anti-F4/80-FITC 1:500, Thermo Fisher Scientific, 11-4801-81; rabbit anti-EpCAM 1:500, Thermo Fisher Scientific, 11-5791-82; rabbit anti-krt5 1:500, BioLegend, 905504). The slides were washed and incubated with the secondary antibodies: donkey anti-rabbit IgG H&L (Alexa Fluor 488) 1:500, Abcam, ab150073; donkey anti-rabbit IgG H&L (Alexa Fluor 568) 1:500, Abcam, ab175470, for 1.5 hr at RT. Fluorescent images were captured using an FV3000 laser scanning confocal microscope (Olympus) and VS200 slide scanner (Olympus).
 
-## Calcium imaging
+### Calcium imaging
 
 TdTomato+ cells were isolated and FACS-sorted as described above from the H1N1-infected Chat-Cre: Ai9 mice. These cells were seeded on laminin-coated chambers and cultured in the imaging buffer (1X HBSS, 10 mM HEPES, 1 mM sodium pyruvate) for 30 min. Cells were loaded with 5 µM fluorescent Ca2+ indicator Fluo-4 AM (Dojindo, F312) and Pluronic F-127 for 40 min at 37 °C, 5% CO2, following the previously reported protocol (Luo et al., 2019). The cells were gently washed twice with HBSS to remove any excess Fluo-4 AM and Pluronic F-127. Denatonium benzoate (D.B., Sigma, D5765) and quinine (MedChemExpress, HY-D0143) were used as bitter substances. Allyl isothiocyanate (AITC, Sigma, 36682), gallein (APExBIO, B7271), and U73122 (Sigma, U6756) were used as inhibitors for bitter taste receptor, G protein βγ subunit, and Plcβ2 activity, respectively. The cells were first stimulated by the bitter compounds of 1 mM D.B. or 100 µM quinine, then blocked by incubating with 3 mM AITC, 100 µM gallein or 10 µM U73122 for 10 min before the inhibitors were removed; and D.B. or quinine applied again to assess the cells’ calcium responsiveness. Images were captured with an excitation wavelength of 494 nm and emission wavelength of 516 nm using an IX83 total internal reflection fluorescence microscope (Olympus).
 
-## Bronchoalveolar lavage fluid (BALF) assays
+### Bronchoalveolar lavage fluid (BALF) assays
 
 BALF were prepared as previously described (Akbari et al., 2003). Briefly, after the trachea was exposed, 0.5 mL ice-cold PBS was gently instilled into the lung and then all the fluid was collected, which was repeated three times. A total of 1.5 mL BALF was collected, which was centrifuged at 300 × g for 10 min at 4°C. The supernatants were used to determine lactate dehydrogenase activity and IL-1β level using LDH-Glo Cytotoxicity Assay (Promega, J2380) and Mouse IL-1 beta DuoSet ELISA (R&D Systems, DY401) following the manufacturer’s instruction. The cells in the pellet were resuspended, a portion of which was used to count cells whereas the rest was used to extract proteins using RIPA buffer (Sangon Biotech, C500005); and the protein concentrations were determined by a BCA protein assay kit (Sangon Biotech, C503021) following the manufacturer’s instruction.
 
-## Lung wet/dry weight (W/D) ratio
+### Lung wet/dry weight (W/D) ratio
 
 Mice were sacrificed with a lethal dose of 5% chloral hydrate. The lungs were isolated and cleaned to remove any adherent blood. The wet weight of lungs was immediately determined, followed by drying in a heated stove at 65°C for 48 hr. The W/D ratio was calculated by dividing the wet lung weight by its corresponding dry weight.
 
-## Quantitative reverse transcription-PCR
+### Quantitative reverse transcription-PCR
 
 Lungs from H1N1-infected and -uninfected mice were dissected out and washed three times with ice-cold PBS. The damaged lung areas of the infected mice and the corresponding lung areas of the uninfected control mice were excised to isolate total RNAs using TaKaRa MiniBEST Universal RNA Extraction Kit (TaKaRa, 9767), which were reverse transcribed into cDNAs using the RevertAid First Strand cDNA Synthesis Kit (Thermo Fisher Scientific, K1622). qPCR reactions were set up using iQ SYBR Green Supermix (Bio-rad, 1708884), and run on the CFX Connect Real-Time System. Relative expressions were calculated and normalized to the expression of an internal control gene Actb. The primer pairs used in these qPCR reactions are listed in Table 1.
 
-## Western blotting
+**Table 1.**
+ Sequences of primers used for qPCR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Gene name</th>
+      <th>Sequences (5’-3’)</th>
+      <th>Sequences (5’-3’)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mouse</td>
+      <td>Tas2r102</td>
+      <td>F:CTCCTGCTAATCTTCTCTTTGTG</td>
+      <td>R:GGGTCTCTGTGTCTTCTGG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r103</td>
+      <td>F:AGCACAGTGGCCCACATAAA</td>
+      <td>R:TGGCCTGTGGGAAAAGCTAC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r104</td>
+      <td>F:GCAACACATCCTGGCTGAT</td>
+      <td>R:CCCCATATTGGCAAAAACAT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r105</td>
+      <td>F:CAGAAGGCATCCTCCTTTCCA</td>
+      <td>R:GCCCAGTCCATGCAGTTTAC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r106</td>
+      <td>F:AGCCACATTCTTCTCAACCT</td>
+      <td>R:AGCATGTAATGATAGCCACCA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r107</td>
+      <td>F:CTGGTTTGACAGCCACATGC</td>
+      <td>R:TGCCTTCAAAGAGGCTTGCT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r108</td>
+      <td>F:GTTTCTCCTGTTGAAACGGACT</td>
+      <td>R:GTGAGGGCTGAAATCAGAAGA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r109</td>
+      <td>F:GTCAAATTCAGGTGTTAGGAAGTC</td>
+      <td>R:CACAGGGAGAAGATGAGCAG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r110</td>
+      <td>F:AGGTCAATGCCAAACCACCT</td>
+      <td>R:CAGCAGGAAGGAGAACCCTG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r113</td>
+      <td>F:AGAATATGCAGCACACCGCC</td>
+      <td>R:CAATGATGGTTTGCAGGGCTC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r114</td>
+      <td>F:ACACATCTTGGCAGATCCACA</td>
+      <td>R:TTTGATTCCATCTGCCTGCGA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r115</td>
+      <td>F:CCTTTGGTGTATCCTTGATAGCTT</td>
+      <td>R:CTGCATCTTCCTTACATGTTTCA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r116</td>
+      <td>F:AAGGTTTGGAGTGCTCTGCT</td>
+      <td>R:AGCTGTTCTTGCAACCTGTGT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r117</td>
+      <td>F:CCCTGTGGACACATCACAAG</td>
+      <td>R:TCACAGTTTGTAGGGCTTTGAA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r118</td>
+      <td>F:CACTGGGTGCAGATGAAACA</td>
+      <td>R:CTTCAGAACAGTGAACTGAGCTTT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r119</td>
+      <td>F:TGCACAGCTGGGTCTATCCT</td>
+      <td>R:CACCAAGCCATGTGGCAAAC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r120</td>
+      <td>F:TTGGTTTGTTGTGGGCAATGT</td>
+      <td>R:TCAGTATGGTCCCCAGCCAA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r121</td>
+      <td>F:CTGGTCTTATTGGAGATGATTGTG</td>
+      <td>R:GGAGAAGATTAACAGGATGAAGGA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r122</td>
+      <td>F:GCTTATTGTGGCAAGCTCCA</td>
+      <td>R:AACCTCCACAATGACACACCA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r123</td>
+      <td>F:TTCATGCTGTGCCCACATTT</td>
+      <td>R:AAGACACCGAGGCATGTAGT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r124</td>
+      <td>F:CTACGGCCCACAGAAATGCC</td>
+      <td>R:AGCTGCCTCATTACCCAAAGA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r125</td>
+      <td>F:CTAAAGGCTCCGAAGACACCA</td>
+      <td>R:AACAGGAGAAAGGCCACTACC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r126</td>
+      <td>F:GTGTGTGGGATTGGTCAACA</td>
+      <td>R:GCTCCCGGAGTACTCAACC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r129</td>
+      <td>F:TTTAGCATGTGGCTTGCTGC</td>
+      <td>R:AGAGGCCCAAAGACATGAGC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r130</td>
+      <td>F:TGCATTCATTGCACTGGTAAA</td>
+      <td>R:GATTAAATCAATAGAGGCAATCTTCC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r131</td>
+      <td>F:TAGCCCACATTTCCCATCC</td>
+      <td>R:CAAGCACACCTCTCAATCTCC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r134</td>
+      <td>F:GCCTGGGAAGTGGTAACCTA</td>
+      <td>R:GTTGCTTAGTATCAGAATGGTGGA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r135</td>
+      <td>F:CCATCATGTCCACAGGAGAA</td>
+      <td>R:TCAGTAGTCTGACATCCAAGAACTGT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r136</td>
+      <td>F:GCAAAGAGCTTTCTCAAAGACC</td>
+      <td>R:AGGGATAGATAAACAGGGAAACACT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r137</td>
+      <td>F:CTGGCTCAAATGGAGAGCTT</td>
+      <td>R:GGTACTGACACAGGATAAGAGCAG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r138</td>
+      <td>F:CAAACCAAGTGAGCCTCTGG</td>
+      <td>R:GAGAAGCGGACAATCTTGGA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r139</td>
+      <td>F:ATGGCTCAACCCAGCAACTAC</td>
+      <td>R:ACAGCCATGACAATCCCACT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r140</td>
+      <td>F:GAAGAACATGCAACACAATGC</td>
+      <td>R:AGGGCCTTAATATGGGCTGT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r143</td>
+      <td>F:CATTGGCCTCTATGTTGCAG</td>
+      <td>R:TGTCCGGTTCCTCATCCA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tas2r144</td>
+      <td>F:AAGCAGAAAATCATAGGGCTGA</td>
+      <td>R:TGAAGGAAACCAACACTGACA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gsdma</td>
+      <td>F:CTAGTCTGATCCTTCCCATGTGT</td>
+      <td>R:CAGTGTGGGCAGTAACGTGT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gsdma2</td>
+      <td>F:CCCTTCCCTGGAAAATCTGGA</td>
+      <td>R:CCGGGTGACATCCTCAAACA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gsdma3</td>
+      <td>F:ACTGAAATGCCTGCTCATCTT</td>
+      <td>R:CATCAGGAGATGGGCTTAGTGG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gsdmc</td>
+      <td>F:TCTTCCCGGTTGGCTTTGAAA</td>
+      <td>R:AGGACTTAACAAACCCTGCTTC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gsdmc2</td>
+      <td>F:CTGTGGAATGCTTGTCCGATG</td>
+      <td>R:CCTCCAGGTCCGTTGATTGG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gsdmc3</td>
+      <td>F:AGCCCGCCCATCTAGATTTC</td>
+      <td>R:TGCCCCAACTGACTCAACTC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gsdmc4</td>
+      <td>F:TGAGGAGCCTGCCAATCTAAA</td>
+      <td>R:ATGTGGGGTGCTAGAATCCTT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gsdmd</td>
+      <td>F:GATCAAGGAGGTAAGCGGCA</td>
+      <td>R:CACTCCGGTTCTGGTTCTGG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gsdme</td>
+      <td>F:GTCAGCAGAGGCAAACAATCG</td>
+      <td>R:TTTCTTCGCTGTGCTGCTTG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Tlr4</td>
+      <td>F:GTTCTCTCATGGCCTCCACT</td>
+      <td>R:AGGGACTTTGCTGAGTTTCTGAT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Nlrp3</td>
+      <td>F:CCCCTTTATTTGTACCCAAGGCT</td>
+      <td>R:GCAACGGACACTCGTCATCT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Asc</td>
+      <td>F:GACAGTACCAGGCAGTTCGT</td>
+      <td>R:AGTCCTTGCAGGTCAGGTTC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Casp1</td>
+      <td>F:CCGCGGTTGAATCCTTTTCAG</td>
+      <td>R:TGTGCGCATGTTTCTTTCCC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Il1b</td>
+      <td>F:TGCCACCTTTTGACAGTGATG</td>
+      <td>R:AAGGTCCACGGGAAAGACAC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Col1a1</td>
+      <td>F:AGAGCGGAGAGTACTGGATCG</td>
+      <td>R:TCGAACGGGAATCCATCGGT</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Fn1</td>
+      <td>F:AACAGAAATTGACAAGCCGTC</td>
+      <td>R:TCTGTTTGATCTGGACTGGCA</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Timp1</td>
+      <td>F:GCAAAGAGCTTTCTCAAAGACC</td>
+      <td>R:AGGGATAGATAAACAGGGAAACACT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Western blotting
 
 Lung lobes from H1N1-infected and -uninfected control mice were harvested. The damaged lung tissues from the infected mice and the tissues from the corresponding areas of the control lungs were collected to extract proteins using RIPA buffer (Sangon Biotech, C500005), which were centrifuged at 14,000× g for 25 min to remove any debris. The protein concentrations in the supernatants were determined using a BCA protein assay kit (Sangon Biotech, C503021), and an equal amount of protein, i.e., 20 or 40 µg from each sample was loaded onto a 10-12% SDS-PAGE gel for protein separation. The proteins on the gel were then transferred to PVDF membranes (Millipore, IPVH00010), which were blocked in 5% BSA for 1 hr at RT. The membranes then were incubated at 4°C overnight with the primary antibodies diluted in the blocking buffer (rabbit anti-NLRP3 1:1000, Abcam, ab263899; rabbit anti-Gsdmd 1:1000, Abcam, ab219800; mouse anti-caspase-1 1:1000, Santa Cruz Biotechnology, sc-56036; goat anti-IL-1β 1:800, R&D Systems, AF-401-SP; mouse anti-β-actin 1:1000, Beyotime, AA128-1), followed by incubation with the HRP-conjugated secondary antibodies (goat anti-rabbit 1:2000, Beyotime, A0208; donkey anti-goat 1:2000, Beyotime, A0181; goat anti-mouse 1:2000, Beyotime, A0216) for 1.5 hr at RT. Protein bands on the membranes were visualized using a chemiluminescent imaging system (Tanon, 5200) and quantified using the ImageJ software.
 
-## Collagen deposition assay
+### Collagen deposition assay
 
 Lung tissue sections were analyzed with hematoxylin and eosin (H&E) staining and Masson’s trichrome staining for the assessment of the proportion of collagen content (Jia et al., 2019). Modified Masson’s Trichrome Stain Kit (absin, abs9348) was used according to the manufacturer’s instructions. The sections then were photographed using a multizoom AZ100 microscope (Nikon) and the Masson’s trichrome-stained collagen areas were determined using the ImageJ software, divided by the total area of the section. For each treatment, three or more mice were used.
 
-## Sytox green staining
+### Sytox green staining
 
 Each mouse was intranasally administrated with 1 mL 1x Sytox Green (Beyotime, C1070S) (Halverson et al., 2015). Ten minutes later, the lungs were harvested and cut into 12 µm-thick sections as previously described (Zhao et al., 2020). Green fluorescence (Ex. 490; Em. 535) was measured using FV3000 laser scanning confocal microscope (Olympus).
 
-## Statistical analysis
+### Statistical analysis
 
 Experimental data were obtained from three or more biological replicates, presented as mean ± SD using Graph Prism 9 software. Unpaired two-tailed Student’s t-tests were performed and p-values <0.05 were considered statistically significant. Animal survival rates were determined using the Kaplan-Meier method and data were analyzed with the log-rank test.
 
-## Additional files
+### Additional files
 
 This PDF file includes: Table 1, Figure 1—figure supplement 1 to Figure 5—figure supplement 2.

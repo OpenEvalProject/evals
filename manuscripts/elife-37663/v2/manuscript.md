@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.37663.001 Alterations in global mRNA decay broadly impact multiple stages of gene expression, although signals that connect these processes are incompletely defined. Here, we used tandem mass tag labeling coupled with mass spectrometry to reveal that changing the mRNA decay landscape, as frequently occurs during viral infection, results in subcellular redistribution of RNA binding proteins (RBPs) in human cells. Accelerating Xrn1-dependent mRNA decay through expression of a gammaherpesviral endonuclease drove nuclear translocation of many RBPs, including poly(A) tail-associated proteins. Conversely, cells lacking Xrn1 exhibited changes in the localization or abundance of numerous factors linked to mRNA turnover. Using these data, we uncovered a new role for relocalized cytoplasmic poly(A) binding protein in repressing recruitment of TATA binding protein and RNA polymerase II to promoters. Collectively, our results show that changes in cytoplasmic mRNA decay can directly impact protein localization, providing a mechanism to connect seemingly distal stages of gene expression.
+Alterations in global mRNA decay broadly impact multiple stages of gene expression, although signals that connect these processes are incompletely defined. Here, we used tandem mass tag labeling coupled with mass spectrometry to reveal that changing the mRNA decay landscape, as frequently occurs during viral infection, results in subcellular redistribution of RNA binding proteins (RBPs) in human cells. Accelerating Xrn1-dependent mRNA decay through expression of a gammaherpesviral endonuclease drove nuclear translocation of many RBPs, including poly(A) tail-associated proteins. Conversely, cells lacking Xrn1 exhibited changes in the localization or abundance of numerous factors linked to mRNA turnover. Using these data, we uncovered a new role for relocalized cytoplasmic poly(A) binding protein in repressing recruitment of TATA binding protein and RNA polymerase II to promoters. Collectively, our results show that changes in cytoplasmic mRNA decay can directly impact protein localization, providing a mechanism to connect seemingly distal stages of gene expression.
 
 ## Introduction
 
@@ -35,25 +35,49 @@ Here, we charted global alterations in protein localization that occur specifica
 
 ## Results
 
-## RNA binding proteins translocate from the cytoplasm to the nucleus in cells undergoing enhanced cytoplasmic mRNA decay
+### RNA binding proteins translocate from the cytoplasm to the nucleus in cells undergoing enhanced cytoplasmic mRNA decay
 
 To chart mRNA decay-driven movement of proteins between the cytoplasm and the nucleus, we used a quantitative liquid chromatography/tandem mass spectrometry (LC/MS-MS)-based approach. Specifically, following subcellular fractionation, proteins from nuclear and cytoplasmic fractions were labeled with isobaric tandem mass tags (TMT). TMT labeling enables multiplexing of up to 11 samples per run and was proven to improve the analytical power for quantitation during viral infections (McAlister et al., 2012; Jean Beltran et al., 2016). We used HEK293T cells expressing the MHV68 muSOX endonuclease to create a condition of accelerated, Xrn1-dependent cytoplasmic mRNA decay. We previously demonstrated that muSOX expression in these cells activates the mRNA decay-RNAPII transcription feedback pathway similar to virally infected fibroblasts (Abernathy et al., 2015). Pure populations of cells expressing either WT muSOX or the catalytically dead D219A muSOX point mutant were generated using Thy1.1-based cell sorting. Here, muSOX was fused to the cell surface glycoprotein Thy1.1 with an intervening self-cleaving 2A protease, causing release of Thy1.1 from muSOX for cell surface expression and selection. Three biological replicates of control, WT, and D219A muSOX expressing cells were then separated into nuclear and cytoplasmic fractions, and trypsin-digested proteins from each fraction were differentially TMT labeled prior to LC/MS-MS (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/37663/elife-37663-fig1-v2.jpg)
+
+**Figure 1.:** (A) Diagram depicting the experimental setup. (B) Venn diagram of nuclear proteins that are specifically and significantly (p<0.05) enriched in muSOX-expressing cells compared to D219A-expressing cells that also show either no change or a decrease in cytoplasmic abundance. (C) Gene ontology molecular function overrepresentation analysis by Pantherdb, graphed according to their P value. (D) Graphs showing the nuclear and cytoplasmic distribution of poly(A) binding proteins from the TMT-MS data. Graphs display the mean with SEM of 3 biological replicates. (E) Western blot of nuclear, cytoplasmic, and whole cell fractions of NIH3T3 fibroblasts mock infected or infected with WT or R443I MHV68 for 24 hr. GAPDH and histone H3 serve as fractionation and loading controls. Shown is a representative example of 3 biological replicates.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/37663/elife-37663-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Western blots of nuclear, cytoplasmic, and whole cell fractions of HEK293T cells transfected with either empty vector control, WT muSOX, or D219A muSOX. Shown are two independent biological replicates. GAPDH and histone H3 serve as fractionation and loading controls. (B, C) Graphs showing poly(U) (B) and 3' UTR (C) binding protein distributions in the nucleus and cytoplasm from the TMT-LC/MS-MS data. Graphs display the mean with SEM of 3 biological replicates.
+
 Among the 5994 total quantifiable nuclear proteins (detected in all replicates), 123 displayed significant nuclear enrichment (adjusted P value of < 0.05) in WT muSOX expressing cells relative to the D219A mutant (Figure 1B, Table S1-2 in Supplementary file 1). We then removed from further analysis proteins that were simultaneously increased in the cytoplasm in muSOX expressing cells to remove proteins that increase in overall abundance, as well as proteins displaying significant differences between the D219A catalytic mutant and the empty vector control. These filtering steps yielded a final list of 67 proteins that were differentially enriched in the nucleus under conditions of accelerated mRNA decay (Figure 1B, Table S3 in Supplementary file 1). Notably, 22 of the 67 proteins (33%) are annotated as RBPs (Pantherdb) in line with the expectation that mRNA-bound proteins in particular should be impacted during widespread mRNA degradation. In addition, 31 of the 67 proteins (46%) are listed as localized both to the cytoplasm and nucleus according to the Database for Annotation, Visualization and Integrated Discovery (DAVID), supporting the idea that they are shuttling factors. As an independent validation of these results, we evaluated 12 of the top hits by western blotting of fractionated cell lysates in control or muSOX-expressing cells, 10 of which recapitulated the MS results (Figure 1—figure supplement 1A).
 
-## Proteins associated with the poly(A) tail display robust mRNA decay-dependent nuclear translocation
+### Proteins associated with the poly(A) tail display robust mRNA decay-dependent nuclear translocation
 
 The poly(A) tail is a defining mRNA feature and during basal mRNA decay, deadenylation is the initiating step that licenses subsequent decapping and exonucleolytic degradation of an mRNA (Schoenberg and Maquat, 2012). Thus, the binding state of poly(A) tail associated proteins could theoretically serve as a readout to distinguish the overall abundance of mRNA over other forms of RNA in the cytoplasm. Notably, nuclear relocalization of PABPC has been observed during infection with multiple viruses that promote mRNA decay, supporting the idea that poly(A) tail associated proteins may be particularly sensitive to mRNA abundance (Harb et al., 2008; Lee and Glaunsinger, 2009; Park et al., 2014; Piron et al., 1998; Salaun et al., 2010). Indeed, an overrepresentation analysis using Pantherdb revealed that poly(A) binding proteins, poly(U) binding proteins, and mRNA 3’UTR binding proteins were significantly overrepresented among the 67 differentially expressed proteins (Figure 1C, Figure 1—figure supplement 1B–C). Proteins linked to the poly(A) tail consistently arose as robust hits in our MS dataset, including PABPC proteins 1 and 4 (PABPC1, PABPC4), LA-related protein 4 (LARP4), and heterogeneous nuclear ribonucleoprotein Q (HNRNPQ) (Table S3 in Supplementary file 1, Figure 1D). We confirmed that PABPC1 and LARP4 also translocate to the nucleus in NIH3T3 cells infected with WT MHV68, but not in cells infected with an MHV68 muSOX mutant virus (R443I) with impaired mRNA cleavage activity (Adler et al., 2000; Richner et al., 2011) (Figure 1E). Thus, poly(A) associated proteins preferentially move from the cytoplasm to the nucleus in response to muSOX-activated mRNA decay in both transiently transfected and virally infected cells.
 
-## Nuclear translocation of RNA binding proteins is dependent on mRNA degradation by Xrn1
+### Nuclear translocation of RNA binding proteins is dependent on mRNA degradation by Xrn1
 
 Xrn1 is the major 5’−3’ exonuclease in mammalian cells and is responsible for the degradation of 3’ RNA fragments generated upon cleavage by muSOX (Gaglia et al., 2012). In the absence of Xrn1, muSOX-induced repression of RNAPII promoter occupancy does not occur, suggesting that Xrn1 activity should be required for release and subsequent nuclear translocation of RBPs involved in this phenotype (Abernathy et al., 2015). We therefore used Cas9-based genome editing to generate Xrn1 knockout clones in HEK293T cells and confirmed that muSOX expression in these cells failed to reduce RNAPII promoter occupancy (Figure 2—figure supplement 1A–B). The Xrn1 knockout cells exhibited a ~ 2 fold reduction in growth compared to control Cas9-expressing WT cells (Figure 2—figure supplement 1C), in line with observations in yeast (Larimer and Stevens, 1990). Importantly, this did not lead to broad changes in gene expression (see below). Given that Xrn1 is a central component of the mammalian mRNA decay machinery, only low passage versions of these cells were used to decrease the likelihood of compensatory changes occurring in other decay components. Using the same TMT-LC/MS-MS strategy described above, we analyzed nuclear and cytoplasmic fractions from three biological replicates of Xrn1 knockout cells expressing muSOX or an empty vector control (Figure 1A). Comparison of these data to the list of proteins from Table S3 in Supplementary file 1 indicated that 45 of the 67 hits failed to shuttle in muSOX-expressing Xrn1 knockout cells, confirming that our workflow identified factors that differentially shuttle in response to mRNA degradation (Figure 2A,B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/37663/elife-37663-fig2-v2.jpg)
+
+**Figure 2.:** (A) Pie chart showing the percent of shuttling proteins that fail to translocate in Xrn1 KO cells. (B) Heat map depicting the average nuclear abundance in WT or Xrn1 KO HEK293T cells of the 67 significantly shifted proteins in samples expressing muSOX or D219A, relative to the empty vector control. (C) Western blots of nuclear, cytoplasmic, and whole cell fractions of WT (left panel) or Xrn1 KO (right panel) HEK293T cells transfected with the indicated plasmid. GAPDH and histone H3 serve as fractionation and loading controls. (D) Confocal microscopy and quantification of WT or Xrn1 KO HEK293T cells transfected with GFP or GFP-muSOX, showing signals for DAPI stained nuclei (blue), PABPC (red), GFP (green), and the merged images (overlay). Arrow heads point to representative GFP-muSOX expressing cells. The number of cells displaying either cytoplasmic or nuclear PABPC localization by immunofluorescence (IFA) was quantified for WT or Xrn1 KO cells expressing GFP-muSOX. A total of 75 GFP-muSOX WT cells and 80 GFP-muSOX Xrn1 KO cells were counted. The graph displays individual biological replicates as dots, with the mean and SEM.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/37663/elife-37663-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Western blots showing the levels of Xrn1 or the GAPDH loading control in WT or Xrn1 KO HEK293T cells. (B) WT or Xrn1 KO HEK293T cells transfected with either empty vector or muSOX were subjected to ChIP using antibodies to RNAPII or IgG. Purified chromatin was quantified by qPCR. Graphs display individual biological replicates as dots, with the mean and SEM. Statistical significance was determined using Student’s t test *p<0.05 **p<0.005 ***p<0.0005. (C) Growth curve of WT or Xrn1 KO HEK293T cells. Statistical significance was determined using Student’s t test *p<0.05 **p<0.005 ***p<0.0005. (D) Confocal microscopy of WT or Xrn1 KO HEK293T cells transfected with GFP or GFP-muSOX, showing signals for DAPI stained nuclei (blue), LARP4 (red), GFP (green), and the merged images (overlay). Arrow heads point to representative GFP-muSOX expressing cells.
+
 Poly(A) tail degradation is normally carried out by deadenylases prior to activation of Xrn1-mediated decay from the 5’ end, but we previously demonstrated that SOX-cleaved mRNAs are not deadenylated prior to their targeting by Xrn1 (Covarrubias et al., 2011). Indeed, analysis of endogenous PABPC1 and LARP4 localization by confocal microscopy and western blot analysis of fractionated cells confirmed that both proteins translocated from the cytoplasm to the nucleus upon muSOX expression in WT but not Xrn1 knockout cells (Figure 2C–D, Figure 2—figure supplement 1D).
 
-## Xrn1 knockout leads to subcellular redistribution of proteins functionally associated with RNA
+### Xrn1 knockout leads to subcellular redistribution of proteins functionally associated with RNA
 
 Given that increased Xrn1 activity caused nuclear translocation of mRNA-associated RBPs, we hypothesized that RBPs linked to Xrn1 function might also exhibit altered subcellular distribution in cells lacking Xrn1. We first looked broadly for proteins with reproducibly altered abundance in the nucleus or the cytoplasm of Xrn1 knockout cells relative to the vector control cells. There were 149 and 158 proteins differentially expressed in the absence of Xrn1 in the nucleus or cytoplasm, respectively (adjusted P value< 0.05) (Figure 3A, Table S4 in Supplementary file 1). Both the oligosaccharyltransferase (OST) complex and RBPs were significantly overrepresented among the set of differentially expressed proteins in each compartment (Figure 3A, Figure 3—figure supplement 1A). The significance of the OST enrichment is currently unknown, although the OST complex has been shown to be critical for infection with flaviviruses, which depend on Xrn1 for the production of a subgenomic viral noncoding RNA (Chapman et al., 2014; Moon et al., 2012). However, the RBP enrichment is in line with Xrn1 function, and it is notable that among the proteins significantly enriched in the nucleus of Xrn1 KO cells were factors that encompass the first steps of 5’−3’ mRNA decay. These included all members of the decapping complex (DCP1A, DCP1B and DCP2), factors that promote decapping complex formation (EDC3 and EDC4), and a protein that connects the decapping complex to the deadenylation machinery (PATL1) (Figure 3B).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/37663/elife-37663-fig3-v2.jpg)
+
+**Figure 3.:** (A) The number of proteins that are differentially expressed in Xrn1 knockout (KO) cells from the nucleus (149) and the cytoplasm (158). Gene ontology molecular function overrepresentation analysis by Pantherdb is shown for each compartment, graphed according to their false discovery rate (FDR). (B) Graphs showing the nuclear and cytoplasmic distribution of decapping-related proteins from the TMT-LC/MS-MS data. Graphs display the mean with SEM of 3 biological replicates. (C) Heatmap depicting the Log2 abundance ratio in Xrn1 KO HEK293T cells compared to WT HEK293T cells of proteins identified as Xrn1 interactors using the BioGRID database. Proteins with a significant difference in abundance between WT and Xrn1 KO are listed in red. (D) Graph of nuclear and cytoplasmic distribution of GW182 from the TMT-LC/MS-MS data. Graph displays the mean with SEM of 3 biological replicates. (E) Western blot of nuclear, cytoplasmic, and whole cell fractions of WT and Xrn1 KO HEK293T cells. GAPDH and histone H3 serve as fractionation and loading controls.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/37663/elife-37663-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Graphs showing the distribution of proteins of the oligosaccharyltransferase (OST) complex in the nucleus and cytoplasm from the TMT-LC/MS-MS data. Graphs display the mean with SEM of 3 biological replicates. (B) mRNA levels from WT and Xrn1 KO HEK293T cells were measured by RT-qPCR. Graphs display individual biological replicates as dots, with the mean and SEM. Statistical significance was determined using Student’s t test *p<0.05 **p<0.005 ***p<0.0005.
 
 We next examined whether the absence of Xrn1 also impacted the relative abundance of its known interaction partners (as listed in the BioGRID database) in the two compartments (Figure 3C). This did not appear to be the case in the TMT data, as the majority of known Xrn1 protein partners were expressed at normal levels in the absence of Xrn1. However, there was a significant increase in the cytoplasmic levels of UPF1, a mediator of nonsense mediated mRNA decay (NMD). Similarly, DNASE2, a nuclease which contributes to the degradation of DNA in dying cells, had increased cytoplasmic abundance. Secernin-2 (SCRN2), a protein involved in exocytosis, translocated to the nucleus in the absence of Xrn1. Conversely, PABPC4 levels were decreased in both compartments, and two centrosomal proteins CEP152 and CEP128 were reduced in the nucleus.
 
@@ -61,7 +85,7 @@ Finally, we considered the possibility that upon loss of Xrn1, cells might upreg
 
 Collectively, these data suggest that there are not broad increases in cellular proteins in response to inhibition of 5’−3’ mRNA decay. However, there appear to be selective increases in the whole cell or compartment-specific abundance of select factors associated with mRNA decay, which likely arises from increases in their mRNA levels in Xrn1 knockout cells.
 
-## LARP4 shuttles to the nucleus in a PABPC-dependent manner
+### LARP4 shuttles to the nucleus in a PABPC-dependent manner
 
 Protein relocalization in response to altered cytoplasmic mRNA decay could occur as a consequence of direct interactions with the nuclear transport machinery that are antagonized by mRNA, as has been documented for the PABPC nuclear localization signal (NLS) (Kumar et al., 2011). Alternatively, translocation could occur indirectly via interactions with other proteins that contain nuclear transport signals. To test for this latter possibility, we first plotted the network of known interactions among the list of proteins that relocalized in cells undergoing accelerated mRNA decay using the STRING database (Figure 4A). There were significantly more interactions among this set of proteins than would be predicted for a random group of proteins of similar size (p=0.0496), with many of the interactions involving PABPC. This enrichment suggests that these proteins are biologically related, confirming what was seen in the GO term analysis. We examined the relocalization mechanism for one of the PABPC interacting proteins, LARP4 (Yang et al., 2011). We reasoned that if LARP4 relocalization involved direct interactions with the nuclear import machinery, then it should relocalize in muSOX-expressing cells in a PABPC independent manner. Conversely, if it was ‘escorted’ into the nucleus via its interaction with PABPC, then its relocalization should be blocked by PABPC depletion. Depletion of PABPC1 has been shown to lead to compensatory induction of PABPC4, which can function in a redundant manner (Kumar and Glaunsinger, 2010). Therefore, we co-depleted both PABPC1 and PABPC4 using siRNAs. Upon co-depletion of the PABPC proteins, LARP4 no longer accumulated in the nucleus of muSOX-expressing cells (Figure 4B). In contrast, siRNA-mediated depletion of LARP4 had no effect on PABPC1 shuttling in these cells (Figure 4C). These results support a model in which LARP4 is brought into the nucleus in cells undergoing accelerated mRNA decay through its interaction with PABPC.
 
@@ -69,19 +93,39 @@ Protein relocalization in response to altered cytoplasmic mRNA decay could occur
 
 **Figure 4.:** (A) STRING network of reported protein-protein interactions between the 67 proteins that shuttle in muSOX-expressing cells. Medium and high confidence interactions are shown with thin and thick connector lines, respectively. (B, C) Western blots of nuclear and cytoplasmic fractions of vector- or muSOX-transfected HEK293T cells treated with the indicated siRNA. GAPDH and histone H3 serve as fractionation and loading controls.
 
-## PABPC depletion abrogates the muSOX-driven decrease in RNAPII promoter occupancy
+### PABPC depletion abrogates the muSOX-driven decrease in RNAPII promoter occupancy
 
 Given the nuclear enrichment of many poly(A) and poly(U) associated proteins, we considered these factors to be strong candidates for involvement in the signaling pathway linking accelerated mRNA decay to RNAPII transcriptional repression. To determine if they were required for the mRNA decay-transcription feedback loop, we tested whether depletion of several of these factors individually altered RNAPII occupancy using chromatin immunoprecipitation assays (ChIP). To test the role of PABPC we co-depleted both PABPC1 and PABPC4 using siRNAs, then monitored RNAPII occupancy at two cellular promoters (gapdh, rplp0) previously shown to be responsive to mRNA decay-induced transcriptional repression (Abernathy et al., 2015). In cells depleted of PABPC1 and PABPC4, there was no longer a reduction in RNAPII occupancy at the gapdh and rplp0 promoters in muSOX expressing cells relative to vector control cells (Figure 5A). In contrast, RNAPII promoter occupancy remained repressed in muSOX expressing cells upon depletion of LARP4 (Figure 5B). In addition to poly(A) tail associated proteins, we tested the effects of depleting three additional factors that translocated to the nucleus in an mRNA-decay dependent manner: the poly(U) binding protein MSI1, the CHD3 transcriptional regulator, and one of the top scoring hits from the MS data, TRIM32 (Figure 5—figure supplement 1A–C). RNAPII occupancy remained reduced in muSOX-expressing cells relative to vector control cells upon depletion of MSI1, CHD3, and TRIM32 (Figure 5—figure supplement 1A–C).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/37663/elife-37663-fig5-v2.jpg)
+
+**Figure 5.:** (A, B) HEK293T cells treated with siRNAs targeting PABPC1 and 4 (A), LARP4 (B), or non-targeting scramble siRNAs were subsequently transfected with either empty vector or muSOX, then subjected to chromatin immunoprecipitation (ChIP) using antibodies to RNAPII or IgG. Western blots showing protein levels of PABPC1, PABPC4, and Larp4 after siRNA depletion are shown in the lower panels, along with a GAPDH loading control. (C) Western blots of nuclear and cytoplasmic fractions of HEK293T cells transfected with an empty vector or a plasmid containing FLAG-PABPC1. GAPDH and histone H3 serve as fractionation and loading controls. (D) HEK293T cells transfected with either empty vector or FLAG-PABPC1 were subjected to ChIP using antibodies to RNAPII or IgG. (E) WT or Xrn1 KO HEK293T cells transfected with either empty vector or FLAG-PABPC1 alone or together with muSOX were subjected to ChIP using antibodies to RNAPII or IgG. Purified chromatin in each of the above experiments was quantified by qPCR. Western blots showing the levels of Xrn1 in WT or Xrn1KO HEK293Ts are shown, along with a GAPDH loading control. All graphs display individual biological replicates as dots, with the mean and SEM. Statistical significance was determined using Student’s t test *p<0.05 **p<0.005 ***p<0.0005.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/37663/elife-37663-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A,C) HEK293T cells were treated with siRNAs targeting CHD3 (A), MSI1 (B), or TRIM32 (C), or non-targeting scramble siRNAs, then transfected with either empty vector or muSOX and subjected to chromatin immunoprecipitation (ChIP) using antibodies to RNAPII or IgG. Purified chromatin was quantified by qPCR. Western blots showing the levels of CHD3 and MSI1 after siRNA depletion, along with a GAPDH or histone H3 loading control are shown below. Graphs display individual biological replicates as dots, with the mean and SEM. Statistical significance was determined using Student’s t test *p<0.05 **p<0.005 ***p<0.0005.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/37663/elife-37663-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A–E) HEK293T cells were treated with siRNAs targeting PABPC1 and PABPC4 (A), LARP4 (B), CHD3 (C), MSI1 (D), or TRIM32 (E), and subjected to ChIP using antibodies to RNAPII or IgG. Purified chromatin was quantified by qPCR. All graphs display individual biological replicates as dots, with the mean and SEM. Statistical significance was determined using Student’s t test *p<0.05 **p<0.005 ***p<0.0005.
+
 It should be noted that when we measured the effect of depleting the above factors on RNAPII occupancy in the absence of muSOX, we unexpectedly observed that their knockdown alone reduced the RNAPII ChIP signal (Figure 5—figure supplement 2A–E). However, unlike the case for PABPC, RNAPII levels were further reduced in muSOX expressing cells after depletion of LARP4, MSI1, CHD3, and TRIM32 (Figure 5B, Figure 5—figure supplement 1A–C). We hypothesize that knockdown of these factors may lead to broad impacts on cellular function, in ways that directly or indirectly influence transcription. Therefore, although PABPC appeared to be selectively involved in suppressing RNAPII occupancy during enhanced mRNA decay, we sought an alternative strategy to evaluate its connection to this process.
 
-## Nuclear accumulation of PABPC1 is sufficient to inhibit RNAPII recruitment to promoters
+### Nuclear accumulation of PABPC1 is sufficient to inhibit RNAPII recruitment to promoters
 
 Endogenous PABPC is subject to translational autoregulation, and our previous data suggested that the abundance of PABPC in uninfected cells is fine-tuned to match poly(A) tail availability (Kumar and Glaunsinger, 2010; Kumar et al., 2011). In this regard, even modest over-expression of PABPC1 leads to nuclear accumulation of the ‘excess’ (presumably non-poly(A) bound) protein in cells lacking muSOX (Figure 5C). This feature enabled us to test whether nuclear accumulation of PABPC1 was sufficient to cause a reduction in RNAPII promoter recruitment in the absence of muSOX-induced mRNA decay. Indeed, FLAG-PABPC1 transfected cells displayed a significant decrease in RNAPII occupancy at the gapdh and rplp0 promoters (Figure 5D). These observations suggested that the failure of muSOX to trigger transcriptional repression in Xrn1 knockout cells might be overcome by driving PABPC into the nucleus via overexpression. In agreement with this prediction, muSOX-induced transcriptional repression was restored in Xrn1 knockout cells upon transfection of FLAG-PABPC1, confirming that nuclear translocation of this RBP plays a central role in connecting cytoplasmic mRNA decay to RNAPII promoter recruitment (Figure 5E).
 
-## Nuclear translocation of PABPC selectively impacts early stages of transcription
+### Nuclear translocation of PABPC selectively impacts early stages of transcription
 
 To more precisely define the stage(s) of transcription impacted by mRNA decay-induced translocation of PABPC, we began by measuring RNAPII occupancy at both the promoter and the gene body (exon) of the genes gapdh, actB, and tlcd1. In each of the experiments below, we evaluated cells transfected with empty vector control, muSOX (to activate cytoplasmic mRNA decay), or FLAG-PABPC1 (to selectively increase nuclear PABPC levels in the absence of widespread mRNA decay). Cells expressing muSOX or FLAG-PABPC1 exhibited parallel phenotypes, in which RNAPII occupancy was reduced at promoters as well as within the gene body compared to control cells (Figure 6A). Western blotting confirmed that the reduced ChIP signals were not due to a decrease in the overall levels of RNAPII in these cells (Figure 6—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/37663/elife-37663-fig6-v2.jpg)
+
+**Figure 6.:** (A) HEK293T cells transfected with empty vector, muSOX, or FLAG-PABPC1 were subjected to ChIP using antibodies to RNAPII or IgG at the indicated gene matched promoters and exons. (B) ChIP using antibodies to serine 5-phosphorylated (Ser5P) RNAPII or IgG at gene promoters. The level of Ser5P RNAPII was determined by dividing the Ser5P values over the total RNAPII values within the same region of the gene in HEK293T cells transfected with empty vector, muSOX, or FLAG-PABPC1. (C) ChIP was performed as described in (B), but using antibodies to serine 2-phosphorylated (Ser2P) RNAPII or IgG at gene exons. The level of Ser2P RNAPII was determined by dividing the Ser2P values over the total RNAPII values within the same region of the gene. (D) ChIP was performed as described in (B), but using antibodies to TATA-binding protein (TBP) or IgG at gene promoters. (E) ChIP was performed as described in (B), but using antibodies to the POLR3A subunit of RNAPIII or IgG. In each experiment, chromatin was quantified by qPCR and all graphs display individual biological replicates as dots, with the mean and SEM. Statistical significance was determined using Student’s t test *p<0.05 **p<0.005 ***p<0.0005. (F) Model summarizing the impact of SOX and Xrn1-driven mRNA degradation on RBP trafficking and RNAPII transcription. See text for details.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/37663/elife-37663-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Western blot of cells expressing empty vector, muSOX, or FLAG-PABPC1, with VINCULIN serving as a loading control.
 
 The C-terminal domain (CTD) of the RNAPII Rpb1 subunit has unique phosphorylation patterns associated with each phase of transcription; it initially binds DNA in an unphosphorylated state, but undergoes progressive serine 5-phosphorylation (Ser5P) during initiation, then serine 2-phosphorylation (Ser2P) during elongation (Heidemann et al., 2013). To determine whether mRNA decay-induced PABPC1 translocation impacted RNAPII initiation or elongation in addition to promoter recruitment, we measured the ratio of total RNAPII to either Ser5P or Ser2P RNAPII (Figure 6B and C). In both muSOX and FLAG-PABPC expressing cells, these ratios were unchanged relative to control cells, suggesting that the primary defect is in promoter recruitment, and that there are not independent impacts on downstream events. These data are consistent with previous observations in MHV68-infected cells (Abernathy et al., 2015).
 
@@ -105,11 +149,378 @@ Finally, it is notable that connections between Xrn1-driven mRNA decay and RNAPI
 
 ## Materials and methods
 
-## Plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (murine herpesvirus 68)</td>
+      <td>MHV68</td>
+      <td>PMID: 10888635</td>
+      <td>NCBI_refseq ID: NC_001826.2</td>
+      <td>Koszinowski Lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (murine herpesvirus 68)</td>
+      <td>R443I MHV68</td>
+      <td>PMID: 21811408</td>
+      <td></td>
+      <td>Glaunsinger Lab</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293T</td>
+      <td>American Type Culture Collection</td>
+      <td>Cat# CRL-11268; RRID: CVCL_1926</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>NIH3T3</td>
+      <td>American Type Culture Collection</td>
+      <td>Cat# CRL-1658; RRID: CVCL_0594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthesized)</td>
+      <td>Xrn1 knockout (KO) cells</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HEK293T clone stably expressing Cas9 and Xrn1 single-guide RNA.</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (synthesized)</td>
+      <td>Cas9-expressing WT cells</td>
+      <td>This paper</td>
+      <td></td>
+      <td>HEK293T clone stably expressing Cas9 alone with no guide RNA.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-muSOX (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Progenitors: pcDNA3-HA-muSOX ( Covarrubias et al., 2009); Gateway vector peGFP-C1</td>
+    </tr>
+    <tr>
+      <td>Recombinant D NA reagent</td>
+      <td>Thy1.1-muSOX (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Progenitors: GFP-muSOX</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Thy1.1-muSOX D219A (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Progenitors: Thy1.1-muSOX</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Thy1.1-GFP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Progenitors: Thy1.1-muSOX</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDEF3-FLAG-PABPC1 (plasmid)</td>
+      <td>PMID: 20823266</td>
+      <td></td>
+      <td>Glaunsinger Lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>lentiCas9-Blast (lentiviral vector)</td>
+      <td>Addgene; PMID: 25075903; PMID: 24336571</td>
+      <td>52962</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>lentiGuide-Puro (lentiviral vector)</td>
+      <td>Addgene; PMID: 25075903; PMID: 24336571</td>
+      <td>52963</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-PABPC</td>
+      <td>Santa Cruz Biotechnologies</td>
+      <td>Clone 10 E 10; SC32318</td>
+      <td>IFA (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-LARP4</td>
+      <td>Thermofisher</td>
+      <td>PA5-58727</td>
+      <td>IFA (1:200); Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-PABPC</td>
+      <td>Cell Signaling Technology</td>
+      <td>4992S</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-PABPC4</td>
+      <td>Bethyl</td>
+      <td>A301-466A-M</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Gapdh</td>
+      <td>Abcam</td>
+      <td>Clone 6C5; ab8245</td>
+      <td>Western (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Histone H3</td>
+      <td>Cell Signaling Technology</td>
+      <td>Clone D1H2; 4499S</td>
+      <td>Western (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-LYRIC</td>
+      <td>Abcam</td>
+      <td>ab124789</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-RRBP1</td>
+      <td>Bethyl</td>
+      <td>A303-996A-T</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-MSI1</td>
+      <td>Abcam</td>
+      <td>ab52865</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-LIN28B</td>
+      <td>Abcam</td>
+      <td>ab71415</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-RPP20</td>
+      <td>Novus Biologicals</td>
+      <td>NBP15707220</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-CHD3</td>
+      <td>Cell Signaling Technology</td>
+      <td>4241T</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-THOC6</td>
+      <td>Life Technologies</td>
+      <td>PA543172</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-PNN</td>
+      <td>Life Technologies</td>
+      <td>PA535053</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-EXO4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-NPM</td>
+      <td>Abcam</td>
+      <td>ab10530</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-TRIM32</td>
+      <td>Abcam</td>
+      <td>ab131223</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-GW182</td>
+      <td>Abcam</td>
+      <td>Clone 4B6; ab70522</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-DDX6</td>
+      <td>Bethyl</td>
+      <td>A300-460</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-DCP2</td>
+      <td>Bethyl</td>
+      <td>A302-597A-M</td>
+      <td>Western (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-RNAPII Rpb1</td>
+      <td>BioLegend</td>
+      <td>8WG16</td>
+      <td>Western (1:2000); ChIP (10 mg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-TBP</td>
+      <td>Abcam</td>
+      <td>ab28175</td>
+      <td>Western (1:2000); ChIP (10 mg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-RNAPII phospho S5</td>
+      <td>Abcam</td>
+      <td>ab5131</td>
+      <td>ChIP (10 mg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-RNAPII phospho S2</td>
+      <td>Abcam</td>
+      <td>ab5095</td>
+      <td>ChIP (10 mg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-POLR3A</td>
+      <td>Abcam</td>
+      <td>ab96328</td>
+      <td>ChIP (10 mg)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (H. sapiens)</td>
+      <td>siPABPC1</td>
+      <td>PMID: 20823266</td>
+      <td></td>
+      <td>Custom siRNA; see Table S5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (H. sapiens)</td>
+      <td>siPABPC4</td>
+      <td>PMID: 20823266</td>
+      <td></td>
+      <td>Custom siRNA; see Table S5 for sequence</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (H. sapiens)</td>
+      <td>siLARP4</td>
+      <td>Dharmacon</td>
+      <td>M-016523-00-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (H. sapiens)</td>
+      <td>siCHD3</td>
+      <td>Dharmacon</td>
+      <td>M-023015-01-0020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (H. sapiens)</td>
+      <td>siMSI1</td>
+      <td>Dharmacon</td>
+      <td>M-011338-01-0010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent (H. sapiens)</td>
+      <td>siTRIM32</td>
+      <td>Dharmacon</td>
+      <td>M-006950-01-0010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protein G dynabeads</td>
+      <td>Thermofisher</td>
+      <td>10004D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protein A dynabeads</td>
+      <td>Thermofisher</td>
+      <td>10002D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>10-plex TMT kit</td>
+      <td>Thermofisher</td>
+      <td>90113</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 594, goat anti-rabbit</td>
+      <td>Thermofisher</td>
+      <td>A-11072</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 594, goat anti-mouse</td>
+      <td>Thermofisher</td>
+      <td>A-11020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Proteome Discoverer</td>
+      <td>Thermofisher</td>
+      <td>v2.2.0.388</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmids
 
 Primers used for cloning are listed in Table S5 in Supplementary file 1. MHV68 muSOX was cloned into the Gateway entry vector pDON207 (Invitrogen), and then transferred into the Gateway-compatible peGFP-C1 destination vector to generate GFP-muSOX. Thy1.1-muSOX was generated by Infusion cloning (Clontech) of Thy1.1 (CD90.1) followed by a self-cleaving 2A peptide from foot-and-mouth disease virus in place of GFP into the Nhe1 and SacII restriction enzyme sites of GFP-muSOX. The D219A muSOX mutant was made using Quikchange site-directed mutagenesis (Agilent). Thy1.1-GFP was created with Infusion cloning to insert GFP back into the vector with the BamHI and EcoRI restriction enzyme sites to replace muSOX with GFP. pCDEF3-Flag-PABPC1 was described previously (Kumar and Glaunsinger, 2010). The Cas9 (lentiCas9-Blast) and sgRNA (lentiGuide-Puro) viral vectors were made as previously described (Sanjana et al., 2014; Shalem et al., 2014). The Xrn1 sgRNA was chosen using the Broad sgRNA design website (Doench et al., 2014).
 
-## Cells and transfections
+### Cells and transfections
 
 NIH3T3 cells and HEK293T cells, both from ATCC and obtained through the UC Berkeley Tissue Culture Facility, were maintained in DMEM (Invitrogen) supplemented with 10% fetal bovine serum. Cell lines were authenticated by STR analysis, and determined to be free of mycoplasma by PCR screening. DNA transfections were carried out in HEK293T cells at 70% confluency in 15 cm plates with 25 μg DNA using PolyJet (SignaGen) for 24 hr. For small interfering RNA (siRNA) transfections, HEK293T cells were transfected twice over 48 hr with 100 μM siRNA using Lipofectomine RNAiMAX (Thermo Fisher), whereupon the cells were transfected with the indicated DNA plasmid for an additional 24 hr. Non-targeting scramble siRNAs, LARP4, MSI1, CHD3, and TRIM32 siRNAs were obtained from Dharmacon (Scramble: D-001206-13-50, LARP4: M-016523-00-0020, MSI1: M-011338-01-0010, CHD3: M-023015-01-0020, TRIM32: M-006950-01-0010). PABPC1 and PABPC4 siRNAs have been previously described and are listed in Table S5 in Supplementary file 1 (Kumar and Glaunsinger, 2010; Lee and Glaunsinger, 2009).
 
@@ -117,50 +528,50 @@ The Xrn1 knockout clone and control Cas9-expressing cells were made by transduci
 
 Pure populations of cells expressing muSOX were generated using the Miltenyi Biotec MACS cell separation system. HEK293T cells were transfected with either Thy1.1-GFP, Thy1.1-muSOX, or Thy1.1-muSOX D219A for 24 hr, whereupon cells were washed twice with PBS and cell pellets were resuspended in 95 μl auto-MACS rinsing buffer supplemented with 0.5% FBS and incubated with 3 μl anti-CD90.1 microbeads on ice for 10 – 15 min, and mixed by flicking the tube every 5 min. Cells were then magnetically separated according to the manufacturer’s instructions. Thy1.1 positive cells were used in all downstream experiments unless otherwise stated.
 
-## Viruses and infections
+### Viruses and infections
 
 The MHV68 bacterial artificial chromosome (BAC), and the construction of the R443I muSOX mutant were previously described (Adler et al., 2000; Richner et al., 2011). MHV68 was produced by transfecting NIH3T3 cells in 6-well plates with 2.5 μg BAC DNA using Mirus TransIT-X2 (Mirus Bio) for 24 hr, whereupon the cells were split into a 10 cm dish and harvested after 5–7 days, once all the cells were green and dead. Virus was amplified in NIH 3T12 cells and titered by plaque assay. Cells were infected with MHV68 at an MOI of 5 for 24 hr.
 
-## Immunofluorescence assays
+### Immunofluorescence assays
 
 Cells were plated on coverslips coated with 100 ug/mL poly-L-lysine and transfected at 70% confluency with either GFP or GFP-muSOX for 24 hr. Transfected cells were fixed in 4% formaldehyde, permeabilized with ice-cold methanol, and incubated with blocking buffer [1% Triton X-100, 0.5% Tween-20, 3% Bovine Serum Albumin] prior to incubation with mouse monoclonal PABPC diluted 1:25 (Santa Cruz Biotechnologies, 10E10) or rabbit polyclonal LARP4 diluted 1:200 (Thermo Fisher) in blocking buffer at 4°C overnight, followed by incubation with Alexa Fluor 594-conjugated goat anti-mouse, or anti-rabbit secondary antibody (Thermo Fisher, 1:1000) and DAPI (Pierce, 1:1000). Coverslips were mounted on slides using Vectashield hard-set mounting medium (VectorLabs) and imaged by confocal microscopy on a Zeiss LSM 710 AxioObserver microscope.
 
-## Fractionation
+### Fractionation
 
 HEK293T cells were fractionated using the REAP method (Nabbi and Riabowol, 2015). Briefly, cells were washed twice with ice-cold PBS and the cell pellet was lysed in 0.1% NP-40 PBS lysis buffer. The nuclei were then isolated by differential centrifugation at 10,000 x g for 10 s and the supernatant retained as the cytoplasmic fraction. For western blotting, the nuclei were sonicated in 0.1% NP-40 PBS lysis buffer.
 
-## Cell lysis and protein digestion
+### Cell lysis and protein digestion
 
 WT Cas9-HEK293T cells were transfected with Thy1.1-GFP, Thy1.1-muSOX, or Thy1.1-muSOX D219A. Xrn1 knockout HEK293T cells were transfected with Thy1.1-GFP or Thy1.1-muSOX for 24 hr, followed by Thy1.1 separation. Separated cells were then fractionated as described above, and nuclear pellets were snap-frozen in liquid nitrogen. Cytoplasmic fractions were concentrated using an Amicon ultra filtration unit with a molecular weight cutoff of 3 kDa (Millipore) and exchanged into a 50 mM NH4HCO3, 2% Deoxycholate buffer and then snap frozen in liquid nitrogen. The nuclear pellets were lysed in 200 µL of 100 mM Tris-HCl, pH 8.0, 4% SDS, 1 mM EDTA preheated to 70°C. Cytoplasmic fractions were thawed and adjusted to 1% SDS with a 10% SDS solution. Complete lysis of samples was achieved via five successive rounds of heating at 95°C for 3 min followed by sonication for 10 s in a cup horn sonicator set on 1 s pulses at medium output. Protein amounts were assessed by BCA protein assay (Pierce) and 50 µg of protein from each sample was simultaneously reduced and alkylated with 20 mM tris(2-carboxyethyl)phosphine (Pierce) and chloroacetamide respectively for 20 min at 70°C. Protein samples were then cleaned up by methanol-chloroform precipitation (Wessel and Flügge, 1984; Federspiel and Cristea, 2018, In press). LC-MS grade methanol, chloroform, and water (at a 4:1:3 ratio) were added to the sample with vortexing following each addition. The samples were spun at 2,000 × g for 5 min at room temperature and the top phase was removed. Three volumes of cold methanol were then added and the samples were spun at 9,000 × g for 2 min at 4°C. All liquid was removed and the protein pellets were washed with five volumes of cold methanol and then spun at 9,000 × g for 2 min at 4°C. All liquid was removed again and the dried protein pellets were resuspended in 50 mM HEPES pH 8.5 at a 0.5 µg/µL concentration. Trypsin (Pierce) was added at a 1:50 trypsin:protein ratio and the samples were incubated at 37°C overnight.
 
-## TMT labeling
+### TMT labeling
 
 Digested samples were concentrated by speed vac to one half the original volume prior to labeling and adjusted to 20% acetonitrile (ACN). All three biological replicates were labeled concurrently with a 10-plex TMT kit (Thermo Fisher Scientific) as in (Sauls et al., 2018). The TMT reagents (0.8 mg per channel) were dissolved in 42 µL of anhydrous ACN and 14 µL of this was added to each sample following the scheme in Figure 1A and allowed to react at RT for 1 hr. The labeling was quenched by the addition of hydroxylamine to a final 0.5% (v/v) concentration followed by incubation at RT for 15 min. Labeled peptides were pooled at equal peptide amounts thereby generating three 10-plex experiments, each of which was an individual biological replicate. An initial test mix for each replicate was analyzed, and the apparent peptide ratios were determined. Mixing ratios were adjusted using the information from the test mix to correct for sample losses and generate mixes with equal peptide amounts per channel.
 
-## Peptide fractionation
+### Peptide fractionation
 
 Pooled peptides were acidified and fractionated by 2D StageTip (Sauls et al., 2018). Peptides were first desalted via C18 StageTips to remove unreacted TMT reagent by washing the bound peptides with 5% ACN, 0.5% formic acid (FA) and then eluting the peptides in 70% ACN, 0.5% FA. The eluted peptides were then bound to SCX StageTips and eluted in four fractions with sequential elution (100 µL) as follows: (1) 0.05 M ammonium formate/20% ACN, (2) 0.05 M ammonium acetate/20% ACN, (3) 0.05 M ammonium bicarbonate/20% ACN, and (4) 0.1% ammonium hydroxide/20% ACN. Each of these fractions were diluted 1:1 with 1% trifluoroacetic acid and further fractionated by SDB-RPS StageTips with sequential elution (50 µL) into three fractions as follows: (1) 0.2 M ammonium formate/0.5% FA/60% ACN, (2) 0.2 M ammonium acetate/0.5% FA/60% ACN, (3) 5% ammonium hydroxide/80% ACN. The resulting 12 fractions for each 10-plex experiment were dried in vacuo and resuspended in 5 µL of 1% FA, 1% ACN in water.
 
-## LC-MS/MS analysis
+### LC-MS/MS analysis
 
 Peptides (2 µL) were analyzed by LC-MS/MS using a Dionex Ultimate 3000 UPLC coupled online to an EASYSpray ion source and Q Exactive HF. Peptides were separated on an EASYSpray C18 column (75 µm x 50 cm) heated to 50°C using a linear gradient of 5% ACN to 42% ACN in 0.1% FA over 150 min at a flow rate of 250 nL/min and ionized at 1.7kv. MS/MS analysis was performed as follows: an MS1 scan was performed from 400 to 1800 m/z at 120,000 resolution with an automatic gain control (AGC) setting of 3e6 and a maximum injection time (MIT) of 30 ms recorded in profile. The top 18 precursors were then selected for fragmentation and MS2 scans were acquired at a resolution of 60,000 with an AGC setting of 2e5, a MIT of 105 ms, an isolation window of 0.8 m/z, a fixed first mass of 100 m/z, normalized collision energy of 34, intensity threshold of 1e5, peptide match set to preferred, and a dynamic exclusion of 45 s recorded in profile.
 
-## Informatic analysis of TMT data
+### Informatic analysis of TMT data
 
 MS/MS data were analyzed by Proteome Discoverer (Thermo Fisher Scientific, v2.2.0.388). The nuclear channels (126 – 128C) and cytoplasmic channels (129 N-131) were analyzed in separate Proteome Discoverer studies to not bias the quantitation due to the expected protein expression differences between these two compartments. The Spectrum Files RC node was utilized to perform post-acquisition mass recalibration and the recalibrated spectra were passed to Sequest HT where two successive rounds of searching were employed against a Uniprot human database appended with common contaminants (2016 – 04, 22,349 sequences). Both search rounds required 5ppm accuracy on the precursor and 0.02 Da accuracy on the fragments and included static carbamidomethyl modifications to cysteine, static TMT additions to peptide N-termini and lysine residues, dynamic oxidation of methionine, dynamic deamidation of asparagine, and dynamic methionine loss and acetylation of protein n-termini. The first Sequest HT search was for fully tryptic peptides only and any unmatched spectra were sent to a second Sequest HT search, which allowed semi-tryptic peptide matches. All matched spectra were scored by Percolator and reporter ion signal-to-noise (S/N) values were extracted (The et al., 2016). The resulting peptide spectrum matches were parsimoniously assembled into a set of identified peptide and protein identifications with a false discovery rate of less than 1% for both the peptide and protein level and at least two unique peptides identified per protein. TMT reporter ion quantification was performed for unique and razor peptides with an average S/N of at least 10 and a precursor co-isolation threshold of less than 30% which did not contain a variable modification. Reporter ion values were normalized to the total detected signal in each channel and protein abundances were calculated as the sum of all normalized reporter ion values for each channel in each protein. Missing values were input using the low abundance resampling algorithm. The reporter ion values for the empty vector WT samples (channels 126 and 129N) were set as 100 and the other channels were scaled to this value. Statistically differential proteins were assessed via a background based ANOVA analysis implemented in Proteome Discoverer. Proteins and associated TMT reporter ion abundances and adjusted p-values from the ANOVA analysis were exported to Excel for further analysis. The mass spectrometry proteomics data reported in this paper have been deposited at the ProteomeXchange Consortium via the PRIDE partner repository (Vizcaíno et al., 2014). The PRIDE accession number is PXD009487.
 
-## Gene Ontology analysis and informatic software used
+### Gene Ontology analysis and informatic software used
 
 Differential proteins (adjusted p-value≤0.05) were analyzed via over representation analysis (www.pantherdb.org) for associated gene ontology enrichments (Mi et al., 2016). Example proteins of different classes, along with all heatmaps, were graphed in GraphPad Prism v7.
 
-## Western blotting
+### Western blotting
 
 Nuclear, cytoplasmic, and whole cell lysates were quantified by Bradford assay and resolved by SDS-PAGE and western blotted with antibodies against PABPC (Cell Signaling, 1:1000), PABPC4 (Bethyl, 1:1000), LARP4 (Thermo Fisher, 1:1000), Gapdh (Abcam, 1:3000), Histone H3 (Cell Signaling, 1:2000), LYRIC (Abcam, 1:1000), RRBP1 (Bethyl, 1:1000), MSI1 (Abcam, 1:1000), Lin28b (Abcam, 1:1000), CHD3 (Cell Signaling, 1:1000), RPP20 (Novus, 1:1000), THOC6 (Life Technologies, 1:1000), PNN (Life Technologies, 1:1000), EXO4 (rabbit polyclonal produced using recombinant EXO4 with an MBP tag, 1:1000), NPM (Abcam, 1:1000), GW182 (Abcam, 1:1000), DDX6 (Bethyl, 1:1000), DCP2 (Bethyl, 1:1000), TRIM32 (Abcam, 1:1000), RNAPII Rpb1 (BioLegend, 1:2000), TBP (Abcam, 1:2000).
 
-## Chromatin immunoprecipitation (ChIP)
+### Chromatin immunoprecipitation (ChIP)
 
 ChIP was performed on 15 cm plates of HEK293T cells transfected twice 4 hr apart with the indicated plasmid DNA. 24 hr after the first transfection, cells were crosslinked in 1% formaldehyde in PBS for 10 min at room temperature, quenched in 0.125 M glycine, and washed twice with ice-cold PBS. Crosslinked cell pellets were mixed with 1 ml ice-cold ChIP lysis buffer (5 mM PIPES pH 8.0, 85 mM KCl, 0.5% NP-40) and incubated on ice for 10 min, whereupon the lysate was dounce homogenized to release nuclei and spun at 1.5 x g for 5 min at 4°C. Nuclei were then resuspended in 500 μl of nuclei lysis buffer (50 mM Tris-HCl pH 8.0, 0.3% SDS, 10 mM EDTA) and rotated for 10 min at 4°C followed by sonication using a QSonica Ultrasonicator with a cup horn set to 75 amps for 20 min total (5 min on, 5 min off). Chromatin was spun at 16,000 x g for 10 min at 4°C and the pellet was discarded. 100 μl of chromatin was diluted 1:5 in ChIP dilution buffer (16.7 mM Tris-HCl pH 8.0, 1.1% Triton X-100, 1.2 mM EDTA, 167 mM NaCl) and incubated with 10 μg mouse monoclonal anti-RNAPII (BioLegend, 8WG16), rabbit IgG (Fisher Scientific), rabbit polyclonal anti-RNAPII phospho S5 (Abcam ab5131), rabbit polyclonal anti-RNAPII phospho S2 (Abcam ab5095), rabbit polyclonal anti-TBP (Abcam ab28175), or rabbit polyclonal anti-POLR3A (Abcam ab96328) overnight, whereupon samples were rotated with 20 μl protein G dynabeads (with mouse antibodies), or 20 μl mixed protein G and A dynabeads (with rabbit antibodies) (Thermofisher) for 2 hr at 4°C. Beads were washed with low salt immune complex (20 mM Tris pH 8.0, 1% Triton-x-100, 2 mM EDTA, 150 mM NaCl, 0.1% SDS), high salt immune complex (20 mM Tris pH 8.0, 1% Triton-x-100, 2 mM EDTA, 500 mM NaCl, 0.1% SDS), lithium chloride immune complex (10 mM Tris pH 8.0, 0.25 M LiCl, 1% NP-40, 1% Deoxycholic acid, 1 mM EDTA), and Tris-EDTA for 5 min each at 4°C with rotation. DNA was eluted from the beads using 100 μl of elution buffer (150 mM NaCl, 50 μg/ml proteinase K) and incubated at 50°C for 2 hr, then 65°C overnight. DNA was purified using a Zymo Oligo Clean and Concentrator kit. Purified DNA was quantified by qPCR using iTaq Universal SYBR Mastermix (BioRad) with the indicated primers (Table S5 in Supplementary file 1). Each sample was normalized to its own input.
 
-## Replicates
+### Replicates
 
 In this study, individual biological replicates are experiments performed separately on biologically distinct samples representing identical conditions and/or time points. For cell culture-based assays, this means that the cells are maintained in different flasks. Technical replicates are experiments performed on the same biological sample multiple times. See Figure Legends for the number of experimental replicates performed for each experiment. No outliers were encountered in this study. Criteria for the inclusion of data was based on the performance of positive and negative controls within each experiment.

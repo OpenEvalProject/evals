@@ -47,9 +47,7 @@ Reviewer #1:
 
 The precise timing by which Oct-4 is on the chromatin is unclear. Indeed, it would be expected that Oct-4 may leave naturally its binding site to allow DNA replication during S phase. So, It would be interesting to check if Oct-4 is binding DNA in S phase? What happening to its phosphorylation state in S phase? How does it relate to the S229 phosphorylation?
 
-We previously showed that p-Oct4(S229) begin to be detected in the S phase by western blot and FACS analysis (Figure 1B,C and Figure 4A, B). According to reviewer’s comments, we performed ChIP-qPCR to examine Oct4 binding to chromatin in S phase (6 hr after release) as the same condition as in Figure 4A and B (Author response image 1, see below). We found that binding of Oct4 to target genes was slightly reduced in the S phase, implying that phosphorylated Oct4 in S phase might begin to be dissociated from chromatin. At this point, we cannot know how much Oct4 phosphorylation is contributed to Oct4 dissociation during S phase because many DNA binding proteins are believed to be dissociated from chromatin during replication. Therefore, at this stage, we cannot exclude the possibility of physical dissociation of Oct4 during replication. We will consider more detailed mechanism in near future.10.7554/eLife.10877.022Author response image 1.Oct4 bound weakly to target genes in the S phase.DOI: http://dx.doi.org/10.7554/eLife.10877.022
-
-DOI: http://dx.doi.org/10.7554/eLife.10877.022
+We previously showed that p-Oct4(S229) begin to be detected in the S phase by western blot and FACS analysis (Figure 1B,C and Figure 4A, B). According to reviewer’s comments, we performed ChIP-qPCR to examine Oct4 binding to chromatin in S phase (6 hr after release) as the same condition as in Figure 4A and B (Author response image 1, see below). We found that binding of Oct4 to target genes was slightly reduced in the S phase, implying that phosphorylated Oct4 in S phase might begin to be dissociated from chromatin. At this point, we cannot know how much Oct4 phosphorylation is contributed to Oct4 dissociation during S phase because many DNA binding proteins are believed to be dissociated from chromatin during replication. Therefore, at this stage, we cannot exclude the possibility of physical dissociation of Oct4 during replication. We will consider more detailed mechanism in near future.10.7554/eLife.10877.022Author response image 1.Oct4 bound weakly to target genes in the S phase.
 
 The authors should cite the recent manuscript published by Huck Hui Ng and colleagues PMID: 26232226. How do their results relate to these mechanisms described in this publication?
 
@@ -95,9 +93,7 @@ We believe that the cycle of phosphorylation and dephosphorylation of Oct4 durin
 
 Is S229D more stable than S229A in mitosis?
 
-We treated cycloheximide to Zhbtc4 embryonic stem cells stably expressing each Oct4 WT and mutant form and assessed by western blot (Author response image 2). We couldn’t find any significant differences between Oct4 WT, S229A and S229D. We suggest that phosphorylation of Oct4 is not crucial factor for determining protein stability.10.7554/eLife.10877.023Author response image 2.Serine 229 mutation didn’t affect Oct4 stability.DOI: http://dx.doi.org/10.7554/eLife.10877.023
-
-DOI: http://dx.doi.org/10.7554/eLife.10877.023
+We treated cycloheximide to Zhbtc4 embryonic stem cells stably expressing each Oct4 WT and mutant form and assessed by western blot (Author response image 2). We couldn’t find any significant differences between Oct4 WT, S229A and S229D. We suggest that phosphorylation of Oct4 is not crucial factor for determining protein stability.10.7554/eLife.10877.023Author response image 2.Serine 229 mutation didn’t affect Oct4 stability.
 
 Is the S229A as good as WT Oct4 in activating target genes and supporting self-renewal?
 

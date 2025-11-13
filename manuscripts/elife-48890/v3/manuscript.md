@@ -40,9 +40,86 @@ Using a development strategy based on strictly separated model calibration and v
 
 ## Materials and methods
 
-## Strategy for construction, calibration and validation of the ToR-ORd model
+### Strategy for construction, calibration and validation of the ToR-ORd model
 
 Table 1 lists the properties (left column) and key references (right column) of experimental and clinical datasets considered for the calibration (top) and independent validation (bottom) of the ToR-ORd model. This represents a comprehensive list of properties, known to characterize human ventricular electrophysiology under multiple stimulation rates, and also drug action and disease. The recordings in were obtained in human ventricular preparations primarily using measurements with microelectrode recordings, unipolar electrograms, and monophasic APs, therefore avoiding photon scattering effects or potential dye artefacts present in optical mapping experiments. In addition, the ToR-ORd model was calibrated to manifest depolarisation of resting membrane potential in response to an IK1 block, based on evidence in a range of studies summarised in Dhamoon and Jalife (2005). The calibration criteria are chosen to be fundamental properties of ionic currents, action potential and single-cell pro-arrhythmic phenomena (described in more detail in Appendix 1-1). The validation criteria include response to rate changes, drug action and disease, to explore the predictive power of the model under clinically-relevant conditions.
+
+**Table 1.**
+ Criteria and human-based studies used in ToR-ORd calibration and validation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Calibration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Action potential morphology</td>
+      <td>(Britton et al., 2017; Coppini et al., 2013; Jost et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>Calcium transient time to peak, duration, and amplitude</td>
+      <td>(Coppini et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>I-V relationship and steady-state inactivation of L-type calcium current</td>
+      <td>(Magyar et al., 2000)</td>
+    </tr>
+    <tr>
+      <td>Sodium blockade is negatively inotropic</td>
+      <td>(Gottlieb et al., 1990; Tucker et al., 1982; Legrand et al., 1983; Bhattacharyya and Vassalle, 1982).</td>
+    </tr>
+    <tr>
+      <td>L-type calcium current blockade shortens the action potential</td>
+      <td>(O'Hara et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>Early depolarisation formation under hERG block</td>
+      <td>(Guo et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>Alternans formation at rapid pacing</td>
+      <td>(Koller et al., 2005)</td>
+    </tr>
+    <tr>
+      <td>Conduction velocity of ca. 65 m/s</td>
+      <td>(Taggart et al., 2000)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Validation</td>
+    </tr>
+    <tr>
+      <td>Action potential accommodation</td>
+      <td>(Franz et al., 1988)</td>
+    </tr>
+    <tr>
+      <td>S1-S2 restitution</td>
+      <td>(O'Hara et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>Drug blocks and action potential duration</td>
+      <td>(Dutta et al., 2017a; O'Hara et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>Hyperkalemia promotes postrepolarisation refractoriness</td>
+      <td>(Coronel et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>Hypertrophic cardiomyopathy phenotype</td>
+      <td>(Coppini et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>Drug safety prediction using populations of models</td>
+      <td>(Passini et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>Physiological QRS and QT intervals in ECG</td>
+      <td>(Engblom et al., 2005; van Oosterom et al., 2000; Bousseljot et al., 1995; Goldberger et al., 2000)</td>
+    </tr>
+  </tbody>
+</table>
 
 We initially performed the evaluation of the ORd model (O'Hara et al., 2011) by conducting simulations for each of the calibration criteria in Table 1. Further details are described throughout the Materials and methods section and Appendix 1-15.1. Simulations with the existing versions of the ORd model failed to fulfil key criteria such as AP morphology, calcium transient duration, several properties of the L-type calcium current, negative inotropic effect of sodium blockers, or the depolarising effect of IK1 block. The results are later demonstrated in Figures 2 and 3, and Methods: Calibration of IK1 block and resting membrane potential. Secondly, we attempted parameter optimisation using a multiobjective genetic algorithm (Torres et al., 2012). However, simulations with the ORd-based models were unable to fulfil key criteria such as AP and Ca morphology, and the effect of sodium and calcium block on calcium transient amplitude and APD, respectively.
 
@@ -50,7 +127,7 @@ We then proceeded to reevaluate the ionic current formulations based on experime
 
 Details concerning the simulations are given in Appendix 1-15.1, namely the description of simulation protocols and ionic concentrations used (Appendix 1-15.1.1), representation of heart disease (Appendix 1-15.1.2), 1D fibre simulations (Appendix 1-15.1.3), population-of-models and drug safety assessment (Appendix 1-15.1.4), transmurality and whole-heart simulations with ECG extraction (Appendix 1-15.1.5), and a technical note on the update to the Matlab ODE solver which facilitates efficient simulation of the multiobjective GA (Appendix 1-15.1.6). Unless specified otherwise, the baseline ORd model (O'Hara et al., 2011) was used for comparison with the ToR-ORd model.
 
-## ToR-ORd model structure
+### ToR-ORd model structure
 
 The ToR-ORd model follows the general ORd structure (Figure 1A). The cardiomyocyte is subdivided into several compartments: main cytosolic space, junctional subspace, and the sarcoplasmic reticulum (SR, further subdivided into junctional and network SR). Within these compartments are placed ionic currents and fluxes described by Hodgkin-Huxley equations or Markov models. The main ionic current formulations altered compared to ORd are highlighted in orange in Figure 1A.
 
@@ -58,39 +135,63 @@ The ToR-ORd model follows the general ORd structure (Figure 1A). The cardiomyocy
 
 **Figure 1.:** (A) A schematic of the novel human ventricular myocyte model for electrophysiology and calcium handling. Orange indicates components, substituted, or added, compared to the original ORd model. ‘SS’ indicates junctional subspace compartment, where calcium influx via L-type calcium current occurs and where calcium is released from the sarcoplasmic reticulum. ‘JSR’ and ‘NSR’ are junctional and network sarcoplasmic reticulum compartments, respectively. ‘Main cytosolic pool’ is the remaining intracellular space. Transmembrane currents are indicated with an ‘I’ in their name, with fluxes indicated as ‘J’. Components with a green underscore are modulated by CaMKII signalling. (B) The structure of the Lu-Vandenberg (Lu et al., 2001) Markov model used for the rapidly activating delayed rectifier repolarisation current (IKr). The transition rates are given in Appendix 1-15.3.5.
 
-## In-depth revision of the L-type calcium current
+### In-depth revision of the L-type calcium current
 
 The ICaL current was deeply revisited, particularly with respect to its driving force, based on biophysical principles. This reformulation is of relevance to almost all models of cardiac electrophysiology.
 
-The ICaL formulation in the ORd model is based on Hodgkin-Huxley equations, with the total current being a product of three components: 1) Open channel permeability, 2) A set of gating variables determining the fraction of channels being open, 3) The electrochemical driving force which acts on ions to move through the open channel based on the membrane potential and ionic concentrations on both sides of the membrane (more details in Appendix 1-5). In most Hodgkin-Huxley models of cardia currents, the driving force is computed as (V-Eion), that is, the membrane potential minus equilibrium potential, either computed from the Nernst equation, or measured experimentally. However, starting with the Luo-Rudy model (LRd) of 1994 (Luo and Rudy, 1994), the driving force of ions via ICaL in cardiac models is modelled based on the Goldman-Hodgkin-Katz (GHK) flux equation. The driving force based on the GHK equation is:φCaL=z2∙ V∙F2R∙T∙ Si∙ez∙V∙FR∙T-Soez∙V∙FR∙T-1,where z is the charge of the given ion, V is the membrane potential, F,R,T are conventional thermodynamic constants, and [S]i, [S]o are intracellular and extracellular activities of the given ionic specie. S=γ ∙m, where γ is the ionic activity coefficient and m the concentration (in either the intracellular or extracellular space, yielding Si or So).
+The ICaL formulation in the ORd model is based on Hodgkin-Huxley equations, with the total current being a product of three components: 1) Open channel permeability, 2) A set of gating variables determining the fraction of channels being open, 3) The electrochemical driving force which acts on ions to move through the open channel based on the membrane potential and ionic concentrations on both sides of the membrane (more details in Appendix 1-5). In most Hodgkin-Huxley models of cardia currents, the driving force is computed as (V-Eion), that is, the membrane potential minus equilibrium potential, either computed from the Nernst equation, or measured experimentally. However, starting with the Luo-Rudy model (LRd) of 1994 (Luo and Rudy, 1994), the driving force of ions via ICaL in cardiac models is modelled based on the Goldman-Hodgkin-Katz (GHK) flux equation. The driving force based on the GHK equation is:
 
-## Determining ionic activity coefficients
+$$
+\phi_{CaL}=z^{2}∙\frac{V∙F^{2}}{R∙T}∙\frac{S_{i}∙e^{\frac{z∙V∙F}{R∙T}}-S_{o}}{e^{\frac{z∙V∙F}{R∙T}}-1},
+$$
+
+where z is the charge of the given ion, V is the membrane potential, F,R,T are conventional thermodynamic constants, and [S]i, [S]o are intracellular and extracellular activities of the given ionic specie. $S=\gamma∙m$, where $\gamma$ is the ionic activity coefficient and $m$ the concentration (in either the intracellular or extracellular space, yielding $S_{i}$ or $S_{o}$).
+
+#### Determining ionic activity coefficients
 
 In order to compute the ionic driving force via the GHK equation, it is necessary to know the ionic activity coefficients of the intracellular (γi) and extracellular (γo) space. The Luo-Rudy model and other Rudy-family models use γo = 0.341 for extracellular space and γi = 1 for the intracellular space. Models based on the Shannon model (Shannon et al., 2004) use 0.341 for both intracellular and extracellular space, but we were unable to find the motivation for this change.
 
-The Debye-Hückel theory is commonly used to compute the activity coefficients. We used the Davies equation, which extends the basic Debye-Hückel equation to be accurate for ionic concentrations found in living cells (Mortimer, 2008):log⁡γi= -A ∙zi2∙ I1+I-0.3∙I,where A is a constant (~0.5 for water at 25°C, ~0.5238 at 37°C), zi is the charge of the respective ion, and I is the ionic strength of the solution. The ionic strength is defined as:I=0.5∙ ∑imi∙zi2,where mi is the concentration of the i-th ionic specie present. For concentrations in a study measuring properties of ICaL (Magyar et al., 2000), I is ca. 0.15-0.17. This warrants the use of Davies equation, which was shown to be accurate for I up to 0.5, unlike the basic Debye-Hückel equation, which is accurate for I up to 0.01 only (Mortimer, 2008).
+The Debye-Hückel theory is commonly used to compute the activity coefficients. We used the Davies equation, which extends the basic Debye-Hückel equation to be accurate for ionic concentrations found in living cells (Mortimer, 2008):
+
+$$
+log⁡\gamma_{i}=-A∙z_{i}^{2}∙\frac{\sqrt{I}}{1+\sqrt{I}}-0.3∙I,
+$$
+
+where A is a constant (~0.5 for water at 25°C, ~0.5238 at 37°C), zi is the charge of the respective ion, and I is the ionic strength of the solution. The ionic strength is defined as:
+
+$$
+I=0.5∙\sumim_{i}∙z_{i}^{2},
+$$
+
+where mi is the concentration of the i-th ionic specie present. For concentrations in a study measuring properties of ICaL (Magyar et al., 2000), I is ca. 0.15-0.17. This warrants the use of Davies equation, which was shown to be accurate for I up to 0.5, unlike the basic Debye-Hückel equation, which is accurate for I up to 0.01 only (Mortimer, 2008).
 
 We implemented the computation of ionic coefficients based on the Davies equation dynamically, so that the activity coefficients are estimated at every simulation step. This allows accurate representation of the driving force when ionic concentrations are disturbed, such as at varying pacing rates, or during homeostatic imbalance. The dynamic computation is also used to estimate ionic activity coefficients for potassium and sodium flowing through the calcium channels, taking into account their different charge.
 
 Throughout our simulations, both intracellular and extracellular activity coefficients generally lie between 0.61 and 0.66. Importantly, this estimate shows that the intracellular and extracellular activity coefficients are relatively similar (corresponding to the broadly similar total concentration of charged molecules), in contrast with the original values. Particularly, the origin of the intracellular activity coefficient γi = 1 in the Luo-Rudy model is unclear, as by the Davies (or by any Debye-Hückel variant) equation, I would have to be zero, which is possible only when there are no ions present.
 
-## Activation curve extraction
+#### Activation curve extraction
 
 An additional improvement in the ICaL formulation is the estimation of its activation curve. In brief, we implement a consistent use of the GHK equation for the extraction of the activation curve and for the ICaL formulation in the ToR-ORd model. The activation curve is obtained via dividing the experimentally measured I-V relationship of the current by the expected driving force for each pulse potential (see Appendix 1-3 for a graphical overview of the process). However, we identified a theoretical inconsistency in previous cardiac models across species (e.g. Luo and Rudy, 1994; Hund et al., 2008; O'Hara et al., 2011; Shannon et al., 2004; Grandi et al., 2010; Carro et al., 2011): whereas the Nernstian driving force of (V-ECa) is used to derive the activation curve, the GHK driving force is then used to calculate ICaL. Indeed, experimental studies reporting the activation curve of ICaL generally use the Nernstian driving force of (V-ECa) with ECa being the experimentally measured reversal potential of approximately 60 mV. This is explicitly stated in Linz and Meyer (2000), and also the activation curve by Magyar et al. (2000) used in the ORd model is consistent with dividing the IV relationship with (V-60).
 
-In this study, we propose that, for consistency, the same equation needs to be applied both to obtain the activation curve from the I-V curve and to represent the driving force in the current formulation. Thus, in the ToR-ORd model, the activation curve for ICaL was obtained by dividing the I-V curve from Magyar et al. (2000) by the GHK-based driving force, computed using ionic activity coefficients based on the Davies equation (as explained in the previous Section) and intracellular and extracellular ionic concentrations as in Magyar et al. (2000). The following capped Gompertz function (a flexible sigmoid) was found to be the best fit to the resulting steady-state activation curve:d∞= 1.0763∙e-1.007∙e-0.0829∙Vfor V≤31.4978 1 otherwise, where V is the membrane potential.
+In this study, we propose that, for consistency, the same equation needs to be applied both to obtain the activation curve from the I-V curve and to represent the driving force in the current formulation. Thus, in the ToR-ORd model, the activation curve for ICaL was obtained by dividing the I-V curve from Magyar et al. (2000) by the GHK-based driving force, computed using ionic activity coefficients based on the Davies equation (as explained in the previous Section) and intracellular and extracellular ionic concentrations as in Magyar et al. (2000). The following capped Gompertz function (a flexible sigmoid) was found to be the best fit to the resulting steady-state activation curve:
 
-## Other ICaL changes
+$$
+d_{∞}=1.0763∙e^{-1.007∙e^{-0.0829∙V}}forV\leq31.49781otherwise,
+$$
+
+where V is the membrane potential.
+
+#### Other ICaL changes
 
 20% of ICaL was placed in the main cytosolic space, consistent with the literature (Scriven et al., 2010). This increases the plateau-supporting capability of ICaL, given that the myoplasmic ICaL is subject to a weaker calcium-dependent inactivation than ICaL in the junctional subspace. Other minor changes are given in Appendix 1-15.3.3.
 
-## IKr replacement
+### IKr replacement
 
 The calibration of the ToR-ORd model’s AP morphology to experimental data resulted in problematic response to calcium blockade during an early phase of the model development when the original IKr formulation was used (further details in Appendix 1-12). ICaL block is known to shorten APD experimentally (O'Hara et al., 2011) but resulted in a major APD prolongation in simulations instead. This discrepancy could not be resolved through parameter optimisation. A mechanistic analysis revealed that this follows from the lack of ORd IKr activation, which is however not consistent with relevant experimental data (Lu et al., 2001). We therefore considered alternative IKr formulations and specifically the Lu-Vandenberg (Lu et al., 2001) Markov model (Figure 1B). The Lu-Vandenberg IKr model is based on extensive experimental data allowing the dissection of activation and recovery from inactivation and provided the best agreement with experimental data, specifically when considering the AP plateau potentials reported experimentally. In Appendix 1-12, we: (1) provide a detailed explanation of origins of AP prolongation following ICaL block in a model which manifests experimental data-like plateau potentials and which contains the ORd IKr formulation; (2) explain why this phenomenon occurs only in a model with experimental data-like plateau potentials, but not in the original high-plateau ORd model; (3) compare the ORd and Lu-Vandenberg IKr formulations with experimental data, demonstrating the good agreement with experimental data of the Lu-Vandenberg formulation but not the ORd.
 
 Following the inclusion of the Lu-Vandenberg IKr formulation, all models generated during model calibration exhibited APD shortening in response to ICaL block.
 
-## Changes in INa, I(Ca)Cl, IClb and IK1
+### Changes in INa, I(Ca)Cl, IClb and IK1
 
 The INa current formulation was replaced by an alternative human-based formulation (Grandi et al., 2010), given established limitations of the original model with regards to conduction velocity and excitability (O'Hara et al., 2011), comment on article from 05 Oct 2012). The Grandi INa model was updated to account for CaMKII phosphorylation (Appendix 1-15.3.1).
 
@@ -98,15 +199,15 @@ Also from the Grandi model, we added the calcium-sensitive chloride current I(Ca
 
 The IK1 model was replaced with the human-based formulation by Carro et al. (2011), as it was shown to be key for simulations of hyperkalemic conditions. The IK1 replacement was done before hyperkalemia simulation, not violating the classification of hyperkalemia criterion as a validation step. Extracellular potassium concentration in a healthy cell was reduced from 5.4 to 5 mM to fall within the physiological range (Zacchia et al., 2016).
 
-## Calibration of IK1 block and resting membrane potential
+### Calibration of IK1 block and resting membrane potential
 
 When evaluating the baseline ORd model against the selected criteria, we observed that a reduction in IK1 results in hyperpolarisation of the cell (from −88 to −88.16 mV at 1 Hz pacing). However, it is established that IK1 reduction depolarises cells experimentally (Dhamoon and Jalife, 2005). Changes made during ToR-ORd calibration (predominantly the altered balance of currents during diastole and the inclusion of background chloride current) result in ToR-ORd manifesting depolarization in response to IK1 block, consistent with experimental data.
 
-## Multiobjective genetic algorithm
+### Multiobjective genetic algorithm
 
 We applied a multiobjective genetic algorithm (MGA, @gamultiobj function in Matlab, Deb, 2001) to automatically re-fit various model parameters. Based on preliminary experimentation, we used a two-dimensional fitness. We used MGA rather than an ordinary genetic algorithm or particle swarm optimisation, given that MGA optimises towards a Pareto front rather than a single optimum, implicitly maintaining population diversity. The Pareto front is the set of all creatures which are not dominated by any other creature in the population, that is creatures for which there is no other creature better in all fitness dimensions. Therefore, a subpopulation of diverse solutions is maintained, and the optimiser consequently has less of a tendency to converge to a single local optimum compared to single-number fitness approaches. In addition, the crossover operator of GA is well suited for a task where multiple criteria are optimised, given that creatures in the population may efficiently share partial solutions to various subcriteria. The fitness used in this study is described in greater detail in Appendix 1-1.
 
-## Evaluation pipeline and code
+### Evaluation pipeline and code
 
 To facilitate the model validation and future work, we also provide an automated ‘single-click’ evaluation pipeline. It runs automatic simulations to extract and visualise single-cell biomarkers including those related to AP morphology, effect of key channel blockers, early afterdepolarisations (EAD), and alternans measurement. The pipeline generates a single HTML report containing all the results; see Appendix 1-15.2 for a visualisation. The code for our model (Matlab and CellML), the validation pipeline, and the experimental data on human AP morphology are available at https://github.com/jtmff/torord (Tomek, 2019; copy archived at https://github.com/elifesciences-publications/torord). An informal blog giving further insight into the choices we made, as well as general thoughts on the development of ToR-ORd and computer models in general, is available at https://underlid.blogspot.com/.
 
@@ -114,13 +215,13 @@ We designed the Matlab code used to simulate our model so that the simulation co
 
 ## Results
 
-## Calibration based on AP, calcium transient, and L-type calcium current properties
+### Calibration based on AP, calcium transient, and L-type calcium current properties
 
 The AP morphology of the ToR-ORd is within or at the border of the interquartile range of the Szeged-ORd experimental data (Figure 2A). This is a major improvement compared to the original ORd morphology, which overestimates plateau potentials, particularly during early plateau (Figure 2A). The fact that the early plateau potential is around 20–23 mV is clearly apparent from experimental recordings and is further corroborated by additional studies in human tissue samples (Jost et al., 2013, Figure 6) and isolated human cardiomyocytes (Coppini et al., 2013). We note that compared to the Szeged-ORd dataset (Britton et al., 2017), our model manifests a slightly increased peak membrane potential in the single-cell form, similar to single-cell experimental data (Coppini et al., 2013). This is a design choice related to the fact that the Szeged-ORd dataset contains recordings of small tissue samples, which are expected to manifest a reduced peak potential compared to single-cell. When coupled in a fibre, ToR-ORd manifests conduction velocity of 65 cm/s, which is consistent with clinical data (Taggart et al., 2000).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/48890/elife-48890-fig2-v3.jpg)
 
-**Figure 2.:** CaL in ToR-ORd.Action potential (A) and calcium transient (B) at 1 Hz obtained with the ToR-ORd model following calibration, compared to those obtained with the ORd model and experimental data from O'Hara et al. (2011) and Coppini et al. (2013), respectively. The purple and green zones in (B) stand for mean ± standard deviation. The duration of calcium transient at 90% recovery was extracted from figures in Coppini et al. (2013), adding the time to peak and time from peak to 90% recovery. (C) Activation curves used in the ToR-ORd and ORd models (blue and red lines, respectively). The points correspond to the IV relationship measured in Magyar et al. (2000) normalised by the Nernstian driving force (d.f.) assuming reversal potential of +60 mV (blue points) and the GHK driving force (red points). (D, E) I-V relationship and steady-state inactivation as measured in ToR-ORd (red line) versus ORd model (blue line) versus experimental data from Magyar et al. (2000) (black points with line). ICaL,tot is the sum of currents corresponding to all ions (Ca2+, Na+, and K+) passing through the L-type calcium current channels. (F) L-type calcium current of a midmyocardial cell, showing current reversal in ORd, but not in ToR-ORd. Only the calcium component of ICaL,tot is shown to demonstrate that the current reversal is not due to other ions. We note that the difference in total amplitude of ICaLin Figure 2F follows predominantly from different action potential shape in ToR-ORd vs ORd, consistent with the I-V relationship.
+**Figure 2.:** Action potential (A) and calcium transient (B) at 1 Hz obtained with the ToR-ORd model following calibration, compared to those obtained with the ORd model and experimental data from O'Hara et al. (2011) and Coppini et al. (2013), respectively. The purple and green zones in (B) stand for mean ± standard deviation. The duration of calcium transient at 90% recovery was extracted from figures in Coppini et al. (2013), adding the time to peak and time from peak to 90% recovery. (C) Activation curves used in the ToR-ORd and ORd models (blue and red lines, respectively). The points correspond to the IV relationship measured in Magyar et al. (2000) normalised by the Nernstian driving force (d.f.) assuming reversal potential of +60 mV (blue points) and the GHK driving force (red points). (D, E) I-V relationship and steady-state inactivation as measured in ToR-ORd (red line) versus ORd model (blue line) versus experimental data from Magyar et al. (2000) (black points with line). ICaL,tot is the sum of currents corresponding to all ions (Ca2+, Na+, and K+) passing through the L-type calcium current channels. (F) L-type calcium current of a midmyocardial cell, showing current reversal in ORd, but not in ToR-ORd. Only the calcium component of ICaL,tot is shown to demonstrate that the current reversal is not due to other ions. We note that the difference in total amplitude of ICaLin Figure 2F follows predominantly from different action potential shape in ToR-ORd vs ORd, consistent with the I-V relationship.
 
 Both time to peak calcium and duration of calcium transient at 90% recovery obtained with the ToR-ORd model are within the standard deviation of experimental data in isolated human myocytes (Coppini et al., 2013), whereas ORd slightly overestimated the calcium transient duration (Figure 2B). The calcium transient amplitude of ToR-ORd also matches the Coppini et al. data after accounting for the different APD (Appendix 1-8).
 
@@ -130,7 +231,7 @@ We observed that in cases of elevated ICaL (e.g. in midmyocardial cells), ORd re
 
 We have also simulated a P2/P1 protocol as measured experimentally by Fülöp et al. (2004), where two rectangular pulses are applied with varying interval between them. Both ORd and ToR-ORd qualitatively agree with the experimental data (Appendix 1-7).
 
-## Calibration: inotropic effects of sodium blockers
+### Calibration: inotropic effects of sodium blockers
 
 Figure 3A-D illustrates AP and calcium transient changes caused by block of sodium currents in ToR-ORd (left) and ORd (right). As sodium blockers act on channel Nav1.5 mediating both the fast (INa) and late (INaL) sodium current (Makielski, 2016), we simulate the effect of combined partial INa and INaL block. The ToR-ORd model manifests a small reduction in calcium transient amplitude (Figure 3C), unlike ORd, which gives a sizeable increase (Figure 3D); ToR-ORd is thus consistent with the observed negative inotropy of sodium blockers (Gottlieb et al., 1990; Tucker et al., 1982; Legrand et al., 1983; Bhattacharyya and Vassalle, 1982). This is a major improvement in the ToR-ORd model, as sodium current reduction is involved in a range of disease conditions in addition to pharmacological block.
 
@@ -144,7 +245,7 @@ Fibre simulations carried out to assess the effect of cell coupling on the effec
 
 With the ToR-ORd model, the 14% reduction in CaT amplitude in the electrically coupled fibre with 50% block of both INa and INaL is generally consistent with clinical data on sodium blockers: Encainide reduced stroke work index by 15% and cardiac index by 8% (Tucker et al., 1982). In another study using encainide, the cardiac index was reduced by 18% and the stroke volume index by 28% (Gottlieb et al., 1990). Flecainide reduced left ventricular stroke index by 12% and the left ventricular ejection fraction by 9% (Legrand et al., 1983). Simulations with the ToR-ORd model show overall agreement with the clinical data. However, a direct quantitative comparison is challenging given the different indices of contractility measured (CaT amplitude versus clinical indices) and that it is not possible to estimate the exact ratios of INa and INaL block in clinical data (Appendix 1-9).
 
-## Calibration: proarrhythmic behaviours (alternans and early afterdepolarisations)
+### Calibration: proarrhythmic behaviours (alternans and early afterdepolarisations)
 
 EADs are an important precursor to arrhythmia, manifesting as a membrane potential depolarisation during late plateau and/or early repolarisation. They are thought to arise mainly from ICaL current reactivation (Weiss et al., 2010). The ToR-ORd model manifests EADs at conditions used experimentally in nondiseased human endocardium (Guo et al., 2011) (Figure 4A). The amplitude of simulated EADs is 14 mV (Figure 4B), which matches the maximum EAD amplitude shown by Guo et al. (2011). We also note that the experimental data by Guo et al. manifest early plateau potential of ca. 23 mV (which is matched by ToR-ORd), in line with other studies we referred to previously regarding this matter.
 
@@ -154,7 +255,7 @@ EADs are an important precursor to arrhythmia, manifesting as a membrane potenti
 
 Repolarisation alternans is another established precursor to arrhythmia, facilitating the formation of conduction block (Weiss et al., 2006). It is induced by rapid pacing and it is mostly thought to arise from calcium transient amplitude oscillations being translated to APD oscillations (Pruvot et al., 2004), although purely voltage-driven mechanism was also proposed (Nolasco and Dahlen, 1968). Alternans in the ToR-ORd model is calcium-driven and appears via the same mechanism as in the ORd: sarcoplasmic reticulum calcium cycling refractoriness (Tomek et al., 2018). It occurs at rapid pacing, in both calcium and APD (Figure 4C–F). The peak APD alternans amplitude (difference in APD between consecutive beats) is 12 ms, which is matches the value 11 ± 2 ms reported in human hearts without a structural disease (Koller et al., 2005). Direct quantitative comparison is however slightly limited by the fact that the data were recorded in RV septum, which may or may not differ from endocardial cells in alternans amplitude.
 
-## Validation: drug-induced effects on rate dependence of APD
+### Validation: drug-induced effects on rate dependence of APD
 
 Figure 5 illustrates simulations of drug action using the ToR-ORd model (red traces), compared to experimental data (black traces) and to simulations with the ORd model reparametrised by Dutta et al. (2017a) (blue dashed lines). APD is shown in the presence of IKr block (E-4031, Figure 5A), IKs block (HMR-1556 Figure 5B), multichannel block of INaL, ICaL, IKr (mexiletine, Figure 5C), and a ICaL block (nisoldipine, Figure 5D), at base cycle lengths of 500, 1000, and 2000 ms. We note that while the Dutta et al. model was specifically optimised for response of APD to these drug blocks, no such treatment was applied to the ToR-ORd model, making the results presented here an independent validation. Appendix 1-13 contains further details on the choice and use of the drug data.
 
@@ -164,7 +265,7 @@ Figure 5 illustrates simulations of drug action using the ToR-ORd model (red tr
 
 The predictions produced by the ToR-ORd model are in good agreement with experimental data, particularly given the lack of optimisation towards this result. Simulating E-4031, ToR-ORd provides a prediction similar to the experimental data mean and the Dutta model (Figure 5A). This is crucial, given the key role of IKr in the repolarisation reserve of human cardiomyocytes. The response to IKs blockade via HMR-1556 is even better in ToR-ORd than in the Dutta model, which is also within standard deviation of the data, but carries a clear trend towards AP prolongation (Figure 5B). When simulating the multichannel blocker mexiletine, ToR-ORd prediction is within standard deviation of the experimental data, with the Dutta model giving similar or closer-to-mean predictions at 0.5 and 1 Hz (Figure 5C). The predicted effect of the calcium blocker nisoldipine in the ToR-ORd model matches well the experimental data mean (Figure 5D), even better than the Dutta model (also within standard deviation). We note that the good performance of the simulated nisoldipine effect critically relies on the IKr replacement (Materials and methods and Appendix 1-12).
 
-## Validation: APD accommodation and S1-S2 restitution
+### Validation: APD accommodation and S1-S2 restitution
 
 Experimental measurements in human cardiomyocytes (Franz et al., 1988; Bueno-Orovio et al., 2012) show how the APD shortens upon increase in pacing frequency, and then prolongs again, as the pacing frequency returns to control (Figure 6A, top). APD adaptation dynamics with changes in heart rate are regulated by changes in sodium homeostasis (Pueyo et al., 2011), and their manifestation in QT adaptation have been shown to be useful for arrhythmia risk prediction (Pueyo et al., 2004). While simulations with the ORd model capture the general trend of APD accommodation, there are differences compared to the experimental data (Figure 6A). First, changes in pacing rate are followed by slow-dynamics (~30 s) APD prolongation not present in the experimental recordings. Second, the time constant of accommodation is generally slow. Conversely, the ToR-ORd model reproduces the pattern of accommodation well, where the change in APD soon after change in frequency is relatively fast, and then gradually slows down (Figure 6B). This suggests that the ionic balance in ToR-ORd is likely to have been improved compared to ORd.
 
@@ -174,7 +275,7 @@ Experimental measurements in human cardiomyocytes (Franz et al., 1988; Bueno-Oro
 
 A second indicator of how a model responds to a change in pacing frequency is the S1-S2 restitution protocol. The S1-S2 restitution curve obtained with the ToR-ORd model is given in Figure (Figure 6C), showing a good agreement with the experimental data (O'Hara et al., 2011).
 
-## Validation: populations of models and drug safety prediction
+### Validation: populations of models and drug safety prediction
 
 Drug safety testing is one of the key applications of computer modelling which has yielded highly promising results (Passini et al., 2017). To assess the suitability of ToR-ORd for drug safety testing, we replicated the study by Passini et al. (2017), which was carried out using populations of models based on the ORd model. Two populations were created based on ToR-ORd similarly to the original study, altering conductances of important currents within the ranges of 50–150% and 0–200%. Models in both populations are stable under significant perturbation of ionic conductances, which supports the robustness of the model (Figure 7A).
 
@@ -184,9 +285,9 @@ Drug safety testing is one of the key applications of computer modelling which h
 
 Prediction of the risk of drug-induced Torsades de Pointes based on simulated drug-induced repolarisation abnormalities using ToR-ORd population yielded similar results to the original study, with predicted risk being correct for 54 out of 62 compounds (87% accuracy). Compared to Passini et al. (2017), the assessment of Mexiletine (a predominantly sodium blocker that is safe) was improved from false positive to true negative. High-dose Mexiletine led to formation of many EADs in ORd, but not in ToR-ORd (Figure 7B), highlighting the importance of the advances on sodium blockers presented in this work. At the same time, Procainamide and Metrodinazole were misclassified as false negatives compared to Passini et al. (2017). However, these drugs are controversial, as Metrodinazole is considered non-torsadogenic by Lancaster and Sobie (2016), and this study predicted both the drugs to be non-risky. Torsadogenic risk for all evaluated compounds and the confusion matrix of the classification are given in Figure 7C.
 
-## Validation: response to disease
+### Validation: response to disease
 
-## Hyperkalemia
+#### Hyperkalemia
 
 Hyperkalemia, the elevation of extracellular potassium, is a hallmark of acute myocardial ischemia caused by the occlusion of coronary artery. It was shown that hyperkalemia can significantly inhibit sodium channel excitability following repolarisation, leading to the prolongation of postrepolarisation refractoriness (Coronel et al., 2012). The dispersion of effective refractory periods (ERPs) between normal and ischemic zones forms a substrate for the initiation of re-entrant arrhythmia. In this new model, we tested the effect of hyperkalemia on tissue excitability using 1D fibres. As shown in Figure 8A, the elevation of extracellular potassium level led to an increase of the resting membrane potential (RMP) and the decrease of AP upstroke amplitude. As a result of weaker upstroke and more depolarised RMP, the APD shortened under hyperkalemia; however, the ERPs were prolonged due to the stronger sodium channel inactivation caused by the elevation of RMP (Figure 8B). Therefore, this new model successfully reproduced the longer post-repolarization refractoriness under hyperkalemia observed in experiments, and it can be used in the simulations of re-entrant arrhythmia under acute ischemia. In this regard, it presents an improvement over the original ORd model, which did not manifest postrepolarisation refractoriness without further modifications (Dutta et al., 2017b).
 
@@ -194,11 +295,11 @@ Hyperkalemia, the elevation of extracellular potassium, is a hallmark of acute m
 
 **Figure 8.:** (A) The effect of hyperkalemia on AP morphology; measured in the centre of a simulated fibre. (B) APD90 and effective refractory period (ERP) at varying extracellular potassium concentration. For extracellular potassium higher than 9 mM, full AP did not develop, but low-amplitude activation propagated through the fibre (Appendix 1-14). Membrane potential (C) and calcium transient (D) at 1 Hz pacing compared between a single healthy and HCM cell. (E) 50% IKr block induces EADs in HCM cell, but not in a healthy one.
 
-## Hypertrophic cardiomyopathy
+#### Hypertrophic cardiomyopathy
 
 Hypertrophic cardiomyopathy (HCM) is among the most common cardiomyopathies, manifesting as abnormal thickening of the cardiac muscle without an obvious cause (Coppini et al., 2013). Beyond mechanical remodelling, the disease predisposes the hearts to arrhythmia formation, increasing the vulnerability to early afterdepolarisations. HCM induces complex multifactorial remodelling of cell electrophysiology and calcium handling, making it a challenging validation problem for a computer model. We applied the available human experimental data on HCM remodelling (based predominantly on Coppini et al., 2013) to our baseline model using an approach similar to Passini et al. (2016), observing that the dominant features of the remodelling observed by Coppini et al. are captured. The HCM variant of the computer model corresponds to experimental data in the AP morphology, manifesting a significantly higher plateau potential and an overall APD prolongation (Figure 8C). The calcium transient amplitude of the HCM model is slightly reduced, has longer time to peak, and a noticeably longer duration at 90% recovery (Figure 8D), also consistent with the data by Coppini et al. (2013). Ultimately, the HCM variant of our model is more prone to the formation of EADs (Figure 8E), as was shown experimentally (Coppini et al., 2013). This difference is in line with postulated key role of ICaL and NCX in EAD formation (Luo and Rudy, 1994; Weiss et al., 2010), both of which are markedly increased in HCM. Excessive prolongation of APD due to a strong increase in late sodium current in HCM also contributes to the EAD formation as well, as shown by Coppini et al. (2013).
 
-## Validation: human whole-ventricular simulations - from ionic currents to ECG
+### Validation: human whole-ventricular simulations - from ionic currents to ECG
 
 We conducted 3D electrophysiological simulations using the ToR-ORd model, representing the membrane kinetics of endocardial, epicardial and mid-myocardial cells to investigate their ability to simulate the ECG (see Appendix 1-15.1.5). Transmural and apex-to-base spatial heterogeneities as well as fibre orientations based on the Streeter rule were incorporated into a human ventricular anatomical model derived from cardiac magnetic resonance (Lyon et al., 2018).
 

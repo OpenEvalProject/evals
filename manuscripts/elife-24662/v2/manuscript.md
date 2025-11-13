@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.24662.001 Ageing is a progressive decline of intrinsic physiological functions. We examined the impact of ageing on the ultrastructure and function of mitochondria in mouse and fruit flies ( Drosophila melanogaster ) by electron cryo-tomography and respirometry. We discovered distinct age-related changes in both model organisms. Mitochondrial function and ultrastructure are maintained in mouse heart, whereas subpopulations of mitochondria from mouse liver show age-related changes in membrane morphology. Subpopulations of mitochondria from young and old mouse kidney resemble those described for apoptosis. In aged flies, respiratory activity is compromised and the production of peroxide radicals is increased. In about 50% of mitochondria from old flies, the inner membrane organization breaks down. This establishes a clear link between inner membrane architecture and functional decline. Mitochondria were affected by ageing to very different extents, depending on the organism and possibly on the degree to which tissues within the same organism are protected against mitochondrial damage. DOI: http://dx.doi.org/10.7554/eLife.24662.001
+Ageing is a progressive decline of intrinsic physiological functions. We examined the impact of ageing on the ultrastructure and function of mitochondria in mouse and fruit flies (Drosophila melanogaster) by electron cryo-tomography and respirometry. We discovered distinct age-related changes in both model organisms. Mitochondrial function and ultrastructure are maintained in mouse heart, whereas subpopulations of mitochondria from mouse liver show age-related changes in membrane morphology. Subpopulations of mitochondria from young and old mouse kidney resemble those described for apoptosis. In aged flies, respiratory activity is compromised and the production of peroxide radicals is increased. In about 50% of mitochondria from old flies, the inner membrane organization breaks down. This establishes a clear link between inner membrane architecture and functional decline. Mitochondria were affected by ageing to very different extents, depending on the organism and possibly on the degree to which tissues within the same organism are protected against mitochondrial damage.
 
 ## Introduction
 
@@ -37,69 +37,159 @@ We chose D. melanogaster (average lifespan >50 days depending on environmental 
 
 ## Results
 
-## Effects of ageing on the function and ultrastructure of mouse mitochondria
+### Effects of ageing on the function and ultrastructure of mouse mitochondria
 
-## Mitochondrial OXPHOS activity and ROS homeostasis
+#### Mitochondrial OXPHOS activity and ROS homeostasis
 
-To find out how ageing impacts mitochondrial function and ultrastructure, mitochondria from heart, liver and kidney of young (20 weeks) and old (80–96 weeks) mice were isolated for electron cryo-tomography (cryoET) and high-resolution respirometry. Isolated mitochondria were incubated with respiratory substrates that deliver electrons at the level of complex I (pyruvate, glutamate and malate) or complex II (succinate and rotenone). The mitochondrial oxygen consumption was recorded under phosphorylating (addition of ADP and P
+To find out how ageing impacts mitochondrial function and ultrastructure, mitochondria from heart, liver and kidney of young (20 weeks) and old (80–96 weeks) mice were isolated for electron cryo-tomography (cryoET) and high-resolution respirometry. Isolated mitochondria were incubated with respiratory substrates that deliver electrons at the level of complex I (pyruvate, glutamate and malate) or complex II (succinate and rotenone). The mitochondrial oxygen consumption was recorded under phosphorylating (addition of ADP and Pi; state 3), non-phosphorylating (addition of oligomycin to inhibit ATP synthase; state 4) and uncoupled conditions (addition of CCCP). Mitochondrial respiratory rates normalised to protein content were found to be highest in heart mitochondria, ~2–3 fold lower in kidney and ~5 fold lower in liver (Figure 1A). In line with previous reports (Mulligan et al., 2014; Weindruch et al., 1980; Wilson et al., 1975), our investigation showed no significant differences in respiratory rates between mitochondria isolated from 20-week-old and 80-week-old heart tissue (Figure 1A), and no age-related change in the rate of ATP production was observed (Figure 1C). Moreover, maximal activities of key mitochondrial enzymes remained unchanged (Figure 1E). These results prompted us to investigate how ageing impacts mitochondrial ROS homeostasis. We first assessed the peroxide yield, defined as the hydrogen production rate normalized to the mitochondrial respiration assessed under the same conditions (Votyakova and Reynolds, 2001). Surprisingly, no age-dependent increase in hydrogen peroxide release relative to the amount of oxygen consumed was observed in mitoch﻿ondria isolated from heart, liver or kidney (Figure 1B). To investigate ROS homeostasis further, we analysed the steady-state levels and activity of the antioxidant enzymes superoxide dismutase (SOD1, SOD2) and catalase in mitochondria from young and old heart, liver or kidney by quantitative western blot electrophoresis and gel densitometry (Figure 1D). This revealed a tendency towards lower levels of antioxidant enzymes in aged mice. Catalase activity was reduced by 30% in old mouse liver (Figure 1F) and SOD activity was almost halved in old mouse kidney (Figure 1—figure supplement 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/24662/elife-24662-fig1-v2.jpg)
 
-**Figure 1.:** (A) Oxygen consumption rate of mitochondria isolated from young (n = 7–8) or old (n = 8) animals. Isolated mitochondria were incubated with electron donors to complex I (pyruvate, glutamate, malate) or complex II (succinate, complex I inhibited with rotenone). Each set of substrates was successively combined with ADP (to assess the phosphorylating respiration, state 3), oligomycin (to measure non-phosphorylating respiration, state 4) and finally uncoupled by adding increasing concentrations of CCCP. (B) Mitochondrial peroxide yield assessed in mitochondria from young (n = 3–4) and old (n = 3–4) animals. (C) Mitochondrial ATP synthesis rate in heart mitochondria from young (n = 4) and old (n = 3) animals. Error bars indicate mean ± standard error of the mean (SEM). (D) Steady-state levels of different antioxidant enzymes in heart, liver and kidney mitochondria isolated from young (y) and old (o) mice were quantified by western blot analyses. Long (LE) and short exposure (SE) times are presented for catalase and SOD1 detection. (E) Citrate synthase (CS) and respiratory chain enzyme activity (complex I, II and IV) measurements in heart, liver and kidney tissue extracts from young (n = 4) and old (n = 4) animals. Error bars indicate mean ± SEM. (F) Catalase enzyme activity measured in heart, liver and kidney tissue extracts from young (n = 4) and old (n = 4) animals.DOI: http://dx.doi.org/10.7554/eLife.24662.002
+**Figure 1.:** (A) Oxygen consumption rate of mitochondria isolated from young (n = 7–8) or old (n = 8) animals. Isolated mitochondria were incubated with electron donors to complex I (pyruvate, glutamate, malate) or complex II (succinate, complex I inhibited with rotenone). Each set of substrates was successively combined with ADP (to assess the phosphorylating respiration, state 3), oligomycin (to measure non-phosphorylating respiration, state 4) and finally uncoupled by adding increasing concentrations of CCCP. (B) Mitochondrial peroxide yield assessed in mitochondria from young (n = 3–4) and old (n = 3–4) animals. (C) Mitochondrial ATP synthesis rate in heart mitochondria from young (n = 4) and old (n = 3) animals. Error bars indicate mean ± standard error of the mean (SEM). (D) Steady-state levels of different antioxidant enzymes in heart, liver and kidney mitochondria isolated from young (y) and old (o) mice were quantified by western blot analyses. Long (LE) and short exposure (SE) times are presented for catalase and SOD1 detection. (E) Citrate synthase (CS) and respiratory chain enzyme activity (complex I, II and IV) measurements in heart, liver and kidney tissue extracts from young (n = 4) and old (n = 4) animals. Error bars indicate mean ± SEM. (F) Catalase enzyme activity measured in heart, liver and kidney tissue extracts from young (n = 4) and old (n = 4) animals.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/24662/elife-24662-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Figure 1D.DOI: http://dx.doi.org/10.7554/eLife.24662.003
+#### Tomography of mouse heart mitochondria
 
-## Tomography of mouse heart mitochondria
+Vitrified samples of the mitochondrial preparations used for high-resolution respirometry were analysed by electron cryo-tomography (cryo-ET). Mitochondria isolated from young mouse heart showed morphologies typical of tissues with a high energy demand. Stacks of parallel, thin and flat lamellar cristae were embedded in a dense matrix (Figure 2, left, Video 1). Cristae frequently appeared discontinuous in 2D slices, but 3D volumes indicated that this was due to fenestration of the lamellar disks rather than to disconnected cristae vesicles (Figure 2—figure supplement 1A). Crista junctions were circular (70%, average diameter 15 ± 2 nm) or slightly elongated (30%, 16 ± 1 × 29 ± 2 nm, dimensions ± standard deviations measured in the typical tomogram of Figure 2, top row, second from left). Most cristae were branched and connected to the inter-membrane space by more than one junction. They were also highly interconnected through narrow apertures (Figure 2—figure supplement 1B). In 20% of the mitochondria examined, membranes of two or more neighbouring cristae were so closely appressed that there was almost no matrix between them. These regions often showed membrane ‘swirls’ of high and variable membrane curvature, involving several neighbouring crista lamellae (Figure 2—figure supplement 1C). There was no apparent difference between the structures of isolated sub-sarcolemmal and interfibrillar mitochondria. Comparing mitochondria from young and old mouse hearts indicated similar morphologies (Figure 2, right), except that about 24% of mitochondria from aged heart tissue had some exceptionally wide cristae (Table 1; Figure 2—figure supplement 1D).
 
-Vitrified samples of the mitochondrial preparations used for high-resolution respirometry were analysed by electron cryo-tomography (cryo-ET). Mitochondria isolated from young mouse heart showed morphologies typical of tissues with a high energy demand. Stacks of parallel, thin and flat lamellar cristae were embedded in a dense matrix (
+![Video 1.](https://cdn.elifesciences.org/articles/24662/elife-24662-media1.mp4.jpg)
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/24662/elife-24662-fig2-v2.jpg)
 
-**Figure 2.:** Upper panel: slices through tomographic volumes (scale bars, 250 nm). Lower panels: segmented 3D volumes of two typical mitochondria with closely stacked, roughly parallel cristae (blue). The outer membrane (omitted for clarity in the right panel) is yellowish grey. Cristae are connected to the intermembrane space by well-defined, multiple crista junctions.DOI: http://dx.doi.org/10.7554/eLife.24662.005
+**Figure 2.:** Upper panel: slices through tomographic volumes (scale bars, 250 nm). Lower panels: segmented 3D volumes of two typical mitochondria with closely stacked, roughly parallel cristae (blue). The outer membrane (omitted for clarity in the right panel) is yellowish grey. Cristae are connected to the intermembrane space by well-defined, multiple crista junctions.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/24662/elife-24662-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A–C) Young mouse heart mitochondrion. (A): Crista fenestration. (B): Two neighbouring cristae with a narrow tubular connection. (C): Cut-open view of a membrane swirl. (D): Two examples of old mouse heart mitochondria with widened cristae (scale bar 250 nm).DOI: http://dx.doi.org/10.7554/eLife.24662.006
+**Figure 2—figure supplement 1.:** (A–C) Young mouse heart mitochondrion. (A): Crista fenestration. (B): Two neighbouring cristae with a narrow tubular connection. (C): Cut-open view of a membrane swirl. (D): Two examples of old mouse heart mitochondria with widened cristae (scale bar 250 nm).
 
-## Tomography of mouse liver mitochondria
+**Table 1.**
+ Overview of organisms and tissues analyzed. #number of animals dissected (mouse) or number of mitochondrial preparations (fly) vs number of individual mitochondria examined tomographically.
 
-The morphology of mitochondria isolated from mouse liver was conspicuously different from that of mouse heart (
+
+<table>
+  <thead>
+    <tr>
+      <th>Organism</th>
+      <th>Age</th>
+      <th>Tissue</th>
+      <th>Samples / mitochondria#</th>
+      <th>Mitochondria with abnormal morphology (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="8">mouse</td>
+      <td>young</td>
+      <td>heart</td>
+      <td>4/27</td>
+      <td>wide cristae 4%; cristae membrane swirls 19%</td>
+    </tr>
+    <tr>
+      <td>old</td>
+      <td>heart</td>
+      <td>3/17</td>
+      <td>wide cristae 24%; cristae membrane swirls 6%</td>
+    </tr>
+    <tr>
+      <td>young</td>
+      <td>liver</td>
+      <td>5/18</td>
+      <td>voids 11%; granules 6%</td>
+    </tr>
+    <tr>
+      <td>old</td>
+      <td>liver</td>
+      <td>4/31</td>
+      <td>voids 32%; granules 6%; apoptotic 3%</td>
+    </tr>
+    <tr>
+      <td>young</td>
+      <td>kidney</td>
+      <td>3/33</td>
+      <td>apoptotic 12%; granules 3%</td>
+    </tr>
+    <tr>
+      <td>old</td>
+      <td>kidney</td>
+      <td>2/22</td>
+      <td>apoptotic 18%; granules 18%</td>
+    </tr>
+    <tr>
+      <td>mutator</td>
+      <td>heart</td>
+      <td>2/10</td>
+      <td>membrane swirls 30%; membrane enclosures 40%; granules 20%</td>
+    </tr>
+    <tr>
+      <td>mutator</td>
+      <td>liver</td>
+      <td>2/10</td>
+      <td>voids 40%; granules 20%</td>
+    </tr>
+    <tr>
+      <td rowspan="2">fly</td>
+      <td>young</td>
+      <td>whole organism</td>
+      <td>3/29</td>
+      <td>elongated (axial ratio &gt; 3) 10%; wide cristae 10%</td>
+    </tr>
+    <tr>
+      <td>old</td>
+      <td>whole organism</td>
+      <td>3/39</td>
+      <td>elongated (axial ratio &gt; 3) 18%; wide cristae 15%; branched 5%; various other 23%</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Tomography of mouse liver mitochondria
+
+The morphology of mitochondria isolated from mouse liver was conspicuously different from that of mouse heart (Figure 3, left; Video 2). The cristae were more heterogeneous, less regular and not arranged in parallel stacks. They were generally wider and did not span the entire mitochondrion. Also, the cristae were less interconnected to one another and to the inner boundary membrane. As in cardiac mitochondria, fenestration was observed, although it was less frequent. The matrix was very dense, making it difficult to segment larger mitochondria. In one sample, the matrix contained dense granules up to 50 nm in diameter (Video 2). No such granules were found in heart mitochondria. In two instances, mitochondria had central low-density compartments that we refer to as voids (see below).
+
+![Video 2.](https://cdn.elifesciences.org/articles/24662/elife-24662-media2.mp4.jpg)
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/24662/elife-24662-fig3-v2.jpg)
 
-**Figure 3.:** Upper panel: slices through tomographic volumes (scale bars, 250 nm). Lower panels: segmented 3D volumes. About 25% of the mitochondria from old animals have large central voids (red). The voids were connected to the inter-membrane space (IMS) by openings of variable size.DOI: http://dx.doi.org/10.7554/eLife.24662.009
+**Figure 3.:** Upper panel: slices through tomographic volumes (scale bars, 250 nm). Lower panels: segmented 3D volumes. About 25% of the mitochondria from old animals have large central voids (red). The voids were connected to the inter-membrane space (IMS) by openings of variable size.
 
-Tomograms of mouse liver mitochondria from aged animals revealed two different phenotypes. While the majority of mitochondria looked similar to those isolated from young mouse liver, 32% (n = 31) had conspicuous low-density compartments, or voids, in the centre of the organelle (Figure 3, right, Video 3; Table 1). Segmentation of 3D volumes revealed that the membrane delineating these central voids was continuous with the inner membrane. In three segmented mitochondria, the voids accounted on average for 22% of the total cristae surface. To estimate their volumes, voids and mitochondria were approximated as simple geometrical shapes (spheres or cylinders for voids, cylinders for mitochondria). In the three segmented organelles, the voids occupied on average 6% of the total mitochondrial volume. The voids were not internal vesicles, but were connected to the inter-membrane space via apertures of varying size. In some cases two such connections were observed on opposite ends of the voids, resulting in a toroid or doughnut-shaped matrix. In other cases, the outer membrane appeared to protrude into the inner membrane voids. The cristae extending from the boundary membrane into the matrix looked normal, but none protruded into the matrix from the membrane defining the voids. In two tomograms, dense granules measuring up to 100 nm in diameter were observed in the matrix.10.7554/eLife.24662.010Video 3.Tomographic volume and 3D segmentation of the mitochondrion from old mouse liver shown in Figure 3, upper right, central panel.DOI: http://dx.doi.org/10.7554/eLife.24662.010
+Tomograms of mouse liver mitochondria from aged animals revealed two different phenotypes. While the majority of mitochondria looked similar to those isolated from young mouse liver, 32% (n = 31) had conspicuous low-density compartments, or voids, in the centre of the organelle (Figure 3, right, Video 3; Table 1). Segmentation of 3D volumes revealed that the membrane delineating these central voids was continuous with the inner membrane. In three segmented mitochondria, the voids accounted on average for 22% of the total cristae surface. To estimate their volumes, voids and mitochondria were approximated as simple geometrical shapes (spheres or cylinders for voids, cylinders for mitochondria). In the three segmented organelles, the voids occupied on average 6% of the total mitochondrial volume. The voids were not internal vesicles, but were connected to the inter-membrane space via apertures of varying size. In some cases two such connections were observed on opposite ends of the voids, resulting in a toroid or doughnut-shaped matrix. In other cases, the outer membrane appeared to protrude into the inner membrane voids. The cristae extending from the boundary membrane into the matrix looked normal, but none protruded into the matrix from the membrane defining the voids. In two tomograms, dense granules measuring up to 100 nm in diameter were observed in the matrix.
 
-## Tomography of mouse kidney mitochondria
+![Video 3.](https://cdn.elifesciences.org/articles/24662/elife-24662-media3.mp4.jpg)
 
-Kidney mitochondria resembled heart mitochondria more closely than those from liver (
+#### Tomography of mouse kidney mitochondria
+
+Kidney mitochondria resembled heart mitochondria more closely than those from liver (Figure 4A). Mitochondria from young and old mouse kidney were similar, except that dense matrix granules were found in 18% of samples from old animals compared to only one (3%) found in the samples from young animals. Cristae were lamellar but generally wider than those in cardiac tissue and less stringently arranged in parallel stacks. Occasionally cristae formed membrane swirls. 18% of kidney mitochondria from old mice and 12% from young mice had the characteristic morphology described for apoptotic cells (Scorrano et al., 2002; Sun et al., 2007). In these mitochondria, the cristae were irregular, not arranged in any discernible pattern, and the membrane curvature was locally inverted. Crista junctions were very wide or not discernible, resembling those of prohibitin-deficient mouse mitochondria, in which OPA1 (which is essential for cristae junction formation) is incorrectly processed (Merkwirth et al., 2008). The inner membrane enclosed a convoluted but apparently continuous volume. The width of the inter-membrane space between the inner boundary and outer membrane was largely the same as in normal heart, liver or kidney (Figure 4B), indicating that the mitochondria were intact and had not suffered from osmotic shock during isolation (Wrogemann et al., 1985). Results are summarized in Table 1.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/24662/elife-24662-fig4-v2.jpg)
 
-**Figure 4.:** (A) About 80% of the kidney mitochondria from young (left) or old (right) animals had lamellar and locally parallel cristae, not unlike heart mitochondria, except that the cristae were less tightly packed. (B) About 20% of the mitochondria from young and old kidney showed an inner membrane morphology resembling that in apoptotic cells (Scorrano et al., 2002), without any discernible pattern and wide or irregular junctions. Scale bars, 250 nm.DOI: http://dx.doi.org/10.7554/eLife.24662.011
+**Figure 4.:** (A) About 80% of the kidney mitochondria from young (left) or old (right) animals had lamellar and locally parallel cristae, not unlike heart mitochondria, except that the cristae were less tightly packed. (B) About 20% of the mitochondria from young and old kidney showed an inner membrane morphology resembling that in apoptotic cells (Scorrano et al., 2002), without any discernible pattern and wide or irregular junctions. Scale bars, 250 nm.
 
-## Mutator mouse mitochondria
+#### Mutator mouse mitochondria
 
-Next, we compared the function and ultrastructure of wild-type mouse mitochondria to those from the heart and liver of mtDNA mutator mice, a strain with a premature ageing phenotype (
+Next, we compared the function and ultrastructure of wild-type mouse mitochondria to those from the heart and liver of mtDNA mutator mice, a strain with a premature ageing phenotype (Trifunovic et al., 2004). A minor respiratory defect was found under phosphorylating and uncoupling conditions in heart from mtDNA mutator mice (Figure 5A), consistent with previous observations (Trifunovic et al., 2004, 2005). The morphology of heart mitochondria from the mtDNA mutator mice resembled wildtype heart mitochondria, except for a high incidence (40%) of ellipsoidal peripheral voids connected to the cristae or the inter-membrane space that were delineated by a double membrane (Figure 5B). The matrix space between the two membranes was minimal. In one mtDNA mutator mouse heart mitochondrion, the outer membrane was punctured by small openings (Figure 5B, left).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/24662/elife-24662-fig5-v2.jpg)
 
-**Figure 5.:** (A) Oxygen consumption rate assessed in heart mitochondria from control (white bars, n = 8, 30 weeks old) and mutator (black bars, n = 8, 30 weeks old) mice. Mitochondria were isolated and analysed as in Figure 1. (B–C) Cryo-ET. (B) Mutator mouse heart mitochondria had lamellar, parallel cristae that were similar to those of wild-type heart mitochondria (see Figure 2), but with occasional peripheral voids at the inner boundary membrane. (C) About 40% of liver mitochondria from mutator mice had low-density central voids, as in old liver (see Figure 3).DOI: http://dx.doi.org/10.7554/eLife.24662.012
+**Figure 5.:** (A) Oxygen consumption rate assessed in heart mitochondria from control (white bars, n = 8, 30 weeks old) and mutator (black bars, n = 8, 30 weeks old) mice. Mitochondria were isolated and analysed as in Figure 1. (B–C) Cryo-ET. (B) Mutator mouse heart mitochondria had lamellar, parallel cristae that were similar to those of wild-type heart mitochondria (see Figure 2), but with occasional peripheral voids at the inner boundary membrane. (C) About 40% of liver mitochondria from mutator mice had low-density central voids, as in old liver (see Figure 3).
 
 Mitochondria isolated from mtDNA mutator mouse liver showed the same central low-density voids (Figure 5C) as liver mitochondria from old wild-type mice (Figure 3), but at greater prevalence (40%; Table 1). In one case, cristae with apparently normal junctions extended from the central void into the matrix, which was not observed in wild-type mice (Figure 5C). About 20% of mtDNA mutator mouse liver mitochondria contained dense matrix granules (Table 1).
 
-## D. melanogaster mitochondria show profound age-associated changes
+#### D. melanogaster mitochondria show profound age-associated changes
 
-We also examined the ultrastructure and function of mitochondria from young and old
+We also examined the ultrastructure and function of mitochondria from young and old D. melanogaster, a non-mammalian metazoan. The flies showed standard sigmoidal survival curves, with a mean lifespan of 69.5 days and a maximum lifespan of 78.5 days (Figure 6A). Life span correlated with climbing ability, as reported previously (Rhodenizer et al., 2008). Climbing ability remained constant for 25 days and then dropped rapidly (Figure 6A). We investigated the respiratory activity of mitochondria from young and old flies (15 and 70 days, respectively; Figure 6A). The respiration rate in old flies decreased by up to 60% (Figure 6B), and the peroxide yield increased by 40–100% (Figure 6C), indicating that mitochondrial function is severely compromised, confirming an earlier report (Ferguson et al., 2005).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/24662/elife-24662-fig6-v2.jpg)
 
-**Figure 6.:** D. melanogaster mitochondria.(A) Survival rates (n = 150; solid line) and climbing ability (n ≥ 25; dashed line) of w wild-type flies. Error bars represent SEM and arrows indicate sampling points for young (15 days old) and old (70 days old) flies. (DahB) Oxygen consumption rate assessed in mitochondria from young (white bars, n = 3) and old (black bars, n = 3) flies. Mitochondria were isolated and analysed as in Figure 1. Succinate and glycerol-3-phosphate (AS), and finally rotenone were added (GS) for comparison to complex I-driven respiration (CPI). (C) Mitochondrial peroxide yield in mitochondria from young (white bars, n = 3) and old (black bars, n = 3) flies. (D–E) Cryo-ET of typical mitochondria from young (D) or old (E) flies. Mitochondria from young flies had lamellar, mostly parallel cristae, similar to those from mouse heart. Mitochondria from old flies had highly variable shapes and cristae organisation, with the following main types (clockwise from top left): elongated and branched morphology; round, lacking cristae; small disconnected cristae; concentric narrow cristae (note that the innermost vesicle, shown in a darker shade of blue, appears to be unconnected to other membranes); irregular, wide cristae.DOI: http://dx.doi.org/10.7554/eLife.24662.013
+**Figure 6.:** (A) Survival rates (n = 150; solid line) and climbing ability (n ≥ 25; dashed line) of wDah wild-type flies. Error bars represent SEM and arrows indicate sampling points for young (15 days old) and old (70 days old) flies. (B) Oxygen consumption rate assessed in mitochondria from young (white bars, n = 3) and old (black bars, n = 3) flies. Mitochondria were isolated and analysed as in Figure 1. Succinate and glycerol-3-phosphate (AS), and finally rotenone were added (GS) for comparison to complex I-driven respiration (CPI). (C) Mitochondrial peroxide yield in mitochondria from young (white bars, n = 3) and old (black bars, n = 3) flies. (D–E) Cryo-ET of typical mitochondria from young (D) or old (E) flies. Mitochondria from young flies had lamellar, mostly parallel cristae, similar to those from mouse heart. Mitochondria from old flies had highly variable shapes and cristae organisation, with the following main types (clockwise from top left): elongated and branched morphology; round, lacking cristae; small disconnected cristae; concentric narrow cristae (note that the innermost vesicle, shown in a darker shade of blue, appears to be unconnected to other membranes); irregular, wide cristae.
 
-We performed cryo-ET on three sample preparations per age group to find out whether and how this functional decline is reflected in mitochondrial morphology. Results are summarized in Table 1. Mitochondria from young flies (n = 29; Figure 6D, Video 4) looked similar to those from mouse heart, with a dense matrix and thin, lamellar, mostly parallel cristae. All cristae had ridges indicative of ATP synthase dimer rows (Davies et al., 2011; Strauss et al., 2008) and several junctions to the intermembrane space. Wide cristae were observed in 10% of the mitochondria, similar to mouse heart. A small subpopulation of mitochondria (10%) was unusually elongated (axial ratio above 3:1) but looked otherwise normal. By contrast, the structure of mitochondria from old D. melanogaster (n = 39) was heterogeneous (Figure 6E). Approximately 75% of mitochondria had normal, well-developed cristae, although in 15% the cristae were wider (not shown). Some of these mitochondria were unusually long and thin (18%), or branched (5%) (Figure 6E, top left). In the remaining 25% of old fly mitochondria, the inner membrane assumed a variety of non-standard shapes. Several organelles that were identified as mitochondria by their characteristic double membrane and dense matrix appeared to lack cristae entirely (Figure 6E, top right) or the cristae were minimally developed (10%). Many cristae were not connected to the intermembrane space and were, therefore, small vesicles completely surrounded by matrix (Figure 6E, lower right, Video 5). In one mitochondrion, the cristae were spherical (Figure 6E, centre left). In two others, they were concentric (Figure 6E, lower left, Video 6), lacking the membrane ridges associated with ATP synthase dimer rows (Davies et al., 2011; Strauss et al., 2008). These observations establish a strong link between mitochondrial inner membrane organisation and respiratory function in D. melanogaster.10.7554/eLife.24662.014Video 4.Tomographic volume and 3D segmentation of the mitochondrion from young fly shown in Figure 6D, upper panel.DOI: http://dx.doi.org/10.7554/eLife.24662.01410.7554/eLife.24662.015Video 5.Tomographic volume and 3D segmentation of the mitochondrion from old fly shown in Figure 6E, lower right.DOI: http://dx.doi.org/10.7554/eLife.24662.01510.7554/eLife.24662.016Video 6.Tomographic volume and 3D segmentation of the mitochondrion from old fly shown in Figure 6E, lower left.DOI: http://dx.doi.org/10.7554/eLife.24662.016
+We performed cryo-ET on three sample preparations per age group to find out whether and how this functional decline is reflected in mitochondrial morphology. Results are summarized in Table 1. Mitochondria from young flies (n = 29; Figure 6D, Video 4) looked similar to those from mouse heart, with a dense matrix and thin, lamellar, mostly parallel cristae. All cristae had ridges indicative of ATP synthase dimer rows (Davies et al., 2011; Strauss et al., 2008) and several junctions to the intermembrane space. Wide cristae were observed in 10% of the mitochondria, similar to mouse heart. A small subpopulation of mitochondria (10%) was unusually elongated (axial ratio above 3:1) but looked otherwise normal. By contrast, the structure of mitochondria from old D. melanogaster (n = 39) was heterogeneous (Figure 6E). Approximately 75% of mitochondria had normal, well-developed cristae, although in 15% the cristae were wider (not shown). Some of these mitochondria were unusually long and thin (18%), or branched (5%) (Figure 6E, top left). In the remaining 25% of old fly mitochondria, the inner membrane assumed a variety of non-standard shapes. Several organelles that were identified as mitochondria by their characteristic double membrane and dense matrix appeared to lack cristae entirely (Figure 6E, top right) or the cristae were minimally developed (10%). Many cristae were not connected to the intermembrane space and were, therefore, small vesicles completely surrounded by matrix (Figure 6E, lower right, Video 5). In one mitochondrion, the cristae were spherical (Figure 6E, centre left). In two others, they were concentric (Figure 6E, lower left, Video 6), lacking the membrane ridges associated with ATP synthase dimer rows (Davies et al., 2011; Strauss et al., 2008). These observations establish a strong link between mitochondrial inner membrane organisation and respiratory function in D. melanogaster.
+
+![Video 4.](https://cdn.elifesciences.org/articles/24662/elife-24662-media4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/24662/elife-24662-media5.mp4.jpg)
+
+![Video 6.](https://cdn.elifesciences.org/articles/24662/elife-24662-media6.mp4.jpg)
 
 ## Discussion
 
@@ -115,48 +205,48 @@ The most striking differences in our study, both with respect to morphology and 
 
 It is interesting to compare our results on mouse and fruit fly mitochondria to similar studies on the filamentous fungus P. anserina (Brust et al., 2010; Daum et al., 2013), another well-characterized ageing model (Scheckhuber and Osiewacz, 2008). P. anserina has an average lifespan of only 18 days, three times shorter than D. melanogaster, and almost 50 times shorter than mouse. Morphological changes in P. anserina mitochondria were both more homogenous and more extreme than those in fruit flies, affecting about 80% of organelles from senescent populations (Brust et al., 2010). Cryo-ET of aged P. anserina mitochondria or inner membrane vesicles indicated that the cristae had receded into the inner boundary membrane and that ATP synthase dimers dissociated into monomers (Daum et al., 2013). In terms of inner membrane morphology, old P. anserina mitochondria resembled the quasi-apoptotic subpopulation in mouse kidney, the tissue with the highest turnover rate in our study, suggesting similar mechanisms of programmed ageing. On the one hand, the higher proportion of functional mitochondria in old flies indicates that the decline is less complete and slower than that in P. anserina. On the other hand, it is much more rapid in D. melanogaster than in mouse, suggesting a link between the complexity of an organism and the rate of ageing.
 
-## Conclusions
+### Conclusions
 
 The increasing complexity of organisms goes along with an increasingly complex ageing process. For the primitive multicellular eukaryote P. anserina, a straightforward correspondence between age, mitochondrial ultrastructure and organization of the mitochondrial ATP synthase has been shown (Brust et al., 2010; Daum et al., 2013). In Drosophila, we now establish a link between inner membrane morphology and functionality, which correlates closely with age and agility. In mouse, the relationship between inner membrane ultrastructure, function and age is less clear-cut and evidently tissue-dependent. While mouse heart mitochondria show little if any change with age, a quarter of liver mitochondria display a severe, age-related phenotype that does not seem to result in an overall reduction of oxidative phosphorylation. A relatively high proportion of kidney mitochondria in young and old mice resemble those observed during apoptosis, consistent with the high turnover of kidney cells. Our data thus indicate major differences in how ageing relates to mitochondrial morphology and function in metazoans. In mouse, we find no evidence of age-related progressive impairment of the oxidative phosphorylation system or increase of mitochondrial H2O2 production, whereas both effects are evident in Drosophila.
 
 ## Materials and methods
 
-## Mouse breeding
+### Mouse breeding
 
 All mice mutations in this study were on an inbred C57Bl/6N nuclear background. Mutator mice were generated as previously described (Ross et al., 2013). Briefly, PolgAWT/mut mice were generated by crossing a PolgAWT/WT female with a PolgAWT/mut male, and subsequently inter-crossing the progeny to generate PolgAmut/mut (mutator mice). Mice were maintained on a standard mouse chow diet and sacrificed at different time points by cervical dislocation in strict accordance with the recommendations and guidelines of the Federation of the European Laboratory Animal Science Association (FELASA). Protocols were approved by the Landesamt für Natur, Umwelt und Verbraucherschutz, Nordrhein-Westfalen, Germany (Permit ref: 84–02.05.20.12.086).
 
-## Fly breeding
+### Fly breeding
 
 wDah wild-type flies were maintained at 25°C and fed a standard sugar/yeast/agar diet (SYA). Once mated, females, raised at controlled larval densities, were used. Adult flies were kept in SYA food vials containing 10 or 25 flies per vial for survival and climbing analysis, respectively. Climbing ability was assessed as previously described (Greene et al., 2003).
 
-## Isolation of mouse mitochondria
+### Isolation of mouse mitochondria
 
 Mice were sacrificed by cervical dislocation, and heart, liver and kidneys were quickly collected in ice-cold DPBS (Gibco), minced and homogenized with a few strokes of a Potter S homogenizer (Sartorius) in 5 ml (for heart and kidney) or 20 ml (for liver) of ice-cold mitochondria isolation buffer (MIB; 310 mM sucrose, 20 mM Tris-HCl, 1 mM EGTA, pH 7.2). Mitochondria were purified by differential centrifugation (1200 g for 10 min) and the supernatants were then centrifuged at 12,000 g for 10 min. The crude mitochondrial pellet was resuspended in an appropriate volume of MIB. Mitochondrial concentration was determined using the Protein DC Lawry based assay (Bio-Rad).
 
-## Isolation of mitochondria from fruit flies
+### Isolation of mitochondria from fruit flies
 
 Fruit flies were homogenized with a few strokes of a loose Potter S homogenizer (Sartorius) in 5 ml of ice-cold mitochondria isolation buffer (MIB; 310 mM sucrose, 20 mM Tris-HCl, 1 mM EGTA, pH 7.2). After filtration through a 100 µm nylon mesh filter, mitochondria were further homogenized in a tight Potter S homogenizer (Sartorius) and purified by differential centrifugation (800 g for 10 min) and the supernatant was then centrifuged at 4500 g for 15 min. The crude mitochondrial pellet was resuspended in an appropriate volume of MIB. Mitochondrial concentration was determined using the Protein DC Lowry based assay (Bio-Rad).
 
-## Mitochondrial respiratory assay
+### Mitochondrial respiratory assay
 
 The rate of mitochondrial oxygen consumption was measured as previously described (Freyer et al., 2012) at 37°C using 65–125 μg of crude mitochondria in 2.1 ml of mitochondrial respiration buffer (120 mM sucrose, 50 mM KCl, 20 mM Tris-HCl, 4 mM KH2PO4, 2 mM MgCl2, 1 mM EGTA, pH 7.2) in an Oxygraph-2k (Oroboros Instruments). Oxygen uptake was measured using either pyruvate/glutamate/malate (10 mM pyruvate, 5 mM glutamate and 5 mM malate) or 10 mM succinate and 10 nM rotenone. Oxygen consumption was assessed under phosphorylating conditions with 1 mM ADP (state 3) or non-phosphorylating conditions by adding 2.5 μg/ml oligomycin (pseudo state 4). Respiratory control ratios (Brand and Nicholls, 2011) were above 10 with pyruvate/glutamate/malate and above 5 with succinate-rotenone. Respiration was uncoupled by successive addition of carbonyl cyanide m-chlorophenyl hydrazone (CCCP) up to 3 μM to reach maximal respiration. The same procedure was used for D. melanogaster, except that isolated mitochondria were first incubated with pyruvate/glutamate/malate/proline (10 mM pyruvate, 5 mM glutamate, 5 mM malate, 10 mM proline) for state 3, state 4 and the uncoupled state. Succinate (10 mM), glycerol-3-phosphate (10 mM) and finally rotenone (10 nM) were then added to determine the maximal respiration driven by succinate and glycerol-3-phospate versus complex I driven-respiration.
 
-## Measurement of ATP synthesis flux (JATP)
+### Measurement of ATP synthesis flux (JATP)
 
 Isolated mitochondria (65 µg/ml) were suspended in respiration buffer (see above). After addition of 2 mM succinate, 10 nM rotenone and 1 mM ADP, oxygen consumption and ATP synthesis rates were measured as previously described (Mourier et al., 2010). Aliquots were collected every 20 s and precipitated in 7% HClO4/25 mM EDTA, centrifuged at 16,000 g for 10 min and then neutralized with 2 M KOH, 0.3 M MOPS. The ATP content in these samples was determined with the ATPlite 1step (PerkinElmer). In a parallel experiment, oligomycin (2.5 μg/ml protein) was added to the mitochondrial suspension to determine the rate of non-oxidative ATP synthesis.
 
-## Measurement of reactive oxygen species
+### Measurement of reactive oxygen species
 
 The rate of H2O2 production was determined by monitoring the fluorescence emission at 590 nm upon oxidation of the indicator dye Amplex Red (5 U/ml) in the presence of horseradish peroxidase (1 µM) with excitation at 560 nm. A standard curve was obtained by adding known amounts of H2O2 to the assay medium in the presence of the reactants. Mitochondria (65 µg protein ml−1) were incubated in respiratory medium (see above) at 37°C. H2O2 production was initiated by substrate addition, and the rate was determined by monitoring the fluorescence change with time (Votyakova and Reynolds, 2001).
 
-## Enzyme activities
+### Enzyme activities
 
 Tissue proteins (15–50 μg) were diluted in phosphate buffer (50 mM KH2PO4, pH 7.4) followed by spectrophotometric analysis of isolated respiratory chain complex activities at 37°C using a Hitachi UV-3600 spectrophotometer. Citrate synthase activity was measured at 412 nm (ε = 13,600 M−1cm−1) after addition of 0.1 mM acetyl-CoA, 0.5 mM oxaloacetate and 0.1 mM 5,5-dithiobis-2-nitrobenzoic acid (DTNB). NADH dehydrogenase activity was determined at 340 nm (ε = 6220 M−1cm−1) after addition of 0.25 mM NADH, 0.25 mM decylubiquinone and 1 mM KCN and monitoring rotenone sensitivity. Succinate dehydrogenase (SDH) activity was measured at 600 nm (ε = 21000 M−1cm−1) after addition of 40 mM succinate, 35 μM dichlorphenol indophenol (DCPIP) and 1 mM KCN. COX activity was assessed using a classical TMPD/ascorbate assay. Briefly, homogenized tissue (65 µg/ml) was suspended in mitochondrial respiration buffer (see above). Oxygen consumption was assessed in the presence of TMPD (0.2 mM), ascorbate (1 mM) and antimycin A (0.5 µM). After a few minutes of stationary respiration, KCN (2 mM) was injected into the chamber. COX activity corresponds to the KCN-sensitive respiration. Catalase activity was assessed using an Oroboros oxygraph. Catalase activity of homogenized tissues (65 µg/ml) was followed by recording the oxygen production in the presence of 0.01% H2O2. All chemicals were obtained from Sigma Aldrich.
 
-## Western blot analysis
+### Western blot analysis
 
 Proteins from tissue lysates were separated by SDS-PAGE and blotted onto PVDF membranes (GE Healthcare). The following primary antibodies were used: rabbit anti-superoxide dismutase 1 (1:1000, Abcam-ab16831) and rabbit monoclonal anti-superoxide dismutase 2 (1:1000, Millipore-06–984). The following HRP-conjugated secondary antibodies were used: donkey anti-rabbit IgG (Amersham, NA9340V) and sheep anti-mouse (Amersham, NXA931). For chemiluminescence detection, samples were incubated with ECL (GE Healthcare). Densitometry analyses were performed using the FIJI software.
 
-## Electron cryo-tomography
+### Electron cryo-tomography
 
 Mitochondria were washed twice with 320 mM trehalose, 20 mM Tris pH 7.3, and 1 mM EGTA. Samples were mixed 1:1 with fiducial gold markers (10 nm gold particles conjugated to protein A, Aurion, The Netherlands) and immediately plunge-frozen in liquid ethane on Quantifoil holey carbon grids (Quantifoil Micro Tools, Germany). Single tilt series (typically ±60°, step size 1–1.5°) were collected at 300 kV with an FEI Polara electron microscope equipped with a post-column Quantum energy filter and an Ultrascan 4 × 4 k CCD camera (Gatan, USA), or with a post-column Tridiem energy filter and a 2 × 2 k CCD camera (Gatan). Alternatively, tilt series were recorded with an FEI Titan Krios electron microscope equipped with a Quantum energy filter and a K2 summit direct electron detector (Gatan). Underfocus was 8–9 µm and the magnification was chosen to give an object pixel size between 4.3 Å and 7.3 Å. The total electron dose per tilt series was 120–150 e-/Å². Tilt series were aligned to gold fiducial markers and tomograms were reconstructed by back-projection with the IMOD software package (Kremer et al., 1996). A final filtering step applying non-linear anisotropic diffusion (Frangakis and Hegerl, 2001) was performed to increase contrast. Tomograms were manually segmented with the program AMIRA (FEI).

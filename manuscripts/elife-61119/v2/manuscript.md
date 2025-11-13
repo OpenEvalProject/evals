@@ -41,25 +41,168 @@ Because CMT2A is an autosomal dominant genetic condition, gene editing could pot
 
 ## Results
 
-## Genetically diverse CMT2A patient neurons exhibit similar mitochondrial phenotypes
+### Genetically diverse CMT2A patient neurons exhibit similar mitochondrial phenotypes
 
 One of the central features of CMT2A is the large number of different MFN2 mutations that provoke the syndrome. Common MFN2 GTPase and coiled-coiled domain mutations induce more severe and earlier onset disease, whereas rare carboxy terminal domain mutations confer later onset and milder disease (Feely et al., 2011; Stuppia et al., 2015). We compared mitochondrial phenotypes in cells from four CMT2A patients, two having MFN2 mutations within the canonical dynamin/Fzo-like GTPase domain (MFN2 T105M in the G1 motif and MFN2 R274W between the G4 and G5 motifs), and two with mutations in the MFN2 coiled-coiled helix bundle core (MFN2 H361Y and R364W). (Figure 1—figure supplement 1). Donor patient characteristics are in Table 1.
 
+**Table 1.**
+ Characteristics and sources of human primary fibroblasts used for motor neuron reprogramming studies.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Diseases</th>
+      <th>Mutation</th>
+      <th>Age</th>
+      <th>Sex</th>
+      <th>Passage#</th>
+      <th>Source</th>
+      <th>Fibroblast ID</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CMT2A</td>
+      <td>MFN2 Thr105Met</td>
+      <td>41</td>
+      <td>F</td>
+      <td>P4-P10</td>
+      <td>Dr. Robert H. Baloh</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CMT2A</td>
+      <td>MFN2 Arg274Trp</td>
+      <td>23</td>
+      <td>M</td>
+      <td>P4-P10</td>
+      <td>Dr. Barbara Zablocka</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CMT2A</td>
+      <td>MFN2 His361Tyr</td>
+      <td>41</td>
+      <td>M</td>
+      <td>P4-P10</td>
+      <td>Dr. Robert H. Baloh</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CMT2A</td>
+      <td>MFN2 His364Trp</td>
+      <td>28</td>
+      <td>F</td>
+      <td>P6-P10</td>
+      <td>Dr. Michael E. Shy</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>CMT1A</td>
+      <td>PMP22 DUP</td>
+      <td>28</td>
+      <td>F</td>
+      <td>P4-P10</td>
+      <td>Coriell Institute</td>
+      <td>GM05167</td>
+    </tr>
+    <tr>
+      <td>CTRL 1</td>
+      <td>-</td>
+      <td>68</td>
+      <td>F</td>
+      <td>P3-P7</td>
+      <td>NINDS</td>
+      <td>ND34769</td>
+    </tr>
+    <tr>
+      <td>CTRL 2</td>
+      <td>-</td>
+      <td>71</td>
+      <td>F</td>
+      <td>P3-P7</td>
+      <td>NINDS</td>
+      <td>ND36320</td>
+    </tr>
+    <tr>
+      <td>CTRL 3</td>
+      <td>-</td>
+      <td>55</td>
+      <td>F</td>
+      <td>P3-P7</td>
+      <td>NINDS</td>
+      <td>ND29510</td>
+    </tr>
+    <tr>
+      <td>CTRL 4</td>
+      <td>-</td>
+      <td>66</td>
+      <td>M</td>
+      <td>P8-P10</td>
+      <td>NINDS</td>
+      <td>ND29178</td>
+    </tr>
+    <tr>
+      <td>CTRL 5</td>
+      <td>-</td>
+      <td>72</td>
+      <td>M</td>
+      <td>P3-P7</td>
+      <td>NINDS</td>
+      <td>ND34770</td>
+    </tr>
+    <tr>
+      <td>CTRL 6</td>
+      <td>-</td>
+      <td>55</td>
+      <td>M</td>
+      <td>P4-P10</td>
+      <td>NINDS</td>
+      <td>ND38530</td>
+    </tr>
+  </tbody>
+</table>
+
 To avoid loss of some CMT2A-associated mitochondrial phenotypes in iPSC-derived neurons (Rizzo et al., 2016; Saporta et al., 2015), we directly reprogrammed CMT2A patient fibroblasts into motor neurons via microRNA-mediated neuronal conversion (Figure 1b; Abernathy et al., 2017). Reprogramming efficiency was similar between CMT2A and control patient fibroblasts:>90% neurons (measured as β-III tubulin staining), and >85% motor neurons (measured as β-III tubulin, HB9/MNX1 co-staining) (Figure 1—figure supplement 2). Compared to neurons reprogrammed from individuals with no evident disease at the time of sampling and who had none of the tested MFN2 mutations by Sanger sequencing (‘normal’), all four CMT2A motor neuron lines exhibited fragmented mitochondria (decreased mitochondrial aspect ratio; length/width) that is a consequence of impaired fusion in this context Franco et al., 2016; accompanying mitochondrial depolarization reflected characteristic functional impairment (Figure 1c; Crowley et al., 2016). Moreover, all four CMT2A motor neuron lines exhibited abnormal mitochondrial transport through axons, with diminished proportion and velocity of motile mitochondria (Figure 1c). Mitochondrial fragmentation, respiratory dysfunction, and dysmotility observed in reprogrammed neurons are prototypical features of CMT2A (Baloh et al., 2007; Zhou et al., 2019; Verhoeven et al., 2006; Rocha et al., 2018).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/61119/elife-61119-fig1-v2.jpg)
+
+**Figure 1.:** (a) Model structure of MFN2 showing location of CMT2A patient mutations. (b) Schematic depiction of fibroblast reprogramming procedure to produce motor neurons. (c) Mitochondrial testing in reprogrammed motor neurons from four CMT2A patients with different MFN2 mutations and representative of three normal control subjects. Open circles are baseline; closed circles are 48 hr after addition of mitofusin activator Chimera C (100 nM). Each circle is one neuron from two or three independent reprogrammings. P values from ANOVA.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61119/elife-61119-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Each cell line underwent Sanger sequencing for all 4 MFN2 mutation loci. A representative (of 3) normal control lines is shown. Shaded areas show each mutation locus. Encoded amino acids are on top; red amino acid is mutant form.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/61119/elife-61119-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Dual immunolabeling of parental fibroblasts (left) and reprogrammed neurons (right) from normal (top) and CMT2A MFN2 T105M patient (bottom). Red fibroblast-specific protein 1(FSP1) labels fibroblasts; green β-III-tubulin labels neurons. (b) Dual immunolabeling of parental fibroblasts (top) and reprogrammed neurons (bottom) with β-III-tubulin (red) and motor neuron-specific HB9/MNX1 (green). (c) Quantitative data for reprogramming efficiency of control (CTRL) and CMT2A fibroblasts from panels a and b. β-III-tubulin positive cells (left) are neurons; β-III-tubulin positive, HB9/MNX1 positive cells (middle) are motor neurons; β-III-tubulin positive, HB9/MNX1 negative cells are neurons that do not express the motor neuron marker (right). Motor neuron reprogramming efficiency was >90%, and did not differ in CMT2A. P values by ANOVA.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/61119/elife-61119-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Chimera C is a member of the original chemical class of mitofusin agonists described in reference 23. (b) MiM111 is the prototype of new chemical class of mitofusin activators having pharmaceutical properties suitable for in vivo use, described in reference 25. Quantitative data below each structure show the effects of each compound (100 nM, 48 hr) on mitochondrial aspect ratio (length/width; a read-out for fusion) and depolarization (indicating respiratory dysfunction) in murine embryonic fibroblasts (MEFs) having different Mfn expression profiles: Wild-type MEFs (left) with both Mfn1 and Mfn2 have normal aspect ratios, low depolarization, and are not affected by mitofusin activation. Mfn1 and Mfn2 KO MEFs (middle) expressing only Mfn2 or Mfn1, respectively, have impaired fusion with low aspect ratios, high depolarization, and both of these abnormalities improve with either mitofusin activator. Mfn double knockout MEFs (DKO, right) have no mitofusin targets, so mitochondrial fragmentation and depolarization do not respond to mitofusin activation. P values by t-test.
 
 Dominant inhibition of normal MFN1 and MFN2 by CMT2A MFN2 mutants produces an imbalance between mitochondrial fission and fusion that underlies mitochondrial pathology in CMT2A (Zhou et al., 2019). This dynamic imbalance can be reversed in transfected mouse cells and in vivo mouse models by forced overexpression of normal MFN1 or MFN2 (Zhou et al., 2019; Detmer and Chan, 2007). We posited that pharmacological activation of normal endogenous human MFN1 and MFN2 would also reverse mitochondrial abnormalities in CMT2A patient motor neurons. Chimera C is one of a new class of direct mitofusin activators that promotes conformational activation of MFN1 and MFN2, thereby stimulating endogenous mitofusins to improve mitochondrial dysmorphology and dysfunction (Rocha et al., 2018; Dang et al., 2020). Chimera C (100 nM, 48 hr) enhanced mitochondrial fusion (i.e. it increased aspect ratio) and improved respiratory function (i.e. it reversed mitochondrial depolarization) in cells lacking either MFN1 or MFN2, but had no effects in cells lacking both mitofusin targets (Figure 1—figure supplement 3). Chimera C (100 nM, 48 hr) also improved mitochondrial aspect ratio, depolarization, and motility in all four CMT2A patient motor neuron lines (Figure 1c).
 
-## Neuron-specific expression of MFN2 T105M in mice recapitulates key features of human CMT2A
+### Neuron-specific expression of MFN2 T105M in mice recapitulates key features of human CMT2A
 
 Children with CMT2A are typically healthy during early years, but develop signs of neuromuscular dysfunction during the mid first decade of life. Neurogenic distal limb muscular atrophy is progressive until the end of the second decade, at which time the disease stabilizes; longevity is normal, but disability is permanent (Fridman et al., 2015; Feely et al., 2011). No mouse models of CMT2A recapitulate all of these key clinical features in the absence of confounding developmental phenotypes (Zhou et al., 2019; Detmer et al., 2008; Cartoni et al., 2010; Bannerman et al., 2016; Dorn, 2020). Therefore, a prerequisite for proof-of-concept testing of mitofusin activation in vivo was to generate a mouse CMT2A model having greater similarity to the human condition.
 
 By combining Rosa26 <fs-MFN2(T105M)> (Bannerman et al., 2016) and Mnx1-Cre (HB9) (Yang et al., 2001) alleles (Figure 2a) we drove human MFN2 T105M expression in mouse neurons (Figure 2b; CMT2A mouse). Neuromuscular functional integrity over time was assessed as the duration mice could walk on an elevated accelerating rotating cylinder without falling off (RotaRod latency). RotaRod latency of CMT2A mice was normal at 10 weeks of age, progressively declined thereafter, and stabilized beyond 30 weeks (Figure 2c). As in clinical CMT2A, axonal mitochondria of MFN2 T105M mice were fragmented with disorganized cristae (Sole et al., 2009; Figure 2d).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/61119/elife-61119-fig2-v2.jpg)
+
+**Figure 2.:** (a) Schematic depiction Mfn2 <fs-T105M>expression strategy. (b) Immunoblot analysis of MFN2 expression in mouse sciatic nerves. (c) Serial RotaRod latency studies; CMT2A is green squares (n = 16), wild-type (WT) control is open circles (n = 6). (d) Electron micrographs of axonal mitochondrial from sciatic nerves (50 weeks). (e) Comparative neuro-electrophysiology study results of 50-week-old mice in panel c. (f) Response of CMT2A dorsal root ganglion neurons to mitofusin activation with Chimera C (100 nM, 48 hr). Top images are confocal micrographs of DRGs stained for mitochondria (red) and axons (green). Insets are higher power magnification to see mitochondrial morphology. Bottom images are kymographs showing mitochondrial (red) motility. Vertical columns are stationary mitochondria; lines transiting left to right or right to left are moving. P values are from t-test from 3 or four independent experiments.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61119/elife-61119-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) DRGs from CMT2A MFN2 T105M mice. Left is representative mitochondrial gating by TMRE fluorescence from a single study; green is vehicle; blue is Chimera C (100 nM, 48 hr). Right graph shows geometric mean fluorescence intensity (MFI) for eight experiments. TMRE fluorescence is inversely proportional to depolarization; increased fluorescence indicates respiratory fitness. (b) Control studies as in a. using DRGs from normal C57BL/6J mice. FCCP is a depolarizing agent used as a positive control. P values by t-test.
+
 Neuroelectrophysiological testing of CMT2A patients characteristically reveals reduced compound muscle action potentials (CMAP) with normal nerve conduction velocities (Berciano et al., 2017; Harding and Thomas, 1980). Recapitulating this clinical finding, sciatic nerve-tibialis muscle CMAP amplitudes of 50-week-old MFN2 T105M mice were diminished with no change in signal latency, which reflects conduction velocity (Figure 2e). Tibialis myofiber atrophy and loss of large axons without demyelination in the MFN2 T105M mouse (vide infra) also mimicked clinical CMT2A (Verhoeven et al., 2006; Muglia et al., 2001; Neves and Kok, 2011).
 
 To further evaluate the relevance of the MFN2 T105M mouse to human CMT2A, dorsal root ganglion (DRG) sensory neurons were isolated and placed in culture, the MFN2 T105M transgene induced with Adeno-Cre, and neurons assayed for the mitochondrial pathologies delineated in reprogrammed CMT2A patient motor neurons (vide supra). CMT2A-associated abnormalities in axon mitochondrial aspect ratio and transport (Figure 2f) and polarization status (Figure 2—figure supplement 1) were each mimicked in mouse CMT2A DRGs. As in reprogrammed human CMT2A motor neurons, mitofusin activation improved these abnormalities (Figure 2f and Figure 2—figure supplement 1, compare to Figure 1c).
 
-## Burst mitofusin activation reverses neuromuscular dysfunction in CMT2A mice
+### Burst mitofusin activation reverses neuromuscular dysfunction in CMT2A mice
 
 Collectively, the above results show that activating mitofusins can improve multiple mitochondrial abnormalities manifested by cultured human and mouse CMT2A neurons. To determine whether benefits of mitofusin activation in cultured neurons would translate to therapeutic effects on neuromuscular dysfunction in CMT2A we contemplated an in vivo trial in our CMT2A mouse. However, Chimera C is rapidly degraded by the liver and undergoes first-pass metabolism, making it impractical for in vivo studies (Dang et al., 2020). We therefore evaluated in vivo efficacy of mitofusin activation in CMT2A using MiM111, a structurally distinct compound having a mitofusin activation profile similar to Chimera C (Figure 1—figure supplement 3), but which is metabolically stable with good nervous system bioavailability (Dang et al., 2020). We hypothesized that intermittent or ‘burst’ mitofusin activation (a dosing schedule that reversed mitochondrial dysfunction for <12 hr each day) (Figure 3—figure supplement 1) would confer therapeutic benefits by cyclically enhancing mitochondrial fitness and transport, while minimizing the possibility of mitofusin toxicity that might occur with constant mitofusin activation (El Fissi et al., 2018; Meyer et al., 2017).
 
@@ -67,19 +210,51 @@ Based on a minimum effective MiM111 plasma concentration of 30 ng/ml (Dang et al
 
 If CMT2A neuron die-back is reversible then burst mitofusin activation should improve neuromuscular degeneration in MFN2 T105M mice who had progressed to the severe and stable CMT2A phenotype. To test this notion, 50-week-old MFN2 T105M mice and littermate controls were randomized to receive daily MiM111 or its vehicle. Researchers blind to genotype and treatment group performed Rotarod and neuro-electrophysiological testing after 4 and 8 weeks (Figure 3b). The characteristic decreases in RotaRod latency and CMAP amplitude in MFN2 T105M mice (see Figure 2c and e) were reversed 4 weeks after MiM111 treatment and remained near normal after 8 weeks (Figure 3c and d); MiM111 had no effect on control mice (Figure 3—figure supplement 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/61119/elife-61119-fig3-v2.jpg)
+
+**Figure 3.:** (a) Ex vivo mitochondrial motility in CMT2A mouse sciatic nerve axons 4 hr after intramuscular administration of mitofusin activator MiM111 or vehicle. Top panel is kymographs. Bottom panel emphasizes motile mitochondria with red and blue lines transiting antegrade or retrograde, respectively. (Note, mitochondrial transport in ex vivo sciatic nerves favors the antegrade [spine to foot] direction because mitochondria are recruited to the site of nerve injury at the distal amputation site [Zhou et al., 2016]). (b) Experimental design to evaluate efficacy of MiM111 in late murine CMT2A. (c) RotaRod latency in vehicle- (green) and MiM111-treated (blue) MFN2 T105M mice. (d) Neuroelectrophysiology studies: (left) representative CMAP tracings; (right) quantitative data. Each symbol in c and d is one mouse. P values from ANOVA. WT control values are open circles in panels c and d; complete WT control data are in Figure 3—figure supplement 2.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61119/elife-61119-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Predicted temporal relationship between plasma MiM111 concentration and peripheral nerve mitochondria activation based on published data (reference 25). Green indicates postulated therapeutic levels; pink indicates postulated sub-therapeutic levels. (b) In vivo plasma concentrations of MiM111 after a single dose of 30 mg/kg administered intramuscularly (means of 2 mice). (c) Time-dependent MiM111 target engagement measured as the increase in proportions (left) and velocity (right) of mobile mitochondria in sciatic nerve axons of CMT2A MFN2 T105M mice. Each point represents a single neuronal axon, from 2 or three mice per time point. WT is normal. P values by ANOVA.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/61119/elife-61119-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) RotaRod latency. (b) Neuroelectrophysiologic CMAP amplitude. Each point is a mouse; green is vehicle (n = 3), blue is MiM111 30 mg/kg IM once daily (n = 3). There were no differences (t-test).
+
 Compared to sciatic nerves of vehicle-treated MFN2 T105M CMT2A mice, MiM111 treatment reduced axon damage (Figure 4a), increased axon diameter (Figure 4b), and increased staining for superior cervical ganglion 10 (SCG10; a marker of neuron regeneration) (Shin et al., 2014; Figure 4—figure supplement 1). These findings suggest that mitofusin activation reversed CMT2A-induced neuronal degeneration.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/61119/elife-61119-fig4-v2.jpg)
+
+**Figure 4.:** (a) Toluidine blue stained sections of mouse mid tibial nerves. Arrows show blue-stained damaged axons in CMT2A mice. Quantitative group data for damaged axons and SCG10-regenerating axons (see Figure 4—figure supplement 1) are on the right. (b) Electron micrographs of mid-tibial nerve axons from CMT2A mouse study groups after 8 weeks of therapy. Note heterogeneity in axon size (top images; left graph) and mitochondrial abnormalities (bottom images, right graph). (c) Wheat germ agglutinin (WGA) labeled sections of tibialis anterior muscle and quantitative myocyte cross sectional area. (d) Confocal micrographs of neuromuscular junctions to show mitochondrial occupancy yellow organelles within red synapses (also see Figure 4—figure supplement 1). Each symbol represents results from one mouse. Data are means ± SD; p values are 1- or 2-way ANOVA.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61119/elife-61119-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Labeling of regenerating neurons with SCG10 (red). (b) Mitochondria in tibialis muscles of CMT2A mice are normal. Mitochondrial area is quantified from group data on the right. (c) Neuromuscular junctional synapses in tibialis muscle of CMT2A MFN2 T105M mice. Acetylcholine receptor (AchR; red) labels terminal neuron synapses (encircled); green is mitochondrial cytochrome C oxidase IV. Quantitative data for panels a and c are in Figure 4a and d, respectively. P values by ANOVA.
 
 Skeletal myocytes of CMT2A mouse tibialis muscle innervated by the sciatic nerve were abnormally small (Figure 4c), reflecting neurogenic muscle atrophy (because the MFN2 T105M transgene is directed by neuron-specific HB9-Cre). In agreement with muscle atrophy being a secondary effect, skeletal myocyte mitochondria of CMT2A mice appeared structurally normal (Figure 4—figure supplement 1) compare to sciatic nerve axon mitochondria in Figures 2d and 4b. Therefore, normalization of tibialis myocyte diameter after mitofusin activation (Figure 4c) indicates restoration of neuromuscular integrity.
 
 Collectively, the above findings provide indirect support for the idea that CMT2A mice suffer from distal neuron dieback that can be reversed by activating mitofusins. Reasoning that decreased neuromuscular junction density in CMT2A mice would constitute direct evidence for dieback, we quantified neuromuscular junctional synapses containing receptors for the neurotransmitter acetylcholine (AchR) in tibialis muscles of CMT2A mice. Compared to normal mice, CMT2A mice had ~50% fewer synaptic junctions/myocyte, which was reversed after mitofusin activator treatment (Figure 4—figure supplement 1). Strikingly, mitochondrial occupancy of vehicle-treated CMT2A neuromuscular synaptic junctions was also reduced by ~half compared to normal mice, and was normalized by MiM111 treatment (Figure 4d). Because mitochondrial transport can play a central role in neuron repair and regeneration (Sheng, 2017), the observation that MiM111 promoted mitochondrial localization within terminal neuromuscular synaptic junctions provided a plausible mechanistic link between mitofusin activation, mitochondrial motility, neuronal regrowth, and reversal of neuromuscular dysfunction in this preclinical CMT2A model.
 
-## Enhanced mitochondrial function in mitofusin-activated CMT2A DRGs leads to accelerated axon growth
+### Enhanced mitochondrial function in mitofusin-activated CMT2A DRGs leads to accelerated axon growth
 
 Reversal of CMT2A-induced distal neuron die back implies neuronal regrowth. Indeed, sensory DRG neurons isolated from CMT2A mice and cultured in the presence of MiM111 (100 nM, 48 hr) exhibited not only enhanced mitochondrial fusion (increased aspect ratio) and transport (greater mitochondrial motility and velocity), but axon outgrowth (length and branching) (Figure 5). Similar effects were seen in CMT2A DRGs treated with Chimera C (100 nM, 48 hr) (Figure 5—figure supplement 1). Both MiM111 and Chimera C provoked mitochondrial redistribution to axonal termini of cultured CMT2A DRGs (Figure 5—figure supplement 1) recapitulating mitochondrial occupation of neuromuscular synapses after MiM111 treatment of CMT2A mice in vivo (see Figure 4d).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/61119/elife-61119-fig5-v2.jpg)
+
+**Figure 5.:** (a) Confocal micrographs of CMT2A mouse DRGs cultured for 48 hr with MiM111 or its vehicle. Note greater neuronal process length and branching in MiM111-treated neuron. Exploded insets (right) show neuronal process termini. Mitochondria express mitoDS Red; neuronal processes stained for β-III tubulin are green. (b) Kymographs of mitochondrial motility in neuronal processes of live DRGs from studies shown in (a). Top panel is raw data. Bottom panels emphasize motile mitochondria with red and blue lines transiting left to right or right to left, respectively. (c-f) Quantitative group data demonstrating effect of MiM111 on CMT2A DRG mitochondrial aspect ratio (c), motility (d, e), neuronal process length and branching (e), and proportion of neuronal process termini containing mitochondria (f).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61119/elife-61119-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) CMT2A mouse DRGs cultured for 48 hr with Chimera C (100 nM) or its vehicle (Me2SO4). Exploded insets show mitochondria expressing mitoDS Red; neuronal processes stained for β-III tubulin are green. Kymographs (below) show mitochondrial motility in live cell studies; quantitative group data for aspect ratio and motility are to the right. (b) Neuronal process length and branching in CMT2A DRG neurons cultured with vehicle or Chimera C. Quantitative group data are to the right. Note greater length and branching of neuronal processes in MiM111-treated neuron. Mitochondria are expressing mitoDS Red. (c). Proportion of neuronal process termini (encircled) containing mitochondria (red) in vehicle- or Chimera C-treated CMT2A DRGs. P values by t-test.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/61119/elife-61119-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Studies were performed as in Figure 5. *P < 0.05 vs. basal (ANOVA). Three independent studies were performed for each endpoint; each symbol represents the mean value for all three biological replicates, each of which is the average of approximately 3 (mitochondrial motility in different neurons), 20 (outgrowth of different cell neuronal processes), or 300 (aspect ratio of individual mitochondria), technical replicates. The increase in mitochondrial motility (red) was rapid, being half-maximal after 2 hr. The increase in neuron outgrowth (green) was significant after 24 hr. Increased mitochondrial aspect ratio (blue), reflecting the morphological consequences of enhanced fusion, was only significant after 48 hr.
+
 Comparing the mitochondrial motility, aspect ratio, and neuron growth responses at different times after mitofusin activation revealed significantly increased mitochondrial trafficking within 2 hr, whereas enhanced axon outgrowth was significant after 24 and 28 hr, and mitochondrial aspect ratio (i.e. fusion) was significant only after 48 hr (Figure 5—figure supplement 2). Given the established role for mitochondrial transport in neuronal repair (Sheng, 2017), this temporal sequence lends credence to the idea that accelerated neuron growth is a consequence of enhanced mitochondrial function and redistribution.
 
-## Mitofusin activation accelerates in vitro CMT2A axon regeneration after axotomy
+### Mitofusin activation accelerates in vitro CMT2A axon regeneration after axotomy
 
 DRG outgrowth measures in vitro regrowth of neuronal extensions that are amputated during the cell isolation trituration procedure. We considered that a more appropriate model of regrowth after dieback in CMT2A would test intact neurons lacking only the distal axons. Because CMT2A mouse neurons grow poorly in tissue culture in the absence of mitofusin activators (vide supra), this was not feasible using DRGs. Therefore, we seeded cortical neurons collected from MFN2 T105M allele mice in chambers separated from empty chambers by linear microchannels. In the absence of Cre-recombinase these ‘normal’ neurons grew axons through the microchannels that branched into the empty chambers (Figure 6a). Adenoviral Cre was then used to activate the CMT2A MFN2 T105M transgene, followed after 48 hr by aspiration amputation of the branched axonal termini (Figure 6b and c). Mitochondrial motility and aspect ratio were measured 1 hr before and after axotomy; axon regrowth was measured 3 days after axotomy. The aspect ratio of mitochondria in the distal linear axons of normal and CMT2A neurons was unaffected either by axotomy or by MiM111 (Figure 6d, left panel). By contrast, and consistent with a previous study in normal neurons (Zhou et al., 2016), mitochondrial motility was reduced by axotomy (Figure 6d middle panels). Mitofusin activation with MiM111 after axotomy restored mitochondrial motility and neuronal outgrowth to pre-axotomy levels. Thus, the link between experimentally activating mitofusins, the subsequent increase in mitochondrial transport, and enhanced neuronal growth/repair was consistent for mouse CMT2A sciatic nerve axons in vivo, cultured CMT2A DRG neuron outgrowth, and cultured CMT2A cortical nerve regrowth after distal axotomy.
 
@@ -105,29 +280,617 @@ A mouse is not a man and human neuroregenerative capacity declines with age (Mat
 
 ## Materials and methods
 
-## Mouse lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene Mus musculus</td>
+      <td>Mfn-2</td>
+      <td>NCBI Gene</td>
+      <td>Gene ID: 170731</td>
+      <td>MFN2 ENSMUSG00000029020</td>
+    </tr>
+    <tr>
+      <td>Gene (Human)</td>
+      <td>MFN-2</td>
+      <td>NCBI Gene</td>
+      <td>Gene ID: 9927</td>
+      <td>MFN2 ENSG00000116688</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Rosa-STOP-mMFN Thr105Met (T105M) mice</td>
+      <td>(C57BL/6 Gt(ROSA) 26 Sortm1 (CAG MFN2*T105M)Dple/)</td>
+      <td>The Jackson Laboratory: 025322</td>
+      <td>C57Bl/6</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent M. musculus</td>
+      <td>HB9-Cre mice</td>
+      <td>(B6.129S1-Mnx1tm4(cre)Tmj/J)</td>
+      <td>The Jackson Laboratory : 006600</td>
+      <td>C57Bl/6</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent M. musculus</td>
+      <td>C57BL/6J mice</td>
+      <td>C57Bl/6</td>
+      <td>The Jackson Laboratory : 000664</td>
+      <td>C57Bl/6</td>
+    </tr>
+    <tr>
+      <td>Mfn2 null M. musculus</td>
+      <td>Mfn2 null MEFs</td>
+      <td>ATCC</td>
+      <td>CRL-2994</td>
+      <td>Murine embryonic fibroblasts</td>
+    </tr>
+    <tr>
+      <td>Mfn1/Mfn2 null M. musculus</td>
+      <td>Mfn1 and Mfn2 double knock out MEFs</td>
+      <td>ATCC</td>
+      <td>CRL-2993</td>
+      <td>Murine embryonic fibroblasts</td>
+    </tr>
+    <tr>
+      <td>Mfn1 null M. musculus</td>
+      <td>Mfn1 null MEFs</td>
+      <td>ATCC</td>
+      <td>CRL-2992</td>
+      <td>Murine embryonic fibroblasts</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Dermal fibroblast (MFN2 T105M)</td>
+      <td>Dr. Robert H. Baloh (Cedars Sinai)</td>
+      <td></td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Dermal fibroblast (MFN2 H361Y)</td>
+      <td>Dr. Robert H. Baloh (Cedars Sinai)</td>
+      <td></td>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Dermal fibroblast (MFN2 R274W)</td>
+      <td>Dr. Barbara Zablocka (Mossakowski Med Res Ctr)</td>
+      <td>PMID:28076385</td>
+      <td>Male</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Dermal fibroblast (MFN2 R364W)</td>
+      <td>Dr. Michael E. Shy (University of Iowa)</td>
+      <td></td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Dermal fibroblast (Normal)</td>
+      <td>NINDS</td>
+      <td>ND34769</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Dermal fibroblast (Normal)</td>
+      <td>NINDS</td>
+      <td>ND36320</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Dermal fibroblast (Normal)</td>
+      <td>NINDS</td>
+      <td>ND29510</td>
+      <td>Female</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Human Adenovirus Type5 (dE1/E3))</td>
+      <td>Adenovirus β-galactosidase</td>
+      <td>Vector Biolabs</td>
+      <td>Cat#: 1080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Human Adenovirus Type5 (dE1/E3))</td>
+      <td>Adenovirus Mito-Ds-Red2</td>
+      <td>Signagen</td>
+      <td>Cat#: 12259</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Human Adenovirus Type5 (dE1/E3))</td>
+      <td>Adenovirus Cre-recombinase</td>
+      <td>Vector Biolabs</td>
+      <td>Cat#: 1794</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>rtTA-N144 (plasmid)</td>
+      <td>Addgene</td>
+      <td>Cat#: 66810</td>
+      <td>Lentiviral construct to transfect and express the plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTight-9-124-BclxL (plasmid)</td>
+      <td>Addgene</td>
+      <td>Cat#: 60857</td>
+      <td>Lentiviral construct to transfect and express the plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>LHX3-N174 and ISL1-N174 (plasmid)</td>
+      <td>PMID:28886366</td>
+      <td></td>
+      <td>Lentiviral construct to transfect and express the plasmid</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mfn-2 (Mouse monoclonal)</td>
+      <td>AbCAM</td>
+      <td>Cat#: ab56889</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-COX-IV (Rabbit polyclonal)</td>
+      <td>AbCAM</td>
+      <td>Cat#: ab16056</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Stathmin-2 (Rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat#: NBP1-49461</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH (Mouse monoclonal)</td>
+      <td>AbCAM</td>
+      <td>Cat#: ab8245</td>
+      <td>(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FSP-1 (Rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat#: NBP1-49461</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MNX1 (Mouse monoclonal)</td>
+      <td>DSHB</td>
+      <td>Cat#: 81.5C10</td>
+      <td>(2 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-tubulin III (Mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat#: 801201</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa-Fluor 488 (Goat anti-mouse)</td>
+      <td>ThermoFisher</td>
+      <td>Cat#: A11029</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa- Fluor 488 (Goat anti-rabbit)</td>
+      <td>ThermoFishe</td>
+      <td>Cat#: A11008</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Goat anti-rabbit IgG)</td>
+      <td>ThermoFisher</td>
+      <td>Cat#: 31460</td>
+      <td>(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa- Fluor 594 (Goat anti rabbit)</td>
+      <td>ThermoFisher</td>
+      <td>Cat#: A32740</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(Peroxidase-conjugated anti-mouse IgG)</td>
+      <td>Cell Signaling</td>
+      <td>Cat#: 7076S</td>
+      <td>(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(α-Bungarotoxin Alexa flour 594)</td>
+      <td>ThermoFisher</td>
+      <td>Cat#: B12423</td>
+      <td>(0.5 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HB9CRE Fw</td>
+      <td>The Jackson Laboratory</td>
+      <td>006600</td>
+      <td>CTAGGCCACAGAATTGAAAGATCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HB9CRE Rv</td>
+      <td>The Jackson Laboratory</td>
+      <td>006600</td>
+      <td>GTAGGTGGAAATTCTAGCATCATCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HB9CRE TG Fw</td>
+      <td>The Jackson Laboratory</td>
+      <td>006600</td>
+      <td>GCGGTCTGGCAGTAAAAACTATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HB9CRE TG Rv</td>
+      <td>The Jackson Laboratory</td>
+      <td>006600</td>
+      <td>GTGAAACAGCATTGCTGTCACTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mfn2 T105M M Fw</td>
+      <td>The Jackson Laboratory</td>
+      <td>025322</td>
+      <td>GACCCCGTTACCACAGAAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mfn2 T105M M Rv</td>
+      <td>The Jackson Laboratory</td>
+      <td>025322</td>
+      <td>AACTTTGTCCCAGAGCATGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mfn2 T105M Wt Fw</td>
+      <td>The Jackson Laboratory</td>
+      <td>025322</td>
+      <td>AAGGGAGCTGCAGTGGAGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Mfn2 T105M Wt Rv</td>
+      <td>The Jackson Laboratory</td>
+      <td>025322</td>
+      <td>CCGAAAATCTGTGGGAAGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MFN2 T105M Fw</td>
+      <td>This paper</td>
+      <td>PCR primers for cell line mutation validation</td>
+      <td>TTGCACTGAATAGGGCTTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MFN2 T105M Rv</td>
+      <td>This paper</td>
+      <td>PCR primers for cell line mutation validation</td>
+      <td>CATTCACCTCCACAGGGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MFN2 R274W Fw</td>
+      <td>This paper</td>
+      <td>PCR primers for cell line mutation validation</td>
+      <td>CGTGGTAGGTGTCTACAAGAAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MFN2 R274W Rv</td>
+      <td>This paper</td>
+      <td>PCR primers for cell line mutation validation</td>
+      <td>CTGGTGAGGGCTGATGAAAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MFN2 H361Y and R364W Fw</td>
+      <td>This paper</td>
+      <td>PCR primers for cell line mutation validation</td>
+      <td>CCTGGCAGTGAAAACCAGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MFN2 H361Y and R364W Rv</td>
+      <td>This paper</td>
+      <td>PCR primers for cell line mutation validation</td>
+      <td>AAGGCGTGTCCTAACTGCC</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trans-MiM111</td>
+      <td>Mitochondria in Motion, Inc</td>
+      <td>Cpd 13b in PMID:32506913</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chimera C</td>
+      <td>Paraza Pharma</td>
+      <td>Cpd 2 in PMID:32506913</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Papain</td>
+      <td>Sigma</td>
+      <td>Cat#: P4762</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Laminin</td>
+      <td>Sigma</td>
+      <td>Cat#: L2020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-d-Lysine</td>
+      <td>Sigma</td>
+      <td>Cat#: P7886</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-ornithine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: P4957</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fibronectin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: F4759</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polybrene</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: H9268</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Doxycycline</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#: D9891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>G418/Geneticin</td>
+      <td>Invitrogen</td>
+      <td>Cat#: 10131-035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Retinoic Acid</td>
+      <td>Sigma</td>
+      <td>Cat#: R2625</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BDNF, NT-3, CNTF, GDNF</td>
+      <td>Peprotech</td>
+      <td>Cat#: 450-02, Cat#: 450-03, Cat#: 450-13, Cat#: 450-10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dibutyryl cAMP</td>
+      <td>Sigma</td>
+      <td>Cat#: D0627</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Valproic acid</td>
+      <td>Sigma</td>
+      <td>Cat#: 676380</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin</td>
+      <td>Invitrogen</td>
+      <td>Cat#: A11138-03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase</td>
+      <td>Worthington Biochemical</td>
+      <td>Cat#: 41J12861</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(2-Hydroxypropyl)-β-cyclodextrin</td>
+      <td>Sigma</td>
+      <td>Cat#: 332607</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbonyl cyanide-p-trifluoromethoxyphenyl hydrazone</td>
+      <td>Sigma</td>
+      <td>Cat#: C2759</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>B27 supplement</td>
+      <td>Gibco</td>
+      <td>Cat#: 17504-044</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insulin-transferrin-sodium selenite</td>
+      <td>Sigma</td>
+      <td>Cat#: 1884</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glucose</td>
+      <td>Sigma</td>
+      <td>Cat#: G5767</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-glutamine</td>
+      <td>Gibco</td>
+      <td>Cat#: 25030-149</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Goat serum</td>
+      <td>Jackson Immunoresearch</td>
+      <td>Cat#: 005-000121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glutaraldehyde</td>
+      <td>Electron Microscopy Science</td>
+      <td>Cat#: 16216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoTracker Green</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: M7514</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Calcein AM</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: C3100MP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hoechst</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: H3570</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoTracker Orange</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: M7510</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetramethylrhodamine ethyl ester</td>
+      <td>Thermo Fisher</td>
+      <td>Cat#: T-669</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>C. A. Schneider</td>
+      <td>https://imagej.net/Sholl_Analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Viasys Healthcare Nicolet Biomedical instrument with Viking Quest version 11.2 software</td>
+      <td>Middleton</td>
+      <td>Cat#: OL060954</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gallios instrument with FlowJo 10 software</td>
+      <td>Beckman Coulter</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RotaRod</td>
+      <td>Ugo Basile</td>
+      <td>Cat#: 47650</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>XonaChips</td>
+      <td>Xona Microfluidics</td>
+      <td>Cat#: XC450</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mouse lines
 
 Rosa-STOP-mMFN Thr105Met (T105M) mice (C57BL/6 Gt(ROSA)26 Sortm1 (CAG-MFN2*T105M)Dple/J) from The Jackson Laboratory (Bar Harbor, Maine, USA; Stock No: 025322, RRID:MGI:_JAX:025322) were crossed to HB9-Cre mice (B6.129S1-Mnx1tm4(cre)Tmj/J) from The Jackson Laboratory (Stock No: 006600, (RRID:MGI:_JAX:006600)) to generate neuron-targeted MFN2 T105M mice. HB9 is a motoneuron-specific promoter (Yang et al., 2001), but JAX data indicates that this HB9-Cre line also drives expression in some sensory DRG neurons (https://images.jax.org/webclient/img_detail/20564/). All experimental procedures were approved by Washington University in St. Louis School of Medicine Animal Studies Committee; IACUC protocol number 19–0910, Exp:12/16/2022.
 
-## Cell lines
+### Cell lines
 
 Normal mouse embryonic fibroblasts (MEFs) were prepared by enzymatic dissociation from embryonic day E.13.5–14.5 C57BL/6J mice (The Jackson Laboratory Cat:# 000664, RRID:IMSR_JAX:000664). Mfn1 null and Mfn2 null Mfn1/Mfn2 double null MEFs fibroblasts were purchased from American Type Culture Collection (ATCC Manassas, Virginia, USA) (CRL-2992, RRID:CVCL_L691 and CRL-2994, RRID:CVCL_L692 and CRL-2993, RRID:CVCL_L693 respectively). Human fibroblast: Dermal fibroblast (MFN2 T105M) and Dermal fibroblast (MFN2 H361Y) from Dr. Robert H. Baloh (Cedars Sinai), Dermal fibroblast (MFN2 R274W) from Dr. Barbara Zablocka (Mossakowski Med Res Ctr), Dermal fibroblast (MFN2 R364W) from Dr. Michael E. Shy (University of Iowa). Dermal fibroblast (Normal) from NINDS respectively: ND34769, (RRID:CVCL_EZ04, ND36320, RRID:CVCL_EZ16 and ND29510, RRID:CVCL_Y813).
 
-## Viral vectors
+### Viral vectors
 
 Adenovirus expressing human FLAG-hMFN2 -T105M was prepared at Vector Biolabs (Malvern, PA, USA). Adenoviri expressing β-galactosidase (Ad-CMV-β-Gal; #1080), and Ad-Cre (#1794) were purchased from Vector Biolabs. Adenovirus for Mito-Ds-Red2 came from Signagen (Cat:#SL1007744). Lentivirus packaging vectors: psPAX2 (Addgene, Cat#: 12260) pMD2.G (Addgene, Cat#: 12259), Lentiviral vectors with recombinant DNA: rtTA-N144 (Addgene, Cat#: 66810) pTight-9–124-BclxL (Addgene, Cat#: 60857), human LHX3-N174 and human ISL1-N174 were packaged and used as described (Abernathy et al., 2017).
 
-## Antibodies
+### Antibodies
 
 Mouse monoclonal anti-mitofusin 2 (Cat # ab56889 - 1:1000, RRID:AB_2142629), anti-COX-IV (Cat #ab16056 - 1:1000, RRID:AB_443304) and anti-GAPDH (Cat #ab8245 - 1:1000, RRID:AB_2107448) were from AbCAM (Cambridge, MA, USA). Rabbit polyclonal anti-Stathmin-2/Superior Cervical Ganglion 10 (SCGN10; Cat # NBP1-4946, RRID:AB_10011569) was from Novus Biologicals (Littleton, CO, USA).Rabbit polyclonal FSP-1 was from Sigma Millipore (Cat # 07–2274, RRID:AB_10807552). Anti-mouse monoclonal -MNX1was from DSHB (1:10, Cat# 81.5C10, RRID:AB_2145209). Mouse monoclonal anti-β -tubulin III (Cat # 801201- 1:500, RRID:AB_2313773) was from Biolegend (San Diego, CA, USA). Peroxidase-conjugated anti-mouse IgG (Cat #7076S - 1:1000, RRID:AB_330924) was from Cell Signaling (Danvers, MA, USA). Goat anti-rabbit IgG (Spicier reactivity Goat, Host/Isotype Rabbit/IgG; Cat #31460, RRID:AB_228341) and Alexa-Fluor 488 anti-mouse ThermoFisher (Waltham, MA, USA Cat #A11008, RRID:AB_143165 ). α-Bugarotoxin Alexa flour 594 was from ThermoFisher, Waltham, MA, USA Cat:# B12423.
 
-## PCR genotyping of MFN2 mutations in CMT2A patient fibroblasts
+### PCR genotyping of MFN2 mutations in CMT2A patient fibroblasts
 
 DNA was extracted from 5 × 106 primary human fibroblasts using the DNeasy blood and tissue kit (Qiagen, Cat#: 69506) according to manufacturer’s protocol. PCR used Taq Plus Master Mix 2X (Cat#: BETAQR-L, Bulls eye). 50 ng of genomic DNA template, and the following primers:
 
 PCR products were purified using PureLink Quick Gel Extraction Kit (Cat#: K21000-12, Invitrogen). Sanger sequencing of PCR products was performed at GENEWIZ.
 
-## Cultured cells
+### Cultured cells
 
 Direct reprogramming of human motor neurons from patient fibroblasts used the procedure as described (Abernathy et al., 2017). Reprogramming cocktail consisted of 1 ml concentrated lentivirus containing the reverse tetracycline-controlled transactivator (rtTA; Addgene, Cat# 66810), 1 ml virus containing pT-BclXL-9/9*−124, 125 µl virus containing motor neuron transcription factor ISL1, and 125 µl virus containing motor neuron transcription factor LHX3 with polybrene (8 μg/ml; Sigma-Aldrich, Cat# H9268). Human skin fibroblasts of low passage number (P4-P7) were spinfected at 37°C for 30 min at 1,000 × G. Doxycycline (Dox, 1 µg/ml; Sigma Aldrich, Cat# D9891) and antibiotics for respective vectors (Puromycin, 3 µg/ml; Invitrogen, Cat# A11138-03; Geneticin, 400 µg/ml; Invitrogen, Cat# 10131–035) were added to culture medium for 4 days after viral transduction. On day 5 cells were re-plated on poly-ornithine/laminin/fibronectin (Sigma, Cat# P4957, # L2020, # F4759) coated 18 mm glass coverslips and on the following day changed to neuronal medium supplemented with Dox (1 µg/ml added every other day), valproic acid (1 mM; Sigma, Cat# 676380), dibutyryl cAMP (200 µM; Sigma, Cat# D0627), BDNF, NT-3, CNTF, GDNF (all 10 ng/ml, Peprotech, Cat# 450–02, #450–03, #450–13, #450–10), retinoic Acid (1 µM; Sigma, Cat# R2625) and antibiotics. Neuronal medium was refreshed by replacing half every 4 days. Antibiotics were discontinued on day 14; Dox was discontinued on day 30. Cells underwent studies beginning on day 35. Motor neurons were identified after formalin fixation by labeling with mouse anti-MNX1 (1:10; DSHB, Cat# 81.5C10) and mouse anti-TUBB3B (1:2000; Biolegend, Cat#PRB-435P-100). Fibroblasts were identified by labeling with rabbit anti FSP-1 (1:200; Sigma, Cat: # 07–2274).
 
@@ -135,7 +898,7 @@ Adult mouse dorsal root ganglion (DRG) neurons were prepared from ~8-week-old H
 
 Mouse cortical neurons were isolated from individual embryonic day E.18.5 MFN2 Thr105Met flox-stop transgenic mice by papain digestion and mechanical dispersion using a published procedure (Sobieski et al., 2015). Briefly, mouse brain cortices were isolated under a dissecting microscope and sliced into 0.5–1 mm thick sections in Leibovitz’s L-15 Medium (Gibco Cat:#11415–064) containing BSA (0.23 mg/ml, Sigma Cat:#A7030). Papain (1 mg/ml, Sigma Cat #P4762) was added and the tissue digested for 20 min at 37°C. The papain solution was replaced and micropipettes used to triturate the solution until no more tissue was visible. Cortical neurons were plated in microfluidic neuron XonaChip chambers as described below.
 
-## Imaging
+### Imaging
 
 Static confocal imaging of cultured neurons used triple-stained with MitoTracker Green (200 nM; Invitrogen, Thermo Fisher Scientific Cat:# M7514) to visualize mitochondria, tetramethylrhodamine ethyl ester (TMRE, 200 nM, Invitrogen Thermo Fisher Scientific Cat:# T-669) that labels mitochondria with normal polarization of the mitochondrial inner membrane, and Hoechst (10 μg/ml; Invitrogen, Thermo Fisher Scientific Cat:# H3570) that stains nuclei blue as described (Franco et al., 2016). Static live cell images were acquired on a Nikon Ti Confocal microscope using either a 60 × 1.3 NA oil-immersion objective or 10 × 0.3 NA dry objective, in Krebs-Henseleit buffer (138 NaCl, 3.7 nM KCL, 1.2 n M KH2PO4, 15 nM glucose, 20 nM HEPES pH: 7.2–7.5, and 1 mM CaCl2): laser excitation was 488 nm with emission at 510 nm for MitoTracker Green and Ad-Mito GFP, 549 nm with emission at 590 nm for TMRE, and 306 nm with emission 405 nm for Hoecsht and DAPI.
 
@@ -147,17 +910,17 @@ In vitro microfluidic studies of axon growth used primary cortical neurons isola
 
 Immunoblot analysis was performed on mouse sciatic nerve proteins size-separated on 10% SDS-PAGE gels (Biorad Cat# 456–1036) and transferred to 0.45 µM Polyvinylidene fluoride (PVDF) membranes (GE- Amersham, Freiburg, Germany Cat# 10600023). Membranes were blocked with 5% non-fat milk for 30 min and incubated with primary antibody overnight at 4°C. Peroxidase-conjugated secondary antibodies and Chemiluminescence Substrate (Thermo Scientific #32132) were used for signal detection. Quantification of immunoreactive proteins was performed on a LI-COR Odyssey infrared detection system (Lincoln, NE, USA, version 1.0.17).
 
-## Flow cytometric analysis of mitochondrial electrochemical potential
+### Flow cytometric analysis of mitochondrial electrochemical potential
 
 Cultured neurons were stained in situ with TMRE (200 nM, Invitrogen Thermo Fisher Scientific Cat:# T-669) for 30 min at 37°C in 5% CO2–95% air, washed twice in PBS, and released from culture substrates with 0.05% Trypsin-EDTA (Gibco, cat:# 1995647). After centrifugation, the DRG pellets were re-suspended in 200 µl of FACS buffer (PBS 1X, BSA 1X, 2 Mm EDTA). Flow cytometry of TMRE fluorescence was performed on a Gallios instrument (Beckman Coulter) and analyzed using FlowJo10 software. ~3500 events were acquired for each sample. Data are presented as Mean Fluorescence Intensity per experiment. In some studies, carbonyl cyanide-p-trifluoromethoxyphenylhydrazone (FCCP, 10 μM for 1 hr) (Sigma, Cat #C2759) was added as a positive control for mitochondrial depolarization.
 
-## Evaluation of neuromuscular phenotypes in CMT2A mice
+### Evaluation of neuromuscular phenotypes in CMT2A mice
 
 Rotarod studies were performed on mice initially acclimated to the RotaRod (Ugo Basile, Gemonio, VA, Italy;# 47650) at a speed of 5 r.p.m. CMT2A mice underwent RotaRod evaluations weekly from 10 to 50 weeks for disease development, and 4 and 8 weeks after mitofusin activator therapy. The acceleration protocol increased from 5 to 40 r.p.m over 120 s and then maintained 40 r.p.m. indefinitely. Each mouse underwent five separate trials per testing event with 5 min rest between trials. Latency (time to falling off) was averaged for all trials.
 
 Neuroelectrophysiologic recordings of tibialis/gastrocnemius compound muscle action potentials (CMAP) were performed with a Viasys Healthcare Nicolet Biomedical instrument (Middleton, WI, USA Cat:# OL060954) running Viking Quest version 11.2 software by an operator (A.F.) blinded to genotype and treatment group. Mice were anesthetized with isofluorane (4–5% induction, 1.5% maintenance), shaved, and the proximal sciatic nerves stimulated using a needle electrode (Natus, Mundelein, IL, USA Cat:# F-E2-48) with 3.9 mV pulses of 0.002 ms duration. Ring electrodes (Natus, Mundelein, IL, USA Cat:# 291965) were positioned at the mid forelimb at the belly of the tibialis anterior and gastrocnemius muscles to record CMAP. Optimal stimulating electrode position was determined as that giving the greatest CMAP amplitude; 3–4 independent events were recorded and averaged.
 
-## Evaluation of CMT2A mouse responses to MiM111
+### Evaluation of CMT2A mouse responses to MiM111
 
 Twelve 50-week-old CMT2A mice (HB9-Cre + MFN2 Thr105Met flox-stop) and six littermate controls were randomized and blinded to daily intramuscular treatment with MiM111 or vehicle for 8 weeks: under sterile conditions18.75 mg/ml (64.8 mM) MIM 111 was dissolved in 10% Me2SO/90% (2-hydroxypropyl)-β-cyclodextrin (HP-BCD; Sigma, Cat: #332607), sterile-filtered (0.22 µm PVDF, #SLGV033RS, Millipore, Cork, Ireland), and drug- or vehicle-containing syringes were assigned to individual mice by XD using a randomization table. Daily intramuscular injections (biceps femoris muscle, alternating left and right every other day) were performed by AF, who was blinded to both mouse genotype and drug treatment group. Rotarod and neurophysiological testing were performed before, and 4 and 8 weeks after initiation of therapy. Mice were terminated by anesthesia overdose after 8 weeks for tissue studies. Sciatic and mid tibial nerves were dissected from both legs of all mice. For histology and immunohistology the left leg nerves or muscles were fixed in PFA for 2 hr, transferred to 30% sucrose/PBS overnight at 4°C, and embedded in optimal cutting temperature (OCT, Tissue-TEK Cat: 4583) medium for storage at −80°C. Immunostaining with anti-Superior Cervical Ganglion 10 (SCG10) or wheat germ agglutinin labeling (WGA, Cat:#W834, Invitrogen) was performed on 10 μm cryostat sections briefly (5 min) brought to room temperature and then re-cooled to −20°C for 30 min. RGB rightness of the representative images was increased uniformly for presentation purposes.
 
@@ -165,7 +928,7 @@ Mitochondrial occupancy in neuromuscular synaptic junctions was assessed in 10 �
 
 Transmission electron microscopy and toluidine blue staining used standard techniques (Zhou et al., 2019).
 
-## Data presentation and statistical analyses
+### Data presentation and statistical analyses
 
 Data are reported as means ± SD. Two-group comparisons used Student’s t-test; multiple group comparisons used one-way ANOVA, and time-course by treatment group or genotype by treatment group comparisons used two-way ANOVA, with Tukey’s post-hoc test for individual statistical comparisons. p<0.05 was considered significant.
 

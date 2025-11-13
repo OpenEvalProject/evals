@@ -8,13 +8,13 @@
 
 ### Affiliations
 
-1. https://ror.org/00hj54h04 Department of Neuroscience, The University of Texas at Austin Austin United States
+1. Department of Neuroscience, The University of Texas at Austin Austin United States ([ROR:00hj54h04](https://ror.org/00hj54h04))
 
 † Corresponding author
 
 ## Abstract
 
-KCa2.1–3 Ca 2+ -activated K + -channels (SK) require calmodulin to gate in response to cellular Ca 2+ . A model for SK gating proposes that the N-terminal domain (N-lobe) of calmodulin is required for activation, but an immobile C-terminal domain (C-lobe) has constitutive, Ca 2+ -independent binding. Although structures support a domain-driven hypothesis of SK gate activation by calmodulin, only a partial understanding is possible without measuring both channel activity and protein binding. We measured SK2 (KCa2.2) activity using inside-out patch recordings. Currents from calmodulin-disrupted SK2 channels can be restored with exogenously applied calmodulin. We find that SK2 activity only approaches full activation with full-length calmodulin with both an N- and a C-lobe. We measured calmodulin binding to a C-terminal SK peptide (SKp) using both composition-gradient multi-angle light-scattering and tryptophan emission spectra. Isolated lobes bind to SKp with high affinity, but isolated lobes do not rescue SK2 activity. Consistent with earlier models, N-lobe binding to SKp is stronger in Ca 2+ , and C-lobe-binding affinity is strong independent of Ca 2+ . However, a native tryptophan in SKp is sensitive to Ca 2+ binding to both the N- and C-lobes of calmodulin at Ca 2+ concentrations that activate SK2, demonstrating that the C-lobe interaction with SKp changes with Ca 2+ . Our peptide-binding data and electrophysiology show that SK gating models need deeper scrutiny. We suggest that the Ca 2+ -dependent associations of both lobes of calmodulin to SKp are crucial events during gating. Additional investigations are necessary to complete a mechanistic gating model consistent with binding, physiology, and structure.
+KCa2.1–3 Ca2+-activated K+-channels (SK) require calmodulin to gate in response to cellular Ca2+. A model for SK gating proposes that the N-terminal domain (N-lobe) of calmodulin is required for activation, but an immobile C-terminal domain (C-lobe) has constitutive, Ca2+-independent binding. Although structures support a domain-driven hypothesis of SK gate activation by calmodulin, only a partial understanding is possible without measuring both channel activity and protein binding. We measured SK2 (KCa2.2) activity using inside-out patch recordings. Currents from calmodulin-disrupted SK2 channels can be restored with exogenously applied calmodulin. We find that SK2 activity only approaches full activation with full-length calmodulin with both an N- and a C-lobe. We measured calmodulin binding to a C-terminal SK peptide (SKp) using both composition-gradient multi-angle light-scattering and tryptophan emission spectra. Isolated lobes bind to SKp with high affinity, but isolated lobes do not rescue SK2 activity. Consistent with earlier models, N-lobe binding to SKp is stronger in Ca2+, and C-lobe-binding affinity is strong independent of Ca2+. However, a native tryptophan in SKp is sensitive to Ca2+ binding to both the N- and C-lobes of calmodulin at Ca2+ concentrations that activate SK2, demonstrating that the C-lobe interaction with SKp changes with Ca2+. Our peptide-binding data and electrophysiology show that SK gating models need deeper scrutiny. We suggest that the Ca2+-dependent associations of both lobes of calmodulin to SKp are crucial events during gating. Additional investigations are necessary to complete a mechanistic gating model consistent with binding, physiology, and structure.
 
 ## Introduction
 
@@ -22,7 +22,7 @@ SK channels modulate cell membrane excitability and help to maintain cytosolic C
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/81303/elife-81303-fig1-v1.jpg)
 
-**Figure 1.:** 2+ sensor.(A) Cartoon representation of the SK4 K+ ion channel shown as cylindrical helices and molecular surface depictions of CaM (pdb 6CNN). For clarity, only two of four subunits and CaMs are shown. Subunit 1 is yellow and subunit 3 is green. The N-lobe surface of CaM is vermillion, and the C-lobe surface of CaM is blue. Transmembrane helices are shown as S1–S6, and SK C-domain helices are shown as HA–HC. The peptide used in the binding studies, SKp, includes HA, HB, and part of HC. Diagonal subunits of SK4 bind a CaM in EM structure. Intracellular helix 4–5 A between S4 and S5 of transmembrane segments bind in a pocket of the N-lobe of CaM. C-domain helices HA and HB of the cross-subunit bind the C-lobe of CaM. (B) Bottom views of SK4 showing all four subunits showing CaMs bound, left side, or with CaM models removed, right side. The colors are the same as in panel A. The subunits that are not depicted in A are gray. On the right side, the SK sites that bind CaM are colored the same as the CaM lobes they contact. Panels (C–F) demonstrate the lobes of CaM can reorient to form diverse conformation states. The lobes of CaM can when bound to SK4 (pdb 6CNN) form a W-shape in C, when not bound to protein (pdb 1CLL) form an S-shape in D, when bound to an SK2 peptide (pdb 1G4Y) form a C-shape in E, or when bound to an MLCK peptide (pdb 1CDL) form an O-shape in F. (G) The N-sensor hypothesis of SK activation by CaM claims the N-lobe of CaM to be the Ca2+ sensor. The N-lobe binds a Ca2+-dependent site when Ca2+ binds to it. The C-lobe remains anchored to a site with no local change. In the NC-sensor hypothesis, both lobes of CaM are functional Ca2+ sensors. At trace Ca2+, the C-lobe dominates the interaction. At high Ca2+, a different binding mode is revealed that binds both Ca2+-bound lobes. The binding sites for each lobe of CaM need not be on the same subunit and the depiction is meant to emphasize that SK responds to Ca2+ binding to both lobes of CaM.
+**Figure 1.:** (A) Cartoon representation of the SK4 K+ ion channel shown as cylindrical helices and molecular surface depictions of CaM (pdb 6CNN). For clarity, only two of four subunits and CaMs are shown. Subunit 1 is yellow and subunit 3 is green. The N-lobe surface of CaM is vermillion, and the C-lobe surface of CaM is blue. Transmembrane helices are shown as S1–S6, and SK C-domain helices are shown as HA–HC. The peptide used in the binding studies, SKp, includes HA, HB, and part of HC. Diagonal subunits of SK4 bind a CaM in EM structure. Intracellular helix 4–5 A between S4 and S5 of transmembrane segments bind in a pocket of the N-lobe of CaM. C-domain helices HA and HB of the cross-subunit bind the C-lobe of CaM. (B) Bottom views of SK4 showing all four subunits showing CaMs bound, left side, or with CaM models removed, right side. The colors are the same as in panel A. The subunits that are not depicted in A are gray. On the right side, the SK sites that bind CaM are colored the same as the CaM lobes they contact. Panels (C–F) demonstrate the lobes of CaM can reorient to form diverse conformation states. The lobes of CaM can when bound to SK4 (pdb 6CNN) form a W-shape in C, when not bound to protein (pdb 1CLL) form an S-shape in D, when bound to an SK2 peptide (pdb 1G4Y) form a C-shape in E, or when bound to an MLCK peptide (pdb 1CDL) form an O-shape in F. (G) The N-sensor hypothesis of SK activation by CaM claims the N-lobe of CaM to be the Ca2+ sensor. The N-lobe binds a Ca2+-dependent site when Ca2+ binds to it. The C-lobe remains anchored to a site with no local change. In the NC-sensor hypothesis, both lobes of CaM are functional Ca2+ sensors. At trace Ca2+, the C-lobe dominates the interaction. At high Ca2+, a different binding mode is revealed that binds both Ca2+-bound lobes. The binding sites for each lobe of CaM need not be on the same subunit and the depiction is meant to emphasize that SK responds to Ca2+ binding to both lobes of CaM.
 
 Calmodulin (CaM) directs the Ca2+ response in virtually all eukaryotic cells. It binds hundreds of targets that include ion channels. Different properties from each of its four unique Ca2+-binding sites are highly conserved (Halling et al., 2016) leading to dynamic ranges of Ca2+ sensitivity that can vary depending on which target CaM is bound to Black et al., 2005; Newman et al., 2008; Persechini et al., 2000; Westerlund and Delemotte, 2018. The four Ca2+ sites are arranged into two pairs, each pair comprising a domain or ‘lobe’ of CaM. The two globular lobes form a ‘dumbbell’ like appearance (Babu et al., 1985; Figure 1D). The two Ca2+ sites within each lobe may tune each lobe to respond differently to Ca2+ stimuli (Liang et al., 2003).
 
@@ -32,7 +32,7 @@ Certain properties must hold to validate the N-sensor hypothesis for SK: (1) The
 
 Although CaM modulation of SK has been studied for decades, there are gaps in our fundamental understanding that still need to be worked out. Transduction of Ca2+ binding to channel gating is a dynamic, multistep process. It includes Ca2+ binding to CaM, CaM binding to SK, and the intrinsic motions of SK through different gating states.
 
-## SK function can be studied by exchanging WT-CaM with mutant CaM
+### SK function can be studied by exchanging WT-CaM with mutant CaM
 
 WT-CaM has a high affinity for SK2 at both high and trace Ca2+ (Xia et al., 1998). In a heterologous system, WT-CaM is always present, so we developed a method that allowed us to exchange WT-CaM for a mutant CaM (Li et al., 2009; Figure 2A). At 10 µM Ca2+, SK2 approaches maximal open probability in the presence of WT-CaM. To study how different CaM constructs can restore SK2 currents, we first coexpressed the SK channel with a mutant CaM (E1Q) that has a glutamate instead of a glutamine at the conserved position 12 in the N-lobe EF hand 1, which is residue 31 in the protein sequence. This mutation leads to only one functional EF hand in the N-lobe (Maune et al., 1992). We demonstrated (Li et al., 2009) that coexpression of E1Q with SK2 in Xenopus laevis oocytes leads to a rapid rundown of SK2 current. Current rundown can be recovered permanently upon application of exogenous WT-CaM, that is SK2 current no longer runs down once WT-CaM associates with the channel. We assume that exogenous CaM binds to empty CaM sites on SK from E1Q dissociation, or alternatively E1Q leaves the C-lobe bound and that exogenous CaM can displace the mutant. These findings gave us a tool to test whether SK channel activity could be recovered by various non-WT-CaMs.
 
@@ -40,7 +40,7 @@ WT-CaM has a high affinity for SK2 at both high and trace Ca2+ (Xia et al., 1998
 
 **Figure 2.:** (A) Cartoon depicts patch excision at time zero (a) and moving an electrode into the flow path from a fast solution exchanger (b–d). For simplicity, only three of eight solution positions are depicted. The illustration in (A) best describes the conditions for the experiment in panel (D). The scale bars in B–D indicate 0.13 nA and 50 s for horizontal and vertical lines, respectively. Average current level at −60 mV measured every 3 s from a patch excised from HEK 293 cells transfected with rSK2 only in (B), cotransfected with excess WT-CaM in (C), or cotransfected with excess mutant CaM (E1Q) in (D). Note that in (B) rSK2 contacted endogenous CaM, and that in both (C) and (D) WT- and mutant CaM are massively overexpressed relative to endogenous CaM. Traces show rSK2 current before (black) and after (blue) application of exogenous WT-CaM protein. Time point labels in (B–D) are the same as in (A): a. patch excision, b. movement of electrode to the Ca2+ solution-exchange stream, c. first application of EGTA (Ethylene glycol-bis(β-aminoethyl ether)-N,N,N′,N′-tetraacetic acid tetrasodium salt) to find basal patch current, d. timepoint at which purified, recombinant WT-CaM applied shown in blue trace, e. timepoint at which fractional recovery is measured. WT-CaM is indicated by a dumbbell with an N- and a C-lobe. E1Q is depicted as a dumbbell with an ‘x’ in the upper lobe to indicate where Ca2+ binding is disrupted.
 
-## Binding studies provide information on a Ca2+ dependence of interactions
+### Binding studies provide information on a Ca2+ dependence of interactions
 
 SK2 gating requires CaM to bind its C-terminus (Schumacher et al., 2001; Xia et al., 1998). Solution binding studies can be performed on protein domains of SK that bind CaM. A peptide of SK2 that comprises the CaM-binding domain is referred to as SKp (residues 396–487 of rat KCa2.2) has been used in multiple binding and structure studies (Halling et al., 2014; Nam et al., 2017; Schumacher et al., 2001; Zhang et al., 2012a; Zhang et al., 2012b; Zhang et al., 2013). We used multi-angle light scattering to show that full-length WT-CaM has unique properties with SKp that isolated, separated, or duplicated lobes of CaM cannot reproduce.
 
@@ -50,17 +50,84 @@ We use both electrophysiology and peptide-binding data to show some properties o
 
 ## Results
 
-## WT-CaM can recover SK channel activity in HEK293 cells
+### WT-CaM can recover SK channel activity in HEK293 cells
 
 We wanted to explore what components of mammalian wild-type calmodulin (WT-CaM) are necessary for SK channel activation. In control experiments, patches excised from cells that were transfected with either SK2 alone or both SK2 and WT-CaM had minimal increase in SK current in 10 µM Ca2+ when exogenous WT-CaM was applied for 297 ± 6 or 278 ± 41 s, respectively (SK alone, 21 ± 14%; n = 4; SK + WT-CaM 32 ± 13%; n = 3) (Figure 2B, C). Since adding exogenous CaM does not substantially increase current, all available SK channels in the excised patch are likely fully saturated with WT-CaM.
 
 We conducted electrophysiological experiments to determine if non-wild-type CaMs could support SK channel activation at saturating (10 µM) calcium. Because our expression system currently is in HEK293 cells and the results from Li et al., 2009 were produced from oocytes, we first validated the same approach in HEK293 cells. As expected, patches excised from cells that were cotransfected with SK and E1Q had an average of a ~sixfold increase in current level when exogenous 20 µM WT-CaM was applied for 300 s (n = 3) (Table 1, Figure 2D).
 
+**Table 1.**
+ Quantification of effects exogenous CaM protein has on SK current recovery.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>CaM construct</th>
+      <th>n</th>
+      <th>Fraction of recovered current (median)</th>
+      <th>Fraction of recovered current (mean)</th>
+      <th>Standard deviation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT</td>
+      <td>25</td>
+      <td>.95</td>
+      <td>.86</td>
+      <td>.21</td>
+    </tr>
+    <tr>
+      <td>CaM (E34Q)</td>
+      <td>4</td>
+      <td>.54</td>
+      <td>.50</td>
+      <td>.16</td>
+    </tr>
+    <tr>
+      <td>N-CaM</td>
+      <td>4</td>
+      <td>.02</td>
+      <td>.05</td>
+      <td>.09</td>
+    </tr>
+    <tr>
+      <td>C-CaM</td>
+      <td>4</td>
+      <td>.007</td>
+      <td>.03</td>
+      <td>.08</td>
+    </tr>
+    <tr>
+      <td>N-CaM + C-CaM</td>
+      <td>5</td>
+      <td>.05</td>
+      <td>.07</td>
+      <td>.06</td>
+    </tr>
+    <tr>
+      <td>Double N-lobe</td>
+      <td>4</td>
+      <td>.09</td>
+      <td>.08</td>
+      <td>.04</td>
+    </tr>
+    <tr>
+      <td>Double C-lobe</td>
+      <td>4</td>
+      <td>.21</td>
+      <td>.19</td>
+      <td>.12</td>
+    </tr>
+  </tbody>
+</table>
+
 Like oocytes, HEK293 cells produce endogenous CaM that transfected E1Q protein must outcompete to produce the observed current rundown. If SK2 binds E1Q with lower affinity than WT-CaM, one explanation is that the exogenously applied WT-CaM binds to sites that were vacated by E1Q when the patch was excised. In the absence of E1Q, endogenous WT-CaM is sufficient to form functional units with SK2.
 
 Although we did not quantify the extent of SK channel run down after patch excision, like what was done in oocytes, we are confident that as in oocytes the increase in SK current with the application of exogenous WT-CaM was due to the recovery of SK channel activity that had been lost by the overexpression of E1Q.
 
-## SKp binds WT-CaM with different conformations at low and at saturating Ca2+
+### SKp binds WT-CaM with different conformations at low and at saturating Ca2+
 
 The C-terminus of SK is required for CaM binding. We use a peptide to represent this site (SKp). Complex formation between SKp and CaM constructs in solution was measured using composition-gradient multi-angle light scattering (CG-MALS). CG-MALS measures the weight average molar mass of particles in solution as a function of molar ratio of the molecules of interest (Attri and Minton, 2005). Light-scattering signals are directly converted into a weight average molar mass if protein concentrations and instrument parameters are precisely known (Wyatt, 1993), thus quantifying higher-order stoichiometries is a designed capability of this approach. Our prior work shows that CaM and SKp form different stoichiometries that depend on the molar ratio concentrations of CaM to SKp in aqueous solution (Halling et al., 2014). In a ‘cross-over’ experiment, the sample applied to the flow cell in the light chamber varies using a series of injections to step from high molar concentrations of SKp relative to CaM crossing over to high molar ratios of CaM relative to SKp. Complex formation is measured at each step of varying protein ratios, thus capturing a wide range of possible stoichiometries in a single experiment. For simplicity, we refer to the stoichiometries as follows: (1) When the molar concentration of SKp exceeds WT-CaM, a complex with 2 SKp and 1 CaM (2SKp/1CaM) forms, which we call ‘P-C-P’. (2) At equimolar concentrations of SKp and WT-CaM it forms a 1SKp/1CaM complex, which we call ‘P-C’. (3) When WT-CaM molar concentrations exceed SKp, 1 SKp and 2 WT-CaMs (1SKp/2CaM) form a complex we call ‘C-P-C’.
 
@@ -72,9 +139,143 @@ SKp has a molar mass of 11.1 kDa. We repeated SKp-binding measurements with WT-C
 
 Fitting the data to a model provides ranges on macroscopic association constants. Since these data are weight averages, the C-P-C peak is smaller because it forms with weaker affinity than the P-C-P complex, with a log KA of 16.0 and 17.0 (p < 0.01), respectively (Table 2). We note one difference from our previous results (Halling et al., 2014), fitting for incompetent fraction did not provide substantial improvements to our fits, so our data this time were fit with simpler models and with fewer parameters. Eliminating the incompetent fraction allowed us to use the minimum number of variables to avoid parameter compensation that could lead to non-unique solutions for association constants.
 
+**Table 2.**
+ Fitted association constants, KA, from composition-gradient multi-angle light scattering (CG-MALS), shown as ‘mean log KA (standard error) n’, where n = number of trials.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">SKp + CaM construct</th>
+      <th colspan="2">1SKp/1CaM(P-C)</th>
+      <th></th>
+      <th colspan="2">2SKp/1CaM(P-C-P)</th>
+      <th></th>
+      <th colspan="2">1SKp/2CaM(C-P-C)</th>
+      <th></th>
+      <th colspan="2">2SKp/2CaM(2x P-C)</th>
+    </tr>
+    <tr>
+      <th>−Ca2+</th>
+      <th>+Ca2+</th>
+      <th></th>
+      <th>−Ca2+</th>
+      <th>+Ca2+</th>
+      <th></th>
+      <th>−Ca2+</th>
+      <th>+Ca2+</th>
+      <th></th>
+      <th>−Ca2+</th>
+      <th>+Ca2+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT-CaM</td>
+      <td>6.9 (0.2)5</td>
+      <td>10.4 (0.2)5</td>
+      <td></td>
+      <td>12.2 (0.1)5</td>
+      <td>17.0 (0.2)5</td>
+      <td></td>
+      <td>–</td>
+      <td>16.0 (0.3)5</td>
+      <td></td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>NN-CaM</td>
+      <td>*6.4 (0.1)3</td>
+      <td>7.0 (0.1)4</td>
+      <td></td>
+      <td>11.5 (0.1)3</td>
+      <td>12.5 (0.1)4</td>
+      <td></td>
+      <td>–</td>
+      <td>12.3 (0.1)4</td>
+      <td></td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>CC-CaM</td>
+      <td>9.9 (0.1)3</td>
+      <td>9.7 (0.9)3</td>
+      <td></td>
+      <td>15.1 (0.5)3</td>
+      <td>16.5 (1.0)3</td>
+      <td></td>
+      <td>–</td>
+      <td>14.8 (0.9)3</td>
+      <td></td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>N-CaM</td>
+      <td>5.1 (0.1)3</td>
+      <td>8.9 (0.7)3</td>
+      <td></td>
+      <td>–</td>
+      <td>–</td>
+      <td></td>
+      <td>–</td>
+      <td>–</td>
+      <td></td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>C-CaM</td>
+      <td>7.6 (0.2)3</td>
+      <td>8.1 (0.7)3</td>
+      <td></td>
+      <td>–</td>
+      <td>–</td>
+      <td></td>
+      <td>–</td>
+      <td>–</td>
+      <td></td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>CaM (E12Q)</td>
+      <td>8.2 (0.7)3</td>
+      <td>8.8 (0.8)3</td>
+      <td></td>
+      <td>13.2 (0.7)3</td>
+      <td>14.0 (0.9)3</td>
+      <td></td>
+      <td>–</td>
+      <td>–</td>
+      <td></td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>CaM (E34Q)</td>
+      <td>8.3 (0.8)3</td>
+      <td>9.1 (0.1)6</td>
+      <td></td>
+      <td>13.1 (0.9)3</td>
+      <td>15.8 (0.1)6</td>
+      <td></td>
+      <td>–</td>
+      <td>–</td>
+      <td></td>
+      <td>–</td>
+      <td>23.3 (0.1)6</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Italicized values fall outside the limit of detection for modeling KA, or fits are ill constrained._
+
 Metal chelators, such as EDTA (Ethylenediaminetetraacetic acid) and EGTA are commonly used to reduce free metal in solution, but the quantities of free metal ions in solutions are usually calculated or assumed. When we use EGTA, we consider it a ‘trace Ca2+’ condition with Ca2+ concentrations assumed to be nanomolar, but metal contaminants are unknown. At trace Ca2+, there are fewer distinguishing features (Figure 3A, F). Notably P-C-P is at much smaller quantities, and C-P-C is absent as observed previously (Halling et al., 2014). Just as we observed with Ca2+, in EGTA P-C has a high affinity. Since the P-C complex has negligibly different masses at high and at trace Ca2+, another approach is needed to observe whether Ca2+ causes a change to the interaction of the peptide and CaM.
 
-## Intrinsic tryptophan fluorescence of SKp confirms calcium sensitivity of calmodulin
+### Intrinsic tryptophan fluorescence of SKp confirms calcium sensitivity of calmodulin
 
 In the absence of a binding partner, the SKp W432 emission spectrum has a peak position at or near 348 nm in all buffers used (Figure 4A–C). The appearance of this emission spectrum is consistent with earlier reports, and it suggests that in the absence of CaM the tryptophan in SKp is solvent exposed (Keen et al., 1999).
 
@@ -88,7 +289,7 @@ In our electrophysiology experiments, SK2 has maximal opening at 10 µM free Ca2
 
 We can use these features as we study other CaM constructs to determine what properties of CaM are required for SK2 activity and for Ca2+-dependent interactions with SKp.
 
-## SK requires CaM with both an N- and a C-lobe connected for activity to be recovered
+### SK requires CaM with both an N- and a C-lobe connected for activity to be recovered
 
 Given that we could recover SK channel activity with the application of exogenous WT-CaM protein in HEK293 cells, we then tested whether the non-WT-CaM constructs could also recover SK activity. For each experiment we excised inside-out patches from cells that were cotransfected with SK and E1Q. We took each patch and calculated what fraction of the total recovered SK current was due to the application of our various mutant CaM constructs (Figure 5A). The constructs included an N-lobe only, a C-lobe only, a mixture of N- and C-lobes, a double N-lobe, a double C-lobe, and CaM with Ca2+ binding disrupted in the C-lobe CaM (E34Q). The CaM (E34Q) mutant contains glutamate to glutamine (E to Q) substitutions at positions 104 and 140 (sites 3 and 4) in the C-lobe, CaM (E34).
 
@@ -98,7 +299,7 @@ Given that we could recover SK channel activity with the application of exogenou
 
 We found that none of the non-WT-CaMs, except for the mutant CaM (E34Q), lead to a magnitude of recovery comparable to WT-CaM (Figure 5B, C, Table 1).
 
-## SKp binds N- and C-lobe with high affinity
+### SKp binds N- and C-lobe with high affinity
 
 The absence of SK current recovery by a non-WT-CaM construct could indicate either that CaM can still bind SK but requires its full protein sequence to activate the channel, or that CaM binding is disrupted and the absence of CaM renders SK Ca2+ insensitive. Binding measurements are necessary to determine whether our mutant CaM constructs can still bind to SK.
 
@@ -110,13 +311,13 @@ N-CaM has a molar mass of 9.0 kDa. Combined with SKp, which has a molar mass of 
 
 C-CaM forms the same stoichiometry regardless of Ca2+ (Figure 6B, D, F). The association of C-CaM with SKp is strong, it is also independent of Ca2+. N-CaM forms only a 1/1 complex with SKp when Ca2+ is present. Additional approaches are needed to determine whether Ca2+ alters the configuration of P-C for SKp binding to C-CaM.
 
-## Both lobes of CaM have Ca2+-dependent associations with SKp
+### Both lobes of CaM have Ca2+-dependent associations with SKp
 
 We showed in Figure 4A, B that Ca2+ alters the interaction of SKp with full-length CaM. We wanted to use this observation to assay whether Ca2+ changes the configuration of N-CaM or C-CaM. We compared the spectra of SKp + WT-CaM with spectra of SKp + either N-CaM or C-CaM. At trace Ca2+, the W432 spectra obtained with SKp bound to C-CaM is indistinguishable from when SKp is bound to WT-CaM (Figure 4D). In contrast, when N-CaM is present, the W432 spectrum is indistinguishable from when SKp is by itself, which is consistent with N-CaM’s low affinity for SKp at trace Ca2+. Thus, we conclude that the environment of W432 appears to be dominated by the C-lobe of WT-CaM at trace Ca2+.
 
 10 µM Ca2+ is sufficient to fully activate SK2 channels (Li et al., 2009). Binding experiments at 10 µM Ca2+show that SKp bound to either isolated N-CaM or isolated C-CaM produces spectra that are very close to SKp + WT-CaM (Figure 4B, E), but there is a subtle, 10–20% smaller amplitude when the C-lobe is bound. The spectrum with SKp bound to N-CaM appears slightly more like the spectrum of SKp bound to WT-CaM, but not enough to conclude that it is the N-lobe of CaM that binds W432 when full-length WT-CaM binds SKp. For binding measurements, we wanted to make sure 10 µM Ca2+ is saturating. 5 mM Ca2+ does not change the spectra further (Figure 4C, F), indicating that 10 µM Ca2+ is sufficient for maximal effect of Ca2+ with either or both lobes.
 
-## C-P-C only forms with full-length CaM
+### C-P-C only forms with full-length CaM
 
 At high Ca2+ SKp forms the C-P-C complex with WT-CaM (Figure 3A, F). The C-P-C complex is not observed with either N-CaM or C-CaM using the cross-over approach (Figure 6). We wanted to make sure that a C-P-C complex with N- or C-CaM was not missed due to weaker binding. To sample data at high molar ratios of CaM relative to SKp, we designed experiments that would emphasize a Ca2+-dependent site. We used the high-affinity P-C complex of SKp and WT-CaM as a tool. Beginning with the preformed P-C and holding the P-C concentration at a constant value, we titrated increasing concentrations of WT-CaM. At low additions of WT-CaM there is a slight increase in the weight-averaged molar mass followed by a decrease (Figure 7A). The increase in measured mass is due to the formation of C-P-C as WT-CaM binds to the preformed SKp/WT-CaM complex. The decrease in weight-averaged molar mass at higher concentrations of added WT-CaM is expected due to the rising levels of unbound WT-CaM, which is much smaller than C-P-C but dominates the composition of the solution.
 
@@ -126,17 +327,17 @@ At high Ca2+ SKp forms the C-P-C complex with WT-CaM (Figure 3A, F). The C-P-C c
 
 Using preformed P-C with WT-CaM, we next added N-CaM or C-CaM. Instead of showing an increase in mass at low concentrations of added ‘half-CaM’, the measured weight average molar mass drops off with increasing mutant CaM (Figure 7B). The decrease in measured mass follows the predicted attenuation in weight average molar mass if the P-C complex remains intact, but the free N-CaM or C-CaM neither convincingly binds to SKp at another site nor replaces WT-CaM in the preformed complex. Taken together, Figure 7A, B shows that C-P-C requires two full-length CaMs.
 
-## SKp binds one lobe of CaM if lobes are not joined
+### SKp binds one lobe of CaM if lobes are not joined
 
 In Figure 2, combining N-CaM and C-CaM does not restore SK2 current. We wanted to know if unconnected lobes CaM can bind SKp at the same time. N-CaM and C-CaM individually bind SKp at high Ca2+; however, a second unattached lobe does not measurably bind to SKp, that is, there is no C-P-C with the half-CaMs. If we mixed both N-CaM and C-CaM together, could the pair bind to SKp? In a cross-over CG-MALS experiment a sample with equimolar concentrations of N-CaM and C-CaM is varied against SKp. The results again indicate high-affinity binding of exactly one domain of CaM, not both, to SKp (Figure 7C). This experiment cannot distinguish how much of P-C is SKp bound to N-CaM vs. C-CaM. Unconnected N-CaM and C-CaM can only bind one at a time, suggesting that once bound to SKp, the other lobe is prevented from binding if it is not attached to the other lobe.
 
-## CaM (E34Q) rescues SK2 current like WT-CaM, but NN-CaM and CC-CaM do not
+### CaM (E34Q) rescues SK2 current like WT-CaM, but NN-CaM and CC-CaM do not
 
 Unconnected lobes of CaM do not activate SK, nor do they bind in the other’s presence. We also wanted to know to what extent mutant full-length CaMs can activate SK. Previous work has shown that the CaM (E34Q) construct can substitute for WT-CaM to make functioning SK2 channels (Keen et al., 1999; Li et al., 2009). We confirmed those results here, while showing that fractional recovery of current is at least 50% of that of WT-CaM (Figure 5A, B). Due to variability in channel density and unknown occupancy by endogenous WT-CaM from the HEK cells, we are not able to confirm whether CaM (E34Q) rescues at a different rate or to a different saturation level than WT-CaM. Qualitatively, their abilities to rescue SK2 current are the same (Figure 5C).
 
 NN-CaM and CC-CaM are approximately the same size as WT-CaM. If a CaM site on the C-terminus of SK can bind either lobe, an N-sensor view of CaM activation might suggest that at high Ca2+, both lobes would be able to bind SK2, and perhaps, gate the channel. Neither NN-CaM nor CC-CaM activate SK2 convincingly (Figure 5). Thus, size is not the only factor, SK2 gating requires both an N- and a C-lobe.
 
-## E to Q CaM constructs have different interactions with SKp than WT-CaM
+### E to Q CaM constructs have different interactions with SKp than WT-CaM
 
 CaM (E34Q) can activate SK2. Although SK2 activation suggests that CaM (E34Q) appears to function like WT-CaM, we currently do not know whether SK2 gating is the same with either CaM bound to it.
 
@@ -150,7 +351,7 @@ On the other hand, the spectrum of W432 with CaM (E34Q) bound has weaker Ca2+ de
 
 Summarizing the CaM (E34Q) results, (1) E34Q CaM rescues like WT-CaM, (2) CaM (E34Q) has different Ca2+-dependent interactions with SKp than WT-CaM, and (3) Ca2+ is less capable of altering the W432 environment when SKp is bound to CaM (E34Q) than when bound to WT-CaM. All these argue that the mutant CaM (E34Q) operates differently than WT-CaM to produce similar functional outcomes.
 
-## NN-CaM and CC-CaM have Ca2+-dependent interactions with SKp
+### NN-CaM and CC-CaM have Ca2+-dependent interactions with SKp
 
 The double-lobe constructs were used to draw out more differences between the lobes. Neither construct can substitute for WT-CaM and restore channel activity (Figure 5). We used these constructs as tools to evaluate Ca2+ dependent binding to SKp.
 
@@ -166,7 +367,7 @@ NN-CaM and CC-CaM binding confirm that both lobes retain Ca2+ sensitivity when b
 
 ## Discussion
 
-## The C-terminus of SK with bound CaM is a Ca2+ sensor for SK
+### The C-terminus of SK with bound CaM is a Ca2+ sensor for SK
 
 CaM is tightly bound to SK regardless of Ca2+. It is required for SK to decode Ca2+ signals that vary in amplitude, location, and duration. CaM has an extremely versatile structure (Figure 1C–F). It can position its lobes, tune the Ca2+ sensitivity of its diverse partners, compete with other proteins, and have dynamic associations.
 
@@ -174,7 +375,7 @@ An early study narrowed the essential CaM modulatory domain to SK2’s C-terminu
 
 In addition to SK2’s C-terminus, a second CaM-N-lobe-binding site has been shown on SK4 at the S4–S5 linker (Lee and MacKinnon, 2018). Additional studies of heterologously expressed SK2 channels show that mutations in either the S4–S5 linker or C-terminus can make SK2 more sensitive to Ca2+ (Nam et al., 2021; Nam et al., 2017; Orfali et al., 2022). Although there are mutations in S4–S5 that make SK2 gate at lower Ca2+, more work is needed to determine whether the mutations alter an opened or closed state of SK2 so that it opens easier or if the mutations alter CaM interactions such that Ca2+ binds the complex at lower concentrations. Binding measurements of CaM to other SK2 domains, such as the 4–5 linker, are difficult given the folding of the S4–S5 linker and have yet to be completed.
 
-## Lessons from structures
+### Lessons from structures
 
 If Ca2+ affects C-lobe interactions at 10 µM concentrations, why then is Ca2+ not seen as density in the C-lobe-binding sites of the structures solved at higher Ca2+? High-resolution X-ray structures would be able to detect ions as strong electron densities, and there are methods to identify which metal ion is coordinated (Echols et al., 2014; Harding, 2004). The absence of Ca2+ in the C-lobe is an experimental result that depends on the conditions used to arrive at the data. A major challenge in crystallography is getting a protein to form a crystal, which requires high protein concentrations in a somewhat arbitrarily determined medium. CaM co-crystallizes with SKp in acidic solutions that range from pH 4.6 to 5.6 at high ionic strength (~1 M Li+) (Schumacher et al., 2001; Zhang et al., 2012a; Zhang et al., 2013). Both proton concentration and ionic strength alter the affinity of CaM for Ca2+ (Linse et al., 1991; Ogawa and Tanokura, 1984; Steiner et al., 1983). Even so, in one instance the C-lobe of CaM still is Ca2+ bound under acidic conditions when the SK peptide contains an additional three residues as a splice variant, showing that there are conditions at extreme pH (pH ~4.7) when the C-lobe is still Ca2+ occupied (Zhang et al., 2012a). Interestingly, CaM was found with a C-shape in the original structure (Figure 1E), but with an S-shape with the splice variant (Figure 1D).
 
@@ -182,7 +383,7 @@ Recently, structures at low and at high Ca2+ were determined for a full SK chann
 
 Even with a clearer picture of the architecture, high-resolution details remain elusive. Cryo-EM is an ensemble method that averages proteins across many states. Even though resolution is often the primary goal, this approach can explore different states (Orlova and Saibil, 2010; Roh et al., 2017; Zhang et al., 2019). Data are class averaged representations of thousands of particles. Class averaging minimizes differences while amplifying molecular similarities. Less frequent observed states are not necessarily minor functional states, and conversely more frequent observed states may not be functionally relevant. However, structures of a subset of states can generate testable hypotheses. Continued studies using cryo-EM on SK/CaM complexes would be valuable.
 
-## Limits of the N-sensor hypothesis in SK gating
+### Limits of the N-sensor hypothesis in SK gating
 
 Across structures, W432 of SK2 binds the C-lobe of CaM (Lee and MacKinnon, 2018; Schumacher et al., 2001; Zhang et al., 2012a). The C-lobe was modeled with a putative Ca2+ ion bound to one of its sites in the Ca2+-bound cryo-EM structure. The similarity of the C-lobe structures at both trace and high Ca2+ forms the basis for the N-sensor model. The basis for the N-sensor hypothesis is that the C-lobe is tethered independent of Ca2+. In contrast to C-lobe binding, the N-lobe of CaM in subsets of cryo-EM class averaged data was observed in multiple conformations at trace Ca2+ (Lee and MacKinnon, 2018). The flexibility of N-lobe binding could indicate different binding modes with SK in the absence of Ca2+. Models from structures, however, are strongly biased toward what can be observed either in a crystal or through class averaging of thousands of molecules in cryo-EM. After particle image class averaging, a small percentage (~40%) of total observed molecules is included in the final, highest 3.5 Å resolution structure of SK. There is an opportunity to learn what information is contained in the rest of the datasets about CaM binding.
 
@@ -192,7 +393,7 @@ At minimally saturating Ca2+, the spectra for CaM (E34Q) should bind SK like WT-
 
 The N-sensor hypothesis for SK gating by WT-CaM (Figure 1) is not supported by binding data, but the mutant CaMs show results that could have been considered as consistent with the N-sensor hypothesis. CaM (E34Q), whether overexpressed (Keen et al., 1999) or reconstituted (Li et al., 2009; Figure 5), activates SK2. If the E to Q mutations only alter Ca2+ binding to CaM, the CaM (E34Q) data suggest that Ca2+ binding to N-lobe is required for SK gating, but not to the C-lobe. The assumption was that CaM (E34Q) activates SK2 the same as WT-CaM. However, our protein-binding data challenges that assumption. CaM (E34Q) and WT-CaM do not interact with SK in the same way and CaM (E34Q) clearly has a different binding mode.
 
-## SK gating requires both lobes of CaM
+### SK gating requires both lobes of CaM
 
 How does Ca2+ open SK channels? The answer is maybe it doesn’t; Ca2+ just keeps SK from closing. Hirschberg et al., 1998 used single-channel recordings of SK2 to show that the SK2 has many closed and open states. A key finding was that only a closed state with long durations is unambiguously Ca2+ sensitive; none of the open states or short duration closed states are Ca2+ sensitive. This observation sets a premise for SK gating: Ca2+ must do work to prevent SK from visiting the closed state that has the longest dwell time. When SK is activated, this essentially means that long closed times are diminished. More binding data, electrophysiology, and structures are essential to learn how SK traverses different states in its response to Ca2+.
 
@@ -214,7 +415,7 @@ For P-C-P, we speculate that both lobes of a single CaM molecule participate wit
 
 Finally, at trace Ca2+, we only consider a strong P-C signature as convincing (Figure 8). Further investigation is needed to find out whether P-C-P exists at trace Ca2+ and how the weaker binding would fit into a gating model. In our current model, both lobes of CaM interact with SK at trace Ca2+ in the P-C state.
 
-## Predictions of SK gating from CaM-binding data
+### Predictions of SK gating from CaM-binding data
 
 A more general model is needed to describe how SK decodes Ca2+ binding to both lobes of CaM. The ‘NC-sensor hypothesis’ proposes that binding of Ca2+ to both lobes of CaM in complex with SKp are energetically coupled processes, that is, the entire CaM molecule works as a unit and not as a sum of its parts. Although both lobes have unique qualities as they do in the N-sensor hypothesis, binding data suggest that they work as a unit by communicating through SK. The NC-sensor hypothesis has testable predictions. Both WT-CaM and CaM (E34Q) activate SK, but since one lobe of CaM (E34Q) is less Ca2+ sensitive, SK must have different dwell times in the opened or closed states. Single-channel recordings of SK current can probe different activation states of SK. A careful study of distributions of SK states would distinguish whether different opened and closed states are prevalent if CaM (E34Q) is bound instead of WT-CaM.
 
@@ -222,7 +423,7 @@ Single-channel recordings of SK2 show that in trace Ca2+ the open probability is
 
 More structures of SK with bound CaM captured in identifiable closed and open intermediates would help to interpret how CaM alters SK activity. We know of at least three closed and two open states for SK activity from physiology (Hirschberg et al., 1998). Our stoichiometry data show that SK has multiple ways to bind CaM, and there is ample structural support displaying how flexible CaM is when bound to targets. Our binding and functional work are only edge cases for concentrations and there is much more work to be done to solve what the protein experiences dynamically during gating.
 
-## A generalized hypothesis for SK gating
+### A generalized hypothesis for SK gating
 
 CaM binding to peptide may be different from how it binds to a full-length protein such as a channel, especially if another domain such as the 3–4 linker interacts with a lobe of CaM. This is an extraordinarily difficult question to answer with just one binding study, yet incorrect aspects of models can quickly be eliminated. We observe that the C-lobe of CaM is calcium sensitive when binding to a peptide. How can the full-length channel binding to the C-lobe be Ca2+ insensitive? It would require that the full-length channel blocks the Ca2+ C-lobe configuration while preserving the Ca2+-free configuration, but this has not been demonstrated. Considering that the channel has at least three closed states and two open states, C-lobe Ca2+ sensing is highly likely to be important during gating. From current structure analyses, we have at best an ensemble view of two out of five channel/CaM states.
 
@@ -230,11 +431,11 @@ Although the N-sensor hypothesis is elegant, the binding data show that a more c
 
 ## Methods
 
-## Materials and constructs
+### Materials and constructs
 
 The mammalian WT-CaM protein sequence (NCBI: NP_059022) expression clone from rat DNA (Rattus norvegicus calmodulin 2 (Calm2) NCBI: NM_017326.3) was provided by S. Hamilton (Baylor College of Medicine, Houston, TX), which we cloned into the Novagen pET21a vector (Merck KGaA, Darmstadt, Germany) for expression in BL21(DE3) bacteria (New England Biolabs (NEB), Ipswich, MA). Double lobe CaM DNA constructs, NN-CaM and CC-CaM were codon optimized for bacterial expression and synthesized by Genewiz (South Plainfield, NJ). J. Adelman (Vollum Institute, Portland, OR) provided the clone for the Rattus norvegicus SKp (residues 396–487 rat KCa2.2, UniProt accession P70604.1) of SK2, and was cloned without a tag as described previously (Halling et al., 2014). The human protein sequence of SK2 is identical in this region. Reagents used for buffers were minimal American Chemical Society quality and purchased from Sigma-Aldrich unless otherwise indicated. All solutions were made with 18.2 MΩ water from a Milli-Q Integral 5 System (Burlington, MA).
 
-## Cloning of proteins for expression
+### Cloning of proteins for expression
 
 The N-CaM construct was designed by cloning in a stop codon (TAA) into the WT-CaM construct in the pET21a vector using standard PCR mutagenesis after residue D80 of the protein sequence using primers ordered from Sigma-Aldridge (Merck). C-CaM was cloned using PCR amplification of the C-terminus of WT-CaM with added flanks of a 5′ NdeI overhang and a 3′ BamHI overhang and ligated into pET21a vector (Merck). Insertion of PCR product into pET21a was achieved with standard protocols (NEB).
 
@@ -244,15 +445,15 @@ For CaM protein sequence, the N-terminal methionine gets cleaved in the final pr
 
 NN-CaM and CC-CaM were purchased as described in materials and arrived in pUC57-Kanamycin vector. The gene sequences were flanked by restriction enzyme sites for 5′ NdeI and 3′ EcoRI (NEB). Genes were cloned into pET21a using standard protocols from NEB. Due to a need for a start codon, the CC-CaM positions 1 and 2 (residues MA) do not align with WT-CaM. Residues D78–D81 of WT-CaM were retained as the flexible part of the linker in both constructs of NN-CaM and CC-CaM. Some effort was made to make the linkers of NN-CaM and CC-CaM of similar length.
 
-## Protein preparation
+### Protein preparation
 
 A single colony of a protein construct in BL21(DE3) cells is selected with a toothpick and put into 20 ml of Luria Broth (Fisher Scientific Company LLC, Pittsburg, PA) with appropriate antibiotic for the construct, either carbenicillin or kanamycin. These ‘starter cultures’ are grown for 7–8 hr, but no more than 8 hr, at 37°C and stored in the fridge overnight. The next day, the starter culture is used to inoculate 750 ml LB in a 2 l flask and the cultures are grown at 37°C in an orbital shaker to an optical density of 0.6 absorbance units at a wavelength of 600 nm. The temperature of the shaker is either kept at 37°C for SKp protein or changed to 25°C for CaM constructs. Cultures are then induced with 0.5 mM isopropyl β-D-1-thiogalactopyranoside and induced for 2–3 hr for SKp or for 16–18 hr for CaM constructs. Proteins were purified using established procedures (Halling et al., 2014). Only proteins that migrate as a single band on a 20% Laemmli gel, that is, negligible contaminants and degradation in sample, are used in experiments.
 
-## Cell lines: HEK293 cell maintenance and transfection
+### Cell lines: HEK293 cell maintenance and transfection
 
 293 [HEK-293] (ATCC CRL-1573) cells were STR tested and are negative for mycoplasma (ATCC, Manassas, VA). 293 cells were grown and passaged according to standard procedures. Cells were cultured at 37°C in a 5% CO2 atmosphere in Dulbecco’s modified Eagle’s medium without sodium pyruvate and with L-glutamine, 1% penicillin/streptomycin, 1% GlutaMAX, and 10% fetal bovine serum (Thermo Fisher Scientific). Cell lines were split with trypsin/EDTA in Hanks’ balanced salt solution (Thermo Fisher Scientific) up to 20–25 cycles. For experimental electrophysiological recordings, cells were transiently cotransfected (Lipofectamine 3000; Invitrogen) with the rat SK2 channel and the E1Q calmodulin mutant. For control experiments, cells were transfected with either the rat SK2 channel and wild-type calmodulin, or the rat SK2 channel alone. Enhanced green fluorescent protein was also cotransfected as a marker in all cases. Electrophysiological recordings were done 16–72 hr after transfection.
 
-## Patch-clamp recordings
+### Patch-clamp recordings
 
 Patch-clamp recordings of SK currents were performed at room temperature (22–24°C) using an inside-out configuration. Recording electrodes were fabricated with borosilicate glass pipets (A-M Systems) and pressure/fire-polished before use. Open electrode resistance was 2–4 MΩ in the bath solution. An Axopatch 200 A amplifier (Molecular Devices San Jose, CA) coupled with an ITC-18 interface (HEKA) was used to record data. Acquisition software (PATCHMASTER; HEKA; Lambrecht, Germany) was used to sample data at 50 kHz, which were low-pass filtered at 1 kHz using the built-in filter of the amplifier. SK currents were elicited by stepping to a voltage of −60 mV for 1 s every 3 s until recording was paused for solution changes.
 
@@ -262,7 +463,7 @@ The experimental protocol was the following: patches were excised from cells imm
 
 In some experiments, where SK current ran up slightly during the course of the experiment, a drift correction was performed by fitting a line to the drift and subtracting it from the average current level.
 
-## Light scattering
+### Light scattering
 
 Stock protein samples were centrifuged at 17 kg prior to dilution into the working buffer. Protein concentrations were measured in a cuvette with 1-cm path length and using a UV-2600 UV-spectrophotometer (Shimadzu Scientific Instruments, Inc, Columbia, MD) to collect protein spectra. The average absorbance was subtracted by baseline averages from 330 to 350 nm. Protein absorbance was converted to concentrations using predicted extinction coefficients (ε) based on numbers of tyrosines and tryptophans using either ProtParam (Gasteiger et al., 2005) or phenylalanines as follows. Free phenylalanine ε was determined by weighing desiccated L-phenylalanine with milligram accuracy, dissolving into 1 ml of 18 MΩ water and collecting spectra from 350 to 250 nm. The ε was computed by the relation ε = A/Lc, where A = absorbance, L is the path length = 1 cm, c is the molar concentration of L-phenylalanine. L-Phenylalanine has a spectral maximum at 258 nm, and ε was measured at this wavelength for phenylalanine. We assume a linear relation of the number of phenylalanines in the protein with total ε. The values we used for ε in units of M−1 cm−1 (at given wavelength) are ε = 6990 SKp (280 nm), 3020 WT-CaM (277 nm), 975 N-CaM (258 nm), 3020 C-CaM (277 nm), 1950 NN-CaM (258 nm), 5960 CC-CaM (277 nm), and 3020 for CaM (E34Q)- and CaM (E12Q) (277 nm).
 
@@ -272,7 +473,7 @@ Stock protein solutions were diluted into a working buffer, 0.096 mg/ml SKp and 
 
 Analyses on light-scattering samples were performed in the software Calypso-II Version 2.2.4.32 (Wyatt). Observed light-scattering intensity at different molar ratios of protein and ligand was used to model the proportions of free vs. bound proteins in the sample. The total concentrations of added protein are known and verified before and after experiments as part of the method. Their monomeric molar masses are known from sequence and were verified by mass spectrometry on an AB Voyager-DE PRO MALDI-TOF instrument (Applied Biosystems now Thermo Fisher). Stoichiometries are assumed to be comprised of known molar masses of SKp and CaM. Free and bound protein concentrations were modeled across molar ratios as previously described (Halling et al., 2014). The concentrations of free protein and complexed protein were fitted to Mz by Levenberg–Marquardt fitting of the equilibrium association constants, KA, for each complex.
 
-## Tryptophan emission spectra
+### Tryptophan emission spectra
 
 SKp contains a single, native tryptophan at position 432, whereas CaM has no tryptophan. Between the two proteins, there are three tyrosines, but tryptophan fluorescence is dominant over tyrosine. W432 has been shown to contact the C-lobe of CaM in multiple structures (Nam et al., 2017; Schumacher et al., 2001; Zhang et al., 2012a; Zhang et al., 2013), and its spectra have been used to assess WT-CaM binding to SKp (Keen et al., 1999). Because of its position and potential role in forming a CaM-binding site, W432 spectra could be used as a probe in assessing CaM binding under more conditions.
 

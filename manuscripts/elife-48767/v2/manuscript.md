@@ -41,13 +41,29 @@ Connexin 43 (CX43) is a predominant gap junction protein expressed in BTBs that 
 
 ## Results
 
-## Testing the reprogramming capability of five putative transcriptional factors
+### Testing the reprogramming capability of five putative transcriptional factors
 
 Based on the reprogramming capability of the transcriptional factors reported in a mouse study (Buganim et al., 2012), we first tested the reprogramming capabilities of the human homologs of the five transcriptional factors (5TFs: NR5A1, GATA4, WT1, SOX9 and DMRT1) to convert human fibroblasts to hiSCs. All five human homologs were correctly cloned into lentiviral vectors and expressed at high levels as verified by immunofluorescent staining of HPFs and transcriptional level in human embryonic kidney cells (Figure 1A and Figure 1—figure supplement 1A). After the lentiviral transduction with all five factors and culturing in selective medium for 5 days (Figure 1B), many HPFs started to transform from the typical elongated morphology of fibroblasts into the squamous morphology that typically appears in epithelial cells (Figure 1—figure supplement 1B). The analysis of the transcriptional expression showed that genes enriched in mesenchymal-to-epithelial transition (Buganim et al., 2012; Li et al., 2011; Samavarchi-Tehrani et al., 2010), including MUC1, CLDN1, CLDN7, CLDN11 and TJP1, exhibited increased expression in this mixed population of transformed HPFs (Figure 1—figure supplement 1C). In addition, the transcriptional expression of genes enriched in Sertoli cells, such as AR, KRT18, CLU, PTGDS, SCF, BMP4 and INHA, exhibited increased expression in this mixed population of transformed HPFs (Figure 1—figure supplement 1D). To determine whether these 5TFs were able to reprogram other fibroblast sources, we derived human fibroblast-like cells from hESC line H1 (dH1) and reprogrammed these cells as described for the HPFs. The dH1 morphology resembled that of fibroblasts, and no detectable expression of pluripotent markers was observed, but the expression of many markers of fibroblasts was observed (Figure 1—figure supplement 2A, B and C). After the transduction of the 5TFs, dH1 underwent a fibroblast to epithelial transformation similar to that observed in the HPFs (Figure 1—figure supplement 2D), suggesting that the 5TFs can transform both types of fibroblasts into epithelial-like cells and increase the expression of Sertoli cell markers.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig1-v2.jpg)
+
+**Figure 1.:** (A) Immunostaining of NR5A1, GATA4, WT1, SOX9 and DMRT1 (red signal) in fibroblasts (HPF) 3 days post infection. DAPI (blue signal) was used to indicate nucleus. Scale bar = 25 μm. NC represents HPF stained with only secondary antibody. (B) Experimental design for the reprogramming of human Sertoli-like cells (hiSCs). Human fibroblasts were infected by lentivirus carrying human transcription factors: NR5A1, GATA4, WT1, SOX9 and DMRT1 (5TFs). The cells were cultured in MEF medium for 1 day after infection and followed by G418 selection for 5 days, then changed to DMEM/F12 medium. hiSCs were characterized 10–14 days post viral transduction. (C) Schematic protocol for the enrichment of Sertoli-like cells (hiSCs). An AMH:EGFP reporter was integrated to the fibroblasts for hiSCs quantification and isolation. (D) FACS analysis of AMH:EGFP+ cell at day 10 after 5TFs infection. The percentage of EGFP+ cell was used to determine the reprogramming efficiency. Two types of human fibroblasts (HPF and dH1) were tested. Cells infected by p2k7 empty virus were used as negative control (CTRL). (D) Morphology of re-plated AMH:EGFP+ hiSCs after FACS. Scale bar = 20 μm. (F) The mRNA level of AMH was enriched in AMH:EGFP+ hiSCs, as compared to dH1 infected by p2k7 empty virus (dH1-2K7) and AMH:EGFP-. n = 3, technical replicates of ~5 × 104 cells were collected by FACS. All data are presented as means ± SD. *p<0.05, **p<0.01, Student’s t-test.>3 independent experiments were carried out. (G) Immunofluorescent staining of KRT18 in AMH:EGFP+ hiSCs and dH1 infected by p2k7 empty virus (dH1-2K7) after FACS. Scale bar = 100 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Quantitative PCR result showing the mRNA level of GATA4, DMRT1, NR5A1, SOX9 and WT1 was overexpressed in 293FT cells after virus infection. ACTIN was used as the housekeeping gene for normalization. n = 2 (technical replicates of ~4 × 105 cells were collected). All data are presented as means ± SD, *p<0.05, **p<0.01, Student’s t-test.>2 independent experiments were carried out. (B) hiSCs showed epithelial morphology change after 5 TFs overexpression. Magnified images were shown on the right side. Two types of cell density were tested. Scale bars = 400 μm. (C) Quantitative PCR result showing that the mRNA level of epithelial markers increased after overexpression of NR5A1, GATA4, SOX9, WT1 and DMRT1 (5TFs). Fold expression was normalized to the group infected by empty virus p2k7 (CTRL). ACTIN was used as the housekeeping gene for normalization. All data are presented as means ± SD. *p<0.05, **p<0.01, Student’s t-test. n = 2 (technical replicates of ~4 × 105 cells were tested). (D) Quantitative PCR result showing the mRNA levels of Sertoli cell markers. Relative expression of 5TFs groups was normalized to the level of HPF cells infected by empty virus 2K7 (CTRL). All data are presented as means ± SD, asterisks indicate statistical significance, (*p<0.05, **p<0.01, Student’s t-test).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Morphology of human embryonic stem cells (H1) in feeder cell system (left) and the fibroblast-like cells (dH1, right) derived from H1 by spontaneous differentiation in KSR + K-DMEM medium for 14 days. Scale bar = 400 μm. (B) Expression of hESC pluripotency markers in H1 and dH1 at day 14 after spontaneous differentiation, measured by qPCR. Expression level in dH1 was normalized to the level of undifferentiated H1. All data are presented as means ± SD, asterisks indicate statistical significance, *p<0.05; **p<0.01, Student’s t-test, versus control. (C) Expression of fibroblast markers in H1 and dH1 at day 14 after spontaneous differentiation, measured by qPCR. Expression level in dH1 was normalized to the level of undifferentiated H1.All data are presented as means ± SD, asterisks indicate statistical significance, *p<0.05; **p<0.01, Student’s t-test, versus control. (D) Cell morphology of reprogrammed dH1 at day1 to day8 after induction. dH1 transduced with p2k7 lenivirus was used as a control.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Cells infected by p2k7 empty virus were used as a negative control (CTRL).
+
 To isolate and enrich the hiSCs in the mixed population of reprogrammed fibroblasts, we constructed a gene reporter system utilizing the 1.6 kb promoter region of AMH, which is a gene specifically expressed in Sertoli cells (Franke et al., 2004), connected to EGFP (Figure 1C). Recent report of single-cell transcriptome analysis also confirms that AMH is specifically expressed in Sertoli cells but not other somatic cells of adult human testis (Wang et al., 2018). We constructed a gene reporter carrying AMH promoter fusing to EGFP gene and transduced the reporter into adult human Sertoli cells to confirm EGFP expression (Figure 1—figure supplement 3). When the lentivector carrying the reporter, AMH:EGFP, was stably integrated into HPFs and dH1, none of the cells would express EGFP without transcriptional induction. After the transduction and selection of the fibroblasts, some reprogrammed cells were expected to express EGFP to allow us to isolate them by fluorescence-activated cell sorting (FACS). We found that both HPF and dH1 reproducibly yielded a clear AMH:EGFP-positive population after 10 days of transduction with the 5TFs (Figure 1D). Intriguingly, the AMH:EGFP+ population in the dH1 group (~15%) was much higher than that in the HPF group (~6%), indicating that the conversion of the dH1 cells was more efficient. The AMH:EGFP+ cells were isolated by FACS and adhered to culture dishes and exhibited an epithelial morphology (Figure 1E). We verified that the endogenous AMH expression was activated because the expression level of the AMH gene was significantly upregulated in the AMH:EGFP+ cell population compared to that in the control dH1 cells (CTRL) and AMH:EGFP- cells (Figure 1F). The specific expression of endogenous AMH in AMH:EGFP+ cells validated the function of the reporter to isolate the reprogrammed Sertoli cells from the mixed populations which might contain other cell types. Moreover, an epithelial marker expressed in Sertoli cells, that is, KRT18, was used to validate the transformation of the fibroblasts to Sertoli cells as one kind of epithelial cells. The cytoskeleton pattern of KRT18 expression was observed in the AMH:EGFP+ cells but not the control dH1 cells (Figure 1G).
 
-## Whole-genome transcriptional profiling of hiSCs resembling adult Sertoli cells
+### Whole-genome transcriptional profiling of hiSCs resembling adult Sertoli cells
 
 To determine whether hiSCs reprogrammed with the 5TFs (5F-hiSCs) are similar to human Sertoli cells, we compared the transcriptomes of the AMH:EGFP+ 5F-hiSCs, dH1 cells infected with p2k7 empty virus (dH1-2K7) as negative controls, and primary adult Sertoli cells (aSCs) from human biopsy samples (Wen et al., 2017). We focused our analysis on the differentially expressed genes (DEGs,>2 fold change, p-value<0.05) between 5F-hiSCs and dH1-2K7 and between aSCs and dH1-2K7. In total, 7533 genes were differentially expressed between 5F-hiSCs and dH1-2K7, including 4528 upregulated genes and 3005 downregulated genes (Figure 2A and B). Additionally, 5377 genes were differentially expressed between aSCs and dH1-2K7, including 3343 upregulated genes and 2034 down-regulated genes. The Venn analysis showed that 3626 genes were shared among the DEGs in both hiSCs and aSCs, accounting for approximately 67% of the DEGs in aSCs. Among this shared group of DEGs (CO-DEGs), 1973 genes were upregulated, while 1314 genes were down-regulated in both the hiSCs and aSCs (Figure 2C), indicating that the trends in transcriptional expression between the hiSCs and aSCs were the same in these genes. The cluster analysis of dH1-2K7, hiSCs and aSCs also showed that the CO-DEGs had a similar expression pattern between the hiSCs and aSCs, and consistency was observed between duplicate samples (Figure 2D). The Gene Ontology (GO) analysis of the CO-DEGs showed that among the 1973 upregulated genes, many genes were involved in the regulation of cell communication, regulation of immune response processes, response to hormones, and lipid metabolic process, whereas among the 1314 down-regulated genes, many genes were involved in the mitotic cell cycle and microtubule-based processes (Figure 2E). These changes in gene expression indicated that the hiSCs acquired unique cellular characteristics that were distinct from the original fibroblasts. To further confirm that the AMH:EGFP+ 5F-hiSCs have the signature of Sertoli cells, we examined the expression of several Sertoli cell markers, including CLU, NCAM2, DHH, ERBB4, INHB, INHA, SHBG, GATA6, CDKN1B, TGFα and LMMA3, by quantitative PCR (qPCR). Compared to the control cells, all Sertoli cell markers were highly enriched in the AMH:EGFP+ 5F-hiSCs (Figure 2F). Taken together, the transcriptional profile of the AMH:EGFP+ 5F-hiSCs resembled that of the aSCs, and many Sertoli cell markers were expressed.
 
@@ -55,9 +71,31 @@ To determine whether hiSCs reprogrammed with the 5TFs (5F-hiSCs) are similar to 
 
 **Figure 2.:** (A) Venn diagram to display differentially expressed genes (DEGs, FPKM value, fold change >2) between dH1-2K7_vs_aSCs (n = 2) and dH1-2K7_vs_5F-hiSCs (n = 2). Intersection part represents the number of co-differentially expressed genes (CO-DEGs). (B) Summary of DEGs in (A). X axis represents upregulated DEGs and downregulated DEGs. Y axis represents DEGs numbers. Comparisons of different sample sets were represented by different colors. Black bar represents dH1-2K7_vs_5F-hiSCs. Gray bar represents dH1-2K7_vs_aSCs. (C) Summary of CO-DEGs in (A). X axis represents CO-DEGs number. Black bar represents co-upregulated DEGs. Gray bar represents co-downregulated DEGs. Dark gray bar and light gray bar represent CO-DEGs in opposite trend, respectively. (D) Heat map of gene expression of dH1-2K7, 5F-hiSCs and aSCs (n = 2 in each group). Red indicates upregulated expression, green indicates downregulated expression. (E) Functional enrichment analysis, biological processes of 1973 and 1314 differentially expressed genes were showed. (F) The mRNA level of Sertoli cell markers in dH1-2K7, AMH:EGFP- cells and AMH:EGFP+ cells, as measured by qPCR. Relative expression was normalized to dH1-2K7. GAPDH was used as the housekeeping gene. All data are presented as means ± SD, n = 2, *p<0.05, **p<0.01, Dunnett’s test. three independent experiments were carried out.
 
-## NR5A1 and GATA4 are sufficient to reprogram fibroblasts to hiSCs as 5F-hiSCs
+### NR5A1 and GATA4 are sufficient to reprogram fibroblasts to hiSCs as 5F-hiSCs
 
 Although the 5TFs yielded the AMH:EGFP+ hiSCs, the combination of all 5TFs may not be necessary to reprogram fibroblasts to hiSCs. Therefore, we used fewer transcription factors to generate hiSCs and compared the percentage of AMH:EGFP+ cells in all 31 combinations of NR5A1, GATA4, SOX9, WT1 and DMRT1. The FACS results indicated that 16 combinations of transcriptional factors yielded varying levels of AMH:EGFP+ cells after 10 days of reprogramming (Figure 3A). NR5A1 was the only common factor found in all 16 combinations in AMH:EGFP+ cells. This transcriptional factor alone generated approximately 3.79% of AMH:EGFP+ cells, and the combination of all 5TFs produced the highest percentage of AMH:EGFP+ cells. Surprisingly, the combinations with NR5A1 and GATA4 generated as many AMH:EGFP+ cells as all 5TF combined. Moreover, all combinations containing NR5A1 and GATA4 resulted in a similar level higher than the combinations with NR5A1 (Figure 3B). The AMH:EGFP+ cells generated by 2TFs and 5TFs showed similar morphologies, including a large cell body with an epithelial morphology, and expressed KRT18 (Figures 1G and 3C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative FACS results of different combinations of NR5A1, GATA4, WT1, SOX9 and DMRT1 for the induction of AMH:EGFP+ cells. dH1 fibroblasts were transduced with the indicated factors and reprogrammed for 10 days. The combinations were divided into three groups: -NR5A1, combinations without NR5A1; +NR5A1, combinations with NR5A1 but without GATA4; +NR5A1 and GATA4, combinations with both NR5A1 and GATA4. (B) Quantitative data of EGFP+ cells in (A). n = 2, biological replicates, error bar indicates SD, three independent combination experiments were conducted. ~104 cells were analyzed in each experiment. (C) Immunofluorescent staining of KRT18 in 2F-hiSCs and dH1-2K7 after FACS. Scale bar = 100 μm. (D) Heat map of RNA-seq data illustrating differentially co-expressed genes. Red indicates upregulated expression, whereas green indicates downregulated expression. The genes were divided into three groups: Genes upregulated in 2F-hiSCs (dH1), 5F-hiSCs (dH1) and aSCs; genes upregulated in 5F-hiSCs (dH1) and aSCs but downregulated in 2F-hiSCs (dH1); genes downregulated in 2F-hiSCs (dH1), 5F-hiSCs (dH1) and aSCs; all compared to dH1-2K7. The gene number of each group was listed next to the map. Functional enrichment terms of each group and the representative genes were shown on the right side.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Red indicates higher expression and green indicates lower expression.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig3-figsupp2-v2.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** DAPI (blue) was used to indicate the nucleus. Scale bar = 50 μm.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Cytospin immunostaining of Leydig cell specific marker 3β-HSD in fibroblasts (dH1-2K7), 2F-hiSCs and adult Sertoli cells (aSCs). 18 dpp mouse testis freezing section was used as positive control cells. Scale bar = 50 μm. (B) FPKM values of some reported Leydig cell markers in dH1-2K7, 2F-hiSCs (dH1), 5F-hiSCs (dH1) and aSCs, according to RNA-seq data presented in Figure 2.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Expression of fibroblast markers in primary human skin fibroblasts (HSF) as measured by qPCR. Expression level in dH1 was normalized to the level of undifferentiated H1. All data are presented as means ± SD. (B) Cell morphology of reprogrammed HSF at day1, day2, day4 and day6 after infection by NR5A1 and GATA4. HSF transduced with p2k7 lenivirus was used as a control. Scale bar = 200 μm. (C) FACS analysis of AMH:EGFP+ cells at day 10 after NR5A1 and GATA4 virus infection, the percentage of EGFP+ cell was used to determine the induction efficiency. HSF transduced with p2k7 lentivirus was used as a control. (D) Immunofluorescent staining of KRT18 in AMH:EGFP+ hiSCs and HSF infected by p2k7 empty virus (CTRL) after FACS. Scale bar = 100 μm. (E) The mRNA level of Sertoli cell markers in AMH:EGFP- cells and AMH:EGFP+ cells as measured by qPCR. Fold expression was normalized to the levels of HSF infected by empty virus p2k7 (CTRL). ACTIN was used as the housekeeping gene for normalization. All data are presented as means ± SD, n = 2, *p<0.05, **p<0.01, dunnett-t test, three independent experiments were carried out.
 
 Then, we analyzed and compared the transcriptome of the 2F-hiSCs and with the transcriptome of the aSCs and 5F-hiSCs. We identified the common DEGs among the dH1/aSCs, dH1/5F-hiSCs (dH1), dH1/2F-hiSCs (dH1) and dH1/5F-hiSCs (HPF) and performed hierarchical clustering using their FPKM values. The analysis revealed that the transcriptome profiles of the 2F-hiSCs were more similar to the profiles of the 5F-hiSCs and adult Sertoli cells (aSCs) than to the dH1 and HPF profiles (data not shown). To identify the putative signature genes similar among the 2F-hiSCs, 5F-hiSCs and aSCs, we generated a heat map of the 1638 CO-DEGs and carried out gene correlation clustering. Notably, the differentially expressed genes were grouped into three groups of 512, 689 and 437 genes (Figure 3D). The Gene Ontology analysis showed that many of the 512 highly expressed genes mostly shared by the 2F-hiSCs, 5F-hiSCs and aSCs were involved in reproductive structure development, immune effector processes and response to hormones. These genes, including KRT18, PTGDS and SOX9, are used as markers of Sertoli cells or are highly expressed in Sertoli cells (Buganim et al., 2012; Sharpe et al., 2003). We further compared the expression of 59 genes that are highly expressed in Sertoli cells (Bouma et al., 2010; Boyer et al., 2004; Mincheva et al., 2018) among the 2F-hiSCs, 5F-hiSCs and aSCs. All three groups exhibited similar expression of many markers that are expressed in more mature Sertoli cells, including CDKN1B (or p27kip1) and CLU (Wang et al., 2016). However, some markers in the aSCs, including NCAM2, INHA and KRT18 (Kanatsu-Shinohara et al., 2012; Wang et al., 2016), were expressed at lower levels (Figure 3—figure supplement 1) than those in the other two hiSCs. The Sertoli cell marker expression was very similar between the 2F-hiSCs and 5F-hiSCs. Principal component analysis (PCA) indicated that aSCs, 2F-hiSCs (dH1), 5F-hiSCs (dH1) clustered closely, confirming their co-expressed gene profiles are similar (Figure 3—figure supplement 2). SOX9 expressed at similar level in aSCs, dH1 and 2F-hiSCs but not in undifferentiated hESCs, showing that SOX9 expression increased after hESCs became fibroblasts, and maintained similar expression during 2F-hiSC formation (Figure 3—figure supplement 3). Therefore, we focused on the 2F-hiSCs for the subsequent more thorough characterization.
 
@@ -65,29 +103,81 @@ Although we used AMH:EGFP reporter to isolate Sertoli-like cells, it was still p
 
 We also validated that NR5A1 and GATA4 was able to reprogram primary human skin fibroblasts (HSF) and yielded AMH:EGFP+ hiSCs (Figure 3—figure supplement 5A, B and C). 12.9% of AMH:EGFP+ cells were induced after overexpression of the 2TFs. KRT18 were only detected in the AMH:EGFP+ cells after induction along with other genes enriched in Sertoli cells (Figure 3—figure supplement 5D and E). These results further supported that 2TFs can reprogram other primary human cell types.
 
-## 2F-hiSCs attract human endothelial cells and accumulate lipid droplets
+### 2F-hiSCs attract human endothelial cells and accumulate lipid droplets
 
 Sertoli cells mediate the migration of endothelial cells to seminiferous tubules during testicular cord formation (Brennan et al., 2003; Cools et al., 2011). We investigated whether the hiSCs attracted human umbilical vein endothelial cells (HUVECs). The migration assay showed the number of HUVECs that were attracted and passed through the membrane was ~1.5 fold higher in both 2F-hiSCs and aSCs compared to the controls (Figure 4A,B). These results indicate that significantly more endothelial cells were attracted by the conditioned medium collected from the 2F-hiSCs than by that collected from the dH1-2K7 cells.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig4-v2.jpg)
+
+**Figure 4.:** (A) Mobility comparison of HUVECs incubated in conditioned medium collected from dH1-2K7, 2F-hiSCs and aSCs. Top, experimental diagram using the fluoroblok 24-multiwell insert plates with 8.0 μm pores. For observation, HUVEC were treated with 2.5 μM Calcein-AM fluorescent dye 1 hr prior to seeding. Down, fluorescent images showing cells passed through the pores. Conditioned medium collected from dH1-2K7 was used as control. Scar bar = 300 μm. (B) Summary of HUVEC cells crossing through the trans-well membrane. Each data point on the graph represents the number of cells in one separate image observed under 10 × fold microscope, area = 1690 × 1690 (μm). Error bars represent standard deviation of all the counted data points, n = 6, technical replicates, *p<0.05, **p<0.01, Student’s t-test. two independent experiments were carried out. (C) BODIPY staining of lipid droplets in dH1-2K7, 2F-hiSCs and adult Sertoli cells (aSCs). All cells were fixed with 4% PFA and then stained with BODIPY for lipid droplets and DAPI for nucleus. Scar bar = 50 μm. (D) Each data point on the graph represents number of BODIPY+ cells in one separate image observed under 20 × fold microscope, area = 275 × 275 (μm). Error bars represent standard deviations of all the counted data points, *p<0.05, **p<0.01, Student’s t-test. two independent experiments were carried out.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** All cells were fixed with 4% PFA and then stained with Oil-red O for lipid droplets. Bright field picture. Scar bar = 150 μm.
+
 Another unique feature of Sertoli cells in humans and other mammalian species is the accumulation of lipid droplets in the cytoplasm (Gorga et al., 2017; Wang et al., 2006). The Gene Ontology analysis showed that genes that participate in lipid metabolism processes were upregulated in the 2F-hiSCs, 5F-hiSCs and aSCs (Figure 3D), supporting the presence of high numbers of lipid droplets in the hiSCs. We used BODIPY to stain and count the number of cells with high numbers of lipid droplets to determine whether lipid droplets appeared in the 2F-hiSCs. The average percentage of cells that exhibited strong BODIPY positivity was approximately 15%, 40% and 60% in the control cells, 2F-hiSCs, and aSCs respectively (Figure 4C,D). Therefore, the percentage of cells containing high quantities of lipid droplets was higher in both 2F-hiSCs and aSCs than that in the dH1-2K7 cells. Oil-red O staining also confirmed the same result showing lipid droplet enrichment in 2F-hiSCs and aSCs (Figure 4—figure supplement 1).
 
-## 2F-hiSCs sustain in vitro culturing of mouse spermatogonia cells
+### 2F-hiSCs sustain in vitro culturing of mouse spermatogonia cells
 
 Mouse spermatogonia cells were isolated from seminiferous tubules of 6 dpp mice according to established protocols and co-cultured with dH1 or 2F-hiSCs to examine whether 2F-hiSCs sustain the growth of male germ cells (Figure 5A, Figure 5—figure supplement 1A, B, C, D, E and F). The observations that more mouse germ cells attached and survived on the 2F-hiSCs than dH1 cells began at approximately 12 hr of co-culturing (Figure 5—figure supplement 1G). The morphology of the round cells attached to the hiSCs appeared alive and resembled spermatogonia cells but the cells attached to dH1 appeared apoptotic and degenerated. After 48 hr of co-culturing, the samples were fixed and immunostained to further confirm that the 2F-hiSCs formed attachments with the spermatogonia cells. The immunostaining of the germ cell-specific marker DAZL (to identify mouse spermatogonia cells) and human-nuclear specific marker NuMA (to identify hiSCs and dH1) indicated that significantly more DAZL-positive spermatogonia cells attached to the hiSCs, but almost no DAZL-positive cells attached to the dH1 cells despite the similar numbers of plated hiSCs and dH1 cells (Figure 5B and C). Similar immunostaining patterns were observed when aSCs were co-cultured with mouse spermatogonia cells (Figure 5—figure supplement 2). Sertoli cells directly contact male germ cells in seminiferous tubules in vivo, and we hypothesized that the hiSCs would directly contact the spermatogonia cells. We immunostained the co-cultured cells with DAZL and KRT18 and found that many DAZL-positive cells localized to areas occupied by hiSCs, typically at the edge of the cell bodies (Figure 5D).
 
-## 2F-hiSCs suppress T cell proliferation, IL-2 production and protect transplanted human cells
+![Figure 5.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig5-v2.jpg)
+
+**Figure 5.:** (A) Timeline and steps of co-culturing hiSCs with mouse germ cells. (B) Immunofluorescent staining of germ cell marker, DAZL (green), and human specific marker, NuMA (red), in co-cultured mouse spermatogonia cells with 2F-hiSCs or dH1-2K7 48 hr after plating. DAPI (blue) was used to indicate the nucleus. Scale bar = 50 μm. (C) Summary of cell numbers on the co-cultured plate in (B). Each data point indicates the number of cells counted in one separate image observed under 20 × fold microscope, area = 330 × 330 (μm). Error bars are the standard deviations of all the counted data points. dH1-2K7 (n = 18, technical replicates from two separated experiments), 2F-hiSCs (n = 25, technical replicates from two separated experiments). *p<0.05, **p<0.01, Student’s t-test. (D) Immunofluorescent staining of DAZL (green) and KRT18 (red) in co-cultured mouse spermatogonia cells and 2F-hiSCs 48 hr after plating. DAPI (blue) was used to indicate the nucleus. Scale bar = 50 μm. (E) Summary of cell numbers on the co-cultured plate in (D). Each data point indicates the number of cell counted in one separate image observed under 20 × fold microscope, area = 282 × 330 (μm). Error bars are the standard deviations of all the counted data points. dH1-2K7 (n = 4, technical replicates from two separated experiments), 2F-hiSCs (n = 9, technical replicates from two separated experiments). *p<0.05, **p<0.01, Student’s t-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) Bright field images of mouse seminiferous tubules after plating on culture plate. Arrow indicates location of spermatogonia cells attached to Sertoli cells. (D) Immunostainning of germ cell marker, DAZL, and Sertoli cell marker, SOX9, in cultured mouse seminiferous tubules. (E) Immunostainning of germ cell marker, DAZL and VASA, in cultured mouse seminiferous tubules. (F) Isolated spermatogonia cells immunostained with DAZL and VASA. (G) Isolated mouse spermatogonia cells plated on 2F-hiSCs or dH1-2K7. Bright field image was taken after 12 hr culturing. More round and healthy cells (arrow heads) attached to hiSCs than dH1-2K7 cells. Scale bar = 10 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** DAPI (blue) was used to indicate the nucleus. Scale bar = 50 μm. Summary of cell numbers on the co-cultured plates was shown on the left. Each data point indicates the number of cell counted in one separate image observed under 20 × fold microscope, area = 282 × 330 (μm). Error bars are the standard deviations of all the counted data points.
+
+### 2F-hiSCs suppress T cell proliferation, IL-2 production and protect transplanted human cells
 
 A specialized property of Sertoli cells is their functional role in creating an immune-privileged environment in seminiferous tubules to protect germ cells from immunological attacks. Previous studies have shown this unique function, which has been exploited in therapeutic transplantation for the protection of many other cell types (Kaur et al., 2015). We first investigated whether the medium from the 2F-hiSCs cells exhibited any suppressive effect on the proliferation of Jurkat E6 cells (human T lymphocytes) to examine whether the 2F-hiSCs could suppress the immunoreaction of immunological cells. The suppressive effect was evaluated using an assay commonly used to determine the active metabolism of a proliferating cell, that is, WST-1 (Chui et al., 2011; Figure 6A). The Jurkat E6 cells were treated with various concentrations of 2F-hiSCs-conditioned medium or aSCs-conditioned medium and exhibited a significant dose-responsive decrease in cell proliferation compared to that in cells treated with dH1-2K7-conditioned medium (Figure 6B). The proliferation level was ~35% lower in the Jurkat lymphocytes exposed to the highest concentration of the 2F-hiSC-conditioned medium or aSCs-conditioned medium. We collected the Jurkat cells and analyzed the protein levels of interleukin-2 (IL-2), which plays an essential role in the immune system. The ELISA indicated that the IL-2 levels were significantly lower in the cells cultured with the 2F-hiSCs-conditioned or aSCs-condictioned medium than those in the cells cultured with the dH1-2K7-conditioned medium (Figure 6C, figure 6-figure supplement 1C). 22 genes previously known to participate in immune-modulation (Kaur et al., 2014; Mital et al., 2010) or categorized as immune effector gene by gene ontology were activated after reprogramming of dH1 (Figure 6D), further supported that hiSCs acquired immunosuppressive function.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematic illustration of the WST-1 assay to measure the inhibiting effect of 2F-hiSCs on Jurkat-E6 cell proliferation. Cleavage of the tetrazolium salt WST-1 by metabolically active cells results in the formation of formazon. The level of formazon is directly proportional to the proliferation level of the Jurkat cells. (B) Measurement of proliferation level in Jurkat cells treated with dH1-2K7, 2F-hiSCs or adult Sertoli cell (aSCs) conditioned medium. X axis represents the indicated proportion of conditioned medium tested in experiment. Conditioned medium from dH1-2K7 was used as a control. Values are presented as means ± SD and are from two separate experiments with each concentration tested in triplicate; Dunnett’s test was carried out among samples at 80% CM, *p<0.05, **p<0.01. (C) Histogram showing the production of human IL-2 in lymphocytes treated by dH1-2K7 or 2F-hiSCs conditioned medium, as measured by ELISA. Error bars represent standard deviation of three technical duplicates from two separate experiments, *p<0.05, **p<0.01, Student’s t-test. (D) A cluster of known immune-modulating genes for Sertoli cell immunoprotection. Relative gene expression level was indicated as red (upregulated) or green (downregulated). (E) Live imaging of luciferase-tracking assay 3 days to 10 days after transplantation. ~1.3 × 106 293 FT cells were subcutaneously injected into the indicated sites of the mouse #1 with 2 × 105 dH1-2K7 or 2F-hiSCs cells. Cell type and location of transplantation are indicated at left. Numbers in red represent primary readings of luciferase activity. The normalized fold change of luciferase cell activity between hiSCs and dH1-2K7 in each time point was summarized in the table.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Live imaging of luciferase tracking assay at day3, day6 and day10 after transplantations in mouse #2. 1.3 × 106 293 FT cells were subcutaneously injected with 2 × 105 dH1-2K7 or 2F-hiSCs into the indicated sites of the mouse. Cell type and location of transplantation is indicated on the left. Numbers in red indicate primary readings of luciferase activity. The normalized fold change of luciferase cell activity between hiSCs and dH1-2K7 in each time point was summarized in the table. (B) Live imaging of luciferase-tracking assay at day4, day6 and day8 after transplantations in mouse #3 (male) and mouse #4 (female).~1.0 × 106 293 FT cells were subcutaneously injected with 2 × 105 dH1-2K7 or adult Sertoli cells (aSCs) into the indicated sites of the mouse. Cell type and location of transplantation is indicated on the left. Numbers in red indicate primary readings of luciferase activity. The normalized fold change of luciferase cell activity between aSCs and dH1-2K7 in each time point was summarized in the table. (C) Graph showing the production of human IL-2 in lymphocytes treated by CTRL(dH1-2K7) or aSCs conditioned medium, as measured by ELISA. Error bars represent standard deviation of three technical duplicates from two separate experiments, *p<0.05, **p<0.01, Student’s t-test.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A–B) Immunofluostaining of human NuMA and NR5A1, respectively in xenograft site of 293FT+dH1-2K7 or 293FT+2F-hiSCs collected at day10. Scale bar = 50 μm.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Comparison between fibroblasts and 2F-hiSCs in their capability to form spherical cellular aggregates when cultured with 10% FBS on 50% matrigel coated plate for 72 hr. Green channel represents the signal from AMH:EGFP reporter. Scale bar = 500 μm. (B) Comparison between dH1-2K7 fibroblast and 2F-hiSCs in their capability to form ring-like structures when cultured with 2% FBS for 72 hr on 10% Matrigel coated plate.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig6-figsupp4-v2.jpg)
+
+**Figure 6—figure supplement 4.:** (A) EDU staining in dH1-2K7 (CTRL) and 2F-hiSCs. All cells were fixed with 4% PFA and then stained with EDU for lipid droplets and DAPI for nucleus. Scale bar = 200 μm. (B) Quantifications of EDU positive cells in each image. Image area = 1250×1250 (μm).
+
 Approximately, 1.3 × 106 human 293FT cells stably integrated with a luciferase-expressing vector were co-transplanted with 2.5 × 105 dH1-2K7, 2F-hiSCs or aSCs into mice with normal immune systems via hypodermic injection to determine whether the 2F-hiSCs could protect xenotransplanted cells. The transplantation experiment was performed to investigate the immunosuppressive effects at different locations (foreleg, hindleg, left and right sides of the animals as indicated on the figures) in different animals, and the transplanted sites were monitored for up to 10 days. D-luciferin was injected into the animals to follow the surviving transplanted 293FT cells, and the signal was monitored using live imaging 15 min post-injection beginning 3 days after transplantation. The transplanted 293FT cells gradually diminished in the immunocompetent mouse from day 3 to day 10 (mouse #1, #2) as indicated by the reduced luciferase activity at the transplanted sites (Figure 6E, Figure 6—figure supplement 1A). All 293FT cells co-transplanted with hiSCs exhibited higher luciferase activity, which ranged from 1.7- to 3.9-fold, 3 days after transplantation. Three of the four groups of transplanted cells survived until day 10, and two of the three groups of 293FT cells with hiSCs survived at least 10 days after transplantation with strong luciferase activity. In contrast, their counterpart control cells exhibited less than 40-fold or no detectable luciferase activity (mouse #1 foreleg group and mouse #2 hindleg group). Similar level of protection was observed when the same number of 293FT cells were transplanted with aSCs into mouse #3 and #4 (Figure 6—figure supplement 1B). The transplants at day 10 were collected and dissected to examine the remaining cell types. NuMA staining indicated that there were many human cells survived in the transplants of 2F-hiSCs and some cells clustered together as cell aggregates (Figure 6—figure supplement 2A). These human cells could be 293FT cells or 2F-hiSCs. Positive immunostainings of NR5A1 confirmed the existence of 2F-hiSCs in the transplant but not the control transplant or the surrounding mouse tissue (Figure 6—figure supplement 2B).
 
-## hiSCs forms cell aggregates and do not actively proliferate
+### hiSCs forms cell aggregates and do not actively proliferate
 
 Mouse Sertoli cells forms cell aggregates during in vitro culturing (Buganim et al., 2012). 2F-hiSCs also exhibited similar morphology of spherical cellular aggregates when cultured in 10% FBS on matrigel (Figure 6—figure supplement 3A). Different from the mouse Sertoli cells, we observed formation of partial ring-like structures when 2F-hiSCs were cultured in 2% FBS medium (Figure 6—figure supplement 3B). Adult human Sertoli cells tend to be more quiescent and less proliferative (Sharpe et al., 2003). We examined the proliferation of 2F-hiSCs by EDU staining and found that these cells were not proliferative (Figure 6—figure supplement 4A and B).
 
-## CX43 deletion disrupts gap junctions and alters the expression profile of hiSCs
+### CX43 deletion disrupts gap junctions and alters the expression profile of hiSCs
 
 We investigated whether the deletion of the gap junction protein CX43 could affect hiSCs formation and determined whether hiSCs exhibit the same genetic requirements for development as Sertoli cells in vivo. We created a homozygous deletion of CX43 hESC line, derived fibroblasts from this line and compared the reprogramming efficiency of the hiSCs (Figure 7A). We successfully generated three targeted mutations at CX43, that is, one single allele mutation (6#) and two double allele mutations (21# and 26#) at Exon 2 of the CX43 gene, using a CRISPR-CAS9 gene editing system (Figure 7B). The protein expression was completely disrupted in the CX43-/- (21#) and CX43-/- (26#) cell lines, but the heterozygous protein level remained similar to the wild-type CX43 level based on the Western blot analyses (Figure 7—figure supplement 1A). The immunostaining of CX43 (Figure 7C) and photo bleaching assay (Figure 7D and E) of ES-derived fibroblasts (dH1) both showed that the expression of CX43 and gap junctions between neighboring cells were disrupted because there was no detectable CX43 staining or diffusing fluorescent dye recovered after photo bleaching in the CX43-/- (26#) cell line.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig7-v2.jpg)
+
+**Figure 7.:** (A) Schematic diagram showing the comparison of 2F-hiSCs cells reprogrammed from CX43 knock out fibroblasts and wild type fibroblasts. (B) CX43 knockout design and the targeted sequences of indicated hESC lines. The knockout region was located in the second exon of the CX43 gene. Three knockout cell lines were correctly targeted and mutated: one was heterozygous (06#) and the other two were homozygous (21# and 26#). Dotted lines indicate deletion mutations, red triangles indicate insertion mutations. (C) Immunofluorescence analysis of CX43 (red) in wild type ES cell line (01#) and knock out cell line (26#). DAPI (blue) was used to indicate the nucleus. Scale bar = 20 μm. (D) Photo bleaching assay to test the Calcien AM transport ability of fibroblasts differentiated from wild type ES cell line (01#) and knock out cell lines (26#). (E) Measurement of Calcien AM signal over time after fluorescence bleaching. (F) Time course experiment during 2F-hiSCs reprogramming. The AMH:EGFP+ percentage resulted from three initial fibroblasts were tested: wild type dH1 (WT), CX43 knock out dH1 (CX43KO) and CX43 knock out plus CX43 overexpressed dH1 (OE CX43-CX43KO). (G) Summary of 2F-hiSCs reprogramming efficiency in (F). WT fibroblasts (WT) and CX43KO fibroblasts infected by p2k7 empty virus were also included. (H) Hierarchical clustering analysis using DEGs (FPKM value, fold change >2) in Figure 7—figure supplement 2B. Genes were classified into eight parts according to their expression pattern in CX43 knock out dH1, CX43KO 2F-hiSCs, wild type dH1 and wild type 2F-hiSCs. Gene Ontology analysis of genes in part 2, 3, 7, eight was shown on the right respectively. Other groups were shown in Figure 7—figure supplement 2C. (I) Heat map indicating expression level of immature and mature Sertoli cell markers in WT and CX43KO 2F-hiSCs. Relative gene expression level was indicated as red (upregulated) or green (downregulated).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Western blot analysis of CX43 expression in wild type ES cell line (01#) and knock out cell lines 06#, 21# and 26#. The loading control is GAPDH. (B) FACS analysis of AMH:EGFP+ cells in control groups without overexpression factors (WT versus CX43KO cell lines), from day2 to day25. No GFP+ cell or very few GFP+ was detected using the same setting as in Figure 7f.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/48767/elife-48767-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Volcano plot of DEGs between CX43 knock out 2F-hiSCs versus wild type 2F-hiSCs. Y axis represents -log10 of p-value, X axis represents log2 transformed fold change (FPKM, CXKO-2F-hiSCs/2F-hiSCs). Points in red represent significantly upregulated DEGs (fold change >2). Points in blue represent significantly downregulated DEGs (fold change <= 2). Black points represent non-DEGs. Cutoff for log2 (fold change) is 1. Cutoff for p-value is 0.01. (B) The number of significance DEGs (>2 folds) between CX43KO 2F-hiSCs and WT 2F-hiSCs. Brown bar indicates upregulated genes (242) and orange bar indicates downregulated genes (512). (C) Hierarchical clustering analysis using significance DEGs from (B) (>2 folds). Genes were classified into eight parts according to the expression pattern in CX43 knock out dH1, CX43 knock out 2F-hiSCs, wild type dH1 and wild type 2F-hiSCs. Gene Ontology analysis of genes in part 1, 4, 5, six was shown on the right, respectively.
 
 We compared the reprogramming efficiency of the 2F-hiSCs between the wild-type dH1 and CX43KO (CX43-/- (#26)) cell lines. The time course experiments showed that the percentage of AMH:EGFP+ in the WT hiSCs peaked at ~13.8% on day 15 and decreased to 3.3% on day 25 (Figure 7F and G; Figure 7—figure supplement 1B). Remarkably, the percentage of AMH:EGFP+ in the CX43-/- (#26) cell line was 23.9% on day 15 and decreased to 18.5% on day 25, but the overexpression of CX43 in the deletion cell line revealed a much lower percentage of AMH:EGFP+ from days 4 to 25. Therefore, the expression level of CX43 in the cells was indirectly proportional to the percentage of AMH:EGFP+ cells. This result is consistent with the higher AMH expression in CX43 knockout mice reported in a previous study (Weider et al., 2011) and suggests that the effect of the CX43 deletion leads to the dedifferentiation of Sertoli cells to a less mature state.
 
@@ -111,13 +201,282 @@ Reprogrammed Sertoli cells may be used as a model for examining the cellular and
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
 
-## Animal Care and Use
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mouse</td>
+      <td>C57BL/6</td>
+      <td>Vital River Laboratory Animal Technology</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>293FT cells</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# R70007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>H1 ES cells</td>
+      <td>WiCell Research Institute</td>
+      <td>Cat# WA01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Human Pulmonary Fibroblasts</td>
+      <td>National Infrastructure of Cell Line Resource</td>
+      <td>Cat# CCC-HPF-1 (PUMC, Beijing)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>p2k7-EF1alpha-NR5A1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral construct to express target gene</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>p2k7-EF1alpha-GATA4</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral construct to express target gene</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>p2k7-EF1alpha-SOX9</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral construct to express target gene</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>p2k7-EF1alpha-WT1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral construct to express target gene</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>p2k7-EF1alpha-DMRT1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral construct to express target gene</td>
+    </tr>
+    <tr>
+      <td>Transfected construct</td>
+      <td>p2k7-EF1alpha-luciferin</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral construct to express target gene</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo-sapiens)</td>
+      <td>p2k7-EF1alpha-CX43</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral construct to express target gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p2k7-AMH-GFP</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Lentiviral construct for AMH reporter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pX335-U6-Chimeric_BB-CBh-hSpCas9n(D10A)</td>
+      <td>Addgene #42335</td>
+      <td></td>
+      <td>Expressing Cas9 and gRNA (Cong et al., 2013)</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo-sapiens)</td>
+      <td>Primary adult human Sertoli cells</td>
+      <td>Shanghai Jiao Tong University</td>
+      <td></td>
+      <td>Freshly isolated</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DAZL(Mouse polyclonal)</td>
+      <td>AbD Serotec</td>
+      <td>Cat#: MCA2336; RRID: AB_2292585</td>
+      <td>IF(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NuMA (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: Ab97585; RRID: AB_GR27454-16</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human KRT18 (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>10830–1-AP</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SOX9 (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: Ab170660; RRID: AB_GR155689-1</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human CX43 (Rabbit polyclonal)</td>
+      <td>Cell Sigaling</td>
+      <td>Cat#: 3512S</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human DMRT1 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#: Ab1786</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human WT1 (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat#: 12609–1-AP</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human GATA4 (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat#: 19530–1-AP</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human NR5A1 (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat#: 18658–1-AP</td>
+      <td>IF(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>Cat#: A-21202; RRID: AB_141607</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>donkey anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 555</td>
+      <td>Invitrogen</td>
+      <td>Cat#: A-31572; RRID: AB_1567203</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>TransStbl3 Chemically Competent Cell</td>
+      <td>TransGen Biotech</td>
+      <td>Cat#: CD521</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>bFGF, Recombinant Human FGF basic Protein</td>
+      <td>R and D Systems</td>
+      <td>Cat#: 233-FB-CF</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>G418, Geneticin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 10131035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blasticidin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: R21002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm, website</td>
+      <td>ImageJ</td>
+      <td>NIH</td>
+      <td></td>
+      <td>https://imagej.nih.gov/ij/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm, website</td>
+      <td>FlowJo (v10.3)</td>
+      <td>BD</td>
+      <td></td>
+      <td>https://www.flowjo.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm, website</td>
+      <td>Prism7 (v7.0 a)</td>
+      <td>Graphpad Software</td>
+      <td></td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DAVID Bioinformatics Resources (v6.8; GO)</td>
+      <td></td>
+      <td></td>
+      <td>https://david.ncifcrf.gov</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm, website</td>
+      <td>Tophat2/cufflinks</td>
+      <td>(Kim et al., 2013)</td>
+      <td></td>
+      <td>http://ccb.jhu.edu/software/tophat</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm, website</td>
+      <td>R (v3.4.1; PCA, cluster and DEG)</td>
+      <td></td>
+      <td></td>
+      <td>https://www.R-project.org</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI stain</td>
+      <td>Invitrogen</td>
+      <td>D1306</td>
+      <td>(1 µg/mL)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
+
+#### Animal Care and Use
 
 C57BL/6 mice were purchased from Vital River Laboratory Animal Technology Co., Ltd (Beijing, China). All animal maintenance and experimental procedures were performed according to the guidelines of the Institutional Animal Care and Use Committee (IACUC) of Tsinghua University, Beijing, China.
 
-## Cell Lines
+#### Cell Lines
 
 Human ES cell line used in this study were H1 (XY), purchased from WiCell, Inc Undifferentiated H1 were maintained on MEF feeder cells as previous described (Jung et al., 2017). All cells were cultured at 37°C in a humidified incubator supplied with 5% CO2. ES medium were standard knockout serum replacer (KSR) consisted of 20% knockout serum replacer, 0.1 mM nonessential amino acids, 1 mM L-glutamine, 0.1 mM -mercaptoethanol, and 4 ng/ml recombinant human basic fibroblast growth factor (bFGF, R and D systems).
 
@@ -129,64 +488,64 @@ Human umbilical vein endothelial cells (HUVEC) were a gift from Professor Jie Na
 
 All of the cells above were cultured in a 37°C humidified incubator supplied with 5% CO2.
 
-## Method details
+### Method details
 
-## Overexpression vector construction and lentivirus production
+#### Overexpression vector construction and lentivirus production
 
 All overexpression vectors carrying EF1α promoter and desired gene were constructed using the Gateway system (Invitrogen) as previously described (Jung et al., 2017). Briefly, the candidate cDNA was first introduced into pENTR/1A or pENTR/D-topo donor vectors and transferred to 2K7 destination vectors with EF1α promoter in pENTR/5’ topo by LR recombination (Suter et al., 2006). Modified destination plasmids containing the cDNA were then introduced into 293FT cells together with the helper plasmids vsvg and ∆8.9 by LIPO3000 (Invitrogen) transfection to produce virus. Approximately, a total of 37 ml of virus supernatant was harvested on day1 and day3 after transfection and filtered with a 0.45 μm filter. At the time of virus infection, 8 μg/ml of polybrene was supplemented to increase infection efficiency.
 
-## AMH:EGFP reporter and creating reporter cell line
+#### AMH:EGFP reporter and creating reporter cell line
 
 1.6 kb of human AMH promoter upstream of the transcriptional start site was PCR amplified from genomic DNA of 293FT cells and cloned to pENTR5’-TOPO. Cloned plasmids were then recombined with pENTR/D-TOPO that carried the EGFP cDNA to create p2K7-AMH:EGFP recombinant plasmid and generated lentiviral supernatant as described above in overexpression vector construction section. Fibroblast HPF or dH1 in early passage (with 50% confluence) were transduced overnight on plate in fibroblast medium and recovered for one day after removal of virus. Subsequent drug selection by blasticidin (10 μg/ml) required another 3 days. Selected human fibroblasts were passaged for two times to expand the cell number for further experiments or frozen in liquid nitrogen.
 
-## hiSC reprogramming and enrichment by FACS
+#### hiSC reprogramming and enrichment by FACS
 
 Sertoli-like cell reprogramming was carried out in a T75 flask coated with Matrigel (1%). In brief, 1.5 × 105 human fibroblast cells carrying AMH:GFP reporter were seeded into T75 flask 1 day prior to overnight transduction with lentivirus NR5A1, GATA4, DMRT1, SOX9 and WT1 (for 5F-hiSCs) or NR5A1 and GATA4 (for 2F-hiSCs), recovered for 24 hr, following by drug selection with geneticin (1 mg/ml) for 5 days in MEF medium. After drug selection, transduced cells were cultured in DF12 medium, maintained for the indicated reprogramming duration, and harvested for FACS by digestion with TrypLE Express (Invitrogen). The single cell suspension for FACS was prepared with MACS medium (10% FBS in PBS with 0.0125 mM EDTA) and filtrated through a BD cell sorter. Cell sorting was proceeded on a high-speed cell sorter (Influx, BD) and was sorted to collecting tube containing DF12 medium.
 
 Experiment aiming at examining different combinations of reprogramming factors was performed in six well plates and all possible combinations of NR5A1, GATA4, DMRT1, SOX9 and WT1 were tested. At the time of virus infection, 200 ul of each virus was added per well, and brought to the same final volume of 1 ml with p2k7 empty virus.
 
-## Quantitative PCR and statistical analysis
+#### Quantitative PCR and statistical analysis
 
 Quantitative PCR was conducted as previously described (Jung et al., 2017). Briefly, total RNA was collected according to the instructions provided by QIAGEN RNeasy kit (QIAGEN) or TRIZOL (Invitrogen). CDNA was generated by EasyScript One-Step gDNA Removal and cDNA Synthesis SuperMix kit (TRANSGEN) according to manufacturer’s protocols using up to 500 ng RNA for each sample. 20 μl reaction (for Bio-rad 96-well System) were prepared and conducted with TransStart Green qPCR SuperMix kit (TRANSGEN). Gene expression was calculated using Bio-Rad CFX Manager program for relative expression formulation (dC(t)) and normalized to housekeeping genes (ACTB or GAPDH). Then, the gene expression of different samples were again normalized to the expression of control cells infected by p2k7 empty virus (CTRL) and reported as fold change (Vandesompele et al., 2002). Statistical analysis was carried out using Student’s t-test or one-way ANOVA by Prism 6.0 software.
 
-## RNA sequencing
+#### RNA sequencing
 
 ~2.5 × 105 cells were collected by FACS and total RNA was extracted by TRIZOL (Invitrogen). The quality and integrity of the purified RNAs were checked by Agilent 2100 bioanalyzer. Qualified RNA from the following samples was used for RNA Sequencing analysis: (1) HPF or dH1 carrying AMH:EGFP reporter, transduced with empty virus p2k7 and followed the same reprogramming procedure as described above. (2) Day10 hiSCs generated with five factors (5F-hiSCs) or generated with two factors (2F-hiSCs). (3) Human primary adult Sertoli cells (aSCs) cultured in vitro in DMEMF12 medium + 10% FBS. Sequencing libraries preparation and sequencing operations were carried out by ANNOROAD, a company providing RNA sequencing service, complied with the whole set of processes from Illumina.
 
-## Immunofluorescence of cultured cells
+#### Immunofluorescence of cultured cells
 
 Dissociated cells from FACS enrichment were collected onto a slide by Cytospin (800 r.p.m. for 5 min) or replated onto a 6-well plate. After that, cells were washed one time with PBS, fixed in 4% paraformaldehyde for 10 min and treated with 2.5% Triton X-100 for 15 min. For antibodies staining, slides were first blocked in 2.5% donkey serum for 1 hr, then incubated overnight in 4°C with primary antibody (1:200 for KRT18, 1:100 for NuMA, 1:200 for CX43, 1:100 for VASA, all rabbit-derived, Abcam; 1:50 for DAZL, mouse-derived, AbD Serotec; 1:100 for NR5A1, GATA4, WT1, SOX9, DMRT1, all rabbit-derived, Proteintech). Slides were then washed five times (each 3 min) with PBST (0.1% Tween-20/PBS), followed by anti-rabbit secondary antibodies (anti-rabbit-555 or anti-rabbit-488, Invitrogen) incubating for 1 hr at room temperature and washing for another five times. All sections were then mounted with Prolong Diamond Anti-Fade Mounting Reagent (ThermoFisher) and cover slip.
 
-## Effect of 2F-hiSCs conditioned medium on Jurkat cell proliferation and IL-2 production
+#### Effect of 2F-hiSCs conditioned medium on Jurkat cell proliferation and IL-2 production
 
 1 ml conditioned medium were collected from 3.5 × 104 of 2F-hiSCs or dH1-2K7 fibroblast (control) cultured at 50% confluence 48 hr after plating. For each assay, 2 × 104 human T lymphocytes (Jurkat E6-1 cells, gift from Professor Hai Qi, Tsinghua University) were seeded in 1 well of 96-well plate with 120 μl 1064 medium with 10% FBS, 0.1 mM nonessential amino acids, 1 mM L-glutamine, 0.1 mM–mercaptoethanol and added with indicated amount of conditioned medium from either 2F-hiSCs or dH1-2K7 (as control). The Jurkat cells were then cultured in a 37°C incubator with 5% CO2 for 3 days. Metabolism of WST-1 was used to determine the proliferative ability of lymphocytes in each well according to manufacturer’s instructions (Beyotime, Co., Ltd.). Three hours prior to analysis, 12 μl of WST-1 was added to each well and the final absorbance was measured by a microplate reader at 450 nm (SPECTRA max PLUS, Molecular Devices Inc). 1064 medium alone with WST-1 was used as a control to subtract background absorbance. For IL-2 quantification, 2 × 105 of Jurkat cells were seeded in one 6-well plate containing either 50% 2F-hiSCs or dH1-2K7 conditioned medium and cultured for 3 days. Then, cells were collected and lysed with 20 μl RIPA buffer. The concentration of IL-2 was determined by ELISA kit according to the manufacturer’s instructions (Cusabio Biotech, Co., Ltd.).
 
-## Cell migration assays
+#### Cell migration assays
 
 Confluent P8 HUVEC cells were cultured with fresh ECM medium overnight before experiment. Then cells were incubated with medium containing 2.5 μM Calcein-AM fluorescent dye for one hour in incubator supplied with 37°C, 5% CO2. Cells were then trypsinized, counted and suspended in migration medium (50% ECM+50% MEF medium). Migration assays were carried out in Corning FluoroBlok 24-multiwell insert plate with 8.0 μm pores (Cat. No. 351157. Corning). Prior to seeding HUVEC (150 k, in 100 μl volume) into the insert, 50% conditioned medium pre-incubated with hiSCs or dH1 was mixed with 50% ECM and added to the basal chamber (600 μl in total). Following incubation of HUVECs at 37°C, 5% CO2 needed for 20 hr. The migration cells passed through the membrane were monitored by Calcein-AM with the help of an inverted microscope (Leica) at 485/535 nm (Ex/Em). Images were captured using Leica-Pro software provided by the microscope company. The number of migration cell was measured by calculating of the Calcein-AM green signal of each image.
 
-## Mouse spermatogonia isolation and coculture with 2F-hiSCs
+#### Mouse spermatogonia isolation and coculture with 2F-hiSCs
 
 Mouse spermatogonia cells were isolated from ~24 testis of C57BL/6 mice at day six after birth according to previous protocol with minor modifications (Kanatsu-Shinohara et al., 2003; Wang et al., 2015). Briefly, the decapsulated testis and seminiferous tubules were detached with the help of tweezers. After washing with DPBS for three times, the seminiferous tubules were transferred to a new 15 ml tube and subjected to enzymatic digestion. Firstly, the seminiferous tubules were digested with 1 mg/ml collagenase IV for 5 min at 37°C in a water bath with shaking, then centrifuged at 50 × g to collect the segregated tubules and washed three times with DMEM/F12 medium. The small fragments were resuspended in 2 ml culture medium composed of DMEM/F12 medium with 10% FBS and seeded on 2 wells of 6-well plates (Corning) and incubated at incubator supplied with 37°C, 5% CO2. After attachment for 24 hr, the somatic cells were tightly attached to the dish and formed patches, while spermatogonia were just loosely attached on the somatic cells. The spermatogonia were then transferred to a new plate coated with 1% matrigel and cultured for two passages in the medium (DMEM/F12 medium, 20% KSR, 100 × Glutamax, 100 × NEAA, 100 × Pen/Strep, human GDNF 20 ng/mL, human bFGF 5 ng/mL). 24 hr prior to co-culturing experiments,~1.5 × 105 dH1 or 2F-hiSCs were plated to 1 well of the 48 well plate. The spermatogonia cells were collected by gently washing with fresh medium and transferred to the well plated with the dH1 or 2F-hiSCs in DMEM/F12 medium with 10% FBS.
 
-## Co-transplantation of hiSCs with 293FT cells
+#### Co-transplantation of hiSCs with 293FT cells
 
 All animal experiments were approved by the Institutional Animal Care and Use Committees at Tsinghua University. ~ 1.3 × 106 number of 293FT cells stably transduced with a luciferase reporter were mixed with 2.5 × 105 cells of either dH1 or 2F-hiSCs in 100 μl Matrigel. The suspension was transplanted into C57BL/6 (Purchased from Vital River Laboratory Animal Technology) mice with normal immune system by subcutaneous injection. Live imaging of transplanted mice was performed at the indicative day after transplantation. 15 min prior to live imaging, 100 μl of D-luciferin (15 mg/ml, 10 μL/g mouse weight) was injected to the mice by intraperitoneal injection and luciferase activity was measured in the IVIS Spectrum machine (PerkinElmer Health Sciences, Inc).
 
-## BODIPY and Oil Red O staining of lipid droplets
+#### BODIPY and Oil Red O staining of lipid droplets
 
 Cells were washed with PBS and fixed with 4% PFA for 15 min. For BODIPY staining, cells were stained with BODIPY (Invitrogen, working solution1 μg/ml) at room temperature for 15 min and washed in PBS for three times. Then, mounted cells with Prolong gold anti-fade reagent (Invitrogen).
 
 For Oil Red O staining, 0.5% Oil Red O Stock Solution (in isopropanol) was used. Staining solution contains 6 parts of stock Oil Red O and 4 parts of distilled water, filtered with Whitman paper before used. After cell fixation, stained the cells with 1 ml staining solution for 15 min, then clear background using 60% isopropanol. Finally, wash with distilled water.
 
-## Cell lines
+#### Cell lines
 
 All primary cells and cell lines have been tested to confirm no mycoplasma contamination before they were used in the experiments. Information about three established cell lines 293FT, H1 and CCC-HPF-1 were listed in the key resource table. None of the cell line is found in the list of misidentified cell lines maintained by the International Cell Line Authentication Committee.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Statistical details of analysis including statistical test used, value of n and statistical significance were all described in the figure legends.
 
-## RNA-seq data processing
+#### RNA-seq data processing
 
 All RNA-seq data were mapped to human genome build hg19 (UCSC) by TopHat (version 2.1.1), reads from PCR duplicates were dropped. The gene expression level was calculated by Cufflinks (version 2.2.1) using the protein coding genes GTF file extracted from Ensembl database (Homo_sapiens.GRCh37.75.gtf). Read counts were obtained using HTSeq (version 0.9.1). Differentially expressed genes (DEGs) were analyzed using R package DESeq2 and selected using p-value<0.01 as a threshold. Heat map was plotted using heatmap.2 function of R, and gene expressions were scaled to FPKM or Z-scores. We used R function cor to do sample correlation clustering and principal component analysis (PCA). K-means clustering was performed using Cluster 3.0 package (K = 3, Spearman Correlation, Complete-linkage) and clustered heat maps were produced by TreeView.

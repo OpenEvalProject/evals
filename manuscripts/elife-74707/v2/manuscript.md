@@ -40,27 +40,226 @@ Immunization of mice with HAP2 fragments or putative HAP2 fusion loop peptides h
 
 ## Results
 
-## P. berghei HAP2 D3 elicits antibodies that cross react with human malaria pathogens
+### P. berghei HAP2 D3 elicits antibodies that cross react with human malaria pathogens
 
 Apicomplexans such as Plasmodium are eukaryotes that have extracellular proteins that are disulfide-linked and glycosylated; therefore, we produced HAP2 proteins in insect and mammalian cells which are competent for such modifications. C-mannosylation and O-glycosylation in Plasmodium have been verified; however, while Plasmodium species have been suggested to have unusually short N-glycans, N-glycosylation has yet to be verified with any specific protein (Bushkin et al., 2010; Macedo de et al., 2010; Bandini et al., 2019; Swearingen et al., 2016; Swearingen et al., 2019). To elicit antibodies, we expressed in Drosophila S2 cells a P. berghei HAP2 D3 construct (residues 477–621, containing four putative N-glycosylation sites) containing a C-terminal His tag. After Ni-affinity chromatography, the material was nearly homogenous, as shown by SDS-PAGE and Coomassie blue staining (Figure 2A, lane 1). Shaving the N-glycans with endoglycosidase D (Endo D) followed by gel filtration decreased size and heterogeneity in SDS-PAGE and confirmed N-glycosylation of D3 (Figure 2A, lane 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/74707/elife-74707-fig2-v2.jpg)
+
+**Figure 2.:** (A) Reducing SDS 12.5% PAGE of purified HAP2 D3 stained with Coomassie blue. Lanes 1 and 2: P. berghei HAP2 D3 (aa 477–621) purified by Ni-NTA (lane 1) and then treated with Endo D and purified by gel filtration (lane 2). Lanes 3–8: Purified HAP2 D3 fragments from Plasmodium species treated with Endo D or from P. berghei (aa 502–617) with N-linked sites removed by mutation. (B) Titration of antibody binding to Endo D-treated P. berghei HAP2 D3 (aa 477–621) by ELISA. Sigmoidal curve fits show one representative experiment with mean ± difference from the mean of duplicates; EC50 values show mean ± SD of three experiments. (C) Cross-species reactivity of HAP2 D3 mAbs by immunoprecipitation. Purified D3 proteins shown in (A) (2 µg each) were subjected to immunoprecipitation with the indicated mAbs, anti-His 1/5.13, or control IgG (8 µg each). Immunocomplexes were analyzed by reducing 12.5% SDS-PAGE and Western blot using rabbit polyclonal antibodies to the C-terminal His tag of D3. (D) Quantitation of results from (C) and a repeat experiment. Intensities of bands were quantitated and data normalized to anti-His. Results shown are averages of the two experiments ± difference from the mean. (E) EC50 measurements of HAP2 D3 binding to immobilized mAbs by ELISA. Purified D3 proteins shown in (A), lanes 3–8, were used. Sigmoidal curve fitting of D3 titration (Figure 2—figure supplement 3) and EC50 used GraphPad Prism 7 software. EC50 shown are mean ± difference from means of two experiments, each experiment with triplicates. ND, Not determined.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74707/elife-74707-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–H) SPR sensorgrams are shown in thin black lines and fits in thick gray lines. Concentrations used for Fab 2/6.14 (A) and Fab2/1.12 (B) were 100, 50, 20, 10, 5, 2, 1 nM. Concentrations used for D3 (C) were 1000, 500, 200, 100, 50, 20, 10, 5 nM and for D3 (D) were 500, 200, 100, 50, 20, 5 nM. Concentrations used for Fab 2/6.14 (E) and Fab2/1.12 (F) were 500, 200, 100, 50, 20, 10, 5 nM. Concentrations used for ectodomain (G and H) were 300, 120, 60, 30, 12, 6, 3 nM.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/74707/elife-74707-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Western blot. C-, N-terminal His tagged purified proteins (C-8xHis Chlamydomonas HAP2 ectodomain, C-6xHis Plasmodium falciparum TRAP fragment, N-8xHis-pro-TGFß1) or Bio-RAD Precision Plus All Blue Protein Standards (Cat #1610373, the 75, 100, and 150kD proteins are C-His tagged) were loaded at the indicated concentration per lane and run on 10% reducing SDS-PAGE. The blot was detected with 1µg/ml mAb 1/5.13 or THE His Tag Antibody (Genscript, Cat. No. A00186). THE His Tag Antibody detected C- and N-His-tagged proteins with correct molecular sizes, whereas mAb 1/5.13 didn’t detect the N-His protein at the concentrations tested. (B) Immunoprecipitation. Three µg of purified proteins (lanes 3–7) or 100µl of cultural supernatant of transfectants (lane 2) were subjected to immunoprecipitation with mAb 1/5.13 (8 µg). Immunoprecipitates were analyzed by western blot using rabbit anti-His followed by HRP-anti-rabbit. (C) Elisa. Plates were coated with 5µg/ml C-His tagged PbHAP2 D3 or proteins unrelated to PbHAP2 D3, incubated with mAb 1/5.13 or THE His Tag Antibody at the indicated concentrations.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/74707/elife-74707-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Elisa plates on which mAb 2/6.14 (A), 2/1.12 (B) or 2/1.40 (C) at 5 µg/ml were immobilized were then incubated with purified, His-tagged D3 from Plasmodium spp at varying concentrations. Binding was detected by incubation with HRP-conjugated anti-His. Non-linear titration curve fitting was performed using GraphPad Prism 7 software. Data shown are mean ± SD of triplicate measurements in one representative experiment.
 
 To produce monoclonal antibodies (mAbs), mice were immunized with the glycan-shaved D3. Antibodies elicited to the shaved protein, which contains one N-glycan residue at each N-glycosylation site, would be expected to react with D3 without being influenced by its glycosylation status. Five IgG mAbs reacted with the immunogen with nanomolar EC50 values in ELISA (Figure 2B). Surface plasmon resonance (SPR) showed that Fabs of two mAbs, 2/6.14 and 2/1.12, bind with affinities of 5–10 nM (Figure 2—figure supplement 1). The antibodies also immunoprecipitated a shorter D3 (502–617) with all putative N-glycosylation sites mutated out (Figure 2C, top panel). Immunoprecipitation was comparable to the His-tag antibody, showing that the epitopes of the 5 mAbs resided within residues 502–617 and were unaffected by N-glycosylation. One antibody (1/5.13) that reacted with the C-terminal His tag and is comparable in specificity and sensitivity to commercial His tag antibodies is described in Materials and methods (Figure 2—figure supplement 2).
 
 HAP2 D3 was also expressed and shaved with Endo D from Plasmodium species that can infect humans: P. knowlesi, P. vivax, P. malariae, P. ovale, and P. falciparum (Figure 2A). As their D3 domains share 60–70% amino acid sequence identity with P. berghei, we tested cross-reactivity with the mAbs to P. berghei D3 using immunoprecipitation (Figure 2C). We quantified immunoprecipitation (Figure 2D) and also measured cross-reactivity using ELISA (Figure 2E and Figure 2—figure supplement 3). mAbs 2/6.14 and 2/1.12 were especially efficient at recognizing D3 from multiple species (Figure 2C). mAb 2/6.14 pulled down about 70%, 30%, and 20% of P. knowlesi, P. ovale, and P. malariae D3, respectively, and mAb 2/1.12 was even more reactive, pulling down 60–100% of D3 from all species except P. falciparum D3 (Figure 2C and D). In contrast, mAb 2/1.40 showed strong reactivity to P. ovale, but not to D3 of other species, while mAbs 2/3.3 and 2/4.36 were highly specific for P. berghei (Figure 2C and D). mAbs 2/6.14 and 2/1.12 bound all species of D3 tested, as shown by ELISA EC50 values in the 1–1000 nM range (Figure 2E and Figure 2—figure supplement 3). Strong binding of P. knowlesi D3 to both 2/6.14 and 2/1.12 was observed with EC50 of <10 nM.
 
-## Antibody reactivity with gametes and blockade of fertilization in vitro and in vivo
+### Antibody reactivity with gametes and blockade of fertilization in vitro and in vivo
 
 Two individual assays with gametes, immunofluorescent staining with mAbs and ookinete conversion, were carried out in vitro. The change of environment from the bloodstream to the mosquito midgut triggers the development of gametocytes in infected erythrocytes into mature, highly motile ‘male’ microgametes and more sessile ‘female’ macrogametes and gamete emergence from erythrocytes. These events can be mimicked in vitro by reducing the temperature or pH and adding xanthurenic acid to the medium (ookinete medium). Each male gametocyte gives rise to eight microgametes, which look like a number of waving cilia as they emerge from the infected erythrocyte; this process is thus termed ‘exflagellation’.
 
 Reactivity of mAbs to native HAP2 in P. berghei microgametes was determined using cultured, infected erythrocytes undergoing exflagellation. After cultures were fixed, gametes adsorbed to slides were incubated with mouse D3 mAb and rabbit anti-alpha-tubulin followed by staining with fluorochrome-conjugated secondary antibodies specific for mouse and rabbit IgG and DAPI. Anti-tubulin and DAPI were used to identify microgametes by their highly elongated microtubule cytoskeletons and nuclei. All 5 D3 mAbs specifically stained P. berghei microgametes (Figure 3A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/74707/elife-74707-fig3-v2.jpg)
+
+**Figure 3.:** berghei fertilizaton by mAbs. (A) Immunofluorescent staining of microgametes from P. berghei. Fixed microgametes were stained with mouse D3 mAbs or control IgG, rabbit anti-α-tubulin, secondary Alexa Fluor-488 anti-mouse IgG and Alexa Fluor-594 anti-rabbit IgG, DAPI, and imaged with epifluorescence. Scale bars = 5 µm. (B) Fertilization in vitro measured as macrogamete conversion to ookinetes (% ookinetes/(ookinetes + macrogametes)) in the presence of indicated antibodies. Results are mean ± SEM of three independent experiments, analyzed by paired t test: *** p < 0.001, **p < 0.01, ns, non-significant p > 0.05. Total number of macrogametes + ookinetes in all three experiments are from right to left at 500 µg/ml: 139, 177, 147,104, 199 and 129, and at 250 µg/ml: 222, 120, 270, 410, 275, and 306. (C) ( and D) Mosquitoes were allowed to feed on antibody or control IgG diluted in infected mouse blood placed in membrane feeders; results are shown from three independent experiments. (C) Oocyst intensities (oocysts per mosquito) are shown as filled circles with means as horizontal bars ± SEM. ****p < 0.0001, ***p = 0.0001–0.001, **p = 0.001–0.01, *p = 0.01–0.05, ns p > 0.05 by Mann-Whitney test. (D) Summary of intensity and prevalence (% of infected mosquitoes) with SEM from all three experiments. Prevalence and N values are shown in Figure 3—figure supplement 1. Inhibition (%) was calculated relative to negative control IgG at the same concentrations. The significance of inhibition is shown in parentheses for intensity (Mann-Whitney test) and prevalence (Fisher’s exact test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74707/elife-74707-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Data shown are prevalence (% of infected mosquitoes) in three independent experiments. Number of mosquitoes per group is shown above bars. Significance was determined by Fisher’s exact test. ****p < 0.0001, ***p = 0.0001–0.001, **p = 0.001–0.01, *p = 0.01–0.05, ns p > 0.05.
+
 We next tested the ability of the D3 mAbs to inhibit P. berghei microgametes from fertilizing macrogametes and forming ookinetes in vitro. Mouse blood infected with P. berghei gametocytes was mixed with D3 mAbs or control mouse IgG diluted in ookinete medium. After 24 hr, ookinetes and unfertilized female gametocytes were identified by their morphology and staining with a fluorescent antibody, counted, and ookinete conversion rates were calculated. Only a single microgamete is required to fertilize a macrogamete, and each ookinete observed comprises a successful fertilization event. In control IgG, conversion rates were ~80% (Figure 3B). Strikingly, mAb 2/6.14 at 500 µg/ml completely inhibited ookinete conversion and at 250 µg/ml inhibited by 96% (p < 0.001). In contrast, none of the other mAbs inhibited by >50%, although mAb 2/1.40 showed significant inhibition at 500 µg/ml but not at 250 µg/ml (Figure 3B).
 
 We then tested mAb 2/6.14 for its ability to block transmission in vivo in mosquitoes. Female Anopheles stephensi mosquitoes were allowed to feed through membranes on blood from P. berghei infected mice mixed with mAb 2/6.14 or control IgG. After 14 days, mosquito midguts were dissected and oocysts/midgut were counted, that is, oocyst intensity was determined. Oocyst intensity was significantly reduced by mAb 2/6.14, particularly at 250 and 100 µg/ml (Figure 3C). We also measured the prevalence of infection among the fed mosquitoes, i.e. the % of mosquitoes with at least one oocyst. Prevalence was significantly reduced by mAb 2/6.14 at both 250 and 100 µg/ml (Figure 3—figure supplement 1). Summing the results over all mosquitos in the three independent experiments showed significant inhibition of intensity at all three mAb 2/6.14 concentrations, significant inhibition of prevalence at 250 and 100 µg/ml of mAb 2/6.14, dose-dependent reduction of both measures over the three antibody concentrations, and a reduction of intensity by 85% at 250 µg/ml (Figure 3D). Overall, the results show that all five antibodies react with microgametes, that mAb 2/6.14 exhibits potent ability to block P. berghei fertilization in vitro and in vivo, and thus that purified HAP2 D3 has potential as a transmission-blocking vaccine.
 
-## Structural characterization of P. berghei HAP2 and complexes of D3 with Fabs
+### Structural characterization of P. berghei HAP2 and complexes of D3 with Fabs
 
 To obtain structural insights relevant to rational development of a transmission-blocking vaccine, we obtained crystal structures of the P. berghei HAP2 D3 502–617 fragment with its three N-linked sites mutated out in complex with Fab fragments. Diffraction data was collected and refined to resolutions of 2.8 and 2.1 Å with Rfree of 29% and 23% for complexes with the transmission-blocking Fab 2/6.14 and cross-reactive Fab 2/1.12, respectively (Table 1). Each structure has two independent D3-Fab complexes in the asymmetric unit, giving us four examples of D3. The two Fab fragments bind to opposite faces of D3 (Figure 4A and B).
+
+**Table 1.**
+ Statistics of X-ray diffraction and structure refinement of PbHAP2 domain 3 (D3) complexed with 2/6.14 Fab or 2/1.12 Fab.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>D3-2/6.14 Fab</th>
+      <th>D3-2/1.12 Fab</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection statistics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P222</td>
+      <td>P21</td>
+    </tr>
+    <tr>
+      <td>α, β, γ, °</td>
+      <td>90, 90, 90</td>
+      <td>90, 95.8, 90</td>
+    </tr>
+    <tr>
+      <td>Unit cell (a, b, c), Å</td>
+      <td>78.3, 122.6, 168.5</td>
+      <td>43.9, 187.1, 74.4</td>
+    </tr>
+    <tr>
+      <td>Resolution range (Å)</td>
+      <td>50.0–2.80 (2.87-2.80)*</td>
+      <td>50.0–2.10 (2.15–2.10)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.3 (99.5)</td>
+      <td>98.4 (96.9)</td>
+    </tr>
+    <tr>
+      <td>Number unique reflections</td>
+      <td>40,741 (2,938)</td>
+      <td>68,138 (4,935)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>3.8 (4.0)</td>
+      <td>3.6 (3.7)</td>
+    </tr>
+    <tr>
+      <td>Rmerge (%)†</td>
+      <td>5.7 (70.2)</td>
+      <td>8.3 (153)</td>
+    </tr>
+    <tr>
+      <td>I/σ(I)</td>
+      <td>12.8 (2.2)</td>
+      <td>8.42 (0.52)</td>
+    </tr>
+    <tr>
+      <td>CC½ (%) ‡</td>
+      <td>99.8 (90.9)</td>
+      <td>99.7 (10.9)</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>1.0332</td>
+      <td>1.0332</td>
+    </tr>
+    <tr>
+      <td>Refinement statistics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rwork (%) §</td>
+      <td>25.3 (33.7)</td>
+      <td>18.97 (37.3)</td>
+    </tr>
+    <tr>
+      <td>Rfree (%)</td>
+      <td>29.2 (34.8)</td>
+      <td>23.27 (40.5)</td>
+    </tr>
+    <tr>
+      <td>Bond RMSD (Å)</td>
+      <td>0.003</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>Angle RMSD (°)</td>
+      <td>0.548</td>
+      <td>0.603</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot ¶(Favored/allowed/outlier)</td>
+      <td>91.5/7.6/0.9</td>
+      <td>95.93/4.07/0.1</td>
+    </tr>
+    <tr>
+      <td>Number of atoms</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>10,310</td>
+      <td>8,183</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>22</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>18</td>
+      <td>353</td>
+    </tr>
+    <tr>
+      <td>B factor</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>128.6</td>
+      <td>72.7</td>
+    </tr>
+    <tr>
+      <td>Ligand</td>
+      <td>112.8</td>
+      <td>112.9</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>138.0</td>
+      <td>64.9</td>
+    </tr>
+    <tr>
+      <td>Molprobity percentile</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>(Clash/Geometry)</td>
+      <td>98/97</td>
+      <td>99/97</td>
+    </tr>
+    <tr>
+      <td>PDB</td>
+      <td>7LR3</td>
+      <td>7LR4</td>
+    </tr>
+  </tbody>
+</table>
+
+_* The numbers in parentheses refer to the highest resolution shell.† Rmerge = Σh Σi |Ii(h) -< I(h)> | / ΣhΣi Ii(h), where Ii(h) and< I(h)> are the ith and mean measurement of the intensity of reflection h.‡ Pearson’s correlation coefficient between average intensities of random half-datasets for each unique reflection (Karplus and Diederichs, 2012).§ Rfactor = Σh||Fobs (h)|-|Fcalc (h)|| / Σh|Fobs (h)|, where Fobs (h) and F calc (h) are the observed and calculated structure factors, respectively. No I/σ(I) cutoff was applied.¶ Calculated with MolProbity (Davis et al., 2007)._
+
+![Figure 4.](https://cdn.elifesciences.org/articles/74707/elife-74707-fig4-v2.jpg)
+
+**Figure 4.:** (A) Overview of D3-2/1.12 Fab (left) and D3-2/6.14 Fab complexes (right). (B) Cartoon representation of D3 with residues colored that contact Fab 2/1.12 (green), Fab 2/6.14 (red) or both Fabs (yellow). (C) Cartoon representations of three independent molecules in the two crystals, excluding the one molecule with multiple conformations. Each molecule is colored in a different variation of green. Dashes symbolize loops with missing density. (D) and (E) Solvent accessible surfaces of complexes are shown in open book views in which the Fab and D3 components are rotated apart like two facing pages in an open book. In B, D and E, atoms in D3 and Fabs within 5 Å of one another are colored green (Fab 2/1.12 complex) or red (Fab 2/6.14 complex) and are otherwise white (D3), light blue (Fab H chain), or wheat (Fab L chain). (F) Structural and sequence conservation of D3 and its 2/1.12 and 2/6.14 epitopes. Top line: β-strands shown as arrows. Second line: RMSD of Cα atom position (Å) among the two independent Fab 2/1.12 - D3 complexes and the Fab 2/6.14-D3 complex with a single conformation, calculated after structure alignment by RaptorX (Wang et al., 2013). A dash shows positions where residues were defined in only 0 or 1 of the three structures. Third line: Filled circles show Fab contacts (green for 2/1.12 Fab and red for Fab 2/6.14); residues that mediate major interactions ( > 10 Å2 of buried solvent accessible surface area or H-bonds) or minor interactions ( < 10 Å2 buried solvent accessible surface) are shown with large or small circles, respectively. Remaining lines show D3 sequence in P. berghei, P. knowlesi, P. vivax, P. malariae, P. ovale, and P. falciparum with identities to P. berghei shown as dots. P. berghei residues in red are wild-type and were mutated to remove N-linked sites. Residues in italics were not visualized in any of the three structures. P. berghei residues with sidechains mentioned in the text that stabilize hydrogen bonds in the B-C and F-G loops are overlined. Cysteines are highlighted in yellow and connected when disulfide-linked. (G) and (H). Details of D3 interactions with the 2/1.12 Fab (G) and 2/6.14 Fab (H). D3 is silver, Fab H and L chains are light blue and wheat, respectively, and residues with major interactions with Fabs as defined in (F) have carbons colored green (G) or red (H). Dashes show hydrogen bond and pi-cation interactions. (I) The most populated negative stain EM class averages of the HAP2 ectodomain (residues 43–617) alone (panel 1, 1,128 particles) and in complex with the 2/6.14 Fab (panel 2, 379 particles). Panel 3 shows the best correlating projection from the complex crystal structure. Panel 4 shows a ribbon diagram of the crystal structure in the same orientation. D3 colored cyan, Fab H and L chains colored light blue and wheat, respectively, and N-terminal of D3 shown as a red sphere.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74707/elife-74707-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Classes are from RELION classification of negatively stained particles of the Hap2 ectodomain, residues 43–617 (A) or Fab 2/6.14 complexes with the Hap2 ectodomain, residues 43–617 (B) or with the Hap2 ectodomain, residues 61–611 (C). Particle numbers are shown for each class average. Scale bars (10 nm) are shown as a white line.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/74707/elife-74707-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Complexes of PbHAP2 D3 with the 2/6.14 Fab (A) and 2/1.12 Fab (B) were superimposed on D3 of the postfusion C. reinhardtii HAP2 trimer. The postfusion HAP2 structure is shown as a surface and colored by domain in one monomer; other monomers are white and lightblue (pdb ID:6DBS). Fab H and L chains are light blue and wheat, respectively, and are shown alone to the right to emphasize how much of each Fab is buried.
 
 D3 contains seven β-strands labeled A to E that are arranged into two β-sheets containing the ABE and DCFG β-strands (Figure 4B and C). These β-sheets associate through hydrophobic faces to form a β-sandwich. The way in which the sequence folds into this arrangement classifies it as a fibronectin type III (Fn3) domain. The D3 β-strands connect to one another through loops at each end of the domain. The A-B, C-D, and F-G loops link adjacent β-strands within a sheet and the B-C, D-E, and E-F loops link the two sheets.
 
@@ -84,9 +283,17 @@ There is little variation in the orientation and length of the BC, DE and FG loo
 
 To better understand the P. berghei HAP2 ectodomain and its binding to 2/6.14 Fab, we obtained negative stain EM images and subjected ~2000 particles to iterative alignment and classification. The P. berghei HAP2 ectodomain is rod-like with three or four oval densities arranged linearly along the rod (Figure 4I panel 1 and Figure 4—figure supplement 1). The 2/6.14 Fab - ectodomain complex is L-shaped (Figure 4I panel 2). Similar results were obtained for complexes with ectodomains with residues 43–617 and 61–611 (Figure 4—figure supplement 1). The two globules with stronger density correspond to the Fab, which has two domains per globule. The globules with weaker density correspond to the HAP2 ectodomain. Fab 2/6.14 binds essentially perpendicularly to one end of the HAP2 rod, in agreement with the crystal structure showing that the Fab binds to the side of D3 (Figure 4A). The crystal structure of the 2/6.14 Fab-D3 complex cross-correlated well with the entire ectodomain Fab complex (Figure 4I panel 3), and the ribbon cartoon in the same orientation had its N-terminus facing D1 as expected (Figure 4I panel 4).
 
-## Differences in antibody reactivity with D3 and the ectodomain
+### Differences in antibody reactivity with D3 and the ectodomain
 
 Because of their differences in blocking transmission, we wondered whether mAbs differed in reactivity with the HAP2 ectodomain. Yields of monomeric ectodomain were lower than for D3 as described in Methods; nonetheless, gel filtration yielded a sharp peak (Figure 6A). The peak primarily contained a band at 75 kDa, in agreement with the expected size of the ectodomain; furthermore, its C-terminus was present as shown by detection of the C-terminal His-tag by western blotting (Figure 6B). Treatment with Endo D reduced the size of the ectodomain to ~71 kDa (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/74707/elife-74707-fig6-v2.jpg)
+
+**Figure 6.:** (A) Gel filtration profile of Ni-NTA affinity-purified ectodomain (residues 43–617) on a Hiload 16/600 Superdex 200 column. (B) Reducing SDS 7.5% PAGE and Coomassie blue staining and Western blot (WB) of the peak eluted at 67.2 mL (shaded in A). Aliquots were treated with or without Endo D to remove N-linked glycans. Arrows indicate ectodomain bands before and after Endo D treatment. The HAP2 ectodomain contains 11 putative N-glycosylation sites; however, Endo D treatment reduced the mass by only ~3 kD. It is unknown how many sites are N-glycosylated and whether all sites are accessible to Endo D. (C) Immunoprecipitation. Reactivity of D3 mAbs to HAP2 ectodomain (bottom) in comparison to D3 (top). Two µg purified ectodomain from (A), without Endo D treatment, was subjected to immunoprecipitation with the indicated D3 mAbs, anti-His mAb 1/5.13 or control IgG. D3 (497–617, containing three putative N-glycosylation sites) was immunoprecipitated from culture supernatants of S2 transfectants. Multiple D3 bands are different glycoforms. (D) Analysis of formation of PbHAP2 ectodomain complex with 2/6.14 Fab (top) and 2/1.12 Fab (bottom) by gel filtration. Ectodomain and Fab 2/6.14 or Fab 2/1.12 were mixed in 20 mM Tris-HCl pH 8.0, 500 mM NaCl at 1:1 molar ratios and incubated at 4 °C for 1 hr. Mixtures was then subjected to gel filtration on a Superdex 200 10/300 GL column in the same buffer. Elution profiles of the mixture, ectodomain or Fabs are shown as solid, dotted, or dashed lines, respectively. (E) KD values (koff/kon) and kinetic values measured by surface plasmon resonance. Values are mean ± difference of the means from two independent experiments. D3 contained residues 502–617 with N516T, S533N and N539Q mutations and the ectodomain (ECD) contained residues 43–617 without Endo D treatment.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/74707/elife-74707-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Concentrations used for (A–B) monomeric ectodomain (ECD1) were 100, 50, 25, 12.5, 6.25, 0 nM. Concentrations used for PbD3 (C–D) were 16, 8, 4, 2, 1, 0 nM. Response curves of BLI are in black and fitting curves in gray. (E) KD values (koff/kon) and kinetic values measured by BLI. The kinetic parameters were fit globally to sensorgrams at different analyte concentrations. Errors are SE(standard error) from nonlinear least square fits. All experiments were repeated at least twice with essentially identical results. PbD3 contained the residues 477–621, and the ECD1 contained residues 43–617, both of the PbD3 and ECD1 are without Endo D treatment.
 
 Presence of D3 epitopes in the ectodomain was tested by immunoprecipitation. Immunoprecipitation of the ectodomain, and D3 as a control, was detected using western blotting of the His tag (Figure 6C). mAb 2/6.14 was fully reactive with the ectodomain as shown by immunoprecipitation comparable to that with the His-tag antibody. In contrast and surprisingly, the other four mAbs were only partially reactive with the ectodomain, although they reacted with D3 comparably to mAb 2/6.14.
 
@@ -118,23 +325,187 @@ In conclusion, we find that D3 of HAP2 can elicit antibodies that block transmis
 
 ## Materials and methods
 
-## Study design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila)</td>
+      <td>EXpreS2 transfection reagent</td>
+      <td>ExpreS2ion Biotechnologies</td>
+      <td>Catalog NO: 95-055-075</td>
+      <td>https://expressionsystems.com/product/expres2-tr-transfection-reagent/</td>
+    </tr>
+    <tr>
+      <td>Cell line (Drosophila)</td>
+      <td>Drosophila melanogaster Schneider S2</td>
+      <td>ExpreS2 cells</td>
+      <td>ExpreS2ion Biotechnologies</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Drosophila)</td>
+      <td>ET15S2 vector</td>
+      <td>Feng et al., 2018</td>
+      <td>ExpreS2ion Biotechnologies</td>
+      <td>Modified from the pExpreS2-2 vector, Includes N-terminal secretion signal from Hspa5 and C-terminal His8 tag</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>Expi293F cells</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Catalog NO: A14527</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Expi293F cells)</td>
+      <td>pD2529-CAG vector</td>
+      <td>This paper</td>
+      <td>Atum, Newark, CA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>CB6F1</td>
+      <td>The Jackson Laboratory</td>
+      <td></td>
+      <td>CB6F1 mice were immunized with the glycan-shaved D3 protein</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (P. berghei)</td>
+      <td>P. berghei</td>
+      <td>This paper</td>
+      <td>P. berghei – WT strain ANKA 2.34</td>
+      <td>Strain maintained in Dr. Andrew Blagborough lab</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mosquitoes)</td>
+      <td>Female Anopheles stephensi</td>
+      <td>This paper</td>
+      <td>SDA 500 strain</td>
+      <td>Strain maintained in Dr. Andrew Blagborough lab</td>
+    </tr>
+    <tr>
+      <td>Gene(P. berghei)</td>
+      <td>P. berghei HAP2 ectodomain</td>
+      <td>UniProt</td>
+      <td>Q4YCF6.1</td>
+      <td>All constructs were codon-optimized for mammalian cells</td>
+    </tr>
+    <tr>
+      <td>Gene(P. falciparum)</td>
+      <td>HAP2 D3(aa:479–626)</td>
+      <td>NCBI</td>
+      <td>XP_001347424.1</td>
+      <td>All constructs were codon-optimized for mammalian cells</td>
+    </tr>
+    <tr>
+      <td>Gene(P. knowlesi)</td>
+      <td>HAP2 D3(aa:492–607)</td>
+      <td>NCBI</td>
+      <td>XP_002258781.1</td>
+      <td>All constructs were codon-optimized for mammalian cells</td>
+    </tr>
+    <tr>
+      <td>Gene(P.vivax)</td>
+      <td>HAP2 D3(aa:492–608)</td>
+      <td>GenBank</td>
+      <td>SGX77070.1</td>
+      <td>All constructs were codon-optimized for mammalian cells</td>
+    </tr>
+    <tr>
+      <td>Gene(P. malariae)</td>
+      <td>HAP2 D3(aa:498–613)</td>
+      <td>GenBank</td>
+      <td>SCN12177.1</td>
+      <td>All constructs were codon-optimized for mammalian cells</td>
+    </tr>
+    <tr>
+      <td>Gene(P. ovale)</td>
+      <td>HAP2 D3(aa:493–608)</td>
+      <td>GenBank</td>
+      <td>SBS88209.1</td>
+      <td>All constructs were codon-optimized for mammalian cells</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-His (Rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Catalog NO:2,365 S</td>
+      <td>(0.4 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-alpha tubulin (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Catalog NO:AB18251</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse IgG (H + L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Molecular Probes/ThermoFisher</td>
+      <td>Catalog NO:A-11001</td>
+      <td>(25 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit IgG (H + L) Cross-Adsorbed Secondary Antibody, Alexa Fluor 594 (Goat polyclonal)</td>
+      <td>Molecular Probes/ThermoFisher</td>
+      <td>Catalog NO:A-11012</td>
+      <td>(25 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>XDS</td>
+      <td>https://strucbio.biologie.uni-konstanz.de/xdswiki/index.php/Xds</td>
+      <td></td>
+      <td>Diffraction data was processed with XDS</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>https://www.phenix-online.org/</td>
+      <td></td>
+      <td>The structure was solved by molecular replacement with Phaser in the Phenix suite</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CCP4</td>
+      <td>http://www.ccp4.ac.uk/</td>
+      <td></td>
+      <td>Refinement</td>
+    </tr>
+  </tbody>
+</table>
+
+### Study design
 
 This study was designed to provide insights for developing a vaccine to block or reduce malaria transmission. This objective was addressed first by generating monoclonal antibodies against the D3 fragment of Plasmodium berghei HAP2. CB6F1 mice were immunized with the glycan-shaved D3 protein. All in vitro characterization of binding properties was carried out after a detailed antibodies screening as described in Methods. We next tested the ability of the D3 mAbs to inhibit P. berghei microgametes from fertilizing macrogametes and forming ookinetes in vitro. The results showed that all five antibodies reacted with microgametes, and that mAb 2/6.14 was outstanding for its ability to block P. berghei fertilization in vitro. Therefore, we decided to test mAb 2/6.14 for its ability to block transmission in vivo in mosquitoes. For in vivo characterization of the ability of mAb 2/6.14 to reduce malaria transmission, female Anopheles stephensi mosquitoes were randomized to group feed through membranes on blood from P. berghei infected mice mixed with mAb 2/6.14 or control IgG. After 14 days, the number of oocyst of infected mosquitoes was counted to evaluate the ability of mAb 2/6.14 to inhibit transmission.
 
-## Ethical statement for animal studies
+### Ethical statement for animal studies
 
 Mouse immunization was conducted in accordance with and was approved by Boston Children’s Hospital Institutional Animal Care and Use Committee (IACUC) under protocol #14-06-2731. Animals were cared in compliance with the U.S. Department of Agriculture (USDA) Animal Welfare Act (AWA) and the Public Health Service (PHS) Policy on Humane Care and Use of Laboratory Animals.
 
 Immunization and Plasmodium berghei infection procedures were performed in accordance with the UK Animals (Scientiﬁc Procedures) Act (PPL 70/8788) and were AWERB approved. The Ofﬁce of Laboratory Animal Welfare Assurance covers all Public Health Service supported activities involving live vertebrates in the United States (no. A5634-01).
 
-## HAP2 constructs, expression, and protein purification
+### HAP2 constructs, expression, and protein purification
 
 P. berghei HAP2 amino acid sequence numbering is from RefSeq accession XP_022713330.1. D3 constructs utilized residues 477–621, 497–617, or 502–617 with a C-terminal His tag; only the 502–617 construct contained N516T, S533N and N539Q mutations to abolish N-glycosylation. HAP2 D3 construct sequence ranges and accessions in other species were P. falciparum, 479–626, XP_001347424.1; P. knowlesi, 492–607, XP_002258781.1; P. vivax, 492–608, SGX77070.1; P. malariae, 498–613, SCN12177.1; and P. ovale, 493–608, SBS88209.1. These D3 constructs were expressed either transiently in Expi293F cells using pD2529-CAG vector (Atum, Newark, CA), or in the case of the P. berghei HAP2 D3 477–621 construct and ectodomain 61–611 and 43–617 constructs, and the P. falciparum D3 479–626 construct in Drosophila Schneider S2 cells, were expressed exactly as described previously (Feng et al., 2018). All constructs were codon-optimized for mammalian cells. UniProt accession Q4YCF6.1, which was used for P. berghei HAP2 ectodomain construct codon optimization, was retrospectively discovered to be deleted for S206, which locates to the βd-strand of D2.2 in the alignment to Chlamydomonas reinhardti HAP2, at the opposite end of the ectodomain from D3. All other eight HAP2 accessions recovered from the nonredundant protein database with NCBI BLAST in 2020, including at least seven distinct P. berghei strains including ANKA, are identical to one another and differ from the Q4YCF6.1 sequence only at residue S206 and the signal sequence. This error has been reported to help@uniprot.org. Our recent experience is that, among hundreds of sequences of human and mouse extracellular proteins of similar length, ~ 10% of UniProt but not RefSeq accessions have similar errors.
 
 For purification, HAP2 fragments in 1 L of culture supernatant were adjusted to 1 mM NiCl2 in D3 buffer (20 mM Tris, pH 8 and 300 mM NaCl) or ectodomain buffer (20 mM Tris, pH 8.5, 500 mM NaCl) and applied to 10 ml Ni-NTA-Agarose (Qiagen) columns. After washing with 15 mM imidazole in D3 or ectodomain buffer, the protein was eluted with 300 mM imidazole in the same buffers. Fragments were then subjected to gel filtration chromatography using Superdex 75 (GE life Sciences) in D3 or ectodomain buffer, concentrated, and frozen at –80 °C. Purification of P. berghei D3477–621 construct expressed stably in S2 cells was similar, except after the Ni-NTA step it was concentrated (1 mg/ml in 0.2 ml) and shaved with endoglycosidase D (10 µl, 100 unit) (New England BioLabs) for 16 hrs at 4 °C prior to gel filtration. Final yield was 22 mg/L culture supernatant. Yields for transiently expressed D3 constructs were ~5–8 mg/L culture supernatant. Ectodomain yields were ~0.2–0.3 mg/L culture supernatant.
 
-## Monoclonal antibodies
+### Monoclonal antibodies
 
 CB6F1 mice (Charles River, Wilmington, MA) were immunized intraperitoneally with 20 μg of N-glycan shaved P. berghei HAP2 D3 (residues 477–621) in PBS and complete Freund’s adjuvant (Sigma) and 3 weeks later with the same material in incomplete Freund’s adjuvant (Sigma). Mice were boosted both intravenously and intraperitoneally 2 weeks later with 20 μg of the same antigen in PBS. Three days later, splenocytes were fused with the murine myeloma P3 × 63Ag8.653 (CRL 1580, ATCC, Rockville, MD) as described (Springer, 1980). Hybridomas supernatants were screened by ELISA in microtiter wells coated with the immunogen. Hybridomas that produced IgG mAbs were subcloned. Five produced antibodies specific for P. berghei HAP2 D3 and are characterized in Results. mAb 1/5.13 was found to be specific to the His-tag. It reacts with proteins with C-terminal His tags, but not with N-terminal His tags. It is fully active in ELISA, western blot and immunoprecipitation and has sensitivity comparable to the THE His Tag Antibody (GenScript) in ELISA and western blot (Figure 2—figure supplement 2).
 
@@ -144,23 +515,23 @@ Heavy and light chain V region cDNA sequences of mAbs 2/6.14 and 2/1.12 were det
 
 Fabs and IgGs were expressed in Expi293F cells co-transfected with H and L chain constructs in 2:1 ratios. Fab fragments were purified from culture supernatant by Ni-NTA affinity purification followed by Superdex 200 gel filtration chromatography. IgG was purified by protein G affinity chromatography. 2/6.14 IgG purified from Expi293F and hybridoma cell supernatants bound to P. berghei HAP2 D3 in ELISA with comparable EC50 values.
 
-## Enzyme-linked immunosorbent assay (ELISA)
+### Enzyme-linked immunosorbent assay (ELISA)
 
 96-well ELISA plates (Costar) were coated overnight at 4 °C with 50 µl of purified, His-tagged HAP2 D3 at 5 µg/ml in 50 mM sodium carbonate buffer, pH 9.5 and blocked with 3% BSA for 90 min at 37 °C. 50 µl of diluted hybridoma supernatants or purified mAbs in triplicate were incubated for 2 hrs at 37 °C. After three washes, 50 µl of 1:10,000 diluted HRP-conjugated goat-anti-mouse IgG (H + L) (Abcam) was added. After 1 hr at room temperature and four washes, peroxidase substrate (Life Technologies) was added and after 10 min plates were read at 405 nM on an Emax plate reader (Molecular Devices). As a control, hybridoma medium or mAb dilution buffer (1% BSA in PBS) was substituted in the antibody binding step. For measuring binding of His-tagged D3 to immobilized mAbs, ELISA plates were coated with 5 µg/ml mAb, and HRP-anti-His (Penta-His Ab, Qiagen) was used in the detection step. Titration curve fitting and EC50 measurements used the sigmoidal, 4 parameter logistic equation in GraphPad Prism 7.
 
-## Surface plasmon resonance (SPR)
+### Surface plasmon resonance (SPR)
 
 Purified HAP D3 (residues 502–617 with N516T, S533N and N539Q mutations) or ectodomain (residues 43–617) fragments or Fabs 2/1.12 or 2/6.14 were either used as analytes or amine immobilized on a CM5 chip in a Biacore 3000 (GE Healthcare) according to the manufacturer’s instructions. For immobilization, protein was diluted to 5 μg/ml in 0.15 M NaCl, 20 mM Hepes pH 7.4, and injected at 10 μL/min. The surface was regenerated with a 10- to 60 s pulse of 18 mM HCl at the end of each cycle to restore resonance units to baseline. Kinetics and affinity analysis were performed with SPR evaluation software version 4.0.1 (GE Healthcare). A 1:1 Langmuir binding model, with or without a conformational change model, was applied for experimental data fitting, and kinetic parameters were fit globally to sensorgrams at different analyte concentrations.
 
-## Bio-layer interferometry (BLI)
+### Bio-layer interferometry (BLI)
 
-Bio-layer interferometry (Wallner et al., 2013) experiments were performed on a ForteBio Octet RED384 instrument using anti-mouse Fc capture (AMC, 18–5090) sensors. The reaction was measured on a 384-well plate (working volume of 25 µL) in 20 mM Tris-HCl, pH7.5, 150 mM NaCl, 0.01%BSA, 0.02% Tween 20 (Assay buffer). Biosensors were hydrated in assay buffer for 10 min before starting the measurements. Each biosensor was sequentially moved through five wells with different components: (1) Assay buffer for 1 min in baseline equilibration step; (2) 5 µg/ml (33.3 nM) 2/6.14 or 2/1.12 IgG for 3 min for immobilization of the antibodies onto the biosensor; (3) Assay buffer for 3 min for another baseline equilibration; (4) indicated concentrations of PbHAP2 ectodomain (aa:43–617) or PbD3(aa: 477–621) for 10 min for the association phase measurement; and (5) Assay buffer for 10 min for the dissociation phase measurement. Each biosensor has a corresponding assay buffer reference sensor that went through the same five steps. Kinetics and affinity analysis were performed with Octet RED384 Data Analysis 11.0. A 1:1 Langmuir binding model was applied for experimental data fitting, and kinetic parameters were fit globally to different analyte concentrations for each IgG and HAP2 combination, with kon and koff as shared fitting parameters and maximum response (Rmax) as individual fitting parameter.
+Bio-layer interferometry (Wallner et al., 2013) experiments were performed on a ForteBio Octet RED384 instrument using anti-mouse Fc capture (AMC, 18–5090) sensors. The reaction was measured on a 384-well plate (working volume of 25 µL) in 20 mM Tris-HCl, pH7.5, 150 mM NaCl, 0.01%BSA, 0.02% Tween 20 (Assay buffer). Biosensors were hydrated in assay buffer for 10 min before starting the measurements. Each biosensor was sequentially moved through five wells with different components: (1) Assay buffer for 1 min in baseline equilibration step; (2) 5 µg/ml (33.3 nM) 2/6.14 or 2/1.12 IgG for 3 min for immobilization of the antibodies onto the biosensor; (3) Assay buffer for 3 min for another baseline equilibration; (4) indicated concentrations of PbHAP2 ectodomain (aa:43–617) or PbD3(aa: 477–621) for 10 min for the association phase measurement; and (5) Assay buffer for 10 min for the dissociation phase measurement. Each biosensor has a corresponding assay buffer reference sensor that went through the same five steps. Kinetics and affinity analysis were performed with Octet RED384 Data Analysis 11.0. A 1:1 Langmuir binding model was applied for experimental data fitting, and kinetic parameters were fit globally to different analyte concentrations for each IgG and HAP2 combination, with $k_{on}^{}$ and $k_{off}^{}$ as shared fitting parameters and maximum response (Rmax) as individual fitting parameter.
 
-## Immunoprecipitation and western blot
+### Immunoprecipitation and western blot
 
 Culture supernatants or purified HAP2 D3 and ectodomain fragments diluted in TBS (25 mM Tris, pH 8, 300 mM NaCl) containing 0.5% BSA were incubated with mAbs or control non-binding IgG overnight at 4 °C. Immunocomplexes were pulled down with protein G beads by incubation at 4 °C for 2 hr with rotation. Beads were washed 3 times with 1 ml TBS and bound proteins eluted in 1 x Laemmli sample buffer containing 5% β-mercaptoethanol and subjected to reducing SDS-polyacrylamide gel electrophoresis. Blots were probed with polyclonal rabbit anti-His (0.4 µg/ml, Cell Signaling), followed by incubation with HRP-conjugated goat-anti-rabbit (GE Healthcare) and chemiluminescence imaging using LAS-4000 system (Fuji Film). Quantitation of protein bands used ImageJ software.
 
-## Assays with P. berghei Gametes
+### Assays with P. berghei Gametes
 
 For immunofluorescent staining of microgametes, tail blood (10 μl) from a mouse with high gametocytaemia was mixed with 10 μl of ookinete medium (RPMI1640 containing 25 mM HEPES, 20% FCS, 100 μM xanthurenic acid pH 7.4) to stimulate emergence of male gametes (exflagellation), which was monitored microscopically as described (Sebastian et al., 2012). Exflagellating gametocytes were fixed in solution for 15 min by diluting formalin to 4% paraformaldehyde, then added to poly-L-lysine-coated slides and incubated at 4 °C overnight. For staining, mAbs or control mouse IgG UPC10 (M7769, Sigma Aldrich) (2 µg in 4 µl of 3% BSA/PBS) were added to washed slides; rabbit anti-alpha tubulin (Abcam AB18251) was at 1:1000 dilution. Following washes, Alexa Fluor-488 anti-mouse IgG and Alexa Fluor-594 anti-rabbit IgG secondary antibodies (Molecular Probes) were added at 25 µg/ml before mounting in VectaShield with DAPI (Vector Laboratories). Fluorescence images were obtained using an epifluorescence 100 x objective on a Nikon Eclipse Ti microscope. Image handling used Adobe Photoshop CC.
 
@@ -168,7 +539,7 @@ In vitro ookinete conversion was assayed as described (Angrisano et al., 2017; B
 
 In vivo transmission-blocking activity of HAP2 antibodies was assayed using standard membrane feeding assay (SMFA) as described (Blagborough et al., 2013). Briefly, heparinized P. berghei infected blood containing gametocytes was mixed with HAP2 antibodies or negative control IgG. Female Anopheles stephensi (SDA 500 strain) were starved for 24 hr and then fed on the mixtures using membrane feeders ( > 50 mosquitoes per each blood-antibody feed). Twenty-four hr later, unfed mosquitoes were removed. Mosquitoes were maintained on 8% (w/v) fructose, 0.05% (w/v) p-aminobenzoic acid at 19–22°C and 50–80% relative humidity. Day 14 post-feeding, mosquito midguts were dissected, and oocyst numbers per midgut in each mosquito was determined by phase contrast microscopy. Reductions in oocyst intensity (number of oocysts/midgut) and prevalence (number of infected over total mosquitoes fed) in the presence of an HAP2 antibody were calculated with respect to the negative control IgG present at the same concentration in the feeds.
 
-## Crystallization and structure determination
+### Crystallization and structure determination
 
 The P. berghei D3 (502–617) construct with N516T, S533N and N539Q mutations to abolish N-glycosylation was used for crystallization. D3 and Fab were mixed in 1:1.3 molar ratios and complexes were isolated by gel filtration. Complexes were crystallized at 20 °C by hanging-drop vapor diffusion with equal volumes of complex and well solution. The Fab 2/1.12 complex (4.5 mg/ml) was crystallized with 0.2 M ammonium sulfate, 25% PEG 3350, 0.1 M Bis-Tris pH5.5. The 2/6.14 Fab complex (7.5 mg/ml) was crystallized with 0.3 M proline, 22% PEG 1500, 0.1 M HEPES pH7.5; crystals were dehydrated by soaking in solutions that had the starting concentrations of components in the protein and reservoir solutions while raising the concentration of PEG 1500% to 31% in 3% steps. Crystals of Fab 2/1.12-D3 and Fab 2/6.14-D3 were cryo-protected with reservoir solution containing 15% glycerol or 15% ethylene glycerol, respectively, in 2 steps of 5% and 10% increase and plunged in liquid nitrogen. Data were collected at 100 K on GM/CA beamline 23-IDB at the Advanced Photon Source (Argonne National Laboratory) and processed with XDS (Kabsch, 2001). Structures were refined with PHENIX, built with Coot (Emsley and Cowtan, 2004) and validated with MolProbity (Davis et al., 2007). Figures were made with PyMol.
 
@@ -178,10 +549,10 @@ During model building and refinement of the 2/6.14 Fab complex, the Fab constant
 
 The alternate conformations allow the VL domain in chain B and the D3 domain in chain C to pack against alternate conformation symmetry mates in different complexes along adjacent edges of the unit cell. Symmetry mates with the B conformation severely clash, while those with the distinct conformations A and B have good lattice contacts. In contrast, symmetry mates with conformation A are too far apart to provide stabilizing lattice contacts. Thus, clashes in one conformation together with a lack of stabilizing lattice contacts in the other conformation may have driven the formation of a crystal lattice with dual conformations of VL, VH, and D3 in one of two Fab-D3 complexes in the asymmetric unit.
 
-## Negative stain electron microscopy
+### Negative stain electron microscopy
 
 Each P. berghei HAP2 ectodomain construct (residues 43–617 or 61–611), with or without Fab at a molar ratio of 1:1.3, was subjected to Superdex 200 gel filtration in 20 mM Tris-HCl, pH8, 500 mM NaCl. Peak fractions were adsorbed to glow-discharged carbon-coated copper grids, washed with deionized water, and stained with freshly prepared 0.75% uranyl formate. Images were acquired with an FEI Tecnai-T12 transmission electron microscope at 120 kV and a nominal magnification of 52,000×. About two thousand particles were picked interactively and subjected to 2D alignment, classification and averaging using RELION-2.1 (Zivanov et al., 2018). Selected EM class averages were masked and cross-correlated using EMAN2 (Ludtke et al., 1999) with 2D projections generated at 2° intervals from the 2/6.14 Fab-D3 complex crystal structure filtered to 25 Å.
 
-## Cell lines
+### Cell lines
 
 Expi293F cells and Drosophila Schneider S2 cells were used to express proteins. Expi293F cells were purchased from Thermo Fisher Scientific. The S2 cells were obtained from ExpreS2ion Biotechnologies. All cells tested negative for mycoplasma.

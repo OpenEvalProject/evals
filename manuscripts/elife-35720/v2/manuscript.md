@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.35720.001 ATP-dependent chromatin remodelling proteins represent a diverse family of proteins that share ATPase domains that are adapted to regulate protein–DNA interactions. Here, we present structures of the Saccharomyces cerevisiae Chd1 protein engaged with nucleosomes in the presence of the transition state mimic ADP-beryllium fluoride. The path of DNA strands through the ATPase domains indicates the presence of contacts conserved with single strand translocases and additional contacts with both strands that are unique to Snf2 related proteins. The structure provides connectivity between rearrangement of ATPase lobes to a closed, nucleotide bound state and the sensing of linker DNA. Two turns of linker DNA are prised off the surface of the histone octamer as a result of Chd1 binding, and both the histone H3 tail and ubiquitin conjugated to lysine 120 are re-orientated towards the unravelled DNA. This indicates how changes to nucleosome structure can alter the way in which histone epitopes are presented.
+ATP-dependent chromatin remodelling proteins represent a diverse family of proteins that share ATPase domains that are adapted to regulate protein–DNA interactions. Here, we present structures of the Saccharomyces cerevisiae Chd1 protein engaged with nucleosomes in the presence of the transition state mimic ADP-beryllium fluoride. The path of DNA strands through the ATPase domains indicates the presence of contacts conserved with single strand translocases and additional contacts with both strands that are unique to Snf2 related proteins. The structure provides connectivity between rearrangement of ATPase lobes to a closed, nucleotide bound state and the sensing of linker DNA. Two turns of linker DNA are prised off the surface of the histone octamer as a result of Chd1 binding, and both the histone H3 tail and ubiquitin conjugated to lysine 120 are re-orientated towards the unravelled DNA. This indicates how changes to nucleosome structure can alter the way in which histone epitopes are presented.
 
 ## Introduction
 
@@ -34,11 +34,35 @@ Yeast Chd1 serves as a useful paradigm in that it functions predominantly as a s
 
 ## Results
 
-## The structure of Chd1 nucleosome complexes
+### The structure of Chd1 nucleosome complexes
 
 As Chd1 functions on transcribed genes, it is of interest to understand the interplay between Chd1 and histone modifications observed in coding region chromatin. As a result, nucleosomes were prepared in which histone H3 K36 was alkylated to mimic trimethylation (Figure 1—figure supplement 1) and H2B cross-linked to ubiquitin (Figure 1—figure supplement 2). Conditions were established to favour binding of a single Chd1 to modified nucleosomes that included an asymmetric linker DNA extension of 14 bp (Figure 1—figure supplement 2B) in the presence of ADP-BeF. Purified complexes were frozen onto EM grids.
 
 2D classification of some 893000 particles revealed 16 classes in which nucleosomes with the Chd1 molecule attached could be identified (Figure 1—figure supplement 3B). Initial 3D classification resulted in five related classes (Figure 1—figure supplement 3C). Three of these were combined and reclassified as six classes, one of which was selected for refinement. This resulted in the generation of a map with an average resolution of 4.5 Å (FSC 0.143) (Figure 1—figure supplement 4A). The resolution varies within the map, with resolution highest in the region occupied by the nucleosome and ATPase lobes and lower resolution in the vicinity of the DNABD and ubiquitin peptides (Figure 1—figure supplement 4B). The nucleosome particles exhibited a preferred orientation, which may limit the resolution (Figure 1—figure supplement 4C). A structural model was generated to fit the density map making use of the structures of a nucleosome assembled on the 601 DNA sequence, Chd1 chromoATPase, and DNABD (Figure 1). The fit for individual components of the structure to the electron density is shown in Figure 1—figure supplement 5.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig1-v2.jpg)
+
+**Figure 1.:** (A, B) Overall fit of nucleosome bound Chd1 to density map. Chd1 chromodomains – yellow, DNABD – dark blue, ATPase lobe one cyan, ATPase lobe two blue, Ubiquitin dark yellow, H2B yellow, H2A red, H3 green, H4 blue. (C, D) Two views of the structural model.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Xenopus laevis histone H3K36C was alkylated to generate a mimic of trimethyl lysine (Simon et al., 2007). MALDI mass spectrometry shows that the mass of free histone H3 (A) increases by 86 Da following alkylation (B) consistent with efficient conversion. (C) Chd1 directed nucleosome repositioning was assessed using a two colour nucleosome repositioning assay in which differently modified octamers are assembled onto DNA fragments labelled with different fluorescent dyes assays. Comparison of repositioning rates from four repeats indicates that the initial rate of repositioning is 1.9 fold greater for the trimethyl mimic.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Ubiquitin was cross-linked to H2BK120C as described previously (Long et al., 2014; Morgan et al., 2016). Ubiquitin modified H2B was purified by ion exchange chromatography and refolded into H2A:H2Bub dimer (lane 1), and H2Bub octamer (lane 2), which is compared to native octamer (lane 3) (A). Nucleosomes were assembled on DNA including an asymmetric 14 base pair linker using ubiquitin modified H2B and alkylated H3K36. (B) The assembly of nucleosomes was assessed by native PAGE (lane 2). Incubation with Chd1 resulted in a major species consistent with binding of a single Chd1 to a nucleosome (lane 3).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) An example motion corrected micrograph. (B) 2D classification resulted in identification of 16 classes with Chd1 bound to nucleosomes. (C) Initial 3D classification resulted in five classes three of which were combined (D), reclassified (E) and refined (F).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) The fourier shell correlation between two half maps is plotted for corrected, unmasked, masked and phase randomised data as indicated. The average resolution was estimated from the corrected FSC at 0.143 as 4.5A. (B) Plot showing local distribution of resolution calculated from the unfiltered half maps. (C) Angular distribution of particles used for final refinement.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** The indicated components fitted individually to relevant regions of the smoothed density map. In the case of H2Bα2 the fit is to the unsmoothed map.
 
 The overall organisation of Chd1 is similar to that observed previously by cryo EM (Farnung et al., 2017; Sundaramoorthy et al., 2017) and directed cross-linking (Nodelman et al., 2017). The ATPase domains are bound at the SHL-2 location. Of the two SHL2 locations within nucleosomes, the bound site is in closest proximity to SANT-SLIDE domain bound linker DNA in physical space, but distal on the unwrapped linear DNA sequence (Figure 1). Chd1 predominantly contacts the nucleosome via contacts with DNA, via the DNABD in the linker and ATPase lobes at SHL2; contacts with histones are limited to the histone H3 and H4 N-terminal regions discussed below.
 
@@ -46,7 +70,31 @@ We previously showed that Chd1 binding results in nucleotide-dependent unwrappin
 
 The orientation of the DNABD is critical in determining the extent of DNA unwrapping. The only contacts detected between the DNABD and the remainder of Chd1 are contacts with the chromodomains (Figure 2 contact I and II). The first of these is the interaction between K329 of chromodomain II and D1201 P1202 in the SLIDE component of the DNABD and has been observed previously (Farnung et al., 2017; Nodelman et al., 2017) (Figure 2—figure supplement 1A). The second contact is between S344 and K345 in the linker helix between chromodomain II and ATPase lobe I with the SANT component of the DNA binding domain at D1033-D1038 (Figure 2—figure supplement 1A). Given that chromodomains are present in Chd1 enzymes but not ISWI and Snf2 remodellers, it makes sense that the residues contacted in the SANT and SLIDE domains are most highly conserved in Chd1 proteins (Figure 2—figure supplement 1B) (Hall et al., 2009; Meng et al., 2015; Sundaramoorthy et al., 2017).
 
-## Repositioning of Chd1 ATPase lobes to a closed ATP-bound state drives repositioning of chromodomains
+![Figure 2.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig2-v2.jpg)
+
+**Figure 2.:** Overview of the major contacts constraining the positioning of the Chd1 chromodomains. Colours of domains as for Figure 1. Key contacts are highlighted. (I) Chromodomain II SLIDE, (II) Chromodomain linker helix to SANT, (III) Chromodomain II to ATPase lobe 1, (IV) Chromodomain I to nucleosomal DNA at SHL + 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Residues involved in the interactions are coloured by surface charge. (B) Sequence alignments showing conservation of residues making these contacts in Chd1 proteins.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Interaction of Chd1 chromodomains with nucleosomal DNA at SHL + 1. R241 and K240 come in close contact with DNA.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** ADP Berylium Fluoride fitted to density in a pocket formed by conserved residues contributed by both ATPase domains which are positioned in a closed state. Residues observed to contribute to catalysis in related proteins are well positioned to function similarly in Chd1.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Fit of ATPase lobe 2, histone H3 and Histone H4 tail to density map. Residues coming into proximity with the H4 tail, D275, D279 and E669 are indicated by surface charge. The contact between ATPase lobe two and the histone H3 alpha one helix is also shown. (B) and (C) Sequence alignments show that the sequences participating in these interactions are conserved in Chd1 proteins and to some extent in Iswi and Snf2 proteins as well.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) The ability of Chd1-1305 and Chd1 1–3505 Δ 632–646 to reposition nucleosomes initially located asymmetrically on 0W47 cy5 labelled DNA fragments was assessed by native gel electrophoresis. (B) Quantitation of nucleosome repositioning following triplicate repeats indicates that the deletion abolishes nucleosome sliding detectable using this assay.
+
+### Repositioning of Chd1 ATPase lobes to a closed ATP-bound state drives repositioning of chromodomains
 
 The position of the chromodomains is determined by each of the four contacts made with other components of the complex (Figure 2). When not bound to nucleosomes, the tandem chromodomains of Chd1 are observed to impede DNA binding to the ATPase domains (Hauk et al., 2010). This gave rise to the prediction that these domains would be rearranged in the nucleosome-bound state (Hauk et al., 2010). This is indeed the case as the chromodomains undergo an 18 degree rotation when compared to the orientation observed in the crystal structure of Chd1 in the open state (Figure 3). Following repositioning, chromodomain I interacts with nucleosomal DNA at SHL1 (Figure 2—figure supplement 2) as observed previously (Farnung et al., 2017; Nodelman et al., 2017).
 
@@ -64,7 +112,7 @@ The structure, also provides clues as to how these conformational changes are dr
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig4-v2.jpg)
 
-**Figure 4.:** Pulsed electron paramagnetic measurements were used to measure the distance between nitroxyl reporter groups attached to Chd1 at ATPase lobe 1 (S524) and chromodomain I (V256). (A) The probability distribution P(r) at different separations was measured in the presence (purple) and absence (blue) of ADP.BeF. The distance corresponding to the major distance is shown for both measurements. The distance corresponding to the additional distribution appears as a shoulder in the presence of ADP.BeFx and is also indicated. Modelled distances between these labelling sites in the open state (3MWY), and the closed state observed in the Chd1 bound nucleosome are indicated in (B) and (C), respectively.10.7554/eLife.35720.019Figure 4—source data 1.
+**Figure 4.:** Pulsed electron paramagnetic measurements were used to measure the distance between nitroxyl reporter groups attached to Chd1 at ATPase lobe 1 (S524) and chromodomain I (V256). (A) The probability distribution P(r) at different separations was measured in the presence (purple) and absence (blue) of ADP.BeF. The distance corresponding to the major distance is shown for both measurements. The distance corresponding to the additional distribution appears as a shoulder in the presence of ADP.BeFx and is also indicated. Modelled distances between these labelling sites in the open state (3MWY), and the closed state observed in the Chd1 bound nucleosome are indicated in (B) and (C), respectively.
 
 The partial repositioning of the chromodomains observed in free Chd1 is likely to be stabilised by additional favourable interactions formed when this repositioning occurs within the context of nucleosome bound Chd1. These include the formation of contacts between chromodomain I and DNA at SHL1, between ATPase lobe II and the H3 alpha one helix, between ATPase lobe II and the histone H4 tail and most significantly the formation of a substantial interaction interface between ATPase lobe II and nucleosomal DNA at SHL2. The repositioning of the chromodomains in turn acts as a lever to reposition the DNA binding domain. In the context of nucleosomes this results in nucleotide-dependent unwrapping of two turns of nucleosomal DNA (Sundaramoorthy et al., 2017). Conversely, the interaction of the DNABD requires linker DNA to be accessible.
 
@@ -74,23 +122,55 @@ In order to investigate how the ability of the DNABD to interact with linker DNA
 
 **Figure 5.:** The structure of the Chd1 bound nucleosome was used to model binding to the linker between an adjacent nucleosome (grey) by extending the liner DNA to 19 bp. With shorter linkers steric clashes with the adjacent nucleosome become progressively more severe.
 
-## Organisation of the Chd1 ATPase domains
+### Organisation of the Chd1 ATPase domains
 
 Nucleosome repositioning is likely to be driven by the ability of the ATPase domains to drive ATP- dependent DNA translocation. This has been observed directly for several Snf2 family proteins (Deindl et al., 2013; Lia et al., 2006; Sirinakis et al., 2011; Zhang et al., 2006) and is conserved within a wider family of superfamily II ATPases (Singleton et al., 2007). Structures of superfamily II single stranded translocases, such as herpes virus NS3, in different NTP bound states illustrate how the ratcheting motion of the ATPase domains drives translocation (Gu and Rice, 2010). To date such a series of structures does not exist for a double strand specific translocase. This raises the question as to whether structures of NS3 can be used to inform key aspects of the mechanism of Chd1 such as identifying the tracking strand. To do this we first align the ATPase lobes of Chd1 individually with NS3. The ATPase lobes of Chd1 like other Snf2 related proteins contain additional helices not conserved with NS3 (Dürr et al., 2005; Liu et al., 2017; Thomä et al., 2005). As a result, the alignment is restricted to conserved helices. In the case of lobe I and II, the RMSD of the fit is 4.9 Å and 6.5 Å, respectively (Figure 6—figure supplement 1A). In the closed state alignment of both domains with the structure of NS3 in the ADP.BeF bound state results in an RMSD of 9.8 Å. Using this alignment, the ssDNA bound by NS3 can be docked into the Chd1-Nucleosome structure (Figure 6A). This ssDNA aligns with the top strand of nucleosomal DNA (Figure 6). Conserved motif Ia in ATPase lobe one and motifs IV and V from ATPase lobe two contact this strand. These residues undergo a ratcheting motion during the course of ATP hydrolysis that drives the ssDNA through NS3 (Gu and Rice, 2010). Similar motion between these residues would be anticipated to drive nucleosomal DNA across the nucleosome dyad in the direction of the longer linker (Figure 6B).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig6-v2.jpg)
+
+**Figure 6.:** (A) Contacts between motifs conserved with DNA at SHL2. Motifs and colouring are indicated on the structure. The ssDNA from NS3 aligned to Chd1 is shown docked into Chd1 (red). In Chd1 motifs II and III contact the opposite (3’−5’) strand. Contacts made by remodelling enzyme specific extension are labelled A, B and C. The locations of each sequence are indicated in the schematic guide. (B) Schematic indicating directionality in context of a nucleosome. The directionality of NS3 translocation inferred from docking the ssDNA is 3’−5’ away from the nucleosome dyad. Assuming movement of Chd1 around the nucleosome is constrained (for example via contact with linker DNA, the H4 tail and histone H3) translocation of Chd1 with this directionality is anticipated to drive DNA in the opposite direction towards the long linker as indicated.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** ATPase domains of Chd1 and NS3 docked individually and together. ATPase lobes 1 and 2 are shown in light and dark blue. Regions specific for Snf2 proteins are shown in white. NS3 ATPase domains in raspberry.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Contacts between Snf2 and DNA adjacent to SHL2 at SHL6 K855, R880 and K885 (PDB 5 × 0Y). (B) These contacts are not conserved in Chd1 and instead an acidic surface is presented by D464 and E468. The region 476 to 480 contacts the unravelled DNA. In both panels normally wrapped nucleosomal DNA is indicated in orange, and the gyre unwrapped by Chd1 in black.
 
 It is notable that within Chd1 additional DNA contacts are made that differ from those observed in NS3. Firstly, motifs II and III within lobe one contact the opposite DNA strand (Figure 6A). As these motifs are intimately associated with motif Ia they would be anticipated to undergo a similar ratcheting motion with respect to the contacts made by lobe 2. Secondly, the ATPase lobes of Chd1 like those of Snf2 contain additional helices including the protrusions to the helical lobes and the brace helix that are unique to chromatin remodelling enzymes (Figure 6A) (Farnung et al., 2017; Flaus et al., 2006; Liu et al., 2017). These extend the binding cleft between the ATPase lobes and make additional contacts with both DNA strands.
 
 The structure of a fragment of the yeast Snf2 protein bound to a nucleosome revealed contacts between ATPase lobe one with DNA at SHL2 and the adjacent DNA gyre at SHL 6 (Liu et al., 2017) (Figure 6—figure supplement 2A). The basic surface of lobe one responsible for this interaction is not conserved in Chd1, and the acidic residues D464 and E468 make a similar interaction with DNA unlikely. In addition, DNA is not present in this location as it is lifted off the surface of the octamer (Figure 6—figure supplement 2B). In the case of the Snf2 protein the interaction with the adjacent DNA gyre is proposed to anchor the translocase preventing it from transiting around the octamer surface (Liu et al., 2017). Chd1 has a relatively small interaction interface with histones, so there is a similar requirement for DNA interactions to constrain motion of the whole protein. In the case of Chd1 this could instead be provided through the interaction of the chromodomains with DNA at SHL1 and through the interaction of the DNA binding domain with linker DNA. Amino acids 476 to 480 of lobe one also interact with DNA in the unravelled state (Figure 6—figure supplement 2B). These residues are not conserved even in Chd1 proteins so the significance of this contact is not clear.
 
-## Two molecules of Chd1 can bind a single nucleosome using the same mode of binding
+### Two molecules of Chd1 can bind a single nucleosome using the same mode of binding
 
 Chromatin organising motor proteins are capable of catalysing bidirectional nucleosome repositioning that can occur as a result of the binding of two or one enzyme (Blosser et al., 2009; Qiu et al., 2017; Racki et al., 2009; Willhoft et al., 2017). As Chd1 binds to one side of the nucleosome, no steric clashes are anticipated should a second Chd1 bind linker DNA on the opposite side of the nucleosome. To investigate this further, complexes consisting of two Chd1 molecules bound to one nucleosome were prepared using nucleosomal DNA with symmetrical linkers of 14 base pairs and the images processed as indicated (Figure 7—figure supplement 1). Most particles were assigned to 2D classes in which two bound Chd1 molecules are discernible, though one is often more dominant likely as a result of the projections of the dominant orientations observed. All 3D classes have two bound Chd1 molecules and the best refined class provides an envelope with 11 Å resolution (FSC 0.143) (Figure 7). Two Chd1 molecules bound in the same mode observed in the 1:1 complex can be docked into this volume. There are no direct contacts between the two Chd1 proteins suggesting that the two bound enzymes are likely to function independently. Previously, negative stain EM of two Chd1 molecules bound to a single nucleosome indicated that the DNA binding domain interacted with linker DNA on only one side of the nucleosome (Nodelman et al., 2017). Our envelope shows that both DNA-binding domains can bind to linker DNA simultaneously and that the extent of DNA unwrapping is similar on both sides of the nucleosome. We do however observe that within some 3D classes the path of the unwrapped DNA is less clear on one side of the nucleosome. This could relate to differences in the dynamic interactions of Chd1 with DNA on the two sides of the nucleosome (Tokuda et al., 2018).
 
-## The trajectory of the histone H3 tail is altered by DNA unwrapping
+![Figure 7.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig7-v2.jpg)
+
+**Figure 7.:** The volume obtained for the 2Chd1:1Nucleosome complex is shown contoured to 0.0027. Two Chd1 molecules in the conformation observed in Figure 1 and a nucleosome on which DNA is unwrapped from both sides to the same degree as observed on the Chd1 bound side of the 1:1 complex are shown ridged body fitted into the volume. The correlation coefficient for fitting is 0.95. The colouring of domains is as for Figure 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Complexes consisting of two Chd1 molecules bound to a single nucleosome with 14 base pair linkers on each side were prepared on EM grids. (A) Example micrograph used to identify 275504 particles from which 12 2D classes were identified as shown in (B). (C) 3D classes were processed to obtain a final volume based on 24857 particles as indicated. Particles display an orientation bias (D) The fourier shell correlation between two half maps is plotted for corrected, unmasked, masked and phase raondomised data as indicated. The average resolution was estimated from the corrected FSC at 0.143 as 10 Å (E).
+
+### The trajectory of the histone H3 tail is altered by DNA unwrapping
 
 On the fully wrapped side of the nucleosome the H3 tail can be traced to proline 38, emerging between the DNA gyres at SHL1. In contrast, on the unwrapped side of the nucleosome the H3 tail can be traced to alanine 26 indicating that on this side of the nucleosome the H3 tail is better ordered. In addition, the trajectory of the tail is different to that observed in previous structures (Figure 8A). This altered trajectory was also not observed in a previous structure of a Chd1-bound nucleosome (Farnung et al., 2017). This structure was made in the presence of PAF1 and FACT complexes which may have contributed to noise in this region that is not apparent in our structure (Farnung et al., 2017). A potential explanation for the defined and altered trajectory of the histone H3 tail on the unwrapped side of the nucleosome is that amino acids within the extreme N-terminal region, that are not resolved in our structure, interact with the unravelled DNA. The 25 N-terminal residues include eight lysine and arginine residues that could interact with DNA at different locations along the unravelled linker. Interestingly, deletion of the H3 tail to H3K36 increases the initial rate at which nucleosomes are repositioned by Chd1 (Figure 8—figure supplement 1). This effect is not dependent on DNA binding via the extreme N-terminus as deletion to K26 does not stimulate Chd1 activity (Figure 8—figure supplement 1). The region of H3 that exerts the repressive effect occupies the density shown in Figure 8A. Surprisingly, no contacts between this region of H3 and Chd1 are observed. It is possible that this region interacts with regions of Chd1 such as the N-terminus that are not resolved, or that the repressive effect is exerted when Chd1 is bound in a conformation different to that observed by EM.
 
-## Ubiquitin interacts with unravelled nucleosomal DNA
+![Figure 8.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig8-v2.jpg)
+
+**Figure 8.:** (A) The histone H3 tail on the unwrapped side of a Chd1 bound nucleosome is shown in dark blue fitted to electron density shown in red. The density extends to residue 26 on this side of the nucleosome and follows a path towards the unwrapped DNA. On the wrapped side of the nucleosome, the H3 tail is less well defined and follows a path similar to that observed on nucleosomes bound by 53BP1 (shown in light blue). H3 tail. (B) Ubiquitin on the wrapped side of the nucleosome is located over the acidic patch. On the unwrapped side of the nucleosome it is repositioned away from the acidic patch and interacts with the unravelled DNA.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Nucleosomes with intact H3 assembled onto 0W47 DNA fragments labelled with cy5 were mixed with nucleosomes with histone H3 truncated to K36 assembled on cy3 labelled DNA. Following repositioning by Chd1 for the times indicated repositioning of each nucleosome was assessed by scanning the gels with appropriate excitation and emission filters as shown in the top panels. Quantitation of the proportion of nucleosomes repositioned shows that H3 Δ1–37 nucleosomes are repositioned 4-fold faster. (B) The approach described in A was used to show that truncation of H3 to 25 does not affect the rate of repositioning by Chd1.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/35720/elife-35720-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** The dual fluorescence labelling assay described for Figure 8—figure supplement 1 was applied to study the effect of cross-linking ubiquitin to histone H3 K123. Ubiquitinylated nucleosomes were observed to be repositioned three fold faster than non ubiquitinylated nucleosomes.
+
+### Ubiquitin interacts with unravelled nucleosomal DNA
 
 The electron density for ubiquitin molecules is not as well defined as other components of the complex, and limiting for the overall resolution (Figure 1). This is likely to reflect mobility of the ubiquitin peptides. Consistent with this, the electron density determined from X-ray diffraction on crystallised nucleosomes with ubiquitin conjugated at this location resulted in no density attributable to ubiquitin (Machida et al., 2016). On the wrapped side of the nucleosome, ubiquitin is located adjacent to the acidic patch that is widely used as an interface for nucleosome binding proteins (McGinty and Tan, 2016) (Figure 8B). This is also the location that ubiquitin conjugated to H2A K15 has been observed to occupy on unbound nucleosomes (Wilson et al., 2016) and likely represents a favourable conformation for ubiquitin when coupled at different sites within this locality (Vlaming et al., 2014).
 
@@ -102,7 +182,7 @@ A striking feature of the Chd1 nucleosome complex is the limited number of conta
 
 Despite a lack of direct contacts with histones H2A and H2B, Chd1 activity is dependent on histone dimers (Levendosky et al., 2016). The requirement for histone dimers may arise as a result of dimer loss affecting DNA wrapping. Loss of a histone dimer will result in a loss of histone DNA contacts at SHL3.5, 4.5 and 5.5. More extensive unwrapping of DNA to SHL3.5 would require major repositioning of DNABD in order to retain the interaction with linker DNA while the chromoATPase is engaged at SHL-2. This provides a potential explanation for the dependency of Chd1 activity on histone dimers. Conversely, association of a histone dimer with a histone tetramer or hexamer around which DNA is initially significantly unwrapped, could be stabilised by the binding of Chd1 rewrapping DNA to SHL5. The stabilisation of the SHL5-wrapped state may facilitate correct docking of histone dimers into chromatin. This provides a mechanistic basis for the observed activities of Chd1 in H2A/H2B transfer (Lusser et al., 2005) and chromatin assembly (Fei et al., 2015; Lee et al., 2012; Torigoe et al., 2013). Repositioning of the Chd1 DNA-binding domain towards the major orientation observed in free solution, the Apo state reported by (Sundaramoorthy et al., 2017), would guide linker DNA towards the fully wrapped state. As a result Chd1 has the potential to function in multiple stages of chromatin assembly and the generation of organised chromatin (Lusser et al., 2005; Robinson and Schultz, 2003; Torigoe et al., 2013).
 
-## Chd1 directionality
+### Chd1 directionality
 
 The Chd1 enzyme has the ability to organise spaced arrays of nucleosomes both in vitro and in vivo (Gkikopoulos et al., 2011; Lusser et al., 2005; Robinson and Schultz, 2003). Enzymes that exhibit this organising activity typically reposition nucleosomes away from the ends of short DNA fragments. This is also true for Chd1 (McKnight et al., 2011; Stockdale et al., 2006). Repositioning of nucleosomes with this directionality conflicts with the directionality of translocation inferred from docking the tracking strand of NS3 into Chd1 (Farnung et al., 2017) (Figure 6). Tracking along this strand with 3’−5’ directionality would instead be anticipated to draw DNA into the nucleosome from the side of the nucleosome that has no linker DNA.
 
@@ -114,7 +194,7 @@ Confounding this, the Chd1-nucleosome structure bears the hallmarks of an active
 
 Further study will be required to reconcile these observations. We nonetheless speculate that the initial stages of remodelling by Chd1 are most effective on nucleosomes lacking exit DNA. Consistent with this the initial rate of Chd1 ATPase activity has been observed to be greater on nucleosomes lacking exit linker DNA (Nodelman et al., 2017). In cells, lack of linker could arise in close packed nucleosomes and represent a suitable substrate for a nucleosome spacing enzyme. The rapid action of Chd1 on close packed chromatin would generate new exit linker DNA which would then be available to be bound by the DNABD in the conformation observed by in the EM structures. In this case, Chd1 bound in the conformation shown in Figure 1, could be active but represent a state in which the DNABD is bound to exit rather than entry DNA. This reconciles many of the biochemical observations, and is compatible with the directionality inferred from the interaction of DNA with the ATPase domains. However, it requires that the Chd1 ATPase domains exhibit a preference for initial binding to nucleosomes on the side that initially lacks linker DNA. The basis for this is not clear, but in the case of ISWI enzymes the initial and subsequent translocation events have been observed to differ (Deindl et al., 2013), raising the possibility that they could be regulated independently. Following initial repositioning, the engagement of the DNABD with the new exit linker may provide an opportunity for large changes in enzyme conformation, perhaps related to those observed for SNF2H (Leonard and Narlikar, 2015) and enabling individual Chd1 molecules to switch between different sides of the nucleosome enabling bidirectional repositioning (Qiu et al., 2017).
 
-## Interplay between Chd1 and histone modifications
+### Interplay between Chd1 and histone modifications
 
 Both budding yeast Chd1 and human Chd2 are found to be enriched within coding regions (de Dieuleveult et al., 2016; Gkikopoulos et al., 2011; Lee et al., 2017). Histone H3 K36me3 is a hallmark of coding region nucleosomes, so we prepared nucleosomes alkylated to mimic trimethylation at this position. Alkylation modestly stimulates Chd1 activity (Figure 1—figure supplement 1), raising the possibility that this modification is recognised by the enzyme, possibly via the chromodomains. However, we observe electron density for the histone H3 tail to residue 26, indicating that H3K36 does not stably interact with the chromodomains or any other component of Chd1 in the structure reported here. Furthermore, for this interaction to occur, either the chromodomains would need to be repositioned, or the structure of the N-terminus of H3 reconfigured for example by unfolding of the alpha–N helix (Elsässer et al., 2012; Liu et al., 2012).
 
@@ -132,11 +212,11 @@ Although the repositioning of the H3 tail and ubiquitin were observed on Chd1-bo
 
 ## Materials and methods
 
-## Cloning, protein expression and purification
+### Cloning, protein expression and purification
 
 ScChd1 C-terminal and N-terminal truncations were made from the full length clone described in Ryan et al, using an inverse PCR strategy (Ryan et al., 2011). A similar approach was used to generate a chd1 lobe2 Δ632–646 deletion. Site-directed mutagenesis was used to introduce cysteine residues at strategic locations on ScChd1 1-1305ΔC using standard cloning procedure. All proteins were expressed in Rosetta2 (DE3) pLysS Escherichia coli cells at 20° C in Auto-induction media, and the purification of the protein was carried out typically as described in Ryan et al. After the purification of the protein the GST tag was cleaved with precision protease and the tag cleaved proteins were subjected to size exclusion chromatography using Superdex S200 10/300 GL columns (GE Healthcare). Expression and purification of Xenopus laevis histones were carried out as described previously (Luger et al., 1999).
 
-## Installation of Methyl-lysine analogues in H3 K36
+### Installation of Methyl-lysine analogues in H3 K36
 
 Alkylation of cysteine-mutant histones to generate histones modified with methyl-lysine analogues was performed as in (Simon et al., 2007). Approximately 10 mg of lyophilised cysteine mutant histone was resuspended in 800 µL (me3) or 900 uL (me0) degassed alkylation buffer (1M HEPES, 10 mM D,L-methionine, 4M Guanidine HCl, pH7.8). Histones were reduced with fresh 30 mM DTT for 30 min at room temperature.
 
@@ -146,38 +226,134 @@ For generation of the unmethylated lysine analogue, 75 µL of 1M 2-Bromoethylami
 
 The reaction was terminated with the addition of 50 µL 2-mercaptoethanol for 30 min and the alkylated histone was desalted either by dialysis into water with 2 mM 2-mercaptoethanol or on a PD-10 desalting column (GE 52130800). The shift in molecular weight associated was confirmed via MALDI-TOF mass spectrometry.
 
-## In vitro ubiquitination
+### In vitro ubiquitination
 
 Recombinant expression of xH2B K120C and His-TEV-Ubiquitin G76C mutant proteins was induced with IPTG for 4 hr in Rosetta 2 DE3 pLysS cells grown at 37⁰C. Inclusion body purification followed by cation exchange chromatography was performed to isolate the histone protein. Ubiquitin was purified using HisPur cobalt resin with 150 mM sodium chloride/20 mM Tris pH8 buffer and eluted with 350 mM imidazole. Histones and ubiquitin were desalted by dialysis into water with 2 mM 2-mercaptoethanol and lyophilised for storage.
 
 Proteins were re-suspended in 50 mM ammonium bicarbonate pH eight and treated with 2 mM TCEP for 1 hr. Ellman’s reagent was used to ascertain the concentration of free sulfhydryls, and xH2b and ubiquitin were combined at equimolar ratios, as defined by the Ellman’s assay, and diluted with 50 mM ammonium bicarbonate to 200–250 uM each protein. The proteins were crosslinked at room temperature with four hourly additions of ¾ molar ratio of 1,3 dichloroacetone (freshly prepared in DMF). An equal volume of denaturing buffer (7M Guanidine HCl, 350 mM sodium chloride, 25 mM Tris pH7.5) was added to the reactions, which were purified using HisPur cobalt resin, pre-equilibrated in denaturing buffer. The His-TEV-Ub-xH2B crosslinked product was eluted with 350 mM imidazole and dialysed into SAUDE200 buffer (7M Urea, 20 mM sodium acetate, 200 mM sodium chloride, 1 mM EDTA, 5 mM 2-mercaptoethanol) overnight. The ubiquitinated histone was further purified over a cation exchange column, as before, and fractions were dialysed into water with 2 mM 2-mercaptoethanol and lyophilised for storage.
 
-## Preparation of recombinant nucleosomes
+### Preparation of recombinant nucleosomes
 
 Xenopus H2B-K120 ubiquitinylated histones were refolded in equimolar ratios with H2A and similarly H3 K36 methyl analogue histones were refolded in equimolar ratios with histone H4 to obtain dimers and tetramers as described previously for wild type histones Dyer et al., and purified on a size exclusion chromatography using S200 gel filtation column. The peak fractions were analysed with SDS-PAGE gel and pooled. 601 DNA fragments of respective lengths for recombinant nucleosome assembly were generated by PCR method as described previously (Sundaramoorthy et al., 2017). Nucleosomes were generated by salt dialysis as described previously by combining H2A/H2B-K120 ubiquitin dimer, H3K36 methyl lysine analogue tetramer (2:1 ratio) with DNA containing PCR-amplified Widom 601 DNA sequence.
 
-## Nucleosome repositioning assay
+### Nucleosome repositioning assay
 
 Nucleosomes were reconstituted on Cy3 (me0) and Cy5 (me3) labelled DNA, based on the 601 sequence, with a 47 bp extension. Repositioning by Chd1 was performed in 40 mM Tris pH7.4, 50 mM KCl, 3 mM MgCl2, 1 mM ATP, 100 nM each nucleosome, and 10 nM Chd1; 10 µL was removed at each time point (T = 0, 4, 8, 16, 32, and 64 min), placed on ice, and stopped with the addition of 100 ng/µL competitor DNA, 200 mM NaCl, and 1.6% sucrose. Repositioned nucleosomes were run on 6% PAGE/0.2X TBE gels in recirculating 0.2X TBE buffer for 3–4 hr at 300V. The percent of repositioned nucleosomes was analysed using Aida image analysis software. Data were fit to a hyperbola in Sigma Plot, to determine the initial rate of repositioning.
 
-## Nucleosome binding
+### Nucleosome binding
 
 Xenopus laevis nucleosomes (20 nM), reconstituted on Cy3 labelled 0W11 DNA, were bound to titrations of Chd1 enzymes (concentration specified in figure legend) in 50 mM Tris pH 7.5, 50 mM sodium chloride, and 3 mM magnesium chloride supplemented with 100 µg/mL BSA. Unbound and bound nucleosomes were separated on a pre-run 6% polyacrylamide gel (49:1 acrylamide: bis-acrylamide) in 0.5X TBE buffer for 1 hr at 150V. The gel shift was scanned on Fujifilm FLA-5100 imaging system at 532 nm.
 
-## Spin labelling of ScChd1, PELDOR measurements and modelling
+### Spin labelling of ScChd1, PELDOR measurements and modelling
 
 MTSL was conjugated to introduced cysteines immediately following size exclusion purification as described in Hammond et al. (2016). Excess unreacted labels were removed from the sample by dialysis. PELDOR experiments were conducted at Q-band (34 GHz) operating on a Bruker ELEXSYS E580 spectrometer with a probe head supporting a cylindrical resonator ER 5106QT-2w and a Bruker 400 U second microwave source unit as described previously (Hammond et al., 2016). All measurements reported here were made at 50K. Data analysis was carried out using the DeerAnalysis 2013 package (Jeschke and Polyhach, 2007). The dipolar coupling evolution data were first corrected to remove background decay. Tikhonov regularisation was then used to determine distance distributions from each dataset.
 
 To model the distance distribution for the open conformation of Chd1 helicase lobes crystal structure of chromo helicase (PDB Code: 3MWY) (Hauk et al., 2010) was used. For the closed conformation refined cryoEM structure of Chd1 bound to nucleosome in the presence of ADP.BeFx described in this study was used as a model. For each structure, R1 spin labels were added and the distribution simulated for each position using MTSSL wizard in Pymol. Also the average distance from the distribution from a pair of spin labels were calculated using MTSSL wizard in Pymol.
 
-## Sample preparation, Cryo Electron Microscopy data collection and analysis
+### Sample preparation, Cryo Electron Microscopy data collection and analysis
 
 The appropriate ratio of ScChd1(1-1305Δ57–88) to nucleosome for 1:1 and the 2:1 complex formation in the presence of 5-fold molar excess of ADP-BeFx was determined by titration and native PAGE analysis. The formed complex was then purified by size exclusion gel filtration using a PC 3.2/30 superdex 200 analytical column in 20 mM Tris, 50 mM NaCl and 250 µM ADP.BeFx.(formed by mixing 1:1:3 molar ratio of ADP:BeCl2:NaF). In a typical run 50uLs of 20 µM of sample was injected using Dionex autoloader. 50uLs fractions were collected and analysed in 6% Native PAGE gel and appropriate fractions containing ScChd1-nucleosome complexes were pooled together. A 4 µl drop of sample was then applied to C-flat Holey carbon foil (400 mesh R1.2/1.3 µM) pre-cleaned with glow discharge (Quorum technologies). After 15 s incubation, grids were double side blotted for 4 s in a FEI cryo-plunger (FEI Mark III) at 90% humidity and plunge frozen into −172°C liquefied ethane. Standard vitrobot filter paper Ø 55/20 mm, Grade 595 was used for blotting.
 
 The prepared grids are initially checked for its ice quality and the particle distribution using a JEOL 2010 microscope with side-entry cryo-holder operated at 200 keV and equipped with a gatan 4k × 4 k CCD camera. Cryo-grids were then stored in liquid nitrogen and dry-shipped to respective centre for data collection. For the 1:1 complex the data were acquired on a FEI Titan Krios transmission electron microscope (TEM) operated at 300 keV, equipped with a K2 summit direct detector (Gatan). The 2:1 complex data were collected with FEI Titan Krios microscope equipped with Falcon three detector. Automated data acquisition was carried out using FEI EPU software at a nominal magnification of 105,000 × for the 1:1 complex and 59,000X for the 2:1 complex. For both the datasets, the data were collected as a movie with 32 frames per movie for the 1:1 complex and 40 frames per movie for the 2:1. Details of the data collection and processing parameters for both the datasets are included in Table 1.
 
+**Table 1.**
+ Data collection and processing summary
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Data collection and processing</th>
+      <th>UbNucleosome-Chd1 complex</th>
+      <th>Nucleosome-2Chd1 complex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Microscope</td>
+      <td>Titan Krios</td>
+      <td>Titan Krios</td>
+    </tr>
+    <tr>
+      <td>Detector</td>
+      <td>Gatan K2 Summit</td>
+      <td>Falcon 3</td>
+    </tr>
+    <tr>
+      <td>Mode</td>
+      <td>Electron Counting</td>
+      <td>Integrating</td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td>105000X</td>
+      <td>59000X</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td>300</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td>Number of frames</td>
+      <td>32</td>
+      <td>40</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e-/Å2)</td>
+      <td>40</td>
+      <td>62.5</td>
+    </tr>
+    <tr>
+      <td>Exposure time (Sec)</td>
+      <td>10</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td>Dose per fraction</td>
+      <td>1.25</td>
+      <td>1.56</td>
+    </tr>
+    <tr>
+      <td>Pixel Size</td>
+      <td>1.4</td>
+      <td>1.42</td>
+    </tr>
+    <tr>
+      <td>Defocus Range</td>
+      <td>1.5–3.5</td>
+      <td>1.7–3.5</td>
+    </tr>
+    <tr>
+      <td>Symmetry Imposed</td>
+      <td>C1</td>
+      <td>C1</td>
+    </tr>
+    <tr>
+      <td>Initial Particle images (no.)</td>
+      <td>1050000</td>
+      <td>275504</td>
+    </tr>
+    <tr>
+      <td>Final Particle images (no.)</td>
+      <td>137,000</td>
+      <td>24846</td>
+    </tr>
+    <tr>
+      <td>Final Map resolution (Å)</td>
+      <td>4.5</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>Map Sharpening B factor (Å2)</td>
+      <td>−200</td>
+      <td>−800</td>
+    </tr>
+  </tbody>
+</table>
+
 The movie frames were subjected to frame wise motion correction using MotionCor2 (Zheng et al., 2017). CTF correction was then performed on the motion corrected summed image using GCTF (Zhang, 2016). Subsequent image processing was performed with RELION 2.0.4 (Scheres, 2012). About 5000 particles from 50 micrographs were first handpicked in RELION, extracted and 2D classes were generated. These 2D classes were then used as a reference in RELION auto pick routine and particles were picked from respective number of micrographs from each dataset. The auto picked particles were subsequently extracted and sorted. An iterative round of two-dimensional classification was performed to discard poorly averaging particles, contamination and exploded particles. On the resultant cleaned up particle stack a hierarchical three-dimensional classification and refinement was performed as described in the results. A low pass filtered low resolution chd1 engaged nucleosome structure was used as an initial model in the 3D classification. At the three-dimensional refinement stages a soft mask that encompasses the entire Chd1-nucleosome complex was applied. Post processing of refined models was performed with automatic B factor determination in RELION. Resolution for the refined reconstruction are determined at 0.143 FSC cut off as 4.5 Å for the 1:1 complex and 10 Å for the 2:1 Complex. Local resolution estimates were determined for the 1:1 complex using Resmap-1.4.
 
-## Model building
+### Model building
 
 For model building X.laevis nucleosome with Widom 601 sequence (PDB 3LZ0), the S.cerevisiae Chd1 DNA-binding domain (PDB 3TED) and the ATPase core with tandem chromo domain (3MWY) were used. The domains were individually placed into the electron density using UCSF chimera and fitted as a rigid body. The path of the unwrapped DNA, H4 tail region and H3 tail region were manually built in Coot. Protein back bone restraints and DNA base pair, and parallel pair restraints were generated using ProSMART and LibG modules (Nicholls et al., 2012). The generated restraints were then used as constraint in jelly body refinement with CCPEM REFMAC program. ADP·BeF3 was built by superpositioning ATP-gamma-S from the inactive Chd1 structure (PDB code 3MWY) onto our model, inspected in COOT and replacing the ATP analogue with ADP·BeFx. For the 2:1 complex the structural model of 2chd1 bound to one nucleosome with 14 bp symmetrical linker on both side was generated using one chd1 bound to 0W14 nucleosome presented in this study and the one chd1 bound to 63W0 nucleosome (PDB-ID 5O9G). The model was then rigid body docked into the reconstructed 2chd1:1nucleosome volume in chimera. The quality of the fit is assessed by visual examination and the correlation coefficient between the model and the map. Sequence alignments were generated using JALVIEW (Waterhouse et al., 2009). The EM volumes and the fitted model can be accessed from the EMDB database with EMDB accession number EMD-4318 and PDB code 6FTX for the 1:1 complex and EMD-4336 and EMD-4336 for the 2:1 complex.

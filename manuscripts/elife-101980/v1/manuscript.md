@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00cvxb145 Department of Psychiatry and Behavioral Sciences, University of Washington Seattle United States
-2. https://ror.org/00cvxb145 Department of Statistics, University of Washington Seattle United States
-3. https://ror.org/00cvxb145 Department of Biostatistics, University of Washington Seattle United States
-4. https://ror.org/00cvxb145 Department of Pharmacology, University of Washington Seattle United States
+1. Department of Psychiatry and Behavioral Sciences, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+2. Department of Statistics, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+3. Department of Biostatistics, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
+4. Department of Pharmacology, University of Washington Seattle United States ([ROR:00cvxb145](https://ror.org/00cvxb145))
 
 † Corresponding author
 
@@ -32,21 +32,65 @@ To address the extent of valence and salience encoding within the CeA, we used s
 
 To monitor calcium dynamics in CeA neurons during positive and negative reinforcement, we selectively expressed GCaMP6m in GABAergic neurons of VgatIRES-Cre (Slc32a1tm2(cre)Lowl/J; JAX strain #: 016962) mice (4 males and 6 females) and implanted a gradient-index (GRIN) lens in the CeA (Figure 1A, Figure 1—figure supplement 1). Mice were conditioned in both Pavlovian appetitive and Pavlovian fear paradigms, with the conditioning order counterbalanced (Figure 1B, Videos 1 and 2). During appetitive learning, mice demonstrated a significant increase in time spent near the food hopper during the food-predicting CS (CSFood), reduced latency to retrieve the food pellet, and an increased success rate in procuring the reward (Figure 1C). During fear conditioning, the animals learned that the shock-predicting CS (CSShock) was followed by an impending foot shock and displayed increased freezing behavior to the CSShock as trials progressed (Figure 1D).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/101980/elife-101980-fig1-v1.jpg)
+
+**Figure 1.:** (A) CeA-GABAergic neurons were labelled with GCaMP6m, and their activity was recorded using a miniature microscope (Inscopix) via an implanted GRIN lens (left). A representative image of GCaMP6m expression and lens placement is shown on the right. Scale bar, 0.5 mm. (B) Behavioral paradigm of the baseline, appetitive, and fear conditioning. To counterbalance the order of the two valence conditioning paradigms, there were two groups: appetitive → fear (5 mice) and fear → appetitive (5 mice) after the baseline session. (C) Time spent near the food hopper during CSFood (left, day: F=7.422, P=0.0005), latency to procure a pellet (middle, day: F=20.41, P<0.0001), and success rate (right, day: F=14.69, P=0. 0017) over 10 days of appetitive learning (mean ± s.e.m., grey lines represent individual data, n=10). (D) Freezing behavior during CSShock (trial: F=13.49, P<0.0001) throughout 10 trials of fear conditioning (mean ± s.e.m., grey lines represent individual data, n=10). Detailed information about statistical results is provided in Supplementary file 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101980/elife-101980-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Histological reconstructions of GRIN lens locations.
+
+![Video 1.](https://cdn.elifesciences.org/articles/101980/elife-101980-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/101980/elife-101980-video2.mp4.jpg)
+
 During conditioning, we observed responsive and non-responsive cells to both the appetitive and aversive US (Figure 2A). To resolve event-related calcium signals, we developed a variation of the ‘circular shift' method27 to stringently define cells with statistically significant responses (see Methods for detailed description). In short, we used circular shifting to generate artificial “null” calcium traces resembling a sample from a hypothetical population of neuron traces unrelated to the exact time of behavior events (Step 1, Figure 2B). Wilcoxon rank sum tests (comparing pre-stimulus vs. post-stimulus activity) were performed on recorded traces and “null” traces and summed across trials (Step 2 and Step 3, Figure 2C and D) to create a single test statistic for each neuron. P-values were obtained by comparing the summed Wilcoxon rank sum test statistics from actual data against the summed Wilcoxon rank sum test statistics from the artificially generated null distribution (Step 4, Figure 2E).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/101980/elife-101980-fig2-v1.jpg)
 
-**Figure 2.:** (A) Left: Example traces of CeA neurons that were responsive (upper three traces) and not responsive to food reward (bottom three traces). Right: Example traces of CeA neurons that were responsive (upper three traces) and not responsive to foot shock (bottom three traces). (B) Step 1: Defining the “circular shift” operation. A neuron is randomly selected from the recorded neuron pool in our current study (denoted as ). The calcium trace of the selected neuron is subjected to a circular shift operation, wherein it is moved from a randomly chosen time point (red bar). This operation results in a new calcium trace, as shown by the movement of the blue bar in (YB); the traces that initially start with blue bars become red bar starting traces. (C) Step 2: Creating a repository of test statistics for null data. A neuron is selected at random; then, the activity in each of its trials (20 trials for appetitive or 10 trials for fear conditioning, X=the number of trials) undergoes ‘circular shifting’, where a random point (red bar) is chosen within the circular shifting range. Then, on each trial, the Wilcoxon rank sum test between pre-stimulus vs. post-stimulus periods is computed. The final test statistic  representing a summary of all trials is obtained by summing the individual Wilcoxon rank sum test statistics over the trials with Wb* Step 2 is repeated Wb*=∑jWb,j*. times (we used B=500), generating a null distribution of summed statistics B. ({Wb*}b=1BD) Step 3: calculating observed test statistics. Each observed neuron receives a summary test statistic  obtained by summing the Wilcoxon rank sum test statistics from the individual trials. (W~iobs=∑jWi,jobsE) Step 4: Computing p-values. A p-value for the ith neuron comes from a comparison of  with W~iobs. For the i{Wb*}b=1Bth neuron,  (the number of pi+ ≥ Wb*+1 divided by B+1) and W~iobs (the number of pi¯ ≤ Wb*+1 divided by B+1) are calculated. The final p-value for the iW~iobsth neuron (denoted as ) is 2 times the lesser of pi and pi+. A detailed description of this statistical analysis is provided in Methods.pi¯
+**Figure 2.:** (A) Left: Example traces of CeA neurons that were responsive (upper three traces) and not responsive to food reward (bottom three traces). Right: Example traces of CeA neurons that were responsive (upper three traces) and not responsive to foot shock (bottom three traces). (B) Step 1: Defining the “circular shift” operation. A neuron is randomly selected from the recorded neuron pool in our current study (denoted as $Y$). The calcium trace of the selected neuron is subjected to a circular shift operation, wherein it is moved from a randomly chosen time point (red bar). This operation results in a new calcium trace, as shown by the movement of the blue bar in (B); the traces that initially start with blue bars become red bar starting traces. (C) Step 2: Creating a repository of test statistics for null data. A neuron is selected at random; then, the activity in each of its trials (20 trials for appetitive or 10 trials for fear conditioning, X=the number of trials) undergoes ‘circular shifting’, where a random point (red bar) is chosen within the circular shifting range. Then, on each trial, the Wilcoxon rank sum test between pre-stimulus vs. post-stimulus periods is computed. The final test statistic $W_{b}^{*}$ representing a summary of all trials is obtained by summing the individual Wilcoxon rank sum test statistics over the trials with $W_{b}^{*}=\sum_{j}W_{b,j}^{*}.$ Step 2 is repeated $B$ times (we used B=500), generating a null distribution of summed statistics ${W_{b}^{*}}_{b=1}^{B}$. (D) Step 3: calculating observed test statistics. Each observed neuron receives a summary test statistic $W~_{i}^{obs}=\sum_{j}W_{i,j}^{obs}$ obtained by summing the Wilcoxon rank sum test statistics from the individual trials. (E) Step 4: Computing p-values. A p-value for the ith neuron comes from a comparison of $W~_{i}^{obs}$ with ${W_{b}^{*}}_{b=1}^{B}$. For the ith neuron, $p_{i}^{+}$ (the number of $W_{b}^{*}$ ≥ $W~_{i}^{obs}$+1 divided by B+1) and $p_{i¯}$ (the number of $W_{b}^{*}$ ≤ $W~_{i}^{obs}$+1 divided by B+1) are calculated. The final p-value for the ith neuron (denoted as $p_{i}$) is 2 times the lesser of $p_{i}^{+}$ and $p_{i¯}$. A detailed description of this statistical analysis is provided in Methods.
 
 During Pavlovian appetitive conditioning, alignment to the cue presentation revealed no responsive cells to the CSFood or food delivery on day 1 (Figure 3A, top). However, on day 10, numerous cells were identified that were responsive to food delivery with either increases or decreases in calcium signals (Figure 3A, bottom). Analysis of responses aligned to food retrieval (head entry) revealed responsive cells on both day 1 and day 10 (Figure 3B). The number of cells showing increased calcium to head entry and the magnitude of the increase was larger on day 10 compared to day 1 (Figure 3B–D). Of the 872 cells recorded on day 10 of conditioning, a small proportion of cells were responsive to CSFood presentation, showing similar proportions of cells with increased or decreased calcium signals (Figure 3E and F). Of these CSFood responsive cells, the majority were responsive to both the CS and the food delivery (Figure 3—figure supplement 1A and B). In contrast to the CSFood responsive cells, a large number (64%) of CeA neurons were responsive to food delivery, with the largest proportion of cells showing excitatory responses (40%) compared to inhibited responses (24%) (Figure 3G and H).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/101980/elife-101980-fig3-v1.jpg)
+
+**Figure 3.:** (A) Top: Heat maps of CeA neurons aligned to CSFood onset (top left, 1078 neurons) and head entry (top right) from day 1 of Pavlovian appetitive conditioning. Bottom: Heat maps of CeA neurons aligned to CSFood onset (bottom left, 872 neurons) and head entry (bottom right) from day 10 of Pavlovian appetitive conditioning. Solid mint lines indicate CSFood, and a dotted darker mint line represents food delivery. Black dotted line represents the first head entry after food delivery. (B) Proportion of head entry responsive neurons between day 1 (top) and day 10 (bottom). (C) Left: The average Z-scored activity of head entry-excited neurons on day 1 (147 neurons) and day 10 (307 neurons) of appetitive conditioning during –10 s to 10 s after the first head entry of each reward delivery. The dark lines and shaded areas indicate the mean and standard error of the mean (s.e.m.). Right: Average area under the curve (AUC) for the Z-scored activity after head entry on day 1 compared to day 10 of appetitive conditioning (0–5 s after head entry, mean ± s.e.m.). (D) Left: The average Z-scored activity of head entry-inhibited neurons on day 1 (104 neurons) and day 10 (229 neurons) of appetitive conditioning during –10 s to 10 s after the first head entry of each reward delivery. Right: Average AUC for the Z-scored activity after head entry on day 1 compared to day 10 of appetitive conditioning (0–5 s after head entry). (E) Left: Proportion of CSFood -excited (orange), CSFood -inhibited (blue), and not significant neurons (grey) on day 10 of appetitive learning (total 872 neurons). Right: Heat maps of CSFood-excited neurons (top, n=62) and CSFood-inhibited neurons (bottom, n=50) from all trials (20 trials). Solid mint lines indicate CSFood onset and offset. (F) The average Z-scored activity of each response type (orange, CSFood-excited; blue, CSFood-inhibited; grey, not significant). The dark lines and shaded areas represent the mean and s.e.m. The mint area represents 10 s of CSFood. (G) Left: Proportion of food-excited (orange), food-inhibited (blue), and not significant neurons (grey) on day 10 of appetitive learning (total 872 neurons). Right: Heat maps of food-excited neurons (top, n=345) and food-inhibited neurons (bottom, n=241) from all trials (20 trials). The dotted line indicates a food delivery (H) The average Z-scored activity of each response type (orange, food-excited; blue, food-inhibited; grey, not significant). The dark lines and shaded areas represent the mean and s.e.m. ***P< 0.001, ****P< 0.0001. Detailed information about statistical results is provided in Supplementary file 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/101980/elife-101980-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Proportion of CSFood-only, Food-only, CSFood+ Food, and not significant neurons during appetitive learning. Blue and orange in the outer pie chart indicate the number of excited and inhibited responses from CSFood-only and Food-only responsive neurons. (B) The average Z-scored activity of CSFood excited +Food excited (first), CSFood excited+ Food inhibited (second), CSFood inhibited+ Food excited (third) and CSFood inhibited+ Food inhibited (fourth) neurons. (C) Left: Average Z-scored activity of CSFood-excited neurons during the first five trials (early; grey) vs. the last five trials (late; black) of appetitive learning. Right: Average AUC for the Z-scored activity during CSFood (0–10 s, mean ± s.e.m.). (D) Left: Average Z-scored activity of CSFood-inhibited neurons during the first five trials (early; grey) vs. the last five trials (late; black) of appetitive learning. Right: Average AUC for the Z-scored activity during CSFood (0–10 s). (E) Left: Average Z-scored activity of food-inhibited neurons during the first five trials vs. the last five trials. A dotted darker mint line indicates food delivery. Right: Average AUC for the Z-scored activity after food delivery (t=3.787, P=0.0002). (F) Left: Average Z-scored activity of shock-excited neurons during the first five trials vs. the last five trials. Right: Average AUC for the Z-scored activity after shock delivery (0–10 s; t=5.246, P<0.0001). The dark lines and shaded areas represent the mean and s.e.m. **P< 0.01, ***P< 0.001. Detailed information about statistical results is provided in Supplementary file 1.
 
 Additional analysis of CeA neuron responses on day 10 of Pavlovian appetitive conditioning revealed that there was a trend toward decreased responsiveness to the CSFood late in conditioning compared to early in the excited neurons and a significant increase in the inhibitory response in late conditioning compared to early (Figure 3—figure supplement 1C and D). In response to food delivery, no differences were observed in food-excited neurons; however, a small but significant difference was observed in food-inhibited cells with an increase in the magnitude of the inhibited response late in conditioning compared to early (Figure 3—figure supplement 1E and F).
 
 During Pavlovian fear conditioning, alignment of calcium signals to the CSShock revealed that the greatest responses were to the US presentation (Figure 4A). Of the 519 cells recorded, a small percentage were either excited or inhibited by the CSShock (Figure 4B and C). A large number of cells (42%) were responsive to the shock US with the largest proportion showing excitations (30%) compared to inhibitions (12%) (Figure 4D and E). Of the CSShock responsive cells, an approximately equal number were responsive to the CSShock only or the CSShock and USShock (Figure 4—figure supplement 1A and B). In contrast to the CSFood responsive cells during day 10 of Pavlovian appetitive conditioning, we did not observe any changes in the CSShock responsive cells during early compared to late conditioning (Figure 4—figure supplement 1C and D). However, shock-excited CeA neurons showed a significant attenuation of the excited response in late conditioning compared to early conditioning (Figure 4—figure supplement 1E). No changes were observed in shock-inhibited cells (Figure 4—figure supplement 1F).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/101980/elife-101980-fig4-v1.jpg)
+
+**Figure 4.:** (A) Heat maps of CeA neurons aligned to CSShock onset (519 neurons) from day 1 of Pavlovian fear conditioning. Solid orange lines indicate CSShock, and a dotted red line represents shock delivery. (B) Left: Proportion of CSShock-excited (orange), CSShock-inhibited (blue), and not significant neurons (grey) on day 1 of fear conditioning (total 519 neurons). Right: Heat maps of CSShock-excited neurons (top, n=19) and CSShock-inhibited neurons (bottom, n=24) from all trials (10 trials). Solid orange lines indicate CSShock onset and offset. (C) The average Z-scored activity of each response type (orange, CSShock-excited; blue, CSShock-inhibited; grey, not significant). The dark lines and shaded areas represent the mean and s.e.m. The orange area represents 10 s of CSShock. (D) Left: Proportion of shock-excited (orange), shock-inhibited (blue), and not significant neurons (grey) on day 1 of fear conditioning (total 519 neurons). Right: Averaged heat maps of shock-excited neurons (top, n=157) and shock-inhibited neurons (bottom, n=62) from all trials (10 trials). A dotted red line represents shock delivery. (E) The average Z-scored activity of each response type (orange, shock-excited; blue, shock-inhibited; grey, not significant). The dark lines and shaded areas represent the mean and s.e.m.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/101980/elife-101980-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Proportion of CSShock-only, Shock-only, CSShock +Shock, and not significant neurons during fear conditioning. Blue and orange in the outer pie chart indicate the number of excited and inhibited responses from CSShock-only and Shock-only responsive neurons. (B) The average Z-scored activity of CSShock excited +Shock excited (first), CSShock excited +Shock inhibited (second), CSShock inhibited +Shock excited (third) and CSShock inhibited +Shock inhibited (fourth) neurons. (C) Left: Average Z-scored activity of CSShock-excited neurons during the first vs. last five trials of fear conditioning. Right: Average AUC for the Z-scored activity during CSShock (0–10 s, mean ± s.e.m.). (D) Left: Average Z-scored activity of CSShock-inhibited neurons during the first vs. last five trials. Right: Average AUC for the Z-scored activity during CSShock. The orange area represents 10 s of CSShock. (E) Left: Average Z-scored activity of shock-excited neurons during the first five trials vs. the last five trials. Right: Average AUC for the Z-scored activity after shock delivery (0–10 s; t=5.246, P<0.0001). (F) Left: Average Z-scored activity of shock-inhibited neurons during the first five trials vs. the last five trials. A dotted darker red line indicates shock delivery. Right: Average AUC for the Z-scored activity after food delivery. The dark lines and shaded areas represent the mean and s.e.m. ****P< 0.0001. Detailed information about statistical results is provided in Supplementary file 1.
+
 Qualitatively, food-excited and shock-excited neurons exhibited distinctive properties. Food-excited neurons showed more sustained activity in response to food, and their time to peak activity occurred significantly later than that of shock-excited neurons, likely reflecting the longer time needed to consume food compared to the passive delivery of the shock (Figure 5—figure supplement 1A). Additionally, the maximum Z-score of food-excited neurons was larger than that of shock-excited neurons, indicating that food was more salient for the CeA (Figure 5—figure supplement 1B).
 
 To categorize cells as salience or valence encoding, we identified 303 neurons that appeared during both appetitive and fear conditioning (Figure 5A). Salience-encoding neurons (see Methods for detailed definition) were defined as those showing both excited or inhibited responses to food and shock, and comprised 15% of the total neurons (Figure 5B and C). In contrast, valence-encoding neurons were defined as those displaying differential activity to food and shock and represented 65% of the neurons (Figure 5B–E). Of these, 13.5% showed opposite responses to food or shock while the remaining 51% showed selective responses to one or the other USs (Figure 5D and E). The remaining 20% were categorized as non-responsive. These findings demonstrate that CeA neurons encode either the valence or the salience of the US, with the valence encoding being more prevalent.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/101980/elife-101980-fig5-v1.jpg)
+
+**Figure 5.:** (A) Among 872 neurons from appetitive conditioning and 519 neurons from fear conditioning, 303 neurons were registered during both learning. Heat maps of these 303 neurons during –10 s to 25 s after CSFood onset from appetitive (left) and during –10 s to 25 s after CSShock onset from fear conditioning (right). All neurons are aligned to their activity to food. The same neuron is represented in the same row. Solid mint lines indicate CSFood, and a dotted darker mint line represents food delivery, solid orange lines indicate CSShock, and a dotted red line represents shock delivery. (B) Top: the proportion of significant neurons to food and shock (both; white), food-only (blue), shock-only (red), and not significant to both (grey). Bottom: detailed response types of all possible categories (excited, inhibited, not significant) for food vs. shock. White represents salience-encoding neurons showing the same response types to food and shock (n=46, 15%), and black represents valence-encoding neurons showing different response types to food and shock (n=198, 65%). Grey represents not significant neurons (n=59, 20%). (C) Salience-encoding neurons: the average Z-scored activity of neurons that were excited to both food and shock (n=36, left) and inhibited to both food and shock (n=10, right). Inserted bar graphs indicate average AUC of the Z-scored activity after food and shock delivery (0–10 s, mean ± s.e.m.). (D) Valence-encoding neurons: the average Z-scored activity of neurons that were excited to food but inhibited to shock (n=16, left) and inhibited to food but excited to shock (n=25, right). Average AUC of the Z-scored activity after food and shock delivery are shown in inserted bar graphs (0–10 s, mean ± s.e.m.). (E) The average Z-scored activity of neurons that were excited to food but not responsive to shock (n=60, first), neurons that were inhibited to food but not responsive to shock (n=50, second), neurons that were not responsive to food but excited to shock (n=34, third), and neurons that were not responsive to food but inhibited to shock (n=13, fourth). Inserted bar graphs indicate average AUC of the Z-scored activity after food and shock delivery (0–10 s, mean ± s.e.m.). The dark lines and shaded areas represent the mean and s.e.m. (F) Proportion of significant neurons to CSFood and CSShock (both; white), CSFood-only (mint), CSShock-only (orange), and not significant to both (grey). (G) Detailed response type of all possible categories (excited, inhibited, not significant) for CSFood vs. CSShock. White represents salience-encoding neurons showing the same response types to CSFood and CSShock (n=7, 2%), and black represents valence-encoding neurons showing different response types to CSFood and CSShock (n=57, 19%). Grey represents not significant neurons (n=239, 79%). *P< 0.05, ****P< 0.0001. Detailed information about statistical results is provided in Supplementary file 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/101980/elife-101980-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Peak time comparisons of food-excited (blue) vs. shock-excited (red) neurons from food/shock delivery (t=21.76, P<0.0001). (B) Maximum Z-score comparisons of food-excited vs. shock-excited neurons (t=3.210, P=0.0014). Black bars represent the median. Circles indicate individual data. (C) Salience-encoding neurons: the average Z-scored activity of neurons that were excited to both CSFood (mint) and CSShock (orange, n=5, left) and inhibited to both CSFood and CSShock (n=2, right). (D) Valence-encoding neurons: the average Z-scored activity of neurons that were excited to CSFood but not significant to shock (n=21, first), inhibited to CSFood but not significant to shock (n=12, second), not significant to CSFood but excited to shock (n=7, third), and not significant to CSFood but inhibited to shock (n=716, fourth). Black bars indicate 10 s of CS. The dark lines and shaded areas represent the mean and s.e.m. (E) The averaged Z-scored activity of CeA neurons (n=925) during –10 s to 20 s after CSFood (left) and CSShock onset (right) from the baseline. Solid mint lines indicate CSFood and solid orange lines indicate CSShock. (F) Proportion of CSFood-responsive (left) and CSShock-responsive neurons (right). (G) The averaged freezing behavior during CSFood (mint) and CSShock (orange) during the baseline (mean ± s.e.m., n=10). (H–J) The same analyses as in A-C but with neurons from the post-test (n=788). **P< 0.01, ****P< 0.0001. Detailed information about statistical results is provided in Supplementary file 1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/101980/elife-101980-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Each trial’s pre vs. post-stimulus activity was compared using Wilcoxon rank sum test. Neurons showing significant activity to the stimulus in more than 7 trials (appetitive; food or CSFood) or 3 trials (fear; shock or CSShock) were considered responsive neurons. (B) Histograms of the number of significant cells by their number of significant trials to food (left) and shock (right). (C) Histograms of the number of significant cells by their number of significant trials to CSFood (left) and CSShock (right). (D) The proportion of food-excited (orange), food-inhibited (blue), and not significant neurons (grey) from day 10 of appetitive learning (total 872 neurons) tested by Wilcoxon rank sum test. (E) Left: all trials (20 trials) averaged heat maps of food-excited neurons (top, n=273) and food-inhibited neurons (bottom, n=207). The dotted line indicates a food delivery. Middle: the average Z-scored activity of each response type (orange, food-excited; blue, food-inhibited; grey, not significant). The dark lines and shaded areas represent the mean and s.e.m. Right: average AUC for the Z-scored activity after food delivery (10 s, mean ± s.e.m.). (F, G) The same analyses as in D,E but with shock-responsive neurons from day 1 of aversive learning (total 519 neurons, shock-excited=165, shock-inhibited=105). (H) The proportion of significant neurons to food and shock (both; white), food-only (blue), shock-only (red), and not significant to both (grey) tested with Wilcoxon rank sum test. (I) Detailed response type of all possible categories (excited, inhibited, not significant) for food vs. shock. White represents salience-encoding neurons showing the same response types for food and shock (16%), and black represents valence-encoding neurons showing different response types for food and shock (62%). (J, K) The same analyses as in D,E with CSFood-responsive neurons from day 10 of appetitive learning (total 872 neurons, CSFood-excited=63, CSFood-inhibited=56). (L, M) The same analyses as in D,E with CSShock-responsive neurons from day 1 of aversive learning (total 519 neurons, CSShock-excited=53, CSShock-inhibited=65). (N, O) The same analyses as in H,I with CS-responsive neurons registered from day 10 of appetitive and day 1 of aversive learning (total 303 neurons). *P< 0.05, ****P< 0.0001. Detailed information about statistical results is provided in Supplementary file 1.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/101980/elife-101980-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A–D) Data of 165 neurons from appetitive → fear learning order. (A) The averaged Z-scored activity during –10 s to 25 s after CSFood onset from appetitive learning (left) and during –10 s to 25 s after CSShock onset from aversive learning (right). All neurons are aligned to their activity to food. The same neuron is represented in the same row. Solid mint lines indicate CSFood, a dotted darker mint line represents food delivery, solid orange lines indicate CSShock, and a dotted red line represents shock delivery. (B) Left: Proportion of salience-encoding, valence-encoding, and not significant neurons for food vs. shock. Right: Proportion of Food + Shock, Food-only, and Shock-only responsive neurons. (C) Left: Proportion of salience-encoding, valence-encoding, and not significant neurons for CSFood and CSShock. Right: Proportion of CSFood + CSShock, CSFood-only, and CSShock-only responsive neurons. (D) Top: Location of each neuron that was Food + Shock, Food-only, Shock-only, or not significantly responsive (Mouse1-5). Bottom: Location of each neuron that was CSFood + CSShock, CSFood-only, CSShock-only, or not significantly responsive. (E–H) The same analyses as in A-D but with 138 neurons from fear → appetitive learning order (Mouse6-10). (E) The averaged Z-scored activity during –10 s to 25 s after CSShock onset from fear learning (left) and during –10 s to 25 s after CSFood onset from appetitive (right). All neurons are aligned to their activity to shock. (I) Left: Average Z-scored activity of food-excited neurons from appetitive → fear vs. fear → appetitive. Right: Average AUC for the Z-scored activity after food delivery (0–10 s, mean ± s.e.m.). The number in the bar graph represents the number of neurons for each group. (J–L) The same analyses as in L with shock-excited/inhibited neurons (J), CSFood-excited/inhibited neurons (K), and CSShock-excited/inhibited neurons (L). A dotted darker mint line represents food delivery, a dotted red line represents shock delivery, a mint bar indicates CSFood, and an orange bar indicates CSShock. The dark lines and shaded areas represent the mean and s.e.m. Detailed information about statistical results is provided in Supplementary file 1.
 
 To categorize salience- and valence-encoding neurons based on their responses to CSFood and CSShock, we analyzed the 303 registered neurons recorded during both reward and fear conditioning sessions (Figure 1C and D). Only 2% of neurons were classified as salience-encoding, while 19% were identified as valence-encoding neurons. Although representing a significantly smaller proportion of CS encoding neurons compared to the US encoding neurons (CS encoding neurons: salience = 7, valence = 57, not significant = 239; US encoding neurons: salience = 46, valence = 198, not significant = 59; Χ2=215.4, P<0.0001, df = 2), these findings demonstrate that encoding of the valence of the CS is also the predominant response type of the CeA neurons.
 
@@ -68,37 +112,159 @@ Numerous studies have identified CeA neurons that respond to the CS following co
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (chicken polyclonal)</td>
+      <td>abcam</td>
+      <td>RRID:AB_300798</td>
+      <td>(1:6000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-chicken- AlexaFluor 488 (donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>RRID:AB_2340375</td>
+      <td>(1:250)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background</td>
+      <td>AAV1-FLEX-GCaMP6m</td>
+      <td>University of Washington</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background(Mus musculus)</td>
+      <td>B6J.129S6(FVB)-Slc32a1tm2(cre)Lowl/M warJ</td>
+      <td>Jackson laboratory</td>
+      <td>RRID:IMSR_JAX:028862</td>
+      <td>4 males and 6 females</td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>MATLAB</td>
+      <td>The MathWorks, Inc</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>R</td>
+      <td>The R Foundation</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>Med-PC</td>
+      <td>Med Associates, Inc</td>
+      <td>RRID:SCR_012156</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>Graph Pad Software</td>
+      <td>GraphPad Software, Inc</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>Inscopix data processing software</td>
+      <td>Inscopix</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithms</td>
+      <td>Inscopix data acquisition software</td>
+      <td>Inscopix</td>
+      <td></td>
+      <td>IDAS 1.5.4</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI Fluoromount-G</td>
+      <td>SouthernBiotech</td>
+      <td>0100–20</td>
+      <td>DAPI staining</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gradient-index (GRIN) lens</td>
+      <td>Inscopix</td>
+      <td>1050–004413</td>
+      <td>ProViewTM Integrated Lens 0.6mm x7.3mm</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dental cement</td>
+      <td>Lang Dental</td>
+      <td>1530BLK</td>
+      <td>Contemporary Ortho-Jet Powder BLACK Powder</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dental cement</td>
+      <td>Lang Dental</td>
+      <td>1504BLK</td>
+      <td>Contemporary Ortho-Jet Liquid</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Anchoring screws</td>
+      <td>Antrin Miniature Specialties, Inc</td>
+      <td>AMS 120/1 P-25</td>
+      <td>Screws for anchoring a lens</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 Male and female VgatIRES-Cre (Slc32a1tm2(cre)Lowl/J; JAX strain #: 016962) mice (10 mice; 4 males and 6 females, sample size was determined by 0.05 α, 0.5 effect size and 0.8 power) were group-housed on a 12hr-light/12hr-dark cycle (lights on 7 AM) with ad libitum access to food and water until surgery and behavioral experiment. All experiments were conducted during the light cycle and strictly followed the guidelines set by the University of Washington Animal Care and Use Committee, ensuring ethical treatment of the animals.
 
-## Surgery and virus
+### Surgery and virus
 
 Under isoflurane-induced anesthesia, 12–16 week old VgatIRES-Cre mice at the time of surgery were placed in a stereotaxic instrument (Kopf) and injected with 0.5 µl of AAV1-FLEX-GCaMP6m (produced in-house with a titer of ~3 Χ 1012 particles/ml Gore et al., 2013). The injection was made in the right CeA (AP: –1.2 mm, ML: 2.9 mm, DV: –4.6 mm) at a rate of 0.25 µl/min. Following virus injection, mice were implanted with a gradient-index lens (GRIN lens with baseplates attached, 0.6 mm diameter, 7.3 length; Inscopix) at the virus injection site. The GRIN lens was fixed with black dental cement (Lang Dental) with anchoring screws (Antrin Miniature Specialties). Four weeks after the surgery, animals were placed on a standard food restriction schedule with free access to water until they reached ~85% of pre-operation weights. Behavioral experiments began 5 weeks after surgery.
 
-## Behavioral paradigms
+### Behavioral paradigms
 
 Throughout the experimental sessions (baseline, appetitive Pavlovian conditioning, Pavlovian fear conditioning, post-learning test; Figure 1B), the mice maintained their body weights at ~85% of their pre-operation weights. All sessions were conducted in the same operant chamber (21.6 Χ 17.8 Χ 12.7 cm) equipped with a house light, a speaker, a metal bar for fear Pavlovian conditioning, and a food dispenser for appetitive Pavlovian conditioning (MedAssociates). The operant chamber was placed in a sound-attenuating box, and each session had distinct contextual cues based on its type. Random assignment of mice was done to either the appetitive → fear or fear → appetitive group, indicating the order of valence conditioning.
 
-## Baseline
+#### Baseline
 
 Prior to any conditioning, we assessed the basal freezing behavior and calcium activity in response to CSFood and CSShock were measured. Two CSs with different frequencies of CSs (either 4 kHz or 12 kHz, 10 s each; counter-balanced) were delivered 10 times, alternating with a 90 s inter-trial interval (ITI). The contextual cues for the baseline session consisted of white walls and floor.
 
-## Pavlovian appetitive conditioning
+#### Pavlovian appetitive conditioning
 
 During this session, CSFood was paired with a pellet (20 mg sucrose pellet, Bioserv) for 20 trials per day, conducted over a period of 10 days. A 3 s delay was introduced between CSFood and the presentation of the food pellet to distinguish the offset of CSFood from the onset of food delivery. The ITI was set to 90 s. The floor of the chamber was covered with a white plastic panel, while the walls were kept transparent. The chamber was cleaned with a chlorine dioxide-based sterilant (Clidox-S) between each animal.
 
-## Pavlovian fear conditioning
+#### Pavlovian fear conditioning
 
 In this session, CSShock was paired with a foot shock (0.5 mA) for 10 trials, conducted for 1 day. Similar to the appetitive conditioning, a 3 s delay was introduced between CSShock and the delivery of the foot shock to distinguish the offset of CSShock from the onset of shock. The contextual cues during this session included white walls, a grid floor for shock delivery, and a 1% acetic acid odor cue. The chamber was cleaned with 70% ethanol between each animal.
 
-## Pre-processing calcium imaging data
+### Pre-processing calcium imaging data
 
 One week prior to the start of the experiment, imaging parameters such as focal planes and LED power were calibrated by screening calcium activity from GCaMP6m-expressing CeA GABAergic neurons. The screening session involved checking calcium signals using nVoke miniscope (Inscopix) at two focal planes (multiplane imaging) with LED power set at 40–70% depending on the GCaMP6m expression level. Calcium activity was acquired at 10 Hz per plane (20 Hz for alternating acquisition), and this final temporal resolution was used for the imaging data without further down-sampling. The fixed pre-set focal planes and LED power were maintained throughout the entire experiment to ensure consistency.
 
 To prevent prolonged exposure to the LED light, the Med Associates chamber sent a TTL pulse to turn on the LED 30 s before the CS onset and turn it off 30 s after the CS onset. Trial-structured multiplane imaging data were pre-processed through sequential concatenation and spatial down-sampled (spatial factor 4) using Inscopix Data Processing Software (IDPS). The IDPS was then utilized for the subsequent data processing steps, including motion correction, cell identification, and cell registration between planes or days. The following steps were followed: 1. Motion correction was performed multiple times as necessary until the image stabilized. 2. The motion-corrected TIFF (tag image file format) file was reloaded for easier processing of multiplane registration. 3. Multiplane registration was conducted to eliminate imaging the same cells from multiple planes (minimum spatial correlation = 0.5, temporal correlation = 0.99). 4. Cells were identified with a constrained non-negative matrix factorization algorithm for microendoscopic data (CNMF-E) (Zhou et al., 2018). 5. Longitudinal registration was used for day 10 of appetitive and day 1 of aversive learning to compare how the same cell responded to appetitive vs. aversive stimuli.
 
-## Identifying significantly responsive neurons
+### Identifying significantly responsive neurons
 
 We wish to identify neurons that are responsive to appetitive or fear stimuli (i.e. that display a difference in activity pre- versus post-stimulus). However, the usual p-values derived from statistical analyses such as t-tests or Wilcoxon rank sum tests assume independence of data points, which is violated for neuronal calcium transients due to an inherent dependency between adjacent transient values. Consequently, a p-value computed assuming independence will lead to highly inflated measures of significance in the case of dependent data, and thus inaccurate interpretation of the data. A related issue is discussed in the Harris, 2021 study along with suggested remedies.
 
@@ -112,30 +278,70 @@ Details are provided in Algorithm 1. Step 1 formally defines the circular shift 
 
 We now discuss Algorithm 1 in greater detail. In Algorithm 1, N is the number of timepoints for each neuron’s transient (note that each neuron has been recorded for the same number of timepoints).
 
+<table>
+  <thead>
+    <tr>
+      <th>Algorithm 1. Computing a p-value for a neuron’s responsiveness</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Step 0: Isolate the neural activity of interest.</td>
+    </tr>
+    <tr>
+      <td>If testing for CS, then consider only neural activity ranging from 30 seconds before CS to 10 seconds after CS.If testing for food and shock, consider only neural activity ranging from 30 seconds before CS to 30 seconds after CS.</td>
+    </tr>
+    <tr>
+      <td>Step 1: Define the “circular shift” operation</td>
+    </tr>
+    <tr>
+      <td>Define CircularShift(Y, N, s):Y* ← [Y [(s+1):N], Y [1:s]] return(Y*)</td>
+    </tr>
+    <tr>
+      <td>Step 2: Create a repository of test statistics for null data</td>
+    </tr>
+    <tr>
+      <td>For b in {1, 2, …, B} do i ← random integer from 1 to the number of neurons For j in {1,2, …, number of trials} do s ← random integer between 1 and N Yb,j* ← CircularShift(Yi,j, N, s) Wb,j* ← Wilcoxon rank sum test of a difference in Yb,j* (pre- vs. post-stimuli) end for Wb* ← ∑XWb,j∗end for</td>
+    </tr>
+    <tr>
+      <td>Step 3: Calculate observed test statistics</td>
+    </tr>
+    <tr>
+      <td>For i in {1,2, …, number of neurons} do For j in {1,2, …, number of trials} do Wi,jobs ← Wilcoxon rank sum test statistic with Yi,j (pre- vs. post-stimuli) end for W∼iobs ← ∑jWi,jobs</td>
+    </tr>
+    <tr>
+      <td>Step 4: Compute p-values</td>
+    </tr>
+    <tr>
+      <td>For i in {1,2,,.., number of neurons} do pi+ ← [(# of Wb* ≥ W~iobs)+1]/[B+1] pi- ← [(# of Wb* ≤ W~iobs)+1]/[B+1] pi ← 2 x min(pi+,pi−)end for</td>
+    </tr>
+  </tbody>
+</table>
+
 (Step 0): We restrict our attention to neural activity in a relevant time window. To test for CS, we consider timepoints ranging from –30 s to 10 s. To test for food and shock, we consider timepoints from –30 s to 30 s. Data outside of these windows is not used in the remaining analysis steps.
 
 (Step 1): We formalize the ‘circular shift’ operation described earlier.
 
-(Step 2): We repeat the following procedure B=500 times. We randomly select one neuron (Yi) from all the neurons recorded during each session (appetitive: 872, aversive: 518, baseline: 925, post-test: 788), randomly select an integer s, and apply circular shifting by s to each trial for this neuron (this yields Yb,j*, which represents ‘null’ neuronal activity, as shown in Figure 2C).
+(Step 2): We repeat the following procedure B=500 times. We randomly select one neuron ($Y_{i}$) from all the neurons recorded during each session (appetitive: 872, aversive: 518, baseline: 925, post-test: 788), randomly select an integer s, and apply circular shifting by s to each trial for this neuron (this yields $Y_{b,j}^{*}$, which represents ‘null’ neuronal activity, as shown in Figure 2C).
 
-Next, for the jth trial, we compute the WRST (Wb,j*) on the newly-generated ‘null’ neuronal traces (Yb,j*) to compare pre-stimulus (CSs: –20 s to 0 s; food/shock: –5 s to 13 s) and post-stimulus (CSs: 0 s to 10 s; food: 13s to 30s; shock: 13 s to 18 s) activity (as illustrated in Figure 2C). Finally, we sum the WRST statistics across the trials (∑jWb,j*) and refer to this as Wb*.
+Next, for the jth trial, we compute the WRST ($W_{b,j}^{*}$) on the newly-generated ‘null’ neuronal traces ($Y_{b,j}^{*}$) to compare pre-stimulus (CSs: –20 s to 0 s; food/shock: –5 s to 13 s) and post-stimulus (CSs: 0 s to 10 s; food: 13s to 30s; shock: 13 s to 18 s) activity (as illustrated in Figure 2C). Finally, we sum the WRST statistics across the trials ($\sum_{j}W_{b,j}^{*}$) and refer to this as $W_{b}^{*}$.
 
-At the end of Step 2, we have B test statistics (W1*,…,WB*), each of which is obtained by summing the WRSTs of a different ‘null’ neuron across trials. We set B=500 to balance code runtime against having a rich enough null distribution of the test statistic.
+At the end of Step 2, we have $B$ test statistics ($W_{1}^{*},…,W_{B}^{*}$), each of which is obtained by summing the WRSTs of a different ‘null’ neuron across trials. We set B=500 to balance code runtime against having a rich enough null distribution of the test statistic.
 
-(Step 3): For the jth trial of the ith recorded neuron, we compute the WRST between pre- vs. post-stimulus (Wi,jobs), and then sum these WRST statistics across the trials (W~iobs; Figure 2D). The testing window for pre-stimulus and post-stimulus remains the same as in Step 2.
+(Step 3): For the $j_{th}$ trial of the $i_{th}$ recorded neuron, we compute the WRST between pre- vs. post-stimulus ($W_{i,j}^{obs}$), and then sum these WRST statistics across the trials ($W~_{i}^{obs}$; Figure 2D). The testing window for pre-stimulus and post-stimulus remains the same as in Step 2.
 
-(Step 4): We compare the ith neuron’s observed test statistic (Wiobs)∼ to the null distribution (Wb*, b=1,…,B) generated in Step 2. The right-tailed p-value pi+ is calculated as (the number of Wb* ≥ W~iobs)+1, divided by B+1. Similarly, the left-tailed p-value pi- is calculated as (the number of Wb* ≤ W~iobs)+1, divided by B+1 (Figure 2E). We compute the left- and right-tailed p-values separately since W~iobs can be either extremely large (indicating significant excitation) or small (indicating significant inhibition). For example, if Wb* ≥ W~iobs for 10 of the ‘null’ neurons, with B=500, then pi+ = (10+1) / (500+1)=0.022 and pi- = 0.978. The two-sided p-value for this neuron is 2 Χ 0.022 (since pi+ is smaller than pi-), that is it equals 0.044. The significance level is set to 0.05. If the p-value of a neuron is smaller than 0.05, it is considered responsive (significantly excited).
+(Step 4): We compare the $i$th neuron’s observed test statistic $(W_{i}^{obs})∼$ to the null distribution ($W_{b}^{*}$, b=1,…,B) generated in Step 2. The right-tailed p-value $p_{i}^{+}$ is calculated as (the number of $W_{b}^{*}$ ≥ $W~_{i}^{obs}$)+1, divided by B+1. Similarly, the left-tailed p-value $p_{i}^{-}$ is calculated as (the number of $W_{b}^{*}$ ≤ $W~_{i}^{obs}$)+1, divided by B+1 (Figure 2E). We compute the left- and right-tailed p-values separately since $W~_{i}^{obs}$ can be either extremely large (indicating significant excitation) or small (indicating significant inhibition). For example, if $W_{b}^{*}$ ≥ $W~_{i}^{obs}$ for 10 of the ‘null’ neurons, with B=500, then $p_{i}^{+}$ = (10+1) / (500+1)=0.022 and $p_{i}^{-}$ = 0.978. The two-sided p-value for this neuron is 2 Χ 0.022 (since $p_{i}^{+}$ is smaller than $p_{i}^{-}$), that is it equals 0.044. The significance level is set to 0.05. If the p-value of a neuron is smaller than 0.05, it is considered responsive (significantly excited).
 
 Figure 5—figure supplement 2 displays the results obtained using the traditional WRST that relies on the theoretical null distribution, that is that assumes independence between time points, and then sets a threshold for the number of trials with a p-value below 0.05 in order to declare that a neuron is ‘responsive’. We see little difference between the two sets of results.
 
-## Classification of salience-encoding and valence-encoding neurons
+### Classification of salience-encoding and valence-encoding neurons
 
 With the neurons that appeared during both appetitive and fear conditioning, we conducted a direct comparison of how individual neurons respond to appetitive vs. aversive stimuli. After the new analysis confirmed 'responsive neurons' (either excited or inhibited) among the registered neurons, we further classified them into salience-encoding and valence-encoding neurons based on their response patterns. Salience-encoding neurons demonstrate significant responses to both appetitive and aversive stimuli in the same direction (both excited or both inhibited), reflecting the stimulus strength, which is the definition of salience (Figure 5B white, Figure 5G white, Figure 5—figure supplement 2I and O white; Kong and Zweifel, 2021). On the other hand, valence-encoding neurons exhibit a more diverse range of response types. For instance, some neurons exclusively encode one of the stimuli by showing a significant response to only one type. Alternatively, some neurons respond significantly to both stimuli but in opposite directions (e.g. excited to food and inhibited to shock, Figure 5B black, Figure 5G black, Figure 5—figure supplement 2I and O black). These response patterns correspond to the definition of valence, representing either positive (good) or negative (bad) valence (Kong and Zweifel, 2021). Neurons that showed no significant activity in response to both appetitive and aversive stimuli were categorized as not-significant neurons (Figure 5B grey, Figure 5G grey, Figure 5—figure supplement 2I and O grey).
 
-## Histology
+### Histology
 
 At the conclusion of the experiment, the mice were administered an overdose of Beuthanasia and then perfused transcranially with phosphate-buffered saline (PBS) and 4% paraformaldehyde (PFA). Following this, each mouse head with a GRIN lens was immersed in PFA at 4 °C overnight for a week to preserve the lens track. The brains were subsequently extracted from the post-fixed heads, including the lens track, and cryoprotected in PBS containing 30% sucrose for 72 hr. Immunohistochemistry was performed on transverse sections (50 μm) using a primary antibody (anti-GFP Chicken polyclonal, Abcam, ab13970) followed by a secondary antibody (Alexa Fluor 488, JacksonImmuno, 703-545-155). The treated sections were then mounted on slides and coverslipped with DAPI Fluoromount-G (Southern Biotech). The expression of GCaMP6m and the location of the lens were examined using a Keyence Fluorescence Microscope (Keyence) to determine data inclusion or exclusion animals that lacked GCaMP fluorescence or lens placement in the CeA were excluded.
 
-## Statistical analysis
+### Statistical analysis
 
 The responsiveness of CeA neurons to both appetitive and aversive stimuli was quantified using the previously outlined Algorithm 1, implemented in the R programming language. For the determination of statistical significance in behavioral results and area under curve data, we employed One-way repeated measured ANOVA, One-way ANOVA (with Tukey post hoc), paired t-test, and unpaired t-test using Prism software. A comprehensive presentation of the statistical results is available in Supplementary file 1. A significance level of p<0.05 was set for all tests. Graphs were generated using GraphPad Prism (version 10) and customized MATLAB codes.

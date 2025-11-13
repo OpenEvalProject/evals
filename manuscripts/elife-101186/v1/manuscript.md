@@ -10,15 +10,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01xtthb56 Section for Biochemistry and Molecular Biology, Department of Biosciences, University of Oslo Oslo Norway
-2. https://ror.org/02s6k3f65 Division of Molecular Neuroscience, Department of Biomedicine, University of Basel Basel Switzerland
-3. https://ror.org/02s6k3f65 University Psychiatric Clinics, University of Basel Basel Switzerland
+1. Section for Biochemistry and Molecular Biology, Department of Biosciences, University of Oslo Oslo Norway ([ROR:01xtthb56](https://ror.org/01xtthb56))
+2. Division of Molecular Neuroscience, Department of Biomedicine, University of Basel Basel Switzerland ([ROR:02s6k3f65](https://ror.org/02s6k3f65))
+3. University Psychiatric Clinics, University of Basel Basel Switzerland ([ROR:02s6k3f65](https://ror.org/02s6k3f65))
 
 † Corresponding author
 
 ## Abstract
 
-In nature, many animals respond to cold by entering hibernation, while in clinical settings, controlled cooling is used in transplantation and emergency medicine. However, the molecular mechanisms that enable cells to survive severe cold are still not fully understood. One key aspect of cold adaptation is the global downregulation of protein synthesis. Studying it in the nematode Caenorhabditis elegans , we find that the translation of most mRNAs continues in the cold, albeit at a slower rate, and propose that cold-specific gene expression is regulated primarily at the transcription level. Supporting this idea, we found that the transcription of certain cold-induced genes is linked to the activation of unfolded protein response (UPR) through the conserved IRE-1/XBP-1 signaling pathway. Our findings suggest that this pathway is triggered by cold-induced perturbations in proteins and lipids within the endoplasmic reticulum, and that its activation is beneficial for cold survival.
+In nature, many animals respond to cold by entering hibernation, while in clinical settings, controlled cooling is used in transplantation and emergency medicine. However, the molecular mechanisms that enable cells to survive severe cold are still not fully understood. One key aspect of cold adaptation is the global downregulation of protein synthesis. Studying it in the nematode Caenorhabditis elegans, we find that the translation of most mRNAs continues in the cold, albeit at a slower rate, and propose that cold-specific gene expression is regulated primarily at the transcription level. Supporting this idea, we found that the transcription of certain cold-induced genes is linked to the activation of unfolded protein response (UPR) through the conserved IRE-1/XBP-1 signaling pathway. Our findings suggest that this pathway is triggered by cold-induced perturbations in proteins and lipids within the endoplasmic reticulum, and that its activation is beneficial for cold survival.
 
 ## Introduction
 
@@ -30,29 +30,75 @@ Here, we demonstrate that C. elegans, like bona fide hibernators, respond to col
 
 ## Results
 
-## Protein synthesis is globally reduced in hibernating C. elegans
+### Protein synthesis is globally reduced in hibernating C. elegans
 
 In various species and cultured cells, cooling leads to a global reduction of translation (Chen et al., 2001; Frerichs et al., 1998; Hofmann et al., 2012; Knight et al., 2000; van Breukelen and Martin, 2001). To test if it also applies to C. elegans, we used a previously described cooling paradigm and sampling across different temperatures and time points (Figure 1A; Habacher et al., 2016; Pekec et al., 2022). We combined it with either polysome profiling or SUrface SEnsing of Translation (SUnSET). The former method separates translated mRNAs according to the number of bound ribosomes. The latter involves the incorporation of puromycin into newly synthesized peptides and subsequent detection of the incorporated puromycin by western blotting (Arnold et al., 2014; Schmidt et al., 2009). By polysome profiling, we observed in the cold a massive loss of polyribosomes (multiple ribosomes associated with mRNAs), with a concomitant increase in monosomes (Figure 1B). By SUnSET, we observed a stark drop in puromycin incorporation (Figure 1C, Figure 1—figure supplement 1; note that puromycin is still incorporated at 4 °C, albeit much reduced compared with 20 °C). Thus, consistent with observations in other species, severe cooling is accompanied in C. elegans by a global reduction of protein synthesis.
 
-## Transcription determines cold-specific gene expression
+![Figure 1.](https://cdn.elifesciences.org/articles/101186/elife-101186-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the cooling paradigm used in this study. Young adult nematodes, grown at 20 °C on multiple plates, are first adapted to the cold at 10 °C for 2 hr, and then shifted to 4 °C. At indicated time points, the animals are collected and treated in an experiment-specific manner. Created with BioRender.com. (B) Polysome profiles from wild-type animals were treated as shown in (A) and collected at 4 °C at the indicated times. Marked are the positions of mono-, di-, and polysomes. Note a strong decrease of large polysomes with a concomitant increase of monosomes in cold, which becomes more pronounced with a longer cold exposure. (C) Protein synthesis was evaluated with the SUrface SEnsing of Translation (SUnSET) assay in animals incubated as indicated. The quantification reflects changes in puromycin incorporation (relative to day 1 at 20 °C), normalized to actin as a loading control, and detected by western blotting. Error bars indicate the SEM of three biological replicates. Unpaired two-sided t-test was used for statistical analysis. ***p<0.001, ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101186/elife-101186-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Puromycin incorporation was detected by western blot. Actin (ACT-1) was used as a loading control. A longer exposure of the blot on the right shows that puromycin incorporation, although reduced, continues at 4 °C.
+
+### Transcription determines cold-specific gene expression
 
 Although global translation decreases in the cold, the translation of specific transcripts still could be regulated, i.e., activated or repressed. To examine this possibility, we combined ribosomal profiling with total RNA sequencing (Supplementary file 1, Supplementary file 2). The biggest changes in the ribosomal occupancy of mRNAs occurred when the animals were shifted from 10°C to 4°C (Figure 2—figure supplement 1A). Thus, most translational remodeling appears to happen during the first day of incubation at 4 °C. Focusing on this transition (from 10°C to 4°C on day 1), we observed a strong correlation between changes in mRNA levels and ribosomal occupancy (Figure 2A). This observation suggests that, overall, mRNA abundance is the main determinant of cold-specific translation (for gene categories changing the most between 10°C and 4°C day 1, see Figure 2—figure supplement 2). Nonetheless, we observed some exceptions, such as a group of transcripts whose translation appeared reduced in the cold with no concomitant drop in mRNA levels (red dots in Figure 2A), suggesting that they may be subjected to cold-specific translation repression. Intriguingly, this group includes mRNAs encoding three fatty acid desaturases (FAT-2,–3, and –4; Supplementary file 3 and Figure 2—figure supplement 1B). This is surprising, considering that desaturation of membrane lipids has been thought to play an important role in cold adaptation (Hayward et al., 2007). However, the levels of most mRNAs correlate with the ribosomal occupancy. If the latter accurately describes translation status, the more ribosomes associated with a particular mRNA, the more protein it will yield in the cold. To strengthen this argument, we searched a public C. elegans depository (CGC) and identified three strains expressing GFP-fused proteins, whose ribosomal footprints either increase (cebp-1 and numr-1) or not (hsf-1) in the cold. Monitoring their expression, we observed the expected rise in the levels of CEBP-1::EGFP and NUMR-1::EGFP, but not HSF-1::EGFP, in the cold (Figure 2—figure supplement 3).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/101186/elife-101186-fig2-v1.jpg)
+
+**Figure 2.:** (A) Changes in mRNA abundance (‘mRNA’ on the x-axis) and translation (ribosome protected fragment, ‘RPF’ on the y-axis) for all transcripts upon shifting wild-type animals from 10°C to 4°C. Each dot represents the log (base 2) fold change of a single transcript. The most upregulated transcript, lips-11, is indicated in green. Overall, note a strong correlation between mRNA levels and translation (Pearson correlation coefficient = 0.7244968). A small subpopulation of transcripts (red) displayed little or no change in mRNA levels but reduced association with ribosomes, suggesting specific translation repression. (B) Top: Diagram representing a reporter construct, wherein GFP is expressed under the control of the lips-11 promoter and unc-54 3’ UTR. Below are representative fluorescent micrographs, taken at the indicated conditions, of several bundled animals carrying the GFP reporter. The animals are outlined in the control panel and the heads are indicated by asterisks. The scale bar = 200 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101186/elife-101186-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) PCA plot of ribosome profiling samples and replicates based on mRNA ribosome protected fragment (RPF) normalized according to reads per kilobase exon per million reads (RPKM). Note co-clustering of replicates and temperatures. (B) Changes in translation for selected genes as a function of temperature changes and exposure.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/101186/elife-101186-fig2-figsupp2-v1.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/101186/elife-101186-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A), NUMR-1 (B), or HSF-1 (C), was taken at the indicated time and temperature. Animals are outlined in the left panels and the heads are indicated with asterisks (A–C). The scale bar = 200 µm.
+
 Transcription is typically the key determinant of mRNA levels (Tippmann et al., 2012). Thus, our results suggest that cold-specific gene expression may stem from transcriptional regulation. To test this, we selected one gene, lips-11, whose expression increased the most during the shift from 10°C to 4°C (green dot in Figure 2A). To test if cold upregulates lips-11 transcription, we generated a strain expressing a GFP reporter, whose expression depends on the endogenous lips-11 promoter (Plips-11) and the unc-54 3’UTR (permitting unregulated expression of the attached open reading frame). We observed that the lips-11 promoter was sufficient to upregulate GFP fluorescence (Figure 2B), suggesting that the expression of at least some genes in the cold is regulated at the transcriptional level.
 
-## Cold-induced transcription of lips-11 depends on the IRE-1/XBP-1 branch of the UPR
+### Cold-induced transcription of lips-11 depends on the IRE-1/XBP-1 branch of the UPR
 
 Intriguingly, lips-11 belongs to genes activated by the UPR during ER stress (UPRER) (Shen et al., 2005). Indeed, we observed that the Plips-11 GFP reporter’s levels increased upon treating animals with the protein glycosylation inhibitor tunicamycin, a UPRER inducer (Figure 3—figure supplement 1). This observation prompted us to examine if the induction of lips-11 in the cold depends on a particular branch of the UPRER; IRE-1, ATF-6, or PEK-1. Indeed, we observed reduced levels of the lips-11 reporter upon RNAi-mediated depletion of ire-1, but not atf-6 or pek-1 (Figure 3A). Thus, lips-11 expression in the cold depends on the UPRER signal transducer IRE-1.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/101186/elife-101186-fig3-v1.jpg)
+
+**Figure 3.:** (A) Micrographs of several bundled animals expressing the Plips-11::GFP reporter, taken at the indicated conditions. Note a strong decrease in GFP expression after 1 and 3 days at 4 °C upon RNAi-mediated knockdown of ire-1, but not of atf-6 or pek-1. The animals are outlined in the top-left panel and the heads are indicated by asterisks (A and C). The scale bar = 200 µm. (B) Top: Representative micrographs of adult animals expressing the Pxbp-1::xbp-1::GFP splicing reporter at the indicated temperatures and time points. GFP is expressed in frame only upon removal of the IRE-1-regulated intron in xbp-1 mRNA. Arrowheads indicate the outlined nuclei of the most anterior pair of intestinal cells. The scale bar = 40 µm. Below is the corresponding quantification of the nuclear GFP relative to 20 °C. Between two and five nuclei were analyzed per animal, in at least fifteen animals per condition. Error bars indicate the SEM of three biological replicates. Unpaired two-sided t-test was used for statistical analysis. ****p<0.0001. (C) Micrographs of mock or xbp-1 RNAi-treated Plips-11::GFP reporter animals, kept for 1 or 3 days at 4 °C. The scale bar = 200 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/101186/elife-101186-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Animals are outlined in the left panel and the heads are indicated with asterisks. The scale bar = 200 µm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/101186/elife-101186-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Micrographs depicting the middle part of adult animals expressing the Pxbp-1::xbp-1::GFP splicing reporter at the indicated temperatures and time points. GFP is expressed in frame only upon removal of the IRE-1-regulated intron in xbp-1 mRNA. Arrowheads indicate outlined intestinal nuclei. The scale bar = 40 µm. (B) Coverage of ribosome protected fragments (RPF) over the two isoforms of xbp-1 showing the increased translation of the extended (Spliced) proteoform after 2 hr at 10 °C and subsequent days at 4 °C as compared to 20 °C day 0. All tracks are on the same scale, normalized to their respective library sizes and multiplied by a scale factor (10^6).
+
 In response to ER stress, the endoribonuclease domain of IRE-1 is activated and promotes the ‘splicing’ of xbp-1 mRNA, which gives rise to the functional form of the XBP-1 transcription factor (Calfon et al., 2002). As XBP-1-independent functions of IRE-1 have been also reported, we first examined if xbp-1 mRNA is processed in the cold. To do this, we used an xbp-1 splicing reporter strain, wherein the xbp-1 promoter drives the expression of a genomic xbp-1 fragment fused to GFP, which is expressed in frame upon the processing by IRE-1 (Ozbey et al., 2020). Importantly, we observed a significant upregulation of XBP-1::GFP in the cold (Figure 3B and Figure 3—figure supplement 2A). Additionally, we used our ribosome profiling data to assess the translation of spliced xbp-1 mRNA. The observed pattern of ribosomal occupancy was consistent with an increased splicing of xbp-1 mRNA during cooling (Figure 3—figure supplement 2B). Finally, the cold-induced expression of the lips-11 reporter depended on XBP-1 (Figure 3C). Together, these observations suggest that the upregulation of lips-11 during cold dormancy depends on the activation of the IRE-1/XBP-1 branch of the UPRER.
 
-## Hibernation specifically activates the IRE-1 branch of the UPRER
+### Hibernation specifically activates the IRE-1 branch of the UPRER
 
 The activation of IRE-1 in the cold suggests that hibernating animals experience ER stress. To confirm this, we utilized a commonly used UPRER reporter strain, wherein GFP expression is driven by the promoter of hsp-4, the C. elegans homolog of the ER chaperone BiP (Calfon et al., 2002). Indeed, the expression of this reporter increased in the cold (Figure 4A). By following the expression of mitochondrial chaperones hsp-6 (homolog of HSP70) and hsp-60 (homolog of HSP60), we additionally examined if cold elicits UPR in the mitochondria (UPRmito) (Yoneda et al., 2004). However, by contrast to hsp-4, neither hsp-6 nor hsp-60 were induced in the cold (Figure 4—figure supplement 1). Thus, hibernating animals appear to experience stress in the ER but not mitochondria.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/101186/elife-101186-fig4-v1.jpg)
+
+**Figure 4.:** (A) Micrographs of several bundled animals carrying the Phsp-4::GFP reporter, taken at the indicated temperature and time. The animals are outlined in the left and the heads are indicated by asterisks. The scale bar = 200 µm. (B) RT-qPCR analysis of changes in mRNA levels for known UPRER target genes after 3 days at 4 °C, relative to 3 days at 20 °C. Dashed lines separate genes that are regulated by different pathways (IRE-1, ATF-6, and PEK-1). Note that the mRNA levels of all IRE-1 responsive genes are significantly upregulated at 4 °C. Error bars indicate the SEM of three biological replicates. Unpaired two-sided t-test was used for statistical analysis. ns: p>0.05, *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/101186/elife-101186-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Micrographs of bundled Phsp-6::GFP UPRmito reporter animals, taken at the indicated time and temperature. Animals are outlined in the top-left panel and the heads are indicated with asterisks. The scale bar = 200 µm. (A and B). (B) Micrographs of bundled Phsp-60::GFP UPRmito reporter animals, taken at the indicated time and temperature.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/101186/elife-101186-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Note that the mRNA levels of most IRE-1 responsive genes are significantly upregulated at 4 °C in wild-type and remain unchanged or are significantly downregulated in ire-1(ok799) mutants. Error bars indicate the SEM of three biological replicates. Unpaired two-sided t-test was used for statistical analysis. Unmarked bars: p>0.05 (not significant), *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
+
 While we showed that lips-11 upregulation is mediated by the IRE-1/XBP-1 pathway, other branches of the UPRER could be activated in the cold. Testing this possibility, we examined the expression of select UPRER target genes regulated through the IRE-1 (dnj-27, srp-7, C36B7.6), the ATF-6 (cht-1, ZC168.2), or the PEK-1 (cbp-3, R02D3.8) pathway (Shen et al., 2005). Among these transcripts, four displayed increased abundance on day 3 in the cold, relative to the corresponding day 3 animals at 20 °C (Figure 4B). Notably, 3/4 of them are known targets of the IRE-1 pathway. Further analysis confirmed that the endogenous transcript levels of these IRE-1 responsive genes (including lips-11) increased in abundance as early as 1 d in the cold and continued to accumulate after 3 d, relative to reference animals collected at 20 °C immediately before cooling (day 0) (Figure 4—figure supplement 2). Importantly, the upregulation of these transcripts in the cold declined in the loss-of-function ire-1(ok799) mutants, indicating that their upregulation in the cold depends on IRE-1 (Figure 4—figure supplement 2). Together, these findings suggest that cooling triggers the UPRER, resulting in IRE-1-dependent gene expression.
 
-## The cold-induced UPRER stems from both protein misfolding and lipid disequilibrium
+### The cold-induced UPRER stems from both protein misfolding and lipid disequilibrium
 
 ER stress and subsequent activation of the UPRER are typically associated with misfolded proteins accumulating in the ER lumen. To test if cold aggravates protein misfolding, we employed another reporter strain, wherein YFP is fused to a mutated form of the C. elegans cathepsin L-like protease (CPL-1W32A, Y35A), which does not fold properly and accumulates during ER stress (Efstathiou et al., 2022). We found that the levels of misfolded CPL-1 modestly increased after 1 d in the cold but then returned to basal levels after a longer cold exposure (Figure 5). Thus, disturbed ER proteostasis may, at least transiently, trigger the activation of UPRER in hibernating animals.
 
@@ -62,9 +108,27 @@ ER stress and subsequent activation of the UPRER are typically associated with m
 
 Apart from protein misfolding, lipid disequilibrium is also known to trigger UPRER (Halbleib et al., 2017; Tam et al., 2018; Volmer et al., 2013). The IRE-1 pathway is specifically activated when the ratio between phosphatidylcholine (PC) and phosphatidylethanolamine (PE) decreases, or when the levels of unsaturated fatty acids become insufficient (Ariyama et al., 2010; Hou et al., 2014; Thibault et al., 2012). In the latter case, reduced content of unsaturated fatty acids (FAs) results in a decreased ER membrane fluidity, which is thought to increase the oligomerization and thus the activation of IRE-1 (Halbleib et al., 2017). Thus, we asked if dietary supplementation of unsaturated FAs or choline (crucial for PC synthesis) affects the IRE-1 activity in the cold. We first validated the effectiveness of FA supplementation by confirming a previous report, that adding unsaturated FAs prevents the hsp-4 induction in fat-6 RNAi-depleted animals (Hou et al., 2014; Figure 6—figure supplement 1). Following a similar FA supplementation procedure, we observed no reduction in the expression of the lips-11 reporter in the cold (Figure 6—figure supplement 2). Thus, insufficient lipid desaturation does not seem to be the main trigger of UPRER in the cold. By contrast, supplementing the diet with choline reduced the expression of both lips-11 and hsp-4 reporters in hibernating animals (Figure 6A–B). Moreover, we found that choline supplementation was beneficial for cold survival (Figure 6C). Together, these experiments suggest that cold-induced activation of UPRER could be triggered by sensing disruptions in both protein and lipid homeostasis, with the latter related to insufficient levels of PC rather than unsaturated FAs.
 
-## IRE-1 is important for a robust cold survival
+![Figure 6.](https://cdn.elifesciences.org/articles/101186/elife-101186-fig6-v1.jpg)
+
+**Figure 6.:** (A) Left: micrographs taken after 1 or 3 days at 4 °C of bundled Plips-11::GFP reporter animals on a mock or 50 mM choline supplemented diet. Animals are outlined in the top-left panel and the heads are indicated with asterisks (A and B). The scale bar = 200 µm. Right: the corresponding quantification of intestinal GFP fluorescence after 1 or 3 days at 4 °C on a choline-supplemented diet, relative to a mock diet. GFP fluorescence was analyzed from a minimum of 38 animals per condition. Error bars indicate the SEM of three biological replicates. Unpaired two-sided t-test was used for statistical analysis. *p<0.05, ****p<0.0001. (B) Left: Micrographs taken after 1 or 3 days at 4 °C of bundled Phsp-4::GFP reporter animals on a mock or 50 mM choline supplemented diet. The scale bar = 200 µm. Right: the corresponding quantification of intestinal GFP fluorescence after 1 or 3 days at 4 °C on a choline supplemented diet, relative to a mock diet. GFP fluorescence was analyzed from a minimum of 28 animals per condition. Error bars indicate the SEM of three biological replicates. Unpaired two-sided t-test was used for statistical analysis. ****p<0.0001. (C) Survival of wild-type animals on a mock or choline-supplemented diet. Error bars indicate the SEM of three biological replicates. A minimum of 200 animals were scored per time point. Wilcoxon signed-rank test was used for statistical analysis; p=0.02.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/101186/elife-101186-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Note a strong increase in the GFP reporter upon RNAi-mediated knockdown of fat-6 in animals on the mock diet, which is suppressed by the supplementation with either oleic or linoleic acid. The animals are outlined in the top-left panel and the heads are indicated by asterisks. The scale bar = 200 µm.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/101186/elife-101186-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Left: Micrographs taken after 1 or 3 d at 4 °C of bundled Plips-11::GFP reporter animals on the diet supplemented with 0.1% tergitol (mock), 0.8 mM oleic acid, 0.8 mM palmitic acid, or 0.8 mM linoleic acid. Animals are outlined in the top-left panel and the heads are indicated with asterisks. The scale bar = 200 µm. Right: the corresponding quantification of intestinal GFP fluorescence after 1 or 3 d at 4 °C on different diets, relative to the mock diet. The GFP fluorescence was analyzed from 21 to 31 animals per condition. Error bars indicate the SEM of three biological replicates. Unpaired two-sided t-test was used for statistical analysis. N.s.: p>0.05, ***p<0.001, ****p<0.0001.
+
+### IRE-1 is important for a robust cold survival
 
 If activating IRE-1 signaling is important during cooling, then inhibiting this pathway may be expected to impair cold survival. At standard temperature, the loss-of-function ire-1(ok799) mutants appear superficially wild-type. In the cold, however, these mutants displayed a modest but significant impairment of cold survival (Figure 7A). Thus, the IRE-1 signaling improves cold survival, presumably by activating its downstream targets. One obvious candidate is LIPS-11, but we found that its RNAi-mediated depletion had no obvious impact on cold survival, suggesting that LIPS-11 either plays no essential role in cold survival or functions redundantly with other IRE-1/XBP-1 targets.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/101186/elife-101186-fig7-v1.jpg)
+
+**Figure 7.:** (A) Survival of wild-type and ire-1(ok799) animals at 4 °C. Error bars indicate the SEM from six biological replicates. A minimum of 800 animals were scored per time point. Wilcoxon signed-rank test was used for statistical analysis; p=0.03. (B) A model for the IRE-1 function in hibernating nematodes. Cold exposure leads to increased protein misfolding and lipid disequilibrium in the endoplasmic reticulum (ER). These two stressors trigger the activation of IRE-1, which promotes the downstream processing of xbp-1u to xbp-1s mRNA. The functional XBP-1 transcription factor enters the nucleus to promote transcription of specific genes, including those facilitating cold survival. Created with BioRender.com.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/101186/elife-101186-fig7-figsupp1-v1.jpg)
 
 Several previous studies reported IRE-1-dependent genes activated in response to protein misfolding (UPRPT; Shen et al., 2005), lipid bilayer stress (UPRLBS; Koh et al., 2018), or cold when using a different cooling paradigm (Dudkevich et al., 2022). To examine if these genes were also activated by cold treatment in our study, we extracted them from the publications (Supplementary file 4) and examined their overlap with the cold-induced transcripts from Figure 2A. Curiously, we observed little overlap between the different gene sets (Figure 7—figure supplement 1 and Supplementary file 5). The UPRPT and the UPRLBS are already known to regulate largely distinct targets (Koh et al., 2018). Also, the limited overlap between those genes and IRE-1-dependent genes from Dudkevich et al. suggests that IRE-1-mediated gene expression is largely context-dependent, which could also apply to IRE-1-dependent gene expression reported here.
 
@@ -86,62 +150,62 @@ Regardless of the exact role of IRE-1 signaling in C. elegans cooling, there is 
 
 ## Methods
 
-## C. elegans strains and maintenance
+### C. elegans strains and maintenance
 
 Unless stated otherwise, animals were maintained as previously described, grown at 20 °C on 2% Nematode Growth Media (NGM) agar plates, and seeded with the E. coli OP50 bacteria. All strains used in this study are listed in Supplementary file 6. Synchronized animals were obtained by extracting embryos from gravid adults with a bleaching solution (30% (v/v) sodium hypochlorite (5% chlorine) reagent (ThermoFisher Scientific; 419550010), 750 mM KOH). The embryos were left to hatch in the absence of food into arrested L1 larvae by overnight incubation at room temperature in M9 buffer (42 mM Na2HPO4, 22 mM KH2PO4, 86 mM NaCl, 1 mM MgSO4).
 
-## Cooling procedure
+### Cooling procedure
 
 The cooling procedure was as previously published (Habacher et al., 2016; Pekec et al., 2022). In short, synchronized L1 larvae were grown at 20 °C until becoming young adults. The animals were then adapted to the cold for 2 hr at 10 °C, before being transferred to 4 °C.
 
-## RNA-seq, polysome, and ribosome profiling
+### RNA-seq, polysome, and ribosome profiling
 
 Animals were pre-grown at 20 °C, then moved to 10° for 2 hr, and then incubated at 4 °C. The reference 20 °C animals were collected at the time when others were moved to 10 °C (day 0). The RNA-seq, polysome profiling, and ribosome profiling were performed from two biological replicates as previously described (Arnold et al., 2014; Scheckel et al., 2012).
 
-## Computational processing of RNA-seq and ribosome profiling
+### Computational processing of RNA-seq and ribosome profiling
 
 Both RNA-seq and ribosome profiling were processed with the ribo-seq pipeline in ORFik (v1.22.2) (Tjeldnes et al., 2021). The code for this pipeline can be found at https://www.bioconductor.org/packages/release/bioc/vignettes/ORFik/inst/doc/Ribo-seq_pipeline.html. This code was used with minor alterations (species, names of files, samples, etc.). The pipeline was run with default parameters indicated in the code above. It wraps several steps: stripping adapters using fastp (v0.23.4) with adapter sequence ‘TGGAATTCTCGGGTGCCAAGG,’ filtering contaminants (e.g. rRNA) and mapping reads with STAR (v2.7.11b) to the WBcel235 assembly and estimating expression (RPKM) using DESeq2(v1.42.1). Tracks used to display coverage for Figure 3—figure supplement 2B were created from the mapped BAM files using igvtools (v2.14.0) and the coverage was normalized to library size.
 
-## Gene set enrichment analysis
+### Gene set enrichment analysis
 
 Gene set enrichment was performed on the RNA-seq expression of all genes using the R Bioconductor package clusterProfiler (v4.10.1) and org.Ce.eg.db (v3.18.0). The top 10 categories from both the enriched and suppressed sets were visualized using enrichPlot (v1.22.0).
 
-## Western blot analysis
+### Western blot analysis
 
 Animals were harvested from plates, washed thrice in M9 buffer, and pelleted before being snap-frozen in liquid nitrogen. Protein extracts were prepared by grinding the pellet with a mortar and pestle in the presence of liquid nitrogen and dissolving in Lysis Buffer (50 mM HEPES (pH 7.4), 150 mM KCl, 5 mM MgCl2, 0.1% Triton X-100, 5% glycerol (w/vol), 1 mM PMSF, 7 mg/ml cOmplete Proteinase Inhibitor Tablets (Roche, 11697498001)). Debris were removed by centrifugation at 16,100 x g for 20 min at 4 °C. Protein concentrations were measured by Bradford Assay (Bio-Rad). The required amount of 4 x NuPAGE LDS Sample Buffer (Invitrogen, NP0007) and 10 x NuPAGE Sample Reducing Agent (Invitrogen, NP0004) was added to the protein samples, followed by an incubation at 70 °C for 10 min. Proteins were separated by SDS-PAGE and transferred onto a polyvinylidene difluoride membrane by wet transfer. Membranes were washed thrice for 5 min with PBS-T, blocked for 1 hr in Intercept (TBS) Blocking Buffer (LI-COR, 927–60001), and incubated overnight at 4 °C with primary antibodies diluted in the same blocking buffer. The following primary antibodies were used: 1:10,000 monoclonal mouse anti-puromycin (Merck, MABE343), and 1:5000 polyclonal rabbit anti-actin (Abcam, ab8227). Detection was carried out with IRDye 680RD-conjugated goat anti-mouse secondary antibody (LI-COR Biosciences, 926–68070) or IRDye 800CW-conjugated goat anti-rabbit secondary antibody (LI-COR Biosciences, 926–32211) and infrared imaging (LI-COR Biosciences, Odyssey CLx).
 
-## SUnSET assay
+### SUnSET assay
 
 A total of 12,000 synchronized L1 larvae were grown at 20 °C and then cooled as described earlier or kept continuously at 20 °C. The animals were kept on multiple large 15 cm2 plates for each sample to obtain sufficient material without crowding. The SUnSET assay was carried out essentially as previously described (Arnold et al., 2014), with modifications to assay protein synthesis at 4 °C. In brief, animals were washed twice in S-basal, resuspended in 4 ml S-medium, and transferred to a 50 ml Erlenmeyer. An overnight culture of E. coli OP50 was 10 x concentrated in S-medium and 750 µl was added to the animals together with 250 µl of 10 mg/ml puromycin (Millipore Sigma, P8833). The animals were grown for 4 hr at 200 rpm before harvesting. Animals were washed thrice with S-basal, pelleted, and snap-frozen in liquid nitrogen. Lysates were prepared as described in the western blot procedures and 40 µg of total protein was loaded per well. The incorporation of puromycin into nascent peptides was measured by normalizing band intensities from anti-puromycin to anti-actin antibodies. Three biological replicates were used for the final quantification.
 
-## Construction of the lips-11::GFP reporter strain
+### Construction of the lips-11::GFP reporter strain
 
 The Plips-11::GFP::unc-54 3’UTR construct was generated via the MultiSite Gateway Technology (Thermo Fisher Scientific, 12537–023). The lips-11 promoter (1140 bp) and GFP (867 bp) were amplified from C. elegans genomic DNA and a plasmid carrying GFP::H2B (pCM1.35) (Merritt et al., 2008), before being inserted into the entry vectors pDONRP4P1R and pDONR221, respectively (oligos are listed in Supplementary file 6). The resulting entry vectors were recombined along with the entry vector pCM5.37, carrying the unc-54 3’UTR (699 bp) (Merritt et al., 2008), and the destination vector pCFJ150 (Frøkjaer-Jensen et al., 2008), carrying chromosome II integration sites together with the unc-119 (+) gene, resulting in the expression clone Plips-11::GFP::unc-54 3’UTR. Transgenic animals were obtained via single-copy integration into the ttTi5605 locus on chromosome II by injecting EG4322 (ttTi5605 II; unc-119(ed3) III) animals with the expression clone (Frøkjaer-Jensen et al., 2008).
 
-## Microscopy
+### Microscopy
 
 Immediately prior to imaging, animals were anesthetized in a drop of 5 mM levamisole in M9 buffer on a 2% (w/v) agarose pad, clustered, covered with a cover slip, and immediately imaged with the Zeiss AxioImager Z1 microscope. Micrographs were acquired with an Axiocam MRm REV2 CCD camera using the Zen software (Zeiss) and processed with Image J. The specific area that was analyzed for fluorescent intensities, as well as the number of measurements, is indicated in each figure legend.
 
-## Induction of ER stress by tunicamycin treatment
+### Induction of ER stress by tunicamycin treatment
 
 Animals were grown at 20 °C on NGM agar plates seeded with E. coli OP50. At the 2-d-old adult stage, animals were shifted to plates containing 20 µg/ml tunicamycin (Millipore Sigma, T7765), prepared from a 1 mg/ml stock solution dissolved in DMSO. Animals were then grown for 6 hr at 20 °C in the presence of tunicamycin. Control animals were treated similarly on plates containing the same volume of DMSO.
 
-## Generation of iOP50 RNAi bacteria
+### Generation of iOP50 RNAi bacteria
 
 Plasmids targeting ire-1, xbp-1, pek-1, or atf-6 were extracted from overnight cultures of E. coli HT115 bacteria derived from the Ahringer library using the QIAprep Spin Miniprep Kit (QIAGEN, 27104) (Kamath et al., 2003). E. coli OP50 bacteria were rendered RNAi competent and chemically competent as previously described (Neve et al., 2020). The resulting iOP50 bacteria were transfected with 1 µl of the purified plasmids derived from the Ahringer library for downstream gene-specific RNAi or with the plasmid vector L4440 for mock RNAi (Fire et al., 1998; Kamath et al., 2003).
 
-## RNAi
+### RNAi
 
 Gene-specific knockdown was achieved by feeding the animals with bacteria carrying plasmids expressing double-stranded RNA, sourced from either the Vidal or Ahringer libraries (Fraser et al., 2000; Kamath et al., 2003; Rual et al., 2004). Overnight cultures of E. coli HT115 (for RNAi at 20 °C) or E. coli iOP50 bacteria (for RNAi at 4 °C) were induced for 1 hr with 1 mM IPTG and seeded on NGM agar plates containing 1 mM IPTG and 50 µg/ml carbenicillin. Plates were additionally supplemented with fatty acids as described below for experiments combining RNAi-mediated gene knockdown and dietary supplementation. Synchronized L1 larvae were grown on the RNAi-inducing agar plates at 20 °C until reaching the 1-d-old adult stage and were either adapted to the cold as described and kept for 1 or 3 d at 4 °C or kept at 20 °C for the same duration. Bacteria containing the ‘empty’ L4440 vector were utilized as a mock RNAi control for all experiments.
 
-## Dietary supplementation
+### Dietary supplementation
 
 For choline supplementation assays, a working stock of 200 mg/ml choline (Millipore Sigma, C7527) in water was added to autoclaved NGM media at 55 °C to a final concentration of 50 mM, except in the cold survival assay where the final concentration was 25 mM. Fatty acid-supplemented plates were prepared as previously described with adaptations (Deline et al., 2013). In brief, working stocks of 100 mM were prepared by dissolving palmitic acid (Millipore Sigma, P9767), oleic acid (Millipore Sigma, O7501), and linoleic acid (Millipore Sigma, L8134) in 50% ethanol. Fatty acid sodium salts were added to an autoclaved NGM medium containing 0.1% Tergitol (NP40) to a final concentration of 0.8 mM. Fatty acid supplemented plates were covered with foil to prevent light oxidation. All plates were seeded with an overnight culture of E. coli OP50 and dried for 3 d before use.
 
-## The assay for C. elegans cold survival
+### The assay for C. elegans cold survival
 
 Cold survival experiments were performed as previously described (Habacher et al., 2016; Pekec et al., 2022). In brief, a minimum of 150 synchronized L1 larvae were grown and adapted to the cold as previously described for each time point. Animals were sampled at the indicated time points and their survival was scored after 24 hr recovery at 20 °C; those animals that were unresponsive to touch were considered dead. Cold survival was assessed from a minimum of three independent biological replicates, with a minimum of 200 animals used to assess the viability at each indicated time point.
 
-## RT-qPCR
+### RT-qPCR
 
 Approximately 6,000 animals were subjected to RNA extraction as previously described (Arnold et al., 2014), animals were either collected immediately before cold adaptation (20 °C day 0) or were adapted to the cold and kept for 1 or 3 d at 4 °C or kept at 20 °C for the same time prior to collection. Subsequently, genomic DNA was removed by DNase treatment and the quality of the RNA was assessed using the NanoDrop Spectrophotometer. Reverse transcription was performed by using the SuperScript IV First–Strand Synthesis System with random primers, following the protocol from the suppliers. RT-qPCR was performed with 2.5 µl of 1:5 diluted cDNA, 0.25 µl of 10 µM gene-specific primers (Supplementary file 6), and 2 µl of the HOT FIREPol EvaGreen qPCR Mix (Solis BioDyne, 08-36-00001) in a LightCycler 96 qPCR machine.

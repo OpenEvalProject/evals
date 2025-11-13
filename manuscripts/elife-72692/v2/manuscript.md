@@ -41,23 +41,75 @@ Here, we compile an updated database of beetles from the Early Permian to Middle
 
 ## Results
 
-## Taxonomic diversity
+### Taxonomic diversity
 
 We compiled an updated database of beetles (21 families, 125 genera, and 299 species) from the Early Permian to Middle Triassic based on the taxonomic revision of natural and formal taxa (Figure 2—source data 1). Our database contains 18 families, 109 genera, and 220 species of natural taxa. There is a steady increase of families from the Early Permian to Middle Triassic, which is consistent with the result of Smith and Marcot, 2015, whose analyses were only conducted at the family level. The diversity of natural taxa displays almost the same trajectory at both species and genus levels (Figure 2C and E). The diversity is roughly stable in the Early Permian (Cisuralian), mainly represented by Tshekardocoleidae (Figure 1), increases rapidly in the Middle Permian (Guadalupian) and Late Permian (Lopingian), with the rise of the major clades Permocupedidae (Permocupedinae and Taldycupedinae) and Rhombocoleidae. Subsequently, it plunges in the Early Triassic and recovered gradually from the Anisian (early Middle Triassic). In the Ladinian (late Middle Triassic), the diversity clearly exceeds that of the Late Permian (Figure 2C and E). From the Middle Triassic, the Permian coleopteran assemblage characterized by Tshekardocoleidae, Permocupedidae, and Rhombocoleidae is completely replaced by a Triassic assemblage dominated by Cupedidae, Phoroschizidae and Triaplidae.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/72692/elife-72692-fig2-v2.jpg)
+
+**Figure 2.:** Natural taxa and mixed taxa (natural taxa and formal taxa) are counted at family, genus, and species levels separately. (A) Family-level diversity of natural taxa. (B) Family-level diversity of mixed taxa. (C) Genus-level diversity of natural taxa. (D) Genus-level diversity of mixed taxa. (E) Species-level diversity of natural taxa. (F) Species-level diversity of mixed taxa. Abbreviations: P1, Early Permian; P2, Middle Permian; P3, Late Permian; T1, Early Triassic; T2, Middle Triassic.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72692/elife-72692-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Family-level diversity. (B) Genus-level diversity. (C) Species-level diversity. Abbreviations: P1, Early Permian; P2, Middle Permian; P3, Late Permian; T1, Early Triassic; T2, Middle Triassic.
+
 Our database also contains 3 families, 17 genera, and 79 species of formal taxa. A considerable proportion of Permian beetles belong to such taxa (Permosynidae, Schizocoleidae, and Asiocoleidae). These formal taxa mostly belong to stem groups, but some should probably be attributed to the two extant suborders Adephaga and Polyphaga. Both species and genus-level diversities of formal taxa show a gradual increase from the Middle to Late Permian, but decrease distinctly from the Triassic (Figure 2—figure supplement 1). The mixed taxa diversity (combining natural and formal taxa) displays the same trajectory to that of natural taxa at both species and genus levels (Figure 2D and F).
 
-## Phylogeny
+### Phylogeny
 
 We carried out a phylogenetic analysis based on 93 adult and larval characters across 15 natural taxa representing all natural families of Coleoptera from the Early Permian to Middle Triassic (Figure 3—source data 1). Our parsimony analysis result is consistent with a previous analysis (Beutel et al., 2008), and confirms that Tshekardocoleidae, Permocupedidae (Permocupedinae and Taldycupedinae), and Rhombocolediae are the stem group of Coleoptera (Figure 3A, Figure 3—figure supplement 1).
 
-## Morphological disparity
+![Figure 3.](https://cdn.elifesciences.org/articles/72692/elife-72692-fig3-v2.jpg)
+
+**Figure 3.:** (A) Simplified phylogeny of Coleoptera from the Early Permian to Middle Triassic. Thick lines indicate the known extent of the fossil record. The branches representing stem groups are shown in red. The ‘dead clade walking’ pattern is symbolized by the dashed line. For details of the phylogenetic analysis, see Figure 3—figure supplement 1. (B) Genus percentage of xylophagous groups from the Early Permian to Middle Triassic. Yellow graded band represents the ‘coal gap’.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/72692/elife-72692-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Tree length = 199, consistency index (CI) = 0.800, retention index (RI) = 0.747. Numbers on branches denote bootstrap frequencies; bootstrap frequencies below 50 are not shown. The unambiguous apomorphies are mapped on the tree.
+
+### Morphological disparity
 
 We chose beetle elytra—hardened forewings primarily serving as protective covers for the hindwings and body underneath—to perform the morphological disparity analysis for three reasons: (1) elytra are the most commonly preserved fossils of Palaeozoic and Mesozoic beetles, and they are easily accessible in the literature and in online databases; (2) Permian and Triassic elytra display complex morphological structure (Ponomarenko, 1969); (3) elytra morphology has long been studied in relation to taxonomic diversity of living and extinct beetles (Ponomarenko, 2004; Tong et al., 2021).
 
 We assembled two discrete character matrices (at species and genus levels) based on 35 characters of 197 genera and 346 species (including undetermined species and unnamed specimens) for morphological disparity analyses (Figure 4—source data 1). The taxa were ordinated into a multivariate morphospace using both principal coordinates analysis (PcoA) and non-metric multidimensional scaling (NMDS) with two distance metrics, including the generalized Euclidean distance (GED) and maximum observable rescale distance (MORD). We chose both sum of variance (sov) and product of variance (pov) as the proxy for morphological disparity due to their robustness in sample size (Simões et al., 2020). The use of discrete characters produces results that have non-metric properties, but this approach can be used to elucidate broad patterns of similarities and clustering within multidimensional space (Lloyd, 2016; Deline et al., 2018).
 
 The patterns of morphospace occupation of beetles in different time-bins are shown in three-dimensional plots delimited by combinations of the first three axes of the PcoA and NMDS results based on MORD metrics (Figure 4A, Figure 4—figure supplement 1). The morphological disparity results of two ordination methods within the MORD and GED matrix shows the same trajectory at both genus and species levels. The evolutionary pattern of morphological disparity is robust in different disparity metrics. Disparity is low in the Early Permian, with a significant increase during the Middle Permian. It is roughly stable in the Middle and Late Permian, subsequently showing a distinct plunge in the Early Triassic, slightly recovering in the Middle Triassic but is still significantly lower than in the Middle and Late Permian (Figure 4, Figure 4—figure supplements 1–8).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/72692/elife-72692-fig4-v2.jpg)
+
+**Figure 4.:** (A) Morphospace three-dimensional (3D) plot ordinated by principal coordinates analysis (PcoA), maximum observable rescale distance (MORD) matrices, based on species-level dataset. (B and C) Disparity comparisons ordinated by PcoA, MORD matrices, based on species-level dataset, proxy by pov and sov. Abbreviations: pov, product of variance; sov, sum of variance; P1, Early Permian; P2, Middle Permian; P3, Late Permian; T1, Early Triassic; T2, Middle Triassic.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72692/elife-72692-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A, D, and G) Morphospace three-dimensional (3D) plot and disparity comparisons ordinated by non-metric multidimensional scaling (NMDS), based on genus-level dataset. (B, E ,and H) Morphospace 3D plot and disparity comparisons ordinated by principal coordinates analysis (PcoA), based on species-level dataset. (C, F, and I) Morphospace 3D plot and disparity comparisons ordinated by NMDS, based on species-level dataset. Abbreviations: pov, product of variance; sov, sum of variance; P1, Early Permian; P2, Middle Permian; P3, Late Permian; T1, Early Triassic; T2, Middle Triassic. In the morphospace 3D plot, morphospace occupation of Early Triassic taxa is highlighted by red area.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/72692/elife-72692-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A, C, and E) Morphospace three-dimensional (3D) plot and disparity comparisons ordinated by principal coordinates analysis (PcoA). (B, D, and F) Morphospace 3D plot and disparity comparisons ordinated by non-metric multidimensional scaling (NMDS). Abbreviations: pov, product of variance; sov, sum of variance; P1, Early Permian; P2, Middle Permian; P3, Late Permian; T1, Early Triassic; T2, Middle Triassic. In the morphospace 3D plot, morphospace occupation of Early Triassic taxa is highlighted by red area.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/72692/elife-72692-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A, C, and E) Morphospace three-dimensional (3D) plot and disparity comparisons ordinated by principal coordinates analysis (PcoA). (B, D, and F) Morphospace 3D plot and disparity comparisons ordinated by non-metric multidimensional scaling (NMDS). Abbreviations: pov, product of variance; sov, sum of variance; P1, Early Permian; P2, Middle Permian; P3, Late Permian; T1, Early Triassic; T2, Middle Triassic. In the morphospace 3D-plot, morphospace occupation of Early Triassic taxa is highlighted by red area.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/72692/elife-72692-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A–D) Permutation tests for principal coordinates analysis (PcoA) results. (E–H) Permutation tests for non-metric multidimensional scaling (NMDS) results. Each box represents a distribution of the proportion greater than the observed value of the test statistic in the null distribution. Grey line highlights the value of 0.025 or 0.975. Difference lower than 0.025 represents the disparity of the former lower than the latter significantly, and the condition of the difference higher than 0.975 was inverse. Abbreviations: G, genus database; S, species database; pov, product of variance; sov, sum of variance; P1, Early Permian; P2, Middle Permian; P3, Late Permian; T1, Early Triassic; T2, Middle Triassic.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/72692/elife-72692-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** (A–D) Permutation tests for principal coordinates analysis (PcoA) results. (E–H) Permutation tests for non-metric multidimensional scaling (NMDS) results. Each box represents a distribution of the proportion greater than the observed value of the test statistic in the null distribution. Grey line highlights the value of 0.025 or 0.975. Difference lower than 0.025 represents the disparity of the former lower than the latter significantly, and the condition of the difference higher than 0.975 was inverse. Abbreviations: G, genus database; S, species database; pov, product of variance; sov, sum of variance; P1, Early Permian; P2, Middle Permian; P3, Late Permian; T1, Early Triassic; T2, Middle Triassic.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/72692/elife-72692-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** Left: results based on maximum observable rescale distance (MORD) matrix. Right: results based on generalized Euclidean distance (GED) matrix. (A, B, E, and F) Disparity comparison. (C, D, G, and H) Permutation tests with sample size corrected. Abbreviations: G, genus database; S, species database; pov, product of variance; sov, sum of variance; P1, Early Permian; P2, Middle Permian; P3, Late Permian; T1, Early Triassic; T2, Middle Triassic.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/72692/elife-72692-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** Left: results based on maximum observable rescale distance (MORD) matrix. Right: results based on generalized Euclidean distance (GED) matrix. (A, B, E, and F) Disparity comparison. (C, D, G, and H) Permutation tests with sample size corrected. Abbreviations: G, genus database; S, species database; pov, product of variance; sov, sum of variance; P1, Early Permian; P2, Middle Permian; P3, Late Permian; T1, Early Triassic; T2, Middle Triassic.
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/72692/elife-72692-fig4-figsupp8-v2.jpg)
+
+**Figure 4—figure supplement 8.:** (A) Result for maximum observable rescale distance (MORD) matrix of genus database. (B) Result for MORD matrix of species database. (C) Result for generalized Euclidean distance (GED) matrix of genus database. (D) Result for GED matrix of species database. Stress and R2 value indicate a good result of ordinations.
 
 ## Discussion
 
@@ -79,17 +131,17 @@ Our results reveal an Early Triassic gap in xylophagous beetles, suggesting that
 
 ## Materials and methods
 
-## Diversity analysis
+### Diversity analysis
 
 We compiled an updated database of all coleopteran species from the Early Permian to Middle Triassic from published literature in the early 1800s through to early 2020. In addition, we incorporated data from other open access database projects, including the Fossil Insect Database (EDNA) and Paleobiology Database (PBDB). We re-examined all published occurrences and taxonomy of Coleoptera from the Early Permian to Middle Triassic (Figure 2—source data 1). We standardized and corrected for nomenclatural consistency of all taxa using a classification of extinct beetle taxa above the genus rank (Bouchard et al., 2011). The data were filtered and cleaned by removing or reassigning illegitimate, questionable, and synonymous taxa and converting local to global chronostratigraphic units (Supplementary file 1).
 
 We allocated fossil species into 12 stage-level time-bins covering the Early Permian-Middle Triassic interval (from the Asselian to Ladinian, 298–237 Ma). Considering the short duration of the Induan and Olenekian stages, we combined both stages into one time-bin. The formal taxa were erected based only on isolated elytra that cannot be classified definitely into any natural group. Thus, we separately counted the diversity of natural, formal, and mixed groups (Figure 2, Figure 2—figure supplement 1). The species Coleopsis archaica was attributed to Tschekardocoleidae by Kirejtshuk et al., 2013, but was later elevated to a new family Coleopseidae by Kirejtshuk, 2020. We followed the former opinion because it is premature to erect a family without a detailed cladistic analysis. We determined the stratigraphical ranges of families, genera, and species as the maximum and minimum ages in stage-level time-bins. All diversity was calculated using the range-through method.
 
-## Phylogenetic analysis
+### Phylogenetic analysis
 
 In light of the new taxa and characters available for further testing the phylogenetic status of ancient stem-group beetles, we reconstructed the phylogenetic relationships among the stem groups by incorporating the presently described new taxa and revised characters coding into the previous dataset (Beutel et al., 2008). The morphological characters used for phylogenetic analysis comprise 93 adult and larval characters (Figure 3—source data 1). Unknown characters were coded as ‘?’. The taxon sampling contains two megalopterans as outgroups (Sialis and Chauliodes) and 13 coleopteran ingroup taxa (five extant and eight extinct) representing all four coleopteran extant suborders and their stem groups (Supplementary file 2). Compared to previous character matrices, we added the subfamily Taldycupedinae and three new characters (Supplementary file 3). The matrix was analysed in TNT version 1.1, through parsimony analysis and using traditional search (Goloboff et al., 2008). All characters were equally weighed and unordered (1000 replicates and 1000 trees saved per replication). Bootstrap values, consistency index, and retention index were provided (Figure 3—figure supplement 1).
 
-## Morphospace analysis
+### Morphospace analysis
 
 We performed morphospace analyses with our newly assembled discrete character matrices (Figure 4—source data 1; Supplementary file 4). The analyses were performed using the free software R. 4.0.4. Both the MORD matrix and GED matrix were calculated based on two discrete character matrices (Lloyd, 2016; Wills, 1998). Recent research has revealed that the GED matrix creates a systematic bias in cases with a high percentage of missing data, and the MORD matrix can provide greater fidelity under these circumstances (Lloyd, 2016; Lehmann et al., 2019). We then ordinated all taxa into a multivariate morphospace with both PcoA and NMDS.
 

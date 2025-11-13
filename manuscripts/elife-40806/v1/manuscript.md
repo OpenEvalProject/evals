@@ -19,13 +19,25 @@
 
 ## Abstract
 
-10.7554/eLife.40806.001 Heterochromatin Protein 1 (HP1) is a conserved chromosomal protein in eukaryotic cells that has a major role in directing heterochromatin formation, a process that requires co-transcriptional gene silencing mediated by small RNAs and their associated argonaute proteins. Heterochromatin formation requires erasing the active epigenetic mark, such as H3K4me2, but the molecular link between HP1 and H3K4 demethylation remains unclear. In a fertility screen in female Drosophila , we identified ovaries absent ( ova ), which functions in the stem cell niche, downstream of Piwi, to support germline stem cell differentiation. Moreover, ova acts as a suppressor of position effect variegation, and is required for silencing telomeric transposons in the germline. Biochemically, Ova acts to link the H3K4 demethylase dLsd1 to HP1a for local histone modifications. Therefore, our study provides a molecular connection between HP1a and local H3K4 demethylation during HP1a-mediated gene silencing that is required for ovary development, transposon silencing, and heterochromatin formation. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+Heterochromatin Protein 1 (HP1) is a conserved chromosomal protein in eukaryotic cells that has a major role in directing heterochromatin formation, a process that requires co-transcriptional gene silencing mediated by small RNAs and their associated argonaute proteins. Heterochromatin formation requires erasing the active epigenetic mark, such as H3K4me2, but the molecular link between HP1 and H3K4 demethylation remains unclear. In a fertility screen in female Drosophila, we identified ovaries absent (ova), which functions in the stem cell niche, downstream of Piwi, to support germline stem cell differentiation. Moreover, ova acts as a suppressor of position effect variegation, and is required for silencing telomeric transposons in the germline. Biochemically, Ova acts to link the H3K4 demethylase dLsd1 to HP1a for local histone modifications. Therefore, our study provides a molecular connection between HP1a and local H3K4 demethylation during HP1a-mediated gene silencing that is required for ovary development, transposon silencing, and heterochromatin formation.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
 In eukaryotic genomes, heterochromatin is mainly composed of repetitive sequences such as transposons that require active silencing (Slotkin and Martienssen, 2007). Heterochromatin is defined by the presence of repressive epigenetic methylation of histone H3 at lysine 9 (H3K9me) and by heterochromatin protein 1 (HP1), which binds to H3K9me sites (Lachner et al., 2001; Bannister et al., 2001). Heterochromatin formation is mediated by co-transcriptional gene silencing, a process that requires small RNAs and their associated argonaute proteins (Martienssen and Moazed, 2015). In Drosophila, the argonaute protein Piwi and Piwi-interacting RNAs (piRNAs) use base-pairing to target nascent transcripts to the corresponding transposon regions. The Piwi/piRNAs then recruit gene silencing machinery, including HP1a and the H3K9 methyltransferase Egg to form heterochromatin (Yang and Xi, 2017; Czech and Hannon, 2016; Brower-Toland et al., 2007). The formation of heterochromatin also requires erasing of active epigenetic mark by the H3K4 demethylase dLsd1 (Rudolph et al., 2007), but the molecular link between HP1a and local H3k4 demethylation remains elusive.
 
 Piwi, a founding member of the piRNA pathway in Drosophila, was initially identified as a fertility factor; its mutation results in germline degeneration and sterility (Cox et al., 1998; Lin and Spradling, 1997). To identify new genes involved in Piwi/piRNA-mediated gene silencing, we here conducted a female fertility screen by EMS mutagenesis and identified a novel recessive mutation on the second chromosome. The homozygous mutant males are semi-lethal (Supplementary file 1, Table 1), but females are viable but do not lay any eggs; other than sterility, these females do not have other notable defects. Dissection revealed that these females had rudimentary ovaries: rather than a normal ovary, each oviduct in these mutant females was connected to only a tiny mass of cells (Figure 1a,b). Given this nearly ‘ovaryless’ phenotype, we named the gene associated with this mutation as ovaries absent (ova) and named this mutant allele ova1 .
+
+![Figure 1.](https://cdn.elifesciences.org/articles/40806/elife-40806-fig1-v1.jpg)
+
+**Figure 1.:** (a) Phase contrast images of dissected ovaries from flies of indicated genotypes. Scale bar, 500 μm. (b) A graph shows the total offspring number of indicated females (n = 20, 20, 16, 16, 20 respectively). (c) Representative image of germaria from indicated genotypes labeled by α-Spectrin (red), Vasa (green), and DAPI (blue). ova1/1 and ova1/4 ovaries have numerous spherical-shaped spectrosome-containing cells (tumorous) or are empty of germline cells (germless), indicated by lack of germline cell marker Vasa (green). A wild-type (WT) germarium is usually 2 GSCs localized to the anterior tip. Scale bar, 10 μm. (d) A graph shows the percentage of normal, germless, and tumorous germaria of indicated genotypes (n = 14, 20, 30, 117, 57 respectively). (e) c587ts > ova RNAi germarium accumulated GSC-like cells after shift to 29°C for 7 and 14 days. Scale bars, 10 μm. (f) Escort cell-specific expression of ova rescued oogenesis and GSC differentiation defect of ova1/4 females. Red, α-Spectrin; Green, Vasa (g) Quantification of GSC-like cell number in germaria of indicated genotypes (n = 25, 20, 30, 117, 57, 30, 21, 31, 23 respectively). (h) Confocal sections of germaria stained by indicated antibodies or reporter. Scale bars, 10 µm. (i) Quantitative results of pMad and Dad-lacZ positive cell numbers from germaria of indicated genotypes. Values are mean ± SEM.; n > 20. P values by two-tailed Student t-test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40806/elife-40806-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Top, a schematic drawing of mapping results of ova1 allele using deficiency kit. Two small deficiencies, Df(2L)ED737 and Df(2L)BSC144, both failed to complement ova1 (Figure 1—figure supplement 1a). Bottom, analysis of the overlapping regions of these deficiencies implicated five candidate genes. Gray box, ova genomic rescue fragment. (b) DNA sequencing revealed a nucleotic deletion in the coding region of CG5694. (c) Schematic drawings of Ova, Drosophila Ewg-PA, and mouse NRF-1 PA proteins. Black box, Nrf1 DNA-binding domain. Grey box, Nrf1 activator-binding domain. (d) Multiple sequence alignments of Nrf1-binding domain of Ova, Ewg, and NRF-1 by Clustal Omega. (e) Schematic drawings of two CG5694/ova alleles, ova1, and ova4. ova1 is a deletion allele generated using CRISPR-Cas9.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40806/elife-40806-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a–d) Clonal analysis of wild-type and ova mutant GSCs. Anti-α-Spectrin staining was shown in red. The control clones marked by the absence of lacZ (anti-β-galactosidase, green) at 4 days or 14 days after clone induction (ACI) (a,b). The ova1 mutant clones at 4 days or 14 days ACI (c, d). Scale bar, 10 μm. (e) A ova1 germline clone with properly specified oocyte (anti-Orb, red). Scale bar, 20 μm. (f) A time course analysis of GSC maintenance rate in wild-type and ova mutant GSC clones. (g) Phase contrast images of germline-specific knock-down ova (ova GLKD) ovary. Scale bar, 500 μm. (h) Quantification of GSC-like cell number in ova GLKD germaria. Values are mean ± SEM.; n = 24.
 
 Complementation mapping with deficiency lines, followed by sequencing of candidate genes led us to identify a single nucleotide deletion in an exon of CG5694, which results in a truncated protein of 387 amino acids (aa) rather than the predicted 623 aa full length protein (Figure 1—figure supplement 1a,b). CG5694 encodes a protein with no obvious sequence similarity to any existing proteins in the NCBI database, but does have a conserved nuclear respiratory factor-1 (NRF-1)- like domain at its N-terminus (15–105 aa); this DNA-binding domain was initially identified in the mammalian transcription factor NRF-1 and are known to occur in at least one other Drosophila transcription factor, Erect Wing (Ewg) (Figure 1—figure supplement 1c,d). We used CRISPR-Cas9 to generate a knock-out allele in which the entire coding region of CG5694 was deleted (Figure 1—figure supplement 1e). Homozygous knock-out allele females are sterile and exhibit virtually identical ‘ovaryless’ phenotypes as the ova1 females (Figure 1a). Additionally, transgenic expression of a genomic DNA fragment containing the ova gene region was able to effectively rescue the ovary defect and restore fertility of ova1 homozygous or CG5694 null females (Figure 1a,b). Therefore, ova is allelic to CG5694.
 
@@ -39,9 +51,25 @@ The phenotypic and molecular similarities between the ova and piwi mutants led u
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/40806/elife-40806-fig2-v1.jpg)
 
-**Figure 2.:** (a) Phase contrast images of dissected ovaries from flies of indicated genotypes. Scale bar, 500 µm. (b) A graph shows the percentages of germaria with rudimentary or rescued ovaries (n = 62, 51, 143, 198 respectively). (c) Confocal sections of piwi and 2/3ova-rescued ovaries. Arrow indicates the GSC-like tumor; asterisk indicates the developing germline cyst. Red, α-Spectrin. Scale bars, 10 µm. (d) Confocal sections of piwi RNAi and panx RNAi germaria. Red, α-Spectrin. Scale bars, 10 µm. (e) Quantification of GSC-like cell number in germaria of indicated genotypes. (n = 55, 43 respectively). f, qPCR result of TE levels in total ovarian RNA from indicated genotypes (normalized to actin5c). Values are means ± SEM.; n = 3. P values by two-tailed t-test (*, p<0.05; **, p<0.01; ***, p<0.001).
+**Figure 2.:** (a) Phase contrast images of dissected ovaries from flies of indicated genotypes. Scale bar, 500 µm. (b) A graph shows the percentages of germaria with rudimentary or rescued ovaries (n = 62, 51, 143, 198 respectively). (c) Confocal sections of piwi2/3 and ova-rescued ovaries. Arrow indicates the GSC-like tumor; asterisk indicates the developing germline cyst. Red, α-Spectrin. Scale bars, 10 µm. (d) Confocal sections of piwi RNAi and panx RNAi germaria. Red, α-Spectrin. Scale bars, 10 µm. (e) Quantification of GSC-like cell number in germaria of indicated genotypes. (n = 55, 43 respectively). f, qPCR result of TE levels in total ovarian RNA from indicated genotypes (normalized to actin5c). Values are means ± SEM.; n = 3. P values by two-tailed t-test (*, p<0.05; **, p<0.01; ***, p<0.001).
 
 Given that Piwi is associated with a number of chromatin factors that are known to regulate heterochromatin formation and germline transposon silencing, and considering that dpp silencing in escort cells can be attributed to Piwi-dependent gene silencing, we asked whether Ova is also associated with these silencing machinery components and somehow participates in these processes. We performed a yeast two-hybrid (Y2H) screen for potential physical interactions among Ova and other known essential components of the heterochromatin silencing machinery (Yu et al., 2015; Sienski et al., 2015; Sienski et al., 2012), including: Panoramix (Panx), Arx, and Mael, which participates in Piwi/piRNA-mediated gene silencing (Yu et al., 2015; Sienski et al., 2015; Sienski et al., 2012; Muerdter et al., 2013; Dönertas et al., 2013; Ohtani et al., 2013); HP1a, the H3K9me3 methyltransferase Eggless (Egg), and the Egg cofactor Windei (Wde) (Seum et al., 2007; Tzeng et al., 2007; Koch et al., 2009); the H3K4me2 demethylase dLsd1 and its cofactor CoREST (Rudolph et al., 2007); and Piwi. The Y2H screen identified two positive interactions: Ova and HP1a, and Ova and dLsd1 (Figure 3a and Figure 3—figure supplement 1). Notably, the previously reported interaction between HP1a and Piwi was not observed in our screen here (Figure 3—figure supplement 1) (Brower-Toland et al., 2007), possibly due to different expression systems used in the studies. Co-immunoprecipitation experiments also showed positive interactions between Ova and HP1a and between Ova and dLsd1 in ovary lysates (Figure 3b,c). Collectively, these results indicate that Ova is physically associated with the co-transcriptional silencing machinery and directly interacts with HP1a and with dLsd1. Previous studies have reported that HP1a and dLsd1 function in the escort cell niche to restrict dpp signaling and to facilitate GSC differentiation (Wang et al., 2011; Eliazer et al., 2011). These reports, considered alongside the known role of Piwi-dependent gene silencing of the dpp gene locus in normal escort cells, further supporting the notion that these three Piwi-associated factors (Ova, HP1a, dLsd1) function in a shared pathway in escort cells to establish a repressive chromatin state for the dpp gene locus.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/40806/elife-40806-fig3-v1.jpg)
+
+**Figure 3.:** (a) Y2H assay for protein interaction between Ova and proteins as indicated. (b–c) Western blots showing reciprocal co-IP between Ova and HP1a, and between Ova and dLsd1. The RFP-HP1a transgene was driven by the endogenous promoter. The dLsd1-GFP transgene was driven by a ubiquitous promoter. The Flag-ova transgene was driven by nos-GAL4. (d) Heat map displaying steady state mRNA levels as reads per million (rpm) for the top 60 detected transposons in nosGAL4 driven ova-RNAi, EGFP-RNAi, and w1118 ovaries. The average of three replicates is shown. The most upregulated transposons are highlighted in bold. (e) Correlation scatter plot of log10 transposon mRNA-seq reads between ova GLKD and dLsd1 GLKD ovaries. R = 0.9463, p<2.2×10−16 by Pearson’s correlation coefficient. The most upregulated transposons in both genotypes are highlighted in red dots.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40806/elife-40806-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Y2H assay to test the interaction between proteins that associated with Piwi/piRNAs complexes and proteins in the heterochromatin machinery. SD-WL, non-selective medium; SD-WLH and SD-WLHA, selective media. Ф, empty vector.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/40806/elife-40806-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Photographs showing representative eye pigments of adult females bearing X chromosome wm4h reporter plus wild-type and ova heterozygous alleles. (b) Photographs showing representative eye pigments of adult females bearing fourth chromosome PEV reporters plus heterozygous or trans-heterozygous of ova mutant alleles. (c) Quantitative measure of eye pigment levels of indicated genotypes by a spectrophotometer. Values are mean ± SEM.; n > 5. P values by two-tailed Student’s t-test.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/40806/elife-40806-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** (a) A scatter plot shows gene expression (rpkm, reads per kilobase per million sequenced reads) comparison of protein-coding genes between w1118 and ova GLKD ovaries. R by Pearson’s correlation coefficient. (b) Top, normalized small RNA length profiles: miRNAs (gray columns, insets) and piRNAs/siRNAs (black or red columns) from ovaries with indicated genotypes. Bottom, length distribution and abundance of repeat-derived small RNAs (blue, sense; red, antisense). (c) GFP-Piwi immunostaining from ovaries of indicated genotypes. Scale bars, 10 μm. (d) qPCR result of ova mRNA levels in control and ova GLKD ovaries. Values are means ±SEM.; n = 4. P value by two-tailed Student t-test. (e) Heat map displaying repeat small RNA levels as reads per million (rpm) for individual transposon in ova GLKD and w1118 ovaries. (f) qPCR result of TE mRNA levels in w1118 and tjGAL4 >ova RNAi (shift to 29°C for 7 days) ovaries. ***, p<0.001 by two-tailed Student’s t-test. Values are means ± SEM.; n = 3.
 
 We next tested whether Ova, similar to HP1a and dLsd1 (Wang and Elgin, 2011; Czech et al., 2013), is required for heterochromatin formation and germline transposon silencing. The white locus of In(l)wm4h chromosomal reversion flies is relocated to a position next to a heterochromatin region, and this relocation often causes heterochromatin-based silencing of this gene, resulting from a genomic phenomenon referred to as position effect variegation (PEV), these flies typically display mosaic eyes with red and white facets as a result of this relocation based silencing (Wallrath and Elgin, 1995; Schotta et al., 2003) (Figure 3—figure supplement 2a). Interestingly, removing one functional copy of ova from the In(l)wm4h background was sufficient cause fully-pigmented eyes (Figure 3—figure supplement 2a). Analysis using several additional PEV reporter fly lines (118E-10, 118E-15, 39 C-72, and 6 M-193), each of which has its white gene locus relocated (inserted) into the heterochromatin rich fourth chromosome, showed that ova acts as a suppressor of PEV: the ova transheterozygous flies had fully-pigmented eyes with increased pigment level whereas the ova heterozygous flies from all three of the reporter lines had mosaic eyes (P values by two-tailed Student t-test, Figure 3—figure supplement 2b,c). It thus appears that ova has a functional role in heterochromatic gene silencing.
 
@@ -49,7 +77,27 @@ To test whether or not ova functions in germline transposon silencing, we perfor
 
 To explore the biochemical mechanisms underlying Ova function in greater detail, we used Y2H assays to identify the Ova domains required for its interactions with HP1a and/or dLsd1. We constructed multiple truncated forms of Ova (Figure 4a), and found that the Ova 250–486 fragment and the Ova 388–623 fragment were both able to interact with the chromo shadow domain (CSD) of HP1a (Figure 4b); neither of these Ova fragments could interact with the chromodomain (CD) of HP1a (Figure 4b). We next constructed an Ova fragment composed of the overlapped 388–486 region and confirmed that this fragment was sufficient for interaction with the CSD domain of HP1a (Figure 4b). Mapping the interaction domains of Ova with dLsd1 revealed that both Ova 1–388 and Ova 250–486 fragments, but not Ova 388–486 fragment, could interact with dLsd1 (Figure 4c). Interestingly, transgene expression of the Ova 250–486 fragment, which is able to interact with both HP1a and dLsd1, was sufficient to rescue both the ovary development defect and transposon silencing defect of ova mutant females, similar to the effect produced by transgene expression of a full length ova (Figure 4d,f). In contrast, no rescue effect was observed with the transgenic expression of the Ova 388–623 fragment, which interacts with HP1a only, or with expression of the Ova 1–388 fragment, which interacts with dLsd1 only (Figure 4d). Therefore, the domain that is sufficient to interact with both HP1a and dLsd1 is sufficient for Ova function in ovary development and transposon silencing. These biochemical and genetic experiments indicate that Ova may serve as a protein adaptor that links HP1a and dLsd1. To functionally test this putative adaptor function in vivo, we generated a transgene expressing HP1a::dLsd1 fusion protein. If Ova merely functions as an adapter that bridges the two proteins, the HP1a::dLsd1 transgene should render Ova dispensable and therefore should be able to rescue the ova mutant phenotypes. Strikingly, transgenic expression of HP1a::dLsd1 in escort cells was sufficient to rescue the rudimentary ovary phenotype of ova mutants (Figure 4e). Eighty percent of the HP1a::dLsd1 rescued germaria contained 2–5 GSC-l (n = 41) and all the germaria had properly differentiating cysts. Moreover, ubiquitous expression of HP1a::dLsd1 also significantly rescued the transposon silencing defects of ova mutants and partially restored female fertility (Figure 4f). Given that the genomic fragment transgene of ova (ova-g), which includes the cis-elements of ova, could fully restore fertility (Figure 1a), the incomplete rescue of fertility by the HP1a::dLsd1 fusion could be due to non-physiological levels of the transgene expression. Alternatively, ova could have additional roles beyond the adaptor role that are important for female fertility. In addition to increased expression of transposons, ova germline mutant ovaries also showed moderate upregulation of many protein-coding genes (Figure 4—figure supplement 1). Interestingly, this transgene expression also effectively brought the expression of many protein-coding genes back to wild-type levels (Figure 4—figure supplement 1). These observations indicate that HP1a and Ova may participate in transcriptional silencing of many regular protein-coding genes, in addition to transposons. We conclude that Ova acts as a protein adaptor to link HP1a and dLsd1 to promote HP1a-mediated gene silencing.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/40806/elife-40806-fig4-v1.jpg)
+
+**Figure 4.:** (a) Schematic drawings of full length and truncated forms of Ova. (b) Mapping the reciprocal-binding regions between HP1a and Ova by Y2H assay. (c) Mapping the reciprocal-binding regions between HP1a and dLsd1 by Y2H assay. (d) Ovaries from flies of indicated genotypes. Escort cell-specific expression of ova full length, ova250-486 or HP1a::dLsd1 rescued ova1/4 ovary defect. Scale bar, 500 µm. (e) A representative image of ova1/4 germarium rescued by escort cell-specific expression of HP1a::dLsd1. Red, α-spectrin; Blue, DAPI. Scale bar, 10 µm. (f) A graph shows the total offspring number of indicated females (n = 11, 23 respectively). (g) A graph shows fold changes of TEs in total ovarian RNA from indicated genotypes (normalized to actin5c). Values are means ± SEM.; n > 4. P values by two-tailed t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40806/elife-40806-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Heat map showing relative z-score of mRNA-seq from indicated genotype ovaries. The top 39 upregulated genes in ova germline mutant ovaries are shown and the genes, which are rescued to wild-type levels by HP1a::dLsd1, are highlighted in red dashed box. Grey shadow, not significant.
+
 Since dLsd1 catalyzes H3K4me2 demethylation, Ova may function to link dLsd1 and HP1a for local H3K4 demethylation during heterochromatic gene silencing. Indeed, ChIP-seq analysis revealed that the H3K4me2 density was specifically increased at Het-A and TAHRE loci but not other TE loci (Figure 5—figure supplement 1). Further analysis revealed that there was a significant increase in H3K4me2 levels and in RNA Pol II occupancy at the 3’UTR of the Het-A and TAHRE transposons in ova GLKD ovarian germline cells (Figure 5a,b). Note that these telomeric transposons are arranged in a head-to-tail fashion; therefore, the 3’ UTR of one element likely directs the transcription of its downstream neighbor (Danilevskaya et al., 1997). To further test this potential role of Ova in linking H3K4 demethylation during HP1a-mediated gene silencing in vivo, we used a clean lacI/lacO reporter system to tether lacI-HP1a to the promoter of a lacO-GFP reporter (Sienski et al., 2015). We found that 26% of ovarioles examined (n = 131) had reduced GFP signal in their germline upon lacI-HP1a induction (Figure 5c,d), although there was no significant reduced in the overall level of GFP mRNA (P value by two-tailed Student t-test, Figure 5e). Importantly, co-expression of ova in the germline caused a significant increase in the number of ovarioles with reduced or abolished GFP signal [86% (n = 138)], and the overall GFP mRNA level was also significantly reduced in these samples (P value by two-tailed Student t-test, Figure 5c–e). ChIP-seq analysis showed that this reduction in reporter expression was accompanied by significantly reduced H3K4m2 levels near the promoter region of the GFP gene reporter (Figure 5f,h).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/40806/elife-40806-fig5-v1.jpg)
+
+**Figure 5.:** (a) Graphs showing H3K4me2 and Pol II ChIP-seq profiles mapped to indicated transposon loci in control versus ova GLKD ovaries. Dashed boxes, enhancer regions of transposons. RPM, reads per million. Bin, 100 bp. (b) Quantitative comparison of H3K4me2 and Pol II densities in the indicated enhancer regions in 5a (dashed boxes). P values by two-tailed Student’s t-test. (c), Ovarioles with indicated genotypes expressing ubiquitous lacO-GFP reporter in the germline cells. GFP was visualized by antibody staining. Scale bar, 50 µm. (d) A graph showing the percentage of ovarioles of indicated genotypes with normal, reduced, or abolished GFP signals. (e) Quantitative RT-PCR results of GFP mRNA from ovaries of indicated genotypes. Values are means ±SEM.; n > 4. P values by two-tailed Student’s t-test. (f) Graphs showing normalized H3K4me2 density mapped to lacO-GFP reporter region from ovaries of indicated genotypes. Grey box, lacO-binding sites; Purple box, nanos promoter. (g) Graphs showing normalized H3K4me2 density mapped to lacO-terminator-GFP reporter region from ovaries of indicated genotypes. Blue box, VASA terminator. (h) Quantitative comparison of H3K4me2 density in regions indicated by the dashed boxes in f or g. P values by two-tailed Student’s t-test. (i) Quantitative RT-PCR results of GFP mRNA from lacO-GFP and lacO-terminator-GFP reporter ovaries. Values are means ± SEM.; n = 4. P value by Student t-test. (j) A schematic model for Ova function: Ova functions as a protein adaptor to link HP1a with dLsd1 for local H3K4 demethylation during HP1a-induced transcriptional gene silencing.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/40806/elife-40806-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Correlation scatter plot of log10 H3K4me2 ChIP-seq reads between w1118 and ova GLKD ovaries. The Het-A and TAHRE transposons are highlighted in red dots.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/40806/elife-40806-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (a), A cartoon to describe the DNA tethering assay using the lacI and lacO binary system. (b, b’, c, c’) Confocal images of GFP expression in ovarioles of indicated genotypes. Green, anti-GFP staining. Red, anti-Armadillo. (d), A cartoon to describe the RNA tethering assay using λN and boxB binary system. (e, e’, f, f’) Confocal images of GFP expression in ovarioles of indicated genotypes. Scale bars, 50 μm.
 
 To further confirm that the alteration of H3K4 deposition is a consequence of Ova recruitment, rather than a secondary effect following altered gene transcription, we performed a similar set of experiments, but with a modified lacO-terminator-GFP reporter that has a transcriptional terminator immediately following the promoter (Figure 5g). This should result in blocked transcription no matter whether a transcriptional activator/repressor is present or not. As expected, this reporter showed a significant reduction of baseline transcription (down to approximately 3.8%) (P value by two-tailed Student t-test, Figure 5i). We found that tethering lacI-HP1a to the promoter failed to alter the H3K4me2 level proximal to the tethering site. Co-expression of Ova, however, almost erased entirely the H3K4me2 marks in the proximal region (Figure 5g,h). These observations further support the notion that Ova links HP1a and dLsd1 for local erasing of H3K4me2 marks.
 
@@ -59,42 +107,554 @@ Similar to other ‘effector step’ mutations, the loss of ova or dlsd1 only ca
 
 ## Materials and methods
 
-## Drosophila strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>ova[1]</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>ova[4]</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>c587-GAL4</td>
+      <td>(Song et al., 2004) (DOI: 10.1242/dev.01026)</td>
+      <td>RRID:BDSC_67747</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Dad-lacZ</td>
+      <td>(Tsuneizumi et al., 1997) (DOI: 10.1038/39362)</td>
+      <td>RRID:DGGR_118114</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>bam-GFP</td>
+      <td>(Chen and McKearin, 2003)</td>
+      <td>RRID:DGGR_118177</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>piwi[2]</td>
+      <td>(Lin and Spradling, 1997)</td>
+      <td>RRID:BDSC_43319</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>piwi[3]</td>
+      <td>(Lin and Spradling, 1997)</td>
+      <td>RRID:BDSC_12225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>GFP-piwi</td>
+      <td>Katalin Toth (California Institute of Tchnology)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>118E-10</td>
+      <td>Lori Wallrath (University of Iowa)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>118E-15</td>
+      <td>Lori Wallrath (University of Iowa)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>6 M-193</td>
+      <td>Lori Wallrath (University of Iowa)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>39C.72</td>
+      <td>Lori Wallrath (University of Iowa)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>dLsd1-GFP</td>
+      <td>Yu Yang (Institute of Biophysics, Chinese Academy of Science)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>EGFP-RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>(#41553)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>RFP-HP1a</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>(#30562)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Dcr2; nos-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>(#25751)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>tub-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>(#5138)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>tub-GAL80ts</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>(#7016, #7018)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Df(2L)BSC144</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>(#9504)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>attP2</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>(#25710)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>In(1)wm4h</td>
+      <td>Kyoto Stock Center</td>
+      <td>(#101652)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Df(2L)ED737</td>
+      <td>Kyoto Stock Center</td>
+      <td>(#150520)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>ova-RNAi</td>
+      <td>Vienna Drosophila Research Center</td>
+      <td>(#102156)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>piwi-RNAi</td>
+      <td>Vienna Drosophila Research Center</td>
+      <td>(#101658)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>panx-RNAi</td>
+      <td>Vienna Drosophila Research Center</td>
+      <td>(#102702)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>EGFP-5xBoxB</td>
+      <td>Vienna Drosophila Research Center</td>
+      <td>(#313408)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>lacO-GFP-Piwi</td>
+      <td>Vienna Drosophila Research Center</td>
+      <td>(#313394)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>lacI-HP1a; lacO- GFP-Piwi</td>
+      <td>Vienna Drosophila Research Center</td>
+      <td>(#313409)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>nos-Cas9</td>
+      <td>Jianquan Ni (Tsinghua University)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>pCasper4-ova-g</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>GFP-ova</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UASP-ova</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UASP-piwi</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UASP-ova1-249</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UASP-ova250-486</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UASP-ova388-623</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UASP-ova1-388</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UASP-HP1a::dLsd1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UASP-λN-ova</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UASP-lacI-ova</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>lacO-terminator-GFP-Piwi</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>UASP-λN</td>
+      <td rowspan="3">Julius Brennecke (Institute of Molecular Biotechnology)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>UASP-lacI</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>lacO-GFP-Piwi</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBKT7</td>
+      <td>Clontech (Cat#630443)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGAD</td>
+      <td>Clontech (Cat#630442)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-pMad</td>
+      <td>Ed Laufer (Columbia Universtity Medical Center)</td>
+      <td>RRID:AB_2617125</td>
+      <td>IHC(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-β-galactosidase</td>
+      <td>MP Biologicals (Cat#0855976)</td>
+      <td>RRID:AB_2687418</td>
+      <td>IHC(1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-α-Spectrin</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td></td>
+      <td>IHC(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Tubulin</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID:AB_1157911</td>
+      <td>WB(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-mCherry</td>
+      <td>BioVision (cat#5993)</td>
+      <td>RRID:AB_1975001</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-GFP</td>
+      <td>Life (cat#A11122)</td>
+      <td>RRID:AB_221569</td>
+      <td>IHC(1:1000) WB(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>polyclonal anti-rabbit IgG-HRP</td>
+      <td>ZSJQ-BIO (cat#ZB2301)</td>
+      <td></td>
+      <td>WB(1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-H3K4me2</td>
+      <td>Abcam (cat#ab7766)</td>
+      <td>RRID:AB_732924</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-RNA polymerase II</td>
+      <td>Abcam (cat#ab817)</td>
+      <td>RRID:AB_306327</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse monoclonal anti-Flag</td>
+      <td>Sigma (cat#F1804)</td>
+      <td>RRID:AB_439685</td>
+      <td>IHC(1:300) WB(1:6000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4’,6’-diamidino-2- phenylindole</td>
+      <td>Sigma (cat#10236276001)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>anti-Flag resin</td>
+      <td>Sigma (cat#A2220)</td>
+      <td>RRID:AB_10063035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GFP-Trap agarose</td>
+      <td>Chromoteck (cat#gta-10)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RFP-Trap agarose</td>
+      <td>Chromoteck (cat#rta-10)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Qiagen Plasmid Midi Kit</td>
+      <td>Qiagen (#12145)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Immobilon Western Chemiluminescent HRP Substrate Kit</td>
+      <td>Millipore (cat#WBKLS0500)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HiScript II Q RT SuperMix</td>
+      <td>Vazyme Biotech (cat#R223-01)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ChamQ SYBR qPCR master Mix</td>
+      <td>Vazyme Biotech (cat#Q331)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Oligo d(T)25 Magnetic beads</td>
+      <td>NEB (cat#S1419S)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra IIDNA Library Prep Kits for Illumina</td>
+      <td>NEB (cat# E7645S)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>VAHTS Small RNA Library Prep Kit for Illumina</td>
+      <td>Vazyme Biotech (cat#NR801)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>VAHTS Universal DNA Library Prep Kit</td>
+      <td>Vazyme Biotech (cat#ND607)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruePrep Index Kit</td>
+      <td>Vazyme Biotech (cat#TD202)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>RT-qPCR primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Supplementary file 1, Table 2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Drosophila strains
 
 Flies were cultured on standard media with yeast paste added to the food surface. The culture temperature was 25°C unless otherwise noted. Strains used in this study were as follows: ova1  is nucleotide loss allele (A1045) generated in this study. ova4 is a knock-out allele generated in this study by CRISPR-Cas9 (Ren et al., 2013). c587-GAL4 (Song et al., 2004); Dad-lacZ (Tsuneizumi et al., 1997); bam-GFP (Chen and McKearin, 2003); piwi (Lachner et al., 2001) and piwi (Bannister et al., 2001) (Lin and Spradling, 1997); GFP-piwi (gift from Katalin Toth, California Institute of Technology); 118E-10, 118E-15, 6 M-193, and 39C.72 (gift from Lori Wallrath, University of Iowa); dLsd1-GFP (gift from Yang Yu, Institute of Biophysics IBP, Chinese Academy of Sciences); from Bloomington Drosophila Stock Center (BDSC):EGFP-RNAi (#41553) RFP-HP1a (#30562);; UAS-Dcr2; nos-GAL4 (#25751); tub-GAL4 (#5138); tub-GAL80ts (#7016, #7018); Df(2L)BSC144 (#9504); attP2 (#25710); from Kyoto Stock Center: In(1)wm4h (#101652); Df(2L)ED737 (#150520); from Vienna Drosophila Research Center: ova-RNAi (#102156); piwi-RNAi (#101658); panx-RNAi (#102702); EGFP-5xBoxB (#313408); lacO-GFP-Piwi (#313394); lacI-HP1a; lacO-GFP-Piwi (#313409).
 
-## Generation of knock-out and transgenic flies
+### Generation of knock-out and transgenic flies
 
 To obtain ova knock-out allele, two gRNAs (gRNA1: aagtctttacagccttgatc and gRNA2: cgttgggttgaggtacatac) were designed that target ova 5’UTR and 3’UTR respectively and cloned into U6b vector. The plasmids were introduced into nos-Cas9 embryos (Ren et al., 2013). Obtained flies were backcrossed with w1118 for at least three generations to eliminate potential off-target events. For ova-g transgenic fly, w1118 genomic region (2L: 10226867–10234857) was cloned intro pCasper4 vector. The attP-UASP vector was used to generate UASP-Flag-ova, UASP-Flag-ova1-388, UASP-Flag-ova1-249, UASP-Flag-ova250-486, UASP-Flag-ova-388–623, UASP-ova, UASP-piwi, and UASP-HP1a::dLsd1. The GFP-ova construct was obtained using Gateway cloning technology (Invitrogen) and pUGW (DGRC1283) vector. Ova cDNA was cloned into UASP-λN and UASP-lacI (gifts from Julius Brennecke, Institute of Molecular Biotechnology) to generate the UASP-λN-ova and UASP-lacI-ova transgenes respectively. For the lacO-terminator-GFP reporter, 555 bp VASA terminator was injected immediately following start codon of GFP in the lacO-GFP reporter. All the plasmids were purified using a Qiagen Plasmid Midi Kit (#12145) and the DNA sequencing verified plasmids were introduced into embryos using either P-element or nos-phiC31 system to generate transgenic flies according to a standard procedure.
 
-## Immunostaining
+### Immunostaining
 
 Drosophila ovaries were dissected and immunostained as described previously (Yang et al., 2015). Briefly, ovaries were fixed in 4% paraformaldehyde for 15 min, and blocked in 5% normal goat serum in PBT (10 mM NaH2PO4, 175 mM NaCl, pH 7.4, 0.1% Triton X-100). The following primary antibodies were used: rabbit anti-pMad (1:1000, gift from Ed Laufer, Columbia University Medical Center, New York), rabbit anti-β-galactosidase (1:3000; MP Biologicals, 0855976), mouse anti-α-Spectrin (1:50; DSHB), rabbit anti-GFP (1:1000; Life, A11122), mouse anti-Flag (1:300; Sigma, F1804). Secondary antibodies, including goat anti-rabbit, anti-mouse IgGs, conjugated to Alexa (488 or 568) (Molecular Probes) were used at a dilution of 1:300 and tissues were also stained with 0.1 mg/ml DAPI (4’,6’-diamidino-2-phenylindole; Sigma) for 5 min. Images were collected using either a Zeiss LSM510/LSM 800 or Nikon A1 confocal microscope system. All acquired images were processed in Adobe Photoshop and Illustrator.
 
-## Fertility test
+### Fertility test
 
 To test female fertility, for each vial, three newly enclosed females were collected and mated with three 5–7 days old w1118 males in cornmeal food with yeast paste for two days, then the flies were transferred to a cornmeal food vial without yeast paste. After another three days, the flies were dumped out. The number of offspring was accounted until 16 days after eclosion. Mean values are reported as SEM.
 
-## Drosophila eye pigmentation assay
+### Drosophila eye pigmentation assay
 
 To measure eye pigmentation, the heads of ten 5–7 days old flies of each genotype were manually dissected. The isolated heads were homogenized in 0.2 ml of methanol, acidified with 0.1% HCl and warmed at 50°C for 5 min; The homogenate was clarified by centrifugation, and the OD at 480 nm of 0.15 ml supernatant was recorded. Mean values are reported with SEM.
 
-## Yeast two-hybrid experiment
+### Yeast two-hybrid experiment
 
 Yeast Two-hybrid experiment was performed as described previously (Yang et al., 2015). Briefly, cDNA encoding interesting genes were amplified from w1118 ovary cDNA and cloned into either pGBKT7 bait vector or pGAD prey vector (Clontech). The pGBKT7 and pGAD plasmid carrying interesting genes were co-transformed into AH109 yeast cells according to a standard procedure. Colonies appearing on media lacking tryptophan and leucine (SC-WL) were picked onto selection plate lacking tryptophan, leucine and histidine (SC-WLH) or tryptophan, leucine, histidine and adenine (SC-WLHA) to determine proteins interaction.
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 Co-IP was done as previously described (Yang et al., 2015), with minor modifications. Female flies of appropriate genotypes were dissected in ice cold PBS. Ovaries were lysed in lysis buffer (10 mM Hepes pH 7.0, 150 mM NaCl, 5 mM MgCl2, 10% glycerol, 1% Triton X-100, 1x complete protease inhibitor (Roche), 1 mM DTT, 1 mM EDTA, 0.1 mM PMSF) at 4°C for 30 min and spun for 10 min at max speed in a table top centrifuge at 4°C. The supernatant was incubated with tag-recognizing beads including anti-Flag resin (Sigma), GFP-Trap agarose beads (Chromoteck) and RFP-Trap agarose beads (Chromoteck). After incubation, the beads were washed three times with lysis buffer and eluted by boiling in SDS loading buffer, loaded onto SDS-PAGE gels, and analyzed by immunoblotting with indicated antibodies. The following primary antibodies were used: anti-Flag (Sigma, 1:6000), anti-GFP (Life, 1:10000), anti-mCherry (BioVision, 1:2000), anti-Tubulin (DSHB, 1:2000). Secondary antibodies, including: anti-mouse and anti-rabbit IgG-HRP (ZSJQ-BIO, 1:10000). The membrane was developed by Immobilon Western Chemiluminescent HRP Substrate Kit (Millipore) according to the manufacturer’s instructions.
 
-## RNA purification and real-time quantitative PCR (RT-qPCR)
+### RNA purification and real-time quantitative PCR (RT-qPCR)
 
 Total RNA from 10 to 20 ovaries was extracted using TRIzol reagent (TaKaRa). After DNase treatment, complementary DNA (cDNA) was synthesized using HiScript II Q RT SuperMix (Vazyme Biotech, R223-01). RT-qPCR was performed in three duplicates using ChamQ SYBR qPCR master Mix (Vazyme Biotech, Q331) on an ABI PRISM 7500 fast real-time PCR system (Applied Biosystems). Fold changes for mRNA were calculated using the △△Ct method (Livak and Schmittgen, 2001). Primers used were shown in Supplementary file 1, Table 2.
 
-## RNA sequencing and computational analysis
+### RNA sequencing and computational analysis
 
 Total RNA from ovaries was isolated using TRIzol reagent (TaKaRa). 10 μg of total RNA from each sample used for library preparation after poly(A)-containing mRNA molecule purification (NEB, #S1419S), RNA amplification, double-strand cDNA synthesis, and adaptor ligation (NEB, #E7645S). For the small RNA sequencing, 10 μg enriched small RNA were separated on a 15% denaturing polyacrylamide gel and 18- to 30-nt RNAs were purified according to RNA oligo markers. All the libraries were prepared by following the manufacturer’s instructions and subsequent sequencing on the Illumina GAII instrument (Vazyme, NR801). For CDS gene expression analysis, all the sequencing reads were mapped to the D.mel genome (BDGP6) using STAR program (options: --outFilterMultimapNmax 20 --alignIntronMin 20 --alignIntronMax 500000). The mapped reads were used for expression analysis via Cufflinks package with reference gene annotation from Ensembl. And Cuffdiff was used to perform differential expression. For transposon expression analysis, sequencing reads were mapped to the transposon sequences which download from flybase website using STAR program with default parameters. Then alignment reads were used for calculating the expression level of transposons. Different transposons were combined together if they belong to the same one. The expression levels were normalized to reads per million (RPM). For small RNA analysis, Cutadapt package was used to remove adapter from 3’ end. The reads were aligned to the genome sequence by Bowtie. The reads were discarded which mapped to rRNA, tRNA, snoRNA sequences. And retained reads were aligned to miRNA (pre-miRNA sequences download from miRBase) and whole genome sequences (r5.42) with one mismatch and unique hit. Sequences in the 25–32 nt size range, not annotated as a previously known RNA were classified as candidate piRNAs. The expression levels of small RNA were normalized to RPM according to the total mapped reads number.
 
-## ChIP-seq analysis
+### ChIP-seq analysis
 
 ChIP was performed as previously described (Sienski et al., 2012). Briefly, about 200 pairs of ovaries were dissected into cold PBS and washed once. Ovaries were cross-linked in 1.8% paraformaldehyde for 10 min at room temperature then quenched with glycine. Ovaries were homogenized by douncing. Pellet was resuspended in lysis buffer and incubated 10 min on ice. Chromatin was sonicated for immunoprecipitation and followed by reverse crosslink and DNA purification. Recovered DNA fragment was used to prepare libraries using VAHTS Universal DNA Library Prep Kit (Vazyme, ND607) and TruePrep Index Kit (Vazyme Biotech, TD202) sequencing was done on HiSeq2500 (Illumina). Antibodies: polyclonal rabbit anti-H3K4me2 (Abcam, ab7766) and monoclonal mouse anti-RNA polymerase II (Abcam, ab817). ChIP-seq reads were aligned using Bowtie (version 1.1.2) to build version BDGP6 of the Drosophila melanogaster genome. MACS (version 1.4.1) was used to identify regions of ChIP-seq enrichment. The density of reads in each region was normalized to 10 million reads library size. For lacO-GFP ChIP-seq, normalized reads were removed w1118 ChIP reads as the reporter unique mapped reads due to lacO-GFP reporter shared common sequences in fly genome. BigWig files were generated for visualization using Homer package. For transposons, all raw reads were mapped to the transposon database using Bowtie (version 1.1.2) with –v 3 –-best parameters. The sum of the number reads that mapped to genome and transposon was used as a normalization factor for all samples, reporting all feature abundances as RPM mapped.

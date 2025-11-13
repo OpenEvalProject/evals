@@ -11,14 +11,14 @@
 
 ### Affiliations
 
-1. https://ror.org/03gnh5541 Institute of Science and Technology Austria Klosterneuburg Austria
+1. Institute of Science and Technology Austria Klosterneuburg Austria ([ROR:03gnh5541](https://ror.org/03gnh5541))
 2. VALANX Biotech GmbH Klosterneuburg Austria
 
 † Corresponding author
 
 ## Abstract
 
-A key attribute of persistent or recurring bacterial infections is the ability of the pathogen to evade the host’s immune response. Many Enterobacteriaceae express type 1 pili, a pre-adapted virulence trait, to invade host epithelial cells and establish persistent infections. However, the molecular mechanisms and strategies by which bacteria actively circumvent the immune response of the host remain poorly understood. Here, we identified CD14, the major co-receptor for lipopolysaccharide detection, on mouse dendritic cells (DCs) as a binding partner of FimH, the protein located at the tip of the type 1 pilus of Escherichia coli . The FimH amino acids involved in CD14 binding are highly conserved across pathogenic and non-pathogenic strains. Binding of the pathogenic strain CFT073 to CD14 reduced DC migration by overactivation of integrins and blunted expression of co-stimulatory molecules by overactivating the NFAT (nuclear factor of activated T-cells) pathway, both rate-limiting factors of T cell activation. This response was binary at the single-cell level, but averaged in larger populations exposed to both piliated and non-piliated pathogens, presumably via the exchange of immunomodulatory cytokines. While defining an active molecular mechanism of immune evasion by pathogens, the interaction between FimH and CD14 represents a potential target to interfere with persistent and recurrent infections, such as urinary tract infections or Crohn’s disease.
+A key attribute of persistent or recurring bacterial infections is the ability of the pathogen to evade the host’s immune response. Many Enterobacteriaceae express type 1 pili, a pre-adapted virulence trait, to invade host epithelial cells and establish persistent infections. However, the molecular mechanisms and strategies by which bacteria actively circumvent the immune response of the host remain poorly understood. Here, we identified CD14, the major co-receptor for lipopolysaccharide detection, on mouse dendritic cells (DCs) as a binding partner of FimH, the protein located at the tip of the type 1 pilus of Escherichia coli. The FimH amino acids involved in CD14 binding are highly conserved across pathogenic and non-pathogenic strains. Binding of the pathogenic strain CFT073 to CD14 reduced DC migration by overactivation of integrins and blunted expression of co-stimulatory molecules by overactivating the NFAT (nuclear factor of activated T-cells) pathway, both rate-limiting factors of T cell activation. This response was binary at the single-cell level, but averaged in larger populations exposed to both piliated and non-piliated pathogens, presumably via the exchange of immunomodulatory cytokines. While defining an active molecular mechanism of immune evasion by pathogens, the interaction between FimH and CD14 represents a potential target to interfere with persistent and recurrent infections, such as urinary tract infections or Crohn’s disease.
 
 ## Introduction
 
@@ -34,9 +34,21 @@ Here, we asked whether type 1 pili play a role in manipulating host immunity and
 
 ## Results
 
-## Type 1 piliated UPECs inhibit T cell activation and proliferation by decreasing expression of co-stimulatory molecules on DCs
+### Type 1 piliated UPECs inhibit T cell activation and proliferation by decreasing expression of co-stimulatory molecules on DCs
 
 To study the influence of type 1 pili on the adaptive immune system, we genetically engineered bacteria with and without pili. The fim genes that produce the molecular components of the type 1 pilus are part of an operon on the E. coli chromosome (Figure 1A, B) whose expression is regulated by phase variation. We generated stable phase-locked bacterial mutants by locking the fim switch (fimS) either in the phase-ON orientation, resulting in constitutive expression of the type 1 pilus, or in the phase-OFF orientation, blocking expression of the pilus (hereafter simply termed ON and OFF, respectively). To achieve this, we deleted the 9-bp long recognition site for the site-specific recombinases FimB and FimE in the internal repeat region upstream of the fimS element in either orientation (Figure 1C). The presence and absence of type 1 pili was confirmed by electron microscopy and yeast agglutination assay (Figure 1D). Additionally, electron microscopy indicated the absence of any other pili, such as p fimbriae, under the chosen growth conditions since the OFF mutant appeared bald (Figure 1D).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78995/elife-78995-fig1-v2.jpg)
+
+**Figure 1.:** (A) Type 1 pili genes are expressed from the fim operon. Phase variation of the fim switch (fimS) harboring fimA promoter (pfimA) drives expression. fimB and fimE genes express site-specific recombinases, FimB and FimE, respectively, inverting the fimS region by binding to the inverted repeats (IR). (B) Type 1 pili consist of several repeating units of the rod protein FimA, two adaptor proteins FimF and FimG, and the tip protein FimH. Fimbrial- and a receptor-binding domain of the two-domain FimH protein are shown. FimD, outer membrane usher. FimC, chaperone. (C) Phase-locked mutants were generated by deleting the 9-bp recognition site for the site-specific recombinases in the left inverted repeat region of the fimS in either ON or OFF orientation by introducing FRT sites resulting in piliated and non-piliated bacteria (see Methods). (D) ON (left panel) and OFF mutants (right panel). Electron microscopy images, with zoomed in regions (white boxes) marked in inlays, and yeast agglutination assay. (E) Dot plot of CD69 and CD62L expression on T cells after co-culture with ON (black) and OFF (gray) stimulated DCs (left panel). Quantification of CD69+ CD62L− T cell frequencies (right panel) (four biological replicates). (F) CFSE (carboxyfluorescein succinimidyl ester) dilution profile of T cells after 96 hr of co-culture with ON (black) and OFF (gray) stimulated wild-type (WT) DCs (left). Quantification of T cells in division (right panel) (four biological replicates). (G) Expression level of co-stimulatory molecules (CD40, CD80, and CD86) of WT DCs after stimulation with ON (black) and OFF (gray) (left panel; iso – isotype control). Quantification of median fluorescence values of co-stimulatory molecules (right panel) (three biological replicates). *p < 0.1, ***p < 0.01, ****p < 0.001 by Student’s t-test; data are represented as means ± standard deviation (SD).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78995/elife-78995-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Upon stimulation with recombinant lipopolysaccharide (LPS) (200 ng/ml) immature DCs change to a mature phenotype and cluster together (see cells highlighted in inlay). (B) In vitro generated iCD103 DCs express CD103, Clec9A, and CD14. (C) Differentiated DCs after ON (black) and OFF (gray) stimulation are defined by expression of CD11c integrin (DC marker) and upregulation of MHCII (activation marker) (left panel). Quantification of differentiated DCs after ON (black) and OFF (gray) stimulation (right panel) (three biological replicates). (D) Histograms of MHCII of wild-type (WT) DCs after stimulation with ON (black) and ON ΔfimH mutants (gray) (left panel; iso – isotype control). Quantification of median fluorescence values of MHCII (right panel) (three biological replicates). ns, not significant, *p < 0.1, **p < 0.05 by Student’s t-test; data are represented as means ± standard deviation (SD).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/78995/elife-78995-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Doubling time of ON and OFF bacteria in R10H20. (B) MIC to gentamicin for ON and OFF bacteria (MIC = 1.5 µg/ml; 5× MIC was used in the infection assays after 1 hr of co-culture of bacteria and dendritic cells [DCs]). ns, not significant, **p < 0.05 by Student’s t-test; data are represented as means ± standard deviation (SD).
 
 Since the adaptive immune response seems to be limited during persistent or recurring infections (Magalhaes et al., 2007), such as recurring bladder infections (Abraham and Miao, 2015), we asked if activation and proliferation of naive T cells in vitro is altered upon stimulating DCs with the genetically constructed UPEC ON or OFF mutants. The activation of ovalbumin (OVA) specific CD4+ T cells (Banchereau and Steinman, 1998), as assessed by CD69 receptor upregulation and CD62L receptor downregulation, was massively reduced when DCs were stimulated with OVA and UPEC ON bacteria, compared to OVA and UPEC OFF bacteria (Figure 1E). Accordingly, the number of proliferating T cells was also strongly decreased (Figure 1F).
 
@@ -44,11 +56,19 @@ DC differentiation and maturation, read out with surface levels of CD11c and MHC
 
 These data suggest that type 1 piliated UPECs prevent effective activation of the adaptive immune response by decreasing surface expression of co-stimulatory molecules on DCs and thus restrict their ability to activate T cells.
 
-## Type 1 piliated UPECs decrease DC migratory capacity and increase T cell contact times by triggering integrin activation
+### Type 1 piliated UPECs decrease DC migratory capacity and increase T cell contact times by triggering integrin activation
 
 Beyond presentation of antigen together with co-stimulatory factors, two additional cell biological parameters are essential for the priming of T cells. First, DCs have to migrate from the site of antigen encounter and uptake (usually peripheral tissues) to the site of antigen presentation (e.g., lymph nodes), where they meet T cells. This migration step is fully dependent on directional guidance via chemokines, but largely independent of adhesive interactions with the extracellular matrix (Lämmermann et al., 2008). Second, T cells have to physically interact with DCs in order to probe their surface for antigen presentation and co-stimulation, meaning that contact dynamics between DCs and T cells are essential parameters determining T cell activation and proliferation (Bousso, 2008).
 
 We first investigated DC–T cell contacts using live cell microscopy and found that UPEC ON bacteria, compared to OFF bacteria, increased the antigen specific contact times between DCs and naive CD4+ T cells. Even after 6 hr of co-culture, a large fraction of T cells was unable to dissociate from DCs (Figure 2A). This was specific to antigen-bearing DCs, as in the absence of OVA contact times were short and indistinguishable between ON and OFF stimulation. Activation of β2 integrins, specifically CD11b, on DCs was shown to increase the duration of cell–cell contacts by binding to its counter receptor ICAM-1 on T cells, leading to a decrease in the activation of T cells (Varga et al., 2007). We therefore tested if the activation status of CD11b on DCs was affected after stimulation with ON bacteria. We analyzed total and active levels of CD11b using the activation-independent antibody M1/70 and CBRM1/5 antibody, which recognizes the active conformation of CD11b (Oxvig et al., 1999 and Figure 2—figure supplement 1A). We found that UPEC ON stimulation shifted CD11b to the active conformation when compared to UPEC OFF or LPS stimulation (Figure 2B and Figure 2—figure supplement 1A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/78995/elife-78995-fig2-v2.jpg)
+
+**Figure 2.:** (A) Interaction time between ON and OFF stimulated DCs and T cells in the presence and absence of ovalbumin (OVA) peptide (two biological replicates). (B) Histograms of active and total CD11b integrin after ON (black) and OFF (gray) stimulation of DCs (left panel; iso – isotype control). Quantification of CD11b activity (active/total levels of CD11b) (right panel) (three biological replicates). (C) Adhesion assay of wild-type (WT) DCs after ON and OFF stimulation (left panel). Quantification of fluorescence signals, proxy for adherent cells, after ON (black) and OFF (gray) stimulation of WT and Itgb2−/− DCs (right panel) (five biological replicates) (see also Figure 2—figure supplement 1). (D) Extracellular matrix (ECM) migration assay of WT DCs after ON and OFF stimulation (left panel). Quantification of individual cells outside of cell cluster (right panel) (three biological replicates). (E) Ear crawl-out assay of WT DCs after ON and OFF stimulation. Endogenous DCs stained with anti-MHCII (magenta). Lymph vessels stained with anti-LYVE-1 (white) (left panel). Ratios of fluorescent signal inside and outside of lymph vessel after ON (black) and OFF (gray) stimulation of WT and Itgb2−/− DCs (right panel) (three biological replicates) (see also Figure 2—figure supplement 1). (F) Quantification of median fluorescence values of co-stimulatory molecules (CD40, CD80, and CD86) of Itgb2−/− DCs after stimulation with ON (black) and OFF (gray) (three biological replicates) (see also Figure 2—figure supplement 1). (G) Quantification of T cells in division after co-culture with Itgb2−/− DCs (three biological replicates) (see also Figure 2—figure supplement 1). ns, not significant, **p < 0.05, ***p < 0.01, ****p < 0.001 by one-way analysis of variance (ANOVA) followed by Dunnett’s multiple comparisons (A, C, and E) and by Student’s t-test (B, D, F, and G); data are represented as means ± standard deviation (SD).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78995/elife-78995-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Expression level of active and total CD11b integrin of wild-type (WT) dendritic cells (DCs) after lipopolysaccharide (LPS) plus Mn2+ stimulation (black) and LPS only stimulation (gray) (left panel; iso – isotype control). Quantification of CD11b integrin activity (active/total levels of CD11b) (right panel) (three biological replicates). (B) Adhesion assay of Itgb2−/− DCs after ON and OFF stimulation (quantification see Figure 2C). (C) Migration speed of adherent WT DCs in uniform CCL19 gradient (three biological replicates – ON 16 cells, OFF 8 cells). (D) Expression level of active and total β1 integrin after ON (black) and OFF (gray) stimulation of WT and Itgb2−/− DCs (left panel; iso – isotype control). Quantification of β1 integrin activity (active/total levels of CD11b) (right panel) (three biological replicates). It should be noted, that β1 integrin activity after UPEC ON stimulation of Itgb2−/− DCs might be artificially increased due to a slight decrease in total β1 integrin staining after ON stimulation. (E) Ear crawl-out assay of Itgb2−/− DCs after ON and OFF stimulation. Endogenous DCs stained with anti-MHCII (magenta). Lymph vessels stained with anti-LYVE-1 (white) (left panel) (quantification see Figure 2E). (F) 3D collagen migration assay of WT DCs after stimulation with ON (black) and OFF (gray) (three biological replicates). (G) Expression level of co-stimulatory molecules (CD40, CD80, and CD86) of Itgb2−/− DCs after stimulation with ON (black) and OFF (gray) (iso – isotype control) (quantification see Figure 2F). (H) CFSE dilution profile of T cells after 96 hr of co-culture with ON (black) and OFF (gray) stimulated Itgb2−/− DCs (quantification see Figure 2G). ns, not significant, **p < 0.05, ****p < 0.001 by one-way analysis of variance (ANOVA) followed by Dunnett’s multiple comparisons (D) and by Student’s t-test (A, C, and F); data are represented as means ± standard deviation (SD).
 
 In line with the finding that type 1 piliated UPEC enhanced CD11b activity, ON bacteria triggered tight adhesion of DCs to serum-coated surfaces (Figure 2C). Similar to the stabilized cell–cell contacts, this surface immobilization was integrin mediated, as for β2 integrin knockout DCs the differential adhesion was lost (Figure 2C and Figure 2—figure supplement 1B). (Notably, β2 integrin-deficient DCs showed increased β1 integrin-mediated background binding [Figure 2—figure supplement 1D].) In line with their excessive surface immobilization, ON stimulated DCs were largely immobile on 2D surfaces and migratory speed was reduced compared to OFF stimulated DCs (Figure 2—figure supplement 1C). Next, we performed in vitro migration assays where DCs migrate in 3D cell-derived matrices (Kaukonen et al., 2017) and found diminished migration after stimulation with ON bacteria (Figure 2D). The same effect on the migratory capacity we observed in ear crawl-out assays where endogenous skin DCs migrate within their physiological tissue in situ (Stösel et al., 1997). Here, the ventral halves of explanted mouse ears were repeatedly exposed to either UPEC ON or OFF bacteria during 48 hr. After stimulation with ON bacteria, fewer endogenous DCs were found inside lymph vessels as compared to OFF stimulation (Figure 2E). In ears harvested from β2 knockout mice the migration defect was rescued and similar levels of Itgb2−/− DCs migrated into the lymph vessels after ON and OFF stimulation (Figure 2E and Figure 2—figure supplement 1E).
 
@@ -58,13 +78,33 @@ Finally, we asked if activation of β2 integrins maps upstream of the observed d
 
 Taken together, type 1 piliated UPEC increase integrin activity on DCs, leading to increased cell–cell and cell–matrix attachment. This causes prolonged interaction times with T cells and impaired migratory capacity. Together, with the above finding of reduced co-stimulatory molecule expression, these data demonstrate that type 1 piliated UPEC target three functional hallmarks of DCs that are critical for the activation of naive T cells: (1) migration to the lymph node, (2) the physical interaction with T cells, and (3) the expression of co-stimulatory molecules.
 
-## The GPI-anchored glycoprotein CD14 binds FimH, making it a novel target for type 1 pili
+### The GPI-anchored glycoprotein CD14 binds FimH, making it a novel target for type 1 pili
 
 To find the interaction partner for type 1 pili on host cells, we first investigated the role of the major immune cell receptor TLR4 which was previously suggested as a receptor for the FimH protein of type 1 pili (Mossman et al., 2008). We analyzed Tlr4–/– DCs after stimulation with UPEC ON bacteria and found that both adhesion and migration followed the pattern of ON stimulated WT cells (Figure 3A, B and Figure 3—figure supplement 1A, B). Next, we analyzed expression of co-stimulatory molecules on Tlr4−/− DCs. It was previously shown that Tlr4−/− DCs express reduced levels of co-stimulatory molecules (Shen et al., 2008) and this was also true for our in vitro generated Tlr4−/− DCs, which hardly expressed any CD40 when compared to the isotype control level (Figure 3—figure supplement 1C). Importantly, CD80 and CD86 expression was still reduced after ON stimulation when compared to OFF stimulation (Figure 3C and Figure 3—figure supplement 1C). Therefore, our results, together with recent findings in Salmonella (Uchiya et al., 2019), suggest that other receptors besides TLR4 serve as molecular targets of type 1 pili.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/78995/elife-78995-fig3-v2.jpg)
+
+**Figure 3.:** (A) Adhesion assay of Tlr4−/− dendritic cells (DCs). Quantification of fluorescence signal after ON (black) and OFF (gray) stimulation (five biological replicates) (see also Figure 3—figure supplement 1). (B) Ratios of fluorescent signal inside and outside of lymph vessel after ON (black) and OFF (gray) stimulation Tlr4−/− DCs (two biological replicates) (see also Figure 3—figure supplement 1). (C) Quantification of median fluorescence values of co-stimulatory molecules (CD40, CD80, and CD86) on Tlr4−/− DCs stimulated with ON (black) and OFF (gray) (three biological replicates) (see also Figure 3—figure supplement 1). (D) Quantification of the adhesion assay of Cd14−/− DCs after ON (black) and OFF (gray) stimulation (six biological replicates) (see also Figure 3—figure supplement 1). (E) Ratios of fluorescent signal inside and outside of lymph vessel after ON (black) and OFF (gray) stimulation Cd14−/− DCs (three biological replicates) (see also Figure 3—figure supplement 1). (F) Quantification of median fluorescence values of co-stimulatory molecules (CD40, CD80, and CD86) on Cd14−/− DCs stimulated with ON (black) and OFF (gray) (three biological replicates) (see also Figure 3—figure supplement 1). (G) Cytokine production of ON (black) and OFF (gray) stimulated DCs. Normalized signal intensities of TLR4-dependent cytokines are shown (three biological replicates). (H) Receptor endocytosis on wild-type (WT) DCs stimulated with ON (black) and OFF (gray). CD14 receptor (solid lines) was stained on DCs fixed at indicated time points. CD64 receptor (dashed lines) served as endocytosis control (three biological replicates). (I) Quantification of CD11b activity (active/total levels of CD11b) of Cd14−/− DCs stimulated with ON (black) and OFF (gray) (three biological replicates) (see also Figure 3—figure supplement 1). ns, not significant, **p < 0.05, ***p < 0.01 by Student’s t-test; data are represented as means ± standard deviation (SD).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78995/elife-78995-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Adhesion assay of Tlr4−/− dendritic cells (DCs) after ON and OFF stimulation (quantification see Figure 3A). (B) Ear crawl-out assay of Tlr4−/− DCs after ON and OFF stimulation. Endogenous DCs stained with anti-MHCII (magenta). Lymph vessels stained with anti-LYVE-1 (white) (quantification see Figure 3B). (C) Expression level of co-stimulatory molecules (CD40, CD80, and CD86) of Tlr4−/− DCs after stimulation with ON (black) and OFF (gray) (iso – isotype control) (quantification see Figure 3C). (D) Adhesion assay of Cd14−/− DCs after ON and OFF stimulation (quantification see Figure 3D). (E) Ear crawl-out assay of Cd14−/− DCs after ON and OFF stimulation. Endogenous DCs stained with anti-MHCII (magenta). Lymph vessels stained with anti-LYVE-1 (white) (quantification see Figure 3E). (F) Expression level of co-stimulatory molecules (CD40, CD80, and CD86) of Cd14−/− DCs after stimulation with ON (black) and OFF (gray) (iso – isotype control) (quantification see Figure 3F). (G) Cytokine production of ON (black) and OFF (gray) stimulated Cd14−/− DCs. Normalized signal intensities of TLR4-dependent cytokines are shown (three biological replicates). (H) Interferon-alpha 1 production of ON (black) and OFF (gray) stimulated wild-type (WT) DCs. (I) Histograms of active and total CD11b integrin Cd14−/− DCs after ON (black) and OFF (gray) stimulation of DCs (iso – isotype control) (quantification see Figure 3I). ns, not significant by Student’s t-test; data are represented as means ± standard deviation (SD).
 
 We next focused on CD14, a GPI-anchored glycoprotein and co-receptor of TLR4, since a strong correlation has been reported between CD14 expression, integrin activity, and cell adhesion (Wright et al., 1991). We performed adhesion and crawl-out migration assays stimulating Cd14−/− DCs with UPEC ON and OFF bacteria, and found that both DC functions were fully restored (Figure 3D, E and Figure 3—figure supplement 1D, E). Additionally, Cd14−/− DCs showed almost full rescue of co-stimulatory molecules after ON stimulation, compared to OFF stimulation, with only CD40 still slightly affected (Figure 3F and Figure 3—figure supplement 1F). Importantly, TLR4-dependent cytokines, such as IL-6, TNF-α, and the interferon-stimulated CCL5 (Ciesielska et al., 1999), were not different between ON and OFF stimulated WT DCs (Figure 3G) or Cd14−/− DCs (Figure 3—figure supplement 1G). Thus, the absence of CD14 did not inhibit DC activation by the bacteria and binding of FimH to CD14 did not inhibit the LPS-induced function of CD14 upon exposure to bacteria. Next, we asked if CD14 endocytosis or canonical CD14 downstream targets were altered upon ON stimulation. We could not detect any interferon-alpha 1 expression, regardless of the bacterial stimulus (Figure 3—figure supplement 1H) and ON bacteria did not inhibit internalization or synthesis of CD14 when compared to OFF bacteria (Figure 3H). Given these results, we assume that binding of FimH to CD14 does not alter the signaling capacity of CD14 to drive interferon-dependent responses upon LPS encounter. Finally, although integrin activity was reduced in Cd14−/− DCs (Figure 3I and Figure 3—figure supplement 1I), UPEC ON bacteria still slightly increased CD11b activity on Cd14−/− cells when compared to UPEC OFF bacteria, showing that as opposed to downregulated co-stimulators, integrin activation did not strictly depend on the presence of CD14.
 
 We next asked how type 1 pili interact with the CD14 receptor. In silico protein–protein docking analysis predicted strong binding of −56.98 kcal/mol between FimH (PDB: 6GTV; Sauer et al., 2019) and CD14 (PDB: 1WWL; Kim et al., 2005, Supplementary file 1; Supplementary file 3), which is stronger than the −49.81 kcal/mol between FimH and TLR4 (PDB: 3VQ2; Ohto et al., 2012) or the −35.55 kcal/mol for CD48 (PDB: 2PTV; Velikovsky et al., 2007), another FimH receptor (McArdel et al., 2016; Supplementary file 3). Binding sites in FimH were located in its N-terminal domain and in CD14 within the central region of the crescent shaped monomer, in an area not overlapping with the LPS-binding region (Kim et al., 2005; Figure 4A and Supplementary file 4).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/78995/elife-78995-fig4-v2.jpg)
+
+**Figure 4.:** (A) In silico protein–protein docking analysis for FimH and CD14 (see also Supplementary files 1 and 3). FimH is shown in dark gray and CD14 in light gray. Surface plot of docked proteins from the view of CD14 on the membrane of the cell is shown. GPI proximal domain, lipopolysaccharide (LPS)- and receptor-binding domains are indicated. Top 10 amino acids predicted to interact during the binding are highlighted in blue for FimH and magenta for CD14 (most amino acids are buried inside the surface plot). (B) Microscopy images of bead-binding assay. ON or ON ΔfimH mutants expressing a constitutive yfp fluorescent marker bound to CD14-coupled or uncoupled beads are shown. (C) Flow cytometry analysis of bead-binding assay. Histogram of fluorescence events in the bacteria gate (left panel). Uncoupled beads (dashed black), ON bacteria bound to uncoupled beads (yellow), ON bacteria bound to CD14-coupled beads (black), ON ΔfimH mutants bound to CD14-coupled beads (gray). Quantification of fluorescent events in the bacterial gate (right panel) (three biological replicates) (gating strategy see Figure 4—figure supplement 2). (D) Type 1 pili extracts and dot blot assay. Electron microscopy images of type 1 pili extracts from ON bacteria (upper panel). Dot blot assay of type 1 pili extracts with biotinylated CD14 (lower panel). Pre-blotted biotinylated CD14 served as positive control. Bound CD14 was visualized with streptavidin–HRP antibody. (E) Quantification of fluorescence signals, proxy for adherent dendritic cells (DCs), after ON (black) and ON ΔfimH (gray) stimulation (five biological replicates) (see also Figure 4—figure supplement 1). ON data are the same as in Figure 2C. (F) Quantification of median fluorescence values of co-stimulatory molecules (CD40, CD80, and CD86) on wild-type (WT) DCs stimulated with ON (black) and ON ΔfimH mutants (gray) (three biological replicates) (see also Figure 4—figure supplement 1). ON data are the same as in Figure 1G. (G) Quantification of median fluorescence values of co-stimulatory molecules (CD40, CD80, and CD86) on WT DCs stimulated with ON (black) or ON after pre-treatment of DCs with 50 mM FK506 for 20 min prior to infection (green) (see also Figure 4—figure supplement 1). ON data are the same as in Figure 1G. (H) Cytokine production of ON (black) and OFF (gray) stimulated WT DCs, WT DCs pretreated with FK506 and Cd14−/− DCs. Normalized signal intensities of NFAT-dependent cytokines are shown (three biological replicates). (I) Schematic of uropathogenic E. coli (UPEC) binding to DCs. Type 1 piliated UPEC bind to CD14 receptor via FimH and LPS. LPS binding stimulates CD14 endocytosis and NF-κB-dependent cytokine expression (TNF-α, IL-6, CCL5, etc.) stimulating DC maturation. FimH binding stimulates NFAT pathway and expression of immune-modulatory cytokines (GM-CSF, IL-3, IL-4, IL-10, etc.). ns, not significant, **p < 0.05, ****p < 0.001 by one-way analysis of variance (ANOVA) followed by Dunnett’s multiple comparisons (C) and by Student’s t-test (E–H); data are represented as means ± standard deviation (SD).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78995/elife-78995-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Electron microscopy images, with zoomed in regions marked in inlays, (left panel) and yeast agglutination assay (right panel) of ON ΔfimH mutant. (B) Adhesion assay of dendritic cells (DCs) after ON ΔfimH stimulation (quantification see Figure 4E). (C) Expression level of co-stimulatory molecules (CD40, CD80, and CD86) of wild-type (WT) DCs after stimulation with ON (black) and ON ΔfimH mutants (gray) (iso – isotype control) (quantification see Figure 4F). (D) Expression level of co-stimulatory molecules (CD40, CD80, and CD86) of WT DCs after stimulation with ON (black) or ON after pre-treatment of DCs with 50 mM FK506 for 20 min prior to infection (green) (iso – isotype control) (quantification see Figure 4G).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/78995/elife-78995-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Coupling of recombinant CD14-Fc to the magnetic Protein A beads was confirmed by staining with anti-CD14 antibody (dashed black – uncoupled beads, solid black – CD14-coupled beads). (B) The scatter properties for the bead assay were defined by FSC and SSC properties of the bacteria (left panel). The yfp fluorescence signal of ON (black) and ON ΔfimH (gray) in the bacteria gate was used to define the fluorescent properties for analysis (right panel). (C) Events (beads ± bacteria) in FSC and SSC were recorded and are shown as dot plots. The bacteria gate as defined in A is shown.
 
 Since CD14 of mouse (PDB: 1WWL) and human (PDB: 4GLP; Kelley et al., 2013) have highly similar secondary structures, but differ in their amino acid sequence (Kelley et al., 2013), we performed docking analysis with human CD14. Predicted strong binding of FimH (−55.95 kcal/mol) was conserved in similar regions of both proteins but mediated by different amino acids (Supplementary file 3 and Supplementary file 5). This indicates that the difference in amino acid sequence between mouse and human CD14 is negligible for the otherwise conserved binding between FimH of type 1 pili and CD14.
 
@@ -78,23 +118,43 @@ Finally, we were interested in the molecular mechanism(s) triggered upon FimH bi
 
 Based on these experimental observations, we propose the following model of interaction between FimH on UPECs and CD14 on DCs (Figure 4I): CD14 directly binds FimH on the tip of type 1 pili, leading to overactivation of the NFAT pathway and increased expression of immunomodulatory cytokines, such as GM-CSF, IL-3, IL-4, and IL-10. LPS-induced activation of CD14 is not affected by FimH binding, leaving CD14 endocytosis and expression of proinflammatory cytokines, such as TNF-α, IL-6, and CCL5, unaltered.
 
-## FimH amino acids predicted to bind are highly conserved and are partially located in the mannose-binding domain
+### FimH amino acids predicted to bind are highly conserved and are partially located in the mannose-binding domain
 
 The two-domain FimH protein consists of a receptor-binding domain and a pili-binding domain (Choudhury et al., 1999). The receptor-binding domain does not only interact with host receptors, such as Uroplakin 1a on bladder epithelial cells, but also highly specifically binds D-mannose which due to its specific interaction has been used in the treatment of UTIs (Wiles et al., 2008). The amino acids responsible for binding mannose are located in the mannose-binding pocket (P1, N46, D47, D54, Q133, N135, D140, and F142; Supplementary file 4; Hung et al., 2002) and the tyrosine gate (Y48, I52, and Y137; Supplementary file 4; Touaibia et al., 2017). These residues are highly conserved among pathogenic and non-pathogenic E. coli strains (Figure 5A), whereas other amino acids that affect the flexibility of the FimH protein and therefore facilitate host colonization, were found to be mutated in pathogenic E. coli (Chen et al., 2009; Sokurenko et al., 1998; Kalas et al., 2017). Interestingly, the most important amino acids of FimH we predicted to be responsible for binding to CD14 are highly conserved among several different E. coli strains, irrespective of their pathogenicity (Figure 5A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/78995/elife-78995-fig5-v2.jpg)
+
+**Figure 5.:** (A) Receptor-binding domain of FimH from different E. coli strains is shown (uropathogenic E. coli [UPEC]: CFT073, UTI89, 536, NU14, EPEC: O55:H7; non-pathogenic; K-12, BL21-DE3, E. coli W). The top 10 amino acids on FimH showing strongest binding energy toward mouse CD14 (PDB: 1WWL) are shown in pink and toward human CD14 (PDB: 4GLP) are shown in orange. Amino acids I13, P12, and F42 are involved in both, mouse and human CD14, and therefore only shown in pink. Amino acids located in mannose-binding pocket and tyrosine gate are shown in gray. Amino acids I13, Y48, I52, Y137, and F142 are involved in mannose and CD14 binding and therefore only shown in pink. Common pathoadaptive mutations that differ between UPEC and non-pathogenic E. coli are shown in black. Amino acids mutated to generate FimH amino acid mutants were Y48 (binding energy −4.29 kcal/mol), T99 (binding energy −4.92 kcal/mol), and R98 (binding energy −7.23 kcal/mol) (see also Supplementary files 3 and 5). (B) Bead-binding assay of FimH amino acid mutants. Quantification of fluorescent events in the bacterial gate of ON (black), ON ΔfimH mutants (gray), and FimH amino acid mutants Y48A (blue), T99A (violet), R98A (green), and Y48A R98A T99A (yellow) (three biological replicates) (see also Figure 5—figure supplement 2). ON and ON ΔfimH data are the same as in Figure 4C. (C) Quantification of median fluorescence values of co-stimulatory molecules (CD40, CD80, and CD86) of wild-type (WT) dendritic cells (DCs) after stimulation with ON (black), ON ΔfimH mutants (gray), and FimH amino acid mutants Y48A (blue), T99A (violet), R98A (green), and Y48A R98A T99A (yellow) (three biological replicates) (see also Figure 5—figure supplement 2). ON and ON ΔfimH data are the same as in Figure 4F. ns, not significant, *p < 0.1, **p < 0.05, ***p < 0.01, ****p < 0.001 by one-way analysis of variance (ANOVA) followed by Dunnett’s multiple comparisons (the mean of the data were compared to the mean of ON); data are represented as means ± standard deviation (SD).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78995/elife-78995-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Yeast agglutination assay non-pathogenic ON mutant with pathogenic fimH (ON fimHCFT073). (B) Quantification of fluorescence signals, proxy for adherent dendritic cells (DCs), after ON (black) and ON fimHCFT073 (gray) stimulation of wild-type (WT) DCs (five biological replicates). (C) Expression levels of co-stimulatory molecules (CD40, CD80, and CD86) of WT DCs after stimulation with non-pathogenic ON (black) and non-pathogenic ON fimHCFT073 mutants (gray) (left panel; iso – isotype control). Quantification of median fluorescence values of co-stimulatory molecules (right panel) (three biological replicates). (D) Quantification of fluorescence signals, proxy for adherent DCs, after ON (black) and OFF (gray) stimulation of WT DCs with UPEC strain UTI89 and 536 (three biological replicates). (E) Expression levels of co-stimulatory molecules (CD40, CD80, and CD86) of WT DCs after stimulation with UTI89 ON (black) and OFF (gray) (left panel; iso – isotype control). Quantification of median fluorescence values of co-stimulatory molecules of WT DCs after stimulation with UTI89 ON (black) and OFF (gray) (three biological replicates). (F) Expression levels of co-stimulatory molecules (CD40, CD80, and CD86) of WT DCs after stimulation with 536 ON (black) and OFF (gray) (left panel; iso – isotype control). Quantification of median fluorescence values of co-stimulatory molecules of WT DCs after stimulation with 536 ON (black) and OFF (gray) (three biological replicates). ns, not significant, **p < 0.05, ***p < 0.01, ****p < 0.001 by Student’s t-test, data are represented as means ± standard deviation (SD).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/78995/elife-78995-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Bead-binding assay with amino acid mutants. Fluorescence events in the bacteria gate of ON (black), ON ΔfimH (gray), Y48A (blue), T99A (violet), R98A (green), and Y48A R98A T99A (yellow) and uncoupled beads (dashed black) (quantification see Figure 5B). (B) Expression level of co-stimulatory molecules (CD40, CD80, and CD86) of wild-type (WT) dendritic cells (DCs) after stimulation with ON (black), ON ΔfimH (gray), Y48A (blue), T99A (violet), R98A (green), and Y48A R98A T99A (yellow) (iso – isotype control) (quantification see Figure 5C).
 
 To verify the significance of these residues for binding to CD14, we introduced mutations into the three most important amino acids. We exchanged amino acids R98 (binding energy −7.23 kcal/mol), T99 (binding energy −4.92 kcal/mol), and Y48 (binding energy −4.29 kcal/mol) individually to alanine or all three at the same time creating a triple mutant. All four FimH mutants were still able to bind to CD14-coupled beads and only the triple mutant showed a more pronounced decrease in binding (Figure 5B and Figure 5—figure supplement 2A). Stimulating DCs with the FimH amino acid mutants showed partial rescue for co-stimulatory molecule expression levels (Figure 5C and Figure 5—figure supplement 2B). This suggests that not only these individual amino acids mediate binding to CD14, but most likely several other amino acids are involved, and thus the supporting secondary structure of FimH as a whole is important for the interaction.
 
 Since Y48 and other identified FimH amino acids with weaker binding energies for CD14 (Supplementary file 4) are located in the mannose-binding pocket, we were interested whether FimH antagonists, such as D-mannose or the low molecular weight mannose derivate M4284 (Schönemann et al., 2019), disrupt the interaction. Additionally, we tested a blocking CD14 antibody (M14-23) (Tsukamoto et al., 2010) for its ability to inhibit binding of FimH to CD14. Our experiments showed that 175 µM D-mannose was not sufficient to block binding of UPEC ON bacteria to CD14, whereas 1 mM D-mannose and M4284 at 10 µM were able to inhibit binding of ON bacteria to CD14-coupled beads (Figure 6A and Figure 6—figure supplement 1A). The blocking CD14 antibody reduced bacteria binding to beads by roughly 25% but was the most effective at rescuing expression of co-stimulatory molecules on DCs among all tested components (Figure 6B and Figure 6—figure supplement 1B). Thus, existing FimH antagonists as well as blocking CD14 antibodies interfere with the immunomodulatory action of type 1 piliated pathogens and might be candidates for treating recurring or persistent infections.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/78995/elife-78995-fig6-v2.jpg)
+
+**Figure 6.:** (A) Bead-binding assay of ON bacteria in the presence of FimH antagonists and blocking CD14 antibody. Quantification of fluorescent events in the bacterial gate of ON (black), ON ΔfimH mutants (gray), 175 µM D-mannose (blue), 1 mM D-mannose (yellow), 10 µM M4284 (green), and 20 µg/ml M14-23 antibody (violet) (three biological replicates) (see also Figure 6—figure supplement 1). ON and ON ΔfimH data are the same as in Figure 4E. (B) Quantification of median fluorescence values of co-stimulatory molecules (CD40, CD80, and CD86) of wild-type (WT) DCs after stimulation with ON (black), ON ΔfimH mutants (gray), and ON stimulation in the presence of 175 µM D-mannose (blue), 1 mM D-mannose (yellow), 10 µM M4284 (green), and 20 µg/ml M14-23 antibody (violet) (three biological replicates) (see also Figure 6—figure supplement 1). ON and ON ΔfimH data are the same as in Figure 4H. (C) CFSE dilution profile of T cells after 96 hr of co-culture with ON (black) and ON in the presence of 20 µg/ml M14-23 antibody (violet) stimulated WT DCs (left panel). Quantification of T cells in division (right panel) (three biological replicates). ns, not significant, *p < 0.1, **p < 0.05, ***p < 0.01, ****p < 0.001 by one-way analysis of variance (ANOVA) followed by Dunnett’s multiple comparisons (A, B); the mean of the data were compared to the mean of ON and by Student’s t-test (C); data are represented as means ± standard deviation (SD).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/78995/elife-78995-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Bead-binding assay with amino acid mutants. Fluorescence events in the bacteria gate of ON (black), ON ΔfimH mutants (gray), and ON stimulation in the presence of 175 µM D-mannose (blue), 1 mM D-mannose (yellow), 10 µM M4284 (green), and 20 µg/ml M14-23 antibody (violet) and uncoupled beads (dashed black) (quantification see Figure 6A). (B) Expression level of co-stimulatory molecules (CD40, CD80, and CD86) of wild-type (WT) dendritic cells (DCs) after stimulation with ON (black), ON ΔfimH mutants (gray), and ON stimulation in the presence of 175 µM D-mannose (blue), 1 mM D-mannose (yellow), 10 µM M4284 (green), and 20 µg/ml M14-23 antibody (violet) (iso – isotype control) (quantification see Figure 6B).
+
 Finally, since the CD14 blocking antibody most efficiently rescued expression of co-stimulatory molecules (Figure 6B), we assayed its effect on T cell priming in vitro. Proliferation of T cells was strongly enhanced when DCs were treated with 20 µg/ml M14-23, while stimulated with UPEC ON bacteria as compared to ON stimulation only (Figure 6C). This confirms the importance of CD14 in the interaction of type 1 piliated UPEC with DCs, and clearly links the interaction of FimH with CD14 to the ability of DCs to mount a functional adaptive immune response.
 
-## Immunosuppression of DCs by type 1 piliated UPEC is not cell autonomous
+### Immunosuppression of DCs by type 1 piliated UPEC is not cell autonomous
 
 To test the importance of our in vitro findings in more physiological settings, we devised a series of in vivo experiments. We first performed in vivo T cell priming assays in mice by intravenous injection of CFSE labeled, OVA peptide-specific CD4 T cells, followed by footpad injections of either ON or OFF stimulated, OVA peptide loaded DCs and analyzed T cell proliferation by flow cytometry. We observed that the same fraction of T cells entered cell division when compared between ON and OFF stimulation. However, priming of T cells by ON stimulated DCs led to significantly fewer T cells in late divisions resulting in a reduced proliferation index, reminiscent of our in vitro findings (Figure 7A).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/78995/elife-78995-fig7-v2.jpg)
 
-**Figure 7.:** E. coli (UPEC) is not cell autonomous.(A) In vivo CFSE dilution profile of T cells after injection of ON (black) and OFF (gray) stimulated wild-type (WT) DCs (left panel). Quantification of T cells in division and the proliferation index (right panel) (three biological replicates). (B) Individual crawl-in assay of ON and OFF stimulated WT DCs. Ratios of fluorescent signal inside and outside lymph vessel after ON (black) and OFF (gray) stimulation. Exogenous DCs were stained with Oregon green (cyan) or TAMRA (Tetramethylrhodamine, magenta) and applied individually onto the ear sheets (six biological replicates). (C) Individual in vivo migration of WT DCs. Amount of DCs inside the popliteal lymph node after ON (black) and OFF (gray) stimulation. Exogenous DCs were stained with Oregon green and injected individually into the footpad of WT mice (six biological replicates). (D) Individual in vivo migration of WT DCs after treatment with blocking CD14 antibody. Amount of DCs inside the popliteal lymph node after ON stimulation (black) and ON stimulation in the presence of 20 µg/ml M14-23 antibody (violet). Exogenous DCs were stained with Oregon green and injected individually into the footpad of WT mice (seven biological replicates). (E) Mixed crawl-in assays. ON (black) and OFF (gray) stimulated cells were stained with either Oregon green (cyan) or TAMRA (magenta) and mixed in a 1:1 ratio before applying the cells onto the ear sheets (six biological replicates). (F) Mixed in vivo migration assays. ON (black) and OFF (gray) stimulated cells were stained with either Oregon green (cyan) or TAMRA (magenta) and mixed in a 1:1 ratio before injected into the footpad of WT mice (four biological replicates). ns, not significant, *p < 0.1, ***p < 0.01 by Student’s t-test; data are represented as means ± standard deviation (SD).Figure 7—source data 1.Figure 7—source data 2.Figure 7—source data 3.Figure 7—source data 4.Figure 7—source data 5.Figure 7—source data 6.
+**Figure 7.:** (A) In vivo CFSE dilution profile of T cells after injection of ON (black) and OFF (gray) stimulated wild-type (WT) DCs (left panel). Quantification of T cells in division and the proliferation index (right panel) (three biological replicates). (B) Individual crawl-in assay of ON and OFF stimulated WT DCs. Ratios of fluorescent signal inside and outside lymph vessel after ON (black) and OFF (gray) stimulation. Exogenous DCs were stained with Oregon green (cyan) or TAMRA (Tetramethylrhodamine, magenta) and applied individually onto the ear sheets (six biological replicates). (C) Individual in vivo migration of WT DCs. Amount of DCs inside the popliteal lymph node after ON (black) and OFF (gray) stimulation. Exogenous DCs were stained with Oregon green and injected individually into the footpad of WT mice (six biological replicates). (D) Individual in vivo migration of WT DCs after treatment with blocking CD14 antibody. Amount of DCs inside the popliteal lymph node after ON stimulation (black) and ON stimulation in the presence of 20 µg/ml M14-23 antibody (violet). Exogenous DCs were stained with Oregon green and injected individually into the footpad of WT mice (seven biological replicates). (E) Mixed crawl-in assays. ON (black) and OFF (gray) stimulated cells were stained with either Oregon green (cyan) or TAMRA (magenta) and mixed in a 1:1 ratio before applying the cells onto the ear sheets (six biological replicates). (F) Mixed in vivo migration assays. ON (black) and OFF (gray) stimulated cells were stained with either Oregon green (cyan) or TAMRA (magenta) and mixed in a 1:1 ratio before injected into the footpad of WT mice (four biological replicates). ns, not significant, *p < 0.1, ***p < 0.01 by Student’s t-test; data are represented as means ± standard deviation (SD).
 
 Next, we sought to determine whether the observed defect in T cell priming is due to a reduction in the numbers of ON stimulated DCs that arrive in the lymph node, the intrinsic T cell priming deficiency of ON stimulated DCs, or a combination of both. To this end, we first aimed to resolve the initial events of DC migration, interstitial migration and entry into the lymphatics by devising crawl-in assays where exogenously stimulated DCs are allowed to invade the lymph vessels of the ventral halves of untreated, explanted mouse ears. In line with our previous results, we found fewer ON compared to OFF stimulated DCs inside the lymph vessels (Figure 7B). Next, we aimed to resolve the later stage events of DC migration by in vivo migration assays, in which fluorescently labeled ON and OFF stimulated DCs were injected separately into hind footpads of mice and the total number of cells that arrived in the popliteal lymph node after 72 hr were assessed. Interestingly, we observed only slight reduction in the number of ON stimulated DCs in the lymph nodes compared to OFF stimulated ones (Figure 7C). Notably, antibody-mediated blockage of CD14 fully restored migration of ON stimulated DCs in vivo (Figure 7D). The alleviated effect at later time points, when DCs were exposed to inflamed tissue, indicated that non-cell autonomous factors can modulate the effect of piliated bacteria. We therefore mixed ON vs. OFF stimulated DCs, stained with different colors, and then either performed crawl-in assays or footpad injections (Figure 7E, F). Strikingly, we could no longer observe any differences in the migration of ON and OFF stimulated DCs. This result points toward a strong, non-cell autonomous effect where differentially stimulated DCs mutually affect their migratory capabilities and thus average the binary response observed at the single-cell level, most likely due to exchange of immunomodulatory cytokines (Figure 4H). Interestingly, similar non-cell autonomous behavior of DCs integrating information at the population rather than the single-cell level was recently reported in the context of antiviral responses. Here, a quorum of sensed stimuli governed the activation of DCs via secreted cytokines (Bardou et al., 2021).
 
@@ -112,31 +172,233 @@ Although opportunistic pathogens continuously circulate in humans as asymptomati
 
 ## Methods
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## Animals
+#### Animals
 
 Mice were bred and maintained at the local animal facility in accordance with the IST Austria ethics commission. All experiments were conducted in accordance with the Austrian law for animal experiments. Permission (BMWFW-66.018/0010-WF/V/3b/2016) was granted by the Austrian federal ministry of science, research, and economy.
 
-## Cell culture
+#### Cell culture
 
 R10 medium, RPMI 1640 + 10% FCS (fetal calf serum), 2 mM L-glutamine, 50 µM beta-mercaptoethanol, 100 U/ml penicillin, and 100 µg/ml streptomycin, was used as basic medium. Stem cell medium was supplemented with 10 ng/ml IL-3, 20 ng/ml IL-6% and 1% stem cell factor (SCF) supernatant produced by B16 melanoma cells. Hoxb8 medium was supplemented with 125 ng/ml Flt3 and 1 µM estradiol. iCD medium was supplemented with 2 ng/ml GM-CSF and 75 ng/ml Flt3. GM-CSF and Flt3 supernatants were produced by hybridoma cells and concentration of cytokines was measured by enzyme-linked immunosorbent assay (ELISA). All media were used pre-warmed. Cells were grown routinely at 37°C with 5% CO2. For infection and subsequent assays, cells were cultured in R10 medium without antibiotics and buffered with 20 mM HEPES (4-(2-hydroxyethyl)-1-piperazineethanesulfonic acid) (R10H20) in the absence of CO2.
 
-## WT, Itgb2−/−, Tlr4−/−, and Cd14−/− Hoxb8 cell generation
+#### WT, Itgb2−/−, Tlr4−/−, and Cd14−/− Hoxb8 cell generation
 
 Five-week-old WT C57BL/6J, Itgb2−/− (B6.129S7-Itgb2tm1Bay/J), Tlr4−/− (B6(Cg)-Tlr4tm1.2Karp/J), and Cd14−/− (B6.129S4-Cd14tm1Frm/J) mice were obtained from the Jackson Laboratory. Immortalization of bone marrow cells was performed as described previously (Leithner et al., 2018; Redecke et al., 2013). In brief, bone marrow was isolated from the femur and tibia by centrifugation and cells were precultured in stem cell medium for 3 days to enter the cell cycle. 1 × 105 cells were spin infected with Hoxb8-MSCV retrovirus using lipofectamine at 1000 × g for 1 hr in Hoxb8 medium. Cells were fed and split every few days for 3–4 weeks until all uninfected cells died off and only Hoxb8 infected, immortalized, cells were left.
 
-## DC differentiation
+#### DC differentiation
 
 iCD103 DCs, expressing CD103, were differentiated from Hoxb8 progenitor cells as described previously for bone marrow cells with minor modifications (Mayer et al., 2014). In brief, Hoxb8 cells were seeded at a density of 3 × 105 cells into 10-cm bacterial culture dishes in 10-ml iCD medium. On day 3, cells were split 1:2 and toped up with fresh iCD medium to 10 ml. On day 6, cells were fed with 10-ml iCD medium and non-adherent iCD103 DCs were frozen on day 9. For images of immature and matured cells, as well as flow cytometry staining of different surface markers see Figure 1—figure supplement 1.
 
 Frozen DCs were allowed to recover after thawing for at least 4 hr before infection. Non-adherent cells were counted and seeded at a density of 1–2 × 105/ml in R10H20 medium. Assays were performed with DCs that were either stimulated with bacteria or recombinant LPS at 200 ng/ml. Itgb2−/− DCs were purified from potential other cells using the EasySep mouse Pan-DC enrichment kit (Stemcell Technologies) and allowed to rest for 1 hr before the infection assay.
 
-## Bacterial strain construction
+#### Bacterial strain construction
 
 For cloning, strains were grown routinely in LB medium. Plasmids were maintained at 100 µg/ml ampicillin or 50 µg/ml kanamycin. Single-copy integration was performed at 12 µg/ml chloramphenicol or 25 µg/ml kanamycin. For experiments, strains were grown at 37°C in R10H20 medium without antibiotics or in medium containing 0.5% casamino acids, 1× M9 salts, 1 mM MgSO4, 0.1 mM CaCl2, and 0.5% glycerol (CAA M9 glycerol). Primers used for cloning are listed in Table 1 and strains used are listed in Table 2.
 
-## Locked mutants
+**Table 1.**
+ Primers used for cloning.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Oligonucleotide</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>110</td>
+      <td>ATATGCATGCCAAAAGATGAAACATATATCATAAATAAGTTACGT</td>
+    </tr>
+    <tr>
+      <td>112</td>
+      <td>ATATGCATGCCAAAAGATGAAACATTCATAGAGGAAAGCATCG</td>
+    </tr>
+    <tr>
+      <td>119</td>
+      <td>CAGTAATGCTGCTCGTTTTGCCG</td>
+    </tr>
+    <tr>
+      <td>120</td>
+      <td>GACAGAGCCGACAGAACAAC</td>
+    </tr>
+    <tr>
+      <td>128</td>
+      <td>TGTGTAGGCTGGAGCTGCTTC</td>
+    </tr>
+    <tr>
+      <td>130</td>
+      <td>AAAAGAGAAGAGGTTTGATTTAACTTATTGATAATAAAGTTAAAAAAACACTGCTTCGAAGTTCC</td>
+    </tr>
+    <tr>
+      <td>131</td>
+      <td>CACTTTGTTTTGTAAACGAGTTTGACTGCCAACACTGCACAGTTTTCCCCCAAAAGATGAAACAT</td>
+    </tr>
+    <tr>
+      <td>132</td>
+      <td>ATTCATATGGAATAAATACAAGACAATCATAGAGGAAAGCATC</td>
+    </tr>
+    <tr>
+      <td>133</td>
+      <td>ATTCATATGGAATAAATACAAGACAAATATCATAAATAAGTTACGTATTTTTTCTCAAGCATAAAAATATTAAAAAACGAC</td>
+    </tr>
+    <tr>
+      <td>134</td>
+      <td>TTGTATTTATTCCATATGAATATCCTCCTTAGTTCCTATTCC</td>
+    </tr>
+    <tr>
+      <td>146</td>
+      <td>TAGCTTCAGGTAATATTGCGTACCTGCATTAGCAATGCCCTGTGATTTCTCCATATGAATATCCTCCTTAGTTCC</td>
+    </tr>
+    <tr>
+      <td>148</td>
+      <td>AGTGATTAGCATCACCTATACCTACAGCTGAACCCAAAGAGATGATTGTATGTGTAGGCTGGAGCTGCTTCG</td>
+    </tr>
+    <tr>
+      <td>157</td>
+      <td>AGCATCACCTATACCTACAGCTG</td>
+    </tr>
+    <tr>
+      <td>158</td>
+      <td>AGCTTCAGGTAATATTGCGTACC</td>
+    </tr>
+    <tr>
+      <td>198</td>
+      <td>AGTGATTAGCATCACCTATACCTACAGCTGAACCCGAAGAGATGATTGTAATGAAACGAGTTATTACC</td>
+    </tr>
+    <tr>
+      <td>276</td>
+      <td>TAGCTTCAGGTAATATTGCGTACCTGCATTAGCAATGCCCTGTGATTTCTTTATTGATAAACAAA</td>
+    </tr>
+    <tr>
+      <td>296</td>
+      <td>AGTGATTAGCATCACCTATACCTACAGCTGAACCCGAAGAGATGATTGTATTGACGGCTAGCTCAGTCCTAGGTA</td>
+    </tr>
+    <tr>
+      <td>297</td>
+      <td>TAGCTTCAGGTAATATTGCGTACCTGCATTAGCAATGCCCTGTGATTTCTTCAGCACTGTCCTGCTCCTTGTGAT</td>
+    </tr>
+    <tr>
+      <td>3_SphI_pKD3_test</td>
+      <td>TGAATACCACGACGATTTCC</td>
+    </tr>
+    <tr>
+      <td>cam_test_R</td>
+      <td>CAACGGTGGTATATCCAGTGA</td>
+    </tr>
+    <tr>
+      <td>FarChro galK UO</td>
+      <td>GTTAATTATCATTTTGCACCGCGTC</td>
+    </tr>
+    <tr>
+      <td>galK-KpnI-r</td>
+      <td>CCGGGTACCTCAGCACTGTCCTGCTCC</td>
+    </tr>
+    <tr>
+      <td>galK-ver-F</td>
+      <td>CCTACTCTATGGGCTGGCAC</td>
+    </tr>
+    <tr>
+      <td>galk-ver-R</td>
+      <td>GGAAAGTAAAGTCGCACCCC</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Used strains.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E. coli W (ATCC 9637)</td>
+      <td>Archer et al., 2011</td>
+    </tr>
+    <tr>
+      <td>CFT073 O6:K2:H1 (ATCC 700928)</td>
+      <td>Welch et al., 2002</td>
+    </tr>
+    <tr>
+      <td>UTI89 O18:K1:H7</td>
+      <td>Chen et al., 2006</td>
+    </tr>
+    <tr>
+      <td>536 O6:K15:H31</td>
+      <td>Hochhut et al., 2005</td>
+    </tr>
+    <tr>
+      <td>KT177 (UTI89 locked-ON::FRT)</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>KT178 (UTI89 locked-OFF::FRT)</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>KT179 (CFT073 locked-ON::FRT)</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>KT180 (CFT073 locked-OFF::FRT)</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>KT193 (CFT073 locked-ON::FRT ΔfimH::FRT)</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>KT232 (E. coli W locked-ON::FRT)</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>KT257 (CFT073 locked-ON::FRT ΔfimH attλ PR-mVenus::FRT)</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>KT260 (CFT073 locked-ON::FRT ΔgalK::FRT fimH::fimHY48A R98A T99A)</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>KT261 (CFT073 locked-ON::FRT ΔgalK::FRT fimH::fimHY48A)</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>KT262 (CFT073 locked-ON::FRT ΔgalK::FRT fimH::fimHR98A)</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>KT263 (CFT073 locked-ON::FRT ΔgalK::FRT fimH::fimHT99A)</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>MG002 (E. coli W locked-ON::FRT ΔgalK::FRT fimH::fimHCFT073)</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>VG003 (CFT073 locked-ON::FRT attλ PR-mVenus::FRT)</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>KT280 (536 locked-ON::FRT)</td>
+      <td>This paper</td>
+    </tr>
+    <tr>
+      <td>KT281 (536 locked-OFF::FRT)</td>
+      <td>This paper</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Locked mutants
 
 E. coli W (Archer et al., 2011; ATCC 9637) and clinical isolates CFT073 (Welch et al., 2002; ATCC 7000928; a kind gift of Ulrich Dobrindt), UTI89 (Chen et al., 2006), and 536 (Hochhut et al., 2005) were used as well as derivatives of those strains.
 
@@ -144,53 +406,53 @@ Phase-locked mutants were generated by replacing the 9-bp long recognition site 
 
 After verifying single-copy integration using primers 119, 120, cam_test_R and 3_SphI_pKD3_test, the resistance marker was subsequently removed using pCP20 plasmid (Cherepanov and Wackernagel, 1995). The mutated fimS region was sequenced to confirm deletion of the 9-bp long recombinase recognition site on the left site, but a fully intact recognition site on the right site. The presence or absence of the type 1 pilus on the bacterial outer membrane was confirmed by electron microscopy and yeast agglutination assay. Resulting locked mutants were: CFT073 locked-ON – KT179, CFT073 locked-OFF – KT180, and E. coli W locked-ON – KT232.
 
-## FimH deletion mutant
+#### FimH deletion mutant
 
 fimH gene from CFT073 locked-ON mutants (KT179) was deleted by lambda red recombination. The FRT-flanked chloramphenicol resistance marker from pKD3 plasmid was amplified using primers 146 and 148 and integrated into the chromosome of KT179 strain. Successful deletion was confirmed by PCR (primers 157 and 158). Resistance was flipped using pCP20 plasmid resulting in CFT073 locked-ON ΔfimH mutant – KT193. The presence of type 1 pili was confirmed by electron microscopy. The absence of fimH was confirmed by sequencing and yeast agglutination assay.
 
-## Chromosomal yfp marker
+#### Chromosomal yfp marker
 
 mVenus driven by the right site of the lambda PO was integrated in the lambda phage attachment site on the chromosome of CFT073 locked-ON (KT179) and CFT073 locked-ON ΔfimH (KT193) mutants using CRIM integration (Haldimann and Wanner, 2001). In brief, KT179 and KT193 strains were transformed with pInt-ts helper plasmid and selected on ampicillin plates at 30°C. Bacteria were made electrocompetent and transformed with PR-mVenus carrying pAH120-frt-cat integration plasmid. After recovery in LB medium for 1 hr at 37°C, the expression of lambda red genes was induced at 42°C for 15 min before spreading on LB plates containing chloramphenicol.
 
 Single-copy integration of the CRIM plasmid was verified with PCR as mentioned previously (Haldimann and Wanner, 2001). Since pAH120-frt-cat was designed to have an FRT-flanked chloramphenicol resistance marker (Nikolic et al., 2018), resistance was subsequently removed using pCP20 plasmid (Cherepanov and Wackernagel, 1995). Resulting mutants were: CFT073 locked-ON attλ PR-mVenus – VG003 and CFT073 locked-ON ΔfimH attλ PR-mVenus – KT257.
 
-## FimH replacement mutant
+#### FimH replacement mutant
 
 The endogenous fimH gene of the non-pathogenic E. coli W strain was exchanged scar-less with fimH of the pathogenic UPEC strain CFT073 using galK selection/counter-selection (Kavčič et al., 2020). The FRT-flanked kanamycin resistance marker from gDNA harboring ΔgalK::kan (gift of Bor Kavčič) was amplified using primers galK-ver-F and galK-ver-R (gift of Bor Kavčič) and integrated into the galK gene of E. coli W locked-ON (KT232). Loss of galK gene was confirmed by PCR using primers FarChro galK UO and galK-KpnI-r (gift of Bor Kavčič). Resistance was flipped using pCP20 plasmid. galK under constitutive J23100 promoter was amplified from pKD13-PcgalK plasmid using primers 296 and 297 and transformed to replace the endogenous fimH gene using lambda red recombination. After recovery, any residual carbohydrate residues were removed by washing the cells several times with M9 buffer (Tomasek et al., 2018) before plating on M9 minimal medium containing 0.1% galactose as only carbohydrate source for positive selection. Integration of galK gene into fimH was confirmed by PCR using primers 157 and 158. CFT073 fimH gene was amplified from a gblock (IDT) carrying the fimH sequence from CFT073 using primers 198 and 276 and integrated instead of the constitutive galK gene. After recovery, cells were washed several times as before. Transformants were counter-selected on artificial urine medium agar plates (AU-Siriraj; Chutipongtanate and Thongboonkerd, 1999) supplemented with 20 µg/ml L-aspartate and 20 µg/ml L-isoleucine (Bouvet et al., 2017), and containing 0.2% 2-deoxy-D-galactose (DOG) and 0.2% glycerol for the counter-selection. Pathogenic fimH integration was confirmed by PCR using primers 157 and 158. Resulting mutant was E. coli W locked-ON fimH::fimHCFT073 – MG002.
 
-## FimH amino acid mutants
+#### FimH amino acid mutants
 
 Single and triple point mutants of amino acids predicted to be most involved in binding to CD14 were generated using galK selection/counter-selection as mentioned above. Briefly, galK was deleted from CFT073 locked-ON mutants (KT179). Thereafter constitutive expressed galK was inserted in the endogenous fimH of this strain for selection. 100 µg gblocks (IDT) carrying either Y48A, R98A, T99A or the triple mutation (Y48A, R98A, T99A) in the fimH sequence from strain CFT073 were integrated instead of the constitutive galK gene. Correct integration of fimH having mutated amino acid residues was confirmed by sequencing. Resulting mutants were CFT073 locked-ON fimHY48A R98A T99A – KT260, CFT073 locked-ON fimHY48A – KT261, CFT073 locked-ON fimHR98A – KT262, and CFT073 locked-ON fimHT99A – KT263.
 
-## Inhibitors used
+#### Inhibitors used
 
 Since the suggested upper daily limit of orally applied D-mannose to treat UTIs is 9 g, leading to blood mannose levels of roughly 175 µM (Alton et al., 1997), we decided to compare this concentration to a strongly increased one of 30–60 g D-mannose resulting in 1 mM blood mannose levels. The small mannoside M4284 (medchemexpress) was used at 10 µM. The blocking CD14 antibody M14-23 was used at 20 µg/ml (Tsukamoto et al., 2010). Calcineurin inhibitor FK506 was used at 50 nM. DCs were pre-incubated with FK506 20 min prior to bacterial stimulation, whereas all other inhibitors were added as the same time as the bacteria.
 
-## Method details
+### Method details
 
-## Yeast agglutination assay
+#### Yeast agglutination assay
 
 Saccharomyces cerevisiae was grown in YPD medium at 30°C for 2 days. After centrifugation, cells were resuspended in M9 buffer to an OD600 of 1 and stored in the fridge. An aliquot of the yeast was transferred to glass slides and bacterial colonies were directly mixed into the yeast solution. Agglutination occurred within few seconds to 1 min. Pictures of agglutinated yeast and bacteria cells were taken on a brightfield microscope at ×10 magnification and images were processed with Fiji.
 
-## Growth curve assay and doubling time estimation
+#### Growth curve assay and doubling time estimation
 
-Single bacterial colonies were inoculated in 160 µl R10H20 in 96-well plates and grown overnight at 220 rpm at 37°C. The next day, cultures were diluted 1 in 1000 in R10H20 supplemented with 0.0005% Triton-X and grown at 37°C with shaking. Optical density was measured every 30 min at 600 nm at a Synergy H1 plate reader for a total of 7 hr. The data were blank normalized, and the doubling time (dt) was calculated from exponential data using following formula dt=t2-t13.3*log⁡(OD6002OD6001) .
+Single bacterial colonies were inoculated in 160 µl R10H20 in 96-well plates and grown overnight at 220 rpm at 37°C. The next day, cultures were diluted 1 in 1000 in R10H20 supplemented with 0.0005% Triton-X and grown at 37°C with shaking. Optical density was measured every 30 min at 600 nm at a Synergy H1 plate reader for a total of 7 hr. The data were blank normalized, and the doubling time (dt) was calculated from exponential data using following formula $dt=\frac{t2-t1}{3.3*log⁡(\frac{OD_{600}2}{OD_{600}1})}$ .
 
 For all assays, bacteria were grown to early- to mid-exponential phase (OD600 0.25; E. coli W 4 hr, CFT073 3 hr 20 min; see Figure 1—figure supplement 2A) in 1 ml R10H20 medium, if not indicated otherwise, at 37°C in deep well plates.
 
-## Minimal inhibitory concentration assay
+#### Minimal inhibitory concentration assay
 
 Cultures were grown to OD600 of 0.25 and approximately 106 bacteria were used for MIC assays. Serial dilutions of gentamicin were performed in a microdilution manner using 96-well plates and OD600 was measured after 18 hr incubation at 37°C with shaking. The threshold to calculate the minimal inhibitory concentration (MIC) was set to detectable growth above the blank background after normalization. CFT073 locked-ON (KT179) and locked-OFF (KT180) mutants had similar MIC to gentamicin in R10H20 medium (see Figure 1—figure supplement 2B). 5× the MIC was used to prevent extracellular growth of bacteria in the infection assays (7.5 µg/ml).
 
-## Electron microscopy
+#### Electron microscopy
 
 Bacteria were grown to mid-exponential phase in CAA M9 glycerol medium, fixed with glutaraldehyde (EM grade, final concentration 2.5 %) for 30 min at 4°C, washed twice with phosphate-buffered saline (PBS) and concentrated in water. Formvar-coated copper grids were glow discharged for 2 min and 5 × 106 bacteria were loaded for 5 min. Excess liquid was removed with filter papers and bacteria were stained with Uranyless for 2 min. After removal of excess liquid, the grids were washed 10 times in water and dried. EM images were taken at TEM T10 microscope at 80 kV. Images were processed with Fiji.
 
-## Predicted protein–protein interaction
+#### Predicted protein–protein interaction
 
 Crystal structures of FimH (PDB: 6GTV), mouse CD14 (PDB: 1WWL), human CD14 (PDB: 4GLP), mouse TLR4 (PDB: 3VQ2), and mouse CD48 (PDB: 2PTV) were obtained from rscb.org, cleaned from solvents and other co-precipitated molecules using PyMol and run on HawkDock server to predict protein binding (Weng et al., 2019). Additional MM/GBSA (molecular mechanics energies/generalized Born and surface area continuum solvation) analysis was run to predict free binding energy (Hou et al., 2005).
 
-## Bead-binding assay
+#### Bead-binding assay
 
 5 µl of 10 µm bead slurry (PureProteom Protein A magnetic beads, Merck) were used per reaction. Beads were washed 3× with PBS containing 0.005% Tween (PBS-T). Beads were collected using a magnetic stand. 5 µg CD14-Fc recombinant protein (RND System) in a total of 10 µl of PBS-T was coupled to the beads for 1 hr at 4°C with rotation. After washing the beads, 100 µl of bacteria grown to early- to mid-exponential phase in CAA M9 glycerol medium (~1 × 107 bacteria) were incubated in the presence of Tween with the CD14-coupled beads for 1 hr at 4°C with rotation. After washing, this time with M9 glycerol medium containing Tween, bead-bound bacteria were fixed with 0.5% PFA (paraformaldehyde) in M9 buffer for 10 min at 4°C.
 
@@ -198,90 +460,281 @@ For flow cytometry, samples were diluted in M9 buffer and analyzed on a FACS Can
 
 For fluorescent microscopy, samples were embedded in mounting buffer and spread on a cover slip. Images were taken with 100× magnification on a custom-built Olympus widefield microscope with Hamamatsu Orca Flash4.0v2 camera and LED-based fluorescence illuminator using YFP (x513/22,m543/22) fluorescence channel (Chait et al., 2017). Images were processed with Fiji and deconvoluted with Huygens software.
 
-## Type 1 pili extracts
+#### Type 1 pili extracts
 
 Type 1 pili extracts were generated as described previously (Sheikh et al., 2017) with minor modifications. Briefly, CFT073 locked-ON (KT179) and CFT073 locked-ON ΔfimH (KT193) were grown overnight in CAA M9 glycerol medium and harvested at 4000 × g for 1 hr. The cell pellet was resuspended in 1 mM Tris–HCl (pH 8.0) and incubated at 65°C for 1 hr with occasional vortexing. After pelleting the cells at 15,000 × g for 10 min, type 1 pili were precipitated from the supernatant overnight in the presence of 300 mM NaCl and 100 mM MgCl2 at 4°C. Type 1 pili were concentrated at 20,000 × g for 10 min, washed once with 1 mM Tris–HCl and snap frozen in a small volume of 1 mM Tris–HCl.
 
-## Dot blot assay
+#### Dot blot assay
 
 The recombinant chimera CD14-Fc protein was biotinylated using the EZ-Link Sulfo NHS-LC-LC-Biotin kit (Thermo Fisher) and a fivefold molar excess of biotin. In brief, CD14-Fc was dissolved in PBS at 1 mg/ml and biotinylated with a fivefold molecular excess of biotin for 30 min at room temperature (RT). The biotinylation reaction was stopped with 3 mM Tris–HCl (pH 7.0).
 
 The PVDF (polyvinylidene difluoride) membrane was activated for 5 min with MeOH, washed for 5 min in water and allowed to dry for 5 min. 20 ng biotinylated CD14 and roughly 20 µg type 1 pili extract from CFT073 ON (KT179) and CFT073 ON ΔfimH (KT193) mutants were loaded onto the membrane. Protein spots were allowed to dry for 10 min and then the membrane was blocked in 3% bovine serum albumin (BSA) in PBS for 30 min at 37°C. 40 ng biotinylated CD14 in 3% BSA in PBS and 0.05% Tween was blotted on the membrane and incubated for 1 hr at 37°C. Then the membrane was washed 3× in PBS with Tween for 5 min each. Streptavidin–HRP antibody was pre-diluted 1:100 in 3% BSA in PBS with Tween and diluted once more 1:5000 in PBS with Tween. The membrane was incubated with streptavidin–HRP for 1 hr at RT. After washing again 3× as before, chemiluminescence was detected using clarity ECL substrates (BioRad).
 
-## Infection assays
+#### Infection assays
 
 DCs were seeded at a density of 1–2 × 105 cells/ml in R10H20 medium (for adhesion assays black 24-well tissue-treated dishes were used, for any other assay non-treated dishes were used). DCs were matured either by addition of 200 ng/ml recombinant LPS or bacteria at a multiplicity of infection of 10 (10 bacteria per 1 DC). 1 hr post infection (pi) gentamicin was added at 7.5 µg/ml to prevent extracellular growth of bacteria. 18–20 hr pi subsequent assays were performed.
 
-## Cytokine array
+#### Cytokine array
 
 Differences in secreted cytokines of WT, WT pretreated for 20 min with 50 nM FK506 or Cd14−/− DCs after CFT073 locked-ON (KT179) or OFF (KT180) stimulation were analyzed using a membrane-based antibody array (Mouse Cytokine Array Kit, Abcam). The assay was carried out according to the manufacturer’s protocol using 1 ml of cell culture supernatant and incubating overnight. Array images were processed with Fiji and data were normalized to the positive controls of WT ON replicate one following the manufacturer’s recommendations for comparison.
 
-## ELISA
+#### ELISA
 
 Secreted interferon-alpha 1 of WT, WT pretreated for 20 min with 50 nM FK506 or Cd14−/− DCs after CFT073 locked-ON (KT179) or OFF (KT180) stimulation was analyzed using ELISA (Mouse Interferon-alpha 1 ELISA, Abcam). The assay was carried out according to the manufacturers protocol using undiluted cell culture supernatant.
 
-## Adhesion assay
+#### Adhesion assay
 
 Non-adherent DCs were removed, and adherent cells were washed twice with 500 µl PBS. Adherent cells were stained with Hoechst 33,342 (NucBlue reagent, 2 drops/ml) in R10H20 medium for 30 min at 37°C. Cells were washed twice and 1 ml Live Cell Imaging solution (140 mM NaCl, 2.5 mM KCl, 1.8 mM CaCl2, 1.0 mM MgCl2, 20 mM HEPES, pH 7.4) was added to the wells. Fluorescence was measured with a Synergy H1 plate reader (excitation 490 nm, emission 520 nm, bottom reading without lid, 50 data points per well). Pictures of adherent cells were taken on a brightfield microscope at ×4 magnification and images were processed with Fiji.
 
-## Flow cytometry staining
+#### Flow cytometry staining
 
 DCs were collected and incubated in FACS (fluorescence activated cell sorting) buffer (1× PBS, 2 mM EDTA (ethylenediaminetetraacetic acid), 1% BSA; RT) or Tyrode’s buffer (used for active CD11b and β1 staining, on ice) with Fc receptor block for 20 min. Cells were stained for 30 min with antibodies using the respective buffer with Fc receptor block. Cells were washed twice with PBS and resuspended in the respective buffer for analysis on FACS Canto II (BD). 10,000 events gated on FSC-A and SSC-A to exclude debris were recorded at medium flow rate. Data were analyzed using FlowJo software by performing doublet discrimination. Antibodies used are listed in Table 3.
 
-## Receptor endocytosis assay
+**Table 3.**
+ Antibodies used.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Source</th>
+      <th>Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rat anti-MHC II (I-A/I-E) eFluor450 (clone M5/114.15.2)</td>
+      <td>eBioscience</td>
+      <td>48-5321-82</td>
+    </tr>
+    <tr>
+      <td>Armenian hamster anti-CD11c APC (clone N418)</td>
+      <td>eBioscience</td>
+      <td>17-0114-82</td>
+    </tr>
+    <tr>
+      <td>Rat anti-CD18 PE (clone C71/16)</td>
+      <td>BD</td>
+      <td>553,293</td>
+    </tr>
+    <tr>
+      <td>Rat anti-CD11b FITC (clone M1/70)</td>
+      <td>eBioscience</td>
+      <td>11-0112-82</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-human CD11b (active epitope) APC (clone CBRM1/5)</td>
+      <td>eBioscience</td>
+      <td>17-0113-41</td>
+    </tr>
+    <tr>
+      <td>Rat anti-CD86 biotin (clone GL1)</td>
+      <td>eBioscience</td>
+      <td>13-0862-85</td>
+    </tr>
+    <tr>
+      <td>Armenian hamster anti-CD80 (clone 16–10 A1)</td>
+      <td>eBioscience</td>
+      <td>13-0801-85</td>
+    </tr>
+    <tr>
+      <td>Rat anti-CD40 (clone 1C10)</td>
+      <td>Biolegend</td>
+      <td>102,802</td>
+    </tr>
+    <tr>
+      <td>Armenian Hamster anti-CD103 Brilliant Violet 421 (clone 2E7)</td>
+      <td>Biolegend</td>
+      <td>121,421</td>
+    </tr>
+    <tr>
+      <td>Rat anti-CD14 Brilliant Violet 421 (clone Sa14-2)</td>
+      <td>Biolegend</td>
+      <td>123,329</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-CD14 (clone EPR21847)</td>
+      <td>Abcam</td>
+      <td>ab221678</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-CD64 (FcγRI) Brilliant Violet 421 (cloneX54-5/7.1)</td>
+      <td>Biolegend</td>
+      <td>139,309</td>
+    </tr>
+    <tr>
+      <td>Rat anti-CD4 eFluor450 (clone GK1.5)</td>
+      <td>eBioscience</td>
+      <td>48-0042-82</td>
+    </tr>
+    <tr>
+      <td>Armenian Hamster anti-CD69 APC-eFluor780 (clone H1.2F3)</td>
+      <td>eBioscience</td>
+      <td>47-0691-82</td>
+    </tr>
+    <tr>
+      <td>Rat anti-CD62-L PE (clone MEL-14)</td>
+      <td>eBioscience</td>
+      <td>12-0621-82</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-CD45.2 APC (clone 104)</td>
+      <td>eBioscience</td>
+      <td>17-0454-82</td>
+    </tr>
+    <tr>
+      <td>Rat IgG2b kappa Isotype Control eFluor450 (clone eB146/10H5)</td>
+      <td>eBioscience</td>
+      <td>48-4031-82</td>
+    </tr>
+    <tr>
+      <td>Armenian Hamster IgG Isotype Control APC (clone eBio299Arm)</td>
+      <td>eBioscience</td>
+      <td>14-4888-81</td>
+    </tr>
+    <tr>
+      <td>Rat IgG2a kappa Isotype Control PE (clone eBR2a)</td>
+      <td>eBioscience</td>
+      <td>12-4321-81</td>
+    </tr>
+    <tr>
+      <td>Rat IgG2b kappa Isotype Control FITC (clone eB149/10H5)</td>
+      <td>eBioscience</td>
+      <td>11-4031-82</td>
+    </tr>
+    <tr>
+      <td>Rat IgG1 kappa Isotype Control APC (clone eBRG1)</td>
+      <td>eBioscience</td>
+      <td>17-4301-82</td>
+    </tr>
+    <tr>
+      <td>Armenian Hamster IgG Brilliant Violet 421 (clone HTK888)</td>
+      <td>Biolegend</td>
+      <td>400,936</td>
+    </tr>
+    <tr>
+      <td>Rat IgG2a kappa Isotype Control Biotin (clone RTK2758)</td>
+      <td>Stemcell Technologies</td>
+      <td>60,076</td>
+    </tr>
+    <tr>
+      <td>Armenian Hamster IgG Isotype Control Biotin (clone eBio299Arm)</td>
+      <td>eBioscience</td>
+      <td>13-4888-81</td>
+    </tr>
+    <tr>
+      <td>Rat IgG2a kappa Isotype Control (clone RTK2758)</td>
+      <td>Stemcell Technologies</td>
+      <td>60,076</td>
+    </tr>
+    <tr>
+      <td>Alexa Fluor 647-conjugated Streptavidin</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>016-600-084</td>
+    </tr>
+    <tr>
+      <td>Donkey anti-rat IgG H + L Alexa Fluor488 AffiniPure F(ab')2 Fragment</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>712-546-150</td>
+    </tr>
+    <tr>
+      <td>Donkey anti-rat IgG H + L Alexa Fluor647 AffiniPure F(ab')2 Fragment</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>712-606-150</td>
+    </tr>
+    <tr>
+      <td>Goat anti-rabbit Alexa Fluor488</td>
+      <td>Invitrogen</td>
+      <td>A11008</td>
+    </tr>
+    <tr>
+      <td>Rat anti-CD29 (clone 9EG7)</td>
+      <td>BD</td>
+      <td>553,715</td>
+    </tr>
+    <tr>
+      <td>Armenian Hamster anti-CD29 PE (clone HMβ1–1)</td>
+      <td>Biolegend</td>
+      <td>102,207</td>
+    </tr>
+    <tr>
+      <td>Armenian Hamster IgG Isotype Control PE (clone HTK888)</td>
+      <td>Biolegend</td>
+      <td>400,907</td>
+    </tr>
+    <tr>
+      <td>M14-23 (anti-mouse CD14 antibody)</td>
+      <td>Biolegend</td>
+      <td>150,102</td>
+    </tr>
+    <tr>
+      <td>Strep-Tactin HRP</td>
+      <td>iba-lifesciences</td>
+      <td>2-1502-001</td>
+    </tr>
+    <tr>
+      <td>Fc receptor block</td>
+      <td>eBioscience</td>
+      <td>14-9161-73</td>
+    </tr>
+  </tbody>
+</table>
+
+##### Receptor endocytosis assay
 
 Surface staining of receptors was performed as described previously (Zanoni et al., 2011). DCs were fixed for 10 min at RT by adding PFA to a final concentration of 2% at the time points indicated. Fixed DCs were collected and resuspended in FACS buffer and stained for 30 min with antibodies. After washing, cells were analyzed as mentioned above.
 
-## Ex vivo assays
+### Ex vivo assays
 
-## Ear crawl-out
+#### Ear crawl-out
 
 Ear crawl-out assays were performed similar as published previously with minor modifications (Kopf et al., 2020). In brief, ears from 5-week-old female C57Bl/6J WT mice were first UV sterilized for 10 min and then split into dorsal and ventral halves. Ventral halves were placed in R10H20 medium, ventricles facing down. Ears were incubated with 106 CFT073 locked-ON (KT179) or OFF (KT180) bacteria for 48 hr, renewing the infection stimulus after 24 hr. 1 hr after every infection 7.5 µg/ml gentamicin was added to the medium. Ears were fixed using 4% PFA and immersed using 0.2% Triton-X. After blocking in 1% BSA in PBS, lymphatics were stained for 90 min using rat anti-Lyve-1 antibody and DCs were stained using biotinylated anti-MHCII antibody. Secondary antibodies, anti-rat F(ab’)2-AF488 and Streptavidin-AF647, were used subsequently for 45 min each. Ears were mounted on cover slips with ventricles facing up using cover glasses. 10 µm z-stacks were taken on inverted LSM800 confocal microscope with 488 and 640 nm LED-laser light source. Images were taken from three biological replicates (except Tlr4−/− where two biological replicates were imaged) analyzing at least two field of views each. Maximum intensity projection images were processed with Fiji. Images were analyzed using custom-made scripts in Fiji. Pre-processing was done using lymphatics script and analysis using LVmeanDCarea script.
 
-## Ear crawl-in
+#### Ear crawl-in
 
 Ear crawl-in assays were performed similar as published previously (Leithner et al., 2016). In brief, ears from 5-week-old female C57BL/6J mice were split as described above. WT DCs stimulated with CFT073 locked-ON (KT179) or OFF (KT180) were labeled with 10 µM TAMRA or 3 µM Oregon green, respectively, or vice versa, and either used individually or mixed at a 1:1 ratio. 6 × 104 cells were allowed to invade the ear tissue for 30 min. Non-invaded cells were washed off and ears were incubated at 37°C for 6 hr. Ears were fixed and lymphatics were stained using rat anti-Lyve-1 and anti-rat F(ab’)2-AF647 antibody. Ears were mounted on cover slips and imaged as described above.
 
-## In vitro 2D migration assay
+### In vitro 2D migration assay
 
 After performing infection assays in 24-well tissue-treated dishes, non-adherent DCs were removed and adherent DCs were gently washed with PBS. 1 ml of fresh R10 medium containing uniform CCL19 chemokine (RND Systems) (0.625 µg/ml) was added per well. Images were taken every 30 s for a total of 5 hr on bright field microscopes using ×10 magnification and an exposure of 20ms. Data were analyzed using a custom-made R script: Tracking_migration_single_cell script.
 
-## In vitro 3D collagen migration assay
+### In vitro 3D collagen migration assay
 
 3D collagen chemotaxis assays were performed as described previously (Leithner et al., 2016), with minor modifications. Assays were performed in PureCol bovine collagen with a final collagen concentration of 1.6 mg/ml in 1× minimum essential medium eagle (MEM) and 0.4% sodium bicarbonate using 1–2 × 105 DCs. The collagen–cell mixture was cast to custom-made migration chambers and polymerized for 1 hr at 37°C. CCL19 chemokine (RND Systems) in R10 (0.625 µg/ml) was pipetted on top of the gel and the chambers were sealed with paraffin. Images were taken every 30 s for a total of 5 hr on bright field microscopes using ×4 magnification and an exposure of 20ms. Data were analyzed using custom-made Fiji scripts: images were pre-processed using Tracking_pre-processing_for_brightfield script and analyzed using migrationspeedREP script.
 
-## In vitro extracellular matrix migration assay
+### In vitro extracellular matrix migration assay
 
 Cell-derived matrixes (CDMs) were produced as described previously (Kaukonen et al., 2017). In brief, round shaped coverslips were coated with 0.2% gelatin in PBS in 24-well dishes for 1 hr at 37°C. Gelatin was crosslinked with 1% glutaraldehyde in PBS for 30 min at RT and quenched with 1 M glycine in PBS for 20 min at RT. After washing the coverslips twice with PBS, 5 × 104 3T3 mouse fibroblasts in DMEM (Dulbecco's Modified Eagle Medium), GlutaMAX, supplemented with 10% FCS, 100 U/ml penicillin and 100 µg/ml streptomycin were seeded per well. After 48 hr 3T3 fibroblasts reached confluency and were treated daily with ascorbic acid for better crosslinking of the extracellular matrix. Old medium was gently removed and fresh medium with 50 µg/ml sterile ascorbic acid was added for 10–14 days. 3T3 fibroblasts were extracted with extraction buffer (0.5% Triton-X, 20 mM NH4OH in PBS) for 2 min and washed twice with PBS containing 1 mM CaCl2 and 1 mM MgCl2 (PBS/Ca/Mg). DNA was digested with 100 µg/ml DNaseI in PBS/Ca/Mg for 1 hr at 37°C and CDMs were washed twice with PBS/Ca/Mg before storage in PBS/Ca/Mg supplemented with 100 U/ml penicillin and 100 µg/ml streptomycin at 4°C.
 
 Before use, CDMs were placed onto custom-made imaging chambers and incubated with R10 medium for 1 hr at 37°C. The medium was removed and a 1 µl CCL21 chemokine (RND Systems; 25 µg/ml) spot was injected into the CDM and incubated for 10 min. 1 ml R10 medium was added on top and the CDM was incubated for 1 hr at 37°C to allow a chemokine gradient to form. After washing twice gently with R10 medium, CFT073 locked-ON (KT179) and locked-OFF (KT180) stimulated DCs were concentrated by centrifugation and the dense cell pellet was pipetted into the CDM at the opposite site to the chemokine spot. 2 ml of R10 medium was added and images were taken every minute for a total of 6 hr on a bright field microscope using ×10 magnification and an exposure of 20ms. Single cells outside of the cell cluster were counted after 5 hr. Images were processed with Fiji.
 
-## In vivo migration
+### In vivo migration
 
 In vivo migration assays were performed similar as published previously (Leithner et al., 2018). In brief, DCs stimulated with CFT073 locked-ON (KT179) or OFF (KT180) were labeled with 10 µM TAMRA or 3 µM Oregon green, respectively, and vice versa. In total, 106 cells – either ON or OFF stimulated DCs separately or ON and OFF stimulated DCs mixed in a 1:1 ratio – were suspended in 25 µl PBS and injected subcutaneously into the hind footpad of 4- to 6-week-old C57BL/6J or Pep Boy (B6 CD45.1, B6.SJL-Ptprca Pepcb/BoyJ) mice. 48 hr later, mice were sacrificed and the popliteal lymph nodes were collected. Lymph nodes were ripped open and digested for 30 min at 37°C in complete DMEM supplemented with 2% FCS, 100 U/ml Penicillin, 100 µg/ml Streptomycin, 3 mM CaCl2, 0.5 mg/ml collagenase D, and 40 µg/ml DNAseI. After blocking in Fc-block, cells were stained against CD11c, MHCII, and CD45.2. The exact ratio of injected cells was quantified by analyzing the injection mixture prior to footpad injection. Where indicated DCs were simultaneously incubated with M14-23 antibody while stimulated with UPEC ON mutants.
 
-## In vitro T cell assay
+### In vitro T cell assay
 
 T cell assays were performed as described previously (Leithner et al., 2021). In brief, primary naïve CD4+ T cells were isolated from the spleen of OT-II mice (B6.Cg-Tg(TcraTcrb)425Cbn/J) using EasySep Mouse CD4+ T cell isolation kit (Stemcell Technologies) after homogenization with a 70 µm cell strainer and resuspending the cells in PBS supplemented with 2% FCS and 1 mM EDTA. T cells were co-cultured with DCs matured with CFT073 locked-ON (KT179) or OFF (KT180) at a ratio of 5:1 (5 × 104 T cells:1 × 104 DCs) in 96-well round bottom well plates in R10 medium.
 
-## T cell activation
+#### T cell activation
 
 After 24 hr co-culture in the presence of 0.1 µg/ml OVA, medium was removed by spinning. Cells were incubated with Fc receptor block in FACS buffer and stained with anti-CD4, anti-CD69, and anti-CD62-L antibodies for 15 min at 4°C. After resuspending cells in FACS buffer, 100 µl were recorded on FACS Canto II (BD) and the ratio of CD69 to CD62L expression of CD4+ T cells was analyzed by FlowJo software.
 
-## T cell priming
+#### T cell priming
 
 T cells were stained with 5 µM CFSE stain in 5% FCS in PBS for 5 min at RT. After 30 min recovery in R10 medium at 37°C, cells were routinely checked for fluorescence.
 
 After co-culturing with DCs for 4 days in the presence of 0.1 µg/ml OVA, medium was removed by spinning. Cells were stained with anti-CD4 antibody for 10 min at 4°C. After resuspending cells in FACS buffer and 7AAD viability stain, 100 µl were recorded on FACS Canto II (BD) (WT data) or on Cytoflex LX (BC) (Itgb2−/− data). The amount of T cells in proliferation was analyzed by FlowJo software.
 
-## In vivo T cell assay
+### In vivo T cell assay
 
 T cell assays were performed as described previously (Leithner et al., 2021). In brief, primary naïve CD4+ T cells were isolated from the spleen of OT-II mice using EasySep Mouse CD4+ T cell isolation kit after homogenization with a 70-µm cell strainer and resuspending the cells in PBS supplemented with 2% FCS and 1 mM EDTA. T cells were stained with 5 µM CFSE stain in 5% FCS in PBS for 5 min at RT. After 30 min recovery in R10 medium at 37°C, cells were routinely checked for fluorescence. 1 × 106 CFSE labeled CD4+ T-cells were injected retro-orbital into 4- to 6-week-old Pep Boy (B6 CD45.1, B6.SJL-Ptprca Pepcb/BoyJ) mice. 24 hr later 2.5 × 105 CFT073 locked-ON (KT179) or OFF (KT180) stimulated DCs, pre-loaded with 0.1 µg/ml OVA for 1 hr, in 25 µl PBS were injected subcutaneously into the hind footpad. 72 hr after injecting the T cells, mice were sacrificed and the popliteal lymph nodes were collected. Lymph nodes were ripped open and digested for 30 min at 37°C in complete DMEM supplemented with 2% FCS, 100 U/ml penicillin, 100 µg/ml streptomycin, 3 mM CaCl2, 0.5 mg/ml collagenase D, and 40 µg/ml DNAseI. After blocking in Fc block, cells were stained against CD4 and CD45.2 for 10 min at 4°C. After resuspending cells in FACS buffer and 7AAD viability stain, the amount of T cells in proliferation was analyzed by FlowJo software.
 
-## DC–T cell interaction time
+### DC–T cell interaction time
 
 Interaction time of DCs and T cells was measured as described previously (Leithner et al., 2021). In brief, glass bottom dishes were plasma cleaned for 2 min and coated with 1× poly-L-lysine in water for 10 min at RT. Dishes were washed two times with water and dried overnight. 1.5 × 105 DCs, pre-loaded with 0.1 µg/ml OVA for 1 hr 30 min, were mixed with 3 × 105 T cells and loaded onto the coated dishes in a total volume of 300 µl. Images were taken every 30 s for a total of 6 hr on bright field microscope using ×20 magnification and an exposure of 20ms. Images were processed with Fiji.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Data are represented as means ± standard deviations. Statistics were performed using GraphPad Prism version 9.0.2 for Windows. Statistical details for each experiment can be found in the respective figure legends. Significance was defined as follows: *p < 0.1, **p < 0.05, ***p < 0.01, ****p < 0.001.

@@ -11,13 +11,13 @@
 
 ### Affiliations
 
-1. https://ror.org/05abbep66 Biology Department, Brandeis University Waltham United States
+1. Biology Department, Brandeis University Waltham United States ([ROR:05abbep66](https://ror.org/05abbep66))
 
 † Corresponding author
 
 ## Abstract
 
-Transposable elements (TEs) are mobile sequences of DNA that can become transcriptionally active as an animal ages. Whether TE activity is simply a by-product of heterochromatin breakdown or can contribute toward the aging process is not known. Here, we place the TE gypsy under the control of the UAS GAL4 system to model TE activation during aging. We find that increased TE activity shortens the life span of male Drosophila melanogaster . The effect is only apparent in middle-aged animals. The increase in mortality is not seen in young animals. An intact reverse transcriptase is necessary for the decrease in life span, implicating a DNA-mediated process in the effect. The decline in life span in the active gypsy flies is accompanied by the acceleration of a subset of aging phenotypes. TE activity increases sensitivity to oxidative stress and promotes a decline in circadian rhythmicity. The overexpression of the Forkhead-box O family (FOXO) stress response transcription factor can partially rescue the detrimental effects of increased TE activity on life span. Our results provide evidence that active TEs can behave as effectors in the aging process and suggest a potential novel role for dFOXO in its promotion of longevity in D. melanogaster .
+Transposable elements (TEs) are mobile sequences of DNA that can become transcriptionally active as an animal ages. Whether TE activity is simply a by-product of heterochromatin breakdown or can contribute toward the aging process is not known. Here, we place the TE gypsy under the control of the UAS GAL4 system to model TE activation during aging. We find that increased TE activity shortens the life span of male Drosophila melanogaster. The effect is only apparent in middle-aged animals. The increase in mortality is not seen in young animals. An intact reverse transcriptase is necessary for the decrease in life span, implicating a DNA-mediated process in the effect. The decline in life span in the active gypsy flies is accompanied by the acceleration of a subset of aging phenotypes. TE activity increases sensitivity to oxidative stress and promotes a decline in circadian rhythmicity. The overexpression of the Forkhead-box O family (FOXO) stress response transcription factor can partially rescue the detrimental effects of increased TE activity on life span. Our results provide evidence that active TEs can behave as effectors in the aging process and suggest a potential novel role for dFOXO in its promotion of longevity in D. melanogaster.
 
 ## Introduction
 
@@ -39,27 +39,106 @@ In this study, we have set up a system to directly assay if TE can become active
 
 To begin to investigate dFOXO’s possible involvement in TE regulation, we sequenced the RNA from whole animals aged 5–6 days and 30–31 days, in wDAH (wt) and dFOXO deletion (wDAH ∆94) males (Slack et al., 2011). These lines have been extensively backcrossed, making them isogenic other than for the dFOXO deletion (Slack et al., 2011). We mapped the reads to the Drosophila genome and to a custom genome file that contains the consensus sequences for Drosophila transposons. Differentially expressed RNAs were identified using DESeq2. In these conditions, the wt animals display significantly increased expression of only two TEs (the 1731 and Doc4 retrotransposons). At the same time, there is decreased expression of two TEs (the Stalker2 and G6 retrotransposons) with age (Figure 1a and b, Figure 1—figure supplement 1). By contrast, in the dFOXO deletion animals, 18 TEs (the retrotransposons: Accord, Circ, Gate, Copia, Gypsy, MGD1, RooA, 1731, Burdock, TartC, Invader2, Invader4, Juan, G6, IVK, Doc3; and the DNA transposons: TransIB3, 1360) exhibited a significant increase in expression with age (Figure 1c and d, Figure 1—figure supplement 2) while no TE expression decreased with age. This indicates that the overall TE load is greater in the aged dFOXO deletion flies.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/80169/elife-80169-fig1-v2.jpg)
+
+**Figure 1.:** Data represents RNAseq from three biological replicates. Legend (gray: fly genes not significant [ns]; red: upregulated fly genes; blue: downregulated fly genes; green: TE). Differential expression indicates a 1.5-fold change or higher and an adjusted p-value<0.05, as determined by DESeq2. (a–d) Red indicates upregulation with age. Blue denotes downregulation with age. Significantly different TEs are identified by name. (a, b) Wildtype (WT) control. Four TEs are labeled. (c, d) FOXO null. Eighteen TEs are labeled. (e) Volcano plot of young WT control and young FOXO null. Red and blue dots indicate gene relative expression in FOXO null compared to WT, respectively. TEs are marked by green dots.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80169/elife-80169-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Normalized counts of TE differentially expressed with age in wt flies.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/80169/elife-80169-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Normalized counts of TE differentially expressed with age in FOXO deletion flies.
+
 The vast majority of TE expression levels in both strains fall within the observed range of average gene expression (Figure 1a and d). Total TE expression undergoes a small change overall in both genotypes. Expression increased only 1.2-fold with age (Supplementary file 1) in wt flies and 1.41-fold in dFOXO null flies (Supplementary file 2). Of the two TEs that increased with age in wt flies, only 1731 exhibits an increase in dFOXO null flies. Among the two TEs that decreased with age in wt, G6 showed the opposite effect on expression in dFOXO null flies while Stalker2 showed no change with age in dFOXO null flies. The direct comparison of individual TE expression levels in young wt and dFOXO null flies indicates that despite being backcrossed (Slack et al., 2011) different TEs are being expressed in each strain (Figure 1e). This means that the otherwise isogenic lines have a different transcriptionally active TE landscape. Therefore, beyond the comparison of the number of transcriptionally active TEs, a direct comparison between wt and dFOXO null flies to determine the effect of dFOXO on any specific TE expression during aging is challenging.
 
 Our difficulties to determine the effect of dFOXO on any specific TE highlights the need for a controlled system to test TE expression and regulation during aging. The gypsy retrotransposon was selected as a model system to study TE activity, and we developed a UAS-gypsy system. The structure of the ectopic UAS-gypsy system is depicted in Figure 2a. A direct comparison to the endogenous gypsy element can be observed in a simplified overview of three broad stages in the gypsy life cycle (parental element, propagation through transcription and reverse transcription, and new insertion). The presence of the UAS promoter in the ectopic gypsy allows the control of gypsy expression by mating to a GAL4-expressing strain. In addition, we inserted a unique sequence tag in the 3′ LTR of the ectopic gypsy to differentiate it from the endogenous copy of gypsy (Bayev et al., 1984). We inserted the UAS-gypsy construct in the VK37 attP site on chromosome 2 using the PhiC31 system (Venken et al., 2006). Using this approach, we found that ectopic gypsy expression is significantly induced when the line is crossed to a strain in which GAL4 is ubiquitously expressed under the ubiquitin promoter (Ubi>gypsy) (Figure 2b).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/80169/elife-80169-fig2-v2.jpg)
 
-**Figure 2.:** gypsy structure and functional test.(a) Simplified overview of three stages of the gypsy retrotransposon life cycle, (i) parent insertion in the genome, (ii) the transcribed RNA (genomic RNA), and (iii) the new copy inserted in the genome. The difference between the wildtype gypsy and ectopic gypsy resides in both its 5′ and 3′ long-terminal-repeat (LTR). The presence of an upstream activating sequence (UAS) in the 5′ LTR allows gypsy to be transcribed in response to a GAL4 stimuli. In the 3′ LTR, the addition of a unique sequence of DNA (denoted by a yellow square) not found in the D. melanogaster genome allows quantification and tracking of new insertions by molecular methods. (b) RT-qPCR of 5-day-old males. 3′ end of ectopic gypsy transcript is detected. Data are represented as means ± SD (three biological replicates, each dot is a pool of five flies). One-tailed t-test, ***p-value=0.0005. (c) gDNA qPCR of 5-day-old males. Ectopic gypsy provirus insertion junctions are detected. Data are represented as means ± SD (three biological replicates, each dot is a pool of 10 flies). One-tailed t-test, ***p-value=0.0003. (d) Sanger sequencing of the newly created ectopic gypsy provirus insertion junction in Ubi>gypsy flies.
+**Figure 2.:** (a) Simplified overview of three stages of the gypsy retrotransposon life cycle, (i) parent insertion in the genome, (ii) the transcribed RNA (genomic RNA), and (iii) the new copy inserted in the genome. The difference between the wildtype gypsy and ectopic gypsy resides in both its 5′ and 3′ long-terminal-repeat (LTR). The presence of an upstream activating sequence (UAS) in the 5′ LTR allows gypsy to be transcribed in response to a GAL4 stimuli. In the 3′ LTR, the addition of a unique sequence of DNA (denoted by a yellow square) not found in the D. melanogaster genome allows quantification and tracking of new insertions by molecular methods. (b) RT-qPCR of 5-day-old males. 3′ end of ectopic gypsy transcript is detected. Data are represented as means ± SD (three biological replicates, each dot is a pool of five flies). One-tailed t-test, ***p-value=0.0005. (c) gDNA qPCR of 5-day-old males. Ectopic gypsy provirus insertion junctions are detected. Data are represented as means ± SD (three biological replicates, each dot is a pool of 10 flies). One-tailed t-test, ***p-value=0.0003. (d) Sanger sequencing of the newly created ectopic gypsy provirus insertion junction in Ubi>gypsy flies.
 
 This tag also allows us to take advantage of the strand transfer that occurs during reverse transcription of the retroelement before integrating into a new site in the genome. This process replaces the UAS sequence with a 5′ LTR and transfers the sequence tag to the new LTR of the newly integrated gypsy element (Weaver, 2008; Figure 2a). Using this approach, we found that new insertions are created and can be specifically detected (Figure 2c) when UAS-gypsy is expressed (Ubi>gypsy genotype). The junction between the recombinant gypsy 5′ LTR and the gypsy provirus sequence is only formed when a complete insertion is made. Sanger sequencing of the qPCR insertion products demonstrates the specific detection of this junction, indicating that the UAS-gypsy element can transpose and is an active TE element (Figure 2d).
 
 To characterize the spectrum of insertion sites of the UAS-gypsy construct and rule out any potential ‘hotspot’ effect, we took a targeted sequencing approach. Using a biotinylated primer hybridizing with the unique sequence tag oriented to read out from the newly integrated 5′ LTR (Table 1), we created Illumina next-generation sequencing libraries to sequence the genomic junctions (Figure 3—figure supplement 1). Libraries were prepared from three biological replicates of ten 14-day-old male flies each. Sequencing reads were sorted using the LTR sequence as a barcode. After removing the LTR sequence, the exact site of insertion was mapped back to the Drosophila reference genome. More than 11,000 insertion sites were identified. Sites were identified in all chromosomes with the fraction of insertions roughly correlating with the size of the chromosome (Figure 3a). Comparing the insertion sites with the genome annotation allowed us to classify the insertion sites. Also, 66% of the mapped insertion sites are in transcribed regions (Figure 3b). Of those sites, the majority are in intronic regions (Figure 3c). Because the data provides nucleotide resolution, we could also determine the six-nucleotide target site duplication that occurs at the junction between the gypsy LTR and the genome upon insertion (Dej et al., 1998). The target site duplication consensus determined from our mapped insertion sites matches the known YRYRYR previously identified for gypsy integration sites (Figure 3d; Dej et al., 1998). In addition, the alternating purine-pyrimidine sequence and AT-rich nature of the target sites are consistent with bent DNA, a hallmark of DNA transposons, retroviral integrases, and other transposases.
 
+**Table 1.**
+ Primers for next-generation sequencing.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>MB2640</td>
+      <td>Biotin-GTGAGGGTTAATTCTGAGCTTGGC</td>
+    </tr>
+    <tr>
+      <td>MB1192</td>
+      <td>Phos-AGATCGGAAGAGCACACGTCTGA-3′ amino blocked</td>
+    </tr>
+    <tr>
+      <td>MB1019</td>
+      <td>TCAGACGTGTGCTCTTCCGATCT</td>
+    </tr>
+    <tr>
+      <td>MB2669</td>
+      <td>CCTACACGACGCTCTTCCGATCTNNNTTCTTCGCGTGGAGCGTTGA</td>
+    </tr>
+    <tr>
+      <td>MB583</td>
+      <td>AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCT</td>
+    </tr>
+    <tr>
+      <td>MB2673</td>
+      <td>CAAGCAGAAGACGGCATACGAGATTCCGAAACGTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT</td>
+    </tr>
+    <tr>
+      <td>MB2674</td>
+      <td>CAAGCAGAAGACGGCATACGAGATTACGTACGGTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT</td>
+    </tr>
+    <tr>
+      <td>MB2675</td>
+      <td>CAAGCAGAAGACGGCATACGAGATATCCACTCGTGACTGGAGTTCAGACGTGTGCTCTTCCGATCT</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 3.](https://cdn.elifesciences.org/articles/80169/elife-80169-fig3-v2.jpg)
+
+**Figure 3.:** (a) The average fraction of total insertions is shown for each chromosome (4, X, Y) or chromosome arm (2L, 2R, 3L, 3R). In addition, the fraction mapping to unplaced contigs is indicated as U. (b) The fraction of total reads mapping to transcribed regions of the genome and intergenic regions is graphed. (c) The fraction of insertions that map to the transcribed regions of the genome is subdivided. Insertions mapping to regions annotated as introns or exons is graphed. (d) The sequences of the junction of the new 5′ long-terminal-repeat (LTR) and the Drosophila genome were aligned and used to determine the probability of finding each base at each position. These probabilities are indicated by the size of the letter at each position. (e) The fraction of insertions that map to each 1 megabase region of the reference genome for the arms of chromosome 3 is plotted. For illustration, a genome browser view of the 1 Mb in Chr3L is shown. The insertion sites in that region for each replicate are indicated. A collapsed track showing genes in that region is also shown. For all histograms, the bars represent the average of three biological replicates. Error bars indicate the standard deviation, and the filled circles indicate the individual measurements.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80169/elife-80169-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/80169/elife-80169-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** For the Y chromosome, each bin represents 200K bases. For chromosome 4, each bin represents 100K bases. For all histograms, the bars represent the average of three biological replicates. Error bars indicate the standard deviation, and the filled circles indicate the individual measurements.
+
 To determine the distribution of the insertion sites, we divided the largest chromosome arms (3R, 3L, 2R, 2L, X) into roughly 1 megabase bins and counted the number of insertions per bin. Then we plotted the fraction of the total insertions on that chromosome arm in each bin. A plot for the arms of chromosome 3 is shown in Figure 3e. The plots of the other chromosomes are shown in Figure 3—figure supplement 2. At this level of resolution, insertions are detected roughly evenly across the chromosomes.
 
 The feasibility of the system allowed us to test whether TE activity could affect life span. We set up three independent cohorts to measure life span. The assays were performed at different times of the year. We consistently found that the somatic expression of an active gypsy significantly decreased the life span of male flies (Figure 4a). The individual cohorts showed a consistent effect on life span and the merged data was used to analyze the effect. A 19% reduction of life span in the active gypsy male flies is observed compared to parental controls, with a median survival of 70 days and 86 days, respectively. A life span effect was also observed in females; surprisingly it was also present in the UAS-gypsy parental control (Figure 4—figure supplement 1). Interestingly, a molecular assay demonstrates that more detected insertions are present in female UAS-gypsy controls than their male equivalents (Figure 4—figure supplement 2). An additional molecular assay was done in the Ubi>gypsy genotype to look at the distribution of detected insertions between the head and body (Figure 4—figure supplement 3). No significant difference was detected in male flies, indicating an equivalent level of insertions throughout somatic tissue. In females, however, a significant bias toward insertions in the body was detected, indicating possible differential expression of UAS-gypsy in the mixed tissues. Due to the confounding effects of the system observed in female flies (life span defect in parental UAS-gypsy control and differential distribution of detected insertions in Ubi>gypsy), male flies were used for all following experiments. The life span effect on the Ubi>gypsy flies only becomes apparent once the flies start to age. At 26 days old, the survival curves noticeably separate from the parental controls and calculation of the age-specific mortality shows a significant increase in mortality present in 26–75-day-old animals (Figure 4b–e).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/80169/elife-80169-fig4-v2.jpg)
+
+**Figure 4.:** (a) Survival curves of male flies expressing gypsy under the control of Ubiquitin GAL4 (red) and the parental controls: gypsy/+ (blue) and Ubi/+ (black). Data represents three biological replicates (independent cohorts done at different times of year), error bars SE. p-value<0.0001, log-rank test. (b–e) Data are represented as means ± SD (individual measurements are shown as dots, age-specific mortality was calculated for each cohort independently). One-way ANOVA: adjusted p-value 26–50 days (gypsy/+ 0.047, Ubi/+ 0.047), adjusted p-value 51–75 days (gypsy/+ 0.015, Ubi/+ 0.030), ns, not significant.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80169/elife-80169-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Data represents three biological replicates (independent cohorts done at different times of year), error bars SE. p-value<0.0001, log-rank test.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/80169/elife-80169-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Ectopic gypsy provirus insertion junctions are detected. Data are represented as means ± SEM. gypsy/+ gDNA from dead flies across the whole life span curve was assayed. All dead flies were assayed. Each dot represents a pool of 5–10 dead flies. Two-tailed Mann–Whitney test, *p-value=0.0177. Male n = 12 pools. Female n = 14 pools.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/80169/elife-80169-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (a, b) Ectopic gypsy provirus insertion junctions are detected. Data are represented as means ± SD (three biological replicates, each dot represents a pool of gDNA from 15 to 20 14-day-old heads or bodies). (a) Males. Two-tailed unpaired t-test, ns p-value>0.9. (b) Females. Two-tailed unpaired t-test, *p-value=0.047.
 
 Ectopic gypsy DNA was detected at different ages in the survival curve (5, 14, 30, 50, and 70 days old) with three different primer pairs. In Figure 5a, the recombinant 5′ LTR gypsy junction is targeted to detect complete ectopic gypsy elements. In Figure 5b, the 3′ fragment of ectopic gypsy is targeted for detection. The 3′ fragment comprises the region between the env gene and the tag in the 3′ LTR. Complete and incomplete gypsy elements are quantified by this approach. In Figure 5c, the wildtype gypsy env region is targeted. This approach captures both the endogenous and ectopic gypsy content in the genome. Of the three approaches, the detection of the 5′ LTR gypsy junction (Figure 5a) is the most stringent because only complete gypsy elements are detected. This is reflected in the smaller content of ectopic gypsy DNA detected compared to the 3′ fragment assay that detects both complete and incomplete gypsy elements (Figure 5b and c). The three approaches detect a relatively constant level of DNA while the animals are young with a surprising decrease in detection of ectopic gypsy DNA in older animals. Interestingly, ectopic gypsy RNA expression remains constant throughout the assayed time points (Figure 5d). Although variability increases greatly with age.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/80169/elife-80169-fig5-v2.jpg)
 
-**Figure 5.:** gypsy DNA does not increase with age.(a–c) gDNA qPCR of male flies at different ages (5 days, 14 days, 30 days, 50 days, and 70 days). Data are represented as means ± SD (three biological replicates, each dot is a pool of 10 flies). Two-way ANOVA, ****adjusted p-value<0.0001, **adjusted p-value<0.01, *adjusted p-value<0.05. (a) Ectopic gypsy provirus junctions are detected. (b) 3′ end of ectopic gypsy fragments are detected. (c) Wildtype (WT) and ectopic gypsy env fragments are detected. (d) RT-qPCR of male flies at different ages (5 days, 14 days, 30 days, 50 days, and 70 days). 3′ end of ectopic gypsy transcript is detected. Data are represented as means ± SD (three biological replicates, each dot is a pool of five flies). Two-way ANOVA, not significant (ns).
+**Figure 5.:** (a–c) gDNA qPCR of male flies at different ages (5 days, 14 days, 30 days, 50 days, and 70 days). Data are represented as means ± SD (three biological replicates, each dot is a pool of 10 flies). Two-way ANOVA, ****adjusted p-value<0.0001, **adjusted p-value<0.01, *adjusted p-value<0.05. (a) Ectopic gypsy provirus junctions are detected. (b) 3′ end of ectopic gypsy fragments are detected. (c) Wildtype (WT) and ectopic gypsy env fragments are detected. (d) RT-qPCR of male flies at different ages (5 days, 14 days, 30 days, 50 days, and 70 days). 3′ end of ectopic gypsy transcript is detected. Data are represented as means ± SD (three biological replicates, each dot is a pool of five flies). Two-way ANOVA, not significant (ns).
 
 The effect on life span caused by TE activity could be due to the process of retrotransposition through a DNA intermediate or by disruption of RNA homeostasis. One way to address this is to remove the DNA synthesis step and test whether TE RNA presence alone can mediate the decrease in life span. This led us to test whether the life span effect would be present after deleting the reverse transcriptase (RT) from the UAS-gypsy polyprotein. We created a UAS-gypsy construct that contains an in-frame deletion in the polyprotein that removes most of the RT (Marlor et al., 1986) and inserted it in the same attP landing site on chromosome 2 (UAS-ΔRT). The deletion of RT in the UAS-gypsy transgene prevents the life span effect observed when crossed to Ubi-GAL4 (Ubi>ΔRT genotype) (Figure 6a). This is not due to a defect in mRNA levels because RT-qPCR indicates that Ubi>ΔRT and Ubi>gypsy express the transposon RNA at the same level (Figure 6b). Consistent with the loss of RT activity, we detect no increase in ectopic gypsy 3′ DNA in the Ubi>ΔRT line despite expressing equivalent levels of mRNA as Ubi>gypsy (Figure 6c). This result indicates that an active RT is required for the observed decrease in life span seen when gypsy is ectopically expressed in somatic tissue.
 
@@ -70,6 +149,22 @@ The effect on life span caused by TE activity could be due to the process of ret
 To determine whether the decrease in life span of the active gypsy flies was accompanied by an acceleration of aging-associated phenotypes, we decided to test whether the ectopic expression of the gypsy TE resulted in the early emergence of any aging hallmarks. In particular, we focused on four different phenotypes that appear in normal aging flies (decreased resistance to dietary paraquat; Arking et al., 1991), decline in negative geotaxis (Rhodenizer et al., 2008), decrease of total activity (Sun et al., 2013), and disruption of circadian phenotypes (Curran et al., 2019; Rakshit et al., 2012).
 
 For the paraquat resistance assays, 5-, 15-, 30-, and 50-day-old flies were exposed to 20 mM paraquat. As expected, resistance to paraquat exposure decreased with age in all genotypes (Figure 7a). Interestingly, the survival curve of the 5-day-old active gypsy flies mimicked that of the 15-day-old parental control curves. Meanwhile, the 15-day-old active gypsy flies had a significant decrease in resistance to paraquat exposure when compared to age-matched parental controls. However, once the flies are 30 and 50 days old it appears TE activity can no longer exacerbate the oxidative stress survival as experimental and control flies die at a similar rate.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/80169/elife-80169-fig7-v2.jpg)
+
+**Figure 7.:** (a) Survival curves of male flies after exposure to 20 mM paraquat at different ages (red = 5 days, blue = 15 days, magenta = 30 days, and black = 50 days). Experimental flies expressing gypsy under the control of Ubiquitin GAL4 are represented as circles. The parental controls Ubi/+ and gypsy/+ are denoted squares and triangles, respectively. Statistical significance is indicated on graph. *p-value=0.013, **p-value=0.006, p-value<0.0001, log-rank test. (b) Summary table of the percentage of rhythmic flies (R%) and their period in DD. (c) Rhythmicity levels of each genotype across the assessed ages (± SEM). gypsy/+ control, Ubi>gypsy experimental, and Ubi/+ control flies are represented in blue, red, and gray, respectively. The black and red dotted lines mark the thresholds between what are considered highly (rhythmicity index [RI] > 0.2) and weakly rhythmic, and arrhythmic flies (RI < 0.1). The number at the bottom of each column indicates the n.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/80169/elife-80169-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** The sudden increase in activity around day 40 corresponds with the start of a new recording. UAS-gypsy/+ blue line. Ubi>gypsy red line. Ubi/+ black line. N = 26–32. Data are represented as means ± SEM.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/80169/elife-80169-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Climbing behavior at three different ages 7-day-old (black square), 35-day-old (gray triangle), and 56-day-old (light gray inverted triangle) of the UAS-gypsy parental control. Data are represented as means ± SEM (five biological replicates, three trials each). Behavior was examined using different thresholds: (a) 2.5cm (b) 5cm (c) 7.5cm (d) 10cm (e) 12.5cm.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/80169/elife-80169-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Threshold 7.5 cm. Data are represented as means ± SEM (10 biological replicates, 10 male flies each, 5 trials per replicate). gypsy/+ blue circles. Ubi>gypsy red squares. Ubi/+ black triangles. (a) 5 s. (b) 10 s. Slopes were analyzed by simple linear regression and determined to be not significantly different from each other.
 
 We also tested total activity as well as other well-characterized circadian phenotypes such as their ability to anticipate day and night, strength of their free-running conditions, or periodicity. Briefly, we placed 20-, 30-, or 40-day-old flies into Drosophila Activity Monitors and recorded their total activity for over 10 days at 25°C in 12:12 light–dark (LD) conditions. We did not find any significant decrease in the overall activity levels of the active gypsy flies compared to their parental controls at any of the assessed times (Figure 7—figure supplement 1). Simultaneously, a separate group of flies was entrained for 3 days to the same 12:12 LD conditions and then placed in free-running conditions in constant darkness (DD) to assess the strength of the endogenous clock on these flies. While no significant effect was found in their periodicity, the rhythmicity levels of the flies overexpressing gypsy were affected compared to those of their age-matched controls. Also, 84–97% of the control flies were rhythmic at all the assessed ages, whereas only 73–77% of the flies with ectopic expression of the TE remain rhythmic (Figure 7b). Indeed, these flies also display a significant decline in their rhythmicity index (RI) throughout the assessed ages that does not happen in the control flies (Figure 7c).
 
@@ -113,50 +208,374 @@ The FOXO family of transcription factors regulate many pathways that could be re
 
 ## Materials and methods
 
-## Fly stocks, D. melanogaster husbandry, and constructs
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Drosophila melanogaster)</td>
+      <td>Wildtype control; wt; wDAH</td>
+      <td>Doi: 10.1111/j.1474-9726.2011.00707.x; Slack et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>w1118</td>
+      <td>Kadener Lab, Brandeis University</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>dFOXO null; wDAH ∆94; dFOXO deletion animals</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 42220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-gypsy TAG; UAS-gypsy</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Fly stocks, D. melanogaster husbandry, and constructs’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-ΔRT; RT deletion</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See ‘Fly stocks, D. melanogaster husbandry, and constructs’</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Ubi-Gal4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 32551</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-FOXO</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 42221</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tag-Provirus junction_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCCAAGCTCAGAATTAACCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tag-Provirus junction_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGGTGGGTTCAGATTGTTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gypsy env – Tag_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TACAGCGCACCATCGATACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gypsy env – Tag_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTGAGGGTTAATTCTGAGCTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gypsy env_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTCTGCTACACCGGATGAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gypsy env_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGTATCGATGGTGCGCTGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rp49_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCACCAGTCGGATCGATATGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rp49_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTCTTGAGAACGCAGGCGACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FOXO_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CACGGTCAACACGAACCTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FOXO_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGTAGCCGTTTGTGTTGCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Primers for NGS</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Table 2</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq RNA Library Prep Kit v2</td>
+      <td>Illumina</td>
+      <td>RS-122-2001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tri Reagent</td>
+      <td>Molecular Research Center</td>
+      <td>TR 118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraquat</td>
+      <td>Sigma</td>
+      <td>856177-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FASTQ Groomer</td>
+      <td>Galaxy web platform (usegalaxy.org)</td>
+      <td></td>
+      <td>See ‘Bioinformatics’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC</td>
+      <td>Galaxy web platform (usegalaxy.org)</td>
+      <td></td>
+      <td>See ‘Bioinformatics’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RNA STAR aligner</td>
+      <td>Galaxy web platform (usegalaxy.org)</td>
+      <td></td>
+      <td>See ‘Bioinformatics’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trimmomatic</td>
+      <td>Galaxy web platform (usegalaxy.org)</td>
+      <td></td>
+      <td>See ‘Insertion mapping’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Barcode Splitter</td>
+      <td>Galaxy web platform (usegalaxy.org)</td>
+      <td></td>
+      <td>See ‘Insertion mapping’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cutadapt</td>
+      <td>Galaxy web platform (usegalaxy.org)</td>
+      <td></td>
+      <td>See ‘Insertion mapping’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>Galaxy web platform (usegalaxy.org)</td>
+      <td></td>
+      <td>See ‘Insertion mapping’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DEBrowser</td>
+      <td>Kucukural et al., 2019</td>
+      <td></td>
+      <td>See ‘Bioinformatics’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>weblogo3</td>
+      <td>Crooks et al., 2004</td>
+      <td></td>
+      <td>See ‘Insertion mapping’</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software</td>
+      <td>Version 9.4.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB: Vecsey’s SCAMP</td>
+      <td>MathWorks, Donelson et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>M-270 Dynabeads</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 65305</td>
+      <td>Magnetic resin</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NextSeq 500</td>
+      <td>Illumina</td>
+      <td>Cat# SY-415-1001</td>
+      <td>Illumina sequencing platform reagents</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>D. melanogaster genome (dm6)</td>
+      <td>Galaxy web platform (usegalaxy.org)</td>
+      <td></td>
+      <td>See ‘Bioinformatics’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TE consensus FASTA</td>
+      <td>TIDAL Database, Rahman et al., 2015</td>
+      <td></td>
+      <td>See ‘Bioinformatics’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Flybase genespan</td>
+      <td>Flybase.org Genome Browser</td>
+      <td></td>
+      <td>See ‘Insertion mapping’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Intron annotation for Ensembl</td>
+      <td>Ensembl</td>
+      <td>intron_annotation_Drosophila_ensemblv84.bed</td>
+      <td>See ‘Insertion mapping’</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks, D. melanogaster husbandry, and constructs
 
 D. melanogaster stocks and experimental flies were maintained at 25°C with a 12 hr light/dark cycle at controlled relative humidity. Male flies were used for this study. The fly strains used for RNA-seq were dFOXO null (wDAH ∆94) and its isogenic wildtype control wDAH, both have been previously described (Spellberg and Marr, 2015). The UAS-gypsy TAG fly strain was created by modifying the plasmid pDM111, which contains an active copy of gypsy (Bayev et al., 1984; a generous gift from the Corces lab). The white marker from pTARG (Egli et al., 2006) and a phiC31 attB site were added to the plasmid and a unique sequence was inserted in the gypsy 3′ LTR. The 5′ LTR of gypsy was precisely replaced with the UAS promoter from pUAST (Brand and Perrimon, 1993) such that the start of transcription matched the start for the gypsy LTR. For the RT deletion, the UAS-gypsy parent plasmid was cut with AflII to create an in-frame deletion of most of the RT from the gypsy polyprotein (Marlor et al., 1986). The constructs were sent to BestGene Inc (Chino Hills, CA) for injection into D. melanogaster. Transgenes were integrated into the VK37 (Venken et al., 2006) attP site (BDSC 9752) using PhiC31 integrase and balanced. The line was then extensively backcrossed into the w1118 background. The Ubi-GAL4 and UAS-FOXO fly strains were obtained from Bloomington (32551 and 42221, respectively) and crossed for at least five generations into the w1118 lab stock. The following strains were generated by crosses: w1118; Ubi >gypsy (w1118; UAS-gypsy mated to w1118; Ubi-GAL4), w1118; Ubi>∆RT (w1118; ∆RT mated to w1118; Ubi-GAL4), w1118; Ubi/+; UAS-FOXO/+ (w1118; Ubi-GAL4;+/TM3 mated to w1118; UAS-FOXO), w1118; Ubi/UAS-gypsy; UAS-FOXO/+ and w1118; UAS-gypsy/+; UAS-FOXO/+ (w1118; Ubi/+; UAS-FOXO/+ mated to w1118; UAS-gypsy). All flies used throughout our experimental procedures were placed in the w1118 genetic background.
 
-## RNA-seq
+### RNA-seq
 
 Total RNA from the whole body of 10 male wDAH and dFOXO null (wDAH ∆94) flies was extracted with TRI Reagent at 5–6 days and 30–31 days old according to the manufacturer’s protocol (Molecular Research Center, Inc, Cincinnati, OH). To generate RNA-seq libraries, 1 µg of total RNA was used as input for the TruSeq RNA Library Prep Kit v2 (Illumina, Inc, San Diego, CA) and the manufacturer’s protocol was followed. Libraries were sequenced on an Illumina NextSeq 500 in 1 × 75 bp mode. Three individually isolated biological replicates were sequenced for each condition.
 
-## Bioinformatics
+### Bioinformatics
 
 RNA-seq fastQ files were uploaded to the public server usegalaxy.org and processed at the Galaxy web platform (Afgan et al., 2018). The tools FASTQ Groomer (Blankenberg et al., 2010) and FastQC (Andrews, 2010) were used for library quality control. To obtain gene counts, the RNA STAR aligner (Dobin et al., 2012) was used to map the sequencing data to both the D. melanogaster genome (dm6) and to a TE consensus FASTA file with 176 Drosophila TE. The R package DEBrowser (Kucukural et al., 2019) was used for the following procedures: to filter the counts (1 count per million [CPM] in at least 11/12 libraries), 105 TEs passed filtering, calculate differential expression and statistical significance with DESeq2 (parameters: 5% false discovery, 1.5-fold, local, no beta prior, LRT), and generate volcano and scatter plots.
 
-## Life span assays
+### Life span assays
 
 Life span assays were performed as previously described (Linford et al., 2013). Briefly, newly eclosed flies were mated for 48 hr, sorted by gender, and kept at a standard density of 15 flies per vial. Flies were transferred to fresh food every 2–3 days and mortality was recorded. Three independent biological replicates of at least 100 flies were performed at different times for Ubi>gypsy. The age-specific mortality rate was calculated by dividing the deaths occurred in a given age group by the size of the population in which the deaths occurred (Principles of Epidemiology, 2021). Two independent biological replicates were performed at different times for Ubi>gypsy; UAS-FOXO/+ and Ubi>∆RT. Kaplan–Meier survival curves were generated with GraphPad Prism version 9 (GraphPad Software, San Diego, CA, https://www.graphpad.com) and analyzed with the log-rank test.
 
-## RT-qPCR and genomic DNA qPCR
+### RT-qPCR and genomic DNA qPCR
 
 Total RNA or DNA was extracted from the whole body of 5–10 male flies. RNA was extracted with the TRI Reagent according to the manufacturer’s protocol (Molecular Research Center, Inc) and genomic DNA as described previously (Aljanabi and Martinez, 1997). cDNA for RT-qPCR was synthesized as previously described (Olson et al., 2013). RT-qPCR and gDNA qPCR were performed as follows: for a 10 µl reaction 2 µl of cDNA or 50 ng of DNA were used as template and assayed with SYBR green with the primers in Table 2. For all experiments, three biological replicates were assayed for each condition and the relative expression was calculated as a fraction of the housekeeping gene Rp49.
 
-## Oligo adenylation
+**Table 2.**
+ Primers.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Target</th>
+      <th>Forward</th>
+      <th>Reverse</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Tag-Provirus junction</td>
+      <td>GCCAAGCTCAGAATTAACCC</td>
+      <td>TGGTGGGTTCAGATTGTTGG</td>
+    </tr>
+    <tr>
+      <td>gypsy env – Tag</td>
+      <td>TACAGCGCACCATCGATACT</td>
+      <td>GTGAGGGTTAATTCTGAGCTTG</td>
+    </tr>
+    <tr>
+      <td>gypsy env</td>
+      <td>CTCTGCTACACCGGATGAGT</td>
+      <td>AGTATCGATGGTGCGCTGTA</td>
+    </tr>
+    <tr>
+      <td>Rp49</td>
+      <td>CCACCAGTCGGATCGATATGC</td>
+      <td>CTCTTGAGAACGCAGGCGACC</td>
+    </tr>
+    <tr>
+      <td>FOXO</td>
+      <td>CACGGTCAACACGAACCTGG</td>
+      <td>GGTAGCCGTTTGTGTTGCCA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Oligo adenylation
 
 MB1192 was adenylated using recombinant MTH ligase (Zhelkovsky and McReynolds, 2011). Then, 200 pmol of oligo was adenylated in a 200 µl reaction (50 mM Tris 7.5, 10 mM MgCl2, 0.1 mM EDTA, 0.1 mM ATP, 5 mM DTT) with 10 µl recombinant MTH ligase. The reaction was incubated at 65°C for 1 hr and terminated by incubation at 85°C for 15 min. Then, 20 µg of glycogen was added to the reaction followed by 500 µl ethanol. The oligo was placed at –20°C for 30 min and collected by centrifugation. The pellet was resuspended in 100 µl 6 M GuHCl, 50 mM Tris 6.8. Also, 400 µl of ethanol was added and the oligo was loaded onto a silica spin column (BioBasic PCR cleanup). The column was washed once with 80% ethanol and then centrifuged until dry. The adenylated oligo was eluted in 40 µl TE and quantitated by UV absorbance.
 
-## NGS library preparation
+### NGS library preparation
 
 To prepare the insertion libraries, 250 ng of genomic DNA was digested with the 4-base cutter MnlI (NEB, Ipswich, MA), overnight at 37°C according to the manufacturer’s recommendations, to fragment the genome. Additionally, MnlI cuts the UAS-gypsy element 61 times including 17 bp from the 5′ end of the 3′ LTR to limit the recovery of the parental UAS-gypsy sequences. The fragmented DNA was purified using a silica-based PCR cleanup kit (Biobasic, Markham, Canada). A biotinylated primer (MB2640) annealing to the TAG sequence was annealed and extended with 20 cycles of linear amplification with pfuX7 (Nørholm, 2010) in a 100 µl reaction (20 mM Tris–HCl pH 8.8 at 25°C, 10 mM (NH4)2SO4, 10 mM KCl, 2 mM MgSO4, 0.1% Triton X-100, 200 µM dNTPs, 0.5 µM primer, 5u pfuX7) The reaction was quenched by adding 400 µl TENI (10 mM Tris 8.0, 1 mM EDTA, 25 mM NaCl, 0.01% Igepal 630). Biotinylated products were purified using M270 Dynabeads (Thermo Fisher, Waltham, MA) by incubating the reaction for 30 min at room temperature followed by magnetic separation of bound DNA. The beads were washed three times with TENI. Single-stranded biotinylated DNA was purified by incubating the beads with 0.15 N NaOH for 15 min at room temperature. Beads were washed once more with 0.15 N NaOH to remove the non-biotinylated DNA strand. Beads were neutralized by washing two times in TENI and transferred to a new tube. The adenylated MB1192 oligo was ligated to the biotinylated ssDNA on the dynabeads using MTH ligase (Torchia et al., 2008). Beads were resuspended in a 60 µl reaction containing 10 mM HEPES pH 7.4, 5 mM MnCl2 and 60 pmol adenylated MB1192 oligo. Then, 5 µl recombinant MTH RNA ligase was added and the reaction was incubated at 65°C for 1 hr and terminated by incubation at 85°C for 15 min. The library was amplified by PCR using a primer to the ligated product (MB1019) and a nested primer containing a 5′ tail with Illumina sequences (MB2669). The individual libraries were amplified by PCR using primers containing attachment sequences (MB583) and barcodes (MB26673 or MB2674 or MB2675). Libraries were sequenced on an Illumina MiSeq using a PE 150 kit.
 
-## Insertion mapping
+### Insertion mapping
 
 To process the reads, the fastQ file was first separated by Illumina barcode. The individual libraries were processed using Galaxy (Afgan et al., 2018). First MB2667 primer sequences were removed from read 1 using Trimmomatic (Bolger et al., 2014). Reads containing the gypsy LTR were separated using Barcode Splitter. The remaining LTR sequences were removed using cutadapt (Martin, 2011). The reads were filtered for size and then aligned to the UAS-gypsy construct. Then, 20–35% of the reads mapped to the original parental UAS-gypsy. Unaligned reads were then aligned to the Drosophila genome (dm6) using Bowtie2 (Langmead and Salzberg, 2012). PCR duplicates were removed, and the insertion sites were compared to the flybase genespan annotation to identify all insertions in transcribed regions. Insertion sites were compared to the intron annotation for Ensembl for identifying insertions in introns. The reverse complement of the first 22 nucleotides of the deduplicated insertion sites were used to determine the probability of finding each nucleotide at each position using weblogo3 (Crooks et al., 2004).
 
-## Paraquat stress assay
+### Paraquat stress assay
 
 Male flies generated and reared in the same conditions as life span assay flies were fed 20 mM paraquat at 5, 15, 30, or 50 days. Briefly, at the specified time point flies were starved for 3–4 hr prior to transfer into a minimal food medium (5% sucrose, 2% agar, water) containing 20 mM paraquat. Mortality was recorded in 8 and 16 hr intervals. Approximately 100 flies were used per genotype/time point. Kaplan–Meier survival curves were generated with GraphPad Prism version 9 (GraphPad Software) and analyzed with the log-rank test.
 
-## Negative geotaxis assay
+### Negative geotaxis assay
 
 A negative geotaxis assay based on previously established protocols (Gargano et al., 2005; Madabattula et al., 2015; Tuxworth et al., 2019) was set up to assay experimental and control flies at 7, 14, 35, and 56 days. Briefly, male flies generated and reared in life span assay conditions were used. The same cohort was assayed for all the different time points. The day before the experiment, flies were transferred under light CO2 to fresh food vials (10 flies per vial) and allowed to recover for at least 18 hr. Flies were then taken out of the incubator and allowed to acclimate to room temperature for 1 hr. They were then transferred to a 50 ml graduated glass cylinder (VWR, Radnor, PA) sealed with a cotton plug and allowed to acclimate for 1 min before starting trials. Trials were recorded on an iPhone X camera (Apple Inc, Cupertino, CA) placed 30 cm away from the recording spot. A trial consisted in tapping flies to the base of the cylinder and allowing them to climb for 20 s. They were then given 60 s to recover before starting the next trial. A total of five trials was performed for each vial. Ten vials were assayed per genotype (N = 100). Flies were then transferred to fresh food vials and returned to the incubator. Linear regression was performed in Prism (GraphPad Software, https://www.graphpad.com) to determine the slope of the curves and any possible significant differences.
 
-## Locomotor activity analysis
+### Locomotor activity analysis
 
 Flies were entrained in 12:12 LD conditions at 25°C. The locomotor activity of 20-, 30-, and 40-day-old male flies was recorded using the Trikinetics locomotor activity monitor (Waltham, MA). Two sets of experiments were conducted. On one set, flies were maintained in 12:12 LD throughout the whole length of the experiment (10–12 days). The other set was entrained in 12:12 for 3 days, followed by at least 5 days in constant darkness (DD). Quantification of total activity and the analysis of circadian rhythmicity strength and period were conducted in MATLAB using Vecsey’s SCAMP (Donelson et al., 2012). Flies with a RI < 0.1 were classified as arrhythmic; ones with RI 0.1–0.2 as weakly rhythmic, while flies with RI > 0.2 were considered strongly rhythmic. Only the period of weakly or strongly rhythmic flies was included in the calculation of the free-running period for each genotype.
 
-## Statistics
+### Statistics
 
 All statistical analyses, except RNA-seq, were conducted using GraphPad Prism version 9 for Mac (GraphPad Software, https://www.graphpad.com). Multiple comparisons in the ordinary one-way and two-way ANOVA were corrected by the two-stage linear step-up procedure of Benjamini, Krieger, and Yekutiel.

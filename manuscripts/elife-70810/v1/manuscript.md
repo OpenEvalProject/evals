@@ -10,9 +10,9 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Department of Cell Biology, Johns Hopkins University School of Medicine Baltimore United States
-2. https://ror.org/04byxyr05 Division of Developmental Biology, Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health Bethesda United States
-3. https://ror.org/00f54p054 Graduate Program in Biophysics, Stanford University Stanford United States
+1. Department of Cell Biology, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. Division of Developmental Biology, Eunice Kennedy Shriver National Institute of Child Health and Human Development, National Institutes of Health Bethesda United States ([ROR:04byxyr05](https://ror.org/04byxyr05))
+3. Graduate Program in Biophysics, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
 
 † Corresponding author
 
@@ -36,21 +36,311 @@ Here, we show that the direct activation of EGFR signaling in adult hub cells is
 
 ## Results
 
-## Activation of EGFR signaling in quiescent adult hub cells is sufficient to trigger cell cycle re-entry
+### Activation of EGFR signaling in quiescent adult hub cells is sufficient to trigger cell cycle re-entry
 
 To identify changes in signaling that are sufficient to drive hub cells into mitosis, we conducted a genetic screen in which we mis-expressed components of major signaling pathways in the adult hub and immunostained testes for mitotic hub cells (Figure 1B). We used the Gal4-UAS system to conditionally knock down or over-express candidate genes specifically in adult hub cells; candidates included receptors, downstream effectors, and transcription factors from most of the canonical signaling pathways in Drosophila (Housden and Perrimon, 2014). Flies carrying the hub-specific driver E132-Gal4 and the temperature-sensitive Gal4 inhibitor tub-Gal80ts (which we abbreviate as E132-Gal4, Gal80ts) were crossed to flies carrying UAS-based over-expression or knockdown (dominant-negative or RNAi) constructs (UAS-X). Crosses were set at permissive temperature (18 °C), and adult male progeny (E132-Gal4, Gal80ts > UAS X) were shifted to restrictive temperature (31 °C) for 7 days to induce expression of the transgene. Testes were then dissected, fixed, and immunostained for the hub cell marker Fasciclin 3 (Fas3) and the mitotic cell marker Phospho-histone H3 (PH3). As a positive control for our candidate screen, we included testes from flies in which hub cells are forced to re-enter the cell cycle by knockdown of the cell cycle inhibitor Rbf (Greenspan and Matunis, 2018). As expected, PH3-positive cells were detected in 29–32% of these positive control testes (E132-Gal4, Gal80ts > UAS-Rbf-RNAi; n = 291 testes; Table 1; Figure 1C). Importantly, PH3-positive hub cells were not detected in testes from flies serving as negative controls (E132-Gal4, Gal80ts > UAS-GFP-RNAi; n = 237 testes; Table 1; Figure 1D). PH3-positive hub cells were not detected in testes with knockdown or over-expression of most signaling pathways (E132-Gal4, Gal80ts > UAS X; Appendix 1). However, PH3-positive hub cells were detected in significant numbers of testes from several fly lines over-expressing components of the canonical EGFR/MAPK pathway (Table 1). Upon ligand binding, EGFR becomes active and positively regulates Ras; activated Ras initiates a signaling cascade that ultimately activates MAPK, which phosphorylates Pointed, the major activating transcription factor of the pathway (reviewed in Lusk et al., 2017; Shilo, 2014). Over-expression of Pointed (either isoform, P1 or P2; Klaes et al., 1994) or a constitutively active form of EGFR in the hub resulted in significant numbers of testes with PH3-positive hub cells (7% of testes, n = 55, for P1; 6% of testes, n = 100, for P2; or 4% of testes, n = 117, for EGFR; Figure 1E–G). Over-expression of constitutively active Ras for 7 days caused testes to develop grossly abnormal or missing hubs (data not shown), complicating the scoring process; however, we found significant numbers of testes with PH3-positive hub cells after a shorter period (3 or 5 days) of constitutively active Ras expression in the hub (11% of testes, n = 18, after 3 days, or 6% of testes, n = 36, after 5 days; Figure 1H). The percentage of testes with PH3-positive hub cells upon over-expression of EGFR/MAPK pathway components (Table 1) is similar to that seen during recovery from CySC ablation (6–10% testes have PH3-positive hub cells at 1–5 days after ablation; Hétié et al., 2014). We conclude that activation of EGFR signaling in the hub is sufficient to drive quiescent hub cells into mitosis.
 
+**Table 1.**
+ Hub cell proliferation after EGFR pathway activation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gal4 driver</th>
+      <th>UAS line (BDSC #)</th>
+      <th>Days at 31 °C</th>
+      <th>% Testes with PH3-positive hub cells</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Controls</td>
+    </tr>
+    <tr>
+      <td rowspan="3">E132-Gal4, Gal80ts</td>
+      <td>UAS-Rbf-RNAi (41863)</td>
+      <td>7</td>
+      <td>31% (n = 34/108)****</td>
+    </tr>
+    <tr>
+      <td>UAS-Rbf-RNAi (36744)</td>
+      <td>7</td>
+      <td>29% (n = 53/183)****</td>
+    </tr>
+    <tr>
+      <td>UAS-GFP-RNAi (9330 or 9331)</td>
+      <td>7</td>
+      <td>0% (n = 0/237)</td>
+    </tr>
+    <tr>
+      <td>C587-Gal4, Gal80ts</td>
+      <td>UAS-GFP-RNAi (9331)</td>
+      <td>7</td>
+      <td>0% (n = 0/294)</td>
+    </tr>
+    <tr>
+      <td colspan="4"></td>
+    </tr>
+    <tr>
+      <td colspan="4">Downstream Effectors and Transcription Factors</td>
+    </tr>
+    <tr>
+      <td rowspan="5">E132-Gal4, Gal80ts</td>
+      <td>UAS-Pointed.P1 (869)</td>
+      <td>7</td>
+      <td>7% (n = 4/55)**</td>
+    </tr>
+    <tr>
+      <td>UAS-Pointed.P2 (399)</td>
+      <td>7</td>
+      <td>6% (n = 6/100)***</td>
+    </tr>
+    <tr>
+      <td rowspan="2">UAS-Ras85D.V12 (4847)</td>
+      <td>3</td>
+      <td>11% (n = 2/18)**</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>6% (n = 2/36)*</td>
+    </tr>
+    <tr>
+      <td>UAS-Rolled (59006)</td>
+      <td>7</td>
+      <td>0% (n = 0/92)ns</td>
+    </tr>
+    <tr>
+      <td colspan="4">Receptors</td>
+    </tr>
+    <tr>
+      <td rowspan="9">E132-Gal4, Gal80ts</td>
+      <td>UAS-Egfr Type I (9534)</td>
+      <td>7</td>
+      <td>1% (n = 1/143)ns</td>
+    </tr>
+    <tr>
+      <td>UAS-Egfr Type II (9533)</td>
+      <td>7</td>
+      <td>4% (n = 5/117)**</td>
+    </tr>
+    <tr>
+      <td>UAS-Egfr λ (59843)</td>
+      <td>7</td>
+      <td>&lt; 1% (n = 1/163)ns</td>
+    </tr>
+    <tr>
+      <td>UAS-PvR λ (58496)</td>
+      <td>7</td>
+      <td>1% (n = 1/106)ns</td>
+    </tr>
+    <tr>
+      <td>UAS-PvR λ (58428)</td>
+      <td>7</td>
+      <td>0% (n = 0/156)ns</td>
+    </tr>
+    <tr>
+      <td>UAS-InR (8250)</td>
+      <td>7</td>
+      <td>0% (n = 0/48)ns</td>
+    </tr>
+    <tr>
+      <td>UAS-InR (8263)</td>
+      <td>7</td>
+      <td>0% (n = 0/41)ns</td>
+    </tr>
+    <tr>
+      <td>UAS-Heartless λ (5367)</td>
+      <td>7</td>
+      <td>2% (n = 3/181)ns</td>
+    </tr>
+    <tr>
+      <td>UAS-Breathless λ (29045)</td>
+      <td>7</td>
+      <td>0% (n = 0/90)ns</td>
+    </tr>
+    <tr>
+      <td colspan="4">Negative Regulators</td>
+    </tr>
+    <tr>
+      <td rowspan="3">E132-Gal4, Gal80ts</td>
+      <td>UAS-Sprouty-RNAi (36709)</td>
+      <td>7</td>
+      <td>3% (n = 4/144)*</td>
+    </tr>
+    <tr>
+      <td>UAS-Pten-RNAi (33643)</td>
+      <td>7</td>
+      <td>3% (n = 4/125)*</td>
+    </tr>
+    <tr>
+      <td>UAS-Argos-RNAi (28383)</td>
+      <td>7–8</td>
+      <td>&lt; 1% (n = 1/170)ns</td>
+    </tr>
+    <tr>
+      <td>C587-Gal4, Gal80ts</td>
+      <td>UAS-Argos-RNAi (28383)</td>
+      <td>7–8</td>
+      <td>2% (n = 6/348)*</td>
+    </tr>
+  </tbody>
+</table>
+
+_Percentages in bold are significant compared to the negative control (UAS-GFP-RNAi driven by the same Gal4 driver).Fisher’s Exact Test: *p < 0.05, **p < 0.01, ***p < 0.001, ****p < 0.0001, ns = not significant._
+
 In Drosophila, the MAPK pathway can potentially be activated not only by EGFR but also by other receptor tyrosine kinases (Shilo, 2014). We therefore asked if over-expressing constitutively active forms of other receptor tyrosine kinases in adult hub cells can also cause them to re-enter the cell cycle. We again used E132-Gal4, Gal80ts to drive hub-specific expression of activated forms of the two Drosophila Fibroblast growth factor receptors (Heartless and Breathless), the PDGF- and VEGF-receptor related (Pvr); and the Insulin-like receptor (InR). Although a few testes acquired PH3-positive hub cells after over-expression of activated Heartless or Pvr, these results were not statistically significant compared to the negative control (Table 1), and we found no PH3-positive hub cells after over-expressing activated Breathless or InR. These results suggest that activation of EGFR within hub cells plays a unique role in forcing these cells to lose quiescence and re-enter the cell cycle.
 
-## EGFR is not required in adult hub cells for their maintenance
+### EGFR is not required in adult hub cells for their maintenance
 
 Having found that activation of EGFR in adult hub cells is sufficient to drive them into mitosis, we next asked whether EGFR is normally required in these cells, as it is in other cell types in the adult testis (Hudson et al., 2013; Kiger et al., 2000; Parrott et al., 2012; Sarkar et al., 2007; Schulz et al., 2002; Tran et al., 2000). We again used E132-Gal4, Gal80ts to conditionally express EGFR dominant negative or RNAi constructs in adult hub cells. Crosses were set at 18 °C and adult male progeny were shifted to 31 °C for 7 days to induce expression of the UAS-X construct. We tested one EGFR dominant-negative line and four RNAi lines, and in all cases these experimental testes were indistinguishable from our negative control testes (E132-Gal4, Gal80ts > UAS-GFP-RNAi; Table 2). We verified that each knockdown construct was working as expected by crossing each line to the cyst lineage driver C587-Gal4 together with tub-Gal80ts (which we abbreviate as C587-Gal4, Gal80ts) and driving expression for 1–2 weeks in adult cyst cells. With all five lines, testes showed a strong phenotype with accumulation of early germ cells in many or all testes (data not shown), as shown previously by Hudson et al., 2013. We therefore conclude that adult hub cells in otherwise unperturbed testes do not cell-autonomously require EGFR.
 
-## Notch is not required to maintain adult hub cell quiescence
+**Table 2.**
+ Hub cell proliferation upon EGFR and Notch signaling changes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>UAS lines (with E132-Gal4, Gal80ts)</th>
+      <th>Source</th>
+      <th>Days at 31 °C</th>
+      <th>% Testes with PH3-positive hub cells</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="4">Control</td>
+    </tr>
+    <tr>
+      <td>UAS-GFP-RNAi</td>
+      <td>BDSC 9330 or 9331</td>
+      <td>7</td>
+      <td>0% (n = 0/237)*</td>
+    </tr>
+    <tr>
+      <td colspan="4">Egfr knockdown</td>
+    </tr>
+    <tr>
+      <td>UAS-Egfr-DN</td>
+      <td>BDSC 5364</td>
+      <td rowspan="5">7</td>
+      <td>0% (n = 0/103)†,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-Egfr-RNAi</td>
+      <td>BDSC 36770</td>
+      <td>0% (n = 0/45)†,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-Egfr-RNAi</td>
+      <td>BDSC 60012</td>
+      <td>0% (n = 0/46)†,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-Egfr-RNAi</td>
+      <td>VDRC 43267</td>
+      <td>0% (n = 0/29)†,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-Egfr-RNAi✝✝</td>
+      <td>VDRC 107130</td>
+      <td>0% (n = 0/43)†,ns</td>
+    </tr>
+    <tr>
+      <td colspan="4">Notch over-expression or knockdown</td>
+    </tr>
+    <tr>
+      <td>UAS-N-CA</td>
+      <td>BDSC 52008</td>
+      <td rowspan="6">7</td>
+      <td>0% (n = 0/48)†,,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-N-DN</td>
+      <td>BDSC 51667</td>
+      <td>0% (n = 0/54)†,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-N-RNAi</td>
+      <td>BDSC 33611</td>
+      <td>0% (n = 0/119)†,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-N-RNAi</td>
+      <td>BDSC 33616</td>
+      <td>0% (n = 0/63)†,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-N-RNAi</td>
+      <td>BDSC 35213</td>
+      <td>0% (n = 0/29)†,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-N-RNAi</td>
+      <td>BDSC 35640</td>
+      <td>0% (n = 0/26)†,ns</td>
+    </tr>
+    <tr>
+      <td colspan="4">Egfr over-expression and Notch combinations</td>
+    </tr>
+    <tr>
+      <td>UAS-Egfr Type II</td>
+      <td>BDSC 9533</td>
+      <td>7</td>
+      <td>4% (n = 5/117)*</td>
+    </tr>
+    <tr>
+      <td>UAS-EGFR Type I; UAS-EGFR Type II</td>
+      <td>BDSC 9533 + 9534</td>
+      <td rowspan="3">7–8</td>
+      <td>4% (n = 11/301)‡,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-N-DN; UAS-EGFR Type II</td>
+      <td>BDSC 9533 + 51667</td>
+      <td>3% (n = 4/138)‡,ns; §,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-N-CA; UAS-EGFR Type II</td>
+      <td>BDSC 9533 + 52008</td>
+      <td>6% (n = 12/205)‡,ns; §,ns</td>
+    </tr>
+    <tr>
+      <td colspan="4">Sprouty knockdown and Notch combinations</td>
+    </tr>
+    <tr>
+      <td>UAS-Sprouty-RNAi</td>
+      <td>BDSC 36709</td>
+      <td>7</td>
+      <td>3% (n = 4/144)*</td>
+    </tr>
+    <tr>
+      <td>UAS-EGFR Type I; UAS-Sprouty-RNAi</td>
+      <td>BDSC 36709 + 9534</td>
+      <td rowspan="3">7–8</td>
+      <td>3% (n = 3/101)¶,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-N-DN; UAS-Sprouty-RNAi</td>
+      <td>BDSC 36709 + 51667</td>
+      <td>1% (n = 1/129)¶,ns; **,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-N-CA; UAS-Sprouty-RNAi</td>
+      <td>BDSC 36709 + 52008</td>
+      <td>0% (n = 0/80) ¶,ns; **,ns</td>
+    </tr>
+  </tbody>
+</table>
+
+_Fisher’s Exact Test: ns = not significant.*Data from Table 1. ✝✝Another UAS-Egfr-RNAi line, BDSC 36773, did not show a phenotype with the control driver (C587-Gal4) and is not included here.†Compared with UAS-GFP RNAi.‡Compared with UAS-EGFR Type II.§Compared with UAS-EGFR Type I; UAS-EGFR Type II.¶Compared with UAS-Sprouty RNAi.**Compared with UAS-EGFR Type I; UAS-Sprouty RNAi._
+
+### Notch is not required to maintain adult hub cell quiescence
 
 In the male embryonic gonad, EGFR and Notch act antagonistically to regulate development of the hub. Hub and cyst lineage cells both differentiate from a pool of somatic gonadal precursor cells (SGPs). Notch is activated in almost all SGPs and is required to specify hub cell identity, whereas in posterior SGPs, hub cell fate is repressed by activation of EGFR, causing these cells to differentiate into cyst lineage cells instead (Kitadate and Kobayashi, 2010; Okegbe and DiNardo, 2011). To determine if Notch plays a role in the adult hub, we conditionally expressed constitutively active (CA), dominant negative (DN), or RNAi knockdown constructs of Notch in adult hub cells using E132-Gal4, Gal80ts. No PH3-positive hub cells or any other obvious hub phenotypes were detected with any line after 7 days of transgene expression (n = 48 testes for CA, 54 testes for DN, or 26–119 testes for RNAi; Table 2). We then asked if altered levels of Notch could affect the number of dividing hub cells upon activation of EGFR in the adult hub. We conditionally expressed activated EGFR together with a constitutively active or dominant negative form of Notch in hub cells using E132-Gal4, Gal80ts, but we found no significant difference in the number of PH3-positive hub cells in either case compared to activated EGFR by itself (Table 2). These results suggest that Notch does not play a role in maintaining hub cell quiescence in the adult testis.
 
-## Activation of EGFR signaling in adult hub cells causes them to transdifferentiate into CySCs
+### Activation of EGFR signaling in adult hub cells causes them to transdifferentiate into CySCs
 
 In adult flies, genetic ablation of all CySCs, or knockdown of Rbf in the hub, causes hub cells not only to re-enter the cell cycle but also to leave the hub and transdifferentiate into CySCs (Greenspan and Matunis, 2018; Hétié et al., 2014). To test if EGFR activation in hub cells is sufficient to drive both hub cell proliferation and transdifferentiation, we performed lineage analysis of hub cells using the Gal4 Technique for Real-time and Clonal Expression (G-TRACE; Evans et al., 2009). This system, which we used previously to mark cyst lineage cells that arise from transdifferentiating hub cells upon knockdown of Rbf (Greenspan and Matunis, 2018), marks the nuclei of cells currently expressing Gal4 with a red fluorescent protein (RFP) and permanently marks the nuclei of any cells originating from the Gal4-expressing cells with a green fluorescent protein (GFP). We drove expression of EGFR pathway components (UAS-X) and G-TRACE in adult hub cells using E132-Gal4, Gal80ts. Flies were raised at 18 °C and then shifted to 29 °C for 8 days to induce simultaneous expression of UAS-X and G-TRACE. (At 31 °C, we found high background marking with the G-TRACE system alone, necessitating a lower temperature for this experiment.) In control testes expressing the G-TRACE cassette alone (E132-Gal4, Gal80ts > G-TRACE), hub cell nuclei were marked with both RFP (real-time Gal4 expression) and GFP (permanent marking expression), but cyst lineage cells outside the hub remained unmarked, as expected (Table 3; Figure 2A). In testes over-expressing components of the EGFR/MAPK pathway in the hub together with G-TRACE, hub cell nuclei were again marked with RFP and GFP, but we also found GFP-marked nuclei outside the hub in significant numbers of testes (Table 3; Figure 2B–D). Most of the GFP-marked nuclei outside the hub had little to no detectable RFP, indicating that the E132-Gal4 hub cell driver was no longer expressed in these cells. This observation, together with the morphology and arrangement of these nuclei, suggests that the GFP-marked cells outside the hub are cyst lineage cells that have lost their hub cell identity. We conclude that activation of EGFR signaling in adult hub cells is sufficient to cause their conversion to cyst lineage cells.
 
@@ -58,7 +348,62 @@ In adult flies, genetic ablation of all CySCs, or knockdown of Rbf in the hub, c
 
 **Figure 2.:** (A–D) Single confocal sections through the apex of testes after 8 days of G-TRACE lineage tracing system expression in adult hub cells. Testes were immunostained for RFP (red fluorescent protein, marking current expression of the hub-specific driver E132-Gal4) and GFP (green fluorescent protein, marking both current and past expression of E132-Gal4) and counterstained with DAPI (blue; marks all nuclei). Hubs are outlined in white. (A'-D') Red channel alone, in white; (A"-D") green channel alone, in white. In control testes (A), hub cells expressing the G-TRACE system alone are marked with RFP and GFP, but no cells outside the hub are marked. In testes over-expressing components of the EGFR signaling pathway in the hub together with G-TRACE (B–D), hub cells are marked with RFP and GFP, and cells outside the hub are also marked, either with GFP and low levels of RFP (yellow arrowheads) or with GFP only (white arrowheads). The marked cells outside the hub appear to be cyst lineage cells that arose by conversion of hub cells to CySCs, which no longer express RFP once they lose their hub cell fate. Scale bar in D, for all panels, is 10 μm.
 
-## Negative regulation of EGFR maintains hub cell quiescence and identity in adult testes
+**Table 3.**
+ Hub cell fate conversion after EGFR pathway activation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gal4 driver</th>
+      <th>UAS lines (BDSC #)</th>
+      <th>Days at 29 °C</th>
+      <th>% Testes with GFP-marked cells outside the hub</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="6">E132-Gal4, Gal80ts</td>
+      <td>UAS-G-TRACE (28280)</td>
+      <td rowspan="6">8</td>
+      <td>0% (n = 0/39)</td>
+    </tr>
+    <tr>
+      <td>UAS-G-TRACE (28280); UAS-Egfr Type II (9533)</td>
+      <td>61% (n = 19/31)****</td>
+    </tr>
+    <tr>
+      <td>UAS-G-TRACE (28280); UAS-Pointed.P1 (869)</td>
+      <td>38% (n = 19/50)****</td>
+    </tr>
+    <tr>
+      <td>UAS-G-TRACE (28280); UAS-Pointed.P2 (399)</td>
+      <td>22% (n = 4/18)**</td>
+    </tr>
+    <tr>
+      <td>UAS-G-TRACE (28280); UAS-Sprouty-RNAi (36709)</td>
+      <td>36% (n = 32/89)****</td>
+    </tr>
+    <tr>
+      <td>UAS-G-TRACE (28280); UAS- Pten-RNAi (33643)</td>
+      <td>18% (n = 6/34)**</td>
+    </tr>
+    <tr>
+      <td rowspan="2">E132-Gal4, Gal80ts</td>
+      <td>UAS-G-TRACE (28281)</td>
+      <td rowspan="2">8</td>
+      <td>0% (n = 0/84)</td>
+    </tr>
+    <tr>
+      <td>UAS-Egfr Type I (9534); UAS-G-TRACE (28281)</td>
+      <td>2% (n = 1/47)ns</td>
+    </tr>
+  </tbody>
+</table>
+
+_Percentages in bold are significant compared to the negative control (corresponding UAS-G-TRACE alone).Fisher’s Exact Test: **p < 0.01, ****p < 0.0001, ns = not significant._
+
+### Negative regulation of EGFR maintains hub cell quiescence and identity in adult testes
 
 Several negative regulators of the EGFR pathway have been identified in Drosophila (reviewed in Shilo, 2014). One of these is Sprouty, a cytoplasmic protein that is expressed in response to EGFR signaling and inhibits the pathway by a negative-feedback mechanism inside the signal-receiving cell (Casci et al., 1999; Hacohen et al., 1998; Kramer et al., 1999). Since activation of EGFR signaling in hub cells is sufficient to trigger their transdifferentiation, we hypothesized that Sprouty might be cell-autonomously required to maintain quiescence in adult hub cells. To test this hypothesis, we used E132-Gal4, Gal80ts to drive expression of a Sprouty RNAi knockdown construct (UAS-sprouty-RNAi) in adult hub cells. After 7 days of knockdown, a significant number of testes had PH3-positive hub cells (3% of testes, n = 144; Table 1; Figure 3A), confirming that Sprouty is required in adult hub cells to maintain their quiescence. To determine if hub cells depleted for Sprouty can also transdifferentiate into CySCs, we expressed Sprouty RNAi together with G-TRACE in adult hub cells (E132-Gal4, Gal80ts > UAS-sprouty-RNAi + G-TRACE). After 8 days, a significant number of testes had GFP-marked cells outside the hub (Table 3; Figure 3E), indicating that knockdown of Sprouty in adult hub cells is sufficient to cause their conversion to cyst lineage cells.
 
@@ -72,19 +417,239 @@ The final negative regulator of the EGFR pathway we examined, Argos, is a secret
 
 Having found that hub cells can be forced to re-enter the cell cycle by EGFR pathway activation - via over-expression of activators or knockdown of inhibitors - we next asked if over-expression of EGF ligands is sufficient to induce the same phenotype. Four EGF ligands have been identified in Drosophila: Gurken, Keren, Spitz, and Vein. Vein is produced as a secreted protein, but the other three are produced as inactive membrane precursors that must be cleaved to produce the active, secreted form of the ligand (reviewed in Shilo, 2014). We over-expressed Vein or secreted forms of the other ligands using E132-Gal4, Gal80ts or C587-Gal4, Gal80ts to conditionally drive expression in adult hub cells or cyst lineage cells, respectively. After 6–9 days of ligand over-expression, we did not find a significant number of testes with PH3-positive hub cells with any of these fly strains (Table 4). We speculated that the levels of EGF produced by these transgenes might not be high enough to override negative regulation by pathway inhibitors, and to test this hypothesis, we drove expression of UAS-secreted Spitz and UAS-argos-RNAi together in adult testes using C587-Gal4, Gal80ts (C587-Gal4, Gal80ts > UAS-argos-RNAi + UAS-secreted Spitz). However, the number of testes with PH3-positive hub cells in these flies was not significantly different than in flies expressing UAS-argos-RNAi alone (Table 4). We conclude that over-expression of EGF ligands is not sufficient to trigger loss of hub cell quiescence, or to enhance the loss of quiescence caused by knockdown of the Spitz antagonist Argos, but the reason for these results is not clear.
 
-## EGFR signaling is upregulated in hub cells in testes recovering from CySC ablation
+**Table 4.**
+ Overexpression of EGF ligands in the adult testis niche does not cause hub cell proliferation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gal4 driver</th>
+      <th>UAS line</th>
+      <th>Source</th>
+      <th>Days at 31 °C</th>
+      <th>% Testes with PH3-positive hub cells</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7">C587-Gal4, Gal80ts</td>
+      <td>UAS-GFP-RNAi</td>
+      <td>BDSC 9330 or 9331</td>
+      <td>7</td>
+      <td>0% (n = 0/294)*</td>
+    </tr>
+    <tr>
+      <td>UAS-secreted spitz</td>
+      <td>BDSC 63134</td>
+      <td>7–9</td>
+      <td>0% (n = 0/219)a,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-secreted spitz</td>
+      <td>BDSC 58436</td>
+      <td>7</td>
+      <td>0% (n = 0/75)a,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-gurken ΔTC</td>
+      <td>Queenan et al., 1999</td>
+      <td>7</td>
+      <td>0% (n = 0/82)a,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-secreted gurken</td>
+      <td>BDSC 58417</td>
+      <td>7</td>
+      <td>0% (n = 0/118)a,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-secreted keren</td>
+      <td>Urban et al., 2002</td>
+      <td>7</td>
+      <td>0% (n = 0/113)a,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-vein</td>
+      <td>Schnepp et al., 1996</td>
+      <td>6</td>
+      <td>0% (n = 0/96)a,ns</td>
+    </tr>
+    <tr>
+      <td rowspan="7">E132-Gal4, Gal80ts</td>
+      <td>UAS-GFP-RNAi</td>
+      <td>BDSC 9330 or 9331</td>
+      <td>7</td>
+      <td>0% (n = 0/237)*</td>
+    </tr>
+    <tr>
+      <td>UAS-secreted spitz</td>
+      <td>BDSC 63134</td>
+      <td>7</td>
+      <td>0% (n = 0/208)a,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-secreted spitz</td>
+      <td>BDSC 58436</td>
+      <td>7</td>
+      <td>0% (n = 0/92)a,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-gurken ΔTC</td>
+      <td>Queenan et al., 1999</td>
+      <td>7</td>
+      <td>0% (n = 0/86)a,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-secreted gurken</td>
+      <td>BDSC 58417</td>
+      <td>7</td>
+      <td>1% (n = 1/77)a,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-secreted keren</td>
+      <td>Urban et al., 2002</td>
+      <td>7</td>
+      <td>0% (n = 0/113)a,ns</td>
+    </tr>
+    <tr>
+      <td>UAS-vein</td>
+      <td>Schnepp et al., 1996</td>
+      <td>---</td>
+      <td>---</td>
+    </tr>
+    <tr>
+      <td>C587-Gal4, Gal80ts</td>
+      <td>UAS-secreted spitz +UAS-Argos-RNAi</td>
+      <td>BDSC 63134 +BDSC 28383</td>
+      <td>7–9</td>
+      <td>2% (n = 4/203)b,ns</td>
+    </tr>
+  </tbody>
+</table>
+
+_Fisher’s Exact Test: ns = not significant (a, compared to UAS-GFP-RNAi control; b, compared to UAS-Argos-RNAi BDSC 28383 alone [Table 1]).*Data from Table 1._
+
+### EGFR signaling is upregulated in hub cells in testes recovering from CySC ablation
 
 Having determined that inhibitors of EGFR signaling maintain adult hub cell quiescence and that EGFR pathway activation can cause hub cells to re-enter the cell cycle and transdifferentiate into cyst lineage cells, we asked if EGFR signaling plays a role in testes recovering from CySC ablation, a condition which also stimulated hub cell transdifferentiation (Hétié et al., 2014). We began by asking if we could detect activation of the EGFR pathway in hub cells in these testes. Genetic ablation of CySCs is accomplished by using the cyst lineage driver C587-Gal4, Gal80ts to drive expression of the pro-apoptotic gene grim in adult testes (C587-Gal4, Gal80ts > UAS grim); after grim expression is withdrawn, hub cells in most testes re-enter the cell cycle, eventually giving rise to new CySCs (Hétié et al., 2014). To assay for EGFR pathway activation, we again used dpERK as an indicator. We shifted control (C587-Gal4, Gal80ts) and experimental (C587-Gal4, Gal80ts > UAS grim) flies to restrictive temperature (31 °C) for 2 days to ablate all early cyst lineage cells in the experimental flies, and then returned them to permissive temperature (18 °C) for 2 days. As expected based on previous studies, in control testes, immunostaining for dpERK revealed consistently high pathway activation in cyst lineage cells but not in hub cells (Figure 4A; Chen et al., 2013; Fairchild et al., 2016; Kiger et al., 2000). By contrast, in experimental testes, the levels of dpERK staining in the hub were significantly higher than in control testes (Figure 4B–C), suggesting that the EGFR pathway activity is up-regulated in hub cells after CySC ablation. As expected, dpERK staining levels appear much lower in the area adjacent to the hub in cyst lineage-ablated testes compared to controls, since most testes have not yet recovered early cyst lineage cells at 2 days post-ablation (Hétié et al., 2014).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/70810/elife-70810-fig4-v1.jpg)
 
-**Figure 4.:** (A–B) Single confocal sections through the apex of testes immunostained for Fas3 (hub cell membranes, green), dpERK (EGFR pathway activation, red), and counterstained with DAPI (nuclei, blue). Hubs are outlined in white. Insets show the red channel alone, in white and enlarged. In control C587-Gal4, Gal80 testes (tsA), dpERK levels are high in cyst lineage cells (indicating high levels of EGFR pathway activation) but low in hub cells. In C587-Gal4, Gal80 grim testes (ts > UASB), 2 days after genetic ablation of all CySCs and early cyst cells, dpERK levels are high in hub cells. Scale bar in B (for A-B) is 20 μm. (C) Quantification of dpERK levels in the hub in control (A) and ablated (B) testes. dpErk levels in the hub are significantly higher in ablated testes than in control testes. A.U., arbitrary units. Black bars indicate the mean and standard error. Unpaired t test, **p < 0.01. (D) Bar graph showing the distribution of testis phenotypes in control C587-Gal4, Gal80 flies ("control Egfr+/+ ablation") and in ts > UAS grim, Egfr+/+C587-Gal4, Gal80 flies ("EGFR-/+ ablation") at 0, 7, or 14 days after genetic ablation of CySCs and early cyst cells. After ablation (0 days), in both control and ts > UAS grim, Egfr-/+Egfr-/+ flies, most testes lack all CySCs and early cyst cells but retain a hub and germ cells (GC) as expected (white bars). At 7 and 14 days after ablation, fewer testes have regained CySCs and early cyst cells (black bars) in Egfr-/+ flies than in control flies and there is a significant difference in phenotype distribution. Chi square test, ***p < 0.001, ****p < 0.0001. (E–I) Single confocal sections through the apex of testes at 7 days after ablation, immunostained for Vasa (germ cells, red), Fas3 (hub cell membranes, green), and Tj (somatic cell nuclei, white), and counterstained with DAPI (nuclei, blue), to illustrate the phenotypes listed in (D). Testes that recover CySCs and early cyst lineage cells have Tj-positive nuclei outside the hub (yellow arrowheads); most also contain germ cells (E) but a few contain just a hub and cyst cells (G). Testes that fail to recover CySCs and early cyst lineage cells can retain a hub and germ cells (F) or just a hub (H) or no hub or germ cells (I). Hubs are outlined in white. Scale bar in I (for E-I) is 20 μm.
+**Figure 4.:** (A–B) Single confocal sections through the apex of testes immunostained for Fas3 (hub cell membranes, green), dpERK (EGFR pathway activation, red), and counterstained with DAPI (nuclei, blue). Hubs are outlined in white. Insets show the red channel alone, in white and enlarged. In control C587-Gal4, Gal80ts testes (A), dpERK levels are high in cyst lineage cells (indicating high levels of EGFR pathway activation) but low in hub cells. In C587-Gal4, Gal80ts > UAS grim testes (B), 2 days after genetic ablation of all CySCs and early cyst cells, dpERK levels are high in hub cells. Scale bar in B (for A-B) is 20 μm. (C) Quantification of dpERK levels in the hub in control (A) and ablated (B) testes. dpErk levels in the hub are significantly higher in ablated testes than in control testes. A.U., arbitrary units. Black bars indicate the mean and standard error. Unpaired t test, **p < 0.01. (D) Bar graph showing the distribution of testis phenotypes in control C587-Gal4, Gal80ts > UAS grim, Egfr+/+ flies ("control Egfr+/+ ablation") and in C587-Gal4, Gal80ts > UAS grim, Egfr-/+ flies ("EGFR-/+ ablation") at 0, 7, or 14 days after genetic ablation of CySCs and early cyst cells. After ablation (0 days), in both control and Egfr-/+ flies, most testes lack all CySCs and early cyst cells but retain a hub and germ cells (GC) as expected (white bars). At 7 and 14 days after ablation, fewer testes have regained CySCs and early cyst cells (black bars) in Egfr-/+ flies than in control flies and there is a significant difference in phenotype distribution. Chi square test, ***p < 0.001, ****p < 0.0001. (E–I) Single confocal sections through the apex of testes at 7 days after ablation, immunostained for Vasa (germ cells, red), Fas3 (hub cell membranes, green), and Tj (somatic cell nuclei, white), and counterstained with DAPI (nuclei, blue), to illustrate the phenotypes listed in (D). Testes that recover CySCs and early cyst lineage cells have Tj-positive nuclei outside the hub (yellow arrowheads); most also contain germ cells (E) but a few contain just a hub and cyst cells (G). Testes that fail to recover CySCs and early cyst lineage cells can retain a hub and germ cells (F) or just a hub (H) or no hub or germ cells (I). Hubs are outlined in white. Scale bar in I (for E-I) is 20 μm.
 
 Given that EGFR activation increases in hub cells as they lose quiescence following CySC ablation, we next asked if this pathway is important for transdifferentiation of hub cells into CySCs. Tools to knock down gene expression in the hub in testes recovering from CySC ablation do not yet exist; we therefore addressed this question using a gene dosage approach. We genetically ablated CySCs and early cyst cells using C587-Gal4, Gal80ts to drive expression of grim as before (Hétié et al., 2014) in otherwise normal control flies (Egfr+/+) and also in flies null for one copy of the Egfr gene (Egfr-/+). In both genotypes, testes were indistinguishable from wild type testes before ablation (data not shown), and after ablation, most testes lacked CySCs and early cyst cells but retained hub cells and germ cells as expected (Figure 4D; Table 5; Hétié et al., 2014, Lim and Fuller, 2012). After 7 days of recovery, consistent with previous studies, 80% of control Egfr+/+ testes (n = 225) had regained CySCs and early cyst cells while maintaining a hub and germ cells. Most of the remaining 20% of testes had only a hub or a hub and germ cells at their apex (Figure 4D–I; Table 5). By contrast, testes from Egfr-/+ flies had a significantly different distribution of phenotypes, with only a minority of testes (45%, n = 142) regaining CySCs and early cyst cells while maintaining a hub and germ cells; most testes had only a hub or a hub and germ cells at their apex (Figure 4D; Table 5). Fourteen days after CySC ablation, the percentage of testes that had regained CySCs and early cyst cells while maintaining a hub and germ cells remained lower in Egfr-/+ flies (55%, n = 116) than in control Egfr+/+ flies (81%, n = 151; Table 5). These data are consistent with the hypothesis that EGFR signaling is important for the transdifferentiation of hub cells into CySCs after ablation.
 
-## EGFR signaling promotes the formation of ectopic niches in testes recovering from CySC ablation
+**Table 5.**
+ Ablation phenotypes with and without reduced EGFR.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Days recovered</th>
+      <th>Hub/GC/CySC</th>
+      <th>Hub/GC</th>
+      <th>Hub/CySC</th>
+      <th>Hub only</th>
+      <th>No hub</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>C587-Gal4; UAS-Grim/+; Tub-Gal80ts</td>
+      <td>0</td>
+      <td>&lt; 1%(n = 2/213)</td>
+      <td>93%(n = 197/213)</td>
+      <td>&lt; 1%(n = 1/213)</td>
+      <td>4%(n = 8/213)</td>
+      <td>2%(n = 5/213)</td>
+    </tr>
+    <tr>
+      <td>C587-Gal4; UAS-Grim/ EgfrF24; Tub-Gal80ts</td>
+      <td>0*,§,ns</td>
+      <td>3%(n = 3/108)</td>
+      <td>87%(n = 94/108)</td>
+      <td>0%(n = 0/108)</td>
+      <td>8%(n = 9/108)</td>
+      <td>2%(n = 2/108)</td>
+    </tr>
+    <tr>
+      <td>C587-Gal4; UAS-Grim/+; Tub-Gal80ts</td>
+      <td>7</td>
+      <td>80%(n = 180/225)</td>
+      <td>4%(n = 9/225)</td>
+      <td>1%(n = 3/180)</td>
+      <td>13%(n = 29/225)</td>
+      <td>2%(n = 4/225)</td>
+    </tr>
+    <tr>
+      <td>C587-Gal4; UAS-Grim/ EgfrF24; Tub-Gal80ts</td>
+      <td>7†,§,****</td>
+      <td>45%(n = 64/142)</td>
+      <td>20%(n = 28/142)</td>
+      <td>&lt; 1%(n = 1/142)</td>
+      <td>34%(n = 48/142)</td>
+      <td>&lt; 1%(n = 1/142)</td>
+    </tr>
+    <tr>
+      <td>C587-Gal4; UAS-Grim/+; Tub-Gal80ts</td>
+      <td>14</td>
+      <td>81%(n = 123/151)</td>
+      <td>1%(n = 2/151)</td>
+      <td>2%(n = 3/151)</td>
+      <td>15%(n = 22/151)</td>
+      <td>&lt; 1%(n = 1/151)</td>
+    </tr>
+    <tr>
+      <td>C587-Gal4; UAS-Grim/ EgfrF24; Tub-Gal80ts</td>
+      <td>14‡,§,***</td>
+      <td>55%(n = 64/116)</td>
+      <td>6%(n = 7/116)</td>
+      <td>3%(n = 3/116)</td>
+      <td>33%(n = 39/116)</td>
+      <td>3%(n = 3/116)</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Compared with C587-Gal4; UAS-Grim/+; Tub Gal80ts at 0 days recovered.†Compared with C587-Gal4; UAS-Grim/+; Tub Gal80ts at 7 days recovered.‡Compared with C587-Gal4; UAS-Grim/+; Tub Gal80ts at 14 days recovered.§Chi Square Test: ***p < 0.001, ****p < 0.0001, ns = not significant._
+
+### EGFR signaling promotes the formation of ectopic niches in testes recovering from CySC ablation
 
 Ectopic niches (additional hubs that support GSCs and CySCs) can form de novo in adult testes either after extended recovery from CySC ablation, or after hub cells are forced to re-enter the cell cycle by knockdown of Rbf or over-expression of cell cycle activators (Greenspan and Matunis, 2018; Hétié et al., 2014). To ask if EGFR signaling is required for ectopic niche formation after extended recovery from CySC ablation (C587-Gal4, Gal80tsts grim), we compared the number of testes with ectopic niches in Egfr-/+ flies and control Egfr+/+ flies after 14 days of recovery. We determined the percentage of testes with ectopic niches out of the total number of testes that had recovered their cyst lineage cells, since ectopic niches have been found only in this population of testes. The percentage of recovered testes with ectopic niches in Egfr-/+ flies (12%, n = 270) was significantly lower than in control Egfr+/+ flies (29%, n = 487, p < 0.0001; Table 6). We conclude that EGFR signaling is important not only for recovery of CySCs but also for ectopic niche formation in testes recovering from genetic ablation of CySCs.
+
+**Table 6.**
+ Percentage of testes with ectopic hubs after 14 day recovery from CySC ablation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>DaysRecovered</th>
+      <th>% Recovered Testes with Ectopic Hubs</th>
+      <th>% Recovered Testes without Ectopic Hubs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>C587-Gal4; UAS-Grim/+; Tub-Gal80ts</td>
+      <td>14</td>
+      <td>29%(n = 139/487)</td>
+      <td>71%(n = 348/487)</td>
+    </tr>
+    <tr>
+      <td>C587-Gal4; UAS-Grim/EgfrF24; Tub-Gal80ts</td>
+      <td>14****</td>
+      <td>12%(n = 32/270)</td>
+      <td>88%(n = 238/270)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Fisher’s Exact Test: ****p < 0.0001 (compared to testes with ectopic hubs in control C587-Gal4; UAS-Grim/+; Tub-Gal80ts flies)._
 
 We then asked if activation of EGFR signaling alone, in otherwise unperturbed testes, can cause ectopic niches to form after an extended period of time (14 days). We drove expression of constitutively active EGFR or Sprouty RNAi in adult hub cells (using E132-Gal4, Gal80ts) or Argos RNAi in adult cyst lineage cells (using C587-Gal4, Gal80ts), but we found no ectopic niches in any testes (n = 35, 285, or 291 testes, respectively). Therefore, although EGFR signaling is important for ectopic niche formation after genetic ablation of CySCs, activation of EGFR signaling by itself is not sufficient to promote the formation of ectopic niches.
 
@@ -104,19 +669,19 @@ In flies recovering from genetic ablation of CySCs, when Egfr gene dosage is red
 
 ## Materials and methods
 
-## Drosophila husbandry and strains
+### Drosophila husbandry and strains
 
 Flies were raised on a standard yeast/cornmeal/molasses medium (1212.5 mL water, 14.7 mL agar, 20.4 g yeast, 81.8 g cornmeal, 109.1 ml molasses, 10.9 mL Tegosept, 3.4 mL propionic acid, 0.4 mL phosphoric acid per tray of 100 vials) supplemented with dry yeast at 18 °C unless otherwise indicated. Male flies 0–7 days old were used for all experiments and subjected to different conditions as noted within the text, figure legends, and methods. Flies containing the UAS-Grim construct (Wing et al., 1998) were a gift from DJ Pan; UAS-gurken ΔTC (Queenan et al., 1999) and UAS-secreted keren (Urban et al., 2002) flies were a gift from D. Montell; and UAS-vein flies (Schnepp et al., 1996) were a gift from S. Hou. All other stocks can be obtained from the Bloomington Drosophila Stock Center (BDSC) or Vienna Drosophila Resource Center (VDRC). See main tables and Key Resources Table for list of strains used for each experiment. See Screen Summary Table for additional lines analyzed.
 
-## Transgene induction
+### Transgene induction
 
 Flies containing UAS and Gal4 constructs together with tub-Gal80ts were grown to adulthood at permissive temperature (18 °C) and shifted to non-permissive temperature (29 °C or 31 °C, as indicated) to induce expression of UAS transgenes (RNAi, dominant-negative, or over-expression constructs).
 
-## CySC ablation (Hétié et al., 2014)
+#### CySC ablation (Hétié et al., 2014)
 
 Flies containing C587-Gal4, UAS-grim, and tub-Gal80ts transgenes were grown at 18 °C and shifted to 31 °C for 2 days to induce cell death in all CySCs and early cyst lineage cells. Flies were then dissected or returned to 18 °C to recover for 7 or 14 days as indicated. In every experiment with C587-Gal4, Gal80ts>UAS-grim, 3–5% of testes look completely normal, like unperturbed wild-type testes, after the shift to 31 °C; we speculate that a transgene has been lost from these flies. These ‘unablated’ testes remain distinguishable from ‘ablated’ testes throughout the experiment and are not included in our results or statistical analyses.
 
-## Dissection and immunohistochemistry (Matunis et al., 1997)
+#### Dissection and immunohistochemistry (Matunis et al., 1997)
 
 Flies were anesthetized using CO2 and dissected in 1 X Ringer’s solution (111 mM NaCl, 1.88 mM KCl, 64 μM NaH2PO4, 816 μM CaCl2, 2.38 mM NaHCO3; Ashburner, 1989). All steps were performed at room temperature unless otherwise noted. Testes with attached cuticle were transferred to fixation solution (4% paraformaldehyde in 1 X PBS with 0.1% Trition X-100) and placed on a rocking platform for 22 min.
 
@@ -126,26 +691,26 @@ For dpErk staining experiments, testes were dissected in Shields and Sang M3 med
 
 All polyclonal antisera and mouse anti-Phospho-Histone H3 were diluted 1:1 in glycerol and stored at –20 °C; other monoclonal antibodies were stored at 4 °C. Antisera were used at the following final concentrations: mouse anti-Fasciclin III 7G10 (1:50; Developmental Studies Hybridoma Bank), mouse anti-Phospho-Histone H3 (1:400; Cell Signaling Technology), guinea pig anti-Traffic Jam (1:20,000; a gift from D. Godt), rabbit anti-Vasa (1:200; Santa Cruz Biotechnology), chick anti-GFP (1:10,000; Abcam), rabbit anti-dsRed (1:10,000; Takara Bio), rabbit anti-dpErk (1:100, Cell Signaling Technology). Fluor 488 secondary antibodies were used at a final concentration of 1:400; other secondary antibodies were used at a final concentration of 1:200.
 
-## Lineage tracing
+### Lineage tracing
 
 Driving expression of the G-TRACE construct in the hub (E132-Gal4, Gal80ts>UAS-G-TRACE) caused permanent expression of GFP in hub cells and their descendants. Marked cells were detected by immunostaining for GFP and RFP. Testes with GFP-marked cells outside the confines of the hub cluster that no longer expressed RFP were considered positive for converting cells. The hub cluster was defined as tightly packed cells marked by bright RFP.
 
-## Microscopy and image analysis
+### Microscopy and image analysis
 
 Fixed images were obtained using a Zeiss LSM Pascal equipped with a 63 x oil immersion objective, 405 nm diode, 488 nm ArKr, and 543 nm HeNe lasers with digital zoom; a Zeiss LSM 700 (JHU SOM microscope facility) equipped with a 63 x oil immersion objective, 405 nm diode, 488 nm solid-state, 561 nm solid-state, and 639 nm diode lasers with digital zoom; or a Zeiss LSM 800 equipped with a 63 x oil immersion objective, 405 nm, 488 nm, 561 nm, and 640 nm diode lasers with digital zoom and GaAsP detectors. Images were acquired using the Zeiss LSM or Zen software and processed using Zeiss LSM, Zen, or Fiji. Brightness for individual channels from single confocal slices was enhanced using Fiji, and then the channels were overlaid to form a merged image.
 
-## Quantification of dividing hub cells
+### Quantification of dividing hub cells
 
 To quantify hub cell divisions, testes were immunostained with the mitotic marker Phospho-Histone H3. Testes with PH3-positive cells within the confines of the hub cluster were considered positive for dividing hub cells. The hub cluster was defined as those cells marked by the hub membrane marker Fas3.
 
-## dpErk fluorescence intensity measurements
+### dpErk fluorescence intensity measurements
 
 To measure levels of dpErk expression, testes were immunostained with dpErk, Fas3, and DAPI. Z stacks with a 0.5 μm step size were acquired to include the entire hub range. Fluorescence signal was acquired at the same gain in the linear range for all samples. Fluorescence intensity was measured using FIJI software. All stacks containing the hub, as indicated by Fas3 staining, were merged into a single summed slice and dpErk fluorescence intensity was measured by drawing an object around the entire hub and using the measure feature. The corrected total cell fluorescence (CTCF) was then calculated by taking the integrated density and subtracting the area times the mean of 3 fluorescence background readings. The CTCF for dpErk fluorescence was then normalized over the CTCF for the DAPI channel, which was calculated in the same manner. The normalized dpErk fluorescence measurements in the hub were compared for testes whose CySCs were ablated to those that had not undergone ablation.
 
-## Ectopic niches quantification
+### Ectopic niches quantification
 
 To quantify ectopic niches, testes were immunostained with the hub membrane marker Fasciclin 3. Z stacks were acquired to include the entire hub range. Clusters of hub cells whose membranes were no longer connected to other clusters in any Z planes were considered separate hubs. Testes with more than one hub cluster surrounded by germline and somatic cells were considered positive for ectopic niches.
 
-## Statistical analysis
+### Statistical analysis
 
 For all quantifications, n represents the number of testes analyzed. Statistical significance was expressed as p values and determined using a Fisher’s exact test for most measurements except ablation distribution phenotypes, in which Chi-square test was used, and dpErk fluorescence measurements, in which an unpaired t test was used. All statistical tests were run using PRISM 9 software. (*) denotes p < 0.05, (**) denotes p < 0.01, (***) denotes p < 0.001, (****) denotes p < 0.0001, and (ns) denotes values that were not significant.

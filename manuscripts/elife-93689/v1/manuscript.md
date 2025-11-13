@@ -18,21 +18,21 @@
 
 ### Affiliations
 
-1. https://ror.org/0387jng26 Department of Neurology, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany
+1. Department of Neurology, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))
 2. Max Planck School of Cognition Leipzig Germany
-3. https://ror.org/02y72wh86 Department of Psychology, Queen's University Kingston Canada
-4. https://ror.org/0387jng26 Otto Hahn Group Cognitive Neurogenetics, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany
-5. https://ror.org/02nv7yv05 Institute of Neuroscience and Medicine (INM-7: Brain and Behaviour), Research Centre Jülich Jülich Germany
-6. https://ror.org/01bfgxw09 Center for the Developing Brain, Child Mind Institute New York United States
-7. https://ror.org/0387jng26 Max Planck Research Group: Adaptive Memory, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany
-8. https://ror.org/024z2rq82 Institute of Systems Neuroscience, Heinrich Heine University Düsseldorf Düsseldorf Germany
-9. https://ror.org/050gn5214 Frontlab, Institut du Cerveau et de la Moelle épinière, UPMC UMRS 1127, Inserm U 1127, CNRS UMR 7225 Paris France
-10. https://ror.org/00f54p054 Department of Psychiatry and Behavioral Sciences, Stanford University Stanford United States
-11. https://ror.org/022kthw22 Department of Brain and Cognitive Sciences, University of Rochester Rochester United States
-12. https://ror.org/01pxwe438 McConnell Brain Imaging Centre, Montreal Neurological Institute and Hospital, McGill University Montreal Canada
-13. https://ror.org/028hv5492 Day Clinic of Cognitive Neurology, Universitätsklinikum Leipzig Leipzig Germany
-14. https://ror.org/01hcx6992 MindBrainBody Institute, Berlin School of Mind and Brain, Humboldt-Universität zu Berlin Berlin Germany
-15. https://ror.org/001w7jn25 Center for Stroke Research Berlin (CSB), Charité - Universitätsmedizin Berlin Berlin Germany
+3. Department of Psychology, Queen's University Kingston Canada ([ROR:02y72wh86](https://ror.org/02y72wh86))
+4. Otto Hahn Group Cognitive Neurogenetics, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))
+5. Institute of Neuroscience and Medicine (INM-7: Brain and Behaviour), Research Centre Jülich Jülich Germany ([ROR:02nv7yv05](https://ror.org/02nv7yv05))
+6. Center for the Developing Brain, Child Mind Institute New York United States ([ROR:01bfgxw09](https://ror.org/01bfgxw09))
+7. Max Planck Research Group: Adaptive Memory, Max Planck Institute for Human Cognitive and Brain Sciences Leipzig Germany ([ROR:0387jng26](https://ror.org/0387jng26))
+8. Institute of Systems Neuroscience, Heinrich Heine University Düsseldorf Düsseldorf Germany ([ROR:024z2rq82](https://ror.org/024z2rq82))
+9. Frontlab, Institut du Cerveau et de la Moelle épinière, UPMC UMRS 1127, Inserm U 1127, CNRS UMR 7225 Paris France ([ROR:050gn5214](https://ror.org/050gn5214))
+10. Department of Psychiatry and Behavioral Sciences, Stanford University Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
+11. Department of Brain and Cognitive Sciences, University of Rochester Rochester United States ([ROR:022kthw22](https://ror.org/022kthw22))
+12. McConnell Brain Imaging Centre, Montreal Neurological Institute and Hospital, McGill University Montreal Canada ([ROR:01pxwe438](https://ror.org/01pxwe438))
+13. Day Clinic of Cognitive Neurology, Universitätsklinikum Leipzig Leipzig Germany ([ROR:028hv5492](https://ror.org/028hv5492))
+14. MindBrainBody Institute, Berlin School of Mind and Brain, Humboldt-Universität zu Berlin Berlin Germany ([ROR:01hcx6992](https://ror.org/01hcx6992))
+15. Center for Stroke Research Berlin (CSB), Charité - Universitätsmedizin Berlin Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))
 
 † Corresponding author
 
@@ -50,67 +50,245 @@ Our current study explored whether this ‘tri-partite network’ view of ongoin
 
 ## Materials and methods
 
-## Data
+### Data
 
 The dataset used here is part of the MPI-Leipzig Mind-Brain-Body database (Mendes et al., 2019). The complete dataset consists of a battery of self-reported personality measures, measures of spontaneous thought, task data, and structural and resting-state functional MRI from participants between 20 and 75 years of age. Data were collected over a period of 5 days, with the MRI sessions always falling on day 3. The questionnaires were completed by participants before and after this day, using Limesurvey (https://www.limesurvey.org: version 2.00+) at their own convenience and using pen-and-paper on-site. A detailed description of the participants, measures, and data acquisition protocol has been previously published along with the dataset (Mendes et al., 2019).
 
-## Participants
+### Participants
 
 We limited our investigation to personality and thought self-reports, and rs-fMRI from participants under 50 years of age, who had complete data from at least three resting-state scans. The resulting sample included 144 participants (74 men, mean age = 26.77 years, SD = 4.03; 70 women, mean age = 26.93 years, SD = 5.55).
 
-## Resting-state fMRI with MDES
+### Resting-state fMRI with MDES
 
 The current sample includes 1 hr of fully pre-processed rs-fMRI data from 144 participants (four scans from 135 participants, and three scans from 9 participants whose data were missing or incomplete). The rs-fMRI was performed in four adjacent 15 mi sessions each immediately followed by MDES which retrospectively measured various dimensions of spontaneous thought during the scan. Images were acquired in axial orientation using T2∗-weighted gradient-echo echo planar imaging sensitive to blood oxygen level-dependent contrast. Sequences were identical across the four runs, except for alternating slice orientation and phase-encoding direction, to vary the spatial distribution of distortions and signal loss. Motion correction parameters were derived by rigid-body realignment of the time series to the first (after discarding the first five volumes) volume with FSL MCFLIRT (Jenkinson et al., 2002). Parameters for distortion correction were calculated by rigidly registering a temporal mean image of this time series to the fieldmap magnitude image using FSL FLIRT (Jenkinson and Smith, 2001) which was then unwarped using FSL FUGUE (Jenkinson et al., 2012). Transformation parameters were derived by coregistering the unwarped temporal mean to the subject’s structural scan using FreeSurfer’s boundary-based registration algorithm (Greve and Fischl, 2009). All three spatial transformations were then combined and applied to each volume of the original time series in a single interpolation step. The time series was residualised against the six motion parameters, their first derivatives, ‘outliers’ identified by Nipype’s rapidart algorithm (https://nipype.readthedocs.io/en/latest/interfaces.html). A CompCor (Behzadi et al., 2007) approach was implemented to remove physiological noise from the residual time series, which included first six principal components from all the voxels identified as white-matter cerebrospinal fluid. The denoised time series were temporally filtered to a frequency range between 0.01 and 0.1 Hz using FSL, mean centred, and variance normalised using Nitime (Rokem et al., 2009). Imaging and pre-processing protocols are described in detail in Mendes et al., 2019.
 
 The MDES battery included 12 statements (Table 1) which participants rated on a visual analogue scale with 5% response increments that go from 0% = “describes my thoughts not at all” to 100% = “describes my thoughts completely”. The current analysis sample includes MDES data for all available instances of rs-fMRI scans for each participant.
 
-## Personality measures
+**Table 1.**
+ Multidimensional experience sampling (MDES) statements.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dimension</th>
+      <th>Statement</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Positive</td>
+      <td>“My thoughts were positive.”</td>
+    </tr>
+    <tr>
+      <td>Negative</td>
+      <td>“My thoughts were negative.”</td>
+    </tr>
+    <tr>
+      <td>Future</td>
+      <td>“I thought about future events.”</td>
+    </tr>
+    <tr>
+      <td>Past</td>
+      <td>“I thought about past events.”</td>
+    </tr>
+    <tr>
+      <td>Myself</td>
+      <td>“I thought about myself.”</td>
+    </tr>
+    <tr>
+      <td>People</td>
+      <td>“I thought about other people.”</td>
+    </tr>
+    <tr>
+      <td>Surroundings</td>
+      <td>“I thought about my present environment/surrounding.”</td>
+    </tr>
+    <tr>
+      <td>Wakeful</td>
+      <td>“I was completely awake.”</td>
+    </tr>
+    <tr>
+      <td>Images</td>
+      <td>“My thoughts were in the form of images.”</td>
+    </tr>
+    <tr>
+      <td>Words</td>
+      <td>“My thoughts were in the form of words”</td>
+    </tr>
+    <tr>
+      <td>Specific</td>
+      <td>“My thoughts were more specific than vague.”</td>
+    </tr>
+    <tr>
+      <td>Intrusive</td>
+      <td>“My thoughts were intrusive.”</td>
+    </tr>
+  </tbody>
+</table>
+
+### Personality measures
 
 To provide a broad description of individual traits, we included data from the following 21 questionnaires (Table 2).
 
-## Analyses
+**Table 2.**
+ List of personality/dispositional trait questionnaires.
 
-## Dimension reduction for questionnaire and MDES data
+
+<table>
+  <thead>
+    <tr>
+      <th>Abbreviation</th>
+      <th>Behavioural measure</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ACS</td>
+      <td>Attention Control Scale (Derryberry and Reed, 2002)</td>
+    </tr>
+    <tr>
+      <td>ASR</td>
+      <td>Adult Self Report (Achenbach and Rescorla, 2003)</td>
+    </tr>
+    <tr>
+      <td>BDI-II</td>
+      <td>Beck Depression Inventory -II (Beck et al., 1993)</td>
+    </tr>
+    <tr>
+      <td>BIS/BAS</td>
+      <td>Behavioural Inhibition and Approach System (Carver and White, 1994)</td>
+    </tr>
+    <tr>
+      <td>BP</td>
+      <td>Boredom Proneness Scale (Farmer and Sundberg, 1986)</td>
+    </tr>
+    <tr>
+      <td>ESS</td>
+      <td>Epworth Sleepiness Scale (Johns, 1991)</td>
+    </tr>
+    <tr>
+      <td>Gold-MSI</td>
+      <td>Goldsmiths Musical Sophistication Index (Müllensiefen et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>HADS</td>
+      <td>Hospital Anxiety and Depression Scale (Zigmond and Snaith, 1983)</td>
+    </tr>
+    <tr>
+      <td>IAT</td>
+      <td>Internet Addiction Test (Young, 1998)</td>
+    </tr>
+    <tr>
+      <td>IMIS</td>
+      <td>Involuntary Musical Imagery Scale (Floridou et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>MMI</td>
+      <td>Multimedia Multitasking Index (Ophir et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>NEO PI-R</td>
+      <td>NEO Personality Inventory-Revised (Costa and McCrae, 2008)</td>
+    </tr>
+    <tr>
+      <td>PSSI</td>
+      <td>Personality Style and Disorder Inventory (Kuhl and Kazén, 2009)</td>
+    </tr>
+    <tr>
+      <td>SCS</td>
+      <td>Brief Self-Control Scale (Tangney et al., 2004)</td>
+    </tr>
+    <tr>
+      <td>SDS</td>
+      <td>Social Desirability Scale-17 (Crowne and Marlowe, 1960)</td>
+    </tr>
+    <tr>
+      <td>SES</td>
+      <td>Self-Esteem Scale (O’Malley and Bachman, 1979)</td>
+    </tr>
+    <tr>
+      <td>SD3</td>
+      <td>Short Dark Triad (Jones and Paulhus, 2014)</td>
+    </tr>
+    <tr>
+      <td>S-D-MW</td>
+      <td>Spontaneous and Deliberate Mind-Wandering (Carriere et al., 2013; Golchert et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>STAXI</td>
+      <td>State-Trait Anger Expression Inventory</td>
+    </tr>
+    <tr>
+      <td>TPS</td>
+      <td>Tuckman Procrastination Scale (Tuckman, 2016)</td>
+    </tr>
+    <tr>
+      <td>UPPS-P</td>
+      <td>UPPS-P Impulsive Behaviour Scale (Lynam et al., 2006; Schmidt et al., 2008)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Analyses
+
+#### Dimension reduction for questionnaire and MDES data
 
 We performed two separate PCAs to obtain low-dimensional summaries of the 71 trait variables from 21 questionnaires, and 12 thought variables from MDES.
 
 Seventy-one scores from the personality questionnaires of 144 participants were included and missing data (3.15% of including all variables) were imputed by the variable mean. PCA was performed on this matrix and five ‘trait’ components (henceforth referred to as ‘traits’) were selected on the basis of eigenvalues >1, using the Kaiser–Guttman criterion (Joliffe, 2002) and their congruence with the previously well-established ‘Big Five’ personality traits (Digman, 1990; Cobb-Clark and Schurer, 2012). For the MDES data, separate instances of responding for each participant were concatenated, resulting in a matrix with 576 observations of 12 variables. PCA was performed on this matrix, and five ‘thought’ components (henceforth referred to as ‘thought patterns’) were selected on the basis of eigenvalues >1. Varimax rotation was applied to both solutions to optimise the distinctiveness of each component. The five thought pattern scores were then averaged across the four scans, resulting in one score for each thought pattern for each participant, describing their location on a particular thought dimension.
 
-## Dimension reduction for whole-brain functional connectivity
+#### Dimension reduction for whole-brain functional connectivity
 
 Functional time series for each participant was extracted using the Schaefer 400 parcellation (Schaefer et al., 2018) using the fully pre-processed data from all four resting-state scans. The data from separate scans were concatenated, and a 400 × 400 connectivity matrix was calculated from the resulting time series for each participant using Pearson correlation. A group connectivity matrix of the whole sample was calculated by averaging the 144 individual matrices.
 
 In order to summarise whole-brain connectivity in a low-dimensional space, we performed gradient analysis using the BrainSpace toolbox (Vos de Wael et al., 2020). Ten macro-scale gradients were calculated for the group (Figure 2). First, we applied Fisher’s z transform to the group matrix, building an affinity matrix (kernel = normalised angle, sparsity = 0.9) and then decomposed it using PCA. We chose the PCA approach for gradient calculation, as Hong et al., 2020 have shown that compared to nonlinear decomposition methods, PCA provides better reliability and higher phenotypic predictive value for connectivity gradients. For ease of interpretation and comparability, group gradients were aligned to a subsample of the HCP dataset (Van Essen et al., 2013) included in BrainSpace. Finally, following Mckeown et al., 2020, 10 gradients were calculated in order to maximise the gradient fit for all individuals during alignment. Individual gradients were calculated for each participant, aligned to the group-level gradients, resulting in a 400 × 10 matrix for each participant. Ten gradients were calculated to facilitate alignment across individuals irrespective of differences in rank order of individual gradients (to control for the possibility, for example, that the pattern summarised by group-level gradient 2 is gradient 4 for some participants). Subsequent regression analyses were limited to the first three group-aligned gradients, which have been relatively well characterised in previous work (Margulies et al., 2016; Mckeown et al., 2020; Turnbull et al., 2020b). To visualise the functional axis captured by each gradient, we performed Neurosynth (Yarkoni et al., 2011) decoding on the group gradient maps (Figure 2). Further, we calculated the average gradient score for all parcels within each of the seven connectivity networks described by Yeo and colleagues (Yeo et al., 2011; Figure 2).
 
-## Stability of thoughts patterns and gradients
+#### Stability of thoughts patterns and gradients
 
 To quantify the stability of thoughts and connectivity gradients over the whole scanning period, intra-class correlation coefficients (ICCs) were calculated for the thought patterns and following Hong et al., 2020, discriminability indices (Bridgeford et al., 2021) were calculated for whole gradients by treating the four scans and subsequent thought probes as separate instances. We used the two-way mixed-effects model (i.e. type 3 ICC) used for quantifying test–retest reliability where samples cannot be considered independent (Koo and Li, 2016). Only the 135 participants who had four full-length resting-state scans were included in this analysis. As this analysis found reasonable levels of reliability (see below), the averages of the four separate thought scores were used as regressors in subsequent analysis. This allowed for both a robust measure of thought patterns over the whole testing period and the inclusion of all 144 participants in the analysis.
 
-## Multiple multivariate regression
+#### Multiple multivariate regression
 
 To investigate the relationship between individual differences in traits, thoughts, and macro-scale cortical gradients, we used multiple multivariate regression as implemented in the MATLAB SurfStat Toolbox (Worsley et al., 2009; http://www.math.mcgill.ca/keith/surfstat/). In total, 400 separate linear models were estimated for 400 parcels, with the gradient scores from the first three gradients as the dependent variables, and with five trait scores (Figure 1A) and five thought scores (Figure 1B), as well as nuisance variables age, motion, and gender included as independent variables. The resulting significant effects from 400 parcels were corrected for false discovery rate (q < 0.05) (Storey, 2003) at the multivariate (three gradients) level. In order to test which gradient score was affected, follow-up univariate analyses were performed on the resulting parcels for each gradient separately, and effects were further Bonferroni-corrected (pbonf<0.025) for the total number of comparisons performed for all parcels (including the analyses of all three gradients) for each variable. Additionally, to see how the trait components related to the thought components, we performed multiple multivariate regression with the thoughts as dependent variables and traits as independent variables.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/93689/elife-93689-fig1-v1.jpg)
+
+**Figure 1.:** (A) First five trait components derived from principal component analysis (PCA) after varimax rotation are represented as word clouds with negative loadings shown in cold colours and positive loadings in warm colours; the relative loading of each variable within a component is represented by the relative font size (see Figure 1—figure supplements 1 and 2 for numerical loading values). In the bottom-left panel, scree plot showing the percentage of trait variance explained by the each of the first 10 components in grey, and the first 5 components after varimax rotation in red. (B) Results of the application of PCA to the multidimensional experience sampling (MDES) data, depicted in the same way.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/93689/elife-93689-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/93689/elife-93689-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/93689/elife-93689-fig1-figsupp3-v1.jpg)
+
 ## Results
 
-## Traits and thought patterns
+### Traits and thought patterns
 
 Application of PCA to the battery of personality questionnaires resulted in five ‘traits’ (Figure 1A, Figure 1—figure supplement 1) with eigenvalues >1, explaining 48.4% of the variance. The five trait components, independent of the direction of loadings, largely map onto the ‘Big Five’ personality factors: neuroticism, conscientiousness (positive loading on ‘procrastination’ in our PCA result), extraversion (positive loading on ‘introversion’ in our PCA result), agreeableness (positive loading on anti-social in our results), and openness to experience, respectively. Application of PCA to the MDES questions revealed five ‘thought patterns’ (Figure 1B, Figure 1—figure supplement 2) with eigenvalues >1, explaining 65.4% of the variance. Based on the most heavily loaded dimensions within each pattern, we named these ‘modality’ (image vs words), ‘positive episodic social’, ‘specific internal’, ‘self-relevant’, and ‘prospective’.
 
-## Intra-class correlation: Thoughts
+### Intra-class correlation: Thoughts
 
 Our first analysis established the reliability of thought components across the 1 hr of scanning. The five thought patterns showed low-to-moderate agreement between individual scores from single sessions (modality = 0.5856, positive episodic-social = 0.4531, specific internal = 0.5226, self-relevant = 0.5832, prospective = 0.3118), indicating a degree of variability between sessions. The average of all scores had high ICCs for the first four components (modality = 0.8497, positive episodic social = 0.7783, specific internal = 0.8141, self-relevant = 0.8484, prospective = 0.6444). The average scores from four sessions were used as regressors in subsequent analyses.
 
 Next, we examined the relationship between the low-dimensional representations of both personality and thoughts. Multiple multivariate regression using traits as predictor variables of thought patterns established that ‘negative affect’ had a significant effect on thoughts (5,134) = 3.88, p=0.003, partial η² = 0.127. Univariate follow-up showed that a high score on trait neuroticism was significantly associated with less ‘positive episodic social’ thought (pattern 2; ß = –0.229, 95% CI = [-0.389 –0.07], p=0.005, partial η² = 0.055) as well as greater ‘self-relevant’ thought (pattern 4; ß = 0.229, 95% CI = [0.066 0.391], p=0.006, partial η² = 0.053) (Figure 1—figure supplement 3).
 
-## Macro-scale cortical gradients
+### Macro-scale cortical gradients
 
 The first three group-level gradients are shown in Figure 2, along with their Neurosynth meta-analytic associations and relationships to the Yeo networks (Yeo et al., 2011) (seven-network solution). The first gradient (G1) differentiates between visual regions at one end and DMN at the other. The second gradient (G2) describes the dissociation between somatomotor and visual cortices. The third gradient (G3) captures the segregation between different transmodal systems (the DMN vs the fronto-parietal system). The three gradients are largely similar to the ones reported by Margulies et al., 2016 and subsequent literature (Hong et al., 2019; Paquola et al., 2019; Bethlehem et al., 2020; Mckeown et al., 2020; Turnbull et al., 2020b). Due to the difference in the decomposition provided by PCA vs. DM approach, the endpoints of G1 are different from those first reported by Margulies et al., 2016 in that one end is anchored by the visual network alone, as opposed to visual and somatomotor, while in G2, the somatomotor network is separated from both the visual and default mode networks, as opposed to the visual network alone in the (Margulies et al., 2016) study. However, like those reported by Margulies and colleagues, the first two gradients together describe network-level connectivity space anchored at three ends by the visual, somatomotor, and default mode network, respectively (Figure 3). Single gradients tended to be stable over the four sessions, with a discriminability index of 0.964 for gradient 1, 0.918 for gradient 2, and 0.983 for gradient 3 over four adjacent scans from 135 participants. Discriminability indices are similar to those previously reported by Hong et al., 2020.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/93689/elife-93689-fig2-v1.jpg)
+
+**Figure 2.:** On the left are the first three group-averaged gradients, represented in left lateral and medial views. Regions with similar whole-brain connectivity profiles are shown in similar colours, with yellow and purple regions indicating most dissimilar connectivity patterns. Loading ranges and directions are arbitrary. In the middle, word clouds representing the top 10 positively (warm colours) and negatively correlated (cold colours) Neurosynth decoding topic terms for each gradient map. The relative strength of correlation is represented by the relative font size. On the right, radar plots showing the Yeo network profile of each group-level gradient depicted in the left column. Each radar plot shows the mean gradient loadings for all parcels within the seven Yeo networks.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93689/elife-93689-fig2-figsupp1-v1.jpg)
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/93689/elife-93689-fig3-v1.jpg)
 
 **Figure 3.:** The first scatterplot shows 400 parcel positions along G1 and G2 in the template calculated from the HCP subsample included in BrainSpace toolbox (Vos de Wael et al., 2020). The second scatterplot shows parcel positions in the group-level gradients G1 and G2 after Procrustes alignment to the HCP template. Parcels are colour-coded according to their respective Yeo network. Yeo networks are shown as colour-coded brain maps on the right.
 
-## Relationship between state-trait variability and cortical gradients
+### Relationship between state-trait variability and cortical gradients
 
 Having established low-dimensional representations of thought, personality, and brain organisation, we next examined the associations between different types of personality and ongoing thought experienced during the scan and our metrics of functional brain organisation. To this end, we performed a multiple multivariate regression with thoughts, traits, and nuisance variables (motion, age, and gender) as independent variables, with whole-brain functional organisation, as captured by the first three gradients, as dependent variables. In this analytic approach, relationships between cognition along one gradient but not along another help identify which relationships between brain systems are mostly likely to relate to the feature of cognition in question (i.e. each gradient acts as a control for the other). In these analyses, both trait ‘introversion’ and a pattern describing ‘specific internal’ thought showed significant effects at the multivariate level. Results from the univariate follow-up of effects within each gradient are shown in Figures 4 and 5 and Table 3.
 
@@ -122,11 +300,214 @@ Having established low-dimensional representations of thought, personality, and 
 
 **Figure 5.:** On the left, parcels within the first three gradients that show significant differences (pbonf<0.025) related to ‘specific internal’ thought, green indicating regions within ‘dorsal attention network (DAN)’, and purple indicating regions within the ‘visual network’. Scatter plots depict the relationship between individual scores for ‘specific internal’ thought (x-axis) and average gradient score of all affected parcels (y-axis) within each gradient. Each datapoint is a participant. Both axes show standardised scores. Detailed results from individual parcels are reported in Table 3. The right column shows Neurosynth decoding of ROI maps of affected parcels within each gradient, showing top ten positively correlated topic terms in red, and top 10 negatively associated topic terms in blue.
 
-## Trait introversion
+**Table 3.**
+ Relationships between first three connectivity gradients and introversion and specific internal thought.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>IV</th>
+      <th>DV</th>
+      <th>Yeo network</th>
+      <th>Parcel</th>
+      <th>t(130)</th>
+      <th>η2partial</th>
+      <th>puncorr</th>
+      <th>pbonf</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Introversion</td>
+      <td>G1</td>
+      <td>Control</td>
+      <td>OFC (R)</td>
+      <td>–4.2214</td>
+      <td>0.11</td>
+      <td>0.00002</td>
+      <td>&lt;0.0012</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>G2</td>
+      <td>VAN</td>
+      <td>A Ins (L)</td>
+      <td>3.7888</td>
+      <td>0.10</td>
+      <td>0.00012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A Ins (R)</td>
+      <td>4.3110</td>
+      <td>0.12</td>
+      <td>0.00002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Fr Oper (R)</td>
+      <td>3.8081</td>
+      <td>0.10</td>
+      <td>0.00011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A Cing (R)</td>
+      <td>3.1879</td>
+      <td>0.06</td>
+      <td>0.00090</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Control</td>
+      <td>P Cing (L)</td>
+      <td>4.0504</td>
+      <td>0.07</td>
+      <td>0.00004</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>G3</td>
+      <td>VAN</td>
+      <td>A Ins (L)</td>
+      <td>–3.9539</td>
+      <td>0.11</td>
+      <td>0.00006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A Ins (L)</td>
+      <td>–3.6784</td>
+      <td>0.09</td>
+      <td>0.00017</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A Ins (R)</td>
+      <td>–4.2031</td>
+      <td>0.13</td>
+      <td>0.00002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>Fr Oper (R)</td>
+      <td>–4.1767</td>
+      <td>0.12</td>
+      <td>0.00003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>A Cing (R)</td>
+      <td>–3.9732</td>
+      <td>0.12</td>
+      <td>0.00006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Specific</td>
+      <td>G1</td>
+      <td>Visual</td>
+      <td>PHC/ExStr</td>
+      <td>–2.9105</td>
+      <td>0.05</td>
+      <td>0.00212</td>
+      <td>&lt;0.0028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>internal</td>
+      <td></td>
+      <td>DAN</td>
+      <td>SPL (L)</td>
+      <td>–4.5433</td>
+      <td>0.12</td>
+      <td>0.00001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>thought</td>
+      <td>G2</td>
+      <td>DAN</td>
+      <td>SPL (L)</td>
+      <td>4.1217</td>
+      <td>0.09</td>
+      <td>0.00003</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>SPL (R)</td>
+      <td>3.3542</td>
+      <td>0.09</td>
+      <td>0.00052</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>G3</td>
+      <td>DAN</td>
+      <td>SPL (L)</td>
+      <td>4.4548</td>
+      <td>0.10</td>
+      <td>0.00001</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="9"></td>
+    </tr>
+  </tbody>
+</table>
+
+_Results reported in the table are from univariate (single-gradient) follow-up tests for parcels showing a significant effect for each IV at the multivariate (three-gradient) level. Univariate tests are Bonferroni corrected for the total number of parcels (all three gradients) where tests were performed (21 parcels for introversion, 9 for specific internal thought).IV = independent variable; DV = dependent variable; G = gradient; VAN = ventral attention network; DAN = dorsal attention network; OFC = orbitofrontal cortex; A = anterior; P = posterior; Fr = frontal; Ins = insula; L = left; R = right; Oper = operculum; Cing = cingulate cortex; PHC = parahippocampal cortex; ExStr = extrastriate cortex; SPL = superior parietal lobule._
+
+### Trait introversion
 
 Along the first gradient, a parcel within the right orbitofrontal cortex (within the executive control network, shown in orange) showed more similarity with transmodal regions for individuals high on introversion. Six parcels within the VAN, including anterior insula, operculum, and cingulate cortex, were closer to the somatomotor end along gradient 2 (shown in purple). The same regions showed lower scores along the third gradient in participants with higher introversion scores, indicating stronger integration with the DMN. A parcel within posterior cingulate cortex (control) was also more segregated from the visual end of gradient 2 in participants with higher introversion scores. The associations between trait ‘introversion’ and brain-wide activity are shown in Figure 4.
 
-## Specific internal cognition
+### Specific internal cognition
 
 Relationships with patterns of more specific internal cognition were confined to the dorsal attention and visual networks. A region within the superior parietal lobule (DAN) had lower scores on the first gradient (more transmodal) and higher scores on the second gradient (less visual), indicating less similarity with visual regions whose ongoing experience was more ‘specific’ and ‘internal’. Along the third gradient, higher ‘specific internal’ thought scores were associated with greater separation between these regions and the DMN. Finally, a parcel within the parahippocampal gyrus/extrastriate (visual network) showed a broad spread along gradient one, with participants with higher ‘specific internal’ thought scores falling on the transmodal/DMN side and participants with lower scores (higher ‘surroundings’) closer to the visual system side. These findings are shown in Figure 5.
 

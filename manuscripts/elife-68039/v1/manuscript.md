@@ -62,7 +62,7 @@ Here, we undertake a close examination of the structural and functional conseque
 
 ## Results
 
-## hDAT R445C compromises movement vigor in Drosophila
+### hDAT R445C compromises movement vigor in Drosophila
 
 Drosophila melanogaster have provided unique and critical insights on the pathogenic mechanisms underlying PD (Feany and Bender, 2000; Xiong and Yu, 2018). Drosophila PD models consistently recapitulate essential PD phenotypes, including neurodegeneration as well as motor and non-motor behavioral deficits (Nagoshi, 2018). In addition, mechanisms that mediate DA neurotransmission and signaling observed in other phyla are largely conserved in Drosophila (Yamamoto and Seto, 2014). As observed in mammals, Drosophila exhibit increased arousal and hyperactivity, among other stereotypies, when DAT function is altered (Kume et al., 2005; McClung and Hirsh, 1998).
 
@@ -74,7 +74,15 @@ In Drosophila, locomotion is regulated by DA neurotransmission as well as DAT fu
 
 We tested flies for spontaneous locomotor activity and ‘anxiety’-related behaviors, such as time spent in or near the center of an enclosure during an open-field test (i.e. center time). Illustrated are representative trajectories of adult hDAT WT flies (Figure 1A, black trace) and hDAT R445C flies (Figure 1A, blue trace) assayed in an open-field test for 5 min. We observed no differences in center time in hDAT R445C flies with respect to hDAT WT flies (Figure 1B; hDAT WT: 0.016 ± 0.003 (t/ttotal); hDAT R445C: 0.024 ± 0.006 (t/ttotal); p>0.05). We did observe a significant reduction in spontaneous locomotor activity in hDAT R445C (59.7 ± 6.1 cm) compared with hDAT WT flies (80.1 ± 4.2 cm; p=0.008) (Figure 1C). Given that parkinsonian locomotor deficits can be characterized by hypokinesia (inability to initiate movement) and bradykinesia (slowed movement), we dissected the specific locomotor deficits observed in hDAT R445C flies. We determined the frequency with which specific velocities were explored throughout the test period (Figure 1D). We defined ‘initiating movement’ as velocity = 0.74–0.94 mm/s and ‘fast movement’ as velocity = 5.3–10.0 mm/s and determined their frequency per genotype. hDAT R445C flies spent 5.0 ± 0.3% of the testing period initiating movement compared with 5.2 ± 0.4% for hDAT WT flies, suggesting hDAT R445C flies did not have difficulty performing this task (p>0.05; Figure 1E). In contrast, hDAT R445C flies displayed significantly decreased movement vigor, in fast movement for only 9.8 ± 1.4% of the testing period compared with 14.5 ± 1.1% for hDAT WT flies (p=0.0098; Figure 1F). Together, these data suggest that motor deficits in hDAT R445C flies are primarily characterized by deficits in movement vigor.
 
-## hDAT R445C impairs selective coordinated movements
+![Figure 1.](https://cdn.elifesciences.org/articles/68039/elife-68039-fig1-v1.jpg)
+
+**Figure 1.:** (A) hDAT WT or hDAT R445C was selectively expressed in DA neurons in a dDAT KO (fmn) background. Representative trajectories of hDAT WT (black) and hDAT R445C (blue) flies in an open-field test during a 5 min test period. 3 × 3 mm square (red dashed lines) delineates the center space. (B) hDAT WT and hDAT R445C flies spent comparable time in the center space (p>0.05; n = 35). (C) hDAT R445C flies traveled significantly less relative to hDAT WT flies (p=0.006; n = 35). (D) Histogram represents instantaneous velocities ranging from 0.74 to 10.0 mm/s (bin width = 0.094 mm/s; see Materials and methods) and corresponding frequencies (number of times) for hDAT WT (gray bars) and hDAT R445C (blue bars) flies. Initiating movement velocities (0.74–0.94 mm/s, orange shaded), fast movement velocities (5.3–10.0 mm/s, green shaded), average velocity (x̄) are highlighted. (E) hDAT R445C flies spent a comparable amount of time initiating movement relative to hDAT WT flies (p>0.05; n = 35). (F) hDAT WT flies spent significantly more time in fast movement compared with hDAT R445C flies (p=0.001; n = 35). Data represent mean ± SEM. Welch’s t-test: (B); Mann-Whitney test (C) and (E - F).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/68039/elife-68039-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) (top) AMPH-induced (arrow) amperometric currents in DATfmn, dDAT, and hDAT WT brains. In hDAT WT brains, cocaine (20 µM) blocked the ability of AMPH to cause DA efflux. (bottom) Quantitation of peak currents showed a significant decrease in DA efflux measured in DATfmn relative to dDAT and hDAT WT brains, as well as in hDAT WT brains in the presence of cocaine. (F(3,18) = 9.341, p=0.0006; n = 3–7). (B) DA uptake in intact brains of DATfmn, dDAT, and hDAT WT flies (F(2,9) = 25.75, p=0.0002; n = 4). (C) AMPH-induced locomotion measured by beam crossing detection recorded over a 60-min time period in DATfmn, dDAT and hDAT WT flies Interaction F(2,24) = 52.66, p<0.0001; n = 5. Data represent mean ± SEM. One-way ANOVA with Tukey’s multiple comparison test (A)-(B); Two-way ANOVA with Tukey’s multiple comparison test (C). *p<0.05; **p<0.01; ***p<0.001; ****p<0.0001.
+
+### hDAT R445C impairs selective coordinated movements
 
 Patients with early-onset as well as sporadic PD often present impairments in coordination (van den Berg et al., 2000). To understand further the contribution of the DAT to coordinated motor behaviors, we analyzed a quintessential fly behavior: flight. Various monoamines, including DA, modulate insect flight (Sadaf et al., 2015). Inhibition of specific TH-positive DA neurons has been found to compromise flight, including impaired wing coordination and kinematics (Sadaf et al., 2015). Initiating voluntary flight (take-off) consists of an initial phase of wing elevation, followed by a second phase of simultaneous left- and right-wing depression and leg extension (Zabalax et al., 2008). Using a high-speed camera (2000 fps), we quantified the time that elapsed between the initiation of wing elevation (t = 0) and final take-off from a water surface (Figure 2A and Videos 1–2). We found that flight initiation was significantly compromised in hDAT R445C flies as the corresponding duration of take-off was 60.9 ± 8.7 ms compared with 36.6 ± 4.4 ms for hDAT WT flies (p=0.03). To determine whether impairments in coordination were consistent across multiple modalities, we assessed grooming. In Drosophila, this stereotyped, coordinated movement of the forelegs and hindlegs is prompted by a mechanical or microbial stimulus and is modulated by dopaminergic neurotransmission (Pitmon et al., 2016). Interestingly, grooming was not significantly impaired in hDAT R445C flies (116.7 ± 12.9 s) relative to hDAT WT flies (88.8 ± 7.7 s; p>0.05) (Figure 2C). These data suggest that only specific coordinated movements are impaired in hDAT R445C flies.
 
@@ -82,7 +90,15 @@ Patients with early-onset as well as sporadic PD often present impairments in co
 
 **Figure 2.:** (A) Representative single frames of Drosophila hDAT WT (top) and hDAT R445C (bottom) during various phases of coordinated take-off (video recorded at 2000 fps). (B) Flight initiation (take-off) was quantified from the initial phase of wing elevation (t = 0) to the second phase of simultaneous wing depression and leg extension. Flight initiation was significantly delayed in hDAT R445C flies relative to hDAT WT (p=0.03; n = 10–11). (C) hDAT R445C flies spent comparable time grooming compared with hDAT WT flies (p>0.05; n = 35). Data represent mean ± SEM. Welch’s t-test: (B); Mann-Whitney test (C).
 
-## hDAT R445C flies display DA deficiency
+![Video 1.](https://cdn.elifesciences.org/articles/68039/elife-68039-video1.mp4.jpg)
+
+**Video 1.:** Representative video of coordinated flight take-off of Drosophila hDAT WT. Video display is slowed down from the ‘start’ to ‘stop’ time of take-off to ease visualization.
+
+![Video 2.](https://cdn.elifesciences.org/articles/68039/elife-68039-video2.mp4.jpg)
+
+**Video 2.:** Representative video of coordinated flight take-off of Drosophila hDAT R445C. Video display is slowed down from the ‘start’ to ‘stop’ time of take-off to ease visualization.
+
+### hDAT R445C flies display DA deficiency
 
 DA dysregulation, specifically the loss of DA signaling, drastically alters the timing, velocity and fluidity with which movement is executed (Panigrahi et al., 2015; Turner and Desmurget, 2010). We thus sought to determine whether impairments in movement and coordination were driven by altered DA dynamics. We first measured DA content in whole brains of hDAT WT and hDAT R445C flies. DA content was significantly reduced by 16.9 ± 3.2% in hDAT R445C (21.4 ± 0.8 ng/mg) relative to hDAT WT brains (25.8 ± 1.0 ng/mg) (p=0.02) (Figure 3A, left). We also measured serotonin (5-HT) content, as serotonergic dysfunction has also been associated with the development of motor and non-motor symptoms in PD (Politis and Niccolini, 2015). We found that 5-HT content was comparable in hDAT WT (67.0 ± 1.8 ng/mg) and hDAT R445C (60.7 ± 2.1 ng/mg; p>0.05) brains (Figure 3A, right).
 
@@ -94,29 +110,47 @@ Various Drosophila PD models have shown selective neurodegeneration of protocere
 
 To determine the effects of R445C on DAT function, we examined reverse transport (efflux) of DA evoked by amphetamine (AMPH) in isolated Drosophila brains. The psychostimulant AMPH evokes DA efflux mediated by the DAT. To measure DA efflux, we utilized amperometry in isolated Drosophila brains. We guided a carbon fiber electrode into the brain, juxtaposed to the mCherry-tagged PPL1 DA neurons (Shekar et al., 2017; Figure 3C, left, red box). The representative traces displayed are amperometric current measurements of DA efflux from this population of neurons in hDAT WT and hDAT R445C brains (Figure 3C, middle). Given the DA deficiency in hDAT R445C brains, it was not surprising that AMPH-induced DA efflux was significantly reduced in hDAT R445C (0.76 ± 0.14 pA) compared with hDAT WT (1.74 ± 0.37 pA; p=0.04) brains. Nonetheless, these brains were capable of DA efflux, suggesting that hDAT R445C can support, at least in part, the reverse transport of DA.
 
-## Substitutions in LeuT, at the site homologous to R445 in hDAT, disrupt IC network interactions
+### Substitutions in LeuT, at the site homologous to R445 in hDAT, disrupt IC network interactions
 
 LeuT, the bacterial homolog of hDAT, has provided key insights that have improved our understanding of Na+/substrate-coupled transport in the neurotransmitter sodium symporter (NSS) family (Beuming et al., 2006; Yamashita et al., 2005). Integrating data from LeuT crystal structures, electron paramagnetic resonance (EPR), single-molecule fluorescence energy transfer (sm-FRET) and MD simulations has defined the alternating access mechanism used by the NSS family to transport substrate. Common to these models is the transition from outward-facing open (OF) to inward-facing open (IF) states through the opening and closing of the EC and IC gates, respectively (Claxton et al., 2010; Kazmier et al., 2014). Here, we use a combination of Rosetta modeling, X-ray crystallography and EPR spectroscopy to determine the consequence of hDAT mutations at R445 on conformational changes in LeuT.
 
 Previous studies of LeuT conformational dynamics have shown that the network of interactions between the N-terminus (residues R5, E6, W8), TM6/IL3 (Y265, Y268), TM8 (D369), and TM9 (R375) are key to occluding the IC vestibule in the outward-facing occluded (OO) state (Cheng and Bahar, 2014). In particular, salt bridges R5-D369 and E6-R375 stabilize the N-terminus in the OO state, as illustrated in Figure 4A (left). The residues participating in this network are highly conserved across the NSS family, and are thus, likely critical to transport. First, we determined the effects of substitutions at the LeuT residue corresponding to R445 of hDAT, R375 in LeuT: LeuT R375A, LeuT R375D, and LeuT R375C. We constructed molecular models of LeuT R375A and R375D (Figure 4A) using Rosetta to determine potential changes in these interactions and in the thermodynamic stability (ΔΔG) of these variants relative to WT. We found that both neutralizing and acidic substitutions at R375 likely promote the dissociation of the E6-R375 salt bridge (closest atom-atom distances: WT = 2.1 Å; R375A = 5.4 Å; R375D = 4.2 Å), weaken the interaction of R375 and I184 (closest atom-atom distances: WT = 2.5 Å; R375A = 6.0 Å; R375D = 4.7 Å), and decrease the thermodynamic stability of LeuT (Rosetta scores: R375A = +4.4 REU; R375D = +5.6 REU relative to WT) (Figure 4A, Figure 4—figure supplement 1A–B). Other interactions were largely preserved, including R5-D369 and E6-I187 interactions (Figure 4A). One difference between these models was that K189 moved towards E6 in LeuT R375A, but away from E6 in LeuT R375D (Figure 4—figure supplement 1A). Together, these models predicted that both acidic and neutral mutations at the LeuT counterpart (R375) of hDAT R445 disrupt the interactions near the IC vestibule, partially affecting the IC gate, but maintaining other IC network interactions. We also generated a model for LeuT R375C, and found that K189 also moves away from E6. We conclude that a cysteine mutation at R375 more closely resembles an acidic substitution (compare Figure 4A and Figure 4—figure supplement 1A,C). However, it has to be noted that cysteine residues exist at an equal ratio of protonated (neutral) to deprotonated (acidic) states at physiological pH. The root-mean-square deviation (RMSD) was calculated to show the correlation between the energy-optimized models and the experimental model (Figure 4—figure supplement 1D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/68039/elife-68039-fig4-v1.jpg)
+
+**Figure 4.:** (A) Models derived, using Rosetta, of LeuT WT (left), LeuT R375A (middle) and LeuT R375D (right) where protein backbones are represented as cartoons and residues E6, I184, I187, R5, and D369 are represented as green spheres and sticks. K189 is colored in blue throughout each model. R375 is colored in green (left). A375 is colored in cyan (middle). D375 is colored in yellow (right). All corresponding polar contacts between side chain or backbone atoms in each model are represented as dashed lines in black. R375 substitution to either Ala or Asp disrupted E6-R375 salt bridge. (B) Crystal structures of LeuT WT (green), LeuT R375A (cream) and LeuT R375D (grey) are superimposed. Box indicates area of zoomed-in view of TM1-TM8 IC region for LeuT WT (top left), LeuT R375D (top right), LeuT R375A (bottom left) and overlay of three structures (bottom right). Distances between residues are shown in dashed lines.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68039/elife-68039-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Distances between IC residues in angstroms (Å) for LeuT WT, R375A, R375C, and R375D. (B) Rosetta scores represent the average scores of the top 5% of models. ΔΔG values are in Rosetta Energy Units (REUs). (C) Rosetta modeling of LeuT R375C, where protein backbones are represented in gray, amino acid side chains in green, K189 in blue, and R375C in magenta. All corresponding polar contacts between side chain or backbone atoms in each model are represented as dashed lines in black. (D) REU versus RMSD diagrams were obtained from 1000 Rosetta Flex ΔΔG trajectories for LeuT WT (left) and LeuT R375A (right). The RMSD between the protein backbone and heavy side chain atoms within a 10 Å distance of R375 and R375A was calculated to show the correlation between the energy-optimized models and the experimental model.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/68039/elife-68039-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Crystallographic data for LeuT WT and R375A regarding data collection, model building, and refinement statistics.
+
 To define further the structural consequences of R375 substitutions, we determined the X-ray crystal structures of LeuT WT, LeuT R375A, and LeuT R375D solved in the L-Ala and Na+ bound OO conformation to a resolution of 2.1 Å for WT and R375A, and 2.6 Å for R375D (Figure 4B, detailed in Figure 4—figure supplement 2). Unfortunately, the expression of the R375C mutant was low and protein yield was insufficient for crystallography. Structures were aligned with a previous structure of LeuT WT in an OO conformation (PDB ID: 3F3E) with an RMSD of 0.134, 0.146, and 0.236 for LeuT WT, R375A, and R375D, respectively. In all structures (superimposed), L-Ala, Na1, and Na2 (purple spheres) could be modeled into their respective binding sites (Figure 4B, left). These crystal structures showed that R375A and R375D substitutions in LeuT (Figure 4B) precluded salt bridge formation between R375 and E6, and between R375 and the backbone of I184 as was also observed with Rosetta modeling in Figure 4A. In addition, K189 moved towards E6 by 3.4 Å, reducing the distance between residues K189 and E6 from 8.0 Å in LeuT WT to 4.6 Å in LeuT R375A (Figure 4B, middle bottom), in agreement with Rosetta modeling. The distance between residues R5 and D369, and between residues E6 and I187, was conserved in all three structures (Figure 4B, right bottom), as also found with Rosetta modeling (Figure 4A). As evident from these data, as well as the REU versus RMSD plots (Figure 4—figure supplement 1D), our Rosetta models parallel our crystal structures. In addition, these data indicate that the IC gate is disrupted by substitutions at position R375 as a result of molecular rearrangements more complex than previously hypothesized (Reith et al., 2018).
 
-## R375 substitutions disrupt alternating access in LeuT
+### R375 substitutions disrupt alternating access in LeuT
 
 To monitor impact of R375 substitution on the ligand-dependent conformational dynamics of the EC and IC gates, we used EPR, and more specifically, double electron-electron resonance (DEER), to obtain distance distributions between spin label pairs 309/480 and 7/86 (Figure 5A, left and right, respectively). These spin label pairs are used to monitor the isomerization of LeuT between the OF, OO, IF and inward-facing occluded (IO) states, as previously described (Campbell et al., 2019; McHaourab et al., 2011). It is important to note that the spin labels were attached at introduced cysteines, hence precluding the investigation of LeuT R375C. Instead, we monitored the effects of R375A and R375D substitutions on LeuT conformational dynamics. We found that these substitutions had relatively minor effects on the EC gate (309/480 pair). In the absence of ion and substrate (Apo), LeuT WT dwells between OO and OF conformation, with OO being predominant (Figure 5B, left; black trace). Na+ enhances the OF conformation poised to bind substrate (Figure 5B, left; red trace) (Claxton et al., 2010). Leu binding to Na+-bound LeuT restores the conformational preference to the OO form (Figure 5B, left; blue trace). We found that the introduction of an Ala (Figure 5C, left) or Asp (Figure 5D, left) at position R375 did not drastically affect the EC gate in the Na+/Leu intermediate (blue trace) but, longer-distance components are sampled in the Apo (black trace) and Na+ (red trace) forms. In R375D, the probability distribution of the dominant short-distance component (OO) decreased, such that more open intermediate distances were sampled in the Apo state (black trace) (Figure 5D, left).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/68039/elife-68039-fig5-v1.jpg)
 
-**Figure 5.:** A) reporting the conformational dynamics of the EC (left) and IC (right) gate of LeuT, respectively. Distance distributions for each pair were obtained in the Apo (black), Na+-bound (Na+; red), and Na+- and Leu-bound (Na+/Leu; blue) conformations for LeuT WT (B), LeuT R375A (C), and LeuT R375D (D).
-
 More substantial changes were observed on the IC gate. Consistent with previous findings, the spin label pair monitoring of the IC gate in LeuT WT showed a bimodal distribution between IF and IO conformations in the Apo state (black trace), whereas Na+ alone (red trace) begins, and Na+/Leu (blue trace) completes, biasing LeuT toward the IO conformer (Figure 5B, right). The substitution R375A increased the probability of an IF conformation only in the Apo (black trace) and Na+/Leu states (blue trace) (Figure 5C, right). Similarly, R375D suppressed the short-distance component (IO conformation) in favor of an IF conformation in the Apo state (black trace) (Figure 5D, right). The addition of Na+ was able to partially rescue the probability distribution of the IO conformer, where Na+/Leu resets the IC gate to the IO conformation (Figure 5D, right).
 
 Together, DEER distance distributions demonstrate that the substitution of R375D leads to increased probability of open conformations on both sides of the transporter. This may suggest the population of a channel-like state consistent with the prediction from MD simulations described below.
 
-## R445 substitutions lead to the intermittent formation of a channel-like intermediate in hDAT
+### R445 substitutions lead to the intermittent formation of a channel-like intermediate in hDAT
 
 To determine the structural and dynamic changes induced by a R445C substitution in hDAT, we generated homology models of hDAT based on dDAT structures (PDB ID: 4M48). As illustrated in Figure 6A, salt-bridges at the IC surface (e.g. R445-E428 and R60-D436), a cation-π interaction between R60 and Y335, and a hydrogen bond between E428 and Y335, form an IC network of interactions that stabilizes the occlusion of the IC vestibule in hDAT WT (Figure 6A; Cheng and Bahar, 2015; Kniazeff et al., 2008; Shan et al., 2011). In silico studies have suggested that disruption or reconfiguration of these IC salt bridges facilitate the opening of the IC vestibule for release of substrate or ions (Cheng and Bahar, 2015; Khelashvili et al., 2015b). This feature has also been noted in the human serotonin transporter (hSERT) in recent cryo-EM structures (Cheng and Bahar, 2019; Coleman et al., 2019).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/68039/elife-68039-fig6-v1.jpg)
+
+**Figure 6.:** (A) Structure of hDAT WT in the OF state (white) illustrates a network of interactions at the IC surface stabilizing the closure of IC vestibule and solvated EC vestibule (gray shaded region). (B) Substitution of R445 with Cys (orange) breaks salt-bridge R445-E428, which weakens IC network interactions and promotes the intermittent formation of a channel-like intermediate. This conformation favors the entry of both water and ions from the IC space. Hydrated regions inside the transporter are indicated in gray shaded areas with explicit water molecules displayed in spheres and lines (CPK format). Green and purple spheres are Na+ migrating from the EC and IC side, respectively. (C) Structural alignment of hDAT R445C (orange) with hDAT WT (white). In hDAT R445C, the association between TM8 and TM9 (near the IC exposed region) is weakened. TM9 undergoes an outward titling (blue curved arrow) to allow for the ‘opening’ of IC vestibule along TM8, facilitated by the absence of C445-E428 salt bridge (R445-E428 in hDAT WT holds TM8-TM9 in place). (D–F) Results from MD simulations of hDAT R445C. Time evolution of distances between Na+ and D79 (D); between salt-bridge forming residues at EC and IC regions (E) are displayed. On the EC side, D476-R85 distance decreases (EC gate closure). On the IC side, D436-R60 distance increases (IC gate opening). D345-K66 remains closed. After dissociating from D436 (t = 150 ns), R60 interacts with E428 (t = 200 ns). (F) Interhelical distances for EC-exposed TM1b-TM10 and TM6a-TM10 shows that the EC region remains exposed to solvent with reduced opening, and IC-exposed TM1a-TM6b is closed, but there is a new opening indicated by the increase in TM6b-TM9 distance. Conformation shown in B is the last snapshot taken from the simulation trajectory in D–F.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68039/elife-68039-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Model of hDAT R445D showing the formation of a channel-like intermediate promoted by the opening of the IC vestibule. In hDAT R445D, three Na+ ions bind along the transport lumen (two diffusing from the IC region, and one from the EC region). The region enclosed in the yellow ellipse is more exposed to the cytosol relative to WT, allowing Na+ and water entry. Hydrated regions inside the transporter are indicated in gray shaded areas with explicit water molecules displayed in spheres and lines (CPK format). The conformation shown is a snapshot (100 ns) taken from the simulation trajectory illustrated in B-D. (B) Time evolution of distances between Na+ and D79. (C) Time evolution of distances between the D476-R85 salt-bridge on the EC side show that this interaction shortens over time (EC gate closure). The distances between D436-R60 on the IC side increase intermittently (IC gate opening). Interestingly, a new salt bridge between D445 and K257 is formed intermittently. (D) Time evolution of interhelical distances between EC-exposed TM1b-TM10 and TM6a-TM10 shows that the EC region remains exposed to solvent with reduced opening, whereas IC-exposed TM1a-TM6b shows that the IC region is predominantly closed with a slight opening indicated by the increase in TM6b-TM9 distance.
 
 The structural model generated for hDAT R445C showed that this substitution disrupts this IC interaction network to support an intermittent channel-like intermediate (Figure 6B) which is characterized by continuous water occupancy in the transporter lumen. Superposition of hDAT WT and R445C structures (Figure 6C) showed an overall opening of the transmembrane (TM) helices on the IC face (TM9, blue arrow) in hDAT R445C. MD simulations also showed that Na+ migrates from either the IC or EC side (Figure 6D), where Na+ binding occurs prior to the complete dissociation of R60-D436 salt bridge at 150 ns that is paralleled by the formation of the new E428-R60 salt bridge (Figure 6E). We also note that the IC-exposed TM1a-TM6b pair retained their ‘closed’ state (Figure 6F), in contrast to the usual opening of TM1a in the IF state observed in WT. Finally, Na+ entry was facilitated by the opening of TM9 and consequent increase in the interhelical distance between TM9 and TM6b (Figure 6F).
 
@@ -125,6 +159,18 @@ Similar channel-like intermediates were observed in hDAT R445A (data not shown) 
 We also observe that the dissolution of the R445-E428 salt-bridge weakened the IC interaction network as a whole. In particular, R445C weakened the association of TM8-TM9 near the IC entrance, whereby TM9 underwent an outward tilting exposing an egress pathway along TM8 for Na+ (or a different cation) (Figure 6C). The outward titling of TM9 has been observed previously in the DA-loaded transition from OF to IO states (Cheng and Bahar, 2015). Furthermore, R455C substitution increases the likelihood that the R60-D436 salt bridge breaks, while promoting the formation of a new salt bridge R60-E428 (Figure 6E) at the expense of breaking R60-D436 salt-bridge in both runs. This new salt bridge may lock the IC gate in a new configuration.
 
 In a heterologous expression system, hDAT R445C displays reduced expression that is partially rescued by chloroquine hDAT R445C isolated brains display a reduction in DA content (Figure 3A). Unfortunately, we could not consistently measure hDAT expression in this system. Thus, we investigated the expression of hDAT R445C in a heterologous expression system (HEK 293 cells). R445C substitution reduced the surface expression to 0.06 ± 0.01 of hDAT WT (1.0 ± 0.04; p<0.0001) and the total mature DAT expression to 0.20 ± 0.04 of hDAT WT (marked by #; 1.0 ± 0.05; p<0.0001) (Figure 7A). Given this reduction in transporter expression, in addition to structural rearrangements, we suspected that DA uptake would also be impaired. Indeed, [3H]DA uptake kinetics showed that R445C expressing cells have significantly reduced transport capacity with respect to WT cells, as reflected in the Vmax (F(1, 15)=160.3; p<0.0001) (Figure 7B). However, the apparent affinity for DA (Km) significantly increased in hDAT R445C relative to WT (p<0.0001) cells, suggesting that conformational changes required for translocation of DA across the membrane are also affected (Figure 7B). To determine if R445C affected the reverse transport function of the DAT (DA efflux), we delivered DA (2 mM for 10 min) to the inside of the cell through a patch-pipette in whole-cell configuration and used amperometry to measure DA efflux in response to AMPH (10 µM) (Belovich et al., 2019). Thus, we were able to load the cells with equal concentrations of DA despite differences in DA uptake. Consistent with our ex vivo brain amperometric recordings, we found that R445C supported DA efflux, albeit significantly reduced compared with WT (hDAT WT = 0.74 ± 0.09 pA; hDAT R445C = 0.28 ± 0.06 pA; p=0.001) (Figure 7C).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/68039/elife-68039-fig7-v1.jpg)
+
+**Figure 7.:** (A) Representative immunoblots of surface hDAT (top left), total hDAT (top right) and corresponding Na-K ATPase (bottom left) and actin (bottom right) loading controls. hDAT expression was normalized to hDAT WT. hDAT R445C displayed significantly reduced surface (p<0.0001; n = 4, in triplicate) and total glycosylated (#) expression relative to hDAT WT (p<0.0001; n = 4, in triplicate). (B) Average 3[H]DA saturation curves of DA uptake measured in hDAT WT (black) or hDAT R445C (blue) cells (n = 3, in triplicate). Curves were fit to Michaelis-Menten kinetics to derive Km and Vmax. DA uptake for hDAT R445C was significantly reduced compared with hDAT WT at every DA concentration measured (F(6,64) = 52.4, p<0.0001), as were the kinetic constants, Km and Vmax (p<0.0001). (C) Representative traces of amperometric currents (DA efflux) recorded in response to AMPH application (left; 10 μM, indicated by arrow) from hDAT WT (black) and hDAT R445C (blue) cells loaded with DA (2 mM, 10 min) with whole-cell pipette. Quantitation of peak current amplitudes illustrated a significant reduction in DA efflux recorded from hDAT R445C compare to hDAT WT (right; p=0.008; n = 6–7). (D) Representative immunoblots of total hDAT (top) and actin loading controls (bottom), where glycosylated (#) and non-glycosylated (*) hDAT is highlighted. Ratio of mature (glycosylated) to immature (non-glycosylated) DAT (mDAT/iDAT) expression following CQ treatment was normalized to vehicle condition for hDAT WT and hDAT R445C cells (n = 4, in duplicate). Incubating hDAT R445C cells with CQ (1 mM, 4 hr) significantly increased the ratio of mDAT/iDAT (F(1,20) = 18.0), p=0.003. CQ also significantly increased mDAT/iDAT expression in hDAT WT cells (p=0.04). (E) Diagramed is the flight initiation assay used to determine take-off times for hDAT WT and hDAT R445C Drosophila (left). hDAT R445C and hDAT WT Drosophila were fed CQ (3 mM, 72 hr) or vehicle supplemented diet. Quantitation showed a significant reduction in the time to initiate flight in hDAT R445C flies (F(1,29) = 8.7, p=0.04) in response to CQ compared with vehicle conditions (right). Time for flight initiation was comparable in hDAT WT flies exposed to CQ and vehicle supplemented diet (p>0.05). Data represent mean ± SEM. Student’s t-test (A) and (C); Two-way ANOVA with Bonferroni’s multiple comparison test: (B), and (D–E).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/68039/elife-68039-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Representative immunoblots of surface hDAT (top left), total hDAT (top right) and corresponding Na-K ATPase (bottom left) and actin (bottom right) loading controls (n = 4, in triplicate). hDAT expression was normalized to hDAT WT. hDAT R445A displayed significantly impaired surface (p<0.0001) and total (#) expression relative to hDAT WT (p<0.0001). (B) [3H]DA saturation curves of DA uptake measured in hDAT WT (black) and hDAT R445A (red) cells (n = 3, in triplicate). Curves were fit to Michaelis-Menten kinetics to derive Km and Vmax. DA uptake for hDAT R445A was significantly reduced compared with hDAT WT (F(5,92) = 22.7, p<0.0001) as were kinetic constants, Km and Vmax (p<0.0001). (C) Left: Representative amperometric traces (DA efflux) recorded in response to AMPH application (10 μM, indicated by arrow) from hDAT WT (black) and hDAT R445A (red) loaded with DA (2 mM, 10 min) via a whole-cell patch electrode in current-clamp. Right: Quantitation of peak amperometric current in hDAT R445A and hDAT WT cells (p=0.002; n = 6). Data represent mean ± SEM. Welch’s t-test (A); Two-way ANOVA with Bonferroni’s multiple comparison test: (B). Mann-Whitney Test (C).
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/68039/elife-68039-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Representative immunoblots of surface hDAT (top left), total hDAT (top right) and corresponding Na-K ATPase (bottom left) and actin (bottom right) loading controls (n = 4, in triplicate). hDAT R445D displayed significantly reduced surface (p<0.0001) and total (#) expression relative hDAT WT (p<0.0001). (B) [3H]DA uptake was measured in hDAT WT (black), hDAT R445D (green) cells (n = 3, in triplicate). Curves were fit to Michaelis-Menten kinetics to derive Km and Vmax. DA uptake for hDAT R445D was significantly reduced compared with hDAT WT (F(5,94) = 42.1, p<0.0001), as were the kinetic constants, Km and Vmax (p<0.0001). (C) Left: Representative amperometric traces (DA efflux) recorded in response to AMPH application (10 μM, indicated by arrow) from hDAT WT (black) and hDAT R445D (green) cells loaded DA (2 mM, 10 min) with a whole-cell patch electrode. Right: Peak current amplitudes illustrated a significant reduction in DA efflux recorded from hDAT R445D relative hDAT WT (p=0.002; n = 6). Data represent mean ± SEM. Welch’s t-test (A); two-way ANOVA with Bonferroni’s multiple comparison test: (B). Mann-Whitney Test (C).
 
 We also found that both neutralizing and anionic substitutions at R445 (hDAT R445A and hDAT R445D) significantly compromised surface DAT (p<0.0001) and mature DAT expression (p<0.0001) relative to hDAT WT (Figure 7—figure supplements 1A and 2A). In agreement with this reduction in hDAT surface expression and observed structural impairment, [3H]DA uptake was also significantly reduced in hDAT R445A (F(5,92) = 22.7, p<0.0001; Figure 7—figure supplement 1B) and hDAT R445D expressing HEK 293 cells (F(5,94) = 42.1; Figure 7—figure supplement 2B). Consistent with data from the R445C mutant, we find that the Km of hDAT R445A and hDAT R445D was also significantly increased. Combining patch-clamp with amperometry (as above), we found that AMPH-induced DA efflux was significantly compromised in hDAT R445D (p=0.002; Figure 7—figure supplement 2C) compared with hDAT WT cells. Interestingly, we observed that AMPH caused a reduction in the amperometric current in hDAT R445A compared with hDAT WT cells (p=0.001; Figure 7—figure supplement 1C), consistent with AMPH blocking constitutive DA efflux, as previously noted in other DAT mutations (Bowton et al., 2010; Mazei-Robison et al., 2008). Together, these data confirm that, in HEK 293 cells, substitutions at R445 significantly compromised DAT cell surface expression and function.
 
@@ -158,74 +204,259 @@ Our study reveals how a specific DAT variant identified in DTDS contributes to D
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>SLC6A3</td>
+      <td>Uniprot</td>
+      <td>Uniprot Q01959</td>
+      <td>Encodes hDAT protein</td>
+    </tr>
+    <tr>
+      <td>Gene (Aquifex aeolicus)</td>
+      <td>LeuT</td>
+      <td>Uniprot</td>
+      <td>Uniprot O67854</td>
+      <td>Encodes LeuT protein</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>C43 DE3 F– ompT gal dcm hsdSB(rB- mB-)(DE3)</td>
+      <td>Lucigen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>W1118</td>
+      <td>Bloomington Stock Center</td>
+      <td>BI 6326</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>TH-GAL4</td>
+      <td>Bloomington Stock Center</td>
+      <td>BI 8848</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>DATMB07315</td>
+      <td>Bloomington Stock Center</td>
+      <td>BI 25547</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-mCherry</td>
+      <td>Kyoto Stock Center</td>
+      <td>109594</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>M[vas-int.Dm]ZH-2A; M[3xP3-RFP.attP']ZH-22A</td>
+      <td>Rainbow Transgenic Flies</td>
+      <td>24481</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>DATfmn</td>
+      <td>Gift from Dr. K. Kume</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DAT(Rat monoclonal)</td>
+      <td>Millipore</td>
+      <td>MAB369</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- β-actin (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>A5441</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- Na-K ATPase</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>a5</td>
+      <td>WB (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- TH</td>
+      <td>Millipore</td>
+      <td>AB152</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- Bruchpilot</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>nc82</td>
+      <td>IHC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP (plasmid)</td>
+      <td>Clonetech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET16b (plasmid)</td>
+      <td>Novagen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>LeuT</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from C43 (DE3) E. coli</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>LeuT R375A</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from C43 (DE3) E. coli</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>LeuT R375C</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from C43 (DE3) E. coli</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>LeuT R375D</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Purified from C43 (DE3) E. coli</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>[3H]dopamine</td>
+      <td>PerkinElmer Life Sciences</td>
+      <td>NET673250UC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sulfo-NHS-SS-biotin</td>
+      <td>Fisher</td>
+      <td>PG82078</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fugene-6</td>
+      <td>Roche Molecular Biochemicals</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 HEK cells were authenticated by STR profiling. Cultures were verified to be free of mycoplasma by Mycoplasma Detection Kit (Invivogen rep-pt1) per manufacture's protocol. peGFP expression vector was engineered to contain synhDAT WT (hDAT WT), hDAT R445C, hDAT R445D and hDAT R445A. All vectors were sequenced via Sanger sequencing to confirm mutations. Vector DNA was transiently transfected into human embryonic kidney (HEK) cells using Fugene-6 (Roche Molecular Biochemicals) transfection reagent. eGFP (enhanced green fluorescence protein) was used for cell selection and quantitation of transfection efficiency. Cells were maintained in a 5% CO2 incubator at 37°C in Dulbecco’s Modified Eagle Medium (DMEM) supplemented with 10% fetal bovine serum (FBS), 1 mM L-glutamine, 100 U/mL penicillin, and 100 μg/mL streptomycin. All assays were conducted ~48 hr post transfection.
 
-## [3H] DA uptake assays
+### [3H] DA uptake assays
 
 For DA uptake in a heterologous expression system: Cells were washed in KRH buffer composed of (in mM): 130 NaCl, 25 HEPES, 4.8 KCl, 1.2 KH2PO4, 1.1 MgSO4, 2.2 CaCl2, 10 d-glucose, 1.0 ascorbic acid, 0.1 pargyline, and 1.0 tropolone. KRH was titrated to pH 7.3–7.4. Cells were equilibrated in KRH at 37°C for 5 min. Saturation kinetics of DA were measured by incubating cells in a range of 0.1 to 15 μM DA, comprised of a mixture of [3H]DA (PerkinElmer Life Sciences, Waltham, MA) and unlabeled DA. Uptake was terminated after 10 min by washing cells twice in ice-cold KRH buffer. Nonspecific binding was measured in the presence of 10 μM cocaine. Km and Vmax values were derived by fitting Michaelis-Menten kinetics to specific binding data. For DA uptake in dissected Drosophila brains: 2- to 5-day-old males were collected, anesthetized with CO2, and brains were dissected in Schneider's medium (GIBCO) with 1.5% BSA. The retina was removed, and four brains per condition were pooled in Millipore Millicell inserts in 24-well plates. Brains were washed with Schneider's medium, then washed in a standard fly saline solution (HL3) plus 1.5% BSA and 10 mM MgSO4. For 15 min at room temperature, brains were exposed to 200 nM [3H]DA in HL3 plus 1.5% BSA and 115 μM ascorbic acid. Brains were then washed six times with 1.4 mL HL3 plus 1.5% BSA at 4°C. Brains were placed into scintillation vials in 100 μL 0.1% SDS. Scintillation fluid was added to count [3H]DA. Nonspecific binding was measured in the presence of 20 μM cocaine.
 
-## Amperometry and patch-clamp electrophysiology
+### Amperometry and patch-clamp electrophysiology
 
 Cells were washed twice with 37°C Lub’s external solution composed of (in mM): 130 NaCl, 1.5 CaCl2, 0.5 MgSO4, 1.3 KH2PO4, 10 HEPES and 34 d-glucose (pH 7.3–7.4; 300–310 mOsms/L). To intracellularly load DA, a programmable puller (Model: P-2000; Sutter Instruments; Novato, CA) was used to fabricate quartz patch-pipettes with a resistance of 3–8 mΩ. Pipettes were filled with an internal solution containing (in mM): 110 KCl, 10 NaCl2, 2 MgCl2, 0.1 CaCl2, 1.1 EGTA, 10 HEPES, 30 d-glucose, and 2.0 DA (pH 7.3–7.4; 280–290 mOsms/L). Upon gaining whole-cell access, the internal solution was allowed to diffuse for 10 min. To record DA efflux, a carbon fiber electrode was juxtaposed to the plasma membrane of the cell and held at +600 mV. After establishing a baseline, 10 µM AMPH was added to the bath. Amperometric currents were low pass filtered at 1 Hz (Model: 3382; Krohn-Hite Corporation; Brockton, MA), sampled at 100 Hz (Model: Axopatch 200B; Molecular Devices; San Jose, CA), and analyzed off-line using pCLAMP nine software (Molecular Devices). DA efflux was quantified as the peak of the amperometric current.
 
-## Biotinylation assays
+### Biotinylation assays
 
 Cells were washed on ice with 4°C phosphate-buffered saline (PBS) supplemented with 0.9 mM CaCl2 and 0.49 mM MgCl2. Cells were incubated in 1.0 mg/ml sulfosuccinimidyl-2-(biotinamido)ethyl-1,3-dithiopropionate-biotin (sulfo-NHS-SS-biotin; Pierce, Rockford, IL) in PBS for 20 min at 4°C. Excess biotin was quenched by incubating cells in 100 mM glycine in PBS for 15 min. Cells were solubilized in radioimmunoprecipitation assay buffer (RIPA) composed of 150 mM NaCl, 1.0% NP-40, 0.5% Sodium Deoxycholate, 0.1% SDS, 50 mM Tris, 1 mM EDTA, 1 mM EGTA, 1 mM PMSF and protease inhibitors (1:100), and titrated to pH 7.4. Cellular extracts were centrifuged for 30 min at 16,000 × g at 4°C. The supernatant was added to immunopure immobilized streptavidin beads (Pierce Chemical Company; Rockford, IL) and incubated overnight at 4°C. Beads were extensively washed and eluted in sample buffer. Samples were processed according to a standard western blot protocol (see below).
 
-## Western blotting protocol
+### Western blotting protocol
 
 Cells were incubated in vehicle or 1 mM chloroquine (CQ) for 4 hr. Cells were solubilized in RIPA, sonicated, and centrifuged. Supernatants were denatured in sample buffer, run on SDS-PAGE gel, and transferred to polyvinylidene fluoride membrane (PVDF) (Millipore, Bedford, MA). Membranes were immunoblotted for DAT (1:1000) (MAB369; Millipore), β-actin (1:5000) (A5441; Sigma-Aldrich; St. Louis, MO), and Na-K ATPase (1:100; Developmental Studies Hybridoma Bank (DSHB), Iowa City, Iowa). The secondary antibodies used were Li-COR goat anti-rat IRDye 800 (1:15,000), goat anti-rabbit IRDye 680 (1:15,000) and goat anti-mouse IRDye 680 (1:15,000). Band densities were quantified using Image Studio Odyssey Infrared Imaging System (LI-COR, Lincoln, Nebraska).
 
-## Drosophila rearing and stocks
+### Drosophila rearing and stocks
 
 All Drosophila melanogaster strains were grown and maintained on standard cornmeal-molasses media at 25°C under a 12:12 hr light-dark schedule. Fly stocks include w1118 (Bloomington Indiana Stock Center (BI) 6326), TH-GAL4 (BI 8848), DATMB07315 (BI 25547), UAS-mCherry (Kyoto Stock Center 109594), and M[vas-int.Dm]ZH-2A; M[3xP3-RFP.attP']ZH-22A (Bl 24481) and DATfmn (dDAT KO). Drosophila expressing homozygous dDAT null allele DATfmn (dDAT KO) (Kume et al., 2005), TH-Gal4 (Friggi-Grelin et al., 2003), and UAS-mCherry were outcrossed to a control line (w1118) for 5–10 generations and selected by PCR or eye color. Transgenes (hDAT WT and hDAT RT445C) were cloned into pBID-UASC (Wang et al., 2012) and constructs were injected into embryos from M[vas-int.Dm]ZH-2A, M[3xP3-RFP.attP']ZH-22A (Bl 24481) (Rainbow Transgenic Flies Inc; Camarillo, CA). Initial potential transformants were isolated and selected. Flies containing transgenes were outcrossed to dDAT KO flies (in w1118 background) for 5–10 generations. Age-paired adult male flies (10 days post eclosion) containing a single copy of hDAT WT or hDAT R445C in DA neurons in a DATfmn background were used for all subsequent experiments.
 
-## Drosophila amperometry assays
+### Drosophila amperometry assays
 
 Drosophila brains were dissected with surgical forceps in ice-cold Schneider’s Drosophila Medium supplemented with 1.5% BSA. Whole brains were placed in a mesh holder in Lub’s external solution (see previous). A carbon fiber electrode was held at +600 mV and inserted juxtaposed to TH-positive PPL1 DA neuronal region. After establishing a baseline, 20 µM AMPH was added to the bath. Amperometric currents were processed as stated above.
 
-## Drosophila locomotion analysis
+### Drosophila locomotion analysis
 
 Spontaneous locomotor activity in an open field was measured using custom 3D printed activity chambers (1.1 × 1.1 cm). Locomotion was detected using NIS Elements AR (Melville, NY). Animals were placed in the activity chambers, where activity was recorded for 5 min following 2 min acclimation period. Data from this test was also used to measure anxiety-like behaviors. Thigmotaxis, the tendency of an animal to remain close to the walls of an open field, was measured as the percent of time flies spent in center square (3.0 × 3.0 mm). Total distance traveled, center time, and velocity distribution were quantified using MATLAB 2018b (MathWorks; Natick, MA). Velocity thresholds for movement initiation were set based on the average velocity (χ) during non-movement phases (χ +0.5σ = 0.50 + 0. 24 mm/s), whereas fast movement was determined from the average velocity during the test period (χ + σ = 2.7 + 2.6 mm/s).
 
-## Drosophila grooming analysis
+### Drosophila grooming analysis
 
 Flies were observed for a period of 5 min (~19 fps). Forelimb and hindlimb grooming incidents were quantified per frame, where total grooming time was calculated as the total number of frames spent grooming.
 
-## Drosophila flight assay
+### Drosophila flight assay
 
 Coordinated flight was measured using custom 3D-printed chambers (3.9 × 1.0×1.0 cm) filled with 2600 μL of water. Flight initiation was recorded at 2000 frames per second using a Phantom v1212 Camera (Ametek; Wayne, New Jersey), after a short acclimation period. Delay in flight initiation was quantified as the time from the outset of the first wing motion to the coordinated jump response.
 
-## HPLC
+### HPLC
 
 Biogenic amines were quantified by the Neurochemistry Core Facility at Vanderbilt University. Briefly, Drosophila brains were dissected quickly in ice-cold PBS and immediately frozen in liquid nitrogen. Brains were homogenized using a tissue dismembrator in 100–750 μl of solvent containing (in mM) 100 TCA, 10 Na, 0.1 EDTA and 10.5% methanol (pH 3.8). Homogenate was spun (10,000 x g, 20 min) and supernatant was removed for biogenic monoamines analysis. Biogenic amine concentrations were determined utilizing an Antec Decade II (oxidation: 0.65) electrochemical detector operated at 33°C. Supernatant was injected using a Water 2707 autosampler onto a Phenomenex Kintex C18 HPLC column (100 × 4.60 mm, 2.6 μm). Biogenic amines were eluted with a mobile phase 89.5% of solvent (see previous) and 10.5% methanol (pH 3.8). Solvent was delivered at 0.6 ml/min using a Waters 515 HPLC pump. Biogenic amines elute in the following order: Noradrenaline, Adrenaline, DOPAC, Dopamine, 5-HIAA, HVA, 5-HT, and 3-MT. HPLC control and data acquisition are managed by Empower software. Isoproterenol (5 ng/mL) was included in the homogenization buffer for use as a standard to quantify the biogenic amines. Protein concentration was determined by BCA Protein Assay Kit (ThermoFisher Scientific).
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Fly brains were dissected in PBS and fixed in 4% paraformaldehyde for 20 mins at RT. Brains were washed three times with PBST (0.3% Triton X100). Brains were blocked in 1% BSA and 5% normal goat serum. Brains were immunostained for TH (1:200; Millipore, AB152) and nc82 (1:50; DSHB) overnight at 4°C, washed and stained with secondary antibodies Alexa 488–conjugated goat anti-rabbit (1:200; A11034, ThermoFisher Scientific) and Alexa 566–conjugated goat anti-mouse (1:200, A11031, ThermoFisher Scientific) overnight at 4°C. Brains were washed and mounted with ProLong Diamond Anti-Fade mounting solution (ThermoFisher Scientific). Imaging was performed using a Nikon A1R confocal microscope. The resolution of the image stack was 1024 × 1024 with 0.5 μm step size. Neurons were counted manually using FIJI (Bethesda, MD). Data were analyzed blinded to genotype.
 
-## Rosetta homology modeling and stability calculations
+### Rosetta homology modeling and stability calculations
 
 The Rosetta Flex ΔΔG protocol (Barlow et al., 2018; Kuenze et al., 2019) and the Rosetta Membrane all-atom energy function (Alford et al., 2015) were used to estimate free energy changes and sample conformational changes of the LeuT, hDAT and corresponding variants. The Flex ΔΔG protocol models mutation-induced conformational and energetic changes through a series of ‘backrub’ moves of the protein backbone together with side-chain repacking around the mutation site. 15,000 backrub steps were used in this study to sample backbone and side chain degrees of freedom for neighboring residues within an 9 Å boundary of the mutation site. This is subsequently followed by side chain optimization using the Rosetta ‘packer.’ Global minimization of the backbone and side chains torsion angles is performed with harmonic Cα atom-pair distance restraints. The restraints are used to prevent large structural deviations from the input model. Models are scored with the Rosetta Membrane all-atom energy function (Alford et al., 2015). This is carried out in parallel for the WT input model and the mutant of interest. For the LeuT calculations, the LeuT crystal structure (PDB ID: 2A65) (Yamashita et al., 2005) was used and 1000 independent trajectories were carried out for both LeuT WT (control) and each variant. For the hDAT calculations, homology models for hDAT WT were created in the Rosetta molecular modeling suite (revision 57712, Rosetta Commons) as previously described (Campbell et al., 2019) using the Drosophila melanogaster DAT (PDB ID: 4XP9) (Wang et al., 2015) as a structural template. A total of 500 independent trajectories were carried out for each hDAT R445 mutant and hDAT WT (control). This protocol was used for the top three scoring hDAT homology models resulting in 1500 trajectories total per mutant. The Rosetta energy change (ΔΔG) was calculated as score difference between the average of the top 5% of LeuT WT and corresponding variants, as well as of hDAT WT and corresponding variants. Rosetta ΔΔG values are in Rosetta Energy Units (REU). Representative structural models for LeuT, hDAT, and all variants were selected for visualization in Pymol by removing outliers and taking the lowest-energy model within the lowest interquartile range of a box plot.
 
-## Protein expression and purification
+### Protein expression and purification
 
 Escherichia coli C41 (DE3) cells were transformed with the pET16b plasmid containing LeuT, LeuT R375A, LeuT R375C, or LeuT R375D tagged with a C-Terminal 8xHis-tag and thrombin cleavage site. Transformed cells were grown in Terrific broth media to an OD600 of 0.6. Cells were induced with 0.1 mM isopropyl-β-D-1-thiogalactopyranoside (20 hr, 20°C), harvested by centrifugation and disrupted with a french press in 20 mM HEPES-Tris pH 7.5, 190 mM NaCl, 10 mM KCl, 1 mM EDTA, 5 mM L-Alanine, 100 μM AEBSF, and 0.004 mg/mL DNAse I. Cells membranes were isolated by ultracentrifugation at 200,000 x g (45 min) and solubilised with 40 mM n-dodecyl-β-D-maltopyranoside (DDM, Anatrace). Solubilized membranes were incubated with Ni-NTA resin (Qiagen) (1 hr, 4°C). Protein bound to the Ni-NTA resin was washed with 50 mM imidiazole and then eluted with 300 mM imidiazole. The histidine tag was subsequently removed by digestion with thrombin (10 U/mg protein) and the protein further purified on a size exclusion column in 10 mM Tris-HCl pH 8.0, 45 mM NaCl, 5 mM KCl, 5 mM L-Alanine, and 40 mM n-Octyl-β-D-glucopyranoside (OG, Anatrace). Purified protein was concentrated to 8 mg/mL using 30 kDa cut-off AMICON concentrators (Merck).
 
-## Crystallography and structure determination
+### Crystallography and structure determination
 
 Crystals were grown at 18°C using the hanging-drop vapor diffusion method, by mixing protein (~8 mg/ml) and well solution (1:1 vol:vol), 100 mM HEPES-NaOH pH 7–7.5, 200 mM NaCl, 17–22% PEG550 MME. Protein crystals were cryoprotected by soaking in the well solution supplemented with 25–35% PEG550 MME. All diffraction data was collected on the EIGER 16M detector at the Australian Synchrotron (ACRF ANSTO) beamline MX2 at a wavelength of 0.954 Å (Aragão et al., 2018). Datasets were indexed, integrated and scaled using XDS (Kabsch, 2010). Initial phases were obtained by molecular replacement with Phaser (McCoy et al., 2007) using the structure of LeuT with bound L-Leu (PDB ID: 3F3E) as the search model. The protein model was built manually in Coot (Emsley et al., 2010) and refined using REFMAC (Murshudov et al., 2011) with TLS and non-crystallographic symmetry (NCS) restraints (Winn et al., 2001). Phases were further improved by rounds of manual rebuilding followed by restrained refinement in REFMAC. Validation was carried out using MolProbity (Chen et al., 2010). Unit cell parameters, data collection, and refinement statistics are presented in Figure 4—figure supplement 2. All structural figures were prepared using USCF Chimera (Pettersen et al., 2004).
 
-## Electron paramagnetic resonance (EPR) protocol
+### Electron paramagnetic resonance (EPR) protocol
 
 Cysteine residues were introduced using site directed mutagenesis into LeuT, LeuT R375A, and LeuT R375D constructs. Experiments were conducted as in Claxton et al., 2010. The apo conformation refers to Na+ and leucine-free transporter, while the +Na/Leu state was obtained in 200 mM NaCl and fourfold molar excess of Leu relative to LeuT. Double Electron Electron Resonance (DEER) (Jeschke and Polyhach, 2007) was performed at 83K on a Bruker 580 pulsed EPR spectrometer operating at Q-band frequency using a standard 4-pulse sequence (Zou and Mchaourab, 2010). DEER echo decays were analyzed to obtain distance distributions (Jeschke et al., 2002).
 
-## Statistical methods
+### Statistical methods
 
 Experiments were designed using statistical power calculations considering means and standard errors from preliminary data. Statistical analyses were performed using GraphPad Prism 8 (San Diego, CA). Shapiro-Wilk normality tests were performed to determine if data was normally distributed and F tests were performed to compare variances; parametric or non-parametric tests with appropriate corrections were chosen accordingly. All data was acquired unblinded, but analyzed blinded to genotype.
 
-## Molecular dynamics (MD) simulations
+### Molecular dynamics (MD) simulations
 
 The structural model for apo hDAT (residues Q58-D600) in the outward-facing open (OF) unbound state, based on dDAT structure (PDB ID: 4M48), was taken from previous study (Cheng et al., 2018). Four simulation systems using this initial structure were constructed: wild-type (WT), R445C, R445A, and R445D. In each case, the transporter is embedded into 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine (POPC) membrane lipids using CHARMM-GUI Membrane Builder module (Wu et al., 2014). TIP3P waters and Na+ and Cl− ions corresponding to 0.15 M NaCl solution were added to build a simulation box of ~110 × 110×118 Å. Each simulation system contained ~131,000 atoms, the transporter, ~300 lipid molecules, and 27,000 water molecules. All simulations were performed using NAMD (Phillips et al., 2005) (version NAMD_2.12) following previous protocol (Cheng et al., 2018). For each mutant, two independent runs of 200 ns are performed to verify the reproducibility of the results. VMD (Humphrey et al., 1996) with in-house scripts was used for visualization and trajectory analysis.

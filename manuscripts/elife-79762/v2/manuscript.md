@@ -8,14 +8,14 @@
 
 ### Affiliations
 
-1. https://ror.org/02c5jsm26 Research Institute of Molecular Pathology (IMP), Vienna BioCenter (VBC), Campus- Vienna-Biocenter 1 Vienna Austria
-2. https://ror.org/05n3x4p02 Vienna BioCenter PhD Program, Doctoral School of the University of Vienna and Medical University of Vienna Vienna Austria
+1. Research Institute of Molecular Pathology (IMP), Vienna BioCenter (VBC), Campus- Vienna-Biocenter 1 Vienna Austria ([ROR:02c5jsm26](https://ror.org/02c5jsm26))
+2. Vienna BioCenter PhD Program, Doctoral School of the University of Vienna and Medical University of Vienna Vienna Austria ([ROR:05n3x4p02](https://ror.org/05n3x4p02))
 
 † Corresponding author
 
 ## Abstract
 
-The expression of fibroblast growth factors (Fgf) ligands in a specialized epithelial compartment, the Apical Ectodermal Ridge (AER), is a conserved feature of limb development across vertebrate species. In vertebrates, Fgf 4 , 8 , 9 , and 17 are all expressed in the AER. An exception to this paradigm is the salamander (axolotl) developing and regenerating limb, where key Fgf ligands are expressed in the mesenchyme. The mesenchymal expression of Amex. Fgf8 in axolotl has been suggested to be critical for regeneration. To date, there is little knowledge regarding what controls Amex. Fgf8 expression in the axolotl limb mesenchyme. A large body of mouse and chick studies have defined a set of transcription factors and canonical Wnt signaling as the main regulators of epidermal Fgf8 expression in these organisms. In this study, we address the hypothesis that alterations to one or more of these components during evolution has resulted in mesenchymal Amex. Fgf8 expression in the axolotl. To sensitively quantify gene expression with spatial precision, we combined optical clearing of whole-mount axolotl limb tissue with single molecule fluorescent in situ hybridization and a semiautomated quantification pipeline. Several candidate upstream components were found expressed in the axolotl ectoderm, indicating that they are not direct regulators of Amex. Fgf8 expression. We found that Amex. Wnt3a is expressed in axolotl limb epidermis, similar to chicken and mouse. However, unlike in amniotes, Wnt target genes are activated preferentially in limb mesenchyme rather than in epidermis. Inhibition and activation of Wnt signaling results in downregulation and upregulation of mesenchymal Amex. Fgf8 expression, respectively. These results implicate a shift in tissue responsiveness to canonical Wnt signaling from epidermis to mesenchyme as one step contributing to the unique mesenchymal Amex. Fgf8 expression seen in the axolotl.
+The expression of fibroblast growth factors (Fgf) ligands in a specialized epithelial compartment, the Apical Ectodermal Ridge (AER), is a conserved feature of limb development across vertebrate species. In vertebrates, Fgf 4, 8, 9, and 17 are all expressed in the AER. An exception to this paradigm is the salamander (axolotl) developing and regenerating limb, where key Fgf ligands are expressed in the mesenchyme. The mesenchymal expression of Amex.Fgf8 in axolotl has been suggested to be critical for regeneration. To date, there is little knowledge regarding what controls Amex.Fgf8 expression in the axolotl limb mesenchyme. A large body of mouse and chick studies have defined a set of transcription factors and canonical Wnt signaling as the main regulators of epidermal Fgf8 expression in these organisms. In this study, we address the hypothesis that alterations to one or more of these components during evolution has resulted in mesenchymal Amex.Fgf8 expression in the axolotl. To sensitively quantify gene expression with spatial precision, we combined optical clearing of whole-mount axolotl limb tissue with single molecule fluorescent in situ hybridization and a semiautomated quantification pipeline. Several candidate upstream components were found expressed in the axolotl ectoderm, indicating that they are not direct regulators of Amex.Fgf8 expression. We found that Amex.Wnt3a is expressed in axolotl limb epidermis, similar to chicken and mouse. However, unlike in amniotes, Wnt target genes are activated preferentially in limb mesenchyme rather than in epidermis. Inhibition and activation of Wnt signaling results in downregulation and upregulation of mesenchymal Amex.Fgf8 expression, respectively. These results implicate a shift in tissue responsiveness to canonical Wnt signaling from epidermis to mesenchyme as one step contributing to the unique mesenchymal Amex.Fgf8 expression seen in the axolotl.
 
 ## Introduction
 
@@ -37,11 +37,31 @@ We identify conserved and divergent features of the axolotl limb signaling netwo
 
 ## Results
 
-## Expression of transcription factors known to regulate Fgf8 in the chick and mouse AER
+### Expression of transcription factors known to regulate Fgf8 in the chick and mouse AER
 
 Several transcription factors have been functionally linked with the induction or maintenance of Fgf8 in the mammalian AER (Zuniga and Zeller, 2020). To determine whether these transcription factors are potentially upstream of axolotl Amex.Fgf8, we investigated if they are expressed in the epidermis and/or mesenchyme in the axolotl developing and regenerating limb. To this end, we first analyzed published scRNA seq datasets for the axolotl stage 52 axolotl hindlimb bud (Lin et al., 2021) and 7-day postamputation axolotl forelimb blastema (Li et al., 2021). Both single-cell datasets were reanalyzed to match the latest axolotl transcriptome annotation (Schloissnig et al., 2021) and reclustered, using known markers for cluster assignment (Figure 1—figure supplements 1 and 2). We then used HCR in situ hybridization in tissue sections and whole-mount cleared limb preparations of forelimb buds and blastemas of comparable stages (stage 45–46 forelimb bud, 7-day postamputation forelimb blastema) to validate the expression domains and acquire spatial information. To achieve precise visualization of transcripts in the anatomical complexity of the entire axolotl developing and regenerating limb, we combined HCR in situ hybridization with Ce3D tissue clearing and light sheet imaging (see Materials and methods).
 
 Buttonhead transcription factors Mmu.Sp6 and Mmu.Sp8 are expressed in the AER of the mouse developing limb, and their knockout abolishes Mmu.Fgf8 expression (Lin et al., 2013; Haro et al., 2014). Analysis of scRNA seq data from the axolotl limb bud and blastema (Li et al., 2021; Lin et al., 2021) revealed expression of Amex.Sp6 and Amex.Sp8 in the epidermis and not in mesenchyme (Figure 1A, A’, B, B’). We performed whole-mount HCR staining in regenerating axolotl limb blastemas and limb buds (Figure 2B, B’) and confirmed that Amex.Sp6 is expressed in the epidermis of the axolotl limb bud and regenerating blastema. Interestingly, we detected Amex.Sp6 also in the mesenchyme of the axolotl limb bud, in a domain proximal to Amex.Fgf8 expression (Figure 2—figure supplement 1). This proximal mesenchymal expression of Amex.Sp6 was absent in the blastemas that we analyzed and is unlikely to regulate the more distal Amex.Fgf8 expression in the axolotl limb bud. Using HCR in situ hybridization, we then found that Amex.Sp8 is exclusively expressed in the epidermis (Figure 2C, C’), with a strong enrichment in the basal layer (the inner layer facing the mesenchyme) in both the axolotl and limb bud and blastema. This indicates that Buttonhead factors are unlikely to directly regulate Amex.Fgf8 expression in the mesenchyme and that the lack of Amex.Fgf8 expression in the axolotl epidermis is not due to the absence of these factors.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/79762/elife-79762-fig1-v2.jpg)
+
+**Figure 1.:** Reanalysis of scRNA seq data from blastema (A–E, data from Li et al., 2021) or limb bud (A’–E’, data from Lin et al., 2021). (A, A’) UMAPs of Axolotl scRNA seq expression data for Sp6. Expression is detected in the epidermis of the axolotl blastema and limb bud. (B, B’) UMAPs of Axolotl scRNA seq expression data for Sp8. Expression is detected in the epidermis of the axolotl blastema and limb bud. (C, C’) UMAPs of Axolotl scRNA seq expression data for Dlx5. Expression is detected in the epidermis and mesenchyme of the axolotl blastema and limb bud. (D, D’) UMAPs of Axolotl scRNA seq expression data for Dlx6. Expression is detected in the epidermis and mesenchyme of the axolotl limb bud. Expression is detected only in few blastema cells. (E, E’) UMAPs of Axolotl scRNA seq expression data for Lef1. Expression is detected in the epidermis and mesenchyme of the axolotl blastema and limb bud.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/79762/elife-79762-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Clustering of axolotl limb bud scRNA seq expression data reveals six clusters that are readily identifiable by the expression of key markers. (B) Cdh5 labels endothelial cells in the axolotl limb bud scRNA seq dataset. (C) Runx3 labels dendritic cells in the axolotl limb bud scRNA seq dataset. (D) Pax7 labels muscle progenitors in the axolotl limb bud scRNA seq dataset. (E) Krt12 labels epidermal cells (including SSCs) in the axolotl limb bud scRNA seq dataset. (F) Prrx1 labels mesenchymal cells in the axolotl limb bud scRNA seq dataset. (G) Fcgbp labels epidermal small secretory cells in the axolotl limb bud scRNA seq dataset.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/79762/elife-79762-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Clustering of axolotl limb bud scRNA seq expression data reveals six clusters that are readily identifiable by the expression of key markers. (B, C) Csf1r and Arg1 label two macrophage clusters in the axolotl blastema scRNA seq dataset. (D) Prrx1 labels mesenchymal cells in the axolotl blastema scRNA seq dataset. (E) Krt12 labels epidermal cells in the axolotl blastema scRNA seq dataset. (F) Cdh5 labels endothelial cells in the axolotl blastema scRNA seq dataset. (G) Hbz labels blood cells in the axolotl blastema scRNA seq dataset.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/79762/elife-79762-fig2-v2.jpg)
+
+**Figure 2.:** (A, A’) Schematic outlining the mesenchymal and epidermal compartments in a longitudinal section of an axolotl blastema and limb bud. (B, B’) Expression of Sp6 in the epidermis and of Fgf8 in the mesenchyme of the axolotl blastema and limb bud revealed by HCR (single planes from whole-mount images, n = 4). (C, C’) Expression of Sp8 in the epidermis and of Fgf8 in the mesenchyme of the axolotl blastema and limb bud revealed by HCR (single planes from whole-mount images, n = 4). (D, D’) Expression of Fgf8 in the mesenchyme as well as of Dlx5 in the mesenchyme and basal epidermis of the axolotl limb bud and blastema (single planes from whole-mount images, n = 4). (E, E’) Expression of the mesenchymal marker Prrx1, and of Lef1 in the mesenchyme and basal epidermis of the axolotl blastema and limb bud (single planes from whole-mount images, n = 4). For microscopy images right panels represent magnifications of the outlined boxes, M = mesenchyme, E = epidermis. Dashed lines demarcate epidermal–mesenchymal boundaries.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/79762/elife-79762-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Single plane image from a whole-mount limb bud HCR staining of Sp6 and Fgf8 transcripts. (B) Fgf8 expression is localized to the distal mesenchyme of the axolotl limb bud. (C) Sp6 is ubiquitously expressed in the epidermis but only expressed in the proximal mesenchyme of the axolotl limb bud. Dashed lines demarcate epidermal–mesenchymal boundaries.
 
 Dlx factors Mmu.Dlx5 and Mmu.Dlx6 are also expressed in the mouse AER, where they function to maintain Mmu.Fgf8 expression (Robledo et al., 2002). Single-cell analysis of the axolotl blastema and limb bud detected transcripts in both the epidermal and mesenchymal compartments (Figure 1C, C’, D, D’). Whole-mount HCR staining revealed that expression of Amex.Dlx5 is enriched in the distal mesenchyme and in the basal epidermis of the blastema (Figure 2D) and limb bud (Figure 2D’). Expression of Amex.Dlx5 in the limb epidermis suggests that in the axolotl, similar to the mouse, Amex.Dlx5 is not sufficient to induce Amex.Fgf8 expression. The strong mesenchymal Amex.Dlx5 expression distinguishes the axolotl limb from the mammalian one and could be consistent with a conserved role in maintaining Amex.Fgf8 expression.
 
@@ -49,21 +69,33 @@ The canonical Wnt pathway is a main regulator of Fgf8 expression in the chicken 
 
 Our analysis revealed that the transcription factors Amex.Sp8, Amex.Sp6, Amex.Dlx5, Amex.Dlx6, and Amex.Lef1 are expressed in the axolotl developing and regenerating limb epidermis, in particular all are present in the basal epidermis. This indicates that, in the axolotl limb epidermis, the combined endogenous expression of these factors is not sufficient to activate Amex.Fgf8 transcription. While expression of Sp factors appeared uniquely epidermal, Amex.Dlx5, Amex.Dlx6, and Amex.Lef1 are expressed in the limb bud and blastema mesenchyme, leaving open the possibility that they have a role in the regulation of Amex.Fgf8 expression in this tissue compartment.
 
-## Conserved and divergent expression of canonical Wnt pathway components and upstream regulators
+### Conserved and divergent expression of canonical Wnt pathway components and upstream regulators
 
 Canonical Wnt signaling controls AER-associated Fgf8 expression and mediates the communication between the epidermal and mesenchymal limb compartments in chick and mouse. To verify if this interaction is conserved in axolotl, we decided to investigate the expression of the canonical Wnt3 ligands and of the components that are known to induce their expression in the mammalian limb bud AER, primarily Fgf10 and its receptor Fgfr2b. We furthermore profiled Rspo2, an extracellular potentiator of Wnt signaling that is necessary for normal limb development (Xu et al., 1998; De Moerlooze et al., 2000; Zhang et al., 2006; Sekine et al., 2019). Finally, to localize the site of canonical Wnt signaling, we examined the expression of Axin2, a target of the canonical Wnt pathway that is often used as a readout of signaling activation strength (Nam et al., 2007; Itou et al., 2011; Eckei et al., 2016; Nusse and Clevers, 2017).
 
-## Conserved gene expression features
+### Conserved gene expression features
 
 In both blastema and limb bud scRNA seq datasets, we detected Amex.Fgf10 transcripts in the mesenchymal cluster (Figure 3A, A’), consistent with previous reports (Christensen et al., 2002; Nacu et al., 2016; Purushothaman et al., 2019). Using HCR in situ hybridization we confirmed strong and broad mesenchymal expression (Figure 4B, B’). Surprisingly, we additionally found Amex.Fgf10 transcripts in a small and distinct cell population located in the basal layer of the distal epidermis. To exclude that this population is of mesenchymal origin we performed HCR in situ hybridization and lineage tracing using Prrx1-Cre transgenic axolotls (Figure 4—figure supplement 1; Gerber et al., 2018). During mammalian limb development, mesenchymal Fgf10 signals to the epidermis via the specific receptor isoform Fgfr2b (Xu et al., 1998; De Moerlooze et al., 2000; Zhang et al., 2006; Sekine et al., 2019). In the axolotl, using HCR, we detected Amex.Fgfr2b transcripts through the entire basal epidermis of the blastema (Figure 4C) and limb bud (Figure 4C’), consistent with Amex.Fgf10 signaling to the epidermis as in other vertebrates.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/79762/elife-79762-fig3-v2.jpg)
 
-**Figure 3.:** Fgf10 and of the canonical Wnt pathway components Wnt3a, Axin2, Rspo2 in the axolotl limb bud and limb blastema assessed by reanalysis of Axolotl scRNA seq datasets.Reanalysis of scRNA seq data from blastema (A–D, data from Li et al., 2021) or limb bud (A’–D’, data from Lin et al., 2021). (A, A’) UMAPs of Axolotl scRNA seq expression data for Fgf10. Expression is detected in the mesenchyme of the axolotl blastema and limb bud. (B, B’) UMAPs of Axolotl scRNA seq expression data for Wnt3a. Expression is detected in the epidermis of the axolotl blastema and limb bud. (C, C’) UMAPs of Axolotl scRNA seq expression data for Axin2. Expression is detected in the prevalently in the mesenchyme of the axolotl blastema and limb bud. (D, D’) UMAPs of Axolotl scRNA seq expression data for Rspo2. Expression is detected in the mesenchyme of the axolotl limb bud. Expression is detected only in few blastema cells.
+**Figure 3.:** Reanalysis of scRNA seq data from blastema (A–D, data from Li et al., 2021) or limb bud (A’–D’, data from Lin et al., 2021). (A, A’) UMAPs of Axolotl scRNA seq expression data for Fgf10. Expression is detected in the mesenchyme of the axolotl blastema and limb bud. (B, B’) UMAPs of Axolotl scRNA seq expression data for Wnt3a. Expression is detected in the epidermis of the axolotl blastema and limb bud. (C, C’) UMAPs of Axolotl scRNA seq expression data for Axin2. Expression is detected in the prevalently in the mesenchyme of the axolotl blastema and limb bud. (D, D’) UMAPs of Axolotl scRNA seq expression data for Rspo2. Expression is detected in the mesenchyme of the axolotl limb bud. Expression is detected only in few blastema cells.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/79762/elife-79762-fig4-v2.jpg)
+
+**Figure 4.:** (A, A’) Schematic outlining the mesenchymal and epidermal compartments in a longitudinal section of an axolotl blastema and limb bud. (B, B’) Expression of Prrx1 and Fgf10 in the mesenchyme of the axolotl blastema and limb bud revealed by HCR (single planes from whole-mount images, n = 4). Arrows point to weak Fgf10 expression present in the distal basal epidermis of the blastema and limb bud. (C, C’) Expression of Fgf8 in the mesenchyme and expression of Fgfr2b in the basal epidermis of the axolotl blastema and limb bud revealed by HCR (single planes from whole-mount images, n = 4). (D, D’) Expression of Wnt3a in the basal epidermis and Axin2 in the mesenchyme and basal epidermis of the axolotl blastema and limb bud (single planes from whole-mount images, n = 4). Axin2 expression is stronger in the mesenchyme and weaker in the epidermis. (E, E’) Expression of Rspo2 in the mesenchyme and Axin2 in the mesenchyme and basal epidermis of the axolotl blastema and limb bud (single plane from whole-mount image, n = 4). Bright green structures (*) in the blastema outer epidermis are autofluorescent signal. For microscopy images right panels represent magnifications of the outlined boxes, M = mesenchyme, E = epidermis. Dashed lines demarcate epidermal–mesenchymal boundaries.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/79762/elife-79762-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Fgf10 transcripts are present in epidermal cells that are not Prrx1 lineage labeled in the axolotl blastema. Fgf10 transcripts are present in epidermal cells that are not Prrx1 lineage labeled in the axolotl blastema (n = 4 blastemas). HCR in situ hybridization performed in a tissue section of a Prrx1:Cre-ER;CAGGs:lp-Cherry animal that was tamoxifen converted during limb development. Green cells are cells of mesenchymal lineage origin. (B, C) Magnifications of the box outlined in A. Dashed lines demarcate epidermal–mesenchymal boundaries.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/79762/elife-79762-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Single plane image from a whole-mount blastema HCR staining of Rspo2 transcripts. (B) Cross-section of the blastema proximodistal axis showing biased expression along the dorsoventral axis. (C) Cross-section of the blastema anterior–posterior axis showing biased expression along the dorsoventral axis. (D) Single plane image from a whole-mount limb bud HCR staining of Rspo2 transcripts. (E) Cross-section of the limb bud proximodistal axis showing biased expression along the dorsoventral axis. (F) Cross-section of the limb bud anterior–posterior axis showing biased expression along the dorsoventral axis.
 
 Fgf10 signaling is thought to be required for expression of Mmu.Wnt3 in mouse and Gga.Wnt3a in chick. We therefore assessed expression of both Amex.Wnt3 and Amex.Wnt3a: we found Amex.Wnt3a transcripts in the epidermal cluster (Figure 3B, B’), while we could only detect negligible Amex.Wnt3 transcripts in any cell type. HCR data confirmed that Wnt3a expression is present in the axolotl limb bud and blastema basal epidermis (Figure 4D, D’). These results suggest that the epidermal induction of Amex.Wnt3a is downstream of mesenchymal Amex.Fgf10 signaling in the axolotl limb as in mouse.
 
-## Wnt signaling activity and the Rspo2 coactivator show divergent gene expression features
+### Wnt signaling activity and the Rspo2 coactivator show divergent gene expression features
 
 In mouse and chick limb development, epidermal signaling from Mmu.Wnt3 or Gga.Wnt3a is considered to induce canonical Wnt signaling in the AER (Xu et al., 1998; De Moerlooze et al., 2000; Zhang et al., 2006; Sekine et al., 2019). This signal activation results in strong AER expression of Axin2, a canonical Wnt target that is often used to determine pathway activity (Nam et al., 2007; Itou et al., 2011; Eckei et al., 2016; Nusse and Clevers, 2017). Wnt3 ligands act also on the underlying mesenchyme, where they induce expression of Axin2, albeit at lower levels (Kengaku et al., 1998).
 
@@ -71,11 +103,27 @@ To determine the prevalent site of canonical Wnt signaling in the axolotl limb, 
 
 Mmu.Rspo2, a secreted ligand that acts as an enhancer for Wnt signaling, is expressed in the mouse limb AER where it functions to potentiate canonical Wnt signaling activity. Mutations in the Rspo2 gene cause severe limb truncations in mice, and complete loss of limbs in humans (Nam et al., 2007; Aoki et al., 2008; Bell et al., 2008; Yamada et al., 2009; Szenker-Ravi et al., 2018). Our single-cell analysis revealed that Amex.Rspo2 expression is absent from the axolotl developing and regenerating limb epidermis but present in the mesenchyme (Figure 3D, D’). We confirmed the strictly mesenchymal expression of Amex.Rspo2 using HCR (Figure 4E, E’). In both the axolotl limb bud and blastema, mesenchymal Amex.Rspo2 expression is biased along the dorsoventral axis, suggesting a possible role in dorsoventral limb patterning (Figure 4—figure supplement 2).
 
-## Amex.Fgf8 expression is responsive to pharmacological perturbation of Wnt signaling
+### Amex.Fgf8 expression is responsive to pharmacological perturbation of Wnt signaling
 
 The mesenchymal enrichment of Amex.Axin2 transcripts prompted us to test if canonical Wnt signaling regulates Amex.Fgf8 expression in the mesenchyme of the axolotl regenerating limb, and whether enhancing Wnt signaling in the epidermis would be sufficient to induce ectopic Amex.Fgf8 expression. To this end, we treated regenerating axolotls with a chemical Wnt agonist or antagonist and used HCR in whole-mount blastema samples to visualize the effect on transcription of Amex.Fgf8, using Amex.Axin2 as a readout for successful pathway perturbation. To accurately evaluate the effect of the drug treatments, we developed a semiautomated image analysis pipeline that enables the segmentation of gene expression domains, the removal of the signal derived from autofluorescent blood cells in the blastema, and the quantitative comparison of gene expression levels (Figure 5—figure supplement 1, Materials and methods).
 
 First, to assess the possible role of Wnt signaling in maintaining Amex.Fgf8 expression, we performed drug treatments in regenerating blastemas. Axolotls were amputated at mid-zeugopod level, allowed to form a blastema over 5 days and then were bathed for 12 hr in a 25 µM solution of IWR-1-endo (Sigma), an inhibitor of the canonical Wnt pathway that acts by stabilizing Axin2 and consequently increasing the degradation of β-catenin. IWR treatment induced a similar decrease in Amex.Axin2 and Amex.Fgf8 transcripts when compared to Dimethyl sulfoxide (DMSO) treated controls (Figure 5A, B), suggesting that canonical Wnt signaling is required to sustain expression of Amex.Fgf8 in the axolotl blastema mesenchyme.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/79762/elife-79762-fig5-v2.jpg)
+
+**Figure 5.:** Plots depicting expression levels of Fgf8 or Axin2 as assessed by mean fluorescent intensity of HCR signal inside the corresponding gene expression domains. Each black dot represents the mean signal quantified from one blastema, each red dot represents mean values for each condition. Whiskers indicate the standard error of the mean. * indicates statistical significance (*p < 0.05, **p < 0.01, ***p < 0.001, ns = nonsignificant = p > 05). Statistics were performed using the nonparametric Wilcoxon rank sum test. (A, B) Pharmacological inhibition of Wnt signaling using IWR1-endo downregulates Axin2 and Fgf8 expression in the axolotl limb blastema. (C) CHIR treatment activates canonical Wnt signaling in the axolotl blastema as shown by upregulation of Axin2 expression after 3, 6, and 12 hr of treatment. (D) Pharmacological activation of Wnt signaling using CHIR upregulates Fgf8 in the axolotl blastema after 3 hr of treatment. Fgf8 expression comparable to DMSO control levels after 6 hr of treatment and downregulated after 12 hr of CHIR treatment. (E) Mesenchymal and epidermal Axin2 expression are both upregulated after 3 and 6 hr of CHIR treatment. Mesenchymal Axin2 increases 2.6-fold after 3 hr and 4.4-fold after 6 hr of treatment. Epidermal Axin2 increases 1.8-fold after 3 hr and 1.7-fold after 6 hrs of treatment.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/79762/elife-79762-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) 3D images are cropped distal to the amputated bone. (B) The Image acquired using 488 illumination (no HCR staining) is used to generate a 3D mask of the autofluorescent blood cells. The mask is generated by thresholding after denoising (Gaussian Blur). (C) HCR images are background subtracted, denoised, and thresholded to generate a mask containing HCR signal + autofluorescence. (D) HCR signal is isolated subtracting the previously obtained autofluorescence mask from the gene expression mask. (E) The resulting mask is refined and used for 3D signal quantification.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/79762/elife-79762-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Three hours DMSO control blastema. From left to right: composite multichannel image, Axin2 alone, Fgf8 alone. (B) Three hours CHIR-treated blastema. From left to right: composite multichannel image, Axin2 alone, Fgf8 alone. (A, B) All pairs from treated and control are displayed with the same settings. Yellow lines demarcate epidermal–mesenchymal boundaries.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/79762/elife-79762-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) 3D images are cropped, in the cropped images the entire mesenchyme contains Fgf8 transcripts. (B, C) HCR images for Axin2 and Fgf8 are denoised and thresholded to generate a mask containing HCR signal + autofluorescence. (D) The Image acquired using 488 nm illumination (no HCR staining) is used to generate a 3D mask of the autofluorescent blood cells. (E) The Axin2 gene expression domain is isolated by subtracting the autofluorescence mask from the previously obtained masks. (F, G) The Fgf8 mask is used to outline the mesenchyme. A mask for the Axin2 epidermal expression domain is obtained subtracting the Fgf8 mask from the Axin2 mask. To obtain intensity measurements the 3D masks are applied to the raw data after background subtraction.
 
 Second, to assess whether canonical Wnt signaling can promote Amex.Fgf8 expression, axolotl with 5-day blastemas were bathed in a solution of 50 µM CHIR-99021 (Tocris) or in DMSO control for 3, 6 and, in a separate experiment, 12 hr. As expected, Amex.Axin2 expression was upregulated in all CHIR treatment conditions compared to controls (Figure 5C). After 3 hr of CHIR treatment, expression of Amex.Fgf8 was significantly upregulated (Figure 5D). By 6 hr, we found that Amex.Fgf8 was not significantly different in CHIR-treated and -untreated samples while after 12-hr Amex.Fgf8 expression levels were significantly decreased when compared to control samples (Figure 5D).
 
@@ -95,13 +143,107 @@ Further studies of axolotl limb patterning will help refine our understanding of
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Ambystoma mexicanum, d/d strain)</td>
+      <td>Axolotl, d/d strain</td>
+      <td>Tanaka lab axolotl colony</td>
+      <td>–</td>
+      <td>Axolotl stock maintained in Tanaka lab, Vienna, Austria.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CHIR-99021</td>
+      <td>Tocris</td>
+      <td>4423</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>IWR-1, ≥98% (hplc)</td>
+      <td>Sigma-Aldrich</td>
+      <td>I0161-25MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Sigma-Aldrich</td>
+      <td>D9542</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMSO</td>
+      <td>Sigma-Aldrich</td>
+      <td>D2650-5 × 5 ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Histodenz</td>
+      <td>Sigma-Aldrich</td>
+      <td>D2158-100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma-Aldrich</td>
+      <td>X100-500ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N-Methylacetamide, ≥99%</td>
+      <td>Sigma-Aldrich</td>
+      <td>M26305-100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or Kit</td>
+      <td>V3.0 HCR kit</td>
+      <td>Molecular Instruments</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Abberior Mount, Liquid Antifade</td>
+      <td>Abberior GmbH</td>
+      <td>MM-2009-2 × 15 ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tissue Tek O.C.T. Compound</td>
+      <td>Science Service</td>
+      <td>62550-12</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Axolotl Husbandry d/d Axolotls were maintained in individual aquaria and all animal matings were undertaken in the IMP animal facility. All axolotl handling and surgical procedures were performed in accordance with local ethics committee guidelines. Animal experiments were performed as approved by the Magistrate of Vienna (animal license number GZ: 9418/2017/12).
 
-## Sample harvesting
+### Sample harvesting
 
 Prior to amputation, axolotls were anesthetized in 0.03% benzocaine (Sigma) solution until they no longer responded to physical stimuli. For expression profiling axolotl limb buds were harvested at stage 45–46. For expression profiling of blastema samples, forelimbs of axolotl snout-to-tail 3–4 cm were amputated through the middle of the zeugopods and allowed to regenerate for 7 days before harvesting. Samples were fixed in 4% Paraformaldehyde PFA at 4°C overnight (14–17 hr) and then dehydrated progressively in a series of methanol–phosphate-buffered saline (PBS): 25–75%, 50–50%, 75–25%, and 100% methanol, each step on ice for at least 30 min. Samples were stored until usage at −20°C in 100% methanol. Prior to staining, limbs were rehydrated in progressively in 25–75%, 50–50%, 75–25%, and 100–0% PBS–methanol.
 
-## Drug treatments
+### Drug treatments
 
 Axolotls 3–4 cm from snout-to-tail were amputated as described above. Drug treatments were performed for different durations always starting at 5-day postamputation.
 
@@ -111,17 +253,17 @@ For the 12-hr CHIR treatment, 4 axolotls were treated for 12 hr with 50 µM CHIR
 
 For the 3- and 6-hr CHIR treatment, 6 axolotls were treated with 50 µM CHIR or a DMSO control for either 3 or 6 hr, in a 15-ml water bath. Limbs were stained and imaged in two rounds.
 
-## Whole-mount HCR in situ hybridization and tissue clearing
+### Whole-mount HCR in situ hybridization and tissue clearing
 
 HCR probe pairs were designed against unique mRNA sequences common to all isoforms of the candidate gene, with the exception of Amex.Fgfr2b for which isoform-specific probes were designed. Unique transcript sequences were identified by BLAST alignment of the sequence against the axolotl transcriptome Amex.T_v47 (Schloissnig et al., 2021) and eliminating transcript regions with a homology to nontarget gene transcripts larger than 36 out of 50 nucleotides. Probes for Amex.Fgf8, Amex.Fgf10, Amex.Fgfr2b, and Amex.Prrx1, hybridization wash and amplification buffers, as well as HCR hairpins were purchased from Molecular Instruments. The remaining probes were ordered as IDT Opools. For signal amplification, exclusively Alexa-546- and Alexa-647-conjugated hairpins were used in this study.
 
 Limbs were stained using the whole-mount HCR protocol from Choi et al., 2018 with the following modifications. DAPI (4,6-diamidino-2-phenylindole Sigma, #D9542) was added with the hairpins at the amplification step. After washing in 5× Saline-Sodium Citrate Tween (0.1%) buffer (SSCT), samples were washed for 2 × 30’ in PBS and then cleared overnight incubating at room temperature in Ce3D solution. The Ce3D clearing media was prepared according to published methods (Li et al., 2017; Li et al., 2019), but without the use of 1-Thioglycerol (Anderson et al., 2020). Whole-mount imaging was performed using a Z1 lightsheet microscope equipped with a ×20 detection clearing objective (×20/1.53: Clr Plan-Neofluar ×20/1.0 Corr DIC; nd = 1.53, WD = 6.4 mm) and ×10/0.2 illumination objectives. The detection objective was set to match the RI of the clearing media (1.501) prior to imaging. HCR signal was excited using the 647 and 561 nm excitation wavelength lasers, while 488 nm illumination was used to detect autofluorescence. DAPI was illuminated with the 405 nm laser.
 
-## Section HCR staining
+### Section HCR staining
 
 After fixation, dehydration, and rehydration, limbs were incubated overnight at 4°C in 30% sucrose/PBS, transferred to OCT compound (Science Service), frozen on dry ice, and sectioned using a cryostat to a thickness of 12 µm. HCR staining was performed according to the Choi et al., 2018 protocol for samples on a section. Sections were mounted using Abberior liquid antifade mounting media. Slides were imaged with a Zeiss microscope LSM 980 (inverted Axio Observer with Airyscan) using a ×20/0.8 plan-apochromat air objective and the MPLX SR-4Y mode. Raw images were Airyscan processed and stitched using standard parameters in Zen software.
 
-## Quantification of whole-mount data
+### Quantification of whole-mount data
 
 All image analysis was performed in Fiji (Schindelin et al., 2012). First, images were rotated and cropped in 3D using CLIJ2 (Haase et al., 2020), distal to the ulna and radius to exclude the mature stump and isolate the blastema. Subsequently, background levels were calculated for each HCR channel by averaging multiple measurements of a 5 µm × 5 µm region of the epidermis devoid of any HCR signal and subtracted for each HCR channel.
 
@@ -133,7 +275,7 @@ To measure Axin2 expression in the epidermis, the mask of Amex.Fgf8 expression d
 
 The procedure was executed in automatic batch mode using Fiji macro scripting, statistical analysis, and plotting were done using R software and the ggplot2 library (Wickham, 2016; RStudio Team, 2020; R Development Core Team, 2021).
 
-## Statistical analysis
+### Statistical analysis
 
 For all experiments performed, the number of replicates was decided empirically, and no samples were excluded. Different samples for each individual whole-mount HCR staining (corresponding to figure panels) in Figures 2 and 4 were processed, stained, and imaged in the same experiment.
 
@@ -143,14 +285,14 @@ After rotation and cropping, image analysis was performed automatically and with
 
 Analogous statistical analysis was performed to compare Amex.Axin2 HCR signal intensities in epidermis and mesenchyme (Figure 5E).
 
-## Prrx1:Cre lineage tracing
+### Prrx1:Cre lineage tracing
 
 Prrx1:Cre-ER;CAGGs:lp-Cherry axolotls were generated and tamoxifen converted during limb bud stages as described previously, to irreversibly label Prrx1 lineage mesenchymal cells (Gerber et al., 2018). Samples were processed for sectioning, staining, and imaging as described above.
 
-## Single-cell analysis
+### Single-cell analysis
 
 Single-cell data were reanalyzed to match the latest axolotl transcriptome annotation (Schloissnig et al., 2021). The data were then imported into RStudio as a Seurat object, a data class specifically designed for manipulating scRNA seq data (Hao et al., 2021). Dimensionality reduction was performed using the FindClusters() function, with a resolution of 0.05—the resolution determines how many clusters will be generated from the data. To identify which clusters represent mesenchyme and epidermis, we plotted several marker genes of mesenchyme (Amex.Prrx1, Amex.Fgf10) and epidermis (Amex.Krt12, Amex.Col17a1, Amex.Frem2, Amex.Epcam) using the FeaturePlot() function. For Figures 1 and 3, clusters were renamed ‘mesenchyme’ or ‘epidermis’ if they expressed corresponding marker genes, and all other clusters were made nameless. Markers for the other clusters are shown in Figure 1—figure supplements 1–2. All subsequent plots were done using the FeaturePlot() function.
 
-## Figure compilation
+### Figure compilation
 
 All images were processed in Fiji and adjusted in brightness and contrast only for clarity (without gamma adjusting). Figure data plots were generated using R software. Figures were assembled in Adobe Illustrator.

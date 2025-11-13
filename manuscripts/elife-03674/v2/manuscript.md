@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.03674.001 The mammalian circadian clock is driven by a transcriptional–translational feedback loop, which produces robust 24-hr rhythms. Proper oscillation of the clock depends on the complex formation and periodic turnover of the Period and Cryptochrome proteins, which together inhibit their own transcriptional activator complex, CLOCK-BMAL1. We determined the crystal structure of the CRY-binding domain (CBD) of PER2 in complex with CRY2 at 2.8 Å resolution. PER2-CBD adopts a highly extended conformation, embracing CRY2 with a sinuous binding mode. Its N-terminal end tucks into CRY adjacent to a large pocket critical for CLOCK-BMAL1 binding, while its C-terminal half flanks the CRY2 C-terminal helix and sterically hinders the recognition of CRY2 by the FBXL3 ubiquitin ligase. Unexpectedly, a strictly conserved intermolecular zinc finger, whose integrity is important for clock rhythmicity, further stabilizes the complex. Our structure-guided analyses show that these interspersed CRY-interacting regions represent multiple functional modules of PERs at the CRY-binding interface. DOI: http://dx.doi.org/10.7554/eLife.03674.001
+The mammalian circadian clock is driven by a transcriptional–translational feedback loop, which produces robust 24-hr rhythms. Proper oscillation of the clock depends on the complex formation and periodic turnover of the Period and Cryptochrome proteins, which together inhibit their own transcriptional activator complex, CLOCK-BMAL1. We determined the crystal structure of the CRY-binding domain (CBD) of PER2 in complex with CRY2 at 2.8 Å resolution. PER2-CBD adopts a highly extended conformation, embracing CRY2 with a sinuous binding mode. Its N-terminal end tucks into CRY adjacent to a large pocket critical for CLOCK-BMAL1 binding, while its C-terminal half flanks the CRY2 C-terminal helix and sterically hinders the recognition of CRY2 by the FBXL3 ubiquitin ligase. Unexpectedly, a strictly conserved intermolecular zinc finger, whose integrity is important for clock rhythmicity, further stabilizes the complex. Our structure-guided analyses show that these interspersed CRY-interacting regions represent multiple functional modules of PERs at the CRY-binding interface.
 
 ## Introduction
 
@@ -37,85 +37,197 @@ Although genetic studies have firmly established a central role of PERs in clock
 
 ## Results
 
-## Characterizing PER–CRY interactions
+### Characterizing PER–CRY interactions
 
-Mammalian PER1 and PER2 share ∼50% sequence identity and a common domain architecture comprised of tandem N-terminal PER-ARNT-SIM (PAS) domains, a central CK1δ/ε-binding region, and a ∼100 amino acid long C-terminal CRY-binding domain (CBD), which is necessary and sufficient for CRY binding (
+Mammalian PER1 and PER2 share ∼50% sequence identity and a common domain architecture comprised of tandem N-terminal PER-ARNT-SIM (PAS) domains, a central CK1δ/ε-binding region, and a ∼100 amino acid long C-terminal CRY-binding domain (CBD), which is necessary and sufficient for CRY binding (Yagita et al., 2002). The isolated PER2 CBD can stabilize CRY1/2 in vivo and compete with FBXL3 for CRY1/2 binding in vitro (Chen et al., 2009; Xing et al., 2013). In mouse embryonic fibroblasts (MEFs), overexpression of PER2-CBD alone was able to completely disrupt the circadian bioluminescence rhythm of the luciferase activity of a PerLuc reporter gene (Chen et al., 2009). To first characterize the PER–CRY interaction, we performed an alanine-scanning mutagenic analysis of PER2-CBD. We initially targeted stretches of residues strictly conserved among vertebrate PER1/2 orthologs (Figure 1A, Figure 1—figure supplement 1). Surprisingly, none of the 10 single mutants, which were distributed along the length of the CBD, showed any detectable defect in CRY1 binding (Figure 1—source data 1). The PER2–CRY1 interaction was only abolished when alanine mutations were simultaneously introduced to two adjacent stretches of residues in the C-terminal, but not N-terminal half of PER2-CBD (Figure 1B). These results suggested an unusual binding mode of PER2-CBD onto CRYs and the importance of the C-terminal half of the CBD in complex formation.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03674/elife-03674-fig1-v2.jpg)
 
-**Figure 1.:** (A) PER2 CBD sequence alignment. 49% of PER2 CBD residues interact with CRY2 (blue dots). The zinc-coordinating residues are conserved throughout vertebrates (highlighted in yellow). Blue and green boxes correspond to the mutA and mutB constructs, respectively, and indicate regions of PER2-CBD that were mutated to alanines. Dashed lines indicate crystallographically disordered regions. Black squares indicate residues mutated under structure guidance. (B) Co-immunoprecipitation of mutant PER2-CBD-FLAG constructs, only mutB was able to abolish CRY1-MYC binding. Western blot of an immunoprecipitaion of COS7 cells transfected with PER2-NLS-FLAG and CRY1-MYC. Proteins were precipitated with α-FLAG and then analyzed by Western blots using α-MYC and α-FLAG. (C) CRY2 PHR (gray) adopts an overall fold identical to its apo and complexed forms (e.g., FAD, FBXL3, and KL001). PER2 CRY-binding domain (CBD) (orange) shows a highly extended binding mode around CRY2. PER2 flanks the CRY2 C-terminal helix and coordinates a zinc ion with CRY2 within a CCCH-type intermolecular zinc finger motif. (D) Crystallographic data identify the location of alanine scanning mutants. Importantly, the mutB construct is centered around the CRY2 C-terminal helix.DOI: http://dx.doi.org/10.7554/eLife.03674.00310.7554/eLife.03674.004Figure 1—source data 1.Each individual mutation was unable to disrupt PER-CBD-CRY1 binding. Only the combined mutation of two nearby stretches of residues on the C-terminal half of PER2-CBD was able to abolish binding.DOI: http://dx.doi.org/10.7554/eLife.03674.004
+**Figure 1.:** (A) PER2 CBD sequence alignment. 49% of PER2 CBD residues interact with CRY2 (blue dots). The zinc-coordinating residues are conserved throughout vertebrates (highlighted in yellow). Blue and green boxes correspond to the mutA and mutB constructs, respectively, and indicate regions of PER2-CBD that were mutated to alanines. Dashed lines indicate crystallographically disordered regions. Black squares indicate residues mutated under structure guidance. (B) Co-immunoprecipitation of mutant PER2-CBD-FLAG constructs, only mutB was able to abolish CRY1-MYC binding. Western blot of an immunoprecipitaion of COS7 cells transfected with PER2-NLS-FLAG and CRY1-MYC. Proteins were precipitated with α-FLAG and then analyzed by Western blots using α-MYC and α-FLAG. (C) CRY2 PHR (gray) adopts an overall fold identical to its apo and complexed forms (e.g., FAD, FBXL3, and KL001). PER2 CRY-binding domain (CBD) (orange) shows a highly extended binding mode around CRY2. PER2 flanks the CRY2 C-terminal helix and coordinates a zinc ion with CRY2 within a CCCH-type intermolecular zinc finger motif. (D) Crystallographic data identify the location of alanine scanning mutants. Importantly, the mutB construct is centered around the CRY2 C-terminal helix.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/03674/elife-03674-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Alignment and secondary structure assignments of CRY2 orthologs from Mus musculus (Mm), Homo sapiens (Hs), Gallus gallus (Gg), Danio rerio (Dr), and Xenopus laevis (Xl). Strictly conserved residues are colored in red. Blue and green dots indicate mPER2-CBD-, and hFBXL3-interacting residues, respectively. Yellow squares indicate residues that interact with both PER2 and FBXL3. Black dots indicate residues that are involved in zinc coordination. Colored boxes represent the boundaries of structurally dynamic loops. Dashed line represents the regions outside the PHR.DOI: http://dx.doi.org/10.7554/eLife.03674.005
+**Figure 1—figure supplement 1.:** Alignment and secondary structure assignments of CRY2 orthologs from Mus musculus (Mm), Homo sapiens (Hs), Gallus gallus (Gg), Danio rerio (Dr), and Xenopus laevis (Xl). Strictly conserved residues are colored in red. Blue and green dots indicate mPER2-CBD-, and hFBXL3-interacting residues, respectively. Yellow squares indicate residues that interact with both PER2 and FBXL3. Black dots indicate residues that are involved in zinc coordination. Colored boxes represent the boundaries of structurally dynamic loops. Dashed line represents the regions outside the PHR.
 
-## Overall structure
+### Overall structure
 
-Mammalian CRY1 and CRY2 paralogs contain a highly similar photolyase-homology region (PHR) and a more diverse Cryptochrome C-terminal Extension (CCE) sequence (Figure 1—figure supplement 1). Their PER-binding activity has previously been mapped to the PHR, which is made of an α/β photolyase domain and an α-helical domain (Figure 1C). Consistent with their high sequence homology (86%), the crystal structures of CRY1-PHR and CRY2-PHR can be superimposed with a root-mean-square deviation (RMSD) of 0.43 Å out of 377 aligned Cα atoms. To gain structural insights into the general interaction between PERs and CRYs, we purified a representative PER2-CBD-CRY2-PHR complex and determined its crystal structure at a resolution of 2.8 Å (Table 1).10.7554/eLife.03674.006Table 1.Data collection and refinement statisticsDOI: http://dx.doi.org/10.7554/eLife.03674.006CRY2-PER2Data collection Space groupP41 Cell dimensions a, b, c (Å)97.67, 97.67, 163.21 α, β, γ (°)90, 90, 90 Resolution (Å)2.9 (2.8) Rmeas0.06 (0.8) I/σI18.8 (2.1) Completeness (%)99.6 (98.2) Redundancy4.2 (4.2)Refinement Resolution (Å)42.7–2.8 No. reflections37541 (3671) Rwork/Rfree20.5/27.7 No. atoms9342 Protein9292 Ligand/ion2 Water48 B-factors97.3 Protein97.5 Ligand/ion114.1 Water66.3 R.m.s. deviations Bond lengths (Å)0.009 Bond angles (°)1.3
+Mammalian CRY1 and CRY2 paralogs contain a highly similar photolyase-homology region (PHR) and a more diverse Cryptochrome C-terminal Extension (CCE) sequence (Figure 1—figure supplement 1). Their PER-binding activity has previously been mapped to the PHR, which is made of an α/β photolyase domain and an α-helical domain (Figure 1C). Consistent with their high sequence homology (86%), the crystal structures of CRY1-PHR and CRY2-PHR can be superimposed with a root-mean-square deviation (RMSD) of 0.43 Å out of 377 aligned Cα atoms. To gain structural insights into the general interaction between PERs and CRYs, we purified a representative PER2-CBD-CRY2-PHR complex and determined its crystal structure at a resolution of 2.8 Å (Table 1).
+
+**Table 1.**
+ Data collection and refinement statistics
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">CRY2-PER2</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2">Data collection</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>P41</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>97.67, 97.67, 163.21</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 90, 90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>2.9 (2.8)</td>
+    </tr>
+    <tr>
+      <td>Rmeas</td>
+      <td>0.06 (0.8)</td>
+    </tr>
+    <tr>
+      <td>I/σI</td>
+      <td>18.8 (2.1)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.6 (98.2)</td>
+    </tr>
+    <tr>
+      <td>Redundancy</td>
+      <td>4.2 (4.2)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>42.7–2.8</td>
+    </tr>
+    <tr>
+      <td>No. reflections</td>
+      <td>37541 (3671)</td>
+    </tr>
+    <tr>
+      <td>Rwork/Rfree</td>
+      <td>20.5/27.7</td>
+    </tr>
+    <tr>
+      <td>No. atoms</td>
+      <td>9342</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>9292</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>B-factors</td>
+      <td>97.3</td>
+    </tr>
+    <tr>
+      <td>Protein</td>
+      <td>97.5</td>
+    </tr>
+    <tr>
+      <td>Ligand/ion</td>
+      <td>114.1</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>66.3</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>Bond angles (°)</td>
+      <td>1.3</td>
+    </tr>
+  </tbody>
+</table>
 
 PER2-CBD adopts a highly extended structure, devoid of a hydrophobic core. It folds into five α-helices of variable length, which are dispersed along an otherwise linear polypeptide (Figure 1C). In the crystal, PER2-CBD meanders along one side of CRY2-PHR and sinuously wraps around the region. With nearly half of the PER2 residues involved in binding, the two proteins bury a total 2800 Å2 of solvent accessible surface area at the interface, which stretches over a distance of more than 215 Å. This unusually extensive interface provides a plausible explanation for the high-affinity binding between the two clock proteins and their insensitivity to mutational disruption.
 
 In comparison to its FBXL3-, KL001-, and FAD-complexed forms, CRY2 adopts the same global fold when bound to PER2-CBD (Figure 4—figure supplement 2). The largest structural variations take place in two local regions, the interface loop next to the FAD-binding pocket and a serine-rich loop neighboring a secondary pocket (see below). The majority of PER2-contacting residues on CRY2 (85%) are strictly conserved between mammalian CRY1 and CRY2, suggesting that the two cryptochrome proteins share a common PER2 binding mode.
 
-## Interaction at the CRY2 C-terminal helix
+### Interaction at the CRY2 C-terminal helix
 
-The two stretches of residues, whose alanine mutations abrogated CRY1 binding, are mapped to a loop flanked by two α-helical regions in the C-terminal half of PER2 (
+The two stretches of residues, whose alanine mutations abrogated CRY1 binding, are mapped to a loop flanked by two α-helical regions in the C-terminal half of PER2 (Figure 1D). The PER2-CBD α3 helix preceding this loop packs against the long CRY2 C-terminal helix at an approximately 30° angle, while the region C-terminal to the loop locks onto the same CRY2 helix from the other side (Figure 1C–D). Together, these PER2-CBD structural elements encircle the CRY2 C-terminal helix like an U-shaped clamp. Arg501 and Lys503 in the CRY2 C-terminal helix have previously been documented to be important for PER2 binding (Ozber et al., 2010). In the crystal, these two positively charged residues of CRY2 project in opposite directions and latch onto the surrounding PER2 regions by forming salt bridges with Asp1167 and Asp1206, respectively (Figure 2A). To confirm the critical role of the CRY2 C-terminal helix in binding PERs, we mutated two hydrophobic residues, Ile505 and Tyr506, at the end of this CRY2 helix, which are involved in fixing the α-helix to the rest of the CRY2 α-helical domain (Figure 2B). As expected, mutating both residues to aspartate completely abolished the PER2-binding activity of CRY2 (Figure 2C). The same effect was also achieved when negative charges were introduced to the side chains of a stretch of four nearby residues (amino acids 1171–1174) in the α3 helix of PER2-CBD (Figure 2B, Figure 2—figure supplement 1A). Based on these results, we conclude that the CRY2 C-terminal helix represents a key anchoring site for PER2 binding.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03674/elife-03674-fig2-v2.jpg)
 
-**Figure 2.:** (A) PER2 (orange) forms three salt-bridges along CRY2 C-terminus helix (gray) R501 and K503 have been previously reported as critical binding residues. (B) A close-up view of the PER2-CRY2 interface at the end of CRY2 C-terminal helix. While the upper portion of the CRY2 C-terminal helix maintains ionic interactions with PER2, the lower is predominantly mediated by hydrophobic interactions. CRY2 and PER2 residues chose for subsequent mutational analysis are shown in sticks. (C) Concurrent mutations of hydrophobic residues on the CRY C-terminal helix (I505D and Y506D) prevent PER-CRY complex formation. Co-immunoprecipitations were performed with transfected full-length PER2-V5 and MYC-CRY2 in HEK293 cells with α-MYC beads and analyzed by Western blotting using α-V5 and α-MYC. See Figure 2—figure supplement 1A for corresponding PER2 mutants. (D) Surface mapping of FBXL3- and PER2-binding sites on CRY2. Residues that share contacts with PER2 and FBXL3 are colored in yellow and are clustered along the C-terminal helix. Other residues involved in binding PER2 and FBXL3 are colored in orange and green, respectively.DOI: http://dx.doi.org/10.7554/eLife.03674.007
+**Figure 2.:** (A) PER2 (orange) forms three salt-bridges along CRY2 C-terminus helix (gray) R501 and K503 have been previously reported as critical binding residues. (B) A close-up view of the PER2-CRY2 interface at the end of CRY2 C-terminal helix. While the upper portion of the CRY2 C-terminal helix maintains ionic interactions with PER2, the lower is predominantly mediated by hydrophobic interactions. CRY2 and PER2 residues chose for subsequent mutational analysis are shown in sticks. (C) Concurrent mutations of hydrophobic residues on the CRY C-terminal helix (I505D and Y506D) prevent PER-CRY complex formation. Co-immunoprecipitations were performed with transfected full-length PER2-V5 and MYC-CRY2 in HEK293 cells with α-MYC beads and analyzed by Western blotting using α-V5 and α-MYC. See Figure 2—figure supplement 1A for corresponding PER2 mutants. (D) Surface mapping of FBXL3- and PER2-binding sites on CRY2. Residues that share contacts with PER2 and FBXL3 are colored in yellow and are clustered along the C-terminal helix. Other residues involved in binding PER2 and FBXL3 are colored in orange and green, respectively.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/03674/elife-03674-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (A) Diminished PER2-CRY2 interaction was replicated in a co-immunoprecipitation assay, in which the CXXC motif of the full-length FLAG-tagged PER2 protein was mutated to four alanines. Co-immunoprecipitations were performed with transfected full-length PER2-V5 and MYC-CRY2 in HEK293 cells with α-MYC beads. (B) Superimposition analysis demonstrates the direct competition of PER2-CBD (orange) and FBXL3 (green) binding to CRY (gray), which is centered around the CRY2 C-terminal helix (blue).DOI: http://dx.doi.org/10.7554/eLife.03674.008
+**Figure 2—figure supplement 1.:** (A) Diminished PER2-CRY2 interaction was replicated in a co-immunoprecipitation assay, in which the CXXC motif of the full-length FLAG-tagged PER2 protein was mutated to four alanines. Co-immunoprecipitations were performed with transfected full-length PER2-V5 and MYC-CRY2 in HEK293 cells with α-MYC beads. (B) Superimposition analysis demonstrates the direct competition of PER2-CBD (orange) and FBXL3 (green) binding to CRY (gray), which is centered around the CRY2 C-terminal helix (blue).
 
 The close interaction between the C-terminal half of PER2-CBD and CRY2 C-terminal helix is immediately reminiscent of the docking mode between FBXL3 and CRY2. In the crystal structure of the FBXL3-CRY2 complex, the leucine-rich repeat (LRR) domain of FBXL3 engages CRY2 at the same site as PER2-CBD does in the PER2-CRY2 complex. The interface between FBXL3-LRR and CRY2 is also centered around the long C-terminal helix of the Cryptochrome protein. In fact, the CRY2 surface regions involved in contacting FBXL3-LRR and PER2-CBD share extensive overlapping regions (Figure 2D). Superposition analysis reveals that FBXL3 and PER2 cannot be simultaneously engaged with CRY2 without clashing into each other (Figure 2—figure supplement 1B). PERs, therefore, have the capability of protecting CRYs from FBXL3-mediated ubiquitination and degradation by directly competing with the ubiquitin ligase for binding CRYs.
 
-## Intermolecular zinc finger
+### Intermolecular zinc finger
 
-Amino acid sequence alignment of vertebrate PER1/2 orthologs reveals that their sequence conservation ends at a CXXC motif near the C-terminus (
+Amino acid sequence alignment of vertebrate PER1/2 orthologs reveals that their sequence conservation ends at a CXXC motif near the C-terminus (Figure 1A). In the complex structure, these two cysteine (C1210 and C1213) residues face a pair of cysteine and histidine residues in CRY2 (C432 and H491), which are also invariant among vertebrate CRY1/2 proteins (Figure 1—figure supplement 1). Together, these four residues sequester a strong density at the center, hinting at the coordination of a Zn2+ ion at the end of the PER2–CRY2 interface (Figure 3A, Figure 3—figure supplement 1A). Indeed, we were able to validate the identity of the Zn2+ ion by both anomalous dispersion measurements and inductively coupled plasma mass spectrometry (Figure 3—figure supplement 1A,B). Although a Zn2+ ion has been previously reported to mediate protein–protein interactions (Somers et al., 1994), to our knowledge, this is the first CCCH-type intermolecular zinc finger that has been identified in a protein complex. Interestingly, the electron density of the PER2 sequence preceding the CXXC motif is not as strong as other regions of PER2-CBD, suggesting that the intermolecular zinc finger might have evolved to stabilize a flexible region of the PER–CRY interaction by acting as a ‘molecular clasp’.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03674/elife-03674-fig3-v2.jpg)
 
-**Figure 3.:** (A) Four conserved, contributing residues from PER2 (C1210 and C1213) and CRY2 (C432 and H491) form a CCCH-type zinc finger. (B) GST-pull-down assay with recombinant GST-tagged PER2ΔCXXC CBD and untagged CRY2-PHR protein show compromised CRY binding in the zinc finger mutant compared to WT PER2-CBD. (C) Similarly diminished interaction was replicated in a co-immunoprecipitation assay. Alanine mutations were introduced to CRY2 zinc-coordinating residues, C432 and H491, individually or in combination. Co-immunoprecipitations were performed with transfected full-length PER2 and CRY2 in HEK293 cells with α-MYC beads.DOI: http://dx.doi.org/10.7554/eLife.03674.009
+**Figure 3.:** (A) Four conserved, contributing residues from PER2 (C1210 and C1213) and CRY2 (C432 and H491) form a CCCH-type zinc finger. (B) GST-pull-down assay with recombinant GST-tagged PER2ΔCXXC CBD and untagged CRY2-PHR protein show compromised CRY binding in the zinc finger mutant compared to WT PER2-CBD. (C) Similarly diminished interaction was replicated in a co-immunoprecipitation assay. Alanine mutations were introduced to CRY2 zinc-coordinating residues, C432 and H491, individually or in combination. Co-immunoprecipitations were performed with transfected full-length PER2 and CRY2 in HEK293 cells with α-MYC beads.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/03674/elife-03674-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (A) Zinc-coordinating residues of PER2-CBD (orange) and CRY2 (gray) with zinc anomalous signal (λ = 1.284 Å) contoured at 7σ (blue mesh). (B) Inductively coupled plasma mass spectrometric analysis of metal isotopes. Purified PER2-CBD-CRY2 complex was dehydrated, dissolved in concentrated HNO3 overnight, diluted to 1% vol/vol HNO3, and titrated. Zn (purple) isotopes (64Zn, 66Zn, 67Zn, 68Zn, 70Zn) were the only ones that showed a greater than sixfold increase in mean signal intensity above the blank, dose-dependent increase, and approximated the predicted intensity of the standard (orange line). 24Mg (green) and 56Fe (gray) are shown as controls.DOI: http://dx.doi.org/10.7554/eLife.03674.010
+**Figure 3—figure supplement 1.:** (A) Zinc-coordinating residues of PER2-CBD (orange) and CRY2 (gray) with zinc anomalous signal (λ = 1.284 Å) contoured at 7σ (blue mesh). (B) Inductively coupled plasma mass spectrometric analysis of metal isotopes. Purified PER2-CBD-CRY2 complex was dehydrated, dissolved in concentrated HNO3 overnight, diluted to 1% vol/vol HNO3, and titrated. Zn (purple) isotopes (64Zn, 66Zn, 67Zn, 68Zn, 70Zn) were the only ones that showed a greater than sixfold increase in mean signal intensity above the blank, dose-dependent increase, and approximated the predicted intensity of the standard (orange line). 24Mg (green) and 56Fe (gray) are shown as controls.
 
 To assess the role of the intermolecular zinc finger in mediating PER–CRY association, we first tested the CRY2-binding activity of a recombinant mutant PER2-CBD, which lacks the CXXC motif. In comparison to the wild-type polypeptide, the ability of the PER2-CBD mutant to bind CRY2 was substantially compromised (Figure 3B). Similarly weakened interaction was also observed in a co-immunoprecipitation assay, in which the CXXC motif of the full-length PER2 protein or the two zinc-coordinating residues of CRY2 were mutated to alanines (Figure 2—figure supplement 1A, Figure 3C). Together, these results highlight the importance of the intermolecular zinc finger in strengthening the PER–CRY interface.
 
-## Secondary pocket
+### Secondary pocket
 
-Cryptochromes and DNA photolyases belong to the same superfamily of flavoproteins, whose common PHR fold is characterized by two large surface pockets, one for binding flavin adenine dinucleotide (FAD) and the other for binding a photoantenna cofactor, which is used by light-sensitive photolyases to catalyze FAD-dependent DNA repair (
+Cryptochromes and DNA photolyases belong to the same superfamily of flavoproteins, whose common PHR fold is characterized by two large surface pockets, one for binding flavin adenine dinucleotide (FAD) and the other for binding a photoantenna cofactor, which is used by light-sensitive photolyases to catalyze FAD-dependent DNA repair (Glas et al., 2009; Figure 4A). Previously, we have identified the FAD-binding pocket as a regulatory ‘hot spot’, which is targeted by FAD, the extreme carboxyl tail of FBXL3, and the clock-modulating small molecule, KL001 (Nangle et al., 2013; Xing et al., 2013; Figure 4—figure supplement 1A). However, the functional significance of the secondary pocket remained unexplored.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/03674/elife-03674-fig4-v2.jpg)
 
-**Figure 4.:** (A) Relative positions of the two large pockets on CRY2. (B) Surface representation of CRY2 with side chains of the serine loop shown in sticks. PER2 α1 helix inserts into a hydrophobic cleft. Compared to other CRY2 complexed forms, the serine loop flips up and engages PER2. (C) The serine loop lies opposite to the CRY α4 helix, which together frame the secondary pocket, the α4 helix contains three residues (CRY1 G106R and R109Q, CRY2 E121K), whose mutations result in a weak repression phenotype. (D–F) Co-immunoprecipitation assays show that the CRY1 R109Q mutant is unable to bind CLOCK-BMAL1, but retains PER1 and PER2 binding.DOI: http://dx.doi.org/10.7554/eLife.03674.011
+**Figure 4.:** (A) Relative positions of the two large pockets on CRY2. (B) Surface representation of CRY2 with side chains of the serine loop shown in sticks. PER2 α1 helix inserts into a hydrophobic cleft. Compared to other CRY2 complexed forms, the serine loop flips up and engages PER2. (C) The serine loop lies opposite to the CRY α4 helix, which together frame the secondary pocket, the α4 helix contains three residues (CRY1 G106R and R109Q, CRY2 E121K), whose mutations result in a weak repression phenotype. (D–F) Co-immunoprecipitation assays show that the CRY1 R109Q mutant is unable to bind CLOCK-BMAL1, but retains PER1 and PER2 binding.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/03674/elife-03674-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** (A) The phosphate-binding loop and interface loop frame opposite sides of the FAD-binding pocket. Superimposition analysis shows the FAD-binding pocket as a regulatory hotspot, which can bind metabolic cofactor, FAD (yellow), clock-modulating small molecule, KL001 (cyan), and FBXL3 C-terminal tail (green). (B) Locations of CRY2 loops; interface loop (yellow), phosphate-binding loop (red), serine loop (purple), and protrusion loop (light blue), which in light-sensitive CRYs occludes part of the FAD-binding pocket but is pushed outward and maintains an open FAD-binding pocket in vertebrate CRYs.DOI: http://dx.doi.org/10.7554/eLife.03674.012
+**Figure 4—figure supplement 1.:** (A) The phosphate-binding loop and interface loop frame opposite sides of the FAD-binding pocket. Superimposition analysis shows the FAD-binding pocket as a regulatory hotspot, which can bind metabolic cofactor, FAD (yellow), clock-modulating small molecule, KL001 (cyan), and FBXL3 C-terminal tail (green). (B) Locations of CRY2 loops; interface loop (yellow), phosphate-binding loop (red), serine loop (purple), and protrusion loop (light blue), which in light-sensitive CRYs occludes part of the FAD-binding pocket but is pushed outward and maintains an open FAD-binding pocket in vertebrate CRYs.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/03674/elife-03674-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** (A) Serine loop undergoes a large conformational change after PER2-CBD binding. (B and C) The interface loop and phosphate-binding loop are also sites of high structural plasticity. (D) Overall CRY-PHR showing the global structure adopts a common fold.DOI: http://dx.doi.org/10.7554/eLife.03674.013
+**Figure 4—figure supplement 2.:** (A) Serine loop undergoes a large conformational change after PER2-CBD binding. (B and C) The interface loop and phosphate-binding loop are also sites of high structural plasticity. (D) Overall CRY-PHR showing the global structure adopts a common fold.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/03674/elife-03674-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** Superposition of the two structures reveals major structural dissimilarities between the two paralogs at the CRY secondary pocket and a residual fusion-protein sequence (yellow) in CRY1-bound PER2-CBD. The PER2-CBD (dark blue) N-terminus together with the artifactual sequence (AGLEVLFQGPDSM) forms a β-hairpin and induces an inward conformation of the CRY1 (light green) serine loop.DOI: http://dx.doi.org/10.7554/eLife.03674.014
+**Figure 4—figure supplement 3.:** Superposition of the two structures reveals major structural dissimilarities between the two paralogs at the CRY secondary pocket and a residual fusion-protein sequence (yellow) in CRY1-bound PER2-CBD. The PER2-CBD (dark blue) N-terminus together with the artifactual sequence (AGLEVLFQGPDSM) forms a β-hairpin and induces an inward conformation of the CRY1 (light green) serine loop.
 
 In the PER2-CRY2 crystal, the N-terminal half of PER2-CBD diverges from the FBXL3-binding site of CRY2 and reaches the rim of the secondary pocket after traversing around the α-helical domain (Figure 4A). With a highly conserved sequence, the N-terminal end of PER2-CBD is embedded in a V-shaped cleft formed between the two globular domains of CRY2-PHR, burying a PER2 tryptophan residue (Trp1139) at the junction (Figure 4B, Figure 2—figure supplement 1A). One side of the cleft is constructed by a serine-rich loop in CRY2, which we name as ‘serine loop’. Distinct from its surrounding regions, this loop adopts different conformations in several available crystal structures of CRY (Figure 4—figure supplement 2). Remarkably, PER2 binding induces yet another distinct structural configuration of the loop, thereby, defining a unique structural state of the local area next to the secondary pocket.
 
 Although CRYs are known to not engage a second cofactor (Zoltowski et al., 2011; Xing et al., 2013), our previous cell-based random mutagenesis screen has identified three residues within this secondary pocket (Gly106 and Arg109 in CRY1, Glu121 in CRY2) (Figure 4C), whose missense mutations effectively abolished the repressor activity of CRYs (McCarthy et al., 2009). Among these three residues, Arg109 is exposed to the solvent and decorates one side of the pocket. Co-immunoprecipitation analysis of the R109Q mutant showed that alteration of this single amino acid is sufficient to abrogate CLOCK-BMAL1, but not PER1 or PER2 binding (Figure 4D–F). Thus, the secondary pocket of CRYs represents an important docking site for the heterodimeric transcriptional activators. Anchoring of PER2 at the edge of this CRY pocket not only reinforces its function as a previously unrecognized locus for protein–protein interactions, but also suggests a possible role of PERs in modulating the repressor functions of CRYs.
 
-## Functional analysis of CRY mutants
+### Functional analysis of CRY mutants
 
-To functionally characterize the multiple interfaces on CRYs mapped by the crystal structures, we systematically assessed several representative CRY mutants for their abilities to rescue rhythmicity in
+To functionally characterize the multiple interfaces on CRYs mapped by the crystal structures, we systematically assessed several representative CRY mutants for their abilities to rescue rhythmicity in Cry-deficient MEF cells. Consistent with previous studies, wild-type CRY1 was able to repress the expression of the P(Per2)-dLuc reporter gene and produce robust bioluminescence rhythms. By contrast, the ‘IY’ mutant of CRY1, which confers severe structural disruption in the C-terminal helix, failed to restore any level of circadian rhythm, although it has the ability to repress CLOCK-BMAL1 as seen by the constitutively low luciferase signal (Figure 5A). Because the C-terminal helix of CRYs is a critical region for binding both FBXL3 and PERs, this result underscores the importance of CRY ubiquitination and degradation in establishing clock rhythmicity and suggests the ability of CRY1 to inhibit CLOCK-BMAL1 in a PER-independent manner. In agreement, two CRY1 mutants unable to coordinate zinc, C414A and H473A, were also capable of transcriptional repression, even though their PER-binding activities are largely compromised (Figure 5B,C).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/03674/elife-03674-fig5-v2.jpg)
 
-**Figure 5.:** Cry1−/−/Cry2 MEFs were transfected 24 hr after plating with −/−dLuc reporter plasmid and mCry1 expression or mutant vector. 72 hr after transfection, the cells were synchronized with dexamethasone. Bioluminescence (raw counts/s) monitoring was performed continuously for 70 s every 10 min using a photomultiplier tube at 37°C. Traces are shown as mean ± SEM and are representative of triplicate samples. Mutants are shown in blue and WT control in black. Only CRY1, not CRY2 is able to reconstitute robust circadian rhythmicity. (A) CRY1 I487D Y488D (CRY2 I505 Y506) ‘IY’ mutant abolishes rhythmicity but maintains repression compared to WT, suggesting that PER is not required for transcriptional repression. (B and C) Zinc-coordinating residues on CRY1 C414 and H473 (CRY2 C432 and H491) show blunted rhythm amplitude. (D) A nearby cysteine residue, C412 (CRY2 430), when mutated to alanine, does not show a significantly different phenotype from the WT control. (E) A critical residue on the secondary pocket, CRY1 R109 (CRY2 R127) shows a severely weakened repression phenotype when mutated to a glutamine. Traces are shown as mean ± SEM and are representative of duplicate samples. (F) Mutations of two serine residues in the serine loop, CRY1 S44D S45D (CRY2 S62 S63), show near WT rhythmicity and repression but with a 1-hr shorter period. For all mutants, corresponding CRY2 residues are in parenthesis.DOI: http://dx.doi.org/10.7554/eLife.03674.015
+**Figure 5.:** Cry1−/−/Cry2−/− MEFs were transfected 24 hr after plating with dLuc reporter plasmid and mCry1 expression or mutant vector. 72 hr after transfection, the cells were synchronized with dexamethasone. Bioluminescence (raw counts/s) monitoring was performed continuously for 70 s every 10 min using a photomultiplier tube at 37°C. Traces are shown as mean ± SEM and are representative of triplicate samples. Mutants are shown in blue and WT control in black. Only CRY1, not CRY2 is able to reconstitute robust circadian rhythmicity. (A) CRY1 I487D Y488D (CRY2 I505 Y506) ‘IY’ mutant abolishes rhythmicity but maintains repression compared to WT, suggesting that PER is not required for transcriptional repression. (B and C) Zinc-coordinating residues on CRY1 C414 and H473 (CRY2 C432 and H491) show blunted rhythm amplitude. (D) A nearby cysteine residue, C412 (CRY2 430), when mutated to alanine, does not show a significantly different phenotype from the WT control. (E) A critical residue on the secondary pocket, CRY1 R109 (CRY2 R127) shows a severely weakened repression phenotype when mutated to a glutamine. Traces are shown as mean ± SEM and are representative of duplicate samples. (F) Mutations of two serine residues in the serine loop, CRY1 S44D S45D (CRY2 S62 S63), show near WT rhythmicity and repression but with a 1-hr shorter period. For all mutants, corresponding CRY2 residues are in parenthesis.
 
 We noticed that the two zinc finger CRY1 mutants still sustained circadian rhythms. However, they showed defects in their bioluminescence oscillations (Figure 5B,C). Such a phenotype was not observed for a mutant with a nearby residue, Cys412, mutated to alanine, which did not perturb PER or FBXL3 binding as previously documented (Figure 5D; Xing et al., 2013). The contrast between the two zinc finger-defective mutants and the wild-type-like C412A mutant confirms the functional role of the zinc-coordinating residues in the negative arm of the feedback loop.
 
@@ -135,22 +247,22 @@ True to their name, Period proteins act as the master timekeepers in the circadi
 
 ## Materials and methods
 
-## Recombinant protein purification
+### Recombinant protein purification
 
 The mouse CRY2 (amino acids 1–512) was expressed as a glutathione S-transferase (GST) fusion protein in High Five (Invitrogen, Carlsbad, CA) suspension insect cells and isolated by glutathione affinity chromatography using buffer containing 20 mM Tris–HCl pH 8, 200 mM NaCl, 10% glycerol, 5 mM DTT (dithiothreitol). The protein was cleaved on-column by tobacco etch virus (TEV) protease then purified further by cation-exchange chromatography. Proteolytically stable murine PER2 (amino acids 1095–1215) was expressed as a GST-fusion protein in Escherichia coli expression system and isolated through glutathione affinity chromatography using buffer containing 20 mM Tris–HCl pH 8, 300 mM NaCl, 5 mM DTT. The protein was cleaved on-column by TEV protease then purified further by anion-exchange and size-exclusion chromatography. Both proteins were combined, concentrated, and further purified by size-exclusion chromatography using buffer containing 20 mM Tris–HCl pH 8, 300 mM NaCl, 5 mM DTT, 10% glycerol to establish stoichiometric binding.
 
-## Crystallization, data collection, and structure determination
+### Crystallization, data collection, and structure determination
 
 The crystals of the CRY2-PER2 complex were grown at 4°C by the hanging-drop vapor diffusion method, using 2 μl protein complex sample mixed 2:1 with reservoir solution containing 100 mM HEPES pH 7.5, 200 mM NaCl, 15% PEG 3350. Diffraction-quality crystals were subjected to a cryo-protectant procedure by gradually increasing the concentration of ethylene glycol to 25% (vol/vol) and then frozen in liquid nitrogen. The native and zinc anomalous data sets were collected at the BL8.2.1 beamline at the Advanced Light Source of the Lawrence Berkeley National Laboratory. Reflection data were indexed, integrated, and scaled with the HKL2000 (Otwinowski and Minor, 1997). The CRY2-PER2 complex was determined by molecular replacement using CRY2 from the murine CRY2-KL001 complex structure (PDB:4MLP) as the search model. The structural models were manually built, refined, and rebuilt with the programs COOT (Emsley et al., 2010), PHENIX (Adams et al., 2010), and CCP4 (Winn et al., 2011). PER2 was built in following density modification. All figures were made using PyMOL (Schrödinger, LLC). Buried surface area was calculated using CNS (Brunger et al., 1998).
 
-## In vitro GST pull down
+### In vitro GST pull down
 
 GST-tagged mCRY2 (amino acids 1–512) was over-expressed in High Five insect cells suspension culture. GST-tagged mPER2 WT (amino acids 1095–1215) and GST-tagged mPER2ΔCXXC (amino acids 1095–1209) were over-expressed in E. coli and purified as previously described. Equal volumes CRY2-PHR was incubated with immobilized PER2 at 4°C for 1 hr. Glutathione beads were rigorously washed, and GST-PER2-CRY2 was released from the beads with SDS sample buffer, analyzed by SDS-PAGE and detected by Coomasssie stain.
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 N-terminal Myc-tagged Cry2 (0.25 μg) and a C-terminal V5-tagged Per2 (0.5 μg) were transfected (Fugene 6, Madison, WI) into HEK293 cells. After 48 hr, cells were harvested and lysed by centrifugation. α-MYC-conjugated beads were used to immobilize MYC-CRY2. Beads were washed with buffer containing 50 mM Tris–HCl pH 7.5, 100 mM NaCl, 5% glycerol, 0.5 mM DTT, 0.5% Triton X-100, protease inhibitor (1:50). Protein was released from beads with SDS sample buffer and analyzed by Western blot using α-MYC and α-V5 for CRY2 and PER2, respectively.
 
-## Real-time circadian rescue assays
+### Real-time circadian rescue assays
 
 Real-time circadian rescue assays performed as described in Ukai-Tadenuma et al. (2011). Cry1−/−/Cry2−/− MEFs were plated in 35-mm dishes at a density of 5 × 105 cells per dish. 24 hr later, cells were transfected with FuGene6 with 4 μg of pGL3-P(Per2)-dLuc reporter plasmid and 150 ng of the pMU2-mCry1 expression vector (Ukai-Tadenuma et al., 2011) or mutant forms of this vector. 72 hr after transfection, the cells were synchronized by a 2-hr incubation in medium (DMEM/10% FBS/antibiotics) with dexamethasone (1 μM). The medium was then replaced with medium prepared from powdered DMEM without phenol red (Corning 90-013-PB) containing 4.5 g/l glucose and supplemented with 10 mM HEPES pH 7.2, 100 μM luciferin, 1 mM sodium pyruvate, 0.035% sodium bicarbonate, 10% FBS, antibiotics, and 2 mM L-glutamine. Bioluminescence monitoring was performed using a LumiCycle (Actimetrics, Inc. Wilmette, IL) to record from each dish continuously for ∼70 s every 10 min using a photomultiplier tube at 37°C.

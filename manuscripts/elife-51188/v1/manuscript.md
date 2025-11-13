@@ -34,13 +34,33 @@ Increases in Tγδ17 cells in patients with aberrant skin inflammation have been
 
 ## Results
 
-## Spontaneous AD in Sox13-/- mice specifically lacking Vγ2TCR+ dermal Tγδ17 cells
+### Spontaneous AD in Sox13-/- mice specifically lacking Vγ2TCR+ dermal Tγδ17 cells
 
 To study the role of Vγ2+ Tγδ17 cells in skin immunity, we generated mice deficient in Sox13, an HMG box transcription factor (TF) essential for their development (Malhotra et al., 2013; Melichar et al., 2007). In the immune system Sox13 expression is restricted to early hematopoietic stem/progenitors and γδ T cells. Mice lacking Sox13 have a highly selective defect in Vγ2+ Tγδ17 cell development with all other hematopoietic cell types normally preserved (Malhotra et al., 2013; Gray et al., 2013). One exception is innate iNKT17 cells that are partially affected in the lymph nodes (LNs) (Malhotra et al., 2018), but these cells are rare in the skin. Loss of Vγ2+ T cells was also observed in the skin of Sox13-/- mice, while Vγ4+ (Vγ2- TCRδint) T cells were present at a normal frequency and were capable of producing high levels of IL-17A (Figure 1—figure supplement 1A). Incompatible with the pro-inflammatory nature of Vγ2+ Tγδ17 cells,>90% of Sox13-/- mice maintained on a 129/Sv genetic background (>250 mice cumulatively tracked over several years) of both sex develop visible dermatitis in the muzzle, ears, eyes and elsewhere around three to four months of age (Figure 1—figure supplement 1B), displaying many of the hallmarks of human AD (Leung and Guttman-Yassky, 2014; Zheng et al., 2007; Fujita, 2013; Kim, 2015). Notably, while we have previously reported perinatal lethality in Sox13-deficient C57BL/6 mice, no gross developmental abnormalities were observed in 129.Sox13-/- mice for >1 year despite the development of AD-like disease. Pathophysiology included epidermal thickening (acanthosis, Figure 1A, left), marked accumulation of immunocytes in skin epithelial lesions leading to eosinophilia, neutrophilia, and increases monocytes (Mo) and Mo-derived dendritic cells (DCs) in the skin (Figure 1A–F). Further, mast cells were expanded, but this trend did not reach statistical significance (Figure 1—figure supplement 1C). Sox13-/- mice exhibited aberrant, high frequency scratching behavior coincident with visible skin lesions (Figure 1—figure supplement 1D and Videos 1 and 2), suggesting an enhanced itch response. In addition, expanded ILC2 (GATA3hi) associated with human AD (Kim, 2015; Salimi et al., 2013; Roediger et al., 2014), and their capacity to produce the type 2 cytokines IL-5 and/or IL-13, was recapitulated in Sox13-/- mice (Figure 1G, Figure 1—figure supplement 1E–G). Conversely, in young Rora-/- mice lacking in ILC2 (Wong et al., 2012) there is an increase in Vγ2+ Tγδ17 cells with enhanced capacity to produce type 3 cytokines (Figure 1—figure supplement 1H), suggesting a possible counter-regulation between Tγδ17 cells and ILC2. Crucially, age-dependent increases in IgE titer, evident by 3 months of age of the mice (Figure 1H), before visible signs of disease, captured one of the major symptoms of human AD.
 
-## Expanded αβ T cells are required for AD
+![Figure 1.](https://cdn.elifesciences.org/articles/51188/elife-51188-fig1-v1.jpg)
+
+**Figure 1.:** (A) Biopsies of muzzle skin from 6 mo Sox13-/- and Sox13+/- littermate control (LMC) was analyzed by H and E staining. Black arrows identify numerous eosinophilic infiltrates in the epidermis. Representative of four experiments, each with minimum n = 2/group. (B) Muzzle skin was digested and analyzed via FACS for Siglec F+ eosinophils (left panels), Ly- 6G+ neutrophils (middle panels), Ly-6C+ MHC-IIlo monocytes and Ly-6C+ MHC-IIhi monocyte-derived dendritic cells (right panels). Data are representative of >6 similar experiments analyzing 2–3 mice per/group. (C–F) Enumeration of cell types examined in Panel B. n = 6/group. *, p<0.05; **p<0.01; ***, p<0.001 by ANOVA. (G) Muzzle-infiltrating cells were isolated from LMC and Sox13-/- mice and re-stimulated in vitro with PdBu/ionomycin to assess production of IL-5 and IL-13 by ILCs. ILC identified as CD45+ Thy1.2+Lineage markersneg (CD3/CD4/CD5/CD8/CD11b/DX5/Gr-1/TCRδ/TCRβ/Ter-119neg). Bottom summary graph enumerates IL-13+ and IL-5+IL-13+ ILC. N = 6/group. **p<0.01; ***p<0.001 by ANOVA. (H) Serum IgE concentration in mice of indicated genotype, aged 1–6 mo, was determined by ELISA. n = 3–6/group. *, p<0.05; ***, p<0.001 by ANOVA.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/51188/elife-51188-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Analysis of dermal γδ T cells, demonstrating complete loss of Vγ2+ dermal TCRδint cells and maintenance of IL-17 production by Vγ2- (Vγ4+) dermal TCRδint cells. Data are representative of >50 mice analyzed of each genotype. (B) A representative image of inflamed, raw-appearing muzzle of five months old male Sox13-/- mice, contrasted to normal skin of a male littermate control (LMC). (C) Enumeration of FcεRIα+c-Kit+ mast cells in muzzle skin. n = 6/group. (D) Summary of scratching episodes of Sox13-/- mice with AD. Female mice (three of WT and Sox13-/-, 7–8 months of age) were filmed on three consecutive days for 15 min and scored for the number of uninterrupted scratching behavior (left, as an average daily number of episodes over 3 days) and the duration (in seconds, right) of each episode per day. Also refer to associated Videos 1 and 2. (E) Gating scheme for FACS analysis of ILC in the skin. (F) Analysis of IL-17A and IL-13 production by ILCs from 3mo mice as identified in Panel A after PdBU/ionomycin stimulation. (G) Intranuclear GATA3 staining in skin ILCs. Non-T cells and T cells are presented as internal references for the high level of GATA3 expressed by ILCs. (H) Increased skin γδ T cells, including Tγδ17 cells (TCRδint), in 4–6 week old Rora-/- mice. Skin cells were stimulated with PdBU/ionomycin and IL-17 production assessed in CD3+ T cells. One of 4 mice analyzed shown. Note limited IL-17 production at this age from αβ T cells and no IL-17 production from TCRδhi Vγ3+dendritic epidermal T cells (DETCs).
+
+![Video 1.](https://cdn.elifesciences.org/articles/51188/elife-51188-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/51188/elife-51188-video2.mp4.jpg)
+
+### Expanded αβ T cells are required for AD
 
 Significant expansion of αβ T cells in the skin of Sox13-/- mice was evident starting ~3 months of age, prior to any visible skin inflammation. Both CD4+ and CD8+ T cells increased in numbers up to 10-fold by 6 months of age, depending on skin sites (Figure 2A). Notably, CD4negCD8neg (double negative, DN) T cells accounted for 10–20% of TCRβ+ cells in the skin of both LMC and Sox13-/- mice, with a significant expansion observed in Sox13-/- skin (Figure 2A). Utilizing the MR1/5-OP-RU tetramer, we identified that the DN subset in both healthy and AD skin consisted primarily of MAITs (Figure 2B). CD4+ or CD8+ MAITs were rare in the skin of WT mice, with only marginal increase in CD8+ MAITs in Sox13-/- skin (Figure 2—figure supplement 1A). In the skin draining LNs (dLNs), only subtle increase in the frequency of MAITs was observed in Sox13-/- mice, with the majority being the CCR6+CD4-CD8- subset in all mice (Figure 2—figure supplement 1B–C). iNKT cells were rare in the skin and no significant alterations were observed in Sox13-/- mice (Figure 2—figure supplement 1D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/51188/elife-51188-fig2-v1.jpg)
+
+**Figure 2.:** (A) Total number of the indicated T cell types recovered from skin of from 5-6mo mice were calculated using AccuCheck counting beads. n = 6/group. *, p<0.05; **, p<0.01 by ANOVA. (B) FACS analysis of CD4negCD8βneg skin T cells (gated on B220-F4/80- TCRβ+) with control MR1/6-FP or MR1/5-OP-RU tetramer to identify MAIT cells in 5 mo mice. (C) Summary data of frequency of MAIT tetramer-reactive cells among total TCRβ+ cells pooled from two independent experiments, performed as in Panel B analyzing a total of 5–6 mice/group. (D) Muzzle-infiltrating cells were isolated from indicated mice, stimulated in vitro with PdBu/ionomycin, and analyzed for αβ T cell subset-specific production of IL-17A and IL-22 and for CD4+ T cell production of IL-4, and IL-13. FACS data are representative of >5 experiments. For summary data below, n = 6/group. *, p<0.05; **p<0.01, ***, p<0.001 by ANOVA or t-test (CD4-CD8β- cells). (E) Total cell number enumeration in skin draining LNs (dLNs) of 6 mo mice of indicated genotype, n = 6/group. ***, p<0.001 by Student’s t-test. (F) Muzzle draining mandibular LN (dLN) from 5 to 6 mo mice were fixed in paraformaldehyde, frozen in OCT compound, cryosectioned, and then labeled with the indicated antibodies to visualize B cell follicles (IgD+), T cell zones (CD4+), dendritic cells (CD11c+), and germinal centers (GL7+ IgD-). Images are representative of two experiments analyzing sections from at least 3 mice per experiment. (G) Summary data of T follicular helper (Tfh) cells in dLN of 6 mo LMC and Sox13-/- mice. Tfh cells were identified as CD4+FoxP3neg PD-1hi CXCR5+Bcl6+. n = 7–8/group. ***, p<0.001 by Student’s t- test. (H) Sox13-/- and 129.Tcrb-/- mice were crossed to generate double-deficient mice, and then disease progression tracked by phenotyping and muzzle inflammation assessed by H and E staining. Sox13-/-Tcrb-/- mice do not develop overt or histological signs of AD at 6 mo. Data are representative of 10–15 mice of each genotype analyzed.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51188/elife-51188-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) MAIT tetramer MR1/5-OP-RU (5-(2-oxopropylideneamino)−6-Dribitylaminouracil, a riboflavin biosynthetic product recognized by MAITs) staining of skin CD4+ and CD8β+ T cells reveal minimum coreceptor expressing MAITs in the skin of 5-6mo mice. Summary data, n = 5–6/group. (B) Analysis of MAIT cells in skin dLN from mice as above. Summary data, n = 5–6/group. *, p<0.05 by t-test. (C) Coreceptor and CCR6 expression, a hallmark of type 3 cytokine producing T cells, by MAIT cells in the dLN identified as in (B). Summary data, n = 5–6/group. (D) Summary of iNKT cell frequencies in the skin and dLN of mice of indicated genotype as in panel A, using CD1d/PBS57 tetramer that stains the canonical Vα14+ iNKT cells. (E) Summary of FACS analysis for FoxP3 to identify Tregs in the skin of 5–6 mo mice of indicated genotype as in panel A. n = 6/group. *, p<0.05 by t-test. (F) Summary of FACS analysis of GC B cells (GL7+ CD95+) in dLN of 5 mo mice of indicated genotype as in panel A. n = 7–8/group. **, p<0.01 by t-test. (G) Summary of FACS analysis of CD138+ B220- plasma cells in dLN of 5 mo mice of indicated genotype as in panel A. n = 7–8/group. **, p<0.01 by t-test. (H) RT-qPCR analysis of cytokine and chemokine gene expression from RNA prepared from total muzzle skin (6 mo) of mice with indicated genotype. Only those significantly altered in expression (except Il1a as an example of unchanged) are shown. LMC n = 4; Sox13-/- mice, n = 5. ***, p<0.001; *, p<0.05 by Student’s t-test. (I) Pre-melanocyte antigen 1-specific PMEL CD8+ Tg T cells were labeled with CellTrace Violet and then adoptively transferred into 6 mo LMC or Sox13-/- mice. Four days later, spleen and skin dLN were harvested for analysis of proliferation by transferred PMEL T cells (identified by Thy1.1 allomarker). Data from one of two experiments shown, n = 4/group. (J) Summary data of PMEL adoptive transfer proliferation performed in Panel H. **, p<0.01; *, p<0.05 by ANOVA.
 
 The majority of αβ T cell subsets in AD were associated with enhanced capacity to produce both IL-17 and IL-22, whereas in control mice very few CD4+ or CD8+ αβ T cells were capable of IL-17 production, and even more constrained IL-22 secretion was evident (Figure 2D). DN MAIT cells were primed for IL-17 in both LMC and Sox13-/- mice. In contrast to the enhanced type 3 cytokine production, the frequency of Th2 cells was not altered significantly in Sox13-/- skin, although numerically they were also increased. Similarly, although the frequency of skin FOXP3+ regulatory T cells (Tregs) was decreased in the ear (Figure 2—figure supplement 1E), but not muzzle, of Sox13-/- mice, their numbers were comparable to controls, indicating preferential expansion of effector populations. Matching the T cell expansion in skin there was an ~8 fold expansion in cellularity in dLNs (Figure 2E). The trend to this increase was evident before visible skin lesions, at ~3 months of age, and was associated with greatly increased numbers of spontaneous germinal centers (GCs), typical of autoimmune disorders (Domeier et al., 2017), with aberrant GC formation (green, Figure 2F) in the T cell zone (blue, Figure 2F) and increased number of follicular T help (Tfh) cells, GC B cells and plasma cells (Figure 2G and Figure 2—figure supplement 1F,G). To ascertain changes in the expression of secreted inflammatory mediators, RNA was isolated from the muzzle skin at 6 months of age and select cytokine and chemokine gene expression was assessed by quantitative RT-PCR (Figure 2—figure supplement 1H). A coordinate induction of the cytokines IL-1β, IL-6 and IL-23, which promote type 3 cytokine producing lymphocytes, was prominent. A simultaneous increase in the danger associated molecular pattern molecule IL-33 was observed, which has been associated with skin inflammation and itch response (Salimi et al., 2013; Meephansan et al., 2013).
 
@@ -48,21 +68,29 @@ To determine whether the expansion of skin T cells was correlated to more effici
 
 Collectively, these results indicated that prior to the onset of visible diseases, B and T cells expand, with evidence for IgE hyperproduction. With the progression of disease, the skin displays a prominent type 3 effector inducing cytokine milieu with attendant expansion of Th17 cells and IL-17+ MAITs. Thus, fulminant AD in Sox13-/- mice is characterized by strong polarization and/or expansion of Th17 and Th17-like cells of αβ T cell lineage.
 
-## Altered basal keratinocyte differentiation program in Sox13-/- mice
+### Altered basal keratinocyte differentiation program in Sox13-/- mice
 
 To map the sequence of early cellular and molecular alterations in Sox13-/- mice that can account for the eventual inflammatory immune landscape, we first assessed the impact of the loss of Vγ2+ Tγδ17 cells on differentiating keratinocytes. For this we undertook a whole transcriptome analysis of basal CD49f+ (Itga6) keratinocytes of Sox13-/- mice at 3 and 7 weeks (wks), well before the onset of aberrant skin inflammation starting in ~3 months old (mo) mice. This population was chosen because they contain keratinocyte stem cells and progenitors (Terunuma et al., 2007; Sada et al., 2016) and the two timepoints coincide with the hair follicle catagen cycle, characterized by active keratinocyte differentiation followed by the relatively quiescent telogen cycle, respectively (Fuchs, 2007). Notably, Sox13 transcripts were virtually undetectable in both Sox13-/- and LMC keratinocytes, indicating that Sox13 deficiency is unlikely to cell-autonomously impact keratinocytes. In all, 261 genes were differentially expressed (>2 fold changes, p<0.05) between 3 wk WT vs Sox13-/- basal keratinocytes (Figure 3A). Gene Ontology (GO) enrichment analysis revealed pronounced cell apoptosis signatures and stress responses in Sox13-/- basal keratinocytes (Figure 3B). At 7wk the difference was muted with 50 genes differentially expressed (Figure 3A) with no significant clustering of these genes into specific biological processes, likely reflecting the resting state of basal keratinocytes in the telogen phase. Expression of only 3 genes, Igfbp3, Mir-17hg (Mir-17–92) and 4930480K23Rik (non-coding RNA), was altered at both ages. Igfbp3 and Mir-17hg (Mir-17–92) have been shown to be associated with skin inflammations (Edmondson et al., 2005; Zhang et al., 2018) and their expression was initially decreased in Sox13-/- basal keratinocytes, but this pattern was flipped at 7wk. Sox13-/- mice prior to 2 months do not show any significant alterations in skin immune subsets or visible damage, and consistent with this Sox13-/- basal keratinocytes showed no significant alterations in the expression of inflammatory mediators of immunocytes at 3 and 7 wks. Genes encoding for the structural components of the skin barrier including gap junction proteins, extracellular matrix (except collagens at 3wk) and keratins, were also not altered in expression. However, expression of several genes critical for normal differentiation of basal keratinocytes was altered at 3wk, including diminished expression of the IL-17 target Blimp1 (Prdm1) (Magnúsdóttir et al., 2007; Wang et al., 2016), Sox9 (Menzel-Severing et al., 2018), Runx1, Irf3/6, S100a11, and increased expression of Myc (Wu et al., 2015), Dlx3,Trp73 and Maf. In addition, genes in the TGFβ, Lymphotoxin and the JAK-STAT signaling pathways had lower levels of expression in Sox13-/- basal keratinocytes. Genes controlling barrier fitness, such as Trex2, Epcam, Adam17, Itga2, Cdh3, Tgm4, Il31ra, Il1rn and Jup, were decreased in expression, whereas Def, Lrrc31 and Tsc22d3 (GILZ) were increased in Sox13-/- keratinocytes (Figure 3C). Together, these results indicate that Tγδ17 cells are critical for establishing normal developmental program of basal keratinocytes during the catagen cycle, and in their absence the data suggests altered keratinocyte differentiation and increased propensity to apoptosis.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/51188/elife-51188-fig3-v1.jpg)
 
-**Figure 3.:** + Tγδ17 cells.(A) Epidermal basal keratinocytes were sorted from 3 and 7 wk old male LMC and Sox13 mice and subjected to gene expression analysis by RNA sequencing (in biological triplicates). Red and green dots represent genes with fold change (FC) -/->2 and p-value <. 05 and the numbers at the bottom denote number of genes whose expression was significantly altered. Select genes are annotated. (B) Differentially expressed genes from Panel A were analyzed for Gene Ontology (GO) term enrichment using DAVID. Displayed are a selection of significantly enriched (p <. 05, dashed line) GO terms. (C) Heatmap of differentially expressed genes (FC >1.5 and p-value <. 05) among male 3 wk old basal keratinocytes with genes involved in cell differentiation, barrier function, skin inflammation and stress response pathways annotated.Figure 3—source data 1.Figure 3A (upper panel) for basal keratinocytes analysis of 3 wk old mice.Figure 3—source data 2.Figure 3A (lower panel) for basal keratinocytes analysis of 7 wk old mice.
+**Figure 3.:** (A) Epidermal basal keratinocytes were sorted from 3 and 7 wk old male LMC and Sox13-/- mice and subjected to gene expression analysis by RNA sequencing (in biological triplicates). Red and green dots represent genes with fold change (FC) >2 and p-value <. 05 and the numbers at the bottom denote number of genes whose expression was significantly altered. Select genes are annotated. (B) Differentially expressed genes from Panel A were analyzed for Gene Ontology (GO) term enrichment using DAVID. Displayed are a selection of significantly enriched (p <. 05, dashed line) GO terms. (C) Heatmap of differentially expressed genes (FC >1.5 and p-value <. 05) among male 3 wk old basal keratinocytes with genes involved in cell differentiation, barrier function, skin inflammation and stress response pathways annotated.
 
-## Skin commensal bacteria dysbiosis in Sox13-/- mice is responsible for AD
+### Skin commensal bacteria dysbiosis in Sox13-/- mice is responsible for AD
 
 Analysis of differentiated keratinocytes at 2 months or later does not allow for clear distinction between impaired barrier function arising from keratinocyte-intrinsic defects or from inflammatory immunocyte-mediated degradation. In patients with AD, expansions of Staphylococcus and Corynebacteria species are often observed in skin lesions (Malhotra et al., 2016; Kobayashi et al., 2015; Grice and Segre, 2011; Cho et al., 2010) and mouse models of AD with barrier defects replicate the AD-associated microbiome dysbiosis. Thus, one prediction of the altered keratinocyte differentiation and barrier function well before the onset of chronic inflammation in young Sox13-/- mice is that the homeostasis of skin commensal bacteria (CB) with the barrier will be disrupted, with the resultant dysbiosis driving the immune responses. We tested this possibility by first establishing skin microbiota of Sox13-/- mice at 3 and 6 mo by 16S rRNA sequencing, followed by assessment of antibiotic treatment (Abx) on AD onset and progression. As in human AD patients, AD in Sox13-/- mice was associated with dysbiosis of Staphylococcus and Corynebacteria, but with distinct kinetics (Figure 4A). Most Sox13-/- mice showed an early bloom of Corynebacteria (C. mastitis, Figure 4—figure supplement 1A), with the expansion maintained in some mice, but for the majority returning to the LMC frequencies at 6 mo. Expansion of Staphylococcus was pronounced at the frank phase of disease but was not obvious at 3 mo. These results largely recapitulate skin CB dysbiosis in two mouse models of AD (Kobayashi et al., 2015; Floudas et al., 2017).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/51188/elife-51188-fig4-v1.jpg)
+
+**Figure 4.:** (A) Summary stacked bar charts of muzzle skin microbiome analysis of Sox13-/- and LMC mice at 3 mo and 6 mo. Species depicted are annotated on the right and their corresponding frequencies among total 16S rRNA sequences are shown. One experiment of three shown. (B) Sox13-/- mice were antibiotic (enrofloxacin and cefazolin) treated (Abx) by drinking water from 2 mo and then muzzle histology analyzed at 6 mo. Images are representative of 4 analyzed Abx-treated mice, with at least 2 sections separated by >100 microns analyzed for each mouse. (C) Serum IgE levels of Ctrl and Abx-treated Sox13-/- mice at 6 mo were assessed by ELISA. n = 6 (Ctrl) or 10 (Abx). **, p<0.01 by Student’s t-test. (D) Muzzle skin of 6 mo Ctrl and Abx Sox13-/- mice was analyzed for eosinophil and neutrophil infiltration via FACS. Data are representative of 9 analyzed Abx-treated mice from 3 independent cohorts. (E) Summary data of the frequency of Eosinophils (top) and Neutrophils (bottom) among all CD45+ muzzle skin cells. n = 3/group from 1 of 3 similar experiments. *, p<0.05 by t-test. (F) Muzzle skin of 6 mo Ctrl and Abx Sox13-/- mice was analyzed for Th17 cytokine production post PMA/ionophore reactivation. Summary data of n = 5/group, pooled from 2 independent experiments. *, p<0.05 by ANOVA. (G–J) Mandibular and parotid dLN cells from Ctrl and Abx Sox13-/- mice were analyzed for total cell number (G), and the frequency of Tfh cells (H), GC B cells (I), and CD138+ plasma cells (J). n = 7–12/group pooled from 4 independent cohorts. ***, p<0.001 by Student’s t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51188/elife-51188-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Summary of the relative abundance of C. mastitidis on the muzzle skin of LMC and Sox13-/- mice. n = 6/group from 2 separate sequencing analyses. (B) Muzzle skin microbiome analyses of Abx Sox13-/- mice at 3 and 6 mo show near complete depletion of Corynebaceria mastitidis and decreased Staphylocccus, compared to the age-dependent blooming of these species in Sox13-/- mice shown in Figure 5, and correlating with the prevention of AD in Abx Sox13-/- mice. (C) Summary of FACS analysis of the frequency of Tfh CD4+ T cells, GC B cells, and Plasma cells in Ctrl (gray bars) and Abx-treated LMC mice, demonstrating no alteration in these populations due to Abx treatment. Data are summarized from 2 independent treatment cohorts. (D) Loss of dermal Vγ4+ Tγδ17 cells (CD3hi, among TCRδ+ cells, with residual Vγ3+ DETCs gated out) in 6 wk old germ free (GF) B6 mice skin, relative to those housed in the SFP condition, as reported previously. However, Vγ2+ Tγδ17 (CD3int) cells are maintained and fully capable of IL-17 production in age-matched GF mice. Summary data, n = 4 (GF) and n = 5 mice (SPF) from two independent experiments. *, p<0.05; ***p<0.001 by ANOVA. (E) Abx Il17a-Egfp mice show that in vivo Il17a transcription in Vγ2+ Tγδ17 cells occurs independent of the Abx sensitive CB in panel A. Mice were treated with Abx for 4 weeks, and then ex vivo dermal γδ cells in the skin (TCRδint) were analyzed for expression of Vγ chain (left panel, in the dermis Vγ2neg cells express Vγ4) and CCR6 and EGFP (right two panels) expression in dermal Vγ2+ Tγδ17 and Vγ2- (Vγ4+) Tγδ17 cells. (F) Summary of data from experiments depicted in Panel E show the loss of Vγ4+ Tγδ17 cells and compensatory increase in Vγ2+ Tγδ17 cells in one month Abx mice (Top) and the preserved capacity to express Il17a in Vγ2+ Tγδ17, but not in residual Vγ4+ Tγδ17, cells. n = 3/group. ***, p<0.001 by ANOVA.
+
 To determine whether skin CB is necessary for AD initiation and/or progression in Sox13-/- mice we treated the mice from birth or starting at 3 mo with a combination of antibiotics (cefazolin and enrofloxacin in drinking water) previously used for a similar purpose (Kobayashi et al., 2015). Skin commensal sequencing of Abx mice confirmed that Staphylococcus and Corynebacterium species were significantly reduced (Figure 4—figure supplement 1B). Regardless of regiments, the Abx Sox13-/- mice were protected from AD. All pathophysiological features of AD were absent, with resolution of acanthosis (Figure 4B), decreased serum IgE concentrations (Figure 4C), and suppression of myeloid expansion (Figure 4D,E). While CD4+ cells remained at an elevated frequency, IL-17 and IL-22 production was significantly reduced (Figure 4F). Further, all disease-associated phenotypes of the dLN were corrected by Abx treatment, leading to reduction of total cell number, and the normalization of Tfh, GC B cell, and plasma cell frequencies (Figure 4G–J, Figure 4—figure supplement 1C). We also tested whether the disease initiation is restricted to a narrow developmental window spanning neonatal-juvenile stages. For this, Sox13-/- mice were treated with the antibiotic cocktail from birth and then the treatment was terminated at 3 wks of age. AD development was not prevented in mice treated only acutely at birth (data not shown), suggesting that continuous skin commensal-immunocyte crosstalk contributes to the disease postnatally and delayed/altered commensal interactions during neonatal stage do not permanently remodel skin pathophysiology.
 
-## Tγδ17 cells respond to skin CB by IL-1 and IL-23 secreted by APCs
+### Tγδ17 cells respond to skin CB by IL-1 and IL-23 secreted by APCs
 
 Commensal dysbiosis is known to result from impaired barrier functions. That Tγδ17 cells themselves normally respond to Corynebacteria/Staphylococcus and the absence of Vγ2+ Tγδ17 cells also directly contributes to the aberrant microbiome expansion was assessed next. A recent report of Tγδ17 cell activation in SPF mice topically colonized with C. accolens (Ridaura et al., 2018) strongly supported this possibility. There are two Tγδ17 subsets in mice. Along with Vγ2+ Tγδ17 cells, the dermis contains the canonical Vγ4TCR+ fetal derived Tγδ17 cells, which are not dependent on Sox13 for populating the skin (Malhotra et al., 2013). Thus, an obvious question is why dermal Vγ2+ Tγδ17 cells are functionally non-redundant in suppressing AD initiation. Whereas Vγ4+ Tγδ17 cell persistence is dependent on CB (Duan et al., 2010) and parallels dermal Th17 and Tc17 cells (Naik et al., 2012), Vγ2+ Tγδ17 cells were not, as assessed in germ free (GF) mice (Figure 4—figure supplement 1D). Abx WT mice also showed the loss of skin Vγ4+ Tγδ17 cells (Vγ2negVγ3neg quadrant, Supp Figure 3E) and the loss of tonic Il17a transcription by residual Vγ4+ Tγδ17 cells (Vγ2neg) in Abx WT mice. In contrast, constitutive Il17a transcription in Vγ2+ Tγδ17 cells was not suppressed by Abx (Figure 4—figure supplement 1D–F). These results indicate unique homeostatic activation requirements for dermal Vγ2+ Tγδ17 cells.
 
@@ -72,9 +100,17 @@ To determine how Tγδ17 cells normally react to skin CB, γδ T cells were isol
 
 **Figure 5.:** (A) Total γδ cells were enriched from skin-draining LN and co-cultured with antigen presenting cells and the indicated heat-killed commensal bacteria at a 1:1:10 ratio for 16–18 hr, and then cultured for an additional 4 hr in the presence of Golgi Stop and Plug. IL-17A and IFNγ production was assessed by intracellular cytokine staining. Data are representative of 2 independent experiments. (B) Total γδ cells, splenic DC, and the indicated commensal bacteria were cultured at a 1:1:10 ratio as in (A) Together in a well or in a 0.4 micron TransWell apparatus in which DC and bacteria were placed in the top chamber and γδ cells were placed in the bottom chamber. Summary data are pooled from 2 independent experiments. (C) Cultures as above with 10 ug/mL each of anti-IL-1R and anti-IL-23 neutralizing Abs or isotype control Abs. Intracellular production of IL-17A and IFNγ was then assessed by FACS. Summary data are pooled from 4 independent experiments. *, p<0.05; **, p<0.01 by ANOVA.
 
-## Vβ4+vα4+ αβ T clonotypes dominate the diseased skin of Sox13-/-mice
+### Vβ4+vα4+ αβ T clonotypes dominate the diseased skin of Sox13-/-mice
 
 The expanded αβ T cells in Sox13-/- mice are required for AD progression. If the expansion is antigen driven a prediction would be that there would be restricted TCR repertoire in skin infiltrating αβ T cells of Sox13-/- mice. To test this, we first assessed TCRVβ chain repertoire of CD4+ T cells by flow cytometry. While the TCRVβ usage of dLN T cells of WT and Sox13-/- mice was indistinguishable, skin CD4+ T cells in Sox13-/- mice were dominated by the usage of Vβ4 TCR, starting at 3 months of age and reaching a plateau at ~5–6 months (Figure 6—figure supplement 1A,B). As skin inflammation progressed to overt disease (~5 mo), the frequency of Vβ4+ CD4+ T cells increased ~3 fold and in 5–6 mo Sox13-/- mice the total number of skin CD4+ T cells was more than 10-fold greater in Sox13-/- mice than WT mice, depending on the skin site, with up to 50% of these cells expressing Vβ4 TCR (Figure 6A–C). In comparison, TCR Vβ skewing was not consistently observed for any other Vβs or for any TCRs associated with FOXP3+ Tregs or CD8+ T cells (Figure 6—figure supplement 1B,C). The increased cellularity in diseased Sox13-/- skin, combined with the strong Vβ4-bias and increased proliferation of skin Vβ4+CD4+ T cells in Sox13-/- mice (Figure 6—figure supplement 1D), suggested that these CD4+ T cells were undergoing expansion in the skin.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/51188/elife-51188-fig6-v1.jpg)
+
+**Figure 6.:** (A) Muzzle-infiltrating cells were isolated from 5-6mo LMC and Sox13-/- mice and analyzed for Vβ usage by CD4+ T cells. (B) Summary data of Vβ4+ frequency among skin-infiltrating CD4+ cells in LMC and Sox13-/- mice. n = 13–17 mice. ***, p<0.001 by ANOVA. (C) Enumeration of CD4+ Vβ4+ cells in LMC and Sox13-/- skin. n = 6/group. ***, p<0.001; *, p<0.05 by ANOVA. (D) Skin-infiltrating cells were isolated from 5 mo mice, restimulated in vitro with PdBu/ionomycin, and IL-17 and IL-22 production by Vβ4+ and Vβ4- CD4+ T cells assessed via FACS. Data are representative of >4 experiments analyzing 2–3 mice/genotype/experiment. (E) Summary data of multiple experiments performed as in Panel D. n = 5–6 pooled from 3 independent experiments. ***, p<0.001; *, p<0.05 by ANOVA. (F) Starting at 3 months of age, Sox13-/- mice were treated with control Ab (Ctrl) or a cell depleting Ab targeting CD4 antigen (αCD4) until 6 mo. AD disease severity was then assessed by H and E staining of muzzle skin. Data are representative of 10 mice treated with αCD4 Ab across 2 independent experiments. (G) Epidermal thickness in Ctrl and αCD4 Ab treated Sox13-/- mice as assessed by analysis of histology images. n = 5 mice/group. ***, p<0.001 by Student’s t-test. (H) Summary stacked bar charts of TCR Vβ4 CDR3 clonotype analysis of skin (ear and muzzle combined) infiltrating CD4+ T cells in LMC and Sox13-/- mice by deep sequencing, focusing on the two major clonotypes. Minimal 1 million reads/sample. Each stack reports proportion of each class on the right amongst total Vβ4 CDR3 sequence reads. (I) Summary of TCR Vα4 CDR3 clonotype analysis by pie chart of skin-infiltrating CD4+ T cells in Sox13-/- mice. LMC control not shown as there were insufficient reads.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/51188/elife-51188-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representative multiplex analysis of TCR Vβ usage in skin T cells of 13 Vβ for which commercial Abs are available that bind TCR haplotypes expressed by 129/Sv mice. In this illustration, in Panel A αVβ4 and αVβ9 are both FITC conjugates; αVβ6 and Vβ12 are PE conjugates; αVβ2, αVβ4, and αVβ6 are biotin conjugates. This combinatorial staining strategy allows for deconvolution of which TCR Vβ is expressed by a given population via the gating shown. Inset red numbers in parentheses indicate the specific Vβ identified by the gated population. (B) Heatmap of TCR Vβ expression by T cells in the skin of LMC and Sox13-/- mice. n = 9, pooled from 3 independent experiments using 6mo mice. From this analysis, only Vβ4 in CD4+ cells was consistently and significantly altered across multiple experiments. N.R., non-reactive to Abs in panel. Color coding at the bottom indicates % positive among αβ T cell subsets. ***, p<0.001 by ANOVA (C) Intranuclear FoxP3 staining in skin CD4+Vβ4+ T cells from 5-6mo mice. Compared to Figure 2—figure supplement 1E, data indicate that CD4+Vβ4+ T cells are underrepresented in the skin Treg pool. (D) Intranuclear expression of Ki-67 in skin CD4+Vβ4+ T cells from 5-6mo mice, indicating their enhanced proliferation in Sox13-/- mice. n = 3 from 1 of 2 similar experiments. *, p<0.05 by Student’s t-test.
 
 Cytokine production from skin-infiltrating CD4+ T cells was assessed to correlate effector function with the TCR Vβ repertoire. In WT mice, Th17 cells (IL-17+ and IL-17/22+) were found in both Vβ4+ and Vβ4- dermal CD4+ T cell populations, but there was a biased representation of these effectors within Vβ4+ T cells (Figure 6D,E).~10% of WT skin CD4+ T cells were geared for IL-13 and/or IL-4 production, but there were negligible numbers of skin Th1 and Th22 cells (data not shown). In contrast, Sox13-/- AD skin lesions were enriched in Th17 subset and a larger population of dual IL-17+/22+ Th17 cells, which were strongly biased to Vβ4+ T cells (Figure 6D,E). Moreover, another AD-associated Th subset was the IL-22-only Th22 cells (Czarnowicki et al., 2015; Fujita, 2013), which predominantly expressed Vβ4 (Figure 6E). Frequencies and TCR Vβ repertoire of skin Th2 cells (~10% of CD4+ T cells) and cytokine producing skin CD8+ T cells (from WT and Sox13-/- mice) were unchanged in Sox13-/- mice at 3 and 6 mo (data not shown). To demonstrate that the expanded CD4+ T cells critically contribute to AD, Sox13-/- mice were treated with CD4 T cell depleting Abs starting at 3 mos of age for three mos. Skin inflammation significantly improved, including substantially reduced epidermal hyperplasia (Figure 6F,G) and amelioration of eosinophil and neutrophil infiltration (data not shown). Collectively, these results indicate that CD4+ αβ T cells are the major driver of AD in Sox13-/- mice and Vβ4+ CD4+ T cell expansion with enhanced IL-22 production is the primary distinguishing feature of αβ T cells in AD, dovetailing with findings in human severe AD (Czarnowicki et al., 2015).
 
@@ -98,11 +134,11 @@ Human inflammatory skin diseases also involve Tγδ17 cells (Laggner et al., 201
 
 ## Materials and methods
 
-## Mice
+### Mice
 
 All mice were housed in specific pathogen-free (SPF) conditions, and all procedures were approved by the University of Massachusetts Medical School (UMMS) IACUC. Sox13-/- mice have been described previously (Melichar et al., 2007), and are maintained on a 129S1/SvImJ (129) background as C57BL/6 (B6).Sox13-/- mice are embryonic lethal. B6, B6.129P2-Tcrbtm1Mom/J (B6.Tcrb-/-), Rora-/- and B6.Il17atm1Bcgen (B6.Il17a-Egfp) mice were purchased from Jackson Laboratories. Germ-free B6/129 mice were from HDDC Gnotobiotics Core, Harvard. To generate 129.Sox13-/-Tcrb-/-, B6.Tcrb-/- was backcrossed to 129 mice for 9 generations, and then intercrossed with Sox13-/- mice to generate double knockout mice. B6.Cg-Thy1a/Cy Tg(Tcrab)8Rest/J (PMEL Tg) mice were kindly provided by John Harris (UMMS).
 
-## Cell isolation and stimulation and antibodies
+### Cell isolation and stimulation and antibodies
 
 Ears and muzzle skin were first treated with Nair for 2 min, and then Nair was gently wiped away with a PBS-moistened cotton-tip applicator, and tissue was subsequently rinsed extensively with PBS prior to digestion. For this study, muzzle tissue is demarcated by the boundaries of the vibrissiae. Ears were split into dorsal and ventral halves, and muzzle tissue was removed of subcutaneous tissue. Skin was finely minced and then digested with 1 U/mL Liberase TL (Roche) + 0.5 mg/mL Hyaluronidase (Sigma-Aldrich) + 0.05 mg/mL DNAse (Roche) dissolved in HBSS (with Ca2+/Mg2+, Corning) + 10 mM HEPES (Gibco) + 5% FBS (Sigma-Aldrich) for 90 min at 37°C with gentle shaking. After digestion, EDTA (Sigma-Aldrich) was added at 5–10 mM, and then tissue was strained through a 100 μm cell strainer. Cell were washed in FACS buffer (DPBS, Ca2+/Mg2+-free + 0.5% BSA [Fisher Scientific] + 2 mM EDTA) and then plated for antibody staining. Mandibular and parotid dLN were mechanically homogenized between etched glass slides (Fisher Scientific) and strained through 70 μm mesh prior to plating for antibody staining.
 
@@ -110,22 +146,193 @@ The following anti-mouse antibodies were purchased from Biolegend, BD Bioscience
 
 For in vitro restimulation, digested skin cells or dLN cells were resuspended in complete DMEM-10 medium (DMEM, high glucose + 10 mM HEPES + 4 mM l-Glutamine + 1x non-essential amino acids + 1 mM sodium pyruvate + 100 U/mL penicillin + 100 ug/mL streptomycin (all Gibco) + 10% FBS) and cultured with 500 ng/mL phorbol 12,13 dibutyrate (PdBu, Tocris) + 1 μM Ionomycin (Sigma-Aldrich) + 1x GolgiStop + 1x GolgiPlug (BD Biosciences) for 2–3 hr at 37°C. After stimulation, cells were washed in FACS buffer and then stained with antibodies as indicated above. Serum IgE was assessed by ELISA (BioLegend). To deplete CD4+ T cells, mice were injected i.p. with anti-CD4 (GK1.5, Bio X cell) or rat IgG2b isotype control. Initially, mice received two doses of 500 μg/mouse on day 0 and day 2. Thereafter, mice received a weekly maintenance dose of 100 μg/mouse to maintain depletion. Depletion was confirmed by analysis of dLN and skin T cells stained with anti-CD4 clone RM4-4 (Biolegend), which binds a non-overlapping epitope.
 
-## Histology and immunofluorescence microscopy
+### Histology and immunofluorescence microscopy
 
 For H and E staining, muzzle tissue was first fixed in 10% neutral-buffered formalin for 24 hr, and then paraffin embedded, sectioned, and stained by the UMMS DERC Morphology Core. Epidermal thickness was calculated using ImageJ, taking the average of 3 measurements per image to record as 1 data point. For immunofluorescence microscopy, dLN were fixed in 4% paraformaldehyde (diluted from 16% ampules, Electron Microscopy Sciences) in PBS for 6–8 hr at 4°C, washed three times in PBS, equilibrated in 30% sucrose in PBS overnight, and then frozen in OCT compound (Sakura Tissue-Tek). Cryosections were cut to 7 um thickness, blocked in PBS + 0.3% Triton X-100 + 5% normal mouse serum for 1 hr at RT, then endogenous biotin was blocked using the Avidin/Biotin Blocking System (BioLegend) as recommended. Primary antibody labeling was performed in blocking buffer overnight at 4°C in a humidified chamber using the following antibodies: anti-CD4 Alexa Fluor 647 (BioLegend), goat anti-IgD purified (Cedarlane Labs), anti-GL7 Alexa Fluor 488 (BioLegend), and anti-CD11c Brilliant Violet 421 (BioLegend). Slides were washed 3x in PBS, and then labeled with donkey anti-goat Cy3 (Jackson ImmunoResearch) in blocking buffer for 1 hr at RT. Slides were rinsed 3x in PBS and mounted using Fluoromount-G (Southern Biotech). Images were acquired on a Zeiss Axio Observer with LED excitation using ZEN software (Zeiss) and displayed using best-fit parameters.
 
-## TCR CDR3 deep sequencing
+### TCR CDR3 deep sequencing
 
 The strategy for deep sequencing of TCR Vβ4 CDR3 regions has been described previously (Stadinski et al., 2016). Cells from pooled muzzle and ear skin of 6 mo LMC and Sox13-/- mice with AD were sorted via FACS as Live CD45+ TCRβ+ CD4+ CD25- GITRlo to exclude Treg cells. RNA was extracted using Trizol (ThermoFisher), and cDNA generated using oligo dT priming and OminScript reverse transcriptase (Qiagen) per the manufacturers’ recommendations. PCR was performed using a Vβ4- or Vα4-specific forward primer containing adapter and barcode sequences combined with a Cβ or Cα reverse primer. Multiple forward primers were used for Vα4 to ensure coverage of the entire Vα4 family. Sequencing was performed on an Illumina MiSeq at the Deep Sequencing Core Lab. For analysis, low quality (Q score <25) reads were removed and then sequences were parsed based on the sample barcode using fastq-multx. TCR V and J nucleotide sequences were converted to amino acid sequences using TCRKlass, using the conserved Cys residue of TCR Vβ to identify CDR3 position 1.
 
-## Microbiome sequencing, antibiotics, and in vitro bacterial/γδ cell cultures
+### Microbiome sequencing, antibiotics, and in vitro bacterial/γδ cell cultures
 
 To sequence the muzzle microbiome of LMC and Sox13-/- mice, sterile cotton-tip applicators were swabbed across both sides of the muzzle and then placed into sterile Eppendorf tubes and placed onto dry ice. Muzzle swabs were sent to Molecular Research LP (MR DNA, Shallowater, TX) for DNA extraction and sequencing on an Illumina MiSeq. Extracted DNA was used to amplify the 16S V4 region, and then amplicons were purified for library generation. For analysis, low quality and short sequences (<150 bp) were removed. Operational taxonomic units were identified and classified using BLASTn and a curated database derived from NCBI, RDPII, and GreenGenes. Count files were then converted to percentages by dividing the number of counts for a given phylum/species by the sum of all counts. For antibiotic treatment, Sox13-/- breeders were placed on drinking water containing 0.5 mg/mL enrofloxacin and 0.5 mg/mL cefazolin (hereafter Abx). Weaned mice were then placed on Abx water and analyzed at six mo. To assess γδ cell responses to skin commensals, LN γδ T cells were isolated from WT 129 mice by negative selection (without the use of anti-TCRδ Abs). CD11c+ cells were isolated from spleens using CD11c microbeads (Miltenyi Biotec). Corynebacteria were grown on brain heart infusion agar (BHI) with 1% Tween-80, then grown in BHI broth with 1% Tween-80 overnight. Staphylococcus was grown on trypticase soy agar, then grown in BHI broth overnight. C. accolens was purchased from ATCC. C. bovis and C. mastitidis were kindly provided by K. Nagao (National Institute of Arthritis and Musculoskeletal and Skin Diseases, 9). S. lentus was isolated from the muzzle skin of a Sox13-/- mouse with AD by streaking onto mannitol salt agar, followed by re-streaking of an isolated, mannitol-fermenting colony. Species identification was determined by sequencing analysis of 16S V1-V3 followed by BLAST. The day of the experiment, bacterial cultures were subcultured 1:100 for 2–4 hr to permit recovery into exponential growth phase. Culture density was determined by OD600, and then bacteria were resuspended in PBS and heat-killed at 56°C for 1 hr. DC, γδ T cells, and bacteria were cultured at 1:1:10 ratio for 16–18 hr, and then GolgiStop and GolgiPlug were added for an additional 4 hr prior to FACS analysis. In some cases, anti-IL-23 (MMp19B2, BioLegend) and anti-IL-1R (JAMA-147, Bio X Cell) or isotype control antibodies were added for the entire culture duration. To assess contact dependency, DC and bacteria were placed in the top chamber of a 0.4 μm TransWell apparatus (Corning) and γδ T cells in the bottom well.
 
-## Gene expression analysis
+### Gene expression analysis
 
 For RT-qPCR analysis of whole skin, skin was excised and stored in RNALater (ThermoFisher) overnight at 4°C. The next day, the sample was homogenized in Trizol using an Omni Tissue homogenizer, and then RNA isolated. RNA was converted to cDNA using oligo dT priming and AffinityScript reverse transcriptase (Agilent). qPCR was performed using iQ SYBR green Supermix and a CFX96 thermal cycler (Bio-rad), followed by thermal melt curve analysis to confirm specific amplification. Primers used in this study were synthesized by Integrated DNA Technologies and are reported in Table 1. For RNA sequencing analysis, epidermal keratinocytes were purified by first separating dorsal and ventral halves of dissected ears and floating dermis down on 5 U/mL dispase (Sigma-Aldrich) with 0.05 mg/mL DNAse I for 50 min at 37°C. Epidermis was then peeled away, and the dermis discarded. The Epidermis was further minced and then digested for an additional 30 min with 2 mg/mL Collagenase IV (Worthington) with 0.05 mg/mL DNAse I. Epidermal single cell suspensions were then labeled with anti-CD49f to identify basal keratinocytes, anti-CD45 to exclude leukocytes, and 7-AAD to exclude dead cells. Keratinocytes were double-sorted for purity, with the second sort into cell lysis buffer for RNA extraction at 104 cell equivalents. Samples were generated in triplicates. RNAseq analyses were performed by the Immunological Genome Project, using the standard operating protocol (Immgen.org). Volcano plots and DEG lists were generated using MultiPlot Studio (part of the GenePattern from the Broad Institute). Gene Ontology (GO) terms were identified using the DAVID bioinformatics resource (https://david.ncifcrf.gov/), with significance determined by EASE score (a modified Fisher Exact).
 
-## Statistical analysis
+**Table 1.**
+ PCR Primers used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sequence</th>
+      <th>F/R</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CCTGGACTCTCCACCGCAA</td>
+      <td>F</td>
+      <td>Il17a</td>
+    </tr>
+    <tr>
+      <td>TTCCCTCCGCATTGACACAG</td>
+      <td>R</td>
+      <td>Il17a</td>
+    </tr>
+    <tr>
+      <td>TTTCCTGTCTGTATTGAGAAACCT</td>
+      <td>F</td>
+      <td>Il33</td>
+    </tr>
+    <tr>
+      <td>TATTTTGCAAGGCGGGACCA</td>
+      <td>R</td>
+      <td>Il33</td>
+    </tr>
+    <tr>
+      <td>CGCTTGAGTCGGCAAAGAAAT</td>
+      <td>F</td>
+      <td>Il1a</td>
+    </tr>
+    <tr>
+      <td>TGGCAGAACTGTAGTCTTCGT</td>
+      <td>R</td>
+      <td>Il1a</td>
+    </tr>
+    <tr>
+      <td>GCCACCTTTTGACAGTGATGAG</td>
+      <td>F</td>
+      <td>Il1b</td>
+    </tr>
+    <tr>
+      <td>GACAGCCCAGGTCAAAGGTT</td>
+      <td>R</td>
+      <td>Il1b</td>
+    </tr>
+    <tr>
+      <td>TCCTCTCTGCAAGAGACTTCC</td>
+      <td>F</td>
+      <td>Il6</td>
+    </tr>
+    <tr>
+      <td>TTGTGAAGTAGGGAAGGCCG</td>
+      <td>R</td>
+      <td>Il6</td>
+    </tr>
+    <tr>
+      <td>AGCTGTAGTTTTTGTCACCAAGC</td>
+      <td>F</td>
+      <td>Ccl2</td>
+    </tr>
+    <tr>
+      <td>GTGCTGAAGACCTTAGGGCA</td>
+      <td>R</td>
+      <td>Ccl2</td>
+    </tr>
+    <tr>
+      <td>TCACAGCAACGAAGAACACCA</td>
+      <td>F</td>
+      <td>Il4</td>
+    </tr>
+    <tr>
+      <td>CAGGCATCGAAAAGCCCGAA</td>
+      <td>R</td>
+      <td>Il4</td>
+    </tr>
+    <tr>
+      <td>CAAGCAATGAGACGATGAGGC</td>
+      <td>F</td>
+      <td>Il5</td>
+    </tr>
+    <tr>
+      <td>GCATTTCCACAGTACCCCCA</td>
+      <td>R</td>
+      <td>Il5</td>
+    </tr>
+    <tr>
+      <td>CACTACGGTCTCCAGCCTCC</td>
+      <td>F</td>
+      <td>Il13</td>
+    </tr>
+    <tr>
+      <td>CCAGGGATGGTCTCTCCTCA</td>
+      <td>R</td>
+      <td>Il13</td>
+    </tr>
+    <tr>
+      <td>CACCAGCGGGACATATGAATCT</td>
+      <td>F</td>
+      <td>Il23a</td>
+    </tr>
+    <tr>
+      <td>CACTGGATACGGGGCACATT</td>
+      <td>R</td>
+      <td>Il23a</td>
+    </tr>
+    <tr>
+      <td>TTGAGGTGTCCAACTTCCAGCA</td>
+      <td>F</td>
+      <td>Il22</td>
+    </tr>
+    <tr>
+      <td>AGCCGGACGTCTGTGTTGTTA</td>
+      <td>R</td>
+      <td>Il22</td>
+    </tr>
+    <tr>
+      <td>AGAGTTTGATCCTGGCTCAG</td>
+      <td>F</td>
+      <td>16S V1 Universal Primer 27F</td>
+    </tr>
+    <tr>
+      <td>ATTACCGCGGCTGCTGG</td>
+      <td>R</td>
+      <td>16S V3 Universal Primer 534R</td>
+    </tr>
+    <tr>
+      <td>AAGCCTGATGACTCGGCCACA</td>
+      <td>F</td>
+      <td>Vb4 TCR deep seq</td>
+    </tr>
+    <tr>
+      <td>CTTGGGTGGAGTCACATTTCTCAGATCCTC</td>
+      <td>R</td>
+      <td>Cbeta TCR deep seq</td>
+    </tr>
+    <tr>
+      <td>AACTGTACTTATTCAACCACA</td>
+      <td>F</td>
+      <td>Va4 TCR deep seq</td>
+    </tr>
+    <tr>
+      <td>CTGTGAACTGTTCCTATGAAACC</td>
+      <td>F</td>
+      <td>Va4 TCR deep seq</td>
+    </tr>
+    <tr>
+      <td>TAAACTGTACTTATTCAACCACA</td>
+      <td>F</td>
+      <td>Va4 TCR deep seq</td>
+    </tr>
+    <tr>
+      <td>CCTGATAATAAATTGCACGTATTCA</td>
+      <td>F</td>
+      <td>Va4 TCR deep seq</td>
+    </tr>
+    <tr>
+      <td>GGTACACAGCAGGTTCTGGGTTCTGGATG</td>
+      <td>R</td>
+      <td>Calpha TCR deep seq</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical analysis
 
 Graphing and statistical analysis was performed using GraphPad Prism software. Significance values, tests used, and cohort sizes are indicated in figure legends. Unless otherwise indicated, comparison of two groups was analyzed by unpaired two-tailed Student’s t test, and comparison of three or more groups was analyzed by ANOVA with Sidak’s correction for multiple hypothesis testing.

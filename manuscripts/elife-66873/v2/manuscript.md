@@ -13,16 +13,16 @@
 
 ### Affiliations
 
-1. https://ror.org/04v76ef78 Plant Breeding Institute, Christian-Albrechts-University of Kiel Kiel Germany
-2. https://ror.org/01q3tbs38 King Abdullah University of Science and Technology (KAUST), Biological and Environmental Sciences & Engineering Division (BESE) Thuwal Saudi Arabia
-3. https://ror.org/00b1c9541 Institute of Plant Breeding, Seed Science and Population Genetics, University of Hohenheim Stuttgart Germany
-4. https://ror.org/00b1c9541 Department of Physiology of Yield Stability, University of Hohenheim Stuttgart Germany
+1. Plant Breeding Institute, Christian-Albrechts-University of Kiel Kiel Germany ([ROR:04v76ef78](https://ror.org/04v76ef78))
+2. King Abdullah University of Science and Technology (KAUST), Biological and Environmental Sciences & Engineering Division (BESE) Thuwal Saudi Arabia ([ROR:01q3tbs38](https://ror.org/01q3tbs38))
+3. Institute of Plant Breeding, Seed Science and Population Genetics, University of Hohenheim Stuttgart Germany ([ROR:00b1c9541](https://ror.org/00b1c9541))
+4. Department of Physiology of Yield Stability, University of Hohenheim Stuttgart Germany ([ROR:00b1c9541](https://ror.org/00b1c9541))
 
 † Corresponding author
 
 ## Abstract
 
-Quinoa germplasm preserves useful and substantial genetic variation, yet it remains untapped due to a lack of implementation of modern breeding tools. We have integrated field and sequence data to characterize a large diversity panel of quinoa. Whole-genome sequencing of 310 accessions revealed 2.9 million polymorphic high confidence single nucleotide polymorphism (SNP) loci. Highland and Lowland quinoa were clustered into two main groups, with F divergence of 0.36 and linkage disequilibrium (LD) decay of 6.5 and 49.8 kb, respectively. A genome-wide association study using multi-year phenotyping trials uncovered 600 SNPs stably associated with 17 traits. Two candidate genes are associated with thousand seed weight, and a resistance gene analog is associated with downy mildew resistance. We also identified pleiotropically acting loci for four agronomic traits important for adaptation. This work demonstrates the use of re-sequencing data of an orphan crop, which is partially domesticated to rapidly identify marker-trait association and provides the underpinning elements for genomics-enabled quinoa breeding. ST
+Quinoa germplasm preserves useful and substantial genetic variation, yet it remains untapped due to a lack of implementation of modern breeding tools. We have integrated field and sequence data to characterize a large diversity panel of quinoa. Whole-genome sequencing of 310 accessions revealed 2.9 million polymorphic high confidence single nucleotide polymorphism (SNP) loci. Highland and Lowland quinoa were clustered into two main groups, with FST divergence of 0.36 and linkage disequilibrium (LD) decay of 6.5 and 49.8 kb, respectively. A genome-wide association study using multi-year phenotyping trials uncovered 600 SNPs stably associated with 17 traits. Two candidate genes are associated with thousand seed weight, and a resistance gene analog is associated with downy mildew resistance. We also identified pleiotropically acting loci for four agronomic traits important for adaptation. This work demonstrates the use of re-sequencing data of an orphan crop, which is partially domesticated to rapidly identify marker-trait association and provides the underpinning elements for genomics-enabled quinoa breeding.
 
 ## Introduction
 
@@ -40,23 +40,136 @@ Our study aimed to analyze the population structure of quinoa and patterns of va
 
 ## Results
 
-## Re-sequencing 310 quinoa accessions reveal high sequence variation
+### Re-sequencing 310 quinoa accessions reveal high sequence variation
 
 We assembled a diversity panel made of 310 quinoa accessions representing regions of major geographical distributions of quinoa (Figure 1—figure supplement 1). The diversity panel comprises accessions with different breeding histories (Supplementary file 1a). We included 14 accessions from a previous study, of which 7 are wild relatives (Jarvis et al., 2017). The mean mapped read depth ranged from 4.07 to 14.55, with an average of 7.78, indicating an adequate mapping quality required for accurate SNP calling despite the relatively modest sequencing depth. We mapped sequence reads to the reference genome V2 (CoGe id60716). Using mapping reads, we identified 45,330,710 unfiltered SNPs.
 
 After filtering the initial set of SNPs, we identified 4.5 million SNPs in total for the base SNP set. We further filtered the SNPs for MAF >5% (HCSNPs). We obtained 2.9 million high confidence SNPs for subsequent analysis (Supplementary file 1b). Across the whole genome, the average SNP density was 2.39 SNPs/kb. However, SNP densities were highly variable between genomic regions and ranged from 0 to 122 SNPs/kb (Figure 1—figure supplement 2). We did not observe significant differences in SNP density between the two subgenomes (a subgenome 2.43 SNPs/kb; B subgenome 2.35 SNPs/kb). Moreover, we did not see any correlation between sequencing depth and heterozygosity (Figure 1—figure supplement 2b), which indicates an adequate mapping quality required for accurate SNP calling. In an additional analysis, we divided the filtered SNPs into homozygous and heterozygous SNPs for each sample. Then, we calculated the mean read depth (DP) and genotype quality (GQ) of each sample separately for the homozygous and heterozygous fraction of the genome (Figure 1—figure supplement 3). Mean GQ of the heterozygous SNP calls was 61.34, whereas the mean GQ of homozygous SNP calls was 21.19, indicating that a higher stringency was used for the heterozygous SNP calls. We also compared the DP with the GQ for both filtered and unfiltered SNPs. The results indicated that higher GQ values were used for low DP regions in order to ensure correct genotype calls. Then, we split the SNPs by their functional effects as determined by SnpEff (Cingolani et al., 2012a). Among SNPs located in non-coding regions, 598,383 and 617,699 SNPs were located upstream (within 5 kb from the transcript start site) and downstream (within 5 kb from the stop site) of a gene, whereas 114,654 and 251,481 SNPs were located within exon and intron sequences, respectively (Table 1). We further searched for SNPs within coding regions. We found 70,604 missense SNPs and 41,914 synonymous SNPs within coding regions of 53,042 predicted gene models.
 
-## Linkage disequilibrium and population structure of the quinoa diversity panel
+**Table 1.**
+ Summary statistics of genome-wide single nucleotide polymorphisms identified in 303 quinoa accessions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Type</th>
+      <th>All genotypes(quinoa only)</th>
+      <th>Highland population</th>
+      <th>Lowland population</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">SNP</td>
+      <td>Total</td>
+      <td>2,872,935</td>
+      <td>2,590,907</td>
+      <td>1,938,225</td>
+    </tr>
+    <tr>
+      <td>Population-specific SNPs</td>
+      <td></td>
+      <td>1,512,301</td>
+      <td>859,619</td>
+    </tr>
+    <tr>
+      <td>Intergenic</td>
+      <td>2,452,347</td>
+      <td>2,227,952</td>
+      <td>1,649,310</td>
+    </tr>
+    <tr>
+      <td>Introns</td>
+      <td>251,481</td>
+      <td>101,546</td>
+      <td>172,692</td>
+    </tr>
+    <tr>
+      <td>Exons</td>
+      <td>114,654</td>
+      <td>214,945</td>
+      <td>78,248</td>
+    </tr>
+    <tr>
+      <td colspan="2">Nucleotide diversity</td>
+      <td></td>
+      <td>5.78 × 10–4</td>
+      <td>3.56 × 10–4</td>
+    </tr>
+    <tr>
+      <td colspan="2">Tajima’s D</td>
+      <td></td>
+      <td>0.884</td>
+      <td>–0.384</td>
+    </tr>
+    <tr>
+      <td>Population divergences</td>
+      <td>FST(weighted average)</td>
+      <td></td>
+      <td colspan="2">0.36</td>
+    </tr>
+  </tbody>
+</table>
+
+### Linkage disequilibrium and population structure of the quinoa diversity panel
 
 Across the whole genome, linkage disequilibrium (LD) decay between SNPs averaged 32.4 kb (at r2=0.2). We did not observe substantial LD differences between subgenome A (r2=0.2 at 31.9 kb) and subgenome B (r2=0.2 at 30.7 kb) (Figure 1—figure supplement 4). The magnitude of LD decay among chromosomes did not vary drastically except for chromosome Cq6B, which exhibited a substantially slower LD decay (Figure 1—figure supplement 4a b).
 
 Then, we unraveled the population structure of the diversity panel. We performed principal component (PCA(SNP)), population structure, and phylogenetic analyses. PCA(SNP) showed two main clusters consistent with previous studies (Christensen et al., 2007). The first and second principal components (PC1(SNP) and PC2(SNP)) explained 23.35% and 9.45% of the variation, respectively (Figure 1a); 202 (66.67%) accessions were assigned to subpopulation 1 (SP1) and 101 (33.33%) to subpopulation 2 (SP2). SP1 comprised mostly Highland accessions, whereas Lowland accessions were found in SP2. PCA demonstrated a higher genetic diversity of the Highland population (Figure 1a). We also calculated PCs for each chromosome separately. For 16 chromosomes, the same clustering as for the whole genome was calculated. Nevertheless, two chromosomes, Cq6B and Cq8B, showed three distinct clusters (Figure 1—figure supplement 5). This is due to the split of the Lowland population into two clusters. We reasoned that gene introgressions on these two chromosomes from another interfertile group might have caused these differences. This is also supported by a slower LD decay on chromosome Cq6B (Figure 1—figure supplement 4b). This discrepancy also might arise due to the Lowland reference genome used for mapping the reads in this study (CoGe id60716), which may have structural differences compared to the genomes of Highland accessions.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig1-v2.jpg)
+
+**Figure 1.:** (a) Principal component analysis (PCA) of 303 quinoa accessions. PC1 and PC2 represent the first two analysis components, accounting for 23.35% and 9.45% of the total variation, respectively. The colors of dots represent the origin of accessions. Two populations are highlighted by different colors: Highland (light blue) and Lowland (pink). (b) Subpopulation-wise linkage disequilibrium (LD) decay in Highland (blue) and Lowland population (red). (c) Population structure is based on 10 subsets of SNPs, each containing 50,000 single nucleotide polymorphisms (SNPs) from the whole-genome SNP data. Model-based clustering was done in ADMIXTURE with different numbers of ancestral kinships (K=2 and K=8). K=8 was identified as the optimum number of populations. Left: Each vertical bar represents an accession, and color proportions on the bar correspond to the genetic ancestry. Right: Unrooted phylogenetic tree of the diversity panel. Colors correspond to the subpopulation.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Single nucleotide polymorphism (SNP) density heatmap across the 18 quinoa chromosomes. Different colors depict SNP density. (b) Scatter plot between mean depth and heterozygosity of accessions. Dots represent 310 different accessions.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Histograms of mean read depth (DP) for unfiltered and filtered single nucleotide polymorphisms (SNPs), and the comparison of genotype quality (GQ) between high and low DP samples for (b) homozygous SNPs (filtered and unfiltered) and (c) heterozygous SNPs (filtered and unfiltered).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Colors depict different chromosomes. (c) Genome-wide average LD decay of the A subgenome (blue) and B subgenome (red). Pairwise distance at r2=0.20 is defined as the threshold for genome-wide LD decay (dashed line).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Red circles depict the two clusters of Lowland accessions.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (a) ADMIXTURE ancestry coefficients for K ranging from 3 to 7 and 9. Each vertical bar represents an accession, and the color proportions on the bar correspond to the genetic ancestry. (b) Cross-validation error in ADMIXTURE run.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** Nucleotide diversity (π) distribution of 10 kb windows in population Highland (a) and Lowland (b). (c) Nucleotide diversity ratios (π Lowland/ π Highland). (d) Pairwise genome-wide fixation index (FST) between Highland and Lowland. The broken horizontal line represents the top 1% threshold.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig1-figsupp8-v2.jpg)
+
+**Figure 1—figure supplement 8.:** (c) Density distribution of Tajima’s D between populations. Different colors represent the quartiles.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig1-figsupp9-v2.jpg)
+
+**Figure 1—figure supplement 9.:** (a) Relationship between genomic windows visualized using multidimensional scaling (MDS). (b) Two MDS coordinates of each window along the quinoa genome, candidate genomic regions are marked in different colors, which correspond with the colors on figure a. candidate regions are identified as the closest 1% window with the most extreme MDS coordinates. (c, d, e, f, and g) PCA using single nucleotide polymorphisms (SNPs) located within the candidate genomic regions identified by different analyses. (h and i) Venn diagrams represent the comparison of candidate genes identified by different analyses.
+
 We also performed a population structure analysis with the ADMIXTURE software. We used 10 independent sets of 50,000 randomly chosen SNPs. Then, we performed ADMIXTURE analysis for each subset separately with a predefined number of genetic clusters K from 2 to 10 and different random seeds with 1000 bootstraps. The Q-matrices obtained were aligned with the greedy algorithm in the CLUMPP software (Jakobsson and Rosenberg, 2007). We used cross-validation to estimate the most suitable number of populations. Cross-validation error decreased as the K value increased, and we observed that after K=5, cross-validation error reached a plateau (Figure 1—figure supplement 6b). We observed allelic admixtures in some accessions, likely owing to their breeding history. The wild accessions were also clearly separated at the smallest cross-validation error of K=8, except two Chenopodium hircinum accessions (Figure 1c). This could be because C. hircinum is the closest crop wild relative; it also may have outcrossed with quinoa. The Highland population was structured into five groups, while the Lowland accessions were split into two subpopulations. The broad agro-climatic diversity of the Andean Highland germplasm might have caused a higher number of subpopulations.
 
 For clustering accessions based on sequence polymorphism, we combined 10 subsets created for ADMIXTURE analysis and removed redundant SNPs among subsets. We analyzed the relationships between quinoa accessions using 434,077 SNPs. Constructing a maximum likelihood (ML) tree gave rise to five clades (Figure 2). We found that the placement of the wild quinoa species as distant outgroups was concordant with the previous reports confirming that quinoa was domesticated from C. hircinum (Jarvis et al., 2017). However, we found that the C. hircinum accession BYU 566 (from Chile) was placed at the base of both Lowland and Highland clades, which contrasts to Jarvis et al., 2017, where this accession was placed at the base of Lowland (coastal) quinoa. As expected, accessions from the USA and Chile are closely related because the USDA germplasm had been collected at these geographical regions.
 
-## Genomic patterns of variations between Highland and Lowland quinoa
+![Figure 2.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig2-v2.jpg)
+
+**Figure 2.:** Colors depict the geographical origin of accessions.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Histogram representing the distribution of pairwise IBS kinship estimated using EMMAX. The same kinship matrix was used to represent the relationship among individuals in the GWAS analysis. (b) The heatmap of the pairwise kinship relationship was estimated using the Van Raden method using GAPIT software (Tang et al., 2016).
+
+### Genomic patterns of variations between Highland and Lowland quinoa
 
 We were interested in patterns of variation in response to geographical diversification. We used PCA derived clusters and phylogenetic analysis to define two diverged quinoa populations (namely Highland and Lowland). These divergent groups are highly correlated with Highland and Lowland geographical origin. We used the base SNP set to analyze diversity statistics. To detect genomic regions affected by the population differentiation, we measured the level of nucleotide diversity using 10 kb non-overlapping windows (Varshney et al., 2017b; Figure 1—figure supplement 7). Then, we calculated the whole genome-wide LD decay across the two populations (Highland vs. Lowland); LD decayed more rapidly in Highland quinoa (6.5 kb vs. 49.8 kb, at r2=0.2) (Figure 1b). To measure nucleotide diversity, we scanned the quinoa genome with non-overlapping windows of 10 kb in length in both populations separately. The nucleotide diversity of the Highland population (5.78 × 10–4) was 1.62-fold higher compared to the Lowland population (3.56 × 10–4) (Table 1 and Figure 1—figure supplement 7). We observed left-skewed distribution and negative Tajima’s D value (–0.3883) in the Lowland populations indicating recent population growth (Table 1 and Figure 1—figure supplement 8). Genomic regions involved in adaptation to the Highlands should have much lower diversity in the Highland population than in the Lowland population, and genomic regions involved in adaptation to the Lowlands should have lower diversity in the Lowland population compared to the Highland population. Therefore, we calculated the nucleotide diversity ratios between Highland and Lowland to identify major genomic regions underlying the population differentiation (Figure 1—figure supplement 7). The FST value between populations was estimated to be 0.36, illustrating strong population differentiation. Concerning the regions of variants, exonic SNPs are substantially higher in the Highland population (Table 1 and Figure 1—figure supplement 7).
 
@@ -64,21 +177,65 @@ We conducted a local PCA to identify genomic regions with a strong population st
 
 Then, we located the genes within candidate regions obtained from all three analyses. We identified 936, 953, and 546 candidate genes located within critical regions from the nucleotide diversity ratio (π (Highland/Lowland)), FST, and local PCA corner 1 (Figure 1—figure supplement 9h). Of these, only four genes were shared among all analyses, and 30 genes were shared between FST and genomic regions in corner 1 of the local PCA plot. Genomic regions in corner 3 of the local PCA plot and with a high nucleotide diversity ratio shared 102 genes (Figure 1—figure supplement 9i).
 
-## Mapping agronomically important trait loci in the quinoa genome
+### Mapping agronomically important trait loci in the quinoa genome
 
 We evaluated 13 qualitative and 4 dichotomous traits on 350 accessions across 2 different years. At the time of the final harvest, 254 accessions did not yet reach maturity (senescence). However, all accessions produced seeds, therefore they could be investigated for seed-related traits. For all traits, substantial phenotypic variation among accessions was found. High heritabilities were calculated for all quantitative traits except for the number of branches (NoB) and stem lying (STL), which indicates that the phenotypic variation between the accessions is caused mainly by genetic variation (Supplementary file 1c). Trait correlations between years were also high (Figure 3—figure supplement 2), which is following the heritability estimates. We found the strongest positive correlation between days to maturity (DTM) and panicle length (PL), and PH, whereas the strongest negative correlation was found between DTM and thousand seed weight (TSW) (Figure 3—figure supplement 3). Then, a PCA was performed based on 12 quantitative traits (PCA(PHEN)) to explore the phenotypic relationship among quinoa accessions. The first two PCs explained 62.12% of the phenotypic variation between the accessions. The score plot of the PCs showed a similar clustering pattern as the SNP-based PCA (PCA(SNP)) (Figure 1 and Figure 3—figure supplement 4a). PCA(PHEN) variables factor map indicated that most Lowland accessions were high yielding with high TSW and dense panicles. Moreover, these accessions are early flowering and early maturing, and they are short (Figure 3—figure supplement 4b). Phenotype-based PCA(PHEN) also showed that the Lowland accessions are better adapted/selected for cultivation in long-day photoperiods than the Highland accessions. These results are in accordance with LD, nucleotide diversity, and Tajima’s D estimations, implying the Lowland accessions underwent a stronger selection during breeding.
 
 Then, we calculated the best linear unbiased estimates (BLUE) of the traits investigated. In total, 294 accessions shared the re-sequencing information and phenotypes out of 350 phenotypically evaluated accessions. For GWAS analysis, we used ~2.9 million high confidence SNPs. We considered pairwise kinship value distribution to determine that all accessions could be used for GWAS analysis without conducting subpopulation-wise analyses (Figure 3—source data 4). In total, we identified 1480 significant (suggestive threshold: p<9.41e-7) SNP-trait associations (marker-trait association [MTAs]) for 17 traits (Figure 3—source data 4). The number of MTAs ranged from 4 (STL) to 674 (DTM) (Supplementary file 1d). In agreement with previous reports, we defined an MTA as ‘consistent’ when detected in both years (Varshney et al., 2019). We identified 600 consistent MTAs across 11 traits. TSW and DTM showed the highest number of ‘consistent’ associations. Among these, 143 MTAs are located within a gene, and 22 SNPs resulted in a missense mutation (Supplementary file 1e). MTAs for the duration from bolting to flowering (days to bolting to days to flowering), number of branching, seed yield, STL, and growth type (GT) were not ‘consistent’ between years (Figure 3—source data 4). This is also reflected by the low estimates of heritability for these traits, indicating considerably higher genotype × environment interactions. Using the SNPs not located in the repetitive regions, we identified 619 MTA across 11 traits, of which 291 MTAs are common between both analyses (Figure 3—figure supplement 7). Unique associations of 476 and 328 were identified from whole-genome SNPs and repeat masked SNPs, respectively. However, the comparison of GWAS results of PCs between whole-genome SNP set and repeat masked SNP set showed that highly significant associations could be identified even if the repetitive regions were excluded from the analysis (Figure 3—figure supplement 7b and c).
 
-## Candidate genes for agronomically important traits
+### Candidate genes for agronomically important traits
 
 First, we tested the resolution of our mapping study. We searched for candidate genes 50 kb down- and upstream of significant SNPs for two qualitative traits in quinoa, flower color and seed saponin content. To define candidate genes, we considered homologous genes that have already been functionally characterized in other species. We identified highly significant MTAs for stem color on chromosome Cq1B (69.72–69.76 Mb). Two genes (CqCYP76AD1 and CqDODA1) in this region exhibit high sequence homology to betalain synthesis pathway genes BvCYP76AD1 (Hatlestad et al., 2012) and BvDODA1 (Bean et al., 2018) from sugar beet (Figure 4—figure supplement 1). A significant MTA for saponin content on chromosome Cq5B between 8.85 and 9.2 Mb included 29 genes, of which the two BHLH25 were in LD with the significantly associated SNPs. BHLH25 genes were reported to control saponin content in quinoa (Jarvis et al., 2017; Figure 4—figure supplement 1b). This demonstrates that the marker density is high enough to narrow down to causative genes underlying a trait.
 
 Then, we examined four quantitative traits. We obtained seven MTAs on chromosome Cq2A with the traits days to flowering, DTM, PH, and PL indicating pleiotropic gene action (Figure 3a and Supplementary file 1f). To further investigate genes that are pleiotropically active on different traits, we followed a multivariate approach (Solovieff et al., 2013). First, we performed a PCA of the four phenotypes (cross-phenotypes; genetically correlated traits). We found 89.94% of the variation could be explained by the first two PCs of the cross-phenotypes (PCA(CP)) (Figure 3—figure supplement 5), which suggests that PCA (CP) is suitable to reduce dimensions for a GWAS of cross-phenotypes. Since the PCA(CP) revealed a similar clustering as PCA(SNP), these analyses results provide preliminary indications that in quinoa, days to flowering, DTM, PH, and PL are highly associated with population structure and may reflect adaptation to diverse environments. Then, we performed a GWAS analysis using the first three PCs as traits (PC-GWAS) (Figure 3—figure supplement 5c). We identified strong associations on chromosomes Cq2A, Cq7B (PC1), and Cq8B (PC2) (Figure 3—figure supplement 6). Of 468 MTAs (PC1: 426 and PC2: 42) across the whole genome, 222 (PC1: 211 and PC2: 11) are located within 95 annotated genes. We found 14 SNPs that changed the amino acid sequence in 12 predicted protein sequences of associated genes (Supplementary file 1e). In the next step, we searched genes located 50 kb flanking to an MTA, considering a threshold that is below the genome-wide LD of the Lowland population. Altogether, 605 genes were identified (PC1: 520 and PC2: 85) (Supplementary file 1g).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig3-v2.jpg)
+
+**Figure 3.:** (a) Significant marker-trait associations (MTAs) for days to flowering (DTF), days to maturity (DTM), plant height (PH), and panicle density on chromosome Cq2A. Red color arrows indicate the single nucleotide polymorphism (SNP) loci pleiotropically acting on all four traits. (b) Boxplots showing the average performance for four traits over 2 years, depending on single nucleotide variation (C or G allele) within locus Cq2A_ 8093547. The P-values written above the boxplot are from Wilcoxon mean comparisons test (unpaired) between C and G allele. (c) Local Manhattan plot from region 8.04–8.14 Mb on chromosome Cq2A associated with PC1 of the DTF, DTM, PH, and panicle length (PL), and local linkage disequilibrium (LD) heatmap (bottom). The triangle below is the LD heatmap and the colors represent the pairwise correlation (r2) between individual SNPs. On top of the triangle, gene models are represented. Green color dots represent the strongest MTA (Cq2A_ 8093547).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a and b) Overview of the field and phenotypic variation among accession; (c): bolting (BBCH51) and (d) flowering (BBCH60) stage; glomerulate (e) and amarantiform (f) panicle shapes; red (g) and green (h) stem color; red (i) and green (j) flower/inflorescence; growth type 1 (k) and type 5 (l); (m) plant height and maturity variation between two accessions.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Pearson correlation value (R) with p-values are shown. DTB: days to bolting (inflorescence emergence), DTF: days to flowering, days to bolting to days to flowering: days between bolting and flowering, DTM; days to maturity, PH: plant height (cm), PL: panicle length (cm), PD: panicle density (cm), NoB: number of branches, STL: stem lying, Saponin: saponin content as foam height (mm), Seed yield: seed yield per plant (g), TSW: thousand seed weight (g),.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Best linear unbiased estimates across 2 years were used. Below the diagonal, scatter plots are shown with the fitted line in red. Above the diagonal, the Pearson correlation coefficients are shown with significance levels, ***=p < 0.001, **=p < 0.01.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (a) Individual factor map colored according to populations identified from single nucleotide polymorphism (SNP) analysis. (b) Variables factor map of the PCA.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (a) Individual factor map, (b) variables factor map of the PCA, (c) distribution of the first three principal components used for GWAS analysis. Type I: Highland population, Type II: Lowland population.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** The blue horizontal line in the Manhattan plots indicates the suggestive threshold -log10 (8.98E-7). The red horizontal line indicates the significance threshold (Bonferroni correction) -log10 (1.67e-8).
+
+![Figure 3—figure supplement 7.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig3-figsupp7-v2.jpg)
+
+**Figure 3—figure supplement 7.:** (a) GWAS with two different single nucleotide polymorphism (SNP) data sets, one encompassing all SNP from whole-genome sequencing and one SNP set after removing repetitive sequences. The number of marker-trait association (MTA) identified by each analysis are given in the Venn diagram. (b) Comparison of GWAS analysis (Manhattan plots) of principal component PC1 between whole-genome SNP set (WG) and repeat masked SNP set (RM). The blue horizontal line in the Manhattan plots indicates the suggestive threshold -log10 (8.98E-7). The red horizontal line indicates the significance threshold (Bonferroni correction) -log10 (1.67e-8). (c) Comparison of local Manhattan plots from region 8.04–8.14 Mb on chromosome Cq2A associated with days to flowering (DTF), days to maturity (DTM), plant height (PH), and panicle length (PL) between whole-genome SNP set (WG) and repeat masked SNP set (RM).
+
 We found the region 8.05–8.15 Mb on chromosome Cq2A to be of special interest because it displays stable pleiotropic MTAs for days to flowering, DTM, PH, and PL. We identified five genes within this region and three of these were without known functions. The most significant SNP is located within the CqGLX2-2 gene, which encodes an enzyme of the glyoxalase family (Figure 3). The allele carrying a cytosine at the position with the most significant SNP is associated with early flowering, maturing, and short panicles and plants (Figure 3b). These traits are essential for the adaptation to long-day conditions.
 
 TSW is an important yield component. We found a strong MTA between 63.2 and 64.87 Mb on chromosome Cq8B. Significantly associated SNPs were localized within two genes (Figure 4). One gene displays homology to PP2C, encoding a member of the phosphatase-2C (PP2C) family protein and the second gene encodes a member of the RING-type E3 ubiquitin ligase family. These genes were found to be involved in controlling seed size in soybean, maize, rice, soybean, and Arabidopsis (Li et al., 2019). We then checked haplotype variation and identified five and seven haplotypes for CqPP2C and CqRING genes, respectively. Accessions carrying PP2C_hap3 and RING_hap7 displayed larger seeds in both years (Figure 4 and Figure 4—figure supplement 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig4-v2.jpg)
+
+**Figure 4.:** (a) Manhattan plot from chromosome Cq8B. Green and blue dots depict the CqPP2C5 and the CqRING gene, respectively. (b) Top: Local Manhattan plot in the neighborhood of the CqPP2C gene. Bottom: Linkage disequilibrium (LD) heatmap. (c) Top: Local Manhattan plot in the neighborhood of the CqRING gene. Bottom: LD heatmap. Differences in thousand seed weight between five CqPP2C (d) and seven CqRING haplotypes (e). ANOVA was performed for each year separately to determine significance among haplotypes and grouping of pairwise multiple comparison was obtained using Tukey’s test. (blue and black colour letters are for different years).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Candidate genes are shown in the color legend. Linkage disequilibrium (LD) heatmaps are placed at the bottom. The colors of the heatmap represent the pairwise correlation between individual single nucleotide polymorphisms (SNPs). SNPs with significant p-values and SNPs on candidate genes were used to create the heatmap for the saponin content. Gene models and names are given on top of the heatmap. Haplotype blocks were identified using the Gabriel method in LDBlockShow software (Dong et al., 2021).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66873/elife-66873-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** The geographical origin of the accessions and haplotype networks are displayed below the gene structure. The frequency of haplotypes is correspondent to the circle size. The color of the pie chart depicts the population. Cross-lines represent the number of nucleotide polymorphisms between haplotypes.
 
 Downy mildew is one of the major diseases in quinoa, which causes massive yield damage. Notably, our GWAS identified strong MTA for resistance against this disease. The most significant SNPs are located in subgenome A (Figure 3—source data 4). Thus, the A-genome progenitor seems to be the donor of downy mildew resistance. In addition, we identified a candidate gene within a region 38.99–39.03 Mb on chromosome Cq2A, which showed the highest significant association (Figure 3—source data 4). This gene encodes a protein with an NBS-LRR (nucleotide-binding site leucine-rich repeat) domain often found in resistance gene analogs with a function against mildew infection (Zhang et al., 2019a).
 
@@ -104,19 +261,23 @@ This study also has a major breeding perspective. We aimed to elucidate the pote
 
 ## Materials and methods
 
-## Plant materials and growth conditions
+### Plant materials and growth conditions
 
 We selected 350 quinoa accessions for phenotyping, and of these, 296 were re-sequenced in this study. Re-sequencing data of 14 additional accessions that had already been published (Jarvis et al., 2017) were also included in the study, together with the wild relatives (C. belandieri and C. hircinum) (Jarvis et al., 2017). These accessions represent different geographical regions of quinoa cultivation (Supplementary file 1a). Plants were grown in the field in Kiel, Northern Germany, in 2018 and 2019. (The local weather data is provided in Supplementary file 1h.) Seeds were sown in the second week of April in 35× multi-tray pots. Then, plants were transplanted to the field in the first week of May as single-row plots in a randomized complete block design with three blocks. The distances between rows and between plants were set to 60 and 20 cm, respectively. Each row plot contained seven plants per accession.
 
 We recorded days to bolting (days to bolting) as BBCH51 and days to flowering as BBCH60 twice a week during the growth period. DTM was determined when plants reached complete senescence (BBCH94)(Stanschewski et al., 2021). If plants did not reach this stage, DTM was set as 250 days. In both years, plants were harvested in the second week of October. PH, PL, and the NoB were phenotyped at harvest. STL (Figure 3—figure supplement 1) was scored on a scale from 1 to 5, where score 1 indicates no STL. Similarly, panicle density was recorded on a scale from 1 to 7, where density 1 represents lax panicles, and panicle density 7 represents highly dense panicles. Flower color and stem color were determined by visual observation. Pigmented and non-pigmented plants were scored as 1 and 0, respectively. GT was classified into two categories and analyzed as a dichotomous trait as well. We observed severe mildew infection in 2019. Therefore, we scored mildew infection on a scale from 1 to 3, where 1 equals no infection, and 3 equals severe infection.
 
-## Statistical analysis
+### Statistical analysis
 
 We calculated the BLUE of the traits across years by fitting a linear mixed model using the lme4 R package (Bates et al., 2015). We used the following model:
 
-## Genome sequencing and identification of genomic variations
+### Genome sequencing and identification of genomic variations
 
-For DNA extraction, two plants per genotype were grown in a greenhouse at the University of Hohenheim, and two leaves from a single 2-month-old plant were collected and frozen immediately. DNA was subsequently extracted using the AX Gravity DNA extraction kit (A&A Biotechnology, Gdynia, Poland) following the manufacturer’s instructions. The purity and quality of DNA were controlled by agarose gel electrophoresis and the concentration was determined with a Qubit instrument using SYBR green staining. Whole-genome sequencing was performed for 312 accessions at Novogene (China) using short-reads Illumina NovaSeq S4 Flowcell technology and yielded an average of 10 Gb of paired-end (PE) 2 × 150 bp reads with quality Q>30 Phred score per sample, which is equivalent to ~7× coverage of the haploid quinoa genome (~1.45 Gb). We then used an automated pipeline compiled based on the Genome Analysis Toolkit (Abrouk et al., 2020). Raw sequence reads were filtered with trimmomatic-v0.38 (Bolger et al., 2014) using the following criteria: LEADING:20; TRAILING:20; SLIDINGWINDOW:5:20; MINLEN:50. The filtered paired-end reads were then individually mapped for each sample against an improved version of the QQ74 quinoa reference genome (CoGe id60716) using BWA-MEM (v-0.7.17) (Li and Durbin, 2010) followed by sorting and indexing using samtools (v1.8) (Li et al., 2009). Duplicated reads were marked, and read groups were assigned using the Picard tools (http://broadinstitute.github.io/picard/). Variants were identified with GATK (v4.0.1.1) (McKenna et al., 2010; Van der Auwera et al., 2013) using the ‘--emitRefConfidence’ function of the HaplotypeCaller algorithm and ‘—heterozygosity’ value set at 0.005 to call SNPs and InDels for each accession. Individual g.vcf files for each sample were then compressed and indexed with tabix (v-0.2.6) (Li, 2011) and combined into chromosome g.vcf using GenomicsDBImport function of GATK. Joint genotyping was then performed for each chromosome using the function GenotypeGVCFs of GATK. To obtain high confidence variants, we excluded SNPs with the VariantFiltration function of GATK with the criteria: QD < 2.0; FS > 60.0; MQ < 40.0; MQRankSum < −12.5; ReadPosRankSum < −8.0 and SOR > 3.0. Then, SNP loci which contained more than 70% missing data, were filtered by VCFtools (Danecek et al., 2011) (v0.1.5), which resulted in our initial set of ~45 M SNPs for all the 332 accessions, including 20 previously re-sequenced accessions (Jarvis et al., 2017). All re-sequencing data are submitted to SRA under project id BioProject PRJNA673789.Yikj=μ+Accessioni+Blocki+Yeari+(Accession×Block)ij+(Accession×Year)ik+Errorijk
+For DNA extraction, two plants per genotype were grown in a greenhouse at the University of Hohenheim, and two leaves from a single 2-month-old plant were collected and frozen immediately. DNA was subsequently extracted using the AX Gravity DNA extraction kit (A&A Biotechnology, Gdynia, Poland) following the manufacturer’s instructions. The purity and quality of DNA were controlled by agarose gel electrophoresis and the concentration was determined with a Qubit instrument using SYBR green staining. Whole-genome sequencing was performed for 312 accessions at Novogene (China) using short-reads Illumina NovaSeq S4 Flowcell technology and yielded an average of 10 Gb of paired-end (PE) 2 × 150 bp reads with quality Q>30 Phred score per sample, which is equivalent to ~7× coverage of the haploid quinoa genome (~1.45 Gb). We then used an automated pipeline compiled based on the Genome Analysis Toolkit (Abrouk et al., 2020). Raw sequence reads were filtered with trimmomatic-v0.38 (Bolger et al., 2014) using the following criteria: LEADING:20; TRAILING:20; SLIDINGWINDOW:5:20; MINLEN:50. The filtered paired-end reads were then individually mapped for each sample against an improved version of the QQ74 quinoa reference genome (CoGe id60716) using BWA-MEM (v-0.7.17) (Li and Durbin, 2010) followed by sorting and indexing using samtools (v1.8) (Li et al., 2009). Duplicated reads were marked, and read groups were assigned using the Picard tools (http://broadinstitute.github.io/picard/). Variants were identified with GATK (v4.0.1.1) (McKenna et al., 2010; Van der Auwera et al., 2013) using the ‘--emitRefConfidence’ function of the HaplotypeCaller algorithm and ‘—heterozygosity’ value set at 0.005 to call SNPs and InDels for each accession. Individual g.vcf files for each sample were then compressed and indexed with tabix (v-0.2.6) (Li, 2011) and combined into chromosome g.vcf using GenomicsDBImport function of GATK. Joint genotyping was then performed for each chromosome using the function GenotypeGVCFs of GATK. To obtain high confidence variants, we excluded SNPs with the VariantFiltration function of GATK with the criteria: QD < 2.0; FS > 60.0; MQ < 40.0; MQRankSum < −12.5; ReadPosRankSum < −8.0 and SOR > 3.0. Then, SNP loci which contained more than 70% missing data, were filtered by VCFtools (Danecek et al., 2011) (v0.1.5), which resulted in our initial set of ~45 M SNPs for all the 332 accessions, including 20 previously re-sequenced accessions (Jarvis et al., 2017). All re-sequencing data are submitted to SRA under project id BioProject PRJNA673789.
+
+$$
+Y_{ikj}=\mu+Accession_{i}+Block_{i}+Year_{i}+(Accession\timesBlock)_{ij}+(Accession\timesYear)_{ik}+Error_{ijk}
+$$
 
 where µ is the mean, Accessioni is the genotype effect of the ith accession, Blockj is the effect of the jth Block, Yeark is the effect of the kth year, (Accession × Block)ij is the Accession-Block interaction effect, Accession × Yearik is the accession-year interaction effect, Errorijk is the error of the jth block in the kth year. We treated all items as random effects for heritability estimation, and for BLUE, accessions were treated as fixed effects. We analyzed the PCs of phenotypes using the R package FactoMineR (Lê et al., 2008).
 
@@ -126,18 +287,18 @@ Then, we used the initial SNP set and defined two subsets using the following cr
 
 We annotated the high confidence SNP using SnpEff 4.3T (Cingolani et al., 2012a) and a custom database (Cingolani et al., 2012b) based on the QQ74 reference genome and annotation (CoGe id60716). Afterward, we extracted the SNP annotations using SnpSift (Cingolani et al., 2012a). Based on the annotations, SNPs were mainly categorized into five groups: (1) upstream of the transcript start site (5 kb), (2) downstream of the transcript stop site (5 kb), (3) coding sequence (CDS), (4) intergenic, and (5) intronic. We used SnpEff to categorize SNPs in coding regions based on their effects: synonymous, missense, splice acceptor, splice donor, splice region, start lost, start gained, stop lost, and spot retained.
 
-## Phylogenetic analysis and population structure analysis
+### Phylogenetic analysis and population structure analysis
 
 For population structure analysis, we employed SNP subsets, as demonstrated in previous studies, to reduce the computational time (Wang et al., 2018). We created 10 randomized SNP sets, each containing 50,000 SNPs. First, the base SNP set was split into 5000 subsets of an equal number of SNPs to create subsets. Then, 10 SNPs from each subset were randomly selected, providing a total of 50,000 SNPs in a randomized set (randomized 50k set). We then repeated this procedure for nine more times and finally obtained 10 randomized 50k sets. Population structure analysis was conducted using ADMIXTURE (version 1.3) (Alexander et al., 2009). We ran ADMIXTURE for each subset separately with a predefined number of genetic clusters K from 2 to 10 and varying random seeds with 1000 bootstraps. Also, we performed the cross-validation procedure for each run. Obtained Q matrices were aligned using the greedy algorithm in the CLUMPP software (Jakobsson and Rosenberg, 2007). Population structure plots were created using custom R scripts. We then combined SNP from the 10 subsets to create a single SNP set of 434,077 unique SNPs for the phylogenetic analysis. We used the same method mentioned above to create the phylogenetic tree. Here, we selected the model GTR + F + R6 based on the BIC estimates. For the PCA, we used the high confidence SNP set and analysis was done in R package SNPrelate (Zheng et al., 2012). We estimated the top 10 PCs. The first (PC1) and second (PC2) were plotted using custom R scripts.
 
-## Genomic patterns of variation
+### Genomic patterns of variation
 
 Using the base SNP set, we calculated nucleotide diversity (π) for subpopulations and π ratios for Highland and Lowland population regions with the top 1% ratios of π Highland/ π Lowland candidate regions for population divergence. We also estimated Tajima’s D values for both populations to check the influence of selection on populations. FST values were calculated between Highland and Lowland populations using the 10 kb non-overlapping window approach. Nucleotide diversity, Tajima’s D, and FST calculations were carried out in VCFtools (v0.1.5) (Danecek et al., 2011). We also performed a local PCA using the template of the lostruct program (Li and Ralph, 2019) to identify genomic regions with strong population structures. The genome was divided into 50 kb non-overlapping windows, and a PCA was conducted for each window using lostruct. We obtained candidate regions based on the local PCA (top 1% threshold). Genes located in these regions were considered as candidate genes underlying Highland and Lowland population divergence.
 
-## LD analysis
+### LD analysis
 
 First, we calculated LD in each population separately (Highland and Lowland). Then, LD was calculated in the whole population, excluding wild accessions. For LD calculations, we further filtered the high confidence SNP set by removing SNPs with >80% missing data (Varshney et al., 2019). Using a set of 2,513,717 SNPs, we calculated the correlation coefficient (r2) between SNPs up to 300 kb apart by setting -MaxDist 300 and default parameters in the PopLDdecay software (Zhang et al., 2019b). Pairwise distance at r2=0.20 is defined as the threshold for genome-wide LD decay. LD decay was plotted using custom R scripts based on the ggplot2 package.
 
-## Genome-wide association study
+### Genome-wide association study
 
 We used the BLUE of traits and high confidence SNPs for the GWAS analysis. Morphological traits were treated as dichotomous traits and analyzed using generalized mixed linear models with the lme4 R software package (Bates et al., 2015). We used population structure and genetic relationships among accessions to minimize false-positive associations. Population structure represented by the PC was estimated with the SNPrelate software (Zheng et al., 2012). Genetic relationships between accessions were represented by a kinship matrix calculated with the efficient mixed-model association expedited (EMMAX) software (Kang et al., 2010) using high confidence SNPs (Figure 2—figure supplement 1). Then, we performed an association analysis using the mixed linear model for the whole population, including K and P matrices in EMMAX. We estimated the effective number of SNPs (n=1,062,716) using the Genetic type I Error Calculator (GEC) (Li et al., 2012) and calculated quantile-quantile plots (Figure 3—source data 5). We set the significant p-value threshold (Bonferroni correction, 0.05 /n, -log10(4.7e-08)=7.32) and suggestive significant threshold (1 /n, -log10(9.41e-7)=6.02) to identify significant loci underlying traits. Next, we checked how repetitive sequences influence the GWAS analysis. Here, we used repeat masker to exclude all the SNPs that are located in repetitive regions of the genome. After removing SNPs on repetitive sequences, we obtained 1,906,734 SNPs and GWAS was carried out following the same method explained previously. We plotted SNP p-values on Manhattan plots using the qqman R package (Turner, 2014).

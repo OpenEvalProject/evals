@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00f54p054 Department of Microbiology and Immunology, Stanford University School of Medicine Stanford United States
+1. Department of Microbiology and Immunology, Stanford University School of Medicine Stanford United States ([ROR:00f54p054](https://ror.org/00f54p054))
 
 † Corresponding author
 

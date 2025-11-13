@@ -10,9 +10,7 @@ DOI: [10.7554/eLife.07389.036](https://doi.org/10.7554/eLife.07389.036)
 
 1) There is an apparent discrepancy between the severe defects in pupal histoblast proliferation and spreading, and the rather mild adult defects. This needs clarification: are the adults escapers with a more mild initial phenotype? What are the frequencies of the phenotypes and pre-eclosion lethality? Generally, the phenotypic analysis needs quantification and explanation.
 
-We have checked pupal survival rates and see no evidence of pre-eclosion lethality (Author response image 1).10.7554/eLife.07389.037Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.07389.037
-
-DOI: http://dx.doi.org/10.7554/eLife.07389.037
+We have checked pupal survival rates and see no evidence of pre-eclosion lethality (Author response image 1).10.7554/eLife.07389.037Author response image 1.
 
 Pupal survival was assayed for flies of the indicated genotypes. The data present the total number of surviving adults (live) and the total number of dead pupae (dead). There was no significant difference between the mutant and control genotypes used to make the movies:
 
@@ -56,9 +54,7 @@ To address this, we asked if depletion of EcR would affect string mRNA levels in
 
 And the effect of EcR loss on wg expression was not explored: if wg is a significant player, this is a gap that needs to be addressed.
 
-We examined the relationship between EcR and string at the onset of pupariation (0hr white prepupae), when the Ecdysone pulse induces string to trigger histoblast proliferation. Wg expression begins in the histoblast nests from 15hr after pupariation, so it is not evident that we should expect the link between EcR and wg to be analogous to that with string. Nonetheless, we did test wg transcript in the 0hr prepupal RNA samples used for the string experiment: there was no effect (Author response image 2). We did not include the wg data in the revised Figure 6, but can do so if the editors request it.10.7554/eLife.07389.038Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.07389.038
-
-DOI: http://dx.doi.org/10.7554/eLife.07389.038
+We examined the relationship between EcR and string at the onset of pupariation (0hr white prepupae), when the Ecdysone pulse induces string to trigger histoblast proliferation. Wg expression begins in the histoblast nests from 15hr after pupariation, so it is not evident that we should expect the link between EcR and wg to be analogous to that with string. Nonetheless, we did test wg transcript in the 0hr prepupal RNA samples used for the string experiment: there was no effect (Author response image 2). We did not include the wg data in the revised Figure 6, but can do so if the editors request it.10.7554/eLife.07389.038Author response image 2.
 
 New data added on the relationship between EcR and miR965:
 

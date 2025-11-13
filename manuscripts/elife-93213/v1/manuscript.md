@@ -12,8 +12,8 @@
 
 ### Affiliations
 
-1. https://ror.org/034t30j35 CAS Key Laboratory of Behavioral Science, Institute of Psychology, Chinese Academy of Sciences Beijing China
-2. https://ror.org/05qbk4x57 Department of Psychology, University of Chinese Academy of Sciences Beijing China
+1. CAS Key Laboratory of Behavioral Science, Institute of Psychology, Chinese Academy of Sciences Beijing China ([ROR:034t30j35](https://ror.org/034t30j35))
+2. Department of Psychology, University of Chinese Academy of Sciences Beijing China ([ROR:05qbk4x57](https://ror.org/05qbk4x57))
 
 † Corresponding author
 
@@ -29,7 +29,7 @@ It is worth noting that eye-based attention not only exerts real-time effects on
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/93213/elife-93213-fig1-v1.jpg)
 
-**Figure 1.:** A) binocular rivalry task, (B) 'dichoptic-backward-movie’ paradigm, and (C) blob target stimulus (see the gray region around the mouth in this example).This figure presents identifiable images of human faces solely for the purpose of demonstration, which were captured from the authors (F. Song, J. Wang, and J. Zhao) of this article. The movie images used in the experiment are not displayed in this figure due to potential copyright issues.
+**Figure 1.:** This figure presents identifiable images of human faces solely for the purpose of demonstration, which were captured from the authors (F. Song, J. Wang, and J. Zhao) of this article. The movie images used in the experiment are not displayed in this figure due to potential copyright issues.
 
 However, this account is based on the correlation result rather than causal evidence. Besides, the frontal activation observed by Song et al., 2023 is primarily located in the frontal pole, which is not considered a key area directly responsible for attentional control (Iidaka, 2017; Jääskeläinen et al., 2016; Leminen et al., 2020; Xie et al., 2018). As SSVEP is limited to detecting brain activities that oscillate at the flickering frequency (and its harmonics) of the visual stimulus, brain activities that do not precisely align with the flickering frequency may be missed (Norcia et al., 2015). Consequently, the activities of typical brain regions associated with the attentional network, such as the parietal and dorsolateral prefrontal cortex (Vossel et al., 2014), may not be captured by the SSVEP measures.
 
@@ -37,21 +37,21 @@ Therefore, the present study combines the use of fMRI and TMS to further investi
 
 ## Results
 
-## Experiment 1: The function role of fronto-parietal areas in controlling eye-based attention
+### Experiment 1: The function role of fronto-parietal areas in controlling eye-based attention
 
 We first tried to identify any brain regions associated with eye-based attention using fMRI in Experiment 1. During the experimental runs of fMRI scanning, participants viewed movie images either dichoptically (Figure 2A) or binocularly (Figure 2B) through the paper red-blue stereoscopic glasses. In the dichoptic condition, regular movie images were presented to one eye while the other eye received the backward movie images of the same episode. In the binocular condition, the same regular movie images were presented to both eyes. Participants were instructed to attentively watch the regular movie and comprehend the plot. Besides, we compared the response difference between dichoptic and binocular conditions in the experimental runs with that in the control runs, where participants performed a central rapid serial visual presentation (RSVP) task while watching the same movie stimuli as those of the experimental runs (Figure 2C), to eliminate potential interference arising from different visual inputs between the dichoptic and binocular conditions.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/93213/elife-93213-fig2-v1.jpg)
 
-**Figure 2.:** A) dichoptic condition or (B) the binocular condition in the experimental runs.(C) The schematic of rapid serial visual presentation (RSVP) task in the control runs. For demonstration purposes, the letters and fixation points are enlarged. (D) Schematic illustration of the generation process for red-blue movie images employed in the dichoptic condition.
+**Figure 2.:** (C) The schematic of rapid serial visual presentation (RSVP) task in the control runs. For demonstration purposes, the letters and fixation points are enlarged. (D) Schematic illustration of the generation process for red-blue movie images employed in the dichoptic condition.
 
-## Behavior result
+### Behavior result
 
 After each experimental run, participants were required to answer a question about the movie plot. The results showed a high response accuracy to the questions (M=91.67%, SD = 14.91%), indicating that the participants had paid close attention to the regular movie and clearly understood the plot.
 
 In the control runs, participants also exhibited a reasonable performance in the RSVP task (d’=3.33, SD=0.83). A 2 (experiment condition: dichoptic, binocular)×3 (run: run1, run2, run3) repeated measurements analysis of variance (ANOVA) was conducted on the d-prime score, which indicated no significant main effect or interaction (ps >0.09). The generally favorable RSVP performance across both experimental conditions suggested that participants faithfully focused their attention on the central letter stream without being much affected by the movie stimuli in the control runs. Otherwise, the RSVP performance would be found better in the binocular condition than in the dichoptic condition, because a disobedient participant who liked to complete the RSVP task and watch a movie simultaneously had to pay more attention to the regular movie images (thus less attention to the letter stream) in the dichoptic condition than in the binocular condition given the annoying bistable nature of dichoptic stimulus presentation.
 
-## fMRI result
+### fMRI result
 
 It was only in the dichoptic condition of experimental runs that participants had to selectively pay more attention to one eye (i.e. eye-based attention). Therefore, we speculate that if certain brain regions exhibit greater activities in the dichoptic condition as compared to the binocular condition in the experimental runs but not in the control runs, the activation of these brain regions could be attributable to eye-based attention. To seek these brain regions, we used the AFNI program ‘3dttest++’ to access the difference of ‘dichoptic-binocular’ contrast between the experimental and control runs. The AFNI program ‘ClustSim’ was then applied for multiple comparison correction, yielding a minimum significant cluster size of 21 voxels (voxel wise p=0.001; cluster threshold α=0.05). We found four clusters showing stronger responses to the dichoptic movies than to the binocular movies, especially in the experimental runs (Figure 3). They are located in the right FEF, bilateral IPS, and the right superior parietal lobule (SPL). In the control runs, the responses of these areas to the dichoptic and binocular movies showed no discernible difference. As previous research has demonstrated that these brain areas are part of the dorsal attentional network (Vossel et al., 2014), we therefore speculate that the identified clusters would be responsible for eye-based attention.
 
@@ -59,7 +59,7 @@ It was only in the dichoptic condition of experimental runs that participants ha
 
 **Figure 3.:** They were located in the right frontal eye field (FEF), bilateral intraparietal sulcus (IPS), and the right superior parietal lobule (SPL). The green circles indicate the corresponding cluster. The MNI coordinates represent the locations of peak voxels of each cluster. The color bar denotes the difference of ‘dichoptic-binocular’ contrast (β values) between the experimental and control runs.
 
-## Experiment 2: Suppressing FEF with cTBS attenuated the ocular dominance shift induced by eye-based attention
+### Experiment 2: Suppressing FEF with cTBS attenuated the ocular dominance shift induced by eye-based attention
 
 The results of Experiment 1 suggest that areas within the fronto-parietal network are responsible for eye-based attention. To further ascertain the causal role of eye-based attention in reshaping the ocular dominance, we then measured the effect of ‘dichoptic-backward-movie’ adaptation (Song et al., 2023) on ocular dominance with the function of any identified fronto-parietal area inhibited by cTBS. If suppressing any of the fronto-parietal regions results in a reduction or disappearance of ocular dominance shift after adaptation, we can infer that eye-based attention plays a causal role in the so-called attention-induced ocular dominance plasticity (Song et al., 2023).
 
@@ -67,25 +67,23 @@ Participants completed a binocular rivalry task for the measurement of their ocu
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/93213/elife-93213-fig4-v1.jpg)
 
-**Figure 4.:** A) the process in Experiment 2 and (B) the stimulation sites of continuous theta burst stimulation (cTBS).
-
-## Binocular rivalry test
+### Binocular rivalry test
 
 To quantify perceptual eye dominance, we calculated the ocular dominance index (ODI) based on binocular rivalry dynamics. An increase in the value of ODI signifies a shift of ocular dominance towards the unattended eye. A 2 (test phase: pre-test, post-test)×3 (stimulation site: Vertex, FEF, IPS) repeated measures ANOVA on the ODI (Figure 5A) showed a significant main effect of test phase (F (1,15)=5.12, p=0.039, η2=0.26) but not the main effect of stimulation site (F (2,30)=0.24, p=0.79, η2=0.02), suggesting that the ODI in the post-test (M=0.49, SE=0.02) was greater than that in the pre-test (M=0.46, SE=0.01, 95% CI=[0.002 0.053]).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/93213/elife-93213-fig5-v1.jpg)
 
-**Figure 5.:** A) the ocular dominance index (ODI), (B) the ocular dominance shift effects (ODSE) in Experiment 2 (N = 16), (C) the ODI, and (D) the ODSE in Experiment 3 (N = 16).The bars show the grand average data for each condition. The individual data are plotted with gray lines or dots. The dashed gray line represents the absolute balance point for the two eyes (ODI=0.5). Error bars indicate standard errors of means. A repeated measures ANOVA was used to investigate the change of ocular dominance. Post-hoc tests were conducted using paired t-tests (2-tailed significance level at α = 0.05), and the resulting p-values were corrected for multiple comparisons using the false discovery rate (FDR) method. *p<0.05; **p<0.01; n.s. p>0.05.
+**Figure 5.:** The bars show the grand average data for each condition. The individual data are plotted with gray lines or dots. The dashed gray line represents the absolute balance point for the two eyes (ODI=0.5). Error bars indicate standard errors of means. A repeated measures ANOVA was used to investigate the change of ocular dominance. Post-hoc tests were conducted using paired t-tests (2-tailed significance level at α = 0.05), and the resulting p-values were corrected for multiple comparisons using the false discovery rate (FDR) method. *p<0.05; **p<0.01; n.s. p>0.05.
 
 More importantly, the interaction between the test phase and the stimulation site was significant (F (2,30)=3.67, p=0.038, η2=0.20). Post-hoc test revealed that after adaptation a significant bias of ocular dominance in favor of the unattended eye could be observed if cTBS was delivered to vertex (ODIpre=0.451 ± 0.011; ODIpost=0.494 ± 0.015; t (15)=3.76, p=0.002, d=0.94, 95% CI=[0.019 0.067], pFDR=0.006) and IPS (ODIpre=0.461 ± 0.008; ODIpost=0.486 ± 0.014; t (15)=2.39, p=0.030, d=0.60, 95% CI=[0.003 0.049], pFDR=0.045), but not FEF (ODIpre=0.463 ± 0.008, ODIpost=0.477 ± 0.019; t (15)=0.74, p=0.47, d=0.19, 95% CI=[–0.025 0.051]), indicating a sharp reduction of aftereffect for stimulation at the FEF only.
 
 We further compared the magnitude of ocular dominance shift across different stimulation sites. For this goal, we computed the ocular dominance shift effect (ODSE) by subtracting the ODI in the pre-test from that in the post-test, then compared the ODSE between the stimulation sites using paired sample t-tests. As shown in Figure 5B, the ODSE after stimulating the vertex (M=0.043, SE=0.011) was greater than that after stimulating the FEF (M=0.013, SE=0.018; t (15)=2.76, p=0.015, d=0.69, 95% CI=[0.007 0.053], pFDR=0.044). No significant difference was found between other pairs (vertex vs. IPS, M=0.026, SE=0.011; t (15)=1.70, p=0.11, d=0.43, 95% CI=[–0.004 0.039], pFDR=0.17; FEF vs. IPS, t (15)=–1.05, p=0.31, d=0.26, 95% CI=[–0.038 0.013]).
 
-## Blob detection test
+### Blob detection test
 
 For each experimental condition, the target detection rate was calculated by dividing the summed number of detected blob targets by the total number of blob targets. A 2 (eye: attended eye, unattended eye)×3 (stimulation site: Vertex, FEF, IPS) repeated measures ANOVA on the detection performance showed a significant main effect of eye (F (1,15)=112.65, p<0.001, η2=0.88) but no significant main effect of stimulation site (F (2,30)=1.79, p=0.18, η2=0.11) or the interaction (F (2,30)=0.26, p=0.78, η2=0.02), suggesting that the overall detection performance for the attended eye (M=0.89, SE=0.04) was better than that for the unattended eye (M=0.23, SE=0.06, 95% CI=[0.53 0.79]). These results confirm that the interocular difference of detection rate unaffected by the cTBS.
 
-## Experiment 3: cTBS affected ocular dominance plasticity rather than the task performance reflecting ocular dominance
+### Experiment 3: cTBS affected ocular dominance plasticity rather than the task performance reflecting ocular dominance
 
 The results of Experiment 2 support the notion that eye-based attention was the cause of attention-induced ocular dominance plasticity. However, an alternative account is that the significant two-way interaction between test phase and stimulation site did not stem from any persistent malfunction of FEF in modulating ocular dominance, but rather it was due to some abnormality of binocular rivalry measures in the post-test that occurred after stimulation at the FEF only (and not at the other two brain sites). For instance, stimulation at the FEF might simply reduce the ODI measured in the binocular rivalry post-test.
 
@@ -93,11 +91,11 @@ Therefore, we conducted Experiment 3 to examine how suppression of the three tar
 
 A 2 (test phase: pre-test, post-test)×3 (stimulation site: Vertex, FEF, IPS) repeated measures ANOVA on the ODI showed neither a significant main effect nor the interaction (Figure 5C, ps >0.43). Moreover, in order to further examine these null effects, we conducted the Bayesian repeated measures ANOVA using JASP with default priors and computed inclusion Bayes factors (BFincl) which suggest the evidence for the inclusion of a particular effect calculated across matched models. Specifically, the Bayesian ANOVA provided moderate evidence (BFincl=0.28) to support the null hypothesis of no main effect of the stimulation site and weak evidence (BFincl=0.39) in support of the null hypothesis of no main effect of test phase. Additionally, the Bayesian ANOVA yielded moderate evidence (BFincl=0.23) supporting the null hypothesis of no interaction effect between the test phase and the stimulation site. These results suggested that the suppression of the fronto-parietal cortex had no impact on performance in binocular rivalry tasks.
 
-## Experiment 4: Sound elimination did not impair the blob detection performance following the suppression of FEF
+### Experiment 4: Sound elimination did not impair the blob detection performance following the suppression of FEF
 
 The suppression of FEF via cTBS in Experiment 2 did not impair the performance of blob detection for the attended eye. This result seems confusing, as the interocular difference of blob detection rate is presumed to be a coarse estimation of the real-time effect of eye-based attention. One possible explanation is that with the help of synchronized audio in Experiment 2, residual attentional control following the cTBS might still be competent to sustain attention to the regular movie, allowing a sound performance for this relatively easy task (detection targets appeared only once every 5 min in each eye). To examine this explanation, we conducted Experiment 4, wherein the task procedure was similar to that in Experiment 2 except that sound was no longer presented during the dichoptic-backward-movie adaptation and cTBS was only applied to FEF and vertex. If the synchronized audio (with the regular movie) really contributes to the performance of blob detection for the attended eye after the FEF was suppressed, eliminating the sound may lead to close performance for the attended and unattended eyes.
 
-## Binocular rivalry test
+### Binocular rivalry test
 
 A 2 (test phase: pre-test, post-test)×2 (stimulation site: Vertex, FEF) repeated measures ANOVA on the ODI (Figure 6) showed a significant main effect of test phase (F (1,13)=22.94, p<0.001, η2=0.64) but not the main effect of stimulation site (F (1,13)=2.67, p=0.13, η2=0.17), suggesting that the ODI in the post-test (M=0.48, SE=0.01) was greater than that in the pre-test (M=0.46, SE=0.01, 95% CI=[0.01 0.03]). More importantly, the interaction between the test phase and the stimulation site was significant (F (1,13)=12.76, p=0.003, η2=0.50). Post-hoc test revealed that after adaptation a significant bias of ocular dominance in favor of the unattended eye could be observed if cTBS was delivered to vertex (ODIpre=0.454 ± 0.01; ODIpost=0.489 ± 0.007; t (13)=5.41, p<0.001, d=1.45, 95% CI=[0.021 0.049], pFDR <0.001), but not FEF (ODIpre=0.459 ± 0.008, ODIpost=0.465 ± 0.01; t (13)=1.24, p=0.24, d=0.33, 95% CI=[–0.005 0.018]).
 
@@ -105,7 +103,7 @@ A 2 (test phase: pre-test, post-test)×2 (stimulation site: Vertex, FEF) repeate
 
 **Figure 6.:** The bars show the grand average data for each condition. The individual data are plotted with gray lines. The dashed gray line represents the absolute balance point for the two eyes (ODI=0.5). Error bars indicate standard errors of means. A repeated measures ANOVA was used to investigate the change of ocular dominance. Post-hoc tests were conducted using paired t-tests (2-tailed significance level at α = 0.05), and the resulting p-values were corrected for multiple comparisons using the FDR method. **p<0.01; ***p<0.001; n.s. p>0.05.
 
-## Blob detection test
+### Blob detection test
 
 A 2 (eye: attended eye, unattended eye)×2 (stimulation site: Vertex, FEF) repeated measures ANOVA on the target detection rate showed a significant main effect of an eye (F (1,13)=101.01, p<0.001, η2=0.89) but no significant main effect of stimulation site (F (1,13)=1.60, p=0.23, η2=0.11) or the interaction (F (1,13)=0.10, p=0.76, η2=0.01), suggesting that the overall detection performance for the attended eye (M=0.79, SE=0.04) was better than that for the unattended eye (M=0.23, SE=0.05, 95% CI=[0.44 0.68]). These results indicate that the interocular difference in detection rate remains unaffected by the cTBS even if no sound was presented.
 
@@ -133,21 +131,21 @@ In summary, the present study for the first time discovers that the fronto-parie
 
 ## Materials and methods
 
-## Experiment 1
+### Experiment 1
 
-## Participants
+#### Participants
 
 A total of 20 participants were recruited to take part in the screening process (see Stimuli and Procedure), 17 successfully passed the screening test and completed an fMRI experiment. Due to excessive head motion during fMRI scanning, the data of one participant was excluded from further analysis. Eventually, data from 16 participants (12 females, aged from 20 to 28 years) were used. The sample size was predetermined based on the previous study (Song et al., 2023). All participants were naive to the experimental hypotheses. They possessed normal or corrected-to-normal visual acuity, and provided informed consent in accordance with the Declaration of Helsinki. All the experiments in this study were approved (H21058, 11/01/2021) by the Institutional Review Board of the Institute of Psychology, Chinese Academy of Sciences.
 
-## Apparatus
+#### Apparatus
 
 During the screening process, stimuli were presented on a gamma-corrected 27-inch ASUS VG279QM LCD monitor (Asus, Shanghai, China, 1920 × 1080 pixels’ resolution, 60 Hz refresh rate) with the mean luminance of 30.18 cd/m2. Participants viewed the stimuli through a paper red-blue stereoscopic glasses at a distance of 100 cm. A chinrest was used to stabilize the head position. The experimental stimuli were programmed using MATLAB (The MathWorks, Natick, USA) and Psychtoolbox (Brainard, 1997; Pelli, 1997). A binocular rivalry task was adopted to screen participants for extreme ocular dominance.
 
 During the fMRI scanning, the stimuli were projected onto a flat panel screen (49 × 36.75 cm, 1024 × 768 pixels’ resolution, 60 Hz refresh rate). The screen was gamma-corrected and placed in the front of the MR scanner using an LCD projector. Participants viewed the screen at the distance of 93 cm via the paper red-blue stereoscopic glasses. The experiment was conducted in a dimly lit room.
 
-## Stimuli and procedure
+### Stimuli and procedure
 
-## Screen phase
+#### Screen phase
 
 The stimuli were two orthogonal sinusoidal gratings (±45° from vertical, 2° in diameter, 1.5 cpd) overlapped at the center of screen. We carefully adjusted the contrast of two gratings, so that when participants wore the red-blue glasses, they could only see the red grating through the red glass and the blue grating through the blue glass. The contrasts of red and blue gratings were 48% and 80%, respectively. In addition, a high-contrast checkerboard ‘frame’ (size: 5°×5°; thick: 0.25°) and a central white fixation point (diameter: 0.04°) were presented to facilitate binocular fusion (Figure 7).
 
@@ -155,7 +153,7 @@ The stimuli were two orthogonal sinusoidal gratings (±45° from vertical, 2° i
 
 The binocular rivalry test consisted of sixteen 1 min trials. Each trial began with a 5 s blank interval, followed by the presentation of the rival gratings for 55 s. Participants were instructed to hold down one of the three keys (Right, Left, or Down Arrow) to report the grating they perceived (clockwise, counterclockwise, or mixed). The orientation of grating presented to each eye was constant within a trial, but was counter-balanced across trials.
 
-## fMRI scanning phase
+#### fMRI scanning phase
 
 During fMRI scanning, participants viewed movie images either dichoptically or binocularly with the red-blue glasses. In the dichoptic condition, the movie stimuli were two overlapped red and blue movie episodes (Figure 2A). One was played normally and the other was the same movie but played in a backward sequence (Song et al., 2023). The regular movie images were presented to the dominant eye and the backward ones to the non-dominant eye (for the definition of eye dominance, see Experimental Design below). In the binocular condition, the stimuli were regular movie images colored in purple to ensure visible inputs from both eyes (Figure 2B).
 
@@ -165,57 +163,57 @@ A block design was adopted to study the neural mechanisms related to eye-based a
 
 The fMRI experiment included experimental runs and control runs. During an experimental run, participants were instructed to attentively watch the regular movie and comprehend the plot. To facilitate participants’ understanding of the plot, the sound track for the movie was played synchronized with the regular movie images. After the scanning of each run, a question on the movie plot would be presented on the screen. Participants needed to answer the question via button press, allowing us to examine if they had well followed the plot during the scanning. In a control run, participants performed a rapid serial visual presentation (RSVP) task while watching the movie stimuli (Figure 2C). A series of capital letters were presented to both eyes on the center of the screen. Each letter subtended 0.23° × 0.27°, and was presented for 153 ms. Participants’ task was to press the button whenever they found an ‘X’ in the letter stream. Within each block, the letter ‘X’ appeared for a total of three times. Participants received a feedback about their task performance after the completion of each run. To ensure that participants focused their attention on the RSVP task, the soundtracks were not played during the control runs.
 
-## Experimental design
+#### Experimental design
 
-In the screening test, participants performed three sessions of binocular rivalry tests to measure perceptual ocular dominance. In the binocular rivalry tests, at any given time only the grating in one eye reached awareness and remained visible for a while before the grating in the other eye competed for awareness. The dominant eye was defined as the one that showed longer summed phase durations. Because perceptual ocular dominance fluctuated greatly in the first few trials of a day (Suzuki and Grabowecky, 2007), five warm-up trials were completed before the formal task session, the data of which were not analyzed. Perceptual ocular dominance in each test was evaluated by computing an ODI with the formula TL/TL+TR , where TL and TR represented the summed phase durations for perceiving the stimulus in the left eye and right eye, respectively. Extreme ocular dominance can potentially impede accurate measures of attentional effects. For instance, if the dominant eye is excessively strong, participants may effortlessly perceive the regular movie images for an extended duration, which makes voluntary eye-based attention dispensable. Therefore, participants with ODI values greater than 0.67 or less than 0.33 (3 participants in total) were not allowed to participate in the fMRI scanning.
+In the screening test, participants performed three sessions of binocular rivalry tests to measure perceptual ocular dominance. In the binocular rivalry tests, at any given time only the grating in one eye reached awareness and remained visible for a while before the grating in the other eye competed for awareness. The dominant eye was defined as the one that showed longer summed phase durations. Because perceptual ocular dominance fluctuated greatly in the first few trials of a day (Suzuki and Grabowecky, 2007), five warm-up trials were completed before the formal task session, the data of which were not analyzed. Perceptual ocular dominance in each test was evaluated by computing an ODI with the formula $T_{L}/T_{L}+T_{R}$ , where TL and TR represented the summed phase durations for perceiving the stimulus in the left eye and right eye, respectively. Extreme ocular dominance can potentially impede accurate measures of attentional effects. For instance, if the dominant eye is excessively strong, participants may effortlessly perceive the regular movie images for an extended duration, which makes voluntary eye-based attention dispensable. Therefore, participants with ODI values greater than 0.67 or less than 0.33 (3 participants in total) were not allowed to participate in the fMRI scanning.
 
 Each participant completed 3 experimental runs and three control runs, with the order counter-balanced across participants. Each run consisted of the movie blocks of dichoptic and binocular conditions.
 
-## fMRI data acquisition and preprocessing
+#### fMRI data acquisition and preprocessing
 
 fMRI data were collected by a Siemens 3T Magnetom Trio scanner with a 20-channel phased array head coil. T1 weighted anatomical images were acquired at the beginning of scanning (repetition time (TR)=2600 ms, echo time (TE)=3.02 ms, flip angle (FA)=8°, field of view (FOV)=256 mm, slices = 176, voxel size=1.0 mm × 1.0 mm × 1.0 mm). Functional data were acquired with T2* weighted Echo-planar imaging (EPI) sequence (TR=2000 ms, TE=30ms, FA=90°, FOV=200 mm, slices=32, voxel size=3.1 mm × 3.1 mm × 3.5 mm).
 
 The first three volumes were discarded for magnetization equilibrium. The fMRI data were preprocessed using Analysis of Functional NeuroImages (AFNI) software (Cox, 1996). The preprocessing steps encompassed slice timing correction, motion correction, aligning the functional image with anatomy, spatial normalization (MNI152 space), spatial smoothing with 4 mm Gaussian kernel (full width at half maximum, FWHM), and scaling each voxel time series to have a mean of 100. Data from one participant was excluded from further analysis due to the head motion of more than 10% of volumes exceeding 0.3 mm (Silvers et al., 2017; Somerville et al., 2013).
 
-## fMRI data analysis
+#### fMRI data analysis
 
 We performed a single-subject general linear model (GLM) using the AFNI program ‘3dDeconvolve.’ To create regressors for each experimental conditions (dichoptic and binocular), the boxcar function representing the duration of each block (30 s) was convolved with the canonical hemodynamic response function (HRF). Volumes were censored if the motion derivatives exceeded 0.3 mm. High-pass filtering and three motion parameters were modeled as non-interest regressors to account for drift and residual motion effects. In addition, single-subject contrasts between experiment conditions (dichoptic >binocular) were calculated.
 
 Subsequently, we used the AFNI program ‘3dttest++’ to access the difference of the ‘dichoptic-binocular’ contrast between the experimental and control runs. To constrict the analysis on positive activations to movie stimuli, a mask was created specifically for the t-test analysis. This mask was generated by taking the union of all positively activated voxels across all participants for each experiment conditions. ‘ClustSim’ was then applied for multiple comparison correction, yielding a minimum cluster size of 21 voxels (voxelwise p=0.001; cluster threshold α=0.05).
 
-## Experiment 2
+### Experiment 2
 
-## Participants
+#### Participants
 
 Twenty-one participants were initially recruited to participate in the experiment. Eighteen of them successfully passed the screening and completed the formal experiment. The specific screening criteria can be found in the Experimental Design and Data Analysis section. Due to the failure of binocular fusion and the lack of concentration during the experiment, the data of two participants were excluded from the analysis. Accordingly, the data from 16 participants (12 females, aged from 18 to 28 years) were analyzed, among which five participants have participated in Experiment 1.
 
-## Apparatus
+#### Apparatus
 
 Visual stimuli of the behavioral task were displayed on a gamma-corrected 27-inch ASUS VG279QM LCD monitor with the mean luminance of 29.64 cd/m2. The spatial resolution of the monitor was 1920 × 1080 pixels, and the refresh rate was 60 Hz. Participants viewed visual stimuli through a mirror stereoscope with their eyes 100 cm away from the monitors. To stabilize their head position and minimize movement, participants were instructed to rest their heads on a chinrest. The behavioral tasks were performed in a dimly lit room.
 
-## Stimuli and procedure
+### Stimuli and procedure
 
-## Binocular rivalry test
+#### Binocular rivalry test
 
 The binocular rivalry stimuli were two achromatic sine-wave grating disks that were oriented orthogonally (±45° from vertical, diameter: 1°, spatial frequency: 3 cpd, 80% Michelson contrast) and presented foveally to each eye, respectively. A central red fixation point (0.07° in diameter) and a high-contrast checkerboard ‘frame’ (size: 2.5° × 2.5°; thickness: 0.25°) were also presented to both eyes to facilitate stable binocular fusion (Figure 1A). The procedure of binocular rivalry test was consistent with that of Experiment 1.
 
-## Dichoptic-backward-movie Adaptation
+#### Dichoptic-backward-movie Adaptation
 
 We employed the ‘dichoptic-backward-movie’ paradigm for the adaptation phase as utilized in the previous research (Song et al., 2023). During the 50 min adaptation, participants were presented with two movie images dichoptically (Figure 1B), with one eye viewing the regular movie images while the other eye viewing the corresponding backward movie images. Note that the backward movie was formally identical to the regular one, except for the absence of a coherent plot. Participants were instructed to exert their utmost effort in comprehending the logic of the regular movie, while disregarding the superimposed backward movie. Therefore, top-down selective attention was supposed to be predominantly directed towards the regular movie. The eye that received the regular movie images was referred to as the ‘attended eye,’ while the other eye as the ‘unattended eye.’ The frame rate of movies was 30 fps.
 
-## Blob detection task
+#### Blob detection task
 
 The blob detection task has been detailedly described in a prior research (Song et al., 2023). During the adaptation phase, participants were required to watch movies while simultaneously detecting a reduction in color saturation within a blob region that was presented exclusively to one eye (Figure 1C). The locations of the blobs were predetermined by the experimenter, so that they always appeared on faces in the movie. Participants were required to promptly press the SPACE key upon detecting any portion of a character’s face turning gray.
 
 To ensure that the primary focus remained on movie watching, the presentation of the blob was infrequent. To determine the timing of the presentation of the blobs, the adaptation period was divided into 20 segments, each lasting for 150 s. A blob would fade in within 0.2 s at a random moment in the middle 50 s of a segment on the movie of one eye. And after 5 s, it faded out within 0.2 s. There would be 10 blobs presented to each eye.
 
-## TMS
+#### TMS
 
 We utilized the Magstim Rapid2 stimulator equipped with a standard 70 mm figure-of-eight coil to deliver cTBS. The cTBS protocol consisted of 267 bursts, with each burst comprising three pulses at 30 Hz and repeating at 6 Hz. In total, there were 801 pulses delivered and the duration of a single cTBS train was 44 s (Cazzoli et al., 2009; Chaves et al., 2012; Dordevic et al., 2022; Nyffeler et al., 2008). To extend the duration of inhibitory effects induced by the cTBS, two cTBS trains with an interval of 15 min were applied over the same stimulation site. This stimulation protocol has been demonstrated to safely extend the duration of cTBS effects to over 2 hr (Goldsworthy et al., 2012; Nyffeler et al., 2006), thereby ensuring the sustained inhibitory effect throughout the adaptation process. The stimulation intensity was set at 80% of the individual’s resting motor threshold (RMT), which was defined as the minimum machine output required to elicit a visible twitch of the left index finger for 50% of pulses.
 
 Given that the dorsal attentional network primarily consists of the FEF and the IPS (Corbetta and Shulman, 2002; Mayrhofer et al., 2019), with a functional right-hemisphere dominance (Duecker et al., 2013; Mayrhofer et al., 2019; Sack, 2010), we selected the right FEF and right IPS from the four clusters identified in Experiment 1 as the target regions for cTBS (Gallotto et al., 2022). The cTBS stimulation sites were localized based on the peak of the group effect observed in Experiment 1 (MNI coordinates: rFEF: 34.5, –1.5, 55.5; rIPS: 31.5, –73.5, 46.5. see Figure 4B). In addition, we applied cTBS on the vertex (MNI coordinates: 0, 0, 75) as a control condition (Wang et al., 2020). The coil position was guided by the Brainsight 2 neuro-navigation software based on individual T1-weighted images.
 
-## Experimental design
+#### Experimental design
 
 Before the formal experiment, all participants underwent a 3–7 days of training period (three tests per day with a 10 min rest in between) to ensure consistent performance on the binocular rivalry task (Bao et al., 2018). The task procedure of each day was similar to that of the screen test in Experiment 1. One participant withdrew from the study due to difficulties in achieving binocular fusion.
 
@@ -223,34 +221,38 @@ After the practice of the binocular rivalry task, participants were also examine
 
 In the formal experiment, participants performed two binocular rivalry tests initially. The first served as a warm-up test that consisted of five trials and was not analyzed (Bai et al., 2017; Bao et al., 2018). The second comprised 16 trials that measured the perceptual ocular dominance prior to adaptation (i.e. pre-test). Following the pre-test, two cTBS trains with an interval of 15 min were applied over one stimulation site. Afterward, participants completed a 50 min dichoptic-backward-movie adaption. During the adaptation phase, the main task was to comprehend the plot of the movie. Meanwhile, participants were required to detect the infrequent blob targets. The dichoptic movie was played with sound and the audio track always synchronized with the regular movie images to facilitate the allocation of eye-based attention. As shown in the previous work (Song et al., 2023), presenting the regular movie images to the dominant eye can maximize the effect of eye dominance shift. Therefore, here the dominant eye was always selected as the attended eye. After the end of adaptation, a 16-trial binocular rivalry test was immediately conducted as the post-test (Figure 4A). The formal experiment consisted of three sessions, with cTBS delivered to only one of the three stimulation sites in each session. The order of stimulation sites was counter-balanced across participants. The sessions were conducted on different days to minimize any potential carryover effect.
 
-## Data analysis
+### Data analysis
 
-To quantify perceptual eye dominance, we calculated the ODI based on binocular rivalry dynamics. The ODI was derived using the following formula that yielded a value ranging from 0 (indicating complete dominance of the attended eye) to 1 (indicating complete dominance of the unattended eye).ODI=TUAETUAE+TAE
+To quantify perceptual eye dominance, we calculated the ODI based on binocular rivalry dynamics. The ODI was derived using the following formula that yielded a value ranging from 0 (indicating complete dominance of the attended eye) to 1 (indicating complete dominance of the unattended eye).
+
+$$
+ODI=\frac{T_{UAE}}{T_{UAE}+T_{AE}}
+$$
 
 In the above formula, TAE and TUAE denote the cumulative phase durations of perceiving the stimulus in the attended eye and stimulus in the unattended eye, respectively. Participants with ODI values larger than 0.67 or smaller than 0.33 (2 participants in total) were not allowed to participate in the formal experiment.
 
 Statistical analyses were performed using MATLAB. A 3 (stimulation site: Vertex, FEF, IPS)×2 (test phase: pre-test and post-test) repeated measures ANOVA was used to investigate the effect of cTBS delivery on ocular dominance shift. Moreover, for the blob detection test, the target detection rate of each experimental condition was calculated by dividing the summed number of detected blob targets by the total number of blob targets. Then, a 2 (eye: attended eye, unattended eye)×3 (stimulation site: Vertex, FEF, IPS) repeated measures ANOVA on the detection performance was performed. Post-hoc tests were conducted using paired t-tests (two-tailed significance level at α=0.05), and the resulting p-values were corrected for multiple comparisons using the FDR method (Benjamini and Hochberg, 1995).
 
-## Experiment 3
+### Experiment 3
 
-## Participants
+#### Participants
 
 Twenty participants were recruited to participate in the experiment, of which two were excluded for extreme interocular imbalance and another two voluntarily withdrew during the screening phase. Accordingly, 16 participants (14 females, aged from 19 to 26 years) completed all the experiments, one of which had participated in Experiment 1.
 
-## Stimuli and procedure
+#### Stimuli and procedure
 
 The task procedure was similar to that in Experiment 2 except that participants watched identical regular movie images with both eyes and were no longer required to perform the blob detection task during adaptation.
 
-## Data analysis
+#### Data analysis
 
 In addition to the data analysis in Experiment 2, we complemented the standard inferential approach with the Bayes factor (van den Bergh et al., 2023; van Doorn et al., 2021; Wagenmakers et al., 2018), which allows quantifying the relative evidence that the data provide for the alternative (H1) or null hypothesis (H0). We conducted the Bayesian repeated measures ANOVA using JASP with default priors and computed inclusion Bayes factors (BFincl) which suggest the evidence for the inclusion of a particular effect calculated across matched models. A BF greater than 1 provides support for the alternative hypothesis. Specifically, a BF between 1 and 3 indicates weak evidence, a BF between 3 and 10 indicates moderate evidence, and a BF greater than 10 indicates strong evidence (van Doorn et al., 2021). In contrast, a BF below 1 provides evidence in favor of the null hypothesis.
 
-## Experiment 4
+### Experiment 4
 
-## Participants
+#### Participants
 
 Fifteen participants were recruited to participate in the experiment. One was excluded for extreme interocular imbalance. Eventually, 14 participants (11 females, aged from 18 to 28 years) completed all the experiments.
 
-## Stimuli and procedure
+#### Stimuli and procedure
 
 The task procedure was similar to that in Experiment 2 except that the sound was no longer presented during the dichoptic-backward-movie adaptation and cTBS was only applied to FEF and vertex.

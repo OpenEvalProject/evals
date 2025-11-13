@@ -26,13 +26,13 @@
 
 ### Affiliations
 
-1. https://ror.org/03534h624 Center for Reproduction and Genetics, Department of Obstetrics and Gynecology, First Affiliated Hospital of USTC, Hefei National Research Center for Physical Sciences at the Microscale, the CAS Key Laboratory of Innate Immunity and Chronic Disease, School of Basic Medical Sciences, Biomedical Sciences and Health Laboratory of Anhui Province, Institute of Health and Medicine, Hefei Comprehensive National Science Center, Division of Life Sciences and Medicine, University of Science and Technology of China Hefei China
+1. Center for Reproduction and Genetics, Department of Obstetrics and Gynecology, First Affiliated Hospital of USTC, Hefei National Research Center for Physical Sciences at the Microscale, the CAS Key Laboratory of Innate Immunity and Chronic Disease, School of Basic Medical Sciences, Biomedical Sciences and Health Laboratory of Anhui Province, Institute of Health and Medicine, Hefei Comprehensive National Science Center, Division of Life Sciences and Medicine, University of Science and Technology of China Hefei China ([ROR:03534h624](https://ror.org/03534h624))
 
 † Corresponding author
 
 ## Abstract
 
-Asthenoteratozoospermia, a prevalent cause of male infertility, lacks a well-defined etiology. DNAH12 is a special dynein featured by the absence of a microtubule-binding domain, however, its functions in spermatogenesis remain largely unknown. Through comprehensive genetic analyses involving whole-exome sequencing and subsequent Sanger sequencing on infertile patients and fertile controls from six distinct families, we unveiled six biallelic mutations in DNAH12 that co-segregate recessively with male infertility in the studied families. Transmission electron microscopy (TEM) revealed pronounced axonemal abnormalities, including inner dynein arms (IDAs) impairment and central pair (CP) loss in sperm flagella of the patients. Mouse models ( Dnah12 -/- and Dnah12 ) were generated and recapitulated the reproductive defects in the patients. Noteworthy, DNAH12 deficiency did not show effects on cilium organization and function. Mechanistically, DNAH12 was confirmed to interact with two other IDA components DNALI1 and DNAH1, while disruption of DNAH12 leads to failed recruitment of DNALI1 and DNAH1 to IDAs and compromised sperm development. Furthermore, DNAH12 also interacts with radial spoke head proteins RSPH1, RSPH9, and DNAJB13 to regulate CP stability. Moreover, the infertility of mut/mut Dnah12 -/- mice could be overcome by intracytoplasmic sperm injection (ICSI) treatment. Collectively, DNAH12 plays a crucial role in the proper organization of axoneme in sperm flagella, but not cilia, by recruiting DNAH1 and DNALI1 in both humans and mice. These findings expand our comprehension of dynein component assembly in flagella and cilia and provide a valuable marker for genetic counseling and diagnosis of asthenoteratozoospermia in clinical practice.
+Asthenoteratozoospermia, a prevalent cause of male infertility, lacks a well-defined etiology. DNAH12 is a special dynein featured by the absence of a microtubule-binding domain, however, its functions in spermatogenesis remain largely unknown. Through comprehensive genetic analyses involving whole-exome sequencing and subsequent Sanger sequencing on infertile patients and fertile controls from six distinct families, we unveiled six biallelic mutations in DNAH12 that co-segregate recessively with male infertility in the studied families. Transmission electron microscopy (TEM) revealed pronounced axonemal abnormalities, including inner dynein arms (IDAs) impairment and central pair (CP) loss in sperm flagella of the patients. Mouse models (Dnah12-/- and Dnah12mut/mut) were generated and recapitulated the reproductive defects in the patients. Noteworthy, DNAH12 deficiency did not show effects on cilium organization and function. Mechanistically, DNAH12 was confirmed to interact with two other IDA components DNALI1 and DNAH1, while disruption of DNAH12 leads to failed recruitment of DNALI1 and DNAH1 to IDAs and compromised sperm development. Furthermore, DNAH12 also interacts with radial spoke head proteins RSPH1, RSPH9, and DNAJB13 to regulate CP stability. Moreover, the infertility of Dnah12-/- mice could be overcome by intracytoplasmic sperm injection (ICSI) treatment. Collectively, DNAH12 plays a crucial role in the proper organization of axoneme in sperm flagella, but not cilia, by recruiting DNAH1 and DNALI1 in both humans and mice. These findings expand our comprehension of dynein component assembly in flagella and cilia and provide a valuable marker for genetic counseling and diagnosis of asthenoteratozoospermia in clinical practice.
 
 ## Introduction
 
@@ -46,71 +46,581 @@ In this study, we enrolled 796 infertile patients from unrelated Pakistani and C
 
 ## Results
 
-## Identification of biallelic DNAH12 variants in men with asthenoteratozoospermia
+### Identification of biallelic DNAH12 variants in men with asthenoteratozoospermia
 
 To identify the genetic factors contributing to male infertility, we recruited patients with primary infertility and their family members from Pakistan and China. WES was performed on these individuals, followed by comprehensive analyses of the WES data (Figure 1—figure supplement 1A–1C). Seven mutations in DNAH12 were identified as potential pathogenic factors for male infertility in patients P1-3 of family 1, P4-5 of family 2, P8 of family 3, and P9, P10, and P11, all of whom suffered from asthenoteratozoospermia (Figure 1A). Initially, a homozygous frameshift mutation c.944_945 del (p. Phe315*) in family 1, and two homozygous missense mutations, c. A164G (p. Gln55Arg) in family 2 and c. A2560G (p. Ile854Val) in family 3, were identified in DNAH12 as potential causes of infertility. Subsequently, four other mutations in DNAH12 were discovered in three sporadic Chinese patients with asthenoteratozoospermia: a homozygous stop-gain mutation c.2680 C>T (p. Gln2077*) in subject P9, a homozygous missense mutation c.2813T>C (p. Val938Ala) in P10, and compound heterozygous mutations c.2680C>T (p. Arg894Cys) and c.5964–3A>G in P11 (Figure 1A and B).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig1-v1.jpg)
+
+**Figure 1.:** (A) Pedigrees of family 1 with three infertile males, P1 (IV:1), P2 (IV:2), and P3 (IV:4), family 2 with three infertile males, P4 (IV:3), P5 (IV:4) and P6 (IV:5), family 3 with two infertile males, P7 (IV:1) and P8 (IV:3), and three sporadic infertile cases P9, P10 and P11. Red arrows point to the individuals for whom whole-exome sequencing was performed. Candidate mutations were validated by Sanger sequencing and the chromatograms were shown on the right. Red arrowheads point to mutant sites. Double horizontal lines represent consanguineous marriages. WT, wild-type allele; MT, the mutant allele. (B) The positions of the DNAH12 variants at the transcript (ENST00000351747.2) and protein levels (Q6ZR08-1). MT-like, Microtubule-binding-like domain. (C) Conservation analyses of affected amino acids across different species, the arrowheads indicate the mutation sites.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) In-silico analyses and filtering of variants in patients from Pakistani and Chinese families. (B) and (C) DNAH12 variants are located in the regions of homozygosity (RoHs) of affected Pakistani or Chinese patients. RoHs are marked in red. The purple frames mark the location of the mutations.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) RT‒PCR analysis of Dnah12 expression in different tissues from adult mice. β-actin served as the reference gene. (B) Real-time quantitative PCR for Dnah12 transcripts in various 8-wk-old mouse tissues (most organs were obtained from male mice, except ovary, oviduct, and uterus which were gained from female mice), β-actin gene served as reference, and the experiments were repeated three times. (C) Immunoblotting assay of the DNAH12 expression among 10 different tissues from adult mice. (D) Immunoblotting analysis of the testicular DNAH12 expression at different days postpartum (dpp). GAPDH served as the loading control.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig1-figsupp3-v1.jpg)
+
 All seven variants were rare in public human genome databases, including the 1000 Genome Project and gnomAD (v3). Additionally, these variants were predicted to be deleterious by in-silico software tools such as SIFT, Polyphen2, fathmm-MKL, and CADD2 (Table 1). Sanger Sequencing further validated these variants and revealed the recessive pathogenic pattern of these mutations (Figure 1A). Collectively, these results suggested that the identified bi-allelic DNAH12 variants could potentially be the cause of asthenoteratozoospermia in our patients.
 
-## DNAH12 protein is conserved in mammals and highly expressed in the testes
+**Table 1.**
+ Detailed information of bi-allelic DNAH12 variants identified in infertile men.The accession number of human DNAH12 is ENST00000351747.2. (b) Abbreviations are listed as follows: SNV, single nucleotide variants; NA, not assessed; T, tolerated; D, deleterious. SIFT, Sorting Intolerant From Tolerant; PolyPhen-2, Polymorphism Phenotype v2; FATHMM-MKL, Functional Analysis Through Hidden Markov Models-Multiple Kernel Learning; CADD, Combined Annotation-Dependent Depletion; and a mutation is predicted deleterious if the CADD Phred score >20 in CADD. gnomAD, Genome Aggregation Database.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Genomic position on chr3</th>
+      <th>cDNAChange a</th>
+      <th>Mutation type</th>
+      <th>Genetic pattern</th>
+      <th>SIFT</th>
+      <th>Polyphen2</th>
+      <th>fathmm-MKL</th>
+      <th>CADD</th>
+      <th>1000 Genomes</th>
+      <th>gnomAD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Family 1</td>
+      <td>57,489,883</td>
+      <td>MT1: c.944_945del</td>
+      <td>frameshift substitution</td>
+      <td>AR</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>0.00002844</td>
+    </tr>
+    <tr>
+      <td>Family 2</td>
+      <td>57,528,434</td>
+      <td>MT2: c.164A&gt;G</td>
+      <td>nonsynonymousSNV b</td>
+      <td>Male-limitedAR</td>
+      <td>T</td>
+      <td>D</td>
+      <td>D</td>
+      <td>D</td>
+      <td>0.000599042</td>
+      <td>0.0004</td>
+    </tr>
+    <tr>
+      <td>Family 3</td>
+      <td>57,447,323</td>
+      <td>MT3: c.2560A&gt;G</td>
+      <td>nonsynonymousSNV</td>
+      <td>AR</td>
+      <td>T</td>
+      <td>D</td>
+      <td>D</td>
+      <td>D</td>
+      <td>0.000599042</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>P9</td>
+      <td>57,391,670</td>
+      <td>MT4: c.6229C&gt;T</td>
+      <td>stop-gain</td>
+      <td>AR</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>D</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>0.00002714</td>
+    </tr>
+    <tr>
+      <td>P10</td>
+      <td>57,445,368</td>
+      <td>MT5: c.2813T&gt;C</td>
+      <td>nonsynonymousSNV</td>
+      <td>AR</td>
+      <td>D</td>
+      <td>D</td>
+      <td>D</td>
+      <td>D</td>
+      <td>0.000199681</td>
+      <td>0.00003383</td>
+    </tr>
+    <tr>
+      <td rowspan="2">P11</td>
+      <td>57,394,265</td>
+      <td>MT6: c. 5964–3A&gt;G</td>
+      <td>splicing</td>
+      <td rowspan="2">AR</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0.000199681</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>57,445,501</td>
+      <td>MT7: c.2680C&gt;T</td>
+      <td>nonsynonymousSNV</td>
+      <td>D</td>
+      <td>D</td>
+      <td>D</td>
+      <td>D</td>
+      <td>0</td>
+      <td>0.000007178</td>
+    </tr>
+  </tbody>
+</table>
+
+### DNAH12 protein is conserved in mammals and highly expressed in the testes
 
 DNAH12 encodes a functionally uncharacterized protein and is predicted to be abundantly expressed in testes of humans and mice based on our bioinformatics tool FertilityOnline (Gao et al., 2022b). Experimentally, our RT-PCR, qPCR, and immunoblotting detection of DNAH12 expression in different tissues indicated that both DNAH12 mRNA and protein showed high expression in testes and relatively lower expression in lungs and tracheas of male mice and oviducts of female mice (Figure 1—figure supplement 2A–C). It’s worth noting that in epididymides, DNAH12 protein, but not mRNA, was detected, indicating the DNAH12 protein detected in epididymides is from testes, most probably from sperm. Furthermore, DNAH12 protein was initially detected in testes around 21 d postpartum (dpp) and thereafter maintained a high level (Figure 1—figure supplement 2D). The expression pattern of DNAH12 in testes suggests that it is possibly involved in spermiogenesis, and its abnormal expression could lead to asthenozoospermia or asthenoteratozoospermia, further indicating that the identified DNAH12 mutations are candidate pathogenic mutations for patients.
 
 Further phylogenetic analysis revealed the conservative nature of DNAH12 from Chlamydomonas to humans (Figure 1—figure supplement 3). All the amino acids affected by mutations were conserved in mammals and were located in functional regions, including the ATPase domains or the Stem domain of DNAH12 (Figure 1C), indicating that these mutations are highly likely to hinder the structure, function, or stability of the DNAH12 protein. Altogether, our results suggested that the identified mutations in DNAH12 are probable pathogenic factors contributing to asthenoteratozoospermia in our patients.
 
-## Impaired sperm motility and morphology in patients with bi-allelic DNAH12 variants
+### Impaired sperm motility and morphology in patients with bi-allelic DNAH12 variants
 
 To assess the pathological effects of the identified bi-allelic DNAH12 variants, semen analyses were conducted following WHO guidelines (WHO, 2021). All affected individuals exhibited significantly reduced sperm motility and progressive motility (Table 2). Detailed sperm morphology analyses were performed on patients P3 from family 1, P5 from family 2, P8 from family 3, and three Chinese sporadic patients (P9, P10, and P11). Spermatozoa from fertile controls displayed normal heads and tails, while spermatozoa from the patients exhibited a range of abnormal morphologies, including short, coiled, absent, bent, or irregular caliber flagella, accompanied by aberrant heads (Figure 2A, Figure 2—figure supplement 1). Scanning electron microscopy (SEM) analyses were further carried out on a fertile control and P10, confirming the presence of abnormal morphologies of the sperm head and flagellum in the patients (Figure 2B). Thus, patients with the bi-allelic DNAH12 variants demonstrated significantly decreased sperm motility and increased abnormal sperm morphology.
 
-## The bi-allelic DNAH12 variants result in absence of DNAH12 protein in patients’ sperm
+**Table 2.**
+ Clinical characteristics of the infertile patients with bi-allelic DNAH12 mutations.The reference limits are shown according to WHO sixth edition standards. (b) Reference values are shown by observation of sperm morphology in three fertile individuals. (c) ‘Age’ represents age in 2024. ND, not determined.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th rowspan="2">Reference values a</th>
+      <th rowspan="2">Fertile controls b</th>
+      <th colspan="3">Family1</th>
+      <th colspan="2">Family2</th>
+      <th>Family3</th>
+      <th rowspan="2">P9</th>
+      <th rowspan="2">P10</th>
+      <th rowspan="2">P11</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>IV-1(P1)</th>
+      <th>IV-2(P2)</th>
+      <th>IV-4(P3)</th>
+      <th>IV-5(P4)</th>
+      <th>IV-7(P5)</th>
+      <th>IV-4(P8)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cDNA mutation</td>
+      <td>–</td>
+      <td>–</td>
+      <td>MT1/MT1</td>
+      <td>MT1/MT1</td>
+      <td>MT1/MT1</td>
+      <td>MT2/MT2</td>
+      <td>MT2/MT2</td>
+      <td>MT3/MT3</td>
+      <td>MT4/MT4</td>
+      <td>MT5/MT5</td>
+      <td>MT6/MT7</td>
+    </tr>
+    <tr>
+      <td>Age (y) c</td>
+      <td>–</td>
+      <td>–</td>
+      <td>58</td>
+      <td>49</td>
+      <td>42</td>
+      <td>40</td>
+      <td>38</td>
+      <td>32</td>
+      <td>33</td>
+      <td>40</td>
+      <td>31</td>
+    </tr>
+    <tr>
+      <td>Semen parameters</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Semen volume (ml)</td>
+      <td>&gt;1.4</td>
+      <td>–</td>
+      <td>ND</td>
+      <td>1.5±0.5</td>
+      <td>2.8±0.3</td>
+      <td>4.0</td>
+      <td>3.0</td>
+      <td>3.0</td>
+      <td>3.2</td>
+      <td>3.1</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td>Sperm concentration (106 /ml)</td>
+      <td>&gt;15</td>
+      <td>–</td>
+      <td>ND</td>
+      <td>58±28.5</td>
+      <td>50.0±15.0</td>
+      <td>6.0</td>
+      <td>8.0</td>
+      <td>2.8</td>
+      <td>24.7</td>
+      <td>83.1</td>
+      <td>57.1</td>
+    </tr>
+    <tr>
+      <td>Semen pH</td>
+      <td>Alkaline</td>
+      <td>–</td>
+      <td>ND</td>
+      <td>Alkaline</td>
+      <td>Alkaline</td>
+      <td>Alkaline</td>
+      <td>Alkaline</td>
+      <td>Alkaline</td>
+      <td>Alkaline</td>
+      <td>Alkaline</td>
+      <td>Alkaline</td>
+    </tr>
+    <tr>
+      <td>Motile sperm (%)</td>
+      <td>&gt;40</td>
+      <td>–</td>
+      <td>ND</td>
+      <td>29.3±9.0</td>
+      <td>7.5±7.5</td>
+      <td>14.0</td>
+      <td>20.0</td>
+      <td>20</td>
+      <td>15.1</td>
+      <td>17.4</td>
+      <td>7.4</td>
+    </tr>
+    <tr>
+      <td>Progressively motile sperm (%)</td>
+      <td>&gt;30</td>
+      <td>–</td>
+      <td>ND</td>
+      <td>13.3±10.3</td>
+      <td>16.7±17</td>
+      <td>5.0</td>
+      <td>8.0</td>
+      <td>5</td>
+      <td>13.4</td>
+      <td>16.8</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Sperm morphology</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Normal (%)</td>
+      <td>–</td>
+      <td>76.5±2.0</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>19.9</td>
+      <td>ND</td>
+      <td>21.7</td>
+      <td>17.0</td>
+      <td>14.0</td>
+      <td>17.4</td>
+      <td>7.4</td>
+    </tr>
+    <tr>
+      <td>Abnormal head (%)</td>
+      <td>–</td>
+      <td>7.0±1.9</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>16.4</td>
+      <td>ND</td>
+      <td>5.4</td>
+      <td>6.0</td>
+      <td>3.5</td>
+      <td>16.4</td>
+      <td>20.0</td>
+    </tr>
+    <tr>
+      <td>Abnormal tail (%)</td>
+      <td>–</td>
+      <td>12.4±3.4</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>43.8</td>
+      <td>ND</td>
+      <td>41.4</td>
+      <td>44.0</td>
+      <td>42.4</td>
+      <td>37.4</td>
+      <td>16.3</td>
+    </tr>
+    <tr>
+      <td>Abnormal head &amp;tail (%)</td>
+      <td>–</td>
+      <td>4.1±1.3</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>19.9</td>
+      <td>ND</td>
+      <td>31.5</td>
+      <td>33.0</td>
+      <td>40.2</td>
+      <td>28.8</td>
+      <td>56.3</td>
+    </tr>
+    <tr>
+      <td>Sperm flagella morphology</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Normal (%)</td>
+      <td>–</td>
+      <td>83.1±2.3</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>26.4</td>
+      <td>ND</td>
+      <td>26.6</td>
+      <td>22.7</td>
+      <td>17.9</td>
+      <td>31.7</td>
+      <td>27.4</td>
+    </tr>
+    <tr>
+      <td>Absent (%)</td>
+      <td>–</td>
+      <td>2.7±1.1</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>16.4</td>
+      <td>ND</td>
+      <td>7.9</td>
+      <td>15.8</td>
+      <td>9.6</td>
+      <td>16.6</td>
+      <td>11.6</td>
+    </tr>
+    <tr>
+      <td>Short (%)</td>
+      <td>–</td>
+      <td>3.6±0.6</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>16.4</td>
+      <td>ND</td>
+      <td>11.3</td>
+      <td>14.9</td>
+      <td>20.1</td>
+      <td>11.7</td>
+      <td>8.4</td>
+    </tr>
+    <tr>
+      <td>Coiled (%)</td>
+      <td>–</td>
+      <td>2.8±0.7</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>17.3</td>
+      <td>ND</td>
+      <td>24.6</td>
+      <td>12.9</td>
+      <td>11.8</td>
+      <td>14.6</td>
+      <td>7.0</td>
+    </tr>
+    <tr>
+      <td>Bent (%)</td>
+      <td>–</td>
+      <td>6.3±0.6</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>12.7</td>
+      <td>ND</td>
+      <td>15.8</td>
+      <td>10.0</td>
+      <td>13.5</td>
+      <td>7.8</td>
+      <td>33.5</td>
+    </tr>
+    <tr>
+      <td>Irregular caliber (%)</td>
+      <td>–</td>
+      <td>1.5±0.2</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>10.9</td>
+      <td>ND</td>
+      <td>13.8</td>
+      <td>23.8</td>
+      <td>27.1</td>
+      <td>17.6</td>
+      <td>12.1</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 2.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig2-v1.jpg)
+
+**Figure 2.:** (A) Representative micrographs show normal sperm morphology from a fertile control and abnormal spermatozoa from P10 with absent, short, coiled, bent, irregular flagella, or abnormal head under light microscopy. Scale bars, 5 μm. (B) Representative scanning electron microscopy (SEM) micrographs show details about the sperm morphology of a fertile control and P10. The normal sperm morphology can be observed in the fertile control (left) and abnormal types like absent, short, coiled, bent, irregular tails, and head abnormality in P10 (right). Scale bars, 5 μm. (C) Immunoblotting assay revealed that DNAH12 was absent in the spermatozoa from P9, P10, and P11 harboring DNAH12 variants. β-actin was used as a loading control. (D) Sperm cells were co-stained with α-Tubulin (green) and DNAH12 (red) antibodies while no DNAH12 signals were observed in sperm flagella of patients. DNA was counterstained with Hoechst 33342. Scale bars, 10 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative micro-graphs from men harboring bi-allelic DNAH12 variants (P3 of family 1, P5 of family 2, and P8 of family 3) and a fertile control by H&E staining. (B) Representative micrographs from P9, P11, and a fertile control by Papanicolaou staining. Scale bars,10 µm.
+
+### The bi-allelic DNAH12 variants result in absence of DNAH12 protein in patients’ sperm
 
 To investigate the effects of the identified bi-allelic DNAH12 variants on the DNAH12 protein, we obtained sperm samples from three affected Chinese patients, and the expression of DNAH12 was detected using a custom-made DNAH12 rabbit antibody that recognized the N-terminal 1–200 amino acids of the DNAH12 protein. The validated antibody could theoretically detect the truncated protein if it were present in P9 with a homozygous stop-gain mutation M4 (p. Gln2077*). The predicted DNAH12 protein size was detected in the sperm lysate from a fertile control but not in P9 with the homozygous stop-gain mutation M4, P10 with a homozygous missense mutation M5, and P11 with compound heterozygous mutations M6 and M7, indicating these mutations possibly lead to the disruption of the DNAH12 protein (Figure 2C).
 
 To further explore the effects of the identified DNAH12 variants on the DNAH12 protein, we performed immunofluorescence assays on sperm from patients. The results showed that DNAH12 signals were localized along the flagella of the fertile control, however, no DNAH12 signals were observed in sperm flagella of patients P3 (family 1), P5 (family 2), P8 (family 3), P9, P10, and P11 (Figure 2D). Collectively, these findings indicated that all the detected DNAH12 variants cause the absence of DNAH12 protein in the sperm of our patients, reinforcing that these DNAH12 mutations are pathogenic mutations of asthenoteratozoospermia in the patients.
 
-## Patients with bi-allelic DNAH12 variants exhibit flagellar axoneme defects
+### Patients with bi-allelic DNAH12 variants exhibit flagellar axoneme defects
 
 Since patients with the bi-allelic DNAH12 variants exhibited compromised sperm motility and abnormal sperm morphology, we then investigated whether sperm flagellar ultrastructure was also affected in these patients. TEM examination was performed on sperm flagella from both patients and normal fertile controls. The flagella of fertile controls displayed the typical ‘9+2’ microtubule structure with well-organized DMTs and CP. In contrast, various defects were found in our patients, including loss of CP (54.5%), disorganization of microtubules (26%), and absence of DMTs (16.5%) in the examined cross-sections (Figure 3A, C, Figure 3—figure supplement 1A). To examine the IDAs impairment in axonemes, the sections with intact ODAs were analyzed. Compared with axonemes in controls that almost all the sections presented intact IDAs, approximately 70% of sections examined showed impaired IDA structures in the analyzed three patients (Figure 3B, D, Figure 3—figure supplement 1A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig3-v1.jpg)
+
+**Figure 3.:** (A–B) Representative transmission electron microscopy (TEM) micrographs showing cross-sections of the midpiece, principal piece, and end piece of sperm flagella from a fertile control and P11. The axoneme structure in control presents a ‘9+2’ microtubules arrangement, including mitochondrial sheath (MS, indicated with red arrows), central pair of microtubules (CP, indicated with yellow arrows), outer dense fibers (ODFs, indicated with cerulean arrows), peripheral doublet microtubules (DMTs, indicated with orange arrows), inner dynein arms (IDAs, indicated with green arrows), and outer dynein arms (ODAs, indicated with purple arrows), while in P11, axonemal defects like missing CP, disorganized axonemal structures or missing DMTs were observed, the red asterisks mark CP loss (A). Impaired IDAs in the sperm axoneme of patient P11 (B). The red triangle marks impaired IDAs while adjacent ODAs are identifiable. Scale bars, 200 nm. (C–D) The proportion of different categories of observed cross-sections in the control and patients. Cross-sections were classified into four categories: Intact ‘9+2’, missing CP, disorganization, and missing DMTs (C), and the proportion of intact IDAs or impaired IDAs in the cross-sections of flagellar axoneme of which ODAs were identifiable (D). n, the total number of cross-sections for quantification. (E–G) Representative images of spermatozoa from fertile controls and patients carrying bi-allelic DNAH12 variants co-stained α-Tubulin with SPAG6 (E), DNAH1 (F), DNALI1 (G), or DNAH17 (H), and Hoechst 33342 for DNA (blue). The fluorescent signal intensity profiles were shown on the bottom. Scale bars, 10 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Representative TEM micrographs from men harboring bi-allelic DNAH12 variants (P3 of Famliy1, P9 and P10). Red asterisks mark central pair (CP) loss and red triangle marks the positions where inner dynein arms (IDAs) are impaired or absent while adjacent outer dynein arms (ODAs) are identifiable. Scale bars, 200 nm. (B) Representative image of spermatozoa from fertile controls and patients carrying bi-allelic DNAH12 variants stained with ODF2 and α-Tubulin antibodies, and Hoechst 33342 (blue). Scale bars,10 µm.
+
 We then performed immunofluorescence assays on sperm smears to assess the expression and localization of specific proteins of the axonemes. These included SPAG6 (a CP component), DNAH1 and DNALI1 (IDA components), DNAH17 (an ODA component), and ODF2 (an outer dense fiber, ODF component). The sperm flagella of patients showed remarkably reduced SPAG6 signals when compared with those from controls (Figure 3E). Similarly, DNAH1 and DNALI1 signals were both obviously decreased in the patients’ sperm flagella, indicating impaired IDAs in the patients (Figure 3F and G). Besides, DNAH17 and ODF2 signals in patients' flagella were comparable to those in a normal control (Figure 3H, Figure 3—figure supplement 1B). In summary, these findings indicated that the bi-allelic DNAH12 variants cause pronounced flagellar axoneme defects, including impaired IDAs and loss of CP, but do not affect ODAs and ODFs.
 
-## Deletion of Dnah12 impairs spermiogenesis and causes male infertility in mice
+### Deletion of Dnah12 impairs spermiogenesis and causes male infertility in mice
 
 Considering the bi-allelic DNAH12 variants resulting in absence of DNAH12 protein in patients’ sperm, to functionally confirm the deletion of DNAH12, we generated Dnah12 knockout mice using CRISPR-Cas9 approach (Figure 4—figure supplement 1A). Fortunately, we obtained a mouse model with a 4-bp deletion (c.386_389del) in exon 5 of Dnah12 (Figure 4—figure supplement 1A). In contrast to the observations in control mice, immunoblotting of testis lysate using two antibodies targeting the N-terminal of DNAH12 failed to detect DNAH12 proteins, and immunofluorescence staining of sperm flagella did not show DNAH12 signals in Dnah12-/- mice (Figure 4—figure supplement 1B and C). Dnah12-/- males exhibited normal development but were infertile (Figure 4A), while Dnah12-/- female mice showed normal development and fertility, and no obvious defective oviductal and tracheal cilia (Figure 4—figure supplement 2A–C). The body weight of Dnah12-/- and Dnah12+/+ males was comparable, while smaller testes were observed in Dnah12-/- males (Figure 4B). Besides, the average number of sperm per epididymis of Dnah12-/- mice dramatically decreased to approximately 2% of that of Dnah12+/+ mice (Figure 4C). The epididymal caudal spermatozoa of Dnah12-/- male mice were 100% immotile, compared to those of Dnah12+/+ mice (Figure 4D, Videos 1 and 2). H&E staining of testis and epididymis sections also showed a striking reduction in the number of sperm in Dnah12-/- mice (Figure 4E). Importantly, morphological analysis of sperm from the caudal epididymis of Dnah12-/- mice showed similar types and frequencies of flagellum and head abnormalities to those observed in our patients (Figure 4F and G).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig4-v1.jpg)
+
+**Figure 4.:** (A) Fertility test of adult Dnah12+/+ and Dnah12-/- male mice (n=8 independent experiments). Data are presented as mean ± SEM; ****p<0.0001. (B) The testes to body weight ratios of Dnah12+/+ and Dnah12-/- mice (n=5 independent experiments). Data are presented as mean ± SEM; ***p<0.001. (C) The number of sperm per epididymis of Dnah12+/+ and Dnah12-/- male mice (n=3 independent experiments). Data are presented as mean ± SEM; ****p<0.0001. (D) Percentages of motile spermatozoa in Dnah12+/+ and Dnah12-/- male mice (n=3 independent experiments). Data are presented as mean ± SEM; ****p<0.0001. (E) Histological sections of testis and epididymis from Dnah12+/+ and Dnah12-/- mice after H&E staining. Scale bars, 50 μm. (F) Morphology of the sperm from caudal epididymis of Dnah12+/+ and Dnah12-/- mice. Scale bars,10 μm. (G) Quantitative analysis of sperm morphology of Dnah12+/+ and Dnah12-/- male mice. The experiments were repeated three times with at least 200 spermatozoa counted every time. The above data were obtained from three adult mice for each genotype (n=3 independent experiments). Data are presented as mean ± SEM; ns indicates no significant difference; ****p<0.0001. (H) Representative images of testicular cells from Dnah12+/+ and Dnah12-/- mice co-stained DNAH12 and α-Tubulin antibodies. Scale bars, 10 μm. The red asterisk indicates abnormal manchette structure and the red arrow indicates abnormal sperm flagellum at the elongated spermatid stage of Dnah12-/- mice. (I) Representative immunofluorescence images of seminiferous tubule squash from 8-wk-old Dnah12+/+ and Dnah12-/- mice, co-stained by peanut agglutinin (PNA) (red) and α-Tubulin (green) antibody. DNA was stained with Hoechst 33342. Scale bars, 10 μm. The asterisks indicate the manchette defects and the red triangles mark the abnormal sperm heads. Scale bars,10 μm. (J) Representative transmission electron microscopy (TEM) micrographs of testicular elongated spermatids from Dnah12+/+ and Dnah12-/- mice. Scale bars, 1 μm. (K) TUNEL assay on the testicular sections from Dnah12+/+ and Dnah12-/- mice. The green triangles mark the apoptotic elongating or elongated spermatids. Scale bars, 50 μm. (L) The proportion of tubules with apoptotic cells in Dnah12+/+ and Dnah12-/- mice. (M) Average numbers of TUNEL-positive cells per tubule in Dnah12+/+ and Dnah12-/- mice (n=3 independent experiments). Data are obtained from three mice with at least 50 tubules scored in each repeated experiment. Data are presented as mean ± SEM; **p<0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Schematic illustrating construction of the Dnah12−/− mouse model and Sanger sequencing validation of Dnah12+/+, Dnah12+/-, and Dnah12-/- mice. Red arrows indicate the position where 4 bp deletion occurs. (B) Immunoblotting assay of testis lysate from 10 wk Dnah12+/+ and Dnah12-/- mice using DNAH12-Rabbit antibody or DNAH12-Rat antibody. (C) Representative images of caudal epididymal sperm from Dnah12+/+ and Dnah12-/- mice co-stained α-Tubulin and DNAH12 antibodies. Scale bars, 10 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Number of offspring per litter of Dnah12+/- and Dnah12-/- from 8–10 wk old female mice, the two groups were caged with Dnah12+/- mice, and the number of offspring was recorded, respectively (n=8 independent experiments).Data are presented as mean ± SEM; ns indicates no significant difference. (B–C) Oviductal (B) or tracheal (C) histology of Dnah12+/+. The red triangles mark the cilia with normal morphology in Dnah12-/- 8-wk-old female mice and the cilia shapes and lengths were similar in the two groups. Scare bars are shown in the figures.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Representative images of seminiferous tubule sections from 8-wk-old Dnah12+/+ and Dnah12-/- mice, co-stained by peanut agglutinin (PNA) (red) and α-Tubulin (green) antibodies. DNA was stained with Hoechst 33342. Scale bars, 50 μm.
+
+![Video 1.](https://cdn.elifesciences.org/articles/100350/elife-100350-video1.mp4.jpg)
+
+![Video 2.](https://cdn.elifesciences.org/articles/100350/elife-100350-video2.mp4.jpg)
+
 To understand how DNAH12 depletion causes abnormal sperm morphology, we conducted immunofluorescence assays on testicular cells from Dnah12+/+ and Dnah12-/- mice, in Dnah12-/- mice, while DNAH12 signals are missing in round, elongating, and elongated spermatids; the abnormal manchette structure and flagellum were observed (Figure 4H). We then performed immunofluorescence assays on testicular sections using α-Tubulin and lectin peanut agglutinin (PNA, a marker of the acrosome) to examine the process of spermiogenesis. The manchette structure in Dnah12-/- was roughly normal until steps 9–10 (Stage IX-X) but was aberrantly stretched from steps 11–12 (Stage XI-XII) when compared with those of Dnah12+/+ mice (Figure 4—figure supplement 3). To meticulously characterize these defects, we stained α-Tubulin and PNA on squashed seminiferous tubules and found obvious manchette defects and abnormal sperm heads in Dnah12-/- mice (Figure 4I). TEM analysis showed severely abnormal head morphology in elongated spermatids of Dnah12-/- males when compared with those of Dnah12+/+ males (Figure 4J). Additionally, TUNEL assays of testis sections showed dramatically increased proportions of seminiferous tubules containing TUNEL-positive cells in Dnah12-/- mice, compared with those in Dnah12+/+ mice, suggesting the aberrant spermatids may undergo apoptosis (Figure 4K–M). Altogether, these results indicated that deletion of Dnah12 impairs spermiogenesis, results in decreased sperm counts, and increased sperm morphological abnormalities in mice.
 
-## Deletion of Dnah12 causes axoneme defects in sperm flagella but not cilia in mice
+### Deletion of Dnah12 causes axoneme defects in sperm flagella but not cilia in mice
 
 TEM analysis was conducted on sperm from cauda epididymis of Dnah12+/+, Dnah12+/- and Dnah12-/- mice. Flagellar axonemes of Dnah12+/+ and Dnah12+/- mice displayed a typical ‘9+2’ microtubular arrangement with clearly visible CP, IDAs, and ODAs. In contrast, sperm from Dnah12-/- mice exhibited severe abnormalities in all the analyzed sections, characterized by CP loss and disorganized axoneme structure (Figure 5A). Immunoblotting was performed to assess the expression levels of DNAH1, DNALI1, and SPAG6 in sperm lysates, Dnah12-/- sperm showed a significant reduction in the abundance of DNAH1 and DNALI1, while the amount of DNAI2 (a component of ODAs) remained comparable to Dnah12+/+ and Dnah12+/- sperm (Figure 5B). Additionally, immunofluorescence assays revealed the near absence of signals for SPAG6, SPEF2 (a component of CP complex), DNAH1, and DNALI1 in Dnah12-/- sperm flagella, whereas DNAH17 and DNAI2 (components of ODAs) remained unaffected (Figure 5C–H). These results indicate that DNAH12 deficiency specifically impairs CP and IDAs, but not ODAs, in sperm flagella. Furthermore, immunoblotting of SPAG6 and DNALI1 in testis lysate exhibited a sharp decrease in Dnah12-/- mice (Figure 5—figure supplement 1A). Additionally, TEM examination of testicular sperm axonemes showed defects like loss of CP and disarranged axonemes in Dnah12-/- mice (Figure 5—figure supplement 1B). These results indicate that impaired IDAs and loss of CP possibly occur during testicular sperm flagellar development.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig5-v1.jpg)
+
+**Figure 5.:** (A) Representative transmission electron microscopy (TEM) micrographs showing cross-sections of sperm flagella from Dnah12+/+, Dnah12+/-, and Dnah12-/- mice. In Dnah12+/+, Dnah12+/-, the normal axoneme ‘9+2’ microtubule arrangement mainly consisted of the mass spectrometry (MS), (indicated with red arrows), central pair (CP) (yellow arrows), outer dense fibers (ODFs) (cerulean arrows), doublet microtubules (DMTs) (orange arrows), inner dynein arms (IDAs) (green arrows), and outer dynein arms (ODAs) (purple arrows). However, the CP and DMTs structures were missing or disarranged in the Dnah12-/- group. Red asterisks mark the loss of CP. Scale bars, 200 nm. (B) Immunoblotting of sperm lysate from Dnah12+/+, DNAH12+/- and Dnah12-/- mice using DNAH1, DNALI1 or SPAG6 antibodies. DNAI2 and α-Tubulin were used as the loading controls. The relative band grayscales of proteins to α-Tubulin in sperm lysate from Dnah12+/+, DNAH12+/-, and Dnah12-/- mice were shown on the right (n=4 independent experiments). Data are presented as mean ± SEM; ns indicates no significant difference; ****p<0.0001. (C–H) Representative images of caudal epididymal sperm from Dnah12+/- and Dnah12-/- mice co-stained α-Tubulin and SPAG6 (C), SPEF2 (a component of CP complex) (D), DNAH1 (E), DNALI1 (F), DNAH17 (G) or DNAI2 (H) antibodies. The fluorescent signal intensity profiles were shown on the bottom. Scale bars, 10 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Immunoblotting of testis lysate from Dnah12+/+ and Dnah12-/- mice using SPAG6, DNALI1 antibodies. DNAI1 and α-Tubulin were used as the loading controls. (B) Representative TEM micrographs showing cross-sections of testicular sperm axoneme from Dnah12+/+ and Dnah12-/- mice. The CP and DMTs were missing or disarranged in the Dnah12-/- group. Red asterisks mark the CP loss. Scale bars, 200 nm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Schematic illustrating construction of the Dnah12mut/mut mice model and Sanger sequencing results of Dnah12+/+, Dnah12+/mut, and Dnah12mut/mut mice. The red arrows indicate the position where the mutation occurs. (B) Immunoblotting of testicular lysate from Dnah12+/+ and Dnah12mut/mut mice using homemade DNAH12-Rabbit antibody. GAPDH was used as a loading control. The arrowheads indicate the target bands. (C) Representative images of testes from Dnah12+/+ and Dnah12mut/mut mice. (D) Testes to body weight ratios of Dnah12+/+ or Dnah12mut/mut mice (n=3 independent experiments). Data are presented as mean ± SEM; ***p<0.001. (E) Number of sperm per epididymis of Dnah12+/+ and Dnah12mut/mut mice (n=3 independent experiments). Data are presented as mean ± SEM; ****p<0.0001. (F) Histological sections of testis and epididymis from Dnah12+/+ and Dnah12mut/mut after H&E staining. Scale bars, 50 μm. (G) Morphology of the spermatozoa obtained from Dnah12+/+ mice or Dnah12mut/mut mice cauda epididymis after H&E staining. Scale bars,10 μm. (H) Representative transmission electron microscopy (TEM) micrographs showing cross sections of sperm flagella from Dnah12+/+ and Dnah12mut/mut mice. Scale bars, 200 nm.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A–B) No obvious developmental abnormalities were observed in adult Dnah12mut/mut (A) or Dnah12-/- (B) mice. (C–D) Tracheal histology showed the cilia shape and lengths of Dnah12mut/mut (C) or Dnah12-/- (D) were similar to Dnah12+/+ in the two groups. Scare bars, 20 μm. (E) Representative images of tracheal cilia co-stained α-Tubulin (green) and DNAH12 (red) antibodies. Scale bars, 20 μm. (F) TEM micrographs showing cross sections of tracheal cilia cross-sections from Dnah12+/+ and Dnah12-/- mice. Scale bars, 200 nm.
 
 Another Dnah12 mutant mouse model (Dnah12mut/mut) targeting exon18 was also generated (Figure 5—figure supplement 2A), the Dnah12mut/mut mice may produce a truncated DNAH12 protein (p.Cys793Glu, fs*10) which could distinguish from Dnah12-/- mice. The mutation effect was checked but no truncated DNAH12 protein was detected, indicating that DNAH12 expression was disrupted in Dnah12mut/mut mice (Figure 5—figure supplement 2B). Moreover, Dnah12mut/mut mice developed normally, while decreased testicular size was observed (Figure 5—figure supplement 2C and D). Consistent with Dnah12-/- mice and patients carrying bi-allelic DNAH12 mutations, Dnah12mut/mut presented obviously decreased sperm count, increased sperm morphological abnormalities, and sperm axoneme defects similar to Dnah12-/- mice (Figure 5—figure supplement 2E–H). Therefore, these results reconfirmed that DNAH12 is essential for sperm flagellar development.
 
 Given the detection of DNAH12 protein in the trachea and lung (Figure 1—figure supplement 2A–C), we also examined whether the deficiency of DNAH12 would cause PCD symptoms in males. Intriguingly, both Dnah12mut/mut and Dnah12-/- males developed normally and showed no tracheal motility or structure defects, despite the expression of DNAH12 being detected in tracheal cilia cells (Figure 5—figure supplement 3A–E; Videos 3 and 4). Besides, the ultra-structures of cilia axonemes were comparable in wild-type and Dnah12-/- groups (Figure 5—figure supplement 3F). These findings collectively suggested that DNAH12 deficiency is crucial for sperm axonemal integrity in humans and mice without manifesting PCD symptoms.
 
-## DNAH12 interacts with IDA components DNAH1 and DNALI1
+![Video 3.](https://cdn.elifesciences.org/articles/100350/elife-100350-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/100350/elife-100350-video4.mp4.jpg)
+
+### DNAH12 interacts with IDA components DNAH1 and DNALI1
 
 Through phylogenetic and domain analyses of DNAH family members, we found that DNAH12 is a distinctive IDA lacking the microtubule-binding domain (MTBD), which is crucial for ATP-sensitive microtubule binding and motor direction control (Figure 6A, Figure 6—figure supplement 1). Therefore, DNAH12 likely collaborates with other members to carry out its functions. To delve into the molecular mechanism of DNAH12, we conducted co-immunoprecipitation (Co-IP) followed by mass spectrometry analysis using a DNAH12 rabbit antibody in testicular lysate from adult Dnah12+/+ mice (Figure 6B). Gene ontology analysis showed that the potential interactors were mainly enriched in motor protein, actin binding, myosin and RNA binding proteins (Figure 6C). The motor proteins were predominantly categorized into three groups: dynein, kinesin, and myosin protein members, interestingly, among these, dynein proteins such as DNAH1, DNALI1, DNAH1, DNAH3, and DNAH2 were annotated to be involved in IDA assembly, which is closely related to the defects found in DNAH12 mutants (Figure 6D). This piqued our interest to explore these proteins in detail. Besides the predominant enrichment of DNAH12 (top1), potential IDA interactors such as DNALI1 (top2), DNAH1 (top3), DNAH3 (top4), and DNAH2 (top5) were co-enriched in the candidate interacting dynein protein list (Supplementary file 1a). Immunoblotting confirmed the co-enrichment of DNAH12, DNALI1, and DNAH1 in the immunoprecipitated complex by the DNAH12 rabbit antibody in Dnah12+/+ mice but not in Dnah12-/- mice, indicating specific interactions between DNAH12 and DNALI1, DNAH1 (Figure 6E). Reciprocal in vivo Co-IP using an anti-DNALI1 antibody further validated strong interactions among these three IDA components (Figure 6F).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig6-v1.jpg)
+
+**Figure 6.:** (A) Phylogenetic and protein domain analyses of the DNAH family. The dashed box indicates the shortest-length member, DNAH12, while the arrow points to the missing microtubule-binding domain (MTBD) region. (B) Schematic diagram showing the procedure of the immunoprecipitation/mass spectrometry (IP/MS) proteomics experiment. (C) GO term enrichment analysis of DNAH12 potential interactors. (D) Protein-protein interaction network of DNAH12 among the motor protein term. The blue circle marks the proteins involved in IDA assembly. (E–F) Co-immunoprecipitation (Co-IP) assays using DNAH12 antibody (E) or DNALI1 antibody (F) showed strong and specific interactions among DNAH12, DNALI1, and DNAH1. (G) Predicted DNAH12-DNALI1 interaction details by the HDOCK server. The top three of DNALI1 possible binding conformations were shown in types 1–3. (H–J) Construction of mouse-mCherry-DNAH12-Stem (H) and mouse-GFP-DNALI1-full length (FL) (I) plasmids, and the validation of the interaction between the Stem domain of DNAH12 and full-length of DNALI1 (J).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** The three-dimensional protein models of human DNAH12, DNAH1, and DNAH12 were colored golden while DNAH1 was colored celeste, for better visualization, the MTBD of DNAH1 was box selected with green lines. The proposed cartoon structures of the DNAH family are shown on the right, while DNAH12 lacks the MTBD domain.
+
 Given the potential role of DNALI1 as an IDA assembly factor (Wu et al., 2023), we delved into the interaction details between DNAH12 and DNALI1. Employing Phyre2, we constructed the structural models of both proteins and further elucidated their interaction dynamics via DNAH12-DNALI1 docking using the HDOCK server. The results showed that the N-terminal Stem domain of DNAH12 possibly interacts with DNALI1 in the top three best-fit conformations (Figure 6G). Considering DNAH12 is encoded by 3092 amino acids and their full-length protein interactions have been proved in vivo, we constructed the Stem domain (1–1212 amino acids) of DNAH12 and full-length DNALI1 plasmid, further in vitro Co-IP assays validated that the Stem domain of DNAH12 indeed mediates interactions with DNALI1 (Figure 6H–J). Together, these findings proved the specific interactions among DNAH12, DNALI1, and DNAH1. Given the significantly decreased protein levels of DNALI1 and DNAH1 observed in the sperm of Dnah12-/-mice (Figure 5B), we proposed that the interactions involving DNAH12 (possibly restricted to the Stem domain of DNAH12), DNALI1, and DNAH1 are crucial for flagella development. As dynein proteins typically share similar domains, our findings also suggested that the Stem domain of DNAH family members may facilitate the interaction with DNALI1.
 
-## Deletion of DNAH12 impairs the recruitment of IDA components during flagella development
+### Deletion of DNAH12 impairs the recruitment of IDA components during flagella development
 
 To evaluate the effect of DNAH12 deletion on DNALI1 and DNAH1 during spermiogenesis, we examined the abundance of the DNAH12 interaction partners, DNALI1 and DNAH1, in Dnah12+/+ and Dnah12-/- mouse testis lysate. The protein levels of DNALI1 and DNAH1 were decreased in Dnah12-/- testes, while the level of ODA member DNAI1 was comparable (Figure 7A). We then stained DNALI1 or DNAH1 on testicular cell smear of Dnah12+/+ and Dnah12-/- mice. Although the signals of DNALI1 or DNAH1 in round spermatids of Dnah12-/- mice were comparable to those of Dnah12+/+ mice (Figure 7B and C), the recruitment of DNALI1 and DNAH1 to sperm flagella was severely impaired in elongated spermatids of Dnah12-/- mice (Figure 7D and E). Considering that the deficiency of DNAH12 also caused scarcely visible immunofluorescence signals of DNALI1 and DNAH1 in sperm flagella of humans and mice (Figures 3F, G, 5E and F), we proposed that the interaction among DNAH12, DNALI1, and DNAH1 is conserved in mammals, and is required for flagellar development during spermiogenesis. Since the deficiency of DNAH12 does not cause PCD symptoms in humans and mice, we hypothesized that flagella and cilia may exhibit distinct features in the process of dynein assembly. We thus checked the abundance of DNALI1 and DNAH1 in the oviduct and trachea, the results showed that DNALI1 and DNAH1 were comparable in the Dnah12+/+ and Dnah12-/- groups (Figure 7F and G). Furthermore, no discernible disparities were observed in the intensity and localization of DNALI1 and DNAH1 signals within the oviduct and trachea (Figure 7H–K). In summary, these results underscore the specific involvement of DNAH12 in flagellar development, rather than in cilial development. Moreover, we supposed that the assembly of IDA components differs between flagella and cilia.
 
-## DNAH12 is prerequisite for the recruitment of DNALI1 and DNAH1 to sperm flagella
+![Figure 7.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig7-v1.jpg)
+
+**Figure 7.:** (A) Immunoblotting of testis lysate from Dnah12+/+, DNAH12+/- and Dnah12-/- mice using DNAH12, DNAH1, and DNALI1 antibodies. DNAI1 (a component of ODAs) and α-Tubulin were used as the loading controls. The relative band grayscales of proteins to α-Tubulin in testis lysate from Dnah12+/+, and Dnah12-/- mice were shown on the right (n=5 independent experiments). Data are presented as mean ± SEM; ns indicates no significant difference;****p<0.0001. (B–C) Immunofluorescence assays of α-Tubulin and DNAH1 (B), or DNALI1 (C) antibodies on round spermatids from adult Dnah12+/− and Dnah12−/− mice. Scale bars, 10 μm. (D–E) Immunofluorescence assays of α-Tubulin and DNAH1 (D), or DNALI1 (E) antibodies on elongated spermatids from adult Dnah12+/− and Dnah12−/− mice. Scale bars, 10 μm. (F–G) Immunoblotting of oviduct (F) or trachea (G) lysate from Dnah12+/+, DNAH12+/- and Dnah12-/- mice using DNAH12, DNAH1, and DNALI1 antibodies. GAPDH was used as the loading control. The relative band grayscales of proteins to GAPDH in oviduct lysate (F) or trachea lysate (G) from Dnah12+/+, and Dnah12-/- mice were shown on the right (n=4 independent experiments). Data are presented as mean ± SEM; ns indicates no significant difference; ***p<0.001. (H–I) Immunofluorescence assays of the oviduct (H) or trachea (I) sections with α-Tubulin and DNAH1 antibodies. Scale bars, 50 μm. (J–K) Immunofluorescence assays of the oviduct (J) or trachea (K) sections with α-Tubulin and DNALI1 antibodies. Scale bars, 50 μm. (L) Pedigree of a family with three infertile males, P12 (III-2), P13 (III:6), and P14 (III:8); MT: the DNAH1 mutation c.11275C>T; p.Arg3759Cys. (M–O) Representative images of spermatozoa from a fertile control and P13 co-stained by α-Tubulin antibody and DNAH1 (M), DNALI1(N), or DNAH12 (O) antibodies, respectively. Scale bars,10 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Flowchart for analyses of the whole-exome sequencing of a Pakistani family with three infertile male patients. (B) Validation of the candidate homozygous DNAH1 mutation c.11275C>T, p.Arg3759Cys in the family members by Sanger sequencing.
+
+### DNAH12 is prerequisite for the recruitment of DNALI1 and DNAH1 to sperm flagella
 
 In patients and mice with DNALI1 deficiency, flagellar DNAH1 but not DNAH12 signals were absent (Wu et al., 2023). To unravel the recruitment relationships among DNAH12, DNALI1, and DNAH1 during sperm flagellar formation, we conducted staining of DNALI1 and DNAH12 on sperm flagella obtained from the infertile asthenoteratozoospermic male P13 with a homozygous DNAH1 mutation (c.11275C>T) of a family (Figure 7L, Figure 7—figure supplement 1A-B), wherein DNAH1 signals were absent along the flagella (Figure 7M). In comparison to those in the control, the DNALI1 signals were absent, while no discernible differences in DNAH12 signals were observed in the flagella of the patient with the DNAH1 mutation (Figure 7N and O). These findings suggested that the recruitment of DNAH12 to flagella is independent of DNAH1, and DNAH12 is the first protein to be recruited to flagella among the three proteins.
 
-## DNAH12 deficiency causes the decrease of RS head-associated proteins
+### DNAH12 deficiency causes the decrease of RS head-associated proteins
 
 In addition to the enrichment of dynein proteins, we noticed that clusters of RS head-related proteins such as RSPH1, RSPH9, or DNAJB13 were enriched in the testicular interactome of DNAH12. Considering that deficiency in RSPH1 (Lin et al., 2014), RSPH9 (Zhu et al., 2019), or DNAJB13 (Liu et al., 2022) were associated with CP loss phenotype. We then explored their interaction with DNAH12 in the testis lysate, the results proved the interactions of these proteins with DNAH12 in the testis (Figure 8A). Further analyses by AlphaFold3 showed that these proteins may interacts with DNAH12 through the Stem domain (Figure 8B). The expression of RSPH1, RSPH9, and DNAJB13 showed an obvious decrease in testis lysate of Dnah12-/- mice (Figure 8C). Additionally, immunofluorescence assays revealed the loss of signals for RSPH1, a marker of RS head, in Dnah12-/- sperm flagella (Figure 8D). Together, these results indicate that deficiency of DNAH12 lead to the impairment of radial spoke head, which could contribute to CP loss in flagella of Dnah12-/- mice.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/100350/elife-100350-fig8-v1.jpg)
 
-**Figure 8.:** (A) Co-immunoprecipitation (Co-IP) assays of the potential interactions of DNAH12 and RS head proteins RSPH1, RPSH9, or DNAJB13. DNAI2 antibody was used as a negative control. (B) Interaction analyses of DNAH12 and RS head proteins RSPH1, RPSH9, or DNAJB13 by AlphaFold3. (C) Immunoblotting of testis lysate from Dnah12 and +/+Dnah12 mice using RSPH1, RPSH9, DNAJB13 antibodies. DNAI2 (a component of ODAs), α-Tubulin, and β-Tubulin were used as the loading controls. The relative band grayscales of proteins to α-Tubulin in testis lysate from -/-Dnah12 and +/+,Dnah12 mice were shown on the right (n=4 independent experiments). Data are presented as mean ± SEM; ns indicates no significant difference;****p<0.0001.; (-/-D) Immunofluorescence assays of α-Tubulin and RSPH1 antibodies on sperm collected from Dnah12 and +/−Dnah12−/− mice caudal epididymis. The fluorescent signal intensity profiles were shown on the right. Scale bars, 10 μm. (E) Representative two-cell embryos and blastocysts of Dnah12 and +/+,Dnah12 male mice after intracytoplasmic sperm injection. Scale bar, 100 μm.(-/F) Percentages of two-cell-stage embryos of Dnah12(n=3 mice), and +/+Dnah12 male mice (n=4 mice) after intracytoplasmic sperm injection. Data are presented as mean ± SEM; ns indicates no significant difference. (-/-G) Percentages of blastocyst-stage embryos of Dnah12(n=3 mice), and +/+Dnah12 males (n=4 mice) after intracytoplasmic sperm injection. Data are presented as mean ± SEM; ns indicates no significant difference. (-/-H) Schematic diagram showing the proposed function of DNAH12 in sperm flagellar development in humans and mice. DNAH12 is essential for recruiting DNALI1 and DNAH1 to sperm flagella and maintaining the proper axonemal arrangement, especially IDAs and CP structures. Loss of DNAH12 causes the failure of DNALI1 and DNAH1 to be recruited to sperm flagella and results in abnormal sperm morphology with compromised axoneme organization, causing male infertility. ODA, outer dynein arm; IDA, inner dynein arm; N-DRC, nexin-dynein regulatory complex; CP, central pair of microtubules; MTBD, microtubule-binding domain; RS, radial spoke.Figure 8—source data 1.Figure 8A and C.Figure 8—source data 2.Figure 8A and C.
+**Figure 8.:** (A) Co-immunoprecipitation (Co-IP) assays of the potential interactions of DNAH12 and RS head proteins RSPH1, RPSH9, or DNAJB13. DNAI2 antibody was used as a negative control. (B) Interaction analyses of DNAH12 and RS head proteins RSPH1, RPSH9, or DNAJB13 by AlphaFold3. (C) Immunoblotting of testis lysate from Dnah12+/+ and Dnah12-/- mice using RSPH1, RPSH9, DNAJB13 antibodies. DNAI2 (a component of ODAs), α-Tubulin, and β-Tubulin were used as the loading controls. The relative band grayscales of proteins to α-Tubulin in testis lysate from Dnah12+/+, and Dnah12-/- mice were shown on the right (n=4 independent experiments). Data are presented as mean ± SEM; ns indicates no significant difference;****p<0.0001.; (D) Immunofluorescence assays of α-Tubulin and RSPH1 antibodies on sperm collected from Dnah12+/− and Dnah12−/− mice caudal epididymis. The fluorescent signal intensity profiles were shown on the right. Scale bars, 10 μm. (E) Representative two-cell embryos and blastocysts of Dnah12+/+, and Dnah12-/ male mice after intracytoplasmic sperm injection. Scale bar, 100 μm.(F) Percentages of two-cell-stage embryos of Dnah12+/+(n=3 mice), and Dnah12-/- male mice (n=4 mice) after intracytoplasmic sperm injection. Data are presented as mean ± SEM; ns indicates no significant difference. (G) Percentages of blastocyst-stage embryos of Dnah12+/+(n=3 mice), and Dnah12-/- males (n=4 mice) after intracytoplasmic sperm injection. Data are presented as mean ± SEM; ns indicates no significant difference. (H) Schematic diagram showing the proposed function of DNAH12 in sperm flagellar development in humans and mice. DNAH12 is essential for recruiting DNALI1 and DNAH1 to sperm flagella and maintaining the proper axonemal arrangement, especially IDAs and CP structures. Loss of DNAH12 causes the failure of DNALI1 and DNAH1 to be recruited to sperm flagella and results in abnormal sperm morphology with compromised axoneme organization, causing male infertility. ODA, outer dynein arm; IDA, inner dynein arm; N-DRC, nexin-dynein regulatory complex; CP, central pair of microtubules; MTBD, microtubule-binding domain; RS, radial spoke.
 
-## ICSI may overcome the infertility caused by DNAH12 deficiency
+### ICSI may overcome the infertility caused by DNAH12 deficiency
 
 Since the DNAH12 mutated patients and the Dnah12-/- mice have similar deficiency, to evaluate the prospects of whether the asthenoteratozoospermia patients caused by DNAH12 variants could be treated with assisted reproductive technology, spermatozoa from Dnah12+/+ and Dnah12-/- mice were used for ICSI. Promisingly, the percentages of 2-cell and blastocyst-stage embryos in Dnah12-/- group showed no difference compared to those of Dnah12+/+ group (Figure 8E–G), indicating that ICSI could also be an effective treatment for infertile men carrying DNAH12 variants.
 
@@ -136,70 +646,70 @@ In conclusion, our study functionally and mechanistically sheds light on a speci
 
 ## Materials and methods
 
-## Human subjects
+### Human subjects
 
 Informed consent and peripheral blood were obtained from the participants and the patients’ information was registered in the Human Reproductive Disease Resource Bank database. Sperm analyses were performed according to the WHO guidelines (WHO, 2021). During their medical consultation, all patients answered a questionnaire regarding clinical presentations. This study was approved by the institutional ethics committee of the University of Science and Technology of China (USTC) with the approval number 2019-KY-168.
 
-## Whole exome sequencing (WES) and bioinformatics analyses
+### Whole exome sequencing (WES) and bioinformatics analyses
 
 Whole-exome capture and sequencing were performed by capturing exons from genomic DNAs of peripheral blood cells, using the SureSelect XT 50 Mb Exon Capture Kit (Agilent, California, USA), and then high-throughput sequencing was conducted on the HiSeq 2000 platform (Illumina, San Diego, CA, USA) following instructions. Variants were called using the Genome Analysis Toolkit HaplotypeCaller and annotated through ANNOVAR (Wang et al., 2010). Variants within exons or exon-intron boundaries were retained and filtered through the criteria we previously described (Yin et al., 2019). Bcftools was applied to detect runs of homozygosity (Narasimhan et al., 2016). Runs of homozygosity over 1.5 Mb were used to calculate the inbreeding coefficients. The genotypes were validated using Sanger sequencing validation. Additional primers are listed in Supplementary file 1, table 1b1. For phylogenetic analysis, different DNAH12 protein sequences were extracted from the UniProt database, and the sequence alignment and phylogenetic tree construction were generated using MEGA11 (Tamura et al., 2021). Newick format tree files were extracted and processed in the Evolview v2 tool (He et al., 2016). For gene family and conserved domain analyses, the batch sequence search tool in Pfam was used to analyze features of proteins and further visualized with the assistance of Evolview v2 tool and TBtools (Chen et al., 2020; Mistry et al., 2021). For protein structure analysis, the structure models were predicted and constructed with the Phyre2 tool (Kelley et al., 2015), interactions were analyzed by the HDOCK (http://hdock.phys.hust.edu.cn/) and Alphafold3 (https://golgi.sandbox.google.com/). The predicted protein structures and possible interactions were further explored and visualized by UCSF Chimera (Version: 1.15, California, USA) according to the manual instruction (Pettersen et al., 2004).
 
-## Scanning electron microscopy (SEM) and transmission electron microscopy (TEM)
+### Scanning electron microscopy (SEM) and transmission electron microscopy (TEM)
 
 Fresh semen samples were obtained and centrifuged at 900 g for 3 min. Spermatozoa were washed with phosphate buffer saline (PBS) three times. Then the sediment was fixed in 0.1 M phosphate buffer (pH 7.4) containing 4% paraformaldehyde, 8% glutaraldehyde, and 0.2% picric acid at 4 °C for at least 8 hr. SEM and TEM were then conducted as we previously described (Ma et al., 2021).
 
-## Generation and verification of the polyclonal anti-DNAH12 antibody
+### Generation and verification of the polyclonal anti-DNAH12 antibody
 
 The characteristics of the DNAH12 including its region immunogenicity, hydrophilicity, surface leakage groups, and sequence homology were analyzed and the 1–200 amino acids sequence of mouse DNAH12 protein (UniProt accession no. Q69Z23) was regarded as the ideal antigen for immunization. Subsequently, the DNAH12 polyclonal antibody was generated in rabbits and rats using the mentioned peptide by Dia-An Biotech, Inc, in Wuhan, China. The specificity of antibodies was further validated using Dnah12+/+ and Dnah12-/- mice in this study.
 
-## Immunoblotting
+### Immunoblotting
 
 Protein lysate was prepared as we previously described (Ma et al., 2022; Zhang et al., 2021). Tissues or cells were lysed using lysis buffer (50 mM tris (pH 7.5), 150 mM NaCl, 5 mMEDTA, and 0.1% NP-40). For human sperm cells, proteins were extracted using the TRIzol reagent. The protein sediment was washed with 95% ethanol containing 0.3M guanidine hydrochloride, dissolved in 1% SDS. Then the protein lysate was boiled for 10 min, and diluted in SDS-sample buffer (62.5 mM TRIS, 2% (w/w) SDS, 10% (w/v) glycerol, and 5% 2-mercaptoethanol). Whereafter the proteins were separated by SDS-PAGE and transferred onto nitrocellulose blotting membranes with a pore size of 0.45 μm (GE Healthcare, 10600002). The membranes were blocked with TBS-Tween buffer (50 mM Tris, 150 mM NaCl, and 0.5% Tween-20, pH 7.4) containing 5% skim milk for 30 min to reduce unspecific binding and then incubated with primary antibodies diluted in TBST buffer containing 5% skim milk at 4 °C overnight. Incubation with secondary antibodies for 1.5 hr was followed by chemiluminescence development system (GE Healthcare, Pittsburgh, USA). Antibodies details are listed in Supplementary file 1c and d.
 
-## Immunofluorescence (IF) staining
+### Immunofluorescence (IF) staining
 
 Human semen smear slides were prepared following the guidelines of WHO (WHO, 2021). Mouse sperm smear slide preparation and immunofluorescence staining were conducted as we described (Dil et al., 2023). For tissue IF staining, tissues were collected and fixed in 4% paraformaldehyde (PFA), the 5μm tissue sections were deparaffinized in xylene, rehydrated in a graded series of ethanol (100%, 95%, 90%, 80%, 70%, and 50% ethanol) and sterile water, and permeabilized with 0.2% Triton X-100 in PBS for 30min. Antigen retrieval was then conducted by boiling slides in a microwave for 30 min in 10 mM citrate buffer (pH 6.0). The other steps are consistent with sperm IF staining. Images of spermatozoa were captured using a Nikon ECLIPSE 80i microscope equipped with a charge-coupled device (Hamamatsu Photonics, Hamamatsu, Japan). The fluorescent signal intensity profiles were depited using Fiji software (https://imagej.net/software/fiji/). Information of antibodies is available in Supplementary file 1c and d.
 
-## Animal models and fertility test
+### Animal models and fertility test
 
 Two mouse models (Dnah12-/- and Dnah12mut/mut) were generated using CRISPR/Cas9 Technology, respectively (Wang et al., 2013). Briefly, to generate the Dnah12-/- mouse model, guide RNAs (gRNAs) targeting exon 5 of Dnah12, a key exon shared by all its transcripts, were transcribed in vitro (Thermo Fisher, CA, USA). Then, the gRNAs and the Cas9 protein were electroporated into C57BL/6 mouse zygotes. The zygotes were introduced into Institute of Cancer Research (ICR) female mice, and the genotypes of the pups were checked using Polymerase Chain Reaction (PCR) with designed primers, the mice with the frameshift mutation c.386_389 del that may lead to paralyzed DNAH12 function were kept for further study. Similar conductions were performed targeting exon 18 of Dnah12 to generate the Dnah12mut/mut mice. The genotyping primers are listed in Supplementary file 1b. For male fertility test, each 8–10 wk male mouse was caged with wild-type female mice; for female fertility test, each 8–10 wk female mouse was caged with one 8–10 wk Dnah12+/- male mouse, the number of offspring was recorded.
 
-## Reverse-transcription PCR and real-time quantitative PCR
+### Reverse-transcription PCR and real-time quantitative PCR
 
 For reverse-transcription PCR (RT-PCR), total RNA was extracted from mouse tissues using TRIzol reagent (TAKARA, Japan). Whereafter 1 μg of RNA was reverse-transcribed using the PrimeScript RT Reagent Kit (TAKARA, Japan). The cDNA was diluted to a comparable concentration and then used for RT–PCR. All amplified DNA fragments were visualized by 2% agarose gel electrophoresis containing GelRed (APExBIO, Houston, TX, USA). For real-time quantitative PCR (qPCR), the experiments were performed by using Hieff UNICON Universal Blue qPCR SYBR Green Master Mix reagent (Yeasen Biotechnology, Shanghai, China) on CFX96 Real-Time System (Bio-Rad, CA, USA) according to the manufacturer’s guidelines. Details of the primers were listed in Supplementary file 1b .
 
-## Histological analysis
+### Histological analysis
 
 As previously described (Yin et al., 2019), after sacrificing mice, the testes, epididymides, tracheas, and oviducts were harvested and fixed in Bouin’s fixative solution (Sigma-Aldrich, Missouri, USA) for hematoxylin and eosin (H&E) staining or 4% PFA fixative solution for immunofluorescence or TUNEL assay. The pictures were captured using a microscope equipped with a charge-coupled device camera (Nikon, Tokyo, Japan).
 
-## Sperm counts, motility, and morphology analysis
+### Sperm counts, motility, and morphology analysis
 
 As previously described (Xu et al., 2022), H&E staining or Papanicolaou staining kit (Solabio, Beijing, China) was used for the evaluation of sperm morphology of patients. For mouse sperm parameters analysis, 8–10 wk-old mice were sacrificed by cervical dislocation, the sperm number per epididymis was then assessed by cutting the epididymis into pieces in PBS and incubating them for 30 min at 37 °C to release the sperm, then counting with a hemocytometer. Sperm motility were assessed by computer-aided sperm analysis (CASA) as we described (Ma et al., 2023). Sperm morphology was assessed on spermatozoa collected from epididymal cauda after H&E staining.
 
-## Testicular cell smear slides and seminiferous tubule squash slides preparation
+### Testicular cell smear slides and seminiferous tubule squash slides preparation
 
 To prepare testicular cell smears, mice were sacrificed and testes were then detached with one time of PBS washing. Then testes were peeled off the testicular capsule, torn into small pieces, and then cut into tiny pieces in PBS. Finally, the cell suspension was filtered through a 200-mesh cell strainer, the filtered cell suspensions were added 10% FBS before spread onto glass slides. For testicular seminiferous tubule squash slide preparation, the testes were dissected and carefully isolated into single testicular seminiferous tubules in PBS dishes. After 10 min of prefixation in fix/lysis solution (2% PFA diluted in PBS), we then applied 100 μL fix/lysis solution onto poly-L-lysine coated glass slides and carefully teased apart approximately 20 seminiferous tubules with the assistance of two sterile forceps on the slides. After that, coverslips were applied using slide forceps and pressed with the heel of the palm for 10 s, then the glass slides were frozen in a small container with liquid N2 immediately till the liquid ceases to bubble. The slides were saved in the –80 °C fridge keeping the coverslip on the slides or removing coverslips for immunofluorescence staining.
 
-## TUNEL assay
+### TUNEL assay
 
 As previously described (Xu et al., 2022), In Situ Cell Death Detection Kit, Fluorescein (Sigma–Aldrich, Missouri, USA) was applied according to the manufacturer’s protocol. Images were captured using a Nikon Eclipse 80i microscope equipped with Hamamatsu C4742-80 digital camera and analyzed using the NIS-Element Microscope imaging software (Nikon, Tokyo, Japan).
 
-## Cell culture and transfection
+### Cell culture and transfection
 
 HEK293T (Cat# CRL-3216, RRID:CVCL_0063, ATCC, VA, USA) cells were authenticated by short tandem repeat (STR) profiling, and tested negative for mycoplasma contamination, No other cell lines from the list of commonly misidentified cell lines maintained by the International Cell Line Authentication Committee were used. For the cell culture and transfection, Aas previously described (Ma et al., 2022), HEK293T cellsHEK293T (ATCC, VA, USA) cells were cultured to 70%–80% density in 12-well plates, followed by transfected with plasmids expressing mCherry-tagged mouse DNAH12 and GFP-tagged mouse DNALI1 using Lipofectamine 3000 (Thermo Fisher, CA, USA) according to the manufacturer’s instructions. Cells were harvested for in-vitro IP and immunoblotting the next day after transfection. The sequences of the primers for plasmid construction are listed in Supplementary file 1d.
 
-## Co-immunoprecipitation (Co-IP)
+### Co-immunoprecipitation (Co-IP)
 
 Tissue extracts were prepared using lysis buffer supplemented with PMSF, Protease Inhibitor Cocktail (Solarbio, Beijing, China) on ice using a glass homogenizer. Lysate was then centrifuged at 12,000 g at 4 °C for 10 min, and the supernatant was divided into equal aliquots. Each aliquot was incubated with 1.5 μg of target antibody or rabbit IgG nonspecific antibody. After incubation at 4 °C overnight with rotation, beads were washed five times with lysis buffer. Finally, the beads were resuspended in SDS-sample buffer and boiled at 100 °C for 10 min. The samples were either analyzed by immunoblotting immediately or stored at –80 °C. For Co-IP in cultured cells, HEK293T cells were plated in six-well plates, followed by transfection using Lipofectamine 3000 reagents. MG132 (5 μM)was added into the cultured cells 6 hr before cell harvesting. Cells were washed with PBS for 10 min, cells were then collected and lysed in the same lysis buffer used for Co-IP from testicular samples. The cell lysate was then incubated with prewashed Protein A/G Magnetic Beads B23202 (Bimake, Texas, USA) and primary antibodies at 4 °C overnight, followed by washing and boiling as described above for the Co-IP protocols for testicular samples.
 
-## Mass spectrometry proteomics
+### Mass spectrometry proteomics
 
 To identify potential partners that interact with DNAH12, we performed IP of mouse testes lysate. Tissue extracts were prepared using lysis buffer supplemented with PMSF, Protease Inhibitor Cocktail (Solarbio, Beijing, China) with the same operation of the Co-IP protocol. Beads were washed three times with lysis buffer and three times with 50 mM NH4HCO3, the pull-down proteins were digested with 0.2 μg Trypsin overnight and stopped by 5% Formic acid, (Thermo Fisher, CA, USA). The peptide mixture was then desalted, dried with a SpeedVac, and resuspended in 0.1% Formic acid, followed by the MS analysis using timsTOF Pro 2 mass spectrometer (Bruker, Massachusetts, USA). The proteomics data are available on the ProteomeXchange Consortium via the iProX partner repository (Chen et al., 2022), with the dataset identifier PXD051681.
 
-## Intracytoplasmic sperm injection (ICSI)
+### Intracytoplasmic sperm injection (ICSI)
 
 3.5–4 wk-old female mice were given an intraperitoneal injection of 5 IU Pregnant Mare Serum Gonadotropin (PMSG, Ningbo Sansheng, China). After 48 hr, a second intraperitoneal injection of 5 IU human Chorionic Gonadotropin (hCG, Ningbo Sansheng, China) was administered. The mice were euthanized by cervical dislocation after 15 hr post-hCG injection. The oviducts were excised and the ampullary regions were opened to release the cumulus-oocyte complexes (COCs). The cumulus cells surrounding the oocytes were digested using hyaluronidase, and the morphologically round MII stage oocytes were selected and washed three times in M2 medium (Sigma-Aldrich, Missouri, USA) before being set aside for use. Male mice are euthanized by cervical dislocation, the epididymides are excised and gently punctured with a syringe, allowing the spermatozoa to flow out. The spermatozoa were then placed in the human tubal fluid (HTF) medium (EasyCheck, Nanjing Aibei Biotechnology, China) and then frozen and thawed repeatedly to remove sperm tails, the single sperm head was microinjected into an MII oocyte and then cultured in potassium simplex optimized medium (KSOM, EasyCheck, Nanjing Aibei Biotechnology, China) at 37 °C under 5% CO2.
 
-## Statistics analysis
+### Statistics analysis
 
 Statistical analyses were performed using GraphPad Prism 8.0 (GraphPad Software, San Diego, CA, USA). Values in tables and graphs are expressed as mean ± SEM. Two groups of mice were compared with Student’s two-tailed t-test for independent data and p>0.05 was considered not significant (ns); *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001 were considered significant.

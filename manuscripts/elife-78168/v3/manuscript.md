@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00hj8s172 Department of Pathology and Cell Biology, Columbia University Irving Medical Center New York United States
-2. https://ror.org/00hj8s172 Irving Institute for Cancer Dynamics, Columbia University New York United States
-3. https://ror.org/02jx3x895 Institute of Immunity and Transplantation, Division of Infection and Immunity, UCL, Royal Free Hospital London United Kingdom
-4. https://ror.org/03v76x132 Department of Laboratory Medicine, Yale University School of Medicine New Haven United States
+1. Department of Pathology and Cell Biology, Columbia University Irving Medical Center New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+2. Irving Institute for Cancer Dynamics, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+3. Institute of Immunity and Transplantation, Division of Infection and Immunity, UCL, Royal Free Hospital London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+4. Department of Laboratory Medicine, Yale University School of Medicine New Haven United States ([ROR:03v76x132](https://ror.org/03v76x132))
 
 † Corresponding author
 
@@ -37,11 +37,17 @@ Here, we combine model selection tools with data from multiple distinct experime
 
 ## Results
 
-## Naive CD4 and CD8 T cells divide very rarely in adult mice and expected lifespans increase with cell age
+### Naive CD4 and CD8 T cells divide very rarely in adult mice and expected lifespans increase with cell age
 
 Reports from our group and others (Hogan et al., 2015; Rane et al., 2018; Reynaldi et al., 2019; Mold et al., 2019) show that the dynamics of naive CD4 and CD8 T cells in adult mice and humans depend on cell age, defined to be time since they (or their ancestor, if they have divided) were released from the thymus. All these studies found that the net loss rate, which is the balance of their rate of loss through death or differentiation, and self-renewal through division, decreases gradually with cell age for both subsets. It is unknown whether these adaptations modulate the processes that regulate their survival, or their ability to self-renew.
 
-To address this question, we used a well-established system that we have developed to quantify lymphocyte dynamics at steady state in healthy mice (Hogan et al., 2017), with the addition of detailed measurements of cell proliferation activity throughout. Briefly, hematopoietic stem cells (HSCs) in the bone marrow (BM) are partially and specifically depleted by optimised doses of the transplant conditioning drug busulfan, and reconstituted with T- and B-cell-depleted BM from congenic donor mice. Chimerism rapidly stabilises among progenitors in the bone marrow (Verheijen et al., 2020) and thymus (Hogan et al., 2015) and is maintained for the lifetime of the mouse (Figure 1A). The host’s peripheral lymphocyte populations are unperturbed by treatment, and as donor T cells develop they progressively replace host T cells in the periphery through natural turnover. This system allows us to estimate the rates of influx into different lymphocyte populations and the net loss rates of cells within them; identify subpopulations with different rates of turnover; and infer whether and how these dynamics vary with host and/or cell age (Hogan et al., 2015; Gossel et al., 2017; Verheijen et al., 2020). Here, we generated a cohort of busulfan chimeric mice who underwent bone marrow transplant (BMT) between 7 and 25 weeks of age. At different times post-BMT, we enumerated host and donor-derived thymocyte subsets and peripheral naive T cells from spleen and lymph nodes (see Figure 1—figure supplement 1 for the flow cytometric gating strategy). We began by normalising the chimerism (fraction donor) within naive CD4 and CD8 T cells to that of DP1 thymocytes to remove the effect of variation across mice in the stable level of bone-marrow chimerism. This normalised donor fraction (fd) will approach 1 within a population if it turns over completely – that is, if its donor:host composition equilibrates to that of its precursor. Saturation at fd<1 implies incomplete replacement (Figure 1A), which can occur either through waning influx from the precursor population, or if older (host) cells persist longer than new (donor) cells, on average, implying cell-age effects on turnover or self-renewal. Previously, we observed incomplete replacement of both naive CD4 and CD8 T cells in adult busulfan chimeric mice (Hogan et al., 2015), and excluded the possibility that this shortfall derived from the natural involution of the thymus, leading us to infer that the net loss rates of both subsets increase with cell age (Hogan et al., 2015; Rane et al., 2018). For the present study, we also used concurrent measurements of Ki67, a nuclear protein that is expressed following entry into cell cycle and is detectable for approximately 3–4 days afterwards (Gossel et al., 2017; Miller et al., 2018), and stratified by host and donor cells. We reasoned that this new information would enable us to determine whether cell-age effects are manifest through survival or self-renewal.
+To address this question, we used a well-established system that we have developed to quantify lymphocyte dynamics at steady state in healthy mice (Hogan et al., 2017), with the addition of detailed measurements of cell proliferation activity throughout. Briefly, hematopoietic stem cells (HSCs) in the bone marrow (BM) are partially and specifically depleted by optimised doses of the transplant conditioning drug busulfan, and reconstituted with T- and B-cell-depleted BM from congenic donor mice. Chimerism rapidly stabilises among progenitors in the bone marrow (Verheijen et al., 2020) and thymus (Hogan et al., 2015) and is maintained for the lifetime of the mouse (Figure 1A). The host’s peripheral lymphocyte populations are unperturbed by treatment, and as donor T cells develop they progressively replace host T cells in the periphery through natural turnover. This system allows us to estimate the rates of influx into different lymphocyte populations and the net loss rates of cells within them; identify subpopulations with different rates of turnover; and infer whether and how these dynamics vary with host and/or cell age (Hogan et al., 2015; Gossel et al., 2017; Verheijen et al., 2020). Here, we generated a cohort of busulfan chimeric mice who underwent bone marrow transplant (BMT) between 7 and 25 weeks of age. At different times post-BMT, we enumerated host and donor-derived thymocyte subsets and peripheral naive T cells from spleen and lymph nodes (see Figure 1—figure supplement 1 for the flow cytometric gating strategy). We began by normalising the chimerism (fraction donor) within naive CD4 and CD8 T cells to that of DP1 thymocytes to remove the effect of variation across mice in the stable level of bone-marrow chimerism. This normalised donor fraction (fd) will approach 1 within a population if it turns over completely – that is, if its donor:host composition equilibrates to that of its precursor. Saturation at $f_{d}<1$ implies incomplete replacement (Figure 1A), which can occur either through waning influx from the precursor population, or if older (host) cells persist longer than new (donor) cells, on average, implying cell-age effects on turnover or self-renewal. Previously, we observed incomplete replacement of both naive CD4 and CD8 T cells in adult busulfan chimeric mice (Hogan et al., 2015), and excluded the possibility that this shortfall derived from the natural involution of the thymus, leading us to infer that the net loss rates of both subsets increase with cell age (Hogan et al., 2015; Rane et al., 2018). For the present study, we also used concurrent measurements of Ki67, a nuclear protein that is expressed following entry into cell cycle and is detectable for approximately 3–4 days afterwards (Gossel et al., 2017; Miller et al., 2018), and stratified by host and donor cells. We reasoned that this new information would enable us to determine whether cell-age effects are manifest through survival or self-renewal.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/78168/elife-78168-fig1-v3.jpg)
+
+**Figure 1.:** (A) Schematic description of the busulfan chimera system, in which congenically labelled donor lymphocytes percolate into peripheral compartments following partial ablation of haematopoietic stem cells and bone marrow transplant (BMT). (B) Candidate models of naive T cell dynamics. In all models, we assume Ki67- and Ki67+ cells are exported from the thymus at rates proportional to the numbers of Ki67- and Ki67+ single positive (SP) thymocytes, respectively. We considered three classes of model; (1) Homogeneous, in which all cells are lost at the same rate and divide at the same rate. In the simplest ‘neutral’ case these rates are constant. We also considered extensions in which loss or division rates were allowed to vary with total cell numbers (density-dependent models). (2) Recent thymic emigrants (RTE) and mature naive (MN) T cells exhibit distinct kinetics, with a constant rate of maturation μ. (3) Loss or division rates vary with post-thymic cell age, $a$. Here we explicitly model the time-evolution of the population density of cells of post-thymic age $a$ with Ki67 expression $k$ at mouse age $t$, $u⁢(a,k,t)$. Mathematical details of all models are given in Appendix 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78168/elife-78168-fig1-figsupp1-v3.jpg)
 
 To describe these data we explored variants of a structured population model in which either the rate of division or rate of loss of naive T cells varies exponentially with their post-thymic age. These models are three dimensional linear partial differential equations (PDEs) that extend those we described previously (Hogan et al., 2015; Rane et al., 2018), allowing us to track the joint distribution of cell age and Ki67 expression within the population. A simpler variant of the age-structured model is one that explicitly distinguishes RTE from mature naive T cells, with a constant rate of maturation between two, and allows each to have their own rates of division and loss (van Hoeven et al., 2017; Rane et al., 2018). We also considered models of homogeneous cell dynamics; the simplest ‘neutral’ model with uniform and constant rates of division and loss, and density-dependent models that allowed these rates to vary with population size. All models are illustrated schematically in Figure 1B and their formulations are detailed in Appendix 1.
 
@@ -49,9 +55,161 @@ Each model was fitted simultaneously to the measured timecourses of total naive 
 
 Our analysis confirmed support for the models of cell-age-dependent kinetics (Figure 2), with all other candidates, including the RTE model, receiving substantially lower statistical support (Table 1; fits shown in Figure 2—figure supplement 1). For naive CD4 T cells, we found strongest support for the age-dependent loss model (relative weight = 86%; Figure 2A) which revealed that their rate of loss declines as they age, halving roughly every 3 months (Table 2). For naive CD8 T cells the age-dependent division model was favoured statistically (relative weight = 85%; Figure 2B, dashed lines). However, it yielded extremely low division rates, with recently exported cells having an estimated mean interdivision time of 18 months (95% CI: 14–25), and the division rate increasing only very slowly with cell age (doubling every 10 months). This model was therefore very similar to a neutral, homogeneous model and predicted that the normalised donor fraction approaches 1 in aged mice. This conclusion contradicts findings from our own and others’ studies that demonstrated that models assuming homogeneity in naive CD8 T cells failed to capture their dynamics in adult and aged mice (2–20 months old) (Hogan et al., 2015; Rane et al., 2018; Reynaldi et al., 2019).
 
+**Table 1.**
+ Ranking of models describing naive CD4 and CD8 T cell dynamics in adult busulfan chimeric mice.We considered instances of the three classes of model (1–3; illustrated in Figure 1B), with each instance fitted simultaneously to the timecourses of total naive T cell numbers, host:donor chimerism, and Ki67 expression within host and donor cells. We indicate the number of fitted quantities; this includes both model parameters and initial conditions. Measures of relative support for each model are expressed as weights, which reflect the average accuracy with which each model predicts out-of-sample data, relative to the other models in consideration. These weights were calculated using the Leave-One-Out cross validation and the Pseudo-Bayesian Model Averaging methods, using the loo-2.0 package in the Rstan library; see Appendix 3 for details.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Population</th>
+      <th>Model</th>
+      <th>Unknowns</th>
+      <th>Model weight (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Naive CD4</td>
+      <td>3 – Loss rate varying with cell age</td>
+      <td>4</td>
+      <td>86.3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3 – Division rate varying with cell age</td>
+      <td>4</td>
+      <td>13.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1 – Neutral</td>
+      <td>5</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2 – RTE and mature naive</td>
+      <td>8</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1 – Density dependent loss</td>
+      <td>6</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1 – Density dependent division (LIP)</td>
+      <td>6</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>Naive CD8</td>
+      <td>3 – Division rate varying with cell age</td>
+      <td>4</td>
+      <td>85.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3 – Loss rate varying with cell age</td>
+      <td>4</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1 – Density dependent division (LIP)</td>
+      <td>6</td>
+      <td>4.5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1 – Density dependent loss</td>
+      <td>6</td>
+      <td>1.5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2 – RTE and mature naive</td>
+      <td>8</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>1 – Neutral</td>
+      <td>5</td>
+      <td>0.0</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 2.](https://cdn.elifesciences.org/articles/78168/elife-78168-fig2-v3.jpg)
+
+**Figure 2.:** (A) The best fitting, age-dependent loss model of naive CD4 T cell dynamics describes the timecourses of their total numbers, chimerism and Ki67 expression in mice ($n=$ 111) who underwent busulfan treatment and BMT in three different age groups (indicated within grey bars). (B) Fits to naive CD8 T cell dynamics ($n=$ 116) yielded by the age-dependent division model (dashed lines) and the age-dependent loss model (solid lines). Envelopes indicate the 95% credible interval on the mean of the model prediction, generated by sampling from the posterior distributions of model parameters. For clarity, these envelopes are omitted in panel B, to allow visual comparison of the two models.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78168/elife-78168-fig2-figsupp1-v3.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/78168/elife-78168-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) CD4 and (B) CD8 T cells derived from fitting the age-dependent loss model to the data from adult busulfan chimeric mice.
+
+**Table 2.**
+ Parameter estimates derived from fitting the age-dependent loss model to data from adult busulfan chimeric mice.Residence and interdivision times are defined as the inverses of the instantaneous loss rate ($\delta⁢(a)$) and the division rate ($ρ$), respectively. Posterior distributions of model parameters are shown in Figure 2—figure supplement 2. CI: credible interval.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Population</th>
+      <th>Parameter</th>
+      <th>Estimate</th>
+      <th>95% CI</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Naive CD4</td>
+      <td>Expected residence time of cells of age 0 (days)</td>
+      <td>22</td>
+      <td>18–28</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Time taken for loss rate to halve (days)</td>
+      <td>92</td>
+      <td>71–130</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mean interdivision time (months)</td>
+      <td>18</td>
+      <td>16–22</td>
+    </tr>
+    <tr>
+      <td>Naive CD8</td>
+      <td>Expected residence time of cells of age 0 (days)</td>
+      <td>40</td>
+      <td>34–46</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Time taken for loss rate to halve (days)</td>
+      <td>146</td>
+      <td>107–206</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Mean interdivision time (months)</td>
+      <td>14</td>
+      <td>12–16</td>
+    </tr>
+  </tbody>
+</table>
+
 Any signal of improvement in fitness with cell age, either in loss or division rates, is manifest primarily in an asymptotic value of the normalised donor fraction lower than one. For naive CD8 T cells, the normalised donor fractions at late times post-BMT exhibit considerable scatter (Figure 2B, middle row), and so this asymptote is relatively poorly defined. This uncertainty reduces our ability to discriminate between the two age-dependent models based solely on information criteria. For the next phase of analysis, we therefore retained the age-dependent loss model, which had the next highest level of support and was similar by visual inspection (Figure 2B, solid lines), as a candidate description of naive CD8 T cell dynamics.
 
-## Age-dependent loss models can describe RTE and mature naive CD4 and CD8 T cell kinetics in co-transfer experiments
+### Age-dependent loss models can describe RTE and mature naive CD4 and CD8 T cell kinetics in co-transfer experiments
 
 To challenge these models further, we confronted them with data from a study that compared the ability of RTE and mature naive (MN) CD4 and CD8 T cells to persist following co-transfer to an adult congenic recipient (Houston et al., 2011). This study used a reporter mouse strain in which green fluorescent protein (GFP) expression is driven by Rag2 gene expression elements, and is thus expressed throughout thymic development and for several days following export into the periphery. This is a long-established mouse model in which GFP expression is used as a surrogate marker of RTE status (Boursalian et al., 2004). After transferring RTE (GFP+) and MN (GFP-) cells in equal numbers, the RTE:MN ratio within both CD4 and CD8 populations decreased progressively, falling by approximately 50% at 6 weeks (Figure 3), indicating that MN T cells persist significantly longer than RTE. We simulated this co-transfer using the models fitted to the data from the busulfan chimeric mice, and found that the age-dependent loss model predicted the trends in the CD4 and CD8 RTE:MN ratios (Figure 3, blue lines) while the fitted age-dependent division model, which exhibited very weak age effects, predicted that the ratio would remain close to 1 (Figure 3, orange lines). Details of this simulation procedure are given in Appendix 4. These data confirm the presence of strong cell-age effects in naive T cell persistence, and substantially reduce our confidence in the best-fitting model for CD8 T cells, which predicted only a very weak dependence of cell division rates on cell age.
 
@@ -59,7 +217,7 @@ To challenge these models further, we confronted them with data from a study tha
 
 **Figure 3.:** We simulated the co-transfer experiment described by Houston et al., 2011 in which RTE from 5- to 9-week-old RagGFP reporter mice were co-transferred with equal numbers of mature naive (MN) T cells from mice aged 14 weeks or greater to congenic recipients. Red points represent their observed RTE:MN ratios. We then used the models fitted to the data from busulfan chimeric mice (Figure 2) to predict the outcome of this co-transfer experiment, with the age-dependent division model shown in orange, and the age-dependent loss model in blue. The pale blue envelopes show the median and 2.5% and 97.5% quantiles of the RTE:MN ratio predicted by the models, obtained by sampling from the posterior distribution of parameters. This envelope was too narrow to be shown for the age-dependent division models (orange lines).
 
-## Models parameterised using data from adult mice accurately predict the dynamics of naive CD4 T cells in neonates, but not of CD8 T cells
+### Models parameterised using data from adult mice accurately predict the dynamics of naive CD4 T cells in neonates, but not of CD8 T cells
 
 Next, we wanted to characterise the dynamics of naive CD4 and CD8 T cells during the first few weeks of life, and connect the two regimes to build unified models of the dynamics of these populations from birth into old age. Because it takes at least 4 weeks for peripheral donor-derived T cells to be detectable in busulfan chimeras, this system is not suitable for studying cell dynamics in young mice. Instead, we asked whether the models parameterised using data from adult mice could explain dynamics in young mice, and determine what (if any) modifications of the model were needed. We drew on two new data sets. One comprised the numbers and Ki67 expression of naive T cells derived from wild-type mice aged between 5 and 300 days. The other was derived from a cohort of RagGFP reporter mice, in which information about cell age can be gleaned from GFP expression levels. In this strain, intracellular staining for Ki67 is not possible without severely compromising GFP fluorescence. Therefore, we also introduced a Ki67RFP reporter construct (Basak et al., 2014) to the strain to generate RagGFPKi67RFP dual reporter mice. Tracking GFP and RFP expression simultaneously allows us to study the kinetics and division rates of RTE, which are enriched for GFP+ cells, and of mature naive T cells, which are expected to have largely lost GFP. We could then directly confront the models derived from adult mice with these new data.
 
@@ -67,33 +225,33 @@ Figure 4A and B show the numbers of naive CD4 and CD8 T cells and their Ki67 exp
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/78168/elife-78168-fig4-v3.jpg)
 
-**Figure 4.:** Panels A and B: For naive CD4 and CD8 cells, we extrapolated the age-dependent loss models (red curves) that were fitted to data from adult busulfan chimeric mice (red points) back to age 1 day. We compared these predicted trajectories with independent observations of naive T cell numbers and Ki67 expression in wild-type mice aged between 5–300 days ( mice, blue points), and from Ragn=34GFPKi67RFP reporter mice ( mice, black points). Panels C and D: We then estimated one additional parameter – the expected duration of GFP expression – by fitting the age-dependent loss model to the timecourses of total numbers of naive CD4 and CD8 GFPn=19+ cells in these reporter mice (leftmost panels). We could then predict the timecourses of the percentages of GFP+Ki67+ and GFP+Ki67– cells (centre and right panels).
+**Figure 4.:** Panels A and B: For naive CD4 and CD8 cells, we extrapolated the age-dependent loss models (red curves) that were fitted to data from adult busulfan chimeric mice (red points) back to age 1 day. We compared these predicted trajectories with independent observations of naive T cell numbers and Ki67 expression in wild-type mice aged between 5–300 days ($n=34$ mice, blue points), and from RagGFPKi67RFP reporter mice ($n=19$ mice, black points). Panels C and D: We then estimated one additional parameter – the expected duration of GFP expression – by fitting the age-dependent loss model to the timecourses of total numbers of naive CD4 and CD8 GFP+ cells in these reporter mice (leftmost panels). We could then predict the timecourses of the percentages of GFP+Ki67+ and GFP+Ki67– cells (centre and right panels).
 
 Strikingly, the model of naive CD4 T cell dynamics in adult chimeric mice captured the total numbers and Ki67 expression of these cells in neonates remarkably well (Figure 4A), as well as the dynamics of Ki67- and Ki67+ RTE as defined by GFP expression (Figure 4C). This agreement indicates that the high level of Ki67 expression in naive CD4 T cells early in life does not reflect increased rates of division or LIP, but is rather inherited from precursors within the neonatal thymus, a large fraction of which undergo cell division (Appendix 2).
 
 For naive CD8 T cells the cell-age-dependent loss model accurately predicted cell dynamics in both the reporter and wild-type mice back to approximately 3 weeks of age, but underestimated Ki67+ frequencies in neonatal mice (Figure 4B, right panel), suggesting that naive CD8 T cells exhibit distinct dynamics very early in life. Intuitively, this mismatch can be explained in two ways: either CD8 RTE are lost at a higher rate in neonates than in adults or they divide more rapidly. In the former, a greater proportion of GFP+ Ki67+ RTE will be lost before they become Ki67- and so the predicted proportion of cells that are GFP+ Ki67- will be lower (Figure 4D, centre panel). In the latter, the GFP+ Ki67+ proportion will increase (Figure 4D, right panel). Therefore, to explain naive CD8 T cell dynamics in neonates the basic model of cell-age-dependent loss in adults can be extended in two ways, modulating either the division or loss rate early in life.
 
-## Naive CD8 T cells are lost at a higher rate in neonates than in adults
+### Naive CD8 T cells are lost at a higher rate in neonates than in adults
 
 To distinguish between these possibilities we turned to a study by Reynaldi et al., 2019, who used an elegant tamoxifen-driven CD4-CreERT2-RFP reporter mouse model to track cohorts of CD8 T cells released from the thymus into the peripheral circulation of animals of varying ages. In this model, a pulse of tamoxifen permanently induces RFP in cells expressing CD4, including CD4+CD8+ double-positive thymocytes. The cohort of naive CD8 T cells deriving from these precursors continues to express RFP in the periphery and timecourses of their numbers in individual mice were estimated with serial sampling of blood. These timecourses showed that the net loss rate of naive CD8 T cells appears to slow with their post-thymic age, and the rate of loss of cells immediately following release from the thymus appears to be greater in neonates than in adults (Figure 5A). Without measures of proliferation, these survival curves reflect only the net effect of survival and self-renewal. Nevertheless, we reasoned that confronting our models with these additional data, and triangulating with inferences from other datasets, would allow us to identify a ‘universal’ model of naive CD8 T cell loss and division across the mouse lifespan.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/78168/elife-78168-fig5-v3.jpg)
 
-**Figure 5.:** in vivo – an analysis of data from Reynaldi et al., 2019.(A) Fitting the age-dependent loss model to the estimated numbers of time-stamped naive CD8 T cells in CD4-CreERT2 reporter mice () treated with tamoxifen at different ages and sampled longitudinally. We used a hierarchical modelling framework and show mouse-specific fits to these timecourses (colours indicate different animals, dots are observations and lines are model fits). In the best fitting model, estimates of initial cell numbers were mouse-specific, while the net loss rate of RTE of age 0 (n=66) was specific to each mouse age group. (λ0=λ⁢(a=0)B) Corresponding estimates of  for each age group of mice (black horizontal bars), with mouse-specific estimates (grey points) and the fitted, empirical description of λ0 with mouse age (see Appendix 7, λ0Equation 42). (C) Predicting the kinetics of the percentages of GFP+ Ki67– and GFP+ Ki67+ CD8 T cells using the age-dependent loss model, including neonatal age effects in either the loss rate (green dashed line) or in the division rate (blue dashed line). The red line (partly concealed by the blue dashed line) shows the predictions of the original model fitted to the adult busulfan chimeric mice, with no mouse age effects.
+**Figure 5.:** (A) Fitting the age-dependent loss model to the estimated numbers of time-stamped naive CD8 T cells in CD4-CreERT2 reporter mice ($n=66$) treated with tamoxifen at different ages and sampled longitudinally. We used a hierarchical modelling framework and show mouse-specific fits to these timecourses (colours indicate different animals, dots are observations and lines are model fits). In the best fitting model, estimates of initial cell numbers were mouse-specific, while the net loss rate of RTE of age 0 ($\lambda_{0}=\lambda⁢(a=0)$) was specific to each mouse age group. (B) Corresponding estimates of $\lambda_{0}$ for each age group of mice (black horizontal bars), with mouse-specific estimates (grey points) and the fitted, empirical description of $\lambda_{0}$ with mouse age (see Appendix 7, Equation 42). (C) Predicting the kinetics of the percentages of GFP+ Ki67– and GFP+ Ki67+ CD8 T cells using the age-dependent loss model, including neonatal age effects in either the loss rate (green dashed line) or in the division rate (blue dashed line). The red line (partly concealed by the blue dashed line) shows the predictions of the original model fitted to the adult busulfan chimeric mice, with no mouse age effects.
 
-We re-analysed the data from Reynaldi et al. using a Bayesian hierarchical approach (Appendix 7) to explain the variation in the kinetics of loss of these cohorts of cells across animals and age groups. Since there was no readout of cell division in this system, we simplified the cell-age-dependent loss model by combining division and loss into a net loss rate λ⁢(a). We then fitted this model to the timecourses of labelled naive CD8 T cells across the different treatment groups. We tested four possibilities in which either the initial numbers of labelled cells (N0) and/or the net loss rate of cells of age 0 (λ0) varied across groups or animals as normally-distributed hyper-parameters. The model in which N0 was specific to each mouse and λ0 was specific to each age group gained 100% relative support (Appendix 7—table 1; fits in Figure 5A). This model confirmed that CD8 RTE are indeed lost at a significantly higher rate in the younger groups of mice (Figure 5B). We then described this decline in λ0 with mouse age empirically with a sigmoid (Hill) function, λ0⁢(t) (Figure 5B, solid line) and used it to replace the discrete group-level variation in λ0 within the hierarchical age-structured model (Appendix 7). This ‘universal’ model, in which the loss rate of naive CD8 T cells declines with cell age but begins at higher baseline levels early in life, explained the data from Reynaldi et al. equally well, visually and statistically (difference in the expected log pointwise predictive density, elpdloo=3.4; differences <4 typically indicate that two models have similar predictive performance (Sivula et al., 2020). See Appendix 3 for details of the calculation of elpdloo values.)
+We re-analysed the data from Reynaldi et al. using a Bayesian hierarchical approach (Appendix 7) to explain the variation in the kinetics of loss of these cohorts of cells across animals and age groups. Since there was no readout of cell division in this system, we simplified the cell-age-dependent loss model by combining division and loss into a net loss rate $\lambda⁢(a)$. We then fitted this model to the timecourses of labelled naive CD8 T cells across the different treatment groups. We tested four possibilities in which either the initial numbers of labelled cells ($N_{0}$) and/or the net loss rate of cells of age $0$ ($\lambda_{0}$) varied across groups or animals as normally-distributed hyper-parameters. The model in which $N_{0}$ was specific to each mouse and $\lambda_{0}$ was specific to each age group gained 100% relative support (Appendix 7—table 1; fits in Figure 5A). This model confirmed that CD8 RTE are indeed lost at a significantly higher rate in the younger groups of mice (Figure 5B). We then described this decline in $\lambda_{0}$ with mouse age empirically with a sigmoid (Hill) function, $\lambda_{0}⁢(t)$ (Figure 5B, solid line) and used it to replace the discrete group-level variation in $\lambda_{0}$ within the hierarchical age-structured model (Appendix 7). This ‘universal’ model, in which the loss rate of naive CD8 T cells declines with cell age but begins at higher baseline levels early in life, explained the data from Reynaldi et al. equally well, visually and statistically (difference in the expected log pointwise predictive density, elpdloo=3.4; differences <4 typically indicate that two models have similar predictive performance (Sivula et al., 2020). See Appendix 3 for details of the calculation of elpdloo values.)
 
 This analysis shows that the baseline net loss rate of CD8 RTE declines from the age of ∼3 weeks and stabilises at a level approximately 50% lower by age 9 weeks (Figure 5B). Therefore, newly exported naive CD8 T cells are lost at a higher rate in neonates than in adults, or they divide more slowly. Only the former is consistent with our inference from the Rag/Ki67 dual reporter mice. Indeed, we confirmed that simulating the age-dependent loss model from birth with a lower baseline division rate in neonates than in adults failed to improve the description of the early trajectories of the frequencies of GFP+ Ki67– and GFP+ Ki67+ naive CD8 T cells (Figure 5C, blue dashed line). In contrast, increasing the baseline loss rate in neonates according to the function we derived from the data in Reynaldi et al. (Appendix 7) captured these dynamics well (Figure 5C, green dashed line).
 
 In summary, we find that naive CD8 T cells rarely divide, increase their capacity to survive with cell age, and those generated within the first few weeks of life are lost at a higher baseline rate than those in adults.
 
-## Ki67 expression within naive CD4 and CD8 T cells in adult mice is almost entirely a residual signal of intra-thymic proliferation
+### Ki67 expression within naive CD4 and CD8 T cells in adult mice is almost entirely a residual signal of intra-thymic proliferation
 
 Our analyses are consistent with earlier reports that naive T cells in mice divide very rarely (Modigliani et al., 1994; den Braber et al., 2012; Hogan et al., 2015). By explicitly modeling the kinetics of quiescent and recently divided cells, we can also explain the apparently contradictory observation that more than 60% of naive CD4 and CD8 T cells express Ki67 early in life, declining to 2–3% by 3 months of age (Figure 4). We argue that this pattern, rather than being an indication of lymphopenia-induced proliferation early in life fading to low-level but appreciable self-renewal in adults, is instead just a shadow of intrathymic division; Ki67 among peripheral naive T cells is almost entirely derived from cells that divided in the thymus and were exported within the previous few days. This conclusion emerged from the modelling of the busulfan chimera data but is also directly evident from the RagGFP Ki67RFP reporter mice, in which Ki67-RFP expression among naive T cells was exclusively found on GFPhigh peripheral RTE, and was a continuum of the expression by mature single-positive (SP) thymocytes (Figure 6A). This inheritance of expression from the thymus is also reflected in the high degree of correlation between the frequencies of Ki67+ cells among SP thymocytes and peripheral naive T cells throughout life, observed in wild-type mice (Figure 6B).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/78168/elife-78168-fig6-v3.jpg)
 
-**Figure 6.:** (A) Flow cytometry analyses of late stage single positive thymocytes and naive CD4 and CD8 T cells from lymph nodes in a 41-day-old RagGFP Ki67RFP reporter mouse, showing that Ki67 expression among naive T cells is largely restricted to GFP+ RTE. In the ‘overlaid’ panels, naive T cells are shown in red and mature SP thymocytes in black. (B) Data from a cohort of wild-type mice showing that Ki67 levels in SP thymocytes and peripheral naive T cells correlate throughout life (Spearman’s rank correlation coefficient;  0.90 (CD4), 0.94 (CD8); both ρ=p<10-15).
+**Figure 6.:** (A) Flow cytometry analyses of late stage single positive thymocytes and naive CD4 and CD8 T cells from lymph nodes in a 41-day-old RagGFP Ki67RFP reporter mouse, showing that Ki67 expression among naive T cells is largely restricted to GFP+ RTE. In the ‘overlaid’ panels, naive T cells are shown in red and mature SP thymocytes in black. (B) Data from a cohort of wild-type mice showing that Ki67 levels in SP thymocytes and peripheral naive T cells correlate throughout life (Spearman’s rank correlation coefficient; $ρ=$ 0.90 (CD4), 0.94 (CD8); both p<10-15).
 
 This result also gives an intuitive explanation of the trajectories of Ki67 expression within donor and host cells in the busulfan chimeric mice, which are distinct soon after BMT but converge after 6–12 months (Figure 2). This behaviour does not derive from any intrinsic differences between host and donor T cells, but rather from the distinct age profiles of the two populations. Following BMT, the rate of production of host naive T cells declines substantially, as the procedure typically results in 80%–90% replacement of host HSC with donor HSC. Since Ki67 is seen almost exclusively within very recent thymic emigrants, the frequency of Ki67-expressing host naive T cells then declines rapidly. Conversely, new donor-derived naive T cells are initially highly enriched for Ki67+ cells. The frequencies of Ki67+ cells within the two populations then gradually converge to pre-transplant levels as aged Ki67- donor cells accumulate, and host-derived naive T cells equilibrate at lower numbers.
 
@@ -119,18 +277,18 @@ Naive T cells proliferate under severely lymphopenic conditions in mice (Almeida
 
 ## Materials and methods
 
-## Generating busulfan chimeric mice
+### Generating busulfan chimeric mice
 
 SJL.C57Bl/6J (CD45.1.B6) mice were treated with optimised low doses of busulfan to deplete HSC but leave peripheral T cell subsets intact. HSC were reconstituted with congenically-distinct, T cell depleted bone marrow from C57Bl/6J donors to generate stable chimeras. Details of the protocols are given in Hogan et al., 2017.
 
-## Mice
+### Mice
 
 Mki67tm1.1Cle/J (Ki67-RFP) mice were generously provided by the laboratory of Prof. Hans Clevers (Hubrecht Institute, KNAW and University Medical Centre Utrecht, Utrecht, The Netherlands; Basak et al., 2014). FVB-Tg(Rag2-EGFP) 1Mnz/J mice were from Jax Laboratories (strain 005688). Ki67-RFP x Rag2-EGFP F1 mice were subsequently backcrossed to a C57Bl/6J background for seven generations. Busulfan chimeric mice and wild-type control mice were housed in conventional animal facilities at the UCL Royal Free Campus, London, UK (UCL). Mice were housed in individually ventilated cages and drank irradiated water. All the animals were handled according to UK home office regulations (licence PPL PP2330953) and institutional animal care and use committee (IACUC) protocols at University College London.
 
-## Flow cytometry
+### Flow cytometry
 
-Single-cell suspensions were prepared from the thymus, spleen and lymph nodes of busulfan chimeric mice, wildtype control mice, or germ-free mice. Cells were stained with the following monoclonal antibodies and cell dyes: CD45.1 FITC, CD45.2 FITC, CD45.2 AlexaFluor700, TCR-β APC, CD4+ PerCP-eFluor710, CD44 APC-eFluor780, CD25 PE, CD25 eFluor450, CD25 PE-Cy7, CD62L eFluor450, NK1.1 PE-Cy7 (all eBioscience), CD45.1 BV650, CD45.2 PE-Dazzle, TCR-β PerCP-Cy5.5 CD4+ BV711, CD44 BV785, CD25 BV650 (all Biolegend), CD62L BUV737 (BD Biosciences), LIVE/DEAD near-IR and LIVE/DEAD blue viability dyes. For Ki67 staining, cells were fixed using the eBioscience Foxp3 /Transcription Factor Staining Buffer Set and stained with either anti-mouse Ki67 FITC or PE (both eBioscience). Cells were acquired on a BD LSR-Fortessa flow cytometer and analysed with Flowjo software (Treestar). See Figure 1—figure supplement 1 for the gating strategy used to identify mature single positive thymocytes and peripheral naive subsets, and gates to measure Ki67 frequencies.
+Single-cell suspensions were prepared from the thymus, spleen and lymph nodes of busulfan chimeric mice, wildtype control mice, or germ-free mice. Cells were stained with the following monoclonal antibodies and cell dyes: CD45.1 FITC, CD45.2 FITC, CD45.2 AlexaFluor700, TCR-$\beta$ APC, CD4+ PerCP-eFluor710, CD44 APC-eFluor780, CD25 PE, CD25 eFluor450, CD25 PE-Cy7, CD62L eFluor450, NK1.1 PE-Cy7 (all eBioscience), CD45.1 BV650, CD45.2 PE-Dazzle, TCR-$\beta$ PerCP-Cy5.5 CD4+ BV711, CD44 BV785, CD25 BV650 (all Biolegend), CD62L BUV737 (BD Biosciences), LIVE/DEAD near-IR and LIVE/DEAD blue viability dyes. For Ki67 staining, cells were fixed using the eBioscience Foxp3 /Transcription Factor Staining Buffer Set and stained with either anti-mouse Ki67 FITC or PE (both eBioscience). Cells were acquired on a BD LSR-Fortessa flow cytometer and analysed with Flowjo software (Treestar). See Figure 1—figure supplement 1 for the gating strategy used to identify mature single positive thymocytes and peripheral naive subsets, and gates to measure Ki67 frequencies.
 
-## Mathematical modelling and statistical analysis
+### Mathematical modelling and statistical analysis
 
 We fitted a set of candidate mathematical models (described in Appendix 1) to the data from adult busulfan chimeric mice, using empirical descriptions of the pool sizes and Ki67+ fraction within SP thymocytes to define thymic influx (Appendix 2). Specifically, we fitted simultaneously to the time courses of total cell counts, normalised donor fraction and the fraction of cells that were Ki67+ within donor and host subsets of naive CD4 and CD8 T cells. We used a Bayesian estimation approach using R and Stan. Code and data used to perform model fitting, and details of the prior distributions for parameters, are available at this linked Github repository. Models were ranked based on information criteria estimated using the Leave-One-Out (LOO) cross validation method (Vehtari et al., 2015; Vehtari et al., 2016), described in Appendix 3. Appendix 4 describes how we simulated the co-transfer experiment performed by Houston et al., 2011, using the age-structured PDE model (Appendix 1) with parameters estimated from fits to the busulfan chimeric mouse data. To predict the dynamics of naive T cells in neonatal mice, we constructed a mapping between cell age and GFP expression to predict the kinetics of GFP+ and Ki67+ cells in RagGFP Ki67RFP reporter mice aged between 11 days and 4 months (Appendix 5), and the models fitted to data from adult mice were extrapolated back to near birth (Appendix 6). To re-analyze longitudinal data from Reynaldi et al., 2019, tracking the survival of cohorts of naive CD8 T cells within different age groups of mice, we used a hierarchical Bayesian modelling approach (Appendix 7).

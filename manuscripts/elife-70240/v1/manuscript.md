@@ -14,14 +14,14 @@
 
 ### Affiliations
 
-1. https://ror.org/05tf9r976 Department of Cardiology and Cardiovascular Research Institute of PLA, General Hospital of Northern Theater Command Shenyang China
-2. https://ror.org/0202bj006 Department of Cardiology, Shengjing Hospital of China Medical University Shenyang China
+1. Department of Cardiology and Cardiovascular Research Institute of PLA, General Hospital of Northern Theater Command Shenyang China ([ROR:05tf9r976](https://ror.org/05tf9r976))
+2. Department of Cardiology, Shengjing Hospital of China Medical University Shenyang China ([ROR:0202bj006](https://ror.org/0202bj006))
 
 † Corresponding author
 
 ## Abstract
 
-Ticagrelor is a first-line drug for the treatment of acute ST elevation myocardial infarction (STEMI). However, approximately 20% STEMI patients taking ticagrelor exhibited a delayed response and the mechanism was still unclear. To explore the mechanism of the poor response of ticagrelor in post-percutaneous coronary intervention (PCI) patients, we enrolled 65 high platelet reactivity (HPR) patients and 90 controls (normal platelet reactivity [NPR]). Pharmacokinetic assessment result showed that the plasma concentrations of ticagrelor and its metabolism production, AR-C124910XX, were lower in HPR patients than controls. Further single nucloetide polymorphism (SNP) analysis identified that there is no difference in ATP binding cassette subfamily B member 1 ( ABCB1 ) gene expression between the NPR group and the HPR group. Metagenomic and metabolomic analyses of fecal samples showed that HPR patients had higher microbial richness and diversity. Transplantation of the gut microbiota from HPR donors to microbiota-depleted mice obviously decreased plasma concentration of ticagrelor. Our findings highlight that gut microbiota dysbiosis may be an important mechanism for the ticagrelor of HPR in patients with STEMI and support that modify gut microbiota is a potential therapeutic option for STEMI. Our findings highlight that gut microbiota dysbiosis may be an important mechanism for the ticagrelor of HPR in patients with ST elevation myocardial infarction (STEMI) and support that modify gut microbiota is a potential therapeutic option for STEMI NSFC 82170297 and 82070300 from the National Natural Science Foundation of China.
+Background:Ticagrelor is a first-line drug for the treatment of acute ST elevation myocardial infarction (STEMI). However, approximately 20% STEMI patients taking ticagrelor exhibited a delayed response and the mechanism was still unclear.Methods:To explore the mechanism of the poor response of ticagrelor in post-percutaneous coronary intervention (PCI) patients, we enrolled 65 high platelet reactivity (HPR) patients and 90 controls (normal platelet reactivity [NPR]). Pharmacokinetic assessment result showed that the plasma concentrations of ticagrelor and its metabolism production, AR-C124910XX, were lower in HPR patients than controls. Further single nucloetide polymorphism (SNP) analysis identified that there is no difference in ATP binding cassette subfamily B member 1 (ABCB1) gene expression between the NPR group and the HPR group. Metagenomic and metabolomic analyses of fecal samples showed that HPR patients had higher microbial richness and diversity. Transplantation of the gut microbiota from HPR donors to microbiota-depleted mice obviously decreased plasma concentration of ticagrelor.Results:Our findings highlight that gut microbiota dysbiosis may be an important mechanism for the ticagrelor of HPR in patients with STEMI and support that modify gut microbiota is a potential therapeutic option for STEMI.Conclusions:Our findings highlight that gut microbiota dysbiosis may be an important mechanism for the ticagrelor of HPR in patients with ST elevation myocardial infarction (STEMI) and support that modify gut microbiota is a potential therapeutic option for STEMIFunding:NSFC 82170297 and 82070300 from the National Natural Science Foundation of China.
 
 ## Introduction
 
@@ -37,35 +37,35 @@ There is growing awareness that alterations of the gut microbiome and its produc
 
 ## Materials and methods
 
-## Study cohort and patient characteristics
+### Study cohort and patient characteristics
 
 All patients with STEMI were enrolled in the Department of Cardiology of the General Hospital of Shenyang Military Region between April 2016 and March 2018. All patients (the onset time for STEMI is ≤12 hr) received ticagrelor (180 mg loading dose followed by two 90 mg maintenance doses) and aspirin (300 mg loading dose followed by a 100 mg maintenance dose) before PCI. Briefly, STEMI patients were clinically diagnosed using a combination of the following criteria: (1) acute ischemic-type chest pain in the last 24 hr; (2) electrocardiogram change (pathological Q wave, ST segment elevation, or depression); (3) elevated plasma hscTnT (0.05 ng/mL) (Ibanez et al., 2018). The exclusion criteria were as follows: allergy/intolerance to aspirin or ticagrelor; use of oral anticoagulants or antiplatelet agents other than aspirin and ticagrelor; recent treatment with a glycoprotein IIb/IIIa antagonist; use of proton pump inhibitors; end-stage renal or hepatic disease; treatment with fibrin-specific fibrinolytic therapy <24 hr or non-fibrin-specific fibrinolytic therapy <48 hr prior to randomization; presence of active internal bleeding or history of ischemic or hemorrhagic stroke in 6 months; platelet count <100 × 109 /L; hematocrit <25%; creatinine levels < 2.5 mg/dL; hepatic disease (hepatic enzymes twice the upper normal limit). The use of human sample complies with the Declaration of Helsinki and was approved by the ethics committee of the General Hospital of Shenyang Military Region, and written informed consent was obtained from each subject. A flow diagram of this study is presented in Figure 1—figure supplement 1.
 
-## Detection of platelet aggregation rate
+### Detection of platelet aggregation rate
 
 According to the standard protocol, the rate of platelet aggregation (PA) was determined using light transmission aggregometry. Peripheral venous blood samples were collected with a loose tourniquet through a short catheter inserted into the forearm vein. The first 2–4 mL of blood was discarded to avoid spontaneous platelet activation, and the rest was collected in 3.2% trisodium citrate for PA measurement. The upper platelet-rich plasma was obtained by centrifugation at 1000 rpm for 10 min at room temperature. The remaining blood was centrifuged at 3000 rpm for 10 min to obtain platelet-poor plasma (PPP). Twenty-five microliters of ADP (20 µM) was used as a platelet inducer. Following addition of PPP into the platelet reaction cup, the PA rate was measured at a speed of 1000 rpm. The PA rate was measured at 0, 2, 4, 6, 8, 12, and 24 hr after administration of the 180 mg ticagrelor. According to the rate of PA at 2 hr, patients were divided into two groups: HPR group (PA ≥59%) and normal platelet reactivity (NPR) group (PA <59%).
 
-## Pharmacokinetic assessment
+### Pharmacokinetic assessment
 
 Blood samples for the determination of plasma concentrations of ticagrelor and AR-C124910XX were collected at 0 hr (pre-dose) and at 2, 4, 6, 8, 12, and 24 hr after ticagrelor administration. Blood was collected from the antecubital vein into Vacutainer tubes containing 2 mg/mL K2-EDTA. The plasma concentrations of ticagrelor and AR-C124910XX were determined using the HPLC-MS/MS system as previously described by Sillén et al., 2011; Sillén et al., 2010. Samples were analyzed within 3 months of collection, well within the known period of stability. The maximal concentration (Cmax) and time for the maximal plasma concentration to reach Cmax (Tmax) were calculated directly from the measured plasma concentration of each patient and presented as medians with interquartile ranges.
 
-## Genotyping
+### Genotyping
 
 In the past few decades, scholars have found that ABCB1 genetic variation has a great impact on ABCB1 gene expression and function, especially in SNPs. Among them, rs2032582 (G2677T/A), rs1045642 (C3435T), and rs1128503 (C1236T) have attracted wide attention because of their highly variable frequency and strong linkage disequilibrium in different populations (Martinelli et al., 2014; Pontual et al., 2017; Raymond et al., 2021). The SNP gene sequences were searched for and downloaded from the NCBI public database (http://www.ncbi.nlm.nih.gov). Primer 5.0 software was used to design polymerase chain reaction (PCR) primers (see Table 1—source data 1 for details). Primers were synthesized by Shanghai Bioengineering Technology Co., Ltd. Genomic DNA was extracted from 3 mL of peripheral blood leukocytes using the standard phenol/chloroform method. The genotypes and allele frequencies of ABCB1 SNPs were detected using PCR and pyrosequencing.
 
-## Stool sample collection and DNA extraction
+### Stool sample collection and DNA extraction
 
 Each study participant was asked to collect fecal samples in the morning using fecal collection containers. Fecal samples were stored at 4°C immediately after defecation, brought to the laboratory within 4 hr, and stored at –80°C before DNA extraction. The containers were transferred on ice and stored at –80°C prior to processing. Total bacterial DNA was extracted from fecal samples using the QIAamp DNA Stool Mini Kit (QIAGEN, GmbH, Germany) according to the manufacturer’s instructions. DNA purity was measured using a Thermo NanoDrop 2000 Spectrophotometer (Thermo Fisher Scientific, Waltham, MA). All DNA extraction procedures were prepared under a Class II biological safety cabinet. The concentration of genomic DNA in each fecal sample was quantified using the NanoDrop 2000 Spectrophotometer. DNA integrity and size were assessed using 1% agarose gel electrophoresis. For quality control, restriction digestion was performed to screen these polymorphisms in 100 randomly selected samples, which showed 100% concordance.
 
-## 16S RNA gene amplicon and sequencing
+### 16S RNA gene amplicon and sequencing
 
 Universal primers (341F and 806R) linked with indices and sequencing adaptors were used to amplify the V3-V4 regions of the 16S rRNA gene. Following the preparation of gut microbiota DNA, the library was constructed on the HiSeq 2500 PE250 amplicon sequencing platform, and paired-end sequencing was performed on the Illumina platform. Finally, bioinformatics analysis was carried out using Pandaseq software and Usearch software.
 
-## Metabolomic profiling/1H NMR metabolomics analysis
+### Metabolomic profiling/1H NMR metabolomics analysis
 
 Three-hundred microliters blood sample and 600 μL methanol were added into EP tube and placed at −20°C for 20 min. After centrifugation at 11,000 rpm for 30 min to take supernatant, methanol was removed with rotary evaporator (SC110A, Thermo, Germany). Then the powder sample was obtained with freeze-drying apparatus and redissolved in 0.55 mL Na+/K+ buffer (0.1 M, 50% D2O, 0.001% TSP). After vortex shaking for 30 s, the sample was well mixed. After centrifugation (4°C, 12,000 rpm, 10 min), 0.5 mL of supernatant was taken and transferred to 5 mm nuclear magnetic tube for inspection. The 1D 1H NMR spectra of all samples were collected on a Bruker AVIII 600 MHz NMR spectrometer (Bruker Biospin, Germany) equipped with an ultra-low temperature probe. The proton resonance frequency was 600.13 MHz and the experimental temperature was 298 K.
 
-## Fecal microbiota transplantation
+### Fecal microbiota transplantation
 
 Eight-week-old C57BL mice were purchased from Southern Animal Model Co., Ltd. (Nanjing, China) and placed in ventilated cages separately under a 12 hr light-dark cycle. Mice were fed with SPF-level irradiated mouse chow (Mao Hua Biology, China) and autoclaved water at a constant temperature of 21–22 °C, and maintained at a humidity of 55% ± 5%. Mice were first provided a normal diet for 1 week to adapt to the environment before being randomly assigned to two groups.
 
@@ -73,25 +73,212 @@ Mixed antibiotic cocktails (0.5 g/L vancomycin, 1 g/L neomycin sulfate, 1 g/L me
 
 For microbiome transplantation, fresh fecal samples were collected from donors, resuspended in sterile saline, and the supernatant was centrifuged. Microbiota-depleted mice were randomly divided into two groups. The fecal supernatant (200 µL) was orally administered to patients in the NPR or HPR group twice weekly. Recipient mice carrying microorganisms were placed in different cages. Drinking water and animal feed were strictly sterilized and replaced daily. The squirrel cage and padding were sterilized with high-pressure steam before use. Padding was changed every 2 days to strictly control bacterial pollution. Blood concentrations of ticagrelor and AR-C124910XX were measured 8 weeks after transplantation.
 
-## Statistical analysis
+### Statistical analysis
 
 The statistical analysis of data was carried out using SPSS 22.0. Measurement data were expressed as the mean ± standard deviation. Comparison of the mean number of samples in NPR and HPR was conducted using an independent sample t-test. Count data were expressed as ‘number of cases (percentage)’. Comparisons between the two groups were performed using the χ2 test or Fisher’s exact test. The trend of PA at different time points between the two groups was compared using repeated measurement ANOVA. Biological analysis of gut microbiota primarily relies on QIIME, Usearch, Pandaseq, krona, speccum package, and the corrplot package of R software for statistical analysis of sequencing data.
 
 ## Results
 
-## Baseline characteristics and platelet reactivity
+### Baseline characteristics and platelet reactivity
 
 To compare the difference in PA at different time points before and after taking ticagrelor, we included 155 patients with STEMI, tested patients’ PA before (0 hr) and after taking ticagrelor (2, 4, 6, 8, 12, 24 hr). According to the rate of PA at 2 hr, patients were divided into two groups: HPR group (PA ≥59%) and NPR group (PA <59%). There was no significant difference in sex composition, age, weight, and past medical history between the two groups (p > 0.05, Figure 1—source data 1). Before taking ticagrelor (0 hr), there was no significant difference between NPR group and HPR group (p = 0.118). The PA of NPR group and HPR group were 66.0% ± 23.5% and 73.4% ± 20.4%, respectively. After ticagrelor administrated, the PA at each time point was lower than that at 0 hr (p < 0.05). And the PA of patients in the HPR group was higher than that in NPR group at 2, 4, 6, and 8 hr (the p-value at each time point <0.001) (Figure 1A and B). The decreasing range of PA in the HPR group was lower than that in the NPR group, and did not show the lowest value within 24 hr in the HPR group. In the NPR group, the PA decreased the most at 2 hr after ticagrelor administration, and the lowest value (27.72 ± 16.17) of PA was detected at 4 hr after medication administration.
 
-## Reduction of plasma concentrations of ticagrelor and AR-C124910XX in the HPR group
+![Figure 1.](https://cdn.elifesciences.org/articles/70240/elife-70240-fig1-v1.jpg)
+
+**Figure 1.:** (A) Platelet aggregation measured using light transmission aggregometry of line chart at baseline and 2, 4, 6, 8, 12, and 24 hr after the ticagrelor loading dose in patients with NPR and HPR. (B) Platelet aggregation of ticagrelor shown in bar graph at 2, 4, 6, and 8 hr after the ticagrelor loading dose in patients with NPR and HPR. (C, D) The plasma concentration of ticagrelor (C) and its major active metabolite AR-C124910XX (D) during the 24 hr following administration of the loading dose of ticagrelor. Values are expressed as the mean. Error bars indicate standard deviation. *p < 0.05 versus NPR.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/70240/elife-70240-fig1-figsupp1-v1.jpg)
+
+### Reduction of plasma concentrations of ticagrelor and AR-C124910XX in the HPR group
 
 To compare the difference in absorption efficiency and metabolism of ticagrelor between the HPR group and the NPR group, we measured the concentrations of ticagrelor and AR-C124910XX (active metabolite of ticagrelor) in the plasma of patients at different time points. Within 24 hr after the administration of 180 mg ticagrelor, the blood concentration of ticagrelor in the HPR group was significantly lower than that in the NPR group, especially during 2, 4, and 6 hr (all p < 0.0001). The plasma concentration of ticagrelor increased rapidly in the NPR group after administration of the loading dose, and reached its peak at 4 hr. The maximal plasma concentration of ticagrelor was 478.1 ± 430.4 ng/mL. After that the plasma concentration of ticagrelor decreased gradually and tended to balance. The plasma concentration of ticagrelor in the HPR group increased gradually within 24 hr and reached its maximum (233.7 ± 195.1 ng/mL) at 24 hr (Figure 1C). The plasma concentration of AR-C124910XX at 2, 4, 6, and 8 hr in the HPR group was significantly lower than that in the NPR group (all p < 0.05) (Figure 1D). The trend of its change was consistent with that of ticagrelor blood concentration. The effect of ticagrelor on pharmacokinetics mainly occurs in four steps: absorption, distribution, metabolism, and excretion. In our study, we found that the PA rate in the HPR group was higher than that in the NPR group, which was associated with a reduction in plasma concentrations of ticagrelor and AR-C124910XX. This suggests that the pharmacokinetic abnormality of ticagrelor mainly occurs in the absorption stage of the drug.
 
-## Genotyping distribution of ABCB1
+### Genotyping distribution of ABCB1
 
 As a transporter, P-glycoprotein plays an important role in the metabolism and absorption of ticagrelor. ABCB1 is the gene encoding P-glycoprotein, its SNP may have an important impact on the antiplatelet function of ticagrelor. To detect the difference of ABCB1 single gene polymorphism between the NPR group and the HPR group, we tested the alleles and gene frequencies of ABCB1 in the two groups. Functional loci of the ABCB1 gene polymorphism were rs2032582 (G2677T/A), rs1045642 (C3435T), and rs1128503 (C1236T). Following calculation of the deviation between the observed and theoretical frequencies of ABCB1 SNP genotypes by the χ2 test, the results showed that the distribution of ABCB1 SNP genotypes in the NPR and HPR groups was consistent with the genetic Hardy-Weinberg equilibrium balance (p ≥ 0.05), indicating that the research objects selected in this experiment had good population representativeness (Table 1). To prevent class I errors caused by multiple tests, we adjusted the statistical significance level to p < 0.017 after Bonferroni correction. Table 1 summarized the distributions of alleles and genotype frequencies of the three SNPs in the HPR and NPR groups. There was no significant difference in allele frequency or genotype distribution among the three SNPs of ABCB1 between the two groups, which suggests that the high reactivity of ticagrelor is not affected by the polymorphic drug transporter ABCB1.
 
-## HPR group had rich microbiota diversity
+**Table 1.**
+ Genotype and allele distributions for the three polymorphisms of ABCB1 in NPR and HPR groups.Table 1—source code 1.The original code file of sequencing analysis for tagSNPs of ATP binding cassette subfamily B member 1 (ABCB1) gene in normal platelet reactivity (NPR) and high platelet reactivity (HPR) patients (related to Table 1).Table 1—source data 1.ATP binding cassette subfamily B member 1 (ABCB1) tagSNPs from the HapMap database and primer sequences used in genotyping analysis for ABCB1.MAF, miner allele frequence.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype/ allele</th>
+      <th>NPR (%)</th>
+      <th>HWE-P</th>
+      <th>HPR (%)</th>
+      <th>HWE-P</th>
+      <th>OR (95% CI)</th>
+      <th>p-Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rs1045642</td>
+      <td colspan="6"></td>
+    </tr>
+    <tr>
+      <td>CC</td>
+      <td>24 (26.7)</td>
+      <td rowspan="3">0.099</td>
+      <td>24 (36.9)</td>
+      <td rowspan="3">0.723</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CT</td>
+      <td>53 (58.9)</td>
+      <td>30 (46.2)</td>
+      <td>0.566 (0.285–1.192)</td>
+      <td>0.121</td>
+    </tr>
+    <tr>
+      <td>TT</td>
+      <td>13 (14.4)</td>
+      <td>11 (16.9)</td>
+      <td>0.846 (0.332–2.320)</td>
+      <td>0.739</td>
+    </tr>
+    <tr>
+      <td>C allele</td>
+      <td>101 (56.1)</td>
+      <td></td>
+      <td>78 (60.0)</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T allele</td>
+      <td>79 (43.9)</td>
+      <td></td>
+      <td>52 (40.0)</td>
+      <td></td>
+      <td>0.852 (0.532–1.351)</td>
+      <td>0.494</td>
+    </tr>
+    <tr>
+      <td>Rs2032582</td>
+      <td colspan="6"></td>
+    </tr>
+    <tr>
+      <td>GG</td>
+      <td>15 (16.7)</td>
+      <td rowspan="6">0.360</td>
+      <td>9 (13.8)</td>
+      <td rowspan="6">0.111</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GT</td>
+      <td>34 (37.8)</td>
+      <td>29 (44.6)</td>
+      <td>1.422 (0.560–3.567)</td>
+      <td>0.473</td>
+    </tr>
+    <tr>
+      <td>GA</td>
+      <td>11 (12.2)</td>
+      <td>9 (13.8)</td>
+      <td>1.364 (0.435–4.374)</td>
+      <td>0.614</td>
+    </tr>
+    <tr>
+      <td>TT</td>
+      <td>14 (15.6)</td>
+      <td>7 (10.7)</td>
+      <td>0.833 (0.238–2.678)</td>
+      <td>0.771</td>
+    </tr>
+    <tr>
+      <td>TA</td>
+      <td>12 (13.3)</td>
+      <td>8 (12.3)</td>
+      <td>1.111 (0.339–3.578)</td>
+      <td>0.865</td>
+    </tr>
+    <tr>
+      <td>AA</td>
+      <td>4 (4.4)</td>
+      <td>3 (4.6)</td>
+      <td>1.250 (0.265–5.728)</td>
+      <td>0.798</td>
+    </tr>
+    <tr>
+      <td>G allele</td>
+      <td>75 (41.7)</td>
+      <td></td>
+      <td>56 (43.1)</td>
+      <td></td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T allele</td>
+      <td>74 (41.1)</td>
+      <td></td>
+      <td>51 (39.2)</td>
+      <td></td>
+      <td>0.923 (0.568–1.495)</td>
+      <td>0.752</td>
+    </tr>
+    <tr>
+      <td>A allele</td>
+      <td>31 (17.2)</td>
+      <td></td>
+      <td>23 (17.7)</td>
+      <td></td>
+      <td>0.994 (0.511–1.874)</td>
+      <td>0.985</td>
+    </tr>
+    <tr>
+      <td>Rs1128503</td>
+      <td colspan="6"></td>
+    </tr>
+    <tr>
+      <td>CC</td>
+      <td>6 (6.7)</td>
+      <td rowspan="5">0.670</td>
+      <td>8 (12.3)</td>
+      <td rowspan="5">0.662</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CT</td>
+      <td>51 (56.7)</td>
+      <td>28 (43.1)</td>
+      <td>0.412 (0.123–1.243)</td>
+      <td>0.125</td>
+    </tr>
+    <tr>
+      <td>TT</td>
+      <td>33 (36.7)</td>
+      <td>29 (44.6)</td>
+      <td>0.659 (0.191–1.955)</td>
+      <td>0.483</td>
+    </tr>
+    <tr>
+      <td>C allele</td>
+      <td>63 (35.0)</td>
+      <td>44 (33.8)</td>
+      <td>1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>T allele</td>
+      <td>117 (65.0)</td>
+      <td>86 (66.2)</td>
+      <td>1.052 (0.661–1.700)</td>
+      <td>0.833</td>
+    </tr>
+  </tbody>
+</table>
+
+### HPR group had rich microbiota diversity
 
 The intestinal flora plays an important role in the absorption and metabolism of drugs. To detect whether the intestinal flora has an impact on the absorption and metabolism of ticagrelor, we compared the intestinal flora of patients in the NPR group and the HPR group. Patients treated with antibiotics or probiotics within the last 2 months were excluded. Here, 26 patients from the HPR group and 26 patients from the NPR group were assessed. High-quality 16S rDNA V3-V4 sequences obtained from fecal samples were processed using the Illumina platform. A total of 2,185,831 reads were generated, with a median of 59,271 reads per sample. Following removal of singletons, a total of 975 operational taxonomic units were clustered at 97% sequence similarity.
 
@@ -99,43 +286,186 @@ The intestinal flora plays an important role in the absorption and metabolism of
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/70240/elife-70240-fig2-v1.jpg)
 
-**Figure 2.:** (A, B, C, D) Box plots depict differences in the fecal microbiome diversity indices between the PD and healthy groups according to the chao1 index (A), observed species index (B), PD whole tree index (C), and goods coverage diversity index (D) based on the OTU counts. Each box plot represents the median, interquartile range, minimum, and maximum values. (E, F, G, H) Unweighted and weighted ANOSIMs and PCOA based on the distance matrix of UniFrac dissimilarity of the fecal microbial communities in the HPR and NPR groups. Box and whiskers distribution of the intra-group unweighted UniFrac distances (E) and intra-group weighted UniFrac distances (F) calculated for HPR and NPR groups. Respective ANOSIM R values show the community variation between the compared groups, and significant p-values are indicated, as calculated using Tukey post hoc test after Kruskal-Wallis test for multiple comparisons. The axes represent the two dimensions explaining the greatest proportion of variance in the communities. Each symbol represents a sample, and each line connects a pair of samples. a, NPR group (blue); b, HPR group (red). OTU, operational taxonomic unit; ANOSIM, analyses of similarities; PCOA, principal coordinates analysis.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A, B, C, D) Box plots depict differences in the fecal microbiome diversity indices between the PD and healthy groups according to the chao1 index (A), observed species index (B), PD whole tree index (C), and goods coverage diversity index (D) based on the OTU counts. Each box plot represents the median, interquartile range, minimum, and maximum values. (E, F, G, H) Unweighted and weighted ANOSIMs and PCOA based on the distance matrix of UniFrac dissimilarity of the fecal microbial communities in the HPR and NPR groups. Box and whiskers distribution of the intra-group unweighted UniFrac distances (E) and intra-group weighted UniFrac distances (F) calculated for HPR and NPR groups. Respective ANOSIM R values show the community variation between the compared groups, and significant p-values are indicated, as calculated using Tukey post hoc test after Kruskal-Wallis test for multiple comparisons. The axes represent the two dimensions explaining the greatest proportion of variance in the communities. Each symbol represents a sample, and each line connects a pair of samples. a, NPR group (blue); b, HPR group (red). OTU, operational taxonomic unit; ANOSIM, analyses of similarities; PCOA, principal coordinates analysis.
 
-## Dysbiosis of gut microbiota in HPR group patients
+### Dysbiosis of gut microbiota in HPR group patients
 
 Linear discriminant analysis (LDA) effect size (LEfSe) was used to compare the microbiota between the NPR group and the HPR group. Figure 3A shows the LDA cluster tree, using the log LDA score cut-off value of 2.0 to identify important taxonomic differences between the two groups. Here, we considered the differences in taxa at the genus level. There were 21 species of bacteria at the genus level in all subjects, and 17 species of bacteria in the HPR group were more abundant than those in the NPR group, including Bacillus, Methylbacterium, Staphylococcus, Acinetobacter, and Brevibacterium. Figure 3B shows an LDA cluster tree. Red indicates bacteria with increased relative abundance in the HPR group, blue indicates bacteria with reduced relative abundance in the NPR group, and the yellow node indicates microbial communities that do not play an important role in both groups. It can be seen from the figure that among the gut microbiota in the HPR group, the most important family/genera are Staphylococcaceae, Staphylococcus; Sphingomonadaceae, Sphingomonas; Cellulomonadaceae, Cellulomonas; and Lactobacillaceae, Lactobacillus. These results indicated that there were significant differences in fecal microbiota between the HPR and NPR groups.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/70240/elife-70240-fig3-v1.jpg)
 
-**Figure 3.:** (A) Linear discriminant analysis (LDA) effect size (LEfSe) analysis revealed significant bacterial differences in gut microbiota between the NPR (negative score) and HPR (positive score) groups. The LDA scores (log10) >2 and p < 0.05 are listed. (B) Cladogram using LEfSe method indicating the phylogenetic distribution of fecal microbiota associated with HPR and NPR groups. (C) The predictive model based on genus-level abundance taxa using an RF model. The relative importance of each genus in the predictive model was performed using the mean decreasing accuracy and the Gini coefficient for fecal microbiota. (D) ROC curve generated by RF in gut microbiota. The plots shown in the ROC represent the corresponding optimal threshold. RF, random forest; ROC, receiver operating characteristic; AUC, area under the ROC curve; CI, confidence interval.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A) Linear discriminant analysis (LDA) effect size (LEfSe) analysis revealed significant bacterial differences in gut microbiota between the NPR (negative score) and HPR (positive score) groups. The LDA scores (log10) >2 and p < 0.05 are listed. (B) Cladogram using LEfSe method indicating the phylogenetic distribution of fecal microbiota associated with HPR and NPR groups. (C) The predictive model based on genus-level abundance taxa using an RF model. The relative importance of each genus in the predictive model was performed using the mean decreasing accuracy and the Gini coefficient for fecal microbiota. (D) ROC curve generated by RF in gut microbiota. The plots shown in the ROC represent the corresponding optimal threshold. RF, random forest; ROC, receiver operating characteristic; AUC, area under the ROC curve; CI, confidence interval.
 
-## Random forest predictive models
+### Random forest predictive models
 
 Random forest (RF) is an algorithm based on a classification tree. To evaluate the difference in platelet reactivity between the two groups, we used the abundance groups with significant differences at the genus level obtained by Wilcoxon rank sum test as the input, and established a prediction model based on fecal microflora pedigree by RF. Finally, we obtained the relative importance order of 21 genera to predict the occurrence of HPR. The importance was assessed by the decrease in average accuracy and the Gini index (Figure 3C). The genus Staphylococcus ranked first among the most important features based on mean decrease accuracy and was found to be 8.0-fold more abundant in the HPR group than the NPR group. Lactobacillus, Methylobacterium, and Sphingomonas were also among the most important genera contributing to classification accuracy. They have a high mean decrease Gini index (>1) and can be considered as candidate biomarkers. The area under the receiver operating characteristic curve was 0.807 (95% confidence interval: 0.612–1.0, 71.4% sensitivity, 88.9% specificity) (Figure 3D).
 
-## Predictive function analysis
+### Predictive function analysis
 
 To clarify the functional characteristics of the gut microbiome in patients with HPR, we used the PICRUST analysis method based on 16S rRNA gene sequence data, and further annotated the gut microbiome metagenomic data in the Kyoto Encyclopedia of Genes and Genomes (KEGG) database. At level 1, the main metabolic pathways with significant differences between the NPR and HPR groups are shown in Figure 4A. The relative abundance of the circulatory system and cardiovascular disease was significantly higher in the HPR group than the NPR group. At level 2, there were 24 metabolic pathways involved in the difference between the NPR and HPR groups. The relative abundance of phenylalanine metabolism was the highest, followed by that of cofactor and vitamin metabolism. The relative abundance of the above functions was higher in the NPR group than in the HPR group (Figure 4B). In contrast, the HPR group had fewer genes related to apoptosis and ether lipid metabolism than the NPR group.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/70240/elife-70240-fig4-v1.jpg)
 
-**Figure 4.:** The important KEGG pathway of gut microbiota in the HPR and NPR groups was identified using stamp software. White’s nonparametric t-test was used to compare the abundance differences between the two groups. The confidence interval was estimated using the percentile bootstrap method (10,000 repetitions). KEGG, Kyoto Encyclopedia of Genes and Genomes; Ko, KEGG homologues; PICRUS, community phylogeny survey by reconstructing unobserved states.Figure 4—source data 1.Figure 4—source data 2.
+**Figure 4.:** The important KEGG pathway of gut microbiota in the HPR and NPR groups was identified using stamp software. White’s nonparametric t-test was used to compare the abundance differences between the two groups. The confidence interval was estimated using the percentile bootstrap method (10,000 repetitions). KEGG, Kyoto Encyclopedia of Genes and Genomes; Ko, KEGG homologues; PICRUS, community phylogeny survey by reconstructing unobserved states.
 
-## Correlation analysis between fecal microbiota composition and metabolic profiles
+### Correlation analysis between fecal microbiota composition and metabolic profiles
 
 The metabolites in the 1H NMR spectra of blood samples were identified and assigned according to published studies and the human metabolomic database. Figure 5A shows the representative 1H NMR spectra of the two groups. A total of 32 chemical constituents were identified in this study. We used the observed resonance signal phase to determine the relative concentration changes of metabolites in different groups and the color projection of the spectrum to determine the correlation of NMR data between different groups (red corresponds to high correlation [r > 0.6], blue represents no correlation [r < 0.2]). Among them, the content of citrate increased in the HPR group, and the content of valine, glutamate, and salicylate increased in the NPR group. These metabolites may be plasma markers of HPR and may be produced by bacteria or their metabolites. Pearson’s correlation analysis explored the relationship between the above six significantly changed metabolites and gut microflora at the genus level (Figure 5B). In the generated thermogram, red indicates a positive correlation between bacterial taxa and metabolites, while green indicates a negative correlation. Correlation coefficients with statistical differences are listed in Table 2, for example, Lactobacillus, Barnesiella, and Cellulomonas positively correlated with citrate and glutamate levels, while Methylobacterium, Sphingomonas, and Staphylococcus negatively correlated with salicylate.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/70240/elife-70240-fig5-v1.jpg)
 
-**Figure 5.:** 1H NMR spectra of metabolites from the normal platelet reactivity (NPR) and high platelet reactivity (HPR) groups.(A) NMR spectrum and signal assignment diagram. There were 30 samples in the NPR group and 30 samples in the HPR group. The dotted line on the left is the signal spectrum amplified 30-fold. Each number in the figure represents a metabolite. The right is a two color loading graph of the nonparametric test (univariate analysis). 1, leucine; 2, isoleucine; 3, valine; 4, 3-hydroxybutyric acid; 5, lactate; 6, alanine; 7, acetate; 8, glutamate; 9, citrate; 10, creatine; 11, creatinine; 12, β-glucose; 13, a-glucose; 14, tyrosine; 15, phenylalanine; 16, formate; 17, histidine; 18, tryptophan; 19, pyroglutamate; 20, glycine; 21, lysine; 22, methanol; 23, acetone; 24, succinate; 25, glucitol; 26, salicylate; 27, 2-Hydroxybutyric acid; 28, EDTA; U1, unknown 1; U2, unknown 2; U3, unknown 3; U4, unknown 4. (B) Correlation analysis between 16S and significantly changed metabolites. The intensity of the color represents the r value (correlation) (negative score, green; positive score, red).Figure 5—source code 1.1H NMR serum metabolite analysis in normal platelet reactivity (NPR) and high platelet reactivity (HPR) patients.Figure 5—source data 1.
+**Figure 5.:** (A) NMR spectrum and signal assignment diagram. There were 30 samples in the NPR group and 30 samples in the HPR group. The dotted line on the left is the signal spectrum amplified 30-fold. Each number in the figure represents a metabolite. The right is a two color loading graph of the nonparametric test (univariate analysis). 1, leucine; 2, isoleucine; 3, valine; 4, 3-hydroxybutyric acid; 5, lactate; 6, alanine; 7, acetate; 8, glutamate; 9, citrate; 10, creatine; 11, creatinine; 12, β-glucose; 13, a-glucose; 14, tyrosine; 15, phenylalanine; 16, formate; 17, histidine; 18, tryptophan; 19, pyroglutamate; 20, glycine; 21, lysine; 22, methanol; 23, acetone; 24, succinate; 25, glucitol; 26, salicylate; 27, 2-Hydroxybutyric acid; 28, EDTA; U1, unknown 1; U2, unknown 2; U3, unknown 3; U4, unknown 4. (B) Correlation analysis between 16S and significantly changed metabolites. The intensity of the color represents the r value (correlation) (negative score, green; positive score, red).
 
-## Platelet reactivity can be transferred by fecal transplantation
+**Table 2.**
+ Significant correlations between the differential fecal metabolites and microbes in the class, order, family, and genus levels.Statistical method: Pearson’s correlation coefficient; listed correlation coefficients are those with p-value < 0.05.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Glutamate</th>
+      <th>Citrate</th>
+      <th>Salicylate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Class</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>c_Deinococci</td>
+      <td>0.2759636</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>Order</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>o_Aeromonadales</td>
+      <td>–</td>
+      <td>0.3212488</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>o_Bacillales</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–0.343397</td>
+    </tr>
+    <tr>
+      <td>o_Rhizobiales</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–0.307195</td>
+    </tr>
+    <tr>
+      <td>o_Sphingomonadales</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–0.315105</td>
+    </tr>
+    <tr>
+      <td>Family</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>f_Cellulomonadaceae</td>
+      <td>0.2813448</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>f_Lactobacillaceae</td>
+      <td>–0.099515</td>
+      <td>0.2799663</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>f_Methylobacteriaceae</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–0.305264</td>
+    </tr>
+    <tr>
+      <td>f_Ruminococcaceae</td>
+      <td>–</td>
+      <td>0.3119055</td>
+      <td>–0.314255</td>
+    </tr>
+    <tr>
+      <td>f_Sphingomonadaceae</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–0.315105</td>
+    </tr>
+    <tr>
+      <td>f_Staphylococcaceae</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–0.336272</td>
+    </tr>
+    <tr>
+      <td>Genus</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>g_Barnesiella</td>
+      <td>–</td>
+      <td>0.3164411</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>g_Cellulomonas</td>
+      <td>0.2813448</td>
+      <td>–</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>g_Lactobacillus</td>
+      <td>–</td>
+      <td>0.2799663</td>
+      <td>–</td>
+    </tr>
+    <tr>
+      <td>g_Methylobacterium</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–0.305264</td>
+    </tr>
+    <tr>
+      <td>g_Sphingomonas</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–0.281848</td>
+    </tr>
+    <tr>
+      <td>g_Staphylococcus</td>
+      <td>–</td>
+      <td>–</td>
+      <td>–0.336272</td>
+    </tr>
+  </tbody>
+</table>
+
+### Platelet reactivity can be transferred by fecal transplantation
 
 Previous studies have shown that antibiotics and probiotics are important factors affecting platelet reactivity in both animal models and clinical trials (Betancur et al., 2020; Budzyński et al., 2016; Capkin and Altinok, 2009; Kang et al., 2019). We speculate that the change in platelet reactivity may be related to the change in gut flora with the use of pro/antibiotics. Fecal transplantation is a direct experimental method to verify the influence of gut flora. Therefore, in this study, fecal bacteria from HPR and NPR patients were transplanted into microbiota-depleted mice. Plasma concentrations of ticagrelor and AR-C124910XX were measured at different time points after ticagrelor administration in the HPR and NPR groups 8 weeks after transplantation. As expected, the plasma concentration of ticagrelor in the HPR group was lower than that in the NPR group at all time points within 24 hr after ticagrelor administration, and there were significant differences between the two groups at 1, 2, and 6 hr. The plasma concentration of ticagrelor in HPR increased gradually within 24 hr, and the overall concentration was lower than that in the NPR group. The overall change trend of AR-C124910XX in 24 hr was the same as that of the prototype drug (Figure 6A and B). Therefore, the change in platelet reactivity may be the mechanism by which antibiotics and probiotics regulate platelet performance.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/70240/elife-70240-fig6-v1.jpg)
 
-**Figure 6.:** The plasma concentration of ticagrelor (A) and its major active metabolite AR-C124910XX (B) during the 24 hr following administration of ticagrelor loading dose in fecal microbiota transplantation mice. n = 6; values are expressed as the mean. Error bars indicate standard deviation. *p < 0.05 versus NPR, #p < 0.01 versus NPR.Figure 6—source data 1.
+**Figure 6.:** The plasma concentration of ticagrelor (A) and its major active metabolite AR-C124910XX (B) during the 24 hr following administration of ticagrelor loading dose in fecal microbiota transplantation mice. n = 6; values are expressed as the mean. Error bars indicate standard deviation. *p < 0.05 versus NPR, #p < 0.01 versus NPR.
 
 ## Discussion
 

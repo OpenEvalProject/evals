@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.40232.001 Vestibular function was established early in vertebrates and has remained, for the most part, unchanged. In contrast, each group of tetrapods underwent independent evolutionary processes to solve the problem of hearing on land, resulting in a remarkable mixture of conserved, divergent and convergent features that define extant auditory systems. The vestibuloacoustic nuclei of the hindbrain develop from a highly conserved ground plan and provide an ideal framework on which to address the participation of developmental processes to the evolution of neuronal circuits. We employed an electroporation strategy to unravel the contribution of two dorsoventral and four axial lineages to the development of the chick hindbrain vestibular and auditory nuclei. We compare the chick developmental map with recently established genetic fate-maps of the developing mouse hindbrain. Overall, we find considerable conservation of developmental origin for the vestibular nuclei. In contrast, a comparative analysis of the developmental origin of hindbrain auditory structures echoes the complex evolutionary history of the auditory system. In particular, we find that the developmental origin of the chick auditory interaural time difference circuit supports its emergence from an ancient vestibular network, unrelated to the analogous mammalian counterpart.
+Vestibular function was established early in vertebrates and has remained, for the most part, unchanged. In contrast, each group of tetrapods underwent independent evolutionary processes to solve the problem of hearing on land, resulting in a remarkable mixture of conserved, divergent and convergent features that define extant auditory systems. The vestibuloacoustic nuclei of the hindbrain develop from a highly conserved ground plan and provide an ideal framework on which to address the participation of developmental processes to the evolution of neuronal circuits. We employed an electroporation strategy to unravel the contribution of two dorsoventral and four axial lineages to the development of the chick hindbrain vestibular and auditory nuclei. We compare the chick developmental map with recently established genetic fate-maps of the developing mouse hindbrain. Overall, we find considerable conservation of developmental origin for the vestibular nuclei. In contrast, a comparative analysis of the developmental origin of hindbrain auditory structures echoes the complex evolutionary history of the auditory system. In particular, we find that the developmental origin of the chick auditory interaural time difference circuit supports its emergence from an ancient vestibular network, unrelated to the analogous mammalian counterpart.
 
 ## Introduction
 
@@ -52,7 +52,7 @@ To achieve a comprehensive anatomical identification of hindbrain structures, el
 
 **Figure 3.:** (A) Representative images of coronal sections of Nissl stained E10 chick hindbrain (left panels) and diagrams (right panels), showing the outlines of hindbrain nuclei. From left to right and top to bottom: rostral to caudal. Scale bars: 50 µm. All drawings are to scale. B, Cell group B; Cbl, Nucleus Cerebellaris Internus; CE, Nucleus Cuneatus Externus; Dd, Nucleus Deiters Dorsalis; Dv, Nucleus Deiters Ventralis; IO, Inferior Olive Nucleus; NA, Nucleus Angularis; nIX, Glossopharyngeal Nucleus; nIX-X, Glossopharyngei and Vagus Nucleus; NL, Nucleus Laminaris; NM, Nucleus Magnocellularis; nVI, Abducens Nucleus; PL, Lateral Pontine Nucleus; PM, Medial Pontine Nucleus; RST, Reticular Subtrigeminal Nucleus; S, Solitaris Nucleus; SON, Superior Olivary Nucleus; Ta, Tangential Nucleus; TDV, Descending Trigeminal Nucleus; TS, Torus Semicircularis; VeD, Descending Vestibular Nucleus; VeM, Medial Vestibular Nucleus; VeS, Superior Vestibular Nucleus. (B) Example of a nucleus identification by combining information from Nissl stained sections (top left), fluorescent protein expression and nuclear staining (top right) and anatomical reference atlases (bottom left, modified from (Kuenzel and Masson, 1988; Wold, 1976)).
 
-## Ptf1a and Atoh1 lineages contribute distinct neuronal populations to hindbrain vestibular nuclei
+### Ptf1a and Atoh1 lineages contribute distinct neuronal populations to hindbrain vestibular nuclei
 
 The vestibular nuclear complex extends rostro-caudally along the entire dorsal hindbrain. Six vestibular nuclei are commonly recognised in birds: superior, Deiters dorsal, Deiters ventral, tangential, medial and descending (Wold, 1976). Vestibular neuronal groups are also defined in terms of a repertoire of projection patterns (such as vestibulo-ocular, vestibulo-spinal and vestibulo-cerebellar) that are common to all vertebrates (Pasqualetti et al., 2007; Straka and Baker, 2013; Straka et al., 2002). However, neurons projecting to different targets are usually intermingled within a given nucleus or span more than one nucleus (Büttner-Ennever, 1992; Daz and Puelles, 2003; Di Bonito et al., 2015; Pétursdóttir, 1990). Accordingly, the different vestibular nuclei are comprised of highly heterogeneous neuronal populations. With the exception of the tangential nucleus, all the vestibular nuclei in birds have a homologous counterpart in vertebrates (Straka and Baker, 2013).
 
@@ -76,7 +76,7 @@ The Medial Vestibular Nucleus (VeM) is located beneath the ventricular surface a
 
 The Descending Vestibular Nucleus (VeD) extends rostrocaudally from the level of the VIIIth nerve root to the caudal end of the hindbrain (Wold, 1976). Electroporation with Atoh1::GFP resulted in profuse labelling of neurons in the caudal VeD (Figure 5H) and more scattered cell labelling in the rostral portion of the nucleus, through which NL axons course into the ventral hindbrain and SON axons reach the NL (Lachica et al., 1994; Takahashi and Konishi, 1988) (Figure 5I). Electroporations with Ptf1a::GFP resulted in labelling of small cells throughout the VeD (Figure 5J). The rostral portion of the VeD showed cells labelled via electroporation with Egr2::GFP (Figure 5K) and Hoxa3::GFP (Figure 5L). In turn, the middle and caudal portions of the VeD were labelled by electroporation with Hoxd4::GFP (Figure 5M). Finally, electroporations with Hoxb1::GFP labelled scattered cells in the rostral VeD (Figure 5N), which may have migrated caudally from r4. In summary, our characterisation of the VeD showed cells arising from both Atoh1 and Ptf1a progenitors that span r4 to levels caudal to r7 (Figure 5G).
 
-## Avian hindbrain first order auditory nuclei are defined by axially distinct pools of Atoh1 and Ptf1a precursors
+### Avian hindbrain first order auditory nuclei are defined by axially distinct pools of Atoh1 and Ptf1a precursors
 
 In birds, primary auditory afferents synapse at the Nucleus Magnocellularis (NM) and Nucleus Angularis (NA) (Ryugo and Parks, 2003). NM neurons, characterised by their bifurcating ipsilateral and contralateral projections, are labelled by electroporation with Atoh1::GFP (Figure 6A). Ipsilateral axonal projections from NM neurons were observed surrounding the lateral border of the NM on their way towards the Nucleus Laminaris (NL) and terminating on its dorsal region (Figure 6B). At the contralateral (non-electroporated) side, NM axons were observed contacting the ventral side of NL neurons (Figure 6C). At its caudal end, the border between NM and the Descending Vestibular Nucleus (VeD) is difficult to distinguish (Figure 6D). No Ptf1a labelled neurons were found within the NM upon electroporation with Ptf1a::GFP (Figure 6E).
 
@@ -90,7 +90,7 @@ The Nucleus Angularis (NA) is composed of at least four morphologically and elec
 
 In summary, we observed that the Atoh1 and Ptf1a electroporations labelled all the described cell types in the avian first order hindbrain auditory nuclei. While the axial origin of NA cells was located towards the more rostral rhombomeres, NM cells were observed arising from the caudal rhombic lip (Figure 6K).
 
-## The Atoh1 positive rhombic lip is a main source of avian hindbrain second order auditory neurons
+### The Atoh1 positive rhombic lip is a main source of avian hindbrain second order auditory neurons
 
 In chick, the Nucleus Laminaris (NL) and Superior Olivary Nucleus (SON) comprise the hindbrain second order neuronal populations. They receive input from the NA and NM and are involved in the processing of monaural and binaural auditory cues (Carr and Soares, 2002). The NL sits ventral to the NM and is composed of neurons aligned on a plane along the mediolateral axis. Electroporation with Atoh1::GFP resulted in strong labelling of NL neurons (Figure 7A) that reveals their characteristic bipolar dendritic morphology (Figure 7A - inset), with segregated dorsal and ventral dendrites.
 
@@ -110,7 +110,7 @@ In summary, both second order auditory nuclei originated from mid-hindbrain prog
 
 In this study, we have mapped the rhombic lip/Atoh1, ventricular zone/Ptf1a and axial origin of chick hindbrain vestibular and auditory nuclei. This shows, for the first time, the origins of both systems by rhombomeric identity and specific dorsoventral lineage. Our data give a solid framework by which to assess divergence and convergence within hindbrain functional circuits in birds and mammals. We evaluate the contribution of changes in hindbrain development to the evolution of neuronal circuits, within the context of disparaging evolutionary histories of the different amniote vestibular and auditory structures.
 
-## Anatomical, morphological and developmental features indicate a high degree of conservation of hindbrain vestibular nuclei across vertebrates
+### Anatomical, morphological and developmental features indicate a high degree of conservation of hindbrain vestibular nuclei across vertebrates
 
 Vestibular peripheral organs, hindbrain vestibular nuclei and their connectivity patterns are highly conserved across vertebrates and clear evolutionary relationships can be established (Straka and Baker, 2013). The axial developmental origin and location of vestibular neurons projecting to oculomotor, spinal cord, cerebellar and commissural targets are also conserved (Branoner et al., 2016; Chagnaud et al., 2017; Malinvaud et al., 2010; Straka and Baker, 2013; Straka et al., 2014), however, a comparative analysis of the dorsoventral lineage of hindbrain vestibular neurons has been lacking. Here, we show that in chick, cells derived from rhombic lip Atoh1+ progenitors were present in the Superior, Deiters, Medial and Descending vestibular nuclei, while we observed no contribution from this lineage to the avian exclusive Tangential nucleus (Figures 4 and 5). Moreover, we have identified cells derived from Ptf1a+ progenitors in the Deiters, tangential, medial and descending vestibular nuclei (Figures 4 and 5). These results are similar to fate maps in mouse showing that rhombic lip Atoh1+ progenitors contribute to the superior (Wang et al., 2005), lateral, medial and spinal vestibular nuclei (Rose et al., 2009), while Ptf1a+ progenitors give rise to vestibular hindbrain neurons, possibly located in all four nuclei (Yamada et al., 2007). Of note, Atoh1 and Ptf1a cells do not account for the whole diversity of cell types, in either chick or mouse (Figure 8), and further mapping efforts are required to fully characterise the genetic lineages that give rise to the myriad of hindbrain vestibular neurons.
 
@@ -120,13 +120,13 @@ Vestibular peripheral organs, hindbrain vestibular nuclei and their connectivity
 
 Our high resolution electroporation-based labelling allowed for a detailed characterisation of the axial origin of vestibular neuronal types (Figure 8). The Nucleus Deiters Ventralis (Dv) and Nucleus Deiters Dorsalis (Dd) of birds are homologous to the rostroventral and dorsocaudal part of the mammalian lateral vestibular nucleus, respectively (Passetto et al., 2008), which is mainly derived from r4 progenitors (Chen et al., 2012; Di Bonito et al., 2015), with additional contribution from r3 and r5 (Pasqualetti et al., 2007). Here, we observed a similar axial origin for both the Dv and Dd, with progenitors allocated to r3, r4 and r5 (Figures 4I,J and 8). Moreover, Dv and Dd giant cells derived from Hoxb1+ (r4) progenitors. These may constitute a homologous cell type to the r4 derived large stellate cells of the murine lateral (and medial) vestibulospinal tract (Di Bonito et al., 2015; Di Bonito et al., 2017). Finally, we observed a minor group of small r4 derived cells that integrate into the VeS and VeM, invading r3 and r5 derived territories, respectively (Figures 4B and 5 D). A similar group of cells has been described in mouse (Di Bonito et al., 2017) and shown to also belong to the highly conserved vestibulospinal tract. Taken together, these observations support a homologous axial and dorso-ventral origin for spinal cord projecting neurons from both species and highlight the high degree of conservation in the detailed organisation of the ancestral vestibulospinal tract (Straka and Baker, 2013).
 
-## Avian first order hindbrain auditory neurons may be related to vertebrate ancestral vestibuloacoustic neurons
+### Avian first order hindbrain auditory neurons may be related to vertebrate ancestral vestibuloacoustic neurons
 
 Our electroporation-based fate mapping showed neurons in the chick first order NA arising from either Atoh1 or Ptf1a progenitors (Figures 6K–N and 8), thus sharing a developmental origin with the neurons of the mammalian ventral cochlear nucleus (VCN) (Figure 8 and (Fujiyama et al., 2009)). Moreover, both NA and VCN neurons share a common axial origin from rostral rhombomeres (Figures 6K,O–P and 8 and (Cramer et al., 2000; Di Bonito et al., 2013; Di Bonito et al., 2017; Farago et al., 2006; Marín and Puelles, 1995)). This developmental conservation suggests that anterior neurons of the ascending auditory pathway of amniotes may be homologous. Furthermore, first order NA neurons in birds/reptiles were proposed to be related to dorsal neurons of the fish anterior octaval nucleus (Walton et al., 2017). These anteriorly derived neurons may thus comprise a developmentally conserved brainstem first order relay point for auditory (particle vibration) information.
 
 The first order NM occupies a major portion of the diapsid caudal/dorsal hindbrain. NM neurons are derived from progenitors in the alar plate, the dorsal half of the neuroepithelium (Tan and Le Douarin, 1991) of the caudal hindbrain (Cambronero and Puelles, 2000; Cramer et al., 2000; Marín and Puelles, 1995). Our enhancer-based mapping confirmed this and further showed that NM neurons originate exclusively from rhombic lip (Atoh1+) progenitors located caudal to r5 (Figures 6A–K and 8). In zebrafish, Atoh1 is required for the development of a subpopulation of zn-5+ and Lhx2/9+ cells that may correspond to contralaterally projecting octaval neurons (Sassa et al., 2007) and preliminary mapping data shows Atoh1 labelling of neurons on the caudal octaval nucleus (Wullimann et al., 2011). Moreover, it has been proposed that NM neurons may derive from an ancestral population equivalent to extant neurons of the dorsal descending octaval nucleus of fish (Carr and Christensen-Dalsgaard, 2016; Walton et al., 2017), which are part of a binaural circuit that sharpens directional information from the saccule (Edds-Walton, 2016). Overall, this suggests that extant caudal octaval (vestibuloacoustic) neurons in chick that belong to the auditory NM and the vestibular DeV may be ancestrally related. Morphologically, a close association was observed between the two nuclei at the level of the caudal end of the NM (Figure 6D) with some VeD cells extending contralateral projections that join the NM dorsal (cochlear) commissure (Figure 6D - arrows). Finally, our observation that NM and VeD neurons share a developmental origin in the caudal rhombic lip, with a significant number of VeD neurons labelled via Atoh1 electroporations (Figure 5H) supports a common evolutionary origin for NM and rhombic lip derived VeD neurons.
 
-## The analogous avian and mammalian ITD circuits have separate evolutionary and developmental origins
+### The analogous avian and mammalian ITD circuits have separate evolutionary and developmental origins
 
 Both mammals and diapsids have brainstem interaural time difference (ITD) sound localisation circuits, with overall similar organisation. However, functional and morphological studies have shown that the similarities are superficial and indicate that the ITD circuits are an example of convergent evolution (Carr and Christensen-Dalsgaard, 2016; Carr and Soares, 2002; Grothe et al., 2004; Grothe and Pecka, 2014; Grothe et al., 2010). Our developmental analysis supports this hypothesis by 1) corroborating differences in origin of first order nuclei, 2) revealing divergence in the origins of second order coincidence detectors and 3) showing a multifaceted developmental and evolutionary history for the neurons that provide inhibitory modulation to the ITD circuit.
 
@@ -140,19 +140,395 @@ In summary, the comparative development of ITD circuit components shows a mixtur
 
 ## Materials and methods
 
-## Cloning of enhancer elements and plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>CAG-mCherry</td>
+      <td></td>
+      <td></td>
+      <td>Dr.Murakami (Osaka University)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Atoh1-Cre</td>
+      <td>DOI: 10.1523/JNEUROSCI.4231–11.2012</td>
+      <td></td>
+      <td>Avihu Klar, Hebrew University Medical School</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Atoh1-Gal4</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Atoh1 enhancer from Atoh1-Cre subcloned upstream of Gal4 coding sequence (Martin Meyer, King's College London) - Primers in Table 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Atoh1-FLPo</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Atoh1 enhancer from Atoh1-Cre subcloned upstream of FLPo recombinase coding sequence (Avihu Klar, Hebrew University Medical School) - Primers in Table 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Ptf1a-Cre</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Ptf1a short enhancer (Meredith et al., 2009) - DOI:10.1523/JNEUROSCI.2303–09.2009) was subcloned upstream of the Cre recombinase coding sequence replacing the Atoh1 enhancer in the Atoh1-Cre plasmid (Avihu Klar, Hebrew University Medical School) - Primers in Table 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Egr2-Cre</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Egr2 enhancer sequence (mm10 chr:67320405–67321006) described in Chomette et al., 2006 (doi:10.1242/dev.02289) was subcloned upstream of the Cre recombinase coding sequence replacing the Atoh1 enhancer in the Atoh1-Cre plasmid (Avihu Klar, Hebrew University Medical School) - Primers in Table 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Hoxb1-Cre</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Hoxb1 enhancer sequence (mm10 chr11:96365175–96365784) described in Ferretti et al., 2005 (doi:10.1128/MCB.25.19.8541–8552.2005) was subcloned upstream of the Cre recombinase coding sequence replacing the Atoh1 enhancer in the Atoh1-Cre plasmid (Avihu Klar, Hebrew University Medical School) - Primers in Table 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Hoxa3-Cre</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Hoxa3 enhancer sequence (mm10 chr6:52177190–52177795) described in Manzanares et al., 2001 (PMID: 9895323) was subcloned upstream of the Cre recombinase coding sequence replacing the Atoh1 enhancer in the Atoh1-Cre plasmid (Avihu Klar, Hebrew University Medical School) - Primers in Table 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Hoxd4-Cre</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Hoxd4 enhancer sequence (mm10 chr2:74729772–74731362) described in Morrison et al. (1997) (PMID: 9272954) was subcloned upstream of the Cre recombinase coding sequence replacing the Atoh1 enhancer in the Atoh1-Cre plasmid (Avihu Klar, Hebrew University Medical School) - Primers in Table 1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Pbase</td>
+      <td>Sanger Institute</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-LoxP-pA-LoxP-EGFP</td>
+      <td>DOI: 10.1523/JNEUROSCI.4231–11.2012</td>
+      <td></td>
+      <td>Avihu Klar, Hebrew University Medical School</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCAG-FRT-pA-FRT-LoxP-pA-LoxP-EGFP</td>
+      <td>DOI: 10.1093/nar/gku750</td>
+      <td></td>
+      <td>Avihu Klar, Hebrew University Medical School</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>UAS-tdT</td>
+      <td></td>
+      <td></td>
+      <td>Martin Meyer (King's College London)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>chick Atoh1 riboprobe</td>
+      <td></td>
+      <td></td>
+      <td>Wilson and Wingate, 2006 (doi:10.1016/j.ydbio.2006.05.028)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>chick Ptf1a riboprobe</td>
+      <td></td>
+      <td>ChEST1028o4</td>
+      <td>Green and Wingate, 2014 (doi:10.1242/dev.099119)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit polyclonal anti-GFP</td>
+      <td>Invitrogen -ThermoFisher</td>
+      <td>Cat no. A11122</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488-conjugated goat polyclonal anti-rabbit IgG</td>
+      <td>Molecular Probes - ThermoFisher</td>
+      <td>Cat no. A11034</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gibson Assembly kit</td>
+      <td>New England Biolabs</td>
+      <td>Cat no. E5510S</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning of enhancer elements and plasmids
 
 An Atoh1 enhancer (Helms et al., 2000) was used to direct Cre recombinase expression to cells derived from the rhombic lip (Kohl et al., 2012). The same element was also subcloned upstream the Gal4 coding sequence (kind gift from Martin Meyer, King’s College London) or the FLPo recombinase coding sequence (Hadas et al., 2014) to allow for the intersectional labelling of cells. A Ptf1a short enhancer element (Meredith et al., 2009) was subcloned upstream the Cre recombinase cloning sequence and used to identify a population of cells originating from the ventricular zone. All subclonings were performed using the Gibson Assembly kit (New England Biolabs).
 
 For the labelling of cells originating at different antero-posterior levels along the hindbrain, a set of rhombomere specific enhancer elements were employed. An Egr2 (Krox20) enhancer element (Chomette et al., 2006) was used to direct Cre recombinase expression to r3 and r5. An enhancer element from Hoxb1 (Ferretti et al., 2005) was used to direct Cre expression to r4. A Hoxa3 enhancer element (Manzanares et al., 2001) was used to direct Cre expression to r5/r6. Finally, an enhancer element from Hoxd4 (Morrison et al., 1997) was used to direct Cre expression to >r7. The enhancer elements were PCR amplified from mouse genomic DNA, and subcloned upstream of the Cre recombinase coding sequence using the Gibson Assembly kit (New England Biolabs). Primers used for each step are listed in Table 1.
 
+**Table 1.**
+ Restriction enzymes and sequences of the oligos used for cloning of expression constructs.Uppercase, gene-specific portion. Lowercase, vector specific portion.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Plasmid</th>
+      <th>PCR/digest</th>
+      <th>Restriction enzymes or primers sequences</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Atoh1-Gal4</td>
+      <td>Vector</td>
+      <td>NcoI + NotI digest of pBαtubGal4 vector</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Insert PCR</td>
+      <td>ctccaccgcggtggcAGAGCTTCCACTTCACCTCTCTGAGTG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>On Atoh1-Cre vector</td>
+      <td>gtttcttcttgggcccGGGGAGCGGCGAGAGGCT</td>
+    </tr>
+    <tr>
+      <td>Atoh1-FLPo</td>
+      <td>Vector</td>
+      <td>NcoI + NotI digest of CAG-FLPo vector</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Insert PCR</td>
+      <td>agcagagcgcggcgcCTCCTGGGCAACGTGCTG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>On Atoh1-Cre vector</td>
+      <td>cctgaggagtgaattggcGAATTCCTCATCAGATCCGCC</td>
+    </tr>
+    <tr>
+      <td>Ptf1a-Cre</td>
+      <td>Vector</td>
+      <td>NcoI + SacI digest of Atoh1-Cre vector</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Insert PCR</td>
+      <td>gggcgaattggagctAGGATCGTCAGCCACAGAGTTCATGG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>On Ptf1a-GFP vector</td>
+      <td>ctgcagatatccagccCATGGCGCCGCGCTCTGC</td>
+    </tr>
+    <tr>
+      <td>Egr2-Cre</td>
+      <td>Vector</td>
+      <td>SacI + XmaI digest of Atoh1-Cre vector</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Insert PCR</td>
+      <td>gggcgaattggagctGGGTTGTGAATGGAGCCAG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>On mouse gDNA</td>
+      <td>attcctgcagcccggGCAAGCCGACCAAACTCC</td>
+    </tr>
+    <tr>
+      <td>Hoxb1-Cre</td>
+      <td>Vector</td>
+      <td>SacI + XmaI digest of Atoh1-Cre vector</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Insert PCR</td>
+      <td>gggcgaattggagctCTAGTCATCCTTTTGTCCC</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>On mouse gDNA</td>
+      <td>attcctgcagcccggTCTTGCCCTACAACCTTTC</td>
+    </tr>
+    <tr>
+      <td>Hoxa3-Cre</td>
+      <td>Vector</td>
+      <td>SacI + XmaI digest of Atoh1-Cre vector</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Insert PCR</td>
+      <td>gggcgaattggagctATCAAATAGCAGCGAATCTTCG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>On mouse gDNA</td>
+      <td>attcctgcagcccggGGGACGTGTAGGAGGTGA</td>
+    </tr>
+    <tr>
+      <td>Hoxd4-Cre</td>
+      <td>Vector</td>
+      <td>SacI + XmaI digest of Atoh1-Cre vector</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Insert PCR</td>
+      <td>gggcgaattggagctCTAGAAGCCCACAGAAGTTG</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>On mouse gDNA</td>
+      <td>attcctgcagcccggCTAGAGCAGGTTCCCAGATG</td>
+    </tr>
+  </tbody>
+</table>
+
 The different enhancer driven expression plasmids were co-electroporated with their corresponding reporter plasmids, driving Cre, FLPo or Gal4 dependent expression of fluorescent proteins. The following reporter plasmids were employed: pCAG-LoxP-pA-LoxP-EGFP (CAG-Flox-pA-GFP), pCAG-FRT-pA-FRT-LoxP-pA-LoxP-EGFP (CAG-Flox-FLp-pA-GFP) and UAS-tdT. On experiments using Ptf1a, Egr2, Hoxb1, Hoxa3 and Hoxd4 enhancers, the PiggyBac DNA-transposition system was used to achieve integration of the reporter gene into the chick genome and therefore persistent labelling of the targeted cells (Hadas et al., 2014). The reporter construct in this case consisted of a Cre-dependent GFP cloned between the two PB arms and was co-electroporated with an enhancer-Cre plasmid and a plasmid encoding for the Pbase transposase (Sanger Institute). As a control for the successfully targeted area, a CAG-mCherry plasmid was co-electroporated in most experiments. All plasmids and sequences are available upon request.
 
-## In ovo electroporations
+### In ovo electroporations
 
 Fertilised hen’s eggs were incubated at 38°C. Electroporations were performed at stages HH12-15 (Hamburger and Hamilton, 1951). Briefly, eggs were windowed using sharp surgical scissors. The fourth ventricle was injected with ~100–200 nl of the corresponding plasmids DNA at equimolar concentrations and to a final concentration of 1–3 µg/µl. Three 20 ms/10 V square waveform electrical pulses were passed between electrodes placed on either side of the hindbrain. Tyrode’s solution supplemented with penicillin/streptomycin (Sigma) was added before the eggs were resealed and incubated for a further 1 or 8 days at 38°C. A minimum of three batches of independent electroporations were performed for each of the enhancer plasmid combinations employed. A minimum of two embryos were fully processed (dissected, sectioned, stained, imaged and analysed) for each of the electroporations performed. Table 2 shows a summary of the plasmid combinations used, the structures labelled, the figures showing representative images of the labelling observed and the number of embryos analysed.
 
-## Tissue processing, in situ hybridisation, immunostaining and imaging
+**Table 2.**
+ Summary of the plasmid combinations used, the structures labelled, the figures showing representative images of the labelling observed and the number of embryos analysed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Enhancer/reporter plasmid combinations</th>
+      <th>Abbreviation</th>
+      <th>Structures labelled (Figures) – [# embryos]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Hindbrain flatmounts (embryos fixed at E4/E6)</td>
+    </tr>
+    <tr>
+      <td>Atoh1-Cre + CAG Flox-pA-GFP+CAG-mCherry</td>
+      <td>Atoh1::GFP + mCherry</td>
+      <td>RL (2C) – (12)</td>
+    </tr>
+    <tr>
+      <td>Ptf1a-Cre + CAG PBase+Pb CAG-Flox-pA-GFP+CAG-mCherry</td>
+      <td>Ptf1a::GFP + mCherry</td>
+      <td>VZ (2D) – (7)</td>
+    </tr>
+    <tr>
+      <td>Egr2-Cre + CAG PBase+Pb CAG-Flox-pA-GFP+CAG-mCherry</td>
+      <td>Egr2::GFP + mCherry</td>
+      <td>r3, r5 (2E) – (5)</td>
+    </tr>
+    <tr>
+      <td>Hoxb1-Cre + CAG PBase+Pb CAG-Flox-pA-GFP+CAG-mCherry</td>
+      <td>Hoxb1::GFP + mCherry</td>
+      <td>r4 (2E) – (5)</td>
+    </tr>
+    <tr>
+      <td>Hoxa3-Cre + CAG PBase+Pb CAG-Flox-pA-GFP+CAG-mCherry</td>
+      <td>Hoxa3::GFP + mCherry</td>
+      <td>r5, r6 (2E) – (5)</td>
+    </tr>
+    <tr>
+      <td>Hoxd4-Cre + CAG PBase+Pb CAG-Flox-pA-GFP+CAG-mCherry</td>
+      <td>Hoxd4::GFP + mCherry</td>
+      <td>≥r7 (2E) – (5)</td>
+    </tr>
+    <tr>
+      <td colspan="3">Hindbrain coronal cryosections (embryos fixed at E10)</td>
+    </tr>
+    <tr>
+      <td>Atoh1-Cre + CAG Flox-pA-GFP+CAG-mCherry</td>
+      <td>Atoh1::GFP + mCherry</td>
+      <td>VeS (4A), Dd/Dv (4E-F), Ta (4K), VeM (5A), VeD (5H-I), NM (6A-D), NA (6 L-M), NL (7A), SON (7F) – (10)</td>
+    </tr>
+    <tr>
+      <td>Atoh1-Cre + CAG-Flox-pA-GFP</td>
+      <td>Atoh1::GFP</td>
+      <td>NL (7A - inset), SON (7F - inset) – (4)</td>
+    </tr>
+    <tr>
+      <td>Ptf1a-Cre + CAG PBase+Pb CAG-Flox-pA-GFP+CAG-mCherry</td>
+      <td>Ptf1a::GFP + mCherry</td>
+      <td>Dd/Dv (4 G-6H), Ta (4L), VeM (5B), VeD (5J), -NM (6E), NA (6N), SON (7G) – (9)</td>
+    </tr>
+    <tr>
+      <td>Egr2-Cre + CAG PBase+Pb-CAG-Flox-pA-GFP</td>
+      <td>Egr2::GFP</td>
+      <td>VeS (4B), Dd/Dv (4I), Ta (4M), VeD (5K), NA (6O), NL (7B), SON (7H) – (4)</td>
+    </tr>
+    <tr>
+      <td>Hoxb1-Cre + CAG PBase+Pb-CAG-Flox-pA-GFP</td>
+      <td>Hoxb1::GFP</td>
+      <td>VeS (4C), Dd/Dv (4J), Ta (4N), VeD (5N), NA (6P), NL (7C), SON (7J) – (7)</td>
+    </tr>
+    <tr>
+      <td>Hoxa3-Cre + CAG PBase+Pb-CAG-Flox-pA-GFP</td>
+      <td>Hoxa3::GFP</td>
+      <td>Ta (4O), VeD (5L), NL (7D), SON (7K) – (4)</td>
+    </tr>
+    <tr>
+      <td>Hoxd4-Cre + CAG PBase+Pb-CAG-Flox-pA-GFP</td>
+      <td>Hoxd4::GFP</td>
+      <td>VeD (5M) – (7)</td>
+    </tr>
+    <tr>
+      <td>Egr2-Cre + CAG PBase+Pb CAG-Flox-pA-GFP+Atoh1 Gal4+UAS-tdT</td>
+      <td>Egr2::GFP + Atoh1::tdT</td>
+      <td>VeM (5C), NM (6F), SON (7I)– (4)</td>
+    </tr>
+    <tr>
+      <td>Hoxb1-Cre + CAG PBase+Pb CAG-Flox-pA-GFP+Atoh1 Gal4+UAS-tdT</td>
+      <td>Hoxb1::GFP + Atoh1::tdT</td>
+      <td>VeM (5D), -NM (6H)– (7)</td>
+    </tr>
+    <tr>
+      <td>Hoxa3-Cre + CAG PBase+Pb CAG-Flox-pA-GFP +Atoh1 Gal4+UAS-tdT</td>
+      <td>Hoxa3::GFP + Atoh1::tdT</td>
+      <td>VeM (5E), NM (6G) – (4)</td>
+    </tr>
+    <tr>
+      <td>Hoxd4-Cre + CAG PBase+Pb CAG-Flox-pA-GFP+Atoh1 Gal4+UAS-tdT</td>
+      <td>Hoxd4::GFP + Atoh1::tdT</td>
+      <td>VeM (5F), NM (6I) – (7)</td>
+    </tr>
+    <tr>
+      <td>Hoxd4-Cre + Atoh1 FLPo+CAG Flox-FLp-pA-GFP+CAG-mCherry</td>
+      <td>Hoxd4 + Atoh1::GFP + mCherry</td>
+      <td>NM (6J) – (2)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Tissue processing, in situ hybridisation, immunostaining and imaging
 
 Embryos were collected after 3 to 10 days of incubation, the hindbrain was dissected out and fixed in 4% paraformaldehyde (in phosphate-buffered saline). For in situ hybridisation E4 dissected hindbrain tissue was stained as previously described (Myat et al., 1996) with digoxygenin or fluorescein-labelled riboprobes (Roche) for: Atoh1 (Wilson and Wingate, 2006) and Ptf1a (ChEST1028o4, (Green et al., 2014)), flatmounted on 80% glycerol and imaged from the dorsal side.. A different set of E10 dissected hindbrains were sectioned at 10 um and stained with cresyl violet.
 

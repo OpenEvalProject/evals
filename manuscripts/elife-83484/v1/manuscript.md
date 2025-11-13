@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01aj84f44 Danish Centre for Studies in Research and Research Policy, Department of Political Science, Aarhus University Aarhus Denmark
-2. https://ror.org/001w7jn25 QUEST Center for Responsible Research, Berlin Institute of Health at Charité - Universitätsmedizin Berlin Berlin Germany
+1. Danish Centre for Studies in Research and Research Policy, Department of Political Science, Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
+2. QUEST Center for Responsible Research, Berlin Institute of Health at Charité - Universitätsmedizin Berlin Berlin Germany ([ROR:001w7jn25](https://ror.org/001w7jn25))
 
 † Corresponding author
 
@@ -29,11 +29,123 @@ This study adds to the literature by proposing a new way to investigate the role
 
 ## Results
 
-## Open science practices analyses
+### Open science practices analyses
 
 We managed to include 211 pairs of Ph.D. candidates and supervisors, 50 from Leiden UMC, 54 pairs from Amsterdam UMC, 52 from UMC Groningen, and 55 from Maastricht UMC. This resulted in 2062 DOIs, six of which did not resolve in Unpaywall (0.3%) and 14 PDFs could not be obtained for Oddpub (0.7%). Prevalence for each practice (expressed as unique DOIs) appear in Table 1, as well as correlations between the Ph.D. candidates’ engagement in a practice and the supervisors’ engagement in a practice. GEE logistic regression analyses for both crude and adjusted models appear in Table 2.
 
-## Retractions analysis
+**Table 1.**
+ Prevalence of open access publishing and sharing data openly among unique DOIs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Practice</th>
+      <th>Ph.D. candidates</th>
+      <th>Supervisors</th>
+      <th>Total*</th>
+      <th>Spearman’s correlation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Open access</td>
+      <td>548</td>
+      <td>1154</td>
+      <td>1702 (82.8%)</td>
+      <td>0.24</td>
+    </tr>
+    <tr>
+      <td>Open data (automated)</td>
+      <td>67</td>
+      <td>112</td>
+      <td>179 (8.8%)</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>Open data (manually verified)</td>
+      <td>34</td>
+      <td>66</td>
+      <td>100 (4.8%)</td>
+      <td>0.22</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Between parentheses indicates proportion out of the total sample._
+
+**Table 2.**
+ GEE logistic analyses for open access, open data (automated detection), and open data (manually verified).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Crude analysis</th>
+      <th colspan="4">Adjusted analysis (institution added)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Practice</td>
+      <td>N</td>
+      <td>OR*</td>
+      <td>95% CI</td>
+      <td>p-value</td>
+      <td>N</td>
+      <td>OR*</td>
+      <td>95% CI</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td>Open access (binary)</td>
+      <td>651</td>
+      <td>1.99</td>
+      <td>(1.17–3.38)</td>
+      <td>0.011</td>
+      <td>651</td>
+      <td>1.64</td>
+      <td>(0.94–2.85)</td>
+      <td>0.079</td>
+    </tr>
+    <tr>
+      <td colspan="9">Reference category: up to or including the national average (76%) of the supervisor’s publications were open access</td>
+    </tr>
+    <tr>
+      <td>Open data automated (binary)</td>
+      <td>644</td>
+      <td>2.09</td>
+      <td>(1.13–3.88)</td>
+      <td>0.019</td>
+      <td>644</td>
+      <td>2.21</td>
+      <td>(1.19–4.12)</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td colspan="9">Reference category: supervisor never shared data</td>
+    </tr>
+    <tr>
+      <td>Open data manually verified (binary)</td>
+      <td>653</td>
+      <td>3.74</td>
+      <td>(1.53–9.12)</td>
+      <td>0.004</td>
+      <td>653</td>
+      <td>4.60</td>
+      <td>(1.86–11.35)</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td colspan="9">Reference category: supervisor never shared data</td>
+    </tr>
+  </tbody>
+</table>
+
+_N=the total number of included publications by Ph.D. candidates.*Odds ratios are EXP transformed._
+
+### Retractions analysis
 
 We were able to link a total of 81,091 publications to the supervisors and Ph.D. candidates. Three Ph.D. candidates could not be identified, all supervisors were identified. Of the 81,091 publications that could be matched to the Ph.D. candidates and supervisors, two were retracted. Both regarded publications where the supervisor appeared as one of the co-authors and were retracted one year after publication. The following reasons were specified, which we interpret as honest errors:
 
@@ -47,7 +159,7 @@ None of the publications included in our own dataset were retracted. RetractionW
 
 We hypothesized that having a supervisor that shares data or publishes open access was associated with a higher likelihood that the Ph.D. candidate will engage in the same practice. Based on the automated detection of data-sharing statements, we found that having a supervisor that shared data is associated with 2.21 (p=0.012) times the odds to share data when compared to having a supervisor that did not share data. This odds ratio increased to 4.6 (p=0.001) after manually checking the open data statements and removing false positives. The unadjusted open access odds ratio was 1.99 (p=0.011) and became 1.64 (p=0.079) when correcting for the role of the institution. By including the institute variable in our adjusted analyses, the effects of open data remain significant. The odds ratio for the manually verified open data increased by 23%, which could be due to the institution initially masking the effect of the supervisor (see also Kahan et al., 2014).
 
-## Contextualisation
+### Contextualisation
 
 Since our sample consists of Ph.D. candidates and supervisors from Dutch UMCs and focuses only on recent years, it may be useful to compare it to international data and reflect on some assumptions that went into our design. Serghiou et al., 2021 screened all of PubMed Central using the same text-mining algorithm as the current study and found 8.9% of publications to return Open Data statements. It, therefore, seems likely that our sample (8.8%) is not substantially different from the rest of biomedicine.
 
@@ -59,7 +171,7 @@ For open access (82.8% current study), we find our Dutch sample to be in line wi
 
 Open access comes in different forms and publishing in open-access journals is often not for free (Ross-Hellauer, 2022). Some publishers make exceptions for scientists from low and middle-income countries, but the Netherlands would not classify. It could thus be that the amount of funding that a supervisor or Ph.D. candidate had available affected the relationship we studied. In other words: funding availability may determine whether Ph.D. candidates (or supervisors) chose to publish in an open access journal. However, it should be noted that green open access, archiving a paper in an appropriate format in an (institutional) repository, can be done free of financial charge.
 
-## The role of early career researchers (ECRs)
+### The role of early career researchers (ECRs)
 
 A variety of grassroots initiatives that aim to promote open science practices are spearheaded by ECRs (many of them in the process of obtaining a Ph.D.). Popular examples in the Netherlands include ReproducbiliTea (https://reproducibilitea.org) as well as the Open Science Communities (https://www.osc-nl.com).
 
@@ -67,7 +179,7 @@ In addition, many education and training activities to promote open science and 
 
 Our findings do not allow for causal inferences, yet we believe they don’t need to conflict with ECRs and Ph.D. candidates’ knowledge about and engagement in open science practices. Even when one has knowledge about open science practices when starting a Ph.D. trajectory or engages in a ReproducibiliTea reading group during a Ph.D., it may still help to have a supervisor who role models these practices. Considering the associations that we identified, we speculate that working under supervisors who engage in open science themselves could empower Ph.D. candidates to engage in open science more readily. Or at the very least, the supervisor is then less likely to hamper the Ph.D. candidate’s engagement in these practices. The other side of the coin, supervisors’ lack of engagement in open science practices, still seems more normal, although a recent Dutch survey found Ph.D. candidates to score lower compared to senior researchers on sharing data (Gopalakrishna et al., 2022a). Finally, it could be that the relationship investigated here is bidirectional.
 
-## Limitations
+### Limitations
 
 This study included many publications by the supervisors, but not all. The number of included first or last author publications for the open science practices varies between 3 and 11; we always included more publications by the supervisor than by the Ph.D. candidate. This meant that at times, we had to exclude pairs because the supervisor did not have a sufficient number of publications, meaning we may have a small bias towards productive supervisors. In addition, we only included publications up until the year that the Ph.D. candidate defended their thesis, meaning that we at times had to exclude the most recent works.
 
@@ -75,45 +187,45 @@ We only sampled from four out of eight Dutch UMCs; hence our findings may not ge
 
 Finally, our study does not allow for drawing causal inferences on who educated who regarding open science practices. This is due to its design, but also because we only extracted publications by Ph.D. candidates that were part of their Ph.D. thesis. Hence, we might have missed publications outside the Ph.D. or prior to the Ph.D. candidate that would have indicated a greater engagement in open science practices. That said, this was beyond the scope of our study that aimed at looking at the effect of a supervisor engaging in open science practices.
 
-## Conclusion
+### Conclusion
 
 We investigated whether having a supervisor that shared data openly and published open access, resulted in a greater odds of the Ph.D. candidate sharing their data and publishing open access. Based on our sample of 211 pairs of biomedical Ph.D. candidates and supervisors, we find the odds of a Ph.D. candidate sharing data to be greater when working under a supervisor who shared data themselves. The effect of open access was smaller and vanished when correcting for institutions, which might be explained by a greater uptake of open access across the Dutch ecosystem. Our design highlights a new way of investigating role modeling in the context of Open Science and other responsible research practices.
 
 ## Materials and methods
 
-## Materials availability statement
+### Materials availability statement
 
 Data were collected using a pilot-tested protocol that is freely accessible on OSF, we provide a brief overview of our data collection procedures and materials below.
 
-## Ethical aspects
+### Ethical aspects
 
 This study used publicly available information (publications) as its data and hence no ethical approval was required. The study was preregistered on the OSF, see: 10.17605/OSF.IO/2PBNS.
 
-## Population
+### Population
 
 Our population consisted of pairs of Ph.D. candidates and their main supervisors (in the Netherlands, the primary supervisor has to be a full professor, although recently associate professors can get these rights, too). They had to be affiliated with a Dutch University Medical Center (henceforth: UMC) and had to work in biomedicine (understood as their publications being indexed in PubMed).
 
 The Netherlands has eight UMCs, four of those maintained Ph.D. thesis repositories that allowed for the reliable extraction of data (based on a pilot study, see here). These were Leiden UMC, Amsterdam UMC (location AMC), Maastricht UMC, and UMC Groningen, respectively.
 
-## Sample size
+### Sample size
 
 In the absence of, to our knowledge, previous studies using a similar method to examine supervisor’s role modeling in this or a comparable manner, we conducted a pilot study (n=30). We used the correlations found in the pilot for open access (0.2) as input for the sample size calculation. With an alpha of 0.05 and a power of 0.80, we would need 194 pairs. However, we oversampled as some publications might not meet eligibility criteria after screening the full publication.
 
-## Sampling time
+### Sampling time
 
 We identified pairs and extracted data between April 17th and June 30th, 2022. We stopped sampling when we passed the required sample size, and wanted to include an equal share of pairs from each of the four university medical centers. This meant we focused on Ph.D. theses that were defended in 2022 or late 2021.
 
-## Eligibility criteria
+### Eligibility criteria
 
 Ph.D. candidates’ publications had to be in English, part of their Ph.D. thesis (other works published during the same time were excluded), regard empirical work (excluding reviews, commentaries, and narratives), published no earlier than 2018 (to make it reasonable they worked with the supervisor we identified), where the Ph.D. candidate was the sole first author. We only included Ph.D. candidates if they had at least two publications that met these criteria.
 
 Supervisors’ publications had to be in English, had to regard empirical work, and be published no earlier than 2017 where the supervisor was the sole first or last author. We only included supervisors if they had at least three publications that met these criteria. Each supervisor only appears once in our dataset to prevent additional clustering and the Ph.D. candidates could not be co-authors on included publications.
 
-## Data extracted
+### Data extracted
 
 If both the Ph.D. candidate and the supervisor met the eligibility criteria, we extracted the DOIs of the relevant publications, the names of the pairs, the institute they worked at the time of the Ph.D. defense, and the year of the thesis defense. For the supervisor, we also extracted the authorship position.
 
-## Data preparation
+### Data preparation
 
 To assess the open access status, we used the Unpaywall API through the UnpaywallR package (Ridel and Franzen, 2022). The UnpaywallR package takes the DOI and returns the different forms in which a publication is available. We applied the following hierarchy: Gold, Green, Hybrid, Bronze, and Paywalled, following the interpretations of the different forms as described by Priem, 2021. We recoded this into a binary variable where Gold, Green, and Hybrid were considered open, and Bronze and paywalled were considered closed.
 
@@ -121,7 +233,7 @@ To identify papers with open data, we used Oddpub followed by a manual review of
 
 To assure that the publications where Oddpub returned a statement genuinely had open data, two extractors manually reviewed all statements using a piloted protocol (Iarkaeva, 2022). If there were any discrepancies between extractions, a third extractor or a research data management expert was consulted, and discrepancies were solved through discussion. This resulted in another binary variable where all publications from the list that Oddpub picked up on that had open data were assigned a one and all other publications (i.e. publications where Oddpub initially returned a statement but that were on closer inspection no instances of open data plus all publications where Oddpub returned no statement) were assigned a zero. We refer to this as manually verified open data.
 
-## Data analysis
+### Data analysis
 
 First, we calculated the prevalence and correlations between a supervisors’ engagement in a practice and Ph.D. candidates’ engagement in a practice. Next, we used Generalized Equations Estimations (GEE) logistic regression to analyze the data, because our dataset is clustered. We transformed the dataset to the level of the Ph.D. candidate where publications (by the candidate) cluster within the candidate. We recoded supervisors’ engagement in open access publishing and data sharing into dichotomous covariates so they could be added to the GEE logistic regression model.
 
@@ -129,6 +241,6 @@ When the percentage of publications from the supervisor that was openly availabl
 
 We recoded the supervisors’ sharing of data into never (no included publications with open data) and ever (one or more included publications with open data) and applied the same categorization to automated statements and manually checked statements. We then exponentially transformed the model’s ß coefficients and present Odds ratios. We conducted a crude and adjusted analysis of our odds ratios, where the adjusted models include a dummy coded institute variable to control for a potential confounding bias. In order to determine if the institute was a confounding factor, we compared the measure of association (odds ratios) before and after adjustment. The 10% rule for confounding was applied (Beukelman and Brunner, 2016; Budtz-Jørgensen et al., 2007).
 
-## Additional retraction analyses
+### Additional retraction analyses
 
 A potential concern with our way of studying supervisors’ role modeling regards missing potential irresponsible behaviors. To accommodate this concern, we used the author-disambiguation algorithm developed by Caron and van Eck, 2014 to obtain meta-data on all publications from supervisors and Ph.D. candidates that were available in the in-house version of Web of Science database at CWTS, Leiden University, the Netherlands, and screened these for retractions. Note that a retraction need not indicate actual irresponsible behavior, it may regard honest mistakes. Where possible, we provide the reason for the retraction as specified by the respective journal.

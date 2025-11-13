@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.35471.001 Heritable variation in gene expression forms a crucial bridge between genomic variation and the biology of many traits. However, most expression quantitative trait loci (eQTLs) remain unidentified. We mapped eQTLs by transcriptome sequencing in 1012 yeast segregants. The resulting eQTLs accounted for over 70% of the heritability of mRNA levels, allowing comprehensive dissection of regulatory variation. Most genes had multiple eQTLs. Most expression variation arose from trans -acting eQTLs distant from their target genes. Nearly all trans -eQTLs clustered at 102 hotspot locations, some of which influenced the expression of thousands of genes. Fine-mapped hotspot regions were enriched for transcription factor genes. While most genes had a local eQTL, most of these had no detectable effects on the expression of other genes in trans . Hundreds of non-additive genetic interactions accounted for small fractions of expression variation. These results reveal the complexity of genetic influences on transcriptome variation in unprecedented depth and detail.
+Heritable variation in gene expression forms a crucial bridge between genomic variation and the biology of many traits. However, most expression quantitative trait loci (eQTLs) remain unidentified. We mapped eQTLs by transcriptome sequencing in 1012 yeast segregants. The resulting eQTLs accounted for over 70% of the heritability of mRNA levels, allowing comprehensive dissection of regulatory variation. Most genes had multiple eQTLs. Most expression variation arose from trans-acting eQTLs distant from their target genes. Nearly all trans-eQTLs clustered at 102 hotspot locations, some of which influenced the expression of thousands of genes. Fine-mapped hotspot regions were enriched for transcription factor genes. While most genes had a local eQTL, most of these had no detectable effects on the expression of other genes in trans. Hundreds of non-additive genetic interactions accounted for small fractions of expression variation. These results reveal the complexity of genetic influences on transcriptome variation in unprecedented depth and detail.
 
 ## Introduction
 
@@ -31,17 +31,41 @@ In model organisms, eQTLs can be identified by linkage analysis in panels of off
 
 ## Results
 
-## Deep eQTL mapping explains most gene expression heritability
+### Deep eQTL mapping explains most gene expression heritability
 
 We developed an experimental pipeline for high-throughput generation of RNA-seq data in yeast and obtained high-quality expression measurements (Source data 1 and Source data 2) for 5720 genes in 1012 segregants from a cross between a laboratory and a wine strain (hereafter, BY and RM, respectively). We obtained high-confidence genotypes at 11,530 variant sites from low-coverage whole-genome sequences of the segregants (Bloom et al., 2013) (Source data 3). We used the genotype and RNA-seq data for eQTL mapping and identified 36,498 eQTLs for 5643 genes at a false discovery rate (FDR) of 5% (Source data 4). Only 77 genes had no detected eQTL. Among the genes with at least one detected eQTL, the median number was 6, with a maximum of 21 (Figure 1A; Supplementary Discussion 1 describes the five genes with 21 eQTLs). Previous eQTL mapping in 112 segregants from this cross detected an average of less than one eQTL per gene as a consequence of much lower statistical power (Brem et al., 2002; Smith and Kruglyak, 2008). That data set was used to obtain indirect estimates of the distribution of the number of eQTLs per gene (Brem and Kruglyak, 2005), and these agree closely with the distribution of directly detected eQTLs observed in the current study. For example, Brem and Kruglyak (Brem and Kruglyak, 2005) estimated that at most 3% of genes would be influenced by a single eQTL (we observed 2.6% of such genes), and half of genes would require >5 eQTLs (we observed a median of 6 eQTLs per gene). While Brem and Kruglyak estimated that one third of genes would require more than 8 eQTLs, we observed only 23% such genes. Additional eQTLs of very small effect missed by our study likely account for this discrepancy. The observed distribution of the number of loci also closely matched the distribution we reported for loci influencing 160 protein levels studied with the highly powered X-pQTL approach (Albert et al., 2014b). Our results provide direct demonstration that variation in expression levels of nearly all genes has a complex genetic basis.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/35471/elife-35471-fig1-v2.jpg)
+
+**Figure 1.:** (A) Histogram showing the number of eQTLs per gene. (B) Most additive heritability for transcript abundance variation is explained by detected eQTLs. The total variance explained by detected eQTLs for each transcript (y-axis) is plotted against the additive heritability (h2). The diagonal line represents a scenario under which the variance explained by eQTLs exactly matches the heritability. (C) Power to detect eQTLs as a function of effect size, and distributions of observed local and distant eQTL effects. The black curve corresponds to the statistical power (right y-axis) for eQTL detection at a genome-wide significance threshold. Colored areas show the density of individual significant eQTLs (left y-axis) that explain a given fraction of phenotypic variance (x-axis) for distant (blue) and local (red) eQTLs. Note that the x-axis is truncated at 20% variance explained to aid visualization of smaller effects, and omits a long tail of few eQTLs with large effects. (D) Histogram showing the fraction of h2 explained by the sum of the eQTLs for each gene.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35471/elife-35471-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** The downsampled number of reads per sample (x-axis) is plotted against the mean additive heritability across all genes (y-axis). The black line is a non-linear least squares fit.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/35471/elife-35471-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** In all panels, heritability for each gene is plotted on the y-axis and compared to: (A) The average log2(TPM) for a gene across the segregants. (B) The number of detected eQTLs per gene. (C) The fraction of phenotypic variance explained by the largest effect eQTL per gene. The diagonal line represents the case of all heritability mapping to the strongest eQTL. (D) The fraction of additive heritability explained by the largest effect eQTL per gene. The vertical line represents the case of all additive heritability being explained by the strongest eQTL.
 
 We used our data to estimate the additive heritability of the expression level of each gene (i.e. the fraction of expression variance attributable to genetic factors; Figure 1—figure supplement 1; Source data 5). We observed a median heritability of 26%, with a maximum of 95% (Figure 1B). Our estimates are similar to those from population-based studies of gene expression in humans (Grundberg et al., 2012; Lloyd-Jones et al., 2017; Wheeler et al., 2016; Wright et al., 2014). The estimates are lower than heritabilities typically seen for organismal traits in this yeast cross (Bloom et al., 2013, 2015), suggesting a greater contribution of environmental and stochastic factors to gene expression variation. Across genes, heritability was positively correlated with mean expression and with expression variance, and negatively correlated with the number of protein-protein and synthetic genetic interaction partners, as well as with gene essentiality (p≤0.005) (Figure 1—figure supplement 2; Supplementary Discussion 2 and 3; Supplementary file 1; Source data 6).
 
 In contrast to previous eQTL studies, the detected eQTLs explained most of the estimated additive gene expression heritability (a median across genes of 71.5%) (Figure 1B and D 10-fold cross-validation). Low missing heritability in our data is explained by the high power of our experiment. We had greater than 90% power to detect eQTLs that explain at least 2.5% of expression variance (Figure 1C). The distribution of effect sizes of detected eQTLs is strongly weighted toward small effects (median 1.9% of variance explained; Figure 1C), suggesting that the remaining missing heritability is explained by undetected eQTLs with even smaller effects. These results are similar to those observed for organismal traits in this cross (Bloom et al., 2013, 2015). Thus, we have discovered most eQTLs with substantial effects that segregate in this cross, and these jointly account for the great majority of the observed genetic variation in the transcriptome.
 
-## Genetic expression variation arises primarily from trans-acting hotspots
+### Genetic expression variation arises primarily from trans-acting hotspots
 
 We found that 2884 genes (50% of 5720 expressed genes) had a local eQTL (defined as an eQTL whose confidence interval includes the gene it influences) at genome-wide significance (Figure 2A). This number rose to 4241 genes (74% of expressed genes) when we performed eQTL analysis with only one nearby marker per gene in order to reduce the multiple testing burden (FDR < 5%). Thus, the single pair of yeast isolates used here harbors sufficient local regulatory variation to alter the expression of more than half the genes in the genome. Comparisons with allele-specific expression data (Albert et al., 2014a) support previous results (Doss et al., 2005; Ronald et al., 2005) that most but not all local eQTLs act in cis (Figure 2—figure supplement 1, Figure 2—figure supplement 2, Supplementary Discussion 4; Supplementary files 2, 3 and 4; Source data 7).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/35471/elife-35471-fig2-v2.jpg)
+
+**Figure 2.:** (A) A stacked barplot showing for each gene with at least one eQTL the amount of phenotypic variance from local and distant eQTLs. Genes are sorted first by the amount of variance from the local eQTL, followed by the amount of variance from the strongest distant eQTL. (B) Violin plots of the distributions of fractions of phenotypic variance explained by summed local and distant eQTLs, respectively. This panel was generated using genes with at least one local and one distant eQTL.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/35471/elife-35471-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) For each gene present in the ASE datasets, we show the magnitude of ASE in the diploid BY/RM hybrid (x-axis) vs. the magnitude of the local eQTL in the current data (y-axis). Positive values indicate higher expression in RM compared to BY. The vertical and horizontal lines indicate ASE and local eQTL effects of zero, respectively. The diagonal line represents identical ASE and local eQTL effects. Local eQTL effects are computed for all genes, irrespective of whether the local eQTLs were significant. (B) As in (A), but showing only genes with significant ASE in at least one ASE dataset. Black circles: genes without a significant local eQTL. We show names of genes that have ASE in both datasets but do not have a significant local eQTL. (C) Boxplots showing absolute local eQTL effects for genes with no, one, or two significant ASE datasets. (D) as in (A), but only for genes with a significant local eQTL. Blue circles: genes with high statistical power to detect ASE. We show the names of genes with a local eQTL and high ASE power but no significant ASE, and names of genes with significant ASE and a local eQTL with opposite direction of effect (TDH3, YTA12, DBP5).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/35471/elife-35471-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The figure shows the results from a simulation study that varied the strength of true ASE (x-axis) and the depth of sequencing coverage, expressed as the number of reads covering the two alleles of the gene. Different depths of coverage are shown as colored lines. The blue line indicates the median coverage per gene observed in (Albert et al., 2014a), and the grey lines indicate the 10th and 90th coverage quantile in the same reference. The green area indicates the fold-changes observed for local eQTLs to show the ASE magnitudes that may be expected in real data. On the y-axes, the panels show: Left: Power to detect ASE at nominal significance of p≤0.05, Middle: Power to detect ASE with Bonferroni correction across the number of expressed genes, Right: the fraction of simulated ASE datasets in which the observed direction of ASE matched the true direction, irrespective of statistical significance.
 
 The vast majority of the genome-wide significant eQTLs did not overlap the genes they influenced (92%; 33,529 of 36,498); indeed, 86% were located on a different chromosome. Nearly every expressed gene (98%; 5606) had at least one such distant, trans-acting eQTL (Figure 2A). The individual effect sizes of the trans eQTLs were smaller than those of local eQTLs (median variance explained 2.8-fold less, T-test p<2.2e-16; Figure 1C). However, for the 2846 genes that had both a local eQTL and at least one distant eQTL, the aggregate effect of the distant eQTLs per gene was larger than that of the local eQTL (median 2.6-fold more variance explained; paired T-test p<2.2e-16; Figure 2B). Distant eQTLs accounted for the majority of eQTL variance for 85% of genes. Our results directly demonstrate the importance of trans acting variation.
 
@@ -57,9 +81,29 @@ Widespread effects caused by single loci likely arise from a cascade of effects 
 
 Our Supplementary Files and Datasets provide detailed information about each hotspot. Source data 8 contains a table that gives an overview of the hotspots, including their location, genes affected (details in Source data 9), and analyses of function (details in Source data 10) and transcriptional regulation (details in Source data 11) of the target genes of each hotspot. Supplementary file 5 visually represents each hotspot region, and Supplementary file 6 displays gene networks formed by the strongest target genes of each hotspot.
 
-## Causal genes underlying hotspots
+### Causal genes underlying hotspots
 
 Functional analysis of eQTL hotspots requires identification of the underlying causal genes, which has been challenging to do systematically. We developed a multivariate fine-mapping algorithm that narrows hotspot positions by leveraging information across the genes that map to each hotspot (Materials and methods). Briefly, we used all genes with an eQTL on a given chromosome and regressed out genetic factors on all other chromosomes and additional non-genetic factors. We reduced the dimensionality of the residual expression levels by singular value decomposition to capture linear combinations of traits that account for most of the variance in residual expression. We scanned the given chromosome for genetic influences on the multivariate distribution of these linear combinations, while controlling FDR via permutations. Finally, we used bootstraps to compute confidence intervals for hotspot locations (Figure 4 and 5).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/35471/elife-35471-fig4-v2.jpg)
+
+**Figure 4.:** (A) Histogram showing the number of genes located in the hotspot regions. (B) A hotspot on chromosome VIII maps to the gene STB5. From top to bottom: the general region on the chromosome, the empirical frequency distribution of hotspot peak locations from 1000 bootstrap samples (Materials and methods), locations of BY/RM sequence variants (red: variants with ‘high’ impact such as premature stop codons (McLaren et al., 2016); orange: ‘moderate’ impact such as nonsynonymous variants; grey: ‘low’ impact such as synonymous or intergenic variants), and gene locations. The light blue area shows the 95% confidence interval of the hotspot location as determined from the bootstraps. The red line shows the position of the most frequent bootstrap marker. (C) Genes for which the BY allele at the STB5 hotspot is linked to lower expression are enriched for STB5 transcription factor (TF) binding sites in their promoter regions. The figure shows enrichment results for all annotated TFs (grey dots), with the strength of enrichment (odds ratio) on the x-axis vs. significance of the enrichment on the y-axis. The STB5 result is highlighted in red.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/35471/elife-35471-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** For each major GO category of ‘Biological Process’, ‘Molecular Function’, and ‘Cellular Compartment’, the figure shows two panels. The most significant GO term as well as GO terms discussed in the main text are indicated. Top panels: Relationship between strength (x-axis) and significance (y-axis) of the GO enrichment. Each GO term is plotted as a dot, with size scaled as a function of the number of terms in the GO group. Note how the relationship between enrichment strength and significance depends on GO category size. Different levels of significance are indicated by colored circles. With decreasing stringency, these colors indicate: Red: p<0.05 after Bonferroni correction for the number of GO terms tested; Orange: permutation-based p<0.005, corresponding to an FDR of 5% (Materials and methods), Blue: GO term specific permutation-based p<0.01. Bottom panels: The number of genes in each GO term expected to be significant based on GO category size (x-axis) vs. the number of genes in each GO term observed to be significant. Color codes are as in the top panels. The diagonal line indicates observations that match the expectation.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/35471/elife-35471-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Each panel shows the region surrounding one hotspot containing (A) GAT1, (B) HMS1, (C) PUT3, (D) RFX1, (E) SRD1, and F) TBS1. Panel elements are as in Figure 4. Blue area shows the 90% confidence interval of hotspot location, and lighter blue areas shows the 95% confidence interval. The entire region tested in the bootstrap analysis is delimited by two markers shown as grey lines at the outer edges of the plots. These markers and the peak markers are padded to span all variants that are in perfect linkage disequilibrium with the given marker.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/35471/elife-35471-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** The figure shows the position of the first base in aligned reads from mRNA sequence and ribosome profile data (Albert et al., 2014a) in BY and RM. The annotated frameshift is located in a region without any mRNA or ribosome footprint reads. The annotated (presumably incorrect) and the likely correct start codon of STB4 are indicated.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/35471/elife-35471-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** (A) The region surrounding the ERC1 hotspot. Legend as in Figure 4B. The entire region tested in the bootstrap analysis is delimited by two markers shown as grey lines at the outer edges of the plots. These markers and the peak markers are padded to span all variants that are in perfect linkage disequilibrium with the given marker. (B) A visual representation of the top 50 genes affected by the hotspot. Each gene is shown as a dot, with size scaled as a function of the size of the effect of the hotspot on the gene. We show genes with lower expression linked to the BY allele. Genes with a local eQTL anywhere in the region tested in the bootstrap analysis are indicated by orange circles. Edges between genes indicate co-expression in a gene regulatory network (Zhang and Kim, 2014). Blue edges: positive co-expression, red edges: negative co-expression. Note the group of genes with methionine-related functions, including MET17.
 
 With this approach, we resolved the locations of 26 hotspots to regions containing three or fewer genes (a total of 58 genes; Figure 4A). Three hotspots contained exactly one gene (GIS1, STB5, and MOT3). We previously identified and experimentally confirmed the causal genes at several major hotspots (MKT1 (Zhu et al., 2008), HAP1 (Brem et al., 2002), IRA2 (Smith and Kruglyak, 2008), GPA1 (Yvert et al., 2003), and the mating-type locus [Brem et al., 2002]). These were all correctly localized by the algorithm, validating this fine-mapping strategy.
 
@@ -71,7 +115,7 @@ To further examine the role of sequence variation in transcription factor genes,
 
 Hotspot genes can also influence mRNA levels more indirectly – for instance, by shaping the cellular response to external stimuli such as nutrient availability. For example, we fine-mapped a hotspot, which influenced 645 genes, to an interval on chromosome VIII containing six genes (Figure 4—figure supplement 4A). One of these is ERC1, which encodes a transmembrane transporter. BY but not RM carries a frameshift in this gene, which removes the last two out of 12 predicted transmembrane helices of the protein (Fehrmann et al., 2013). This variant is known to reduce cell-to-cell variability (or ‘noise’) in the expression of a MET17 gene tagged with green fluorescent protein (Fehrmann et al., 2013). We found that the BY allele at this hotspot reduced the expression of genes that are highly enriched for the GO category ‘methionine biosynthetic process’ (GO:0009086, p=2e-22; Source data 8 and Source data 10). Thus, in addition to reducing MET17 expression noise, the ERC1 frameshift variant is linked to reduced mean expression levels of multiple genes in the methionine biosynthesis pathway (the MET regulon; Figure 4—figure supplement 4B). While the precise compounds that are imported or exported by Erc1p are not known, the ERC1 BY allele reduces cellular levels of S-Adenosylmethionine (SAM) (Breunig et al., 2014), a key component of methionine and cysteine amino acid metabolism (Sadhu et al., 2014). The ERC1 BY allele may down-regulate the MET regulon via its effects on SAM, triggering further transcriptional changes in hundreds of genes.
 
-## Relationship of local eQTLs and trans eQTLs
+### Relationship of local eQTLs and trans eQTLs
 
 Most known causal variants underlying yeast eQTL hotspots are coding (HAP1 (Brem et al., 2002), MKT1 (Zhu et al., 2008), GPA1, AMN1 (Yvert et al., 2003), SSY1 (Brown et al., 2008); [Fay, 2013]); however, change in the expression of a trans-acting factor by a local eQTL is another plausible causal mechanism (Sudarsanam and Cohen, 2014; Yao et al., 2017). We found that a higher proportion of hotspots contained genes with a local eQTL than expected by chance (p=0.007; Figure 5A). The median effect size of the strongest local eQTL in these hotspots was larger than expected (p=0.003). These enrichments are consistent with some hotspots being caused by local eQTLs that alter the expression of a gene located at the hotspot position, which in turn leads to changes in the other transcript levels that map to the hotspot.
 
@@ -87,7 +131,7 @@ Even when the causal gene in a hotspot has a local eQTL, it does not automatical
 
 STB5 and ERC1 carry protein-altering variants between BY and RM, including the known causal ERC1 frameshift in BY. Altered protein activity due to these coding variants may be responsible for the many distant linkages to these hotspots and may also cause the observed local eQTLs in trans, as previously shown for AMN1 (Ronald et al., 2005). The Stb5p transcription factor is predicted to target its own promoter (MacIsaac et al., 2006), such that its altered activity could influence its own expression. For the transmembrane transporter encoded by ERC1, the local eQTL might reflect a more indirect mechanism. For each of these hotspots, it seems plausible that a change in protein function, rather than change in gene expression, underlies the hotspot.
 
-## Genetics of mRNA vs. protein levels
+### Genetics of mRNA vs. protein levels
 
 The degree to which mRNA-based eQTLs also affect the protein levels of their target genes is a fundamental open question (Battle et al., 2015; Chick et al., 2016; Foss et al., 2007; Ghazalpour et al., 2011; Picotti et al., 2013) that has been difficult to resolve as a consequence of low statistical power in eQTL and protein QTL (pQTL) studies. Low power is expected to lead to poor overlap between eQTLs and pQTLs solely as a result of high false-negative rates. We compared our eQTLs to pQTLs that we had identified earlier for 160 proteins using a powerful bulk segregant approach (Albert et al., 2014b) (Source data 13). Here, we present results comparing the distant QTLs in both datasets because – by design of our earlier study – the set of distant pQTLs is much larger than the set of local pQTLs. Results for local QTLs are broadly consistent with those for distant QTLs (Supplementary Discussion 5).
 
@@ -101,13 +145,27 @@ In order to avoid downward bias in the overlap between eQTLs and pQTLs caused by
 
 Strong eQTLs without a pQTL clustered primarily at the HAP1 and MKT1 hotspots (Supplementary file 8; Figure 6B). These two hotspots also showed the clearest examples of overlapping eQTLs and pQTLs with opposite direction of effect on the same genes (Supplementary file 9; Figure 6C). Thus, while these hotspots influence both mRNA and protein levels of many genes, their effects on mRNA vs. protein levels of a given gene can be quite different. Strong pQTLs without an eQTL were more widely distributed across the genome (Supplementary file 10; Figure 6D).
 
-## Detection of non-additive eQTL interactions from a genome-wide search
+### Detection of non-additive eQTL interactions from a genome-wide search
 
 The contribution of non-additive or ‘epistatic’ genetic interactions to trait variation is a topic of ongoing debate (Hill et al., 2008; Mackay, 2014; Mäki-Tanila and Hill, 2014). In particular, demonstration of non-additive effects on human gene expression has been challenging (Becker et al., 2012; Brown et al., 2014; Buil et al., 2015; Fish et al., 2016; Hemani et al., 2014; Wood et al., 2014). Although clear examples of epistasis have been revealed for yeast gene expression (Brem and Kruglyak, 2005; Storey et al., 2005), the limited power of earlier studies had necessitated targeted search strategies rather than a full genome-by-genome scan.
 
 We reasoned that the high power of our current dataset should permit a more unbiased view of the contribution of epistasis to mRNA expression variation. We carried out a genome-by-genome scan for non-additive interaction effects on the expression levels of all genes and detected 387 eQTL-eQTL interactions influencing 306 genes (FDR = 10%; Source data 14). To our knowledge, this is the first unequivocal identification of eQTL interactions from an unbiased genome-by-genome scan. Targeted scans with a reduced multiple testing burden identified larger numbers of interacting pairs of loci: a total of 784 from a scan for interactions between genome-wide significant additive eQTLs and the genome, and a total of 1464 interactions between significant additive eQTLs.
 
 We examined the 387 eQTL-eQTL interactions detected in the genome-wide scan in more detail. The locations of interacting eQTLs clustered at certain positions in the genome, generally overlapping the hotspots described above (Figure 7A). In particular, many epistatic interactions involved the HAP1 hotspot (79 interactions), the KRE33 hotspot (66 interactions), as well as hotspots containing MKT1, GAP1, the mating type locus, and IRA2. Many interactions connected these hotspots with each other (Figure 7B). For example, 30 genes shared an eQTL interaction between HAP1 and KRE33, 14 genes shared an eQTL interaction between HAP1 and MKT1, 13 genes shared an eQTL interaction between KRE33 with IRA2, and 14 genes shared eQTL interactions between GPA1 and the mating-type locus (Brem et al., 2005).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/35471/elife-35471-fig7-v2.jpg)
+
+**Figure 7.:** (A) Locations of markers of epistatic pairs (pointing downward) compared to those of additive eQTLs (pointing upward). Epistatic hotspots discussed in the text are highlighted. (B) Interactions between two trans loci. The plot shows the genome broken up into chromosomes (indicated as roman numerals), with arches connecting two interacting loci. Arches are shaded such that multiple overlapping interactions appear darker. Epistatic hotspots are indicated as in panel A. The outer histogram shows the density of additive eQTLs. (C) Expression levels of SAG1 as a function of genotypes at the mating type locus and GPA1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/35471/elife-35471-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Interactions between trans and local loci. The plot shows the genome broken up into chromosomes (indicated as roman numerals), with arches connecting two interacting loci. Arches are shaded such that multiple overlapping interactions appear darker. Red arrows denote the local eQTLs. Blue lines indicate the interactions involving the HAP1 locus. The example shown in panel B is indicated. The outer histogram shows the density of additive eQTLs. (B) Expression levels of SCM4 as a function of genotypes at HAP1 and the SCM4 locus.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/35471/elife-35471-fig7-figsupp2-v2.jpg)
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/35471/elife-35471-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Shown are expression levels of three genes without any additive signal at either of the two interacting markers.
 
 The fact that interacting eQTLs colocalize with additive hotspots suggests that epistatic interactions often involve eQTLs that also have additive effects. Indeed, of the 774 markers in the 387 epistatic pairs, 558 (72%) were within 10 kb of a genome-wide significant additive eQTL influencing the same gene. An estimate based on the π1 statistic (Storey and Tibshirani, 2003) showed that at least 84% of epistatic markers have additive effects. An example is SAG1, which encodes the Alpha-agglutinin of cells with the alpha mating type. In our cross, the alpha mating type was carried by the RM parent. Consequently, expression of SAG1 was higher in segregants that carried the RM allele at the mating type locus (Figure 7C). In addition to this additive effect, the mating type locus was also involved in an interaction with the GPA1 locus, replicating the finding from a targeted search that a BY-specific S469I variant in GPA1 modulates SAG1 expression in alpha but not a cells (Brem et al., 2005).
 
@@ -147,7 +205,7 @@ On the other hand, although we detected local eQTLs for most genes in our cross,
 
 Unless otherwise specified, all computational analyses were performed in R. Analysis code is available at https://github.com/joshsbloom/eQTL_BYxRM (Bloom and Albert, 2018; copy archived at https://github.com/elifesciences-publications/eQTL_BYxRM). Supplementary Data files are also available at https://figshare.com/s/83bddc1ddf3f97108ad4.
 
-## Yeast growth
+### Yeast growth
 
 We used 1012 meiotic segregants previously generated (Bloom et al., 2013) from a cross between the prototrophic yeast laboratory strain BY (MATa; derived from a cross between BY4716 and BY4700) and the prototrophic vineyard strain RM (MATα hoΔ::hphMX4 flo8Δ::natMX4 AMN1-BY; derived from RM11-1a). The segregants were grouped according to their previously measured (Bloom et al., 2013) endpoint colony radius on YNB agar plates into groups of 96. The strains in each group were rearranged from existing stock plates into a total of 13 96-well plates in YNB medium, grown to saturation, and frozen as glycerol stocks for later growth. Within each group of 96, strain locations in the 96-well plate were selected at random. Culture and liquid handling was performed on a BioMek FXP instrument or with multichannel pipettes in 96-well format.
 
@@ -157,7 +215,7 @@ We used the rearranged stock plates to inoculate growth cultures in 1 ml YNB med
 
 Once average OD in the plate reached 0.4, we transferred the cultures to sterile Norgen nylon filter plates (#40008) situated on a vacuum manifold. We applied vacuum to remove all growth medium, sealed with aluminum foil seals, and flash froze the entire plate in liquid N2. The frozen plates were placed on a standard 96-well plate to protect their bottom, wrapped with parafilm, and stored at −80°C until RNA extraction. Note that this procedure provided us with OD measurements up to the exact time point at which cells were harvested.
 
-## RNA extraction
+### RNA extraction
 
 We used Dynabeads mRNA DIRECT kits (Ambion/Thermo Fisher) to directly isolate mRNA from cell lysates. To perform the RNA extractions on the BioMek robot, we prepared excess lysis/binding and Wash buffers that permitted the use liquid reservoirs with volumes that exceed that provided in the kits. These buffers were prepared as specified in the Dynabeads kit protocol:
 
@@ -195,7 +253,7 @@ We filled the wells of an Axygen 1.1 mL plate (P-DW-11-C-S) with about 250 µl a
 
 We centrifuged the plate for 4 min at 3000 rpm to separate glass beads and cell debris from the lysate. We pipetted two aliquots of 200 µL of lysate supernatant into two 96-well PCR plates for a total of 400 µL lysate. These plates were sealed, and the RNA melted for 2 min at 65°C in a thermocycler. We implemented a BioMek-assisted procedure to perform the Dynabead protocol with two mRNA enrichment steps. We did not quantify the resulting 11 µL of mRNA and simply used the entire mRNA for reverse transcription and sequencing library preparation. While piloting this procedure, we obtained typical yields of ~30 ng / µL and excellent RNA quality as judged by visualization on 1.1% agarose gels stained with ethidium bromide. Ribosomal RNA bands were clearly visible in crude lysate, less visible after the first mRNA enrichment, and absent after the second mRNA enrichment step. After the second mRNA enrichment, mRNA was clearly visible on the gel, with no visible RNA degradation.
 
-## RNA sequencing library construction and sequencing
+### RNA sequencing library construction and sequencing
 
 We performed reverse transcription and sequencing library preparation using the Kapa Stranded mRNA-Seq Kit (KK8420/21). This kit usually begins by enriching mRNA from total RNA. Because we had already performed mRNA enrichment, we used our entire mRNA as input and began at the RNA fragmentation step by adding 11 µL of ‘KAPA fragment, prime and elute buffer’ to our 11 µL of mRNA. RNA fragmentation was performed on a thermocycler for 6 min at 94°C.
 
@@ -205,21 +263,21 @@ Sequencing libraries were quantified by combining 1 µL of library with 100 µL 
 
 Sequencing was performed for 100 bp single end on Illumina HiSeq 2500 instruments at the UCLA BSRC sequencing core for two lanes per batch, for 26 total lanes. On average, we obtained approximately 3 million reads per sample. Sequencing reads are available in SRA under the accession codes listed in the data availability statement.
 
-## Sequence processing and gene expression quantitation
+### Sequence processing and gene expression quantitation
 
 Adapter sequences were trimmed using trimmomatic (Bolger et al., 2014). Reads were pseudoaligned to the 6713 annotated yeast ORF coding sequences from Ensembl build R64-1-1 using kallisto v.43.0 (Bray et al., 2016). Kallisto was run in strand-specific mode with parameters –l 150 and –s 8. For each transcript, we computed transcripts per million reads (TPM) as a measure of expression and used log2(TPM + 0.5) for downstream analysis. Segregants with fewer than one million reads were removed from downstream analysis, and 1012 segregants passed this filter. We removed 993 invariant transcripts with identical expression across all segregants or with log2(TPM + 0.5) less than 1 in 50% or more of the segregants. Our final dataset included 5720 transcripts, which were used for downstream analyses (Source data 1). These transcripts cover 5506 of 5971 open reading frames annotated as ‘verified’ or ‘uncharacterized’ in the yeast genome (Cherry et al., 2012).
 
-## Growth rate covariate
+### Growth rate covariate
 
 Unless otherwise specified, all remaining analyses were conducted in R (www.r-project.org). Based on the OD measurements collected during growth prior to harvesting, growth rates were calculated for each segregant using the R package grofit and the function gcFitSpline (Kahm et al., 2010). The difference between the maximum and minimum OD was recorded for each culture and used as a covariate for downstream analysis (Source data 2).
 
-## Sequence variants
+### Sequence variants
 
 Our BY and RM parent strains had earlier been sequenced to very high depth (>200 fold coverage of the genome), and GATK (McKenna et al., 2010) used to identify 48,254 sequence variants between them. These variants (irrespective of whether or not they are part of our marker map) were screened for potential functional impact using the Ensembl Variant Effect Predictor (McLaren et al., 2016).
 
 The segregant genotyping is described in (Bloom et al., 2013) and (Bloom et al., 2015). The 1012 segregants used for this study were genotyped at 42,052 highly reliable markers, which are a subset of the total 48,254 sequence differences between BY and RM. Sets of markers that were in perfect linkage disequilibrium (i.e. markers never separated by recombination) among the 1012 segregants were collapsed to one marker. Our final linkage map comprised 11,530 unique markers (Source data 3).
 
-## Heritability
+### Heritability
 
 A variance component model was used to estimate additive heritability. First, gene expression measurements were corrected for batch covariates and the growth measurement covariate described above using a linear model for each gene
 
@@ -245,25 +303,25 @@ R = a + i+e
 
 where i ~ N(0, σ2AA(A°A)) and A°A is the Hadamard (entry-wise) product of A, which can be interpreted as the fraction of pairs of markers shared between pairs of segregants. σ2AA is the interaction genetic variance captured by all pairwise combinations of markers. The other terms are the same as in the additive-only model. The result of ~1/10 as much variance arising from interactions relative to additive loci is based on the ratio of the average of the A°A term across genes to the average of the A term across genes. When we instead calculated this variance ratio for each gene, we found that the mean across genes was greatly inflated by a few extreme outliers, while the median was very low (less than 1/100) because almost half of the genes had an estimate of zero for the A°A term.
 
-## Gene annotations and features
+### Gene annotations and features
 
 Gene positions were extracted from Ensembl (Yates et al., 2016) (www.ensembl.org) build 83. Various analyses throughout the paper made use of a range of gene-specific features, factors and covariates: (1) Total variance in expression was calculated as the sum of the additive and residual variance components obtained in our heritability estimates. (2) Expression level was calculated as the mean log2(TPM) across segregants, (3) Gene essentiality was coded as a binary factor and obtained from SGD (Cherry et al., 2012) (www.yeastgenome.org) by searching for genes whose SGD deletion phenotype contained the term ‘inviable’. (4) dN/dS values were obtained from Supplementary Table S4 in (Wall et al., 2005). (5) The number of protein-protein interactions was obtained from SGD by downloading all ‘physical’ interactions between genes and counting their number per gene. (6) Synthetic genetic interactions were extracted from data from Costanzo et al. (2016) which provides genetic interaction data for pairwise gene deletions or disruptions between nearly all essential (E) and nonessential (N) genes (Costanzo et al., 2016). Specifically, we downloaded the ‘NxN’, ‘NxE’, and ‘ExE’ raw genetic interaction datasets from http://thecellmap.org/costanzo2016/, combined them into one table, and extracted the lowest interaction p-value for each gene pair. We restricted this set using the ‘strict’ definition from (Costanzo et al., 2016) and kept only pairs with interaction p-value<0.05 and interaction strength (epsilon) >0.16 or<−0.12. For each gene, we counted how many genes showed a genetic interaction at these thresholds and used this as our measure of synthetic genetic interactions. Using the ‘lenient’ or ‘intermediate’ definitions did not alter our conclusions. (7) We defined whether or not a gene is a transcription factor by downloading from SGD all genes annotated to the GO term GO:0003700 ‘transcription_factor_activity_sequencespecific_DNA_binding’ and its child GO terms. (8) As a proxy for deep evolutionary conservation, we extracted from Ensembl biomart whether or not a gene has a human homolog.
 
 Gene ontology (GO) associations for each gene were downloaded from the Gene Ontology Consortium (geneontology.org) on February 16, 2016. We used paralogy information downloaded from the yeast gene order browser (Byrne and Wolfe, 2005) (http://ygob.ucd.ie/).
 
-## Characteristics of genes with high or low heritability
+### Characteristics of genes with high or low heritability
 
 We tested for gene features associated with the degree of heritability by multiple linear regression. This regression modeled heritability as the dependent variable and the various gene features as predictor variables. We used the ‘summary’ and ‘lm’ functions, and the ‘car’ package in R to perform Type III sum-of-squares ANOVA. This analysis tests for the influence of each feature by dropping it from a full model that includes all other terms, and asking whether this results in a significantly worse fit as judged by F-statistics. The analysis controls for correlations among predictor variables and reports marginal associations only if they are significant over all other terms. We did not include interaction terms among predictor variables.
 
-## Gene ontology enrichment analyses
+### Gene ontology enrichment analyses
 
 We tested for GO enrichments using the R package topGO (Alexa et al., 2006). For analyses in which genes were classified as ‘interesting’ or not (e.g. whether a gene has heritability ≥90%, or whether it is located in a hotspot), we used the Fisher test for enrichment. When using a quantitative gene score as the measure of interest (e.g. the heritability), we used the one-sided t.test implemented in topGO. We used the ‘classic’ scoring method (Alexa et al., 2006), that is we did not adjust the enrichments for significance of child GO terms.
 
-## eQTL mapping
+### eQTL mapping
 
 We (Bloom et al., 2015) and others (Yang et al., 2014; Zeng, 1994) have previously noticed that power and precision of QTL mapping on a given chromosome can be increased by controlling for genetic contributions that arise from the other chromosomes in the genome. Our eQTL mapping strategy controls for genomic background in two ways. For each gene, we identified large genetic effects segregating on other chromosomes and included them as covariates while mapping on a given chromosome. We also corrected for any additional polygenic additive background signal on other chromosomes. Then, for each gene we used a forward stepwise procedure to map eQTLs with a false discovery rate procedure. Below we describe our algorithm in greater detail. Throughout, we use the terms ‘eQTL’ and ‘linkage’ interchangeably.
 
-## Identification of large background genetic effects
+#### Identification of large background genetic effects
 
 In the process of eQTL mapping on a given chromosome, we wanted to control for the genetic contributions from the remainder of the genome. Although this background control is sometimes done using a polygenic model with a random effect that captures overall relatedness across the genome (Yang et al., 2014) (see below), large individual eQTL effects may not be adequately accounted for by one genome-wide relatedness matrix. Therefore, we performed the following procedure to identify large genetic effects. Our goal at this stage was not to formally identify these large effects as eQTLs, but to perform a simple scan for large effects that can be included as covariates to control for their effects while mapping on a given chromosome. As our algorithm progresses along each chromosome, these large background effects will eventually be detected as formal eQTLs.
 
@@ -285,7 +343,7 @@ P=DG + CZ+R
 
 where C is a vector of genotype effects. This step controls for technical covariates as above, but additionally controls for large effects included in Z. It results in a new vector of residual expression levels R. We repeated steps 2 and 3 twice with this new R, appending additional markers to Z for each gene and each chromosome if they passed the threshold of LOD > 3.5. The goal of this repeated search for large effect eQTLs was to control for large effect loci that were detected only after expression values were corrected for the effects of previously identified large effect loci. For example, a given chromosome may harbor several large effect QTLs, and repeated runs of steps 2 and 3 ensure that such loci are captured. At the end of this procedure, we had a matrix Z of up to three markers per chromosome per gene that were linked to large-to-moderate effect loci.
 
-## Correcting gene expression measurements for large background effects and additive polygenic background for all chromosomes except the chromosome of interest
+### Correcting gene expression measurements for large background effects and additive polygenic background for all chromosomes except the chromosome of interest
 
 For each chromosome of interest and for each gene expression trait we calculated
 
@@ -293,7 +351,7 @@ P=DG + CLZL+aL + R
 
 CL and ZL are the background eQTL effects identified from the procedure above that are not located on the chromosome of interest. aL ~N(0, σ2aLAL) σ2aL is the additive genetic variance from all chromosomes excluding the chromosome of interest. AL was calculated using the ‘A.mat’ function in the rrBLUP package using a genetic relatedness matrix that excludes markers from the chromosome of interest. The goal of this step was to obtain expression phenotypes R that can be used to scan for eQTLs on a given chromosome by correcting for sources of variation that do not arise from that chromosome: batch and growth effects, large effects on other chromosomes, and a polygenic term accounting for any additional genetic contributions arising from other chromosomes.
 
-## Mapping additive eQTLs
+#### Mapping additive eQTLs
 
 We mapped additive eQTLs using a forward stepwise procedure. For each chromosome and for each gene we tested for linkage at each maker on the given chromosome with residual expression values R (calculated above) using the formula in Step 2 of ‘Identification of large background genetic effects’. We recorded the location and LOD score of the marker with the highest LOD score. To decide if this marker should be included as a QTL in the model, we used a permutation-based FDR criterion of 5%.
 
@@ -305,19 +363,19 @@ R = QX + e
 
 Genes without a significant linkage were excluded from additional testing on that chromosome. For the set of genes with a significant linkage, we repeated the procedure above by replacing R with e. The procedure was repeated for each chromosome until no genes had additional significant linkages.
 
-## Cross-validation
+### Cross-validation
 
 The amount of additive variance explained by detected eQTLs was estimated using cross-validation. Segregants were grouped based on the batches used for RNA and library preparation. Each batch of segregants was left out of the procedure one at a time. The eQTL mapping procedure was performed for all the other batches. For the QTL markers detected in this training set and with effects estimated in the training set, the amount of variance explained by the joint model of the set of significant QTL markers was estimated in the held out batch.
 
-## eQTL confidence intervals
+### eQTL confidence intervals
 
 eQTL confidence intervals were calculated as 1.5 LOD drops. We extended the eQTL location confidence intervals to include all markers in perfect LD with the markers used in eQTL detection (marker correlation = 1).
 
-## Hotspot identification
+### Hotspot identification
 
 We devised an algorithm with the goal of identifying a set of eQTL hotspots by combining information across genetically correlated transcripts and, most importantly, using co-localizing trans-eQTLs to better narrow hotspot confidence intervals. The algorithm has three major steps. First, we control for unmodeled factors affecting gene expression that may obscure hotspot detection and localization. Second, we use a multivariate statistic to identify eQTL hotspots. Finally, we use a bootstrap procedure to delineate confidence intervals for hotspot location. We describe the steps in greater detail below.
 
-## Identification of unmodeled factors affecting gene expression
+#### Identification of unmodeled factors affecting gene expression
 
 For each gene with at least one statistically significant eQTL we fit a linear model
 
@@ -333,7 +391,7 @@ The top 20 eigenvectors were appended to the matrix G of covariates. These eigen
 
 We note that because we cannot explicitly model all possible expected trans effects per gene first as fixed effects, it is theoretically possible that small effects not captured by the QTL model or additive polygenic background per gene could contribute to the matrix R and the top 20 eigenvectors. Regressing out genetic effects captured by these eigenvectors could then induce spurious trans-associations (Dahl et al., 2017).
 
-## Correcting gene expression for technical covariates, detected additive eQTLs on other chromosomes, and unmodeled factors
+#### Correcting gene expression for technical covariates, detected additive eQTLs on other chromosomes, and unmodeled factors
 
 For each chromosome, we extracted all genes that have a significant linkage to that chromosome but do not physically reside on that chromosome (i.e. all genes that had a statistically significant trans-eQTL on the given chromosome) and fit the linear model
 
@@ -343,11 +401,11 @@ This model is similar to that in Step 1, ‘identification of unmodeled factors 
 
 For each gene, Re was scaled to have mean 0 and variance 1. Re for each gene was concatenated to form the columns of the matrix R.
 
-## Dimensionality reduction of R
+#### Dimensionality reduction of R
 
 Our algorithm for fine-mapping eQTL hotspots makes use of a multivariate statistic (see section ‘multitrait mapping to localize eQTL hotspots’). We observed that on many chromosomes, the number of genes with trans linkages exceeded our total sample size. Because the multivariate statistic is not defined in this case, we reduced the dimensionality of R using SVD. The top m eigenvectors with corresponding eigenvalues greater than those observed from an SVD on permuted data were retained as matrix L. The entries of L can be interpreted as weighted linear combinations of the expression levels from individual genes, from which all sources of variation that do not arise from the chromosomes of interest have been eliminated. These combinations capture the majority of additive genetic influences on the given chromosome that are shared across genes (i.e. the effects of hotspots on multiple genes), and serve as the input to our hotspot detection algorithm.
 
-## Multitrait mapping to localize eQTL hotspots
+#### Multitrait mapping to localize eQTL hotspots
 
 We computed
 
@@ -357,11 +415,11 @@ where u is a vector of means for each of the columns of L, B is a vector of coef
 
 We fit the equation above 100 times with permutations of phenotype to genotype for matrix L. The 99% quantile of the maximum observed LOD score per permutation was used to decide whether the maximum multivariate LOD was significant. If it was significant, then the effect of that marker was subtracted from L and the procedure repeated until no more jQTLs were detected.
 
-## Refining jQTL locations and test for hotspots that are better modeled as two neighboring hotspots
+#### Refining jQTL locations and test for hotspots that are better modeled as two neighboring hotspots
 
 We sought to better refine the location of the jQTLs given all other jQTLs on that chromosome (Zeng et al., 1999). We collected the statistically significant peak markers for the jQTLs identified above. Each peak marker was dropped from a joint model one at a time and the peak position was recomputed. Peaks that moved by more than 75 kb at this step were removed from the model. For all peaks with LOD >200 we tested the possibility that the multivariate peak was a ‘ghost’ jQTL, that is a jQTL that appears to be localized between two or more true jQTLs that are very closely linked and that influence a similar set of genes. We fit a model where the one significant jQTL was replaced by a two-jQTLs model, with the added criterion that the two jQTLs could not be within 10 markers on either side of the original peak. Permutations for this two-locus model were performed as in ‘multitrait mapping to localize eQTL hotspots’, with the relevant test and null statistics being the difference between the fit of the best two-locus model and the best one-locus model. Single jQTL peaks were replaced with the best two-locus model if the observed LOD was more than 10 greater than the 99% quantile LOD for the permuted data. Through the combination of the steps above, this procedure identified significant jQTLs that correspond to hotspots that influence the expression of multiple genes.
 
-## Bootstrap resampling to identify confidence intervals for jQTL location
+#### Bootstrap resampling to identify confidence intervals for jQTL location
 
 For each detected jQTL, segregants were sampled with replacement 1000 times. For each sample, we refit
 
@@ -371,11 +429,11 @@ where s indicates a bootstrap resample of the rows of a matrix. Xs contained the
 
 For all further analyses, we defined hotspot location confidence intervals as the central 95% confidence interval of bootstrap peaks. These intervals were extended to include all markers that are in perfect linkage disequilibrium with the markers at the ends of the confidence intervals.
 
-## Local eQTLs
+### Local eQTLs
 
 To classify an eQTL as local, we required its location confidence interval to overlap the position of the gene. We used gene locations expanded by 1000 bp upstream and 200 bp downstream to account for regulatory variants that may be located in the promoter or the 3’UTR. We initially classified 2969 eQTLs as local. These 2969 eQTLs affected 2884 genes. Closer inspection revealed that these multiple ‘local’ eQTLs per gene often involved one eQTL with a peak very close to the gene and other, more distant eQTLs. These more distant eQTLs probably reflect trans-eQTLs on the same chromosome as their target gene with location confidence intervals broad enough that they happened to overlap the target gene. For our ASE comparisons below, we only used the local eQTLs that were located closest to a given gene.
 
-## Allele-specific expression analyses and comparison to local eQTLs
+### Allele-specific expression analyses and comparison to local eQTLs
 
 We used ASE data from two sources. The first source is the mRNA data from Supplementary Data S2 from (Albert et al., 2014a). The second source is previously unpublished data generated by Dr. Noorossadat Torabi in the Kruglyak laboratory (available in SRA under accession code SRP149494). Both datasets performed mRNA sequencing on a BY/RM diploid hybrid strain. Reads from Albert et al. were ~30 bp in length to match ribosome profiling data presented in that paper, while reads from Torabi et al. were 100 bp. In contrast to (Albert et al., 2014a), the Torabi data was not strand-specific.
 
@@ -387,7 +445,7 @@ To compare effect sizes between eQTLs and ASE, we used log2-transformed eQTL fol
 
 All data necessary to reproduce the ASE analyses and eQTL comparisons is available in Source data 7.
 
-## Power analyses for ASE data
+### Power analyses for ASE data
 
 To gauge the statistical power to detect ASE in the two available ASE datasets, we performed simulations. We focused on two variables: the effect size (i.e. fold change) and the total read coverage available for the given gene. ASE data is overdispersed compared to a binomial distribution (Castel et al., 2015). To properly account for this overdispersion in our simulations, we used the available ASE data to estimate the overdispersion parameter ρ in a beta-binomial distribution using the R function ‘optim’. We provided the function with the total read count and the observed allele count for each gene and used 0.5 as the ‘true’ probability of success. We estimated ρ separately for the Torabi and the Albert data and found that the latter was somewhat more overdispersed (ρ = 0.0054) than the former (ρ = 0.0041).
 
@@ -399,7 +457,7 @@ These simulations show that power increases with increasing read counts and effe
 
 To explore this relationship more precisely, we conducted gene-matched power simulations. For each gene, we conducted 100 simulations using the estimated ρ and sequencing coverage for the given ASE dataset. We used the observed eQTL fold changes to compute expected probabilities of success. We conducted these simulations separately for the Albert and Torabi data.
 
-## Genes affected by hotspots
+### Genes affected by hotspots
 
 To estimate which genes are influenced by a given hotspot irrespective of whether these associations reached genome-wide significance for the given gene, we performed a targeted forward scan for linkage at the hotspot locations. For each chromosome and for each gene, we regressed out the effects of significant eQTLs detected on other chromosomes as well as the effects of technical covariates. Then, for each gene, we repeated the procedure described above under ‘Mapping additive eQTL’. However, here X was defined to be the set of detected hotspot markers for that chromosome, as well as either the closest marker to each gene or, if a gene had a genome-wide significant local eQTL, the local eQTL peak marker for that gene. The same FDR threshold (5%) was used to identify the best model for each gene. For each gene, coefficients for the effects of all significant markers identified by this procedure were determined by multiple regression.
 
@@ -417,7 +475,7 @@ We fit log2(TPM) values for all 5720 expressed genes. Prior to fitting, effects 
 
 We used the entries of θyy to generate the network plots in Figure 4—figure supplement 4 and Supplementary file 6. In spite of the shrinkage imposed by the sCGGM algorithm, very few entries were estimated to be zero. As a practical threshold for plotting, we excluded entries of θyy with absolute values less than 1e-5.5. This threshold was set based on visual inspection of a histogram of all entries in θyy, which showed a bimodal distribution with a clear peak of values exceeding this threshold separated from a peak centered on much smaller values. Network plots were generated using the R igraph package (Csárdi and Nepusz, 2006). Supplementary file 6 shows the resulting network plots for all hotspots.
 
-## Analysis of genes located in hotspots
+### Analysis of genes located in hotspots
 
 Several hotspots were located close to chromosome ends. Yeast chromosome ends contain complex structural variation that segregates among isolates and influences traits (Cubillos et al., 2011). In some cases, BY and RM differ for the presence of entire subtelomeric blocks of genes (Bergström et al., 2014). When a hotspot arises from these regions, the identity of the causal gene cannot be determined using our present segregant panel because each segregant either carries all or none of the genes in these regions. Further, the marker map we used for mapping stops at the borders of these regions. Therefore, these hotspots often have very sharp bootstrap distributions on the first or last marker of the linkage map on the given chromosome. We excluded subtelomeric hotspots from the analyses of genes located in hotspots because the position of the final marker on a chromosome is unlikely to reflect the position of the causal gene, which may well be located distally to the marker. We excluded 13 hotspots whose peak marker is within 5 kb of the end of our linkage map. We focused the remaining analyses of hotspot genes on 26 non-subtelomeric hotspots with confidence regions that contain three or fewer genes, for a total of 58 genes.
 
@@ -431,7 +489,7 @@ Finally, we computed an empirical p-value for each GO term by asking how often i
 
 Plots of hotspot location and gene content were generated using the R package Gviz (Hahne and Ivanek, 2016). Supplementary file 5 shows plots of gene content for all hotspots.
 
-## Comparisons to pQTLs
+### Comparisons to pQTLs
 
 We used pQTLs for 160 proteins identified in the BY/RM cross (Albert et al., 2014b). The pQTL coordinates were mapped from the sacCer2 to the sacCer3 genome using the UCSC liftover tool (https://genome.ucsc.edu/cgi-bin/hgLiftOver).
 
@@ -445,7 +503,7 @@ To compute π1 at eQTL positions in X-pQTL data, we summed counts for 21 SNPs ce
 
 To compute π1 at pQTL positions in eQTL data, we performed t-tests comparing the normalized expression levels for segregants with the BY allele at pQTL markers to those with the RM allele. The resulting p-values were analyzed using the qvalue package (Storey and Tibshirani, 2003).
 
-## Genetic interactions
+### Genetic interactions
 
 For each transcript with at least one significant additive eQTL, we fit a model that included the batch and growth covariates, the significant additive eQTLs, and a random effect for polygenic background. The residuals from this model were used for the detection of eQTL-eQTL interactions.
 
@@ -455,13 +513,13 @@ Additionally, we tested a model of eQTL-eQTL interactions between significant ad
 
 Circle plots were generated using the ggBio package in R (Yin et al., 2012). Pair markers were deemed to overlap an additive eQTL hotspot if they were within 10 kb of the given hotspot interval.
 
-## Supplementary discussion
+### Supplementary discussion
 
-## Supplementary discussion 1 – Genes with many eQTLs
+#### Supplementary discussion 1 – Genes with many eQTLs
 
 Some genes were affected by a large number of eQTLs. The five genes with the maximum identified number of 21 eQTLs included the gene OCH1 as well as two pairs of genes that are physically located right next to each other, respectively. In each pair, the upstream gene (NIT1 and AQY2, respectively) is annotated as a protein coding gene, while the downstream genes (YIL165C and YLL053C, respectively) is annotated as a ‘putative’ protein. In several yeast strains other than the reference strain (a version of which is the BY strain we use here), these gene pairs each form a single open reading frame (ORF). In BY, this ORF is interrupted by a premature stop codon, resulting in truncated ORF annotations. The fact that BY tolerates the presence of a premature stop variant in these genes suggests that these genes are under low evolutionary constraint, which may help explain why these genes are also tolerant of regulatory influences from a large number of eQTLs.
 
-## Supplementary discussion 2 – Comparison of heritability to various gene features
+#### Supplementary discussion 2 – Comparison of heritability to various gene features
 
 We asked whether the heritability for each gene was correlated with various gene characteristics. Heritability was positively correlated with expression level (Figure 1—figure supplement 2; Supplementary file 1). This result may in part be caused by higher power in more highly expressed genes. Therefore, we controlled for expression level in a multivariate analysis that tested the correlation of various gene features with heritability while controlling for all other features, including gene expression level.
 
@@ -473,11 +531,11 @@ Genes with lower heritability were enriched for processes involved in general bi
 
 The 28 genes with the highest heritability of at least 0.9 were strongly enriched for genes involved in yeast mating. For example, they included five out of seven genes annotated as ‘regulation of mating-type specific transcription, DNA-templated’ (GO:0007532, p=4e-11). The yeast mating type pathway involves the a and alpha mating types that are determined by alternative alleles at the mating type locus. Each mating type expresses a set of highly abundant genes that are almost completely shut off in the other mating type. Our mapping population includes both mating types at equal frequency. Genes involved in mating are thus expected to fall into two genetically determined groups in which their expression is either very high or nearly absent, resulting in high heritability across the segregant population.
 
-## Supplementary discussion 3 – Relationship of eQTL number and heritability
+#### Supplementary discussion 3 – Relationship of eQTL number and heritability
 
 The number of eQTLs that influenced a given gene was correlated with heritability (r = 0.56, p<2.2e-16, Figure 1—figure supplement 2B), as expected if each additional eQTL adds to the genetic variance. However, among genes with the highest heritability (423 genes with h2 ≥0.6), heritability was negatively correlated with the number of eQTLs (r = −0.47, p<2.2e-16; Figure 1—figure supplement 2B). For these genes, the strongest eQTL accounts for a progressively larger fraction of heritability (r = 0.56, p<2.2e-16, Figure 1—figure supplement 2C & D), while for genes with lower heritability this relationship was slightly negative (r = −0.04, p=0.001). Thus, while the lower heritability typical of most genes tended to arise from multiple eQTLs that each had small to intermediate effect, high heritability tended to arise from single, strong eQTLs. The single eQTLs that by themselves generated heritability of ≥0.9 were all local eQTLs for genes in regions of the genome with high, structurally complex variation (e.g. the ENA locus (Treusch et al., 2015) or subtelomeres [Bergström et al., 2014]), as well as the gene HO, which is deleted in our RM but not in the BY strain.
 
-## Supplementary discussion 4 – Allele-specific expression analyses
+#### Supplementary discussion 4 – Allele-specific expression analyses
 
 To estimate the fraction of local eQTLs that act in cis vs. in trans, we compared the local eQTLs to RNA-Seq data from a diploid BY/RM hybrid. In the hybrid, trans-acting genetic variation influences both alleles at a gene similarly. By contrast, cis effects can be detected as an allelic imbalance in expression (also called 'allele specific expression', ASE) between the BY and the RM allele. We analyzed two independent BY/RM hybrid datasets and quantified ASE for 3340 genes that have at least one variant in their coding sequence. Of these, 1974 (59%) had a genome-wide significant local eQTL.
 
@@ -489,7 +547,7 @@ Regulatory sequence variants in upstream regulatory regions such as the promoter
 
 The absolute values of the fold changes agreed remarkably well between ASE and local eQTLs. The standardized major axis (SMA) slope for all local eQTL effects compared to ASE was 0.94 (r2=0.45, p<2.2e-16). Thus, the effects of cis-acting variation on allelic expression were typically carried forward to local eQTLs of nearly the same magnitude. The SMA slope was just less than one (confidence interval 0.91–0.97), which may indicate a small tendency for local trans-acting variation to buffer some cis-acting variants (Bader et al., 2015).
 
-## Supplementary discussion 5 – Comparison of eQTLs and protein QTLs (pQTLs)
+#### Supplementary discussion 5 – Comparison of eQTLs and protein QTLs (pQTLs)
 
 The main text presents a comparison focused on the strongest distant eQTLs and pQTLs. The results for all genome-wide significant distant QTLs, as well as for local QTLs are presented here.
 

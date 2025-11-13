@@ -46,7 +46,7 @@
 
 ## Abstract
 
-Childhood immunisation services have been disrupted by the COVID-19 pandemic. WHO recommends considering outbreak risk using epidemiological criteria when deciding whether to conduct preventive vaccination campaigns during the pandemic. We used two to three models per infection to estimate the health impact of 50% reduced routine vaccination coverage in 2020 and delay of campaign vaccination from 2020 to 2021 for measles vaccination in Bangladesh, Chad, Ethiopia, Kenya, Nigeria, and South Sudan, for meningococcal A vaccination in Burkina Faso, Chad, Niger, and Nigeria, and for yellow fever vaccination in the Democratic Republic of Congo, Ghana, and Nigeria. Our counterfactual comparative scenario was sustaining immunisation services at coverage projections made prior to COVID-19 (i.e. without any disruption). Reduced routine vaccination coverage in 2020 without catch-up vaccination may lead to an increase in measles and yellow fever disease burden in the modelled countries. Delaying planned campaigns in Ethiopia and Nigeria by a year may significantly increase the risk of measles outbreaks (both countries did complete their supplementary immunisation activities (SIAs) planned for 2020). For yellow fever vaccination, delay in campaigns leads to a potential disease burden rise of >1 death per 100,000 people per year until the campaigns are implemented. For meningococcal A vaccination, short-term disruptions in 2020 are unlikely to have a significant impact due to the persistence of direct and indirect benefits from past introductory campaigns of the 1- to 29-year-old population, bolstered by inclusion of the vaccine into the routine immunisation schedule accompanied by further catch-up campaigns. The impact of COVID-19-related disruption to vaccination programs varies between infections and countries. Planning and implementation of campaigns should consider country and infection-specific epidemiological factors and local immunity gaps worsened by the COVID-19 pandemic when prioritising vaccines and strategies for catch-up vaccination. Bill and Melinda Gates Foundation and Gavi, the Vaccine Alliance.
+Background:Childhood immunisation services have been disrupted by the COVID-19 pandemic. WHO recommends considering outbreak risk using epidemiological criteria when deciding whether to conduct preventive vaccination campaigns during the pandemic.Methods:We used two to three models per infection to estimate the health impact of 50% reduced routine vaccination coverage in 2020 and delay of campaign vaccination from 2020 to 2021 for measles vaccination in Bangladesh, Chad, Ethiopia, Kenya, Nigeria, and South Sudan, for meningococcal A vaccination in Burkina Faso, Chad, Niger, and Nigeria, and for yellow fever vaccination in the Democratic Republic of Congo, Ghana, and Nigeria. Our counterfactual comparative scenario was sustaining immunisation services at coverage projections made prior to COVID-19 (i.e. without any disruption).Results:Reduced routine vaccination coverage in 2020 without catch-up vaccination may lead to an increase in measles and yellow fever disease burden in the modelled countries. Delaying planned campaigns in Ethiopia and Nigeria by a year may significantly increase the risk of measles outbreaks (both countries did complete their supplementary immunisation activities (SIAs) planned for 2020). For yellow fever vaccination, delay in campaigns leads to a potential disease burden rise of >1 death per 100,000 people per year until the campaigns are implemented. For meningococcal A vaccination, short-term disruptions in 2020 are unlikely to have a significant impact due to the persistence of direct and indirect benefits from past introductory campaigns of the 1- to 29-year-old population, bolstered by inclusion of the vaccine into the routine immunisation schedule accompanied by further catch-up campaigns.Conclusions:The impact of COVID-19-related disruption to vaccination programs varies between infections and countries. Planning and implementation of campaigns should consider country and infection-specific epidemiological factors and local immunity gaps worsened by the COVID-19 pandemic when prioritising vaccines and strategies for catch-up vaccination.Funding:Bill and Melinda Gates Foundation and Gavi, the Vaccine Alliance.
 
 ## Introduction
 
@@ -64,9 +64,140 @@ Hence, countries need to assess the health impact of postponing vaccination camp
 
 Deaths and disability-adjusted life years (DALYs) due to measles, meningococcal A, and yellow fever under different routine and campaign vaccination scenarios were projected in a subset of 10 low- and lower middle-income countries over the years 2020–2030. Projections were made using previously validated transmission dynamic models; we used three models for measles, two models for meningococcal A, and two models for yellow fever (summary model details are available in Table 1a-c with full model details in Appendix Section 3; a description of the key drivers of similarities and differences between models is given in Appendix Section 4). Guidance used by the different models for DALY calculations are publicly accessible (Vaccine Impact Modelling Consortium, 2019) and a glossary of terms can be found in Appendix 1—table 15.
 
+**Table 1.**
+ a Vaccine impact models – Summary characteristics of the transmission dynamic vaccine impact models for measles (three models).For IDM, separate information is shown for the models used for Ethiopia and Nigeria.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Infection</th>
+      <th>Measles</th>
+      <th>Measles</th>
+      <th>Measles</th>
+      <th>Measles</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Model name</td>
+      <td>DynaMICE</td>
+      <td>IDM (Ethiopia)</td>
+      <td>IDM (Nigeria)</td>
+      <td>Penn State</td>
+    </tr>
+    <tr>
+      <td>Reference</td>
+      <td>Verguet et al., 2015</td>
+      <td>Thakkar et al., 2019</td>
+      <td>Zimmermann et al., 2019</td>
+      <td>Chen et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Structure</td>
+      <td>Compartmental</td>
+      <td>Compartmental</td>
+      <td>Agent-based</td>
+      <td>Semi-mechanistic</td>
+    </tr>
+    <tr>
+      <td>Randomness</td>
+      <td>Deterministic</td>
+      <td>Stochastic</td>
+      <td>Stochastic</td>
+      <td>Stochastic</td>
+    </tr>
+    <tr>
+      <td>Time step</td>
+      <td>Weekly</td>
+      <td>Semi-monthly</td>
+      <td>Daily</td>
+      <td>Annual</td>
+    </tr>
+    <tr>
+      <td>Age stratification</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>Model fitting</td>
+      <td>Not fitted; uses country-specific Ro (basic reproduction number) for measles from fitted models</td>
+      <td>Fitted to observed monthly WHO case data (2011–2019)</td>
+      <td>Fitted to time-series, age-distribution, and spatial correlation between districts in case-based surveillance data.</td>
+      <td>Fitted to observed annual WHO case data (1980–2017)</td>
+    </tr>
+    <tr>
+      <td>Validation</td>
+      <td>Validated through comparisons to the Penn State and/or IDM models in two previous model comparison exercises (Li et al., 2021; WHO, 2019a). Has also been reviewed by WHO’s Immunization and Vaccines Implementation Research Advisory Committee (IVIR-AC)(WHO, 2019b)</td>
+      <td>Validated primarily via forecasting tests in Pakistan and Nigeria. For example, see Figure S10 in Thakkar et al., 2019.</td>
+      <td>Calibrated to reproduce regional time series and age distributions of historical measles incidence as presented in Zimmermann et al., 2019. Validated through comparison to the DynaMICE and Penn State models in a previous model comparison exercise (WHO, 2019a)</td>
+      <td>Model and performance of parameter estimation was validated through simulation experiments as described in Eilertson et al., 2019. Validated through comparisons to the DynaMICE and/or IDM models in two previous model comparison exercises (Li et al., 2021; WHO, 2019a). Has also been reviewed by WHO’s Immunization and Vaccines Implementation Research Advisory Committee (IVIR-AC) in 2017 and 2019 (WHO, 2019b).</td>
+    </tr>
+    <tr>
+      <td>Case importations</td>
+      <td>None</td>
+      <td>None</td>
+      <td>Random</td>
+      <td>Random</td>
+    </tr>
+    <tr>
+      <td>Dose dependency (SIA: supplementary immunisation activities, MCV1: measles 1st dose, MCV2: measles 2nd dose)</td>
+      <td>SIA doses are weakly dependent of MCV1/2 based on Portnoy et al., 2018</td>
+      <td>MCV2 given only to recipients of MCV1; SIA doses independent of MCV1/2</td>
+      <td>MCV2 given only to recipients of MCV1; SIA doses independent of MCV1/2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Countries modelled</td>
+      <td>Bangladesh, Chad, Ethiopia, Kenya, Nigeria, South Sudan</td>
+      <td>Ethiopia</td>
+      <td>Nigeria</td>
+      <td>Bangladesh, Chad, Ethiopia, Kenya, Nigeria, South Sudan</td>
+    </tr>
+  </tbody>
+</table>
+
 The chosen countries were low- and lower-middle-income countries that had planned vaccination campaigns in 2020 and were selected following consultations with partners in WHO, UNICEF, CDC and other organisations. Thereby, the selected countries differ between infections – Bangladesh, Chad, Ethiopia, Kenya, Nigeria, and South Sudan for measles; Burkina Faso, Chad, Niger, and Nigeria for meningococcal A; Democratic Republic of the Congo, Ghana, and Nigeria for yellow fever.
 
 Models used routine and campaign vaccination coverage from WUENIC (WHO and UNICEF Estimates of National Immunization Coverage) and post campaign surveys for 2000–2019 (Li et al., 2021), and future projections of routine coverage based on assumptions agreed with disease and immunisation programme experts at the global, regional, and national levels (see Appendix 1—table 16). Assumptions for our counterfactual ‘business as usual’ scenario were determined through consultation with disease and immunisation programme experts across partners at the global, regional, and national levels. All assumptions varied by pathogen. For routine immunisation, assumptions about future coverage levels were based on historical coverage from WUENIC for 2015–19. For vaccination campaigns or supplementary immunisation activities (SIA), assumptions about future campaigns were based either on patterns of past campaigns or campaigns recommended by WHO. We explored four scenarios that assumed different levels of disruption in the year 2020 to routine immunisation and postponement of campaigns projected in the scenarios, due to COVID-19 (see Table 2). The disruption scenarios are based on 50% reduction in routine immunisation and/or suspension of campaign vaccination in 2020 and postponement to 2021. These disruption scenarios aimed to approximate plausible drops in routine coverage levels and plausible delays to campaigns due to the COVID-19 pandemic.
+
+**Table 2.**
+ Immunisation scenarios.Scenarios for disruption of routine immunisation and delay of mass vaccination campaigns due to the COVID-19 pandemic for measles vaccination in six countries, meningococcal A vaccination in four countries, and yellow fever vaccination in three countries. The counterfactual comparative scenario (BAU – business as usual) is no disruption to routine or campaign immunisation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Immunisation scenario</th>
+      <th>Routine immunisation (RI)</th>
+      <th>Campaign immunisation/Supplementary immunisation activities (SIAs)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BAU</td>
+      <td>No disruption</td>
+      <td>No disruption</td>
+    </tr>
+    <tr>
+      <td>Postpone 2020 SIAs - &gt; 2021</td>
+      <td>No disruption</td>
+      <td>Postpone 2020 SIAs to 2021</td>
+    </tr>
+    <tr>
+      <td>50% RI</td>
+      <td>50% reduction on RI for 2020</td>
+      <td>No disruption</td>
+    </tr>
+    <tr>
+      <td>50% RI, postpone 2020 SIAs - &gt; 2021</td>
+      <td>50% reduction on RI for 2020</td>
+      <td>Postpone 2020 SIAs to 2021</td>
+    </tr>
+  </tbody>
+</table>
 
 We estimated the health impact of these disruption scenarios in comparison to the counterfactual scenario of no disruption (BAU – business-as-usual scenario) for measles, meningococcal A, and yellow fever during 2020–2030. We estimated the health impact of routine and campaign immunisation disruption through projections of total deaths (and DALYs) per 100,000 population, excess deaths (and DALYs) per 100,000 population, and excess deaths (and DALYs) during 2020–2030 which were scaled relative to the maximum number of excess deaths (or DALYs) across all scenarios. We did not assume any changes to case-fatality risks as a result of the COVID-19 pandemic.
 
@@ -75,6 +206,61 @@ The models generally produce a range of stochastic realisations based on distrib
 ## Results
 
 The health impact varies across the disruption scenarios for the three infections in the different countries. Figure 1 shows the model-predicted total deaths per 100,000 population per year during 2020–2030 (see Appendix 1—figure 1 for similar projections for DALYs impact, Table 3 and S1 for scenario averages over the entire time period, and Appendix 1—tables 3, 5, 7, and Appendix 1—table 11 for absolute numbers of deaths).
+
+**Table 3.**
+ Excess deaths per 100,000 between 2020 and 2030 per scenario, infection and modelling group.Scenarios for disruption of routine immunisation and delay of mass vaccination campaigns due to the COVID-19 pandemic for measles vaccination in six countries, meningococcal A vaccination in four countries, and yellow fever vaccination in three countries. The counterfactual comparative scenario (BAU – business as usual) is no disruption to routine immunisation (RI) or campaign immunisation (SIAs – supplementary immunisation activities). The total of pathogen averages is the sum of the average excess deaths per 100,000 between 2020 and 2030 for each pathogen.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>Measles, DynaMICE</th>
+      <th>Measles, IDM</th>
+      <th>Measles, Penn State</th>
+      <th>Men A, Cambridge</th>
+      <th>Men A, KP</th>
+      <th>Yellow fever, Imperial</th>
+      <th>Yellow fever, Notre Dame</th>
+      <th>Total of pathogen averages</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>50% RI</td>
+      <td>1.1569</td>
+      <td>1.1873</td>
+      <td>0.0501</td>
+      <td>0.0020</td>
+      <td>0.0001</td>
+      <td>0.1474</td>
+      <td>0.0755</td>
+      <td>0.9105</td>
+    </tr>
+    <tr>
+      <td>Postpone 2020 SIAs - &gt; 2021</td>
+      <td>0.9428</td>
+      <td>0.1248</td>
+      <td>−0.0104</td>
+      <td>0.0042</td>
+      <td>−0.0001</td>
+      <td>−0.0584</td>
+      <td>−0.0103</td>
+      <td>0.3202</td>
+    </tr>
+    <tr>
+      <td>50% RI, postpone 2020 SIAs - &gt; 2021</td>
+      <td>0.2401</td>
+      <td>1.3134</td>
+      <td>0.0222</td>
+      <td>0.0064</td>
+      <td>0.0000</td>
+      <td>0.0876</td>
+      <td>0.0536</td>
+      <td>0.5990</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/67023/elife-67023-fig1-v4.jpg)
 
@@ -114,6 +300,6 @@ We conducted our health impact assessment to align with the WHO framework for de
 
 Our health impact assessment addresses in part the primary step of an epidemiological risk assessment by estimating the disease burden for different immunisation scenarios, but does not include the health impact assessment of excess COVID-19 disease burden attributable to these immunisation scenarios. While we have assessed the immunity gaps caused by immunisation service disruptions for measles, meningococcal A, and yellow fever vaccination in 10 low- and lower middle-income countries, sustaining routine immunisation and resuming immunisation campaigns during the COVID-19 pandemic requires adaptations to service delivery with additional safety measures to protect the health workers and the community from SARS-CoV-2 infection (Banks and Boonstoppel, 2020). Infection prevention and control measures include personal protective equipment for health workers, children to be vaccinated, and their parents or caregivers; additional prevention and control measures against SARS-CoV-2 infection at vaccination sites; physical distancing; and symptomatic screening and triaging (WHO, 2020e). COVID-19 transmission may be further mitigated by delivering several vaccines during a single campaign (such as measles and polio vaccines), or even combining vaccines with other age-relevant interventions such as nutritional supplements. Further, social mobilisation is needed to address the rumours, misinformation, and fear among the community to access vaccination safely during the COVID-19 pandemic (WHO, 2020g). Therefore, our health impact assessment needs to be followed up by planning and implementation of catch-up vaccination to close the immunity gaps using a mixture of locally appropriate strategies to strengthen immunisation (Cutts et al., 2021), alongside access to additional operating costs to conduct routine and campaign immunisation services safely in COVID-secure environments while considering contextual factors and competing needs.
 
-## Data availability
+### Data availability
 
 All code, data inputs and outputs used to generate the results in the manuscript (apart from projections about vaccine coverage beyond 2020 which are commercially confidential property of Gavi) are available at: https://github.com/vimc/vpd-covid-phase-I (Gaythorpe, 2021a; copy archived at swh:1:rev:ebff9a24b8b7c9a7c6c5c77f783f2435a57d1d2b).

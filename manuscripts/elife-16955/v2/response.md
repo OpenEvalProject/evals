@@ -38,9 +38,7 @@ Although wispy-mutant eggs do not complete meiosis and thus do not begin nuclear
 
 C) In Figure 5D, while the changes in TE in wispy mutant and wild type during the OET are correlated, those in the wispy mutant appear decreased in magnitude, implying that wispy does have a role in regulating translational activation during this transition.
 
-Overall, the changes in the wispy mutant do not decrease in magnitude. A linear deming regression of these data in Figure 5D yields a slope of 1.2 (red line in Author response image 1), which is consistent with wispy-mutant data exhibiting a slightly largerchange in TE than we observed in the corresponding wild-type data.10.7554/eLife.16955.019Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.16955.019
-
-DOI: http://dx.doi.org/10.7554/eLife.16955.019
+Overall, the changes in the wispy mutant do not decrease in magnitude. A linear deming regression of these data in Figure 5D yields a slope of 1.2 (red line in Author response image 1), which is consistent with wispy-mutant data exhibiting a slightly largerchange in TE than we observed in the corresponding wild-type data.10.7554/eLife.16955.019Author response image 1.
 
 Given these issues, the conclusions from this analysis regarding a lack of dependence of translational activation on cytoplasmic polyadenylation are overstated.
 
@@ -64,9 +62,7 @@ As requested, all of the RNA, RPF, TE, and poly(A)-tail length measurements now 
 
 7) The authors should provide more representative examples of the behaviour of individual transcripts from the datasets they are describing; for instance, in Figure 1C it would be of interest to see traces for additional key genes, such as png, smg, bcd and wisp.
 
-Figure 1C has been updated to include smaug and bicoid. We have not included the same RNA/TE traces for png and wisp because neither seems to be controlled through translational upregulation, and thus their inclusion would make the point of this figure harder to understand. We have included png and wisp traces in Author response image 2, which imply that their upregulation is post-translational and that they are ultimately repressed through mRNA destabilization.10.7554/eLife.16955.020Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.16955.020
-
-DOI: http://dx.doi.org/10.7554/eLife.16955.020
+Figure 1C has been updated to include smaug and bicoid. We have not included the same RNA/TE traces for png and wisp because neither seems to be controlled through translational upregulation, and thus their inclusion would make the point of this figure harder to understand. We have included png and wisp traces in Author response image 2, which imply that their upregulation is post-translational and that they are ultimately repressed through mRNA destabilization.10.7554/eLife.16955.020Author response image 2.
 
 8) Could the authors extend Figure 3A to include time points all the way up to embryo 2-3h? Alternatively, provide a similar analysis for embryonic stages? It would also be beneficial for the reader if each cluster shown in Figure 3A had graphs describing not only TE changes but poly(A) length changes as well, as in Figure 3B. This would help demonstrate the relationship between TE and poly(A) tail length for the different clusters of transcripts.
 

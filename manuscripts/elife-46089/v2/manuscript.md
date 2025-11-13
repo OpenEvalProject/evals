@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.46089.001 How circuits assemble starting from stem cells is a fundamental question in developmental neurobiology. We test the hypothesis that, in neuronal stem cells, temporal transcription factors predictably control neuronal terminal features and circuit assembly. Using the Drosophila motor system, we manipulate expression of the classic temporal transcription factor Hunchback (Hb) specifically in the NB7-1 stem cell, which produces U motor neurons (MNs), and then we monitor dendrite morphology and neuromuscular synaptic partnerships. We find that prolonged expression of Hb leads to transient specification of U MN identity, and that embryonic molecular markers do not accurately predict U MN terminal features. Nonetheless, our data show Hb acts as a potent regulator of neuromuscular wiring decisions. These data introduce important refinements to current models, show that molecular information acts early in neurogenesis as a switch to control motor circuit wiring, and provide novel insight into the relationship between stem cell and circuit.
+How circuits assemble starting from stem cells is a fundamental question in developmental neurobiology. We test the hypothesis that, in neuronal stem cells, temporal transcription factors predictably control neuronal terminal features and circuit assembly. Using the Drosophila motor system, we manipulate expression of the classic temporal transcription factor Hunchback (Hb) specifically in the NB7-1 stem cell, which produces U motor neurons (MNs), and then we monitor dendrite morphology and neuromuscular synaptic partnerships. We find that prolonged expression of Hb leads to transient specification of U MN identity, and that embryonic molecular markers do not accurately predict U MN terminal features. Nonetheless, our data show Hb acts as a potent regulator of neuromuscular wiring decisions. These data introduce important refinements to current models, show that molecular information acts early in neurogenesis as a switch to control motor circuit wiring, and provide novel insight into the relationship between stem cell and circuit.
 
 ## Introduction
 
@@ -28,11 +28,19 @@ Temporal patterning has been proposed to play a role in circuit assembly (Deguch
 
 The objective of this study is to test the hypothesis that temporal transcription factor activity in neuronal stem cells is sufficient to control neuronal terminal features and therefore circuit assembly. The Drosophila embryonic/larval nerve cord is a model system ideally suited to study how temporal transcription factors regulate circuit wiring. Here, we focus on one stem cell, neuroblast NB7-1, and five of its progeny, the U motor neurons, U1-U5 (Figure 1A). Molecular markers are available to uniquely identify each U motor neuron (Figure 1A), and the temporal transcription factors involved in establishing U motor neuron diversity have been studied for decades (Grosskortenhaus et al., 2006; Isshiki et al., 2001; Pearson and Doe, 2003). For example, one of the first-identified and best-characterized temporal transcription factors, Hb (Hb), is involved in establishing early-born U1/U2 motor neuron identities (Isshiki et al., 2001). Notably, the mammalian homolog of Hb, Ikaros, acts as a temporal transcription factor in both retina and cortex (Alsiö et al., 2013; Elliott et al., 2008). In this study, to use the Drosophila motor system, and specifically NB7-1 and U motor neurons, to study the role of temporal transcription factors in circuit wiring, first we characterize each U motor neuron’s terminal features—dendrite morphology, axonal trajectory, and neuromuscular synaptic partner—and link these features to U motor neuron marker gene expression at single neuron resolution. Next, we manipulate temporal patterning in NB7-1 using three different Hb manipulations: we prolong the expression of wild type Hb, we prolong expression of an activating Hb protein (tethered to the VP16 transcriptional activation domain), and we shorten the expression of wild type Hb by precocious expression of the switching factor, Seven-up (Kanai et al., 2005; Tran et al., 2010). In these backgrounds, we monitor establishment of U motor neuron molecular identity (i.e., embryonic marker gene expression), as well as maintenance (i.e., larval marker gene expression), and assess U motor neuron terminal features.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/46089/elife-46089-fig1-v2.jpg)
+
+**Figure 1.:** (A) Illustration of the divisions of NB7-1. Each gray arrowhead represents cell division. Abbreviations: MN is motor neuron, IN is interneuron, Eve is Even-skipped, Hb is Hunchback, Kr is Kruppel, Zfh2 is Zinc finger homeodomain 2, and Cas is Castor. (B) Illustration of a Drosophila late stage embryo, CNS in gray, motor neuron in green, with cell body in magenta. (C–G’’) Images of individually labeled U motor neuron cell bodies in the CNS of late stage embryos. The same cell is shown in ventral view (C–G’) or lateral view (C”–G”). Multi-Color Flip Out (MCFO) transgenes were used to stochastically label neurons within a GAL4 pattern with membrane tethered epitope tags (HA, V5, FLAG). (C–G) Boxes are insets from a different focal plane. (C’–G’) U1/U2 motor neurons dendrite tips (arrowhead) cross the midline (dotted white line), whereas U3-U5 neurons do not. n = number of single-labeled Eve(+) cells. (C”–G”) Axons project to unique dorsal muscles (dotted outline, M stands for muscle, for example M9 is muscle 9). (H–I) Illustrations of Drosophila larval muscles. (H) The larval body is organized into repeated left-right, mirror image hemisegments. (I) In a hemisegment, individual muscles are identified and named by characteristic morphology. (J) Illustration of individual U motor neuron neuromuscular synapses onto dorsal muscles in larvae. Embryonic motor neuron (e.g., U1) and larval motor neuron synapse (e.g. MN9-1b) names are shown. n = number of single-labeled Eve(+) cells. Color code as in A. For sample of larval image data see Figure 1—figure supplement 1. Images in (C–G’) are shown anterior to the left. Scale bars represent five microns (C’–G’) and 10 microns (C”–G”). MCFO transgenes were driven with a U MN-GAL4 line, CQ2-GAL4 (hsFLP; CQ2-GAL4/+; UAS(FRT.stop)myr::smGdP-HA, UAS(FRT.stop)myr::smGdP-V5-THSUAS(FRT.stop)myr::smGdP-FLAG/+).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46089/elife-46089-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Image of individually labeled U motor neuron axons. The dorsal-most region in a body wall segment of a L3 fillet dissected larva is shown. MCFO transgenes were driven with a pan motor neuron-GAL4 line, OK6-GAL4 (hsFLP; OK6-GAL4/+; UAS(FRT.stop)myr::smGdP-HA, UAS(FRT.stop)myr::smGdP-V5-THSUAS(FRT.stop)myr::smGdP-FLAG/+). Axons project to unique dorsal muscles (dotted). Midline is down. (A’) Image of individually labeled U motor neuron cell bodies (in white circles) from A in the CNS of L3 larvae. (A’’) Illustration of a Drosophila L3 bodywall segment imaged in A. Embryonic (e.g., U1) and larval (e.g. MN9-1b) motor neuron names are color coded with neuromuscular synapse location. Color code as in Figure 1. Image in (A) shown with dorsal up, anterior to the left. Image in (A’) shown with lateral up, anterior to the left. Scale bars represent 50 microns (A) and five microns (A’).
+
 Our data uncover the biological relevance of manipulating temporal transcription factors. We find that Hb is a potent regulator of neuromuscular wiring decisions. But, surprisingly, we find prolonged expression of Hb leads to a transient rather than permanent specification of U motor neuron molecular identity, and that the embryonic molecular markers which have been used for decades to monitor U motor neuron embryonic molecular identity cannot accurately predict U motor neuronal terminal features. Nonetheless, our data support a general model in which neuromuscular synaptic partner choice and circuit wiring can be established before neuronal birth by early programs of gene expression acting in neuronal stem cells.
 
 ## Results
 
-## Characterizing terminal features of U motor neurons at single neuron resolution
+### Characterizing terminal features of U motor neurons at single neuron resolution
 
 We take advantage of a well-characterized neuronal stem cell (neuroblast) lineage in the Drosophila embryonic larval nerve cord to test the hypothesis that temporal transcription factor activity controls neuronal terminal features and circuit assembly. Specifically, we focus on NB7-1, which generates five U motor neurons in this order: U1, U2, U3, U4, U5, followed by a series of poorly-characterized neurons (Figure 1A). U motor neurons are easily identified because they express the homeobox transcription factor, Even-skipped (Eve, Evx1/2 in vertebrates), and in embryos each U motor neuron can be uniquely identified by a distinctive combination of transcription factors (Figure 1A) (Isshiki et al., 2001). Furthermore, each U motor neuron occupies a distinctive position within the CNS characteristic of its birth time, with earliest-born U motor neurons found closest to the midline (Figure 1C). Cell body position in the Drosophila CNS is roughly correlated with birth time because there is little neuronal migration, and so as laterally positioned neuroblasts divide, later-born neurons displace earlier-born neurons to a deeper and more medial CNS position. The establishment of distinct U motor neuron identities has been intensely studied, but the biological relevance of altering embryonic identity markers is poorly understood (Doe, 2017). Here, we characterize terminal features of each U motor neuron in wild type.
 
@@ -44,9 +52,17 @@ Next, we label individual U motor neurons in late stage larvae (L3), at a time w
 
 Together these data link markers of U motor neuron embryonic temporal identity to U motor neuron terminal features—dendrite morphology, axonal target, and neuromuscular synapses- at single neuron resolution, which allows us to predict which terminal features should be associated with a particular U motor neuron marker gene expression profile, regardless of neuronal birth time.
 
-## Prolonged expression of Hunchback in NB7-1 generates ectopic Eve-expressing neurons with U1 embryonic molecular identities at abnormally late times in development
+### Prolonged expression of Hunchback in NB7-1 generates ectopic Eve-expressing neurons with U1 embryonic molecular identities at abnormally late times in development
 
 To test the hypothesis that temporal transcription factor activity in neuronal stem cells is sufficient to control neuronal terminal features and circuit assembly, we manipulate temporal transcription factor expression. In wild type, a given temporal transcription factor is expressed in nearly all neuronal stem cells during a limited time window. For example, in NB7-1, the temporal transcription factor Hunchback (Hb) is expressed during the first two neuroblast divisions (Figure 2A). In this study, we prolong Hb expression specifically in NB7-1, and then we assay NB7-1 progeny for embryonic marker gene expression (Figure 2), the extent to which progeny are motor neurons (Figure 3), dendrite morphology (Figure 4), functional neuromuscular synapse formation (Figures 5,6), axonal trajectory (Figure 7), and larval marker gene expression (Figure 8).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/46089/elife-46089-fig2-v2.jpg)
+
+**Figure 2.:** (A–B) Illustrations of NB7-1 lineage progression. Each gray arrowhead represents cell division. Large circles are neuroblasts, and smaller circles are neurons. In NB7−1>Hb, ectopic Eve(+) neurons (magenta) are produced when later-born Cas(+) NB7-1 interneurons (yellow) are normally produced. (C–F’) Images of late stage embryonic CNSs show distribution of Eve(+) and Cas(+) neurons. Data quantified in (G–I). GFP (+) neurons from NB7-1 are outlined in white dotted lines. (G–I) Quantification of NB7-1 neurons in Control and NB7−1>Hb. (G) Total neurons (H) Eve(+) neurons (I) Cas(+) neurons. For Controls n = 17, 23, 19 and for NB7−1>Hb n=20, 30, 14 for (G–I), respectively. (J–O) Images of embryonic molecular identity marker expression in Eve(+) cells in late stage embryonic CNSs. In NB7−1>Hb, extra Eve(+) cells are produced, most of which have U1 molecular identities. Boxes are neurons from different z-planes. Arrows indicate co-expression. (P) Quantification of distance from midline is a proxy for neuronal birth time. In NB7−1>Hb, Eve(+) cells co-labeled with U1 molecular markers are born at abnormally late times in lineage progression. Control n = 44, 88, 88, NB7−1>Hb n=301, 40, 10. (Q) Quantification of Eve(+) neuron molecular identity in single hemisegments. In NB7−1>Hb, there is hemisegment by hemisegment variability. Arrows point to hemisegments in which all Eve(+) neurons have U1 molecular identity. Color code follows (P). All images are shown in ventral view, anterior up and midline to the left. Scale bars represent five microns. For quantifications each dot represents single neuron cell bodies in abdominal hemisegments. Average and standard deviation are overlaid. Un-paired t-Test.’ n.s.’ not significant, ‘****’p<0.0001. In C-I, Control is NB7-1-GAL4/+; UAS-myr-GFP/+ and NB7−1>Hb is NB7-1-GAL4/UAS-Hb; UAS-myr-GFP/UAS-Hb. In J-Q, Control is w1118 and NB7−1>Hb is NB7-1-GAL4/UAS-Hb; UAS-Hb/+.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46089/elife-46089-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Image of GFP in NB7-1 as a reporter of NB7-1-GAL4 activity. NB7-1 is gooseberry-DBD, achaete-VP16/+; UAS-nls-GFP/+. NB is neuroblast. Arrowhead points to NB6-1, which is occasionally labeled. One complete abdominal segment is shown with anterior up, and midline dotted. (B) Quantification of percent of hemisegments expressing GFP under the control of NB7-1-GAL4 at different stages. n = number of hemisegments scored per stage. (C) Image of a late stage embryo showing NB7-1 and its latest born progeny in NB7−1>Hb. Genotype is gooseberry-DBD, achaete-VP16/UAS-Hb; UAS-nls-GFP/UAS-Hb. NB7-1 is circled. (D) Quantification of Hb expression in NB7-1 in late stage embryos. In a majority of segments, there are GFP(+) Wor(+) Hb(+) cells, showing Hb is expressed throughout neurogenesis in NB7-1. In fewer segments, there are GFP(+) Wor(+) Hb(-) cells, in which GFP expression persists but Hb expression does not, suggesting NB7-1-GAL4 is no longer active, or there are GFP(-) Wor (+) cells in which no GFP expression exists, again suggesting that NB7-1-GAL4 is not active in NB7-1. Genotype is the same as C. (E–G) Quantification of Eve(+) neuron molecular identities in NB7−1>Hb with different levels of Hb. (E) Quantification of distance from midline, which is a proxy for neuronal birth time, for Eve(+) cells with different molecular markers. For Control n = 44, 88, 283, NB7−1>1X Hb n = 284, 51, 9, NB7−1>2X Hb n = 301, 40,10, 283, 61. (F–G) Quantification of Eve(+) neurons in single hemisegments. Color code as in E. Control is w1118, NB7−1>1X Hb is NB7-1 GAL4/+; UAS-Hb/+, and NB7−1>Hb is NB7-1-GAL4/UAS-Hb; UAS-Hb/+. All images are shown in ventral view, anterior up, and lateral to the left. Scale bars represents five microns.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/46089/elife-46089-fig3-v2.jpg)
 
@@ -56,13 +72,29 @@ To test the hypothesis that temporal transcription factor activity in neuronal s
 
 **Figure 4.:** (A–B) Illustrations of U motor neuron dendrite morphology in Control and NB7−1>Hb shown in transverse view. In Control, light blue is U1, dark blue is U2, green is U3, orange is U4, and red is U5. In NB7−1>Hb, black is a Eve(+) U motor neuron. (C–D) Images of individually-labeled U motor neurons in the L1 CNS of Control and NB7−1>Hb. In Control, U1 has contralateral dendrites (white arrow) crossing the midline (white dotted line), whereas U4 has ipsilateral dendrites. In this NB7−1>Hb example, a contralaterally projecting U motor neuron is shown (white arrow). (E) Illustrations of different dendrite morphologies in NB7−1>Hb, for Hb(+) U motor neurons (blue). Most, but not all are contralateral. (G) Quantification of distance from midline for Eve(+) Hb(+) U MN neurons in L1 CNS of NB7−1>Hb. Black dotted line marks the distance from the midline for the lateral-most Eve(+) U motor neuron in Control (W1118), which is produced by the fifth division of NB7-1. After the fifth division of NB7-1 a nuclear remodeling event occurs. When Hb expression is prolonged in NB7-1 this remodeling event restricts the molecular fate transformations of U motor neurons born after the fifth division (Kohwi et al., 2013). (F) Image of Hb(+) U MN neuron dendrite morphology in L1 CNS of NB7−1>Hb. Here, in NB7−1>Hb, a Hb(+) U MN has an ipsilateral dendrite that does not cross the midline (white dotted line). All images are shown in transverse view, dorsal up, arrowheads pointing to dendrites crossing midline (white dotted line). The cell body location for labeled neurons are circled. Scale bar represents five microns. Control is hsFLP; NB7-1-GAL4/+; UAS(FRT.stop)myr::smGdPHA, UAS(FRT.stop)myr::smGdP-V5-THS-UAS(FRT.stop)myr::smGdP-FLAG/+ and NB7−1>Hb MCFO is hsFLP; NB7-1-GAL4/UAS-Hb; UAS(FRT.stop)myr::smGdP-HA, UAS(FRT.stop)myr::smGdP-V5-THS-UAS(FRT.stop)myr::smGdP-FLAG/UAS-Hb.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/46089/elife-46089-fig5-v2.jpg)
+
+**Figure 5.:** (A–B) Illustrations of neuromuscular synapses on dorsal muscles in a L3 body wall segment. Control synapses are based on third instar larval MCFO data (see Figure 1—figure supplement 1). In NB7−1>Hb, predicted neuromuscular synapses are inferred from Control neuromuscular wiring patterns and from NB7−1>Hb embryonic molecular identity data (see Figure 2). Observed neuromuscular synapses are described in C-H. ISN is intersegmental nerve. (C–H) Images of neuronal membrane—both axons and neuromuscular synapses—on dorsal muscles in L3 bodywall segments. Arrow indicates branching onto M3. An asterisk * indicates missing synapses. Data quantified in (I–K). (I–K) Quantification of the number of 1b branches on L3 muscles. Color code as in (A). Line intersects the y-axis at 2. Each dot represents the number of branches onto a single muscle. (I) For UAS-Hb/+ n = 32, 35, 33, 36, 36, (J) For U MN >Hb n=11, 11, 11, 12, 11, (K) For NB7−1>Hb n=39, 46, 44, 18, 46, numbers listed from MN9-1b to MN1-1b. (L–M) Images of all neuronal membrane (magenta) on dorsal muscles in L3 bodywall segments of NB7−1>Hb with a single U motor neuron labeled (green). (N) Quantification of the number of 1b branches from individual U motor neurons on dorsal L3 muscles in Control and NB7−1>Hb. Line intersects the y-axis at two branch number. For WT n = 13, NB7−1>Hb n=8. All images are shown dorsal up, anterior left. Scale bars represent 10 microns. Control is w1118 (C, E, G), or hsFLP; OK6-GAL4/+; UAS-MCFO/+ (N). UAS-Hb/+ is UAS-Hb/+, UAS-Hb/+. U MN>Hb is CQ2-GAL4/UAS-Hb; CQ2-GAL4/UAS-Hb. NB7−1>Hb is NB7-1-GAL4/UAS-Hb; UAS-Hb/+ (D–H, K) ands hsFLP; Vglut-lexA/NB7-1-GAL4; lexAop-FRT-stop-FRT-EGFP/UAS-Hb (L–N). For quantifications average and standard deviation are overlaid. ANOVA, corrected for multiple samples ‘ns’ not significant, ‘**’ p<0.05, ‘***’ p<0.001, ‘****’ p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/46089/elife-46089-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) Illustration of the number of Eve(+) U motor neurons in (A) Control, (B) NB7−1>Hb and (C) U motor neuron ablated genotype, U MN>Rpr Hid. NB7-1 is represented by large circles. Each gray arrowhead represents cell division. Small magenta circles represent Eve(+) U motor neurons. Black Xs represent cell death. (D–F) Images of Eve(+) U motor neurons in late stage embryo CNS segments with midline running through the middle (white dotted line). U motor neurons from NB7-1 are circled in white. Dotted line, outlines EL interneurons (from NB3-3). (G) Illustration of scored branch point of 1b branches on L3 muscle 4 (M4). Arrow indicates branch point from intersegmental nerve on m 4.* indicates missing branches. Dotted line represents dorsal edge of muscle 4 (see H-I). (H–I) Images of neuronal membrane on L3 muscle 4 (M4). Markings same as in G. (J–L) Quantification of the percentage of total 1b branches that were scored as either normal, abnormal, or absent on L3 muscle 4 (see G-I). n = number of total branches that were scored. Images in (D–F) are shown in ventral view, anterior up, lateral left. Scale bar represents five microns. Images in (H–I) are shown dorsal up, anterior left. Scale bar represents 10 microns. Control is w1118. NB7−1>Hb is NB7-1/+; NB7-1/UAS-Hb. U MN>RPR HID is UAS-Rpr Hid; CQ2-GAL4/+; CQ2-GAL4/+.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/46089/elife-46089-fig6-v2.jpg)
+
+**Figure 6.:** (A) Illustration of subcellular localization of neuromuscular synapse markers. Futsch labels microtubules; Synapsin (Syn) labels neurotransmitter filled synaptic vesicles; Brunchpilot (Brp) labels active zones; Glutamate Receptor IIA (GluRIIA) labels neurotransmitter receptors; Discs large (Dlg) is a scaffolding protein. (B–G) Images of neuromuscular synapses on L3 muscle 10. There is no difference in distribution or abundance of synaptic markers between Control (w1118) and NB7−1>Hb (NB7-1-GAL4/UASHb, UAS-Hb/+). (H–I) Images of fluorescence intensity changes in a calcium indicator of synaptic activity. GCaMP was targeted to the post-synaptic density for example (DLG in F-G). When pre-synaptic vesicles are released from active zones (Brp in B-C) post-synaptic neurotransmitter receptors respond (GluRIIA in D-E), increasing GCaMP fluorescence intensity (see Figure 6—figure supplement 1 for details). Images show post-synaptic responses (delta F) in L3 muscles 2, 3, and 10 (M2, M3, M10) in Control (NB7-1-GAL4/+; MHC-CD8-GCaMP6f-Sh/+) and NB7−1>Hb (NB7-1 GAL4/UAS Hb; MHC-CD8-GCaMP6f-Sh/UAS Hb) over a 5 min imaging period. All images are shown dorsal up, anterior to the left. Scale bar represents 10 microns.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/46089/elife-46089-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–D) Illustration of calcium imaging protocol and analysis are shown. See Materials and methods for details. (E–O) Images of calcium signals on L3 muscles 1, 2, 9, 10 for Control (NB7-1-GAL4/+; MHC-CD8-GCaMP6f-Sh/+) and NB7−1>Hb (NB7-1 GAL4/UAS Hb; MHC-CD8-GCaMP6f-Sh/UAS Hb). Images are dorsal up, anterior to the left. Scale bar represents five microns.
+
 ![Figure 7.](https://cdn.elifesciences.org/articles/46089/elife-46089-fig7-v2.jpg)
 
 **Figure 7.:** (A) Illustrations of Drosophila late stage embryos, CNS is gray. In Control, Hb(+) and Zfh2(-) neurons (U1) send axons to muscle 9, and Hb(+) Zfh2(+) neurons (U2) send axons to muscle 10. Whereas in NB7−1>Hb, Hb(+) Zfh2(-) (U1) neurons often send axons to muscle 10 or muscle 2. (B–B’) Images of an individually-labeled U motor neuron in a late stage, whole-mount, NB7−1>Hb embryo in ventral (B) and lateral views (B’). An individual Hb(+) (cyan) Zfh2(-) (yellow) cell is labeled with MCFO (circled). Boxes are neurons from different z-planes. (B’) The labeled U motor neuron axon projects (arrow) to muscle 2 (M2, dotted). (C) Illustration of a Drosophila late stage embryo. In NB7−1>Hb, U motor neurons at different positions along the medio-lateral axis all send axons to dorsal-most muscles, muscles 9 and 10. (D) Quantification of distance from midline, which is a proxy for neuronal birth time, for individual Eve(+) U motor neurons labeled with MCFO. Dots represent single neurons. For muscle 9 and muscle 10, n = 18, 34, respectively. (E–E’) Images of a late stage, whole-mount, NB7−1>Hb embryo shown in ventral (E) and lateral (E’) views. (E) There are >5 U motor neurons from NB7-1 in each hemisegment (dotted line), three of which are labeled by MCFO. (E’) Axons from Eve(+) cells project to muscle 10 (M10, dotted). Vertical and horizontal arrows point to the same HA(+) and V5(+) cells, respectively (E–E’). Images in (B,E) are shown lateral up, anterior to the left. Images in (B’,E’’) are shown with dorsal up, anterior to the left. Scale bar represents five microns for B and E. Scale bar represents 10 microns for B’ and E’. NB7−1>Hb, MCFO is hsFLP; NB7-1-GAL4/UASHb; UAS(FRT.stop)myr::smGdP-HA, UAS(FRT.stop)myr::smGdP-V5 THSUAS(FRT.stop)myr::smGdP-FLAG/UAS-Hb.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/46089/elife-46089-fig8-v2.jpg)
 
-**Figure 8.:** (A–B) Illustrations of the divisions of NB7-1 in Control and in NB7−1>Hb. Each gray arrowhead represents cell division, large circles represent NB7-1. The top row of small circles represent U motor neurons in late stage embryos and the bottom row represent U motor neurons in L3. In Control, two neurons are Hb(+) (blue) at both stages, whereas in NB7−1>Hb many neurons are Hb(+) in embryos, but by late L3 there only two or three Hb(+) neurons. (C) Quantification of Eve(+) Hb(+) U motor neurons at two different stages: late stage embryos (Em) and late stage larvae (L3), n = 36, 28, 38, 84 from left to right. (D–F) Images of molecular identity, Hb(+), expression in isolated third instar larvae (L3) CNS. Eve(+) U motor neurons from NB7-1 are circled in white and co-localization with Hb(+) is shown (arrows). Dotted line outlines EL interneurons (from NB3-3). Data quantified in (G). (G) Quantification of Eve(+) Hb(+) U motor neuron (blue) number and total Eve(+) U motor neurons (white) neuron number at L3. Altering Hb expression level in NB7-1 by changing transgene copy number and temperature has little effect on the total number of Eve(+) neurons and has no effect on the number of Hb(+) Eve(+) neurons. For Control n = 28, NB7−1>1X Hb n = 68, NB7−1>2X Hb n = 84, NB7−1>2X Hb 29 °C n = 27, NB7−1>4X Hb n = 12. (H) Quantification of the number of 1b branches onto L3 muscle 9 and muscle 10 in NB7−1>Hb manipulations with either 2 or 3 Hb(+) Eve(+) U motor neurons. Line intersects the y-axis at two branch number. For MN9-1b 2 Hb(+) neurons n = 98, MN9-1b 3 Hb(+) neurons n = 16, MN10-1b 2 Hb(+) neurons n = 98, MN10-1b 3 Hb(+) neurons n = 16. (I) Illustration of neuromuscular synapses on dorsal L3 muscles in NB7−1>Hb. Black box marks area in J. A single labeled Hb(+) Eve(+) neuron projects to muscle 9, whereas seven single-labeled Hb(-) Eve(+) neurons project to muscle 10. (J–K) Images of a single-labeled U motor neuron in NB7−1>Hb. Eve(+) Hb(-) U motor neuron (K) projects to muscle 10 (J). Boxes are insets from a different focal plane (K). U motor neurons are circled. Images in (D–F,K) are shown in ventral view, anterior up, and midline to the left. Image in (J) are shown dorsal up anterior to the left. Scale bar represents five microns (D–F, K), and 10 microns for (J). Genotypes: Control is w1118. NB7−1>1X Hb is NB7-1-GAL4/+; UAS-Hb/+. NB7−1>2X Hb is NB7-1-GAL4/UAS-Hb; UAS-Hb/+, and NB7−1>4X Hb is NB7-1-GAL4/UAS-Hb; NB7-1-GAL4/UAS-Hb (for C-H). For I-K NB7−1>Hb is hsFLP; Vglut-lexA/NB7-1-GAL4; lexAop-FRT-stop-FRT-EGFP/UAS-Hb. For quantifications dot is number of 1b branches onto a specified muscle within a bodywall hemisegment. Average and standard deviation are overlaid. ANOVA, corrected for multiple samples. Un-paired t-tests. ‘**’ p<0.05.  10.7554/eLife.46089.016Figure 8—source data 1.Figure 8.
+**Figure 8.:** (A–B) Illustrations of the divisions of NB7-1 in Control and in NB7−1>Hb. Each gray arrowhead represents cell division, large circles represent NB7-1. The top row of small circles represent U motor neurons in late stage embryos and the bottom row represent U motor neurons in L3. In Control, two neurons are Hb(+) (blue) at both stages, whereas in NB7−1>Hb many neurons are Hb(+) in embryos, but by late L3 there only two or three Hb(+) neurons. (C) Quantification of Eve(+) Hb(+) U motor neurons at two different stages: late stage embryos (Em) and late stage larvae (L3), n = 36, 28, 38, 84 from left to right. (D–F) Images of molecular identity, Hb(+), expression in isolated third instar larvae (L3) CNS. Eve(+) U motor neurons from NB7-1 are circled in white and co-localization with Hb(+) is shown (arrows). Dotted line outlines EL interneurons (from NB3-3). Data quantified in (G). (G) Quantification of Eve(+) Hb(+) U motor neuron (blue) number and total Eve(+) U motor neurons (white) neuron number at L3. Altering Hb expression level in NB7-1 by changing transgene copy number and temperature has little effect on the total number of Eve(+) neurons and has no effect on the number of Hb(+) Eve(+) neurons. For Control n = 28, NB7−1>1X Hb n = 68, NB7−1>2X Hb n = 84, NB7−1>2X Hb 29 °C n = 27, NB7−1>4X Hb n = 12. (H) Quantification of the number of 1b branches onto L3 muscle 9 and muscle 10 in NB7−1>Hb manipulations with either 2 or 3 Hb(+) Eve(+) U motor neurons. Line intersects the y-axis at two branch number. For MN9-1b 2 Hb(+) neurons n = 98, MN9-1b 3 Hb(+) neurons n = 16, MN10-1b 2 Hb(+) neurons n = 98, MN10-1b 3 Hb(+) neurons n = 16. (I) Illustration of neuromuscular synapses on dorsal L3 muscles in NB7−1>Hb. Black box marks area in J. A single labeled Hb(+) Eve(+) neuron projects to muscle 9, whereas seven single-labeled Hb(-) Eve(+) neurons project to muscle 10. (J–K) Images of a single-labeled U motor neuron in NB7−1>Hb. Eve(+) Hb(-) U motor neuron (K) projects to muscle 10 (J). Boxes are insets from a different focal plane (K). U motor neurons are circled. Images in (D–F,K) are shown in ventral view, anterior up, and midline to the left. Image in (J) are shown dorsal up anterior to the left. Scale bar represents five microns (D–F, K), and 10 microns for (J). Genotypes: Control is w1118. NB7−1>1X Hb is NB7-1-GAL4/+; UAS-Hb/+. NB7−1>2X Hb is NB7-1-GAL4/UAS-Hb; UAS-Hb/+, and NB7−1>4X Hb is NB7-1-GAL4/UAS-Hb; NB7-1-GAL4/UAS-Hb (for C-H). For I-K NB7−1>Hb is hsFLP; Vglut-lexA/NB7-1-GAL4; lexAop-FRT-stop-FRT-EGFP/UAS-Hb. For quantifications dot is number of 1b branches onto a specified muscle within a bodywall hemisegment. Average and standard deviation are overlaid. ANOVA, corrected for multiple samples. Un-paired t-tests. ‘**’ p<0.05.
 
 Hb expression has been prolonged in NB7-1 in many ways (e.g., hs-GAL4, En-GAL4, Pros-GAL4, removal of Hb switching factor SVP; Cleary and Doe, 2006; Grosskortenhaus et al., 2005; Isshiki et al., 2001; Kanai et al., 2005; Pearson and Doe, 2003), and in general, these manipulations produce a large number of ectopic Eve(+) cells that express U1 molecular markers. Here, we use a previously uncharacterized, NB7-1-specific method to prolong Hb expression. NB7-1-specific manipulation is essential when examining circuit wiring because it rules out possible effects of Hb acting in another lineages. Specifically, we use NB7-1-GAL4 (Figure 2—figure supplement 1A–B) to drive Hb expression from either one or two copies of UAS-Hb (Kohwi et al., 2013). In both manipulations, we find an average of ten Eve(+) cells (Figure 2A–D’,H). Notably, however, there is hemisegment to hemisegment variability in how long NB7-1-GAL4 drives gene expression, which results in variability in the number of Eve(+) cells (Figure 2H,Q). We also note driving two copies of Hb generates slightly stronger phenotypes (Figure 2—figure supplement 1E–G), and so unless otherwise noted, we drive two copies of Hb, which we refer to as ‘NB7−1>Hb’. In comparison to NB7−1>Hb, a similar number of Eve(+) cells are found when Hb expression in NB7-1 is prolonged by eliminating Seven-up, a factor that promotes Hb switching (Kanai et al., 2005). This suggests that the level of Hb expression we achieve in the NB7−1>Hb manipulation is in a physiological range.
 
@@ -70,11 +102,11 @@ Because we use a previously uncharacterized manipulation of Hb, we perform a ser
 
 Next, we characterize embryonic molecular identities of the Eve(+) cells in NB7−1>Hb using the combination of molecular markers Hb (Hb), Krupple (Kr), and Zfh2, which together label U1 (Hb[+] Kr[+] Zfh2[-]), U2 (Hb[+] Kr[+] Zfh2[+]), U3 (Hb[-] Kr[+] Zfh2[+]), and U4/U5 (Hb[-] Kr[-] Zfh2[+]) (Figure 2J–Q). Note, we use Hb in two capacities in this experiment. We manipulate Hb in the neuroblast, and we use Hb as marker for U1/U2 molecular identity because in wild type U1 and U2 motor neurons actively transcribe Hb (Kohwi et al., 2013). To distinguish actively-transcribed Hb (an identity marker) from Hb inherited from neuroblast cytoplasm, we stain at late embryonic stages to allow for Hb protein turnover as in Pearson and Kohwi (Kohwi et al., 2013; Pearson and Doe, 2003). In NB7−1>Hb embryos, 86% of Eve(+) cells are U1-like (Figure 2P-Q and Figure 2—figure supplement 1F-G). Furthermore, in nearly one-third of all hemisegments all Eve(+) cells have U1 molecular identities (Figure 2Q arrows). To demonstrate that in NB7−1>Hb Eve(+) cells with U1 identities are born at abnormally late times in development we measure the distance of each cell body from the CNS midline as a proxy for neuronal birth time, and then plot the position of Eve(+) cells along the medio-lateral axis (Figure 2P and Figure 2—figure supplement 1E). Together these data demonstrate that prolonging Hb expression with NB7-1-GAL4 is sufficient to generate extra Eve(+) neurons, a majority of which have U1 molecular identities regardless of birth time. Thus, in NB7−1>Hb, a neuron’s birth time and its temporal identity are decoupled, which allows us to parse the contribution of Hb versus other birth time related factors in controlling terminal features of U motor neurons.
 
-## When Hb expression is prolonged in NB7-1, all ectopic Eve(+) cells are motor neurons
+### When Hb expression is prolonged in NB7-1, all ectopic Eve(+) cells are motor neurons
 
 After establishing prolonged Hb expression in NB7-1 is sufficient to generate ectopic Eve(+) neurons with embryonic U1 molecular identities, we next examine the terminal features of the ectopic neurons, and in this section we focus on motor neuron identity. In Drosophila, the gold-standard for determining if a neuron is a bona fide motor neuron is to show the neuron has a cell body in the CNS and extends a neurite out of the CNS (Figure 3C). This distinguishes motor neurons from interneurons whose axons do not leave the CNS, and from sensory neurons whose cell bodies are in the periphery and send axons into the CNS. We make single neuron clones in both Control and NB7−1>Hb genetic backgrounds and score for CNS exit. Regardless of genotype and birth time, every labeled Eve(+) neuron sends a neurite out of the CNS (Figure 3A–D). As a second, independent confirmation that ectopic Eve(+) neurons in NB7−1>Hb are motor neurons, we show a vast majority of Eve(+) neurons from NB7-1 co-stain with the pan- motor neuron marker (phosopho-Mad) (Figure 3E–F). We conclude that in NB7−1>Hb, Eve(+) cells are motor neurons.
 
-## There are complete and incomplete transformations of dendrite morphology when Hb expression is prolonged in NB7-1
+### There are complete and incomplete transformations of dendrite morphology when Hb expression is prolonged in NB7-1
 
 Next, we focus on characterizing dendrite morphology of U motor neurons in NB7−1>Hb. In Control, Hb(+) U motor neurons have contralateral dendrites that cross the midline, whereas Hb(-) U motor neurons have ipsilateral dendrites that do not cross the midline (Figure 4A). This raises the possibility that expression of Hb in NB7-1 is sufficient to generate contralateral U motor neuron dendrite morphology. We test this by labeling single neurons in a NB7−1>Hb genetic background and examining dendrite morphology of U motor neurons. We label 79 U motor neurons and find a majority (77%) have contralateral dendrites (Figure 4A–D). This demonstrates that Hb expression has a major influence on dendrite morphology, but raises the question of why in NB7−1>Hb there are a mix of ipsilateral and contralateral dendrite morphologies.
 
@@ -82,7 +114,7 @@ In NB7−1>Hb, a small number of U motor neurons do not express Hb (Figure 2—f
 
 A recent report from Kohwi et al., showed that when Hb expression is prolonged in NB7-1, there are both full and partial transformations in U motor neuron identity, as assessed by marker gene expression (Kohwi et al., 2013). Specifically, they found only five Eve(+) cells are bona fide U1/U2 motor neurons (maintain endogenous Hb expression) and that the remaining Eve(+) cells have mixed molecular identity, which is due to a nuclear architecture remodeling event in the neuroblast that occurs after the fifth division. We reason that remodeling of nuclear architecture might also explain partial transformation of U motor neuron dendrite morphology. If true, we expect that in NB7−1>Hb, Hb(+) U motor neurons born before the fifth division would have contralateral dendrites, and those born after the fifth division would have ipsilateral dendrites. We measure distance from midline of the cell body for each Hb(+) U motor neuron as a proxy for neuron birth time, plot dendrite morphology versus distance from midline, but find no association (Figure 4G). These data show that although prolonged expression of Hb generates partial transformations in dendrite morphology, changes in NB7-1 nuclear architecture are unlikely to account for this phenomenon. Furthermore, these data demonstrate that embryonic U motor neuron marker gene expression does not accurately predict U motor neuron dendrite morphology.
 
-## Prolonged expression of Hb shifts the distribution of neuromuscular synapses on dorsal muscles
+### Prolonged expression of Hb shifts the distribution of neuromuscular synapses on dorsal muscles
 
 Next, we ask to what extent does U motor neuron marker gene expression predict U motor neuron-to-muscle synaptic partnerships. Based on characterization of U motor neuron neuromuscular synapses in wild type larvae (Figure 5A) and on the average number of U motor neurons expressing markers of U1 through U5 embryonic identities in NB7−1>Hb embryos (Figure 2), we make the following predictions about neuromuscular synapses in NB7−1>Hb larvae (Figure 5B): MN3-1b and MN4-1b synapses should be absent because there are almost no U motor neurons with U4 and U5 molecular identities in NB7−1>Hb embryos. There should be MN9-1b, MN10-1b and MN2-1b branches, and of these there should be many more MN9-1b synaptic branches than MN10-1b and MN2-1b branches because there are more neurons with U1 identities than U2 and U3 identities in NB7−1>Hb embryos. To test these predictions, we assay mature circuit wiring in NB7−1>Hb larvae by labeling all neuronal membranes, including nerves and neuromuscular synaptic terminals (Figure 5C–H). We count the number of type 1b branches on dorsal muscles because in wild type larvae, U motor neurons make type 1b synapses on dorsal muscles. Notably, this method allows us to look at the population of motor neurons, not just individually-labeled neurons, as described above.
 
@@ -92,13 +124,13 @@ A second prediction is that in NB7−1>Hb, there should be many MN9-1b synaptic 
 
 Our reason for examining the ability of Hb to control terminal features is to connect early developmental programs with circuit assembly. Therefore, it is important to determine the extent to which the synaptic branches in NB7−1>Hb contained functional synapses. To characterize the NB7−1>Hb neuromuscular synapses, first in fixed tissue L3 fillets, we stain for a panel of synaptic marker proteins. There is normal abundance and localization of pre-synaptic markers—for active zones (Brp), stable microtubule loops (Fustch), and synaptic vesicles (Syn)—as well as post-synaptic markers—for post-synaptic density (DLG) and neurotransmitter receptors (GluRIIA) (Figure 6A–G). Thus, on the cell biological level, neuromuscular synapses in NB7−1>Hb are not different from Control. In addition, we visualize neuromuscular synapse activity with a post-synaptically localized calcium sensor (Newman et al., 2017). In L3 larval fillets, we image spontaneous release of individual synaptic vesicles from 1b branches on muscles 1, 2, 9, and 10. In both Control and NB7−1>Hb animals, within a five-minute imaging period, we find at least one post-synaptic response in every 1b synaptic branch on every muscle imaged (Control [n = 6] and NB7−1>Hb [n = 5] Figure 6H–I and Figure 6—figure supplement 1). We conclude in NB7−1>Hb, extra branches on dorsal muscles contain functional synapses. Taken together this demonstrates that prolonged expression of the temporal transcription factor, Hb, in single neuroblast lineage has profound effects on functional circuit wiring.
 
-## U motor neuron embryonic molecular identity and neuronal birth time do not accurately predict axonal targeting
+### U motor neuron embryonic molecular identity and neuronal birth time do not accurately predict axonal targeting
 
 Our neuromuscular synapse data strongly suggests that U motor neuron embryonic molecular identity does not accurately predict neuromuscular partnerships in NB7−1>Hb. We test this idea by labeling single neurons in late stage embryos, tracking axonal trajectories, and staining for embryonic U motor neuron molecular markers. Specifically we stain for Hb and Zfh2, which together distinguish U1 (Hb[+] Zfh2[-]), U2-U3 (Hb[+] Zfh2[+]), and U4-U5 (Hb[-] Zfh2[+]). We label 18 single neurons in NB7−1>Hb and find five examples where embryonic identity and axonal trajectory match as in wild type, and 13 examples where neurons with U1 identities innervate either muscle 10 or 2 (Figure 7A–B’). This provides direct evidence that driving Hb with NB7-1-GAL4 results in both full and partial transformations in axonal trajectory.
 
 Next, we ask why molecular identity does not accurately predict axonal target in NB7−1>Hb. An attractive model is that in NB7−1>Hb, first-born U1 neurons reach muscle 9, make synapses on the muscle and the muscles become ‘occupied’, and so that later-born U1 neurons instead of synapsing on muscle 9 make synapses on muscle 10. This model predicts a correlation between the birth time of a neuron and its synaptic partner. We generate a second set of singly labeled U motor neurons (n = 52) in a NB7−1>Hb genetic background, and score both the cell body distance from midline and axonal targets. These data reveal no strong correlation between the birth time of a neuron and its axonal target (Figure 7C–D). They suggest that muscle occupancy as well as other time-linked factors such as changes in nuclear architecture do not strongly influence U motor neuron axon targeting in NB7−1>Hb.
 
-## Molecular cues inherited from the neuroblast can convey wiring specificity
+### Molecular cues inherited from the neuroblast can convey wiring specificity
 
 We were puzzled as to why prolonged expression of Hb in NB7-1 is sufficient to generate a large number of U motor neurons with U1 embryonic molecular identities, but yet these neurons do not always project axons to, and make synapses with, 9. One possibility is that in NB7−1>Hb, Hb expression may not fully transform Eve(+) neurons into bona fide U1 motor neurons. To test this, we screen all available embryonic U motor neuron molecular markers for expression in U motor neurons at late (L3) larval stages. In wild type, U1 and U2 maintain Hb expression, indicating that expression of Hb at L3 is a marker for U1/U2 temporal identity (Figure 8A,C,D). In NB7−1>Hb, we stain for Hb at L3, and often found two, and rarely three, bona fide Hb(+) U1/U2 motor neurons (Figure 8E,F), even though in late stage embryos, U motor neurons in NB7−1>Hb expressed Hb as well as other markers of U1/U2 embryonic molecular identity (Figure 8C). We conclude that in NB7−1>Hb, prolonged Hb in NB7-1 is only sufficient to transiently transform U motor neurons into U1 neurons.
 
@@ -110,7 +142,7 @@ Because we find a positive correlation between the number of Hb(+) U motor neuro
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/46089/elife-46089-fig9-v2.jpg)
 
-**Figure 9.:** (A–C) Illustrations of the divisions in NB7-1 in Control, NB7−1>VP16::Hb, and En>Svp. Each gray arrowhead represents cell division, large circles represent NB7-1. Row of small circles represent U motor neuron identity at L3. In Control, two neurons are Hb(+) (blue), in NB7−1>VP16::Hb most neurons are Hb(+), and in En>Svp, only one Hb(+) remains. (D–E) Images of molecular identity, Hb(+), expression in isolated third instar larvae (L3) CNS, shown in ventral view, anterior up, and midline to the left. Eve(+) U motor neurons from NB7-1 are circled in white and co-localization with Hb(+) is shown (arrows). In NB7−1>VP16::Hb there are five Hb(+) Eve(+), whereas in En>Svp there are two (arrows). Data quantified in (F). (F) Quantification of Eve(+) Hb(+) U motor neuron (blue) number and total Eve(+) U motor neurons (white) neuron number at L3. Expressing an activated form of Hb in NB7-1 (NB7−1>VP16::Hb) has little effect on the total number of Eve(+) neurons but increases the number of Hb(+) Eve(+) neurons. Expressing a switching factor, Svp in NB7-1 (En>Svp) can decrease the total number of Eve (+) neurons by one and decrease the total number of Hb(+) Eve(+) neurons by one. For Control n = 28, VP16::Hb n = 29, NB7−1>VP16::Hb n = 65, En>Svp n=70. (G–H) Quantification of the number of 1b branches onto muscle 9 and muscle 10. C. stands for Control. Line intersects the y-axis at two branch number. Number of Eve-expressing neurons are shown below each genotype. For columns left to right n = 12,44,16,14,16,21,14,13, (G) n = 12,43,17,14,15,21,13,13 (H). (I–K) Illustrations of neuromuscular synapses on L3 dorsal muscles 1 and 9. Black box marks area imaged in L-N. MN1-1b (black) comes from a non-U Motor neuron called aCC. (L–N) Images of neuronal membrane—both axons and neuromuscular synapses—on L3 dorsal muscles shown dorsal up, anterior left of Control (W1118) (L), NB7−1>vp16::Hb (NB7-1-GAL4/UAS-vp16::Hb; UAS-vp16::Hb/+) (M), and En>Svp1 (Engrailed-GAL4/UAS-svp1) (N). Arrow indicates branching onto muscle 9 (M9). An asterisk * indicates missing synapse. Scale bar represents five microns for E-F. Scale bar represents 10 microns for L-N. Control (W1118), vp16::Hb (UAS-vp16::Hb/+; UAS-vp16::Hb/+), NB7−1>vp16::Hb (NB7-1-GAL4/UAS-vp16::Hb; UAS-vp16::Hb/+), En>Svp1 (Engrailed-GAL4/UAS-svp1). For quantifications, each dot represents the number of 1b branches onto a specified muscle within a bodywall hemisegment that corresponds to a hemisegment with specified number of Hb(+) neurons. Black bars are averages. Error bars represent standard deviation. ANOVA, corrected for multiple samples. Un-paired t-tests. ‘*’ p=0.02, ‘****’ p<0.0001, n.s. (not significant).  10.7554/eLife.46089.018Figure 9—source data 1.Figure 9.
+**Figure 9.:** (A–C) Illustrations of the divisions in NB7-1 in Control, NB7−1>VP16::Hb, and En>Svp. Each gray arrowhead represents cell division, large circles represent NB7-1. Row of small circles represent U motor neuron identity at L3. In Control, two neurons are Hb(+) (blue), in NB7−1>VP16::Hb most neurons are Hb(+), and in En>Svp, only one Hb(+) remains. (D–E) Images of molecular identity, Hb(+), expression in isolated third instar larvae (L3) CNS, shown in ventral view, anterior up, and midline to the left. Eve(+) U motor neurons from NB7-1 are circled in white and co-localization with Hb(+) is shown (arrows). In NB7−1>VP16::Hb there are five Hb(+) Eve(+), whereas in En>Svp there are two (arrows). Data quantified in (F). (F) Quantification of Eve(+) Hb(+) U motor neuron (blue) number and total Eve(+) U motor neurons (white) neuron number at L3. Expressing an activated form of Hb in NB7-1 (NB7−1>VP16::Hb) has little effect on the total number of Eve(+) neurons but increases the number of Hb(+) Eve(+) neurons. Expressing a switching factor, Svp in NB7-1 (En>Svp) can decrease the total number of Eve (+) neurons by one and decrease the total number of Hb(+) Eve(+) neurons by one. For Control n = 28, VP16::Hb n = 29, NB7−1>VP16::Hb n = 65, En>Svp n=70. (G–H) Quantification of the number of 1b branches onto muscle 9 and muscle 10. C. stands for Control. Line intersects the y-axis at two branch number. Number of Eve-expressing neurons are shown below each genotype. For columns left to right n = 12,44,16,14,16,21,14,13, (G) n = 12,43,17,14,15,21,13,13 (H). (I–K) Illustrations of neuromuscular synapses on L3 dorsal muscles 1 and 9. Black box marks area imaged in L-N. MN1-1b (black) comes from a non-U Motor neuron called aCC. (L–N) Images of neuronal membrane—both axons and neuromuscular synapses—on L3 dorsal muscles shown dorsal up, anterior left of Control (W1118) (L), NB7−1>vp16::Hb (NB7-1-GAL4/UAS-vp16::Hb; UAS-vp16::Hb/+) (M), and En>Svp1 (Engrailed-GAL4/UAS-svp1) (N). Arrow indicates branching onto muscle 9 (M9). An asterisk * indicates missing synapse. Scale bar represents five microns for E-F. Scale bar represents 10 microns for L-N. Control (W1118), vp16::Hb (UAS-vp16::Hb/+; UAS-vp16::Hb/+), NB7−1>vp16::Hb (NB7-1-GAL4/UAS-vp16::Hb; UAS-vp16::Hb/+), En>Svp1 (Engrailed-GAL4/UAS-svp1). For quantifications, each dot represents the number of 1b branches onto a specified muscle within a bodywall hemisegment that corresponds to a hemisegment with specified number of Hb(+) neurons. Black bars are averages. Error bars represent standard deviation. ANOVA, corrected for multiple samples. Un-paired t-tests. ‘*’ p=0.02, ‘****’ p<0.0001, n.s. (not significant).
 
 Next, in both EN>SVP and in NB7−1>VP16::Hb, we characterize the number of Hb(+) U motor neurons versus the number of muscle 9 and muscle 10 neuromuscular synapses in L3 larvae. Within each genetic background, we pool data based on the number of L3 Hb(+) U motor neurons and then plot the number of synaptic branches on muscles 9 and 10. We find a strong correlation between the number of L3 Hb(+) U motor neurons and the number of synaptic branches on muscle 9 (Figure 9G–M). In contrast, there is no significant change in the number of synaptic branches onto muscle 10. Taken together these data demonstrate early manipulation of gene expression in NB7-1 is sufficient to permanently alter the molecular identity of U motor neurons and to predictably re-wire the neuronal circuits to which they contribute.
 
@@ -122,13 +154,13 @@ The existing model in the field is that temporal transcription factors are maste
 
 **Figure 10.:** (A–B) Illustration summary of findings reported in this study. In Wildtype (WT) conditions, NB7-1 expresses Hunchback (Hb), Hb is involved in establishing U1/U2 motor neuron embryonic identities which was proposed to determine terminal features (dendrite morphology, axonal trajectory, and functional synaptic partnerships) (A). When Hb is overexpressed in NB7−1>Hb, Hb expression in NB7-1 is prolonged (Figure 2). The overwhelming majority of embryonic identities seen in motor neurons resemble U1 (Figure 2) however the terminal features do not entirely resemble U1 (Figures 5–7). We find that prolonging Hb expression in NB7-1 produces, in a majority of cases, the same number or, infrequently, one additional neuron possessing molecular identity that resembles U1 at late larval stage (L3), therefore we conclude that prolonging Hb expression in NB7-1 does not control L3 identities (Figure 8). Similarly, in this background, we learn that U1 embryonic identities do not predict U1 L3 identities. We find that if we overexpress an activated form of Hb (VP16::Hb) or the switching factor, Seven-up (Svp1), U1 L3 identities can be controlled. We find that L3 identities in these manipulations are correlated to terminal features of U motor neurons (Figure 9).
 
-## Manipulation of temporal transcription factors provides insight into neuromuscular plasticity and identifies developmental decision points for wiring specificity
+### Manipulation of temporal transcription factors provides insight into neuromuscular plasticity and identifies developmental decision points for wiring specificity
 
 Neuromuscular targeting is thought to be controlled in a step-wise fashion with motor neurons making a series of decisions that culminate in specific wiring decisions. First, a neuron must decide to exit the nerve cord, then it must decide to branch off the main nerve, and finally it must pick a specific muscle with which to synapse. For decades the Drosophila neuromuscular system has been a model to identify molecular mechanisms underlying these steps. Notably, the phenotypes we report here are among the most dramatic morphological rearrangements of neuromuscular synapses ever reported in this system (Figures 5,9). In general, in Drosophila larva, in mutants—for cell adhesion, axon guidance cues, and post-mitotic neuronal transcription factor genes—there is delayed rather than impaired synapse formation, which indicates there is enormous plasticity, redundancy and complexity in neuromuscular wiring decisions (Desai et al., 1996; Krueger et al., 1996; Landgraf et al., 1999; Nose et al., 1994). Here, we show that by manipulating gene expression early in neuronal development, in the neuronal stem cell, we dramatically alter neuromuscular synapse partner selection of motor neurons (Figures 5,9). This argues against a model in which post-mitotic motor neurons are gradually restricted to adopt specific synaptic partnerships, and instead argues that in general, when a motor neuron is born, it already ‘knows’ its synaptic partner. Furthermore, our data show that transcription factors acting early in neuronal development, in neuroblasts, control the ensemble of molecular effectors necessary to specify neuromuscular wiring. Thus, we identify a powerful entry point for future studies to uncover the suite of effectors controlling neuromuscular synapse selection.
 
 The Drosophila neuromuscular system is a prominent model for studying synaptic homeostasis and plasticity. The neuromuscular wiring phenotypes documented in this study provide evidence for two types of plasticity in neuromuscular wiring, which we refer to as compensation and spillover. Compensation occurs when a muscle does not have enough innervation. In this case, neurons that do not normally innervate a muscle form extra branches to innervate a muscle that is devoid of its normal innervation (either because the motor neuron has been ablated or genetically mis-specified). We find evidence for compensation on dorsal muscles, muscle 3 and 4, similar to that which has been found for ventral muscles (Chang and Keshishian, 1996), showing that compensation is not a muscle- or neuron-specific phenomenon. Spillover occurs when a muscle has too much innervation. To our knowledge this type of plasticity has not yet been described because no manipulations have been identified that increase innervation on a single muscle to the degree we describe. In spillover, motor neurons that exit from the ISN at a specific branch point do not innervate the muscle target which is normally innervated by neurons exiting at that point, but instead these neurons synapse onto other nearby muscles, such that synapses form on muscle surfaces normally devoid of synapses (e.g., the top of muscle 3, Figure 5). Spillover phenotypes suggests that molecular cues are sufficient to send neurons out of the nerve cord, and instruct them where to branch off the main nerve, but that once neurons reach a muscle field they can innervate one of several nearby muscles. In addition, we note that the neuromuscular synaptic branches that form in NB7−1>Hb, contain functional synapses, but we know little about the function of these neurons otherwise. It will be important to undertake a detailed functional analysis of multi-innervated muscles to gain insight into homeostatic and other synaptic plasticity mechanisms.
 
-## Hb is a limited master regulator of temporal-specific developmental programs
+### Hb is a limited master regulator of temporal-specific developmental programs
 
 A widely held model in the field is that temporal transcription factors are master regulators of temporal-specific developmental programs (Allan and Thor, 2015; Jacob et al., 2008) (Figure 10A). This is an attractive model, but there is limited data to support it because experiments in general have assayed establishment of molecular marker gene expression in embryos, which provides limited information about an entire developmental program. We argue that understanding the role of temporal transcription factors in regulating terminal neuronal features is critically important because it provides insight into functional neural diversity and circuit wiring and because it is the end product of an entire developmental program.
 
@@ -140,7 +172,7 @@ In sum, our study adds an entirely new and unexplored level to the existing mode
 
 One conclusion of our paper is that individual temporal transcription factors influence, but do not entirely determine, neuronal fate, terminal differentiation, dendritic arborization, and neuronal partners. That is to say, overexpression of one single temporal factor can only transiently change the fate of neurons, which later fail to differentiate into the correct type of neuron. A second conclusion of our paper is that neuromuscular synaptic partner choice and circuit wiring can be established before neuronal birth by early programs of gene expression acting in neuronal stem cells. While these two conclusions may seem to contradict one another, this contradiction can be resolved by pointing out that our data, do not provide the identities of all of the genes acting in the neuronal stem cells, but point to their existence and suggest that Hb is among these genes.
 
-## Insights into the lineage-based organization of motor circuits
+### Insights into the lineage-based organization of motor circuits
 
 In many CNS regions there are notable relationships between neuronal stem cell lineage and circuit wiring, but these relationships differ depending on the circuit configuration with a given CNS region (Xu et al., 2014; Yu et al., 2009). These observations have led to the hypothesis that lineage is an important element in circuit assembly, but that lineage-circuit relationships differ for different circuits. Little is known about lineage-circuit relationships in the motor system. In the Drosophila motor system, we recently showed that neurons from a single neuroblast, NB3-3 are organized into blocks of non-identical, yet functionally-related sets (Wreden et al., 2017). These early-born and late-born blocks of lineage-related interneurons are called ‘temporal cohorts’, defined as groups of contiguously-born neurons from a single stem cell that have similar circuit level function. To be a bona fide temporal cohort requires a large amount of information about individual neurons, including their exact stem cell parent, birth order, as well as a functional demonstration of circuit membership. It is important to have all of these pieces of information for a single neuron because ultimately this is critically required to identify molecular mechanisms underlying cell fate specification of neurons in a circuit.
 
@@ -150,7 +182,7 @@ Here, we identify a temporal cohort in the NB7-1 lineage comprised of U motor ne
 
 One question raised by the concept of temporal cohorts is what regulates the borders of temporal cohorts, that is, how do neuronal stem cells make abrupt, rather than gradual, changes in lineage progression. For example, in NB7-1, for several divisions, motor neurons are produced, and then NB7-1 stops making motor neurons and starts making interneurons. Our data show that Hb regulates the U motor neuron temporal cohort border because when Hb expression is prolonged in NB7-1, NB7-1 produces many more functional, dorsally-projecting motor neurons at the time when NB7-1 would normally be making interneurons. Interestingly, prolonged expression of VP16::Hb does not alter the U motor neuron temporal cohort border. Nonetheless, our data argue that rather than specify specific cell fates, a general function of temporal transcription factors is to regulate temporal cohort boundaries. They also raise the possibility that alterations in temporal transcription factor expression could be a major driver of evolution of neuronal circuits.
 
-## Parsing the source(s) of information that control circuit wiring
+### Parsing the source(s) of information that control circuit wiring
 
 In many CNS regions in many organisms there is an association between birth time and circuit membership (Bhansali et al., 2014; Deguchi et al., 2011; Eerdunfu et al., 2017; Greaney et al., 2017; Jefferis et al., 2001; Kulkarni et al., 2016; McLean et al., 2007; McLean and Fetcho, 2009; Morrow et al., 2008; Osterhout et al., 2014; Petrovic and Hummel, 2008; Pujol-Martí et al., 2012; Tripodi et al., 2011). The mechanisms underlying this association are likely to be varied and are still poorly understood. Identifying sources of information that control circuit wiring is critically required for understanding molecular underpinnings of circuit assembly. In complex brains, neurons are born from pools of neuronal stem cells. As stem cells divide, several factors are simultaneously changing each of which could influence the circuit membership of the resulting neuron. One factor is a dynamic environment—earlier-born neurons and later-born neurons can encounter different physical substrates or receive different signaling cues. A second type of factor is that earlier-born neurons have more time for processes like migration and axon extension. Third, over time, within the nucleus of a neuronal stem cell, the chromatin landscape can change. Finally, earlier-born and later-born neurons have different molecular profiles, which is controlled by temporal transcription factors. Determining the precise role of each of the factor associated with birth time is crucial for understanding how circuits assemble. Our data show that in NB7−1>Hb animals, even the latest-born U motor neuron can adopt terminal features characteristic of the earliest-born U motor neuron—including CNS exit, dendrite morphology, axonal targeting and functional neuromuscular synaptic partner selection. Thus, we find no limit on the ability of late-born neurons to adopt early-born features. These findings rule out many time-linked processes in circuit wiring decisions. Furthermore, we show that manipulation of temporal patterning via manipulation of gene expression in the neuroblast is sufficient to re-wire locomotor circuits, indicating that circuit wiring can be established before neuronal birth by early programs of gene expression acting in neuronal stem cells.
 
@@ -158,31 +190,314 @@ While this manuscript was in review, a manuscript describing similar experiments
 
 ## Materials and methods
 
-## Fly genetics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>CQ2-GAL4</td>
+      <td>Bloomington stock center [BL] 7468</td>
+      <td>BDSC Cat# 7468, RRID:BDSC_7468</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>OK6-GAL4</td>
+      <td>Bloomington stock center [BL] 64199</td>
+      <td>BDSC Cat# 64199, RRID:BDSC_6419</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>hsFLP; UAS(FRT.stop)myr::smGdP-HA, UAS(FRT.stop)myr::smGdP-V5-THS UAS(FRT.stop)myr::smGdP-FLAG</td>
+      <td>Bloomington stock center [BL] 64085</td>
+      <td>BDSC Cat# 64085, RRID:BDSC_64085</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-myr-GFP</td>
+      <td>Bloomington stock center [BL] 32198</td>
+      <td>BDSC Cat# 32198, RRID:BDSC_32198</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-nls-GFP</td>
+      <td>Bloomington stock center [BL] 32198</td>
+      <td>BDSC Cat# 6452, RRID:BDSC_6452</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Hb; UAS-HB/TM2</td>
+      <td>Bloomington stock center [BL] 8504</td>
+      <td>BDSC Cat# 8504, RRID:BDSC_8504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w1118</td>
+      <td>Bloomington stock center [BL] 36005</td>
+      <td>BDSC Cat# 36005, RRID:BDSC_36005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MHC-CD8-GCaMP6f-Sh</td>
+      <td>Bloomington stock center [BL] 67739</td>
+      <td>BDSC Cat# 67739, RRID:BDSC_67739</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>ac:VP16, gsb:v8v (aka NB7-1-GAL4)</td>
+      <td>Minoree Kohwi (Columbia)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>VGlut-lexA/cyo</td>
+      <td>Bloomington stock center [BL] 60314</td>
+      <td>BDSC Cat# 60314, RRID:BDSC_60314</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>lexA(stop.FRT)mCD8.GFP</td>
+      <td>Bloomington stock center [BL] 57588</td>
+      <td>BDSC Cat# 57588, RRID:BDSC_57588</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-VP16::Hb/-;UAS-VP16::Hb</td>
+      <td>Chris Doe (Oregon)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-svp1 1.12</td>
+      <td>Minoree Kowhi (Columbia)</td>
+      <td>DGGR Cat# 116195, RRID:DGGR_116195</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Engrailed-GAL4</td>
+      <td>Bloomington stock center [BL] 1973</td>
+      <td>BDSC Cat# 1973, RRID:BDSC_1973</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-hid,rpr</td>
+      <td>Zhou et al., 1997</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Eve (polyclonal)</td>
+      <td>Heckscher Lab</td>
+      <td></td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>chicken anti-GFP (polyclonal)</td>
+      <td>Aves #GFP-1020</td>
+      <td>Aves Labs Cat# GFP-1020, RRID:AB_10000240</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>chicken anti-V5 (polyclonal)</td>
+      <td>Bethyl #A190-118A</td>
+      <td>Bethyl Cat# A190-118A, RRID:AB_66741</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-HA (monclonal)</td>
+      <td>BioLegend #901501</td>
+      <td>BioLegend Cat# 901501, RRID:AB_2565006</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-FLAG (monoclonal)</td>
+      <td>Novus #NBP1-06712</td>
+      <td>Novus Cat# NBP1-06712, RRID:AB_1625981</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-Worniu (monoclonal)</td>
+      <td>Abcam #ab196362</td>
+      <td></td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>goat anti-HRP-Cy3 (polyclonal)</td>
+      <td>Jackson ImmunoResearch 123-165-021</td>
+      <td>Jackson ImmunoResearch Labs Cat# 123-165-021, RRID:AB_2338959</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-Runt (polyclonal)</td>
+      <td>John Rientz (UChicago)</td>
+      <td></td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>guinea pig anti-Hb (polyclonal)</td>
+      <td>John Rientz (UChicago)</td>
+      <td></td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>guinea pig anti-Kruppel (polyclonal)</td>
+      <td>John Rientz (UChicago)</td>
+      <td></td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rat anti-Zfh2 (polyclonal)</td>
+      <td>Chris Doe (Oregon)</td>
+      <td></td>
+      <td>1:800</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Castor (polyclonal)</td>
+      <td>Chris Doe (Oregon)</td>
+      <td></td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>guinea pig anti-Dbx (polyclonal)</td>
+      <td>Heather Broiher (Case Western</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>guinea pig anti-HB9 (polyclonal)</td>
+      <td>Heather Broiher (Case Western)</td>
+      <td></td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>rabbit anti-Smad3 (pMad) (polyclonal)</td>
+      <td>Abcam #52903</td>
+      <td>Abcam Cat# ab52903, RRID:AB_882596</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-myosin (monoclonal)</td>
+      <td>3E8-3D3</td>
+      <td>DSHB Cat# 3E8-3D3, RRID:AB_2721944</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-Futsch (monoclonal)</td>
+      <td>22C10</td>
+      <td>DSHB Cat# 22c10, RRID:AB_528403</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-Brp (monoclonal)</td>
+      <td>NC82</td>
+      <td>Creative Diagnostics Cat# DMAB9116MD, RRID:AB_2392664</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-DLG (monoclonal)</td>
+      <td>4F3</td>
+      <td>DSHB Cat# 4F3 anti-discs large, RRID:AB_528203</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-GluRIIA (monoclonal)</td>
+      <td>8B4D2</td>
+      <td>DSHB Cat# 8B4D2 (MH2B), RRID:AB_52826</td>
+      <td>1:25</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mouse anti-En (monoclonal)</td>
+      <td>4D9</td>
+      <td>DSHB Cat# 4D9 anti-engrailed/invected, RRID:AB_528224</td>
+      <td>1:5</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy3-HRP (polyclonal)</td>
+      <td>Jackson ImmunoResearch 123-025-021</td>
+      <td>Jackson ImmunoResearch Labs Cat# 123-025-021, RRID:AB_2338954</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>647-Phalliodin</td>
+      <td>Thermofisher A22287</td>
+      <td>Thermo Fisher Scientific Cat# A22287, RRID:AB_2620155</td>
+      <td>1:600</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly genetics
 
 Standard methods were used for propagating fly stocks. For all experiments, embryos and larvae were raised at 25 °C, unless otherwise noted. The following lines were used: CQ2-GAL4 (Bloomington stock center [BL] 7468), OK6-GAL4 (BL 64199), hsFLP; UAS(FRT.stop)myr::smGdP-HA, UAS(FRT.stop)myr::smGdP-V5-THS UAS(FRT.stop)myr::smGdP-FLAG (BL 64085), UAS-myr-GFP (BL 32198), UAS-nls-GFP (BL 6452), UAS-Hb; UAS-HB/TM2 (BL 8504), w1118 (BL 36005), MHC-CD8-GCaMP6f-Sh (BL 67739) ac:VP16, gsb:v8v (aka NB7-1-GAL4, gift of M. Kohwi), VGlut-lexA/cyo (BL 60314), lexA(stop.FRT)mCD8.GFP (BL 57588), UAS-VP16::Hb/-;UAS-VP16::Hb (gift of C. Doe), UAS-svp1 1.12 (gift of M. Kowhi), Engrailed-GAL4 (BL 1973) (gift of M. Kowhi), UAS-hid,rpr (Zhou et al., 1997).
 
-## Tissue preparation
+### Tissue preparation
 
 Three tissue preparations were used: Late stage whole mount embryos, in which antibody can still penetrate cuticle; isolated first instar (L1) CNSs, in which the CNS is removed from other larval tissue so that antibody reach the CNS; and third instar (L3) fillet preparations, in which the neuromuscular tissue and cuticle are dissected away from other tissue and pinned open like a book, allowing for superb immuno-labeling and visualization of larval neuromuscular synapses. For all preparations, standard methods were used for fixation in fresh 3.7% formaldehyde (Sigma-Aldrich, St. Louis, MO) [49-51]. For calcium imaging, L3 larvae expressing MHC-CD8-GCamp6f-Sh construct were dissected in HL3 solution containing 1.5 mM Ca2+ and 25 mM Mg2+, brains removed, body walls rinsed fresh saline, and samples imaged.
 
-## Immunostaining
+### Immunostaining
 
 Tissue was blocked for an hour at room temperature or overnight at 4 °C in phosphate buffered saline with 2% Normal Donkey Serum (Jackson ImmunoResearch), followed by 2 hr at room temperature in primary antibodies, and 1 hr at room temperature in secondary antibodies. Primary antibodies include: rabbit anti-Eve (1:1000, Heckscher lab, see below), chicken anti-GFP (1:1000, Aves #GFP-1020), chicken anti-V5 (1:300, Bethyl #A190-118A), mouse anti-HA (1:100, BioLegend #901501), rat anti-FLAG (1:300 Novus #NBP1-06712), rat anti-Worniu (1:250 Abcam #ab196362), goat anti-HRP-Cy3 (1:300, Jackson ImmunoResearch 123-165-021) rat anti-Runt (1:300, John Rientz, UChicago), guinea pig anti-Hb (1:1000, John Rientz, UChicago), guinea pig anti-Kruppel (1:1000, John Rientz, UChicago), rat anti-Zfh2 (1:800 Chris Doe, UOregon), rabbit anti-Castor (1:1000 Chris Doe, UOregon), guinea pig anti-Dbx (1:500 Heather Broiher, Case Western) guinea pig anti-HB9 (1:1000 Heather Broiher, Case Western), rabbit anti-Smad3 (pMad) (1:300 Abcam #52903). The following monoclonal antibodies were obtained from the Developmental Studies Hybridoma Bank, created by the NICHD of the NIH and maintained at The University of Iowa, Department of Biology, Iowa City, IA: mouse anti-myosin (1:100, 3E8-3D3), mouse anti-Futsch (1:50 22C10) mouse anti-Brp (1:50, NC82), mouse anti-DLG (1:500, 4F3), mouse anti-GluRIIA (1:25, 8B4D2), mouse anti-En (1:5, 4D9). Secondary antibodies were from Jackson ImmunoResearch and were reconstituted according to manufacturer’s instructions and used at 1:400. 647-Phalliodin (1:600, Thermofisher A22287), Cy3-HRP (Jackson ImmunoResearch 123-025-021). Embryos were staged for imaging based on morphological criteria. Whole mount embryos and larval fillets were mounted in 90% Glycerol with 4% n-propyl gallate. Larvae brain preparations were mounted in DPX (Sigma-Aldrich, St. Louis, MO).
 
-## Antibody generation
+### Antibody generation
 
 An anti-Even-skipped antibody was generated by GenScript (Piscataway, NJ). Rabbits were inoculated three times with a bacterial fusion protein containing an N-terminal 6xHis tag fused with the first 129 amino acids of Eve (Met..Arg Gln Arg). The resulting antiserum was immunopurified using the bacterial fusion protein.
 
-## Single neuron labeling
+### Single neuron labeling
 
 Single U motor neurons were labeled by crossing a Multi-Color Flip Out fly line (Nern et al., 2015), harboring a heat-shock inducible FLP recombinase construct, to other lines of interest. For late stage embryo and L1 larval labeling, heat shock (37 °C for 10 min) was delivered to embryos aged 6–24 hr on apple juice caps. For L3 labeling, late stage embryos and 1st instar larvae were heat shocked and incubated at 25 °C. All CNS tissue was co-stained with Eve antibody to confirm the identity of single cell clones. In Control, U MNs were identified by their characteristic position in the CNS with U1 positioned most medial and U5 lateral.
 
-## Image acquisition
+### Image acquisition
 
 For fixed tissue images, data were acquired on a Zeiss 800 confocal microscope with 40X oil (NA 1.3) or 63 X oil (NA 1.4) objectives, or a Nikon C2+ confocal microscope with 40X (NA 1.25) or 60X (NA 1.49) objectives. For calcium imaging, data were acquired using a Zeiss 800 confocal microscope with a 40X dipping objective (NA 1.0) using 488 nm laser power with the pinhole entirely open. Images were acquired on a Zeiss 800 confocal microscope. Images were cropped in ImageJ (NIH) and assembled in Illustrator (Adobe).
 
-## Image analysis
+### Image analysis
 
 Cell body counting: We used NB7-1-GAL4 driving UAS-myristoylated-GFP to count the number of cells within the NB7-1 lineage during late stage (16-17) embryos. Embryos were co-stained with Worniu and Eve antibodies to confirm that only the NB7-1 lineage clone was labeled. To ensure the entire lineage was labeled by GFP, we scored only segments in which both an Eve(+) U1 neuron (earliest born neuron in the lineage) and NB7-1 was labeled. Since the NB7-1 lineage clone is a dense cluster of cells in x-y-z, we used a custom Fiji plug-in, that employs the Multi point tool to count cells.
 
@@ -190,6 +505,6 @@ Type 1b branch counting: We stained against HRP to detect the neuronal membrane 
 
 Calcium imaging: X-y-z-t stacks (Figure 6—figure supplement 1B–C) were converted into x-y time series images using the Maximum Intensity projection function (Fiji). X-y time series images were then registered using the Register Virtual Stack Slices plug-in (Fiji) to reduce movement artifacts. Time series images were projected into two different x-y single images using either the Maximum Intensity projection function (Fiji) or Average Intensity projection function (Fiji), and then the average intensity was subtracted from the maximum to get a change in fluorescence image (Figure 6—figure supplement 1D).
 
-## Statistics
+### Statistics
 
 Descriptive statistics: average and standard deviation are reported, except for behavior, where the average of average speed and standard error of the mean are reported. Every data point is plotted in figures. Test statistics: All data was assumed to follow a Gaussian distribution. If standard deviations were unmatched Welch’s correction was applied. For numerical data in two populations, we used un-paried, two-tailed t tests. For numerical data in more than two populations, we used ordinary one-way ANOVAs with Dunnett or Games-Howell correction for multiple comparison. Analysis done using GraphPad Prism.

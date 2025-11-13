@@ -34,7 +34,7 @@ In this study, we analyse the remodelling of cell-cell junction markers and pola
 
 ## Results
 
-## Atypical apico-basal polarity of the pIIa-pIIb interface following SOP division
+### Atypical apico-basal polarity of the pIIa-pIIb interface following SOP division
 
 As SOP undergoes a specific redistribution of polarity modules during division (Bellaïche et al., 2001), we started by investigating the remodelling of junctional complexes during cytokinesis and the resulting apico-basal polarity of the nascent pIIa-pIIb cell interface from which Notch is activated. We previously reported that formation of the novel adhesive pIIa-pIIb interface, visualised with DE-Cadherin-GFP (E-Cad), is assembled with similar kinetics to those of epidermal daughters (Founounou et al., 2013). Here, we live-monitored and compared the localisation of septate junction (SJ) markers during SOP versus epidermal cell cytokinesis. All fluorescent markers are inserted at the locus, giving rise to functional reporters expressed at physiological level.
 
@@ -42,9 +42,19 @@ SOPs and daughters were identified using the nuclear marker Histone 2B-IRFP (H2B
 
 We next analysed the localisation of the component of the subapical complex Crumbs (Crb) as well as two members of the Par complex: aPKC and Baz. Crb-GFP is detected faster at the new apical pIIa-pIIb interface than between epidermal daughters (Figure 1A–A’’, Figure 1—figure supplement 1C and E). Then, while Crb remains localised at the apical interface of epidermal cells (Figure 1—figure supplement 1C–C'), in pIIa and pIIb cells Crb-GFP localises primarily in apical cytoplasmic puncta (t13 ±4 min; Figure 1A–A’’ and Figure 1—figure supplement 1C'), at the expense of the pIIa-pIIb cell interface (t23 ±4 min). A similar behaviour was observed for aPKC-GFP, which is first localised at the new pIIa-pIIb interface (t7 ± 1 min; Figure 1B–B’’, and Figure 1—figure supplement 1D–E) and then redistributed in part to cytoplasmic puncta primarily in the pIIa cell. In striking contrast to aPKC and Crb, Baz-GFP is not relocalised in apical cytoplasmic puncta. Instead, Baz-GFP is localised both at the pIIa-pIIb interface and is also enriched at the posterior pole of the pIIa cell (Figure 1C–C’’ and t9 min), in agreement with previous reports (Le Borgne et al., 2002; Roegiers et al., 2001). In comparison, at the epidermal daughter cell interface, there is no enrichment of Baz-GFP (Figure 1—figure supplement 1F, t12 min, upper panels). Finally, Baz-GFP is localised in punctate structures at the lateral pIIa-pIIb interface (Figure 1C–C” middle panels and orthogonal views, see also Video 1). These punctate structures, which we will refer to as lateral interface clusters and are specific to the interface of SOP daughter cells, appear at the same time as the first apical Baz clusters, ~ 10 min after the onset of anaphase (Figure 1C–C’’).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/66659/elife-66659-fig1-v2.jpg)
+
+**Figure 1.:** (A–D’’) Time-lapse imaging of Crumbs (Crb)-GFP (A, A’, n = 22), atypical protein kinase C (aPKC)-GFP (B, B’, n = 10), Bazooka (Baz)-GFP (C, C’, n = 28), and NiGFP (D, D’, n = 25) during SOP cytokinesis. SOPs and their daughter cells are identified by the nuclear markers Histone 2B (H2B)-IRF670 (grey, A and B) and H2B-RFP (grey, D) or by the membrane marker growth-associated protein 43 (GAP43)-IR (magenta, C) expressed under the neur minimal driver. Top views are depicted in A, B, C, and D while the orthogonal views showing the new pIIa-pIIb interface (magenta arrowheads) are depicted in A’, B’, C’, and D’. White dashed lines at t26 (A) and t15 (B) delineate highlight where plot profiles presented in Figure 1—figure supplement 1C' and D' have been performed. Red and blue dots correspond to the anterior pIIb cell and the posterior pIIa cell, respectively. Yellow arrowheads point to NiGFP lateral clusters. Magenta dashed lines delineate the SOP daughters’ cell membrane. 3D schematic representations of the different proteins analysed are depicted in green in A’’, B’’, C’’, and D’’. Apical surface of the pIIb is in red while the apical surface of the pIIa is in blue. The pIIa-pIIb interface is outlined in magenta and the apical surface of neighbouring epidermal cells is outlined in dark grey. Time is in min. t0 corresponds to the onset of anaphase. Scale bars are 5 μm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/66659/elife-66659-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A–D) Time-lapse imaging of neuroglian (Nrg)-YFP (A, n = 11 SOPs; A’, n = 10 epidermal cells); discs-large (Dlg)-GFP (B, n = 9 SOPs; B’, n = 11 epidermal cells); Crumbs (Crb)-GFP (C, n = 11 epidermal cells), atypical protein kinase C (aPKC)-GFP (D, n = 7 epidermal cells) upon SOP or epidermal cell division. SOPs and their daughter cells are identified by Histone 2B (H2B)-IRF670 expressed under the neur minimal driver (grey). Top views are depicted in upper panels while the orthogonal views showing the new interface (magenta arrowheads for SOP daughters and yellow arrowheads for epidermal cells daughters) are depicted in lower panels. Red and blue dots correspond to pIIb and pIIa daughter cells, respectively. White dots correspond to the daughters of epidermal cells. (C’, D’) Plot profiles representing the fluorescence intensity of Crb-GFP (C’) and aPKC-GFP (D’). Plot profiles have been performed in the SOPs’ daughters along the white dashed lines depicted in Figure 1A and B for the SOPs and along the white dashed lined depicted in (C, D) for the epidermal cells’ daughters. (E) Histogram representing the time of appearance of the indicated GFP markers at the apical interface between epidermal daughters (grey bars) and SOP daughters (green bars). (F, G) Time-lapse imaging of Bazooka (Baz)-GFP (F, n = 31) and NiGFP (G, n = 12) upon epidermal cell division. Top views are depicted in upper panels while the orthogonal views showing the new interface (yellow arrowheads) are depicted in lower panels. White dots correspond to the daughters of epidermal cells. Time is in min. t0 corresponds to the onset of anaphase. Scale bars are 5 μm.
+
+![Video 1.](https://cdn.elifesciences.org/articles/66659/elife-66659-video1.mp4.jpg)
+
 Based on the distribution of Crb, aPKC, and Baz, we propose that apico-basal polarity is remodelled during SOP cytokinesis giving rise to a pIIa-pIIb interface with an atypical polarity. We next investigated the possible role of this polarity reshaping on Notch receptor localisation and activation.
 
-## Polarity remodelling of the SOP is concomitant with localisation of Notch at the pIIa-pIIb interface
+### Polarity remodelling of the SOP is concomitant with localisation of Notch at the pIIa-pIIb interface
 
 The localisation of Baz is reminiscent of that reported for Notch::GFPCRISPR (Bellec et al., 2018), a GFP-tagged version of Notch thereafter referred to as NiGFP. NiGFP transiently distributes at the apical and lateral pIIa-pIIb interface (Figure 1D–D”) prior to its proteolytic activation and subsequent targeting into the nucleus of the pIIa cell (Bellec et al., 2018; Bellec et al., 2021; Couturier et al., 2012; Trylinski et al., 2017). Like Baz, Notch is detected in punctate structures at the lateral interface of the pIIa-pIIb cells but not that of epidermal daughter cells (Figure 1D–D” and Figure 1—figure supplement 1G).
 
@@ -56,19 +66,31 @@ As epithelial cells are tightly packed, we first determined the origin of the No
 
 As Notch resembles Baz localisation at the pIIa-pIIb interface, we investigated their localisation by simultaneously co-imaging NiGFP with Ubi-Baz-mCherry (Bosveld et al., 2012). We first observed that Ubi-Baz-mCherry colocalises with NiGFP in punctae along the pIIa-pIIb apical interface as well as in lateral interface clusters (Figure 2C). The NiGFP/Baz lateral interface clusters do not correspond to spot AJs (SAJs) (McGill et al., 2009), as E-Cad and Baz do not colocalise at the lateral pIIa-pIIb interface (Figure 2D). We next monitored the dynamics of Ubi-Baz-mCherry and NiGFP clusters using high spatio-temporal resolution acquisitions. Kymographs of these acquisitions (Figure 2E and E’) show that, at the apical pIIa-pIIb interface and even more markedly at the lateral interface, the Ubi-Baz-mCherry and NiGFP tracks colocalise to a greater extent compared with the epidermal-epidermal interface (Figure 2E–E’’). This raises the possibility that Baz and Notch act together in space and time to contribute to pIIa/pIIb identities, which we next investigated.
 
-## Baz contributes to Notch localisation and activation after SOP division
+### Baz contributes to Notch localisation and activation after SOP division
 
 After having established that Ubi-Baz-mCherry/NiGFP apical and lateral interface clusters are specific to the pIIa-pIIb interface, we asked whether Notch and Baz are mutually required for cluster formation. To test if Notch is required for Baz localisation in clusters, we depleted Notch using RNAi or degradFP system (Figure 3A–D, Caussinus et al., 2011). Both approaches resulted in a reduction in Notch signal and Notch loss-of-function phenotypes, including an excess of SOP specification due to defective lateral inhibition, and pIIa to pIIb cell fate transformation (Figure 3B and C). Under these conditions, Baz still localises in clusters along the apico-basal pIIa-pIIb interface as in the wild type, indicating that Notch is dispensable for assembly of Baz clusters (Figure 3E–F’, yellow arrowheads).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/66659/elife-66659-fig3-v2.jpg)
 
-**Figure 3.:** loss-of-function does not impair the formation of Bazooka (Baz) clusters along the pIIb-pIIb-like interface.(A–C) SO lineage analysis using the SO marker Cut (green), the socket marker Su(H) (magenta) and the neuronal marker Elav (blue) in control lineage (A, n = 3 nota), upon silencing of Notch (B, n = 2 nota) or upon degradation of NiGFP with degradFP (C, n = 4 nota). Upon degradation of NiGFP by degradFP (C), 58.5% and 10% of Cut-positive cells are Elav or Su(H) positive, respectively (n = 1045 Cut-positive cells). In a control situation, only 25% of the Cut-positive cells are Elav or Su(H) positive. (D) Localisation of NiGFP (green) together with growth-associated protein 43 (GAP43)-IR (magenta) expressed under the neur minimal driver in control or upon NiGFP degradation by degradFP (n = 19). (E–F) Localisation of Baz-GFP (green in E) and Baz-mScarlet (magenta in F) together with GAP43-IR expressed under the neur minimal driver (grey). Yellow arrowheads point the clusters at the lateral interface. Red dots label pIIb ant pIIb-like cells. (E’–F’) Quantification of the number of Baz-positive lateral clusters at t20/21 in control (E’, n = 10; F’, n = 14) or upon Notch silencing (E’, n = 11) or upon NiGFP degradation by degradFP (F’, n = 16). ns, not statistically significant, p-value ≥ 0.05. Time is in min. t0 corresponds to the onset of anaphase. Scale bars are 5 μm.
+**Figure 3.:** (A–C) SO lineage analysis using the SO marker Cut (green), the socket marker Su(H) (magenta) and the neuronal marker Elav (blue) in control lineage (A, n = 3 nota), upon silencing of Notch (B, n = 2 nota) or upon degradation of NiGFP with degradFP (C, n = 4 nota). Upon degradation of NiGFP by degradFP (C), 58.5% and 10% of Cut-positive cells are Elav or Su(H) positive, respectively (n = 1045 Cut-positive cells). In a control situation, only 25% of the Cut-positive cells are Elav or Su(H) positive. (D) Localisation of NiGFP (green) together with growth-associated protein 43 (GAP43)-IR (magenta) expressed under the neur minimal driver in control or upon NiGFP degradation by degradFP (n = 19). (E–F) Localisation of Baz-GFP (green in E) and Baz-mScarlet (magenta in F) together with GAP43-IR expressed under the neur minimal driver (grey). Yellow arrowheads point the clusters at the lateral interface. Red dots label pIIb ant pIIb-like cells. (E’–F’) Quantification of the number of Baz-positive lateral clusters at t20/21 in control (E’, n = 10; F’, n = 14) or upon Notch silencing (E’, n = 11) or upon NiGFP degradation by degradFP (F’, n = 16). ns, not statistically significant, p-value ≥ 0.05. Time is in min. t0 corresponds to the onset of anaphase. Scale bars are 5 μm.
 
 We next test to see if, conversely, Notch localisation relies on Baz activity. Upon Baz silencing, the fluorescence intensity of the apical NiGFP clusters as well as the number and intensity of the lateral interface clusters decrease (Figure 4A–B’ and E–E’ and Figure 4—figure supplement 2E). A similar decrease was observed in bazEH747 clones, a genetic and protein null allele of Baz (Figure 4—figure supplement 1C,D'; Shahab et al., 2015). Interestingly, the decrease of apical and lateral interface cluster number and fluorescence intensity is accompanied by a partial defect of Notch activation upon silencing of Baz (Figure 4—figure supplement 2A, B'), as well as in bazEH747 homozygous mutant SO (Figure 4—figure supplement 1E, E'). Collectively, these results indicate that Baz, while not completely essential, is required for proper activation of Notch signalling in the pIIa cell.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/66659/elife-66659-fig4-v2.jpg)
+
+**Figure 4.:** (A–D’’) Time-lapse imaging of NiGFP (green) together with H2B-RFP expressed under the neur minimal driver (magenta) during sensory organ precursor (SOP) cytokinesis in control (A), upon silencing of Baz (B), Delta (C), or both (D). Yellow arrowheads point to NiGFP-positive lateral clusters. Red and blue dots correspond to the pIIb or pIIb-like cells and pIIa cell, respectively. 3D schematic representations of NiGFP localisation (green) along the interface in the different genetic contexts are depicted in A’, B’’, C’’, and D’’. Apical surface of pIIb and pIIb-like cells is in red while the apical surface of the pIIa cellis in blue. The interface between the SOP daughters is outlined in magenta (A’) or in red (B’’, C’’, and D’’) and the apical surface of neighbouring epidermal cells is outlined in dark grey. Quantification of NiGFP fluorescence intensity at the apical interface between SOP daughters are shown in B’, C’, and D’. Control (n = 11) is in green while baz RNAi (n = 11), Delta RNAi (n = 13), and baz, Delta RNAi (n = 14) are in magenta. ns, not statistically significant, p-value > 0.05 and **p-value ≤ 0.01. (E–E’) Quantification of the number (E) and fluorescence intensity (E’) of NiGFP-positive lateral clusters over time in control (green, n = 11 or upon silencing of Baz [n = 11], Delta [n = 13], or both [n = 14] RNAi in magenta). ns, not statistically significant, p-value ≥ 0.05, *p-value < 0.05 and ***p-value ≤ 0.001. Time is in min. t0 corresponds to the onset of anaphase. Scale bars are 5 μm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66659/elife-66659-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–A’) Bazooka (Baz) immunostaining using an anti-Nterm (green, A) or an anti-PDZ antibody (green, A’). bazEH747 mutant clones are identified by the loss of the nuclear marker nls RFP (magenta). Note that the nuclear staining seen with the anti-PDZ antibody in A’ is not specific. (B–B’) Time-lapse imaging of NiGFP (green) in control (B, n = 9) or bazEH747 mutant (B’, n = 10) during sensory organ precursor (SOP) cytokinesis. SOPs and their daughter cells are identified by Histone 2B (H2B)-IRF670 expressed under the neur minimal driver (grey). Yellow arrowheads point to NiGFP-positive lateral clusters. Red and blue dots correspond to the pIIb or pIIb-like cells and pIIa, respectively. (C) Quantification of NiGFP fluorescence intensity at the apical interface between SOP daughters in control (green, n = 9) and in bazEH747 mutant (magenta, n = 10). **p-value ≤ 0.01. (D–D’) Quantification of the number (D) and fluorescence intensity (D’) of NiGFP-positive lateral clusters over time in control (green, n = 8) or in bazEH747 mutant (magenta, n = 10). ns, not statistically significant, p-value > 0.05, *p-value ≤ 0.05 and ***p-value ≤ 0.001. (E–E’) SO lineage analysis using the SO marker Cut (magenta), the socket marker Su(H) (green in E’), or the neuronal marker Elav (green in E) in bazEH747 mutant lineage (n = 76 SOP). bazEH747 mutant clones are identified by the loss of the nuclear marker nls-RFP (blue). The percentage refers to the number of SO. Time is in min. t0 corresponds to the onset of anaphase. Scale bars are 5 μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66659/elife-66659-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A–D) SO lineage analysis using the SO marker Cut (blue), the socket marker Su(H) (red), and the neuronal marker Elav (green) in control (A, n = 4 nota), upon silencing of Baz (B, n = 4 nota), Delta (C, n = 2 nota), or both (D, n = 2 nota). (A’–D’) Pictures of adult nota of control (A’) or upon silencing of Baz (B’), Delta (C’), or both (D’), n ≥ 50 for each genotype. (E–F) Efficiency of Baz silencing. Imaging of NiGFP (green) and Baz (magenta) in control (E–F), upon silencing of Baz (E) or upon silencing of Baz and Delta (F). Sensory organ precursors (SOPs) and their daughter cells are identified by Histone 2B (H2B)-RFP expressed under the neur minimal driver (grey). White-dashed lines delineate the pnr-GAL4 domain. Yellow-dashed rectangles in E highlight the high magnifications depicted in panels on the right. Scale bars are 100 μm in A–D’ and 10 μm in E, F.
+
 Because Baz is deemed necessary but not sufficient per se for the assembly of Notch clusters, we hypothesised that Baz activity is required to define a threshold for Notch activation. In this model, baz loss-of-function would sensitise the ability of SOP daughters to signal. To test this prediction, we then asked which key regulators of Notch-dependent binary fate acquisition contribute to the assembly, dynamics, and/or signalling capacity of Baz/Notch clusters.
 
-## Assembly and stability of Baz-Notch clusters at pIIa-pIIb interface are modulated by Delta and Neur
+### Assembly and stability of Baz-Notch clusters at pIIa-pIIb interface are modulated by Delta and Neur
 
 We next investigated whether the activity of the Notch ligand Delta is required for the presence of Baz-Notch clusters at the pIIa-pIIb interface. A higher number of and brighter lateral interface clusters of NiGFP, accompanied with an increased transient NiGFP apical level, were observed upon silencing of Delta (Figure 4A, A’, C–C”, E and E’). However, it remains that silencing of Delta, as that of Baz alone, has a limited effect on binary cell fate acquisition, with a tufting phenotype and partial pIIa to pIIb transformations upon silencing of Delta and Baz, respectively (Figure 4—figure supplement 2A, C'). These low penetrant phenotypes prompted us to investigate the impact of simultaneous silencing of Baz and Delta. We found that their concomitant silencing leads to a strong neurogenic phenotype resulting a bald cuticle, that is, a penetrant loss of Notch function (Figure 4—figure supplement 2A, A' and D, D'). Strikingly, under this experimental situation, NiGFP was no longer stabilised in clusters at the apical or lateral interface (Figure 4D–E’), indicating that both Delta and Baz cooperate to stabilise Notch clusters at the pIIa-pIIb interface.
 
@@ -76,9 +98,9 @@ As a proxy for Delta dynamics, because Delta is hardly detected at the plasma me
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/66659/elife-66659-fig5-v2.jpg)
 
-**Figure 5.:** (A) Time-lapse imaging of Neur-GFP (green) together with Baz-Scarlet (red) during sensory organ precursor (SOP) cytokinesis in control (n = 8). Yellow dashed rectangles highlight the high magnifications depicted on the panels on the right. (B) Time-lapse imaging of NiGFP (green) together with Histone 2B (H2B)-RFP expressed under the neur minimal driver (grey) during SOP cytokinesis in neur (n = 13). Red and blue dots correspond to the pIIb or pIIb-like cells and pIIa, respectively. Clones of mutant cells are identified by the loss of the nuclear marker nls-RFP. (1F65B’) 3D schematic representations of NiGFP localisation (green) along the interface in neur. Apical surface of pIIb and pIIb-like cells is in red. The interface between the SOP daughters is outlined in red and the apical surface of neighbouring epidermal cells is outlined in dark grey. (1F65C) Quantification of NiGFP fluorescence intensity at the apical interface between SOP daughters in control (green, n = 9) and in neur mutant (magenta, n = 10). *p-value ≤ 0.05. (1F65C–C’’) Quantification of the number (C’) and fluorescence intensity (C’’) of NiGFP-positive lateral clusters over time in control (green, n = 9) or in neur mutant (magenta, n = 10). *p-value < 0.05, **p-value ≤ 0.01, and ***p-value ≤ 0.001. (1F65D) Localisation of Baz (green) in control (n = 7) neur mutant (n = 7). Clones of mutant cells are identified by the loss of the nuclear marker nls-RFP (magenta). (1F65D’) Localisation of Baz-mCherry (magenta) together with H2B-IRF670 (grey) expressed under the neur minimal driver in control (n = 23) and upon silencing of Neur (n = 15) during SOP cytokinesis. Pictures show the SOP daughter cells 10 min after the onset of anaphase. White arrowheads point the Baz-positive clusters at the lateral interface. Red and blue dots correspond to the pIIb or pIIb-like cells and pIIa, respectively. (D’’) Quantification of the number of Baz-positive clusters at the lateral interface in control (green, n = 23) or upon silencing of Neur (magenta, n = 15). ***p-value ≤ 0.001. (E) Kymographs generated from high-resolutions acquisition (every 2 s, starting at t12 min) and illustrating the colocalisation between NiGFP (green) and Baz-mCherry (magenta) at the interface of SOP daughters upon silencing of Neur (n = 11). On the kymographs, tracks correspond to the movement of the clusters. (E’) Histogram representing the NiGFP/Baz-mCherry colocalisation (Mander’s coefficient) in apical and lateral clusters based on kymographs in control (green, n = 10) and upon silencing of Neur (magenta, n = 6). Time is in min. t0 corresponds to the onset of anaphase. Scale bars are 5 and 1 μm for the kymographs.
+**Figure 5.:** (A) Time-lapse imaging of Neur-GFP (green) together with Baz-Scarlet (red) during sensory organ precursor (SOP) cytokinesis in control (n = 8). Yellow dashed rectangles highlight the high magnifications depicted on the panels on the right. (B) Time-lapse imaging of NiGFP (green) together with Histone 2B (H2B)-RFP expressed under the neur minimal driver (grey) during SOP cytokinesis in neur1F65 (n = 13). Red and blue dots correspond to the pIIb or pIIb-like cells and pIIa, respectively. Clones of mutant cells are identified by the loss of the nuclear marker nls-RFP. (B’) 3D schematic representations of NiGFP localisation (green) along the interface in neur1F65. Apical surface of pIIb and pIIb-like cells is in red. The interface between the SOP daughters is outlined in red and the apical surface of neighbouring epidermal cells is outlined in dark grey. (C) Quantification of NiGFP fluorescence intensity at the apical interface between SOP daughters in control (green, n = 9) and in neur1F65 mutant (magenta, n = 10). *p-value ≤ 0.05. (C–C’’) Quantification of the number (C’) and fluorescence intensity (C’’) of NiGFP-positive lateral clusters over time in control (green, n = 9) or in neur1F65 mutant (magenta, n = 10). *p-value < 0.05, **p-value ≤ 0.01, and ***p-value ≤ 0.001. (D) Localisation of Baz (green) in control (n = 7) neur1F65 mutant (n = 7). Clones of mutant cells are identified by the loss of the nuclear marker nls-RFP (magenta). (D’) Localisation of Baz-mCherry (magenta) together with H2B-IRF670 (grey) expressed under the neur minimal driver in control (n = 23) and upon silencing of Neur (n = 15) during SOP cytokinesis. Pictures show the SOP daughter cells 10 min after the onset of anaphase. White arrowheads point the Baz-positive clusters at the lateral interface. Red and blue dots correspond to the pIIb or pIIb-like cells and pIIa, respectively. (D’’) Quantification of the number of Baz-positive clusters at the lateral interface in control (green, n = 23) or upon silencing of Neur (magenta, n = 15). ***p-value ≤ 0.001. (E) Kymographs generated from high-resolutions acquisition (every 2 s, starting at t12 min) and illustrating the colocalisation between NiGFP (green) and Baz-mCherry (magenta) at the interface of SOP daughters upon silencing of Neur (n = 11). On the kymographs, tracks correspond to the movement of the clusters. (E’) Histogram representing the NiGFP/Baz-mCherry colocalisation (Mander’s coefficient) in apical and lateral clusters based on kymographs in control (green, n = 10) and upon silencing of Neur (magenta, n = 6). Time is in min. t0 corresponds to the onset of anaphase. Scale bars are 5 and 1 μm for the kymographs.
 
-## Numb negatively regulates the Baz-Notch lateral interface clusters
+### Numb negatively regulates the Baz-Notch lateral interface clusters
 
 To further investigate the minimal requirements for the occurrence of Baz-Notch clusters at the pIIa-pIIb interface, we next analysed the function of Numb. In contrast to Neur, Numb does not colocalise with Baz-Scarlet-positive clusters at the pIIa-pIIb interface (Figure 6A). Inhibition of Numb, which results in a gain-of-function Notch phenotype (Guo et al., 1996), is accompanied by increased Notch transient signals at the apical pIIa-pIIa-like interface (Figure 6B–C), and a higher number of brighter clusters at the lateral interface of NiGFP (Figure 6B, B’, C’ and C’’). These data are consistent with those previously published (Couturier et al., 2012; Trylinski et al., 2017), and further show that the accumulation of lateral Notch clusters persists until at least 36 min after anaphase onset. Upon silencing of Numb, Baz localises in lateral interface clusters at the pIIa-pIIa like interface (Figure 6D, D’ and E), where it colocalises with NiGFP, as revealed by the dynamics of the Baz-Notch clusters at high spatio-temporal resolution (Figure 6F).
 
@@ -88,15 +110,23 @@ To further investigate the minimal requirements for the occurrence of Baz-Notch 
 
 Together, these data indicate that Numb decreases the number of Notch-Baz clusters. As Numb is present and regulates Notch endosomal trafficking in the anterior pIIb cell (Cotton et al., 2013; Couturier et al., 2013), our data suggest that Notch-Baz clusters are assembled in the anterior cell upon loss of Numb and contribute to Notch activation in this cell. This model further suggests that Numb acts antagonistically to Baz to promote Notch clusters assembly and/or stability. To test this prediction, we overexpressed Numb in the SOP and daughter cells and observed that NiGFP is no longer detected along the pIIb-pIIb-like interface, either apically or laterally (Figure 6D’’). While Baz localises uniformly at the apical SOP daughter cell interface, lateral interface clusters are barely detectable (t14, Figure 6D’’, bottom panels, and E). These data raise the possibility that Numb and Baz act antagonistically, as has been proposed in vertebrates (Nishimura and Kaibuchi, 2007; Sun et al., 2016). As Numb interacts with the NPAF motif of Spdo to control Notch/Spdo endosomal trafficking, the above data call into question the relationship between Baz and Spdo, which we studied next.
 
-## Spdo is required for Baz-Notch cluster formation
+### Spdo is required for Baz-Notch cluster formation
 
 On live specimens, Baz-Scarlet and Spdo-GFP (Couturier et al., 2013) colocalise both at the apical pIIa-pIIb interface and in lateral clusters (Figure 7A, t21). Compared with the control situation, Baz-positive lateral clusters are no longer detectable upon loss of Spdo (Figure 7B and Figure 7—figure supplement 1C). In agreement with the findings of Couturier et al., 2012, loss of Spdo also results in an increase of NiGFP signal at the apical interface of SOP daughters and the appearance of a continuous and nebulous staining of NiGFP instead of the characteristic, well-defined, lateral clusters observed at the pIIa-pIIb interface of controls SO (Figure 7C and D and Figure 7—figure supplement 1A-A’,C-C’). We also noticed that NiGFP persists at the apical interface compared with the control, and that NiGFP is detected apically, in the cytoplasm or at the apical plasma membrane, indicative of higher levels of Notch upon loss of Spdo (Figure 7C,D,t15 and t30, upper panels). Fluorescence recovery after photobleaching (FRAP) analyses revealed that the NiGFP signal at the apical interface is recovered 1.9 times faster, with a mobile fraction 1.6 times higher than in the control situation (Figure 7E and E’ and Figure 7—figure supplement 1B). The changes in NiGFP distribution and time residence at the pIIb-pIIb-like interface are accompanied by a loss of colocalisation of NiGFP and Baz-mCherry at the apical and lateral pIIb-pIIb-like interface upon Spdo silencing (Figure 7—figure supplement 1C,D'). We first concluded that Spdo co-clusters with Baz and Notch at the pIIa-pIIb interface and, second, that the activity of Spdo is required for the clustering of Baz/Notch along the pIIa-pIIb interface to promote Notch activation.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/66659/elife-66659-fig7-v2.jpg)
+
+**Figure 7.:** (A) Localisation of Sanpodo (Spdo)-GFP (green) together with Baz-Scarlet (magenta) at t21 during sensory organ precursor (SOP) cytokinesis in control (n = 10). Yellow-dashed rectangles highlight the high magnifications depicted on the panels on the right. Yellow arrowheads point to lateral clusters positive for Baz and Spdo. (B) Localisation of Baz (anti-N term, grey) together with the SO marker Cut (green) in control (n = 20 SOP ) or spdoG104 mutant clones (n = 25 SOP). Yellow arrowheads point to Baz-positive clusters at the lateral interface. (C) Time-lapse imaging of NiGFP (green) together with Histone 2B (H2B)-IR (grey) expressed under the neur minimal driver (grey) during SOP cytokinesis in control (n = 14) or in spdoG104 mutant (n = 10). Yellow arrowheads point to NiGFP-positive clusters at the lateral interface while the yellow arrows point to the NiGFP continuous signal along the lateral interface of SOP daughters. spdoG104 mutant clones are identified by the loss of the nuclear marker nls RFP (magenta). Red and blue dots correspond to the pIIb or pIIb-like cells and pIIa cells, respectively. (D) Quantification of NiGFP fluorescence intensity at the apical interface between SOP daughters in control (green, n = 14) and spdoG104 mutant (magenta, n = 10). **p-value ≤ 0.01 and ***p-value ≤ 0.001. (E–E’) Quantification of the t1/2 (E) and the mobile fraction (E’) of NiGFP following fluorescence recovery after photobleaching (FRAP) at the apical interface of SOP daughters in control (black, n = 10) or upon silencing of Spdo (red, n = 11) at t20. **p-value ≤ 0.01 and ***p-value ≤ 0.001. Time is in min. t0 corresponds to the onset of anaphase. Scale bars are 5 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/66659/elife-66659-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A-A’) Localisation of NiGFP (green) together with H2B-IRF670 and growth-associated protein 43 (GAP43) expressed under the neur minimal driver (magenta) at t21 during sensory organ precursor (SOP) cytokinesis upon silencing of Sanpodo (Spdo) (n = 2). Orthogonal views of the interface between SOP daughters are depicted in A’. SOP daughters are highlighted by yellow dashed lines. (B) Time-lapse imaging of NiGFP and the corresponding kymograph after photobleaching at the apical interface between the SOP daughters upon silencing of Spdo (n = 11). The yellow dashed rectangle delineates the photobleached area. (C) Time-lapse imaging of NiGFP (green) together with Baz-Scarlet (magenta) during SOP cytokinesis upon silencing of Spdo (n = 10). Red dots correspond to pIIb and pIIb-like cells. (D–D’) Kymographs generated from high-resolution acquisitions (every 2 s) and illustrating the colocalisation between NiGFP (green) and Baz-mCherry (magenta) at the interface of SOP daughters in control (D, n = 14) and upon silencing of Spdo (D’, n = 7). On the kymographs, tracks correspond to the movement of the clusters. Time is in min except in B where the time is in s. t0 corresponds to the onset of anaphase. Scale bars are 5 and 1 μm for kymographs in B.
 
 ## Discussion
 
 In this study, we have characterised the remodelling of apico-basal cell polarity occurring during SOP division leading to a specific pIIa-pIIb Notch signalling interface. We report that Baz, but not aPKC, co-partitions with Notch, Spdo, and Neur in apical and lateral clusters. The assembly of these clusters requires Baz and Spdo activities, and their number and dynamics are regulated by Delta, Neur and Numb activities. In the absence of Numb, the number of clusters increases, while overexpression of Numb results in their disappearance, suggesting that Numb and Baz act antagonistically. We propose a model according to which Notch/Baz/Spdo/Neur clusters represent the Notch signalling units at the pIIa-pIIb interface.
 
-## The pIIa-pIIb interface possesses an atypical apico-basal polarity compared with epidermal cells
+### The pIIa-pIIb interface possesses an atypical apico-basal polarity compared with epidermal cells
 
 Previous pioneer work has determined that in dividing SOPs, Par3/Par6/aPKC and Pins/Dlg polarity modules are specifically relocated from the apico-basal cortex into the posterior-anterior cortex, respectively (Bellaïche et al., 2001; Roegiers et al., 2001). Assembly of the Baz/Par6/aPKC complex is initiated by the phosphorylation of Par6 by the mitotic kinase AurA (Wirtz-Peitz et al., 2008). Here, we report that during cytokinesis coinciding with the presumptive proteolytic degradation of AurA, the Baz /Par6/aPKC complex disassembles with aPKC redistributing like Crb in apical intracellular compartments. This is at the expense of its regular plasma membrane localisation observed in epidermal cells. In contrast to aPKC, Baz redistributes apically at the posterior pole of the pIIa cell and in the form of clusters at the apical and lateral pIIa-pIIb interface. Such lateral clusters of Baz are only found at the pIIa-pIIb interface, indicating that the SOP-specific remodelling polarity that takes place at SOP mitosis is instrumental in formation of clusters. Baz has been reported to be excluded from the lateral plasma membrane following Par1-mediated phosphorylation (Benton and St Johnston, 2003). In addition, phosphorylation of Baz by Par1 activity is antagonised by type 2 A protein phosphatase (PP2A) activity (Krahn et al., 2009), and silencing of tws, the regulatory B subunit of PP2A, results in Notch gain-of-function phenotype (Shiomi et al., 1994). It is as yet unclear how SOP polarity remodelling leads to Baz cluster assembly and lateral localisation. The fact that Spdo and Notch, two transmembrane proteins, colocalise with Baz in lateral clusters (both on fixed and live specimens) argues against a model according to which N-terminal oligomerisation domain of Baz could drive phase separation of Baz (Liu et al., 2020) at this location.
 
@@ -106,33 +136,358 @@ In addition to organising membrane nanoscopic clusters of Cadherin and Catenin, 
 
 In any case, while Baz activity is required for efficient Notch cluster assembly, only a limited number of cell fate transformations are observed upon loss of Baz. We propose a model whereby Baz activity is required to define a threshold for Notch activation and Baz loss-of-function sensitises the ability of SOP daughters to signal. In favour of this model, the concomitant silencing of Delta and Baz, which individually induce a low rate of cell fate transformations, leads to a complete Notch loss-of-function phenotype. Whether Baz and Delta act in the same signalling units (see below) or not remains to be determined. An alternative possibility is that Baz functions together with Serrate, the second Notch ligand. Indeed, silencing of Delta leads to a strong lateral inhibition defect, but the function of Dl during asymmetric cell division can be substituted almost completely by Ser, explaining the tufting phenotype upon Delta silencing (Zeng et al., 1998). If Baz regulates Serrate activity, then simultaneous silencing of Baz and Delta would lead to a complete loss of ligand activity, hence Notch loss-of-function. It is worth noting that in the Drosophila optic lobe, Notch, Serrate, and Canoe have been shown to form a complex (Perez-Gomez et al., 2013), and Baz, by virtue of it regulating Canoe localisation (Choi et al., 2013), may regulate the distribution and/or activity of such a complex. Whatever the mechanism of action, Baz by regulating the size and number of clusters at the pIIa-pIIb interface appears to be important for proper Notch signalling during SOP cytokinesis.
 
-## Do the Notch/Baz/Spdo clusters constitute signalling units?
+### Do the Notch/Baz/Spdo clusters constitute signalling units?
 
 The clusters present at the pIIa-pIIb interface are positive for Notch, Spdo, Baz, and Neur. While Delta is also detected along the pIIa-pIIb interface on fixed specimens (Bellec et al., 2021), DlGFP was reported to be barely detectable in living pupae unless Neur-mediated Delta endocytosis was blocked (Trylinski et al., 2017). This led to the proposal that newly synthesised Delta reaches the plasma membrane and signals from there thus exhibiting a rapid turnover/endocytosis. An implication of these findings is that the clusters are present on both sides of the pIIa-pIIb interface as a kind of snap button with Delta/Neur in the pIIb cell interacting in trans with Notch/Spdo in the pIIa cell. Based on the role of Numb in Notch/Spdo trafficking in the pIIb cell, the fact that Baz is enriched in the posterior pIIa cell at cytokinesis and the proposed antagonism between Numb and Baz, we anticipate that Baz is located primarily in clusters on the pIIa cell side. As the time residence of Delta, Notch, and Baz in the cluster is very short (on the time scale of minutes), it implies that Delta can interact with Notch in trans, and be internalised in a Neur-dependent manner to promote the S2 cleavage of Notch in the minute time scale. We propose that Baz-mediated clustering might be a means to concentrate Notch/Spdo locally and increase its ability to interact with Delta.
 
-## Site of NICD production
+### Site of NICD production
 
 Our study brings further support to the notion of a tight coupling between cell polarity and Notch signalling. Photobleaching and phototracking experiments during SOP cytokinesis reveal that among the two pools of Notch, the basolateral pool located basally to the midbody is the main contributor (Trylinski et al., 2017). While the apical pool of Notch also contributes to NICD production, it is as yet unclear whether NICD is directly produced from the apical pIIa-pIIb interface or if a basolateral relocation is a prerequisite (Bellec et al., 2021; Couturier et al., 2012; Trylinski et al., 2017). According to that model, NICD production would primarily occur at the lateral pIIa-pIIb interface. Our results, which show that the composition of the presumptive signalling clusters are similar at the apical and basolateral pIIa-pIIb interface, may indicate that NICD could be directly produced from both sites. The remodelling of cell polarity taking place during SOP cytokinesis could thus enable the formation of equally potent signalling clusters along the pIIa-pIIb interface, favouring private pIIa-pIIb cell-cell communication. The amounts and half-life of such signalling clusters could account for the respective contributions of basal versus apical pools in producing NICD.
 
-## Numb and Baz act oppositely on Notch/Spdo cluster assembly
+### Numb and Baz act oppositely on Notch/Spdo cluster assembly
 
 While the loss of Neur and loss of Numb both result to an increase in the number and intensity of Baz/Notch/Spdo clusters, the causes are different. Upon a lack of Neur, we anticipate that Delta is bound to Notch in trans. In the absence of Neur-mediated endocytosis of Delta that exerts pulling forces on Notch, the clusters are stabilised/not consumed. Numb interacts physically with Spdo to control the subcellular localisation of the Notch/Spdo complex. In the control situation, Numb is not detected in the Notch/Spdo clusters at the pIIa-pIIb interface, suggesting that Notch and Spdo clusters at the interface are predominantly on the pIIa side. Loss of Numb that leads to recycling of Notch/Spdo towards the plasma membrane of the pIIb cell results in an increase in the number and intensity of Notch/Spdo/Baz clusters at the pIIa-pIIb interface. By contrast, overexpression of Numb causes the disappearance of Notch/Spdo clusters at the pIIa-pIIb interface.
 
 By analogy with vertebrates, we anticipate that Numb, due to its ability to bind to Baz (Nishimura and Kaibuchi, 2007), is somehow competing with Baz for access to Notch/Sdpo, and therefore formation of Notch/Spdo/Baz signalling clusters. Based on the fact that loss of Spdo leads to a stronger reduction in Baz/Notch cluster assembly, one prediction to be tested is that Baz interacts with Spdo/Notch.
 
-## Concluding remarks
+### Concluding remarks
 
 Due to the conservation of intra-lineage communication, it would be interesting to investigate whether a cell-cell communication interface exhibits an atypical apico-basal polarity and if Par3-dependent clustering of Notch also regulates private communication between daughters in vertebrates.
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>w1118</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>BDSC: 3,605FLYB: FBal0018186;RRID:BDSC_3605</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Nrg::YFPP{PTT-GA}NrgG00305</td>
+      <td>Kyoto Stock Center Morin et al., 2001</td>
+      <td>FLYB: FBgn0264975;RRID:KSC_110658</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>neur-H2B::IR</td>
+      <td>This study</td>
+      <td></td>
+      <td>Two lines generated (IId and IIId)</td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Crb::GFP (A)</td>
+      <td>Huang et al., 2009</td>
+      <td>FLYB: FBgn0259685</td>
+      <td>Gift from Dr Y Hong</td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>aPKC::GFP</td>
+      <td>Besson et al., 2015</td>
+      <td>FLYB: FBgn0261854</td>
+      <td>Kind gift from Dr F Schweisguth</td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Baz::GFPP{PTT-GC}bazCC01941</td>
+      <td>Bloomington Drosophila Stock Center Buszczak et al., 2007</td>
+      <td>FLYB:FBgn0000163;RRID:BDSC_51572</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Baz::mScarlet</td>
+      <td>kind gift from Dr J Januschke</td>
+      <td>FLYB:FBgn0000163</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>neur-GAP43::IR</td>
+      <td>This study</td>
+      <td></td>
+      <td>Two lines generated (IId and IIId)</td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Dlg::GFP</td>
+      <td>Bloomington Drosophila Stock Center Buszczak et al., 2007</td>
+      <td>FLYB: FBgn0001624;RRID: BDSC_ 50859</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Ubi-p63E-Baz-mCherry (II) and (III)</td>
+      <td>Bosveld et al., 2012</td>
+      <td>Transgenic lines;FLYB:FBgn0000163</td>
+      <td>Kind gift from Dr Y Bellaiche</td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>NiGFP</td>
+      <td>Bellec et al., 2018</td>
+      <td>FLYB: FBgn0004647</td>
+      <td>CRISPR line</td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>neur-H2B-RFP</td>
+      <td>Gomes et al., 2009</td>
+      <td></td>
+      <td>Kind gift from Dr F Schweisguth</td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>bazEH747, FRT19A/Y</td>
+      <td>Kind gift of A Wodarz</td>
+      <td>FLYB:FBgn0000163</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Ubi-mRFP.nls, w*, hsFLP, FRT19A</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_31418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>UAS-Baz dsRNA (III)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_35002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>UAS-Notch dsRNA (III)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>FLYB: FBgn0004647; RRID:BDSC_28981</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>UAS-Dl dsRNA (III)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>FLYB: FBgn0000463; RRID:BDSC_28032</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>UAS-Nslmb-vhhGFP4 (II)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_38422</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>UAS-Nslmb-vhhGFP4 (III)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_38421</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>pnr-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>FLYB: FBgn0003117; RRID:BDSC_3039</td>
+      <td>Calleja et al., 1996</td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>UAS-Nb dsRNA (III)</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>FLYB: FBgn0002973; RRID:BDSC_35045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>FRT82B, neur1F65</td>
+      <td>Yeh et al., 2000</td>
+      <td>FLYB: FBgn0002932</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>FRT82B, nls-RFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_30555</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>hsFLP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_6938</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>FRT82B, spdoG104</td>
+      <td>O’Connor-Giles and Skeath, 2003</td>
+      <td>FLYB: FBgn0260440</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Spdoi-GFP (II)</td>
+      <td>Couturier et al., 2013</td>
+      <td>FLYB: FBgn0260440</td>
+      <td>BAC Rescue, Kind gift from Dr F Schweisguth</td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>UAS-Spdo dsRNA (II)</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>FLYB: FBgn0260440; RRID:VDRC_104092</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>UAS-Neur dsRNA</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>FLYB: FBgn0002932; RRID:BDSC_26023</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>y, w, PB[y + attP-3B Neur::GFP 22A3]</td>
+      <td>Perez-Mockus et al., 2017</td>
+      <td>FLYB: FBgn0002932</td>
+      <td>BAC Rescue, Kind gift from Dr F Schweisguth</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Elav(rat monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID:Rat-Elav-7E8A10</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cut(mouse monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>RRID:2B10</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Su(H)(goat polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc15813</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Baz N-term(rabbit polyclonal)</td>
+      <td>Wodarz et al., 1999</td>
+      <td></td>
+      <td>IF (1:1000),Kind gift from Dr A Wodarz</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Baz-PDZ (guinea pig)</td>
+      <td>Shahab et al., 2015</td>
+      <td></td>
+      <td>IF (1:1000),Kind gift from Dr A Wodarz</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP(goat polyclonal)</td>
+      <td>AbCam</td>
+      <td>Cat# Ab5450</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy2-, Cy3- and Cy5-coupled secondary antibodies(donkey anti-goat)</td>
+      <td>Jackson Laboratories</td>
+      <td>705-225-147, 705-165-147, and 705-175-147, respectively</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy2-, Cy3- and Cy5-coupled secondary antibodies(goat anti-rabbit)</td>
+      <td>Jackson Laboratories</td>
+      <td>111-225-144, 111-165-144, and 111-175-144, respectively</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy2-, Cy3- and Cy5-coupled secondary antibodies(donkey anti-mouse min cross-react with rat)</td>
+      <td>Jackson Laboratories</td>
+      <td>715-225-151, 715-165-151, and 715-175-151, respectively</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Cy2-, Cy3- and Cy5-coupled secondary antibodies(donkey anti-rat min cross-react with mouse)</td>
+      <td>Jackson Laboratories</td>
+      <td>712-225-153, 712-165-153, and 712-175-153, respectively</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ/FIJI</td>
+      <td>Open source Java image processing program</td>
+      <td></td>
+      <td>https://imagej.nih.gov/ij/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Countdots macro for FIJI</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel</td>
+      <td>Microsoft Office 2013</td>
+      <td>RRID:Microsoft Excel 2013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe Systems</td>
+      <td>RRID: Adobe Illustrator CS3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>RRID: GrpahpadPrism</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 For all kinds of requests regarding the material and methods used in this study, please refer to the lead contact, Roland Le Borgne (roland.leborgne@univ-rennes1.fr).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## Drosophila stocks, genetics, and CRISPR-mediated homologous recombination
+#### Drosophila stocks, genetics, and CRISPR-mediated homologous recombination
 
 Drosophila melanogaster strains were grown and crossed at 25°C.
 
@@ -142,42 +497,42 @@ The pnr-GAL4 driver was used to drive the expression of UAS-Notch dsRNA; UAS-Nsl
 
 CRISPR-mediated homologous recombination was used to tag the endogenous Baz gene with His-Tag-mScarlet by inDroso (Rennes, France). The Baz-mScarlet resulted from insertion of His-Tag-mScarlet followed by an STLE linker at the amino acid position 40 of Baz (isoforms RA and RC). The gRNA was selected using the Optimal Target Finder tool (http://targetfinder.flycrispr.neuro.brown.edu/), 5’ AAAGCCAAACGCAGGTGAAAAGG, cutting in the second intron (position X:17178549). Complete strategy available upon request to the lead contact.
 
-## Drosophila genotypes
+### Drosophila genotypes
 
-## Method details
+### Method details
 
-## Immunofluorescence
+#### Immunofluorescence
 
 Pupae aged around 17 hr after puparium formation (APF) were dissected in phosphate-buffered saline (PBS, pH 7.4) and fixed for 15 min in 4% paraformaldehyde at room temperature. They were then permeabilised performing three washes of 3 min in PBS + 0.1% Triton X-100 (PBT) and incubated with the primary antibodies (in PBT) for 2 hr at room temperature or overnight at 4°C. After three washes of 5 min in PBT, pupae were incubated for 1 hr with the secondary antibodies (in PBT). Samples were then washed three times in PBT and once in PBS and finally mounted in 0.5% N-propylgallate, 90% glycerol in PBS 1×. After at least 45 min in the mounting medium, images were acquired on an LSM TCS SPE and processed using FIJI.
 
-## Live-imaging and image analyses
+#### Live-imaging and image analyses
 
 Pupae aged around 16h30 APF were prepared for imaging as described previously (Daniel et al., 2018). Briefly, the pupa is positioned between a glass slide and a coverslip coated with a thin layer of Voltalef, the coverslip being supported anteriorly and posteriorly by columns made of four and five little coverslips. Images were acquired at 25°C on an LSM 880 AiryScan or LSM TCS SPE and processed using FIJI.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Statistical tests
+#### Statistical tests
 
 Statistical differences between the two conditions were evaluated by an F test followed by a Student’s t test using Microsoft Excel. Statistical significances were represented as follows: not significant (ns) p-value ≥ 0.05; *p-value ≤ 0.05; **p-value ≤ 0.01; ***p-value ≤ 0.001.
 
-## Fluorescent level measurement and analysis
+#### Fluorescent level measurement and analysis
 
 The NiGFP apical fluorescence level at the new pIIa/pIIb interface was measured using FIJI (version 1.52) on a z-projection summing three slices separated by 0.5 µm. A line of 30 pixels width was traced across the pIIa/pIIb interface to generate a kymograph on which another line of 20 pixels width was drawn all along the time. A plot profile then gave us the fluorescent levels (in a.u.) for each time point. These values were then corrected for the bleaching over time. To do this, on the same z-projection, we measured the fluorescent level of three different areas around the SOP, calculated the apical mean fluorescence, and determined a bleaching correction factor (t0 apical mean fluorescence/ti apical mean fluorescence) for each time point that we applied to the previous measurements at the new pIIa/pIIb interface. Finally, we normalised to the t0 apical mean fluorescence.
 
-## Measurement of the colocalisation rate
+#### Measurement of the colocalisation rate
 
 In order to evaluate the degree of similarity of Baz and Notch cluster dynamics, we generated kymographs from high time resolution (Δt = 2 s) acquisitions at the pIIa/pIIb new interface compared with epidermal/epidermal interfaces apically and laterally (only at pIIa/pIIb interface). We then applied the coloc two plugin from FIJI on the kymographs using the following settings: threshold regression = Costes, PSF = 4.0. We chose to use the Mander’s coefficient (Manders et al., 1993) above autothreshold values to evaluate the colocalisation between NiGFP and Ubi-Baz-mCherry tracks observed. Mander’s coefficients represent respectively the percentage of total signal from NiGFP channel which overlaps with Ubi-Baz-mCherry signal and reciprocally the Ubi-Baz-mCherry signal which overlaps with the NiGFP signal.
 
-## Molecular biology
+### Molecular biology
 
 To generate Neur-H2B-iRFP670 and Neur-iRFP670-GAP43 transgenic strains, we first ordered to Genewiz (Genewiz Germany Gmbh, Leipzig, Germany) a pUC57-Amp plasmids containing H2B-iRFP670 or iRFP670-GAP43 sequences flanked by StuI and SpeI restriction sites respectively on 5’- and 3’-ends. For this, we used the following sequences of H2B (Bellec et al., 2021), GAP43 from Mavrakis et al., 2009, iRFP670 (genbank KC991142) from Shcherbakova and Verkhusha, 2013, and pHStinger-NeurGFP from Aerts et al., 2010; Barolo et al., 2000. Details of cloning will be provided upon request.
 
 The H2B-iRFP670 and GAP43-iRFP670 constructions were then sent to Bestgene to generate the corresponding transgenic lines with insertion at site attP40 or attP2.
 
-## Cluster counting
+### Cluster counting
 
 To count the number of NiGFP clusters between the pIIa and pIIb nuclei, we developed a macro working with FIJI (script available upon request). Briefly: first, a threshold is applied to both pIIa and pIIb nuclei allowing for the delimitation of the nuclei inside regions of interest (ROIs). Then an ovoid mask including both nuclei ROIs is generated. From this mask, the initial nuclei ROIs are subtracted to keep only an ROI between pIIa and pIIb nuclei. Inside this ROI, the autothreshold ‘RenyiEntropy’ is applied and finally the clusters are detected using an ‘Analyse particles’. At the end, the macro refers to the size and NiGFP fluorescence intensity of each cluster detected. Note that two erroneous situations which avoided cluster recognition by the Macro were excluded de facto from the analysis: (a) the nuclei are too close to each other and (b) the nuclei are not positioned face to face: one is positioned above the other on the z axis. As the lateral clusters at the new pIIa/pIIb interface present characteristic size and intensity and other kinds of clusters can be detected with the NiGFP probe, we looked for a way to keep only the ones we are interested in. To do this, we observed a few samples of different genotypes and selected by eye the clusters with the right size and fluorescent intensity. We then determined size and fluorescent intensity thresholds. For size, the thresholds were constant for the different samples and we fixed the minimal cluster area at 0.03 µm2 and the maximal cluster area at 0.2 µm2. As for the minimal intensity threshold, we found a linear correlation with the apical mean fluorescence: intensity threshold = 0.2654× apical mean fluorescence +227.6. We applied these two thresholds successively to the images analysed.
 
-## Baz quantification
+### Baz quantification
 
 To quantify the intensity of Baz signal present at the apical and lateral clusters at the pIIa-pIIb interface (Figure 6), we sum the fluorescence signal of three apical planes at the level of AJ and between –3 and –6 µm below the apical interface, respectively. The mean fluorescence intensity within an ROI of 1 µm × 3 µm (apical interface) or 1 µm × 4 µm (lateral interface) were measured and normalised to neighbouring epidermal cell interfaces’ mean fluorescence intensity.

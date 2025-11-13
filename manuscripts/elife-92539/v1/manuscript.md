@@ -9,10 +9,10 @@
 
 ### Affiliations
 
-1. https://ror.org/02y72wh86 Department of Psychology, Queen’s University Kingston Canada
-2. https://ror.org/03dbr7087 Department of Psychology, University of Toronto Scarborough Toronto Canada
-3. https://ror.org/03dbr7087 Department of Marketing, Rotman School of Management, University of Toronto Toronto Canada
-4. https://ror.org/02y72wh86 Center for Neuroscience Studies, Queen’s University Kingston Canada
+1. Department of Psychology, Queen’s University Kingston Canada ([ROR:02y72wh86](https://ror.org/02y72wh86))
+2. Department of Psychology, University of Toronto Scarborough Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+3. Department of Marketing, Rotman School of Management, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+4. Center for Neuroscience Studies, Queen’s University Kingston Canada ([ROR:02y72wh86](https://ror.org/02y72wh86))
 
 † Corresponding author
 
@@ -24,7 +24,11 @@ People selectively help others based on perceptions of their merit or need. Here
 
 Psychologists and economists have long sought to explain when and why people help. While people are generally altruistic, they also show selectivity, being more likely to assist those in need (Batson et al., 1995; Batson et al., 2007; Cappelen et al., 2013; Molouki and Bartels, 2020; Batson et al., 1986) and to withhold aid from those perceived as undeserving (Hare et al., 2010; Tusche et al., 2016; Fong, 2007; Eckel and Grossman, 1996; Van Doesum et al., 2022). Need and deservingness (merit) are two distinct principles of morality. The need principle involves distributing resources to those requiring them, regardless of whether they have earned them. In contrast, the ‘merit principle’ focuses on allocating resources based on individuals’ deservingness, irrespective of their actual need (Wilson, 2003). How do people assess whether others deserve or need help, and how does this influence their choices to initiate that help?
 
-Based on an analogy to perception in basic sensory domains like vision (Green and Swets, 1966; LaBerge et al., 1969), we hypothesized that variance in social perceptions might be driven by two discrete mechanisms: an individual’s sensitivity to social situational cues signaling other’s merit or need, and an individual’s bias to perceive merit or need independently of specific cues. In other words, one can think of the likelihood P that person J perceives a target individual as deserving (meritorious) or in need of aid as being determined by the sum of all cues C1, C2, … CN associated with that perceptual judgment, multiplied by a person’s idiosyncratic sensitivity S to each cue, and added to their baseline tendency (bias) to perceive others as deserving or in need:(1)P(Judgment|J,C)∼∑i=1NSi,JCi+biasJ
+Based on an analogy to perception in basic sensory domains like vision (Green and Swets, 1966; LaBerge et al., 1969), we hypothesized that variance in social perceptions might be driven by two discrete mechanisms: an individual’s sensitivity to social situational cues signaling other’s merit or need, and an individual’s bias to perceive merit or need independently of specific cues. In other words, one can think of the likelihood P that person J perceives a target individual as deserving (meritorious) or in need of aid as being determined by the sum of all cues C1, C2, … CN associated with that perceptual judgment, multiplied by a person’s idiosyncratic sensitivity S to each cue, and added to their baseline tendency (bias) to perceive others as deserving or in need:
+
+$$
+P(Judgment|J,C)∼\sumi=1NS_{i,J}C_{i}+bias_{J}
+$$
 
 Need-signaling cues could include facial, vocal, or postural cues of pain or distress (FeldmanHall et al., 2015; Murray, 1979; Marsh, 2016; Small and Verrochi, 2009), or cues implying imminent harm (e.g., a person in front of a runaway car; Rand and Epstein, 2014; Vieira et al., 2020). Merit-relevant cues could include membership in ‘good’ or ‘bad’ groups like children (Burt and Strongman, 2005), one’s in-group (Stürmer et al., 2005), Nazi Party membership (Opotow, 1990), or information about the social normativity or benevolence of that person’s actions (Van de Vondervoort et al., 2018). An individual with higher average sensitivity to the cues associated with that judgment would discriminate more between those who are high or low in merit or need (as signaled by available cues). An individual with a larger bias term would simply be more likely to judge all individuals as meritorious/needy irrespective of present cues. Whether processing and integrating these social cues, along with the resulting judgments, involves distinct neural modules (Santavirta et al., 2023) or a general-purpose mechanism for social cognition (Thornton and Mitchell, 2018), such as the mentalizing network (Van Overwalle, 2009; Schurz et al., 2014; Molenberghs et al., 2016; Bzdok et al., 2012), remains unknown.
 
@@ -38,7 +42,7 @@ To test these hypotheses and uncover their neural basis, we first asked particip
 
 This section is structured as follows. First, we report the results of our novel fMRI social perception task to describe how people perceive others’ merit and need. Behaviorally, we used parameter estimates from our computational model of social perception to characterize individuals’ perceptual biases and sensitivities driving variance in social perceptions across people. Neurally, we localized brain regions recruited during merit and need inferences and asked whether neural computations underlying merit and need perceptions are supported by distinct neural circuits or a general-purpose network for social inference processing. Second, we used data from a separate altruism task (collected on average 303 days later) to describe the effects of an interaction partner’s perceived merit and need on meaningful social behavior. Third, we explored if individuals’ perceptual biases and sensitivities (as captured in the social perception task) predicted variance in actual social behavior (observed in the altruism task). We examined this core question about the social perception–action link across time and contexts at both the behavioral and neural levels.
 
-## Social perception task: behavior and neural underpinnings of need and merit inferences
+### Social perception task: behavior and neural underpinnings of need and merit inferences
 
 To assess individual differences in social perceptions, we used a modified version of the established fMRI why/how task (Spunt and Adolphs, 2014; Spunt and Adolphs, 2015). Participants viewed images of people in real-world scenes and made rapid yes/no judgments about perceived merit, need, or factual attributes (control condition) in separate blocks while their brain responses were measured (Figure 1A). Despite viewing the same stimuli, participants differed dramatically in their judgments of others’ merit and need (Figure 1B). The percentage of trials perceived by participants as depicting someone as deserving (merit blocks) ranged from 33% to 81%. Similarly, the range for perceiving someone in need (need blocks) was 28–73%.
 
@@ -46,7 +50,7 @@ To assess individual differences in social perceptions, we used a modified versi
 
 **Figure 1.:** (A) Social perception task. Participants made rapid yes/no judgments regarding others’ perceived deservingness (merit blocks, top row), need (need blocks, middle row), or factual inferences (control blocks, bottom row) while their brain responses were measured using fMRI. All photographs included in this panel are in the public domain in the United States. (B) Social perception responses. Violin plots of the participant-specific percentage of yes responses (dots) for merit (left), need (middle), and control judgments (right). Merit: 56.70 ± 11.91; Need: 48.69 ± 10.81; Control: 54.87 ± 12.03. Edges of boxplots (gray bars) indicate the 25th–75th percentiles, boxplot whiskers illustrate minima and maxima, and central white dots represent median values. Two outliers for merit and one outlier for need responses were excluded based on values that exceeded 3 standard deviations from the mean.
 
-## Computational behavioral model of social perception
+### Computational behavioral model of social perception
 
 What mechanisms drive these profound individual differences in social perceptions (Figure 1B)? To address this question, we examined two distinct computational mechanisms: first, people may differ in their general tendency to perceive others as deserving or in need (bias hypothesis). Second, people may differ in their perceptual sensitivity to merit- or need-related evidence in their choice environment and/or their ability to use this information to guide their judgments (sensitivity hypothesis). Importantly, these mechanisms are not mutually exclusive but may vary in their relative impact on social behaviors across people and contexts. We tested the contribution of these two potential mechanisms using our behavioral computational model of social perception (see Methods).
 
@@ -54,31 +58,508 @@ We first verified that the model adequately accounted for the differences in par
 
 Next, we examined the estimated parameters of our hierarchical computational model at the individual participant level. Positive average sensitivity parameters for merit (Smerit in merit blocks = 2.84 ± 1.02, mean ± std, significantly different from zero, p < 0.001, FDR corrected), need (Sneed in need blocks = 3.28 ± 0.75, p < 0.001, FDR corrected), and control (Scontrol in control blocks = 4.40 ± 0.69, p < 0.001, FDR corrected) verified that participants accurately distinguished between targets who deserve help, need help, and use both hands, and used this perceptual evidence to guide their judgments (Figure 2A). For the estimated perceptual bias parameters, people tended to perceive others as deserving (indicated by an average positive merit bias, Biasmerit = 0.33 ± 0.47, p < 0.001, FDR corrected) and not in need of help (indicated by an average negative need bias, Biasneed = –0.17 ± 0.39, p = 0.009, FDR corrected). In the control condition, the estimated bias showed a small positive but non-significant trend (Biascontrol = 0.09 ± 0.36, p = 0.099, FDR corrected; Figure 2B). It is worth noting that the Bias parameters are strongly associated with (though not the sole determinant of) the mean response rate. For a description of the estimated values for the hyper-mean parameters in our model, see Supplementary file 1.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/92539/elife-92539-fig2-v1.jpg)
+
+**Figure 2.:** (A) Violin plots illustrate the distribution of participant-specific estimates (dots) of the perceptual sensitivity and (B) perceptual bias for each inference condition in the social perception task (merit, need, and control). Edges of boxplots (bars) indicate the 25th–75th percentiles; central red dots represent mean values.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/92539/elife-92539-fig2-figsupp1-v1.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/92539/elife-92539-fig2-figsupp2-v1.jpg)
+
 Notably, individuals’ bias and sensitivity estimates were uncorrelated for merit (Spearman’s r = 0.10, p = 0.73, FDR corrected; Smerit and Biasmerit) and need judgments (Spearman’s r = –0.10, p = 0.73, FDR corrected; Sneed and Biasneed), suggesting two distinct mechanisms driving variance in social perceptions across people. Likewise, we found no link between need and merit sensitivity (Spearman’s r = –0.22, p = 0.60, FDR corrected; Smerit and Sneed), indicating that people might be sensitive to cues signaling merit but not need, and vice versa. However, estimates of the need bias and merit bias were correlated (Spearman’s r = 0.73, p < 0.001, FDR corrected; Biasmerit and Biasneed), suggesting that people who tend to perceive others as needy might also tend to perceive others as deserving. See Figure 2—figure supplement 2 for full details on intercorrelations of estimates of the behavioral computational model. These findings highlight the benefits of formal computational models, which can capture and quantify distinct processes that can be hard to distinguish based on observed behaviors alone. It also raises the interesting question of whether the specificity of need and merit observed at the behavioral level gives rise to inference specificity at the neural level.
 
-## Neural underpinnings of merit and need perceptions
+### Neural underpinnings of merit and need perceptions
 
 Next, we examined the neural substrates of need and merit inferences obtained in the social perception task. The task is a modified version of an established fMRI why/how task (Spunt and Adolphs, 2014; Spunt and Adolphs, 2015) that reliably identifies the mentalizing network (Straccia et al., 2023; Tan et al., 2019; Thompson et al., 2022; Cardenas et al., 2021; Tusche et al., 2023). Not surprisingly, we found that need and merit inferences also recruited the mentalizing network. The medial prefrontal cortex, superior temporal sulcus, temporal pole, temporoparietal junction (TPJ), and posterior cingulate cortex were reliably activated during both merit and need inferences, among other regions. Figure 3A illustrates the overlap of brain areas activated during merit and need judgments. Table 1 provides the results of the condition-specific brain maps and the formal conjunction of brain areas identified for [need − control] and [merit − control] inferences, each thresholded at p < 0.001 at the voxel level, family-wise error (FWE) corrected at the cluster level at p < 0.05 (see Figure 3—figure supplement 1 for a visualization of the conjunction analysis). No brain region was significantly more activated during merit than need inferences [merit − need] at our omnibus threshold. However, for the reverse contrast [need − merit], need inferences showed significantly greater activation in the cuneus (MNI: [−4, −98, 18], 8741 voxels, t = 7.64), intraparietal sulcus (MNI: [28, −62, 56], 256 voxels, t = 4.58), and sensorimotor cortex (MNI: [4, −38, 64], 294 voxels, t = 4.39) (p < 0.001 at the voxel level, FWE corrected at the cluster level at p < 0.05), suggesting an enhanced activation of the (extended) mirror system (Pineda, 2008; Van Overwalle and Baetens, 2009). Future research may reveal additional distinctions between merit and need appraisals in trial-wise (compared to our block-wise) fMRI designs.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/92539/elife-92539-fig3-v1.jpg)
+
+**Figure 3.:** (A) Need and merit inferences activate the mentalizing network to a similar extent (red illustrates brain regions activated for [merit − control], green illustrates brain regions identified for [need − control], and yellow indicates overlap; both contrast maps thresholded at p < 0.001 at the voxel level, family-wise error (FWE) corrected at the cluster level at p < 0.05; R = right hemisphere). (B) Activity in the right temporoparietal junction (TPJ) during merit perceptions [merit − control] reflects individual differences in merit sensitivity scores estimated in the computational model of social perception.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92539/elife-92539-fig3-figsupp1-v1.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/92539/elife-92539-fig3-figsupp2-v1.jpg)
+
+**Table 1.**
+ Neural activations during social need and merit inferences in the social perception task.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Brain region</th>
+      <th>Side</th>
+      <th>T</th>
+      <th>k</th>
+      <th colspan="3">MNI (peak)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>x</td>
+      <td>y</td>
+      <td>z</td>
+    </tr>
+    <tr>
+      <td>[Need − control] ∩ [Merit − control]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dorsomedial prefrontal cortex</td>
+      <td>L</td>
+      <td>7.78</td>
+      <td>6250</td>
+      <td>–14</td>
+      <td>38</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>Superior temporal sulcus</td>
+      <td>L</td>
+      <td>6.61</td>
+      <td>1154</td>
+      <td>–64</td>
+      <td>–26</td>
+      <td>–14</td>
+    </tr>
+    <tr>
+      <td>Superior temporal sulcus</td>
+      <td>R</td>
+      <td>5.42</td>
+      <td>146</td>
+      <td>70</td>
+      <td>–32</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Temporal pole</td>
+      <td>R</td>
+      <td>6.16</td>
+      <td>523</td>
+      <td>40</td>
+      <td>22</td>
+      <td>–32</td>
+    </tr>
+    <tr>
+      <td>Posterior cingulate cortex</td>
+      <td>L</td>
+      <td>5.97</td>
+      <td>671</td>
+      <td>−2</td>
+      <td>–54</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Midcingulate cortex</td>
+      <td>L</td>
+      <td>5.17</td>
+      <td>119</td>
+      <td>−2</td>
+      <td>–10</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>Temporoparietal junction (TPJ)</td>
+      <td>R</td>
+      <td>4.56</td>
+      <td>167</td>
+      <td>54</td>
+      <td>–66</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>TPJ/angular gyrus</td>
+      <td>L</td>
+      <td>4.58</td>
+      <td>141</td>
+      <td>–50</td>
+      <td>–62</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Cerebellum</td>
+      <td>L</td>
+      <td>5.33</td>
+      <td>336</td>
+      <td>–26</td>
+      <td>–82</td>
+      <td>–42</td>
+    </tr>
+    <tr>
+      <td>[Merit &gt; control]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Medial prefrontal cortex</td>
+      <td>L</td>
+      <td>8.04</td>
+      <td>7616</td>
+      <td>−8</td>
+      <td>54</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>TPJ/ angular gyrus</td>
+      <td>R</td>
+      <td>4.96</td>
+      <td>278</td>
+      <td>46</td>
+      <td>–58</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>TPJ/angular gyrus</td>
+      <td>L</td>
+      <td>4.54</td>
+      <td>267</td>
+      <td>–60</td>
+      <td>–60</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>Superior temporal gyrus</td>
+      <td>R</td>
+      <td>5.84</td>
+      <td>526</td>
+      <td>68</td>
+      <td>–34</td>
+      <td>−2</td>
+    </tr>
+    <tr>
+      <td>Posterior cingulate cortex</td>
+      <td>L</td>
+      <td>6.56</td>
+      <td>687</td>
+      <td>−4</td>
+      <td>–48</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>Medial cingulate cortex</td>
+      <td>L</td>
+      <td>5.29</td>
+      <td>127</td>
+      <td>−2</td>
+      <td>–14</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>Caudate nucleus</td>
+      <td>L</td>
+      <td>5.43</td>
+      <td>74</td>
+      <td>–12</td>
+      <td>10</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Anterior insula</td>
+      <td>L</td>
+      <td>7.61</td>
+      <td>1973</td>
+      <td>–38</td>
+      <td>20</td>
+      <td>–14</td>
+    </tr>
+    <tr>
+      <td>Anterior insula</td>
+      <td>R</td>
+      <td>7.35</td>
+      <td>1123</td>
+      <td>34</td>
+      <td>22</td>
+      <td>–16</td>
+    </tr>
+    <tr>
+      <td>Dorsolateral prefrontal cortex</td>
+      <td>L</td>
+      <td>4.45</td>
+      <td>66</td>
+      <td>–34</td>
+      <td>22</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>Cerebellum</td>
+      <td>R</td>
+      <td>4.69</td>
+      <td>95</td>
+      <td>26</td>
+      <td>–88</td>
+      <td>–34</td>
+    </tr>
+    <tr>
+      <td>Cerebellum</td>
+      <td>L</td>
+      <td>6.05</td>
+      <td>471</td>
+      <td>–26</td>
+      <td>–80</td>
+      <td>–34</td>
+    </tr>
+    <tr>
+      <td>[Need &gt; control]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Medial prefrontal cortex</td>
+      <td>L</td>
+      <td>7.78</td>
+      <td>7522</td>
+      <td>–14</td>
+      <td>38</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>TPJ/angular gyrus</td>
+      <td>L</td>
+      <td>4.58</td>
+      <td>261</td>
+      <td>–50</td>
+      <td>–62</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>TPJ/angular gyrus</td>
+      <td>R</td>
+      <td>4.56</td>
+      <td>252</td>
+      <td>54</td>
+      <td>–66</td>
+      <td>34</td>
+    </tr>
+    <tr>
+      <td>Medial temporal cortex</td>
+      <td>L</td>
+      <td>6.61</td>
+      <td>1385</td>
+      <td>–64</td>
+      <td>–26</td>
+      <td>–14</td>
+    </tr>
+    <tr>
+      <td>Temporal pole</td>
+      <td>R</td>
+      <td>6.16</td>
+      <td>801</td>
+      <td>40</td>
+      <td>22</td>
+      <td>–32</td>
+    </tr>
+    <tr>
+      <td>Superior temporal cortex</td>
+      <td>R</td>
+      <td>5.42</td>
+      <td>181</td>
+      <td>70</td>
+      <td>–32</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Posterior cingulate cortex</td>
+      <td>L</td>
+      <td>5.97</td>
+      <td>1727</td>
+      <td>−2</td>
+      <td>–54</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Dorsolateral prefrontal cortex</td>
+      <td>L</td>
+      <td>4.86</td>
+      <td>132</td>
+      <td>–40</td>
+      <td>22</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>Cerebellum</td>
+      <td>L</td>
+      <td>5.33</td>
+      <td>362</td>
+      <td>–26</td>
+      <td>–82</td>
+      <td>–42</td>
+    </tr>
+    <tr>
+      <td>Cerebellum</td>
+      <td>R</td>
+      <td>4.77</td>
+      <td>219</td>
+      <td>26</td>
+      <td>–86</td>
+      <td>–34</td>
+    </tr>
+    <tr>
+      <td>Cuneus</td>
+      <td>L</td>
+      <td>5.34</td>
+      <td>284</td>
+      <td>−4</td>
+      <td>–100</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>[Need − control] &gt; [Merit − control]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Visual cortex</td>
+      <td>L</td>
+      <td>8741</td>
+      <td>7.64</td>
+      <td>−4</td>
+      <td>–98</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Intraparietal sulcus</td>
+      <td>R</td>
+      <td>256</td>
+      <td>5.24</td>
+      <td>28</td>
+      <td>–62</td>
+      <td>56</td>
+    </tr>
+    <tr>
+      <td>Somatosensory cortex</td>
+      <td>R</td>
+      <td>294</td>
+      <td>4.97</td>
+      <td>4</td>
+      <td>–38</td>
+      <td>64</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. Results are reported at a statistical threshold of p < 0.001 at the voxel level, family-wise error (FWE) corrected at cluster level at p < 0.05. There were no significant results for [Merit − control] > [Need − control]. Only peak activations of each cluster are shown. L = left hemisphere, R = right hemisphere, MNI = Montreal Neurological Institute, k = cluster size in voxels._
 
 We also employed supplemental multivariate decoding analyses (searchlight analysis; Kriegeskorte et al., 2006; Haynes and Rees, 2006; Heinzle et al., 2012), as commonly used in social perception and neuroscience research (Tusche et al., 2016; Tusche et al., 2023; Brooks et al., 2021; Tusche and Hutcherson, 2018; Corradi-Dell’Acqua et al., 2016), corroborating our univariate findings (see Supplementary file 2). Specifically, these additional analyses confirm the involvement of the mentalizing network in the processing of merit (vs. control) and need (vs. control) inferences. Moreover, these supplemental analyses failed to identify multivariate activation patterns that reliably decoded need versus merit inferences in the social perception task (p < 0.001 at the voxel level, FWE corrected at the cluster level at p < 0.05). In other words, multivoxel activation patterns did not allow decoding of whether participants were currently judging others’ need or merit at this statistical level, suggesting common neural codes for both types of social perceptual judgments.
 
 Taken together, our results demonstrate that both need and merit inferences reliably recruited the well-established mentalizing network, and to a comparable extent. Answering our first core question: These findings are consistent with the notion that both appraisals are supported by general-purpose rather than domain-specific social cognitive mechanisms.
 
-## Model estimates of merit sensitivity modulate the neural underpinnings of merit perceptions
+#### Model estimates of merit sensitivity modulate the neural underpinnings of merit perceptions
 
 So far, we showed that a general-purpose network involved in social inference processes is recruited during both merit and need inferences. Next, we ran a series of whole-brain analyses to identify brain areas for which inference-evoked brain responses covary with individual differences in estimates of the computational model of social perception. Given the evidence above that the social cognitive brain network is activated to make these judgments, we hypothesized that stronger activation in one or more hubs in this network should correlate with greater perceptual sensitivity and/or bias in these social inferences. Consistent with this prediction, we found that brain responses during merit inferences [merit − control] systematically covaried with participants’ merit sensitivity scores in the right temporoparietal junction (rTPJ, peak at [MNI 56, –64, 22], t = 4.24, k = 228 voxels, p < 0.001 at the voxel level, FWE corrected at the cluster level at p < 0.05). In other words, participants with larger merit sensitivity scores (captured in the computational behavioral model) exhibited larger rTPJ responses when appraising someone’s merit (Figure 3B). This effect was specific for brain responses obtained during merit inferences; an analogous whole-brain analysis using neural activation obtained during need inferences [need − control] to predict merit sensitivity did not yield significant effects. We also did not observe any brain regions where inference-evoked brain responses were associated with variance in participants’ need sensitivity or bias scores for either merit or need at the whole-brain level (p < 0.001 at the voxel level, FWE corrected at the cluster level at p < 0.05). Thus, despite merit and need inferences both recruiting the general-purpose mentalizing network to an equivalent extent on average, we found some evidence of neuroanatomical specificity for merit inferences when considering estimates of the computational behavioral model (Figure 3B). Notably, this functional link between the rTPJ and merit sensitivity was robust when we repeated the whole-brain analysis for the reduced sample of n = 25 participants with overlapping altruism task data (p < 0.001 at the voxel level, FWE corrected at the cluster level at p < 0.05; for details, see Supplementary file 3; for illustration, see Figure 3—figure supplement 2).
 
-## Altruism task behavior
+### Altruism task behavior
 
 The results reported above relate to perceptions of need and merit; however, they say nothing about how such perceptions might influence decisions to help. In a separate altruism task, we examined how independently manipulating a social target’s merit and need alter prosocial behavior. The altruism task required participants to accept or reject monetary allocation that affected their payoffs and that of one of three partners (see Figure 4A). The merit of the three partners (high, unknown, and low) was manipulated based on information about partners’ behavior in a separate exchange game completed before the altruism task (see Appendix 1). Partners need varied on a trial-by-trial level (high and low) based on the likelihood of performing a painful cold pressor task (CPT) after the experiment. Participants were informed that partners could use the money earned during the altruism task (based on one randomly selected trial) to buy out of the painful post-task CPT. Importantly, the altruism task was unrelated to the social perception task and was completed on average 303 days later. It allowed us to characterize how people act on perceptions of merit and need when deciding whether to give aid to another person.
 
-## Partner’s need and merit alter generosity in the altruism task
+![Figure 4.](https://cdn.elifesciences.org/articles/92539/elife-92539-fig4-v1.jpg)
+
+**Figure 4.:** (A) Altruism task. On each trial, participants accepted or rejected a monetary offer that affected the payoffs for themselves (You) and one of three partners (choice screen; displayed offer vs. constant default of $20 for both). The three partners (identified via colored geometric shapes) differed in their associated merit (merit cue: high/low/unknown) based on partner behavior in a separate exchange game played before the altruism task (see Appendix 1). Partner’s need (need cue: high/low) was manipulated on a trial-by-trial basis, indicated by the likelihood of a painful cold pressor task (CPT) for the partner after the altruism task (high need: 80 ± 4%; low need: 20 ± 4%). Partners could buy out of the painful CPT using funds from one randomly selected trial at the end of the altruism task. Participants were informed that they could help their partners avoid the painful CPT by making generous choices. (B) Proposed monetary offers for the participant (You) and the partner (represented by one of three colored geometric shapes in A) ranged from $5 to $35. Offers are illustrated as indicated as black dots, whereas the constant default offer ($20 for both) is indicated as a red dot. Monetary proposals were selected such that most choices involved a trade-off between higher payoffs for participants and partners (upper left and lower right quartile), compared to the constant default offer.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92539/elife-92539-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** We tested for differences in self-reported perceived partner need and merit, obtained at the end of the altruism task (5-point scale, 1 = ‘Not at all’ to 5 = ‘Extremely’), using a two-factorial repeated-measures ANOVA. Mauchly’s test indicated that the assumption of sphericity had been violated, W = 0.61, p < 0.01; therefore, the degrees of freedom were corrected using Huynh–Feldt estimates of sphericity (ε = 0.75). (A) The perceived merit of the three partners differed significantly, F(2,54) = 15.23, p < 0.001, η2 = 0.188. Participants perceived a high merit partner as more deserving than an unknown (p = 0.029) or low (p < 0.001) merit partner, and a low merit partner was rated as less deserving than an unknown merit partner (p = 0.003; How much more do you think this partner DESERVED to be helped when the chance of having to hold a hand in ice water was 80% vs. 20%?). (B) Participants perceived others’ need to be greater in high need trials (~80% risk of cold pressor task [CPT]) compared to low need trials (~20% risk of CPT) by an average of 3.06 (out of a 5-point scale) across all three partners (How much more do you think this partner NEEDED help when the chance of having to hold a hand in ice water was 80% vs. 20%). There were no significant differences in the perceived increased need (for 80% vs. 20% CPT) across the three partners (W = 0.71, p < 0.05, ε = 0.81; F(2,54) = 1.74, p = 0.185, η2 = 0.016). This was not surprising as participants were told before the altruism task that all three partners perceived the CPT as equally and maximally painful. (C) Our experimental merit manipulation also yielded significant differences in self-reported valuation of partners’ welfare, F(2,54) = 44.96, p < 0.001, η2 = 0.420 (all p’s < 0.001, Bonferroni corrected). (D) Finally, our merit manipulation affected the perceived trait impressions (Abele et al., 2016) of the three partners in the altruism task (9-point scale, 1 = ‘Not at all’ to 9 = ‘Extremely’). Warmth: F(2,54) = 78.75, p < 0.001, η2 = 0.707; Moral: F(2,54) = 95.26, p < 0.001, η2 = 0.710; Competence: F(2,54) = 3.41, p < 0.05, η2 = 0.065; Assertive: F(2,54) = 8.91, p < 0.001, η2 = 0.169. The findings suggest that the merit and need manipulations were effective. Red = low merit, gray = unknown merit, blue = high merit.
+
+#### Partner’s need and merit alter generosity in the altruism task
 
 Did the experimental manipulations of another’s need and merit affect people’s generosity during altruistic choice? We addressed this question by fitting a mixed-effects logistic regression model to the observed generous and selfish choices (coded as 1/0) in the altruism task (Equation 3, see Methods). Choices were classified as generous if the participant accepted a proposal that benefited the partner at the expense of oneself ($Self < $Other) or rejected a proposal that profited themselves at the partner’s expense ($Self > $Other) (see Table 2 for the summary statistics of the proportion of generous choices and Figure 5A for an illustration).
 
+**Table 2.**
+ Generosity in the altruism task (fraction of trials with generous choices).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Condition</th>
+      <th>Mean</th>
+      <th>SD</th>
+      <th>Min</th>
+      <th>Max</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Overall generosity (across conditions)</td>
+      <td>0.34</td>
+      <td>0.23</td>
+      <td>0.08</td>
+      <td>0.91</td>
+    </tr>
+    <tr>
+      <td>Merit low, Need low</td>
+      <td>0.24</td>
+      <td>0.24</td>
+      <td>0.06</td>
+      <td>0.86</td>
+    </tr>
+    <tr>
+      <td>Merit low, Need high</td>
+      <td>0.30</td>
+      <td>0.30</td>
+      <td>0.00</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td>Merit unknown, Need low</td>
+      <td>0.32</td>
+      <td>0.22</td>
+      <td>0.08</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>Merit unknown, Need high</td>
+      <td>0.43</td>
+      <td>0.28</td>
+      <td>0.06</td>
+      <td>0.94</td>
+    </tr>
+    <tr>
+      <td>Merit high, Need low</td>
+      <td>0.34</td>
+      <td>0.21</td>
+      <td>0.06</td>
+      <td>0.80</td>
+    </tr>
+    <tr>
+      <td>Merit high, Need high</td>
+      <td>0.44</td>
+      <td>0.29</td>
+      <td>0.08</td>
+      <td>0.96</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 5.](https://cdn.elifesciences.org/articles/92539/elife-92539-fig5-v1.jpg)
+
+**Figure 5.:** (A) Partner’s merit and need altered generosity in the altruism task. High (vs. low) need contexts elicited more generosity (p < 0.001). Compared to a low merit partner (circle), generosity was enhanced toward a high merit (diamond, p < 0.001) and an unknown merit partner (triangle, p < 0.001). (B) Condition-specific attribute weights (wself, wother, wfairness) for low, unknown, and high merit partner contexts. (C) Condition-specific attribute weights for low and high need contexts. All p’s ≤ 0.01, FDR corrected, for the six pair-wise comparisons of changes in attribute weights (high vs. low merit/need). Dots represent participant-specific estimates from the computational model of altruistic choice; black lines illustrate the estimated means and 95% confidence intervals.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92539/elife-92539-fig5-figsupp1-v1.jpg)
+
 The model’s total explanatory power was substantial (R2 = 0.33) and significantly better than a null model that assumed no effect of need or merit (𝜒2 (5, N = 28) = 239.68, p < 0.001). Partners’ merit (𝜒2 (2, N = 28) = 45.68, p < 0.001) and need (𝜒2 (1, N = 28) = 16.79, p < 0.001) both influenced generosity in the altruism task. On average, participants were more generous to a partner in high (vs. low) need (beta = 0.40, 95% CI [0.21, 0.58], p < 0.001). They were also more generous to a high (vs. low) merit partner (beta = 0.60, 95% CI [0.42, 0.79], p < 0.001) and an unknown (vs. low) merit partner (beta = 0.52, 95% CI [0.33, 0.71], p < 0.001). No interactions between the level of merit and need were significant (𝜒2 (2, N = 28) = 2.77, p = 0.25; need [high] × merit [unknown]: beta = 0.19, 95% CI [–0.06, 0.45], p = 0.142; need [high] × merit [high]: beta = 0.19, 95% CI [–0.07, 0.45], p = 0.147). Likewise, results of a formal model comparison revealed that adding the interaction of need and merit did not improve model fit significantly over a model that only considered the main effects (𝜒2 (2, N = 28) = 2.75, p = 0.252; Supplementary file 4). These findings suggest that need and merit inferences had fully independent effects on social choice. Consistent with this notion, we also found that merit-induced changes in generosity (high–low merit partner) and need-induced changes in generosity (high–low need) were uncorrelated (Spearman’s r = 0.17, p = 0.377). In other words, people who changed their generous behavior as a function of another’s merit were not necessarily the same as those who changed their behavior in response to another person’s need. Consequently, further analyses focused on the main effects of need and merit on altruistic choice. Overall, the experimental manipulations of another’s need and merit affected people’s generosity during altruistic choice.
 
-## Computational behavioral model of altruistic choice: partners’ merit and need alter social attribute weights
+#### Computational behavioral model of altruistic choice: partners’ merit and need alter social attribute weights
 
 Several mechanisms might drive the changes in altruistic choices we observed (see above): others’ merit or need might decrease self-interest, increase other-regard, increase fairness considerations, or some combination of these. To identify the relative contribution of the processes that drive generosity, we turned toward an established behavioral computational model of altruistic choice (Equation 4; see Methods). We first verified that our computational model of altruistic choice fit the data well by showing that choices and reaction times (RTs) were captured with high accuracy (for visualization of model fit, see Figure 5—figure supplement 1).
 
@@ -86,33 +567,125 @@ Next, we examined the relative importance of the social attributes (drift weight
 
 Finally, we tested if contextual cues about the partner’s merit or need altered the degree to which benefits for oneself (wself), others (wother), or fairness concerns (wfairness) guided social choices in the altruism task (separate Wilcoxon signed rank tests for each attribute and experimental manipulation; FDR corrected for multiple comparisons; see Supplementary file 5 for attribute-specific estimates; see Figure 5B, C for illustration). Any changes in model estimates would indicate context-dependent effects (of varying levels of merit and need) of attributes’ input on altruistic behaviors. When interacting with a high (vs. low) merit partner, benefits for oneself (wself) guided choices less (p < 0.001, FDR corrected), whereas considerations of others’ benefits (wother, p < 0.01, FDR corrected) and fairness concerns (overall wfairness, p < 0.001, FDR corrected) guided choices more. Mirroring this pattern of results, in high (vs. low) need settings, weights on self-related outcomes decreased (p < 0.01, FDR corrected), whereas weights on others’ benefits increased (p < 0.001, FDR corrected). Unlike the merit-induced effects, a partner’s high (vs. low) need reduced weights on fairness concerns on choices (p < 0.001, FDR corrected). Thus, if others faced great need, participants were more willing to ignore their fairness preferences. Together, these results suggest that merit- and need-evoked changes in generosity are driven by systematic changes in the social decision process—namely changes in attribute weights—as captured in our behavioral computational model of altruistic choice. Thus, we addressed another key question by showing that partners’ merit and need levels changed how specific choice-relevant considerations (self-regard, other-regard, and fairness) guided people’s decisions to act prosocially.
 
-## Individual differences in effects of others’ need and merit and altruistic decision-making
+### Individual differences in effects of others’ need and merit and altruistic decision-making
 
-Notably, people differed substantially in their overall generosity and the degree to which generosity varied as a function of their partner’s need and merit (Table 2). Our model assumes this variation was driven by changes in social attribute weights w estimated in the behavioral computational model (see above). To quantify these individual differences and examine their relations, we calculated change scores of model-based estimates for each participant. For example, to capture the change in an individual’s other-regard as a function of their partner’s need, we computed the following participant-specific difference score [wother in high need − wother in low need]. Likewise, to assess the change in other-regard in response to their partner’s merit, we estimated the change in [wother high merit − wother low merit]. We did this separately for each attribute weight estimated in the computational model of altruistic choices (wself, wother, wfairness). These change scores reflect the impact of partners’ merit and need on individuals’ altruistic decision process.
+Notably, people differed substantially in their overall generosity and the degree to which generosity varied as a function of their partner’s need and merit (Table 2). Our model assumes this variation was driven by changes in social attribute weights w estimated in the behavioral computational model (see above). To quantify these individual differences and examine their relations, we calculated change scores of model-based estimates for each participant. For example, to capture the change in an individual’s other-regard as a function of their partner’s need, we computed the following participant-specific difference score [$w_{other}$ in high need − $w_{other}$ in low need]. Likewise, to assess the change in other-regard in response to their partner’s merit, we estimated the change in [$w_{other}$ high merit − $w_{other}$ low merit]. We did this separately for each attribute weight estimated in the computational model of altruistic choices ($w_{self}$, $w_{other}$, $w_{fairness}$). These change scores reflect the impact of partners’ merit and need on individuals’ altruistic decision process.
 
 As a sanity check, we confirmed that changes in attribute weights reflect participant-specific changes in generosity (Table 3). In other words, larger (smaller) changes in observed social behaviors can be explained by larger (smaller) changes in estimated attribute weights. Specifically, we confirmed that individuals’ merit-induced changes in generosity were reflected by individuals’ altered weights for self-interest (payoffs for self), other-regard (payoffs for partners) and fairness considerations on choices (p’s < 0.018, FDR corrected). Need-related changes in generosity were reflected by altered consideration of benefits for self and others (p’s < 0.001, FDR corrected; but not fairness, p = 0.895). In other words, individuals who were most sensitive to information about others’ merit and need (i.e., large differences in generosity toward a high vs. low merit/need partner) changed their decision process more strongly (captured in larger shifts in the weights on outcomes for self, other, and fairness considerations on choices as a function of others’ merit/need). These findings provide insights into the precise mechanism by which need and merit affect (pro)social behavior in altruistic choice settings, namely by altering the weighting of certain choice attributes in the decision-making process. Below, we link these change scores in social behaviors with estimates of social perception (sensitivity, bias).
 
-## Variance in perceptual sensitivity and bias (social perception task) predict variance in prosocial behavior across people and contexts (altruism task)
+**Table 3.**
+ Correlations between changes in generosity and changes in parameter estimates of the computational model of altruistic choice (attribute weights) across conditions in the altruism task.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th rowspan="2"></th>
+      <th rowspan="2" colspan="2">Merit-inducedchanges in generosity[High merit − Low merit]</th>
+      <th rowspan="2" colspan="2">Need-inducedchanges in generosity[High need − Low need]</th>
+    </tr>
+    <tr>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ConditionAltruism task</td>
+      <td>Changes inparameterestimates</td>
+      <td>R coefficient</td>
+      <td>p-value</td>
+      <td>R coefficient</td>
+      <td>p-value</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Merit[High–low]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Δwself</td>
+      <td>–0.85</td>
+      <td>0.000*</td>
+      <td>–0.19</td>
+      <td>344</td>
+    </tr>
+    <tr>
+      <td>Δwother</td>
+      <td>0.91</td>
+      <td>0.000*</td>
+      <td>0.01</td>
+      <td>0.948</td>
+    </tr>
+    <tr>
+      <td>Δwfairness</td>
+      <td>0.56</td>
+      <td>0.018*</td>
+      <td>–0.11</td>
+      <td>0.569</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Need[High–low]</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Δwself</td>
+      <td>0.19</td>
+      <td>0.333</td>
+      <td>0.75</td>
+      <td>0.000*</td>
+    </tr>
+    <tr>
+      <td>Δwother</td>
+      <td>–0.14</td>
+      <td>0.484</td>
+      <td>–0.88</td>
+      <td>0.000*</td>
+    </tr>
+    <tr>
+      <td>Δwfairness</td>
+      <td>–0.11</td>
+      <td>0.570</td>
+      <td>–0.03</td>
+      <td>0.895</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. Spearman’s correlation coefficients, FDR corrected. * Indicates significant correlations._
+
+### Variance in perceptual sensitivity and bias (social perception task) predict variance in prosocial behavior across people and contexts (altruism task)
 
 The previous section contained three main takeaways regarding the separate altruism task. First, partners’ merit and need independently impacted social behaviors (generosity). Second, we identified the mechanism of these context-dependent changes in social behaviors: merit and need altered the relative importance of self- and other-regard, and fairness preferences (captured in attribute weights w estimated in our computational model of altruistic choice). Third, we demonstrated that people differ in the degree to which they change their behaviors in response to social cues on others’ merit or need. This raises an important question: what factors determine the impact of others’ need or merit on behavior?
 
 We propose that stable individual differences in social perceptions—as captured in our computational model of social perception and their neural underpinnings—can provide insights into this question. Behaviorally, the computational model decomposes individual differences in social perceptions into bias and sensitivity terms. These model estimates from the social perception task correspond to two mechanisms that drive variation in people’s social perceptions of others’ merit and need. We propose that these stable perceptual mechanisms can, in turn, impact social decision-making. Here, we bring together data from both tasks: the social perception task (which did not require meaningful social behavior toward others) and the altruism task (which included costly social actions). We had two specific hypotheses in mind when designing the study: we speculated that merit bias (or need bias) in the social perception task should be related to average weights on others’ outcomes in the altruism task. In contrast, estimates of an individual’s sensitivity to merit (or need) should predict the extent to which a person alters their weight on others’ outcomes as a function of their partner’s merit (or need). By combining data from both tasks, we explore a fundamental question: do people’s sensitivities and biases during social perceptions translate into subsequent social action? Notably, we see the results below as evidence of stable individual differences, since social action (i.e., generosity) was measured on average almost 10 months (~303 days) after the social perception task.
 
-## Perceptual merit sensitivity predicts merit-related contextual changes in altruistic choice
+### Perceptual merit sensitivity predicts merit-related contextual changes in altruistic choice
 
-Estimates from our computational behavioral model map onto specific hypotheses about the relationship between behaviors observed in both tasks. Perceptual sensitivity estimates reflect individuals’ tendency to sample and integrate evidence about merit (need) during the perceptual decision process. Higher sensitivity estimates will yield higher discriminability between others as a function of their merit (need). Assuming stable individual differences in sensitivity and the impact of categorizing individuals as meritorious or needy on altruistic decision-making, we hypothesized that individuals with higher perceptual merit (need) sensitivity in the social perception task would exhibit a greater change in social behavior depending on the partner’s merit (need) during the altruism task. To test this hypothesis, we correlated individuals’ merit sensitivity scores (social perception task) with merit-induced changes in social behavior (i.e., participant-specific changes in generosity toward [high − low merit] partners in the altruism task). We found that variance in merit sensitivity reflected merit-induced changes in generosity (Spearman’s r = 0.51, p = 0.010; Figure 6A). In other words, individuals generally sensitive to merit information during social perceptions were also more susceptible to merit information during costly social behaviors. Follow-up analyses using estimates of a computational model of the altruism task revealed that this perception–action link was driven by merit-induced changes in other- and self-regard during altruistic choice (change in wother for [high − low merit] partners: Spearman’s r = 0.49, p = 0.045, FDR corrected; change in wself for [high − low merit] partners: Spearman’s r = –0.44, p = 0.047, FDR corrected; no significant link with merit-related changes in fairness weight, p = 0.784, FDR corrected; Figure 6B, C). In other words, individuals with higher merit sensitivity showed larger discrimination in the value placed on others’ wellbeing (and self-interest) when interacting with supposedly deserving and undeserving people. Next, we repeated this set of analyses for sensitivity scores estimated in the need condition of the social perception task. Here, variance in participants’ need sensitivity did not reflect need-induced changes in generosity (p = 0.745) or need-induced changes in altruistic choice attributes (all p’s > 0.484). However, this absence of effects for need ought to be interpreted with caution, given the comparatively small sample size. Results were qualitatively similar when statistically controlling for the delay between both tasks (partial correlations).
+Estimates from our computational behavioral model map onto specific hypotheses about the relationship between behaviors observed in both tasks. Perceptual sensitivity estimates reflect individuals’ tendency to sample and integrate evidence about merit (need) during the perceptual decision process. Higher sensitivity estimates will yield higher discriminability between others as a function of their merit (need). Assuming stable individual differences in sensitivity and the impact of categorizing individuals as meritorious or needy on altruistic decision-making, we hypothesized that individuals with higher perceptual merit (need) sensitivity in the social perception task would exhibit a greater change in social behavior depending on the partner’s merit (need) during the altruism task. To test this hypothesis, we correlated individuals’ merit sensitivity scores (social perception task) with merit-induced changes in social behavior (i.e., participant-specific changes in generosity toward [high − low merit] partners in the altruism task). We found that variance in merit sensitivity reflected merit-induced changes in generosity (Spearman’s r = 0.51, p = 0.010; Figure 6A). In other words, individuals generally sensitive to merit information during social perceptions were also more susceptible to merit information during costly social behaviors. Follow-up analyses using estimates of a computational model of the altruism task revealed that this perception–action link was driven by merit-induced changes in other- and self-regard during altruistic choice (change in $w_{other}$ for [high − low merit] partners: Spearman’s r = 0.49, p = 0.045, FDR corrected; change in $w_{self}$ for [high − low merit] partners: Spearman’s r = –0.44, p = 0.047, FDR corrected; no significant link with merit-related changes in fairness weight, p = 0.784, FDR corrected; Figure 6B, C). In other words, individuals with higher merit sensitivity showed larger discrimination in the value placed on others’ wellbeing (and self-interest) when interacting with supposedly deserving and undeserving people. Next, we repeated this set of analyses for sensitivity scores estimated in the need condition of the social perception task. Here, variance in participants’ need sensitivity did not reflect need-induced changes in generosity (p = 0.745) or need-induced changes in altruistic choice attributes (all p’s > 0.484). However, this absence of effects for need ought to be interpreted with caution, given the comparatively small sample size. Results were qualitatively similar when statistically controlling for the delay between both tasks (partial correlations).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/92539/elife-92539-fig6-v1.jpg)
 
-**Figure 6.:** (A) Variance in individuals’ general sensitivity to others’ merit (social perception task) is positively linked with merit-related changes in generosity, (B) other-regard (w), and (otherC) self-regard (w) during altruistic choice for high versus low merit partners (altruism task). Higher values on the selfx-axes indicate increased generosity/other-regard and decreased self-interest when interacting with a high versus low merit partner in the altruism task.
+**Figure 6.:** (A) Variance in individuals’ general sensitivity to others’ merit (social perception task) is positively linked with merit-related changes in generosity, (B) other-regard (wother), and (C) self-regard (wself) during altruistic choice for high versus low merit partners (altruism task). Higher values on the x-axes indicate increased generosity/other-regard and decreased self-interest when interacting with a high versus low merit partner in the altruism task.
 
-## Perceptual bias estimates predict individuals’ overall other-regard, self-regard, and fairness considerations in altruistic choice
+### Perceptual bias estimates predict individuals’ overall other-regard, self-regard, and fairness considerations in altruistic choice
 
-We also hypothesized that people’s stable perceptual biases in the social perception task might translate into context-independent differences in social action (generosity) across people. Put differently, we assumed that individuals who have a general tendency to perceive others as deserving/in need (irrespective of social cues present in the environment) should be more willing to help others irrespective of contextual variation in others’ merit/need. We tested this notion by correlating merit and need bias parameters (social perception task) with individuals’ overall generosity and the overall weight of choice-relevant attributes in the altruism task (i.e., outcomes for self, wself, outcome for other, wother, and fairness concerns, wfairness). Contrary to our hypothesis, individuals’ merit bias scores were not correlated with overall generosity (p = 0.282). However, we did find that people who tend to perceive others as deserving tended to be more other-oriented overall during altruistic choices: variance in merit bias scores in the social perception task positively correlated with the weights on others’ benefits (overallwother, Spearman’s r = 0.50, p = 0.035, FDR corrected; marginal positive link with overall fairness concerns in the altruism task, overallwfairness, Spearman’s r = 0.43, p = 0.053, FDR corrected; no significant link was observed with overall self-regard, p = 0.153, FDR corrected). This finding suggests that stable differences in people’s tendency to perceive others as deserving predicts people’s overall other-regard across different social choice contexts (on average) 10 months later. In contrast, variance in individuals’ need bias (social perception task) in our sample did not correlate with overall generosity (p = 0.150) or overall attribute weights (all p’s > 0.076, FDR corrected). As mentioned above, we cannot rule out the possibility that null findings may be due to the comparatively small sample size and should be interpreted cautiously (also see discussion). Results were qualitatively similar when statistically controlling for the delay between both tasks (partial correlations).
+We also hypothesized that people’s stable perceptual biases in the social perception task might translate into context-independent differences in social action (generosity) across people. Put differently, we assumed that individuals who have a general tendency to perceive others as deserving/in need (irrespective of social cues present in the environment) should be more willing to help others irrespective of contextual variation in others’ merit/need. We tested this notion by correlating merit and need bias parameters (social perception task) with individuals’ overall generosity and the overall weight of choice-relevant attributes in the altruism task (i.e., outcomes for self, wself, outcome for other, wother, and fairness concerns, wfairness). Contrary to our hypothesis, individuals’ merit bias scores were not correlated with overall generosity (p = 0.282). However, we did find that people who tend to perceive others as deserving tended to be more other-oriented overall during altruistic choices: variance in merit bias scores in the social perception task positively correlated with the weights on others’ benefits ($overallw_{other}$, Spearman’s r = 0.50, p = 0.035, FDR corrected; marginal positive link with overall fairness concerns in the altruism task, $overallw_{fairness}$, Spearman’s r = 0.43, p = 0.053, FDR corrected; no significant link was observed with overall self-regard, p = 0.153, FDR corrected). This finding suggests that stable differences in people’s tendency to perceive others as deserving predicts people’s overall other-regard across different social choice contexts (on average) 10 months later. In contrast, variance in individuals’ need bias (social perception task) in our sample did not correlate with overall generosity (p = 0.150) or overall attribute weights (all p’s > 0.076, FDR corrected). As mentioned above, we cannot rule out the possibility that null findings may be due to the comparatively small sample size and should be interpreted cautiously (also see discussion). Results were qualitatively similar when statistically controlling for the delay between both tasks (partial correlations).
 
-## Neural markers of merit sensitivity predict merit-related behavioral changes during altruistic choice
+### Neural markers of merit sensitivity predict merit-related behavioral changes during altruistic choice
 
-So far, within the social perception task, we found that merit-evoked neural activation in the rTPJ reflects variance in people’s merit sensitivity (Figure 3B). Moreover, when combining data from both tasks, we showed that individuals’ merit sensitivity (social perception task) predicts merit-related changes in other- and self-regard that guide context-dependent changes in social behavior (altruism task) (Figure 6B, C). Considering these findings, a post hoc test examined whether activity in the rTPJ—obtained during merit inferences (social perception task) —also predicts merit-related changes in other-regard (or self-regard) in the altruism task (beyond merit sensitivity). We tested this question by using the following equation:(2)Δwotherj∼1+Smeritj+rTPJj
+So far, within the social perception task, we found that merit-evoked neural activation in the rTPJ reflects variance in people’s merit sensitivity (Figure 3B). Moreover, when combining data from both tasks, we showed that individuals’ merit sensitivity (social perception task) predicts merit-related changes in other- and self-regard that guide context-dependent changes in social behavior (altruism task) (Figure 6B, C). Considering these findings, a post hoc test examined whether activity in the rTPJ—obtained during merit inferences (social perception task) —also predicts merit-related changes in other-regard (or self-regard) in the altruism task (beyond merit sensitivity). We tested this question by using the following equation:
+
+$$
+Δw_{otherj}∼1+S_{meritj}+rTPJ_{j}
+$$
 
 Here, Δwother j represents an individual j’s merit-related change in other-regard during altruistic choice (wother for high merit − low merit partners). We used two predictor variables: participants’ behavioral merit sensitivity scores (Smerit j; estimated in the computational model of social perception) and participant-specific neural responses in the rTPJ obtained during merit inferences (merit − control) in the social perception task (all voxels of the rTPJ cluster, averaged across all voxels in the cluster, see Table 1). This allowed us to assess the additional predictive power of neural responses in the rTPJ, after controlling for behavioral merit sensitivity. The model’s total explanatory power was substantial (R2 = 0.40) and significantly better than a null model with just an intercept (χ2 (2, N = 25) = 2.46, p < 0.001). We found that both model-based estimates of individuals’ merit sensitivity and rTPJ responses reliably, independently, and to an equivalent degree predict changes in other-regard during social choice approximately 10 months later (Smerit: beta = 0.20, SE = 0.08, 95% CI [0.04, 0.36], t(22) = 2.50, p = 0.021; rTPJ: beta = 0.29, SE = 0.13, 95% CI [0.05, 0.54], t(22) = 2.34, p = 0.029). These findings indicate that neural correlates of merit inferences—namely activity in the rTPJ—predict context-dependent changes in other-regard during social action across time and contexts, above and beyond predictive information related to perceptual merit sensitivity.
 
@@ -122,45 +695,45 @@ For completeness, we also estimated a modified version of Equation 2 in which we
 
 Humans do not help others indiscriminately: they are more inclined to help people perceived as needy or deserving (Molouki and Bartels, 2020; Hare et al., 2010; Tusche et al., 2016; Fong, 2007; Eckel and Grossman, 1996; Engel, 2011; Jilke and Tummers, 2018). Using a novel fMRI social perception task, we disentangled two distinct computational mechanisms that shape variance in these social judgments: a general bias to perceive others as more or less deserving (in need) and a degree of discrimination or sensitivity to social cues signaling others’ merit (need). Estimates of these two computations were uncorrelated, suggesting they represent distinct—but not mutually exclusive—processes driving individual differences in perceptions of peoples’ merit and need. We also demonstrated that these computations (for merit, if not need) might be stable and generalizable over time: individuals’ perceptual merit sensitivity predicted the degree to which they discriminated between others based on merit in a separate altruism task completed from 27 to 663 days later. Moreover, their perceptual merit bias predicted a general propensity to weigh others’ outcomes instead of their own during altruistic choices. Neurally, merit sensitivity (but not bias) was associated with increased activity of the TPJ during perceptual judgments, which in turn predicted merit-related discrimination in altruistic behavior. Together, our results identify a set of distinct neurocomputational mechanisms that contribute to our understanding of when and how perceptions of others translate into social actions.
 
-## Translating perception into action
+### Translating perception into action
 
 Variance in people’s sensitivity in merit perceptions predicts context-specific social behaviors and discrimination. This finding contributes to a growing literature regarding parochial altruism. Parochial altruism refers to the tendency to exhibit altruistic behavior toward in-group members and to withhold it from (or even display hostility toward) out-group members (Bernhard et al., 2006). Parochial altruism occurs around the world in private and public settings (Romano et al., 2021), in sports, politics, war, and religion (Hein et al., 2010; Ginges et al., 2009; Choi and Bowles, 2007; Brewer et al., 2023), and has also been linked to activation patterns in the TPJ (Baumgartner et al., 2012; Obeso et al., 2018; Fujino et al., 2020). Although we did not use group- or membership-based cues to characterize partners in the altruism task (manipulating merit instead via partner behaviors in a separate task), the common locus in the TPJ might indicate shared mechanisms for both types of context-dependent social behaviors. Interestingly, our results suggest a considerable degree of stability of this idiosyncratic perceptual sensitivity across time and contexts, since the social perception and altruism tasks were completed on average ~10 months apart, up to almost 2 years for some participants. This finding is consistent with research showing a hereditary component of in-group favoritism and parochial altruism (Lewis and Bates, 2010). Future work should examine the extent to which merit-related perceptual sensitivity represents an innate/genetic or learned quantity, and how it correlates with other types of discriminatory behaviors. Our results also speak to the literature on universal altruism: individual differences in the bias to perceive merit correlated with the overall weight an individual placed on others during altruistic choice months later. This finding supports empirical evidence that dispositionally cooperative people are more universal in their cooperation (Romano et al., 2017) and suggests that this could partly come from a generalized bias to perceive people as deserving. Although we did not find a distinct neural signature of this bias, future work on genetic or anatomical differences might yield clearer results.
 
-## The value of computational decomposition of perception and action
+### The value of computational decomposition of perception and action
 
 The power of formal computational models to uncover patterns, principles, and dynamics in social perception and behavior (Crockett, 2016; Johnson et al., 2017; Hackel and Amodio, 2018; Freeman et al., 2018) has made them an increasingly popular tool in economics, psychology, and neuroscience (Capraro and Perc, 2021; Kvaran and Sanfey, 2010; Kliemann and Adolphs, 2018; Charpentier and O’Doherty, 2018; Behrens et al., 2009; Freeman and Ambady, 2011; Yu et al., 2019). Our results contribute to this movement by showing how computational models of social perception can provide novel insights into the different computations (i.e., bias and sensitivity) underlying impression formation and its effect on behavior. Although the concept that judgments are a composite of subprocesses is not novel in itself (Kenny and Albright, 1987), modeling allowed us to formally disentangle these different (neuro)computational mechanisms and demonstrate how they shape different aspects of meaningful social action months (or even years) later. Future research should confirm and extend these findings using other social judgments in other, ideally more ecologically relevant, contexts (Thornton and Mitchell, 2018). For example, research suggests that perceptions of others’ warmth and competence can impact hiring decisions (Cuddy et al., 2011; Louvet, 2007). Are perceptions of warmth or competence likewise driven by stable individual differences in bias and sensitivity? Do stable individual differences in merit bias or sensitivity shape real-world prosociality, such as political support for social welfare programs (Appelbaum, 2002; Attewell, 2021; Oorschot Van, 2000), or the extent to which different people engage in the online posting of degrading content, harsh comments, or cyber-bullying (Coe et al., 2014; Tokunaga, 2010)?
 
-## The neural bases of need and merit perception
+### The neural bases of need and merit perception
 
 Determining whether socially relevant cues are processed by domain-specific or domain-general neural circuitry remains an active goal of the social and cognitive neurosciences. While considerable evidence exists for specificity in some domains (e.g., face processing Elbich et al., 2019; Itier et al., 2007; Kanwisher, 2000), emotion recognition (Ekman et al., 1983; Adolphs et al., 1994; Morris et al., 1996), empathy in different modalities (Corradi-Dell’Acqua et al., 2016), or even aspects of moral decision-making (Hutcherson et al., 2015b), other research points to the broad engagement of the mentalizing network across tasks (Barrett and Satpute, 2013; Schuwerk et al., 2017; Scholz et al., 2009; Mitchell, 2008; Baetens et al., 2015; Carter and Huettel, 2013; Lugrin et al., 2023). Given their importance for decision-making, we sought to determine whether perceptions of either need or merit fall within the category of social phenomena processed by dedicated neural circuits. Our neural findings largely suggest the answer is no. Both merit and need perception engaged the mentalizing network to a similar extent and were virtually indistinguishable neurally, with some minor differences. This held true even when applying multivariate decoding approaches, which have been suggested to be more sensitive than traditional univariate analysis techniques (Kriegeskorte and Bandettini, 2007). We note, however, that perceptions of others’ merit/need in this task likely represent a composite of multiple different sub-components (e.g., related to specific social cues sampled and integrated to yield the final social judgment). Thus, our results do not preclude the existence of domain-specific neural circuitry at a lower level of social appraisals (e.g., gender or age categorization, facial and postural cues that a person is in pain, etc.).
 
-## Limitations and future directions
+### Limitations and future directions
 
 Our results come with some important limitations. One of the biggest concerns is the puzzling absence of any observed neural or behavioral correlates of need sensitivity, in either the social perception or altruism tasks. We primarily relied on univariate analyses to support our conclusions here. Although a supplementary multivariate pattern analysis yielded little additional insight, exploring alternative methods such as the gradient approach or functional connectivity (Janet et al., 2024; Margulies et al., 2016; Vos de Wael et al., 2020) could prove more revealing. One other contributing factor to this null result could simply be the small sample size for our altruism task due to COVID-related delays and participant attrition. Other alternative explanations are also possible, however. While purely speculative, one possibility might lie in a limitation of the stimuli used for the social perception task. Need was generally signaled directly and concretely in each picture (i.e., someone with a knife to their throat, someone with a pained facial expression, etc.). In contrast, merit often had to be inferred indirectly from cues about the cognitive and motivational dispositions of the target (e.g., performance of unethical actions, clothing indicating group membership, other signs this person was a ‘good’ person, etc.). The ability to discriminate based on these abstract cues might thus have correlated with TPJ response and with the use of similarly abstract cues during the altruism task to judge merit of social partners. It is possible that if we had signaled need using similarly abstract cues in the social perception task, we might have observed greater associations with mentalizing network regions and/or with altruistic behavior months later. Future work will be needed to more systematically vary factors related to concrete versus abstract inference, in larger and more diverse samples, and with a greater range of socially relevant behaviors. Finally, another important open question concerns the origins of the identified perceptual biases and sensitivities. Future research should examine if differences in social perceptions stem from societal or religious values (see Amormino et al., 2022) conveyed during individuals’ upbringing, genetic factors, or a combination of both.
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 This research took place in the context of a large project that recruited participants from the broader Los Angeles metropolitan area to come to the lab on multiple days to complete different behavioral and neuroimaging tasks related to social cognition (Kliemann et al., 2022). We recruited 50 participants from this larger project pool to complete a newly developed fMRI social perception task. All participants were right handed, had normal or corrected-to-normal vision, spoke English fluently, and had IQ scores in the normal range (20 females; mean age = 33 years, range = 19–49; full-scale IQ = 105.18 ± 8.04 (mean ± std), range = 87–127; Wechsler, 1999; Wechsler, 2011). Of these 50 participants, we excluded one who fell asleep and five for excessive movement (framewise displacement >0.3 mm on over 30% of frames and visual spikes), yielding a total sample of n = 44 for the social perception task. We also recruited 42 participants from the larger participant pool to complete the altruism task (13 females; mean age = 34 years, range = 19–49; full-scale IQ = 104.79 ± 7.97, range = 87–127). Of these 42 participants, we excluded one individual who fell asleep, five for excessive movement during fMRI data collection, three for invariant behavioral responses (identical left/right button press in >90% of trials, indicating inattention to monetary offers in the altruism task), and five for manipulation check failures (e.g., failing memory checks regarding partner behavior in the altruism task, see below). This procedure yielded a sample of n = 28 for the altruism task, with an overlap of 25 individuals who successfully completed both sessions (social perception and altruism tasks). Thus, we report results regarding the social perception task for 44 participants (27 males; mean age = 34 years, range = 19–49; full-scale IQ = 105.84 ± 7.85, range = 90–127), the altruism task for 28 participants (19 males; mean age = 35 years, range = 25–49; full-scale IQ = 106.36 ± 7.94, range = 94–127), and cross-session results (comparing data across both tasks) for the sample of 25 individuals with valid data in both (17 males; mean age = 35 years, range = 25–49; full-scale IQ = 106.60 ± 8.26, range = 94–127). Participants in our overlap sample (valid data in both tasks) had an average separation between both tasks of 303 days (range: 27–663). This delay minimized the risk of sequential dependencies between tasks and increased confidence in the temporal stability of relationships between social perception and social action. Participants received $20 per hour for each experimental session and an additional amount based on one randomly selected trial in the altruism task to incentivize choices and ensure that participants’ responses reflected their actual preferences. All participants provided written informed consent according to a protocol approved by the Institutional Review Board of the California Institute of Technology (#12-0343).
 
-## Normative sample
+### Normative sample
 
 Estimating participants’ sensitivity to need and merit cues in the social perception task required quantifying the degree of need and merit displayed in each picture (e.g., stimuli, see Figure 1A). We assessed this quantity by obtaining normative ratings from an independent sample of participants recruited through Mechanical Turk (MTurk; http://www.mturk.com) and Qualtrics (http://www.qualtrics.com). The normative sample included 50 participants (17 females; mean age = 42 years, range = 25–67; 82% of White race; 100% native English speakers). This sample performed an online behavioral version of the social perception task (see below). Participants made binary judgments of whether the displayed target individual needed help, deserved help (merit), or used both hands (control) (i.e., the same judgment made by our main fMRI sample). For a given judgment (need/merit/control), the mean proportions of ‘yes’ responses across the sample for each image were used to operationalize perceptual evidence on merit, need, and control in the experimental stimuli used in the social perception task. We used these data from the separate sample to estimate the free sensitivity parameters in the behavioral computational model of social perception (see below). Data from our independent normative participant sample are available on the Open Science Framework (OSF; see https://osf.io/4u5vs/).
 
-## Social perception task
+### Social perception task
 
 To assess individual differences in social perceptions, we used a modified version of the established fMRI why/how task (Spunt and Adolphs, 2014; Spunt and Adolphs, 2015). Participants viewed images of people in complex real-world scenes and made rapid yes/no judgments (button presses) while their brain responses were measured using fMRI. In separate blocks (Figure 1A), participants made judgments regarding others’ perceived merit (Does this person deserve help?), need (Does this person need help?), or factual judgments that did not require social inferences (Does this person use both hands?), which served as a control condition. Before each task block, a visual prompt informed participants of the upcoming condition of the task block. Moreover, a keyword was briefly presented between images of a block as a reminder (i.e., ‘need’, ‘deserve’, or ‘both hands’; Figure 1A). Each block consisted of 32 images, and participants completed two blocks per condition. Thus, participants viewed a total of 64 images, each presented once per condition (need, merit, and control). Some images displayed multiple people; a green arrow superimposed on the photograph indicated the target of the social perception. Images were displayed for 2 s with a 0.5 s inter-stimulus interval. The presentation order of images was fixed across participants to maximize efficiency. Crucially, this task did not require people to make altruistic choices or engage in meaningful social interaction. Instead, it focused solely on capturing individuals’ patterns of perceiving others’ perceived merit, need, and factual control inferences, which we modeled using an evidence accumulation framework (computational model of social perception, see below). The task was implemented in MATLAB (MathWorks) using the Psychophysics Toolbox extensions (Brainard, 1997; Kleiner et al., 2007; Pelli, 1997). The stimuli and presentation code are available at https://osf.io/4u5vs/.
 
-## Altruism task
+### Altruism task
 
 Participants completed an altruism task (modified dictator game) on a different day than the social perception task (average delay of 303 days, min. = 27, max. = 663). All but one participant completed the social perception task first. On each trial, we presented participants with a proposed monetary allocation between themselves and one of three partners (e.g., $13 for themselves and $35 for their current partner; choice screen, see Figure 4A). Participants decided whether to accept or reject the proposed allocation in favor of a constant default allocation of $20 for both (Hutcherson et al., 2015a; Tusche and Hutcherson, 2018). Participants indicated their choices by pressing one of four buttons (‘strong no’, ‘no’, ‘yes’, or ‘strong yes’). The direction of the response scale (‘strong yes’ to ‘strong no’) and the presentation side of self- and other-related payoffs (left vs. right side of the screen) was counterbalanced across participants. Proposed monetary outcomes for the participant (You) and the partner (represented by one of three colored geometric shapes) ranged from $5 to $35 (Figure 4B). To minimize the effects of habituation and repetition, we randomly jittered proposal amounts by $0–$4. We informed participants that one trial would be randomly selected and implemented at the end of the experiment. In total, there were 300 trials divided across five runs (i.e., 60 trials per run, 100 trials per partner). Stimulus presentation and response collection in the altruism task were implemented using PsychoPy (Peirce, 2007; Peirce, 2008).
 
-## Partner’s merit (high/low/unknown)
+#### Partner’s merit (high/low/unknown)
 
 Participants played the altruism task with three partners that differed in their perceived merit (implemented in separate blocks; 20 consecutive trials per partner within a functional run; counterbalanced order of the three partners across participants). The merit of the three partners in the task was manipulated before the altruism task and was based on information about partners’ behavior in a separate exchange game that partners played with anonymous third persons, modified from Singer et al., 2006; Singer et al., 2004 (see Appendix 1). Merit levels were manipulated such that one player was perceived as highly deserving (high merit partner), undeserving (low merit partner), or having unknown merit (no information provided before the altruism task, control condition). Partner identity was indicated in the altruism task using one of three colored geometric shapes (random combination of either a circle, diamond, or triangle, colored either red, yellow, or blue), shown at the beginning of each block of 20 trials with the same partner (merit cue, Figure 4A) and on each trial-wise offer screen indicating payoffs for the specific partner (choice screen, Figure 4A).
 
-## Partner’s need (high/low)
+#### Partner’s need (high/low)
 
 The altruism task also experimentally manipulated the need level of the three partners on a trial-by-trial level. Specifically, we manipulated the probability that a partner would have to complete a painful cold pressor task (CPT; Hines and Brown, 1936) at the end of the experiment (outside of the scanner; hand submerged in ice water for ~2 min). We informed participants that each of the three partners would be given the option of using money received in the altruism task to buy out of the post-task CPT (based on a randomly selected trial at the end of the task that would be implemented according to the participants’ choice on that trial). With each dollar spent, the partner could subtract 10% from their probability of having to perform the painful CPT (e.g., spending $3 would reduce an 80% chance to 50%). Thus, participants knew they could help the other player avoid the painful CPT by making generous choices.
 
@@ -168,41 +741,53 @@ To signal need on each trial, participants were presented with a percentage indi
 
 To ensure the saliency of the experimental need manipulation, all participants completed the painful CPT task themselves before the altruism task outside the scanner. Participants were also told that all three partners had already completed one round of the CPT task before the altruism task and were presented with their ostensible pain ratings (7 on a 7-point scale; 1 = not at all; 7 = extremely). These ratings signaled to participants that all three partners found the ice water equally and extremely painful and were highly motivated to avoid another round of the CPT. After the altruism task, participants completed a variety of computerized sanity check questions and questionnaires outside of the scanner (see Figure 4—figure supplement 1). These sanity checks were used to verify the effectiveness of our experimental merit and need manipulations and to exclude any participants who failed to correctly remember how partners had acted in the behavioral exchange game prior to the altruism task (Appendix 1).
 
-## Analysis
+### Analysis
 
-## Computational behavioral model of social perception
+#### Computational behavioral model of social perception
 
 We developed two behavioral computational models to characterize individual differences in social perceptions (social perception task) and prosocial behaviors (altruism task). Separately for each task, we modeled participants’ choices and RTs using variants of the drift-diffusion model (DDM; Ratcliff et al., 2016). This model depicts choices as the noisy accumulation of evidence until a sufficient level favoring one choice option is attained. The DDM has been used to examine processes underlying both perceptual and value-based decisions (Ratcliff et al., 2016; Krajbich et al., 2010; Krajbich and Rangel, 2011; Towal et al., 2013) and is being increasingly applied to studying social and affective decision-making processes (Tusche and Bas, 2021; Saulin et al., 2022; Hutcherson et al., 2015a; Roberts and Hutcherson, 2019; Krajbich et al., 2015; Kutlikova et al., 2023; Harris et al., 2018; Pollerhoff et al., 2023).
 
-To model trial-wise responses in the social perception task (Figure 1A), we assumed that when faced with the task of judging each image on a particular dimension (i.e., merit, need, or the control judgments of using both hands), a decision-maker employs the following strategy. At each moment in time, they draw noisy samples of both task-relevant and task-irrelevant evidence about Merit, Need, and Control (both hands) from the stimuli, weighted by person- and condition-specific sensitivities Smerit, Sneed, and Scontrol. They accumulate these samples of evidence E at each timepoint t according to the following equation:(3)E(t|Condition)=Biascondition+ Smerit|conditionMerit+Sneed|conditionNeed+Scontrol|conditionControl+ϵ(t)
+To model trial-wise responses in the social perception task (Figure 1A), we assumed that when faced with the task of judging each image on a particular dimension (i.e., merit, need, or the control judgments of using both hands), a decision-maker employs the following strategy. At each moment in time, they draw noisy samples of both task-relevant and task-irrelevant evidence about Merit, Need, and Control (both hands) from the stimuli, weighted by person- and condition-specific sensitivities Smerit, Sneed, and Scontrol. They accumulate these samples of evidence E at each timepoint t according to the following equation:
+
+$$
+E(t|Condition)=Bias_{condition}+ S_{merit|condition}Merit+S_{need|condition}Need+S_{control|condition}Control+ϵ(t)
+$$
 
 Condition refers to the specific judgment (merit, need, and control) being performed on that trial (task block). Equation 3 reflects the assumption that a person’s judgment should be most sensitive to task-relevant information (e.g., cues signaling merit during the merit judgment blocks), but might also be inadvertently influenced by task-irrelevant information (e.g., cues signaling need in merit judgment blocks). For example, merit judgments should primarily reflect cues indicating merit (i.e., high sensitivity estimates of Smerit|merit condition) but might also reflect in part cues indicative of need (i.e., a low but non-zero Sneed|merit condition). Thus, the model yields a total of nine sensitivity parameters estimated across the three conditions of the social perceptual task. The image-level evidence for Merit, Need, and Control (for the stimulus shown on that trial) was estimated using data from an independent participant sample (see Normative sample above). For each image, we used the mean-centered average proportion of ‘yes’ responses that the displayed target individual deserved help, needed help, or was using both hands (based on data from the independent normative sample). We focus on the ‘task-relevant’ estimated parameters Smerit in the merit condition, Sneed in the need condition, and Scontrol in the control condition as indices of participants’ perceptual sensitivity to cues suggestive of others’ merit, need, or usage of both hands (supplemental manipulation checks confirmed larger perceptual sensitivity estimates in task-relevant compared to task-irrelevant task conditions, see Appendix 2). Higher parameter values suggest stronger discrimination of the normatively agreed-upon relevant cues (as captured by the independent normative sample). The DDM also includes three condition-wise free parameters that influence the overall drift, irrespective of the specific image (Biasneed, Biasmerit, and Biascontrol; indicated as Biascondition in Equation 3). These parameters allow us to capture an individual’s general tendency to identify cues suggestive of others’ merit and need (or control), regardless of the actual social cues present in the image. We refer to these estimates as perceptual bias.
 
 Once the momentary evidence E reaches the upper (yes) or lower (no) threshold, evidence accumulation terminates, and the corresponding choice is implemented. The difference between thresholds is estimated by a set of three parameters (aΔneed, aΔmerit, and aΔcontrol) that represent within-individual stability and difference across tasks. The DDM also includes three condition-wise non-decision time (ndt) parameters for capturing the time taken to initially encode stimuli and to implement the motor response, estimated similarly to incorporate within-individual stability and change across task conditions. Finally, the model included three condition-wise starting bias (z) parameters, which represent another potential mechanism by which biases at the onset of evidence accumulation can impact the decision process. Note that, although we estimated these starting biases to improve model fit, our focus in all primary analyses reported in this paper is on the evidence-related perceptual bias for merit and need (represented by Biascondition in merit and need blocks, respectively), not these motor-related starting biases (Witt et al., 2015). A detailed description of the model fitting procedure is provided in Appendix 3.
 
-## Behavioral generosity in the altruism task
+### Behavioral generosity in the altruism task
 
-Choices in the altruism task (Figure 4A) involved a trade-off between monetary outcomes for the self and one of three partners. Monetary proposals were selected so that a choice could benefit the partner or the participant, compared to the constant default ($20 for both players). Following previous implementations (Hutcherson et al., 2015a; Tusche and Hutcherson, 2018; Hutcherson and Tusche, 2022), we classified a choice as generous if the participant accepted a proposal that benefited the partner at the expense of oneself ($Self < $Other) or rejected a proposal that profited themselves at the partner’s expense ($Self > $Other). The overall and condition-specific fraction of generous choices measured participants’ generosity. Differences in generosity across conditions provided model-free estimates of the impact of social cues about others’ merit and need on social behaviors. To assess whether merit and need altered generosity, we computed a mixed-effects logistic regression using the glmer function in R. Trial-wise information about generous choice (no = 0, yes = 1) served as the dependent variable. The model included the following fixed effects: a trial-wise indicator for the level of the partners’ need (reference: low need), an indicator for the partners’ merit level (reference: merit low), and their interaction. Participant id was specified as a random effect, as follows:(4)GenerousChoice(0/1)∼1+Need+Merit+Need×Merit+(1|Participant)
+Choices in the altruism task (Figure 4A) involved a trade-off between monetary outcomes for the self and one of three partners. Monetary proposals were selected so that a choice could benefit the partner or the participant, compared to the constant default ($20 for both players). Following previous implementations (Hutcherson et al., 2015a; Tusche and Hutcherson, 2018; Hutcherson and Tusche, 2022), we classified a choice as generous if the participant accepted a proposal that benefited the partner at the expense of oneself ($Self < $Other) or rejected a proposal that profited themselves at the partner’s expense ($Self > $Other). The overall and condition-specific fraction of generous choices measured participants’ generosity. Differences in generosity across conditions provided model-free estimates of the impact of social cues about others’ merit and need on social behaviors. To assess whether merit and need altered generosity, we computed a mixed-effects logistic regression using the glmer function in R. Trial-wise information about generous choice (no = 0, yes = 1) served as the dependent variable. The model included the following fixed effects: a trial-wise indicator for the level of the partners’ need (reference: low need), an indicator for the partners’ merit level (reference: merit low), and their interaction. Participant id was specified as a random effect, as follows:
 
-## Computational behavioral model of altruistic choice
+$$
+GenerousChoice(0/1)∼1+Need+Merit+Need\timesMerit+(1|Participant)
+$$
 
-To model choices and RT behavior in the 3 (merit: high, unknown, low) × 2 (need: high, low) design of the altruism task, we implemented a second behavioral computational model. Following previous applications (Hutcherson et al., 2015a; Tusche and Hutcherson, 2018), for each of the six experimental conditions, value-related evidence V at time t was estimated as follows:(5)V(t|condition)=w0|condition+ wself|conditionSelf+wother|conditionOther+wfairness|conditionFairness+ϵ(t)
+### Computational behavioral model of altruistic choice
 
-Here, Self and Other refer to the monetary outcomes of the proposed allocation of a trial (minus the default outcomes of $20 for both; rescaled by dividing by 10). The Fairness of the proposed allocation was calculated as -1×|Other-Self|. The free parameters for each attribute weight (wself, wother, wfairness) indicate variance in the degree to which evidence about outcomes to the self, other, or the fairness of the monetary offer guided choices in a particular condition of the altruism task. The value constant w0 represents the extent to which a participant tends to prefer the proposal over the default, regardless of trial-specific values. Matching the computational model of social perception (see above), the model of altruistic choice also estimated free parameters capturing the decision threshold (a), non-decision time (ndt), and response-related starting bias (z) parameter. The parameters z, ndt, and a were fixed across the merit × need conditions.
+To model choices and RT behavior in the 3 (merit: high, unknown, low) × 2 (need: high, low) design of the altruism task, we implemented a second behavioral computational model. Following previous applications (Hutcherson et al., 2015a; Tusche and Hutcherson, 2018), for each of the six experimental conditions, value-related evidence V at time t was estimated as follows:
+
+$$
+V(t|condition)=w_{0|condition}+ w_{self|condition}Self+w_{other|condition}Other+w_{fairness|condition}Fairness+ϵ(t)
+$$
+
+Here, Self and Other refer to the monetary outcomes of the proposed allocation of a trial (minus the default outcomes of $20 for both; rescaled by dividing by 10). The Fairness of the proposed allocation was calculated as $-1\times|Other-Self|$. The free parameters for each attribute weight ($w_{self}$, $w_{other}$, $w_{fairness}$) indicate variance in the degree to which evidence about outcomes to the self, other, or the fairness of the monetary offer guided choices in a particular condition of the altruism task. The value constant w0 represents the extent to which a participant tends to prefer the proposal over the default, regardless of trial-specific values. Matching the computational model of social perception (see above), the model of altruistic choice also estimated free parameters capturing the decision threshold (a), non-decision time (ndt), and response-related starting bias (z) parameter. The parameters z, ndt, and a were fixed across the merit × need conditions.
 
 To capture variance in weight parameters w across the three levels of merit (high, low, unknown) and two levels of need (high, low), we estimated both individual-specific stability and change parameters for each of the four weights w (i.e., self, other, fairness, and the value constant). A more complicated model that allowed for need × merit interactions in driving weights did not improve model fit. We thus focus on this simpler model that includes a baseline parameter for each weight, and three change parameters for the effects of increasing or decreasing merit and increasing need. A detailed description of the model fitting procedure is provided in Appendix 3.
 
-## Correlating social perception and social action
+### Correlating social perception and social action
 
 Next, we tested for a relationship between social perception and social action. To this end, we correlated individual-specific bias and sensitivity parameters obtained from the social perception task with value-based attribute weight parameters in the altruism task. Because we found that some estimates of our computational model diverged from a normal distribution, we used non-parametric statistical tests to examine these relationships. Post hoc tests were corrected for multiple comparisons using the fdr_bh function implemented in MatlabR2022a. All results are reported for two-tailed statistical tests, unless reported otherwise. We removed outliers from all variables in our analyses based on values that exceeded 3 standard deviations from the mean.
 
-## fMRI data
+### fMRI data
 
-## Acquisition
+#### Acquisition
 
 All neuroimaging data were acquired at the Caltech Brain Imaging Center using a Siemens Trio 3.0 Tesla scanner outfitted with a 32-channel phased-array head-coil. Functional image acquisition for the social perception task and altruism task occurred on different days in separate sessions (average delay of 303 days). For both fMRI tasks, we acquired gradient echo T2*-weighted echo-planar images (EPIs; 60 slices, voxel resolution 2.5 × 2.5 × 2.5 mm3, TR = 700 ms, TE = 30 ms, flip angle = 53°, FOV = 200 mm, interleaved acquisition order, multi-band acceleration factor = 6). We collected 903 volumes for the social perception task and 925 volumes for the altruism task. For all participants, we also acquired a high-resolution anatomical T1-weighted image using a MEMP-RAGE sequence (208 slices, 0.9 × 0.9 × 0.9 mm3, matrix size 256 × 256, TR = 2.55 s, TI = 1.15 s, TE = 1.6, 3.5, 5.3, 7.1 ms with RMS echo combination, RAGE flip angle = 8°). Distortion correction data for the fMRI EPI acquisitions employed a pair of phase-encoding polarity reversed T2w SE-EPI images with identical geometry and EPI echo train timing to the T2*w EPI images (TR 4.8 s, TE 50 ms, flip angle 90°). For information on preprocessing of functional and structural brain data, see Appendix 4.
 
-## General linear model of brain responses in the social perception task
+#### General linear model of brain responses in the social perception task
 
 This analysis aimed to identify brain regions recruited during different judgments in the social perception task. For each participant, we estimated a general linear model (GLM) using a canonical hemodynamic response function and a 128-s high-pass cut-off filter to eliminate low-frequency drifts in the data. The GLM estimated three regressors of interest corresponding to condition-wise brain responses (implemented in different blocks) during merit inferences (deserves help?), need inferences (needs help?), and factual control inferences that did not require social inferences (used both hands?; Figure 1A). The three condition-wise regressors were defined by the onset time of the first target image and the offset of the final image of each block (two blocks per condition). The GLM also included eight regressors of no interest: six motion regressors, the framewise displacement (estimated during preprocessing of neuroimaging data using fMRIPrep, https://fmriprep.org/; Esteban et al., 2018a), and a session constant. The GLMs were implemented in MATLAB (R2018b) using the SPM12 toolbox (http://www.fil.ion.ucl.ac.uk/spm).
 
@@ -210,7 +795,7 @@ For each participant, we created several contrasts of interest: First, we identi
 
 We also estimated a supplemental GLM for fMRI data from the altruism task. Due to COVID-19-related interruptions, only 25 participants from the sample that performed the social perception task also completed the fMRI altruism task. Given the limited sample size and noise level of fMRI data, we decided to focus solely on the behavior in the altruism task to address our research objectives.
 
-## Multivariate decoding of the inference condition in the social perception task
+### Multivariate decoding of the inference condition in the social perception task
 
 We also performed multivariate decoding analysis on the brain data collected in the social perception task. We first estimated another GLM for each participant (using SPM12). The GLM was identical to the one used for the univariate analysis with two exceptions: first, the model was estimated on non-smoothed brain data. Second, instead of collapsing both task blocks per condition into one regressor of interest, the GLM modeled each block of the social perception task separately, yielding six regressors of interest ([condition: merit, need, control] × [block: 1, 2]).
 

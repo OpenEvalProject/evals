@@ -31,7 +31,7 @@
 
 ## Abstract
 
-10.7554/eLife.42475.001 The immune system distinguishes between self and foreign antigens. The kinetic proofreading (KPR) model proposes that T cells discriminate self from foreign ligands by the different ligand binding half-lives to the T cell receptor (TCR). It is challenging to test KPR as the available experimental systems fall short of only altering the binding half-lives and keeping other parameters of the interaction unchanged. We engineered an optogenetic system using the plant photoreceptor phytochrome B (PhyB) as a ligand to selectively control the dynamics of ligand binding to the TCR by light. This opto-ligand-TCR system was combined with the unique property of PhyB to continuously cycle between the binding and non-binding states under red light, with the light intensity determining the cycling rate and thus the binding duration. Mathematical modeling of our experimental datasets showed that indeed the ligand-TCR interaction half-life is the decisive factor for activating downstream TCR signaling, substantiating KPR.
+The immune system distinguishes between self and foreign antigens. The kinetic proofreading (KPR) model proposes that T cells discriminate self from foreign ligands by the different ligand binding half-lives to the T cell receptor (TCR). It is challenging to test KPR as the available experimental systems fall short of only altering the binding half-lives and keeping other parameters of the interaction unchanged. We engineered an optogenetic system using the plant photoreceptor phytochrome B (PhyB) as a ligand to selectively control the dynamics of ligand binding to the TCR by light. This opto-ligand-TCR system was combined with the unique property of PhyB to continuously cycle between the binding and non-binding states under red light, with the light intensity determining the cycling rate and thus the binding duration. Mathematical modeling of our experimental datasets showed that indeed the ligand-TCR interaction half-life is the decisive factor for activating downstream TCR signaling, substantiating KPR.
 
 ## Introduction
 
@@ -57,7 +57,7 @@ Here we fused the first 100 amino acids of PIF6 together with GFP to the ectodom
 
 The first aim of our study was to establish an optogenetic system in which ligand binding to the TCR can be reversibly controlled by light (Figure 1).
 
-## Engineering of the opto-ligand-TCR system: the ligand
+### Engineering of the opto-ligand-TCR system: the ligand
 
 The light-responsive N-terminal 651 amino acids of A. thaliana PhyB (PhyB1-651) have been used as an optogenetic tool (Adrian et al., 2017; Baaske et al., 2019; Beyer et al., 2015; Beyer et al., 2018; Johnson and Toettcher, 2018; Levskaya et al., 2009; Müller et al., 2013b; Toettcher et al., 2013) and the photobiology of this fragment has been described previously (Smith et al., 2016). Here we used this PhyB form as a ligand. PhyB1-651 fused to the biotinylation site Avitag (Beckett et al., 1999) and a His6-tag (Figure 2A) was produced in E. coli. Additionally, the bacteria were engineered to produce the cyanobacterial version of the phytochrome chromophore, phycocyanobilin (Essen et al., 2008; Smith et al., 2016). PhyB1-651-Avitag-His6, called PhyB in the remainder of this article, was isolated by Ni2+-affinity chromatography (Smith et al., 2016). We then tested the functionality of PhyB through its light-dependent interaction with PIF6. To this aim, we produced the first 100 amino acids of A. thaliana PIF6 (PIF61-100), which were shown to be sufficient for photoreversible PhyB binding with nanomolar affinity (Tischer and Weiner, 2014), as a fusion protein with the maltose-binding protein and a His6-tag [MBP-PIF61-100-His6, from now on called MBP-PIF(wt)]. After illuminating a mixture of PhyB and an excess MBP-PIF(wt) with saturating 660 nm light, 70% of the PhyB molecules were complexed with PIF as depicted by a shift in elution from a size exclusion chromatography column (Figure 2B). This was not the case when the proteins were exposed to 740 nm light. Since at photoequilibrium under 660 nm light only 80% of the PhyB molecules are in the ON state (Bae and Choi, 2008; Smith et al., 2016), we conclude that the majority of PhyB molecules were functionally active.
 
@@ -67,31 +67,55 @@ The light-responsive N-terminal 651 amino acids of A. thaliana PhyB (PhyB1-651) 
 
 Although soluble TCR ligands are active as dimers (Boniface et al., 1998; Cochran et al., 2000; Minguet and Schamel, 2008; Minguet et al., 2007), tetrameric pMHC based on streptavidin are routinely used to stimulate the TCR (Altman et al., 1996) and to obtain insight into ligand discrimination by T cells (Stone et al., 2011; Stone et al., 2001). Thus, we wanted to construct PhyB tetramers (PhyBt) to be used as ligands in our system (Figure 1). To this end, biotinylated PhyB was tetramerized using fluorophore-coupled streptavidin. After separating the tetramers from monomers by size exclusion chromatography (Figure 2C), we obtained purified PhyBt that we used in this work.
 
-## Engineering of the opto-ligand-TCR system: the TCR
+### Engineering of the opto-ligand-TCR system: the TCR
 
 Next, we engineered a PIF-fused TCR that can bind to and be activated by PhyBt when the PhyB molecules are in the ON (but not in the OFF) state (Figure 1). In plants PIF6 is produced in the cytoplasm, whereas in our system PIF6 is produced in the oxidative environment of the endoplasmic reticulum. Therefore, we mutated cysteines and N-linked glycosylation sites (Asn-X-Ser/Thr) in PIF6. We produced a panel of five different PIF61-100 mutants abolishing cysteines 9 and 10 as well as asparagine 35 or serine 37 as MBP fusion proteins (Figure 3—figure supplement 1A,B). We analyzed the interaction of PhyB with these PIF61-100 mutants under limiting amounts of MBP-PIF using size exclusion chromatography (Figure 3—figure supplement 1C,D). All mutants formed complexes with PhyB pre-illuminated with 660 nm light [PhyB(660)] similar to MBP-PIF(wt).
 
 Having seen that all PIF61-100 mutants interacted well with PhyB, they were fused - preceded by a signal peptide - to the N-terminus of the human HA1.7 TCRβ chain that contains a Vβ3 variable region (Hennecke et al., 2000; Hewitt et al., 1992) (Figure 3A). We analyzed the presence of the different PIF61-100-TCRβ constructs on the cell surface following lentiviral transduction of Jurkat T cells (Abraham and Weiss, 2004). PIF61-100 C9S C10S S37A [PIF(SSA)] showed the highest surface presence (Figure 3B), indicating that it assembled to a complete TCR complex (Alarcón et al., 2003; Call and Wucherpfennig, 2005). Hence, PIF(SSA) was therefore used for all future optimizations and termed secretory PIF or PIFS (Figure 3C). Surprisingly, despite the good interaction of MBP-PIFS with PhyB in size-exclusion chromatography (Figure 3—figure supplement 1C,D), no binding of PhyBt to the PIFS-TCR on the surface of Jurkat cells could be detected (Figure 3D). GFP-PIFS-TCR cells (described below) served as a positive control for binding (Figures 3D and 4F panels are from the same experiment). Furthermore, PIFS-TCR Jurkat cells could be stimulated to flux calcium via cross-linking of the PIFS-TCR using an anti-Vβ3 antibody, but not using PhyBt pre-illuminated with 660 nm light, called PhyBt(660) (Figure 3E). Consequently, although PIFS-TCRβ is present at the cell surface and PIFS itself binds to PhyB (in the form of MBP-PIF), PIFS loses its binding capacity towards PhyB when it is fused to the TCR and exposed on the T cell’s surface.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/42475/elife-42475-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematics of the PIF-TCRβ constructs, including wild-type and mutant PIF. SP depicts the signal peptide and the arrow the signal peptidase cleavage site. The schematic constructs are drawn to scale with the scale bar indicated. (B) The presence of the different PIF-TCRs and a single chain variable fragment (scFv)-TCR on the cell surface was measured in lentivirally transduced Jurkat cells together with the parental cell line using an anti-Vβ3 antibody (Jovi3) via flow cytometry. The median fluorescence intensity (MFI) averaged for three experiments ± SEM is depicted. (C) Scheme of PIFS-TCRβ as integrated into the TCR. (D) 100 nM phycoerythrin (PE)-labeled PhyBt pre-illuminated with 660 nm or 740 nm light were incubated with Jurkat, PIFS-TCR Jurkat and GFP-PIFS-TCR cells and binding detected by flow cytometry. Numbers depict the % of cells in the respective quadrant. Results show one experiment of n = 3. (E) PIFS-TCR cells were labeled with Indo-1 and calcium influx measured by flow cytometry. 100 nM PhyBt(660) (orange) or 1 µg/ml anti-Vβ3 antibody (blue) were added as stimuli. Their addition is marked by an arrow and the illumination procedure by a bar above the graph (grey = dark). Results show one experiment of n > 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42475/elife-42475-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The first 100 amino acids of different PIF proteins from A. thaliana were aligned using MUSCLE. Cysteines are marked in yellow and asparagines that are used for N-linked glycosylation in blue. The highly conserved region that most likely constitutes the PhyB-binding site (Khanna et al., 2004) is boxed and was not mutated. The residue numbering is based on PIF6. (B) We fused the maltose-binding protein (MBP) of E. coli to the first 100 amino acids of PIF6 (PIF61-100) and a His6-tag for purification. We mutated Cys9, Cys10, Asn35 or Ser37 and the resulting mutant MBP-PIF61-100 molecules are shown alongside the wild-type MBP-PIF61-100 molecule. (C) 200 µg recombinant PhyB (see Figure 2) was illuminated with 660 nm light [PhyB(660)] and added in a 2:1 molar ratio to MBP-PIF(SSA). The mixture was incubated for 60 min at room temperature. We used a molar excess of PhyB to not saturate PIF-binding to PhyB. The proteins were then separated by gel filtration using a Superdex 200 10/300 GL column and PhyB was detected by its absorbance at 671 nm (grey line). PhyB molecules around 14.5 ml elution volume are the free PhyB molecules and the ones around 12.5 ml are the PhyB-MBP-PIF complexes, showing that approximately 60% of the PhyB molecules were PIF bound under these conditions. As controls, MBP-PIF alone did not absorb at 671 nm and PhyB alone was only detected at 14.5 ml elution volume. One representative experiment is depicted of n = 3. (D) Quantification of the binding data from (C) using all MBP-PIF variants, demonstrating that all mutants bound similarly to PhyB(660) as the wild-type MBP-PIF. Shown are the mean of 3 independent experiments ± SEM.
+
 ![Figure 4.](https://cdn.elifesciences.org/articles/42475/elife-42475-fig4-v2.jpg)
 
-**Figure 4.:** S-TCR.(A) Schematics of the GFP-PIFS-TCRβ constructs, including three different furin cleavage sites (F1, F2, F3) or omitting any cleavage site (noF). SP depicts the signal peptide, the arrow the signal peptidase cleavage site and moxGFP the monomeric GFP optimized for an oxidative environment. (B) The surface expression of the different GFP-PIFS-TCRs and PIFS-TCR was measured in transduced Jurkat cells together with the parental cell line using an anti-Vβ3 antibody (Jovi3) via flow cytometry. (C) Analogous to (B), the amount of GFP was quantified on the surface of the different transductants using a polyclonal anti-GFP antibody via flow cytometry. (B) and (C) depict the median fluorescence intensity (MFI) averaged for three measurements ± SEM. (D) Scheme of GFP-PIFS-TCRβ as integrated into the TCR. (E) 100 nM phycoerythrin (PE)-labeled PhyBt pre-illuminated with 660 nm or 740 nm light were incubated with the cells indicated and binding was detected by flow cytometry. One experiment out of three is depicted displaying the average of quadruplicates ± SEM. (F) Together with Figure 3D these are the GFP vs PhyBt plots of the experiment quantified in (E).
+**Figure 4.:** (A) Schematics of the GFP-PIFS-TCRβ constructs, including three different furin cleavage sites (F1, F2, F3) or omitting any cleavage site (noF). SP depicts the signal peptide, the arrow the signal peptidase cleavage site and moxGFP the monomeric GFP optimized for an oxidative environment. (B) The surface expression of the different GFP-PIFS-TCRs and PIFS-TCR was measured in transduced Jurkat cells together with the parental cell line using an anti-Vβ3 antibody (Jovi3) via flow cytometry. (C) Analogous to (B), the amount of GFP was quantified on the surface of the different transductants using a polyclonal anti-GFP antibody via flow cytometry. (B) and (C) depict the median fluorescence intensity (MFI) averaged for three measurements ± SEM. (D) Scheme of GFP-PIFS-TCRβ as integrated into the TCR. (E) 100 nM phycoerythrin (PE)-labeled PhyBt pre-illuminated with 660 nm or 740 nm light were incubated with the cells indicated and binding was detected by flow cytometry. One experiment out of three is depicted displaying the average of quadruplicates ± SEM. (F) Together with Figure 3D these are the GFP vs PhyBt plots of the experiment quantified in (E).
 
 A major difference between the functional MBP-PIFS and the dysfunctional PIFS-TCRβ construct is the C- and N-terminal localization of PIFS, respectively. Thus, adding an unrelated protein to the N-terminus of PIFS might rescue the PhyB-binding ability of the PIFS-TCR. To test this possibility, we attached a monomeric green fluorescent protein optimized for the oxidative environment of the endoplasmic reticulum (moxGFP, (Costantini et al., 2015)) to the N-terminus of PIFS-TCRβ. We distinguished the effect of a permanently attached moxGFP or a moxGFP that is only present during folding of PIFS in the endoplasmic reticulum. To this end, we added different furin protease recognition sequences (F1-F3) or a flexible linker without protease cleavage site (noF) between moxGFP and PIFS (Figure 4A). The protease furin is expressed in the Golgi and would cleave off the moxGFP as the engineered TCRs are exported to the cell surface. All constructs were well expressed on Jurkat cells (Figure 4B) and showed the expected absence or presence of moxGFP on the cell surface (Figure 4C). The construct using a truncated furin site (F3) had intermediate surface moxGFP levels, indicating that moxGFP is inefficiently cleaved. PhyBt(660) hardly bound to the surface of Jurkat cells expressing GFP-F1-PIFS-TCR or GFP-F2-PIFS-TCR with efficiently cleaved moxGFP (Figure 4E,F). However, fusing moxGFP permanently to PIFS-TCRβ resulted in strong light-dependent binding of PhyBt to the cell surface. In line with this, GFP-F3-PIFS-TCR with partly cleaved GFP bound intermediate amounts of PhyBt(660). These data suggest that moxGFP has to be present at the GFP-PIFS-TCR on the cell surface, in order for PIFS to bind to PhyBt(660). The optimized construct, moxGFP-noF-PIFS-TCR, will be called GFP-PIFS-TCR in the remainder of this article.
 
 In conclusion, through several steps of engineering and optimization we generated the opto-ligand-TCR interaction system (Figure 1) based on the red/far-red light-regulated PhyB-PIF pair.
 
-## The GFP-PIFS-TCR is switched ON with 660 nm and OFF with 740 nm light
+### The GFP-PIFS-TCR is switched ON with 660 nm and OFF with 740 nm light
 
 PhyBt(660) bound to cells expressing the GFP-PIFS-TCR, whereas PhyBt pre-illuminated with 740 nm light [PhyBt(740)] did not (Figure 4E,F). Binding induced TCR signaling, since addition of PhyBt(660), but not PhyBt(740), resulted in a strong calcium influx into the cells similar to a stimulation using an anti-TCR antibody (Figure 5A,B). The experiment was done in the dark, since in the absence of any light, the PhyB molecules rest in their state (ON or OFF) for time scales exceeding the duration of the calcium experiments (Smith et al., 2017; Smith et al., 2016). 660 nm light alone in the absence of PhyBt or GFP-PIFS-TCR did not evoke signaling; similarly Jurkat cells not expressing the GFP-PIFS-TCR could not be stimulated with PhyBt(660) (Figure 5—figure supplement 1A,B). Both experiments show that the light acted through inducing PhyBt binding to GFP-PIFS-TCR. Furthermore, as seen with soluble pMHC ligands (Boniface et al., 1998; Cochran et al., 2000; Minguet et al., 2007), PhyB monomers (in contrast to tetramers) could not stimulate calcium influx (Figure 5—figure supplement 1C). Lastly, stimulation with bead-coupled PhyBt(660) in the dark resulted in up-regulation of the activation marker CD69 (Figure 5C). Together these data show that light-mediated PhyBt-binding to GFP-PIFS-TCR induced TCR signaling and T cell activation.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/42475/elife-42475-fig5-v2.jpg)
+
+**Figure 5.:** (A) GFP-PIFS-TCR cells were labeled with Indo-1 and calcium influx measured by flow cytometry. The arrow marks the addition of the stimuli indicated, and the grey rectangle the absence of any light. Results show one experiment of n > 3. (B) Calcium influx into GFP-PIFS-TCR cells stimulated with anti-Vβ3, PhyBt(660), PhyBt(740) or PBS was measured as in (A). Results show one experiment of n > 3. (C) GFP-PIFS-TCR Jurkat cells were incubated with PhyBt bound to sepharose beads after a 30 s 660 nm or 740 nm light pulse for 6 hr. Expression of CD69 was quantified by flow cytometry using an APC-labeled anti-CD69 antibody. Data points depict two experiments. (D) Calcium influx was measured as in (A). PhyBt(660) induced calcium influx (blue and orange lines). After 2 min a 1 s short pulse of 100% intensity 740 nm light (red break in the grey bar) terminated the calcium response (blue line). Addition of PhyBt(740) did not induce calcium influx (red line). Results show one experiment of n > 3.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/42475/elife-42475-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Calcium influx was only seen in cells expressing GFP-PIFS-TCR and treated with PhyBt(660) (orange line). Cells lacking GFP-PIFS-TCR (parental Jurkat, grey and blue lines) or treatment with PhyBt(740) (red line) did not lead to intracellular calcium mobilization. Stimuli addition is marked by an arrow and the illumination procedure by a bar above the graph (grey = dark); One representative experiment is depicted of n = 2. (B) Treatment of GFP-PIFS-TCR cells with 660 or 740 nm light alone in the absence of PhyBt did not induce calcium influx (grey and blue lines). Addition of PhyBt(660) elicited a calcium response, whereas PhyBt(740) did not. Stimuli addition is marked by an arrow and the illumination procedures by bars above the graph (grey = dark, orange = 660 nm, red = 740 nm); One representative experiment is depicted of n = 3. (C) In contrast to PhyBt(660) (orange line) the PhyB(660) monomers (blue line) did not stimulate calcium influx in the GFP-PIFS-TCR cells. As controls, both PhyB forms illuminated with 740 light (red and grey lines) did not evoke any calcium influx; One representative experiment is depicted of n = 3. Panels A, B and C are from the same experiment.
+
 The PhyB-PIF system allows the rapid switching between the ON and OFF states in both directions. When we switched PhyBt from the ON to the OFF state by a 1 s pulse of 740 nm light, we stopped the ongoing calcium response initially evoked by PhyBt(660) (Figure 5D), demonstrating that our system is reversible.
 
-## The intensity of continuous 660 nm light determines GFP-PIFS-TCR activation
+### The intensity of continuous 660 nm light determines GFP-PIFS-TCR activation
 
 Having established the opto-ligand-TCR system, the second aim of our study was to test the kinetic proofreading (KPR) model.
 
 The KPR model predicts that the half-life of the ligand-TCR interaction determines TCR signaling. Here, we wanted to implement a protocol to control this half-life by light and study the consequences for TCR signaling. To this end, we exploited the property of PhyB that its continuous exposure to 660 nm light triggers both the switch from PhyB OFF to ON and the reverse switch from ON to OFF (Figure 6A) as the absorption spectra of both PhyB states partially overlap (Rockwell et al., 2006). Thus, each individual PhyB molecule constantly shuttles between the ON and OFF state under 660 nm light, with high 660 nm intensities leading to a faster shuttling rate and thus to shorter binding duration (note that in Figure 5 continuous light was not used and the PhyB molecules stayed in their ON or OFF state for the duration of the experiment). Accordingly, continuous high intensity (100%) 660 nm light prevented calcium influx when PhyBt(660) was added to the GFP-PIFS-TCR cells (Figure 6B, orange line). After 390 s the constant 660 nm illumination was stopped, so that the PhyB molecules that were in the ON state at this moment were trapped in this state. This allowed them to bind long enough to the TCR and to induce a strong calcium response (Figure 6B). This experiment also demonstrates that the constant high intensity 660 nm illumination did not harm the cells.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/42475/elife-42475-fig6-v2.jpg)
+
+**Figure 6.:** (A) Schematics of the different PhyB conversions under 660 nm and 740 nm light. In the dark the PhyB states do not change in the timescales relevant for this work. (B) Calcium influx was measured as in Figure 5. GFP-PIFS-TCR cells were constantly illuminated with 100% intensity 660 nm light (orange line). After 150 s PhyBt(660) was added (arrow) and after 390 s the light was switched off. As controls, PhyBt(660) (blue line) or PhyBt(740) (red line) was added to the cells in the dark. The bars represent the illumination procedure during the measurement (grey = dark, orange = 660 nm light). (C) 20 nM PhyBt(660) was added (arrow) after 90 s to GFP-PIFS-TCR cells continuously illuminated with 660 nm light of the depicted intensities. Results in (B) and (C) show one experiment of n > 3. (D) Quantification of experiments done as in (C) with the indicated PhyBt concentrations. Duplicates are shown with connecting lines going through the mean.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/42475/elife-42475-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) A threshold of the 660 nm light intensity to induce a calcium response. The data from Figure 6D were normalized for each PhyBt concentration by setting the value of dark (0% intensity) to 1.0 and value of 32% intensity to 0 to better visualize the overlap of the different curves. Duplicates are shown with connecting lines going through the mean. (B) Calcium influx was measured as in Figure 5. After 85 s of measurement 20 nM PhyBt(660) was added (arrow) to GFP-PIFS-TCR cells in the dark. After 205 s cells were illuminated with 660 nm light of the depicted intensities, or with 740 nm light (red line). As a control, cells were kept in the dark (black line). The result shows one representative experiment of n = 3. (C) Quantification of experiments done as in (B) using normalization as in (A). Shown are the mean of 3 independent experiments ± SEM.
 
 The intensity of 660 nm light determines the half-life of both PhyB states and consequently the switch rates between the ON and the OFF state. However, the 80:20 molar ratio of PhyB ON to OFF molecules at photoequilibrium is largely independent of the light intensity (Figure 6A) (Bae and Choi, 2008; Smith et al., 2016). Lowering the 660 nm intensity increases the half-life of PhyB ON without altering its concentration, and hence may allow PhyBt to bind for longer durations to the GFP-PIFS-TCR. Indeed, at 4% and 2% constant 660 nm intensity, calcium influx was evoked (Figure 6C). These percentage values refer to the maximum intensity of 100% that was determined by the light source we used. We observed a threshold of the PhyB ON half-life in inducing a calcium response that was largely independent of the PhyBt concentration, a crucial property of TCR ligand discrimination (McKeithan, 1995) (Figure 6D and Figure 6—figure supplement 1A). This threshold half-life was at 3% 660 nm intensity. Thus, we were able to control TCR signaling by changing the intensity of continuous 660 nm light, suggesting that the duration of the ligand-TCR interaction controls calcium signaling.
 
@@ -99,9 +123,33 @@ Next, we tested whether very fast kinetics can terminate an ongoing TCR signal. 
 
 In conclusion, we engineered the opto-ligand-TCR system, in which one single ligand-TCR pair explores a wide range of different binding half-lives when changing the intensity of red light and in which other parameters of the interaction remain constant, because we have not mutated the binding interface.
 
-## A mathematical model describing KPR in the opto-ligand-TCR system
+### A mathematical model describing KPR in the opto-ligand-TCR system
 
 Next, we developed a mathematical model and confronted it with the experimental data, to obtain quantitative insight into how the half-life of the PhyB ON-TCR complex determines TCR signaling. The model comprises the PhyB ON-OFF cycle, binding of PhyBt to the TCR, and potentially KPR (Figure 7A, Figure 7—figure supplements 1 and 2 and Appendix 2). In the absence of KPR, the activity of each component in the signaling network depends only on the activity of its immediate upstream component(s), making TCR occupancy the ultimate source of ligand discrimination. In contrast, KPR assumes that the first signaling steps at the receptor in addition depend on the half-life of the ligand-TCR complex, while only the more downstream components respond exclusively to the activity of their immediate upstream component(s). We refer to the time required to complete the first half-life-dependent signaling steps as KPR duration or KPR time, τKPR.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/42475/elife-42475-fig7-v2.jpg)
+
+**Figure 7.:** (A) The PhyB ON-OFF cycle, binding of PhyB ON to the TCR and kinetic proofreading (KPR) were combined into one model. (B) In this model the effective off-rate is a linear function, and (C) the effective affinity is the reciprocal of a linear function, of the 660 nm light intensity. (D) A likelihood ratio test (null hypothesis: τKPR = 0, i.e., no KPR; alternative hypothesis: τKPR > 0) strongly supports the existence of a KPR mechanism. (E) The amount of PhyBt bound to the GFP-PIFS-TCR cells and (F) calcium influx at different continuous 660 nm light intensities (from Figure 6D) and different PhyBt concentrations are plotted. The line and shaded area represent the fit and the estimated uncertainties of the KPR model. The data points represent the mean ±SEM of 6–9 replicates in (E), or individual data points of two experiments in (F).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/42475/elife-42475-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Basic scheme of kinetic proofreading (KPR) according to McKeithan (McKeithan, 1995). Upon formation of an active TCR conformation (rate kform), the receptor has to undergo n modification steps, each with the same rate kp, in order to establish a signal. If the active conformation decays at any stage (rate kdec), all modifications are removed rapidly. The time span from forming an active TCR conformation (i.e., from the second binding event of the bivalent ligand binding) to signal initiation is termed the KPR duration τKPR. (B) The fraction of signaling receptors among all receptors in the active conformation in dependence on the half-life of the active conformation τactive = ln(2)/kdec, expressed relative to the duration of the KPR mechanism τKPR. Shown are curves that share the same KPR duration but differ in the number of steps.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/42475/elife-42475-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) PhyB can reversibly interconvert between the ON and the OFF state. (B) Only the PhyB in the ON state can bind to GFP-PIFS-TCRs. (C) If exposed to light, PhyB ON can convert to PhyB OFF while still in complex with a GFP-PIFS-TCR (left). Because dissociation in this state is very fast, conversion into PhyB OFF effectively increases the off-rate of the GFP-PIFS-TCRs-PhyB ON complex (right). (D) Extension of the model to account for the oligomeric structure of the PhyB ligands. Since TCRs are required to be cross-linked for signaling in our experimental setup, only multivalently bound PIF-TCRs can induce an intracellular signal.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/42475/elife-42475-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Photoconversion rates of PhyB were measured in the presence or absence of MBP-PIF(wt) by tracking the fraction of converted PhyB every 10 s using absorbance spectra acquisition. Conversion from a pool of solely PhyB OFF to PhyB ON and vice versa (the latter starting with the achievable 4:1 ON:OFF ratio) was induced by illumination with 70 µmol m−2 s−1 660 nm (orange bars) or 740 nm (red bars) light. MBP-PIF(wt) binding to PhyB did not influence the photoconversion rate. Shown are the mean ±SEM of three independent experiments, tested with two-way ANOVA. P-value with vs without MBP-PIF(wt) is 0.52.
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/42475/elife-42475-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** Amount of bound PhyBt on the surface of GFP-PIFs-TCRs under different continuous 660 nm light intensities and PhyBt concentrations as indicated. PhyBt(660) were added to the cells under continuous 660 nm light and incubated for 90 s at 37°C. Subsequently, samples were washed in the dark and the tetramer fluorescence (DyLight650 at streptavidin) analyzed by flow cytometry. Connecting lines going through the mean of 6–9 replicates, error bars depicting the SEM.
+
+![Figure 7—figure supplement 5.](https://cdn.elifesciences.org/articles/42475/elife-42475-fig7-figsupp5-v2.jpg)
+
+**Figure 7—figure supplement 5.:** Kinetic proofreading (KPR) is required to explain the data if the off-rates of mono- and multivalent binding (koff respectively qoff) are the same. Allowing the off-rates to be distinct from each other in the absence of KPR does not improve the fit.
 
 We used a soluble TCR ligand for which - in case of antibodies or pMHC - it was shown that bivalent binding is required to activate the TCR (Boniface et al., 1998; Cochran et al., 2000; Kaye and Janeway, 1984; Minguet et al., 2007), and this most likely was also the case for our opto-ligand-TCR system (Figure 5—figure supplement 1C). Thus, the KPR duration in our system is the time from bivalent binding to the completion of the biochemical signaling steps (Figure 7—figure supplement 2).
 
@@ -109,13 +157,21 @@ KPR requires the bivalently bound PhyBt-TCR complex to exist for at least the KP
 
 In support of the model (Figure 7A), we experimentally demonstrated that the rate of converting PhyB from ON to OFF is the same for free PhyB and PIF-bound PhyB (Figure 7—figure supplement 3). These data imply that PhyB molecules also convert to OFF while being bound to PIF and thereby the PhyB-PIF interaction is lost. Hence, the effective off-rate and binding affinity of PhyB ON to the TCR are also light-dependent (Figure 7B,C). Taken together, the model predicts that the amount of TCR-bound PhyB decreases with increasing light intensity, which we confirmed experimentally (Figure 7—figure supplement 4). Importantly, the change of PhyB ON affinity is a straightforward consequence of the light-controlled PhyB ON half-life (this contrasts with mutated pMHC ligands (Altan-Bonnet and Germain, 2005; Daniels et al., 2006; Davis and van der Merwe, 2006; Holler and Kranz, 2003; Lever et al., 2016), where affinity changes can be brought about by changes in both on- and off-rates, and potentially other parameters such as orientation of binding (Adams et al., 2011)).
 
-## Experimental data and modeling demonstrate that KPR takes place
+### Experimental data and modeling demonstrate that KPR takes place
 
 Although we intended to only change the ligand-TCR half-life with light, we also changed the affinity, due to the intrinsic relationship between off-rate and affinity. Hence, the intensity of 660 nm light regulates both the half-life of PhyB ON and the amount of bound PhyBt. To disentangle the half-life from the amount of ligand-bound TCRs, we asked whether calcium signaling was directly sensitive to the PhyB ON half-life through KPR or solely responded to the level of TCR occupancy with PhyB ON (absence of KPR). We fitted both mathematical models, the one with and the one without KPR, to the PhyBt binding and calcium signaling data together. Only the model with KPR yielded a satisfactory fit, and a likelihood ratio test, with the absence of KPR being the null hypothesis and the presence of KPR being the alternative hypothesis, showed highly significant support for the KPR model (p<10−6, Figure 7D,E,F and Figure 7—figure supplement 5). Taken together, these findings strongly support the existence of KPR at the TCR.
 
-## The KPR time in Jurkat cells using the opto-ligand-TCR is 8 s
+### The KPR time in Jurkat cells using the opto-ligand-TCR is 8 s
 
 The steady-state data (Figure 7E,F) prevented the model to deduce the KPR time τKPR, yielding only the product τKPR · koff. To overcome this limitation, we determined the conversion kinetics of PhyB in our experimental system by illuminating PhyBt OFF with short light pulses of 660 nm light and subsequently switching to darkness. This protocol traps the ligands in the ON state, which we quantified through the resulting calcium signal (Figure 8A and Appendix 2). The resulting kinetics of switching PhyB to the ON state was highly consistent across different light intensities and PhyBt concentrations (Figure 8B) and were described well by the mathematical model. Importantly, combining the steady-state data (Figure 7E,F) and the kinetic data (Figure 8B) was sufficiently informative to identify all five parameters of the model (Figure 8—figure supplement 1). Utilizing the kinetic data, we determined the half-life of the PhyB ON-TCR complex, ln2 /(koff +ki), which varied from 40 s to 2 s over the range of light intensities used (Figure 8C). We determined the threshold half-life of the bivalent PhyBt-TCR interaction, i.e. the proofreading duration τKPR, to be 8 s (95% CI: 3 s, 19 s) (Figure 8D). Thus, for a threshold half-life of bivalent binding of PhyBt to the TCR complex of 8 s, signaling from the active TCR is half-maximal. Furthermore, our results largely exclude the possibility of fast rebinding events, which would have effectively prolonged the half-life of the PhyB ON-TCR complex sensed by a KPR mechanism (Aleksic et al., 2010; Govern et al., 2010) (Appendix 2).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/42475/elife-42475-fig8-v2.jpg)
+
+**Figure 8.:** (A) 20 nM PhyBt(740) was added to GFP-PIFS-TCR cells and a 660 nm pulse of 100% intensity was given for the indicated durations. The calcium influx was quantified over time, indicating that longer pulse durations switch more PhyB OFF molecules to the ON state. Stimuli addition is marked by an arrow and the illumination procedure by a bar above the graph (grey = dark, orange = 660 nm). (B) Experiment as in (A) were performed using 6.3 nM or 20 nM PhyBt and 32% or 100% intensity 660 nm light. The data is shown together with the fit and estimated SD. Results in (A) and (B) show one experiment of n > 3. (C) The estimated half-lives of the PhyB-TCR complex in dependence on the light intensity. (D) The profile likelihood of the KPR time shows that the 95% confidence interval (CI) ranges from 3 s to 19 s, while the best-fit value is 8 s.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/42475/elife-42475-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** The confidence intervals were computed using the profile likelihood method.
 
 ## Discussion
 
@@ -147,11 +203,315 @@ Our approach, including the designed PIFS mutant, could be a blueprint to study 
 
 ## Materials and methods
 
-## Molecular cloning
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Aequorea victoria)</td>
+      <td>moxGFP</td>
+      <td>PMID: 26158227</td>
+      <td></td>
+      <td>Erik Snapp (Albert Einstein College of Medicine), Addgene plasmid # 68070</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>PIF6</td>
+      <td>PMID: 29603429</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>HA1.7 TCRβ</td>
+      <td>PMID: 17188005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>scFv</td>
+      <td>PMID: 17188005</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Jurkat</td>
+      <td>PMID: 15057788</td>
+      <td></td>
+      <td>Arthur Weiss (HHMI, UCSF)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Jurkat scFv-TCRβ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Jurkat expressing scFv-TCRβ</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Jurkat PIF(wt)-TCRβ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Jurkat expressing PIF(wt)-TCRβ</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Jurkat PIF(Q)-TCRβ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Jurkat expressing PIF(Q)-TCRβ</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Jurkat PIF(A)-TCRβ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Jurkat expressing PIF(A)-TCRβ</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Jurkat PIF(SS)-TCRβ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Jurkat expressing PIF(SS)-TCRβ</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Jurkat PIF(SSQ)-TCRβ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Jurkat expressing PIF(SSQ)-TCRβ</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Jurkat PIF(SSA)-TCRβ; Jurkat PIFS-TCRβ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Jurkat expressing PIF(SSA)-TCRβ</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Jurkat GFP-F1-PIFS-TCRβ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Jurkat expressing GFP-F1-PIFS-TCRβ</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Jurkat GFP-F2-PIFS-TCRβ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Jurkat expressing GFP-F2-PIFS-TCRβ</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Jurkat GFP-F3-PIFS-TCRβ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Jurkat expressing GFP-F3-PIFS-TCRβ</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>Jurkat GFP-noF-PIFS-TCRβ; Jurkat GFP-PIFS-TCRβ</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Jurkat expressing GFP-noF-PIFS-TCRβ</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Vβ3 Jovi3</td>
+      <td>Ancell Cat# 102-020</td>
+      <td>-</td>
+      <td>5 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>biotin-conjugated anti-GFP</td>
+      <td>Rockland Cat# 600-106-215</td>
+      <td>RRID:AB_218204</td>
+      <td>5 µg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-CD69</td>
+      <td>Thermo Fisher Cat# MHCD6905</td>
+      <td>RRID:AB_10372807</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-mouse</td>
+      <td>SouthernBiotech Cat# 1031-11L</td>
+      <td>-</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PhyB1-651-Aviag-His6; pMH17</td>
+      <td>PMID: 27884151</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p171</td>
+      <td>PMID: 18832155</td>
+      <td></td>
+      <td>Lars-Oliver Essen (University Marburg)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PIF(wt)-TCRβ; pOSY015</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Table S1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PIF(Q)-TCRβ; pOSY016</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Table S1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PIF(A)-TCRβ; pOSY017</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Table S1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>scFv-TCRβ; pOSY019</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Table S1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PIF(SS)-TCRβ; pOSY026</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Table S1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PIF(SSQ)-TCRβ; pOSY027</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Table S1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>PIF(SSA)-TCRβ; PIFS-TCRβ; pOSY028</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Table S1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MBP-PIF(wt); pOSY061</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Table S1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MBP-PIF(Q); pOSY062</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Table S1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MBP-PIF(A); pOSY063</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Table S1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MBP-PIF(SS); pOSY064</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Table S1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MBP-PIF(SSQ); pOSY065</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Table S1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MBP-PIF(SSA); pOSY066</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Table S1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-F1-PIFS-TCRβ; pOSY073</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Table S1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-F2-PIFS-TCRβ; pOSY074</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Table S1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-F3-PIFS-TCRβ; pOSY075</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Table S1</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-noF-PIFS-TCRβ; GFP-PIFS-TCRβ; pOSY076</td>
+      <td>this paper</td>
+      <td></td>
+      <td>see Table S1</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>PE-conjugated streptavidin</td>
+      <td>Thermo Fisher Cat# S866</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DyLight650-conjugated streptavidin</td>
+      <td>Thermo Fisher Cat# 84547</td>
+      <td>-</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Molecular cloning
 
 All plasmids generated in this study were created using standard molecular cloning techniques like polymerase chain reaction, restriction enzyme digestion and ligation or Gibson assembly (Gibson et al., 2009). The plasmids are listed in Table S1 together with the corresponding coded protein, a brief description of the used components and the cloning strategy. The primers used as described in Supplementary file 1 are summarized in Supplementary file 2. Plasmid maps and nucleotide sequences in GeneBank format are available as supplementary information. Plasmid maps were generated with Geneious 6.1.8 (https://www.geneious.com). The integrity of each plasmid was verified by restriction enzyme digestion and Sanger sequencing. The plasmid containing moxGFP was a gift from Erik Snapp (Addgene plasmid # 68070) (Costantini et al., 2015).
 
-## Protein production and purification
+### Protein production and purification
 
 The production of PhyB1-651-Aviag-His6 was performed similarly as described before (Smith et al., 2016). Briefly, the PhyB-coding plasmid pMH17 was co-transformed into E. coli BL21(DE3) with plasmid p171 (Rohmer et al., 2008), which codes for the Synechocystis enzymes heme oxygenase and phycocyanobilin synthase, necessary for phycocyanobilin production. Co-transformed cells were selected with 100 μg/ml ampicillin and 40 μg/ml kanamycin. Bacterial cultures were grown at 30°C in lysogeny broth until OD600 reached 0.6, then expression was induced with 1 mM isopropyl β-D-1-thiogalactopyranoside (IPTG) and 0.4% (w/v) arabinose in the presence of 50 μM biotin. Protein production was sustained for 20 hr at 18°C in the dark. Following centrifugation of the bacteria for 8 min at 6500 g, the cells were resuspended in lysis buffer (50 mM HEPES, 500 mM NaCl, 5% glycerol, 0.5 mM TCEP, 20 mM imidazole, pH 7.4) and disrupted using a French Press (APV 2000, APV Manufacturing) at 1,000 bar. The lysate was cleared from debris by centrifuging twice at 30,000 g at 4°C for 30 min. The cleared lysate was loaded onto a Ni-NTA Superflow cartridge (Qiagen) using an Äkta Explorer chromatography system (GE Healthcare). After washing with 30 column volumes lysis buffer, purified PhyB1-651-Avitag-His6 was eluted with 10 column volumes elution buffer (50 mM HEPES, 500 mM NaCl, 5% glycerol, 0.5 mM TCEP, 500 mM imidazole, pH 7.4). The eluate fractions containing the purified proteins were pooled and the buffer was exchanged to PBS (phosphate-buffered saline, Sigma-Aldrich) containing 0.5 mM TCEP and 10% glycerol using a HiPrep 26/10 desalting column (GE Healthcare).
 
@@ -159,11 +519,11 @@ The expression and purification of the different MBP-PIF61-100 proteins was perf
 
 PhyB tetramers (PhyBt) were formed by mixing Ni-NTA column-purified PhyB1-651-Avitag-His6 in a 10:1 molar ratio with PE- or DyLight650-conjugated streptavidin (Thermo Fisher) and incubating the mixture for 2 hr at room temperature in the dark. The formed PhyB tetramers were separated from the excess of PhyB monomers by size-exclusion chromatography on a HiLoad Superdex 200 pg column (GE Healthcare) using PBS with 0.5 mM TCEP as running buffer.
 
-## Analytical size-exclusion chromatography
+### Analytical size-exclusion chromatography
 
 To test the interaction of PhyB and MBP-PIF, PhyB was illuminated with saturating amounts of 660 or 740 nm light and MBP-PIF was added as depicted. Following incubation for 1 hr at room temperature in the dark, the samples were separated by size-exclusion chromatography on a Superdex 200 10/300 GL column (GE Healthcare) using PBS with 0.5 mM TCEP as running buffer.
 
-## Cell line generation and cultivation
+### Cell line generation and cultivation
 
 Jurkat E6.1 and derived cell lines were cultivated in RPMI 1640 medium supplemented with 10% fetal bovine serum (FBS), 2 mM L-glutamine, 10 mM HEPES, 100 U/ml penicillin and 100 µg/ml streptomycin (all Thermo Fisher) at 37°C in a humidified atmosphere of 5% CO2. HEK 293 T cells were cultured in DMEM (Thermo Fisher) supplemented as the RPMI medium at 37°C in a humidified atmosphere of 7.5% CO2.
 
@@ -171,36 +531,36 @@ For the generation of Jurkat-based cell lines stably expressing the chimeric TCR
 
 The identity of the Jurkat cells was confirmed by the binding to the antibody C305 that only binds to the TCR expressed on Jurkat cells (Weiss and Stobo, 1984). The identity of the HEK 293 T cells was not confirmed. All cells were routinely tested for mycoplasma and devoid of contamination.
 
-## Cell surface staining for flow cytometry
+### Cell surface staining for flow cytometry
 
 Cells were stained for surface proteins according to standard protocols. Briefly, cells were washed once with washing buffer (PBS supplemented with 1% FBS), then incubated for 30 min at 4°C in a diluted solution of the labeling antibody as depicted in the key resources table. Finally, the cells were washed twice as before and analyzed on a MACSQuant X flow cytometer (Miltenyi). The labeling reagents used in this study were anti-Vβ3 Jovi3 (Ancell), biotin-conjugated anti-GFP (Rockland Immunochemicals), APC-conjugated anti-CD69 (Thermo Fisher), APC-conjugated anti-mouse (Thermo Fisher) and PE-conjugated streptavidin (Thermo Fisher).
 
-## Light-dependent PhyBt binding to the cell surface
+### Light-dependent PhyBt binding to the cell surface
 
 Binding of PhyBt to the different cells lines was performed analogous to the cell surface staining with antibodies, but instead of labeled antibodies 100 nM pre-illuminated Phycoerythrin (PE)-labeled PhyBt(660) or PhyBt(740) were added to the cells and incubated for 30 min at 4°C in the dark. Subsequent washing steps and the measurement at the flow cytometer were executed under green light.
 
 To evaluate the amount of surface bound PhyBt under constant illumination with varying intensities of 660 nm light, different concentrations of PhyBt(660) were added to GFP-PIFS-TCR cells under illumination conditions as depicted and incubated for 90 s at 37°C. Subsequently, the cells were transferred to a ten-fold excess of ice-cold washing buffer, immediately centrifuged for 10 s under green light and the supernatant aspirated. After a second washing step, surface-bound PhyBt was quantified by flow cytometry. Unspecific binding was accounted for and subtracted from each sample by adding ten-fold diluted amounts of PhyBt(660) to control samples that were treated with washing buffer during the 90 s incubation step.
 
-## Calcium influx measurement
+### Calcium influx measurement
 
 Five million cells were centrifuged for 5 min at 300 g and the medium was discarded. The cell pellet was resuspended in 1 ml stimulation medium (RPMI 1640 medium supplemented with 1% FBS, 2 mM L-glutamine, 10 mM HEPES, 100 U/ml penicillin and 100 µg/ml streptomycin) with 0.1% (v/v) pluronic F-127 and 4 µM Indo-1 AM (all Thermo Fisher) and incubated in the dark for 30 min at 37°C. The stained cells were washed and kept on ice in the dark until the measurement. For calcium influx, cells were diluted 1:20 with pre-warmed stimulation medium and maintained at 37°C during the event collection on a MACSQuant X flow cytometer. After fluorescence baseline acquisition, stimuli were added or activated by illumination as depicted. If not indicated otherwise PhyBt were added to a final concentration of 20 nM.
 
 For the graphs showing the percent of responding cells, the events above the 90th percentile during baseline acquisition were quantified using FlowJo 9 (FlowJo LLC). To calculate the calcium influx values (a.u.), average Indo-1 ratio values after stimuli addition (250–400 s) minus baseline values (30–60 s) were normalized for each experiment using an internal control of 20 nM PhyBt(660) in the dark.
 
-## CD69 upregulation
+### CD69 upregulation
 
 200,000 Jurkat or GFP-PIFS-TCR cells were seeded per well in a 96-well flat-bottom plate in 100 µl stimulation medium and incubated for 1 hr in the cultivating incubator. Meanwhile, streptavidin sepharose beads (GE Healthcare) were washed with PBS and then incubated with 5 µg purified PhyB per µl beads (diluted in PBS) at 37°C for 30 min. The beads were washed twice with PBS and resuspended in stimulation medium at 2 µl beads per 100 µl medium. The diluted beads were illuminated as described, 100 µl bead suspension added per well to the cells and the cells stimulated for 6 hr in the incubator. Following the incubation, surface expression of CD69 was analyzed by flow cytometry as described above.
 
-## Determination of PhyB conversion rates
+### Determination of PhyB conversion rates
 
 50 µg purified PhyB(660) or PhyB(740) was mixed with a 6-fold excess of MBP-PIF(wt) or an equal volume of buffer (PBS with 0.5 mM TCEP) and incubated for 60 min at room temperature. Each protein mixture was transferred to a quartz cuvette, a blank measurement was taken and under constant illumination with 70 µmol m−2 s−1 660 or 740 nm light difference absorbance spectra were acquired every 10 s using a HR4000 spectrometer in combination with a DT-Mini-2-GS light source (Ocean Optics). We quantified the conformational change of PhyB by subtracting the minimum absorbance value from the maximum value and plotted this ΔΔA value against the time of illumination (not shown). From the resulting curves, we calculated the photoconversion rates by first order association kinetics nonlinear regression using the software Prism 6 (GraphPad Software). Differences in the conversion rates with or without MBP-PIF were tested by two-way ANOVA using Prism 6.
 
-## Illumination devices
+### Illumination devices
 
 For the different experiments performed in this study, we used two types of illumination devices. One device was built as a closed box with an array of red (Osram, LH W5AM, Mouser Electronics) and far-red (LZ4-00R308, LED Engin) light-emitting diodes (LEDs) at the top, resulting in a planar light source. Ventilated openings in the box in combination with light traps allowed gas exchange for the use of the device in an incubator. This illumination box was used for all pre-illumination steps, the CD69 upregulation experiments and PhyB conversion rate measurements.
 
 The second device was built together with Opto Biolabs as a cylinder enclosing a reaction tube in the center. Surrounding the reaction tube, is a water-filled space, which is connected to a 37°C water bath to keep a physiological temperature. Further outside we placed rings of red (Super Bright Red, Kingbright Electronic Europe) and far-red (LED740 series, Roithner Lasertechnik) LEDs, pointing towards the reaction tube. An opaque outmost cylinder shields the sample from external light. The cylindrical illumination device was used for all calcium experiments and experiments under constant 660 nm illumination in combination with a MACSQuant X flow cytometer.
 
-## Repetition of experiments and data presentation
+### Repetition of experiments and data presentation
 
 In this study, all graphs derived from data of multiple experiments depict individual data points for less than three replicates and average values for three or more replicates. The uncertainties of these experiments are shown by the standard error of the mean (SEM). For graphs displaying representative experiments, ‘n’ in the legend defines the number of independent experiments that the depicted results were done.

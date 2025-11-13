@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.48958.001 Tapeworms grow at rates rivaling the fastest-growing metazoan tissues. To propagate they shed large parts of their body; to replace these lost tissues they regenerate proglottids (segments) as part of normal homeostasis. Their remarkable growth and regeneration are fueled by adult somatic stem cells that have yet to be characterized molecularly. Using the rat intestinal tapeworm, Hymenolepis diminuta , we find that regenerative potential is regionally limited to the neck, where head-dependent extrinsic signals create a permissive microenvironment for stem cell-driven regeneration. Using transcriptomic analyses and RNA interference, we characterize and functionally validate regulators of tapeworm growth and regeneration. We find no evidence that stem cells are restricted to the regeneration-competent neck. Instead, lethally irradiated tapeworms can be rescued when cells from either regeneration-competent or regeneration-incompetent regions are transplanted into the neck. Together, the head and neck tissues provide extrinsic cues that regulate stem cells, enabling region-specific regeneration in this parasite.
+Tapeworms grow at rates rivaling the fastest-growing metazoan tissues. To propagate they shed large parts of their body; to replace these lost tissues they regenerate proglottids (segments) as part of normal homeostasis. Their remarkable growth and regeneration are fueled by adult somatic stem cells that have yet to be characterized molecularly. Using the rat intestinal tapeworm, Hymenolepis diminuta, we find that regenerative potential is regionally limited to the neck, where head-dependent extrinsic signals create a permissive microenvironment for stem cell-driven regeneration. Using transcriptomic analyses and RNA interference, we characterize and functionally validate regulators of tapeworm growth and regeneration. We find no evidence that stem cells are restricted to the regeneration-competent neck. Instead, lethally irradiated tapeworms can be rescued when cells from either regeneration-competent or regeneration-incompetent regions are transplanted into the neck. Together, the head and neck tissues provide extrinsic cues that regulate stem cells, enabling region-specific regeneration in this parasite.
 
 ## Introduction
 
@@ -37,19 +37,71 @@ We use H. diminuta, to investigate the molecular basis of tapeworm regeneration.
 
 The anatomy of adult H. diminuta consists of a head with four suckers, an unsegmented neck, and a body with thousands of proglottids/segments that grow and mature in an anterior-to-posterior direction (Roberts, 1980; Rozario and Newmark, 2015) (Figure 1a). What regions of the tapeworm body are competent to regenerate? In order to test regeneration competency, it is necessary to grow tapeworms in vitro instead of in the intestine, where the suckers are required to maintain parasites in vivo. We established H. diminuta in vitro culture conditions modified from Schiller's method (Schiller, 1965) and tested the regeneration competence of 1 cm amputated fragments (Figure 1b–c). The anterior-most fragments (head+neck+body) were competent to regenerate, confirming in vivo observations using amputation and transplantation (Read, 1967; Goodchild, 1958). Anterior fragments that were first decapitated (neck+body) were also competent to regenerate. In contrast, ‘body only’ fragments failed to regenerate proglottids. All amputated fragments could grow in length (Figure 1d), differentiate mature reproductive structures, and mate. Despite the failure to regenerate, ‘body only’ fragments could grow because each existing proglottid increased in length as it progressively matured (Figure 1—figure supplement 1a–b). However, only fragments that retained the neck were able to regenerate new proglottids over time. The neck of 6-day-old tapeworms used in this study is typically 2–3 mm long when observed after DAPI staining and widefield fluorescent microscopy. By amputating 2 mm ‘neck only’ fragments, we find that the neck is sufficient to regenerate an average of 383 proglottids (SD = 138, N = 4, n = 20) after 12 days in vitro (Figure 1e). In no case did we observe head regeneration. Furthermore, amputated heads alone could not regenerate in vitro (Figure 1—figure supplement 1c) nor in vivo (Read, 1967). Thus, neither the head nor body can regenerate proglottids, but the neck is both necessary and sufficient for proglottid-specific regeneration in H. diminuta.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/48958/elife-48958-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic of H. diminuta adults. (b) DAPI-stained 1 cm fragments grown in vitro. (c–d) Quantification of proglottid number and growth in length from (b). Error bars = SD, N = 2–5, n = 7–21; one-way ANOVA with Dunnett’s multiple comparison test, compared to day 0. (e) Representative DAPI-stained ‘neck only’ fragment regeneration. (f–g) 2 mm anterior fragments, with or without the head, grown in vitro for 12–15 days and then re-amputated serially. Error bars = SD, +head: one-way ANOVA with Tukey’s multiple comparison test, -head: Student’s t-test. (h–i) DAPI-stained 1 mm fragments from the anterior, middle, and posterior of the neck grown in vitro. Error bars = SD, N = 3, n = 22–29, one-way ANOVA with Tukey’s multiple comparison test.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48958/elife-48958-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Quantification of mean proglottid length (fragment length/# of proglottids). Mean proglottid length from body only fragments are significantly longer than mean proglottid length from either head+neck+body or neck+body fragments. Error bars = SD, N = 2–5, n = 7–21; one-way ANOVA with Tukey’s multiple comparison test done at each timepoint. (b), Confocal sections of the most mature proglottids from ‘body only’ fragments showing immature proglottids at day 0 and a gravid proglottid at day 9. t: testis, ga: genital anlagen, and u: uterus. (c), Micrographs of amputated heads over 30 days in vitro showing a failure to regenerate. White arrowheads point to examples shown in the insets.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48958/elife-48958-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** DAPI-stained worms with or without decapitation were cultured in vitro for the indicated number of days. Red arrowheads mark the position of the first visible proglottid. After 18 days in vitro, the neck tissue is no longer identifiable in -head worms.
+
 Previous in vivo studies have shown that H. diminuta can regenerate after serial rounds of amputation and transplantation for over a decade (Read, 1967) and perhaps indefinitely. Using in vitro culture, we confirmed that anterior fragments of H. diminuta can regenerate after at least four rounds of serial amputation (Figure 1f–g). Decapitated (-head) fragments regenerated proglottids after the first amputation; however, re-amputation abrogated regeneration (Figure 1f–g). After decapitation, a definitive neck could not be maintained and eventually, the whole tissue was comprised of proglottids (Figure 1—figure supplement 2). Without the head, proglottid regeneration from the neck is finite. Thus, while the neck is necessary and sufficient for proglottid regeneration, the head is required to maintain an unsegmented neck and for persistent regeneration.
 
 If signals from the head regulate regeneration, is regenerative potential asymmetric across the anterior-posterior (A-P) axis of the neck? We subdivided the neck into three 1 mm fragments and found that the most-anterior neck fragments regenerated more proglottids than the middle or posterior neck fragments (Figure 1h–i). Thus, regeneration potential is asymmetric across the neck A-P axis with a strong anterior bias.
 
 Since the neck is the only region competent to regenerate, are stem cells preferentially confined to the neck? In lieu of specific molecular markers for stem cells, we examined the distribution of all cycling cells in adult tapeworms. In flatworms, it has been repeatedly shown that the only proliferative somatic cells are undifferentiated cells with stem cell morphology and/or function; these cells have been termed neoblasts, adult somatic stem cells, or germinative cells, depending on the organism (Collins et al., 2013; Koziol et al., 2014; Baguñà et al., 1989; Newmark and Sánchez Alvarado, 2000; Ladurner et al., 2000). In H. diminuta, proliferation does not occur in regions comprised solely of differentiated cells (muscle and tegument/parasite skin at the animal edge) (Bolla and Roberts, 1971). Instead, proliferation is only detected in regions where undifferentiated cells with the typical morphology of stem cells can be distinguished (Bolla and Roberts, 1971; Sulgostowska, 1972). Thus, cycling somatic cells in H. diminuta would not include differentiated cells, but would include stem cells and any dividing progeny. To label cycling cells, we used two methods: (i) uptake of the thymidine analog F-ara-EdU (Neef and Luedtke, 2011) to mark cells in S-phase and (ii) FISH to detect cell cycle-regulated transcripts, such as the replication licensing factor minichromosome maintenance complex component 2 (mcm2) and histone h2b (h2b), which are conserved cycling-cell markers in free-living and parasitic flatworms (Collins et al., 2013; Solana et al., 2012). We detected cycling somatic cells throughout the tapeworm body (Figure 2a–b). Contrary to previous results (Bolla and Roberts, 1971), we also detected cycling cells in the head, though in small numbers (Figure 2a). The scarcity of these cells may be the reason they were originally missed. Taken together, cycling cells are present in all regions, regardless of regeneration competence.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/48958/elife-48958-fig2-v2.jpg)
+
+**Figure 2.:** (a-b) Maximum-intensity projections of confocal sections showing distribution of cycling cells by 2 hr uptake of F-ara-EdU (a) or FISH for mcm2 (b). Fewer cycling cells were found in the head (box), while abundant cycling cells were observed in both somatic and gonadal tissues throughout the body. t = testis, o = ovary. (c) Maximum-intensity projections of tile-stitched confocal sections after 1 hr uptake of F-ara-EdU (green) 3 days post-irradiation. (d) Quantification of F-ara-EdU+ cell inhibition from (c). Error bars = SD, N = 2, n = 11 and 9, Student’s t-test. (e) RNA-seq strategy to identify genes expressed in cycling cells. (Nuclei are counterstained with DAPI (gray) in this and all subsequent figures.).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48958/elife-48958-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) DAPI staining of 5 mm anterior fragments from control and irradiated worms before and after 6 days in vitro culture. (b) Quantification of (a). Error bars = SD, N = 2, n = 10–16, one-way ANOVA with Tukey’s multiple comparison test. (c–d) Lethal dose of irradiation was revealed when 5 mm anterior fragments were amputated and grown in vitro for 1 month from worms exposed to 0 Gy or 200 Gy x-irradiation. The irradiated samples in (d) are shown to scale as an inset in (c).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/48958/elife-48958-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** WISH (with Fast-Blue Development) from two regions of the tapeworm: anterior (left) and body (right), 3 days post-irradiation.
+
 To further our understanding of how tapeworm stem cells are distributed and regulated, we sought to identify stem cell markers. Stem cell genes have been discovered previously in flatworms by identifying transcripts downregulated after exposure to irradiation, which depletes cycling cells (Collins et al., 2013; Solana et al., 2012; Eisenhoffer et al., 2008). Exposing H. diminuta to 200 Gy x-irradiation reduced the number of cycling cells by 91 ± 6% after 3 days (Figure 2c–d) and abrogated both growth and regeneration (Figure 2—figure supplement 1a–b). This dosage is lethal; all fragments from worms exposed to 200 Gy x-irradiation degenerated after 1 month (Figure 2—figure supplement 1c–d). We leveraged the sensitivity of H. diminuta to lethal irradiation in order to identify new molecular markers of cycling somatic cells by RNA-seq (Figure 2e). A de novo transcriptome of 14,346 transcripts was assembled (see Materials and methods) to which sequencing reads were mapped. We identified 683 transcripts that were irradiation sensitive (downregulated; FDR ≤ 0.05) (Supplementary file 1a). Expression of irradiation-sensitive transcripts by WISH was indeed reduced after exposure to irradiation, validating our RNA-seq approach (Figure 2—figure supplement 2).
 
 Two rounds of expression screening were then applied to hone in on cycling-cell transcripts from our irradiation-sensitive dataset (Figure 2e). The position of cycling cells in the neck is spatially restricted in a conserved pattern (Koziol and Castillo, 2011) (Figure 3a): cycling cells reside in the neck parenchyma bounded by the nerve cords and are absent from the animal edge where muscle and tegument are located (Bolla and Roberts, 1971). Among 194 irradiation-sensitive transcripts that displayed clear WISH patterns, 63% were expressed in the neck parenchyma, though in a variety of patterns (Figure 3—figure supplement 1). 13% showed similar patterns to h2b and mcm2 (Figure 3b–c, Figure 3—figure supplement 1b). These include the predicted nucleic acid binding factors Zn finger MYM type 3 (zmym3) and pogo transposable element with ZN finger domain-like (pogzl), as well as NAB co-repressor domain two superfamily member (nab2) and nuclear lamina component laminB receptor (lbr). 25% of irradiation-sensitive transcripts, were expressed in a minority of cells in the neck parenchyma (Figure 3—figure supplement 1c). 24% were expressed within the parenchyma and more broadly toward the animal edge (Figure 3—figure supplement 1d). The remainder represented transcripts expressed at segment boundaries or in differentiated tissues (Figure 3—figure supplement 1e–f). All transcripts that were expressed in the neck parenchyma were also found throughout the worm body, even in the most posterior proglottids (Figure 3—figure supplement 1b–c). In conclusion, irradiation-sensitive transcripts identified by RNA-seq likely represent markers for stem cells, progenitors, and even differentiated cells that were lost or compromised following irradiation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/48958/elife-48958-fig3-v2.jpg)
+
+**Figure 3.:** (a) Confocal section of a tapeworm anterior. Cycling cells (mcm2: magenta) in the neck parenchyma are between the nerve cords (cadherin: green). s: sucker, nc: nerve cord, oc: osmoregulatory canal, t: tegument, m: muscle, and p: parenchyma. (b) WISH of known cycling-cell markers h2b and mcm2. sc: scolex (head) and n: neck. (c) WISH for irradiation-sensitive transcripts expressed in the neck parenchyma. (d) Confocal sections of dFISH for irradiation-sensitive transcripts (green) with h2b or mcm2 (magenta) from neck parenchyma. Cyan arrowheads indicate cells magnified at the far right.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48958/elife-48958-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Classification of WISH expression patterns of irradiation-sensitive transcripts. (b–f) Examples of transcripts expressed in the neck parenchyma (b) in subsets of cells within the neck (c) in neck parenchyma and broadly toward the animal edge where differentiated muscle and tegument are located (d) at segment boundaries (e) and in differentiated tissues (f) like the osmoregulatory canals (left) and nervous system (right).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/48958/elife-48958-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Confocal section of dFISH to detect mcm2 (green) and h2b (magenta) in the neck parenchyma at low (top) and high (bottom) magnification.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/48958/elife-48958-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (a) Summary of different co-expression patterns obtained from 53 dFISH experiments. Also refer to Supplementary file 1b. (b–d) Confocal sections of dFISH to detect irradiation-sensitive transcripts (green) with h2b or mcm2 (magenta). Cyan arrowheads indicate cells magnified at the far right. For (c) yellow arrowheads point to examples of expression in non-cycling cells.
+
 To focus on transcripts with enriched expression in cycling cells, we performed double FISH (dFISH) with irradiation-sensitive candidates and either h2b or mcm2, which we used interchangeably as they are co-expressed in the neck parenchyma (Figure 3—figure supplement 2). After dFISH for 53 candidates, 72% of transcripts tested were co-expressed in cycling cells (Figure 3—figure supplement 3a, Supplementary file 1b). The irradiation-sensitive transcripts from Figure 3c were indeed colocalized in cycling somatic cells (Figure 3d). One transcript, the homeobox factor prospero (prox1), was expressed exclusively in a subset of cycling cells (Figure 3—figure supplement 3b). We confirmed that genes with expression that only partially overlapped in the neck parenchyma, such as the Zn finger-containing gene HDt_10981 and palmitoyl-protein thioesterase 1 (ppt1), were expressed in both cycling cells and non-cycling cells (Figure 3—figure supplement 3c). We propose that these genes likely represent lineage-committed stem cells or progenitors for tissues such as muscle, neurons, tegument, or protonephridia. 28% of irradiation-sensitive transcripts were predominantly expressed in non-cycling cells that were juxtaposed to cycling cells (Figure 3—figure supplement 3d). The transcriptional heterogeneity detected in the cycling-cell compartment is reminiscent of similar observations made in the regenerative planarian S. mediterranea (Reddien, 2018). A comparative analysis between verified tapeworm cycling-cell transcripts and their putative planarian homologs revealed a number of transcripts with conserved expression in cycling-cell populations from these distantly related flatworms (Supplementary file 1c) (see Discussion). In summary, our analysis revealed a heterogeneous and complex mixture of cell types or states in the neck parenchyma as well as within the cycling-cell population.
 
 What role(s) do the newly identified cycling-cell genes play during regeneration? We performed RNAi of target genes, confirmed knockdown by quantitative PCR (Figure 4—figure supplement 1), and assayed for defects in growth and regeneration (Figure 4a). As a proof of principle, we knocked down h2b, which should compromise growth due to cycling cell loss, as observed in other flatworms (Collins et al., 2016; Solana et al., 2012). Knockdown of h2b, zmym3, and pogzl each resulted in diminished growth and regeneration (Figure 4b–c). The number of proglottids regenerated was also reduced, but could not be quantified as many RNAi worms were so thin and frail (Figure 4b) that proglottid definition was lost.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/48958/elife-48958-fig4-v2.jpg)
+
+**Figure 4.:** (a) Schematic of RNAi paradigm. (b) DAPI-stained worms after RNAi knockdown of h2b, zmym3, and pogzl. (c) Quantification of worm lengths after RNAi. Error bars = SD, N = 3–4, n = 26–37, one-way ANOVA with Dunnett’s multiple comparison test compared to control. (d-e) Maximum-intensity projections (d) and quantification (e) of cycling-cell inhibition after 1 hr F-ara-EdU uptake following RNAi. Worms with degenerated necks were excluded from analysis. Error bars = SD, N = 3, n = 11–14, one-way ANOVA with Dunnett’s multiple comparison test compared to control. (f) mcm2 WISH on worm anteriors after RNAi. (g) WISH of zmym3 and pogzl sampled from anterior to posterior of adult 6-day-old worms. ga: genital anlagen; t: testis; o: ovary.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/48958/elife-48958-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Knockdown of h2b, zmym3, or pogzl in whole worms observed after RNAi. Error bars: RQ min/max, N = 2, n = 3 each.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/48958/elife-48958-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Confocal sections of in situ hybridizations showing expression of cycling-cell transcripts in the gonads as well as in the non-gonadal parenchyma. t: testis and o: ovary.
 
 Are these RNAi-induced failures in growth and regeneration due to defects in the cycling-cell population? RNAi knockdown of h2b, zmym3, and pogzl severely reduced the number of proliferative cells in the neck that could incorporate F-ara-EdU (Figure 4d–e). We also observed fewer mcm2+ cells after RNAi (Figure 4f). Taken together, these results indicate that the cycling-cell population is either lost or dysregulated. Therefore, h2b, zmym3, and pogzl are necessary for the maintenance and/or proper function of cycling cells, likely including stem cells, in H. diminuta.
 
@@ -64,6 +116,18 @@ Since we observed an anterior bias in regenerative ability (Figure 1h–i), we h
 Since our RNA-seq analysis identified 57 transcripts that were anterior enriched and irradiation sensitive, we examined expression patterns within this category. We found 15 transcripts expressed in a subset of cells within the neck parenchyma (Figure 5c) and initially hypothesized that these transcripts may represent subsets of stem cells. We were able to successfully test eight candidates by dFISH with cycling-cell markers and found that the majority (7/8) were not expressed in cycling cells (Figure 5d, Supplementary file 1b). Only prox1 was co-expressed in cycling cells (Figure 3—figure supplement 3b). At present, the identity and function of prox1+ cells is unknown. Furthermore, prox1 is expressed throughout the tapeworm body (Figure 3—figure supplement 1). Thus, our analyses have not revealed an anteriorly biased subpopulation of stem cells that confer regenerative ability.
 
 With no evidence for a unique neck-specific subpopulation of stem cells, we hypothesized that stem cells may be distributed throughout the tapeworm, but that extrinsic signals functioning in the neck are necessary to instruct stem cell behavior and/or proglottid regeneration. We designed a functional assay to test populations of cells for the ability to rescue regeneration, modelled after similar experiments performed on planarians (Baguñà, 2012). We exposed tapeworms to a lethal dose of x-irradiation (200 Gy), injected cells from wild-type donors into the neck region, amputated 5 mm anterior fragments, and assayed rescue of lethality and regeneration after 30 days in vitro (Figure 6a). Remarkably, bulk-cell transplants were able to either partially or fully rescue irradiated worms that were destined to die (Figure 6a,c). ‘Full’ rescue was ascribed to worms with normal adult appearance whereas ‘partial’ rescue was assigned to cases in which proglottids were regenerated but the worms displayed abnormalities, like contracted necks (Figure 6—figure supplement 1a). We did not observe any proglottid regeneration in irradiated worms with or without buffer injection (Figure 6a,c).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/48958/elife-48958-fig6-v2.jpg)
+
+**Figure 6.:** (a-b) DAPI-stained worms after rescue with cell transplantations from whole-worm donors (a) or sourced from depicted donors (b). (c) Quantification of rescue phenotypes from pooled experiments. Number of animals listed above bars. (d) Model for head-dependent neck maintenance and proglottid formation. (e) Models of head-dependent or -independent stem cell niches.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/48958/elife-48958-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) DAPI-stained worms showing phenotypes observed after attempted rescue of irradiation-induced lethality. No rescue results in degenerated worms with no proglottids, full rescue results in normal worms with multiple proglottids, and partial rescue refers to worms with visible proglottids but with defects such as contracted necks. (b) Schematic for rescue experiment using donors with labeled cycling cells. (c–d) Maximum-intensity projections of tile-stitched confocal sections 0 or 3 days post-transplantation according to (b). Injections sites marked with asterisks. White arrowhead points to a single transplanted cell. After 3 days, large colonies of F-ara-EdU+ (green) cells could be detected with some labeled cells incorporated into terminally differentiated tissues at the animal edge (inset). (e) Maximum-intensity projections of tile-stitched confocal sections after 1 hr F-ara-EdU uptake (green) from control worms or worms cultured with hydroxyurea (HU) for 6 days. (f) Quantification of cycling cells from (e). Error bars = SD, N = 3, n = 11 and 8, Student’s t-test. (g) Cell morphology with or without HU treatment prior to transplantation.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/48958/elife-48958-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (a) Schematic of F-ara-EdU pulse-chase protocol to label cycling cells from 2 mm amputated fragments and detect their progeny after 3 days. (b–c) Confocal sections of both anterior and posterior fragments on day 0 showing the absence of F-ara-EdU (green) at the animal edge (yellow double-headed arrows) where differentiated muscle and tegument are located. After 3 days, F-ara-EdU has chased into the edge-most nuclei (examples marked by red arrowheads). (d-f) Confocal sections from posterior fragments after F-ara-EdU pulse-chase in combination with acetylated α-tubulin antibody staining to label flame cells (magenta). Yellow arrowheads point to F-ara-EdU- flame cell nuclei at day 0 (d) which are exclusively post-mitotic. Cyan arrowheads point to two examples of flame cell nuclei that are F-ara-EdU+ after 3 days chase (e–f).
 
 Is the rescue ability described above dependent on tapeworm cycling cells? We exposed donors to F-ara-EdU for 1 hr, to label cycling cells prior to transplantation into irradiated hosts (Figure 6—figure supplement 1b). Though bulk-cell transplants were performed, injection sites contained 0, 1, or small groups of F-ara-EdU+ cells immediately after transplantations (Figure 6—figure supplement 1c), likely due to technical challenges. Despite this issue, we were able to detect large colonies of F-ara-EdU+ cells 3 days post-transplantation (Figure 6—figure supplement 1d). We also observed that some labeled cells were incorporated into terminally differentiated tissues at the animal edge (Figure 6—figure supplement 1d: inset). Thus, cycling cells from donors are able to become established and differentiate inside the irradiated host.
 
@@ -97,33 +161,148 @@ Several plausible models can explain region-specific regeneration in H. diminuta
 
 In addition to its function in maintaining the neck, the head may also play a role in stem cell regulation (Figure 6e). The head may regulate a niche (directly or indirectly) that is necessary for the maintenance of pluripotency in the neck. In this model, stem cells are collectively pluripotent only when they receive head-dependent niche signals, thus limiting regenerative potential to the neck. Alternatively, stem cells may depend on a local niche that is independent of the head. In this model, stem cells have the capacity to form all cell lineages from any amputated fragment; however, the extrinsic signals that activate proglottid formation are restricted to the posterior neck region. Identifying the stem cell niche and its relationship to the head and neck microenvironment will provide crucial insights into our understanding of tapeworm regeneration.
 
-## Conclusion
+### Conclusion
 
 Our study shows that H. diminuta is a powerful developmental model for understanding intrinsic and extrinsic regulation of stem cells and regeneration. The regionally limited regenerative biology of H. diminuta and the technical advances put forth in this work show that we can exploit this tapeworm to understand the complexities of stem cell regulation in parasites. We defined heterogenous stem cells that are collectively pluripotent but that require extrinsic head-dependent signals to enable persistent proglottid regeneration. Understanding how the stem cell niche we describe is regulated may have broad implications for elucidating stem cell biology in parasitic flatworms, as well as other regenerative animals.
 
 ## Materials and methods
 
-## Animal care and use
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, (Hymenolepis diminuta)</td>
+      <td>BioSample accession SAMN11958994</td>
+      <td>Carolina Biologicals</td>
+      <td>Cat# 132232</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Oregon Green 488-HRP antibody (rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>A21253</td>
+      <td>IF(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DIG-AP (sheep polyclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat# 11093274910</td>
+      <td>IF(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DIG-POD (sheep polyclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: 11207733910</td>
+      <td>IF(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DNP-HRP (rabbit polyclonal)</td>
+      <td>Vector Laboratories</td>
+      <td>Cat#: MB-0603</td>
+      <td>IF(1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-acetylated α-tubulin (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#: sc-23950</td>
+      <td>IF(1:500)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PCR primers</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Supplementary file 1E</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Transcriptome Shotgun Assembly (Hymenolepis diminuta)</td>
+      <td>DDB/ENA/Genbank</td>
+      <td>GHNR01000000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sequence Read Archives for transcriptome assembly</td>
+      <td>DDB/ENA/Genbank</td>
+      <td>PRJNA546290</td>
+      <td>SRX6045715- SRX6045719</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Sequence Read Archives for differential gene expression</td>
+      <td>DDB/ENA/Genbank</td>
+      <td>PRJNA546293</td>
+      <td>SRX6064929- SRX6064933</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid- pJC53.2</td>
+      <td>Addgene</td>
+      <td>26536</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>F-ara-EdU</td>
+      <td>Sigma Aldrich</td>
+      <td>T511293</td>
+      <td>0.1 μM (in 1% final DMSO concentration)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oregon green 488-azide</td>
+      <td>Invitrogen</td>
+      <td>O10180</td>
+      <td>100 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hydroxyurea</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: H8627</td>
+      <td>50 mM</td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal care and use
 
 Infective H. diminuta cysts were obtained from Carolina Biological (132232). To obtain adult tapeworms, 100–400 cysts were fed to Sprague-Dawley rats by oral gavage in ~0.5 mL of 0.85% NaCl. Rats were euthanized in a CO2 chamber 6 days post-gavage, tapeworms were flushed out of the small intestine, and washed in 1X Hanks Balanced Salt Solution (HBSS; Corning) (140 mg/L CaCl2, 100 mg/L MgCl2.6H2O, 100 mg/L MgSO4.7H2O, 400 mg/L KCl, 60 mg/L KH2PO4, 350 mg/L NaHCO3, 8 g/L NaCl, 48 mg/L Na2HPO4, 1 g/L D-glucose, no phenol red). Rodent care was in accordance with protocols approved by the Institutional Animal Care and Use Committee (IACUC) of the University of Wisconsin-Madison (M005573).
 
-## In vitro parasite culture
+### In vitro parasite culture
 
 Biphasic parasite cultures were prepared based on the Schiller method (Schiller, 1965). Briefly, the solid phase was made in 50 mL Erlenmeyer flasks by mixing 30% heat-inactivated defibrinated sheep blood (Hemostat) with 70% agar base for 10 mL blood-agar mixture per flask. Fresh blood was heat-inactivated at 56°C for 30 min then kept at 4°C and used repeatedly for one week by first warming the blood to 37°C. The agar base was prepared from 8 g Difco nutrient agar and 1.75 g NaCl in 350 mL water, autoclaved, and stored at 4°C. Before use, the agar base was microwaved to liquify, and cooled to below 56°C before mixing with warmed blood. After the blood-agar mixture solidified, 10 mL of Working Hanks 4 (WH4; 1X HBSS/4 g/L total glucose/1X antibiotic-antimycotic (Sigma)) was added. Each flask was topped with a gas-permeable stopper (Jaece Identi-plug) and pre-incubated at 37°C in hypoxia (3% CO2/5% O2/92% N2) overnight before use. Before tapeworms were transferred into the flasks, the liquid phase was adjusted to pH7.5 with 200 μL 7.5% NaHCO3 (Corning). Tapeworms were first washed in WH4 for 10 mins at 37°C in petri dishes pre-coated with 0.5% BSA to inhibit sticking. Transfers to pre-cultured flasks were performed by gently lifting the worms with a stainless-steel hook (Moody Tools) and immersing them in the liquid phase. Tapeworms were grown in hypoxia and transferred to fresh cultures every 3–4 days.
 
-## Fixation and DAPI staining
+### Fixation and DAPI staining
 
 Tapeworms were heat-killed by swirling in 75°C water for a few seconds until the worms relaxed and elongated, then fixative (4% formaldehyde in Phosphate Buffered Saline with 0.3% TritonX-100 (PBSTx)) was added immediately for 30 min-2hr at room temperature or overnight at 4°C. For DAPI staining, samples were incubated in 1 μg/mL DAPI (Sigma) in PBSTx overnight at 4°C and cleared in 80% glycerol/10 mM Tris pH7.5/1 mM EDTA overnight at room temperature before mounting.
 
-## F-ara-EdU uptake and staining
+### F-ara-EdU uptake and staining
 
 For F-ara-EdU pulse, tapeworms were incubated in 0.1 μM F-ara-EdU (Sigma) in 1% DMSO at 37°C in WH4. Tapeworms were heat-killed (above) and fixed in 4% formaldehyde/10% DMSO/1% NP40/PBSTx. Large tissues/worms were permeabilized by incubating in PBSTx at room temp for several days. Additional permeabilization was achieved by treatment with 10 μg/mL Proteinase-K/0.1% SDS/PBSTx for 10–30 min at room temperature, fixed in 4% formaldehyde/PBSTx for 10 min before samples were cut into small pieces or retained whole in PBSTx. Samples were further permeabilized in PBSTx/10% DMSO/1% NP40 for 20 min-1 hr (depending on size) before performing the click-it reaction (Salic and Mitchison, 2008) with Oregon Green 488 azide (Invitrogen). Signal was detected using anti-Oregon Green 488-HRP antibody (1:1000; Invitrogen) in K-block (5% Horse serum/0.45% fish gelatin/0.3% Triton-X/0.05% Tween-20/PBS) (Collins et al., 2011) followed by 10–20 min Tyramide Signal Amplification (TSA) reaction (King and Newmark, 2013). Tiled confocal z-stacks through the anterior of the worms were taken and cell numbers were counted using background subtraction on Imaris software. F-ara-EdU+ cells were normalized to worm area from maximum projections of the DAPI stain. Flame cells were stained using an anti-acetylated α-tubulin mouse antibody at 1:500 (sc-23950, Santa Cruz) as described previously (Rozario and Newmark, 2015).
 
-## Irradiation
+### Irradiation
 
 Most irradiation was performed using a CellRad irradiator (Faxitron Bioptics) at 200 Gy (150 kV, 5 mA) with two exceptions. Due to instrument failure, a cesium irradiator was used for one rescue experiment with donors + /- HU (Figure 6b) at 400 Gy (92 ± 5% cycling cell loss 3 days post-irradiation). The rescue experiment with + /- HU donors was performed a third time once we gained access to an x-irradiator (Xstrahl RS225 Cell Irradiator), where the lethal dose was 200 Gy (63 ± 10% cycling cell loss 3 days post-irradiation). All three experiments gave similar results despite the use of different irradiators. In all cases, lethal irradiation was determined as the dosage at which tapeworms degenerated, had 0 proglottids, and were inviable after 30 days in culture. Irradiation was performed in WH4 in BSA-coated petri dishes.
 
-## Transcriptome assembly
+### Transcriptome assembly
 
 RNA was collected from five regions: 1) head and neck, 2) immature proglottids, 3) mature reproductive proglottids, 4) gravid proglottids, and 5) mixed larval stages isolated from beetles. The first three regions covered the entirety of 3.5-week-old adult tapeworms. Gravid proglottids were taken from posteriors of 10-week-old tapeworms. Paired-end libraries were constructed with 2 × 150 bp reads from a HiSeq2500 chip. 2 x ~ 30 million reads were obtained for each sample. The transcriptome was assembled from three components: 1) map-based assembly, 2) de novo assembly, and 3) Maker predictions from Wormbase Parasite. The map-based assembly was performed using TopHat2 with the 2014 H. diminuta draft genome courtesy of Matt Berriman (Wellcome Sanger Institute, UK). 15,859 transcripts were assembled using TopHat. De novo assembly was performed using Velvet/Oases and resulted in 144,682 transcripts. There were 11,275 predicted Maker transcripts and 73.2% matched (>95% along the length) to the TopHat transcripts. The remaining predicted transcripts that were not represented in the TopHat dataset were added for a combined TopHat/predicted set of 17,651 transcripts. Most of the Oases transcripts matched to the TopHat/predicted set but 35,300 or 24.4% of the Oases transcripts did not (>75% match cut-off). These transcripts could be transcripts missed in the genome, transcription noise, non-coding transcripts, or contamination. We found significant contamination from beetle tissue in the larval tapeworm sample (more below). Initial filtering for contamination excluded 1388 transcripts (from beetle, rat, bacterial, and viral sources). At this point 51,563 transcripts were retained from the three methodologies described above and were processed for further filtering.
 
@@ -133,38 +312,38 @@ To the remaining 39,645 transcripts, we applied additional filters: 1) Remove tr
 
 Our final transcriptome is comprised of 14,346 transcripts (84.9% TopHat, 8.4% Maker predictions, 6.1% Oases with match to genome, and 0.6% Oases without match to genome). The total transcriptome size is 34 Mb with average transcript length of 2,354 bp. This Transcriptome Shotgun Assembly project has been deposited at DDB/ENA/Genbank under the accession GHNR00000000. The version described in this paper is the first version, GHNR01000000. All sequence reads are available at GenBank Bioproject PRJNA546290.
 
-## RNA-seq for differential gene expression analyses
+### RNA-seq for differential gene expression analyses
 
 Tissue was collected and immediately frozen on dry ice in 100 μL Trizol (Life Technologies) before RNA extraction. Tissue homogenization was performed as the mixture was in a semi-frozen state using RNase-free pestles and a pestle motor. RNA was purified using the Direct-zol RNA MiniPrep kit (Zymo). RNA quality was assessed using Bioanalyzer, libraries were prepared with TruSeq Stranded mRNAseq Sample Prep kit (Illumina), and sequenced on two lanes on a HiSeq2500 chip. We performed paired-end sequencing and obtained ~20 million reads per sample. Samples were obtained in triplicate. To identify irradiation-sensitive transcripts, 2 mm anterior tapeworm fragments were cut from 10 worms after 3 days in vitro. To identify differentially expressed transcripts across the neck A-P axis, 1 mm fragments were cut from 20 freshly obtained 6-day-old tapeworms. Paired-end reads were mapped to the transcriptome (above) using default settings on CLC Genomics Workbench 6 (Qiagen) except that read alignments were done with a relaxed length fraction of 0.5. Differential gene expression analysis was done with the same software using estimate tagwise dispersions on total read counts and a total count filter cut-off of 5 reads. All sequence reads used for differential gene expression analyses are available at GenBank Bioproject PRJNA546293.
 
-## Cloning
+### Cloning
 
 Target genes were amplified using PCR with Platinum Taq (Life Technologies) from cDNA generated from RNAs extracted from tapeworm anteriors to enrich for neck transcripts. PCR products were inserted via TA-mediated cloning into the previously described vector pJC53.2 (Collins et al., 2010) pre-digested with Eam11051. Anti-sense riboprobes could be generated by in vitro transcription with SP6 or T3 RNA polymerases. For RNAi, dsRNA was generated using T7 RNA polymerase. For sequences and primers, refer to Supplementary file 1e.
 
-## In situ hybridization
+### In situ hybridization
 
 WISH and FISH protocols were modified from previously published methods for planarians (King and Newmark, 2013) and the mouse bile-duct tapeworm Hymenolepis microstoma (Olson et al., 2018). Tapeworms were heat killed and fixed in 4% formaldehyde/10% DMSO/1% NP40/PBSTx for 30 min at room temperature before washing and dehydration into methanol. Dehydrated samples were frozen at −30°C for at least 2 days. After rehydration, samples were permeabilized in 10 μg/mL Proteinase-K/0.1% SDS/PBSTx for 30 min, washed into 0.1 M Triethanolamine pH7-8 (TEA), 2.5 μL/mL acetic anhydride was added for 5 min with vigorous swirling, acetic anhydride step was repeated, washed in PBSTx, and post-fixed in 4% formaldehyde/PBSTx for 10 min. Probe synthesis, hybridization, and staining were performed as previously described (King and Newmark, 2013) using probe concentrations at ~50 ng/mL for 16–48 hr at 56°C. All probes were synthesized with either DIG or DNP haptens and detected using the following antibodies, all at 1:2000: anti-DIG-AP (Sigma), anti-DIG-POD (Sigma), anti-DNP-HRP (Vector Labs). Colorimetric development was done using NBT (Roche)/BCIP (Sigma) or with Fast-Blue (Sigma) (Currie et al., 2016). Fluorescent signal was visualized after 10–20 min TSA reaction (King and Newmark, 2013). DAPI staining and mounting were performed as described above.
 
-## Imaging
+### Imaging
 
 Confocal imaging was performed on a Zeiss LSM 880 with the following objectives: 20X/0.8 NA Plan-APOCHROMAT, 40X/1.3 NA Plan-APOCHROMAT, and 63X/1.4 NA Plan-APOCHROMAT. WISH samples and whole-mount DAPI-stained worms were imaged using Zeiss AxioZoom V16 macroscope. Image processing was performed using ImageJ for general brightness/contrast adjustments, maximum-intensity projections, and tile stitching (Preibisch et al., 2009).
 
-## RNAi
+### RNAi
 
 dsRNA was synthesized as previously described (Rouhana et al., 2013) and resuspended at concentrations ~ 1.5–2 μg/μL. For control injections, 1.5 kb dsRNA derived from ccdB and camR-containing insert of the pJC53.2 vector was used (Collins et al., 2010). 6-day-old tapeworms were obtained and microinjected with dsRNA using femtotips II via the Femtojet injection system (Eppendorf) to obtain spreading across the first ~3–4 mm anterior of the tapeworm. The spread of injected fluids could be detected by a temporary increase in opacity. 500 hPa injection pressure for 0.3–1 s was used per injection site. Whole tapeworms were cultured in vitro for 3 days, 2 mm anterior fragments were amputated, worms were re-injected with dsRNA on day 6, and cultured in vitro for an additional 9 days before termination.
 
-## qPCR for target gene knockdown efficacy
+### qPCR for target gene knockdown efficacy
 
 Whole worms (6 days old) were injected with dsRNA throughout and frozen in Trizol on dry ice after 6 days in vitro for RNA extraction according to manufacturer’s protocol and DNAse (Promega) treatment for 30 min at 37°C. cDNA synthesis was performed using SuperScriptIII First-Strand Synthesis System (Invitrogen) with Oligo(dT)20 primers followed by iScript cDNA Synthesis Kit (Bio-Rad). qPCR was performed using GoTaq Mastermix (Promega) on a StepOnePlus real-time PCR machine (Applied Biosystems). 60S ribosomal protein L13 (60Srpl13) was used as an internal normalization control. For primers refer to Supplementary file 1e.
 
-## Hydroxyurea (HU) treatment
+### Hydroxyurea (HU) treatment
 
 Tapeworms were treated with HU (Sigma) or HBSS (for controls) every day for a total of 6 days. HU stock solution was made fresh every day at 2 M in HBSS. 250 μL was added to each flask of tapeworms for final concentration of 50 mM. HU is unstable at 37°C so worms were transferred into fresh HU-containing media every two days, and fresh HU was added every other day.
 
-## Cell transplantations
+### Cell transplantations
 
 For dissociated cell preparations, tapeworms were placed in a drop of calcium-magnesium free HBSS (CMF HBSS, Gibco), minced into small pieces with a tungsten needle, incubated in 3X Trypsin-EDTA (Sigma) in CMF HBSS for 30 min at 37°C and dissociated using a dounce homogenizer (Kontes). Cells were pelleted by centrifugation at 250 g for 5 min. The cell pellet was washed in CMF HBSS and passed through cell strainers at 100 μm, 40 μm, 20 μm, and 10 μm (Falcon and Sysmex) with one spin and wash in between. Cells were pelleted and resuspended in 200–400 μL WH4 with 0.05% BSA. Cell injections were performed using the Cell Tram Oil four injection system (Eppendorf) into the necks of irradiated worms. For + /- HU donors, cell concentrations were measured using a hemocytometer and normalized (to ~108 cells/mL) to ensure equal numbers of cells were injected. For all rescue experiments, cells were injected into irradiated hosts on the same day that the hosts were irradiated. After 3 days in vitro, 5 mm anterior fragments were amputated and grown for an additional 27 days.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analyses were performed using Prism7 software (GraphPad Prism). All experiments were repeated at least twice. All measurements were taken from distinct samples. Error bars, statistical tests, number of replicates (N) and sample sizes (n) are indicated in corresponding figure legends. Either Dunnett’s or Tukey’s multiple comparison tests were used for one-way ANOVAs. SD = standard deviation. P-values: ns = not significant, *=p ≤ 0.5, ****=p ≤ 0.0001.

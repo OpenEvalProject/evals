@@ -36,77 +36,468 @@
 
 ## Abstract
 
-10.7554/eLife.18554.001 Brain-computer interfaces (BCIs) have the potential to restore communication for people with tetraplegia and anarthria by translating neural activity into control signals for assistive communication devices. While previous pre-clinical and clinical studies have demonstrated promising proofs-of-concept (Serruya et al., 2002; Simeral et al., 2011; Bacher et al., 2015; Nuyujukian et al., 2015; Aflalo et al., 2015; Gilja et al., 2015; Jarosiewicz et al., 2015; Wolpaw et al., 1998; Hwang et al., 2012; Spüler et al., 2012; Leuthardt et al., 2004; Taylor et al., 2002; Schalk et al., 2008; Moran, 2010; Brunner et al., 2011; Wang et al., 2013; Townsend and Platsko, 2016; Vansteensel et al., 2016; Nuyujukian et al., 2016; Carmena et al., 2003; Musallam et al., 2004; Santhanam et al., 2006; Hochberg et al., 2006; Ganguly et al., 2011; O’Doherty et al., 2011; Gilja et al., 2012), the performance of human clinical BCI systems is not yet high enough to support widespread adoption by people with physical limitations of speech. Here we report a high-performance intracortical BCI (iBCI) for communication, which was tested by three clinical trial participants with paralysis. The system leveraged advances in decoder design developed in prior pre-clinical and clinical studies (Gilja et al., 2015; Kao et al., 2016; Gilja et al., 2012). For all three participants, performance exceeded previous iBCIs (Bacher et al., 2015; Jarosiewicz et al., 2015) as measured by typing rate (by a factor of 1.4–4.2) and information throughput (by a factor of 2.2–4.0). This high level of performance demonstrates the potential utility of iBCIs as powerful assistive communication devices for people with limited motor function. Clinical Trial No: NCT00912041 DOI: http://dx.doi.org/10.7554/eLife.18554.001
+Brain-computer interfaces (BCIs) have the potential to restore communication for people with tetraplegia and anarthria by translating neural activity into control signals for assistive communication devices. While previous pre-clinical and clinical studies have demonstrated promising proofs-of-concept (Serruya et al., 2002; Simeral et al., 2011; Bacher et al., 2015; Nuyujukian et al., 2015; Aflalo et al., 2015; Gilja et al., 2015; Jarosiewicz et al., 2015; Wolpaw et al., 1998; Hwang et al., 2012; Spüler et al., 2012; Leuthardt et al., 2004; Taylor et al., 2002; Schalk et al., 2008; Moran, 2010; Brunner et al., 2011; Wang et al., 2013; Townsend and Platsko, 2016; Vansteensel et al., 2016; Nuyujukian et al., 2016; Carmena et al., 2003; Musallam et al., 2004; Santhanam et al., 2006; Hochberg et al., 2006; Ganguly et al., 2011; O’Doherty et al., 2011; Gilja et al., 2012), the performance of human clinical BCI systems is not yet high enough to support widespread adoption by people with physical limitations of speech. Here we report a high-performance intracortical BCI (iBCI) for communication, which was tested by three clinical trial participants with paralysis. The system leveraged advances in decoder design developed in prior pre-clinical and clinical studies (Gilja et al., 2015; Kao et al., 2016; Gilja et al., 2012). For all three participants, performance exceeded previous iBCIs (Bacher et al., 2015; Jarosiewicz et al., 2015) as measured by typing rate (by a factor of 1.4–4.2) and information throughput (by a factor of 2.2–4.0). This high level of performance demonstrates the potential utility of iBCIs as powerful assistive communication devices for people with limited motor function.Clinical Trial No: NCT00912041
 
 ## Introduction
 
 Communication is an important aspect of everyday life, achieved through diverse methods such as conversing, writing, and using computer interfaces that increasingly provide an important means to interact with others through channels such as e-mail and text messaging. However, the ability to communicate is often limited by conditions such as stroke, amyotrophic lateral sclerosis (ALS), or other injuries or neurologic disorders which can cause paralysis by damaging the neural pathways that connect the brain to the rest of the body. BCIs offer a potential solution to restore communication by harnessing intact neural signals. Many candidate BCIs have been developed for this purpose, including those based on electroencephalography (Wolpaw et al., 1998; Hwang et al., 2012; Spüler et al., 2012), electrocorticography (Leuthardt et al., 2004; Schalk et al., 2008; Moran, 2010; Brunner et al., 2011; Wang et al., 2013), and intracortical electrical signals (Serruya et al., 2002; Taylor et al., 2002; Carmena et al., 2003; Musallam et al., 2004; Santhanam et al., 2006; Hochberg et al., 2006; Ganguly et al., 2011; O’Doherty et al., 2011; Gilja et al., 2012; Simeral et al., 2011; Bacher et al., 2015; Nuyujukian et al., 2015; Aflalo et al., 2015; Gilja et al., 2015; Jarosiewicz et al., 2015). Intracortical BCIs (iBCIs), for the purposes of communication in particular, have shown promise in pilot clinical studies (Bacher et al., 2015; Jarosiewicz et al., 2015). However, iBCIs have not yet reached a level of performance that would support widespread adoption by people with motor impairments that interfere with communication. Further, it is unclear whether current BCI approaches can support high performance during cognitively demanding tasks, such as communicating text.
 
-We recently developed a high-performance iBCI for communication. The BCI provided point-and-click control of a computer cursor (illustrated in
+We recently developed a high-performance iBCI for communication. The BCI provided point-and-click control of a computer cursor (illustrated in Figure 1a). Briefly, neural signals (action potentials and high-frequency local field potentials [Gilja et al., 2012, 2015]) were recorded from motor cortex using intracortical microelectrode arrays. These signals were then translated into point-and-click commands using two algorithms developed through prior pre-clinical and clinical research: the ReFIT Kalman Filter for continuous two-dimensional cursor control (Gilja et al., 2012, 2015), and a Hidden Markov Model (HMM)-based state classifier for discrete selection (‘click’) (Kao et al., 2016). To evaluate this interface, we used two approaches: one that represents day-to-day communication use, and one that more rigorously quantifies performance.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/18554/elife-18554-fig1-v1.jpg)
 
-**Figure 1.:** (a) Electrical activity was recorded using 96-channel silicon microelectrode arrays implanted in the hand area of motor cortex. Signals were filtered to extract multiunit spiking activity and high frequency field potentials, which were decoded to provide ‘point-and-click’ control of a computer cursor. (b) Performance achieved by participant T6 over the three days that question and answer sessions were conducted. The width of each black bar represents the duration of that particular block. The black bands along the gray bar just below the black blocks denote filter calibration times. The average typing rate across all blocks was 24.4 ± 3.3 correct characters per minute (mean ± s.d.). Video 1 shows an example of T6’s free typing. The filter calibration and assessment stages that preceded these typing blocks are detailed in Figure 1—figure supplement 3.DOI: http://dx.doi.org/10.7554/eLife.18554.003
+**Figure 1.:** (a) Electrical activity was recorded using 96-channel silicon microelectrode arrays implanted in the hand area of motor cortex. Signals were filtered to extract multiunit spiking activity and high frequency field potentials, which were decoded to provide ‘point-and-click’ control of a computer cursor. (b) Performance achieved by participant T6 over the three days that question and answer sessions were conducted. The width of each black bar represents the duration of that particular block. The black bands along the gray bar just below the black blocks denote filter calibration times. The average typing rate across all blocks was 24.4 ± 3.3 correct characters per minute (mean ± s.d.). Video 1 shows an example of T6’s free typing. The filter calibration and assessment stages that preceded these typing blocks are detailed in Figure 1—figure supplement 3.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/18554/elife-18554-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** During these sessions, T6 was prompted with questions and formulated responses de novo. She could engage and disengage the interface using a play/pause button (see Video 1). In these sessions, two successive spaces resulted in the insertion of the ‘.’ character in place of the first space. Consent was obtained to release T6’s typed text.DOI: http://dx.doi.org/10.7554/eLife.18554.004
+**Figure 1—figure supplement 1.:** During these sessions, T6 was prompted with questions and formulated responses de novo. She could engage and disengage the interface using a play/pause button (see Video 1). In these sessions, two successive spaces resulted in the insertion of the ‘.’ character in place of the first space. Consent was obtained to release T6’s typed text.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/18554/elife-18554-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** Same as previous table, but also includes all errors and backspace characters entered.DOI: http://dx.doi.org/10.7554/eLife.18554.005
+**Figure 1—figure supplement 2.:** Same as previous table, but also includes all errors and backspace characters entered.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/18554/elife-18554-fig1-figsupp3-v1.jpg)
 
-**Figure 1—figure supplement 3.:** This expanded figure shows the free typing data presented in Figure 1, as well as the filter calibration and assessment stages that preceded the collection of those data. These sessions were not optimized for filter calibration, rather, performance was achieved and maintained by running evaluation or recalibration blocks at the participant or researchers’ discretion. The black bands along the gray bar just above the x-axis denote filter calibration time. Red bars denote evaluation blocks or blocks where T6 stopped the block early. Blue bars denote uninterrupted blocks of free typing.DOI: http://dx.doi.org/10.7554/eLife.18554.006
+**Figure 1—figure supplement 3.:** This expanded figure shows the free typing data presented in Figure 1, as well as the filter calibration and assessment stages that preceded the collection of those data. These sessions were not optimized for filter calibration, rather, performance was achieved and maintained by running evaluation or recalibration blocks at the participant or researchers’ discretion. The black bands along the gray bar just above the x-axis denote filter calibration time. Red bars denote evaluation blocks or blocks where T6 stopped the block early. Blue bars denote uninterrupted blocks of free typing.
 
 ## Results
 
-An important real-world application for a communication interface is typing messages in a conversation. We tested whether the BCI could support such an application with T6, a participant in the BrainGate2 pilot clinical trial (http://www.clinicaltrials.gov/ct2/show/NCT00912041). T6 is a 51 year-old woman who was diagnosed with ALS (see Materials and methods: Participants). In these ‘free typing’ sessions, to simulate use of the BCI in a typical conversation, T6 was prompted with questions and asked to formulate responses at her own pace. Once presented with a question, she was able to think about her answer, move the cursor and click on a button at the bottom right corner of the screen to enable the keyboard, and then type her response (detailed in Materials and methods: Free typing task). T6 typed her responses using an optimized keyboard layout (OPTI-II) (Rick, 2010), in which characters are arranged to minimize the travel distance of the cursor while typing English text. T6's mean free typing rate over three days of testing was 24.4 ± 3.3 correct characters per minute (ccpm), which spanned 96 min of typing. (Figure 1b; an example free typing video is included as Video 1; Figure 1—figure supplements 1 and 2 list the questions and typed answers from all free typing blocks, and Figure 1—figure supplement 3 details the filter calibration and assessment stages that preceded the free typing blocks.)10.7554/eLife.18554.007Video 1.Example of participant T6’s free-paced, free choice typing using the OPTI-II keyboard.T6 was prompted with questions and asked to formulate an answer de novo. Once presented with a question, she was able to think about her answer, move the cursor and click on the play button to enable the keyboard (bottom right corner), and then type her response. In this example, the participant typed 255 characters in ~9 min, at just over 27 correct characters per minute. One of two audible ‘beeps’ followed a target selection, corresponding to the two possible selection methods: T6 could select targets using either the Hidden Markov Model-based ‘click’ selection (high-pitched noises) or by ‘dwelling’ in the target region for 1 s (low-pitched noises). The plot at the bottom of the video tracks the typing performance (correct characters per minute) with respect to time in the block. Performance was smoothed using a 30 s symmetric Hamming window. The scrolling yellow bar indicates the current time of that frame. During the free typing task, T6 was asked to suppress her hand movements as best as possible. (During the quantitative performance evaluations, T6 was free to make movements as she wished.) This video is from participant T6, Day 621, Block 17. Additional ‘free typing’ examples for T6 are detailed in Figure 1—figure supplements 1 and 2.DOI: http://dx.doi.org/10.7554/eLife.18554.007
+An important real-world application for a communication interface is typing messages in a conversation. We tested whether the BCI could support such an application with T6, a participant in the BrainGate2 pilot clinical trial (http://www.clinicaltrials.gov/ct2/show/NCT00912041). T6 is a 51 year-old woman who was diagnosed with ALS (see Materials and methods: Participants). In these ‘free typing’ sessions, to simulate use of the BCI in a typical conversation, T6 was prompted with questions and asked to formulate responses at her own pace. Once presented with a question, she was able to think about her answer, move the cursor and click on a button at the bottom right corner of the screen to enable the keyboard, and then type her response (detailed in Materials and methods: Free typing task). T6 typed her responses using an optimized keyboard layout (OPTI-II) (Rick, 2010), in which characters are arranged to minimize the travel distance of the cursor while typing English text. T6's mean free typing rate over three days of testing was 24.4 ± 3.3 correct characters per minute (ccpm), which spanned 96 min of typing. (Figure 1b; an example free typing video is included as Video 1; Figure 1—figure supplements 1 and 2 list the questions and typed answers from all free typing blocks, and Figure 1—figure supplement 3 details the filter calibration and assessment stages that preceded the free typing blocks.)
 
-These free typing sessions demonstrated, in a realistic use case, what to our knowledge is the highest typing rate to date by a person with a physical disability using a BCI. However, in the human-computer interface literature, typing speeds are measured conventionally not in a free typing task, but rather using a ‘copy typing’ assessment, in which a subject is asked to type pre-determined phrases (reviewed in
+![Video 1.](https://cdn.elifesciences.org/articles/18554/elife-18554-media1.mp4.jpg)
+
+**Video 1.:** T6 was prompted with questions and asked to formulate an answer de novo. Once presented with a question, she was able to think about her answer, move the cursor and click on the play button to enable the keyboard (bottom right corner), and then type her response. In this example, the participant typed 255 characters in ~9 min, at just over 27 correct characters per minute. One of two audible ‘beeps’ followed a target selection, corresponding to the two possible selection methods: T6 could select targets using either the Hidden Markov Model-based ‘click’ selection (high-pitched noises) or by ‘dwelling’ in the target region for 1 s (low-pitched noises). The plot at the bottom of the video tracks the typing performance (correct characters per minute) with respect to time in the block. Performance was smoothed using a 30 s symmetric Hamming window. The scrolling yellow bar indicates the current time of that frame. During the free typing task, T6 was asked to suppress her hand movements as best as possible. (During the quantitative performance evaluations, T6 was free to make movements as she wished.) This video is from participant T6, Day 621, Block 17. Additional ‘free typing’ examples for T6 are detailed in Figure 1—figure supplements 1 and 2.
+
+These free typing sessions demonstrated, in a realistic use case, what to our knowledge is the highest typing rate to date by a person with a physical disability using a BCI. However, in the human-computer interface literature, typing speeds are measured conventionally not in a free typing task, but rather using a ‘copy typing’ assessment, in which a subject is asked to type pre-determined phrases (reviewed in MacKenzie and Soukoreff, 2002). We performed such copy typing assessments with three participants, T6, T5 (a man, 63 years old, with tetraplegia due to spinal cord injury), and T7 (a man, 54 years old, also diagnosed with ALS). Each research session followed a rigorous protocol that aimed to measure peak performance rather than robustness (detailed in Materials and methods: Quantitative performance evaluation and Figure 2—figure supplements 1 and 2). Participants were asked to type one of seven sentences (Figure 2—figure supplement 3), which were prompted on the screen. Performance was quantified by the number of correct characters typed within each two-minute evaluation block. T6 and T5’s performance were assessed using the OPTI-II layout described above as well as a conventional QWERTY layout (Figure 2a,b). For participant T7, who had minimal previous typing experience, the QWERTY keyboard was replaced by an alternative layout (ABCDEF; Figure 2c), which had the same geometry but with letters arranged in alphabetical order. Figure 2d shows examples of prompted and typed text for each participant. We performed five days of testing with T6 (Figure 2e; 21 typing evaluation blocks for each keyboard), two days of testing with T5 (Figure 2f; 14 typing evaluation blocks for each keyboard), and two days of testing with T7 (Figure 2g; 5–6 typing blocks for each keyboard). Example videos that demonstrate cued typing for all participants are included as Videos 2–7. T6's average performance using the QWERTY keyboard was 23.9 ± 6.5 correct characters per minute (ccpm; mean ± s.d.). T6's average performance using the OPTI-II keyboard was 31.6 ± 8.7 ccpm, 1.3 times faster than her performance with the QWERTY layout. Participant T5 averaged 36.1 ± 0.9 and 39.2 ± 1.2 ccpm for the QWERTY and OPTI-II keyboards, respectively. Participant T7 averaged 13.5 ± 1.9 and 12.3 ± 4.9 ccpm for the ABCDEF and OPTI-II keyboards, respectively. These results represent a 3.4x (T6, OPTI-II), 4.2x (T5, OPTI-II), and 1.4x (T7, ABCDEF) increase over the previous highest performing BCI report that did not include word completion (9.4 ccpm [Bacher et al., 2015]; p<0.01 for all three participants, single-sided Mann-Whitney U tests). Further additions of word completion or prediction should only increase the effective typing rates.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/18554/elife-18554-fig2-v1.jpg)
 
-**Figure 2.:** (a) Layout for the OPTI-II keyboard (b) Layout for the QWERTY keyboard. (c) Layout for the ABDEF keyboard. (d) Examples of text typed during three copy typing evaluations with participants T6, T5, and T7. Each example shows the prompted text, followed by the characters typed within the first minute of the two-minute evaluation block. Box width surrounding each character denotes the time it took to select the character. ‘<’ character denotes selection of a backspace key. Colored symbols on the left correspond to blocks denoted in lower plots. (e) Performance in the copy typing task with the QWERTY (blue) and OPTI-II (black) keyboards across 5 days for participant T6. QWERTY performance was 23.9 ± 6.5 correct characters per minute (ccpm; mean ± s.d.), while OPTI-II performance was 31.6 ± 8.7 ccpm. X-axis denotes number of days since array was implanted. (f) Performance in the copy typing task with the QWERTY (blue) and OPTI-II (black) keyboards across 2 days for participant T5. Average performance was 36.1 ± 0.9 and 39.2 ± 1.2 ccpm for the QWERTY and OPTI-II keyboards, respectively. (g) Performance in the copy typing task with the ABCDEF (blue) and OPTI-II (black) keyboards across two days for participant T7. Average performance was 13.5 ± 1.9 and 12.3 ± 4.9 ccpm for the ABCDEF and OPTI-II keyboards, respectively. *Participant T7 did not use an HMM for selection.DOI: http://dx.doi.org/10.7554/eLife.18554.008
+**Figure 2.:** (a) Layout for the OPTI-II keyboard (b) Layout for the QWERTY keyboard. (c) Layout for the ABDEF keyboard. (d) Examples of text typed during three copy typing evaluations with participants T6, T5, and T7. Each example shows the prompted text, followed by the characters typed within the first minute of the two-minute evaluation block. Box width surrounding each character denotes the time it took to select the character. ‘<’ character denotes selection of a backspace key. Colored symbols on the left correspond to blocks denoted in lower plots. (e) Performance in the copy typing task with the QWERTY (blue) and OPTI-II (black) keyboards across 5 days for participant T6. QWERTY performance was 23.9 ± 6.5 correct characters per minute (ccpm; mean ± s.d.), while OPTI-II performance was 31.6 ± 8.7 ccpm. X-axis denotes number of days since array was implanted. (f) Performance in the copy typing task with the QWERTY (blue) and OPTI-II (black) keyboards across 2 days for participant T5. Average performance was 36.1 ± 0.9 and 39.2 ± 1.2 ccpm for the QWERTY and OPTI-II keyboards, respectively. (g) Performance in the copy typing task with the ABCDEF (blue) and OPTI-II (black) keyboards across two days for participant T7. Average performance was 13.5 ± 1.9 and 12.3 ± 4.9 ccpm for the ABCDEF and OPTI-II keyboards, respectively. *Participant T7 did not use an HMM for selection.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/18554/elife-18554-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** Each research session followed a strict calibration and data collection protocol. This flow diagram is the research protocol for T6. T5 and T7’s protocols were very similar. T6 started with a glove-controlled movement calibration block (112 trials, 100 pixel target diameter, 750 ms hold time). T5 and T7 did not use data s, and instead that calibration block was substituted for a block where the cursor moved automatically while they attempted to move along with the cursor (‘open-loop’ calibration). This was followed by HMM click decoder calibration for T6. This was omitted for T7 as no HMM was used for sessions with him, but the cursor decoder was recalibrated at this stage. T5 did not need this either, as the HMM was trained on the same block as the cursor movement decoder. If the output of these two calibration steps resulted in a controllable cursor, then the data blocksets were started. Here, the decoders were recalibrated again based on a closed-loop control block, and data was collected under a strict timing protocol (see Figure 2—figure supplement 2). Blocksets were repeated as possible, at the discretion of the participant. Once a blockset was started for a particular research session, starting over with initial calibration was prohibited.DOI: http://dx.doi.org/10.7554/eLife.18554.009
+**Figure 2—figure supplement 1.:** Each research session followed a strict calibration and data collection protocol. This flow diagram is the research protocol for T6. T5 and T7’s protocols were very similar. T6 started with a glove-controlled movement calibration block (112 trials, 100 pixel target diameter, 750 ms hold time). T5 and T7 did not use data s, and instead that calibration block was substituted for a block where the cursor moved automatically while they attempted to move along with the cursor (‘open-loop’ calibration). This was followed by HMM click decoder calibration for T6. This was omitted for T7 as no HMM was used for sessions with him, but the cursor decoder was recalibrated at this stage. T5 did not need this either, as the HMM was trained on the same block as the cursor movement decoder. If the output of these two calibration steps resulted in a controllable cursor, then the data blocksets were started. Here, the decoders were recalibrated again based on a closed-loop control block, and data was collected under a strict timing protocol (see Figure 2—figure supplement 2). Blocksets were repeated as possible, at the discretion of the participant. Once a blockset was started for a particular research session, starting over with initial calibration was prohibited.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/18554/elife-18554-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** Each blockset began with a 3 min calibration or bias calculation block (purple). Breaks (green) were interspersed throughout the data collection. Each blockset consisted of three evaluation blocks (orange), two minutes each, that tested either copy typing or grid performance. Copy typing performance was evaluated with two keyboards (T6 and T5: QWERTY and OPTI-II, T7: ABCD and OPTI-II). Evaluation blocks were presented in a pseudo-randomized order (detailed in Materials and methods: Quantitative performance evaluations). In this example, T6 was first evaluated on a grid block, followed by a QWERTY cued typing block, followed by an OPTI-II cued typing block.DOI: http://dx.doi.org/10.7554/eLife.18554.010
+**Figure 2—figure supplement 2.:** Each blockset began with a 3 min calibration or bias calculation block (purple). Breaks (green) were interspersed throughout the data collection. Each blockset consisted of three evaluation blocks (orange), two minutes each, that tested either copy typing or grid performance. Copy typing performance was evaluated with two keyboards (T6 and T5: QWERTY and OPTI-II, T7: ABCD and OPTI-II). Evaluation blocks were presented in a pseudo-randomized order (detailed in Materials and methods: Quantitative performance evaluations). In this example, T6 was first evaluated on a grid block, followed by a QWERTY cued typing block, followed by an OPTI-II cued typing block.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/18554/elife-18554-fig2-figsupp3-v1.jpg)
 
-**Figure 2—figure supplement 3.:** Seven sentences were chosen for the copy typing task (presented in Figure 2). Sentence one is an English language pangram, i.e., it contains all the letters of the English alphabet, and is traditionally used to evaluate typing performance (e.g. Silfverberg et al., 2000). Sentences 2–4 are common English phrases that were easy for the participants to remember. Sentence five is the beginning of the ‘Rainbow Passage,’ commonly used in the speech pathology field to evaluate speech quality/deficits ([Fairbanks, 1960], pp. 124–139). Sentences 6 and 7 are conversational and were chosen to simulate the types of phrases an assistive communication device might be used to type in a conversation.DOI: http://dx.doi.org/10.7554/eLife.18554.011
+**Figure 2—figure supplement 3.:** Seven sentences were chosen for the copy typing task (presented in Figure 2). Sentence one is an English language pangram, i.e., it contains all the letters of the English alphabet, and is traditionally used to evaluate typing performance (e.g. Silfverberg et al., 2000). Sentences 2–4 are common English phrases that were easy for the participants to remember. Sentence five is the beginning of the ‘Rainbow Passage,’ commonly used in the speech pathology field to evaluate speech quality/deficits ([Fairbanks, 1960], pp. 124–139). Sentences 6 and 7 are conversational and were chosen to simulate the types of phrases an assistive communication device might be used to type in a conversation.
+
+![Video 2.](https://cdn.elifesciences.org/articles/18554/elife-18554-media2.mp4.jpg)
+
+**Video 2.:** In the copy typing task, participants were presented with a phrase and asked to type as many characters as possible within a two-minute block. T6 preferred that the cursor remain under her control throughout the task – i.e., no re-centering of the cursor occurred after a selection. This video is from participant T6, Day 588, Blockset 2. Performance in this block was 40.4 ccpm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/18554/elife-18554-media3.mp4.jpg)
+
+**Video 3.:** Same as Video 2, but using the QWERTY keyboard layout. This video is from participant T6, Day 588, Blockset 4. Performance in this block was 30.6 ccpm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/18554/elife-18554-media4.mp4.jpg)
+
+**Video 4.:** Same as Video 2, but for participant T5. This video is from participant T5, Day 68, Blockset 4. Performance in this block was 40.5 ccpm.
+
+![Video 5.](https://cdn.elifesciences.org/articles/18554/elife-18554-media5.mp4.jpg)
+
+**Video 5.:** Same as Video 4, but using the QWERTY keyboard layout. This video is from participant T5, Day 68, Blockset 2. Performance in this block was 38.6 ccpm.
+
+![Video 6.](https://cdn.elifesciences.org/articles/18554/elife-18554-media6.mp4.jpg)
+
+**Video 6.:** Same as Video 2, but for participant T7. T7 selected letters by dwelling on targets only. In addition, T7 preferred that the cursor re-center after every selection (i.e., following a correct or an incorrect selection). These across-participant differences are detailed in Materials and methods: Quantitative performance evaluations (under ‘Target selection and cursor re-centering’). This video is from participant T7, Day 539, Blockset 3. Performance in this block was 10.6 ccpm.
+
+![Video 7.](https://cdn.elifesciences.org/articles/18554/elife-18554-media7.mp4.jpg)
+
+**Video 7.:** Same as Video 6, but using the ABCDEF keyboard layout. This video is from participant T7, Day 539, Blockset 1. Performance in this block was 16.5 ccpm.
 
 A limitation of the ‘copy typing’ task is that the performance measurement is affected by the degree of difficulty of each phrase given the specific keyboard being used, as well as the participant's familiarity with the keyboard layouts (e.g., both T5 and T7 had much less familiarity with the keyboard layouts than T6). To explicitly quantify the information throughput of the BCI itself (independent of a phrase or keyboard layout), performance was also measured using a cued-target acquisition task (‘grid task' [Hochberg et al., 2006; Nuyujukian et al., 2015]), in which square targets were arranged in a 6 × 6 grid, and a randomly selected target was cued on each trial. Performance was quantified using ‘achieved bitrate’ (detailed in Nuyujukian et al. (2015) and Materials and methods: Achieved bitrate), which is a conservative measure used to quantify the total amount of information conveyed by the BCI. Briefly, the number of bits transmitted is the net number of correct ‘symbols’ multiplied by log2(N - 1), where N is the total number of targets. The net number of correct symbols is taken as the total number of correct selections minus the total number of incorrect selections, i.e., each incorrect selection requires an additional correct selection to compensate (analogous to having to select a keyboard’s backspace key). For example, on an eight-target task, if the net rate of correct target selections (after compensating for incorrect selections) were one target / s, the achieved bitrate would be 2.8 bits / s.
 
-Over 5 days of testing with T6 (
+Over 5 days of testing with T6 (Figure 3a; 21 grid evaluation blocks), 4 days of testing with T5 (Figure 3b; 29 grid evaluation blocks) and 2 days of testing with T7 (Figure 3c; six grid evaluation blocks), average performance was 2.2 ± 0.4 bits per second (bps; mean ± s.d.), 3.7 ± 0.4 bps, and 1.4 ± 0.1 bps, respectively. This is a substantial increase over the previous highest achieved bitrates for people with motor impairment using a BCI (Table 1), which were achieved by two of the same participants in an earlier BrainGate study (T6: 0.93 bits / s, T7: 0.64 bits / s, from Jarosiewicz et al. (2015); p<0.01 for both participants, single-sided Mann-Whitney U tests). For T6 and T7, who participated in the previous study, performance of the current methods represents a factor of 2.4 (T6) and 2.2 (T7) increase. For T5, the current performance represents a factor of 4.0 increase over the highest performing participant in the previous study. (The previous study measured performance using a free typing task, which includes the cognitive load of word formation [Jarosiewicz et al., 2015]. However, the effects of cognitive load in the current study (i.e., comparing T6’s free typing vs. copy typing) only accounted for a ~30% performance difference, rather than the 2–4x performance difference between studies. Thus, cognitive load is unlikely to account for the differences in performance.) The performance increase over previous work is unlikely to be due to experience with BCI, as participants in the current study had a similar range of experience using the BCI as those in comparable studies (Table 2). Example videos that demonstrate the grid task for all participants are included as Videos 8–11. In addition, comparisons of the HMM’s performance against the previous highest-performing approach for discrete selection are presented in Figure 3—figure supplement 1. We performed additional grid measurements with T5 in which targets were arranged in a denser grid (9 × 9). This task allows the possibility for higher bitrates than the 6 × 6 grid used above, with the tradeoff that selecting these smaller targets requires higher control fidelity. Across two days of testing with T5 (Figure 3—figure supplement 2 and Video 10; 8 evaluation blocks), average performance was 4.16 ± 0.39 bps, which was significantly greater than the 6 × 6 performance (p<0.01, Student’s t test) and represents, to our knowledge, the highest documented BCI communication rate for a person with motor impairment.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/18554/elife-18554-fig3-v1.jpg)
 
-**Figure 3.:** (a) Performance in the grid task across 5 days for participant T6. T6 averaged 2.2 ± 0.4 bits per second (mean ± s.d.). (b) Performance in the grid task across 2 days for participant T5. T5 averaged 3.7 ± 0.4 bits per second. (c) Performance in the grid task across 2 days for participant T7. T7 averaged 1.4 ± 0.1 bits per second. X-axis denotes number of days since array was implanted. *Participant T7 did not use an HMM for selection.DOI: http://dx.doi.org/10.7554/eLife.18554.018
+**Figure 3.:** (a) Performance in the grid task across 5 days for participant T6. T6 averaged 2.2 ± 0.4 bits per second (mean ± s.d.). (b) Performance in the grid task across 2 days for participant T5. T5 averaged 3.7 ± 0.4 bits per second. (c) Performance in the grid task across 2 days for participant T7. T7 averaged 1.4 ± 0.1 bits per second. X-axis denotes number of days since array was implanted. *Participant T7 did not use an HMM for selection.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/18554/elife-18554-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** This figure replicates the analysis from Kim et al., 2011 (Kim et al., 2011) (Figure 5), which demonstrated the previous best discrete selection algorithm for a communication BCI. (a) Performance of the HMM for participant T6. The panel on the left shows all the clicks that occurred in the grid task across 5 days of quantitative performance evaluations. Each dot plots the position of a click relative to the center of the cued target (blue - correct click, red - false click), and the green square shows the size of a single grid target. The right panel shows a histogram of the distance between click location and the center of the target for all clicks. T6 clicked on the correct target 92.6% of the time (1007/1087 total clicks). (b) Performance of the HMM for participant T7 in the grid task over 4 days of quantitative performance evaluations. T5 clicked on the correct target 97.7% of the time (2325/2379 total clicks). As shown, for both participants, when incorrect clicks did occur, they primarily occurred close to the edge of the desired target.DOI: http://dx.doi.org/10.7554/eLife.18554.019
+**Figure 3—figure supplement 1.:** This figure replicates the analysis from Kim et al., 2011 (Kim et al., 2011) (Figure 5), which demonstrated the previous best discrete selection algorithm for a communication BCI. (a) Performance of the HMM for participant T6. The panel on the left shows all the clicks that occurred in the grid task across 5 days of quantitative performance evaluations. Each dot plots the position of a click relative to the center of the cued target (blue - correct click, red - false click), and the green square shows the size of a single grid target. The right panel shows a histogram of the distance between click location and the center of the target for all clicks. T6 clicked on the correct target 92.6% of the time (1007/1087 total clicks). (b) Performance of the HMM for participant T7 in the grid task over 4 days of quantitative performance evaluations. T5 clicked on the correct target 97.7% of the time (2325/2379 total clicks). As shown, for both participants, when incorrect clicks did occur, they primarily occurred close to the edge of the desired target.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/18554/elife-18554-fig3-figsupp2-v1.jpg)
 
-**Figure 3—figure supplement 2.:** Performance in the grid task for participant T5 when measured with a denser grid (9 × 9, as opposed to the 6 × 6 grid used for all participants for the data shown in Figure 3). An example of T5’s performance in the 9 × 9 grid is shown in Video 10.DOI: http://dx.doi.org/10.7554/eLife.18554.020
+**Figure 3—figure supplement 2.:** Performance in the grid task for participant T5 when measured with a denser grid (9 × 9, as opposed to the 6 × 6 grid used for all participants for the data shown in Figure 3). An example of T5’s performance in the 9 × 9 grid is shown in Video 10.
 
-We note that in both sets of quantitative performance evaluations (copy typing and grid tasks), participant T6, who retained significant finger movement abilities, continued to move her hand while controlling the BCI. Further research sessions, in which T6 was asked to suppress her natural movements to the best of her abilities, showed similar performance in both copy typing and grid tasks (detailed in
+**Table 1.**
+ Survey of BCI studies that measure typing rates (correct characters per minute; ccpm), bitrates, or information transfer rates for people with motor impairment. Number ranges represent performance measurements across all participants for a given study. Communication rates could be further increased by external algorithms such as word prediction or completion. As there are many such algorithms, the current work excluded word prediction or completion to focus on measuring the performance of the underlying system. The most appropriate points of comparison, when available, are bitrates, which are independent of word prediction or completion algorithms. Similarly, information transfer rates are also a meaningful point of comparison, though they are less reflective of practical communication rates than bitrate (which takes into account the need to correct errors; detailed in Nuyujukian et al. (2015); Townsend et al. (2010)). For the current work, and for Jarosiewicz et al. 2015, we also break down performance by individual participant to facilitate direct comparisons (denoted by italics). As shown, performance in the current study outperforms all previous BCIs tested with people with motor impairment. *These numbers represent performance when measured using a denser grid (9 × 9; Figure 3—figure supplement 2 and Video 10). **For this study, reported typing rates included word prediction / completion algorithms. ***Number range represents the range of performance reported for the single study participant. ****Other reported numbers included word prediction / completion algorithms. †Acronyms used: ReFIT-KF: Recalibrated Feedback Intention-trained Kalman Filter. HMM: Hidden Markov Model. CLC: Closed-loop Calibration. LDA: Linear Discriminant Analysis. RTI: Retrospective Target Inference. DS: Dynamic Stopping.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study</th>
+      <th>Participant(s)</th>
+      <th>Recording modality</th>
+      <th>Control modality</th>
+      <th>Etiology of motor impairment</th>
+      <th>Average typing rate (ccpm)</th>
+      <th>Average bitrate (bps)</th>
+      <th>Average ITR (bps)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>This study</td>
+      <td>average (N = 3)</td>
+      <td>intracortical</td>
+      <td>ReFIT-KF+HMM†</td>
+      <td>ALS (2), SCI (1)</td>
+      <td>28.1</td>
+      <td>2.4</td>
+      <td>2.4</td>
+    </tr>
+    <tr>
+      <td>‘‘</td>
+      <td>T6</td>
+      <td></td>
+      <td></td>
+      <td>ALS</td>
+      <td>31.6</td>
+      <td>2.2</td>
+      <td>2.2</td>
+    </tr>
+    <tr>
+      <td>‘‘</td>
+      <td>T5</td>
+      <td></td>
+      <td></td>
+      <td>SCI</td>
+      <td>39.2</td>
+      <td>3.7</td>
+      <td>3.7</td>
+    </tr>
+    <tr>
+      <td>‘‘</td>
+      <td>‘‘</td>
+      <td></td>
+      <td></td>
+      <td>‘‘</td>
+      <td>-</td>
+      <td>4.2*</td>
+      <td>4.2*</td>
+    </tr>
+    <tr>
+      <td>‘‘</td>
+      <td>T7</td>
+      <td></td>
+      <td>(No HMM)</td>
+      <td>ALS</td>
+      <td>13.5</td>
+      <td>1.4</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>Bacher et al., 2015</td>
+      <td>S3</td>
+      <td>intracortical</td>
+      <td>CLC+LDA†</td>
+      <td>brainstem stroke</td>
+      <td>9.4</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Jarosiewicz et al., 2015</td>
+      <td>average (N = 4)</td>
+      <td>intracortical</td>
+      <td>RTI+LDA†</td>
+      <td>ALS (2), brainstem stroke (2)</td>
+      <td>n/a**</td>
+      <td>0.59</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>‘‘</td>
+      <td>T6</td>
+      <td></td>
+      <td></td>
+      <td>ALS</td>
+      <td>‘‘</td>
+      <td>0.93</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>‘‘</td>
+      <td>T7</td>
+      <td></td>
+      <td></td>
+      <td>ALS</td>
+      <td>‘‘</td>
+      <td>0.64</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>‘‘</td>
+      <td>S3</td>
+      <td></td>
+      <td></td>
+      <td>brainstem stroke</td>
+      <td>‘‘</td>
+      <td>0.58</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>‘‘</td>
+      <td>T2</td>
+      <td></td>
+      <td></td>
+      <td>brainstem stroke</td>
+      <td>‘‘</td>
+      <td>0.19</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Nijboer et al., 2008</td>
+      <td>N = 4</td>
+      <td>EEG</td>
+      <td>P300</td>
+      <td>ALS</td>
+      <td>1.5–4.1</td>
+      <td>-</td>
+      <td>0.08–0.32</td>
+    </tr>
+    <tr>
+      <td>Townsend et al., 2010</td>
+      <td>N = 3</td>
+      <td>EEG</td>
+      <td>P300</td>
+      <td>ALS</td>
+      <td>-</td>
+      <td>0.05–0.22</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Münßinger et al., 2010</td>
+      <td>N = 3</td>
+      <td>EEG</td>
+      <td>P300</td>
+      <td>ALS</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.02–0.12</td>
+    </tr>
+    <tr>
+      <td>Mugler, et al. 2010</td>
+      <td>N = 3</td>
+      <td>EEG</td>
+      <td>P300</td>
+      <td>ALS</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.07–0.08</td>
+    </tr>
+    <tr>
+      <td>Pires et al., 2011</td>
+      <td>N = 4</td>
+      <td>EEG</td>
+      <td>P300</td>
+      <td>ALS (2), cerebral palsy (2)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.24–0.32</td>
+    </tr>
+    <tr>
+      <td>Pires et al., 2012</td>
+      <td>N = 14</td>
+      <td>EEG</td>
+      <td>P300</td>
+      <td>ALS (7), cerebral palsy (5), Duchenne muscular dystrophy (1), spinal cord injury (1)</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.05–0.43</td>
+    </tr>
+    <tr>
+      <td>Sellers et al., 2014</td>
+      <td>N = 1</td>
+      <td>EEG</td>
+      <td>P300</td>
+      <td>brainstem stroke</td>
+      <td>0.31–0.93***</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>McCane et al., 2015</td>
+      <td>N = 14</td>
+      <td>EEG</td>
+      <td>P300</td>
+      <td>ALS</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.19</td>
+    </tr>
+    <tr>
+      <td>Mainsah et al., 2015</td>
+      <td>N = 10</td>
+      <td>EEG</td>
+      <td>P300-DS†</td>
+      <td>ALS</td>
+      <td>-</td>
+      <td>-</td>
+      <td>0.01–0.60</td>
+    </tr>
+    <tr>
+      <td>Vansteensel et al., 2016</td>
+      <td>N = 1</td>
+      <td>subdural ECoG</td>
+      <td>Linear Classifier</td>
+      <td>ALS</td>
+      <td>1.15****</td>
+      <td>-</td>
+      <td>0.21</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 8.](https://cdn.elifesciences.org/articles/18554/elife-18554-media8.mp4.jpg)
+
+**Video 8.:** This video is from participant T6, Day 588, Blockset 3. Performance in this block was 2.65 bps.
+
+![Video 9.](https://cdn.elifesciences.org/articles/18554/elife-18554-media9.mp4.jpg)
+
+**Video 9.:** This video is from participant T5, Day 56, Blockset 4 (Block 28). Performance in this block was 4.01 bps.
+
+**Table 2.**
+ Participants’ prior BCI experience and training for studies considered in Table 1. The experience column details the number of participants in the respective study that had prior experience with BCIs at the time of the study and, if reported, the duration of that prior experience and/or training.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Study</th>
+      <th>Participant(s)</th>
+      <th>BCI experience/training</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>This study</td>
+      <td>average (N = 3)</td>
+      <td>1 year</td>
+    </tr>
+    <tr>
+      <td>‘‘</td>
+      <td>T6</td>
+      <td>1.5 years</td>
+    </tr>
+    <tr>
+      <td>‘‘</td>
+      <td>T5</td>
+      <td>9 prior sessions (≈1 month)</td>
+    </tr>
+    <tr>
+      <td>‘‘</td>
+      <td>T7</td>
+      <td>1.5 years</td>
+    </tr>
+    <tr>
+      <td>Bacher et al., 2015</td>
+      <td>S3</td>
+      <td>4.3 years</td>
+    </tr>
+    <tr>
+      <td>Jarosiewicz et al., 2015</td>
+      <td>average (N=4)</td>
+      <td>2 years</td>
+    </tr>
+    <tr>
+      <td>‘‘</td>
+      <td>T6</td>
+      <td>10 months to 2.3 years</td>
+    </tr>
+    <tr>
+      <td>‘‘</td>
+      <td>T7</td>
+      <td>5.5 months to 1.2 years</td>
+    </tr>
+    <tr>
+      <td>‘‘</td>
+      <td>S3</td>
+      <td>5.2 years</td>
+    </tr>
+    <tr>
+      <td>‘‘</td>
+      <td>T2</td>
+      <td>4.6 months</td>
+    </tr>
+    <tr>
+      <td>Nijboer et al., 2008</td>
+      <td>N = 4</td>
+      <td>At least 4–10 months</td>
+    </tr>
+    <tr>
+      <td>Townsend et al., 2010</td>
+      <td>N = 3</td>
+      <td>All had prior P300 BCIs at home, two had at least 2.5 years with BCIs</td>
+    </tr>
+    <tr>
+      <td>Münßinger et al., 2010</td>
+      <td>N = 3</td>
+      <td>Two of three had prior experience, training not reported</td>
+    </tr>
+    <tr>
+      <td>Mugler, et al. 2010</td>
+      <td>N = 3</td>
+      <td>Average experience of 3.33 years</td>
+    </tr>
+    <tr>
+      <td>Pires et al., 2011</td>
+      <td>N = 4</td>
+      <td>No prior experience, training not reported</td>
+    </tr>
+    <tr>
+      <td>Pires et al., 2012</td>
+      <td>N = 14</td>
+      <td>Not reported</td>
+    </tr>
+    <tr>
+      <td>Sellers et al., 2014</td>
+      <td>N = 1</td>
+      <td>Prior experience not reported, thirteen months of continuous evaluation</td>
+    </tr>
+    <tr>
+      <td>McCane et al., 2015</td>
+      <td>N = 14</td>
+      <td>Not reported</td>
+    </tr>
+    <tr>
+      <td>Mainsah et al., 2015</td>
+      <td>N = 10</td>
+      <td>Prior experience not reported, two weeks to two months of evaluation</td>
+    </tr>
+    <tr>
+      <td>Vansteensel et al., 2016</td>
+      <td>N = 1</td>
+      <td>7 to 9 months</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 10.](https://cdn.elifesciences.org/articles/18554/elife-18554-media10.mp4.jpg)
+
+**Video 10.:** This video is from participant T5, Day 56, Blockset 4 (Block 30). Performance in this block was 4.36 bps.
+
+![Video 11.](https://cdn.elifesciences.org/articles/18554/elife-18554-media11.mp4.jpg)
+
+**Video 11.:** This video is from participant T7, Day 539, Blockset 2. Performance in this block was 1.57 bps.
+
+We note that in both sets of quantitative performance evaluations (copy typing and grid tasks), participant T6, who retained significant finger movement abilities, continued to move her hand while controlling the BCI. Further research sessions, in which T6 was asked to suppress her natural movements to the best of her abilities, showed similar performance in both copy typing and grid tasks (detailed in Figure 4 and supplements, which quantify her performance and the degree to which she was able to suppress movements). As might be expected, T6 found that suppressing her natural movement was a challenging, cognitively demanding task. Though she did this to the best of her abilities, the act of imagining finger movement still elicited minute movements, both during ‘open-loop’ decoder calibration where she was imagining movements, and during closed-loop control of the BCI. While we were unable to record EMG activity (as permission to do so had not previously been sought), we were able to record the movements of her fingers using a commercially-available ‘dataglove’ sensor system. This was also used for research sessions in which decoder calibration was based on her physical movements. Overall, when T6 actively attempted to suppress movements, her movement was reduced by a factor of 7.2–12.6 (Figure 4—figure supplement 1). Despite this factor of 7.2–12.6 in movement suppression, performance was quite similar to performance when T6 moved freely - across all three quantitative evaluation types (Grid, OPTI-II, QWERTY), the performance differences were within 0–20% and not significant (p>0.2 in all cases, Student’s t test).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/18554/elife-18554-fig4-v1.jpg)
 
-**Figure 4.:** A potential concern is that the demonstrated performance improvement for participant T6 relative to previous studies is due to her retained movement ability. Participant T6 was capable of dexterous finger movements (as opposed to participants T5 and T7, who retained no functional movements of their limbs). To control for the possibility that physical movements underlie the demonstrated improvement in neural control, we measured T6’s BCI performance during the same quantitative performance evaluation tasks, but asked her to suppress her movements as best as she could. In these sessions, decoders were calibrated based on imagined (rather than attempted) finger movements. (a) During copy typing evaluations with movements suppressed, T6’s average performance using the OPTI-II keyboard was 28.6 ± 2.0 ccpm (mean ± s.d.), and her average performance using the QWERTY keyboard was 19.9 ± 4.3 ccpm (as discussed in the main text, her performance while moving freely was 31.6 ± 8.7 ccpm and 23.9 ± 6.5 ccpm for the OPTI-II and QWERTY keyboards, respectively). (b) During grid evaluations with movements suppressed, T6’s achieved bitrate was 2.2 ± 0.17 bps (compared to 2.2 ± 0.4 bps while moving freely). We note that using the BCI while suppressing movements is a more difficult and cognitively demanding task - since the participant’s natural, intuitive attempts to move actually generate physical movements, she needed instead to imagine movements, and restrict her motor cortical activity to patterns that do not generate movement. (This is supported by the participants own comment regarding the difficulty in controlling the BCI while imagining movement without actually moving: ‘It is a learning curve for me to not move while imagining.’) Despite this additional cognitive demand, performance with movements suppressed was quite similar to performance when the participant moved freely (within 0–20%) - in all three cases, the differences in performance were not significant (p>0.2 in all cases, Student’s t test). Data are from T6’s trial days 595 and 598.DOI: http://dx.doi.org/10.7554/eLife.18554.027
+**Figure 4.:** A potential concern is that the demonstrated performance improvement for participant T6 relative to previous studies is due to her retained movement ability. Participant T6 was capable of dexterous finger movements (as opposed to participants T5 and T7, who retained no functional movements of their limbs). To control for the possibility that physical movements underlie the demonstrated improvement in neural control, we measured T6’s BCI performance during the same quantitative performance evaluation tasks, but asked her to suppress her movements as best as she could. In these sessions, decoders were calibrated based on imagined (rather than attempted) finger movements. (a) During copy typing evaluations with movements suppressed, T6’s average performance using the OPTI-II keyboard was 28.6 ± 2.0 ccpm (mean ± s.d.), and her average performance using the QWERTY keyboard was 19.9 ± 4.3 ccpm (as discussed in the main text, her performance while moving freely was 31.6 ± 8.7 ccpm and 23.9 ± 6.5 ccpm for the OPTI-II and QWERTY keyboards, respectively). (b) During grid evaluations with movements suppressed, T6’s achieved bitrate was 2.2 ± 0.17 bps (compared to 2.2 ± 0.4 bps while moving freely). We note that using the BCI while suppressing movements is a more difficult and cognitively demanding task - since the participant’s natural, intuitive attempts to move actually generate physical movements, she needed instead to imagine movements, and restrict her motor cortical activity to patterns that do not generate movement. (This is supported by the participants own comment regarding the difficulty in controlling the BCI while imagining movement without actually moving: ‘It is a learning curve for me to not move while imagining.’) Despite this additional cognitive demand, performance with movements suppressed was quite similar to performance when the participant moved freely (within 0–20%) - in all three cases, the differences in performance were not significant (p>0.2 in all cases, Student’s t test). Data are from T6’s trial days 595 and 598.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/18554/elife-18554-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** In the previous analysis (Figure 4), we demonstrated that T6’s performance was largely unchanged even when she actively suppressed her movements. Here we quantified the degree to which movements were suppressed during those sessions. We first analyzed the participant’s movements during decoder calibration (panels a and b) and then closed-loop BCI control (panel c). For decoder calibration, we compared freely moving sessions and sessions in which movements were suppressed (see Materials and methods: Quantifying movement suppression). Decoders were calibrated using a center-out-and-back task, with the cursor’s position tied to the measured finger position (freely moving sessions) or with the cursor’s position following pre-programmed movements (i.e., ‘open-loop’ calibration) and finger movements were imagined (movement suppressed sessions). For each condition (i.e., freely moving vs. suppressed movement), we measured finger position as a function of time (relative to the starting position for each trial), and averaged these positions across all trials for a given target direction (the position of each pair of traces denotes the target’s position relative to the center target). (a) During movement-based decoder calibration (freely moving sessions), thumb movements (red) controlled the vertical axis, while index finger movements (blue) controlled the horizontal axis. Horizontal scale bars represent 200 ms, and the vertical scale bar represents 100 units on the glove sensor scale (arbitrary units). (b) During open-loop decoder calibration (movement suppressed sessions), in which T6 was asked to simply imagine finger movements but avoid moving to the best of her abilities, finger movements were largely suppressed but minute movement was still detectable. Scale bars match the previous panel. Overall, during decoder calibration, movements were greatly reduced (p<0.01, paired Student’s t test), and the median suppression ratio was a factor of 7.2 (index finger) and 12.6 (thumb). (c) We also quantified the amount of movement during closed-loop BCI control (grid task) in sessions in which movements were suppressed. Because individual trials were highly variable (targets appeared in random locations during the grid task), we grouped trials by the target direction (i.e., the angle between the previous target and the prompted target for the current trial). The position of each pair of traces in the circle denotes the target direction. To ensure that any minute movements were captured in the analysis, the absolute value (rather than the signed value) of the finger position was taken prior to averaging across trials. Scale bars match the previous panel. As shown, movement during closed-loop BCI control was comparable to or less than movement during decoder calibration (panel b), which itself was a factor of 7.2–12.6 times less than movement during movement-based decoder calibration (panel a).DOI: http://dx.doi.org/10.7554/eLife.18554.028
+**Figure 4—figure supplement 1.:** In the previous analysis (Figure 4), we demonstrated that T6’s performance was largely unchanged even when she actively suppressed her movements. Here we quantified the degree to which movements were suppressed during those sessions. We first analyzed the participant’s movements during decoder calibration (panels a and b) and then closed-loop BCI control (panel c). For decoder calibration, we compared freely moving sessions and sessions in which movements were suppressed (see Materials and methods: Quantifying movement suppression). Decoders were calibrated using a center-out-and-back task, with the cursor’s position tied to the measured finger position (freely moving sessions) or with the cursor’s position following pre-programmed movements (i.e., ‘open-loop’ calibration) and finger movements were imagined (movement suppressed sessions). For each condition (i.e., freely moving vs. suppressed movement), we measured finger position as a function of time (relative to the starting position for each trial), and averaged these positions across all trials for a given target direction (the position of each pair of traces denotes the target’s position relative to the center target). (a) During movement-based decoder calibration (freely moving sessions), thumb movements (red) controlled the vertical axis, while index finger movements (blue) controlled the horizontal axis. Horizontal scale bars represent 200 ms, and the vertical scale bar represents 100 units on the glove sensor scale (arbitrary units). (b) During open-loop decoder calibration (movement suppressed sessions), in which T6 was asked to simply imagine finger movements but avoid moving to the best of her abilities, finger movements were largely suppressed but minute movement was still detectable. Scale bars match the previous panel. Overall, during decoder calibration, movements were greatly reduced (p<0.01, paired Student’s t test), and the median suppression ratio was a factor of 7.2 (index finger) and 12.6 (thumb). (c) We also quantified the amount of movement during closed-loop BCI control (grid task) in sessions in which movements were suppressed. Because individual trials were highly variable (targets appeared in random locations during the grid task), we grouped trials by the target direction (i.e., the angle between the previous target and the prompted target for the current trial). The position of each pair of traces in the circle denotes the target direction. To ensure that any minute movements were captured in the analysis, the absolute value (rather than the signed value) of the finger position was taken prior to averaging across trials. Scale bars match the previous panel. As shown, movement during closed-loop BCI control was comparable to or less than movement during decoder calibration (panel b), which itself was a factor of 7.2–12.6 times less than movement during movement-based decoder calibration (panel a).
 
 ## Discussion
 
@@ -150,7 +541,7 @@ In summary, we demonstrated a BCI that achieved high performance communication i
 
 Permission for these studies was granted by the US Food and Drug Administration (Investigational Device Exemption) and Institutional Review Boards of Stanford University (protocol # 20804), Partners Healthcare/Massachusetts General Hospital (2011P001036), Providence VA Medical Center (2011–009), and Brown University (0809992560). The three participants in this study, T6, T7, and T5, were enrolled in a pilot clinical trial of the BrainGate Neural Interface System (http://www.clinicaltrials.gov/ct2/show/NCT00912041). Informed consent, including consent to publish, was obtained from the participants prior to their enrollment in the study. Additional permission was obtained to publish participant photos and reproduce text typed by the participants.
 
-## Participants
+### Participants
 
 Participant T6 is a right-handed woman, 51 years old at the start of this work, who was diagnosed with Amyotrophic Lateral Sclerosis (ALS) and had resultant motor impairment (functional rating scale (ALSFRS-R) measurement of 16). In Dec. 2012, a 96-channel intracortical silicon microelectrode array (1.0 mm electrode length, Blackrock Microsystems, Salt Lake City, UT) was implanted in the hand area of dominant motor cortex as previously described (Simeral et al., 2011; Hochberg et al., 2012). T6 retained dexterous movements of the fingers and wrist. Data reported in this study are from T6’s post-implant days 570, 572, 577, 588, 591, 602, 605, and 621.
 
@@ -158,29 +549,29 @@ A second study participant, T7, was a right-handed man, 54 years old at the time
 
 A third study participant, T5, is a right-handed man, 63 years old at the time of this work, with a C4 ASIA C spinal cord injury that occurred approximately 9 years prior to study enrollment. He retains the ability to weakly flex his left (non-dominant) elbow and fingers; these are his only reproducible movements of his extremities. He also retains some slight residual movement which is inconsistently present in both the upper and lower extremities, mainly seen at ankle dorsiflexion and plantarflexion, wrist, fingers and elbow, more consistently present on the left than on the right. Occasionally, the initial slight voluntary movement triggers involuntary spastic flexion of the limb. In Aug. 2016, participant T5 had two 96-channel intracortical silicon microelectrode arrays (1.5 mm electrode length, Blackrock Microsystems, Salt Lake City, UT) implanted in the upper extremity area of dominant motor cortex. During BCI control, the only observed movement of the extremities (besides involuntary spastic flexion) is finger flexion on the non-dominant hand during discrete selection attempts. Data reported are from T5’s post-implant days 56, 57, 68, and 70.
 
-## System design
+### System design
 
 Data were collected using the BrainGate2 Neural Interface System. This modular platform, standardized across clinical trial sites, supports multiple operating systems and custom real-time software, and allows multiple studies to be performed by different researchers without hardware modification. The framework enables a rapid-prototyping environment and facilitates ease of replication of real-time closed loop studies with multiple trial participants. For the present study, neural control and task cuing closely followed ref. (Gilja et al., 2015) and were controlled by custom software running on the Simulink/xPC real-time platform (The Mathworks, Natick, MA), enabling millisecond-timing precision for all computations. Neural data were collected by the NeuroPort System (Blackrock Microsystems, Salt Lake City, UT) and available to the real-time system with 5 ms latency. Visual presentation was provided by a computer via a custom low latency network software interface to Psychophysics Toolbox for Matlab and an LCD monitor with a refresh rate of 120 Hz. Frame updates from the real-time system occurred on screen with a latency of approximately 13 ± 5 ms.
 
 During design and development research sessions leading up to the quantitative performance evaluations, a framework for remote, real-time performance monitoring and debugging was critical to iteratively improving system performance remotely. This was performed using lightweight, custom MATLAB software that monitored performance via network packets from the real-time system and provided insight to researchers located in the laboratory (i.e., away from the participants’ homes, where data were collected). Researchers accessed the remote monitoring and troubleshooting system in real-time using TeamViewer (Tampa, FL). In addition, at the end of each evaluation block, summary data was immediately transferred from the participants’ homes to researchers to facilitate rapid analysis, debugging, and iteration.
 
-## Neural feature extraction
+### Neural feature extraction
 
 The neural signal processing framework closely followed ref. (Gilja et al., 2015). The NeuroPort System applies an analog 0.3 Hz to 7.5 kHz band-pass filter to each neural channel and samples each channel at 30 kSamples per second. These broadband samples were processed via software on the Simulink/xPC real-time platform. The first step in this processing pipeline was to subtract a common average reference (CAR) from each channel (intended to remove noise common to all recorded neural channels). For each time point, the CAR was calculated simply by taking the mean across all neural channels.
 
-Band-pass filters split the signal into spike and high frequency local field potential (HF-LFP) bands. To extract neural spiking activity, a cascaded infinite impulse response (IIR) and finite impulse response (FIR) high-pass filter were applied. A threshold detector was then applied every millisecond to detect the presence of a putative neural spike. Choice of threshold was specific to each array (T6: −50 μV, T5, –95 μV, Medial and Lateral arrays; T7, Lateral array: −70 μV, Medial array: −90 μV). HF-LFP power features refer to the power within the 150–450 Hz band-pass filtered signal. For continuous control, T6 sessions used both spike and HF-LFP features (hybrid decoding), while T5 and T7 sessions used only spike-based features.
+Band-pass filters split the signal into spike and high frequency local field potential (HF-LFP) bands. To extract neural spiking activity, a cascaded infinite impulse response (IIR) and finite impulse response (FIR) high-pass filter were applied. A threshold detector was then applied every millisecond to detect the presence of a putative neural spike. Choice of threshold was specific to each array (T6: −50 μV, T5, –95 μV, Medial and Lateral arrays; T7, Lateral array: −70 μV, Medial array: −90 μV). HF-LFP power features refer to the power within the 150–450 Hz band-pass filtered signal. For continuous control, T6 sessions used both spike and HF-LFP features (hybrid decoding), while T5 and T7 sessions used only spike-based features. Figure 5 demonstrates the signal quality for both participants.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/18554/elife-18554-fig5-v1.jpg)
 
-**Figure 5.:** Each panel shows the recorded threshold crossing waveforms for all 96 channels of a given array for a 60 s period during the participant’s first quantitative performance evaluation block. T6 had a single implanted array, while T5 and T7 had two implanted arrays. Scale bars (lower left corner of each panel) represent 150 µV (vertical) and 0.5 milliseconds (horizontal). Voltages were analog band-pass filtered between 0.3 Hz and 7.5 kHz, then sampled by the NeuroPort system at 30 kHz. The resulting signals were then digitally high-pass filtered (500 Hz cutoff frequency) and re-referenced using common average referencing. Thresholds were set at −4.5 times the root-mean-squared (r.m.s.) voltage value for each channel. Channels without a corresponding trace did not have any threshold crossing events during this time period. Data are from sessions 570, 56, and 539 days post-implant for T6, T5, and T7, respectively.DOI: http://dx.doi.org/10.7554/eLife.18554.029
+**Figure 5.:** Each panel shows the recorded threshold crossing waveforms for all 96 channels of a given array for a 60 s period during the participant’s first quantitative performance evaluation block. T6 had a single implanted array, while T5 and T7 had two implanted arrays. Scale bars (lower left corner of each panel) represent 150 µV (vertical) and 0.5 milliseconds (horizontal). Voltages were analog band-pass filtered between 0.3 Hz and 7.5 kHz, then sampled by the NeuroPort system at 30 kHz. The resulting signals were then digitally high-pass filtered (500 Hz cutoff frequency) and re-referenced using common average referencing. Thresholds were set at −4.5 times the root-mean-squared (r.m.s.) voltage value for each channel. Channels without a corresponding trace did not have any threshold crossing events during this time period. Data are from sessions 570, 56, and 539 days post-implant for T6, T5, and T7, respectively.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/18554/elife-18554-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** Control algorithms for T6 incorporated high-frequency LFP power signals (HF-LFP; see Materials and methods). A potential concern with a power signal is that it may pick up artifacts related to EMG from eye movements. Here we analyze activity during a decoder calibration block to show that HF-LFP signals have a strikingly similar time course and condition dependence as spiking activity. (a) Sample of the signals recorded on T6’s array during a decoder calibration block. Some channels show discernible single or multiunit activity (threshold crossings), while others do not. Neural data was processed as in Figure 5, with thresholds set to −4 times the r.m.s. voltage value for each channel. Scale bars (lower left corner) represent 150 µV (vertical) and 0.5 milliseconds (horizontal). (b) Target positions and corresponding colors used to label each condition in the subsequent panels. (c) Threshold crossing rates as a function of time for each condition (movement to a given target location), beginning at the time of target onset, for five example channels with discernable threshold crossing activity. Each trace represents the mean ± s.e.m. threshold crossing rate for a given condition, computed across seven trials for each condition. Horizontal scale bar represents 100 ms, vertical scale bar represents 40 threshold crossings / sec. Traces from individual trials were smoothed by convolving with a Gaussian kernel with 50 ms s.d. prior to mean / standard deviation calculations. (d) Same plots, but depicting HF-LFP power instead of threshold crossing rates, for a different set of example channels that did not have discernible multiunit activity. Horizontal scale bar is again 100 ms, vertical scale (HF-LFP power) is in arbitrary units. The same trials as panel (c) above were used. As shown, HF-LFP power signals display a similar time course following target onset, as well as degree of condition dependence, as threshold crossing activity. Data are from T6’s post-implant day 570.DOI: http://dx.doi.org/10.7554/eLife.18554.030
+**Figure 5—figure supplement 1.:** Control algorithms for T6 incorporated high-frequency LFP power signals (HF-LFP; see Materials and methods). A potential concern with a power signal is that it may pick up artifacts related to EMG from eye movements. Here we analyze activity during a decoder calibration block to show that HF-LFP signals have a strikingly similar time course and condition dependence as spiking activity. (a) Sample of the signals recorded on T6’s array during a decoder calibration block. Some channels show discernible single or multiunit activity (threshold crossings), while others do not. Neural data was processed as in Figure 5, with thresholds set to −4 times the r.m.s. voltage value for each channel. Scale bars (lower left corner) represent 150 µV (vertical) and 0.5 milliseconds (horizontal). (b) Target positions and corresponding colors used to label each condition in the subsequent panels. (c) Threshold crossing rates as a function of time for each condition (movement to a given target location), beginning at the time of target onset, for five example channels with discernable threshold crossing activity. Each trace represents the mean ± s.e.m. threshold crossing rate for a given condition, computed across seven trials for each condition. Horizontal scale bar represents 100 ms, vertical scale bar represents 40 threshold crossings / sec. Traces from individual trials were smoothed by convolving with a Gaussian kernel with 50 ms s.d. prior to mean / standard deviation calculations. (d) Same plots, but depicting HF-LFP power instead of threshold crossing rates, for a different set of example channels that did not have discernible multiunit activity. Horizontal scale bar is again 100 ms, vertical scale (HF-LFP power) is in arbitrary units. The same trials as panel (c) above were used. As shown, HF-LFP power signals display a similar time course following target onset, as well as degree of condition dependence, as threshold crossing activity. Data are from T6’s post-implant day 570.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/18554/elife-18554-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** Following Figure 5—figure supplement 1, to further rule out the possibility that HF-LFP signals are related to eye movements, we include data recorded as T6 performed an auditory-cued task with her eyes closed as she attempted multiple single-joint movements. The task included a delay period in which she was prompted (via an auditory cue) about the upcoming movement attempt, but was asked to not attempt the movement until receiving a go cue. (a) Sample of the signals recorded on T6’s array during the attempted movement. Some channels show discernible single or multiunit activity (threshold crossings), while others do not. Neural data was processed as in Figure 5, with thresholds set to −4 times the r.m.s. voltage value for each channel. Scale bars (lower left corner) represent 150 µV (vertical) and 0.5 milliseconds (horizontal). (b) Threshold crossing rates as a function of time for attempted single-joint flexion movements (index finger: red, thumb: yellow, wrist: light green, elbow: darker green) for five example channels with discernable threshold crossing activity. Each trace represents the mean ± s.e.m. threshold crossing rate for a given condition, computed across 20 trials for each condition. Horizontal scale bar represents 500 ms, vertical scale bar represents 20 threshold crossings / sec. Red box denotes the time each movement was prompted, and blue box denotes the time of the go cue (break in the traces is due to the randomized delay period across trials). As shown, activity is indicative of both planning and movement attempt epochs. Traces from individual trials were smoothed by convolving with a Gaussian kernel with 50 ms s.d. prior to mean / standard deviation calculations. (d) Same plots, but depicting HF-LFP power instead of threshold crossing rates, for a different set of example channels that did not have discernible multiunit activity. Horizontal scale bar is again 500 ms, vertical scale (HF-LFP power) is in arbitrary units. The same trials as panel (c) above were used. Because there were no visual cues and the participant had her eyes closed, it is unlikely that the participant was making condition dependent eye movements. However, as shown, even in the absence of visual cues, HF-LFP power signals display a similar time course following target onset, degree of planning- and movement-related activity, and degree of condition dependence, as threshold crossing activity. Data are from T6’s post-implant day 488.DOI: http://dx.doi.org/10.7554/eLife.18554.031
+**Figure 5—figure supplement 2.:** Following Figure 5—figure supplement 1, to further rule out the possibility that HF-LFP signals are related to eye movements, we include data recorded as T6 performed an auditory-cued task with her eyes closed as she attempted multiple single-joint movements. The task included a delay period in which she was prompted (via an auditory cue) about the upcoming movement attempt, but was asked to not attempt the movement until receiving a go cue. (a) Sample of the signals recorded on T6’s array during the attempted movement. Some channels show discernible single or multiunit activity (threshold crossings), while others do not. Neural data was processed as in Figure 5, with thresholds set to −4 times the r.m.s. voltage value for each channel. Scale bars (lower left corner) represent 150 µV (vertical) and 0.5 milliseconds (horizontal). (b) Threshold crossing rates as a function of time for attempted single-joint flexion movements (index finger: red, thumb: yellow, wrist: light green, elbow: darker green) for five example channels with discernable threshold crossing activity. Each trace represents the mean ± s.e.m. threshold crossing rate for a given condition, computed across 20 trials for each condition. Horizontal scale bar represents 500 ms, vertical scale bar represents 20 threshold crossings / sec. Red box denotes the time each movement was prompted, and blue box denotes the time of the go cue (break in the traces is due to the randomized delay period across trials). As shown, activity is indicative of both planning and movement attempt epochs. Traces from individual trials were smoothed by convolving with a Gaussian kernel with 50 ms s.d. prior to mean / standard deviation calculations. (d) Same plots, but depicting HF-LFP power instead of threshold crossing rates, for a different set of example channels that did not have discernible multiunit activity. Horizontal scale bar is again 500 ms, vertical scale (HF-LFP power) is in arbitrary units. The same trials as panel (c) above were used. Because there were no visual cues and the participant had her eyes closed, it is unlikely that the participant was making condition dependent eye movements. However, as shown, even in the absence of visual cues, HF-LFP power signals display a similar time course following target onset, degree of planning- and movement-related activity, and degree of condition dependence, as threshold crossing activity. Data are from T6’s post-implant day 488.
 
 A potential concern with decoding a power signal such as these high frequency LFP (HF-LFP) signals (which were used for participant T6) is that they may pick up artifacts related to EMG from eye movements. In intracranial studies, such artifacts have been previously shown in electrocortographic (ECoG) recordings (e.g., Kovach et al [Kovach et al., 2011].). However, as demonstrated in Kovach et al., the magnitude of this phenomenon falls sharply with the distance from the ventral temporal cortical surface. Further, the same study demonstrated that these artifacts are highly correlated across scales less than 1 cm, and that rereferencing on these local scales eliminates the artifacts outside of the immediate ventral temporal cortical surface (Kovach et al., Fig. 9). In our study, data are collected in motor cortical areas which are fairly medial in the precentral gyrus (frontal lobe), and are rereferenced using the common average across the intracortical array (4 mm x 4 mm). Given the large distance between the recording site and the ventral temporal cortical surface, and the common average rereferencing, any minor eye movement-related EMG artifacts are expected to be essentially eliminated.
 
@@ -188,11 +579,15 @@ In order to be certain that these artifacts do not play a role, we provide addit
 
 During sessions with participant T7, neural features exhibited drifts in baseline firing rates over time. To account for these nonstationarities, baseline rates were computed de novo prior to each block, during a 30 s period in which the participant was asked simply to relax.
 
-## Neural control algorithms
+### Neural control algorithms
 
-Two-dimensional continuous control of the cursor used the ReFIT Kalman Filter (detailed in refs. [Gilja et al., 2012, 2015]). For participants T6 and T5, discrete selection (‘click’) was achieved using a Hidden Markov Model (HMM)-based state classifier, which was previously developed with non-human primates (Kao et al., 2016) and adapted for the current work. At each timestep, the HMM calculated the probability that the participant’s intended state was either movement or click. For T6, only HF-LFP features were used in the HMM, while only spike features were used for T5. Features were pre-processed with a dimensionality reduction step using Principal Components Analysis (PCA). The HMM classified the probability of state sk as:p(sk,t)=p(sk|zt)∑ip(sk,t|si,t−1)p(si,t−1),
+Two-dimensional continuous control of the cursor used the ReFIT Kalman Filter (detailed in refs. [Gilja et al., 2012, 2015]). For participants T6 and T5, discrete selection (‘click’) was achieved using a Hidden Markov Model (HMM)-based state classifier, which was previously developed with non-human primates (Kao et al., 2016) and adapted for the current work. At each timestep, the HMM calculated the probability that the participant’s intended state was either movement or click. For T6, only HF-LFP features were used in the HMM, while only spike features were used for T5. Features were pre-processed with a dimensionality reduction step using Principal Components Analysis (PCA). The HMM classified the probability of state sk as:
 
-where p(sk|zt) is the probability of being in state sk given the current (dimensionality-reduced) neural features at time t, zt, and where p(sk,t|si,t−1) denotes the probability of transitioning from state si to state sk.p(sk|zt) was modeled as a multivariate Gaussian distribution with separate mean and covariance for each state. The current state was classified as ‘click’ when p(sk,t) exceeded a pre-determined threshold that was calculated in an unsupervised fashion (threshold choice is outlined in the task descriptions).
+$$
+p(s_{k,t})=p(s_{k}|z_{t})\sum_{i}p(s_{k,t}|s_{i,t−1})p(s_{i,t−1}),
+$$
+
+where $p(s_{k}|z_{t})$ is the probability of being in state $s_{k}$ given the current (dimensionality-reduced) neural features at time $t$, $z_{t}$, and where $p(s_{k,t}|s_{i,t−1})$ denotes the probability of transitioning from state $s_{i}$ to state $s_{k}.p(s_{k}|z_{t})$ was modeled as a multivariate Gaussian distribution with separate mean and covariance for each state. The current state was classified as ‘click’ when $p(s_{k},t)$ exceeded a pre-determined threshold that was calculated in an unsupervised fashion (threshold choice is outlined in the task descriptions).
 
 In this framework, there is a key tradeoff between including more PCs (and potentially more relevant information) and overfitting / mis-estimating the mean and covariance of the Gaussian distribution for each state as more dimensions (PCs) are added. Overfitting these parameters results in poor decoding on ‘out-of-sample’ data. Empirically, we found that 3–4 PCs resulted in an HMM that accurately classified states without overfitting on the limited training data. Therefore, the top four eigenvalue-ranked PCs were kept and used as inputs to the HMM.
 
@@ -206,29 +601,88 @@ For both the continuous cursor-positioning ReFIT-KF decoder and the discrete cli
 
 As the HMM click decoder facilitates a discrete decision, a threshold criteria for selection was needed. This threshold value was set after each retraining block at the 93rd quantile of state estimates for the respective retraining block. When running in closed loop, after two consecutive 15 ms bins where the HMM click state probability was above this threshold value, the system generated a click and selected the target under the cursor.
 
-As mentioned above, during sessions with participant T7, neural features exhibited drifts in baseline firing rates over time. On short timescales, these drifts manifested as biases in decoded velocities. Biases were reduced using a variant of the bias correction method used in Jarosiewicz et al. (2015); Hochberg et al. (2012), with the addition of a magnitude term that corrects for the frequency of observed speeds (i.e., low speeds are generally observed for longer time periods than high speeds). Specifically, e.g. for the x direction, velocity bias was estimated as:
+As mentioned above, during sessions with participant T7, neural features exhibited drifts in baseline firing rates over time. On short timescales, these drifts manifested as biases in decoded velocities. Biases were reduced using a variant of the bias correction method used in Jarosiewicz et al. (2015); Hochberg et al. (2012), with the addition of a magnitude term that corrects for the frequency of observed speeds (i.e., low speeds are generally observed for longer time periods than high speeds). Specifically, e.g. for the $x$ direction, velocity bias was estimated as:
 
-Bx(t)=Bx(t−1)+(Vx(t)−Bx(t−1)) × |Vx(t)−Bx(t−1)| ×Δt/ τ,
+$B_{x}(t)=B_{x}(t−1)+(V_{x}(t)−B_{x}(t−1)) \times |V_{x}(t)−B_{x}(t−1)| \timesΔt/ \tau$,
 
-where Bx(t) represents the bias estimate for the x direction at time t, Vx(t) represents the velocity estimate for the x direction at time t, Δt is the time step of adaptation (0.001 s), and τ controls the adaptation rate (we set τ to 30 s). A larger τ makes the system slower to respond to changes in bias, but reduces the size of transient fluctuations in the bias estimate when no actual bias is present. The current bias estimate was only updated when speed exceeded a threshold (threshold was set to be roughly the 10–20% quantile for the speeds typically observed for T7).
+where $B_{x}(t)$ represents the bias estimate for the $x$ direction at time $t$, $V_{x}(t)$ represents the velocity estimate for the $x$ direction at time $t$, Δt is the time step of adaptation (0.001 s), and $\tau$ controls the adaptation rate (we set $\tau$ to 30 s). A larger $\tau$ makes the system slower to respond to changes in bias, but reduces the size of transient fluctuations in the bias estimate when no actual bias is present. The current bias estimate was only updated when speed exceeded a threshold (threshold was set to be roughly the 10–20% quantile for the speeds typically observed for T7).
 
-Data from participant T5 was collected after data collection from participants T6 and T7, and the scientific protocol used with participant T5 reflected the advances made with the prior two participants. Table 3 highlights these changes. As participant T5 and T7’s arrays had a large number of highly modulated spiking channels, no HFLP was necessary to build their decoders. After participant T6’s data collection was completed, it was discovered that both cursor movement and click decoders can be calibrated during the initial open loop block, and this approach was used with participant T5. Similarly, the bias correction algorithm was implemented for participant T7 after data collection for participant T6 was completed and it was discovered that the cursor movement decoder did not need to be retrained after every blockset (a bias correction update block would suffice). This time-saving approach was also used with participant T5.10.7554/eLife.18554.032Table 3.Summary of the decoding and calibration approaches used with each participant.DOI: http://dx.doi.org/10.7554/eLife.18554.032T6T7T5Continuous decoding algorithm ReFIT Kalman Filter (threshold crossings and HF-LFP)ReFIT Kalman Filter(threshold crossings)ReFIT Kalman Filter(threshold crossings)Discrete decoding algorithm Hidden Markov Model (HF-LFP)n/aHidden Markov Model (threshold crossings)Dwell time 1 s (reset on target exit)1.5 s (cumulative)1 s (reset on target exit)Bias estimation noyesyesCursor recentering noyesnoRecalibration blocks Recalibrated continuous and discrete decodersOnly updated bias estimatesOnly updated bias estimatesError attenuation in recalibration block yesyesno
+Data from participant T5 was collected after data collection from participants T6 and T7, and the scientific protocol used with participant T5 reflected the advances made with the prior two participants. Table 3 highlights these changes. As participant T5 and T7’s arrays had a large number of highly modulated spiking channels, no HFLP was necessary to build their decoders. After participant T6’s data collection was completed, it was discovered that both cursor movement and click decoders can be calibrated during the initial open loop block, and this approach was used with participant T5. Similarly, the bias correction algorithm was implemented for participant T7 after data collection for participant T6 was completed and it was discovered that the cursor movement decoder did not need to be retrained after every blockset (a bias correction update block would suffice). This time-saving approach was also used with participant T5.
 
-## Free typing task
+**Table 3.**
+ Summary of the decoding and calibration approaches used with each participant.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>T6</th>
+      <th>T7</th>
+      <th>T5</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Continuous decoding algorithm</td>
+      <td>ReFIT Kalman Filter (threshold crossings and HF-LFP)</td>
+      <td>ReFIT Kalman Filter(threshold crossings)</td>
+      <td>ReFIT Kalman Filter(threshold crossings)</td>
+    </tr>
+    <tr>
+      <td>Discrete decoding algorithm</td>
+      <td>Hidden Markov Model (HF-LFP)</td>
+      <td>n/a</td>
+      <td>Hidden Markov Model (threshold crossings)</td>
+    </tr>
+    <tr>
+      <td>Dwell time</td>
+      <td>1 s (reset on target exit)</td>
+      <td>1.5 s (cumulative)</td>
+      <td>1 s (reset on target exit)</td>
+    </tr>
+    <tr>
+      <td>Bias estimation</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>yes</td>
+    </tr>
+    <tr>
+      <td>Cursor recentering</td>
+      <td>no</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+    <tr>
+      <td>Recalibration blocks</td>
+      <td>Recalibrated continuous and discrete decoders</td>
+      <td>Only updated bias estimates</td>
+      <td>Only updated bias estimates</td>
+    </tr>
+    <tr>
+      <td>Error attenuation in recalibration block</td>
+      <td>yes</td>
+      <td>yes</td>
+      <td>no</td>
+    </tr>
+  </tbody>
+</table>
+
+### Free typing task
 
 The aim of this task was to create a natural, familiar, and conversational environment to demonstrate the potential for iBCIs to be used as communication devices. In this task, conducted only with participant T6, questions were presented at the top of the monitor. These questions were tailored to topics that T6 enjoys discussing. At the start of a block, one of these questions would be chosen from a pool of questions that had not been used before. After reading the question considering her response, T6 started the block counter and enabled the keyboard inputs by selecting the play button in the bottom right corner of the screen. She then used the BCI to type her response to the question by selecting one letter at a time.
 
 During the free typing task, T6 was asked to suppress her hand movements as best as possible. During the quantitative performance evaluations, T6 was free to make movements as she wished.
 
-## Quantitative performance evaluations
+### Quantitative performance evaluations
 
 The quantitative measurement experiments were performed with all three participants. These experimental days were explicitly structured and carefully timed so that each piece of data could be compared and measured independently. The experimental flow diagram for participant T6 is shown in Figure 2—figure supplement 1. With participants T6 and T5, the calibration protocol resulted in two BCI decoders: one for cursor movement and one for click. With participant T7, only a cursor movement decoder was calibrated. After decoders were calibrated and confirmed to be working successfully in a brief (less than 30 s evaluation), the experimental data were then collected. Once the data portion of the experiment was started, the blockset structure was repeated until the participant ended the research session. Starting over with the calibration portion of the protocol was not permitted once the blockset data collection portion of the research day began.
 
-## Blocksets
+#### Blocksets
 
 Each blockset was collected in a strict, timed, randomized fashion. Each blockset was considered a complete and independent unit, equally weighted, and statistically identical to all other blocksets. Blockset timing structure is defined in Figure 2—figure supplement 2. Each blockset began with a recalibration block, which resulted in new cursor movement and click decoders for participant T6. For participants T5 and T7, the movement decoder was held constant and the recalibration block was simply used to create an updated estimate of the underlying velocity bias. This recalibration protocol was used to maximize the performance of the data collected in the time-locked blocks that followed. Three data blocks were then collected in a randomized fashion, constituting a blockset. Each blockset consisted of one block each of three tasks. The three tasks with participant T6 and T5 were the grid task, the QWERTY task, and the OPTI-II task. With participant T7, the QWERTY task was substituted with the ABCDEF task, since he had minimal experience with the conventional (QWERTY) keyboard layout. The task order in each blockset was randomized subject to the constraint that the two copy typing tasks were always adjacent. This constraint minimized the amount of elapsed time between the copy typing blocks, in order to minimize any confounding effects on measured typing rate. The prompted sentence to copy in both keyboard tasks for a given blockset was identical. Following the completion of a blockset, participants were given as long a break (to request a drink from a caregiver, etc.) as desired before starting the subsequent blockset. Breaks within a blockset were minimized as best as possible.
 
-## Target selection and cursor re-centering
+#### Target selection and cursor re-centering
 
 For both participants, selections could be made by holding the cursor over the target for a fixed period of time (1 s for T6 and T5, 1.5 s for T7). For T6 and T5, leaving a given target area would reset the hold time counter to 0 – thus they were required to remain over the same target for a full second to select via holding. For T7, who could only select targets by dwelling on them, selection used a strategy called ‘cumulative dwell time’ – each target had a separate hold time counter, and the cumulative time spent over a target counted towards the 1.5 s requirement (i.e., it was not required that the 1.5 s be contiguous). All hold time counters were reset to 0 after any target selection. Additionally, T6 and T5 could also select targets using the HMM-based click decoder, which was typically a faster method of selecting targets. Thus, T6 and T5 had two methods for target selection.
 
@@ -236,44 +690,52 @@ Participant T7 preferred that the cursor re-center to the middle of the screen a
 
 For T7, after each selection, the cursor was centered relative to the targets and held in place for 500 ms – during this time, target selection was disabled. This approach minimized the ‘worst case’ path lengths (i.e., eliminated the potential of having to move from one corner of the keyboard to another while typing a phrase); this is beneficial in the case where instability causes control biases, which make long trajectories that oppose the bias more difficult. We note that, as re-centering was completely unsupervised (i.e., it occurred regardless of whether the selection made was correct), it did not compromise the typing or achieved bitrate measurements in any way.
 
-## Grid task
+#### Grid task
 
 The purpose of this task was to measure performance using information theoretic metrics. In this grid task (Hochberg et al., 2006; Nuyujukian et al., 2015), the workspace was divided into a 6 × 6 grid of equal gray squares. Each square was selectable, and one would randomly be prompted as the target when illuminated in green. After a selection was made, a new target was immediately prompted. This task ran for two minutes (fixed duration).
 
-## QWERTY task
+#### QWERTY task
 
 The purpose of this task was to measure typing rates using a conventional keyboard layout. In this task, a sentence was prompted at the top of the screen, and participants were instructed to copy this sentence as quickly and accurately as possible. Selection methods were identical to that described in the grid task. This task ended when the participants typed the last letter of the prompted sentence or two minutes had elapsed, whichever occurred first.
 
-## ABCDEF task
+#### ABCDEF task
 
 The purpose of this task was identical to the QWERTY task, except it was specific to participant T7. Since he was not very familiar with the QWERTY layout, the letters were rearranged alphabetically from left to right, top to bottom. This alphabetical ordering allowed T7 to more easily determine where a given letter was located. The keyboard geometry of the ABCDEF task was identical to that of the QWERTY task, and the same task timing and prompting was employed as described in the QWERTY task.
 
-## OPTI-II task
+#### OPTI-II task
 
 The purpose of this task was to provide a potentially more efficient keyboard layout than the QWERTY or ABCDEF layouts for a continuous cursor communication interface. The conventional QWERTY layout is not ideal for selecting letters via continuous cursor navigation. Thus, a more efficient keyboard layout that minimizes the average distance travelled between letters should increase the typing rate. We used the OPTI-II keyboard layout described in the HCI literature (Rick, 2010) as an optimized layout for text entry with a continuous cursor. This was used with both participants, with timings and promptings identical to the QWERTY and ABCDEF tasks. For participant T6, a programming error caused the accessible workspace for the OPTI-II task (copy typing) to stop in the middle of the bottom row of keys (contrary to other tasks, where the accessible workspace extended past the keyboards).
 
-## Metrics
+### Metrics
 
 The performance of each task was measured using one of two metrics, depending on the task. Performance on the grid task was measured via achieved bitrate, measured in bits per second, and performance on the typing tasks (QWERTY, ABCDEF, OPTI-II) was measured via correct characters per minute.
 
-## Achieved bitrate
+#### Achieved bitrate
 
-The grid task, representing a stable, memoryless, discrete communication channel with random, uniformly-distributed prompted targets, satisfies information theoretic criteria for measuring achieved bitrate (Nuyujukian et al., 2015). Achieved bitrate is a conservative measure of the actualized throughput of a communication channel. The achieved bitrate, B, is calculated via the following equation:B=log2(N−1)max(S−2E,0)t
+The grid task, representing a stable, memoryless, discrete communication channel with random, uniformly-distributed prompted targets, satisfies information theoretic criteria for measuring achieved bitrate (Nuyujukian et al., 2015). Achieved bitrate is a conservative measure of the actualized throughput of a communication channel. The achieved bitrate, B, is calculated via the following equation:
+
+$$
+B=\frac{log_{2}(N−1)max(S−2E,0)}{t}
+$$
 
 where N is the number of targets on the screen, S is the number of selections, E is the number of errors, and t is the time elapsed. The floor of this value is 0, since bitrate cannot be less than zero. Note that trials in which the participant timed out and made no selection are not counted in S or E, but are included in the value for time elapsed. This metric, in bits per second, represents the minimum expected throughput achievable from the system.
 
-## Correct characters per minute
+#### Correct characters per minute
 
-Typing rates were measured by calculating the number of correct characters transmitted over time (correct characters per minute [Bacher et al., 2015]). Correct characters were defined as those that were not subsequently deleted by the participant using the delete key. This measure, C, is defined by the following equation:C= max(S−2D, 0)t
+Typing rates were measured by calculating the number of correct characters transmitted over time (correct characters per minute [Bacher et al., 2015]). Correct characters were defined as those that were not subsequently deleted by the participant using the delete key. This measure, C, is defined by the following equation:
+
+$$
+C= \frac{max(S−2D, 0)}{t}
+$$
 
 where S is the number of selections, D is the number of delete key selections, and t is the elapsed time.
 
 We note that this metric labels typographical errors or spelling errors as correct characters. However, as it is not clear whether the participant was aware of a given spelling error, we only considered errors those that were actually deleted. This metric also parallels achieved bitrate, in that it only measures the net characters transmitted over time.
 
-## Quantifying movement suppression
+### Quantifying movement suppression
 
 For sessions in which participant T6 was asked to suppress her movements to the best of her abilities (Figure 4), we first quantified the degree to which movements were suppressed during decoder calibration (Figure 4—figure supplement 1). As mentioned earlier, finger movements were measured using a dataglove (5DT, Irvine, CA). For each condition (i.e., freely moving vs. suppressed movement), we measured the finger position as a function of time (relative to the starting position for each trial), and averaged these positions across all trials for a given target direction. To robustly evaluate the degree of suppression between freely moving and suppressed movement, we compared the time epochs spanning 600–1200 ms after target onset, which was well after movement was detectable but before movements became more variable across trials (i.e., to perform corrective movements as T6 approached the target). Movement suppression was only estimated for target directions in which movement on a given finger was to be expected to avoid singular values (e.g., as index finger movements were related to control of the horizontal dimension, index finger movements were not compared for the vertical targets where they would be expected to be 0). Data compared are from T6’s trial days 570 (freely moving) and 595 (movements suppressed). We next quantified the degree to which movements were suppressed during closed-loop BCI control (Grid task). Individual trials were grouped by the target direction (i.e., the angle between the previous target and the prompted target for the current trial; eight possible directions) and finger positions were averaged across all trials of a given direction. Trials that lasted less than 1200 ms were excluded from the analysis. To ensure that any minute movements were captured, movements were quantified using the absolute value (rather than the signed value) of the finger position at each time point relative to the starting position for each trial. Analysis includes all Grid task data from T6’s trial days 595 and 598 (movements suppressed). Unfortunately, for freely moving sessions, finger positions were not recorded during closed-loop BCI control, so data are unavailable for the specific comparison of finger movements during closed-loop BCI control for freely moving vs. movement suppressed sessions.
 
-## Code availability
+### Code availability
 
 Code, which is platform specific and implemented in xPC, may be made available upon request to corresponding author.

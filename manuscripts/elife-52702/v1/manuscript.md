@@ -15,7 +15,7 @@
 
 ## Abstract
 
-Inter-male aggressive behavior is a prominent sexually dimorphic behavior. Neural circuits that underlie aggressive behavior are therefore likely under the control of sex-determining genes. However, the neurogenetic mechanism that generates sex-specific aggressive behavior remains largely unknown. Here, we found that a neuronal class specified by one of the Drosophila sex determining genes, fruitless ( fru ), belongs to the neural circuit that generates male-type aggressive behavior. This neuronal class can promote aggressive behavior independent of another sex determining gene, doublesex ( dsx ), although dsx is involved in ensuring that aggressive behavior is performed only toward males. We also found that three fru isoforms with different DNA binding domains show a division of labor on male aggressive behaviors. A dominant role of fru in specifying sex-specific aggressive behavior may underscore a genetic mechanism that allows male-type aggressive behavior to evolve at least partially independently from courtship behavior, which is under different selective pressures.
+Inter-male aggressive behavior is a prominent sexually dimorphic behavior. Neural circuits that underlie aggressive behavior are therefore likely under the control of sex-determining genes. However, the neurogenetic mechanism that generates sex-specific aggressive behavior remains largely unknown. Here, we found that a neuronal class specified by one of the Drosophila sex determining genes, fruitless (fru), belongs to the neural circuit that generates male-type aggressive behavior. This neuronal class can promote aggressive behavior independent of another sex determining gene, doublesex (dsx), although dsx is involved in ensuring that aggressive behavior is performed only toward males. We also found that three fru isoforms with different DNA binding domains show a division of labor on male aggressive behaviors. A dominant role of fru in specifying sex-specific aggressive behavior may underscore a genetic mechanism that allows male-type aggressive behavior to evolve at least partially independently from courtship behavior, which is under different selective pressures.
 
 ## Introduction
 
@@ -29,23 +29,73 @@ Here, we characterized Tk-GAL4FruM neurons (Asahina et al., 2014) as a part of a
 
 ## Results
 
-## fruM specifies aggression-promoting Tk-GAL4FruM neurons
+### fruM specifies aggression-promoting Tk-GAL4FruM neurons
 
 Tk-GAL4FruM neurons are male-specific fru-expressing neurons that not only promote male-type aggressive behavior upon activation, but also are necessary for normal levels of male aggression (Asahina et al., 2014). We first characterized the behavioral impact of optogenetic activation of these neurons in the presence of male or female target flies (Figure 1A), because sex of the target fly can be an important biological variable in determining the function of social behavior-controlling neurons. We quantified the time in which a tester fly orients toward a target fly, number of lunges, and duration of unilateral wing extensions (shorthanded as ‘wing extension’ hereafter) using automated behavior classifiers before, during, and after the optogenetic stimulation of Tk-GAL4FruM neurons with programmed LEDs (Figure 1B; see also Materials and methods).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/52702/elife-52702-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of the design of behavioral assays. (B) Schematic of the optogenetic stimulation paradigm. Time windows 1–4 represent periods in which behavioral parameters are pooled and calculated in subsequent panels. (C, D) Boxplots of time orienting (C1, D1), lunges (C2, D2), and wing extensions (C3, D3) by the tester flies during the time windows 1–4 (see B). Their genotypes and pair numbers are indicated below the plots. Gray lines represent single testers. Target flies are either group-housed wild-type males (C) or mated females (D). In gray: **p<0.01, *p<0.05, n.s. p>0.05 (Kruskal-Wallis one-way ANOVA and post-hoc Wilcoxon signed rank test). In black: **p<0.01, n.s. p>0.05 (Kruskal-Wallis one-way ANOVA and post-hoc Mann-Whitney U-test). (E) Schematics of the sex-determination pathway in Drosophila. (F) Schematic of the four sex genotypes defined by dsx and fru splicing. (G–J) Expression of CsChrimson:tdTomato under the control of Tk-GAL41 and Otd-nls:FLPo (red in G1–J1), black in G2,3-J2,3) in brains of a male (G), fruM female (H), fruF male (I), and female (J) flies is visualized together with a neuropil marker BRP (blue) by immunohistochemistry. Traced Tk-GAL4FruM neurons in a male (G3) and a fruM female (H3) are shown in white. Circle: soma (right cluster is enlarged in G4 and H4). Scale bar: 100 μm (G1–J1), 10 μm (G4, H4). (K) Mean number of cell bodies per hemibrain visualized by anti-DsRed antibody in each genotype represented in G–J) and Figure 1—figure supplement 2J–M. Error bars: S.D. Genotypes and number of hemibrains examined are indicated to the left. Lowercase letters denote significance group (p<0.01, one-way ANOVA with post-hoc Tukey’s honestly significant difference test). (L, M) Z-projection of segmented, registered, and averaged images of CsChrimson:tdTomato expression under the control of Tk-GAL41 and Otd-nls:FLPo (black) in the standard Drosophila brain (gray in L1, (M1). Number of used hemibrains are indicated in L2, M2. N-P: Volumes of medial projection (N), anterior projection (O), and lateral projection (P) of Tk-GAL4FruM neurons in males with genotypes indicated below. Their genotypes and pair numbers are indicated below the plots. n.s. p>0.05 (Kruskal-Wallis one-way ANOVA).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52702/elife-52702-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Rasters of time orienting (A1, B1), lunges (A2, B2), and wing extensions (A3, B3) performed by male tester flies that express CsChrimson:tdTomato under the control of Tk-GAL41 and Otd-nls:FLPo (the same datasets as used in Figure 1C, D. Pink bar: LED-on periods, horizontal bar: 10 min, vertical bar: 10 flies. LED stimulation condition is indicated at the bottom. (C) Boxplots of time orienting (C1), lunges (C2), and wing extension (C3) by the tester flies during the time windows 2 (left) and 4 (right) (see Figure 1D). Tester’s genotype (indicated below) is the same as testers in A and B. LED frequencies were varied as indicated below the plot. Target flies are wild-type group-housed males. (D) Boxplots of velocity (D1), lunges (D2), and wing extensions (D3) performed by male tester flies that express CsChrimson:tdTomato under the control of Tk-GAL41 and Otd-nls:FLPo in the absence of a target fly.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/52702/elife-52702-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Schematic of the sex-determination pathway in Drosophila. (B) Schematic of the four sex genotypes defined by dsx and fru splicing. (C) Representative image of Tk-GAL4FruM neurons (red in C1–C3), black in C4) visualized by immunohistochemistry against tdTomato along with immunoreactivity against DsxM (yellow in C1, C2, black in C5) and FruM (cyan in C1), (C3), black in C6) (scale bar: 10 µm). All 6 cells express FruM, but not DsxM (cyan circles in C5,6). (D) Mean number of Tk-GAL4FruM neuronal cell bodies per hemibrain, categorized by immunoreactivity against DsxM and FruM. Gray lines represent single hemibrains. Error bars: S.D. (E) A schematic representation of Tk-GAL4FruM neurons (light blue). (F) Expression of CsChrimson:tdTomato in a representative male brain under the control of Tk-GAL41 and fruFLP is visualized by immunohistochemistry (scale bar: 100 µm). (G–I) Z-projection of segmented (H and I), registered, and averaged images of CsChrimson:tdTomato expression under the control of the genetic intersection of Tk-GAL41 and fru (G) (see Materials and methods for the complete genotypes), and of Tk-GAL41 and Otd-nls:FLPo in fru wild-type male (H) and fruM/fru4-40 male (I) (black). Number of used hemibrains are indicated. (J–M) Expression of CsChrimson:tdTomato (red in J1–M1), black in J2–M2) under the control of Tk-GAL41 and Otd-nls:FLPo in representative brains of flies with the fru locus genotype indicated on the left is visualized together with a neuropil marker BRP (blue in J1–M1) by immunohistochemistry. Traced Tk-GAL4FruM neurons in males (J1, L1) are shown in white. Scale bar: 100 μm. Arrows: soma. (N) Boxplots of time orienting (N1), lunges (N2), and wing extensions (N3) performed by male tester flies that express CsChrimson:tdTomato under the control of Tk-GAL41 and Otd-nls:FLPo. Testers’ fru locus genotypes are indicated below the plots. Target flies are either group-housed wild-type males or mated females, as indicated. Plots with gray shades are replots of the data sets shown in Figure 1C and D. Only values during the time window 4 are shown (see Figure 1B). Testers’ genotypes and sample numbers are indicated below the plots. **p<0.01, *p<0.05, n.s. p>0.05 (Kruskal-Wallis one-way ANOVA and/or post-hoc Mann-Whitney U-test).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/52702/elife-52702-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A, B) Expression of CsChrimson:tdTomato (red in A1,3, B1,3, black in A2,4, B2,4) under the control of Tk-GAL41 and Otd-nls:FLPo in representative brains of flies with the fru locus genotype indicated on the left is visualized together with a neuropil marker BRP (blue in A1,3, B1,3) by immunohistochemistry. Traced Tk-GAL4FruM neurons are shown in white (A3, B3). Circle: soma (right cluster is enlarged in A4 and B4). Scale bar: 100 μm (E1–H1), 10 μm (E4, F4). (C) Mean number of Tk-GAL4FruM neurons per hemibrain in each genotype indicated to the left. Error bars: S.D. Number of hemibrains examined are indicated to the left. Lowercase letters denote significance group (p<0.01, one-way ANOVA with post-hoc Tukey’s honestly significant differences test). (D) Schematics of the genetic intersection strategy between a GAL4 line and a FLP allele to express CsChrimson:tdTomato used in this study. (E) Mean number of Tk-GAL4FruM cell bodies visualized by anti-DsRed antibody in each genotype shown in left. Error bars: S.D. Brains from the top genotype were also co-immunostained by anti-FruM antibody, and the breakdown of FruM-expressing cells and FruM-negative cells is shown. Brains from other genotypes were also co-immunostained by anti-HA antibody to visualize the expression of myr:TopHAT2 (see D), and the breakdown of tdTomato-expressing cells and TopHAT2-expressing cells is shown (gray lines represent single hemibrains). Lowercase letters denote significance group (p<0.01, one-way ANOVA with post-hoc Tukey’s honestly significant differences test). Expression of each antigen in the cell bodies of representative brains of flies from each genotype is shown on the right.
+
 The tester flies in which CsChrimson was expressed under the control of Tk-GAL41 within the brain (which phenocopies the manipulation of Tk-GAL4FruM neurons; Asahina et al., 2014) showed robust aggression toward the target male flies, mainly during LED stimulation (Figure 1 C2, Figure 1—figure supplement 1A2; Watanabe et al., 2017). This coincides with increased time orienting toward the target fly (Figure 1C1, Figure 1—figure supplement 1A1), but wing extension toward males was not affected (Figure 1C3, Figure 1—figure supplement 1A3; see also Video 1 – Part 1). These behavioral effects were qualitatively similar across different stimulation frequencies (Figure 1—figure supplement 1C). In contrast, we observed no lunges toward female target flies after the same optogenetic manipulations (Figure 1D2, Figure 1—figure supplement 1B2). The tester flies increased the time orienting toward the target female during LED stimulations (Figure 1D1, Figure 1—figure supplement 1B1; see also Video 1 – Part 2), suggesting that the activation of Tk-GAL4FruM neurons can promote interaction regardless of the sex of the target fly. Neither did we observe lunges when Tk-GAL41-labeled neurons were optogenetically activated in the absence of any target fly (Figure 1—figure supplement 1D). Thus, the activation of Tk-GAL4FruM neurons induces lunges strictly when a male target fly is present. In addition, we observed that tester flies performed less wing extensions toward target females during LED stimulation than during ISIs (Figure 1D3). However, the total amount of wing extensions was not significantly different from those of the two genetic controls. These phenotypes are largely consistent with those observed when Tk-GAL4FruM neurons were thermogenetically activated (Asahina et al., 2014), and reinforces the idea that the sex of the target fly impacts the behavioral outcome of manipulations of Tk-GAL4FruM neuronal activity.
+
+![Video 1.](https://cdn.elifesciences.org/articles/52702/elife-52702-video1.mp4.jpg)
+
+**Video 1.:** In Part 2, the tester male was not actively performing any behavior toward the target female when the LED turned on.
 
 As was previously shown (Asahina et al., 2014), Tk-GAL4FruM neurons are specified only in males (Figure 1G,J). We next addressed the role of dsx and fru (Figure 1—figure supplement 2A) on specifying Tk-GAL4FruM neurons. Two splicing mutations for fru, fruM and fruF (Demir and Dickson, 2005), forces male-type (fruM) and female-type (fruF) splicing of fru transcripts irrespective of the chromosomal sex composition, which normally determines the sex-determination genetic cascade. As a result, these mutations allowed us to create ‘fruF males’ (expressing dsxM and fruF) and ‘fruM females’ (expressing dsxF and fruM), thus dissociating contributions of dsx and fru on sexual dimorphism at the organismal level (Figure 1—figure supplement 2B). fruM females are reported to show lunges and other male-type aggressive actions (Vrontou et al., 2006), suggesting that fru is the chief architect of neural circuits underlying sexually dimorphism in aggressive behavior. However, two fru-expressing, aggression-promoting neurons (male-type NP2631 ∩ dsxFLP neurons (Koganezawa et al., 2016) and P1a neurons Hoopfer et al., 2015) are not specified in this genotype (see Ishii et al., 2020). These observations strongly suggest that not all fru-expressing neurons underlie the sexual dimorphism of aggressive actions, even if the activation of such neurons in a normal male induces male-type aggressive behavior. Other neuronal populations specified by fru, but not dsx, must constitute a neural substrate for the execution mechanism for male-type aggression.
 
 In contrast to male-type NP2631 ∩ dsxFLP neurons or P1a neurons, Tk-GAL4FruM neurons were present in fruM females (Figure 1H), but not in fruF males (Figure 1I). Consistent with this observation, we detected expression of FruM, but not Dsx, proteins in Tk-GAL4FruM neurons (Figure 1—figure supplement 2C,D). The cell body number of Tk-GAL4FruM neurons in fruM females was indistinguishable from that in males (Figure 1K). To compare Tk-GAL4FruM neuronal morphology in males and fruM females, we first traced Tk-GAL4FruM neurons using a volume visualization software FluoRender (see Materials and methods for details). The distinct neuronal processes of Tk-GAL4FruM neurons allowed us to segment them in an unambiguous manner (Figure 1G3, H3). We then registered the original and segmented confocal images of brains to a unisex standard brain (Bogovic et al., 2018) using non-rigid spatial transformation (Jefferis et al., 2007). The three-dimension average of genetically isolated Tk-GAL4FruM neurons (Figure 1—figure supplement 2E–G; Asahina et al., 2014) almost perfectly overlapped with the average of segmented Tk-GAL4FruM neurons (Figure 1—figure supplement 2I, Video 2), confirming the accuracy of the segmentation. The averaged morphology of registered Tk-GAL4FruM neurons from males (Figure 1L) and from fruM females (Figure 1M) appeared virtually identical (Video 3). To confirm this initial observation, we further segmented three prominent neurites that emanate from the lateral junction (Yu et al., 2010) of Tk-GAL4FruM neurons (Figure 1L2, M2). None of these three processes showed significant difference in volume among fru +/+ control males, fruM/fru4-40 males, and fruM females (Figure 1N–P). While we acknowledge that this approach might miss finer scale differences in neuroanatomy, we conclude that Tk-GAL4FruM neurons are specified predominantly by fru. dsx and fru therefore have clearly separable roles for the specification of neuronal populations that are important for Drosophila aggressive behaviors.
 
+![Video 2.](https://cdn.elifesciences.org/articles/52702/elife-52702-video2.mp4.jpg)
+
+**Video 2.:** Gray represents the standard unisex Drosophila brain (Bogovic et al., 2018).
+
+![Video 3.](https://cdn.elifesciences.org/articles/52702/elife-52702-video3.mp4.jpg)
+
+**Video 3.:** Gray represents the standard unisex Drosophila brain (Bogovic et al., 2018).
+
 Presence of the fru4-40 allele did not affect cell number or overall morphology of Tk-GAL4FruM neurons (Figure 1K, Figure 1—figure supplement 2F–M). Consistent with this, the activation of Tk-GAL41-labeled neurons triggered similar behavioral changes in the backgrounds of +/+, +/fru4-40, or fruM/fru4-40 males (Figure 1—figure supplement 2N). However, heterozygosity of fruM resulted in incomplete specification of Tk-GAL4FruM neurons in a chromosomally female background (Figure 1—figure supplement 3A–C). We also found that fruFLP, a knock-in allele of fru that expresses a DNA recombinase Flippase (Yu et al., 2010), is hypomorphic (Figure 1—figure supplement 3D,E), raising the necessity to use caution when attempting to transform Drosophila sex by manipulating the fru locus.
 
-## Tk-GAL4FruM neurons are a part of a fruM-dependent circuit for the execution of male-type aggressive behavior
+### Tk-GAL4FruM neurons are a part of a fruM-dependent circuit for the execution of male-type aggressive behavior
 
 We next investigated the function of Tk-GAL4FruM neurons in fruM females. Specifically, we wished to obtain insights into the sex recognition mechanism and execution mechanism in the context of aggression. Unfortunately, male ‘target’ flies often perform vigorous courtship toward female tester flies (Figure 2—figure supplement 1B), which interferes with tester females’ social behavior (namely headbutts) towards target males (Figure 2—figure supplement 1A; Vrontou et al., 2006). Following a previous study (Vrontou et al., 2006), we used group-housed fruF males (which are defective at enhancing courtship toward females; Demir and Dickson, 2005; Pan and Baker, 2014; Villella et al., 1997; Figure 2—figure supplement 1B) instead of wild-type male flies as targets when using anatomically female (dsxF) flies as testers.
 
 Optogenetic activation of the Tk-GAL41-labeled neurons in fruM females induced lunges toward a fruF male target for the majority of testers (Figure 2A2, Figure 2—figure supplement 2A2; see also Video 4 – Part 1). Although orienting time increased during LED stimulations compared to during ISIs (Figure 2A1, Figure 2—figure supplement 2A1), no overall change in the amount of wing extensions was observed compared to genetic controls (Figure 2A3). This indicates that Tk-GAL4FruM neurons are part of a fruM-dependent, but dsx-independent, neuronal circuit for male-type aggressive behavior. The motion sequence underlying the lunges observed in this genotype were indistinguishable from wild-type male lunges (Video 5).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/52702/elife-52702-fig2-v1.jpg)
+
+**Figure 2.:** (A, B) Boxplots of time orienting (A1, B1), lunges (A2, B2), and wing extensions (A3, B3) by the tester flies during the time windows 1–4 (see Figure 1B). Their genotypes and pair numbers are indicated below the plots. Gray lines represent single testers. Target flies are either group-housed fruF males (A) or wild-type mated females (B). In gray: **p<0.01, *p<0.05, n.s. p>0.05 (Kruskal-Wallis one-way ANOVA and post-hoc Wilcoxon signed rank test). In black: **p<0.01, *p<0.05, n.s. p>0.05 (Kruskal-Wallis one-way ANOVA and post-hoc Mann-Whitney U-test). (C) Ratio of male (dataset from Figure 1C, D) and fruM female (dataset from A), (B) tester flies that lunged toward each of the two target sexes (above) in the time window 4. Testers’ genotypes and pair numbers are indicated below the plots. **p<0.01, n.s. p>0.05 (Fisher’s exact test, two genetic controls are pooled). (D) Schematic summary of the roles of sex-determining genes for Tk-GAL4FruM neurons and male-type aggressive behavior.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52702/elife-52702-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Boxplot of time orienting (A1) and headbutts (A2) by wild-type female tester flies toward wild-type male (left) or fruF male (right) target flies. (B) Boxplot of time orienting (B1) and wing extensions (B2) by wild-type male (left) or fruF male (right) target flies toward female tester flies shown in A). Target genotypes and pair numbers are indicated below the plot. **p<0.01, *p<0.05 (Mann-Whitney U-test).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/52702/elife-52702-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A, B) Rasters of time orienting (A1, B1), lunges (A2, B2), and wing extensions (A3, B3) performed by fruM female tester flies that express CsChrimson:tdTomato under the control of Tk-GAL41 and Otd-nls:FLPo (the same datasets as used in Figure 2A, B). Pink bar: LED-on periods, horizontal bar: 10 min, vertical bar: 10 animals. LED stimulation condition is indicated at the bottom.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/52702/elife-52702-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A, B) Boxplots of lunges performed by the tester flies (‘ts’, genotypes are indicated below the plots: replots of data shown in Figure 2A2 (A) and Figure 2B2 (B)) along with boxplots of headbutts performed by the corresponding target flies (‘tg’, fruF males for A), wild-type mated females for B) during the time window 4. Numbers of pairs are indicated below the plot. **p<0.01, *p<0.05, n.s. p>0.05 (Wilcoxon signed rank test). (C) Boxplots of time orienting (C1), lunges (C2), and wing extensions (C3) performed by fruM female tester flies that express CsChrimson:tdTomato under the control of Tk-GAL41 and Otd-nls:FLPo (blue) or by the genetic control flies (gray) during the time windows 1–4 (see Figure 1B). Their genotypes and numbers are indicated below the plots. Tester flies were either group-housed (left) or single-housed (right) prior to the assay. Target flies were group-housed fruF males. LED stimulation condition is indicated at the bottom left. Gray lines represent single testers. In gray: **p<0.01, n.s. p>0.05 (Kruskal-Wallis one-way ANOVA and post-hoc Wilcoxon signed rank test). In black: **p<0.01, n.s. p>0.05 (Kruskal-Wallis one-way ANOVA and post-hoc Mann-Whitney U-test). (D–F) Bias between lunges and wing extension performed by tester flies that express CsChrimson under the control of Tk-GAL41 and Otd-nls:FLPo in males (D) data from Figure 1C, D) or in fruM females (E) data from Figure 2A,B and F): data from C), during the time window 4. Each line represents one tester fly. Axis ranges are standardized to the maximum value of each genotype dataset except F2), in which the maximum for lunge axis was set to 0.1. Genotypes of target flies are indicated above the panels. Number of pairs tested is indicated below the panels.
+
+![Video 4.](https://cdn.elifesciences.org/articles/52702/elife-52702-video4.mp4.jpg)
+
+![Video 5.](https://cdn.elifesciences.org/articles/52702/elife-52702-video5.mp4.jpg)
+
+**Video 5.:** The target fly is a wild-type male (top left), a fruF male (top right), and a wild-type female (bottom right), respectively.
 
 However, we noted two differences compared to the same manipulation in male flies. First, lunges were not induced in fruM females as consistently as in males. Forty-two percent (17/40) of fruM females did not perform a single lunge after LED stimulation (Figure 2C). In contrast, over 96% of male testers lunged toward a male target (Figure 2C). The median of induced lunges observed in fruM females (2) was lower than observed for male testers (58). Second, fruM females occasionally lunged toward a female target (Video 4 – Part 2), in addition to a fruF male target. Even though lunges were induced even less frequently than toward fruF males (Figure 2A2, B2, C, Figure 2—figure supplement 2A2, 2B2), it is still noteworthy because male testers seldom lunge toward a female target, even after optogenetic activation of the Tk-GAL41 neurons (Figure 1D2, Figure 2C). We noticed that headbutts performed by the female target toward these testers often outnumbered the lunges performed by the tester toward the target (Figure 2—figure supplement 3B). This was not the case when the target flies were fruF males (Figure 2—figure supplement 3A). These counter-attacks by female targets may have contributed to the lower number of lunges toward female targets than toward fruF male targets.
 
@@ -53,11 +103,21 @@ We asked whether social isolation, which elevates levels of aggression in males 
 
 Overall, the results above delineate complementary roles of dsx and fru on male aggressive behavior. The activation of Tk-GAL4FruM neurons induces lunges even in the absence of dsx-dependent aggression-promoting neurons. Tk-GAL4FruM neurons are therefore part of a fruM-dependent execution mechanism for male aggressive behavior (Figure 2D). However, the reduced intensity and compromised target sex selectivity of lunges shown by fruM females suggest that a dsx-dependent mechanism may play a role in establishing a target sex-selective application of aggressive behavior. This mechanism can inhibit the execution of lunges specifically toward females, which ensures that lunges are performed exclusively by males towards other males (Figure 2D), or can enhance aggression specifically toward male targets indirectly by inhibiting courtship toward them.
 
-## Female-type NP2631 ∩ dsxFLP neurons in fruM females do not promote aggression
+### Female-type NP2631 ∩ dsxFLP neurons in fruM females do not promote aggression
 
 Having established that Tk-GAL4FruM neurons can trigger lunges independent of dsx splicing pattern, we wondered whether other sexually dimorphic neurons are involved in the execution of male-type aggressive behaviors in the fruM female brain. One candidate was the NP2631 ∩ dsxFLP neuron group, which was reported to promote aggressive behaviors in both males and females (Koganezawa et al., 2016).
 
 As was discussed above, dsx specifies the sexual dimorphism of NP2631 ∩ dsxFLP neurons, such that the morphology of these neurons in fruM females is largely female-type, and not male-type (Figure 3A; see also Ishii et al., 2020). We confirmed that optogenetic activation of NP2631 ∩ dsxFLP neurons in females robustly increased time orienting (Figure 3C1, Figure 3—figure supplement 1B1) and headbutts (Figure 3C2, Figure 3—figure supplement 1B2) toward female target flies, mostly during LED stimulation (see also Video 6 – Part 1). This behavioral phenotype was consistently observed when the fru locus was either +/+, +/fru4-40 or fruF/fru4-40, similar to the case in males (Figure 3—figure supplement 1C). Interestingly, we observed similar behaviors toward the fruF male targets as well (Figure 3B, Figure 3—figure supplement 1A; see also Video 6 – Part 2). Aggression-promoting neurons that belong to the dsx-expressing ‘pC1’ cluster have been also characterized in the female brain by using different genetic reagents (Deutsch et al., 2020; Palavicino-Maggio et al., 2019). Whether these neurons and the NP2631 ∩ dsxFLP neurons we manipulated belong to the same subtypes remains undetermined. However, we found that NP2631 ∩ dsxFLP neurons did not overlap with neurons labeled by the R71G01-LexA transgene (Figure 3—figure supplement 1D,E). This is consistent with recent findings that female ‘pC1’ neurons are anatomically and functionally heterogeneous (Deutsch et al., 2020; Wang et al., 2020; Wu et al., 2019).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/52702/elife-52702-fig3-v1.jpg)
+
+**Figure 3.:** (A) Schematics of how Tk-GAL4FruM and NP2631 ∩ dsxFLP neurons (see Ishii et al., 2020 for details) are specified in each genotype. Female-type NP2631 ∩ dsxFLP neurons are specified in fruM females, raising a question about how they contribute to aggression in this genotype. (B–E) Boxplots of time orienting (B1–E1), headbutts (B2–E2), and lunges (D3, E3) by the female (B, C) or fruM female (D, E) tester flies during the time windows 1–4 (see Figure 1B). Their genotypes and pair numbers are indicated below the plots. Gray lines represent single testers. Target flies are either group-housed fruF males (B, D) or mated females (C, E). In gray: **p<0.01, n.s. p>0.05 (Kruskal-Wallis one-way ANOVA and post-hoc Wilcoxon signed rank test), In black: **p<0.01, *p<0.05, n.s. p>0.05 (Kruskal-Wallis one-way ANOVA and post-hoc Mann-Whitney U-test).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52702/elife-52702-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Rasters of time orienting (A1, B1) and headbutts (A2, B2) performed by female tester flies that express CsChrimson:tdTomato under the control of NP2631 and dsxFLP (the same datasets as used in Figure 3B, C). Pink bar: LED-on periods, horizontal bar: 10 min, vertical bar: 10 animals. LED stimulation condition is indicated at the bottom. (C) Boxplots of time orienting (C1) and headbutts (C2) performed by female tester flies that express CsChrimson:tdTomato under the control of NP2631 and dsxFLP. Only values during the time window 4 are shown. Testers’ fru locus genotypes and pair numbers are indicated below the plots. Target flies are wild-type mated females. Plots with gray shades are replots of the data sets shown in Figure 3D. n.s. p>0.05 (Kruskal-Wallis one-way ANOVA). (D) Expression of CsChrimson:tdTomato under the control of NP2631 and dsxFLP (yellow), GCaMP6f under the control of R71G01-LexA (green), and a neuropil marker BRP (blue) in a representative female brain are visualized by immunohistochemistry. Scale bar: 100 μm. An inset represents a magnified view of the posterior cell body cluster in the white rectangle (scale bar: 10 μm). An open arrowhead in D) indicates a LexA-expressing neuronal cluster that does not share the neural tract with neurons labeled by NP2631 and dsxFLP (white arrowhead). (E) Mean number of cell bodies per hemibrain with immunohistochemical signal by anti-DsRed antibody (orange), anti-GFP antibody (green), and both antibodies (purple) in brains of the genotype represented in D). Error bars: S.D. Gray lines represent single hemibrains. All LexA-expressing neurons located near NP2631 and dsxFLP neurons are included, although some may belong to different neuronal clusters.
+
+![Video 6.](https://cdn.elifesciences.org/articles/52702/elife-52702-video6.mp4.jpg)
 
 The aggression-promoting function of NP2631 ∩ dsxFLP neurons raises an intriguing question: do female-type NP2631 ∩ dsxFLP neurons promote aggression in fruM females, and if so, are male-type or female-type aggressive behaviors induced (Figure 3A)? If fruM’s role in defining sexual dimorphism in aggression prevails, activation of NP2631 ∩ dsxFLP neurons in fruM may promote male-type aggression (lunges) even though these neurons exhibit female-type morphology. If the morphology of NP2631 ∩ dsxFLP neurons dictates the sexual dimorphic action of aggressive behavior, the same manipulation may promote female-type aggressive actions (headbutts).
 
@@ -67,15 +127,43 @@ We therefore conclude that female-like NP2631 ∩ dsxFLP neurons cannot particip
 
 Differential roles of fru isoforms on male-male interactions and specification of Tk-GAL4FruM neurons fruM undergoes another layer of alternative splicing to create three transcript isoforms, fruMA, fruMB, and fruMC, (Figure 4A), which encode different zinc finger domains (Usui-Aoki et al., 2000). The loss of each of three fruM isoforms is known to affect male courtship behaviors in distinct manners (Neville et al., 2014; von Philipsborn et al., 2014; Figure 4—figure supplement 1A,B). After finding that fruM is important for specification of Tk-GAL4FruM neurons, as well as for its capacity to execute male-type aggressive actions, we next addressed whether different isoforms of fruM have distinct roles for the specification and function of Tk-GAL4FruM neurons.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/52702/elife-52702-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematics of dsx and fru splicing patterns in a male. (B, C) Boxplots of time orienting (B1, C1), lunges (B2,C2), and wing extensions (B3, C3) by the fru isoform-specific tester mutants (B) or fruMB tester mutants created in trans with the fruF allele (C), along with their genetic controls (single-housed for 6 days), toward group-housed wild-type target males during 30 min assays. Testers’ genotypes of the fru locus and pair numbers are indicated below the plots. Data points that exceed the range (indicated left) are represented by dots, with exact values in parentheses. **p<0.01 (Mann-Whitney U-test with Bonferroni multiple comparison corrections).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52702/elife-52702-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Boxplots of time orienting (A1), lunges (A2), and wing extensions (A3) by the tester males (single-housed for 6 days) toward wild-type mated female targets during 30 min assays. Testers’ genotypes at the fru locus and pair numbers are indicated below the plots. **p<0.01, *p<0.05, n.s. p>0.05 (Kruskal-Wallis one-way ANOVA and post-hoc Mann-Whitney U-test). (B) Cumulative copulation rate of the tester males with wild-type virgin females. Testers’ genotypes at the fru locus and pair numbers are indicated below the plots. (C) Boxplots of lunges by the tester males (single housed for 6 days) toward group-housed wild-type target males during 30 min assays. Testers’ genotypes at the fru locus and pair numbers are indicated below the plots. **p<0.01 (Kruskal-Wallis one-way ANOVA and post-hoc Mann-Whitney U-test). (D, E) The amount of activity at ZT8-ZT12 (E) and total amount of sleep (E). Testers’ genotypes at the fru locus and sample numbers are indicated below the plots. For D and E, **p<0.01, *p<0.05, n.s. p>0.05 (one-way ANOVA and post-hoc Student’s t-test).
+
 First, we characterized how isoform-specific mutations affect spontaneous male-type aggressive behavior after social isolation (Hoffmann, 1990; Wang et al., 2008). In parallel with their previously characterized differential effects on courtship (Neville et al., 2014; von Philipsborn et al., 2014), we found defects of male aggressive behavior in isoform-specific mutants. Loss of fruMA caused no reduction of lunges compared to the fru4-40 heterozygous genetic control (Figure 4B2). In contrast, we observed a dramatic reduction in male-type aggressive behaviors by the loss of fruMB or fruMC isoforms (Figure 4B2). While fruMC mutants showed decreased orientation time toward a male target, orienting times of fruMA and fruMB mutants were comparable to the fru4-40 heterozygous genetic control (Figure 4A1). This reduction in lunges in fruMB mutants was qualitatively recapitulated when the fruF allele was used to create trans-heterozygotes (Figure 4C), and when other mutations affecting FruB zinc finger domains (von Philipsborn et al., 2014) were tested in trans with fru4-40 (Figure 4—figure supplement 1C). We observed no consistent reduction in overall activity levels between fruMB mutants and genetic controls (Figure 4—figure supplement 1D), or in the total amount of sleep exhibited by these flies (Figure 4—figure supplement 1E). Male-male courtship was differentially affected in three mutants (Figure 4A3), reflecting varied degrees of courtship defects toward females (Figure 4—figure supplement 1A,B; Neville et al., 2014; von Philipsborn et al., 2014). These data indicate that each of the three fruM isoforms make different contributions to aggressive behaviors. fruMA had a minimal impact on male aggressive behavior, whereas fruMB and fruMC were both necessary to maintain normal levels of male aggression. Moreover, the decreased aggression of fruMB mutants was not necessarily due to reduced activity levels or opportunities to interact with the target fly.
 
 We next asked how each of the three fruM isoforms contributes to the specification of Tk-GAL4FruM neurons. In fruMC mutants, we found only 1.9 ± 1.1 (mean ± S.D., n = 8; Figure 5D,E) faintly labeled neurons in the brain area where Tk-GAL4FruM neurons are expected to appear, significantly fewer than the number of cells found in genetic controls (5.6 ± 0.5, mean ± S.D., n = 8; Figure 5A,E). Weak staining of the Tk-GAL4FruM neurons in the fruMC mutants prevented us from visualizing their branching pattern. In contrast, fruMA and fruMB mutants did not affect the number of Tk-GAL4FruM neurons (Figure 5E). We compared the neuroanatomy of Tk-GAL4FruM neurons in these genotypes by registering immunohistochemically labeled brains on a standard brain. Tk-GAL4FruM neurons from fruMA (Figure 5G) or fruMB (Figure 5H) mutants are indistinguishable from each other or from fru4-40 heterozygous control males (Figure 5F; see also Video 7). We measured the volumes of three prominent neurites that emanate from the lateral junction (Yu et al., 2010) of Tk-GAL4FruM neurons (Figure 5F2–H2; see also Figure 1L1, M1), and detected no significant differences among fru4-40 heterozygous controls, fruMA mutants, and fruMB mutants (Figure 5I–K). Heterozygosity of all isoform-specific mutations did not change the cell body number or gross morphology of the Tk-GAL4FruM neurons (Figure 5E, Figure 5—figure supplement 1A–D), either.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/52702/elife-52702-fig5-v1.jpg)
+
+**Figure 5.:** (A–D): Expression of CsChrimson:tdTomato under the control of Tk-GAL41 and Otd-nls:FLPo (red in A1–D1), black in A2,3-D2,3) in male brains is visualized together with a neuropil marker BRP (blue in A1–D1) by immunohistochemistry. Traced Tk-GAL4FruM neurons are shown in white. Circle: soma (right cluster is enlarged in A3-D3). Scale bar: 100 μm (A1–D1), 10 μm (A3–D3). (E) Mean number of cell bodies of Tk-GAL4FruM neurons per hemibrain is visualized by anti-DsRed antibody in each genotype represented in A–D) and Figure 5—figure supplement 1A–D. Error bars, S.D. Lowercase letters denote significance group (p<0.01, one-way ANOVA with post-hoc Tukey’s honestly significant difference test). (F–H) Z-projection of segmented, registered, and averaged images of CsChrimson:tdTomato expression under the control of Tk-GAL41 and Otd-nls:FLPo (black) in the standard Drosophila brain (gray in F1–H1). Number of used hemibrains are indicated in F2–H2). Medial projection (cyan), anterior projection (blue), and lateral projection (purple) are segmented and overlaid in F2–H2). For panels A–H), genotypes of the fru locus are indicated on the left. (I–K) Volumes of medial projection (I), anterior projection (J), and lateral projection (K) of Tk-GAL4FruM neurons in males. Their genotypes of the fru locus and pair numbers are indicated below the plots. n.s. p>0.05 (Kruskal-Wallis one-way ANOVA).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52702/elife-52702-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–D) Expression of CsChrimson:tdTomato under the control of Tk-GAL41 and Otd-nls:FLPo (red in A1–D1), black in A2,3-D2,3) in male brains with the fru locus genotype indicated on the left is visualized together with a neuropil marker BRP (blue in A1–D1) by immunohistochemistry. Traced Tk-GAL4FruM neurons are shown in white. Circle: soma (right cluster is enlarged in A3–D3). Scale bar: 100 μm (A1–D1), 10 μm (A3–D3).
+
+![Video 7.](https://cdn.elifesciences.org/articles/52702/elife-52702-video7.mp4.jpg)
+
+**Video 7.:** Gray represents the standard unisex Drosophila brain (Bogovic et al., 2018).
+
 Taken together, we found that fruMA, fruMB and fruMC have distinct effects on male aggression and specification of the Tk-GAL4FruM neurons. fruMA appeared largely dispensable for both, whereas fruMC was necessary for both. Interestingly, fruMB was necessary for normal levels of male-male aggression, but was not required for specification of the Tk-GAL4FruM neurons.
 
-## The Tk-GAL4FruM neurons in fruMB mutants can induce male aggression
+### The Tk-GAL4FruM neurons in fruMB mutants can induce male aggression
 
 While the reduction of male aggression in fruMC mutants can be explained by defects in specification of the Tk-GAL4FruM neurons, which are necessary for normal levels of aggression (Asahina et al., 2014), this same logic does not apply for the fruMB mutants, since these mutants have Tk-GAL4FruM neurons that appear to retain their morphology. One possible explanation is that the Tk-GAL4FruM neurons in fruMB mutants have neurophysiological defects and are no longer functional. To address this, we quantified the excitability of Tk-GAL4FruM neurons in fruMB mutants by measuring their intracellular calcium response while optogenetically stimulating them (Figure 6A,B). The overall calcium response dynamics and magnitudes of Tk-GAL4FruM neurons in fruMB mutants were comparable to those seen in the fru4-40 heterozygous controls (Figure 6C,D), suggesting that Tk-GAL4FruM neurons in fruMB mutants are capable of physiologically responding to depolarizing stimuli.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/52702/elife-52702-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematics of the functional imaging strategy. (B) Fluorescence of GCaMP6f (green) and CsChrimson:tdTomato (magenta), both of which are driven by Tk-GAL41 (top) and pseudocolored intensity of GCaMP6f fluorescence (within the area indicated by the white square in the top panel) before (bottom left), during (bottom middle), and after (bottom right) the LED stimulation, visualized by 2-photon microscopy. (C) Time course of pseudocolored fluorescence intensity (reference: right side) in Tk-GAL41; UAS-GCaMP6f; UAS-CsChrimson male brains, with the fru locus of +/fru4-40 (left) or fruΔB/fru4-40 (right). LED stimulation (pink at the bottom) was for 30 s at 5 Hz. LED powers are indicated on the left. (D) Boxplots of GCaMP6f fluorescence intensity changes in Tk-GAL4FruM neurons (data shown in C). Genotypes at the fru locus, number of brains examined, and LED powers are indicated below. (F–G) Boxplots of lunges by the tester flies under strong (E), medium (F), or weak (G) LED stimulation conditions (indicated in shaded pink boxes) during the time windows 4. Their genotypes and numbers are indicated below the plots. Lowercase letters denote significance groups (p<0.01, Kruskal-Wallis one-way ANOVA and post-hoc Dunn’s multiple comparison test). (H): Schematic summary of the contributions of fru isoforms on male-type aggressive behavior.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52702/elife-52702-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A–C) Rasters of lunges performed by the tester male flies that express CsChrimson:tdTomato under the control of Tk-GAL41 and Otd-nls:FLPo (the same datasets as used in Figure 6E–G), under strong (A), medium (B), or weak (C) LED stimulation conditions (indicated in shaded pink boxes). Pink bar: LED-on periods, horizontal bar: 10 min, vertical bar: 10 animals. Target flies are wild-type group-housed males.
 
 Even though Tk-GAL4FruM neurons exhibited normal excitability, it remains possible that neural circuits downstream of the Tk-GAL4FruM do not respond to inputs from Tk-GAL4FruM neurons in fruMB mutants, due to altered development or physiology of these downstream circuits, or inability of Tk-GAL4FruM neurons to excite downstream neurons. To address this possibility, we optogenetically activated Tk-GAL41-labeled neurons in fruMA, fruMB, or fruMC mutants. Optogenetic activation of Tk-GAL41-labeled neurons in fruMB mutants elicited robust levels of male aggression across several LED intensities, as seen in genetic controls (Figure 6E–G, Figure 6—figure supplement 1A–C). This result suggests that Tk-GAL4FruM neurons in fruMB mutants, once activated, can induce male aggression as efficiently as in the fru wild-type males, and argues against the hypothesis that the mutation of fruMB proteins causes defective development of downstream neurons or reduced efficiency of Tk-GAL4FruM neurons to excite downstream neurons. Instead, these results favor the alternative hypothesis that fruMB mutation reduces aggression-promoting input to Tk-GAL4FruM neurons from upstream circuits. This is likely mediated through fruM-dependent mechanisms as well, since activation of Tk-GAL4FruM neurons can completely overcome the lack of such input.
 
@@ -85,7 +173,7 @@ Overall, our results show that three isoforms of fruM assume distinct roles in t
 
 In this study, we identified Tk-GAL4FruM neurons as part of a fruM-dependent execution mechanism for male-type aggression. The exclusive role of fruM on the specification of a neural circuit for the execution of male-type aggression is in contrast to the circuit for the execution of male-type courtship behavior, for which dsx plays a major role (see Ishii et al., 2020). One role of dsx on male-type aggression appears to be to prevent inappropriate aggression toward a female target, which suggests that dsx may be involved in the sex-recognition mechanism in the context of agonistic interactions. Furthermore, we found that each of three fruM isoforms play separable roles on male-type aggressive behavior. Our finding reveals a layered genetic mechanism of the fru gene for the specification and function of a sexually dimorphic aggression-controlling circuit, which may provide a genetic substrate for the male-specific evolution of contest rituals.
 
-## fru specifies a neural circuit for sexually dimorphic aggressive actions
+### fru specifies a neural circuit for sexually dimorphic aggressive actions
 
 We found that the optogenetic activation of Tk-GAL4FruM neurons in fruM female tester flies induced male-type aggressive behavior. This result indicates that at least Tk-GAL4FruM neurons and downstream populations form a neural circuit that is sufficient for the execution of male-type aggressive behavior. While this does not necessarily mean that fruF males or females lack the capability to execute male-type aggressive behavior, there has been no report that these two sex genotypes perform lunges spontaneously (Vrontou et al., 2006). Moreover, female-type NP2631 ∩ dsxFLP neurons fail to promote aggressive behaviors (lunges or headbutts) in fruM females. NP2631 ∩ dsxFLP neurons were previously proposed to be the ‘aggression output’ of a switch circuit that selects between courtship and aggression (Koganezawa et al., 2016). Since stimulation of NP2631 ∩ dsxFLP neurons in fruF males did not trigger lunges (see Ishii et al., 2020), at least sexual dimorphism in the neuroanatomy of NP2631 ∩ dsxFLP neurons does not correlate with the sexual dimorphism in aggressive motor programs. These observations favor a hypothesis that neurons specified by fru, which include Tk-GAL4FruM neurons, form the execution mechanism for male-type aggressive action, and NP2631 ∩ dsxFLP neurons serve as modulatory neurons that act on this fru-dependent execution mechanism. Sex-specific splicing of fru defines what type of aggressive behavior an animal performs, likely by specifying a mutually exclusive neural circuit that generates either male-type or female-type aggressive actions.
 
@@ -101,7 +189,7 @@ Our result is in line with the previously reported importance of the fruMC isofo
 
 The segregation of roles within fru isoforms may increase the gene’s flexibility: for instance, change in the circuit connectivity underlying perception of male-specific cues can be independently altered if different isoforms have different roles in the aggression circuit. In mice, there are at least 3 different estrogen receptor genes (Wu et al., 2009). Although the specific function of each receptor on neural circuits that control sexual behaviors remains largely uncharacterized, it is tempting to speculate that a similar type of division of labor may exist among the estrogen receptor genes. For both fru and estrogen receptors, the functional characterization of genes which each isoform regulate will be the first important step to understand how the division of labor is implemented at the molecular level.
 
-## fru may allow males to evolve male-type aggressive actions without altering courtship motor programs
+### fru may allow males to evolve male-type aggressive actions without altering courtship motor programs
 
 In theory, presence or absence of just one gene can specify two sexes. However, most animal species use multiple genes for sex determination, even if one ‘master’ switch gene (such as Sex-lethal in Drosophila) may initiate the sex determination process (Robinett et al., 2010; Williams and Carroll, 2009). Our results suggest that one of the reasons behind this apparent genetic cooperativity may be that each gene controls specific aspects of sexually dimorphic traits, including behaviors (Pereira et al., 2019; Xu et al., 2012). We further speculate that separate genetic mechanisms for establishing sexually dimorphic actions and target sex-dependent action bias may be evolutionarily adaptive.
 
@@ -115,13 +203,645 @@ The origin of sexual dimorphism in social behavior is a fundamental neuroscienti
 
 See Supplementary file 1 for details of reagents used in this study.
 
-## Fly strains
+### Fly strains
 
 See Table 1 for the complete genotypes of Drosophila strains used in each figure panel. Tk-GAL41 (RRID:BDSC_51975) and Otd-nls:FLPo (in attP40) were previously described Asahina et al. (2014). NP2631 (Yu et al., 2010) is a gift from Daisuke Yamamoto (Tohoku University). 20XUAS > myr:TopHAT2 >CsChrimson:tdTomato (in VK00022, VK00005 and attP2) (Duistermars et al., 2018; Watanabe et al., 2017), 20XUAS-IVS-Syn21-GCaMP6f (codon-optimized)-p10 (in su(Hw)attP5), and 13XLexAop2-IVS-Syn21-GCaMP6f (codon-optimized)-p10 (in su(Hw)attP5) were created by Barret Pfeiffer in the lab of Gerald Rubin (HHMI Janelia Research Campus) and kindly shared by David Anderson (California Institute of Technology). fruM (RRID:BDSC_66874), fruF (RRID:BDSC_66873) (Demir and Dickson, 2005), and fruFLP (RRID:BDSC_66870) (Yu et al., 2010) flies are gifts from Barry Dickson (HHMI Janelia Research Campus); dsxFLP (Rezával et al., 2014), fruΔA, fruΔB (Neville et al., 2014), and fruΔC flies (Billeter et al., 2006) are gifts from Stephen Goodwin (University of Oxford); fruP1.LexA (RRID:BDSC_66698) (Mellert et al., 2010) is a gift from Bruce Baker (HHMI Janelia Research Campus); isogenic Canton-S, fruB1, and fruB2 flies (von Philipsborn et al., 2014) are gifts from Anne von Philipsborn (University of Aarhus). fru4-40 (RRID:BDSC_66692) was obtained from Bloomington Drosophila Resource Center in the University of Indiana. See Ishii et al. (2020) for the details of R71G01-LexA.
 
+**Table 1.**
+ Complete genotypes of Drosophila strains used in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>FIGURE</th>
+      <th>PANEL</th>
+      <th>ABBREVIATED GENOTYPE</th>
+      <th>COMPLETE GENOTYPE (‘Y’ represents the Y chromosome)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Figure 1</td>
+      <td>C, D</td>
+      <td rowspan="3">Tk-GAL41, UAS&gt;stop&gt;CsChrimson, Otd-nls:FLPo</td>
+      <td rowspan="3">w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+;20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/+</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1</td>
+      <td>A-C</td>
+    </tr>
+    <tr>
+      <td colspan="2">Video 1</td>
+    </tr>
+    <tr>
+      <td>Figure 1</td>
+      <td>C, D</td>
+      <td>Tk-GAL41, UAS &gt; stop &gt; CsChrimson</td>
+      <td>w, Tk-GAL41/Y; +/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/+</td>
+    </tr>
+    <tr>
+      <td>Figure 1</td>
+      <td>C, D</td>
+      <td>UAS &gt; stop &gt; CsChrimson, Otd-nls:FLPo</td>
+      <td>w/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/+</td>
+    </tr>
+    <tr>
+      <td>Figure 1</td>
+      <td>G, K, L, N-P</td>
+      <td rowspan="4">Tk-GAL41, XY, fru locus: fruM/fru4-40</td>
+      <td rowspan="4">w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruM</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 2</td>
+      <td>I</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 3</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td colspan="2">Video 2, 3</td>
+    </tr>
+    <tr>
+      <td>Figure 1</td>
+      <td>H, K, M-P</td>
+      <td rowspan="3">Tk-GAL41, XX, frulocus: fruM/fru4-40</td>
+      <td rowspan="3">w, Tk-GAL41/w, Tk-GAL41; Otd-nls:FLPoin attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruM</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 3</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td colspan="2">Video 3</td>
+    </tr>
+    <tr>
+      <td>Figure 1</td>
+      <td>I, K</td>
+      <td>Tk-GAL41, XY, fru locus: fruF/fru4-40</td>
+      <td>w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruF</td>
+    </tr>
+    <tr>
+      <td>Figure 1</td>
+      <td>J, K</td>
+      <td>Tk-GAL41, XX, fru locus: fruF/fru4-40</td>
+      <td>w, Tk-GAL41/w, Tk-GAL41; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruF</td>
+    </tr>
+    <tr>
+      <td>Figure 1</td>
+      <td>K, N-P</td>
+      <td rowspan="3">Tk-GAL41, XY, fru locus: +/+</td>
+      <td rowspan="3">w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2/+</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 2</td>
+      <td>C, D, H, J</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 3</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Figure 1</td>
+      <td>K</td>
+      <td rowspan="2">Tk-GAL41, XX, fru locus: +/+</td>
+      <td rowspan="2">w, Tk-GAL41/w, Tk-GAL41; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2/+</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 2</td>
+      <td>K</td>
+    </tr>
+    <tr>
+      <td>Figure 1</td>
+      <td>K</td>
+      <td rowspan="2">Tk-GAL41, XY, fru locus: +/fru4-40</td>
+      <td rowspan="2">w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/+</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 2</td>
+      <td>L</td>
+    </tr>
+    <tr>
+      <td>Figure 1</td>
+      <td>K</td>
+      <td rowspan="2">Tk-GAL41, XX, fru locus: +/fru4-40</td>
+      <td rowspan="2">w, Tk-GAL41/w, Tk-GAL41; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/+</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 2</td>
+      <td>M</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1</td>
+      <td>D</td>
+      <td rowspan="2">Tk-GAL41, UAS &gt; stop &gt; CsChrimson, Otd-nls:FLPo, fru locus: +/+</td>
+      <td rowspan="2">w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2/+</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 2</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1</td>
+      <td>D</td>
+      <td rowspan="2">Tk-GAL41, UAS &gt; stop &gt; CsChrimson, Otd-nls:FLPo, fru locus: +/fru4-40</td>
+      <td rowspan="2">w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/+</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 2</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1</td>
+      <td>D</td>
+      <td rowspan="2">Tk-GAL41, UAS &gt; stop &gt; CsChrimson, Otd-nls:FLPo, fru locus: fruM/fru4-40</td>
+      <td rowspan="2">w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruM</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 2</td>
+      <td>N</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1</td>
+      <td>D</td>
+      <td>Tk-GAL41, UAS &gt; stop &gt; CsChrimson, fru locus: fruM/fru4-40</td>
+      <td>w, Tk-GAL41/Y; +/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruM</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 1</td>
+      <td>D</td>
+      <td>UAS &gt; stop &gt; CsChrimson, Otd-nls:FLPo, fru locus: fruM/fru4-40</td>
+      <td>w/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruM</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 2</td>
+      <td>F, G</td>
+      <td>Tk-GAL41 ∩ fru (genetic intersection)</td>
+      <td>w, Tk-GAL41/Y; +/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2/fruFLP (2 samples for averaged image in F)</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 2</td>
+      <td>G</td>
+      <td rowspan="2">Tk-GAL41 ∩ fru (genetic intersection)</td>
+      <td rowspan="2">w, Tk-GAL41/Y; +/+; 20XUAS&gt;myr:TopHAT2 &gt; CsChrimson:tdTomato in VK00005/fruFLP (three samples) w, Tk-GAL41/Y; 8XLexAop2-FLPL in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2/fruP1.LexA (2 samples)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Video 2</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 3</td>
+      <td>A, C</td>
+      <td>Tk-GAL41, XY, fru locus: fruF/+</td>
+      <td>w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fruF/+</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 3</td>
+      <td>B, C</td>
+      <td>Tk-GAL41, XX, fru locus: fruM/+</td>
+      <td>w, Tk-GAL41/w, Tk-GAL41; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2/fruM</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 3</td>
+      <td>E</td>
+      <td>Tk-GAL41, UAS &gt; stop &gt; CsChrimson (attP2), Otd-nls:FLPo, fru locus: +/+</td>
+      <td>w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2/+</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 3</td>
+      <td>E</td>
+      <td>Tk-GAL41, UAS &gt; stop &gt; CsChrimson (attP2), fru locus: fruFLP/+</td>
+      <td>w, Tk-GAL41/Y; +/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2/fruFLP</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 3</td>
+      <td>E</td>
+      <td>Tk-GAL41, UAS &gt; stop &gt; CsChrimson (VK00005), fru locus: fruFLP/+</td>
+      <td>w, Tk-GAL41/Y; +/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in VK00005, fruFLP/+</td>
+    </tr>
+    <tr>
+      <td>Figure 1—figure supplement 3</td>
+      <td>E</td>
+      <td>Tk-GAL41, UAS&gt;stop&gt;CsChrimson (VK00005), fru locus:fruFLP/fru4-40</td>
+      <td>w, Tk-GAL41/Y; +/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in VK00005, fruFLP/fru4-40</td>
+    </tr>
+    <tr>
+      <td>Figure 2</td>
+      <td>A,-C</td>
+      <td rowspan="4">fruM, Tk-GAL41, UAS &gt; stop &gt; CsChrimson, Otd-nls:FLPo</td>
+      <td rowspan="4">w, Tk-GAL41/w, Tk-GAL41; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruM</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 2</td>
+      <td>A, B</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3</td>
+      <td>A, B, E</td>
+    </tr>
+    <tr>
+      <td colspan="2">Video 4, 5</td>
+    </tr>
+    <tr>
+      <td>Figure 2</td>
+      <td>A-C</td>
+      <td rowspan="2">fruM, Tk-GAL41, UAS &gt; stop &gt; CsChrimson</td>
+      <td rowspan="2">w, Tk-GAL41/w, Tk-GAL41; +/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruM</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3</td>
+      <td>A, B</td>
+    </tr>
+    <tr>
+      <td>Figure 2</td>
+      <td>A-C</td>
+      <td rowspan="2">fruM, UAS &gt; stop &gt; CsChrimson, Otd-nls:FLPo</td>
+      <td rowspan="2">w/w; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruM</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3</td>
+      <td>A, B</td>
+    </tr>
+    <tr>
+      <td>Figure 2</td>
+      <td>C</td>
+      <td rowspan="2">Tk-GAL41, UAS &gt; stop &gt; CsChrimson, Otd-nls:FLPo</td>
+      <td rowspan="2">w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/+</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Figure 2—figure supplement 1</td>
+      <td rowspan="3">A, B</td>
+      <td>Wild type (tester)</td>
+      <td>+/+; +/+; +/+ (Canton-S)</td>
+    </tr>
+    <tr>
+      <td>(target)</td>
+      <td>w/Y; +/20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in VK00022; dsxFLP, fru4-40/fruM</td>
+    </tr>
+    <tr>
+      <td>fruF (target)</td>
+      <td>w/Y; +/20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in VK00022; dsxFLP, fru4-40/fruF</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3</td>
+      <td>C, F</td>
+      <td>fruM, Tk-GAL41 (hetero), UAS &gt; stop &gt; CsChrimson, Otd-nls:FLPo</td>
+      <td>w, Tk-GAL41/w; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruM</td>
+    </tr>
+    <tr>
+      <td>Figure 2—figure supplement 3</td>
+      <td>C</td>
+      <td>fruM, Tk-GAL41 (hetero), UAS &gt; stop &gt; CsChrimson</td>
+      <td>w, Tk-GAL41/w; +/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruM</td>
+    </tr>
+    <tr>
+      <td>Figure 3</td>
+      <td>B, C</td>
+      <td rowspan="3">NP2631, UAS &gt; stop &gt; CsChrimson, dsxFLP</td>
+      <td rowspan="3">w/w; NP2631/20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in VK00022; dsxFLP, fru4-40/fruF</td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 1</td>
+      <td>A, B</td>
+    </tr>
+    <tr>
+      <td colspan="2">Video 6</td>
+    </tr>
+    <tr>
+      <td>Figure 3</td>
+      <td>B, C</td>
+      <td>NP2631, UAS &gt; stop &gt; CsChrimson</td>
+      <td>w/w; NP2631/20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in VK00022; fru4-40/fruF</td>
+    </tr>
+    <tr>
+      <td>Figure 3</td>
+      <td>B, C</td>
+      <td>UAS &gt; stop &gt; CsChrimson, dsxFLP</td>
+      <td>w/w; +/20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in VK00022; dsxFLP, fru4-40/fruF</td>
+    </tr>
+    <tr>
+      <td>Figure 3</td>
+      <td>D, E</td>
+      <td>fruM, NP2631, UAS &gt; stop &gt; CsChrimson, dsxFLP</td>
+      <td>w/w; NP2631/20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in VK00022; dsxFLP, fru4-40/fruM</td>
+    </tr>
+    <tr>
+      <td>Figure 3</td>
+      <td>D, E</td>
+      <td>fruM, NP2631, UAS &gt; stop &gt; CsChrimson</td>
+      <td>w/w; NP2631/20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in VK00022; fru4-40/fruM</td>
+    </tr>
+    <tr>
+      <td>Figure 3</td>
+      <td>D, E</td>
+      <td>fruM, UAS &gt; stop &gt; CsChrimson, dsxFLP</td>
+      <td>w/w; +/20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in VK00022; dsxFLP, fru4-40/fruM</td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 1</td>
+      <td>C</td>
+      <td>NP2631, UAS &gt; stop &gt; CsChrimson, dsxFLP fru locus: +/+</td>
+      <td>w/w; NP2631/20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in VK00022; dsxFLP/+</td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 1</td>
+      <td>C</td>
+      <td>NP2631, UAS &gt; stop &gt; CsChrimson, dsxFLP fru locus: +/fru4-40</td>
+      <td>w/w; NP2631/20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in VK00022; dsxFLP, fru4-40/+</td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 1</td>
+      <td>C</td>
+      <td>NP2631, UAS &gt; stop &gt; CsChrimson, dsxFLP fru locus: fruF/fru4-40</td>
+      <td>w/w; NP2631/20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in VK00022; dsxFLP, fru4-40/fruF</td>
+    </tr>
+    <tr>
+      <td>Figure 3—figure supplement 1</td>
+      <td>D, E</td>
+      <td>NP2631 ∩ dsxFLP, R71G01-LexA</td>
+      <td>w/w; NP2631/13XLexAop2-IVS-GCaMP6f-p10 in su(Hw)attP5; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in VK00005, dsxFLP/R71G01-LexA in attP2</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>B</td>
+      <td rowspan="2">fru locus: +/fru4-40</td>
+      <td rowspan="2">+/Y; +/+; +/fru4-40 (F1 hybrid of +; +; fru4-40/TM6B and isogenic Canton-S)</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1</td>
+      <td>A-E</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>B</td>
+      <td rowspan="2">fru locus: fruΔA/fru4-40</td>
+      <td rowspan="2">+/Y; +/+; fruΔA/fru4-40</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1</td>
+      <td>A, B</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>B</td>
+      <td rowspan="2">fru locus: fruΔB/fru4-40</td>
+      <td rowspan="2">+/Y; +/+; fruΔB/fru4-40</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1</td>
+      <td>A, B, D, E</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>B</td>
+      <td rowspan="2">fru locus: fruΔC/fru4-40</td>
+      <td rowspan="2">+/Y; +/+; fruΔC/fru4-40</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1</td>
+      <td>A, B</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>B</td>
+      <td rowspan="2">fru locus: +/+</td>
+      <td rowspan="2">+/Y; +/+; +/+ (F1 hybrid of Canton-S and isogenic Canton-S)</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1</td>
+      <td>A-E</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>B</td>
+      <td rowspan="2">fru locus: fruΔA/+</td>
+      <td rowspan="2">+/Y; +/+; fruΔA/+</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1</td>
+      <td>A, B</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>B</td>
+      <td rowspan="2">fru locus: fruΔB/+</td>
+      <td rowspan="2">+/Y; +/+; fruΔB/+</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1</td>
+      <td>A, B, D, E</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>B</td>
+      <td rowspan="2">fru locus: fruΔC/+</td>
+      <td rowspan="2">+/Y; +/+; fruΔC/+</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1</td>
+      <td>A, B</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>C</td>
+      <td>fru locus: +/fruF</td>
+      <td>+/Y; +/+; +/fruF</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>C</td>
+      <td>fru locus: fruΔB/fruF</td>
+      <td>+/Y; +/+; fruΔB/fruF</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>C</td>
+      <td>fru locus: +/fruM</td>
+      <td>+/Y; +/+; +/fruM</td>
+    </tr>
+    <tr>
+      <td>Figure 4</td>
+      <td>C</td>
+      <td>fru locus: fruΔB/fruM</td>
+      <td>+/Y; +/+; fruΔB/fruM</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1</td>
+      <td>C</td>
+      <td>fru locus: fruB1/fru4-40</td>
+      <td>+/Y; +/+; fruB1/fru4-40</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1</td>
+      <td>C</td>
+      <td>fru locus: fruB2/fru4-40</td>
+      <td>+/Y; +/+; fruB2/fru4-40</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1</td>
+      <td>C</td>
+      <td>fru locus: fruB1/+</td>
+      <td>+/Y; +/+; fruB1/+</td>
+    </tr>
+    <tr>
+      <td>Figure 4—figure supplement 1</td>
+      <td>C</td>
+      <td>fru locus: fruB2/+</td>
+      <td>+/Y; +/+; fruB2/+</td>
+    </tr>
+    <tr>
+      <td>Figure 5</td>
+      <td>A, E, F, I-K</td>
+      <td rowspan="2">Tk-GAL41, XY, fru locus: +/fru4-40</td>
+      <td rowspan="2">w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/+</td>
+    </tr>
+    <tr>
+      <td colspan="2">Video 7</td>
+    </tr>
+    <tr>
+      <td>Figure 5</td>
+      <td>B, E, G, I-K</td>
+      <td>Tk-GAL41, XY, fru locus: fruΔA/fru4-40</td>
+      <td>w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruΔA</td>
+    </tr>
+    <tr>
+      <td>Figure 5</td>
+      <td>C, E, H-K</td>
+      <td>Tk-GAL41, XY, fru locus: fruΔB/fru4-40</td>
+      <td>w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruΔB</td>
+    </tr>
+    <tr>
+      <td>Figure 5</td>
+      <td>D, E</td>
+      <td>Tk-GAL41, XY, fru locus: fruΔC/fru4-40</td>
+      <td>w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruΔC</td>
+    </tr>
+    <tr>
+      <td>Figure 5</td>
+      <td>E</td>
+      <td rowspan="2">Tk-GAL41, XY, fru locus: +/+</td>
+      <td rowspan="2">w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2/+</td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 1</td>
+      <td>A</td>
+    </tr>
+    <tr>
+      <td>Figure 5</td>
+      <td>E</td>
+      <td rowspan="2">Tk-GAL41, XY, fru locus: fruΔA/+</td>
+      <td rowspan="2">w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2/fruΔA</td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 1</td>
+      <td>B</td>
+    </tr>
+    <tr>
+      <td>Figure 5</td>
+      <td>E</td>
+      <td rowspan="2">Tk-GAL41, XY, fru locus: fruΔB/+</td>
+      <td rowspan="2">w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2/fruΔB</td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 1</td>
+      <td>C</td>
+    </tr>
+    <tr>
+      <td>Figure 5</td>
+      <td>E</td>
+      <td rowspan="2">Tk-GAL41, XY, fru locus: fruΔC/+</td>
+      <td rowspan="2">w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2/fruΔC</td>
+    </tr>
+    <tr>
+      <td>Figure 5—figure supplement 1</td>
+      <td>D</td>
+    </tr>
+    <tr>
+      <td>Figure 6</td>
+      <td>B-D</td>
+      <td>Tk-GAL41, UAS-GCaMP6f, UAS-CsChrimson, fru locus: +/fru4-40</td>
+      <td>w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/20XUAS-IVS-Syn21-GCaMP6f-p10 in su(Hw)attP5; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/+</td>
+    </tr>
+    <tr>
+      <td>Figure 6</td>
+      <td>C, D</td>
+      <td>Tk-GAL41, UAS-GCaMP6f, UAS-CsChrimson, fru locus: fruΔB/fru4-40</td>
+      <td>w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/20XUAS-IVS-Syn21-GCaMP6f-p10 in su(Hw)attP5; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruΔB</td>
+    </tr>
+    <tr>
+      <td>Figure 6</td>
+      <td>E-G</td>
+      <td rowspan="2">Tk-GAL41, UAS &gt; stop &gt; CsChrimson, Otd-nls:FLPo, fru locus: +/fru4-40</td>
+      <td rowspan="2">w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/+</td>
+    </tr>
+    <tr>
+      <td>Figure 6—figure supplement 1</td>
+      <td>A-C</td>
+    </tr>
+    <tr>
+      <td>Figure 6</td>
+      <td>E-G</td>
+      <td rowspan="2">Tk-GAL41, UAS &gt; stop &gt; CsChrimson, Otd-nls:FLPo, fru locus: fruΔA/fru4-40</td>
+      <td rowspan="2">w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruΔA</td>
+    </tr>
+    <tr>
+      <td>Figure 6—figure supplement 1</td>
+      <td>A-C</td>
+    </tr>
+    <tr>
+      <td>Figure 6</td>
+      <td>E-G</td>
+      <td rowspan="2">Tk-GAL41, UAS &gt; stop &gt; CsChrimson, Otd-nls:FLPo, fru locus: fruΔB/fru4-40</td>
+      <td rowspan="2">w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruΔB</td>
+    </tr>
+    <tr>
+      <td>Figure 6—figure supplement 1</td>
+      <td>A-C</td>
+    </tr>
+    <tr>
+      <td>Figure 6</td>
+      <td>E-G</td>
+      <td rowspan="2">Tk-GAL41, UAS &gt; stop &gt; CsChrimson, Otd-nls:FLPo, fru locus: fruΔC/fru4-40</td>
+      <td rowspan="2">w, Tk-GAL41/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruΔC</td>
+    </tr>
+    <tr>
+      <td>Figure 6—figure supplement 1</td>
+      <td>A-C</td>
+    </tr>
+    <tr>
+      <td>Figure 6</td>
+      <td>E-G</td>
+      <td>UAS &gt; stop &gt; CsChrimson, Otd-nls:FLPo, fru locus: +/fru4-40</td>
+      <td>w/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/+</td>
+    </tr>
+    <tr>
+      <td>Figure 6</td>
+      <td>E-G</td>
+      <td>UAS &gt; stop &gt; CsChrimson, Otd-nls:FLPo, fru locus: fruΔA/fru4-40</td>
+      <td>w/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruΔA</td>
+    </tr>
+    <tr>
+      <td>Figure 6</td>
+      <td>E-G</td>
+      <td>UAS &gt; stop &gt; CsChrimson, Otd-nls:FLPo, fru locus: fruΔB/fru4-40</td>
+      <td>w/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruΔB</td>
+    </tr>
+    <tr>
+      <td>Figure 6</td>
+      <td>E-G</td>
+      <td>UAS &gt; stop &gt; CsChrimson, Otd-nls:FLPo, fru locus: fruΔB/fru4-40</td>
+      <td>w/Y; Otd-nls:FLPo in attP40/+; 20XUAS &gt; myr:TopHAT2 &gt; CsChrimson:tdTomato in attP2, fru4-40/fruΔC</td>
+    </tr>
+  </tbody>
+</table>
+
 To create male flies that lack FruMA, FruMB, or FruMC, we followed approaches taken in previous publications (Neville et al., 2014; von Philipsborn et al., 2014) and created trans-heterozygotes of isoform-specific mutations and fru4-40 or fruF. These two alleles do not transcribe fruM, while an isoform-specific mutation does not transcribe one of fruA, fruB, or fruC. Therefore, each trans-heterozygote is lacking a fru allele that can generate fruMA, fruMB, or fruMC transcripts, respectively.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 The following antibodies were used for immunohistochemistry with dilution ratios as indicated: rabbit anti-DsRed (1:1,000, Clontech # 632496, RRID:AB_10013483), mouse anti-BRP (1:100; Developmental Studies Hybridoma Bank nc82 (concentrated), RRID:AB_2314866), rabbit anti-FruM (1:10,000, a gift from Barry Dickson; Stockinger et al., 2005), guinea pig anti-FruM (1:100), rat anti-DsxM (1:100) (both gifts from Michael Perry, University of California, San Diego), rat anti-HA (1:100, Roche Cat# 11867423001, RRID:AB_390918), goat anti-rat Alexa 488 (1:100, ThermoFisher Scientific Cat# A11006, RRID:AB_2534074), goat anti-rabbit Alexa 488 (1:100, ThermoFisher Scientific, Cat# A11034, RRID:AB_2576217), goat anti-rat Alexa 488 (1:100, ThermoFisher Scientific Cat# A11006), goat anti-rabbit Alexa 568 (1:100; ThermoFisher Scientific Cat# A11036, RRID:AB_10563566), goat anti-mouse Alexa 633 (1:100; ThermoFisher Scientific Cat# A21052, RRID:AB_2535719), goat anti-guinea pig Alexa 633 (1:100, ThermoFisher Scientific Cat# A21105, RRID:AB_2535757). Immunohistochemistry of the fly brains followed the protocol described in Van Vactor et al. (1991). Briefly, the fly brains are dissected in 1XPBS and fixed in 1XPBS with 2% formaldehyde and 75 mM L-lysine for 75–90 min at room temperature. The brains were then washed in PBST (1XPBS, 0.3% TritonX-100) and were incubated in the blocking solution (10% heat-inactivated normal goad serum, 1XPBS, 0.3% TrintonX-100) for 30 min. Primary antibodies were diluted in the blocking solution and were applied to samples, which were then incubated at 4°C for 2 days. The brains were then washed in PBST and then incubated in the blocking solution for 30 min. Secondary antibodies were diluted in the blocking solution and were applied to the samples, which were then incubated at 4°C overnight. The brains were then washed in PBST, and then either incubated in 1XPBS, 50% glycerol for 2 hr at room temperature before mounted in Vectashield (Vector Laboratories, Cat# H-1000) onto a slide glass, or incubated in FocusClear (CelExplorer Labs, Taiwan, Cat# FC-101) medium for 2 hr at room temperature before being mounted in MountClear (CelExplorer Labs, Taiwan, Cat# MC-301) medium. A small well was made by cutting vinyl tape fixed on a slide glass, and one brain was transferred to each well before a cover slip (#1.5) was placed on the well and was sealed with nail polish. All reactions were carried out in a well of 6 × 10 microwell mini tray (ThermoFisher Scientific Cat# 439225).
 
@@ -129,7 +849,7 @@ For simultaneous detection of DsxM and FruM (Figure 1—figure supplement 2C,D),
 
 Z-stack images were acquired by FV-1000 confocal microscopy (Olympus America) except samples for Figure 3—figure supplement 1D, E, which were acquired by a Zeiss 710 confocal microscopy (Carl Zeiss Microscopy) at the Salk Institute Biophotonics Core, and were processed in Fiji software (Schindelin et al., 2012) (RRID:SCR_002285; https://fiji.sc/). The despeckle function was applied before a z-projection image was generated using maximum intensity projection. Minimum or maximum intensity thresholds were adjusted for enhanced clarity. Source image files used in all figures can be found in Source data 1.
 
-## Segmentation, registration, and analysis of immunohistochemical samples
+### Segmentation, registration, and analysis of immunohistochemical samples
 
 All data points for anatomical quantifications used in all figures, as well as all statistical results with exact p values, can be found in Source data 1.
 
@@ -143,15 +863,15 @@ After the registration of z-stacks, we calculated the average of the images in a
 
 To calculate the volumes of specific neuronal structures within Tk-GAL4FruM neurons, we further segmented the target structures using the Paint Brush function of FluoRender, and calculated the volume of each structure using the Volume Size function. Statistical analyses were carried out using MATLAB (The Mathworks, Inc, RRID:SCR_001622). The Kruskal-Wallis test (‘kruskalwallis’) was used to evaluate whether a volume of the given structure was significantly different among different genotypes. When the p-value was below 0.05, the post-hoc the Mann-Whitney U-test (‘ranksum’) was used to detect significant differences between testing and control genotypes. In both cases, Bonferroni correction was applied to p values. Non-parametric tests were applied for volume data since we could not necessarily assume the normal distribution of this data type.
 
-## Social behavior analysis
+### Social behavior analysis
 
-## Subject preparation
+#### Subject preparation
 
 Flies were collected on the day of eclosion into vials containing standard cornmeal-based food, and were kept either as a group of up to 16 flies per vial, or singly at 25 °C with 60% relative humidity, and a 9AM:9PM light:dark cycle. For optogenetic experiments, the tester flies were reared on food containing 0.2 mM all-trans retinal (MilliporeSigma, Cat#R2500, 20 mM stock solution prepared in 95% ethanol), and vials were covered with aluminum foil to shield light. Every 3 days, flies were transferred to vials containing fresh food. Tester flies were aged for 5–7 days except tester flies used in Figure 3B–E and Figure 3—figure supplement 1A–C, which were aged for 14–16 days to ensure consistent labeling of targeted neurons (data not shown).
 
 Male target flies were group-reared Canton-S (originally from the lab of Martin Heisenberg, University of Würzberg) virgin males except those used in Figure 4B–C and Figure 4—figure supplement 1C, which were males of an isogenic Canton-S (a gift from Anne von Philipsborn, Aarhus University). They were used as targets in these experiments because we observed that our standard Canton-S target males were sometimes aggressive and dominant towards the tester males even after being reared in groups (data not shown), which we were concerned could obscure the innate level of aggression in the tester male flies. These isogenic males performed few lunges toward the tester male flies (data not shown). To prepare mated wild-type target females, 5 Canton-S males were introduced into vials with 10 virgin females at 4 days old, and were reared for 2 more days to let them mate. At 3 days old, both male and female target flies were briefly anesthetized with CO2, and the tip of either one of their wings were clipped by a razor to create a ‘mark’. This clipping treatment did not reduce the amount of each behavior (lunge, wing extension, and headbutt) detected under our experimental settings (see Ishii et al., 2020 for details).
 
-## Behavioral assays
+#### Behavioral assays
 
 All behavior assays were conducted in the evening between Zeitberger time (ZT)7 and ZT12 (from 4 to 9PM) at 22–25°C. Social behavior assays were performed in a ‘12-well’ acrylic chamber (Asahina et al., 2014) with food substrate (apple juice (Minute Maid) supplemented with 2.25% w/v agarose and 2.5% w/v sucrose; Hoyer et al., 2008) covering the entire floor of arena. The wall was coated with Insec-a-Slip (Bioquip Products, Inc, Cat# 2871C) and the ceiling was coated with Surfasil Siliconizing Fluid (ThermoFisher Scientific, Cat# TS-42800), both to prevent flies from climbing, as described previously (Asahina et al., 2014; Hoyer et al., 2008). The arenas were lit by LED backlights, which were controlled by a custom-built switch box. For optogenetic experiments, 850 nm infrared LED backlights (Sobel Imaging Systems, CA, Cat# SOBL-150 × 100–850) were used, whereas white backlights (Edmunud Optics, NJ, Cat# 83873) were used for non-optogenetic experiments (Figure 4A,B, Figure 4—figure supplement 1A–C). Flies were introduced into the chamber by gentle aspiration, and were allowed to acclimate for 5 min before recording started.
 
@@ -159,7 +879,7 @@ Recording was done by USB3 digital cameras (Point Grey Flea3 USB3.0, FLIR Inc, C
 
 The setup for optogenetic experiments was assembled as described previously (Inagaki et al., 2014). Briefly, the red light (655 nm) LEDs were controlled via an Arduino Uno board (Arduino, Italy) using a custom program. As illustrated in Figure 1B, the stimulation paradigm (10 min in total) consists of 1 min pre-stimulation (time window ‘1’ in Figure 1B), three blocks of 1 min stimulation at an indicated frequency (time window ‘2’, 3 min in total) each followed by 2 min inter-stimulus intervals (ISIs, time window ‘3’, 6 min in total). The recording and LED control were manually started simultaneously.
 
-## Quantification of social behavior data
+#### Quantification of social behavior data
 
 All behavioral data points used in all figures, as well as all statistical results with exact p values, can be found in Source data 1.
 
@@ -171,16 +891,20 @@ While it is not feasible to perform power analyses for non-parametric datasets, 
 
 Generally, male testers seldom performed lunges toward female targets. Also, noticeably less lunges were detected in fruM females. Behavioral data from these conditions often result in zero-inflated datasets. In such cases, a few false positive incidents can impact the result of statistical tests. To avoid this pitfall, classifier results of lunges from male testers toward female targets and from fruM females were manually validated, and obvious false positives (caused by tracking errors, when a fly was near or on the wall, or when a fly suddenly jumped) were eliminated before statistical tests were applied.
 
-## Activity and sleep analysis
+### Activity and sleep analysis
 
 Male flies were collected and singly reared for 6 days as was described in ‘Social behavior analysis’. Experiments were carried out for 3 days at 24°C. Activity and sleep data were acquired using individual Drosophila activity monitors (TriKinetics Inc) under 12 hr:12 hr light:dark cycles, as was described previously (Wu et al., 2014). Counts of beam crosses between Zeitgerber (ZT)8 and ZT12 on day 2 and day 3 were binned per minute (note that ZT8-12 corresponds to the time period when we performed social behavioral assays). Sleep was defined as at least 5 min of inactivity (no beam cross). The amount of activity and sleep were quantified using custom MATLAB scripts provided by William Joiner (University of California, San Diego).
 
-## Functional calcium imaging
+### Functional calcium imaging
 
 Male flies were kept in all-trans retinal food after eclosion and aged 6 days. On the day of the experiment, flies were briefly anesthetized on ice and mounted on a custom chamber using ultraviolet curing adhesive (Norland Optical Adhesive 63, Norland Products, Inc) to secure the head and thorax to a tin foil base. The proboscis was also dabbed with glue to prevent its extension from altering the position of the brain. The head cuticle was removed with sharp forceps in room temperature Drosophila adult hemolymph-like saline (Wang et al., 2003). After cuticle removal, the recording solution was refreshed. Optogenetic stimulation was applied with an external fiber-coupled LED of 625 nm (Thorlabs Inc, Cat# M625F2) controlled by a programmable LED driver (ThorLabs, Cat# DC2200). The end of the LED fiber (Thorlabs, Cat# M28L01) was placed 5 mm from the brain. LED illumination of 5 Hz, 10-millisecond pulses for a 30 s duration was applied for optogenetic activation of CsChrimson. LED power was varied so that each fly received stimulations at 0, 0.02, 0.04, 0.1, and 0.2 mA. The energy from the LED that the neurons receive was estimated from the measurement of the LED power using a photodiode power sensor (Thorlabs, Cat# S130C) 5 mm away from the end of the LED fiber. The energy was read using a digital optical power/energy meter (Thorlabs Cat# PM100D).
 
 The multiphoton laser scanning microscope (FV-MPE-RS, Olympus Corporation), equipped with 25X water immersion objective (Olympus Corporation, Cat# XLPLN25XWMP2), was used for monitoring the fluorescence of GCaMP6f. The recordings began 10 s before stimulation and continued 20 s after stimulation for a total of 1 min. GCaMP6f proteins were excited with a 920 nm laser (Spectra-Physics Insight DL Dual-OL, Newport Corporation). Images were taken at 10 Hz with a 256 × 256 pixel resolution.
 
-Acquired images were converted and analyzed in Fiji with the Olympus ImageJ plugin (http://imagej.net/OlympusImageJPlugin). Imaging windows were chosen that maximally captured the dense set of projections that emanate from Tk-GAL4FruM neurons before they branch out further (lateral junction described in Yu et al., 2010; Figure 6B). Rectangular regions of interest were selected and ∆F/F was calculated using a custom-written MATLAB code. First, the baseline fluorescence value (Fbase) was calculated by averaging the fluorescence for 5 s preceding the stimulation. ∆F/F for each frame (∆F/Fframe=N) was calculated as follows:(∆F/Fframe=N)=[(Fframe=N)–Fbase]/Fbase
+Acquired images were converted and analyzed in Fiji with the Olympus ImageJ plugin (http://imagej.net/OlympusImageJPlugin). Imaging windows were chosen that maximally captured the dense set of projections that emanate from Tk-GAL4FruM neurons before they branch out further (lateral junction described in Yu et al., 2010; Figure 6B). Rectangular regions of interest were selected and ∆F/F was calculated using a custom-written MATLAB code. First, the baseline fluorescence value (Fbase) was calculated by averaging the fluorescence for 5 s preceding the stimulation. ∆F/F for each frame (∆F/Fframe=N) was calculated as follows:
+
+$$
+(\DeltaF/F_{frame=N})=[(F_{frame=N})–F_{base}]/F_{base}
+$$
 
 Then, the ∆F/ Fframe=N for frames taken during the 30 s LED stimulation (excluding frames where the light was on) were averaged to calculate the ∆F/F of a given trial. Boxplots of average ∆F/F during stimulation at different LED powers and across flies were generated. Heterozygous controls and fruMB mutants’ fluorescence data were compared across LED powers using the Mann-Whitney U-test (‘ranksum’).

@@ -36,31 +36,91 @@ Because ribosome recycling is required to provide 40S subunits needed for assemb
 
 ## Results
 
-## Identification of mRNAs dependent on Tma64 or the Tma20/Tma22 heterodimer for efficient translation in yeast cells
+### Identification of mRNAs dependent on Tma64 or the Tma20/Tma22 heterodimer for efficient translation in yeast cells
 
 Previously, we provided evidence that the yeast counterparts of eIF2D or the MCT-1/DENR heterodimer (Tma64 and Tma20/Tma22, respectively) act in ribosome recycling following the termination of polypeptide synthesis at stop codons. Analysis of a yeast tma64∆/tma20∆ double mutant (tma∆∆) suggested the accumulation of unrecycled 40S post-TerCs stranded at stop codons, with two main consequences: (i) queuing of translating 80S ribosomes immediately upstream of 40S post-TerCs stalled at stop codons; (ii) increased reinitiation by the stalled 40S post-TerCs and attendant translation in adjacent 3’UTRs (Young et al., 2018). Recently, profiling of 40S subunits (as opposed to 80S ribosomes) has confirmed the genome-wide accumulation of unrecycled 40S subunits at stop codons in the tma∆∆ mutant (D. Young, S. Meydan-Marks, and N. Guydosh, personal communication). We wondered whether the sequestration of 40S subunits in 40S post-TerCs stranded at stop codons, or otherwise engaged in scanning or translation within 3’UTRs, in the tma∆∆ mutant would reduce their availability to assemble new 43S preinitiation complexes and thereby diminish the relative translational efficiencies (TEs) of certain mRNAs in the cell.
 
 To address this possibility, we used ribosome profiling to measure the relative TEs of all expressed mRNAs in the tma∆∆ mutant compared to the isogenic WT, culturing both strains in synthetic complete (SC) medium. Ribosome profiling entails deep-sequencing of 80S ribosome-protected mRNA fragments (RPFs, or ribosome footprints) in parallel with total RNA. The ratio of sequencing reads of RPFs summed over the coding sequences to the total mRNA reads for the corresponding transcript provides a measure of TE for each mRNA (Ingolia et al., 2009). Owing to normalization of the data for total read number in each library, the RPF and mRNA reads and the calculated TEs are determined relative to the average values for each strain and do not indicate absolute levels of mRNA expression or translation. The RPF and RNA read counts between biological replicates for each strain were highly reproducible (Pearson’s r ≈ 0.99) (Figure 1—figure supplement 1A–D). The normalized RPF counts from all mRNAs aligned at their stop codons for the WT strain showed the expected three nucleotide periodicity and a peak at the stop codon (Figure 1A, blue). As we reported previously for cells cultured in undefined rich medium (YEPD) (Young et al., 2018), the corresponding metagene profile for the tma∆∆ mutant in defined (SC) medium differs from the WT profile in exhibiting a peak ~30 nt upstream of the stop codon (Figure 1A, green versus blue), attributed to queuing of a translating 80S ribosome behind an unrecycled 40S post-TerCs stalled at the stop codon following peptide release and recycling of the large 60S subunit (Figure 1A, schematic). The tma∆∆ mutant also exhibits genome-wide elevated 80S occupancies downstream of stop codons (Figure 1B, green versus blue), indicating increased translation reinitiation in 3’UTRs by unrecycled post-TerCs (Figure 1B, schematic). Thus, key defects associated with impaired 40S recycling following translation termination observed previously in the tma∆∆ mutant cultured in YEPD (Young et al., 2018) were reproduced here in the same mutant grown in SC medium.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig1-v1.jpg)
+
+**Figure 1.:** (A) Results from ribosome profiling showing the normalized 80S ribosome reads from all mRNAs aligned with respect to their stop codons, for WT strain BY4741 (blue), the tma∆∆ mutant H4520 (green), and SM-treated WT cells (maroon). Schematics depict queuing of 80S ribosomes 30 nt upstream of the stop codon in the tma∆∆ mutant attributed to 40S post-TerCs stalled at stop codons owing to defective recycling. (B) Expanded view of normalized 80S reads from all mRNAs shown in (A) for the first 50 nt of the 3’UTRs. The schematic depicts resumed scanning by 40S post-TerCs and reinitiation in 3’UTRs. (C) Polysome profiles of the strains in (A). (i)-(ii) Cells cultured in SC medium at 30°C to log-phase and treated with 50 μg/mL of CHX for 5 min before harvesting at 4°C. (iii) WT cells grown as in (i) except in SC-Ile/Val medium and treated with 1 µg/mL SM for 20 min before CHX addition. WCEs were resolved by sedimentation through sucrose gradients and scanned at 260 nm to visualize (from left to right) free 40S and 60S subunits, 80S monosomes, and polysomes. Tracings are magnified in the insets to show halfmer polysome positions (red arrows) in the tma∆∆ mutant, depicted in the schematic above (ii). The mean polysome/monosome (P/M) ratios and free 40S to 60S subunits ratios with ± standard error of the means (SEMs) from five biological replicates are shown. (D) Volcano plot showing the log2 ratios of relative TEs in the tma∆∆ mutant versus WT cells (∆TEtma∆∆ values) for each mRNA (x-axis) versus negative log10 of the False Discovery Rate (FDR) for the ∆TEtma∆∆ changes determined by DESeq2 analysis of ribosome profiling data for the 5405 mRNAs with evidence of translation (y-axis). The dotted line marks the 5% FDR threshold. mRNAs showing a significant increase (∆TEtma∆∆_up) or decrease (∆TEtma∆∆_down) in relative TE in the tma∆∆ mutant versus WT cells at FDR < 0.05, are plotted in dark or light green circles, respectively. (E) Venn diagrams of overlaps between differentially expressed mRNAs (ΔmRNA) (FDR < 0.05 and log2ΔmRNA >1 or <-1) or differentially translated mRNAs (ΔTE, FDR < 0.05) between the tma∆∆ mutant versus WT cells, with arrows indicating increased (up) or decreased (down) mRNA or TE in the tma∆∆ mutant versus WT cells. p values were calculated using Fisher's exact test and were shown only for over-enrichment compared to expectation by chance.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–F) Scatterplots of normalized ribosome footprint (A, C, E) or mRNA (B, D, F) read densities for all expressed mRNAs for biological replicates of the WT (A, B), the tma∆∆ mutant (C, D) and SM-treated WT cells (E, F). The densities were plotted from the reads mapped to the CDS of each gene per million mapped reads in the individual library of a biological replicate. Pearson’s correlation coefficient (r) is indicated in each plot.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Polysome profiles of (i) WT, (ii)the tma∆∆ mutant and (iii) SM-treated WT cells. (i)-(ii) Cells were cultured in SC medium at 30°C to log-phase and treated with 50 μg/mL of CHX for 5 min before harvesting at 4°C. (iii) WT cells grown as in (i) except in SC-Ile/Val medium and treated with 1 µg/mL SM for 20 min before CHX addition. WCEs were resolved by sedimentation through sucrose gradients and scanned at 260 nm to visualize (from left to right) free 40S and 60S subunits, 80S monosomes, and polysomes. Tracings are magnified in the insets to show halfmer polysome positions (red arrows) in the tma∆∆ mutant.
+
 Furthermore, we found that the tma∆∆ mutant exhibits a reduced ratio of bulk polysomes to monosomes (P/M) compared to that seen in WT cells (Figure 1C, (ii) versus (i)), consistent with a diminished rate of bulk translation initiation. This strain also exhibits an accumulation of halfmer polysomes, evident as shoulders on the 80S monosome and disome peaks in total polysome profiles, not found in the profiles from WT cells (Figure 1C, (ii) versus (i); Figure 1—figure supplement 2 (ii) versus (i)). The usual explanation for halfmer polysomes is a delay in joining of 60S subunits to 48S PICs at AUG start codons, such as conferred by reductions in the production or stability of 60S subunits. In fact, a tma20∆ single mutant was found to exhibit an abnormally high ratio of free 40S to free 60S subunits in the manner expected from a 60S biogenesis defect (Fleischer et al., 2006). An accumulation of unrecycled 40S subunits at stop codons or in 3’UTRs might also contribute to the halfmer formation we observed in the tma∆∆ mutant; however, the association of such 40S complexes with mRNA might be too labile to withstand sedimentation through sucrose gradients without the cross-linking step employed in 40S subunit profiling (Archer et al., 2016).
 
 Interrogating the ribosome profiling data for possible changes in TEs of mRNAs associated with elimination of the Tma proteins, we identified a sizable group of 175 mRNAs showing significant reductions in relative TE (ΔTEtma∆∆_down), and a cohort of 378 mRNAs exhibiting relative TE increases (ΔTEtma∆∆_up), in the tma∆∆ mutant versus WT cells (at FDR < 0.05, Figure 1D). Importantly, these changes in translation were largely independent of changes in mRNA abundance, as very few mRNAs showing significant TE changes also displayed significant mRNA changes (Figure 1E), which is consistent with the idea that eIF2D or MCT-1/DENR directly or indirectly influence the translation of a fraction of cellular mRNAs. Interestingly, the mRNAs belonging to the ΔTEtma∆∆_up group tend to be highly translated in WT cells, showing a significantly higher median TE compared to all mRNAs (Figure 2A, solid green versus black). Consistent with this, these mRNAs exhibit multiple features characteristic of well-translated mRNAs, including short CDS and short 5’UTR lengths (Figure 2B–C), higher than average Kozak context scores for nucleotides surrounding the AUG start codons (Figure 2D), and greater than average transcript abundance and stability (Figure 2E–F). In sharp contrast, the group of ΔTEtma∆∆_down mRNAs tend to be poorly translated in WT cells in comparison to all mRNAs (Figure 2A, dotted versus black); and exhibit all the opposite features of the ΔTEtma∆∆_up group, which are characteristic of weakly translated mRNAs (Figure 2A–F). In accordance with these findings, sequence logos of the context nucleotides surrounding the initiation codons reveal that the ΔTEtma∆∆_up mRNAs show a higher occurrence of A nucleotides immediately upstream of the AUG codons, especially at the −3 position—a characteristic of the most highly translated mRNAs in yeast (Zur and Tuller, 2013)—in comparison to the ΔTEtma∆∆_down group (Figure 2—figure supplement 1A versus Figure 2—figure supplement 1B).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig2-v1.jpg)
+
+**Figure 2.:** (A, C, E, and F) Cumulative distribution function (CDF) plots of log2WT TE values (A), 5’UTR length (C), mRNA abundance in molecules per picogram of dry cellular weight (pgDW) (E), and mRNA half-life (F), for all mRNAs (black) and mRNAs exhibiting a significant increase (∆TEtma∆∆_up, solid dark green) or decrease (∆TEtma∆∆_down, dotted light green) in relative TE (at FDR < 0.05) in the tma∆∆ mutant versus WT cells. (B) Frequency distribution plots of CDS length for the groups of mRNAs examined in (A). p values in panels A-C and E-F were calculated using the Kolmogorov-Smirnov test. (D) Notched box plots of context scores calculated for positions −3 to −1 and +4 of main CDS AUGs for all mRNAs (white) and the ∆TEtma∆∆_up (dark green) and ∆TEtma∆∆_down (light green) mRNAs examined in (A). p values indicated in the panel were calculated using the Mann-Whitney U test. For this and all other box plots below, the upper and lower boxes contain the second and third quartiles and the band gives the median of the data. If the notches in two plots do not overlap, there is roughly 95% confidence that their medians are different.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–G) The Weblogo for positions −6 to −1 and +4 to +6 of the main CDS AUGs for mRNAs exhibiting a significant increase (∆TE_up) (A, C, E) or decrease (∆TE_down) (B, D, F) in relative TEs (at FDR < 0.05) in the tma∆∆ mutant versus WT cells (A–B), in SM-treated versus untreated WT cells (C–D), and in the rps26∆∆ mutant versus WT cells (E–F); or for all mRNAs (G). The DNA rather than RNA sequence is represented.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A–D) Spearman correlation coefficients (ρ) were calculated for each mRNA feature listed on the x-axis and the relative ∆TE values for all expressed mRNAs for the tma∆∆ mutant versus WT cells (A), SM-treated versus untreated WT cells (B), the rps26∆∆ mutant versus WT cells (C), or SM-treated versus untreated gcn4∆ cells (D). (* = p value < 10−5, ** = p value < 10−10, *** = p value < 10−100).
+
 In agreement with the foregoing results obtained for the two sets of mRNAs showing TE changes that satisfy a specific FDR threshold of significance, the same trends were observed for the global TE changes measured for all expressed mRNAs in the tma∆∆ mutant versus WT cells. Thus, the ΔTEtma∆∆ values for all mRNAs show marked positive correlations with their TE values in WT cells (Figure 2—figure supplement 2A, column 6); and significant, albeit weaker, positive correlations with transcript abundance, mRNA half-life and Kozak context scores (Figure 2—figure supplement 2A, columns 3–5). A marked negative correlation with ΔTEtma∆∆ values was also observed for CDS length, and a lesser negative correlation was evident for 5’UTR length (Figure 2—figure supplement 2A, columns 1–2). Together, these findings suggest that, on deletion of the TMA64 and TMA20 genes, mRNAs that are strongly translated in WT cells tend to exhibit an increased relative TE, whereas weakly translated mRNAs tend to show a decrease in relative TE. One way to explain these results is to propose that a competition between ‘strong’ and ‘weak’ mRNAs for limiting translation components is skewed in favor of the strong mRNAs in the tma∆∆ mutant.
 
-## Evidence that relative TE changes observed in the tma∆∆ mutant do not arise from eliminating an alternative function of eIF2D
+### Evidence that relative TE changes observed in the tma∆∆ mutant do not arise from eliminating an alternative function of eIF2D
 
 As mentioned above, studies in reconstituted mammalian systems revealed that eIF2D can promote binding of Met-tRNAi to AUG codons in specialized mRNAs in which ribosomal scanning is not required to place the AUG codon in the P site of the 40S subunit. Thus, it was conceivable that the yeast homolog of eIF2D (Tma64) promotes translation initiation on the subset of mRNAs whose TEs are reduced in the tma∆∆ mutant by complementing the function of eIF2 in delivering Met-tRNAi to the 40S subunit. The TE reductions for this group of mRNAs might then indirectly stimulate translation of the other group of mRNAs found to be upregulated in the tma∆∆ mutant owing to reduced competition for initiation machinery. In an effort to rule out this possibility, we conducted ribosome profiling of a tma64∆ single deletion mutant lacking the yeast homolog of eIF2D but still containing Tma20/Tma22, the homologs of MCT-1/DENR.
 
 The ribosome footprint and RNA-seq results between biological replicates for the WT and tma64∆ single mutant strains were highly reproducible (Pearson’s r ≈ 0.99) (Figure 3—figure supplement 1A–D). Polysome profiles of the tma64∆ single mutant lack the halfmer polysomes observed in the tma∆∆ mutant (Figure 3A, (iii) versus (ii)), as expected if tma20∆ is responsible for halfmer formation in the double mutant. Also absent in the tma64∆ single mutant is the queuing of 80S ribosomes upstream of stop codons (Figure 3B), and the evidence of genome-wide elevated 3’UTR translation (Figure 3C), that are both evident in the tma∆∆ mutant. Thus, the tma64∆ single mutant lacks the key phenotypes associated with impaired 40S recycling observed in the tma∆∆ mutant, suggesting that either the MCT-1/DENR heterodimer is more important than eIF2D for 40S recycling, or that MCT-1/DENR and eIF2D are fully redundant for this activity in yeast. (The metagene profile for the WT strain in this experiment (Figure 3B) differs from that shown in Figure 1A in lacking an 80S peak at the stop codon. In our hands, this feature varies among independent experiments, whereas the queuing of 80S ribosomes ~ 30 nt upstream of stop codons in the tma∆∆ mutant is highly reproducible).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig3-v1.jpg)
+
+**Figure 3.:** (A) Polysome profiles of WT strain BY4741 (i), the tma∆∆ mutant H4520 (ii), and the tma64∆ mutant 4051 (iii). Cells were cultured in SC medium at 30°C to log-phase and treated with 50 μg/mL of CHX for 5 min before harvesting at 4°C. WCEs were resolved by sedimentation through sucrose gradients and scanned at 260 nm to visualize (from left to right) free 40S and 60S subunits, 80S monosomes, and polysomes. Tracings are magnified in the insets to show halfmer polysome positions in the tma∆∆ mutant (ii). (The polysome profile in (ii) was previously shown in Figure 1C (ii)). (B) Results from ribosome profiling showing the normalized 80S ribosome reads from all mRNAs aligned with respect to their stop codons for the WT (purple), the tma∆∆ mutant (green), and the tma64∆ mutant (red) described in (A). (Data for the tma∆∆ mutant was plotted previously in Figure 1A). (C) Expanded view of normalized 80S reads from all mRNAs shown in (B) for the first 50 nt of the 3’UTRs. (D–E) Notched box plots showing translation changes (log2(ΔTE)) in the indicated mutants versus WT for all mRNAs or for mRNAs exhibiting a significant decrease (∆TEtma∆∆_down, N = 175, panel D) or increase (∆TEtma∆∆_up, N = 378, panel E) in relative TE in the tma∆∆ mutant versus WT cells at a 5% FDR threshold. A few outliers were omitted from the plots to expand the y-axis scale. p values indicated in panels (D–E) were calculated using the Mann-Whitney U test for the differences between the TE changes for the indicated groups of mRNAs versus all mRNAs.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A–D) Scatterplots of normalized ribosome footprint (A, C) or mRNA (B, D) read densities for all expressed mRNAs for biological replicates of the WT (A, B) and the tma64∆ mutant (C, D). The densities were plotted from the reads mapped to the CDS of each gene per million mapped reads in the individual library of a biological replicate. Pearson’s correlation coefficient (r) for the plotted genes is indicated in each plot.
+
 Next, we interrogated the tma64∆ single mutant for changes in TE. In contrast to the tma∆∆ mutant, we found no mRNAs exhibiting significant relative TE changes in the tma64∆ single mutant versus WT cells (at FDR < 0.05, data not shown). Specifically, the group of 175 mRNAs exhibiting substantially reduced TEs in the tma∆∆ mutant (ΔTEtma∆∆_down, defined in Figure 1D) showed a relatively slight, albeit significant, decrease in median TE in the tma64∆ single mutant versus WT (Figure 3D column 4), indicating that elimination of yeast eIF2D alone has only a small impact on the translation of these mRNAs. Likewise, the TE increases for the 378 mRNAs in the ΔTEtma∆∆_up group were relatively small in the tma64∆ single mutant versus the tma∆∆ mutant (Figure 3E, column 4 versus 3). These findings are at odds with the possibility that elimination of eIF2D, and its possible role as an alternative to eIF2 for recruitment of Met-tRNAi, is responsible for the widespread TE changes observed in the tma∆∆ mutant. However, we cannot eliminate the possibility that eIF2D and the MCT-1/DENR heterodimer are completely interchangeable for eIF2-independent Met-tRNAi recruitment in vivo such that MCT-1/DENR is sufficient to provide a WT level of this non-canonical pathway in cells devoid of eIF2D. The correlation between recycling defects and marked TE changes observed on comparing the tma∆∆ and tma64∆ mutants is consistent with the model that the defect in 40S ribosome recycling conferred by the tma∆∆ mutations contributes to the reprogramming of TEs observed in this double mutant.
 
-## Reducing TC abundance by eIF2α phosphorylation and elimination of 40S recycling factors confers related reprogramming of relative TEs
+### Reducing TC abundance by eIF2α phosphorylation and elimination of 40S recycling factors confers related reprogramming of relative TEs
 
 Given the role of eIF2D and/or MCT-1/DENR in 40S recycling, we hypothesized that sequestering of 40S subunits in post-TerCs and in ribosomes engaged in aberrant 3’UTR scanning or translation in the tma∆∆ mutant would reduce the availability of free 40S subunits for assembling 43S PICs; which would contribute to a skewing of TEs to disproportionately favor strong over weak mRNAs. If this hypothesis is correct, then reducing assembly of 43S PICs by other means might elicit a similar global reprogramming of translation. As a first test of this prediction, we used ribosome profiling to examine the effects on genome-wide TEs rendered by phosphorylation of serine-51 of eIF2α by protein kinase Gcn2. This phosphorylation event is induced by various stresses and is known to reduce assembly of the eIF2·GTP·Met-tRNAi TC in yeast cells (Hinnebusch, 2005). Gcn2 can be activated by limiting biosynthesis of isoleucine and valine by treatment with sulfometuron methyl (SM), an inhibitor of the branched chain amino acid biosynthetic enzyme encoded by ILV2 (Jia et al., 2000).
 
 Judging by the change in polysome:monosome ratio, inducing eIF2α phosphorylation by SM treatment of WT cells confers a reduction in bulk translation initiation similar to that given by the tma∆∆ mutations, but without the appearance of halfmer polysomes seen in untreated tma∆∆ cells (Figure 1C and Figure 1—figure supplement 2, (iii) versus (ii) and (i)). These same growth conditions were used to conduct ribosome profiling of WT treated with SM and compared to the results described above from isogenic untreated WT cells. The ribosome profiling and RNA-seq results between biological replicates of the SM-treated WT cells were highly reproducible (Pearson’s r ≈ 0.99) (Figure 1—figure supplement 1E–F). In addition to reduced bulk translation, a second well-known response to the reduction in TC assembly evoked by eIF2α phosphorylation is induction of GCN4 mRNA translation, owing to the specialized ‘delayed reinitiation’ mechanism imposed by the four upstream open-reading frames in this transcript (Hinnebusch, 2005). Ribosome profiling revealed the expected strong induction of GCN4 translation evoked by SM treatment of WT cells, as revealed by a large increase in RPF reads in the GCN4 coding sequence (CDS) with little or no change in GCN4 mRNA reads, yielding an increase in TE (ΔTE) of ~30-fold (Figure 4A, WT+SM versus WT, cf. replicate cultures a and b for Ribo-seq and RNA-seq data). In contrast, no significant increase in GCN4 translation was observed in the untreated tma∆∆ mutant (Figure 4A, the tma∆∆ mutant versus WT), indicating normal levels of TC assembly in this mutant. Furthermore, SM-treated WT cells did not exhibit the queuing of 80S ribosomes upstream of stop codons and elevated 80S occupancies in 3’UTRs observed in the tma∆∆ mutant (Figure 1A–B, maroon versus blue), indicating that increased eIF2α phosphorylation does not impair 40S recycling.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig4-v1.jpg)
+
+**Figure 4.:** (A) Genome browser view of ribosome profiling data for GCN4 mRNA, showing RPF reads (Ribo) and mRNA reads (RNA) mapping across the transcription unit in WT, with or without SM treatment, and in the tma∆∆ mutant, showing two replicates (a and b) for each genotype/condition. The main CDS is shown schematically (orange). The calculated ∆TEWT+SM and ∆TEtma∆∆ values are shown. (B) Volcano plot showing log2 ratios of relative TEs in SM-treated versus untreated WT cells (∆TEWT+SM values) for each mRNA (x-axis) versus negative log10 of the FDR for the ∆TEWT+SM changes determined by DESeq2 analysis of the 5483 mRNAs with evidence of translation (y-axis). The dotted line marks the 5% FDR threshold. mRNAs showing a significant increase (∆TEWT+SM_up) or decrease (∆TEWT+SM_down) in relative TE in SM-treated versus untreated WT cells, at FDR < 0.05, are plotted in dark or light pink circles, respectively. (C) Venn diagrams of overlaps between differentially expressed mRNAs (ΔmRNA) (FDR < 0.05 and log2ΔmRNA >1 or <-1) or differentially translated mRNAs (ΔTE, FDR < 0.05) in SM-treated versus untreated WT cells, with arrows indicating increased (up) or decreased (down) mRNA or TE in SM-treated versus untreated WT cells. p values were calculated using the Fisher’s exact test and were shown only for over-enrichment compared to expectation by chance. (D) Cumulative distribution function (CDF) plots of log2WT TE values for all mRNAs (black) and mRNAs exhibiting a significant increase (∆TEWT+SM_up, solid dark pink) or decrease (∆TEWT+SM_down, dotted light pink) in relative TE (at FDR < 0.05) in SM-treated versus untreated WT cells. p values were calculated using the Kolmogorov-Smirnov test. (E) Hierarchical clustering analysis of log2TE changes observed for 486 mRNAs that exhibit significant TE changes in the tma∆∆ mutant versus WT cells, and also in SM-treated versus untreated WT cells, at FDR < 0.1 for both comparisons. The color scale for log2ΔTE values ranges from 2.5 (dark blue) to −3.5 (dark red). One mRNA (YPR146C) with ∆TEtma∆∆ >10 fold and ∆TEWT+SM <10 fold was excluded to enhance the color differences among the remaining mRNAs analyzed in the heatmap. (F) Venn diagrams of overlaps between the groups of mRNAs defined in Figure 1D and B showing significantly increased or decreased TEs conferred by SM treatment of WT cells or by the tma∆∆ mutations. p values were calculated using the Fisher's exact test. (G) Notched box plots showing the log2WT TEs of the group of 135 RPG mRNAs or all expressed mRNAs. A few outliers were omitted from the plots to expand the y-axis scale. The p value was calculated using the Mann-Whitney U test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Frequency distribution plots of CDS length for all mRNAs (black) and mRNAs exhibiting a significant increase (∆TEWT+SM_up, solid dark pink) or decrease (∆TEWT+SM_down, dotted light pink) in relative TE (at FDR < 0.05) in SM-treated versus untreated WT cells. (B, D and E) Cumulative distribution function (CDF) plots of 5’UTR length (B), mRNA abundance in molecules per picogram of dry cellular weight (pgDW) (D), and mRNA half-life (E), for the groups of mRNAs examined in (A). p values in panels A-B and D-E were calculated using the Kolmogorov-Smirnov test. (C) Notched box plots of context scores calculated for positions −3 to −1 and +4 of the main CDS AUGs for all mRNAs (white) and the ∆TEWT+SM_up (dark pink) and ∆TEWT+SM_down (light pink) groups of mRNAs examined in (A). p values were calculated using the Mann-Whitney U test.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A–B) Notched box plots showing the relative TE changes (log2ΔTE) in the indicated strains for all mRNAs or the groups of mRNAs showing significant TE increases (∆TEtma∆∆_up, N = 378, panel A) or decreases (∆TEtma∆∆_down, N = 175, panel B) in the tma∆∆ mutant versus WT cells at a 5% FDR threshold. (C–D) Notched box plots showing the relative TE changes (log2ΔTE) in the indicated strains for all mRNAs or the groups of mRNAs with significant TE increases (∆TEWT+SM_up, N = 889, panel C) or decreases (∆TEWT+SM_down, N = 846, panel D) in SM-treated versus untreated WT cells at a 5% FDR threshold. p values in panels (A–D) were calculated using the Mann-Whitney U test for the differences between all mRNAs and the indicated groups of mRNAs showing TE changes in the respective datasets.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** (A–B) Bubble plots representing significantly enriched GO terms (FDR < 0.01) in a biological process for genes whose cognate mRNAs show significantly upregulated (A) or down-regulated (B) changes in relative TE in the tma∆∆ mutant versus WT cells (green), in SM-treated versus untreated WT cells (maroon), and in the rps26∆∆ mutant versus WT cells (blue), at FDR < 0.05. The negative log10 of the adjusted p values (FDR) for the GO enrichments are given on the y-axis. The size of each bubble represents the number of genes in the GO term.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** (A–I) Cumulative distribution function (CDF) plots of changes in TE (log2∆TE) (A, D, G), mRNA reads (log2∆mRNA) (B, E, H), or ribosome foot-print reads (log2∆RPF) (C, F, I) for all mRNAs (black) and the group of 135 RPG mRNAs (blue) in the tma∆∆ mutant versus WT cells (A, B, C), SM-treated versus untreated WT cells (D, E, F), and the rps26∆∆ mutant versus WT cells (G, H, I). p values in panels (A–I) were calculated using the Kolmogorov-Smirnov test.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** (A–D) Scatterplots of normalized ribosome footprint (A, C) or mRNA (B, D) read densities for all expressed mRNAs for biological replicates of untreated gcn4∆ cells (A, B) and SM-treated gcn4∆ cells (C, D). The densities were plotted from the reads mapped to the CDS of each gene per million mapped reads in the individual library of a biological replicate. Pearson’s correlation coefficient (r) for the plotted genes is indicated in each plot.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig4-figsupp6-v1.jpg)
+
+**Figure 4—figure supplement 6.:** (A) Hierarchical clustering analysis of log2TE changes observed in the tma∆∆ mutant versus WT cells and in SM-treated versus untreated WT cells for 824 mRNAs that exhibit significant changes in relative TE in the tma∆∆ mutant versus WT cells only, at FDR < 0.1. The color scale for log2ΔTE values ranges from 4 (dark blue) to −3.5 (dark red). Two mRNAs, YPR146C (with ∆TEtma∆∆ >10 fold and ∆TEWT+SM <10 fold) and YGR122C-A (with ∆TEtma∆∆ >3.5 fold and ∆TEWT+SM <0.3 fold) were excluded to enhance the color differences among the remaining mRNAs analyzed in the heatmap. (B) Hierarchical clustering analysis of log2TE changes observed in the tma∆∆ mutant versus WT cells and in the rps26∆∆ mutant versus WT cells for 822 mRNAs that exhibit significant TE changes in the tma∆∆ mutant versus WT cells only, at FDR < 0.1. The color scale for log2ΔTE values ranges from 4 (dark blue) to −4 (dark red). Two mRNAs, YPR146C (with ∆TEtma∆∆ >10 fold and ∆TErps26∆∆ <0.9 fold) and YHL016C (with ∆TEtma∆∆ <3 fold and ∆TErps26∆∆ <12 fold), were excluded to enhance the color differences among the remaining mRNAs. In both panels, the Spearman correlation coefficient (ρ) for the TE changes determined for the plotted mRNAs in the two conditions being compared is indicated below the plot. Brackets marked with asterisks delineate blocks of mRNAs in which the majority show no change in TE, or TE changes in the opposite direction in WT cells treated with SM (A) or in response to the rps26∆∆ mutations (B) compared to the TE changes conferred by the tma∆∆ mutations.
 
 Interrogating the ribosome profiling data for changes in TE of specific mRNAs in SM-treated WT versus untreated WT cells (ΔTEWT+SM) uncovered 889 and 846 mRNAs whose TEs were relatively upregulated (ΔTEWT+SM_up) or relatively down-regulated (ΔTEWT+SM_down), respectively, under these conditions (FDR < 0.05, Figure 4B). The TE changes evoked by SM treatment were largely independent of changes in mRNA abundance (Figure 4C), except that ~ 1/4th of the 889 mRNAs exhibiting increased TEs also show decreased mRNA abundance (Figure 4C, 2nd row; more on this phenomenon below). This last finding, plus the considerably larger number of mRNAs whose TEs were significantly changed by SM treatment versus the tma∆∆ mutations, indicate a more widespread reprogramming of TEs evoked by increased eIF2α phosphorylation compared to loss of 40S recycling factors. Nevertheless, as observed for the tma∆∆ mutations, the mRNAs showing increased relative TE on SM treatment (ΔTEWT+SM_up) are enriched for mRNAs that are well-translated in untreated WT cells, whereas the ΔTEWT+SM_down group of mRNAs are enriched for weakly translated mRNAs (Figure 4D). Moreover, the ΔTEWT+SM_up group tend to exhibit all of the attributes of strongly translated mRNAs (short CDS and 5’UTR lengths, good Kozak context, greater mRNA abundance and stability, compared to the genome averages); whereas the ΔTEWT+SM_down mRNAs are enriched for the features of weakly translated mRNAs (Figure 4—figure supplement 1A–E). These opposite features for the ΔTEWT+SM_up and ΔTEWT+SM_down groups of mRNAs are mirrored by the greater preferences for A nucleotides upstream of the AUG codons of the ΔTEWT+SM_up group in comparison to the ΔTEWT+SM _down group (Figure 2—figure supplement 1C versus Figure 2—figure supplement 1D). Furthermore, the global ΔTE values for all expressed mRNAs on SM treatment of WT cells (ΔTEWT+SM) are positively correlated with mRNA half-life, transcript abundance, Kozak context score, and the TE in WT cells, while negatively correlated with 5’UTR and CDS lengths (Figure 2—figure supplement 2B). As in the case of TE changes in response to the tma∆∆ mutations, the strongest correlations with TE changes in response to SM are for CDS length and for TE in WT cells (Figure 2—figure supplement 2B versus Figure 2—figure supplement 2A).
 
@@ -72,9 +132,33 @@ Given that increased eIF2α phosphorylated induced by SM treatment increases tra
 
 It is striking that eliminating Tma proteins and SM treatment both preferentially increase the TEs of strong mRNAs and disfavor weak mRNAs, and that the majority of mRNAs whose TEs are significantly altered under both of these conditions display changes in the same direction and are enriched for the same functional categories. However, there are also many condition-specific changes in TE that should not be overlooked. Thus, ~50% of the mRNAs whose TEs are upregulated or down-regulated by the tma∆∆ mutations are not significantly altered by SM treatment of WT cells (Figure 4F), even though the latter condition generally has a greater impact on the TEs of those mRNAs significantly affected by both conditions (Figure 4E). Condition-specific TE changes are also evident in a cluster analysis of TE changes conferred by the two conditions for all 824 mRNAs exhibiting significant TE changes in response to the tma∆∆ mutations (at FDR < 0.1; Figure 4—figure supplement 6A). While the TE changes conferred by the tma∆∆ mutations or SM treatment of WT cells are significantly correlated for this group of mRNAs (Spearman’s ρ = 0.52, p = 0), there are sizeable blocks of mRNAs that show changes of lesser magnitude (same color, lighter hue), or even changes in the opposite direction (different colors), on SM treatment versus the tma∆∆ mutations (see blocks of mRNAs bracketed in Figure 4—figure supplement 6A). Thus, numerous condition-specific changes in TE appear to be superimposed on the shared general trends of increased TEs for strong mRNAs and decreased TEs for weak mRNAs conferred by the tma∆∆ mutations or by SM treatment of WT.
 
-## Relative TE changes evoked by depleting 40S subunits are also related to those conferred by loss of 40S recycling factors and reduced TC assembly
+### Relative TE changes evoked by depleting 40S subunits are also related to those conferred by loss of 40S recycling factors and reduced TC assembly
 
 The results thus far suggest that the competition between strong and weak mRNAs is shifted in favor of strong mRNAs when eIF2D and MCT-1/DENR are both eliminated or when eIF2 function is impaired by phosphorylation. Given the role of eIF2D and/or MCT-1/DENR in supplying recycled free 40S subunits for initiation, and the effect of eIF2α phosphorylation in reducing the concentration of TC—a key constituent of initiation complexes—we considered the possibility that both conditions skew the competition among different mRNAs by limiting formation of 43S PICs. If so, then reducing the availability of free 40S subunits by reducing total 40S abundance should likewise diminish 43S PIC assembly and confer a similar reprogramming of TEs. To test this prediction, we depleted the 40S protein Rps26A from a strain lacking the paralog Rps26B by employing a rps26b∆ mutant in which RPS26A is transcribed from the galactose-dependent, glucose-repressible PGAL1 promoter (for brevity, dubbed rps26∆∆). Polysome profile analysis revealed a marked increase in the ratio of free 60S to 40S subunits 3 hr after shifting the rps26∆∆ mutant to glucose medium, compared to the WT strain cultured in parallel (Figure 5A), which is diagnostic of a reduction in 40S subunit levels in the mutant. Consistent with this, there was also a reduction in the polysome:monosome ratio in the rps26∆∆ mutant, indicating a reduced rate of translation initiation (Figure 5A). Thus, these same growth conditions were used to conduct ribosome profiling of the rps26∆∆ mutant and isogenic WT strain.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig5-v1.jpg)
+
+**Figure 5.:** (A) Polysome profiles of WT strain H2994 and the rps26∆∆ mutant JVY09. Cells cultured in SC medium with 2% galactose and 2% raffinose instead of glucose at 30°C to log-phase were shifted to glucose-containing SC medium for 3 hr and treated with 50 μg/mL of CHX for 5 min before harvesting at 4°C. WCEs were resolved by sedimentation through sucrose gradients and scanned at 260 nm to visualize (from left to right) free 40S and 60S subunits, 80S monosomes, and polysomes. The mean polysome/monosome (P/M) ratios ± SEMs from five biological replicates are shown. (B) Volcano plot showing the log2 ratios of relative TEs in the rps26∆∆ mutant versus WT cells (∆TErps26∆∆ values) for each mRNA (x-axis) versus negative log10 of the FDR for the ∆TErps26∆∆ changes determined by DESeq2 analysis of ribosome profiling data for the 5187 mRNAs with evidence of translation (y-axis). The dotted line marks the 5% FDR threshold. mRNAs showing a significant increase (∆TErps26∆∆_up) or decrease (∆TErps26∆∆_down) in relative TE in the rps26∆∆ mutant versus WT cells at FDR < 0.05, are plotted in dark or light blue circles, respectively. (C) Cumulative distribution function (CDF) plots of log2WT TE values for all mRNAs (black) and mRNAs exhibiting a significant increase (∆TErps26∆∆_up, solid dark blue) or decrease (∆TErps26∆∆_down, dotted light blue) in relative TE (at FDR < 0.05) in the rps26∆∆ mutant versus WT cells. p values were calculated using the Kolmogorov-Smirnov test. (D) Hierarchical clustering analysis of log2TE changes observed for 248 mRNAs that exhibit significant TE changes in the tma∆∆ mutant versus WT cells, in SM-treated versus untreated WT cells, and also in the rps26∆∆ mutant versus WT cells, at p < 0.05 for all genotypes/conditions. The color scale for log2ΔTE values ranges from 3.5 (dark blue) to −2.5 (dark red). (E–F) Notched box plots showing translation changes (log2ΔTE) in the indicated mutant versus WT for mRNAs exhibiting a significant increase (∆TEtma∆∆_up, N = 385, panel E) or decrease (∆TEtma∆∆_down, N = 175, panel F) in relative TE in the tma∆∆ mutant versus WT cells at a 5% FDR threshold. A few outliers were omitted from the plots to expand the y-axis scale. p values were calculated using the Mann-Whitney U test for the differences between the indicated groups of mRNAs versus all mRNAs. (Columns 1–2 in panels (E–F) were previously compared in Figure 4—figure supplement 2A–B).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A–D) Scatterplots of normalized ribosome footprint (A, C) or mRNA (B, D) read densities for all expressed mRNAs for biological replicates of the WT (A, B) and the rps26∆∆ mutant (C, D). The densities were plotted from the reads mapped to the CDS of each gene per million mapped reads in the individual library of a biological replicate. Pearson’s correlation coefficient (r) for the plotted genes is indicated in each plot.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Results from ribosome profiling showing the normalized 80S ribosome reads from all mRNAs aligned with respect to their stop codons, for WT strain H2994 (light and dark blue) and the rps26∆∆ mutant JVY09 (yellow and orange), showing two replicates (a and b) for each strain. (B) Expanded view of normalized 80S reads from all mRNAs shown in (A) for the first 50 nt of the 3’UTRs. (C) Genome browser view of ribosome profiling data for GCN4 mRNA, showing RPF reads (Ribo) and mRNA reads (RNA) mapping across the transcription unit in WT, and in the rps26∆∆ mutant, showing two replicates (a and b) for each strain. The main CDS is shown schematically (orange). The calculated ∆TErps26∆∆ value is shown.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Frequency distribution plots of CDS length for all mRNAs (black) and mRNAs exhibiting a significant increase (∆TErps26∆∆_up, solid dark blue) or decrease (∆TErps26∆∆_down, dotted light blue) in relative TE (at FDR < 0.05) in the rps26∆∆ mutant versus WT cells. (B, D and E) Cumulative distribution function (CDF) plots of 5’UTR length (B), mRNA abundance in molecules per picogram of dry cellular weight (pgDW) (D), and mRNA half-life (E), for the groups of mRNA examined in (A). p values in panels A-B and D-E were calculated using the Kolmogorov-Smirnov test. (C) Notched box plots of context scores calculated for positions −3 to −1 and +4 of the main CDS AUGs for all mRNAs (white) and for the groups of mRNA, ∆TErps26∆∆_up (dark blue) and ∆TErps26∆∆_down (light blue), examined in (A). p values were calculated using the Mann-Whitney U test.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** Notched box plots showing the changes in relative TE observed in the rps26∆∆ mutant versus WT cells for all mRNAs and for the two groups of mRNAs found to bind preferentially to 40S subunits containing Rps26 ("+Rps26") or lacking Rps26 ("ΔRps26") by Ferretti et al., 2017. A few outliers were omitted from the plots to expand the y-axis scale. p values indicated in the panel were calculated using the Mann-Whitney U test.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig5-figsupp5-v1.jpg)
+
+**Figure 5—figure supplement 5.:** (A–B) Notched box plots of relative TEs determined for single replicates of rps29b∆, rps0b∆, and two different WT strains for (A) five pentiles of 907–908 genes sorted according to increasing CDS length, and (B) all mRNAs versus 133 RPG mRNAs interrogated in the rps0b∆ strain and two different WT strains, or the 132 RPG mRNAs interrogated in the rps29b∆ strain.
 
 The ribosome footprint and RNA-seq results between biological replicates for each strain were highly reproducible (Pearson’s r ≈ 0.99) (Figure 5—figure supplement 1A–D). Metagene analysis of the ribosome profiling data did not reveal queuing of 80S subunits near stop codons, nor evidence of elevated 3’UTR translation in the rps26∆∆ mutant (Figure 5—figure supplement 2A–B). Nor did we observe derepression of GCN4 translation in the rps26∆∆ mutant versus WT cells; rather, the TE of GCN4 mRNA was significantly reduced (Figure 5—figure supplement 2C), which will be discussed below. Thus, depletion of Rps26 and the attendant reduction in 40S subunit levels should not alter TEs by impairing 40S recycling or reducing TC abundance.
 
@@ -84,17 +168,37 @@ The foregoing results suggest that the TE changes conferred by elimination of Rp
 
 Despite these commonalities in TE changes, there are sizeable groups of mRNAs whose TEs are affected differently by the rps26∆∆ and tma∆∆ mutations. This is indicated by the relatively smaller changes in median TE conferred by the rps26∆∆ mutations versus the tma∆∆ mutations or SM treatment for the groups of mRNAs whose TEs are up- or down-regulated by the tma∆∆ mutations (Figure 5E–F, column 3 versus 1). It is also evident in the cluster analysis of the TE changes conferred by the rps26∆∆ or tma∆∆ mutations for the group of mRNAs showing significant TE changes in response to the tma∆∆ mutations. Although the TE changes for this group of mRNAs are significantly correlated between the rps26∆∆ and tma∆∆ mutations (ρ = 0.37, p = 0), there are several sets of mRNAs that change by markedly different amounts or in opposite directions in the two mutants (Figure 4—figure supplement 6B, see bracketed blocks). Moreover, the ΔTErps26∆∆_down mRNAs do not show significant enrichment for the GO categories shared by the mRNAs whose TEs are down-regulated by the tma∆∆ mutations and SM treatment (Figure 4—figure supplement 3B). Thus, as concluded above for the TE changes conferred by SM treatment, there are many TE changes specific to the depletion of Rps26 that appear to be superimposed on the tendency common to all three conditions for strong mRNAs to show increased TEs and weak mRNAs to show reduced TEs; and these differences are generally more pronounced for the rps26∆∆ mutations compared to the tma∆∆ mutations or SM treatment of WT. Below, we consider various explanations for the condition-specific changes in TE, and also explain that the shared trend is in accordance with mathematical modeling of how TEs of different groups of mRNAs should be altered by limiting concentrations of 43S PICs.
 
-## The group of mRNAs with a strong propensity to form the closed-loop intermediate is translationally upregulated by loss of 40S recycling factors, increased eIF2α phosphorylation or 40S subunit depletion
+### The group of mRNAs with a strong propensity to form the closed-loop intermediate is translationally upregulated by loss of 40S recycling factors, increased eIF2α phosphorylation or 40S subunit depletion
 
 The 5’ cap of mRNA is recognized by the cap-binding complex eIF4F, and interaction of the scaffolding subunit eIF4G with the poly(A) binding protein (PABP) enables mRNA circularization. There is evidence that formation of this ‘closed-loop’ intermediate stabilizes eIF4F binding at the cap (Park et al., 2011), and facilitates recycling of 40S subunits from the stop codon to the mRNA 5’ end, to increase initiation frequencies (Uchida et al., 2002). Using RNA sequencing-immunoprecipitation (RIP-seq) analysis of eIF4F subunits, PABP and the inhibitory eIF4E-binding proteins (4EBPs), Costello et al. identified ‘Strong Closed-Loop’ (SCL) mRNAs as those enriched in occupancies of eIF4E, eIF4G, and PABP, while de-enriched for association with 4EBPs (Costello et al., 2015). This group of SCL mRNAs have shorter than average 5’UTRs and CDS lengths, higher than average Kozak context scores for nucleotides surrounding the AUG start codons, are more abundant, and more stable compared to all mRNAs, and are highly translated in WT cells (Figure 6—figure supplement 1A–F). Noting that these attributes are enriched among the mRNAs whose TEs are elevated by elimination of the Tma proteins, eIF2α phosphorylation, or depletion of Rps26 and 40S subunits, we interrogated the TE changes for the group of SCL mRNAs conferred by each of these three conditions. As shown in Figures 6A, C and E, the TEs of the group of SCL mRNAs are significantly elevated in each of the three conditions, whereas the abundance of these mRNAs is significantly reduced under the same conditions (Figures 6B, D and F). The inference that limiting 43S PICs upregulates the TEs of SCL mRNAs is also supported by data from Thompson et al., who reported a similar upregulation of SCL mRNAs in strains lacking a ribosomal protein, including rpp1a∆ and rps16b∆ mutants (Thompson et al., 2016). Thus, the SCL mRNAs represent a biochemically defined set of well-translated mRNAs that respond coherently to loss of 40S recycling factors, eIF2α phosphorylation, and a deficit in 40S subunit abundance.
 
-## The tma∆∆ mutations preferentially impair expression of a reporter mRNA harboring a strong cap-proximal secondary structure
+![Figure 6.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig6-v1.jpg)
+
+**Figure 6.:** (A–F) Cumulative distribution function (CDF) plots of changes in TEs (log2∆TE) (A, C, E) or mRNA levels (log2∆mRNA) (B, D, F) for all mRNAs (black) or the 386 SCL mRNAs (red) in the tma∆∆ mutant versus WT cells (A–B), in SM-treated versus untreated WT cells (C–D), and in the rps26∆∆ mutant versus WT cells (E–F). p values were calculated using the Kolmogorov-Smirnov test.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A, C, E, and F) Cumulative distribution function (CDF) plots of log2WT TE values (A), 5’UTR length (C), mRNA abundance in molecules per picogram of dry cellular weight (pgDW) (E), and mRNA half-life (F), for all mRNAs (black) and the 386 SCL mRNAs (red). (B) Frequency distribution plots of CDS length for all mRNAs and the SCL mRNAs. (D) Notched box plots of context scores calculated for positions −3 to −1 and +4 of main CDS AUGs for all mRNAs (white) and the SCL mRNAs (red). p values were calculated using the Mann-Whitney U test. (G) Venn diagrams of overlaps between the SCL mRNAs and RPG mRNAs, with the p value calculated using the Fisher's exact test.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Luciferase reporter mRNAs shown schematically on the left were expressed from low-copy number plasmids in WT and the tma∆∆ mutant. Eight independent transformants for each strain/plasmid were cultured for approximately three cell doublings in SC-Ura at 30°C and luciferase activity (relative light units, RLUs) and total protein concentration were measured in WCEs. Plotted on the right are the RLUs normalized for total protein, with error bars indicating ± SEMs and p values calculated using the student’s t-test. Stem-loops of the indicated predicted stabilities (in kcal/mol) were inserted into a 70 nt unstructured 5′ UTR at either 5 nt or 44 nt from the capped mRNA 5’ end (Left). The parental reporter (first row) contains the RPL41A promoter and first 5 nt of RPL41A mRNA followed by a tandem array of 18 CAA repeats, expected to produce a 5’UTR largely devoid of secondary structure, attached to the firefly luciferase CDSs, and an internally truncated RPL41A 3’UTR sequence (Sen et al., 2016).
+
+### The tma∆∆ mutations preferentially impair expression of a reporter mRNA harboring a strong cap-proximal secondary structure
 
 We reasoned that if the tma∆∆ mutations reduce the abundance of 43S PICs in the manner suggested above, then they should impair the translation of luciferase reporter mRNAs described previously (Sen et al., 2016) harboring insertions expected to form stable secondary structures close to the capped 5’ end predicted to impede 43S PIC attachment. Insertion of a stem-loop (SL) structure of predicted stability of −10.5 kcal/mol five nt from the transcription start site strongly impairs luciferase production in WT cells compared to expression of the parental LUC mRNA reporter lacking an insertion, and to the reporter harboring an insertion of lower predicted stability (−5.7 kcal/mol) at the same cap-proximal location (Figure 6—figure supplement 2, WT data, rows 1–3). An even greater reduction in luciferase expression in WT cells was conferred by the more stable −10.5 kcal/mol SL inserted at a cap-distal position 44 nt from the 5’ end, and a moderate reduction was observed for the weaker SL inserted at the same location (Figure 6—figure supplement 2, WT data, rows 4–5 versus 1), all in agreement with our previous findings (Sen et al., 2016). Importantly, the tma∆∆ mutations produced significant reductions in expression for the two reporters harboring cap-proximal SLs, with a particularly strong effect on the reporter bearing the more stable SL (Figure 6—figure supplement 2, cf. tma∆∆ versus WT data, rows 2–3 versus 1). In contrast, the tma∆∆ mutations had no significant effects on expression of the two reporters containing the cap-distal SLs, designed to impede ribosomal scanning versus PIC attachment (Figure 6—figure supplement 2, cf tma∆∆ versus WT data, rows 4–5), even though both of these SL insertions impaired expression in WT cells. These findings support the idea that eliminating the 40S recycling factors leads to a defect in translation initiation that preferentially affects mRNAs that are inefficiently translated owing to a reduced ability to recruit 43S PICs to the 5’ end.
 
-## Examining the importance of Tma proteins for translational control by uORFs
+### Examining the importance of Tma proteins for translational control by uORFs
 
 The foregoing results support a role for Tma proteins in generating free 40S subunits to support 43S PIC assembly through their functions in ribosome recycling. We next examined whether the Tma proteins might be required for reinitiation at downstream CDSs following uORF translation in uORF-containing mRNAs, as noted above for MCT-1 and DENR in animal cells. GCN4 is the best characterized yeast mRNA exhibiting efficient reinitiation, as ~50% of the 40S subunits that initiate at uORF1 can resume scanning downstream after completing uORF1 translation. Under non-starvation conditions the majority of these 40S subunits reinitiate at uORFs 2–4 and undergo translation termination and ribosome recycling before reaching the GCN4 AUG. In starved cells where eIF2α is phosphorylated, ~50% of such ‘re-scanning’ 40S subunits can bypass the remaining uORFs 2–4 and reinitiate instead at the GCN4 AUG (Hinnebusch, 2005). If the Tma proteins enhance reinitiation on GCN4 mRNA, then either single or double deletions of the TMA genes should reduce translation of the GCN4 CDS in starved cells. To address this possibility, we examined a GCN4-lacZ reporter containing the native promoter and 5’UTR with all four uORFs intact, which has been used extensively to decipher the delayed reinitiation mechanism of GCN4 translational control (Hinnebusch, 2005). In WT cells, expression of this reporter is low in non-starved cells and increases >10-fold on starvation of WT cells for Ile/Val using SM treatment (Figure 7A, columns 1–2). It was previously shown that the starvation-induced increased expression of this reporter is completely dependent on the Gcn2 kinase and the uORFs (Mueller and Hinnebusch, 1986). Importantly, none of the single or double deletions of the three TMA genes produced a significant reduction in GCN4-lacZ expression in SM-treated cells, except for a small ~15% reduction in the tma64∆ single mutant (Figure 7A, white bars). The tma20∆ mutation conferred a ~33% increase in GCN4-lacZ expression; however, as the tma22∆ mutation had no effect, it is difficult to ascribe the modest expression change conferred by the tma20∆ mutation to inactivation of the Tma20/Tma22 heterodimer. Moreover, the fact that neither the tma64∆tma20∆ nor tma64∆tma22∆ double mutant showed significant changes in GCN4-lacZ induction (Figure 7A, white bars, columns 9–12 versus 1–2) suggests that neither the eIF2D nor MCT-1/DENR yeast orthologs are required for reinitiation at GCN4 following uORF1 translation when TC levels are reduced by eIF2α phosphorylation.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig7-v1.jpg)
+
+**Figure 7.:** (A) The GCN4-lacZ reporter (depicted schematically) was introduced on plasmid p180 into WT and the indicated yeast mutant strains. Three independently transformed colonies for each strain were cultured in SC-Ura medium at 30°C to log-phase (-SM) or treated with SM at 0.5 μg/mL after 2 hr of growth in SC-Ura and cultured for an additional 4 hr before harvesting. Specific β-galactosidase activities (in units of nmoles of o-nitrophenyl-β-D-galactopyranoside (ONPG) cleaved per min per mg of total protein) were measured in WCEs. Error bars are ± SEMs, and p values were calculated using the student’s t-test. (B–C) Notched box plots showing the log2ΔTE values for all mRNAs or mRNAs containing annotated (B) or conserved (C) AUG uORFs, conferred by the tma∆∆ mutations (green), SM treatment of WT cells (maroon) or the rps26∆∆ mutations (cyan). A few outliers were omitted from the plots to expand the y-axis scale. p values were calculated using the Mann-Whitney U test for the differences between the AUG uORF-containing mRNAs and all mRNAs for each of the three mutations/conditions. (D) Notched box plots showing the log2WT TEs for all expressed mRNAs or for the groups of mRNAs with annotated or conserved AUG uORFs. A few outliers were omitted to expand the y-axis scale. p values were calculated using the Mann-Whitney U test for the differences between the AUG uORF-containing mRNAs and all mRNAs. (E) Notched box plot showing log2RRO values for all AUG uORFs and their corresponding main CDSs in WT and the tma∆∆ mutant. A few outliers were omitted to expand the y-axis scale. The p value was calculated using the Mann-Whitney U test. (F) Notched box plot showing log2(3’UTR:ORF) ratios for all mRNAs or all AUG uORF-containing mRNAs in WT and the tma∆∆ mutant. To interrogate the same number of mRNAs in WT and the tma∆∆ mutant, one footprint read (arbitrary value) was added to all the reads obtained after aligning the sequence data. A few outliers were omitted to expand the y-axis scale. p values were calculated using the Mann-Whitney U test for the differences between WT and the tma∆∆ mutant.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/64283/elife-64283-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A–B) Smoothed scatterplot comparing log2RROtma∆∆ versus log2RROWT for all annotated uORFs (A) or evolutionarily conserved uORFs (B). Those mRNAs with ≥2 fold changes in RRO in the tma∆∆ mutant versus WT cells (at FDR < 0.5) would be highlighted by red and dark blue dots, respectively, but none exist.
 
 There was also no effect of the tma∆∆ mutations on GCN4-lacZ expression in non-starvation conditions (Figure 7A, black bars), consistent with results in Figure 4A for native GCN4 mRNA. These findings imply that the strong repression exerted by uORFs 3–4 in non-starved WT cells, which should depend on efficient recycling of post-TerCs following termination at these inhibitory uORFs, does not require the Tma proteins. Although this might seem surprising, eliminating the Tma proteins does not confer a recycling defect as severe as that given by depletion of ABCE1/Rli1, which impairs the first step of ribosome recycling (Young et al., 2015; Young et al., 2018), suggesting that the second step of recycling can occur at appreciable levels without the Tma factors. Presumably, this Tma-independent pathway is sufficient for robust 40S recycling at the stop codons of GCN4 uORFs 3 and 4.
 
@@ -140,17 +244,356 @@ In summary, our findings suggest that reducing 43S PICs in yeast either by elimi
 
 ## Materials and methods
 
-## Strains and plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>MATa his3-∆1 leu2-∆0 met15∆0 ura3∆0</td>
+      <td>Research Genetics</td>
+      <td>BY4741</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>MATa gcn4::kanMX4 his3∆1 leu2∆0 met15∆0 ura3∆0</td>
+      <td>Research Genetics</td>
+      <td>249</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>MATa his3∆1 leu2∆0 met15∆0 ura3∆0 tma64∆::kanMX4</td>
+      <td>Research Genetics</td>
+      <td>4051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>MATa his3∆1 leu2∆0 met15∆0 ura3∆0 tma22∆::kanMX4</td>
+      <td>Research Genetics</td>
+      <td>6812</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>MATa his3∆1 leu2∆0 met15∆0 ura3∆0 tma20∆::kanMX4</td>
+      <td>Research Genetics</td>
+      <td>328</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>MATa his3∆1 leu2∆0 met15∆0 ura3∆0 tma64∆::hygMX4 tma20∆::kanMX4</td>
+      <td>Young et al., 2018</td>
+      <td>H4520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>MATa his3∆1 leu2∆0 met15∆0 ura3∆0 tma64∆::hygMX4 tma20∆::kanMX5</td>
+      <td>Young et al., 2018</td>
+      <td>H4521</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>MATa ura3-52 trp1-∆63 leu2-3,−112 his4-303</td>
+      <td>Valásek et al., 2004</td>
+      <td>H2994</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Saccharomyces cerevisiae)</td>
+      <td>MATa ura3-52 leu2-3 leu2-112 trp1-∆63 his4-303(AUU) kanMX6::PGAL1-RPS26A rps26b∆::hphMX6</td>
+      <td>This study</td>
+      <td>JVY09</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FLUC reporter with 70nt synthetic 5'UTR with (CAA)n repeats in YCplac33</td>
+      <td>Sen et al., 2016</td>
+      <td>FJZ526</td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FLUC reporter with cap-proximal SL with ∆G of −10.5 kcal/mol in synthetic 5’UTR in YCplac33</td>
+      <td>Sen et al., 2016</td>
+      <td>FJZ683</td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FLUC reporter with cap-proximal SL with ∆G of −5.7 kcal/mol in synthetic 5’UTR in YCplac33</td>
+      <td>Sen et al., 2016</td>
+      <td>FJZ685</td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FLUC reporter with cap-distal SL with ∆G of −10.5 kcal/mol in synthetic 5’UTR in YCplac33</td>
+      <td>Sen et al., 2016</td>
+      <td>FJZ688</td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FLUC reporter with cap-distal SL with ∆G of −5.7 kcal/mol in synthetic 5’UTR in YCplac33</td>
+      <td>Sen et al., 2016</td>
+      <td>FJZ690</td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GCN4-lacZ (uORFs1-4) in YCp50</td>
+      <td>Hinnebusch, 1985</td>
+      <td>p180</td>
+      <td>Plasmid</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Sigma</td>
+      <td>Cat# C7698</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Complete EDTA-free Protease Inhibitor cocktail Tablet</td>
+      <td>Roche</td>
+      <td>Cat# 1873580001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sulfometuron Methyl</td>
+      <td>CHEM SERVICE</td>
+      <td>Cat# PS-1074</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RNase I</td>
+      <td>Ambion</td>
+      <td>Cat# AM2294</td>
+      <td>enzyme</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>T4 RNA ligase 2</td>
+      <td>New England Biolabs</td>
+      <td>Cat# M0242L</td>
+      <td>enzyme</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>T4 Polynucleotide kinase</td>
+      <td>New England Biolabs</td>
+      <td>Cat# M0201L</td>
+      <td>enzyme</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Superscript III</td>
+      <td>Invitrogen</td>
+      <td>Cat# 18080044</td>
+      <td>enzyme</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Circ Ligase ssDNA Ligase</td>
+      <td>Epicentre</td>
+      <td>Cat# CL4111K</td>
+      <td>enzyme</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>T4 Rnl2(tr) K227Q</td>
+      <td>New England Biolabs</td>
+      <td>Cat# M0351S</td>
+      <td>enzyme</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RecJ exonuclease</td>
+      <td>Epicentre</td>
+      <td>Cat# RJ411250</td>
+      <td>enzyme</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Yeast 5’-deadenylase</td>
+      <td>New England Biolabs</td>
+      <td>Cat# M0331S</td>
+      <td>enzyme</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protoscript II</td>
+      <td>New England Biolabs</td>
+      <td>Cat# M0368L</td>
+      <td>enzyme</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CircLigase II</td>
+      <td>Epicentre</td>
+      <td>Cat# CL9025K</td>
+      <td>enzyme</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Phusion polymerase (F-530)</td>
+      <td>New England Biolabs</td>
+      <td>Cat# M0530S</td>
+      <td>enzyme</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GlycoBlue</td>
+      <td>Invitrogen</td>
+      <td>Cat# AM9516</td>
+      <td>Blue dye covalently linked to glycogen</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>fragmentation reagent</td>
+      <td>Ambion</td>
+      <td>Cat# AM8740</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>miRNeasy Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 217004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Ribo-Zero Gold rRNA Removal Kit</td>
+      <td>Illumina</td>
+      <td>Cat# MRZ11124C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Bioanalyzer using the High Sensitivity DNA Kit</td>
+      <td>Agilent</td>
+      <td>Cat# 5067–4626</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Oligo Clean and Concentrator column</td>
+      <td>Zymo Research</td>
+      <td>Cat# D4060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Notched box-plots</td>
+      <td>http://shiny.chemgrid.org/boxplotr/</td>
+      <td></td>
+      <td>Web-based tool</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Gene ontology analysis</td>
+      <td>https://biit.cs.ut.ee/gprofiler/gost</td>
+      <td></td>
+      <td>Web-based tool</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Spearman’s correlation calculator</td>
+      <td>https://www.wessa.net/rwasp</td>
+      <td></td>
+      <td>Web-based tool</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ggplot2, R package</td>
+      <td>https://cran.r-project.org/web/packages/ggplot2/index.html</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GeneOverlap, R package</td>
+      <td>https://www.bioconductor.org/packages/release/bioc/html/GeneOverlap.html</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie</td>
+      <td>Langmead et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TopHat</td>
+      <td>Trapnell et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Hisat2</td>
+      <td>https://github.com/DaehwanKimLab/hisat2</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R script for DESeq2, R package</td>
+      <td>https://github.com/hzhanghenry/RiboProR</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Integrative Genomics Viewer</td>
+      <td>Robinson et al., 2011</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Weblogo analysis</td>
+      <td>Crooks et al., 2004</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and plasmids
 
 Wild-type yeast strain BY4741 (MATa his3-∆1 leu2∆0 met15∆0 ura3∆0) and mutant strains 249 (MATa gcn4::kanMX4 his3∆1 leu2∆0 met15∆0 ura3∆0), 4051 (MATa his3∆1 leu2∆0 met15∆0 ura3∆0 tma64∆::kanMX4), 6812 (MATa his3∆1 leu2∆0 met15∆0 ura3∆0 tma22∆::kanMX4), and 328 (MATa his3∆1 leu2∆0 met15∆0 ura3∆0 tma20∆::kanMX4) were purchased from Research Genetics. H4520 (tma64∆/tma20∆) and H4521 (tma64∆/tma22∆) were constructed previously (Young et al., 2018). Wild-type strain H2994 (MATa ura3-52 trp1∆63 leu2-3,−112 his4-303) (Valásek et al., 2004) was the parental strain for JVY09 (MATa ura3-52 leu2-3 leu2-112 trp1-∆63 his4-303(AUU) kanMX6::PGAL1-RPS26A rps26b∆::hphMX6), which was constructed as follows. Strain JVY05 was generated from H2994 by the one-step PCR strategy (Longtine et al., 1998), using the hphMX6 cassette to replace RPS26B and selecting for resistance to hygromycin on rich medium containing galactose as a carbon source (YPGal). JVY09 was similarly generated from JVY05 by the one-step PCR strategy to insert the PGAL1 promoter immediately upstream of the RPS26A ORF using the kanMX6 cassette and selecting for resistance to kanamycin on YPGal. Replacement of RPS26B with the hphMX6 cassette and integration of the kanMX::PGAL1 promoter cassette at RPS26A were verified by PCR analyses of genomic DNA using the appropriate primers. JVY09 was shown to be inviable on glucose medium (where the GAL1 promoter is repressed) in a manner fully complemented by plasmid-borne RPS26A on pJVB06.
 
 High-copy LEU2 plasmid pJVB06 was constructed by inserting into pRS315 (Sikorski and Hieter, 1989) a 2.3 kb BamHI restriction fragment containing RPS26A flanked by 1120 bp upstream and 832 bp downstream of the coding sequences, amplified from genomic DNA of strain H2994, creating pJVB05. The insert from pJVB05 was then subcloned into pRS425 (Sikorski and Hieter, 1989) to generate pJVB06. Plasmid p180 containing the GCN4-lacZ reporter was described (Hinnebusch, 1985), as were luciferase reporter plasmids FJZ526, FJZ683, FJZ685, FJZ688, and FJZ690 (Sen et al., 2016).
 
-## Polysome profile analysis
+### Polysome profile analysis
 
 For strains BY4741 (WT), H4520 (tma64∆/tma20∆), and 4051 (tma64∆), log-phase cultures of A600 = 0.5–0.6 were harvested by centrifugation and whole cell extracts (WCEs) were prepared by vortexing the cell pellet with two volumes of glass beads in ice cold 1X breaking buffer (20 mM Tris-HCl (pH 7.5), 50 mM KCl, 10 mM MgCl2, 1 mM DTT, 200 μg/mL heparin, 50 μg/mL cycloheximide (CHX), and 1 Complete EDTA-free Protease Inhibitor cocktail Tablet (Roche)/50 mL buffer). Twenty A260 units of WCEs were layered on a pre-chilled 10–50% sucrose gradient prepared in 1X breaking buffer using a BioComp Gradient Master (BioComp Instruments), according to the manufacturer’s instructions, and centrifuged at 40,000 rpm for 2 hr at 4°C in a SW41Ti rotor (Beckman). Continuous A260 scanning of the fractionated gradient was conducted using the BioComp Gradient Station (Biocomp Instruments, Canada). Analysis of strains H2994 (WT) and JVY09 (rps26∆∆) was conducted identically except that log-phase cultures were harvested at A600 = 0.4–0.5, and WCEs were layered on a pre-chilled 5–45% sucrose gradient.
 
-## Preparation of ribosome footprint libraries
+### Preparation of ribosome footprint libraries
 
 Ribosome profiling and RNA-seq analysis were conducted in parallel, primarily as described previously (Zeidan et al., 2018), using isogenic strains BY4741 (WT), H4520 (tma64∆/tma20∆), and 4051 (tma64∆); or H2994 (WT) and JVY09 (rps26∆∆), or 249 (gcn4∆) with two biological replicates performed for each genotype. Strains BY4741 and H4520 were grown at 30°C in synthetic complete medium (SC) to log-phase (A600 = 0.5–0.6). In parallel, BY4741 was grown in synthetic complete media lacking isoleucine and valine (SC-Ile/Val) to log-phase (A600 = 0.5–0.6) and treated with sulfometuron methyl (SM) at 1 µg/mL for 25 min to induce eIF2α phosphorylation. Cells were fast-filtered and snap-frozen in liquid nitrogen, and lysed in a freezer mill in the presence of lysis buffer (20 mM Tris (pH 8), 140 mM KCl, 1.5 mM MgCl2, 1%Triton X-100, 500 μg/mL CHX). For ribosome-protected mRNA fragment (RPF) library preparation, 60 A260 units of cell lysates were digested with RNase I (Ambion; AM2294) at 15U per A260 unit for 1 hr at room temperature (25°C) on a Thermomixer at 700 rpm; and then resolved by sedimentation through a 10–50% sucrose gradient to isolate 80S monosomes. RPFs were purified from monosomes using hot phenol-chloroform, and 25–34 nt fragments were size-selected after electrophoresis through a 15% TBE-Urea gel. The purified RPFs were ligated to universal miRNA cloning linker (Synthesized by Integrated DNA Technologies) using truncated T4 RNA ligase 2 (New England Biolabs; M0242L) after a dephosphorylation reaction carried out with T4 Polynucleotide kinase (PNK; New England Biolabs, M0201L). The ligated RPF products were size-selected after electrophoresis on a 10% TBE-Urea gel, reverse-transcribed using Superscript III (Invitrogen; 18080044), size-selected again, and circularized using CircLigase ssDNA Ligase (Epicentre; CL4111K). Ribosomal RNA contamination was reduced by oligonucleotide subtraction hybridization. Each ‘subtracted’ library was amplified by PCR to add unique six nt indexes and common Illumina primer and flow cell binding regions. Quality of the libraries was assessed with a Bioanalyzer using the High Sensitivity DNA Kit (Agilent 5067–4626) and quantified by Qubit. Sequencing was done on an Illumina HiSeq system at the NHLBI DNA Sequencing and Genomics Core at NIH (Bethesda, MD).
 
@@ -162,30 +605,30 @@ Strains BY4741 and 4051 were grown at 30°C in SC to log-phase (A600 = 0.5–0
 
 Strain 249 was grown at 30°C in SC media to log-phase (A600 = 0.5–0.6), and in parallel cultured in SC-Ile/Val to log-phase (A600 = 0.5–0.6) and treated with SM at 1 µg/mL for 25 min to induce eIF2α phosphorylation. RPF sequencing libraries were constructed with 35 A260 units of cell lysates as described above for RNA sequencing library preparation using the modified protocol except that for RPF library preparation, rRNA contamination was reduced by oligonucleotide subtraction hybridization. For RNA sequencing libraries, total RNA extraction was carried out using a miRNeasy Mini Kit (Qiagen; 217004) and library construction was carried by the NHLBI core sequencing facility using the TruSeq Stranded mRNA Library Prep Kit (Illumina).
 
-## Alignment of RPF and RNA reads and visualization in a genome browser
+### Alignment of RPF and RNA reads and visualization in a genome browser
 
 As described earlier (Martin-Marcos et al., 2017), Illumina sequencing reads were trimmed, and the trimmed FASTA sequences were aligned to the S. cerevisiae ribosomal database using Bowtie (Langmead et al., 2009). The non-rRNA reads (unaligned reads) were then mapped to the S. cerevisiae genome using TopHat (Trapnell et al., 2009). Only uniquely mapped reads from the final genomic alignment were used for subsequent analyses. Wiggle files were generated as described previously (Zeidan et al., 2018) and visualized using Integrative Genomics Viewer (IGV 2.4.14, http://software.broadinstitute.org/software/igv/) (Robinson et al., 2011). Wiggle tracks shown are normalized according to the total number of mapped reads. To visualize the 80S ribosomes stalled ~30 nt upstream of stop codon, only uniquely mapped reads were aligned to stop codons as described previously (Ingolia et al., 2014). The normalized reads were used to generate plots in Microsoft excel. Analysis of RNA sequencing libraries for strains BY4741 and 4051, and RPF sequencing libraries for strain 249, was conducted identically except that PCR duplicates were removed from trimmed sequencing reads and these sequences were aligned to the S. cerevisiae ribosomal database using Bowtie to remove ncRNA (Langmead et al., 2009). RNA sequencing libraries of strain 249 were mapped to the genome using Hisat2 available at GitHub https://github.com/DaehwanKimLab/hisat2; Gaikwad, 2021; copy archived at swh:1:rev:1ec47602507e7237ab85603255b7cfa954763a66.
 
-## Differential gene expression analysis of ribosome profiling data
+### Differential gene expression analysis of ribosome profiling data
 
 Statistical analysis of changes in mRNA, RPFs, or TE values between two biological replicates from two genotypes or culture conditions being compared was conducted using DESeq2 (Love et al., 2014), excluding any genes with less than 10 total mRNA reads in the four samples (of two replicates each) combined. DESeq2 is well-suited to identifying changes in mRNA or RPF expression, or TEs, with very low incidence of false positives using results from only two highly correlated biological replicates for each of the strains/conditions being compared (Zhang et al., 2014; Lamarre et al., 2018). Briefly, DESeq2 pools information from the thousands of genes analyzed to model count variances for genes of similar expression levels, which are used in a generalized linear model (GLM) to identify expression changes and place confidence intervals on the magnitude of changes, and exclude genes with aberrantly high variability. Transcriptional and translational changes are analyzed together in a GLM by including library type (mRNA-seq or Ribo-seq) as one of the variables, in addition to genotype/condition, in a multi-factor design. TE emerges as the effect of Ribo-seq library type against the mRNA-seq baseline, and significant interactions of TE with the genotype/condition indicate translational control (Ingolia, 2016). The R script employed for DESeq2 analysis of TE changes can be found on Github (https://github.com/hzhanghenry/RiboProR; Kim et al., 2019).
 
-## Analysis of uORF translation using ribosome profiling data
+### Analysis of uORF translation using ribosome profiling data
 
 Relative ribosome occupancies (RRO) of translated uORFs were calculated as described previously (Martin-Marcos et al., 2017). Briefly, translated uORFs in annotated 5′-UTRs were identified using the yassour-uorf program (Brar et al., 2012), wherein the ratio of RPF counts at the +1 position (uORF start codon) to −1 position was calculated for all putative uORFs initiating with either AUG or near-cognate codons. All uORFs with +1 /−1 RPF ratios > 4, combined RPF counts at the +1 and −1 positions >14, and >50% of the RPF counts in the zero frame with respect to the start codon were selected for further analysis. These selection criteria were applied to multiple ribosome profiling datasets to obtain a set of 6061 translated uORFs of at least three codons in length, including 564 AUG-initiated and 5497 near-cognate-initiated uORFs. The uORF identification tool RibORF (Ji et al., 2015) was applied as a second filter, which is based on three nucleotide periodicity and uniformity of read distribution across uORF codons, using a probability threshold of 0.5, to obtain a final list of 2721 uORFs with evidence of translation in the profiling datasets from which they were first identified using the yassour-uorf program. A bed file containing the sequence coordinates of the 2721 uORFs was combined with bed files containing the coordinates of the 5’UTR, main CDS, and 3’UTR of each gene, and used to obtain RPF counts for the uORFs and associated main CDS in each strain examined, excluding the first and last nucleotide triplets of the 5’UTRs, the first and last codons of the uORFs, and the first 20 codons of the CDS. The RRO for each uORF was calculated by dividing RPF counts in the uORF by RPF counts of the main CDS; and statistical analysis of changes in RRO values between the two biological replicates of two different genotypes was conducted using DESeq2 (Love et al., 2014), excluding uORFs with mean RPF counts <2 or mean CDS RPF counts <32 in the four samples (of two replicates each) combined. A similar analysis of RRO values was performed on a set of evolutionarily conserved uORFs identified by McManus et al. (Spealman et al., 2018).
 
-## Statistical and gene ontology analyses
+### Statistical and gene ontology analyses
 
 All notched box-plots were constructed using a web-based tool at http://shiny.chemgrid.org/boxplotr/ and their significance was accessed by the Mann-Whitney U test computed using the R Stats package in R. Spearman’s correlation analysis was conducted using the online tool at https://www.wessa.net/rwasp_spearman.wasp. Gene ontology (GO) categories determined for each set of genes were identified using ‘g:Profiler’ (https://biit.cs.ut.ee/gprofiler/gost). Enrichment of nucleotides upstream and downstream of the start codon was determined by Weblogo analysis (Crooks et al., 2004). Hierarchical cluster analysis of TE changes in mutants was conducted with the R heatmap.2 function from the R ‘gplots’ library, using the default hclust hierarchical clustering algorithm. The Kolmogorov-Smirnov test, used to evaluate the cumulative distributions in cumulative distribution and frequency distribution plots, was computed using the R Stats package in R. Significance of gene set overlaps in Venn diagrams was evaluated with the hypergeometric distribution by Fisher's exact test computed in R using the GeneOverlap package. Pearson’s correlation and student’s t-tests analysis were done using the formula imbedded in Microsoft Excel. Scatterplots displaying correlations between read counts from replicates of ribosome profiling or RNA-seq experiments, and volcano plots, were created using the scatterplot function in Microsoft Excel. Cumulative distribution and frequency distribution plots were generated using the frequency function in Microsoft excel. Smoothed scatterplots used to examine the correlation between RRO changes in the tma∆∆ mutant versus WT cells were computed and plotted using the ggplot2 package in R.
 
-## Data resources for mRNA attributes
+### Data resources for mRNA attributes
 
 Yeast 5’UTR and CDS lengths were taken from Pelechano et al., 2013, WT mRNA steady-state levels (in molecules per dry cellular weight - pgDW) were obtained from Lahtvee et al., 2017, and steady-state mRNA half-lives were obtained from Neymotin et al., 2014. The AUG context score (context score) (Miyasaka, 1999) was calculated as AUGCAI = (w-3 x w-2 x w-1 x w+4)1/4 where wi is the fractional occurrence of that particular base, normalized to the most prevalent base, present in the ith position of the context among the ~270 most highly expressed yeast genes, taken from the matrix of frequencies and relative adaptiveness (w) of the nucleotide in the AUG context of this group of ~270 reference genes (Zur and Tuller, 2013).
 
-## Assaying GCN4-lacZ expression
+### Assaying GCN4-lacZ expression
 
 Specific activities of β-galactosidase activity in WCEs were determined as previously described (Moehle and Hinnebusch, 1991). Enzyme activities are expressed in units of nmoles of o-nitrophenyl-β-D-galactopyranoside (ONPG) cleaved per min per mg of total protein.
 
-## Luciferase assays
+### Luciferase assays
 
 Overnight-grown cultures of transformants of strains BY4741 (WT) and H4520 (tma64∆/tma20∆) harboring the appropriate reporter plasmids were diluted and grown for approximately three cell doublings in SC-Ura at 30°C. Three mL of exponentially growing cells were lysed with glass beads in 400 µL of ice-cold lysis buffer (1× PBS containing one Complete EDTA-free Protease Inhibitor Cocktail Tablet (Roche)/50 mL). WCEs were cleared by centrifugation and luciferase activity (relative light units, RLUs) was measured in 5 µL of 1:10 diluted WCEs using the Promega Luciferase Assay System and a luminometer (Berthold Technologies). Undiluted WCEs were used for total protein concentration measurements using the Bradford Reagent (BioRad) and known amounts of bovine serum albumin as standards. RLUs were normalized by the total protein amounts.

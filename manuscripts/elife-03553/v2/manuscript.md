@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.03553.001 Cytidine deaminases are single stranded DNA mutators diversifying antibodies and restricting viral infection. Improper access to the genome leads to translocations and mutations in B cells and contributes to the mutation landscape in cancer, such as kataegis. It remains unclear how deaminases access double stranded genomes and whether off-target mutations favor certain loci, although transcription and opportunistic access during DNA repair are thought to play a role. In yeast, AID and the catalytic domain of APOBEC3G preferentially mutate transcriptionally active genes within narrow regions, 110 base pairs in width, fixed at RNA polymerase initiation sites. Unlike APOBEC3G, AID shows enhanced mutational preference for small RNA genes (tRNAs, snoRNAs and snRNAs) suggesting a putative role for RNA in its recruitment. We uncover the high affinity of the deaminases for the single stranded DNA exposed by initiating RNA polymerases (a DNA configuration reproduced at stalled polymerases) without a requirement for specific cofactors. DOI: http://dx.doi.org/10.7554/eLife.03553.001
+Cytidine deaminases are single stranded DNA mutators diversifying antibodies and restricting viral infection. Improper access to the genome leads to translocations and mutations in B cells and contributes to the mutation landscape in cancer, such as kataegis. It remains unclear how deaminases access double stranded genomes and whether off-target mutations favor certain loci, although transcription and opportunistic access during DNA repair are thought to play a role. In yeast, AID and the catalytic domain of APOBEC3G preferentially mutate transcriptionally active genes within narrow regions, 110 base pairs in width, fixed at RNA polymerase initiation sites. Unlike APOBEC3G, AID shows enhanced mutational preference for small RNA genes (tRNAs, snoRNAs and snRNAs) suggesting a putative role for RNA in its recruitment. We uncover the high affinity of the deaminases for the single stranded DNA exposed by initiating RNA polymerases (a DNA configuration reproduced at stalled polymerases) without a requirement for specific cofactors.
 
 ## Introduction
 
@@ -28,35 +28,76 @@ In addition to the sporadic off-target mutations induced by AID in B cells, APOB
 
 ## Results
 
-## AID and APOBEC3G extensively mutate the yeast genome
+### AID and APOBEC3G extensively mutate the yeast genome
 
-Overexpression of cytidine deaminases in yeast leads to the accumulation of genome wide mutations, which can be monitored by the number of cells resistant to the arginine analogue L-Canavinine through inactivation of the arginine permease CAN1 gene (
+Overexpression of cytidine deaminases in yeast leads to the accumulation of genome wide mutations, which can be monitored by the number of cells resistant to the arginine analogue L-Canavinine through inactivation of the arginine permease CAN1 gene (Figure 1A). We have previously shown that such overexpression leads to an uracil-DNA glycosylase (UNG) dependent enrichment of kataegic mutations through deamination of cytosines on single stranded DNA intermediates during the repair of double strand breaks (Taylor et al., 2013). To assess the distribution of isolated mutations, we obtained a dataset largely devoid of kataegic mutations by expressing the deaminases in ungΔ cells. Overexpression of AID* (an AID hyperactive mutant [Wang et al., 2009; Taylor et al., 2013]) in haploid cells results in highly elevated frequency of Canavinine resistant colonies (164 × 10−6), but relatively few mutations, averaging 61 single nucleotide variations (SNVs) per genome (Figure 1A,B). Diploid cells can overcome this limit as they avoid the reduction in fitness costs caused by accumulated mutation (Waters and Parry, 1973; Lada et al., 2013). Our experimental setting confirms this effect; whereas the mutation frequency is reduced almost 40-fold due to the requirement to inactivate both CAN1 alleles, the genome wide SNV increase over 10-fold, averaging 796 SNVs per genome for AID* and 592 SNVs for transformants expressing sA3G* (a hyperactive mutant of the catalytic domain of human APOBEC3G [Wang et al., 2009]; Figure 1A,B). For comparison, a database of mutations at C•G pairs was generated using the alkylating agent ethyl methane sulfonate (EMS). Alkylation of guanosines promotes base pairing with thymine, thereby causing G > A transitions during replication. Overnight exposure of diploid cells to 0.2% EMS resulted in increased mutation frequency and SNV load per genome similar to that elicited by the deaminases (Figure 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig1-v2.jpg)
 
-**Figure 1.:** ung1Δ diploid yeast.(A) Mutation frequency (expressed as the number of canavinine resistant colonies per 106 ) at the CAN1 locus in ung1Δ haploid yeast (data in part from Taylor et al., 2013) and ung1Δ/ung1Δ diploid yeast transformants expressing AID/APOBEC proteins or upon treatment with 0.2% EMS. Red bars indicate the median mutation frequency (n = 12–126 colonies). (B) Genome wide SNV number in ung1Δ haploid and ung1Δ/Δ diploid yeast transformants expressing AID/APOBEC proteins or with EMS treatment. Red bars indicate the median mutation per genome (n = 25–50 independent clones). (C) Sequence context of mutations at G•C pairs in diploid yeast genomes (indicated as mutations at cytosines) exposed to AID*, sA3G* or EMS mutagenesis. The numbers indicate total mutations per dataset, with the height of colour bars proportional to the frequency of each base found in the vicinity of a mutation. (D) Distribution of mutations per diploid yeast chromosome expressed as the number of mutations per chromosome in each independent genome against the chromosome length. The bars represent the projected linear trend for mutations at C (in black) or G (in red).DOI: http://dx.doi.org/10.7554/eLife.03553.003
+**Figure 1.:** (A) Mutation frequency (expressed as the number of canavinine resistant colonies per 106 ) at the CAN1 locus in ung1Δ haploid yeast (data in part from Taylor et al., 2013) and ung1Δ/ung1Δ diploid yeast transformants expressing AID/APOBEC proteins or upon treatment with 0.2% EMS. Red bars indicate the median mutation frequency (n = 12–126 colonies). (B) Genome wide SNV number in ung1Δ haploid and ung1Δ/Δ diploid yeast transformants expressing AID/APOBEC proteins or with EMS treatment. Red bars indicate the median mutation per genome (n = 25–50 independent clones). (C) Sequence context of mutations at G•C pairs in diploid yeast genomes (indicated as mutations at cytosines) exposed to AID*, sA3G* or EMS mutagenesis. The numbers indicate total mutations per dataset, with the height of colour bars proportional to the frequency of each base found in the vicinity of a mutation. (D) Distribution of mutations per diploid yeast chromosome expressed as the number of mutations per chromosome in each independent genome against the chromosome length. The bars represent the projected linear trend for mutations at C (in black) or G (in red).
 
 When interrogating the mutations (99.8% of which occur at C:G pairs; A:T mutations were excluded from further analysis; all detected mutations are given in Supplementary file 1), the expected flanking sequence context of WRC was found for AID* and YCC for sA3G* (Figure 1C). In stark contrast, no consensus motif was observed in the EMS data, highlighting the random nature of this mutagenesis. In all three datasets SNVs appeared distributed throughout the genome, with all chromosomes displaying similar overall mutation that is strongly correlated with chromosome length, ruling out major biases in the targeting of mutations (Spearman's correlation coefficient for AID*: ρ > 0.65; for sA3G*: ρ > 0.55; for EMS: ρ > 0.68; Figure 1D).
 
-## Deaminase induced mutations are highly enriched in a small fraction of the genome
+### Deaminase induced mutations are highly enriched in a small fraction of the genome
 
-Whilst mutations are equally distributed amongst chromosomes, they are not uniformly arranged along the chromosome. By combining the SNVs from independent transformants, regions can be observed in AID* and sA3G* genomes which show pronounced mutational peaks (
+Whilst mutations are equally distributed amongst chromosomes, they are not uniformly arranged along the chromosome. By combining the SNVs from independent transformants, regions can be observed in AID* and sA3G* genomes which show pronounced mutational peaks (Figure 2A). Only one such region of high mutation density is seen in the EMS treated clones, that of the CAN1 gene. The presence of multiple loci with high mutation density is therefore a deaminase specific process.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig2-v2.jpg)
 
-**Figure 2.:** (A) Radial histograms depict the density (Z-score) of pooled mutations for each dataset in 2 kb overlapping genomic segments along each chromosome. The CAN1 locus is highlighted in red. The peak highlighted in cyan is further enlarged in panels (B), (C) and (D). (B) Mutation densities along ChrII in AID* (red), sA3G* (black) and EMS (blue) treated genomes, expressed as the Z-score of mutation density per dataset (y-axis) along chromosome II (x-axis; 200 bp bin size). The region shadowed in cyan is magnified in (C). (C) Regions of high mutation density identify narrow mutation enriched regions (MELs), shown as green boxes for AID* and purple boxes for sA3G* in the bottom panel. Horizontal lines represent a single genome with each non-clonal mutation at C or G indicated by a dot (black or red respectively). Regions in Chr II and Chr X containing mutation enriched loci shown at the same scale, with the genomic coordinates indicated. (D) Mutations in the pronounced MEL on ChrII (highlighted cyan in panels (A), (B) and (C) shown in green for AID* and purple for sA3G*. Coordinates are indicated. (E) Overlap of detected MELs in AID*, sA3G* and EMS datasets. (F) Distribution of MELs width with the median indicated for AID* and sA3G* mutated genomes. (G) Fraction of the total deaminase mutations in MELs (black boxes) relative to genomic coverage of MELs. (H) Distribution of distances between AID and A3G mutable motifs within MELs vs genome wide mutable motif distances.DOI: http://dx.doi.org/10.7554/eLife.03553.004
+**Figure 2.:** (A) Radial histograms depict the density (Z-score) of pooled mutations for each dataset in 2 kb overlapping genomic segments along each chromosome. The CAN1 locus is highlighted in red. The peak highlighted in cyan is further enlarged in panels (B), (C) and (D). (B) Mutation densities along ChrII in AID* (red), sA3G* (black) and EMS (blue) treated genomes, expressed as the Z-score of mutation density per dataset (y-axis) along chromosome II (x-axis; 200 bp bin size). The region shadowed in cyan is magnified in (C). (C) Regions of high mutation density identify narrow mutation enriched regions (MELs), shown as green boxes for AID* and purple boxes for sA3G* in the bottom panel. Horizontal lines represent a single genome with each non-clonal mutation at C or G indicated by a dot (black or red respectively). Regions in Chr II and Chr X containing mutation enriched loci shown at the same scale, with the genomic coordinates indicated. (D) Mutations in the pronounced MEL on ChrII (highlighted cyan in panels (A), (B) and (C) shown in green for AID* and purple for sA3G*. Coordinates are indicated. (E) Overlap of detected MELs in AID*, sA3G* and EMS datasets. (F) Distribution of MELs width with the median indicated for AID* and sA3G* mutated genomes. (G) Fraction of the total deaminase mutations in MELs (black boxes) relative to genomic coverage of MELs. (H) Distribution of distances between AID and A3G mutable motifs within MELs vs genome wide mutable motif distances.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.03553.005
-
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** (A) Strand distribution of mutations within AID* and sA3G* MEL regions. MELs comprising a single base were excluded. (B) Strand distribution of mutations within MEL regions in relation to the direction of transcription of the associated gene. (C) Strand distribution of WRC and YCC deaminase motifs within MEL regions and their flanking 50 base pairs.DOI: http://dx.doi.org/10.7554/eLife.03553.006
+**Figure 2—figure supplement 2.:** (A) Strand distribution of mutations within AID* and sA3G* MEL regions. MELs comprising a single base were excluded. (B) Strand distribution of mutations within MEL regions in relation to the direction of transcription of the associated gene. (C) Strand distribution of WRC and YCC deaminase motifs within MEL regions and their flanking 50 base pairs.
 
 A more detailed look at regions with high density of mutations reveals narrow peaks of accumulated mutation that are in many cases common to both deaminases (Figure 2B), with the most prominent peaks resulting from the proximity of several regions of densely targeted loci. These peaks represent high mutation densities within a bin size of 150 base pairs but surprisingly reflect the accumulation of mutations focussed to very narrow intervals within targeted loci (Figure 2C,D).
 
-To further delineate mutation favoured loci, we defined regions of high mutation density by identifying overlapping 150 base pair fragments containing higher than expected mutation loads (minimum of six mutations per fragment, originating from three independent transformants). We identify 1227 and 568 such mutation-enriched loci (MELs) in the AID* and sA3G* treated genomes, in contrast to just 1 obtained for EMS treatment (overlapping the body of the CAN1 gene and hence due to canavinine selection). On average 35 such MELs would be expected for simulated datasets of equivalent mutation loads (Figure 2E and Supplementary file 2). MELs span remarkably narrow regions, with a window width averaging 110 bp for AID* and 71bp for sA3G* (Figure 2F), and with almost 41% of all AID* and 22% of all sA3G* induced mutations localised to these regions (Table 1 and Supplementary file 2). In total, 25,618 of the combined 72,196 AID* and sA3G* mutations are occurring in MELs which account for just 1.5% of the genome (Figure 2G).10.7554/eLife.03553.007Table 1.Deaminase induced Mutation Enriched Loci (MEL) in yeast genomesDOI: http://dx.doi.org/10.7554/eLife.03553.007ObservedSimulatedAID*sA3G*EMSAID*sA3G*EMSMELs1227568150213% MEL mutation40.721.60.240.750.390.14
+To further delineate mutation favoured loci, we defined regions of high mutation density by identifying overlapping 150 base pair fragments containing higher than expected mutation loads (minimum of six mutations per fragment, originating from three independent transformants). We identify 1227 and 568 such mutation-enriched loci (MELs) in the AID* and sA3G* treated genomes, in contrast to just 1 obtained for EMS treatment (overlapping the body of the CAN1 gene and hence due to canavinine selection). On average 35 such MELs would be expected for simulated datasets of equivalent mutation loads (Figure 2E and Supplementary file 2). MELs span remarkably narrow regions, with a window width averaging 110 bp for AID* and 71bp for sA3G* (Figure 2F), and with almost 41% of all AID* and 22% of all sA3G* induced mutations localised to these regions (Table 1 and Supplementary file 2). In total, 25,618 of the combined 72,196 AID* and sA3G* mutations are occurring in MELs which account for just 1.5% of the genome (Figure 2G).
+
+**Table 1.**
+ Deaminase induced Mutation Enriched Loci (MEL) in yeast genomes
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Observed</th>
+      <th colspan="3">Simulated</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>AID*</th>
+      <th>sA3G*</th>
+      <th>EMS</th>
+      <th>AID*</th>
+      <th>sA3G*</th>
+      <th>EMS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MELs</td>
+      <td>1227</td>
+      <td>568</td>
+      <td>1</td>
+      <td>50</td>
+      <td>21</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>% MEL mutation</td>
+      <td>40.7</td>
+      <td>21.6</td>
+      <td>0.24</td>
+      <td>0.75</td>
+      <td>0.39</td>
+      <td>0.14</td>
+    </tr>
+  </tbody>
+</table>
 
 Both AID and APOBEC3G target cytosines for deamination within a specific sequence context, leading to the mutation hotspots associated with antibody diversification and the recurrent mutations at CCC trinucleotides observed in HIV-1 genomes during the evolution of viral clades and which accumulate in viral genomes from infected individual (Kijak et al., 2008). We therefore analysed the distribution of AID and APOBEC3G preferred sequence context in the yeast genome and find that the densities of AID and APOBEC3G motifs (WRC and YCC respectively) show no enrichment within the highly targeted regions compared to the remaining genome (Figure 2H). Therefore, the accumulation of mutations in MELs is not a consequence of localised clustering of mutable motifs.
 
@@ -66,29 +107,29 @@ Re-analysis of deaminase mutations we previously reported in haploid yeast (Tayl
 
 In conclusion, deaminases preferentially target narrow focussed regions throughout the genome independent of the sequence density of deaminase targets.
 
-## MELs exclusively overlap gene promoters
+### MELs exclusively overlap gene promoters
 
-There is a well-recognised relationship between AID induced mutations and transcription both in B cells at immunoglobulin genes, and for off-target loci, with mutations preferentially accumulating towards the promoter proximal region of the transcription unit (
+There is a well-recognised relationship between AID induced mutations and transcription both in B cells at immunoglobulin genes, and for off-target loci, with mutations preferentially accumulating towards the promoter proximal region of the transcription unit (Pasqualucci et al., 2001; Rada and Milstein, 2001). The transcription link is interpreted as a mechanism that facilitates access of AID due to the generation of single stranded DNA intermediates (Chaudhuri et al., 2003). We therefore wondered whether AID induced MELs would be found associated with transcription. Contrary to expectation, enrichment analysis reveals that both AID* and sA3G* MELs are depleted within the body of RNA polymerase II (RNAP II) transcribed mRNA genes and rather that the deaminase induced mutations are preferentially associated with promoter regions, with over 76% of deaminase targeted hotspots found at promoters, compared to just 24% for simulated fragments (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig3-v2.jpg)
 
-**Figure 3.:** (A) Proportion of promoters, gene bodies, intergenic regions and replication origins (ARS) harbouring a MEL (green) or not (grey) for AID* and sA3G* datasets vs the expected distribution (sim.AID*sA3G*) determined by Monte Carlo simulation of equivalent sized fragments for each MEL dataset distributed randomly across the genome. (B) Density of mutations in relation to their distance to the nearest transcription start site (TSS) of mRNA (RNAP II) transcripts compared to the density relative to transcription termination sites (TTS). Data includes all mutations in addition to MELs. (C) Deaminase mutations relative to the TATA or TATA-like element for each RNAP II promoters (Rhee and Pugh, 2012) compared to the mutation distance distribution aligned to the transcription start site (TSS). (D) Proportion of AID* or sA3G* mutable motifs within RNAP II promoter regions, centred on the TATA-elements (Rhee and Pugh, 2012). Total number of mutations for each dataset is shown at each position (black line). (E) Relative transcription rates (see methods) at RNAP II promoters targeted by MELs compared to relative transcription rates for all RNAP II genes in gal induced conditions (García-Martínez et al., 2004). (F) Relative enrichment of RNAP II and RNAP II CTD phosphorylation (S2P, S5P and S7P) in promoters containing AID* (red) and sA3G* (black) MELs and all RNAP II promoters (grey) ranked according to transcriptional activity (García-Martínez et al., 2004).DOI: http://dx.doi.org/10.7554/eLife.03553.008
+**Figure 3.:** (A) Proportion of promoters, gene bodies, intergenic regions and replication origins (ARS) harbouring a MEL (green) or not (grey) for AID* and sA3G* datasets vs the expected distribution (sim.AID*sA3G*) determined by Monte Carlo simulation of equivalent sized fragments for each MEL dataset distributed randomly across the genome. (B) Density of mutations in relation to their distance to the nearest transcription start site (TSS) of mRNA (RNAP II) transcripts compared to the density relative to transcription termination sites (TTS). Data includes all mutations in addition to MELs. (C) Deaminase mutations relative to the TATA or TATA-like element for each RNAP II promoters (Rhee and Pugh, 2012) compared to the mutation distance distribution aligned to the transcription start site (TSS). (D) Proportion of AID* or sA3G* mutable motifs within RNAP II promoter regions, centred on the TATA-elements (Rhee and Pugh, 2012). Total number of mutations for each dataset is shown at each position (black line). (E) Relative transcription rates (see methods) at RNAP II promoters targeted by MELs compared to relative transcription rates for all RNAP II genes in gal induced conditions (García-Martínez et al., 2004). (F) Relative enrichment of RNAP II and RNAP II CTD phosphorylation (S2P, S5P and S7P) in promoters containing AID* (red) and sA3G* (black) MELs and all RNAP II promoters (grey) ranked according to transcriptional activity (García-Martínez et al., 2004).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** Proportion of AID* or sA3G* mutable motifs around replication origins (ARS), depicted as in Figure 3D. Total number of mutations for each dataset is shown for at position (black line, scale as in Figure 3D).DOI: http://dx.doi.org/10.7554/eLife.03553.009
+**Figure 3—figure supplement 1.:** Proportion of AID* or sA3G* mutable motifs around replication origins (ARS), depicted as in Figure 3D. Total number of mutations for each dataset is shown for at position (black line, scale as in Figure 3D).
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** Mutations are grouped according to the TAF1 enrichment status (data from Rhee and Pugh, 2012) with the line colour depicting the mutator (AID*, red; sA3G*, black; EMS, blue). Data includes all mutations in addition to MELs.DOI: http://dx.doi.org/10.7554/eLife.03553.010
+**Figure 3—figure supplement 2.:** Mutations are grouped according to the TAF1 enrichment status (data from Rhee and Pugh, 2012) with the line colour depicting the mutator (AID*, red; sA3G*, black; EMS, blue). Data includes all mutations in addition to MELs.
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** Enrichment of (A) deaminase, (B) serine 5 phosphorylated RNAPII and (C) Histone H3 at MEL promoters, unmutated promoters and intergenic regions. Enrichment is shown relative to input chromatin (B and C) or further normalised to control cell lines (A). Data from 2–3 independent experiments.DOI: http://dx.doi.org/10.7554/eLife.03553.011
+**Figure 3—figure supplement 3.:** Enrichment of (A) deaminase, (B) serine 5 phosphorylated RNAPII and (C) Histone H3 at MEL promoters, unmutated promoters and intergenic regions. Enrichment is shown relative to input chromatin (B and C) or further normalised to control cell lines (A). Data from 2–3 independent experiments.
 
 ![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig3-figsupp4-v2.jpg)
 
-**Figure 3—figure supplement 4.:** (A) Frequency of each yeast transcription factor at individual promoters as described in (Venters et al., 2011) (blue dots) compared with the frequency that the transcription factor appears in the promoter of genes containing AID* (red dots) and sA3G* (black dots) MELs. Factors are ordered according to number of binding sites in all promoters. Basal transcription factors are the most commonly associated with deaminase targeted promoters (labelled). (B) Transcription rates of genes grouped according to Spt16 promoter occupancy and presence of MELs. (C) List of transcription factors found to vary in occupancy at MEL targeted promoters vs their overall frequency at all yeast promoters (Venters dataset). Transcription factors showing ±10% variation which are present in at least 25% of MELs are listed.DOI: http://dx.doi.org/10.7554/eLife.03553.012
+**Figure 3—figure supplement 4.:** (A) Frequency of each yeast transcription factor at individual promoters as described in (Venters et al., 2011) (blue dots) compared with the frequency that the transcription factor appears in the promoter of genes containing AID* (red dots) and sA3G* (black dots) MELs. Factors are ordered according to number of binding sites in all promoters. Basal transcription factors are the most commonly associated with deaminase targeted promoters (labelled). (B) Transcription rates of genes grouped according to Spt16 promoter occupancy and presence of MELs. (C) List of transcription factors found to vary in occupancy at MEL targeted promoters vs their overall frequency at all yeast promoters (Venters dataset). Transcription factors showing ±10% variation which are present in at least 25% of MELs are listed.
 
 Initiation of replication also transiently generates single stranded DNA at defined locations. However, there is no enrichment of mutated hotspots associated with replication origins (ARS) (Figure 3A). Although this could reflect the relative depletion of mutable motifs within ARS core consensus sequence, we find similar densities of mutable cytosines within the broader sequence context encompassing 200–300 base pairs nucleosome depleted regions associated with functional origins (Figure 3—figure supplement 1), suggesting that single strand availability provided by melting the DNA by the ORC complex might not be sufficient to efficiently target the deaminases.
 
@@ -100,29 +141,27 @@ Supporting the idea that the deaminases preferentially mutate promoters due to t
 
 In summary, cytidine deaminases mutate at specific loci through the yeast genome, predominantly within active gene promoter regions.
 
-## AID targets promoter regions of small RNAP III genes
+### AID targets promoter regions of small RNAP III genes
 
-In B cells, AID is found in association with components of the transcription machinery such as SPT5 and SPT6, and RNAP II itself (
+In B cells, AID is found in association with components of the transcription machinery such as SPT5 and SPT6, and RNAP II itself (Nambu et al., 2003; Pavri et al., 2010; Okazaki et al., 2011), therefore we wondered whether the enrichment of mutations associated with promoters might be a feature restricted to RNAP II dependent genes. Analysis of mutations in highly transcribed non-RNAP II dependent transcripts, such as RNAP III dependent tRNA genes, astonishingly reveals an even more pronounced enrichment of targeted hotspots with 78% of the genomic regions corresponding to tRNAs harbouring repeated mutations. While we find that both sA3G* and AID* MELs overlap with tRNAs, AID* MELs are disproportionately overrepresented, with 228 of 275 tRNA genes being highly targeted (Figure 4A). Furthermore, aligning of mutations within 250 base pairs of the TSS of tRNA genes shows that all occur within the tRNA gene body, which is also the site of RNAP III initiation (Figure 4B). As in the case of mRNA promoters, the mutations in tRNAs are highly focussed to narrow hotspots that span the site where loading of the polymerase is thought to occur (Figure 4C).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig4-v2.jpg)
 
-**Figure 4.:** (A) Number of tRNA genes harbouring (green) an AID* or sA3G* MEL compared with expected number from Monte Carlo simulations. (B) Density of mutations in relation to the transcription start site (TSS) of tRNA genes. Mutations within the 500 base pair interval centred at the TSS are included. (C) Mutation frequency in promoters of mRNA genes (within a window 500 bp upstream and 50 bp downstream of the TSS) compared to the frequency of mutations in the promoters of tRNA (550 bp window centred on the middle of the tRNA gene), snoRNAs and snRNA genes (550 bp window as for mRNA genes). mRNA genes are binned according to transcription rate as in Figure 3. Both RNAP II and III driven snoRNAs are included. (D) Example of MELs in ChrIV and ChrXV corresponding to tRNA tI(UAU)D and tG(CCC)O, depicted as in Figure 3.DOI: http://dx.doi.org/10.7554/eLife.03553.013
+**Figure 4.:** (A) Number of tRNA genes harbouring (green) an AID* or sA3G* MEL compared with expected number from Monte Carlo simulations. (B) Density of mutations in relation to the transcription start site (TSS) of tRNA genes. Mutations within the 500 base pair interval centred at the TSS are included. (C) Mutation frequency in promoters of mRNA genes (within a window 500 bp upstream and 50 bp downstream of the TSS) compared to the frequency of mutations in the promoters of tRNA (550 bp window centred on the middle of the tRNA gene), snoRNAs and snRNA genes (550 bp window as for mRNA genes). mRNA genes are binned according to transcription rate as in Figure 3. Both RNAP II and III driven snoRNAs are included. (D) Example of MELs in ChrIV and ChrXV corresponding to tRNA tI(UAU)D and tG(CCC)O, depicted as in Figure 3.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** DOI: http://dx.doi.org/10.7554/eLife.03553.014
-
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** The number of deaminase motifs for each MEL vs the number of mutations within each MEL for AID* and sA3G* datasets.DOI: http://dx.doi.org/10.7554/eLife.03553.015
+**Figure 4—figure supplement 2.:** The number of deaminase motifs for each MEL vs the number of mutations within each MEL for AID* and sA3G* datasets.
 
 ![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig4-figsupp3-v2.jpg)
 
-**Figure 4—figure supplement 3.:** (A) Sequence context of low allelic frequency mutations detected in the rDNA locus, as depicted in Figure 1C. (B) Schematic of the rDNA repeat region. Panels show mutations detected in yeast transformants at the rDNA locus. Each line represents one clone with dots representing mutations (mutation at C, black; at G, red; at A, green). Clones with no detected mutations are not depicted.DOI: http://dx.doi.org/10.7554/eLife.03553.016
+**Figure 4—figure supplement 3.:** (A) Sequence context of low allelic frequency mutations detected in the rDNA locus, as depicted in Figure 1C. (B) Schematic of the rDNA repeat region. Panels show mutations detected in yeast transformants at the rDNA locus. Each line represents one clone with dots representing mutations (mutation at C, black; at G, red; at A, green). Clones with no detected mutations are not depicted.
 
 ![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig4-figsupp4-v2.jpg)
 
-**Figure 4—figure supplement 4.:** Tables showing the correlation between R-loops formation predicted by the QmRLFS-finder (Wongsurawat et al., 2012) or SkewR package (Ginno et al., 2012) and the presence of MELs.DOI: http://dx.doi.org/10.7554/eLife.03553.017
+**Figure 4—figure supplement 4.:** Tables showing the correlation between R-loops formation predicted by the QmRLFS-finder (Wongsurawat et al., 2012) or SkewR package (Ginno et al., 2012) and the presence of MELs.
 
 The mutation frequency (normalised number of mutations per 550 base pairs) in AID* genomes within tRNA genes is higher than at mRNA gene promoters (p value < 2e-16, Wilcox non-parametric test; Figure 4C) and much higher than that observed even in the subset of highly transcribed mRNA promoters. While the differences in mutation frequency between mRNA promoters and tRNAs is still statistically significant for A3G* (p value < 8e-10), this effect is less pronounced. Enhanced mutation is also observed in the promoters of snoRNA and snRNA genes, again particularly in the case of AID* genomes, whereas no statistically significant differences are observed between any of the promoter subsets for mutations driven by EMS. The enhanced mutation attributable to AID* is not likely a feature of RNAP III, since snoRNAs are even more targeted for mutation though all but snR52 are transcribed by RNAP II (Moqtaderi and Struhl, 2004).
 
@@ -130,21 +169,21 @@ Targeting of tRNA, snRNA and snoRNA genes by the deaminases could be enhanced by
 
 Mutations at rRNA genes were poorly mapped due to the repetitive nature of the region on Chr XII (150–200 copies of the 9.1 kb unit containing the 35S pre-RNA and the 5S RNA). By including repeatedly mapped reads across the rDNA locus, we could detect several hundred mutations at low allele frequency all within the expected deaminase mutation context, giving confidence in their detection and location (Figure 4—figure supplement 3A). Mutations were restricted to the well defined ribosomal replication fork barrier (rRFB) located between the 5S and 35S transcriptional units. No enhanced mutation was detected at the promoter regions (which are transcribed in opposite directions by RNAP III and RNAP I respectively). However mutations clustered at the rRFB site for both deaminases (Figure 4—figure supplement 3B), at a site where induced homologous recombination maintains the size of the ribosomal gene array. Although DNA double-strand breaks (DSB) have been detected at the site, it is likely that in vivo persistent breaks are rare in undamaged yeast (Fritsch et al., 2010). Accordingly we did not detect kataegic like clusters in the region, but rather localised mutated hotspots. Thus it is possible that other mechanisms such as cryptic transcription (Houseley et al., 2007) might expose the site to the action of the deaminases, rather than repair of double strand breaks. While AID overexpression in yeast deficient for components of the RNA processing machinery (THO) have enhanced genomic instability, particularly in highly transcribed GC-rich regions prone to R-loop formation (Gómez-González and Aguilera, 2007), in wild type yeast this effect is only mild. Nonetheless we observe positive association of MELs with predicted R-loop potential genes although the paucity of these features across the genomes (between 59–78 sites) precludes any predictive dissociation between high density of mutation, R-loop potential and transcription rates (Figure 4—figure supplement 4).
 
-## AID but not sA3G binds small RNAs
+### AID but not sA3G binds small RNAs
 
-An alternative explanation for the enhanced targeting of small RNA promoters by AID* is that the RNAs themselves preferentially bind AID, thereby creating co-transcriptional enrichment of AID in the vicinity of their genes. Purified AID binds RNA, with its in vitro deamination activity enhanced by treatment with RNAse A (
+An alternative explanation for the enhanced targeting of small RNA promoters by AID* is that the RNAs themselves preferentially bind AID, thereby creating co-transcriptional enrichment of AID in the vicinity of their genes. Purified AID binds RNA, with its in vitro deamination activity enhanced by treatment with RNAse A (Bransteitter et al., 2003), whereas the non-catalytic domain of APOBEC3G is responsible for its ability to bind RNA and form high molecular weight ribonucleic–protein complexes (Huthoff et al., 2009; Bélanger et al., 2013). It is not known whether binding in both cases is specific for any particular RNA species, but based on our current observations we decided to test the ability of human AID and human APOBEC3G to bind in vitro transcribed tRNA as well as polyU RNA. Whereas both Flag-tagged overexpressed human AID and full length human APOBEC3G can be recovered from cell extracts by binding to biotin labelled RNAs, the catalytic domain of APOBEC3G (sA3G) is not (Figure 5A). Furthermore, full length APOBEC3G is efficiently recovered from extracts by the extended linear polyU RNA, a reflection of its ability to oligomerise in an RNA dependent fashion, whereas AID recovery is not enhanced by its binding to linear polyU RNA. Binding of AID to tRNA species was also found for endogenous yeast tRNAs, suggesting that the modifications found in vivo (pseudouridylation and 2′-O-ribose methylation) do not affect the interaction. The single domain APOBEC3A protein shows no RNA binding ability except a limited amount to doubled stranded RNA, despite sharing the preferential targeting to promoters as the rest of the deaminases (Figure 5—figure supplement 1A). Taken together, this data suggest a degree of specificity in the RNA binding preferences of the deaminases, with AID preference linked to structured rather than linear RNA (Figure 5B). Interestingly the catalytic activity of AID is not required for the binding or the specificity, since similar binding was observed for the inactive mutant AID-E58A (Figure 5A).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig5-v2.jpg)
 
-**Figure 5.:** (A) Left panel shows the in vitro transcribed pre-tI(UAU)D tRNA used for affinity purification. Right panel shows immunoblots for transiently overexpressed AID/APOBEC3G proteins following RNA-immunoprecipitation with pre-tRNA. (B) Affinity purification with tl(UAU)D probe, total yeast tRNA, homopolymeric single stranded (polyU) and double stranded (polyA:U) RNA. Left panel shows input proteins, right panel shows immunoblots for transiently overexpressed AID/APOBEC3 proteins following RNA-immunoprecipitation. Results representative of at least 3 independent experiments. (C) Deaminase induced mutations in the promoter region of the YBR194W locus. Top panels: accumulated mutations in the AID*, sA3G* and EMS whole genome datasets. Bottom panels: mutations detected in Sanger sequenced yeast clones unmodified or harbouring a chimeric YBR194W-snR6 locus. Each line represents one clone with dots representing mutations (at C, black; at G, red). Clones with no mutations are indicated.DOI: http://dx.doi.org/10.7554/eLife.03553.018
+**Figure 5.:** (A) Left panel shows the in vitro transcribed pre-tI(UAU)D tRNA used for affinity purification. Right panel shows immunoblots for transiently overexpressed AID/APOBEC3G proteins following RNA-immunoprecipitation with pre-tRNA. (B) Affinity purification with tl(UAU)D probe, total yeast tRNA, homopolymeric single stranded (polyU) and double stranded (polyA:U) RNA. Left panel shows input proteins, right panel shows immunoblots for transiently overexpressed AID/APOBEC3 proteins following RNA-immunoprecipitation. Results representative of at least 3 independent experiments. (C) Deaminase induced mutations in the promoter region of the YBR194W locus. Top panels: accumulated mutations in the AID*, sA3G* and EMS whole genome datasets. Bottom panels: mutations detected in Sanger sequenced yeast clones unmodified or harbouring a chimeric YBR194W-snR6 locus. Each line represents one clone with dots representing mutations (at C, black; at G, red). Clones with no mutations are indicated.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** (A) Mutation density relative to the TSS for APOBEC3A and APOBEC3B induced mutations from ungΔ haploid cells (data from Taylor et al., 2013). The density at tRNA promoters is shown separately in red. (B) Mutations in breast cancer genome PD4120a and lung adenocarcenoma LUAD-S01345. Pie charts show the contribution of mutations at TC over mutations at the remaining dinucleotides and histograms show mutation density relative to all human TSS (Ensemble annotation).DOI: http://dx.doi.org/10.7554/eLife.03553.019
+**Figure 5—figure supplement 1.:** (A) Mutation density relative to the TSS for APOBEC3A and APOBEC3B induced mutations from ungΔ haploid cells (data from Taylor et al., 2013). The density at tRNA promoters is shown separately in red. (B) Mutations in breast cancer genome PD4120a and lung adenocarcenoma LUAD-S01345. Pie charts show the contribution of mutations at TC over mutations at the remaining dinucleotides and histograms show mutation density relative to all human TSS (Ensemble annotation).
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/03553/elife-03553-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** (A) Immunoprecipitation of chromatin associated RNAP II or (B) Histone H3 from unmodified or YBR194W-snR6 chimeric yeast. Black bars show enrichment relative to input in the unmodified strain with the modified strain in red. An unrelated locus, YJL105W is shown as control. Data from three independent experiments. (C) mRNA levels of YBR194W shown relative to ACF1. Levels at the TAF10 gene are shown as a control. Data from three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.03553.020
+**Figure 5—figure supplement 2.:** (A) Immunoprecipitation of chromatin associated RNAP II or (B) Histone H3 from unmodified or YBR194W-snR6 chimeric yeast. Black bars show enrichment relative to input in the unmodified strain with the modified strain in red. An unrelated locus, YJL105W is shown as control. Data from three independent experiments. (C) mRNA levels of YBR194W shown relative to ACF1. Levels at the TAF10 gene are shown as a control. Data from three independent experiments.
 
 In order to test the RNA binding properties of AID in modulating its targeting preferences we introduced a chimeric snR6 RNA into the RNAP II driven YBR194W gene, which was identified in our dataset as a transcribed but poorly targeted promoter by both deaminases (Figure 5C top panels). Initiation and transcription of the modified locus remained overall unaffected (Figure 5—figure supplement 2), while comparison of the YBR194W promoter region by Sanger sequencing revealed enhanced mutation focused to the immediate vicinity of the TSS by AID* but not sA3G*. No such focussing of mutations was observed in the unmodified yeast overexpresing AID* (Figure 5C).
 
@@ -176,7 +215,7 @@ These results suggest that initiating polymerases create a small but persistent 
 
 ## Materials and methods
 
-## Yeast transformants
+### Yeast transformants
 
 Yeast strain BY4743 ungΔ/ungΔ was generated by crossing BY4741 ungΔ (MATa; his3Δ1; leu2Δ0; met15Δ0; ura3Δ0) obtained from Euroscarf deletion collection (Frankfurt, Germany) with the BY4742 ungΔ strain. BY4742 ungΔ was generated by removal of the UNG1 open reading frame by homologous recombination in the parental BY4742 strain, using a PCR generated URA3 cassette flanked by a 57-bp 5′ homology and 51-bp 3′ homology arms that include adaptamers for post integration removal of the URA3 selection cassette (Reid et al., 2002). The YBR194W-snR6 chimeric strain was generated by inserting a URA3 cassette at the 5′ end of the YBR194W gene in BY4741 ungΔ cells. Homology arms and the snR6 gene were amplified from genomic DNA using the primers (1) 5′-CCTGCCACTTTCAAAAGGCG-3′ and 5′-CGAAGGGTTACTTCGCGAACTCCTGTCCCTATTACATATTCAACC-3′, (2) 5′-GGTTGAATATGTAATAGGGACAGGAGTTCGCGAAGTAACCCTTCG-3′ and 5′-GCCAGGCATGCTAATGGCAAAACGAAATAAATCTCTTTGTAAAAC-3′, (3) 5′-GTTTTACAAAGAGATTTATTTCGTTTTGCCATTAGCATGCCTGGC-3′ and 5′-TGGTGGTCATATGCTCGGTG-3′. A PCR fusion of all three fragments with the first and last primer was used to retarget the URA3 containing locus. 5-Fluoroorotic acid counter-selection was used to isolate targeted colonies that were then mated with BY4742 ungΔ to generate the final BY4743 ungΔ/ungΔ YBR194W-snR6/YBR194W strain. Correct integration of all targeting constructs was confirmed by PCR.
 
@@ -184,43 +223,43 @@ Yeast transformation and selection, genomic DNA extraction and mutation frequenc
 
 Ethyl methanesulfonate (EMS) mutagenesis was performed by culturing BY4743 ungΔ/ungΔ yeast overnight in YEPD with 0.2% EMS, after which cells were washed in 5% sodium thiosulfate and plated for viability and canavanine resistance as above.
 
-## Sample preparation and DNA sequencing
+### Sample preparation and DNA sequencing
 
 DNA libraries were generated using the multiplexing Nextera DNA Sample Prep Kit (Illumina, Little Chesterford, UK) according to manufactures instructions. The libraries were sequenced by BGI (BGI, Beijing, China). The de-multiplexed sequence reads were aligned to the reference yeast genome (SacCer_Apr2011/sacCer3) using BWA-MEM (Li and Durbin, 2009). Optical duplicates were removed using Picard (http://picard.sourceforge.net) and only uniquely mapped paired reads were retained. On average 43-fold sequence coverage was achieved for each yeast genome. Unprocessed sequence reads for this study have been deposited at the EMBL-EBI European Nucleotide Archive, study accession number PRJEB7456 (http://www.ebi.ac.uk/ena/data/view/PRJEB7456).
 
-## Data analysis
+### Data analysis
 
-## Mutation calling
+#### Mutation calling
 
 An in-house pipeline for mutation calling was used where GATK base quality score recalibration and indel realignment (McKenna et al., 2010) was performed prior to somatic mutation calling by Somatic Sniper (Larson et al., 2012) using the parental BY4743 genome as reference. High confidence single nucleotide variations (SNVs) were filtered using the following criteria: (1) SomaticSniper score >50, (2) allele frequency ≥0.3, (3) reference or samples read count ≥4, (4) average position as fraction on reads ≥0.1, (5) average distance to 3′ end ≥0.1, (6) average base quality ≥30, (7) average read length >50 bp.
 
-## Mutation enriched loci (MEL) identification
+#### Mutation enriched loci (MEL) identification
 
 Within each data set, mutations were pooled with the number of mutations within 150 base pair windows. Based on the assumption of a random distribution of mutation amongst the fragments, a binomial distribution was determined using the following parameters: size equal to the average number of mutations per clone and probability equal to the average number of mutations per clone over the total number of mutable motifs. Mutable motifs were the total number of WRC, YCC, or C bases for AID*, sA3G* and EMS respectively. The 99th percentile was used as a threshold to identify significantly mutated windows and adjacent windows merged. To refine the span of each individual mutation enriched loci (MEL), unmutated residues and residues falling in the following categories were removed and the window size adjusted: bases that had a count below the 25th percentile of all the counts in the window; bases which had a mutation count below four standard deviations from the average for the window and all bases with only a single detected mutation (where the median mutation count was above one). A final threshold was applied so that only regions with more than 5 mutations derived from at least four independent transformants were assigned as high confidence MELs. All MELs were manually assessed using a genome browser and are shown in Supplementary file 3.
 
 The averaged fraction of overlapping regions for simulated MEL dataset were determined by 1000 cycles of bootstrap analysis using randomised equivalent number of fragments of identical sizes for each dataset distributed across the genome.
 
-## Normalised mutation density
+#### Normalised mutation density
 
 The normalised mutation density was calculated by dividing the mutation count for each residue by the total number of mutation for the dataset.
 
-## RNAP enrichment
+#### RNAP enrichment
 
 ChIP enrichment was determined by taking the sum of the ChIP enrichment scores (Kim et al., 2010) for each promoter fragment (defined as 550 bp upstream and 50 bp downstream from the TSS [Rhee and Pugh, 2012]). Promoters were then grouped according to the transcription rate (García-Martínez et al., 2004) or whether they contained a MEL.
 
-## Average mutation frequency for mRNA, tRNA, snoRNA and snRNA promoters
+#### Average mutation frequency for mRNA, tRNA, snoRNA and snRNA promoters
 
 Promoter fragments for mRNA genes and transcription rate binning were performed as above. tRNA gene promoter fragments were defined as a 550 bp fragment centred on the middle of the tRNA gene. snoRNA and snRNA promoters were defined as 550 bp upstream and 50 bp downstream from the TSS defined in the Saccharomyces Genome Database (Cherry et al., 2012). Intronic snoRNA genes were assigned the mRNA promoter and polycistronic snoRNA genes were assigned only one promoter. Mutation frequency was calculated by first randomly down-sampling the databases to half the size of the EMS dataset, to allow equivalent numbers of mutations to be compared. The number of mutations occurring on each promoter was then calculated. The process was bootstrapped 1000 times to give a directly comparable average number of mutations for each promoter.
 
-## rDNA mapping
+#### rDNA mapping
 
 To detect mutations at the repetitive rDNA locus a less stringent algorithm was used. De-multiplexed sequence reads were aligned as before and unmapped reads removed. Reads mapping to the rDNA region (chrXII:434839-508289) were extracted and used for mutation calling by SomaticSniper. Mutations with a SomaticSniper score of above 50, a read depth of 10 in both the reference and the sample and no evidence of the mutated base in the reference genome were assigned.
 
 All analyses were performed using Bioconductor. Scripts are included as Supplementary file 4.
 
-## Immunopreciptation
+### Immunopreciptation
 
-## RNA binding
+#### RNA binding
 
 The tI(UAU)D RNA probes were generated by in vitro transcription (MegaShortScript T7 Kit, Life Technologies, Paisley, UK) with or without biotin-UTP (Life Technologies), according to manufactures instructions. Free nucleotides were removed using Oligo Clean & Concentrator columns (Zymo, Irvine, CA, USA). The tI(UAU)D template was generated by annealing the following oligos 5′-AATTTAATACGACTCACTATAGGGCTCGTGTAGCTCAGTGGTTAGAGCTTCGTGCTTATAACG-3′ and 5′-TGCTCGAGGTGGGGTTTGAACCCACGACGGTCGCGTTATAAGCACGAAGCTCTAACC-3′. The pre-tI(UAU)D template was generated by PCR amplification from yeast genomic DNA using the following primers 5′- AATTTAATACGACTCACTATAGGGCTCGTGTAGCTCAGTGGTTAGAGC-3′ and 5′-TGCTCGAGGTGGGGTTTGAACCCACGACGG-3′. Biotinylation of total yeast RNA (Life Technologies), polyuridylic acid, polyadenylic acid-polyuridylic acid (Sigma–Aldrich, Gillingham, UK) and the tI(UAU)D probe were performed using the RNA 3′ End Biotinylation Kit (Pierce) according to manufacturers instructions.
 
@@ -228,14 +267,14 @@ Biotinylated RNA probes (3.6 μg) were refolded by heating to 80°C for 5 min in
 
 Clarified whole cell extracts (in RNA buffer supplemented with 0.3% Triton X-100 and complete protease inhibitors [Roche, Burgess Hill, UK]) from HEK 293 cells expressing Flag-AID, catalytically inactive AID (E58A mutation), APOBEC3G-Flag and the SV40-NLS tagged catalytic C-terminal domain of APOBEC3G (sA3G)-Flag, were incubated for 1 hr at 4°C in the presence of bead bound biotinylated RNA probes. Unbound proteins were removed by washing the beads four times in RNA buffer supplemented with 0.5% Triton X-100 at 4°C and the bound protein monitored by western using anti Flag antibodies (M2-HRP, Sigma–Aldrich).
 
-## Chromatin imunoprecipitation
+#### Chromatin imunoprecipitation
 
 Overnight 60 ml yeast cultures fixed in 1% formaldehyde for 20 min and quenched in 0.125 M glycine (final) were washed twice in cold PBS, resuspended in RIPAlo (150 mM NaCl, 10 mM Tris–HCl pH 7.5, 1 mM EDTA, 1% Triton X-100, 0.1% SDS, 0.1% Sodium Deoxycholate, 1× Complete protease inhibitors) prior to lysis using a MPI TissueLyser (10 cycles of 30 s on, 5 min off, 4000 rpm), sonication using a Bioruptor (14 cycles of 30 s on, 30 s off, high intensity) and centrifugation (10 min 15,000×g). Equal amounts of clarified chromatin were incubated overnight at 4°C with 3 μg anti-HA 16B12 (Covance, Maidenhead, UK), 2 μg anti-H3 ab1791 (Abcam, Cambridge, UK), 2 μg anti-RNAPII S5P ab5131 (Abcam). Purification followed on Protein-G dynabeads for 2 hr with extensive washes (twice in RIPAlo, twice in RIPAhi [RIPAlo but for 500 mM NaCl], once in RIPA-LiCl [RIPAlo but 250 mM LiCl replacing NaCl] and twice in TE) and overnight elution in 25 mM Tris–HCl, 1 mM EDTA, pH to 9.8, 50 μg/ml proteinase K at 65°C. Input DNA was extracted using Gentra Puregene (Qiagen, Manchester, UK) with qPCR performed using QuantiFast SYBR kit (Qiagen) all as per manufactures instructions. Primers used are; YBR019C; 5′-ATCCAGCACCACCTGTAACC-3′ and 5′-AAACTTCTTTGCGTCCATCC-3′, YBR020W; 5′-ACCTGAGTTCAATTCTAGCGC-3′ and 5′-TCCGGTTTAGCATCATAAGCG-3′, YNL067W; 5′-AACCAAACTCTAGCCTCCAA-3′ and 5′-TGCTGACAGTAACACCTTCTGG-3′, YBL003C; 5′-TGTGCACTCTACCAACTGGG-3′ and 5′-ATGTCCGGTGGTAAAGGTGG-3′, YPL250C; 5′-AGAGAGTTGCTCCAGACCCT-3′ and 5′-GCATAAAGAAGCGGCTCTGC-3′, YEL009C; 5′-GGGGGAGAGTAACCTGTGTT-3′ and 5′-TTTCGGCTCGCTGTCTTACC-3′, YBR194W; 5′-TCTTCTTGCTCGGGGTTCTC-3′ and 5′-TGCTGAAGGCCTTTGCAAAG-3′, YPL189W; 5′-GCGAAGATTACGGCACTCGA-3′ and 5′-ACAGGTACGGGCTATCTGGA-3′, YLR183C; 5′-ACATCTGCCACGACACATCA-3′ and 5′-TGGTGGAGAGTACGGATCCA-3′, YJL105W; 5′-TTTCTTGCTCTTGGCGGCTA-3′ and 5′-AGTTAGGATCTGAGCCGGGT-3′, YPR007C; 5′-ACAGGTTCGAGCTTCATGGG-3′ and 5′-CGGGAATTTCATCCAGCGGA-3′, chrXV;367475-367594 5′-ACTTGGCACTTCTTCCTCAACA-3′ and 5′-TCGCAAAGTTGGCTAACCGT-3′, chrX;585916-586020 5′-ATGTCTCCCTGTTACCCGGT-3′ and 5′-ACAGGTGCTGTCACAAAACA-3′, chrIV;76,875-76,955 5'′-GGCAGCACCGAGAATGTTTT-3′ and 5′-GCTGTTAGCATATTGGGGGT-3′.
 
-## Yeast transcript analysis
+### Yeast transcript analysis
 
 RNA from 1 ml overnight cultures purified with RNAeasy plus (Qiagen) was used to generate cDNA using oligo-dTs and the GoScript Kit (Promega, Southampton, UK) followed by qPCR employing QuantiFast SYBR (Qiagen) all as per manufactures instructions. Primers used are TAF10; 5′-ATATTCCAGGATCAGGTCTTCCGTAGC-3′ and 5′-GTAGTCTTCTCATTCTGTTGATGTTGTTGTTG-3′, ACT1; 5′-CTTTCAACGTTCCAGCCTTC-3′ and 5′-CCAGCGTAAATTGGAACGAC-3′, YBR194W-snR6; 5′-CCTGCCACTTTCAAAAGGCG-3′ and 5′-CAGGGGAACTGCTGATCATCTCTG-3′, YBR194W; 5′-GGGTCGTGAAAAAGAGAACGG-3′ and 5′-ATGTGATGGTGCAGTGCCTC-3′.
 
-## YBR194W promoter sequencing
+### YBR194W promoter sequencing
 
 The YBR194W promoter region was amplified using the following primers; 5′-ATTGTGGCAGTTCGGCTTTG-3′ and 5′-AGGTTTCCCAGTCTGGCTTG-3′ and Sanger sequenced using the latter.

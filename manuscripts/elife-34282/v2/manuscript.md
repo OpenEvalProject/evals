@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.34282.001 Hybrid sterility is one of the reproductive isolation mechanisms leading to speciation. Prdm9 , the only known vertebrate hybrid-sterility gene, causes failure of meiotic chromosome synapsis and infertility in male hybrids that are the offspring of two mouse subspecies. Within species, Prdm9 determines the sites of programmed DNA double-strand breaks (DSBs) and meiotic recombination hotspots. To investigate the relation between Prdm9 -controlled meiotic arrest and asynapsis, we inserted random stretches of consubspecific homology on several autosomal pairs in sterile hybrids, and analyzed their ability to form synaptonemal complexes and to rescue male fertility. Twenty-seven or more megabases of consubspecific (belonging to the same subspecies) homology fully restored synapsis in a given autosomal pair, and we predicted that two or more DSBs within symmetric hotspots per chromosome are necessary for successful meiosis. We hypothesize that impaired recombination between evolutionarily diverged chromosomes could function as one of the mechanisms of hybrid sterility occurring in various sexually reproducing species.
+Hybrid sterility is one of the reproductive isolation mechanisms leading to speciation. Prdm9, the only known vertebrate hybrid-sterility gene, causes failure of meiotic chromosome synapsis and infertility in male hybrids that are the offspring of two mouse subspecies. Within species, Prdm9 determines the sites of programmed DNA double-strand breaks (DSBs) and meiotic recombination hotspots. To investigate the relation between Prdm9-controlled meiotic arrest and asynapsis, we inserted random stretches of consubspecific homology on several autosomal pairs in sterile hybrids, and analyzed their ability to form synaptonemal complexes and to rescue male fertility. Twenty-seven or more megabases of consubspecific (belonging to the same subspecies) homology fully restored synapsis in a given autosomal pair, and we predicted that two or more DSBs within symmetric hotspots per chromosome are necessary for successful meiosis. We hypothesize that impaired recombination between evolutionarily diverged chromosomes could function as one of the mechanisms of hybrid sterility occurring in various sexually reproducing species.
 
 ## Introduction
 
@@ -37,39 +37,59 @@ In this work, we studied the relationship between meiotic chromosome asynapsis, 
 
 ## Results
 
-## Small chromosomes are more susceptible to asynapsis in sterile F1 hybrids
+### Small chromosomes are more susceptible to asynapsis in sterile F1 hybrids
 
 First, we ascertained the frequency of meiotic asynapsis separately for each chromosome pair of PB6F1 hybrid males by combining the use of fluorescence in-situ hybridization (FISH) to decorate chromatin from individual chromosomes with immunostaining of synaptonemal complex protein 3 (SYCP3) (a major component of axial/lateral elements), to visualize synaptonemal complexes, and HORMA domain-containing protein-2 (HORMAD2) (Wojtasz et al., 2012), to identify the axial elements of unsynapsed chromosomes (Figure 1A). Altogether, 4168 pachynemas from 40 PB6F1 hybrid males were analyzed. All autosomes of hybrid males displayed a certain degree of asynapsis, classified as complete, partial, or intermingled (more than two tangled univalents within labeled chromatin cloud), with frequencies ranging from 2.6% (Chr 1) to 42.2% (Chr 19) (Figure 2—source data 1). A strong bias was evident towards higher asynapsis rates in the five smallest autosomes (p=5.2×10−14, comparison of Generalized Linear Mixed Models [GLMM], Figure 2A). Recently, SPO11 oligos released during the processing of DSBs were sequenced, mapped and quantified at chromosome-wide scale in male mice of the B6 laboratory inbred strain (Lange et al., 2016). This information, together with the estimated frequency of asymmetric DSB hotspots in PB6F1 hybrids (Davies et al., 2016; Smagulova et al., 2016), enabled us to calculate the possible correlation between the number of DSBs within symmetric hotspots (hereafter symmetric DSBs) per chromosome per cell and synapsis between intersubspecific homologs. The calculation is based on and limited by the following premises: (i) the overall densities of DSBs on individual chromosomes of B6 and PB6F1 hybrid males are similar; (ii) approximately 250 DSBs occur per leptotene/zygotene cell (Kauppi et al., 2013); and (iii) the 0.28 proportion of symmetric DSB hotspots in (PWD x B6)F1 hybrid males (Davies et al., 2016) is constant in all autosomes. Under these conditions, a strong negative correlation (Spearman’s ρ=−0.760, p=0.0003) of asynapsis rate with predicted symmetric DSBs (Lange et al., 2016) can be seen (Figure 2—source data 2). This correlation is stronger than the correlation of the asynapsis rate with the chromosomal physical length (Spearman’s ρ=−0.681, p=0.0013). Even though the chromosomal length and the expected number of symmetric DSB hotspots strongly correlate (Spearman’s ρ=0.916, p=1.1 × 10−7), we observed that it is the symmetric DSB hotspots that affect the asynapsis rate. The chromosomal length does not add any additional explanation of the asynapsis rate to that provided by symmetric DSBs (p=0.709, comparison of GLMM models). On the contrary, the symmetric DSBs add an additional explanation of the asynapsis rate to that provided by the chromosomal length (p=0.046, comparison of GLMM models). Thus, our findings suggest that synapsis of a pair of homologous chromosomes depends on the presence of a certain minimum number of symmetric DSBs, as we elaborate further using a simulation described in the 'Discussion'.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/34282/elife-34282-fig1-v2.jpg)
+
+**Figure 1.:** (A) Partial (arrowheads) and complete (arrows) asynapsis of Chr 19 and 11. HORMAD2-labeled chromosomes with synapsis defects often form tangles via nonhomologous pairing. Scale bars represent 5 μm. (B) Asynapsed chromosomes are embedded in transcriptionally silenced chromatin visualized by the lack of extra-coding RNA (ecRNA) detected by Cot1 RNA FISH. See also Figure 1—video 1.
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/34282/elife-34282-fig2-v2.jpg)
 
-**Figure 2.:** 1 hybrids.(A) Mean asynapsis rate ±S.E (based on GLMM model). Intermingled asynapsis refers to overlaps of two or more asynapsed chromosomes within the DNA FISH cloud of chromatin. The five smallest chromosomes had higher asynapsis rate (GLMM model, p=1.1×10−13). Concurrently, the chromosomes with higher asynapsis rate were also more involved in complete rather than partial asynapsis (GLMM model, p=6.2×10−5). Proportion of complete and partial asynapsis was controlled by the asynapsis rate rather than by the chromosomal length (test for effect of the length when controlled for the asynapsis rate, p=0.491). (B) Negative correlation (Spearman’s ρ=−0.760, p=0.0003) between asynapsis rate and mean expected number of symmetric DSBs (Davies et al., 2016) based on the chromosome-wide distribution of SPO11 oligos in fertile B6 males (Lange et al., 2016).10.7554/eLife.34282.006Figure 2—source data 1.1 males.10.7554/eLife.34282.007Figure 2—source data 2.
+**Figure 2.:** (A) Mean asynapsis rate ±S.E (based on GLMM model). Intermingled asynapsis refers to overlaps of two or more asynapsed chromosomes within the DNA FISH cloud of chromatin. The five smallest chromosomes had higher asynapsis rate (GLMM model, p=1.1×10−13). Concurrently, the chromosomes with higher asynapsis rate were also more involved in complete rather than partial asynapsis (GLMM model, p=6.2×10−5). Proportion of complete and partial asynapsis was controlled by the asynapsis rate rather than by the chromosomal length (test for effect of the length when controlled for the asynapsis rate, p=0.491). (B) Negative correlation (Spearman’s ρ=−0.760, p=0.0003) between asynapsis rate and mean expected number of symmetric DSBs (Davies et al., 2016) based on the chromosome-wide distribution of SPO11 oligos in fertile B6 males (Lange et al., 2016).
 
 Further, we examined the asynapsed chromosomes of PB6F1 hybrids for localization of active chromatin using confocal fluorescence microscopy after Cot-1 RNA FISH (Hall et al., 2014) and HORMAD2 immunolabeling. Fluorescence signal quantification revealed that subnuclear regions of asynapsed chromosomes composed of sex chromosomes and/or autosomal univalents were lacking active euchromatin in contrast to other regions of the pachytene nuclei (Figure 1—video 1). We propose that the absence of active euchromatin is a consequence of the meiotic synapsis failure of intersubspecific chromosomes, known as meiotic silencing of unsynapsed chromatin (MSUC [Burgoyne et al., 2009]), which can act as an epigenetic component contributing to the meiotic phenotypes of sterile hybrids (Larson et al., 2016).
 
-## The minimal length of consubspecific sequence necessary to rescue meiotic chromosome synapsis
+### The minimal length of consubspecific sequence necessary to rescue meiotic chromosome synapsis
 
 We have shown previously that meiotic asynapsis affects intersubspecific (PWD/B6) but not consubspecific (PWD/PWD) pairs of homologous chromosomes in sterile male hybrids from crosses of PWD females and B6.PWD-Chr # consomic males (Gregorová et al., 2008; Bhattacharyya et al., 2013, 2014). Here, we searched for the minimum length of the PWD/PWD consubspecific sequence that still could secure synapsis of a chromosome and potentially restore fertility in the hybrids. Instead of replacing the whole B6 chromosome with its PWD homolog, we generated recombinant PWD/B6 and B6/PWD (centromere/telomere) chromosomes. To do that, we crossed the male hybrids between two B6.PWD-Chr # consomic strains with a PWD female and estimated the minimum size and location of consubspecific PWD/PWD stretches needed for synapsis rescue, as shown in Figure 3A. In three such generated 'two-chromosome crosses' (hereafter referred to as 2-chr crosses) we investigated the effect of the PWD/PWD consubspecific intervals on the asynapsis rate in six different chromosomes — two in a given experiment, namely Chr 5 and Chr 12 (Figure 3—source datas 1 and 2), Chr 7 and Chr 15 (Figure 3—source datas 3 and 4) and Chr 17 and Chr 18 (Figure 3—source datas 5 and 6). Altogether, 122 chromosomes from over 12,000 pachynemas were examined. All male progeny of the 2-chr crosses were fully sterile, with low testis weight and the absence of sperm in the epididymis. The analysis of data from six recombinant chromosomes revealed the common features described below.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/34282/elife-34282-fig3-v2.jpg)
 
-**Figure 3.:** (A) The F1 hybrid males of two consomic strains (generation 1 G1, Chr 5 and Chr 12 shown here) were crossed to PWD females to produce generation 2 G2 sterile F1 hybrids with random recombinant consomic chromosomes 5 and 12. Using whole-chromosome probes, the asynapsis rate of the consomic chromosomes was scored by DNA FISH. (B) Combination of two chromosomes (5 + 12, 7 + 15 and 17 + 18) were challenged in each experiment. The localization of PWD homozygous sequence with respect to centromere, interstitial part of the chromosome or telomere, or on both ends is distinguished by color (see also Figure 3—source data 1–6). The average length between the minimum and maximum of the consubspecific sequence is plotted. The mean asynapsis rate of a given chromosome is regularly higher in PB6F1 hybrids (dashed line) than in 2-chr cross. For explanation see Figure 4 and the section on the trans-effect-dependent variation in asynapsis rate. Loess curve with 95% CI.10.7554/eLife.34282.009Figure 3—source data 1.10.7554/eLife.34282.010Figure 3—source data 2.10.7554/eLife.34282.011Figure 3—source data 3.10.7554/eLife.34282.012Figure 3—source data 4.10.7554/eLife.34282.013Figure 3—source data 5.10.7554/eLife.34282.014Figure 3—source data 6.10.7554/eLife.34282.015Figure 3—source data 7.10.7554/eLife.34282.016Figure 3—source data 8.
+**Figure 3.:** (A) The F1 hybrid males of two consomic strains (generation 1 G1, Chr 5 and Chr 12 shown here) were crossed to PWD females to produce generation 2 G2 sterile F1 hybrids with random recombinant consomic chromosomes 5 and 12. Using whole-chromosome probes, the asynapsis rate of the consomic chromosomes was scored by DNA FISH. (B) Combination of two chromosomes (5 + 12, 7 + 15 and 17 + 18) were challenged in each experiment. The localization of PWD homozygous sequence with respect to centromere, interstitial part of the chromosome or telomere, or on both ends is distinguished by color (see also Figure 3—source data 1–6). The average length between the minimum and maximum of the consubspecific sequence is plotted. The mean asynapsis rate of a given chromosome is regularly higher in PB6F1 hybrids (dashed line) than in 2-chr cross. For explanation see Figure 4 and the section on the trans-effect-dependent variation in asynapsis rate. Loess curve with 95% CI.
 
 Introduction by recombination of 27 Mb or more of a consubspecific (PWD/PWD) interval into a pair of intersubspecific (PWD/B6) homologs effectively suppressed the asynapsis rate below the baseline of 5% in all six studied autosomes (Figure 3B). The efficiency of synapsis rescue was gradual with an apparent change point (Figure 3B). To describe the pattern in the data, a segmented regression model was used (see 'Materials and methods'). The model based on the data pooled from all 2-chr crosses was selected as the best model with an estimated change point at 27.14 Mb (19.36; 34.91) (95% CI) (see Figure 3—source data 7). The slope of the decrease of asynapsis in the region of consubspecific intervals shorter than 27.14 Mb differed for different chromosomes (p=3 × 10−11, F-test). For each chromosome, the asynapsis rate decreased from the maximal value measured for non-recombinant PWD/B6 (with 0 Mb of PWD/PWD) down below 5% estimated for the change-point value of 27.14 Mb of PWD/PWD interval.
 
 In spite of the known role of subtelomeric (bouquet) association in chromosome pairing (Ishiguro et al., 2014; Scherthan et al., 2014), the location of the consubspecific sequence at the telomeric end was not essential for synapsis (p=0.9573, F-test). The PWD/PWD intervals of sufficient size rescued synapsis whether located at the centromeric (proximal, n = 14 cases), interstitial (n = 3), or telomeric (distal, n = 14) position (Figure 3—source data 1–6).
 
-## Reversal of hybrid sterility by targeted suppression of asynapsis in four of the most asynapsis-sensitive autosomes
+### Reversal of hybrid sterility by targeted suppression of asynapsis in four of the most asynapsis-sensitive autosomes
 
 The experiments described above have shown that a randomly located consubspecific PWD/PWD interval of 27 or more Mb on otherwise intersubspecific PWD/B6 background is sufficient to restore the pachytene synapsis of a given autosomal pair. To check the causal relationship between meiotic chromosome asynapsis and HS, we attempted to reverse HS by reducing the asynapsis in the four most asynapsis-prone chromosomes. Provided that hybrid male sterility is directly dependent on chromosome synapsis, we predicted (by multiplying the probabilities of the synapsis of individual chromosomes obtained in F1 hybrids) that complete elimination of asynapsis of four of the shortest autosomes (excluding Chr 17 to avoid Prdm9PWD/PWD interference) could increase the proportion of primary spermatocytes that have the full set of synapsed autosomes up to 26.7% and could potentially abolish the apoptosis of these cells to yield around 5 million sperm cells in the epididymis of the hybrid males.
 
 To evaluate this prediction experimentally, random intervals of consomic Chrs 15PWD, 16PWD, 18PWD, and 19PWD were transferred onto the genetic background of B6 mice in a four-generation cross as shown in Figure 4A. Eleven G3 males selected for maximal extent of PWD sequence on these chromosomes were crossed to PWD females (Figure 4—source data 1). The resulting G4 hybrid male progeny (hereafter referred to as a 4-chr cross) displayed various degrees of PWD homozygosity in the studied consomic autosomes on an otherwise intersubspecific PWD/B6 genetic background. As predicted, a significant fraction of hybrid males did indeed show partial rescue of spermatogenesis. In the PB6F1 cross, 100% of hybrid males displayed no sperm in the epididymis, whereas in the 4-chr cross, only 51.7% of 87 G4 males were aspermic, 19.5% had a 0.01–0.74 × 106 sperm count, and 28.7% had 1.0–13.7 × 106 sperm cells (Figure 4—figure supplement 1, Figure 4—source data 2).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/34282/elife-34282-fig4-v2.jpg)
+
+**Figure 4.:** (A) Scheme of a four-generation cross resulting in F1 hybrids with four recombinant consomic chromosomes. (B) The asynapsis rate related to the size and chromosomal position of the consubspecific PWD/PWD sequence in four consomic chromosomes (15, 16, 18 and 19, see also Figure 4—source data 3). The localization of PWD homozygous sequence with respect to the centromere, the interstitial part of the chromosome, or the telomere, or on both ends is distinguished by color (see also Figure 4—source data 3). (C) Number of sperm in epididymis is a function of the probability of synapsis of all four consomic chromosomes. The complete meiotic arrest is reversed in males having 70% or higher chance of all four chromosomes synapsed. See Figure 6—figure supplement 2. Loess curve with 95% CI.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/34282/elife-34282-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Rescue of HS meiotic arrest is detectable in males with the weight of paired testes > 70 mg and >0.1×106 of sperm in the epididymis. The males selected for DNA FISH/HORMAD2 analysis of asynapsis are highlighted in turquoise. All males share the sterility-determining allelic combination of Prdm9PWD/B6 and Hstx2PWD. Loess curve with 95% CI.
+
 Next, we asked whether the reversal of meiotic arrest correlates with the recovery of meiotic synapsis of recombined chromosomes and with the size of PWD/PWD consubspecific stretches in the four manipulated chromosomes. Eighteen G4 males were deliberately selected according to their fertility parameters, 13 with HS partial rescue, displaying sperm cells in the epididymis (0.1 × 10–6.9 × 106), and five aspermic controls. The meiotic analysis of over 6500 pachynemas from the genotyped males confirmed the prediction based on the results of 2-chr crosses. The nonrecombinant PWD/PWD consubspecific bivalents were always fully synapsed, whereas all nonrecombinant PWD/B6 intersubspecific pairs revealed the highest frequencies of asynapsis. All recombinant chromosomes with consubspecific intervals of sufficient length (Figure 4—source data 3; see Figure 3—source data 7 for change point estimates) effectively restored synapsis. Moreover, the presence of sperm cells corresponded with the rescue of synapsis of consomic chromosomes. As a rule of thumb, the hybrids had sperm when asynapsis was suppressed in at least three of four segregating chromosomes and when the probability of all four consomic chromosomes being synapsed was >0.7 (p=0.0014, Mann-Whitney test). Chrs 16, 18, and 19 contributed the strongest effect (Figure 4—source data 3).
 
-## Evidence for a trans effect on the rate of asynapsis
+### Evidence for a trans effect on the rate of asynapsis
 
 Provided that the probability of failure of the synapsis of each chromosome was completely independent of the rest of the hybrid genome, then the asynapsis rate of a particular nonrecombinant intersubspecific chromosome pair would be the same in F1 hybrids, 2-chr crosses, and the 4-chr cross. Moreover, the frequency of pachynemas with all chromosomes synapsed could be predicted by multiplication of the observed frequencies of the synapsis of individual chromosomes (see Figure 2—source data 2). Such predicted values would be close to the values directly read from the meiotic spreads and would lie along the diagonal in Figure 5. As shown below, both types of analysis clearly revealed that the asynapsis rate of a particular chromosome depends on the synapsis status of other chromosomes. First, in PB6F1 hybrids, the observed 13.1% (11.4–14.9%) (95% CI) of fully synapsed pachynemas was double (p=0.023, Mann-Whitney test) the 6.6% (5.3–8.1%) rate expected by the multiplication of the observed synapsis rates of individual chromosomes (Figure 5—source data 1), indicating a trans effect of synapsed autosomes on the probability of the asynapsis of other PWD/B6 chromosome pairs. The trans effect was more pronounced in 2-chr cross and 4-chr cross experiments. Second, at the level of individual chromosomes, the most straightforward comparison was between the nonrecombinant PWD/B6 chromosomes, where the asynapsis rate was dramatically reduced in 2-chr crosses or the 4-chr cross (odds ratio [OR]=0.687, p=0.0002, GLMM) compared to F1 hybrid rates. The trans effect was analyzed further for Chromosomes 15, 16, 18 and 19 by comparing the asynapsis rate of a given non-recombinant PWD/B6 pair with the other three analyzed chromosomes in the 4-chr cross and in F1 hybrids. The Supplement 1 to Figure 5 shows a negative correlation from r=−0.45 for Chr 16 to r =−0.88 for Chr 15. On average, if the predicted synapsis rate of three chromosomes is increased by ten percent, we can expect a 4.18% 2.72–5.34%) (95% CI) decrease of asynapsis rate of the fourth chromosome (p=0.0266, log-log regression). However, for the chromosomes with at least 34.9 Mb of PWD/PWD segment (right bound of 95% CI of change point estimate), for which an additional length of PWD/PWD was not shown to affect asynapsis rate anymore, the trans effect could not be detected (p=0.186, comparison of GLMM models).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/34282/elife-34282-fig5-v2.jpg)
+
+**Figure 5.:** The expected rate of synapsed pachynemas was calculated for each mouse in 2-chr cross and 4-chr cross experiments by multiplication of observed synapsis rates (i.e. assuming independence) of FISH analyzed chromosomes (e.g. Chrs 15, 16, 18 and 19 in 4-chr cross) and the observed PB6F1 synapsis rates of the remaining autosomes. Asynapsis rate was calculated as a complement to synapsis rate. The difference between expected and observed overall asynapsis is most pronounced in 4-chr cross males with the lowest expected overall asynapsis rate. Recovery of spermatogenesis signaled by the presence of sperm in the epididymis occurs when more than 40% of pachynemas are fully synapsed. SC is sperm count.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/34282/elife-34282-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Asynapsis rate of a given chromosome is in negative correlation (r = −0.88,–0.45, –0.80,–0.67 for Chrs 15, 16, 18, 19, respectively) with the probability that all of the other three analyzed chromosomes are synapsed. The estimate of the slope in log-log regression is β3_chrs_syn=–0.418 (95% CI = –0.272 to –0.534), overall p=0.0266.
 
 To conclude, the trans effect is the second non-genic effect modifying the asynapsis rate primarily caused by the cis-acting inter-homolog incompatibility in PB6F1 primary spermatocytes. The significance and the magnitude of the trans effect depends on the cis-acting inter-homolog incompatibility.
 
@@ -77,23 +97,35 @@ To conclude, the trans effect is the second non-genic effect modifying the asyna
 
 The genic control of HS and meiotic synapsis in PB6F1 hybrids can be demonstrated by complete restitution of fertility and meiotic pairing in males with Prdm9PWD/PWD or Prdm9PWD/B6Hu genotypes and by partial recovery in Prdm9PWD/C3H males (Dzur-Gejdosova et al., 2012; Bhattacharyya et al., 2013; Davies et al., 2016), but a chromosome-autonomous nature of asynapsis became apparent in experiments where PB6F1 hybrids carried a single pair of PWD/PWD consubspecific homologs. The males remained sterile, but the synapsis of the particular consubspecific pair was completely restored (Bhattacharyya et al., 2013). Such regulation of meiotic asynapsis in PB6F1 hybrids can be explained by a combined effect of the chromosome-autonomous interaction of homologs operating in cis and Prdm9/Hstx2 incompatibility operating in trans. Here, we separated the non-genic chromosome autonomous from genic control mechanisms by keeping the sterility-determining allelic combination of the Prdm9PWD/Prdm9B6 gene and Hstx2PWD locus constant in all crosses, while successively introgressing stretches of the PWD/PWD consubspecific sequence into eight PWD/B6 intersubspecific autosomal pairs.
 
-## The meiotic asynapsis rate correlates with the presumed paucity of symmetric DSB hotspots in individual chromosomes in sterile hybrids
+### The meiotic asynapsis rate correlates with the presumed paucity of symmetric DSB hotspots in individual chromosomes in sterile hybrids
 
 Davies et al. (2016) found that the DNA-binding zinc-finger domain of the PRDM9 molecule is responsible for sterility in PB6F1 hybrids. Further, they found that in the sterile hybrids, most PRDM9PWD-specific hotspots reside on B6 chromosomes and, vice versa, that most of the PRDM9B6-binding sites are activated on PWD chromosomes. This asymmetry could be explained in part by erosion of the PRDM9-binding sites due to preferential transmission to progeny of the altered hotspots motifs (Boulton et al., 1997; Myers et al., 2010). In a parallel study, Smagulova et al. (2016) identified a novel class of strong hotspots in PB6F1 hybrids that are absent in PWD and B6 parents and that are apparently related to asymmetric hotspots described by Davies et al. (2016). Moreover, Prdm9-independent 'default' hotspots were particularly enriched in Chr X, and we noticed that the percentage of these ‘default’ hotspots in autosomes correlates with the present data on asynapsis rate in F1 hybrids (Spearman’s ρ=0.69, p=0.0012). These Prdm9-independent hotspots may represent the late-forming DSBs on unsynapsed chromosomes and, as such, they may be a consequence rather than the cause of meiotic asynapsis (see Kauppi et al. [2013]).
 
 We found that meiotic asynapsis affects each autosomal pair in PB6F1 intersubspecific hybrids at distinctively unequal rates, with shorter chromosomes affected more often than longer ones. A similar pattern of higher sensitivity of smaller autosomes to the synapsis failure was observed in mice with lowered dosages of SPO11 (Kauppi et al., 2013) and in the consequent two-fold DSB reduction. The fact that the asynapsis rate of sterile F1 hybrids correlates better with SPO11-oligo-derived DSB density (inferred from B6 mouse strain data [Lange et al., 2016]) than with the chromosome length bringsexperimental support for the idea (Davies et al., 2016) linking the asynapsis in sterile PB6F1 hybrids to an insufficient number of symmetric DSB hotspots.
 
-## Small stretches of consubspecific sequence restore the synapsis of intersubspecific chromosomes
+### Small stretches of consubspecific sequence restore the synapsis of intersubspecific chromosomes
 
 Provided that a shortage of symmetric hotspots (Davies et al., 2016) is the ultimate cause of the failure of meiotic synapsis of intersubspecific homologs, then the full synapsis could be restored by exchanging the asymmetric hotspots for the symmetric ones. To test this prediction experimentally, we constructed pairs of PWD/B6 intersubspecific homologs carrying stretches of PWD/PWD consubspecific intervals, which by definition cannot carry asymmetric hotspots. We found that chromosomes with 27 Mb or longer stretches of consubspecific sequence always rescued full synapsis in hybrid males. The position of the consubspecific interval along the chromosome was not critical for synapsis rescue, in accordance with the finding that synaptonemal complexes nucleate at multiple recombination sites in each chromosome (Zickler and Kleckner, 2015; Finsterbusch et al., 2016). We assume that the presence of symmetric DSB in the PWD/PWD homozygous stretches exceeded the threshold of a minimum number of timely repaired DSBs, thus rescuing normal meiotic synapsis.
 
 Allowing for the assumptions enumerated in the 'Results' section, the number of DSBs necessary for proper synapsis of a given chromosome can be estimated on the basis of the expected distribution of symmetric DSB hotspots on all autosomes and their asynapsis ratios in sterile F1 hybrids (Figure 2—source data 2). We aimed to model how the induction and repair of DSBs influence proper meiotic synapsis, and tried to estimate the minimum number of symmetric DSBs per chromosome sufficient for full meiotic synapsis. Our model predicts that in approximately 25% of cases, a chromosome is asynapsed because there are only asymmetric DSBs and no symmetric DSBs (slope of the regression of P[asynapsis] on P[0 symmetric DSBs]=4.22). Assuming a critical threshold of the required DSBs, the remaining 75% of asynapsis could occur on chromosomes with one symmetric DSB and with the other DSBs being asymmetric. Thus, it is consistent with our data that two symmetric DSBs per chromosome could be sufficient for full development of the synaptonemal complex, as shown in Figure 6 (slope of the regression of P[asynapsis] on P[0 or one symmetric DSBs]=1.00). The same conclusion also holds true for 2-chr cross and 4-chr cross experiments (Figure 6—figure supplements 1 and 2). The deviations from the diagonal in Figure 6 depicting the 4-chr cross can be explained by the trans-effect described in the 'Results' section.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/34282/elife-34282-fig6-v2.jpg)
+
+**Figure 6.:** The probability of less than one symmetric DSB per chromosome is ~4 times lower than the asynapsis rate observed in PB6F1 hybrid males (i.e. the estimate of probability of asynapsis), implying that ~75% of all asynapsis occurs when there is one or more repairable DSBs. The probability of less than two symmetric DSBs is a good estimate of the probability of asynapsis, whereas the probability of less than three symmetric DSBs overestimates the probability of asynapsis. This shows that, in the simplest explanation, two or more symmetric DSBs could be sufficient for synapsis. The probabilistic distribution of symmetric DSBs is calculated on the basis of the model described in the 'Discussion'.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/34282/elife-34282-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** See Figure 6 for details.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/34282/elife-34282-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** See Figure 6 for details.
+
 The trans effect as reported in this paper refers to the enhanced probability of synapsis of a pair of intersubspecific homologs depending on successful pairing of other chromosomes in males with the Prdm9PWD/Prdm9B6, Hstx2PWD 'hybrid sterility' genotype. The mechanism of the trans effect is unknown. Kauppi et al. (2013) discussed the chain reactions of asynapsis, in which asynapsis of one or more chromosomes observed in male mice with lowered dosage of SPO11 increased the risk of asynapsis of other chromosomes by engaging them in nonhomologous synapsis among themselves or with the non-PAR region of X chromosome. An alternative explanation of the trans effect could involve an unspecified rate- or time-limiting step involving the DSB repair machinery.
 
 The engagement of the X chromosome in autosomal asynapsis could also be related to the fertility of female hybrids (Forejt, 1996; Kauppi et al., 2013). PB6F1 hybrid females are fertile, obeying Haldane's rule (Haldane, 1922) but their oogenesis is impaired, having 45% of pachynemas with one or more asynapsed autosomes. Nevertheless, the effect of Prdm9 on asynapsis in female PB6F1 meiosis seems weak or absent (Bhattacharyya et al., 2013, 2014).
 
-## On the chromosomal nature of hybrid sterility
+### On the chromosomal nature of hybrid sterility
 
 The vast majority of literature on the genetic mechanism of infertility of inter(sub)specific hybrids focuses on the genetic mapping of hybrid sterility genes, their possible epistatic incompatibilities and evolutionarily diverged structure or expression pattern (Maheshwari and Barbash, 2011; Presgraves, 2010; Civetta, 2016; Mack and Nachman, 2017). Likewise, our early studies considered univalents in PB6F1 primary spermatocytes as a secondary consequence of meiotic arrest caused by genic incompatibilities (Forejt and Iványi, 1974; Forejt, 1996). However, quantitative meiotic analyses revealed that 90% of primary spermatocytes carry one or more pairs of asynapsed homologs and, more importantly, that asynapsis is chromosome-autonomous, depending on inter-homolog (cis-) interactions (Bhattacharyya et al., 2013, 2014). The findings described in this paper provide the first direct link between Prdm9-controlled asynapsis and meiotic arrest in PB6F1 male hybrids. We showed that by deliberately manipulating the synapsis of homologous chromosomes, we could modify the extent of meiotic arrest in intersubspecific PB6F1 hybrids in a predictable way.
 
@@ -107,19 +139,141 @@ Hybrid sterility, as well as pairing of homologous chromosomes and meiotic recom
 
 ## Materials and methods
 
-## Mice, ethics statement and genotyping
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody - primary</td>
+      <td>Anti SYCP3 (mouse monoclonal, clone D-1)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-74569; SCP-3 Antibody (D-1); RRID:AB_2197353</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody - primary</td>
+      <td>Anti gH2AFX (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>ab2893; gH2AFX antibody; RRID:AB_303388</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody - primary</td>
+      <td>Anti HORMAD2 (rabbit polyclonal)</td>
+      <td>DOI: 10.1371/journal.pgen.1000702</td>
+      <td>Gift from Dr. Attila Toth</td>
+      <td>(1:700)</td>
+    </tr>
+    <tr>
+      <td>Antibody - primary</td>
+      <td>Anti HORMAD2 (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-82192; HORMAD2 antibody (C-18); RRID:AB_2121124</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody - secondary</td>
+      <td>Anti-Rabbit IgG - AlexaFluor568 (goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>A-11036; RRID:AB_10563566</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody - secondary</td>
+      <td>Anti-Mouse IgG - AlexaFluor647 (goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>A-21235; RRID:AB_2535804</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Blocking reagent forimmunostaining</td>
+      <td>Normal goat serum from healthy animals</td>
+      <td>Chemicon</td>
+      <td>S26-100ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Protease inhibitors</td>
+      <td>Complete, Mini, EDTA-free Protease Inhibitor Cocktail</td>
+      <td>Roche</td>
+      <td>4693159001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Paraformaldehyde</td>
+      <td>Paraformaldehyde AQ solution</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>15714S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>DNA-FISH probes for mouse chromosomes1–19</td>
+      <td>XMP X Green - Mouse chromosome paints</td>
+      <td>MetaSystems</td>
+      <td>D-1401–050-FI; D-1420–050-FI</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RNA FISH</td>
+      <td>Mouse Cot-1 DNA</td>
+      <td>Invitrogen</td>
+      <td>18440016</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RNA FISH</td>
+      <td>Biotin nick translation kit</td>
+      <td>Roche</td>
+      <td>11,745,824,910</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RNA FISH</td>
+      <td>Biotinylated goat anti-avidin antibody</td>
+      <td>Vector Laboratories</td>
+      <td>BA-0300; RRID:AB_2336108</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>RNA FISH</td>
+      <td>Fluorescein-Avidin-DCS</td>
+      <td>Vector Laboratories</td>
+      <td>A-2011; RRID:AB_2336456</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>RNase inhibitor</td>
+      <td>Ribonucleoside-vanadyl complex (RVC)</td>
+      <td>SIGMA - ALDRICH</td>
+      <td>94742</td>
+      <td>(1:100 = 2 mM)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice, ethics statement and genotyping
 
 The mice were maintained at the Institute of Molecular Genetics in Prague and Vestec, Czech Republic. The project was approved by the Animal Care and Use Committee of the Institute of Molecular Genetics AS CR, protocol No 141/2012. The principles of laboratory animal care, Czech Act No. 246/1992 Sb., compatible with EU Council Directive 86/609/EEC and Appendix of the Council of Europe Convention ETS, were observed. Simple sequence length polymorphisms (SSLP) markers used for genotyping consomic chromosomes in 2-chr crosses and 4-chr cross are listed in Figure 3—source data 8. The PWD/Ph inbred strain originated from a single pair of wild mice of the Mus musculus musculus subspecies trapped in 1972 in Central Bohemia, Czech Republic (Gregorová and Forejt, 2000). The C57BL/6J (B6) inbred strain was purchased from The Jackson Laboratory. The panel of 27 chromosome substitution strains C57BL/6J-Chr #PWD (abbreviated B6.PWD-Chr #) was prepared in our laboratory (Gregorová et al., 2008) and is maintained by the Institute of Molecular Genetics AS CR, Division BIOCEV, Vestec, Czech Republic, and by The Jackson Laboratory, Bar Harbor, Maine, USA. All mice were maintained in a 12 hr light/12 hr dark cycle in a specific pathogen-free barrier facility. The mice had unlimited access to a standard rodent diet (ST-1, 3.4% fat; VELAZ) and water. All males were killed at age 60–70 d.
 
-## Immunostaining and image capture
+### Immunostaining and image capture
 
 For immunocytochemistry, the spread nuclei were prepared as described (Anderson et al., 1999) with modifications. Briefly, a single-cell suspension of spermatogenic cells in 0.1M sucrose with protease inhibitors (Roche) was dropped on 1% paraformaldehyde-treated slides and allowed to settle for 3 hr in a humidified box at 4°C. After brief H2O and PBS washing and blocking with 5% goat sera in PBS (vol/vol), the cells were immunolabeled using a standard protocol with the following antibodies: anti-HORMAD2 (1:700, rabbit polyclonal antibody, a gift from Attila Toth) and SYCP3 (1:50, mouse monoclonal antibody, Santa Cruz, #74569). Secondary antibodies were used at 1:500 dilutions and incubated at room temperature for 60 min: goat anti-Rabbit IgG-AlexaFluor568 (MolecularProbes, A-11036) and goat anti-Mouse IgG-AlexaFluor647 (MolecularProbes, A-21235). The images were acquired and examined using a Nikon Eclipse 400 microscope with a motorized stage control using a Plan Fluor objective, 60x (MRH00601; Nikon) and captured using a DS-QiMc monochrome CCD camera (Nikon) and the NIS-Elements program (Nikon). The images were processed using the Adobe Photoshop CS software (Adobe Systems).
 
-## Combined immunofluorescence staining with DNA FISH or RNA FISH
+### Combined immunofluorescence staining with DNA FISH or RNA FISH
 
 XMP XCyting Mouse Chromosome N Whole Painting Probes (Metasystems) were used for the DNA FISH analysis of asynapsis of all autosomes, one at a time, as described (Turner et al., 2005), with slight modifications. Testes from 8-week-old mice were dissected and spread meiocyte nuclei were prepared as described previously (Mahadevaiah et al., 2009) with a modification, which relies on a reversed sequence of RNA FISH and immunofluorescence staining. Briefly, after cell fixation and permeabilization, the immunofluorescent labeling was performed for 90 min at 20°C with primary anti-HORMAD2 and anti-SYCP3 antibodies. Secondary antibodies were selected as above and incubated at room temperature for 60 min. After washing and postfixation steps, the immunostained nuclei were processed with RNA fluorescence in situ hybridization. The Cot-1 DNA biotin-labeled probe was incubated overnight at 37°C, and then the hybridized biotinylated Cot-1 probe was labelled with a FITC–avidin conjugate and the fluorescent signal was amplified as described previously (Chaumeil et al., 2008). The images of the immunofluorescence stained and Cot-1 RNA FISH-labeled spread spermatocytes were examined and photographed using confocal microscope DMI6000CEL – Leica TCS SP8.
 
-## Statistics
+### Statistics
 
 To model the dependence between the asynapsis rate and the number of symmetric DSBs, we determined the probabilistic distribution of the number of symmetric DSBs. The distribution was determined by simulation and with parameters based on previous studies. (i) The number of DSBs per cell (Bhattacharyya et al., 2013) was modeled as an observation from the normal distribution N (250, sd = 20). (ii) We assumed a number of DSBs proportional to SPO11 oligos (Lange et al., 2016) in each autosome. (iii) The positions of DSBs in the particular autosome were simulated from the uniform distribution, U (0, Autosome_length). (iv) For the intersubspecific part of the autosomal pair, the number of symmetric DSBs was simulated from the binomial distribution Bi (n = N_DSBs_in_het_part, p=0.28). For the consubspecific part of the autosome, all DSBs were taken to be symmetric. The total number of symmetric DSBs in the autosome was taken as the sum of symmetric DSBs in the respective parts. Steps (i) to (iv) were performed in N = 100000 simulations to obtain a probabilistic distribution (Source Code 1).
 

@@ -37,7 +37,7 @@
 
 ## Abstract
 
-Alterations to the androgen receptor (AR) signalling axis and cellular metabolism are hallmarks of prostate cancer. This study provides insight into both hallmarks by uncovering a novel link between AR and the pentose phosphate pathway (PPP). Specifically, we identify 6-phosphogluoconate dehydrogenase ( 6PGD ) as an androgen-regulated gene that is upregulated in prostate cancer. AR increased the expression of 6PGD indirectly via activation of sterol regulatory element binding protein 1 (SREBP1). Accordingly, loss of 6PGD, AR or SREBP1 resulted in suppression of PPP activity as revealed by 1,2- 13 C 2 glucose metabolic flux analysis. Knockdown of 6PGD also impaired growth and elicited death of prostate cancer cells, at least in part due to increased oxidative stress. We investigated the therapeutic potential of targeting 6PGD using two specific inhibitors, physcion and S3, and observed substantial anti-cancer activity in multiple models of prostate cancer, including aggressive, therapy-resistant models of castration-resistant disease as well as prospectively collected patient-derived tumour explants. Targeting of 6PGD was associated with two important tumour-suppressive mechanisms: first, increased activity of the AMP-activated protein kinase (AMPK), which repressed anabolic growth-promoting pathways regulated by acetyl-CoA carboxylase 1 (ACC1) and mammalian target of rapamycin complex 1 (mTORC1); and second, enhanced AR ubiquitylation, associated with a reduction in AR protein levels and activity. Supporting the biological relevance of positive feedback between AR and 6PGD, pharmacological co-targeting of both factors was more effective in suppressing the growth of prostate cancer cells than single-agent therapies. Collectively, this work provides new insight into the dysregulated metabolism of prostate cancer and provides impetus for further investigation of co-targeting AR and the PPP as a novel therapeutic strategy.
+Alterations to the androgen receptor (AR) signalling axis and cellular metabolism are hallmarks of prostate cancer. This study provides insight into both hallmarks by uncovering a novel link between AR and the pentose phosphate pathway (PPP). Specifically, we identify 6-phosphogluoconate dehydrogenase (6PGD) as an androgen-regulated gene that is upregulated in prostate cancer. AR increased the expression of 6PGD indirectly via activation of sterol regulatory element binding protein 1 (SREBP1). Accordingly, loss of 6PGD, AR or SREBP1 resulted in suppression of PPP activity as revealed by 1,2-13C2 glucose metabolic flux analysis. Knockdown of 6PGD also impaired growth and elicited death of prostate cancer cells, at least in part due to increased oxidative stress. We investigated the therapeutic potential of targeting 6PGD using two specific inhibitors, physcion and S3, and observed substantial anti-cancer activity in multiple models of prostate cancer, including aggressive, therapy-resistant models of castration-resistant disease as well as prospectively collected patient-derived tumour explants. Targeting of 6PGD was associated with two important tumour-suppressive mechanisms: first, increased activity of the AMP-activated protein kinase (AMPK), which repressed anabolic growth-promoting pathways regulated by acetyl-CoA carboxylase 1 (ACC1) and mammalian target of rapamycin complex 1 (mTORC1); and second, enhanced AR ubiquitylation, associated with a reduction in AR protein levels and activity. Supporting the biological relevance of positive feedback between AR and 6PGD, pharmacological co-targeting of both factors was more effective in suppressing the growth of prostate cancer cells than single-agent therapies. Collectively, this work provides new insight into the dysregulated metabolism of prostate cancer and provides impetus for further investigation of co-targeting AR and the PPP as a novel therapeutic strategy.
 
 ## Introduction
 
@@ -49,15 +49,27 @@ Direct alterations to AR – including mutation, amplification, alternative spli
 
 ## Results
 
-## 6PGD is an androgen-regulated gene in PCa
+### 6PGD is an androgen-regulated gene in PCa
 
 The current clinical ARPIs, such as enzalutamide, do not target the entire repertoire of genes regulated by the AR in prostate tumour cells (Asangani et al., 2014). We hypothesised that ablation of AR expression would be the most appropriate ‘therapeutic benchmark’ to identify the key regulators of tumour cell survival regulated by AR. To qualitatively and quantitatively compare downstream responses to AR ablation and AR antagonism, LNCaP cells were treated with AR siRNA (siAR; i.e. AR ablation) or enzalutamide (Enz; AR antagonism) and subsequently evaluated by RNA-seq. The experimental conditions were optimised to achieve comparable suppression of the canonical AR target, prostate specific antigen (PSA), which is encoded by the KLK3 gene (Figure 1A). Genes affected by siAR were highly concordant with an independent dataset (He et al., 2014; Figure 1—figure supplement 1A). As expected, most (78%) genes altered by enzalutamide (compared to vehicle control) were also similarly dysregulated by siAR (compared to a control siRNA [siCon]) (Figure 1B, Figure 1—source data 1). An additional 2574 genes were altered in their expression by siAR but not enzalutamide (Figure 1B; q < 0.05). On closer examination, many of these genes were altered in their expression by enzalutamide but not sufficiently for them to be identified as statistically significant differentially expressed genes. A further direct statistical comparison of gene expression between the two treatment groups identified that there were 581 genes that were differentially expressed in the siAR-treated cells compared to those treated with enzalutamide including, as expected, AR itself (Figure 1B,C, Figure 1—source data 1; q < 0.05). These results provide further evidence for the hypothesis that AR ablation is more effective at suppressing the AR-regulated transcriptome compared with AR antagonism, at least in this experimental system.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62592/elife-62592-fig1-v2.jpg)
+
+**Figure 1.:** (A) Effect of siAR and enzalutamide (Enz) on the AR target, PSA. LNCaP cells were transfected with AR (siAR; 12.5 nM) or control (siCon) siRNA for 48 hr or treated with Enz (1 µM) or vehicle (Veh) for 24 hr, after which AR and PSA proteins were evaluated by immunoblotting. GAPDH was used as loading control. (B) Numbers of genes differentially expressed (false discovery rate [FDR] < 0.05) by siAR (versus siCon) or Enz (vs. Veh) are shown in the Venn diagram (at top). Below: an alternative analysis identified 581 genes differentially expressed (FDR < 0.05) by siAR versus Enz. (C) Scatterplot of genes affected by siAR and Enz. The 581 genes differentially expressed by siAR versus Enz are shown in blue (n = 72, genes differentially expressed by siAR versus siCon and Enz versus Veh) and yellow (n = 509), genes differentially expressed by siAR versus siCon but not by Enz versus Veh. (D) Validation of 6PGD expression in response to siAR and Enz by RT-qPCR. Gene expression was normalised to GUSB and L19 and represents the mean ± standard error of the mean (SEM) of three biological replicates; siCon and Veh were set to 1. Differential expression was evaluated using unpaired t tests (a, p<0.01; b, p<0.001; c, p<0.0001; NS, not significant). (E) 6PGD protein levels in response to siAR and Enz treatments were measured by immunoblotting in LNCaP (left) and VCaP (right) cells. HSP90 and GAPDH were used as loading controls. (F) RT-qPCR of 6PGD expression in response to DHT and siAR in VCaP cells. Cells were transfected with siRNAs for 24 hr, and then treated with 1 nM DHT for another 24 hr. Gene expression was normalised and graphed as in (D). Differential expression was evaluated by t tests (**p < 0.01; ***p < 0.001; ****p < 0.0001). (G) RT-qPCR of KLK2, KLK3, and 6PGD expression in response to Enz treatment (1 µM, 72 hr) in patient-derived explants. Gene expression was normalised to GAPDH, PPIA, and TUBA1B and is represented as fold-change relative to vehicle. Differential expression was evaluated by one-sample t tests (**p<0.01; ***p<0.001). (H) 6PGD mRNA expression in prostate tumours pre- and post-androgen deprivation therapy (ADT; GSE48403). A Wilcoxon matched-pairs signed-rank test was used to compare expression in the groups. (I) 6PGD expression is elevated in primary prostate cancer. The TCGA dataset comprises 52 patient-matched normal and cancer samples. Boxes show minimum and maximum (bottom and top lines, respectively) and mean (line within the boxes) values. A paired t test was used to compare expression in normal versus cancer. FPKM: fragments per kilobase of exon per million mapped reads. (J) 6PGD expression by Gleason grade in the TCGA cohort. Boxes show minimum and maximum (bottom and top lines, respectively) and mean (line within the boxes) values. Unpaired t tests were used to compare expression between the groups. (K) 6PGD protein expression in clinical prostate samples (benign prostatic hyperplasia [BPH] and tumours) was measured mass spectrometry. Boxes show minimum and maximum (bottom and top lines, respectively) and mean (line within the boxes) values. An unpaired t test was used to compare expression between the groups.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62592/elife-62592-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Concordance between our siAR RNA-seq data and an independent dataset, as demonstrated by gene set enrichment analysis (GSEA; Subramanian et al., 2005). RNA-seq data from He and colleagues (He et al., 2014) was kindly provided by Nicholas Mitsiades (Baylor College of Medicine), and genes were ranked by fold-change in siAR treatment versus siControl. Genes downregulated by siAR versus siControl in our dataset (false discovery rate [FDR] < 0.01, n = 305) were used as the gene set of interest. Running enrichment scores are plotted (top graph) and normalised enrichment scores (NES) and p values are indicated. (B) Two distinct AR siRNAs (siAR [Vander Heiden et al., 2009] and siAR [Bader and McGuire, 2020]; 12.5 nM) reduce the expression of 6PGD at the protein level in LNCaP cells. Cells were transfected with 12.5 nM of each siRNA; after 48 hr, proteins were extracted and assessed by western blotting. (C) siAR (Bader and McGuire, 2020) reduces the expression of 6PGD mRNA in LNCaP cells. Transfection of siRNAs was performed as in (A). Differential expression was evaluated using an unpaired t test (**p <0.001). (D) siAR (Vander Heiden et al., 2009) and siAR (Bader and McGuire, 2020), but not enzalutamide (Enz, 1 µM), reduce the expression of 6PGD mRNA in VCaP cells. Transfection of siRNAs was performed as in (A). Cells were treated with DMSO or Enz for 24 hr. Differential expression compared to DMSO or siCon was determined using ANOVA and Dunnett’s multiple comparison tests (*p<0.05; **p<0.01). (E, F) Next-generation AR antagonists apalutamide and darolutamide inhibit AR target gene expression at the protein (E) and mRNA (F) level, but do not reduce expression of 6PGD protein or mRNA. Cells were treated for 24 hr with the indicated doses of each drug.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62592/elife-62592-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Gleason grades are shown. Scale bars represent 100 µm.
 
 The gene most significantly associated with AR ablation and not AR antagonism was 6PGD (Figure 1C, Figure 1—source data 1), which encodes an enzyme in the PPP. We confirmed that 6PGD expression was downregulated by AR knockdown but not by acute AR antagonism in multiple PCa cell lines (LNCaP and VCaP) at both the mRNA and protein level (Figure 1D,E; Figure 1—figure supplement 1B–D). Downregulation of 6PGD was also seen with a second AR siRNA, validating 6PGD as a bona fide target of AR (Figure 1—figure supplement 1B–D). In further support of differential regulation by siAR versus AR antagonism, neither of the newest clinically approved AR antagonists (apalutamide and darolutamide) altered 6PGD protein or mRNA expression (Figure 1—figure supplement 1E,F). Conversely, AR activation with the androgen 5α-dihydrotestosterone (DHT) stimulated 6PGD expression, and this effect was abolished by co-treatment with siAR (Figure 1F). To determine whether AR inhibition affects 6PGD in more biologically relevant systems, we utilised our patient-derived explant (PDE) model (Centenera et al., 2018). Similar to two-dimensional PCa cell line culture, we did not observe enzalutamide-mediated changes to 6PGD mRNA expression in the PDE model over a time frame of 48 hr under conditions that caused significant repression of the well-characterised AR target genes KLK2 and KLK3 (Figure 1G). By contrast, longer-term (~14 weeks) androgen deprivation therapy in patients caused a significant decrease in 6PGD mRNA levels (Figure 1H). Collectively, these findings reveal 6PGD as a novel AR-regulated factor in both PCa cell lines and clinical samples.
 
 As an initial assessment of the relevance of 6PGD in clinical PCa, we examined its expression in a clinical transcriptomic dataset (Cancer Genome Atlas Research Network, 2015) and found that 6PGD mRNA expression was significantly elevated in cancer compared to patient-matched normal tissue and also showed an association with increasing Gleason grade (Figure 1I,J), although it was not associated with biochemical recurrence (data not shown). An association with malignancy was recapitulated at the protein level (Figure 1K) in a distinct set of patient samples for which proteomes were profiled using mass spectrometry (Latonen et al., 2018). We further examined 6PGD protein expression in prostate tumours by immunohistochemistry (IHC). 6PGD was detected in all tissues that were examined and was predominantly localised to the cytoplasm and perinuclear regions of epithelial cells (Figure 1—figure supplement 2). Moreover, we observed a trend towards increasing protein levels in the more aggressive tumours (Figure 1—figure supplement 2). In summary, 6PGD is highly expressed in prostate tumours, suggesting that the PPP may play an important metabolic role in this cancer type.
 
-## SREBP1 mediates induction of 6PGD downstream of the AR
+### SREBP1 mediates induction of 6PGD downstream of the AR
 
 AR binds to gene enhancers or promoters to directly regulate transcription (Wang et al., 2007). However, we found no clear evidence of AR binding sites proximal to the 6PGD transcriptional start site in genome-wide DNA binding (ChIP-seq) datasets from tissues and cell lines (Figure 2A and data not shown), suggesting that the AR pathway may indirectly regulate 6PGD expression via another downstream pathway(s) or factor(s). One credible intermediary between AR and 6PGD is SREBP1, a master transcriptional regulator of genes involved in lipid and cholesterol production (Heemers et al., 2006). AR enhances SREBP1 expression and activity in a multifaceted manner, most notably by upregulating the SREBP1 activator SCAP (Heemers et al., 2006) and by activating the mTOR pathway, which in turn leads to elevated SREBP1 expression (Duvel et al., 2010). Additionally, SREBP1 has been proposed to directly regulate 6PGD in mouse adipocytes by direct binding to its promoter (Rho et al., 2005). We mined ENCODE SREBP1 ChIP-seq data and identified an SREBP1 binding site at the 6PGD promoter in two cancer cell lines, HEPG2 (liver) and MCF7 (breast) (Figure 2B). Regulation of 6PGD by SREBP1 in PCa cells was confirmed by siRNA-mediated knockdown of SREBP1 (Figure 2C). To test whether SREBP1 acts downstream of AR to increase 6PGD expression, we treated LNCaP cells with siSREBP1 or a pharmacological inhibitor of SREBP1 (fatostatin) and then evaluated 6PGD expression in the presence or absence of DHT. Supporting our hypothesis, either knockdown (Figure 2D) or inhibition of SREBP1 antagonised androgen-mediated induction of 6PGD (Figure 2E). We validated this effect in an independent AR-responsive cell line, VCaP (Figure 2D). Collectively, these results reveal the presence of a functional AR-SREBP1-6PGD circuit in PCa cells and implicate SREBP1 as a key mediator of PPP activation by AR.
 
@@ -65,23 +77,55 @@ AR binds to gene enhancers or promoters to directly regulate transcription (Wang
 
 **Figure 2.:** (A) ChIP-seq data showing AR DNA binding near the 6PGD gene in non-malignant and prostate tumour samples (Pomerantz et al., 2015) and the LNCaP (Barfeld et al., 2017) and VCaP (Asangani et al., 2014) cell line models. The grey box indicates a region ±50 kb of the 6PGD transcriptional start site. (B) ChIP-seq data showing SREBP1 DNA binding at the 6PGD promoter in HEPG2 and MCF7 cells. Data is from ENCODE (ENCODE Project Consortium, 2012; HEPG2: ENCFF000XXR; MCF7: ENCFF911YFI). (C) Effect of siSREBP1 on 6PGD protein. LNCaP cells were transfected with siRNA (siSREBP1; 12.5 nM) or control (siCon) for 72 hr after which SREBP1 and 6PGD protein levels were evaluated by immunoblotting. GAPDH was used as loading control. (D) Effect of siSREBP1 on 6PGD induction by DHT. LNCaP (left) or VCaP (right) cells were transfected with siRNA (siSREBP1; 12.5 nM) or control (siCon) in charcoal-stripped FBS media for 72 hr and then treated with 10 nM DHT for another 24 hr. SREBP1 and 6PGD protein levels were evaluated by immunoblotting. GAPDH was used as loading control. (E) RT-qPCR of 6PGD expression in response to DHT and fatostatin in LNCaP cells. Cells were serum starved in charcoal-stripped FBS media for 72 hr and then treated with Veh or 10 nM DHT ±10 µM fatostatin for another 24 hr. Gene expression was normalised to GUSB and L19 and represents the mean + SEM of three biological replicates. Treatment effects were evaluated using ANOVA and Dunnett’s multiple comparison tests (*p<0.05; **p<0.01; ****p<0.0001; NS, not significant).
 
-## An AR-SREBP1-6PGD axis influences PCa cell growth and activity of the pentose phosphate pathway
+### An AR-SREBP1-6PGD axis influences PCa cell growth and activity of the pentose phosphate pathway
 
 Regulation of 6PGD by the AR signalling axis supports other recent reports linking the PPP to PCa (Tsouko et al., 2014; Ros et al., 2012); and although the role of the PPP in this malignancy is not fully elucidated, it could serve to fuel cell growth and protect against oxidative stress. In support of this, knockdown of 6PGD with two highly effective siRNAs (Figure 3—figure supplement 1) significantly decreased viability (Figure 3A) and increased death (Figure 3B) of LNCaP and VCaP cells. These findings were recapitulated in cell line models of CRPC (V16D) and enzalutamide-resistant CRPC (MR49F) (Figure 3A,B). In addition to these phenotypic effects, mass spectrometry revealed accumulation of 6PGD’s substrate, 6-phosphogluconate (6-PG) (Figure 3C), in LNCaP cells transfected with siRNA, confirming specificity of the knockdown.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62592/elife-62592-fig3-v2.jpg)
+
+**Figure 3.:** (A, B) Knockdown of 6PGD with two distinct siRNAs (si6PGD.1 and si6PGD.2) reduced viability (A) and increased cell death (B) of four prostate cancer cell lines, as assessed using Trypan blue exclusion assays. LNCaP and VCaP cells were evaluated 3 days post-transfection; V16D and MR49F cells were evaluated 5 days post-transfection. Error bars are standard error of the mean (SEM) of triplicate samples and are representative of three independent experiments. Treatment effects were evaluated using ANOVA and Dunnett’s multiple comparison tests (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001). (C) Knockdown of 6PGD causes accumulation of intracellular 6PG in LNCaP cells, as determined by mass spectrometry. Results are representative of two independent experiments. Error bars are SEM of triplicate samples. Treatment effect was evaluated using an unpaired t test (p<0.001). Colour key is as in (A). (D) Schematic demonstrating flux of 1,2-13C2 glucose through the PPP and incorporation into Ru5P and R5P. Unlabelled 12C carbon is shown as open circles, whereas 13C is shown as filled circles. The oxidative and non-oxidative branches of the PPP are indicated in purple and green, respectively. 6PG: 6-phosphogluconate; E4P: erythrose 4-phosphate; F6P: fructose 6-phosphate; G6P: glucose 6-phosphate; GAP: glyceraldehyde 3-phosphate; R5P: ribose 5-phosphate; Ru5P: ribulose 5-phosphate; S7P: sedoheptulose 7-phosphate; X5P: xylulose 5-phosphate. (E) Isotopic steady-state G6P enrichments of LNCaP cells fed with 1,2-13C2 glucose and natural glucose at 1:1 ratio show control and treatments cells were labelled to a similar extent. Error bars are standard deviation (SD). (F) Accumulation of singly (left, m1) and doubly (right, m2) labelled Ru5P produced via the oxidative and non-oxidative branches, respectively, of the PPP. Error bars are SD. (G) Dilution rate (turnover rate) calculated from the accumulation of singly and doubly labelled Ru5P (data from E) using the continuous stirred-tank reactor (CSTR) equation. For statistical analysis of treatment effects, refer to Materials and methods (***p<0.001; NS, not significant). Error bars are SD. (H) Knockdown of 6PGD and androgen receptor (AR) causes increased levels of reactive oxygen species (ROS) in LNCaP, V16D, and MR49F cells. Data was normalised to siCon, which was set to 100%. Error bars are SEM of triplicate samples. Treatment effects were evaluated using ANOVA and Dunnett’s multiple comparison tests (*p<0.05; **p<0.01). (I) ROS production in LNCaP cells in response to si6PGD is reversed by the antioxidant. Trolox data was normalised to siCon in the absence of Trolox, which was set to 100%. Error bars are SEM of triplicate samples. Treatment effects were evaluated using ANOVA and Tukey’s multiple comparison tests (*p<0.05; **p<0.01). Colour key is as in (A).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62592/elife-62592-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Cells were transfected with 12.5 nM of each siRNA for 72 hr, after which 6PGD mRNA was measured by RT-qPCR (A) or 6PGD protein was measured by immunoblotting (B).
 
 To more directly investigate the involvement of 6PGD, AR, and SREBP1 in the PPP, we conducted mass spectrometry tracing experiments with 1,2-13C2 glucose. After 48 hr of siRNA transfection, 1,2-13C2 glucose was spiked in to growth media at a ratio of 1:1 with natural glucose and PPP flux was estimated over a period of 15 min by measuring the incorporation of 13C into the immediate product of 6PGD’s catalytic activity, ribulose 5-phosphate (Ru5P). A schematic detailing the differential incorporation of 13C isotope into Ru5P by both the oxidative (irreversible; m1 Ru5P) and non-oxidative (reversible; m2 Ru5P) branches of the PPP is shown in Figure 3D. Isotopic steady-state enrichments of glucose 6-phosphate (G6P) confirmed that approximately 1:1 ratio labelling was achieved consistently between treatment groups (Figure 3E), demonstrating that PPP flux could be inferred from labelled Ru5P without correcting for enrichment bias between treatments. Next, we used the accumulation profiles of m1 (singly labelled) Ru5P (Figure 3F) to estimate the rate of Ru5P production via 6PGD from exogenous glucose (i.e. dilution rate; Figure 3G). These analyses revealed that flux through the oxidative PPP was significantly decreased with knockdown of 6PGD, AR, and SREBP1 (Figure 3F,G). Interestingly, knockdown of AR and SREBP1 (but not 6PGD) also had a significant impact on flux through the non-oxidative phase of the PPP, as determined by evaluating m2 (doubly labelled) Ru5P production via F6P/GAP (Figure 3F,G). Collectively, these glucose tracing data show that targeting 6PGD significantly suppresses PPP activity through the oxidative pathway, an effect that is also evident when targeting the upstream signalling factors AR and SREBP1.
 
 Since a key role of the PPP is to regulate intracellular redox state (Ge et al., 2020), we also measured reactive oxygen species (ROS) using a flow cytometric-based assay. Knockdown of 6PGD (and AR) significantly increased levels of intracellular ROS in both androgen-sensitive and CRPC cell line models (Figure 3G). This phenotype could be rescued by the antioxidant Trolox (Figure 3H), verifying the specificity of the assay.
 
-## Pharmacological inhibition of 6PGD suppresses PCa growth and increases ROS
+### Pharmacological inhibition of 6PGD suppresses PCa growth and increases ROS
 
 Having established that 6PGD is required for efficient activity of the PPP, optimal PCa cell growth and protection against oxidative stress, we evaluated pharmacological targeting of this enzyme as a potential therapeutic strategy. Physcion, a plant-derived anthraquinone, was recently identified as an inhibitor of 6PGD using an in vitro screening assay (Lin et al., 2015). Treatment of LNCaP cells with physcion dose-dependently inhibited growth and elicited death (Figure 4—figure supplement 1A,B). However, low solubility limits the preclinical and clinical utility of this compound. Therefore, we focused our efforts on a derivative of physcion, S3, which has substantially improved solubility (~50-fold: 1 mM physcion c.f. 50 mM S3 in DMSO; Lin et al., 2015). Similarly to physcion, S3 reduced LNCaP cell viability and caused cell death (Figure 4A,B). Cell kill was at least partly mediated via apoptosis, as demonstrated by a flow cytometric-based Annexin/7-AAD assay (Figure 4C). Importantly, S3 increased levels of cellular ROS in a dose-dependent manner (Figure 4D), strengthening the link between the PPP and control of redox homeostasis. S3 was active in a range of PCa models, including VCaP and models of CRPC (V16D and MR49F; Figure 4E,F). The efficacy of S3 in MR49F cells was particularly notable since this aggressive LNCaP-derived line is resistant to the second-generation AR antagonist Enz (Kuruma et al., 2013). S3 was also growth inhibitory in AR-negative PC3 cells, although this line was less sensitive than AR-driven models (Figure 4—figure supplement 1C). To assess the potential of targeting 6PGD with S3 in a more clinically relevant setting, we exploited the PDE model (Centenera et al., 2018). Notably, S3 reduced proliferation, as measured by IHC for Ki67, in all tumours (n = 9) that were evaluated (Figure 4G).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/62592/elife-62592-fig4-v2.jpg)
+
+**Figure 4.:** (A, B) The 6PGD inhibitor, S3, dose-dependently decreased viability (A) and increased death (B) of LNCaP cells, as determined by Trypan blue exclusion assays. Dead cells were counted at day 6. Data represent the mean of triplicate samples and are representative of three independent experiments. Error bars are SEM. Growth (day 6) and death for each dose was compared to vehicle using ANOVA and Dunnett’s multiple comparison tests (****p<0.0001). Veh: vehicle. (C) S3 causes apoptosis of LNCaP cells, as determined using flow cytometry-based Annexin V/7-AAD assays. Cells were assessed 72 hr after treatment. Data represent the mean ± SE of triplicate samples and are representative of four independent experiments. Dead cell proportions were compared to vehicle using ANOVA and Dunnett’s multiple comparison tests (*p<0.05; **p<0.01; ****p<0.0001). (D) S3 causes increased levels of ROS in LNCaP cells. Data was normalised to Veh, which was set to 100%. Effects were evaluated using ANOVA and Dunnett’s multiple comparison tests (***p<0.001; ****p<0.0001). (E) S3 dose-dependently decreased viability (left) and increased death (right) of VCaP cells, as determined by Trypan blue exclusion assays. Live and dead cells were counted 4 days after treatment. Data represent the mean ± SE of triplicate samples and are representative of three independent experiments. Effects were evaluated using ANOVA and Dunnett’s multiple comparison tests (**p<0.01; ***p<0.001; ****p<0.0001). (F) S3 suppresses the growth of castration-resistant prostate cancer (CRPC) cells (V16D) and enzalutamide-resistant CRPC cells (MR49F), as determined using CyQuant Direct Cell Proliferation Assay. Fluorescence from day 0 was set to 100%. Data represent the mean ± SEM of triplicate samples and are representative of two independent experiments. Effects (at day 5) were evaluated using ANOVA and Dunnett’s multiple comparison tests (*p<0.05; ****p<0.0001). (G) S3 inhibits the proliferation of prospectively collected human tumours grown as patient-derived explants (PDEs). PDEs (from n = 9 patients) were treated for 72 hr. Ki67 positivity, a marker of proliferation, was determined using immunohistochemistry. Boxes show minimum and maximum (bottom and top lines, respectively) and mean (line within the boxes) values. A paired t test was used to compare Ki67 positivity in treated versus vehicle-treated control samples (***p<0.001).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62592/elife-62592-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Live and dead cells were measured (A, at the indicated timepoints; B, at day 6) using Trypan blue exclusion assays. Physion’s effects on growth and death compared to vehicle (Veh) were determined using ANOVA and Dunnett’s multiple comparison tests (****p<0.0001; NS, not significant). (C) Effect of S3 on growth of PC3 cells. Cell viability assessed by CyQuant Direct Cell Proliferation Assay. Fluorescence at day 0 was set to 100%. The effect of S3 on growth compared to vehicle (Veh) was determined using ANOVA and Dunnett’s multiple comparison tests; only 20 µM and 40 µM doses were significantly different to Veh (****p<0.0001).
+
 In addition to directly promoting cell growth and survival via anabolism and limiting oxidative stress, the PPP has been reported to suppress AMPK activity by inhibiting its phosphorylation (Gao et al., 2019), thereby activating key anabolic pathways mediated by acetyl-CoA carboxylase 1 (ACC1) and mammalian target of rapamycin complex 1 (mTORC1) (Figure 5A). Accordingly, we examined whether these pathways are altered in PCa cells in response to 6PGD inhibition. S3 treatment activated AMPK and repressed ACC1 and mTOR pathways in a dose-dependent manner in multiple PCa cell lines, as revealed by increased levels of phospho-AMPK (pAMPK) and phospho-ACC1 (pACC1) and decreased levels of phospho-S6K (pS6K)/phospho-S6 (pS6) (Figure 5B,C). Knockdown of 6PGD also repressed ACC1 and mTOR signalling (Figure 5—figure supplement 1), verifying that the effects we observed with the inhibitor were on target. More importantly, we recapitulated the impact of S3 on mTOR signalling in our tumour PDE system (Figure 5C). Collectively, these results reveal that PPP is an upstream regulator of AMPK, ACC1, and mTOR in PCa; therefore, targeting 6PGD could impede multiple cancer-promoting metabolic pathways.
 
-## A feedback loop between AR and 6PGD supports combinatorial targeting of these factors
+![Figure 5.](https://cdn.elifesciences.org/articles/62592/elife-62592-fig5-v2.jpg)
+
+**Figure 5.:** (A) Schematic showing key metabolic pathways downstream of the pentose phosphate pathway (PPP). By suppressing AMPK signalling, the PPP can enhance the activity of ACC1 and mTOR and subsequently various growth-promoting anabolic processes. (B) S3 activates AMPK and inhibits ACC1 and mTOR signalling. LNCaP (left) and VCaP (right) cells were treated for 24 hr with the indicated doses of S3 prior to analysis of indicated proteins by immunoblotting. (C) S3 inhibits mTOR signalling, as indicated by reduced pS6, in patient-derived explants (PDEs). PDEs (from n = 11 patients) were treated for 72 hr. The levels of pS6 were measured using immunohistochemistry (IHC). Boxes (graph on left) show minimum and maximum (bottom and top lines, respectively) and mean (line within the boxes) values. A paired t test was used to compare Ki67 positivity in treated versus vehicle-treated control samples (***p<0.001). Representative IHC images are shown on the right (scale bars represent 50 µm).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62592/elife-62592-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** VCaP cells were transfected with two distinct 6PGD siRNAs (siPGD.1 and siPGD.2) for 48 hr prior to analysis of indicated proteins by immunoblotting.
+
+### A feedback loop between AR and 6PGD supports combinatorial targeting of these factors
 
 During our investigations into the mode of action of S3 and physcion, we noted that both agents reduced steady-state levels of AR protein in models of castration-sensitive and castration-resistant PCa (Figure 6A, Figure 6—figure supplement 1A). This observation suggested that targeting 6PGD would inhibit the AR signalling axis. We validated this hypothesis by demonstrating that S3 and physcion dose-dependently reduced the expression of AR and its target genes in multiple cell line models (Figure 6A,B, Figure 6—figure supplement 1B–D) and, importantly, in our clinical PDE tissues (Figure 6C). Although 6PGD inhibitors significantly decreased AR protein, they did not alter AR transcript levels (Figure 6B, Figure 6—figure supplement 1B–D), indicative of a post-transcriptional mechanism. Since the ubiquitin-proteasome system (UPS) plays an integral role in AR protein stability (Wen et al., 2020), we hypothesised that 6PGD inhibition could enhance AR ubiquitylation and turnover. To test this idea, LNCaP cells were treated with a combination of S3 and the proteasome inhibitor MG132, after which the levels of total and ubiquitylated AR were measured by western blotting. In the presence of MG132, accumulation of ubiquitylated AR as well as the total cellular ubiquitylated protein pool was evident in S3-treated cells (Figure 6D). Moreover, in the presence of MG132, S3 did not reduce total AR protein levels beyond that caused by MG132 alone (Figure 6D). Collectively, these findings indicate that inhibition of 6PGD by S3 enhances turnover of AR by the UPS.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/62592/elife-62592-fig6-v2.jpg)
+
+**Figure 6.:** (A) Protein levels of AR and its target PSA in response to S3 (24 hr of treatment) and physcion (48 hr of treatment) in LNCaP cells, as determined by immunoblotting. HSP90 was used as a loading control. (B) AR target gene expression in response to S3 treatment in LNCaP cells, as determined by RT-qPCR. Gene expression was normalised to GUSB and L19 and represents the mean + SEM of three biological replicates; Veh was set to 1. Differential expression was evaluated using ANOVA and Dunnett’s multiple comparison tests (a, p<0.01; b, p<0.001; c, p<0.0001; NS, not significant). (C) S3 reduces AR protein levels in patient-derived explants (PDEs). AR levels in tumours from 14 patients were measured by immunohistochemistry (IHC; left). Boxes show minimum and maximum (bottom and top lines, respectively) and mean (line within the boxes) values. A paired t test was used to compare AR levels in treated versus control samples (***p<0.001). Representative IHC images are shown on the right (scale bars represent 50 µm). (D) S3 enhances AR ubiquitylation. LNCaP cells were treated with indicated concentrations of S3 ±10 µM MG132, or 10 µM MG132 alone, for 24 hr prior to AR immunoprecipitation. Both immunoprecipitates and total protein inputs (1/30 of immunoprecipitates) were subjected to immunoblotting analysis for the indicated proteins. (E, F) Anti-cancer effects of combined Enz and S3 treatment in VCaP cells. Live (E) and dead (F) cells were measured by Trypan blue exclusion assays 4 days after treatment. Data represent the mean + SEM of triplicate samples and are representative of three independent experiments. (G) Anti-cancer effects of combined Enz and S3 treatment in V16D cells. Live cells (F) were measured as in (D) after 3 days of treatment; data are representative of three independent experiments.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62592/elife-62592-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) S3 decreases androgen receptor (AR) and PSA protein levels in MR49F (left) and V16D (right) cells. Protein was extracted from cells at 24 hr and assessed by western blotting. HSP90 is shown as a loading control. EnzR: enzalutamide-resistant. (B, C) S3 suppresses AR target gene expression in VCaP (B) and V16D (C) cells after 24 hr treatment. Expression is shown relative to GUSB and L19; vehicle (Veh) was set to 1. (D) Physcion suppresses AR target gene expression in LNCaP cells after 24 hr treatment. Expression is shown relative to GUSB and L19. Differential expression compared to vehicle (B–D) was determined using ANOVA and Dunnett’s multiple comparison tests (*p<0.05; **p<0.01; ***p<0.001; ****p<0.0001; NS, not significant).
 
 Our results demonstrated that AR induces 6PGD gene expression (via SREBP1) and that 6PGD can enhance the stability of AR protein, collectively revealing a positive feedback loop between androgen signalling and the PPP. The co-dependency of these pathways led us to speculate that a combinatorial targeting approach could be an effective PCa therapy. In support of this hypothesis, enzalutamide and S3 exhibited an additive effect in androgen-sensitive (VCaP) and CRPC (V16D) cell lines (Figure 6E–G). Collectively, these findings highlight the complex interplay between AR and 6PGD in PCa cells and identify a potential new combinatorial therapy.
 
@@ -103,58 +147,579 @@ Since AR-targeted therapies are not curative, there is intense interest in ident
 
 ## Materials and methods
 
-## Reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>LNCaP</td>
+      <td>ATCC</td>
+      <td>ATCC CRL-1740 (RRID:CVCL_1379)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>VCaP</td>
+      <td>ATCC</td>
+      <td>ATCC CRL-2876 (RRID:CVCL_2235)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>PC3</td>
+      <td>ATCC</td>
+      <td>ATCC CRL-7934 (RRID:CVCL_0035)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>22RV1</td>
+      <td>ATCC</td>
+      <td>ATCC CRL-2505 (RRID:CVCL_1045)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>V16D</td>
+      <td>PMID:27046225</td>
+      <td>Kind gift from Prof. Amina Zoubeidi</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>MR49F</td>
+      <td>PMID:27046225</td>
+      <td>Kind gift from Prof. Amina Zoubeidi</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>Negative control siRNA</td>
+      <td>Ambion; Thermo Fisher Scientific</td>
+      <td>AM4637</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>siAR</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Silencer Select 4390824</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>siAR</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Silencer Select 4390825</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>siAR</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Custom 4399665</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>si6PGD</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>4427038</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tansfected construct (Homo sapiens)</td>
+      <td>siSREBP1</td>
+      <td>Dharmacon</td>
+      <td>ON-TARGETplus 6720</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ACC-1 [C83B10] (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology, Inc</td>
+      <td>3676 (RRID:AB_2219397)</td>
+      <td>Western blot: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pACC-1 [Ser79] (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology, Inc</td>
+      <td>3661 (RRID:AB_330337)</td>
+      <td>Western blot: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>β-Actin (AC-15) (mouse monoclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>A5441 (RRID:AB_476744)</td>
+      <td>Western blot: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AR-N20 (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology Inc</td>
+      <td>sc-816 (RRID:AB_1563391)</td>
+      <td>Western blot: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AR (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab108341 (RRID:AB_10865716)</td>
+      <td>Immunohistochemistry: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AR (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology Inc</td>
+      <td>sc-7305 (RRID:AB_626671)</td>
+      <td>Immunoprecipitation: (0.2 µg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AMPKα (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology, Inc</td>
+      <td>2532 (RRID:AB_330331)</td>
+      <td>Western blot: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pAMPKα [Thr172] 40H9 (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology, Inc</td>
+      <td>2535 (RRID:AB_331250)</td>
+      <td>Western blot: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GAPDH (HuCAL recombinant)</td>
+      <td>BioRad</td>
+      <td>12004168</td>
+      <td>Western blot: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Hsp90 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology, Inc</td>
+      <td>4874 (RRID:AB_2121214)</td>
+      <td>Western blot: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ki67 (mouse monoclonal)</td>
+      <td>Agilent Technologies</td>
+      <td>M724001-2 (RRID:AB_2631211)</td>
+      <td>Immunohistochemistry: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>P70 S6 Kinase (49D7) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology, Inc</td>
+      <td>2708 (RRID:AB_390722)</td>
+      <td>Western blot: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pP70 S6 Kinase [Thr389] (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology, Inc</td>
+      <td>9205S (RRID:AB_330944)</td>
+      <td>Western blot: (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>6PGD (rabbit polyclonal)</td>
+      <td>ThermoFisher Scientific</td>
+      <td>PA5-21376 (RRID:AB_11153623)</td>
+      <td>Western blot: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>6PGD (rabbit polyclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>HPA031314 (RRID:AB_10610278)</td>
+      <td>Immunohistochemistry: (1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PSA (rabbit polyclonal)</td>
+      <td>ProteinTech Group</td>
+      <td>10679-1-AP (RRID:AB_2134244)</td>
+      <td>Western blot: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>S6 (5G10) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology, Inc</td>
+      <td>2217 (RRID:AB_331355)</td>
+      <td>Western blot: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pS6 [Ser235/236] (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology, Inc</td>
+      <td>2211 (RRID:AB_331679)</td>
+      <td>Western blot: (1:1000) Immunohistochemistry: (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ubiquitin (mouse monoclonal)</td>
+      <td>Genesearch</td>
+      <td>3936</td>
+      <td>Western blot: (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat Anti-Rabbit (Biotinylated)</td>
+      <td>Agilent Technologies</td>
+      <td>E043201-8</td>
+      <td>Immunohistochemistry: (1:400)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>AR For</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>CAACTCCTTCAGCAACAGCA</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>AR Rev</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>TCGAAGTGCCCCCTAAGTAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FKBP5 For</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>AAAAGGCCAAGGAGCACAAC</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>FKBP5 Rev</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>TTGAGGAGGGGCCGAGTTC</td>
+    </tr>
+    <tr>
+      <td>sSquence-based reagent</td>
+      <td>GAPDH For</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>TGCACCACCAACTGCTTAGC</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>GAPDH Rev</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>GGCATGGACTGTGGTCATGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GUSB For</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>CGTCCCACCTAGAATCTGCT</td>
+    </tr>
+    <tr>
+      <td>sSquenced-based reagent</td>
+      <td>GUSB Rev</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>TTGCTCACAAAGGTCACAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KLK2 For</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>GGTGGCTGTGTACAGTCATGGAT</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>KLK2 Rev</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>TGTCTTCAGGCTCAAACAGGTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>KLK3 For</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>ACCAGAGGAGTTCTTGACCCCAAA</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>KLK3 Rev</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>CCCCAGAATCACCCGAGCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>L19 For</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>TGCCAGTGGAAAAATCAGCCA</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>L19 Rev</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>CAAAGCAAATCTCGACACCTTG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>PGD For</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>CACAGCAGGGTTCTCCAGTT</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>PGD Rev</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>GTCAGTGGTGGAGAGGAAGG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>PPIA For</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>GCATACGGGTCCTGGCAT</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>PPIA Rev</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>ACATGCTTGCCATCCAACC</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>TMPRSS2 For</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>GACCAAGAACAATGACATTGCG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>TMPRSS2 Rev</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>GTTCTGGCTGCAGCATCATG</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>TUBA1B For</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>CCTTCGCCTCCTAATCCCTA</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>TUBA1B Rev</td>
+      <td>This paper</td>
+      <td>qRT-PCR primers</td>
+      <td>CCGTGTTCCAGGCAGTAGA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dihydrotestosterone</td>
+      <td>Sigma Aldrich</td>
+      <td>Cas#: 521-18-6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Enzalutamide</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat#: S1250</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Apalutamide</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat#: S2840</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Darolutamide</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat#: S7559</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>S3</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: R164046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Physcion</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: 93893</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trolox</td>
+      <td>Selleck Chemicals</td>
+      <td>Cat#: S3665</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,2-13C2 glucose</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#: 453188</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Mini extraction kit</td>
+      <td>Qiagen</td>
+      <td>Cat#: 74104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript­TM cDNA Synthesis kit</td>
+      <td>Bio-Rad</td>
+      <td>Cat#: 1708890</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEXTflex Rapid Illumina Directional RNA-Seq Library Prep Kits</td>
+      <td>Perkin-Elmer</td>
+      <td>Cat#: NOVA-5138</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CyQuant Assay Cell Proliferation Assays</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: C7026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellROX Orange Flow Cytometry Assay Kits</td>
+      <td>Life Technologies</td>
+      <td>Cat#: C10493</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Lipofectamine RNAiMAX transfection reagent</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>13778075</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software, Inc.</td>
+      <td>Prism V7 RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>R Core Team (2019)</td>
+      <td>R version 3.6.2 RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ analysis software</td>
+      <td>NIH</td>
+      <td>ImageJ RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TraceFinder v5.0</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>OPTON-30688</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Reagents
 
 Chemicals, solvents, and solutions, including physcion (C16H12O5; 1,8-dihydroxy-3-methoxy-6-methyl-anthraquinone; emodin-3-methyl ether) and S3 (C15H10O4; 1-hydroxy-8-methoxy-anthraquinone), were obtained from Sigma-Aldrich (St Louis, MO, USA), except for enzalutamide (Selleck Chemicals; Houston, TX, USA); apalutamide (ARN-509), darolutamide (ODM-201), and Trolox (Sapphire Bioscience; Redfern, NSW, Australia). All chemicals/reagents were dissolved in dimethyl sulfoxide (DMSO) except dihydrotestosterone (DHT), which was dissolved in ethanol.
 
-## Cell line models
+### Cell line models
 
 LNCaP (RRID:CVCL_1379), VCaP (RRID:CVCL_2235), PC3 (RRID:CVCL_0035), and 22Rv1 (RRID:CVCL_1045) human prostate carcinoma cells were obtained from the American Type Culture Collection (ATCC, MD, USA). Dr. Amina Zoubeidi (Vancouver Prostate Centre, Vancouver, Canada) kindly provided LNCaP-V16D (castration-resistant, enzalutamide-sensitive) and LNCaP-MR49F (castration-resistant, enzalutamide-resistant) human PCa cells (Kuruma et al., 2013). LNCaP, 22Rv1, V16D, and MR49F cells were maintained in RPMI-1640 containing 10% FBS; the media for growth of MR49F cells was additionally supplemented with 10 µM Enz. VCaP cells were maintained in Dulbecco’s Modified Eagle’s Medium containing 10% FBS, 1% sodium pyruvate, 1% MEM non-essential amino acids, and 0.1 nM 5α-dihydrotestosterone (DHT). PC3 cells were maintained in RPMI-1640 containing 5% FBS. All cell lines were authenticated using short tandem repeat profiling in 2018/2019 by ATCC or CellBank Australia, and undergo regular testing for mycoplasma contamination.
 
-## Transfection of PCa cell lines
+### Transfection of PCa cell lines
 
 Gene-specific knockdown was achieved by reverse-transfection of PCa cell suspensions (total 5 × 105 cells) with 12.5 nM siRNA in six-well plates using RNAiMAX transfection reagent (Life Technologies; Thermo Fisher Scientific, Scornsby, VIC, Australia), according to the manufacturer’s instructions. The siRNAs used in this study were AR (Silencer Select #4390824/5; s1538, s1539 and custom #4399665; s551824 (sense: GAACUUCGAAUGAACUACAtt, antisense: UGUAGUUCAUUCGAAGUUCat)), 6PGD (Silencer Select #4427038; s10394 and 10395; Thermo Fisher Scientific), SREBP1 (ON-TARGETplus 6720; Dharmacon), and Negative Control 2 #AM4637 (Ambion; Thermo Fisher Scientific).
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Reverse transcription of (1  μg) and qPCR was done as described previously (Gillis et al., 2013). GeNorm (Vandesompele et al., 2002) was used to identify suitable reference genes: gene expression in cell lines is presented relative to L19 and GUSB, and gene expression in prostate tumour explants is presented relative to GAPDH, PPIA and TUBAIB. Primer sequences are provided in Supplementary file 1.
 
-## Immunoblotting
+### Immunoblotting
 
 Whole-cell lysates were prepared using RIPA buffer containing cOmplete ULTRA protease and phosphatase inhibitor (Cell Signaling Technology [CST], Danvers, MA, USA) and Western blotting was performed as described previously (Armstrong et al., 2018). A list of primary and secondary antibodies used in the study is provided in Supplementary file 2.
 
-## RNA sequencing (RNA-seq)
+### RNA sequencing (RNA-seq)
 
 LNCaP cells were seeded at density 5 × 105 cells in six-well dishes (Corning) and treated with 1 µM Enz (or 0.1% DMSO control) or transfected with 12.5 nM AR siRNA (or scrambled siRNA control). Each treatment comprised four replicates. After 24 hr, the cells were collected in Trizol (four replicates, for RNA analysis) or RIPA buffer + protease inhibitors (two replicates, for protein analysis). RNA extractions were completed using RNeasy Mini spin columns (Qiagen, Chadstone, VIC, Australia), according to the manufacturer’s instructions. RNA was eluted in 40 µl RNase-free H2O. RT-qPCR and western blotting were performed to verify the expected response of known AR-regulated proteins and genes, PSA/KLK3 and FKBP51/FKBP5. Subsequently, libraries were generated using 800 ng of RNA and NEXTflex Rapid Illumina Directional RNA-Seq Library Prep Kits (Bio-Scientific, Kirrawee, NSW, Australia), according to the manufacturer’s instructions. Sequencing was carried out at the South Australian Health and Medical Research Institute Genomics Facility using an Illumina NextSeq 500 (single read 75 bp v2 sequencing chemistry). The quality and number of reads for each sample were assessed with FastQC v0.11.3 (Andrews, 2010). Adaptors were trimmed from reads, and low-quality bases, with Phred scores < 28, were trimmed from ends of reads, using Trimgalore v0.4.4 (Krueger, 2012). Trimmed reads of <20 nucleotides were discarded. Reads passing all quality control steps were aligned to the hg38 assembly of the human genome using TopHat v2.1.1 (Kim et al., 2013) allowing for up to two mismatches. Reads not uniquely aligned to the genome were discarded. HTSeq-count v0.6.1 (Anders et al., 2015) was used with the union model to assign uniquely aligned reads to Ensembl Hg38.86-annotated genes. Data were normalised across libraries by the trimmed mean of M-values (TMM) normalisation method, implemented in the R v3.5.0, using Bioconductor v3.6 EdgeR v3.20.9 package (Robinson et al., 2010). Only genes expressed at count-per-million value greater than 10 in at least two samples per group were retained for further analysis. Differentially expressed genes were selected based on the robust version of the quasi-likelihood negative binomial generalised log-linear model (Lun et al., 2016), with false discovery rate (FDR) set at 0.05. RNA-seq data are available through NCBI’s Gene Expression Omnibus (GSE152254).
 
-## Cell growth and apoptosis assays
+### Cell growth and apoptosis assays
 
 Cell growth curves were done using Trypan blue exclusion and manual counting of cells, as described previously (Centenera et al., 2015). Cell viability was also determined by CyQuant Assay Cell Proliferation Assays (Thermo Fisher Scientific), according to the manufacturer’s instructions. Apoptosis was measured by collecting cells in FACS binding buffer (47 ml of HANKS buffered saline, 500 µl of Herpes solution, and 2.5 ml of 100 mM CaCl2), staining with Annexin V PE BD Pharmingen (BD Biosciences, CA, USA) and 1 mM 7-aminoactiomycin D (Thermo Fisher Scientific) and analysis by Flow Cytometry using a BD LSRFortessa X20.
 
-## Metabolomics
+### Metabolomics
 
 To measure 6PG abundance (Figure 3C), LNCaP cells were seeded at a density of 5 × 105 cells per well into Nunclon D multi-dishes with poly-lysine coating (Thermo Fisher Scientific), with or without transfection with siPGD (Silencer Select s10394). At time of collection, cells were washed twice with 0.9% w/v NaCl, scraped in MeOH:H2O (1:1). Chloroform was added prior to vortexing, centrifuging, and collecting the aqueous layer. The aqueous layer was dried in a Savant SpeedVac (Thermo Fisher Scientific) without heat. Dried samples were resuspended in 60 µl LC-MS H2O, centrifuged at 15,000 × g at 4°C for 10 min, and supernatant transferred into HPLC vials for LCMS analysis. Samples were kept at 4°C on the autosampler tray. Glycolytic and pentose-phosphate pathway metabolites were measured using 1260 Infinity (Agilent)-QTRAP5500 (AB Sciex) LC-MS/MS system. Analyte separation was achieved using a Synergi 2.5 µm Hydro-RP 100A LC Column (100 × 2 mm) (Phenomenex) at ambient temperature. The pair of buffers used were 95:5 (v/v) water:acetonitrile containing 10 mM tributylamine and 15 mM acetic acid (Buffer A) and 100% acetonitrile (Buffer B) flowed at 200 µl/min; injection volume was 5 µl. Scheduled MRM acquisition was performed in negative mode (350°C, –4500 V). Raw data was extracted using MSConvert (Chambers et al., 2012) and in-house MATLAB scripts.
 
-## Metabolic flux analysis
+### Metabolic flux analysis
 
-LNCaP cells were seeded at a density of 7.5 × 105 cells per well into Nunclon D multi-dishes with poly-lysine coating (Thermo Fisher Scientific), with or without transfection of siRNAs (siAR, Silencer Select s1539; siPGD, Silencer Select s10394; siSREBF1, ON-TARGETplus 6720). For the 13C-labelled glucose time-course experiment, cells were cultured for 46 hr before adding fresh media for a further 2 hr and then spiking in 1,2-13C2 glucose at a final concentration of 11 mM (1:1 with natural glucose). Incorporation of the labelled glucose was allowed to proceed for 0, 10, 60, 120, 240, 480, or 900 s. This spike-in strategy (as opposed to media exchange) enabled a rapid time course with minimal disruption to glycolytic fluxes. Experiments were stopped by quenching the cells with ice-cold methanol:H2O (1:1) and placing plates at –20°C (prior to cell scraping). After completion of the time course, cell slurries in methanol:H2O were collected by scraping and transferred into microfuge tubes. Samples were identically processed and assayed as described for metabolomics samples, with the exception that MRMs were configured to quantify mass isotopologues of glycolytic and PPP intermediates. Fluxes through the oxidative and non-oxidative branches of PP pathway were estimated using the accumulation/dilution rate of m1 and m2 isotopologues of Ru5P. Assuming steady-state metabolism, the dilution rate (D) of Ru5P was calculated using the continuous stirred-tank reactor (CSTR) equation mt=mmaximum∙1-e-D∙t+minitial , with m representing Ru5P mass isotopologues m1 and m2 datapoints generated from the time-course experiment. D was estimated using a least-squares Monte Carlo fitting script in MATLAB. Since a Monte Carlo procedure was used to simulate dilution rates, empirical p-values were calculated using the equation: p=(r + 1)/(n + 1) (Davison and Hinkley, 1997), where r is the number of instances the null hypothesis (H0: D - DsiCON ≥0) is true and n is the number of simulated replicates (n = 1000).
+LNCaP cells were seeded at a density of 7.5 × 105 cells per well into Nunclon D multi-dishes with poly-lysine coating (Thermo Fisher Scientific), with or without transfection of siRNAs (siAR, Silencer Select s1539; siPGD, Silencer Select s10394; siSREBF1, ON-TARGETplus 6720). For the 13C-labelled glucose time-course experiment, cells were cultured for 46 hr before adding fresh media for a further 2 hr and then spiking in 1,2-13C2 glucose at a final concentration of 11 mM (1:1 with natural glucose). Incorporation of the labelled glucose was allowed to proceed for 0, 10, 60, 120, 240, 480, or 900 s. This spike-in strategy (as opposed to media exchange) enabled a rapid time course with minimal disruption to glycolytic fluxes. Experiments were stopped by quenching the cells with ice-cold methanol:H2O (1:1) and placing plates at –20°C (prior to cell scraping). After completion of the time course, cell slurries in methanol:H2O were collected by scraping and transferred into microfuge tubes. Samples were identically processed and assayed as described for metabolomics samples, with the exception that MRMs were configured to quantify mass isotopologues of glycolytic and PPP intermediates. Fluxes through the oxidative and non-oxidative branches of PP pathway were estimated using the accumulation/dilution rate of m1 and m2 isotopologues of Ru5P. Assuming steady-state metabolism, the dilution rate (D) of Ru5P was calculated using the continuous stirred-tank reactor (CSTR) equation $mt=m_{maximum}∙1-e^{-D∙t}+m_{initial}$ , with m representing Ru5P mass isotopologues m1 and m2 datapoints generated from the time-course experiment. D was estimated using a least-squares Monte Carlo fitting script in MATLAB. Since a Monte Carlo procedure was used to simulate dilution rates, empirical p-values were calculated using the equation: p=(r + 1)/(n + 1) (Davison and Hinkley, 1997), where r is the number of instances the null hypothesis (H0: D - DsiCON ≥0) is true and n is the number of simulated replicates (n = 1000).
 
-## ROS assays
+### ROS assays
 
 Cellular ROS levels were measured using CellROX Orange Flow Cytometry Assay Kits (Life Technologies). Briefly, 24 hr post-seeding (5 × 105 cells per well, six-well plate), the cells were treated with or without antioxidant (0.5 mM Trolox) and left to incubate for the indicated time (siRNA, 48 hr; S3, 72 hr). Cells were stained with CellROX Orange and SYTOX Red Stain and analysed by Flow Cytometry (10–30,000 cells/sample) using a BD LSRFortessa X20.
 
-## Ex vivo culture of human prostate tumours
+### Ex vivo culture of human prostate tumours
 
 PCa tissue was obtained with informed written consent through the Australian Prostate Cancer BioResource from men undergoing radical prostatectomy at St Andrew’s Hospital (Adelaide, Australia). Ethical approval for the use of human prostate tumours was obtained from the Ethics Committees of the University of Adelaide (Adelaide, Australia; approval H-2012-016) and St Andrew’s Hospital (Adelaide, Australia). All experiments were performed in accordance with the guidelines of the National Health and Medical Research Council (Australia). The 8 mm core of tissue was dissected and prepared for ex vivo culturing as described previously (Centenera et al., 2012). Tissues were treated with 10 µM Enz or 40 µM S3 for 72 hr. At the time of collection, the tissues were preserved in RNAlater (Invitrogen; Thermo Fisher Scientific) or formalin-fixed then paraffin-embedded.
 
-## Evaluation of AR ubiquitylation
+### Evaluation of AR ubiquitylation
 
 LNCaP cells (1.5 × 106 cells per 6 cm plate) were treated with indicated concentrations of S3 ±10 µM MG132, or 10 µM MG132 alone, for 24 hr. Cells were lysed in RIPA lysis buffer. After centrifugation for 10 min at 16,000 g, supernatants were incubated with 0.2 µg anti-AR antibody (Santa Cruz Biotechnology, sc-7305; RRID:AB_626671) for 16 hr at 4°C with constant rotation, followed by incubation with 20 µl protein G Sepharose beads (Thermo Fisher) for a further period of 2 hr at 4°C with constant rotation. Beads were washed twice with RIPA lysis buffer and then resuspended in 2× Laemmli sample buffer before samples were assessed by Western blotting.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 PDE tissue sections were evaluated for target antigens 6PGD, Ki67, and pS6 (Ser235/236) by IHC as described previously (Centenera et al., 2012). The antibodies used are shown in Supplementary file 2. An automated staining protocol (U OptiView DAB IHC v6 [v1.00.0136]) using the Ventana BenchMark ULTRA IHC/ISH Staining Module (F Hoffmann-La Roche Ltd, Switzerland) was used for the detection of AR. Quantitative image analysis for AR and pS6 (Ser235/236) was completed using FIJI software (ImageJ; http://fiji.sc/Fiji; version 1.52 p). Briefly, images (obtained from NDP viewer version 2.7.52; Hamamatsu Photonics K.K, Hamamatsu City, Japan) were imported and converted into three panels using the Colour Deconvolution plug-in and vector haematoxylin and DAB staining (HDAB) commands. The Adjust Threshold plug-in was used on the DAB-only images to measure % area (positivity) and reciprocal intensity (RI). The final DAB intensity values were calculated by subtracting RI from maximal intensity (255) and multiplying by % area (positivity). Values from 20 to 70 images per treatment were measured and RI was kept constant for each patient.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are displayed as the mean; error bars are standard error. Differences between groups were determined using GraphPad Prism with t tests or one-way ANOVA (with Tukey or Dunnett’s post hoc tests), as indicated in the figure legends. A p-value ≤ 0.05 was considered statistically significant.

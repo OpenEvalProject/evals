@@ -11,19 +11,35 @@
 
 ### Affiliations
 
-1. https://ror.org/001z21q04 Centre de Recherche des Cordeliers, INSERM, Sorbonne Université, Université Paris Cité. Paris France
-2. https://ror.org/05f82e368 Robustesse et Evolvabilité de la vie, Institut Cochin, Université de Paris, INSERM U1016, CNRS UMR 8104 Paris France
-3. https://ror.org/003vg9w96 PAPPSO, Université Paris-Saclay, INRAE, CNRS Paris France
+1. Centre de Recherche des Cordeliers, INSERM, Sorbonne Université, Université Paris Cité. Paris France ([ROR:001z21q04](https://ror.org/001z21q04))
+2. Robustesse et Evolvabilité de la vie, Institut Cochin, Université de Paris, INSERM U1016, CNRS UMR 8104 Paris France ([ROR:05f82e368](https://ror.org/05f82e368))
+3. PAPPSO, Université Paris-Saclay, INRAE, CNRS Paris France ([ROR:003vg9w96](https://ror.org/003vg9w96))
 
 † Corresponding author
 
 ## Abstract
 
-Antibiotics of the β-lactam (penicillin) family inactivate target enzymes called D,D-transpeptidases or penicillin-binding proteins (PBPs) that catalyze the last cross-linking step of peptidoglycan synthesis. The resulting net-like macromolecule is the essential component of bacterial cell walls that sustains the osmotic pressure of the cytoplasm. In Escherichia coli , bypass of PBPs by the YcbB L,D-transpeptidase leads to resistance to these drugs. We developed a new method based on heavy isotope labeling and mass spectrometry to elucidate PBP- and YcbB-mediated peptidoglycan polymerization. PBPs and YcbB similarly participated in single-strand insertion of glycan chains into the expanding bacterial side wall. This absence of any transpeptidase-specific signature suggests that the peptidoglycan expansion mode is determined by other components of polymerization complexes. YcbB did mediate β-lactam resistance by insertion of multiple strands that were exclusively cross-linked to existing tripeptide-containing acceptors. We propose that this undocumented mode of polymerization depends upon accumulation of linear glycan chains due to PBP inactivation, formation of tripeptides due to cleavage of existing cross-links by a β-lactam-insensitive endopeptidase, and concerted cross-linking by YcbB.
+Antibiotics of the β-lactam (penicillin) family inactivate target enzymes called D,D-transpeptidases or penicillin-binding proteins (PBPs) that catalyze the last cross-linking step of peptidoglycan synthesis. The resulting net-like macromolecule is the essential component of bacterial cell walls that sustains the osmotic pressure of the cytoplasm. In Escherichia coli, bypass of PBPs by the YcbB L,D-transpeptidase leads to resistance to these drugs. We developed a new method based on heavy isotope labeling and mass spectrometry to elucidate PBP- and YcbB-mediated peptidoglycan polymerization. PBPs and YcbB similarly participated in single-strand insertion of glycan chains into the expanding bacterial side wall. This absence of any transpeptidase-specific signature suggests that the peptidoglycan expansion mode is determined by other components of polymerization complexes. YcbB did mediate β-lactam resistance by insertion of multiple strands that were exclusively cross-linked to existing tripeptide-containing acceptors. We propose that this undocumented mode of polymerization depends upon accumulation of linear glycan chains due to PBP inactivation, formation of tripeptides due to cleavage of existing cross-links by a β-lactam-insensitive endopeptidase, and concerted cross-linking by YcbB.
 
 ## Introduction
 
 The peptidoglycan is an essential component of the bacterial cell wall, which provides a mechanical barrier against the turgor pressure of the cytoplasm thereby preventing cells from bursting and lysing (Vollmer and Bertsche, 2008). The peptidoglycan also determines the shape of bacterial cells and is intimately integrated into the cell division process since the barrier to the osmotic pressure needs to be maintained during the entire cell cycle. These functions depend upon the net-like structure of the peptidoglycan macromolecule that is made of glycan strands cross-linked by short peptides (Figure 1A). It is assembled from disaccharide-peptide subunits consisting of β,1→4 linked N-acetylglucosamine (GlcNAc) and N-acetyl muramic acid (MurNAc) and a stem peptide linked to the D-lactoyl group of MurNAc (Figure 1B; Mengin-Lecreulx et al., 1982). Polymerization of the subunit is mediated by glycosyltransferases for the elongation of glycan chains and by transpeptidases for cross-linking stem peptides carried by adjacent glycan chains.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig1-v2.jpg)
+
+**Figure 1.:** (A) Structure of peptidoglycan. The net-like macromolecule is made of glycan strands cross-linked by short peptides. The polymerization of peptidoglycan involves glycosyltransferases that catalyze the elongation of glycan strands and transpeptidases that form 4→3 or 3→3 cross-links. (B) Structure of the peptidoglycan subunit. The stem peptide is assembled in the cytoplasm as a pentapeptide, L-Ala1-D-iGlu2-DAP3-D-Ala4-D-Ala5, in which D-iso-glutamic acid (D-iGlu) and diaminopimelic acid (DAP) are connected by an amide bond between the γ-carboxyl of D-iGlu and the L stereo-center of DAP. (C) Formation of 4→3 cross-links. Active-site Ser transpeptidases belonging to the penicillin-binding protein (PBP) family catalyze the formation of 4→3 cross-links connecting the carbonyl of D-Ala at the 4th position of an acyl donor stem peptide to the side-chain amino group of DAP (D stereo-center) at the 3rd position of an acyl acceptor stem peptide. A pentapeptide stem is essential in the donor substrate to form the acyl enzyme intermediate. The acyl acceptor potentially harbors a tripeptide, a tetrapeptide, or a pentapeptide stem leading to the formation of Tetra-Tri, Tetra-Tetra, or Tetra-Penta dimers, respectively. (D) Formation of 3→3 cross-links. Active-site Cys transpeptidases belonging to the L,D-transpeptidase (LDT) family catalyze the formation of 3→3 cross-links connecting two DAP residues. LDTs are specific of tetrapeptide-containing donors.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Key intermediates connecting synthesis (on the left) to recycling (on the right) are figured in red. Metabolites common to peptidoglycan metabolism and to other metabolic pathways are figured in purple. Effective incorporation of diaminopimelic acid (DAP) from the culture medium requires inactivation of the genes encoding DapF and LysA generating lysine auxotrophy. Peptidoglycan turnover refers to the release of peptidoglycan fragments (<600 Da) into the culture medium by crossing the outer membrane through porins.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) One strand at a time. (B) Two strands at a time. (C) Three stands at a time (applies to the three-for-one model). (D) Calculation for various numbers of strands. Existing and neo-synthesized strands are figured in red and in purple, respectively. Donor and acceptor stems are represented by an arrow and by a hook, respectively. Uncross-linked peptide stems that protrude above and below the plan are indicated by circles with a dot or a cross, respectively.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** The reactions catalyzed by transpeptidases (formation of cross-links), endopeptidases (hydrolysis of cross-links), and carboxypeptidases (hydrolysis of C-terminal D-Ala4 and D-Ala5 are indicated by black, red, and blue arrows, respectively). PG is polymerized from a single precursor, Lipid II originates from de novo synthesis and from recycling. This lipid consists of the disaccharide-pentapeptide subunit linked to the lipid carrier (undecaprenyl) by a pyrophosphate bond.
 
 The last cross-linking step of peptidoglycan polymerization is catalyzed by two types of structurally unrelated transpeptidases (Biarrotte-Sorin et al., 2006), the L,D-transpeptidases (LDTs) (Mainardi et al., 2008) and the D,D-transpeptidases (Zapun et al., 2008), the latter belonging to the penicillin-binding protein (PBP) family. PBPs (Figure 1C) and LDTs (Figure 1D) use different acyl donor substrates (pentapeptide versus tetrapeptide) resulting in the formation of 4→3 versus 3→3 cross-links, respectively (Hugonnet et al., 2016; Mainardi et al., 2005). PBPs are inactivated by all classes of β-lactams, whereas LDTs are inactivated by carbapenems only (Mainardi et al., 2007). In wild-type Escherichia coli, LDTs are fully dispensable for growth, at least in laboratory conditions (Magnet et al., 2008). Accordingly, these enzymes have a minor contribution to peptidoglycan cross-linking in the exponential growth phase (Vollmer and Bertsche, 2008; Glauner, 1988). However, selection of mutants resistant to ceftriaxone, a β-lactam of the cephalosporin class, results in a full bypass of PBPs by the YcbB LDT (Hugonnet et al., 2016). The bypass requires overproduction of both the (p)ppGpp alarmone and YcbB. The peptidoglycan of the mutant grown in the presence of ceftriaxone only contains 3→3 cross-links following PBP inhibition.
 
@@ -43,37 +59,200 @@ The peptidoglycan expansion models described above were previously investigated 
 
 ## Results
 
-## Muropeptide composition of the peptidoglycan from E. coli M1.5
+### Muropeptide composition of the peptidoglycan from E. coli M1.5
 
 Strain M1.5 was chosen for initial experiments because D,D-transpeptidases and LDTs both have major contributions to peptidoglycan polymerization offering the possibility to study 4→3 and 3→3 cross-linked dimers from the same peptidoglycan preparation. Strain M1.5 was grown in labeled M9 minimal medium containing [15N]NH4Cl and [13C]glucose as the sole sources of nitrogen and carbon, respectively. E. coli M1.5 was also grown in unlabeled M9 minimal medium. Peptidoglycan was extracted from exponentially growing cultures and digested by muramidases, which generate soluble disaccharide-peptides. The resulting muropeptides were reduced with NaBH4 and purified by rpHPLC. MS analyses (see below) were performed to determine the structure of the six predominant muropeptides. These muropeptides included two monomers containing either a tripeptide (L-Ala1-D-iGlu2-DAP3) or a tetrapeptide (L-Ala1-D-iGlu2-DAP3-D-Ala4) stem, both linked to a reduced GlcNAc-MurNAc disaccharide. The remaining four muropeptides were dimers containing a 3→3 or a 4→3 cross-link with a tripeptide or a tetrapeptide stem in the acceptor position in all four combinations. As expected, growth in the labeled versus unlabeled medium did not alter the muropeptide composition of peptidoglycan. The average abundance of the six predominant muropeptides is reported in Supplementary file 1a.
 
-## Determination of the isotopic composition of the unlabeled monomers
+### Determination of the isotopic composition of the unlabeled monomers
 
 The mass spectra of monomers from E. coli grown in unlabeled M9 minimal medium displayed the conventional isotopic clusters (Figure 2, Figure 2—figure supplement 1 for the disaccharide-tripeptide and -tetrapeptide, respectively), as expected for the natural abundances of carbon, hydrogen, nitrogen, and oxygen isotopes (see Supplementary Materials and methods for the method used to deduce the mass and abundance of isotopologues from the isotopic composition of the medium). For the disaccharide-tripeptide, the most abundant isotopologue (64.382%) only contained the light isotopes of the four chemical elements. The second peak of the isotopic cluster, peak A, was composed of isotopologues containing only light isotopes except for either one 13C (23.497%), 2H (0.437%), 15N (1.411%), or 17O (0.492%) isotope, together representing ca. 26% of the relative abundance of the most abundant isotopologues. The overlay of the experimental and simulated spectra (Figure 2C) confirmed the expected isotopologue composition (see Supplementary Materials and methods for the method used to simulate mass spectra by using the deduced mass and abundance of isotopologues).
 
-## Determination of the isotopic composition of the fully labeled monomers
+![Figure 2.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig2-v2.jpg)
+
+**Figure 2.:** (A) Experimental mass spectrum of the mono-protonated ([M+H]+) disaccharide-tripeptide (C34H58N6O20•H+) extracted from Escherichia coli M1.5 grown in unlabeled M9 minimal medium. (B) Simulated spectrum obtained for the natural abundance of carbon and nitrogen isotopes. (C) Overlay of the spectra in A and B. (D) Observed mass spectrum of the GlcNAc-MurNAc-tripeptide purified from the peptidoglycan of E. coli M1.5 grown in the labeled M9 minimal medium. (E) Simulated mass spectrum obtained for 99% 13C and 15N labeling. (F) Overlay of spectra in D and E. GlcNAc, N-acetylglucosamine; MurNAc, N-acetyl muramic acid.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Experimental mass spectrum of the mono-protonated ([M+H]+) disaccharide-tetrapeptide (C37H63N7O21•H+) extracted from Escherichia coli M1.5 grown in unlabeled M9 minimal medium. (B) Simulated spectrum obtained for the natural abundance of carbon and nitrogen isotopes. (C) Overlay of the spectra in A and B. (D) Observed mass spectrum of the GlcNAc-MurNAc-tetrapeptide purified from the peptidoglycan of E. coli M1.5 grown in the labeled M9 minimal medium. (E) Simulated mass spectrum obtained for 99% 13C and 15N labeling. (F) Overlay of spectra in D and E. The additional peaks of low intensity in the experimental spectra, in particular for the labeled disaccharide-tetrapeptide, correspond to the [2M+2H]2+ ion. GlcNAc, N-acetylglucosamine; MurNAc, N-acetyl muramic acid.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig2-figsupp2-v2.jpg)
+
+### Determination of the isotopic composition of the fully labeled monomers
 
 MS analyses were performed on the reduced disaccharide-tripeptide monomer purified from the peptidoglycan of strain M1.5 grown in the labeled medium (Figure 2D). The theoretical mass spectra were simulated as described in the Supplementary Materials and methods section (Figure 2E) and overlaid to the experimental spectra (Figure 2F), revealing a good match between the two types of spectra. For the labeled tripeptide, the most intense peak of the isotopic cluster at m/z 911.473 (z=1) (Figure 2D) corresponds to peak D described in the Supplementary Materials and methods, which is mainly accounted for by the uniformly labeled disaccharide-tripeptide (m/z value of 911.474). Additional isotopic cluster peaks at m/z values of 908.463, 909.467, and 910.469 (Figure 2D), correspond to peaks A, B, and C (m/z values of 908.467, 909.469, and 910.472). These peaks correspond to uniformly labeled species except for the presence of combinations of 3, 2, and 1 light 12C or 14N nuclei, respectively. The presence of these peaks fits the simulated spectra that were calculated with the extent of [15N]NH4Cl and [13C]glucose labeling reported by the manufacturers (99% for each isotope; please note that both the preculture and the culture were performed in labeled medium to avoid isotopic dilution). The same conclusion was drawn from the comparison of the simulated and experimental spectra of the labeled disaccharide-tetrapeptide (Figure 2—figure supplement 1). Qualitatively, it is worth noting that the mass spectra of the unlabeled and labeled disaccharide-tripeptide presented in Figure 2 are almost mirror images. This reflects the preponderance of the isotopologue containing only light isotopes in the unlabeled muropeptide followed (to the right) by peaks of decreasing intensity resulting from incorporation of a few rare heavy isotopes. In contrast, the peak of the fully labeled disaccharide-peptide is preceded (to the left) by peaks of decreasing masses due to incorporation of a few rare 12C and 14N nuclei. The same conclusions apply to the spectrum of the unlabeled disaccharide-tetrapeptide monomer (Figure 2—figure supplement 1).
 
 The structure of the isotopologues was determined by MS/MS. As an example, Table 1 presents the MS/MS data obtained for mono-protonated isotopologue ions of the labeled disaccharide-tetrapeptide (C37H63N7O21•H+) under isotopic cluster peaks at m/zobs 986.519 and 985.516. These values match the calculated m/zcal values for isotopologues either exclusively containing the 13C and 15N isotopes (m/z 986.518) or bearing a single light isotope of either element (m/zcal 985.515 or 985.521 for a 12C or 14N isotope, respectively). Fragmentation of the isotopologues under the peak at m/zobs of 986.519 resulted in the expected set of product ions for a uniformly labeled disaccharide-tetrapeptide, while two sets of product ions, differing by approximately one mass unit, were observed for the fragmentation of isotopologues bearing a single light isotope under the peak at m/zobs of 985.516. The fragments in the lower-mass ion set had retained their single light nucleus (12C or 14N) while the fragments in the higher-mass ion set had lost their single light nucleus and were fully labeled (these higher-mass fragments matched exactly those obtained for the fully labeled disaccharide-tetrapeptide). Thus, each fragment was present in the spectrum as a pair of peaks that reflected the presence or the absence of the light isotope. Table 1 provides the relative intensity of these two peaks for each fragment of the isotopologues. The relative intensity of the peak containing the light isotope decreased with the mass of the fragment. This result is expected for a uniform distribution of the light isotope in both the sugar and peptide moieties of the disaccharide-tetrapeptide because a smaller number of nuclei (smaller mass) makes it more probable to lose the single light nucleus during fragmentation.
 
+**Table 1.**
+ Tandem mass spectrometry analysis of isotopologues of the GlcNAc-MurNAc-tetrapeptide.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Structure</th>
+      <th rowspan="2">Isotopologue</th>
+      <th rowspan="2">m/zcal</th>
+      <th colspan="2">Fully labeled</th>
+      <th colspan="2">One light nucleus</th>
+    </tr>
+    <tr>
+      <th>m/zobs</th>
+      <th>Intensity (%)</th>
+      <th>m/zobs</th>
+      <th>Intensity (%)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">GlcNAc-MurNAc-L-Ala-γ-D-Glu-DAP-D-Ala*</td>
+      <td>Fully labeled</td>
+      <td>986.52</td>
+      <td>986.52</td>
+      <td>100</td>
+      <td>ND</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>One light nucleus</td>
+      <td>985.52</td>
+      <td>ND</td>
+      <td>0</td>
+      <td>985.60</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td rowspan="2">MurNAc-L-Ala-γ-D-Glu-DAP-D-Ala</td>
+      <td>Fully labeled</td>
+      <td>774.42</td>
+      <td>774.42</td>
+      <td>100</td>
+      <td>774.45</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>One light nucleus</td>
+      <td>773.41</td>
+      <td>ND</td>
+      <td>0</td>
+      <td>773.45</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td rowspan="2">MurNAc-L-Ala-γ-D-Glu-DAP</td>
+      <td>Fully labeled</td>
+      <td>681.36</td>
+      <td>681.36</td>
+      <td>100</td>
+      <td>681.40</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>One light nucleus</td>
+      <td>680.36</td>
+      <td>ND</td>
+      <td>0</td>
+      <td>680.40</td>
+      <td>88</td>
+    </tr>
+    <tr>
+      <td rowspan="2">L-Ala-γ-D-Glu-DAP-D-Ala</td>
+      <td>Fully labeled</td>
+      <td>485.27</td>
+      <td>485.27</td>
+      <td>100</td>
+      <td>485.30</td>
+      <td>35</td>
+    </tr>
+    <tr>
+      <td>One light nucleus</td>
+      <td>484.26</td>
+      <td>ND</td>
+      <td>0</td>
+      <td>484.30</td>
+      <td>65</td>
+    </tr>
+    <tr>
+      <td rowspan="2">γ-D-Glu-DAP-D-Ala</td>
+      <td>Fully labeled</td>
+      <td>410.22</td>
+      <td>410.22</td>
+      <td>100</td>
+      <td>410.25</td>
+      <td>47</td>
+    </tr>
+    <tr>
+      <td>One light nucleus</td>
+      <td>409.22</td>
+      <td>ND</td>
+      <td>0</td>
+      <td>409.25</td>
+      <td>53</td>
+    </tr>
+    <tr>
+      <td rowspan="2">L-Ala-γ-D-Glu-DAP</td>
+      <td>Fully labeled</td>
+      <td>392.21</td>
+      <td>392.21</td>
+      <td>100</td>
+      <td>392.25</td>
+      <td>48</td>
+    </tr>
+    <tr>
+      <td>One light nucleus</td>
+      <td>391.21</td>
+      <td>ND</td>
+      <td>0</td>
+      <td>391.25</td>
+      <td>52</td>
+    </tr>
+    <tr>
+      <td rowspan="2">γ-D-Glu-DAP</td>
+      <td>Fully labeled</td>
+      <td>317.17</td>
+      <td>317.17</td>
+      <td>100</td>
+      <td>317.20</td>
+      <td>54</td>
+    </tr>
+    <tr>
+      <td>One light nucleus</td>
+      <td>316.16</td>
+      <td>ND</td>
+      <td>0</td>
+      <td>316.20</td>
+      <td>46</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Mono-protonated precursor ion: C37H63N7O21•H+.m/zcal, calculated m/z; m/zobs, observed m/z; ND, not detected._
+
 Taken together, these results show that we successfully achieved extensive peptidoglycan labeling that was only limited by the extent (99%) of the labeling of glucose and NH4Cl introduced in the labeled growth medium. Thus, isotopic dilution due to atmospheric N2 and CO2 was not an issue, as expected from the metabolic fluxes of E. coli grown in minimal medium. Note that the preculture and the culture were both performed in labeled M9 medium to avoid any contribution of the initial inoculum to the final isotopic composition of the peptidoglycan. Simulation of high-resolution mass spectra was successfully used to assign isotopologues of defined structure and isotopic composition to the corresponding peaks in experimental mass spectra (Figure 2, Figure 2—figure supplement 1). These assignments were confirmed by MS/MS (shown for two isotopologues in Table 1).
 
-## Mass spectra of the four dimers
+### Mass spectra of the four dimers
 
 Peptidoglycan dimers do not harbor any symmetry axis, as one peptide stem acts as an acyl donor in the transpeptidation reaction whereas the other acts as an acyl acceptor and retains the single free carboxyl extremity of the peptide moiety (Figure 1). By convention, the structure of dimers is represented by placing the donor on the left separated from the acceptor by an arrow (donor→acceptor). In E. coli M1.5, the YcbB LDT catalyzes the formation of DAP3→DAP3 cross-links connecting two diaminopimelyl residues (DAP3) located at the third position of a donor stem (a tripeptide) and of an acceptor stem (a tripeptide or a tetrapeptide), thus generating Tri→Tri and Tri→Tetra dimers, respectively. These dimers only differ by the presence or absence of D-Ala at the C-terminal end of the acceptor stem. The D,D-transpeptidases of E. coli M1.5 catalyze the formation of D-Ala4→DAP3 cross-links connecting a tetrapeptide donor stem to an acceptor stem containing either a tripeptide (Tetra→Tri dimer) or a tetrapeptide (Tetra→Tetra dimer). In these dimers, D-Ala at the fourth position of the donor stem is engaged in the D-Ala4→DAP3 cross-link and DAP3 or D-Ala4 occupies the C-terminal position of the acceptor stem. The Tri→Tetra and Tetra→Tri isomers formed by YcbB and the D,D-transpeptidases can be discriminated by MS/MS on the basis of the cleavage of the DAP3→DAP3 and D-Ala4→DAP3 cross-links, respectively, and of the loss of a C-terminal D-Ala only present in the acceptor stem of the dimer generated by YcbB (Supplementary data). As detailed above for monomers, the comparison of the experimental and simulated mass spectra showed that the observed isotopic clusters of the dimers can be accounted for by the isotopic composition of the growth media (see Figure 2—figure supplement 2 for the Tetra→Tetra dimer). The structure of all dimers was confirmed by MS/MS (Supplementary file 2). The peptidoglycan preparations also contained small amounts of trimers and tetramers that were not analyzed in the current study because their low abundance, poor resolution by rpHPLC, and complex isotopomer composition precluded their full characterization by MS and MS/MS.
 
-## Study design for the kinetics of incorporation of unlabeled subunits into the fully labeled peptidoglycan of strain M1.5
+### Study design for the kinetics of incorporation of unlabeled subunits into the fully labeled peptidoglycan of strain M1.5
 
 To investigate the mode of insertion of peptidoglycan precursors into sacculi, E. coli M1.5 was grown in the heavy isotope labeled minimal medium to an OD600 of 0.4. Bacteria were collected by centrifugation and resuspended in the unlabeled medium. Incubation was continued in the same conditions and samples were collected at 5, 30, 45, 65, and 85 min after the medium switch (Figure 3A), representing a little less than a generation (90 min; Supplementary file 1b). Peptidoglycan was extracted and the six predominant muropeptides, two monomers and four dimers, were purified by rpHPLC (Figure 3B-F) and identified by MS (Figure 3G). The relative abundance of these six muropeptides remained similar in all samples indicating, as expected, that the medium switch did not alter the overall peptidoglycan composition.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig3-v2.jpg)
 
-**Figure 3.:** Escherichia coli M1.5 after the medium switch.(A) E. coli M1.5 was inoculated in the labeled minimal medium and bacterial growth was monitored by determining the OD600 (orange curve, squares). When the optical density reached 0.4, bacteria were collected by centrifugation, resuspended in the unlabeled minimum medium, incubation was continued (blue curve), and samples were withdrawn at 5, 30, 45, 65, and 85 min (circles). (B) to (F) Peptidoglycan was extracted from these five culture samples, digested with muramidases, and the resulting muropeptides were separated by rpHPLC. (G) Identification and relative abundance of muropeptides in the major chromatographic peaks.
+**Figure 3.:** (A) E. coli M1.5 was inoculated in the labeled minimal medium and bacterial growth was monitored by determining the OD600 (orange curve, squares). When the optical density reached 0.4, bacteria were collected by centrifugation, resuspended in the unlabeled minimum medium, incubation was continued (blue curve), and samples were withdrawn at 5, 30, 45, 65, and 85 min (circles). (B) to (F) Peptidoglycan was extracted from these five culture samples, digested with muramidases, and the resulting muropeptides were separated by rpHPLC. (G) Identification and relative abundance of muropeptides in the major chromatographic peaks.
 
-## Impact of the medium switch on the isotopic composition of monomers
+### Impact of the medium switch on the isotopic composition of monomers
 
 MS revealed that growth in the unlabeled medium after the switch led to the appearance of disaccharide-tripeptide isotopologues of natural isotopic composition (Figure 4A). These isotopologues were exclusively assembled from unlabeled glucose and NH4Cl after the medium switch. In addition, minor amounts of hybrids containing both labeled and unlabeled moieties were detected (named h1, h2, and h3 in Figure 4A). MS/MS (Supplementary file 2) indicated that hybrid h1 consists of two types of isotopologues containing a labeled hexosamine moiety either in the GlcNAc or MurNAc residue. Hybrid h2 contained a labeled stem peptide and an unlabeled disaccharide. Hybrid h3 was uniformly labeled except for GlcNAc. Hybrids h1, h2, and h3 could originate from the incorporation of recycled fragments of existing (labeled) peptidoglycan. This requires digestion of the existing peptidoglycan by hydrolases and import of the digested fragments by specialized permeases (AmpG and Opp) (Johnson et al., 2013). Alternatively, the hybrids could originate from an intracellular pool of labeled precursors present prior to the medium switch. The structures of h1 and h2 were fully accounted for by the known peptidoglycan recycling pathway of E. coli (Johnson et al., 2013; Figure 1—figure supplement 1). Indeed, GlcNAc and MurNAc are recycled into glucosamine-6-phosphate, a common precursor of UDP-GlcNAc and UDP-MurNAc. This pathway could therefore account for the incorporation of a recycled (labeled) hexosamine into the GlcNAc or MurNAc residues of the h1 isotopologues. Regarding h2, the peptide moiety of peptidoglycan fragments is recycled as a tripeptide, which is added to UDP-MurNAc by the Mpl synthase (Mengin-Lecreulx et al., 1996). This pathway could be responsible for the formation of the h2 hybrid containing a labeled (recycled) tripeptide and an unlabeled GlcNAc-MurNAc disaccharide. In contrast, the formation of the h3 hybrid did not depend upon recycling since MurNAc-peptide moieties are not selectively recycled as single molecules. Thus, the h3 hybrid originated from moieties that were assembled after (unlabeled GlcNAc) or prior to (labeled MurNAc-peptide) the medium switch. Our results are consistent with the fact that the cytoplasm of E. coli contains an important pool of UDP-MurNAc-pentapeptide (an estimate of 120,000 molecules per bacterial cell), which represents ca. 3% of the total number of disaccharide-peptide units present in the cell wall (Mengin-Lecreulx et al., 1982). These observations indicate that h3 is the sole hybrid to be assembled independently from recycling.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig4-v2.jpg)
+
+**Figure 4.:** (A) Mass spectrum obtained for the GlcNAc-MurNAc-tripeptide monomer recovered in peak A of the chromatogram in Figure 3D. (B) Mass spectrum obtained for the GlcNAc-MurNAc-tetrapeptide monomer recovered in peak B of the chromatogram in Figure 3D. Purple and red colors indicate the unlabeled (12C and 14N) and labeled (13C and 15N) isotopic content of the amino acid and sugar residues of the monomers, respectively. GlcNAc, N-acetylglucosamine; MurNAc, N-acetyl muramic acid.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig4-figsupp2-v2.jpg)
 
 The way recycling yields different kinds of isotopologues was further investigated by constructing a derivative of E. coli M1.5 deficient in peptidoglycan recycling following deletion of the ampG permease gene. In this mutant, h1 hybrids were not detected, indicating that they originated from incorporation of recycled glucosamine (Figure 4—figure supplement 1). Hybrids h2 and h3 were present in the peptidoglycan of the ΔampG mutant as expected from the metabolic chart presented in Figure 1—figure supplement 1. Indeed, recycling of the tripeptide (hybrid h2) involves both the transport of anhydroMurNAc-peptides by AmpG and the transport of the tripeptide by the Opp permease (Johnson et al., 2013). Deletion of the ampG gene is therefore expected to reduce rather than abolish formation of the h2 hybrid. The h3 hybrid was proposed to originate from existing UDP-MurNAc-pentapeptide and de novo-synthesized GlcNAc moieties (above). Accordingly, the ampG deletion did not prevent formation of the h3 hybrid.
 
@@ -81,7 +260,7 @@ Analysis of the disaccharide-tetrapeptide (Figure 4B and Supplementary file 2) r
 
 The isotopologues described above generated the isotopic clusters expected from their isotopic composition. The basis for the mirror image of the isotopic clusters of muropeptides exclusively generated from either labeled or unlabeled glucose and NH4Cl has already been introduced in the text and in Figure 2. The major h2 isotopologue mass peak had minor mass peaks both at lower and higher m/z values generating a seemingly symmetrical cluster (Figure 4A and B; Figure 4—figure supplement 2 for simulated spectra). Peaks at lower m/z values mostly originated from the presence of rare 12C and 14N nuclei in the labeled moiety of the molecule. Peaks at higher m/z values mostly originated from the presence of rare 13C and 15N nuclei in the unlabeled moiety of the molecule. The contribution of these two effects shaped a nearly symmetrical isotopic cluster centered on the major isotopologue mass peak exclusively containing (i) 12C and 14N nuclei in the unlabeled moiety of the molecule, (ii) 13C and 15N nuclei in the labeled moiety, and (iii) 1H and 16O nuclei in the entire molecule.
 
-## Kinetics of incorporation of unlabeled nuclei into muropeptide monomers
+### Kinetics of incorporation of unlabeled nuclei into muropeptide monomers
 
 Our next objective was to compare the evolution of the ratios of uniformly labeled and unlabeled monomers following the culture medium switch. This analysis was based on the mass spectra of muropeptides isolated from culture samples withdrawn at various times after the medium switch as described in Figure 3. The mass spectra obtained for the disaccharide-tripeptide and disaccharide-tetrapeptide are displayed in Figure 5A and C, respectively. Variations in the relative abundance of the uniformly labeled and unlabeled isotopologues deduced from mass spectral ion intensities are presented in Figure 5B and D. For the disaccharide-tripeptide, replacement of the uniformly labeled isotopologue by its unlabeled counterpart reached ca. 50% in 85 min (Figure 5B). In contrast, the replacement was more rapid for the disaccharide-tetrapeptide (ca. 94% in 85 min) (Figure 5D). Thus, the isotopic labeling method resolved different kinetics of accumulation of the newly synthesized monomers (Figure 5) although their relative proportions in the peptidoglycan remained similar (Figure 3). The tetrapeptide and tripeptide stems may originate from sequential hydrolytic reactions involving the removal of D-Ala5 from free (uncross-linked) pentapeptide stems by DDCs, followed by the removal of D-Ala4 from the resulting tetrapeptide by the L,D-carboxypeptidase activity of YcbB (Magnet et al., 2008). The sequential nature of these reactions may explain, at least in part, the delayed accumulation of the disaccharide-tripeptide, as it derives from the disaccharide-tetrapeptide.
 
@@ -91,29 +270,57 @@ Our next objective was to compare the evolution of the ratios of uniformly label
 
 Kinetics of accumulation of hybrids revealed that hybrids h1 and h2, which originated from peptidoglycan recycling, were virtually absent at 5 min and increased between 5 and 85 min for the disaccharide-tripeptide and between 5 and 30 min for the disaccharide-tetrapeptide (Figure 5). This is expected since recycled building blocks (glucosamine and tripeptide for h1 and h2, respectively) originated from a peptidoglycan that was fully labeled at the time of the medium switch and remained partially labeled during the time course of the experiment. In contrast, h3 hybrids were already present at 5 min, and reached a maximum at ca. 18 and 30 min for tetrapeptide and tripeptide, respectively, as expected for their synthesis from a cytoplasmic pool of labeled UDP-MurNAc-pentapeptide present at the time of the medium switch.
 
-## Impact of the medium switch on the isotopic composition of dimers
+### Impact of the medium switch on the isotopic composition of dimers
 
 Three main types of isotopologues were observed after the medium switch for each of the four dimers (Figure 6 for the Tri→Tri dimer and Figure 6—figure supplements 1–3 for the Tetra→Tri, Tri→Tetra, Tetra→Tetra dimer, respectively). The first type of isotopologues were uniformly labeled. These dimers were generated by the cross-linking of stem peptides assembled before the medium switch. Thus, they correspond to fragments of the existing peptidoglycan. These dimers are referred to as old→old isotopologue dimers. The second type of isotopologues was generated by the cross-linking of a donor stem assembled after the medium switch to an acceptor stem assembled prior to the medium switch (referred as new→old isotopologue dimers). These isotopologue dimers correspond to a de novo synthesized donor stem attached to the existing peptidoglycan, which provided the acceptor. The third type of dimers was generated by the cross-linking of two neo-synthesized stem peptides (new→new). The h1, h2, and h3 hybrids depicted in Figure 4 were assigned to the newly synthesized type of disaccharide-peptides since they contained unlabeled moieties implying their assembly after the medium switch. The absence of old→new dimers (see Supplementary file 2 for MS/MS analyses) indicated that the peptide stems present in the existing peptidoglycan were not used as donors for cross-linking to neo-synthesized acceptors. For 4→3 cross-linked dimers, this result is expected since D,D-transpeptidases belonging to the PBP family use pentapeptide-containing donors, which are almost completely absent from mature peptidoglycan due to the hydrolysis of the D-Ala4-D-Ala5 amide bond by DDCs (See Introduction section and Figure 1). Accordingly, subunits containing pentapeptide stems were not detected (Figure 3 and Supplementary file 1a). For the 3→3 cross-linked Tri→Tetra dimer, tetrapeptide stems present in the existing peptidoglycan could potentially be used as donors by the YcbB LDT although this was not observed. Thus, the absence of old→new 3→3 cross-linked Tri→Tetra dimer indicates that YcbB discriminates neo-synthesized tetrapeptide stems (used as donors) from existing tetrapeptide stems (used as acceptors) by an unknown mechanism that does not depend upon the structure of the disaccharide-peptide unit but upon the presence of the donor in a neo-synthesized glycan chain and of the acceptor in the existing peptidoglycan. The absence of old→new 3→3 cross-linked Tri→Tri dimers could be accounted for by the same mechanism.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig6-v2.jpg)
+
+**Figure 6.:** Mass spectrum highlighting the 10 major isotopologues. Structure of the 10 major isotopologues. The observed (obs) and calculated (cal) m/z values of the ions of interest (Ion) and the difference in part per million (ppm) between these values are indicated. New (neo-synthesized) unlabeled moieties of isotopologues are indicated in purple. Old (existing) labeled moieties of isotopologues are indicated in red. h1, h2, and h3 (in red) refer to recycled moieties originating from existing labeled peptidoglycan (h1 and h2) or from the existing (labeled) UDP-MurNAc-pentapeptide pool as described in Figure 4. The origin of the donor and acceptor participating in the cross-linking reaction, new (neo-synthesized) or old (existing in the cell wall), are indicated in purple and red, respectively. The relative abundance of the isotopologues (%) was deduced from the relative intensity of peaks corresponding to [M+2 H]2+ ions as labeled in the upper panel. Abbreviations: h1, hybrid containing a recycled glucosamine moiety; h2, hybrid containing a recycled tripeptide moiety; h3, hybrid containing a labeled MurNAc-tripeptide moiety originating from the existing UDP-MurNAc-pentapeptide pool. NA, not applicable, as the sodium adduct was not taken into consideration.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig6-figsupp2-v2.jpg)
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig6-figsupp3-v2.jpg)
 
 Kinetic analyses revealed that the Tri→Tri and Tetra→Tri dimers formed by YcbB and PBPs, respectively, were almost exclusively of the new→old type at early times after the medium switch (i.e. ≤20 min) (Figure 7A and B). These dimers contained a tripeptide stem at the acceptor position. In contrast, Tri→Tetra and Tetra→Tetra (formed by YcbB and PBPs; Figure 7C and D, respectively), which contained a tetrapeptide stem at the acceptor position, were mixtures of new→new and new→old types of dimers at early times after the medium switch. Incubation for longer time periods resulted in an increase in the proportion of new→new isotopologues for all types of dimers. This increase was expected since serial and independent insertions of glycan strands at the same location result in the formation of new→new dimers. Note that this increase was more rapid for dimers containing a tetrapeptide stem at the acceptor position, as observed for tetrapeptide-containing monomers. As described above, this difference reflects the delayed formation of tripeptide stems from tetrapeptide stems by cleavage of D-Ala4 by the L,D-carboxypeptidase activity of YcbB. At early times, tripeptide-containing new stems may therefore be present in small amounts.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig7-v2.jpg)
 
-**Figure 7.:** Escherichia coli M1.5 grown in the absence of β-lactam.For each dimer (A), (B), (C), and (D), the relative abundance (rel. abundance) was calculated for isotopologues originating from cross-linking of (i) two existing stems (old→old; red), (ii) a new donor stem (i.e. a stem synthesized after the medium switch) and an existing acceptor stem (new→old; gray), and (iii) two new stems (new→new; purple). The calculations take into account the contribution of de novo synthesized stems originating from recycled moieties and from the labeled UDP-MurNAc-pentapeptide pool as described in Figure 6 and in Figure 6—figure supplements 1–3 for the Tri→Tri, Tetra→Tri, Tri→Tetra, and Tetra→Tetra dimers, respectively. The open and closed symbols correspond to data from two independent experiments. The curves are interpolations (Virtanen et al., 2020).
+**Figure 7.:** For each dimer (A), (B), (C), and (D), the relative abundance (rel. abundance) was calculated for isotopologues originating from cross-linking of (i) two existing stems (old→old; red), (ii) a new donor stem (i.e. a stem synthesized after the medium switch) and an existing acceptor stem (new→old; gray), and (iii) two new stems (new→new; purple). The calculations take into account the contribution of de novo synthesized stems originating from recycled moieties and from the labeled UDP-MurNAc-pentapeptide pool as described in Figure 6 and in Figure 6—figure supplements 1–3 for the Tri→Tri, Tetra→Tri, Tri→Tetra, and Tetra→Tetra dimers, respectively. The open and closed symbols correspond to data from two independent experiments. The curves are interpolations (Virtanen et al., 2020).
 
 Together, the results shown in Figure 7 revealed that the kinetics of formation of isotopologues containing a tripeptide stem at the acceptor position were similar for the Tri→Tri and Tetra→Tri dimers generated by YcbB and PBPs, respectively. Likewise, the kinetics of formation of dimers containing a tetrapeptide stem at the acceptor position were similar for the Tri→Tetra and Tetra→Tetra generated by YcbB and PBPs, respectively. In contrast, distinct kinetics were observed between dimers containing a stem tripeptide or tetrapeptide in the acceptor position irrespective of the transpeptidase responsible for their formation (mainly new→old versus a mixture of new→new and new→old). Thus, the mode of insertion of peptidoglycan subunits depended upon the structure of the acceptor stem (tripeptide versus tetrapeptide) rather than upon the type of transpeptidase (PBPs versus YcbB). In addition, it is worth noting that the newly formed peptidoglycan subunits are more rapidly incorporated in dimers containing a tetrapeptide stem in the acceptor position than in dimers containing a tripeptide stem at this position.
 
 In this study, we analyzed the participation of YcbB to global peptidoglycan synthesis following overproduction of this LDT and of the alarmone (p)ppGpp in combination with the inhibition of PBPs in certain experiments. Previous work concluded that YcbB also participates in the repair of peptidoglycan in a wild-type background (Morè et al., 2019). In addition to YcbB, this process required glycosyltransferase and DDC activities provided by PBP1b and PBP6a, respectively. This implies that peptidoglycan repair proceeds by polymerization of new glycan chains that are cross-linked by PBPs. It is worth noting that the mode of insertion of new peptidoglycan subunits delineated in the current study is fully compatible with this model since we detected only one type of 3→3 cross-linked dimers (new→old and not old→new).
 
-## Mode of insertion of peptidoglycan subunits in the absence of any LDT
+### Mode of insertion of peptidoglycan subunits in the absence of any LDT
 
 Kinetic analyses of the insertion of peptidoglycan subunits was analyzed in E. coli ∆6ldt, a derivative of strain BW25113 that did not harbor any of the six E. coli LDT genes. The absence of the corresponding enzymes greatly simplifies both the metabolic scheme for peptidoglycan cross-linking and the muropeptide rpHPLC profile (Figure 8, Figure 1—figure supplement 3). This profile contains only two main peaks, corresponding to the tetrapeptide monomer and the Tetra→Tetra dimer due to the absence of the formation of dimers containing 3→3 cross-links (LDT activity) and of monomers or dimers containing tripeptide stems (L,D-carboxypeptidase activity). The medium switch led to the accumulation of the unlabeled tetrapeptide monomer and of hybrids h1, h2, and h3 (Figure 8). The majority of the Tetra→Tetra dimers of the ∆6ldt strain were hybrids containing an unlabeled (de novo synthesized) tetrapeptide stem at the donor position and a labeled tetrapeptide stem (existing peptidoglycan) at the acceptor position. This pattern mainly fits the one-at-a time mode of insertion of newly synthesized glycan strands (Figure 1—figure supplement 2).
 
-## Mode of insertion of peptidoglycan subunits into the septum and in the lateral wall
+![Figure 8.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig8-v2.jpg)
+
+**Figure 8.:** (A) Muropeptide rpHPLC profile of PG from Escherichia coli strain Δ6ldt grown in the absence of β-lactam or in the presence of aztreonam (AZT) or mecillinam (MEC). Kinetic data were collected for fully labeled (red), fully unlabeled (purple) tetrapeptide monomers (Tetra) (B) and hybrids (C) defined in Figure 6—figure supplement 3. For the Tetra→Tetra dimer (D), the relative abundance (rel. abundance) was calculated for isotopologues originating from cross-linking of (i) two existing stems (old→old; red), (ii) a new donor stem (i.e. a stem synthesized after the medium switch) and an existing acceptor stem (new→old; gray), and (iii) two new stems (new→new; purple). The calculations take into account the contribution of de novo synthesized stems originating from recycled moieties and from the labeled UDP-MurNAc-pentapeptide pool. The open and closed symbols correspond to data from two independent experiments. The curves are interpolations (Virtanen et al., 2020).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig8-figsupp1-v2.jpg)
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Strains were grown in the absence of β-lactams or in the presence of either aztreonam (AZT) or mecillinam (MEC). The upper panels show the evolution of the relative abundance of labeled and unlabeled monomers (A and D) and of hybrid monomers defined in Figure 4. In panel (D), we also plotted, in a second row of graphs, the evolution of the combined relative abundance of tripeptides and tetrapeptides as the former is expected to originate at least in part from the removal of D-Ala from the tetrapeptide. Therefore, this plot provides a closer comparative estimate of monomers from strain BW25113Δ6ldt (tetrapeptide only) versus those from the parental ‘wild-type’ strain (tetrapeptides plus tripeptides). The evolution of the relative abundance of the Tetra→Tetra dimers is shown in panels (C) and (F) for strain BW25113Δ6ldt and for the parental ‘wild-type’ strain, respectively. The relative abundance was calculated for isotopologues originating from cross-linking of (i) two existing stems (old→old; red), (ii) a new donor stem (i.e. a stem synthesized after the medium switch) and an existing acceptor stem (new→old; gray), and (iii) two new stems (new→new; purple). The calculations take into account the contribution of de novo synthesized stems originating both from recycled moieties and from the labeled UDP-MurNAc-pentapeptide pool. The data obtained for strain BW25113Δ6ldt are those appearing in Figure 8 (open and closed symbols correspond to data from two independent experiments). The data obtained for strain BW25113 (‘wild-type’) are the means of 4 (10 min) or 2 (20, 40, 60 min) independent repeats. Panel F shows the combined relative abundance of Tetra→Tetra and Tetra→Tri as the latter may be generated by the removal of D-Ala from the former. The curves are interpolations (Virtanen et al., 2020). rel. abundance, relative abundance.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** (A) Acceptor-to-donor ratios of neo-synthesized Tetra-Tetra dimer from parental ‘wild-type’ strain BW25113.The ratios were computed for growth in the absence of β-lactam (blue), in the presence of aztreonam (orange) or of mecillinam (gray). The acceptor-to-donor ratio of neo-synthesized stems (ADRNS) values extrapolated for time = 0 min were 0.13, 0.13, and 0.32. (B) Data obtained for strain BW25113∆6ldt, as appearing in the main text (Figure 8), are included for comparison. The ADRNS values extrapolated for time = 0 min for this strain were 0.14, 0.08, and 0.31. This comparison indicates that the mode of insertion of new strands is similar in both strains, predominantly involving (i) single-strand insertion in the absence of β-lactam and in the presence of aztreonam and (ii) multi-strand insertion in the presence of mecillinam.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig8-figsupp4-v2.jpg)
+
+**Figure 8—figure supplement 4.:** Data were collected for fully labeled and unlabeled tripeptide (A) and tetrapeptide (C). Data were also collected for tripeptide (B) and tetrapeptide (D) hybrids defined in Figure 4. Qualitatively, the kinetics were similar although the overall replacement of old muropeptides by new ones was more rapid for the ‘wild-type”’strain than for mutant M1.5 (note that the kinetics were recorded for 60 min versus 85 min for ‘wild-type’ and M1.5, respectively). The data obtained for E. coli M1.5 are those appearing in Figure 5.
+
+### Mode of insertion of peptidoglycan subunits into the septum and in the lateral wall
 
 In E. coli, two β-lactams, mecillinam and aztreonam, specifically inhibit the synthesis of the lateral cell wall and of the septum by inactivating the D,D-transpeptidase activity of PBP2 and PBP3, respectively. Aztreonam (12 µg/mL) and mecillinam (2.5 µg/mL) were added to the labeled culture medium of strain ∆6ldt 5 min prior to the medium switch and to the unlabeled culture medium used to resuspend the bacteria at the medium switch. Aztreonam and mecillinam were used at inhibitory concentrations corresponding to 200- and 20-fold the minimal inhibitory concentration of the drugs, respectively (Supplementary file 1c). Exposure to aztreonam or mecillinam resulted in the morphological changes expected for the inhibition of septum formation (filamentation) or side wall synthesis (rounding), respectively (Figure 8—figure supplement 1). The kinetics of insertion of de novo synthesized subunits in the tetrapeptide monomers and in the Tetra→Tetra dimers were similar in the cultures containing aztreonam or no drug (Figure 8). The pattern corresponded to the one-at-a time mode of insertion of newly synthesized glycan strands since the new→new dimers were not abundant at the beginning of the kinetics. In contrast, the new→new and new→old isotopologue dimers were both present in the cultures containing mecillinam, indicating that formation of the septum involves insertion of multiple strands at a time.
 
-## Mode of insertion of peptidoglycan subunits in conditions in which YcbB is the only functional transpeptidase
+### Mode of insertion of peptidoglycan subunits in conditions in which YcbB is the only functional transpeptidase
 
 In the presence of ampicillin (16 µg/mL), the peptidoglycan of strain M1.5 was predominantly (ca. 99%) cross-linked by YcbB since the D,D-transpeptidase activity of PBPs was inhibited by the drug (Figure 9 and Supplementary file 1a). Inhibition of DDCs belonging to the PBP family prevented full hydrolysis of D-Ala5 since pentapeptide stems were detected both in monomers and in the acceptor position of dimers. New→new rather than new→old isotopologues were predominantly detected among dimers containing a tetrapeptide or a pentapeptide stem in the acceptor position. These dimers originate from neo-synthesized glycan chains cross-linked to each other. In contrast, the new→old isotopologues were more abundant than the new→new isotopologues in the Tri→Tetra dimers from the peptidoglycan of M1.5 grown in the absence of ampicillin at early times (Figure 7). This difference was not observed for the Tri→Tri dimers since the new→old isotopologues were prevalent for growth of M1.5 both in the presence or absence of ampicillin.
 
@@ -121,7 +328,7 @@ In the presence of ampicillin (16 µg/mL), the peptidoglycan of strain M1.5 was 
 
 **Figure 9.:** (A) Muropeptide rpHPLC profile of PG from Escherichia coli strain M1.5 grown in the presence of ampicillin (16 µg/mL), which was added 5 min prior to the medium switch and to the unlabeled culture medium used for the medium switch corresponding to t=0. (B) Kinetic data were collected for newly synthesized (new, purple) and existing (old, red) monomers.Kinetic data were also collected for dimers originating from cross-linking of (i) two existing stems (old→old; red), (ii) a new donor stem (i.e. a stem synthesized after the medium switch) and an existing acceptor stem (new→old; gray), and (iii) two new stems (new→new; purple). The calculations take into account the contribution of de novo synthesized stems originating from recycled moieties and from the labeled UDP-MurNAc-pentapeptide pool. The open and closed symbols correspond to data from two independent experiments. Rel. abundance, relative abundance of isotopologues. Disaccharide-peptide subunits contained a tripeptide (Tri), a tetrapeptide (Tetra), or a pentapeptide (Penta) stem. The curves are interpolations (Virtanen et al., 2020).
 
-## Mode of insertion of peptidoglycan subunits in a bacterial strain harboring the wild-type complement of PBP and LDT genes
+### Mode of insertion of peptidoglycan subunits in a bacterial strain harboring the wild-type complement of PBP and LDT genes
 
 Our last objective was to characterize the mode of peptidoglycan synthesis in a wild-type background with respect to genes involved in peptidoglycan synthesis. Toward this aim, we analyzed the peptidoglycan from the parental ‘wild-type’ strain BW25113. Figure 8—figure supplement 2 provides a comparison of the kinetics obtained for both the BW25113∆6ldt and parental BW25113 strains grown in the absence of β-lactams and in the presence of aztreonam or mecillinam. This analysis showed that the conclusions drawn from the analyses performed with strain BW25113Δ6ldt (Figure 8) are not biased by the deletion of the six ldt genes. The acceptor-to-donor ratio of neo-synthesized stems (ADRNS) values were similar for both strains (Figure 8—figure supplement 3) indicating that the mode of insertion of new stems in the Tetra→Tetra dimers is not affected by the deletion of the six ldt genes. For the sake of completeness, we also compared the kinetics of appearance of muropeptides resulting from the activity of LDTs that are present in low amount in the parental strain BW25113 and are more abundant in mutant M1.5 due to overproduction of YcbB (Supplementary file 1a). Qualitatively, the kinetics were similar for muropeptides extracted from these two strains (Figure 8—figure supplement 4). Overall, the replacement of old by new muropeptides was more rapid for the ‘wild-type’ strain than for mutant M1.5.
 
@@ -139,7 +346,7 @@ Strain BW25113Δ6ldt offered the possibility to investigate the mode of insertio
 
 ![Figure 11.](https://cdn.elifesciences.org/articles/72863/elife-72863-fig11-v2.jpg)
 
-**Figure 11.:** Escherichia coli Δ6ldt.Bacteria were grown in the presence of aztreonam, mecillinam, or in the absence of drug. Curves are obtained by linear regression. ADRNS were deduced from the relative abundance of new→old and new→new dimers appearing in Figure 8. Please note that the ADRNS was the highest for growth in the presence of mecillinam (this figure) in spite of the fact that the overall rate of replacement of old stems by new stems was the lowest for this growth condition, as evidenced by the slow rise of both the new→old and new→new dimers (Figure 8). This apparent discrepancy is accounted for by the fact that the ADRNS is a ratio solely based on neo-synthesized dimers.
+**Figure 11.:** Bacteria were grown in the presence of aztreonam, mecillinam, or in the absence of drug. Curves are obtained by linear regression. ADRNS were deduced from the relative abundance of new→old and new→new dimers appearing in Figure 8. Please note that the ADRNS was the highest for growth in the presence of mecillinam (this figure) in spite of the fact that the overall rate of replacement of old stems by new stems was the lowest for this growth condition, as evidenced by the slow rise of both the new→old and new→new dimers (Figure 8). This apparent discrepancy is accounted for by the fact that the ADRNS is a ratio solely based on neo-synthesized dimers.
 
 In the absence of β-lactam, E. coli M1.5 relied both on the D,D-transpeptidase activity of PBPs and the LDT activity of YcbB for peptidoglycan cross-linking, leading to a high peptidoglycan content in both 4→3 (56%) and 3→3 (44%) cross-linked dimers (Supplementary file 1a). The proportions of dimers containing two newly synthesized stems (new→new) or one newly synthesized and one existing stem (new→old) were similar for the two types of cross-links (Figure 7). Thus, the D,D-transpeptidase activity of PBPs and the LDT activity of YcbB were involved in similar modes of insertion of new strands into the existing peptidoglycan of strain M1.5. The ADRNS values were in the order of 0.17 and 0.22 for 4 → 3 and 3 → 3 cross-links, respectively. These values indicate that the neo-synthesized glycan strands were predominantly but not exclusively cross-linked to the existing peptidoglycan for both types of transpeptidation reactions. Peptidoglycan polymerization might involve single-strand insertion into the side wall and insertion of multiple strands into the septum, as discussed above for strain Δ6ldt. The striking similarities between dimers generated by PBPs and YcbB raise the possibility that the mode of insertion of new subunits is not determined by the transpeptidases but by other components of the peptidoglycan polymerization complexes, such as the scaffolding proteins.
 
@@ -155,15 +362,15 @@ Cho et al., 2014 proposed that the antibacterial activity of β-lactams does not
 
 **Figure 13.:** Kinetics of the isotopologue composition of sacculi was used to determine the extent of the release of peptidoglycan fragments from sacculi. For this purpose, we considered that the decrease in the number of fully labeled disaccharide-peptide subunits is equal to the number of subunits released from the peptidoglycan. This is legitimate since peptidoglycan subunits are recycled in a large number of moieties including two glucosamine residues, two acetyl groups, one D-lactoyl residue, the L-Ala-D-iGlu-DAP tripeptide or its constitutive amino acids, and two D-Ala residues (Figure 1—figure supplement 1). Disaccharide-peptide units issued from recycling are therefore mixtures of labeled and unlabeled moieties that can be easily distinguished from fully labeled subunits. Of note, release of peptidoglycan fragments in the culture medium, corresponding to a small proportion of peptidoglycan degradation products (Goodell and Schwarz, 1985b), also results in a reduction in the content of fully labeled disaccharide-peptides. Thus, the decrease in the absolute number of fully labeled disaccharide-peptide subunits in one generation directly provides an estimate of the fraction of the existing peptidoglycan that is degraded during each generation. For this reason, the decrease in the relative amount of fully labeled peptidoglycan disaccharide-peptides (normalized to 1.0 at the medium switch) was computed as a function of time (normalized for the generation time; Supplementary file 2-table S2). The decrease was linear for M1.5 grown in the presence or absence of ampicillin. For BW25113∆6ldt, a decrease in the fully labeled stems was only observed after 0.45 generation time. For this reason, regression analysis was performed for a portion of the kinetics (from 0.45 to 0.85 generation time; data points excluded from regression analysis are shown as gray triangles). The estimates of combined peptidoglycan turnover and recycling per generation were 39% for strain Δ6ldt and 56% or 78% for M1.5 grown in the absence or presence of ampicillin, respectively.
 
-## Conclusions
+### Conclusions
 
 In conclusion, we report an innovative method for exploring peptidoglycan metabolism that does not depend upon metabolic engineering for labeling and is therefore applicable to various genetic backgrounds. The choice of full labeling with 13C and 15N enabled us to investigate peptidoglycan metabolism at a very fine level of detail since most isotopologues predicted to occur according to known recycling and biosynthesis pathways were detected and kinetically characterized. In addition, high-resolution MS and MS/MS identified the donors and acceptors that participated in individual cross-linking reactions rather than the average composition of dimers. This revealed an unexpected diversity in the modes of insertion of glycan strands into the expanding peptidoglycan macromolecule in the presence and absence of β-lactams. In particular, our results suggest that the reactions catalyzed by YcbB and by 3→3 specific endopeptidases in the presence of β-lactams are concerted rather than sequential as proposed by the ‘make-before-break’ models of peptidoglycan expansion. As previously discussed (Cho et al., 2014), efforts in drug discovery should focus on molecules that induce a lethal malfunctioning of multiple cellular targets rather simple inhibitors. This implies that candidate molecules should be tested for their mode of action. The mass data analysis pipeline described in this study should facilitate such screening efforts by providing specific signatures for molecules acting on peptidoglycan synthesis.
 
 ## Materials and methods
 
-## Sample preparation and analyses
+### Sample preparation and analyses
 
-## Strains
+#### Strains
 
 E. coli M1.5 (Hugonnet et al., 2016; Voedts et al., 2021) is a derivative of E. coli BW25113 (Datsenko and Wanner, 2000) harboring (i) plasmid pJEH12 for IPTG-inducible expression of the ycbB LDT gene, (ii) deletions of the erfK, ynhG, ycfS, and ybiS LDT genes, (iii) a 13 bp deletion lowering the translation level of the gene encoding the isoleucyl-tRNA synthase (IleRS) thereby increasing synthesis of the (p)ppGpp alarmone, and (iv) an insertion of IS1 in gene sltY encoding lytic transglycosylase Slt70 thereby promoting growth in the presence of ampicillin in liquid media (Voedts et al., 2021). Upon induction of ycbB by IPTG, E. coli M1.5 expresses high-level resistance to ampicillin and ceftriaxone following production of YcbB. Deletion of the erfK, ycfS, and ybiS genes abolishes the anchoring of the Braun lipoprotein and simplifies the rpHPLC muropeptide profile since stem peptides substituted by the Lys-Arg moiety of the lipoprotein are absent (Magnet et al., 2007).
 
@@ -171,7 +378,7 @@ The ampG permease gene (Johnson et al., 2013) of E. coli BW25113 M1.5 was delete
 
 E. coli ∆6ldt is a derivative of strain BW25113 obtained by deletion of the six LDT genes present in E. coli (erfK, ynhG, ycfS, ybiS, yafK, and ycbB) (Magnet et al., 2007; Magnet et al., 2008; Montón Silva et al., 2018; Morè et al., 2019).
 
-## Growth conditions and determination of the generation time
+#### Growth conditions and determination of the generation time
 
 E. coli strains were grown in M9 minimal medium composed of 2 mM MgSO4, 0.00025% FeSO4, 12.8 g/L Na2HPO4, 3 g/L KH2PO4, 0.5 g/L NaCl, 1 g/L NH4Cl, 1 µg/L thiamine, 1 g/L glucose (unlabeled M9 minimal medium). The labeled M9 minimal medium had the same composition except for the replacement of NH4Cl and glucose by [15N]NH4Cl and uniformly labeled [13C]glucose at the same concentrations (99% labeling for both compounds; Cambridge Isotope Laboratories). The growth media were sterilized by filtration (Millex-LG 0.2 µm, Merck Millipore).
 
@@ -181,15 +388,15 @@ The generation time was deduced from the inverse of the slope of semi-logarithmi
 
 For microscopy analyses, 1 mL of the culture used for peptidoglycan analysis was withdrawn and fixed by addition of paraformaldehyde (final concentration 4%; v/v). The sample was incubated at 4°C for 15 min, centrifuged, the pellet was washed twice with 1 mL of phosphate buffer saline (PBS), and resuspended in 1 mL of PBS. Bacteria were imaged using agarose-pad slices (1% agarose in PBS). Phase contrast images of bacteria were taken using a 100× magnification objective on a Nikon TI inverted microscope.
 
-## Peptidoglycan preparation and purification of muropeptides
+#### Peptidoglycan preparation and purification of muropeptides
 
 Peptidoglycan was extracted by the hot SDS procedure and treated with pronase and trypsin (Arbeloa et al., 2004). Muropeptides were solubilized by digestion with lysozyme and mutanolysin, reduced with NaBH4, and separated by rpHPLC on a C18 column (Hypersil GOLD aQ 250 × 4.6, 3 µm; ThermoFisher) at a flow rate of 0.7 mL/min. A linear gradient (0–100%) was applied between 11.1 and 105.2 min at room temperature (buffer A: 0.1% TFA; buffer B: 0.1% TFA, 20% acetonitrile; v/v). The absorbance was monitored at 205 nm and peaks corresponding to the major monomers and dimers were individually collected, lyophilized, solubilized in 30 µL of water, and stored at –20°C.
 
-## Calculation of the molar ratios of muropeptides
+#### Calculation of the molar ratios of muropeptides
 
 rpHPLC analysis of sacculi digested by muramidases provided relative areas for peaks detected by the absorbance at 205 nm. In order to evaluate the relative molar abundance of muropeptides, we used the correction factors reported by Glauner that take into account the number of disaccharide units, amide bonds, 1,6-anhydro-ends, and Lys and Arg residues (Glauner, 1988). Since the relative amount of the muropeptides did not vary upon growth (i.e. between samples collected at various times following the medium switch), or between samples from independent experiments (i.e. between biological repeats obtained for the same strain in the same growth conditions), an average molar composition of the sacculi was deduced from the rpHPLC chromatograms and the correction factors reported by Glauner, 1988.
 
-## Mass spectrometry
+#### Mass spectrometry
 
 For routine identification of muropeptides, samples were diluted (10 μL plus 50 μL of water) and 2 μL were injected into the mass spectrometer (Maxis II ETD, Bruker, France) at a flow rate of 0.1 mL/min (50% acetonitrile, 50% water; v/v acidified with 0.1% formic acid; v/v). Mass spectra were acquired in the positive mode with a capillary voltage of 3500 V, a pre-storage pulse of 18 μs, ion funnel 1 RF 300 Vp-p. The m/z scan range was from 300 to 1850 at a speed of 2 Hz. Transfer time stepping was enabled with the following parameters: RF values 400 and 1200 Vp-p, transfer times 30 and 90 μs, timing 50% and 50%. MS/MS spectra were obtained using a collision energy of 50 eV in the m/z range of 150–1000 for muropeptide monomers and 150–2000 for muropeptide dimers with isolation width of 1. The applied collision energy was varied between 77% and 100% of the 50 eV setting with timings of 33% and 67%, respectively.
 

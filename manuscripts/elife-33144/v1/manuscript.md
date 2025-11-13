@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.33144.001 Electrical junctions are widespread within the mammalian CNS. Yet, their role in organizing neuronal ensemble activity remains incompletely understood. Here, in a functionally well-characterized system – neuroendocrine tuberoinfundibular dopamine (TIDA) neurons - we demonstrate a striking species difference in network behavior: rat TIDA cells discharge in highly stereotyped, robust, synchronized slow oscillations, whereas mouse oscillations are faster, flexible and show substantial cell-to-cell variability. We show that these distinct operational modes are explained by the presence of strong TIDA-TIDA gap junction coupling in the rat, and its complete absence in the mouse. Both species, however, encompass a similar heterogeneous range of intrinsic resonance frequencies, suggesting similar network building blocks. We demonstrate that gap junctions select and impose the slow network rhythm. These data identify a role for electrical junctions in determining oscillation frequency and show how related species can rely on distinct network strategies to accomplish adaptive control of hormone release.
+Electrical junctions are widespread within the mammalian CNS. Yet, their role in organizing neuronal ensemble activity remains incompletely understood. Here, in a functionally well-characterized system – neuroendocrine tuberoinfundibular dopamine (TIDA) neurons - we demonstrate a striking species difference in network behavior: rat TIDA cells discharge in highly stereotyped, robust, synchronized slow oscillations, whereas mouse oscillations are faster, flexible and show substantial cell-to-cell variability. We show that these distinct operational modes are explained by the presence of strong TIDA-TIDA gap junction coupling in the rat, and its complete absence in the mouse. Both species, however, encompass a similar heterogeneous range of intrinsic resonance frequencies, suggesting similar network building blocks. We demonstrate that gap junctions select and impose the slow network rhythm. These data identify a role for electrical junctions in determining oscillation frequency and show how related species can rely on distinct network strategies to accomplish adaptive control of hormone release.
 
 ## Introduction
 
@@ -32,7 +32,7 @@ Male rat TIDA cells identified by their location in the dmArc (Figure 1A–B) an
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig1-v1.jpg)
 
-**Figure 1.:** vs fast, irregular, entrainable activity in TIDA neurons between two rodent species.(A–B) Distribution of TH-immunostained TIDA neurons (green) in the rat dorsomedial arcuate nucleus (dmArc; coronal section). ME, median eminence; 3V, third ventricle. (C) Patch clamp recordings from a rat TIDA neuron show a slow and robust oscillation evident in whole-cell current clamp (top), on-cell (middle) as well as voltage clamp (bottom) configurations. (D–E) Mouse TIDA neurons in the dmArc visualized by dopamine transporter (DAT)-driven tdTomato fluorescence (red) and TH immunostaining (green). (F) Whole-cell current clamp recording (top) from a mouse TIDA neuron shows fast and irregular phasic firing, also evident in on-cell configuration (middle), whereas no oscillatory current is seen voltage-clamp mode (bottom). (G) Frequency distribution of the oscillation frequency in rat (blue) vs mouse (purple) TIDA neurons, with a narrow range of slow frequencies in rat and a wide range of faster oscillation frequencies in mouse (n = 29–115 per group). (H), Representative autocorrelograms of rat and mouse TIDA oscillation. (I) Whole-cell current clamp recording: Progressive hyperpolarization fails to alter oscillation frequency in rat TIDA cells. (J, K,) Quantification of rat TIDA oscillation frequency (J) and amplitude (K) at different voltages (−60 mV, −80 mV and −100 mV; n = 7, one-way ANOVA with Bonferroni as post-hoc test). (L) Progressive hyperpolarization (as in I) gradually slows oscillation frequency in mouse TIDA cells, with ultimate collapse of the oscillation below −80 mV. (M, N) Quantification of mouse TIDA oscillation frequency (M) and amplitude (N) at different voltages (n = 34, one-way ANOVA with Bonferroni as post-hoc test). (O–T) Test for entrainability of TIDA neurons in rat vs mouse arcuate slices during whole-cell current clamp recording. (O) Rat TIDA neuron immediately prior to ZAP current (I; sinusoidal current of gradually increasing frequency) injection presented in (P). (P) Bottom trace; injection of ZAP I does not change the rat TIDA neuron’s oscillation frequency. (Q) Mouse TIDA neuron immediately prior to ZAP I injection presented in (R). (R) Injection of ZAP I entrains mouse TIDA neurons. (S) Cross correlation coefficient example and T) quantification between the injected ZAP I and the membrane voltage response in the two species (n = 10 per group, p<0.0001, unpaired t-test; rat shown in blue, mouse shown in purple). Data expressed as mean ±s.e.m.
+**Figure 1.:** (A–B) Distribution of TH-immunostained TIDA neurons (green) in the rat dorsomedial arcuate nucleus (dmArc; coronal section). ME, median eminence; 3V, third ventricle. (C) Patch clamp recordings from a rat TIDA neuron show a slow and robust oscillation evident in whole-cell current clamp (top), on-cell (middle) as well as voltage clamp (bottom) configurations. (D–E) Mouse TIDA neurons in the dmArc visualized by dopamine transporter (DAT)-driven tdTomato fluorescence (red) and TH immunostaining (green). (F) Whole-cell current clamp recording (top) from a mouse TIDA neuron shows fast and irregular phasic firing, also evident in on-cell configuration (middle), whereas no oscillatory current is seen voltage-clamp mode (bottom). (G) Frequency distribution of the oscillation frequency in rat (blue) vs mouse (purple) TIDA neurons, with a narrow range of slow frequencies in rat and a wide range of faster oscillation frequencies in mouse (n = 29–115 per group). (H), Representative autocorrelograms of rat and mouse TIDA oscillation. (I) Whole-cell current clamp recording: Progressive hyperpolarization fails to alter oscillation frequency in rat TIDA cells. (J, K,) Quantification of rat TIDA oscillation frequency (J) and amplitude (K) at different voltages (−60 mV, −80 mV and −100 mV; n = 7, one-way ANOVA with Bonferroni as post-hoc test). (L) Progressive hyperpolarization (as in I) gradually slows oscillation frequency in mouse TIDA cells, with ultimate collapse of the oscillation below −80 mV. (M, N) Quantification of mouse TIDA oscillation frequency (M) and amplitude (N) at different voltages (n = 34, one-way ANOVA with Bonferroni as post-hoc test). (O–T) Test for entrainability of TIDA neurons in rat vs mouse arcuate slices during whole-cell current clamp recording. (O) Rat TIDA neuron immediately prior to ZAP current (I; sinusoidal current of gradually increasing frequency) injection presented in (P). (P) Bottom trace; injection of ZAP I does not change the rat TIDA neuron’s oscillation frequency. (Q) Mouse TIDA neuron immediately prior to ZAP I injection presented in (R). (R) Injection of ZAP I entrains mouse TIDA neurons. (S) Cross correlation coefficient example and T) quantification between the injected ZAP I and the membrane voltage response in the two species (n = 10 per group, p<0.0001, unpaired t-test; rat shown in blue, mouse shown in purple). Data expressed as mean ±s.e.m.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig2-v1.jpg)
 
@@ -42,9 +42,33 @@ In addition to these temporal discrepancies, oscillation robustness varied marke
 
 We next addressed if the rat-mouse differences in single-cell features are reflected at the network level. Paired recordings from rat TIDA neurons revealed pronounced phase-locked synchronicity between cells (n = 63 pairs; Figure 3A,B; see also Lyons et al., 2010) in contrast to mouse TIDA cells, which were asynchronous (n = 40 pairs; Figure 3C,D). To record TIDA activity at the population level we performed two-photon Ca2+ imaging. Using Oregon green-BAPTA in rat slices, a cluster of cells in the dmArc exhibited spontaneous, slow synchronized Ca2+ oscillations (0.15 ± 0.01 Hz; Figure 3E,F,I). Ca2+ fluxes were visualized in murine TIDA cells using DAT-GCaMP3 mice. Simultaneous whole-cell and Ca2+ recordings in mouse TIDA neurons revealed strongly correlated fluctuations in membrane potential and Ca2+ activity, indicating that they reflect the same underlying cellular phenomena (Figure 3—figure supplement 1). In agreement with electrophysiology, cells exhibited asynchronous, fast (0.40 ± 0.05 Hz; Figure 3G–I) oscillation frequencies, with large variability. These data show that the species differences found at the single-cell level are paralleled in the rat and mouse TIDA network.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig3-v1.jpg)
+
+**Figure 3.:** (A) Paired whole-cell recordings were performed to test synchronous activity between cells. (B) Representative paired rat TIDA neuron recordings (left) shown superimposed and filtered for action potentials at right to reveal near identical membrane voltage fluctuations. (C) Representative paired mouse TIDA neuron recordings (left) reveal asynchronicity when superimposed (right). (D) Left; cross-correlation coefficient in example paired recordings from rat (blue) and mouse (purple) TIDA neurons. Right; quantification of cross-correlation coefficient at 0 s lag (n = 21–31 respectively, p<0.0001, unpaired t-test). (E) Ca2+ imaging of rat TIDA neurons. Lower inset: oscillating cells in the dmArc slice shown highly connected by relative cross-correlation. (F) Representative Ca2+ imaging traces of five rat TIDA neurons in same slice revealing synchronous oscillations. (G) Ca2+ imaging of mouse TIDA neurons. Lower inset: Cells in the dmArc in the same slice exhibit minimal cross-correlation. (H) Representative Ca2+ imaging traces of five mouse TIDA neurons in same slice revealing asynchronous oscillation. (I) Left; cross-correlation coefficient in rat (blue) Ca2+ imaging traces vs cross-correlation coefficient in mouse (purple) TIDA neurons. Right; quantification of cross correlation coefficient at 0 s lag (n = 14–21 respectively). Data expressed as mean ±s.e.m. Image scale bars (E G) 50 μm. 3V, third ventricle.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A-D) Calcium images from a single TIDA neuron in different time points. Dark colours represent low-calcium activity, brighter colors represent high-calcium activity in the cell, scale bar is 10 µm. (E) Simultaneous calcium imaging and whole-cell in DAT-GCaMP3 mouse TIDA neuron. Shadow areas refer to the previous images at a peak of florescence (A and C, high-calcium activity) and low fluorescence (B and D, low-calcium activity). (F) Bleach correction by exponential frame subtraction performed with Image J EMBL tools.
+
 We next sought to identify the mechanism behind these differences. Network behavior emerges from the intrinsic properties of neurons and their connectivity schemes. In whole-cell recordings, rat and mouse TIDA neurons were found to have similar electrophysiological signatures, such as a prominent A-like K+ current, anomalous inward rectification and slow after hyperpolarization (Lyons et al., 2010; Zhang and van den Pol, 2015) - Figure 4A,B,E,F), albeit of partly different amplitude (Figure 4I–K). In both species, oscillations were abolished in the presence of tetrodotoxin (TTX; Figure 4L), suggesting a similar dependence on the persistent Na+ current for phasic firing (Lyons et al., 2010). Cytoarchitectonic comparison of the TIDA somata size, dendritic lengths and branching (evaluated using Sholl analysis) revealed no differences (Figure 4—figure supplement 1). These results indicate that a difference in chemical synaptic or electrical coupling is likely to underlie the two distinct patterns of electrical activity. Importantly, in both rats and mice, oscillations persisted during blockade of fast ionotropic glutamate and GABA transmission (Figure 4M), suggesting that chemical synapses are not required for the expression of rhythmic behavior. Our attention therefore turned to electrical junctions (see Pereda, 2015; Connors, 2017) and their potential role in the TIDA circuit. Earlier work (Lyons et al., 2010) has suggested the existence of gap junctions in rat TIDA neurons, but direct evidence for electrical coupling has been lacking.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig4-v1.jpg)
+
+**Figure 4.:** (A,E) Current and (B,F) voltage step protocols identify characteristic rat (A–D) and mouse (E–H) TIDA cell conductances, namely the K+-mediated inward rectification (Kir), an A-like current (IA) and the depolarization-induced after hyperpolarization (AHP). (,G) Input resistance of TIDA neurons across membrane voltage reveals a sigmoidal plot in both species. (D,H) Higher input resistance at −60 mV in both rat (n = 18) and mouse (n = 16) TIDA neurons (one-way ANOVA with Bonferroni as post-hoc test). (I) Quantification of the A-like current and (J) the AHP current (n = 11 and 30 per group). (K) Comparison of the Rinput at −95 mV, as an indicator of the Kir current activity. (L) Application of the antagonist of voltage-gated Na+ channels, TTX, abolished the oscillation and switched it to a persistent UP state in rat (blue; n = 32) as well as in mouse (purple; n = 22) TIDA neurons. (M) Oscillation persists in both rat (n = 11) and mouse (n = 6) TIDA neurons under fast ionotropic blockade, using AMPA and NMDA glutamate receptor blockers combined with Gabazine as a GABAA receptor blocker. (A–D), rat and (E–H), mouse.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A–C) Cell soma size (A), total dendrite length (B) and dendrite branching distribution (C) in TIDA neuron is statistically similar between the two species (n = 5 cells per group).
+
 Recordings of sub-threshold voltage transfer (Bennett, 1966) in rat TIDA neuron pairs revealed electrical coupling in 51% (n = 32/63) of pairs with a high coupling coefficient (CC = 0.18 ± 0.02; Figure 5A–F). This electrical coupling is in the highest range reported in the mammalian brain (Curti et al., 2012), with single pairs reaching as high as 0.48 CC. Coupling was typically asymmetrical (strongest: weakest ratio, 1.52 ± 0.17; n = 16; Figure 5F, top). In notable contrast, mouse TIDA neuron pairs (n = 40) showed no evidence of electrical coupling and/or synchrony (Figure 5G–L). In addition, immunostaining for the dominant neuronal gap junction-forming protein connexin 36 (Cx36; Rash et al., 2000) was performed. Punctate Cx36 immunoreactivity was found distributed along rat (n = 4 animals), but not mouse (n = 7 animals), TH-ir dendrites and somata (Figure 5M,N), even though the antibody readily detects Cx36 in other mouse brain populations (Figure 5—figure supplement 1). These data identify an absolute species difference in TIDA gap junction connectivity. The lack of electrical coupling in the mouse TIDA neurons can also explain their higher input resistance (Figure 4C,D,G,H; cf. De Zeeuw et al., 2003), and their more fragile oscillation dynamics (Figure 1C,F,I–T).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig5-v1.jpg)
+
+**Figure 5.:** (A) Paired TIDA neuron recordings were performed to test for reciprocal electrical connectivity in rat slices. (B) Representative recording showing bidirectional electrical coupling in rat slices. Example trace illustrating the effect of negative current injection first into cell one and then into cell 2. (C,D,) High-resolution trace during negative current injection. Note the different response amplitude in cell1 vs cell2, suggestive of asymmetrical electrical synapses. (E) Frequency distribution of the coupling coefficient, average 0.18 ± 0.02, n = 32 pairs. (F) Top; Different coupling coefficient between cell 1 and cell 2, indicative of asymmetrical electrical synapses (n = 16, p<0.01, unpaired t-test). Bottom; Cumulative frequency of the coupling coefficient ratio, indicative of the high-degree of functional coupling asymmetry. (G) Similar to (A) paired recordings were performed in mouse TIDA neurons. (H) Representative recording showing the absence of electrical coupling in mouse slices. Example trace illustrating the effect of negative current injection first into cell 1 and then into cell 2. (I) and J) indicate portions of recordings illustrated at higher resolution in (K) and (L), respectively. (K, L,) High-resolution traces illustrating lack of electrical coupling between mouse TIDA neurons (n = 40 pairs). (M, N,) Cx35/36 immunostaining (green) of the dmArc shows punctate presumed gap junctions (arrows) on the soma and dendrites of rat (M), but not mouse (N), TIDA neurons. TH (red) used to identify TIDA neurons, DAPI (blue) shows cell nuclei. Scale bars for (M N) 10 µm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/33144/elife-33144-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Coronal maximum intensity projections of high power confocal micrographs from C57BL/6 mice (A B) and SD rats (C D) stained for parvalbumin (PV; red), connexin-36 (Cx36; green) and DAPI (blue). Note high density of Cx36- immunoreactive (-ir) puncta in the inferior olive (A C) as well as Cx36-ir puncta in close proximity to PV-ir cell somata and dendrites in the cingulate cortex in both mice (B) and rats (D). Scale bar in (D) = 5 µm for (A–D).
 
 These findings challenge common assumptions that analogous populations in the rat and mouse brains obey similar connectivity schemes by identifying a binary difference in electrical coupling between these two commonly studied model species. The evolutionary and physiological implications of this contrariety remain to be explored, but given that TIDA neurons control prolactin secretion (Grattan, 2015), it is likely to have bearing on for example species diversity in reproduction and parenting (Robitaille and Bovet, 1976; Bronson, 1979b; Bronson, 1979a; Limonta et al., 1985; Lonstein and De Vries, 2000; Lee et al., 2006). At the network level, our data reconcile the discrepancies in reports of rat (Lyons et al., 2010; Stagkourakis et al., 2016) and mouse (Brown et al., 2012; Romanò et al., 2013) TIDA electrical behavior. Importantly, the rodent TIDA species difference in electrical coupling offers an experimental model to address functional aspects of the role of gap junctions in rhythmically active systems, in a manner that avoids the poor pharmacological specificity of gap junction-blocking compounds (e.g. Beaumont and Maccaferri, 2011) and the potential for residual electrical coupling in Cx gene-deleted mice (De Zeeuw et al., 2003; Lee et al., 2014).
 
@@ -76,46 +100,127 @@ Diversity within neuronal networks, as described here in the TIDA system, presen
 
 ## Materials and methods
 
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source of reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mouse strain, strain background</td>
+      <td>DAT-Cre mouse (C57Bl/6J)</td>
+      <td>Reference: PMID 17227870.</td>
+      <td></td>
+      <td>Gift from Dr. N-G Larsson, Karolinska Institutet.</td>
+    </tr>
+    <tr>
+      <td>Mouse strain, strain background</td>
+      <td>tdTomato floxed mouse (C57Bl/6J)</td>
+      <td>www.jax.org/strain/007905</td>
+      <td></td>
+      <td>The Jackson Laboratory</td>
+    </tr>
+    <tr>
+      <td>Mouse strain, strain background</td>
+      <td>GCaMP3 floxed mouse (C57Bl/6J)</td>
+      <td>www.jax.org/strain/014538</td>
+      <td></td>
+      <td>The Jackson Laboratory</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-tyrosine hydroxylase</td>
+      <td>Source: Millipore. Reference: PMID 25794171</td>
+      <td>AB152</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-connexin 35/36</td>
+      <td>Source: Millipore. Reference: PMID 26760208.</td>
+      <td>MAB3045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB code for network analysis</td>
+      <td>Source: PMID 25278844</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 Key reagents and their sources are listed in the Key Resources Table. The data that support the findings of this study are available from the corresponding author upon reasonable request.
 
-## Animals
+### Animals
 
 All animal experiments were performed on male animals on postnatal days 21–28, had received approval by the local ethical board, Stockholms Norra Djurförsöksetiska Nämnd, and were performed in accordance with the European Communities Council Directive of November 24, 1986 (86/609/EEC). Sprague Dawley rats (Charles River), DAT-Cre-tdTomato-floxed and DAT-Cre-GCaMP3-floxed C57Bl/6J mice (own breeding – described in [Ekstrand et al., 2007]) were housed with ad libitum access to standard chow and tap water in a temperature-controlled environment under 12 hr light/dark conditions with lights on at 6:00 A.M.
 
-## Whole-cell recordings
+### Whole-cell recordings
 
 For electrophysiological experiments, animals were deeply anesthetized with sodium pentobarbital and decapitated. Only one experiment was performed on each slice. The brain was rapidly removed and placed in ice-cold (2–4°C) and oxygenated (95%O2/5%CO2) slicing solution containing the following (in mM): 214 sucrose, 26 NaHCO3, 10 D-glucose, 1.2 NaH2PO4, 2.0 KCl, 1.3 MgSO4 and 2.4 CaCl2. A modification of the technique developed by Aghajanian and Rasmussen (1989) was used to increase tissue viability. The meninges were gently removed, and the brain was blocked and glued to a vibratome (Leica VT-1000) in which 250 μm-thick coronal sections of the hypothalamus containing the dmArc were prepared unless otherwise stated. After slicing, tissue was immediately transferred to an extracellular recording solution (aCSF) containing (in mM): 127 NaCl, 26 NaHCO3, 10 D-glucose, 1.2 NaH2PO4, 2.0 KCl, 1.3 MgSO4, 2.4 CaCl2, in a continuously oxygenated holding chamber at 35°C for a period of 30 min. A minimum of 1 hr of recovery was allowed after which intracellular whole-cell single unit recordings were performed from TIDA neurons located in the dmArc. For whole-cell recordings, slices were transferred to a submerged chamber and placed on an elevated grid that allows perfusion both above and below the slice. An Axio Examiner D1 upright microscope (Carl Zeiss) was used for infrared differential interference contrast visualization of cells. Recordings were performed at near-physiological temperature (34 ± 1°C) apart from subset of experiments described in Figure 2 performed in room temperature (24 ± 1°C), and slices were continuously perfused with oxygenated recording solution at a rate of 4 ml/min. Whole-cell current- and voltage-clamp recordings were performed with pipettes (3–7 MΩ when filled with intracellular solution) made from borosilicate glass capillaries (World Precision Instruments) pulled on a P-97 Flaming/Brown micropipette puller (Sutter Instruments). The intracellular recording solution used in experiments contained (in mM) 140 K-gluconate, 10 KCl, 10 HEPES, 1 EGTA, and 2 Na2ATP, pH 7.3 (with KOH). All pharmacological compounds were bath applied. Blockade of ionotropic glutamatergic and GABAergic transmission was achieved by adding 10 μM of the AMPA/kainic acid antagonist 6-cyano-7-nitroquinoxaline-2,3-dione (CNQX), 25 μM of the NMDA antagonist DL-2-amino-5-phosphonopentanoic acid (AP5) and 10 μM of gabazine (all from Abcam) to the extracellular recording solution. The concentration used for TTX (Alomone Labs) was 0.5 μM. (-)-quinpirole hydrochloride, 5-HT, prolactin and TRH were obtained from Sigma.
 
-## Paired recordings and electrical coupling
+### Paired recordings and electrical coupling
 
 The strength of coupling between neurons was quantified by the coupling coefficient (CC), which was typically measured by injecting a 0.5 s current step to one neuron and measuring the resulting voltage deflections in both neurons. To minimize distortion of CC by voltage-activated conductances, the current step amplitude was set sufficiently large to produce a steady voltage response in the coupled neuron. For TIDA neurons with input resistance (Rinput) of 500–700 MΩ and a minimum CC of 0.05, we used 20–40 pA current injections while both cells were entering the DOWN state (phase1) resulting in 20–40 mV presynaptic deflections (ΔV) in the injected cell, resulting in stable deflections (ΔV) equal to or larger than 1 mV in the postjunctional cell. 50-sweep negative pulse protocols were routinely used allowing quantification of CC at different voltages via sweep averages. CC was calculated at different voltages, as conductances can amplify/dampen both prejunctional and postjunctional measurements and coupling (Curti et al., 2012; Haas and Landisman, 2011). For current injection I1 into cell 1, the coupling measured in cell 2 is CC12=ΔV2/ΔV1 and vice versa for CC21. The quantity CC12 measures coupling in the direction of cell 2. Postjunctional resistance between pairs was 80 ± 10 MΩ (n = 10).
 
 Recordings were performed using a Multiclamp 700B amplifier, a DigiData 1440 and pClamp10.2 software (Molecular Devices). Slow and fast capacitative components were automatically compensated for. Access resistance was monitored throughout the experiments, and neurons in which the series resistance was more than 25 MΩ or changed 15% were excluded from the statistics. Liquid junction potential was 16.4 mV and not compensated. Sampling frequency in all electrophysiology data was 10 kHz. Raw data in figures were filtered at 1 kHz or 2 kHz for illustrative purposes.
 
-## Logarithmic ZAP function
+### Logarithmic ZAP function
 
-To investigate the possibility of resonance/preferred frequency of TIDA neurons, we performed sinusoidal current injections of fixed amplitude but sweeping frequencies in a given range. The impedance (Z) Amplitude Profile (ZAP) was thus generated for TIDA neurons to determine neurons’ preferred frequency (Tseng and Nadim, 2010) generated by a combination of passive and active properties (Puil et al., 1986). The ZAP current is described as:IZAP=Imaxsin⁡(2πftx t)where f(t) produces the range of frequencies that the ZAP function sweeps. We used an exponential chirp function for f(t) to increase the sampling duration of lower frequencies:f(t)=fminLeLt-1whereL[log(fmax/fmin)] / total chirp duration
+To investigate the possibility of resonance/preferred frequency of TIDA neurons, we performed sinusoidal current injections of fixed amplitude but sweeping frequencies in a given range. The impedance (Z) Amplitude Profile (ZAP) was thus generated for TIDA neurons to determine neurons’ preferred frequency (Tseng and Nadim, 2010) generated by a combination of passive and active properties (Puil et al., 1986). The ZAP current is described as:
+
+$$
+I_{ZAP}=I_{max}sin⁡(2\piftxt)
+$$
+
+where f(t) produces the range of frequencies that the ZAP function sweeps. We used an exponential chirp function for f(t) to increase the sampling duration of lower frequencies:
+
+$$
+f(t)=\frac{f_{min}}{L}e^{Lt}-1
+$$
+
+where
+
+$$
+L[log(fmax/fmin)]/totalchirpduration
+$$
 
 As an optimal frequency range of the ZAP function input allowing accurate determination of the TIDA impedance characteristics, fmin was set to 0.05 Hz and fmax as 10 Hz. The amplitude of the ZAP current was selected as the minimum amplitude that produced a voltage response within the physiological range of the TIDA neuron subthreshold oscillation (−80 mV to −40 mV). This amplitude was typically set to 15–20 pA. Extra caution was placed at targeting resonance within close limits of the membrane voltage, since resonance is described to be voltage dependent (Puil et al., 1987). This protocol was performed in the presence of TTX, resulting in a resting membrane potential and eliminating AP interference with likely resonance mechanisms. A bias direct current (DC) of ∼−20 pA was added to compensate for the depolarizing action of TTX. Furthermore, to avoid transients at the beginning of the oscillations, the ZAP waveform was preceded with three cycles of a sinusoidal waveform of the fmin before transition into the ZAP function.
 
-The impedance of neurons was calculated as a function of the frequency of the injected ZAP current. Impedance contains information about both amplitude and phase of oscillation and is calculated as a function of the input frequency as follows:Z(f)=V~(f)I~fwhere V~ and I~ are, the Fourier transforms of the membrane potential V and the ZAP current I, respectively (Hutcheon and Yarom, 2000b). Z(f) is a complex number; the absolute value of Z is the impedance power and is plotted as a function of frequency. For simplicity here we ignore phase, and in our results, we refer to the impedance power as impedance. Lastly, as negative control for the resonance experiments we analyzed the impedance of a passive neuron showing, as expected, no peak. Additionally, as previous studies suggest (Puil et al., 1994), we tested and concluded that direction (slow-to-fast vs fast-to-slow frequencies) and frequency spectrum (0.05 - 3 Hz vs 0.05 – 10 Hz) of the ZAP current do not alter the TIDA neuron resonance frequency.
+The impedance of neurons was calculated as a function of the frequency of the injected ZAP current. Impedance contains information about both amplitude and phase of oscillation and is calculated as a function of the input frequency as follows:
 
-## Entrainment of TIDA neurons
+$$
+Z(f)=\frac{V~(f)}{I~f}
+$$
+
+where $V~$ and $I~$ are, the Fourier transforms of the membrane potential V and the ZAP current I, respectively (Hutcheon and Yarom, 2000b). Z(f) is a complex number; the absolute value of Z is the impedance power and is plotted as a function of frequency. For simplicity here we ignore phase, and in our results, we refer to the impedance power as impedance. Lastly, as negative control for the resonance experiments we analyzed the impedance of a passive neuron showing, as expected, no peak. Additionally, as previous studies suggest (Puil et al., 1994), we tested and concluded that direction (slow-to-fast vs fast-to-slow frequencies) and frequency spectrum (0.05 - 3 Hz vs 0.05 – 10 Hz) of the ZAP current do not alter the TIDA neuron resonance frequency.
+
+### Entrainment of TIDA neurons
 
 To test entrainability of TIDA neurons, the ZAP function was applied in the 0.05–3 Hz frequency spectrum. The amplitude of the current was determined individually per neuron, as the amount of negative current required to induce a −10 mV ΔV in the DOWN state (phase 1).
 
-## Dye loading and Ca2+imaging
+### Dye loading and Ca2+imaging
 
 For bulk loading of TIDA neurons in rats, the Ca2+-sensitive dye Oregon Green BAPTA-1 AM (OGB-1 AM, Invitrogen) was first dissolved in 0.5% DMSO, 0.01% Pluronic F-127 (Molecular Probes), 0.002% Cremophor (Sigma-Aldrich) and further diluted in aCSF to a final concentration of 20 µM. Slices were incubated for 40 min in oxygenated aCSF containing the cell-permeable OGB-1 AM dye solution. The activity of oscillating neurons of rats (AM dye) and mice (DAT-GCaMP3) was monitored by imaging fluorescence changes under visual control by two-photon imaging and CCD camera (water immersion objective, Zeiss) at ~900 nm. Scanning and image acquisition were controlled by custom software (LSM) during periods of 120 s at intervals of 300 ms. Imaging frames were acquired at 3 Hz. Image sequences were analyzed with custom programs written in ImageJ (NIH) and MATLAB (Smedler et al., 2014). The recorded intensity signals are presented as relative changes of fluorescence in each of the selected ROIs and expressed as (ΔF/F0), where F0 is the baseline fluorescence measured over a period of low activity of each cell. Simultaneous Ca2+imaging and whole-cell recordings (Figure 3—figure supplement 1) were performed on a Zeiss microscope system (Carl Zeiss, Germany). Fluorescence images were captured with a CCD camera (Evolve, Photometrics) during periods of 120 s at intervals of 300 ms. A 64x water-dipping objective was used when a neuron was being simultaneously patched. In these cases, no EGTA was used in the intracellular solution. Whole-cell recordings were performed through visualizing positive cells and then adjusting to DIC images. For temporal synchronization of acquired images and recorded membrane potential oscillations, marker pulses indicating the occurrence of each frame were obtained from the imaging system and recorded together with the intracellular signal using pClamp10.2 software.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Rats and mice were perfused first with pre-fixative (50 mm sodium phosphate buffer, 0.1% sodium nitrite, 0.9% NaCl and 1 unit/mL of heparin, pH 7.4) and next with cold fixative (0.16 m sodium phosphate buffer, 0.2% picric acid, 1–2% formaldehyde prepared from freshly depolymerized paraformaldehyde, pH 7.4), and finally with 10% sucrose/25 mM sodium phosphate buffer (pH 7.4), to wash out excess fixative. Tissues were stored at 4°C for 24–48 hr in cryoprotectant (25 mM sodium phosphate buffer, 10% sucrose, 0.04% sodium azide, pH 7.4). Tissue sections (14 μm) were processed for conventional immunofluorescence, using primary anti-connexin-35/36 (Cx36) immunoglobulin (1:2000; mouse monoclonal, MAB3045, Millipore), combined with anti-tyrosine hydroxylase (TH) antiserum (1:2000; raised in rabbit, AB152, Millipore), counterstained with DAPI and mounted with ProLong Gold (ThermoFisher). Confocal micrographs were acquired with an Olympus FV1000 microscope and analyzed and processed in BitPlane Imaris. For final images, brightness, contrast and sharpness were adjusted digitally.
 
-## Cell filling and reconstruction
+### Cell filling and reconstruction
 
 Mouse (n = 5 cells from 4 animals) and rat (n = 5 cells from 5 animals) TIDA neurons were recorded in whole-cell mode with intracellular pipette solution as above, with the addition of 0.2% neurobiotin. After recording, slices were placed in fixative (4% paraformaldehyde/0.16% picric acid), washed in PBS and incubated at 4°C for 72 hr in a solution containing FITC-conjugated avidin (1:2500, 43–4411, Zymed) and mouse anti-tyrosine hydroxylase immunoglobulin (1:2000, MAB318, Millipore). After extensive washing, slices were incubated in secondary Alexa-594-conjugated donkey-anti-mouse antiserum (1:500; Invitrogen, Carlsbad, CA; A21202) for 16 hr at 4°C, washed again and mounted with 2.5% DABCO in glycerol. TIDA identity of all filled cells was confirmed with TH immunoreactivity. Cells were digitally reconstructed in MBF Neurolucida using a Zeiss Axio Imager M1 with a 63x objective and morphological parameters were extracted from the virtual neurons with MBF Neurolucida Explorer. Sholl analysis was performed by counting the number of line crossings on concentric circles spaced 20 µm apart.
 
-## Data analysis
+### Data analysis
 
 Electrophysiological data analysis was performed with Clampfit (Molecular Devices), OriginPro8 (OriginLab) and custom written MatLab routines. Statistical analysis was performed using GraphPad Prism6, and statistical significance was set at p<0.05. All data are presented as means ± SEM. Significance levels used in figures are shown as: single asterisk (*)=p < 0.05, double asterisks (**)=p < 0.01 and triple asterisks (***) when p<0.001. Results were analyzed using the unpaired two-tailed Student’s t-test unless otherwise stated. In sections stating that data were analyzed using one-way ANOVA, post-hoc analysis was performed with Tukey’s range test.

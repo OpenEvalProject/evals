@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/04dkp9463 Swammerdam Institute for Life Sciences, Section of Molecular Cytology, van Leeuwenhoek Centre for Advanced Microscopy, University of Amsterdam Amsterdam Netherlands
+1. Swammerdam Institute for Life Sciences, Section of Molecular Cytology, van Leeuwenhoek Centre for Advanced Microscopy, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))
 2. Molecular Cell Biology Lab at Dept. Molecular Hematology, Sanquin Research and Landsteiner Laboratory Amsterdam Netherlands
 
 † Corresponding author
@@ -44,11 +44,19 @@ We aimed to optimize and test an optogenetic tool to activate Rho GTPases, rever
 
 ## Results
 
-## Characterizing and optimizing an optogenetic RhoGEF recruitment tool
+### Characterizing and optimizing an optogenetic RhoGEF recruitment tool
 
 To study the role of Rho GTPases in an endothelial cell model in a time and space defined manner, mimicking the natural Rho GTPase activity, heterodimerization tools for guanine exchange factor recruitment were compared. Targeting of GEFs to the plasma membrane is an effective way of activating Rho GTPases. The targeting can be achieved by light or chemical induction of heterodimerization. Here, we compared optogenetic heterodimerization tools to the chemical heterodimerization system that uses rapamycin. The optogenetic heterodimerization tools ‘iLID’ (Guntas et al., 2015) and ‘eMags’ (Benedetti et al., 2020) were selected because of their fast on/off kinetics, size, potential to be targeted to other subcellular locations in the cell rather than the plasma membrane, using FMN as co-factor, which is naturally present in human cells, and potential for local activation. HeLa cells were used for the tool optimization because of easier handling and higher transfection rate in comparison to endothelial cells.
 
 First, the on/off kinetics and the recruitment efficiency of the recruitment systems were compared in HeLa cells, expressing either the rapamycin system, Lck-FRB T2098L-mTurquoise-IRES-sYFP2xNES-FKBP1, or the iLID system, mVenus-iLID-CaaX and SspB-mScarlet-I, or the eMags system, eMagA-EGFP-CaaX and eMagB-TagRFP, stimulated either with 488 nm laser light or the chemical rapamycin (Figure 1A). The t½ ON and OFF kinetics were obtained by fitting a mono-exponential model to the data (Figure 1—figure supplement 1A and B). eMags showed the shortest t½ ON kinetics with 3.97 s and the fastest t½ OFF kinetics with 18.6 s. However, the mean efficiency of the recruitment measured by normalized membrane to cytosol intensity ratio was with 1.5 the lowest. The iLID system showed comparable t½ ON kinetics of 5.14 s and t½ OFF kinetics of 20.3 s and it had a higher mean recruitment efficiency. The rapamycin system showed a longer t½ ON kinetics of 43.1 s, which may partly be explained by the different type of activation, as the rapamycin was added to the medium and needed to diffuse into the cell. The t ½ OFF kinetics was not determined as rapamycin-induced recruitment is irreversible at the time scales used. The rapamycin system showed the highest recruitment efficiency with a normalized membrane to cytosol intensity ratio above 3.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/84364/elife-84364-fig1-v1.jpg)
+
+**Figure 1.:** (A) Normalized membrane to cytosol intensity ratio for the rapamycin system (green) HeLa cells expressing Lck-FRB-T2098L-mTurquoise-IRES-sYFP2xNES-FKBP12, for the improved light-induced dimer (iLID) system (purple) expressing Venus-iLID-CaaX and SspB-mScarlet-I and for the enhanced Magnets (eMags) system (blue) expressing eMagA-EGFP-CaaX and eMagB-tagRFP stimulated with either 100 nM rapamycin (indicated by gray bar) or 488 nm laser light (indicated by cyan bar). The thin lines represent measurements of single cells, the thick lines represent the mean, and the ribbon represents the 95% confidence interval. The number of cells per condition is: iLID n=17, eMags n=12, rapamycin n=11. The data is from two biological replicates based on independent transfections. (B) Change in membrane to cytosol intensity ratio as percentage for the localization of the PIP3 sensor. All Hela cells were expressing the PIP3 location sensor mCherry-Akt-PH and for the iLID system (purple) Venus-iLID-CaaX, iSH-iRFP-SspB, for the eMags system (blue) eMagA-eGFP-CaaX and eMagB-iSH-iRFP670 and for the rapamycin system (green) Lck-FRB-mTurquoise2 and mNeonGreen-FKBP12-iSH. Stimulated with either 100 nM rapamycin or 488 nm laser light each frame. Comparing the ratio of membrane over cytosol intensity of the PIP3 sensor for 0 s pre-activation and 50 s of activation. Each dot represents an individual cell. The median of the data is shown as a black circle and the 95% confidence interval for each median, determined by bootstrapping, is indicated by the bar. The number of cells per condition is: iLID = 29, eMags = 20, rapamycin = 15. (C) Representative confocal images for the in B described conditions: HeLa cells expressing the eMag, iLID and rapamycin recruitment system and the PIP3 biosensorThe PIP3 sensor intensity is depicted with the mpl-inferno look up table, where brighter colors represent higher fluorescent intensities. Scale bars: 10 µm. (D) Change in cytosolic intensity in percentage for HeLa cells expressing SspB-mScarlet-I and either Lck-mTurquoise2-iLID or Venus-iLID-CaaX measured 20 s after stimulation with 1 pulse of 440 nm laser light at 20% for 1 s. Images acquired at a spinning disk microscope. Each dot represents an individual cell. The median of the data is shown as a black circle and the 95% confidence interval for each median, determined by bootstrapping, is indicated by the bar. The number of cells per condition is: CaaX = 43, Lck = 44. The data is from three biological replicates based on independent transfections. (E) Schematic of the light-induced heterodimerization of iLID. Upon photo-activation the Ja helix in the iLID unfolds, SsrA becomes available for binding by SspB which is recruited from the cytosol to the location of SsrA, which is localized at the plasma membrane. The guanine-nucleotide exchange factor (GEF) fused to the SspB activates the Rho GPTase at the plasma membrane, which is binding GTP and thereby activates its signaling cascade. That results in the remodeling of the actin cytoskeleton and change in cell morphology. The combination of fluorescent markers and GEFs fused to SspB in this study is indicated in the bottom. (F) Normalized cytosolic intensity for the HaloTag-3xrGBD Rho sensor (purple) or control HaloTag (gray) stained with JF635 nm upon the photo-activation (indicated by cyan bar) of SspB-mCherry-p63RhoGEF(DH), expressed in HeLa cells together with Lck-mTurquoise2-iLID. Thin lines represent individual cells, thick lines represent the mean, and ribbons represent their 95% confidence interval. The number of cells per condition: Rho sensor HaloTag-3xrGBD = 18, Control HaloTag = 30. The data is from two biological replicates based on independent transfections. (G) Normalized cytosolic intensity for the dimericTomato-wGBD Cdc42 sensor (purple) or control dimericTomato (gray) upon the photo-activation (indicated by cyan bar) of SspB-HaloTag-ITSN1(DHPH) stained with JF635 nm, expressed in HeLa cells together with Lck-mTurquoise2-iLID. Thin lines represent individual cells, thick lines represent the mean, and ribbons represent their 95% confidence interval. The number of cells per condition: Cdc42 sensor dimericTomato-wGBD=6, Control dimericTomato = 7. The data is from two biological replicates based on independent transfections.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/84364/elife-84364-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Curve fitting to determine t½ ON kinetics shown in Figure 1A for the mean normalized membrane to cytosol intensity ratio, where dots represent the mean values shown in Figure 1A, blue = eMags (enhanced Magnets), purple = iLID (improved light-induced dimer), green = rapamycin. The result of the curve fitting is shown as a black line. In the shown time range cells were activated with 488 nm laser light at 1% laser power every 2.5 s or stimulated with 100 nM rapamycin at time point 0 s. (B) Curve fitting to determine t½ OFF kinetics for the normalized membrane to cytosol intensity ratio, where dots represent the mean values shown in Figure 1A, blue = eMags, purple = iLID. The result of the curve fitting is shown as a black line. Time point 0 s is set to the first frame after photo-activation. (C) Change in membrane to cytosol intensity ratio as percentage for the localization of iSH, localization of the PIP3 sensor is presented in Figure 1B. All Hela cells were expressing the PIP3 location sensor mCherry-Akt-PH and for the iLID system Venus-iLID-CaaX, iSH-iRFP-SspB, for the eMags system eMagA-eGFP-CaaX and eMagB-iSH-iRFP670, and for the rapamycin system Lck-FRB-mTurquoise2 and mNeonGreen-FKBP12-iSH. Stimulated with either 100 nM rapamycin or 488 nm laser light each frame. Comparing the ratio of membrane over cytosol intensity of the iSH for 0 s pre-activation and 50 s of activation. Each dot represents an individual cell. The median of the data is shown as a black bar. The number of cells per condition is: iLID = 29, eMags = 20, rapamycin = 15. (D) Plot of the correlation between change in iSH intensity ratio and change in PIP3 sensor intensity ratio for the data shown in Figure 1B, C. The general linear model (top right corner) was fit to the data and is indicated as a dashed line. (E) Left: Normalized cytosolic intensity for the HaloTag-3xrGBD Rho sensor (purple) stained with JF635 nm dye and of the corresponding SspB-mCherry-p63RhoGEF(DH) (gray) intensity, upon photo-activation (indicated by cyan bar) expressed in HeLa cells together with Lck-mTurquoise2-iLID. Showing the SspB-mCherry-p63RhoGEF(DH) recruitment for Figure 1F. Thin lines represent individual cells, thick lines represent the mean values, and ribbons represent their 95% confidence interval. The number of analyzed cells is 18. The data is from two biological replicates based on independent transfections. Right: The same settings and conditions apply except that the cells expressed the HaloTag as a control instead of HaloTag-3xrGBD Rho sensor. The number of analyzed cells is 30. (F) Left: Normalized cytosolic intensity for the dimericTomato-wGBD Cdc42 sensor (purple) and of the corresponding SspB-HaloTag-ITSN1(DHPH) (gray), stained with JF635 nm dye, intensity, upon the photo-activation (indicated by cyan bar) expressed in HeLa cells together with Lck-mTurquoise2-iLID. Showing the SspB-HaloTag-ITSN1(DHPH) recruitment for Figure 1G. Thin lines represent individual cells, thick lines represent the mean values, and ribbons represent their 95% confidence interval. The number of analyzed cells is 6. The data is from two biological replicates based on independent transfections. Right: The same settings and conditions apply, except that the cells expressed the dimericTomato as a control instead of the dimericTomato-wGBD Cdc42 sensor. The number of analyzed cells is 30.
 
 To test the ability to activate a signaling pathway through recruitment of a protein to the plasma membrane, inter-SH2 (iSH2) from the p85 domain of phosphatidylinositol 3-kinase (PI3K) was applied in combination with the Akt-PH PIP3 biosensor. iSH2 interacts with endogenous p110 catalytic subunit of PI3K, when recruited to the plasma membrane, and produces phosphatidylinositol 3,4,5-triphosphate (PI(3,4,5)P3), which can be measured with the biosensor. The sensor consists of the pleckstrin homology (PH) domain of Akt1 and mCherry (Kontos et al., 1998). It binds PI(3,4,5)P3 and thereby localizes to the plasma membrane, which can be measured as an intensity change. The intensity change of Akt-PH at the plasma membrane upon iSH2 recruitment was compared for the iLID, eMags, and the rapamycin system (Figure 1B and C). The rapamycin system showed the highest sensor localization at the plasma membrane with a median of 14% change in the membrane to cytosol intensity ratio and iLID showed a median change of 6.4%. Unexpectedly, activation of eMags showed no change in the intensity of the PI(3,4,5)P3 biosensor. This finding may be explained by the low recruitment efficiency observed for eMags (Figure 1—figure supplement 1C). This low recruitment efficiency in turn influences the biosensor response, since there appeared to be a correlation between high recruitment efficiency of the iSH domain and relocation of the biosensor (Figure 1—figure supplement 1D).
 
@@ -60,13 +68,33 @@ To create a set of Opto-RhoGEFs with flexibility in the spectral window, we tagg
 
 To test the specific activation of the Rho GTPases by Opto-RhoGEFs, single-color relocation sensors were applied, as they are compatible with the blue/green light absorption spectrum occupied by the LOV domain. The Rho sensor HaloTag-3xrGBD showed a clear relocation to the plasma membrane upon photo-activation of OptoP63, measured by fluorescent intensity decrease in the cytosol (Figure 1F). The recruitment of OptoP63 is shown in Figure 1—figure supplement 1E. The Cdc42 sensor dimericTomato-wGBD showed relocation to the plasma membrane upon photo-activation of OptoITSN (Figure 1G). The recruitment of OptoITSN to the plasma membrane and consequently reduced presence in the cytosol is shown in Figure 1—figure supplement 1F. No Rac1 sensor was available with a read-out that is compatible with optogenetics and with a dynamic range sensitive enough to measure the Rac1 activation upon OptoTIAM recruitment. TIAM1 has been identified as a specific Rac GEF (Müller et al., 2020) and we observed for Rac activity expected cell spreading (Figure 4). The location-based sensors indicated that upon photo-activation OptoP63 triggered Rho activation at the plasma membrane, whereas OptoITSN triggered Cdc42 activity at the plasma membrane.
 
-## Influence of Opto-RhoGEFs on permeability and barrier strength in endothelial cell monolayers
+### Influence of Opto-RhoGEFs on permeability and barrier strength in endothelial cell monolayers
 
 Endothelial cells line blood vessels and form the barrier between blood and tissue, but this barrier is semi-permeable, for example, for nutrients, oxygen, and leukocytes. The barrier function can be studied in a cell culture model, where endothelial cells grow in a monolayer. This model was used to test the effect of Opto-RhoGEFs on the vascular barrier, using several functional read-outs. To study the endothelial monolayer barrier function, endothelial cell lines, stably expressing Opto-RhoGEFs, were generated. Therefore, cord blood outgrowth endothelial cells (cBOECs) were treated with lentivirus to stably express Lck-mTurquiose2-iLID and either SspB-HaloTag-TIAM1(DHPH), SspB-HaloTag-ITSN1(DHPH), or SspB-HaloTag-p63RhoGEF(DH).
 
 These experiments required photo-activation of large fields of endothelial monolayers, which could not be achieved at the microscope, as only a limited field of view can be illuminated. Therefore, a commercially available LED strip was used. The blue light setting on the LED strip had an emission peak ranging from 450 nm to 500 nm wavelength (Figure 2—figure supplement 1A). The light power density for the blue LED in its brightest setting was 9.4×10–2 W/m2, in comparison to the 442 nm laser at 1% intensity it was 8.58×106 W/m2 and to the 488 nm laser, at 20% laser power, 1% intensity, it was 1.7×107 W/m2. These values are not directly comparable to the photo-activation, as the LEDs illuminated the whole field of view continuously and the lasers scanned the area unidirectional at 400 Hz at the set frame interval. To test if the blue LED could be used for photo-activation, the same set of HeLa cells expressing Lck-mTurquoise2-iLID and SspB-mScarlet-I was exposed to either the blue LED light or laser light (Figure 2—figure supplement 1B). The photo-activation with blue LED light was sufficient to induce the heterodimerization of the iLID system. However, the photo-activation with laser light resulted in a more complete heterodimerization. Subsequently, LEDs were set to the brightest setting and used for photo-activation of full endothelial monolayers in incubators.
 
 A permeability assay was performed, to study if the photo-activation of OptoTIAM changed the endothelial monolayer permeability. Therefore, BOECs stably expressing Lck-mTurquoise2-iLID and SspB-HaloTag-TIAM1(DHPH) or control cells expressing only Lck-mTurquoise2-iLID were grown into a monolayer in a Transwell dish on a polycarbonate membrane. This membrane, with the monolayer of endothelial cells on it, separated the top and the bottom compartment. To measure permeability of the endothelial cell monolayer, fluorescent dye, namely FITC, coupled to dextran of different kDa sizes was added to the top compartment and the fluorescence intensity is measured in the bottom compartment. Here, the permeability was measured after 10 min of incubation with FITC dextran either in the presence of blue light or in the dark. For three different particle sizes, namely 0.3 kDa, 10 kDa, 70 kDa, 10 min blue light-activated OptoTIAM endothelial cell monolayers showed the lowest permeability in comparison to OptoTIAM-expressing endothelial cell monolayers that were kept in the dark or photo-activated control monolayers (Figure 2A). The photo-activation of OptoTIAM cells seemed to decrease the permeability of the monolayer.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/84364/elife-84364-fig2-v1.jpg)
+
+**Figure 2.:** (A) Fluorescence intensity measured in a transwell assay for a monolayer of blood outgrowth endothelial cells (BOECs) stably expressing Lck-mTurquoise2-iLID, solely as a control, and SspB-HaloTag-TIAM1(DHPH) treated with FITC 0.3 kDa, FITC dextran 10 kDa, and FITC dextran 70 kDa. Photo-activated with blue LED light for 10 min as indicated by cyan background in the graph or kept in the dark indicated by white background. Dots represent individual transwell dishes. The black bar indicates the mean. The number of transwell dishes per condition is: Control Lck-iLID=9, OptoTIAM dark = 6, OptoTIAM light = 9. The data is from three experiments. (B) Resistance of a monolayer of BOECs stably expressing Lck-mTurquoise2-iLID, solely as a control (gray), and either SspB-HaloTag-TIAM1(DHPH)(purple)/ITSN1(DHPH) (blue) or p63RhoGEF(DH) (green) measured with electrical cell-substrate impedance sensing (ECIS) at 4000 Hz, representing paracellular permeability, every 10 s. Cyan bars indicated photo-activation with blue LED light (1 min, 5 min, 10 min, 3×15 min, 120 min). Thin lines represent the average value from one well of an 8W10E PET ECIS array. Thick lines represent the mean. The number of wells per condition was: OptoTIAM = 6, OptoITSN = 6, OptoP63=6, control = 4. (C) Representative zoom-ins from confocal microscopy images of a BOEC monolayer stably expressing Lck-mTurquoise2-iLID (not shown) and either SspB-HaloTag-TIAM1(DHPH)/ ITSN1(DHPH) or p63RhoGEF(DH) stained with JF552 nm dye (LUT = mpl-magma, bright colors indicating higher intensity). Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (white). Scale bars: 25 µm. Times are min:s from the start of the recording. Cyan bar indicates 442 nm photo-activation. Arrows indicate overlap and protrusions. Asterisks indicate holes in monolayer. Whole field of view is shown in Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/84364/elife-84364-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Emission spectrum of the LEDs in the blue setting. Red line indicates peak emission wavelength of 470 nm. (B) Recruitment efficiency as the log ratio of post- over pre-activation cytosolic intensity for HeLa cells expressing Lck-mTurquoise2-iLID and SspB-mScarlet-I activated with either blue LED light or laser light for the indicated time. Each dot represents an individual cell. The median of the data is shown as a black circle and the 95% confidence interval for each median, determined by bootstrapping, is indicated by the bar. The number of cells is 13; the same cells were imaged for the different photo-activation settings.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/84364/elife-84364-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Whole field of view confocal microscopy images of a blood outgrowth endothelial cell (BOEC) monolayer stably expressing Lck-mTurquoise2-iLID (not shown) and either SspB-HaloTag-TIAM1(DHPH), ITSN1(DHPH), or p63RhoGEF(DH) stained with JF552 nm dye (LUT = mpl-inferno, brighter colors indicating higher intensity). Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (gray inverted). Monolayer was photo-activated with 442 nm laser light twice for 15 min with a 15 min dark recovery phase in-between. Scale bars: 50 µm. Times are min:s from the start of the recording. Cyan bar indicates 442 nm photo-activation. Dashed box indicated the zoom-in shown in Figure 2C. (B) The same settings and conditions apply as in A but BOECs are expressing SspB-HaloTag-ITSN1(DHPH) and were photo-activated twice for 10 min with 10 min dark recovery in-between. (C) The same settings and conditions apply as in 2A but BOECs are expressing SspB-HaloTag-p63RhoGEF(DH) and were photo-activated once for 10 min with 10 min dark recovery afterward.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/84364/elife-84364-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Replicate for the resistance of a monolayer of blood outgrowth endothelial cells (BOECs) stably expressing Lck-mTurquoise2-iLID, solely as a control (gray), and either SspB-HaloTag-TIAM1(DHPH)(purple)/ITSN1(DHPH) (blue) or p63RhoGEF(DH) (green) measured with ECIS at 4000 Hz every 10 s. Cyan bars indicated photo-activation with blue LED light (1 min, 5 min, 10 min, 3×15 min, 120 min). Thin lines represent the average value from one well of an 8W10E ECIS array. Thick lines represent the mean. The number of wells per condition is: OptoTIAM = 6, OptoITSN = 6, OptoP63=6, control = 4 and 2. (B) Representative zoom-ins from confocal microscopy images of a BOEC monolayer stably expressing Lck-mTurquoise2-iLID (not shown) and either SspB-HaloTag-TIAM1(DHPH)/ITSN1(DHPH) or p63RhoGEF(DH) stained with JF552 nm dye (LUT = mpl-magma, bright colors indicating higher intensity). Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (white in merge, gray inverted in single channel). Scale bars: 25 µm. Times are min:s from the start of the recording. Cyan bar indicates 442 nm photo-activation. Arrows indicate overlap and protrusions. Asterisks indicate holes in monolayer.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/84364/elife-84364-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) ECIS experiment overview of the resistance of a monolayer of blood outgrowth endothelial cells (BOECs) stably expressing Lck-mTurquoise2-iLID, solely as a control (gray), and either SspB-HaloTag-TIAM1(DHPH)(purple)/ITSN1(DHPH) (blue) or p63RhoGEF(DH) (green) measured with ECIS at 4000 Hz every 10 s. Cyan bars indicated photo-activation with blue LED light (1 min, 5 min, 10 min, 3×15 min, 120 min, 60 min). Gray bar indicates sphingosine-1-phosphate (S1P) stimulation. Thin lines represent the average value from one well of an 8W10E ECIS array. Thick lines represent the mean. The number of wells per condition is: OptoTIAM = 6, OptoITSN = 6, OptoP63=6, control = 4. The experiment was performed twice on different days. (B) Zoom-in on the 1 hr photo-activation on the second day after seeding. The same settings and conditions apply as in A. (C) Zoom-in on S1P stimulation for BOECs stably expressing Lck-mTurquoise2-iLID, solely as a control (gray), and either SspB-HaloTag-TIAM1(DHPH) (purple) for replicate 1. Cells were stimulated with 650 nM S1P in medium, OptoTIAM-S1P (purple) n=6, and Control-cells-S1P n=2 (black), as a control for the stimulation, cells were treated with medium only: Control-cells-medium (gray) n=2.
 
 To study the influence of Opto-RhoGEFs on the endothelial monolayer barrier strength in real time, resistance was measured using ECIS technology. Therefore, BOECs stably expressing Lck-mTurquoise2-iLID and either SspB-HaloTag-TIAM(DHPH), SspB-HaloTag-ITSN(DHPH), or SspB-HaloTag-p63(DH) were grown as monolayers on ECIS electrode arrays. BOECs, only expressing Lck-mTurquoise2-iLID, were used as control. Cells were stimulated in the ECIS incubator with the blue LED light, as described above. OptoTIAM-expressing cells showed an increase in resistance after 1 min of activation with blue light, which is fully reversible within seconds. When activating for 10 min, the increase in resistance reached a maximum level. To study fatigue a sequential activation of 15 min was performed three times. Interestingly, during this period, the cellular system did not show any fatigue. Even when the endothelial cells were activated for 2 hr, the maximum resistance level did not show any drop, but as soon as photo-activation was stopped, the resistance decreased drastically within seconds. The control cells, only expressing the iLID part of the system, did not respond to the blue light with a change in resistance (Figure 2B, Figure 2—figure supplement 3A, Figure 2—figure supplement 4A). The resistance of the OptoITSN-expressing endothelial cells showed a similar pattern in comparison to the OptoTIAM cells but with a smaller amplitude, indicating that Cdc42 activation did not increase endothelial resistance to the same extent as Rac did. However, this monolayer reached maximum resistance at approximately 5 min. When OptoITSN cells were photo-activated for longer than 10 min the resistance started to decrease slightly but did not return to baseline. During the sequential three times 15 min photo-activation, the resistance increase was slightly smaller with each activation for the OptoITSN cells (Figure 2B, Figure 2—figure supplement 3A, Figure 2—figure supplement 4A).
 
@@ -78,13 +106,49 @@ To put the resistance changes in context, it was compared to a strong activator 
 
 In parallel to the monolayer resistance measurements, cells were seeded for microscopy, at the same density, to image the endothelial monolayer morphology induced by photo-activation that would explain the rapid change in resistance. As adherens junctions are important for the barrier resistance, endothelial cells were stained for junctional marker VE-cadherin (Figure 2C, Figure 2—figure supplement 2A,B, Figure 2—figure supplement 3B, Animation 1—6Animation 1—6).
 
+![Animation 1.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation1-v1.gif.jpg)
+
+**Animation 1.:** Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (white). Cells were photo-activated with a 442 nm laser as indicated. Times are min:s from the start of the recording.
+
+![Animation 2.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation2-v1.gif.jpg)
+
+**Animation 2.:** Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (white). Cells were photo-activated with a 442 nm laser as indicated. Times are min:s from the start of the recording.
+
+![Animation 3.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation3-v1.gif.jpg)
+
+**Animation 3.:** Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (white). Cells were photo-activated with a 442 nm laser as indicated. Times are min:s from the start of the recording.
+
+![Animation 4.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation4-v1.gif.jpg)
+
+**Animation 4.:** Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (white). Cells were photo-activated with a 442 nm laser as indicated. Times are min:s from the start of the recording.
+
+![Animation 5.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation5-v1.gif.jpg)
+
+**Animation 5.:** Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (white). Cells were photo-activated with a 442 nm laser as indicated. Times are min:s from the start of the recording.
+
+![Animation 6.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation6-v1.gif.jpg)
+
+**Animation 6.:** Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (white). Cells were photo-activated with a 442 nm laser as indicated. Times are min:s from the start of the recording.
+
 For some OptoTIAM cells, increased cell-cell overlap was observed during photo-activation. Some OptoITSN cells also showed increased overlap and appeared to ruffle more during photo-activation. The adherens junctions showed a heterogenous mix of a smoother and a more jagged phenotype. During photo-activation, the balance seemed to shift toward the smoother phenotype. However, these subtle changes in phenotype could not be quantified (Figure 2C, Figure 2—figure supplement 2A,B, Figure 2—figure supplement 3B, Animation 1, 2, 4 and 5). OptoP63 cells clearly showed contraction, as was judged by the induction of gaps appearing in the monolayer upon photo-activation. This also changed the appearance of the VE-cadherin staining, junctions appeared more jagged, and some disappear completely, as cells detach from each other (Figure 2C, Figure 2—figure supplement 2C, Figure 2—figure supplement 3B, Animation 3 and 6). For the OptoP63 cells, the formation of gaps between cells caused by cell contraction and partly loss of cell-cell junctions explains the decrease in resistance and, accordingly, barrier strength. For OptoTIAM and OptoITSN it was less clear which morphological changes in the adherens junctions would explain the rapid resistance increase.
 
-## VE-cadherin in Opto-RhoGEF induced changes in vascular barrier strength
+### VE-cadherin in Opto-RhoGEF induced changes in vascular barrier strength
 
 To investigate the role of junctions in the vascular barrier strength increase/decrease induced by photo-activation of Opto-RhoGEFs, the images of VE-cadherin staining were analyzed. The linearity index is a measure of how straight the junctions are, and the straighter an endothelial junction the more mature the junction is (Klems et al., 2020). Values for the linearity index typically range from 1.25 to 1, where a straight junction would have a linearity index of 1 (Otani et al., 2006). Thus, an increased barrier strength is correlated to a linearity index value closer to 1, a decrease of the linearity index.
 
 Comparing the junction linearity prior to activation and at the maximum of activation for OptoTIAM, the linearity index increased slightly, for OptoITSN there was no change and for OptoP63 there was a slight increase in linearity index (Figure 3A, Figure 3—figure supplement 1A). The linearity index of OptoTIAM and OptoITSN did not explain the increased barrier strength. For OptoP63 the increased linearity index supported a role of the junctions in the decreased barrier strength upon activation. However, junctions that were dissolved during the photo-activation are not accounted for in the analysis.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/84364/elife-84364-fig3-v1.jpg)
+
+**Figure 3.:** (A) Linearity index for a blood outgrowth endothelial cell (BOEC) monolayer stably expressing Lck-mTurquoise2-iLID and either SspB-HaloTag-TIAM1(DHPH) (purple)/ITSN1(DHPH) (blue) or p63RhoGEF(DH) (green) for the frame before photo-activation (pre) and the last frame of photo-activation (Activation). Images of the junctions are in Figure 2—figure supplement 2 and example of linearity index analysis in Figure 3—figure supplement 1A. Each dot represents an individual cell. The median of the data is shown as a black circle and the 95% confidence interval for each median, determined by bootstrapping, is indicated by the bar. The number of cells is: OptoTIAM pre = 55, OptoTIAM Activation = 52, OptoITSN pre = 71, OptoITSN Activation = 76, OptoP63 pre = 74, OptoP63 Activation = 51. The data is from two independent experiments. (B) Resistance of a monolayer of BOECs stably expressing Lck-mTurquoise2-iLID, solely as a control (gray), and either SspB-HaloTag-TIAM1(DHPH)(purple)/ITSN1(DHPH) (blue) or p63RhoGEF(DH) (green) measured with electrical cell-substrate impedance sensing (ECIS) at 4000 Hz, representing paracellular permeability, every 10 s. Cyan bars indicated photo-activation with blue LED light (60 min, 15 min). Gray bar with dashed lines indicates the addition of VE-cadherin blocking antibody in medium (darker color line) or medium as a control (lighter color line). At the end of the gray bar the medium is replaced for all conditions. Thin lines represent the average value from one well of an 8W10E PET ECIS array. Thick lines represent the mean. Four wells were measured for each condition. (C) Representative zoom-ins from confocal microscopy images of a BOEC monolayer stably expressing Lck-mTurquoise2-iLID (not shown) and either SspB-HaloTag-TIAM1(DHPH)/ITSN1(DHPH) or p63RhoGEF(DH) stained with JF552 nm dye (LUT = mpl-magma, bright colors indicating higher intensity). Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (white in merge, gray inverted in single channel). Left panel shows untreated cells, right panel shows cells treated with the VE-cadherin blocking antibody. Scale bars: 25 µm. Times are min:s from the start of the recording. Gray bar indicates the condition before photo-activation. Cyan bar indicates 442 nm photo-activation. Arrows indicate overlap and protrusions. Asterisks indicate holes in monolayer.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/84364/elife-84364-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Left panel: Confocal microscopy image of a blood outgrowth endothelial cell (BOEC) monolayer stably expressing Lck-mTurquoise2-iLID (not shown) and SspB-HaloTag-TIAM1(DHPH) (not shown), additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (gray inverted), shown for the last frame before photo-activation (pre in Figure 3A). Middle panel: Blue lines represent the Tissue Analyzer created junction outlines. Yellow lines represent the hand-drawn polygon to measure the junction linearity index. Right panel: Shows a merge of the microscopy image and the lines used for the linearity index measurements. Scale bar: 25 µm. (B) Temporal color coding for confocal microscopy images of VE-cadherin stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144, for a monolayer of BOECs stably expressing Lck-mTurquoise2-iLID (not shown) and either SspB-HaloTag-TIAM1(DHPH)/ITSN1(DHPH) or p63RhoGEF(DH) (not shown). For the time period, as indicated in the image, before photo-activation (left panel), during photo-activation indicated with cyan bar (middle panel) and after photo-activation (right panel). Color code indicates time shown in look up table. Times are min:s from the start of the recording. Scale bars:50 µm. These images are also shown in Figure 2—figure supplement 2 and in Figure 2C. (C) Confocal microscopy image of a BOEC monolayer stably expressing Lck-mTurquoise2-iLID (not shown) and SspB-HaloTag-TIAM1(DHPH) (not shown), additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (gray inverted). Cells were treated with VE-cadherin blocking antibody at time point zero, indicated by gray bar. Times are min:s starting from the treatment. Scale bar: 25 µm. Asterisks indicate holes in monolayer.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/84364/elife-84364-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Replicate for the resistance of a monolayer of blood outgrowth endothelial cells (BOECs) stably expressing Lck-mTurquoise2-iLID, solely as a control (gray), and either SspB-HaloTag-TIAM1(DHPH)(purple)/ITSN1(DHPH) (blue) or p63RhoGEF(DH) (green) measured with ECIS at 4000 Hz every 10 s. Cyan bars indicated photo-activation with blue LED light (60 min, 15 min). Gray bar with dashed lines indicates the addition of VE-cadherin blocking antibody in medium (darker color line) or medium as a control (lighter color line). At the end of the gray bar the medium is replaced for all conditions. Thin lines represent the average value from one well of an 8W10E PET ECIS array. Thick lines represent the mean. Three wells were measured for each condition.
 
 Another way to describing junction properties is a temporal color-coded maximum intensity projection, displaying the junction dynamics. For OptoTIAM cells it appeared that there was a slight decrease in dynamics during the activation, in comparison to the pre-activation frames, but there appeared to be an increase in dynamics in the period right after activation (Figure 3—figure supplement 1B). In this recovery phase after photo-activation, there was also a dip in the resistance measurement (Figure 2B), which may be explained with the remodeling of the monolayer after photo-activation, including the movement of the junctions. For OptoITSN cells there is no clear change in junction dynamics upon photo-activation (Figure 3—figure supplement 1B). Looking at OptoP63 cells there is a clear increase in junction dynamics upon photo-activation (Figure 3—figure supplement 1B). It appears that higher junction dynamics occurred when resistance measurements are lower. Therefore, higher junction dynamics might explain the dip in resistance after photo-activation for OptoTIAM cells and the dip in resistance upon photo-activation for OptoP63 cells. However, there is no clear decrease in junction dynamics upon photo-activation for OptoTIAM and OptoITSN cells to explain the observed resistance increase.
 
@@ -92,13 +156,61 @@ It was attempted to quantify more junction properties with the ‘Junction Mappe
 
 To further explore which role the junctions play in the vascular barrier strength increase triggered by GEFs, it was investigated how the monolayer responded to Opto-RhoGEF activation in the absence of VE-cadherin junctions. Therefore, a VE-cadherin blocking antibody was used. Opto-RhoGEFs and control cells were grown into a monolayer on an ECIS array and treated with VE-cadherin blocking antibody. The VE-cadherin blocking antibody caused the homodimeric bonds to break between the VE-cadherins (Figure 3—figure supplement 1C, Animation 7Animation 7). Previous work has shown the specific blocking effect of this antibody in comparison to the VE-cadherin (55-7H1) labeling antibody (Kroon et al., 2014). The VE-cadherin blocking antibody lowered the resistance in all conditions, which dropped to a stable level (Figure 3B, Figure 3—figure supplement 2A). Subsequently, the cells were photo-activated and for OptoTIAM and OptoITSN, an increase in resistance was measured comparable to the control conditions without the VE-cadherin blocking antibody. The amplitude of resistance appeared to be the same. OptoP63 showed a decrease in resistance, but the drop is not more severe in the presence of VE-cadherin blocking antibody. The VE-cadherin blocking antibody was washed out and the resistance returned to baseline matching the control condition. Subsequently, both conditions were photo-activated and showed a response that was similar between the two conditions. This suggests that the entire system is reversible with respect to the antibody treatment and optogenetic manipulation. In parallel to the ECIS experiment, cells were seeded for microscopy at the same density and treated with the VE-cadherin blocking antibody. The junctions looked more diffuse in the treated conditions (Figure 3C, Animation 8—15Animation 8—15). For OptoTIAM and OptoITSN cells there were no striking differences in the appearance of VE-cadherin stain upon photo-activation in both conditions, but both showed membranes that overlapped (Figure 3C, Animation 10—13). For OptoP63 cells, VE-cadherin showed junction disassembly and gaps in the monolayer upon photo-activation in both conditions (Figure 3C, Animation 14 and 15).
 
+![Animation 7.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation7-v1.gif.jpg)
+
+**Animation 7.:** Cells were treated with VE-cadherin blocking antibody as indicated. Times are min:s from the start of the recording.
+
+![Animation 8.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation8-v1.gif.jpg)
+
+**Animation 8.:** Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (gray inverted). Cells were photo-activated with a 442 nm laser as indicated. Times are min:s from the start of the recording.
+
+![Animation 9.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation9-v1.gif.jpg)
+
+**Animation 9.:** Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (gray inverted). Cells were photo-activated with a 442 nm laser as indicated. Times are min:s from the start of the recording.
+
+![Animation 10.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation10-v1.gif.jpg)
+
+**Animation 10.:** Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (gray inverted). Cells were photo-activated with a 442 nm laser as indicated. Times are min:s from the start of the recording.
+
+![Animation 11.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation11-v1.gif.jpg)
+
+**Animation 11.:** Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (gray inverted). Cells were photo-activated with a 442 nm laser as indicated. Times are min:s from the start of the recording.
+
+![Animation 12.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation12-v1.gif.jpg)
+
+**Animation 12.:** Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (gray inverted). Cells were photo-activated with a 442 nm laser as indicated. Times are min:s from the start of the recording.
+
+![Animation 13.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation13-v1.gif.jpg)
+
+**Animation 13.:** Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (gray inverted). Cells were photo-activated with a 442 nm laser as indicated. Times are min:s from the start of the recording.
+
+![Animation 14.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation14-v1.gif.jpg)
+
+**Animation 14.:** Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (gray inverted). Cells were photo-activated with a 442 nm laser as indicated. Times are min:s from the start of the recording.
+
+![Animation 15.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation15-v1.gif.jpg)
+
+**Animation 15.:** Additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (gray inverted). Cells were photo-activated with a 442 nm laser as indicated. Times are min:s from the start of the recording.
+
 Under conditions where blocking of VE-cadherin reduced the resistance of endothelial monolayers, the barrier could still be enhanced, independent from VE-cadherin. By photo-activating specific GEFs that subsequently activate Rho GTPases Rac1 or Cdc42, the endothelial barrier function can be increased.
 
-## Morphology changes induced by global activation of Opto-RhoGEFs in subconfluent endothelial cells
+### Morphology changes induced by global activation of Opto-RhoGEFs in subconfluent endothelial cells
 
 To identify the mechanism that allowed for barrier strength increase in the absence of VE-cadherin, it was attempted to quantify cell-cell overlap in the monolayer. The attempt to stain two populations of Opto-RhoGEF cells with different HaloTag JF dyes to then grow them in a mosaic monolayer, to measure membrane overlap at junction regions directly, failed. The two populations could not be distinguished by fluorescence color anymore after the 24 hr that it takes for the cells to form a monolayer. In images of Opto-RhoGEF stained in one color cell-cell overlap area could not be measured in a reliable manner. Therefore, the cell area change was studied in subconfluent endothelial cells.
 
 The initial cell area was measured before photo-activation to rule out that expressing the Opto-RhoGEFs in the cytosol by itself had influence on the cell size (Figure 4—figure supplement 1A). To assess the effect of optogenetics activation on cell morphology, cells were illuminated with 442 nm light for 10 min and the cell area before activation and at the peak of extension/spreading were superimposed (Figure 4A). Control cells only expressing Lck-mTurquoise2-iLID showed extension on one side of the cell and contraction at the opposite side, they appeared to move in one direction.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/84364/elife-84364-fig4-v1.jpg)
+
+**Figure 4.:** (A) Cell area change during 10 min photo-activation with a 442 nm laser line for BOECs stably expressing Lck-mTurquoise2-iLID, solely as control, and either SspB-HaloTag-TIAM1(DHPH)/ ITSN1(DHPH) or p63RhoGEF(DH). The images show an overlay of the cell area before and after the photo-activation and colors indicate either contraction or extension. (B) Normalized cell area over time for the cells depicted in A. Control = gray, OptoTIAM=purple, OptoITSN=blue, OptoP63=green. The cyan bar indicates photo-activation with 442 nm laser light. Thin lines represent individual cells, thick lines represent the mean values, and ribbons represent their 95% confidence interval. The number of analyzed cells is: Control = 9, OptoTIAM=9, OptoITSN=9, OptoP63=9. The data is from two independent experiments and at least three independent photo-activations. (C) Representative confocal microscopy images of BOECs stably expressing Lck-mTurquoise2-iLID (not shown), solely as control, and either SspB-HaloTag-TIAM1(DHPH)/ITSN1(DHPH) or p63RhoGEF(DH) stained with JF552 nm dye. Additionally, stained for F-actin with SiR-actin. Scale bars: 10 µm. Times are min:s from the start of the recording. Cyan bar indicates 442 nm photo-activation. Gray box indicates zoom. Gray dashed line indicates cell edge.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/84364/elife-84364-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Initial cell area for blood outgrowth endothelial cells (BOECs) stably expressing Lck-mTurquoise2-iLID, solely as control, and either SspB-HaloTag-TIAM1(DHPH)/ITSN1(DHPH) or p63RhoGEF(DH). Each dot represents an individual cell. The median of the data is shown as a black circle and the 95% confidence interval for each median, determined by bootstrapping, is indicated by the bar. The dashed line represents the median of the control condition. The number of cells per condition is: Control Lck-iLID=257, OptoITSN = 467, Optop63=389, OptoTIAM = 458. The data is from two independent experiments. (B) Cell area for BOECs stably expressing Lck-mTurquoise2-iLID, solely as control, and either SspB-HaloTag-TIAM1(DHPH)/ITSN1(DHPH) or p63RhoGEF(DH) before activation (t=0 s) at the end of 10 min activation (t=705) and 10 min after this activation (t=1305). Including the cell shown in Figure 4A and B. Dots represent individual cells, thick lines represent the mean values, and ribbons represent their 95% confidence interval. The number of analyzed cells is: Control = 36, OptoTIAM=45, OptoITSN=48, Opto-P63=34. The data is from two independent experiments with at least four individual photo-activations. (C) Form factor in B described dataset and conditions.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/84364/elife-84364-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Normalized mean resistance and cell size for a 10 min photo-activation, indicated with cyan bar, of blood outgrowth endothelial cells (BOECs) expressing Lck-mTurquoise2-iLID and either SspB-HaloTag-TIAM1(DHPH)(purple)/ITSN1(DHPH) (blue) or p63RhoGEF(DH) (green). Resistance measured with electrical cell-substrate impedance sensing (ECIS) (darker color) and cell size measured in confocal microscopy images (lighter color). The same data is also presented in Figure 2B and Figure 4B. (B) Plot of the correlation between normalized mean resistance and normalized mean cell size for the curves shown in A. The general linear model (top right corner) was fit to the data and is indicated as a dashed line. (C) Confocal microscopy images from a time-lapse of a BOEC monolayer stably expressing Lck-mTurquoise2-iLID (not shown) and SspB-HaloTag-TIAM1(DHPH) (upper panel, LUT = mpl-magma, brighter colors represent higher intensity), additionally, PECAM was stained with a live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD31 (lower panel, inverted gray). Purple dashed line indicates higher intensity PECAM areas marking cell-cell overlap. Arrows indicate higher intensity in the OptoTIAM channel in cell-cell overlap areas. Time is min:s from the start of photo-activation. The cyan bar indicates photo-activation with 442 nm laser light for 15 min. Scale bar: 25 µm. (D, E, F) Confocal microscopy images from a time-lapse of a BOEC monolayer stably expressing Lck-mTurquoise2-iLID (not shown) and SspB-HaloTag-TIAM1(DHPH) (upper panel, LUT = mpl-magma, brighter colors represent higher intensity), additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (lower panel, inverted gray). Arrows indicate higher intensity in the OptoTIAM channel in cell-cell overlap areas. Time is min: s from the start of photo-activation. The cyan bar indicates photo-activation with 442 nm laser light. Scale bar: 25 µm. Cell E is also shown in Figure 2C. (G) Normalized cell area over time for a subconfluent monolayer of BOEC stably expressing Lck-mTurquoise2-iLID and SspB-HaloTag-TIAM1(DHPH), photo-activated with 442 nm laser light in the time period indicated with the cyan bar. (H) Zoom-in on the corresponding confocal microscopy images measured in G. Images show BOECs, in a subconfluent monolayer, stably expressing Lck-mTurquoise2-iLID (not shown) and SspB-HaloTag-TIAM1(DHPH) (upper panel, LUT = mpl-magma, brighter colors represent higher intensity), additionally, VE-cadherin was stained with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (lower panel, inverted gray). Asterisks indicate holes in the monolayer. White arrows indicate overlap. Black arrows indicate newly formed adherens junctions. Time is min:s from the start of the recording. The cyan bar indicates photo-activation with 442 nm laser light. Scale bar: 25 µm. (I) Wide-field microscopy images of a mosaic BOEC monolayer with one population stably expressing SspB-HaloTag-TIAM1(DHPH) (not shown) and Lck-mTurquoise2-iLID, and the other population stably expressing the membrane marker mScarlet-CaaX. The cell-cell overlap is represented by the merge (top panel) of the Lck-mTurquoise2-iLID (magenta) and mScarlet-CaaX (green) channel and as a binary image (bottom panel) representing the cell area of Lck-mTurquoise2-iLID (purple) and mScarlet-CaaX (gray) cells, where the overlap is colored white. Cells were photo-activated with 442 nm excitation light as indicated by the cyan bar. Arrows indicate cell-cell overlap. (J) Quantification of the cell-cell overlap are for the in (I) presented experiment, by measuring the white indicated area that contains CFP as well as RFP signal. Thin lines represent individual cells, thick line represents the mean values, and ribbons represent the 95% confidence interval. The number of analyzed cells is 10 for three individual photo-activations.
 
 OptoTIAM and OptoITSN cells spread out in all directions upon activation. Therefore, these cells appeared rounder. This was quantified by calculating the form factor (form factor 1 is a perfect circle), which confirmed the observation (Figure 4—figure supplement 1C). In contrast, OptoP63 cells contracted and were less round (Figure 4A, Figure 4—figure supplement 1C).
 
@@ -106,25 +218,93 @@ Following the cell area over time during photo-activation showed that OptoTIAM a
 
 Actin fibers define the morphology of the cell and actin polymerization is the driving force of cellular movement (Noda et al., 2010), therefore the Opto-RhoGEF cells were stained for F-actin to study changes in actin structures upon photo-activation (Figure 4C, Animation 16—19Animation 16—19). For the control, actin fibers are visible at the cell edge, in an orientation parallel to the edge. In the OptoTIAM cells, the actin fibers parallel to the cell edge seemed to disassemble during activation and areas of cell expansions showed no thick actin fibers. Areas with actin fibers perpendicular to the cell edge rather showed slight contraction instead of cell spreading. Also, OptoITSN cells showed less dense actin structures in the extending areas of the activated cell. OptoP63 cells showed actin fibers clustering together during cell contraction upon photo-activation. During recovery, the new cell edges also showed very little actin staining. It needs to be noted that we used SiR-actin to stain the actin cytoskeleton. SiR-actin supposedly stains more mature actin structures, which might underrepresent the newly polymerized actin structures (Simao et al., 2021).
 
+![Animation 16.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation16-v1.gif.jpg)
+
+**Animation 16.:** Additionally, stained for F-actin with SiR-actin. Cell was photo-activated with a 442 nm laser line as indicated. Times are min:s from the start of the recording.
+
+![Animation 17.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation17-v1.gif.jpg)
+
+**Animation 17.:** Additionally, stained for F-actin with SiR-actin (right). Cell was photo-activated with a 442 nm laser line as indicated. Times are min:s from the start of the recording.
+
+![Animation 18.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation18-v1.gif.jpg)
+
+**Animation 18.:** Additionally, stained for F-actin with SiR-actin (right). Cell was photo-activated with a 442 nm laser line as indicated. Times are min:s from the start of the recording.
+
+![Animation 19.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation19-v1.gif.jpg)
+
+**Animation 19.:** Additionally, stained for F-actin with SiR-actin (right). Cell was photo-activated with a 442 nm laser line as indicated. Times are min:s from the start of the recording.
+
 To investigate if the cell size, specifically cell-cell overlap in a monolayer, plays a role in the observed barrier strength increase, the time scale of changes in cell area and resistance were compared. To this end, the cell area change of subconfluent cells, upon activation (Figure 4B), and the vascular barrier strength upon activation (Figure 2B) were compared and showed a correlation (Figure 4—figure supplement 2A and B). This supports the idea that the increased endothelial membrane overlaps at junction regions by itself resulted in increased resistance, assuming that cell spreading in a monolayer increases overlap.
 
 To further investigate this, OptoTIAM cells in a monolayer were stained with PECAM1, an endothelial cell-specific adhesion molecule that has been observed in overlapping protrusions. We indeed observed PECAM1 prominently present at endothelial membrane overlaps. Upon activation, the PECAM1-positive area increased and colocalized with the areas with increased intensity in the OptoTIAM channel (Figure 4—figure supplement 2C, Animation 20Animation 20). Thus, the OptoTIAM channel could also be used to make an estimate of overlap, as the PECAM1 intensity increased where two cells overlap. However, this only works if the cells have roughly the same intensity. The intensity range was too heterogeneous in this dataset to analyze the entire monolayer in the field of view, but example images are shown. Within the first 2 min of activation, the time it takes for the barrier strength to increase at least the halftime point, the OptoTIAM cells showed increased overlap but no clear change in VE-cadherin staining (Figure 4—figure supplement 2D, E, and F; Animation 4). Studying the subconfluent monolayer, the activation of OptoTIAM increased the area covered by the cells, through the closure of gaps in the monolayer (Figure 4—figure supplement 2G). The cells covered the gaps first with membrane, there was a clear cell extension after 2 min but no new junctions are formed yet (Figure 4—figure supplement 2H). After 15 min, the first new junctions started to appear and after 30 min these junctions showed a linear phenotype (Figure 4—figure supplement 2H, Animation 21Animation 21). Additionally, cell-cell membrane overlap increased about 20%, up on photo-activation of OptoTIAM, in a mosaic expression monolayer (Figure 4—figure supplement 2I and J, Animation 22Animation 22).
 
+![Animation 20.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation20-v1.gif.jpg)
+
+**Animation 20.:** Cells were photo-activated with 442 nm laser light as indicated. Times are min:s from the start of the recording.
+
+![Animation 21.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation21-v1.gif.jpg)
+
+**Animation 21.:** Cells were photo-activated with 442 nm laser light as indicated. Time is min:s from the start of the recording.
+
+![Animation 22.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation22-v1.gif.jpg)
+
+**Animation 22.:** The cell-cell overlap is represented by the merge (forth panel) of the Lck-mTurquoise2-iLID (magenta) and mScarlet-CaaX (green) channel. Cells were photo-activated with 442 nm excitation light as indicated. Time is min:s from the start of the recording.
+
 In conclusion, endothelial barrier function is not solely determined by the junctional protein VE-cadherin. Clearly, overlapping membranes at junction regions can also promote endothelial barrier. The overlapping membranes are potentially induced by increased cell size of single endothelial cells that once they are present in a monolayer, consequently partly overlap.
 
-## Local activation of Opto-RhoGEFs in subconfluent endothelial cells
+### Local activation of Opto-RhoGEFs in subconfluent endothelial cells
 
 Rho GTPase activity is defined on a subcellular level and not homogenously over the entire cell (Rossman et al., 2005). Therefore, the Opto-RhoGEFs were additionally tested for their potential to locally induce Rho GTPase activity and thereby morphology changes on a subcellular scale. In addition, we studied the plasticity of the endothelial cells by photo-activating different spots.
 
 Hence, cells were locally photo-activated with 442 nm laser light for 10 min in the indicted region of interest (ROI). After 10 min, this activation ROI was moved to the opposite side of the cell. OptoTIAM cells and OptoITSN cells extended rather precisely in the ROI, as indicated by blue and purple colors (Figure 5A, Animation 23 and 24Animation 23 and 24Animation 24). OptoP63 cells contracted and moved out of the ROI, as indicated in green (Figure 5A, Animation 25Animation 25). Following multiple cells, OptoTIAM cells increased coverage of the activation ROI after 10 min by about 20% (Figure 5B). OptoITSN cells increased the ROI coverage by 30% within 10 min of activation. OptoP63 cells decreased the ROI coverage for about 40% after 10 min of activation. Measuring ROIs for unstimulated control cells, no average change in coverage was measured (Figure 5—figure supplement 1A). Cells were sequentially activated at two different positions, and the response was equally strong for the second activation, indicating no immediate fatigue of the system (Figure 5—figure supplement 1B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/84364/elife-84364-fig5-v1.jpg)
+
+**Figure 5.:** (A) Cell area change during two 10 min local photo-activations with 442 nm laser line for BOECs stably expressing Lck-mTurquoise2-iLID and either SspB-HaloTag-TIAM1(DHPH)/ITSN1(DHPH) or p63RhoGEF(DH). The images show an overlay of the cell area before and after the activation and colors indicate either contraction or extension. The gray dashed box indicates the area of activation. (B) Activation area covered by cell, pre- and post-10 min activation with 442 nm laser line, for BOECs stably expressing Lck-mTurquoise2-iLID and either SspB-HaloTag-TIAM1(DHPH)(purple)/ITSN1(DHPH) (blue) or p63RhoGEF(DH) (green). Small dots represent individual activation areas, which are connected by lines. Larger dots represent the mean of each replicate indicated by different colors. The number of activation areas for OptoTIAM=53, for OptoITSN=85, OptoP63=61. (C) Representative confocal microscopy images of BOECs stably expressing Lck-mTurquoise2-iLID (not shown) and either SspB-HaloTag-TIAM1(DHPH)/ITSN1(DHPH) or p63RhoGEF(DH) stained with JF552 nm dye. Additionally, stained for F-actin with SiR-actin. Scale bars: 10 µm. Times are min:s from the start of the photo-activation. Cyan bar indicates 442 nm photo-activation and gray box indicates area of activation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/84364/elife-84364-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Activation area covered by cell before and after 10 min without local photo-activation for control blood outgrowth endothelial cells (BOECs) stably expressing Lck-mTurquoise2-iLID. Small dots represent individual areas, which are connected by lines. Larger dots represent the mean of each replicate indicated by different colors. The number of areas is: control = 76. (B) Activation area covered by cell, pre- and post-10 min activation with 442 nm light, for BOECs stably expressing Lck-mTurquoise2-iLID and either SspB-HaloTag-TIAM1(DHPH)(purple), -ITSN1(DHPH) (blue), or -p63RhoGEF(DH) (green), shown in Figure 5B. Separated for first and second 10 min activation on the same cell but on opposite sides of the cell. Small dots represent individual activation areas, which are connected by lines. Larger dots represent the mean. The number of activation areas for OptoTIAM=53, for OptoITSN=85, OptoP63=61. (C) Stills from a confocal time-lapse of a BOEC stably expressing Lck-mTurquoise2-iLID (not shown) and SspB-HaloTag-TIAM1(DHPH) (gray) stained with JF552 nm dye, locally photo-activated with 442 nm laser light in the blue area. Scale bars: 25 µm. Times are min:s from the start of the recording.
+
+![Animation 23.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation23-v1.gif.jpg)
+
+**Animation 23.:** Times are min:s from the start of the recording.
+
+![Animation 24.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation24-v1.gif.jpg)
+
+**Animation 24.:** Times are min:s from the start of the recording.
+
+![Animation 25.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation25-v1.gif.jpg)
+
+**Animation 25.:** Times are min:s from the start of the recording.
+
 By studying the actin structures to define cell morphology, we observed morphological changes at the activation ROIs. Less thick actin bundles were detected in the activated area for OptoTIAM and OptoITSN (Figure 5C, Animation 26 and 27Animation 26 and 27). OptoP63 showed more actin fibers in the activated ROI (Figure 5C, Animation 28Animation 28). Additionally, it was possible to drive an OptoTIAM cell toward an ROI. First, the cell extended into the ROI, and by moving the ROI, the entire cell eventually followed the direction of the ROI (Figure 5—figure supplement 1C, Animation 29 and 30Animation 29 and 30). This showed the strong potential of Opto-RhoGEFs to drive directed cell migration and induce local cell protrusions rapidly and reversibly.
+
+![Animation 26.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation26-v1.gif.jpg)
+
+**Animation 26.:** Additionally, stained for F-actin with SiR-actin (right). The cell was locally photo-activated with a 442 nm laser, as indicated by the cyan dashed box. Times are min:s from the start of the recording.
+
+![Animation 27.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation27-v1.gif.jpg)
+
+**Animation 27.:** Additionally, stained for F-actin with SiR-actin (right). The cell was locally photo-activated with a 442 nm laser, as indicated by the cyan dashed box. Times are min:s from the start of the recording.
+
+![Animation 28.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation28-v1.gif.jpg)
+
+**Animation 28.:** Additionally, stained for F-actin with SiR-actin (right). The cell was locally photo-activated with a 442 nm laser line, as indicated by the cyan dashed box. Times are min:s from the start of the recording.
+
+![Animation 29.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation29-v1.gif.jpg)
+
+**Animation 29.:** The cell was repeatedly, locally photo-activated with a 442 nm laser line, as indicated by cyan area. Times are min:s from the start of the recording.
+
+![Animation 30.](https://cdn.elifesciences.org/articles/84364/elife-84364-animation30-v1.gif.jpg)
+
+**Animation 30.:** Stained with JF552 nm dye. The cell was repeatedly, locally photo activated with a 442 nm laser line, as indicated by cyan area. Times are min:s from the start of the recording.
 
 ## Discussion
 
 The endothelium forms the barrier between blood and tissue, and it is known that Rho GTPases play a role in the barrier maintenance but how it is exactly regulated by the temporal and spatial defined Rho GTPase activity remains unknown. The vascular barrier integrity is challenged on a subcellular level by, for example, transmigration of leukocytes but also on a global level, for example during chronic inflammation. Here, we apply an optogenetic tool with the unique ability to reversibly induce spatially and temporally defined Rho GTPase activity to explore its potential in studying vascular barrier strength and morphology of endothelial cells. The iLID optogenetic heterodimerization tool was chosen to recruit catalytic active domains of GEFs, the activators of Rho GTPases, to the plasma membrane, where they induce activity of specific Rho GTPases. Endothelial cells lines were generated expressing Lck-mTurquoise2-iLID and either SspB-HaloTag-TIAM1(DHPH), -ITSN1(DHPH), or -p63RhoGEF(DH) to activate Rac, Cdc42, and Rho respectively. Resistance measurements in monolayers revealed precisely inducible and reversible increase in vascular barrier strength for Rac and Cdc42 activation and a decrease in Rho activation, illustrating the temporal control of the optogenetics tool. To the best of our knowledge this is the first time optogenetic control over vascular barrier strength is being reported. To further study the Rho GTPase, induced cellular processes resulting in changed vascular barrier strength, microscopy, and a VE-cadherin blocking antibody experiment were performed. Surprisingly, while the main protein of adherens junction, that is VE-cadherin homotypic interactions, was blocked, the vascular barrier strength could still be changed by the optogenetic recruitment of GEFs. Additionally, the microscopy experiments suggested a contribution of cell-cell membrane overlap to the vascular barrier strength, while no clear changes in junction appearance were observed on the same time scale. Furthermore, we demonstrate whole cell and subcellular control over endothelial cell morphology, showcasing the spatial control of the optogenetic tool.
 
-## Optogenetic tool setup
+### Optogenetic tool setup
 
 During the setup of the optogenetically recruitable GEFs we made a number of noteworthy observations. When comparing the two optogenetic heterodimerization tools iLID and eMags we found that iLID had a higher recruitment efficiency. Another study finds recruitment efficiency values in the same range but with a slightly higher recruitment efficiency for magnets, the progenitor of eMags, in comparison to iLID (Benedetti et al., 2018). In our study the recruitment efficiency of eMags was hampered when the iSH domain was fused to its C-terminus, consequently eMags did not induce the signaling pathway efficiently. However, another study did create a functional C-terminal fusion proteins with eMags, and magnets have been successfully applied in recruiting the iSH domain (Benedetti et al., 2020; Kawano et al., 2015). Hence, the approach appears feasible but requires some optimization, potentially the linkers. Furthermore, a correlation between recruitment efficiency and the biological response was observed, therefore the tool should be optimized for recruitment efficiency. The chemically induced rapamycin heterodimerization tool had by far the highest recruitment efficiency, however it lacks the fast reversibility and the subcellular inducibility, but it can be applied when global signaling induction is required. Another option is the BcLOV system that intrinsically gets recruited to the plasma membrane when activated by light and a tool box for GEF recruitment has been optimized recently (Berlew et al., 2022). However, this elegant one-component system is temperature-dependent and therefore does not allow sustained activation at 37°C and does not allow the choice of other targets, other than the plasma membrane for follow-up studies (Benman et al., 2022). We continued to work with the iLID tool and could improve its recruitment efficiency by using the Lck membrane tag instead of the CaaX box as a previous study suggested (Natwick and Collins, 2021). Furthermore, we introduced the HaloTag to the system and labeled the mobile prey component with it. The HaloTag can be stained in living cells prior to imaging, which allows flexibility in the choice of a fluorophore and the far dyes are magnitudes brighter than far red fluorescent proteins, improving the image quality (Grimm et al., 2015). We also found single-color location-based biosensors for Rho GTPase activity valuable to verify the Rho GTPase activation, as the common CFP-YFP FRET pair, which most biosensors utilize, is not compatible with the iLID tool, which is activated in the same excitation spectrum (Mahlandt et al., 2021).
 
@@ -132,7 +312,7 @@ Previous studies have used optogenetically recruitable GEFs for Rho GTPase activ
 
 Additionally, the fast reversibility might enable the study of the balance between activity of different Rho GTPases. Here, we observed the resistance dropping below baseline after photo-activation for OptoTIAM-expressing monolayers. Potentially, it is the balance between Rac and Rho signaling that is disturbed during the abrupt stop of Rac activation causing cell contraction because the balance is tilting toward Rho activity (Burridge and Wennerberg, 2004). However, the cells adapt quickly, likely restoring the Rac/Rho activity balance and thereby the vascular barrier strength returns to baseline levels. Interestingly, during photo-activation the resistance did plateau at a level above baseline and was not get downregulated by the reestablishment of the Rac/Rho balance. Also, the OptoP63-induced resistance decrease was counteracted, the endothelial monolayer restored the vascular barrier strength during photo-activation, suggesting the cells could restore the Rac/Rho balance. Similar observations were made for the induced changes in cell area. For example, OptoP63 induced a dramatic cell size decrease but cells start to recover already during the activation. This shows the ability of a cell to adjust to a stimulus, and make a clear case for rapidly inducible systems like Opto-RhoGEFs to study effects in real time. On one hand, we were able to globally activate the entire monolayers on a centimeter scale in the ECIS and permeability assay with LEDs, while minimally disturbing the cells. This minimized the chance of introducing an artifact during the activation. On the other hand, we induced lamellipodia on a subcellular level with the FRAP unit at the confocal microscope on a micrometer scale. No other technique but optogenetics combines the fast reversibility, the local to global activatibility, and non-invasive activation with light. In combination with Rho GTPase activity biosensors the reversibility of the Opto-RhoGEFs provides the opportunity to study the balance between the activity of different Rho GTPases. The simultaneous application of different GEFs, individually activatable, would enable researchers to mimic the orchestra of Rho GTPase signaling better.
 
-## Vascular barrier strength
+### Vascular barrier strength
 
 To understand vascular barrier strength most studies focus on the junctions. However, multiple factors contribute to the vascular barrier strength, namely adherens junctions, tight junctions, focal adhesions, and potentially also cell-cell overlap. Vascular barrier studies often use knockdowns or overexpression, which the cells can adapt to, and stimuli that need to be added to the medium, causing disturbance in the ECIS resistance curve (Birukova et al., 2013; Birukova et al., 2016; Tian et al., 2016).
 
@@ -142,7 +322,7 @@ The application of the VE-cadherin blocking antibody showed clearly that the VE-
 
 In conclusion, junctions do play a role in vascular barrier strength. This was shown by the blocking antibody decreasing the barrier strength. However, another cell property is still able to increase this barrier strength. This may be the cell-cell overlap, as the cell size change correlates well with the barrier strength increase and the overlap appears within the time frame of barrier strength increase. Nevertheless, there are other factors that have not been studied here, for example focal adhesions influence ECIS measurements as well, or tight junctions, or other adherens junction proteins.
 
-## Limitations and perspectives
+### Limitations and perspectives
 
 The following paragraphs will discuss limitations of the Opto-RhoGEFs. Regarding the timing, the recruitment of Opto-RhoGEFs and the subsequent activation of Rho GTPases seems fast enough to manipulate Rho GTPase activity on a physiological time scale. We measured t½ ON kinetics for iLID of 5.14 s in that time range the imaging speed at a confocal microscope rather becomes the limiting factors than the recruitment kinetics. Nocodazol induced Rho activity pulses last for minutes (Graessl et al., 2017) as well as S1P induced Rho GTPase activity (Reinhard et al., 2017). Regarding the spatial aspect, by design eMags photo-activation is better locally confined than iLID (Benedetti et al., 2018). However, our experiments showed local morphology changes, which were indeed not restricted to the photo-activation area but still near that area. It was possible to give cells a migration direction, hence the local activation is at least sufficient to polarize the cell into leading and rear edge. A disadvantage of the iLID system is that it occupies the blue part of the light spectrum, not allowing the use of CFP and GFP without the activation of the tool. That also excludes the use of biosensors using the CFP-YFP FRET pair but recently a optogentic compatible sYFP2-mScarlet-I FRET pair has been described (Van Geel et al., 2020a) and single-color location-based sensors can be applied (Mahlandt et al., 2021).
 
@@ -154,25 +334,89 @@ The Opto-RhoGEFs have great potential to manipulate Rho GTPase signaling on a su
 
 ## Methods
 
-## Plasmids and cloning
+### Plasmids and cloning
 
-## Rapamycin system
+#### Rapamycin system
 
 C1-Lck-FRB-mTurquoise described before (van Unen et al., 2015) and backbone C1-sYFP1-2xNES-FKBP12, FKBP12 (Goedhart et al., 2013) and NES (Kremers et al., 2006) were described previously, were digested with BsrGI and NdeI, and ligated. The resulting C1-Lck-FRB-mTurquoise-2xNES-FKBP12 and insert IRES-sYFP2 (addgene#110623) were digested with BsrGI and ligated, creating C1-Lck-FRB T2098L-mTurquoise-IRES-sYFP2xNES-FKBP12. C1-Lck-FRB-mTurquoise2 was created by digesting the backbone C1-Lck-FRB-mTurquoise and the insert mTurquoise2 (Goedhart et al., 2012) with AgeI and BsrGI and subsequently ligating the two fragments C1-mNeonGreen-FKBP12-iSH was created by ligating the AgeI and BsrGI digested backbone CFP-FKBP-iSH (addgene #20159) and the likewise digested mNeonGreen.
 
-## eMags
+#### eMags
 
 eMagAF-EGFP-PM (addgene #162247) and eMagBF-TgRFPT (addgene #162253) were a gift from Pietro De Camilli. N1-iRFP670 (addgene #45457) was a gift from Vladislav Verkhusha. CFP-FKBP-iSH (addgene #20159) was a gift from Tobias Meyer. The insert iSH was PCR-amplified with primers shown in Table 1 and digested with BspEI and EcoRI. iRFP670 was PCR-amplified with primers shown in Table 1 and digested with EcoRI and ApaI. The backbone eMagB-TagRFP was digested with BspEI and ApaI, all three parts were ligated, creating eMagB-iSH-iRFP670.
 
-## iLID
+#### iLID
 
 pLL7.0-Venus-iLID-CaaX (from KRas4B) was a gift from Brian Kuhlman (addgene #604110). ITSN-mCherry-SspB (addgene #85220) was a gift from Narasimhan Gautam. eMagB-iSH-iRFP670 was digested with KpnI and BspEI to ligate the insert iSH-iRFP670 to the likewise digested backbone ITSN-mCherry-SspB, to create iSH-iRFP670-SspB. C1-Lck-mTurquoise2-iLID was created by ligating the backbone Lck-mTurquoise2 (addgene #98822) and the PCR-amplified insert iLID, from Venus-iLID-CaaX (addgene #604110) with primers shown in Table 1, both digested with BsrGI and XhoI.
 
-## Biosensors
+**Table 1.**
+ PCR primers for insert amplification.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>PCR product/insert</th>
+      <th>Template</th>
+      <th>Primer sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">iSH</td>
+      <td rowspan="2">CFP-FKBP-iSH (addgene #20159)</td>
+      <td>FW 5’ATATTCCGGAtccaagtaccaacaagaccagg-3’</td>
+    </tr>
+    <tr>
+      <td>RV 5’ATAT GAATTCcgtgcgctcctcgtg-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">iRFP670</td>
+      <td rowspan="2">N1-iRFP670 (addgene #45457)</td>
+      <td>FW 5'- ATATGAATTCATGGCGCGTAAGGTCGAT-3'</td>
+    </tr>
+    <tr>
+      <td>RV 5'- ATATGGGCCCGCGTTGGTGGTGGGC-3'</td>
+    </tr>
+    <tr>
+      <td rowspan="2">iLID</td>
+      <td rowspan="2">Venus-iLID-CaaX (addgene #604110)</td>
+      <td>FW 5’-ATGGACGAGCTGTACAAGGGT-3’</td>
+    </tr>
+    <tr>
+      <td>RV 5’-ATACCTCGAGTTACTTTGTCTTTGACTTCTTTTTCTTCTT-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">HaloTag</td>
+      <td rowspan="2">HaloTag (Ariana Tkachuk)</td>
+      <td>FW 5’-ATATACCGGTCGCCACCatggccgagatcggca-3’</td>
+    </tr>
+    <tr>
+      <td>RV 5’-ATATTGTACACgccgctgatctccagg-3’</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Lck-mTurquoise2-iLIDSspB-HaloTag-ITSN(DHPH)SspB-HaloTag-RhoGEFp63(DH)</td>
+      <td rowspan="2">C1-Lck-mTurqoiuse2-iLIDC1-SspB-HaloTag-ITSN1(DHPH)C1-SspB-HaloTag-RhoGEFp63(DH)</td>
+      <td>FW 5'-CTTGGCAGTACATCAAGTGTATCATATGCC-3'</td>
+    </tr>
+    <tr>
+      <td>RV 5'-CCTCTACAAATGTGGTATGGCTGATTATGATC-3'</td>
+    </tr>
+    <tr>
+      <td rowspan="2">SspB-HaloTag-TIAM1(DHPH)</td>
+      <td rowspan="2">C1-SspB-HaloTag-TIAM1(DHPH)</td>
+      <td>FW 5’-ATATGGTACCATGAGCTCCCCGAAACG-3’</td>
+    </tr>
+    <tr>
+      <td>RV 5’-ATATGCGGCCGCTCACTGTCTTCTGTGTTTATCTCGC-3’</td>
+    </tr>
+  </tbody>
+</table>
+
+#### Biosensors
 
 mCherry-Akt-PH was described before (Kontos et al., 1998). The cysteine-free or secretory HaloTag version 7 was provided by Ariana Tkachuk in consultation with Erik Snapp (Janelia Research Campus of the Howard Hughes Medical Institute). The HaloTag was PCR-amplified with primers shown in Table 1 and AgeI, BsrGI digested and ligated into a likewise digested C1 (Clontech) backbone, creating C1-HaloTag. C1-HaloTag-3xrGBD has been created by digesting the backbone mNeonGreen-3xrGBD (addgene# 176091) with AgeI and BsrGI and ligating it to the likewise digested insert from C1-HaloTag. CMVdel-dimericTomato-wGBD has been described elsewhere (addgene #176099).
 
-## Opto-RhoGEFs
+#### Opto-RhoGEFs
 
 C1-SspB-mCherry-RhoGEFp63DH was created by digesting the backbone C1-SspB-mCherry (Van Geel et al., 2020b) with AgeI and BclI and ligating it to the likewise digested insert RhoGEFp63(DH) (addgene #67898). C1-SspB-mCherry-ITSN1(DHPH) was created by digesting the backbone C1-SspB-mCherry with AgeI and SacII, ligating it to the likewise digested insert mCherry-ITSN1 DHPH, as described previously (Reinhard, 2019). C1-SspB-mCherry-TIAM1(DHPH) was created by digesting the backbone C1-SspB-mCherry with AgeI and SacII, ligating it to the likewise digested insert mCherry-TIAM SS DHPH, as described previously (Reinhard, 2019).
 
@@ -186,7 +430,90 @@ The plasmid pLV-mScarlet-I-CaaX was described previously (Arts et al., 2021).
 
 Plasmids created in this study are available on addgene, see Table 2.
 
-## Cell culture
+**Table 2.**
+ Addgene numbers for plasmids created in this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Addgene number</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>iSH-iRFP670-SspB</td>
+      <td>176102</td>
+    </tr>
+    <tr>
+      <td>C1-Lck-mTq2-iLID</td>
+      <td>176125</td>
+    </tr>
+    <tr>
+      <td>C1-HaloTag-3xrGBD</td>
+      <td>176108</td>
+    </tr>
+    <tr>
+      <td>C1-SspB-mCherry-p63DH</td>
+      <td>176112</td>
+    </tr>
+    <tr>
+      <td>C1-SspB-mCherry-DHPH-ITSN</td>
+      <td>176103</td>
+    </tr>
+    <tr>
+      <td>C1-SspB-mCherry-DHPH-TIAM</td>
+      <td>176104</td>
+    </tr>
+    <tr>
+      <td>C1-SspB-HaloTag-DHPH-ITSN1</td>
+      <td>176113</td>
+    </tr>
+    <tr>
+      <td>C1-SspB-HaloTag-DHPH-TIAM1</td>
+      <td>176114</td>
+    </tr>
+    <tr>
+      <td>C1-SSpB-HaloTag-p63DH</td>
+      <td>176116</td>
+    </tr>
+    <tr>
+      <td>C1-SspB-iRFP670-DHPH-ITSN1</td>
+      <td>176117</td>
+    </tr>
+    <tr>
+      <td>C1-SspB-iRFP670-DHPH-TIAM1</td>
+      <td>176118</td>
+    </tr>
+    <tr>
+      <td>C1-SspB-iRFP670-p63DH</td>
+      <td>176120</td>
+    </tr>
+    <tr>
+      <td>pLV-Lck-mTq2-iLID</td>
+      <td>176130</td>
+    </tr>
+    <tr>
+      <td>pLV-SspB-HaloTag-TIAM-DHPH</td>
+      <td>176127</td>
+    </tr>
+    <tr>
+      <td>pLV-SspB-HaloTag-ITSN-DHPH</td>
+      <td>176128</td>
+    </tr>
+    <tr>
+      <td>pLV-SspB-HaloTag-p63DH</td>
+      <td>176129</td>
+    </tr>
+    <tr>
+      <td>pEntr1a-SspB-HaloTag-TIAM-DHPH</td>
+      <td>176134</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Human embryonic kidney cells 293T (HEK293T) cells (CRL-3216, American Tissue Culture Collection; Manassas, VA, USA) were cultured in Dulbecco’s modified Eagle’s medium+GlutaMAX (DMEM) (Gibco) with 10% fetal calf serum (Gibco) and 100 U/ml penicillin-streptomycin (Thermo Fisher Scientific) from passage number 10 to 30, at 37°C in 7% CO2. HEK293T cells were used for lentiviral particle production.
 
@@ -194,11 +521,11 @@ Henrietta Lacks (HeLa) cells (CCL-2, American Tissue Culture Collection; Manassa
 
 The HEK293T and HeLa cells were from a commercial provider that confirmed the identity of the cell line. All cell lines were routinely tested for Mycoplasma contamination.
 
-## Stable cell lines
+### Stable cell lines
 
 Lentiviral particles were produced in HEK293T cells, seeded on day 0 in a T75 culture flasks and transfected on day 1 with TransIT (Mirus) using third-generation packing plasmids (pHDMG·G VSV ENV, pHDM·HgpM2 GAG/POL, pRC-CMV-Rev1b REV) in combination with pLV-Lck-mTurquoise2-iLID, pLV-SspB-HaloTag-RhoGEFP63(DH), pLV-SspB-HaloTag-ITSN1(DHPH), pLV-SspB-HaloTag-TIAM1(DHPH), or pLV-mScarlet-CaaX. The supernatant was harvested on day 2 and 3 after transfection, filtered (0.45 µm) and concentrated using Lenti-X Concentrator (TakaraBio cat #631232), resuspended in EGM-2, and stored at –80°C. cbBOECs seeded subconfluently in a T75 culture flask, were transduced with Lck-mTurquoise2-iLID virus, solely as a control, and in combination with either SspB-HaloTag-RhoGEFP63(DH), SspB-HaloTag-ITSN1(DHPH), or SspB-HaloTag-TIAM1(DHPH) virus. Two days after transduction, double positive cells expressing Lck-mTurquoise2-iLID and SspB-HaloTag-RhoGEFP63(PH), SspB-HaloTag-ITSN1(DHPH), or SspB-HaloTag-TIAM1(DHPH) were sorted, using a BD FACSAria cell sorter. Prior to sorting, the HaloTag was stained with JF552 nm dye. mScarlet-CaaX-transduced BOECs were selected by treatment with puromycin for 24 hr.
 
-## Sample preparation for microscopy
+### Sample preparation for microscopy
 
 For transfection 25,000–50,000 000 HeLa cells were seeded on round 24 mm ø coverslip (Menzel, Thermo Fisher Scientific) in a six-well plate with 2 ml DMEM+FCS. The transfection mix contained 1 µl linear polyethylenimine (PEI, pH 7.3, Polysciences) with a concentration of 1 mg/ml per 100 ng DNA and 0.5–1 μg plasmid DNA per well, mixed with 200 μl OptiMEM (Thermo Fisher Scientific) per well. After 15 min incubation at room temperature the transfection mix was added to the cells 24 hr after seeding. HeLa cells were imaged between 24 and 48 hr after transfection in an Attofluor cell chamber (Thermo Fisher Scientific) in 1 ml of Microscopy Medium (20 mM HEPES [pH = 7.4], 137 mM NaCl, 5.4 mM KCl, 1.8 mM CaCl2, 0.8 mM MgCl2, and 20 mM glucose) at 37°C.
 
@@ -206,15 +533,15 @@ For imaging, cbBOECs stably expressing Opto-RhoGEFs were seeded subconfluently i
 
 The HaloTag was stained, for at least 1 hr prior to imaging, with a concentration of 150 nM of Janelia Fluor Dyes (JF) JF552 nm (red) or JF635 nm (far red) (Janelia Materials). The medium was replaced before imaging. Rapamycin (LC Laboratories) was used at a final concentration of 100 nM for chemogenetic stimulation, directly during the imaging. VE-cadherin was stained 1:200 with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD144 (BD Pharmingen), 2 min prior to imaging. The antibody remained in the medium, cells were not washed. F-actin was stained with SiR-actin, absorption 652 nm and emission 674 nm (SC001, Spirochrome) at a final concentration of 500 nM for at least 2 hr before imaging. The medium was replaced before imaging. The nucleus was stained with SiR-DNA, absorption 652 nm and emission 674 nm (SC007, Spirochrome) at a final concentration of 500 nM for at least 1 hr before imaging. The medium was replaced before imaging. To inhibit homotypic extracellular VE-cadherin binding, the VE-cadherin blocking antibody-purified mouse anti-cadherin-5 (BD Transduction Laboratories) was used at a final concentration of 2.5 µg/ml and incubated for at least 1 hr. PECAM was stained 1:200 with the live labeling antibody Alexa Fluor 647 Mouse Anti-Human CD31 (BD Pharmingen), 2 min prior to imaging. The antibody remained in the medium, cells were not washed.
 
-## Spinning disk microscopy
+### Spinning disk microscopy
 
 HeLa cells were imaged with a Nikon Ti-E microscope equipped with a Yokogawa CSU X-1 spinning disk unit, a 60× objective (Plan Apo VC, oil, DIC, NA 1.4), Perfect Focus System and the Nikon NIS elements software. Images were acquired with a Andor iXon 897 EMCCD camera. Photo-activation was achieved with a single pulse of the 440 nm laser light, intensity set to 20%, for 1 s. During photo-activation CFPs were imaged using a 440 nm laser line, a triple dichroic mirror (440, 514, 561 nm), and a 460–500 nm emission filter. RFPs were imaged using a 561 nm laser line, a triple dichroic mirror (405, 488, 561 nm), and a 600–660 nm emission filter.
 
-## Wide-field microscopy
+### Wide-field microscopy
 
 Mosaic monolayers of mScarlet-CaaX or Lck-mTurquiose2-iLID, SspB-HaloTag-TIAM1(DHPH) expressing BOECs were imaged at a Nikon Eclipse TI equipped with a lumencor SOLA SE II light source, standard Nikon filter cubes for CFP, mCherry and Cy5, a 60×1.49 NA Apo TIRF (oil) objective, and an Andor Zyla 4.2 plus sCMOS camera (2×2 binning).
 
-## Confocal microscopy Sp8
+### Confocal microscopy Sp8
 
 Confocal microscopy images were obtained at a Leica Sp8 (Leica Microsystems) equipped with a 63× objective (HC PL Apo, C2S, NA 1.40, oil) and a 40× objective (HC PL Apo, CS2, NA 1.30, oil), using unidirectional line scan at a scan speed of 400 Hz. For HyD detectors the gain was set to 100 V unless indicated differently. Images were acquired with 1024×1024 pixel resolution and 16-bit color depth unless indicated differently. To keep the focal plane during time-lapse movies the adaptive focus system was used in continuous mode.
 
@@ -228,19 +555,19 @@ To image cbBOECs stably expressing Opto-RhoGEFs, seeded subconfluently in 3 cm �
 
 cbBOECs seeded in parallel with the ECIS experiments, stably expressing Opto-RhoGEFs, in NuncLab-Tek chambered #1.0 Borosilicate Coverglass System 8 chambers microscopy dish (Thermo Fisher), at a density of 50,000 cells per chamber were grown into a monolayer. Subsequently, the monolayers were imaged with the pinhole set to 3 AU, at a frame rate of 10 s and no line averaging. Photo-activation was achieved by scanning with a 442 nm laser line, intensity set to 1%, every 10 s for a total of 10 min (15 min OptoTIAM) repeated once with a 10 min (15 min OptoTIAM) recovery time in between, with no line averaging. CFP fluorescence was detected during photo-activation with a HyD detector, 452–523 nm emission detection range. Simultaneously, red fluorescence was detected with a 561 nm laser line, set to 2% intensity, in combination with a HyD detector, 571–656 m emission detection range, gain set to 75 V. Sequentially, far red fluorescence was detected with a 633 nm laser line, intensity set to 10%, in combination with a HyD detector, 643–724 nm detection range. cbBOECs additionally treated with the VE-cadherin blocking antibody were photo-activated once for 15 min, at the same conditions described above. Red fluorescence was detected in the first sequence and CFP and far red signal were detected simultaneously in the second sequence. cbBOECs additionally stained for PECAM were imaged at a frame interval of 20 s with 2× line averaging otherwise at same conditions as described for the cells treated with the VE-cadherin blocking antibody.
 
-## LED photo-activation
+### LED photo-activation
 
 For global photo-activation in incubators an LED strip safety RGB LED strip Combo 12V/ 24V SMD 3528/50505 LED strip (Fuegobird) was used, set to blue light (peak 470 nm) at the highest intensity setting 9, illuminating continuously. The LED strip was taped to the lid of the cell culture dish at an approximate distance of 1 cm from the cells. The blue LED light spectrum was measured for these conditions with a spectrometer USB2000 (Ocean Optics). The intensity was measured for the wavelength of 470 nm with a power-meter PM100D (THORLABS) with an S170C sensor, sensor area 18×18 mm2, at approximately 1 cm distance from the LEDs. For comparison the light intensity of the 442 nm laser of the Sp8 was measured at 1% intensity, and the 488 nm laser was measured at 20% laser power and 1% intensity. Light power density was defined by the light intensity over the illuminated area. For the LED the entire sensor of 18 mm2 was illuminated. For the laser light the illuminated area was defined as the first ring of the airydisk for the 63×1.4 NA objective, which is 1.165 10–13 m2 for the 442 nm laser and 1.42 10–13 m2 for the 488 nm argon laser.
 
-## Resistance measurement in an endothelial monolayer
+### Resistance measurement in an endothelial monolayer
 
 To perform resistance measurements, the ECIS ZTheta (Applied BioPhysics) machine was used. Eight-well, 10-electrode (8W10E PET) ECIS arrays were pretreated with 10 mM L-cysteine (Sigma) for 15 min at 37°C, washed twice with 0.9% NaCl solution and coated with 10 µg/ml fibronectin in 0.9% NaCl solution (Sigma) for at least 1 hr at 37°C. cbBOECs stably expressing Opto-RhoGEFs were seeded at 50,000 cells per well density to grow into a monolayer. The resistance measurement at 4000 Hz, every 10 s, at 37°C and 5% CO2 was immediately started after seeding. The photo-activation with LEDs was started approximately 16 hr after seeding. To inhibit homotypic extracellular VE-cadherin binding, the VE-cadherin blocking antibody-purified mouse anti-cadherin-5 (BD Transduction Laboratories) was used at a final concentration of 2.5 µg/ml in EMG-18 (control only EGM-18) and incubated for at least 1 hr before photo-activation. Roughly, 3 hr prior to the antibody addition the EGM-18 medium was refreshed for all conditions. After photo-activation the EMG-18 medium was refreshed again for all conditions. To test the resistance increase ability of the monolayer, cells were stimulated with S1P (Sigma-Aldrich) at a final concentration of 650 nM in EMG-18 (control only EGM-18).
 
-## Permeability measurement in an endothelial monolayer
+### Permeability measurement in an endothelial monolayer
 
 To measure permeability, cbBEOCs expressing Opto-RhoGEFs (20,000 cells per insert) were seeded on gelatin-coated 24-well cell culture inserts (Corning FluoroBlok, Falcon, 3.0 μm pore size) in a 24-well plate (Corning Companion Plate, Falcon) and grown into a monolayer. Forty-eight hr after seeding the medium was removed from the upper compartment and replaced with either FITC 0.3 kDA (Sigma), used at a final concentration of 4 µg/ml, FITC 10 kDa dextran (Sigma) or FTIC dextran 70 kDa dextran (Sigma) used at a final concentration of 833 µg/ml. Subsequently, cells were photo-activated with blue LED light for 10 min at 37°C and 5% CO2. Immediately after the 10 min photo-activation, the inserts were removed from the 24-well plate and leakage was measured using an Infinite F200 pro plate reader (TECAN) at 37°C. FITC fluorescence was measured with an excitation wavelength of 500 nm (bandwidth 9 nm) and emission was detected at a wavelength of 525 nm (bandwidth 20 nm) for four positions in one well. The average of these four measurements was used for analysis.
 
-## Analysis
+### Analysis
 
 FIJI (Schindelin et al., 2012) was used to analyze raw microscopy images. Representative microscopy images were adjusted for brightness. When the look up tables ‘mpl-inferno’ and ‘mpl-magma’ were applied, brighter colors represent higher intensity values.
 
@@ -266,6 +593,6 @@ To represent junctional movement, the FIJI function ‘Temporal-Color-Code’ wa
 
 To measure cell-cell overlap area, binary images were created by applying the filter Gaussian blue (sigma 2) and a threshold (Huang). The resulting 8-bit binary images for the CFP channel were subtracted by 254 and the RFP image by 254. Subsequently, the two images were added up and the areas with the value 3 were used as ROIs to measure the overlap area. The data was normalized by division through the initial value for the overlap area.
 
-## Plots and statistics
+### Plots and statistics
 
 Dot plots were generated with the R-based web tool ‘PlotsofData’ and ‘SuperPlotsofData’ (Goedhart and Pollard, 2021; Postma and Goedhart, 2019). Plots over time were generated with the R-based web tool ‘PlotTwist’ (Goedhart, 2020). Figures were made in Illustrator (Adobe). Statistical analysis was performed in the R-based ‘PlotsofData’ and ‘PlotTwist’ web tools (Goedhart, 2020; Postma and Goedhart, 2019). The 95% confidence intervals were calculated by bootstrapping.

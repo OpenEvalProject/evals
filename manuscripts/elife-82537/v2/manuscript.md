@@ -13,12 +13,12 @@
 
 ### Affiliations
 
-1. https://ror.org/011ashp19 State Key Laboratory of Oral Diseases, National Clinical Research Center for Oral Diseases, Department of Cariology and Endodontics, West China Hospital of Stomatology, Sichuan University Chengdu China
-2. https://ror.org/011ashp19 State Key Laboratory of Oral Diseases, National Clinical Research Center for Oral Diseases, Department of Orthognathic and TMJ Surgery, West China Hospital of Stomatology, Sichuan University Chengdu China
-3. https://ror.org/0064kty71 Hospital of Stomatology, Guanghua School of Stomatology, Sun Yat-Sen University, Guangdong Provincial Key Laboratory of Stomatology Guangzhou China
-4. https://ror.org/03d1wq758 Maine Medical Center Research Institute Scarborough United States
-5. https://ror.org/011ashp19 State Key Laboratory of Oral Diseases, National Clinical Research Center for Oral Diseases, Department of Oral Implantology, West China Hospital of Stomatology, Sichuan University Chengdu China
-6. https://ror.org/011ashp19 State Key Laboratory of Oral Diseases, National Clinical Research Center for Oral Diseases, Department of Orthodontics, West China Hospital of Stomatology, Sichuan University Chengdu China
+1. State Key Laboratory of Oral Diseases, National Clinical Research Center for Oral Diseases, Department of Cariology and Endodontics, West China Hospital of Stomatology, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
+2. State Key Laboratory of Oral Diseases, National Clinical Research Center for Oral Diseases, Department of Orthognathic and TMJ Surgery, West China Hospital of Stomatology, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
+3. Hospital of Stomatology, Guanghua School of Stomatology, Sun Yat-Sen University, Guangdong Provincial Key Laboratory of Stomatology Guangzhou China ([ROR:0064kty71](https://ror.org/0064kty71))
+4. Maine Medical Center Research Institute Scarborough United States ([ROR:03d1wq758](https://ror.org/03d1wq758))
+5. State Key Laboratory of Oral Diseases, National Clinical Research Center for Oral Diseases, Department of Oral Implantology, West China Hospital of Stomatology, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
+6. State Key Laboratory of Oral Diseases, National Clinical Research Center for Oral Diseases, Department of Orthodontics, West China Hospital of Stomatology, Sichuan University Chengdu China ([ROR:011ashp19](https://ror.org/011ashp19))
 
 † Corresponding author
 
@@ -32,11 +32,17 @@ Oral diseases, particularly dental caries and periodontal diseases, affect 3.5 b
 
 ## Results
 
-## Single-cell transcriptional profiling identified 15 discrete populations in homeostasis and chronic AP samples
+### Single-cell transcriptional profiling identified 15 discrete populations in homeostasis and chronic AP samples
 
 Individual cells were isolated from alveolar bone of healthy mice and mice with AP. We modeled AP using a well-established AP mouse model in which the mandibular first molar pulp was exposed and subsequently developed chronic AP over a 3 wk period (Taira et al., 2019). Bar-coded cDNA libraries from individual cells were obtained using the 10× Genomics Chromium Controller platform (Zheng et al., 2017; Figure 1A). The combined libraries from healthy and AP alveolar bone contained 15,148 individual cells. The median value of feature_RNA was between 1000 and 2000 (Figure 1—figure supplement 1B). After quality control filtering and removal of the batch effect between batches, the t-stochastic neighbor embedding (t-SNE) method was applied to reduce the dimensionality. Seurat’s unbiased cluster detection algorithm identified 15 distinct cell populations (Figure 1B and C). Cluster-specific transcripts were utilized to annotate cell types with classic markers as described in a previous study (Lin et al., 2021). These included B cell (Cd79a), hematopoietic stem cell (HSC) (Cd34), MSC (Col1a1), natural killer (NK) cell (Klrd1), T cell (Cd3g), dendritic cell (Siglech), epithelial cell (Epcam), erythrocyte (Hbb-bt), macrophage (Adgre1), mast cell (Fcer1a), megakaryocyte (Gp1bb), monocyte (Ly6c2), myeloid progenitor (Mpo), neutrophil (S100a8), and pre-B cell (Vpreb1; Figure 1E and F). The top 20 enriched genes in each defined cluster were identified and compared (Figure 1G).
 
-## AP led to significant changes in frequency and transcriptional expression of cell populations
+![Figure 1.](https://cdn.elifesciences.org/articles/82537/elife-82537-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schematic diagram of the experimental design. (B–C) t-Stochastic neighbor embedding (t-SNE) representation of aligned gene expression data in single cells extracted from mandibles of control mice (n=8340) and apical periodontitis (AP) mice (n=6808) showing 15 distinct clusters and cellular origin. (D) Relative abundance of 15 cell populations composing alveolar bone under healthy and AP conditions. (E) Expression of gene markers in distinct cell types. (F) Gene expression patterns projected onto t-SNE plots of marker genes. Scale: log-transformed gene expression. (G) Heatmap showing the 20 most upregulated genes (ordered by decreasing Padj value) in each cluster defined in B. Scale: log2 fold change.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82537/elife-82537-fig1-figsupp1-v2.jpg)
+
+### AP led to significant changes in frequency and transcriptional expression of cell populations
 
 All the identified cell clusters were present in both AP and control samples, but there were significant differences in the cellular compositions of particular clusters. T cell, B cell, NK cell, macrophage, epithelial cell, and MSC had significantly increased frequency in AP samples. Neutrophil, myeloid progenitor, monocyte, megakaryocyte, mast cell, HSC, and dendritic cell were markedly decreased (Figures 2A and 1D).
 
@@ -52,11 +58,17 @@ Furthermore, gene signatures from monocytes showed that the interferon-induced t
 
 The major classes of lymphocytes are T lymphocytes, B lymphocytes, and the NK cells. T and B lymphocytes comprise the majority of the inflammatory infiltrate in AP (Graunaite et al., 2012). A significant increase in the expression of inflammatory-associated genes, such as Srgn, Emb, Ctla4, and Il7r could be observed in the AP T cell population (Figure 2F). In the AP B lymphocytes cluster, inflammation-responsive genes (Fth1, Ftl1, Ebf1, and mt-Nd5) were upregulated (Figure 2G). Interestingly, Lars2, the gene encoding a mitochondrial leucyl tRNA synthase (Carminho-Rodrigues et al., 2020; ’t Hart et al., 2005), was significantly upregulated in T and B lymphocytes, indicating changes in mitochondrial metabolism in both clusters.
 
-## Inflammation induces osteoclasts differentiation leading to periapical alveolar bone destruction
+### Inflammation induces osteoclasts differentiation leading to periapical alveolar bone destruction
 
 Bone destruction is a major pathological factor in chronic inflammatory diseases such as AP. Various cytokines including TNF-α, IL-1α, and IL-6 were released by immunocytes to recruit the osteoclast precursors and induce the maturation of osteoclasts (Lyu et al., 2022). We have detected osteoclast markers including Ctsk, Acp5, Mmp9, and Nfatc1 by scRNA-seq. Moreover, Csfr1, Cx3cr1, Itgam, and Tnfrs11a were used to identify osteoclast precursors. Markers of osteoclast and osteoclast precursors were highly expressed in the clusters of monocyte and macrophage (Figure 3A and B). Gene Ontology (GO) analysis showed that inflammation related immune reactions and bone resorption activity were significantly enriched in macrophage cluster (Figure 3C). To further study the differential trajectory of osteoclasts, pseudotime analysis was performed for the clusters of macrophage and monocyte. Two independent branch points were determined, and five monocyte/macrophage subclusters were scattered at different branches in the developmental tree (Figure 3D and G). The results showed that the monocyte cluster differentiated into the macrophage cluster (Figure 3E). During this trajectory, the gene expression pattern across pseudotime showed that osteoclastic genes, such as Ctsk, Acp5, Mmp9, Atp6v0d2, and Dcstamp, were progressively elevated (Figure 3F). Of note, we have observed a branch which was highly positive for Ctsk and Acp5 (Figure 3H), indicating the mature osteoclasts were differentiated from monocyte/macrophage lineage and contributed to inflammatory bone resorption during AP. We have also analyzed the expression of osteoclast related genes using the bulk RNA-seq library built on mandibular samples extracted from mice with AP. Markers of osteoclast and osteoclast precursors were significantly upregulated, confirming the osteoclasts activity in the inflammatory-related bone lesion (Figure 3I).
 
-## AP leads to reduced transcriptionally inferred cellular interactions with an increased self-supporting network in MSCs
+![Figure 3.](https://cdn.elifesciences.org/articles/82537/elife-82537-fig3-v2.jpg)
+
+**Figure 3.:** (A) The expression levels of markers of osteoclasts and osteoclast precursors. (B) Violin plots of the expression of osteoclastogenesis genes. (C) Gene Ontology (GO) enrichment analysis of the biological functions of macrophage cluster. (D) Trajectory order of the monocyte/macrophage populations by pseudotime value. (E) The differentiation trajectory of monocyte and macrophage clusters presented on a t-stochastic neighbor embedding (t-SNE) visualization. (F) The expression patterns of osteoclast markers during the trajectory of monocyte/macrophage populations. (G) Distribution of monocytes/macrophages on the developmental tree by clusters. (H) Heatmap of differential genes of three states. (I) Heatmap of genes associated with osteoclastogenesis in bulk RNA-seq analysis.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82537/elife-82537-fig3-figsupp1-v2.jpg)
+
+### AP leads to reduced transcriptionally inferred cellular interactions with an increased self-supporting network in MSCs
 
 We next sought to characterize the cell-cell communication related to the perturbation of signaling pathways detected in the AP samples by employing CellphoneDB (Efremova et al., 2020; Nagai et al., 2021). We identified a close interaction among MSC, macrophage, and dendritic cells under homeostasis conditions (Figure 4A). A similarly close communication was found among MSC, macrophage, and dendritic cells under inflammatory conditions (Figure 4B). Next, we compared the differential cell-cell interaction (CCI) network between AP and control samples using CrossTalkeR (Nagai et al., 2021). The results suggested that AP is associated with an overall decrease in cellular interactions. However, MSC intercellular communication with mast cells and monocytes is upregulated and accompanied by the highest number of interactions within MSCs themselves (Figure 4C). These results indicate that, although cell populations lose their normal physiological interactions, MSCs were able to establish a self-interacting network and coordinate with certain types of cells during chronic AP. Next, we ranked the individual ligands by the number of their interactions. Inflammatory-related proteins (Lgals9, Tnf, and Ccl4), extracellular matrix protein (Fn1), and protein involved in biomineralization (Spp1) were among the highest interactions. Also, Tgfb1, Vegfb, and Vegfa were in the top 10 most abundant ligands (Figure 4D). Bar plots were also generated to display the top 10 upregulated gene/cell pairs, showing that inflammation associated genes (Tnf/neutrophil, Ccl3/mast cell, Ccl3/monocyte, and Il1b/macrophage) and matrix related genes (Sele/MSC, Fn1/MSC, and Fn1/monocyte) were the most influential ligands during AP when compared to control state (Figure 4E). We used a Sankey plot to further focus on MSC-related interactions (Figure 4F). The results indicated that Sele was primarily directed by MSC toward the MSC cluster via multiple receptors including Glg1, Selplg, and Cd44. Moreover, Fn1 was secreted by MSC, monocyte, macrophage, and mast cells toward MSCs (Figure 4G). Of note, Sele and Fn1 are important cell adhesion molecules that mediate cell homing and migration (Frenette et al., 1998; To and Midwood, 2011). This was in accordance with the increased frequency of the MSC cluster (Figure 2A) as well as the upregulated cellular interaction among MSCs and other cell populations.
 
@@ -64,11 +76,25 @@ We next sought to characterize the cell-cell communication related to the pertur
 
 **Figure 4.:** (A–C) Network plot of ligand-receptor activity in control (A), AP (B), and AP versus control (C). (D) Bar plot of top 10 most abundant ligands in all inferred ligand-receptor interactions. (E) Ranking of ligand/source regarding communication gains in AP state. (F and G) Sankey plot listing all predicted source, receptor, and receiver interactions associated with Fn1 and Sele.
 
-## scRNA-seq based identification of AP-associated MSC population
+### scRNA-seq based identification of AP-associated MSC population
 
 MSCs represented the non-immune cell population in alveolar bone, constituting 1.76% of total identified cells. This cell population could be decomposed into four subclusters (Figure 5A). The most dominant subcluster was characterized by high expression of Prrx1, platelet-derived growth factor receptor β (Pdgfrb), and hematopoiesis supporting factors such as C-X-C motif chemokine 12 (Cxcl12) and angiopoietin (Angpt1). It was also characterized by osteogenic-related markers, such as Runt-related transcription factor 2 (Runx2), Sp7, and was thus classified as the MSC_osteolineage cells (OLCs). The other subclusters were identified as MSC_endothelial (Cdh5+), MSC_neurological (Plp1+), and MSC_inflammatory (S100a8/S100a9+; Figure 5A and B). The cell composition of the MSC cluster indicated an expansion of MSC_inflammatory subcluster during AP, whereas the MSC_neurological subcluster was reduced (Figure 5C). Of note, we performed lineage tracing experiments using Prrx1Cre, Sp7Cre, LeprCre, and Gli1CreER transgenic mouse models to identify stem cells in alveolar bone and the surrounding periodontal tissues (Cui et al., 2020; Fan et al., 2022; Men et al., 2020; Zhang et al., 2020). The results suggested increased numbers of Prrx1+ and Sp7+ MSC_OLCs as well as upregulated Gli1+ and Lepr+ periodontal ligament stem cells (PDLSCs) in AP lesions (Figure 5—figure supplement 1A). We compared the MSC marker genes, identified above, among the four subpopulations. Their respective GO enrichment analysis confirmed that there are four specific MSC populations. MSC_OLCs were enriched for ossification, connective tissue development, skeletal system development, and osteoblast differentiation. MSC_endothelial cells displayed enrichment for angiogenesis, blood vessel morphogenesis, and endothelium development. MSC_neurological cells were enriched for myelination, ensheathment of neurons, and axon ensheathment. GO term analyses suggested highly specialized functional features of MSC_inflammatory cells, including regulation of protein export from nucleus, electron transport chain, mitochondrial ATP synthesis coupled electron transport, and oxidative phosphorylation (Figure 5—figure supplement 2A).
 
-## AP stimulates MSC differentiation toward osteoblast lineage cells
+![Figure 5.](https://cdn.elifesciences.org/articles/82537/elife-82537-fig5-v2.jpg)
+
+**Figure 5.:** (A) t-Stochastic neighbor embedding (t-SNE) representation an unsupervised clustering of single cells within the MSC cluster. (B) Violin plots of MSC subcluster-specific expression of representative genes. (C) The percentages of four subclusters of MSC population were quantified in control and AP groups. (D) Violin plots depict the changes in the expression of top upregulated genes in the MSC cluster. (E and F) Immunofluorescence double staining of Sparc (E) and Col1 (F) in Sp7-expressing osteoprogenitors. Scale bar, 50 μm. (G) Immunofluorescence double staining of Runx2 in Gli1+ periodontal stem cells (PDLSCs). Scale bar, 50 μm. (H) Lineage tracing analysis of Lepr+ PDLSCs and Col2.3+ osteoblasts. Scale bar, 50 μm.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82537/elife-82537-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Scale bar, 50 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/82537/elife-82537-fig5-figsupp2-v2.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/82537/elife-82537-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Gene expression of Runx2, Sparc, Col1a1, Col1a2, and Bglap in samples of control and AP mouse mandibles. n=6 in control group and n=7 in AP group. *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001. All data were exhibited as mean ± SEM. (B) Heatmap of representative genes associated with osteogenesis in bulk RNA-seq analysis.
+
+### AP stimulates MSC differentiation toward osteoblast lineage cells
 
 We next compared the transcriptome data from the MSC cluster between AP and control groups. Among the top upregulated genes, we observed a significant difference in the single cell expression levels of OLC-associated transcripts, such as secreted protein that is acidic and rich in cysteine (Sparc), Col1a1, Col1a2, Bglap, Bglap2, and Postn, accompanied by a trend toward increased Runx2 expression (Figure 5D). We verified their expressions by real-time quantitative PCR and bulk RNA sequence analysis. The results revealed that Sparc, Col1a1, Col1a2, and Runx2 were significantly upregulated, and Bglap tended to increase during AP (Figure 5—figure supplement 3A, B). In vivo experiments confirmed the upregulated expression of osteogenic-related markers, such as Sparc and Col1a1 in the AP group. There were increased numbers of Sparc+/Sp7+ or Col1+/Sp7+ cells embedded in the bone matrix, implying the protective function of MSC to differentiate into osteoprogenitors and osteoblasts under AP conditions (Figure 5E and F). Lineage tracing analysis further revealed that Gli1+ PDLSCs migrated to AP lesions and differentiated into Runx2+-osteoblasts (Figure 5G). Moreover, using LeprCre;Rosa26Ai14;Col2.3-GFP mouse model, we identified more Lepr+/Col2.3+ cells in the alveolar bone, confirming that inflammation could stimulate the progenitor cells in the adjacent bone and periodontium differentiating toward osteoblasts, thus contributing to the protective actions during AP (Figure 5H).
 
@@ -78,7 +104,7 @@ We investigated the heterogeneity of MSCs by applying branch expression analysis
 
 **Figure 6.:** (A) Pseudotime analysis of the MSC population. (B) Reconstructed cell differentiation trajectory of MSC populations in control and AP groups. (C) Heatmap of differential genes of three states. (D) Bar plot of numerical changes between AP and control in respective states as identified in pseudotime analysis. Fisher’s exact test with Bonferroni correction was used. ****p<0.0001. All data were exhibited as mean ± SEM. (E) Comparison between the pseudotime gene trajectories of MSC subpopulations showed upregulation of Sparc, Col1a1, Col1a2, and Bglap. Black line indicates AP, and dotted lines indicate control.
 
-## Higher OLC-associated marker levels were identified in alveolar bone from patients with AP
+### Higher OLC-associated marker levels were identified in alveolar bone from patients with AP
 
 We next determined whether osteogenesis within the MSC population was altered in human patients with AP. The expressions of SPARC, COL3A1, and RUNX2 were significantly enhanced in alveolar bone from patients with AP, accompanied by increases in SPP1 and BGLAP (Figure 7A). Moreover, immunostaining detected a more extensive distribution of SPARC, BGLAP, and RUNX2 in AP alveolar bone marrow, confirming higher osteogenic potential under AP conditions (Figure 7B–D). Upregulation of OLC-associated markers in AP lesions from patients is consistent with our previous results, verifying an augmentation of osteogenic characteristics within the MSC subcluster in alveolar bone marrow under AP conditions.
 
@@ -108,46 +134,46 @@ In summary, we profiled the transcriptome of alveolar bone marrow single cells f
 
 ## Materials and methods
 
-## Animal experiments
+### Animal experiments
 
 Gt(ROSA)26Sortm14(CAG-tdTomato)Hze mice (Rosa26Ai14; Cat# JAX:007914), Sp7Cre (Cat# JAX:006361), Prrx1Cre (Cat# JAX:005584), and Gli1CreER (Cat# JAX:007913) mice were purchased from Jackson Laboratory. Col2.3-GFP and LeprCre mice were kindly provided by Dr. Bo O. Zhou (Institute of Biochemistry and Cell Biology). Hybrid mice were generated to mark Sp7-, Prrx1-, Lepr-, and Gli1-expressing cells by crossing Sp7Cre, Prrx1Cre, LeprCre, and Gli1CreER with Rosa26Ai14 respectively. LeprCre;Rosa26Ai14;Col2.3-GFP mice were generated by crossing LeprCre;Rosa26Ai14 mice with Col2.3-GFP mice. Gli1CreER;Rosa26Ai14 mice (at postnatal day 50) were injected intraperitoneally with tamoxifen (Sigma-Aldrich) at dosage of 2.5 mg/10 g body weight every 2 d for three times. Wild-type mice were purchased from Chengdu Dossy Biological Technology Co., Ltd. All animal experiments were carried out in accordance with the guidelines of the Institutional Animal Care and Use Committee at the State Key Laboratory of Oral Diseases, Sichuan University (WCHSIRB-D-2021–339).
 
-## AP mouse model
+### AP mouse model
 
 The AP model was generated using 8-wk-old mice as described previously (Taira et al., 2019). In brief, the pulp chambers of the mandibular first molars were opened by a high-speed handpiece with #1/4 carbide round bur under direct visualization by a stereoscopic microscope (Leica). A #10 endodontic K file was then used to probe the root canals. The teeth were then exposed to the oral environment for 3 wk.
 
-## Single-cell sample preparation and sequencing
+### Single-cell sample preparation and sequencing
 
 20 C57/B6 male mice with AP or control mice were used to acquire single-cell suspensions. Mandibles were dissected under a stereo microscope (Leica). Specifically, soft tissues, molars, incisors, and bone from behind the condyle were removed. Then, mandibular alveolar bone tissue was cut into small pieces (<1 mm3) and digested with 3 mg/mL collagenase type I (Gibco) and 4 mg/mL dispase II (Sigma) for 60 min at 37°C as previously described (Cui et al., 2020; Yamaza et al., 2011). Red blood cells were lysed with 1 mL Red Cell Lysis Solution (Biosharp). Cells were centrifuged and resuspended in 1% BSA solution. The final concentration of cells was 1 × 106 cells/mL. Cellular suspensions were loaded into Chromium microfluidic chips and barcoded with a 10× Chromium Controller (10× Genomics). RNA from the barcoded cells was subsequently reverse-transcribed and sequencing libraries constructed with reagents from a Chromium Single Cell 3’ v3 reagent kit (10× Genomics) and sequenced with the NovaSeq system (Illumina).
 
-## Preprocessing of scRNA-seq data
+### Preprocessing of scRNA-seq data
 
 We used Cellranger (v3.1, 10× Genomics) to compare reads to the mouse genome mm10 and for detection of cells using default parameters. Next, we used the Seurat package (v3.1) for further analysis of the scRNA-seq. A gene with less than 3 cells, mitochondrial genes higher than 20%, cells with less than 200 expressed genes, and cells with erythrocyte gene expression higher than 5% were filtered out. The Seurat package was used for data normalization and dimensional reduction. Principal component analysis was based on the highly variable genes, and subclusters of cells were identified using specific gene expression in each group.
 
-## Pseudotime analysis
+### Pseudotime analysis
 
 The cluster identified as MSC was loaded into R environment and then the R package Monocle 2 was used to infer the trajectory and reduce the dimensional space to discover the state transitions of MSCs (Qiu et al., 2017b). Each cell’s pseudotime was automatically calculated, and the branch was assigned on the principal graph. BEAM was run to analyze the hub genes in branches, and top 50 genes were visualized with the plot_genes_branched_heatmap function.
 
-## CCI analysis
+### CCI analysis
 
 CellPhoneDB v.2.0 was performed to predict enriched cellular interaction between different cell populations according to the expression of a receptor by one state and a ligand by another one (Efremova et al., 2020). Receptors and ligands were analyzed when they were expressed in at least 10% cells of the corresponding cluster in mouse data. Subsequently, CrossTalkeR was used to visualize the ligand-receptor networks, which identified relevant ligands, receptors, and cell types contributing to changes in cellular crosstalk when contrasting AP and homeostasis states (Nagai et al., 2021). We then ranked the individual ligand by their number of interactions and normalized to the number of all possible CCIs to identify the most influential ligand. Interactions associated with Fn1 and Sele were visualized via Sankey plot.
 
-## Bulk RNA-seq analysis
+### Bulk RNA-seq analysis
 
 Healthy and AP mandibles were used to extract total RNA and analyzed with bulk RNA-seq. PowerLyzer 24 Homogenizer (Qiagen) was used for lysis and homogenization of alveolar bone samples, and Trizol (Invitrogen) was used for mRNA extraction according to the manufacturer’s protocol. NanoDrop ND-1000 (Thermo fisher Scientific) was used to quantify RNA concentration. Sequencing libraries were generated using the NEBNext UltraTM RNA Library Prep Kit for Illumina (NEB, USA), and index codes were added to correlate sequences to each sample. The library preparations were sequenced on an Illumina Novaseq 6000 (LC-Bio Technology Co., Ltd.).
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 PrimeScript RT reagent kit (Takara) was used to reverse transcribed RNA, and qRT-PCR was performed by SybrGreen Supermix (Bio-Rad Laboratories). Relative expression was calculated using a 2ΔΔCT method with Actb for normalization. All primers are listed in the Supplementary file 1.
 
-## Collection of human alveolar bone
+### Collection of human alveolar bone
 
 This study was permitted by the Ethical Committees of the West China Hospital of Stomatology, Sichuan University (WCHSIRB-D-2021–292). Written informed consent was obtained from all patients. Patients who were characterized with periapical rarefaction in radiography, suffered with a failed root canal treatment, and needed endodontic surgery were recruited as subjects. Patients with periodontitis, vertical root fracture, suspected odontogenic tumor, systematic diseases, or a history of antibiotic, antiviral, or immunosuppressive therapy for 3 mo were excluded. 10 human alveolar bone samples were collected from discards during the apicoectomy surgery. Normal apical bone tissue was harvested from patients who required a bone repair procedure. There was no significant difference in age or gender between the control group and the patients with AP. The samples were rinsed by sterile PBS. Subsequently, part of the samples was quick-frozen with liquid nitrogen and stored at –80°C for mRNA extraction. Others were fixed by 4% paraformaldehyde (PFA) and decalcified by 20% EDTA for immunostaining.
 
-## Immunostaining
+### Immunostaining
 
 Immunofluorescent staining was performed to assess the expression of proteins in the region of the AP lesion. Mandibles from Sp7Cre;Rosa26Ai14, Prrx1Cre;Rosa26Ai14, LeprCre;Rosa26Ai14;Col2.3-GFP, and Gli1CreER;Rosa26Ai14 mice were dissected and fixed in 4% paraformaldehyde for 3 d. Subsequently, samples were decalcified in 20% EDTA (pH 7.5) and embedded in Tissue-Tek O.C.T Compound (Sakura) and cut into 8 μm sections using CryoStar NX50 (Thermo fisher Scientific). Slides were permeabilized with 0.3% Triton X-100 (Beyotime) for 15 min, blocked with 5% BSA for 1 hr, incubated with anti-Sparc (1:100, R&D, AF942) or anti-Collagen I (1:200, Abcam, ab21286) or anti-Bglap (1:200, Abcam, ab93876) or anti-Runx2 (1:200, Abcam, ab23981) overnight at 4°C, and then incubated with Alexa fluor 488 (1:1000, Invitrogen, A11070) for 1 hr at room temperature. 4',6-diamidino-2-phenylindole dihydrochloride (DAPI) (Vector) was used as a nuclei counterstain. An Olympus confocal microscope FV3000 (Olympus) was used to capture images.
 
-## Statistical analysis
+### Statistical analysis
 
 GraphPad Prism 9.0 (GraphPad Software Inc) was used for statistical analysis. Unpaired two-tailed Student’s t test was used in two-group comparisons. All data were exhibited as mean ± SEM. p-Values<0.05 were considered statistically significant for all analyses.

@@ -33,11 +33,262 @@ To develop a better understanding of the mechanisms underlying biological aging,
 
 ## Results
 
-## Sample characteristics
+### Sample characteristics
 
 To create indicators for biological aging we used whole blood derived measurements from the Netherlands Study of Depression and Anxiety (NESDA) baseline assessment: telomere length (N = 2936), epigenetics (DNA methylation, N = 1130, MBD-seq, 28M CpGs), gene expression (N = 1990, Affymetrix U219 micro arrays, >20K genes), proteomics (N = 1837, Myriad RBM DiscoveryMAP 250+, 171 proteins) and metabolites (N = 2910, Nightingale Health platform, 231 metabolites), with 653 overlapping samples (see Table 1 for sample characteristics). Each subsample included around 66% female, with mean age of around 42 years.
 
-## Computing biological clocks
+**Table 1.**
+ Sample description.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Telomere Length</th>
+      <th>Epigenetic Aging</th>
+      <th>Transcriptomic Aging</th>
+      <th>Proteomic Aging</th>
+      <th>MetabolomicAging</th>
+      <th>Composite Index</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td># Subjects</td>
+      <td>2936</td>
+      <td>1130</td>
+      <td>1990</td>
+      <td>1837</td>
+      <td>2910</td>
+      <td>653</td>
+    </tr>
+    <tr>
+      <td>Demographic</td>
+      <td>Sex (%female)</td>
+      <td>66.00</td>
+      <td>65.00</td>
+      <td>67.00</td>
+      <td>67.00</td>
+      <td>66.00</td>
+      <td>66.00</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Education years (mean)</td>
+      <td>12.15</td>
+      <td>11.93</td>
+      <td>12.07</td>
+      <td>12.07</td>
+      <td>12.15</td>
+      <td>11.71</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Age (mean)</td>
+      <td>41.81</td>
+      <td>41.53</td>
+      <td>38.71</td>
+      <td>41.37</td>
+      <td>41.94</td>
+      <td>41.23</td>
+    </tr>
+    <tr>
+      <td>Lifestyle</td>
+      <td>Alcohol use (units per week, mean)</td>
+      <td>6.24</td>
+      <td>6.54</td>
+      <td>6.38</td>
+      <td>6.39</td>
+      <td>6.29</td>
+      <td>6.48</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Smoking (pack years, mean)</td>
+      <td>11.00</td>
+      <td>11.43</td>
+      <td>11.84</td>
+      <td>10.37</td>
+      <td>11.12</td>
+      <td>10.90</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Physical activity (MET minutes per week, mean)</td>
+      <td>3679.72</td>
+      <td>3638.54</td>
+      <td>3729.20</td>
+      <td>3741.00</td>
+      <td>3668.13</td>
+      <td>3525.05</td>
+    </tr>
+    <tr>
+      <td>Somatic Health</td>
+      <td>BMI (mean)</td>
+      <td>25.60</td>
+      <td>25.67</td>
+      <td>25.68</td>
+      <td>25.66</td>
+      <td>25.60</td>
+      <td>25.82</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Physical disability (score, mean)</td>
+      <td>24.40</td>
+      <td>29.45</td>
+      <td>26.00</td>
+      <td>23.22</td>
+      <td>24.45</td>
+      <td>30.27</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Lung capacity (PEF in liter/minute, mean)</td>
+      <td>477.74</td>
+      <td>479.75</td>
+      <td>478.42</td>
+      <td>477.19</td>
+      <td>477.23</td>
+      <td>475.23</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hand grip strength (kg, mean)</td>
+      <td>37.06</td>
+      <td>37.77</td>
+      <td>37.08</td>
+      <td>37.46</td>
+      <td>37.05</td>
+      <td>37.74</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cardiometabolic disease (%cases)</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>18</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Respiratory disease (%cases)</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Musculoskeletal disease (%cases)</td>
+      <td>10</td>
+      <td>10</td>
+      <td>10</td>
+      <td>9</td>
+      <td>10</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Digestive disease (%cases)</td>
+      <td>9</td>
+      <td>9</td>
+      <td>9</td>
+      <td>8</td>
+      <td>9</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neurological disease (%cases)</td>
+      <td>3</td>
+      <td>2</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Endocrine disease (%cases)</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cancer (%cases)</td>
+      <td>7</td>
+      <td>8</td>
+      <td>7</td>
+      <td>7</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Metabolic syndrome (# components, mean)</td>
+      <td>1.36</td>
+      <td>1.39</td>
+      <td>1.37</td>
+      <td>1.33</td>
+      <td>1.36</td>
+      <td>1.41</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td># Chronic diseases (mean)</td>
+      <td>0.61</td>
+      <td>0.62</td>
+      <td>0.62</td>
+      <td>0.58</td>
+      <td>0.61</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>Mental Health</td>
+      <td>Current MDD (%cases)</td>
+      <td>27</td>
+      <td>72</td>
+      <td>34</td>
+      <td>26</td>
+      <td>27</td>
+      <td>76</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Depression severity (IDS, mean)</td>
+      <td>21.46</td>
+      <td>25.80</td>
+      <td>22.91</td>
+      <td>20.96</td>
+      <td>21.48</td>
+      <td>26.67</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Childhood Trauma (score from 0-4, mean)</td>
+      <td>0.91</td>
+      <td>0.97</td>
+      <td>1.00</td>
+      <td>0.87</td>
+      <td>0.92</td>
+      <td>1.01</td>
+    </tr>
+  </tbody>
+</table>
+
+### Computing biological clocks
 
 The methods for creating the biological clocks are described in detail in the Materials and methods section. In brief, for each of the four omics measures (epigenetic, transcriptomic, metabolomic and proteomic) we estimated biological age using ridge regression and cross validation (see Figure 1 for study design). As telomere length values usually decline with increasing chronological age, this indicator was multiplied by −1 to be able to compare directions of effects consistent with the other biological clocks. Correlations between chronological age and predicted biological age were 0.30 for telomere length, 0.95 for epigenetic age, 0.72 for transcriptomic age, 0.85 for proteomic age, and 0.70 for metabolomic age (Figure 1). For each omics-based biological clock, biological aging is defined as the residuals of regressing predicted biological age on chronological age: a positive value means that the biological age is larger than the chronological age. The individual clocks residualized for chronological age are also referred to as biological aging indicators. Correlations between biological aging indicators, corrected for sex, are presented in Figure 2. Correlations were significant for 3 out of 10 pairs; proteomic vs metabolomic aging (r = 0.19, p=2e-16), transcriptomic vs epigenetic aging (r = 0.15, p=3e-06) and transcriptomic vs proteomic aging (r = 0.08, p=2e-06).
 
@@ -49,7 +300,7 @@ The methods for creating the biological clocks are described in detail in the Ma
 
 **Figure 2.:** The heatmap represents Spearman rank correlations between the five biological aging indicators, all corrected for sex. Out of 10 pairs, three are significant: transcriptomic vs epigenetic aging, metabolomic vs proteomic aging and proteomic vs transcriptomic aging. All biological aging indicators were age-regressed, only telomere length was not.
 
-## Associations between individual biological aging indicators and health determinants
+### Associations between individual biological aging indicators and health determinants
 
 For each of the five biological aging indicators, we computed associations with several demographic (sex, education), lifestyle (physical activity, smoking, alcohol use), somatic health (BMI, hand grip strength, lung function, physical disability, chronic diseases), and mental health (current depression, depression severity, childhood trauma) determinants. Except for proteomic aging, sex was associated with all biological aging indicators: women were biologically younger than men (p=3e-4 for telomere length, p=5e-4 for epigenetic aging, p=4e-11 for transcriptomic aging, p=1e-5 for metabolomic aging). Education was not associated with any biological aging indicator. We controlled for sex by using it as a covariate in all following models (except for in the model where sex was the outcome). Table 2 and Figure 3 give an overview of all associations. Correction for multiple testing was done using permutation-based FDR (Materials and methods), resulting in a p-value threshold of 2e-2 for an FDR of 5% for all tests.
 
@@ -57,17 +308,444 @@ For each of the five biological aging indicators, we computed associations with 
 
 **Figure 3.:** For each of the associations between biological aging indicators and health determinants, the standardized beta and standard deviation derived from linear models were plotted. The significant associations (p<2e-2, FDR < 5%) are shown with red stars. The composite index, which is the scaled sum of the five biological aging indicators, clearly shows most associations and often largest effect sizes. Biological aging was used as outcome in the linear models. Beta for telomere length was multiplied by −1 to compare with other biological clocks. Red stars indicate FDR < 5%. All biological aging indicators were age-regressed, only telomere length was not.
 
+**Table 2.**
+ Associations between five biological aging indicators and multiple health determinants.For each biological aging indicator, linear models were fit with the health determinant as predictor, while controlling for sex. Beta’s and p-values from these models are presented here. In the 653 samples with all five data layers available, a composite index was constructed which was significantly associated with more variables than any of the five individual biological aging indicators. All biological aging indicators were age-regressed, only telomere length was not. Telomere length models were corrected for age instead. * Beta for telomere length was multiplied by −1 to compare with other biological aging indicators. All measures are coded such that higher values indicate advanced biological aging. Bold indicates FDR < 5%.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Telomere Length</th>
+      <th>N=2936</th>
+      <th>Epigeneticclock</th>
+      <th>N=1130</th>
+      <th>Transcriptomic Clock</th>
+      <th>N = 1990</th>
+      <th>Proteomic Clock</th>
+      <th>N=1837</th>
+      <th>Metabolomic Clock</th>
+      <th>N=2910</th>
+      <th>Composite Index (sum)</th>
+      <th>N=653</th>
+      <th>Composite Index (PC1)</th>
+      <th>N=653</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Beta*</th>
+      <th>P</th>
+      <th>Beta</th>
+      <th>P</th>
+      <th>Beta</th>
+      <th>P</th>
+      <th>Beta</th>
+      <th>P</th>
+      <th>Beta</th>
+      <th>P</th>
+      <th>Beta</th>
+      <th>P</th>
+      <th>Beta</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Demographic</td>
+      <td>Sex (male/female)</td>
+      <td>-0.06</td>
+      <td>2.89E-04</td>
+      <td>-0.10</td>
+      <td>4.65E-04</td>
+      <td>-0.15</td>
+      <td>3.64E-11</td>
+      <td>-0.03</td>
+      <td>1.46E-01</td>
+      <td>-0.08</td>
+      <td>1.25E-05</td>
+      <td>-0.18</td>
+      <td>2.33E-06</td>
+      <td>-0.11</td>
+      <td>3.59E-03</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Education (# years)</td>
+      <td>-0.03</td>
+      <td>1.12E-01</td>
+      <td>-0.02</td>
+      <td>5.21E-01</td>
+      <td>-0.01</td>
+      <td>6.37E-01</td>
+      <td>-0.05</td>
+      <td>3.43E-02</td>
+      <td>-0.03</td>
+      <td>8.22E-02</td>
+      <td>-0.04</td>
+      <td>3.11E-01</td>
+      <td>-0.05</td>
+      <td>2.27E-01</td>
+    </tr>
+    <tr>
+      <td>Lifestyle</td>
+      <td>Alcohol use (units per week)</td>
+      <td>0.03</td>
+      <td>1.05E-01</td>
+      <td>-0.05</td>
+      <td>1.40E-01</td>
+      <td>0.00</td>
+      <td>9.21E-01</td>
+      <td>0.07</td>
+      <td>2.89E-03</td>
+      <td>0.04</td>
+      <td>4.57E-02</td>
+      <td>0.07</td>
+      <td>6.05E-02</td>
+      <td>0.09</td>
+      <td>1.50E-02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Smoking (pack years)</td>
+      <td>0.06</td>
+      <td>3.11E-03</td>
+      <td>0.02</td>
+      <td>6.22E-01</td>
+      <td>0.05</td>
+      <td>1.55E-02</td>
+      <td>0.10</td>
+      <td>1.33E-05</td>
+      <td>0.05</td>
+      <td>5.09E-03</td>
+      <td>0.10</td>
+      <td>1.15E-02</td>
+      <td>0.12</td>
+      <td>2.85E-03</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Physical activity</td>
+      <td>0.02</td>
+      <td>2.75E-01</td>
+      <td>-0.06</td>
+      <td>3.88E-02</td>
+      <td>-0.04</td>
+      <td>6.42E-02</td>
+      <td>0.03</td>
+      <td>1.51E-01</td>
+      <td>0.01</td>
+      <td>5.18E-01</td>
+      <td>-0.04</td>
+      <td>3.62E-01</td>
+      <td>0.01</td>
+      <td>7.38E-01</td>
+    </tr>
+    <tr>
+      <td>Somatic Health</td>
+      <td>BMI</td>
+      <td>0.04</td>
+      <td>1.80E-02</td>
+      <td>0.09</td>
+      <td>3.94E-03</td>
+      <td>0.14</td>
+      <td>6.02E-10</td>
+      <td>0.12</td>
+      <td>9.82E-08</td>
+      <td>0.23</td>
+      <td>2.07E-35</td>
+      <td>0.24</td>
+      <td>2.32E-10</td>
+      <td>0.22</td>
+      <td>2.18E-09</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Physical disability</td>
+      <td>0.03</td>
+      <td>9.11E-02</td>
+      <td>0.11</td>
+      <td>1.41E-04</td>
+      <td>0.04</td>
+      <td>8.61E-02</td>
+      <td>0.04</td>
+      <td>7.42E-02</td>
+      <td>-0.01</td>
+      <td>4.24E-01</td>
+      <td>0.10</td>
+      <td>7.38E-03</td>
+      <td>0.03</td>
+      <td>4.01E-01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Lung capacity</td>
+      <td>0.02</td>
+      <td>4.19E-01</td>
+      <td>0.03</td>
+      <td>4.65E-01</td>
+      <td>0.04</td>
+      <td>2.13E-01</td>
+      <td>-0.04</td>
+      <td>1.51E-01</td>
+      <td>0.03</td>
+      <td>2.37E-01</td>
+      <td>0.03</td>
+      <td>5.34E-01</td>
+      <td>-0.02</td>
+      <td>6.57E-01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hand grip strength</td>
+      <td>-0.02</td>
+      <td>3.33E-01</td>
+      <td>-0.06</td>
+      <td>1.71E-01</td>
+      <td>0.03</td>
+      <td>3.52E-01</td>
+      <td>0.01</td>
+      <td>7.30E-01</td>
+      <td>0.03</td>
+      <td>2.24E-01</td>
+      <td>-0.03</td>
+      <td>6.14E-01</td>
+      <td>0.03</td>
+      <td>6.20E-01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cardiometabolic disease (no/yes)</td>
+      <td>0.02</td>
+      <td>3.37E-01</td>
+      <td>0.04</td>
+      <td>1.56E-01</td>
+      <td>0.03</td>
+      <td>1.44E-01</td>
+      <td>0.03</td>
+      <td>1.35E-01</td>
+      <td>0.05</td>
+      <td>3.94E-03</td>
+      <td>0.10</td>
+      <td>1.37E-02</td>
+      <td>0.08</td>
+      <td>3.19E-02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Respiratory disease (no/yes)</td>
+      <td>-0.02</td>
+      <td>2.12E-01</td>
+      <td>-0.01</td>
+      <td>6.34E-01</td>
+      <td>0.02</td>
+      <td>2.85E-01</td>
+      <td>0.03</td>
+      <td>1.27E-01</td>
+      <td>0.01</td>
+      <td>4.67E-01</td>
+      <td>-0.03</td>
+      <td>4.70E-01</td>
+      <td>0.01</td>
+      <td>7.17E-01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Musculoskeletal disease (no/yes)</td>
+      <td>0.00</td>
+      <td>8.11E-01</td>
+      <td>-0.01</td>
+      <td>7.37E-01</td>
+      <td>0.04</td>
+      <td>1.04E-01</td>
+      <td>0.02</td>
+      <td>4.36E-01</td>
+      <td>0.02</td>
+      <td>2.23E-01</td>
+      <td>0.09</td>
+      <td>2.27E-02</td>
+      <td>0.11</td>
+      <td>4.96E-03</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Digestive disease (no/yes)</td>
+      <td>0.03</td>
+      <td>5.77E-02</td>
+      <td>-0.02</td>
+      <td>5.71E-01</td>
+      <td>0.06</td>
+      <td>9.76E-03</td>
+      <td>0.06</td>
+      <td>1.21E-02</td>
+      <td>0.02</td>
+      <td>2.81E-01</td>
+      <td>0.05</td>
+      <td>2.01E-01</td>
+      <td>0.04</td>
+      <td>2.86E-01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Neurological disease (no/yes)</td>
+      <td>-0.02</td>
+      <td>2.58E-01</td>
+      <td>0.02</td>
+      <td>5.60E-01</td>
+      <td>0.01</td>
+      <td>5.44E-01</td>
+      <td>0.02</td>
+      <td>2.84E-01</td>
+      <td>0.02</td>
+      <td>1.93E-01</td>
+      <td>-0.04</td>
+      <td>2.64E-01</td>
+      <td>-0.02</td>
+      <td>5.09E-01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Endocrine disease (no/yes)</td>
+      <td>-0.01</td>
+      <td>4.45E-01</td>
+      <td>0.01</td>
+      <td>8.13E-01</td>
+      <td>-0.01</td>
+      <td>5.75E-01</td>
+      <td>0.06</td>
+      <td>1.03E-02</td>
+      <td>0.03</td>
+      <td>1.23E-01</td>
+      <td>0.06</td>
+      <td>1.18E-01</td>
+      <td>0.09</td>
+      <td>1.64E-02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Cancer (no/yes)</td>
+      <td>0.00</td>
+      <td>9.66E-01</td>
+      <td>0.02</td>
+      <td>5.65E-01</td>
+      <td>0.02</td>
+      <td>4.88E-01</td>
+      <td>0.03</td>
+      <td>1.81E-01</td>
+      <td>0.02</td>
+      <td>2.01E-01</td>
+      <td>0.08</td>
+      <td>3.22E-02</td>
+      <td>0.07</td>
+      <td>5.00E-02</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Metabolic syndrome (# components)</td>
+      <td>0.06</td>
+      <td>6.35E-04</td>
+      <td>0.04</td>
+      <td>1.46E-01</td>
+      <td>0.13</td>
+      <td>9.98E-09</td>
+      <td>0.13</td>
+      <td>5.34E-09</td>
+      <td>0.21</td>
+      <td>4.53E-29</td>
+      <td>0.28</td>
+      <td>9.10E-13</td>
+      <td>0.26</td>
+      <td>6.41E-12</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td># Chronic diseases</td>
+      <td>0.00</td>
+      <td>7.99E-01</td>
+      <td>0.03</td>
+      <td>3.63E-01</td>
+      <td>0.05</td>
+      <td>3.20E-02</td>
+      <td>0.09</td>
+      <td>1.24E-04</td>
+      <td>0.03</td>
+      <td>1.39E-01</td>
+      <td>0.06</td>
+      <td>1.26E-01</td>
+      <td>0.07</td>
+      <td>8.43E-02</td>
+    </tr>
+    <tr>
+      <td>Mental Health</td>
+      <td>Current MDD (no/yes)</td>
+      <td>0.03</td>
+      <td>1.59E-01</td>
+      <td>0.09</td>
+      <td>1.99E-03</td>
+      <td>0.07</td>
+      <td>1.68E-02</td>
+      <td>0.08</td>
+      <td>7.62E-03</td>
+      <td>-0.03</td>
+      <td>1.61E-01</td>
+      <td>0.11</td>
+      <td>6.05E-03</td>
+      <td>-0.12</td>
+      <td>2.29E-01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Depression severity</td>
+      <td>0.04</td>
+      <td>2.40E-02</td>
+      <td>0.12</td>
+      <td>8.67E-05</td>
+      <td>0.03</td>
+      <td>2.76E-01</td>
+      <td>0.07</td>
+      <td>5.99E-03</td>
+      <td>-0.02</td>
+      <td>3.74E-01</td>
+      <td>0.13</td>
+      <td>7.61E-04</td>
+      <td>0.05</td>
+      <td>1.87E-01</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Childhood Trauma</td>
+      <td>0.01</td>
+      <td>4.54E-01</td>
+      <td>0.12</td>
+      <td>7.99E-05</td>
+      <td>0.03</td>
+      <td>2.06E-01</td>
+      <td>0.04</td>
+      <td>8.96E-02</td>
+      <td>0.04</td>
+      <td>2.46E-02</td>
+      <td>0.09</td>
+      <td>1.96E-02</td>
+      <td>0.07</td>
+      <td>7.19E-02</td>
+    </tr>
+  </tbody>
+</table>
+
+_* Beta for telomere length was multiplied by -1 to compare with other biological clocks.Bold indicates FDR<5%._
+
 Among the lifestyle determinants, alcohol use was associated with advanced proteomic aging (p=3e-3) and smoking (packs per year) was associated with shorter telomere length (p=3e-3), and advanced transcriptomic (p=2e-2), proteomic (p=1e-5) and metabolomic aging (p=5e-3). Physical activity was not associated with any biological aging indicator.
 
 From the somatic health determinants, high BMI was strongly associated with advanced biological aging of all indicators (p=2e-2 for telomere length, p=4e-3 for epigenetic aging, p=6e-10 for transcriptomic aging, p=1e-7 for proteomic aging, and p=2e-35 for metabolomic aging). Physical disability was associated with advanced epigenetic aging (p=1e-4). Within the domain of chronic diseases, the presence of digestive diseases and endocrine diseases were associated with advanced proteomic aging (p=2e-2 and p=1e-2, respectively). Subjects with cardiometabolic disease showed advanced metabolomic aging (p=4e-3) and subjects with digestive disease exhibited advanced transcriptomic aging (p=1e-2). Those with metabolic syndrome showed advanced biological aging across four indicators (p=6e-4 for telomere length, p=1e-8 for transcriptomic aging, p=5e-9 for proteomic aging, p=5e-29 for metabolomic aging).
 
 The presence of current depression and depression severity were associated advanced epigenetic (p=2e-3 and p=9e-5) and proteomic aging (p=8e-3 and p=6e-3, respectively). Current depression was also associated with advanced transcriptomic aging (p=2e-2) and those with childhood trauma showed advanced epigenetic aging (p=8e-5). To verify if the results were confounded by medication use, we computed associations between antidepressant medication (SSRIs, TCAs, or other antidepressants), metabolic-syndrome-related medication (‘metabolic medication’: anti-diabetic, fibrates, or anti-hypertensives) and biological aging (Supplementary file 1). After FDR correction, we found that metabolomic aging was associated with the increased use of metabolic medication (Beta = 0.153, p=2.35e-3), and antidepressant use with proteomic (Beta = 0.208, p=7.16e-5) and transcriptomic aging (Beta = 0.129, p=8.1e-3). The design of the current observational study cannot conclusively prove whether this is a direct medication effect or confounding by indication.
 
-## Association between biological aging indicators and mortality in longitudinal analysis
+### Association between biological aging indicators and mortality in longitudinal analysis
 
 We conducted post-hoc analyses on the relationship between the biological aging indicators and subsequent outcomes after 6 years of follow-up duration. Mortality data and self-reported somatic disease onset (in the categories cardiometabolic, respiratory, musculoskeletal, digestive, neurological, and endocrine diseases, and cancer) was gathered at each measurement wave. There were no significant associations between chronic disease onset or mortality and baseline biological aging, likely due to the low numbers of mortality and disease onset (Supplementary file 3).
 
-## Associations between the biological aging composite index and all health determinants
+### Associations between the biological aging composite index and all health determinants
 
 The composite index was computed as the sum of the five scaled biological aging indicators in the 653 samples with data of all five biological levels. Correlations between the five biological aging indicators and the composite index were between 0.43 and 0.51. We found more and stronger associations for the composite index than for any of the individual biological aging indicators: including sex (p=2e-6), BMI (p=2e-10), smoking (p=2e-2), metabolic syndrome (p=9e-13), current MDD (p=6e-3), depression severity (p=7e-4), and childhood trauma (p=2e-2). As an alternative approach, Principal Component Analysis (PCA) was used to compute an alternative composite index. We used the first principle component (PC) of this analysis, which was a weighted sum of the biological aging indicators (for telomere length the weight (w) = 0.042, epigenetic aging w = 0.094, transcriptomic aging w = 0.220, proteomic aging w = 0.707, metabolomic aging w = 0.664), reflecting the highest correlations between the biological aging indicators, which is between metabolomic and proteomic aging. Compared to the composite index that was based on the sum and thus gives equal weight to all five biological aging indicators, the PC-based index had less significant associations with sex, smoking, BMI, and metabolic syndrome. The PC-based index was not significantly associated with physical disability, or mental health outcomes, as opposed to the summed index. The five PC’s each explain more than 15% of variance (the first 2 PC’s more than 25% each), indicating the multidimensionality and non-redundancy of the five biological aging indicators.
 
@@ -101,62 +779,62 @@ Here, we used a large cohort that was well-characterized in terms of demographic
 
 Another aspect that limits the interpretability of our findings in the context of increased risk of developing aging-related diseases and mortality was the relatively young age of the current sample. To illustrate, we were unable to predict future incidence of chronic disease or mortality from baseline biological aging, likely due to the low numbers of mortality and disease onset (Supplementary file 3), for example the number of deceased cases ranged from 64 (TL) to 27 (proteomic clock). Previous studies that have associated biological aging with mortality risk commonly include aging cohorts (Danish longitudinal twin study with mean age of 86.1 years; Framingham Offspring Study with mean age 61.0 years; Swedish population cohort SATSA with mean age 63.6 years; German population cohort ESTHER with mean age 62.5 years; Lothian Birth Cohorts with mean age >69.5 years; Normative Aging Study with mean age 71.7 years) (Marioni et al., 2018; Li et al., 2020; Christiansen et al., 2016; Perna et al., 2016; Murabito et al., 2018; Chen et al., 2016). Before definitively interpreting a ‘clock’ as a measure of biological aging, further independent studies are needed to establish that the clock changes with advancing age and forecasts disease, disability and mortality.
 
-## Conclusions
+### Conclusions
 
 In conclusion, this study examined the overlap between five biological aging indicators and their shared and unique associations with somatic and mental health. Our findings indicate that they largely track distinct, but also partially overlapping aspects of this aging process. Further, we demonstrated that male sex, smoking, higher BMI and metabolic syndrome were consistently related to advanced aging at multiple biological levels. Remarkably, our study also converges evidence of depression and childhood trauma associations across multiple platforms, cellular levels, and sample sizes, highlighting the important link between mental health and biological aging. Taken together, our findings contribute to the understanding and identification of biological age determinants, important to the development of end points for clinical and epidemiological research.
 
 ## Materials and methods
 
-## Study design and participants
+### Study design and participants
 
 Data used were from the Netherlands Study of Depression and Anxiety (NESDA), an ongoing longitudinal cohort study examining course and consequences of depressive and anxiety disorders. The NESDA sample consists of 2981 persons between 18 and 65 years including persons with a current or remitted diagnosis of a depressive and/or anxiety disorder (74%) and healthy controls (26%). Individuals were recruited from mental health care settings, general practitioners, and the general population in the period from September 2004 to February 2007. Persons with insufficient command of the Dutch language or a primary clinical diagnosis of other severe mental disorders, such as severe substance use disorder or a psychotic disorder were excluded. Participants were assessed during a 4 hr clinical visit, consisting of the collection of all somatic and mental health determinants in the current study, as well as a fasting blood draw. All omics data was obtained from the same blood sample, drawn at the same time point as the health determinant examination during the face-to-face visit. The study was approved by the Ethical Review Boards of participating centers, and all participants signed informed consent. More than 94% of the NESDA participants were from North European origin. The population and methods of the NESDA study have been described in more detail elsewhere (NESDA Research Consortium et al., 2008).
 
 Data to derive different biological clocks was available for different subsamples and all based on the same fasting blood draw from participants in the morning between 8:30 and 9:30 after which samples were stored in a −80°C freezer or – for RNA - transferred into PAXgene tubes (Qiagen, Valencia, California, USA) and stored at −20°C. To create biological clocks, we used telomere length (N = 2936), DNA methylation (N = 1130, MBD-seq, 28M CpGs), gene expression (N = 1990, Affymetrix U219 micro arrays, >20K genes), proteins (N = 1837, Myriad RBM DiscoveryMAP 250+, 171 proteins) and metabolites (N = 2910, Nigthingale platform, 231 metabolites), see Table 1 and details in the following sections.
 
-## Biological clock assessments
+### Biological clock assessments
 
-## Telomere length
+#### Telomere length
 
 Leukocyte telomere length was determined at the laboratory of Telomere Diagnostics, Inc (Menlo Park, CA, USA), using quantitative polymerase chain reaction (qPCR), adapted from the published original method by Cawthon, 2002. Telomere sequence copy number in each patient’s sample (T) was compared to a single-copy gene copy number (S), relative to a reference sample. The resulting T/S ratio is proportional to mean leukocyte telomere length. The detailed method is described elsewhere (Verhoeven et al., 2014). The reliability of the assay was adequate: eight included quality control DNA samples on each PCR run illustrated a small intra-assay coefficient of variation (CV = 5.1%), and inter-assay CV was also sufficiently low (CV = 4.6%).
 
-## DNA methylation (epigenetic clock)
+#### DNA methylation (epigenetic clock)
 
 To assay the methylation levels of the approximately 28 million common CpG sites in the human genome, we used an optimized protocol for MBD-seq (Han et al., 2018; Aberg et al., 2020). With this method, genomic DNA is first fragmented and the methylated fragments are then bound to the MBD2 protein that has high affinity for methylated DNA. The non-methylated fraction is washed away and only the methylation-enriched fraction is sequenced. This optimized protocol assesses about 94% of the CpGs in the methylome. The sequenced reads were aligned to the reference genome (build hg19/GRCh37) with Bowtie2 (Langmead and Salzberg, 2012) using local and gapped alignment. Aligned reads were further processed using the RaMWAS Bioconductor package (Shabalin et al., 2018) to perform quality control and calculate methylation scores for each CpG.
 
-## Gene expression (transcriptomic clock)
+#### Gene expression (transcriptomic clock)
 
 RNA processing and assaying -done at Rutgers University Cell and DNA repository- have been described previously (Jansen et al., 2014; Jansen et al., 2017; Wright et al., 2014). Samples were hybridized to Affymetrix U219 arrays (Affymetrix, Santa Clara, CA). Array hybridization, washing, staining, and scanning were carried out in an Affymetrix GeneTitan System per the manufacturer’s protocol. Gene expression data were required to pass standard Affymetrix QC metrics (Affymetrix expression console) before further analysis. We excluded from further analysis probes that did not map uniquely to the hg19 (Genome Reference Consortium Human Build 37) reference genome sequence, as well as probes targeting a messenger RNA (mRNA) molecule resulting from transcription of a DNA sequence containing a single nucleotide polymorphism (based on the dbSNP137 common database). After this filtering step, data for analysis remained for 423,201 probes, which was summarized into 44,241 probe sets targeting 18,238 genes. Normalized probe set expression values were obtained using Robust Multi-array Average (RMA) normalization as implemented in the Affymetrix Power Tools software (APT, version 1.12.0, Affymetrix). Data for samples that displayed a low average Pearson correlation with the probe set expression values of other samples, and samples with incorrect sex-chromosome expression were removed.
 
-## Proteins (proteomic clock)
+#### Proteins (proteomic clock)
 
 As described previously (Lamers et al., 2016), a panel of 243 analytes (Myriad RBM DiscoveryMAP 250+) involved in various hormonal, immunological, and metabolic pathways was assessed in serum using multiplexed immunoassays in a Clinical Laboratory Improvement Amendments (CLIA)-certified laboratory (Myriad RBM; Austin, TX, USA). After excluding analytes with more than 30% missing data (mostly due to values outside the ranges of detection), 171 of the 243 analytes remained for analysis (with values below and above detection limits imputed with the detection limit values).
 
-## Metabolites (metabolomic clock)
+#### Metabolites (metabolomic clock)
 
 Metabolite measurements have been described in detail previously (Akker et al., 2019; BBMRI-NL Metabolomics Consortium et al., 2020). In short, a total of 232 metabolites or metabolite ratios were reliably quantified from Ethylenediaminetetraacetic acid plasma samples using targeted high-throughput proton Nuclear Magnetic Resonance (1H-NMR) metabolomics (Nightingale Health Ltd, Helsinki, Finland) (Soininen et al., 2015). Metabolites measures provided by the platform include (1) lipids, fatty acids and low-molecular-weight metabolites (N = 51); (2) lipid composition and particle concentration measures of lipoprotein subclasses (N = 98); (3) metabolite ratios (N = 81). This metabolomics platform has been extensively used in large-scaled epidemiological studies in the field of diabetes, cardiovascular disease, mortality and alcohol intake (Akker et al., 2019; Würtz et al., 2016; Wurtz et al., 2012; Würtz et al., 2015; Fischer et al., 2014). The data contained missing values due to detection limits. Samples with more than 25 missings were removed (N = 71), metabolites with more than 250 missings were removed (N = 1). Other missing values were replaced with the median value per metabolite. In total 231 metabolites in 2910 samples remained for analysis.
 
-## Building biological clocks for multiple omics domains
+### Building biological clocks for multiple omics domains
 
 Telomere length was multiplied by −1 to be able to compare directions of effects consistent with that of other biological clocks. For each of the other four omics domains (epigenetic, transcriptomic, metabolomic, and proteomic data) the same approach was used to compute biological clocks. First, the omics data were residualized with respect to technical covariates (batch, lab). Second, data per omics marker were normalized using a quantile-normal transformation. Finally, biological age was computed using cross-validation by splitting the sample in 10 equal parts. For each of the 10 groups, nine parts were used as training set and the 10th as test set. In the training set the biological age estimator was computed using ridge regression (R library glmnet), with chronological age as the outcome, and the omics data as predictors. Only for methylation and gene expression a selection of predictors (CpGs for methylation-based models and genes for gene-expression-based models) was made for each cross validation step: we increased the number of sites included in the elastic net in steps (steps for CpGs: 0, 100, 1000, 10,000, 80,000, 100,000, steps for gene expression 100, 500, 1000, 1200, 1400). CpGs/genes were selected in the order of their ranks derived from the association with age in the training sample. We selected the number of CpGs/genes where the cumulative association signal reached a stable plateau. This approach is based on the rationale that adding more markers should theoretically never decrease predictive power. We previously performed tests where the number of CpGs/genes was included in the loop over the k-folds. However, as it produced very similar results but is much more computer intensive (Clark et al., 2020), this latter approach was not used. This approach resulted in 80,000 CpGs (mapping to 2976 genes) for the epigenetic clock, and 1200 probes (mapping to 767 genes) for the transcriptomic clock. For the proteomic and metabolomic data, all markers were used to predict age, because leaving markers out decreased the prediction accuracy. The predictor was then used in the test set to create an unbiased omics-based biological age. For each omics domain, biological aging was defined as the residuals of regressing biological age on chronological age (Han et al., 2018; Peters et al., 2015). Thus, in the terminology we use here, the biological aging indicators represent the biological age acceleration: a positive value means that the biological age is larger than the chronological age. A composite index of biological aging was made by scaling each of the five biological indicators and taking the sum, in the 653 samples that had data for all five omics levels.
 
-## Health determinants
+### Health determinants
 
-## Lifestyle
+#### Lifestyle
 
 Alcohol consumption was assessed as units per week by using the AUDIT (Babor et al., 1989). Smoking status was assessed by pack years (smoking duration * cigarettes per day/20). Physical activity (Gerrits et al., 2013) was assessed using the International Physical Activity Questionnaire (IPAQ) (Craig et al., 2003) and expressed as overall energy expenditure in Metabolic Equivalent Total (MET) minutes per week (MET level * minutes of activity * events per week).
 
-## Somatic health
+#### Somatic health
 
 BMI was calculated as measured weight divided by height-squared. Functional status is one of the most potent health status indicators in predicting adverse outcomes in aging populations (Guralnik et al., 1996), including depression (Milaneschi and Penninx, 2014). Assessment of functional status includes measures of physical impairments and disability, reflecting how individuals’ limitations interact with the demands of the environment. Two measures of physical impairments were available: Lung capacity was determined by measuring the peak expiratory flow (PEF in liter/minute) using a mini Wright peak flow meter. Hand grip strength was measured with a Jamar hand held dynamometer in kilograms of force and was assessed for the dominant hand. Furthermore, physical disability was measured with the World Health Organization Disability Assessment Schedule II (WHODAS-II)s the sum of scale 2 (mobility) and scale 3 (self-care). The number of self-reported current somatic diseases for which participants received medical treatment was counted. We used somatic disease categories as categorized previously (Gerrits et al., 2013; Gaspersz et al., 2018): cardiometabolic, respiratory, musculoskeletal, digestive, neurological and endocrine diseases, and cancer. Metabolic syndrome components included waist circumference, systolic blood pressure, HDL cholesterol, triglycerides, and glucose levels, which measurement methods are described elsewhere (Révész et al., 2014).
 
-## Mental health
+#### Mental health
 
 Presence of current (6 month recency) major depressive disorder was assessed by the DSM-IV Composite International Diagnostic Interview (CIDI) version 2.1. Depressive severity levels in the week prior to assessment were measured with the 28-item Inventory of Depressive Symptomatology (IDS) self-report (Rush et al., 1996). Childhood trauma was assessed with the Childhood Trauma Interview (CTI) (de Graaf et al., 2002). In this interview, participants were asked whether they were emotionally neglected, psychologically abused, physically abused or sexually abused before the age of 16. The CTI reports the sum of the categories that were scored from 0 to 2 (0: never happened; 1: sometimes; 2: happened regularly), which was categorized into five categories.
 
-## Statistical analyses
+### Statistical analyses
 
 For each of the five biological aging indicators we computed associations with demographic (sex, education), lifestyle (physical activity, smoking, alcohol use), somatic health (BMI, hand grip strength, lung function, physical disability, chronic diseases), and mental health (current depression, depression severity, childhood trauma) determinants using linear models with health determinants as predictors and biological aging as outcome (for each health determinant separately). All models included a covariate for sex, except for when sex was the outcome. For telomere length, chronological age was used as covariate in the models, for the other biological aging indicators age was not used as covariate because they are independent of chronological age by design. Standardized betas from these models are reported (by scaling predictor and outcome). Correction for multiple testing was done using permutation based FDR (Fehrmann et al., 2011). Subject labels were permuted 1000 times and associations were computed using the permuted data (all biological aging indicators vs all health determinants). For each of the observed p-values (p) the FDR was computed as the average number of permuted p-values smaller than p, divided by the amount of real p-values smaller than p, resulting in a p-value threshold of 2e-2 for a FDR of 5% for all tests. In the 653 overlapping samples with data in each biological clock domain, we scaled (mean 0, standard deviation 1) and summed up the five biological aging indicators in order to create a composite index of biological aging.
 
-## Longitudinal analysis of mortality and chronic disease onset
+### Longitudinal analysis of mortality and chronic disease onset
 
 As NESDA is a longitudinal study, with several follow-up measurement waves, we conducted post-hoc analyses on the relationship between the biological aging indicators and subsequent outcomes after six years of follow-up duration. The average chronological age of our cohort (mean = 41 years, sd = 13, range = 18–65 years) is rather young, so high rates of mortality and morbidity were not expected. Mortality data was gathered at each measurement wave. Also, at each wave self-reported somatic diseases for which participants received medical treatment were assessed. Based on this, we created somatic disease categories as categorized previously (Gerrits et al., 2013; Gaspersz et al., 2018): cardiometabolic, respiratory, musculoskeletal, digestive, neurological and endocrine diseases, and cancer. For these categories, we computed chronic disease onset defined as the disease not being present at baseline (time of biological aging assessment) and present at the latest wave (6 years after baseline). For each biological clock, we computed longitudinal analyses, using a linear model with mortality or chronic disease onset as outcome, and the biological clock residualized for chronological age as predictor, while correcting for sex.

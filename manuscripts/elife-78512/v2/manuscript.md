@@ -12,8 +12,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03vek6s52 Department of Cell Biology, Howard Hughes Medical Institute, Harvard Medical School Boston United States
-2. https://ror.org/013meh722 Wellcome Trust MRC Institute of Metabolic Science, University of Cambridge Cambridge United Kingdom
+1. Department of Cell Biology, Howard Hughes Medical Institute, Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+2. Wellcome Trust MRC Institute of Metabolic Science, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 
@@ -33,13 +33,21 @@ The functions of individual enteroendocrine cell types could in some cases be in
 
 ## Results and discussion
 
-## Selective access to enteroendocrine cells in vivo through intersectional genetics
+### Selective access to enteroendocrine cells in vivo through intersectional genetics
 
 We first sought to identify genetic tools that broadly and selectively mark enteroendocrine cells. Transcription factors such as Atoh1, Neurogenin3, and NeuroD1 are expressed in enteroendocrine cell progenitors and/or precursors and act in early stages of enteroendocrine cell development (Li et al., 2011). We obtained Atoh1-Cre (both knock-in and transgenic lines), Neurog3-Cre, and Neurod1-Cre mice and crossed them to mice containing a Cre-dependent tdTomato reporter (Rosa26CAG-lsl-tdTomato herein defined as lsl-tdTomato). Neurog3-Cre and Neurod1-Cre lines labeled a sparse population of intestinal epithelial cells characteristic of enteroendocrine cells, although the Neurog3-Cre line additionally labeled other cells in intestinal crypts and in occasional mice produced broad labeling of intestinal epithelium; neither Atoh1-Cre line tested displayed selective labeling of enteroendocrine cells (Figure 1—figure supplement 1A; Schonhoff et al., 2004). Two-color analysis of tdTomato and gut hormone expression verified tdTomato localization in enteroendocrine cells of Neurod1-Cre; lsl-tdTomato mice, consistent with prior findings (Figure 1—figure supplement 1B; Li et al., 2012). Single-cell RNA sequencing of tdTomato-positive cells obtained from these mice (see below) also verified selective enteroendocrine cell labeling.
 
 Neurod1-Cre mice provide broad, indelible, and selective marking of enteroendocrine cells within the intestine, but NeuroD1 is also expressed in a variety of other tissues, including the brain, retina, pancreas, peripheral neurons, and enteric neurons (Figure 1B and C, Figure 1—figure supplement 1D and E; Cho and Tsai, 2004; Li et al., 2011). Knockout of NeuroD1 is lethal, causing severe deficits in neuron birth and survival, as well as in the development of pancreatic islets and enteroendocrine cells (Gao et al., 2009; Naya et al., 1997). We employed an intersectional genetic strategy of combining Cre and Flp recombinases to limit effector gene expression to enteroendocrine cells. Villin1 (Vil1) is expressed with high selectivity in the lower gastrointestinal tract (el Marjou et al., 2004; Maunoury et al., 1992), so we generated a knock-in mouse allele (Vil1-p2a-FlpO) that drives FlpO recombinase expression from the endogenous Vil1 locus. Vil1-p2a-FlpO mice displayed expression of a Flp-dependent Gfp allele in epithelial cells throughout the entire length of the intestine with striking specificity (Figure 1A, Figure 1—figure supplement 1C). Reporter expression was not observed in most other tissues examined, including most brain regions, spinal cord, peripheral ganglia, and enteric neurons; rare GFP-expressing cells were noted in taste papillae, epiglottis, pancreas, liver, and thalamus (Figure 1C, Figure 1—figure supplement 1C and D; Höfer and Drenckhahn, 1999; Madison et al., 2002; Rutlin et al., 2020). Combining Neurod1-Cre and Vil1-p2a-FlpO alleles (Neurod1INTER) yielded highly selective expression of an intersectional reporter gene encoding tdTomato (Rosa26CAG-lsl-fsf-tdTomato herein defined as inter-tdTomato) in enteroendocrine cells, with only occasional cells observed in pancreas, and no detectable expression in other cell types labeled by either allele alone (Figure 1C, Figure 1—figure supplement 1D and E).
 
-## Charting enteroendocrine cell diversity and gene expression
+![Figure 1.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig1-v2.jpg)
+
+**Figure 1.:** (A) Bright-field microscopy and native GFP fluorescence microscopy of intestinal tissue from Vil1-p2a-FlpO; fsf-Gfp mice (left) and fsf-Gfp mice (right). Scale bars: 5 mm. (B) Cartoon depicting intersectional genetic strategy to access enteroendocrine cells. (C) Native reporter fluorescence in cryosections (20 μm, except 50 μm for cortex and dorsal root ganglion) or wholemounts (tongue) of fixed tissues indicated from Neurod1-Cre; lsl-tdTomato mice (left), Vil1-p2a-FlpO; fsf-Gfp mice (middle), and Neurod1INTER; inter-tdTomato mice (right). Scale bars: 100 μm for all except 500 μm for tongue. Intestine sections from duodenum (middle) or jejunum (left, right). See Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Native tdTomato fluorescence in fixed intestinal cryosections (20 μm) of mouse lines indicated. (B) Two-color analysis examining expression of tdTomato (native fluorescence, magenta) and hormones (immunochemistry, green) in fixed intestinal cryosections (20 μm) of mouse lines indicated, SST: somatostatin. (C) Native GFP fluorescence in fixed cryosections of tissues (20 μm), spinal cord (50 μm) and brain regions indicated (50 μm) in Vil1-p2a-FlpO; fsf-Gfp mice. (D) Native reporter fluorescence in fixed wholemount tissue preparations from mouse lines indicated. Scale bars: 500 μm. (E) Native tdTomato fluorescence in fixed tissue cryosections (20 μm for stomach, 50 μm for cortex, spinal cord) from mouse lines indicated. Scale bars: 100 μm.
+
+### Charting enteroendocrine cell diversity and gene expression
 
 Our general goal was to use intersectional genetics to access subtypes of enteroendocrine cells that express different gut hormones. We first used single-cell RNA sequencing approaches to measure the extent of enteroendocrine cell diversity, compare findings with existing enteroendocrine cell atlases, and establish a foundation for genetic experiments. Enteroendocrine cells represent <1% of gut epithelial cells, so we used genetic markers for enrichment. NeuroD1 is expressed early in the enteroendocrine cell lineage, and we observed by two-color expression analysis that Neurod1-Cre mice target at least several enteroendocrine cell types (Figure 1—figure supplement 1B). Since prior enteroendocrine cell atlases were derived from cells expressing an earlier developmental marker, Neurog3 (Gehart et al., 2019), we sought to compare the repertoire of enteroendocrine cells captured by Neurod1-Cre and Neurog3-Cre mice.
 
@@ -47,9 +55,21 @@ tdTomato-positive cells were separately obtained from the intestines (duodenum t
 
 Since Neurog3-Cre and Neurod1-Cre mice similarly labeled all known enteroendocrine cell lineages, transcriptome data was computationally integrated for analysis of enteroendocrine cell subtypes. Selective clustering analysis of 3049 enteroendocrine cells from both mouse lines revealed 10 distinct cell clusters, with one cluster representing putative progenitors (Figure 2A, Figure 2—source data 1). Cell clusters were compared with previously described enteroendocrine cell types based on expression of signature genes encoding hormones and transcriptional regulators (Figure 2A–C; Gehart et al., 2019). We observed three classes of enterochromaffin cells that similarly express serotonin biosynthesis enzymes (Tph1) and associated transcription factors (Lmx1a), but differentially produce Tac1, Cartpt, Pyy, Ucn3, and Gad2 (Figure 2B). Six other cell types preferentially express either Gip (K cells), Cck (I cells), Gcg (GLP1 precursor, L cells), Nts (N cells), Sst (D cells), and Ghrl (X cells), with L, I, and N cells thought to be derived from a common cell lineage (Beumer et al., 2020; Gehart et al., 2019). Strong segregation was observed for some signature genes, such as Tph1 in enterochromaffin cells and Sst in D cells. In other cases, signature hormone genes like Cck and Ghrl were enriched in particular cell clusters but expression was not absolutely restricted and also observed at lower levels in other cell clusters (Figure 2B). We note that glutamate transporters were not readily detected in our transcriptomic data (Figure 2B, Figure 2—figure supplement 2). Thus, each enteroendocrine cell subtype expresses a hormone repertoire with distinct patterns of enrichment but also sometimes partial overlap.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig2-v2.jpg)
+
+**Figure 2.:** (A) A uniform manifold approximation and projection (UMAP) plot of enteroendocrine cell transcriptomic data reveals 10 cell clusters. (B) Violin plots showing expression of genes encoding key transcriptional regulators, hormones, other secreted molecules, and receptors across enteroendocrine cell subtypes. Gene loci used for genetic targeting are highlighted with dashed boxes. (C) Normalized expression of enriched signature genes (see Figure 2—source data 1 for a gene list) in single enteroendocrine cells. The dendrogram (top) depicts the relatedness (quantified by position along the Y-axis) between cell clusters based on gene expression. (D) For each enteroendocrine cell type, examples of gene loci used for genetic targeting (top, also highlighted in B), expressed cell surface receptor genes (middle) and expressed hormone and neurotransmitter-related genes (bottom). Genes were selected among the top 30 differentially expressed genes. See Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Left: small intestines were collected from Neurog3-Cre; lsl-tdTomato (one male) and Neurod1-Cre; lsl-tdTomato (three females) mice. Fluorescent cells were collected by cell sorting and separately analyzed by single-cell RNA sequencing. (Center) Cell purity was determined by visualizing tdTomato fluorescence (top) and bright-field microscopy (bottom), scale bar: 100 um. Right: duodenum tissue from Neurog3-Cre; lsl-tdTomato mice was fixed at different time points after the onset of cell dissociation and analyzed for tdTomato fluorescence in 20 μm tissue cryosections. Scale bars: 100 μm. (B) (left) UMAP plot of single-cell transcriptomic data merged from both Neurog3-Cre; lsl-tdTomato and Neurod1-Cre; lsl-tdTomato mice. Cells are colored based on the expression of signature genes indicated in the dot plot on right (average expression from natural log of normalized UMI counts). (C) UMAP plots indicating all cell types (left) and enteroendocrine cell types (right) purified from Neurod1-Cre; lsl-tdTomato (Neurod1 lineage) and Neurog3-Cre; lsl-tdTomato (Neurog3 lineage) mice.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Native tdTomato fluorescence in fixed intestinal cryosections (20 μm) of mouse lines indicated. Asterisks indicate labeled cells in the lamina propria or muscular layer. Scale bars: 100 μm.
+
 Enteroendocrine cells also express various cell surface receptors to detect nutrients, toxins, and other stimuli. For example, enteroendocrine cells detect sugars through the sodium-glucose cotransporter SGLT1 (encoded by the gene Slc5a1), with sodium co-transport thought to lead directly to cell depolarization (Gorboulev et al., 2012; Reimann et al., 2008). This mechanism is distinct from sugar detection by taste cells or pancreatic beta cells. Gustatory sensations of sweet (and savory/umami) involve taste cell-mediated detection of sugars (and amino acids) through heterodimeric G protein-coupled receptors termed T1Rs (Yarmolinsky et al., 2009), while pancreatic beta cells respond to sugar through increased metabolic flux, ATP-gated potassium channel closure, and depolarization. Expression of Slc5a1 was observed in multiple enteroendocrine cell subtypes, and highest in K, L, D, and N cells, while abundant expression of T1Rs was not detected in any enteroendocrine cell type (Figure 2B). These findings are consistent with the ability of taste blind mice lacking T1Rs to develop a preference for sugar-rich foods through SGLT1-mediated post-ingestive signals of the gut-brain axis (Sclafani et al., 2016; Tan et al., 2020). In addition, free fatty acid receptor genes Ffar1 and Ffar4 were broadly expressed in several enteroendocrine cell lineages, but largely excluded from enterochromaffin cells (Figure 2B). Orthogonally, the toxin receptor gene Trpa1 was enriched in enterochromaffin cells (Bellono et al., 2017), but not abundantly expressed in other enteroendocrine cells (Figure 2B and D). Enterochromaffin cells also reportedly sense force through the mechanosensory ion channel PIEZO2 (Alcaino et al., 2018); Piezo2 transcript was not readily detected in our transcriptomic data, but is enriched in enteroendocrine cells from colon that we did not analyze (Billing et al., 2019; Treichel et al., 2022; Figure 2B). Thus, enteroendocrine cells often express multiple cell surface receptors, suggesting polymodal response properties, and some receptors are expressed by multiple enteroendocrine cell types.
 
-## Genetic access to subtypes of enteroendocrine cells
+### Genetic access to subtypes of enteroendocrine cells
 
 Next, we obtained genetic tools for selective access to each major enteroendocrine cell lineage. We chose several combinations of Cre and FlpO lines to achieve intersectional genetic access to different enteroendocrine cells based on the cell atlas. (1) Vil1-Cre; Pet1-FlpE (Pet1INTER) mice broadly target enterochromaffin cells, while (2) Tac1-ires2-Cre; Vil1-p2a-FlpO (Tac1INTER) and (3) Npy1r-Cre; Vil1-p2a-FlpO (Npy1rINTER) mice target different enterochromaffin cell subtypes. (4) Vil1-Cre; Sst-ires-FlpO, (5) Gip-Cre; Vil1-p2a-FlpO, (6) Cck-ires-Cre; Vil1-p2a-FlpO, and (7) Gcg-Cre; Vil1-p2a-FlpO mice respectively target D, K, I, and L cells (Figure 2D), and are herein referred to as SstINTER, GipINTER, CckINTER, and GcgINTER mice.
 
@@ -59,7 +79,27 @@ Hormone expression can be dynamic in individual enteroendocrine cells, and Cre/F
 
 Next, we assessed the spatial distribution of each enteroendocrine cell lineage along the proximal-distal axis in the duodenum, jejunum, ileum, colon, and rectum by quantifying the number of reporter-positive cells (Figure 3). PetINTER and SstINTER cells were most enriched in the duodenum and colon (Figure 3). SstINTER cells were the sparsest of enteroendocrine cell types, consistent with observations from scRNA-seq data (Figures 2A and 3). GipINTER cells and GcgINTER cells displayed strikingly distinct spatial patterns. GipINTER cells were enriched proximally, with almost no tdTomato+ cells observed in distal intestine. In contrast, GcgINTER cells were present along the entire proximal-distal axis and were enriched in colon and rectum. Thus, various enteroendocrine cell subtypes display distinct spatial distributions along the gastrointestinal tract.
 
-## Physiological responses to enteroendocrine cell activation
+![Figure 3.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig3-v2.jpg)
+
+**Figure 3.:** (Left) UMAP plots based on single-cell transcriptome data showing expression of indicated genes across the enteroendocrine cell atlas. (Middle) Number of cells expressing inter-tdTomato reporter in five 20 μm sections from intestinal regions of mice indicated, dots: individual animals, n: 2–4 mice, mean ± sem. (Right) Representative images of native tdTomato fluorescence in intestinal tissue from mouse lines indicated. Scale bars: 100 μm. See Figure 3—figure supplements 1–4.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Native tdTomato fluorescence was analyzed in cryosections (20 μm) of fixed tissues indicated. Tissue was obtained from mice expressing a single recombinase (single recombinase; Cre lines indicated including Sst-ires-Cre were crossed with lsl-tdTomato, while Pet1-FlpE was crossed with fsf-Gfp and images pseudocolored in red) or two recombinases (intersectional; Cre lines indicated crossed with Vil1-p2a-FlpO and inter-tdTomato while Pet1-FlpE and Sst-ires-FlpO were crossed with Vil1-Cre and inter-tdTomato). For Gcg-Cre mice, images are taken from the ileum rather than duodenum. Scale bars: 100 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Mouse lines indicated were crossed to inter-tdTomato and native reporter fluorescence was analyzed in wholemount tissue preparations from fixative-perfused mice, scale bars: 500 μm.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Two-color analysis examining expression of tdTomato (native fluorescence, magenta) and either neurotensin (NTS), CRE, or serotonin (immunochemistry, green) in fixed intestinal cryosections (20 μm) of mouse lines indicated. UMAP plots (bottom right) indicate gene expression in single-cell RNA sequencing data from enteroendocrine cells. (B) Native tdTomato fluorescence in fixed cryosections (20 μm) from the rectum of mouse lines indicated, scale bars: 100 μm.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Numbers of cells labeled by hormone-targeting antibodies across five 20 μm sections in different regions of intestine. n: 2–4 mice, mean ± sem. (B) Quantification of cells expressing both inter-tdTomato and hormones indicated shown as a percentage of all reporter-expressing cells (left) or all hormone-expressing cells (right), n: 2–4 mice (see source data for more information), mean ± sem. (C) Representative images of intestinal tissue harvested from mouse lines indicated and analyzed simultaneously for expression of tdTomato (native fluorescence, red) and hormones (immunohistochemistry, cyan), scale bars: 10 μm.
+
+### Physiological responses to enteroendocrine cell activation
 
 Direct study of enteroendocrine cell function has been challenging due to a lack of specific genetic tools. Hints come from Neurogenin3 point mutations in human infants or intestine-targeted Neurog3 knockout, which cause loss of enteroendocrine cells, severe malabsorptive diarrhea, and increased mortality (Mellitzer et al., 2010; Wang et al., 2006). We sought to develop cell type-specific genetic tools for enteroendocrine cell manipulation, reasoning that they might provide a specific approach to define the repertoire of evoked physiological and behavioral responses.
 
@@ -67,15 +107,31 @@ We first developed chemogenetic approaches for acute stimulation of all enteroen
 
 First, we examined the effect of global enteroendocrine cell activation on gut motility as assessed by movement of charcoal dye following oral gavage. Neurod1INTER; inter-hM3Dq-mCherry mice, Ptf1aINTER; inter-hM3Dq-mCherry mice, and control Cre-negative Vil1-p2a-FlpO; inter-hM3Dq-mCherry littermates were injected intraperitoneally (IP) with CNO (fed ad libitum, daytime). After 15 min, charcoal dye was administered, and after an additional 20 min, the gastrointestinal tract was harvested. Charcoal transit distance was calculated by genotype-blinded measurement of the charcoal dye leading edge. In control animals lacking DREADD expression, the leading edge of charcoal dye traversed part of the intestine (littermate controls lacking Neurod1-Cre: 22.6 ± 1.2 cm; littermate controls lacking Ptf1a-Cre: 22.8 ± 2.0 cm) (Figure 4, Figure 4—source data 1). Chemogenetic activation of all enteroendocrine cells in Neurod1INTER; inter-hM3Dq-mCherry mice accelerated gut transit, with the charcoal leading edge traversing 30.8 ± 1.5 cm of the intestine. When DREADD signaling was instead activated in all epithelial cells using Vil1-Cre; lsl-hM3Dq mice, gavaged dye failed to enter the intestine at all (Figure 4—figure supplement 1A). CNO-accelerated gut transit was not observed Ptf1aINTER; inter-hM3Dq-mCherry mice (22.6 ± 2.6 cm) containing DREADD expression only in pancreatic cells (Figure 4, Figure 4—figure supplement 1B and C). Based on these observations, the observed effects in Neurod1INTER; inter-hM3Dq-mCherry mice are due to enteroendocrine cells rather than pancreatic cells, and the net effect of activating all enteroendocrine cells is to promote gut transit.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig4-v2.jpg)
+
+**Figure 4.:** Mice of genotypes indicated were injected with CNO (IP, 3 mg/kg) and gavaged orally with charcoal dye. Intestinal tissue was harvested, and the distance between the pyloric sphincter and the charcoal dye leading edge was measured. Representative images (left) and quantification (right) of gut transit. Scale bars: 1 cm, circles: individual mice, n: 5–14 mice, mean ± sem, *p<0.05, **p<0.01 by a Mann–Whitney test with Holm–Šídák correction. See Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Mice indicated were injected with CNO (IP, 3 mg/kg), and gavaged orally with carmen red dye. Intestinal tissue was harvested and the distance between the pyloric sphincter and the dye leading edge measured. Representative images (left) and quantification (right) of gut transit, scale bar: 1 cm, circles: individual mice, n: 4–5 mice, mean ± sem, **p<0.01 by a Mann–Whitney test. (B) Native tdTomato fluorescence in fixed cryosections (20 μm) of tissues from mice indicated, scale bars: 100 μm. (C) Native reporter fluorescence was analyzed in wholemount tissue preparations indicated. Scale bars: 500 μm.
+
 Next, we examined the effects of activating different enteroendocrine cell subtypes on gut motility. We additionally generated (1) Pet1INTER; inter-hM3Dq-mCherry; (2) Tac1INTER; inter-hM3Dq-mCherry; (3) Npy1rINTER; inter-hM3Dq-mCherry; (4) SstINTER; inter-hM3Dq-mCherry; (5) GipINTER; inter-hM3Dq-mCherry; (6) CckINTER; inter-hM3Dq-mCherry; and (7) GcgINTER; inter-hM3Dq-mCherry mice, with Cre-negative FlpO-positive inter-hM3Dq-mCherry littermates serving as controls (Figure 4). As above, CNO was injected (IP) into ad libitum-fed animals followed by oral charcoal gavage. Pet1INTER cells promoted gut transit (Pet1INTER: 29.8 ± 1.6 cm, Cre-negative littermates: 22.1 ± 1.5 cm), while SstINTER and GipINTER cells had no significant effect (SstINTER: 24.5 ± 2.0 cm, Cre-negative littermates: 18.8 ± 1.6 cm; GipINTER: 23.2 ± 1.0 cm, Cre-negative littermates: 22.0 ± 1.8 cm). Interestingly, single-cell transcriptome data revealed multiple subtypes of enterochromaffin cells, and we observed accelerated gut transit upon chemogenetic activation of Tac1INTER cells (Tac1INTER: 36.2 ± 1.4 cm, Cre-negative littermates: 21.0 ± 1.1 cm) but not Npy1rINTER cells (Npy1rINTER: 21.8 ± 2.0 cm, Cre-negative littermates: 24.3 ± 2.1 cm). These findings raise the possibility that each enterochromaffin cell subtype may privately communicate with different downstream extrinsic and/or enteric neurons to control gut physiology. In contrast, CckINTER and GcgINTER cells slowed gut motility (CckINTER: 7.1 ± 0.3 cm, Cre-negative littermates: 21.5 ± 2.8 cm; GcgINTER: 7.9 ± 0.7 cm, Cre-negative littermates: 22.4 ± 1.9 cm). Ingested food slows gut motility to promote nutrient absorption, while ingested toxins may accelerate gut motility to purge luminal contents (Nozawa et al., 2009; Van Citters and Lin, 2006). Consistent with these findings, CCK and GLP1 are released by nutrients while serotonin signaling is required for certain toxin responses (Drucker, 2016; Gribble and Reimann, 2019). Simultaneous activation of both pathways, as done in Neurod1INTER; inter-hM3Dq-mCherry mice, masks the slowing of gut transit by CckINTER and GcgINTER cells. These findings suggest a hierarchy where neural circuits that mediate toxin responses may achieve priority over those that mediate nutrient responses, at least under conditions of equal and maximal activation. Altogether, we characterize enteroendocrine cell subtypes that have different and sometimes opposing effects on digestive system physiology.
 
-## Enteroendocrine cells that regulate feeding behavior
+### Enteroendocrine cells that regulate feeding behavior
 
 Next, we examined the effect of global enteroendocrine cell activation on feeding behavior. Fasted mice expressing DREADDs in all enteroendocrine cells (Neurod1INTER; inter-hM3Dq-mCherry) or in sparse pancreatic cells (Ptf1aINTER; inter-hM3Dq-mCherry), and their control littermates lacking Cre recombinase, were injected (IP) with CNO and given access to food for 2 hr at dark onset (Figure 5A). Animals lacking DREADD expression, or with sparse DREADD expression only in pancreas, ate robustly (~1 g of food over a 2 hr period). In contrast, CNO-induced activation of enteroendocrine cells caused a 26% reduction in food intake (Figure 5B, Figure 5—source data 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig5-v2.jpg)
+
+**Figure 5.:** (A) Timeline for behavioral assay. (B) Mice of genotypes indicated were fasted overnight, injected with CNO (IP, 3 mg/kg), and total food intake was measured during 2 hr ad libitum food access, circles: individual mice, n: 8–13 mice, mean ± sem, *p<0.05 by a Mann–Whitney test with Holm–Šídák correction. See Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/78512/elife-78512-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Mice of genotypes indicated were fasted overnight, injected with CNO (IP, 3 mg/kg), and total food intake was measured during 2 hr ad libitum food access, circles: individual mice, n: 4–7 mice, mean ± sem, *p<0.05 by a Mann–Whitney test with Holm–Šídák correction. (B) Effects of enteroendocrine cell activation on feeding behavior in ad libitum fed mice. Mice of genotypes indicated were injected with CNO (IP, 3 mg/kg), and total food intake was measured over 2 hr, circles: individual mice, n: 4–12 mice, mean ± sem, **p<0.01 by a Mann–Whitney tests with Holm–Šídák correction. (C) Analysis of CNO-evoked behavioral changes in genotypes indicated by a Comprehensive Lab Animal Monitoring System (CLAMS). CNO was injected 30 min prior to dark onset (dark: gray shading), n: 3–9 mice, mean ± sem, *p<0.05 by an ANCOVA (feeding, water intake) or ANOVA (distance traveled, respiratory exchange ratio or RER).
+
 To interrogate the roles of different enteroendocrine cell subtypes in feeding regulation, similar experiments were then performed in (1) Pet1INTER; inter-hM3Dq-mCherry; (2) Tac1INTER; inter-hM3Dq-mCherry; (3) Npy1rINTER; inter-hM3Dq-mCherry; (4) SstINTER; inter-hM3Dq-mCherry; (5) GipINTER; inter-hM3Dq-mCherry; (6) CckINTER; inter-hM3Dq-mCherry; and (7) GcgINTER; inter-hM3Dq-mCherry mice, with Cre-negative littermates again serving as controls. Chemogenetic activation of enterochromaffin cells reduced feeding behavior (Figure 5B, 52.1% reduction). Similar results were seen upon chemogenetic activation of Tac1 and Npy1r cells (Figure 5—figure supplement 1A, Tac1-ires2-Cre: 48.5% reduction, Npy1r-Cre: 79.6% reduction), but we note that these intersectional allele combinations also drove expression in taste cells and rectal epithelium, cell types that could also potentially drive changes in feeding behavior. In contrast, activation of SstINTER and GipINTER cells did not change feeding behavior (Figure 5B). Activating GcgINTER cells also reduced feeding (compared to Cre-negative littermates, GcgINTER: 52.4% reduction), but surprisingly, activating CckINTER cells lowered feeding only in fed but not fasted mice (Figure 5—figure supplement 1B, Figure 5—figure supplement 1—source data 1). This observation is likely due to Cck-ires-Cre and Gcg-Cre alleles targeting at least partially distinct populations of enteroendocrine cells. Chemogenetic activation of GcgINTER (single CNO injection) caused a durable reduction of feeding for several hours, with total food intake normalizing by 11 hr, and also evoked a decrease in water intake and the respiratory exchange ratio, but not locomotion (Figure 5—figure supplement 1C). For comparison, activating somatostatin cells reduced the respiratory exchange ratio but did not change feeding, water intake, or locomotion. Altogether, we find that some but not all enteroendocrine cells can regulate food intake, and can do so with varying efficacy.
 
-## Conclusion
+### Conclusion
 
 Here we developed a toolkit involving intersectional genetics for systematic access to each major enteroendocrine cell lineage (Figure 6A). We then used chemogenetic approaches to delineate major response pathways of the gut-brain axis (Figure 6B). Serotonin-producing enterochromaffin cells express the irritant receptor TRPA1 (Bellono et al., 2017) and chemogenetic activation blocks feeding behavior and promotes gut transit, presumably for toxin clearance. Furthermore, different enterochromaffin cell subtypes can have different effects on gut motility, suggesting at least partially nonoverlapping communication pathways with downstream neurons. These findings are consistent with a role for enterochromaffin cells in toxin-induced illness responses, and interestingly, pharmacological blockade of the serotonin receptor HTR3A is a clinical mainstay for nausea treatment (Freeman et al., 1992). Other enteroendocrine cell types, including those that produce CCK, GIP, GLP1, neurotensin, and somatostatin, express nutrient receptors yet elicit different physiological and behavioral responses. For example, GLP1 cells slow gut motility, presumably to promote nutrient absorption and decrease feeding behavior (Gribble and Reimann, 2019). Additional studies are needed to define gut-brain pathways that mediate nutrient reward, and why receptors for specific nutrients are expressed across a dispersed ensemble of enteroendocrine cells. Together, these experiments provide a highly selective method for accessing enteroendocrine cells in vivo and a direct measure of their various roles in behavior and digestive physiology.
 
@@ -85,31 +141,349 @@ Here we developed a toolkit involving intersectional genetics for systematic acc
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Atoh1-Cre knock-in</td>
+      <td>Yang et al., 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Pet1-FlpE</td>
+      <td>Jensen et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Ptf1a-Cre</td>
+      <td>Kawaguchi et al., 2002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Gip-Cre</td>
+      <td>Svendsen et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Atoh1-Cre transgenic</td>
+      <td>Jax 011104</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Neurog3-Cre</td>
+      <td>Jax 006333</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Neurod1-Cre</td>
+      <td>Jax 028364</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Sst-ires-Cre</td>
+      <td>Jax 013044</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Sst-ires-FlpO</td>
+      <td>Jax 028579</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Vil1-Cre</td>
+      <td>Jax 021504</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Gcg-Cre</td>
+      <td>Jax 030542</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Cck-ires-Cre</td>
+      <td>Jax 012706</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Nts-ires-Cre</td>
+      <td>Jax 017525</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Mc4r-t2a-Cre</td>
+      <td>Jax 030759</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Npy1r-Cre</td>
+      <td>Jax 030544</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Tac1-ires2-Cre</td>
+      <td>Jax 021877</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Rosa26CAG-lsl-tdTomato, Ai14 (lsl-tdTomato)</td>
+      <td>Jax 007914</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Rosa26CAG-lsl-fsf-tdTomato, Ai65 (inter-tdTomato)</td>
+      <td>Jax 021875</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Rosa26CAG-fsf-eGFP-FLEX-hM3Dq-mCherry, (inter-hM3Dq-mCherry)</td>
+      <td>Jax 026943</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>lsl-hM3Dq</td>
+      <td>Jax 026220</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>C57BL/6</td>
+      <td>Jax 000664</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus)</td>
+      <td>Vil1-p2a-FlpO</td>
+      <td>This paper</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium single-cell 3’ reagent kit v3</td>
+      <td>10X Genomics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>TrypLE express</td>
+      <td>Thermo Fisher 12604013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FBS</td>
+      <td>VWR10802-772</td>
+      <td></td>
+      <td>5%See ‘Single-cell RNA sequencing’</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DNase</td>
+      <td>Worthington Biochemical LK003172</td>
+      <td></td>
+      <td>100 U/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TO-PRO-3</td>
+      <td>Thermo Fisher T3605</td>
+      <td></td>
+      <td>1:10,000See ‘Single-cell RNA sequencing’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Calcein Violet</td>
+      <td>Thermo Fisher 65-0854-39</td>
+      <td></td>
+      <td>1:10,000See ‘Single-cell RNA sequencing’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Normal donkey serum</td>
+      <td>Jackson Immuno 017-000-121</td>
+      <td></td>
+      <td>5%See ‘Tissue histology’ section</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bovine serum albumin</td>
+      <td>Jackson Immuno 001-000-161</td>
+      <td></td>
+      <td>1%See ‘Tissue histology’</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI Fluoromount-G</td>
+      <td>Southern Biotech 0100-20</td>
+      <td></td>
+      <td>See ‘Tissue histology’</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CCK (rabbit polyclonal)</td>
+      <td>Abcam ab27441</td>
+      <td></td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CRE (rabbit polyclonal)</td>
+      <td>Cell Signaling 15036</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GLP1 (rabbit polyclonal)</td>
+      <td>Novus 2622B MAB10473</td>
+      <td></td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NTS (rabbit polyclonal)</td>
+      <td>Immunostar 20072</td>
+      <td></td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SST (rabbit polyclonal)</td>
+      <td>Novus 906552 MAB2358</td>
+      <td></td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-5HT (goat polyclonal)</td>
+      <td>Abcam ab66047</td>
+      <td></td>
+      <td>1:2000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit Alexa488</td>
+      <td>Jackson Immuno 711-545-152</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit AlexaCy3</td>
+      <td>Jackson Immuno 711-165-152</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit AlexaCy5</td>
+      <td>Jackson Immuno 711-175-152</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-rabbit Alexa680</td>
+      <td>Thermo Fisher A32802</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Donkey anti-goat Alexa488</td>
+      <td>Jackson Immuno 705-545-147</td>
+      <td></td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Clozapine N-oxide dihydrochloride</td>
+      <td>Fisher ScientificTocris 6329/10</td>
+      <td></td>
+      <td>3 mg/kg</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All animal husbandry and procedures were performed in compliance with institutional animal care and use committee guidelines. All animal husbandry and procedures followed the ethical guidelines outlined in the NIH Guide for the Care and Use of Laboratory Animals (https://grants.nih.gov/grants/olaw/guide-for-the-care-and-use-of-laboratory-animals.pdf), and all protocols were approved by the institutional animal care and use committee (IACUC) at Harvard Medical School (protocol #04424). Atoh1-Cre knock-in (Yang et al., 2010), Pet1-FlpE (Jensen et al., 2008), Ptf1a-Cre (Kawaguchi et al., 2002), and Gip-Cre (Svendsen et al., 2016) mice were described before; Atoh1-Cre transgenic (011104), Neurog3-Cre (006333), Neurod1-Cre (028364), Sst-ires-Cre (013044), Sst-ires-FlpO (028579), Vil1-Cre (021504), Gcg-Cre (030542), Cck-ires-Cre (012706), Nts-ires-Cre (017525), Mc4r-t2a-Cre (030759), Npy1r-Cre (030544), Tac1-ires2-Cre (021877), lsl-tdTomato (Ai14, Rosa26CAG-lsl-tdTomato, 007914), inter-tdTomato (Ai65, Rosa26CAG-lsl-fsf-tdTomato, 021875), inter-hM3Dq-mCherry (Rosa26CAG-fsf-eGFP-FLEX-hM3Dq-mCherry, 026943), lsl-hM3Dq (026220), and C57BL/6 (000664) mice were purchased (Jackson Laboratory). Both male and female mice between 8 and 24 weeks old were used for all studies, and no differences based on sex were observed. All mice were maintained in the C57BL/6 genetic background. Mouse breeding involved paternal Cre alleles, paternal Flp alleles, and/or maternal effector genes. Vil1-Cre produced occasional germline recombination of loxP sites that resulted in ectopic inter-hM3Dq-mCherry gene expression; mice with such ectopic expression were excluded based on genotyping of reporter allele DNA extracted from ear tissue with primer 1 (stop cassette forward): atgtctggatctgacatggtaa; primer 2 (hM3Dq cassette reverse): tctggagaggagaaattgcca; primer 3 (GFP cassette reverse): ttgaagtcgatgcccttcag; intact allele: ~490 bp, recombined allele: ~290 bp. Vil1-p2a-FlpO mice were generated by CRISPR-guided approaches at Boston Children’s Hospital Mouse Gene Manipulation Core. Cas9 protein, CRISPR sgRNAs (targeting the stop codon of Vil1 locus), and an ssDNA (containing a p2a-FlpO cassette with 150 bp homology arms) were injected into the pronucleus of C57BL/6 embryos. Founder mice were screened by allele specific PCR analysis with primers flanking the 5′ junction (primer 1: aacagaagttccttaaacaagcca; primer 2: aacaggaactggtacagggtcttg; ~930 bp), FlpO internally (primer 1: acaagggcaacagccaca; primer 2: tcagatccgcctgttgatgt; ~830 bp), and the 3′ junction (primer 1: accccctggtgtacctgga; primer 2: tagccctcccttttgagtgtga; ~840 bp), followed by Sanger sequencing to validate the allele. Selected Vil1-p2a-FlpO founder mice were viable, fertile, and back crossed to C57BL/6 mice for at least three generations.
 
-## Single-cell RNA sequencing
+### Single-cell RNA sequencing
 
 Enteroendocrine cells were acutely harvested using a protocol modified from previous publications (Haber et al., 2017; Sato et al., 2009). Intestinal tissue was obtained from Neurog3-Cre; lsl-tdTomato mice (one adult male), or Neurod1-Cre; lsl-tdTomato (three adult females), cut longitudinally, washed (cold phosphate-buffered saline [PBS]), cut into small ~5 mm pieces, and incubated (gentle agitation, 20 min, 4°C) in EDTA solution (20 mM EDTA-PBS, Ca/Mg-free) in LoBind Protein tubes (Eppendorf 0030122216). The specimen was shaken, the tissue allowed to settle, and the supernatants collected. The residual tissue was again incubated similarly with EDTA solution, and supernatants were combined, and centrifuged (300 × g, 5 min, 4°C) Pellets were washed (2×, PBS [Ca/Mg-free] supplemented with 5% fetal bovine serum [FBS], 4°C) and incubated (37°C, 2 min) in protease solution (TrypLE express, Thermo Fisher 12604013) supplemented with DNase (100 U/ml, Worthington Biochemical LK003172). The suspension containing dissociated cells was centrifuged (300 × g, 5 min), washed (2×, PBS [Ca/Mg-free] containing 5% FBS, 4°C) The resulting pellet was resuspended in FACS buffer (5% FBS in DMEM/F12, HEPES, no phenol red) containing DNase (100 U/ml), TO-PRO-3 (Thermo Fisher T3605, 1:10,000) to label dead cells, and Calcein Violet (Thermo Fisher 65-0854-39, 1:10,000) to label living cells. Cells were filtered (1 × 70 um, 1 × 40 um) and tdTomato+, Calcein Violet+, TO-PRO-3- cells were collected by fluorescence activated cell sorting using a FACS Aria (BD Biosciences). Collected cells were then loaded into the 10X Genomics Chromium Controller, and cDNA prepared and amplified according to manufacturer’s protocol (10X Genomics, Chromium single-cell 3′ reagent kit v3, 12 cycles per amplification step). The resulting cDNA was sequenced on a NextSeq 500 at the Harvard Medical School Biopolymers Facility. Sequence reads were aligned to the mm39 mouse transcriptome reference, and feature barcode matrices were generated using 10X Genomics CellRanger. Unique transcript (UMI) count matrices were analyzed in R v4.1.1 using Seurat v4.0.5 (Beutler et al., 2017; Satija et al., 2015). The cell barcodes were filtered, removing cells with a high number of UMIs (>125,000) or high percentage of mitochondrial genes (>25%). The filtered UMI count matrix was transformed using SCTransform (Hafemeister and Satija, 2019). Transformed matrices from Neurog3 and Neurod1 samples were integrated (nFeature = 3000), and integrated matrices used for cluster identification and UMAP projections. Additional clusters of low-quality cells (defined by low-average UMI counts and low-average feature counts across the cluster) were removed. To examine the diversity among enteroendocrine cells, cell barcodes belonging to enteroendocrine cells from Neurog3 and Neurod1 samples were identified and reanalyzed separately. Matrices of enteroendocrine cells from Neurog3 and Neurod1 samples were transformed and integrated (nFeature = 3000). Differential gene expression (Wilcoxon ranked-sum test) was conducted on UMI counts matrices that were log normalized and scaled. Seurat’s BuildClusterTree function was used to spatially arrange clusters based on relative similarity in gene expression. Two serotonergic clusters were merged post hoc (to become cluster EC_3) due to the absence of any single signature gene that effectively distinguished them. Gene expression data in all UMAP plots is shown as a natural log of normalized UMI counts. Further details and full parameters of analysis will be provided on GitHub upon publication: https://github.com/jakaye/EEC_scRNA, copy archived at (Hayashi, 2023).
 
-## Tissue histology
+### Tissue histology
 
 For histology, mice were perfused intracardially with PBS and then fixative (4% paraformaldehyde/PBS). Intestinal regions and other organs were dissected (duodenum: first 2 cm after the pyloric sphincter, jejunum: middle 2 cm, ileum: last 2 cm before the cecum, colon: first 2 cm after the cecum, and rectum: last 2 cm accessible via the pelvic cavity) and postfixed (1–2 hr, 4°C). Samples were then incubated in 30% sucrose/PBS (overnight, 4°C), embedded in Tissue-Tek OCT, frozen, cryosectioned, and placed on glass slides. Slides were incubated with primary antibodies at dilutions indicated below (overnight, 4°C, PBS supplemented with 0.05% Tween20, 0.1% TritonX, and either 5% normal donkey serum or 1% BSA) and then with fluorophore-conjugated secondary antibodies (1:500, 2 hr, RT). Sections were mounted (DAPI Fluoromount-G, Southern Biotech 0100-20), coverslipped, and imaged using a Nikon A1R confocal microscope, an Olympus FV1000 confocal microscope, or a Zeiss Axiozoom V16 fluorescent stereoscope. Microscope images are presented as z-projections. Quantification of tdTomato expression and antibody staining was performed manually using a Nikon Ti2 inverted microscope. Antibodies were rabbit anti-CCK (Abcam ab27441, 1:1000), rabbit anti-CRE (Cell Signaling 15036, 1:500), rabbit anti-GLP1 (Novus 2622B MAB10473, 1:2000), rabbit anti-NTS (Immunostar 20072, 1:2000), rabbit anti-SST (Novus 906552 MAB2358, 1:1000), goat anti-5HT (Abcam ab66047, 1:2000), donkey anti-rabbit Alexa488, Cy3, Cy5, Alexa680 (Jackson Immuno Research, Thermo Fisher, 1:500), donkey anti-goat Alexa488 (Jackson Immuno Research, 1:500).
 
-## Gut transit measurements
+### Gut transit measurements
 
 DREADD-expressing and control animals (ad libitum fed) were injected with CNO (3 mg/kg, IP). After 15 min, charcoal dye (200 μl, 10% activated charcoal, 10% gum Arabic in water), or for Figure 4—figure supplement 1, carmen red dye (200 μl, 6% carmen red, 0.5% methyl cellulose in water), was gavaged orally, and 20 min later, mice were euthanized and the gastrointestinal tract was harvested. The distance between the pyloric sphincter and the charcoal dye leading edge was measured by an observer blind to animal genotype. All animals were naive to CNO exposure, except for some Gip-Cre mice due to limited availability of mice.
 
-## Feeding measurements
+### Feeding measurements
 
 Experimental mice were individually housed for 3 days and habituated to feeding from a ceramic bowl. Animals were either fed ad libitum or fasted for the last 20–22 hr in a new clean cage with some bedding material from the previous cage. CNO was injected (3 mg/kg, IP), and food pellets presented 15 min later at the onset of darkness. Food intake was measured over the course of 2 hr by weighing the amount of residual food, with genotypes revealed post hoc to achieve a genotype-blinded analysis. Studies involved fasted mice that were naive to prior CNO exposure or fed mice that were either naive to CNO or acclimated for at least a week after prior CNO exposure.
 
-## Body composition and indirect calorimetry
+### Body composition and indirect calorimetry
 
 Body composition (lean mass and fat mass) was first analyzed for each experimental group with a 3-in-1 Echo MRI Composition Analyzer (Echo Medical Systems, Houston, TX), and no significant differences were observed. Animals were then placed in a Sable Systems Promethion indirect calorimeter maintained at 23°C ± 0.2°C. Mice were singly housed in metabolic cages with corn cob bedding and ad libitum access to Labdiet 5008 chow (56.8/16.5/26.6 carbohydrate/fat/protein). After 18 hr, all mice were injected with PBS (IP) for acclimatation to handling and mild injection stress. The following day, mice were injected with CNO (3 mg/kg, IP) approximately 30 min before dark onset. Animals were then analyzed for food and water consumption, body weight, distance traveled, and respiratory exchange ratio. Statistical analysis was performed with CalR (Mina et al., 2018).
 
-## Statistical analysis
+### Statistical analysis
 
 Graphs represent data as mean ± sem, as indicated in figure legends. All data points were derived from different mice except some mice in Figure 4 (Gip-Cre; Vil1-p2a-FlpO; inter-hM3Dq-mCherry mice) were previously used in feeding assays and some mice in Figure 5—figure supplement 1 (Ptf1a-Cre; Vil1-p2a-FlpO; inter-hM3Dq-mCherry: 21/21 mice, Cck-ires-Cre; Vil1-p2a-FlpO; inter-hM3Dq-mCherry: 7/19 mice, Gip-Cre; Vil1-p2a-FlpO; inter-hM3Dq-mCherry: 10/10 mice, and Vil1-Cre; Sst-ires-FlpO; inter-hM3Dq-mCherry: 9/16 mice) were previously used in prior feeding assays for Figure 5. When mice were reused, they were acclimated for at least a week after prior CNO exposure.
 
@@ -117,14 +491,14 @@ Sample sizes (from left to right): Figure 3 (Pet1: 4, 4, 3, 3, 3; Sst: 4, 4, 3, 
 
 Statistical significance was measured using a Mann–Whitney test with Holm–Šídák correction on Prism 9 (GraphPad) for Figure 4, Figure 5, and Figure 5—figure supplement 1A and B, a Mann–Whitney test on Prism 9 (GraphPad) for Figure 4—figure supplement 1A, and ANCOVA and ANOVA on CalR for Figure 5—figure supplement 1C (Mina et al., 2018).
 
-## Source data
+### Source data
 
 The source data Excel file contains raw numerical data used for all bar graphs and statistical analyses. Single-cell transcriptome data is available with a GEO GSE accession number GSE224223.
 
-## Materials availability statement
+### Materials availability statement
 
 Vil1-p2a-FlpO mice will be deposited in Jackson Laboratory and made generally available upon reasonable request.
 
-## Declaration of interest
+### Declaration of interest
 
 SDL and FMG are consultants for Kallyope, Inc.

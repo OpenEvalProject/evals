@@ -35,33 +35,53 @@ Observers wore the red glasses for five 1-hr periods, each separated by 1 hr wit
 
 On each day, observers were tested in two sessions, once in the morning and once in the afternoon, for 5 days in a row. In each session, they performed: 1 test before putting on the glasses; 5 tests with the glasses on; and 4 tests after removing the glasses. During each test, observers made unique yellow settings for five 1-min blocks. Within each block, observers set as many matches as they could. Each datapoint in Figures 2–5 represents the average settings across a 5-min test. The tests were all conducted in a fully lit lab room in order to provide information about the visual environment present. In a follow-up, conducted about 1 month after the main experiment, observers participated in one additional and identical testing session.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/61179/elife-61179-fig2-v1.jpg)
+
+**Figure 2.:** Mean unique yellow settings represented in hue angle are plotted as a function of time for 5 days and the follow-up test. The black dots are baseline settings, made at the beginning of each test session with glasses off. The white background indicates morning sessions, and the light gray background indicates afternoon. The red dots plot settings with glasses on and the green dots are settings after removing the glasses. Successive symbols are plotted for each 5-min test (see Figure 1C). The gray bars represent standard errors of the mean, computed across participants (N = 11).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61179/elife-61179-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Mean unique yellow settings represented in hue angle are plotted as a function of time for 5 days and the follow-up test. Data were normalized by subtracting the baseline value for each morning test session, taken immediately before putting the glasses on in the morning. The black dots are baseline settings, made at the beginning of each test session with glasses off. The white background indicates morning sessions, and the light gray background indicates afternoon. The red dots plot settings with glasses on and the green dots are settings after removing the glasses. Successive symbols are plotted for each 5-min test. The gray bars represent standard errors of the mean, computed across participants (N = 11). These baseline-corrected results showed an identical overall pattern across days as the uncorrected data, though some effects became slightly larger.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61179/elife-61179-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Morning and afternoon sessions within a day were averaged. The upper section of the figure shows unique yellow settings made with the glasses off. The black dots are baseline settings made immediately before putting on the glasses. The lower section of the figure shows unique yellow settings made with glasses on. Each dot in this figure represents the mean setting of a 1-min block, and five connected dots show the five blocks of each test. The first matches from tests two to five with glasses on in each session were influenced by the transition to the test display after breaks, and so were excluded when calculating the means. This did not affect the overall pattern of the results. Note that there were different amounts of time between the tests (See Figure 1C), during which observers were viewing uncontrolled stimuli, so one cannot simply connect the lines to get accurate adaptation and deadaptation time courses.
+
 ## Results
 
 The world appeared very reddish when observers first put on the glasses, and the redness faded over time as vision adapted. Figure 2 plots mean unique yellow settings (quantified as hue angle, see Materials and methods) as a function of time, averaging across 11 observers, for the 5 days. The relatively small number (around 220) on the very first test with glasses on (red dots) indicates that observers’ unique yellow was physically relatively green, which was required to cancel the redness produced by the glasses. The upward slope of each session’s 5 settings shows that observers added less green to unique yellow over time, adapting to the red environment during the 1 hr of wearing the glasses, with the world looking less and less red. This pattern can be seen both in the morning (with white background in Figure 2) and the afternoon (with light gray background) session on all 5 days.
 
-## Adjusting to the glasses became faster and stronger
+### Adjusting to the glasses became faster and stronger
 
-Across days, observers learned to rapidly adjust to the red glasses. That is, when they first put the glasses on, the world appeared less and less reddish. This is visible in the graph by the rising trend of the first unique yellow setting in each session across days. A linear trend analysis (Figure 3 red dots) showed that this increase was reliable (yt=4.06t−76.7+et, 95% CI [2.91, 5.21], t = 6.87, p <0.0001). A number of different mechanisms could account for this empirical observation (see Discussion) but the changes were not due to lingering overall adaptation across days, as baseline measurements made before putting the glasses on showed a very different trend (see below).
+Across days, observers learned to rapidly adjust to the red glasses. That is, when they first put the glasses on, the world appeared less and less reddish. This is visible in the graph by the rising trend of the first unique yellow setting in each session across days. A linear trend analysis (Figure 3 red dots) showed that this increase was reliable ($y_{t}=4.06t−76.7+e_{t}, 95% CI [2.91, 5.21]$, t = 6.87, p <0.0001). A number of different mechanisms could account for this empirical observation (see Discussion) but the changes were not due to lingering overall adaptation across days, as baseline measurements made before putting the glasses on showed a very different trend (see below).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/61179/elife-61179-fig3-v1.jpg)
+
+**Figure 3.:** Red dots show rapid adjustments, computed as mean settings from the first 5-min test of each session with the glasses on. Total adaptation effects, denoted by the pink dots, are mean settings from the test taken after 1hr of wearing the glasses. Green dots are mean settings of the first 5-min test after removing the glasses. Data have been corrected for possible baseline shifts by subtracting the baseline value for each morning session, taken immediately before putting the glasses on. The black dashed lines are linear fits to the rapid adjustment, total adaptation, and the aftereffect. Both rapid adjustment and total adaptation effect grew significantly over days, and there was a trend for aftereffects to decrease across day.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61179/elife-61179-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Red dots in the left scatter plot show rapid adjustment computed as the first match with the glasses on in each session. The black dashed line is the least-square fit; the rapid effects shifted significantly across days (p < 0.01). The red dots in the right scatter plot show rapid adjustment computed as the average of the first 1 min block of each session with the glasses on. The black dashed line is the least-square fit. The rapid effects shifted significantly across days (p < 0.001).
 
 How rapidly did this effect arise? Each datapoint in Figures 2 and 3 represents mean unique yellow settings averaged across the five 1-min blocks that comprised each test. To better judge the timing of effects, we repeated our analysis using observers’ averaged settings within only the first 1-min block. We also repeated the analysis using observers’ very first unique yellow setting in the first block. In both cases, unique yellow after donning the glasses again shifted significantly across days (t = 6.72, p<0.001 for the first block; t = 4.11, p<0.01 for the first setting), suggesting observers adjusted to the red glasses relatively quickly (Figure 3—figure supplement 1; Figure 2—figure supplement 2 shows the complete time course of our results as a function of 1-min blocks. We did not have priori expectations about the subtle trends from block to block, and so leave their examination to future work).
 
-The amount of gradual adaptation to the red glasses during the 1 hr of testing, on the other hand, did not change across days. To estimate this quantity, we calculated the slope of the unique yellow settings within each 1 hr session. The grand average slope was 13.30° of hue angle toward red per hour, and there were no significant changes in slopes across test sessions (ANOVA, F9,100 = 1.06, p=0.40). Given the increasing rapid and constant gradual effects, it is not surprising that total adaptation, the sum of the rapid and the gradual effects, quantified by the last setting with glasses on in each session, also increased across days (yt=3.55t−60.6+et, 95% CI [2.14, 4.96], t = 3.68, p < 0.01, Figure 3, pink dots).
+The amount of gradual adaptation to the red glasses during the 1 hr of testing, on the other hand, did not change across days. To estimate this quantity, we calculated the slope of the unique yellow settings within each 1 hr session. The grand average slope was 13.30° of hue angle toward red per hour, and there were no significant changes in slopes across test sessions (ANOVA, F9,100 = 1.06, p=0.40). Given the increasing rapid and constant gradual effects, it is not surprising that total adaptation, the sum of the rapid and the gradual effects, quantified by the last setting with glasses on in each session, also increased across days ($y_{t}=3.55t−60.6+e_{t}$, $95% CI [2.14, 4.96]$, t = 3.68, p < 0.01, Figure 3, pink dots).
 
-## Learned mode switching was long-lasting
+### Learned mode switching was long-lasting
 
 About 1 month (36 ± 7 days) after the main experiment, observers returned for a follow-up test. (Figure 2, right). Rapid adjustment to the glasses remained strong; the first test of unique yellow settings was redder than the settings from the first day of the main experiment (t = −4.83, p<0.001). However, the effect was somewhat diminished, as the follow-up settings were greener than those made on day 5 of the main experiment (t = 3.28, p<0.01). About 66% of the change across the 5 days was maintained in the follow-up test.
 
-## A trend for color aftereffect to change across days
+### A trend for color aftereffect to change across days
 
 When observers removed the red glasses, they experienced a classical color aftereffect (von Helmholtz, 1924; Krauskopf and Gegenfurtner, 1992; van Lier et al., 2009), and reported the world looked slightly greenish, thus they added red to cancel out this aftereffect when making their unique yellow settings (Figure 2, green dots). There was a trend for the immediate aftereffect to become less strong across days, evident in the analyses of the first 5-min test, the first 1-min block, and the first individual match setting (all p<0.1 and p>0.05; Figure 3 green dots show the means of the first 5-min tests). We tracked the further decay of the aftereffect for half an hour after removing the glasses, as observers’ settings shifted back toward baseline. The decay followed a roughly exponential shape, as previously reported for color aftereffects (Fairchild and Lennie, 1992; Fairchild and Reniff, 1995; Wright and Parsons, 1934). The decay constant, as measured by an exponential fit, did not change over days (F9,96 = 0.01, p=1).
 
-## Baseline unique yellow became slightly greener across days
+### Baseline unique yellow became slightly greener across days
 
-Baseline values of unique yellow on each day were measured as the mean setting from the first 5-min test of the morning session, made before putting the glasses on; these settings were preceded by many hours (averaging approximately 15) without glasses wear, and were made without the glasses on. We observed a small but significant shift in baseline unique yellow settings over time, visible in Figure 2 (black dots) as the hue angle of baseline shifting toward green (yt=−0.94t+298.3+et, 95% CI [−1.30, −0.58], t = −3.33, p < 0.01). This is surprising because adapting to the red glasses makes redness more neutral over time, thus resulting in redder unique yellow (see Discussion).
+Baseline values of unique yellow on each day were measured as the mean setting from the first 5-min test of the morning session, made before putting the glasses on; these settings were preceded by many hours (averaging approximately 15) without glasses wear, and were made without the glasses on. We observed a small but significant shift in baseline unique yellow settings over time, visible in Figure 2 (black dots) as the hue angle of baseline shifting toward green ($y_{t}=−0.94t+298.3+e_{t}, 95% CI [−1.30, −0.58]$, t = −3.33, p < 0.01). This is surprising because adapting to the red glasses makes redness more neutral over time, thus resulting in redder unique yellow (see Discussion).
 
 To make sure our main finding of greater rapid adaptation did not depend upon this shift in baseline, we corrected its effect by subtracting the baseline setting in the morning test session on each day from all settings within the day. These baseline-corrected results showed a very similar overall pattern across days as the uncorrected data, although some effects became slightly larger (Figure 2—figure supplement 1).
 
-## Color constancy increased across days
+### Color constancy increased across days
 
 Color constancy, an important benefit of adaptation, is the extent to which objects appear the same color despite changes in viewing conditions (e.g. Brainard and Radonjić, 2014; Foster, 2011; Witzel and Gegenfurtner, 2018). Such stability against transient features of the environment allows color appearance to provide reliable information about object identity and state (e.g. the ripeness of an apple).
 
@@ -75,17 +95,17 @@ Figure 4 plots our results using this metric and shows that color constancy impr
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/61179/elife-61179-fig4-v1.jpg)
 
-**Figure 4.:** The red symbols show the relative gain of L and M cones (k = L/M, see text) for settings with glasses on, corrected for the red glasses transmittance. The black dots are baseline settings taken at the beginning of each test session with glasses off. If the observers showed complete absence of color constancy, the unique yellow settings with glasses on should have been at the same level as this baseline. The red dashed line above corresponds to the baseline unique yellow corrected for the red glasses’ transmittance. If observers had perfect color constancy, their settings would produce identical physical colors on the monitor with and without glasses, and so should fall here when glasses were worn.Figure 4—source data 1.Figure 4 data.
+**Figure 4.:** The red symbols show the relative gain of L and M cones (k = L/M, see text) for settings with glasses on, corrected for the red glasses transmittance. The black dots are baseline settings taken at the beginning of each test session with glasses off. If the observers showed complete absence of color constancy, the unique yellow settings with glasses on should have been at the same level as this baseline. The red dashed line above corresponds to the baseline unique yellow corrected for the red glasses’ transmittance. If observers had perfect color constancy, their settings would produce identical physical colors on the monitor with and without glasses, and so should fall here when glasses were worn.
 
 Across days, observers’ unique yellow settings (red dots) steadily rose toward the perfect color constancy line, indicating that color constancy improved. The very first time they put on the glasses, observers showed about 68% of perfect constancy, as calculated by the ratio between (1) the Euclidean distance between baseline and the first unique yellow setting with glasses on and (2) the distance between baseline and perfect constancy. This pre-existing constancy was presumably due to the rapid adaptation that produces the color constancy we experience in most situations (e.g. Rinner and Gegenfurtner, 2000; Smithson and Zaidi, 2004; Webster and Mollon, 1995). The amount of constancy grew significantly as observers learned to immediately adjust to the red glasses (t = 4.60, p<0.001), and exceeded 80% on the 5th day.
 
-## Individual differences in learning
+### Individual differences in learning
 
 Figure 5 plots changes in adaptation for individual observers. Some observers showed a large increase in the amount of rapid adjustment over 5 days (sample single observer shown in upper panel in Figure 5A, gray circle in Figure 5B), while others demonstrated a flatter pattern (lower panel in Figure 5A, black circle in Figure 5B). To test if the individual differences were statistically reliable, we computed the Pearson correlation between the changes in rapid adjustment from the first day to the fifth day, and the changes from the first day to the follow-up test. This correlation was significant (r = 0.81, p=0.003, Figure 5B), indicating that observers who had a larger learning effect over 5 days also retained larger amounts a month later, a form of test-retest reliability. Thus, individuals appear to differ in their ability to learn to rapidly switch visual modes.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/61179/elife-61179-fig5-v1.jpg)
 
-**Figure 5.:** (A) Complete time courses for twoobservers. One observer (upper panel) showed a gradual increase of rapid adjustment during the 5 days. This observer also retained the stronger rapid adjustment in the follow-up test. Another observer (lower panel), showed a flatter pattern across days and little effect of learning in the follow-up test. (B) Test-retest reliability of individual differences. The change in rapid adjustment to the glasses (relative to the 1st day) measured on the 5th day significantly correlated with the change measured in follow-up test, across observers. This indicates observers differed in their ability to learn to rapidly switch visual modes. Red dots represent observers and the dashed line is the least-square fit. The light gray and black circles denote the individuals plotted in the upper and lower portion of panel A, respectively.Figure 5—source data 1.Figure 5 data.
+**Figure 5.:** (A) Complete time courses for twoobservers. One observer (upper panel) showed a gradual increase of rapid adjustment during the 5 days. This observer also retained the stronger rapid adjustment in the follow-up test. Another observer (lower panel), showed a flatter pattern across days and little effect of learning in the follow-up test. (B) Test-retest reliability of individual differences. The change in rapid adjustment to the glasses (relative to the 1st day) measured on the 5th day significantly correlated with the change measured in follow-up test, across observers. This indicates observers differed in their ability to learn to rapidly switch visual modes. Red dots represent observers and the dashed line is the least-square fit. The light gray and black circles denote the individuals plotted in the upper and lower portion of panel A, respectively.
 
 ## Discussion
 
@@ -93,7 +113,7 @@ Through experience, observers learned to rapidly adjust to the red glasses, with
 
 In situations where different visual environments alternate frequently, like wearing and removing glasses, the visual system repeatedly readjusts itself. Our results suggest that observers can learn to make the adjustments more efficiently over time, to the point where they can adjust almost immediately upon entering the new environment. Such visual mode switching should enable people to better handle the demands of the complex and changing visual world.
 
-## Relation to prior work
+### Relation to prior work
 
 It is well accepted that color adaptation has a ‘fast’ and a ‘slow’ mechanism and involves both receptoral and postreceptoral visual processes (e.g. Augenstein and Pugh, 1977; Fairchild and Reniff, 1995; Rinner and Gegenfurtner, 2000). One plausible interpretation of our results depends on these well-studied mechanisms; it is possible that through practice a fast adaptation mechanism became able to produce stronger and more rapid effects. In the motor-learning literature, this possibility has been termed ‘meta-learning’ because it affects parameters that govern the rate of adaptation, itself a kind of learning (e.g. Zarahn et al., 2008). Other alternative mechanisms are possible, however, including storage, and retrieval of adapted states (e.g. Lee and Schweighofer, 2009). Future work will explore these and other possibilities (see also below).
 
@@ -105,7 +125,7 @@ Past work on long-term adaptation to colored environments, for example wearing 
 
 These past results were also highly variable, both within and between studies (Belmore and Shevell, 2008; Belmore and Shevell, 2011; Eisner and Enoch, 1982; Eskew and Richters, 2008; Hill and Stevenson, 1976; Kohler, 1963; Neitz et al., 2002; Tregillus et al., 2016), similar to the inconsistency in prior results on mode switching. One reason for this variability may be that observers were tested with little context present. For example, most tests were made in a completely darkened room, presenting only a single small test patch, making it difficult for the visual system to determine viewing conditions, and hence the appropriate adaptive state. The test setting in our experiment provided many cues that the visual system could use to tell which environment was present, that is whether the red glasses were on or off. These context cues may be necessary for mode switching to occur, although precisely which cues are important for which environments remains to be determined.
 
-## Other results from present work
+### Other results from present work
 
 Unexpectedly, we found that the baseline unique yellow setting, made immediately prior to the introduction of the red glasses each morning, shifted toward physically more greenish across days. The shift was in the opposite direction from the color that the glasses produced and from the shift of the adaptation effect within 1 hr. A similar trend in baseline settings was also found in two previous studies (Engel et al., 2016; Tregillus et al., 2016). While we can only speculate as to the cause of this pattern, it could be due to the aftereffect following the glasses’ removal. At that point, observers' judgments indicated that the world looked greenish to them, consistent with classical color aftereffects (von Helmholtz, 1924; Krauskopf and Gegenfurtner, 1992; van Lier et al., 2009). Adaptation across days to this greenish tint could have produced a shift in unique yellow toward green when not wearing the glasses. Long-term adaptation to aftereffects appears to be possible in other domains (Murch and Hirsch, 1972; Sheth and Shimojo, 2008).
 
@@ -113,13 +133,13 @@ The strengthened rapid adaptation we observed substantially improved observers�
 
 Relatedly, the aftereffect measured immediately upon removing the red glasses shifted toward the baseline across days, implying a faster readjustment to familiar, natural conditions over time. However, this trend was relatively small, of only modest statistical reliability, and could be specific to switches from the unnatural red-glasses conditions. The small size of the effect, if real, could be because observers have already partly learned to rapidly adjust to the natural environment, which remains controversial, as mentioned above.
 
-## Mechanisms producing more rapid adjustment
+### Mechanisms producing more rapid adjustment
 
 Neurally, adaptation to changes in the dominant color has effects on several sites within the retina (Boynton and Whitten, 1970; Lee et al., 1999; Rieke and Rudd, 2009) as well as cortical stages of color processing (e.g. Engel and Furmanski, 2001; Rinner and Gegenfurtner, 2000). One hint toward the neural locus of change in our experiment is that behavioral changes across days were not observed in adaptation within the hour of glasses wearing. This independence from classical adaptation, which partly arises early in the visual system, suggests that mode switching may arise relatively late in processing (Rinner and Gegenfurtner, 2000). Identifying more precisely the extent to which learning can affect these different stages of processing could be profitably addressed in the future.
 
 Computationally, one can view adaptation as the result of an inference process, in which the visual system must determine whether the visual environment has changed (Grzywacz and de Juan, 2003; Kording et al., 2007; Wark et al., 2009). Through exposure to the alternating colored and uncolored environment, observers in our experiment may have learned: (1) that the red environment was more likely (i.e. it had higher prior probability); (2) to more efficiently extract evidence of the red environment (giving it a higher likelihood); (3) that the red environment was likely to persist for a long time (making it costly to not adapt); (4) to speed inference by remembering, rather than re-inferring, the past adaptive state for the red environment. All these possibilities could produce stronger immediate adjustment, and they are not mutually exclusive. Future work could determine which factors are responsible for the changes in rapid adjustment across days.
 
-## Individual differences
+### Individual differences
 
 What are the sources of individual differences in the ability to learn to rapidly switch between the two states? Past work has shown that observers may display very different amounts of experimentally measured color constancy, depending upon whether they were asked to make judgments of surface reflectance or of reflected light (Arend and Reeves, 1986; Arend and Goldstein, 1987; Radonjić and Brainard, 2016). In a given task, observers could potentially use either of these strategies. We gave specific instructions in order to limit the impact of strategy selection (see Materials and methods); however, it is still possible that some observers could be ‘thinking’ more or less in making their unique yellow judgments, which could be one source of the individual differences we found here. Compliance in wearing the glasses could also theoretically account for differences, but we closely monitored compliance, and failures were very few. Future work can examine whether individual differences in other aspects of color perception, or vision more generally, can account for individual differences in mode-switching.
 
@@ -127,21 +147,21 @@ In sum, our results demonstrate that the visual system can learn to rapidly adju
 
 ## Materials and methods
 
-## Observers
+### Observers
 
 Observers included author YL and 11 members (21 to 37 years of age) of the University of Minnesota community. All had normal color vision, as assessed by the Ishihara Color Blindness Test, and normal or corrected-to-normal (using contact lenses) visual acuity. None had worn red glasses for extended periods of time prior to this study. One of the observers recruited reported that she changed her criterion for unique yellow during the study, and her data showed very large variance in baseline across days. Her data were excluded from further analysis. Experimental procedures were approved by the University of Minnesota Institutional Review Board. All observers provided written, informed consent before the start of the study.
 
-## Apparatus
+### Apparatus
 
 Visual stimuli were presented on a NEC MultiSync FP2141 cathode ray tube monitor, with screen resolution of 1024*768 pixels, and a refresh rate of 85 Hz. The monitor was calibrated using a Photo Research PR655 spectroradiometer, with gun outputs linearized through look-up tables. All visual stimuli were delivered in Matlab using the psychophysical toolbox (Brainard, 1997). Viewing distance was maintained at 50 cm with a chinrest.
 
-## Glasses
+### Glasses
 
 Observers wore a commercial pair of bright red glasses made by SomniLight (Shawnee, KS). Black baffling was added on the top of the frame to prevent light from bypassing the glasses from above. The glasses filter out most of the light at short wavelengths and let pass most of the light at long wavelengths. We measured the glasses transmittance by placing the glasses in front of the spectroradiometer and recording sunlight. The spectral transmission of the glasses (Figure 1A) shows that the transmittance is above 90% at wavelengths over 620 nm, and less than 10% at wavelengths below 550 nm.
 
 To characterize the effect of the glasses on our testing display, we measured the gamut of the monitor with and without the glasses. Figure 1B demonstrates that the gamut of the monitor seen through the glasses becomes compressed and shifts toward red chromaticity.
 
-## Procedure
+### Procedure
 
 In the main experiment, observers wore the glasses for five 1-hr periods per day, for 5 consecutive days. On each day, observers came to the lab in the morning and wore the red glasses for 1 hr, while participating in a testing session. Then, they left the lab and attended to their routine everyday activities, experiencing a variety of illumination conditions. They were asked to put on the glasses again 1 hour after they took off the glasses in the lab. During the day, they wore the glasses for three 1-hr periods, each separated by 1 hr without glasses. At the end of the fourth 1-hr period without glasses, they came back to the lab for a second testing session, identical to that in the morning. Figure 1C, upper panel, illustrates the procedure of the experiment. In a follow-up test session conducted about 1 month after the main experiment, observers came back and performed one additional and identical testing session.
 
@@ -153,7 +173,19 @@ The small patch was presented for 200 ms at 1.5 s intervals. To make adjustments
 
 Stimuli were created using a modified version of the MacLeod-Boynton color space (MacLeod and Boynton, 1979), scaled and shifted so that the origin corresponds to a nominal white point of Illuminant C and so that sensitivity is roughly equated along the two axes (Webster et al., 2000).
 
-We began by computing cone responses from the stimulus spectrum using the Smith and Pokorny, 1975 cone fundamentals scaled so that the sum of L cone and M cone responses equaled 1 and the S cone responses divided by this sum also equaled 1. We then computed initial coordinates in the MacLeod-Boynton color space as rmb=(L−M)/(L+M) and bmb=S/(L+M). Finally, we scaled and shifted these coordinates:LM=(rmb−.6568)×2168S=(bmb−.01825)×6210where LM is the scaled red-green coordinate, and S is the scaled S-cone coordinate, 0.6568 and 0.01825 are the MacLeod-Boynton coordinates of Illuminant C, and 2168 and 6210 are constants that scale the LM and S axes so that a value of 1 is roughly equal to detection threshold (Webster and Mollon, 1995).
+We began by computing cone responses from the stimulus spectrum using the Smith and Pokorny, 1975 cone fundamentals scaled so that the sum of L cone and M cone responses equaled 1 and the S cone responses divided by this sum also equaled 1. We then computed initial coordinates in the MacLeod-Boynton color space as $r_{mb}=(L−M)/(L+M)$ and $b_{mb}=S/(L+M)$. Finally, we scaled and shifted these coordinates:
+
+$$
+LM=(r_{mb}−.6568)\times2168
+$$
+
+
+
+$$
+S=(b_{mb}−.01825)\times6210
+$$
+
+where LM is the scaled red-green coordinate, and S is the scaled S-cone coordinate, 0.6568 and 0.01825 are the MacLeod-Boynton coordinates of Illuminant C, and 2168 and 6210 are constants that scale the LM and S axes so that a value of 1 is roughly equal to detection threshold (Webster and Mollon, 1995).
 
 All settings fell along the nominally iso-luminant plane (defined by the LM and S axes, with luminance set to 51 candela/m2) when not wearing the glasses in order to reduce brightness effects on the judgments. The photopic luminosity function we used to define nominal isoluminance was the CIE Photopic V(λ) modified by Judd, 1951.
 
@@ -165,7 +197,7 @@ At the beginning of each test session, observers performed five 1-min blocks of
 
 After 1 hr, observers removed the glasses and were immediately tested again. Further tests were performed 10, 20, and 30 min after removing the glasses. The full test procedure is illustrated in the lower panel of Figure 1C.
 
-## Data analysis
+### Data analysis
 
 Initial analyses averaged hue angle across tests and observers, and plotted them as a function of test time and day. In order to compare unique yellow settings with and without the glasses, we also characterized the results in terms of relative gain of the cone photoreceptors (Neitz et al., 2002). The analysis assumes that unique yellow settings correspond to a balancing point between the L and M cone responses, where a scale factor (gain) is applied to responses of one of the cone classes: L = k*M. Effects of adaptation can be quantified by solving for k using estimates of the cone responses to the stimulus for each unique yellow setting.
 

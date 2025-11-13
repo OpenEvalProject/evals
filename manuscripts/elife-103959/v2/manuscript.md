@@ -39,7 +39,7 @@ Thus, this study addresses two interrelated goals. First, to reveal how male rep
 
 We recorded stimulus-induced responses from the AOB of estrus and non-estrus anesthetized adult ICR female mice (Figure 1A and B). Stimulus presentation includes sample application to the nostril, followed by electric stimulation of the sympathetic nerve trunk, which triggers stimulus uptake by the VNO (Figure 1C). During each session, we repeatedly present one of several stimuli in a pseudorandom order, with each stimulus presented at least four times (see Materials and methods for details). Between consecutive stimulus presentations, the VNO and nasal cavity were washed with Ringer’s solution. The stimulus set includes urine from sexually naive, castrated, and sexually experienced dominant male mice, from each of three strains: BALB/C (BC), C57BL/6 (C57), or ICR (Figure 1A). These stimuli span two independent dimensions: male reproductive state and strain. We also presented urine from estrus and non-estrus ICR females (Figure 1A). Response magnitudes were quantified as the baseline-subtracted average firing rate, within a temporal window starting at stimulus application and ending 40 s after electrical stimulation of the sympathetic nerve trunk. Examples of single unit responses are shown in Figure 1D. The dataset includes 241 single units from 21 recording sites from 17 estrus females, and 305 single units from 28 recording sites from 20 non-estrus females.
 
-## Population-level representations and general response features
+### Population-level representations and general response features
 
 Responses from all recording sessions (for both estrus and non-estrus females, n=546 single units) to each of the stimuli are shown in Figure 2A using a normalized response matrix, with nonsignificant responses (significance threshold of 0.05 using a nonparametric ANOVA, see Materials and methods) set to 0. As a population, AOB neurons respond to each of the stimuli in the set. To compare population activity patterns across stimuli, we applied the correlation distance metric and classical multidimensional scaling. This representation shows that the two female stimuli elicit similar patterns, distinct from all male stimuli (Figure 2B). Note that like all dimensionally reduced representations, this is an approximation. Here, it represents about 60% of the actual distances (the mean absolute error between the actual distances and the approximated distances is 0.29, whereas the mean of the original distances is 0.73). As for intact male stimuli, the main determinant of response similarity is strain (rather than physiological status): naive and dominant C57 stimuli form one cluster, while naive and dominant BC and ICR males form another cluster. Responses to castrated urine are distinct from male- or female-induced responses. Yet, here too, ICR and BC castrated urine are closer to each other than to C57 urine.
 
@@ -51,7 +51,128 @@ The distribution of the number of effective stimuli per neuron is shown in Figur
 
 Mean response strengths for each of the stimuli across the population are shown in Figure 2E. This value effectively combines the number of responsive neurons and their response magnitudes. This representation shows that female and castrated male stimuli elicit the strongest responses. A statistical comparison of response magnitudes is given in Table 1.
 
-## Defining response patterns of AOB neurons
+**Table 1.**
+ Comparison of stimulus response magnitudes across stimulus pairs (related to Figure 2E).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Significant median differences in mean responses between stimulus pairs, with Tukey-Kramer correction for multiple comparisons</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>M_ICR_NAIVE vs M_ICR_CAST p: 0.042255</td>
+    </tr>
+    <tr>
+      <td>M_ICR_NAIVE vs M_C57_CAST p: 0.015033</td>
+    </tr>
+    <tr>
+      <td>M_ICR_NAIVE vs F_ICR_NON_EST p: 0.0010519</td>
+    </tr>
+    <tr>
+      <td>M_ICR_NAIVE vs F_ICR_EST p: 0.037127</td>
+    </tr>
+    <tr>
+      <td>M_ICR_CAST vs M_BC_NAIVE p: 0.0052463</td>
+    </tr>
+    <tr>
+      <td>M_BC_NAIVE vs M_C57_CAST p: 0.0014844</td>
+    </tr>
+    <tr>
+      <td>M_BC_NAIVE vs F_ICR_NON_EST p: 6.5788e-05</td>
+    </tr>
+    <tr>
+      <td>M_BC_NAIVE vs F_ICR_EST p: 0.004468</td>
+    </tr>
+    <tr>
+      <td>M_BC_DOM vs F_ICR_NON_EST p: 0.045776</td>
+    </tr>
+    <tr>
+      <td>Significant median differences in mean responses between stimulus pairs without correction for multiple comparisons</td>
+    </tr>
+    <tr>
+      <td>M_ICR_NAIVE vs M_ICR_CAST p: 0.0010636</td>
+    </tr>
+    <tr>
+      <td>M_ICR_NAIVE vs M_C57_CAST p: 0.00033956</td>
+    </tr>
+    <tr>
+      <td>M_ICR_NAIVE vs F_ICR_NON_EST p: 2.0771e-05</td>
+    </tr>
+    <tr>
+      <td>M_ICR_NAIVE vs F_ICR_EST p: 0.00091914</td>
+    </tr>
+    <tr>
+      <td>M_ICR_DOM vs M_ICR_CAST p: 0.030301</td>
+    </tr>
+    <tr>
+      <td>M_ICR_DOM vs M_C57_CAST p: 0.013284</td>
+    </tr>
+    <tr>
+      <td>M_ICR_DOM vs F_ICR_NON_EST p: 0.001636</td>
+    </tr>
+    <tr>
+      <td>M_ICR_DOM vs F_ICR_EST p: 0.027304</td>
+    </tr>
+    <tr>
+      <td>M_ICR_CAST vs M_BC_NAIVE p: 0.00011046</td>
+    </tr>
+    <tr>
+      <td>M_ICR_CAST vs M_BC_DOM p: 0.023567</td>
+    </tr>
+    <tr>
+      <td>M_ICR_CAST vs M_C57_DOM p: 0.033367</td>
+    </tr>
+    <tr>
+      <td>M_BC_NAIVE vs M_BC_CAST p: 0.025458</td>
+    </tr>
+    <tr>
+      <td>M_BC_NAIVE vs M_C57_NAIVE p: 0.046268</td>
+    </tr>
+    <tr>
+      <td>M_BC_NAIVE vs M_C57_CAST p: 2.9626e-05</td>
+    </tr>
+    <tr>
+      <td>M_BC_NAIVE vs F_ICR_NON_EST p: 1.2366e-06</td>
+    </tr>
+    <tr>
+      <td>M_BC_NAIVE vs F_ICR_EST p: 9.3289e-05</td>
+    </tr>
+    <tr>
+      <td>M_BC_DOM vs M_C57_CAST p: 0.010052</td>
+    </tr>
+    <tr>
+      <td>M_BC_DOM vs F_ICR_NON_EST p: 0.0011646</td>
+    </tr>
+    <tr>
+      <td>M_BC_DOM vs F_ICR_EST p: 0.021159</td>
+    </tr>
+    <tr>
+      <td>M_BC_CAST vs F_ICR_NON_EST p: 0.008915</td>
+    </tr>
+    <tr>
+      <td>M_C57_NAIVE vs M_C57_CAST p: 0.029007</td>
+    </tr>
+    <tr>
+      <td>M_C57_NAIVE vs F_ICR_NON_EST p: 0.0042801</td>
+    </tr>
+    <tr>
+      <td>M_C57_DOM vs M_C57_CAST p: 0.014786</td>
+    </tr>
+    <tr>
+      <td>M_C57_DOM vs F_ICR_NON_EST p: 0.001865</td>
+    </tr>
+    <tr>
+      <td>M_C57_DOM vs F_ICR_EST p: 0.030109</td>
+    </tr>
+  </tbody>
+</table>
+
+_The tests were conducted using a nonparametric ANOVA (Kruskal-Wallis) and the multcompare MATLAB function with the Tukey-Kramer multiple comparisons correction (top) or without correction (bottom)._
+
+### Defining response patterns of AOB neurons
 
 To better understand how behaviorally relevant features are represented by AOB neuronal activity, we next examine the response patterns of AOB neurons. Using stimuli from three strains and three male reproductive states, we define patterns corresponding to strain and to male virility status. Our stimulus set contains two female stimuli (estrus and non-estrus ICR urine), which allows us to define additional response patterns corresponding to sex and strain. We define response patterns using relative response magnitude (Figure 3A). For example, to fulfill a dominant pattern (DOM in Figure 3A), responses to all dominant male stimuli must be stronger than responses to any of the other stimuli. The complementary response pattern (designated as ~DOM) is equally informative. By setting a threshold, neurons with these response patterns suffice to determine if the stimulus source is a dominant male (given the present stimulus set). Note also that while we use this approach to define neuronal receptive fields, we are not suggesting that decoding is explicitly achieved in this manner. In addition, we defined ‘strain-adjusted’ and ‘state-adjusted’ response patterns (an example is shown in Figure 3A). The rationale behind these patterns is that some chemical feature may be modulated by both virility state and strain. For example, a dominant strain-adjusted pattern requires that for each strain, the response to the dominant stimulus will be stronger than the responses to the other stimuli from the same strain. Here too, we also considered complementary patterns, as they are also informative. We note that criteria for adjusted patterns are less stringent than for the standard patterns. Furthermore, some patterns are not mutually exclusive, and thus, a neuron may fulfill more than a single pattern.
 
@@ -59,11 +180,11 @@ To better understand how behaviorally relevant features are represented by AOB n
 
 **Figure 3.:** (A) Graphical representation of response pattern definitions. To fulfill a pattern, each of the stimuli indicated in red should elicit a stronger response than each of the stimuli shown in blue. The left and center panels show the basic response patterns and their complementary patterns, respectively. The panels on the right provide two examples of adjusted response patterns. For example, a dominant/strain pattern requires fulfillment of three conditions, so that within each strain, responses will be strongest to the dominant stimulus. Within a given condition, hatched squares indicate stimuli that are irrelevant for the pattern in question. The complementary-adjusted response patterns are not shown. (B) All response patterns across neurons. Note that a neuron may fulfill more than one pattern and thus may appear in more than one row. The right panel provides an expanded view of some response patterns. The adjusted categories are not shown in this representation. (C) Frequency analysis of each of the basic and complementary response patterns. The response pattern name is indicated next to each panel. Within each panel, the blue histogram shows the shuffled distribution of pattern frequencies (n=100,000 shuffles). The vertical blue lines show the mean value of the shuffled distribution. Red vertical lines indicate the actual number of observed patterns. Green shaded panels indicate significant cases (i.e. the estimated probability to obtain the observed number of cases by chance is less than 5%). In most cases, the probability is considerably lower (as indicated by the numbers within each panel). (D) Like C for adjusted patterns.
 
-## Most response patterns are not overrepresented
+### Most response patterns are not overrepresented
 
 Responses of single neurons, sorted according to response types, are shown in Figure 3B (only basic and complementary response patterns are shown). The image shows that most neurons do not conform to any of the response patterns (78%, 433 of 557 total patterns; note that the number of patterns exceeds the number of neurons since a given neuron may conform to more than one pattern). While some patterns (e.g. female) are frequent, others are associated with only a few neurons (e.g. naive and dominant patterns). However, to gain insight about the sampling properties of AOB neurons, we asked which patterns are represented more than expected by chance. Here, chance implies that responses to each of the stimuli are independent of each other. Practically, we apply bootstrapping (with n=100,000 shuffles, see Materials and methods) to derive the frequencies for each of the patterns by chance. Bootstrapped distributions and the actual number of observed neurons for each of the patterns are shown in Figure 3B. Considering basic and reverse patterns, we find that female, ~female, C57 male, and castrated are overrepresented (p<0.05, Figure 3C). For strain-adjusted or state-adjusted patterns (Figure 3D), we find overrepresentation of C57/state, cast/strain, and ~cast/strain. Note that the observed frequencies are determined by the chemical profiles of the stimuli and the sampling properties of neurons. This idea and its implications are further developed in the Discussion. Presently, we note that most of the male strain-specific patterns and the male-virility-state patterns are not more frequent than expected by chance.
 
-## Neuronal representations are broadly stable over the estrus cycle
+### Neuronal representations are broadly stable over the estrus cycle
 
 We next compare response properties of AOB neurons under estrus and non-estrus states, beginning with examination of responses at the population level. Figure 4A shows neuronal responses partitioned according to the estrus state of the subject (the same data as in Figure 2A). Each pair of stimuli (i.e. each pair of columns within the matrices in Figure 4A) is associated with a distance, which we quantify using two common metrics: correlation and Euclidean distances. Our 11-stimulus set yields 55 pairwise distances, which together provide a measure of representational space. The distance matrices for both states are shown in Figure 4B (correlation distance) and Figure 4C (Euclidean distance). Next, we compare the distances under both states, for both distance metrics (Figure 4D and E). We find a positive and highly significant correlation between representations under the two states. Thus, at the population level, representational space remains roughly stable across the estrus cycle. Nevertheless, several points in Figure 4D and E clearly diverge from the diagonal, implying that representations are not identical under the two states. We next examine these differences in more detail.
 
@@ -71,7 +192,7 @@ We next compare response properties of AOB neurons under estrus and non-estrus s
 
 **Figure 4.:** (A) Responses of individual neurons. Same data as in Figure 2A, divided by reproductive states. (B) Pairwise population response distances in non-estrus (left) and estrus (right) using the correlation distance measure. Each pixel represents the distance between two columns within a given matrix from panel A. By definition, these matrices are symmetric around the diagonal. (C) Same as in B, using the Euclidean distance measure. (D) Correlation of population-level pairwise distances across the two reproductive states, using the correlation distance measure. (E) Same as in D using the Euclidean distances. In both D and E, the correlation coefficient (CC) and the probability to obtain it by chance (p-value) are indicated within each panel.
 
-## Response intensity of most stimuli is stable across the estrus cycle
+### Response intensity of most stimuli is stable across the estrus cycle
 
 We next examine the intensity of specific stimuli across the cycle. Specifically, we ask if stimuli associated with virile males elicit stronger responses during estrus. For each stimulus and both states, we quantify response magnitudes using the fraction of responsive neurons and the mean response strength across the population. We compare the fraction of responses (Figure 5A) using a binomial exact test and the mean response strength (Figure 5B) using one-way nonparametric ANOVA. After (Bonferroni) correction for multiple comparisons, the only significant difference is that during estrus, the fraction of responsive neurons to castrated BC male urine increases. There are no significant differences in response magnitude to any of the stimuli. Consistent with this, a two-way ANOVA with stimulus and state as factors indicates that the only significant factor is stimulus (p-values were 1.5×10–5, 0.7688, and 0.8193 for stimulus, state, and stimulus × state interaction, respectively). Thus, we conclude that there is no consistent change in response strength across the estrus cycle, and, in particular, no increase in response efficacy of stimuli associated with higher virility.
 
@@ -79,7 +200,7 @@ We next examine the intensity of specific stimuli across the cycle. Specifically
 
 **Figure 5.:** (A) Percentage of responding neurons to each of the stimuli in non-estrus (gray) and estrus (red) neurons. p-Values correspond to the binomial exact test. (B) Mean response magnitude to each stimulus under the two states. p-Values correspond to nonparametric ANOVA. In both A and B, the Bonferroni-adjusted p-value given 11 comparisons, at the 0.05 level, is 0.0045. The single significant difference is indicated in bold. In A and B, n=305 non-estrus and n=241 estrus neurons. Error bars indicate the standard error of the mean. (C) Correlation between mean pairwise preference indices under the two reproductive states. The correlation coefficient and the probability to obtain it by chance are indicated. (D) Comparison of pairwise preference indices under the two states. Each pair of bars corresponds to one comparison. The stimuli are indicated by the icons and text. For example, the first pair of bars on the left corresponds to pairwise comparison of dominant and naive ICR male urine. In both estrus states, there is a stronger response to the dominant stimulus as indicated by the downward-pointing bars. However, the difference is not significant. (E) Comparison of pairwise preference indices between stimulus pairs comprising male and female stimuli. In D and E, significance is determined using a shuffling test (n=100,000). Bonferroni-adjusted p-values at the 0.05 level are 0.0056 and 0.01 for D and E, respectively. Significant differences among the states are indicated in bold. Note that in most cases, significant differences correspond to cases where responses during estrus are stronger to the less virile male stimulus.
 
-## The relative magnitude of response strengths remains stable across the estrus cycle
+### The relative magnitude of response strengths remains stable across the estrus cycle
 
 Although our previous analyses ruled out state-dependent changes in absolute response magnitudes, they did not directly test changes in relative response magnitude. For example, the relative strength of responses to dominant and naive stimuli might change as a function of the estrus state. To explore this scenario, and other related scenarios, we defined a preference index: PIAB = (RA–RB)/(RA +RB), where RA and RB are the responses to stimuli A and B, respectively. PIAB ranges between –1 (exclusive response to stimulus B) and 1 (exclusive response to stimulus A). After calculating these values for each neuron, we obtained their means across the population and compared them (55 preference indices, defined by our 11 stimuli dataset) under both states. The comparison (Figure 5C) reveals a positive (0.41) and significant (p=0.002) correlation between the two states.
 
@@ -87,7 +208,7 @@ Despite the similarity, some pairwise indices change and even reverse signs acro
 
 A related possibility is that during estrus, responses to male stimuli will become stronger relative to female stimuli. To test this, we compared responses between female and (non-castrated) male stimuli from the ICR strain. In all cases (Figure 5E), female urine elicits stronger responses than male urine. The only significant difference (p=0.0024, Bonferroni-corrected p-value: 0.01) is that during estrus, responses to non-estrus female urine increase relative to naive male stimuli. Relative response strengths to estrus and non-estrus female urine also did not change during the estrus cycle (Figure 5E). In conclusion, relative response magnitudes are broadly conserved across estrus states. The changes that do take place do not reflect systematic modulation of sensitivity to particular virility states.
 
-## Increased selectivity during estrus, but no consistent changes associated with virility state
+### Increased selectivity during estrus, but no consistent changes associated with virility state
 
 Thus far, we examined hypotheses related to response magnitudes, reasoning that changes in physiological state can enhance responses to selected stimuli. Yet, another possibility is that individual neurons will become more selective to particular stimuli, without necessarily altering response magnitudes across the population. We first address this issue by examining lifetime sparseness, a normalized measure of selectivity based on response strength, ranging between 0 (uniform response magnitude) and 1 (exclusive response to one stimulus). As shown in Figure 6A, the sparseness of the population is higher for estrus neurons (p=0.0079, Kruskal-Wallis nonparametric ANOVA). To determine if these changes reflect selectivity to particular virility states, we examined them directly. Again, to account for potential strain-specific effects, we conducted this analysis for each strain separately. In the triangle plots (Bergan et al., 2014) of Figure 6B, vertices correspond to virility states, and dots represent the relative response magnitude of individual neurons to each virility state. Thus, dots near the center represent nonselective neurons, while selective neurons are represented by dots near vertices. The plots show that across all strains, dots corresponding to estrus and non-estrus neurons overlap widely.
 
@@ -99,7 +220,193 @@ To determine if selectivity changes with reproductive state, we calculated a res
 
 Next, we analyzed pairwise response selectivity by considering, for each neuron, the absolute value of the preference index (see Materials and methods), which ranges between 0 (equal responses to both stimuli) and 1 (response to only one of the stimuli). We then compared the distributions of these indices across the two estrus states. The analysis (Table 2) is also not consistent with increased acuity for reproductively relevant cues during estrus. For example, of all pairwise comparisons involving a dominant and nondominant stimulus donor from the same strain, the only significant change involves a decrease in selectivity among dominant and naive C57 male urine during estrus. The pairwise comparisons (Table 2) also imply that the observed changes for the three-way comparisons for ICR stimuli mostly result from increased selectivity to castrated urine. In summary, while as a population, AOB-MCs from estrus females show somewhat sparser responses, there are no consistent shifts in selectivity for male virility state.
 
-## Neuronal receptive field distributions across the estrus cycle
+**Table 2.**
+ Detailed comparison of selectivity for pairs of stimuli between estrus and non-estrus neurons (related to Figure 6).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Type of comparison</th>
+      <th>Stimulus 1</th>
+      <th>Stimulus 2</th>
+      <th>Non-estrusselectivity</th>
+      <th>Estrus selectivity</th>
+      <th>Selectivity score p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Female vs. female</td>
+      <td>F ICR estrus</td>
+      <td>F ICR non-estrus</td>
+      <td>0.53788 (169)</td>
+      <td>0.49684 (142)</td>
+      <td>0.34024</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Male vs. female</td>
+      <td>ICR dom</td>
+      <td>ICR estrus</td>
+      <td>0.71497 (175)</td>
+      <td>0.74204 (141)</td>
+      <td>0.99068</td>
+    </tr>
+    <tr>
+      <td>ICR dom</td>
+      <td>ICR non-estrus</td>
+      <td>0.73335 (171)</td>
+      <td>0.75566 (156)</td>
+      <td>0.82341</td>
+    </tr>
+    <tr>
+      <td>ICR naive</td>
+      <td>ICR estrus</td>
+      <td>0.72123 (175)</td>
+      <td>0.73349 (136)</td>
+      <td>0.81005</td>
+    </tr>
+    <tr>
+      <td>ICR naive</td>
+      <td>ICR non-estrus</td>
+      <td>0.69395 (166)</td>
+      <td>0.74774 (147)</td>
+      <td>0.26472</td>
+    </tr>
+    <tr>
+      <td rowspan="9">Different states for a given strain</td>
+      <td>ICR dom</td>
+      <td>ICR naive</td>
+      <td>0.60467 (138)</td>
+      <td>0.57776 (115)</td>
+      <td>0.43316</td>
+    </tr>
+    <tr>
+      <td>C57 dom</td>
+      <td>C57 naive</td>
+      <td>0.66205 (150)</td>
+      <td>0.46707 (110)</td>
+      <td>3.9015e-05</td>
+    </tr>
+    <tr>
+      <td>BC dom</td>
+      <td>BC naive</td>
+      <td>0.62197 (137)</td>
+      <td>0.56784 (103)</td>
+      <td>0.25603</td>
+    </tr>
+    <tr>
+      <td>ICR dom</td>
+      <td>ICR cast</td>
+      <td>0.67063 (166)</td>
+      <td>0.73886 (154)</td>
+      <td>0.33714</td>
+    </tr>
+    <tr>
+      <td>C57 dom</td>
+      <td>C57 cast</td>
+      <td>0.71072 (194)</td>
+      <td>0.6357 (127)</td>
+      <td>0.064372</td>
+    </tr>
+    <tr>
+      <td>BC dom</td>
+      <td>BC cast</td>
+      <td>0.73796 (155)</td>
+      <td>0.72499 (147)</td>
+      <td>0.63383</td>
+    </tr>
+    <tr>
+      <td>ICR naive</td>
+      <td>ICR cast</td>
+      <td>0.66641 (159)</td>
+      <td>0.71219 (144)</td>
+      <td>0.3776</td>
+    </tr>
+    <tr>
+      <td>C57 naive</td>
+      <td>C57 cast</td>
+      <td>0.6886 (180)</td>
+      <td>0.59994 (132)</td>
+      <td>0.02337</td>
+    </tr>
+    <tr>
+      <td>BC naive</td>
+      <td>BC cast</td>
+      <td>0.76303 (155)</td>
+      <td>0.75291 (145)</td>
+      <td>0.49453</td>
+    </tr>
+    <tr>
+      <td rowspan="9">Different strains for a given virility state</td>
+      <td>C57 naive</td>
+      <td>BC naive</td>
+      <td>0.63828 (131)</td>
+      <td>0.62625 (114)</td>
+      <td>0.60412</td>
+    </tr>
+    <tr>
+      <td>C57 naive</td>
+      <td>ICR naive</td>
+      <td>0.64574 (139)</td>
+      <td>0.60728 (117)</td>
+      <td>0.47299</td>
+    </tr>
+    <tr>
+      <td>BC naive</td>
+      <td>ICR naive</td>
+      <td>0.60711 (134)</td>
+      <td>0.53642 (101)</td>
+      <td>0.089909</td>
+    </tr>
+    <tr>
+      <td>C57 dom</td>
+      <td>BC dom</td>
+      <td>0.68609 (152)</td>
+      <td>0.62328 (108)</td>
+      <td>0.096686</td>
+    </tr>
+    <tr>
+      <td>C57 dom</td>
+      <td>ICR dom</td>
+      <td>0.71036 (157)</td>
+      <td>0.62786 (118)</td>
+      <td>0.039544</td>
+    </tr>
+    <tr>
+      <td>BC dom</td>
+      <td>ICR dom</td>
+      <td>0.66277 (147)</td>
+      <td>0.56956 (114)</td>
+      <td>0.036236</td>
+    </tr>
+    <tr>
+      <td>ICR cast</td>
+      <td>BC cast</td>
+      <td>0.70931 (169)</td>
+      <td>0.58111 (157)</td>
+      <td>0.00097307</td>
+    </tr>
+    <tr>
+      <td>ICR cast</td>
+      <td>C57 cast</td>
+      <td>0.67162 (199)</td>
+      <td>0.60862 (147)</td>
+      <td>0.10409</td>
+    </tr>
+    <tr>
+      <td>BC cast</td>
+      <td>C57 cast</td>
+      <td>0.71471 (190)</td>
+      <td>0.58251 (144)</td>
+      <td>0.0009967</td>
+    </tr>
+  </tbody>
+</table>
+
+_p-Values are calculated using a nonparametric ANOVA (Kruskal-Wallis). Significant differences after adjustment for 23 comparisons (0.05/23=0.0022) are shown in red. Significant differences without adjustment (at the 0.05) are shown in blue. For each stimulus pair, values for the state with the higher selectivity are shown in bold font. The number of neurons in each comparison is indicated in parenthesis in the corresponding selectivity columns._
+
+### Neuronal receptive field distributions across the estrus cycle
 
 Finally, we return to examine response patterns and compare their frequencies across the estrus cycle. Such changes, if exist, could reflect shifts in tuning properties that would not necessarily be revealed by our previous analyses. Response pattern frequencies for units recorded in estrus and non-estrus females for the basic and adjusted patterns are shown in Figure 7A and B. Applying a binomial exact test (see Materials and methods), and correcting for multiple comparisons, none of the patterns show a significant state-dependent difference in frequency. After relaxing significance criteria (by removing the multiple comparisons correction), three differences emerge (bold labels in Figure 7). Again, however, none of these changes suggest an obvious ethological function, and, in particular, no changes in representation of dominance. In summary, response pattern distributions remain stable during the cycle, and the few changes that do occur are not compatible with enhanced selectivity to reproductively relevant stimuli.
 
@@ -111,7 +418,7 @@ Finally, we return to examine response patterns and compare their frequencies ac
 
 The first stage in sexual behavior is the appetitive stage, which is further divided into detection, approach, and investigation (Yin and Lin, 2023). In rodents, the VNS is probably most important during investigation, which takes place after contact is established, allowing a thorough analysis of a potential partner’s state (Keller et al., 2009; Keller et al., 2006). We had originally hypothesized that during estrus, responses to ‘virile stimuli’ will be accentuated, reflecting heightened sensitivity or discriminatory ability. Instead, we found that overall, AOB representations remain stable. This conclusion is based on analysis of response magnitudes to individual stimuli and relationships between response magnitudes (Figure 5), selectivity to specific stimuli (Figure 6), population-level representations (Figure 4), and the frequency of response categories (Figure 7). It is consistent with our recent observations showing representational stability in virgin and in pregnant female mice, at least under temporal scales reflecting brief investigation bouts (Yoles-Frenkel et al., 2022). Combined with analysis of responses in male and female subjects (Ben-Shaul et al., 2010; Bergan et al., 2014) and in males from different strains (Bansal et al., 2021), we propose that the AOB conveys detailed information but does not ‘interpret’ it as a function of an organism’s current state. Thus, the AOB provides an unbiased account of a potential partner’s features, leaving evaluation of the appropriate response to downstream processing stages. Below, we first discuss what our study can reveal about response patterns of AOB neurons and then proceed to discuss the implications for state-dependent processing.
 
-## Response patterns of AOB-MCs
+### Response patterns of AOB-MCs
 
 While the primary focus of this study was state-dependent processing, we first considered the broader topic of response properties of AOB-MCs. Chemosensory space cannot be easily parameterized like visual or auditory space, and presentation of all potential ligands (and their combinations) is clearly unfeasible. Thus, receptive field properties of central chemosensory neurons, including AOB-MCs, are poorly characterized. The selective responses to mice from different sex and strain combinations that we observed here are consistent with previous electrophysiological (Luo et al., 2003; Ben-Shaul et al., 2010; Tolokh et al., 2013; Bansal et al., 2021) and chemical analyses (Nagel et al., 2024; Fu et al., 2015; Cheetham et al., 2009; Schwende et al., 1986; Albone and Shirley, 1984; Lin et al., 2005; Zhang et al., 2007). Selectivity to castrated vs. intact males has also been shown before (Yoles-Frenkel et al., 2022), while selectivity to male dominance is consistent with chemical analyses (Thoß et al., 2019) and immediate-early-gene expression profiles in the AOB (Veyrac et al., 2011). Here, we asked if AOB-MC response patterns reflect behaviorally relevant features of conspecifics. We found that most response patterns (Figure 3) are not more frequent than expected by chance.
 
@@ -131,7 +438,7 @@ The overrepresentation of castrated stimuli is puzzling since castrated males ar
 
 Along the same lines, in contrast to castrated stimuli, the dominant pattern was very infrequent (in fact, only one single unit in our dataset fulfilled it, Figure 3C). While this is not significantly less than expected by chance, it is surprising. We note that this is not because dominant stimuli are less potent than naive stimuli; they are generally stronger (see Figure 2D and E). Nor is it likely to be due to our modest sample size, as similar pattern distributions are observed when multiunit activity is also included in the analysis (not shown). Instead, we proposed that this scarcity may represent an optimal allocation of resources to separate dominant from naive males. Note also that population activity levels elicited by dominant and naive stimuli are similar (see Figure 2B), suggesting that unlike castration, dominance is not associated with extensive chemical changes. The number of strain-adjusted dominant patterns is not negligible (Figure 3D), implying that evaluation of male state might be done in the context of that male’s strain. Admittedly, lacking knowledge of the chemical space associated with each of the stimuli, this and all the other ideas developed here remain speculative. A comprehensive analysis of tuning properties of AOB-MCs must take into account all the features that we ignored in our simple explanation and consider the balance between encoding multiple traits in parallel, some of which must involve overlapping molecules.
 
-## Implications for female reproductive state-dependent processing
+### Implications for female reproductive state-dependent processing
 
 Considering the second theme of this research, namely state dependence, our results are not at odds with multiple reports of estrus-state-dependent behavioral changes in female mice. They are also reconcilable with state-dependent representations in downstream regions that reflect fluctuating hormonal states. However, our findings are unexpected in light of estrus-state-dependent changes in the earlier processing stage, namely at the level of VSNs (Dey et al., 2015; Cherian et al., 2014; Eckstein et al., 2020). One possible explanation is that our approach cannot detect finer adaptations within dedicated processing streams (Ishii et al., 2017). This scenario applies in Dey et al., 2015, which showed changes in a subset of VSNs sensitive to male stimuli. Two other studies revealed more global sex hormone-dependent changes in VSNs (Cherian et al., 2014; Eckstein et al., 2020). Lacking knowledge of the functional implications of such changes on the AOB network, it is difficult to explain why we did not observe broad changes. One simple possibility is that such effects will generally increase excitability. However, we did not observe such changes, perhaps due to compensatory mechanisms within the AOB. Finally, we note that despite the global stability, some of our comparisons yielded significant differences among the two states. While these differences do not represent increased (or decreased) responsiveness to virile stimuli, we cannot rule out their connection with the changes reported in VSNs.
 
@@ -141,35 +448,35 @@ In conclusion, the two themes of this study inspire two future research directio
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 For recordings, we used sexually inexperienced adult female mice from the ICR strain (Envigo Laboratories, Israel). All experiments complied with the Hebrew University Animal Care and Use Committee (protocol number MD-13-13715-3).
 
-## Determination of the estrus stage
+### Determination of the estrus stage
 
 Female estrus stage was determined using a vaginal lavage of 15 µl of saline. The saline sample was then deposited on a Superfrost Plus slide (Thermo Scientific) and dried. Slides were treated with Wright Stain Solution (Sigma) and photographed under a light microscope. The estrus stage was determined using the cytological composition of the smear, as described in Byers et al., 2012; Caligioni, 2009.
 
-## Male status
+### Male status
 
 Our stimulus set includes urine samples from castrated, naive, and dominant proven breeder mice. Proven breeder and naive male mice were purchased (Envigo Laboratories, Israel) and then assigned to cages containing two proven breeders and two to three naive mice. One to two days after mice were placed in these cages, we identified candidate dominant male (always one of the two proven breeders) by observation of their home cages. To confirm dominance, we conducted dominance tests involving each proven breeder mouse with each of the other cage mates (including all naive cage mates and the other proven breeder male). The test included a ‘tube test’, conducted in a new cage with clean bedding. The two mice were placed at opposite ends of a cylindrical tube, and the mouse that forced the other to exit was designated as dominant. In addition, immediately following this tube test, the same pair of mice was monitored for an additional 10 min, and the mouse displaying aggressive behavior (biting, chasing, tail rattling) toward the other was identified as dominant. We only classified mice as dominant if they showed dominance during the tube test and the subsequent observation period in the cage. We also confirmed that the established hierarchy was maintained throughout the entire period of urine collection, over the course of ~4 weeks, by monitoring the behavior of these mice in their home cages. Dominant male mice consistently showed aggressive behaviors, whereas non-dominant mice engaged in self-grooming behaviors more frequently. Castrated male urine was collected from 8-week-old males that had their testes removed under isoflurane anesthesia at the age of 4 weeks (before puberty).
 
-## Stimuli and dataset
+### Stimuli and dataset
 
 Stimuli were collected from castrated, naive, and sexually experienced male mice from the BALB/C, C57BL/6, and ICR strains and estrus and non-estrus sexually naive adult female mice from the ICR strain (Envigo Laboratories, Israel). For urine collection, mice were gently held over a plastic sheet until they urinated. The urine was collected in plastic tubes, flash-frozen in liquid nitrogen, and then stored at –80°C. Each of the samples presented here comprised urine from three different individuals, diluted 1:10 in Ringer’s solution. Urine from each individual was collected over a period of ~4 weeks and pooled before combining it with urine from males of the same strain and status.
 
-## Surgical procedures and electrode positioning
+### Surgical procedures and electrode positioning
 
 Experimental procedures were detailed in Yoles-Frenkel et al., 2017. Briefly, mice were anesthetized with 100 mg/kg ketamine and 10 mg/kg xylazine, tracheotomized, and a cuff electrode was implanted around the sympathetic nerve trunk. Incisions were closed with Vetbond (3 M) glue, and the mouse was placed in a stereotaxic apparatus where anesthesia was maintained throughout the experiment (0.5–1% isoflurane in oxygen). A craniotomy was made immediately rostral to the rhinal sinus, the dura was removed, and electrodes were advanced into the AOB at an angle of ~30° with an electronic micromanipulator (MP-285; Sutter Instruments, Novato, CA, USA). We used 32-channel probes (NeuroNexus Technologies, Ann Arbor, MI, USA) with 8 channels on each of four shanks, with the following specification: (horizontal) distance between the shanks: 200 µm, site area: 177 µm2, and (vertical) within-shank site spacing either 50 µm or 100 µm (NeuroNexus acute probe models: A4x8-5 mm-100-200-177-A32 and A4x8-5 mm-50-200-177-A32). Before recordings, electrodes were dipped in fluorescent dye (DiI, Invitrogen, Carlsbad, CA, USA) to allow subsequent confirmation of placement within the AOB external cellular layer.
 
-## Stimulus presentation procedure
+### Stimulus presentation procedure
 
 Each session contains several distinct stimuli. Typically, each stimulus was presented repeatedly in a pseudorandom order, at least four times, and typically five times within each session across all sessions (number of repeated presentations per stimulus: 5.1±0.9, mean ± sd. In 72% of the cases, stimuli were given five or more times. Otherwise, they were presented four times). Stimuli were presented in blocks, and within each block, all stimuli were presented in a random order. An ITI of 18 s was applied between stimulus presentations. During each presentation, 2 µl of stimulus was manually applied directly into the nostril using a micropipette (Yoles-Frenkel et al., 2017). After a delay of 20 s, a square-wave stimulation train (duration: 1.6 s, current: ±120 µA, frequency: 30 Hz) was delivered through the sympathetic nerve cuff electrode to induce vomeronasal organ suction. Following another 40 s delay, the nasal cavity was flushed with 1–2 ml of Ringer’s solution and drained with suction from the nasopalatine duct. The cleansing procedure lasted 50 s and included sympathetic trunk stimulation to facilitate stimulus elimination from the vomeronasal organ lumen.
 
-## Electrophysiology
+### Electrophysiology
 
 Neuronal data was recorded using an RZ2 processor, PZ2 preamplifier, and two RA16CH head-stage amplifiers (TDT, Alachua, FL, USA). Single-unit and multiunit activity were sampled at 24,414 Hz and band-pass filtered at 300–5000 Hz. Custom MATLAB codes were used to extract spike waveforms. Spikes were sorted automatically according to their projections on two principal components on eight channels of each shank using KlustaKwik (Csicsvari et al., 2003; Hazan et al., 2006) and then manually verified and adjusted using Klusters (Hazan et al., 2006). Spike clusters were evaluated by their waveforms, projections on principal component space (calculated for each session individually), and autocorrelation functions. A cluster was defined as a single unit if it displayed a distinct spike shape, was fully separable from both the origin (noise) and other clusters, and if its autocorrelation function demonstrated a clear trough around time 0 of at least 10 ms. Clusters apparently comprising more than one single unit were designated as multi-units. Under these definitions, multiunits could represent the activity of as few as two units. Such units are not included in our dataset. As a further criterion for single-unit classification, we examined the ‘shape symmetry’ of all spike shapes. Shape symmetry was defined as the correlation coefficient of the two sides (margins) of the spike waveform around its peak (in absolute value, with one of the margins reversed). For example, if the waveform contains nine samples with a peak at sample 5, the correlation will be calculated between the vectors defined by samples 1–4, and a reversed version of the vector defined by samples 6–9. If the shape is symmetric, the symmetry will be 1. When the peak is not in the middle, as is usually the case, the correlation is calculated for vectors determined by the smaller margin. A high symmetry (>0.95) is helpful for identifying noise accidentally misclassified as spikes. Using a graphical representation of all spike shapes, we examined the entire dataset for such noise-like spikes and removed them from further analyses.
 
-## Data analysis
+### Data analysis
 
 All data analyses and visualizations were performed using custom and built-in MATLAB code. The response of a unit to a given stimulus was defined as the average firing rate change over a 60 s window following stimulus application (change measured compared to the 17 s period preceding application). This broad response window covers both the post-application and post-stimulation periods, as in Bansal et al., 2021. This window was chosen because in some cases, responses began after stimulus application and prior to electric stimulation of the SNT. Response significance of a given unit to a given stimulus was determined by comparing its spiking rate distribution following all repeats to the baseline firing frequency distribution during the 17 s period prior to stimulus application. Response significance (of a particular unit to a given stimulus) was determined by a nonparametric analysis of variance (Kruskal-Wallis test) comparing the set of poststimulation rates to the set of preceding baseline rates (preceding rates were pooled across all stimuli), using a threshold of 0.05. In the image in Figure 2A (and in other related representations), the response magnitude of each unit was normalized by the absolute value of the maximal response (i.e. the response to the stimulus that elicited the strongest response, in absolute value). Thus, all response values range between –1 and 1. In addition, in this image and in some analyses, all nonsignificant responses were set to 0. For Figure 2B, we applied classical multidimensional scaling, using the data in each of the rows in Figure 2A, using the MATLAB cmdscale function, and the correlation distance metric (defined as one minus the sample correlation).
 
@@ -185,12 +492,20 @@ The pairwise preference index PIAB for two stimuli A and B (as shown in Figure 5
 
 To compare pairwise preference indices across states (Figure 5D and E), we also used a bootstrapping approach. Specifically, we first found the absolute difference between the mean preference indices for a given stimulus pair under the two states. Then, we repeatedly shuffled the dataset (effectively, neurons were randomly assigned to one of the two reproductive states) 100,000 times and calculated the absolute difference across the two (shuffled) states. Then, we derived the p-values as the fraction of cases in the shuffled distribution which were larger than the actual observed distribution. In other words, these p-values reflect the probability of obtaining such a state-dependent difference in preference indices by chance.
 
-To calculate lifetime sparseness (S), we used the definition given in Vinje and Gallant, 2000:S=1−∑iri/N2∑iri2/N/1−1N\begin{document}$$\displaystyle  S=\left [1- \frac{\left (\sum _{i}\left |r_{i}\right |/N\right)^{2}}{\sum _{i}\left (r_{i}^{2}\right)/N}\right ]/\left [1- \frac{1}{N}\right ]$$\end{document}
+To calculate lifetime sparseness (S), we used the definition given in Vinje and Gallant, 2000:
+
+$$
+S=1−\frac{\sum_{i}r_{i}/N^{2}}{\sum_{i}r_{i}^{2}/N}/1−\frac{1}{N}
+$$
 
 where ri is the response of neuron to the ith stimulus (averaged across all trials) and N is the number of stimuli (N=11 in our case). S varies between 0 and 1, with 0 indicating uniform responses to all stimuli and 1 indicating a response to only one stimulus. Lifetime sparseness distributions across states were compared using a nonparametric analysis of variance (Kruskal-Wallis).
 
-Triangle plots in Figure 6B were generated by considering the response of each neuron to each of three stimuli. Negative responses were truncated to 0 in this analysis. The position of each point is determined by the relative weights of three unit vectors pointing from the triangle center to each of the three vertices. The selectivity index (Figure 6C) was calculated for each neuron (and each stimulus triplet) as in Bergan et al., 2014. Specifically, it is the normalized distance from the center of the triangle, with values ranging between 0 (lowest selectivity, center of triangle) and 1 (highest selectivity, vertices of the triangles).Si=a−m2+b−m2+c−m2d\begin{document}$$\displaystyle Si=\frac{\sqrt{\left (a- m\right)^{2}+\left (b- m\right)^{2}+\left (c- m\right)^{2}}}{d}$$\end{document}
+Triangle plots in Figure 6B were generated by considering the response of each neuron to each of three stimuli. Negative responses were truncated to 0 in this analysis. The position of each point is determined by the relative weights of three unit vectors pointing from the triangle center to each of the three vertices. The selectivity index (Figure 6C) was calculated for each neuron (and each stimulus triplet) as in Bergan et al., 2014. Specifically, it is the normalized distance from the center of the triangle, with values ranging between 0 (lowest selectivity, center of triangle) and 1 (highest selectivity, vertices of the triangles).
 
-where a, b, and c are the responses to each of three stimuli. The value corresponding to equal responses to all stimuli is m, which is equal to 1/3. d is the maximum possible value of the numerator of the equation and is equal to 2/3\begin{document}$\sqrt{2/3}$\end{document}. Selectivity index distributions under the two states were compared using a nonparametric analysis of variance (Kruskal-Wallis).
+$$
+Si=\frac{\sqrt{a−m^{2}+b−m^{2}+c−m^{2}}}{d}
+$$
+
+where a, b, and c are the responses to each of three stimuli. The value corresponding to equal responses to all stimuli is m, which is equal to 1/3. d is the maximum possible value of the numerator of the equation and is equal to $\sqrt{2/3}$. Selectivity index distributions under the two states were compared using a nonparametric analysis of variance (Kruskal-Wallis).
 
 For comparison of category frequency distributions under the two states (Figure 7A and B), we applied a binomial exact test under the hypothesis of equal distributions under two states. Essentially, we followed the same procedure described above for comparing the number of responsive neurons, with the difference that here we calculated the probability to obtain a certain number of neurons corresponding to each pattern. Bars in Figure 7 are shaded in green if the probability to obtain the observed pattern frequency (calculated separately for each state) is smaller than 0.05, employing the same shuffling approach described for Figure 3C.

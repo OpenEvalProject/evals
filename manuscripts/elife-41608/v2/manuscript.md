@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.41608.001 Here, we present a method for in-depth human plasma proteome analysis based on high-resolution isoelectric focusing HiRIEF LC-MS/MS, demonstrating high proteome coverage, reproducibility and the potential for liquid biopsy protein profiling. By integrating genomic sequence information to the MS-based plasma proteome analysis, we enable detection of single amino acid variants and for the first time demonstrate transfer of multiple protein variants between mother and fetus across the placenta. We further show that our method has the ability to detect both low abundance tissue-annotated proteins and phosphorylated proteins in plasma, as well as quantitate differences in plasma proteomes between the mother and the newborn as well as changes related to pregnancy.
+Here, we present a method for in-depth human plasma proteome analysis based on high-resolution isoelectric focusing HiRIEF LC-MS/MS, demonstrating high proteome coverage, reproducibility and the potential for liquid biopsy protein profiling. By integrating genomic sequence information to the MS-based plasma proteome analysis, we enable detection of single amino acid variants and for the first time demonstrate transfer of multiple protein variants between mother and fetus across the placenta. We further show that our method has the ability to detect both low abundance tissue-annotated proteins and phosphorylated proteins in plasma, as well as quantitate differences in plasma proteomes between the mother and the newborn as well as changes related to pregnancy.
 
 ## Introduction
 
@@ -47,9 +47,201 @@ Here, we present a method to achieve unbiased, reproducible, in-depth plasma pro
 
 ## Results
 
-## Optimizing the hirief method for plasma analysis
+### Optimizing the hirief method for plasma analysis
 
 In the adaptation of the HiRIEF-LC-MS/MS method to plasma analysis, we analyzed female plasma, depleted of high-abundance plasma proteins, using a label-free MS approach. The optimization of the method included evaluation of the pH range of the peptide isoelectric focusing and amount of peptide sample load onto the strips; leading to in total 16 different HiRIEF conditions being assessed (Table 1, Supplementary file 1). Additionally, the effect of MS analysis time alone on plasma proteome coverage was evaluated by an MS runtime control composed of 72 LC-MS/MS cycles of a depleted sample using identical settings and total MS time as for the HiRIEF fractions (Figure 1a). This was done to make sure that the number of identifications post fractionation was not purely an inflation caused by MS analysis time alone or an effect of spurious and possibly false identifications caused in the search pipeline when searching a large number of MS-injections in parallel.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/41608/elife-41608-fig1-v2.jpg)
+
+**Figure 1.:** (a) An overview of the method optimization workflow. Prostate specific antigen was spiked into female plasma at 4 ng/mL. The plasma was depleted and digested and total peptide sample loads between 0.2 and 6 mg were evaluated on five different HiRIEF pH ranges. See Supplementary file 1 for a summary of the evaluated conditions. For multiplexing and reproducibility calculations tandem mass tags (TMT)-labeling was applied. Fractionated samples were evaluated based on the number of protein identifications using LC-MS/MS and analytical depth using LC-MRM analysis of fractions containing PSA peptide. (b) The effect of sample load on analytical depth. The bar chart shows the number (#) of identified proteins making up 50% of total sample intensity (MS1 peak area) as a function of sample loaded onto the HiRIEF pH strips. The corresponding amount of crude plasma used in each condition is shown as read lines (c) Combined load and pH range evaluation. Bubble plots showing the effect of the sample load and the HiRIEF pH range on the number of peptide spectrum matches (PSMs), peptide and protein identifications, respectively. The size of the bubbles is proportional to the number of identifications in each experiment.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41608/elife-41608-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) The effect of HiRIEF fractionation on analytical depth and proteome coverage. The cumulative plot shows contribution of each protein (x-axis) to the total protein intensity (y-axis) for each of the HiRIEF pH ranges evaluated. Also included is the MS runtime control as an example of unfractionated sample. A comparison of the number of overlapping and uniquely detected proteins and peptides across the different experimental settings are shown in (b). The HiRIEF pH ranges 3–10 and 4.0–4.25 identified the highest number of proteins. The HiRIEF range 4.0–4.25 standing out from the other ultra-narrow ranges likely due to covering the most peptide dense area of the pH range (Figure 1—figure supplement 4a). (b) Venn diagrams showing overlapping and uniquely detected peptides and proteins (gene centric) comparing HiRIEF pH ranges and compared to the unfractionated MS runtime control. In figures (c–h) are shown the continued analysis of the proteins and peptides identified in (b). (c) Proteins ranked according to abundance and colored according to the experimental setting (HiRIEF broad range, ultra narrow ranges, or MS runtime control) they were uniquely detected in or whether they were detected in several conditions. (d) Protein identification numbers per abundance segment (the abundance range was divided into four segments, with the 1st quartile consisting of the top 25% most abundant proteins and so on). The ultra-narrow HiRIEF pH range (4.0–4.25) tends to increase the number of identifications among low abundance range proteins. HiRIEF broad range (3-10) performs equally well across the whole abundance range. Without fractionation (MS runtime control) only high-abundance proteins are identified. A comparative GO enrichment analysis (not shown) revealed enrichment (GO term Molecular Function) of cell adhesion molecule-binding proteins (i.e. membrane proteins) among the broad range HiRIEF unique proteins, an enrichment of calcium-ion-binding proteins (mainly cytosolic proteins) among the ultra-narrow HiRIEF range unique proteins and enriched among the MS runtime control proteins was serine-type endopeptidase activity (proteins central to the complement cascade). (e) Proteins ranked according to abundance and colored according to the experimental setting (HiRIEF ultra narrow pH ranges) they were uniquely detected in or whether they were detected in several conditions. (f) The HiRIEF ultra narrow ranges detect very similar numbers regardless of protein abundance area. Proteins detected across all pH ranges tend to be of higher abundance. A comparative GO analysis showed for the 3.7–4.05 uniquely detected an enrichment (GO term Molecular Function) of cell adhesion molecule binding, for the 4.0–4.25 an enrichment of vacuolar proteins (GO term Cellular part), and for the 4.2–4.45 a enrichment (GO term Molecular Function) of calcium ion binding. We next investigated the predicted pI distribution of the unique and shared peptides comparing (g) MS runtime control, HiRIEF broad- and ultra narrow pH ranges and (h) the ultra-narrow ranges (3.7–4.05, 4.0–4.25 and 4.2–4.45). The unique peptides pI match respective strip-unique pH-range while the shared peptides have predicted pI in the shared pH region.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/41608/elife-41608-fig1-figsupp2-v2.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/41608/elife-41608-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Cell line data analyzed by HiRIEF LC-MS/MS also included as comparison. As shown, the proportion differs when comparing MS runtime control to the plasma HiRIEF data (large proportion of extracellular proteins) and the cell line data (large proportion of nuclear and cytoplasmic proteins), while no major differences is seen when comparing with the Plasma PeptideAtlas data sets.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/41608/elife-41608-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Histograms showing the distribution of unique peptides per HiRIEF fraction (in total 72) using broad range (3.0–10.0) HiRIEF compared with the theoretical peptide distribution of the human proteome based on sequence pI. Also shown is the (measured) distribution of the peptides from the peptide-dense area at pH 4.0–4.25. (b) Detection and quantification of PSA using multiple-reaction monitoring (MRM). The analysis was performed on HiRIEF pH range 4.0–4.25, fractions 30–35 using 0.6 mg sample load.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/41608/elife-41608-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (a) Stacked bar charts showing the relative number of peptides focused in one fraction or spread over 2, 3, 4, 5 and >5 fractions, respectively, for each pI interval and loaded amount. A comparison with cell line data is also included. Overall, increasing the load to <6 mg had no negative effect of the performance of the HiRIEF separation in terms of peptide focusing accuracy; instead, we could detect a similar spread over fractions between all loads with approximately 60% of peptides focusing in one or two fractions. For broad range strips (3-10), each fraction covers a larger pH interval compared to ultra narrow, resulting in a higher proportion of peptides focused in one fraction. (b) Analyzing the peptides with the largest spread, it was evident that these peptides were derived from high-abundance proteins with reported concentrations between 20–720 ug/mL.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/41608/elife-41608-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (A) Overview of the study design used for the TMT-labeling approach. (B) Overlap between 4 TMT sets in terms of number of identified gene symbols. (C) Distribution of CVs between the four sets based on TMT-reporter ion ratios of the replicate of pooled internal standard (N = 4). Abundance rank from high to low abundance on x-axis based on #PSM. (D) CVs within one set based on TMT-reporter ion ratios of replicate pooled internal standards (N = 3). Abundance rank from high to low abundance on x-axis based on #PSM.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/41608/elife-41608-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** (a) Overview of the study design used for the TMT-labeling approach in the second longitudinal cohort. (b) CVs within one set based on TMT-reporter ion ratios of replicate pooled internal, (c) Distribution of CVs between the five sets based on TMT-reporter ion ratios of the replicate of pooled internal standard (N = 4). Abundance rank from high to low abundance on x-axis based on #PSM (d) Overlap between 5 TMT sets in terms of number of identified gene symbols. (e) Protein core set analysis on both cohorts (=9 TMT sets), showing the number of proteins detected in 1–9 TMT-sets.
+
+**Table 1.**
+ Summary of the evaluated conditions in the optimization in terms of number of protein identifications (PSM-, peptide- and protein level FDR 1%).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Experiment</th>
+      <th>HiRIEF pH range</th>
+      <th>Depleted plasma (mg)</th>
+      <th># PSM</th>
+      <th># Peptides</th>
+      <th># Proteins</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MS runtime control</td>
+      <td>NA</td>
+      <td>0.072</td>
+      <td>148304</td>
+      <td>2588</td>
+      <td>241</td>
+    </tr>
+    <tr>
+      <td>1</td>
+      <td rowspan="2">3.0–10.0</td>
+      <td>1.0</td>
+      <td>123262</td>
+      <td>15424</td>
+      <td>1626</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>0.6</td>
+      <td>118983</td>
+      <td>16372</td>
+      <td>1791</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>3.7–4.9</td>
+      <td>1.0</td>
+      <td>72287</td>
+      <td>8566</td>
+      <td>1517</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td rowspan="3">3.7–4.05</td>
+      <td>0.2</td>
+      <td>25033</td>
+      <td>3230</td>
+      <td>1068</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>0.6</td>
+      <td>25472</td>
+      <td>3871</td>
+      <td>1394</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>1.0</td>
+      <td>39351</td>
+      <td>5421</td>
+      <td>1774</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td rowspan="7">4.0–4.25</td>
+      <td>0.2</td>
+      <td>29224</td>
+      <td>2916</td>
+      <td>904</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>0.6</td>
+      <td>47470</td>
+      <td>4629</td>
+      <td>1534</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>1.0</td>
+      <td>64970</td>
+      <td>6012</td>
+      <td>1888</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>1.0</td>
+      <td>46230</td>
+      <td>4695</td>
+      <td>1360</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>2.0</td>
+      <td>53323</td>
+      <td>5324</td>
+      <td>1659</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>4.0</td>
+      <td>71727</td>
+      <td>6339</td>
+      <td>1812</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>6.0</td>
+      <td>70376</td>
+      <td>6149</td>
+      <td>1608</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td rowspan="3">4.2–4.45</td>
+      <td>0.2</td>
+      <td>30067</td>
+      <td>2992</td>
+      <td>913</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>0.6</td>
+      <td>41619</td>
+      <td>4470</td>
+      <td>1422</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>1.0</td>
+      <td>63329</td>
+      <td>6042</td>
+      <td>1803</td>
+    </tr>
+    <tr>
+      <td>A549 cell line*</td>
+      <td>3.0–10.0</td>
+      <td>---</td>
+      <td>367570</td>
+      <td>141071</td>
+      <td>9816</td>
+    </tr>
+    <tr>
+      <td>A549 cell line*</td>
+      <td>3.7–4.9</td>
+      <td>---</td>
+      <td>314305</td>
+      <td>93329</td>
+      <td>9679</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Cell line data from Zhu et al. (2018)._
 
 When optimizing the HiRIEF methodology we identified on average 1505 proteins per condition (min 904, max 1888), with strict 1% FDR cut-off at PSM, peptide and protein level (Table 1, Supplementary file 1) In comparison, the MS runtime control identified as few as 241 proteins. In the runtime control, less than 10 proteins composed 50% of the total protein intensity (Figure 1—figure supplement 1a), hence indicating repetitive detection of high-abundance proteins in absence of further fractionation despite having depleted the 14 most abundant proteins.
 
@@ -63,7 +255,7 @@ When summarizing the protein identifications from the different loads and pI int
 
 A comparison of our data to the 3509 proteins from the most recent version of the human plasma PeptideAtlas data set (Schwenk et al., 2017) shows that by using different pH intervals, plasma HiRIEF has the ability to cover at least 2236 of the 3509 proteins reported in the PeptideAtlas using gene centric comparison (Figure 1—figure supplement 2). Among the 611 plasma proteins detected exclusively by the HiRIEF approach, Golgi membrane proteins and MHC molecules were enriched (Supplementary file 4). This shows that the plasma HiRIEF method has the potential to both confirm both previously described plasma proteins and add novel components towards a more complete definition of the plasma proteome.
 
-## Performance assessment of the plasma hirief method
+### Performance assessment of the plasma hirief method
 
 To evaluate the sensitivity of the HiRIEF method, prostate-specific antigen protein (PSA) was spiked-in at a clinically relevant cut-off level of 4 ng/mL into the female plasma and analyzed on the ultranarrow, narrow and broad pH intervals described in the optimization. Interestingly, PSA was only detected in the 4.0–4.25 strip and not in the broader 3.7–4.9 or 3–10 strips, despite covering the same pI interval. This implies that specific, narrower pH intervals could be used to increase analytical depth for selected proteins. In line with this, analyzing the proportion of extracellular, membrane, cytoplasmic and nuclear proteins detected in the different pH intervals, a slightly higher proportion of intracellular proteins were detected in the ultranarrow ranges (Figure 1—figure supplement 3).
 
@@ -85,23 +277,51 @@ To benchmark the performance of plasma HiRIEF with current state-of-the-art meth
 
 Performing the same gene-centric core-set analysis, as described above for the HiRIEF data, on the re-searched data from the four iTRAQ 4-plex sets (four patients) and the iTRAQ 4-plex, TMT-6 plex, TMT-10 plex analysis (one pooled plasma sample), a set of 1394 genes was robustly identified in all seven sets. In comparison to our data, we identified 1043 genes in seven out of the nine sets, with 42 individuals, starting with 40 μl plasma and 14-protein MARS depletion (Figure 1—figure supplement 7e). While identifying slightly less proteins, we believe that the HiRIEF approach has an advantage in throughput, robustness and analytical cost, which makes it well suited for larger clinical cohorts.
 
-## Exploring the plasma proteome
+### Exploring the plasma proteome
 
 Next, we used plasma HiRIEF to explore the overall plasma protein inter-individual variability by analyzing the plasma from the 30 healthy donors (15 men, 15 women). To define which plasma proteins were tightly controlled or highly variable between individuals, we ranked all overlapping quantified proteins based on inter-individual CV (%). When examining the classes of proteins associated with low or high variability by comparative GO enrichment analyses, we found that coagulation- and complement cascade proteins such as complement factor I (CF1) and complement component C6 were tightly regulated, which was in line with previous findings (Cominetti et al., 2016). Interestingly, transmembrane proteins and proteins coupled to receptor activity, such as the cancer-related EGFR and TGFBR3, were also tightly regulated (Supplementary file 5).
 
 Large inter-individual variation was observed for lipoproteins and keratins (the latter classified as probable contamination) (Supplementary file 6). One example of proteins with large variability between individuals was lipoprotein A (LPA), for which a genetic variation affecting its secretion into plasma is known (Boerwinkle et al., 1989; Utermann, 1989) (Figure 2a). The HLA genes are similarly known to be highly polymorphic and showed very high level of variability, which could be due to the fact that the peptides were not properly assigned to the reference sequences in the database search.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/41608/elife-41608-fig2-v2.jpg)
+
+**Figure 2.:** (a) The plot shows the coefficient of variation (CV%) of 1080 plasma proteins detected across 30 blood donors, arranged from high to low CV(%). The largest variation was observed among keratins (known common contaminants that were excluded from downstream analyses) and gender-correlated proteins, which by gene ontology (GO) enrichment analyses were identified as enriched for lipoproteins. In contrast, complement and coagulation cascade proteins showed low inter-individual variation. Further analysis of proteins with low inter-individual variation showed enrichment of integral membrane proteins (FDR q-value 7E-11) and receptor activity (FDR q-value, 2E-4), for example the transmembrane receptors EGFR and TGFB3R. The variation did not increase with protein abundance level (Figure 2—figure supplement 1). (b) Bar graph showing the 20 proteins with the highest and 20 proteins with the lowest inter-individual variation across all subjects, categorized according to GO annotation and gender-correlated differential expression. All gender-correlated proteins were also statistically-significant when comparing men and women (Student's t-test p<0.01, FDR 1%, not assuming equal variance). (c) Heatmap showing unsupervised clustering of all 1080 proteins with overlapping quantification across the 30 plasma samples. The plasma proteins (log2-transformed ratios relative to a pooled internal standard composed of an aliquot of all 30 samples, rows) and the individual samples (columns) were sorted by hierarchical clustering (Pearson correlation, average linkage), with gender appearing to have the strongest impact on the upcoming clusters. In (d) is shown a zoom-in of the gender-correlated clusters (selection indicated by dashed lines). Indicated are lipoproteins, cardiovascular disease (CVD) genes, and potential- as well as FDA-approved drug targets. Indicated are also proteins with a statistically significant gender-specific differential expression.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41608/elife-41608-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The scatter plot shows protein abundance levels (median MS1 precursor area) versus the standard deviation for each protein quantified. As seen from the figure, the variance is not increasing with high protein abundance.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/41608/elife-41608-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** The similarity matrix to the right (based on Pearson correlation) indicates correlated protein expression patterns across the plasma samples. GO annotation was systematically performed on the clusters and the significant enrichments are indicated with text. The two highlighted clusters were gender-correlated as described in the main text.
+
 Two other highly variable proteins (APOC2 and CETP) showed strong gender correlation, with lower concentrations in women (Figure 2b). Increased levels of CETP in women with Type two diabetes, but not in men, has been coupled to cardiovascular disease (Alssema et al., 2007).
 
 Unsupervised clustering of the data showed distinct gender effects in the plasma proteome (Figure 2c), that are concordant with previous studies (Corzett et al., 2010; Miike et al., 2010). Interestingly, the major gender-correlated cluster with relative up-regulation in male subjects contained proteins linked to lipid transport and binding. In fact, 15 of the 38 proteins in the cluster with significant gender-specific differential expression (Student's t-test, p<0.01, FDR corrected) were proteins implicated as candidate cardiovascular disease genes, including seven potential drug targets and two FDA-approved drug targets (classification according to the ProteinAtlas, www.proteinatlas.org) (Figure 2d, Figure 2—figure supplement 2).
 
-## Tissue annotated proteins detected in plasma
+### Tissue annotated proteins detected in plasma
 
 To explore the potential of detecting biomarkers using plasma HiRIEF, we mined our data for the proteins included in the recently published CancerSEEK test (Cohen et al., 2018). We identified five out of eight proteins in the optimization experiments (covering several pI intervals) and three of eight proteins in the cohort consisting of 30 healthy plasma donors analyzed only on the 3–10 strip (Figure 3a, Supplementary file 7).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/41608/elife-41608-fig3-v2.jpg)
+
+**Figure 3.:** (a) Individual protein expression levels (log2(relative ratios)) of the three out of eight proteins of the CancerSEEK test (Cohen et al., 2018) that were detected in a cohort of 30 blood donors. (b) Distribution of protein abundances based on precursor areas. Cancer-related proteins and FDA-approved drug target proteins (HPA classification) highlighted in green and blue, respectively. Classical plasma proteins (Anderson and Anderson, 2002) highlighted in red, proteins included in the CancerSEEK test in yellow. Among these proteins, some are specifically indicated by gene symbol. Spiked PSA (4 ng/mL) is marked with *. (c) Detection of tissue leakage proteins in plasma assessed by mRNA expression levels classified as enriched on particular tissue types. The anatomy image in panel c was adapted from https://commons.wikimedia.org/wiki/File:Female_shadow_anatomy_without_labels.png, which is available in the Public Domain.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41608/elife-41608-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** HiRIEF_all denotes all other proteins. The protein abundances are based on precursor areas and presented with median and interquartile range as well as statistical results (Kruskal-Wallis test followed by a Dunn’s post-test), ***p < 0.001, ****p < 0.0001.
 
 We then expanded the criteria and searched for FDA-approved drug targets, cancer-related proteins and possible tissue leakage proteins, all classified according to the Human Protein Atlas (HPA) (Uhlén et al., 2015). The latter defined by using the most stringent human tissue proteome annotations provided by HPA - ‘tissue enriched'. We ranked the merged data from the optimization based on abundance and colored the proteins according to protein classes (Figure 3b). As expected, classical plasma proteins were detected in the high-abundance range and potential biomarker classes (FDA-approved drug targets, cancer-related proteins, the proteins from the CancerSEEK test and the spiked PSA) were detected in the lower abundance ranges (Figure 3b, Figure 3—figure supplement 1, and Supplementary file 8). Notably, using plasma HiRIEF, we could detect over 500 tissue-enriched proteins spanning over a wide range of concentrations, from highly abundant plasma proteins produced in the liver to less abundant proteins produced in the central nervous system or the pancreas (Figure 3c, Figure 3—figure supplement 1, and Supplementary file 8).
 
 As a proof of concept to demonstrate the detection of potential tissue leakage proteins using the HiRIEF method, we searched for the presence of placenta-enriched proteins in the cohort with 30 blood donors (non-pregnant, both men and women) as we would not expect to detect any placenta proteins in these individuals. In this cohort, we detected low levels of eight proteins classified as placental enriched (median #PSMs 2, range 0–21, the outlier protein IGF2; Figure 4a).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/41608/elife-41608-fig4-v2.jpg)
+
+**Figure 4.:** (a) Placental proteins detected in 30 non-pregnant blood donors. (b) Placental proteins detected at two different time points in one individual, during third trimester and prior to pregnancy. (c) Placental proteins in two pairs of mother and newborn. (d) A comparison of unique and shared plasma protein levels (MS1 area) in mother versus newborn (two pairs), and in one female individual pre-pregnancy versus third trimester. (e) A brief overview of the proteogenomics workflow (f) An illustration of suggested placental leakage proteins and direction of transfer between mother-and-child.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41608/elife-41608-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Transfer proteins were proteins with single-amino acid variant (SAAV) peptides explained by the other individual’s genotype. The transferred proteins were distributed across the entire abundance range.
 
 We then obtained and analyzed plasma from a healthy female donor before pregnancy and during third trimester of pregnancy, again on the 3–10 strip as for the healthy donors. During pregnancy, we could detect 30 tissue enriched placental proteins in plasma, with median # of PSM´s 46 (range 1–424), which were not detected, or detected at low levels prior to pregnancy (median #of PSMs 0, range 0–31, again the outlier protein being IGF2) (Figure 4b).
 
@@ -113,7 +333,7 @@ Fetal hemoglobin was found at very high levels in the newborns (1501 and 317 PSM
 
 Fetal DNA can easily be detected in maternal plasma and is transferred across the placenta during pregnancy (Lo et al., 2007). Several proteins are also suggested to pass the placenta (Wölter et al., 2016), but providing evidence that such proteins have not been produced in the recipient has remained an analytical challenge.
 
-## Plasma proteogenomics
+### Plasma proteogenomics
 
 To pinpoint proteins that could have been transferred across the placenta, we adopted a proteogenomics approach (Figure 4e). First, we wanted to know if we could detect single amino acid variants (SAAVs) in proteins in plasma that could be used as a traceable protein fingerprint, since this has not been previously shown in plasma. We therefore collected plasma and buffy coat from two mother-newborn pairs in connection to planned Caesarean section. The buffy coats containing white blood cells (WBC) were genotyped using SNP arrays and the corresponding plasma samples were analyzed by plasma HiRIEF (3–10 strip) to detect SAAV using a customized database including all coding SNPs in dbSNP (database generation as described in detail by Zhu et al., 2018).
 
@@ -139,71 +359,71 @@ Lastly, we highlight the potential of HiRIEF-MS as a tool for plasma proteogenom
 
 ## Materials and methods
 
-## Plasma collection
+### Plasma collection
 
-## Plasma sampling
+#### Plasma sampling
 
 Peripheral venous blood from a healthy female donor was collected in EDTA tubes (BD Vacutainer K2E 7.2 mg, BD Diagnostics) and kept on ice until preparation, to prevent coagulation and minimize protein degradation. EDTA tubes were first centrifuged at 1500 × g at 4°C for 10 min. The supernatant was transferred to a new tube and centrifuged at 3000 × g at 4°C for 10 min. The plasma was then aliquoted and kept at −80°C until analysis. All samples used in this study were prepared within 1 hr of sample collection and showed no signs of hemolysis.
 
-## Optimization cohort
+#### Optimization cohort
 
 Plasma from an anonymous female donor was collected and pooled for the optimization experiment. Aliquots from the same pooled sample was used for all the experiments in the optimization study to reduce experimental variability.
 
-## Mother-child cohort
+#### Mother-child cohort
 
 Two healthy pregnant women with planned Caesarian section (due to Tokophobia) were asked to join the study. Plasma was sampled from the mothers prior to C-section, and the cord blood was taken from the child directly after birth. Plasma was prepared as described in previous section and in addition buffy coat, containing white blood cells, was collected after the plasma separated. All donors signed informed consent and the study was approved by the local ethics committee, ethical approval number 2014/1622-31/2.
 
-## Thirty healthy donors cohort
+#### Thirty healthy donors cohort
 
 Healthy men and women were asked to join the study. Ethical permits were obtained from the ethical committee at Karolinska University Hospital (Dnr 91:164 for men and Dnr 95:298 for women.) All participants signed informed consent prior to inclusion in the study.
 
-## Female longitudinal cohort
+#### Female longitudinal cohort
 
 Individuals were recruited to a longitudinal study where plasma was collected prior to influenza vaccination (day 0) and at day 1, 28, and 90 days post-vaccination. All donors signed informed consent prior to study inclusion and the study was approved by the local ethics committee, ethical approval number 2008/915-31/4 m.
 
-## Plasma sample preparation
+### Plasma sample preparation
 
-## Depletion of high-abundance proteins
+#### Depletion of high-abundance proteins
 
 Agilent Plasma 14 Multiple Removal System 4.6 × 100 (Agilent Technologies) was set up on an Agilent HPLC system (Agilent technologies) and run according to the manufacturer’s instructions. The depleted plasma flow-through was concentrated on 5 kD molecular weight cut off filter (Agilent Technologies) followed by buffer exchange >100 times to 20 mM Ammonium bicarbonate for the optimization study and 50 mM HEPES for the TMT-analyses.
 
-## Digestion and labeling
+#### Digestion and labeling
 
 Depleted plasma was denatured at 95°C for 10 min followed by reduction with dithiothreitol and alkylation with iodoacetamide at end concentrations 5 mM and 10 mM, respectively. Trypsin (Mass Spec Gold, Promega) was added at a 1:50 (w/w) ratio and digestion was performed at 37°C overnight. When applicable TMT-labeling was performed according to manufacturer’s instructions (Thermo scientific).
 
 Following digestion (and labeling if applicable), 1 ml Strata X-C 33 µm columns (Phenomenex) were used for sample clean-up. The peptides were subsequently dried in a speedvac.
 
-## HiRIEF separation
+#### HiRIEF separation
 
 Briefly, HiRIEF was performed as previously described (Branca et al., 2014). The samples were rehydrated in 8 M urea with bromophenol blue and 1% IPG buffer, and subsequently loaded to the immobilized pH gradient (IPG) strip and run according to previously published isoelectric focusing (IEF) protocols (Branca et al., 2014; Zhu et al., 2018). After IEF, the IPG strip was eluted into 72 fractions using in-house robot. The obtained fractions were dried using SpeedVac and frozen at −20°C until MS analysis.
 
-## Plasma optimization study
+### Plasma optimization study
 
-## Sample preparation
+#### Sample preparation
 
 Plasma from healthy female donor with and without PSA spiked-in was depleted and digested as described above. In total, 16 different conditions were evaluated by label-free analysis. A detailed summary of the different pI intervals and sample loads in the HiRIEF optimization can be found in Supplementary file 2. To create an MS runtime control, 72 aliquotes of each 1 μg of peptides from depleted plasma was analyzed using identical LC-MS/MS settings as for the HiRIEF analysis.
 
-## LC-ESI-MS/MS Q-Exactive
+#### LC-ESI-MS/MS Q-Exactive
 
 Online LC-MS was performed using a hybrid Q-Exactive mass spectrometer (Thermo Scientific). For each LC-MS/MS run, the auto sampler (Dionex UltiMate 3000 RSLCnano System) dispensed 15 μl of mobile phase A (3% acetonitrile, 0.1% formic acid) to the well of the microtiter plate (96 well V-bottom, polypropylene, Greiner), mixed 10 times (by repeatedly aspirating and dispensing 10 μl), and proceeded to inject 7 μl into a C18 guard desalting column (Acclaim pepmap 100, 75 µm x 2 cm, nanoViper, Thermo). After 5 min of flow at 5 µl/min with the loading pump, the 10-port valve switched to analysis mode in which the NC pump provided a flow of 250 nL/min through the guard column. The curved gradient (curve six in the Chromeleon software) then proceeded from 3% mobile phase B (95% acetonitrile, 5% water, 0.1% formic acid) to 45% B in 50 min followed by wash at 99% B and re-equilibration. Total LC-MS run time was 74 min. We used a nano EASY-Spray column (pepmap RSLC, C18, 2 µm bead size, 100 Å, 75 µm internal diameter, 50 cm long, Thermo) on the nano electrospray ionization (NSI) EASY-Spray source (Thermo) at 60°C.
 
 FTMS master scans with 70,000 resolution (and mass range 300–1700 m/z) were followed by data-dependent MS/MS (35 000 resolution) on the top five ions using higher energy collision dissociation (HCD) at 30–40% normalized collision energy. Precursors were isolated with a 2 m/z window. Automatic gain control (AGC) targets were 1e6 for MS1 and 1e5 for MS2. Maximum injection times were 100 ms for MS1 and 450 ms for MS2. The entire duty cycle lasted ~3.5 s. Dynamic exclusion was used with 60 s duration. Precursors with unassigned charge state or charge state one were excluded. An underfill ratio of 0.1% was used.
 
-## Data searches
+#### Data searches
 
 Raw MS/MS files were converted to mzML format using msconvert from the ProteoWizard tool suite (Kessner et al., 2008). Spectra were then searched in the Galaxy framework using tools from the Galaxy-P project (Goecks et al., 2010; Boekel et al., 2015), including MSGF+ (Kim and Pevzner, 2014) (v10072) and Percolator (Käll et al., 2007) (v2.10), where eight subsequent HiRIEF search result fractions were grouped for Percolator target/decoy analysis. Peptide and PSM FDR were recalculated after merging the percolator groups of eight search results into one result per HiRIEF analysis. The reference database used was the human protein subset of ENSEMBL 80. Both gene-centric and protein centric protein grouping were performed. Quantification was performed as follows: For label-free quantification, protein MS1 precursor area was calculated as the average of the top three most intense peptides, and peptide MS1 precursor area as the highest PSM area for each peptide. Inferred gene identity false discovery rates were calculated using the picked-FDR method (Savitski et al., 2015), whereas the FDR for protein level identities was calculated using the -log10 of best-peptide q-value as a score. The search settings included enzymatic cleavage of proteins to peptides, using trypsin limited to fully tryptic peptides. Carbamidomethylation of cysteine was specified as a fixed modification. The minimum peptide length was specified to be six amino acids. Variable modifications (maximum four allowed) were oxidation (of methionine) and phosphorylation (of serine-threonine-tyrosine). Searches not including phosphorylation as variable modification were also done.
 
 MS data for the optimization study was also analyzed using the MaxQuant software package (version 1.5.3.30). The Andromeda search engine (Cox and Mann, 2008) was used to search the MS/MS spectra against the human ENSEMBL database (v80) to identify corresponding proteins. Default parameters were used except for protein identification and quantification, which was limited to unique peptides. In brief, the false-discovery rate (FDR) was fixed to a threshold of 1% FDR at PSM and protein level. FDR was estimated using a target-decoy database search approach. The minimum peptide length was specified to be six amino acids. Carbamidomethylation of cysteine was specified as a fixed modification. Methionine oxidation, N-terminal protein acetylation of lysine and phosphorylation of serine/threonine/tyrosine were chosen as variable modifications. Site FDR < 1%. Data are available via ProteomeXchange with identifier PXD010899.
 
-## PSA Spike-in
+#### PSA Spike-in
 
 Purified prostate specific antigen (PSA) protein (ab78528, Abcam) was spiked in at 4 ng/mL in crude EDTA plasma from healthy female donor.
 
-## PSA ELISA
+#### PSA ELISA
 
 To ensure that PSA was not removed during the depletion process, intact PSA protein was measured using ELISA in female plasma spiked-in with PSA at 4 ng/mL, depleted spiked-in plasma and two samples from patients diagnosed with metastatic prostate cancer (serving as positive controls) using ELISA kit R and D Systems #DKK300.
 
-## PSA LC-MRM analysis
+#### PSA LC-MRM analysis
 
 Fraction 30–35 from the HiRIEF 4.0–4.25 strip from the optimization experiment was analyzed using LC-MRM. Total peptide load on the strip was 0.6 mg of depleted female plasma with PSA spiked-in (described above).
 
@@ -211,39 +431,39 @@ A Capillary pump (from an Agilent 1200 LC system) was used to load sample into a
 
 All MRM data were analyzed with Skyline platform and each peak was manually inspected and integrated. Five transitions were used to identify the target peptide and only the area of the most abundant transition was used to quantify the PSA. The concentration of endogenous peptides was calculated by the ratio of heavy area to endogenous area and the known concentration of heavy-spiked-in peptide. Peptide concentration reported in fmol/µl was converted to ng/ml using the molecular weight of the whole protein.
 
-## PredpI algorithm
+#### PredpI algorithm
 
 To predict pI of identified peptides during the optimization, we used the Pred pI Algorithm available as Supplementary software in Branca et al. (2014). The PredpI algorithm builds on a pI prediction algorithm used for proteins (Bjellqvist et al., 1993) that is currently the basis of the Compute pI tool in Expasy (http://web.expasy.org/compute_pi/).
 
-## Reproducibility: healthy donors study
+### Reproducibility: healthy donors study
 
-## Sample preparation
+#### Sample preparation
 
 Thirty plasma samples were depleted, digested and TMT-labeled as described above. An internal standard was created by pooling an aliquote from each of the 30 samples, in order to connect the four TMT sets together and to enable reproducibility. An overview of the TMT-labelling scheme can be found in Figure 1—figure supplement 6a. In total, 1 mg of peptide samples were loaded per pH 3–10 strip and separated as described in the HiRIEF section above.
 
-## LC-ESI-MS/MS Q-Exactive
+#### LC-ESI-MS/MS Q-Exactive
 
 Online LC-MS was performed using a hybrid Q-Exactive mass spectrometer (Thermo Scientific). For each LC-MS/MS run, the auto sampler (Dionex UltiMate 3000 RSLCnano System) dispensed 15 μl of mobile phase A (3% acetonitrile, 0.1% formic acid) to the well of the microtiter plate (96 well V-bottom, polypropylene, Greiner), mixed 10 times (by repeatedly aspirating and dispensing 10 μl), and proceeded to inject 7 μl into a C18 guard desalting column (Acclaim pepmap 100, 75 µm x 2 cm, nanoViper, Thermo). After 5 min of flow at 5 µl/min with the loading pump, the 10-port valve switched to analysis mode in which the NC pump provided a flow of 250 nL/min through the guard column. The curved gradient (curve six in the Chromeleon software) then proceeded from 3% mobile phase B (95% acetonitrile, 5% water, 0.1% formic acid) to 45% B in 50 min followed by wash at 99% B and re-equilibration. Total LC-MS run time was 74 min. We used a nano EASY-Spray column (pepmap RSLC, C18, 2 µm bead size, 100 Å, 75 µm internal diameter, 50 cm long, Thermo) on the nano electrospray ionization (NSI) EASY-Spray source (Thermo) at 60°C.
 
 FTMS master scans with 70,000 resolution (and mass range 300–1700 m/z) were followed by data-dependent MS/MS (35 000 resolution) on the top five ions using higher energy collision dissociation (HCD) at 30–40% normalized collision energy. Precursors were isolated with a 2 m/z window. Automatic gain control (AGC) targets were 1e6 for MS1 and 1e5 for MS2. Maximum injection times were 100 ms for MS1 and MS2 150. The entire duty cycle lasted ~3.5 s. Dynamic exclusion was used with 60 s duration. Precursors with unassigned charge state or charge state one were excluded. An underfill ratio of 0.1% was used.
 
-## Data searches
+#### Data searches
 
 Raw MS/MS files were converted to mzML format using msconvert from the ProteoWizard tool suite (Kessner et al., 2008). Spectra were then searched in the Galaxy framework using tools from the Galaxy-P project (Goecks et al., 2010; Boekel et al., 2015) including MSGF+ (Kim and Pevzner, 2014) (v10072) and Percolator (Käll et al., 2007) (v2.10), where eight subsequent HiRIEF search result fractions were grouped for Percolator target/decoy analysis. Peptide and PSM FDR were recalculated after merging the percolator groups of eight search results into one result per TMT set. The reference database used was the human protein subset of ENSEMBL 80. Quantification of isobaric reporter ions was done using OpenMS project's IsobaricAnalyzer (Röst et al., 2016) (v2.0). Both gene centric and protein centric protein groupings were performed. Quantification on TMT reporter ions in MS2 was for both protein and peptide level quantification based on median of PSM ratios, limited to PSMs mapping only to one protein and with an FDR q-value <0.01. Inferred gene identity false discovery rates were calculated using the picked-FDR method (Savitski et al., 2015), whereas the FDR for protein level identities was calculated using the -log10 of best-peptide q-value as a score. The search settings included enzymatic cleavage of proteins to peptides using trypsin, limited to fully tryptic peptides. Carbamidomethylation of cysteine was specified as a fixed modification. The minimum peptide length was specified to be six amino acids. Variable modifications (maximum four allowed) were oxidation (of methionine) and phosphorylation (of serine-threonine-tyrosine). Searches not including phosphorylation as a variable modification were also done. Data are available via ProteomeXchange with identifier PXD010899.
 
-## Reproducibility: female longitudinal
+### Reproducibility: female longitudinal
 
-## Sample preparation
+#### Sample preparation
 
 Plasma samples were depleted, digested and TMT-labeled as described above. An internal standard was created to connect the five TMT sets together. An overview of the TMT-labeling scheme can be found in Figure 1—figure supplement 7a. In total 1 mg of peptide sample were loaded per pH 3–10 strip and separated as described in the HiRIEF section above. Pooling scheme for the condensed HiRIEF analysis can be found in Supplementary file 12.
 
-## LC-ESI-MS/MS Q-Exactive
+#### LC-ESI-MS/MS Q-Exactive
 
 Online LC-MS was performed using a Dionex UltiMate 3000 RSLCnano System coupled to a Q-Exactive mass spectrometer (Thermo Scientific). Each plate well was dissolved in 20 μl solvent A and 10 μl were injected. Samples were trapped on a C18 guard-desalting column (Acclaim PepMap 100, 75 μm x 2 cm, nanoViper, C18, 5 µm, 100 Å), and separated on a 50cm-long-C18 column (Easy spray PepMap RSLC, C18, 2 μm, 100 Å, 75 μm x 50 cm). The nano capillary solvent A was 95% water, 5%DMSO, 0.1% formic acid; and solvent B was 5% water, 5% DMSO, 90% acetonitrile, 0.1% formic acid. At a constant flow of 0.25 μl min−1, the curved gradient (curve six in the Chromeleon software, running under Xcalibur) went from 2% B up to 40% B in each fraction as shown in Supplementary file 12, followed by a steep increase to 100% B in 5 min, and subsequent re-equilibration with 2% B.
 
 FTMS master scans with 70,000 resolution (and mass range 300–1600 m/z) were followed by data-dependent MS/MS (35 000 resolution) on the top five ions using higher energy collision dissociation (HCD) at 30% normalized collision energy. Precursors were isolated with a 2 m/z window and an offset of 0.5 m/z. Automatic gain control (AGC) targets were 1e6 for MS1 and 1e5 for MS2. Maximum injection times were 100 ms for MS1 and 450 ms for MS2. Dynamic exclusion was used with 30 s duration. Precursors with unassigned charge state or charge state 1, 7, 8, >8 were excluded.
 
-## Data searches
+#### Data searches
 
 Raw MS/MS files were converted to mzML format and corrected for mass shifts using the msconvert tool from the ProteoWizard suite (Keshishian et al., 2007). Spectra were then searched by MSGF+ (Kim and Pevzner, 2014), and post processed with Percolator (Käll et al., 2007) in a Nextflow pipeline (Di Tommaso et al., 2017), using a concatenated target-decoy strategy.
 
@@ -251,44 +471,44 @@ The reference databases used were the human protein database of Swissprot at 201
 
 The full pipeline (version ee45bf6) is available at https://github.com/lehtiolab/galaxy-workflows/ (copy archived at https://github.com/elifesciences-publications/galaxy-workflows; Boekel, 2019).
 
-## Proteogenomics analysis of mother and child cohort
+### Proteogenomics analysis of mother and child cohort
 
-## Sample preparation
+#### Sample preparation
 
 Plasma samples from two mothers and two babies were subjected to depletion as described above. In this analysis, both the depleted fraction and the proteins bound to the column were analyzed using HiRIEF 3–10 strips as described in the HiRIEF section above. The bound fraction was included because we did not want to exclude any of the high-abundance proteins in the transfer analysis. In total 1 mg of digested peptides were loaded on each strip and analyzed with label-free mass spectrometry.
 
-## LC-ESI-MS/MS Q-Exactive
+#### LC-ESI-MS/MS Q-Exactive
 
 Online LC-MS was performed using a hybrid Q-Exactive mass spectrometer (Thermo Scientific). For each LC-MS/MS run, the auto sampler (Dionex UltiMate 3000 RSLCnano System) dispensed 15 μl of mobile phase A (3% acetonitrile, 0.1% formic acid) to the well of the microtiter plate (96-well V-bottom, polypropylene, Greiner), mixed 10 times (by repeatedly aspirating and dispensing 10 μl), and proceeded to inject 7 μl into a C18 guard desalting column (Acclaim pepmap 100, 75 µm x 2 cm, nanoViper, Thermo). After 5 min of flow at 5 µl/min with the loading pump, the 10-port valve switched to analysis mode in which the NC pump provided a flow of 250 nL/min through the guard column. The curved gradient (curve six in the Chromeleon software) then proceeded from 3% mobile phase B (95% acetonitrile, 5% water, 0.1% formic acid) to 45% B in 50 min followed by wash at 99% B and re-equilibration. Total LC-MS run time was 74 min. We used a nano EASY-Spray column (pepmap RSLC, C18, 2 µm bead size, 100 Å, 75 µm internal diameter, 50 cm long, Thermo) on the nano electrospray ionization (NSI) EASY-Spray source (Thermo) at 60°C.
 
 FTMS master scans with 70,000 resolution (and mass range 300–1700 m/z) were followed by data-dependent MS/MS (35,000 resolution) on the top five ions using higher energy collision dissociation (HCD) at 30–40% normalized collision energy. Precursors were isolated with a 2 m/z window. Automatic gain control (AGC) targets were 1e6 for MS1 and 1e5 for MS2. Maximum injection times were 100 ms for MS1 and 450 ms for MS2. The entire duty cycle lasted ~3.5 s. Dynamic exclusion was used with 60 s duration. Precursors with unassigned charge state or charge state one were excluded. An underfill ratio of 0.1% was used.
 
-## Data searches
+#### Data searches
 
 Raw MS/MS files were converted to mzML format using msconvert from the ProteoWizard tool suite (Kessner et al., 2008). Spectra were then searched in the Galaxy framework using tools from the Galaxy-P project (Goecks et al., 2010; Boekel et al., 2015), including MSGF+ (Kim and Pevzner, 2014) (v10072) and Percolator (Käll et al., 2007) (v2.10), where eight subsequent HiRIEF search result fractions were grouped for Percolator target/decoy analysis. Peptide and PSM FDR were recalculated after merging the percolator groups of eight search results into one result per HiRIEF analysis. The reference database used was the human protein subset of ENSEMBL 80. Both gene centric and protein centric protein grouping was performed. Quantification was performed as follows: for label-free quantification, protein MS1 precursor area was calculated as the average of the top-three most intense peptides, and peptide MS1 precursor area as the highest PSM area for each peptide. Inferred gene identity false discovery rates were calculated using the picked-FDR method (Savitski et al., 2015), whereas the FDR for protein level identities was calculated using the -log10 of best-peptide q-value as a score. The search settings included enzymatic cleavage of proteins to peptides using trypsin limited to fully tryptic peptides. Carbamidomethylation of cysteine was specified as a fixed modification. The minimum peptide length was specified to be six amino acids. Variable modifications (maximum four allowed) were oxidation (of methionine) and phosphorylation (of serine-threonine-tyrosine).
 
-## Proteogenomics search pipeline/SpectrumAI
+#### Proteogenomics search pipeline/SpectrumAI
 
 The MS raw data was searched in customized peptide database including non-synonymous SNPs annotated in CanProVar 2.0 database, the detected variants were curated using the SpectrumAI pipeline (Zhu et al., 2018). In total across the four individuals, we detected 384 unique peptides with SAAV from 215 different proteins where the corresponding SNP was also included on the SNParray. Out of these, 240 SAAV peptides (63%) had genomic support from SNP array. We then removed 11 peptides with N > D, D < N or Q > E, E < Q substitutions since the low mass difference between these amino acids increases the risk of co-isolation of isotopic variants in the MS analysis and generation of false positives.
 
 The genotypes of these detected SNP peptides were determined by SNP array data, and classified into three categories: homo_snp, hetero_snp and wild_type based on the following rules. Wild_type is defined that both alleles are the same to the nucleotide in human reference genome hg19; hetero_snp with one of the allele changed; and homo_snp with both alleles changed. The reference allele sequence for each SNP was extracted from the file snp142CodingDbSnp.txt downloaded from UCSC table browser. Variant peptide transfer between mom and baby is inferred when the SNP peptide were detected both in mom and baby, but SNP array genotype data indicates one of them is wild_type and the alternative allele is carried in the other.
 
-## DNA preparation
+#### DNA preparation
 
 DNA were prepared from white blood cells using Qiagen DNAeasy blood and tissue kit (product number 69504) according to manufacturer’s instructions.
 
-## SNP analysis
+#### SNP analysis
 
 Purified DNA was sent to the SNP and SEQ Technology Platform (Uppsala University, Dept. of Medical Sciences, Molecular Medicine, BMC, Husargat. 3, 752 37 Uppsala, Sweden) for genotyping. The analysis was performed using the Illumina Infinium OmniExpressExome-8 v1.4, with 960 919 SNP markers and the Illumina Infinium assay. The results were analyzed using the software GenomeStudio 2011.1 from Illumina Inc. BeadChip type: InfiniumOmniExpressExome-8v1-4_A1 Manifest file: InfiniumOmniExpressExome-8v1-4_A1.bpm, Genome build version: 37 Cluster file ICF InfiniumOmniExpressExome-8v1-4_A1_ClusterFile.egt’.
 
-## Statistical analyses
+### Statistical analyses
 
 No statistical method was used to predetermine sample size. Descriptive statistics, t-tests and correlations were performed using GraphPad Prism version 6 (GraphPad Software, La Jolla, CA), Microsoft Excel 2011, and R statistical computing software (https://www.r-project.org). Significance assessed by Student's t-test was FDR-adjusted (Benjamini-Hochberg method) to correct for multiple testing. Heatmap visualizations and hierarchical clustering (Pearson correlation) were performed using the online tool Morpheus (software.broadinstitute.org/Morpheus). Annotations were extracted from BioMart (www.ensembl.org/biomart) and Ingenuity Pathway Analysis (IPA) software (QIAGEN Redwood City, www.qiagen.com/ingenuity). Gene Ontology annotation of ranked lists was performed using the online tool GOrilla (Gene Ontology enRIchment anaLysis and visuaLizAtion tool, http://cbl-gorilla.cs.technion.ac.il) (Eden et al., 2009; Eden et al., 2007). Comparative gene ontology (GO) enrichment analyses of multiple lists were performed using the online tool ToppCluster, https://toppcluster.cchmc.org/publications.jsp (Kaimal et al., 2010).
 
-## Protein abundance plots
+### Protein abundance plots
 
 We examined the presence of tissue leakage proteins, FDA-approved drug targets and cancer-related gene products in plasma by comparing our gene product data with the Human Protein Atlas (www.proteinatlas.org) tissue enriched (enriched defined as at least five-fold higher mRNA levels in a particular tissue as compared to all other tissues, which is a stricter definition than ‘tissue enhanced’) proteome database. Figure 3c has been adapted from: https://commons.wikimedia.org/wiki/File:Female_shadow_anatomy_without_labels.png. In addition, we also mined our data for proteins used in a recently described multi-analyte blood test (CancerSEEK test [Cohen et al., 2018]).
 
-## Data availability
+### Data availability
 
 Data are available via ProteomeXchange (http://www.proteomexchange.org/) with identifier PXD010899.

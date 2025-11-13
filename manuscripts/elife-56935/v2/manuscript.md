@@ -51,9 +51,29 @@ We next assessed if S100β-GFP;NG2-dsRed mice could also be used to study PSCs a
 
 To determine the relationship between NG2 expression and PSC differentiation, we analyzed NG2 expression in S100β-GFP+ Schwann cells during the course of NMJ development in the EDL muscle of S100β-GFP;NG2-dsRed mice (Figure 3A and Figure 3—figure supplement 1). We observed the presence of S100β-GFP+ cells at the NMJ as early as embryonic day 15 (E15) with 100% of NMJs having at least one S100β-GFP+ cell by post-natal day 9 (Figure 3A,B). During the embryonic developmental stages, we observed that NMJs are exclusively populated by S100β-GFP+ cells that do not express NG2-dsRed (Figure 3C). At post-natal day 0 (P0), however, we observed NG2-dsRed expression in a small subset of S100β-GFP+ cells (Figure 3A,C). Notably, the proportion of NMJs with S100β-GFP+;NG2-dsRed+ cells sharply increased between the ages of P0 and P9, coinciding with the period of NMJ maturation in mouse skeletal muscles (Figure 3C). By P21, when NMJ maturation in mice is near completion (Sanes and Lichtman, 1999), we observed S100β-GFP+;NG2-dsRed+ cells to be exclusively present at NMJs (Figure 3C). At this age, the number of S100β-GFP+;NG2-dsRed+ PSCs reached an average of 2.3 per NMJ and this remained unchanged in healthy young adult mice (Figure 3A,D). To confirm that dsRed expression from the NG2 promoter denotes the temporal and spatial transcriptional control of the NG2 gene in S100β-GFP;NG2-dsRed mice, we immunostained for NG2 protein. We found NG2 protein present at mature NMJs but not in NMJs of E18 mice with IHC (Figure 3—figure supplement 2). Thus, the induced expression of NG2 during the course of NMJ development in Schwann cells located proximally to the NMJ provides further evidence that NG2 is a marker of mature, differentiated S100β+ PSCs. It is possible that PSCs upregulate NG2 during development in order to restrict motor axon growth at the NMJ (Filous et al., 2014). Induced NG2 expression during NMJ development along with the constant presence of S100β-GFP+ cells (S100β-GFP+ or S100β-GFP+;NG2-dsRed+) and absence of single labeled NG2-dsRed+ cells at NMJs at every observed developmental time point (Figure 3B,C) strongly support previous studies indicating that PSCs originate from Schwann cells (Lee et al., 2017).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/56935/elife-56935-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative images of NMJs, identified by nAChR clusters with fBTX (blue), in developing (E15, P0, P6, P9, P21) and adult S100β-GFP (green);NG2-dsRed (red) transgenic EDL. (B) The number of NMJs populated by at least one S100β-GFP+ cell increases between the ages of E15 and P9, at which point all observed NMJs have at least one S100β-GFP+ cell. (C) Analysis of NMJs that contain at least one single labeled S100β-GFP+ cell (green bar), at least one double labeled S100β-GFP+;NG2-dsRed+ cell (yellow bar) or a combination of single labeled S100β-GFP+ cells and double labeled S100β-GFP+;NG2-dsRed+ cells (green/yellow bar) shows that developing NMJs are exclusively populated by S100β-GFP+ cells in the embryonic stages and are increasingly populated by S100β-GFP+;NG2-dsRed+ cells as the NMJ develops. (D) The average number of PSCs per NMJ increases during development. Error bar = standard error of the mean. Scale bar = 10 μm. *=p < 0.05,***=P < 0.001; ****=P < 0.0001. Asterisks represent comparisons with P0 unless otherwise noted.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56935/elife-56935-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Scale bar = 10 μm.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/56935/elife-56935-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Immunohistochemical labeling of NG2 revealed that S100β-GFP+ cells at NMJs do not express NG2 in E18 S100β-GFP EDL muscle. (B) In the adult S100β-GFP EDL muscle, however, NG2 is detected in S100β-GFP+ cells at NMJs. Scale bar = 10 μm.
+
 To gain insights into the rules that govern the distribution of PSCs at NMJs we compared PSC density in EDL, soleus, and diaphragm muscles to determine if PSC density is similar across muscles with varying NMJ sizes, fiber types and functional demands. Here, we observed similar PSC densities in each muscle type (Figure 4—figure supplement 1), suggesting that the number of PSCs directly correlates with the size of the NMJ and not the functional characteristics or fiber type composition of the muscles with which they are associated.
 
 We next examined the spatial distribution of PSCs at the NMJ using the Nearest Neighbor (NN) analysis. This analysis measures the linear distance between neighboring cells in order to determine the regularity of spacing (Wassle and Riemann, 1978; Cook, 1996), quantified using the regularity index. In this analysis, randomly distributed groups of cells yield a nearest neighbor regularity index (NNRI) of 1.91 while those with nonrandom, regularly ordered distributions yield higher NNRI values (Reese and Keeley, 2015; Figure 4A). We found that the spacing of PSCs yielded high NNRI values and thus maintained ordered, non-random distributions at NMJs in the EDL muscle of adult mice. Moreover, this ordered distribution was maintained regardless of the overall number of PSCs at a given NMJ (Figure 4B–D). These observations are in accord with a published study indicating that PSCs occupy distinct territories at adult NMJs (Brill et al., 2011). In addition, these data strongly suggest that presynaptic, postsynaptic, and/or PSC-PSC mechanisms of communication dictate the spatial distribution of PSCs.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/56935/elife-56935-fig4-v2.jpg)
+
+**Figure 4.:** (A) The nearest neighbor (NN) distance, or the distance between a PSC and the closest neighboring PSC, is represented by the red line. The distance represented by the purple line is not considered for NN analysis. The distribution of NN values (shown in panels B, C, and D) is used to determine the degree of order in PSC distribution, as represented by the nearest neighbor regularity index (NNRI). Distribution patterns with an NNRI value greater than 1.91 are considered to be non-random. (B–D) Nearest neighbor distributions of S100-GFP+;NG2-dsRed+ PSCs in adult (P60) EDL muscle show that PSC distributions have orderly patterns of distribution with NNRI > 1.91 regardless of whether they are located at an NMJ with 2 PSCs (B), 3 PSCs (C), or 4 PSCs (D).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56935/elife-56935-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Representative images of NMJs, identified by nAChR clusters with fBTX (blue), in the (A) EDL and (B) diaphragm of adult S100β-GFP (green);NG2-dsRed (red) mice. (C) An analysis of the average number of PSCs at an NMJ shows that there are fewer PSCs at NMJs in the diaphragm as compared to the EDL and soleus. (D) An analysis of NMJs based on PSC number shows that the diaphragm has more NMJs with 1 PSC and fewer NMJs with 3 PSCs as compared to EDL and soleus. (E) When standardizing for NMJ size, the density of PSCs at NMJs is unchanged between the EDL, soleus and diaphragm. Error bar = standard error of the mean. Scale bar = 10 μm.
 
 The ability to distinguish PSCs from all other Schwann cells makes it possible to identify genes that are either preferentially or specifically expressed in PSCs. We deployed fluorescence-activated cell sorting (FACS) to separately isolate double labeled S100β-GFP+;NG2-dsRed+ PSCs, single-labeled S100β-GFP+ Schwann cells, and single-labeled NG2-dsRed+ cells (including α-SMA pericytes and Tuj1+ precursor cells [Birbrair et al., 2013b]) from juvenile (P15-P22) S100β-GFP;NG2-dsRed transgenic mice. We then utilized RNA-Sequencing (RNA Seq) to compare the transcriptional profile of PSCs with the other two groups (Figure 5A). Light microscopy and expression analysis of GFP and dsRed using quantitative PCR (qPCR) confirmed that only cells of interest were sorted (Figure 5A–B). This analysis revealed a unique transcriptional profile for PSCs (Figure 5C). Notably, we found 567 genes enriched in PSCs that were not previously recognized to be associated with PSCs, glial cells or synapses (Supplementary file 1) using Ingenuity Pathway Analysis (IPA). We also found a number of genes preferentially expressed by PSCs with known roles at synapses (Mozer and Sandstrom, 2012; Fox and Umemori, 2006; Rafuse et al., 2000; Ranaivoson et al., 2019; Shapiro et al., 2007; Peng et al., 2010; Supplementary file 1). Providing additional insights about the function of PSCs, IPA revealed synaptogenesis, glutamate receptor, and axon guidance signaling as top canonical pathways under transcriptional regulation (Figure 5D).
 
@@ -62,6 +82,269 @@ The ability to distinguish PSCs from all other Schwann cells makes it possible t
 **Figure 5.:** (A) Skeletal muscle from juvenile S100B-GFP;NG2-dsRed mice was dissociated and S100-GFP+;NG2-dsRed+ PSCs, S100β-GFP+ Schwan cells, and NG2-dsRed+ cells were sorted by FACS for RNA seq and qPCR. Representative fluorescence intensity gates for sorting of S100β-GFP+, NG2-dsRed+ and S100β-GFP+;NG2-dsRed+ cells are indicated in the scatter plot. GFP (y-axis) and dsRed (x-axis) fluorescence intensities were used to select gates for S100β-GFP+ cells (outlined in orange), NG2-dsRed+ cells (outlined in teal), and double labeled S100β-GFP+;NG2-dsRed+ cells (outlined in purple). Representative images of cells from sorted populations are shown. (B) GFP and dsRed qPCR was performed on FACS isolated cells to confirm specificity of sorting gates. (C) A heat map of RNA-seq results depicting genes with at least 5 counts and expression differences with a p-value of less than 0.01 between any 2 cell types reveals a distinct transcriptome in S100β-GFP+;NG2-dsRed+ PSCs versus S100β-GFP+ Schwann cells and NG2-dsRed+ cells. (D) Synaptogenesis and axon guidance signaling are among the most influential signaling pathways in PSCs according to Ingenuity Pathway Analysis of genes enriched in PSCs versus S100β-GFP+, and NG2-dsRed+ cells. (E) qPCR was performed on FACS isolated S100-GFP+;NG2-dsRed+ PSCs, S100β-GFP+ Schwan cells, and NG2-dsRed+ cells to verify mRNA levels of RNA seq identified PSC enriched genes. In each analysis, transcripts were not detected or detected at low levels in S100β-GFP+ Schwann cells and NG2-dsRed+ cells. Error bar = standard error of the mean. Scale bar = 10 µm.
 
 We next cross-referenced our transcriptomic data with a list of genes compiled from published studies indicating enrichment or functional roles in PSCs (Young et al., 2005; Reynolds and Woolf, 1992; Robitaille, 1995; Robitaille et al., 1997; Rochon et al., 2001; Georgiou and Charlton, 1999; Trachtenberg and Thompson, 1996; Morris et al., 1999; Woldeyesus et al., 1999; Riethmacher et al., 1997; Personius et al., 2016; Park et al., 2017; Pinard et al., 2003; Descarries et al., 1998; Hess et al., 2007; Heredia et al., 2018; Darabid et al., 2018; Musarella et al., 2006; De Winter et al., 2006; Feng and Ko, 2008; Yang et al., 2001; Petrov et al., 2014; Robitaille et al., 1996; Gorlewicz et al., 2009; Wright et al., 2009). This analysis identified 27 genes expressed in isolated S100β-GFP+;NG2-dsRed+ PSCs that were previously shown to be associated with PSCs (Table 1). These included genes involved in detection and modulation of synaptic activity such as adenosine (Robitaille, 1995; Rochon et al., 2001), P2Y (Robitaille, 1995; Heredia et al., 2018; Darabid et al., 2018), acetylcholine (Robitaille et al., 1997; Petrov et al., 2014; Wright et al., 2009) and glutamate receptors (Pinard et al., 2003), Butyrylcholinesterase (BChE) (Petrov et al., 2014), and L-type calcium channels (Robitaille et al., 1996). Additionally, genes involved in NMJ development, synaptic pruning, and maintenance including agrin, 2',3'-cyclic nucleotide 3' phosphodiesterase (CNP) (Georgiou and Charlton, 1999), Erb-b2 receptor tyrosine kinase 2 (Erbb2) (Trachtenberg and Thompson, 1996; Morris et al., 1999; Woldeyesus et al., 1999), Erbb3 (Trachtenberg and Thompson, 1996; Riethmacher et al., 1997) GRB2-associated protein 1 (Gab1) (Park et al., 2017), myelin-associated glycoprotein (MAG) (Georgiou and Charlton, 1999), and myelin protein zero (Mpz) (Georgiou and Charlton, 1999) were detected in PSCs.
+
+**Table 1.**
+ Genes with functional roles in PSCs identified by RNA seq analysis of isolated PSCs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Description</th>
+      <th>Proposed role</th>
+      <th>Read count</th>
+      <th>Log2 change vs NG2-dsRed+</th>
+      <th>Log2 change vs S100β-GFP+</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Adora2a</td>
+      <td>Adenosine A2a receptor</td>
+      <td>Detect/modulate synaptic activity</td>
+      <td>8.1</td>
+      <td>−3.68</td>
+      <td>−2.67</td>
+      <td>(Robitaille, 1995; Rochon et al., 2001)</td>
+    </tr>
+    <tr>
+      <td>Adora2b</td>
+      <td>Adenosine A2b receptor</td>
+      <td>Detect/modulate synaptic activity</td>
+      <td>9.2</td>
+      <td>−3.16</td>
+      <td>−4.55</td>
+      <td>(Robitaille, 1995; Rochon et al., 2001)</td>
+    </tr>
+    <tr>
+      <td>Agrn</td>
+      <td>Agrin</td>
+      <td>AChR aggregation</td>
+      <td>2049.7</td>
+      <td>1.16</td>
+      <td>2.93</td>
+      <td>(Georgiou and Charlton, 1999)</td>
+    </tr>
+    <tr>
+      <td>Bche</td>
+      <td>Butyrylcholinesterase</td>
+      <td>Modulate synaptic ACh levels</td>
+      <td>7191.0</td>
+      <td>7.89</td>
+      <td>7.21</td>
+      <td>(Trachtenberg and Thompson, 1996)</td>
+    </tr>
+    <tr>
+      <td>Cacna1c</td>
+      <td>L type Calcium channel, alpha 1 c</td>
+      <td>Detect/modulate synaptic activity</td>
+      <td>14.3</td>
+      <td>−4.92</td>
+      <td>−2.10</td>
+      <td>(Morris et al., 1999)</td>
+    </tr>
+    <tr>
+      <td>Cacna1d</td>
+      <td>L type Calcium channel, alpha 1d</td>
+      <td>Detect/modulate synaptic activity</td>
+      <td>18.4</td>
+      <td>−0.42</td>
+      <td>−1.49</td>
+      <td>(Morris et al., 1999)</td>
+    </tr>
+    <tr>
+      <td>Cd44</td>
+      <td>CD44 antigen</td>
+      <td>Mediates cell-cell interactions</td>
+      <td>1249.2</td>
+      <td>0.75</td>
+      <td>−1.22</td>
+      <td>(Woldeyesus et al., 1999)</td>
+    </tr>
+    <tr>
+      <td>Chrm1</td>
+      <td>Muscarinic acetylcholine receptor M1</td>
+      <td>Detect/modulate synaptic activity</td>
+      <td>14.8</td>
+      <td>n.d.</td>
+      <td>0.89</td>
+      <td>(Robitaille et al., 1997; Riethmacher et al., 1997)</td>
+    </tr>
+    <tr>
+      <td>Cnp</td>
+      <td>2',3'-cyclicnucleotide 3' phosphodiesterase</td>
+      <td>Anchors axon terminal at NMJ</td>
+      <td>2990.2</td>
+      <td>4.23</td>
+      <td>1.66</td>
+      <td>(Personius et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>Erbb2</td>
+      <td>Erb-b2 receptor tyrosine kinase 2</td>
+      <td>Synaptogenesis/maintenance</td>
+      <td>228.9</td>
+      <td>0.84</td>
+      <td>1.37</td>
+      <td>(Park et al., 2017; Pinard et al., 2003; Descarries et al., 1998)</td>
+    </tr>
+    <tr>
+      <td>Erbb3</td>
+      <td>Erb-b2 receptor tyrosine kinase 3</td>
+      <td>Synaptogenesis/maintenance</td>
+      <td>2471.3</td>
+      <td>7.05</td>
+      <td>4.46</td>
+      <td>(Park et al., 2017; Hess et al., 2007)</td>
+    </tr>
+    <tr>
+      <td>GAb1</td>
+      <td>GRB2-associated protein 1</td>
+      <td>Synaptic pruning</td>
+      <td>693.8</td>
+      <td>0.31</td>
+      <td>1.57</td>
+      <td>(Heredia et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>Grm1</td>
+      <td>Glutamate receptor, metabotropic 1</td>
+      <td>Detect/modulate synaptic activity</td>
+      <td>9.2</td>
+      <td>n.d.</td>
+      <td>0.80</td>
+      <td>(Darabid et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>Grm5</td>
+      <td>Glutamate receptor, metabotropic 5</td>
+      <td>Detect/modulate synaptic activity</td>
+      <td>38.0</td>
+      <td>n.d.</td>
+      <td>2.84</td>
+      <td>(Darabid et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>LNX1</td>
+      <td>Ligand of numb-protein X 1</td>
+      <td>Regulate NRG1 signaling</td>
+      <td>37.5</td>
+      <td>−2.29</td>
+      <td>−0.70</td>
+      <td>(Peper et al., 1974)</td>
+    </tr>
+    <tr>
+      <td>MAG</td>
+      <td>Myelin-associated glycoprotein</td>
+      <td>Synaptogenesis/maintenance</td>
+      <td>136.0</td>
+      <td>3.12</td>
+      <td>−0.55</td>
+      <td>(Personius et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>Mpz</td>
+      <td>Myelin protein zero</td>
+      <td>Synaptogenesis/maintenance</td>
+      <td>4590.7</td>
+      <td>2.54</td>
+      <td>−0.79</td>
+      <td>(Personius et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>Nos2</td>
+      <td>Nitric oxide synthase 2, inducible</td>
+      <td>Synaptogenesis/modulate synaptic activity</td>
+      <td>13.4</td>
+      <td>−2.91</td>
+      <td>−1.28</td>
+      <td>(Musarella et al., 2006)</td>
+    </tr>
+    <tr>
+      <td>Nos3</td>
+      <td>Nitric oxide synthase 3, endothelial cell</td>
+      <td>Synaptogenesis/modulate synaptic activity</td>
+      <td>48.6</td>
+      <td>−2.69</td>
+      <td>−0.68</td>
+      <td>(Musarella et al., 2006)</td>
+    </tr>
+    <tr>
+      <td>P2ry1</td>
+      <td>Purinergic receptor P2Y1</td>
+      <td>Detect/modulate synaptic activity, synapse elimination</td>
+      <td>144.4</td>
+      <td>0.52</td>
+      <td>2.21</td>
+      <td>(Robitaille, 1995; De Winter et al., 2006; Feng and Ko, 2008)</td>
+    </tr>
+    <tr>
+      <td>P2ry2</td>
+      <td>Purinergic receptor P2Y2</td>
+      <td>Detect/modulate synaptic activity</td>
+      <td>24.0</td>
+      <td>−1.55</td>
+      <td>−1.04</td>
+      <td>(Robitaille, 1995)</td>
+    </tr>
+    <tr>
+      <td>P2ry10b</td>
+      <td>P2Y receptor family member P2Y10b</td>
+      <td>Detect/modulate synaptic activity</td>
+      <td>10.0</td>
+      <td>−1.25</td>
+      <td>−3.14</td>
+      <td>(Robitaille, 1995)</td>
+    </tr>
+    <tr>
+      <td>P2ry12</td>
+      <td>P2Y receptor family member P2Y12</td>
+      <td>Detect/modulate synaptic activity</td>
+      <td>273.5</td>
+      <td>n.d.</td>
+      <td>3.70</td>
+      <td>(Robitaille, 1995)</td>
+    </tr>
+    <tr>
+      <td>P2ry14</td>
+      <td>P2Y receptor family member P2Y14</td>
+      <td>Detect/modulate synaptic activity</td>
+      <td>13.6</td>
+      <td>−3.49</td>
+      <td>−2.06</td>
+      <td>(Robitaille, 1995)</td>
+    </tr>
+    <tr>
+      <td>S100b</td>
+      <td>S100 protein beta</td>
+      <td>Intracellular signaling</td>
+      <td>1788.3</td>
+      <td>5.34</td>
+      <td>3.12</td>
+      <td>(Reynolds and Woolf, 1992)</td>
+    </tr>
+    <tr>
+      <td>Sema3a</td>
+      <td>Semaphorin 3a</td>
+      <td>Detect/modulate synaptic activity</td>
+      <td>136.6</td>
+      <td>2.95</td>
+      <td>1.07</td>
+      <td>(Yang et al., 2001)</td>
+    </tr>
+    <tr>
+      <td>Tgfb1</td>
+      <td>Transforming growth factor, beta 1</td>
+      <td>AChR aggregation</td>
+      <td>173.2</td>
+      <td>−1.08</td>
+      <td>−1.90</td>
+      <td>(Petrov et al., 2014)</td>
+    </tr>
+  </tbody>
+</table>
 
 We deployed quantitative PCR (qPCR) to validate preferential expression of select genes in PSCs. To do so, we obtained RNA from S100β-GFP+;NG2-dsRed+ PSCs, single-labeled S100β-GFP+ Schwann cells, and single-labeled NG2-dsRed+ cells isolated using FACS from juvenile S100β-GFP;NG2-dsRed transgenic mice. We examined eight genes identified by RNA seq as being highly enriched in PSCs. This included newly identified genes (Ajap1, Col20a1, FoxD3, Nrxn1, PDGFa, and Pdlim4) and genes previously shown to be enriched (BChE [Petrov et al., 2014] and NCAM1 [Covault and Sanes, 1986]) in PSCs (Figure 5E). Validating RNA-Seq findings, qPCR analysis showed that all eight genes are highly enriched in PSCs compared to all other cell types isolated via FACS (Figure 5E). Additionally, immunostaining showed that NG2, a novel PSC-enriched gene identified by RNA-Seq, is concentrated at the NMJ (Figure 3—figure supplement 2).
 
@@ -77,44 +360,180 @@ With these tools, it is now possible to determine which cellular and molecular d
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>S100b-GFP</td>
+      <td>PMID:15590915</td>
+      <td>MGI:3588512</td>
+      <td>Dr. Wesley Thompson (Texas A and M)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>NG2-dsRed</td>
+      <td>PMID:18045844</td>
+      <td>MGI:3796063</td>
+      <td>Dr. Akiko Nishiyama (University of Connecticut)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>SOD1G93A</td>
+      <td>PMID:8209258</td>
+      <td>MGI:2183719</td>
+      <td>Dr. Deng (Northwestern University)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Guinea pig polyclonal anti-NG2</td>
+      <td>PMID:19058188</td>
+      <td>Antibody Registry: AB_2572299</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor-488 goat polycolonal anti guinea pig</td>
+      <td>Invitrogen</td>
+      <td>RRID:AB_2534117</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor-488 goat polyclonal anti rabbit</td>
+      <td>Invitrogen</td>
+      <td>Catalog# A-11008</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ingenuity Pathway Analysis</td>
+      <td>Qiagen</td>
+      <td>RRID:SCR_008117</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>The R Project for Statistical Computing</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bio-Rad CFX Manager</td>
+      <td>Bio-Rad</td>
+      <td>RRID:SCR_017251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PicoPure RNA Isolation Kit</td>
+      <td>ThermoFisher</td>
+      <td>Catalog#KIT0204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA synthesis kit</td>
+      <td>Bio-Rad</td>
+      <td>Catalog#1708891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SsoAdvanced PreAmp Supermix</td>
+      <td>Bio-Rad</td>
+      <td>Cataolog#1725160</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iTAQ Univeral SYBR Green Supermix</td>
+      <td>Bio-Rad</td>
+      <td>Catalog#1725121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor-555 alpha- bungarotoxin</td>
+      <td>Invitrogen</td>
+      <td>Catalog#B35451</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>ThermoFisher</td>
+      <td>Catalog#D1306</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 SOD1G93A98 (Gurney et al., 1994), S100β-GFP (B6;D2-Tg(S100b-EGFP)1Wjt/J) (Zuo et al., 2004) and NG2-dsRed mice (Tg(Cspg4-DsRed.T1)1Akik/J) (Zhu et al., 2008) were obtained from Jackson Labs (Bar Harbor, ME). S100β-GFP and NG2-dsRed mice were crossed to generate S100β-GFP;NG2-dsRed mice. Offspring were genotyped using Zeiss LSM900 to check for fluorescent labels. SOD1G93A mice were crossed with S100β-GFP;NG2-dsRed mice to generate S100β-GFP;NG2-dsRed;SOD1G93A mice. Postnatal mice older than 9 days of age were anesthetized and immediately perfused with 4% paraformaldehyde (PFA) overnight. Pups were anesthetized by isoflurane and euthanized by cervical dislocation prior to muscle dissociation. Adult mice were anesthetized using CO2 and then perfused transcardially with 10 ml of 0.1 m PBS, followed by 25 ml of ice‐cold 4% PFA in 0.1 m PBS (pH 7.4). All experiments were carried out under NIH guidelines and animal protocols approved by the Brown University and Virginia Tech Institutional Animal Care and Use Committee.
 
-## Fibular nerve crush
+### Fibular nerve crush
 
 Adult S100β-GFP;NG2-dsRed mice were anesthetized with a mixture of ketamine (100 mg/kg) and xylazine (10 mg/kg) delivered intraperitoneally. The fibular nerve was crushed at its intersection with the lateral tendon of the gastrocnemius muscle using fine forceps, as described previously (Dalkin et al., 2016). Mice were monitored for 2 hr following surgery and administered buprenorphine (0.05-.010 mg/kg) at 12 hr intervals during recovery.
 
-## Immunohistochemistry and NMJ visualization
+### Immunohistochemistry and NMJ visualization
 
 For NG2 immunohistochemistry (IHC), muscles were incubated in blocking buffer (5% lamb serum, 3% BSA, 0.5% Triton X-100 in PBS) at room temperature for 2 hr, incubated with anti-NG2 antibody (courtesy of Dr. Dwight Bergles) diluted at 1:250 in blocking buffer overnight at 4°C, washed 3 times with 0.1M PBS for 5 min. Muscles were then incubated with 1:1000 Alexa Fluor-488 conjugated anti-rabbit or guinea pig antibody (A-11008, Invitrogen, Carlsbad, CA) and 1:1000 Alexa Fluor-555 conjugated α-bungarotoxin (fBTX; Invitrogen, B35451) in blocking buffer for 2 hr at room temperature and washed 3 times with 0.1M PBS for 5 min. For all other NMJ visualization, muscles were incubated in Alexa Fluor-647 conjugated α-bungarotoxin (fBTX; Invitrogen, B35450) at 1:1000 and 4',6-Diamidino-2-Phenylindole, Dihydrochloride (DAPI; D1306, ThermoFisher, Waltham, MA) at 1:1000 in 0.1M PBS at 4°C overnight. Muscles were then washed with 0.1M PBS 3 times for 5 min each. Muscles were whole mounted using Vectashield (H-1000, Vector Labs, Burlingame, CA) and 24 × 50–10.5 cover glass (ThermoFisher).
 
-## Confocal microscopy of PSCs and NMJs
+### Confocal microscopy of PSCs and NMJs
 
 All images were taken with a Zeiss LSM700, Zeiss LSM 710, or Zeiss LSM 900 confocal light microscope (Carl Zeiss, Jena, Germany) with a 20 × air objective (0.8 numerical aperture), 40 × oil immersion objective (1.3 numerical aperture), or 63 × oil immersion objective (1.4 numerical aperture) using the Zeiss Zen Black software. Optical slices within the z‐stack were taken at 1.00 μm or 2.00 μm intervals. High resolution images were acquired using the Zeiss LSM 900 with Airyscan under the 63 × oil immersion objective in super resolution mode. Optical slices within the z-stack were 0.13 μm with a frame size of 2210 × 2210 pixels. Images were collapsed into a two‐dimensional maximum intensity projection for analysis.
 
-## Image analysis
+### Image analysis
 
-## NMJ size
+#### NMJ size
 
 To quantify the area of NMJs, the area of the region occupied by nicotinic acetylcholine receptors (nAChRs, labeled by fBTX, was measured using ImageJ software. At least 100 nAChRs were analyzed for number of fragments, individual nicotinic acetylcholine receptor (nAChR) clusters, from each muscle to represent an individual mouse. At least 3 animals per age group were analyzed to generate the represented data.
 
-## Cells associated with NMJs
+#### Cells associated with NMJs
 
 Cell bodies were visualized via GFP and/or dsRed signal, and were confirmed as cell bodies by the presence of a DAPI+ nucleus. The area of each cell body was measured by tracing the outline of the entire cell body using the freehand tool in ImageJ. To quantify the number of cells associated with NMJs, the number of cell bodies directly adjacent to each NMJ was counted. Every cell that overlapped with or directly abutted the fBTX signal was considered adjacent to the NMJ. At least 3 animals per age group were analyzed to generate the represented data. Cells were examined in at least 100 NMJs from each muscle to represent an individual mouse.
 
-## Spacing of PSCs at NMJs
+#### Spacing of PSCs at NMJs
 
 NMJs were identified via fBTX signal. PSCs were identified by the colocalization of GFP, dsRed, and DAPI signal in addition to their location at NMJs. The area of each PSC and NMJ was measured. The linear distance from the center of each PSC soma to the center of the nearest PSC soma at a single NMJ was measured. The distances were then separated into 5 μm bins and plotted in a histogram. All linear measurements were made using the line tool in the ImageJ software. At least 100 NMJs were analyzed from each muscle to represent an individual mouse.
 
-## Muscle dissociation and fluorescence activated cell sorting
+### Muscle dissociation and fluorescence activated cell sorting
 
 Diaphragm, pectoralis, forelimb and hindlimb muscles were collected from P15-P21 S100β-GFP;NG2-dsRed mice. After removal of connective tissue and fat, muscles were cut into 5 mm2 pieces with forceps and digested in 2 mg/mL collagenase II (Worthington Chemicals, Lakewood, NJ) for 1 hr at 37°C. Muscles were further dissociated by mechanical trituration in Dulbecco’s modified eagle medium (Life Technologies, Carlsbad, CA) containing 10% horse serum (Life Technologies) and passed through a 40 µm filter to generate a single cell suspension. Excess debris was removed from the suspension by centrifugation in 4% BSA followed by a second centrifugation in 40% Optiprep solution (Sigma-Aldrich, St. Louis, MO) from which the interphase was collected. Cells were diluted in FACS buffer containing 1 mM EDTA, 25 mM Hepes, 1% heat inactivated fetal bovine serum (Life Technologies), in Ca2+/Mg2+ free 1X Dulbecco’s phosphate buffered saline (Life Technologies). FACS was performed with a Sony SH800 Cell Sorter (Sony Biotechnology, San Jose, CA). Representative fluorescence intensity gates for sorting of S100-GFP+, NG2-dsRed+ and S100-GFP+;NG2-dsRed+ cells are provided in Figure 5. Purity of the sorted cell population was confirmed by visual inspection of sorted cells using an epifluorescence microscope and with dsRed and GFP qPCR (Figure 5A,B). A single mouse was used for each replicate and an average of 7500 cells per replicate were collected for each cell group.
 
-## RNA-seq and qPCR
+### RNA-seq and qPCR
 
 RNA was isolated from S100β-GFP+, NG2-dsRed+, or S100β-GFP+/NG2-dsRed+ cells following FACS with the PicoPure RNA Isolation Kit (ThermoFisher). The maximum number of cells that could be collected by FACS following dissociation of muscles collected from one mouse was used as a single replicate. On average, a single replicate consisted of 7,500 cells. RNA seq was performed by Genewiz on 12 replicates per cell type. Following sequencing, data were trimmed for both adaptor and quality using a combination of ea-utils and Btrim (Aronesty, 2013; Kong, 2011). Sequencing reads were aligned to the genome using HiSat2 (Kim et al., 2019) and counted via HTSeq (Anders et al., 2015). QC summary statistics were examined to identify any problematic samples (e.g. total read counts, quality and base composition profiles (+/- trimming), raw fastq formatted data files, aligned files (bam and text file containing sample alignment statistics), and count files (HTSeq text files). Following successful alignment, mRNA differential expression were determined using contrasts of and tested for significance using the Benjamini-Hochberg corrected Wald Test in the R-package DESeq2 (Love et al., 2014). Failed samples were identified by visual inspection of pairs plots and removed from further analysis resulting in the following number of replicates for each cell type: NG2-dsRed+, 10; S100β-GFP+, 7; NG2-dsRed+;S100β-GFP+, 9. Functional and pathway analysis was performed using Ingenuity Pathway Analysis (QIAGEN Inc, https://www.qiagenbio-informatics.com/products/ingenuity-pathway-analysis). Confirmation of expression of genes identified by RNA-seq was performed on 6 additional replicates of each cell type using quantitative reverse transcriptase PCR (qPCR). Reverse transcription was performed with iScript (Bio-Rad, Hercules, CA) and was followed by a preamplification PCR step with SsoAdvanced PreAmp Supermix (Bio-Rad) prior to qPCR using iTAQ SYBR Green and a CFX Connect Real Time PCR System (Bio-Rad). Relative expression was normalized to 18S using the 2-ΔΔCT method. The primers used for both preamplification and qPCR are listed in Supplementary file 2.
 
-## Statistics
+### Statistics
 
 An unpaired t-test or one-way ANOVA with Bonferroni post hoc analysis were used for statistical evaluation. Data are expressed as the mean ± standard error of the mean, and p<0.05 was considered statistically significant. The number of replicates is as follows: RNA seq, 7–10; qPCR, 6; comparisons between EDL, soleus, and diaphragm, 1; comparison between SOD1G93A and healthy adult muscle, 1; all other analyses, 3. Statistical analyses were performed using GraphPad Prism8 and R. Data values and p-values are reported within the text.

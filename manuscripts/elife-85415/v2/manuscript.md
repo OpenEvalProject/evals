@@ -20,9 +20,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02pammg90 Department of Medicine and Women’s Guild Lung Institute, Cedars-Sinai Medical Center Los Angeles United States
-2. https://ror.org/02pammg90 Genomics Core, Cedars-Sinai Medical Center los Angeles United States
-3. https://ror.org/02pammg90 Department of Biomedical Sciences, Cedars-Sinai Medical Center Los Angeles United States
+1. Department of Medicine and Women’s Guild Lung Institute, Cedars-Sinai Medical Center Los Angeles United States ([ROR:02pammg90](https://ror.org/02pammg90))
+2. Genomics Core, Cedars-Sinai Medical Center los Angeles United States ([ROR:02pammg90](https://ror.org/02pammg90))
+3. Department of Biomedical Sciences, Cedars-Sinai Medical Center Los Angeles United States ([ROR:02pammg90](https://ror.org/02pammg90))
 
 † Corresponding author
 
@@ -42,7 +42,7 @@ In the current study, we took an unbiased approach – single-cell RNA-sequencin
 
 ## Results
 
-## Defining epithelial cell transcriptome profiles in young and old mouse lungs
+### Defining epithelial cell transcriptome profiles in young and old mouse lungs
 
 To better focus our investigation on the genetic signatures and programs of lung alveolar epithelial cells during aging and following lung injury, we performed scRNA-seq on flow sorted epithelial cells (EpCAM+CD31−CD34−CD45−) from lungs of uninjured (day 0), 4, 14, and 28 days post bleomycin injury of young and old mice (Figure 1A). A total of 96,213 cells were analyzed, and the cells from 26 individual mice overlapped very well (Figure 1B). The major lung epithelial cell types, AEC2, AEC1, basal cells, club cells, ciliated cells, pulmonary neuroendocrine cells, and proliferative cells were readily identified with canonical cell markers (Figure 1C–E). The AEC2 cluster was the largest among the lung epithelial cell populations (Figure 1C). The general aging marker genes, including B2M, H2-K1, H2-D1, H2-Q7, and CHIA1 were all upregulated in AEC2s from uninjured old mice (Figure 1F, G), consistent with previous reports (Angelidis et al., 2019; López-Otín et al., 2013).
 
@@ -50,7 +50,7 @@ To better focus our investigation on the genetic signatures and programs of lung
 
 **Figure 1.:** (A) Schematic of scRNA-seq analysis of flow sorted EpCAM+CD31−CD34−CD45− cells from lungs of uninjured (day 0) (n = 3), day 4 (n = 4), day 14 (n = 3), and day 28 post injury (n = 3) young and old mice. (B) Uniform Manifold Approximation and Projection (UMAP) visualization of 96,213 cells from all 26 samples. (C) UMAP visualization of epithelial cell clusters. (D) Heatmap of epithelial cell clusters. (E) Dot plots of conventional marker genes of epithelial cell clusters. (F, G) Gene expression in type 2 alveolar epithelial cells (AEC2s) from old vs young uninjured mice.
 
-## AEC2 subsets with aging and lung injury
+### AEC2 subsets with aging and lung injury
 
 AEC2 heterogenity following lung injury in mouse models has been extensively reported (Joshi et al., 2020; Kobayashi et al., 2020; Riemondy et al., 2019; Strunz et al., 2020; Wu et al., 2020). However, there is an incomplete understanding of AEC2 subsets under the influence of both aging and lung injury. We therefore analyzed the gene expression of a total of 57,717 AEC2s from both homeostatic and bleomycin-injured young and old mouse lungs, and identified three AEC2 subsets, AEC2-1, AEC2-2, and AEC2-3 according to their gene expression signatures (Figure 2A, B). AEC2-2 showed the lowest correlation silhouette value suggesting an intermediate status between AEC2-1 and AEC2-3 (Figure 2C). Pseudotime analysis identified the AEC2-1 subset with the lowest entropy and AEC2-3 with the highest entropy, suggesting a transition from AEC2-1 to AEC2-2 and further to AEC2-3 (Figure 2D). Correlation spanning tree analysis supported these sequential dynamics (Figure 2D). Furthermore, RNA trajectory analysis using a cell lineage and pseudotime inference tool, Slingshot (Street et al., 2018), confirmed that subset AEC2-3 cells were from subset AEC2-1 via subset AEC2-2, and AEC1 cells were from subset AEC2-3 cells in both young and old mice lungs, although further heterogeneity existed in AEC2-3 clusters (Figure 2E).
 
@@ -68,7 +68,7 @@ Pathway analyses idenfitified that both subsets AEC2-2 and AEC2-3 showed upregul
 
 The gene signature and signaling pathways of these three AEC2 subsets indicated that AEC2s in subset AEC2-1 were intact, homeostatic AEC2s, while subset AEC2-2 and subset AEC2-3 were injured AEC2s.
 
-## Dynamic of AEC2 subsets in aging and lung injury
+### Dynamic of AEC2 subsets in aging and lung injury
 
 Next, we investigated how aging and lung injury affected the subsets of AEC2s. Four days post bleomycin injury is the time point with maximum AEC2 injury, and by days 14 and 28 post injury there is substantial AEC2 recovery (Liang et al., 2016). Over 80% of total AEC2s in uninjured young mouse lungs were subset AEC2-1 cells and the percentage of AEC2-1 cells was slightly lower in the uninjured old mouse lungs (Figure 3A, B). At day 4 post bleomycin injury, AEC2s shifted from subset AEC2-1 to AEC2-2 and AEC2-3 in both young and old mouse lungs. It is interesting that at day 14 post bleomycin injury, during recovery, the intact AEC2s in AEC2-1 subset were partially recovered in young mouse lungs (from 29.05% at day 4 to 60.46% at day 14 post bleomycin injury), but the old mouse lungs were continuously losing cells in the AEC2-1 subset (from 41.44% at day 4 to 18.83% at day 14 post bleomycin injury). The majority of AEC2s in old mouse lungs at day 14 post bleomycin injury were subset AEC2-3 cells (Figure 3A, B). There was some degree of recovery of subset AEC2-1 in old mouse lungs at day 28 compared to day 14 post bleomycin injury (Figure 3A, B). However, the old mouse lungs continued to have much lower percentages of AEC2-1 (old 34% vs young 54%) and higher percentages of AEC2-3 (old 46% vs young 12%) at day 28 relative to that of the lungs from young mice (Figure 3B). These data suggest that aging affects AEC2 subset evolution in the lung with a reduced subset of intact AEC2s and increased proportions of damaged AEC2s in old mouse lungs, especially after injury.
 
@@ -78,7 +78,7 @@ Next, we investigated how aging and lung injury affected the subsets of AEC2s. F
 
 We then interrogated the progenitor functions of the AEC2 subsets we identified. We flow sorted primary AEC2s (Liang et al., 2022; Liang et al., 2016) from uninjured and day 4 bleomycin-injured young mice and applied the cells to 3D orgnoid cultures. The renewal capacity of AEC2s was measured by colony-forming efficiency (CFE). AEC2s from bleomycin-injured lungs had decreased regenerative capacity compared to AEC2s from uninjured lungs as demonstrated by decreased CFEs (Figure 3C). Since Claudin-4 (CLDN4) was only expressed in subset AEC2-3, we used CLDN4 as a cell surface marker to flow sort subset AEC2-3 cells (EpCAM+CD31−CD34−CD45−CD24−Sca-1−CLDN4+) from mouse lungs at day 14 after bleomycin injury and compared the CFEs to AEC2s in subset AEC2-1 and AEC2-2 (EpCAM+CD31−CD34−CD45−CD24−Sca-1−CLDN4−). Our results showed that CLDN4-positive AEC2s had significantly reduced regenerative capacity relative to that of CLDN4-negative AEC2s (Figure 3D). We further showed that AEC2s derived from CLDN4-positive organoids had decreased Sftpc and Pdpn expression compared to that of AEC2s form CLDN4-negative organoids by RT-PCR (Figure 3E, F), suggesting decreased AEC2 integrity and differentiation capacity of CLND4-positive AEC2-3 cells.
 
-## Aging enhanced injury-related gene expression in AEC2s
+### Aging enhanced injury-related gene expression in AEC2s
 
 The altered AEC2 subsets in bleomycin-injured aged mouse lungs suggested aging has an important impact on gene expression and function of AEC2s during lung injury. To gain further insights into the impact of aging on AEC2 injury and repair, we compared gene expression in AEC2s from young and old mice at multiple time points after bleomycin treatment. As expected, bleomycin injury increased the expression of inflammation and oxidative stress-related genes (Figure 4A), S100 family genes (Figure 4B), heat shock protein family genes (Figure 4C), senescence (Figure 4D) and apoptosis (Figure 4D), and ER stress-related genes (Figure 4F). Interestingly, aged AEC2s showed lower response compared to that of young AEC2s at day 4 after bleomycin treatment, while the expression levels of all these genes were elevated in aged AEC2s compared to that of young AEC2s at the later time points (Figure 4A–F), suggesting exaggerated AEC2 injury and delayed recovery with aging.
 
@@ -88,7 +88,7 @@ The altered AEC2 subsets in bleomycin-injured aged mouse lungs suggested aging h
 
 Reports showed that several AEC2 subsets including Krt8 expressing AEC2s (Strunz et al., 2020) and Cldn4-expressing AEC2s (Kobayashi et al., 2020) were transitional AEC2s which accumulated in bleomycin-injured mouse lungs. We therefore analyzed the effect of aging on the expression of these genes in AEC2s following bleomycin injury over time. Indeed, the expression of multiple genes in the keratin family including Krt7, Krt8, Krt18, and Krt19 were all upregulated and further increased in aged AEC2s after bleomycin injury (Figure 4G). The expression level of Krt17 was very low in mouse AEC2s but with a trend toward increase with injury and aging (Figure 4G). It was reported that Krt17-expressing AEC2s accumulated in IPF lungs (Habermann et al., 2020). The expression of keratin family genes peaked at day 4 and declined toward baseline levels at days 14 and 28 in AEC2s from young mice. However, the expression of keratin genes remained high at days 14 and 28 in AEC2s from old mice (Figure 4G). Multiple claudin family genes including Cldn3, Cldn7, and Cldn8 were upregulated after bleomycin injury and further elevated with aging (Figure 4H). Cldn4 expression was very low in uninjured AEC2s and its expression increased with bleomycin injury and aging (Figure 4H). This result is consistent with what we showed in Figure 2H that Cldn4 was mainly expressed in subset AEC2-3 cells. The persistently elevated expression of both Krt8 and Cldn4 in AEC2s from aged mice at later time points of bleomycin injury suggested further impaired AEC2 differentiation to AT1 cells with aging after lung injury.
 
-## Injury elevated aging-related gene expression in AEC2s
+### Injury elevated aging-related gene expression in AEC2s
 
 Lung injury promotes AEC2 senescence which is also a signature of aging (Lee et al., 2012). To gain insight into how injury can influence aging-related genetic changes in AEC2s, we analyzed aging hallmark genes expressed in AEC2s from young and old mice after bleomycin injury. Interestingly, the expression of multiple aging-related genes including class II histone protein genes (Figure 5A) and other aging hallmark genes including B2m, Ybx1, Clu, Tspo, and Npm1 (Figure 5B) were elevated in bleomycin-injured AEC2s from both young and old mice. The expression levels of aging hallmark genes were equally high in injured young and aged AEC2s at day 4 after bleomycin treatment (Figure 5A, B). These results suggested that not only aging affects AEC2 function after injury, but injury also skews AEC2s toward aging-like genetic changes.
 
@@ -96,7 +96,7 @@ Lung injury promotes AEC2 senescence which is also a signature of aging (Lee et 
 
 **Figure 5.:** Violin plots of aging-related gene expression in AEC2 from young and old mice at baseline day (D) 0 and days 4, 14, and 28 after bleomycin treatment. (A) Histocompatibility 2 genes. (B) Aging hallmark genes. Red, young; blue, old.
 
-## Impaired AEC2 recovery in bleomycin-injured aged mouse lungs
+### Impaired AEC2 recovery in bleomycin-injured aged mouse lungs
 
 Our data suggest that aging enhances inflammatory and stress response, senescence, ER stress, and apoptosis-related gene expression in AEC2s after lung injury, meanwhile injury skewed the gene expression in AEC2s toward aging-like changes. We anticipated that this interaction between aging and injury of AEC2s would impaire AEC2 recovery in aged mouse lungs after bleomycin injury. We first examined expression of AEC2 marker genes in AEC2s from young and old mice following bleomycin treatement over time. Multiple surfactant genes including Sftpc, Sftpb, Sftpa1, and several other AEC2 marker genes including Abca3, Slc34a2, Lyz2, and Etv5 were all downregulated in both young and old AEC2s at day 4, the time point with maximum AEC2 injury after bleomycin treatment. The expression of AEC2 marker genes in AEC2s from young mice were recovered close to baseline levels at days 14 and 28 but their expression in AEC2s from old mice remained reduced even at day 28 (Figure 6A). Old mouse lungs contained fewer AEC2s at baseline without injury (Figure 6B). The numbers of AEC2s in old mouse lungs at day 28 after bleomycin-injured were further reduced relative to that of young mice due to impaire AEC2 recovery with aging (Figure 6B). The decreased AEC2 recovery in bleomycin-injured old mice was aligned with senescence and impaired progenitor renewal of AEC2s with aging (Childs et al., 2015; Liang et al., 2022).
 
@@ -104,7 +104,7 @@ Our data suggest that aging enhances inflammatory and stress response, senescenc
 
 **Figure 6.:** (A) Violin plots of gene expression in AEC2 from young and old mice at baseline day (D) 0 and days 4, 14, and 28 after bleomycin treatment. Red, young; blue, old. (B) Number of AEC2s recovered from uninjured young and old mice (n = 5–6, ***p < 0.001, by unpaired two-tailed Student’s t-test). (C) Number of AEC2s recovered from bleomycin day 28 young and old mouse lungs (n = 3–5, ****p < 0.0001, by unpaired two-tailed Student’s t-test).
 
-## IPF AEC2s showed similar gene signature patterns as injured aged murine AEC2s
+### IPF AEC2s showed similar gene signature patterns as injured aged murine AEC2s
 
 It was reported that an AEC2 subset representing transitional AEC2s exist in both bleomycin-injured mouse lungs and human IPF lungs (Huang and Petretto, 2021), suggesting a similarity in AEC2 subsets between mouse fibrosis and IPF. Next, we determined if the three AEC2 subsets we identified in the mouse model was relevant to human disease. We analyzed scRNA-seq data of flow cytometry-enriched lung epithelial (EpCAM+CD31−CD45−) cells from lung tissues of six IPF patients (11,381 cells) and six healthy donors (14,687 cells) (Liang et al., 2022). IPF AEC2s had a singificant decrease in expression of classical AEC2 genes including SFTPC, SLC34A2, ABCA3, and ETV5, when compared with AEC2s from healthy donors (Figure 7A). IPF AEC2s showed strong IFN signaling with a higher IFN activation score and elevated gene expression of IFI27 (Figure 7B). Genes including LCN2, CD74, BCAM, and GAS6 were significantly upregulated in IPF AEC2s (Figure 7C) which are the same group of genes that were upregulated in mouse subset AEC2-2.
 
@@ -136,44 +136,208 @@ In summary, we have performed comprehensive scRNA-seq analyses of lung alveolar 
 
 ## Materials and methods
 
-## Animals and study approval
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57Bl/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>Strain #: 000664RRID: IMSR_JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bleomycin</td>
+      <td>Hospira, Lake Forest, IL 60045</td>
+      <td>NDC 61703-332-18</td>
+      <td>2.5 U/kg in vivo, mice</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse EpCAMclone G8.8 (rat monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Catalog # 118216RRID: AB_1236471</td>
+      <td>Flow 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD24clone M1/69 (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Catalog # 12-0242-82, RRID: AB_467169</td>
+      <td>Flow 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Sca-1 (Ly-6A/E)-clone D7 (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Catalog # 17-5981-82, RRID: AB_469487</td>
+      <td>Flow 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse CD31 (PECAM-1) clone 390 (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Catalog # 13-0311-85, RRID: AB_466421</td>
+      <td>Flow 1:40</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse CD34clone RAM34 (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Catalog # 13-0341-85, RRID: AB_466425</td>
+      <td>Flow 1:16</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse CD45clone 30-F11 (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Catalog # 13-0451-85, RRID: AB_466447</td>
+      <td>Flow 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD31clone WM59 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Clone WM59; RRID: AB_314327</td>
+      <td>Flow 1:40</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD45clone WI30 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Catalog # 304016, RRID: AB_314404</td>
+      <td>Flow 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human EpCAM clone 9C4 (mouse monoclonal)</td>
+      <td>BioLegend</td>
+      <td>Catalog # 324212, RRID: AB_756086</td>
+      <td>Flow 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-human Claudin 4IgG (rabbit polyclonal)</td>
+      <td>ProteinTech</td>
+      <td>16195-1-AP, RRID: AB_2082969</td>
+      <td>Flow 1:50; IF 1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HT2-280IgM (mouse monoclonal)</td>
+      <td>Terrace Biotech</td>
+      <td>TB-27AHT2-280, RRID: AB_2832931</td>
+      <td>Flow 1:60; IF 1:200</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mouse Sftpc _F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCAGGTCCCAGGAGCCAGTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mouse Sftpc_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGAGCTGGCTTATAGGCCGTCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mouse Pdpn_F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCACCTCTGGTACCAACGCAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mouse Pdpn_R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TCTGAGGTTGCTGAGGTGGACAGT</td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>MLg2908, lung fibroblast (normal)</td>
+      <td>ATCC</td>
+      <td>Catalog CCL-206</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flow Jo</td>
+      <td>Tree Star</td>
+      <td>Version 9.9.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RStudio</td>
+      <td>RStudio PBC</td>
+      <td>RRID: SCR_000432, version 2022.07.2 build 576</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>RRID: SCR_002798, version 8.4.3</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals and study approval
 
 All mouse maintenance and procedures were done under the guidance of the Cedars-Sinai Medical Center Institutional Animal Care and Use Committee (IACUC008529) in accordance with institutional and regulatory guidelines. All mice were housed in a pathogen-free facility at Cedars-Sinai. Eight- to 12-week-old (young) and 18- to 24-month-old (aged) wild-type C57Bl/6J mice were obtained from The Jackson Laboratory and housed in the institution facility at least 2 weeks before experiments.
 
-## Information of human subjects, human lung tissue, and study approval
+### Information of human subjects, human lung tissue, and study approval
 
 The use of human tissues for research was approved by the Institutional Review Board (IRB) of Cedars-Sinai and was under the guidelines outlined by the IRB (Pro00032727). Informed consent was obtained from each subject. The human samples used in the studies are age matched between IPF and healthy donors. The median age is 60 for healthy donors and 66 for IPF patients. We are aware to get the best age-matched samples within each experiment.
 
-## Bleomycin instillation
+### Bleomycin instillation
 
 Bleomycin instillation (2.5 U/kg) by intratracheal administration was described previously (Liang et al., 2016).
 
-## Mouse lung dissociation and flow cytometry
+### Mouse lung dissociation and flow cytometry
 
 Mouse lung single-cell suspensions and the procedures of staining the cells for flow cytometry and data analysis were described previously (Barkauskas et al., 2013; Chen et al., 2012; Liang et al., 2016). Flow cytometry was performed using a LSRFortessa flow cytometer and FACSAria III sorter (BD, San Jose, CA) and the data were analyzed using Flow Jo 9.9.6 software (Tree Star, Ashland, OR). Primary antibodies EpCAM-PE-Cy7 (clone G8.8, Catalog # 118216, RRID AB_1236471) were from BioLegend. CD24-PE (clone M1/69, Catalog # 12-0242-82, RRID AB_467169), Sca-1 (Ly-6A/E)-APC (clone D7, Catalog # 17-5981-82, RRID AB_469487), CD31 (PECAM-1) (clone 390, Catalog # 13-0311-85, RRID AB_466421), CD34 (clone RAM34, Catalog # 13-0341-85, RRID AB_466425), and CD45 (clone 30-F11, Catalog # 13-0451-85, RRID AB_466447) were all from eBioscience (San Diego, CA). Streptavidin-APC-Cy7 (catalog # 405208) was from BioLegend (San Diego, CA).
 
-## Human lung dissociation and flow cytometry
+### Human lung dissociation and flow cytometry
 
 Human lung single-cell isolation and flow cytometer analysis and sorting were performed as described previously (Liang et al., 2016). Anti-human CD31 (clone WM59, Catalog # 303118, RRID AB_2247932), CD45 (clone WI30, Catalog # 304016, RRID AB_314404), and EpCAM (clone 9C4, Catalog # 324212, RRID AB_756086) were from BioLegend.
 
-## Human lung section immunofluorescence staining
+### Human lung section immunofluorescence staining
 
 Cryosections and immunostaining were following standard protocols. Primary antibodies rabbit anti-Claudin 4 IgG polyclonal antibody (16195-1-AP, RRID AB_2082969, Proteintech) and mouse anti-HT2-280 IgM monoclonal antibody (TB-27AHT2-280, RRID AB_2832931, Terrace Biotech) were used and followed by fluorescence-labeled secondary antibodies.
 
-## scRNA-seq and data analysis
+### scRNA-seq and data analysis
 
 scRNA-seq was performed in Genomics Core at Cedars-Sinai. Flow sorted human and mouse single cells were lysed, and mRNA was reverse transcribed and amplified as previously described (Liu et al., 2021). The barcoded libraries were sequenced with NextSeq500 (Illumina, San Diego, CA) to obtain a sequencing depth of ~200K reads per cell.
 
 Raw scRNA-seq data were aligned to human genome GRCh38 and mouse genome mm10 with Cell Ranger, respectively. Downstream quality control, normalization and visualization were performed with Seurat package (Butler et al., 2018). For quality control, the output expression matrix from Cell Ranger was done based on number of genes detected in each cell, number of transcripts detected in each cell, and percentage of mitochondrial genes. The expression matrix was then normalized and visualized with UMAP. Bioinformatics analysis of scRNA-seq data was detailed in our recent report (Liu et al., 2021). Silhouette analysis of k-means clustering was used to assess the separation distance between the resulting clusters. SCRAT was used to determine and envision high-dimensional metagene sets exhibited in AEC2 subsets as we described previously (Liu et al., 2021; Xie et al., 2018). IPA was performed as described previously (Liu et al., 2021). The activation score reflects the sum of expression levels of a biological process (or pathway) related genes in each single cell, the results of each cluster cell were shown in Violin plots (Yao et al., 2021). The genes in the biological process (or pathway) were downloaded from UniProt. RNA trajectory analysis was performed with Slingshot (Street et al., 2018).
 
-## RNA analysis
+### RNA analysis
 
 RNA was extracted from mouse AEC2s using TRIzol Reagent. For real-time PCR analysis, 0.5 μg total RNA was used for reverse transcription with the High Capacity cDNA Reverse Transcription Kit (Applied Biosystems). One microliter cDNA was subjected to real-time PCR by using Power SYBR Green PCR Master Mix (Applied Biosystems) and the ABI 7500 Fast Real-Time PCR system (Applied Biosystems). The specific primers were designed based on cDNA sequences deposited in the GenBank database: mouse Sftpc (NM_011359.2), forward 5′-GCAGGTCCCAGGAGCCAGTTC-3′ and reverse 5′-GGAGCTGGCTTATAGGCCGTCAG-3′; mouse Pdpn (NM_010329.3), forward 5′-GCACCTCTGGTACCAACGCAGA-3′ and reverse 5′-TCTGAGGTTGCTGAGGTGGACAGT-3′.
 
-## 3D Matrigel culture of human and mouse AEC2s
+### 3D Matrigel culture of human and mouse AEC2s
 
 Flow sorted mouse (EpCAM+CD31−CD34−CD45−CD24−Sca-1−) AEC2s (3 × 103) were cultured in Matrigel/medium (1:1 in volume) mixture in the presence of lung fibroblasts MLg2908 cells (2 × 105, Catalog CCL-206, ATCC, Manassas, VA) (Liang et al., 2016). MLg2908 has been authenticated using STR profiling and tested free of mycoplasma contamination. Fresh medium with proper treatment was changed every other day. Colonies were visualized with a Zeiss Axiovert40 inverted fluorescent microscope (Carl Zeiss AG, Oberkochen, Germany). Number of colonies with a diameter of ≥50 µm were counted and CFE was determined by the number of colonies in each culture as a percentage of input epithelial cells at 12 days after plating. The treatments were repeated at least three times and similar results were obtained.
 
-## Statistics
+### Statistics
 
 The statistical difference between groups in the bioinformatics analysis was calculated using the Wilcoxon signed-rank test. For the scRNA-seq data, the lowest p-value calculated in Seurat was p < 2.2e−10−16. For cell treatment data, the statistical difference between groups was calculated using Prism (version 8.4.3) (GraphPad, San Diego, CA). Data are expressed as the mean ± standard error of the mean. Differences in measured variables between experimental and control group were assessed by using Student’s t-tests. Results were considered statistically significant at p < 0.05.

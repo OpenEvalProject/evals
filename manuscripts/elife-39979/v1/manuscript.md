@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.39979.001 TOPBP1 and its fission yeast homologue Rad4, are critical players in a range of DNA replication, repair and damage signalling processes. They are composed of multiple BRCT domains, some of which bind phosphorylated motifs in other proteins. They thus act as multi-point adaptors bringing proteins together into functional combinations, dependent on post-translational modifications downstream of cell cycle and DNA damage signals. We have now structurally and/or biochemically characterised a sufficient number of high-affinity complexes for the conserved N-terminal region of TOPBP1 and Rad4 with diverse phospho-ligands, including human RAD9 and Treslin, and Schizosaccharomyces pombe Crb2 and Sld3, to define the determinants of BRCT domain specificity. We use this to identify and characterise previously unknown phosphorylation-dependent TOPBP1/Rad4-binding motifs in human RHNO1 and the fission yeast homologue of MDC1, Mdb1. These results provide important insights into how multiple BRCT domains within TOPBP1/Rad4 achieve selective and combinatorial binding of their multiple partner proteins. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter ).
+TOPBP1 and its fission yeast homologue Rad4, are critical players in a range of DNA replication, repair and damage signalling processes. They are composed of multiple BRCT domains, some of which bind phosphorylated motifs in other proteins. They thus act as multi-point adaptors bringing proteins together into functional combinations, dependent on post-translational modifications downstream of cell cycle and DNA damage signals. We have now structurally and/or biochemically characterised a sufficient number of high-affinity complexes for the conserved N-terminal region of TOPBP1 and Rad4 with diverse phospho-ligands, including human RAD9 and Treslin, and Schizosaccharomyces pombe Crb2 and Sld3, to define the determinants of BRCT domain specificity. We use this to identify and characterise previously unknown phosphorylation-dependent TOPBP1/Rad4-binding motifs in human RHNO1 and the fission yeast homologue of MDC1, Mdb1. These results provide important insights into how multiple BRCT domains within TOPBP1/Rad4 achieve selective and combinatorial binding of their multiple partner proteins.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -31,7 +31,7 @@ To gain some insight into this, we have determined crystal structures of segment
 
 ## Results
 
-## Structural basis for RAD9 binding to TOPBP1
+### Structural basis for RAD9 binding to TOPBP1
 
 Phosphorylation of RAD9 on Ser387 (or its equivalent) in its C-terminal ‘tail’ has been shown to be essential for interaction with TOPBP1, and required for an effective checkpoint response in a Xenopus system (Lee et al., 2007). Subsequently, this phosphorylation was shown to be dependent on casein kinase 2 (CK2) (Rappas et al., 2011; Takeishi et al., 2010) and its site of interaction on TOPBP1 localised to BRCT1, with an affinity in the low micromolar range (Kd = 2.1 µM) (Rappas et al., 2011). However, the structural basis for the interaction of RAD9-pS387 with TOPBP1, and how this directs specificity to just one out of the nine BRCT domains in TOPBP1 was unclear.
 
@@ -47,7 +47,7 @@ The phosphate group of RAD9-pSer387 is recognised by a network of hydrogen bondi
 
 To determine which RAD9 residues, in addition to the phosphorylated Ser 387, are important for binding to TOPBP1, we established a semi-quantitative peptide pull-down assay in which we systematically varied the identity of the residues at position −5, –4, −3, and −1 relative to pSer387 (Figure 1D). Position −3 (Ala in RAD9) retained tight binding only when substituted by valine, while −4 (Leu in RAD9) tolerated phenylalanine or isoleucine, but with reduced binding in all cases. Position −5 (Val in RAD9), showed the greatest tolerance, retaining substantial binding with a range of substitutions, including proline and polar residues such as serine or glutamine. The side chain at this position is conformationally unrestricted beyond the Cγ position and involved primarily in interactions within the RAD9 peptide itself that reinforce the tight turn conformation delivering the side-chains of residues −3 and −4 into direct interaction with TOPBP1. The unfavourability of aspartic acid at this position is likely to result from a repulsive electrostatic interaction with TOPBP1-Asp138. The aspartic acid in the −1 position, which makes a polar interaction with a lysine residue in TOPBP1, could be replaced by serine without substantial loss of binding, but replacement with leucine or lysine, which would generate a steric and/or electrostatic clash, abolished binding.
 
-## Conserved conformations of TOPBP1/Rad4 binding peptides
+### Conserved conformations of TOPBP1/Rad4 binding peptides
 
 Although no crystal structures have been reported for phospho-peptides binding to BRCT2 of metazoan TOPBP1, we previously described the interaction of phospho-peptides from Crb2 (the fission yeast homologue of 53BP1) to both BRCT1 and BRCT2 of Rad4 (the fission yeast homologue of TOPBP1) (Qu et al., 2013). We have now also determined the crystal structure of a bis-phosphorylated pT636-pT650 peptide from Sld3 (the fission yeast homologue of Treslin), which interacts simultaneously with Rad4-BRCT1 and Rad4-BRCT2, albeit with different molecules in the asymmetric unit of the crystals (Figure 2A).
 
@@ -59,33 +59,49 @@ Structural alignment of the Rad4 – Sld3-pT636,pT650 complex with the previousl
 
 Conversely, structural alignment of previously described complexes of Rad4 (Qu et al., 2013) in which peptides are instead bound to BRCT2 (Rad4 - Crb2-pT187 and Rad4 - Crb2-pT235) with the Rad4 – Sld3-pT636,pT650 complex, confirms a different conformation for the ligand (Figure 2C). In these complexes, the peptide backbone upstream of the phosphorylated residue maintains a consistent β-sheet conformation, and does not contain the tight turn seen for the hydrophobic triplets in peptides bound to the BRCT1 domain of TOPBP1 or Rad4.
 
-## Structural basis for peptide selectivity by BRCT1 and BRCT2
+### Structural basis for peptide selectivity by BRCT1 and BRCT2
 
 Comparison of the BRCT1 and BRCT2 domains of TOPBP1 and of Rad4 suggests conserved features that govern the different conformation of their ligand peptides and contribute to selectivity. A common feature of all TOPBP1/Rad4 BRCT1 or BRCT2 ligands so far identified, is the presence of a hydrophobic residue at −3 relative to the phosphorylated serine or threonine. In both BRCT1 and BRCT2, this residue packs into a hydrophobic recess formed by side chains projecting from the α-helix connecting the 3rd and 4th β-strand of the BRCT fold. In BRCT1 this recess is extended and is sufficiently large to accommodate two consecutive hydrophobic side chains of a peptide ligand so long as the backbone of the peptide adopts a tight turn conformation (Figure 3A,B). In BRCT2, however, the size of the recess is restricted by the side chain of a highly conserved tryptophan residue (Trp158 in Rad4; Trp257 in human TOPBP1) at the C-terminal end of the α-helix, and can only accommodate a single hydrophobic side chain, requiring that the peptide chain continues in an extended β-sheet conformation (Figure 3C,D).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/39979/elife-39979-fig3-v1.jpg)
 
-**Figure 3.:** (A) Detail of the RAD9-pSer387 peptide bound to TOPBP1-BRCT1, showing the tight turn conformation adopted by the consecutive hydrophobic residues at positions −5, –4 and −3 relative to the phosphorylated residue, that positions the side chains of the −4 and −3 residues in a pocket on the BRCT domain. (B) As A. but for the Sld3-pT650 peptide bound to Rad4-BRCT1. (C) Detail of the Sld3-pT650 peptide bound to Rad4-BRCT2. Unlike the BRCT1 ligand phosphopeptides, residues −3 and −4 have an extended main chain conformation, so that only the residue at −3 interacts with the hydrophobic pocket on the BRCT domain, so that the −4 position can accommodate a large polar amino acid such as glutamic acid. (D) The pocket in BRCT2 is constricted relative to that in BRCT1, by the presence of a tryptophan residue, which is topologically conserved in BRCT2 domains but absent from BRCT1. (E) Fluorescence polarisation assay of Treslin-derived phosphopeptides binding to the TOPBP1-BRCT0,1,2 segment. The Treslin-pT969 peptide, which has a large hydrophilic residue at −5 binds preferentially to BRCT2, whereas the Treslin-p1001 peptide with a glycine at −5 binds with comparable affinity to either. Both Treslin phosphopeptides have hydrophobic residues at the −3 positions.10.7554/eLife.39979.005Figure 3—source data 1.
+**Figure 3.:** (A) Detail of the RAD9-pSer387 peptide bound to TOPBP1-BRCT1, showing the tight turn conformation adopted by the consecutive hydrophobic residues at positions −5, –4 and −3 relative to the phosphorylated residue, that positions the side chains of the −4 and −3 residues in a pocket on the BRCT domain. (B) As A. but for the Sld3-pT650 peptide bound to Rad4-BRCT1. (C) Detail of the Sld3-pT650 peptide bound to Rad4-BRCT2. Unlike the BRCT1 ligand phosphopeptides, residues −3 and −4 have an extended main chain conformation, so that only the residue at −3 interacts with the hydrophobic pocket on the BRCT domain, so that the −4 position can accommodate a large polar amino acid such as glutamic acid. (D) The pocket in BRCT2 is constricted relative to that in BRCT1, by the presence of a tryptophan residue, which is topologically conserved in BRCT2 domains but absent from BRCT1. (E) Fluorescence polarisation assay of Treslin-derived phosphopeptides binding to the TOPBP1-BRCT0,1,2 segment. The Treslin-pT969 peptide, which has a large hydrophilic residue at −5 binds preferentially to BRCT2, whereas the Treslin-p1001 peptide with a glycine at −5 binds with comparable affinity to either. Both Treslin phosphopeptides have hydrophobic residues at the −3 positions.
 
 Based on the available crystal structures, the major factor that determines binding to BRCT1 seems to be the ability of the peptide sequence upstream of the phosphorylated residue to form a tight turn that places the side chains of the −3 and −4 residues into the extended hydrophobic recess. Sequences with hydrophobic residues at −3 and −4 (and often −5) as in the RAD9-pS387, Crb2-pT187, Sld3-pT636 and Treslin-pS1001 (993-DIGVVEEpSP) peptides conform to this requirement, whereas sequences with large polar side chains such as Crb2-pT235 where −4 is arginine, or Sld3-pT650 where −4 is glutamate, do not, and are restricted to binding to BRCT2. A subtler effect is seen with the Treslin-pT969 site (962-LTKSVAEpTP), which has a small polar amino acid - serine - at −4, and binds preferentially to BRCT2 (Figure 3E) when presented in the context of a short peptide. However, the unfavourability of the small polar serine, which unlike arginine or glutamate could at least be sterically accommodated by BRCT1, is diminished in the context of a longer peptide (Boos et al., 2011). Binding to BRCT2 appears to be less selective beyond the requirement for a hydrophobic residue at −3. Thus, the Crb2-pT187 sequence is able to bind to Rad4-BRCT2 as well as Rad4-BRCT1 with comparable affinity, as can the Treslin-pS1001 sequence to TOPBP1-BRCT1 and TOPBP1-BRCT2. However, the ability to bind to BRCT1 does not guarantee binding to BRCT2, which may depend on the identity of the hydrophobic −3 residue. The RAD9-pS387 sequence for example, binds with low micromolar affinity to TOPBP1-BRCT1 where its −3 alanine and −4 leucine can effectively occupy the extended hydrophobic recess, but binds much less tightly to BRCT2 where only the minimal hydrophobic side chain of the −3 alanine is available to bind.
 
 Many (but by no means all) of the sites shown to bind to TOPBP1-BRCT0,1,2 or Rad4-BRCT1,2 have a proline residue (at +1) following the phosphorylated serine or threonine, and are known (or presumed to be) targets for phosphorylation by CDKs or other proline-directed protein kinases (Boos et al., 2011; Qu et al., 2013). In the observed binding modes for both BRCT1 and BRCT2, the +1 residue is directed away from the body of the protein, and makes no direct contribution to the binding specificity, but is nonetheless accommodated.
 
-## Identification of the TOPBP1-BRCT1,2 binding site in RHNO1
+### Identification of the TOPBP1-BRCT1,2 binding site in RHNO1
 
 Based on the crystal structures described above, and the model for specificity derived from them, we set out to identify hitherto unrecognised interaction motifs in proteins implicated by genetic or proteomic studies in interaction with TOPBP1, but where the basis for that interaction has not been characterised.
 
 RHNO1 (aka RHINO, RAD9-Hus1-Rad1 Interacting Nuclear Orphan) was identified as a contributor to DNA damage checkpoint signalling, which physically couples the 9-1-1 (RAD9-HUS1-RAD1) checkpoint clamp to TOPBP1 (Cotta-Ramusino et al., 2011; Lindsey-Boltz et al., 2015). While deletion analysis implicated the N-terminal half of RHNO1 in 9-1-1 binding, the location of the interaction with TOPBP1 was not defined. Using the TOPBP1-binding motifs defined above, a search of the human RHNO1 sequence using ScanProsite (de Castro et al., 2006) identified a good match in the C-terminal region of RHNO1 centred on Thr202 (Figure 4A). Although not so far annotated in phosphorylation site databases, this sequence has the characteristics of a proline-directed kinase site such as those identified in other TOPBP1/Rad4-binding sequences, and with a triplet of hydrophobic residues in the −5, –4 and −3 positions that would facilitate high-affinity binding to BRCT1 according to our model. The key attributes of this motif are highly conserved in RHNO1 homologues in metazoa (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/39979/elife-39979-fig4-v1.jpg)
+
+**Figure 4.:** (A) The C-terminal half of the 9-1-1 and TOPBP1-interacting scaffold protein RHNO1, contains a sequence motif with a potential phosphorylation site at Thr202, that corresponds closely to the consensus for preferential binding to Rad4/TOPBP1-BRCT1 or BRCT2 (B) Fluorescence polarisation assay of a RHNO1-derived phosphopeptide binding to the TOPBP1-BRCT0,1,2 segment. The RHNO1-pT202 peptide binds with high affinity to the wild-type BRCT0,1,2 construct, but fails to bind when dephosphorylated by λ-phosphatase. High affinity binding is lost in the presence of disruptive mutations in the phosphate-binding site of BRCT1, but is unaffected by comparable mutations in BRCT2. (C) In contrast to a documented phosphopeptide derived from BLM (Blackford et al., 2015), the RHNO1-pT202 peptide shows no affinity for the TOPBP1-BRCT4,5 segment. (D) As C – RHNO1-pT202 shows no affinity for the TOPBP1-BRCT7,8, unlike a documented phosphopeptide derived from FANCJ (Gong et al., 2010).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39979/elife-39979-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Alignment of C-terminal RHINO sequences showing very strong conservation of the TOPBP1-interacting motif identified in human RHNO1 across a broad range of animals. Sequences are from humans (Homo sapiens), rodents (Rattus norvegicus), ruminants (Ovis aries), fish (Salmo salar), birds (Gallus gallus), cephalopods (Octopus bimaculoides), amphibians (Xenopus laevis), reptiles (Chelonia mydas) and bivalves (Mizuhopecten yessoensis).
+
 To test the hypothesis that this is a bona fide TOPBP1-binding site, we synthesised a phospho-peptide encapsulating the putative RHNO1-pT202 site and measured its binding to segments of TOPBP1 using fluorescence polarisation. RHNO1-pT202 bound to TOPBP1-BRCT0,1,2 with sub-micromolar affinity (Figure 4B), but did not show any measurable binding to the other phospho-peptide binding modules of TOPBP1, that is BRCT4,5 and BRCT7,8 (Figure 4C,D). A dephosphorylated version of the same peptide did not bind.
 
 We previously showed that charge-reversal mutations in conserved lysine residues in the phosphate-binding sites of BRCT1 and BRCT2 of TOPBP1 and Rad4, selectively block binding of phospho-peptide ligands to the mutated domain (Boos et al., 2011; Qu et al., 2013; Rappas et al., 2011) and we used this to determine whether RHNO1-pT202 bound BRCT1 or BRCT2 preferentially. We found that a TOPBP1-BRCT1,2 construct with a K250E mutation that disrupts binding to BRCT2, bound the peptide with comparable affinity to the wild-type, whereas no binding was observed with a TOPBP1-BRCT1,2 construct with a K155E mutant, which disrupts BRCT1, confirming TOPBP1-BRCT1 as the major binding site for RHNO1-pT202 (Figure 4B). Interestingly, truncation mutations of RHNO1 that eliminate the region of the protein in which this putative phosphorylation site occurs, and which are therefore unlikely to be unable to bind TOPBP1, have been identified in a number of families with hereditary pancreatic cancer (Smith et al., 2016).
 
-## Identification of a novel Rad4-BRCT1,2 binding site in Mdb1
+### Identification of a novel Rad4-BRCT1,2 binding site in Mdb1
 
 Mbd1 is the S. pombe orthologue of the metazoan DNA damage mediator protein MDC1 (Wei et al., 2014) and plays important roles in the DNA damage response. MDC1 is believed to interact with TOPBP1 through a central region containing six repeats of a degenerate SDT motif constitutively phosphorylated by CK2, which was originally implicated in mediating MDC1 interaction with NBS1 (Chapman and Jackson, 2008; Melander et al., 2008). The putative interaction of this region with TOPBP1 is believed to be mediated by the BRCT4,5 module, but is of significantly lower affinity than that displayed by other biologically significant phospho-peptide interactions with TOPBP1/Rad4 BRCT domains (Leung et al., 2013). Furthermore, these repeats do not occur in fission yeast Mdb1 where only a single SDT motif is evident.
 
 To determine whether the single SDT site in Mdb1 mediates an interaction with Rad4, we synthesised a phospho-peptide encapsulating the bis-phosphorylated Mdb1-p216,p218 SDT site and measured its binding to segments of Rad4 using fluorescence polarisation (Figure 5A). While the Mdb1-p216,p218 peptide bound with sub-micromolar affinity to S. pombe Nbs1, consistent with observations in the human system, no binding was observed to either the BRCT1,2 or BRCT3,4 modules of Rad4.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/39979/elife-39979-fig5-v1.jpg)
+
+**Figure 5.:** (A) Fluorescence polarisation assay showing that a fluorescent peptide (Flu-GYGVEGDHS(pS)D(pT)EEEVVS) incorporating the single SDT site in Mdb1, the fission yeast homologue of MDC1, does not interact with Rad4-BRCT3,4 as has been suggested for the SDT sites in human MDC1 with the homologous TOPBP1-BRCT4,5 (Leung et al., 2013; Wang et al., 2011). The Mdb1-SDT site peptide does, however, interact with high-affinity with the S. pombe homologue of NBS1. (B) Mdb1 contains a sequence motif with a potential phosphorylation site at Thr 113 that corresponds closely to the consensus for binding to Rad4/TOPBP1-BRCT2. (C) Fluorescence polarisation assay of an Mdb1-derived phosphopeptide binding to the Rad4-BRCT1,2 segment. The Mdb1-pT113 peptide binds with high affinity to the wild-type BRCT1,2 but only weakly when a disruptive mutation is introduced into the phosphate-binding site of BRCT2, but is largely unaffected by comparable mutations in BRCT1. All detectable bindings are lost when both BRCT domains are mutated. (D) Crystal structure of Mdb1-pT113 peptide bound to the BRCT2 domain within the Rad4-BRCT1,2 module. (E) Closeup of interactions. As in other complexes with BRCT2, the single hydrophobic residue at −3 relative to the phosphorylated residue binds into the hydrophobic pocket, with the main chain for the −2, –3 and −4 residues adopting an extended conformation, rather than the tight turn seen in interactions with BRCT1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/39979/elife-39979-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** In contrast to its high-affinity interaction with the Rad4-BRCT1,2 segment, no interaction is observed between the Mdb1 pT113 motif and Rad4-BRCT3,4.
 
 To try and identify other potential phosphorylation sites on Mdb1 that might mediate its interaction with Rad4, we searched the Mdb1 sequence using ScanProsite as before (de Castro et al., 2006) and identified a good match to the motifs defined above, centred at a documented site of phosphorylation (Beltrao et al., 2012; Ullah et al., 2016) on Thr113 (Figure 5B). The sequence around Mdb1-Thr113 matches the TP/SP proline-directed kinase consensus and hydrophobic −3 residue seen for many TOPBP1/Rad4 BRCT1 and/or BRCT2 interacting sites. However, based on the presence of a polar residue, threonine at −4 our model would suggest that this site would not display high-affinity for BRCT1.
 
@@ -109,7 +125,7 @@ Given the many roles of TOPBP1 in maintaining cell viability in the presence of 
 
 ## Materials and methods
 
-## Protein expression and purification
+### Protein expression and purification
 
 E.coli strain BL21(DE3) was transformed with modified pGEX-6P-1 or pET-15b vectors for expression of all protein constructs. Transformed bacteria were grown in a shaking incubator set at 37°C and 220 rpm in TurboBroth (Molecular Dimensions, Newmarket, UK) supplemented with the appropriate antibiotic for selection. Protein expression was induced by the addition of isopropyl β-D-1-thiogalactopyranoside (IPTG).
 
@@ -125,19 +141,108 @@ For FP experiments, a Superdex 200 16/60 size exclusion column (GE Healthcare) w
 
 For crystallography experiments, affinity purification tags were removed by incubation with Human SENP1C or Human Rhinovirus 3C proteases to remove HIS-SUMO or GST tags respectively, before application of the recombinant protein to a Superdex 75 16/60 size exclusion column (GE Healthcare) equilibrated in buffer containing 10 mM HEPES pH 7.5, 100 mM NaCl, 0.5 mM TCEP.
 
-## Peptide pull-down experiments method
+### Peptide pull-down experiments method
 
 Biotinylated HsRAD9 peptides corresponding to the C-terminal 45 residues of RAD9 were synthesized with sequences as follows:
 
+<table>
+  <tbody>
+    <tr>
+      <td>pS387</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspvlaedpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>S387</td>
+      <td>347 - aepstvpgtpppkkfrslffgsilapvrspqgpspvlaedsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>S-1</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspvlaeSpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>K-1</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspvlaeKpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>L-1</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspvlaeLpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>S-3</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspvlSedpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>F-3</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspvlFedpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>D-3</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspvlDedpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>G-3</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspvlGedpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>I-3</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspvlIedpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>V-3</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspvlVedpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>S-4</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspvSaedpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>N-4</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspvNaedpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>A-4</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspvAaedpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>F-4</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspvFaedpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>I-4</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspvIaedpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>Q-5</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspQlaedpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>S-5</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspSlaedpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>D-5</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspDlaedpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>F-5</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspFlaedpsegeg – 391</td>
+    </tr>
+    <tr>
+      <td>A-5</td>
+      <td>347 – aepstvpgtpppkkfrslffgsilapvrspqgpspAlaedpsegeg – 391</td>
+    </tr>
+  </tbody>
+</table>
+
 For pull-down experiments, 10 µl streptavidin agarose were saturated with a given peptide in binding buffer (20 mM HEPES 8.0, 450 mM NaCl, 0.01% Triton, 5% Glycerol, 5 mM MgCl2, 5 mM 2-mercaptoethanol). N-Myc6-TEV2-hTOPBP1-1-360 in vitro translated in rabbit reticulocyte lysate in the presence of 35S-methionine in binding buffer was added and incubated for 2 hr at 4°C. After washing in binding buffer, inputs and beads were analysed by SDS PAGE and autoradiography.
 
-## Bioinformatics and peptide identification
+### Bioinformatics and peptide identification
 
 Consensus motifs based on the observed crystal structures and binding data for TOPBP1/Rad4 BRCT1 and BRCT2 domains, were compiled as Prosite strings, as follows,
 
 BRCT1: [FILMV]-[FILMV]-[FILMV]-x-x-[ST]-P, BRCT2: [FILMV]-x-x-[ST]-P and scanned over the amino acid sequences of putative TOPBP1/Rad4-interacting proteins using the ExPASy ScanProsite server. Putative interactors were identified from the literature and from the DNA Damage Response interaction network compiled in Pearl et al. (2015). Matches to the motifs were prioritised for experimental analysis on the basis of occurrence in non-structured regions, annotation as phosphorylated, and conservation across species. As well as the sites in human RHNO1 and S. pombe Mbd1 reported here, potential TOPBP1-binding motifs were also identified in 53BP1, MDC1 and SMARCAD1.
 
-## Fluorescence polarisation experiments
+### Fluorescence polarisation experiments
 
 Fluorescein-labelled peptides (Peptide Protein Research Ltd, Fareham, UK) at a concentration of 200 nM, were incubated at room temperature with increasing concentrations of recombinant protein in 25 mM HEPES pH 7.5, 150 mM NaCl, 1 mM EDTA, 0.25 mM TCEP, 0.02% (v/v) Tween-20. Four parallel replicates of each titration were dispensed into a black 96-well polypropylene plate (VWR, Lutterworth, UK) for measurement. Fluorescence polarisation was measured in a CLARIOstar multimode microplate reader (BMG Labtech, Aylesbury, UK). Binding curves represent the mean of 4 independent experiments, with error bars indicating one standard deviation. All data were fitted by non-linear regression, to a one site-specific binding model in Prism seven for Mac OS X (v 7.0d, GraphPad Software) in order to calculate the reported dissociation constants (Kd). Low-affinity non-specific responses for which a binding curve could not be determined are marked as ND.
 
@@ -157,7 +262,7 @@ Mdb1 pT113 Fluorescein-GYGGVMTVPNpTPQKPNLQ
 
 Mdb1 pS216, pT218 Fluorescein-GYGVEGDHSpSDpTEEEVVS
 
-## Crystallisation, data collection, phasing, model building rnd Refinement
+### Crystallisation, data collection, phasing, model building rnd Refinement
 
 Co-crystallisation trials of cTOPBP1-BRCT0,1,2 mixed with a two-fold excess of RAD9 peptide (SPVLAEDpSEGE) were set up in MRC 2 96-well sitting-drop vapour-diffusion plates by mixing 200 nl of 10 mg/ml protein solution with 200 nl of mother liquor, over a well volume of 50 μl. Crystals that grew from condition Morpheus E9 (100 mM bicine/Trizma base pH 8.5, 300 mM diethyleneglycol, 300 mM triethyleneglycol, 300 mM tetraethyleneglycol, 300 mM pentaethyleneglycol, 10% w/v PEG 20000% and 20% v/v PEG MME 550) were harvested and plunged into liquid nitrogen.
 

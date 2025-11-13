@@ -29,7 +29,7 @@
 
 ## Abstract
 
-Osteoporosis is a common systemic skeletal disorder resulting in bone fragility and increased fracture risk. It is still necessary to explore its detailed mechanisms and identify novel targets for the treatment of osteoporosis. Previously, we found that a lncRNA named GAS5 in human could negatively regulate the lipoblast/adipocyte differentiation. However, it is still unclear whether GAS5 affects osteoblast differentiation and whether GAS5 is associated with osteoporosis. Our current research found that GAS5 was decreased in the bones and BMSCs, a major origin of osteoblast, of osteoporosis patients. Mechanistically, GAS5 promotes the osteoblast differentiation by interacting with UPF1 to degrade SMAD7 mRNA. Moreover, a decreased bone mass and impaired bone repair ability were observed in Gas5 heterozygous mice, manifesting in osteoporosis. The systemic supplement of Gas5 -overexpressing adenoviruses significantly ameliorated bone loss in an osteoporosis mouse model. In conclusion, GAS5 promotes osteoblast differentiation by targeting the UPF1/SMAD7 axis and protects against osteoporosis.
+Osteoporosis is a common systemic skeletal disorder resulting in bone fragility and increased fracture risk. It is still necessary to explore its detailed mechanisms and identify novel targets for the treatment of osteoporosis. Previously, we found that a lncRNA named GAS5 in human could negatively regulate the lipoblast/adipocyte differentiation. However, it is still unclear whether GAS5 affects osteoblast differentiation and whether GAS5 is associated with osteoporosis. Our current research found that GAS5 was decreased in the bones and BMSCs, a major origin of osteoblast, of osteoporosis patients. Mechanistically, GAS5 promotes the osteoblast differentiation by interacting with UPF1 to degrade SMAD7 mRNA. Moreover, a decreased bone mass and impaired bone repair ability were observed in Gas5 heterozygous mice, manifesting in osteoporosis. The systemic supplement of Gas5-overexpressing adenoviruses significantly ameliorated bone loss in an osteoporosis mouse model. In conclusion, GAS5 promotes osteoblast differentiation by targeting the UPF1/SMAD7 axis and protects against osteoporosis.
 
 ## Introduction
 
@@ -43,37 +43,117 @@ In our current research, we found that the level of GAS5 was decreased in both t
 
 ## Results
 
-## GAS5 decreased in osteoporosis and positively correlated with the osteoblast differentiation
+### GAS5 decreased in osteoporosis and positively correlated with the osteoblast differentiation
 
 Eight osteoporosis patients who suffered from femoral neck fractures and eight patients with hip dysplasia and eight normal controls with car accident requiring surgery were recruited (Supplementary file 3). BGLAP and COL1A1 immunohistochemical staining confirmed the decrease in the bone formation marker in osteoporosis patients (Figure 1A). The mRNA level of GAS5 in both bone tissues and BMSCs was decreased in patients with osteoporosis compared to in those with hip dysplasia and normal control (Figure 1B–C), which indicated that GAS5 expression was closely related to bone metabolism in osteoporosis. Given the crucial role of BMSCs in osteoporosis, we explored the variation tendency of GAS5 expression during osteoblast differentiation of BMSCs. The results showed that GAS5 was upregulated along with the induction of osteogenesis, as shown by ARS assays, ALP staining, ALP tests and qPCR (Figure 1D–E, Figure 1—figure supplement 1). In addition, there was a positive relationship between the expression of GAS5 and the quantification of ARS staining (Figure 1F) or ALP activity (Figure 1—figure supplement 2A) or RUNX2/COL1A11/BGLAP mRNA expression (Figure 1—figure supplement 2B–D) in osteoblast differentiation. The distribution of lncRNAs is crucial for their function in cell behavior. As shown in Figure 1G, the distribution of GAS5 was more abundant in the cytoplasm. This tendency remained unchanged after induction (Figure 1H–I).
 
-## Decreasing GAS5 inhibited the osteoblast differentiation in vitro and in vivo
+![Figure 1.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig1-v3.jpg)
+
+**Figure 1.:** (A) COL1A1 and BGLAP immunohistochemical staining of the femur head from hip dysplasia and osteoporosis patients. The red arrow shows typical staining. Scale bar, (upper, 500 µm; lower, 50 µm). (B) qRT-PCR analysis of GAS5 isolated from cancellous bone between eight patients with postmenopausal osteoporosis and eight patients with hip dysplasia (n = 8). (C) GAS5 mRNA expression level in BMSCs isolated from hip dysplasia and osteoporosis patients (n = 8). (D) ARS staining during the osteogenic differentiation of MSCs (top). Alizarin red staining quantification during the osteogenic differentiation of MSCs. (bottom) (n = 15). (E) ALP staining and ALP assays in the osteoblast differentiation. (F) The relation of GAS5 and Alizarin red staining quantification in the osteoblast differentiation (n = 15). (G) GAS5 RNA FISH in BMSCs. U6 as the positive control. Scale bar, 50 µm. (H, I) Nuclear and cytoplasmic fractionation assay following agarose gel electrophoresis and analysis of GAS5 in the osteoblast differentiation. ACTB (actin β) and U6 were used as the positive controls.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Relative mRNA expression of GAS5, BGLAP, ALPL, and RUNX2 along with the day of human BMSCs osteogenic differentiation.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The correlation of GAS5 and ALP assay during osteogenic differentiation of MSCs (n = 15). (B, C, D) The correlation of GAS5 and ALPL, BGLAP, and RUNX2 during osteogenic differentiation of MSCs (n = 15).
+
+### Decreasing GAS5 inhibited the osteoblast differentiation in vitro and in vivo
 
 To explore the function of GAS5 in osteoblast differentiation, two siRNAs with better knockdown efficiency were chosen (Figure 2A) to construct the GAS5-knockdown lentiviruses (shRNA-1, shRNA-2). Decreased osteoblast differentiation was shown in the ARS assay (Figure 2B) and ALP assay (Figure 2C) after decreasing GAS5 expression. The expression of osteogenesis markers, including RUNX2, COL1A1, BGLAP, ALPL, and SP7, showed consistent results at both the mRNA (Figure 2D) and protein levels (Figure 2—figure supplement 1A–B). Then, we constructed a in vivo bone formation experiment to determine the role of GAS5 in osteoblast differentiation. The new bone formation shown by H and E, Masson staining and BGLAP immunohistochemical staining in the shGAS5 group was significantly lower than that in the control group (Figure 2E, Figure 2—figure supplement 2).
 
-## Increasing GAS5 promotes osteogenesis in vitro and in vivo
+![Figure 2.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig2-v3.jpg)
+
+**Figure 2.:** (A) GAS5 siRNA knockdown efficiency tested by qRT-PCR. (B) ARS staining and quantification in the GAS5 knockdown or control group. Scale bar, 500 µm. (C) ALP staining and ALP tests in the GAS5 knockdown or control group. Scale bar, 500 µm. (D) Relative RUNX2, ALPL, BGLAP, COL1A1, and SP7 expression in the GAS5 knockdown or control group. (E) H and E staining, Masson staining and Bglap immunohistochemical staining of HA/TCP in the GAS5 knockdown or control group. The red arrow shows typical bone formation. Scale bar, 100 µm; n = 5. Each cellular experimental group was repeated at least three times.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Western blot analysis and quantification of osteogenesis markers (COL1A1, RUNX2, BGLAP) in GAS5 knockdown or overexpression conditions. (B) Quantification of Western blot of osteogenesis markers (COL1A1, RUNX2, BGLAP) in GAS5 knockdown or overexpression conditions.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** The quantification of BGLAP immunohistochemical staining of in vivo bone formation tests in GAS5 knockdown or overexpression treatment.
+
+### Increasing GAS5 promotes osteogenesis in vitro and in vivo
 
 The expression level of GAS5 in BMSCs was greatly increased in the OE-GAS5 (overexpression of GAS5) group (Figure 3A). After transfection with OE-GAS5, the osteoblast differentiation was significantly promoted, as determined by both ARS assays (Figure 3B) and ALP assays (Figure 3C). Similar results were confirmed by osteoblast marker expression at both the gene and protein levels (Figure 3D). Moreover, increased bone formation in the OE-GAS5 group was observed in the bone formation model by H and E staining, Masson staining and BGLAP immunohistochemical staining (Figure 3E, Figure 3—figure supplement 1). These results indicated that GAS5 positively promoted the osteoblast differentiation in vitro and in vivo.
 
-## GAS5 functions by interacting with the UPF1 protein
+![Figure 3.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig3-v3.jpg)
+
+**Figure 3.:** (A) Relative GAS5 expression in the overexpression and control groups. (B) ARS staining and quantification in the GAS5 overexpression or control group. Scale bar, 50 µm. (C) ALP staining and ALP tests in the GAS5 overexpression or control group. (D) Relative RUNX2, ALP, BGLAP, COL1A1, and SP7 expression in the GAS5 overexpression or control group. (E) H and E, Masson staining and BGLAP immunohistochemical staining of HA/TCP in the GAS5 overexpression or control group. The red arrow shows typical bone formation. Scale bar, 100 µm; n = 5. Each cellular experimental group was repeated at least three times.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** The quantification of BGLAP immunohistochemical staining of in vivo bone formation tests in GAS5 knockdown or overexpression treatment.
+
+### GAS5 functions by interacting with the UPF1 protein
 
 To further investigate the detailed mechanism of GAS5 in osteoblast differentiation, we first detected the adjacent genes of GAS5 as in previous studies. The results showed that no significant changes in the adjacent genes were observed after inhibiting GAS5 expression, indicating that it did not function through cis regulation (Figure 4—figure supplement 1). The lncRNA-protein interaction is also an important aspect of its function (Marchese et al., 2017). Then, we performed an RNA pull-down assay to identify the interacting protein of GAS5. The mass spectrometry results indicated that UPF1, a DNA/RNA helicase at the crossroads of many critical cellular pathways for RNA and DNA maintenance (Fiorini et al., 2018), was identified in the GAS5 pull-down assay (Figure 4A). Western blot analysis of the GAS5 pull-down protein confirmed that GAS5 could interact with UPF1 specifically (Figure 4B), and a RIP assay using the anti-UPF1 antibody further confirmed this conclusion (Figure 4C–D). In addition, the locations of GAS5 and UPF1 in BMSCs partly overlapped, further indicating the interaction of GAS5 and UPF1 (Figure 4E).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig4-v3.jpg)
+
+**Figure 4.:** (A) Coomassie brilliant blue staining of RNA pull-down proteins in the GAS5 sense or antisense group. (B) The interaction between GAS5 and UPF1 was confirmed by Western blotting. (C, D) RIP assay analysis using the anti-UPF1 antibody revealed that GAS5 interacted with UPF1 in BMSCs, with GAPDH as a negative control. (E) GAS5 RNA FISH was performed in BMSCs and showed that GAS5 could partly colocalize with UPF1. Scale bar, 50 µm. (F) GAS5 truncation sequence diagram. (G) RNA pull-down assay with GAS5 truncation sequences and analyzed by Western blot. (H) UPF1 truncation diagram in a Flag tail. (I) Western blot analysis of the expression efficiency of UPF1 truncations. (J) RIP assay used UPF1 truncations and was analyzed by qRT-PCR. Each cellular experimental group was repeated at least three times.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** ZBTB37 (zinc finger and BTB domain containing 37), RC3H1 (ring finger and CCCH-type domains 1), SERPINC1 (serpin family C member 1), ZBTB37 (zinc finger and BTB domain containing 37), TNN (tenascin N), DARS2 (aspartyl-tRNA synthetase 2, mitochondrial), TNR (tenascin R), CACYBP (calcyclin-binding protein), KIAA0040 (KIAA0040), SUCO (SUN domain containing ossification factor), DNM3 (dynamin 3), PIGC (phosphatidylinositol glycan anchor biosynthesis class C), FASLG (Fas ligand), TNFSF18 (TNF superfamily member 18), TNFSF4 (TNF superfamily member 4), PRDX6 (peroxiredoxin 6), ANKRD45 (ankyrin repeat domain 45), TEX50 (testis expressed 50), KLHL20 (kelch like family member 20), SLC9C2 (solute carrier family nine member C2 (putative)), CENPL (centromere protein L).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** The model was predicted on the RNAfold web server website (http://rna.tbi.univie.ac.at//cgi-bin/RNAWebSuite/RNAfold.cgi). The rainbow color means the base-pair probabilities of the predicted folded RNA. The area of GAS5 combined with UPF1 was painted with lavender.
+
 To further illuminate the specific interaction sites of the GAS5/UPF1 complex, we constructed GAS5 mutant RNA according to the structure and sequence of GAS5 (Figure 4F, Figure 4—figure supplement 2). RNA pull-down followed by western blot analyses showed that GAS5 (210–420) was indispensable in the interaction with UPF1 and GAS5 was unable to detect UPF1 when this sequence was lost (Figure 4G). UPF1 protein has been found to include three different functional regions, including CH, HD, and SQ regions (Dehecq et al., 2018; Fiorini et al., 2018). Based on the structure of UPF1, we constructed the Flag-tagged UPF1 truncation plasmid (Figure 4H), and RIP assays were performed to explore the GAS5 interaction sites in UPF1. The results showed that UPF1-HD specifically combined with GAS5 (Figure 4I–J), which indicated that UPF-HD is indispensable in the interaction of GAS5 and UPF1.
 
-## GAS5 interacts with UPF1 to accelerate SMAD7 decay
+### GAS5 interacts with UPF1 to accelerate SMAD7 decay
 
 To further explore how GAS5 interacted with UPF1 to regulate the osteoblast differentiation, the activation levels of three critical signaling pathways, including the TGF-β/SMAD1/5/8, catenin and ERK pathways, were analyzed. As shown in Figure 5A and Figure 5—figure supplement 1A–C, the SMAD1/5/8 signaling pathway was significantly decreased in the shGAS5 group but increased in the GAS5-OE group, and the catenin and ERK pathways were impervious to GAS5 expression. Further exploration of the TGF-β/SMAD1/5/8 pathway revealed that SMAD7, an inhibitor of SMAD1/5/8 (Miyazawa and Miyazono, 2017), was increased in the GAS5 siRNA group and decreased in the GAS5 overexpression group (Figure 5B and C). Other molecular factors in the SMAD1/5/8 pathways, such as BMP2, BMP4, BMP7 and SMAD6, were unchanged (Figure 5—figure supplement 2A–F). These results determined that SMAD7 in the SMAD1/5/8 signaling pathway was the target of the GAS5/UPF1 complex.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig5-v3.jpg)
+
+**Figure 5.:** (A) Western blot analysis of the activation pathway (pSMAD1/5/8, SMAD1) in GAS5 knockdown or overexpression conditions. (B) SMAD7 was regulated by GAS5 knockdown or overexpression by western blot. (C) Relative SMAD7 mRNA levels in GAS5 knockdown or overexpression cells tested by qRT-PCR. (D, E) Western blot analysis and quantification of pSMAD1/5/8/SMAD1 and SMAD7 in the UPF1 knockdown and control groups. (F) RIP assay with anti-UPF1 showed the binding of UPF1 and SMAD7 mRNA. (G) Western blot analysis in the GAS5 knockdown, overexpression and control groups after actinomycin D treatment. NC means the negative control siRNA transfected group. It was also be treated by Actinomycin D but as the control of GAS5 shRNA-1. (H) Relative SMAD7 mRNA expression in the GAS5 knockdown and control groups by actinomycin D treatment tested by qRT-PCR. (I) Relative SMAD7 mRNA expression in the GAS5 overexpression and control groups by actinomycin D treatment tested by qRT-PCR. (J, K) Relative SMAD7 mRNA expression by actinomycin D treatment under the condition of UPF1 siRNA, overexpression of a truncated form of GAS5 or GAS5 full-length. (L) ARS staining and quantification in the GAS5 overexpression and UPF1 siRNA groups. Scale bar, 500 µm. (M) ALP staining and ALP tests in the GAS5 overexpression and UPF1 siRNA groups. Scale bar, 500 µm. Each cellular experimental group was repeated at least three times.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** (A, B) Western blot analysis and quantification of the pathway (catenin, ERK, SMAD2/3, SMURF1, SMURF2) in GAS5 knockdown or overexpression conditions. (C) Quantification for western blot analysis of β-catenin, ERK, SMAD2/3, SMURF1, and SMURF2.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** (A, B, C, D, E, F) Western blot analysis and quantification of BMP2, BMP4, BMP7, and SMAD6 in GAS5 knockdown or overexpression conditions.
+
 The RNA helicase UPF1 is one of the central molecules in nonsense-mediated mRNA decay (NMD) and Staufen-mediated mRNA decay (Plank and Wilkinson, 2018). UPF1 knockdown could increase the expression of SMAD7 as well as inhibit the activation of the SMAD1/5/8 pathway (Figure 5D–E). Based on the function of UPF1, a key molecule in mRNA nonsense-mediated decay, we hypothesized that GAS5 could affect SMAD7 mRNA stability by binding to UPF1 in BMSCs. First, we determined that UPF1 could bind to SMAD7 mRNA by a RIP assay (Figure 5F). Next, we tested the mRNA abundance after the addition of actinomycin D, which is an inhibitor of DNA transcription, and found that the SMAD7 mRNA decay speed was slower in the shGAS5 group but faster in the OE-GAS5 group at both the protein and RNA levels (Figure 5G–I). UPF1 knockdown completely blocked the effect of GAS5 on SMAD7 mRNA decay speed (Figure 5J). Furthermore, the region of GAS5 (210–420 bp) could also enhance the speed of SMAD7 mRNA decay and was blocked by UPF1 knockdown (Figure 5K). Knocking down UPF1 expression obviously blocked the function of GAS5 in the regulation of osteoblast differentiation, as shown by ARS and ALP assays (Figure 5L–M). These results indicated that GAS5 positively regulated the osteoblast differentiation by interacting with UPF1 to accelerate SMAD7 mRNA decay.
 
-## Gas5 heterozygous mice exhibit an osteoporotic phenotype and impaired bone repair capacity
+### Gas5 heterozygous mice exhibit an osteoporotic phenotype and impaired bone repair capacity
 
 To further explore the function of GAS5 in bone metabolism, we constructed Gas5 knockout mice. However, we used Gas5 heterozygotes (Gas5+/-) instead because all homozygous Gas5-/- mice unexpectedly died during the embryonic period. QRT-PCR analysis and DNA agarose gel electrophoresis proved that Gas5 partly deletion was successful (Figure 6—figure supplement 1A–B). And Gas5 in cancellous bone of Gas5+/-mice decreased compared with the WT mice (Figure 6—figure supplement 1D). The heterozygous Gas5+/- mice survived normally and showed no changes in size, weight or appearance compared with their WT littermates (Gas5+/+). However, the Gas5+/- mice had less femoral cancellous bone than the WT mice, as shown by micro-CT and its three-dimensional reconstruction results (Figure 6A). In addition, H and E staining and Bglap immunohistochemical staining showed that bone trabeculae were decreased in Gas5+/- mice (Figure 6B, Figure 6—figure supplement 2). In addition, bone analysis from micro-CT showed that BV/TV, trabecular thickness, and trabecular number were decreased, and BSA/BV and trabecular spacing were increased in Gas5+/- mice compared with in WT mice (Figure 6C–G). As shown in Figure 6H, decreased Bglap levels in the sera of the Gas5+/- group were observed compared with those in the WT group. These results demonstrated that Gas5+/- mice showed osteoporosis-like manifestations. The BMSC of Gas5+/- and WT group were isolated and induced into osteoblast differentiation. The mRNA expression of Gas5, Upf1 and Smad7 in BMSC of Gas5+/- and WT mice were detected. Gas5 was decreased in Gas5+/- mice while Smad7 was increase compared with WT mice. However, the level of Upf1 mRNA has no significant change in two groups (Figure 6—figure supplement 1C). ARS and ALP staining showed that Gas5+/- mouse BMSCs manifested a decreased osteoblast differentiation ability (Figure 6I–L). Furthermore, the detection of proteins isolated from the tibia indicated that the Smad1/5/8 pathway, rather than the catenin and ERK signaling pathways, was significantly lower in the Gas5+/- group (Figure 6M–N, Figure 6—figure supplement 3). To determine the bone repair ability, a skull defect model was constructed using Gas5+/- mice. Using micro-CT, we found that the bone repair area on cranial bone was lower in Gas5+/- mice than in WT mice (Figure 6O–P). Collectively, these results suggest that Gas5+/- mice exhibit an osteoporotic phenotype and impaired bone repair capacity.
 
-## Systemic transfection (tail vein injection) of Gas5-overexpressing adenoviruses alleviated bone loss in osteoporosis
+![Figure 6.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig6-v3.jpg)
+
+**Figure 6.:** (A) Representative micro-CT analysis of the three-dimensional reconstruction graph for Gas5+/- (n = 6) and WT mice (n = 6). (B) Representative H and E staining (upper) and Bglap immunohistochemical staining (down) of the terminal femur of Gas5+/- (n = 6) and WT mice (n = 6). Scale bar, 500 µm. (C, D, E, F, G) BV/TV, BA/BV, trabecular thickness, trabecular number and trabecular spacing analysis of Gas5+/- (n = 6) and WT mice (n = 6). (H) Serum Bglap detection by ELISA in Gas5+/- (n = 6) and WT mice (n = 6). (I, K) ARS staining ARS and quantification of MSCs from Gas5+/- (n = 6) and WT mice (n = 6) Scale bar, 500 µm. (J) ALP staining of MSCs from Gas5+/- (n = 6) and WT mice (n = 6). (L) ALP tests of MSCs from Gas5+/- (n = 6) and WT mice (n = 6). Scale bar, 500 µm. (M, N) Western blot analysis for pSmad1/5/8/Smad1 in protein isolated from tibia of Gas5+/- (n = 6) and WT mice (n = 6). (O) Micro-CT three-dimensional images of cranial defects in Gas5+/- (n = 6) and WT mice (n = 6). (P) Bone recovery area analysis in Gas5+/- (n = 6) and WT mice (n = 6). Each cellular experimental group was repeated at least three times.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig6-figsupp1-v3.jpg)
+
+**Figure 6—figure supplement 1.:** (A, B) Relative Gas5 expression in the tails of Gas5+/+ (n = 6) and Gas5+/- (n = 6) mice analyzed by qRT-PCR and agarose gel electrophoresis. (C) Relative mRNA expression of Gas5, Upf1 and Smad7 in BMSC of Gas5+/- and WT mice (n = 6). (D) The mRNA level of Gas5 in cancellous bone of Gas5+/-mice and WT mice.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig6-figsupp2-v3.jpg)
+
+**Figure 6—figure supplement 2.:** The quantification of Bglap immunohistochemical staining of Gas5+/-mice and WT mice.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig6-figsupp3-v3.jpg)
+
+**Figure 6—figure supplement 3.:** Western blot analysis of the pathway (β-catenin, ERK) in the protein from the tibia of Gas5+/+ (n = 6) and Gas5+/- mice (n = 6).
+
+### Systemic transfection (tail vein injection) of Gas5-overexpressing adenoviruses alleviated bone loss in osteoporosis
 
 To investigate the therapeutic effects of Gas5 on osteoporosis, we induced osteoporosis in mice with dexamethasone (DXMS) and injected Gas5-overexpressing adenoviruses or negative control. After Gas5-overexpressing adenovirus injection, the bone mass was alleviated as determined by micro-CT (Figure 7A) as well as by H and E staining and Bglap immunohistochemical staining (Figure 7B, Figure 7—figure supplement 1). Bone analysis from micro-CT showed that the BV/TV, trabecular thickness and trabecular number were increasing in the Gas5 adenovirus group supplemented with drugs and had decreased BSA/BV and trabecular spacing compared with the negative control (Figure 7C–G). Taken together, these results suggest that Gas5 may be a promising therapeutic target in osteoporosis.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig7-v3.jpg)
+
+**Figure 7.:** (A) Micro-CT analysis of the control mice (n = 6), osteoporosis mouse model (n = 6) or Gas5-overexpressing adenovirus-treated mice (n = 6). (B) H and E staining and Bglap immunohistochemical staining of the terminal femur of the control mice (n = 6), osteoporosis mouse model (n = 6) or Gas5-overexpressing adenovirus-treated mice (n = 6). Scale bar, 500 µm. (C, D, E, F, G) BV/TV, BA/BV, trabecular thickness, trabecular number, and trabecular spacing analysis for the control mice (n = 6), osteoporosis mouse model (n = 6) or Gas5-overexpressing adenovirus-treated group (n = 6). DXMS: dexamethasone.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/59079/elife-59079-fig7-figsupp1-v3.jpg)
+
+**Figure 7—figure supplement 1.:** The quantification of Bglap immunohistochemical staining of the control mice (n = 6), osteoporosis mouse model (n = 6) or Gas5-overexpressing adenovirus-treated mice.
 
 ## Discussion
 
@@ -95,15 +175,15 @@ In conclusion, we found that GAS5 acts as a protective target in osteoporosis. T
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 The use plan of all involving animals (including the type and number of mice, the specific operation plan, and the principle of optimal substitution, etc.) was proposed, and the final plan was determined after internal discussion in the research group. The animal plan finally approved by the Animal Use and Care Committee of the Eighth Affiliated Hospital of Sun Yat-sen University. Gas5+/+ and Gas5+/- mice (B6/JNju-Gas5em1Cd1152/Nju, pure C57BL/6J background) were purchased from GemPharmatech Co., Ltd. (Nanjing, China). Male and female Gas5+/+ and Gas5+/- mice were euthanized at 3 and 6 months of age.
 
-## Cell isolation and culture
+### Cell isolation and culture
 
 Human BMSCs from 15 volunteers were isolated from bone marrow after informed consent was obtained in Center for Biotherapy, Sun Yat-sen Memorial Hospital. Briefly, bone marrow was extracted from the posterior superior iliac spine under sterile conditions. BMSCs were purified, isolated, and cultured using our previously reported methods. BMSCs at passage two were used in the experiments. BMSC identity was confirmed by the immunophenotype profile. The cells used in experiments were positive for the BMSC surface antigens CD29-phycoerythrin (PE), CD34-allophycocyanin (APC), and CD44-fluorescein isothiocyanate (FITC) and negative for CD45-FITC, CD105-FITC, and HLA-DR-PE. The source of BMSCs for GAS5 location, function and mechanism exploration in BMSCs differentiation were from these 15 volunteers. Human tissue was obtained from healthy donors after informed consent was obtained. The MSCs of normal control, hip dysplasia, and osteoporosis patients was isolated in the above method. The study was approved by the ethics committee of the Eighth Affiliated Hospital of Sun Yat-sen University (Shenzhen, People’s Republic of China). After explaining in detail for the possible risks and importance of the research, as well as informing methods of privacy protection, we obtained the informed consent and consent publish signatures of all patients or normal donors.
 
-## Osteoblast differentiation and identification
+### Osteoblast differentiation and identification
 
 For osteoblast differentiation, BMSCs were cultured in osteoblast differentiation medium (DMEM containing 10% FBS, 0.1 μM dexamethasone, 10 mM β-glycerol phosphate, 50 μM ascorbic acid, 100 IU/ml penicillin, and 100 IU/ml streptomycin) for 0–14 days. The medium was replaced every 3 days. The osteoblast differentiation was identified by alizarin red S (ARS) and alkaline phosphatase (ALP) assays as follows.
 
@@ -111,64 +191,64 @@ ALP staining was performed according to the manufacturer’s instructions on day
 
 ARS staining was performed as described in our previous study. The cells were fixed with paraformaldehyde for 30 min and washed with PBS three times. Alizarin red staining solution was added, and the cells were stained for 15 min at room temperature. The cells were washed again with PBS three times, and photos were taken under the microscope. The cells were destained for 1 hr at room temperature using 10% cetylpyridinium chloride monohydrate for ARS quantification. Afterwards, 200 μL of the liquid was transferred to a 96-well plate, and the spectrophotometric absorbance was measured at 562 nm.
 
-## RNA isolation, reverse transcription, and qRT-PCR analyses
+### RNA isolation, reverse transcription, and qRT-PCR analyses
 
 Total RNA was isolated from BMSCs with an RNA-Quick Purification Kit (ESscience, Guangzhou) and transcribed into complementary DNAs using a PrimeScript RT Reagent Kit (TaKaRa, Dalian) according to the manufacturer’s instructions. Real-time PCR was performed using SYBR Green Premix Ex Taq (TaKaRa, Dalian). The data were standardized based on GAPDH expression, and the 2−ΔΔCt method was used to analyze the data and determine the relative expression of each gene. The forward and reverse primers for each gene are listed in Supplementary file 1.
 
-## Western blot and antibodies
+### Western blot and antibodies
 
 Cells and tissues were lysed in RIPA lysis buffer containing a protease inhibitor cocktail. Protein lysates were separated by SDS polyacrylamide gel electrophoresis (SDS-PAGE) and transferred onto PVDF membranes. Then, the membranes were blocked with BSA and incubated with primary antibodies against UPF1 (1:5000, ab109363, Abcam), SMAD7 (1:2000, MAB2029, RD system), SMAD1/5/9 (1:1000, 13820S, Cell Signaling Technology), SMAD1 (1:1000, 6944S, CST), beta-Catenin (1:1000, 8480S, CST), Nonphospho (Active) β-Catenin (1:1000, 19807S, CST), Phospho-p44/42 MAPK (Erk1/2) (1:1000, 4370, CST), p44/42 MAPK (Erk1/2) (1:1000, 4695, CST), BMP2 (1:1000, ab14933, Abcam), BMP4 (1:1000, ab124715-40 µl, Abcam), BMP6 (1:1000, ab155963-40 µl, Abcam), BMP7 (1:1000, ab129156-40 µl, Abcam), SMAD6 (1:1000, ab80049, Abcam), GAPDH (1:5000, AF0006, Beyotime), overnight at 4°C. The protein signals were detected using chemiluminescent reagents (Millipore) according to the manufacturer’s instructions.
 
-## Nuclear and cytoplasmic fractionation and agarose gel electrophoresis
+### Nuclear and cytoplasmic fractionation and agarose gel electrophoresis
 
 Cytoplasmic and nuclear RNA was extracted as described previously according to the manufacturer’s instructions (PARIS, Part Number AM1921). Cells were lysed in lysis solution and isolated in cell disruption and cell fractionation buffer. qRT-PCR was performed to analyze the RNA extracted from each of the fractions. The data were analyzed to determine the nuclear and cytoplasmic levels of each RNA.
 
 PCR products were collected with DNA loading buffer and separated on 1.2% agarose containing 0.01% Gel Red (Biotium). Thereafter, DNA products were detected by UV light and photographed for observation.
 
-## RNA pull-down assay and mass spectrometry
+### RNA pull-down assay and mass spectrometry
 
 GAS5 and its mutants were cloned into the pcDNA3.1(+) vector. Linearized pcDNA3.1(+) expressing GAS5- or GAS5-deletion sequences was used as a template to synthesize biotinylated GAS5, GAS5 antisense or mutant sequences by the TranscriptAid T7 High-Yield Transcription Kit (Thermo Fisher Scientific). A Pierce RNA 3′ End Desthiobiotinylation Kit was used to attach a single desthiobiotinylated cytidine bisphosphate to the 3' end of the RNA strand. After biotin labeling, the Pierce Magnetic RNA-Protein Pull-Down Kit (Thermo Fisher Scientific) was used for the RNA pull-down assay following the manufacturer’s suggestions. Labeled RNA was captured using 50 µL of streptavidin magnetic beads in RNA Capture Buffer for 30 min at room temperature. RNA pull-down specificity was assessed by western blotting. The RNA-binding proteins were sequenced and identified by LC-MS as described by BBI Life Sciences Corporation.
 
-## RNA immunoprecipitation (RIP)
+### RNA immunoprecipitation (RIP)
 
 RIP was performed using a previously described method (Li et al., 2018). In brief, 5 × 106 cells were harvested by RIP lysis buffer and then incubated with RIP buffer containing magnetic beads conjugated to anti-UPF1 and anti-Flag antibodies. Purified rabbit IgG was used as a negative control. A positive control anti-SNRNP70 antibody was used for the RIP procedure. Then, immunoprecipitated RNAs were isolated and purified for quantitative PCR analysis to detect the presence of the target lncRNA.
 
-## Plasmid, lentivirus construction, and infection
+### Plasmid, lentivirus construction, and infection
 
 Three GAS5 and UPF1 siRNAs were designed and synthesized by GenePharma (Shanghai, China). Details of the sequences are shown in Supplementary file 2. The best knockdown efficiency siRNA was selected to build the short hairpin RNA (shRNA) and construct the lentivirus by OBiO Technology (Shanghai) Corp., Ltd. GAS5 lentiviruses, Gas5-overexpressing adenoviruses and the plasmids UPF1-Flag, CH-Flag, HD-Flag, CH-HD-Flag, and HD-SQ-Flag were constructed and purchased from OBiO Technology (Shanghai). Completed lentiviruses and adenoviruses were used to transfect BMSCs and animals, respectively, for functional testing. BMSCs were incubated with the lentiviruses for 24 hr at a multiplicity of infection of 50.
 
-## Bone formation of BMSCs in vivo
+### Bone formation of BMSCs in vivo
 
 BMSCs were transfected with lentiviruses (shGAS5-1, shGAS5-2, negative control, GAS5-OE or the vector) were cultured in osteoblast medium for 7 days prior to the in vivo study. The cells (5 × 105) were resuspended and planted onto 40 mg hydroxyapatite/tricalcium phosphate (HA/TCP) scaffold. Then, the scafflods were implanted subcutaneously into the backs of 8-week-old BALB/c homozygous nude (nu/nu) mice. The implants were removed after 8 weeks and fixed in 4% paraformaldehyde. H and E, Masson, and immunofluorescence staining were performed to analyze the new bone formation.
 
-## Collection of human bone samples
+### Collection of human bone samples
 
 The femoral head was acquired during the surgery after signing informed consent with all donors. Eight postmenopausal osteoporosis patients with femoral neck fractures and eight hip dysplasia patients requiring surgery and eight normal control patients with the accident required surgery were recruited in this research. The characteristics of the study subjects are presented in Supplementary file 3.
 
-## Fluorescent in situ hybridization (FISH)
+### Fluorescent in situ hybridization (FISH)
 
 For RNA FISH, a RiboFluorescent In Situ Hybridization Kit (RiboBio company) was used to detect the RNA in BMSCs according to the manufacturer’s instructions. In brief, cells in wells were fixed with 4% polyoxymethylene for 20 min, permeabilized and prehybridized in hybridization buffer and then hybridized at 55°C for 1 hr with a GAS5 probe mix (RiboBio company). Stained samples were mounted with Fluoromount-G for confocal imaging. Images were obtained using an LSM 5 Exciter confocal imaging system (Carl Zeiss).
 
-## Osteoporosis mouse model construction and treatment
+### Osteoporosis mouse model construction and treatment
 
 Glucocorticoid-induced C57BL/6J mice were used to establish an osteoporosis model (dexamethasone (DXMS) dosage: 2 mg/kg, hind leg muscle injection, three times a week for 8 weeks). A total of 5 × 1011 Gas5-overexpressing adenoviruses or control adenoviruses was injected into the mice from the tail vein. Eight weeks later, the serum and femur of the mice were acquired for micro-CT and staining studies.
 
-## Cranial defect experiment
+### Cranial defect experiment
 
 Ten-week-old mice were anesthetized, and the skin was prepared, and the surgical area was strictly disinfected. The skin was incised with a scalpel, and the subcutaneous tissue was carefully peeled off. A 2.5 mm sterilized drill bit was used to drill the skull, and the position was controlled at the left posterior cranial fossa. When there was a sense of breakthrough, the skull piercing was stopped, and dura mater puncturing was avoided. The bone fragments were carefully removed, and the incision was sutured with a thin thread. The incision was disinfected, and the surgery mouse was placed in a new cage. Eight weeks later, the whole skull of the mice was acquired for micro-CT analysis.
 
-## Enzyme-linked immunosorbent assay (ELISA)
+### Enzyme-linked immunosorbent assay (ELISA)
 
 Serum levels of osteocalcin (Bglap) were tested by ELISA according to the manufacturer's instructions (Mouse Osteocalcin ELISA Kit (Colorimetric)). First, 100 µl of Capture Antibody Solution was added into the wells. The plate was incubated overnight at 4°C, and the plates were blocked by dispensing 300 µl of reagent diluent into each well and incubating the plate for 60 min at room temperature. Then, 100 µl of diluted samples and standards was added to the appropriate wells, and the plate was covered. The plate was incubated for 2 hr at room temperature. Finally, 100 µl of Detection Antibody Solution was dispensed into each well. The plate was incubated for 2 hr at room temperature. Then, 100 µl of the Substrate Solution was added into each well. The plate was covered and incubated for 20 to 30 min at room temperature. After color development, the cover was removed, and 50 µl of Stop Solution was dispensed into each well to stop the enzymatic reaction. The microwell absorbances were read immediately at 450 nm. The mouse serum was collected and diluted 1:20 for measurement of total Bglap.
 
-## Microcomputed tomography (micro-CT) and histomorphometric analyses
+### Microcomputed tomography (micro-CT) and histomorphometric analyses
 
 Microcomputed tomography (micro-CT) was used to analyze the bone structure of the femur and skull. The harvested bone tissues were fixed in 4% polyoxymethylene for 2 days and then stored in 70% ethanol at 4°C before being processed. To analyze trabecular bone, images were acquired at an effective pixel size of 8.82 lm, a voltage of 80 kV, a current of 500 lA and an exposure time of 1500 ms in each of the 360 rotational steps. The bone volume/total vol (BV/TV), bone surface area/bone vol (BSA/BV), trabecular thickness, trabecular number and trabecular spacing were analyzed according to the guidelines. Two-dimensional and three-dimensional bone structure image slices were reconstructed.
 
-## H and E, Masson, and immunohistochemical staining
+### H and E, Masson, and immunohistochemical staining
 
 The dissected tissues were fixed in 4% polyoxymethylene for 2 days and decalcified in 20% EDTA for 1 week before sectioning. Five-µm-thick slices were prepared on charged glass slides. H and E staining and Masson staining were performed according to the manufacturer’s instructions (Beijing Solarbio Science and Technology Co., Ltd.). The slides were immersed in 10 mM citrate buffer (pH 7.5) and microwaved at 750 W for 30 min for antigen retrieval for immunohistochemical staining. After that, the samples were treated with 3% H2O2 for 20 min and blocked with 5% normal goat serum for 1 hr at room temperature. Primary antibodies were applied in blocking buffer or hybridization buffer at 4°C overnight. Standard DAB staining was performed for chromogenic detection of immunohistochemistry.
 
-## Statistical analysis
+### Statistical analysis
 
 Each cellular experimental group was repeated at least three times. All data are expressed as the mean ± standard deviation (SD). Statistical analysis was performed using SPSS 18.0 software (SPSS, Chicago, IL, USA). Statistical significance between Gas5 heterozygous and wild-type (WT) mice was calculated using a paired two-tailed t test. Statistical differences were analyzed by unpaired two-tailed Student’s t test for other comparisons between two groups. Analysis of variance (ANOVA) and appropriate post hoc analyses were used for comparisons of more than two groups. Correlations between the quantification of ARS staining, ALP tests, ALP, RUNX2, and BGLAP expression and GAS5 expression in MSCs were examined using Pearson’s correlation. A probability value of 0.05 or less was considered statistically significant.

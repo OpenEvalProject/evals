@@ -22,7 +22,7 @@
 
 ## Abstract
 
-10.7554/eLife.19274.001 Biological macromolecules function in highly crowded cellular environments. The structure and dynamics of proteins and nucleic acids are well characterized in vitro, but in vivo crowding effects remain unclear. Using molecular dynamics simulations of a comprehensive atomistic model cytoplasm we found that protein-protein interactions may destabilize native protein structures, whereas metabolite interactions may induce more compact states due to electrostatic screening. Protein-protein interactions also resulted in significant variations in reduced macromolecular diffusion under crowded conditions, while metabolites exhibited significant two-dimensional surface diffusion and altered protein-ligand binding that may reduce the effective concentration of metabolites and ligands in vivo. Metabolic enzymes showed weak non-specific association in cellular environments attributed to solvation and entropic effects. These effects are expected to have broad implications for the in vivo functioning of biomolecules. This work is a first step towards physically realistic in silico whole-cell models that connect molecular with cellular biology. DOI: http://dx.doi.org/10.7554/eLife.19274.001
+Biological macromolecules function in highly crowded cellular environments. The structure and dynamics of proteins and nucleic acids are well characterized in vitro, but in vivo crowding effects remain unclear. Using molecular dynamics simulations of a comprehensive atomistic model cytoplasm we found that protein-protein interactions may destabilize native protein structures, whereas metabolite interactions may induce more compact states due to electrostatic screening. Protein-protein interactions also resulted in significant variations in reduced macromolecular diffusion under crowded conditions, while metabolites exhibited significant two-dimensional surface diffusion and altered protein-ligand binding that may reduce the effective concentration of metabolites and ligands in vivo. Metabolic enzymes showed weak non-specific association in cellular environments attributed to solvation and entropic effects. These effects are expected to have broad implications for the in vivo functioning of biomolecules. This work is a first step towards physically realistic in silico whole-cell models that connect molecular with cellular biology.
 
 ## Introduction
 
@@ -34,57 +34,294 @@ As experiments are beginning to approach realistic cellular environments, it rem
 
 ## Results
 
-All-atom molecular dynamics (MD) simulations were applied to three atomistic cytoplasmic models containing proteins, nucleic acids, metabolites, ions and water, explicitly. We studied
+All-atom molecular dynamics (MD) simulations were applied to three atomistic cytoplasmic models containing proteins, nucleic acids, metabolites, ions and water, explicitly. We studied MGh, based on a cytoplasmic model built previously with 103 million atoms in a cubic (100 nm) (Bennett et al., 2009) box (Figure 1 and Table 1) (Feig et al., 2015), and two different subsections, MGm1 and MGm2, with 12 million atoms (Table 1). Unrestrained MD simulations were carried out for 20 ns (MGh), 140 ns (MGm1) (Video 1), and 60 ns (MGm2). Although the simulation times, limited by resource constraints, may seem short, ensemble averaging over many copies of the same molecules in different local environments allowed for meaningful statistics. Furthermore, the three systems were started from different initial conditions providing further statistical significance.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/19274/elife-19274-fig1-v1.jpg)
 
-**Figure 1.:** (A) Schematic illustration of Mycoplasma genitalium (MG). (B) Equilibrated MG system highlighted with proteins, tRNA, GroEL, and ribosomes. (hC) MG cl ose-up showing atomistic level of detail. See also supplementary hFigures 1 and 2 for structures of individual macromolecules and metabolites as well as supplementary Figure 3 for initial configurations of the simulated systems.DOI: http://dx.doi.org/10.7554/eLife.19274.003
+**Figure 1.:** (A) Schematic illustration of Mycoplasma genitalium (MG). (B) Equilibrated MGh system highlighted with proteins, tRNA, GroEL, and ribosomes. (C) MGh cl ose-up showing atomistic level of detail. See also supplementary Figures 1 and 2 for structures of individual macromolecules and metabolites as well as supplementary Figure 3 for initial configurations of the simulated systems.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/19274/elife-19274-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** Structures of macromolecular complexes colored by residues index with tag, Stokes radius, and name.DOI: http://dx.doi.org/10.7554/eLife.19274.004
+**Figure 1—figure supplement 1.:** Structures of macromolecular complexes colored by residues index with tag, Stokes radius, and name.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/19274/elife-19274-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** MG.hFor each metabolite, the abbreviation used in the text and its full name are given. Phosphates are highlighted in red.DOI: http://dx.doi.org/10.7554/eLife.19274.005
+**Figure 1—figure supplement 2.:** For each metabolite, the abbreviation used in the text and its full name are given. Phosphates are highlighted in red.
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/19274/elife-19274-fig1-figsupp3-v1.jpg)
 
-**Figure 1—figure supplement 3.:** Initial simulation boxes with colors indicating different macromolecular types.DOI: http://dx.doi.org/10.7554/eLife.19274.006
+**Figure 1—figure supplement 3.:** Initial simulation boxes with colors indicating different macromolecular types.
 
-## Native state stability of biomacromolecules in cellular environments
+**Table 1.**
+ Simulated cytoplasmic systems.
 
-The stabilities of five proteins (phosphoglycerate kinase, PGK; pyruvate dehydrogenase E1.a, PDHA; NADH oxidase, NOX; enolase, ENO; and translation initiation factor 1, IF1) and tRNA (ATRN) in the cellular environments in terms of root mean square displacements (RMSD) from the initial homology models and radii of gyration (
+
+<table>
+  <thead>
+    <tr>
+      <th>System</th>
+      <th>MGh</th>
+      <th>MGm1</th>
+      <th>MGm2</th>
+      <th>MGcg</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cubic box length (nm)</td>
+      <td>99.8</td>
+      <td>48.2</td>
+      <td>48.2</td>
+      <td>106.2</td>
+    </tr>
+    <tr>
+      <td>Program</td>
+      <td>GENESIS</td>
+      <td>GENESIS</td>
+      <td>NAMD</td>
+      <td>GENESIS</td>
+    </tr>
+    <tr>
+      <td>Simulation time</td>
+      <td>20 ns</td>
+      <td>140 ns</td>
+      <td>60 ns</td>
+      <td>10 × 20 μs</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td colspan="4">number of molecules</td>
+    </tr>
+    <tr>
+      <td>Ribosomes</td>
+      <td>31</td>
+      <td>3</td>
+      <td>3</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>GroELs</td>
+      <td>20</td>
+      <td>3</td>
+      <td>3</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Proteins</td>
+      <td>1238</td>
+      <td>182</td>
+      <td>133</td>
+      <td>1927</td>
+    </tr>
+    <tr>
+      <td>RNAs</td>
+      <td>284</td>
+      <td>28</td>
+      <td>44</td>
+      <td>298</td>
+    </tr>
+    <tr>
+      <td>Metabolites</td>
+      <td>41,006</td>
+      <td>5.005</td>
+      <td>5.072</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ions</td>
+      <td>214,000</td>
+      <td>23,049</td>
+      <td>27,415</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Waters</td>
+      <td>26,263,505</td>
+      <td>2,944,143</td>
+      <td>2,893,830</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total # of atoms</td>
+      <td>103,708,785</td>
+      <td>11,737,298</td>
+      <td>11,706,962</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_See also Figure 1—figure supplement 3 showing initial configurations and supplementary material with lists of the individual molecular components._
+
+![Video 1.](https://cdn.elifesciences.org/articles/19274/elife-19274-media1.mp4.jpg)
+
+**Video 1.:** Macromolecules are shown with both cartoon and lines. Metabolites and ions are shown with stick or sphere. Macromolecules in back ground are shown with surface representation.
+
+### Native state stability of biomacromolecules in cellular environments
+
+The stabilities of five proteins (phosphoglycerate kinase, PGK; pyruvate dehydrogenase E1.a, PDHA; NADH oxidase, NOX; enolase, ENO; and translation initiation factor 1, IF1) and tRNA (ATRN) in the cellular environments in terms of root mean square displacements (RMSD) from the initial homology models and radii of gyration (Rg) were compared with simulations in dilute solvents (Figure 2A and Table 2). We focused on these systems because of large copy numbers to obtain sufficient statistics. Average RMSD values with respect to the initial models were lower or the same in the cellular environment compared to dilute solvent for PGK, NOX, ENO, and IF1 but increased for PDHA. The stability of individual copies varied significantly presumably at least in part as a function of the local environment consistent with recent work by Ebbinghaus et al. that found significant variations in protein folding rates within a single cell (Ebbinghaus et al., 2010). Some copies of PDHA significantly departed from the native structures in the cellular environment and those molecules had extensive contacts with other proteins (Figure 2—figure supplement 2 and Video 2) similar to previously observed destabilizations of native structures due to protein-protein interactions in crowded environments (Harada et al., 2013; Feig and Sugita, 2012). To further understand the mechanism by which PDHA became destabilized, we analyzed one copy that denatured significantly in more detail (we denote this copy as PDHA*). Time traces shown in Figure 2—figure supplement 2 illustrate that the increase in RMSD coincides with the formation of protein-protein contacts, in particular with PYK. Additional energetic analysis indicates that the destabilization is driven by an overall decrease in the crowding free energy (see Figure 2—figure supplement 2). Further decomposition reveals a decrease in protein-protein electrostatic energies and van der Waals interactions while electrostatic solvation energies increase as PDHA becomes destabilized (Figure 2—figure supplement 2E,F). This means that favorable protein-protein electrostatic interactions between PDHA and the crowders are counteracted by unfavorable solvation as far as the dominant electrostatic component is concerned. The combination of the electrostatic and electrostatic solvation contributions increases (Figure 2—figure supplement 2E) suggesting that based on electrostatics and solvation alone the destabilization of PDHA* would not be favorable. However, this increase is more than outweighed by a decrease in the van der Waals interaction energy that suggests that, in the case of PDHA*, non-specific, shape-driven interactions ultimately lead to native state destabilization. In addition, the overall solvent-accessible surface area of the PDHA*-crowder system decreases as evidenced by the decrease in the asp term (which is proportional to the solvent-accessible surface area), further contributing to the interaction of the destabilized PDHA* with the crowder environment being more favorable than the initial non-interacting native PDHA*.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/19274/elife-19274-fig2-v1.jpg)
 
-**Figure 2.:** (A) Time-averaged RMSDs (from starting structures) and radii of gyration (R) for selected macromolecules in gMG(red), in dilute solution with only counterions (blue) and with KCl excess salt (green). Statistical errors are with respect to copies of the same type. (m1B) Probability of the center of mass distances between the ligand binding sites dlig for PGK in MG (red), in water (blue), and in KCl (green). (m1C): Final snapshots of PGK in MG (red), in water (blue), and in KCl (green). (m1D) Time- and ensemble-averaged 3D distribution of atoms in the ATP phosphate group (blue, 0.002 Å−3) and K+ (yellow, 0.001 Å−3) around PGK in MG. (m1E) Time- and ensemble-averaged 3D distribution of K+ (yellow, 0.001 Å−3) and Cl- (purple, 0.001 Å−3) around PGK in KCl aqueous solution. See also supplementary Figures 1, 2 and 3 showing time series of structural stability measures and the influence of the local crowding environment on the structure of PGK and PDHA.DOI: http://dx.doi.org/10.7554/eLife.19274.009
+**Figure 2.:** (A) Time-averaged RMSDs (from starting structures) and radii of gyration (Rg) for selected macromolecules in MGm1(red), in dilute solution with only counterions (blue) and with KCl excess salt (green). Statistical errors are with respect to copies of the same type. (B) Probability of the center of mass distances between the ligand binding sites dlig for PGK in MGm1 (red), in water (blue), and in KCl (green). (C): Final snapshots of PGK in MGm1 (red), in water (blue), and in KCl (green). (D) Time- and ensemble-averaged 3D distribution of atoms in the ATP phosphate group (blue, 0.002 Å−3) and K+ (yellow, 0.001 Å−3) around PGK in MGm1. (E) Time- and ensemble-averaged 3D distribution of K+ (yellow, 0.001 Å−3) and Cl- (purple, 0.001 Å−3) around PGK in KCl aqueous solution. See also supplementary Figures 1, 2 and 3 showing time series of structural stability measures and the influence of the local crowding environment on the structure of PGK and PDHA.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/19274/elife-19274-fig2-figsupp1-v1.jpg)
 
-**Figure 2—figure supplement 1.:** Root mean square deviations (RMSD) relative to initial structures based on Cα or P atoms of core structures as explained in Analysis Details (A); and radii of gyration based on all Cα or P atoms (Rg; B) for PGK, PDHA, NOX, ENO, IF1, and ATRN (for abbreviations see Figure 1—figure supplement 1) in MG (red), in water with only counterions (blue), and in KCl solution (green) are shown. Window-averaged time series are shown as solid lines. m1Rg values of initial models are indicated as dashed grey lines.DOI: http://dx.doi.org/10.7554/eLife.19274.010
+**Figure 2—figure supplement 1.:** Root mean square deviations (RMSD) relative to initial structures based on Cα or P atoms of core structures as explained in Analysis Details (A); and radii of gyration based on all Cα or P atoms (Rg; B) for PGK, PDHA, NOX, ENO, IF1, and ATRN (for abbreviations see Figure 1—figure supplement 1) in MGm1 (red), in water with only counterions (blue), and in KCl solution (green) are shown. Window-averaged time series are shown as solid lines. Rg values of initial models are indicated as dashed grey lines.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/19274/elife-19274-fig2-figsupp2-v1.jpg)
 
-**Figure 2—figure supplement 2.:** MG.m1(A) Denatured (green) conformation of one of the 39 copies of PDHA (denoted as PDHA*) due to contacts with other cytoplasmic proteins (PYK (red), PGK (gray), ENO (orange), PTA (black), and METK (yellow)). The initial, native, homology model is shown in blue. (B) Correlation between coordination number of crowder Cα atoms Nc (see Materials and methods) and RMSD (based on Cα atoms relative to the initial model) for PDHA. The schematic figure in upper left shows the target protein (gray) surrounded by cytoplasmic proteins (blue). The atoms counted in Nc (green) are shown in green. Histogram averages are shown as yellow boxes with standard deviations indicated as red bars. The dashed circle corresponds to the denatured state shown in panel A. Instantaneous values of Nc, dlig and RMSD were calculated using an interval of 200 ps using 39 copies of PDHA, respectively, in the MG system. (m1C) Time history of RMSD (based on Cα atoms relative to the structure after the equilibration) (red) and radius of gyration (Rg) (blue) of PDHA*. (D) Time history of the contact pair between all atoms in the PDHA* and all atoms in five vicinal proteins (line color corresponds to those proteins in panel A) with the total value of them (dashed black). The schematic figure in the upper left shows the contact pairs (dashed line) between the atoms in two proteins (green and blue). The cutoff distance of the contact pair was set to 10 Å. (E) Time histories of the energy changes of PDHA* upon crowding (ΔE) (i.e. the energy of all proteins (PDHA* with 5 vicinal proteins) subtracted by those energies of isolated PDHA* and the five vicinal proteins). Each energy component of cΔE is shown with different colors (van der Waals energy (vdw; gray), cost of cavity formation calculated as 0.005 cal/mol/Åc2 * SASA (asp; red), combination of the vacuum electrostatic and electrostatic solvation energies (elec+gb; blue), and the total energy (tot; thick black line). (F) Time history of the electrostatic Coulomb energy (elec; orange) and electrostatic solvation energy obtained via the GBMV generalized Born method in CHARMM (Lee et al., 2003) (gb; violet) where energies of PDHA* upon crowding relative to the initial values were elec0 = −1399 and gb0 = 1406 kcal/mol, respectively.DOI: http://dx.doi.org/10.7554/eLife.19274.011
+**Figure 2—figure supplement 2.:** (A) Denatured (green) conformation of one of the 39 copies of PDHA (denoted as PDHA*) due to contacts with other cytoplasmic proteins (PYK (red), PGK (gray), ENO (orange), PTA (black), and METK (yellow)). The initial, native, homology model is shown in blue. (B) Correlation between coordination number of crowder Cα atoms Nc (see Materials and methods) and RMSD (based on Cα atoms relative to the initial model) for PDHA. The schematic figure in upper left shows the target protein (gray) surrounded by cytoplasmic proteins (blue). The atoms counted in Nc (green) are shown in green. Histogram averages are shown as yellow boxes with standard deviations indicated as red bars. The dashed circle corresponds to the denatured state shown in panel A. Instantaneous values of Nc, dlig and RMSD were calculated using an interval of 200 ps using 39 copies of PDHA, respectively, in the MGm1 system. (C) Time history of RMSD (based on Cα atoms relative to the structure after the equilibration) (red) and radius of gyration (Rg) (blue) of PDHA*. (D) Time history of the contact pair between all atoms in the PDHA* and all atoms in five vicinal proteins (line color corresponds to those proteins in panel A) with the total value of them (dashed black). The schematic figure in the upper left shows the contact pairs (dashed line) between the atoms in two proteins (green and blue). The cutoff distance of the contact pair was set to 10 Å. (E) Time histories of the energy changes of PDHA* upon crowding (ΔEc) (i.e. the energy of all proteins (PDHA* with 5 vicinal proteins) subtracted by those energies of isolated PDHA* and the five vicinal proteins). Each energy component of ΔEc is shown with different colors (van der Waals energy (vdw; gray), cost of cavity formation calculated as 0.005 cal/mol/Å2 * SASA (asp; red), combination of the vacuum electrostatic and electrostatic solvation energies (elec+gb; blue), and the total energy (tot; thick black line). (F) Time history of the electrostatic Coulomb energy (elec; orange) and electrostatic solvation energy obtained via the GBMV generalized Born method in CHARMM (Lee et al., 2003) (gb; violet) where energies of PDHA* upon crowding relative to the initial values were elec0 = −1399 and gb0 = 1406 kcal/mol, respectively.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/19274/elife-19274-fig2-figsupp3-v1.jpg)
 
-**Figure 2—figure supplement 3.:** MG.m1(A) Atoms in two ligand binding sites (yellow and green licorice) of one of the 18 copies of PGK (denoted as PGK*) (gray tube) in the MG system. The distance between the center of mass for Cm1α atoms in each site is denoted as dlig (red arrow). Two major metabolites binding the active site of PGK* are shown in red (ATP) and blue (CTP), respectively. Proteins near the PGK* (two ACKAs (red and black), ATRN (orange) and PDHA (white)) are shown in surface. (B) Correlation between Nc and dlig for all copies of PGK in MG system. The correlation coefficient m1p between Nc and dlig is indicated. (C) Time history of dlig for PGK*. (D) Time history of the total atomic charge (Qtot) of the metabolites and ions binding the active site of PGK*. Atomic charge was counted when the minimum distance from the metabolite (or ion) atom to any Cα atoms in the active site of PGK* is smaller than 8 Å. (E) Time history of the contact pairs between all atoms in the active site of PGK* and atoms in the phosphate group of nucleotides entering the binding the site. The cutoff distance for defining a contact was set to 5 Å. (F) Time history of the contact pairs between all atoms in the PGK* and all atoms in three vicinal proteins (the line color corresponds to those proteins in panel A) with the total number of contacts shown as a dashed black line. The cutoff distance for defining a contact was set to 10 Å.DOI: http://dx.doi.org/10.7554/eLife.19274.012
+**Figure 2—figure supplement 3.:** (A) Atoms in two ligand binding sites (yellow and green licorice) of one of the 18 copies of PGK (denoted as PGK*) (gray tube) in the MGm1 system. The distance between the center of mass for Cα atoms in each site is denoted as dlig (red arrow). Two major metabolites binding the active site of PGK* are shown in red (ATP) and blue (CTP), respectively. Proteins near the PGK* (two ACKAs (red and black), ATRN (orange) and PDHA (white)) are shown in surface. (B) Correlation between Nc and dlig for all copies of PGK in MGm1 system. The correlation coefficient p between Nc and dlig is indicated. (C) Time history of dlig for PGK*. (D) Time history of the total atomic charge (Qtot) of the metabolites and ions binding the active site of PGK*. Atomic charge was counted when the minimum distance from the metabolite (or ion) atom to any Cα atoms in the active site of PGK* is smaller than 8 Å. (E) Time history of the contact pairs between all atoms in the active site of PGK* and atoms in the phosphate group of nucleotides entering the binding the site. The cutoff distance for defining a contact was set to 5 Å. (F) Time history of the contact pairs between all atoms in the PGK* and all atoms in three vicinal proteins (the line color corresponds to those proteins in panel A) with the total number of contacts shown as a dashed black line. The cutoff distance for defining a contact was set to 10 Å.
+
+**Table 2.**
+ Simulated single protein reference systems.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>System</th>
+      <th>Cubic box [nm]</th>
+      <th># of waters</th>
+      <th># of ions</th>
+      <th># of metabolites</th>
+      <th># of atoms</th>
+      <th>Simulation time* [ns]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PGK_w</td>
+      <td>9.89</td>
+      <td>30,787</td>
+      <td>Cl−: 8</td>
+      <td>0</td>
+      <td>98,886</td>
+      <td>4 × 140</td>
+    </tr>
+    <tr>
+      <td>PGK_i</td>
+      <td>9.87</td>
+      <td>30,374</td>
+      <td>K+: 217, Cl−: 225</td>
+      <td>0</td>
+      <td>98,081</td>
+      <td>4 × 140</td>
+    </tr>
+    <tr>
+      <td>PDHA_w</td>
+      <td>9.90</td>
+      <td>31,032</td>
+      <td>Na+: 7</td>
+      <td>0</td>
+      <td>98,779</td>
+      <td>2 × 140</td>
+    </tr>
+    <tr>
+      <td>PDHA_i</td>
+      <td>9.98</td>
+      <td>30,627</td>
+      <td>K+: 224, Cl−: 217</td>
+      <td>0</td>
+      <td>97,998</td>
+      <td>2 × 140</td>
+    </tr>
+    <tr>
+      <td>IF1_w</td>
+      <td>9.92</td>
+      <td>32,785</td>
+      <td>Cl-: 4</td>
+      <td>0</td>
+      <td>99,535</td>
+      <td>2 × 140</td>
+    </tr>
+    <tr>
+      <td>IF1_i</td>
+      <td>9.90</td>
+      <td>32,312</td>
+      <td>K+: 233, Cl−: 237</td>
+      <td>0</td>
+      <td>98,582</td>
+      <td>2 × 140</td>
+    </tr>
+    <tr>
+      <td>NOX_w</td>
+      <td>9.89</td>
+      <td>30,473</td>
+      <td>Cl−: 3</td>
+      <td>0</td>
+      <td>98,708</td>
+      <td>2 × 140</td>
+    </tr>
+    <tr>
+      <td>NOX_i</td>
+      <td>9.87</td>
+      <td>30,007</td>
+      <td>K+: 222, Cl−: 225</td>
+      <td>0</td>
+      <td>97,754</td>
+      <td>2 × 140</td>
+    </tr>
+    <tr>
+      <td>ENO_w</td>
+      <td>9.85</td>
+      <td>28,050</td>
+      <td>Na+: 2</td>
+      <td>0</td>
+      <td>98,330</td>
+      <td>2 × 140</td>
+    </tr>
+    <tr>
+      <td>ENO_i</td>
+      <td>9.84</td>
+      <td>27,648</td>
+      <td>K+: 203, Cl−: 201</td>
+      <td>0</td>
+      <td>97,526</td>
+      <td>2 × 140</td>
+    </tr>
+    <tr>
+      <td>ATRN_i</td>
+      <td>9.88</td>
+      <td>31,734</td>
+      <td>K+: 231, Cl−: 156</td>
+      <td>0</td>
+      <td>98,032</td>
+      <td>2 × 140</td>
+    </tr>
+    <tr>
+      <td>ACKA_m</td>
+      <td>14.71</td>
+      <td>102,379</td>
+      <td>K+: 231, Cl−: 156</td>
+      <td>168</td>
+      <td>325,691</td>
+      <td>2 × 510</td>
+    </tr>
+  </tbody>
+</table>
+
+_*The first 10 ns of each trajectory was discarded as equilibration._
+
+![Video 2.](https://cdn.elifesciences.org/articles/19274/elife-19274-media2.mp4.jpg)
 
 Rg values, reflecting overall compactness, were generally lower in the cellular environment over dilute solvent as expected from the volume exclusion effect (Minton, 2001). However, dilute solvent with added KCl matching the molality of the cytoplasm led to a similar reduction in Rg as in the cellular environment (Figure 2A). We focused additional analysis on PGK, where FRET measurements in the presence of polyethylene glycol (PEG) and coarse-grained simulations have suggested that its two domains come closer upon crowding concomitant with higher enzymatic activity (Dhar et al., 2010). In living cells, folded structures are also stabilized (Ebbinghaus et al., 2010; Guo et al., 2012). Consistent with these studies, the distance between the two ligand-binding sites (dlig) in MGm1 decreased relative to that in water, but a similar decrease also occurred in the KCl solution (Figure 2B–C). The PGK domain cleft attracted high concentrations of ATP in the cell where Cl- was found in the KCl simulations (Figure 2D–E). However, we found little correlation between dlig and the crowder coordination number of PGK (Nc) (Figure 2—figure supplement 3). To understand this observation in more detail, we looked again at one specific copy PGK (denoted as PGK*) where we correlated the time series of dlig with macromolecular crowder contacts, nucleotides entering the cleft, and the resulting additional charge (Figure 2—figure supplement 3). It can be seen that dlig closely tracks the charge in the cleft with more compact conformations occurring when more negative charge is present. The charge would screen electrostatic repulsion across the cleft between a large number of basic residues and allow the two ligand-binding domains to come closer. In this specific example, ATP and/or CTP entering the cleft region (Figure 2—figure supplement 3E) are responsible for bringing the negative charge to the cleft (Figure 2—figure supplement 3E). On the other hand, contacts with crowder molecules are not well correlated with dlig for this copy of PGK* (Figure 2—figure supplement 3F) mirroring the overall lack of correlation of dlig with crowder contacts (Figure 2—figure supplement 3B). These observations suggest that electrostatic stabilization by ions can induce similar effects as may be expected due to volume exclusion effects and that non-specific interactions with metabolites can affect biomolecular structures in unexpected ways.
 
-## Weak non-specific interactions of metabolically related enzymes
+### Weak non-specific interactions of metabolically related enzymes
 
-The high concentration of macromolecules in the cytoplasm allows macromolecules to weakly interact without forming traditional complexes. Such ‘quinary’ interactions have been proposed before (
+The high concentration of macromolecules in the cytoplasm allows macromolecules to weakly interact without forming traditional complexes. Such ‘quinary’ interactions have been proposed before (Monteith et al., 2015), but experimental studies in complex cellular environments are challenging and their biological significance is unclear. Based on distance changes for proximal macromolecular pairs relative to the initially randomly setup systems (ΔdAB) we compared interactions between regular proteins, RNAs, and huge complexes (ribosome and GroEL) to determine relative affinities for each other between these types of macromolecules (Figure 3A). The electrostatically-driven strong repulsion among RNAs and between RNAs and huge macromolecules (mainly ribosomes) is readily apparent. Repulsion between proteins and RNA and huge complexes is weaker, whereas protein-protein interactions were neutral. However, proteins involved in the glycolysis pathway showed weak attraction. An attraction of glycolytic enzymes is consistent with experimental data indicating the formation of dynamic complexes to enhance the multi-step reaction efficiency via substrate channeling (Dutow et al., 2010). Specific complex formation or specific weak interactions may allow related enzymes to associate, but here we observe non-specific weak associations that do not follow identifiable interaction patterns between different enzymes and require an alternate rationalization.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/19274/elife-19274-fig3-v1.jpg)
 
-**Figure 3.:** (A) Intermolecular distance changes between initial and final time (Δd) for pairs of glycolytic enzymes, other regular proteins, RNAs, and ribosomes/GroEL (huge). (ABB) Solvation free energies ΔGsol normalized by the solvent-accessible surface area (SASA) for equilibrated copies of macromolecules in MG using GBMV (m1Lee et al., 2003) in CHARMM (Brooks et al., 2009). See also supplementary Figure 1 showing the influence of large macromolecules on the association of small proteins based on simple Lennard-Jones mixtures.DOI: http://dx.doi.org/10.7554/eLife.19274.015
+**Figure 3.:** (A) Intermolecular distance changes between initial and final time (ΔdAB) for pairs of glycolytic enzymes, other regular proteins, RNAs, and ribosomes/GroEL (huge). (B) Solvation free energies ΔGsol normalized by the solvent-accessible surface area (SASA) for equilibrated copies of macromolecules in MGm1 using GBMV (Lee et al., 2003) in CHARMM (Brooks et al., 2009). See also supplementary Figure 1 showing the influence of large macromolecules on the association of small proteins based on simple Lennard-Jones mixtures.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/19274/elife-19274-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** (A−D) Two-component mixtures of small Lennard-Jones particles ‘A’ (2 Å, white) in the presence of same size particles ‘B’ (LJ_AB) or in the presence of larger particles ‘C’ (3.509 Å, LJ_AC) or ‘D’ (5.570 Å, LJ_AD) occupying the same volume (3400 Å3) in a (18.666 Å)3 cubic box. In an additional simulation, LJ_AD_rep, the ‘D’ particle had a unit charge to create repulsion. (E) Pairwise density distribution function ρ(r) for ‘A’ particles in LJ_AB (blue), in LJ_AC (green), LJ_AD (red) and LJ_AD_rep (dashed red). (F) Cumulative numbers of particles within spherical shells around ‘A’ particles show an extra particle in LJ_AD and LJ_AD_rep beyond r = 4 Å but with the difference disappearing in LJ_AD_rep at 6 Å.DOI: http://dx.doi.org/10.7554/eLife.19274.016
+**Figure 3—figure supplement 1.:** (A−D) Two-component mixtures of small Lennard-Jones particles ‘A’ (2 Å, white) in the presence of same size particles ‘B’ (LJ_AB) or in the presence of larger particles ‘C’ (3.509 Å, LJ_AC) or ‘D’ (5.570 Å, LJ_AD) occupying the same volume (3400 Å3) in a (18.666 Å)3 cubic box. In an additional simulation, LJ_AD_rep, the ‘D’ particle had a unit charge to create repulsion. (E) Pairwise density distribution function ρ(r) for ‘A’ particles in LJ_AB (blue), in LJ_AC (green), LJ_AD (red) and LJ_AD_rep (dashed red). (F) Cumulative numbers of particles within spherical shells around ‘A’ particles show an extra particle in LJ_AD and LJ_AD_rep beyond r = 4 Å but with the difference disappearing in LJ_AD_rep at 6 Å.
 
 One explanation can be found based on the relative solvation free energies of glycolytic enzymes. Calculated solvation free energies for glycolytic enzymes are similarly favorable as other proteins, but they are less favorable compared to tRNA, aminoacyl tRNA synthetases with tRNA, and ribosomes, which together make up about a third of the macromolecular mass (Figure 3B). This suggests that solvation effects effectively cause a weak attraction of glycolytic enzymes (and other similar proteins) as they are relatively hydrophobic compared to the RNA containing molecular components.
 
@@ -92,45 +329,111 @@ Another aspect is the large size difference between glycolytic enzymes and ribos
 
 We note that a possible biological significance of relative size differences between enzymes and other smaller biomolecules such as metabolites has been raised before by Srere (Srere, 1984) in the context of protein-protein interactions and substrate channeling in metabolically-related enzymes. However, these early ideas were not yet informed by the full knowledge of structural biology that is available today and, therefore, did not provide clear physical rationales for how enzymes sizes and size distributions may relate to biological function.
 
-## Diffusive properties of biological macromolecules in cellular environments
+### Diffusive properties of biological macromolecules in cellular environments
 
-Translational diffusion coefficients (
+Translational diffusion coefficients (Dtr) of Green Fluorescent Proteins (GFPs) and GFP-attached proteins (GAPs) are reduced about tenfold in Escherichia coli cells compared to dilute solutions (Nenninger et al., 2010) but much less is known how exactly the slow-down in diffusion depends on the local cellular environment. We calculated Dtr for the macromolecules in MGm1 as a function of their Stokes radius, RS, from our simulations (Figure 4; Video 3). Remarkably, experimental values are matched without adjusting parameters suggesting that our model based on MG may capture the physical properties of bacterial cytoplasms more generally. Convergence analysis from our data (Figure 4—figure supplement 1) combined with previous studies of diffusion rates (McGuffee and Elcock, 2010; Ando and Skolnick, 2010) suggests that long-time diffusion rates are approached already at 100 ns, although with slight overestimation (McGuffee and Elcock, 2010). There is also excellent agreement between the all-atom MD simulations and estimates of Dtr from coarse-grained Stokesian dynamics (SD) simulations of spherical macromolecules (MGcg, Table 1) in the presence of hydrodynamic interactions (Ando and Skolnick, 2010) (Figure 4B). The ratio Dtr/D0 that describes the slow-down in diffusion due to crowding relative to diffusion in dilute solvent D0, based on values estimated by HYDROPRO (Fernandes and de la Torre, 2002), decreases as 1/Rs as expected from previous studies of diffusion in crowded solutions (McGuffee and Elcock, 2010; Roosen-Runge et al., 2011; Szymański et al., 2006; Banks and Fradin, 2005). Given the classical 1/Rs dependency in dilute solvent, Dtr follows a 1/Rs (Zimmerman and Trach, 1991) dependency in crowded environments. Inverse quadratic functions are excellent fits to both the atomistic and coarse-grained simulation results (Figure 4A).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/19274/elife-19274-fig4-v1.jpg)
 
-**Figure 4.:** MG slows down as a function of Stokes radius and is dependent on local crowding.m1(A) Translational diffusion coefficients (Dtr) of macromolecules in MG vs. Stokes radii (m1Rs) from MD, and SD compared with experimental data for green fluorescent protein (GFP) and GFP-attached proteins in E. coli (Nenninger et al., 2010). Fitted functions are Dtr = 341/Rs2 (MD) and Dtr = 496/Rs2 (SD). (B) Dtr/D0 using D0 from HYDROPRO (Fernandes and de la Torre, 2002) for MG (grey), SD (orange), and BD (green). Fitted functions for m1Dtr/D0 are 1.5/Rs (MD), 2.0/Rs (SD), and 5.6/Rs (BD). (C) Normalized translational diffusion coefficient () vs. normalized coordination number (Dtr¯) for selected macromolecules (white squares) and distribution of macromolecules vs. Nc¯ (blue line). See also supplementary Nc¯Figures 1 and 2 showing the dependency of the calculated diffusion coefficients on the observation time and the influence of the local crowding environment on the diffusion coefficients of individual proteins.DOI: http://dx.doi.org/10.7554/eLife.19274.017
+**Figure 4.:** (A) Translational diffusion coefficients (Dtr) of macromolecules in MGm1 vs. Stokes radii (Rs) from MD, and SD compared with experimental data for green fluorescent protein (GFP) and GFP-attached proteins in E. coli (Nenninger et al., 2010). Fitted functions are Dtr = 341/Rs2 (MD) and Dtr = 496/Rs2 (SD). (B) Dtr/D0 using D0 from HYDROPRO (Fernandes and de la Torre, 2002) for MGm1 (grey), SD (orange), and BD (green). Fitted functions for Dtr/D0 are 1.5/Rs (MD), 2.0/Rs (SD), and 5.6/Rs (BD). (C) Normalized translational diffusion coefficient ($D_{tr}¯$) vs. normalized coordination number ($N_{c}¯$) for selected macromolecules (white squares) and distribution of macromolecules vs. $N_{c}¯$ (blue line). See also supplementary Figures 1 and 2 showing the dependency of the calculated diffusion coefficients on the observation time and the influence of the local crowding environment on the diffusion coefficients of individual proteins.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/19274/elife-19274-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** Dtr on the maximum observation time τmax.Dtr for macromolecules ATRN, PDHA, PDHD and PGK (see Figure 1—figure supplement 1 for abbreviations) and metabolites NAD, COA, ATP, VAL, GLN, G1P, ETOH, and ACE (see Figure 1—figure supplement 2 for abbreviations) as a function of τmax (see Materials and methods) in MG.m1DOI: http://dx.doi.org/10.7554/eLife.19274.018
+**Figure 4—figure supplement 1.:** Dtr for macromolecules ATRN, PDHA, PDHD and PGK (see Figure 1—figure supplement 1 for abbreviations) and metabolites NAD, COA, ATP, VAL, GLN, G1P, ETOH, and ACE (see Figure 1—figure supplement 2 for abbreviations) as a function of τmax (see Materials and methods) in MGm1.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/19274/elife-19274-fig4-figsupp2-v1.jpg)
 
-**Figure 4—figure supplement 2.:** Dtr.Dtr for macromolecules PGK, PDHA, PDHD, NOX, ENO, ACKA, and ATRN in MG as a function of coordination number of crowder Cm1α atoms Nc. For each type of macromolecule, Dtr and Nc at given time windows were normalized by their average values over multiple copies and the entire trajectory. Normalized diffusion coefficients  as a function of normalized coordination numbers Dtr¯ for all seven macromolecules at different 10 ns time windows from Nc¯MGare combined in the larger figure. Yellow square markers with standard deviations show histogram-averaged values of m1  in 0.1 intervals of Dtr¯. A linear function Nc¯ was fitted to the data (shown in red).Dtr¯=mNc¯+nDOI: http://dx.doi.org/10.7554/eLife.19274.019
+**Figure 4—figure supplement 2.:** Dtr for macromolecules PGK, PDHA, PDHD, NOX, ENO, ACKA, and ATRN in MGm1 as a function of coordination number of crowder Cα atoms Nc. For each type of macromolecule, Dtr and Nc at given time windows were normalized by their average values over multiple copies and the entire trajectory. Normalized diffusion coefficients $D_{tr}¯$ as a function of normalized coordination numbers $N_{c}¯$ for all seven macromolecules at different 10 ns time windows from MGm1 are combined in the larger figure. Yellow square markers with standard deviations show histogram-averaged values of $D_{tr}¯$ in 0.1 intervals of $N_{c}¯$. A linear function $D_{tr}¯=mN_{c}¯+n$ was fitted to the data (shown in red).
 
-Although the ensemble-averaged diffusive properties follow a simple 1/Rs (Zimmerman and Trach, 1991) function, there is a wide spread of Dtr in different copies of the same macromolecule type (Figure 4A) as a consequence of experiencing different local environments (Figure 4—figure supplement 2). The diffusion constant Dtr as a function of the normalized coordination number with surrounding macromolecules, Nc¯, follows a linear trend when averaged over different types of macromolecules (Figure 4C) with diffusion rates, on average, varying threefold between environments with the least and most contacts with surrounding molecules. As molecules diffuse through the cytoplasm, a given molecule thus exhibits a spatially varying rate of diffusion over time scales of 1 μs–1 ms, based on how long it takes for the smallest and largest macromolecules to diffuse by twice their Stokes radius.
+![Video 3.](https://cdn.elifesciences.org/articles/19274/elife-19274-media3.mp4.jpg)
 
-We also report rotational motion (
+**Video 3.:** Macromolecules are shown with surface representation. Ribosomes and GroELs are colored violet and yellow respectively. Other groups of molecules are colored differently for each individual macromolecule.
+
+Although the ensemble-averaged diffusive properties follow a simple 1/Rs (Zimmerman and Trach, 1991) function, there is a wide spread of Dtr in different copies of the same macromolecule type (Figure 4A) as a consequence of experiencing different local environments (Figure 4—figure supplement 2). The diffusion constant Dtr as a function of the normalized coordination number with surrounding macromolecules, $N_{c}¯$, follows a linear trend when averaged over different types of macromolecules (Figure 4C) with diffusion rates, on average, varying threefold between environments with the least and most contacts with surrounding molecules. As molecules diffuse through the cytoplasm, a given molecule thus exhibits a spatially varying rate of diffusion over time scales of 1 μs–1 ms, based on how long it takes for the smallest and largest macromolecules to diffuse by twice their Stokes radius.
+
+We also report rotational motion (Figure 5) from our simulations. Rotational properties of macromolecules in physically realistic cellular environments have not yet been described in detail due to simplified models and the use of spherical approximations in past studies. We find that, in general, rotational diffusion follows the same trend as for translational diffusion, including a very similar dependency on local crowding (Figure 5—figure supplement 1). A similar reduction of translational and rotational diffusion upon crowding on shorter, sub-microsecond time scales found here is consistent with experimental data from quasi-elastic neutron backscattering and NMR relaxometry (Roosen-Runge et al., 2011; Roos et al., 2016). However, our simulations are too short to probe the suggested protein species dependent decoupling of rotational and translational diffusion on longer time scales based on pulsed field gradient NMR measurements of dense protein solutions (Roos et al., 2016).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/19274/elife-19274-fig5-v1.jpg)
 
-**Figure 5.:** (A) Averaged angular velocity (ω) of macromolecules in MG as a function of their Stokes radii (m1Rs) (gray squares with IF1, ATRN, PDHD, PDHA, and PGK highlighted in purple, red, blue, yellow, and green, respectively) (B) Rotational correlation functions (θ) of macromolecules (IF1, ATRN, PDHD, PDHA, and PGK colored in purple, red, blue, yellow, and green, respectively). (C) Normalized angular velocities () vs. normalized coordination numbers (ω¯) (white square) averaged over abundant macromolecules vs. macromolecular distribution as in Nc¯Figure 4. See also supplementary Figure 1 showing the influence of the local crowding environment on the rotational diffusion of individual macromolecules.DOI: http://dx.doi.org/10.7554/eLife.19274.021
+**Figure 5.:** (A) Averaged angular velocity (ω) of macromolecules in MGm1 as a function of their Stokes radii (Rs) (gray squares with IF1, ATRN, PDHD, PDHA, and PGK highlighted in purple, red, blue, yellow, and green, respectively) (B) Rotational correlation functions (θ) of macromolecules (IF1, ATRN, PDHD, PDHA, and PGK colored in purple, red, blue, yellow, and green, respectively). (C) Normalized angular velocities ($\omega¯$) vs. normalized coordination numbers ($N_{c}¯$) (white square) averaged over abundant macromolecules vs. macromolecular distribution as in Figure 4. See also supplementary Figure 1 showing the influence of the local crowding environment on the rotational diffusion of individual macromolecules.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/19274/elife-19274-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** Averaged angular velocities ω for macromolecules PGK, PDHA, PDHD, NOX, ENO, ACKA, and ATRN in MG as a function of coordinate number of crowder Cm1α atoms Nc. Normalized angular velocities  as a function of normalized coordination numbers ω¯ are shown as in (Nc¯A). For each type of macromolecule, w and Nc at given time windows were normalized by their average values over multiple copies and the entire trajectory. Normalized diffusion coefficients  as a function of normalized coordination numbers ω¯ for all seven macromolecules at different 10 ns time windows from Nc¯MGare combined in the larger figure. Yellow square markers with standard deviations show histogram-averaged values of m1  in 0.1 intervals of ω¯. A linear function was fitted to the data (shown in red).Nc¯DOI: http://dx.doi.org/10.7554/eLife.19274.022
+**Figure 5—figure supplement 1.:** Averaged angular velocities ω for macromolecules PGK, PDHA, PDHD, NOX, ENO, ACKA, and ATRN in MGm1 as a function of coordinate number of crowder Cα atoms Nc. Normalized angular velocities $\omega¯$ as a function of normalized coordination numbers $N_{c}¯$ are shown as in (A). For each type of macromolecule, w and Nc at given time windows were normalized by their average values over multiple copies and the entire trajectory. Normalized diffusion coefficients $\omega¯$ as a function of normalized coordination numbers $N_{c}¯$ for all seven macromolecules at different 10 ns time windows from MGm1 are combined in the larger figure. Yellow square markers with standard deviations show histogram-averaged values of $\omega¯$ in 0.1 intervals of $N_{c}¯$. A linear function was fitted to the data (shown in red).
 
-## Diffusive properties of solvent and metabolites in cellular environments
+### Diffusive properties of solvent and metabolites in cellular environments
 
-As expected (
+As expected (Harada et al., 2012), the diffusion of water and ions was slowed down significantly in the cytoplasmic environment (Table 3), but little is known about the behavior of low molecular weight organic molecules in the cytoplasm. Translational diffusion rates Dtr of the metabolites in MGm1 exhibit a much more rapid decrease with increasing molecular weight, proportional to 1/Rs (Bennett et al., 2009), compared with the 1/Rs (Zimmerman and Trach, 1991) decrease seen for macromolecules (Figure 6A). Especially highly-charged phosphates diffused much slower than would be expected simply due to crowding. This observation is in stark contrast to recent experimental results (Rothe et al., 2016) that suggest that the diffusion of small molecules should be reduced less in crowded environments than for the much larger macromolecules. Based on our simulations this is a consequence of a large fraction of the metabolites interacting non-specifically with macromolecules (Figure 6B). Once metabolites are bound on the surface of a macromolecule, diffusion becomes two-dimensional and slows down considerably as illustrated in detail for ATP and valine (Figure 6C; Video 4). Trapping of metabolites on macromolecular surfaces reduces the effective concentration of freely-diffusing metabolites consistent with recent experiments that have inferred a large fraction of surface-interacting metabolites due to crowding (Duff et al., 2012). A recent analysis of absolute metabolite concentrations in E. coli has found that most concentrations were above the values of the Michaelis constant Km for enzymes binding those metabolites (Bennett et al., 2009). This has led to the conclusion that most enzyme active sites should be saturated under biological conditions. However, this argument neglects the possibility of significant non-specific metabolite-protein interactions suggested by the present study, which would imply much lower active site occupancies than expected from the absolute metabolite concentrations.
+
+**Table 3.**
+ Diffusion of water and ions. Translational diffusion constants [Å2/ps] in the cytoplasm (Mgm1) and dilute solvent (simulation of PGK in excess salt matching cytoplasmic concentration).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Cytoplasm</th>
+      <th colspan="2">Dilute solvent</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>τmax 1.0 (ns)</td>
+      <td>τmax 10 (ns)</td>
+      <td>τmax 1.0 (ns)</td>
+      <td>τmax 10 (ns)</td>
+    </tr>
+    <tr>
+      <td>water</td>
+      <td>0.32</td>
+      <td>0.29</td>
+      <td>0.42</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <td>K+</td>
+      <td>0.079</td>
+      <td>0.068</td>
+      <td>0.22</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Na+</td>
+      <td>0.017</td>
+      <td>0.015</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Cl−</td>
+      <td>0.17</td>
+      <td>0.14</td>
+      <td>0.22</td>
+      <td>0.21</td>
+    </tr>
+    <tr>
+      <td>Mg2+</td>
+      <td>0.0073</td>
+      <td>0.0051</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/19274/elife-19274-fig6-v1.jpg)
 
-**Figure 6.:** (A) Translational diffusion coefficients (Dtr) for metabolites in MGm1 as a function of molecular weight (phosphates: diamond; amino acids: triangles; others: circles; color reflects charge). For abundant metabolites, diffusion coefficients in bulk (black) and during macromolecular interaction (grey) are given in parentheses. (B) Normalized conditional distribution function, g(r), for heavy atoms of selected metabolites vs. the distance to the closest macromolecule heavy atom. The percentage of metabolites interacting with a macromolecule is listed. (C) Dtr of ATP and VAL as a function of the coordination number with macromolecules (Nc*) (line) and the distribution of Nc* (%) (line with points). (D) Time-averaged 3D distribution of all atoms in ATP (red, 0.008 Å−3) around ACKA molecules in MG. Pink color indicates regions where all-atom crowder densities also exceed 0.008 Åm1−3. (E) Same as in (D) but the density of ATP is shown in dilute solvent (blue) with light blue indicating overlap with the crowder density distribution form the MG simulations. (m1F) Correlation between average crowder atom densities in MG and volume density grid voxel ATP densities in dilute (blue) and crowded (red) environments. In the dilute case, we compute the crowder atom densities in m1MGm1 as a function of the grid ATP densities in the dilute simulations of PDHA. Therefore, high average crowder atom densities in the cytoplasmic model at sites with high ATP densities under dilute conditions means that those ATP sites would be displaced by interacting crowders in the cytoplasmic environment. See also supplementary Figure 1 showing analysis details for the calculation of the ATP distributions.DOI: http://dx.doi.org/10.7554/eLife.19274.024
+**Figure 6.:** (A) Translational diffusion coefficients (Dtr) for metabolites in MGm1 as a function of molecular weight (phosphates: diamond; amino acids: triangles; others: circles; color reflects charge). For abundant metabolites, diffusion coefficients in bulk (black) and during macromolecular interaction (grey) are given in parentheses. (B) Normalized conditional distribution function, g(r), for heavy atoms of selected metabolites vs. the distance to the closest macromolecule heavy atom. The percentage of metabolites interacting with a macromolecule is listed. (C) Dtr of ATP and VAL as a function of the coordination number with macromolecules (Nc*) (line) and the distribution of Nc* (%) (line with points). (D) Time-averaged 3D distribution of all atoms in ATP (red, 0.008 Å−3) around ACKA molecules in MGm1. Pink color indicates regions where all-atom crowder densities also exceed 0.008 Å−3. (E) Same as in (D) but the density of ATP is shown in dilute solvent (blue) with light blue indicating overlap with the crowder density distribution form the MGm1 simulations. (F) Correlation between average crowder atom densities in MGm1 and volume density grid voxel ATP densities in dilute (blue) and crowded (red) environments. In the dilute case, we compute the crowder atom densities in MGm1 as a function of the grid ATP densities in the dilute simulations of PDHA. Therefore, high average crowder atom densities in the cytoplasmic model at sites with high ATP densities under dilute conditions means that those ATP sites would be displaced by interacting crowders in the cytoplasmic environment. See also supplementary Figure 1 showing analysis details for the calculation of the ATP distributions.
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/19274/elife-19274-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** (A) Schematic representation of theoretically accessible volume, V(r), in crowded environments. The large square box represents the size of the periodic system. The yellow objects represent macromolecules with replicas in an adjacent image outlined with dashed lines. The gray layers surrounding macromolecules represent V(r) with the thickness Δr at a distance r from the closest atom of any macromolecule. Thick black squares indicate the grid elements with centers included when accumulating V(r). (B) V(r) (red layers) at a distance r from the closest atom of any proteins belonging to a given macromolecule type (e.g., ACKA). With larger r, V(r) is interrupted by other macromolecules. In this case, the part of the V(r) overlapping with the van der Waals surface of macromolecules is eliminated. (C) V(r) at distance r from the closest atom of single protein under dilute conditions. (D) Profiles of the heavy atom number density of ATPs (ρ(r)) as a function of the closest distance from any heavy atom of ACKAs in the MG system (red) and from any heavy atom in single ACKA in dilute solvent with metabolites (blue). The black line indicates the profile of m1ρ(r) as function of the closest distance from any heavy atom of the macromolecules in the MG system. (m1E) Profiles of the theoretically accessible volume V(r) as a function of the closest distance from any heavy atoms in ACKAs in MG (red) and from any heavy atom in m1ACKA_m (blue). The gray line shows the profile of V(r) as a function of the closest distance from any macromolecule heavy atom in the MG system. The profile around ACKAs in m1MG (red lines in m1D and C) was obtained by dividing the total volume of V(r) by the number of ACKA copies in the MG system.m1DOI: http://dx.doi.org/10.7554/eLife.19274.025
+**Figure 6—figure supplement 1.:** (A) Schematic representation of theoretically accessible volume, V(r), in crowded environments. The large square box represents the size of the periodic system. The yellow objects represent macromolecules with replicas in an adjacent image outlined with dashed lines. The gray layers surrounding macromolecules represent V(r) with the thickness Δr at a distance r from the closest atom of any macromolecule. Thick black squares indicate the grid elements with centers included when accumulating V(r). (B) V(r) (red layers) at a distance r from the closest atom of any proteins belonging to a given macromolecule type (e.g., ACKA). With larger r, V(r) is interrupted by other macromolecules. In this case, the part of the V(r) overlapping with the van der Waals surface of macromolecules is eliminated. (C) V(r) at distance r from the closest atom of single protein under dilute conditions. (D) Profiles of the heavy atom number density of ATPs (ρ(r)) as a function of the closest distance from any heavy atom of ACKAs in the MGm1 system (red) and from any heavy atom in single ACKA in dilute solvent with metabolites (blue). The black line indicates the profile of ρ(r) as function of the closest distance from any heavy atom of the macromolecules in the MGm1 system. (E) Profiles of the theoretically accessible volume V(r) as a function of the closest distance from any heavy atoms in ACKAs in MGm1 (red) and from any heavy atom in ACKA_m (blue). The gray line shows the profile of V(r) as a function of the closest distance from any macromolecule heavy atom in the MGm1 system. The profile around ACKAs in MGm1 (red lines in D and C) was obtained by dividing the total volume of V(r) by the number of ACKA copies in the MGm1 system.
+
+![Video 4.](https://cdn.elifesciences.org/articles/19274/elife-19274-media4.mp4.jpg)
+
+**Video 4.:** Macromolecules are shown with surface representation. Metabolites and ions are shown with van der Waals spheres. Phosphates, amino acids, ions, and other metabolites are highlighted with red, green, yellow, and blue.
 
 We further compared the interaction of ATP with the highly abundant ATP-binding protein acetate kinase (ACKA) between cellular and dilute environments with ATP present at the same molality. The number density profiles ρ(r) show a decreased concentration of ATP in the vicinity of ACKA (Figure 6—figure supplement 1D) in the cellular environment. In part, this results from reduced accessible volume around ACKA upon crowding (Figure 6—figure supplement 1E), but competition can play another role since ATPs can interact with many other proteins instead of ACKA. The three-dimensional distribution of ATP around ACKA (Figure 6D) shows not just reduced binding of ATP in the cell but also binding at different sites. For example, ATP binding to the cleft region between the two dimer subunits only features prominently in the cellular environment. This is a consequence of crowder interactions competing with ATP binding (Figure 6). A large fraction of the high-density ATP binding sites seen in dilute solvent overlap with crowder interaction sites while only very few ATP binding sites under crowded conditions overlap with crowder atom densities (Figure 6D/E/F). The active site cleft is largely unaffected by crowder interactions and therefore binding to the active site should be unaffected by crowding. However, because the non-active site binding sites are very different we expect that the binding kinetics is affected by the presence of the crowders. Further exploration of how exactly the thermodynamics and kinetics of metabolite-protein interactions are affected by the presence of the cytoplasm will require extensive additional analysis and will be deferred to a future study.
 
@@ -156,11 +459,11 @@ The next step from the model presented here is a whole-cell model in full physic
 
 ## Materials and methods
 
-## Model system construction
+### Model system construction
 
 We constructed a comprehensive cytoplasmic model at pH = 7 based on MG containing proteins, nucleic acids, metabolites, ions, and explicit water, consistent with predicted biochemical pathways as described previously (Feig et al., 2015). The model is meant to cover a cytoplasmic section that does not contain membranes, DNA, or cytoskeletal elements and includes only essential gene products. Molecular concentrations were estimated based on proteomics and metabolomics data for a very closely related organism, M. pneumoniae and macromolecular structures were predicted via homology modeling and complexes were built where possible (see Figure 1).
 
-## All-atom molecular dynamics simulations
+### All-atom molecular dynamics simulations
 
 The cytoplasmic model covered a cubic box of size (100 nm) (Bennett et al., 2009) with about 100 million atoms (MGh; Figure 1A). This system corresponds to 1/10th of a whole MG cell. Based on MGh, we also built two smaller subsets (MGm1 and MGm2), each with a (50 nm) (Bennett et al., 2009) volume and containing about 12 million atoms. The subsets were constructed like the complete system but using molecular copy numbers from two different 1/eighth subsets of the MGh system. All-atom MD simulations were carried out over 140 ns for MGm1 and 60 ns for MGm2 of with the first 10 ns were discarded as equilibration. For MGh, we performed 20 ns MD simulation with the first 5 ns considered as equilibration. MGm1 and MGh trajectories were obtained with GENESIS (Jung et al., 2015) on the K computer. MGm2 was run as a control using NAMD 2.9 (Phillips et al., 2005). Analysis was performed with the in-house program MOMONGA and the MMTSB Tool Set (Feig et al., 2004). System details are given in Table 1 and a list of macromolecules and metabolites are provided as supplementary material.
 
@@ -168,72 +471,124 @@ Systems with single macromolecules in explicit solvent were built for phosphogly
 
 In all atomistic simulations, initial models were minimized for 100,000 steps via steepest descent. For the first 30 ps of equilibration, a canonical (NVT) MD simulation was performed with backbone Cα and P atoms of the macromolecules harmonically restrained (force constant: 1.0 kcal/mol/Å [Zimmerman and Trach, 1991]) while gradually increasing the temperature to 298.15 K. We then performed an isothermal-isobaric (NPT) MD simulation for 10 ns without restraints. Production MD runs were carried out under the NVT ensemble for MGm1 and MGm2. For MGh, we ran a total of 20 ns in the NPT ensemble without switching to the NVT ensemble. The CHARMM c36 force field (Best et al., 2012) was used for all of the proteins and RNAs. The force-field parameters for the metabolites were either taken from CGenFF (Vanommeslaeghe et al., 2010) or constructed by analogy to existing compounds. All bonds involving hydrogen atoms in the macromolecules were constrained using SHAKE (Ryckaert et al., 1977). Water molecules were rigid by using SETTLE (Miyamoto and Kollman, 1992) which allowed a time step of 2 fs. Van der Waals and short-range electrostatic interactions were truncated at 12.0 Å, and long-range electrostatic interactions were calculated using particle-mesh Ewald summation (Darden et al., 1993) with a (512) (Bennett et al., 2009) grid for MGm1 and MGm2 and a (1024) (Bennett et al., 2009) grid for MGh. The temperature (298.15 K) was held constant via Langevin dynamics (damping coefficient: 1.0 ps−1) and pressure (1 atm) was regulated in the NPT runs by using the Langevin piston Nosé-Hoover method (Hoover et al., 2004; Nosé, 1984) (damping coefficient: 0.1 ps−1).
 
-## Brownian and Stokesian dynamics simulations
+### Brownian and Stokesian dynamics simulations
 
 A coarse-grained model of the MG cytoplasm, MGcg., was built for Stokesian and Brownian dynamics simulations. Here, each macromolecule was represented by a sphere with the radius a set to the Stokes radius estimated by HYDROPRO (Fernandes and de la Torre, 2002) based on the modeled structures. The number of copies for each macromolecule was set to be 8 times larger than that in MGm1 because most of the atomistic simulation data presen ted here is based on this system. The number and radii of macromolecules are listed in supplementary material.
 
-MGcg was simulated via Brownian dynamics (BD) without hydrodynamics interactions (HIs) (Ermak and McCammon, 1978) and Stokesian dynamics (SD) (Brady and Bossis, 1988; Durlofsky et al., 1987), which includes not only the far-field HI but also the many-body and near-field HIs. For BD simulations without HIs, we used a second-order integration scheme introduced by Iniesta and de la Torre (Iniesta and García de la Torre, 1990), which is based on the original first-order algorithm developed by Ermak and McCammon (Ermak and McCammon, 1978). We only considered repulsive interactions between particles to take into account excluded volume effects, which are described by a half-harmonic potential,(1)Vij={12k(rij−ai−aj−Δ)2ifrij<ai+aj+Δ0ifrij≥ai+aj+Δ
+MGcg was simulated via Brownian dynamics (BD) without hydrodynamics interactions (HIs) (Ermak and McCammon, 1978) and Stokesian dynamics (SD) (Brady and Bossis, 1988; Durlofsky et al., 1987), which includes not only the far-field HI but also the many-body and near-field HIs. For BD simulations without HIs, we used a second-order integration scheme introduced by Iniesta and de la Torre (Iniesta and García de la Torre, 1990), which is based on the original first-order algorithm developed by Ermak and McCammon (Ermak and McCammon, 1978). We only considered repulsive interactions between particles to take into account excluded volume effects, which are described by a half-harmonic potential,
 
-where k is the force constant, rij is the distance between particles i and j, ai and aj are the radii of particles i and j, respectively, and Δ is an arbitrary parameter representing a buffer distance between particles. In this study, a Δ=1A˚ and k=10kBT/Δ2 with the Boltzmann constant kB were used, which means that Vij=5kBT at the distance rij=ai+aj. For SD simulations, the modified mid-point BD algorithm introduced by Banchio and Brady (Banchio and Brady, 2003) and based on Fixman’s idea (Fixman, 1978) was used. All BD and SD simulations were performed under periodic boundary conditions at 298 K. A time step of 8 ps was used, which roughly corresponds to 0.0005 × a2/Dtr for the particle with the smallest radius in the system, where Dtr is the translational diffusion constant (which is equal to kBT/6πηa with the viscosity of water η). Ten independent simulations were performed, each over 20 μs with different random seeds from randomly generated different initial configurations, using BD and SD implementations in the program GENESIS (Jung et al., 2015).
+$$
+V_{ij}={\frac{1}{2}k(r_{ij}−a_{i}−a_{j}−Δ)^{2}ifr_{ij}<a_{i}+a_{j}+Δ0ifr_{ij}\geqa_{i}+a_{j}+Δ
+$$
 
-## Calculation of root mean square displacements (RMSD) of macromolecules
+where $k$ is the force constant, $r_{ij}$ is the distance between particles $i$ and $j$, $a_{i}$ and $a_{j}$ are the radii of particles $i$ and $j$, respectively, and $Δ$ is an arbitrary parameter representing a buffer distance between particles. In this study, a $Δ=1A˚$ and $k=10k_{B}T/Δ^{2}$ with the Boltzmann constant $k_{B}$ were used, which means that $V_{ij}=5k_{B}T$ at the distance $r_{ij}=a_{i}+a_{j}$. For SD simulations, the modified mid-point BD algorithm introduced by Banchio and Brady (Banchio and Brady, 2003) and based on Fixman’s idea (Fixman, 1978) was used. All BD and SD simulations were performed under periodic boundary conditions at 298 K. A time step of 8 ps was used, which roughly corresponds to 0.0005 × a2/Dtr for the particle with the smallest radius in the system, where Dtr is the translational diffusion constant (which is equal to kBT/6πηa with the viscosity of water η). Ten independent simulations were performed, each over 20 μs with different random seeds from randomly generated different initial configurations, using BD and SD implementations in the program GENESIS (Jung et al., 2015).
+
+### Calculation of root mean square displacements (RMSD) of macromolecules
 
 RMSD values were determined for Cα and P atoms after best-fit superpositions. Structures obtained after short-time (10 ps) MD simulations in water started from the initial predicted models were used as reference structures since experimental structures are not available.
 
 Highly flexible regions where Cα and P atoms had root mean square fluctuations (RMSF) larger than 3.0 Å2 (for proteins) or 4.0 Å2 (for tRNA) were eliminated from the analysis. Time and copy-averaged values with their respective standard errors were calculated from t0 = 50 ns to tend = 130 ns in MGm1.
 
-## Calculation of translational diffusion coefficients
+### Calculation of translational diffusion coefficients
 
-The time evolution of the square displacement of a macromolecule α in a given time window i (r2(α,i,τ)) was obtained by tracking the center of mass of α. Multiple profiles of r2(α,i,τ) were obtained by sliding windows up to a size of τmax = 10 ns using an interval of Δti = 10 ps for macromolecules and up to τmax = 1 ns for metabolites using an interval of Δti = 1 ns starting from the beginning of the production trajectories up to tend−τmax, where tend is the maximum length of a given simulation (see Table 1). In the case where diffusion coefficients are compared with coordination numbers (see below) Δti = 500 ps was chosen. These profiles were then averaged to obtain mean square displacements (MSD) according to:(2)⟨r2(α,τ)⟩t=1(tend−τmax)/Δti∑ir2(α,i,τ)
+The time evolution of the square displacement of a macromolecule α in a given time window i ($r^{2}(\alpha,i,\tau)$) was obtained by tracking the center of mass of α. Multiple profiles of $r^{2}(\alpha,i,\tau)$ were obtained by sliding windows up to a size of τmax = 10 ns using an interval of Δti = 10 ps for macromolecules and up to τmax = 1 ns for metabolites using an interval of Δti = 1 ns starting from the beginning of the production trajectories up to $t_{end}−\tau_{max}$, where $t_{end}$ is the maximum length of a given simulation (see Table 1). In the case where diffusion coefficients are compared with coordination numbers (see below) Δti = 500 ps was chosen. These profiles were then averaged to obtain mean square displacements (MSD) according to:
 
-To obtain translational diffusion coefficient Dtr, a linear function was fitted to the MSD curve and Dtr was computed from the slope of the fitting line using the Einstein relation.(3)Dtr=⟨r2(α,τ)⟩t6τ
+$$
+⟨r^{2}(\alpha,\tau)⟩_{t}=\frac{1}{(t_{end}−\tau_{max})/Δt_{i}}\sumir^{2}(\alpha,i,\tau)
+$$
+
+To obtain translational diffusion coefficient $D_{tr}$, a linear function was fitted to the MSD curve and $D_{tr}$ was computed from the slope of the fitting line using the Einstein relation.
+
+$$
+D_{tr}=\frac{⟨r_{}^{2}(\alpha,\tau)⟩_{t}}{6\tau}
+$$
 
 For Figures 4A, 5A and 6A and Figure 4—figure supplement 1, only the last 80% of the MSD curve were used for fitting to enhance the accuracy. The entire MSD curve was used to generate Figures 4C, 5C and 6C, and Figure 4—figure supplement 2 and Figure 5—figure supplement 1.
 
 The simulation results were shown with experimentally measured diffusion coefficients of green fluorescence protein (GFP) and GFP-attached proteins (Nenninger et al., 2010). In order to map the experimental data onto the simulations results, Stokes radii, Rs, of GFPs (GFP, GFP oligomers, and GFP attached proteins) were estimated from the relation between the molecular weight, Mw, and Rs obtained by HYDROPRO (Fernandes and de la Torre, 2002) for macromolecules in MGm1. Mw vs Rs data were fitted with an exponential function (Rs = 2.54 Mw2.86) which was used to estimate Rs for the GFP constructs based on their Mw values.
 
-## Analysis of rotational motion
+### Analysis of rotational motion
 
-To analyze the overall tumbling motion of a macromolecule α, we adopted the procedure developed by Case et al. (Wong and Case, 2008) using the rotation matrix that minimizes the RMSD of α against the reference structure, the rotational correlation function in a given time window i (θ(α,i,τ)) as a function of τ was obtained using sliding windows as in the calculation of the translational diffusion coefficients (see above) as follows with τmax = 10 ns:(4)⟨θ(α,τ)⟩t=1(tend−τmax)/Δti∑iθ(α,i,τ)(τ <τmax)
+To analyze the overall tumbling motion of a macromolecule α, we adopted the procedure developed by Case et al. (Wong and Case, 2008) using the rotation matrix that minimizes the RMSD of α against the reference structure, the rotational correlation function in a given time window i ($\theta(\alpha,i,\tau)$) as a function of τ was obtained using sliding windows as in the calculation of the translational diffusion coefficients (see above) as follows with τmax = 10 ns:
 
-Time-ensemble averages of rotational correlation functions for macromolecule type A were obtained by taking average for multiple copies of α belonging to the type A.(5)⟨θ(A,τ)⟩αt=1N∑α⟨θ(α,τ)⟩t(α∈A)
+$$
+⟨\theta(\alpha,\tau)⟩_{t}=\frac{1}{(t_{end}−\tau_{max})/Δt_{i}}\sumi\theta(\alpha,i,\tau)(\tau <\tau_{max})
+$$
 
-The rotational relaxation timeτrel was obtained by fitting a single exponential (McGuffee and Elcock, 2010)(6)⟨θ(A,τ)⟩αt∝exp(−τ/τrel)
+Time-ensemble averages of rotational correlation functions for macromolecule type A were obtained by taking average for multiple copies of α belonging to the type A.
 
-Finally, the rotational diffusion coefficient of macromolecule type A was obtained as(7)Drot(A)=1/2τrel
+$$
+⟨\theta(A,\tau)⟩_{\alphat}=\frac{1}{N}\sum\alpha⟨\theta(\alpha,\tau)⟩_{t}(\alpha\inA)
+$$
 
-To obtain time-averaged angular velocities for a molecule α, the inner product of the rotated unit vectors at t=ti and t=ti+τmax were calculated as:(8)⟨Δej(τmax)⟩t=1(tend−τmax)/Δti∑ti⟨ej(ti+τmax)⋅ej(ti)⟩j
+The rotational relaxation time$\tau_{rel}$ was obtained by fitting a single exponential (McGuffee and Elcock, 2010)
 
-The time-averaged angular velocity ⟨ ω ⟩t of α in units of degrees was obtained as follows,(9)⟨ω⟩t=180πarccos(⟨Δej(τmax)⟩tτmax)
+$$
+⟨\theta(A,\tau)⟩_{\alphat}∝exp(−\tau/\tau_{rel})
+$$
 
-## Calculation of coordination number of crowders
+Finally, the rotational diffusion coefficient of macromolecule type A was obtained as
 
-To measure the local degree of crowding around a given target molecule α, we used the number of backbone Cα and P atoms in other macromolecules within the cutoff distance Rcut = 50 Å from the closest Cα and P atoms of α at a given time t as the instantaneous coordination number of crowder atoms, Nc(α,t), (For metabolites, we calculated the instantaneous coordination number of heavy atoms in crowder from the center of mass of a target metabolite m with a cutoff value of Rcut = 25 Å. This quantity is denoted as Nc*(m,t)). Time averages of Nc(α,t), and Nc*(m,t) were calculated over 10 ns windows advanced in 500 ps steps for macromolecules and over 1 ns windows advanced 1 ns steps for metabolites, respectively.
+$$
+D_{rot}(A)=1/2\tau_{rel}
+$$
 
-## Characterization of macromolecular interactions
+To obtain time-averaged angular velocities for a molecule $\alpha$, the inner product of the rotated unit vectors at $t=t_{i}$ and $t=t_{i}+\tau_{max}$ were calculated as:
 
-Macromolecular interactions were analyzed by using the center of mass distance for macromolecule pairs. The change of the distance between a target macromolecule α and one of the surrounding macromolecule β, Δdαβ, during the entire production trajectory from t0 to tend was calculated as:(10)Δdαβ(Rcut)=⟨rc(α,β, tend)⟩t−⟨rc(α,β, t0)⟩t,
+$$
+⟨Δe_{j}(\tau_{max})⟩_{t}=\frac{1}{(t_{end}−\tau_{max})/Δt_{i}}\sumt_{i}⟨e_{j}(t_{i}+\tau_{max})⋅e_{j}(t_{i})⟩_{j}
+$$
 
-where ⟨ ⟩t denotes the time average of center of mass distance rc(α,β, t) in the short time window τshort at the beginning and at the end of the time window. The selection of surrounding molecules β was based on the scaled distances r¯ between two protein pairs(11)r¯(α,β)=2rc(α,β)Rs(α)+Rs(β)
+The time-averaged angular velocity $⟨\omega⟩_{t}$ of α in units of degrees was obtained as follows,
 
-where Rs(α/β) is the Stokes radius of each molecule. β was selected as surrounding molecule when the time-averaged distance from α is shorter than the cutoff distance Rcut at the beginning of time window.(12)⟨r¯(α,β,\ ti)⟩t<Rcut.
+$$
+⟨\omega⟩_{t}=\frac{180}{\pi}arccos(\frac{⟨Δe_{j}(\tau_{max})⟩_{t}}{\tau_{max}})
+$$
 
-The ensemble average of the distance change between two macromolecule groups A and B as a function of the cutoff radius, Rcut, ΔdAB(Rcut), was obtained for macromolecule pairs belonging to each group. In this study, ΔdAB(Rcut) was calculated using the longest time window for MGm1 (tend = 130 ns, τshort = 5 ns), MGm2 (tend = 50 ns, τshort = 5 ns), and MGh (tend = 15 ns, τshort = 0.5 ns). The profile at Rcut≈2 reflects the short-range interaction (picking up the macromolecule pairs which are almost fully attached each other), while it converges to zero at larger Rcut because the number of macromolecule pairs having no interaction rapidly increase. ΔdAB(Rcut) was then averaged between Rcut = 2 and 3 to reduce the noise. The averaged value is denoted simply as ΔdAB. A cutoff distance of Rcut = 3 corresponds to macromolecule pairs separated by about their diameter. ΔdAB values were calculated for MGh, MGm1 and MGm2, and combined with a weighted average according to the different lengths of the trajectories. ΔdAB were obtained for the half of macromolecule pairs (whose scaled distance are initially less than 3.0) selected randomly from each macromolecule group. We repeated this calculation for 50 times, and obtained standard deviations (SD) for 50 × 2 = 100 values. Standard error was obtained by SD/2.
+### Calculation of coordination number of crowders
+
+To measure the local degree of crowding around a given target molecule α, we used the number of backbone Cα and P atoms in other macromolecules within the cutoff distance Rcut = 50 Å from the closest Cα and P atoms of α at a given time t as the instantaneous coordination number of crowder atoms, $N_{c}(\alpha,t)$, (For metabolites, we calculated the instantaneous coordination number of heavy atoms in crowder from the center of mass of a target metabolite m with a cutoff value of Rcut = 25 Å. This quantity is denoted as $N_{c*}(m,t)$). Time averages of $N_{c}(\alpha,t)$, and $N_{c*}(m,t)$ were calculated over 10 ns windows advanced in 500 ps steps for macromolecules and over 1 ns windows advanced 1 ns steps for metabolites, respectively.
+
+### Characterization of macromolecular interactions
+
+Macromolecular interactions were analyzed by using the center of mass distance for macromolecule pairs. The change of the distance between a target macromolecule α and one of the surrounding macromolecule β, $Δd_{\alpha\beta}$, during the entire production trajectory from t0 to $t_{end}$ was calculated as:
+
+$$
+Δd_{\alpha\beta}(R_{cut})=⟨r_{c}(\alpha,\beta, t_{end})⟩_{t}−⟨r_{c}(\alpha,\beta, t_{0})⟩_{t},
+$$
+
+where $⟨⟩_{t}$ denotes the time average of center of mass distance $r_{c}(\alpha,\beta, t)$ in the short time window $\tau_{short}$ at the beginning and at the end of the time window. The selection of surrounding molecules $\beta$ was based on the scaled distances $r¯$ between two protein pairs
+
+$$
+r¯(\alpha,\beta)=\frac{2r_{c}(\alpha,\beta)}{R_{s}(\alpha)+R_{s}(\beta)}
+$$
+
+where $R_{s}(\alpha/\beta)$ is the Stokes radius of each molecule. $\beta$ was selected as surrounding molecule when the time-averaged distance from α is shorter than the cutoff distance $R_{cut}$ at the beginning of time window.
+
+$$
+⟨r¯(\alpha,\beta,\ t_{i})⟩_{t}<R_{cut}.
+$$
+
+The ensemble average of the distance change between two macromolecule groups A and B as a function of the cutoff radius, $R_{cut}$, $Δd_{AB}(R_{cut})$, was obtained for macromolecule pairs belonging to each group. In this study, $Δd_{AB}(R_{cut})$ was calculated using the longest time window for MGm1 ($t_{end}$ = 130 ns, $\tau_{short}$ = 5 ns), MGm2 ($t_{end}$ = 50 ns, $\tau_{short}$ = 5 ns), and MGh ($t_{end}$ = 15 ns, $\tau_{short}$ = 0.5 ns). The profile at $R_{cut}≈2$ reflects the short-range interaction (picking up the macromolecule pairs which are almost fully attached each other), while it converges to zero at larger $R_{cut}$ because the number of macromolecule pairs having no interaction rapidly increase. $Δd_{AB}(R_{cut})$ was then averaged between $R_{cut}$ = 2 and 3 to reduce the noise. The averaged value is denoted simply as $Δd_{AB}$. A cutoff distance of $R_{cut}$ = 3 corresponds to macromolecule pairs separated by about their diameter. $Δd_{AB}$ values were calculated for MGh, MGm1 and MGm2, and combined with a weighted average according to the different lengths of the trajectories. $Δd_{AB}$ were obtained for the half of macromolecule pairs (whose scaled distance are initially less than 3.0) selected randomly from each macromolecule group. We repeated this calculation for 50 times, and obtained standard deviations (SD) for 50 × 2 = 100 values. Standard error was obtained by $SD/\sqrt{2}$.
 
 Macromolecular association was analyzed separately for protein-protein, protein-RNA, and RNA-RNA interactions (see text). We separately analyzed interactions among proteins involved in the glycolysis pathways, which consist of HPRK (HPr/HPr kinase/phosphorylase), PYK (pyruvate kinase), TPIA (triosephosphate isomerase), GAPA (glyceraldehyde-3-phosphate dehydrogenase), PFKA (6-phosphofructokinase), FBA (fructose-biphosphate aldolase), ENO (enolase), PGI (glucose-6-phosphate isomerase), PGM (phosphoglycerate mutase) and PGK (phosphoglycerate kinase). Both multimeric and monomeric units were included in the analysis.
 
-## Calculation of spatial distribution functions of metabolites
+### Calculation of spatial distribution functions of metabolites
 
-Proximal radial distribution functions, g(r), were calculated for the distances between centers of heavy atoms in target metabolites and the nearest heavy atom of surrounding macromolecules. The number of atoms in a given target metabolite, which exist in the theoretically accessible volume (V(r), show as gray layers in Figure 6—figure supplement 1A), n(r), were obtained as a function of distance r. The volume and pairwise distances were averaged from snapshots taken at 5 ns intervals for the cellular systems and at 1 ns intervals for the dilute systems. The atomic number density ρ(r) was calculated by dividing n(r) by V(r). To obtain the normalized distribution functions, ρ(r) were divided by the atomic number density in the furthest region from the surface of macromolecules ρ(∞),(13)g(r)=n(r)V(r)ρ(∞).
+Proximal radial distribution functions, g(r), were calculated for the distances between centers of heavy atoms in target metabolites and the nearest heavy atom of surrounding macromolecules. The number of atoms in a given target metabolite, which exist in the theoretically accessible volume (V(r), show as gray layers in Figure 6—figure supplement 1A), n(r), were obtained as a function of distance r. The volume and pairwise distances were averaged from snapshots taken at 5 ns intervals for the cellular systems and at 1 ns intervals for the dilute systems. The atomic number density $ρ(r)$ was calculated by dividing n(r) by V(r). To obtain the normalized distribution functions, $ρ(r)$ were divided by the atomic number density in the furthest region from the surface of macromolecules $ρ(∞)$,
 
-To obtain the numerical values for V(r), the periodic boundary box was divided into 1 Å grids, and V(r) were approximated by counting the grids whose center is inside the V(r) (thick black squares in Figure 6—figure supplement 1A). The profiles of g(r) were obtained in a histogram with bin size 0.5 Å. ρ(∞) was approximated by taking the average value of ρ(r) from 20 Å to 25 Å.
+$$
+g(r)=\frac{n(r)}{V(r)ρ(∞)}.
+$$
 
-ρ(r) of ATP was also obtained only with respect to the 13 ACKA molecules in the crowded system MGm1 as well as for the single ACKA under dilute conditions with metabolites and ions (ACKA_m) (Figure 6—figure supplement 1D). We used the entire 130 ns production trajectory of MGm1. For dilute conditions (ACKA_m) a total of 1 μs sampling from multiple trajectories was used.
+To obtain the numerical values for $V(r)$, the periodic boundary box was divided into 1 Å grids, and $V(r)$ were approximated by counting the grids whose center is inside the $V(r)$ (thick black squares in Figure 6—figure supplement 1A). The profiles of $g(r)$ were obtained in a histogram with bin size 0.5 Å. $ρ(∞)$ was approximated by taking the average value of $ρ(r)$ from 20 Å to 25 Å.
 
-In addition to ρ(r) and g(r), the three-dimensional distribution of the atomic number density ⟨ ρ(r) ⟩ of metabolites or ions around the target proteins were generated with a grid size of 1 Å. ⟨ ρ(r) ⟩ were calculated for each snapshot, and iso-density surfaces were projected onto a reference structure of the target protein by removing translational and rotational motion of the protein (Figure 2C–E, and 6D-E in the main manuscript). For the density calculations, snapshots saved at 100 ps intervals for cellular systems and saved at 50 ps for dilute systems were used.
+$ρ(r)$ of ATP was also obtained only with respect to the 13 ACKA molecules in the crowded system MGm1 as well as for the single ACKA under dilute conditions with metabolites and ions (ACKA_m) (Figure 6—figure supplement 1D). We used the entire 130 ns production trajectory of MGm1. For dilute conditions (ACKA_m) a total of 1 μs sampling from multiple trajectories was used.
 
-Because ACKA has two symmetrical domains (i.e., homodimer), ATP atoms around one domain were transposed to the other domain, and ⟨ ρ(r) ⟩ were then calculated by counting both original and transposed solvent atoms in the same grid to generate symmetry-averaged densities (see Figure 6D–E).
+In addition to $ρ(r)$ and $g(r)$, the three-dimensional distribution of the atomic number density $⟨ρ(r)⟩$ of metabolites or ions around the target proteins were generated with a grid size of 1 Å. $⟨ρ(r)⟩$ were calculated for each snapshot, and iso-density surfaces were projected onto a reference structure of the target protein by removing translational and rotational motion of the protein (Figure 2C–E, and 6D-E in the main manuscript). For the density calculations, snapshots saved at 100 ps intervals for cellular systems and saved at 50 ps for dilute systems were used.
 
-## Characterization of the two-dimensional diffusion of metabolites
+Because ACKA has two symmetrical domains (i.e., homodimer), ATP atoms around one domain were transposed to the other domain, and $⟨ρ(r)⟩$ were then calculated by counting both original and transposed solvent atoms in the same grid to generate symmetry-averaged densities (see Figure 6D–E).
+
+### Characterization of the two-dimensional diffusion of metabolites
 
 For selected metabolites we analyzed the interaction with macromolecule surfaces. Metabolites were considered to be interacting with a macromolecular surface if the distance between the center of mass of a metabolite and the nearest heavy atom of any of the surrounding macromolecules was less than 10 Å for the large metabolites COA and NAD, and less than 8 Å for ATP, VAL, G1P, and ETOH. If a metabolite interacted continuously with the same macromolecule for more than 5 ns before and after a given time, we considered the metabolite to be moving on the macromolecular surface, therefore exhibiting two-dimensional diffusion. Mean square displacements (MSD) of these metabolites were averaged separately and the slope was divided by four instead of six when determining Dtr to reflect two-dimensional vs. three-dimensional diffusion.

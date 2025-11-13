@@ -33,86 +33,197 @@
 
 ### Affiliations
 
-1. https://ror.org/019wvm592 Immunology and Infectious Disease Division, John Curtin School of Medical Research, The Australian National University Canberra Australia
-2. https://ror.org/0220qvk04 China-Australia Centre for Personalised Immunology, Renji Hospital, School of Medicine, Shanghai Jiao Tong University Shanghai China
+1. Immunology and Infectious Disease Division, John Curtin School of Medical Research, The Australian National University Canberra Australia ([ROR:019wvm592](https://ror.org/019wvm592))
+2. China-Australia Centre for Personalised Immunology, Renji Hospital, School of Medicine, Shanghai Jiao Tong University Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))
 3. Department of Occupational and Environmental Health and the Ministry of Education Key Lab of Hazard Assessment and Control in Special Operational Environment, School of Public Health, Fourth Military Medical University Xi'an China
-4. https://ror.org/04hyzq608 Laboratory of Immunology for Environment and Health, Shandong Analysis and Test Center, Qilu University of Technology, Shandong Academy of Sciences Jinan China
-5. https://ror.org/00p991c53 Department of Otolaryngology-Head and Neck Surgery, Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology Wuhan China
-6. https://ror.org/00rqy9422 Frazer Institute, Faculty of Medicine, University of Queensland Brisbane Australia
-7. https://ror.org/0220qvk04 Department of Rheumatology, Shanghai Institute of Rheumatology, Renji Hospital, School of Medicine, Shanghai Jiao Tong University Shanghai China
-8. https://ror.org/0220qvk04 Department of Laboratory Medicine, Ruijin Hospital, School of Medicine, Shanghai Jiao Tong University Shanghai China
-9. https://ror.org/0220qvk04 Shanghai Children's Medical Centre, Shanghai Jiao Tong University Shanghai China
-10. https://ror.org/04rhdtb47 Obstetrics and Gynecology Hospital of Fudan University (Shanghai Red House Obstetrics and Gynecology Hospital) Shanghai China
-11. https://ror.org/01ej9dk98 Department of Microbiology and Immunology, Peter Doherty Institute for Infection and Immunity, University of Melbourne Melbourne Australia
-12. https://ror.org/00rqy9422 Ian Frazer Centre for Children’s Immunotherapy Research, Children’s Health Research Centre, Faculty of Medicine, University of Queensland Brisbane Australia
+4. Laboratory of Immunology for Environment and Health, Shandong Analysis and Test Center, Qilu University of Technology, Shandong Academy of Sciences Jinan China ([ROR:04hyzq608](https://ror.org/04hyzq608))
+5. Department of Otolaryngology-Head and Neck Surgery, Tongji Hospital, Tongji Medical College, Huazhong University of Science and Technology Wuhan China ([ROR:00p991c53](https://ror.org/00p991c53))
+6. Frazer Institute, Faculty of Medicine, University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))
+7. Department of Rheumatology, Shanghai Institute of Rheumatology, Renji Hospital, School of Medicine, Shanghai Jiao Tong University Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))
+8. Department of Laboratory Medicine, Ruijin Hospital, School of Medicine, Shanghai Jiao Tong University Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))
+9. Shanghai Children's Medical Centre, Shanghai Jiao Tong University Shanghai China ([ROR:0220qvk04](https://ror.org/0220qvk04))
+10. Obstetrics and Gynecology Hospital of Fudan University (Shanghai Red House Obstetrics and Gynecology Hospital) Shanghai China ([ROR:04rhdtb47](https://ror.org/04rhdtb47))
+11. Department of Microbiology and Immunology, Peter Doherty Institute for Infection and Immunity, University of Melbourne Melbourne Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
+12. Ian Frazer Centre for Children’s Immunotherapy Research, Children’s Health Research Centre, Faculty of Medicine, University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))
 
 † Corresponding author
 
 ## Abstract
 
-A defining feature of successful vaccination is the ability to induce long-lived antigen-specific memory cells. T follicular helper (Tfh) cells specialize in providing help to B cells in mounting protective humoral immunity in infection and after vaccination. Memory Tfh cells that retain the CXCR5 expression can confer protection through enhancing humoral response upon antigen re-exposure but how they are maintained is poorly understood. CXCR5 + memory Tfh cells in human blood are divided into Tfh1, Tfh2, and Tfh17 cells by the expression of chemokine receptors CXCR3 and CCR6 associated with Th1 and Th17, respectively. Here, we developed a new method to induce Tfh1, Tfh2, and Tfh17-like (iTfh1, iTfh2, and iTfh17) mouse cells in vitro. Although all three iTfh subsets efficiently support antibody responses in recipient mice with immediate immunization, iTfh17 cells are superior to iTfh1 and iTfh2 cells in supporting antibody response to a later immunization after extended resting in vivo to mimic memory maintenance. Notably, the counterpart human Tfh17 cells are selectively enriched in CCR7 + central memory Tfh cells with survival and proliferative advantages. Furthermore, the analysis of multiple human cohorts that received different vaccines for HBV, influenza virus, tetanus toxin or measles revealed that vaccine-specific Tfh17 cells outcompete Tfh1 or Tfh2 cells for the persistence in memory phase. Therefore, the complementary mouse and human results showing the advantage of Tfh17 cells in maintenance and memory function supports the notion that Tfh17-induced immunization might be preferable in vaccine development to confer long-term protection.
+A defining feature of successful vaccination is the ability to induce long-lived antigen-specific memory cells. T follicular helper (Tfh) cells specialize in providing help to B cells in mounting protective humoral immunity in infection and after vaccination. Memory Tfh cells that retain the CXCR5 expression can confer protection through enhancing humoral response upon antigen re-exposure but how they are maintained is poorly understood. CXCR5+ memory Tfh cells in human blood are divided into Tfh1, Tfh2, and Tfh17 cells by the expression of chemokine receptors CXCR3 and CCR6 associated with Th1 and Th17, respectively. Here, we developed a new method to induce Tfh1, Tfh2, and Tfh17-like (iTfh1, iTfh2, and iTfh17) mouse cells in vitro. Although all three iTfh subsets efficiently support antibody responses in recipient mice with immediate immunization, iTfh17 cells are superior to iTfh1 and iTfh2 cells in supporting antibody response to a later immunization after extended resting in vivo to mimic memory maintenance. Notably, the counterpart human Tfh17 cells are selectively enriched in CCR7+ central memory Tfh cells with survival and proliferative advantages. Furthermore, the analysis of multiple human cohorts that received different vaccines for HBV, influenza virus, tetanus toxin or measles revealed that vaccine-specific Tfh17 cells outcompete Tfh1 or Tfh2 cells for the persistence in memory phase. Therefore, the complementary mouse and human results showing the advantage of Tfh17 cells in maintenance and memory function supports the notion that Tfh17-induced immunization might be preferable in vaccine development to confer long-term protection.
 
 ## Results
 
-## In vitro differentiation of induced Tfh1, Tfh2, and Tfh17-like (iTfh1, iTfh2, iTfh17) cells
+### In vitro differentiation of induced Tfh1, Tfh2, and Tfh17-like (iTfh1, iTfh2, iTfh17) cells
 
 The classification of Tfh1/2/17 cells based on the expression of CXCR3 and CCR6 markers was established by characterizing human blood memory Tfh cells (Morita et al., 2011). Such memory Tfh1/2/17 subsets in mice are low in numbers (Figure 1A), thus limiting functional characterization. We modified an established method that induces antigen-specific naive CD4+ T cells, such as OT-II T cells with transgenic TCR specific to ovalbumin (OVA), to differentiate into Tfh cells (iTfh) in vitro (Gao et al., 2020) and induced the individual differentiation into Tfh1/2/17 (iTfh1/2/17) in vitro. In addition to IL-6 and IL-21 in the iTfh differentiation method (Gao et al., 2020), Th1 (IL-12, anti-TGF-β, anti-IL-4), Th17 (TGF-β, anti-IFN-γ, anti-IL-4), and Th2 (IL-4, anti-IFN-γ, anti-TGF-β) polarization cultures were adopted for iTfh1/2/17 induction with lower IL-12, TGF-β or IL-4 concentrations for iTfh1/2/17 induction than those used for canonical iTh1, iTh17, or iTh2 induction (details in the method) (Read et al., 2019; Lu et al., 2011; Nurieva et al., 2008; Figure 1B). iTfh1/2/17 cells expressed higher Tfh-defining markers CXCR5, PD-1 and BCL6 than iTh0/1/2/17 cells (Figure 1C and D). The BCL6 expression in iTfh1/2/17 cells was lower than CD44+CXCR5highPD-1high GC-Tfh cells in immunized mice (Figure 1—figure supplement 1A, B). Tfh differentiation undergoes a step-by-step process, showing the generation of precursor Tfh cells expressing intermediate levels of BCL6 and subsequent maturation of GC-Tfh cells with the highest BCL6 expression (Vinuesa et al., 2016; Crotty, 2011). Memory cTfh cells largely originate from precursor Tfh cells and express low levels of BCL6 (He et al., 2013). Given that iTfh1/2/17 cells expressed BCL6 lower than that in GC-Tfh cells and resemble precursor Tfh cells, iTfh1/2/17 cells are suitable to study the function of memory cTfh cells. Importantly, iTfh1/2/17 cells differentially expressed transcription factors T-bet, GATA3 and RORγt (Figure 1E and F) and chemokine receptors CXCR3 and CCR6 (Figure 1G and H), as their counterpart human Tfh1/2/17 cells (Morita et al., 2011).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/82217/elife-82217-fig1-v2.jpg)
+
+**Figure 1.:** (A) Splenocytes from WT mice were analyzed and representative FACS plot for Tfh1, Tfh17, and Tfh2 cells was shown. (B–H) OT-II cells were co-cultured with WT splenocytes as antigen-presenting cells (APCs) in the presence of OVA peptide, indicated cytokines and blocking antibodies for three days before phenotypic analysis. Experiment design (B), representative FACS plots for the expression of Tfh markers CXCR5, PD-1 and BCL6 (C) transcription factors T-bet, RORγt and GATA3 (E), CXCR3 vs CCR6 expression (G) and statistics (D, F, H). (I–L) 5×104 cultured OT-II iTh0, iTfh1, iTfh2, and iTfh17 cells were FACS-purified and separately transferred into CD28KO recipients, followed by OVA-Alum immunization. The spleens were collected on day7 post-immunization for FACS analysis. Experiment design (I), representative FACS plot for Tfh percentage in OT-II cells (J), statistics of Tfh percentage in OT-II cells (K) and statistics of CXCR3/CCR6+ percentage in OT-II Tfh cells (L). The p values were calculated by two-way ANOVA for (D) and one-way ANOVA for (F, H, L). The results in (D, F, H) were pooled from three independent experiments. The results in (K, L) were pooled from two independent experiments. Source data for the statistics can be found in Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82217/elife-82217-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** OT-II cells were transferred into congenic WT mice followed by OVA in alum immunization. On day7, the BCL6 expressions for splenic OT-II Non-Tfh (CD44+CXCR5-PD-1-) and GC-Tfh cells (CD44+CXCR5highPD-1high) were analysed and compared with iTfh1/2/17 cells. Representative FACS plots (A) and statistics (B) comparing the expressions of BCL6 of indicated cell populations. The numbers in (A) indicate GMFI values. The results were pooled from two independent experiments. The p values were calculated by one-way ANOVA. Source data for the statistics can be found in Figure 1—figure supplement 1—source data 1.
+
 To examine whether iTfh1/2/17 cells retain polarized phenotypes in vivo, we adoptively transferred each cell type individually into congenic CD28KO recipient mice, followed by the immunization of OVA in aluminium salt (OVA-Alum) (Figure 1I). After 7 days, iTfh1/2/17 cells showed the comparable ability of effector Tfh differentiation (Figure 1J and K) but maintain the distinction in CXCR3 and CCR6 expression aligning with their progenitors (Figure 1J and L). These results suggest that in vitro generated iTfh1/2/17 cells can be used to investigate the function of Tfh1/2/17 cells.
 
-## iTfh17 cells are superior in memory maintenance
+### iTfh17 cells are superior in memory maintenance
 
 To compare the function of Tfh1, Tfh2 and Tfh17 in vivo, we adoptively transferred each of OT-II naive T cell-derived iTfh1, iTfh2, or iTfh17 cells into congenic CD28KO recipient mice. T cells in CD28KO mice are defective in co-stimulation and unable to generate endogenous Tfh cells so antibody responses in CD28KO mice are dependent on transferred iTfh cells. After adoptive cell transfer, mice were immunized with OVA-Alum at day 0 (early immunization) or day 35 (late immunization) with the latter condition mimicking memory maintenance of Tfh1, Tfh2, and Tfh17 for extended in vivo resting (Figure 2A).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/82217/elife-82217-fig2-v2.jpg)
 
-**Figure 2.:** (A–H) 5×104 FACS-purified OT-II iTfh1, iTfh17, or iTfh2 cells were separately transferred to CD28KO recipients. The early immunization group was immunized by OVA or NP-OVA in alum one day after the adoptive cell transfer. The late immunization group was immunized by the same antigens 35 days after the adoptive cell transfer. Spleens or serum were collected on day 7 after the immunization. Experiment design (A), representative FACS plots (B, C, D) and statistics (E, F, G) showing the percentages of Tfh cells in OT-II cells, the percentages of BGC in total B cells and the percentages of BASC in total B cells. For antibody titers, statistic (H) showing OD405 values of anti-NP2 and anti-NP23 total IgG. (I–J) Tfh1/2/17 cells from mouse splenocytes were analyzed for CCR7 and CD44 expression. Representative FACS plots (I). and statistics (J) showing the expressions of CCR7 and CD44. The p values were calculated by one-way ANOVA. The results in (E, F, G, H, I, J) were both pooled from two independent experiments. Source data for the statistics can be found in Figure 2—source data 1.Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A–H) 5×104 FACS-purified OT-II iTfh1, iTfh17, or iTfh2 cells were separately transferred to CD28KO recipients. The early immunization group was immunized by OVA or NP-OVA in alum one day after the adoptive cell transfer. The late immunization group was immunized by the same antigens 35 days after the adoptive cell transfer. Spleens or serum were collected on day 7 after the immunization. Experiment design (A), representative FACS plots (B, C, D) and statistics (E, F, G) showing the percentages of Tfh cells in OT-II cells, the percentages of BGC in total B cells and the percentages of BASC in total B cells. For antibody titers, statistic (H) showing OD405 values of anti-NP2 and anti-NP23 total IgG. (I–J) Tfh1/2/17 cells from mouse splenocytes were analyzed for CCR7 and CD44 expression. Representative FACS plots (I). and statistics (J) showing the expressions of CCR7 and CD44. The p values were calculated by one-way ANOVA. The results in (E, F, G, H, I, J) were both pooled from two independent experiments. Source data for the statistics can be found in Figure 2—source data 1.
 
 On day 7 post the early immunization, OT-II iTfh1, iTfh2 and iTfh17 cells demonstrated largely comparable Tfh differentiation and the function in supporting the generation of germinal centre B (BGC) cells and antibody-secreting B (BASC) cells (Figure 2B–G). A larger magnitude of BGC cells supported by iTfh2 cells might be explained by the function of IL-4 in enhancing BGC generation (Gaya et al., 2018). However, the outcome was very different in the scheme of late immunization whereby iTfh cells had experienced memory maintenance. After resting in vivo for 35 days, iTfh17 cells produced more than twofold of mature effector Tfh cells than those by iTfh1 or iTfh2 cells (Figure 2B and E), accompanied by ~twofold increase in BGC differentiation in mice that had received iTfh17 cells than those had received iTfh1 or iTfh2 cells (Figure 2C and F). Although the trend of an increase in iTfh17-supported BASC differentiation didn’t reach statistical significance (Figure 2D and G), iTfh17 cells were superior to iTfh1 and iTfh2 cells in supporting the production of anti-NP IgG antibodies, after resting in vivo for 35 days before the immunization with antigen 4-Hydroxy-3-nitrophenyl (NP)-OVA (Figure 2H). Collectively, iTfh17 cells are superior to iTfh1 or iTfh2 cells in helping B cells, but only in the scheme with extended in vivo resting.
 
 The selective advantage of iTfh17 cells in supporting Tfh differentiation and humoral immunity after an extended in vivo resting followed by immunization suggests that Tfh17 cells may outperform Tfh1 or Tfh2 cells to sustain Tfh memory. In resting mice, Tfh17 cells expressed higher CCR7 than that on Tfh1 or Tfh2 cells (Figures 1A and 2I), despite the highest expression of activation marker CD44 by Tfh17 cells (Figure 2J). CCR7+ marks TCM cells that circulate in the blood and secondary lymphoid tissues and have longer survival and better proliferative capacity than CCR7- TEM cells (Sallusto et al., 2004; Bouneaud et al., 2005). We thus hypothesized that Tfh17 cells might carry certain features of TCM cells suitable for memory maintenance.
 
-## Human cTfhCM and cTfhEM subsets phenotypically and functionally resemble TCM and TEM subsets respectively
+### Human cTfhCM and cTfhEM subsets phenotypically and functionally resemble TCM and TEM subsets respectively
 
 Following the observation that iTfh17 cells showed a unique advantage in memory maintenance, we set to characterize the function of human Tfh17 cells in maintaining Tfh memory. We previously reported that human cTfh cells are composed of CCR7highPD-1low TCM-like and CCR7lowPD-1high TEM-like subsets with the latter indicating an active Tfh differentiation (He et al., 2013), but their function has not been formally compared. We first investigated the relationship between the two cTfh subsets and corresponding CD4+ TCM and TEM subsets by transcriptomic analysis using RNA sequencing (RNA-seq) (Figure 3A). As shown in an unsupervised multidimensional scaling (MDS) plot, cTfhCM cells closely cluster with TCM cells, and cTfhEM cells fall between TCM and TEM cells on the major dimension1, implying that cTfhEM cells are distinct from cTfhCM and TCM cells but also have effector programs different from TEM cells (Figure 3B). Previous studies reported that cTfh cells predominantly show CCR7+ CM phenotype (Chevalier et al., 2011). Our transcriptomic analysis indeed suggests that cTfhCM cells acquire a quiescent state hardly distinguishable from TCM cells. In contrast, cTfhEM cells’ transcriptomes are clearly separated from those of TEM cells, presumably caused by the divergent effector function of Tfh cells as compared to other effector Th1, Th2, or Th17 cells. In line with this, the top 50 differentially expressed genes (DEG) indicate effector genes such as ZEB2 and TBX21 (Omilusik et al., 2015) were highly expressed in TEM cells, intermediate levels in cTfhEM cells, and lowest in cTfhCM and TCM cells (Figure 3C). In top 50 hallmark gene sets identified by gene set enrichment analysis (GSEA) between cTfhEM vs cTfhCM cells or TEM vs TCM cells, 37 gene sets were significantly enriched by both comparisons (NES discrepancy >2, Figure 3D), suggesting that the transcriptomic features and regulation between cTfhEM vs cTfhCM cells are overall similar to those between TEM vs TCM. Despite TEM and cTfhEm cells show distinct transcriptomes and locate separately in the MDS plot (Figure 3B), the key gene sets that are related to common effector T cell function (activation, effector differentiation, and cell cycle entry) were both positively enriched in comparisons between cTfhEM vs cTfhCM cells or TEM vs TCM cells (Figure 3E). Therefore, cTfhCM and cTfhEM cells resemble TCM and TEM cells at the transcriptomic levels respectively.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/82217/elife-82217-fig3-v2.jpg)
 
-**Figure 3.:** CM and cTfhEM subsets phenotypically and functionally resemble TCM and TEM subsets respectively.(A–E) Naive, TCM, TEM, cTfhCM , and cTfhEM cells were FACS-purified from PBMC of two healthy donors and bulk RNA-seq was performed for differentially expressed genes analysis and gene set enrichment analysis (GSEA). (A) Representative FACS plot showing the gating strategy for indicated subsets. (B) MDS plot showing sample distribution. (C) Heatmap of the top 50 variable genes normalized by z-score. (D) Summarized normalized enrichment score (NES) of significantly enriched (p<0.05, FDR <0.25) hallmark gene sets by either cTfhEM vs cTfhCM or TEM vs TCM. (E) GSEA on selected gene sets were performed on cTfhEMvs cTfhCM and TEM vs TCM and the number indicates NES. (F–G) FACS-purified TCM, TEM, cTfhCM and cTfhEM cells were rested in complete RPMI for 3 days. Representative FACS plots (F) and statistics (G) showing the percentages of viable cells. (H–I) FACS-purified TCM, TEM, cTfhCM, and cTfhEM cells were labelled with CFSE and stimulated by anti-CD3/CD28 for 2.5 days. Representative FACS plots (H) and statistics (I) showing the CFSE fluorescence intensity and the division index. The p values were calculated by Wilcoxon matched-pairs signed-rank test. The results in (G, I) were pooled from ive healthy individuals with each conducted in three technical replicates. Source data for the statistics can be found in Figure 3—source data 1.Figure 3—source data 1.Figure 3.
+**Figure 3.:** (A–E) Naive, TCM, TEM, cTfhCM , and cTfhEM cells were FACS-purified from PBMC of two healthy donors and bulk RNA-seq was performed for differentially expressed genes analysis and gene set enrichment analysis (GSEA). (A) Representative FACS plot showing the gating strategy for indicated subsets. (B) MDS plot showing sample distribution. (C) Heatmap of the top 50 variable genes normalized by z-score. (D) Summarized normalized enrichment score (NES) of significantly enriched (p<0.05, FDR <0.25) hallmark gene sets by either cTfhEM vs cTfhCM or TEM vs TCM. (E) GSEA on selected gene sets were performed on cTfhEMvs cTfhCM and TEM vs TCM and the number indicates NES. (F–G) FACS-purified TCM, TEM, cTfhCM and cTfhEM cells were rested in complete RPMI for 3 days. Representative FACS plots (F) and statistics (G) showing the percentages of viable cells. (H–I) FACS-purified TCM, TEM, cTfhCM, and cTfhEM cells were labelled with CFSE and stimulated by anti-CD3/CD28 for 2.5 days. Representative FACS plots (H) and statistics (I) showing the CFSE fluorescence intensity and the division index. The p values were calculated by Wilcoxon matched-pairs signed-rank test. The results in (G, I) were pooled from ive healthy individuals with each conducted in three technical replicates. Source data for the statistics can be found in Figure 3—source data 1.
 
 We next compared cTfhCM and cTfhEM subsets for survival and stimulation-induced proliferation in culture, which were applied to characterize the difference between TCM and TEM cells (Sallusto et al., 2004). In non-stimulation culture for 3 days, TCM and cTfhCM cells retained ~50% viability while TEM and cTfhEM cells showed poorer survival of ~30% (Figure 3F and G). To measure the proliferative potential, all subsets were labeled with carboxyfluorescein succinimidyl ester (CFSE) and stimulated by anti-CD3/CD28 for 2.5 days. While the majority of TEM or cTfhEM cells underwent division once, most TCM or cTfhCM cells reached the second or third division, indicating a better proliferative potential (Figure 3H, I). Collectively, CCR7highPD-1low cTfhCM and CCR7lowPD-1high cTfhEM subsets showed not only transcriptomic profiles resembling their counterpart TCM and TEM cells but also functional characteristics of survival and proliferative capacity (Sallusto et al., 2004; Bouneaud et al., 2005).
 
-## cTfhCM cells are enriched with the cTfh17 subset whereas cTfhEM cells are enriched with the cTfh1 subset
+### cTfhCM cells are enriched with the cTfh17 subset whereas cTfhEM cells are enriched with the cTfh1 subset
 
 From a cohort of healthy donors (N=33, Table 2), we analyzed CCR7highPD-1low cTfhCM and CCR7lowPD-1high cTfhEM cells for the percentages of cTfh1/2/17 subsets based on CXCR3 and CCR6 expression. In agreement with the higher expression of CCR7 on mouse Tfh17 than that on Tfh1 or Tfh2 cells (Figure 2I), human cTfhCM cells were dominated by the cTfh17 subset (mean = 51.44%), followed by the cTfh2 subset (mean = 16.19%) and the cTfh1 subset (mean = 12.17%) (Figure 4A), whereas cTfhEM cells were dominated by the cTfh1 subset (mean = 34.06%,) (Figure 4B). The population of cTfh cells that expresses both CXCR3 and CCR6 has been reported and also presented in our samples. Due to the fact that CXCR3+CCR6+ cTfh cells were fewer than cTfh1, cTfh2, or cTfh17 cells and their ontogeny remains to be fully revealed (Morita et al., 2011), we did not include this population in the following analyses. To avoid the influence of individual variation of Tfh1/2/17 polarization due to different histories of immune exposure and examine whether there is an intrinsic difference of cTfh1/2/17 frequencies between cTfhCM or cTfhEM cells, the percentages of cTfh1/2/17 cells in cTfhCM cells were normalized to those in cTfhEM cells in each individual, which demonstrated the highest cTfhCM/cTfhEM ratio for cTfh17 (mean = 4.18), an intermediate ratio for cTfh2 (mean = 3.38), and the lowest ratio for cTfh1 (mean = 0.75) (Figure 4C). The highest ratio (>>1) for cTfh17 indicates cTfhCM cells are highly enriched with the cTfh17 subset whereas the lowest ratio (<1) for cTfh1 indicates that cTfhEM cells are enriched with the cTfh1 subset. We also measured the expression of hallmark transcription factors TBX21, GATA3, and RORC and cytokines IFN-γ, IL-4 and IL-17A that are selectively expressed in cTfh1/2/17 cells, respectively (Morita et al., 2011). These molecules for effector Th functions are abundantly expressed by TEM cells but are downregulated in TCM cells which enter into a resting state (Sallusto et al., 2004). Indeed, the expression of effector transcription factors and cytokines was consistently lower in cTfhCM cells than those in cTfhEM cells (Figure 4D and F). Notably, the ratios of expression (cTfhCM/cTfhEM) demonstrate modest reductions of 20–40% in cTfh17-related markers RORγt and IL-17A, in contrast to vast reductions of 70–80% in cTfh1-related markers T-bet and IFN-γ (Figure 4E and G). Such results of transcription factor and cytokine expression support the conclusion for an enrichment of the cTfh17 subset and a loss of the cTfh1 subset in cTfhCM cells.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/82217/elife-82217-fig4-v2.jpg)
 
-**Figure 4.:** CM cells are enriched with the cTfh17 subset whereas cTfhEM cells are enriched with the cTfh1 subset.(A–C) Human PBMC samples from 33 healthy blood donors were analyzed. Representative FACS plots and statistics showing the percentages of cTfh1, cTfh2, and cTfh17 cells in cTfhCM (A) or cTfhEM (B) subsets. cTfhCM/cTfhEM ratios for cTfh1/2/17 in each individual were calculated (C). (D–E) FACS-purified cTfhEM and cTfhCM from five healthy individuals were analyzed for the expressions of indicated transcription factors by qPCR. The statistics for relative gene expression 2-ΔΔCt (normalized to cTfhEM) (D) and cTfhCM/cTfhEM ratios (E). (F–G) PBMC from 13 healthy individuals were analyzed for the secretions for indicated cytokines post PMA/ionomycin stimulation. The statistics for the percentages of cytokine+ cells (F) and the cTfhCM/cTfhEM ratios (G). FC: average fold change. The p values were calculated by Friedman test. Source data for the statistics can be found in Figure 4—source data 1.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A–C) Human PBMC samples from 33 healthy blood donors were analyzed. Representative FACS plots and statistics showing the percentages of cTfh1, cTfh2, and cTfh17 cells in cTfhCM (A) or cTfhEM (B) subsets. cTfhCM/cTfhEM ratios for cTfh1/2/17 in each individual were calculated (C). (D–E) FACS-purified cTfhEM and cTfhCM from five healthy individuals were analyzed for the expressions of indicated transcription factors by qPCR. The statistics for relative gene expression 2-ΔΔCt (normalized to cTfhEM) (D) and cTfhCM/cTfhEM ratios (E). (F–G) PBMC from 13 healthy individuals were analyzed for the secretions for indicated cytokines post PMA/ionomycin stimulation. The statistics for the percentages of cytokine+ cells (F) and the cTfhCM/cTfhEM ratios (G). FC: average fold change. The p values were calculated by Friedman test. Source data for the statistics can be found in Figure 4—source data 1.
 
-## HBV antigen-specific cTfh17 cells are preferentially maintained in memory phase
+**Table 2.**
+ Demographics for all human samples included in the research.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cohort description</th>
+      <th>Number</th>
+      <th>Gender(female, male)</th>
+      <th>Age(median, range)</th>
+      <th>CorrespondingFigures</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Healthy individuals for cTfh phenotyping</td>
+      <td>33</td>
+      <td>26/7</td>
+      <td>35 (21–71)</td>
+      <td>Figure 4A–CFigure 7D–EFigure 5—figure supplement 1A–C</td>
+    </tr>
+    <tr>
+      <td>Healthy individuals received HBV vaccines</td>
+      <td>38</td>
+      <td>8/29</td>
+      <td>19 (18–20)</td>
+      <td>Figure 5Figure 7D–EFigure 5—figure supplement 1D–EFigure 5—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Healthy individuals for measles and TT AIM assay</td>
+      <td>20</td>
+      <td>11/9</td>
+      <td>24 (18–32)</td>
+      <td>Figure 7D–E</td>
+    </tr>
+    <tr>
+      <td>Healthy children</td>
+      <td>18</td>
+      <td>14/4</td>
+      <td>6 (0.5–12)</td>
+      <td>Figure 7D–E</td>
+    </tr>
+    <tr>
+      <td>Cord blood</td>
+      <td>5</td>
+      <td>2/3</td>
+      <td>0 (0–0)</td>
+      <td>Figure 7D–E</td>
+    </tr>
+    <tr>
+      <td>Recovered Covid-19 patients</td>
+      <td>13</td>
+      <td>9/4</td>
+      <td>33 (23–52)</td>
+      <td>Figure 7—figure supplement 1A–C</td>
+    </tr>
+    <tr>
+      <td>Healthy individuals for qPCR and cytokine assay</td>
+      <td>14</td>
+      <td>9/5</td>
+      <td>42.5 (27-51)</td>
+      <td>Figure 4D–GFigure 7—figure supplement 1A</td>
+    </tr>
+  </tbody>
+</table>
+
+### HBV antigen-specific cTfh17 cells are preferentially maintained in memory phase
 
 cTfhEM to cTfhCM phenotype conversion occurs over the period of a few weeks when the antigen stimulation is discontinued (He et al., 2013). The enrichment of the cTfh17 subset in human cTfhCM cells suggest the cTfh17 subset in cTfhEM cells may persist longer than the cTfh1 or cTfh2 subsets. The phenomenon could also result from a biased cTfhCM phenotype of cTfh17 cells generated even early in immune responses. To tease apart the cause, we next examined the phenotype of antigen-specific human cTfh cells over a period that expands both effector and memory phases after vaccination or infection.
 
 Childhood HBV vaccination doesn’t always provide life-long protection with a proportion of vaccinees with antibody titers at an undetectable level in adulthood (Bruce et al., 2016). HBV boosting vaccination is recommended for high-risk populations such as medical practitioners including medical students in China. A cohort of medical students (N=38) with serum negative for anti-HBV surface antigen (HBVSA) antibody were recruited (Table 2). Peripheral blood mononuclear cells (PBMCs) were collected at day 7 before and day 7 and 28 after the immunization (Figure 5A). Antigen-induced marker (AIM) assay was used to examine HBV vaccine-specific T cells by culturing PBMCs with HBVSA for 18 hr and detecting the PD-L1+OX40+CD25+ cells as the antigen-specific population (Figure 5B). This method has been applied to characterize antigen-specific cTfh cells (Dan et al., 2016; Reiss et al., 2017). Such stimulation did not change the expression of CXCR3 and CCR6 on cTfh cells (Figure 5—figure supplement 1A–C), indicating that AIM assays are suitable to characterize antigen-specific cTfh1/2/17 cells. As reported (Reiss et al., 2017), a background in AIM assays exists in a small proportion of samples whereby PD-L1+OX40+CD25+ cells were detected in control cultures without antigen stimulation (Figure 5—figure supplement 1D). To specifically quantify antigen-specific response, we subtracted the value of antigen-stimulation culture by the background value from the control culture without antigen stimulation. Normalized values were then used to calculate the percentages of cTfh1, cTfh2, and cTfh17 cells (Figure 5—figure supplement 1E).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/82217/elife-82217-fig5-v2.jpg)
+
+**Figure 5.:** Blood samples from HBV vaccinated healthy individuals (N=38) were collected on indicated time points before/after HBV vaccination, and serum was diluted 10 times to analyse the anti-HBVSA antibody titer by ELISA. PBMC were also isolated and cultured with or without 20 µg/mL HBVSA for 18 hr, followed by FACS to analyse the phenotype of HBVSA-specific cTfh cells. Experiment design (A) and representative FACS plot (B) showing the gating strategy to detect HBVSA-specific cTfh cells by AIM assay. Representative FACS plot (C) and statistics (D) showing the percentage of cTfh1/2/17 cells in HBVSA-specific cTfh cells before vaccination. Classification (E) of 38 individuals into four groups was based on their anti-HBVSA antibody titers. Representative FACS plot (F) for an early responder showing the percentage of cTfh1/2/17 cells in HBVSA-specific cTfh. Statistics (G) showing the percentage of cTfh1/2/17 cells in HBVSA-specific cTfh on day 7 and day 28 after the vaccination in all defined groups (N=30, 8 samples with poor signals in AIM assay were excluded). The p values were calculated by Wilcoxon matched-pairs signed-rank test. Source data for the statistics can be found in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82217/elife-82217-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A–C) FACS-purified cTfh1/2/17 cells from five individuals were stimulated by αCD3/CD28 for 18 hr and were analysed by FACS. Statistics (A) showing the cellular sizes before/after αCD3/CD28 stimulation. Representative FACS plots (B) and statistics (C) showing the percentages of cTfh1/2/17 cells before/after stimulation. (D–E) PBMC were cultured with or without HBVSA for 18 hr followed by FACS analysis. Example (D) of one sample excluded from the analysis. Example (E) of one sample included in the analysis. The numbers of total cTfh cells were then normalized to 106 and the absolute counts of (AIM+) PD-L1+OX40+CD25+ cTfh cells were calculated, and the absolute counts of antigen-specific cTfh1, cTfh2, cTfh17, and cTfh1/17 were obtained. Any count values less than 0 were changed to 0 because cell count cannot be negative. At last, the normalized percentage was calculated based on the absolute count of antigen-specific cTfh1, cTfh2, cTfh17, and cTfh1/17. The p values were calculated by paired t-tests. Source data for the statistics can be found in Figure 5—figure supplement 1—source data 1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/82217/elife-82217-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Blood samples were obtained from 38 individuals who received HBV vaccines on day –7, day 7, and day 28 before/after HBV vaccination. ELISA was performed to determine the titer of anti-HBVSA IgG antibody in serum. Participants were separated into four groups according to their responses to the vaccine. (B–E) The PBMC were isolated and cultured for 18 hr with or without 20 µg/mL HBVSA, followed by FACS analysis. Representative FACS plot of one early responder (B) showing the percentage of cTfhCM and cTfhEM in HBVSA-specific cTfh cells on indicated time points. The statistics (C) showing the percentages of HBVSA-specific cTfhEM cells on indicated time points in four groups of responders. The statistics of early responders (D) showing the percentages of HBVSA-specific cTfh1/2/17 cells on day 7 and day 28 post HBV vaccination. The statistics of early responders (E) showing the percentages of cTfh1/2/17 in total cTfh on day 7 and day 28 post HBV vaccination. The p values were calculated by Friedman test. Source data for the statistics can be found in Figure 5—figure supplement 2—source data 1.
+
 In all subjects negative for HBVSA antigen and anti-HBVSA antibody, the average percentage of the cTfh17 subset in HBVSA-specific memory cTfh cells was 49.31%, whereas the average percentage of the cTfh1 subset was 15.7% (Figure 5C and D). In alignment with the results on total cTfhCM cells (Figure 4), HBVSA-specific cTfhCM cells were also enriched with the cTfh17 subset.
 
 To tease apart whether the cTfh17 enrichment was caused by the biased generation or better maintenance, we then analysed PBMC samples collected at day 7 and day 28 after vaccination (Figure 5A). The cohort was divided into 4 groups based on vaccine responses measured by antibody titers (Figure 5—figure supplement 2A): early responders (titer >100 mIU at day7, titer = 1248 ± 324.4 mIU at day 28, N=11), late responders (titer <100 mIU at day 7 and >200 mIU at day 28, titer = 997.1 ± 289.7 mIU/ml at day 28, N=15), weak responders (50 mIU <titer < 200 mIU at day 28, titer = 107.9 ± 37.2 mIU at day 28, N=6) and non-responders (titer <50 mIU on day 28, titer = 17.28 ± 4.379 mIU at day 28, N=6) (Figure 5E). Tfh activation measured by a trend of increase in HBVSA-specific cTfhEM cells by (2.84-fold, day –7 v.s. day 7, -value=0.074, not reaching statistical significance) was observed only in early responders but no other groups (Figure 5—figure supplement 2B, C). We next focused on the kinetics of HBVSA-specific cTfh subsets in early responders. At day 7 post vaccination, the percentages of three subsets in HBVSA-specific cTfh cells ranged from 20% to 30% and showed no significant difference (Figure 5—figure supplement 2D). Of note, the percentages of the cTfh17 subset significantly increased from ~30% to~50% from day 7–28 (p-value = 0.006). In contrast, the percentages of the cTfh1 subset dropped significantly from ~20% to~10% (p-value = 0.020). The percentages of cTfh2 remained largely unchanged (Figure 5F and G). As a result, cTfh17 cells dominated HBVSA-specific cTfh cells in the memory phase of day 28 post vaccination (Figure 5—figure supplement 2D). Therefore, the cTfh17 enrichment in cTfhCM cells results from an advantage of cTfh17 cells in memory maintenance, rather than a biased phenotype to cTfhCM cells. Significant changes in cTfh1 and cTfh17 percentages from day 7 to day 28 were selective in early responder group but not in three other groups (Figure 5G), and only observed in HBVSA-specific cTfh cells but not in total cTfh in early responders (Figure 5—figure supplement 2E), suggesting that the dynamic changes were specific to HBVSA-specific cTfh response.
 
-## influenza virus-specific cTfh cells show cTfh1 signatures in effector phase but cTfh17 signatures in memory phase
+### influenza virus-specific cTfh cells show cTfh1 signatures in effector phase but cTfh17 signatures in memory phase
 
 Single-cell RNA-seq (scRNA-seq) paired with TCR sequencing facilitates the characterization of the phenotype and function of antigen-specific T cell clones in an immune response. We took the advantage of this new technology to analyze the characteristics of influenza haemagglutinin (HA)-specific CD4+ T clones in a published dataset of scRNA/TCR-seq from four healthy individuals with influenza vaccination (Meckiff et al., 2020). We compared HA-specific T cell clones before the vaccination (memory phase) and day 12 after the vaccination (effector phase; Figure 6A). HA-specific CD4+ T cells before and after the vaccination were pooled to generate unsupervised clustering, in which CXCR5-expressing clusters 2–5 were enriched of cTfh cells, in which a total of twelve major CD4+ T clones (clonal abundance ≥10) were identified (Figure 6B). To investigate Tfh subsets-associated features in HA-specific clonal cTfh cells, we applied cTfh1 or cTfh17 signature gene sets derived from bulk RNA-seq for cTfh1/2/17 cells (Figure 6—figure supplement 1A; Yost et al., 2019) in clonal cTfh cells. The scores of cTfh1 signature were higher in clonal cTfh cells in the effector phase than those in the memory phase (p-value = 0.041); by contrast, the scores of cTfh17 signature were lower in the effector phase than in the memory phase (p-value = 0.002) (Figure 6C and D). The divergence of cTfh1 and cTfh17 signatures between the effector and memory phases was consistent in individual donors (Figure 6—figure supplement 1B) and at the level measured by 12 major clones (Figure 6E and F). Therefore, we conclude that the advantage of cTfh17 cells in memory maintenance is consistently observed among different cohorts with different types of vaccines.
 
-## cTfh17 cells are long-lived and accumulate with aging
+![Figure 6.](https://cdn.elifesciences.org/articles/82217/elife-82217-fig6-v2.jpg)
+
+**Figure 6.:** The single-cell RNA-seq dataset (GSE152522, the experiment design A) was analyzed to identify CXCR5-expressing cTfh clusters (B), which contain 12 major clones with a total of 249 cells. Comparison of cTfh1 and cTfh17 signature scores between effector and memory phase cTfh cells based on each cell or clone were shown in (C, D) and (E, F). The signature score of each clone was calculated as the mean value of the signature scores of all the cells in this clone. The p values were calculated by unpaired t-tests for (C, D) and paired t-tests for (E, F). Source data for the statistics can be found in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/82217/elife-82217-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Top 100 signature genes for cTfh1 and cTfh17 were generated by Limma package based on bulk RNA-seq dataset GSE123812. The heatmap showing the expressions of cTfh1 and cTfh17 signature genes in cTfh1/2/17 samples. (B) cTfh1 and cTfh17 signature scores in were separated by individuals (H01, H02 and H04) and each clone was colour-coded accompanied by the CDR3 amino acid sequences. The statistics comparing the cTfh1 and cTfh17 signature scores between effector and memory phase influenza-specific cTfh cells. One individual (H03) was not included since lacking abundant clones. The p values were calculated by student t-tests. Source data for the statistics can be found in Figure 6—figure supplement 1—source data 1.
+
+### cTfh17 cells are long-lived and accumulate with aging
 
 Our previous experiments have demonstrated that antigen-specific mouse Tfh17 cells and vaccine-specific human Tfh17 cells are superior to Tfh1 and Tfh2 cells in maintaining Tfh memory for a period of about one month (HBV) or less than one year (influenza vaccine). We next ask whether Tfh17 cells can persist for even longer periods, such as years. In a cohort of adults (N=20, Table 2), we examined cTfh cells specific to vaccines for tetanus toxoid and measles, both administrated in childhood (Figure 7A). Given that community transmission of tetanus and measles is very rare (Huang et al., 2018), cTfh cells specific to tetanus toxoid and measles in adults were likely induced many years ago by childhood vaccination (Van Damme et al., 2019; Nanan et al., 2000; Locci et al., 2013). The average percentages of the cTfh17 subset in vaccine-specific memory cTfh cells were 55.22% and 45.07% for tetanus toxoid and measles respectively, which were more than twofold higher than the cTfh2 percentages and more than threefold higher than the cTfh1 percentages (Figure 7B and C). These results suggest cTfh17 cells may maintain Tfh memory for more than a decade. We also asked whether the cTfh17 dominance in memory phase was also applied to cTfh cells induced by SARS-CoV-2 infection. We examined convalescent patients with Covid-19 showing SARS-CoV-2-specific IgG antibodies (N=13, Figure 7—figure supplement 1A and Table 2). Similar to vaccine-specific cTfh cells, the cTfh17 percentages in SARS-CoV-2-specific cTfh cells were much higher than the cTfh1 or cTfh2 percentages (mean, 59.03% v.s. 12.87% or 7.73%) (Figure 7—figure supplement 1B, C).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/82217/elife-82217-fig7-v2.jpg)
+
+**Figure 7.:** (A–C) PBMC samples from 20 healthy individuals were cultured for 18 hr with or without indicated antigens, followed by FACS to detect the phenotype of antigen-specific cTfh cells. Experiment design (A), representative FACS plot (B) and statistics (C) showing the percentage of cTfh1/2/17 cells in antigen-specific cTfh cells against tetanus toxin or measles. (D–F) PBMC samples from individuals of different ages were analysed. Representative FACS plots (D) showing the percentages of cTfh1/2/17 cells in total cTfh cells in individuals of different ages. Correlations tests (E) between the biological age with the percentages of cTfh1/2/17 cells in total cTfh cells. Cord blood samples were excluded from the correlation tests because of insufficient cTfh cell numbers. The p values were calculated by Friedman test for (C) and Pearson correlation for (E). Source data for the statistics can be found in Figure 7—source data 1.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/82217/elife-82217-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Peripheral blood was collected from 14 healthy donors and 13 convalescent Covid-19 patients at 10–12 months post the infection, and ELISA or AIM assays were performed. The SARS-CoV-2specific IgG antibody titers were shown in (A), representative FACS plots and statistics for cTfh1/2/17’s percentages in AIM+ cTfh in convalescent Covid-19 patients were shown in (B, C). One samples with poor signals in AIM assay were excluded. The p values were calculated by Friedman test. Source data for the statistics can be found in Figure 7—figure supplement 1—source data 1.
+
 If antigen-specific cTfh17 cells are long-lived and superior to cTfh1 and cTfh2 cells for persistence, we would expect a preferential accumulation of cTfh17 cells over cTfh1 or cTfh2 cells along with aging. By pooling results of cTfh characterization from cord blood, children, young and middle-aged adults and the elderly (Table 2), we indeed observed that the cTfh17 percentages in total cTfh cells positively correlated with biological ages whereas the percentages of cTfh1 or cTfh2 subsets showed negative correlations (p-value <0.001) (Figure 7D and E). In conclusion, Tfh17 cells are superior to Tfh1 and Tfh2 cells in Tfh memory maintenance, a phenomenon consistently observed in vaccination, infection and natural antigen exposure.
 
-## iTfh17 cells are superior in survival and differentiation into GC-Tfh cells after resting
+### iTfh17 cells are superior in survival and differentiation into GC-Tfh cells after resting
 
 We reasoned that the advantage of Tfh17 cells in supporting humoral responses after delayed immunization might be attributed to several non-exclusive reasons: (1) Tfh17 can survive better; (2) Tfh17 cells can maintain stronger potential to differentiate into GC-Tfh cells after resting, and (3) Tfh17-derived GC-Tfh cells can gain better B cell helper function. Firstly, to test whether Tfh17 cells can better survive than Tfh1/2 cells, we transferred either OT-II iTfh1, iTfh2 or iTfh17 cells into CD28KO mice and counted the numbers of transferred cells in the spleen after 1 day and 35 days (Figure 8A). While the numbers of transferred iTfh1/2/17 cells were comparable on day1, the numbers of transferred iTfh17 cells were significantly higher than iTfh1 cells on day35 (Figure 8B–C), suggesting that iTfh17 cells had superior survival capacity over iTfh1 but not iTfh2 cells.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/82217/elife-82217-fig8-v2.jpg)
+
+**Figure 8.:** (A–C) 5×104 FACS-purified OT-II iTfh1, iTfh17, or iTfh2 cells were separately transferred to CD28KO recipients, and the spleens were FACS analysed on day1 and day35. Experimental design (A), representative FACS plots (B) and statistics (C) showing the total and normalized numbers of transferred iTfh1/2/17 cells in the spleens. (D–G) FACS-purified 1×104 B1-8 B cells and 5×104 OT-II iTfh1, iTfh17 or iTfh2 cells were co-transferred to CD28KO recipients. The early immunization group was immunized by NP-OVA in alum 1 day after the adoptive cell transfer. The late immunization group was immunized by the same antigens 35 days after the adoptive cell transfer. Spleens were collected on day 5 after the immunization. Experiment design (D). Statistic showing the numbers of OT-II cells in the spleen (E). Representative FACS plots (F) and statistics (G) showing the percentages of GC Tfh cells in OT-II cells. The p values were calculated by one-way ANOVA. The results in (C, E, G) were both pooled from two independent experiments. Source data for the statistics can be found in Figure 8—source data 1.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/82217/elife-82217-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** FACS-purified 1×104 B1-8 B cells and 5×104 OT-II iTfh1, iTfh17 or iTfh2 cells were co-transferred to CD28KO recipients. The early immunization group was immunized by NP-OVA in alum 1 day after the adoptive cell transfer. The late immunization group was immunized by the same antigens 35 days after the adoptive cell transfer. Spleens were collected on day 5 after the immunization followed by FACS analyses, and PD-1hi CXCR5hi OT-II GC-Tfh cells were FACS-purified for qPCR analyses. Total CD4+ T cells were purified by MACS enrichment from naive mice as control. Statistics (A) showing the expression of indicated genes. Statistics (B) showing the numbers of indicated B1-8 populations in the spleens. Statistic (C) showing the expression of Ifng and Il4 in all samples. Statistics (D) showing the expression of indicated antibody isotypes. The p values were calculated by one-way ANOVA. Results were pooled from two independent experiments. Source data for the statistics can be found in Figure 8—figure supplement 1—source data 1.
 
 Secondly, to test whether Tfh17 cells may maintain better potential to differentiate into GC-Tfh cells after resting, we transferred either OT-II iTfh1, iTfh2 or iTfh17 cells into CD28KO mice together with NP-specific B1-8 cells, followed by an immediate NP-OVA immunization at day 1 or a delayed NP-OVA immunization to examine the formation of GC-Tfh cells (Figure 8D). In the immediate immunization, iTfh1/2/17 cells expanded and differentiated into GC-Tfh in comparable manners after immunization (Figure 8E–G). However, in the delayed immunization (day 35), iTfh17 cells showed higher expansion than iTfh1 but not iTfh2 cells (Figure 8E). Furthermore, iTfh17 cells differentiated into more GC-Tfh cells than both iTfh1 and iTfh2 cells (Figure 8F–G). These results suggest that iTfh17 cells maintained a better potential to generated GC-Tfh cells compared to Tfh1 or Tfh2 cells, in addition to a better survival than iTfh1 cells.
 
@@ -134,62 +245,564 @@ Unveiling the superiority of Tfh17 in Tfh memory maintenance can help us to impr
 
 ## Materials and methods
 
-## Study design
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TBX21-F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CACTACAGGATGTTTGTGGACGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>TBX21-R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CCCCTTGTTGTTTGTGAGCTTTAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GATA3-F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>TGTCTGCAGCCAGGAGAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GATA3-R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>ATGCATCAAACAACTGTGGCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RORC -F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>TCTGGAGCTGGCCTTTCATCATCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RORC -R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>TCTGCTCACTTCCAAAGAGCTGGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH -F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>TGCACCACCAACTGCTTAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>GAPDH -R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>GGATGCAGGGATGATGTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pdcd1-F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CGGTTTCAAGGCATGGTCATTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Pdcd1-R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>TCAGAGTGTCGTCCTTGCTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cxcr5-F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>ATCGTCCATGCTGTTCACGCCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cxcr5-R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CAACCTTGGCAAAGAGGAGTTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Icos-F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>GCAGCTTTCGTTGTGGTACTCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Icos-R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>TGTGTTGACTGCCGCCATGAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cd40lg-F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>GAACTGTGAGCAGATGAGAAGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Cd40lg-R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>TGGCTTCGCTTACAACGTGTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il21-F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>GCCTCCTGATTAGACTTCGTCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il21-R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CAGGCAAAAGCTGCATGCTCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bcl6-F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CAGAGATGTGCCTCCATACTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Bcl6-R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CTCCTCAGAGAAACGGCAGTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifng-F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CAGCAACAGCAAGGCGAAAAAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ifng-R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>TTTCCGCTTCCTGAGGCTGGAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il4-F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>ATCATCGGCATTTTGAACGAGGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il4-R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>ACCTTGGAAGCCCTACAGACGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il17a-F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CAGACTACCTCAACCGTTCCAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Il17a-R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>TCCAGCTTTCCCTCCGCATTGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ubc-F</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>GCCCAGTGTTACCACCAAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ubc-R</td>
+      <td>IDT</td>
+      <td>PCR primers</td>
+      <td>CCCATCACACCCAAGAACA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human-CD4, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: RPA-T4</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human- CD45RA, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: HI100</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human- CXCR5, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: J252D4</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human- CXCR3, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: G025H7</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human- CCR6, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: G034E3</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human- CCR7, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: G043H7</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human- PD-1, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: A17188B</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human- PD-L1, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: 29E.2A3</td>
+      <td>1:30</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human- OX40, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: Ber-ACT35 (ACT35)</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human- CD25, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: BC96</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human- CD19, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: HIB19</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human- IFN-γ, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: B27</td>
+      <td>1;100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human- IL-4, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: MP4-25D2</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human- IL-17A, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: BL168</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse- B220, rat monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: RA3-6B2</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse- CD38, rat monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: 90</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse- CCR7, rat monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: 4B12</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GL7, rat monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: GL7</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse- CD4, rat monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: RM4-4</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse- CD44, rat monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: IM7</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse- CXCR5, rat monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: L138D7</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse- PD-1, rat monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: 29 F.1A12</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse- CXCR3, Armenian hamster monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: CXCR3-173</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse- CCR6, Armenian hamster monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: 29–2 L17</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-T-bet, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: 4B10</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GATA3, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: 16E10A23</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-RORγt, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: Q31-378</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse- CD45.2, rat monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: 104</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BCL6, mouse monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: 7D1</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse-IgG1, rat monoclonal</td>
+      <td>Biolegend</td>
+      <td>Clone: RMG1-1</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse-IgG2a, rat monoclonal</td>
+      <td>BD</td>
+      <td>Clone: R19-15</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse-IgG3, rat monoclonal</td>
+      <td>BD</td>
+      <td>Clone: R40-82</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse-IgE, rat monoclonal</td>
+      <td>BD</td>
+      <td>Clone: R35-72</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse-IgA, rat monoclonal</td>
+      <td>BD</td>
+      <td>Clone: C10-1</td>
+      <td>1:200</td>
+    </tr>
+  </tbody>
+</table>
+
+### Study design
 
 This study aims to investigate the memory function of different Tfh subsets in human and mice. cTfh1/2/17 subsets in total and antigen-specific cTfh cells from healthy donors and vaccinees were analysed for phenotypes and kinetics. In vitro generated Tfh1/2/17-like (iTfh1/2/17) cells were analysed for phenotypes and also function after being transferred into recipient mice followed by immunizations. Human cohort samples sizes varied and were guided by previous studies. Mouse sample sizes of three to five per group per time point were used for experiments to detect significant differences between groups while minimizing the use of laboratory animals. Mice were randomly assigned, age and gender matched between groups. The investigators were blinded in collecting raw data from human and mouse samples.
 
-## Human samples
+### Human samples
 
 Demographics of human samples were shown in (Table 2). Written informed consent was obtained from participants or the parents of children participants according to the ethics approved by human ethics committees of Renji Hospital affiliated to Shanghai Jiao Tong University School of Medicine (KY2019-161), Fourth Military Medical University (KY20163344-1), Tongji Hospital (NCT05009134), Shanghai Children’s Medical Centre affiliated to Shanghai Jiao Tong University School of Medicine and Obstetrics and Gynecology Hospital of Fudan University (Kyy2018-6). Whole blood samples from healthy individuals (cTfh phenotyping, N=33; Measles and TT AIM assay, N=20) were collected from Renji Hospital affiliated to Shanghai Jiao Tong University School of Medicine, Shanghai, China. Whole blood samples from healthy volunteers (N=38) who received the standard recombinant HBV vaccine (Shenzhen Kangtai Biological Products Co.) were recruited by Fourth Military Medical University, Xi’an, China. Whole blood samples from healthy volunteers (qPCR and cytokine assay, N=14; Recovered Covid-19 patients, N=13) were collected from Tongji Hospital affiliated to Huazhong University of Science and Technology Tongji Medical College, Wuhan, China. Whole blood samples from children (N=18) were collected from Shanghai Children’s Medical Centre affiliated to Shanghai Jiao Tong University School of Medicine, Shanghai, China. Cord blood samples (N=5) were collected from Obstetrics and Gynecology Hospital of Fudan University, Shanghai, China. Buffy coats from healthy donors for bulk RNA-seq were obtained from the blood bank of Changhai Hospital affiliated to Navy Medical University, Shanghai, China.
 
-## Mice
+### Mice
 
 CD45.1 WT, CD45.2 WT, CD28KO, B1-8 and OT-II mice were maintained on a C57BL/6 background and housed in specific pathogen-free conditions in the Australian Phenomics Facility (APF). All animal experiments were carried under protocols (ethics number: A2019/36) approved by ANU’s animal ethics committee.
 
-## PBMC and plasma isolation
+### PBMC and plasma isolation
 
 Blood from human and mouse were collected in BD Vacutainer Blood Collection Tubes. After centrifugation (400 g, 20 °C, 5 min), plasma was collected and stored in –80 °C for further analysis. Blood cells or buffy coats were diluted in PBS and gently loaded onto the Ficoll-Paque Plus (GE Healthcare) at the volume ratio of 1:1, followed by density gradient centrifugation (450 g, 20 °C, 20 min, no brake). PBMC were then aspirated and resuspended in cold PBS for further experiment.
 
-## Antigen-induced marker assay (AIM assay)
+### Antigen-induced marker assay (AIM assay)
 
 Cryopreserved PBMC were thawed, washed and counted. A total of 5×105 PBMCs were resuspended in 200 µL complete RPMI media (3% FBS for AIM assay) and cultured in a 96-well flat-bottom plate for 18 hr in the presence of 20 µg/mL recombinant HBVSA (Beijing Bioforce), tetanus toxin (Sigma), measles (GenWay) or 1 µg/mL SARS-CoV-2 Prot_S (Miltenyi Biotec), no antigen was added to control wells. At least six wells were seeded (3 antigen treated wells +3 medium only wells) for each PBMC sample. FACS was performed and the replicates for each sample were merged for downstream analysis.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Total RNA was extracted from sorted T cell subsets using Trizol reagent (Thermo Fisher Scientific) or RNAeasy Micro Kit (Qiagen) and reverse-transcribed to cDNA using PrimeScript RT reagent kit (TaKaRa Biotechnology). RT-PCR was performed with StepOnePlus (Applied Biosystems) using SYBR Green PCR Master Mix (Thermo Fisher Scientific) with specific primers. The reaction of PCR was performed according to the following protocol: 95 °C for 2 min, followed by 40 cycles of 95 °C for 10 s, a specific annealing temperature for 10 s, and 72 °C for 15 s. Relative gene expression was calculated by 2(−Delta Delta CT) method using GAPDH (for human cells) and Ubc (for mouse cells) as an endogenous control.
 
-## ELISA for detecting antibody titer
+### ELISA for detecting antibody titer
 
 For detecting anti-HBVSA antibody titer (total binding), a commercialized ELISA kit was used (Shanghai Kehua Bio-engineering Co.). In brief, plasma was diluted 10 times and incubated with HBVSA pre-coated ELISA plate for 30 min under 37 °C. Then HBVSA-HRP was added for another 30 min incubation, followed by five washes and substrate solution was used to determine the OD450 value. The antibody titer was calculated according to the standard curve generated by the standard with a known antibody titer. For detecting anti-HBVSA antibody titer (total IgG), plasma was diluted 10 times and incubated with HBVSA pre-coated ELISA plate for 30 min under 37 °C. Then the plate was washed three times, and added by anti-human IgG-HRP (1:60,000 dilution, Sigma) for 30 min incubation under 37 °C. The plate was then washed five times, and substrate solution was used to determine the OD450 value. IgG specific to SARS-CoV-2 spike (S) and nucleocapsid (N) proteins in plasma were measured using chemiluminescent immunoassay kits (Yhlo Biotech Co) as previously described (Yao et al., 2022). For detecting the anti-NP antibody titer, mouse serum was diluted 2000 times and incubated with NP2-BSA or NP23-BSA pre-coated ELISA plate for 1 hr at RT, followed by three washes and incubated with anti-mouse total IgG-HRP antibody for 1 hr at RT. The plate was then washed five times, and TMB chromogen solution was used to determine the OD405 value with 0.1% SDS as the stop solution.
 
-## In vitro survival and proliferation assays
+### In vitro survival and proliferation assays
 
 For in vitro apoptosis assay, FACS purified CD4+ T cells were resuspended in complete RPMI media (10% deactivated FBS (v/v), 100 units/mL penicillin, 100 μg/mL streptomycin, 1 mM sodium pyruvate, 1% MEM nonessential amino acids (v/v), and 0.055 mM \beta-Mercaptoethanol in RPMI 1640 with L-glutamine and 25 mM HEPES) and cultured for 3 days, followed by Annexin V and zombie aqua (Biolegend) staining by FACS. For in vitro proliferation assay, FACS purified CD4+ T cells were labelled by 5 µM CFSE (Thermo Fisher Scientific) for 5 min, washed and seeded on 96-well U-bottom plate with T cell activation Dynabeads (Thermo Fisher Scientific) at the ratio of 3:1 (cell number:bead number) to culture for 2.5 days, followed by FACS to determine the fluorescence of CFSE. Division indices were calculated according to the online tutorial by Flowjo.
 
-## T cell stimulation assay
+### T cell stimulation assay
 
 To evaluate the effect of TCR stimulation on CXCR3 and CCR6 expression by Tfh cells, sorted cTfh cell subsets (2×104/well) were stimulated with plate-bound αCD3 (5 µg/mL) and αCD28 (2 µg/mL) or rested for 18 hr in complete RPMI media. CXCR3 and CCR6 expression by Tfh cell subsets were analysed by FACS.
 
-## Flow cytometry analysis
+### Flow cytometry analysis
 
 Surface staining was conducted by incubating the cells with the antibodies under room temperature for 30 min in FACS buffer (PBS + 2% FBS). For staining of intracellular cytokines, human cells were stimulated with PMA and ionomycin (500 ng/mL, eBioscience) in the presence of GolgiPlus and GolgiStop (BD Biosciences) for 4 hr at 37 °C. After surface staining, cells were permeabilised using Cytofix/Cytoperm (BD Biosciences). Antibodies specific to cytokines were incubated with cells for 30 min at 4 °C. For intranuclear staining, surface staining was performed followed by fix/perm (eBioscience) and stained for nuclear proteins under room temperature for 45 min. Flow cytometry was performed on a FACS analyser (Fortessa X-20, BD) and the data were analyzed by FlowJo (TreeStar).
 
-## RNA-seq data analysis
+### RNA-seq data analysis
 
 0.5–1 million naive, TCM, TEM, TfhCM, and TfhEM cells were sorted and extracted total RNA was sequenced by the Illumina platform, and the generated pair-end reads were processed online under the Galaxy project according to a standardised pipeline (Jalili et al., 2020). The count files were analysed according to a published pipeline (Law et al., 2016) for cpm normalization, MDS plot generation and differentially expressed genes calculation (low count genes were removed by filterByExpr). The heatmap was visualized by HemI. Gene set enrichment analysis (GSEA) was performed by fgsea to calculate GSEA p value and normalized enrichment score.
 
-## 10x single-cell RNA-seq analysis
+### 10x single-cell RNA-seq analysis
 
 R script for this analysis was provided in the supplementary file. In brief, the processed Seurat object was downloaded from GSE152522 and loaded into Seurat package (Hao et al., 2021). Unsupervised clustering was then performed to extract CXCR5-expression cTfh clusters. Then Tfh1 and Tfh17 signature scores were calculated for each cell by AddModuleScore function based on the signature gene sets for Tfh1 and Tfh17 derived from GSE123812. For TCR clonality analysis, cells sharing the same TCR alpha and beta chain CDR3 amino acid sequences were assigned to the same clonotype and the clonal abundance was calculated and ranked. Finally, the Tfh1 and Tfh17 signature scores for the abundant TCR clones (abundance ≥10) were extracted for statistical analysis and visualization.
 
-## Cell transfer and immunisation
+### Cell transfer and immunisation
 
 For adoptive transfer of in vitro differentiated OT-II cells, CD44+ OT-II cells cultured under iTh0 or iTfh1/2/17 conditions were FACS-purified and 5×104 cells were transferred into each CD28KO recipient mice, followed by OVA or NP-OVA in alum immunisations. For immunization, 50 µg ovalbumin (OVA) or NP-OVA was emulsified in alum (volume ratio 1:1) and injected through intraponeal for a dose of 200 µL per mouse. The spleens were collected on day 7 after immunisation or otherwise indicated on the paper.
 
-## In vitro differentiation for OT-II cells
+### In vitro differentiation for OT-II cells
 
 The method to differentiate iTfh1, iTfh2, and iTfh17-polarized cells in vitro was developed based on our previous paper (Gao et al., 2020). In brief, red blood cell lysed splenocytes from WT mice were left untreated (for differentiating iTh0/1/2/17) or pre-treated by 1 μg/mL lipopolysaccharide (LPS) for 24 hr in the complete RPMI media. 5×105 per well LPS pre-treated splenocytes were co-cultured with FACS purified OT-II cells at the ratio of 50:1 in the presence of 1 μg/mL OVA323-339 peptide and indicated cytokines (Table 3) for 72 hr to differentiate iTfh1/2/17 cells. No cytokines were added for differentiating Th0 cells. Neutralizing antibodies anti-IL-4, anti-IFN-γ, and anti-TGF-β (BioxCell) were used at 10 μg/mL. Cytokines were purchased from PeproTech.
 
-## Statistical analysis
+**Table 3.**
+ Conditions for differentiating iTfh0, iTfh1, iTfh2, and iTfh17 Cells.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cell type</th>
+      <th>Cytokines</th>
+      <th>Neutralizing antibodies</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>iTh0</td>
+      <td>No cytokines</td>
+      <td>No antibodies</td>
+    </tr>
+    <tr>
+      <td>iTh1</td>
+      <td>20 ng/ml IL-12</td>
+      <td>Anti-IL-4, anti-TGF-β</td>
+    </tr>
+    <tr>
+      <td>iTh2</td>
+      <td>50 ng/ml IL-4</td>
+      <td>Anti-IFN-γ, anti-TGF-β</td>
+    </tr>
+    <tr>
+      <td>iTh17</td>
+      <td>50 ng/ml IL-6, 2 ng/ml TGF-β</td>
+      <td>Anti-IFN-γ, anti-IL-4</td>
+    </tr>
+    <tr>
+      <td>iTfh1</td>
+      <td>100 ng/ml IL-6, 50 ng/ml IL-21, 1 ng/ml IL-12</td>
+      <td>Anti-IL-4, anti-TGF-β</td>
+    </tr>
+    <tr>
+      <td>iTfh2</td>
+      <td>100 ng/ml IL-6, 50 ng/ml IL-21, 20 ng/ml IL-4</td>
+      <td>Anti-IFN-γ, anti-TGF-β</td>
+    </tr>
+    <tr>
+      <td>iTfh17</td>
+      <td>100 ng/ml IL-6, 50 ng/ml IL-21, 0.1 ng/ml TGF-β</td>
+      <td>Anti-IFN-γ, anti-IL-4</td>
+    </tr>
+  </tbody>
+</table>
+
+### Statistical analysis
 
 For human result analysis, data were not assumed Gaussian distributed thus comparisons between two groups were performed by two-tailed Wilcoxon matched-pairs signed rank test and multiple comparisons were performed by Friedman test. For mouse result analysis, data were assumed Gaussian distributed thus comparisons between two groups were performed by two-tailed unpaired t-test and multiple comparisons were performed by either one-way or two-way ANOVA test as specified in this paper. For all statistics mean ± SD were showed. Corrections were not applied for multiple comparison tests because comparisons in this study were planned with specific hypotheses specified in advance. Statistical analysis was performed by Prism 9.0 software (GraphPad). p-values <0.05 were considered significant.

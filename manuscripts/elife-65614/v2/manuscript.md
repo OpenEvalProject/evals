@@ -24,7 +24,7 @@
 
 ## Abstract
 
-IL-33 is an alarmin required for resistance to the parasite Toxoplasma gondii , but its role in innate resistance to this organism is unclear. Infection with T. gondii promotes increased stromal cell expression of IL-33, and levels of parasite replication correlate with release of IL-33 in affected tissues. In response to infection, a subset of innate lymphoid cells (ILC) emerges composed of IL-33R + NK cells and ILC1s. In Rag1 mice, where NK cells and ILC1 production of IFN-γ mediate innate resistance to −/− T. gondii , the loss of the IL-33R resulted in reduced ILC responses and increased parasite replication. Furthermore, administration of IL-33 to Rag1 mice resulted in a marked decrease in parasite burden, increased production of IFN-γ, and the recruitment and expansion of inflammatory monocytes associated with parasite control. These protective effects of exogenous IL-33 were dependent on endogenous IL-12p40 and the ability of IL-33 to enhance ILC production of IFN-γ. These results highlight that IL-33 synergizes with IL-12 to promote ILC-mediated resistance to −/− T. gondii .
+IL-33 is an alarmin required for resistance to the parasite Toxoplasma gondii, but its role in innate resistance to this organism is unclear. Infection with T. gondii promotes increased stromal cell expression of IL-33, and levels of parasite replication correlate with release of IL-33 in affected tissues. In response to infection, a subset of innate lymphoid cells (ILC) emerges composed of IL-33R+ NK cells and ILC1s. In Rag1−/−mice, where NK cells and ILC1 production of IFN-γ mediate innate resistance to T. gondii, the loss of the IL-33R resulted in reduced ILC responses and increased parasite replication. Furthermore, administration of IL-33 to Rag1−/− mice resulted in a marked decrease in parasite burden, increased production of IFN-γ, and the recruitment and expansion of inflammatory monocytes associated with parasite control. These protective effects of exogenous IL-33 were dependent on endogenous IL-12p40 and the ability of IL-33 to enhance ILC production of IFN-γ. These results highlight that IL-33 synergizes with IL-12 to promote ILC-mediated resistance to T. gondii.
 
 ## Introduction
 
@@ -36,39 +36,55 @@ IL-33 is a cytokine that is constitutively expressed by endothelial and epitheli
 
 ## Results
 
-## Toxoplasma gondii infection induces IL-33 upregulation and release
+### Toxoplasma gondii infection induces IL-33 upregulation and release
 
 To determine the impact of Toxoplasma infection on IL-33 expression and secretion, C57BL/6 WT and Rag1−/− mice were infected intraperitoneally (i.p.) with the Me49 strain or the replication-deficient CPS strain of T. gondii, and the levels of IL-33 at local sites of infection and affected tissues assessed by ELISA. In the peritoneum of naïve WT and Rag1−/− mice, the level of IL-33 was below the limit of detection (<10 pg/ml) (Figure 1A). Infection i.p. with 2 × 105 tachyzoites of the non-replicating CPS strain did not cause parasite-induced host cell lysis and failed to elicit detectable IL-33 at 1 or 5 days post-infection (dpi) (data not shown). Intraperitoneal infection of WT mice with 20 cysts of Me49 resulted in <1% infected cells in the peritoneum at 5 dpi, and IL-33 was not detected by ELISA (Figure 1A). When Rag1−/− mice received the same challenge, there were 2–5% infected cells at 5 dpi, and elevated levels of IL-33 were present (Figure 1A). To test whether IL-33 levels were a function of parasite burden, WT and Rag1−/− mice were treated with anti-IFN-γ, which resulted in a 20-fold increase in parasite load (data not shown) and a threefold to fourfold increase in the levels of IL-33 (Figure 1A). When these data sets were collated and quantity of parasite DNA plotted versus IL-33 concentration, there was a strong correlation between parasite burden and IL-33 levels (R = 0.7902) (Figure 1B). To determine whether IL-33 was released in other tissues affected by T. gondii, tissue biopsies from the liver of WT mice at 10 dpi were prepared and placed in culture for 24 hr and IL-33 release measured. While basal levels of IL-33 were detected in tissues from naïve WT mice and mice injected with replication-deficient CPS parasites, the biopsies from infected mice showed significantly elevated levels of IL-33 (Figure 1C). These results suggest that parasite replication and lysis of infected cells lead to IL-33 release, and these levels are comparable to those reported in other inflammatory settings (Kearley et al., 2015; Llop-Guevara et al., 2014).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/65614/elife-65614-fig1-v2.jpg)
+
+**Figure 1.:** Mice were infected i.p. with T. gondii. After 7 days, (A) free IL-33 in the peritoneal cavity was measured by ELISA. (B) Measurements of IL-33 from (A) were plotted against corresponding parasite burden and fit to a linear model. (C) Five millimeter punch biopsies of liver was placed in culture for 24 hr and IL-33 measured in supernatants by ELISA. Each point represents the mean of three biopsies from a single mouse. (D) Cells from omenta of IL-33 GFP reporter mice were analyzed by flow cytometry at 3 days post-infection. Cells shown are live singlets. Data are representative of three mice per group. (E) Whole mount omentum showing IL-33-GFP signal in milky spot. (F) 3D projection of milky spot showing stromal marker ERTR7 and IL-33 GFP signal. (G) Whole mount immunofluorescence of milky spot. NS, not significant (p>0.05); *p<0.05 and ***p<0.001 (one-way ANOVA with Tukey’s multiple comparisons test). Data are pooled from three (A and B) or two (C, D, E, F, and G) independent experiments (mean + s.e.m).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65614/elife-65614-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Mice were infected i.p. with T. gondii. After 7 days, (A–C) Intracellular staining of omenta from infected mice. Data are representative of 3 mice per group, FMO controls are pooled from samples of all genotypes above. (D) Immunofluorescence of spleen sections from naïve mouse and intracellular staining flow cytometry from naïve and infected mouse lungs. Data are representative of 3 mice per condition and genotype (E) Surface staining of omenta from wild type naïve and infected mice. Data are representative of 3 mice per condition and genotype.
+
 To identify the cellular source of IL-33 during infection, the IL-33-IRES-GFP mouse (Johnston et al., 2016), a faithful reporter for IL-33 protein production in comparison to direct staining and Il33−/− mice (Figure 1—figure supplement 1A), was utilized. The IL-33 reporter mice were infected i.p. with a fluorescent strain of T. gondii (Pru-tdTom), and the expression of IL-33-GFP in the omentum was examined by flow cytometry and IHC at 3 dpi. The omentum is an adipose tissue that contains fat-associated lymphoid clusters (FALCs), which are one of the major sites for drainage from the peritoneum (Christian et al., 2020; Jackson-Jones et al., 2016; Buscher et al., 2016). In naïve mice, the omentum contained a small population of CD45+ immune cells, most of which were IL-33-GFP−, whereas fibroblastic stromal cells (CD45−FSChi SSChi CD31+/− PDPN+/−) were the main source of IL-33-GFP+ cells (Figure 1D, Figure 1—figure supplement 1B). Upon infection, there was a marked (approximately 7- to 10-fold) expansion of the CD45+ population and a small population (0.5%) of the CD45+ F4/80+ MHCII+ cells expressed IL-33 (Figure 1D and data not shown). Nevertheless, although the percentage of stromal cells that expressed IL-33 was decreased (as a consequence of the increased inflammatory populations, compare cell density of plots in Figure 1D), the major population of IL-33-GFP+ cells remained fibroblastic stromal cells (Figure 1—figure supplement 1B). The ability to detect infected cells based on parasite expression of tdTomato revealed that infected cells were not associated with IL-33 expression (Figure 1—figure supplement 1C), suggesting that infection of individual cells does not directly drive IL-33 expression. Similarly, at 7 dpi, the use of flow cytometry and immunofluorescence revealed that CD45− cells were the dominant source of IL-33 in the spleen, lung, and liver (Figure 1—figure supplement 1D). By contrast, the majority of IL-33R staining in infected mice was observed on CD45+ cells, suggesting that hematopoietic cells are the primary responders to IL-33 release (Figure 1—figure supplement 1E). To understand the spatial organization of the IL-33-GFP+ cells, the omentum was used for whole tissue mount immunofluorescence. In uninfected mice, consistent with the analysis above, IL-33 was constitutively expressed by non-hematopoietic CD45− cells with fibroblastic morphology distributed throughout the FALCs. At 3 dpi, there was a marked increase in the size of the FALC, and an approximate 3-fold increase in number of IL-33+ cells (Figure 1E). These images are max projection views that illustrate the size of FALCs, but quantification of the intensity of fluorescence highlighted the 10-fold increase in the expression of IL-33-GFP (Figure 1E) associated with ERTR7+ fibroblastic reticular cells (Figure 1F). Imaging revealed that areas of parasite replication were inversely correlated with the presence of IL-33-GFP expression (Figure 1G). Together, these data establish that in mice acutely infected with T. gondii stromal cells are a major source of IL-33, that release of IL-33 correlates with levels of parasite replication, and that a sub-population of innate immune cells express the IL-33R.
 
-## ILC responses to IL-33
+### ILC responses to IL-33
 
 To identify the cell populations that could respond to the local release of IL-33 during this infection, a UMAP analysis was used to provide an unbiased comparison of the changes in IL-33R expression in the peritoneum of naïve and infected Rag1−/− mice (Figure 2A). In naïve mice, IL-33R was expressed by peritoneal macrophages (CD64+CD11b+MHCII+/−) and a small population of ILC2 (Lin− Nkp46−) when compared with Il1rl1−/− controls (Figure 2A). By 5 dpi, there was a marked change in the cellular composition of the peritoneum with a loss of the MHCII– macrophage and ILC2 populations but a prominent monocyte and neutrophil infiltration and the expansion of NKp46+ NK cells and ILC1s (Figure 2A, bottom). While there were low levels of IL-33R expressed by MHCIIhi CD64+ cells, the highest levels of IL-33R were observed on NKp46+ cells. Comparison of WT, Il1rl1−/−, and Il33−/− mice revealed that IL-33R expression was not detected on peritoneal or splenic NK cells in naïve mice, but IL-33R was observed on a subset (~20%) of NK cells in the peritoneum by 5 dpi (Figure 2B). Furthermore, NK cells from infected Il33−/− mice still upregulated expression of the IL-33R, indicating that IL-33 signaling is not required for this process. Thus, acute infection of immune competent mice with T. gondii is characterized by the emergence of populations of NK cells and ILC1s that express the IL-33R.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/65614/elife-65614-fig2-v2.jpg)
 
-**Figure 2.:** (A) UMAP analysis of peritoneal exudate cells from naïve or 7 dpi i.p. mice, with heatmap for IL-33R expression. Data compiled from four mice per group. (B) Flow cytometry from peritoneal cells showing IL-33R staining on NKp46+ cells. Data are representative of three to four mice per group. (C) Flow cytometry of LAKs showing composition of population based on cytokine stimulation condition. Population shown is pre-gated on live singlets. (D) Intracellular cytokine staining of LAKs after 24 hr cytokine stimulation and 4 hr incubation with Brefeldin A. NS, not significant (p>0.05) (Student’s t-test); data are representative of three independent experiments (A–D).  Figure 2—source data 1.Figure 2.
+**Figure 2.:** (A) UMAP analysis of peritoneal exudate cells from naïve or 7 dpi i.p. mice, with heatmap for IL-33R expression. Data compiled from four mice per group. (B) Flow cytometry from peritoneal cells showing IL-33R staining on NKp46+ cells. Data are representative of three to four mice per group. (C) Flow cytometry of LAKs showing composition of population based on cytokine stimulation condition. Population shown is pre-gated on live singlets. (D) Intracellular cytokine staining of LAKs after 24 hr cytokine stimulation and 4 hr incubation with Brefeldin A. NS, not significant (p>0.05) (Student’s t-test); data are representative of three independent experiments (A–D).
 
 To understand the impact of IL-33 on ILC populations, IL-2 induced lymphokine-activated killer cells (LAKs) generated from the bone marrow of Rag1−/− mice (Hunter et al., 1997; Wherry et al., 1991) were utilized to compare the impact of IL-33 (and its relative IL-18) alone or in combination with IL-12 on ILCs. Phenotyping of these LAK cultures revealed that they contained ILC1s (NKp46+ CD200R1+), ILC2s (NKp46- CD200R1+) and NK cells (NKp46+ CD200R1-) (Figure 2C). Upon withdrawal of IL-2, the addition of IL-33 preferentially stimulated the proliferation of CD200R1+ ILC2s, while IL-18 stimulated NK cell proliferation (Figure 2C). IL-12 alone did not induce the expansion of a specific cell type, but when combined with IL-33 maintained the heterogeneity of the LAK population, while IL-12 plus IL-18 resulted in a modest increase in the proportion of NK cells compared to IL-18 alone. Moreover, while IL-33 alone did not stimulate LAKs to produce IFN-γ it did synergize with IL-12 to enhance the production of IFN-γ in the NKp46+ populations (Figure 2D). Similar results were observed when splenocytes from Rag1−/− mice were used (Figure 2D, bottom right panel) indicating that these effects of IL-33 on NK cells were not dependent on pre-activation with IL-2. These observations are consistent with previous reports on the ability of IL-33 to promote ILC2 activity (Monticelli et al., 2011; Monticelli et al., 2015), but demonstrate that in the presence of IL-12, IL-33 is a potent inducer of IFN-γ.
 
-## Endogenous IL-33 is required for innate resistance to T. gondii
+### Endogenous IL-33 is required for innate resistance to T. gondii
 
 To directly test the role of endogenous IL-33 in innate resistance to T. gondii, Rag1−/− mice that lacked the IL-33R (Rag1−/−; Il1rl1−/− mice) were generated and infected i.p. with T. gondii. Compared to Rag1−/− mice, at 7 dpi the Rag1−/−; Il1rl1−/− mice showed an increased parasite burden based on the frequency of infected cells in the peritoneum (Figure 3A) and quantitation of parasite DNA in the peritoneum and liver (Figure 3B). Serum analysis of infected mice revealed comparable levels of IL-12p40 in Rag1−/− and Rag1−/−; Il1rl1−/− mice, but IFN-γ was severely compromised in the Rag1−/−; Il1rl1−/− mice (Figure 3C). Similar results were observed in Rag1-sufficient WT and Il1rl1−/− mice (Figure 3—figure supplement 1A,B). At this time point, Rag1−/− mice had a marked expansion in ILC1s and NK cells in the liver that was reduced in the absence of the IL-33R (Figure 3D). Consistent with decreased production of IFN-γ, fewer Ly6chi monocytes were recruited to the liver in the Rag1−/−; Il1rl1−/−mice (Figure 3E). Analysis of the Ly6chi population in the liver at 7 dpi after infection with Pru-tdTom showed that a proportion of infected and uninfected cells express iNOS in the Rag1−/−mice, but iNOS levels were markedly reduced in the Rag1−/−; Il1rl1−/− mice (Figure 3F). Neutrophil numbers, by contrast, were elevated in Rag1−/−; Il1rl1−/− mice (Figure 3—figure supplement 1C), although this was not sufficient for parasite control. These data sets establish that endogenous IL-33 is required for optimal production of innate IFN-γ and the recruitment of monocyte populations that express anti-microbial effector mechanisms required for resistance to T. gondii.
 
-## IL-33 treatment boosts IL-12- and IFN-γ-dependent immunity
+![Figure 3.](https://cdn.elifesciences.org/articles/65614/elife-65614-fig3-v2.jpg)
+
+**Figure 3.:** (A) Cytospins of peritoneal exudate cells at 7 dpi i.p. (B) qPCR for parasite DNA from indicated tissues. (C) Serum cytokines measured by ELISA at 7 dpi. Representative of four to five mice per group. (D) Flow cytometric analysis and quantification of liver innate lymphoid cells. Populations shown are pre-gated on live singlets that are MHCII−. (E) Quantification of inflammatory monocytes (CD11b+CD64+Ly6 g−) in livers of infected mice at 7 dpi. (F) Intracellular iNOS staining from monocytes in (E), sub-gated on primary iNOS-producing cells (Ly6chi MHCIIlo). NS, not significant (p>0.05); *p<0.05, **p<0.01, ***p<0.001, and ****p<0.0001 (student’s t-test). Data are representative of three independent experiments.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65614/elife-65614-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Mice were infected i.p. with T. gondii. (A) Quantification of serum cytokines from Rag1+/+ mice at 10 dpi. (B) Weight loss curves for mice from (A). (C) Representative flow cytometric analysis (left) and quantification of numbers (right) of neutrophils in the peritoneum at 7 dpi. Data are representative of three independent experiments.
+
+### IL-33 treatment boosts IL-12- and IFN-γ-dependent immunity
 
 Based on the ability of IL-33 to stimulate IL-12-dependent IFN-γ production in ILC1s and NK cells, a recombinant version of IL-33, resistant to oxidation which has a 30-fold increase in efficacy (Kearley et al., 2015; Cohen et al., 2015), was utilized to determine if exogenous IL-33 could be used to enhance innate resistance to T. gondii. Beginning at 1 dpi, IL-33 was administered i.p. every 2 days until 7 dpi, which resulted in a dose-dependent reduction in the frequency of infected cells at the site of infection and a decrease in parasite DNA in multiple tissues (Figure 4A). Analysis of cytospins of PECs revealed that treatment of infected Rag1−/− mice with IL-33 resulted in the emergence of a highly activated monocyte population (Figure 4B). By contrast, neutrophil numbers were not affected by IL-33 treatment (data not shown). These inflammatory monocytes were larger (higher FSC) and more granular (higher SSC) (Figure 4C). Furthermore, these cells were characterized by their expression of CD11b, CD11c, Ly6c, CCR2, and MHCII (Figure 4C). IL-33 treatment also resulted in increased recruitment of Ly6chi CCR2+ inflammatory monocytes to the liver and lungs by 7 dpi, and these monocytes had enhanced iNOS and IL-33R expression (Figure 4D). Histological analysis of the liver confirmed that IL-33 treatment resulted in increased cellular infiltration and expression of iNOS (Figure 4E, black arrows). Importantly, these changes induced by IL-33 treatment were associated with decreased necrotic foci that were frequent in infected Rag1−/− mice (Figure 4E, blue arrow). These results correlate the protective effects of IL-33 treatment with an increase in macrophage and monocyte responses required for the control of T. gondii.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/65614/elife-65614-fig4-v2.jpg)
 
-**Figure 4.:** (A) Quantification of infected cell frequencies in cytospins at 7 dpi i.p. and qPCR for parasite DNA in indicated tissues. (B) Representative cytospins from peritoneal lavage at 7 dpi. Data are representative of four to six mice per group. (C) Flow cytometric analysis of inflammatory monocytes in the peritoneal exudate at 7 dpi. Populations shown are pre-gated on live Ly6g− singlets. Ly6chi CCR2+ cells are highlighted in black. (D) Representative analysis of Ly6c+ CCR2+ cells at 7 dpi in the liver and quantification of monocyte numbers and iNOS staining. (E) Histology of liver at 7 dpi, H and E showing infiltration of immune cells (left) and DAB iNOS staining (right). Black arrows indicate inflammatory infiltration; blue arrow indicates necrotic lesion. *p<0.05, **p<0.01, and ***p<0.001 (Student’s t-test). Data are representative of five (A–C) or three (D–E) independent experiments.  Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Quantification of infected cell frequencies in cytospins at 7 dpi i.p. and qPCR for parasite DNA in indicated tissues. (B) Representative cytospins from peritoneal lavage at 7 dpi. Data are representative of four to six mice per group. (C) Flow cytometric analysis of inflammatory monocytes in the peritoneal exudate at 7 dpi. Populations shown are pre-gated on live Ly6g− singlets. Ly6chi CCR2+ cells are highlighted in black. (D) Representative analysis of Ly6c+ CCR2+ cells at 7 dpi in the liver and quantification of monocyte numbers and iNOS staining. (E) Histology of liver at 7 dpi, H and E showing infiltration of immune cells (left) and DAB iNOS staining (right). Black arrows indicate inflammatory infiltration; blue arrow indicates necrotic lesion. *p<0.05, **p<0.01, and ***p<0.001 (Student’s t-test). Data are representative of five (A–C) or three (D–E) independent experiments.
 
 To determine whether the protective effects of exogenous IL-33 depended on the ability of IL-12 to promote ILC production of IFN-γ, infected Rag1−/− mice were treated with IL-33 in combination with either anti-IL-12p40 or anti-IFN-γ neutralizing antibodies. Additionally, Rag2−/−; Il2rg−/− mice, which lack ILCs, were treated with PBS or IL-33. Blockade of either IL-12 or IFN-γ entirely abrogated the protective effects of IL-33 treatment as measured by the frequency of infected cells in the peritoneum at 7 dpi (Figure 5A). As expected, Rag2−/−; Il2rg−/− mice were more susceptible than Rag1−/− mice, and IL-33 treatment did not affect parasite burden in the peritoneum. IFN-γ levels at the site of infection were increased by IL-33 treatment in ILC-sufficient Rag1−/− animals, but were unaffected in Rag2−/−; Il2rg−/− animals (Figure 5B). In Rag1−/− mice, treatment with IL-33 resulted in an expansion of the NK and ILC1 compartments and their production of IFN-γ (Figure 5C). The expansion of Ly6chi CCR2+ monocytes associated with protection was also dependent on these factors, as cytokine blockade or absence of innate lymphoid cells resulted in the loss of these cells (Figure 5D and Figure 5E). These results suggest that the protective effects of IL-33 are not working through effects on the monocytes but rather that the ability of exogenous IL-33 to promote parasite control are dependent on IL-12 and ILC production of IFN-γ and subsequent activation of inflammatory monocytes.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/65614/elife-65614-fig5-v2.jpg)
 
-**Figure 5.:** (A) Quantification of cytospins from peritoneal exudate cells at 7 dpi i.p. (B) Quantification of IFN-γ in peritoneal lavage at 7 dpi. (C) Representative flow cytometric analysis of NK cells and ILC1s (left) and quantification of cell numbers and cytokine production (right) in the peritoneal exudate at 7 dpi. Population shown is pre-gated on live Ly6g- NKp46+ singlets. (D and E) Flow cytometric analysis of inflammatory monocytes in peritoneum at 7 dpi. Data are representative of two independent experiments.  Figure 5—source data 1.Figure 5.
+**Figure 5.:** (A) Quantification of cytospins from peritoneal exudate cells at 7 dpi i.p. (B) Quantification of IFN-γ in peritoneal lavage at 7 dpi. (C) Representative flow cytometric analysis of NK cells and ILC1s (left) and quantification of cell numbers and cytokine production (right) in the peritoneal exudate at 7 dpi. Population shown is pre-gated on live Ly6g- NKp46+ singlets. (D and E) Flow cytometric analysis of inflammatory monocytes in peritoneum at 7 dpi. Data are representative of two independent experiments.
 
 ## Discussion
 
@@ -82,32 +98,285 @@ While IL-33 is most prominently linked to the regulation of Th2 type responses, 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/65614/elife-65614-fig6-v2.jpg)
 
-**Figure 6.:** Toxoplasma gondii.
-
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Il33</td>
+      <td>GenBank</td>
+      <td>MGI:1924375</td>
+      <td>https://www.ncbi.nlm.nih.gov/gene/77215</td>
+    </tr>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Il1rl1</td>
+      <td>GenBank</td>
+      <td>MGI:98427</td>
+      <td>https://www.ncbi.nlm.nih.gov/gene/17082</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6NTac</td>
+      <td>Taconic</td>
+      <td>RRID:MGI:5658006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>B6.129S7-Rag1tm1Mom/J</td>
+      <td>Jackson</td>
+      <td>RRID:IMSR_JAX:002216</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL/6NTac.Rag2tm1Fwa;II2rgtm1Wjl</td>
+      <td>Taconic</td>
+      <td>Cat # 4111</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>B6(129S4)-Il33tm1.1Bryc/J</td>
+      <td>Jackson</td>
+      <td>RRID:IMSR_JAX:030619</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Il1rl1tm1Anjm</td>
+      <td>PMID:10727469 Townsend et al., 2000</td>
+      <td>MGI:2386675</td>
+      <td>http://www.informatics.jax.org/allele/MGI:2386675</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Toxoplasma gondii)</td>
+      <td>ME49</td>
+      <td>NCBI:txid508771</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Toxoplasma gondii)</td>
+      <td>Pru-tdTomato</td>
+      <td>PMID:19578440 John et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Toxoplasma gondii)</td>
+      <td>CPS</td>
+      <td>PMID:11859373 Fox and Bzik, 2002</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Toxoplasma gondii Rabbit polyclonal</td>
+      <td>Collaborator</td>
+      <td></td>
+      <td>IHC: 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>iNOS Rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat # ab15323, RRID:AB_301857</td>
+      <td>IHC 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ERTR7 Af647 Rat monoclonal (sc-73355)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat # sc-73355 RRID:AB_1122890</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>F4/80 BV480 Rat monoclonal (T45-2342)</td>
+      <td>BD</td>
+      <td>Cat # 565635 RRID:AB_2739313</td>
+      <td>IF (1:25)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD45 Af700 Rat monoclonal (30-F11)</td>
+      <td>BioLegend</td>
+      <td>Cat # 103127, RRID:AB_493714</td>
+      <td>IF (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD335 NKp46 PE/Dazzle 594 Rat monoclonal (29A1.4)</td>
+      <td>BioLegend</td>
+      <td>Cat # 137629, RRID:AB_2616665</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>NK-1.1 BV711 Mouse monoclonal (PK136)</td>
+      <td>BioLegend</td>
+      <td>Cat # 108745, RRID:AB_2563286</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>IFN gamma Af700 Rat monoclonal (XMG1.2)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # 56-7311-82, RRID:AB_2688063</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD200 Receptor APC Rat monoclonal (OX110)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # 17-5201-82, RRID:AB_10717289</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>T1/ST2 Biotin Rat monoclonal (DJ8)</td>
+      <td>MD Biosciences</td>
+      <td>Cat # 101001B, RRID:AB_947551</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>T-bet PE-Cy7 Mouse monoclonal (4B10)</td>
+      <td>BioLegend</td>
+      <td>Cat # 644823</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>EOMES PE Rat monoclonal (Dan11mag)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # 12-4875-82, RRID:AB_1603275</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD11b ef450 Rat monoclonal (M1/70)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # 48-0112-80, RRID:AB_1582237</td>
+      <td>FC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD11c APC-ef780 Armenian hamster monoclonal (N418)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 47-0114-80, RRID:AB_1548663</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ly-6C BV785 Rat monoclonal (HK1.4)</td>
+      <td>BioLegend</td>
+      <td>Cat # 128041, RRID:AB_2565852</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ly-6G BV711 Rat monoclonal (1A8)</td>
+      <td>BioLegend</td>
+      <td>Cat # 127643, RRID:AB_2565971</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CCR2 CD192 APC Rat monoclonal (SA203G11)</td>
+      <td>BioLegend</td>
+      <td>Cat # 150628, RRID:AB_2810415</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD64 FcgammaRI PE-Cy7 Mouse monoclonal (X54-5/7.1)</td>
+      <td>BioLegend</td>
+      <td>Cat # 139306, RRID:AB_11219391</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>MHC Class II (I-A/I-E) Af700 Rat monoclonal (M5/114.15.2)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # 56-5321-82, RRID:AB_494009</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>iNOS APC Rat monoclonal (CXNFT)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # 17-5920-82, RRID:AB_2573244</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Podoplanin gp38 PerCP-ef710 Syrian hamster monoclonal (eBio8.1.1)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat # 46-5381-82, RRID:AB_2848339</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD31 BV605 Rat monoclonal (390)</td>
+      <td>BioLegend</td>
+      <td>Cat # 102427, RRID:AB_2563982</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant murine IL-33</td>
+      <td>Peprotech</td>
+      <td>Cat # 210–33</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>IL-33 ELISA</td>
+      <td>R and D Biosystems</td>
+      <td>Cat # DY3626</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 B6 (C57BL/6NTac) (Taconic #B6-F), Rag1−/− (B6.129S7-Rag1tm1Mom/J) (Jackson #002216), and Rag2−/−; Il2rg−/−(C57BL/6NTac.Rag2tm1Fwa;II2rgtm1Wjl) (Taconic #4111) mice were purchased from their respective vendors. Il33−/− (Il33tm1.1Arte) (Jackson #350163) mice were provided by MedImmune (now AstraZeneca). Il33fl/fl-eGFP (B6(129S4)-Il33tm1.1Bryc/J), originally generated by Paul Bryce, were obtained locally from Dr. De’Broski Herbert. IL-33R KO (Il1rl1−/−) mice, originally derived by Andrew McKenzie (Townsend et al., 2000) (University of Cambridge) and back-crossed to C57BL/6 by Peter Nigrovic (Harvard University), were provided by Edward Behrens at Children’s Hospital of Philadelphia. Rag1−/−; Il1rl1−/− mice were generated by crossing the knockouts described above. Analysis of these uninfected KO mice revealed no obvious developmental defects, while their immune compartments appeared comparable to Rag1−/−; Il1rl1+/+ mice in cell numbers and phenotype at homeostasis. Mice were housed in a specific pathogen-free environment at the University of Pennsylvania School of Veterinary Medicine and treated according to protocols approved by the Institutional Animal Care and Use Committee at the University. Male and female (age 8–12 weeks at start of experiment) mice were used for all experiments.
 
-## Parasites and infection
+### Parasites and infection
 
 The ME49 strain of T. gondii was maintained by serial passage in Swiss Webster mice and used to generate banks of chronically infected CBA/ca mice, which were a source of tissue cysts for these experiments. Pru-derived transgenic parasites and CPS parasites were maintained in cultured human fibroblasts in DMEM supplemented with 10% FBS. For CPS parasites, supplemental uracil was also added to media. For all experiments presented here, mice were infected intraperitoneally (i.p.) with 20 cysts (ME49), or 1 × 104 tachyzoites (Pru), or 2 × 105 tachyzoites (CPS). Soluble toxoplasma antigen was prepared from tachyzoites of the RH strain as described previously (Hauser et al., 1983). For quantitative PCR (qPCR), DNA was isolated from tissues using the DNEasy DNA isolation kit (Qiagen) followed by qPCR measuring the abundance of the T. gondii gene B1 using the primers 5′-TCTTTAAAGCGTTCGTGGTC-3′ (forward) and 5′-GGAACTGCATCCGTTCATGAG-3′ (reverse).
 
-## Histology
+### Histology
 
 For IHC detection of T. gondii and iNOS, tissues were fixed in 10% formalin solution and then paraffin embedded and sectioned. Sections were deparaffinized, rehydrated, Ag retrieved in 0.01 M sodium citrate buffer (pH 6.0), and endogenous peroxidase blocked by 0.3% H2O2 in PBS. After blocking with 2% normal goat serum, the sections were incubated either with rabbit anti-Toxoplasma Ab, anti-INOS Ab, or isotype control. The sections were then incubated with biotinylated goat anti-rabbit IgG (Vector, Burlingame, CA), and ABC reagent was applied (Vectastain ABC Kit; Vector Labs). Then DAB substrate (Vector Labs) was used to visualize specific staining according to manufacturer’s instructions, and slides were counterstained with hematoxylin. To quantify parasite burden in the peritoneal exudate, 100,000 cells were used to prepare cytospins. Cells were methanol fixed and then stained with the Protocol Hema-3 Stain Set, and the ratio of infected cells to total cells in a field of view was calculated, with a minimum of 200 cells counted per sample. For whole tissue mount immunofluorescence staining, omenta were harvested from mice and fixed in 1% PFA overnight at 4°C. After rinsing, tissue was blocked using 10% bovine serum albumin (BSA), 0.5% normal rat serum (Invitrogen), and 1 µg/ml 2.4G2 (BD) in PBS for 1 hr at room temperature. Omenta were next incubated in PBS containing primary antibodies at 4°C for 3 days and subsequently rinsed with PBS overnight. Antibodies used for this analysis: ERTR7 (sc-73355, Santa Cruz Biotechnology), F4/80 (T45-2342, BD), and CD45 (30-F11, Biolegend).
 
 Immunofluorescence combining IL-33 (R and D AF3626) and CD45 (Biolegend 30-F11) antibodies was performed using the OPAL Automation Multiplex IHC Detection Kit (Akoya Biosciences, Cat # 160 #NEL830001KT) implemented onto a BOND Research Detection System (DS9455). All widefield images were obtained on a Leica DM6000 microscope using the Leica Imaging Suite software. Confocal images were acquired on a Leica STED 3× Super-resolution microscope. Image analysis was performed using FIJI and Imaris software packages.
 
-## Generation of lymphokine-activated killer cells
+### Generation of lymphokine-activated killer cells
 
 Lymphokine-activated killer cells (LAKs) were generated from Rag1−/−bone marrow as described previously (Hunter et al., 1997; Wherry et al., 1991). Briefly, whole bone marrow was plated at 1 M cells/ml in cRPMI +400 U/ml Proleukin human IL-2 (Peprotech). Fresh IL-2 was added every third day, and cells were used for experiments between days 7 and 10.
 
-## Antibody and cytokine reagents
+### Antibody and cytokine reagents
 
 For in vitro assays, recombinant IL-33 was purchased from Peprotech (Cat # 210–33 Rocky Hill, NJ). For in vivo treatment experiments, recombinant IL-33 (MedImmune), which was modified to be resistant to oxidation, was used, as described previously (Cohen et al., 2015). IL-33 DuoSet ELISA was purchased from R and D Biosystems (Cat # DY3626, Minneapolis, MN). For flow cytometry, the following combinations of antibodies were used: for analysis of NK cells: CD335 NKp46 (29A1.4, eBioscience), NK-1.1 (PK136, Biolegend), IFN-γ (XMG1.2, eBioscience), CD200R1 (OX110, eBioscience), IL-33R (DJ8, MD Biosciences), T-bet (4B10, Biolegend), and EOMES (Dan11mag, eBioscience). For analysis of myeloid cells: CD11b (M1/70, eBioscience), CD11c (N418, Biolegend), Ly6c (HK1.4, Biolegend), Ly6g (1A8, Biolegend), CCR2 CD192 (SA203G11, Biolegend), CD64 FcgRI (X54-5/7.1, Biolegend), MHC II I-A/I-E (m5/114.15.2, eBioscience), iNOS (CXNFT, eBioscience), IL-33R (DJ8, MD Biosciences). For analysis of stromal cells: gp38/PDPN (8.1.1, Biolegend), CD31 (390, Biolegend). Flow cytometry was performed on BD Fortessa and X-50 cytometers, and data analysis was performed using Flowjo nine and Flowjo 10 (Treestar), and Prism 7 and 8 (Graphpad). Uniform Manifold Approximation and Projection for Dimension Reduction (uMAP) analysis was performed using the uMAP plug-in (version: 1802.03426, 2018, 2017, Leland McInness) for Flowjo (Version 10.53). The Euclidean distance function was utilized with a nearest neighbor score of 15 and a minimum distance rating of 0.5.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 All data are expressed as means ± standard error of the mean (SEM). For comparisons between two groups, the Student’s t-test was applied. For data with more than two data sets, one-way ANOVA coupled with Tukey’s multiple comparisons test was applied. Statistical details are indicated in figure legends.

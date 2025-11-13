@@ -14,18 +14,18 @@
 
 ### Affiliations
 
-1. https://ror.org/0130frc33 Department of Biochemistry and Biophysics, School of Medicine, University of North Carolina at Chapel Hill Chapel Hill United States
-2. https://ror.org/04s5mat29 Department of Biochemistry and Microbiology, University of Victoria Victoria Canada
-3. https://ror.org/0130frc33 Division of Chemical Biology and Medicinal Chemistry, School of Pharmacy, University of North Carolina at Chapel Hill Chapel Hill United States
-4. https://ror.org/0130frc33 Lineberger Comprehensive Cancer Center, School of Pharmacy, University of North Carolina at Chapel Hill Chapel Hill United States
-5. https://ror.org/0130frc33 Department of Pharmacology, School of Medicine, University of North Carolina at Chapel Hill Chapel Hill United States
-6. https://ror.org/03rmrcq20 Department of Biochemistry and Molecular Biology, The University of British Columbia Vancouver Canada
+1. Department of Biochemistry and Biophysics, School of Medicine, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+2. Department of Biochemistry and Microbiology, University of Victoria Victoria Canada ([ROR:04s5mat29](https://ror.org/04s5mat29))
+3. Division of Chemical Biology and Medicinal Chemistry, School of Pharmacy, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+4. Lineberger Comprehensive Cancer Center, School of Pharmacy, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+5. Department of Pharmacology, School of Medicine, University of North Carolina at Chapel Hill Chapel Hill United States ([ROR:0130frc33](https://ror.org/0130frc33))
+6. Department of Biochemistry and Molecular Biology, The University of British Columbia Vancouver Canada ([ROR:03rmrcq20](https://ror.org/03rmrcq20))
 
 † Corresponding author
 
 ## Abstract
 
-Numerous receptor tyrosine kinases and immune receptors activate phospholipase C-γ (PLC-γ) isozymes at membranes to control diverse cellular processes including phagocytosis, migration, proliferation, and differentiation. The molecular details of this process are not well understood. Using hydrogen-deuterium exchange mass spectrometry, we show that PLC-γ1 is relatively inert to lipid vesicles that contain its substrate, phosphatidylinositol 4,5-bisphosphate (PIP 2 ), unless first bound to the kinase domain of the fibroblast growth factor receptor (FGFR1). Exchange occurs throughout PLC-γ1 and is exaggerated in PLC-γ1 containing an oncogenic substitution (D1165H) that allosterically activates the lipase. These data support a model whereby initial complex formation shifts the conformational equilibrium of PLC-γ1 to favor activation. This receptor-induced priming of PLC-γ1 also explains the capacity of a kinase-inactive fragment of FGFR1 to modestly enhance the lipase activity of PLC-γ1 operating on lipid vesicles but not a soluble analog of PIP 2 and highlights potential cooperativity between receptor engagement and membrane proximity. Priming is expected to be greatly enhanced for receptors embedded in membranes and nearly universal for the myriad of receptors and co-receptors that bind the PLC-γ isozymes.
+Numerous receptor tyrosine kinases and immune receptors activate phospholipase C-γ (PLC-γ) isozymes at membranes to control diverse cellular processes including phagocytosis, migration, proliferation, and differentiation. The molecular details of this process are not well understood. Using hydrogen-deuterium exchange mass spectrometry, we show that PLC-γ1 is relatively inert to lipid vesicles that contain its substrate, phosphatidylinositol 4,5-bisphosphate (PIP2), unless first bound to the kinase domain of the fibroblast growth factor receptor (FGFR1). Exchange occurs throughout PLC-γ1 and is exaggerated in PLC-γ1 containing an oncogenic substitution (D1165H) that allosterically activates the lipase. These data support a model whereby initial complex formation shifts the conformational equilibrium of PLC-γ1 to favor activation. This receptor-induced priming of PLC-γ1 also explains the capacity of a kinase-inactive fragment of FGFR1 to modestly enhance the lipase activity of PLC-γ1 operating on lipid vesicles but not a soluble analog of PIP2 and highlights potential cooperativity between receptor engagement and membrane proximity. Priming is expected to be greatly enhanced for receptors embedded in membranes and nearly universal for the myriad of receptors and co-receptors that bind the PLC-γ isozymes.
 
 ## Introduction
 
@@ -39,13 +39,21 @@ PLC-γ1 and PLC-γ2 contain a distinctive array of regulatory domains that contr
 
 The X-ray crystal structure of essentially full-length PLC-γ1 highlights how the regulatory array integrates these myriad functions (Hajicek et al., 2019) (Figure 1A–B). In the autoinhibited state, the array is positioned directly on top of the catalytic core of the enzyme. This arrangement, coupled with the overall electronegative character of the array effectively blocks the lipase active site from spuriously engaging the plasma membrane. Two major interfaces anchor the regulatory array to the catalytic core. The first interface is formed between the cSH2 domain and the C2 domain, and essentially buries the surface of the cSH2 domain that engages the region encompassing pTyr783. The second interface is comprised of the sPH domain and the catalytic TIM barrel. More specifically, the sPH domain sits atop the hydrophobic ridge in the TIM barrel, effectively capping the ridge and preventing its insertion into membranes, a requisite step in the interfacial activation of PLC isozymes. In contrast, the phosphotyrosine-binding pocket on the nSH2 domain, as well as the polyproline-binding surface on the SH3 domain are solvent exposed, implying that these elements are pre-positioned to efficiently engage activated RTKs and adaptor proteins, respectively. The overall architecture of the regulatory array is consistent with an enzyme that is unable to access membrane-resident substrate in the basal state. Upon activation of an RTK, e.g., FGFR1, the nSH2 domain mediates recruitment of PLC-γ1 to the phosphorylated tail of the receptor, and PLC-γ1 is subsequently phosphorylated by FGFR1 on Tyr783. pTyr783 then binds to the cSH2 domain, unlatching it from the catalytic core. This binding event is likely coupled to additional structural rearrangements of the regulatory array with respect to the catalytic core that ultimately allows the active site to access PIP2 embedded in membranes (Hajicek et al., 2019; Liu et al., 2020).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/77809/elife-77809-fig1-v1.jpg)
+
+**Figure 1.:** (A) Domain schematic of PLC-γ1. Full-length PLC-γ1 possesses a set of regulatory domains inserted within its catalytic core. (B) Structure of PLC-γ1. In the basally autoinhibited state shown here (PDB ID: 6PBC), the regulatory domains prevent access to membranes by the catalytic core demarked by a Ca2+ cofactor (orange). His335 is also within the catalytic core and its substitution (H335A) renders the isozyme catalytically inactive (yellow). Asp1165 substitution (D1165H) disrupts the interface between the core and the regulatory array leading to a constitutively active lipase (also yellow). (C) Relative levels of deuterium incorporation are colored on the structure of PLC-γ1 (residue 21–1215) according to the legend at either 3 or 10,000 s of D2O exposure.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/77809/elife-77809-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Specific activities measured with the membrane-embedded substrate XY-69. XY-69 (0.5 μM) was incorporated into liposomes containing phosphatidylethanolamine:phosphatidylinositol 4,5-bisphosphate (PE:PIP2) (80:20) prior to addition of 10 nM of wild-type (WT) PLC-γ1 or PLC-γ1 (H335A). Phospholipase activities were determined by quantifying XY-69 hydrolysis in real time and presented as the mean ± SD of three independent experiments, each with three or more technical replicates. Statistical significance was determined with a t-test represented as *** for a p<0.05. (B) Membrane flotation assay. Indicated proteins were incubated with liposomes of PE:PIP2:nitro-2–1,3-benzoxadiazol-4-yl-PE (89.8:10:0.2) and centrifuged in a sucrose gradient (0–30%). After centrifugation, top (T), middle (M), and bottom (B) fractions were collected followed by SDS-PAGE and staining with Coomassie Brilliant Blue.
+
 Although the core aspects of autoinhibition and phosphorylation-dependent regulation are relatively well established, less is known about the chronology of events subsequent to receptor binding that result in lipase activation. A comparison of the structure of autoinhibited PLC-γ1 and a structure of the tandem SH2 domains of PLC-γ1 bound to the phosphorylated kinase domain of FGFR1 (Bae et al., 2009) suggests a cogent sequence of events. In autoinhibited PLC-γ1, kinase engagement by the nSH2 domain would partially expose the surface of the cSH2 domain that binds pTyr783. Binding of pTyr783 would then fully displace the cSH2 domain from the catalytic core, presumably initiating and propagating the larger structural rearrangements that disrupt the remainder of the autoinhibitory interface, culminating in membrane engagement. Cooperativity between nSH2 and cSH2 domains of PLC-γ1 has been described previously (Bunney et al., 2012); however, the functional consequences of this cooperativity were linked to a reduction in the affinity for FGFR1 with no corresponding effect on lipase activity.
 
 Here, we use hydrogen-deuterium exchange mass spectrometry (HDX-MS) to define changes in PLC-γ1 dynamics upon engagement of PIP2-containing liposomes and the phosphorylated kinase domain of FGFR1. PLC-γ1 was largely quiescent in the presence of liposomes. In contrast, rapid and widespread changes in exchange kinetics were observed in a PLC-γ1-FGFR1 complex. These changes were centered on the nSH2 domain and also encompassed large swaths of the autoinhibitory interface. Changes in this exchange profile were further amplified in PLC-γ1 bound to both FGFR1 and liposome. These results are consistent with in vitro lipase assays demonstrating that engagement of FGFR1 was sufficient to elevate PLC-γ1 activity, and suggest a model in which receptors and membranes act together to prime the lipase for full activation.
 
 ## Results
 
-## Widespread changes in the hydrogen-deuterium exchange of PLC-γ1 by kinase and liposomes
+### Widespread changes in the hydrogen-deuterium exchange of PLC-γ1 by kinase and liposomes
 
 In order to assess the dynamics of PLC-γ1 using HDX-MS, it was first necessary to establish optimized conditions for protein coverage, a suitable time course of H/D exchange and constructs suitable for membrane binding. These parameters were addressed in two steps. First, optimization of HDX-MS conditions allowed for the generation of 254 peptides covering ~92% of the PLC-γ1 sequence, with an average peptide length of 13 amino acids. H/D exchange was carried out at five time points (3, 30, 300, 3000, and 10,000 s), which allowed for the interrogation of differences in both highly dynamic and stable regions of secondary structure (Figure 1C). Second, it was necessary to design and ensure a system that would allow PLC-γ1 to interact with PIP2-containing liposomes over the time course of the exchange reaction without the catalytic conversion of the liposomes. This outcome was accomplished by introduction of a single substitution (H335A) into PLC-γ1 of a catalytic residue necessary for PIP2 hydrolysis (Figure 1B). Although several substitutions of active site residues are known to render PLCs catalytically inactive (Ellis et al., 1998), His335 was specifically chosen for its role in the enzymatic process. More specifically, based on analogy to PLC-δ1, His335 is predicted to coordinate the incoming water molecule required for PIP2 hydrolysis; it is predicted to be required during the transition state but should have little effect on the affinity of PLC-γ1 for PIP2 as a substrate. In addition, His335 does not ligate the calcium ion cofactor in the crystal structure of PLC-γ1 and for this reason is unlikely to perturb the overall structure of the active site.
 
@@ -53,7 +61,27 @@ Consequently, PLC-γ1 (H335A) was purified and its lack of catalytic activity ve
 
 Once we determined PLCγ-1 was amenable to studies by HDX-MS, changes in the hydrogen-deuterium exchange profile of PLC-γ1 (H335A) were measured in response to either: (i) PIP2-containing lipid vesicles (90% PE/10% PIP2), (ii) the kinase domain of FGFR1 (FGFR1K) phosphorylated at Tyr766, or (iii) both vesicles and phosphorylated kinase (Figure 2). Tyrosine 766 is a major site of phosphorylation in FGFR1 and phosphorylated Tyr766 directly binds PLC-γ1 to recruit it to membranes in cells (Eswarakumar et al., 2005; Mohammadi et al., 1991). Phosphorylated Tyr766 of FGFR1K is also the major site of interaction between the kinase domain and the tandem SH2 array of PLC-γ1 in a crystal structure of these fragments in complex (Bae et al., 2009). Consequently, the kinase domain of FGFR1 was mutated to remove minor sites of tyrosine phosphorylation and to render the kinase resistant to phosphorylation-dependent activation before phosphorylation of Tyr766 and formation of a stable complex with PLC-γ1 (H335A) (Figure 2—figure supplement 1, Figure 2—figure supplement 2).
 
-## FGFR1K potentially disrupts autoinhibition
+![Figure 2.](https://cdn.elifesciences.org/articles/77809/elife-77809-fig2-v1.jpg)
+
+**Figure 2.:** Significant differences in deuterium incorporation are mapped on the structure of PLC-γ1 (H335A) according to the legend for the following three states: alone versus bound to phosphorylated kinase domain of fibroblast growth factor receptor (FGFR1K) (A), alone versus in the presence of liposomes containing phosphatidylethanolamine:phosphatidylinositol 4,5-bisphosphate (90:10) (B), or alone versus bound to both pFGFR1K and liposomes (C). In addition, Figure 2—figure supplement 4 shows differences in exchange of PLC-γ1 (H335A) bound to either liposomes or pFGFR1K relative to a final state with PLC-γ1 (H335A) bound to both liposomes and pFGFR1K. Significant differences in any peptide required three specific conditions: greater than both a 5% and 0.4 Da difference in exchange at any time point (3, 30, 300, 3000, and 10,000 s), and a two-tailed, unpaired t-test of p<0.01. The #D difference for each condition is graphed below, which shows the total difference in deuterium incorporation over the entire hydrogen-deuterium exchange time course, with each point indicating a single peptide (error shown as SD [n=3]). Each circle represents the central residue of a corresponding peptide with the full deuterium exchange information for all peptides available in the source data. Individual peptides with a significant difference as defined above are colored red.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77809/elife-77809-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Schematic representation of the kinase domain (residues 458–774) of FGFR1K. The six tyrosines mutated to phenylalanine to prevent phosphorylation and render the kinase resistant to phosphorylation-dependent activation are listed. Phosphorylation of Tyr766 is shown in red. (B) Time course of phosphorylation (left) and preparative phosphorylation (right) of catalytically inactive FGFR1K (100 μM) using equimolar concentrations of an equivalent, catalytically active fragment. Reactions were terminated by separating the two forms of FGFR1K using affinity chromatography; native PAGE was subsequently used to separate phosphorylated forms of the catalytically inactive version followed by staining with Coomassie Brilliant Blue. Preparative phosphorylation was carried out for 100 min. (C) Catalytically inactive FGFR1K was phosphorylated specifically at Tyr766 as determined by LC-MS/MS.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/77809/elife-77809-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) PLC-γ1 (H335A) or PLC-γ1 (H335A+D1165H) were mixed with a two-fold molar excess of phosphorylated FGFR1K and isolated by size exclusion chromatography; representative chromatograms are shown with fractions visualized after SDS-PAGE and staining with Coomassie Brilliant Blue (insets). (B) Final complexes were visualized similarly. For reference, a 1:1 mixture of PLC-γ1 and FGFR1K was also visualized. (C) Stability of the complex of PLC-γ1 (H335A) and FGFR1K was assessed by size exclusion chromatography after 8 hr on ice (red curve). Blue curve is duplicated from panel A and shown for reference.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/77809/elife-77809-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Structural superimposition of autoinhibited PLC-γ1 (PDB code: 6PBC) and the tandem SH2 domains of PLC-γ1 (light pink) bound to FGFR1K (green; PDB code: 3GQI). Structures superimposed using the nSH2 domains only. Autoinhibited PLC-γ1 is colored gray with regions of differential exchange upon binding FGFR1K colored as in Figure 2A. AMPPCP is a non-hydrolyzable analog of ATP. Red arrows highlight changes in the position of loops within the tandem SH2 domains.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/77809/elife-77809-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Differences in deuterium incorporation was measured for PLC-γ1 (H335A) bound to FGFR1K and in the presence of liposomes containing phosphatidylethanolamine:phosphatidylinositol 4,5-bisphosphate (PE:PIP2; 90:10). Differences in deuterium incorporation were calculated relative to PLC-γ1 (H335A) in the presence of PE:PIP2 (90:10) liposomes (A) or PLC-γ1 (H335A) bound to pFGFR1K (B). Peptides that showed significant difference in deuterium incorporation (>5% and >0.4 Da difference in exchange at any time point, with a two-tailed, unpaired t-test of p<0.01) are mapped onto the structure. For each comparison, the difference in the number of incorporated deuterons was averaged over all time points and shown below the structures as the mean ± SD (n=3). Each circle represents the central residue of a corresponding peptide; red circles indicate peptides with a significant difference between conditions. (C) Percent deuterium incorporation for select peptides spanning PLC-γ1 (H335A). Percent deuterium incorporation is shown for PLC-γ1 (H335A) alone (Apo; black line), bound to FGFR1K (red line), in the presence of PE:PIP2 (90:10) liposomes (green line), and with both kinase and liposomes (blue line). Percent deuterium incorporation is the mean ± SD (n=3), with most SD smaller than the size of the point. The full deuterium incorporation data for all peptides are shown in the source data.
+
+#### FGFR1K potentially disrupts autoinhibition
 
 There were widespread, significant differences in H/D exchange that occurred in PLC-γ1 (H335A) upon binding phosphorylated FGFR1K (Figure 2A). For all reported significant changes in H/D exchange, three specific conditions had to be met: greater than both a 5% and 0.4 Da difference in exchange at any time point, and a two-tailed, unpaired t-test of p<0.01. The full HDX data, and differences are reported in the source data.
 
@@ -67,7 +95,7 @@ In contrast to the widespread changes in the exchange profile of PLC-γ1 (H335A)
 
 Cooperation between FGFR1 and membranes in the regulation of PLC-γ1 is also consistent with the hydrogen-deuterium exchange pattern of PLC-γ1 observed in the presence of both FGFR1K and liposomes (Figure 2C, Figure 2—figure supplement 4). Overall, similar patterns of differences in exchange are observed for the same regions of PLC-γ1 affected by either component alone. Indeed, the overlap of the exchange profiles is rather striking and is a testament to the reproducibility of the experimental technique. However, when both FGFR1K and liposomes were present, there were enhanced increases in exchange in PLC-γ1 compared to either condition alone. These increases manifest primarily within the SH3 domain and the catalytic TIM barrel. Overall, HDX-MS data suggest a modest, synergistic cooperation between FGFR1K and liposomes to increase the conformational flexibility of the regulatory domains relative to the catalytic core of PLC-γ1.
 
-## Oncogenic substitution of PLC-γ1 mimics engagement by kinase and liposomes
+### Oncogenic substitution of PLC-γ1 mimics engagement by kinase and liposomes
 
 The PLC-γ1 interface between its regulatory domains and catalytic core is frequently mutated in certain cancers and immune disorders (Koss et al., 2014). We have previously proposed that these mutations likely disrupt this interface leading to elevated, basal phospholipase activity (Hajicek et al., 2019). If true, oncogenic substitutions at this interface in PLC-γ1 might recapitulate changes in deuterium exchange in PLC-γ1 observed upon binding phosphorylated FGFR1K. This idea was tested using HDX-MS and PLC-γ1 (H335A) harboring an additional substitution (D1165H) frequently found in leukemias and lymphomas (Kataoka et al., 2015) (Figure 3). To make sure that there were no complications from the use of the H335A mutant, we also carried out HDX-MS experiments comparing D1165 versus D1165H in a catalytically active background (H335), which showed very similar differences in exchange upon mutation of D1165 (Figure 1—source data 1).
 
@@ -79,9 +107,21 @@ Asp1165 resides in a loop between strands β5 and β6 of the C2 domain where it 
 
 In comparison to catalytically inactive PLC-γ1 harboring H335A, the same version of PLC-γ1 with the addition of D1165H exhibited increased deuterium exchange throughout the interface between the regulatory domains and the catalytic core (Figure 3). In the immediate vicinity of D1165H, deuterium exchange increased within the β6 strand of the C2 domain suggesting that Asp1165 serves to support the position of the β6 strand. This idea is consistent with previous molecular dynamics simulations of PLC-γ1 that highlighted an unraveling of the β6 strand upon introduction of D1165H (Hajicek et al., 2019). The previous molecular dynamics simulations also highlighted a relatively large (~10 Å) movement of the cSH2 upon collapse of the β6 strand, and this movement may be reflected in the increased exchange of the nearby αB helix and αB/βG loop of the cSH2 domain. Other regions of increased exchange are more distant and include portions of the first EF hand, sPH domain, and TIM barrel. Overall, regions of increased exchange in catalytically inactive PLC-γ1 (D1165H) overlap well with regions of increased exchange in PLC-γ1 (H335A) when it engages phosphorylated FGFR1K (Figure 2A). This comparison further supports the notion that disengagement of the catalytic core from the regulatory domains will enhance lipase activity, with oncogenic mutations and binding to phosphorylated FGFR1K mediating this process. Indeed, it should be noted that regions of increased exchange are more extensive in the complex of PLC-γ1 and FGFR1K suggesting that oncogenic mutations cannot fully recapitulate activation by phosphorylated FGFR1K.
 
-## Oncogenic substitution uncovers functional cooperativity within PLC-γ1
+### Oncogenic substitution uncovers functional cooperativity within PLC-γ1
 
 Constitutively active variants of PLC-γ1 and PLC-γ2 have untapped reserves of lipase activity. For example, although PLC-γ1 (D1165H) possesses exceptionally high basal lipase activity, this activity can be further enhanced in cells by the epidermal growth factor receptor suggesting that normal cellular regulation is partially preserved in constitutively active forms of PLC-γ1 (Hajicek et al., 2019). To test this idea, changes in the hydrogen-deuterium exchange profile of PLC-γ1 (H335A+D1165H) were determined in response to phosphorylated FGFR1K, liposomes, or both (Figure 4, Figure 4—figure supplement 1, Figure 4—figure supplement 2). In comparison to the identical measurements described earlier using PLC-γ1 (H335A), these measurements are particularly revealing for several reasons.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/77809/elife-77809-fig4-v1.jpg)
+
+**Figure 4.:** Differences in deuterium incorporation were measured for PLC-γ1 (H335A+D1165H) in three states: alone versus bound to phosphorylated kinase domain of fibroblast growth factor receptor (pFGFR1K) (A), alone versus in the presence of phosphatidylethanolamine:phosphatidylinositol 4,5-bisphosphate (90:10) liposomes (B), or alone versus with both pFGFR1K and liposomes present (C). In addition, Figure 4—figure supplement 1 shows differences in exchange of PLC-γ1 (H335A+D1165H) bound to either liposomes or pFGFR1K relative to a final state with PLC-γ1 (H335A+D1165H) bound to both liposomes and pFGFR1K. Differences in deuterium exchange for a series of time points (3, 30, 300, 3000, and 10,000 s) were calculated relative to PLC-γ1 (H335A+D1165H) alone and peptides with significant differential exchange at any time point (both a 5% and 0.4 Da difference in exchange at any time point, and a two-tailed, unpaired t-test of p<0.01) mapped onto the structure. The #D difference for each condition is graphed below, which shows the total difference in deuterium incorporation over the entire hydrogen-deuterium exchange time course, with each point indicating a single peptide (error shown as SD [n=3]); peptides with significant differences between conditions as defined above are red.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77809/elife-77809-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Deuterium incorporation was measured for PLC-γ1 (H335A+D1165H) bound to FGFR1K in the presence of phosphatidylethanolamine:phosphatidylinositol 4,5-bisphosphate (PE:PIP2; 90:10) liposomes. Differences in deuterium incorporation were calculated relative to PLC-γ1 (H335A+D1165H) in the presence of PE:PIP2 liposomes (A) or bound to pFGFR1K (B). Peptides that showed significant H/D exchange differences (by the following criteria: >5% and >0.4 Da difference in exchange at any time point [3, 30, 300, 3000, and 10,000 s], with a two-tailed, unpaired t-test of p<0.01) are mapped onto the structure. For each comparison, the difference in the number of incorporated deuterons was averaged over all time points and shown below the structures as the mean ± SD (n=3). Each circle represents the central residue of a corresponding peptide; red circles indicate peptides with a significant difference between conditions. (C) Percent deuterium incorporation for select peptides of PLC-γ1 (H335A+D1165H) plotted as the mean ± SD (n=3) for the indicated conditions. Most error bars are smaller than the size of the corresponding point. The full deuterium incorporation data for all peptides are shown in the source data.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/77809/elife-77809-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Differences in deuterium incorporation was measured for PLC-γ1 (H335A) or PLC-γ1 (H335A+D1165H) with both kinase and liposomes. Differences in deuterium incorporation were calculated relative to PLC-γ1 (H335A) alone (A) or to PLC-γ1 (H335A+D1165H) alone (B). Peptides that showed significant H/D exchange differences (by the following criteria: >5% and >0.4 Da difference in exchange at any time point [3, 30, 300, 3000, and 10,000 s], with a two-tailed, unpaired t-test of p<0.01) are mapped onto the structure. For each comparison, the difference in the number of incorporated deuterons was averaged over all time points and shown below the structures as the mean ± SD (n=3). Each circle represents the central residue of a corresponding peptide; red circles indicate peptides with a significant difference between conditions. Figure duplicates portions of Figures 2 and 4 to provide a direct comparison of the effects of FGFR1 and liposomes on the exchange profiles of PLC-γ1 (H335A) and (H335A+D1165H).
 
 First, phosphorylated FGFR1K produced almost identical changes in the exchange profiles of the two forms of PLC-γ1 as highlighted in the comparison of Figures 2A and 4A (see also Figure 4—figure supplement 1). Not only does this result further attest to the reproducibility of the experimental design, it also strongly suggests that WT and constitutively active forms of PLC-γ1 respond similarly to engagement by kinases.
 
@@ -93,7 +133,7 @@ Finally, the exchange profile of PLC-γ1 (H335A+D1165H) upon the addition of bot
 
 Overall, the exchange results indicate that the oncogenic substitution, D1165H, leads to a much more conformationally flexible PLC-γ1 that more readily interacts with lipid bilayers, possibly in a fashion that mirrors interfacial catalysis by PLC isozymes. This process would require a large movement by the regulatory domains as suggested by the icons in Figure 4.
 
-## Phosphorylated FGFR1K increases PLC-γ1 specific activity
+#### Phosphorylated FGFR1K increases PLC-γ1 specific activity
 
 The HDX kinetics described above strongly suggest that the initial engagement of PLC-γ isozymes by kinases may be sufficient to enhance phospholipase activity irrespective of subsequent phosphorylation. This idea was tested using XY-69 (Huang et al., 2018), a fluorescent analog of PIP2, embedded in lipid vesicles (Figure 5). PLCs readily hydrolyze XY-69 leading to increased fluorescence that can be followed in real time. As shown previously, when XY-69 in lipid vesicles is mixed with PLC-γ1, the specific activity of the phospholipase is low, indicative of basal autoinhibition. This activity remained unchanged upon pre-incubation of PLC-γ1 with catalytically inactive FGFR1K that was not phosphorylated. In contrast, when PLC-γ1 was pre-incubated with catalytically inactive FGFR1K phosphorylated at Tyr766 to promote complex formation with PLC-γ1, the specific lipase activity of PLC-γ1 increased approximately three-fold. These results indicate that kinase engagement by PLC-γ1 is sufficient to enhance lipase activity and supports the proposition that PLC-γ1 is allosterically modulated by FGFR1K upon complex formation and irrespective of the phosphorylation state of the lipase.
 
@@ -125,55 +165,191 @@ Up to this point, we have considered only membrane recruitment and activation of
 
 ## Materials and methods
 
-## Molecular cloning
+**Key resources table**
 
-## Phospholipase C-γ1
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type(species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>NEB 5-alpha</td>
+      <td>New England BioLabs</td>
+      <td>Cat# C2987I</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>DH10Bac</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 10361012</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (Trichoplusia ni)</td>
+      <td>HighFive</td>
+      <td>Invitrogen</td>
+      <td>Cat# B85502RRID:CVCL_C190</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFB-LIC2-PLC-γ1 (21–1215) (plasmid)</td>
+      <td>PMID:31889510</td>
+      <td></td>
+      <td>Vector is a modified version of pFastBacHT1 containing His6 tag and TEV cleavage sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFB-LIC2-PLC-γ1(21–1215) H335A (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector is a modified version of pFastBacHT1 containing His6 tag and TEV cleavage sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFB-LIC2-PLC-γ1(21–1215) H335A, D1165H (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector is a modified version of pFastBacHT1 containing His6 tag and TEV cleavage sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUC57-Amp-FGFR1K(458-774) Y463F, Y583F, Y585F, Y730F (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Cloning vector synthesized by Genewiz</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFB-LIC2-FGFR1K(458-774) Y463F, Y583F, Y585F, Y730F (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector is a modified version of pFastBacHT1 containing His6 tag and TEV cleavage sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFB-LIC2-FGFR1K(458-774) Y463F, Y583F, Y585F, Y730F, Y653F, Y654F (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector is a modified version of pFastBacHT1 containing His6 tag and TEV cleavage sequence</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pFB-LIC2-FGFR1K(458-774) Y463F, Y583F, Y585F, Y730F, Y766F (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Vector is a modified version of pFastBacHT1 containing His6 tag and TEV cleavage sequence</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-α-phosphatidylethanolamine (Liver, Bovine)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat# 840,026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-α-phosphatidylinositol-4,5-bisphosphate (Brain, Porcine) (ammonium salt)</td>
+      <td>Avanti Polar Lipids</td>
+      <td>Cat# 840,046</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PEAKS</td>
+      <td>Bioinformatics Solutions Inc (BSI)</td>
+      <td></td>
+      <td>Version 7 (PEAKS7)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HDExaminer</td>
+      <td>Sierra Analytics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PyMOL</td>
+      <td>PyMOL by Schrödinger</td>
+      <td>RRID:SCR_000305</td>
+      <td>Version 2.5.2</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>WH-15</td>
+      <td>PMID:21158426</td>
+      <td></td>
+      <td>Fluorescent PIP2 analogue, soluble</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>XY-69</td>
+      <td>PMID:29263090</td>
+      <td></td>
+      <td>Fluorescent PIP2 analogue, membrane-associated</td>
+    </tr>
+  </tbody>
+</table>
+
+### Molecular cloning
+
+#### Phospholipase C-γ1
 
 Transfer vector (pFB-LIC2) encoding WT rat PLC-γ1 (residues 21–1215) and PLC-γ1 (D1165H) have been previously described (Hajicek et al., 2019). The H335A mutation that renders PLC-γ1 catalytically inactive was introduced into the transfer vector encoding WT PLC-γ1 (residues 21–1215) or PLC-γ1 (D1165H) using standard primer-mediated mutagenesis (Agilent Technologies; QuikChange site-directed mutagenesis manual). Mutagenesis was confirmed by automated DNA sequencing of the open reading frame. The PLCs encoded by these constructs are referred as PLC-γ1 (H335A) and PLC-γ1 (H335A+D1165H), respectively.
 
-## Kinase domain of the fibroblast growth factor receptor
+#### Kinase domain of the fibroblast growth factor receptor
 
 Plasmid DNA encoding the kinase domain (residues 458–774) of human fibroblast growth factor receptor 1 (FGFR1) with four substitutions (Y463F, Y583F, Y585F, Y730F) that eliminate sites of phosphorylation was synthesized by Genewiz (South Plainfield, NJ). The plasmid DNA encoding this variant of FGFR1K was then sub-cloned from a pUC57-Amp vector to a modified pFastBac-HT vector (pFB-LIC2) using a ligation-independent cloning strategy. The baculovirus expression vector, pFB-LIC2, incorporates a His6 tag and a tobacco etch virus (TEV) protease site at the amino terminus of the expressed protein. This transfer vector was then mutated to encode two forms of FGFR1K: (i) a version mutated (Y653F and Y654F) to prevent phosphorylation-dependent activation of kinase activity, i.e., kinase inactive, and (ii) a version that retained kinase activity but was mutated (Y766F) to prevent phosphorylation-dependent interaction with PLC-γ1. Mutations were introduced using standard primer-mediated mutagenesis (Agilent Technologies; QuikChange site-directed mutagenesis manual) and all FGFR1K variants were verified by automated DNA sequencing of the corresponding open reading frames.
 
-## Protein expression and purification
+### Protein expression and purification
 
-## Phospholipase C-γ1
+#### Phospholipase C-γ1
 
 Expression and purification of PLC-γ1 variants were previously described (Hajicek et al., 2019) and used here with minor modifications. Briefly, 4 L of High Five (Trichoplusia ni) cells at a density of approximately 2.0 × 106 cells/mL were infected with amplified baculovirus stock (10–15 mL/L) encoding individual PLC-γ1 variants. Cells were harvested approximately 48 hr post-infection by centrifugation at 6,000 rpm in a Beckman JA-10 rotor at 4°C. Cell pellet was resuspended in 200 mL of buffer N1 (20 mM HEPES [pH 7.5], 300 mM NaCl, 10 mM imidazole, 10% v/v glycerol, and 0.1 mM EDTA) supplemented with 10 mM 2-mercaptoethanol and four EDTA-free cOmplete protease inhibitor tablets (Roche Applied Science) prior to lysis using the Nano DeBEE High Pressure Homogenizer (BEE International). Lysate was centrifuged at 50,000 rpm for 1 hr in a Beckman Ti70 rotor. The supernatant was filtered through a 0.45 μm polyethersulfone low protein-binding filter and loaded onto a 5 mL HisTrap HP immobilized metal affinity chromatography (IMAC) column equilibrated in buffer N1. The column was washed with 15 column volumes (CV) of buffer N1, followed by 15 CV of 2.5% buffer N2 (buffer N1 + 1 M imidazole). Bound proteins were eluted with 40% buffer N2. Fractions containing PLC-γ1 were pooled and dialyzed overnight in the presence of 2% (w/w) TEV protease to remove the His6 tag in a buffer solution containing 20 mM HEPES (pH 7.5), 300 mM NaCl, 10% v/v glycerol, 1 mM dithiothreitol (DTT), 1 mM EDTA. The sample was subsequently diluted two-fold with buffer N1 and applied to a 5 mL HisTrap HP column. Flow-through fractions containing cleaved PLC-γ1 were pooled, diluted four-fold with buffer Q1 (20 mM HEPES (pH 7.5) and 2 mM DTT), and loaded onto an 8 mL SourceQ anion exchange column equilibrated in 10% buffer Q2 (buffer Q1 +1 M NaCl). Bound proteins were eluted in a linear gradient of 10–60% buffer Q2 over 50 CV. Fractions containing PLC-γ1 were pooled, concentrated using a GE Healthcare VivaSpin 6 50K molecular weight cut-off (MWCO) centrifugal concentrator and applied to a 16 mm × 700 mm HiLoad Superdex 200 size exclusion column equilibrated in a buffer solution containing 20 mM HEPES (pH 7.5), 150 mM NaCl, 5% v/v glycerol, and 2 mM DTT. Pure PLC-γ1 was concentrated to a final concentration of 40–80 mg/mL, aliquoted, snap-frozen in liquid nitrogen, and stored at –80°C until use.
 
-## Kinase domain of the fibroblast growth factor receptor
+#### Kinase domain of the fibroblast growth factor receptor
 
 Expression and purification of kinase-inactive FGFR1K follows that of the PLC-γ1 variants with the following modifications. After removal of the His6 tag by TEV protease and subsequent 5 mL HisTrap HP IMAC column, the sample was concentrated using a GE Healthcare VivaSpin 6 10K MWCO centrifugal concentrator. Concentrated sample was applied to a 16 mm × 700 mm HiLoad Superdex 200 size exclusion column equilibrated in buffer containing 20 mM HEPES (pH 7.5), 200 mM NaCl, 5% (v/v) glycerol, and 2 mM DTT. Fractions containing pure, kinase-inactive FGFR1K were concentrated to a final concentration of 20–30 mg/mL, aliquoted, snap-frozen in liquid nitrogen, and stored at –80°C until use. The kinase active form of FGFR1K harboring Y766F was expressed as described above; however, purification terminated after the first 5 mL HisTrap HP IMAC column so the protein retains its His6 tag.
 
-## In vitro phosphorylation of FGFR1K
+### In vitro phosphorylation of FGFR1K
 
 Equimolar concentrations (100 μM) of tagless, kinase-inactive FGFR1K and the tagged, kinase-active version were incubated in 20 mM HEPES (pH 7.5), 50 mM NaCl, 25 mM MgCl2, 50 ng/mL fatty acid-free bovine serum albumin (FAF BSA), 10 mM ATP, and 2 mM DTT. The phosphorylation reaction was terminated after 100 min by adding EDTA to a final concentration of 50 mM and kinase phosphorylation was confirmed via native PAGE followed by staining with Coomassie Brilliant Blue. To separate the two forms of FGFR1K, the mixture was loaded onto a 1 mL HisTrap HP IMAC using a 200 μL sample loop followed by 2 mL of buffer N1 (20 mM HEPES pH 7.5, 100 mM NaCl, 10 mM MgCl2, and 2 mM DTT). The column was washed with 5 CV of buffer N1, followed by 5 CV of 40% buffer N2 (buffer N1 + 1 M imidazole), and 5 CV of 100% buffer N2. Fractions containing phosphorylated, kinase-inactive FGFR1K were pooled and concentrated using a GE Healthcare Vivaspin 6 10K MWCO, aliquoted, snap-frozen in liquid nitrogen, and stored at –80°C until use.
 
-## LC-MS/MS of phosphorylated FGFR1K
+### LC-MS/MS of phosphorylated FGFR1K
 
 Phosphorylated, kinase-inactive FGFR1K was diluted and loaded onto native PAGE followed by staining with Coomassie Brilliant Blue. Gel bands were excised and digested with trypsin overnight. Peptides were extracted, then analyzed by LC-MS/MS using the Thermo Easy nLC 1200-QExactive HF. Data were searched against a UniProt Sf9 database including the sequence for FGFR1K using Sequest within Proteome Discoverer 2.1. All data were filtered using a false discovery rate of 5%.
 
-## Formation of PLC-γ1 in complex with FGFR1K
+### Formation of PLC-γ1 in complex with FGFR1K
 
 Kinase-inactive FGFR1K phosphorylated at Tyr766 was generated as described above. Either PLC-γ1 (H335A) or PLC-γ1 (H335A+D1165H) was added in a two-fold molar excess relative to kinase. The sample was immediately loaded onto a 10 mm × 300 mm Superdex 200 GL size exclusion column equilibrated with 20 mM HEPES (pH 7.5), 100 mM NaCl, 10 mM MgCl2, and 2 mM DTT. Pure complex was pooled and concentrated using a GE Healthcare Vivaspin 6 10K MWCO, aliquoted, snap-frozen in liquid nitrogen, and stored at –80°C until use. Formation of the complex was confirmed via SDS-PAGE followed by staining with Coomassie Brilliant Blue.
 
-## In vitro quantification of phospholipase activity
+### In vitro quantification of phospholipase activity
 
-## XY-69 fluorogenic assay
+#### XY-69 fluorogenic assay
 
 Liposomes with a final PE:PIP2 content of 80:20 were generated by mixing 750 nM XY-69 (Huang et al., 2018), 192 μM of liver phosphatidylethanolamine (PE, Avanti Polar Lipids), 48 μM brain PIP2 (Avanti Polar Lipids) in 12 × 75 mm borosilicate tubes. Lipids were dried under a nitrogen stream followed by high vacuum (0.5 mtorr). Dried lipid mixture was suspended in 20 mM HEPES (pH 7.5) using a probe microtip sonicator of 5/64" at 20% output for three cycles of 5 s ON, 15 s OFF. Concurrently, the PLC-γ1 proteins were diluted in a buffer containing 20 mM HEPES (pH 7.5), 50 mM NaCl, 2 mM DTT, and 1 mg/mL FAF BSA. The 6X assay buffer containing 80 mM HEPES (pH 7.5), 420 mM KCl, 10 mM DTT, 18 mM EGTA, and 14.1 mM CaCl2 (~390 nM free Ca2+) was added to the resuspended lipid mixture in a 1:4 ratio. To a non-binding surface-treated Corning 384-well plate, 2 μL of diluted PLC-γ1 proteins were added, either alone or in the presence of a two-fold molar excess of unphosphorylated or phosphorylated, kinase-inactive FGFR1K relative to PLC-γ1. To initiate the assay, 10 μL of the lipid and assay buffer mixture were added. The plates were incubated at 30°C and data was recorded for 30 min at intervals of 1 min using excitation and emission wavelengths of 485 nm and 520 nm, respectively. Fluorescence intensity was normalized to a blank reaction lacking phospholipase, and initial rates of XY-69 hydrolysis were calculated from the slope of the linear portion of the curve. Final concentrations of XY-69, PIP2, and PE were 5 μM, 48 μM, and 192 μM, respectively.
 
-## WH-15 fluorogenic assay
+#### WH-15 fluorogenic assay
 
 Assays with the soluble substrate WH-15 were performed as described previously (Huang et al., 2011) with the following modifications. WH-15 was diluted to a final concentration of 5 μM in assay buffer containing 50 mM HEPES (pH 7.5), 70 mM KCl, 3 mM EGTA, 2.97 mM CaCl2 (~10 μM free Ca2+), 50 μg/mL FAF BSA, and 2 mM DTT. Basal fluorescence was equilibrated for approximately 10 min before addition of PLC-γ1 (D1165H) alone or in the presence of a two-fold molar excess of unphosphorylated or phosphorylated, kinase-inactive FGFR1K relative to PLC-γ1 (1 nM, final concentration). Data were recorded for 1 hr at intervals of 30 s using excitation and emission wavelengths of 488 nm and 520 nm, respectively. Fluorescence intensity was normalized to the reaction lacking phospholipase, and initial rates of WH-15 hydrolysis were calculated from the slope of the linear portion of the curve.
 
-## Liposome flotation assay
+### Liposome flotation assay
 
 Liposomes with a final content of 89.8% PE, 10% PIP2, and 0.2% 7-nitro-2–1,3-benzoxadiazol-4-yl-PE were dried down and resuspended in 20 mM HEPES (pH 7.5) by sonication as described above for assays using XY-69. Concurrently PLC-γ1 (H335A), alone or in complex with phosphorylated, kinase-inactive FGFR1K was diluted in assay buffer containing 100 mM HEPES (pH 7.5), 150 mM NaCl, 10 mM KCl, 10 μM CaCl2, 0.5 mM tris(2-carboxyethyl)phosphine (TCEP). PLC-γ1 and liposomes were mixed and incubated on ice for 2 min. Immediately after mixing, 100 μL of assay buffer with 75% sucrose were added to the protein-lipid mixture to a final concentration of 30% sucrose in 250 μL total volume. The samples were overlaid with 200 μL of assay buffer with 25% sucrose and 50 μL of assay buffer. Samples were centrifuged at 55,000 rpm in a TLS-55 rotor for 1 hr at 4°C. After centrifugation, three fractions were collected: bottom (B, 250 μL), middle (M, 150 μL), and top (T, 100 μL). Samples (30 μL) of each fraction were mixed with 7 μL of 6X SDS sample buffer and analyzed by SDS-PAGE followed by staining with Coomassie Brilliant Blue.
 
-## Hydrogen-deuterium exchange mass spectrometry
+### Hydrogen-deuterium exchange mass spectrometry
 
-## Sample preparation
+#### Sample preparation
 
 Exchange reactions were carried out at 18°C in 20 μL volumes with a final concentration of 1.25 μM PLC-γ1 (H335A), PLC-γ1 (H335A+D1165H), PLC-γ1 (H335A)-FGFR1K complex, or PLC-γ1 (H335A+D1165H)-FGFR1K complex. A total of eight conditions were assessed: four in the presence of liposomes containing 90% PE and 10% PIP2 and four in the absence of liposomes. PLC-γ1 biochemical assays have showed similar activity of vesicles of varying composition (e.g., PC/PS/PIP2/cholesterol), so the PE/PIP2 mixture was used for its experimental simplicity. The conditions were as follows:
 
@@ -181,15 +357,15 @@ For conditions containing liposomes, lipids were present at a final concentratio
 
 For PLC-γ1 (H335A) versus PLC-γ1 (H335A+D1165H), exchange reactions were carried out at 18°C in 50 μL volumes with a final concentration of 0.4 μM PLC-γ1 or PLC-γ1 (D1165H). Hydrogen-deuterium exchanges were initiated by the addition of 49 μL D2O buffer (89% D2O, 100 mM NaCl, 50 mM HEPES pH 7.5)–1 μL protein for a final D2O concentration of 87%. Exchange was carried out over five time points (3 s on ice and 3, 30, 300, 3000 s at RT) and terminated by the addition of 20 μL ice-cold acidic quench buffer (2 M guanidine-HCl, 3% formic acid). After quenching, samples were immediately frozen in liquid nitrogen and stored at –80°C. All reactions were carried out in triplicate.
 
-## Protein digestion and MS/MS data collection
+#### Protein digestion and MS/MS data collection
 
 Protein samples were rapidly thawed and injected onto an integrated fluidics system containing a HDX-3 PAL liquid handling robot and climate-controlled chromatography system (LEAP Technologies), a Dionex Ultimate 3000 UHPLC system, as well as an Impact HD QTOF Mass spectrometer (Bruker). Proteins were run over two immobilized pepsin columns (Applied Biosystems; Poroszyme Immobilized Pepsin Cartridge, 2.1 mm × 30 mm; Thermo-Fisher 2‐3131‐00; at 10 and 2°C, respectively) at 200 μL/min for 3 min. The resulting peptides were collected and desalted on a C18 trap column (Acquity UPLC BEH C18 1.7 µm column [2.1 × 5 mm]; Waters 186002350). The trap was subsequently eluted in line with a C18 reverse-phase separation column (Acquity 1.7 μm particle, 100 × 1 mm2 C18 UPLC column, Waters 186002352), using a gradient of 5–36% B (buffer A 0.1% formic acid; buffer B 100% acetonitrile) over 16 min. Lipids were directly captured on the LC system, and eluted off at the 100% acetonitrile step, with no interference on mass spectrometer or LC performance. Full details of the LC setup and gradient for lipid samples are in Stariha et al., 2021. Mass spectrometry experiments were performed on an Impact II QTOF (Bruker) acquiring over a mass range from 150 to 2200 m/z using an electrospray ionization source operated at a temperature of 200°C and a spray voltage of 4.5 kV.
 
-## Peptide identification
+#### Peptide identification
 
 Peptides were identified using data-dependent acquisition following tandem MS/MS experiments (0.5 s precursor scan from 150 to 2000 m/z; twelve 0.25 s fragment scans from 150 to 2000 m/z). MS/MS datasets were analyzed using PEAKS7 (PEAKS), and a false discovery rate was set at 1% using a database of purified proteins and known contaminants (Dobbs et al., 2020).
 
-## Mass analysis of peptide centroids and measurement of deuterium incorporation
+#### Mass analysis of peptide centroids and measurement of deuterium incorporation
 
 HD‐Examiner Software (Sierra Analytics) was used to automatically calculate the level of deuterium incorporation into each peptide. All peptides were manually inspected for correct charge state, correct retention time, absence of overlapping isotopic traces, and appropriate selection of isotopic distribution. Deuteration levels were calculated using the centroid of the experimental isotope clusters. Results for these proteins are presented as relative levels of deuterium incorporation and the only control for back exchange was the level of deuterium present in the buffer (72%). Changes in any peptide at any time point (3, 30, 300, 3000, and 10,000 s) greater than specified cut-offs (5% and 0.4 Da) and with an unpaired, two-tailed t-test value of p<0.01 were considered significant.
 

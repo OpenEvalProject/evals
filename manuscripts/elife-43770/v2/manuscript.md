@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.43770.001 Located in the midbrain, the inferior colliculus (IC) is the hub of the central auditory system. Although the IC plays important roles in speech processing, sound localization, and other auditory computations, the organization of the IC microcircuitry remains largely unknown. Using a multifaceted approach in mice, we have identified vasoactive intestinal peptide (VIP) neurons as a novel class of IC principal neurons. VIP neurons are glutamatergic stellate cells with sustained firing patterns. Their extensive axons project to long-range targets including the auditory thalamus, auditory brainstem, superior colliculus, and periaqueductal gray. Using optogenetic circuit mapping, we found that VIP neurons integrate input from the contralateral IC and the dorsal cochlear nucleus. The dorsal cochlear nucleus also drove feedforward inhibition to VIP neurons, indicating that inhibitory circuits within the IC shape the temporal integration of ascending inputs. Thus, VIP neurons are well-positioned to influence auditory computations in a number of brain regions.
+Located in the midbrain, the inferior colliculus (IC) is the hub of the central auditory system. Although the IC plays important roles in speech processing, sound localization, and other auditory computations, the organization of the IC microcircuitry remains largely unknown. Using a multifaceted approach in mice, we have identified vasoactive intestinal peptide (VIP) neurons as a novel class of IC principal neurons. VIP neurons are glutamatergic stellate cells with sustained firing patterns. Their extensive axons project to long-range targets including the auditory thalamus, auditory brainstem, superior colliculus, and periaqueductal gray. Using optogenetic circuit mapping, we found that VIP neurons integrate input from the contralateral IC and the dorsal cochlear nucleus. The dorsal cochlear nucleus also drove feedforward inhibition to VIP neurons, indicating that inhibitory circuits within the IC shape the temporal integration of ascending inputs. Thus, VIP neurons are well-positioned to influence auditory computations in a number of brain regions.
 
 ## Introduction
 
@@ -34,7 +34,7 @@ In many brain regions, a multidimensional analysis that includes molecular marke
 
 ## Results
 
-## The VIP-IRES-Cre mouse line labels neurons in multiple subdivisions of the IC
+### The VIP-IRES-Cre mouse line labels neurons in multiple subdivisions of the IC
 
 By crossing VIP-IRES-Cre mice with Ai14 reporter mice, we obtained mice in which VIP+ neurons expressed the fluorescent protein tdTomato. Distribution of VIP+ neurons throughout the brain matched the description provided by Taniguchi et al. (2011). There were very few or no VIP-expressing neurons in auditory centers outside of the IC (including cochlear nucleus, superior olivary complex, nuclei of the lateral lemniscus, nucleus of the brachium of the IC and medial geniculate nucleus), with the exception of auditory cortex, where sparse neurons matching descriptions of VIP-expressing interneurons were labeled. The present report focuses on the IC, which contained many VIP-expressing neurons. Figure 1 shows the distribution of VIP+ neurons (magenta) in transverse sections through the IC. Labeled neurons were present throughout most of the rostro-caudal extent of the IC, including in the ICc, ICd, and IClc, but were most numerous in the caudal regions. Labeled neurons were rare or absent in the IC rostral pole and intercollicular tegmentum.
 
@@ -42,9 +42,105 @@ By crossing VIP-IRES-Cre mice with Ai14 reporter mice, we obtained mice in which
 
 **Figure 1.:** Photomicrographs of transverse sections through the IC ranging from caudal (left-most) to rostral (right-most). VIP-expressing cells (labeled with tdTomato) are shown in magenta, and GAD67 staining is shown in green to show the border of the IC. VIP-expressing cells are present in multiple subdivisions of the IC, but are most prominent in caudal and dorsal parts of the IC. Scale = 1 mm. Cb (cerebellum), ICc, ICd, IClc (central nucleus, dorsal cortex and lateral cortex of the inferior colliculus), ICt (intercollicular tegmentum), IV (fourth ventricle), PAG (periaqueductal gray).
 
-## VIP neurons are glutamatergic and represent 3.5% of ICc neurons
+### VIP neurons are glutamatergic and represent 3.5% of ICc neurons
 
 Previous studies have shown that IC neurons are either glutamatergic or GABAergic (Merchán et al., 2005; Oliver et al., 1994). To investigate the neurotransmitter content of VIP neurons, we performed immunohistochemical staining against GAD67, a marker for GABAergic neurons, in brain slices from three VIP-IRES-Cre x Ai14 animals, aged P58 (Figure 2A). We then counted tdTomato+ neurons and GAD67-labeled cell bodies in one caudal and one rostral IC slice per animal. Because there were no regional differences in GAD67 staining among VIP neurons, neurons located in the ICc, ICd, and IClc were combined for this analysis. Across 793 tdTomato+ neurons, only 10 neurons co-labeled with GAD67 (1.3%, Table 1). We suspect the 10 tdTomato+ neurons that stained for GAD67 were non-specifically labeled or represent rare cases of tdTomato expression in non-VIP neurons. These data suggest that VIP neurons are a subgroup of glutamatergic neurons in the ICc, ICd, and IClc.
+
+**Table 1.**
+ VIP neurons are glutamatergic.Across three mice, an average of 1.3% of tdTomato+ neurons were labeled with an antibody against GAD67.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Animal</th>
+      <th>Slice #</th>
+      <th># tdTomato+</th>
+      <th># GAD67+</th>
+      <th># co-labeled</th>
+      <th>% tdTomato+co-labeled</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="3">P58 female, #1</td>
+      <td>1 (caudal)</td>
+      <td>210</td>
+      <td>184</td>
+      <td>3</td>
+      <td>1.4</td>
+    </tr>
+    <tr>
+      <td>2 (middle)</td>
+      <td>172</td>
+      <td>65</td>
+      <td>2</td>
+      <td>1.2</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>382</td>
+      <td>249</td>
+      <td>5</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td rowspan="3">P58 male</td>
+      <td>1 (caudal)</td>
+      <td>151</td>
+      <td>152</td>
+      <td>2</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td>2 (middle)</td>
+      <td>46</td>
+      <td>212</td>
+      <td>2</td>
+      <td>4.3</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>197</td>
+      <td>364</td>
+      <td>4</td>
+      <td>2.0</td>
+    </tr>
+    <tr>
+      <td rowspan="3">P58 female, #2</td>
+      <td>1 (caudal)</td>
+      <td>161</td>
+      <td>137</td>
+      <td>0</td>
+      <td>0.0</td>
+    </tr>
+    <tr>
+      <td>2 (middle)</td>
+      <td>53</td>
+      <td>187</td>
+      <td>1</td>
+      <td>1.9</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>214</td>
+      <td>324</td>
+      <td>1</td>
+      <td>0.5</td>
+    </tr>
+    <tr>
+      <td colspan="2">Grand total</td>
+      <td>793</td>
+      <td>937</td>
+      <td>10</td>
+      <td>1.3</td>
+    </tr>
+    <tr>
+      <td colspan="5">Average across three mice (mean ± SD)</td>
+      <td>1.3 ± 0.8%</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/43770/elife-43770-fig2-v2.jpg)
 
@@ -54,13 +150,107 @@ To determine the percentage of neurons in the ICc and IC shell (ICd plus IClc) t
 
 The results of the stereological analysis revealed that VIP neurons represented a larger portion of neurons in the ICc (3.5 ± 1.0%) than in the IC shell (1.5 ± 0.2%; two-tailed t-test, t(79) = 2.86, p = 0.005; Table 2). In addition, the prevalence of VIP neurons was highest in caudal regions of the ICc and the IC shell and tended to decrease in a caudal to rostral gradient. This trend was significant when comparing the caudal ICc to the rostral ICc (one-way ANOVA, F(2,37) = 7.27, p = 0.002, Tukey’s post hoc, p=0.001) and the caudal IC shell to the middle IC shell (one-way ANOVA, F(2,38) = 3.88, p = 0.03, Tukey’s post hoc, p = 0.03). These results suggest that VIP neurons are not evenly distributed along the rostral-caudal extent of the isofrequency lamina of the ICc and, according to the functional domain hypothesis, may be more likely to receive input from ascending afferents that preferentially target the caudal ICc (Cant and Benson, 2006; Loftus et al., 2010; Oliver et al., 1997). The functional implications of this anatomical arrangement will be addressed in more detail in the Discussion. Overall, a combined count of VIP neurons from the ICc and IC shell showed that VIP neurons represent 2.3 ± 0.3% of the total population of neurons in the mouse IC (208 of 9304 neurons, n = 69 systematic random samples).
 
-## VIP neurons exhibit sustained firing patterns and their intrinsic physiology varies along the tonotopic axis of the ICc
+**Table 2.**
+ VIP neurons represent 3.5% of ICc neurons, 1.5% of IC shell neurons, and are present at a higher density in the caudal ICc and IC shell.Table shows results from stereological analysis of the percentage of neurons (NeuN+) in the ICc and IC shell (ICd + IClc) that express tdTomato in VIP-IRES-Cre x Ai14 mice. Values indicate mean ± SEM, (#tdTomato+ neurons / #NeuN+ neurons), and number of systematic random samples analyzed from each slice.Table 2—source data 1.Percentages of VIP neurons in ICc and IC shell.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="5">ICc</th>
+    </tr>
+    <tr>
+      <th>Coronal slice</th>
+      <th>P54 male 1</th>
+      <th>P54 male 2</th>
+      <th>Per slice plane</th>
+      <th>Grand average</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Caudal</td>
+      <td>3.1 ± 0.9% (12/503) five samples</td>
+      <td>8.4 ± 1.2% (26/338) four samples</td>
+      <td>5.8 ± 2.7% (38/841)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Middle</td>
+      <td>2.4 ± 0.8% (20/741) eight samples</td>
+      <td>3.9 ± 0.9% (44/1173) eight samples</td>
+      <td>3.2 ± 0.7% (64/1914)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rostral</td>
+      <td>1.9 ± 0.6% (21/929) eight samples</td>
+      <td>1.2 ± 0.4% (12/1024) seven samples</td>
+      <td>1.5 ± 0.4% (33/1953)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Per mouse</td>
+      <td>2.5 ± 0.3% (53/2173)</td>
+      <td>4.5 ± 2.1% (82/2535)</td>
+      <td></td>
+      <td>3.5 ± 1.0% (135/4708)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="5">IC shell</td>
+    </tr>
+    <tr>
+      <td>Coronal slice</td>
+      <td>P54 male 1</td>
+      <td>P54 male 2</td>
+      <td>Per slice plane</td>
+      <td>Grand average</td>
+    </tr>
+    <tr>
+      <td>Caudal</td>
+      <td>2.9 ± 0.8% (35/1092) 10 samples</td>
+      <td>1.9 ± 0.8% (9/615) five samples</td>
+      <td>2.4 ± 0.5% (44/1707)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Middle</td>
+      <td>0.9 ± 0.6% (4/534) six samples</td>
+      <td>0.9 ± 0.6% (10/944) eight samples</td>
+      <td>0.9 ± 0.0% (14/1478)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Rostral</td>
+      <td>1.2 ± 0.4% (10/842) eight samples</td>
+      <td>1.2 ± 0.6% (5/569) four samples</td>
+      <td>1.2 ± 0.0% (15/1411)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Per mouse</td>
+      <td>1.6 ± 0.6% (49/2468)</td>
+      <td>1.3 ± 0.3% (24/2128)</td>
+      <td></td>
+      <td>1.5 ± 0.2% (73/4596)</td>
+    </tr>
+  </tbody>
+</table>
+
+### VIP neurons exhibit sustained firing patterns and their intrinsic physiology varies along the tonotopic axis of the ICc
 
 Next, we investigated the firing pattern and intrinsic physiology of VIP neurons by targeting whole cell patch clamp recordings to tdTomato+ neurons in brain slices from VIP-IRES-Cre x Ai14 mice. For the majority of neurons, neuronal location relative to the IC subdivisions was determined post hoc, during retrieval of neuronal morphology (see below and Materials and methods). Recordings made from the ICc, ICd, and IClc were lumped together for this experiment because there were no clear differences in VIP neuron physiology across these subdivisions of the IC. VIP neurons had a resting membrane potential of −69.5 mV ± 4.4 mV (n = 216, corrected for liquid junction potential). In response to a current step protocol with hyperpolarizing and depolarizing current injections, VIP neurons showed minimal to no voltage sag to hyperpolarizing current steps and a sustained firing pattern of action potentials to depolarizing current steps (Figure 3A1, A2). Neurons were classified as sustained if their spike frequency adaptation ratio (SFA) was less than 2 (Peruzzi et al., 2000). The SFA ratio was calculated by dividing the last interspike interval by the first for a depolarizing current step that elicited ~10 spikes. 90.3% (214 of 237) of patched VIP neurons exhibited a sustained firing pattern, 8.4% (20 of 237) showed an adapting firing pattern (SFA ratio >= 2), and 1.3% (3 of 237) of VIP neurons had a transient firing pattern (firing stopped before the end of the current step).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/43770/elife-43770-fig3-v2.jpg)
 
-**Figure 3.:** (A) VIP neurons exhibited a regular, sustained firing pattern in response to depolarizing current steps, while hyperpolarizing current steps elicited minimal voltage sag (A1). As the amplitude of depolarizing current steps was increased, VIP neurons increased their firing rate while keeping their sustained firing pattern (A2). Example firing versus input (FI) curves from 15 VIP neurons show that firing rate increased in a mostly linear fashion over a broad range of current step amplitudes (A3). (B) Intrinsic physiology of VIP neurons is statistically different from the general population of IC neurons for all parameters tested. On average, VIP neurons had a significantly higher peak input resistance (Rpk) and steady-state input resistance (Rss), a lower rheobase, a longer membrane time constant, a smaller and less variable voltage sag (Ih) at −91 mV, and a markedly small and highly invariable spike frequency adaptation ratio (SFA). Boxplots show median, 25th and 75th percentile (box), and 9th and 91th percentile (whiskers).10.7554/eLife.43770.009Figure 3—source data 1.
+**Figure 3.:** (A) VIP neurons exhibited a regular, sustained firing pattern in response to depolarizing current steps, while hyperpolarizing current steps elicited minimal voltage sag (A1). As the amplitude of depolarizing current steps was increased, VIP neurons increased their firing rate while keeping their sustained firing pattern (A2). Example firing versus input (FI) curves from 15 VIP neurons show that firing rate increased in a mostly linear fashion over a broad range of current step amplitudes (A3). (B) Intrinsic physiology of VIP neurons is statistically different from the general population of IC neurons for all parameters tested. On average, VIP neurons had a significantly higher peak input resistance (Rpk) and steady-state input resistance (Rss), a lower rheobase, a longer membrane time constant, a smaller and less variable voltage sag (Ih) at −91 mV, and a markedly small and highly invariable spike frequency adaptation ratio (SFA). Boxplots show median, 25th and 75th percentile (box), and 9th and 91th percentile (whiskers).
 
 To compare the physiology of VIP neurons to that of the general population of neurons in the IC, we patched neurons in IC slices of C57BL/6J mice in a random, non-targeted approach as a control. Neurons patched with the non-targeted (NT) approach showed a higher diversity in firing patterns, with a higher proportion of transient neurons (21.8%, 12 out of 55) and adapting neurons (16.4%, 9 out of 55) when compared to VIP neurons. Sustained firing neurons were the most prevalent group in NT recordings (58.2%, 32 out of 55). Additionally, 3.6% (2 of 55) of randomly patched IC neurons fired only one spike at the onset of the depolarizing current step. This firing pattern was never observed in VIP neurons. The intrinsic physiology of VIP neurons also differed significantly from the general population of IC neurons (see Figure 3B). VIP neurons on average had a higher peak input resistance (Rpk) than non-targeted neurons (mean ± SD: VIP 242.1 ± 139.4 MΩ vs NT 191.1 ± 161.4 MΩ, p = 0.0003, Wilcoxon rank sum test), a higher steady-state input resistance (Rss) (mean ± SD: VIP 239.7 ± 170.7 MΩ vs NT 153.4 ± 153.2, p = 0.0001, Wilcoxon rank sum test), a slower membrane time constant (mean ± SD: VIP 15.0 ± 8.8 ms vs NT 9.7 ± 7.6 MΩ, p = 6.8*10−7, Wilcoxon rank sum test), lower rheobase values (mean ± SD: VIP 67.8 ± 96.2 pA vs NT 120.0 ± 100.9 pA, p = 0.013, Wilcoxon rank sum test), and a much less pronounced voltage sag (mean ± SD: VIP 0.87 ± 0.16 vs NT 0.75 ± 0.21, p = 0.0003, Wilcoxon rank sum test). Most striking, the SFA ratio of VIP neurons was tightly clustered at 1.47 ± 1.62, whereas SFA of NT neurons showed a significantly higher value and spread (3.62 ± 5.43, mean ± SD, p = 2.07*10−7).
 
@@ -68,23 +258,23 @@ Although statistically different from the general neuronal population in the IC 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/43770/elife-43770-fig4-v2.jpg)
 
-**Figure 4.:** (A) A 2D coordinate system was fit to every IC slice a VIP neuron was recorded from. The medial-lateral axis runs from the midline (zero) to the lateral edge (max) of the slice, the dorsal-ventral axis from the dorsal edge of the slice (zero) to the ventral border of the IC (max). For illustrative purposes, the approximate position along the tonotopic axis of the ICc is color-coded from blue (low frequency) to yellow (high frequency). (B) Correlation of measured intrinsic parameters with recording location. Black dots represent physiological parameters of individual VIP neurons (z-axis, left) mapped to their recording location (x- and y-axes, bottom). Planes show Levenberg-Marquardt least squares fits, color-coded from low z-axis values (blue) to high z-axis values (yellow). Asterisks indicate statistical significance of fit.10.7554/eLife.43770.011Figure 4—source data 1.
+**Figure 4.:** (A) A 2D coordinate system was fit to every IC slice a VIP neuron was recorded from. The medial-lateral axis runs from the midline (zero) to the lateral edge (max) of the slice, the dorsal-ventral axis from the dorsal edge of the slice (zero) to the ventral border of the IC (max). For illustrative purposes, the approximate position along the tonotopic axis of the ICc is color-coded from blue (low frequency) to yellow (high frequency). (B) Correlation of measured intrinsic parameters with recording location. Black dots represent physiological parameters of individual VIP neurons (z-axis, left) mapped to their recording location (x- and y-axes, bottom). Planes show Levenberg-Marquardt least squares fits, color-coded from low z-axis values (blue) to high z-axis values (yellow). Asterisks indicate statistical significance of fit.
 
 We found that variability in the intrinsic physiology of VIP neurons was at least partially correlated to their location within the coronal plane of the ICc. This was particularly true for the voltage sag ratios, which measure hyperpolarization-activated cation current (Ih). Approximately one quarter of the variability in sag ratios was explained by location in the ICc (sag ratio at −91 mV: R = 0.536, R2adj = 0.262, p = 1.24×10−05, n = 60, Figure 4B4; sag ratio at −111 mV: R = 0.516, R2adj = 0.233, p = 0.0002, n = 47, Figure 4B5). A significant but smaller portion of the variability in membrane time constant was explained by location in the ICc (τ: R = 0.343, R2adj = 0.088, p = 0.007, n = 61; Figure 4B3). There was also a significant relationship between the steady-state input resistance of VIP neurons and location in the ICc and a trend toward a relationship between peak input resistance and location (Rss: R = 0.328, R2adj = 0.076, p = 0.011, n = 60; Rpk: R = 0.227, R2adj = 0.018, p = 0.084, n = 60; Figures 4B1 and 2). The tonotopic axis of the ICc runs along a dorsolateral (low frequency) to ventromedial (high frequency) axis (Malmierca et al., 2008; Portfors et al., 2011; Stiebler and Ehret, 1985; Willott and Urban, 1978). For each of the above intrinsic parameters, values tended to be lower, indicating faster membrane properties, at more dorsolateral locations and higher, indicating slower membrane properties, at more ventromedial locations. Combined, these results suggest that variability in the intrinsic physiology of VIP neurons is at least in part due to their localization along the tonotopic axis of the ICc and that the membrane properties of VIP neurons tend to be faster in lower frequency regions of the ICc.
 
-## VIP neurons have stellate morphology and dendritic spines
+### VIP neurons have stellate morphology and dendritic spines
 
 The streptavidin staining of biocytin-filled VIP neurons allowed for a detailed analysis of morphology. In total, we recovered the morphology of 55% of patched VIP neurons (n = 100 of 183). Nearly all (81/86 = 94.2%) VIP neurons had spiny dendrites (Figure 5A,B insets). This contrasts sharply with the 28% (12 of 43 neurons) of neurons that had spiny dendrites in non-targeted recordings from C57BL/6J mice (Figure 5C), suggesting that VIP neurons represent a subset of IC cells. Nonetheless, dendritic spines can be present on a variety of cell types, including stellate and disc-shaped cells (Herrera and Correa, 1988; Paloff et al., 1992; Willard and Ryugo, 1983). On average, VIP neurons had five primary dendrites (mean ± SD: 4.77 ± 1.38) that spread out in all directions from the soma, consistent with a stellate morphology. This is unsurprising in the ICd and IClc, where stellate morphology predominates, but warranted further analysis in the ICc, where stellate cells can have oriented dendritic trees but are outnumbered by the more highly oriented disc-shaped cells (Malmierca et al., 1993; Oliver and Morest, 1984; Willard and Ryugo, 1983). There were no obvious differences between the morphology of VIP neurons in the ICc versus the ICd or IClc, but this question warrants more detailed analysis in a future study.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/43770/elife-43770-fig5-v2.jpg)
 
-**Figure 5.:** (A, B) Maximum-intensity projections of confocal z-stacks showing streptavidin-Alexa Fluor-stained VIP neurons from the ICc. Insets: enlarged views of dendritic segments show dendritic spines. (C) 94% of VIP neurons across all IC subdivisions had spiny dendrites vs 28% of neurons from non-targeted recordings in C57BL/6J animals. (D) Representative reconstructions of the morphology of 12 VIP neurons from the ICc. Neurons are oriented as if in the left ICc. Gray lines were drawn at a 45° angle to illustrate the general orientation of the laminae. Solid gray lines are spaced 200 µm apart, dashed lines and solid lines are spaced 100 µm apart. (E) Orientation of the dendritic fields of VIP neurons from the ICc. Combined: Orientation of all reconstructed VIP neurons from the ICc (n = 42). Blue lines denote the orientation of the longest axis (first principal direction) found for each neuron using 2D PCA. Caudal, middle, rostral: Orientation of dendritic fields separated according to position along the rostro-caudal axis of the ICc. Blue lines show longest axis, perpendicular red lines show second longest axis (second principal direction) of each neuron as defined by 2D PCA. (F) Angular orientation of the long axis for every reconstructed VIP neuron within the ICc. Angles indicate counter-clockwise rotation relative to the medial-lateral (horizontal) axis. (G) Spread of the dendritic arbors of ICc VIP neurons measured perpendicular to a predicted 45° isofrequency plane. The dendrites of 83% of VIP neurons extended more than 100 µm across the laminar plane. (H) Dendritic arbor length to width ratio for all reconstructed VIP neurons from the ICc (n = 42). 93% of VIP neurons had a length to width ratio <3, indicating that they are stellate cells. The orientation of length and width axes was determined using 3D PCA.10.7554/eLife.43770.013Figure 5—source data 1.
+**Figure 5.:** (A, B) Maximum-intensity projections of confocal z-stacks showing streptavidin-Alexa Fluor-stained VIP neurons from the ICc. Insets: enlarged views of dendritic segments show dendritic spines. (C) 94% of VIP neurons across all IC subdivisions had spiny dendrites vs 28% of neurons from non-targeted recordings in C57BL/6J animals. (D) Representative reconstructions of the morphology of 12 VIP neurons from the ICc. Neurons are oriented as if in the left ICc. Gray lines were drawn at a 45° angle to illustrate the general orientation of the laminae. Solid gray lines are spaced 200 µm apart, dashed lines and solid lines are spaced 100 µm apart. (E) Orientation of the dendritic fields of VIP neurons from the ICc. Combined: Orientation of all reconstructed VIP neurons from the ICc (n = 42). Blue lines denote the orientation of the longest axis (first principal direction) found for each neuron using 2D PCA. Caudal, middle, rostral: Orientation of dendritic fields separated according to position along the rostro-caudal axis of the ICc. Blue lines show longest axis, perpendicular red lines show second longest axis (second principal direction) of each neuron as defined by 2D PCA. (F) Angular orientation of the long axis for every reconstructed VIP neuron within the ICc. Angles indicate counter-clockwise rotation relative to the medial-lateral (horizontal) axis. (G) Spread of the dendritic arbors of ICc VIP neurons measured perpendicular to a predicted 45° isofrequency plane. The dendrites of 83% of VIP neurons extended more than 100 µm across the laminar plane. (H) Dendritic arbor length to width ratio for all reconstructed VIP neurons from the ICc (n = 42). 93% of VIP neurons had a length to width ratio <3, indicating that they are stellate cells. The orientation of length and width axes was determined using 3D PCA.
 
 Figure 5D shows the variability in the morphology of VIP neurons located in the ICc. Neurons are displayed as they would appear in a coronal slice of the left IC viewed from a caudal perspective. Oliver and colleagues distinguished disc-shaped from stellate neurons by calculating the length to width ratio of the dendritic arbor: neurons with a ratio <3 were stellate and those with a ratio >= 3 were disc-shaped (Oliver et al., 1991). Applying this classification to our sample, 93% of VIP neurons in the ICc (39 of 42 neurons) had a length to width ratio <3, therefore being classified as stellate (Figure 5H). Only three VIP neurons from the ICc had a length to width ratio >3. These results demonstrate that the dendritic arbors of VIP neurons are not as highly oriented as disc-shaped neurons, again consistent with the hypothesis that VIP neurons are a class of stellate neurons.
 
 Although less oriented than disc-shaped cells, the VIP dendrites tended to show some orientation that could influence the range of frequencies that converge on the cell. To measure the orientation of ICc VIP neurons in relation to the isofrequency laminae, which in mouse run in a ~45° angle through the ICc (Stiebler and Ehret, 1985), we identified the longest and second longest axis of each neuron through principal component analysis and plotted the orientation of these axes on a standardized model of the IC (Figure 5E). No preferred orientation was apparent (Figure 5E, combined). Only 17% of VIP neurons (7 of 42) had their longest axis oriented within ± 15° of the 45° laminar plane, indicating that the dendritic arbors of most VIP neurons (83%, 35 of 42) may be positioned to cross one or more isofrequency laminae in the ICc (Figure 5F). To quantify this, we calculated the length the dendritic arbor extended perpendicular to a 45° laminar plane. The dendritic arbors of 83% of ICc VIP neurons (35 of 42) spread more than 100 µm perpendicular to the laminar plane, and more than 36% (15 of 42) spread more than 200 µm across the laminar plane (Figure 5G). Previous work in rats has shown that the isofrequency laminae have a center-to-center distance that ranges from 90 to 150 µm, while neurons contained within a lamina had a thickness ranging from 30 to 70 µm (Malmierca et al., 1993). If we assume that laminar dimensions in mouse are no thicker than those in rats, our results indicate that the dendritic fields of VIP neurons usually extend beyond at least one isofrequency lamina, consistent with the conclusion that VIP neurons in the ICc are a class of stellate neurons. Previous estimates indicate that approximately 15 – 20% of ICc neurons are stellate (Oliver et al., 1991; Oliver and Morest, 1984). Since our stereological analysis showed that VIP neurons represent 3.5% of ICc neurons, our results indicate that VIP neurons account for ~18 – 23% of ICc stellate neurons.
 
-## VIP neurons project to targets within and beyond the IC
+### VIP neurons project to targets within and beyond the IC
 
 Injections of an AAV encoding a Cre-dependent eGFP construct, AAV1.CAG.FLEX.eGFP.WPRE.bGH, led to eGFP expression in VIP+ IC cells. Figure 6A shows a representative deposit site, with eGFP-positive neurons (yellow) located among a population of VIP+ cells (magenta, labeled by cross-breeding the VIP-IRES-Cre mice with Ai14 reporter mice). Neurons that expressed eGFP routinely co-expressed tdTomato, confirming VIP expression by those neurons (Figure 6B). Many tdTomato+ neurons did not express the eGFP, despite their intermingling with many virally-labeled neurons. eGFP-labeled axons were prominent within the injected IC, where the labeled boutons were located in the neuropil or in close apposition to IC somas, suggesting extensive contributions to local circuits (Figure 6C). In addition, eGFP-labeled axons were present in several fiber tracts carrying projections from the IC, including the brachium of the IC, the commissure of the IC and the lateral lemniscus. Labeled axons and boutons were found in numerous auditory nuclei, including the contralateral IC, medial geniculate body and superior olivary complex (Figure 6D–F). Additional targets included the nucleus of the brachium of the IC, the periaqueductal gray, and the superior colliculus (not shown; details of termination patterns and terminal axon morphology will be described in a subsequent report). These data indicate that VIP+ IC neurons contribute to ascending, commissural and descending pathways from the IC.
 
@@ -92,17 +282,17 @@ Injections of an AAV encoding a Cre-dependent eGFP construct, AAV1.CAG.FLEX.eGFP
 
 **Figure 6.:** (A) Photomicrograph of an AAV deposit site in the right IC. AAV-infected, VIP-expressing cells are labeled with eGFP (yellow), while all VIP-expressing cells are labeled with tdTomato (magenta). Cells expressing both fluorescent proteins appear white. Scale = 500 µm. (B) High magnification photomicrographs showing labeled cells in the AAV deposit site. The field shows four tdTomato-expressing cells (magenta), two of which (white arrows) were also AAV-infected and expressed eGFP (yellow). Scale = 20 µm. (C–F) High magnification photomicrographs showing eGFP-labeled collicular axons (yellow) terminating in the ipsilateral IC (C), the contralateral IC (D), the medial geniculate body (E), or the ventral nucleus of the trapezoid body in the superior olivary complex (F) after an AAV injection in the IC. The white dashed box in each image identifies an area enlarged in the inset to show details of labeled axons and boutons. A fluorescent Nissl stain (cyan) shows that boutons are located in close association with cell bodies as well as in the intervening neuropil. Scale = 20 µm.
 
-## VIP neurons in the ICc receive excitatory and inhibitory synaptic input from the contralateral IC
+### VIP neurons in the ICc receive excitatory and inhibitory synaptic input from the contralateral IC
 
 In addition to axonal projection patterns, the sources of synaptic input to a neuron class are an important predictor of neuronal function. Anatomical studies have shown that the IC receives ascending, descending, and commissural input, but, with the exception of large GABAergic neurons (Ito et al., 2015; Ito and Oliver, 2014), it has rarely been possible to identify the sources and physiology of synaptic input to a specific class of neurons in the IC. This is largely because axons from multiple sources overlap in the IC, making it difficult to use electrical stimulation to selectively activate axons from specific presynaptic sources. In addition, electrical stimulation of commissural projections cannot differentiate between axons originating in the ipsilateral and contralateral IC. This is because electrical stimulation evokes both orthodromic and antidromic spikes, and, since most IC neurons have local axon collaterals (Oliver et al., 1991), antidromic spikes can lead to synaptic release from the local collaterals of neurons ipsilateral to the recording site. Furthermore, the commissure contains axons from sources other than IC cells, including cells in the auditory cortex, sagulum, nuclei of the lateral lemniscus and superior paraolivary nucleus (reviewed by Saldaña and Merchán, 2005); electrical stimulation in the commissure could also activate these axons. To overcome these obstacles, we turned to Channelrhodopsin-assisted circuit mapping (CRACM) (Petreanu et al., 2007). With CRACM, it is possible to selectively activate a single population of presynaptic neurons by anatomically and/or molecularly restricting the expression of an optogenetic protein. In our experiments, we used stereotaxic coordinates and intracranial virus injections to anatomically restrict Chronos expression. Epi-fluorescence imaging confirmed that Chronos-GFP expression was always clearly limited to the right IC (Figure 7B) or the right DCN (Figure 8A).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/43770/elife-43770-fig7-v2.jpg)
 
-**Figure 7.:** (A) Experimental setup. An AAV encoding Chronos-GFP was injected into the right IC. Three weeks later, light-evoked postsynaptic potentials were recorded from VIP neurons in the left ICc. (B) Image of a coronal slice of the IC. Injection sites and Chronos expression were validated through Chronos-GFP fluorescence. (C) Optogenetically-evoked IPSPs recorded from VIP Neurons in the ICc contralateral to the AAV injection site. IPSPs were evoked by 2–5 ms blue light flashes (left), while EPSPs were blocked with NBQX and AP5. IPSPs were abolished by gabazine (right). (D) Optogenetically-evoked EPSPs recorded from VIP neurons in the ICc contralateral to the AAV injection site. EPSPs were evoked by 2–5 ms blue light flashes (left), while IPSPs were blocked with strychnine and gabazine. Wash-in of AP5 significantly reduced the halfwidth and decay time constant of light-evoked EPSPs (middle). Wash-in of NBQX abolished the remaining EPSP (right). (E) Population data showing amplitude and kinetics of optogenetically-evoked IPSPs. (F) Population data showing amplitude and kinetics of optogenetically-evoked EPSPs. The significant reduction of EPSP halfwidth by AP5 indicates that NMDA receptor activation prolonged EPSP duration.10.7554/eLife.43770.016Figure 7—source data 1.
+**Figure 7.:** (A) Experimental setup. An AAV encoding Chronos-GFP was injected into the right IC. Three weeks later, light-evoked postsynaptic potentials were recorded from VIP neurons in the left ICc. (B) Image of a coronal slice of the IC. Injection sites and Chronos expression were validated through Chronos-GFP fluorescence. (C) Optogenetically-evoked IPSPs recorded from VIP Neurons in the ICc contralateral to the AAV injection site. IPSPs were evoked by 2–5 ms blue light flashes (left), while EPSPs were blocked with NBQX and AP5. IPSPs were abolished by gabazine (right). (D) Optogenetically-evoked EPSPs recorded from VIP neurons in the ICc contralateral to the AAV injection site. EPSPs were evoked by 2–5 ms blue light flashes (left), while IPSPs were blocked with strychnine and gabazine. Wash-in of AP5 significantly reduced the halfwidth and decay time constant of light-evoked EPSPs (middle). Wash-in of NBQX abolished the remaining EPSP (right). (E) Population data showing amplitude and kinetics of optogenetically-evoked IPSPs. (F) Population data showing amplitude and kinetics of optogenetically-evoked EPSPs. The significant reduction of EPSP halfwidth by AP5 indicates that NMDA receptor activation prolonged EPSP duration.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/43770/elife-43770-fig8-v2.jpg)
 
-**Figure 8.:** (A) Experimental setup. An AAV encoding Chronos-GFP was injected into the right DCN. For every experiment, the injection site and Chronos-GFP expression were confirmed through GFP fluorescence. Current clamp recordings were made from VIP neurons in the ICc contralateral to the injection site. (B) With inhibition blocked by gabazine and strychnine, 2–5 ms blue light flashes evoked EPSPs (left). AP5 did not significantly reduce EPSP halfwidth or decay time constant. Subsequent addition of NBQX abolished the EPSP. (C) Population data showing amplitude and kinetics for EPSPs elicited by activation of DCN synapses onto VIP neurons in the ICc. The absence of a significant effect of AP5 indicates that NMDA receptors did not make a significant contribution to EPSPs. (D) In several recordings made in the absence of inhibitory blockers, EPSP duration was limited through GABAergic feedforward inhibition (left; n = 5). In these instances, gabazine wash-in increased EPSP halfwidth to values similar to those in (B). (E) Population data for feedforward inhibition to VIP neurons. Washing in gabazine increased EPSP halfwidth in 5 out of 5 tested connections. (F) Population data comparing amplitude, halfwidth, and decay time constant of EPSPs from DCN inputs recorded in VIP neurons (VIP) and non-VIP neurons (NT, non-targeted recording). Halfwidth and decay time constants in VIP neurons showed a trend to cluster more tightly that in non-targeted recordings.10.7554/eLife.43770.018Figure 8—source data 1.
+**Figure 8.:** (A) Experimental setup. An AAV encoding Chronos-GFP was injected into the right DCN. For every experiment, the injection site and Chronos-GFP expression were confirmed through GFP fluorescence. Current clamp recordings were made from VIP neurons in the ICc contralateral to the injection site. (B) With inhibition blocked by gabazine and strychnine, 2–5 ms blue light flashes evoked EPSPs (left). AP5 did not significantly reduce EPSP halfwidth or decay time constant. Subsequent addition of NBQX abolished the EPSP. (C) Population data showing amplitude and kinetics for EPSPs elicited by activation of DCN synapses onto VIP neurons in the ICc. The absence of a significant effect of AP5 indicates that NMDA receptors did not make a significant contribution to EPSPs. (D) In several recordings made in the absence of inhibitory blockers, EPSP duration was limited through GABAergic feedforward inhibition (left; n = 5). In these instances, gabazine wash-in increased EPSP halfwidth to values similar to those in (B). (E) Population data for feedforward inhibition to VIP neurons. Washing in gabazine increased EPSP halfwidth in 5 out of 5 tested connections. (F) Population data comparing amplitude, halfwidth, and decay time constant of EPSPs from DCN inputs recorded in VIP neurons (VIP) and non-VIP neurons (NT, non-targeted recording). Halfwidth and decay time constants in VIP neurons showed a trend to cluster more tightly that in non-targeted recordings.
 
 Numerically, the contralateral IC provides the largest single source of input to the IC (Moore, 1988). We therefore first used CRACM to test whether VIP neurons in the ICc receive commissural input. Using stereotaxic, intracranial virus injections with AAV1.Syn.Chronos-GFP.WPRE.bGH, we drove expression of GFP-tagged Chronos, a fast Channelrhodopsin variant (Klapoetke et al., 2014), in the right IC. Note that we did not attempt to limit Chronos expression to a particular subdivision of the right IC. Visual inspection of Chronos-GFP fluorescence suggested that most of the somata labeled in the right IC were located in the ICc, but labeled somata were often also present in the ICd and occasionally the IClc.
 
@@ -114,7 +304,7 @@ Combined, the commissural CRACM experiments show that VIP neurons in the ICc rec
 
 Due to the kinetics of optogenetic proteins and the possibility of activating optogenetic proteins in synaptic terminals, optogenetically-evoked PSPs may have slower kinetics than PSPs evoked by electrical stimulation (Jackman et al., 2014; Zhang and Oertner, 2007). To test whether the kinetics of Chronos-evoked commissural PSPs were similar to those of electrically-evoked PSPs, we electrically stimulated the IC commissure while recording PSPs from VIP neurons in the contralateral IC. As indicated above, this raises the complication that electrically-evoked EPSPs were probably elicited both from the desired contralateral projections and from antidromic stimulation of ipsilateral axons. Compared to optogenetically-evoked EPSPs, electrically-evoked EPSPs (n = 6) had similar amplitudes and rise times, but had smaller halfwidths and trended toward faster decay time constants (amplitude: 2.4 mV ± 1.7 mV, p = 0.37; rise time: 6.28 ms ± 6.3 ms, p = 0.40; halfwidth: 10.3 ms ± 4.8 ms, p = 0.008*; decay time constant 28.4 ms ± 10.0 ms, p = 0.016, two tailed t-test, *critical p value with Bonferroni correction for multiple comparisons = 0.0125). Electrically-evoked IPSPs (n = 6) showed no significant difference in amplitude, halfwidth or decay time constant, but trended toward faster rise times (amplitude: −1.7 mV ± 1.3 mV, p = 0.78; rise time: 4.2 ms ± 2.3 ms, p = 0.025; halfwidth: 8.8 ms ± 7.3 ms, p = 0.16; decay time constant 36.8 ms ± 17.3 ms, p = 0.67, two tailed t-test, critical p value with Bonferroni correction for multiple comparisons = 0.0125). It should be noted that to position the stimulus electrode in the IC commissure contralateral to the recording site, these recordings had to be biased to VIP neurons in more rostral parts of the IC where the commissure was clearly visible, a bias that was not present in the CRACM recordings. Also, we cannot exclude that antidromic spikes may have influenced PSP analysis. Both may account for some of the observed differences in PSP kinetics. Overall, however, these data suggest that the kinetics of Chronos-evoked PSPs were generally similar to those of electrically-evoked PSPs.
 
-## VIP neurons in the ICc receive synaptic input from the DCN
+### VIP neurons in the ICc receive synaptic input from the DCN
 
 The DCN provides one of the major sources of excitatory input to the IC (Adams, 1979; Brunso-Bechtold et al., 1981; Oliver, 1984; Osen, 1972; Ryugo et al., 1981). A previous study has shown that DCN afferents synapse onto glutamatergic and GABAergic neurons in the IC (Chen et al., 2018), but it is not known which specific classes of IC neurons receive input from the DCN. In addition, the physiology of DCN afferent synapses remains unknown. To test whether VIP neurons receive synaptic input from DCN principal neurons, we injected the right DCN with the AAV1.Syn.Chronos-GFP.WPRE.bGH viral vector and recorded from VIP neurons in the contralateral (left) ICc (Figure 8A, left). To confirm selective transfection of the DCN, we sliced the brainstem of every animal used and determined whether GFP expression was present and limited to the right DCN. If there was no transfection or if there was considerable expression of GFP in the auditory nerve or VCN, no recordings were performed. In most cases, GFP expression was limited to the DCN (Figure 8A, right) and GFP-labeled axons were present in the left ICc.
 
@@ -126,7 +316,7 @@ To determine whether PSPs evoked by DCN inputs to VIP neurons differed from thos
 
 Together, these results identify VIP neurons in the ICc as a distinct postsynaptic target of DCN afferents. Given the number of conditions that must be met for a long-range CRACM experiment to succeed, our observation that the connection probability for DCN to VIP projections was 76% (19 of 25 neurons) suggests that most VIP neurons in the ICc receive input from the DCN.
 
-## DCN afferents drive local feedforward inhibition onto VIP neurons in the ICc
+### DCN afferents drive local feedforward inhibition onto VIP neurons in the ICc
 
 We next repeated the DCN-CRACM experiments without GABAA and glycine receptor antagonists in the bath. Under these conditions, we observed that an IPSP was elicited 2–3 ms after the onset of the light-evoked EPSP (Figure 8D). This IPSP could vary in strength between recorded VIP neurons. In some instances, the IPSP slightly altered the halfwidth and decay time constant of the EPSP. In other cases, the IPSP strongly limited the EPSP duration and generated a hyperpolarization after the EPSP (Figure 8D, left). Washing in gabazine restored the EPSP to values comparable to the EPSPs recorded in the presence of inhibitory receptor antagonists (compare Figure 8B,C). Washing out gabazine restored the IPSP and limited EPSP halfwidth again (Figure 8D, right). Across five ICc VIP neurons, the IPSP significantly shortened the halfwidth of the elicited EPSP (p = 0.048, paired t-test, Figure 8E). Halfwidth reductions ranged from 22% to 73%, with a median reduction of 36%. Because DCN to IC projections are glutamatergic (Ito and Oliver, 2010; Oliver, 1984), and the periolivary nuclei and nuclei of the lateral lemniscus, the sources of ascending GABAergic input to the IC (González-Hernández et al., 1996), were not present in the brain slice, this inhibition must be due to DCN afferents activating a local feedforward inhibitory circuit within the IC. The latency to the IPSP onset also supports the theory of a disynaptic, local inhibitory circuit, as the IPSP always succeeded the initial EPSP. Thus, these results indicate that ascending input from the DCN activates a feedforward inhibitory circuit within the IC and that this circuit regulates the duration of DCN-evoked excitation in ICc VIP neurons.
 
@@ -138,7 +328,7 @@ By combining molecular genetics with physiological and anatomical approaches, we
 
 **Figure 9.:** (A) Summary of the major projection targets of VIP neurons identified by axonal tract tracing: MGB (medial geniculate body), SC (superior colliculus), contralateral IC, PAG (periaqueductal gray), SOC (superior olivary complex). (B) Summary of the sources of input to VIP neurons identified by CRACM experiments.
 
-## VIP neurons are a distinct class of IC neurons
+### VIP neurons are a distinct class of IC neurons
 
 It has long been argued that the classification of neurons requires a multifaceted analysis of morphological and physiological features (Tyner, 1975). More recent efforts have emphasized the importance of combining these features with molecular markers (Ascoli et al., 2008; Tremblay et al., 2016; Zeng and Sanes, 2017). This combination has proven to be particularly effective for unambiguously classifying neuron types. In the cerebral cortex, a multifaceted classification scheme including molecular markers has enabled investigations into how specific classes of interneurons shape circuit computations, sensory processing, and animal behavior (Cichon et al., 2017; Kato et al., 2017; Kato et al., 2015; Kuchibhotla et al., 2017; Lee et al., 2013; Milstein et al., 2015; Pfeffer et al., 2013; Pi et al., 2013). Similar approaches have succeeded in the amygdala, hypothalamus, basal ganglia, and other brain regions where it was previously difficult to identify neuron types (Campbell et al., 2017; Capogna, 2014; Wallace et al., 2017).
 
@@ -148,13 +338,13 @@ Using a multifaceted approach, we identified VIP neurons as a novel class of IC 
 
 It is important to note that it would not be possible to identify VIP neurons based on their morphology or physiology alone. VIP neurons are not the only stellate neurons in the IC, nor are they the only neurons with sustained firing patterns or dendritic spines. These results provide insight to why it has been difficult to classify neuron types in the IC. We propose that a multidimensional approach incorporating molecular markers will be essential to identifying the remaining neuron classes in the IC.
 
-## Diverse projection patterns of VIP neurons
+### Diverse projection patterns of VIP neurons
 
 We found that VIP neurons project not only to MGB and contralateral IC, the most common recipients of IC projections, but also to the nucleus of the brachium of the IC, superior colliculus, periaqueductal gray, superior olivary complex, and ipsilateral IC (Figure 6). The number of extrinsic targets reached by VIP axons was a surprise given the relatively small population of VIP neurons. Do individual VIP neurons project to multiple targets? Previous retrograde labeling studies suggest that some patterns of collateral projection are more common than others for IC cells. IC cells that project to the contralateral thalamus appear to quite commonly have a collateral projection to the ipsilateral thalamus (Mellott et al., 2019). In contrast, very few IC neurons project to the thalamus and the cochlear nucleus (Coomes and Schofield, 2004; Hashikawa and Kawamura, 1983; Okoyama et al., 2006), or to the left and right cochlear nuclei (Schofield, 2001). Whether IC commissural cells can have collateral projections to the thalamus has been supported (González-Hernández et al., 1996) or denied (Okoyama et al., 2006). Because retrograde tracing studies underestimate collateral projections (Schofield et al., 2007), such studies may have missed VIP neurons with collateral projections.
 
 Alternatively, individual VIP neurons might project to one or a few targets. It would then be possible to subdivide VIP neurons based on their axonal projections. This would parallel the cerebral cortex, where the major classes of interneurons contain subclasses that often differ in their axonal targeting (Tremblay et al., 2016). If such is the case, then the unifying feature of VIP neurons might be that they perform similar computational roles within circuits, even when the circuits themselves are involved in different functions. In any event, the axonal projection patterns of individual VIP neurons, to extrinsic targets and within the IC, will be important features for further characterizing VIP subclasses and their functional roles.
 
-## Integration of synaptic input by VIP neurons
+### Integration of synaptic input by VIP neurons
 
 Our results show that VIP neurons receive input from at least four sources: principal neurons in the DCN, local inhibitory neurons, and excitatory and inhibitory neurons in the contralateral IC (Figure 8G). In multiple instances, we observed that VIP neurons received input from the DCN and a local inhibitory neuron or a combination of excitatory and inhibitory commissural input. Given that optogenetic circuit mapping experiments underestimate connection probabilities (not all synapses are transfected by the virus), these results suggest that many individual VIP neurons integrate input from ascending, local, and commissural sources. This is consistent with previous studies showing that individual IC neurons can integrate input from numerous sources (Ito et al., 2015; Ito and Oliver, 2014).
 
@@ -162,41 +352,184 @@ Excitatory postsynaptic responses in IC neurons often involve activation of NMDA
 
 In many brain regions, feedforward inhibitory circuits control the time window for temporal integration of synaptic input (Gabernet et al., 2005; Pouille and Scanziani, 2001; Roberts et al., 2013; Stokes and Isaacson, 2010). In the ICc, it was recently shown that GABAergic neurons provide local inhibitory input mainly to neurons in the same isofrequency lamina (Sturm et al., 2014). However, the conditions that recruit local inhibition have remained unclear. Our data provide direct evidence that activation of DCN afferents can elicit both direct excitatory input and disynaptic feedforward inhibition to VIP neurons. Feedforward inhibition can dramatically reduce EPSP halfwidth, suggesting that local feedforward inhibition regulates the temporal summation of synaptic inputs. In addition, while DCN afferents elicited modest EPSPs in VIP neurons, DCN input presumably drove spiking in the GABAergic neurons that provided feedforward inhibition. It will be important for future studies to identify this population of GABAergic neurons and the extent of their influence on auditory computations in VIP and other IC neurons.
 
-## The distribution and sources of input to VIP neurons suggest they specialize in monaural processing
+### The distribution and sources of input to VIP neurons suggest they specialize in monaural processing
 
 Ascending projections from most auditory brainstem nuclei restrict their synapses to subregions of the ICc, dividing the ICc into functional zones that may be specialized for processing specific classes of auditory cues (Brunso-Bechtold et al., 1981; Cant, 2013; Cant and Benson, 2006; Loftus et al., 2010; Oliver, 2005; Oliver et al., 1997). We found that VIP neurons in the ICc were distributed with a significant bias toward the caudal ICc (Table 2) and a tendency to be enriched in medial and dorsal regions of the ICc (Figure 1). Intriguingly, this distribution overlaps with the monaural domain of the ICc, an area that predominantly receives input from monaural nuclei, including the contralateral DCN and AVCN and the ipsilateral ventral nucleus of the lateral lemniscus (VNLL) (Cant and Benson, 2006; Loftus et al., 2010). In addition, a recent study in mice showed that excitatory ICc neurons that receive input from the DCN are unlikely to receive input from other ascending auditory sources but likely to receive input from the ipsilateral auditory cortex (Chen et al., 2018). These results lead us to hypothesize that VIP neurons are specialized for processing monaural cues, and in particular, monaural cues from the DCN. In future studies, it will be important to determine whether ascending input to VIP neurons is predominantly from the DCN, from a combination of monaural brainstem nuclei, or from both monaural and binaural sources. It will also be important to assess whether VIP neurons receive descending input from the auditory cortex and how commissural and cortical inputs shape sound processing in VIP neurons.
 
-## VIP neurons might regulate the excitability of MGB and SOC neurons through VIP signaling
+### VIP neurons might regulate the excitability of MGB and SOC neurons through VIP signaling
 
 An important question is whether IC VIP neurons use VIP signaling to modulate the activity of their postsynaptic targets. In cerebral cortex, 99.1% of neurons labeled in the VIP-IRES-Cre mouse immunostained with an antibody against VIP, suggesting that Cre expression in the VIP-IRES-Cre mouse is well correlated with the production of VIP (Prönneke et al., 2015). There is therefore a strong likelihood that VIP neurons in the IC produce VIP. VIP acts by binding to one of three G-protein coupled receptors, VPAC1, VPAC2, and PAC1 (Dickson and Finlayson, 2009; Vaudry et al., 2009). Anatomical studies suggest that all three VIP receptors are expressed in the MGB and SOC (Joo et al., 2004; Sheward et al., 1995), both of which are postsynaptic targets of VIP neurons (Figure 6). Activation of VIP receptors can have significant effects on neuronal excitability. In somatosensory thalamus, activation of VIP receptors increased the activation of HCN channels, depolarizing thalamocortical neurons and inducing them to switch from burst firing to tonic firing (Lee and Cox, 2003; Sun et al., 2003). These data suggest that IC VIP neurons may potently modulate the activity of MGB neurons and other postsynaptic target neurons through VIP signaling. Thus, VIP neurons in the IC may exert an outsize influence on their long-range postsynaptic targets.
 
 ## Materials and methods
 
-## Animals
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>VIP-IRES-Cre</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX:010908</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Ai14</td>
+      <td>The Jackson Laboratory</td>
+      <td>JAX:007914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAD67 (mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>RRID:AB_2278725 Cat#:MAB5406</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-NeuN (rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>RRID:AB_10807945 Cat#:ABN78</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-bNOS (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID:AB_260754 Cat#:N2280</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse IgG Alexa Fluor 488 (donkey polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>RRID:AB_141607 Cat#:A-21202</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit IgG Alexa Fluor 488 (donkey polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>RRID:AB_2535792 Cat#:A-21206</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV1.Syn.Chronos-GFP.WPRE.bGH</td>
+      <td>University of Pennsylvania Vector Core/Addgene</td>
+      <td>Addgene:59170-AAV1 RRID:Addgene_59170</td>
+      <td>http://n2t.net/addgene:59170</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AAV1.CAG.FLEX.eGFP.WPRE.bGH</td>
+      <td>University of Pennsylvania Vector Core/Addgene</td>
+      <td>Addgene:51502-AAV1 RRID:Addgene_51502</td>
+      <td>http://n2t.net/addgene:51502</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>gabazine</td>
+      <td>Hello Bio</td>
+      <td>Cat#:HB0901</td>
+      <td>also called SR95531 hydrobromide</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>strychnine hydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#:S8753</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-AP5</td>
+      <td>Hello Bio</td>
+      <td>Cat#:HB0225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NBQX disodium salt</td>
+      <td>Hello Bio</td>
+      <td>Cat#:HB0443</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igor Pro 7 and 8</td>
+      <td>Wavemetrics</td>
+      <td>RRID:SCR_000325</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB R2018a and R2018b</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_001622</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neurolucida</td>
+      <td>MBF Bioscience</td>
+      <td>RRID:SCR_001775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Neurolucida 360</td>
+      <td>MBF Bioscience</td>
+      <td>RRID:SCR_016788</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals
 
 All experiments were approved by the University of Michigan Institutional Animal Care and Use Committee and were in accordance with NIH guidelines for the care and use of laboratory animals. Animals were kept on a 12 hour day/night cycle with ad libitum access to food and water. VIP-IRES-Cre mice (Viptm1(cre)Zjh/J, Jackson Laboratory, stock # 010908) (Taniguchi et al., 2011) were crossed with Ai14 reporter mice (B6.Cg-Gt(ROSA)26Sortm14(CAG-tdTomato)Hze/J, Jackson Laboratory, stock # 007914) (Madisen et al., 2010) to yield F1 offspring that expressed the fluorescent protein tdTomato in VIP neurons. For control experiments, C57BL/6J mice (Jackson Laboratory, stock # 000664) were used. Because mice on the C57BL/6 background undergo age-related hearing loss, experiments were restricted to an age range where hearing loss should be minimal or not present (Zheng et al., 1999). This age range was P70 or less for all mice except for three C57BL/6J mice used for electrophysiology experiments that were aged P89, P90, and P113.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Mice were deeply anesthetized and perfused transcardially with 0.1 M phosphate-buffered saline (PBS), pH 7.4, for 1 min and then with a 10% buffered formalin solution (Millipore Sigma, cat# HT501128) for 10 min. Brains were collected and post-fixed in the same fixative for 2 hr and cryoprotected overnight at 4°C in 0.1 M PBS containing 20% sucrose. Brains were cut into 40 μm sections on a vibratome or freezing microtome. Sections were rinsed in 0.1 M PBS, and then treated with 10% normal donkey serum (Jackson ImmunoResearch Laboratories, West Grove, PA) and 0.3% Triton X-100 for 2 hr. Slides were incubated overnight at 4 °C in mouse anti-GAD67 (1:1000; Millipore Sigma, cat# MAB5406), rabbit anti-NeuN (1:500; Millipore Sigma, cat# ABN78), or mouse anti-bNOS (1:1000; Millipore Sigma, cat# N2280). The next day, sections were rinsed in 0.1 M PBS and incubated in Alexa Fluor 488-tagged donkey anti-mouse IgG or donkey anti-rabbit IgG (1:500, Thermo Fisher, cat# A-21202 and A-21206) for 1 hr at room temperature. Sections were then mounted on gelatin-subbed slides (SouthernBiotech, cat# SLD01-BX) and coverslipped using Fluoromount-G (SouthernBiotech, cat# 0100–01). Images were collected using a 1.30 NA 40x oil-immersion objective or a 1.40 NA 63x oil-immersion objective on a Leica TCS SP8 laser scanning confocal microscope.
 
-## Antibody validation
+### Antibody validation
 
 The mouse monoclonal anti-GAD67 antibody (Millipore Sigma, cat# MAB5406) was raised against the 67 kDA isoform of glutamic acid decarboxylase (GAD). The manufacturer reports that Western blot analysis shows no cross-reactivity with the 65 kDa isoform of GAD (GAD65). This antibody has been previously used to identify GABAergic cells in the IC (Beebe et al., 2016; Ito et al., 2009; Mellott et al., 2014). The mouse monoclonal anti-nitric oxide synthase-brain (bNOS) (Sigma, cat# N2280) was raised against the IgG1 isotype from the NOS-B1 hybridoma. The manufacturer reports that anti-bNOS reacts specifically with nitric oxide synthase (NOS), derived from brain (bNOS, 150 – 160 kDa). This antibody has been previously used, in guinea pig and mouse, to delineate the borders of the IC (Coote and Rees, 2008; Keesom et al., 2018). To perform NeuN staining, we used a rabbit polyclonal antibody (Millipore Sigma, cat# ABN78). The manufacturer reports that anti-NeuN specifically recognizes the DNA-binding, neuron-specific protein NeuN, which is present in most central and peripheral neuronal cell types of all vertebrates tested. Previous studies reported the use of this antibody to label neurons in the IC (Beebe et al., 2016; Foster et al., 2014; Mellott et al., 2014).
 
-## Analysis of GAD67 staining
+### Analysis of GAD67 staining
 
 Images from representative sections of the IC (n = 3 animals, two sections per animal, one caudal and one middle) were collected at 2 µm depth intervals with a 1.30 NA 40x oil-immersion objective on a Leica TCS SP8 laser scanning confocal microscope. Images were analyzed using Fiji software (Rueden et al., 2017; Schindelin et al., 2012). Consistent with previous studies, we found that the anti-GAD67 antibody did not penetrate the entire depth of the tissue sections (Beebe et al., 2016; Mellott et al., 2014). We therefore restricted our analysis to the top 10 – 12 µm of each section, where the antibody was fully penetrant. Within this region, we manually marked every GAD67+ cell body and every tdTomato+ cell body in the left IC. The green (GAD67) and red (tdTomato) color channels were analyzed separately, so that labeling in one channel did not influence analysis of the other channel. After cells were marked, the GAD67 and tdTomato color channels were merged, and every instance where a cell body contained markers for both GAD67 and tdTomato was counted. The number of double-labeled cells was compared to the total number of tdTomato+ neurons to determine the percentage of tdTomato+ neurons that were GAD67+.
 
-## Analysis of NeuN staining with design-based stereology
+### Analysis of NeuN staining with design-based stereology
 
 A design-based stereology approach was used to estimate the numbers of NeuN+ and tdTomato+ neurons in anti-NeuN stained sections (Schmitz and Hof, 2005). To collect systematic random samples, a virtual 370 µm x 370 µm grid was overlaid on the IC section. The starting coordinates for the grid were set using the Mersenne Twister random number generator in Igor Pro 7 or 8 (WaveMetrics Inc). Images were then collected at coordinates determined by the upper-left intersection of each grid-square that fell over the left IC. Each image consisted of a 184 µm x 184 µm Z-stack collected at 1 µm depth intervals with a 1.40 NA 63x oil immersion objective on a Leica TCS SP8 confocal microscope. Six to sixteen images were collected per slice. Three slices were analyzed per mouse, with slices from each mouse evenly distributed along the rostral-caudal axis of the IC. Images were imported to Neurolucida 360 (MBF Bioscience), where neurons were counted using the optical fractionator approach (West et al., 1991). In this approach, we determined the image planes corresponding to the top, center, and bottom of the slice in each image stack. Top and bottom regions of each slice (≥2 µm thick) were treated as guard zones and discarded from subsequent analysis. Removal of guard zones left a 15 µm-thick region at the center of the slice for subsequent analysis. Neurons within this region were counted by making a single mark at the top of each cell. Cells crossing the right and top borders of the image stack were counted, whereas those crossing the left and bottom borders were not. The green (NeuN) and red (tdTomato) color channels were analyzed separately, so that labeling in one channel did not affect analysis of the other. Next, the color channels were merged and cells with both NeuN and tdTomato markers were counted. In every instance, tdTomato+ cells were also NeuN+ (208/208 cells). The total number of double-labeled (tdTomato+/NeuN+) cells was then compared to the total number of NeuN+ cells.
 
-## Analysis of the distribution of VIP neurons
+### Analysis of the distribution of VIP neurons
 
 Following transcardial perfusion as described previously, brains from three VIP-IRES-Cre x Ai14 mice were frozen and sectioned on a sliding microtome. Brains were cut into 40 µm sections, one each in the transverse, sagittal, and horizontal planes, and sections were collected in three series. The distribution of tdTomato-expressing (VIP+) cells in one series from each case was analyzed using a Neurolucida system (MBF Bioscience, Williston, VT) attached to a Zeiss Axioimager.Z1 fluorescence microscope. Major IC subdivisions, including the central nucleus (ICc), dorsal cortex, (ICd) and lateral cortex (IClc), were identified by comparing bNOS and GAD67 immunostains with previous studies of mouse IC (Dillingham et al., 2017; Meininger et al., 1986; Ono et al., 2016; Willard and Ryugo, 1983). Neurolucida Explorer was used to export drawings to Adobe Illustrator for figure preparation.
 
-## Electrophysiology
+### Electrophysiology
 
 Mice of either sex were used, aged postnatal day (P) 21 to P70 for VIP-IRES-Cre x Ai14 crosses and P21 to P113 for C57BL/6J animals. Mice were deeply anesthetized with isoflurane, decapitated, and the brain was dissected quickly in ~34 °C artificial cerebrospinal fluid (ACSF) containing (in mM): 125 NaCl, 12.5 Glucose, 25 NaHCO3, 3 KCl, 1.25 NaH2PO4, 1.5 CaCl2, 1 MgSO4, bubbled to a pH of 7.4 with 5% CO2 in 95% O2. Chemicals were obtained from Fisher Scientific or Millipore Sigma unless stated otherwise. Coronal or parasagittal slices (200 – 250 µm) containing the IC were cut in ~34 °C ACSF with a vibrating microtome (VT1200S, Leica Biosystems) and incubated at 34 °C for 30 min in a holding chamber filled with ACSF and bubbled with 5% CO2 in 95% O2. After incubation, slices were stored at room temperature until used for recordings.
 
@@ -212,19 +545,19 @@ To isolate or manipulate synaptic events, the following pharmacological agents w
 
 Data analysis was performed using custom written algorithms in Igor Pro or MATLAB (Mathworks). Statistical tests were performed in R Studio (R Studio, Boston) for R 3.5.1 (The R Project for Statistical Computing, The R Foundation).
 
-## Post hoc reconstructions of morphology and morphology analysis
+### Post hoc reconstructions of morphology and morphology analysis
 
 After recordings, the electrode was removed slowly to allow the cell membrane to reseal, and the slice was fixed in 4% paraformaldehyde (PFA) in 0.1 M phosphate buffer (PB, pH 7.4) for 12 – 24 hr. Slices were then washed in 0.1 M PB and stored in 0.1 M PB for up to three weeks. Recorded neurons were stained using fluorescent biocytin-streptavidin histochemistry. In brief, slices were washed in 0.1 M PB three times for 10 min (3 × 10 min in PB), permeabilized in 0.2% Triton X-100 in 0.1 M PB for 2 hr, washed 3 × 10 min in PB, and stained at 4 °C for 48 hr with streptavidin-Alexa Fluor 488 or 647, diluted 1:1000 in 0.1 M PB. Slices were then washed 3 × 10 min in PB and mounted on Superfrost Plus microscope slides in anti-fade media (Fluoromount-G). Z-stack images of streptavidin-Alexa Fluor labeled cells were obtained with a Leica TCS SP8 laser scanning confocal microscope using a 1.40 NA 63x oil-immersion objective. Three-dimensional reconstructions of neuronal morphology and quantitative analyses of soma and dendrite shape were performed on image stacks imported into Neurolucida 360 (MBF Bioscience). To facilitate comparisons of neuronal morphology, all reconstructed neurons are displayed as if they were in the left IC as viewed from a caudal perspective. Reconstructions of neurons that were located in the right IC were flipped along the dorsal-ventral axis so that they appear as if they were in the left IC.
 
-## Correlation of neuron location and intrinsic physiology
+### Correlation of neuron location and intrinsic physiology
 
 Following biocytin-streptavidin histochemistry, tile scan images of the entire IC were collected using a 20x objective on a Leica TCS SP8 confocal microscope. These images were then used to determine medial-lateral and dorsal-ventral coordinates of recorded neurons. The medial-lateral coordinate was measured as the distance of the soma from the medial axis (midline) of the IC slice (x axis). The dorsal-ventral coordinate was measured as the distance of the soma from the dorsal-most edge of the IC slice (y axis). Neurons in the right IC were combined with those from the left IC by multiplying the medial-lateral coordinate of neurons from the right IC by −1. Neurons were assigned to IC subdivisions, including the central nucleus (ICc), dorsal cortex, (ICd) and lateral cortex (IClc), by comparing neuron location in 20x tile scans to IC subdivision borders determined from standard series of IC sections immunostained for bNOS or GAD67 (Choy Buentello et al., 2015; Coote and Rees, 2008). Neuron coordinates were then compared to physiological parameters obtained during whole cell recordings. To test for correlations, data were fit with a plane using the Levenberg-Marquardt least squares method in Igor Pro. Fit quality was assessed with Pearson’s correlation coefficient and the adjusted R2. Fit significance (p value) was calculated based on the chi-squared statistic from the fit and the chi-squared cumulative distribution function.
 
-## Determination of major axes of neuron morphology
+### Determination of major axes of neuron morphology
 
 Neuron morphology was reconstructed as described above. To determine the ‘length’ and ‘width’ axes of the dendritic arbors, the set of coordinates describing the morphology of the dendritic arbor of each neuron was exported from Neurolucida 360 (MBF Bioscience). Coordinates were imported to Igor Pro, where principal components analysis (PCA) was performed on either the x and y coordinates (2D PCA) or the x, y, and z coordinates (3D PCA). The orientation of the length and width axes was then derived from the first and second principal directions of the resulting eigenvector matrices. 2D PCA was used to determine the orientation of neurons within the coronal plane. 3D PCA was used to determine the axes to use for measuring dendritic arbor length/width ratios. For this, the spread of the dendritic arbor along the first and second principal directions was determined by rotating each morphology coordinate set according to its eigenvector matrix, then calculating the range from the minimum to maximum coordinates along the x (length, first principal direction) and y (width, second principal direction) axes.
 
-## Intracranial virus injections
+### Intracranial virus injections
 
 Intracranial virus injections were performed on mice age P21 – P35 using standard aseptic techniques. Throughout the procedure, mice were anesthetized with isoflurane and their body temperature maintained with a homeothermic heating pad. An injection of the analgesic carprofen (5 mg/kg, CarproJect, Henry Schein Animal Health) was delivered subcutaneously. The scalp was shaved and a rostro-caudal incision was made along the midline to expose the skull. Injection sites were mapped using stereotaxic coordinates relative to the lambda suture. A single craniotomy was performed using a micromotor drill (K.1050, Foredom Electric Co.) with a 0.5 mm burr (Fine Science Tools).
 
@@ -232,10 +565,51 @@ Viral constructs were injected with a NanoJect III nanoliter injector (Drummond 
 
 After injections were completed, the scalp was sutured with Ethilon 6–0 (0.7 metric) nylon sutures (Ethicon USA LLC), and the wound was treated with 0.5 – 1 ml 2% Lidocaine hydrochloride jelly (Akorn Inc). Once mice were ambulatory, they were returned to the vivarium where they were monitored daily until sutures fell out and the wound was completely healed.
 
-## Channelrhodopsin-assisted circuit mapping
+**Table 3.**
+ Stereotaxic coordinates for virus injections. All coordinates are relative to the lambda suture.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Location</th>
+      <th>X coordinate (caudal)</th>
+      <th>Y coordinate (lateral)</th>
+      <th>Z coordinates (depth)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Right IC penetration 1 (CRACM)</td>
+      <td>-900 µm</td>
+      <td>1000 µm</td>
+      <td>2250 - 1500 µm, 250 µm interval﻿</td>
+    </tr>
+    <tr>
+      <td>Right IC penetration 2 (CRACM)</td>
+      <td>-900 µm</td>
+      <td>1250 µm</td>
+      <td>2250 - 1750 µm, 250 µm interval</td>
+    </tr>
+    <tr>
+      <td>Right IC penetration 1 (axonal tracing)</td>
+      <td>-900 µm</td>
+      <td>1000 µm</td>
+      <td>1850 µm, 2000 µm</td>
+    </tr>
+    <tr>
+      <td>Right DCN</td>
+      <td>-1325 µm</td>
+      <td>2150 µm</td>
+      <td>4750 µm, 4550 µm</td>
+    </tr>
+  </tbody>
+</table>
+
+### Channelrhodopsin-assisted circuit mapping
 
 After allowing 3 – 4 weeks for Chronos expression, animals were used for in vitro slice electrophysiology experiments as described above, with the exception that after decapitation all steps were performed in red light and recordings were conducted in darkness or red light to limit Chronos activation. For standard CRACM experiments, recordings were targeted to VIP neurons. In additional control experiments, recordings were targeted to non-fluorescent IC neurons in VIP-IRES-Cre x Ai14 crosses. During whole cell recordings, Chronos was activated by brief pulses of 470 nm light emitted by a blue LED coupled to the epi-fluorescence port of the microscope and delivered to the brain slice through a 0.80 NA 40x water immersion objective with a field number of 26.5 mm. Accordingly, the blue light spot had an area of 0.345 mm2. In all CRACM experiments, the soma of the recorded neuron was present in the field of view. Blue light flashes were 2 to 5 ms long, illuminated the entire field of a 0.80 NA 40x objective, and yielded optical power densities that ranged from 6 to 48 mW/mm². Optical power was set using a minimal stimulation protocol. In general, the shortest stimulus duration that elicited a PSP was chosen, combined with 120% of the optical power that was determined as the threshold to elicit PSPs. Yet, when using a 5 ms pulse with maximum optical power, EPSP kinetics did not change significantly (8 of 8 recorded neurons, data not shown) compared to the minimal stimulation paradigm. This suggests that light pulses elicited action potentials with consistent durations, regardless of optical power. Recording sweeps with light flashes were repeated 20 to 50 times in 0.5 – 1 s intervals to obtain average PSP values. During experiments to investigate receptor contribution to PSPs, drugs were washed in for at least 10 min before recording under the new condition. For each receptor antagonist, 7 – 8 washout experiments were conducted. In each case, drug effects reversed after washout (data not shown).
 
-## Axonal projections
+### Axonal projections
 
 The right IC of VIP-IRES-Cre x Ai14 mice was injected with AAV1.CAG.FLEX.eGFP.WPRE.bGH and transcardially perfused 3 – 4 weeks later, as described above. Brains were frozen and sectioned at 40 µm on a sliding microtome. For some brains, sections were collected serially, and for others, sections were collected in three series. The brains were examined for eGFP-labeled axons and boutons, which were interpreted as VIP+ projections originating in the IC. Some sections were counterstained with a fluorescent Nissl stain (Neurotrace 640/660, ThermoFisher, cat# N21483). Injection sites comprised a collection of eGFP-labeled cell bodies. Cases were included for analysis only if the eGFP labeled cell bodies were restricted to the IC. Images were collected on a Zeiss AxioImager.Z2 microscope. High magnification images were collected as z-stacks using a 1.40 NA 63X oil-immersion objective and structured illumination (Zeiss Apotome 2) for optical sectioning at 0.5 µm intervals. Images shown are maximum projections of collected stacks. Adobe Photoshop was used to colorize images, to globally adjust levels, and to add scale bars.

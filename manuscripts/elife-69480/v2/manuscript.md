@@ -46,11 +46,144 @@ We predicted that lesions to hub regions in the thalamus will affect behavior ac
 
 We found that patients with thalamic lesions performed significantly worse than comparison patients on the following tests (Table 1): TMT Part B, BNT, RAVLT delayed recall, and RAVLT delayed recognition. Notably, each test had at least one thalamus patient that performed worse than 95% of the normative population (z-score <–1.645; Figure 1B). These results suggest that thalamic lesions were associated with more severe behavioral impairments in executive, verbal, and memory functions relative to comparison patients that had damage outside of the thalamus.
 
+**Table 1.**
+ Group comparisons on neuropsychological test results.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Thalamic patients</th>
+      <th colspan="2">Comparison patients</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Mean z-score</td>
+      <td>SD</td>
+      <td>Mean z-score</td>
+      <td>SD</td>
+      <td>Randomized permutation p</td>
+    </tr>
+    <tr>
+      <td>Trail Making Test Part A</td>
+      <td>0.38</td>
+      <td>1.08</td>
+      <td>0.06</td>
+      <td>1.48</td>
+      <td>0.10</td>
+    </tr>
+    <tr>
+      <td>Trail Making Test Part B</td>
+      <td>–2.15</td>
+      <td>2.94</td>
+      <td>0.3</td>
+      <td>1.55</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Boston Naming Task</td>
+      <td>–0.29</td>
+      <td>0.73</td>
+      <td>0.3</td>
+      <td>0.64</td>
+      <td>0.0033</td>
+    </tr>
+    <tr>
+      <td>Controlled Oral Word Association Test</td>
+      <td>–0.4</td>
+      <td>1.3</td>
+      <td>0.38</td>
+      <td>1.16</td>
+      <td>0.055</td>
+    </tr>
+    <tr>
+      <td>Rey Auditory-Verbal Learning</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Immediate Learning</td>
+      <td>–0.68</td>
+      <td>0.71</td>
+      <td>–0.6</td>
+      <td>0.85</td>
+      <td>0.76</td>
+    </tr>
+    <tr>
+      <td>Total Learning</td>
+      <td>–0.79</td>
+      <td>1.37</td>
+      <td>–0.22</td>
+      <td>0.92</td>
+      <td>0.11</td>
+    </tr>
+    <tr>
+      <td>Delayed Recall</td>
+      <td>–0.73</td>
+      <td>1.29</td>
+      <td>0.45</td>
+      <td>0.94</td>
+      <td>0.0021</td>
+    </tr>
+    <tr>
+      <td>Delayed Recognition</td>
+      <td>–1.36</td>
+      <td>2.7</td>
+      <td>0.12</td>
+      <td>0.86</td>
+      <td>0.0049</td>
+    </tr>
+    <tr>
+      <td>Rey Complex Figure Test</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Delayed Recall</td>
+      <td>–0.16</td>
+      <td>0.86</td>
+      <td>0.094</td>
+      <td>0.94</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <td>Copy Test</td>
+      <td>–0.51</td>
+      <td>1.17</td>
+      <td>0.064</td>
+      <td>0.56</td>
+      <td>0.098</td>
+    </tr>
+  </tbody>
+</table>
+
 There are two potential models of thalamocortical connectivity that could explain the observed behavioral impairments. First, each cognitive domain is associated with a distinct thalamocortical system, thus different task impairments are associated with segregated lesion sites within the thalamus. Alternatively, thalamic hubs are involved in many cognitive processes across domains through their widespread connectivity with multiple systems, and thus lesions to a critical hub region could be associated with widespread impairment. The first explanation predicts little to no lesion overlap among different impaired tasks, whereas the second model predicts a high degree of lesion overlap among the impaired tasks. To discern between these two possibilities, we first examined lesion sites associated with impaired performance separately for each task (Figure 2A, left panel). Notably, we found an overlapping lesion site in the left anterior-medio-dorsal thalamus that is associated with impairment across different cognitive domains (Figure 2A, right panel). This result suggests that a patient with a focal thalamic lesion to this multi-domain lesion site could exhibit behavioral impairment across cognitive domains.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/69480/elife-69480-fig2-v2.jpg)
+
+**Figure 2.:** (A) Left panel: overlap of lesion masks from subjects with impaired test performance on each task. Impaired task performance defined as z < −1.645 (95 percentile in z distribution). Right panel: overlap of lesion sites associated with impairment on each individual task (summing each individual task’s lesion map from the left panel). (B) Table showing each thalamus patient’s task performance on 10 different neuropsychology tests. For all tasks, negative z-scores indicate more pronounced impairment. Both Trail Making Test (TMT) Part A and Part B scores were inverted to match the directionality of other tests. (C) Left panel: classifying thalamic patients into groups that exhibit impairment in one versus multiple tasks across cognitive domains. Right panel: Lesion sites in patients with or without impairment across multiple tasks.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69480/elife-69480-fig2-figsupp1-v2.jpg)
 
 We plotted the degree of impairment (expressed by z-score) across all tasks and cognitive domains separately for each patient (Figure 2B), and found that in 12 out of 20 patients, significant impairment (z < –1.645) was reported in more than two cognitive domains. We then examined whether patients with behavioral impairments across multiple domains had lesions to this identified overlapping site (Figure 2C; for each patient’s lesion, please see Figure 2—figure supplement 1). We found that in the 12 patients that exhibited impairment across multiple domains, there was indeed an overlapping lesion site in the left anterior-medio-dorsal thalamus. This overlapping site was notably absent in the eight patients that exhibited either no behavioral impairment or impairment in one single task (Figure 2C, left panel). This pattern was also observed when examining lesion sites from individual patients, as individual patients with impairments across multiple domains had lesions that overlapped with this left anterior-medio-dorsal thalamic region (Montreal Neurological Institute [MNI] coordinate: –7, 10, 8).
 
 We further tested whether lesions to the left anterior-medio-dorsal thalamus were associated with broad impairment across more cognitive domains rather than being driven by more severe deficits in a limited number of domains. For this purpose, we included an expanded group of 145 comparison patients from the Iowa Neurological Patients Registry (ages 19–81 years, 67 males; for lesion coverage, see Figure 3—figure supplement 1). Unlike the first group of comparison patients (Figure 1), these comparison patients were not matched with the thalamus patients on the lesion size, but on the averaged severity of behavioral deficits across all 10 neuropsychology tests. We predicted that when matched on the severity of behavioral deficit, patients with lesions that overlapped with the left anterior-medio-dorsal thalamus would exhibit impairments on more cognitive domains, whereas comparison patients will exhibit more circumscribed deficits in fewer cognitive domains. To test this prediction, we first calculated an ‘average impairment score’ by averaging the normalized z-scores across all 10 neuropsychological tests, and a ‘multi-domain impairment score’ by summing the number of tests with significant behavioral deficits (defined as z < 1.645). Both scores regressed out the variance associated with differences in lesion size. We then fitted a linear regression model to the group of 145 comparison patients that had average impairment scores similar to thalamus patients (maximum = 1.39, minimum = –1.59). We found that 11 out of 12 thalamus patients with lesions that overlapped with the left anterior-medio-dorsal thalamus (Figure 2C) exhibited higher multi-domain impairment score when compared to comparison patients (Figure 3). This suggests that lesions to the left anterior-medio-dorsal thalamus are not merely associated with more severe behavioral impairment, but also associated with impairment across multiple cognitive domains to a greater extent than would be expected from lesions in other brain regions.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/69480/elife-69480-fig3-v2.jpg)
+
+**Figure 3.:** More negative average impairment score represents more severe behavioral impairment. Higher multi-domain impairment score indicate more cognitive domains were affected. Individual dots represent individual patients. The solid line indicates a fitted regression line for the comparison patient group. The shaded area represents the 95% confidence interval.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69480/elife-69480-fig3-figsupp1-v2.jpg)
 
 Because it is possible that impairment across cognitive domains was driven by larger lesions that damaged many functionally specialized subregions in the thalamus, we tested whether there was a significant association between lesion size and the extent of behavioral impairment. We found that there was no significant correlation between lesion volume and number of cognitive domains impaired (r(19) = 0.21, p = 0.36). Furthermore, patients with impairment in more than two cognitive domains did not have larger lesions when compared to patients with impairment in less than two cognitive domains (randomized permutation test p = 0.42). Using the Morel thalamic nuclei atlas, we compared the number of anatomical nuclei in the thalamus overlapped with lesions associated with and without multi-domain impairment. Thalamic nuclei were defined using a published atlas derived from postmortem human brains (Krauth et al., 2010). We found no significant difference (multi-domain lesions: mean = 4.9 nuclei, SD = 1.89; single-domain lesions: mean = 5.92 nuclei, SD = 2.7; randomized permutation p = 0.39). Using a thalamic functional parcellation atlas we previously published that segmented the thalamus into different network parcellations (Hwang et al., 2017), we also did not find significant differences in the number of parcellations between these lesion sites (multi-domain lesions: mean = 3.25 parcels, SD = 1.87; single-domain lesions: mean = 3.88 parcels, SD = 2.59; randomized permutation p = 0.21; randomized permutation p = 0.62). These results indicate that thalamic lesions associated with more global deficits did not involve more thalamic subregions than lesions that did not.
 
@@ -114,11 +247,11 @@ To conclude, the principal contribution of our study is to demonstrate the behav
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 We studied 186 neurological patients (mean age = 51.59, age range = 18–81 years, SD = 13.65 years, 97 males). These participants were selected from the Iowa Neurological Patient Registry, and had focal lesions caused by ischemic stroke, hemorrhagic stroke, or benign tumor resection. Patients with learning disabilities, substance abuse, or premorbid personality disorders were excluded from the study. Neuropsychological assessment was conducted at least 3 months post-lesion onset. We first identified 20 patients with lesions restricted in the thalamus caused by ischemic or hemorrhagic stroke (age = 18–70 years, mean = 55.8 years, SD = 13.94 years, 13 males). In addition to patients with focal lesions within the thalamus, we included comparison patients that had lesions outside of the thalamus, in an attempt to control for lesion effects not specific to the thalamus. Given that lesion size correlates with behavioral impairment (Reber et al., 2021), we first tried to minimize any bias that could be introduced by different lesion sizes between the two patient groups. Thus, the first group of 21 comparison patients had lesion sizes that were equal to or smaller than the largest lesion size we observed in the thalamus group (ages 19–77 years, mean = 52.66 years, SD = 11.51 years, 8 males). We further included an expanded group of comparison patients with 145 patients (ages 19–81, mean = 50.83 years, SD = 13.98 years, 67 males). The expanded comparison patients had lesions outside the thalamus, not matched in lesion size, but on the average overall severity of behavioral deficit relative to the thalamus patients. Demographic data for all patients are presented in . All participants gave written informed consent, and the study was approved by the University of Iowa Institutional Review Board.
 
-## Neuropsychological assessment
+### Neuropsychological assessment
 
 A set of standardized neuropsychological tests was used to assess neuropsychological outcomes. To account for age-related effects, all test scores were converted to age-adjusted z-scores using the mean and standard deviation from published population normative data. We determined the behavioral domain that each test assessed, as described in Neuropsychological assessment (Lezak et al., 2012). We compared test outcomes between thalamus and comparison patients using the non-parametric randomized permutation test. Each test creates an empirical null distribution of no group difference between patients by randomly permuting group membership (thalamus or comparison patients) of each test score while keeping the number of patients in each group constant. We reported significant results after correcting for multiple comparisons using the Bonferroni correction (10 neuropsychological tests, p < 0.005).
 
@@ -130,30 +263,34 @@ Various components from RAVLT were used to assess learning and memory functions 
 
 We used the Rey-Osterrieth Complex Figure Test to assess visuospatial memory and construction (Fastenau et al., 1999). The Rey-Osterrieth figure was presented, and subjects were asked to copy the figure onto a blank paper (the copy trial). After a 30 min delay, subjects were asked to recall and draw the figure from memory (the delayed recall trial). We did not administer the immediate recall test. A standardized scoring system was used to assess the accuracy of a subject’s copy and recall performances (Meyers and Meyers, 1995).
 
-## Anatomical analysis of lesion location
+### Anatomical analysis of lesion location
 
 The anatomic location and spatial extent of each lesion was determined using available T1, T2, and computed tomography data. Because all patients were selected from the Iowa Neurological Patient Registry, which has been continuously enrolling patients for decades, imaging data were acquired using a variety of sequences. For T1 and T2 data, most images were acquired with 0.9375 × 0.9375 × 1.5 mm3 or 1 × 1 × 1 mm3 resolution; for computed tomography data, data were acquired with 0.94 × 0.94 mm2 in-plane resolution, with slice thickness ranging from 2 to 5 mm. All lesions were manually traced by trained technicians and reviewed by a board-certified neurologist (co-author ADB), who was blinded to neuropsychological outcome results. Lesion masks were transformed to the MNI International Consortium for Brain Mapping (ICBM) 152 Nonlinear Asymmetrical template, version 2009c, using a procedure that we reported previously (Hwang et al., 2020). Briefly, we used a high-deformation, non-linear, enantiomorphic, registration procedure from the Advanced Normalization Tools (Avants et al., 2009; Brett et al., 2001; Nachev et al., 2008). This high-deformation, non-linear registration procedure allows local deformation to account for differences in size and shape between brain structures. We used enantiomorphic normalization to insert voxel intensities from the non-damaged homologue of the lesion site in place of the manually defined lesion mask to improve transformation accuracy. After transformation, lesion masks went through a second round of manual editing as needed, to ensure that the anatomical borders of the lesion were accurately represented on the template atlas. The Morel atlas was used to determine the location of different thalamic nuclei (Krauth et al., 2010). This atlas identifies human thalamic nuclei based on cyto- and myelo-architecture information in stained slices from five postmortem human brains, and further transformed to the template space.
 
-## Functional connectivity and network hub analyses
+### Functional connectivity and network hub analyses
 
 The normative functional connectome dataset consisted of resting-state fMRI data from 235 subjects (mean age = 21.7 years, SD = 2.87 years, age range = 19–27, 131 males). Data from these subjects were acquired as part of the Brain Genomics Superstruct Project (Holmes et al., 2015), which we have previously used to map the hub properties of the thalamus (Hwang et al., 2017). For each normative subject, two 6-min runs of fMRI data were collected using a gradient-echo echo-planar imaging sequence (repetition time [TR] = 3000 ms, echo time [TE] = 30 ms, flip angle = 85 degrees, 3 mm3 isotropic voxels with 47 axial slices). We replicated our results using 62 subjects from an independent dataset from the Nathan Kline Institute-Rockland Sample (Nooner et al., 2012). For the replication dataset, 9 min and 35 s of resting-state fMRI data were collected for each subject using with the following parameters: TR = 1400 ms, TE = 30 ms, multiband factor = 4, flip angle = 65 degrees, 2 mm3 isotropic voxels with 64 axial slices.
 
 To prepare fMRI data for connectivity and network analyses, brain images were segmented into different tissue classes (white matter [WM], GM, and cerebrospinal fluid [CSF]) using FSL’s FAST software which helps co-register functional and anatomical data using boundary-based registration algorithm. We used rigid body motion correction to correct for head motion. T1 data were then spatially normalized to the MNI-152 space using the same high-deformation, non-linear function from the Advanced Normalization Tools that we used to transform lesion masks into the MNI space. We performed anatomical CompCor nuisance regression to further reduce non-neural noise (Behzadi et al., 2007). The close physical proximity between the thalamus and high-noise regions, such as the ventricles, could result in blurring the fMRI signal. To minimize this confound we further regressed out the mean signals from CSF, WM, and GM that were within five voxels (10 mm) from the thalamus. Importantly, no spatial smoothing was performed. After regression, data were bandpass-filtered (0.009–0.08 Hz).
 
-To calculate thalamocortical functional connectivity, we used the Morel atlas (Krauth et al., 2010) to define the thalamus (2227 2 mm3 voxels included in the atlas, registered to the MNI template), and calculated Pearson correlations between thalamic voxels and 400 cortical ROIs (Schaefer et al., 2018). Note that no correlations were calculated between thalamic voxels. This procedure resulted in a 2227 (thalamus voxel) × 400 cortical ROI matrix. To estimate the connector hub property of each thalamus voxel, we calculated its PC value across a range of density thresholds of this thalamocortical matrix (density = 0.01–0.15) and averaged across thresholds. The PC value of thalamus voxel i is defined as:PC=1−∑s=1NM(KisKi)2,
+To calculate thalamocortical functional connectivity, we used the Morel atlas (Krauth et al., 2010) to define the thalamus (2227 2 mm3 voxels included in the atlas, registered to the MNI template), and calculated Pearson correlations between thalamic voxels and 400 cortical ROIs (Schaefer et al., 2018). Note that no correlations were calculated between thalamic voxels. This procedure resulted in a 2227 (thalamus voxel) × 400 cortical ROI matrix. To estimate the connector hub property of each thalamus voxel, we calculated its PC value across a range of density thresholds of this thalamocortical matrix (density = 0.01–0.15) and averaged across thresholds. The PC value of thalamus voxel i is defined as:
+
+$$
+PC=1−\sums=1N_{M}(\frac{K_{is}}{K_{i}})^{2},
+$$
 
 where Ki is the sum of total functional connectivity weight for voxel i, Kis is the sum of functional connectivity weight between voxel i and the cortical network s, and NM is the total number of networks. To perform this calculation, we assigned the 400 cortical ROIs to seven cortical functional networks including FP, DF, CO, DA, limbic, SM, and visual networks (Schaefer et al., 2018; Yeo et al., 2011). If a thalamic voxel acts as a connector hub for cortical functional networks, it should exhibit functional connectivity uniformly distributed with cortical networks, and its PC value will be close to 1; otherwise, if its functional connectivity is concentrated within a specific cortical network, its PC value will be close to 0 (Gratton et al., 2012; Guimerà and Nunes Amaral, 2005).
 
 In addition to estimating PC values for thalamic voxels, we also estimated PC values for whole-brain GM voxels using the same approach (Reber et al., 2021). Briefly, we defined GM voxels using the MNI atlas (Fonov et al., 2009), and calculated Pearson correlations between signals extracted from every GM voxel (4 mm3 resolution, total 18,166 voxels). To avoid bias, we did not calculate correlations between voxels within the same ROI (Schaefer et al., 2018). We assigned each GM voxel to one of the seven functional networks in the cortex (Yeo et al., 2011) or its corresponding subcortical parcellation (Buckner et al., 2011; Choi et al., 2012). PC was calculated for a range of thresholds (density = 0.01–0.15) and averaged across thresholds.
 
-## Neurosynth meta-analyses
+### Neurosynth meta-analyses
 
 We used the Neurosynth database (Yarkoni et al., 2011) to identify brain regions associated with putative cognitive processes that are assessed by the TMT Part B, BNT, COWA, RAVLT delayed recall, and RAVLT delayed recognition tests. Neurosynth performs automated meta-analyses on a large fMRI corpus, with more than 14,000 fMRI studies included in the database. We quarried the following terms, ‘executive’ (for TMT Part B), ‘naming’ (for BNT), ‘fluency’ (for COWA), ‘recall’ (for RAVLT delayed recall), and ‘recognition’ (for RAVLT delayed recognition). Neurosynth then performed an association test for each term, to identify voxels more consistently reported in fMRI studies that contained the queried term than studies that did n’t contain the term. The resulting maps depicts putative brain systems whose activities are associated with the searched term.
 
-## Estimating the density of matrix cells
+### Estimating the density of matrix cells
 
 Procedures used to estimate the densities of matrix and core projection cells were previously published (Müller et al., 2020). Briefly, we obtained spatial maps (in MNI-152 space) of mRNA expression levels for PVALB and CALB1 proteins provided by the Allen Human Brain Atlas (Gryglewski et al., 2018). These proteins have been previously shown to delineate matrix and core thalamic projection cells (Jones and Hendry, 1989). Voxel-wise mRNA levels were first normalized and transformed into z-scores across all voxels within the thalamus, and the voxel-wise distributions of these normalized values were compared between lesion sites. A difference score was also calculated to identify thalamic voxels with higher densities of matrix cells.
 
-## Code and data availability statement
+### Code and data availability statement
 
 Functional connectivity analyses utilized publicly available datasets (Holmes et al., 2015; Nooner et al., 2012). Code and de-identified neuropsychological assessment outcome data can be accessed at https://github.com/kaihwang/LTH; Hwang, 2021 copy archived at swh:1:rev:fdcca3fd575911fa42fc79bccc468c2f9f6e6153.

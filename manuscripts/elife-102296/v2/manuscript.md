@@ -13,11 +13,11 @@
 
 ### Affiliations
 
-1. https://ror.org/023rffy11 Laboratory for Physical Biology, RIKEN Center for Biosystems Dynamics Research Kobe Japan
-2. https://ror.org/023rffy11 Nonequilibrium Physics of Living Matter RIKEN Hakubi Research Team, RIKEN Center for Biosystems Dynamics Research Kobe Japan
-3. https://ror.org/023rffy11 Laboratory for Molecular and Cellular Dynamics, RIKEN Center for Biosystems Dynamics Research Kobe Japan
-4. https://ror.org/023rffy11 Laboratory for Cell Adhesion and Tissue Patterning, RIKEN Center for Biosystems Dynamics Research Kobe Japan
-5. https://ror.org/00p4k0j84 Department of Physics, Kyushu University Fukuoka Japan
+1. Laboratory for Physical Biology, RIKEN Center for Biosystems Dynamics Research Kobe Japan ([ROR:023rffy11](https://ror.org/023rffy11))
+2. Nonequilibrium Physics of Living Matter RIKEN Hakubi Research Team, RIKEN Center for Biosystems Dynamics Research Kobe Japan ([ROR:023rffy11](https://ror.org/023rffy11))
+3. Laboratory for Molecular and Cellular Dynamics, RIKEN Center for Biosystems Dynamics Research Kobe Japan ([ROR:023rffy11](https://ror.org/023rffy11))
+4. Laboratory for Cell Adhesion and Tissue Patterning, RIKEN Center for Biosystems Dynamics Research Kobe Japan ([ROR:023rffy11](https://ror.org/023rffy11))
+5. Department of Physics, Kyushu University Fukuoka Japan ([ROR:00p4k0j84](https://ror.org/00p4k0j84))
 
 † Corresponding author
 
@@ -35,21 +35,65 @@ In the present study, we investigated the behavior of Caco-2 cells, a typical ep
 
 ## Results
 
-## Nuclei of singly isolated Caco-2 cells rotate in a clockwise direction
+### Nuclei of singly isolated Caco-2 cells rotate in a clockwise direction
 
 To study the rotational dynamics of epithelial cells, we cultured singly isolated Caco-2 cells and imaged them using a differential interference contrast (DIC) microscope (Figure 1A, Video 1). 76% of isolated Caco-2 cells spread circularly on a collagen-coated glass substrate, generating lamellipodia in all directions along the cell periphery with no persistent migration (Ozawa et al., 2020). In the cells spreading circularly, we noticed that the nuclei exhibit rotational motion in a clockwise direction when viewed from the dorsal (apical) side (Figure 1B). There was no cell that exhibited rotational motion in a counterclockwise direction. 24% of the cells exhibited migratory behavior at the start of our live imaging, and it took a while for the cells to spread circularly without persistent migration. The cells exhibiting migratory behavior were excluded from the analysis.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/102296/elife-102296-fig1-v2.jpg)
+
+**Figure 1.:** (A) Rotating nucleus probed by the rotation of nuclear texture. The endpoints of the red line segments are the positions of tracked landmarks of the nucleus. (B) The cumulative angle of nuclear rotation plotted against time and (C) average angular velocity averaged over the first 10 hr ($n=22$). Here, positive angle values indicate clockwise rotation. (D) Chiral cytoskeletal structure of F-actin (phalloidin) and microtubule (immunostaining). Scale bar: 20 µm. (E) Schematic diagram of the orientation of actin stress fibers and microtubule.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/102296/elife-102296-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Angular velocity of nucleus on the different coating applied to the glass substrate: collagen (n = 19), non-coated (n = 21), fibronectin (n = 22) and poly-l-lysine (n = 22). p values were calculated using Mann–Whitney U test (*p < 0.05, **p < 0.01, ***p < 0.001).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/102296/elife-102296-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** In the control cell (DMSO), actin bundles (phalloidin, magenta) in the peripheral region of cell, which are tilted to form chiral pattern, appear to be anchored to vinculin (green), a focal adhesion protein, at their both ends. We call them stress fibers. In the cell treated with SMIFH2, one end of each actin bundle was anchored to vinculin, while the other ends were not anchored. Consequently, the actin bundles extend in the radial direction. We call them radial fibers.
+
+![Video 1.](https://cdn.elifesciences.org/articles/102296/elife-102296-video1.mp4.jpg)
+
+**Video 1.:** Scale bar: 20 µm.
+
 The speed of nuclear rotation was about 50 degrees/hr on average (Figure 1C). We measured the rotational speed by tracking unique points of the nuclear texture (Figure 1A). The texture of the cytoplasm around the nucleus also showed a rotating motion, which indicates that the cytoplasm circulates in the same direction (Figure 1A). Furthermore, we found that microbeads attached to the dorsal surface rotate (Video 2), confirming that the dorsal membrane also rotates. The rotating motion of cell nuclei persists for more than 8 hr until cell division occurs. After the cell division, cells form two-cell colonies, and then the nuclear rotation resumes. In this work, we focus on the rotating motion in singly isolated cells.
+
+![Video 2.](https://cdn.elifesciences.org/articles/102296/elife-102296-video2.mp4.jpg)
+
+**Video 2.:** Scale bar: 40 µm.
 
 The rotational speed of the nucleus depended on the type of coating applied to the glass substrate, although the direction of rotation remained unaffected. When cells were cultured on fibronectin-coated glass, they exhibited the same clockwise nuclear rotation as observed on collagen-coated substrates, albeit at a slightly reduced speed (Figure 1—figure supplement 1). On poly-L-lysine-coated or uncoated glass, the rotation speed further decreased, with some cells exhibiting little rotation (Figure 1—figure supplement 1). Notably, while different coatings influenced the speed of nuclear rotation, they did not alter its direction.
 
-## F-actin and microtubules exhibit chiral patterns
+### F-actin and microtubules exhibit chiral patterns
 
 We hypothesized that cytoskeletal molecules, such as F-actin and microtubules, are responsible for the circulating flow. To see the structure and dynamics of actin, we imaged live Caco-2 cells expressing Lifeact-RFP (Video 1). In the peripheral region of cells, actin bundles were tilted, forming a dextral chiral pattern (Figure 1D). Since each of these actin bundles appears to associate with vinculin (Figure 1—figure supplement 2), a focal adhesion protein, at their termini, we refer to them as stress fibers (Tojkander et al., 2012). In more interior regions of the cell, actin filaments became thinner, losing their attachment to vinculin, and tended to adopt an orientation parallel to the cell periphery. Next, we observed microtubules by visualizing them with the GFP-tagged microtubule-binding domain of ensconsin (EMTB-3XGFP; Miller and Bement, 2009). Microtubules spread over the entire cytoplasmic region and exhibited a sinistral chiral pattern (Figure 1D, Video 3). A similar sinistral pattern can emerge when filaments extend radially from a center and the central region rotates clockwise, which is consistent with the direction of nuclear rotation. To summarize, actin bundles in the cell peripheral region and microtubules in the cytoplasm showed chiral patterns.
 
-## Chiral rotation requires actomyosin activity, independent of chiral assembly of stress fibers
+![Video 3.](https://cdn.elifesciences.org/articles/102296/elife-102296-video3.mp4.jpg)
+
+**Video 3.:** Scale bar: 20 µm.
+
+### Chiral rotation requires actomyosin activity, independent of chiral assembly of stress fibers
 
 To investigate whether the cytoskeletons with chiral patterns drive the circulating flow, we performed live imaging of Caco-2 cells expressing Lifeact-RFP with small-molecule inhibitors of cytoskeletal structures. When cells were treated with the actin polymerization inhibitor latrunculin A or F-actin stabilizer jasplakinolide, the shape of the cell periphery became rough and nuclear rotation stopped (Figure 2A, Figure 2—video 1, and Figure 2—video 2, respectively), indicating that F-actin is necessary for the nuclear and cytoplasmic rotation. In contrast, disruption of microtubules by nocodazole did not affect the nuclear rotation (Figure 2B, C, Figure 2—figure supplement 1, and Figure 2—video 3), which indicates that microtubules are not involved in the rotating motion.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/102296/elife-102296-fig2-v2.jpg)
+
+**Figure 2.:** Roles of F-actin, microtubule, Arp2/3, formin-mediated actin polymerization, and Myosin II activity were investigated. Cells were treated with DMSO (0.2%, control), actin polymerization inhibitor latrunculin A (2 µM), actin depolymerization inhibitor Jasplakinolide (10 nM), microtubule inhibitor nocodazole (50 µM), Arp2/3 inhibitor CK666 (200 µM), formin inhibitor SMIFH2 (40 µM), or Myosin II inhibitor blebbistatin (1 µM). (A) Snapshot images from the live image of actin dynamics in cells expressing Lifeact-RFP. Scale bar: 20 µm. (B) The cumulative angle of nuclear rotation averaged over different cells plotted against time for different conditions: DMSO ($n=19$), nocodazole ($n=11$), blebbistatin ($n=10$), CK666 ($n=13$), and SMIFH2 ($n=10$). The standard deviation is represented by shaded regions. (C) Angular velocity of cells under different conditions averaged over the first 5 hr of the time-evolution plot in (B). (D) Angular velocity of control and SMIFH2-treated cells averaged over the last 5 hr of the time-evolution plot in (B): DMSO ($n=13$) and SMIFH2 ($n=10$). p values were calculated using the Mann–Whitney U test ($∗p<0.05,∗∗p<0.01,∗∗∗p<0.001$). Here, positive angle values indicate clockwise rotation.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/102296/elife-102296-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Typical snapshots of microtubule of a cell 0.5 and 3.5 hr after the addition of nocodazole (50 µM).The scale bar is 20 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/102296/elife-102296-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) RNA-sequencing (RNA-seq) analysis showing gene expression levels (transcripts per million; TPM) of major mammalian formin family members (DIAPHs and DAAMs) in Caco-2 cells. Circles represent individual samples (circles of the same color indicate replicates), and bars indicate mean values (n = 3). Western blot showing protein levels of DIAPH2 (B) and DAAM1 (C) in Caco-2 cell treated with siRNAs.GAPDH (bottom row) was used as an internal control. (D) Angular velocity of nucleus of Caco-2 cells that were treated with siRNA for DIAPH2 or DAAM1. The rotation of the nucleus was tracked for 5 hr following the start of the live imaging. Negative control (N.C.) (n = 10), DIAPH2 (n = 18), and DAAM1 (n = 17). p values were calculated using Mann–Whitney U test (*p < 0.05, **p < 0.01, ***p < 0.001). Snapshot images from the live image of actin dynamics in cells expressing Lifeact-RFP in DIAPH2 (E, E’) and DAAM1 (F, F’) depleted cells. Scale bar: 20 µm.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/102296/elife-102296-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Angular velocity of nucleus of Caco-2 cells that were treated with siRNA for Myosin II A and/or B heavy chains. The rotation of the nucleus was tracked for 5 hr following the start of the live imaging. Negative control (N.C.) (n = 10), Myosin II A (n = 19), Myosin II B (n = 15), and Myosin IIA and B (n = 20). p values were calculated using Mann–Whitney U test (*p < 0.05, **p < 0.01, ***p < 0.001). (B) Western blot showing protein levels of Myosin IIA (top row) and IIB (middle row) heavy chains in Caco-2 cells treated with siRNAs. GAPDH (bottom row) was used as an internal control. Quantification of fold change relative to the negative control (N.C.), normalized to GAPDH protein level, is shown in bar graphs (bottom panel). Images of Myosin IIA (C) or Myosin IIB (D) (immunostaining, green) and actin filaments (phalloidin, magenta) in cells treated with siRNAs.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/102296/elife-102296-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Angular velocity of nucleus of Caco-2 cells that were treated with siRNA for vinculin. The rotation of the nucleus was tracked for 5 hr following the start of the live imaging. Negative control (N.C.) (n = 10) and vinculin (n = 17). p values were calculated using Mann–Whitney U test (*p < 0.05, **p < 0.01, ***p < 0.001). (B) Western blot showing protein levels of vinculin in Caco-2 cell treated with siRNAs. GAPDH (bottom row) was used as an internal control. Quantification of fold change relative to the negative control (N.C.), normalized to GAPDH protein level, is shown in bar graphs (bottom panel). (C) Images of actin filaments (phalloidin, magenta) and vinculin (immunostaining, green) in cells treated with siRNAs. Scale bar: 20 µm.
 
 To reveal which activities of actin are involved in the chiral rotating motion, we first investigated the role of Arp2/3-driven actin polymerization on the rotating motion, since a previous report has shown that it is involved in the chiral behavior of HFF (Tee et al., 2015). When Caco-2 cells were treated with the Arp2/3 complex inhibitor CK666 (Nolen et al., 2009), lamellipodia at the cell periphery tended to shrink (Figure 2A, Figure 2—video 4), but the nuclear rotation was maintained (Figure 2B, C), indicating that the Arp2/3 complex was dispensable for the rotating motion, in contrast to HFF where the Arp2/3 complex plays a role in cell chirality formation (Tee et al., 2015).
 
@@ -67,49 +111,95 @@ Previous studies have shown that the chirality in various cell types depends on 
 
 Our results using SMIFH2 showed that nuclear rotation persists even when the chiral stress fibers are lost, which suggests that these structures are not essential for driving rotational motion. To further test this possibility, we disrupted stress fibers by knocking down vinculin using siRNA. Upon vinculin depletion, the chiral arrangement of peripheral actin bundles was lost. Nevertheless, the nucleus continued to rotate clockwise comparable to that observed in control cells (Figure 2—figure supplement 4 and Figure 2—video 10). These results indicate that Myosin II mediates chiral nuclear rotation through subcellular structures other than stress fibers.
 
-## Super-resolution 3D imaging of actin and Myosin II
+### Super-resolution 3D imaging of actin and Myosin II
 
 To further investigate the roles of F-actin and Myosin II in the chiral rotation, we analyzed their distribution and dynamics in more detail, using both control and SMIFH2-treated cells. For this purpose, we employed a 3D super-resolution imaging technique known as expansion microscopy (ExM).
 
 We first examined the distribution of F-actin stained with phalloidin under control conditions (Figure 4A, A’). In the peripheral region of the cell, stress fibers localized on the ventral side exhibited a dextral swirling pattern (yellow in the left panel and bold lines in the right panel of Figure 4A; red in Figure 4A’; dark red lines in Figure 5K, top). These peripheral stress fibers (red in Figure 4A’) likely correspond to the actin bundles associated with focal adhesions, which were shown in Figure 1—figure supplement 2. Adjacent to the inner edge of the peripheral cytoplasmic zone having stress fiber bundles, we detected another population of actin filaments. These filaments, which looked thinner than stress fibers, were oriented parallel to the cell periphery and lacked obvious chirality, seemingly associated with the dorsal cell membranes (green in the left panel and dotted lines in the right panel of Figure 4A; light blue line in Figure 5K, top; green in Figure 4A’). These dorsal actin filaments (green in Figure 4A’) likely correspond to those not anchored to the focal adhesions, which were detectable in the image of Figure 1—figure supplement 2. They also appeared not to associate with any other F-actin populations. Next, we examined the distribution of Myosin IIA using antibodies (Figure 4B). The distribution of Myosin IIA is similar to that of F-actin, except for its striped pattern. Since we could not assess the colocalization of F-actin and Myosin IIA filaments in the same cells in ExM for technical reasons, we investigated their localization using conventional confocal microscopy (Figure 3A and Video 4). The confocal microscopy images indicate that F-actin and Myosin IIA generally colocalize with one another in these specimens.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/102296/elife-102296-fig4-v2.jpg)
+
+**Figure 4.:** Maximum intensity projection (MIP) images of F-actin (A, C) and Myosin IIA (B, D) in DMSO (A, B) and SMIFH2 (C, D) treated cells. The color indicates the height along the $z$-axis, where the height was measured after the samples were swollen (color bar, right). Magnified views of the white boxes are shown in the right top panels, and corresponding outlines of F-actin are shown in the right bottom panels, where the bold and dotted lines indicate stress fibers and dorsal actomyosin fibers, respectively. The vertical cross-sections ($xz$) are shown in the bottom panels, where the bold and dotted lines indicate the peripheral and dorsal inner regions, respectively. Scale bars: 20 µm (horizontal) and 10 µm (vertical). (A’, C’) Composite F-actin images of the ventral (red) and dorsal (green) sides. (A’) In the DMSO-treated cell, the thickness of the ventral and dorsal sides is 2.7 and 6.5 µm, respectively. (C’) In the SMIFH2-treated cells, the thickness of the ventral and dorsal sides is 4.2 and 5.7 µm, respectively.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/102296/elife-102296-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Maximum intensity projection (MIP) images of F-actin (A) and Myosin IIA (B) in blebbistatin-treated cells. The color indicates the height along the z-axis, where the height was measured after the sample was swollen (colorbar, the most right). Magnified views of the white boxes are shown in the right top panels, and corresponding outlines of F-actin are shown in the right bottom panels, where the bold and dotted lines indicate thick and thin fibers, respectively. The vertical section (xz) images are shown in the bottom panels, where the bold and dotted lines indicate peripheral and dorsal inner region, respectively. Scale bars: 20 µm (horizontal), 10 µm (vertical).
+
 ![Figure 5.](https://cdn.elifesciences.org/articles/102296/elife-102296-fig5-v2.jpg)
 
-**Figure 5.:** (A) Maximum intensity projection (MIP) image of Caco-2 treated with DMSO. (B) Snapshot images in the green rectangle in (A), obtained from the -slice at z\begin{document}$ z$\end{document} is defined as the plane closest to the substrate. The green line is the same as the green circle in (z=0\begin{document}$ z=0$\end{document}A). Arrowheads indicate the position of filaments. (C) Snapshot images in the red rectangle in (A) obtained from the -slice at z\begin{document}$ z$\end{document}. The red line is the same as the red circle in (z=0.5μm\begin{document}$z = 0.5\,\mu\text{m}$\end{document}A). Arrowheads indicate the position of filaments. (D) Kymograph along the green circle in (A), obtained from a slice at . (z=0\begin{document}$  z=0$\end{document}E) Kymograph along the yellow line in (A), obtained from the -slice at z\begin{document}$  z$\end{document}. (z=0\begin{document}$  z=0$\end{document}F) Kymograph along the red circle in (A), obtained from the -slice at z\begin{document}$  z$\end{document}. inset: schematic diagram of F-actin (black lines) passing through the circle. (z=0.5μm\begin{document}$z = 0.5\,\mu\text{m} $\end{document}G) Kymograph along the yellow line in (A), obtained from the -slice z\begin{document}$  z$\end{document}. (z=0.5μm\begin{document}$z = 0.5\,\mu\text{m} $\end{document}H) MIP image of Caco-2 treated with SMIFH2 (). (40μm\begin{document}$40\,\mu\text{m} $\end{document}I) Kymograph along the red circle in (H), obtained from the MIP image. (J) Kymograph along the yellow line in (H), obtained from the MIP image. (K) Schematic diagram of F-actin structure in control and SMIFH2 treated cells. Stress fibers (dark red) were immobile, while the dorsal actin fibers formed an ‘actomyosin ring’ (light blue), moved in centripetal and clockwise directions. Scale bar: 10 µm.
+**Figure 5.:** (A) Maximum intensity projection (MIP) image of Caco-2 treated with DMSO. (B) Snapshot images in the green rectangle in (A), obtained from the $z$-slice at $z=0$ is defined as the plane closest to the substrate. The green line is the same as the green circle in (A). Arrowheads indicate the position of filaments. (C) Snapshot images in the red rectangle in (A) obtained from the $z$-slice at $z=0.5\mum$. The red line is the same as the red circle in (A). Arrowheads indicate the position of filaments. (D) Kymograph along the green circle in (A), obtained from a slice at $z=0$. (E) Kymograph along the yellow line in (A), obtained from the $z$-slice at $z=0$. (F) Kymograph along the red circle in (A), obtained from the $z$-slice at $z=0.5\mum$. inset: schematic diagram of F-actin (black lines) passing through the circle. (G) Kymograph along the yellow line in (A), obtained from the $z$-slice $z=0.5\mum$. (H) MIP image of Caco-2 treated with SMIFH2 ($40\mum$). (I) Kymograph along the red circle in (H), obtained from the MIP image. (J) Kymograph along the yellow line in (H), obtained from the MIP image. (K) Schematic diagram of F-actin structure in control and SMIFH2 treated cells. Stress fibers (dark red) were immobile, while the dorsal actin fibers formed an ‘actomyosin ring’ (light blue), moved in centripetal and clockwise directions. Scale bar: 10 µm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/102296/elife-102296-video4.mp4.jpg)
+
+**Video 4.:** Scale bar: 20 µm.
 
 We next examined the distribution of F-actin and Myosin II in the cells treated with SMIFH2 (Figure 4C, C’, D). As observed by conventional confocal microscopy, the chirally tilted actin stress fibers disappeared at the peripheral region, and instead, F-actin bundles extended radially from the cell edge toward its center (bold line in Figure 4C, right; dark red lines in Figure 5K, bottom). In the interior region, actin filaments were organized into a dense network with a concentric pattern, which was distributed at the dorsal side of cells (green in the left and dotted lines in the right panels of Figure 4C; light blue line in Figure 5K, bottom; green in Figure 4C’). Myosin IIA exhibited a similar reorganization as seen in F-actin (Figure 4D). As observed in control cells, confocal microscopy showed that F-actin and Myosin IIA also colocalize in the SMIFH2-treated cells, particularly in the concentric actin clusters (Figure 3B). Thus, ExM analysis revealed more detailed features of actomyosin distribution, particularly detecting its concentric orientation, located more inside the cell than the peripheral stress fibers.
 
 Additionally, we examined cells treated with blebbistatin by ExM, confirming the results obtained by live imaging and conventional immunostaining (Figures 2A and 3C). The chiral orientation of stress fibers was greatly reduced in the peripheral region after this treatment (Figure 4—figure supplement 1). Furthermore, the dorsally located concentric actin filaments became undetectable in these specimens. These results are consistent with the idea that Myosin II plays a complex role, including in the organization of dorsal actin filaments.
 
-## F-actin ring circulates along the dorsal membrane
+### F-actin ring circulates along the dorsal membrane
 
-To gain further insights into the role of the actomyosin system in the mechanism of intracellular rotation, we examined how F-actin behaves during the rotational process. To this end, we performed live imaging of Caco-2 cells expressing Lifeact-mEmerald, using lattice light-sheet microscopy (LLSM). Since LLSM has a higher spatial resolution, particularly in the z-direction, compared to conventional confocal microscopy, we could identify the dynamics of F-actin in 3D more precisely. We found that stress fibers at the ventral side were almost immobile (Figure 5B), while the actin fibers at the dorsal side moved clockwise as indicated in snapshot images (Figure 5C). Such spatiotemporal dynamics can be systematically seen in the kymographs along different lines, drawn in Figure 5A, at different heights z\begin{document}$ z$\end{document} in control cells. In Figure 5D, E, the kymographs along the green circle and the yellow line, which were analyzed at the ventral side, indicate that F-actin bundles in the peripheral region with the chiral tilted pattern are almost immobile (arrow in Figure 5D, Video 5). Figure 5F, G shows the kymographs along the red circle and the yellow line (drawn in Figure 5A), respectively, at the height where the dorsal cell membrane exists. Rightward descending lines in the kymograph along the red circle indicate that the filaments move in a clockwise direction (Figure 5F, arrow 1). There are also leftward descending lines that appear at the same time as the rightward descending lines appear but with different steepness (Figure 5F, arrow 2). These pairs of lines indicate that the filaments are moving clockwise as well as centripetally (Figure 5F, inset). Furthermore, the kymograph along the yellow line (Figure 5A) also confirms that the filaments are moving centripetally (arrow in Figure 5G). To summarize, along the dorsal cell membrane, the concentric actin filaments move clockwise while also moving in centripetally (see also Video F-actin ring circulates along the dorsal membrane): we hereafter call this concentric structure ‘the actomyosin ring’ (Figure 5K).
+To gain further insights into the role of the actomyosin system in the mechanism of intracellular rotation, we examined how F-actin behaves during the rotational process. To this end, we performed live imaging of Caco-2 cells expressing Lifeact-mEmerald, using lattice light-sheet microscopy (LLSM). Since LLSM has a higher spatial resolution, particularly in the z-direction, compared to conventional confocal microscopy, we could identify the dynamics of F-actin in 3D more precisely. We found that stress fibers at the ventral side were almost immobile (Figure 5B), while the actin fibers at the dorsal side moved clockwise as indicated in snapshot images (Figure 5C). Such spatiotemporal dynamics can be systematically seen in the kymographs along different lines, drawn in Figure 5A, at different heights $z$ in control cells. In Figure 5D, E, the kymographs along the green circle and the yellow line, which were analyzed at the ventral side, indicate that F-actin bundles in the peripheral region with the chiral tilted pattern are almost immobile (arrow in Figure 5D, Video 5). Figure 5F, G shows the kymographs along the red circle and the yellow line (drawn in Figure 5A), respectively, at the height where the dorsal cell membrane exists. Rightward descending lines in the kymograph along the red circle indicate that the filaments move in a clockwise direction (Figure 5F, arrow 1). There are also leftward descending lines that appear at the same time as the rightward descending lines appear but with different steepness (Figure 5F, arrow 2). These pairs of lines indicate that the filaments are moving clockwise as well as centripetally (Figure 5F, inset). Furthermore, the kymograph along the yellow line (Figure 5A) also confirms that the filaments are moving centripetally (arrow in Figure 5G). To summarize, along the dorsal cell membrane, the concentric actin filaments move clockwise while also moving in centripetally (see also Video F-actin ring circulates along the dorsal membrane): we hereafter call this concentric structure ‘the actomyosin ring’ (Figure 5K).
+
+![Video 5.](https://cdn.elifesciences.org/articles/102296/elife-102296-video5.mp4.jpg)
 
 We also examined the dynamics of actin fibers in cells treated with SMIFH2, using live image data obtained by LLSM (Figure 5H–J). In Figure 5I, J, the kymographs along the red circle and yellow line (drawn in Figure 5H), respectively, indicate that the actomyosin filaments organizing the ring move clockwise (Figure 5I), and simultaneously flow centripetally (arrow 1 in Figure 5J), similar to the control condition. Additionally, we found that in contrast to the immobile stress fibers with a chiral pattern in control cells (dark red lines in Figure 5K, top), F-actin bundles radially extending from the cell periphery in SMIFH2-treated cells appeared to move passively in a clockwise direction at their proximal ends, although they seem to keep the anchorage of the distal ends to the cell edge (arrow 2 in Figure 5J; Video 6 and dark red lines in Figure 5K, bottom), implying that these radial F-actin bundles do not play active roles in the chiral motion of the actin ring. Thus, the concentric ring of flowing actomyosin filaments was detected also in the SMIFH2-treated cells but showing modified features (Figure 5K). Importantly, the ring developed more extensively after SMIFH2 treatment.
 
+![Video 6.](https://cdn.elifesciences.org/articles/102296/elife-102296-video6.mp4.jpg)
+
+**Video 6.:** Scale bar: 10 µm.
+
 To see if the actomyosin ring is involved in driving the rotating flow, we estimated the spatial distribution of flow speed and orientation (velocity field) from the F-actin time-lapse images using particle image velocimetry (PIV) for both control and SMIFH2-treated cells (Figure 6, Figure 6—figure supplement 1, and Figure 6—video 1). In the cytoplasmic region between the actomyosin ring and the nucleus, we did not detect clear actin filaments, but only found blobs of actin (Figure 5A, H, and green dots in Figure 5K). These blobs also circulated clockwise. From the velocity field inside the cells inferred by PIV, we calculated the angular component of the velocity with respect to the cell center and then converted it into the angular velocity, that is change in the angle per unit time. The spatial profile of the angular velocity (Figure 6A, Figure 6—figure supplement 1A–H) indicates that it is higher in the region where concentric actin filaments are present, rather than the region where the actin blobs are present, indicating that the driving force could be present in the region of the actomyosin ring. The angular velocity averaged over the angular direction shows the peaks in the range from 10 to 20 µm (Figure 6C). Since the size of the actomyosin ring varies from cell to cell, we manually determined the region of the actomyosin ring, and then replotted the angular velocity against the distance scaled by the inner radius of the actomyosin ring (Figure 6D). We found that the peak positions of individual angular velocity profiles, as well as the peak positions of the angular velocity profiles averaged over samples, are located around the scaled distance of one, which suggests that the driving force is present in the region around the actomyosin ring.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/102296/elife-102296-fig6-v2.jpg)
+
+**Figure 6.:** Spatial profile of angular velocity (color code) obtained from the time average of the PIV vector field in a control cell (A: DMSO) or in a cell treated with SMIFH2 (B) superimposed on a snapshot F-actin image. Scale bar: 20 µm. (C) Average angular velocity as a function of the distance from the center. (D) Average angular velocity as a function of a distance scaled by the inner radius of the actomyosin ring of individual cells. Here, positive angular velocity indicates clockwise rotation. Sample averages for two conditions are indicated by the solid lines. Error bars and shaded areas represent standard errors of the means (SEM).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/102296/elife-102296-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** PIV analysis of cell treated with DMSO and SMIFH2. Spatial distribution of azimuthal velocity (top), radial velocity (middle), and angular velocity (bottom) for cell treated with DMSO (control) (A–D) and with SMIFH2 (E–H). (I) Angular averaged azimuthal velocity plotted against the distance from the cell center. (J) Angular averaged radial velocity plotted against the distance from the cell center. Scale bar: 20 µm. Positive azimuthal and angular velocities indicate clockwise rotation.
 
 We additionally observed another interesting phenomenon to support our idea. In an SMIFH2-treated cell that was imaged by a conventional fluorescence confocal microscope (LSM880, Zeiss), we, by chance, observed that fluorescent debris that seemed to attach to the actomyosin ring persistently circulated approximately three times as fast as the rotating speed of the nucleus: ∼400 and ∼140 degrees/hr for the debris and nucleus, respectively. (Figure 6—video 2, yellow and white lines, respectively). In the other cell observed by LLSM, we observed two fluorescent debris circulating in the area of the actomyosin ring, and in the cytoplasmic region between the actomyosin ring and the nucleus (Figure 6—video 3, yellow and red circles): the angular velocities of the circulating debris were ∼250 and ∼190 degrees/hr, respectively. Although we could not measure the rotating speed of the nucleus in the second cell because the nucleus was barely visible in the LLSM live image, the circulating speeds of the debris are more than two times faster than the typical nuclear angular velocity of SMIFH2-treated cells (Figure 2B–D). These observations support the notion that the actomyosin ring generates a driving force for rotating the nucleus and cytoplasm. Note that, since the angular velocity estimated from the motion of debris was faster than that obtained from the PIV analysis, our PIV analysis for F-actin dynamics may underestimate the flow velocity.
 
-## A theoretical model of chiral cytoplasmic flow induced by the actomyosin ring
+### A theoretical model of chiral cytoplasmic flow induced by the actomyosin ring
 
 Our observations indicate the possibility that the actomyosin ring is a cell-scale structure that drives the chiral cytoplasmic flow. Since the actin filaments of the ring seemed not to have contact with the peripheral stress fibers in control cells, their rotational motion should be driven solely through its own mechanism, without relying on other structures, contrasted with the previous model that the contact between transverse fibers and radial fibers plays a role in establishing the cell chirality in HFF (Tee et al., 2015). Then, how can a concentric pattern without an obvious cell-scale chiral structure generate chiral circulating flow? We here theoretically address this question.
 
-We employ a theoretical framework of active chiral fluid (Fürthauer et al., 2012; Fürthauer et al., 2013; Naganathan et al., 2014), which has been proposed to describe the fluid dynamics driven by active chiral components. We model the actomyosin ring as an active chiral fluid driven by two active elements: (1) a force dipole originating from the contraction force of actomyosin and (2) a torque dipole generated when a bipolar Myosin II filament rotates two antiparallel actin filaments to create a pair of counter-rotating vortex flows (Figure 7A). By representing the orientation of actomyosin fibers as orientational field p\begin{document}$\mathbf{p}$\end{document} and the fluid velocity as v\begin{document}$\mathbf{v}$\end{document}, the hydrodynamic equation is described by the Stokes equation with the active contributions:(1)0=−∇P+η∇2v+ζa∇⋅pp+12ζc∇×(∇⋅pp),\begin{document}$$\displaystyle  0=-\nabla {P}+\eta\nabla^2 {\mathbf{v}}+\zeta^a\nabla\cdot {\mathbf{pp}}+\frac{1}{2}\zeta^c\nabla\times (\nabla \cdot {\mathbf{pp}}),$$\end{document}
+We employ a theoretical framework of active chiral fluid (Fürthauer et al., 2012; Fürthauer et al., 2013; Naganathan et al., 2014), which has been proposed to describe the fluid dynamics driven by active chiral components. We model the actomyosin ring as an active chiral fluid driven by two active elements: (1) a force dipole originating from the contraction force of actomyosin and (2) a torque dipole generated when a bipolar Myosin II filament rotates two antiparallel actin filaments to create a pair of counter-rotating vortex flows (Figure 7A). By representing the orientation of actomyosin fibers as orientational field $p$ and the fluid velocity as $v$, the hydrodynamic equation is described by the Stokes equation with the active contributions:
 
-where P\begin{document}$ P$\end{document} is the pressure satisfying the incompressibility condition ∇⋅v=0\begin{document}$ \nabla\cdot{\mathbf{v}}=0$\end{document} and η\begin{document}$ \eta$\end{document} is the fluid viscosity. Here, the terms with ζa\begin{document}$ \zeta^{a}$\end{document} and ζc\begin{document}$ \zeta^{c}$\end{document} are forces generated by the force dipoles (achiral) and torque dipoles (chiral), respectively. ζa\begin{document}$ \zeta^{a}$\end{document} and ζc\begin{document}$ \zeta^{c}$\end{document} represent the strength of the forces. The signs of ζa\begin{document}$\zeta^{a}$\end{document} and ζc\begin{document}$\zeta^{c}$\end{document} would be determined by the nature of force and torque generation at the molecular scale, independently of the cell-scale orientation of actomyosin. Considering that the actomyosin generates contractile force and right-handed torque as shown in Figure 7A; Nishizaka et al., 1993, the signs of the coefficients are ζa>0\begin{document}$\zeta^{a} \gt 0$\end{document} and ζc>0\begin{document}$ \zeta^{c} \gt 0$\end{document}. We hereafter assume ζa>0\begin{document}$\zeta^{a} \gt 0$\end{document} and ζc>0\begin{document}$ \zeta^{c} \gt 0$\end{document} constant in space. We also assume the actomyosin filaments have a bipolar structure (Figure 7A) so that Equation 1 is invariant under p→−p\begin{document}$\mathbf{p}\to-\mathbf{p}$\end{document}. We, for convenience, represent the spatial variation of the density and order of the actomyosin by introducing an effective order parameter S\begin{document}$ S$\end{document} as p=Sn\begin{document}$\mathbf{p}=S\mathbf{n}$\end{document} (see Equation 11), where n\begin{document}$ \mathbf{n}$\end{document} is a unit vector.
+$$
+0=−∇P+η∇^{2}v+ζ^{a}∇⋅pp+\frac{1}{2}ζ^{c}∇\times(∇⋅pp),
+$$
 
-We first numerically solved Equation 1, assuming a cell with an axisymmetric geometry shown in Figure 7—figure supplement 1. Based on the experimental observation, we also assumed that actomyosin is distributed on the dorsal side, where the effective order parameter S\begin{document}$ S$\end{document} is set to be positive reflecting the density distribution of actomyosin (Figure 7B). Figure 7C shows the spatial profile of the azimuthal velocity vφ\begin{document}$ v_{\varphi}$\end{document} in the vertical section of the cell. In the entire region, vφ\begin{document}$v_{\varphi}$\end{document} is negative, indicating that the flow is generated in a clockwise direction viewed from above. Thus, the numerical result shows that the concentric pattern of actomyosin can generate chiral cytoplasmic flow, and the direction is clockwise, consistent with our experimental observation.
+where $P$ is the pressure satisfying the incompressibility condition $∇⋅v=0$ and $η$ is the fluid viscosity. Here, the terms with $ζ^{a}$ and $ζ^{c}$ are forces generated by the force dipoles (achiral) and torque dipoles (chiral), respectively. $ζ^{a}$ and $ζ^{c}$ represent the strength of the forces. The signs of $ζ^{a}$ and $ζ^{c}$ would be determined by the nature of force and torque generation at the molecular scale, independently of the cell-scale orientation of actomyosin. Considering that the actomyosin generates contractile force and right-handed torque as shown in Figure 7A; Nishizaka et al., 1993, the signs of the coefficients are $ζ^{a}>0$ and $ζ^{c}>0$. We hereafter assume $ζ^{a}>0$ and $ζ^{c}>0$ constant in space. We also assume the actomyosin filaments have a bipolar structure (Figure 7A) so that Equation 1 is invariant under $p→−p$. We, for convenience, represent the spatial variation of the density and order of the actomyosin by introducing an effective order parameter $S$ as $p=Sn$ (see Equation 11), where $n$ is a unit vector.
 
-How can we understand the underlying mechanism behind the chiral cytoplasmic flow resulting from the concentric pattern of actomyosin? The active chiral term ζc∇×∇⋅pp\begin{document}$\zeta^{c}\nabla\times\nabla\cdot{\mathbf{pp}}$\end{document} in Equation 1 can be interpreted as follows: the rotation of the axial vector field ζc∇⋅pp\begin{document}$\zeta^{c}\nabla\cdot{\mathbf{pp}}$\end{document}, which is an active torque induced by chiral torque dipole, generates a force to induce a flow. For a concentric orientational field on a ring domain, the active torque ζc∇⋅pp\begin{document}$\zeta^{c}\nabla\cdot{\mathbf{pp}}$\end{document} is generated, which is the clockwise direction when viewed from the outside toward the center of the ring, as shown in Figure 7E middle (magenta arrow). The actomyosin ring formed along the dorsal side in Caco-2 cells is regarded as a stack of concentric orientational fields on a ring. In the region where actomyosin is present (S>0\begin{document}$ S \gt 0$\end{document}), the concentration of actomyosin naturally increases with z\begin{document}$ z$\end{document} which leads to an increase of the effective order parameter S\begin{document}$  S$\end{document} with respect to z\begin{document}$  z$\end{document} as indicated in Figure 7B (the gradient of red color in Figure 7E, bottom). For such an orientational field, the strength of the active torque increases as the height z\begin{document}$ z$\end{document} increases (magenta clockwise arrow in Figure 7E, bottom), forming a gradient of the active torque strength in the z\begin{document}$ z$\end{document} direction. Consequently, the gradient generates a force in a clockwise direction as viewed from above (black arrows in Figure 7E bottom, see also the right-hand side of Equation 12).
+![Figure 7.](https://cdn.elifesciences.org/articles/102296/elife-102296-fig7-v2.jpg)
 
-In the numerical simulation, we also investigated the spatial profile of ρ\begin{document}$\rho$\end{document} and z\begin{document}$z$\end{document} components (vρ,vz)\begin{document}$ (v_{\rho},v_{z})$\end{document} of the velocity field. Figure 7D shows that inward flow to the cell center occurs on the dorsal side, while the flow in the opposite direction occurs on the ventral side, resulting in the circulating flow in the ρ\begin{document}$  \rho$\end{document} and z\begin{document}$ z$\end{document} plane (Figure 7D). This circulating flow is driven by the contractile force of actomyosin on the dorsal side. Due to the circulating flow in the ρ\begin{document}$  \rho$\end{document}-z\begin{document}$ z$\end{document} plane and the azimuthal flow, swirling flows appear on both dorsal and ventral sides (Figure 7F, G, respectively). The sinistral swirling pattern at the dorsal side shown in Figure 7F is driven by both centripetal and clockwise flows, which were indeed observed by LLSM shown in Figure 5. Interestingly, the dextral swirling pattern of the flow on the ventral side is consistent with the chiral pattern of the stress fibers on the ventral side (Figure 1D). When the chiral flow was inhibited with blebbistatin, such a chiral pattern at the ventral side disappeared (Figures 2A and 3C and Figure 4—figure supplement 1), suggesting that the ventral chiral tilted patterns are indeed formed in a flow-dependent manner. This implies that the dextral chiral pattern of the stress fibers is self-organized through alignment with the fluid flow on the ventral side.
+**Figure 7.:** (A) Actomyosin generates a force dipole and a torque dipole. (B–D) Numerical simulation of Equation 1 assuming that the cell shape is axisymmetric around the cell center. (B) Actomyosin is distributed along the dorsal membrane with a concentric orientation. (C) Azimuthal velocity $v_{\phi}$ showing negative values indicating that the flow is generated in a clockwise direction. (D) Velocity in the radial $ρ$- and $z$- directions, ($v_{ρ}$, $v_{z}$), indicated by vectors. Circulating flow is generated in the $ρ$-$z$ plane. (E) Top: A concentric orientational field on a ring generates active torque in the center direction (magenta arrow). Middle: Active torque (magenta clockwise arrow) generated by a concentric orientational field on a ring. Bottom: A side view of a cell from the outside toward the cell center. The concentration of actomyosin increases in $z$ (gray color), leading to a gradient of active torque (magenta clockwise arrow) in the $z$ direction, resulting in a rotational flow clockwise (black arrows). (F) Flow profile along the dorsal side showing an inward sinistral swirling pattern. (G) Flow profile at the ventral side showing an outward dextral swirling pattern. (H) Angular velocity averaged in the $z$ direction plotted along the radial direction, showing a peak at around $ρ/ρ_{a}=1$. Here, $ρ_{a}$ is the leftmost position where $S\geq0.8$.
 
-Furthermore, we analyzed the radial distribution of the angular velocity and found that it exhibits a peak around the inner edge of the actomyosin ring ρ∼ρa\begin{document}$ \rho\sim\rho_{a}$\end{document} (Figure 7H) with the peak value of around 80 degree/h, consistent with the PIV analysis of the experimental data (Figure 6C, D). ρa\begin{document}$ \rho_{a}$\end{document} is the inner radius of the actomyosin ring. This result further supports the idea that the actomyosin ring drives the rotation of the nucleus.
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/102296/elife-102296-fig7-figsupp1-v2.jpg)
 
-## Depletion of dorsal actin and myosin coincides with the cessation of nuclear rotation
+**Figure 7—figure supplement 1.:** Cell shape used in the numerical simulation. Here, cell shape is assumed to be axisymmetric with respect to the cell center. $Z_{0}$ is the cell height, $R_{0}$ is the cell radius, and $r_{1}$, $ρ_{2}$ and α are the parameters that determine the cell shape.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/102296/elife-102296-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A–H) Radial and azimuthal velocities shown in Figure 6—figure supplement 1. (I) Radial and azimuthal velocities in the numerical simulation. In the seplots, the radial velocity is positive in the centripetal direction.
+
+We first numerically solved Equation 1, assuming a cell with an axisymmetric geometry shown in Figure 7—figure supplement 1. Based on the experimental observation, we also assumed that actomyosin is distributed on the dorsal side, where the effective order parameter $S$ is set to be positive reflecting the density distribution of actomyosin (Figure 7B). Figure 7C shows the spatial profile of the azimuthal velocity $v_{\phi}$ in the vertical section of the cell. In the entire region, $v_{\phi}$ is negative, indicating that the flow is generated in a clockwise direction viewed from above. Thus, the numerical result shows that the concentric pattern of actomyosin can generate chiral cytoplasmic flow, and the direction is clockwise, consistent with our experimental observation.
+
+How can we understand the underlying mechanism behind the chiral cytoplasmic flow resulting from the concentric pattern of actomyosin? The active chiral term $ζ^{c}∇\times∇⋅pp$ in Equation 1 can be interpreted as follows: the rotation of the axial vector field $ζ^{c}∇⋅pp$, which is an active torque induced by chiral torque dipole, generates a force to induce a flow. For a concentric orientational field on a ring domain, the active torque $ζ^{c}∇⋅pp$ is generated, which is the clockwise direction when viewed from the outside toward the center of the ring, as shown in Figure 7E middle (magenta arrow). The actomyosin ring formed along the dorsal side in Caco-2 cells is regarded as a stack of concentric orientational fields on a ring. In the region where actomyosin is present ($S>0$), the concentration of actomyosin naturally increases with $z$ which leads to an increase of the effective order parameter $S$ with respect to $z$ as indicated in Figure 7B (the gradient of red color in Figure 7E, bottom). For such an orientational field, the strength of the active torque increases as the height $z$ increases (magenta clockwise arrow in Figure 7E, bottom), forming a gradient of the active torque strength in the $z$ direction. Consequently, the gradient generates a force in a clockwise direction as viewed from above (black arrows in Figure 7E bottom, see also the right-hand side of Equation 12).
+
+In the numerical simulation, we also investigated the spatial profile of $ρ$ and $z$ components $(v_{ρ},v_{z})$ of the velocity field. Figure 7D shows that inward flow to the cell center occurs on the dorsal side, while the flow in the opposite direction occurs on the ventral side, resulting in the circulating flow in the $ρ$ and $z$ plane (Figure 7D). This circulating flow is driven by the contractile force of actomyosin on the dorsal side. Due to the circulating flow in the $ρ$-$z$ plane and the azimuthal flow, swirling flows appear on both dorsal and ventral sides (Figure 7F, G, respectively). The sinistral swirling pattern at the dorsal side shown in Figure 7F is driven by both centripetal and clockwise flows, which were indeed observed by LLSM shown in Figure 5. Interestingly, the dextral swirling pattern of the flow on the ventral side is consistent with the chiral pattern of the stress fibers on the ventral side (Figure 1D). When the chiral flow was inhibited with blebbistatin, such a chiral pattern at the ventral side disappeared (Figures 2A and 3C and Figure 4—figure supplement 1), suggesting that the ventral chiral tilted patterns are indeed formed in a flow-dependent manner. This implies that the dextral chiral pattern of the stress fibers is self-organized through alignment with the fluid flow on the ventral side.
+
+Furthermore, we analyzed the radial distribution of the angular velocity and found that it exhibits a peak around the inner edge of the actomyosin ring $ρ∼ρ_{a}$ (Figure 7H) with the peak value of around 80 degree/h, consistent with the PIV analysis of the experimental data (Figure 6C, D). $ρ_{a}$ is the inner radius of the actomyosin ring. This result further supports the idea that the actomyosin ring drives the rotation of the nucleus.
+
+### Depletion of dorsal actin and myosin coincides with the cessation of nuclear rotation
 
 Our experimental observations and theoretical results suggest that the actomyosin ring located at the dorsal side of Caco-2 cells plays a key role in the rotating motion. To further investigate this, we tested whether depletion of actomyosin at the dorsal side affected rotational motion. A previous study showed that the activation of RhoA by Rho Activator II (CN03), a specific RhoA activator, resulted in a decrease in apical stress fibers and an increase in basal stress fibers in vascular smooth muscle cells (Bade et al., 2017). Based on this information, we aimed to decrease the ratio of the actomyosin at the dorsal to ventral sides in Caco-2 cells using Rho Activator II. Remarkably, we observed a substantial increase in the thickness and number of actomyosin bundles at the ventral side, particularly beneath the nucleus, in Caco-2 cells treated with Rho Activator II, while the dorsal actomyosin appeared to decrease significantly (Figure 8A, C). The ratio of dorsal to ventral actomyosin was reduced significantly in the cell treated with Rho Activator II compared with control cells (Figure 8D, E). We then performed live imaging of Caco-2 cells treated with Rho Activator II and found that the rotational motion of the nucleus ceased (Figure 8—video 1), supporting the idea that the dorsal actomyosin is crucial for driving the rotation. We also noticed that in cells treated with Rho Activator II, the bundle of stress fibers was rearranged into a chordal pattern (Figure 8C) and exhibited chiral motion (Figure 8—video 1), the mechanism of which remains to be understood. On the other hand, in cells treated with SMIFH2, the dorsal actomyosin appeared to increase, while the ventral actomyosin decreased (Figure 8A, B). The ratio of dorsal to ventral actomyosin in cells treated with SMIFH2 tended to increase, although the difference was not statistically significant (Figure 8D, E). Taken together, our findings further support the idea that actomyosin at the dorsal side is crucial for driving rotation in Caco-2 cells.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/102296/elife-102296-fig8-v2.jpg)
+
+**Figure 8.:** (A) Actin (magenta) and Myosin II (yellow) showing localization with the dorsal marker Ezrin (cyan) in the DMSO-treated cell. (B) SMIFH2-treated cell showing an increase in dorsal actomyosin and a decrease in ventral actomyosin. (C) Rho Activator II (CN03) treated cell showing a decrease in dorsal actomyosin and an increase in ventral actomyosin. Control (DMSO) and SMIFH2-treated cells showed clockwise (CW) rotation, while CN03-treated cells did show rotation. Scale bars: 20 µm (horizontal) and 5 µm (vertical). Ratio of dorsal F-actin (D) and MyoII (E) to the ventral ones. p values were calculated using the Mann–Whitney U test. $∗p<0.05$, n.s.: $p≧0.05$.
 
 ## Discussion
 
@@ -131,100 +221,481 @@ It has been suggested that the left–right asymmetry at the tissue level origin
 
 ## Materials and methods
 
-## Cell cultures and transfection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Caco-2</td>
+      <td>ATCC</td>
+      <td></td>
+      <td>Ozawa et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>Lifeact-RFP</td>
+      <td>Ozawa et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>EMTB-3XGFP</td>
+      <td>Addgene, Miller and Bement, 2009</td>
+      <td>Plasmid \# 26741</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>Lifeact-mEmerald</td>
+      <td>Nakamura et al., 2012</td>
+      <td>pLVSIN-EF1a-Lifeact-mEmerald-IRES-pur</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: Myosin IIA</td>
+      <td>Invitrogen</td>
+      <td>MYH9HSS106871</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: Myosin IIB</td>
+      <td>Invitrogen</td>
+      <td>MYH10HSS106875</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: DAAM1</td>
+      <td>Invitrogen</td>
+      <td>DAAM1HSS177085</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: DIAPH2</td>
+      <td>Invitrogen</td>
+      <td>DIAPH2HSS102773</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA: Vinculin</td>
+      <td>Invitrogen</td>
+      <td>VCL s14764</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Myosin IIA (rabbit monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>M8064</td>
+      <td>IF (1:1000)WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Myosin IIB (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>8824</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-166574</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-rabbit IgG (goat monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>T20926</td>
+      <td>WB (1:1000–1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-mouse IgG (goat monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>T20912</td>
+      <td>WB (1:1000–1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Vinculin (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>V9131</td>
+      <td>IF (1:200)WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Ezrin (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>ab4069</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-DAAM1 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-100942</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Diaph2 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-55540</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 anti-rabbit IgG (goat monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>11034</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 anti-mouse IgG (goat monoclonal)</td>
+      <td>Invitrogen</td>
+      <td>A11029</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 anti-mouse IgG (donkey monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>AP192SA6</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Alexa Fluor 488 (rabbit monoclonal)</td>
+      <td>abcam</td>
+      <td>ab150077</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-conjugated anti-rabbit IgG (goat monoclonal)</td>
+      <td>Park et al., 2020</td>
+      <td>A11034</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Latranculin A</td>
+      <td>Sigma</td>
+      <td>L5163-100UG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Jasplakinolide</td>
+      <td>Toronto Research Chemicals Inc</td>
+      <td>J210700</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nocodazole</td>
+      <td>Sigma-Aldrich</td>
+      <td>M1404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CK666</td>
+      <td>Sigma-Aldrich</td>
+      <td>SML0006-5MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SMIFH2</td>
+      <td>Wako</td>
+      <td>4401/10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blebbistatin</td>
+      <td>Sigma</td>
+      <td>B0560-1MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rho Activator II</td>
+      <td>Cytoskeleton, Inc</td>
+      <td>Cat. #CN03</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 568 phalloidin</td>
+      <td>Invitrogen</td>
+      <td>A12380</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa Fluor 488 phalloidin</td>
+      <td>Invitrogen</td>
+      <td>A12379</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ Fiji</td>
+      <td>Schindelin et al., 2012</td>
+      <td>Version 2.14.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trim Galore</td>
+      <td>Krueger et al., 2023</td>
+      <td>Version 0.6.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HISAT2</td>
+      <td>Kim et al., 2019</td>
+      <td>Version 2.2.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools</td>
+      <td>Danecek et al., 2021</td>
+      <td>Version 1.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Stringtie</td>
+      <td>Kovaka et al., 2019</td>
+      <td>Version 2.2.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PIVlab</td>
+      <td>Thielicke and Sonntag, 2021</td>
+      <td>Version 2.56</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>Mathworks</td>
+      <td>R2024a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FreeFEM++</td>
+      <td>Hecht, 2012</td>
+      <td>Version 4.15</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell cultures and transfection
 
 Caco-2 (ATCC) cells were cultured in DMEM/Ham’s F-12 (FUJIFILM Wako Pure Chemical Corporation, 048-29785) supplemented with 10% fetal bovine serum (Sigma, F7524, Lot. BCBV 4600) and 1% penicillin/streptomycin (nacalai, 26253-84) at 37°C, 5% CO2 on collagen type I coated Dish (60 mm, IWAKI, 4010-010). For live imaging of actin, we used Lifeact-RFP-transfected Caco-2 cells which were established from Caco-2 (ATCC) in Ozawa et al., 2020. To live-image the microtubule dynamics, we transiently transfected Caco-2 cells with EMTB-3XGFP using Lipofectamine LTX Reagent with PLUS Reagent (Invitrogen, 15338100), according to the manufacturer’s protocol. EMTB-3XGFP was a gift from William Bement (Miller and Bement, 2009) (Addgene plasmid # 26741; http://n2t.net/addgene:26741; RRID:Addgene_26741) For Lifeact-mEmerald (pLVSIN-EF1a-Lifeact-mEmerald-IRES-pur), mEmerald-Lifeact-7 was inserted into pLVSIN-EF1a-IRES-pur at the BamHI and NotI sites by In-Fusion. The construction of pLVSIN-EF1a-IRES-pur has been described previously (Nakamura et al., 2012). mEmerald-Lifeact-7 was a gift from Michael Davidson (Addgene plasmid # 54148; http://n2t.net/addgene:54148; RRID:Addgene_54148).
 
 For protein depletion, cells were transfected with Stealth siRNA or Silencer Select siRNA using Lipofectamine RNAi MAX (Invitrogen). The following Stealth siRNAs were used: MYH9HSS106871 for Myosin IIA; MYH10HSS106875 for Myosin IIB; DAAM1HSS177085 for DAAM1; DIAPH2HSS102773 for DIAPH2; Negative Control Med GC Duplex (#10002823) for negative control. The following Silencer Select siRNA was used: VCL s14764 for vinculin. We examined the effects of RNA interference at 5 days.
 
-## Immunoblotting
+### Immunoblotting
 
 Cells were collected in RIPA buffer containing 1× cOmplete EDTA-free protease inhibitor (Roche, 05056489001) and were then mechanically lysed by passage through a 27 G needle on ice. Samples were boiled with 10% 2-mercaptoethanol for 3 min and separated by SuperSep 7.5% SDS–polyacrylamide gel electrophoresis (Fujifilm, 198–14941) at 250 V/30 mA for 70 min, and subsequently transferred to a 0.45-μm pore size PVDF membrane (Cytiva, 1080682) at 250 V/300 mA for 90 min in an ice bath. The PVDF membrane was blocked with Blocking One (Nacalai Tesque, 03953-95) at 4°C overnight and incubated with appropriate primary antibodies for 60 min at room temperature (RT). After washing the membrane with Tris-buffered saline with 0.1% Tween 20 (TBST), it was incubated with appropriate HRP-conjugated secondary antibodies for 60 min at RT. The membrane was then washed with TBST, followed by enhanced chemiluminescence detection (Bio-Rad, 1705060) using LAS-3000 mini (Fujifilm) for image acquisition. Signal intensity was analyzed using the Gel Analysis tool in ImageJ Fiji (Schindelin et al., 2012). The following antibodies were used: rabbit anti-Myosin IIA (Sigma-Aldrich, M8064, dilution 1:1000); rabbit anti-Myosin IIB (Cell Signaling Technology, 8824, dilution 1:1000); mouse anti-GAPDH (Santa Cruz Biotechnology, sc-166574, dilution 1:1000); HRP-conjugated goat anti-rabbit IgG (Invitrogen, T20926, dilution 1:1000); HRP-conjugated goat anti-mouse IgG (Invitrogen, T20912, dilution 1:1000). As a protein ladder marker, Precision Plus Protein Dual Color Standard (Bio-Rad, 1610374) was used.
 
-## Live cell imaging
+### Live cell imaging
 
 For live-image data in Figures 1 and 2, Figure 2—figure supplement 1, we used an inverted fluorescence microscope (Olympus, IX-81) equipped with a spinning disk confocal imaging unit (Yokogawa, CSU-X1), a 60×/1.35 oil immersion objective (Olympus, UPLSAPO60XO), and a 561-nm laser (Coherent, Sapphire LP) for RFP excitation or a 488-nm laser (Coherent, Sapphire LP) for GFP excitation. We used a 40×/1.35 oil-immersion objective (Olympus, UApo/340) for the microtubule snapshots in Figure 2—figure supplement 1. The cells were seeded sparsely on a collagen type I coated glass-based dish (IWAKI, 4970-011), and incubated in a stage-top incubator (Tokai Hit) at 37°C with 5% CO2 during live imaging.
 
-We took fluorescence images with multiple z-stacks (number of slices: 7 and Δz\begin{document}$ \Delta z$\end{document}: 0.5 μm) by EMCCD (Andor Technology, iXon+) every 15 min, and then made maximum intensity Z projections. For the microtubule snapshots in Figure 2—figure supplement 1, we applied a different condition (number of slices: 5 and Δz\begin{document}$ \Delta z$\end{document}: 1 μm).
+We took fluorescence images with multiple z-stacks (number of slices: 7 and $Δz$: 0.5 μm) by EMCCD (Andor Technology, iXon+) every 15 min, and then made maximum intensity Z projections. For the microtubule snapshots in Figure 2—figure supplement 1, we applied a different condition (number of slices: 5 and $Δz$: 1 μm).
 
 For the inhibitor experiments, the following inhibitors were used: latrunculin A (Sigma, L5163-100UG); Jasplakinolide (Toronto Research Chemicals Inc, J210700); Nocodazole (Sigma-Aldrich, M1404); CK666 (Sigma-Aldrich, SML0006-5MG); SMIFH2 (Wako, 4401/10); Blebbistatin (Sigma, B0560-1MG); Rho Activator II (Cytoskeleton, Inc, Cat. #CN03). We started live imaging about 2–3 hr after seeding cells and added the inhibitors about 40 min before the live imaging.
 
 When we observed the dynamics of the beads attached to the dorsal membrane of the cells, we used 2 μm carboxylate-modified beads (Invitrogen, F8887), and live-imaged the dynamics using the DIC channel of the microscope (Olympus, IX-81).
 
-## Analysis of rotation of nucleus
+### Analysis of rotation of nucleus
 
 We quantified the rotational behaviors of cells by manually tracking the dynamics of two nucleoli of each cell on DIC images (Segmentation Editor, Fiji). We defined the rotational angle of the cell nucleus by that of the line connecting the two nucleoli and analyzed the rotational dynamics using Python. In Figure 1A, B, we defined the initial time point of the measurement of the nuclear rotation by the time when we started the live imaging. In the inhibitor experiments in Figure 2, we determined the initial time point of the measurement as the time 5 hr after the initiation of live imaging, accounting for the time lag needed for the inhibitors to exert their effects. For each experimental condition, single-cell data were collected from multiple cells in a single culture dish; the number of cells analyzed is given in each figure legend.
 
-## Immunofluorescence antibody staining and microscopy
+### Immunofluorescence antibody staining and microscopy
 
 Cells were seeded on collagen type I coated cover slips (Neuvitro Corporation, NEU-H-12-COLLAGEN-45) and treated with the inhibitors. After 8 hr, the cells were fixed with 2% PFA in PBS(−) for 10 min, permeabilized with 0.25% Triton X-100 in PBS(−) for 10 min, blocked with 3% BSA in PBS(−) for 30 min. Then, we incubated cells with primary antibodies (2 hr), secondary antibodies (1 hr), and phalloidin (30 min) in a blocking buffer (3% BSA in PBS(−)). After washing with PBS(−) three times, the samples were mounted with a mounting medium with DAPI (Vector Laboratories, VECTASHIELD, H-1200). All the processes were performed at RT.
 
 We used rabbit anti-Myosin IIA (Sigma-Aldrich, M8064, 1:1000 for IF), mouse anti-Vinculin (Sigma, V9131, 1:200 for IF), and mouse anti-Ezrin (Abcam, ab4069, 1:1000 for IF) as the primary antibodies and Alexa Fluor 488 goat anti-rabbit IgG (Sigma-Aldrich, 11034, 1:1000 for IF), Alexa Fluor 488 goat anti-mouse IgG (Invitrogen, A11029, 1:1000 for IF), and Alexa Fluor 647 donkey anti-mouse IgG (Sigma-Aldrich, AP192SA6, 1:1000 for IF) as the secondary antibodies, respectively. For actin staining, we used Alexa Fluor 568 phalloidin (Invitrogen, A12380, 1:400).
 
-To analyze the sample, we took fluorescence images with multiple z-stacks (Δz\begin{document}$ \Delta z$\end{document}: 0.32 μm) using a laser scanning confocal microscope (Zeiss, LSM880) equipped with Plan-Apochromat 63×/1.4 Oil DIC M27. Images were processed with Fiji.
+To analyze the sample, we took fluorescence images with multiple z-stacks ($Δz$: 0.32 μm) using a laser scanning confocal microscope (Zeiss, LSM880) equipped with Plan-Apochromat 63×/1.4 Oil DIC M27. Images were processed with Fiji.
 
-## RNA-seq analysis
+### RNA-seq analysis
 
 RNA was extracted from three independent samples of Caco-2 cells using the RNeasy Kit (QIAGEN). Libraries were sequenced on an Illumina NextSeq 2000 platform with 100 bp single-end reads, supported by the RIKEN BDR DNA Analysis Facility at the Laboratory for Developmental Genome System. Adapter sequences were removed using Trim Galore. Reads were mapped to the reference genome (grch38) using HISAT2, sorted using samtools, and transcript abundances were quantified as transcripts per million using StringTie.
 
-## Expansion microscopy
+### Expansion microscopy
 
 Protein-retention ExM was carried out as described previously (Zhang et al., 2020). Cells were cultured on collagen type I (Sigma, C8919-20ML) coated cover slips and treated with the inhibitors. Fixation, permeabilization, and blocking were performed as described above. To visualize F-actin, the cells were stained with Alexa Fluor 488 phalloidin (Invitrogen, A12379, 1:400) and next stained for 60 min with a rabbit anti-Alexa Fluor 488 antibody (abcam, ab150077, 1:500) as the primary antibody and Alexa Fluor 488-conjugated goat anti-rabbit IgG (1:1000) as the secondary antibody (Park et al., 2020). After washing, cells were incubated with 100 μg/mL of 6-((Acryloyl)amino)hexanoic acid, succinimidyl ester overnight at RT in the dark. Samples were incubated in gelation solution (8.6% (wt/wt) sodium acrylate, 2.5% (wt/wt) acrylamide, 0.15% (wt/wt) N,N′-methylenebisacrylamide, 2 M NaCl, 1× PBS, 0.1% TEMED, 0.1% ammonium persulfate) for 5 min on ice. Gelation was allowed to proceed at RT for 1 hr. The gel and a cover slip were removed with tweezers and incubated with digestion buffer (0.5% Triton X-100, 1× TE buffer, 1 M NaCl, 8 unit/ml Proteinase K) overnight at RT in the dark. The gels were removed from the digestion buffer and placed in 50 ml of Milli-Q water. Water was exchanged three times every 30 min. Most of the gels expanded to about 4.5 times their original size. Gels were placed on a poly-L-lysine (Sigma-Aldrich, P4707) coated glass bottom dish, and fluorescence images were taken by a laser scanning confocal microscope (Zeiss, LSM880).
 
-## LLSM and image processing
+### LLSM and image processing
 
 The LLSM was home-built in the Kiyosue laboratory at RIKEN Center for Biosystems Dynamics Research following the design of the Betzig laboratory (Chen et al., 2014) under a research license agreement from Howard Hughes Medical Institute. Electric wiring was performed at RIKEN Advanced Manufacturing Support Team. Metal parts were processed by Maeda Precision Manufacturing Ltd and Zera Development Co. To create a lattice light sheet, a dithered square lattice was used through a spatial light modulator (Fourth Dimension Displays) in combination with an annular mask with 0.55 out and 0.44 inner numerical apertures (Photo-Sciences) and a custom NA 0.65 excitation objective (Special Optics). Images were acquired through a CFI Apo LWD 25XW 1.1-NA detection objective (Nikon) and a scientific sCMOS camera, Orca Flash 4.0 v3 (Hamamatsu Photonics). Caco-2 cells expressing Lifeact-mEmerald were seeded on a collagen-coated coverslip 3 hr before imaging. During imaging, cells were maintained in DMEM/Ham’s F-12 (FUJIFILM Wako Pure Chemical Corporation, 048-29785) supplemented with 10% fetal bovine serum (Sigma, F7524, Lot. BCBV 4600) at 37°C, 5% CO2. For live imaging of Lifeact-mEmerald, a 488-nm laser (MPB Communications) and a long-pass emission filter BLP01-488R-25 (Semrock) were used. Image stacks were collected with a 200-nm step size between planes with 10 ms per plane exposure time and 14.8-s time interval. After the acquisition, images were deskewed and deconvolved using LLSpy. After deskew processing, the voxel pitch was 0.104 × 0.104 × 0.103 μm.
 
-## PIV analysis
+### PIV analysis
 
-PIV analysis was performed using PIVlab (Thielicke and Sonntag, 2021) for the time-lapse images obtained by LLSM. The velocity vector fields were calculated using a multi-grid interrogation (64 × 64, 32 × 32, and 16 × 16 pixel sizes of interrogation windows with 50% overlap each). PIV was performed in the masked area, and the masked area was determined by thresholding the time-integrated image. Using the velocity vector field (vx,vy\begin{document}$ v_{x},v_{y}$\end{document}), we first calculated azimuthal (vφ\begin{document}$ v_{\varphi}$\end{document}) and radial (vρ\begin{document}$ v_{\rho}$\end{document}) velocities as vφ=x^vy−y^vx\begin{document}$ v_{\varphi}=\hat{x}v_{y}-\hat{y}v_{x}$\end{document} and vr=x^vx+y^vy\begin{document}$ v_{r}=\hat{x}v_{x}+\hat{y}v_{y}$\end{document}, where x^=x/r\begin{document}$ \hat{x}=x/r$\end{document} and y^=y/r\begin{document}$\hat{y}=y/r$\end{document} with (x,y)\begin{document}$(x,y)$\end{document} being the position from the center of cell and r=x2+y2\begin{document}$ r=\sqrt{x^{2}+y^{2}}$\end{document}. Here, the cell center was taken as the xy\begin{document}$ xy$\end{document}-coordinate of the highest position of the unimodal-shaped cell. From the DIC image, the nucleus always rotates around the center of the nucleus, with the highest position of the cell just above the nucleus center. Then, the angular velocity ω\begin{document}$ \omega$\end{document} was obtained as ω=vφ/r\begin{document}$ \omega=v_{\varphi}/r$\end{document}. The temporal averages of vφ\begin{document}$ v_{\varphi}$\end{document} and ω\begin{document}$\omega$\end{document} are shown in Figure 6—figure supplement 1 for all samples analyzed control cells (DMSO) (Figure 6—figure supplement 1A–D) and cells treated with SMIFH2 (Figure 6—figure supplement 1E–H). The angular averages of vφ\begin{document}$ v_{\varphi}$\end{document} (Figure 6—figure supplement 1I), vr\begin{document}$ v_{r}$\end{document} (Figure 6—figure supplement 1J), and ω\begin{document}$ \omega$\end{document} (Figure 6C) were obtained from their temporal averages at each spatial point. These averages were plotted against the radius scaled by the inner radius of the actomyosin ring in Figure 6D. We here manually identified the inner edge of the actomyosin ring and calculated the inner radius for each cell.
+PIV analysis was performed using PIVlab (Thielicke and Sonntag, 2021) for the time-lapse images obtained by LLSM. The velocity vector fields were calculated using a multi-grid interrogation (64 × 64, 32 × 32, and 16 × 16 pixel sizes of interrogation windows with 50% overlap each). PIV was performed in the masked area, and the masked area was determined by thresholding the time-integrated image. Using the velocity vector field ($v_{x},v_{y}$), we first calculated azimuthal ($v_{\phi}$) and radial ($v_{ρ}$) velocities as $v_{\phi}=x^v_{y}−y^v_{x}$ and $v_{r}=x^v_{x}+y^v_{y}$, where $x^=x/r$ and $y^=y/r$ with $(x,y)$ being the position from the center of cell and $r=\sqrt{x^{2}+y^{2}}$. Here, the cell center was taken as the $xy$-coordinate of the highest position of the unimodal-shaped cell. From the DIC image, the nucleus always rotates around the center of the nucleus, with the highest position of the cell just above the nucleus center. Then, the angular velocity $\omega$ was obtained as $\omega=v_{\phi}/r$. The temporal averages of $v_{\phi}$ and $\omega$ are shown in Figure 6—figure supplement 1 for all samples analyzed control cells (DMSO) (Figure 6—figure supplement 1A–D) and cells treated with SMIFH2 (Figure 6—figure supplement 1E–H). The angular averages of $v_{\phi}$ (Figure 6—figure supplement 1I), $v_{r}$ (Figure 6—figure supplement 1J), and $\omega$ (Figure 6C) were obtained from their temporal averages at each spatial point. These averages were plotted against the radius scaled by the inner radius of the actomyosin ring in Figure 6D. We here manually identified the inner edge of the actomyosin ring and calculated the inner radius for each cell.
 
-## Theoretical model
+### Theoretical model
 
-We here describe a derivation of our 3D model (Fürthauer et al., 2012). We assume a low Reynolds number limit, a steady state, and incompressibility. In the theory of active chiral fluid, the momentum conservation is represented as:(2)0=∂β(σαβs+σαβe+σαβa),\begin{document}$$\displaystyle  0=\partial_{\beta}(\sigma_{\alpha\beta}^s + \sigma_{\alpha\beta}^{e}+\sigma_{\alpha\beta}^{a}),$$\end{document}
+We here describe a derivation of our 3D model (Fürthauer et al., 2012). We assume a low Reynolds number limit, a steady state, and incompressibility. In the theory of active chiral fluid, the momentum conservation is represented as:
 
-where σαβs\begin{document}$ \sigma^{s}_{\alpha\beta}$\end{document} and σαβa\begin{document}$ \sigma^{a}_{\alpha\beta}$\end{document} are the symmetric and asymmetric parts of the deviatoric stress, respectively. σαβe\begin{document}$ \sigma^{e}_{\alpha\beta}$\end{document} is Ericksen stress (hydrostatic stress). The indices α, β, and γ denote the three Cartesian coordinates x,y,\begin{document}$ x,y,$\end{document} and z\begin{document}$ z$\end{document}. The constitutive equations of the deviatoric stress are given:(3)σαβs=2ηuαβ+ζapαpβ,\begin{document}$$\displaystyle  \sigma_{\alpha\beta}^s=2\eta u_{\alpha \beta} + \zeta^a p_{\alpha}p_{\beta},$$\end{document}(4)σαβa=2η′(Ωαβ−ωαβ),\begin{document}$$\displaystyle  \sigma_{\alpha\beta}^{a}=2\eta'(\Omega_{\alpha \beta} -\omega_{\alpha \beta}),$$\end{document}
+$$
+0=∂_{\beta}(\sigma_{\alpha\beta}^{s}+\sigma_{\alpha\beta}^{e}+\sigma_{\alpha\beta}^{a}),
+$$
 
-where uαβ=(∂αvβ+∂βvα)/2\begin{document}$ u_{\alpha\beta}=(\partial_{\alpha}v_{\beta}+\partial_{\beta}v_{\alpha})/2$\end{document} and ωαβ=(∂αvβ−∂βvα)/2\begin{document}$ \omega_{\alpha\beta}=(\partial_{\alpha}v_{\beta}-\partial_{\beta}v_{\alpha})/2$\end{document} is the strain rate and the vorticity. Ωαβ\begin{document}$ \Omega_{\alpha\beta}$\end{document} is the spin rotation rate describing the intrinsic rotation rate of local volume elements. η\begin{document}$\eta$\end{document} and η′\begin{document}$\eta^{\prime}$\end{document} are viscosity coefficients, and ζa\begin{document}$\zeta^{a}$\end{document} is a coefficient of the achiral active stress. We here only consider anisotropic contributions of active terms allowed in a chiral nematic active fluid for simplicity. Also, in this study, since we assume that the orientational field p\begin{document}$ \mathbf{p}$\end{document} is fixed to be a concentric pattern, we omit the terms that derive from the molecular field. We thus define σαβe=−Pδαβ\begin{document}$ \sigma_{\alpha\beta}^{e}=-P\delta_{\alpha\beta}$\end{document}, where P\begin{document}$ P$\end{document} is the pressure serving as a Lagrange multiplier to satisfy the incompressibility.
+where $\sigma_{\alpha\beta}^{s}$ and $\sigma_{\alpha\beta}^{a}$ are the symmetric and asymmetric parts of the deviatoric stress, respectively. $\sigma_{\alpha\beta}^{e}$ is Ericksen stress (hydrostatic stress). The indices α, β, and γ denote the three Cartesian coordinates $x,y,$ and $z$. The constitutive equations of the deviatoric stress are given:
 
-The angular momentum conservation is given by the following equation:(5)∂γMαβγ=2σαβa,\begin{document}$$\displaystyle  \partial_\gamma M_{\alpha\beta\gamma}=2\sigma_{\alpha\beta}^a,$$\end{document}
+$$
+\sigma_{\alpha\beta}^{s}=2ηu_{\alpha\beta}+ζ^{a}p_{\alpha}p_{\beta},
+$$
 
-where Mαβγ\begin{document}$ M_{\alpha\beta\gamma}$\end{document} is the angular momentum flux. The constitutive equation is written as:(6)Mαβγ=κ∂γΩαβ+ζcϵαβδpδpγ,\begin{document}$$\displaystyle  M_{\alpha\beta\gamma}=\kappa \partial_\gamma \Omega_{\alpha\beta}+\zeta^c \epsilon_{\alpha\beta\delta}p_\delta p_\gamma,$$\end{document}
 
-where κ\begin{document}$ \kappa$\end{document} is a dissipative coefficient and ζc\begin{document}$  \zeta^{c}$\end{document} is a coefficient of the active chiral stress which reflects the symmetry of the torque dipole represented in Figure 7, which is called nematic chiral rod motor (Fürthauer et al., 2012). ϵαβγ\begin{document}$ \epsilon_{\alpha\beta\gamma}$\end{document} is the Levi-Civita symbol.
 
-We derive the following equation of motion from Equations 2–6,(7)0=−∂αP+2η∂βuαβ+∂βζapαpβ+12∂β∂γζcϵαβδpδpγ+κ4η′∂γ2(∂βPδαβ−2η∂βuαβ−2∂βζapαpβ+2η′∂βωαβ).\begin{document}$$\displaystyle  0= &  \,-\partial_\alpha P+2\eta\partial_\beta u_{\alpha\beta}+\partial_\beta \zeta^a p_{\alpha}p_{\beta}+\frac{1}{2}\partial_\beta \partial_\gamma\zeta^c \epsilon_{\alpha\beta\delta}p_\delta p_\gamma \\& + \frac{\kappa}{4\eta'}\partial_\gamma^2\left(\partial_\beta P\delta_{\alpha\beta}-2\eta\partial_\beta u_{\alpha\beta}-2\partial_\beta \zeta^a p_{\alpha}p_{\beta}+ 2\eta'\partial_\beta\omega_{\alpha\beta}\right).$$\end{document}
+$$
+\sigma_{\alpha\beta}^{a}=2η^{′}(Ω_{\alpha\beta}−\omega_{\alpha\beta}),
+$$
 
-In the final term of Equation 7, the length scale ℓ=κ/η′\begin{document}$ \ell=\sqrt{\kappa/\eta^{\prime}}$\end{document} is a characteristic molecular scale. Since we consider the hydrodynamics at the cell scale, we take the limit of ℓ→0\begin{document}$ \ell\rightarrow 0$\end{document} and omit the final term. Finally, applying the incompressibility condition ∂γvγ=0\begin{document}$  \partial_{\gamma}v_{\gamma}=0$\end{document}, we obtain the final form:(8)0=−∂αP+η∂γ2vα+∂βζapαpβ+12∂β∂γζcϵαβδpδpγ,\begin{document}$$\displaystyle  0=-\partial_\alpha P+\eta\partial_\gamma^2 v_{\alpha}+\partial_\beta \zeta^a p_{\alpha}p_{\beta}+ \frac{1}{2}\partial_\beta\partial_\gamma\zeta^c \epsilon_{\alpha\beta\delta}p_\delta p_\gamma, $$\end{document}
+where $u_{\alpha\beta}=(∂_{\alpha}v_{\beta}+∂_{\beta}v_{\alpha})/2$ and $\omega_{\alpha\beta}=(∂_{\alpha}v_{\beta}−∂_{\beta}v_{\alpha})/2$ is the strain rate and the vorticity. $Ω_{\alpha\beta}$ is the spin rotation rate describing the intrinsic rotation rate of local volume elements. $η$ and $η^{′}$ are viscosity coefficients, and $ζ^{a}$ is a coefficient of the achiral active stress. We here only consider anisotropic contributions of active terms allowed in a chiral nematic active fluid for simplicity. Also, in this study, since we assume that the orientational field $p$ is fixed to be a concentric pattern, we omit the terms that derive from the molecular field. We thus define $\sigma_{\alpha\beta}^{e}=−P\delta_{\alpha\beta}$, where $P$ is the pressure serving as a Lagrange multiplier to satisfy the incompressibility.
 
-which is equivalent to Equation 1. By introducing non-dimensional velocity, position, and pressure as v~=ηζaR0v\begin{document}$\tilde{\mathbf{v}}=\frac{\eta}{\zeta^{a}R_{0}}\mathbf{v}$\end{document}, (x~,y~,z~)=(x/R0,y/R0,z/R0)\begin{document}$(\tilde{x},\tilde{y},\tilde{z})=(x/R_0,y/R_0,z/R_0)$\end{document} and P~=P/ζa\begin{document}$  \tilde{P}=P/\zeta^{a}$\end{document}, where R0\begin{document}$  R_{0}$\end{document} is the cell radius, the non-dimensional form of Equation 1 is given by(9)0=−∇~P~+∇~2v~+∇~⋅pp+12ζ∇~×∇~⋅pp\begin{document}$$\displaystyle  0=-\tilde{\nabla} {\tilde{P}}+\tilde{\nabla}^2 {\tilde{\mathbf{v}}}+\tilde{\nabla}\cdot {\mathbf{pp}}+\frac{1}{2}\zeta\tilde{\nabla}\times\tilde{\nabla} \cdot {\mathbf{pp}}$$\end{document}
+The angular momentum conservation is given by the following equation:
 
-with the non-dimensional parameter(10)ζ=ζcζaR0,\begin{document}$$\displaystyle  \zeta=\frac{\zeta^c}{\zeta^a R_0},$$\end{document}
+$$
+∂_{\gamma}M_{\alpha\beta\gamma}=2\sigma_{\alpha\beta}^{a},
+$$
+
+where $M_{\alpha\beta\gamma}$ is the angular momentum flux. The constitutive equation is written as:
+
+$$
+M_{\alpha\beta\gamma}=κ∂_{\gamma}Ω_{\alpha\beta}+ζ^{c}ϵ_{\alpha\beta\delta}p_{\delta}p_{\gamma},
+$$
+
+where $κ$ is a dissipative coefficient and $ζ^{c}$ is a coefficient of the active chiral stress which reflects the symmetry of the torque dipole represented in Figure 7, which is called nematic chiral rod motor (Fürthauer et al., 2012). $ϵ_{\alpha\beta\gamma}$ is the Levi-Civita symbol.
+
+We derive the following equation of motion from Equations 2–6,
+
+$$
+0=−∂_{\alpha}P+2η∂_{\beta}u_{\alpha\beta}+∂_{\beta}ζ^{a}p_{\alpha}p_{\beta}+\frac{1}{2}∂_{\beta}∂_{\gamma}ζ^{c}ϵ_{\alpha\beta\delta}p_{\delta}p_{\gamma}+\frac{κ}{4η^{′}}∂_{\gamma}^{2}(∂_{\beta}P\delta_{\alpha\beta}−2η∂_{\beta}u_{\alpha\beta}−2∂_{\beta}ζ^{a}p_{\alpha}p_{\beta}+2η^{′}∂_{\beta}\omega_{\alpha\beta}).
+$$
+
+In the final term of Equation 7, the length scale $ℓ=\sqrt{κ/η^{′}}$ is a characteristic molecular scale. Since we consider the hydrodynamics at the cell scale, we take the limit of $ℓ→0$ and omit the final term. Finally, applying the incompressibility condition $∂_{\gamma}v_{\gamma}=0$, we obtain the final form:
+
+$$
+0=−∂_{\alpha}P+η∂_{\gamma}^{2}v_{\alpha}+∂_{\beta}ζ^{a}p_{\alpha}p_{\beta}+\frac{1}{2}∂_{\beta}∂_{\gamma}ζ^{c}ϵ_{\alpha\beta\delta}p_{\delta}p_{\gamma},
+$$
+
+which is equivalent to Equation 1. By introducing non-dimensional velocity, position, and pressure as $v~=\frac{η}{ζ^{a}R_{0}}v$, $(x~,y~,z~)=(x/R_{0},y/R_{0},z/R_{0})$ and $P~=P/ζ^{a}$, where $R_{0}$ is the cell radius, the non-dimensional form of Equation 1 is given by
+
+$$
+0=−∇~P~+∇~^{2}v~+∇~⋅pp+\frac{1}{2}ζ∇~\times∇~⋅pp
+$$
+
+with the non-dimensional parameter
+
+$$
+ζ=\frac{ζ^{c}}{ζ^{a}R_{0}},
+$$
 
 which essentially describes the chiral activity relative to the non-chiral active contribution. Hereafter, we omit tilde from the non-dimensional velocity, position, and pressure.
 
-In the numerical simulations, for simplicity, we suppose that the cell is axisymmetric as shown in Figure 7, Figure 7—figure supplement 1. Based on the experimental observations, we consider that the actomyosin bundles align along the circumferential direction: the concentric pattern of the actomyosin ring. We here represent the orientational order p\begin{document}$ \mathbf{p}$\end{document} of the actomyosin in the cylindrical coordinate (ρ,φ,z)\begin{document}$  (\rho,\varphi,z)$\end{document}. Since p\begin{document}$\mathbf{p}$\end{document} is aligned in the circumferential direction, p(ρ,z)\begin{document}$ \mathbf{p}(\rho,z)$\end{document} is given in the cylindrical coordinate by(11)p(ρ,z)=S(ρ,z)(0,1,0)t,\begin{document}$$\displaystyle  \mathbf{p}(\rho,z)=S(\rho,z)\left(0, 1, 0\right)^t,$$\end{document}
+In the numerical simulations, for simplicity, we suppose that the cell is axisymmetric as shown in Figure 7, Figure 7—figure supplement 1. Based on the experimental observations, we consider that the actomyosin bundles align along the circumferential direction: the concentric pattern of the actomyosin ring. We here represent the orientational order $p$ of the actomyosin in the cylindrical coordinate $(ρ,\phi,z)$. Since $p$ is aligned in the circumferential direction, $p(ρ,z)$ is given in the cylindrical coordinate by
 
-where S(ρ,z)\begin{document}$ S(\rho,z)$\end{document} is the effective strength of the orientation of the actomyosin and takes a finite value in the domain where the actomyosin ring is present. Since we did not see any specific orientational order in the direction of the cell height, at least at our imaging resolution, we considered the orientation of the actomyosin bundle to be parallel to the substrate, and the z\begin{document}$z$\end{document} component of p(ρ,z)\begin{document}$  \mathbf{p}(\rho,z)$\end{document} is zero. In the cylindrical coordinate, the equation of motion Equation 1 for the fluid velocity v=(vρ,vφ,vz)t\begin{document}$ \mathbf{v}=(v_{\rho},v_{\varphi},v_{z})^{t}$\end{document} and the pressure P\begin{document}$ P$\end{document} read(12)∂ρ2vφ+∂z2vφ+1ρ∂ρvφ−1ρ2vφ=ζρS∂zS,\begin{document}$$\displaystyle  \partial_\rho^2 v_\varphi + \partial_z^2 v_\varphi + \frac{1}{\rho}\partial_\rho v_\varphi-\frac{1}{\rho^2} v_\varphi= \frac{\zeta}{\rho} S \partial_z S,$$\end{document}(13)∂ρ2vρ+∂z2vρ+1ρ∂ρvρ−1ρ2vρ=∂ρP+S2ρ,\begin{document}$$\displaystyle  \partial_\rho^2 v_\rho + \partial_z^2 v_\rho + \frac{1}{\rho}\partial_\rho v_\rho-\frac{1}{\rho^2} v_\rho = \partial_\rho P + \frac{S^2}{\rho },$$\end{document}(14)∂ρ2vz+∂z2vz+1ρ∂ρvz=∂zP,\begin{document}$$\displaystyle  \partial_\rho^2 v_z + \partial_z^2 v_z + \frac{1}{\rho}\partial_\rho v_z =\partial_z P,$$\end{document}(15)vρρ+∂ρvρ+∂zvz=0.\begin{document}$$\displaystyle  \frac{v_\rho}{\rho}+\partial_\rho v_\rho+\partial_z v_z=0.$$\end{document}
+$$
+p(ρ,z)=S(ρ,z)(0,1,0)^{t},
+$$
 
-We numerically solve the equations with the following boundary shape, as shown in Figure 7—figure supplement 1. The dorsal boundary of the cell is well described by the following equations:(16){z=Z0−r1+r12−ρ2(0≤ρ≤ρ1)z=Z2−r22−(ρ−ρ2)2(ρ1≤ρ≤ρ3)z=−(tan⁡α)(ρ−R0)(ρ3≤ρ≤R0)\begin{document}$$\displaystyle \begin{cases} z&= Z_0-r_1+\sqrt{r_1^2-\rho^2}\quad (0\leq\rho\leq\rho_1)\\ z&= Z_2-\sqrt{r_2^2-(\rho-\rho_2)^2} \quad (\rho_1\leq\rho\leq\rho_3)\\ z&= -(\tan{\alpha})(\rho-R_0) \quad (\rho_3\leq\rho\leq R_0) \end{cases}$$\end{document}
+where $S(ρ,z)$ is the effective strength of the orientation of the actomyosin and takes a finite value in the domain where the actomyosin ring is present. Since we did not see any specific orientational order in the direction of the cell height, at least at our imaging resolution, we considered the orientation of the actomyosin bundle to be parallel to the substrate, and the $z$ component of $p(ρ,z)$ is zero. In the cylindrical coordinate, the equation of motion Equation 1 for the fluid velocity $v=(v_{ρ},v_{\phi},v_{z})^{t}$ and the pressure $P$ read
 
-with, (17){ρ1=r1ρ2r1+r2ρ3=ρ2−r2sin⁡αr2=(sin⁡α)(ρ2−R0)+(cos⁡α)Z2Z2=−r1−Z0−(cos⁡α)(r1+(ρ2−R0)sin⁡α)+(−r1+(r1−Z0)cos⁡α+R0sin⁡α)(−r1+(r1−Z0)cos⁡α+(R0−2ρ2)sin⁡α)sin2⁡α\begin{document}$$\displaystyle \begin{cases} \rho_1&= \frac{r_1\rho_2}{r_1+r_2}\\ \rho_3&= \rho_2-r_2\sin\alpha\\ r_2&= (\sin\alpha) (\rho_2-R_0)+(\cos\alpha) Z_2\\ Z_2&= -\frac{ r_1-Z_0-(\cos{\alpha})(r_1+(\rho_2-R_0)\sin\alpha) +\sqrt{(-r_1+(r_1-Z_0)\cos\alpha +R_0\sin\alpha)(-r_1+(r_1-Z_0)\cos\alpha+(R_0-2\rho_2)\sin\alpha)} }{\sin^2\alpha} \end{cases}$$\end{document}
+$$
+∂_{ρ}^{2}v_{\phi}+∂_{z}^{2}v_{\phi}+\frac{1}{ρ}∂_{ρ}v_{\phi}−\frac{1}{ρ^{2}}v_{\phi}=\frac{ζ}{ρ}S∂_{z}S,
+$$
 
-where Z0\begin{document}$ Z_{0}$\end{document} is the cell height, R0\begin{document}$ R_{0}$\end{document} is the cell radius, r1\begin{document}$ r_{1}$\end{document}, ρ2\begin{document}$ \rho_{2}$\end{document}, and α are the parameters that determine the cell shape. We determined the values of those parameters from the experimental data as Z0=8.2\begin{document}$ Z_{0}=8.2$\end{document} µm, r1=15.0\begin{document}$ r_{1}=15.0$\end{document} µm, ρ2=22.0\begin{document}$\rho_{2}=22.0$\end{document} µm, R0=35.0\begin{document}$R_{0}=35.0$\end{document} µm, and α=7.0×2π/360.0\begin{document}$\alpha=7.0\times 2\pi/360.0$\end{document}. The ventral boundary is specified by z=0\begin{document}$ z=0$\end{document}.
 
-Since the actomyosin ring is located along the dorsal surface, we practically consider that as shown in Figure 7B S(ρ,z)\begin{document}$S(\rho,z)$\end{document} is given by(18)S=(12tanh⁡(λ1((sin⁡β)ρ+(cos⁡β)z−(sin⁡β)R0+ξ))+12)(12tanh⁡(−λ2((cos⁡β)ρ−(sin⁡β)z−ξ3))+12)\begin{document}$$\displaystyle  S = \left(\frac{1}{2}\tanh{\bigl(\lambda_1\left((\sin\beta)\rho+(\cos\beta)z - (\sin\beta)R_0+\xi \right) \bigr) } +\frac{1}{2} \right) \left(\frac{1}{2}\tanh{\bigl(-\lambda_2\left((\cos\beta)\rho-(\sin\beta)z - \xi_3 \right) \bigr) } +\frac{1}{2} \right)$$\end{document}
 
-in the range (cos⁡β)ρ−(sin⁡β)z−ρ3′cos⁡β+(sin⁡β)(tan⁡β)R0≤0\begin{document}$(\cos\beta)\rho-(\sin\beta)z-\frac{\rho_{3}^{\prime}}{\cos\beta}+(\sin\beta)(\tan\beta)R_{0}\leq 0$\end{document}, and(19)S=12tanh⁡(λ(r2′+ξ−(ρ−ρ2)2+(z−Z2′)2))+12\begin{document}$$\displaystyle  S= \frac{1}{2}\tanh{\left(\lambda\left(r_2'+ \xi -\sqrt{(\rho-\rho_2)^2+(z-Z_2')^2} \right) \right) }+\frac{1}{2}$$\end{document}
+$$
+∂_{ρ}^{2}v_{ρ}+∂_{z}^{2}v_{ρ}+\frac{1}{ρ}∂_{ρ}v_{ρ}−\frac{1}{ρ^{2}}v_{ρ}=∂_{ρ}P+\frac{S^{2}}{ρ},
+$$
 
-in the range (cos⁡β)ρ−(sin⁡β)z−ρ3′cos⁡β+(sin⁡β)(tan⁡β)R0>0\begin{document}$ (\cos\beta)\rho-(\sin\beta)z-\frac{\rho_{3}^{\prime}}{\cos\beta}+(\sin\beta)(\tan\beta)R_{0} \gt 0$\end{document}. Here, ρ3′\begin{document}$\rho_{3}^{\prime}$\end{document}, r2′\begin{document}$ r_{2}^{\prime}$\end{document} and Z2′\begin{document}$ Z_{2}^{\prime}$\end{document} are given by(20){ρ3′=ρ2−r2′sin⁡βr2′=(sin⁡β)(ρ2−R0)+(cos⁡β)Z2′Z2′=−r1−Z0′−(cos⁡β)(r1+(ρ2−R0)sin⁡β)+(−r1+(r1−Z0′)cos⁡β+R0sin⁡β)(−r1+(r1−Z0′)cos⁡β+(R0−2ρ2)sin⁡β)sin2⁡β\begin{document}$$\displaystyle  \begin{cases} \rho_3'&= \rho_2-r_2'\sin\beta\\ r_2'&= (\sin\beta) (\rho_2-R_0)+(\cos\beta) Z_2'\\ Z_2'&= -\frac{ r_1-Z_0'-(\cos{\beta})(r_1+(\rho_2-R_0)\sin\beta) +\sqrt{(-r_1+(r_1-Z_0')\cos\beta +R_0\sin\beta)(-r_1+(r_1-Z_0')\cos\beta+(R_0-2\rho_2)\sin\beta)} }{\sin^2\beta} \end{cases}$$\end{document}
 
-where λ1\begin{document}$ \lambda_{1}$\end{document}, λ2\begin{document}$ \lambda_{2}$\end{document}, β\begin{document}$ \beta$\end{document}, ξ\begin{document}$\xi$\end{document}, ξ3\begin{document}$ \xi_{3}$\end{document}, and Z0′\begin{document}$Z_{0}^{\prime}$\end{document} are the parameters that determine the distribution of activity inside the cell. We used the following parameter values, λ1=150.0/R0μm−1\begin{document}$\lambda_{1} = {150.0}/{R_0}\,\mu\text{m}^{-1}$\end{document} , λ2=20.0/R0\begin{document}$\lambda_{2} = {20.0}/{R_0}$\end{document} , β=1.7×α\begin{document}$\beta = 1.7 \times \alpha$\end{document}, ξ=0.06×R0μm\begin{document}$\xi = 0.06 \times R_0\,\mu\text{m} $\end{document}, ξ3=0.7×R0μm/s\begin{document}$\xi_{3} = 0.7 \times R_0\,\mu\text{m/s} $\end{document} and Z0′=1.5×Z0\begin{document}$Z_{0}^{\prime} = 1.5 \times Z_0$\end{document}.
 
-We numerically solved the equations of motion by assuming the no-slip boundary condition for the ventral boundary, the free slip boundary condition for the dorsal surfaces (Kashiwabara et al., 2016), and the vanishing flow velocity for vρ\begin{document}$ v_{\rho}$\end{document} and vφ\begin{document}$ v_{\varphi}$\end{document} and the continuity for vz\begin{document}$v_{z}$\end{document} at the cell center ρ=0\begin{document}$\rho=0$\end{document}. We do not include any organelles such as a nucleus in the model for simplicity. The equations were solved numerically with a finite element method using software FreeFEM++ (Hecht, 2012).
+$$
+∂_{ρ}^{2}v_{z}+∂_{z}^{2}v_{z}+\frac{1}{ρ}∂_{ρ}v_{z}=∂_{z}P,
+$$
 
-We determined the parameter values to reproduce the experimental observation as follows. As shown in Figure 7—figure supplement 2A–H, the peak values of the radial and azimuthal velocities are comparable. To reproduce this property, we set the parameter value of ζ\begin{document}$ \zeta$\end{document} to be ζ=0.004\begin{document}$ \zeta=0.004$\end{document}. The simulation also reproduced the shift in the peak positions between two velocities. The peak values of the velocities in the simulation were about 2×10−4\begin{document}$2 \times 10^{-4}$\end{document} (unitless), while those in the experiments were about 5×10−3∼10−2μm/s\begin{document}$5 \times 10^{-3} \sim 10^{-2}\,\mu\text{m/s} $\end{document}, giving the velocity scale to be ζaR0η=50μm/s\begin{document}$\frac{\zeta^{a} R_0}{\eta} = 50\,\mu\text{m/s} $\end{document} and the time scale to be ηζa=0.7\begin{document}$\frac{\eta}{\zeta^{a}} = 0.7$\end{document} s. With this time scale, the peak value of the angular velocity was about 80 degree/hr as shown in Figure 7H, consistent with the experimental observation shown in Figure 6C, D.
 
-## Quantification of dorsal and ventral actomyosin
+
+$$
+\frac{v_{ρ}}{ρ}+∂_{ρ}v_{ρ}+∂_{z}v_{z}=0.
+$$
+
+We numerically solve the equations with the following boundary shape, as shown in Figure 7—figure supplement 1. The dorsal boundary of the cell is well described by the following equations:
+
+$$
+{z=Z_{0}−r_{1}+\sqrt{r_{1}^{2}−ρ^{2}}(0\leqρ\leqρ_{1})z=Z_{2}−\sqrt{r_{2}^{2}−(ρ−ρ_{2})^{2}}(ρ_{1}\leqρ\leqρ_{3})z=−(tan⁡\alpha)(ρ−R_{0})(ρ_{3}\leqρ\leqR_{0})
+$$
+
+with
+
+$$
+{ρ_{1}=\frac{r_{1}ρ_{2}}{r_{1}+r_{2}}ρ_{3}=ρ_{2}−r_{2}sin⁡\alphar_{2}=(sin⁡\alpha)(ρ_{2}−R_{0})+(cos⁡\alpha)Z_{2}Z_{2}=−\frac{r_{1}−Z_{0}−(cos⁡\alpha)(r_{1}+(ρ_{2}−R_{0})sin⁡\alpha)+\sqrt{(−r_{1}+(r_{1}−Z_{0})cos⁡\alpha+R_{0}sin⁡\alpha)(−r_{1}+(r_{1}−Z_{0})cos⁡\alpha+(R_{0}−2ρ_{2})sin⁡\alpha)}}{sin^{2}⁡\alpha}
+$$
+
+where $Z_{0}$ is the cell height, $R_{0}$ is the cell radius, $r_{1}$, $ρ_{2}$, and α are the parameters that determine the cell shape. We determined the values of those parameters from the experimental data as $Z_{0}=8.2$ µm, $r_{1}=15.0$ µm, $ρ_{2}=22.0$ µm, $R_{0}=35.0$ µm, and $\alpha=7.0\times2\pi/360.0$. The ventral boundary is specified by $z=0$.
+
+Since the actomyosin ring is located along the dorsal surface, we practically consider that as shown in Figure 7B $S(ρ,z)$ is given by
+
+$$
+S=(\frac{1}{2}tanh⁡(\lambda_{1}((sin⁡\beta)ρ+(cos⁡\beta)z−(sin⁡\beta)R_{0}+ξ))+\frac{1}{2})(\frac{1}{2}tanh⁡(−\lambda_{2}((cos⁡\beta)ρ−(sin⁡\beta)z−ξ_{3}))+\frac{1}{2})
+$$
+
+in the range $(cos⁡\beta)ρ−(sin⁡\beta)z−\frac{ρ_{3}^{′}}{cos⁡\beta}+(sin⁡\beta)(tan⁡\beta)R_{0}\leq0$, and
+
+$$
+S=\frac{1}{2}tanh⁡(\lambda(r_{2}^{′}+ξ−\sqrt{(ρ−ρ_{2})^{2}+(z−Z_{2}^{′})^{2}}))+\frac{1}{2}
+$$
+
+in the range $(cos⁡\beta)ρ−(sin⁡\beta)z−\frac{ρ_{3}^{′}}{cos⁡\beta}+(sin⁡\beta)(tan⁡\beta)R_{0}>0$. Here, $ρ_{3}^{′}$, $r_{2}^{′}$ and $Z_{2}^{′}$ are given by
+
+$$
+{ρ_{3}^{′}=ρ_{2}−r_{2}^{′}sin⁡\betar_{2}^{′}=(sin⁡\beta)(ρ_{2}−R_{0})+(cos⁡\beta)Z_{2}^{′}Z_{2}^{′}=−\frac{r_{1}−Z_{0}^{′}−(cos⁡\beta)(r_{1}+(ρ_{2}−R_{0})sin⁡\beta)+\sqrt{(−r_{1}+(r_{1}−Z_{0}^{′})cos⁡\beta+R_{0}sin⁡\beta)(−r_{1}+(r_{1}−Z_{0}^{′})cos⁡\beta+(R_{0}−2ρ_{2})sin⁡\beta)}}{sin^{2}⁡\beta}
+$$
+
+where $\lambda_{1}$, $\lambda_{2}$, $\beta$, $ξ$, $ξ_{3}$, and $Z_{0}^{′}$ are the parameters that determine the distribution of activity inside the cell. We used the following parameter values, $\lambda_{1}=150.0/R_{0}\mum^{−1}$ , $\lambda_{2}=20.0/R_{0}$ , $\beta=1.7\times\alpha$, $ξ=0.06\timesR_{0}\mum$, $ξ_{3}=0.7\timesR_{0}\mum/s$ and $Z_{0}^{′}=1.5\timesZ_{0}$.
+
+We numerically solved the equations of motion by assuming the no-slip boundary condition for the ventral boundary, the free slip boundary condition for the dorsal surfaces (Kashiwabara et al., 2016), and the vanishing flow velocity for $v_{ρ}$ and $v_{\phi}$ and the continuity for $v_{z}$ at the cell center $ρ=0$. We do not include any organelles such as a nucleus in the model for simplicity. The equations were solved numerically with a finite element method using software FreeFEM++ (Hecht, 2012).
+
+We determined the parameter values to reproduce the experimental observation as follows. As shown in Figure 7—figure supplement 2A–H, the peak values of the radial and azimuthal velocities are comparable. To reproduce this property, we set the parameter value of $ζ$ to be $ζ=0.004$. The simulation also reproduced the shift in the peak positions between two velocities. The peak values of the velocities in the simulation were about $2\times10^{−4}$ (unitless), while those in the experiments were about $5\times10^{−3}∼10^{−2}\mum/s$, giving the velocity scale to be $\frac{ζ^{a}R_{0}}{η}=50\mum/s$ and the time scale to be $\frac{η}{ζ^{a}}=0.7$ s. With this time scale, the peak value of the angular velocity was about 80 degree/hr as shown in Figure 7H, consistent with the experimental observation shown in Figure 6C, D.
+
+### Quantification of dorsal and ventral actomyosin
 
 Fluorescent signals of anti-Myosin IIA and phalloidin were obtained by LSM880 (Zeiss) with Airyscan and processed by ImageJ Fiji. The obtained images were resliced and ten x–z slices containing the cell center were processed with mean intensity projection. The dorsal and ventral surfaces were manually traced with 10-pixel width, and the average signal intensities in the traced regions were quantified. The cell edge regions of overlapping dorsal and ventral traces were annotated as ‘peripheral region’ and excluded from the quantification.

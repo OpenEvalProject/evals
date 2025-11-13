@@ -20,6 +20,45 @@ More than simply a neuronal learning machine, the brain is a prediction machine.
 
 The cerebellum has long been thought to operate predictively to support motor control and motor learning (Wolpert et al., 1998). As originally proposed by Masao Ito, the cerebellum is hypothesized to utilize a predictive model that anticipates the expected outcome of motor commands in order to refine future movements (Ito, 1970; Ito, 1972). Indeed, decades of research have provided considerable support for this hypothesis (Ohyama et al., 2003), and revealed many of the circuit pathways (Apps and Garwicz, 2005) and mechanisms (Carey, 2011) that allow the cerebellum to predictively modify motor output. However, emerging evidence suggests that the role of the cerebellum in motor control may be more complex than previously appreciated (Medina, 2019). Moreover, it has also become clear that the cerebellum plays a much wider role in brain function than simply refining movements (Buckner, 2013; Leiner et al., 1986; Schmahmann, 1991; Sokolov et al., 2017; Strick et al., 2009). Recently, with advances in modern circuit approaches and the application of more diverse behavioral paradigms in animal models, several studies have shed new light on how cerebellar circuits function across a range of behaviors. In this review, I will highlight some of this progress with the goal of identifying key unifying principles and open questions (Table 1) that are necessary to understand the role of cerebellar processing across diverse motor and non-motor behaviors.
 
+**Table 1.**
+ Open questions.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>Can learned climbing fiber activity drive higher order conditioning to establish motor (or other) sequences?</td>
+    </tr>
+    <tr>
+      <td>Does climbing fiber activity in reward-based learning paradigms follow the same rules that have been shown for VTA dopamine neurons?</td>
+    </tr>
+    <tr>
+      <td>How are reward-related climbing fiber signals generated? Can they be computed locally in the IO, or inherited from upstream brain regions? If inherited, from where?</td>
+    </tr>
+    <tr>
+      <td>How are reward-related signals in the granule cells and climbing fibers integrated to mediate learning? How might cerebellar reward-based learning be used by downstream brain regions?</td>
+    </tr>
+    <tr>
+      <td>Does the granule cell layer generate sparse representations of sensorimotor input, and how do local synaptic computations establish such representations?</td>
+    </tr>
+    <tr>
+      <td>Can climbing fibers generate a graded representation of the magnitude of behavioral errors?</td>
+    </tr>
+    <tr>
+      <td>How does cerebellar learning interact with neocortical circuits, and how to do these circuits bi-directionally modulate one another to guide behavior?</td>
+    </tr>
+    <tr>
+      <td>How does cerebellar learning modify output to the mesolimbic dopamine system during goal directed behaviors?</td>
+    </tr>
+    <tr>
+      <td>How does cerebellar circuit dysfunction modulate neocortical developmental and adult neocortical circuit processing in cognitive disease states such as Autism Spectrum Disorders?</td>
+    </tr>
+    <tr>
+      <td>Can cerebellar learning harness different mechanisms and region-specific computations to achieve different goals? Does cerebellar output depend on behavioral or cognitive requirements?</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Classical perspectives on cerebellar learning
 
 To refine movements based on the predicted the sensory consequences of action, the cerebellum must solve a credit assignment problem. Specifically, it must attribute deviations between actual and expected sensorimotor feedback to features of movement that occurred in the recent past. Classical models of cerebellar function argue that this problem is solved through a supervised learning rule instructed by inputs to the cerebellar cortex called climbing fibers (CFs, Figure 1; Albus, 1971; Marr, 1969). Supervised learning is characterized by teaching signals that can report whether or not expectations match outcomes (i.e. a yes or no signal). In the cerebellum, CFs are thought to instruct learning by signaling the occurrence of movement errors. These error signals are thought to correct future movement by generating large dendritic calcium spikes (so-called complex spikes, Cspks) in the output neurons of the cerebellar cortex, the Purkinje cells. In turn, Cspks can produce heterosynaptic plasticity on preceding inputs from another pathway, the mossy fiber (MF) to granule cell pathway. Because the MF pathway carries contextual information necessary for learning, such a plasticity rule has long been thought to provide a key substrate for generating cerebellar-dependent supervised motor learning.

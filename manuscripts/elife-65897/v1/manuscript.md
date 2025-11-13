@@ -21,7 +21,7 @@
 
 ## Abstract
 
-The evolution of bipedalism and reduced reliance on arboreality in hominins resulted in larger lower limb joints relative to the joints of the upper limb. The pattern and timing of this transition, however, remains unresolved. Here, we find the limb joint proportions of Australopithecus afarensis , Homo erectus , and Homo naledi to resemble those of modern humans, whereas those of A. africanus , Australopithecus sediba , Paranthropus robustus , Paranthropus boisei , Homo habilis , and Homo floresiensis are more ape-like. The homology of limb joint proportions in A. afarensis and modern humans can only be explained by a series of evolutionary reversals irrespective of differing phylogenetic hypotheses. Thus, the independent evolution of modern human-like limb joint proportions in A. afarensis is a more parsimonious explanation. Overall, these results support an emerging perspective in hominin paleobiology that A. afarensis was the most terrestrially adapted australopith despite the importance of arboreality throughout much of early hominin evolution.
+The evolution of bipedalism and reduced reliance on arboreality in hominins resulted in larger lower limb joints relative to the joints of the upper limb. The pattern and timing of this transition, however, remains unresolved. Here, we find the limb joint proportions of Australopithecus afarensis, Homo erectus, and Homo naledi to resemble those of modern humans, whereas those of A. africanus, Australopithecus sediba, Paranthropus robustus, Paranthropus boisei, Homo habilis, and Homo floresiensis are more ape-like. The homology of limb joint proportions in A. afarensis and modern humans can only be explained by a series of evolutionary reversals irrespective of differing phylogenetic hypotheses. Thus, the independent evolution of modern human-like limb joint proportions in A. afarensis is a more parsimonious explanation. Overall, these results support an emerging perspective in hominin paleobiology that A. afarensis was the most terrestrially adapted australopith despite the importance of arboreality throughout much of early hominin evolution.
 
 ## Introduction
 
@@ -37,11 +37,430 @@ Cladistic analyses of hominin phylogeny based on craniodental characters consist
 
 **Figure 1.:** Previous work interpreted the human-like ratio of upper to lower limb joint size (relative limb size index [RLSI]) in Australopithecus afarensis to indicate either (A) homoplasy between A. afarensis and Homo sapiens or (B) evolutionary reversals to a more ape-like body form in A. africanus and H. habilis.
 
+**Table 1.**
+ Fossil hominin and extant hominoid measurements.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Specimen</th>
+      <th>Taxon</th>
+      <th>G</th>
+      <th>H</th>
+      <th>B</th>
+      <th>U</th>
+      <th>R</th>
+      <th>F</th>
+      <th>Sub</th>
+      <th>A</th>
+      <th>T</th>
+      <th>Sac</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Homo sapiens</td>
+      <td>29.5 ± 2.7 (N = 67)</td>
+      <td>42.3 ± 3.5 (N = 67)</td>
+      <td>59.1 ± 4.7 (N = 52)</td>
+      <td>21.8 ± 1.9 (N = 51)</td>
+      <td>21.7 ± 2.1 (N = 51)</td>
+      <td>44.5 ± 3.5 (N = 67)</td>
+      <td>28.6 ± 2.1 (N = 52)</td>
+      <td>51.2 ± 3.5 (N = 67)</td>
+      <td>28.2 ± 2.0 (N = 66)</td>
+      <td>38.6 ± 3.1 (N = 67)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pan</td>
+      <td>26.6 ± 2.4 (N = 113)</td>
+      <td>38.2 ± 3.1 (N = 113)</td>
+      <td>62.5 ± 5.5 (N = 95)</td>
+      <td>22.5 ± 2.8 (N = 95)</td>
+      <td>24.5 ± 1.8 (N = 94)</td>
+      <td>32.8 ± 2.5 (N = 120)</td>
+      <td>25.0 ± 2.0 (N = 98)</td>
+      <td>38.6 ± 3.3 (N = 116)</td>
+      <td>18.1 ± 34.1 (N = 116)</td>
+      <td>28.4 ± 3.9 (N = 109)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Gorilla</td>
+      <td>39.2 ± 5.5 (N = 119)</td>
+      <td>54.9 ± 7.3 (N = 122)</td>
+      <td>93.0 ± 13.0 (N = 94)</td>
+      <td>33.4 ± 5.7 (N = 89)</td>
+      <td>31.7 ± 4.4 (N = 91)</td>
+      <td>46.6 ± 5.9 (N = 125)</td>
+      <td>35.7 ± 4.9 (N = 93)</td>
+      <td>53.1 ± 6.9 (N = 114)</td>
+      <td>24.9 ± 5.6 (N = 108)</td>
+      <td>37.7 ± 5.8 (N = 102)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Pongo</td>
+      <td>29.2 ± 3.6 (N = 47)</td>
+      <td>40.0 ± 4.8 (N = 49)</td>
+      <td>63.9 ± 7.1 (N = 45)</td>
+      <td>22.1 ± 3.2 (N = 46)</td>
+      <td>22.8 ± 2.8 (N = 46)</td>
+      <td>32.9 ± 4.0 (N = 49)</td>
+      <td>20.8 ± 2.6 (N = 45)</td>
+      <td>39.0 ± 4.7 (N = 49)</td>
+      <td>18.0 ± 2.7 (N = 46)</td>
+      <td>28.0 ± 4.1 (N = 43)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Hylobatids</td>
+      <td>13.2 ± 1.7 (N = 62)</td>
+      <td>18.5 ± 2.3 (N = 66)</td>
+      <td>28.0 ± 3.1 (N = 66)</td>
+      <td>11.0 ± 1.5 (N = 66)</td>
+      <td>12.6 ± 1.5 (N = 69)</td>
+      <td>16.4 ± 2.1 (N = 65)</td>
+      <td>11.0 ± 1.5 (N = 65)</td>
+      <td>20.6 ± 3.0 (N = 66)</td>
+      <td>7.5 ± 1.0 (N = 59)</td>
+      <td>14.7 ± 2.3 (N = 58)</td>
+    </tr>
+    <tr>
+      <td>A.L. 288-1</td>
+      <td>A. afarensis</td>
+      <td>21.6</td>
+      <td>28.9</td>
+      <td>41.1</td>
+      <td>16.1</td>
+      <td>15.1</td>
+      <td>28.6</td>
+      <td>20.8</td>
+      <td>37.0</td>
+      <td>18.0</td>
+      <td>25.3</td>
+    </tr>
+    <tr>
+      <td>KSD-VP-1/1</td>
+      <td>A. afarensis</td>
+      <td>30.1</td>
+      <td></td>
+      <td>58.8</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>49.0</td>
+      <td></td>
+      <td>32.4</td>
+    </tr>
+    <tr>
+      <td>DIK-1-1</td>
+      <td>A. afarensis</td>
+      <td>13.5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>13.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>StW 573</td>
+      <td>A. prometheus (?); A. africanus</td>
+      <td>25.9</td>
+      <td>31.3</td>
+      <td>54.0</td>
+      <td>24.3</td>
+      <td>21.9</td>
+      <td>35.2</td>
+      <td>24.5</td>
+      <td>43.0</td>
+      <td>18.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>StW 431</td>
+      <td>A. africanus</td>
+      <td></td>
+      <td></td>
+      <td>59.0</td>
+      <td>25.7</td>
+      <td>21.9</td>
+      <td></td>
+      <td></td>
+      <td>45.0</td>
+      <td></td>
+      <td>27.5</td>
+    </tr>
+    <tr>
+      <td>MH1</td>
+      <td>A. sediba</td>
+      <td></td>
+      <td></td>
+      <td>57.0</td>
+      <td>18.9</td>
+      <td></td>
+      <td>33.0</td>
+      <td>23.2</td>
+      <td></td>
+      <td></td>
+      <td>22.0</td>
+    </tr>
+    <tr>
+      <td>MH2</td>
+      <td>A. sediba</td>
+      <td>24.6</td>
+      <td>30.1</td>
+      <td>52.4</td>
+      <td>17.4</td>
+      <td>18.8</td>
+      <td>32.7</td>
+      <td></td>
+      <td></td>
+      <td>18.1</td>
+      <td>23.6</td>
+    </tr>
+    <tr>
+      <td>BOU-VP-12/1</td>
+      <td>A. garhi(?)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>21.4</td>
+      <td></td>
+      <td>23.7</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>TM 1517</td>
+      <td>P. robustus</td>
+      <td></td>
+      <td></td>
+      <td>54.0</td>
+      <td>22.0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>18.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OH 80</td>
+      <td>P. boisei</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>26.3</td>
+      <td></td>
+      <td>26.5</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KNM-ER 1500</td>
+      <td>P. boisei</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>21.4</td>
+      <td>20.2</td>
+      <td></td>
+      <td>24.2</td>
+      <td></td>
+      <td>19.2*</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KNM-ER 1503/1504</td>
+      <td>P. boisei</td>
+      <td></td>
+      <td></td>
+      <td>57.0</td>
+      <td></td>
+      <td></td>
+      <td>30.6</td>
+      <td>22.2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KNM-ER 3735</td>
+      <td>H. habilis</td>
+      <td></td>
+      <td></td>
+      <td>55.0</td>
+      <td></td>
+      <td>20.0</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>25.3</td>
+    </tr>
+    <tr>
+      <td>KNM-WT 15000</td>
+      <td>H. erectus</td>
+      <td>27.6</td>
+      <td>31.6</td>
+      <td>55.0</td>
+      <td>19.0</td>
+      <td></td>
+      <td>46.0</td>
+      <td>28.8</td>
+      <td></td>
+      <td>25.0*</td>
+      <td>33.6</td>
+    </tr>
+    <tr>
+      <td>LES 1</td>
+      <td>H. naledi</td>
+      <td></td>
+      <td>33.2</td>
+      <td></td>
+      <td>16.1</td>
+      <td></td>
+      <td>36.0</td>
+      <td>24.2</td>
+      <td></td>
+      <td></td>
+      <td>24.5</td>
+    </tr>
+    <tr>
+      <td>LB 1</td>
+      <td>H. floresiensis</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>19.5</td>
+      <td></td>
+      <td>31.0</td>
+      <td>22.1</td>
+      <td>36.0</td>
+      <td>19.5</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Estimated from tibial plafond width.G: glenoid size (geomean of SI height and AP width); H: humeral head diameter (geomean of SI height and AP width); B: humeral biepicondylar breadth; U: ulna olecranon width; R: radial head diameter; F: femoral head diameter; Sub: femoral subtrochanteric width (geomean of ML width and AP breadth); A: acetabulum height; T: talar mediolateral width; Sac: sacral size (geomean of ML width and AP breadth). ±1 standard deviation is given with sample size (N=#)._
+
 ## Results
 
 We quantified limb joint proportions per individual using the relative limb size index (RLSI) (Green et al., 2007). The RLSI is the logged ratio of geometric means calculated from upper (forelimb) and lower (hindlimb) limb measurements and quantifies whether a given specimen has relatively larger forelimb or hindlimb joints (Green et al., 2007). We calculated a series of RLSIs to accommodate the differential preservation of postcranial elements among the 16 hominin partial skeletons sampled here. When the full upper to lower limb dataset is used, there is clear separation between humans, with their proportionally larger lower limbs, and modern apes, with their proportionately larger upper limbs, with no overlap. Importantly, there remains clear separation between humans and great apes in cases where truncated datasets were used to quantify the limb joint proportions of less complete hominin skeletons. The ape data, however, do not always accord with degree of arboreality (hylobatid > Pongo > Pan > Gorilla).
 
 5 of the 16 partial hominin skeletons are human-like in their limb joint proportions (Figure 2, Figure 2—figure supplements 1–26). The RLSI of A.L. 288-1 (Lucy) is far outside the ape range and falls squarely within the range of modern humans (Figure 2, Figure 2—figure supplement 1). Likewise, the larger, presumed male A. afarensis partial skeleton KSD-VP-1/1 is positioned within the human range, though it overlaps with the low end of the hylobatid distribution (Figure 2—figure supplement 2). The infant partial skeleton of A. afarensis (DIK-1-1), as well as Lucy, has a human-like glenoid:talus ratio (Figure 2—figure supplement 3). KNM-WT 15000 (Homo erectus) has even larger relative lower limb joint proportions than the humans sampled in this study and is well outside the ape range (Figure 2—figure supplement 4). LES 1 (Homo naledi) falls within the human interquartile range, outside any modern ape distribution (Figure 2—figure supplement 5).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-v1.jpg)
+
+**Figure 2.:** Notice that A.L. 288-1 (Lucy) falls within the modern human distribution for RLSI no matter which combination of upper to lower limb joint proportions is examined (A–D). (A) Human-like upper to lower limb joint proportions remain human-like on the basis of preserved elements in a second partial skeleton of A. afarensis, KSD-VP-1/1. However, all other partial skeletons of Australopithecus (A–C), Paranthropus (B) and early Homo (C) are more ape-like. A high, ape-like RLSI is present even in the late Pleistocene hominin H. floresiensis (D).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The measurements used were derived from Johanson et al., 1982 and from observations made on both the original fossil material and confirmed on research-quality casts.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** The measurements used were derived from Haile-Selassie et al., 2010; Haile-Selassie and Su, 2015 and personal observations made by SW.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The glenoid size is an average of the left and right values reported in Green and Alemseged, 2012. Even though the comparative data used in this study are from adult apes and humans, the inclusion of DIK-1-1 is consistent with what has been reported throughout this study: A. afarensis had human-like proportions, whereas other australopiths—in this case, A. sediba (MH2) and StW 573—have African ape-like limb joint proportions. Nevertheless, the findings reported here should be re-evaluated with a juvenile sample from extant apes and humans.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Measurements were derived from Walker and Leakey, 1993 and confirmed with observations made on the original fossils and high-quality research casts from the National Museums of Kenya. Note that KNM-WT 15000 is a juvenile individual and is compared here with extant specimens that are skeletally adult. The talus was not recovered and was estimated from the mediolateral width of the talar facet of the distal tibia using an equation (y = 0.9887x * 0.7606) obtained from associated tibiae and tali of N = 79 Homo sapiens reported in DeSilva, 2011.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** Notice that the RLSI of LES 1 is decidedly human-like, falling well outside the range of distribution in any extant ape. Measurements were derived from the literature (Hawks et al., 2017; Feuerriegel et al., 2019; Walker et al., 2019) and confirmed with observations made on the original fossil material and 3D printouts generated from surface scans available on www.morphosource.org.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** The measurements used were taken on the original fossil material.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp7-v1.jpg)
+
+**Figure 2—figure supplement 7.:** The measurements used were taken on the original fossil material and can be found in Churchill et al., 2019; DeSilva et al., 2018a; Williams et al., 2018. The sacrum measurements were previously unpublished and were independently taken by SW and JD on a block that is currently being prepared. Note that MH1 is a juvenile individual and is compared here with extant specimens that are skeletally adult.
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp8-v1.jpg)
+
+**Figure 2—figure supplement 8.:** The measurements used were taken on the original fossil material and can be found in Churchill et al., 2019; DeSilva et al., 2018a; Williams et al., 2018.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp9-v1.jpg)
+
+**Figure 2—figure supplement 9.:** The measurements used were derived from Heaton et al., 2019 and from observations made on the original fossil material.
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp10-v1.jpg)
+
+**Figure 2—figure supplement 10.:** The measurements used were derived from Robinson, 1972 and confirmed on both the original fossil material and on high-quality research casts. Some of the postcranial material originally collected with TM 1517 has been identified as cercopithecoid (Day and Thornton, 1986), calling into question the association of the craniodental and postcranial material. Recent reanalysis confirms that the hominin TM 1517 material came from a single, immature individual (Cazenave et al., 2020). TM 1517 is compared here with extant specimens that are skeletally adult.
+
+![Figure 2—figure supplement 11.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp11-v1.jpg)
+
+**Figure 2—figure supplement 11.:** Measurements were derived from Day et al., 1976 and confirmed with observations made on the original fossils and high-quality research casts from the National Museums of Kenya. The attribution of the KNM-ER 1500 partial skeleton to P. boisei is hypothesized (see Grausz et al., 1988) but remains in question (see Wood and Constantino, 2007), and these data should be interpreted with caution. The talus was not recovered and was estimated from the mediolateral width of the talar facet of the distal tibia using an equation (y = 0.9887x * 0.7606) obtained from associated tibiae and tali of N = 79 Homo sapiens reported in DeSilva, 2011.
+
+![Figure 2—figure supplement 12.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp12-v1.jpg)
+
+**Figure 2—figure supplement 12.:** Measurements were derived from Domínguez-Rodrigo et al., 2013 and checked against high-quality research casts generously provided by M. Domínguez-Rodrigo.
+
+![Figure 2—figure supplement 13.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp13-v1.jpg)
+
+**Figure 2—figure supplement 13.:** Measurements were derived from Day et al., 1976 and confirmed with observations made on the original fossils and high-quality research casts from the National Museums of Kenya. The association of these two elements is suspected but unconfirmed (see Leakey, 1973; Leakey and Leakey, 1978). Furthermore, their attribution to P. boisei is hypothesized (see Day, 1973) but remains in question (see Wood and Constantino, 2007), and these data should be interpreted with caution.
+
+![Figure 2—figure supplement 14.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp14-v1.jpg)
+
+**Figure 2—figure supplement 14.:** Only a single modern human outlier positions this fossil within the modern human distribution. The measurements used were derived from DeGusta, 2004. While this partial skeleton was originally described in the same pages that established A. garhi (Asfaw et al., 1999), it is important to note that direct association between these postcranial remains and the craniodental material assigned to A. garhi was never established, and therefore, the taxonomic assignation of BOU-VP-12/1 remains unknown.
+
+![Figure 2—figure supplement 15.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp15-v1.jpg)
+
+**Figure 2—figure supplement 15.:** Measurements were derived from the literature (Haeusler and McHenry, 2007; Leakey et al., 1987) and confirmed with observations made on the original fossils and high-quality research casts from the National Museums of Kenya.
+
+![Figure 2—figure supplement 16.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp16-v1.jpg)
+
+**Figure 2—figure supplement 16.:** LB 1 falls within the lower range for all of the extant apes and is outside the range of modern humans except for a single human outlier. Measurements were derived from the literature (Larson et al., 2009; Jungers et al., 2009) and confirmed with observations made on high-quality printouts of the 3D scanned skeleton provided by the Smithsonian National Museum of Natural History.
+
+![Figure 2—figure supplement 17.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp17-v1.jpg)
+
+**Figure 2—figure supplement 17.:** KNM-ER 1500 falls within the data range of both humans and gorillas. StW 573 and BOU-VP-12/1 are gorilla-like, while OH 80 is chimpanzee-like.
+
+![Figure 2—figure supplement 18.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp18-v1.jpg)
+
+**Figure 2—figure supplement 18.:** StW 431 is within the gibbon interquartile range.
+
+![Figure 2—figure supplement 19.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp19-v1.jpg)
+
+**Figure 2—figure supplement 19.:** MH1 is within the chimpanzee and gibbon interquartile range.
+
+![Figure 2—figure supplement 20.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp20-v1.jpg)
+
+![Figure 2—figure supplement 21.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp21-v1.jpg)
+
+![Figure 2—figure supplement 22.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp22-v1.jpg)
+
+**Figure 2—figure supplement 22.:** StW 573 is in the overlapping space between gibbons and humans. MH1 and KNM-ER 1503/1504 are within the gibbon and chimpanzee interquartile range.
+
+![Figure 2—figure supplement 23.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp23-v1.jpg)
+
+![Figure 2—figure supplement 24.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp24-v1.jpg)
+
+![Figure 2—figure supplement 25.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp25-v1.jpg)
+
+![Figure 2—figure supplement 26.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig2-figsupp26-v1.jpg)
+
+**Figure 2—figure supplement 26.:** MH2 and StW 573 are squarely within the chimpanzee and gorilla interquartile range.
 
 All of the other hominin skeletons studied fall outside the human range, indicating that they are more ape-like in their joint proportions (Figure 2). StW 431 (A. africanus) has limb proportions positioned within the hylobatid interquartile range and within the distributions of Pan, Gorilla, and Pongo (Figure 2—figure supplement 6). MH1 (juvenile Australopithecus sediba) falls within the interquartile range of hylobatids and Pan and within the ranges of Gorilla and Pongo (Figure 2—figure supplement 7). MH2 (adult A. sediba) occupies the space between great apes and humans, positioned only within the range of hylobatids (Figure 2—figure supplement 8). StW 573 is similar to MH2 in having relatively larger upper limb joints than modern humans but smaller than extant apes, positioned only near a hylobatid outlier (Figure 2—figure supplement 9).
 
@@ -66,6 +485,26 @@ It is noteworthy, however, that the ape RLSI did not always align with degree of
 Our study provides a fresh perspective on alternative hypotheses for the evolution of limb joint proportions introduced by previous workers (McHenry and Berger, 1998; Green et al., 2007; Haeusler and McHenry, 2007). The reconstruction of patterns of hominin evolution relies on phylogeny, and, since the early adoption of cladistics, no quantitative analysis of hominin phylogeny has recovered a sister taxon relationship between A. afarensis and Homo (Dembo et al., 2016; Strait et al., 2015). The recovery of purported Homo fossils significantly predating the appearance of A. africanus and A. sediba may falsify hypotheses of exclusive ancestry and descent (Du and Alemseged, 2019). However, the consistent placement of A. africanus and A. sediba near Homo implies that they share a more recent common ancestor than do Homo and A. afarensis, despite their temporal and geographic distance (Dembo et al., 2016; Berger et al., 2010; Irish et al., 2013; Pickering et al., 2011). The inclusion of Paranthropus and early Homo fossils here helps alleviate the evolutionary implications of uncertainty surrounding the phylogenetic positions of Australopithecus species. The homology of a low RLSI in A. afarensis and later Homo can only be explained by an increasingly large number of evolutionary reversals. The independent evolution of similar limb joint proportions in A. afarensis and later Homo is a more parsimonious interpretation of the data.
 
 There exists one additional piece of evidence that supports our interpretation that the low RLSI of A. afarensis and modern humans is homoplastic. Interestingly, the low RLSI of A. afarensis was achieved with a different morphological pattern compared to H. erectus. We found that H. erectus possessed a relatively smaller sacral body (like A. africanus and A. sediba) but a large femoral head relative to the upper limb than do modern humans; however, A. afarensis possessed a relatively small femoral head and large sacral body (Figure 4). This finding may further imply parallel evolution in limb joint proportions between A. afarensis and H. sapiens. The relatively small sacral body of the female H. erectus sacrum from Gona (Simpson et al., 2008, personal observation) demonstrates that these results are not the result of the juvenile status of KNM-WT 15000.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig4-v1.jpg)
+
+**Figure 4.:** Only femoral head diameter, sacral width, and humeral biepicondylar width are considered in this analysis and all extant apes and hominin fossils are shown relative to the modern human condition (vertical-colored stripes). Horizontal bars are 95% confidence intervals (with those of human highlighted in vertical colored bars). Note that as in apes, A. africanus (StW 431) and A. sediba (MH1 and MH2) have a relatively large humeral biepicondylar width and relatively small sacrum. A. afarensis (A.L. 288-1 and KSD-VP-1/1) has a slightly larger biepicondylar breadth and sacral width with a slightly smaller femoral head relative to modern humans, though as already demonstrated, the overall RLSI is human-like. However, while H. erectus (KNM-WT 15000) also possesses a human-like RLSI, it is accomplished in a different anatomical manner. Notice that the colored dots (blue and green) are reversed in H. erectus relative to both A. afarensis and H. sapiens, meaning that in H. erectus the sacrum is smaller than expected (as in other australopiths) and the femoral head larger than expected. The BSN49/P27 H. erectus pelvis possesses a similarly small sacrum, indicating that this result is not solely a result of the juvenile status of KNM-WT 15000.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Doing so gives the hylobatids a slightly higher RLSI.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Doing so gives the hylobatids a slightly higher RLSI.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Doing so gives the hylobatids a slightly higher RLSI.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/65897/elife-65897-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Doing so gives the hylobatids a slightly higher RLSI.
 
 The morphology and functional anatomy of the axial skeleton, pelvis, and lower limb display unambiguous evidence for bipedal posture and locomotion in Australopithecus and later hominins. Furthermore, the presence of traits potentially signifying the importance of arboreality among fossil hominins does not necessarily imply reduced bipedal competency. However, the distributions of RLSI data (Figure 2—figure supplements 17–26), along with observations of other regional anatomies, imply differences among hominins in their adaptation to terrestrial, heel-striking bipedality. A. afarensis has relatively larger lower limb joints than any other early hominin currently known and possesses features of the foot and ankle that imply bipedal performance capabilities exceeding those of later early hominins. These traits include a more robust calcaneal tuber, a flatter subtalar joint, and a more plantarly oriented fourth metatarsal diaphysis and talonavicular joint (reviewed in DeSilva et al., 2019). The available morphological evidence suggests that, compared to other Plio-Pleistocene hominins, A. afarensis was better able to withstand the stresses and strains induced by the repetitive loading of the lower limb in frequent terrestrial bipedalism.
 

@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03s7gtk40 Institute for Drug Discovery, Leipzig University Medical School Leipzig Germany
-2. https://ror.org/03s7gtk40 Institute for Medical Physics and Biophysics, Leipzig University Medical School Leipzig Germany
-3. https://ror.org/03s7gtk40 Integrative Center for Bioinformatics, Leipzig University Leipzig Germany
+1. Institute for Drug Discovery, Leipzig University Medical School Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))
+2. Institute for Medical Physics and Biophysics, Leipzig University Medical School Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))
+3. Integrative Center for Bioinformatics, Leipzig University Leipzig Germany ([ROR:03s7gtk40](https://ror.org/03s7gtk40))
 
 † Corresponding author
 
@@ -19,7 +19,7 @@ Under physiological conditions, proteins continuously undergo structural fluctua
 
 ## Introduction
 
-## The conformational landscape and its role for protein function
+### The conformational landscape and its role for protein function
 
 Under physiological conditions, most proteins are highly dynamic, adopting various structures with distinct probabilities. The diversity and thermodynamics of protein structures may be conceptualized as a conformational landscape, which represents a low-dimensional projection of the multidimensional free energy surface of generalized protein coordinates (Figure 1). Following the nomenclature introduced by Frauenfelder et al., a macrostate represents the global thermodynamic state of a protein defined by the physical and (bio)chemical conditions, such as temperature, pressure, chemical potential, type, and concentration of solutes or ligands (Frauenfelder et al., 1991). Within a given macrostate, protein structural rearrangements may occur on different timescales. For example, conformational states (or simply conformations) are separated by barriers of several kT and thus interconvert on the timescale of microseconds to milliseconds. Within each conformational state, fluctuations which occur on the order of nanoseconds separate individual conformational substates, while even faster transitions occur between statistical substates (Frauenfelder et al., 1991; Henzler-Wildman and Kern, 2007). It is conceivable that the macrostate defines the equilibrium distributions of the entire conformational ensemble comprising all timescales (Shi et al., 2015).
 
@@ -31,7 +31,7 @@ The three tiers of protein states are defined by their timescales of interconver
 
 While various computational methods have been developed for the characterization of conformational landscapes, slow timescales (milliseconds and beyond) are still challenging to access. These shortcomings can be addressed by using complementary experimental methods, which provide access to slow conformational exchange and can resolve the equilibrium ensemble under (near-) physiological conditions. The integration of these experimental results with molecular modeling culminates in high-resolution structures of rare conformational states and their thermodynamics (Allison, 2017).
 
-## Experimental methods for studying conformational landscapes
+### Experimental methods for studying conformational landscapes
 
 Currently, the most commonly used approaches to study protein structure include X-ray diffraction, cryo-electron microscopy (EM), nuclear magnetic resonance (NMR) spectroscopy, Förster resonance energy transfer (FRET), and electron paramagnetic resonance (EPR) spectroscopy. Each of these methods has its strengths and limitations. For instance, structures determined by X-ray diffraction provide high resolution, however, the conformational state most stable under crystal conditions may lack physiological relevance (Freed et al., 2010; Dasgupta et al., 1997; Rasmussen et al., 2011). Furthermore, the requirements of crystallization narrow the applicability of X-ray crystallography, because many proteins exhibit flexible regions which prevent crystallization or diminish resolution. This is especially true for membrane proteins, where shortening of dynamics loops or insertion of highly soluble and rigid proteins circumvent this problem (Carpenter et al., 2008; Lacapère et al., 2007; Ding et al., 2021; Thorsen et al., 2014). In order to access conformational dynamics, X-ray structural models commonly serve as a starting point for molecular modeling, for example using molecular dynamics (MD) simulations. However, slow conformational changes (>10−5 s) remain challenging to follow with atomic resolution.
 
@@ -43,33 +43,103 @@ FRET detects conformational changes in the range of 30–80 Å and, in combinati
 
 In this review, we focus on EPR spectroscopy, which allows the investigation of protein dynamics across a broad range of timescales (from picoseconds to seconds or longer) with few restrictions on sample conditions. The application of pulse EPR spectroscopy adds further capabilities in terms of spatial resolution and accurate quantification of individual conformational states. A continuously growing number of computational tools are becoming available assisting with the integration of EPR spectroscopic data and providing a detailed picture of structural dynamics underlying protein function.
 
-## Site-directed spin labeling EPR spectroscopy
+### Site-directed spin labeling EPR spectroscopy
 
 EPR spectroscopy comprises a large toolbox of methods enabling the exploration of protein systems containing paramagnetic centers. Since unpaired electrons are usually depleted during protein expression, stable radicals need to be introduced for example via site-directed spin labeling in order to obtain an EPR signal (Torricella et al., 2021; Pierro and Drescher, 2023; Jana et al., 2023). Several continuous wave (CW) EPR methods have been developed to study the different timescales of protein dynamics, and gain insight into structure and population of conformational states within an ensemble (Table 1). In the following, we limit our considerations to studies with nitroxides, which are by far the most commonly used spin labels. However, especially for distance measurements several other spin label side chains have been developed, each exhibiting benefits and drawbacks compared to nitroxides that are discussed elsewhere (Fielding et al., 2014). The CW EPR lineshape (first derivative of the absorption spectrum) is highly sensitive to spin label dynamics on the 100 ps to 100 ns timescale which is strongly influenced by structure and dynamics of the protein (Hubbell et al., 1996; Campbell et al., 2022; Mchaourab et al., 1996; Fichou et al., 2019; Pierro et al., 2020). Coexistence of several conformational states leads to superimposed, complex EPR spectra. While a comprehensive theory of spin label motion exists, the interpretation of CW EPR lineshapes remains challenging due to a large number of parameters. In particular cases, when the selection of fitting parameters during lineshape analysis is ambiguous, statistical analysis becomes necessary to assess the likelihood of one parameter set over another (Francis et al., 2012; Etienne et al., 2023; Lindemann et al., 2020).
+
+**Table 1.**
+ Summarizing information on electron paramagnetic resonance (EPR) spectroscopic techniques.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Method</th>
+      <th colspan="4">Features</th>
+      <th rowspan="2">References</th>
+    </tr>
+    <tr>
+      <th>Dynamics (timescale)</th>
+      <th>Structure(resolution)</th>
+      <th>Population</th>
+      <th>Computational analysis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CW EPR</td>
+      <td>Yes(10−10 to 10−7s)</td>
+      <td>Yes, via scanning(topology)</td>
+      <td>Yes, ≤3 conformations</td>
+      <td>Semi-empirical and lineshape analysis</td>
+      <td>Marsh, 1981; Hubbell and Altenbach, 1994; Columbus and Hubbell, 2002</td>
+    </tr>
+    <tr>
+      <td>ST EPR</td>
+      <td>Yes(10−7 to 10−3 s)</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Heuristic analysis</td>
+      <td>Hyde and Dalton, 1972</td>
+    </tr>
+    <tr>
+      <td>TR EPR</td>
+      <td>Yes(&gt;10−3 s)</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>Lineshape analysis</td>
+      <td>Farahbakhsh et al., 1993</td>
+    </tr>
+    <tr>
+      <td>DEER</td>
+      <td>No</td>
+      <td>Yes(&lt;10−10 m)</td>
+      <td>Yes</td>
+      <td>Parametric and non-parametric fitting models</td>
+      <td>Jeschke, 2012</td>
+    </tr>
+    <tr>
+      <td>ENDOR</td>
+      <td>No</td>
+      <td>Yes(&gt;10−11 m)</td>
+      <td>Yes</td>
+      <td>Lineshape analysis</td>
+      <td>Lubitz et al., 2002</td>
+    </tr>
+    <tr>
+      <td>SR EPR</td>
+      <td>Yes,(10−6 to 10−5 s)</td>
+      <td>No</td>
+      <td>Yes, ≤2 conformations</td>
+      <td>Exponential fitting</td>
+      <td>Bridges et al., 2010</td>
+    </tr>
+  </tbody>
+</table>
 
 Further information on protein topology can be obtained via power saturation CW EPR spectroscopy, which is often combined with spin label scanning. Here, spin labels are introduced to successive sites along a sequence of amino acids and the influence of paramagnetic substances on the saturation behavior is evaluated (Altenbach et al., 1990; Hubbell et al., 2003). In general, full seqeunce coverage with spin labels is desired to uncover even subtle changes in structure and dynamics of the protein segment of interest. However, evaluating or comparing specific secondary structure models with different periodicities, such as α-helix or β-sheet, requires only a strongly reduced set of spin labeling sites. Saturation transfer (ST) EPR and time-resolved (TR) EPR represent two other methods utilizing continuous microwave radiation, extending sensitivity to the timescales of microseconds to milliseconds (Hyde and Dalton, 1972; Hyde and Thomas, 1973; Schwarz et al., 1990; Rayes et al., 2011) and millisecond to hours (Steinhoff et al., 1994; Farahbakhsh et al., 1993; Knierim et al., 2007), respectively. While several approaches for the analysis of ST EPR spectra have been developed (Hustedt and Beth, 2004), these represent purely heuristic methods and will therefore not be discussed in more detail. The dynamic processes picked up by TR EPR are too slow to be modeled using all-atom modeling techniques and are also outside the focus of this review. Notably, all EPR methods mentioned so far exhibit little to no restrictions on the experimental conditions, including a wide range of temperatures or different environments (solution, membranes, living cells, etc.).
 
 The power of EPR spectroscopy is strongly expanded by the application of microwave pulses (pulse EPR spectroscopy). Four-pulse double electron–electron resonance energy transfer (DEER), also known as pulsed electron–electron double resonance (PELDOR), is a pulsed EPR spectroscopic technique usually performed on frozen solutions, in order to resolve distances between two spin labels at sub-Angstrom resolution. This method captures interspin distances ranging from 1.5 to 8.0 nm, and even up to 16.0 nm in fully deuterated samples (Peter et al., 2022; Jeschke, 2012). Moreover, DEER experiments elegantly connect structure and thermodynamics of proteins by resolving the conformational ensemble in probability distance distributions (Elgeti and Hubbell, 2021; Evans et al., 2020; Dawidowski and Cafiso, 2013; Wingler et al., 2019). This makes DEER the prime method for computational integration with structural biology which will be discussed in detail. Electron-nuclear double resonance (ENDOR) assesses hyperfine interactions among magnetic nuclei and paramagnetic centers within solute samples cooled to cryogenic temperatures. It can be implemented as both CW and pulse technique (Lubitz et al., 2002; Weber et al., 2001). ENDOR is effective for revealing the structures of specific parts of protein molecules, achieving atomic-level accuracy in distances below 1.5 nm (Lendzian et al., 1996). Recent work has demonstrated that using fluorinated amino acids (19F-ENDOR), in particular in combination with Gadolinium spin labels, extends the upper distance limit to above 2 nm (Bogdanov et al., 2024). Several computational methods have been developed to simulate ENDOR spectra, however, integration with structural models has not been achieved yet (Meyer et al., 2020; Meyer et al., 2022; Stoll and Schweiger, 2006). Lastly, saturation recovery EPR (SR EPR) represents another pulsed EPR technique used to gain insights into protein dynamics. It enables the resolution of dynamic events on the low to intermediate microsecond timescale which remains difficult to access with other methods (Bridges et al., 2010; Sarewicz et al., 2008; Yang et al., 2015). However, so far no computational approaches for the structural integration of SR EPR have been developed.
 
-## Analysis and interpretation of experimental CW EPR data
+### Analysis and interpretation of experimental CW EPR data
 
 The sensitivity of CW EPR to molecular motion arises from the incomplete averaging of anisotropic magnetic interactions leading to characteristic lineshapes.
 
-## Semi-empirical analysis methods
+#### Semi-empirical analysis methods
 
 Derive parameters of molecular motion directly from the lineshape. Columbus and Hubbell showed that the distance between the minimum and maximum of the CW EPR lineshape, the center linewidth δ (Figure 2A), is strongly related with the correlation time and order parameter of the observed motion (Columbus and Hubbell, 2002). Also, the effective hyperfine splitting A’zz, as assessed by the distance between the outer minima can be used to determine the correlation time or the polarity of spin label environment (Freed, 1976; Altenbach and Hubbell, 2015). Axially symmetric systems such as spin-labeled lipids of a membrane bilayer can be analyzed using the parallel (A∥) and perpendicular (A⟂), which significantly simplifies the analysis of the experimental results (Subczynski et al., 2010).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/99770/elife-99770-fig2-v1.jpg)
 
-**Figure 2.:** (A) Semi-empirical analysis of the CW EPR lineshape provides insight into the rate of motion (δ), polarity (A’) of the spin label environment, parallel (zzA॥), and perpendicular (A⊥) compounds of CW EPR spectra of spin-labeled membrane bilayer lipids. (B) Lineshape analysis provides access to motional parameters and populations of individual equilibrium conformations. (C) Molecular dynamics (MD) simulations may explore the entire conformational landscape of a protein and provide data to simulate the CW EPR spectrum. The latter is then compared with the experiment. (D) RosettaEPR approach uses results from single and double mutant CW EPR experiments to derive distance constraints for subsequent conformational modeling.
+**Figure 2.:** (A) Semi-empirical analysis of the CW EPR lineshape provides insight into the rate of motion (δ), polarity (A’zz) of the spin label environment, parallel (A॥), and perpendicular (A⊥) compounds of CW EPR spectra of spin-labeled membrane bilayer lipids. (B) Lineshape analysis provides access to motional parameters and populations of individual equilibrium conformations. (C) Molecular dynamics (MD) simulations may explore the entire conformational landscape of a protein and provide data to simulate the CW EPR spectrum. The latter is then compared with the experiment. (D) RosettaEPR approach uses results from single and double mutant CW EPR experiments to derive distance constraints for subsequent conformational modeling.
 
-## Lineshape analysis
+#### Lineshape analysis
 
 Motional models for analyzing CW EPR lineshapes computationally exist at varying degrees of complexity. Most widely used models for the description of intermediate to slow spin label dynamics solve the stochastic Liouville equation (SLE) and assume microscopic order and macroscopic disorder (MOMD, Figure 2B; Meirovitch et al., 1984; Budil et al., 2006). Such models can include ordering potentials in the lineshape analysis to characterize the amplitude of molecular motions. However, while intricate motional models can be implemented, distinct parameter sets may result in equally good mathematical fits. To this end, strongly correlated fitting parameters indicate that the complexity of the model (i.e., number of parameters) should be reduced to avoid overfitting (Altenbach and Budil, 2024). Motion faster than 1 ns leads to complete averaging of anisotropic magnetic interactions. This simplifies the analysis and an effective Hamiltonian can be used (Hubbell and McConnell, 1971).
 
 Analysis via lineshape simulation includes iterative adjustment of model parameters to fit the experimental spectra. Such methods are implemented in the programs EasySpin, NLSL, MultiComponent, Spinach, Simlabel, and cwepr (Stoll and Schweiger, 2006; Altenbach and Budil, 2024; Budil et al., 1996; Altenbach and Hubbell, 2024; Schröder and Biskup, 2022). These software toolkits require relatively low computational resources and have a user-friendly graphical interface. Lineshape simulations offer valuable insights into the protein local structure, dynamics, topology, conformational changes, and interactions between binding partners. Notably, when a protein conformational change affects spin label dynamics sufficiently leading distinct lineshapes, lineshape analysis can disentangle such multicomponent spectra (Figure 2B) and thus describe conformational equilibria (Altenbach and Budil, 2024). However, CW EPR spectra represent a convolution of spin label and protein dynamics (Mchaourab et al., 1996) and when spin label and protein motions occur on similar timescales, lineshape analysis is reaching its limits. In such cases, integrative analysis approaches incorporating molecular modeling will provide a possible alternative.
 
-## MD-based approaches for CW EPR analysis
+#### MD-based approaches for CW EPR analysis
 
 The majority of integrative methods for the analysis of CW EPR data rely on MD simulations of spin-labeled proteins. MD-SLE (Figure 2C) approach combines short MD simulations with solving the SLE to analyze CW EPR data (Budil et al., 2006; Stoica, 2004). Short MD trajectories corrected for translation and rotation of the protein are assumed to describe only spin label motion. Such trajectories serve as inputs for SLE-solving lineshape analysis. Combining MD-SLE with high-field CW EPR experiments, where protein motions are assumed frozen, further validates the separate treatment of protein and spin label dynamics (Barnes et al., 1999).
 
@@ -79,15 +149,15 @@ MD-HBD and MD-HMM have proven effective for calculating the CW EPR spectrum of s
 
 Rosetta is a software toolbox with a wide range of applications, including molecular design, folding, docking, and modeling tools (Leman et al., 2020). Rosetta uses a library of protein fragments and employs Monte-Carlo assembly to construct structural models of protein conformations. These resulting models are then evaluated with a physics-based scoring function. RosettaNMR represents the first algorithms for the de novo prediction of protein structures, which integrated experimental NMR data. This was the basis for the development of the RosettaEPR. RosettaEPR integrates interspin distances into the modeling process, which are derived from exchange broadening via CW EPR of doubly spin-labeled protein (Alexander et al., 2008). The distance range accessible using this approach is limited to <~25 Å. Thus, it should be noted that each line-broadening analysis requires three CW EPR experiments. One experiment with the doubly spin-labeled mutant, and two experiments with each individual single mutant of the spin pair (Farrens et al., 1996; Rabenstein and Shin, 1995; Altenbach et al., 2001). In summary, RosettaEPR represents a computationally efficient approach for conformational modeling, which includes experimental data and does not require a structural template of the protein. However, in contrast to MD approaches, Rosetta does not allow for the observation of time-dependent conformational changes.
 
-## Integration of distance information derived from experimental DEER data
+### Integration of distance information derived from experimental DEER data
 
 Pulsed dipolar spectroscopy (PDS) in combination with site-directed spin labeling (SDSL) gives access to distance distributions between two coupled spins. While several different PDS pulse sequences exist, the most commonly used method is 4-pulse deadtime-free DEER, for which recently application guidelines have been put forward (Pannier et al., 2000; Schiemann et al., 2021). Experimental DEER data consist of time-dependent spin echo intensities (dipolar evolution), which can be translated into interspin distance distributions. In addition to the dipolar interaction of intramolecular spins, DEER signals also contain intermolecular contributions (background), which must either be included in the analysis or subtracted a priori. Several different analysis methods have been developed, which are concisely reviewed in the following. A more detailed introduction including benchmark tests can be found elsewhere (Russell et al., 2022).
 
-## Model-free analysis
+#### Model-free analysis
 
 Model-free analysis of DEER data presents a mathematically ill-posed problem that is typically addressed by Tikhonov regularization which essentially smooths the distance distribution. Adequate smoothness is typically chosen via the L-curve criterion of the regularization parameter, but other methods such as the Akaike information criterion corrected or the Bayesian information criterion exist, and determine the level of detail observed in the analyzed distance distributions (Edwards and Stoll, 2018). While a minimum width of distance peaks makes physical sense, taking into account the conformational entropy of the labels and the protein, the assumption of equal widths for all distance peaks is inconsistent with the heterogeneous picture of a conformational state (Figure 1). The evaluation of populations, one of the main virtues of DEER, is complicated because it requires a posteriori fitting of the distance distribution to a linear combination of parametric distributions with quantifiable area, such as Gaussians.
 
-## Model-based analyses
+#### Model-based analyses
 
 Model-based analyses, such as Gaussian mixture models, assume that DEER distributions represent a superposition of individual distance peaks. Each peak has a specific shape that is described by parameters such as mean position, peak width, and amplitude. This approach dramatically reduces the number of fitting parameters during analysis and provides direct access to populations of individual peaks as well as confidence intervals of each fitting parameter. In addition, simultaneous (global) analysis of multiple DEER datasets of the same spin pair recorded under different conditions further increases the confidence in parameter values such as peak positions, populations, or background parameters (Hustedt et al., 2021; Jeschke et al., 2006; Khan et al., 2023).
 
@@ -99,7 +169,7 @@ PDS methods such as DEER depend on two paramagnetic centers being in proximity, 
 
 Notably, membrane proteins are commonly investigated in a detergent solubilized form to prevent oligomer formation. Generally, the different properties of detergent and lipid molecules lead to altered spin label dynamics which are easily picked up by CW EPR (Flores Jiménez et al., 2011). Interestingly, the changed label dynamics do not lead to dramatic structural alterations and the DEER distances in different systems are often quite similar. Obviously, this is not necessarily true for the position of conformational equilibria, which are often sensitive to the environmental parameters such as lipid or detergent composition (Van Eps et al., 2017).
 
-## Methods for simultaneous modeling of protein and spin label dynamics
+### Methods for simultaneous modeling of protein and spin label dynamics
 
 Several molecular modeling techniques have been developed to simulate the dynamics of proteins and spin labels. They provide atomistic models of protein conformations that can explain sparse DEER experimental data. Molecular modeling approaches simulate protein and spin labels either simultaneously (combining approaches) or separately (discriminating approaches).
 
@@ -117,7 +187,7 @@ In principle, unbiased MD simulations (Figure 3A), can provide a representation 
 
 To set up a molecular model for conducting biased or unbiased MD simulations, including all-atom or dummy description of spin labels, we recommend the Charmm-GUI module called PDB Manipulator (Jo et al., 2014). In addition, the Charmm-GUI offers many options for constructing and parameterizing membrane proteins such as receptors and transporters in various lipid systems. Lipid mono- and bilayers, nanodiscs, micelles and bicelles, lipid hexagonal phase systems, are available. In each case, the lipid composition is customizable (Feng et al., 2023; Qi et al., 2019; Brown et al., 2024).
 
-## Methods for separate modeling of protein and spin label dynamics
+### Methods for separate modeling of protein and spin label dynamics
 
 Discriminating approaches model protein and spin label conformations independently using different methods. We divide discriminating approaches into static (Figure 3C) and dynamic ones (Figure 3D).
 

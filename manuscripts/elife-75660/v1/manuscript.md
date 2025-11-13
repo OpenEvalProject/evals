@@ -16,11 +16,11 @@
 
 ### Affiliations
 
-1. https://ror.org/0316ej306 Department of Biomolecular Sciences, Weizmann Institute of Science Rehovot Israel
-2. https://ror.org/01b6kha49 Structural Biology Division, The Walter and Eliza Hall Institute of Medical Research Parkville, Victoria Australia
-3. https://ror.org/01ej9dk98 Department of Medical Biology, The University of Melbourne Parkville, Victoria Australia
-4. https://ror.org/01b6kha49 Immunology Division, The Walter and Eliza Hall Institute of Medical Research Parkville, Victoria Australia
-5. https://ror.org/01rxfrp27 La Trobe Institute of Molecular Science, La Trobe University Bundoora, Victoria Australia
+1. Department of Biomolecular Sciences, Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))
+2. Structural Biology Division, The Walter and Eliza Hall Institute of Medical Research Parkville, Victoria Australia ([ROR:01b6kha49](https://ror.org/01b6kha49))
+3. Department of Medical Biology, The University of Melbourne Parkville, Victoria Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
+4. Immunology Division, The Walter and Eliza Hall Institute of Medical Research Parkville, Victoria Australia ([ROR:01b6kha49](https://ror.org/01b6kha49))
+5. La Trobe Institute of Molecular Science, La Trobe University Bundoora, Victoria Australia ([ROR:01rxfrp27](https://ror.org/01rxfrp27))
 
 † Corresponding author
 
@@ -38,9 +38,33 @@ We set out to define the relationships between TMD structure, CAR oligomeric sta
 
 ## Results
 
-## Atomically precise de novo-designed TMDs
+### Atomically precise de novo-designed TMDs
 
 In our initial design approach (Figure 1a), each design trajectory started from two fully symmetric and extended chains of 24 amino acids encoding either poly-Val or poly-Ala (Video 1). In a first, coarse-grained modeling step, backbone torsion angles were sampled from a database comprising three and nine amino acid fragments from α-helical MPs, and the two chains were symmetrically docked against one another with an energy term that disfavored large crossing angles (Equation 1Weinstein et al., 2019; Bowie, 1997). In a second, all-atom step, we refined the sequence and the structure through iterations of symmetric sequence optimization, backbone minimization, and rigid-body docking using the ref2015_memb atomistic energy function that is dominated by van der Waals packing, hydrogen bonding, and amino acid lipophilicity (Weinstein et al., 2019). We noticed that the resulting sequences were overwhelmingly biased towards the large and flexible hydrophobic amino acid Leu (Figure 1b), as expected from the dominant role of lipophilicity in the ref2015_memb potential (Weinstein et al., 2019). Forward-folding ab initio structure-prediction calculations, however, indicated that the designs were prone to form multiple alternative low-energy dimer structures that were conformationally different from the design conception (Figure 1—figure supplement 1a). To mitigate the risk of misfolding due to the high Leu content, we introduced a sequence diversification step comprising 120 iterations of single-point mutation and energy relaxation while biasing the sequence composition to match that of natural TMDs (Figure 1b; Equations 2-3). The resulting sequences were subjected to ab initio structure prediction calculations (Das et al., 2009), and this time, they converged to the design models (Figure 1—figure supplement 1b) and exhibited a large energy gap from undesired structures. Previous studies noted that natural TMDs are not optimized for thermodynamic stability (Faham et al., 2004). Our design simulations suggest that evolution might have selected sequence compositions to counter TMD misfolding.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig1-v1.jpg)
+
+**Figure 1.:** (a) Rosetta fold, dock, and design uses backbone fragments from natural MPs to construct symmetric, de novo architectures and an MP energy function (Weinstein et al., 2019) to optimize the amino acid sequence. (b) Round 1 designs were biased towards the hydrophobic amino acid Leu relative to naturally occurring transmembrane domains (TMDs). In round 2, we incorporated a sequence diversification step that conformed the amino acid propensities to those observed in natural TMDs. (c) The programmed membrane proteins (proMPs) strongly self-associate in the E. coli inner membrane as evidenced by high viability in the deep sequencing TOXCAT-β-lactamase (dsTβL) self-association assay (Elazar et al., 2016a). The TMDs from human quiescin sulfhydryl oxidase 2 (QSOX2) and ErbB2 provide positive controls for TMD self-association, whereas the C-terminal portion of human L-selectin (CLS) provides a negative control. (d–f) Designed positions that are buried at the interface (orange) are more sensitive to mutation according to dsTβL analysis (Elazar et al., 2016a) (y-axis) than exposed positions (blue). Mutations are predicted to be detrimental or neutral/beneficial using computational mutation scanning of the model structures (Materials and methods). Changes in self-association energies upon mutation are computed according to Equation 9. (g) proMPs produced as free peptides form SDS-stable homo-oligomers. SDS-PAGE samples containing approximately 15, 45, and 135 μg of peptide were heated to 95℃ for 1 min and run under reducing conditions. * indicates the position of a minor contaminant from the fusion protein used to generate proMP peptides (Materials and methods). Molecular weight below each gel is for a monomer of the corresponding peptide sequence with additional N-terminal EPE and C-terminal RRLC flanking sequences (Materials and methods). See additional examples in Figure 3. (h, i) The 2.55 Å resolution structure (blue ribbon) determined from crystals grown in monoolein lipid cubic phase (LCP) shows that proMP 1.2, designed to form a dimer, associates to form a trimer in a lipid bilayer environment. (i) Forward-folding ab initio prediction of proMP 1.2 in trimeric (C3) symmetry results in a model structure (h, gray ribbon) that is very close to the experimentally determined one.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) De novo-designed proMPs exhibited a high proportion of the large, flexible, and hydrophobic amino acid Leu (bold), in accordance with the high lipophilicity of this amino acid according to the deep sequencing TOXCAT-β-lactamase (dsTβL) lipophilicity scale. Forward-folding ab initio calculations in C2 symmetry, however, exhibited a flat energy landscape with multiple low-energy structures that diverged from the design. (b) Simulated annealing Monte Carlo simulations starting from the sequence in (a) augmented with a potential that biased sequence choices to the propensities observed in natural transmembrane domains (TMDs), resulting in sequences with fewer Leu amino acids. Although the Rosetta energies of the designs prior to sequence diversification were more favorable than after (compare the y-axes of the two plots), the sequence-diversified sequences clearly converged to the designed structure. These results suggest that the sequence composition of natural TMDs encodes negative design principles that ensure folding to a unique conformation. Red one-letter codes indicate positions at the homodimer interface; smooth red and green lines are visual aids. The oligomeric state (dimers) is noted by the pair of black dots at the bottom of the figure.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Top: the construct comprises two selection domains, β-lactamase and the transcriptional activator ToxR of the chloramphenicol acetyltransferase. The former is only active in the periplasmic space; the latter depends on dimerization and is only active in the cytoplasm. Therefore, this system selects bacteria that express a self-associating domain in the inner membrane. Bottom: spectinomycin selects for transformed bacteria; ampicillin selects for membrane insertion; and ampicillin + chloramphenicol selects for membrane insertion and self-association. All the constructs we tested are expressed in the inner membrane, as evidenced by the uniform resistance to ampicillin. The monomeric construct (the C-terminal portion of human L-selectin [CLS]) serves as a negative control for self-association, and human ErbB2 and quiescin sulfhydryl oxidase 2 (QSOX2) serve as positive controls based on the transmembrane domains (TMDs) of the respective proteins. Many of the programmed membrane proteins (proMPs) display a higher level of survival than the positive controls (e.g., 1.1, 1.2, 1.4, 1.5, 1.6, and 1.8).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Each design and a set of single-point mutants were introduced in selected positions (bold) and assayed using the TOXCAT-β-lactamase (TβL) selection scheme. Amino acids that are positioned at the interface are in orange and those that are lipid-facing are in blue. The mutations were generated using DNA oligos with the degenerate codon NYS, encoding the amino acid identities: Ala, Val, Ile, Leu, Phe, Met, Ser, Thr, and Pro (mutations to Pro were excluded from the analysis). We note that programmed membrane protein (proMP) 1.3, whose migration on SDS-PAGE indicates an oligomer larger than a dimer, also shows poor segregation of mutations at predicted interface versus lipid-exposed positions in TβL selection, consistent with the formation of a structure that is different from the design model in this case.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Crystals of proMP 1.2 were obtained via lipid cubic phase (LCP) crystallization at 35 mg/ml peptide concentration as described in ‘Experimental methods.’ Screening was performed by the CSIRO Collaborative Crystallisation Centre (C3). Oblong hexagonal discs grown in 25% w/v polyethylene glycol 1500, 10% v/v succinate-phosphate-glycine (pH 6.0) were harvested and frozen in liquid nitrogen using 30% glycerol in precipitant solution as cryo-protectant. proMP 1.2 packs in the crystal as a trimer (blue) with one monoolein molecule (wheat stick representation) and a less well-ordered helix that is antiparallel in orientation with respect to the trimer (light blue) in the asymmetric unit. Blue ribbons and text represent the designed sequence; gray ribbons and text represent the appended N- and C-terminal sequences included to aid production and crystallization.
+
+![Video 1.](https://cdn.elifesciences.org/articles/75660/elife-75660-video1.mp4.jpg)
+
+**Video 1.:** The design process starts from a fully extended chain and uses symmetric fold-and-dock simulations to generate realistic coarse-grained ("centroid" mode) conformations. These are then designed in full atom mode. Finally, a Monte Carlo based sequence diversification step mutates amino acids with a bias towards the sequence propensity of natural amino acids. This diversification step reduces the bias of the full atom design step to Leu amino acids.
 
 Twelve designs were tested in the Escherichia coli TOXCAT-β-lactamase (TβL) selection system (Elazar et al., 2016a; Langosch et al., 1996). In this dual-reporter system, survival on ampicillin and chloramphenicol reports on a design’s membrane insertion and self-association propensity, respectively (Figure 1—figure supplement 2). Remarkably, most proMPs supported high survival (Figure 1c) and two-thirds survived even at the highest chloramphenicol concentration tested, indicating a self-association strength significantly greater than the TMD from the human receptor-tyrosine kinase HER2 (also known as ErbB2), which served as a positive control. Deep mutational scanning of mutant libraries showed that the sensitivity to mutations of most designs was consistent with interfacial versus exposed positions in the design models (Figure 1d–f, Figure 1—figure supplement 3), suggesting that they indeed assembled through the designed interfaces in the bacterial inner membrane.
 
@@ -48,15 +72,43 @@ Eight proMPs were produced recombinantly as free peptides and all exhibited elec
 
 Based on this insight, we initiated a third design campaign to produce proMPs in a range of oligomeric states. We incorporated a final step in which ab initio structure prediction calculations (Weinstein et al., 2019) were performed in C2, C3, and C4 symmetries for every design. Only those proMPs that were predicted to form the target oligomeric state and none of the alternatives were selected for further analysis (Figure 2a–d). This strategy yielded two proMPs for which we obtained crystal structures confirming the target oligomeric state: a dimer with glycine-based packing interface similar to the motif observed in human glycophorin A (proMP C2.1; Figure 2a–b and e–g, Figure 2—figure supplement 1), and a trimer with an alanine-rich interface that, to the best of our knowledge, is novel in a membrane protein (proMP C3.1; Figure 2c–d and h–k, Figure 2—figure supplement 2). Interestingly, while two of the helices in the crystal structure of proMP C3.1 aligned well with the design model (Figure 2i), the third was in an antiparallel orientation (Figure 2j). Despite this arrangement, the six key interface alanine β-methyls were in near-identical positions to their counterparts in the fully parallel model (Figure 2k), leading us to suspect that the model is correct but the crystal lattice was enforcing the antiparallel binding mode of the third helix. To probe this possibility, we aligned the parallel model with the asymmetric unit seen in the crystal structure and generated crystallographic symmetry. The resulting model showed clashes for the third helix and indicated that the design model cannot be accommodated in the crystal lattice. The structure thus suggests that this proMP is unintentionally ‘reversible’ in that one of the helices can form the intended packing mode in either orientation. While this feature is of interest from a design standpoint (Woodall et al., 2015), we note that only the fully parallel trimer depicted in the model can form in a biological system where the topology of a single-spanning TMD is constrained by the biosynthetic machinery in a type I orientation.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig2-v1.jpg)
+
+**Figure 2.:** (a) SDS-PAGE migration of programmed membrane protein (proMP) C2.1 is consistent with a dimer in gel shift assays performed as in Figure 1. Design model and peptide sequence shown for reference. (b) Rosetta ab initio structure prediction calculations predict that proMP C2.1 preferentially forms a dimer. (c) proMP C3.1 exhibits a novel Ala-dominated interface, and its migration pattern at high sample concentration suggests a complex larger than a dimer. Design model and peptide sequence shown for reference. (d) Ab initio calculations predict that it primarily forms a trimer. (e–g) The proMP C2.1-designed structure is atomically verified by a 2.7 Å crystal structure. Interfacial positions marked in orange. (h–k) The crystallographic analysis of proMP C3.1 (3.5 Å resolution) reveals a trimer that is almost identical to the design, although one of the three helices in the trimer is antiparallel relative to the other two in the crystal lattice. Alignment of the structure and model (i) shows that the antiparallel helix (green) (j) positions Ala Cβ methyls that pack into the trimer through the designed interface (gray) (k).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Crystals of proMP C2.1 were obtained via lipid cubic phase (LCP) crystallization at 40 mg/ml peptide concentration as described in ‘Experimental methods.’ Screening was performed by the CSIRO Collaborative Crystallisation Centre (C3). Large rhomboid plates grown in 8% v/v 2-methyl-2,4-pentanediol, 0.1 M ADA (pH 6.7), 0.4 M potassium nitrate, 0.1 M tripotassium citrate were harvested and frozen in liquid nitrogen using 30% glycerol in precipitant solution as cryo-protectant. proMP C2.1 packs in the crystal as a trimer of dimers with two monoolein molecules (wheat stick representation) in the asymmetric unit. Purple ribbons and text represent the designed sequence; gray ribbons and text represent the appended N- and C-terminal sequences included to aid production and crystallization.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Crystals of proMP C3.1 were obtained via sitting-drop vapor diffusion crystallization at 10 mg/ml peptide in 30 mM C8E4 detergent as described in ‘Experimental methods.’ Screening was performed by the CSIRO Collaborative Crystallisation Centre (C3). Small ellipsoid crystals grown in 65% v/v 2-methyl-2,4-pentanediol, 0.1 M tris chloride pH 8.0 were harvested and frozen in liquid nitrogen with no additional cryo-protectant. proMP C3.1 packs in the crystal with a trimer of trimers in the asymmetric unit. Green ribbons and text represent the designed sequence; gray ribbons and text represent the appended N- and C-terminal sequences included to aid production and crystallization.
+
 We conclude that the sequence diversification and the computational selection of the oligomeric state described above provide a practical approach to implement negative design principles that are critical for accurate de novo TMD design (Fleishman and Baker, 2012; Joh et al., 2014). These new insights will likely also be critical to design de novo hetero-oligomeric TMDs.
 
-## proCARs with defined oligomeric states
+### proCARs with defined oligomeric states
 
 The availability of synthetic TMDs with defined structures provided an opportunity to address two key open questions in receptor engineering: What is the relationship between oligomeric state and functional output? And does the use of natural TMDs impart functional characteristics other than surface localization in the membrane? The hinge-TMD regions in all CARs used in FDA-approved CAR T cell products derive from CD8 or CD28 and drive disulfide-linked receptor homodimer formation (Fujiwara et al., 2020). However, the importance of the dimeric state for optimal CAR function is not well understood and alternative oligomeric forms such as trimers or tetramers have not been explored. Furthermore, both CD8 and CD28 TMDs have documented propensities to self-associate (Hennecke and Cosson, 1993; Leddon et al., 2020). Given the presence of both native receptors in CAR T cells, their use in CARs risks unintended interactions that could affect their expression and/or function. To program CARs that form specific oligomeric states and are insulated from confounding interactions with endogenous signaling proteins, we initially chose the crystallographically confirmed proMPs C2.1 and 1.2 to generate proCARs that form dimers or trimers. These were termed proCAR-2 and proCAR-3, respectively (Figure 3a). We also designed a monomeric proMP that exhibited no chloramphenicol survival in deep sequencing TβL (dsTβL) assays (Figure 3—figure supplement 1) and used it to produce a monomeric proCAR-1 in order to extend the structure–function study. Our proCAR designs incorporated an anti-HER2 scFv (FRP5; Wels et al., 1992) fused to the human CD8α hinge sequence, a proMP-derived TMD, the human CD28 costimulatory sequence, and the human CD3ζ activating tail. Our reference CAR contained the human CD28 TMD for comparison, approximating a domain configuration that has been extensively studied in vitro and in vivo (Davenport et al., 2018; Davenport et al., 2015; Haynes et al., 2002). In all proCAR constructs, a cysteine residue in the CD8α hinge that mediates disulfide-bonded dimer formation was mutated to alanine (Figure 3a) to ensure that the designed TMDs were the primary determinants of oligomeric state.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig3-v1.jpg)
+
+**Figure 3.:** (a) Schematic showing the domain organization of the reference HER2-specific CAR constructs and modifications made to introduce programmed membrane protein (proMP) transmembrane domains (TMDs). Bold, boxed sequence indicates the human CD28 TMD in the reference CD28TM and no cys CARs and designed proMP sequences in the monomeric (proCAR-1), dimeric (proCAR-2), and trimeric (proCAR-3) receptors. (b) BW5147 murine thymoma cells stably expressing proCARs and a destabilized GFP NF-κB reporter were surface labeled with anti-Myc antibody and analyzed by flow cytometry to assess surface expression levels. (c) Live cells from (b) were coated with polyclonal anti-IgG to bind CARs through the scFv domain and immunoprecipitated using protein G beads. Products were separated by nonreducing SDS-PAGE and immunoblotted using anti-Myc antibody to visualize surface-expressed CAR proteins. Molecular weight of the unglycosylated CAR polypeptide is 55 kDa. (d, e) Cells from (b) were co-cultured with HER2+ SKBR3 human breast adenocarcinoma cells for the indicated times and analyzed by flow cytometry for upregulation of activation marker CD69 (d) and GFP expression from the NF-κB reporter (e). All activation levels are normalized to the 8 hr time point in cells expressing the CD28TM CAR (% CD28TM Max). Bars represent the mean ± SD, and dots show the individual data points for three independent experiments. (f) Maximum target killing percentage at 20:1 effector to target ratio from 4 hr 51Cr release assay. Bars show mean ± SEM with each data point representing an individual experiment (n = 3). p-Values determined from paired t-tests. (g) Cytokine production by primary mouse HER2 proCAR T cells following 24 hr co-culture with MC57-HER2 target tumor cells. Bars show mean concentration ± SEM with each data point representing an individual experiment (n = 5). Significance was determined from one-way ANOVA with multiple comparisons. Cytokine production on antigen-negative parental MC57 cells shown separately in Figure 3—figure supplement 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Ab initio structure predictions for proMP-1 in C2, C3, and C4 symmetries exhibit flat energy landscapes, suggesting that the design would not form homo-oligomers. (b) The design model of proMP-1 shows no flat surfaces that are prone to self-association; yet, the sequence is highly hydrophobic with apparent insertion energy computed using the deep sequencing TOXCAT-β-lactamase (dsTβL) scale of –18.7 kcal/mol (compared to –5.9 kcal/mol for a reference monomer [the human CLS sequence]). (c) The design is extremely sensitive to chloramphenicol in the dsTβL assay (compared to the weak natural homodimer transmembrane domain [TMD] from human quiescin sulfhydryl oxidase 2 [QSOX2], which served as a reference), verifying that it does not form homo-oligomers.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Flow cytometry gating strategy to determine the transduction efficiency of primary murine CAR T cells. Lymphocytes selected via morphology, live cells selected as zombie aqua negative, T cells selected as CD3+CD8+ and mCherry+ cells defined as CAR T cells. c-Myc co-expression with mCherry indicates surface CAR expression. (b) Example 2D plots showing extracellular c-Myc labeling (y-axis) vs. intracellular mCherry (x-axis) of CD3+CD8+ T cells on day 5 post-transduction with CD28TM CARs and ProCARs 1–3, demonstrating the percentage of cells expressing the CARs. Empty mCherry vector included as c-Myc-negative control.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Cell culture supernatants from CD28TM, no cysteine, proCAR-1, proCAR-2, and proCAR-3 T cells co-cultured with antigen-negative MC57 tumor cells for 24 hr were assessed for cytokine secretion using LEGENDPlex cytokine kits for IFN-γ, IL-2, TNFɑ, and GM-CSF. Mean ± SEM of n = 5 independent experiments shown.
+
 The HER2 proCARs and reference CD28TM constructs were retrovirally expressed in murine BW5147 thymoma cells. All constructs exhibited similar cell-surface levels (Figure 3b), and the reference CD28TM CAR formed disulfide-linked dimers while the cysteine mutant reference (No Cys) and proCARs did not (Figure 3c). All CARs were competent to signal when co-cultured with HER2+ SKBR3 human breast adenocarcinoma cells (Figure 3d and e). When expressed in freshly isolated mouse CD8+ T cells (Figure 3—figure supplement 2a and b), all CARs mediated antigen-dependent killing of MC57 mouse fibrosarcoma cells stably expressing HER2 in vitro (Figure 3f). Only small differences in killing potency were apparent, with proCAR-1 trending slightly less effective than the reference CARs and proCAR-2 and -3 trending slightly more effective. In vitro cytokine production (IFNγ, IL-2, TNFα, and GM-CSF), on the other hand, was significantly lower in all proCARs, reduced by 2- to 10-fold on average (Figure 3g). This effect was not apparent in the CD28TM (No Cys) background and was therefore not due to loss of the CD8α hinge-region disulfide bond.
 
-## The CD28 TMD enhances CAR-mediated cytokine release by associating with endogenous T cell CD28
+### The CD28 TMD enhances CAR-mediated cytokine release by associating with endogenous T cell CD28
 
 The striking reduction in cytokine release in all of the proCARs led us to hypothesize that the higher levels of cytokine release in CD28 TMD-containing CARs depend primarily on CD28 sequence features rather than on CAR oligomeric state. The CD28 TMD contains a highly conserved polar YxxxxT motif that is similar to the one that drives CD3ζ dimerization (Call et al., 2006) and is required for optimal dimerization and surface expression of native CD28 (Leddon et al., 2020). A recent study showed that the CD28 YxxxxT sequence also causes CARs containing the CD28 TMD to physically associate with the CD28 protein in T cells (Muller et al., 2021), but the functional consequences of this association for CAR signaling have not been explored. We modeled this putative CD28TM interface on the ζζ structure (Call et al., 2006) and noted that tyrosine, serine, and threonine in the YSLLVT sequence could all contribute to an interhelical hydrogen-bonding network (Figure 4a). We therefore generated a CAR in which this sequence was mutated to FALLVV, selectively eliminating the key hydrogen-bonding hydroxyl groups, for comparison to our proCAR and reference constructs. This CAR was well expressed as a disulfide-linked homodimer at the cell surface (Figure 4b and c) and generated primary mouse CD8+ CAR T cells whose ability to kill HER2+ target cells in vitro was unimpaired (Figure 4d). The CD28TM mutant, however, induced lower levels of cytokine secretion (two- to sixfold lower on average; Figure 4d) that were similar to those observed for the proCARs. We therefore concluded that the low-cytokine release seen in the proCAR T cells was likely due to the proCARs being insulated from interaction with endogenous T cell signaling proteins, primarily CD28.
 
@@ -66,13 +118,37 @@ The striking reduction in cytokine release in all of the proCARs led us to hypot
 
 To directly interrogate potential CAR-CD28 associations in primary CD8+ T cells, we examined the four CAR constructs we expect to form dimers in a co-clustering experiment by fluorescence microscopy; these dimers included the CD28TM reference and CD28TM mutant as well as those that ablate the disulfide linkage for comparison (No Cys and proCAR-2). We found that receptors containing the WT CD28 TMD frequently co-clustered endogenous surface CD28, while the CD28TM mutant and proCAR-2 did so significantly less frequently (Figure 4e and f). These experiments clearly link the CD28TM interaction motif YSxxxT to high cytokine production in CARs that incorporate this sequence and implicate the recruitment of additional co-stimulatory signaling via endogenous T cell CD28 as the cause. They further substantiate that the de novo-designed TMDs are insulated from these specific interactions.
 
-## In vivo antitumor potency scales with proCAR oligomeric state
+### In vivo antitumor potency scales with proCAR oligomeric state
 
 Short-term in vitro tumor cell killing assays do not account for variations in proliferation, survival, and cytokine activity that are critical for antitumor activity in a living animal. To evaluate the in vivo antitumor potential of proCAR T cells as a function of receptor oligomeric state, we engrafted NOD-SCID-IL2RG-/- (NSG) mice with the aggressive MC38 mouse colon adenocarcinoma cell line engineered to stably express HER2 and treated them 1 day later with a single intravenous injection of CD8+ CAR T cells (Figure 5a). Tumors in mice that received empty vector-transduced T cells grew to ethical endpoint (1000 mm3) within 14 days, while mice that received proCAR-1, -2, and -3T cells slowed tumor growth with potency that increased with oligomeric state (Figure 5b, Figure 5—figure supplement 1). proCAR-3 provided control that most closely resembled the CD28TM reference CAR T cells. The CD28TM mutant CAR tracked with proCAR-2 and proCAR-3 (Figure 5c, Figure 5—figure supplement 1), confirming that mutation of the YSxxxT association motif recapitulated the general proCAR functional profile in vivo as well as in vitro. Analysis of mean tumor size at day 14 post-tumor inoculation (the last day all mice were alive) shows a strong inverse correlation with proCAR oligomeric state (Figure 5d). These data show for the first time that, all other features being equal, the potency of antitumor CAR T cell activity scales directly with the oligomeric state of the engineered receptor.
 
-## Tetrameric proCAR-4 matches CD28TM CAR tumor control in vivo with substantially lower cytokine release in vitro
+![Figure 5.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig5-v1.jpg)
+
+**Figure 5.:** (a) Treatment schedule and experimental setup. NOD-SCID-IL2RG-/- (NSG) mice were injected subcutaneously with MC38-HER2 tumor cells and treated the following day with CD8+ T cells delivered intravenously. Mice were supplemented with daily intraperitoneal injections of recombinant human IL-2 from days 1–3, and tumors measured daily until they reached ethical limits. (b) Tumor growth over time for No CAR (empty vector), CD28TM WT, and proCAR T cell groups (n = 5–6 mice/group). Data points represent mean ± error bars showing SEM. Statistical analysis performed using a two-way ANOVA at day 14. (c) Tumor growth over time of the CD28TM mutant group superimposed on (b). (d) Linear correlation of tumor size on day 14 from (b) vs. proCAR oligomeric state, where the ‘0’ point is provided by empty vector (EV)-transduced T cells. Individual data points are colored, mean values in white box and error bars indicate SEM. p-Values indicate the confidence that the slope of the linear regression is nonzero.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Individual tumor growth curves for all mice treated and presented in Figure 5b and c (n = 5–6 mice/group). Vertical dotted lines indicate day 14, the last time point all mice were alive in each experiment and the day of statistical analysis.
+
+### Tetrameric proCAR-4 matches CD28TM CAR tumor control in vivo with substantially lower cytokine release in vitro
 
 This striking correlation between receptor oligomeric state and functional potency prompted us to push the limits further by designing a tetrameric proMP (proMP C4.1), which features extensive alanine-based complementary packing (Figure 6a). The free proMP C4.1 peptide migrates on SDS-PAGE predominantly as a single species at a position indicative of a tetramer (Figure 6b), consistent with the observation that complementary apolar packing alone can drive stable MP assembly (Mravic et al., 2019). HER2 proCAR-4 containing the tetrameric proMP C4.1 TMD sequence was well expressed at the surface of freshly isolated mouse CD8+ T cells (Figure 6c, Figure 6—figure supplement 1) and supported strong tumor cell killing in vitro (Figure 6d). This live-cell imaging assay at low effector:target ratio confirmed that oligomeric proCAR T cells and the T cells expressing the reference CD28TM CAR were all potent killers in vitro, but the monomeric proCAR-1 T cells clearly segregated with weaker killing. Interestingly, the scaled killing we observed in vivo was not evident here, consistent with observations by others that in vitro killing is easily saturated and some differences in CAR activity are only observed at very low target antigen density (Majzner et al., 2020). In vivo, proCAR-4 T cells displayed a level of MC38-HER2 tumor control that was indistinguishable from the CD28TM reference CAR-T cells (Figure 6e, Figure 6—figure supplement 2), thereby closing the functional gap that was apparent between proCAR-3 and the CD28TM CAR in the previous experiment.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig6-v1.jpg)
+
+**Figure 6.:** (a) SDS-PAGE migration of programmed membrane protein (proMP) C4.1 is consistent with a tetramer. Design model and peptide sequence shown for reference. (b) Rosetta ab initio structure prediction calculations predict that proMP C4.1 preferentially forms a tetramer. (c) CAR surface expression on primary mouse CD8+ T cells stably expressing CD28TM and proCAR-4 analyzed by c-Myc staining on flow cytometry. HER2 proCAR-4 was designed using the proMP C4.1 sequence without the final C-terminal leucine as a transmembrane domain (TMD), inserted as shown in Figure 3a. (d) IncuCyte killing assay over 24 hr of no CAR, CD28TM, and proCAR1-4 T cells on MC57-HER2 target cells at 1:1 effector to target ratio. Comparison of maximum killing for n = 6 independent experiments shown between CD28TM vs. ProCAR-4. Data points represent individual experiments, with mean ± SEM error bars plotted. (e) Tumor growth over time using the same experimental design in Figure 5a for No CAR (empty vector), CD28TM WT, and proCAR-4 T cell groups (n = 5–6 mice/group). Data points represent mean ± error bars showing SEM. Statistical analysis performed using a two-way ANOVA at day 10. (f, g) Linear correlation of proCAR oligomeric state vs. IFNγ, IL-2, TNFα, and GM-CSF cytokine production (normalized to CD28TM reference) from 24 hr co-culture with (e) MC57-HER2 and (f) antigen-negative MC57 tumor cells. Individual data points are colored, mean values in white box and error bars indicate SEM.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Example 2D plots showing extracellular c-Myc labeling (y-axis) vs. intracellular mCherry (x-axis) of CD3+CD8+ T cells on day 5 post-transduction with CD28TM chimeric antigen receptors (CARs) and proCAR-4, demonstrating the percentage of cells expressing the CARs. Empty mCherry vector included as c-Myc-negative control.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Individual tumor growth curves for all mice treated and presented in Figure 6e (n = 5–6 mice/group). Vertical dotted lines indicate day 10, the last time point all mice were alive in each experiment and the day of statistical analysis.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/75660/elife-75660-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** proCAR-4 and CD28TM chimeric antigen receptor (CAR) T cells were co-cultured with either antigen-negative (MC57-Parental) or MC57-HER2 target tumor cells and incubated for 24 hr. Cell culture supernatants were subsequently collected analyzed for cytokine secretion using LEGENDPlex cytokine kits for IFN-γ, IL-2, TNFɑ, and GM-CSF. Mean ± SEM of five biological replicates shown.
 
 Despite this functional equivalence in vivo, proCAR-4 T cells still released significantly lower levels of cytokines than the CD28TM reference CAR T cells in vitro (Figure 6—figure supplement 3). However, the tetrameric design trended towards higher levels of all cytokines than the other proCARs. When we normalized cytokine release to the CD28TM reference across all experiments for all proCAR T cells, the combined data revealed strong linear correlations with receptor oligomeric state for all cytokines tested (Figure 6f), reflecting a similar relationship to that identified in the in vivo tumor control data. Taken together, our results reveal that the high cytokine release stimulated by the CD28TM CAR is largely determined by recruiting native CD28 through the TMD. Yet, amongst the proCAR designs that all eliminate this unintended interaction and thereby reduce cytokine release, the relative cytokine levels scale directly with the receptors’ oligomeric state. This is consistent with a sensitivity to the number of CAR-encoded CD28 and CD3 tail sequences that can be engaged by a single antigen-binding event. As expected, cytokine production in response to HER2-negative tumor cells was very low in all constructs (Figure 6g), showing that pre-assembled higher-order oligomers did not cause spontaneous antigen-independent activation of cytokine production and still required stimulation. These data confirm a robust linear correlation between CAR oligomeric state and CAR T cell functional output, both in vivo and in vitro, that extends at least to the tetrameric state.
 
@@ -90,140 +166,550 @@ Importantly, TMD modifications do not directly impact either the antigen-binding
 
 ## Materials and methods
 
-## Computational methods
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>E.cloni 10G</td>
+      <td>Lucigen</td>
+      <td>60107</td>
+      <td>High-transformation efficiency electrocompetent cells</td>
+    </tr>
+    <tr>
+      <td>Cell line(Mus musculus)</td>
+      <td>BW5147</td>
+      <td>Kind gift from McClusky lab</td>
+      <td>CVCL_3896</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line(Homo sapiens)</td>
+      <td>SKBR3</td>
+      <td>Kind gift from Jenkins lab</td>
+      <td>CVCL_0033</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line(M. musculus)</td>
+      <td>MC57</td>
+      <td>Kind gift from Jenkins lab</td>
+      <td>CVCL_4985</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line(M. musculus)</td>
+      <td>MC57-HER2</td>
+      <td>Kind gift from Jenkins lab</td>
+      <td>CVCL_4985</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line(M. musculus)</td>
+      <td>MC38-HER2</td>
+      <td>Kind gift from Jenkins lab</td>
+      <td>CVCL_B288</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line(H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>Cellbank Australia</td>
+      <td>Cat# 12022001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Pacific Blue anti-mouse CD69 Armenian hamster IgG monoclonal antibody(clone: H1.2F3)</td>
+      <td>BioLegend</td>
+      <td>Cat# 104524</td>
+      <td>Flow cytometry (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE anti-mouse CD3ε Armenian hamster IgG monoclonal antibody(clone: 145-2C11)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100308</td>
+      <td>Flow cytometry (1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-Cyanine7 anti-mouse CD8α rat IgG2a, κ monoclonal antibody(clone: 53-6.7)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100714</td>
+      <td>Flow cytometry (1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 anti-human c-Myc-tag mouse IgG2a monoclonal antibody(clone: 9B11)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 2233S</td>
+      <td>Flow cytometry (neat)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC anti-mouse CD28 Syrian hamster IgG monoclonal antibody(clone: 37.51)</td>
+      <td>BioLegend</td>
+      <td>Cat# 102110</td>
+      <td>Fluorescence microscopy (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human c-Myc-tag mouse IgG2a monoclonal antibody(clone: 9B11)</td>
+      <td>Cell Signaling</td>
+      <td>Cat# 2276</td>
+      <td>IP (1:2000)Fluorescence microscopy (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP anti-mouse IgG polyclonal antibody</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A0168</td>
+      <td>IP (1:20,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 goat anti-mouse IgG polyclonal antibody</td>
+      <td>Abcam</td>
+      <td>Cat# ab150113</td>
+      <td>Fluorescence microscopy (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LEGENDplex mouse cytokine panel 2 detection antibodies</td>
+      <td>BioLegend</td>
+      <td>Cat# 740149</td>
+      <td>(1:4)Reagent used for cytokine detection in Figures 3, 4 and 6</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>LEGENDplex MU Th panel detection antibodies V02</td>
+      <td>BioLegend</td>
+      <td>Cat# 741045</td>
+      <td>(1:4)Reagent used for cytokine detection in Figures 3, 4 and 6</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor647 anti-human CD340 (erbB2/HER2) mouse IgG1, κ antibody(clone: 24D2)</td>
+      <td>BioLegend</td>
+      <td>Cat# 324412</td>
+      <td>Flow cytometry (1:3200)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMAL-dsTbL(plasmid)</td>
+      <td>Elazar et al., 2016a</td>
+      <td>Addgene:73805</td>
+      <td>TOXCAT β-lactamase assays</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Designed proCARs</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Experimental Methods - DNA sequences of designs</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Deep sequencing primers</td>
+      <td>Elazar et al., 2016a</td>
+      <td></td>
+      <td>Deep sequencing library preparation and a protocol and analysis as described</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Retronectin</td>
+      <td>Takara Bio</td>
+      <td>Cat# T100B</td>
+      <td>Final concentration (32 μg/ml)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant mouse IL-2 (ELISA Std.)</td>
+      <td>BioLegend</td>
+      <td>Cat# 575409</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant mouse TNFα (ELISA Std.)</td>
+      <td>BioLegend</td>
+      <td>Cat# 575209</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant mouse IFNγ (ELISA Std.)</td>
+      <td>BioLegend</td>
+      <td>Cat# 575309</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant mouse GM-CSF (ELISA Std.)</td>
+      <td>BioLegend</td>
+      <td>Cat# 576309</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant human IL-2</td>
+      <td>PeproTech</td>
+      <td>Cat# 200-02-1</td>
+      <td>Dose(5 × 104 IU/injection)Media concentration(100 IU/ml)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse T-activator CD3/CD28 Dynabeads</td>
+      <td>Gibco</td>
+      <td>Cat# 11456D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EasySep mouse CD8a positive kit II</td>
+      <td>Stem Cell Technologies</td>
+      <td>Cat# 18953</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Roswell Park Memorial Institute (RPMI) 1640 Medium +Pen/Strep</td>
+      <td>Gibco</td>
+      <td>In-house</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dulbecco′s Modified Eagle Medium (DMEM)</td>
+      <td>Lonza</td>
+      <td>Cat# BE12-707F</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dulbecco′s phosphate buffered saline</td>
+      <td>Gibco</td>
+      <td>In-house</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal bovine serum</td>
+      <td>Bovogen Biologicals</td>
+      <td>Cat# 423101</td>
+      <td>Final concentration (10% v/v)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Polybrene</td>
+      <td>Sigma-Aldrich</td>
+      <td>TR-1003-G</td>
+      <td>Final concentration (8 µMg/ml)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zombie Aqua</td>
+      <td>BioLegend</td>
+      <td>Cat# 423101</td>
+      <td>Flow cytometry (1:500)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propidium iodide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# P4170</td>
+      <td>Final concentration (50 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>l-Glutamine</td>
+      <td>Gibco</td>
+      <td>Cat# 25030081</td>
+      <td>Final concentration (2 mM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium pyruvate</td>
+      <td>Gibco</td>
+      <td>Cat# 11360070</td>
+      <td>Final concentration (1 mM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Non-essential amino acids</td>
+      <td>Gibco</td>
+      <td>Cat# 11140050</td>
+      <td>Final concentration (1×)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>β-Mercaptoethanol</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# M3148</td>
+      <td>Final concentration (50 µM)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Saponin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 47036</td>
+      <td>Final concentration (1.2% w/v)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium azide</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# 71289</td>
+      <td>Final concentration (0.1% w/v)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism v9.0</td>
+      <td>GraphPad Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo v10</td>
+      <td>FlowJo Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IncuCyte Analysis Software</td>
+      <td>IncuCyte Analysis Software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Rosetta macromolecular modeling suite</td>
+      <td>Rosetta</td>
+      <td>Git version: b210d6d5a0c21208f4f874f62b2909f926379c0f</td>
+      <td>For documentation, see https://www.rosett acommons.org/</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cr51</td>
+      <td>PerkinElmer</td>
+      <td></td>
+      <td>100 µCi</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LEGENDplex mouse IL-2 capture bead A7</td>
+      <td>BioLegend</td>
+      <td>Cat# 740054</td>
+      <td>Reagent used for cytokine detection in Figures 3, 4 and 6</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LEGENDplex mouse TNFα capture bead A6</td>
+      <td>BioLegend</td>
+      <td>Cat# 740066</td>
+      <td>Reagent used for cytokine detection in Figures 3, 4 and 6</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LEGENDplex IFNγ capture bead A4</td>
+      <td>BioLegend</td>
+      <td>Cat# 740065</td>
+      <td>Reagent used for cytokine detection in Figures 3, 4 and 6</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LEGENDplex GM-CSF capture bead B7</td>
+      <td>BioLegend</td>
+      <td>Cat# 740146</td>
+      <td>Reagent used for cytokine detection in Figures 3, 4 and 6</td>
+    </tr>
+  </tbody>
+</table>
+
+### Computational methods
 
 Command lines and RosettaScripts (Fleishman et al., 2011) are available in Supplementary file 1. Rosetta is available at http://www.rosettacommons.org. We used git version b210d6d5a0c21208f4f874f62b2909f926379c0f for all Rosetta calculations.
 
-## Membrane-protein energy function
+### Membrane-protein energy function
 
-All atomistic calculations used the Rosetta ref2015_memb energy function Weinstein et al., 2019. This energy function is based on the recent Rosetta energy function 2015 (ref2015) energetics, which is dominated by van der Waals packing, electrostatics, hydrogen bonding, and water solvation, with the difference that in ref2015_memb the solvation terms are replaced with splines that recapitulate the amino acid-based lipophilicity contributions observed in the dsTβL insertion profiles (Elazar et al., 2016a). The centroid-level energy function was similarly based on ref2015 with amino acid lipophilicity preferences and a biasing potential that disfavors large interhelical crossing angles that are rarely observed in natural TMDs:(1)penalty=1.51×10-4×θ3-8.925×10-3×θ2+0.187×θ-0.532
+All atomistic calculations used the Rosetta ref2015_memb energy function Weinstein et al., 2019. This energy function is based on the recent Rosetta energy function 2015 (ref2015) energetics, which is dominated by van der Waals packing, electrostatics, hydrogen bonding, and water solvation, with the difference that in ref2015_memb the solvation terms are replaced with splines that recapitulate the amino acid-based lipophilicity contributions observed in the dsTβL insertion profiles (Elazar et al., 2016a). The centroid-level energy function was similarly based on ref2015 with amino acid lipophilicity preferences and a biasing potential that disfavors large interhelical crossing angles that are rarely observed in natural TMDs:
+
+$$
+penalty=1.51\times10^{-4}\times\theta^{3}-8.925\times10^{-3}\times\theta^{2}+0.187\times\theta-0.532
+$$
 
 where θ is the crossing angle between the helix and the membrane normal.
 
-## TMD de novo design
+### TMD de novo design
 
 3- and 9-mer backbone fragments were generated for a 24 amino acid poly valine extended chain using the Rosetta fragment picker (Gront et al., 2011). The fold and dock protocol was used in all design simulations (Das et al., 2009). Briefly, depending on the type of symmetry (C2, C3, or C4), the chains were symmetrically duplicated and each move was applied identically to all chains. Moves included centroid-level fragment insertion and docking, followed by all-atom sequence optimization, and backbone, sidechain, and rigid-body minimization. 50,000 independent trajectories were run and the structure models were filtered using structure and energy-based criteria (the best 1% by system energy, solvent-accessible surface area>700Å; shape complementarity (Sc) > 0.6 [Lawrence and Colman, 1993]; ΔΔGbinding < –15 R.e.u.; helicality< 0.1R.e.u. [Weinstein et al., 2019]). Resulting models were visually inspected and selected for further computational design.
 
-## Sequence diversification
+### Sequence diversification
 
-De novo-designed sequences exhibited a high propensity of the amino acid Leu. To reduce this bias, we implemented 120 steps of Monte Carlo simulated annealing sequence design. In each step, a random single-amino acid change was introduced in any position (mutations were restricted to Gly, Ala, Val, Ile, Leu, Met, Phe, Tyr, or Trp). Following relaxation, the mutant was evaluated on three criteria: ΔΔGbinding, system energy, and the difference between the amino acid propensities in the design versus natural TMDs (Liu et al., 2002) using the following equation (RMSDsequence comp):(2)RMSDsequence comp=∑aa(f(aadesign)−f(aanatural))2L
+De novo-designed sequences exhibited a high propensity of the amino acid Leu. To reduce this bias, we implemented 120 steps of Monte Carlo simulated annealing sequence design. In each step, a random single-amino acid change was introduced in any position (mutations were restricted to Gly, Ala, Val, Ile, Leu, Met, Phe, Tyr, or Trp). Following relaxation, the mutant was evaluated on three criteria: ΔΔGbinding, system energy, and the difference between the amino acid propensities in the design versus natural TMDs (Liu et al., 2002) using the following equation ($RMSD_{sequence comp}$):
+
+$$
+RMSD_{sequence comp}=\sqrt{\frac{\sumaa(f(aa_{}^{design})−f(aa_{}^{natural}))^{2}}{L}}
+$$
 
 where f is the frequency of a given amino acid, and L is the amino acid sequence length.
 
-The three criteria were then transformed using the ‘fuzzy’-logic design sigmoidal function (Warszawski et al., 2014):(3)fx=11+e(x-o)s
+The three criteria were then transformed using the ‘fuzzy’-logic design sigmoidal function (Warszawski et al., 2014):
+
+$$
+f_{x}=\frac{1}{1+e^{(x-o)s}}
+$$
 
 where x is each of the three criteria, and o and s take the following values: for ΔΔGbinding 3 R.e.u. and 1 R.e.u.–1, respectively, for system energy 20 R.e.u. and 0.5 R.e.u.–1, respectively, and for RMSDsequence comp 0.05 and 50, respectively. The o thresholds on binding and system energy were computed relative to the energies of the starting model in each design.
 
-The resulting functions were then integrated into a ‘fuzzy’-logic optimization objective function (Warszawski et al., 2014):(4)fΔΔGbinding∧fsystem energy∧fRMSDsequence comp
+The resulting functions were then integrated into a ‘fuzzy’-logic optimization objective function (Warszawski et al., 2014):
 
-## Ab initio structure prediction
+$$
+f_{ΔΔGbinding}∧f_{system energy}∧f_{RMSD_{sequence comp}}
+$$
+
+### Ab initio structure prediction
 
 Designed sequences were subjected to the membrane fold and dock method essentially as described in Weinstein et al., 2019. Structure models were filtered using structure and energy-based filters: solvent-accessible surface area > 600 Å; energy < 0; the distance between the TMD ends along the membrane normal, TMsSpanMembrane > 25 Å; fractional agreement between the desired topology for each position (cytosolic, membrane, external) and the designed topology SpanTopologyMatchPos > 0.1.
 
-To evaluate whether the ab initio structure predictions are funneled, we computed the Z-score:(5)Z=Elowest - E_STD(E)
+To evaluate whether the ab initio structure predictions are funneled, we computed the Z-score:
+
+$$
+Z=\frac{E_{lowest }- E_}{STD(E)}
+$$
 
 where Elowest is the lowest-energy model with an RMSD of less than 2 Å to the original design model, and E represents energies of models with an RMSD > 2 Å and less than 50 R.e.u. from Elowest. A cutoff of Z > 2.5 was typically used to determine whether an energy landscape was funneled.
 
-## Rosetta mutational-scanning calculations
+### Rosetta mutational-scanning calculations
 
 In order to characterize the effects of mutations on the designs’ binding energy, we conducted computational mutation scanning using the FilterScan protocol in RosettaScripts (see XMLs section below). If the difference in total energy for a mutation was >2.5 R.e.u., the mutation was predicted to be detrimental, otherwise it is defined as neutral/beneficial.
 
-## Experimental methods
+### Experimental methods
 
-## TOXCAT β-lactamase assays
+#### TOXCAT β-lactamase assays
 
 DNA encoding the designs and controls were cloned into the pMAL_dsTβL vector (Elazar et al., 2016a) (available at AddGene #73805) using XhoI and SpeI restriction sites and selected by growth on spectinomycin and ampicillin in standard concentrations. For positive controls, the natural ErbB2 and QSOXS2 TM domains were chosen (representing strong and weak homo-oligomers, respectively; Schanzenbach et al., 2017). The monomeric C-terminal portion of human L-selectin (CLS) (Srinivasan et al., 2011; Elazar et al., 2016a) was chosen as a negative control. Resulting plasmids were transformed into E. coli cloni cells (Lucigen), plated on agar plates containing 50 μl/ml spectinomycin followed by overnight growth in a 37°C at 200 rpm. Cultures were then inoculated into fresh LB + 50 μl/ml spectinomycin medium to OD600 1 and then plated on Petri dishes containing 50 μl/ml spectinomycin, 100 μl/ml ampicillin, or 100 μl/ml ampicillin with a range of different chloramphenicol concentrations. For single-clone growth assays, 2 μl of cultures at OD 0.1 were diluted and plated on square Petri dishes containing different chloramphenicol concentrations (extended data in Figure 1—figure supplement 2).
 
-## Deep sequencing analysis
+#### Deep sequencing analysis
 
 A library encoding all of the designed sequences, controls, and single-point mutations in defined positions (using NYS codons to encode hydrophobic and small, mildly polar amino acids) was transformed and grown in large 12cm Petri dishes on different chloramphenicol concentrations (0, 60, 80, 100, and 120μl/ml for data in Figure 1C and extended Figure 3—figure supplement 1 and 0, 21, 27, 34, 42, 52, 66, 82, 102, 128, 160, and 200 μl/ml for data in Figure 3—figure supplement 1C) overnight. Chloramphenicol concentration of 60 μl/ml was selected for the analysis for Figure 1D-F and Figure 1—figure supplement 3. Bacteria were harvested and subjected to deep sequencing library preparation and a protocol and analysis as described in Elazar et al., 2016a.
 
-## Deriving changes in free energy of self-association from the deep mutational scanning data
+#### Deriving changes in free energy of self-association from the deep mutational scanning data
 
-From the deep sequencing analysis, we compute the propensity p of each mutant j at position i relative to the wild type as described in Elazar et al., 2016a:(6)pi,j=counti,jcountwt
+From the deep sequencing analysis, we compute the propensity p of each mutant j at position i relative to the wild type as described in Elazar et al., 2016a:
 
-where count is the number of reads for each variant, adding a pseudo-count of 1 if no reads were detected for the wild type. We then obtain selection coefficients s by comparing the selected and reference populations:(7)si,j=pselectedi,jprefi,j
+$$
+p^{i,j}=\frac{count^{i,j}}{count^{wt}}
+$$
 
-where the selected population is selected on ampicillin + chloramphenicol plates (selection for insertion and self-association, respectively) and the reference population is selected only on ampicillin plates (insertion only). At each position i, the selection coefficients are transformed to changes in free energy of self-association from the wildtype identity wt to the single-point mutation j through the Gibbs free-energy equation:(8)ΔΔGi,wt→jmeasured=−RTln(si,jsi,wt)
+where count is the number of reads for each variant, adding a pseudo-count of 1 if no reads were detected for the wild type. We then obtain selection coefficients s by comparing the selected and reference populations:
+
+$$
+s^{i,j}=\frac{p_{selected}^{i,j}}{p_{ref}^{i,j}}
+$$
+
+where the selected population is selected on ampicillin + chloramphenicol plates (selection for insertion and self-association, respectively) and the reference population is selected only on ampicillin plates (insertion only). At each position i, the selection coefficients are transformed to changes in free energy of self-association from the wildtype identity wt to the single-point mutation j through the Gibbs free-energy equation:
+
+$$
+ΔΔG_{i,wt→j}^{measured}=−RTln(\frac{s^{i,j}}{s^{i,wt}})
+$$
 
 where R is the gas constant, T is the absolute temperature (310 K), and ln is the natural logarithm.
 
-In the TOXCAT-β-lactamase construct, bacterial viability on chloramphenicol depends on the activity of the ToxR chloramphenicol acetyltransferase moiety, which in turn depends on oligomer concentrations (Langosch et al., 1996; Russ and Engelman, 1999; Elazar et al., 2016a). Oligomer concentrations depend on both membrane insertion and self-association energy (Duong et al., 2007; Elazar et al., 2016a). Therefore, the energy computed in Equation 8 comprises contributions from both membrane insertion (doubled in the case of homodimers) and self-association energy. Thus, to extract the self-association energies for each point mutation, the apparent free energy of self-association subtracts the apparent contribution from insertion:(9)ΔΔGi,wt→japp,assoc.=ΔΔGi,wt→jmeasured-2ΔΔGi,wt→japp,ins.
+In the TOXCAT-β-lactamase construct, bacterial viability on chloramphenicol depends on the activity of the ToxR chloramphenicol acetyltransferase moiety, which in turn depends on oligomer concentrations (Langosch et al., 1996; Russ and Engelman, 1999; Elazar et al., 2016a). Oligomer concentrations depend on both membrane insertion and self-association energy (Duong et al., 2007; Elazar et al., 2016a). Therefore, the energy computed in Equation 8 comprises contributions from both membrane insertion (doubled in the case of homodimers) and self-association energy. Thus, to extract the self-association energies for each point mutation, the apparent free energy of self-association subtracts the apparent contribution from insertion:
+
+$$
+ΔΔG_{i,wt→j}^{app,assoc.}=ΔΔG_{i,wt→j}^{measured}-2ΔΔG_{i,wt→j}^{app,ins.}
+$$
 
 where the apparent change in free energy of insertion is computed according to the per amino acid, membrane depth-dependent insertion energies derived from the dsTβL assay in Elazar et al., 2016a.
 
-## DNA sequences of designs
+#### DNA sequences of designs
 
-## proMP peptide production
+#### proMP peptide production
 
 Peptides were produced recombinantly as 9His-trpLE fusion proteins in E. coli following a previously published protocol (Sharma et al., 2013). To aid purification, analysis, and crystallization, all designed sequences were modified to include Glu-Pro-Glu at the amino terminus and Arg-Arg-Leu-Cys at the carboxy terminus based on the favorable properties of the glycophorin A TMD fragment whose structure has been previously determined by X-ray crystallography (Trenker et al., 2015). Dissolved fusion protein from inclusion bodies was purified on nickel affinity resin, cyanogen bromide digested, and reverse-phase HPLC purified following the published procedure (Sharma et al., 2013) with the following modifications: the C-terminal Cys sulfhydryl group was protected using 10 mM S-methyl methanethiosulfonate (MMTS, Sigma-Aldrich) during lysis and inclusion body solubilization and peptides were at no time disulfide linked. HPLC-purified peptides were stored as lyophilized products at room temperature (RT) until needed.
 
-## SDS-PAGE analysis
+### SDS-PAGE analysis
 
 Samples were prepared by drying indicated amounts of each purified peptide taken from dried and weighed product redissolved in 1,1,1,1,1,1-hexafluoroisopropanol (HFIP, Merck). Samples were lyophilized, redissolved in 25 μl 1× NuPAGE LDS sample buffer (Thermo Fisher Scientific), and heated for 1 min at 95°C. Cooled samples were separated on 12% NuPAGE Bis-Tris gels (Thermo Fisher Scientific) at 200 V for 40 min and visualized by staining with Coomassie Blue R-250 (Bio-Rad).
 
-## Crystallization screening and structure determination
+### Crystallization screening and structure determination
 
-## proMP crystallization in LCP
+#### proMP crystallization in LCP
 
 For reconstitution into LCP, lyophilized peptide was weighed and co-dissolved with appropriate amounts of monoolein (Nu-Chek Prep) in HFIP. Solvent was removed under streaming nitrogen, followed by lyophilization overnight. Peptide-monoolein mix was heated (52°C) until liquid and mixed 3:2 with 10 mM Tris pH 8.0 for LCP formation using coupled 100 μl gastight Hamilton syringes (Formulatrix) at RT. For screening, LCP mixture was dispensed in 100 nl drops onto 96-well glass plates (Molecular Dimensions) with 1000 µl of precipitant solution using a Mosquito LCP robot (TTP Labtech) at RT. Plates were sealed and kept at 20°C in a Rock Imager 1000 (Formulatrix) for incubation and monitoring of crystal formation.
 
-## proMP crystalliszation in detergent
+#### proMP crystalliszation in detergent
 
 For reconstitution with detergent, lyophilized peptide was weighed and dissolved in 30 mM detergent (C8E4; Anatrace, C8E5; Anatrace) in HFIP. Solvent was removed under streaming nitrogen followed by lyophilization overnight. Peptide-detergent mix was reconstituted in 10 mM Tris pH 8.0. For screening, peptide-detergent mixture was dispensed in 150 nl drops onto SD-2 plates (IDEX Corp) with 150 nl of precipitant solution using a Crystal Phoenix robot (Art Robins Instruments) at RT. Droplets were equilibrated against 50 nl of crystallant in the reservoir. Plates were sealed and kept at 20°C in a Rock Imager 1000 (Formulatrix) for incubation and monitoring of crystal formation.
 
-## Data collection and structure determination
+#### Data collection and structure determination
 
 Data were collected on the MX2 beamline of the Australian Synchrotron at a wavelength of 0.9537 Å and a temperature of 100 K. Data were indexed and scaled using XDS (Kabsch, 2010) and Aimless (Winn et al., 2011). Structure factor amplitudes were obtained using cTruncate (Davenport et al., 2015). 6W9Y was solved with Phaser (McCoy et al., 2007) by molecular replacement using the GpA monomer helix as a search model (PDB code 5EH6 Trenker et al., 2015). 6W9Z was solved with Phaser by molecular replacement using 5EH6 mutated to the proMP C2.1 sequence in Coot (Emsley et al., 2010). 6WA0 was solved with Phaser by molecular replacement using the designed trimer as a search model. This resulted in a model that contained good density for two chains, with the final chain of the trimer considerably worse. The third chain was removed and a second molecular replacement job was performed with the first two chains fixed in place and a single helix from the model trimer used as a search model. This resulted in placement of the third helix in an antiparallel direction with respect to the other two chains, and this was judged as correct based on comparison of overall Rfree of each model, average B factors of each chain, and visual inspection of the electron density in Coot (Emsley et al., 2010). Iterative rounds of refinement and model building were performed in PHENIX (Liebschner et al., 2019) and Coot (Dong et al., 2019).
 
-## proCAR construct preparation
+#### proCAR construct preparation
 
 The HER2-specific CAR used was based on a previously described construct (Haynes et al., 2002). Restriction digest sites were removed and human sequences were Gibson cloned together and inserted into EcoRI/XhoI digested pMSCV-IRES-mCherry-II vector (NEB Gibson Assembly Master Mix, Cat# E2611L). The CAR construct contains the FRP5 anti-HER2 scFv, Myc tag, human CD8ɑ stalk, human CD28 TM/ tail, and human CD3ζtail sequences. PCR primers were used to generate a cysteine to alanine mutation in the CD8ɑ stalk region to prevent covalent dimerization. Overlapping PCR was used to generate CARs with altered TM domains on the background of the cysteine-mutated CD8ɑ stalk. These constructs were inserted into the pMSCV-IRES-mCherry-II vector via EcoRI/XhoI restriction sites.
 
-## Animals
+#### Animals
 
 All mice were of an inbred C57B/6J or NOD.Cg‐PrkdcscidIL2rgtmWjl/SzJ (NSG) genetic background. All animal experiments were approved and performed in accordance with the regulatory standards of the Walter and Eliza Hall Institute Animal Ethics Committee (approval: WEHI-2019.020).
 
-## Mouse CD8+ T cell isolation and culture
+#### Mouse CD8+ T cell isolation and culture
 
 Single-cell suspensions of peripheral lymph nodes from 6- to 8-week-old C57B/6 mice were prepared by mechanically dissociating through a 70 µm cell strainer (BD Biosciences) into cold phosphate-buffered saline (PBS). CD8+ T cells were subsequently selected using the EasySep mouse CD8a positive Kit II (Stem Cell Technologies) according to the manufacturer’s instructions. Purity was confirmed as >95% using LSR II Fortessa (BD Bioscience), FACSymphony (BD Biosciences), or Aurora (Cytek). CD8+ T cells were subsequently activated by incubating overnight with Mouse T-Activator CD3/CD28 Dynabeads (Gibco) at a bead-to-cell ratio of 1:1 in mouse T cell medium (mTCM) consisting of Roswell Park Memorial Institute (RPMI) 1640 Medium (Gibco) supplemented with fetal bovine serum (10%; Bovogen Biologicals), l-glutamine (2 mM; Gibco), sodium pyruvate (1 mM; Gibco), nonessential amino acids (1×; Sigma-Aldrich), β-mercaptoethanol (50 μM; Sigma-Aldrich), and recombinant human IL-2 (100 IU/ml; PeproTech). Following removal of magnetic beads, T cells were maintained at 1 × 106 cell/ml in mTCM.
 
-## Cell lines
+#### Cell lines
 
 293T, MC57, MC57-HER2, SKBR3, and MC38-HER2 cell lines were cultured in Dulbecco’s Modified Eagle Medium (DMEM) supplemented with fetal bovine serum (10%; Bovogen Biologicals) and l-glutamine (2 mM; Gibco), incubated at 37°C, 10% CO2. BW5147 cells were cultured in RPMI supplemented with fetal bovine serum (10%; Bovogen Biologicals) and l-glutamine (2 mM; Gibco), incubated at 37°C, 5% CO2. Cell line identity was not independently verified by genetic testing. HER2 expression on tumor target and control cell lines was confirmed via anti-HER2 surface staining (BioLegend, Cat# 324412) and flow cytometry. All cell lines were regularly confirmed mycoplasma negative using the Stratagene Mycosensor PCR Assay Kit (Agilent, Cat# 302108).
 
-## BW5147 and primary mouse CAR-T cell generation
+#### BW5147 and primary mouse CAR-T cell generation
 
 Retrovirus for all T cells was produced using calcium phosphate transfection of HEK293T cells. BW5147 cells expressing a destabilized-GFP NFkB reporter element were mixed 1:1 with filtered viral supernatant at a final density of 2.5 × 105 cells/ml. Polybrene transfection reagent (Merck) was added to a final concentration of 8 µg/ml polybrene prior to spinfection (2500 rpm, 37°C, 45 min). For primary mouse T cells, plates were coated with 32 µg/ml retronectin (Takara Bio) for 24 hr before plating of 1 × 106 cells in 1 ml viral supernatant and performing a spinfection (2500 rpm, 37°C, 45 min). Viral supernatant was removed after 16 hr and replaced with RPMI supplemented with fetal bovine serum (10%; Bovogen Biologicals) and l-glutamine (2 mM; Gibco) for BW5147 cells, or mTCM for primary T cells.
 
-## Surface IP and immunoblot analysis
+#### Surface IP and immunoblot analysis
 
 2 × 107 cells per sample were pelleted and washed twice with PBS prior to coating with 20 µg/ml polyclonal anti-mouse IgG for 45 min on ice. Cells were washed twice with PBS and lysed in 200 µl PBS/1% IGEPAL-640/P8340 protease inhibitor/10 mM iodoacetamide for 30 min on ice. Lysate was centrifuged at 20,000 × g for 10 min, 10 µl of cleared lysate was taken for 5% input controls with remainder being added to 20 µl Thermo Fisher Protein G agarose beads and rotated in cold room for 2 hr. Beads were washed with lysis buffer twice then eluted with LDS and boiled. Samples were run on SDS-PAGE and transferred for blotting with 1:2000 anti-Myc primary antibody (Cell Signaling #2276) and 1:20,000 anti-mouse IgG HRP secondary (Sigma-Aldrich A0168).
 
-## CAR T cell SKBR3 co-culture assay
+#### CAR T cell SKBR3 co-culture assay
 
 5 × 104 cells/cell line were aliquoted onto a confluent layer of SKBR3 cells in a 96-well plate at specified time points. After 8 hr, all time points were removed from plate and stained with 1:200 anti-CD69 (BioLegend #104524) on ice for 45 min. Samples were analyzed on an LSR Fortessa X20 (BD Biosciences), and data were analyzed using FlowJo v10 software.
 
-## Flow cytometry
+#### Flow cytometry
 
 For CD8+ T cell selection and transduction efficiency verification, single-cell suspensions were washed and stained with Live/Dead marker Zombie Aqua (BioLegend) for 15 min at RT in PBS, before washing and labeling for at least 30 min on ice with a panel of monoclonal antibodies (mAbs), including anti-mouse CD3ε PE (clone 145-2C11, BioLegend), anti-mouse CD8α APC-Cy7 (clone 53-6.7, BioLegend), and anti-mouse Myc-Tag Alexa Fluor 647 (clone 9B11, Cell Signaling). All samples were analyzed with an LSR II Fortessa (BD Biosciences), FACSymphony (BD Biosciences), or Aurora (Cytek), and data were analyzed using FlowJo v10 software.
 
-## Chromium release killing assay
+#### Chromium release killing assay
 
 Standard 51Cr release assays were conducted to assess CAR T cell cytotoxicity by measuring release of radioactivity into culture supernatants as cells are lysed. Target MC57 mouse fibrosarcoma cells stably expressing human HER2 (MC57-HER2) were pre-loaded with 100 μCi 51Cr for 1 hr at 37°C, washed three times, and then 2 × 104 tumor cells were co-incubated with CAR T cells at effector-to-target (E:T) ratios ranging from 40:1 to 1.25:1. Supernatants were harvested after 4 hr of co-incubation, plated onto a 96-well scintillator-coated LumaPlate (PerkinElmer), and 51Cr release quantified using a MicroBeta2 Microplate Counter (PerkinElmer). Target tumor cells incubated in a 5% Triton X-100 solution were used as a maximum release control, while tumor cells incubated in mTCM alone were used as a spontaneous release control. Percent lysis was calculated as follows: % lysis = ((Experimental release – Spontaneous release) ÷ (Maximum release – Spontaneous release)) 100. Data in Figures 3f and 4d were derived from the 20:1 E:T ratio where killing was maximal for all constructs.
 
-## IncuCyte killing assay
+#### IncuCyte killing assay
 
 To measure tumor cell death over time, the live-cell imaging system IncuCyte SX3 or SX5 was used. In this assay, 8 × 103 target tumor cells per well were plated in a 96-well plate in triplicate, and the following day CD8+ T cells were added at an effector to target ratio of 1:1 in mTCM media. 50 µM propidium iodide (PI; Sigma-Aldrich) was added to each well as a surrogate marker of cell death. Wells were subsequently imaged every hour for 24 hr, with phase and PI fluorescence recorded. All images were analyzed using the IncuCyte Analysis Software program, where the average PI area (µm) was calculated for each individual well from at least two images per time point. Target tumor cells incubated in a 1.2% (w/v) Saponin (Sigma-Aldrich) solution were used as a positive PI release control while tumor cells incubated in mTCM alone were used as a background PI release control for PI area calculations. Data in Figure 6d shows all biological replicates and time points graphed as PI area (y-axis) vs. time (x-axis) using GraphPad Prism v 9.0.0.
 
-## Cytokine bead array
+#### Cytokine bead array
 
 To assess cytokine secretion by CAR T cells, cytokine bead arrays on co-culture supernatants were performed. Murine CAR T cells (1 × 105 cells) were washed once in PBS and co-incubated with either mTCM alone, a 1:1 bead-to-cell ratio of Mouse T-Activator CD3/CD28 Dynabeads (Gibco) as a positive control, nontarget MC57 parental tumor cells (2 × 104 cells) as a negative control, or target MC57-HER2 tumor cells (2 × 104 cells) in triplicate. After 24 hr, supernatants of co-cultures were collected and used in a LEGENDplex Mouse T Helper Cytokine Panel Version 2 Flexi Kit (BioLegend) for IFN-γ, IL-2, and TNFα, and LEGENDplex Mouse Cytokine Panel 2 Flexi Kit (BioLegend) for GM-CSF according to the manufacturer’s instructions. All samples were analyzed using an LSR II Fortessa or FACSVerse (BD Biosciences) and concentration determined against a standard curve of each analyte using FlowJo v10 software.
 
-## Confocal microscopy and cluster analysis
+#### Confocal microscopy and cluster analysis
 
 8 × 105 cells were labeled with unconjugated anti-Myc primary antibody (Cell Signaling) in PBS/0.5% BSA for 30 min on ice. Cells were washed twice in PBS and further incubated with Alexa Fluor 488 anti-mouse IgG secondary antibody (Abcam) in 50 μl ice-cold RPMI for 10 min on ice. 50 μl pre-warmed RPMI was added and samples were transferred to a 37°C water bath for 10 min to induce CAR clustering. CAR clustering was halted via addition of ice-cold PBS/0.1% sodium azide. Cells were washed in PBS/0.1% sodium azide then stained on ice for 45 min with anti-CD28 APC (BioLegend) diluted in PBS/0.1% sodium azide. Cells were fixed with 3% paraformaldehyde, transferred to eight-well chamber slides (Ibidi), and stored at 4°C overnight until imaging. 3D confocal image data was collected using a Zeiss LSM 980 microscope, with 55–60 slices collected per image at a z-step size of 0.23 μm. The pinhole size used was 1 airy unit, resulting in a slice thickness of 600 nm. Image analysis was conducted using the cluster-picking function within the Imaris software package. CAR clusters (Alexa Fluor488) and CD28 clusters (APC) were counted, with the percentage of CAR clusters co-localizing with a CD28 cluster reported per cell with at least 30 cells per construct analyzed.
 
-## In vivo tumor growth
+#### In vivo tumor growth
 
 For in vivo tumor growth analysis, 5 × 105 MC38 colon adenocarcinoma cells stably expressing human HER2 (MC38-HER2) were injected subcutaneously into the left flank of 5- to 6-week-old NSG mice and 5–6 mice were randomly assigned to each treatment group. One day later, mice were injected intravenously via the tail vein with 1 × 107 CD8+ T cells transduced with the indicated CAR constructs. On days 1, 2 and 3, mice were injected intraperitoneally with 5 × 104 IU recombinant human IL-2. Mice were weighed weekly and tumors measured daily until each individual tumor reached a maximum tumor volume of 1000 mm3 as per ethical guidelines, after which mice were euthanized.

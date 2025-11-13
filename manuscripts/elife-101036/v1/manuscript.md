@@ -10,13 +10,13 @@
 
 ### Affiliations
 
-1. https://ror.org/037zgn354 Department of Neuroscience, Johns Hopkins School of Medicine Baltimore United States
-2. https://ror.org/05q6tgt32 Kennedy Krieger Institute Baltimore United States
-3. https://ror.org/00hj8s172 Mortimer B. Zuckerman Mind Brain Behavior Institute, Columbia University New York United States
-4. https://ror.org/00hj8s172 Department of Neuroscience, Columbia University New York United States
-5. https://ror.org/00hj8s172 Kavli Institute for Brain Science, Columbia University New York United States
-6. https://ror.org/037zgn354 Department of Neurology, Johns Hopkins School of Medicine Baltimore United States
-7. https://ror.org/037zgn354 Department of Physical Medicine and Rehabilitation, Johns Hopkins School of Medicine Baltimore United States
+1. Department of Neuroscience, Johns Hopkins School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))
+2. Kennedy Krieger Institute Baltimore United States ([ROR:05q6tgt32](https://ror.org/05q6tgt32))
+3. Mortimer B. Zuckerman Mind Brain Behavior Institute, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+4. Department of Neuroscience, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+5. Kavli Institute for Brain Science, Columbia University New York United States ([ROR:00hj8s172](https://ror.org/00hj8s172))
+6. Department of Neurology, Johns Hopkins School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))
+7. Department of Physical Medicine and Rehabilitation, Johns Hopkins School of Medicine Baltimore United States ([ROR:037zgn354](https://ror.org/037zgn354))
 
 † Corresponding author
 
@@ -40,15 +40,283 @@ Here, we examine motor learning under reinforcement in which we control two key 
 
 We developed a remote video game paradigm for a cross-sectional study of 298 children aged 3–17 years and 87 adults from across the USA (locations and demographics shown in Figure 1—figure supplement 1, Tables 1 and 2). We hypothesized that children’s reinforcement learning abilities would improve with age and depend on the developmental trajectory of exploration variability, learning rate (how much people adjust their reach after success), and motor noise (here defined as all sources of noise associated with movement, including sensory noise, memory noise, and motor noise). We think that these factors depend on the developmental progression of neural circuits that contribute to reinforcement learning abilities (Raznahan et al., 2014; Nelson et al., 2000; Schultz, 1998). We found that younger children (3–8 years) failed to learn with a continuous target and probabilistic reward feedback. Reinforcement learning improved with age, enabling older children to find the optimal reward region. Using a mechanistic model, we show that this improvement is due to a developmental gradient of increasing exploration after failure and reducing motor noise with age. Importantly, we then show that use of deterministic feedback and discrete targets can dramatically improve learning abilities of younger children.
 
+**Table 1.**
+ Participant demographics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="4">Kids</th>
+      <th colspan="4">Adults</th>
+    </tr>
+    <tr>
+      <th>Task</th>
+      <th>CP</th>
+      <th>DP</th>
+      <th>CD</th>
+      <th>DD</th>
+      <th>CP</th>
+      <th>DP</th>
+      <th>CD</th>
+      <th>DD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>n</td>
+      <td>111</td>
+      <td>106</td>
+      <td>40</td>
+      <td>41</td>
+      <td>33</td>
+      <td>33</td>
+      <td>10</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>% Female</td>
+      <td>41</td>
+      <td>57</td>
+      <td>38</td>
+      <td>39</td>
+      <td>67</td>
+      <td>58</td>
+      <td>60</td>
+      <td>82</td>
+    </tr>
+    <tr>
+      <td>% RH</td>
+      <td>95</td>
+      <td>96</td>
+      <td>93</td>
+      <td>78</td>
+      <td>97</td>
+      <td>97</td>
+      <td>100</td>
+      <td>91</td>
+    </tr>
+    <tr>
+      <td colspan="9">Age (yrs)</td>
+    </tr>
+    <tr>
+      <td>Mean (std)</td>
+      <td>10 (4.2)</td>
+      <td>9.5 (4.1)</td>
+      <td>5.4 (1.7)</td>
+      <td>5.4 (1.5)</td>
+      <td>25.2 (4.6)</td>
+      <td>24.4 (3.9)</td>
+      <td>24.9 (3.7)</td>
+      <td>25.9 (4.5)</td>
+    </tr>
+    <tr>
+      <td>Median</td>
+      <td>10</td>
+      <td>10</td>
+      <td>5.5</td>
+      <td>5</td>
+      <td>24</td>
+      <td>24</td>
+      <td>25</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td>Range</td>
+      <td>3–17</td>
+      <td>3–17</td>
+      <td>3–8</td>
+      <td>3–8</td>
+      <td>18–35</td>
+      <td>18–31</td>
+      <td>20–32</td>
+      <td>18–34</td>
+    </tr>
+    <tr>
+      <td colspan="9">N per age bin</td>
+    </tr>
+    <tr>
+      <td>3–5 yrs</td>
+      <td>21</td>
+      <td>22</td>
+      <td>20</td>
+      <td>21</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>6–8 yrs</td>
+      <td>27</td>
+      <td>21</td>
+      <td>20</td>
+      <td>20</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>9–11 yrs</td>
+      <td>20</td>
+      <td>28</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>12–14 yrs</td>
+      <td>20</td>
+      <td>19</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>15–17 yrs</td>
+      <td>23</td>
+      <td>16</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="9">Device</td>
+    </tr>
+    <tr>
+      <td>Mouse</td>
+      <td>69</td>
+      <td>61</td>
+      <td>15</td>
+      <td>19</td>
+      <td>17</td>
+      <td>22</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>Trackpad</td>
+      <td>16</td>
+      <td>38</td>
+      <td>12</td>
+      <td>14</td>
+      <td>15</td>
+      <td>11</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Touchscreen</td>
+      <td>26</td>
+      <td>7</td>
+      <td>13</td>
+      <td>8</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+  </tbody>
+</table>
+
+_Participants included for each task. Abbreviations: CP, continuous probabilistic; CD, continuous deterministic; DD, discrete deterministic; DP, discrete probabilistic; n, number; RH, right-handed; std, standard deviation; yrs, years._
+
+**Table 2.**
+ Participant ethnicity and race.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Ethnicity</th>
+      <th colspan="5">Race</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Hispanic</td>
+      <td>Not Hispanic</td>
+      <td>Black</td>
+      <td>White</td>
+      <td>Asian</td>
+      <td>Multiple</td>
+      <td>Other</td>
+    </tr>
+    <tr>
+      <td>Kids n (%)</td>
+      <td>19 (6.4)</td>
+      <td>279 (93.6)</td>
+      <td>15 (5.0)</td>
+      <td>234 (78.5)</td>
+      <td>17 (5.7)</td>
+      <td>24 (8.1)</td>
+      <td>8 (2.7)</td>
+    </tr>
+    <tr>
+      <td>Adults n (%)</td>
+      <td>3 (3.5)</td>
+      <td>84 (96.6)</td>
+      <td>6 (6.9)</td>
+      <td>34 (39.1)</td>
+      <td>41 (47.1)</td>
+      <td>5 (5.8)</td>
+      <td>1 (1.2)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Ethnicity and race classifications were self-reported by participant/parent. Participants who identified as two or more categories of race (Black, White, and/or Asian) were classified as Multiple. Participants who specified Asian (Indian) or South Asian were classified as Asian. Participants who identified as one or more races other than Black, White, or Asian were classified as Other._
+
 ## Results
 
 Different groups of participants performed one of four tasks: a continuous probabilistic, a discrete probabilistic, a continuous deterministic, and a discrete deterministic task. We first focus on the continuous probabilistic task and its associated reinforcement learning model, as this is the most complex environment, before reporting the results of the other three tasks.
 
-## Continuous probabilistic task
+### Continuous probabilistic task
 
 In the continuous probabilistic task, we studied 111 children and adolescents, aged 3–17 years, and 33 adults as they attempted to learn to produce movements that maximized reward. For the key learning phase of the experiment, we created a probabilistic reward landscape in which the probability of reward after each movement depended on its endpoint. To implement this in a task that was engaging to children, we created a computer game that was played at home. Participants were required to move a cartoon penguin from a starting position to join a group of penguins arranged horizontally across the screen (Figure 1a - continuous). Participants were told that there was a slippery ice patch just before the group (dark blue area, Figure 1a - continuous) and that they should try to make the penguin cross at the location where they would not slip. In the instructions, participants were told that there was a location in the ice where they would never slip. The reward landscape (Figure 1b top left) determined the probability of success on each trial and was not known to the participant. There was a small 100% reward zone where the penguin would never slip, with the reward probability decreasing away from this zone. Successful trials led to a short Disney cartoon clip playing, whereas a failed trial led to the penguin falling over and the appearance of a static image of a sad penguin (Figure 1c).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig1-v1.jpg)
+
+**Figure 1.:** (a) Screenshot of game environment and sample movement path (large text, arrows, and movement path were not displayed to participants). During the learning block, participants either experienced a continuous target (continuous groups) or seven discrete targets (discrete groups). (b) Reward landscape for the learning blocks for the different task paradigms. The x-axis represents normalized units based on the participant’s computer setup. Continuous probabilistic: continuous target with position-based reward probability gradient; discrete probabilistic: discrete targets with target-specific reward probabilities; continuous deterministic: continuous target with a single 100% rewarded zone; discrete deterministic: discrete targets with a single target giving 100% reward. (c) Outcome feedback for continuous probabilistic task. Success (top), movie clip (different for each trial), and pleasant sound plays, and video screen is outlined in blue. Failure (bottom), movie clip does not play, the penguin falls over and red text ‘You slipped!’ appears with a sad face image.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Thirty-eight states of the United States of America are represented in this dataset. The map was generated in Excel on Microsoft 365.
+
 Participants performed five blocks of trials (Figure 2a). Figure 2b shows examples from different aged participants for endpoint position over the experiment. In block 1, participants made 20 movements to a series of discrete targets, which were the same width as the 100% reward zone. The targets appeared at different locations across the scene and participants received reinforcement feedback at the end of each trial (sample paths are shown in Figure 2—figure supplements 1 and 2). The targets were presented in a randomized order, but each participant received the same 20 target locations. This baseline block allowed participants to experience reaching to many locations in the workspace and allowed us to assess accuracy and precision in hitting discrete targets. All participants but one performed well in the baseline block of the task, with endpoint position on average within the target zone (Figure 2c). This shows that participants could accurately hit discrete targets.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig2-v1.jpg)
+
+**Figure 2.:** (a) Experimental design with baseline: single discrete target presented in randomized locations across the screen; learning: learning block with reward determined by endpoint position; success clamp: feedback clamped to 100% success independent of endpoint position; fail clamp: feedback clamped to 100% failure independent of endpoint position; single target: single discrete target presented in the middle of the screen. (b) Representative endpoint time series from various aged participants. Gray shaded zones indicate positions in the workspace where a reward is given 100% of the time (thin gray lines in first and last blocks are for the discrete targets). Green filled circles indicate rewarded trials while open circles indicate unrewarded trials. The horizontal colored bar on the x-axis indicates the trials corresponding with the experimental blocks outlined in (a). In the learning block (trials 21–120), rewards were given based on the continuous probabilistic landscape. (c) Mean baseline accuracy (average reach deviation from the discrete targets) by age. Adult data (n=33) are averaged and plotted to the right with standard error of the mean. The gray region shows the width of a discrete target. (d) Same as (c) for the single target in block 5. In (c) and (d), participants who completed the task in person (in lab; n=16) are indicated in white circles.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Each trajectory begins at (0,0) and ends at Y=24 when the penguin crosses the back edge of the ice. The final X position of each trajectory corresponds to the interpolated final position of the movement (see Methods for additional details). As available, a sample for each age bin from each input device type is provided. Note that trajectories tend to be straighter for touchscreen input compared to other devices. The 20 squares represent the target centers. Note that the full reward zone is not shown due to overlap between targets. Unrewarded and reward paths are shown as dashed and solid lines, respectively.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Same format as Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** The path length ratio is a measure of path curvature (path length divided by distance from first to last point of movement) for the four tasks. Continuous probabilistic samples per age bin: 3-5yrs n=21, 6-8yrs n=27, 9-11yrs n=20, 12-14yrs n=20, 15-17yrs n=23, 18+ n=33. Discrete probabilistic samples per age bin: 3-5yrs n=22, 6-8yrs n=21, 9-11yrs n=28, 12-14yrs n=19, 15-17yrs n=16, 18+ n=33. Continuous deterministic samples per age bin: 3-5yrs n=20, 6-8yrs n=20, 18+ n=10. Discrete deterministic samples per age bin: 3-5yrs n=21, 6-8yrs n=20, 18+ n=11. Bars show mean and standard error of the mean. Significant pairwise comparisons between age bins indicated above plots are as follows: ✳ = p<0.05, + = p<0.01, and Δ = p<0.001.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Reaction time (time from when penguin appeared until the participant clicked on the penguin to start the trial), stationary time (time from click to start of movement), movement time (time from start to end of movement), and game time (time to complete the whole task in minutes) for the four tasks split by age bins. Refer to Figure 2—figure supplement 3 for samples per age bin for each task. Bars show mean and standard error of the mean. Significant pairwise comparisons between age bins indicated above plots as follows: ✳ = p<0.05, + = p<0.01, and Δ = p<0.001.
 
 Participants then began the learning block, where they could move to any endpoint location on the continuous target. Note that the reach location for the first learning trial was not affected by (correlated with) the target position on the last baseline trial (p>0.3 for both children and adults, separately). Figure 2b shows the 5- and 7-year-old children moved to many endpoint locations (i.e. showed exploration) receiving reward based on the probability landscape. Interestingly, their exploration appeared to show little sensitivity to previous failure (open circles) versus success (filled circles) and endpoints did not converge on the 100% reward zone (gray area) by the end of the block. The older children, aged 11, 12, and 15, performed similarly to the adult, exploring early in the block, and then focusing movements on the unseen 100% reward zone. This indicates that they were able to explore successfully after failures and exploit the 100% reward zone. These patterns were also observed in group data (Figure 3, binned across 6 age groups) where, on average, the 3–5 and 6–8 year-olds did not find the 100% reward zone, but the older age groups did.
 
@@ -62,7 +330,7 @@ In the final block, participants moved to a single discrete target in the center
 
 Note that participants were instructed to reach to the continuous target; there were no instructions regarding the path nor the precise timing of the movements. In younger children, movements tended to be more curved compared to older children, as indicated by larger path length ratios (Figure 2—figure supplement 3). Movement times were similar for all children (Figure 2—figure supplement 4), but younger children took longer to initiate a trial by clicking on the ball (longer Reaction Time) and start moving after initiating (longer Stationary Time). Since these elements of movement were not instructed and did not prevent participants from hitting discrete targets, we focus on the endpoint of the movement in our analyses.
 
-## Measures associated with learning in the continuous probabilistic task
+#### Measures associated with learning in the continuous probabilistic task
 
 We assessed how key features of behavior changed across childhood (Figure 4, with the average of adult performance for comparison). In the Baseline block, the endpoint variability relative to target center (Baseline precision) decreased significantly with age (Figure 4a; regression R2 = 0.153, F1,109 = 19.7, p<0.001). This is consistent with known developmental changes in motor variability (Takahashi et al., 2003; Deutsch and Newell, 2005) and may represent one component of motor noise that is distinct from exploration.
 
@@ -74,65 +342,139 @@ Children also improved learning as a function of age by reducing their endpoint 
 
 We used the clamp blocks to determine how participants responded to success versus failure, and if this could contribute to developing adult-like learning patterns. We would expect participants to explore more after failure versus success. To assess this, we calculated the standard deviation of movement endpoints in each clamp condition as a measure of movement variability (Figure 4c & d). Adults showed high variability after failure and low variability after success, as expected. In children, variability after failure was low in younger children and increased significantly with age (regression R2 = 0.17, F1,109 = 22.3, p<0.001), doubling across the age range to reach adult levels (Figure 4d). In contrast, variability after success was relatively stable across age (regression R2 = 0.012, F1,109 = 1.34, p=0.249). Overall, these results suggest that younger children do not explore as much as older children after failures, which is essential to finding the reward zone.
 
-## Comparing reinforcement learning models of the task
+#### Comparing reinforcement learning models of the task
 
-To understand how participants update their reach endpoint based on binary feedback, we developed a set of reinforcement learning models of the task. Several reinforcement models have been proposed for tasks similar to ours (Therrien et al., 2018; Therrien et al., 2016; Cashaback et al., 2019; Roth et al., 2023). In the full model, a participant maintains an estimate of their desired reach location (xt\begin{document}$x_{t}$\end{document}) which can be updated across trials. On each trial, the actual reach location (st\begin{document}$s_{t}$\end{document}) is the desired reach with the addition of (possibly) exploration variability (et\begin{document}$e_{t}$\end{document}), planning variability (pt\begin{document}$  p_{t}$\end{document}) and motor noise (mt\begin{document}$m_{t}$\end{document}). Motor noise, as we use it here, can include other sources of noise that do not benefit movement (e.g. sensory and memory noise). The distinction between exploration and planning variability is that exploration is only added if the last trial was unsuccessful (reward rt=1\begin{document}$r_{t}=1$\end{document} for successful trials, and 0 for unsuccessful trials) whereas planning variability is added on all trials:(1)st=xt+(1−rt−1)et+pt+mt\begin{document}$$\displaystyle  s_t = x_t + (1-r_{t-1}) e_t+ p_t + m_t$$\end{document}
+To understand how participants update their reach endpoint based on binary feedback, we developed a set of reinforcement learning models of the task. Several reinforcement models have been proposed for tasks similar to ours (Therrien et al., 2018; Therrien et al., 2016; Cashaback et al., 2019; Roth et al., 2023). In the full model, a participant maintains an estimate of their desired reach location ($x_{t}$) which can be updated across trials. On each trial, the actual reach location ($s_{t}$) is the desired reach with the addition of (possibly) exploration variability ($e_{t}$), planning variability ($p_{t}$) and motor noise ($m_{t}$). Motor noise, as we use it here, can include other sources of noise that do not benefit movement (e.g. sensory and memory noise). The distinction between exploration and planning variability is that exploration is only added if the last trial was unsuccessful (reward $r_{t}=1$ for successful trials, and 0 for unsuccessful trials) whereas planning variability is added on all trials:
 
-where the sources of variability are all drawn from zero-mean Gaussians with standard deviations given by σe\begin{document}$ \sigma_{e}$\end{document}, σp\begin{document}$\sigma_{p}$\end{document} and σm\begin{document}$\sigma_{m}$\end{document}.
+$$
+s_{t}=x_{t}+(1−r_{t−1})e_{t}+p_{t}+m_{t}
+$$
 
-The probability p\begin{document}$ p$\end{document} of receiving a reward, rt\begin{document}$r_{t}$\end{document}, depends on the actual reach endpoint and the particular reward regime used such that the reward equation is(2)p(rt=1)=f(st)\begin{document}$$\displaystyle  p(r_{t}=1) = f(s_t)$$\end{document}
+where the sources of variability are all drawn from zero-mean Gaussians with standard deviations given by $\sigma_{e}$, $\sigma_{p}$ and $\sigma_{m}$.
 
-where f()\begin{document}$f()$\end{document} can represent different functions such as the continuous or discrete probabilistic and deterministic reward regimes. The desired reach can then be updated by both planning noise and any exploration noise but not by motor noise:(3)xt+1=xt+ηert(1−rt−1)et+ηprtppt\begin{document}$$\displaystyle  x_{t+1} = x_t+ \eta_e r_t (1-r_{t-1}) e_t + \eta_p r^p_t p_t$$\end{document}
+The probability $p$ of receiving a reward, $r_{t}$, depends on the actual reach endpoint and the particular reward regime used such that the reward equation is
 
-where ηp\begin{document}$  \eta_{p}$\end{document} and ηe\begin{document}$  \eta_{e}$\end{document} are the learning rates controlling exploration and planning contribution to the update. In the full model rtp\begin{document}$r^{p}_{t}$\end{document} is the reward on that trial rt\begin{document}$  r_{t}$\end{document} so that both planning and exploration are used to update only after success. In some model variants rtp=1\begin{document}$r^{p}_{t}=1$\end{document} so that the desired reach is always updated by planning variability. By allowing different sources of variability, learning rates, and update rules, there are 30 reduced variants of the full model allowing us to fit all 31 models to the data (see Methods and Figure 5—figure supplement 1).
+$$
+p(r_{t}=1)=f(s_{t})
+$$
+
+where $f()$ can represent different functions such as the continuous or discrete probabilistic and deterministic reward regimes. The desired reach can then be updated by both planning noise and any exploration noise but not by motor noise:
+
+$$
+x_{t+1}=x_{t}+η_{e}r_{t}(1−r_{t−1})e_{t}+η_{p}r_{t}^{p}p_{t}
+$$
+
+where $η_{p}$ and $η_{e}$ are the learning rates controlling exploration and planning contribution to the update. In the full model $r_{t}^{p}$ is the reward on that trial $r_{t}$ so that both planning and exploration are used to update only after success. In some model variants $r_{t}^{p}=1$ so that the desired reach is always updated by planning variability. By allowing different sources of variability, learning rates, and update rules, there are 30 reduced variants of the full model allowing us to fit all 31 models to the data (see Methods and Figure 5—figure supplement 1).
 
 To identify the best model variant that could account for the data, we performed model selection. We fit the model to the 100 learning trials for each child (see Methods for details), so as not to contaminate model selection by behavior in the clamp blocks or of the adults. We performed BIC comparison combining the BICs from the continuous and discrete probabilistic tasks (which had the largest datasets). Model 11 was the preferred model with a ΔBIC = 216 to the next best model (Figure 5—figure supplement 1). The same model was preferred when we only used BICs from each of the two tasks separately for either the children alone or including the adults. We also considered a value-based model that tries to learn the value of each location. This model is based on the model by Giron et al., 2023 (See Methods). This model was not preferred to Model 11 (ΔBIC = 3018) when fitting the children in the Continuous probabilistic task.
 
-## Reinforcement learning model with exploration variability and motor noise
+#### Reinforcement learning model with exploration variability and motor noise
 
-In the preferred model (Model 11 which, from now on, we will refer to simply as the model) there was no planning noise and the learning rate for exploration variability was unity. This model is a special case (with no exploration after success) of the model proposed in Therrien et al., 2018 and has the following output and update processes:(4)st=xt+(1−rt−1e)et+mt\begin{document}$$\displaystyle  s_t = x_t + (1-r^e_{t-1}) e_t+ m_t$$\end{document}(5)xt+1=xt+rtet\begin{document}$$\displaystyle  x_{t+1} = x_t+ r_t e_t $$\end{document}
+In the preferred model (Model 11 which, from now on, we will refer to simply as the model) there was no planning noise and the learning rate for exploration variability was unity. This model is a special case (with no exploration after success) of the model proposed in Therrien et al., 2018 and has the following output and update processes:
+
+$$
+s_{t}=x_{t}+(1−r_{t−1}^{e})e_{t}+m_{t}
+$$
+
+
+
+$$
+x_{t+1}=x_{t}+r_{t}e_{t}
+$$
 
 In this model, if the previous trial was a failure (Figure 5a, top), the current reach is the desired reach with the addition of exploration variability and motor noise. The desired reach for the next trial is updated only if the current reach is successful. In contrast, if the previous reach was a success (Figure 5a, bottom), the participant does not explore so that the current reach is the desired reach with motor noise. As there is no exploration, the desired reach will remain the same for the next trial whatever the outcome.
 
-To gain more power for parameter estimates, we then used this model to fit the 120 trials in the experiment (learning and clamp phases). Having done this, we then examined how well our model fitting procedure could recover parameters from synthetic data. This analysis showed that both parameters (σe,σm\begin{document}$\sigma_{e},\sigma_{m}$\end{document}) were well recovered with correlations with the true parameters of at least 0.97 (Figure 5—figure supplement 2).
+![Figure 5.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig5-v1.jpg)
+
+**Figure 5.:** (a) Model schematic. The participant maintains an estimate of the desired reach which they can update across the experiment. The actual reach on the current trial (pink box) depends on whether the previous trial (yellow box) was a failure (top) or success (bottom). After failure (top), the actual reach is the desired reach with the addition of exploration variability and motor noise (draws from zero mean Gaussian distributions with standard deviations $\sigma_{e}$ and $\sigma_{m}$, respectively). In contrast, if the previous trial was a success (bottom), the participant does not explore so that the actual reach is the desired reach with only motor noise. The actual reach determines the probability of whether the current trial is a failure or a success. If the current trial is a success, the desired reach is updated for the next trial (blue box) by the exploration (if any). (b) Examples of model fits to three participants. The data are shown as circles, with success trials filled green and unsuccessful trials filled white. The estimated desired reach is shown as a thick black line, and the estimated exploration variability (orange line) and motor noise (blue line) connect the desired reach to the data. The simulation of the participant with the fit parameters is shown in the pink line with shading showing one standard deviation across the simulations. (c) Model fit parameters ${\sigma_{m},\sigma_{e}}$, by age for the continuous probabilistic group. The line is a regression fit (with 95% confidence interval in shading) to the data for participants younger than 18 years old. The correlation and p-value for each regression are shown in the bottom left corner of each plot (and exclude the adult data). Average adult (n=33) parameters are shown on the right with standard error of the mean.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Difference in Bayesian Information Criterion (BIC) between the preferred model (Model 11) and the other variants for the continuous probabilistic task. The variants depend on the presence (+) or absence (0) of each source of variability ($\sigma_{e},\sigma_{p},\sigma_{m}$); whether the learning rates ($η_{e},η_{p}$) are absent (.), fit (+), set to unity (1) or $η_{p}=η_{e}$; and whether $r_{p}$ is absent (.), set to $r_{t}$ or unity (1). Degrees of freedom of each model is shown by d.o.f. The number of participant who are best fit by each model are shown for the continuous ($N_{C}$), discrete ($N_{d}$) and combined ($N_{c}+N_{d}$) tasks. When we restricted model selection to only the Continuous Probabilistic task, Model 11 was again preferred with ΔBIC of 155 and 90 for the children alone or all participants. When we restricted model selection to only the Discrete Probabilistic task, Model 11 was again preferred with ΔBIC of 6 and 53 for the children alone or all participants.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** The recovered vs. true parameters for synthetic data generated by the model and then fit. Correlations are shown above the plots.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Fits to the same participants shown in Figure 2 in the same format as Figure 5b.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (a) Success clamp standard deviation (s.d.) as a function of age for the data (blue) and model (red) with regression lines with 95% confidence interval shading. (b) Same as (a) for the fail clamp. (c) Model vs. empirical success clamp s.d. with variance explained and correlation with p-value. (d) Same as (c) for the fail clamp.
+
+To gain more power for parameter estimates, we then used this model to fit the 120 trials in the experiment (learning and clamp phases). Having done this, we then examined how well our model fitting procedure could recover parameters from synthetic data. This analysis showed that both parameters ($\sigma_{e},\sigma_{m}$) were well recovered with correlations with the true parameters of at least 0.97 (Figure 5—figure supplement 2).
 
 Example fits of the model are shown in Figure 5b for three participants. The first participant (top) is an example of a 5-year-old non-learner with minimal exploration variability and large motor noise. The desired reach (black line) is connected to the data (filled and hollow circles for rewarded and unrewarded trials) by the estimates of motor noise (blue vertical lines). The other participants (bottom) show learning. Here the desired reach is connected to the data by either motor noise after a successful reach, or by both motor noise and exploration variability (orange vertical lines) after an unsuccessful reach. The desired reach only changes after a successful trial that was preceded by a failure trial (hence exploration). The pink lines and shading show the mean feedforward simulation and standard deviation. Figure 5—figure supplement 3 shows individual fits to the same participants as in Figure 2.
 
 We examined how the two parameters fit to the data varied with age (Figure 5c). This showed that both parameters varied significantly with age for the children (both p<0.001). Motor noise decreased by about 40% within the age range tested. Exploration variability increased with age, with an almost fourfold increase on average from the youngest to the oldest child. While this change is in the same direction to the variability in the fail clamp, the model allows us to examine exploration variability in the learning setting and separate it from motor noise. Overall, this model analysis suggests that the increased motor noise and reduced exploration limit the ability of the younger children to learn efficiently.
 
-The simulations of the model with the fit parameters accounted for the differences in learning across the age group bins (Figure 3 red line and shading show model simulations). While the BIC analysis with the other model variants provides a relative goodness of fit, it is not straightforward to provide an absolute goodness of fit for probabilistic models such as the one we use here (as explained in the Methods). To provide an overall goodness of fit, we examined the traditional R2 between the average of all the children’s data during learning and the average simulation of the model (repeated 4000 times) for each child so as to reduce the stochastic variation. This analysis gave an R2=0.41\begin{document}$ R^{2}=0.41$\end{document}.
+The simulations of the model with the fit parameters accounted for the differences in learning across the age group bins (Figure 3 red line and shading show model simulations). While the BIC analysis with the other model variants provides a relative goodness of fit, it is not straightforward to provide an absolute goodness of fit for probabilistic models such as the one we use here (as explained in the Methods). To provide an overall goodness of fit, we examined the traditional R2 between the average of all the children’s data during learning and the average simulation of the model (repeated 4000 times) for each child so as to reduce the stochastic variation. This analysis gave an $R^{2}=0.41$.
 
 We compared the model fits for the reach variability with the empirical data in the two clamp blocks. Figure 5—figure supplement 4a and b show the variability expected from simulations of the model (red) and the measured movement variability of the children (blue) for the success and fail clamps as a function of age. We also examined the model fits against the empirical data (Figure 5—figure supplement 4c and d), which showed we could explain 16% and 42% of the variance for the success and fail clamp phases (note that we only have 9 trials to calculate each clamp block standard deviation).
 
 Overall, the results from the continuous probabilistic task model results suggest that through development, children’s motor noise decreases, exploration variability increases, and upon success, the desired reach is fully updated by any exploration present.
 
-## Discrete probabilistic task
+### Discrete probabilistic task
 
 Thus far, we identified features that limit learning in young children within a continuous probabilistic landscape. In a second experiment, we asked if segmenting the continuous target into seven discrete targets could improve learning (Figure 1a – discrete). In this new task, participants were not able to move between targets but were required to definitively reach to a single target on each trial. We predicted that discrete targets could increase exploration by encouraging children to move to a different target after failure. We studied a new cohort of 106 children and 33 adults as they learned the discrete probabilistic task (Figure 1b top right).
 
 Individual example data show that the older children tend to move to a new target after failure, whereas the 3-year-old often chose the same target after failure (Figure 6—figure supplement 1). Discretizing the target appeared to improve the learning for the two youngest age groups (Figure 6a). Learning, baseline precision, and fail clamp variability had similar trends across age as the continuous probabilistic group (Figure 6—figure supplement 2). That is, distance from target decreased with age (R2=0.074, F1,104 = 8.31, p=0.0048), baseline precision improved with age (R2=0.150, F1,104 = 18.4, p<0.001) and fail clamp variability increased with age (R2=0.162, F1,104 = 20.1, p<0.001). In addition, success clamp variability decreased with age (R2=0.048, F1,104 = 5.25, p=0.024).
 
+![Figure 6.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig6-v1.jpg)
+
+**Figure 6.:** (a) Same format as Figure 3. (b) Panels in same format as Figure 5c with the regressions for the continuous probabilistic task overlaid in blue.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Same format as Figure 2.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Same format as Figure 4.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** Fits to the same participants shown in Figure 6—figure supplement 1 in the same format as Figure 5b.
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig6-figsupp4-v1.jpg)
+
+**Figure 6—figure supplement 4.:** Same format as Figure 5—figure supplement 4.
+
 We assessed if there were differences in these measures between the discrete and continuous probabilistic groups by comparing regressions as a function of age, with the intercept set to the age of the youngest child (Figure 6—figure supplement 2 vs. Figure 4). This showed there was no significant difference in baseline precision or variability after success. However, the variability after failure had a higher intercept (increase of 41%; p=0.048) for the discrete probabilistic group, consistent with increasing exploration in the younger children. In addition, the intercept was lower for the distance to target (decrease of 41%; p=0.007), consistent with better learning in the younger children with discrete targets.
 
-## Modeling the discrete probabilistic task
+#### Modeling the discrete probabilistic task
 
 We fit the model to the discrete probabilistic task. Exploration increased significantly with age (p<0.001; Figure 6b), but the motor noise change with age was not significant. To evaluate the fit parameters by age between the two tasks, we compared the linear regressions (Figure 6b blue line is continuous regression replotted on the discrete parameters). This showed that neither slope nor intercept (set to the youngest child’s age) was significantly different between the groups. In sum, the empirical data showed a significant increase in variability after failure for the younger children. The exploration parameter of the model changed in the expected direction but did not reach significance.
 
-## Deterministic reward tasks
+### Deterministic reward tasks
 
 In both experiments considered so far, the reward was probabilistic. While this provides gradient information that should guide the participant to the target, younger children may not use the same strategy for this reward landscape. In the final two tasks, we studied new cohorts of 3–8 year-old children since they showed poorest learning in the continuous and discrete probabilistic tasks. We assessed the effect of a deterministic reward landscape (Figure 1b, bottom row) on learning with the continuous and discrete targets.
 
 Figure 7a compares the time courses for the 3–8 year olds across all four tasks. There was no significant difference in mean age between the four tasks (F3,168=1.072, p=0.362) nor was there a significant interaction between task and sex on learning (F3,164=0.97, p=0.409). An ANOVA of final learning (Figure 7 left panel) showed a significant effect of Target type (discrete better than continuous; F1,168=12.87, p<0.001) and Reward landscape (deterministic better than probabilistic; F1,168=43.66, p<0.001) with no interaction (F1,168=0.24, p=0.628). Learning was worst under the continuous probabilistic task, followed by the discrete probabilistic task and continuous deterministic task. The 3–8 year olds performed best on the discrete deterministic task. This shows that making the task discrete or deterministic improves learning and that these factors were additive.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig7-v1.jpg)
+
+**Figure 7.:** (a) Learning block performance for the continuous probabilistic, discrete probabilistic, continuous deterministic, and discrete deterministic tasks in the same format as Figure 3. (b) Comparative performance between tasks for precision in baseline, learning distance from target, and variability in the success and fail clamp. Refer to plot titles in (a) for sample size per task. Results from an ANOVA showed that learning significantly improved with discrete targets and deterministic reward feedback. Precision in baseline was not statistically different between tasks. (c) Estimates of motor noise and exploration variability standard deviation from the model. For both (b) and (c), bars show mean and standard error of the mean. Statistically significant pairwise comparisons indicated as follows: ✳ = p<0.05, + = p<0.01, and Δ = p<0.001. Abbreviations: CD = Continuous Deterministic; CP = Continuous Probabilistic; DD = Discrete Deterministic; DP = Discrete Probabilistic.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Panels in the same format as Figure 5c. For adults, mean (CD n=10; DD n=11) and standard error of mean plotted for each parameter.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/101036/elife-101036-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Expected distance to target as a function of motor noise and exploration variability for the four tasks. The green filled circle shows the optimal parameters to maximize reward. The white line shows the optimal exploration variability for different levels of motor noise. The gray shaded line shows the exploration variability vs. age regression line plotted against the motor noise vs. age regression with shading showing the 95% confidence interval. The gray shading shows the participant age in the regression. As the task goes from continuous to discrete, note how the youngest children (darkest end of bar) increase their exploration variability. As the task goes from probabilistic to deterministic, the youngest children decrease their motor noise and increase their exploration variability. Abbreviations: CP, continuous probabilistic; CD, continuous deterministic; DD, discrete deterministic; DP, discrete probabilistic.
+
 This improvement in learning was not due to significant differences in baseline precision (Figure 7b 2nd panel; ANOVA gave Target type: F1,168 = 0.16, p=0.69, Reward landscape: F1,168 = 0.56, p=0.455, interaction: F1,168 = 1.71, p=0.192). For the success clamp block, there was no main effect of Target type (F1,168=0.07, p=0.79), but a main effect of Reward landscape (F1,168=6.71, p=0.01; less variability with a deterministic landscape) with no interaction (F1,168=3.58, p=0.06). This is consistent with there being no advantage to explore after success under a deterministic reward landscape, whereas there is under a probabilistic landscape (exploration can lead to locations that have higher probability of reward). For the fail clamp block, there was a main effect of both Target type (F1,168=29.93, p<0.001; greater variability for discrete targets) and Reward landscape (F1,168=9.26, p=0.003; greater variability with a deterministic landscape) with no interaction (F1,168=1.01, p=0.316). The increased variability for discrete targets is likely because participants must move to a new target to explore, resulting in a larger position change. Increased variability after failure in the deterministic landscape is likely because a failure at one location predicts there will never be success at that location (in contrast to the probabilistic tasks), thereby encouraging exploration. These show that even young children choose their exploration in a rational way based on task features.
 
-## Modeling the four tasks and the optimal model
+#### Modeling the four tasks and the optimal model
 
 Model fits to the 3–8 year olds are shown in Figure 7a (red lines and shading). Examination of the fit parameters for these groups (Figure 7c) showed that motor noise was significantly affected by Reward landscape (F1,168=35.5, p<0.001) but not by Target type. Exploration variability was significantly affected by Reward landscape (F1,168=60.1, p<0.001) and Target type (F1,168=16.6, p<0.001).
 
 We can use the model to understand the optimal amount of exploration variability for different amounts of motor noise. To do this, we used the model to estimate the average distance to target across the learning phase for different levels of motor noise and exploration variability for the four tasks (Figure 7—figure supplement 2 colormap). These simulations showed that as motor noise increases, the optimal amount of exploration variability decreases (white lines; see Appendix 1 for a proof of this relation). Although the same trend is seen in the model fits to the children’s behavior (gray bars), in general, the children did not produce the optimal amount of exploration.
 
-## Task comprehension
+#### Task comprehension
 
 Poor or absent learning in the youngest age group could arise from these participants not understanding the task. However, we can rule out task comprehension as an explanation for lack of learning, at least for the majority of younger participants. First, 16 participants completed the continuous probabilistic task in the lab, and this sample included five participants in the 3- to 8-year-old age range. The task was administered in the same way as the online version, without additional instructions or interaction with the experimenter during the task. However, after completion, the experimenter asked these children to explain what they did during the task as an informal comprehension check, and it was clear that this group understood the task. These in-lab participants were able to accurately describe the goal of the task. Performance for all participants tested in the lab was not significantly different from online completion, and these data points are indicated in Figures 2 and 4 with white symbols. Wilcoxon signed-rank tests showed no significant difference between in-lab and online participants in baseline mean (Z = 1.238, p=0.216), baseline precision (Z = –0.626, p=0.532), distance from target (Z = –0.348, p=0.728), success clamp variability (Z = –1.952, p=0.051), fail clamp variability (Z = 0.281, p=0.779), or single target mean (Z = –0.399, p=0.690).
 
@@ -170,41 +512,72 @@ Our findings in typical development lay a foundation for better understanding of
 
 ## Methods
 
-## Participants
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MATLAB</td>
+      <td>R2023a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>Version 11.0</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Participants
 
 Children and adults without neurological impairment or developmental delay were recruited to one of four experiments as outlined in Tables 1 and 2. A total of 385 complete datasets were included in the analysis. The continuous probabilistic task was designed first, and the other three tasks, discrete probabilistic, continuous deterministic, and discrete deterministic, were conducted to expand upon the results of the first task and further identify factors contributing to learning by reinforcement across the developmental spectrum. Participants were recruited from the Johns Hopkins University community through an online announcement portal, the greater Baltimore Maryland area through Research Match, and nationwide through the online platform Lookit which merged with Children Helping Science in 2023 (Sheskin et al., 2020; Scott and Schulz, 2017). Our sample includes participants from 38 states out of the 50 United States of America (Figure 1—figure supplement 1). Each participant was screened to rule out neurological impairment, developmental delay, and other developmental disorders that could affect motor and cognitive development. This study was approved by the Johns Hopkins School of Medicine Institutional Review Board and all participants, or their parent/legal guardian, provided informed consent prior to participation.
 
-## Task platform
+### Task platform
 
 All four tasks were completed on a web-based platform built with Javascript as previously reported by Malone et al., 2023 with modifications to the game environment and feedback type. This platform allowed creativity in the game environment design to be kid-friendly and engaging to young participants to foster sustained attention and increase the likelihood of completing the full task. The task platform allowed remote completion of the experiment by participants on their home computer or tablet. A small subset of participants in the continuous probabilistic task (n=16; 3 to 5yo n=2, 6 to 8yo n=3, 9 to 11yo n=5, 12 to 14yo n=5, 15 to 17yo n=1) completed the task in person in the research laboratory and the remainder of participants completed the task remotely. Participants used a mouse, trackpad, or touchscreen input to control a cartoon penguin game piece and move across the game environment. Movement trajectories were sampled at the polling rate of the selected input device, and data from each trial were uploaded and saved to Google Firebase Realtime Database at the end of each trial. Due to the remote data collection nature of this experiment, we were not able to control data sampling rates. Each trial was manually inspected and sampling rates of input devices had a mean of 37.363 ±4.184 Hz.
 
-## Procedure
+### Procedure
 
 The game environment is an immersive icy landscape with penguins. The overall goal of the task was to move a penguin from the starting position on one side of the ice (at the bottom of the computer or tablet screen closest to the participant) to a distance of 24 game units (GU) into the game (at the far edge of the screen away from the participant). If successful, a pleasant sound would play, the video screen above the ice would be outlined in blue, and a Disney video clip (different on each trial; gifs hosted on https://giphy.com) would play. Multiple signals of reward were provided to ensure that participants associated their behavior with the feedback provided and could clearly differentiate between a successful trial and a failure trial. The penguin game piece started as a blue color to indicate that it was not active. To activate the penguin, the participant had to click the left mouse button (mouse or trackpad) or touch and hold the penguin, and it would turn white to indicate that it was movable. Then the participant made a reaching movement to move the penguin across the ice. The trial would end when the Y position of the penguin exceeded 24 GU. To account for variability in input device sampling rates, the final X position was computed as an interpolation between the data points immediately before and after Y=24 GU such that every trial had a calculated X position at Y=24 GU.
 
 Rewards were determined based upon the interpolated final X position of the game piece at the back edge of the ice and a task-specific reward landscape. All tasks included five blocks as outlined in Figure 2a. Baseline (20 trials): a single, discrete target (image of three dancing penguins) was presented at a randomized X position at the far edge of the ice. Participants were instructed to move accurately to the target. Learning (100 trials): participants were exposed to one of four learning environments with variations in the target type (continuous vs. discrete, Figure 1a) and the reward feedback (probabilistic vs. deterministic, Figure 1b). In the continuous conditions, participants could choose to move the penguin to any location on a continuous horizontal target (Figure 1a – continuous). In the discrete conditions, participants could move to one of seven targets spread horizontally (Figure 1a – discrete). For probabilistic feedback, the reward was determined by an unseen position-based probability gradient with a small 100% reward zone away from which reward probabilities decreased linearly to a baseline (Figure 1b – continuous probabilistic and discrete probabilistic). For deterministic feedback, reward was always given within a reward zone but not elsewhere (Figure 1b – continuous deterministic and discrete deterministic). Success Clamp (10 trials): every trial in this block was rewarded regardless of the final X position of the game piece. Fail Clamp (10 trials): no trials in this block were rewarded. Single Target (10 trials): the same single, discrete target as in baseline was presented in the center of the far edge of the ice, and participants were cued to move accurately towards it. A break for a new set of instructions was provided between Baseline and Learning as well as Fail Clamp and Single Target. Participants were unaware of the reward criteria transitions between Learning and Success Clamp and Success Clamp and Fail Clamp. The ideal/mature behavior in these tasks was to explore at the beginning of the learning block to find the area of most frequent reward and then exploit this behavior to maximize reward for the remaining trials of the block. Moreover, if the 100% reward zone has been found successfully, continuing to move to this reinforced position during the success clamp and then exploring again in the fail clamp are indicators of mature sensitivity to reward and failure.
 
-## Continuous probabilistic
+### Continuous probabilistic
 
-In the Learning block for the continuous probabilistic task, participants were presented with a continuous target and probabilistic reward feedback (Figure 1b – continuous probabilistic). The probability reward landscape is defined by setting reward percentage probabilities at 5 specific x\begin{document}$ x$\end{document} locations with reward between these locations being linearly interpolated (and constant outside the range). We set X values of {−24,−14.5,−9.5,1.1875}\begin{document}$ \{-24,\,-14.5,\,-9.5,\,1.1875\}$\end{document} to reward probabilities {33,100,100,25}\begin{document}$ \{33,\,100,\,100,\,25\}$\end{document}.
+In the Learning block for the continuous probabilistic task, participants were presented with a continuous target and probabilistic reward feedback (Figure 1b – continuous probabilistic). The probability reward landscape is defined by setting reward percentage probabilities at 5 specific $x$ locations with reward between these locations being linearly interpolated (and constant outside the range). We set X values of ${−24,−14.5,−9.5,1.1875}$ to reward probabilities ${33,100,100,25}$.
 
 Participants were warned that some of the ice was starting to melt, which would cause the penguin to slip, and were told that in some places they would slip a lot of the time, in some places they would slip some of the time, and in some places they would never slip. They were instructed to move the penguin across the ice without slipping to get the movie clip to play as often as possible. If they were not successful, the penguin would fall over, and they would see a sad face penguin image before the game reset for the next trial (Figure 1c). This task design builds from Cashaback et al., 2019 where participants were asked to reach to any location on a continuous line, with the probability of being rewarded dependent on the reach end location. In their task, there was a small (hidden) 100% reward zone with reward probability decreasing on either side away from this zone. They found that adult participants could learn from a probabilistic reward landscape and find the rewarding zone (Cashaback et al., 2019). We explored a similar task design in participants across development.
 
-## Discrete probabilistic
+### Discrete probabilistic
 
-In the Learning block for the discrete probabilistic task, participants were presented with a set of targets, each associated with a specific probability of reward (Figure 1b – discrete probabilistic). We set the center of the seven targets at X values of {−18,−12,−6,0,6,12,18}\begin{document}$\{-18,\,-12,\,-6,\,0,\,6,\,12,\,18\}$\end{document} with target width of 5 and with reward percentage probabilities of the {66,100,66,33,25,25,25}\begin{document}$ \{66,\,100,\,66,\,33,\,25,\,25,\,25\}$\end{document}.
+In the Learning block for the discrete probabilistic task, participants were presented with a set of targets, each associated with a specific probability of reward (Figure 1b – discrete probabilistic). We set the center of the seven targets at X values of ${−18,−12,−6,0,6,12,18}$ with target width of 5 and with reward percentage probabilities of the ${66,100,66,33,25,25,25}$.
 
 The discrete targets were visually the same as those used in the Baseline and Single Target blocks; however, all seven were presented at the same time in equally spaced positions across the edge of the ice. Participants were instructed to find the group of penguins that made the video clip play all the time by moving their penguin game piece across the ice. They were told to move to one group of penguins on each trial and that some penguins would make the movie clip play some of the time, but there was a group of penguins that played the clip all the time. If they were not successful, they would see a red X on the video screen and the video clip would not play before the game reset for the next trial. To ensure that participants could accurately distinguish the feedback associated with each target, there was a visible space between each target. If the participant moved between targets, the participant would receive a message to try again, and the trial would reset until one target was accurately hit.
 
-## Continuous deterministic
+### Continuous deterministic
 
 In the Learning block for the continuous deterministic task, participants were presented with a continuous target and deterministic reward feedback (Figure 1b – continuous deterministic). Participants were warned that some of the ice was starting to melt, which would cause the penguin to slip, and were told that in some places they would slip all of the time and in some places they would never slip. They were instructed to move the penguin across the ice without slipping to get the movie clip to play as often as possible. If they were not successful, the penguin would fall over, and they would see a sad face penguin image before the game reset for the next trial. This task was completed by a subset of participants aged three to eight years and adults.
 
-## Discrete deterministic
+### Discrete deterministic
 
 In the Learning block for the discrete deterministic task, participants were presented with a set of seven discrete targets and deterministic reward feedback (Figure 1b – discrete deterministic). Participants were instructed to move across the ice to one of the groups of penguins on each trial to get the movie clip to play. They were told that one group of penguins would make the video clip play all of the time. If they were not successful, they would see a red X on the video screen and the video clip would not play before the game reset for the next trial. As in the discrete probabilistic task, to ensure that participants could accurately distinguish the feedback associated with each target, there was a space between each target. If the participant moved between targets, the trial would reset until one target was accurately hit. This task was completed by a subset of participants aged three to eight years and adults.
 
-## Demo versions of tasks
+### Demo versions of tasks
 
 Shortened versions of each task without data collection are provided at the following links. In these versions, there are 5 trials in baseline, 10 trials in learning, 2 trials in each clamp, and 3 trials of single target. To proceed beyond the information input screen, use an arbitrary six-digit code for the subjectID and participant information to sample the game environment.
 
@@ -216,7 +589,7 @@ Continuous Deterministic:
 
 Discrete Deterministic:
 
-## Measurements and analysis
+### Measurements and analysis
 
 We used several metrics to analyze performance and variability in different blocks and evaluate reinforcement learning over childhood. Baseline performance was defined as the signed distance from the target center averaged over each of the 20 baseline trials. Baseline precision was defined as the standard deviation of the baseline performance. Importantly, the width of these baseline targets was the same as the 100% reward zone in the learning block for the continuous target tasks. This allowed determination of both success and precision with moving to targets the width of the goal. Learning performance (Distance from target) is defined as the absolute value of the interpolated X position distance from the center of 100% reward zone (located at X = –12 in all tasks) averaged over the last 10 trials of the learning block. A Distance from target value closer to 0 indicates better learning. To quantify variability after success, we used the standard deviation of the interpolated X position in trials 2 through 10 of the success clamp block. To quantify variability after failure, we used the standard deviation of the interpolated X position in trials 2 through 10 of the fail clamp block.
 
@@ -224,68 +597,104 @@ Participant characteristics (sex and game play handedness) and game play paramet
 
 We used linear regression and one- and two-way ANOVAs to evaluate effects of age and other outcome variables on learning as well as compare performance between tasks. Significance level of 0.05 was used for all statistical tests. All raw data processing and statistical analyses were completed using custom scripts in MATLAB (version R2023a) (Hill et al., 2025).
 
-## Reinforcement learning model
+### Reinforcement learning model
 
 Several reinforcement models have been proposed for tasks similar to ours (Therrien et al., 2018; Therrien et al., 2016; Roth et al., 2023). With some reparameterizing, all these models can be considered as special cases of a ‘full’ model. We fit this full model, as well as all 30 possible variants of the full model. These models can be considered mechanistic models as defined by Levenstein et al., 2023.
 
-In these models, a participant maintains an estimate of their desired reach location (xt\begin{document}$ x_{t}$\end{document}; which reflects the estimated target location) which can be updated across trials. On each trial, the actual real location (st\begin{document}$ s_{t}$\end{document}) is the desired reach with the addition of (possibly) exploration variability (et\begin{document}$ e_{t}$\end{document}), planning variability (pt\begin{document}$ p_{t}$\end{document}) and motor noise (mt\begin{document}$ m_{t}$\end{document}). The distinction between exploration and planning variability/motor noise is that exploration variability is only added if the last trial was unsuccessful (reward rt=1\begin{document}$  r_{t}=1$\end{document} for successful trials, and 0 for unsuccessful trials), whereas planning variability and motor noise is added on all trials:(6)st=xt+(1−rt−1)et+pt+mt\begin{document}$$\displaystyle  s_t = x_t + (1-r_{t-1}) e_t+ p_t + m_t$$\end{document}
+In these models, a participant maintains an estimate of their desired reach location ($x_{t}$; which reflects the estimated target location) which can be updated across trials. On each trial, the actual real location ($s_{t}$) is the desired reach with the addition of (possibly) exploration variability ($e_{t}$), planning variability ($p_{t}$) and motor noise ($m_{t}$). The distinction between exploration and planning variability/motor noise is that exploration variability is only added if the last trial was unsuccessful (reward $r_{t}=1$ for successful trials, and 0 for unsuccessful trials), whereas planning variability and motor noise is added on all trials:
 
-where the sources of variability are all zero mean Gaussian with standard deviations given by σe\begin{document}$\sigma_{e}$\end{document}, σp\begin{document}$\sigma_{p}$\end{document}, and σm\begin{document}$ \sigma_{m}$\end{document}. There can be other sources of noise (sensory, memory, etc.) and we regard them as being included as part of motor noise (since they are never used to update the reach). The probability p\begin{document}$  p$\end{document} of reward received, rt\begin{document}$r_{t}$\end{document}, depends on the reach location and the particular reward regime used such that the reward equation is(7)p(rt=1)=f(st)\begin{document}$$\displaystyle  p(r_{t}=1) = f(s_t) $$\end{document}
+$$
+s_{t}=x_{t}+(1−r_{t−1})e_{t}+p_{t}+m_{t}
+$$
 
-where f()\begin{document}$f()$\end{document} can represent different functions such as the continuous or discrete probabilistic and deterministic reward regimes. The desired reach can then be updated by both planning variability and any exploration noise but not by motor noise (this is the key distinction between planning variability and motor noise).(8)xt+1=xt+ηert(1−rt−1)et+ηprtppt\begin{document}$$\displaystyle  x_{t+1} = x_t+ \eta_e r_t (1-r_{t-1}) e_t + \eta_p r^p_t p_t$$\end{document}
+where the sources of variability are all zero mean Gaussian with standard deviations given by $\sigma_{e}$, $\sigma_{p}$, and $\sigma_{m}$. There can be other sources of noise (sensory, memory, etc.) and we regard them as being included as part of motor noise (since they are never used to update the reach). The probability $p$ of reward received, $r_{t}$, depends on the reach location and the particular reward regime used such that the reward equation is
 
-where ηp\begin{document}$\eta_{p}$\end{document} and ηe\begin{document}$\eta_{e}$\end{document} are the learning rates controlling exploration and planning variability contribution to the update. In the full model rtp\begin{document}$ r^{p}_{t}$\end{document} is the reward on that trial rt\begin{document}$ r_{t}$\end{document} so that both exploration (if present) and planning variability are used to update after success. In some model variants rtp=1\begin{document}$r^{p}_{t}=1$\end{document} so that the desired reach is always updated by planning variability.
+$$
+p(r_{t}=1)=f(s_{t})
+$$
 
-The variants of the model determine whether (i) each source of variability (et,pt,mt\begin{document}$e_{t},p_{t},m_{t}$\end{document}) are present or not, (ii) the settings of the learning rates (ηe\begin{document}$\eta_{e}$\end{document} and ηp\begin{document}$\eta_{p}$\end{document} independent, identical, ηe\begin{document}$  \eta_{e}$\end{document} or ηp\begin{document}$\eta_{p}$\end{document} or both set to unity) and (iii) whether rtp\begin{document}$r^{p}_{t}$\end{document} equals rt\begin{document}$r_{t}$\end{document} or 1.
+where $f()$ can represent different functions such as the continuous or discrete probabilistic and deterministic reward regimes. The desired reach can then be updated by both planning variability and any exploration noise but not by motor noise (this is the key distinction between planning variability and motor noise).
 
-This leads to 80 variants: exploration (2) × planning (2) × motor (2) × learning (5) × (2). However, many of these variants can be excluded, leaving 31 model variants. The exclusions are (i) models with no planning variability and no motor noise (as they show no variability in success clamp for example), (ii) models with no exploration variability but a fit or non-zero ηe\begin{document}$\eta_{e}$\end{document}, (iii) models with no planning variability but a fit or non-zero ηp\begin{document}$\eta_{p}$\end{document}, (iv) models with no planning variability but rtp\begin{document}$ r^{p}_{t}$\end{document} set to rt\begin{document}$r_{t}$\end{document}.
+$$
+x_{t+1}=x_{t}+η_{e}r_{t}(1−r_{t−1})e_{t}+η_{p}r_{t}^{p}p_{t}
+$$
+
+where $η_{p}$ and $η_{e}$ are the learning rates controlling exploration and planning variability contribution to the update. In the full model $r_{t}^{p}$ is the reward on that trial $r_{t}$ so that both exploration (if present) and planning variability are used to update after success. In some model variants $r_{t}^{p}=1$ so that the desired reach is always updated by planning variability.
+
+The variants of the model determine whether (i) each source of variability ($e_{t},p_{t},m_{t}$) are present or not, (ii) the settings of the learning rates ($η_{e}$ and $η_{p}$ independent, identical, $η_{e}$ or $η_{p}$ or both set to unity) and (iii) whether $r_{t}^{p}$ equals $r_{t}$ or 1.
+
+This leads to 80 variants: exploration (2) × planning (2) × motor (2) × learning (5) × (2). However, many of these variants can be excluded, leaving 31 model variants. The exclusions are (i) models with no planning variability and no motor noise (as they show no variability in success clamp for example), (ii) models with no exploration variability but a fit or non-zero $η_{e}$, (iii) models with no planning variability but a fit or non-zero $η_{p}$, (iv) models with no planning variability but $r_{t}^{p}$ set to $r_{t}$.
 
 The model variants are shown in Figure 5—figure supplement 1 and some of these variants correspond to previously proposed models (after allowing renaming of variables; for example, a model with exploration variability present on every trial would be regarded as planning variability). Models 23, 22, 30, 10, and 6 are models 1–5, respectively, from Roth et al., 2023. Model 8 is the model from Therrien et al., 2016 and Model 28 is the model in Therrien et al., 2018. Model 20 is the model from Cashaback et al., 2019.
 
-## Model fitting
+#### Model fitting
 
-To fit these stochastic models to each participant’s data, we used a Kalman smoother. The full model has 5 parameters: θ={σm,σe,σp,ηe,ηp}\begin{document}$\theta=\{\sigma_{m},\sigma_{e},\sigma_{p},\eta_{e},\eta_{p}\}$\end{document}. We can reformulate the equations above into a standard Kalman update and output equations. The update equation is given by(9)[xtetptmt]=[1ηert−1eηprt−1p0000000000000][xt−1et−1pt−1mt−1]+[000(1−rt−1)σe000σp000σm][vt1vt2vt3]\begin{document}$$\displaystyle  \begin{bmatrix}x_t \\e_t \\p_t \\m_t\end{bmatrix}=\begin{bmatrix} 1 & \eta_e r^e_{t-1} & \eta_p r^p_{t-1} & 0\\ 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0\\ 0 & 0 & 0 & 0\\\end{bmatrix}\begin{bmatrix}x_{t-1} \\e_{t-1} \\p_{t-1} \\m_{t-1} \\\end{bmatrix}+\begin{bmatrix} 0 & 0 & 0\\ (1-r_{t-1}) \sigma_e & 0 & 0\\ 0 & \sigma_p & 0\\ 0 & 0 & \sigma_m\\\end{bmatrix}\begin{bmatrix}v^1_t\\v^2_t\\v^3_t\\\end{bmatrix}$$\end{document}
+To fit these stochastic models to each participant’s data, we used a Kalman smoother. The full model has 5 parameters: $\theta={\sigma_{m},\sigma_{e},\sigma_{p},η_{e},η_{p}}$. We can reformulate the equations above into a standard Kalman update and output equations. The update equation is given by
 
-where vti∼N(0,1)\begin{document}$v^{i}_{t}\sim\mathcal{N}(0,1)$\end{document}. The output equation is given by(10)st=[1111][xtetptmt]\begin{document}$$\displaystyle  s_t =\begin{bmatrix}1 & 1 & 1 & 1 \end{bmatrix}\begin{bmatrix}x_t \\e_t \\p_t \\m_t\end{bmatrix}$$\end{document}
+$$
+[x_{t}e_{t}p_{t}m_{t}]=[1η_{e}r_{t−1}^{e}η_{p}r_{t−1}^{p}0000000000000][x_{t−1}e_{t−1}p_{t−1}m_{t−1}]+[000(1−r_{t−1})\sigma_{e}000\sigma_{p}000\sigma_{m}][v_{t}^{1}v_{t}^{2}v_{t}^{3}]
+$$
 
-We initialized the states as all zeros and the state covariance as(11)[2020000σe20000σp20000σm2]\begin{document}$$\displaystyle  \begin{bmatrix}20^2 & 0 & 0 &0 \\0& \sigma_e^2& 0 &0 \\0 & 0 & \sigma_p^2 &0 \\0 & 0 & 0 &\sigma_m^2 \\\end{bmatrix}$$\end{document}
+where $v_{t}^{i}∼N(0,1)$. The output equation is given by
+
+$$
+s_{t}=[1111][x_{t}e_{t}p_{t}m_{t}]
+$$
+
+We initialized the states as all zeros and the state covariance as
+
+$$
+[20^{2}0000\sigma_{e}^{2}0000\sigma_{p}^{2}0000\sigma_{m}^{2}]
+$$
 
 where the wide prior on the initial reach direction allows the Kalman smoother to fit each participant’s initial reach. We used Matlab fminsearchbnd to fit the parameters to maximize the likelihood (Hill et al., 2025).
 
-## Model selection
+#### Model selection
 
 We first fit each model to maximize the likelihood over the 100 learning trials for each child participant in the continuous probabilistic task. This ensured that our model selection was not contaminated by behavior in the clamp block. We used BIC to select the preferred model (the BIC provides a relative measure of goodness of fit accounting for differences in the number of parameters of each model). The same model (model 11) was preferred if we only considered the children or also included the adults. Moreover, the same model was preferred for both the children in the discrete probabilistic task (or again if we included the adults). We therefore focus on Model 11 which is a special case (with no exploration after success) of the model proposed in Therrien et al., 2018.
 
-## Preferred model
+#### Preferred model
 
-In the preferred model, the produced reach is the desired reach with the addition of the variability from motor noise and exploration (if any), given by the output equation:(12)st=xt+(1−rt−1)et+mt\begin{document}$$\displaystyle  s_t = x_t +(1-r_{t-1}) e_t+ m_t$$\end{document}
+In the preferred model, the produced reach is the desired reach with the addition of the variability from motor noise and exploration (if any), given by the output equation:
 
-After each reach, the participant updates their desired reach location only if they were successful. They update the reach to incorporate all of the exploration (if any) so that the update equation is(13)xt+1=xt+rt(1−rt−1)et\begin{document}$$\displaystyle  x_{t+1} = x_t+ r_t (1-r_{t-1}) e_t$$\end{document}
+$$
+s_{t}=x_{t}+(1−r_{t−1})e_{t}+m_{t}
+$$
+
+After each reach, the participant updates their desired reach location only if they were successful. They update the reach to incorporate all of the exploration (if any) so that the update equation is
+
+$$
+x_{t+1}=x_{t}+r_{t}(1−r_{t−1})e_{t}
+$$
 
 We examined parameter recovery for the preferred model by generating simulated data (for each participant using their best fit parameters for the preferred model) and compared the fit values with the true values used to simulate the data. This showed correlations were above 0.96 for both parameters.
 
 Having found the preferred model, we used that to fit the 120 trials for each participant in each of the four conditions so as to constrain the parameter fits using all the data. For the discrete tasks, we fit the data in the same way as the continuous (so that the model does not know about the discrete nature of the task).
 
-## Model simulations
+#### Model simulations
 
 To simulate a participant, we used the best fit parameter to generate Monte Carlo simulations. We used the estimated posterior of the initial state from the Kalman smoother to initialize both the desired and actual reach by sampling from the appropriate posterior 100,000 times and used these to generate the same number of Monte Carlo simulations. We ensured that the desired and actual reaches were constrained to the workspace by clipping values outside the range. We calculate the median (to be robust) of these runs as well as the standard deviation across runs for plotting.
 
 The model simulations also allowed us to simulate the two clamp phases, and we calculated the average standard deviation of actual reaches in each clamp phase across simulations.
 
-## Goodness of fit
+#### Goodness of fit
 
 While the BIC analysis with the other model variants provides a relative goodness of fit, it is not straightforward to provide an absolute goodness of fit such as standard R2. There are two problems. First, there is no single model output. Each time the model is simulated with the fit parameters, it produces a different output (due to motor noise, exploration variability, and reward stochasticity). Second, the model is not meant to reproduce the actual motor noise, exploration variability, and reward stochasticity of a trial. For example, the model could fit pure Gaussian motor noise across trials (for a poor learner) by accurately fitting the standard deviation of motor noise but would not be expected to actually match each data point and would therefore have a traditional R2 of 0.
 
 To provide an overall goodness of fit, we have to reduce the noise component, and to do so, we examined the traditional R2 between the average of all the children’s data and the average simulation of the model (repeated 1000 times per participant) so as to reduce the stochastic variation.
 
-## Optimal exploration variability as a function of motor noise
+#### Optimal exploration variability as a function of motor noise
 
 We used model simulations over a 50 × 50 grid of exploration variability and motor noise to assess the expected learning distance for the 4 tasks. To do this, for each grid location, we simulated each child participant 4000 times (as above, selecting the initial state stochastically for each child) and calculated the expected learning distance over the 100 learning trials across the children. This showed the optimal exploration variability increasing as a function of decreasing motor noise (as also observed with age in the data). For an intuition and proof of this relation, see Appendix 1.
 
-## Alternative value-based model
+#### Alternative value-based model
 
-We considered a value-based model which tries to learn the value of each location. This model is based on the model by Giron et al., 2023. In this model, the participant represents the value of each location on each trial vt(x)\begin{document}$ v_{t}(x)$\end{document}. Given the reach locations and rewards received up until trials T, {x1,r1,x2,r2⋅xT,rT}\begin{document}$\{x_{1},r_{1},x_{2},r_{2}\cdot x_{T},r_{T}\}$\end{document} the value function is fit using a Gaussian process with squared exponential kernel and logistic likelihood to give vT(x)\begin{document}$v_{T}(x)$\end{document}. The kernel has two parameters, a length scale σl\begin{document}$\sigma_{l}$\end{document} which determines the generalization of learning to other locations and a strength σs\begin{document}$\sigma_{s}$\end{document} that controls the amount of learning (similar to a learning rate). The value function is passed through the softmax function with parameter b\begin{document}$ b$\end{document} that controls the exploration(14)Pt(x)∝expbv(x)\begin{document}$$\displaystyle  P_t(x)\propto \exp^{b v(x)}$$\end{document}
+We considered a value-based model which tries to learn the value of each location. This model is based on the model by Giron et al., 2023. In this model, the participant represents the value of each location on each trial $v_{t}(x)$. Given the reach locations and rewards received up until trials T, ${x_{1},r_{1},x_{2},r_{2}⋅x_{T},r_{T}}$ the value function is fit using a Gaussian process with squared exponential kernel and logistic likelihood to give $v_{T}(x)$. The kernel has two parameters, a length scale $\sigma_{l}$ which determines the generalization of learning to other locations and a strength $\sigma_{s}$ that controls the amount of learning (similar to a learning rate). The value function is passed through the softmax function with parameter $b$ that controls the exploration
 
-where Pt(x)\begin{document}$P_{t}(x)$\end{document} is normalized so as to be the probability of moving to locations x\begin{document}$x$\end{document}.
+$$
+P_{t}(x)∝exp^{bv(x)}
+$$
 
-To fit the models, three parameters {σl,σs,b}\begin{document}$\{\sigma_{l},\sigma_{s},b\}$\end{document} we discretized x\begin{document}$  x$\end{document} into 500 points and used fmincon to maximize the likelihood of the data. We found these optimized parameters were very sensitive to the initial parameter, so we chose 50 random initializations for each participant and selected the one with the highest likelihood. Although we were able to fit the data, unlike the noise-based model, often the parameters were not easily identifiable. For example, there are many ways a participant could fail to learn, such as a large σl\begin{document}$\sigma_{l}$\end{document} or small σs\begin{document}$\sigma_{s}$\end{document}. Since this was not the preferred model, we chose not to examine the parameters for the fits.
+where $P_{t}(x)$ is normalized so as to be the probability of moving to locations $x$.
+
+To fit the models, three parameters ${\sigma_{l},\sigma_{s},b}$ we discretized $x$ into 500 points and used fmincon to maximize the likelihood of the data. We found these optimized parameters were very sensitive to the initial parameter, so we chose 50 random initializations for each participant and selected the one with the highest likelihood. Although we were able to fit the data, unlike the noise-based model, often the parameters were not easily identifiable. For example, there are many ways a participant could fail to learn, such as a large $\sigma_{l}$ or small $\sigma_{s}$. Since this was not the preferred model, we chose not to examine the parameters for the fits.

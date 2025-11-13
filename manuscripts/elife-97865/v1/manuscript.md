@@ -22,21 +22,21 @@
 
 ### Affiliations
 
-1. https://ror.org/02rx3b187 CNRS, Université Grenoble Alpes, CEA, UMR5075, Institut de Biologie Structurale Grenoble France
+1. CNRS, Université Grenoble Alpes, CEA, UMR5075, Institut de Biologie Structurale Grenoble France ([ROR:02rx3b187](https://ror.org/02rx3b187))
 2. CHU Grenoble Alpes Grenoble France
-3. https://ror.org/057q4rt57 Program in Molecular Medicine, The Hospital for Sick Children Research Institute Toronto Canada
-4. https://ror.org/03dbr7087 Department of Biochemistry, University of Toronto Toronto Canada
-5. https://ror.org/05wg1m734 Department of Medical Microbiology, Radboud University Medical Center Nijmegen Netherlands
-6. https://ror.org/050xscb48 TropIQ Health Sciences Nijmegen Netherlands
-7. https://ror.org/00a0jsq62 Department of Immunology and Infection, London School of Hygiene and Tropical Medicine London United Kingdom
+3. Program in Molecular Medicine, The Hospital for Sick Children Research Institute Toronto Canada ([ROR:057q4rt57](https://ror.org/057q4rt57))
+4. Department of Biochemistry, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
+5. Department of Medical Microbiology, Radboud University Medical Center Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
+6. TropIQ Health Sciences Nijmegen Netherlands ([ROR:050xscb48](https://ror.org/050xscb48))
+7. Department of Immunology and Infection, London School of Hygiene and Tropical Medicine London United Kingdom ([ROR:00a0jsq62](https://ror.org/00a0jsq62))
 8. Center for Vaccine Innovation and Access, PATH Washington D.C. United States
-9. https://ror.org/03dbr7087 Department of Immunology, University of Toronto Toronto Canada
+9. Department of Immunology, University of Toronto Toronto Canada ([ROR:03dbr7087](https://ror.org/03dbr7087))
 
 † Corresponding author
 
 ## Abstract
 
-Circulating sexual stages of Plasmodium falciparum (Pf ) can be transmitted from humans to mosquitoes, thereby furthering the spread of malaria in the population. It is well established that antibodies can efficiently block parasite transmission. In search for naturally acquired antibodies targets on sexual stages, we established an efficient method for target-agnostic single B cell activation followed by high-throughput selection of human monoclonal antibodies (mAbs) reactive to sexual stages of Pf in the form of gametes and gametocyte extracts. We isolated mAbs reactive against a range of Pf proteins including well-established targets Pfs48/45 and Pfs230. One mAb, B1E11K, was cross-reactive to various proteins containing glutamate-rich repetitive elements expressed at different stages of the parasite life cycle. A crystal structure of two B1E11K Fab domains in complex with its main antigen, RESA, expressed on asexual blood stages, showed binding of B1E11K to a repeating epitope motif in a head-to-head conformation engaging in affinity-matured homotypic interactions. Thus, this mode of recognition of Pf proteins, previously described only for Pf circumsporozoite protein (PfCSP), extends to other repeats expressed across various stages. The findings augment our understanding of immune-pathogen interactions to repeating elements of the Plasmodium parasite proteome and underscore the potential of the novel mAb identification method used to provide new insights into the natural humoral immune response against Pf .
+Circulating sexual stages of Plasmodium falciparum (Pf) can be transmitted from humans to mosquitoes, thereby furthering the spread of malaria in the population. It is well established that antibodies can efficiently block parasite transmission. In search for naturally acquired antibodies targets on sexual stages, we established an efficient method for target-agnostic single B cell activation followed by high-throughput selection of human monoclonal antibodies (mAbs) reactive to sexual stages of Pf in the form of gametes and gametocyte extracts. We isolated mAbs reactive against a range of Pf proteins including well-established targets Pfs48/45 and Pfs230. One mAb, B1E11K, was cross-reactive to various proteins containing glutamate-rich repetitive elements expressed at different stages of the parasite life cycle. A crystal structure of two B1E11K Fab domains in complex with its main antigen, RESA, expressed on asexual blood stages, showed binding of B1E11K to a repeating epitope motif in a head-to-head conformation engaging in affinity-matured homotypic interactions. Thus, this mode of recognition of Pf proteins, previously described only for Pf circumsporozoite protein (PfCSP), extends to other repeats expressed across various stages. The findings augment our understanding of immune-pathogen interactions to repeating elements of the Plasmodium parasite proteome and underscore the potential of the novel mAb identification method used to provide new insights into the natural humoral immune response against Pf.
 
 ## Introduction
 
@@ -52,27 +52,35 @@ We designed a workflow for the isolation of antibodies to sexual stage-specific 
 
 ## Results
 
-## Agnostic memory B cell (MBC) sorting and activation identifies potential Pf sexual stage protein-specific mAbs
+### Agnostic memory B cell (MBC) sorting and activation identifies potential Pf sexual stage protein-specific mAbs
 
 We selected donor A, a 69-year-old Dutch expatriate who resided in Central Africa for approximately 30 years and whose serum was shown to strongly reduce Pf transmission, to isolate sexual stage-specific mAbs. We previously demonstrated the serum of this donor, donor A, largely retained its TRA when depleted of antibodies directed against the main transmission-blocking epitopes of Pfs48/45 and Pfs230 (Stone et al., 2018), suggesting the presence of antibodies targeting other epitopes on these two proteins or directed at other proteins also involved in transmission.
 
 PBMCs from the donor were thawed and a total of 1496 IgG+ memory B cells were sorted in 384-well plates (Figure 1) (Figure 1—figure supplement 1A). After activation, single-cell culture supernatants potentially containing secreted IgGs were screened in a high-throughput 384-well ELISA for their reactivity against a crude Pf gamete lysate (Figure 1—figure supplement 1B). A subset of supernatants was also screened against gametocyte lysate (Figure 1—figure supplement 1C). In total, supernatants from 84 wells reacted with gamete and/or gametocyte lysate proteins, representing 5.6% of the total memory B cells. Of the 21 supernatants that were screened against both gamete and gametocyte lysates, six recognized both, while nine appeared to recognize exclusively gamete proteins, and six exclusively gametocyte proteins.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/97865/elife-97865-fig1-v1.jpg)
+
+**Figure 1.:** IgG+ memory B cells from donor A were sorted individually regardless of their specificity, at one cell per well. Cells were further cultured in activation medium with CD40L-expressing feeder cells and cytokines to induce antibody secretion. Supernatants were tested for antibody binding to the sexual stage of the parasite through screening using a gamete extract ELISA. Memory B cells from wells displaying reactivity were selected for Ig genes amplification, followed by cloning and production of the corresponding antibody. Figure was created with BioRender.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97865/elife-97865-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Gating strategy for agnostic MBCs sorting (A). Gamete extract (B) or gametocyte extract (C) ELISA for cell culture supernatant screening. Wells with signal above or close to positivity threshold (indicated in red) were selected for immunoglobulin variable genes amplification.
+
 To isolate the corresponding mAbs, single B cell lysates from the 84 ELISA-positive wells were subjected to single B cell reverse transcriptase PCR (RT-PCR) for amplification of immunoglobulin variable genes. We obtained and cloned heavy and light chain sequences for 11 out of 84 wells. For three wells we obtained a kappa light chain sequence and for five wells a lambda light chain sequence. For three wells we obtained both a lambda and kappa light chain sequence suggesting that either both chains were present in a single B cell or that two B cells were present in the well. For all 14 wells we retrieved a single heavy chain sequence. Following amplification and cloning, 14 mAbs were expressed as full human IgG1s (Supplementary files 1 and 2).
 
-## Isolated mAbs exhibit distinct patterns of recognition of gamete surface proteins
+### Isolated mAbs exhibit distinct patterns of recognition of gamete surface proteins
 
 The 14 mAbs were first tested for binding to Pf sexual stage surface antigens in a surface immunofluorescence assay (SIFA) using wild-type female gametes (Figure 2A). The mAbs were also tested for binding to Pfs48/45 knockout female gametes, which lack surface-bound Pfs48/45 and Pfs230 (Eksi et al., 2006; Stone et al., 2018) Seven mAbs exhibited binding to approximately half or more of gametes when tested at a concentration of 100 µg/mL. Among these, four mAbs, B1C5K, B1C5L, B2C10L, and B2E9L, recognized wild-type gametes with high scores (>68%) even at concentrations as low as 1 µg/mL. The binding of the B1C5K, B1C5L, B2C10L, and B2E9L mAbs strongly decreased when using gametes that lacked surface-expressed Pfs48/45 and Pfs230, indicating that these four mAbs likely targeted one of these two antigens. Three other mAbs, B2D10L, B1C8L, and B1E7K, displayed a similar recognition profile, albeit with notably smaller percentages of labeled wild-type gametes, particularly at the lower concentrations tested. This suggested a potential low-affinity recognition of either Pfs48/45 or Pfs230 for these latter three mAbs.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/97865/elife-97865-fig2-v1.jpg)
 
-**Figure 2.:** (A) Percentage positive wild-type gametes and Pfs48/45 knockout (KO) gametes that also lack surface-bound Pfs230 in surface immunofluorescence assay, in a heatmap format (graded color scale: red for high percentage of binding, green for low percentage of binding). The experiment was performed in duplicate and three different mAb concentrations were tested (100 µg/ml, 5 µg/ml, and 1 µg/ml). (B) Transmission-reducing activity (TRA) of the mAb panel in standard membrane feeding assay (SMFA). For mAbs with >80% TRA at 500 µg/ml, experiments were run in duplicates and bars are estimates of the mean and error bars represent the 95% confidence intervals. mAbs with >80% TRA at 500 µg/ml were also tested at 100 µg/ml. Oocyst count data of the SMFA (Standard membrane feeding assay) experiments can be found in Figure 2—source data 1. (C) Reactivity of the mAb panel against gametocyte extract in western blot, in non-reducing conditions. Antibodies are classified depending on the antigen recognized: Pfs48/45, Pfs230, or no antigen identified. TB31F is an anti-Pfs48/45 mAb, RUPA-96 is an anti-Pfs230 mAb, and VRC01 is an anti-HIV mAb (negative control). Pfs48/45 and Pfs230 bands are indicated with a red arrow, antibodies with >80% TRA at 500 µg/ml are indicated with an asterisk (*). (D) Reactivity of the mAb panel at 30 µg/ml against full-length Pfs48/45 in ELISA. (E) B1C5K and B1C5L binding to various Pfs48/45 domains in ELISA, at 10 µg/ml. (F) B2C10L binding to Pfs230CMB domain in ELISA, at 10 µg/ml. Values in (D-F) are means from three technical replicates and error bars represent standard deviation. mAbs were considered positive when the absorbance was higher than the mean absorbance plus three standard deviations of seven negative mAbs, indicated by dashed lines.Figure 2—source data 1.Figure 2—source data 2.
+**Figure 2.:** (A) Percentage positive wild-type gametes and Pfs48/45 knockout (KO) gametes that also lack surface-bound Pfs230 in surface immunofluorescence assay, in a heatmap format (graded color scale: red for high percentage of binding, green for low percentage of binding). The experiment was performed in duplicate and three different mAb concentrations were tested (100 µg/ml, 5 µg/ml, and 1 µg/ml). (B) Transmission-reducing activity (TRA) of the mAb panel in standard membrane feeding assay (SMFA). For mAbs with >80% TRA at 500 µg/ml, experiments were run in duplicates and bars are estimates of the mean and error bars represent the 95% confidence intervals. mAbs with >80% TRA at 500 µg/ml were also tested at 100 µg/ml. Oocyst count data of the SMFA (Standard membrane feeding assay) experiments can be found in Figure 2—source data 1. (C) Reactivity of the mAb panel against gametocyte extract in western blot, in non-reducing conditions. Antibodies are classified depending on the antigen recognized: Pfs48/45, Pfs230, or no antigen identified. TB31F is an anti-Pfs48/45 mAb, RUPA-96 is an anti-Pfs230 mAb, and VRC01 is an anti-HIV mAb (negative control). Pfs48/45 and Pfs230 bands are indicated with a red arrow, antibodies with >80% TRA at 500 µg/ml are indicated with an asterisk (*). (D) Reactivity of the mAb panel at 30 µg/ml against full-length Pfs48/45 in ELISA. (E) B1C5K and B1C5L binding to various Pfs48/45 domains in ELISA, at 10 µg/ml. (F) B2C10L binding to Pfs230CMB domain in ELISA, at 10 µg/ml. Values in (D-F) are means from three technical replicates and error bars represent standard deviation. mAbs were considered positive when the absorbance was higher than the mean absorbance plus three standard deviations of seven negative mAbs, indicated by dashed lines.
 
 Six of the remaining seven mAbs, B1C8K, B1D3L, B1D3K, B1F9K, B1C3L, and B2F7L, exhibited very weak or no binding to gametes. For B1C8K, this showed that the light chain (kappa) did not correspond to the antibody that was originally selected in the screening process as the lambda version (B1C8L) exhibited strong binding. As for the other mAbs, the results indicated that they may be specific for proteins not expressed or only poorly expressed at the gamete surface.
 
 Finally, one mAb, B1E11K, exhibited a distinctive gamete surface binding profile, recognizing only a fraction (approximately a third to a fifth) of the wild-type and Pfs48/45 knockout gametes across all tested concentrations, suggesting potential binding to non-Pfs48/45 and Pfs230 proteins.
 
-## Isolated mAbs have varying TRAs and recognize different Pf sexual stage proteins
+### Isolated mAbs have varying TRAs and recognize different Pf sexual stage proteins
 
 We were interested in investigating potential TRA for all identified mAbs. To do this, a standard membrane feeding assay standard membrane feeding assay (SMFA) was conducted in the presence of the isolated mAbs, revealing a range of TRAs (Figure 2B; Figure 2—source data 1). Overall, seven mAbs were confirmed to strongly reduce transmission (TRA>80%) when tested at 500 µg/ml: B1C5K, B1C5L, B2C10L, B2E9L, B1C8L, B1D3L, and B1F9K. Of those, two mAbs, B1C8L and B2C10L, retained >50% TRA at a lower concentration (100 µg/ml). Notably, despite not showing gamete surface recognition, B1F9K and B1D3L displayed TRA – although only at high concentrations. Conversely, three mAbs recognizing the gamete surface, B2D10L, B1E7K, and B1E11K, showed no activity in SMFA (Standard membrane feeding assay).
 
@@ -84,7 +92,7 @@ The combined findings above strongly pointed to Pfs230 as the target of mAb B2C1
 
 In summary, our target-agnostic mAb isolation approach successfully identified mAbs against Pf sexual stage proteins, some of which exhibited TRA and some of which target Pfs48/45 or Pfs230. However, given that the mAbs isolated in this study showed substantially lower TRA than mAbs identified previously (Kundu et al., 2018; Coelho et al., 2021), we elected not to investigate them further. Instead, we were intrigued by the binding properties of B1E11K, which showed cross-reactivity with various Pf proteins, including Pfs230. Such cross-reactivity has been shown as a hallmark of the human antibody response to Pf and explored at the serum level but to our knowledge has never been studied at the mAb level (Hou et al., 2020; Raghavan et al., 2023). Thus, we rationalized a more detailed molecular characterization of this mAb may provide insights into this relatively unexplored phenomenon.
 
-## The B1E11K mAb cross-reacts to distinct sexual and asexual stage Pf proteins containing glutamate-rich repeats
+### The B1E11K mAb cross-reacts to distinct sexual and asexual stage Pf proteins containing glutamate-rich repeats
 
 First, to ensure the ability of B1E11K to recognize different proteins in western blotting experiments was not due to polyreactivity, the mAb was tested in ELISA against a panel of human proteins, single-stranded DNA (ssDNA) and lipopolysaccharide (LPS). The 4E10 mAb, a well-known anti-HIV gp41 polyreactive mAb (Cardoso et al., 2005), was used as a positive control. The B1E11K mAb did not bind any of the antigens on the panel at any significant level, even at a high 50 µg/ml concentration, and therefore polyreactivity was ruled out (Figure 3—figure supplement 1A).
 
@@ -92,21 +100,273 @@ To identify antigens recognized by B1E11K, immunoprecipitation experiments were 
 
 The specificity of B1E11K was further tested using a protein microarray featuring recombinant proteins corresponding to putative antigens expressed at the sexual stage as well as proteins expressed at different stages of the Pf life cycle (Stone et al., 2018). The results showed that B1E11K exhibited high level reactivity (>8-fold higher than the negative control, minimum signal intensity rank 15th of 943 array targets) against several antigens, some expressed at the sexual stage (i.e. Pf11.1), others at the asexual stage (i.e. LSA3, RESA, RESA3) (Figure 3A; Figure 3—source data 1). Analysis of the primary amino acid sequence of the antigens recognized in the array suggested homology in several cases, based on the presence of glutamate-rich regions (Figure 3—figure supplement 2). To analyze the numerous repeated motifs contained in these proteins, we used the RADAR (Rapid Automatic Detection and Alignment of Repeats) software (Heger and Holm, 2000). Although B1E11K recognition of Pfs230 fragments on the array was lower than our cutoff for further analysis (3.4-fold higher than the negative control, maximum signal intensity rank 30th of 943 array targets), its sequence was also analyzed using RADAR due to its recognition by B1E11K in the immunoprecipitation experiments (Figure 3—figure supplements 3 and 4). The analysis showed Pfs230 and several of the proteins recognized by B1E11K on the array contained diverse patterns of glutamate-rich repeats of different lengths and compositions. Among these proteins, Pfs230, Pf11.1, RESA, RESA3, and LSA3 presented the most similar glutamate repeats, following an 'EE-XX-EE' pattern (Figure 3—figure supplements 3 and 4). Pfs230 contains adjacent EE-VG-EE repeats which are located in the domain of the protein which is cleaved upon gametocyte egress from erythrocytes (Williamson et al., 1996). RESA and RESA3 contain 20 and 9 EE-NV-EE overlapping repeats at the C-terminus of the protein, respectively. LSA3 contains two overlapping EE-NV-EE repeats. Finally, 221 non-adjacent EE-LV-EE repeats span the whole Pf11.1 megadalton protein.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/97865/elife-97865-fig3-v1.jpg)
+
+**Figure 3.:** (A) B1E11K binding to recombinant fragments of Plasmodium falciparum (Pf) proteins displayed on a microarray. (B) B1E11K binding to several recombinant proteins in western blot, in non-reducing conditions. (C) Sequences of the peptides tested for binding. Peptides were N-terminally linked to a biotin moiety using aminohexanoyl (Ahx) spacers. (D) B1E11K binding in ELISA to a panel of peptides.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97865/elife-97865-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) B1E11K binding to a panel of human self-proteins, single-stranded DNA (ssDNA) and lipopolysaccharide (LPS) in ELISA. 4E10 is a polyreactive anti-HIV monoclonal antibody (mAb) (positive control). (B) Immunoprecipitation of B1E11K mAb against gametocyte extract. A Native PAGE 3–12% Bis-Tris gel was used for protein separation followed by silver staining. VRC01, an anti-HIV mAb was used as a negative control. *: BSA.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/97865/elife-97865-fig3-figsupp2-v1.jpg)
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/97865/elife-97865-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Sequences from UniProt database. 'EENVEE' repeats are highlighted in pink and 'EEVGEE' in green.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/97865/elife-97865-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Sequence from UniProt database. 'EELVEE' are highlighted in light blue, 'EEVVEE' in dark blue, and other repeats following the 'EEXXEE' pattern in yellow.
+
 To verify the recognition of the aforementioned proteins, a western blot was performed with recombinant forms of RESA, RESA3, LSA3, and of a Pf11.1 domain (de Jong, 2023; Figure 3B). Domain 1 of Pfs230, which does not contain the EE-VG-EE repeats, was also included. The results confirmed the binding of B1E11K to all the proteins tested except for Pfs230D1, as expected. Overall, the data showed that the B1E11K mAb recognizes various Pf proteins from different stages, all containing glutamate-rich repeats.
 
 To validate the B1E11K mAb specifically targets glutamate-rich repeats, we synthesized five biotinylated peptides derived from the various repeats found in the proteins identified above to test for binding in sandwich ELISA experiments (Figure 3C). Overall, the B1E11K mAb bound to all peptides (Figure 3D). However, it exhibited a higher specificity for the RESA-derived peptides with an EC50 at least 100 times greater compared to EC50 values obtained with the other glutamate-rich peptides. Altogether, this suggests the main antigenic targets of B1E11K are RESA and RESA3, which contain the EENV repeats.
 
 Since B1E11K bound to RESA-based peptides the strongest, we synthesized shorter RESA peptides for a more precise determination of the B1E11K minimal sequence epitope (Figure 4A). When tested on the RESA peptide panel, B1E11K mAb binding to RESA P2 (16AA) and RESA 14AA, 12AA, and 10AA was similar, all exhibiting close EC50 values (Figure 4B; Figure 4—figure supplement 1). No binding was observed for the 8AA RESA peptide, suggesting the 10AA peptide contained the minimal epitope. We hypothesized the similar EC50 values may be a result of avidity effects and thus, we performed the same experiment with recombinant B1E11K Fab (Figure 4C). Although B1E11K Fab bound both RESA P2 (16AA) and RESA 14AA peptides with comparable strength of binding, both RESA 12AA and RESA 10AA peptides displayed comparatively poorer EC50 values with the RESA 10AA peptide displaying the lowest detectable binding strength. The binding affinity and kinetics of the interaction was also determined through biolayer interferometry (BLI). We performed experiments using the minimal sequence required for binding determined through ELISA (RESA 10AA peptide and the RESA P2 peptide [16AA]). When immobilizing the peptide to the sensors, an approximately six-fold difference in affinity between the 10AA peptide (KD = 484 nM) (Figure 4D) and the P2 peptide (16AA) (KD = 74 nM) (Figure 4E) was observed.
 
-## Four EENV repeats permit two B1E11K Fabs to bind
+![Figure 4.](https://cdn.elifesciences.org/articles/97865/elife-97865-fig4-v1.jpg)
+
+**Figure 4.:** (A) Various peptides based on the EENV repeat region were designed and conjugated to a biotin-AHX-AHX moiety (AHX = ε-aminocaproic acid). EC50 values obtained from ELISA experiments utilizing various EENV repeat peptides with (B) B1E11K mAb or (C) B1E11K Fab. Error bars represent standard deviation. Biolayer interferometry experiments utilizing immobilized (D) RESA 10AA peptide or (E) RESA P2 (16AA) peptide dipped into B1E11K Fab. Representative isothermal titration calorimetry experiments in which B1E11K Fab was injected into (F) RESA 10AA peptide or (G) RESA P2 (16AA) peptide. (H) Size-exclusion chromatography coupled with multi-angle light scattering (SEC-MALS) of a solution of B1E11K Fab incubated with RESA P2 (16AA) peptide in a 6:1 molar ratio. The predicted molecular weight of the B1E11K Fab and RESA P2 peptide are 46.9 kDa and 2.5 kDa, respectively. The shaded region indicates the fractions collected used for negative-stain electron microscopy (nsEM). (I) An nsEM map reconstruction which permits the fitting of two B1E11K Fabs (Fab A and Fab B).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97865/elife-97865-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Binding to RESA peptides in ELISA: for B1E11K mAb (A), three independent experiments; for B1E11K Fab (B), two independent experiments. Curves were used to calculate EC50s shown in Figure 4.
+
+### Four EENV repeats permit two B1E11K Fabs to bind
 
 Given the repetitive nature of the antigenic targets of B1E11K and differences in binding events captured in our BLI experiments, we hypothesized that more than one B1E11K Fab could potentially bind to the longer, RESA P2 (16AA) peptide. Thus, we performed isothermal titration calorimetry (ITC) using the same two RESA peptides as in the BLI experiments to determine the binding stoichiometries. We observed when titrating the B1E11K Fab into RESA 10AA, a binding stoichiometry of N=1.0 ± 0.2 (Figure 4F; Table 1). When using the RESA P2 (16AA) peptide, a stoichiometry of N=2.1 ± 0.1 was observed (Figure 4G; Table 1). The determined binding affinity from our ITC experiments (Table 1) differed from our BLI experiments (Figure 4D and E), which can occur when measuring antibody-peptide interactions (Kratochvil et al., 2021). Regardless, our data all trend toward the same finding in which a stronger binding affinity is observed toward the longer RESA P2 (16AA) peptide.
 
+**Table 1.**
+ Isothermal titration calorimetry (ITC) thermodynamics and binding affinity of B1E11K Fab to RESA peptides.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>RESA 10AA peptide (n=2)</th>
+      <th>RESA P2 peptide (n=3)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N</td>
+      <td>1.0±0.2</td>
+      <td>2.1±0.1</td>
+    </tr>
+    <tr>
+      <td>KD (nM)</td>
+      <td>78±12</td>
+      <td>73±21</td>
+    </tr>
+    <tr>
+      <td>ΔG (kcal/mole)</td>
+      <td>–9.7±0.3</td>
+      <td>–9.8±0.3</td>
+    </tr>
+    <tr>
+      <td>ΔH (kcal/mole)</td>
+      <td>–18.3±0.1</td>
+      <td>–20.5±0.1</td>
+    </tr>
+    <tr>
+      <td>–TΔS (kcal/mole)</td>
+      <td>8.6±0.2</td>
+      <td>10.7±0.3</td>
+    </tr>
+  </tbody>
+</table>
+
+_Error reported as standard deviation._
+
 To further corroborate our binding stoichiometry findings, we performed size-exclusion chromatography coupled with multi-angle light scattering (SEC-MALS) to determine the molecular weight of the 2:1 Fab:peptide complex (Figure 4H). We incubated a molar excess Fab:peptide (6:1) sample to saturate all B1E11K Fab binding sites present on the RESA peptide to obtain a solution containing the putative complex and excess monomeric Fab. The resulting chromatogram revealed two species eluted from the column. The molecular weight of the heavier species was in line with what would be expected from a 2:1 Fab:peptide complex (92 kDa) in which the mass determined fell within the range of experimental error. A negative-stain electron microscopy (nsEM) map reconstruction of the 2:1 Fab:peptide complex recovered from the SEC-MALS experiment (Figure 4H) permitted the fitting of two Fab molecules, further supporting the 2:1 binding model (Figure 4I).
 
-## B1E11K binds EENV repeats in a head-to-head conformation leveraging homotypic interactions
+### B1E11K binds EENV repeats in a head-to-head conformation leveraging homotypic interactions
 
 To obtain a full structural understanding of the observed repeat cross-reactivity and selectivity for RESA exhibited by B1E11K, we solved a 2.6 Å crystal structure of the B1E11K:RESA P2 (16AA) peptide complex (Figure 5A; Table 2; Supplementary file 3). The electron density at the binding interface is unambiguous and included density for the entirety of the repeat region of the peptide (Figure 5—figure supplement 1). Looking at the binding interface between the two Fabs and peptide reveals the structural basis for cross-reactivity (Table 1; Figure 5—figure supplement 2; Supplementary file 4). The paratope of B1E11K is highly enriched in arginine and histidine residues giving rise to a highly electropositive groove (Figure 5B–D). These residues form a plethora of salt-bridging interactions with the glutamate residue side chains of RESA repeats (Figure 5E). These interactions are supplemented by hydrogen bonding interactions of backbone serine and glycine residues of the B1E11K paratope as well as a hydrogen bond involving W33 found in the heavy chain of Fab B. Multiple hydrogen bonding interactions are made with B1E11K through the side chains of the asparagine residues of RESA repeats (EENV) (Figure 5F) that would not exist in the context of binding to the repeats of Pf11.1 (EELV or EEVIP or EEFIP or EEVVP) or Pfs230 (EEVG) (Figure 3C), as these residues lack side chains that can form hydrogen bonds. This likely leads to the observed higher specificity of B1E11K for RESA repeats demonstrated in our ELISA experiments (Figure 3D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/97865/elife-97865-fig5-v1.jpg)
+
+**Figure 5.:** (A) The overall architecture of the B1E11K:RESA P2 (16AA) peptide complex. (B) The electrostatic potential of the surface of the B1E11K Fabs. Fab residues involved in electrostatic interactions with (C) residues 1–8 and (D) 9–16 of the RESA P2 peptide are shown as sticks. (E) Electrostatic interactions occurring with glutamate residues of the RESA P2 (16AA) peptide. Residues that have undergone somatic hypermutation (SHM) are marked with an asterisk. Salt bridges are shown as dashed yellow lines and hydrogen bonds as dashed black lines. (F) Hydrogen bonding interactions through the asparagine residues of the RESA P2 (16AA) peptide are shown as black dashed lines. (G) Variable heavy (VH) and variable kappa (Vκ) residues involved in homotypic interactions are shown as sticks. (H) The first interaction interface and (I) second interface. Residues that have undergone SHM are marked with an asterisk. Electrostatic interactions are presented as dashed lines and colored as done previously.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/97865/elife-97865-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Composite omit maps of (A) RESA P2 (16AA) peptide (red) which contain the repetitive elements. Composite omit maps of the residues of (B) B1E11K Fab A (heavy chain in green and kappa chain in light green) and (C) B1E11K Fab B (heavy chain in teal and kappa chain in light blue) that interact with the RESA P2 peptide. Composite omit map of residues in (D) B1E11K Fab A and (E) B1E11K Fab B involved in homotypic interaction interface (same coloring scheme).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/97865/elife-97865-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Bar graphs of the buried surface area of each residue in the (A) RESA P2 (16AA) peptide and both heavy and kappa chains of (B) B1E11K Fab A and (C) B1E11K Fab B. Kabat numbered CDRs are marked with bars.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/97865/elife-97865-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Bar graphs of the buried surface area of each residue of both the heavy and kappa chain of (A) B1E11K Fab A and (B) B1E11K Fab B. Kabat numbered CDRs are marked with bars.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/97865/elife-97865-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** Amino acid sequence alignments of the B1E11K heavy chain and light chain with the (A) IGHV3-7 and (B) IGKV3-20 loci. Residues that have undergone somatic hypermutation and partake in electrostatic interactions with RESA are highlighted in yellow. Residues that have undergone somatic hypermutation and take part in homotypic interactions (electrostatic) are highlighted in cyan. Residues that partake in both types of interactions are highlighted in green.
+
+**Table 2.**
+ Crystallography statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Crystal</th>
+      <th>B1E11K:RESA P2 (16AA) peptide</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Beamline</td>
+      <td>APS-23-ID-B</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td>1.0332</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td>C 2 2 21</td>
+    </tr>
+    <tr>
+      <td colspan="2">Cell dimensions</td>
+    </tr>
+    <tr>
+      <td>a, b, c (Å)</td>
+      <td>78.7, 186.3, 131.5</td>
+    </tr>
+    <tr>
+      <td>α, β, γ (°)</td>
+      <td>90, 90, 90</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)*</td>
+      <td>40.0–2.56 (2.65–2.56)</td>
+    </tr>
+    <tr>
+      <td>No. molecules in ASU</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>No. of observations</td>
+      <td>236,070 (23,834)</td>
+    </tr>
+    <tr>
+      <td>No. unique observations</td>
+      <td>31,520 (3067)</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>7.5 (7.8)</td>
+    </tr>
+    <tr>
+      <td>Rmerge (%)†</td>
+      <td>14.5 (222.8)</td>
+    </tr>
+    <tr>
+      <td>Rpim (%)‡</td>
+      <td>5.7 (85.5)</td>
+    </tr>
+    <tr>
+      <td>&lt;I/σI&gt;</td>
+      <td>10.8 (1.0)</td>
+    </tr>
+    <tr>
+      <td>CC1/2 (%)</td>
+      <td>99.7 (36.5)</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.8 (98.5)</td>
+    </tr>
+    <tr>
+      <td colspan="2">Refinement statistics</td>
+    </tr>
+    <tr>
+      <td>Reflections used in refinement</td>
+      <td>31,512</td>
+    </tr>
+    <tr>
+      <td>Reflections used in R-free</td>
+      <td>1575</td>
+    </tr>
+    <tr>
+      <td>Non-hydrogen atoms</td>
+      <td>6781</td>
+    </tr>
+    <tr>
+      <td>Macromolecule</td>
+      <td>6627</td>
+    </tr>
+    <tr>
+      <td>Water</td>
+      <td>130</td>
+    </tr>
+    <tr>
+      <td>Heteroatom</td>
+      <td>24</td>
+    </tr>
+    <tr>
+      <td>Rwork§/Rfree¶ (%)</td>
+      <td>21.5/24.5</td>
+    </tr>
+    <tr>
+      <td>Rms deviations from ideality</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bond lengths (Å)</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>Bond angle (°)</td>
+      <td>0.48</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Favored regions (%)</td>
+      <td>96.0</td>
+    </tr>
+    <tr>
+      <td>Allowed regions (%)</td>
+      <td>3.8</td>
+    </tr>
+    <tr>
+      <td>Ramachandran outliers (%)</td>
+      <td>0.2</td>
+    </tr>
+    <tr>
+      <td>B-factors (Å2)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Wilson B-factor</td>
+      <td>65.5</td>
+    </tr>
+    <tr>
+      <td>Average B-factors</td>
+      <td>89.8</td>
+    </tr>
+    <tr>
+      <td>Average macromolecule</td>
+      <td>90.3</td>
+    </tr>
+    <tr>
+      <td>Average heteroatom</td>
+      <td>83.1</td>
+    </tr>
+    <tr>
+      <td>Average water molecule</td>
+      <td>61.0</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values in parentheses refer to the highest resolution bin.†Rmerge = Σhkl Σi | Ihkl, i -<Ihkl > | / Σhkl <Ihkl >.‡Rpim = Σhkl [1/(N – 1)]1/2 Σi | Ihkl, i -<Ihkl > | / Σhkl <Ihkl>.§Rwork = (Σ | |Fo | − |Fc | |) / (Σ | |Fo |) – for all data except as indicated in footnote ¶.¶5% of data were used for the Rfree calculation._
 
 Additionally, the crystal structure of the antibody-antigen complex revealed the presence of homotypic antibody-antibody contacts through two interfaces surrounding the repeat peptide binding groove (Figure 5G; Figure 5—figure supplement 3; Supplementary file 5). The first interface features a salt-bridging network involving D60 of the Fab B kappa chain forming two salt bridges with R52 and H52A of the Fab A HCDR2 (Figure 5H). Additionally, R54 of the Fab A HCDR2 forms two hydrogen bonds and a salt bridge with the Fab B kappa chain side chains of S55 and E56. Finally, Y58 of the Fab B HCDR2 forms a hydrogen bond with the side chain of S53 of the Fab A HCDR2. The second interface is less extensive featuring two hydrogen bonds between Y32 and S31 of the Fab B HCDR1 and the Fab A KCDR1 T29 and R27, respectively (Figure 5I).
 
@@ -134,88 +394,413 @@ As such, future work will be necessary to better understand the structure-activi
 
 ## Materials and methods
 
-## PBMC sampling
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Plasmodium falciparum)</td>
+      <td>NF54</td>
+      <td>Radboud University Medical Center; Ponnudurai et al., 1989</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Anopheles stephensi)</td>
+      <td>Nijmegen Sind-Kasur strain</td>
+      <td>Radboud University Medical Center, Ponnudurai et al., 1989</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Plasmodium falciparum)</td>
+      <td>Pfs48/45 knockout</td>
+      <td>Radboud University Medical Center; Dijk et al., 2001</td>
+      <td></td>
+      <td>Pfs48/45 knockout in Pf NF54 background</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Homo sapiens)</td>
+      <td>Fibroblasts expressing CD40L 'L cells'</td>
+      <td>Laboratory for Immunological Research, Schering-Plough; Garrone et al., 1995</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK293F</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:CVCL_6642</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Freestyle 293F</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>RRID:CVCL_D615</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>PBMCs</td>
+      <td>Radboud University Medical Center; Stone et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD3 VioBlue (human monoclonal)</td>
+      <td>Miltenyi</td>
+      <td>#130-114-519</td>
+      <td>Single B cell sorting (1:50),Recombinant human IgG1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD19 PE-Vio 770 (human monoclonal)</td>
+      <td>Miltenyi</td>
+      <td>#130-113-647</td>
+      <td>Single B cell sorting (1:10),Recombinant human IgG1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD20 PE-Vio 770 (human monoclonal)</td>
+      <td>Miltenyi</td>
+      <td>#130-111-340</td>
+      <td>Single B cell sorting (1:50),Recombinant human IgG1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human CD27 APC (human monoclonal)</td>
+      <td>Miltenyi</td>
+      <td>#130-113-636</td>
+      <td>Single B cell sorting (1:10), Recombinant human IgG1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgM PE (mouse monoclonal)</td>
+      <td>Miltenyi</td>
+      <td>#130-093-075</td>
+      <td>Single B cell sorting (1:50),Mouse IgG1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgD PE (human monoclonal)</td>
+      <td>Miltenyi</td>
+      <td>#130-110-643</td>
+      <td>Single B cell sorting (1:50),Recombinant human IgG1</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgA PE (mouse monoclonal)</td>
+      <td>Miltenyi</td>
+      <td>#130-113-476</td>
+      <td>Single B cell sorting (1:50),Mouse IgG1k</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgG AP (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#A18814</td>
+      <td>ELISA (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 Goat Anti-Mouse IgG (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>#A11001</td>
+      <td>SIFA (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human IgG-HRP (goat polyclonal)</td>
+      <td>Pierce</td>
+      <td>#31412</td>
+      <td>Western blot (1:5000), ELISA (1:60,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Human IgG-TXRD (goat polyclonal)</td>
+      <td>Southern Biotech</td>
+      <td>#2040-07</td>
+      <td>Microarray, (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Variable domains of heavy and light chains cloned into gamma1 HC, kappa LC, and lambda LC expression vectors</td>
+      <td>This paper; Tiller et al., 2008</td>
+      <td></td>
+      <td>Inserts are provided in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCDNA3.4_B1E11K (Fab)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Inserts are provided in Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Peptide</td>
+      <td>Pfs230 (P1)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Biotin-AHX-AHX-EEVG-EEVG-EEVG-EEVG-GG</td>
+    </tr>
+    <tr>
+      <td>Peptide</td>
+      <td>Pfs230 (P2)=RESA P2 (16AA)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Biotin-AHX-AHX-EENV-EENV-EENV-EENV-GG</td>
+    </tr>
+    <tr>
+      <td>Peptide</td>
+      <td>Pf11.1 (P3)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Biotin-AHX-AHX-EELV-EEVIP-EELV-EEFIP-GG</td>
+    </tr>
+    <tr>
+      <td>Peptide</td>
+      <td>Pf11.1 (VIP)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Biotin-AHX-AHX-EELV-EEVIP-EELV-EE</td>
+    </tr>
+    <tr>
+      <td>Peptide</td>
+      <td>Pf11.1 (VVP)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Biotin-AHX-AHX-EELV-EEVVP-EELV-EE</td>
+    </tr>
+    <tr>
+      <td>Peptide</td>
+      <td>RESA 8AA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Biotin-AHX-AHX-EENV-EENV</td>
+    </tr>
+    <tr>
+      <td>Peptide</td>
+      <td>RESA 10AA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Biotin-AHX-AHX-EENV-EENV-EE</td>
+    </tr>
+    <tr>
+      <td>Peptide</td>
+      <td>RESA 12AA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Biotin-AHX-AHX-EENV-EENV-EENV-</td>
+    </tr>
+    <tr>
+      <td>Peptide</td>
+      <td>RESA 14AA</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Biotin-AHX-AHX-EENV-EENV-EENV-EE</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Aqua LIVE/DEAD stain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#L34957</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>293Fectin</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>#12347500</td>
+      <td>Tranfection reagent for mAb expression</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fectopro</td>
+      <td>Polyplus</td>
+      <td>#101000014</td>
+      <td>Tranfection reagent for Fab expression</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ssDNA</td>
+      <td>Sigma</td>
+      <td>#D8899-5MG</td>
+      <td>Polyreactivity testing</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Disialoganglioside GD1α</td>
+      <td>Sigma</td>
+      <td>#G2392-1MG</td>
+      <td>Polyreactivity testing</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipopolysaccharide</td>
+      <td>Sigma</td>
+      <td>#L2630-10MG</td>
+      <td>Polyreactivity testing</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Transferrin</td>
+      <td>Sigma</td>
+      <td>#T3309-100MG</td>
+      <td>Polyreactivity testing</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Apotransferrin</td>
+      <td>Sigma</td>
+      <td>#T1147-100MG</td>
+      <td>Polyreactivity testing</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Hemocyanin</td>
+      <td>Sigma</td>
+      <td>#H7017-20MG</td>
+      <td>Polyreactivity testing</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Insulin</td>
+      <td>Sigma</td>
+      <td>#I2643-25MG</td>
+      <td>Polyreactivity testing</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cardiolipin</td>
+      <td>Sigma</td>
+      <td>#C0563-10MG</td>
+      <td>Polyreactivity testing</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Histone</td>
+      <td>Sigma</td>
+      <td>#H9250-100MG</td>
+      <td>Polyreactivity testing</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tosyl-activated beads</td>
+      <td>Invitrogen</td>
+      <td>#14203</td>
+      <td>For immunoprecipitation</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SAX biosensors</td>
+      <td>Sartorius</td>
+      <td>#18-5117</td>
+      <td>For BLI experiments</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>mRNA TurboCapture kit</td>
+      <td>QIAGEN</td>
+      <td>Cat# 72271</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### PBMC sampling
 
 Donor A (Stone et al., 2018) had lived in Central Africa for approximately 30 years and reported multiple malaria infections during that period. At the time of sampling PBMCs, in 1994, donor A had recently returned to the Netherlands and visited the hospital with a clinical malaria infection. After providing informed consent, PBMCs were collected, but gametocyte prevalence and density were not recorded.
 
-## Preparation of MBCs culture plates
+### Preparation of MBCs culture plates
 
 Plates were prepared the day ahead of sorting and incubated at 37°C. Three-hundred-eighty-four-well cell culture plates (Corning #CLS3570-50EA) were prepared with the appropriate memory B cell stimulation media 1 day before cell sorting, to allow the feeder cells sedimentation at the bottom of the wells. Iscove’s Modified Dulbecco’s Medium (IMDM) (Gibco #12440061) was complemented with 1% penicillin-streptomycin (Thermo Fisher Scientific #10378016) and supplemented with 20% FBS (Gibco #16170-078). A cytokine cocktail was added to stimulate MBCs activation, with IL21 (Preprotech #200-21) at 100 ng/mL and IL2 (Preprotech #200-02) at 51 ng/mL. Fibroblasts expressing CD40L 'L cells' (Garrone et al., 1995) were irradiated at 50 Gy and 5000 were added in each well as feeder cells.
 
-## MBCs sorting
+### MBCs sorting
 
 Cryopreserved PBMCs were thawed by a brief incubation in a 37°C warm bath and stained with the following Miltenyi REA antibodies before sorting by flow cytometry: anti-CD27 APC (#130-113-636), anti-CD3 VioBlue (#130-114-519), anti-CD19 PE-Vio (#130-113-647), anti-CD20 PE-Vio (#130-111-340), anti-IgM PE (#130-113-476), anti-IgD PE (#130-110-643), and anti-IgA PE (#130-113-476). An Aqua LIVE/DEAD stain was also used (Thermo Fisher Scientific #L34957). Following staining, MBCs were sorted into the 384-well cell culture plates. After an 11-day culture period, supernatants were harvested using a pipetting robot (Eppendorf #5073) and transfered to storage plates (Greiner #788860-906). MBCs were lysed and their mRNA purified using the mRNA TurboCapture kit for 384 wells (QIAGEN #72271). Lysates were stored at –80°C. Lysates from selected wells were further transferred into 96-well RT-PCR plates (Bio-Rad #HSP9641) to perform RT-PCR.
 
-## Gamete/gametocyte extract ELISA
+### Gamete/gametocyte extract ELISA
 
 Gamete or gametocyte lysate were prepared as described (Fabra-García et al., 2023). 384-well plates (Thermo Fisher Scientific #460372) were coated with 7500 lysed gametes/gametocytes per well. Plates were incubated at 4°C overnight, then wells were washed three times with PBS-Tween 0.05%, prior to 1 hr blocking (with a 1% BSA-1% PBS-Tween 0.05% solution). Cell culture supernatants (diluted twofold in blocking solution) were dispensed into the wells for a 1 hr incubation step. Following washing, anti-human IgG AP antibody (Thermo Fisher Scientific #A18814) diluted at 1/2000 was added and incubated for 1 hr. Plates were then washed and 15 µl of CDP-substrate (Thermo Fisher Scientific #T2146) was added. The reaction was measured using Biotek Synergy 2 reader. Positivity threshold was determined as the average background OD + (3× SD (background OD)). 0.3 µg/mL TB31F (anti-Pfs48/45 mAb) and 1.0 µg/mL 2544 (anti-Pfs25 mAb) were used as positive controls, while 30.0 µg/mL 399 (anti-CSP mAb) was used as negative control.
 
-## mAb isolation and production
+### mAb isolation and production
 
 Nested multiplexed PCRs were performed on single MBCs from selected wells following the protocol outlined by Tiller et al., 2008. PCR products were sent for sequencing (Genewiz) and sequences analyzed for Ig gene features using the IMGT (ImMunoGeneTics) database (Lefranc et al., 2015). Ig gene family-specific primers were used for cloning, as described by Tiller et al., 2008. Purified PCR products were cloned into vectors encoding for either IgG1 lambda, kappa, or heavy constant regions. For transient mAb expression and secretion, HEK293F cells were co-transfected with plasmids coding the antibody heavy chain and the corresponding light chain using 293Fectin (#12347500). A protein A-Sepharose column (Sigma #ge17-1279-03) was used for mAb purification. Elution of mAbs was conducted with 4.5 mL of glycine 0.1 M (pH 2.5) and 500 µl of Tris 1 M (pH 9). The purified mAbs were subsequently subjected to buffer exchange and concentration with AmiconUltra (Merck #36100101).
 
-## Fab production
+### Fab production
 
 The DNA sequences of VK and VH of the B1E11K Fab domain were cloned upstream of human Igκ and Igγ1-CH1 domains respectively and inserted into a custom pcDNA3.4 expression vector. The plasmids were co-transfected into FreeStyle 293 F cells that were cultured in FreeStyle 293 Expression Media (Gibco #12338018) using Fectopro (Polyplus, 101000014). The recombinant Fab was purified via KappaSelect affinity chromatography (Cytiva #17545812) and cation exchange chromatography (MonoS, Cytiva 17516801).
 
-## Gamete SIFA
+### Gamete SIFA
 
 Gamete SIFA was performed with Pf NF54 wild-type and Pfs48/45 knockout (Dijk et al., 2001) strains. The Pfs48/45 knockout lacks both surface-bound Pfs48/45 and Pfs230 (Stone et al., 2018; Eksi et al., 2006; Kumar, 1987). Wild-type or Pfs48/45 knockout gametes were obtained following gametocyte activation in FBS for 1 hr at room temperature. Gametes were washed with PBS and incubated with mAbs diluted in PBS containing 0.5% PBS and 0.05% NaN3 (SIFA buffer) for 1 hr at 4°C in sterile V bottom plates (VWR#736-0223). After incubation, wells were washed three times with SIFA buffer and secondary antibody Alexa Fluor 488 Goat Anti-Mouse IgG (H+L) (Invitrogen#A11001) diluted 1/200 added for a 1 hr incubation step on ice. Following a washing step, gametes were suspended in 4% paraformaldehyde and transferred into 384-well clear bottom black plates. Four images per well were taken using the ImageXpress Pico Cell Imaging System (Molecular Devices).
 
-## Western blot
+### Western blot
 
 For western blots with gametocyte extract, Pf NF54 gametocyte extract was prepared as described above. The extract was mixed with NuPAGE LDS sample buffer (Thermo Fisher Scientific # NP0008) and heated for 15 min at 56°C. The equivalent of 1 million lysed gametocytes was loaded per lane. A NuPAGE 4–12% Bis-Tris 2D-well gel (Thermo Fisher Scientific #NP0326BOX) was used for proteins separation. Using the Trans-Blot Turbo system (Bio-Rad #1704150) samples were then transferred to a 0.22 µm nitrocellulose membrane (Bio-Rad #1620150). The blots were cut into strips, blocked with 5% skimmed milk in PBS and incubated with 5 µg/mL of the mAb to be tested. Strips were incubated with the secondary anti-human IgG-HRP antibody (Pierce #31412), diluted 1/5000 in PBS-T. Clarity Western ECL substrate (Bio-Rad #1705060) was used for development and strips were imaged with the ImageQuant LAS4000 equipment (GE HealthCare).
 
 For western blot with recombinant proteins, we used Pfs230CMB (amino acids 444–730) expressed in a plant-based transient expression system (Farrance et al., 2011), and RESA3 (amino acids 570–1090), RESA (amino acids 66–585), LSA3 (amino acids 805–1558), and Pf11.1 (amino acids 3657–3734) that were expressed wheat germ cell free extract (https://repository.ubn.ru.nl/bitstream/handle/2066/289602/289602.pdf?sequence=1). All antigens contained a C-terminal His-tag. RESA and LSA3 also had an N-terminal GST-tag. The equivalent of 150 ng of protein was loaded per lane. An SDS 4–20% gel (Bio-Rad # 4561094) was used for protein separation under non-reducing conditions. Further steps were performed following the protocol described above.
 
-## Recombinant Pfs48/45 and Pfs230 ELISA
+### Recombinant Pfs48/45 and Pfs230 ELISA
 
 ELISAs with full-length Pfs48/45 and fragments thereof, and Pfs230CMB were performed as previously described (Fabra-García et al., 2023; Farrance et al., 2011). In short, Nunc MaxiSorp 96-wells plates (Thermo Fisher) were coated with 0.5 µg/mL recombinant Pfs48/45 or Pfs230CMB proteins, blocked with 5% skimmed milk in PBS+0.1% Tween-20 and washed. Plates were then incubated with 10 µg/mL or 30 µg/mL mAb in 1% skimmed milk in PBS. After washing, plates were incubated with 1:60,000 Goat Anti-Human IgG/HRP-conjugated antibody (Pierce, #31412) in 1% skimmed milk in PBS+0.1% Tween-20. After washing, plates were developed with 3,3′,5,5′-tetramethylbenzidine and the reaction was stopped with H2SO4. Absorbance was measured at 450 nm. mAbs were considered positive when the absorbance was higher than the mean absorbance plus three standard deviations of seven negative mAbs.
 
-## MAb polyreactivity testing in ELISA
+### MAb polyreactivity testing in ELISA
 
 The coating antigens were diluted to 1 µg/mL. Antigens used were: ssDNA (Sigma #D8899-5MG), disialoganglioside GD1α (Sigma #G2392-1MG), LPS (Sigma #L2630-10MG), transferrin (Sigma #T3309-100MG), apotransferrin (Sigma #T1147-100MG), hemocyanin (Sigma #H7017-20MG), insulin (Sigma #I2643-25MG), cardiolipin (Sigma #C0563-10MG), albumin and histone (Sigma #H9250-100MG). Secondary antibody used was a phosphatase-coupled goat anti-human IgG (Jackson ImmunoResearch #109 056 098). Optical densities were read at 405 nm, 1 hr after the addition of pNPP.
 
-## SMFA
+### SMFA
 
 SMFA experiments were performed using Pf NF54 wild-type gametocytes with oocyst count readout, following a protocol set up by Ponnudurai et al., 1989. Briefly, blood meals containing cultured gametocytes mixed with antibodies were fed to A. stephensi mosquitoes (Nijmegen colony). For each condition, 20 fully fed mosquitoes were analyzed. Reported antibody concentrations are concentrations in the total blood meal volume. mAbs that showed >80% TRA, i.e., reduction in oocysts compared to a negative control, were tested in a second independent SMFA experiment. TRA from one or two independent SMFA experiments was calculated using a negative binomial regression model as previously described (de Jong et al., 2022b). SMFA data analyses were done in R (version 4.1.2).
 
-## Microarray
+### Microarray
 
 Microarray design and protocol have been extensively detailed in Stone et al., 2018, and de Jong et al., 2022a. Briefly, the selection of proteins to be printed on the array was made on the basis of a systematic analyses of proteomic data by Meerstein-Kessel et al., 2018. In total, 943 protein targets representing 528 unique gene IDs were expressed for the array using an in vitro transcription translation system; these were printed onto nitrocellulose-coated slides at the University of California, Irvine, as described previously (de Jong et al., 2022a). Microarray slides were rehydrated in blocking buffer (GVS #10485356) while B1E11K was diluted 1:100 in a 20% Escherichia coli lysate/blocking buffer solution and incubated for 30 min. Blocking buffer was discarded and diluted B1E11K added to the array slides for incubation overnight at 4°C with continual rocking. Following three washes with TBS-Tween-20 0.05%, slides were probed with a fluorophore-conjugated secondary antibody (Southern Biotech, Goat Anti-Human IgG-TXRD) at a concentration of 0.5 µg/mL (1:2000) in 2% E. coli lysate/blocking buffer solution. After three washes, slides were removed from their casettes and rinsed in ddH2O air dried in a centrifuge and scanned using a GenePix 4300A High-resolution Microarray Scanner (Molecular Devices). Data treatment and analysis were performed using R (Staples, 2023). Correction for local array target spot background was done using the ‘backgroundCorrect’ function of the limma package (Ritchie et al., 2015). Background corrected values were log2 transformed and normalized to systematic effects by subtraction of the median signal intensity of the negative IVTT controls (internally within four subarrays per sample). The final normalized data are a log2 MFI ratio of target to control reactivity: a value of 0 represents equality with the vehicle control, and a value of 1 indicates a signal twice as high.
 
-## Immunoprecipitation
+### Immunoprecipitation
 
 Briefly, we used tosyl-activated beads (Invitrogen #14203) to covalently link B1E11K and incubated these beads with a gametocyte lysate to enable antigen capture. Immunoprecipitated antigens were eluted, and the elution fraction was run on an SDS-PAGE gel and silver-stained. A negative control immunoprecipitation experiment was performed using an anti-HIV gp120 mAb. As shown in sup Figure 3—figure supplement 1B, two bands with a molecular weight greater than 250 kDa, and a third one with a molecular weight around 55 kDa were specifically detected in the B1E11K immunoprecipitate, in comparison to the control antibody. The three bands were cut and sent for mass spectrometry analysis. Data were analyzed by querying the entire proteome of Pf (NF54 isolate) in the UniProt database.
 
-## Peptide synthesis
+### Peptide synthesis
 
 Peptides were produced by P. Verdié team, IBMM – SynBio3, Montpellier, France. Lyophilized peptides were solubilized in PBS.
 
-## ELISA with biotinylated peptides
+### ELISA with biotinylated peptides
 
 ELISA protocol was similar to the protocol described above. Briefly, 96-well ELISA plates were coated overnight at 4°C with 0.5 µg/mL of streptavidin (Thermo Fisher Scientific # 434301). Plates were washed and then blocked for 1 hr. Following wash, peptides diluted at 0.5 µg/mL were added to the plates for a 1 hr incubation. The plates were washed and serially diluted mAbs were added. mAb fixation was detected using phosphatase-coupled goat anti-human IgG (Jackson ImmunoResearch #109 056 098) and para-nitrophenylphosphate (Interchim #UP 664791). The enzymatic reaction was measured at 405 nm using a TECAN Spark 10M plate reader. Half maximal effective concentration (EC50) was calculated from raw data (OD) after normalization using GraphPad Prism (version 9) 'log agonist versus normalized response' function.
 
-## BLI assay
+### BLI assay
 
 All BLI experiments were performed using an Octet Red96e Instrument (PallForteBio), at 25°C and under 1000 rpm agitation. SAX biosensors (Sartorius #18-5117) were pre-wetted in BLI Buffer (PBS [pH 7.4]+0.01% [wt/vol] BSA +0.002% [vol/vo] Tween-20) for 10 min. Biotinylated peptides were loaded onto the biosensors until the top concentration of B1E11K Fab utilized in kinetic assays (2500 nM for RESA 10AA peptide and 625 nM for RESA P2 peptide) yielded a response value of ~1.2 nm. An association step was conducted by dipping the sensors into a titration series of ½ serially diluted B1E11K Fab for 30 s. The dissociation step was conducted by dipping the biosensors into BLI Buffer for 1200s. Background subtractions were done using measurements where experiments were performed with biosensors treated in the same conditions but replacing Fab solution with BLI Buffer. Kinetic data were processed using the manufacturer’s software (Data Analysis HT v11.1).
 
-## Isothermal titration calorimetry
+### Isothermal titration calorimetry
 
 An Auto-ITC200 (Malvern) was used to conduct calorimetric experiments. The RESA P2 peptide, RESA 10AA peptide, and recombinant B1E11K Fab were buffer-exchanged into Tris-buffered saline (20 mM Tris pH 7.0, and 150 mM NaCl). The B1E11K Fab was concentrated at 90–110 μM for experiments utilizing the RESA P2 peptide and 60–70 μM for those utilizing the RESA 10AA peptide. The RESA P2 peptide and RESA 10AA peptide were concentrated at 5–6 μM and 7–10 μM respectively. Fab (syringe) was titrated into the cell (peptide) at 25°C using a protocol involving 19 injections each at a volume of 2.0 μl. The curves were fitted to a 2:1 or 1:1 binding model using the MicroCal ITC Origin 7.0 Analysis Software.
 
-## SEC-MALS
+### SEC-MALS
 
 SEC-MALS experiments were performed at 4°C using a Superdex 200 Increase 10/300 GL (Cytiva #GE17-5175-01) column. RESA P2 peptide was incubated with B1E11K Fab at a 1:6 molar ratio for 30 min prior to loading onto the Superdex 200 column. The column was set up onto an Agilent Technologies 1260 Infinity II HPLC coupled with a MiniDawn Treos MALS detector (Wyatt), Quasielastic light scattering (QELS) detector (Wyatt), and Optilab T-reX refractive index (RI) detector (Wyatt). Data processing was performed using the ASTRA software (Wyatt).
 
-## nsEM and image processing
+### nsEM and image processing
 
 Fractions of the first peak of the SEC-MALS experiments containing the 2:1 B1E11K:RESA P2 complex were used to make nsEM grids. 50 µg/mL of the complex was deposited onto homemade carbon film-coated grids (previously glow-discharged in air for 15 s) and stained with 2% uranyl formate. Data was collected onto a Hitachi HT7800 microscope paired with an EMSIS Xarosa 20 Megapixel CMOS camera. Micrographs were taken with the microscope operating at 120 kV at ×80,000 magnification with a pixel size of 1.83 Å/px. Image processing, particle picking, extractions, 2D classifications, and 3D reconstructions were done in cryoSPARC v2 (Punjani et al., 2017).
 
-## X-ray crystallography and structural determination
+### X-ray crystallography and structural determination
 
 The RESA P2 peptide was incubated with B1E11K Fab at a 1:5 molar ratio for 30 min prior to loading onto a Superdex 200 column Increase 10/300 GL column. Fractions containing the complex were pooled and concentrated at 8.6 mg/mL. A seed stock prepared from a previous crystallization trial was used for seeding. The stock was prepared from condition G9 of a JCSG Top96 screen (0.2 M (NH4)2SO4 25% [wt/vol] PEG4000, and 0.1 M sodium acetate [pH 4.6]). The complex, reservoir solution, and seed stock were mixed at a 3:4:1 volumetric ratio into an optimization tray derived from condition G9 of the JCSG Top96 screen. Crystals grew within 6 hr in a reservoir condition consisting of (0.1 M NH4)2SO4 25% (wt/vol) PEG4000, and 0.1 M sodium acetate (pH 5.2). Crystals were cryo-protected with 15% ethylene glycol (vol/vol) before being flash-frozen in liquid nitrogen. Data collection was performed at the 23-ID-B beamline at the Argonne National Laboratory Advanced Photon Source. Datasets were initially processed using autoproc (Vonrhein et al., 2011) and further optimized using xdsgui (Kabsch, 2010). Molecular replacement was performed using PhaserMR McCoy et al., 2007 followed by multiple rounds of refinement using phenix.refine (Liebschner et al., 2019) and Coot (Emsley et al., 2010). Inter- and intra-molecular contacts were determined using PISA (Krissinel and Henrick, 2007) and manual inspection. Structural figures were generated using UCSF ChimeraX (Goddard et al., 2018; Pettersen et al., 2021).
 
-## Material availability statement
+### Material availability statement
 
 Materials generated in this study will be made available upon reasonable request.

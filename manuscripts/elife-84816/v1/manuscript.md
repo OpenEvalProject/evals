@@ -20,21 +20,21 @@
 
 ### Affiliations
 
-1. https://ror.org/02kkvpp62 Helmholtz Pioneer Campus, Helmholtz AI, Technical University of Munich Munich Germany
-2. https://ror.org/0495fxg12 Institut Pasteur Paris France
-3. https://ror.org/03cqe8w59 Instituto de Investigación en Biomedicina de Buenos Aires – CONICET – Partner Institute of the Max Planck Society, Buenos Aires, Argentina Buenos Aires Argentina
-4. https://ror.org/01c4pz451 Non-communicable Diseases Research Center, Tehran University of Medical Sciences Tehran Islamic Republic of Iran
-5. https://ror.org/01ej9dk98 Centre for Youth Mental Health, University of Melbourne Parkville Australia
-6. https://ror.org/05f950310 Department of Biosystems, KU Leuven Leuven Belgium
-7. https://ror.org/057915t59 Instituto de Agrobiotecnología del Litoral (CONICET-UNL) Sante Fe Argentina
-8. https://ror.org/019whta54 Center for Integrative Genomics, Faculty of Biology and Medicine, University of Lausanne Lausanne Switzerland
-9. https://ror.org/04r1cxt79 Centre for Global Health Research, Kenya Medical Research Institute Kisumu Kenya
-10. https://ror.org/03y6k2j68 Departamento de Química Ambiental, Facultad de Ciencias, Universidad Católica de la Santísima Concepción Concepción Chile
-11. https://ror.org/013meh722 Department of Plant Sciences, University of Cambridge Cambridge United Kingdom
-12. https://ror.org/02nc46417 Sony Computer Science Laboratories Kyoto Japan
-13. https://ror.org/01tgyzw49 Department of Biomedical Engineering, National University of Singapore Singapore Singapore
-14. https://ror.org/03gf8rp76 National Centre for Biological Sciences Bangalore India
-15. https://ror.org/02jbayz55 Department of Pharmaceutical Chemistry, Faculty of Pharmacy, University of Khartoum Khartoum Sudan
+1. Helmholtz Pioneer Campus, Helmholtz AI, Technical University of Munich Munich Germany ([ROR:02kkvpp62](https://ror.org/02kkvpp62))
+2. Institut Pasteur Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))
+3. Instituto de Investigación en Biomedicina de Buenos Aires – CONICET – Partner Institute of the Max Planck Society, Buenos Aires, Argentina Buenos Aires Argentina ([ROR:03cqe8w59](https://ror.org/03cqe8w59))
+4. Non-communicable Diseases Research Center, Tehran University of Medical Sciences Tehran Islamic Republic of Iran ([ROR:01c4pz451](https://ror.org/01c4pz451))
+5. Centre for Youth Mental Health, University of Melbourne Parkville Australia ([ROR:01ej9dk98](https://ror.org/01ej9dk98))
+6. Department of Biosystems, KU Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
+7. Instituto de Agrobiotecnología del Litoral (CONICET-UNL) Sante Fe Argentina ([ROR:057915t59](https://ror.org/057915t59))
+8. Center for Integrative Genomics, Faculty of Biology and Medicine, University of Lausanne Lausanne Switzerland ([ROR:019whta54](https://ror.org/019whta54))
+9. Centre for Global Health Research, Kenya Medical Research Institute Kisumu Kenya ([ROR:04r1cxt79](https://ror.org/04r1cxt79))
+10. Departamento de Química Ambiental, Facultad de Ciencias, Universidad Católica de la Santísima Concepción Concepción Chile ([ROR:03y6k2j68](https://ror.org/03y6k2j68))
+11. Department of Plant Sciences, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+12. Sony Computer Science Laboratories Kyoto Japan ([ROR:02nc46417](https://ror.org/02nc46417))
+13. Department of Biomedical Engineering, National University of Singapore Singapore Singapore ([ROR:01tgyzw49](https://ror.org/01tgyzw49))
+14. National Centre for Biological Sciences Bangalore India ([ROR:03gf8rp76](https://ror.org/03gf8rp76))
+15. Department of Pharmaceutical Chemistry, Faculty of Pharmacy, University of Khartoum Khartoum Sudan ([ROR:02jbayz55](https://ror.org/02jbayz55))
 
 † Corresponding author
 

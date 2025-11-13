@@ -14,17 +14,17 @@
 
 ### Affiliations
 
-1. https://ror.org/0280a3n32 Islet Cell and Regenerative Biology, Joslin Diabetes Center Boston United States
-2. https://ror.org/04drvxt59 Department of Medicine, Beth Israel Deaconess Medical Center, Harvard Medical School Boston United States
-3. https://ror.org/04kj1hn59 Harvard Stem Cell Institute, Harvard Medical School Boston United States
-4. https://ror.org/05a0ya142 Chemical Biology and Therapeutics Science Program, Broad Institute of MIT and Harvard Cambridge United States
-5. https://ror.org/04b6nzv94 Divisions of Renal Medicine and Engineering, Brigham and Women’s Hospital Boston United States
+1. Islet Cell and Regenerative Biology, Joslin Diabetes Center Boston United States ([ROR:0280a3n32](https://ror.org/0280a3n32))
+2. Department of Medicine, Beth Israel Deaconess Medical Center, Harvard Medical School Boston United States ([ROR:04drvxt59](https://ror.org/04drvxt59))
+3. Harvard Stem Cell Institute, Harvard Medical School Boston United States ([ROR:04kj1hn59](https://ror.org/04kj1hn59))
+4. Chemical Biology and Therapeutics Science Program, Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))
+5. Divisions of Renal Medicine and Engineering, Brigham and Women’s Hospital Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
 
 † Corresponding author
 
 ## Abstract
 
-Pancreatic α-cells secrete glucagon, an insulin counter-regulatory peptide hormone critical for the maintenance of glucose homeostasis. Investigation of the function of human α-cells remains a challenge due to the lack of cost-effective purification methods to isolate high-quality α-cells from islets. Here, we use the reaction-based probe diacetylated Zinpyr1 (DA-ZP1) to introduce a novel and simple method for enriching live α-cells from dissociated human islet cells with ~95% purity. The α-cells, confirmed by sorting and immunostaining for glucagon, were cultured up to 10 days to form α-pseudoislets. The α-pseudoislets could be maintained in culture without significant loss of viability, and responded to glucose challenge by secreting appropriate levels of glucagon. RNA-sequencing analyses (RNA-seq) revealed that expression levels of key α-cell identity genes were sustained in culture while some of the genes such as DLK1 , GSN , SMIM24 were altered in α-pseudoislets in a time-dependent manner. In conclusion, we report a method to sort human primary α-cells with high purity that can be used for downstream analyses such as functional and transcriptional studies.
+Pancreatic α-cells secrete glucagon, an insulin counter-regulatory peptide hormone critical for the maintenance of glucose homeostasis. Investigation of the function of human α-cells remains a challenge due to the lack of cost-effective purification methods to isolate high-quality α-cells from islets. Here, we use the reaction-based probe diacetylated Zinpyr1 (DA-ZP1) to introduce a novel and simple method for enriching live α-cells from dissociated human islet cells with ~95% purity. The α-cells, confirmed by sorting and immunostaining for glucagon, were cultured up to 10 days to form α-pseudoislets. The α-pseudoislets could be maintained in culture without significant loss of viability, and responded to glucose challenge by secreting appropriate levels of glucagon. RNA-sequencing analyses (RNA-seq) revealed that expression levels of key α-cell identity genes were sustained in culture while some of the genes such as DLK1, GSN, SMIM24 were altered in α-pseudoislets in a time-dependent manner. In conclusion, we report a method to sort human primary α-cells with high purity that can be used for downstream analyses such as functional and transcriptional studies.
 
 ## Introduction
 
@@ -32,17 +32,33 @@ Zinc-binding molecules such as Newport Green (NPG) (Kirkpatrick et al., 2010) an
 
 ## Results
 
-## DA-ZP1 as a tool to purify live human pancreatic α-cells
+### DA-ZP1 as a tool to purify live human pancreatic α-cells
 
 To test whether DA-ZP1 is able to sort α-cells from a mixed population of pancreatic endocrine cells, we dispersed human islets into single cells and labeled them with DA-ZP1 (Figure 1a). Flow cytometry analysis of the cells showed a wide spread of fluorescence intensity among dispersed islet cells on a two-dimensional density plot. We classified the cells into three subsets based on their fluorescence intensity and drew a gate to separate each of the subsets (Figure 1b). The subset centered near the unstained cell background showed ‘low’ fluorescence intensity while the other two cell populations positioned on the right side of the dot-plot showed ‘intermediate’ and ‘bright’ fluorescence intensities, respectively (Figure 1a and b). We confirmed that DA-ZP1 labeling resulted in a similar fluorescence intensity pattern among the three cell populations (low, intermediate, bright) in an additional four independent human islet donors (Figure 1—figure supplement 1). Consistent with the FACS-based fluorescence assessment, fluorescent microscopy validated that the DA-ZP1 ‘bright’ subset displayed higher fluorescence signal compared to the intermediate subset, and that the unsorted islet cells are comprised of a mixture of cells with varying fluorescence intensities (Figure 1c, Figure 1—figure supplement 1). To identify percentage of hormone-containing cells in each subset, the sorted cells were plated, fixed, and immunostained using antibodies to detect insulin or glucagon. Immunofluorescence analysis showed that the bright subset was highly enriched for human β-cells (~83% CPEP+ cells), while the intermediate subset consisted of α-cells of high purity (~95% GCG+ cells) (Figure 1d and e). The cells in the DA-ZP1 ‘low’ subset were mostly hormone negative, indicating that these cells likely represented non-hormonal cells such as fibroblast-like, endothelial, or exocrine cells. Consistently, transcriptomics analysis of three different populations by RNA-seq showed that the expression levels of α-cell markers such as GCG, TTR, ARX, IRX1, IRX2 are higher in the intermediate subset, the expression levels of β-cell markers such as INS, MAFA, PDX1, IAPP are higher in the bright subset, and the expression levels of non-endocrine cell markers such as CFTR, KRT19, VIM are higher in the low subset compared to other subsets (Figure 1f). The low expression levels of SST, HHEX, GHRL, and PPY in the intermediate subset compared to other subsets indicate a small amount of contamination with the other endocrine islet cell types such as delta, epsilon, and PP cells.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/85056/elife-85056-fig1-v3.jpg)
+
+**Figure 1.:** (a) Experimental outline. (b) Representative FACS plot showing three cell populations with low, intermediate, or bright fluorescence. The plot represents the data collected from Donor-1 islets. Unstained (left) vs DA-ZP1-treated (right) human islets. Gating strategy and the data collected from the other donors (n=4) are given in Figure 1—figure supplement 1. (c) The DA-ZP1 derived green fluorescence is maintained in the next day of sorting in the sorted islet cells. The cells were plated in Matrigel-coated flat-bottom plates. Scale bar, 100 μm. See also Figure 1—figure supplement 1. (d) Representative images of human islet cells after FACS showing C-peptide (green) and glucagon (red) expressing islet cells. Nuclei were stained with DAPI (blue). Scale bar, 50 μm. (e) Quantification of percentage of CPEP+, GCG+, and other cells (CPEP- GCG-) in each cell population. Data are presented as mean values ± s.e.m. n=3 donors. (f) Heatmap showing expression of genes in different cell subsets. n=3 donors. (g) Comparison of other zinc-based dyes with DA-ZP1 by FACS.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/85056/elife-85056-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Starting cell population was determined by SSC-A/FSC-A gating. Single human islet cells were gated according to FSC-A/FSC-W gating. Treatment of the single cells with diacetylated Zinpyr1 (DA-ZP1) resulted in three cell populations with different fluorescence intensity (low, intermediate, and bright). n=5 human islet donors. Donor information is given in Supplementary file 9. (b) Number of live cells collected by fluorescence activated cell sorting (FACS) using 15,000 islet equivalent determined by trypan blue staining. (c) The DA-ZP1 derived green fluorescence is maintained in the next day of sorting in the sorted islet cells. Scale bar, 100 μm.
+
 Next, we compared DA-ZP1 with other approaches that utilize zinc-based molecules for their ability to sort human α-cells. While DA-ZP1 generated three distinct clusters of cells with low, intermediate, or bright fluorescence, ZIGIR-stained cells and NPG-stained cells formed a single bright cluster with no distinct intermediate population to separate α-cells from β-cells easily (Figure 1g). These data show that DA-ZP1 is unique in its ability to label α-cells without the aid of an antibody-based approach making it superior to other zinc-based molecules.
 
-## α-Pseudoislets can be maintained in culture without losing their viability
+### α-Pseudoislets can be maintained in culture without losing their viability
 
 Purified pancreatic α-cells were maintained in culture for the assessment of viability post-sorting (Figure 2a). Both the sorted α-cells and the unsorted islet cells formed islet-like clusters shortly after seeding in round-bottom non-treated plates (Figure 2b and c). We refer to sorted α-cells (DA-ZP1 intermediate cells) as α-pseudoislets on day 5 and 10 post-sorting, since they consisted of highly purified GCG+ cells and formed islet-like cell clusters. Similarly, the unsorted islet cells are referred to unsorted pseudoislets on day 5 and 10 post-sorting since they formed islet-like cell clusters. The size of the clusters was proportional to the number of cells in each well. Interestingly, α-pseudoislets tended to form tighter clusters shortly after plating compared to unsorted pseudoislets (Figure 2—figure supplement 1). Cell viability was determined by measuring intracellular ATP levels on day 5 and day 10 post-sorting. Culturing cells for up to 10 days did not alter viability of α-pseudoislets and unsorted pseudoislets indicating that these cells can be maintained in culture without significant cell loss. In contrast, native islets started to die after day 5 possibly due to necrosis in the core of the islets caused by hypoxia (Giuliani et al., 2005; Komatsu et al., 2017; Figure 2d). We further validated that α-pseudoislets consisted of a highly pure population of α-cells with ~95% GCG+ cells on days 5 and 10 (Figure 2e and f). To assess α-cell death, apoptotic index was measured by quantification of the percentage of TUNEL+GCG+ cells. Apoptosis index remained stable over the duration of the culture in both α-pseudoislets and in unsorted pseudoislets indicating that α-cells survived even after they form pseudoislets (Figure 2g and h). However, the percentage of apoptotic α-cells in native islets tend to increase on day 10 compared to day 5 which could be due to hypoxia (Komatsu et al., 2017). Notably, we observed proliferating α-cells in α-pseudoislets, unsorted pseudoislets, and native islets on both days 5 and 10 (Figure 2i). Percentage of Ki67+GCG+ cells was similar in each group on day 5 (α-pseudoislets; 0.038%±0.008, unsorted pseudoislets; 0.049%±0.007, native islets; 0.031%±0.004) and did not alter significantly with time spent in culture indicating that α-cells maintained their proliferation potential in culture (Figure 2j). The relevance of this interesting observation requires further investigation.
 
-## α-Pseudoislets showed glucose-responsive glucagon release
+![Figure 2.](https://cdn.elifesciences.org/articles/85056/elife-85056-fig2-v3.jpg)
+
+**Figure 2.:** (a) The single islet cells were seeded in round-bottom wells (1k cells per well) after sorting to allow re-aggregation. (b, c) Bright-field images of intermediate (sorted α-cells) (b) and unsorted pseudoislets (c) post-sorting. 1k (top panel) or 2k (bottom panel) single cells were seeded per well. Scale bar, 100 μm. See also Figure 2—figure supplement 1. (d) Cell viability was quantified by luminescence reflecting intracellular ATP levels on days 5 and 10 following fluorescence activated cell sorting (FACS). Fold-change relative to blank control. n=7–9 replicates using islet cells from two donors. (e) Representative immunostaining images of α-pseudoislets, unsorted pseudoislets, and native islets on days 5 and day 10 showing INS (red), GCG (green). Nuclei stained with DAPI are blue. For top and bottom images, scale bar, 100 μm. (f) Percentage of INS+, GCG+, and other (INS-GCG-) islet cells. n=3 donors. (g) Representative immunostaining images of α-pseudoislets, unsorted pseudoislets, and native islets on day 5 and day 10 showing GCG (red), TUNEL (green). Nuclei stained with DAPI are blue. Scale bar, 100 μm. Boxes show apoptotic α-cells. (h) Percentage of TUNEL+GCG+ cells. n=3 donors. (i) Representative immunostaining images of α-pseudoislets, unsorted pseudoislets, and native islets on day 5 and day 10 showing GCG (red), Ki67 (green). Nuclei stained with DAPI are blue. Scale bar, 50 μm. Boxes show proliferating α-cells. (j) Percentage of Ki67+GCG+ cells. n=3 donors. Data are presented as mean values ± s.e.m (b–j). n=3 donors. Two-way ANOVA followed by Sidak’s multiple comparison test (d, h, j).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/85056/elife-85056-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Bright-field images of α-pseudoislets (a) and unsorted pseudoislets (b) 5 days post-sorting. 1k (top panel) or 2k (bottom panel) single cells were seeded per well. Scale bar, 100 μm. n=3 biological replicates using islet cells from a single donor (a, b).
+
+### α-Pseudoislets showed glucose-responsive glucagon release
 
 Next, to investigate functional integrity, α-pseudoislets, unsorted pseudoislets, and native islets were each independently challenged with either low (3.3 mM) or high (16.7 mM) glucose after preincubation in 16.7 mM glucose (Figure 3a). Glucagon release significantly decreased in response to high glucose treatment in each group (Figure 3b), while the fold increase between low (3.3 mM) or high (16.7 mM) glucose were comparable among the groups (Figure 3c). Unsorted pseudoislets displayed higher basal secretion of glucagon compared to native islets which is consistent with the previous observation (Reissaus and Piston, 2017). α-Pseudoislets showed higher glucagon content compared to unsorted pseudoislets (Figure 3d), indicating high purity of sorted glucagon positive cells. These results indicate that α-pseudoislets are similar to unsorted pseudoislets in their capacity for glucose-responsive glucagon secretion.
 
@@ -50,15 +66,23 @@ Next, to investigate functional integrity, α-pseudoislets, unsorted pseudoislet
 
 **Figure 3.:** (a) α-Pseudoislets, unsorted pseudoislets, or native islets were preincubated in Krebs-Ringer bicarbonate (KRB) buffer with 16.7 mM glucose followed by the incubation in KRB buffer with 3.3 mM glucose and 16.7 mM glucose on day 5 post-sorting. (b) Glucagon secretion in response to glucose challenge (3.3 mM vs 16.7 mM). One-tailed Student’s t-test. (c) Ratio of glucagon released by each groups of cells at 16.7 mM glucose versus that at 3.3 mM glucose. (d) Glucagon content measured in each well containing ~8000 cells (eight α-pseudoislets, eight unsorted pseudoislets, and eight native islets). Data are presented as mean values ± s.e.m. (b–d). n=5 replicates using islet cells from two donors (b–d). One-way ANOVA corrected for Tukey applied to (c, d).
 
-## α-Pseudoislets maintain α-cell identity in culture
+### α-Pseudoislets maintain α-cell identity in culture
 
 To explore whether α-pseudoislets maintain α-cell identity by preserving genes enriched in α-cells, we compared the RNA-sequencing (RNA-seq) data from α-pseudoislets, unsorted pseudoislets, and native islets on days 0, 5, 10. We first used a publicly available single-cell RNA-seq (scRNA-seq) database performed on cadaveric human islets (GSE84133) (Baron et al., 2016) to identify genes that are differentially expressed between cadaveric islet α-cells and β-cells (α-cell enriched and β-cell enriched genes). Analysis of scRNA-seq data revealed 75 α-cell enriched genes and 68 β-cell enriched genes in cadaveric islet α-cells and β-cells, respectively (false discovery rate [FDR]<0.1, fold change [FC]>1.5, Supplementary file 1). Expression analysis of α-cell enriched and β-cell enriched genes in α-pseudoislets showed that 20 (27%) of the 75 α-cell enriched genes including GCG, TTR, IRX2 were upregulated and 24 (35%) of the 68 β-cell enriched genes including INS, IAPP, MAFA, PDX1, NKX6-1, G6PC2 were downregulated in α-pseudoislets compared to unsorted pseudoislets or native islets on day 0 (FDR < 0.1; FC > 2 or FC < –2, Supplementary file 2), which confirms the enrichment of α-cells in α-pseudoislets (Figure 4a, Figure 4—figure supplement 1). Concurrently, 61 (~81%) of the 75 α-cell enriched genes did not alter in α-pseudoislets on day 5 and day 10 compared to day 0 (FDR < 0.1; FC < –2 and FC > 2, Supplementary file 3, Figure 4b), indicating the majority of the α-cell enriched genes including GCG, ARX, IRX2, and TTR were preserved in culture. Similarly, 53 (71%) of the 75 α-cell enriched genes and 49 (72%) of the 68 β-cell enriched genes did not alter in unsorted pseudoislets on day 5 compared to day 0. However, these genes differentially expressed in unsorted pseudoislets on day 5 compared to day 0 were unchanged on day 10 compared to day 0. This might indicate that existence of other islet cells and paracrine interactions in the unsorted pseudoislets were important for maintenance of α-cell or β-cell identity (Cigliola et al., 2018; Figure 4b, Supplementary file 3). On the other hand, native islets did not show any changes in expression levels of α-cell enriched or β-cell enriched genes on days 5 and 10 compared to day 0 indicated that maintenance of islet structure was likely necessary to maintain cell identity. In sum, comparison of α-pseudoislets, unsorted pseudoislets, and native islets on days 0, 5, 10 showed that co-existence of other cells and intact islet architecture were desirable but not indispensable for maintenance of α-cell identity in vitro.
 
-## Extracellular matrix organization genes are downregulated in dissociated and re-aggregated islet cells
+![Figure 4.](https://cdn.elifesciences.org/articles/85056/elife-85056-fig4-v3.jpg)
+
+**Figure 4.:** (a) Heatmap showing expression levels of α-cell enriched and β-cell enriched genes in α-pseudoislets, unsorted pseudoislets, and native islets on days 0, 5, and 10. Asterisks show genes associated with α-cell identity and function (GCG, ARX, IRX2, TTR). (b) Pie charts showing percentage of α-cell enriched (top panel) and β-cell enriched (bottom panel) genes that alter in α-pseudoislets, unsorted pseudoislets, and native islets on day 5 or day 10 compared to day 0. See also Figure 4—figure supplement 1. (c) Transcriptome of unsorted pseudoislets was compared with native islets on days 0, 5, 10. Venn diagram shows number of differentially expressed genes (DEGs) between unsorted pseudoislets and native islets on different days. (d–f) Volcano plots showing genes downregulated (blue) or upregulated (orange) significantly (FC < –2 or FC > 2, respectively, FDR < 0.1) on day 0 (d), day 5 (e), and day 10 (f). Gray shows non-significant genes with FDR > 0.1 and –2 < FC < 2. (g) Top 10 pathways downregulated in unsorted pseudoislets on day 5 and day 10 compared to native islets. n=4 donors; α-pseudoislets d0, d5, d10, unsorted pseudoislets d5, native islets d5, d10, and n=3 donors; unsorted pseudoislets d0, d10, native islets d0 (a–g).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/85056/elife-85056-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Pie charts show percentage of genes altered on day 5 or 10 compared to day 0 (FDR < 0.1; FC > 2 upregulated or FC < –2 downregulated). n=4; α-pseudoislets d0, d5, d10, unsorted pseudoislets d5, native islets d5, d10, and n=3; unsorted pseudoislets d0, d10, native islets d0.
+
+### Extracellular matrix organization genes are downregulated in dissociated and re-aggregated islet cells
 
 To investigate the potential transcriptional changes that occur secondary to cell-to-cell interactions, we compared the transcriptome of native islets with that of unsorted pseudoislets on days 0, 5, and 10 of culture (Figure 4c). We filtered differentially expressed genes (DEGs) between unsorted pseudoislets and native islets on days 0, 5, and 10 (FDR < 0.1; FC > 2 or FC < –2; Supplementary file 4). Differential expression analysis yielded 4, 299, and 137 DEGs on days 0, 5, and 10, respectively (Figure 4c). Not surprisingly, the gene expression profile of unsorted pseudoislets was almost identical to native islets on day 0 (Figure 4d). For example, we detected differences in expression levels between the groups for only four genes, namely, CCN2 (cellular communication network factor 2), DUSP5 (dual specificity phosphatase 5), NR4A1 (nuclear receptor subfamily 4 group A member 1), NR4A2 (nuclear receptor subfamily 4 group A member 2) on day 0 (Figure 4d). All four genes were significantly upregulated in unsorted pseudoislets which indicates that dissociation of native islets into single cells triggered acute changes in their expression. We detected changes in expression levels of 299 genes on day 5, among which 297 were downregulated and 2 (GHRL, AC10875.5) were upregulated in unsorted pseudoislets compared to native islets (Figure 4e). On day 10, all the 137 genes that were altered significantly in unsorted pseudoislets compared to native islets were downregulated (Figure 4f). Among these, 127 genes were consistently downregulated on day 5 as well as day 10. Pathway analysis of commonly downregulated genes on days 5 and 10 in the unsorted pseudoislets compared to native islets showed changes in pathways such as extracellular matrix (ECM) organization, integrin cell surface interactions, degradation of the ECM, complement system, and focal adhesion supporting the notion that the differences were likely due to physical separation of islets into single cells (Figure 4g, Supplementary file 5). Interestingly, we observed consistent downregulation of genes involved in the Hippo signaling pathway such as TEAD2, YAP1, WWTR1, TGFB2, CCN2 on days 5 and 10. Expression of CCN2 showed a dynamic change with upregulation on day 0 and downregulation on days 5 and 10 in unsorted pseudoislets compared to native islets.
 
-## Time-dependent changes in the α-pseudoislet transcriptome
+### Time-dependent changes in the α-pseudoislet transcriptome
 
 Next, to investigate whether the gene expression pattern of α-cells alters after separation from neighboring non-α islet cells, we explored genes and pathways that are progressively up- or downregulated in α-pseudoislets, unsorted pseudoislets, or native islets in culture over the period from day 0 to day 5 and day 5 to day 10. We identified 413 genes in α-pseudoislets, and 341 genes in unsorted pseudoislets, in contrast to only 11 genes in native islets that were significantly altered during this period (Figure 5a, Supplementary file 6). The fact that a majority of the genes (597 out of 608 genes) that were altered during this period in α-pseudoislets and unsorted pseudoislets but not in native islets likely reflects a transcriptional response of the cells following cell dissociation and re-aggregation. Pathway analyses of these 597 genes that were altered in α-pseudoislets or in unsorted pseudoislets but not in native islets revealed networks such as ECM organization, integrin cell surface interaction, focal adhesion, and collagen formation (Figure 5b, Supplementary file 7).
 
@@ -84,42 +108,339 @@ In conclusion, we report the use of a fluorescein-based sensor, to demonstrate i
 
 ## Materials and methods
 
-## Primary human cells
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-C-peptide (Rat monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>Cat# GN-ID4, RRID: AB_2255626</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ki67 (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# BD550609, RRID: AB_393778</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Insulin (Guinea Pig polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab7842, RRID: AB_306130</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Glucagon (Mouse monoclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# G2654, RRID: AB_259852</td>
+      <td>IF (1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Glucagon (Rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab92517, RRID: AB_10561971</td>
+      <td>IF (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-DLK1 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat# ab21682, RRID: AB_731965</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GSN (Rabbit polyclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# HPA054026, RRID: AB_2682347</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SMIM24 (Rabbit polyclonal)</td>
+      <td>MilliporeSigma</td>
+      <td>Cat# HPA045046, RRID: AB_10964444</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Guinea Pig AF594 (Donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 706-586-148, RRID: AB_2340475</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rat AF488 (Donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 712-546-153, RRID: AB_2340686</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse AF594 (Donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 715-586-150, RRID: AB_2340857</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mouse AF488 (Donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 715-545-150, RRID: AB_2340846</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit AF594 (Donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 711-586-152, RRID: AB_2340622</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rabbit AF488 (Donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>Cat# 711-545-152, RRID: AB_2313584</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Primary human pancreatic islets</td>
+      <td>Integrated Islet Distribution Program (IIDP), Prodo Laboratories Inc, ADI Islet Core</td>
+      <td>http://iidp.coh.org; RRID: SCR_014387, https://prodolabs.com/</td>
+      <td>Freshly isolated</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>DA-ZP1</td>
+      <td>Laboratory of Amit Choudhary</td>
+      <td>Broad Institute of MIT and Harvard</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>ZIGIR</td>
+      <td>Laboratory of Wen-hong Li</td>
+      <td>University of Texas, Dallas</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>NPG</td>
+      <td>Thermo</td>
+      <td>N7991</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DAPI, dilactate</td>
+      <td>Sigma</td>
+      <td>D9564</td>
+      <td>IF (1:6600)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Miami Media #1A</td>
+      <td>Cellgro</td>
+      <td>98-021-CV</td>
+      <td>Islet cell culture</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TrypLE</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>12604-013</td>
+      <td>Islet cell dissociation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FBS</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>10437028</td>
+      <td>Islet cell dissociation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DPBS</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>14190250</td>
+      <td>Islet cell dissociation</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>D-Glucose</td>
+      <td>Sigma-Aldrich</td>
+      <td>G8769</td>
+      <td>Glucagon secretion assay</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FFA-BSA</td>
+      <td>Sigma-Aldrich</td>
+      <td>3117057001</td>
+      <td>Glucagon secretion assay</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMSO</td>
+      <td>Sigma-Aldrich</td>
+      <td>D2650-100</td>
+      <td>FACS</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Penicillin-streptomycin</td>
+      <td>Corning</td>
+      <td>30-002-Cl</td>
+      <td>Islet cell culture</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>4% PFA</td>
+      <td>Wako</td>
+      <td>163-20145</td>
+      <td>Embedding islets in agar</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Antibody diluent</td>
+      <td>Abcam</td>
+      <td>Ab64211</td>
+      <td>IF</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Low melting agarose</td>
+      <td>Scientific Laboratory Supplies</td>
+      <td>NAT1030</td>
+      <td>Embedding islets in agar</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TRIzol reagent</td>
+      <td>Invitrogen</td>
+      <td>15596026</td>
+      <td>RNA isolation</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Glucagon ELISA kit</td>
+      <td>Mercodia</td>
+      <td>10-1271-01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MycoAlert Mycoplasma Test Kit</td>
+      <td>Lonza</td>
+      <td>LT07-318</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellTiter-Glo Luminescent Cell Viability Assay Kit</td>
+      <td>Promega</td>
+      <td>G7570</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ApopTag Peroxidase In Situ Apoptosis Detection Kit</td>
+      <td>MilliporeSigma</td>
+      <td>S7100: RRID:AB_2661855</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QIAGEN RNeasy micro kit</td>
+      <td>QIAGEN</td>
+      <td>74004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism v.7.0</td>
+      <td>GraphPad Software</td>
+      <td>http://www.graphpad.com; RRID: SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Flowjo-v10</td>
+      <td>FlowJo Software</td>
+      <td>http://www.flowjo.com; RRID: SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ Software</td>
+      <td>https://imagej.net: RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R version 4.1.0</td>
+      <td>R Software</td>
+      <td>https://www.r-project.org/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Primary human cells
 
 Human islets were obtained from the Integrated Islet Distribution Program (IIDP) and Prodo Labs. Upon receipt, islets were centrifuged at 200 × g for 1 min and resuspended in fresh Miami medium no. 1A (Cellgro). Cells were transferred to Petri dishes and cultured in 5% CO2 at 37°C overnight before performing the FACS experiments. The donor demographic information is summarized in Supplementary file 9. All studies and protocols used were approved by the Joslin Diabetes Center’s Committee on Human Studies (CHS no. 5-05).
 
-## Flow cytometry and islet cell culture
+### Flow cytometry and islet cell culture
 
 Twenty-four hours after receiving the human islets (day 0), 1000 islets were handpicked and transferred to 10 round-bottom non-treated 96-well plates (Corning #3788) (1 islet/well in 200 μl Miami medium) and kept in culture. The rest of the human islets, approximately 15,000 IEQ, were collected in a 15 ml tube, washed with DPBS, and resuspended in 3 ml of TrypLE for single-cell dispersion (Lee et al., 2020). The islets were dispersed into a single-cell suspension in TrypLE for 12–15 min at 37°C. Dissociated islet cells were washed with DMEM medium containing 10% FBS and resuspended in the Miami medium containing DA-ZP1 (80 nM) for 10 min at 37°C. The cells were then filtered through a 30 μm filter to remove any aggregates before FACS sorting. Approximately 1/10th of the DA-ZP1-treated cell suspension were labeled as ‘unsorted islet cells’ and set aside while the rest of the DA-ZP1-treated cells was sorted by FACSAria cell sorter (BD Biosciences, Joslin Flow Cytometry Core). After FACS, both sorted and unsorted islet cells were centrifuged at 250 × g for 5 min, resuspended in Miami media, counted using 0.4% trypan blue stain by cell counter (Nexcelom Bioscience) to determine number of live cells, and immediately seeded in round-bottom non-treated 96-well plates (Corning #3788) (1000 cells/200 μL/well or 2000 cells/200 μL/well). The day of sorting is considered ‘day 0’. Half of the medium was refreshed every other day. Analysis of flow cytometry data was completed using FlowJo 10.7.1 (FlowJo LLC, Ashland, OR, USA). The gating strategy is shown in Figure 1—figure supplement 1. DA-ZP1 is synthesized by Amit Choudhary’s lab. Compound structure and synthesis of DA-ZP1 are provided in Lee et al., 2020; Kahraman et al., 2021. One mM of ZIGIR (kindly provided by Dr. Wen-hong Li; University of Texas, Dallas, TX, USA) was dissolved in DMSO and used at a final concentration of 1 μM. One mg Newport Green DCF (Thermo Fisher, N7991) was solubilized in DMSO and used at a final concentration of 1 μM. Cells treated with DA-ZP1 (ex/em 495/500–650), ZIGIR (ex/em 571/543), and NPG (ex/em 485/530) were sorted by the FACSAria cell sorter.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 To profile endocrine cell types after sorting, both sorted and unsorted islet cells were seeded in Matrigel-coated flat-bottom 96-well plates (1000 cells/200 μL/well) immediately after FACS. Next day (day 1), the cells were fixed in 4% PFA (Wako) for 15 min at room temperature and washed with PBS. Cells were then permeabilized and blocked with PBS containing 0.25% Triton-X and 5% donkey serum (Sigma) for 1 hr at room temperature. Primary antibodies C-peptide (DSHB, 1:200) and glucagon (MilliporeSigma, G2654, 1:10,000) diluted in antibody dilution buffer (Abcam) were added to the wells for overnight at 4°C. Cells were washed three times with PBS and the secondary antibody, diluted in PBS, was added to the wells for 1 hr at room temperature. Cells were washed three times with PBS and DAPI (Sigma) was added to the wells. Images were captured using an Olympus IX51 Inverted Microscope. For estimation of cell composition, ~4000 cells were counted per donor, and data were expressed as percentage of hormone+ cells.
 
-## Cell viability assay
+### Cell viability assay
 
 The assay was performed using a Cell Titer Glo luminescence cell viability kit according to the manufacturer’s instructions on days 5 and 10 post-sorting. Approximately 8000 cells (eight α-pseudoislets, eight unsorted pseudoislets, and eight native islets) were added to the wells of opaque-walled 96-well plates and 100 μl of Cell Titer Glo reagent was added to the cells. The content was mixed for 2 min on an orbital shaker and incubated for 10 min at room temperature. Luminescence was recorded using a Promega GloMax luminometer with an integration time of 0.3 s per well.
 
-## Islet immunohistochemistry and quantification
+### Islet immunohistochemistry and quantification
 
 Sorted or unsorted islet cells, and native islets seeded in round-bottom non-treated 96-well plates were collected in a 15 ml tube (~100 wells/tube) on days 0, 5, or 10 post-sorting, washed with PBS, and fixed in 4% PFA for 15 min at room temperature. The cells were washed, embedded in agarose and paraffin, sectioned and used for immunostaining. Sections were stained using antibodies against Ki67 (BD550609, 1:100), insulin (Abcam, ab7842, 1:400), glucagon (MilliporeSigma, G2654, 1:10,000 or Abcam, ab92517, 1:5000) DLK1 (Abcam, ab21682, 1:1000), GSN (Sigma, HPA054026, 1:50), SMIM24 (Sigma, HPA045046, 1:50), and TUNEL (ApopTag, Chemicon, S7100) and counterstained with DAPI (MilliporeSigma, D9564, 1:6600). For estimation of cell composition, ~4000 cells were counted per donor and data were expressed as percentage of hormone+ cells. For estimation of cell proliferation, ~3000 GCG+ cells were counted per donor and data were expressed as percentage of Ki67+GCG+ cells. To assess cell death, ~1000 GCG+ cells were counted per donor and apoptotic index was measured by quantification of the percentage of TUNEL+GCG+ cells. Expression levels of DLK1, GSN, and SMIM24 in islet sections were measured using ImageJ. Fluorescent images were captured using a Zeiss Axio Imager A2 upright fluorescence microscope using the same exposure time. The mean fluorescence intensity (MFI) was quantified in the selected islet area and the mean fluorescence of background is subtracted from the MFI to find corrected total cell fluorescence. Approximately 50 islets were analyzed per islet donor, and data were expressed as relative expression levels compared to day 0.
 
-## Secretion assay
+### Secretion assay
 
 On day 5 post-sorting, eight α-pseudoislets, eight unsorted pseudoislets, and eight native islets were transferred to wells of a U-bottom non-treated 96-well plate (Corning #3788), and preincubated in Krebs-Ringer bicarbonate (KRB) buffer containing 135 mmol/L NaCl, 3.6 mmol/L KCl, 5 mmol/L NaHCO3, 0.5 mmol/L NaH2PO4, 0.5 mmol/L MgCl2, 1.5 mmol/L CaCl2, 10 mmol/L HEPES, pH 7.4, 0.1% FFA-BSA with 16.7 mM glucose for an hour. Static glucose challenge was then initiated by adding KRB buffer containing 3.3 mM or 16.7 mM glucose for 1 hr. Aliquots of supernatants were removed for later analysis and ice-cold acid ethanol was added to extract the glucagon content from the cells. Glucagon release and content were measured by the human glucagon ELISA (Mercodia) according to the manufacturer’s instructions.
 
-## RNA isolation, sequencing, and data analysis
+### RNA isolation, sequencing, and data analysis
 
 Approximately 100 α-pseudoislets, 100 unsorted pseudoislets, and 100 native islets were lysed in TRIzol reagent (Invitrogen) according to the manufacturer’s instructions and the resultant aqueous phase was mixed (1:1) with 70% RNA-free ethanol. The mixture was added to QIAGEN RNeasy micro kit columns and total RNA was extracted following the manufacturer’s protocols. Genomic DNA was digested using RNase-Free DNase kit (QIAGEN). The RNA quality and quantity were analyzed using a NanoDrop 1000 Spectrophotometer (Thermo Fisher) and library was constructed using Takara Pico-Input Strand-Specific Total RNA-seq for Illumina (Takara). RNA-seq was performed on an Illumina NovaSeq 6000 according to the manufacturer’s instructions. Approximately 50 million paired-end 100 bp reads were generated for each sample. We aligned the adapter-trimmed reads to the human transcriptome using Kallisto, converted transcript counts to gene counts using tximport, normalized the counts by trimmed mean of M-values (Robinson and Oshlack, 2010), and transformed normalized counts into log2 counts per million with Voom (Law et al., 2014). We applied ComBat-Seq (Zhang et al., 2020) to remove the effect of known batches, and then assessed genes’ association with time and differential expression between groups using the linear regression modeling package limma (Ritchie et al., 2015). We corrected for testing many genes with the FDR. R version 4.1.0 was used. Pathway analysis was done using the ConsensusPathDB interaction database (http://cpdb.molgen.mpg.de/CPDB).
 
-## scRNA-seq analysis of GSE84133
+### scRNA-seq analysis of GSE84133
 
 We downloaded this previously published dataset (Baron et al., 2016) from the Gene Expression Omnibus. We filtered out cells that have less than 2000 total gene counts and 1000 detected genes, and removed genes that have average counts of 0.01 or less. Similar cells were clustered together using a graph-based clustering algorithm and the data was then normalized (Lun et al., 2016). Moderated t-tests from the linear regression modeling R package limma (Ritchie et al., 2015) were performed to detect genes that are differentially expressed between β- and α-cells, with subject and cellular detection rate (i.e. the fraction of detected genes) as covariates.
 
-## Statistical analysis
+### Statistical analysis
 
 All statistics were performed using GraphPad Prism software version 7.0a (GraphPad Software Inc, La Jolla, CA, USA). Specific statistical tests for each experiment are described in the figure legends.
 
-## Study approval
+### Study approval
 
 All human studies and protocols used were approved by the Joslin Diabetes Center Committee on Human Studies (CHS, 5-05). Formal consent from human islet donors was not required because samples were discarded islets from de-identified humans.

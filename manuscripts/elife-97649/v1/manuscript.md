@@ -13,8 +13,8 @@
 
 ### Affiliations
 
-1. https://ror.org/03trvqr13 Victor Chang Cardiac Research Institute Sydney Australia
-2. https://ror.org/03r8z3t63 School of Clinical Medicine, Faculty of Medicine and Health, University of New South Wales Sydney Australia
+1. Victor Chang Cardiac Research Institute Sydney Australia ([ROR:03trvqr13](https://ror.org/03trvqr13))
+2. School of Clinical Medicine, Faculty of Medicine and Health, University of New South Wales Sydney Australia ([ROR:03r8z3t63](https://ror.org/03r8z3t63))
 
 † Corresponding author
 
@@ -28,6 +28,22 @@ Congenital malformations with substantial medical consequences are a major healt
 
 Disruption of the nicotinamide adenine dinucleotide (NAD) de novo Synthesis Pathway, by which L-tryptophan is converted to NAD (Figure 1A), causes congenital malformations of varying types and severity. It affects organs and structures such as heart, kidney, vertebrae and others, and is termed Congenital NAD Deficiency Disorder (CNDD; Dunwoodie et al., 2023). NAD, referring to its oxidised and reduced form (NAD+ and NADH), is both a critical redox cofactor present in all living cells and an essential co-enzyme involved in a diverse range of cellular functions. Besides NAD de novo synthesis from L-tryptophan, mammals also generate NAD from vitamin B3, a collective term for the vitamers nicotinic acid (NA), nicotinamide (NAM), nicotinamide mononucleotide (NMN), and nicotinamide riboside (NR), via the Preiss-Handler and NAD Salvage Pathways (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/97649/elife-97649-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic overview of the NAD synthesis pathways. The NAD de novo Synthesis Pathway (blue box) converts the essential amino acid L-tryptophan to NAD and is predominantly performed by the liver (Liu et al., 2018). The Preiss-Handler Pathway (purple box) converts nicotinic acid to NAD in the kidney. The Salvage Pathway (orange box), performed in all cells, salvages the product of NAD consuming enzymes, nicotinamide (NAM), back to NAD. When NAD levels are in excess, NAM is converted to 1-methylnicotinamide (1MNA), N-methyl-2-pyridone-5-carboxamide (2PY) and N-methyl-4-pyridone-5-carboxamide (4PY) and excreted. Enzymes are in red, metabolites in black. (B) Re-analysis of published scRNA-seq data (Mu et al., 2020) via DotPlot showing average log normalised expression (heatmap colour) and proportion of cells (circle size) of requisite NAD de novo Synthesis Pathway genes in the hepatocyte lineage between embryonic day 9.5 (E9.5) and E15.5. (C) HAAO enzyme activity in embryonic liver from E12.5 to E17.5. (D–H) Concentration of core NAD de novo Synthesis Pathway metabolites in the embryonic liver (E14.5) and yolk sac (E10.5–14.5). Metabolite concentrations are normalised to wet weight measured at dissection. (I,J) HAAO enzyme activity in placenta (I) and visceral yolk sac (J) samples collected between E11.5 to E17.5. Haao+/+ (black circle), Haao+/- (blue square) and Haao-/- (red triangle). Bars indicate the mean ± standard deviation. See Supplementary file 1 for HAAO activity numerical values and Supplementary file 2 and Supplementary file 3 for metabolite concentration values, including those of additional NAD-related metabolites. 3HK = 3-hydroxykynurenine, 3HAA = 3- hydroxyanthranilic acid, NAMN = nicotinic acid mononucleotide, KA = kynurenic acid, AA = anthranilic acid, XA = xanthurenic acid, QA = quinolinic acid, NaMN = nicotinic acid mononucleotide, NaAD = nicotinic acid adenine dinucleotide, NADP = nicotinamide adenine dinucleotide phosphate, NMN = nicotinamide mononucleotide, <LOD = below the limit of detection.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97649/elife-97649-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Data previously generated in Mu et al., 2020.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/97649/elife-97649-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) HAAO enzyme activity in whole embryo, placenta, and yolk sac at E11.5. (B) HAAO enzyme activity in embryo with its liver removed, isolated embryonic liver, placenta, and yolk sac at E14.5. The mice to generate dataset (B) were maintained on AIN93G diet (Specialty Feeds, Glen Forrest, Australia) which, while different to the Breeder diet used in the other experiments, provides sufficient NAD precursors for normal development (Cuny et al., 2023). Statistical significance was determined by one-way ANOVA with Tukey’s multiple comparisons test with * p<0.05; ** p<0.01; *** p<0.001; **** p<0.0001. Bars indicate the mean ± standard deviation.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/97649/elife-97649-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** DotPlot showing proportion of cells (circle size) expressing requisite pathway genes in different placental cell populations at E9.5 (black), E10.5 (yellow), E12.5 (blue) and E14.5 (orange) using scRNA-seq generated by Marsh and Blelloch, 2020. Placental populations were clustered by lineage: junctional zone trophoblast (yellow), labyrinth layer trophoblast (orange), endothelium (pink), mesenchyme (purple), immune/blood cells (indigo), and maternal decidual stroma (brown).
+
 In all CNDD cases identified to date, affected patients had biallelic pathogenic variants in either KYNU (kynureninase), HAAO (3-hydroxyanthranilic acid 3,4-dioxygenase) or NADSYN1 (NAD synthetase 1), all essential genes of NAD de novo synthesis (Dunwoodie et al., 2023; Shi et al., 2017; Szot et al., 2020; Szot et al., 2024). Kynu, Haao, or Nadsyn1 homozygous-null mouse models in combination with diets low in vitamin B3 recapitulated the human phenotypes (Shi et al., 2017; Szot et al., 2024). When maternal vitamin B3 provision was restricted during pregnancy, it induced CNDD-like defects specifically in homozygous-null mouse embryos, and these embryos had no malformations when the mother was provided sufficient dietary vitamin B3 to bypass their genetic block, as here NAD is synthesised via the Preiss-Handler Pathway or NAD Salvage Pathway (Figure 1A; Shi et al., 2017). Conversely, embryos of wild-type mothers given diets low in L-tryptophan and depleted in vitamin B3 exhibit NAD deficiency and CNDD-like malformations, with phenotypic severity exacerbated by gene-environment interactions via Haao or Nadsyn1 heterozygosity (Cuny et al., 2020; Szot et al., 2024).
 
 These CNDD mouse models suggest that NAD de novo synthesis is active in the conceptus and is required for normal organ development unless sufficient vitamin B3 is supplied by the mother. In adult mice, NAD de novo synthesis occurs in the liver and to a very minor extent in the kidney (Liu et al., 2018; Wang et al., 2023). But mouse embryos are susceptible to CNDD between embryonic day (E) 7.5 and E12.5, before the embryo has developed a functional liver. Therefore, NAD de novo synthesis is likely active in another tissue during this time window of susceptibility.
@@ -36,7 +52,7 @@ The major components of the mammalian conceptus are the embryo itself and two ex
 
 ## Results
 
-## NAD de novo synthesis in the embryonic liver is active after organogenesis in mice
+### NAD de novo synthesis in the embryonic liver is active after organogenesis in mice
 
 NAD is synthesised de novo from L-tryptophan, predominantly in the liver. In addition, all cells salvage NAD from NAM in the circulation, with circulatory NAM levels dependent on NAD de novo synthesis in the liver (Liu et al., 2018). We have shown in mice that the conceptus is able to synthesise NAD de novo prior to E12.5 Shi et al., 2017; however, it is unclear if or when the embryonic liver is capable of NAD de novo synthesis. In mice, liver primordial cells are present around E9.5 to E10.5, hepatocytes are present from E11.5, and enzymes of the pathway are detected from E13.5 (Burke et al., 2018; Mu et al., 2020; Notenboom et al., 1997; Yang et al., 2017).
 
@@ -46,7 +62,7 @@ To validate that the pathway is functional at E14.5 in the liver, we quantified 
 
 Together, these data confirm that NAD de novo Synthesis Pathway gene expression occurs in the developing liver from E12.5 onwards and the pathway is functional by E14.5, which is in line with expression of genes encoding other metabolic enzymes (Mu et al., 2020). However, as CNDD malformations occur in Haao-/- mouse embryos when NAD is deficient between E7.5 and E12.5 (Shi et al., 2017), NAD de novo synthesis must occur elsewhere in the earlier-stage conceptus.
 
-## NAD de novo synthesis occurs during early organogenesis in the mouse yolk sac but not the placenta
+### NAD de novo synthesis occurs during early organogenesis in the mouse yolk sac but not the placenta
 
 In mammals, two likely candidate sites for extrahepatic NAD de novo synthesis are the chorioallantoic placenta and the yolk sac. First, we re-analysed published mouse E9.5–14.5 placenta scRNAseq data (Marsh and Blelloch, 2020) and found that NAD de novo Synthesis Pathway gene expression was scattered between the maternal decidual stroma (Tdo2, Ido1, Ido2) or various immune cell populations (Afmid, Kmo, Kynu, Haao, Qprt, Nadsyn1) but not in the conceptus-derived trophoblasts that constitute the bulk of placental tissue (Figure 1—figure supplement 3). Additionally, we showed that HAAO enzyme activity was absent in the mouse placenta between E11.5 and E17.5 (Figure 1I, Supplementary file 1). Combined, these data indicate that the murine placenta does not conduct NAD de novo synthesis.
 
@@ -60,19 +76,19 @@ We quantified NAD+ and 10 NAD-related metabolites in Haao+/+, Haao+/- and Haao-/
 
 These data, combined with the presence of HAAO activity and expression of all requisite pathway genes, confirmed that the yolk sac performs NAD de novo synthesis from at least E10.5 onwards and therefore is the site of NAD de novo Synthesis Pathway activity in the conceptus during organogenesis prior to the formation of a functional liver.
 
-## NAD deficiency between E7.5 and E10.5 induces CNDD-related congenital anomalies in mice
+### NAD deficiency between E7.5 and E10.5 induces CNDD-related congenital anomalies in mice
 
 Having confirmed that NAD de novo synthesis is performed in the yolk sac during early organogenesis, we next sought to understand how its activity is perturbed under conditions that cause CNDD. The data outlined above was generated using a diet rich in vitamin B3 which allows pregnant mice with a genetic block in the NAD de novo Synthesis Pathway to generate NAD via the Preiss-Handler and NAD Salvage Pathway and provide sufficient NAD precursors to their embryos for normal development. Due to higher metabolic rate and food intake per body weight in mice compared to humans (Bachmanov et al., 2002; Holliday et al., 1967), to induce CNDD in mice, pregnant females need to be given L-tryptophan and/or vitamin B3 restricted diets, thereby limiting their ability to provide NAD precursors to the embryos (Cuny et al., 2020; Shi et al., 2017; Szot et al., 2024). Given that NAD de novo synthesis is established in the yolk sac by E10.5, we placed Haao-/- mothers on a NAD precursor-restricted diet specifically between E7.5 and E10.5. During this time window, L-tryptophan and vitamin B3 were removed from the chow and 1000 mg/L L-tryptophan and 3.5 mg/L nicotinic acid were supplemented in the drinking water (hereon referred to as NW3.5) (Figure 3A). Unlike wild-type and Haao+/- mice, Haao-/- mice can only use the vitamin B3 but not L-tryptophan in the diet to synthesise NAD. Here, Haao-/- females were mated with Haao+/- males and generated embryos with Haao+/- and Haao-/- genotypes, of which only the former can use any L-tryptophan provided by the maternal circulation.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/97649/elife-97649-fig3-v1.jpg)
 
-**Figure 3.:** Haao-/- embryos by restricting maternal NAD precursor supply for three days.(A) Schematic overview of the dietary treatment to induce NAD deficiency and embryo malformations. Pregnant mice were provided Breeder diet, rich in L-tryptophan and vitamin B3, throughout gestation except for a three-day window between embryonic day 7.5 (E7.5) and E10.5 during which feed lacking any NAD-precursor and drinking water supplemented with 1 g/L L-tryptophan and either 15 mg/L (NW15) or 3.5 mg/L (NW3.5) nicotinic acid was given. Red arrows indicate tissue collection timepoints. (B) Weights of Haao+/- (square) or Haao-/- (triangle) embryos at E18.5 collected from mothers on NW3.5 diet. Weights represent wet weight measured at dissection. Statistical significance was determined by Student’s t-test with **** p<0.0001. Bars indicate the mean ± standard deviation. (C) Summary of the phenotypic outcomes of E18.5 embryos generated from the NW3.5 diet condition. Each bar represents a litter, with the graph on the left summarising data of entire litters and the other two separating the Haao+/- and Haao-/- embryos of each litter. Colours indicate the number of different congenital malformations observed in each embryo. Dead embryos (black) represented early resorptions and could not be genotyped.
+**Figure 3.:** (A) Schematic overview of the dietary treatment to induce NAD deficiency and embryo malformations. Pregnant mice were provided Breeder diet, rich in L-tryptophan and vitamin B3, throughout gestation except for a three-day window between embryonic day 7.5 (E7.5) and E10.5 during which feed lacking any NAD-precursor and drinking water supplemented with 1 g/L L-tryptophan and either 15 mg/L (NW15) or 3.5 mg/L (NW3.5) nicotinic acid was given. Red arrows indicate tissue collection timepoints. (B) Weights of Haao+/- (square) or Haao-/- (triangle) embryos at E18.5 collected from mothers on NW3.5 diet. Weights represent wet weight measured at dissection. Statistical significance was determined by Student’s t-test with **** p<0.0001. Bars indicate the mean ± standard deviation. (C) Summary of the phenotypic outcomes of E18.5 embryos generated from the NW3.5 diet condition. Each bar represents a litter, with the graph on the left summarising data of entire litters and the other two separating the Haao+/- and Haao-/- embryos of each litter. Colours indicate the number of different congenital malformations observed in each embryo. Dead embryos (black) represented early resorptions and could not be genotyped.
 
 Embryos from mothers on the NW3.5 diet were assessed for the presence of congenital anomalies at E18.5. Haao-/- embryos were significantly smaller than their Haao+/- littermates (Figure 3B). Furthermore, 86.7% of Haao-/- embryos were malformed, with 83.3% (25/30) of them presenting with multiple defects (Figure 3C, Supplementary file 4). We identified malformations in organs and tissues previously associated with CNDD (Cuny et al., 2020; Shi et al., 2017). Kidney defects (in 83.3% of Haao-/- embryos) included hypoplasia or agenesis, as well a cyst observed in one kidney. In addition, shortened tails (73.3%), various structural heart defects (27.7%), digit and limb anomalies (40%), and vertebrae and rib defects (63.3%) including rib underdevelopment, sternum defects, vertebral fusions, butterfly vertebrae, and hemivertebrae were found (Supplementary file 4). By contrast, the ability to perform NAD de novo synthesis prevented NAD deficiency in Haao+/- littermate embryos; the only defect was a solitary case of heart ventricular septum defect (Figure 3C, Supplementary file 4).
 
 These observations align with previous CNDD studies utilising Haao-/- mothers on a vitamin B3-restricted diet (Cuny et al., 2020; Shi et al., 2017). In addition, they show that restricting dietary precursor supply for three days only, between E7.5 and E10.5, is sufficient to cause CNDD malformation. This narrow window of susceptibility highlights the necessity of NAD de novo Synthesis Pathway activity in the yolk sac for normal development.
 
-## The yolk sac has reduced NAD availability under conditions that induce congenital malformations
+### The yolk sac has reduced NAD availability under conditions that induce congenital malformations
 
 Having established the importance of E10.5 as a key stage of NAD de novo synthesis, we next characterised how maternal dietary NAD precursor-restriction between E7.5 and E10.5 affected levels of NAD and related metabolites in the yolk sac at E10.5. We previously showed that supplementing 15 mg/L nicotinic acid in the drinking water is sufficient to support normal development of Haao-/- embryos (Shi et al., 2017). Therefore, yolk sac samples from the maternal NW15 dietary condition (Figure 3A) were collected as appropriate controls for comparison to NW3.5 samples.
 
@@ -82,11 +98,19 @@ Due to their small size, 2–3 yolk sacs were pooled per sample for NAD metaboli
 
 **Figure 4.:** (A–G) Concentration of NAD-related metabolites in E10.5 yolk sacs normalised to total protein content. (A) L-tryptophan (TRP), (B) 3-hydroxyanthranilic acid (3HAA), (C) quinolinic acid (QA), (D) nicotinic acid mononucleotide (NAMN), (E) nicotinic acid adenine dinucleotide (NAAD), (F) NAD+, (G) nicotinamide (NAM). (H) Wet weight of E10.5 embryos from the NW15 (purple) and NW3.5 (orange) diet conditions, measured at dissection. Bars indicate the mean ± standard deviation. The Haao genotype and diet are indicated below each graph. Statistical significance in (A–G) was calculated by one-way ANOVA with Tukey’s multiple comparisons test with ns = not significant, * p<0.05, ** p<0.01, and **** p<0.0001. Statistical significance in (H) was calculated by one-way ANOVA with the p value indicated above graph. <LOD = below the limit of detection. For numerical values, see Supplementary file 5.
 
-## The NAD metabolome of the yolk sac and embryo correlate during early organogenesis
+### The NAD metabolome of the yolk sac and embryo correlate during early organogenesis
 
 The yolk sac has a nutritional role in mammals as it uptakes and processes maternally derived macro- and micronutrients and transfers these to the embryo via their interconnected and expanding vasculature (Burton et al., 2016; Ornoy and Miller, 2023). In mice, histotrophic nutrition via the yolk sac is solely responsible for supporting the nutritional requirements of the developing embryo until the gradual transition to haemotrophic nutrition across the chorioallantoic placenta between E10 and E12 (Elmore et al., 2022). Therefore, we explored the effects of impaired NAD de novo synthesis of the yolk sac on NAD metabolite levels of the embryo.
 
 We analysed the embryos that corresponded to the metabolically analysed yolk sacs above. Whilst we had to pool 2–3 yolk sacs at E10.5 for analysis, embryos were sufficiently large to be analysed individually with the embryo corresponding to one of the pooled yolk sacs. Contrary to observations at E18.5 (Figure 3B), Haao genotype had no effect on embryo weight within the same dietary condition, but embryos were significantly smaller on NW3.5 than NW15 (Figure 4H). Consistent with the yolk sac samples, the diet had a marked effect on embryonic NAD status, with levels of NAD+ and the waste metabolites 2PY and 4PY significantly reduced in NW3.5 embryos relative to the same Haao genotype on the NW15 diet (Figure 5E, G and H, Supplementary file 5). However, in agreement with phenotypic outcome at E18.5, NAD+ levels of NW3.5 Haao-/- embryos were significantly lower than those of Haao+/- embryos on the same diet (Figure 5E, Supplementary file 5).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/97649/elife-97649-fig5-v1.jpg)
+
+**Figure 5.:** (A–H) Concentration of NAD-related metabolites in E10.5 embryos normalised to total protein content. (A) 3-hydroxyanthranilic acid (3HAA), (B) quinolinic acid (QA), (C) nicotinic acid mononucleotide (NAMN), (D) nicotinic acid adenine dinucleotide (NAAD), (E) NAD+, (F) nicotinamide (NAM), (G) N-methyl-2-pyridone-5-carboxamide (2PY), (H) N-methyl-4-pyridone-5-carboxamide (4PY). Bars indicate the mean ± standard deviation. Statistical significance in (A–H) was calculated by one-way ANOVA with Tukey’s multiple comparisons test with ns = not significant, * p<0.05, ** p<0.01, *** p<0.001, and **** p<0.0001. <LOD = below the limit of detection. For numerical values, see Supplementary file 6. (I) Heatmap showing significant Pearson’s correlation (p<0.01; –0.45<r >0.45) between normalised metabolite levels in E10.5 yolk sacs and embryos. Correlations that did not reach significance are denoted as light blue coloured squares. (J, K) Correlation of 3HAA (J) and NAM (K) concentration in corresponding E10.5 yolk sac and embryo samples. The Pearson correlation coefficient (r) and coefficient of determination (r2) are indicated in each graph. Each datapoint represents an E10.5 embryo and corresponding pooled yolk sac sample.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/97649/elife-97649-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** DotPlot shows the proportion of cells (circle size) expressing requisite pathway genes in E10.5 embryo cell populations. scRNA-seq generated as part of the ‘mouse organogenesis cell atlas’ (MOCA) by Cao et al., 2019 and analysed using ShinyCell (Ouyang et al., 2021). Gene expression data is not scaled.
 
 NAD de novo Synthesis Pathway metabolites were quantifiable in embryos (Figure 5A–D, Supplementary file 5 and Supplementary file 6), with differential abundance of metabolite upstream and downstream of the Haao genetic block mirroring those observed in the yolk sac. Neither the placenta nor the embryonic liver synthesise NAD de novo at E10.5, suggesting that these metabolites either originate from the yolk sac, which is consistent with the connection of vitelline and embryonic vasculature, or that another embryonic cell type is synthesising NAD de novo at E10.5.
 
@@ -94,7 +118,7 @@ To test the latter option, we examined pathway gene expression in the embryo at 
 
 Levels of NAD Salvage Pathway metabolites NAD+, NAM, and NMN were also significantly positively correlated both within and between the yolk sac and embryo tissues (Figure 5I and K). NAM is the main NAD precursor exported into circulation after NAD de novo synthesis for use in other tissues (Liu et al., 2018). Given the limited availability of other usable alternative NAD precursors in mouse circulation (Cuny et al., 2021; Liu et al., 2018), NAD levels of Haao-/- conceptuses likely depend on maternal plasma NAM (Cuny et al., 2023). Although their overall concentration markedly differed (Supplementary file 5 and Supplementary file 6), embryo and yolk sac NAM correlated strongly, irrespective of Haao genotype (Supplementary file 5, Figure 5K). Therefore, embryonic NAD status depends on NAD precursor availability in the yolk sac, which is itself determined by both maternal provision and NAD de novo synthesis activity.
 
-## The yolk sac endoderm expresses requisite NAD de novo synthesis pathway genes at the onset of organogenesis
+### The yolk sac endoderm expresses requisite NAD de novo synthesis pathway genes at the onset of organogenesis
 
 Having established the yolk sac as the primary site of NAD de novo synthesis during organogenesis and its importance in maintaining embryonic NAD levels, we next determined which cell populations are responsible for its activity by re-analysing published scRNA-seq data generated from pooled E9.5 and E10.5 yolk sacs (Figure 6A; Zhao and Choi, 2019).
 
@@ -106,7 +130,7 @@ The yolk sac is derived from two extraembryonic lineages, the endoderm and mesod
 
 To establish when gene expression commenced in the endodermal lineage, we used the ‘extraembryonic (ExE) endoderm’ population from the mouse gastrulation atlas (Pijuan-Sala et al., 2019). The tryptophan-catabolising genes Tdo2, Ido1, Ido2 were not expressed in this population at any stage. Expression of all subsequent requisite NAD de novo Synthesis Pathway genes was identifiable in a subset of cells by E8 and increased thereafter (Figure 6C). While histological methods such as in situ hybridisation would be required to confirm the exact cell types expressing these genes, the available expression data indicates that the genes encoding those enzymes required to convert L-kynurenine to NAD (kynurenine pathway) are exclusively expressed in the yolk sac endoderm lineage from the onset of organogenesis (E8.0–8.5). Given the lack of Tdo2 and Ido2 expression across all timepoints assessed (Figure 6B and C), it appears the conversion of tryptophan to kynurenine is either occurring in the yolk sac vascular smooth muscle, or in the placenta which is well known to perform this function in mouse (Spinelli et al., 2019) and humans (Broekhuizen et al., 2021; Sedlmayr et al., 2014).
 
-## NAD de novo synthesis pathway gene expression dynamics in humans parallel those in mice
+### NAD de novo synthesis pathway gene expression dynamics in humans parallel those in mice
 
 Despite the structural differences between the mouse yolk sac and its human equivalent, the definitive secondary yolk sac (Ross and Boroviak, 2020), there is increasing evidence that many metabolic pathways are conserved in the endodermal cell population (Cindrova-Davies et al., 2017; Goh et al., 2023). Despite very different timescales of embryogenesis between the two species, the human yolk sac is present throughout organogenesis, the period when embryos are most susceptible to malformation (Alwan and Chambers, 2015), after which it degenerates and is lost (Figure 6D). Therefore, we investigated whether NAD de novo synthesis is among the conserved metabolic pathways between the two species. We examined expression of the pathway requisite genes by re-analysing bulk and scRNA-seq for the human yolk sac (Cindrova-Davies et al., 2017; Goh et al., 2023) and hepatocyte lineage (Wesley et al., 2022).
 
@@ -122,19 +146,19 @@ Therefore, requisite NAD de novo synthesis gene expression dynamics in humans la
 
 NAD deficiency during human and mouse development causes CNDD characterised by multiple congenital malformations and foetal loss (Cuny et al., 2023; Cuny et al., 2020; Dunwoodie et al., 2023; Mark and Dunwoodie, 2023; Shi et al., 2017; Szot et al., 2020; Szot et al., 2024; Szot et al., 2021). Human CNDD cases are characterised by biallelic pathogenic variants in either KYNU, HAAO or NADSYN1, all genes of the NAD de novo Synthesis Pathway. Mouse models of CNDD demonstrate that NAD de novo synthesis occurs in the conceptus and that this activity is required for normal embryonic development unless the mother provides sufficient vitamin B3 which bypasses NAD de novo synthesis (Shi et al., 2017). Here, we report that NAD de novo synthesis occurs at two sites in the conceptus; first in the transient extra-embryonic yolk sac during organogenesis, and later in the embryonic liver once formed. It is noteworthy that the placenta lacks this activity. We present evidence in human gene expression data that the NAD de novo Synthesis Pathway also occurs initially in the secondary yolk sac and later in the embryonic liver. Until now, the site of NAD de novo synthesis in the mammalian conceptus was unknown. The necessity of this metabolic activity in the yolk sac highlights the importance of this transient tissue in mammalian embryogenesis.
 
-## The murine yolk sac is capable of synthesising NAD de novo
+### The murine yolk sac is capable of synthesising NAD de novo
 
 The yolk sac has various important functions during embryogenesis, including the uptake and processing of macro- and micronutrients before and after the formation of a functional chorioallanotic placenta. It also facilitates the transport of maternal lipids, cholesterol and other metabolites to the embryo until the embryonic liver can take over this function, and it is involved in haematopoiesis and gene regulation (Cindrova-Davies et al., 2017). Furthermore, the yolk sac metabolises teratogenic substances (Terlouw and Bechter, 1992). Disruption of yolk sac function causes embryonic malformation phenotypes that overlap with CNDD (Brent and Fawcett, 1998; Brent et al., 1971; Ornoy and Miller, 2023; Perez-Garcia et al., 2018), underscoring the yolk sac’s crucial role for normal embryo development.
 
 Our finding of NAD de novo synthesis activity as another metabolic process of the yolk sac is notable because it represents a multi-step pathway involving several sequential enzyme-catalysed processes. Our RNA-seq data analysis confirms that all requisite genes required for NAD de novo synthesis from kynurenine are expressed in mouse yolk sac endoderm cells. Tdo2, required for the conversion of tryptophan to kynurenine, is expressed in the adjacent vascular smooth muscle cells. Our HAAO enzymatic assays and metabolic analyses confirm the pathway is indeed functional. Therefore, this is the first demonstration of NAD de novo synthesis occurring in a tissue outside of the liver and kidney.
 
-## NAD deficiency in early organogenesis is sufficient to cause CNDD
+### NAD deficiency in early organogenesis is sufficient to cause CNDD
 
 We developed a refined CNDD model by which we modulated the maternal dietary NAD precursor supply during a 3-day window between E7.5 to E10.5 to be either low (NW3.5) or sufficient (NW15). Combined with maternal Haao-/- and paternal Haao+/- genotype, the NW3.5 diet reproducibly generated Haao-/- embryos with malformations and unaffected Haao+/- littermates. The Haao-/- embryos exhibited a spectrum of CNDD defects but no cleft palate seen in our previous study with a precursor restriction for five days between E7.5 and E12.5 (Shi et al., 2017). The absence of palate defects is possibly because our current 3-day dietary precursor-restriction is too short to perturb the later occurring developmental processes of palate formation. This observation supports our hypothesis that the timing of NAD deficiency during organogenesis determines which organs/tissues are affected (Cuny et al., 2023), but more research is needed to fully characterise the onset and duration of embryonic NAD deficiency in dietary NAD precursor restriction mouse models.
 
 Furthermore, diminished NAD de novo synthesis in the yolk sac is responsible for the defects caused by our 3-day precursor restriction, because the embryonic liver has not yet formed. These data indicate that the timing of NAD deficiency determines whether tissues known to be susceptible to CNDD are affected or not, explaining why phenotypes are highly variable within the CNDD spectrum. But it is currently unknown whether a common underlying molecular mechanism exists that unifies these tissues with respect to their disrupted development in CNDD and whether organs/tissues that are seemingly unaffected by NAD deficiency are resistant to this mechanism. Further research into the molecular and cellular effects of altered NAD availability during organogenesis is required to better understand CNDD causation.
 
-## Maternal vitamin B3 early in pregnancy can overcome a genetic disruption of yolk sac NAD de novo synthesis
+### Maternal vitamin B3 early in pregnancy can overcome a genetic disruption of yolk sac NAD de novo synthesis
 
 The most abundant NAD precursors in circulation are L-tryptophan, L-kynurenine, and NAM (Cuny et al., 2020; Liu et al., 2018). Flux experiments in mice confirmed that the liver converts L-tryptophan into NAM and excretes it into circulation to maintain NAD levels using the NAD Salvage Pathway (Liu et al., 2018). The CNDD models employed here use Haao-/- mothers, who along with their Haao-/- embryos, cannot use the L-tryptophan provided. These Haao-/- mothers and embryos are instead dependent on the vitamin B3 provided in the diet to synthesise NAD. The amount provided in the NW15 diet is sufficient to maintain conceptal NAD levels and normal embryonic development. By contrast, on the more vitamin B3 restricted NW3.5 diet, the ability to perform NAD de novo synthesis using the L-tryptophan is ultimately what distinguishes the unaffected Haao+/- embryos from their affected Haao-/- littermates.
 
@@ -146,7 +170,7 @@ Besides the direct effect of embryonic NAD deficiency as the cause of CNDD, it i
 
 Together, our NAD metabolome findings confirm that if vitamin B3 supply is limited, yolk sac NAD de novo synthesis becomes essential for maintaining NAD and normal embryo development. Further work with more refined analytical approaches, such as molecular flux analysis, could determine to which extent specific metabolites are exchanged between maternal circulation, the yolk sac, and the embryo.
 
-## Yolk sac functions, very likely including NAD de novo synthesis, are conserved in human
+### Yolk sac functions, very likely including NAD de novo synthesis, are conserved in human
 
 Human embryogenesis requires a transient primary (day 7 to day 12) and secondary yolk sac (day 13 to day 49), while the mouse has a single yolk sac (E7.5 to birth). While human yolk sac anatomy and the timing of its presence differs to mouse, many functions are conserved between the species. These functions include serum protein synthesis, micro- and macronutrient transportation, and certain metabolic pathways, and it is also the site of primary haematopoiesis (Cindrova-Davies et al., 2017). Using published datasets, we showed that the human yolk sac expresses all genes required for NAD de novo synthesis during comparable embryonic stages as seen in the mouse. Therefore, it is plausible that yolk sac NAD de novo synthesis activity in early pregnancy is of similar importance to maintain NAD status and allow normal embryonic development in humans.
 
@@ -154,7 +178,7 @@ Recent studies have established a link between human yolk sac disruption and adv
 
 Furthermore, it is possible that the yolk sac NAD de novo synthesis capability is also conserved in non-mammalian vertebrates. At least one step of the pathway, catalysed by AFMID (Figure 1A), was found to be active in chicken egg yolk sac membranes (Seifert, 2017). Inhibition of this enzyme in the yolk sac resulted in lowered embryo NAD levels and some evidence of disrupted embryogenesis (Seifert and Casida, 1978; Seifert and Casida, 1979). Whether the entire NAD de novo Synthesis Pathway is active in the avian yolk sac, or whether downstream enzymatic synthesis steps are performed elsewhere, is unclear and requires further research.
 
-## Outlook
+### Outlook
 
 We have shown in mice that NAD deficiency due to an impaired NAD de novo Synthesis Pathway can be prevented by supplementing pregnant mice with the NAD precursor vitamin B3 (Cuny et al., 2020; Shi et al., 2017; Szot et al., 2024). NAD deficiency between E7.5 and 10.5 recapitulates the majority of CNDD malformations, and under more severe conditions from E0.5 to 3.5 all embryos die (Shi et al., 2017). These mouse stages span approximately days 1–17 of human development (Figure 6D). Therefore, in women at risk of becoming NAD deficient, it would be necessary to enter pregnancy with sufficient NAD by taking vitamin B3 prior to pregnancy. Further research on the molecular intricacies of CNDD causation, the timing, and the tissues and cells involved will aid understanding of the causes of birth defects and miscarriages more generally.
 
@@ -162,7 +186,297 @@ Here, we highlight the importance of the yolk sac in embryogenesis. Given the li
 
 ## Materials and methods
 
-## Animal experiments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Haaoem1Dunw</td>
+      <td>Shi et al., 2017</td>
+      <td>MGI:6285800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tdo2_forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGGTGCTGCTCTGCTTGTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Tdo2_reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGAGCGTGTCAATGTCCATAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ido2_forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGCCCTCAGACTTCCTCACT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ido2_reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CGCTGCTCACGGTAACTCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Afmid_forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGCCACCTCCCAGAATGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Afmid_reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TGGAACCACATCCAAGTGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Kmo_forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GAGCATTAACTTGGCCCTTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Kmo_reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>AGTGGATCATTCTGGCTTTCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Kynu_forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTTCAGTGGGCTGCACTTTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Kynu_reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCCAGTCATGTAAGCGGAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Haao_forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACAATGGGAGGGCAGTGTAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Haao_reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CTTCTTACGGGCAGGGTCTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Qprt_forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>ACTGGTGGAGAAGTATGGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Qprt_reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GGCTGCTACATTCCACCTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nadsyn1_forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GCCAAAGGCAAAGGTGCAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nadsyn1_reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>TAGCGAACATTCCGGTGCAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nmnat1_forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>GTGCCCAACTTGTGGAAGAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nmnat1_reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CAGCACATCGGACTCGTAGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nmnat3_forward</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCAGAGACCACCTACACCAAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nmnat3_reverse</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>CCACCCGAATCCAGTCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ubc_forward</td>
+      <td>Gu et al., 2014</td>
+      <td>PCR primers</td>
+      <td>CCCAGTGTTACCACCAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ubc_reverse</td>
+      <td>Gu et al., 2014</td>
+      <td>PCR primers</td>
+      <td>ATCACACCCAAGAACAAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ywhaz_forward</td>
+      <td>Jeong et al., 2014</td>
+      <td>PCR primers</td>
+      <td>CAGTAGATGGAGAAAGATTTGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ywhaz_reverse</td>
+      <td>Jeong et al., 2014</td>
+      <td>PCR primers</td>
+      <td>GGGACAATTAGGGAAGTAAGT</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Rat and Mouse Premium Breeder Diet</td>
+      <td>Gordons Specialty Feeds, Yanderra, NSW, Australia</td>
+      <td>Cat. #: 27</td>
+      <td>Mouse feed</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tryptophan and niacin-free diet</td>
+      <td>Specialty Feeds, Glen Forrest, WA, Australia</td>
+      <td>Cat. #: SF21-083</td>
+      <td>Mouse feed</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Protein Assay Kit</td>
+      <td>Thermo Fisher Scientific, Rockford, USA</td>
+      <td>Cat. #: 23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PureLink RNA Mini kit</td>
+      <td>Thermo Fisher Scientific, Rockford, USA</td>
+      <td>Cat. #: 12183018 A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Maxima First Strand cDNA Synthesis Kit</td>
+      <td>Thermo Fisher Scientific, Rockford, USA</td>
+      <td>Cat. #: K1642</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LightCycler 480 SYBR Green I Master mix</td>
+      <td>Hoffmann-La Roche Ltd, Basel, Switzerland</td>
+      <td>Cat. #: 04887352001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>cOmplete Mini, EDTA-free Protease Inhibitor Cocktail</td>
+      <td>Merck KGaA, Darmstadt, Germany</td>
+      <td>Cat. #: 11836170001</td>
+      <td>Protease inhibitors</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trimmomatic (v0.35)</td>
+      <td>Bolger et al., 2014</td>
+      <td>RRID:SCR_011848</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR aligner (two pass method)</td>
+      <td>Dobin et al., 2013</td>
+      <td>RRID:SCR_004463</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat R package</td>
+      <td>Butler et al., 2018</td>
+      <td>https://satijalab.org/seurat/; RRID:SCR_016341</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism (version 10)</td>
+      <td>GraphPad Software</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MetaboAnalyst 5.0</td>
+      <td>Pang et al., 2022</td>
+      <td>RRID:SCR_015539</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ShinyCell R package (v2.1)</td>
+      <td>Ouyang et al., 2021</td>
+      <td>https://github.com/SGDDNB/ShinyCell; RRID:SCR_022756</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R (v4.1)</td>
+      <td>R Project for Statistical Computing</td>
+      <td>https://www.r-project.org/; RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animal experiments
 
 All animal experiments were performed in accordance with protocols approved by the Garvan Institute of Medical Research/St. Vincent’s Animal Experimentation Ethics Committee, Sydney, Australia (approvals 18/27 and 21/18). All animal experiments were performed in accordance with relevant guidelines and regulations specified in the animal ethics approval. The Haao loss-of-function mouse line (allele Haaoem1Dunw) has been described previously (Shi et al., 2017).
 
@@ -172,24 +486,24 @@ For experiments requiring limitation of the maternal dietary vitamin B3 supply d
 
 E18.5 embryos were phenotyped as described previously (Cuny et al., 2020) except for the identification of heart defects, for which micro-CT was used. Briefly, hearts were dissected from fixed (4% paraformaldehyde with 1% glutaraldehyde) E18.5 embryos and stained in 0.7% phosphotungstic acid +30% ethanol in phosphate-buffered saline (PBS) for a minimum of 7 days or until stained completely. Stained hearts were scanned using a Skyscan 1272 scanner (Bruker Corporation, Billerica, USA) at a resolution of 1092x1632 with a voltage of 80 kV and a 125 µA current. The filter was set to Al 1 mm with a pixel size of 4.95 µm. Projection images were recorded with 2300 ms exposure time per projection with a rotation step of 0.4° between projections. The hearts were scanned at a total of 360° rotation. Acquired projections were reconstructed using Nrecon software (Bruker) with smoothing set to 3, ring artefact reduction to 19, and beam hardening to 10%. Reconstructed volumes were exported in TIFF format and visually inspected for structural heart defects.
 
-## HAAO enzyme assays
+### HAAO enzyme assays
 
 HAAO enzyme assays were performed as previously described, with some minor modifications (Shi et al., 2017; Walsh et al., 1991). Briefly, volume of tissue lysis buffer (10 mM protease inhibitor in PBS) was adjusted by stage and tissue type to standardise total protein levels per assay (see Supplementary file 1). Due to the small tissue size, yolk sacs and embryonic livers were pooled at early gestational stages to obtain sufficient material per biological replicate. Regardless of tissue type, 15 μL of tissue lysate was used per reaction and normalised by total protein per reaction. Protein concentration was determined by Pierce BCA Protein Assay Kit (Thermo Scientific, Rockford, USA), performed according to the manufacturer’s protocol.
 
-## Quantitative real time PCR (qRT-PCR)
+### Quantitative real time PCR (qRT-PCR)
 
 RNA was extracted from snap frozen Haao+/- yolk sacs using PureLink RNA Mini kit (Thermo Scientific, Rockford, USA), as per the manufacturer’s instructions. Tissue homogenization was performed in 650 μL lysis buffer using a Bio-Gen Pro 200 homogenizer (PRO Scientific Inc, Oxford, Connecticut, USA). cDNA was synthesised from 1 μg RNA using Maxima First Strand cDNA Synthesis Kit (K1672, Thermo Scientific) according to the manufacturer’s protocol, with the addition of a dilution step to 1.6 ng/μL in water. qPCR was performed on CFX384 Touch Real-Time PCR Detection System (Bio-Rad, USA) using the primers detailed in Supplementary file 7 and LightCycler 480 SYBR Green I Master mix (04887352001; F. Hoffmann-La Roche Ltd, Basel, Switzerland). Relative expression was calculated using the ΔCt method, normalizing each gene to both Ubc and Ywhaz levels.
 
-## Metabolite quantification by UHPLC-MS/MS
+### Metabolite quantification by UHPLC-MS/MS
 
 NAD+ and related metabolites were quantified in yolk sacs and placentas collected at E10.5, E12.5 and E14.5, in embryos collected at E10.5, and in embryonic livers collected at E14.5 using UHPLC-MS/MS as described for mouse liver tissue (Cuny et al., 2021), with a minor adjustment to improve quantification of high concentration metabolites. From the last supernatant after addition of chloroform and centrifugation, 30 µL were taken, diluted with 70 µL of 100 mM ammonium acetate in water (=sample for abundant metabolite quantification), and measured. The remainder of supernatant was dried in a vacuum centrifuge at room temperature, metabolites reconstituted in 60 µL of 100 mM ammonium acetate, centrifuged for 2 min at 15,000 × g and 4 °C, and 50 µL of the supernatant taken and measured by UHPLC-MS/MS as described (=sample for low concentration metabolite quantification). Metabolite concentration values were normalised by the tissue sample wet weight at dissection. Metabolite concentrations in NW3.5 and NW15 embryos and yolk sacs were additionally normalised by protein concentration in the solid fraction (pellet) remaining after the first centrifugation step of the metabolite extraction procedure. To determine total protein concentration in the pellets, they were washed in methanol, air dried using a vacuum centrifuge, resuspended in 0.2 M sodium hydroxide, and incubated at 95 °C for 20 min. Insoluble proteins and other debris were removed by centrifugation at 12,000 rpm for 7 min in a microcentrifuge and protein concentration was determined using the Pierce BCA Protein Assay Kit (Thermo Fisher Scientific, Rockford, USA) according to the manufacturer’s protocol.
 
-## Analysis of published RNA-seq datasets
+### Analysis of published RNA-seq datasets
 
 RNA-Seq datasets (matrix tables for single cell and fastq for bulk RNA-Seq) were downloaded from public repositories (Supplementary file 8). For the re-analysis of bulk RNA sequencing fastq files were trimmed of low quality sequence and adaptor using Trimmomatic (v0.35) (Bolger et al., 2014) before being aligned to hg38 genome using the STAR aligner (two pass method) (Dobin et al., 2013). Gene counts were generated from the STAR aligner using gencode vM10 as the reference gene model. Gene count matrixes were filtered to only contain genes expressed at 1 count per million (CPM) in at least 3 samples before being normalised by Trimmed Mean of M-values (TMM) and log2 transformed using R scripts.
 
 For the re-analysis of single cell datasets, single cell count matrixes were downloaded and assembled into Seurat objects using the Seurat R package (Butler et al., 2018). Cells were filtered for percent of mitochondrial content, and clustering included detection of top variable genes, scaling, dimensionality reduction with PCA and construction of nearest neighbour graphs. Cell cluster identification was established from markers described in linked manuscript (Supplementary file 8). For the gastrulation atlas, single cell count objects were downloaded from the Bioconductor ‘MouseGastrulationData’ resource (Griffiths and Lun, 2023). Seurat objects were converted into ShinyCell web applets (Ouyang et al., 2021) to help visualise and explore the data.
 
-## Statistical analysis
+### Statistical analysis
 
 One-way ANOVA was used to determine statistical significance of tissue sample gene expression levels at different developmental stages, of HAAO activity in tissues of different Haao genotypes, and of metabolite concentrations under different Haao genotypes and maternal diets. Significance of metabolite level differences was additionally analysed by one-way ANOVA with Tukey’s multiple comparisons test. Student’s t-test was used to determine statistical difference of Haao+/- and Haao-/- embryo weights with the NW3.5 diet. Values are displayed as mean ± standard deviation. All statistical analyses were performed with Prism (version 10; GraphPad Software). Metaboanalyst 5.0 (Pang et al., 2022) was used to generate PCA plots and heatmaps of the NAD metabolome data. Custom R scripts were used to generate heatmaps of gene expression data.

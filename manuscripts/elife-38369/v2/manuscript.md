@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.38369.001 The conformations populated during protein folding have been studied for decades; yet, their evolutionary importance remains largely unexplored. Ancestral sequence reconstruction allows access to proteins across evolutionary time, and new methods such as pulsed-labeling hydrogen exchange coupled with mass spectrometry allow determination of folding intermediate structures at near amino-acid resolution. Here, we combine these techniques to monitor the folding of the ribonuclease H family along the evolutionary lineages of T. thermophilus and E. coli RNase H. All homologs and ancestral proteins studied populate a similar folding intermediate despite being separated by billions of years of evolution. Even though this conformation is conserved, the pathway leading to it has diverged over evolutionary time, and rational mutations can alter this trajectory. Our results demonstrate that evolutionary processes can affect the energy landscape to preserve or alter specific features of a protein’s folding pathway.
+The conformations populated during protein folding have been studied for decades; yet, their evolutionary importance remains largely unexplored. Ancestral sequence reconstruction allows access to proteins across evolutionary time, and new methods such as pulsed-labeling hydrogen exchange coupled with mass spectrometry allow determination of folding intermediate structures at near amino-acid resolution. Here, we combine these techniques to monitor the folding of the ribonuclease H family along the evolutionary lineages of T. thermophilus and E. coli RNase H. All homologs and ancestral proteins studied populate a similar folding intermediate despite being separated by billions of years of evolution. Even though this conformation is conserved, the pathway leading to it has diverged over evolutionary time, and rational mutations can alter this trajectory. Our results demonstrate that evolutionary processes can affect the energy landscape to preserve or alter specific features of a protein’s folding pathway.
 
 ## Introduction
 
@@ -38,7 +38,7 @@ Here, we used pulsed-labeling HX-MS on the resurrected family of RNases H to inv
 
 ## Results
 
-## Monitoring a protein’s folding trajectory by pulsed-labeling HX-MS
+### Monitoring a protein’s folding trajectory by pulsed-labeling HX-MS
 
 We used pulsed-labeling hydrogen exchange monitored by mass spectrometry (HX-MS) on extant, ancestral, and site-directed variants of RNase H to examine the robustness of a protein’s folding pathway to sequence changes. These experiments allow us to characterize the partially folded intermediates and the order of structure formation during folding to ask whether these intermediates have changed over evolutionary time, and what role sequence might play in determining these intermediate conformations.
 
@@ -46,23 +46,63 @@ Figure 1B outlines the scheme for the pulsed-labeling experiment (for details, s
 
 Since the original folding studies on many RNases H were carried out at 25°C, we re-characterized the folding of each RNase H variant at 10°C using stopped-flow circular dichroism spectroscopy (Figure 2—figure supplement 1, Figure 2—source data 1). The refolding profiles were consistent with those at 25°C (Raschke and Marqusee, 1997; Hollien and Marqusee, 2002; Lim et al., 2016). At low [urea], all ancestors show a large signal change (burst phase) within the dead time of the stopped-flow instrument (~15 msec), followed by a slower observable phase which fit well to a single exponential. The resulting chevron plots (ln(kobs) vs [urea]) show the classic rollover at low [urea] due to the presence of a stable folding intermediate. As expected, the observed rates at 10°C are slower than 25°C, but the chevron profiles are similar for all RNase H variants. Thus the overall folding trajectory, notably the population of a folding intermediate, has not changed between the two temperatures.
 
-## Monitoring the folding pathway of ttRNH* using pulsed-labeling HX-MS
+### Monitoring the folding pathway of ttRNH* using pulsed-labeling HX-MS
 
 First, we characterized the conformations populated during folding of extant RNase H from T. thermophilus and compared its folding trajectory to the previously characterized folding trajectory of E. coli RNase H (Figure 2—figure supplement 1, Figure 2—figure supplement 2, Figure 2—source data 1) (Hu et al., 2013). 374 unique peptides mapping to the ttRNH* sequence were identified by MS (Figure 2A, Figure 2—source data 1). The major folding intermediate in ttRNH*, Icore, is strikingly similar to that of ecRNH* (Hu et al., 2013). Similar to ecRNH*, peptides associated with Icore (Helix A-D, Strands 4 – 5) gain protection early (within milliseconds), corresponding to the timescale for the formation of the folding intermediate. Peptides associated with the periphery of the protein (Strands 2 – 3, Helix E) gain protection on the order of seconds, corresponding to the rate-limiting step (Figure 2B). Although it has been shown by CD spectroscopy that the slow observed refolding kinetics of ttRNH* fit best to a biphasic exponential process (Figure 2—figure supplement 1, Figure 2—source data 1), we were not able to observe structural changes that can be attributed to these two phases by pulsed-labeling HX-MS. Thus, uncovering the molecular mechanism that gives rise to the biphasic behavior of ttRNH* remains an open question.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/38369/elife-38369-fig2-v2.jpg)
+
+**Figure 2.:** (A) Protection of representative peptides from ttRNH* at various refolding times. Peptides are colored according to their corresponding structural element. The solid arrow indicates the refolding time point analyzed in panel B. The dotted arrow indicates the refolding time point analyzed in panel C. (B) Protection of peptides mapping to the core region (Icore) or the periphery region of ttRNH* at 21 msec after refolding. Bars represent the mean and standard deviation of each data set. *p<0.0001 (Welch’s unpaired T-test) (C) Protection of peptides of ttRNH* mapping to distinct secondary structural elements at one msec after refolding. Bars represent the mean and standard deviation of each data set. *p=0.0027 (Welch’s unpaired T-test). Data for B and C represent aggregate data from three separate experiments. (D) Residue-resolved folding pathway of ttRNH* at representative refolding time points. Data points in black indicate residues that are site-resolved. Data points in grey indicate residues in regions with less peptide coverage and are thus not site-resolved with the neighboring residues. Residues where site-resolved protection could not be determined due to insufficient peptide coverage is denoted with a ‘x’.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/38369/elife-38369-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Chevron plots (ln(kobs) vs [urea]), determined from refolding and unfolding experiments in various [urea] at 10°C and 25°C for A) ttRNH*, (B) Anc1*, (C) Anc2*, (D) Anc3*, (E) AncA*, (F) AncB*, (G) AncC*, (H) AncD*, (I) ecRNH* A55G, (J) ecRNH* D108L, (K) wild-type ecRNH*. For (A) Both the fast (black dots) and slow (grey dots) rates of folding for ttRNH* are shown at 10°C, and chevron fits for the two rates at 25°C are shown as lines and adapted from previous work (Hollien and Marqusee, 2002). Data at 25°C for (B–H) were adapted from a previously published study (Lim and Marqusee, 2017). Data for (K) was adapted from previous work (Hu et al., 2013; Raschke et al., 1999).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/38369/elife-38369-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Pulsed-labeling hydrogen exchange mass spectrometry results of the folding pathway of ecRNH*, adapted from Figure 3E, Figure 3F, Figure 4 of Hu W. et al. 2013, Proceedings of the National Academy of Sciences U.S.A. 110(19) doi:10.1073/pnas.1305887110, published under the CreativeCommons Attribution Attribution-NonCommercial-NoDerivs 2.0 Generic License (CC BY-NC-ND 4.0; https://creativecommons.org/licenses/by-nc-nd/4.0/). (Hu et al., 2013) (A and B) Fraction of peptide protected from exchange as a function of time. Selected peptides are shown from the Helix A/Strand 4 (blue), Helix D/Strand 5 (green), Helix B/Helix C (yellow), and Strand 1-3/Helix E (red) regions. (A) Folding of the Icore region of the protein. The inset shows the longer folding timepoints. (B) Folding of the periphery of the protein. (C) Residue-resolved folding pathway of ecRNH* at representative refolding time points. Data points in red indicate residues that are site-resolved. Data points in blue indicate residues in regions with less peptide coverage and are thus not site-resolved with the neighboring residues. The protection pattern of the native protein is shown at the bottom. Circles along the bottom of the native state indicate backbone amide hydrogen bonding to other regions of backbone (open circles) and side chains (closed circles). Regions in grey are protein segments that are in transition between unfolded and folded states. (See Hu et al. (2013) for further discussion.)
 
 Looking at the very early refolding times allows one to determine the individual folding steps preceding Icore.. At the earliest time point (~1 msec), almost all peptides are unfolded (fully exchange with solvent) with the exception of those in Helix D and Strand 5, which are ~40% deuterated (Figure 2C). Peptides spanning Helix A and Strand 4 are less protected (~15% deuterated) at this same time point. This order of protection (Helix D before Helix A) is notably different than that for E. coli RNase H*, where Helix A is protected before Helix D (Hu et al., 2013). Peptides spanning Helix B and Helix C gain protection in the Icore intermediate. Peptides from Strands 1 – 3 and Helix E do not gain full protection until significantly later (on the order of seconds), corresponding to the rate-limiting step to the native state. Thus, while the Icore intermediate is largely conserved between ttRNH* and ecRNH*, the initial steps of folding differ between the two homologs.
 
 The peptide data from each time point were also analyzed using HDSite to determine residue-level protection in a near site-resolved manner (Figure 2D). These site-resolved data also show protection appearing first in Helix D and Strand 5, followed by Helix A/Strand 4, Helix B/C, and finally, the periphery Helix E and Strands 1 – 3. The differences in the order of protection leading up to Icore of ecRNH* and ttRNH* are also evident in this site-resolved analysis.
 
-## Pulsed-labeling HX-MS on the ancestral RNases H
+### Pulsed-labeling HX-MS on the ancestral RNases H
 
 To look for evolutionary trends in the folding trajectory, we probed the folding pathway of ancestral RNases H along the lineages of E. coli and T. thermophilus RNase H (Figure 3A). Anc1* is the last common ancestor of ecRNH* and ttRNH*. Anc2* and Anc3* are ancestors along the thermophilic lineage leading to ttRNH*, and AncA*, AncB*, AncC*, and AncD* are ancestors along the mesophilic lineage leading to ecRNH*. Previous kinetic studies demonstrated that all of the ancestral proteins fold via a three-state pathway, populating an intermediate before the rate-limiting step (Lim et al., 2016; Lim and Marqusee, 2017). We now use pulsed-labeling HX-MS to obtain a near-site resolved trajectory of the folding pathway for each ancestor and determine whether the Icore structure is conserved over evolution.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/38369/elife-38369-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representation of the phylogenetic tree of the RNase H family illustrating the ancestral proteins along the two lineages leading to E. coli RNase H and T. thermophilus RNase H. Adapted from Figure 2A of Hart KM et al. 2014, PLoS Biology. 12(11) doi:10.1371/journal.pbio.1001994, published under the CreativeCommons Attribution 4.0 International Public License (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/). (Hart et al., 2014) Anc1* is the last common ancestor of ecRNH* and ttRNH*. Anc2* and Anc3* are ancestors along the thermophilic lineage to ttRNH*. AncA*, AncB*, AncC*, and AncD* are ancestors along the mesophilic lineage to ecRNH*. (B) Protection of representative peptides from Anc1* at various refolding times. Peptides are colored according to their corresponding structural element. The solid arrow indicates the refolding time point analyzed in panel C. The dotted arrow indicates the refolding time point analyzed in panel D. (C) Protection of peptides mapping to the core region (Icore) or the periphery region of Anc1* at 13 msec after refolding. Bars represent the mean and standard deviation of each data set. *p = 0.0011 (Welch’s unpaired T-test) (D) Protection of peptides mapping to distinct secondary structural elements of Anc1* at 1 milliseconds after refolding. Bars represent the mean and standard deviation of each data set. *p < 0.0001 (Welch’s unpaired T-test). Data for C & D represent aggregate data from three separate experiments. (E) Residue-resolved folding pathway of Anc1* at representative refolding time points. Data points in black indicate residues that are site-resolved. Data points in grey indicate residues in regions with less peptide coverage and are thus not site-resolved with the neighboring residues. Residues where site-resolved protection could not be determined due to insufficient peptide coverage is denoted with a “x”.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/38369/elife-38369-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Protection of representative peptides from Anc2* at various refolding times. Peptides are colored according to their corresponding structural element. The solid arrow indicates the refolding time point analyzed in panel B. The dotted arrow indicates the refolding time point analyzed in panel C. (B) Protection of peptides mapping to the core region (Icore) or the periphery region of Anc2* at 21 msec after refolding. Bars represent the mean and standard deviation of each data set. *p=0.0011 (Welch’s unpaired T-test) (C) Protection of peptides of Anc2* mapping to distinct secondary structural elements at one msec after refolding. Bars represent the mean and standard deviation of each data set. *p=0.0064 (Welch’s unpaired T-test). Data for B and C represent aggregate data from three separate experiments. (D) Residue-resolved folding pathway of Anc2* at representative refolding time points. Data points in black indicate residues that are site-resolved. Data points in grey indicate residues in regions with less peptide coverage and are thus not site-resolved with the neighboring residues. Residues where site-resolved protection could not be determined due to insufficient peptide coverage is denoted with a ‘x’.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/38369/elife-38369-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Protection of representative peptides from Anc3* at various refolding times. Peptides are colored according to their corresponding structural element. The solid arrow indicates the refolding time point analyzed in panel B. The dotted arrow indicates the refolding time point analyzed in panel C. (B) Protection of peptides mapping to the core region (Icore) or the periphery region of Anc3* at 13 msec after refolding. Bars represent the mean and standard deviation of each data set. *p<0.0001 (Welch’s unpaired T-test) (C) Protection of peptides of Anc3* mapping to distinct secondary structural elements at one msec after refolding. Bars represent the mean and standard deviation of each data set. *p=0.0419 (Welch’s unpaired T-test). Data for B and C represent aggregate data from three separate experiments. (D) Residue-resolved folding pathway of Anc3* at representative refolding time points. Data points in black indicate residues that are site-resolved. Data points in grey indicate residues in regions with less peptide coverage and are thus not site-resolved with the neighboring residues. Residues where site-resolved protection could not be determined due to insufficient peptide coverage is denoted with a ‘x’.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/38369/elife-38369-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Protection of representative peptides from AncA* at various refolding times. Peptides are colored according to their corresponding structural element. The solid arrow indicates the refolding time point analyzed in panel B. The dotted arrow indicates the refolding time point analyzed in panel C. (B) Protection of peptides mapping to the core region (Icore) or the periphery region of AncA* at 373 msec after refolding. Bars represent the mean and standard deviation of each data set. *p<0.0001 (Welch’s unpaired T-test) (C) Protection of peptides of AncA* mapping to distinct secondary structural elements at 40 msec after refolding. Bars represent the mean and standard deviation of each data set. p=0.275 (n.s. = not significant, Welch’s unpaired T-test). Data for B and C represent aggregate data from three separate experiments. (D) Residue-resolved folding pathway of AncA* at representative refolding time points. Data points in black indicate residues that are site-resolved. Data points in grey indicate residues in regions with less peptide coverage and are thus not site-resolved with the neighboring residues. Residues where site-resolved protection could not be determined due to insufficient peptide coverage is denoted with a ‘x’.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/38369/elife-38369-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) Protection of representative peptides from AncB* at various refolding times. Peptides are colored according to their corresponding structural element. The solid arrow indicates the refolding time point analyzed in panel B. The dotted arrow indicates the refolding time point analyzed in panel C. (B) Protection of peptides mapping to the core region (Icore) or the periphery region of AncB* at 21 msec after refolding. Bars represent the mean and standard deviation of each data set. *p<0.0001 (Welch’s unpaired T-test) (C) Protection of peptides of AncB* mapping to distinct secondary structural elements at one msec after refolding. Bars represent the mean and standard deviation of each data set. p=0.353 (n.s. = not significant, Welch’s unpaired T-test). Data for B and C represent aggregate data from three separate experiments. (D) Residue-resolved folding pathway of AncB* at representative refolding time points. Data points in black indicate residues that are site-resolved. Data points in grey indicate residues in regions with less peptide coverage and are thus not site-resolved with the neighboring residues. Residues where site-resolved protection could not be determined due to insufficient peptide coverage is denoted with a ‘x’.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/38369/elife-38369-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A) Protection of representative peptides from AncC* at various refolding times. Peptides are colored according to their corresponding structural element. The solid arrow indicates the refolding time point analyzed in panel B. The dotted arrow indicates the refolding time point analyzed in panel C. (B) Protection of peptides mapping to the core region (Icore) or the periphery region of AncC* at 77 msec after refolding. Bars represent the mean and standard deviation of each data set. *p<0.0001 (Welch’s unpaired T-test) (C) Protection of peptides of AncC* mapping to distinct secondary structural elements at 13 msec after refolding. Bars represent the mean and standard deviation of each data set. *p<0.0001 (Welch’s unpaired T-test). Data for B and C represent aggregate data from three separate experiments. (D) Residue-resolved folding pathway of AncC* at representative refolding time points. Data points in black indicate residues that are site-resolved. Data points in grey indicate residues in regions with less peptide coverage and are thus not site-resolved with the neighboring residues. Residues where site-resolved protection could not be determined due to insufficient peptide coverage is denoted with a ‘x’.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/38369/elife-38369-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** (A) Protection of representative peptides from AncD* at various refolding times. Peptides are colored according to their corresponding structural element. The solid arrow indicates the refolding time point analyzed in panel B. The dotted arrow indicates the refolding time point analyzed in panel C. (B) Protection of peptides mapping to the core region (Icore) or the periphery region of AncD* at 40 msec after refolding. Bars represent the mean and standard deviation of each data set. *p<0.0001 (Welch’s unpaired T-test) (C) Protection of peptides of AncD* mapping to distinct secondary structural elements at 13 msec after refolding. Bars represent the mean and standard deviation of each data set. *p=0.021 (Welch’s unpaired T-test). Data for B and C represent aggregate data from three separate experiments. (D) Residue-resolved folding pathway of AncD* at representative refolding time points. Data points in black indicate residues that are site-resolved. Data points in grey indicate residues in regions with less peptide coverage and are thus not site-resolved with the neighboring residues. Residues where site-resolved protection could not be determined due to insufficient peptide coverage is denoted with a ‘x’.
 
 We obtained good peptide coverage for all of the ancestors with a minimum of 81 peptides seen in all time points for each variant (Figure 3, Figure 3—figure supplements 1–6, Figure 3—source data 1). As observed in both ttRNH* (above) and ecRNH* (Figure 2, Figure 2—figure supplement 2) (Hu et al., 2013), all of the ancestral RNases H populate the canonical Icore folding intermediate prior to the rate-limiting step. Peptides corresponding to the Icore region of the RNase H structure become protected on the timescale of milliseconds, while the rest of the protein gains protection on the timescale of seconds (Figure 3C, Figure 3—figure supplements 1–6). Thus, the structure of this major folding intermediate is not only present in both extant RNases H, but is conserved over nearly three billion years of evolutionary history.
 
 Similarly to the extant proteins, the periphery of the ancestral proteins gains protection on a much slower timescale (Figure 3C, Figure 3—figure supplements 1–6). The details of protection in this region, however, vary somewhat across the ancestors. The periphery becomes fully protected by the last time point in all ancestral proteins except for AncB* (Figure 3—figure supplement 4). AncB* was previously characterized to be non-two-state with a notable population of the folding intermediate under equilibrium conditions, (Lim et al., 2016) and the lack of protection in the periphery in the folded state of AncB* is consistent with this observation. For Anc1* and Anc2*, there are also notable differences in the time course of protection for the terminal helix, Helix E. For these two proteins, the peptides spanning Helix E are decoupled from Strands 1 – 3 (which show protection on the same timescale as global folding) and do not gain protection even in the folded state of the protein (Figure 3B, Figure 3D, Figure 3—figure supplement 1), suggesting that Helix E is improperly docked or poorly structured in Anc1* and Anc2*. Indeed, Helix E is known to be labile in ecRNH*: a deletion variant of ecRNH* without this final helix forms a cooperatively folded protein, (Goedken et al., 1997) and recent single-molecule force spectroscopy of ecRNH* showed that Helix E can be pulled off the folded protein under low force while the remainder of the protein remains structured (manuscript in preparation). It appears that Helix E may be further destabilized in Anc1* and Anc2* such that it does not show protection in the native state.
 
-## The early folding steps of RNase H change across evolutionary time
+### The early folding steps of RNase H change across evolutionary time
 
 Since the order of events leading to Icore differs between the extant homologs, we examined whether the ancestral RNases H spanning the lineages of these two homologs show any trends in their early folding steps. For each ancestor, we analyzed the fraction of deuterium protected in peptides that are uniquely associated with specific regions of the protein (Figure 3D and Figure 3—figure supplements 1–6) to determine which region folds first.
 
@@ -74,23 +114,31 @@ The next ancestor along the mesophilic lineage, AncC*, shows protection first in
 
 **Figure 4.:** Log-ratio of intrinsic helicity of Helix A and Helix D for each RNase H variant studied. Intrinsic helix predictions were calculated using AGADIR. (Muñoz and Serrano, 1994) The order of helix protection for each variant of RNase H is depicted in color. Green bars represent proteins where Helix D is the first structural element to gain protection during refolding. Blue bars represent proteins where Helix A is the first structural element to gain protection during refolding. Grey bars represent proteins where the helix protection order could not be unambiguously determined. The order of helix protection for each ancestor and homolog is also colored on the phylogenetic tree, revealing a trend in the RNase H folding trajectory along the evolutionary lineages. The phylogenetic tree shown in this figure is adapted from Figure 2A of Hart KM et al. 2014, PLoS Biology. 12(11) doi:10.1371/journal.pbio.1001994, published under the CreativeCommons Attribution 4.0 International Public License (CC BY 4.0; https://creativecommons.org/licenses/by/4.0/) (Hart et al., 2014).
 
-## Early helix protection is determined by the local sequence of the core
+### Early helix protection is determined by the local sequence of the core
 
 Relative to the vast sequence space available, these RNase H ancestors represent a set of closely related sequences with distinct folding properties and provide an excellent system to help us elucidate the physiochemical mechanism and the sequence determinants dictating the RNase H folding trajectory. An analysis of the intrinsic helical propensity of each region using the algorithm AGADIR (Muñoz and Serrano, 1994) shows a notable trend in helicity that correlates with the early folding events (Figure 4). For proteins that gain protection in Helix A first, the intrinsic helicity of Helix A is about four-fold higher than that of Helix D. For the variants where Helix D is protected first, the intrinsic helicity of Helix D is similar to or greater than Helix A. This suggests that intrinsic helix propensity may play an important role in determining which region is the first to gain protection during the folding pathway of RNase H. To investigate this hypothesis, we turned to rationally designed variants.
 
-## Intrinsic helicity plays a role in determining the structure of the early intermediates
+### Intrinsic helicity plays a role in determining the structure of the early intermediates
 
 If the order of protection in the early folding events of RNase H is determined by intrinsic helix propensity, then we should be able to alter the protein sequence rationally and manipulate the folding trajectory. Thus, we asked whether single-site mutations that change the relative helix propensity of Helix A and Helix D could alter the folding trajectory of ecRNH* and make it fold in a similar fashion to ttRNH*. Two different point mutations were made in ecRNH*: A55G decreases helix propensity in Helix A, and D108L increases helicity in Helix D (Figure 4, Figure 5A, Supplementary file 1 – Table 1). Pulsed-labeling HX-MS indicates that both of these variants alter the early folding events of ecRNH*. The peptide-level protection of ecRNH* A55G indicates that at 13 msec, both Helix A and Helix D show similar levels of protection. In contrast, for wild-type ecRNH*, Helix A shows protection by 1 msec and Helix D does not show comparable protection until 10 – 20 msec (Hu et al., 2013). Thus, the mutation A55G slows the gain of protection in Helix A such that it no longer protected before Helix D (Figure 5B, Figure 5—figure supplement 1). The peptide-level protection of ecRNH* D108L indicates a change in the order of protection. Due to the limited number of peptides available, we could only confidently determine this using peptides spanning the N-terminus of Helix D. At 13 msec, the N-terminus of Helix D (residues 106 – 108) near the D108L mutation is protected significantly faster than any other region of the protein. Thus increasing helix propensity correlated with a change in the folding trajectory. (Figure 5C, Figure 5—figure supplement 1). Together, these two mutations suggest that intrinsic helicity plays a role in the early folding events of RNase H and can be used to alter the stepwise order of conformations populated during folding.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/38369/elife-38369-fig5-v2.jpg)
+
+**Figure 5.:** (A) Crystal structure of E. coli RNase H (PDB: 2RN2) with mutations designed to alter intrinsic helicity (Katayanagi et al., 1992). A55G, located in Helix A (blue), is colored in cyan. D108L, located in Helix D (green), is colored in light green. (B) Protection of peptides mapping to distinct secondary structural elements of ecRNH* A55G at 13 msec after refolding. Bars represent the mean and standard deviation of each data set. p=0.0917 (n.s. = not significant, Welch’s unpaired T-test). (C) Protection of peptides mapping to distinct secondary structural elements of ecRNH* D108L at 13 msec after refolding. Bars represent the mean and standard deviation of each data set. *p=0.0044, **p=0.0016 (Welch’s unpaired T-test). Data for B and C represent aggregate data from three separate experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/38369/elife-38369-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Residue-resolved folding pathway of (A) ecRNH* A55G and (B) ecRNH* D108L at representative refolding time points. Data points in black indicate residues that are site-resolved. Data points in grey indicate residues in regions with less peptide coverage and are thus not site-resolved with the neighboring residues. Residues where site-resolved protection could not be determined due to insufficient peptide coverage is denoted with a ‘x’.
+
 ## Discussion
 
-## Determining the folding pathway of multiple protein variants
+### Determining the folding pathway of multiple protein variants
 
 Pulsed-labeling hydrogen exchange is currently the most detailed method to identify the conformations populated during protein folding. This approach was initially developed for use with NMR detection where it benefited from NMR’s site-specific resolution of individual amides (Bai, 2006). However, using NMR with pulsed-labeling HX requires tens of milligrams of sample and NMR peak assignments for the amides in each protein studied. In addition, probes are limited to amide sites stable to exchange in the final folded state (protection factors of >~80,000) resulting in loss of information at individual sites, which can sometimes represent large regions of the protein. In contrast, detection by mass spectrometry as applied in this study requires much less protein sample, has much faster data collection, and can theoretically cover 100% of the protein sequence. Importantly, this approach does not demand any structural information of the folded state, such as NMR assignments, for the specific protein or variant studied. These advantages enabled us to obtain the stepwise folding pathway of nine variants of RNase H and study the evolutionary history and sequence determinants of the RNase H folding pathway in detail. While pulsed-labeling HX-MS has been used to characterize the folding pathways of several model systems, this study is the first to utilize the higher throughput nature of HX-MS to study an ensemble of protein variants. The advantages of this technique to study many different sequences of the same fold shows great promise for probing the relationship between amino acid sequence and a protein’s energy landscape and will likely be particularly valuable for protein engineering and design applications. Additionally, HX-MS should be also able to identify non-native states, backtracking, and misfolded conformations. We did not, however, observe such phenomena with our RNase H proteins.
 
 Although pulsed-labeling HX-MS is a powerful technique, it is not without limitations. In particular, HX is a readout of the accessibility of the backbone amide to exchange with solvent, so we would not be able to distinguish between different protein conformations with the same protection pattern. Additionally, a variety of factors involved in protein folding from hydrogen bond formation and hydrophobic collapse can contribute to amide protection. Since the protection patterns we observe during folding are all consistent with protected regions in the native state, we see no evidence for non-native structure, indicating a sequential acquisition of native secondary structure.
 
-## Icore is a structurally conserved folding intermediate over 3 billion years of evolution
+### Icore is a structurally conserved folding intermediate over 3 billion years of evolution
 
 The native fold of a protein is robust to changes in sequence, and proteins with >~30% sequence identity share the same fold (Sander and Schneider, 1991). Thus small variations in sequence, such as those found among homologs or site-specific mutations, do not affect the overall three-dimensional structure of a protein. These mutations can, however, affect the overall energy landscape, which in turn can have profound effects on function. Here, we find conservation of a high-energy structure populated during the folding of the RNase H family over incredibly long evolutionary timescales. Using pulsed-labeling HX-MS we identified and characterized the structure of the major folding intermediate in seven ancestral and several mutant RNases H, which together with previous studies on extant homologs, suggest that the conservation of this intermediate is a key feature of the RNase H energy landscape across ~3 billion years of evolutionary time.
 
@@ -100,13 +148,13 @@ Icore could also be conserved because it contributes to the biological function 
 
 While the presence of the Icore intermediate has been observed in all proteins studied here, recent studies have suggested that some of the RNase H variants, notably for proteins along the thermophilic lineage, the Icore folding intermediate may also involve structure in the first β-strand (Lim and Marqusee, 2017; Rosen and Marqusee, 2015; Zhou et al., 2008). While we see slight protection in this region for ttRNH*, hydrogen exchange may not be the best probe of this—docking of Strand 1 without its hydrogen-bonding partners in the rest of the β-sheet may not be reflected by backbone amide protection. Therefore, amide protection may not be observed even if Strand 1 docks early to the core. The involvement of Strand 1 in other RNase H variants studied remains unclear from this study (Lim and Marqusee, 2017; Rosen and Marqusee, 2015).
 
-## Aspects of the folding pathway are malleable across evolutionary time
+### Aspects of the folding pathway are malleable across evolutionary time
 
 Our pulsed-labeling HX-MS results also illustrate how other features of a protein’s energy landscape can be altered over evolutionary timescales. Although the Icore intermediate is conserved across all RNases H studied, the individual folding steps leading up to Icore differ. Anc1*, the last common ancestor, folds through a pathway where the Helix D/Strand 5 region is the first structural element to gain protection. This ancestral feature is maintained along the thermophilic lineage to the extant ttRNH*. Along the mesophilic branch, we observe a switch from this ancient folding pathway to one that first forms protection in Helix A/Strand 4. This suggests that while the structure of Icore has been conserved across 3 billion years of evolution, the steps to form this intermediate are malleable over time. Since an isolated helix is unlikely show protection by HX, we expect additional hydrophobic collapse of the polypeptide to contribute to the observed protection. Nonetheless, the switch in protection between Helix A and Helix D indicates that formation of native structure nucleates in a different region of the protein across the RNase H variants studied, with a clear evolutionary trend.
 
 Despite these trends, it remains difficult to rationalize these observations in terms of a selective evolutionary pressure or fitness implication. These very early events occur on the order of one millisecond, significantly faster than the overall folding of the protein. Furthermore, all of these RNase H proteins fold to their native state efficiently with no evidence for aggregation or misfolding. So, although partially folded states have been implicated as gateways for aggregation for some proteins, (Chiti and Dobson, 2017) this does not appear to be the case for RNase H. It is possible that the change in the early folding step is a result of mutations that are coupled to another feature under selection or drift. Although the actual evolutionary implication for the RNase H folding pathway may be lost in history, the trend in folding pathway across evolutionary time demonstrates that folding pathways and conformations on the energy landscape of proteins can change over time, and this system provides an excellent tool to interrogate the role sequence plays in guiding the process of protein folding.
 
-## The folding pathway of RNase H can be altered using simple sequence changes
+### The folding pathway of RNase H can be altered using simple sequence changes
 
 Our study also shows how insights from evolutionary history can contribute to our understanding of the physiochemical mechanisms dictating the protein energy landscape and how we might use that knowledge to engineer the landscape. The regions that gain protection first involve helical secondary structure elements, and their folding order correlates with isolated helical propensity of these regions predicted by AGADIR (Muñoz and Serrano, 1994). Proteins where protection is first observed in Helix A have higher intrinsic helicity in Helix A than in Helix D. Proteins where Helix D gains protection first exhibit higher helicity in Helix D or roughly equal helicity in both regions. This property was used to guide our site-directed mutagenesis to select variants to alter the folding trajectory of ecRNH* in a predictive manner using intrinsic helicity as a guide.
 
@@ -116,20 +164,261 @@ We have used a combination of ASR and pulsed-labeling HX-MS to explore the confo
 
 ## Materials and methods
 
-## Protein purification
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21 (DE3) Star</td>
+      <td>QB3 Macrolab</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ttRNH* (plasmid)</td>
+      <td>10.1021/bi982684h</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Anc1* (plasmid)</td>
+      <td>10.1371/journal.pbio.1001994</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Anc2* (plasmid)</td>
+      <td>10.1371/journal.pbio.1001994</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Anc3* (plasmid)</td>
+      <td>10.1371/journal.pbio.1001994</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AncA* (plasmid)</td>
+      <td>10.1371/journal.pbio.1001994</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AncB* (plasmid)</td>
+      <td>10.1371/journal.pbio.1001994</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AncC* (plasmid)</td>
+      <td>10.1371/journal.pbio.1001994</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AncD* (plasmid)</td>
+      <td>10.1371/journal.pbio.1001994</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ecRNH* (plasmid)</td>
+      <td>10.1002/pro.5560030906</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ecRNH* A55G (plasmid)</td>
+      <td>this paper</td>
+      <td>n/a</td>
+      <td>A55G point mutant of ecRNH*</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ecRNH* D108L (plasmid)</td>
+      <td>this paper</td>
+      <td>n/a</td>
+      <td>D108L point mutant of ecRNH*</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuikChange Site-Directed Mutagenesis Kit</td>
+      <td>Agilent</td>
+      <td>200519</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Amicon Ultra Protein Concentrator</td>
+      <td>Millipore</td>
+      <td>UFC900324</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Glycine</td>
+      <td>JT Baker</td>
+      <td>4059–06</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Urea</td>
+      <td>IBI Scientific</td>
+      <td>IB72064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Acetate</td>
+      <td>VWR Life Sciences</td>
+      <td>0530–1 KG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Deuterium Oxide</td>
+      <td>Sigma Aldrich</td>
+      <td>151882–100G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trifluoroacetic Acid</td>
+      <td>Sigma Aldrich</td>
+      <td>302031–100 ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acetonitrile</td>
+      <td>Thermo Fisher</td>
+      <td>85188</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ExMS</td>
+      <td>10.1007/s13361-011-0236-3</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HDSite</td>
+      <td>10.1073/pnas.1315532110</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>HDExaminer</td>
+      <td>Sierra Analytics</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Illustrator</td>
+      <td>Adobe</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Software, Inc.</td>
+      <td>n/a</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>POROS 20 R2 Beads</td>
+      <td>Thermo Fisher</td>
+      <td>1112810</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Microbore column</td>
+      <td>Upchurch Scientific</td>
+      <td>C-128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Reverse-phase analytical column</td>
+      <td>Thermo Fisher</td>
+      <td>72205–050565</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>POROS 20 AL Beads</td>
+      <td>Thermo Fisher</td>
+      <td>1602810</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Pepsin (porcine)</td>
+      <td>Sigma Aldrich</td>
+      <td>P6887</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide,  recombinant protein</td>
+      <td>Fungal Protease Type-XIII</td>
+      <td>Sigma Aldrich</td>
+      <td>P2143</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Pfu polymerase</td>
+      <td>Agilent</td>
+      <td>600353</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Protein purification
 
 Cysteine-free T. thermophilus RNase H and ancestral RNases H were expressed and purified as previously described (Hart et al., 2014; Robic et al., 2002; Hollien and Marqusee, 1999). Point mutants were generated using site-directed mutagenesis, confirmed by Sanger sequencing, and the proteins were purified as previously described (Dabora and Marqusee, 1994). Purity was confirmed by SDS-PAGE and mass spectrometry.
 
-## HX-MS system
+### HX-MS system
 
 Hydrogen exchange mass spectrometry (HX-MS) experiments were carried out using a system similar to that described by Mayne et al (Walters et al., 2012; Mayne et al., 2011). Briefly, a Bio-Logic SFM-4/Q quench flow mixer with a modified head piece with reduced swept volume was used to initiate protein refolding, followed by pulse-labeling unprotected amide hydrogen atoms, and quenching of the labeling reaction. The minimum dead time for mixing is 13 msec. Quenched samples were injected into an HPLC system constructed using two Agilent 1100 HPLC instruments. The quenched sample was flowed over columns (Upchurch C130B) packed with beads of immobilized pepsin and fungal protease at 400 μL/min in 0.05% TFA. The digested protein was run onto a C-4 trap column (Upchurch C-128 with POROS R2 beads) for desalting. An acetonitrile gradient (15 – 100% acetonitrile, 0.05% TFA at 17 μL/min) eluted peptides from this C-4 trap column and onto an analytical C-8 column (Thermo 72205–050565) for separation before injection into an ESI source for mass spectrometry analysis on a Thermo Scientific LTQ Orbitrap Discovery. The entire HPLC system is kept submerged in an ice bath at 0°C to reduce back exchange of deuterium atoms during the chromatography steps. The workflow takes ~10–18 min from injection to peptide detection.
 
-## Refolding experiment
+### Refolding experiment
 
 Similar to previous reports, (Hu et al., 2013; Mayne et al., 2011) unfolded protein samples in high denaturant (80 μM [protein], 20 mM NaOAc pH = 4.1, 7–9 M [urea]) were deuterated by a repeated cycle of lyophilization and resuspension in D2O and full deuteration was confirmed by mass spectrometry. For the pulsed-labeling experiment, 1 volume of deuterated protein was mixed in the SFM-4/Q with 10 volumes of refolding buffer (10 mM Sodium Acetate pH = 5.29, H2O) to initiate refolding. The pulse for hydrogen exchange was initiated by mixing with 5 volumes of high pH buffer (100 mM Glycine pH = 10.11) and then quenched after 10 msec with five volumes low pH buffer (200 mM Glycine pH = 1.95). The length of the delay line between the first and second mixer was changed to achieve a range of refolding times. An interrupted mixing protocol was used to measure the longest refolding time points (>373 msec). Undeuterated protein was used to perform tandem mass spectrometry (MS/MS) analysis to compile a list of peptides and their retention times in the HPLC system. Competition experiments where refolding and exchange were initiated at the same time were performed by diluting deuterated protein in high urea into high-pH refolding buffer (100 mM Glycine pH = 10.11). In this experiment each site will exchange with the solvent around it unless it can gain protection before exchange occurs (<1 msec on average). Fully folded controls were created by diluting unfolded protein samples 1:10 in fully deuterated refolding buffer and incubating at room temperature for 4 hrs before loading on the SFM-4/Q to apply the same 10 msec high-pH pulse as the other time points. All data were obtained in triplicate.
 
 For each time point, an identical sample was collected in which the high pH pulse was omitted to measure the back-exchange (the amount of deuterium lost during the sample workup, from the quench to the injection into the mass spectrometer) for each sample. Typical back-exchange ranged from 10 – 20%, and all data except for ttRNH* were normalized to the observed back-exchange value. Data for ttRNH* were normalized to the theoretical maximum number of deuterons due to consistently poor peptide coverage in the back-exchange controls for this protein.
 
-## MS detection and data analysis
+### MS detection and data analysis
 
 Proteome Discoverer 2.0 (Thermo Scientific) was used to identify peptides from the tandem MS data. Peptides identified in the pulsed-labeled refolding experiments with deuterated protein were used to determine the presence and deuteration level of each peptide at each refolding time point. The spectral envelope of each peptide was fit using two separate algorithms developed by the Englander Lab to determine their deuteration state — ExMS for identification and fitting of peptides and HDsite for deconvolution of overlapping peptides to achieve near-amino acid level deuteration levels (Kan et al., 2013; Kan et al., 2011). Site-resolution was determined by peptide coverage of each protein at each time point. If adjacent residues were not site-resolved by peptide coverage but their normalized fraction deuterium value was within <0.1 of each other, these residues were also considered to be site-resolved. In addition, HDExaminer (Sierra Analytics) was used to identify and fit each peptide and determine deuteration levels. Different charge states of the same peptide were averaged where noted and used for further analysis. Centroids of each peptide at each time point taken from HDExaminer were used for further analysis. The residue cutoffs for specific structural regions of each protein were determined from a multiple sequence alignment using the structure of E. coli RNase H as a guide (PDB: 2RN2) (Hart et al., 2014). Peptides were assigned to different structural regions based on these residue cutoffs. Peptides that spanned multiple secondary structural regions of a protein were excluded from further analysis, as were peptides not present in all time points. Peptides mapping to Strands 1 – 3 and Helix E were assigned to the periphery region of the protein. Peptides mapping to Helix A-D and Strands 4 – 5 were assigned to the core region of the protein. Comparison of protection from different groups was carried out using GraphPad Prism (GraphPad Software). Peptides from all experimental replicates were aggregated, and the distributions of groups were compared pairwise using Welch's unequal variances t-test. Statistically significant differences in the mean are reported with their associated p-values throughout the text and figures where appropriate.

@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.36422.001 The importance of genome replication has inspired detailed crystallographic studies of enzymatic DNA/RNA polymerization. In contrast, the mechanism of nonenzymatic polymerization is less well understood, despite its critical role in the origin of life. Here we report the direct observation of nonenzymatic RNA primer extension through time-resolved crystallography. We soaked crystals of an RNA primer-template-dGMP complex with guanosine-5′-phosphoro-2-aminoimidazolide for increasing times. At early times we see the activated ribonucleotides bound to the template, followed by formation of the imidazolium-bridged dinucleotide intermediate. At later times, we see a new phosphodiester bond forming between the primer and the incoming nucleotide. The intermediate is pre-organized because of the constraints of base-pairing with the template and hydrogen bonding between the imidazole amino group and both flanking phosphates. Our results provide atomic-resolution insight into the mechanism of nonenzymatic primer extension, and set the stage for further structural dissection and optimization of the RNA copying process.
+The importance of genome replication has inspired detailed crystallographic studies of enzymatic DNA/RNA polymerization. In contrast, the mechanism of nonenzymatic polymerization is less well understood, despite its critical role in the origin of life. Here we report the direct observation of nonenzymatic RNA primer extension through time-resolved crystallography. We soaked crystals of an RNA primer-template-dGMP complex with guanosine-5′-phosphoro-2-aminoimidazolide for increasing times. At early times we see the activated ribonucleotides bound to the template, followed by formation of the imidazolium-bridged dinucleotide intermediate. At later times, we see a new phosphodiester bond forming between the primer and the incoming nucleotide. The intermediate is pre-organized because of the constraints of base-pairing with the template and hydrogen bonding between the imidazole amino group and both flanking phosphates. Our results provide atomic-resolution insight into the mechanism of nonenzymatic primer extension, and set the stage for further structural dissection and optimization of the RNA copying process.
 
 ## Introduction
 
@@ -35,11 +35,19 @@ Inspired by the above studies, we conducted a time-resolved analysis of nonenzym
 
 ## Results
 
-## Structure of the primer-template duplex co-crystallized with dGMP
+### Structure of the primer-template duplex co-crystallized with dGMP
 
 In order to follow nonenzymatic primer extension by crystallography, we first prepared crystals of an RNA primer-template complex in which unactivated monomers were bound to the template region. These crystals were used in crystal soaking experiments to exchange the unactivated monomers with activated monomers or the reaction intermediate. To facilitate comparison with previously obtained structures, we used the same partially self-complementary RNA 14-mer oligonucleotide that we used in our structural studies of the stable substrate analogues guanosine 5′-(3-methyl-1H-pyrazol-4-yl)phosphonate (PZG) and guanosine 5′-(4-methylimidazolyl) phosphonate (ICG), and the stable intermediate analogue GpppG (Zhang et al., 2016; Zhang et al., 2017; Zhang et al., 2018). Our attempts to crystallize a native RNA-monomer complex led to a highly disordered flanking template regions with no evidence for bound monomers. We therefore chose to use the oligoribonucleotide 5′-CCCGACUUAAGUCG-3′ which contains four locked nucleic acid (LNA) residues, denoted by italics. The LNA modification locks the sugar into the C3′-endo A-form conformation characteristic of a canonical RNA duplex. The two-nucleotide template overhang is composed of 5-methyl cytidine LNA to rigidify the backbone and facilitate crystallization. This duplex was co-crystallized with 2′-deoxyguanosine-5′-monophosphate (dGMP), to bind the template before soak-in experiments (Figure 1C). The use of dGMP allows unambiguous observation of the replacement of the initially bound deoxynucleotides with activated ribonucleotides during crystal soaking experiments, based upon the appearance of the electron density of the 2′-hydroxyl. Since the pyrazole and imidazole groups of monomer analogues are often disordered, the imidazole groups of the 2-AIpG would not be a reliable indicator of molecular exchange. Several other modified monomers, including 8-bromoguanosine, guanosine-3′-monophosphate and guanosine 3′,5′-cyclic monophosphate, were tested for crystallization with the RNA duplex without success, possibly due to steric perturbation of molecular packing.
 
 At both ends of the crystallized duplex, the two dGMP monomers bound to the -CC template in a well defined conformation (Figure 2A), exclusively through Watson-Crick base-pairing (Figure 2B). This result contrasts with our previous study of the RNA monomer analogues PZG and ICG, which displayed a variety of binding modes in addition to Watson-Crick base-pairing (Zhang et al., 2016; Zhang et al., 2018). The sugar and phosphate of the first bound dGMP (in the +1 position adjacent to the 3′ end of the primer) are well ordered, with the sugar in a C3′-endo A-form conformation. At the +2 position, the electron density clearly indicates the sugar is in the C3′-exo B-form conformation, but the phosphate is disordered. Previous crystal structures of DNA-RNA hybrid duplexes have shown DNA sugar puckers in both C3′-endo and C3′-exo conformations (Horton and Finzel, 1996). In contrast, our previous measurement using transferred nuclear Overhauser effect spectroscopy (TrNOESY) indicated that DNA monomers bound to an RNA template maintained a C2′-endo conformation (Zhang et al., 2012). This difference may result from the LNA template used for crystallization, sequence differences or crystal packing forces.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/36422/elife-36422-fig2-v1.jpg)
+
+**Figure 2.:** (A) One dimeric RNA duplex (purple with yellow backbone) is bound by two dGMP monomers (cyan) at each end. (B) dGMP monomers in the +1 and+2 position of the template form Watson-Crick base pairs. Wheat meshes indicate the corresponding Fo-Fc omit maps contoured at 2.0 σ. (C) A Mg2+ ion with coordinating water molecules form extended contacts between the 3′ end of the primer and both template-bound monomers through hydrogen bonds with N7. Wheat meshes indicate the corresponding Fo-Fc omit maps contoured at 1.0 σ. (D) Top and side views of RNA-dGMP complex packing in crystal. Molecular packing of the RNA-dGMP complex shows a possible channel (dashed circle and oval) for diffusion of small molecules through the crystal.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/36422/elife-36422-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Similar to the RNA-dGMP complex, the RNA duplex (red with yellow backbone) crystallizes with two bound GMP monomers (cyan) at each end. (B) Close up view of the template-bound GMP monomers showing a Sr2+ ion (blue sphere) with a coordinating water molecule (red sphere) interacting with the N7 of monomers in the +1 and+2 position. Wheat mesh indicates the corresponding Fo-Fc omit map contoured at 4.0 σ. Interaction distances are labeled.
 
 In the crystal structure of the RNA duplex with dGMP, we also clearly observed electron density near the N7 of the first template-bound dGMP that appears to represent a Mg2+ ion based on its octahedrally coordinated waters (Figure 2C); Mg2+ was present in the crystallization buffer. Two water molecules coordinated to the presumed Mg2+ are located within hydrogen bonding distance of N7 and O6 of the primer guanosine (distances 2.8 Å and 2.6 Å). A third water molecule coordinated to the presumed Mg2+ is within hydrogen bonding distance of O6 of the first bound monomer, and is also hydrogen bonded to a fourth water molecule that appears to be hydrogen bonded to N7 of the second bound monomer (distances 3.0 Å, 2.7 Å and 2.8 Å). These proposed Mg2+-mediated electrostatic and hydrogen-bonding interactions bridge the two bound monomers and the primer, and thus potentially stabilize the template-bound structure of dGMP.
 
@@ -47,19 +55,136 @@ To confirm the proposed Mg2+-guanosine interaction, we replaced Mg2+ with Sr2+ i
 
 Importantly, we observed a large channel in between the slip-stacked RNA duplexes that could allow activated substrates to reach the template by diffusion (Figure 2D). As in our previous studies, the self-complementary RNA duplex complexed with dGMP crystallized with hexagonal symmetry (space group P3121). The individual RNA-monomer double helices are slip-stacked with one another end-to-end, and groups of three adjacent duplexes form a triangular prism-like structure (Figure 2D, side view). Groups of three of these triangular prisms are in turn arranged in a triangular lattice, with a large central channel with a diameter of approximately 30 Å (Figure 2D, top view). This channel should allow mononucleotides or dinucleotides to diffuse into the crystal and bind the template in place of dGMP.
 
-## Structure of the imidazolium-bridged intermediate bound to an RNA template
+### Structure of the imidazolium-bridged intermediate bound to an RNA template
 
 Having obtained crystals of the RNA-dGMP complex, we sought to replace the bound dGMP residues with purified imidazolium-bridged diguanosine intermediate (Gp-AI-pG). We soaked the crystals in buffer containing Gp-AI-pG for various times to allow the intermediate to diffuse into the crystal. No Mg2+ was included in either the crystallization or soak buffers, to improve the solubility and stability of the Gp-AI-pG. The Gp-AI-pG molecule was observed by crystal structure determination to bind the template in place of dGMP, and optimal structures were obtained after 4 hr of soaking the crystals in the exchange buffer. In the conditions used for crystal soaking, Gp-AI-pG decays with a half-life of 10 hr as observed by 31P NMR, indicating that the majority of Gp-AI-pG remains intact during this experiment (Figure 3—figure supplement 1). In the crystal structures, Gp-AI-pG binds the -CC template at both ends of the RNA duplex exclusively through Watson-Crick base-pairing (Figure 3A), with hydrogen bond distances of 2.8 to 3.3 Å. Similar to our previous analysis of the analog GpppG, the Gp-AI-pG intermediate is well-ordered and displays only the C3′-endo sugar conformation. The 4.6 Å distance between the 3′-hydroxyl and the phosphate of the nucleotide in the +1 position is shorter than the corresponding 6 to 6.5 Å distance for the 2′-hydroxyl, consistent with the observed 3′ regioselectivity of polymerization using 2-methyl and 2-aminoimidazole activated monomers (Inoue and Orgel, 1981; Giurgiu et al., 2017).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/36422/elife-36422-fig3-v1.jpg)
+
+**Figure 3.:** (A) Structure of RNA duplex (purple with yellow backbone) bound by two Gp-AI-pG molecules (cyan) obtained after 4 hr of soaking the RNA-dGMP complex in buffer containing Gp-AI-pG. (B) Close-up of template-bound Gp-AI-pG modeled with the 2-amino group of the imidazolium bridge pointing toward the major groove and (C) minor groove. Distances for hydrogen bonds and in-line attack by the primer 3′-hydroxyl are indicated by dashed lines. Wheat meshes indicate the corresponding Fo-Fc omit maps contoured at 1.5 σ.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/36422/elife-36422-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** 31P NMR spectra of 3.5 mM Gp-AI-pG after 10 min (A) or 4 hr (B) of incubation in crystal soaking buffer (5% v/v (+/-)−2-methyl-2, 4-pentanediol, 20 mM sodium cacodylate pH 7.0, 6 mM spermine tetrahydrocholoride, 40 mM sodium chloride). The peak at −12.91 ppm corresponds to Gp-AI-pG, and −12.26 ppm to 2-AIpG. The peak at 6.01 ppm may correspond to reaction with the buffer. The peak for GMP is too broad to be observed at these concentrations. (C) Quantification of the decay of Gp-AI-pG in a pseudo-first order rate plot. The slope is equal to the negative of the first order rate constant k = (6.8 ± 0.1) x 10−2 h−1. This corresponds to a half-life of 10.2 ± 0.2 hr under these conditions. The experiment was performed in triplicate.
 
 The two guanosine-5′-phosphate residues of Gp-AI-pG are linked by the 2-aminoimidazolium bridge. The electron density corresponding to the phosphate-aminoimidazole-phosphate bridge suggests that its structure is stabilized by hydrogen bonds between the 2-amino group of the imidazolium moiety and the non-bridging oxygen atoms of the flanking phosphates (Figure 3B–C). Unfortunately, the observed electron density does not clearly indicate whether the 2-amino group of the imidazolium bridge is pointing toward the major or minor groove of the duplex. The Gp-AI-pG intermediate is modeled in the two different orientations in Figure 3B–C. It may be that the two orientations are randomly distributed throughout the crystal. The orientation of the 2-aminoimidazolium group affects the distances and angle of attack between the primer 2′- or 3′-hydroxyl and the P-N bond to be broken during phosphodiester bond formation. For the 3′-hydroxyl, the distance to the phosphorous atom is 4.6 Å in both orientations, but the angle of attack changes from 170° when the 2-amino points toward the minor groove, to 132° when it points towards the major groove. For the 2′-hydroxyl, the angle decreases from 148° to 129° but the distance increases from 6.0 to 6.5 Å when the 2-amino group points towards the major groove. These results suggest that rotation of the 2-aminoimidazolium group between the two phosphates may affect the rate and regioselectivity of nonenzymatic RNA polymerization.
 
 A comparison between template-bound dGMP and Gp-AI-pG reveals similar overall structures (Table 1). A key difference is the decreased distance between the 3′-hydroxyl of the primer and the phosphate in the +1 position, from 6.5 Å for bound dGMP to 4.6 Å for template-bound Gp-AI-pG. This decreased distance is likely due to the constraint imposed by the imidazolium-bridge of Gp-AI-pG. No monovalent metal ions or water molecules are observed close to the N7 positions of Gp-AI-pG or the 3′ G of the primer.
 
-## Structural visualization of nonenzymatic primer extension
+**Table 1.**
+ Crystallographic and structural features of RNA-ligand complexes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th rowspan="2">RNA- dGMP</th>
+      <th rowspan="2">RNA- Gp-AI-pG</th>
+      <th colspan="7">Time-resolved structures (RNA-2-AIpG)</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>Stage 1 (5 min)</th>
+      <th>Stage 2 (15 min)</th>
+      <th>Stage 3 (30 min)</th>
+      <th>Stage 4 (1 h)</th>
+      <th>Stage 5 (1.5 h)</th>
+      <th>Stage 6 (2 h)</th>
+      <th>Stage 7 (3 h)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDB code</td>
+      <td>6C8D</td>
+      <td>6C8E</td>
+      <td>6C8I</td>
+      <td>6C8J</td>
+      <td>6C8K</td>
+      <td>6C8L</td>
+      <td>6C8M</td>
+      <td>6C8N</td>
+      <td>6C8O</td>
+    </tr>
+    <tr>
+      <td>Ligand binding modes</td>
+      <td>Watson-Crick</td>
+      <td>Watson-Crick</td>
+      <td>mixed</td>
+      <td>Watson-Crick</td>
+      <td>Watson-Crick</td>
+      <td>Watson-Crick</td>
+      <td>Watson-Crick</td>
+      <td>Watson-Crick</td>
+      <td>Watson-Crick</td>
+    </tr>
+    <tr>
+      <td>N7 interaction</td>
+      <td>Mg2+</td>
+      <td>N.D.</td>
+      <td>H2O</td>
+      <td>H2O</td>
+      <td>N.D.</td>
+      <td>N.D.</td>
+      <td>N.D.</td>
+      <td>N.D.</td>
+      <td>N.D.</td>
+    </tr>
+    <tr>
+      <td>3ʹ-O-P distance, Å</td>
+      <td>~6.1</td>
+      <td>4.6</td>
+      <td>3.7–4.1</td>
+      <td>~5.0</td>
+      <td>~4.3</td>
+      <td>4.1–5.0</td>
+      <td>1.6–4.2</td>
+      <td>1.6–4.1</td>
+      <td>1.6</td>
+    </tr>
+    <tr>
+      <td>P-P distance between monomers, Å</td>
+      <td>N.D.</td>
+      <td>~5.1</td>
+      <td>N.D.</td>
+      <td>6.2</td>
+      <td>5.2</td>
+      <td>5.2–5.4</td>
+      <td>5.5–7.1</td>
+      <td>5.0–7.3</td>
+      <td>~6.2</td>
+    </tr>
+    <tr>
+      <td>N7-N7 distance between primer and + 1 monomer, Å</td>
+      <td>4.2</td>
+      <td>3.7–4.0</td>
+      <td>3.9–4.1</td>
+      <td>4.0</td>
+      <td>3.7–4.0</td>
+      <td>3.7–4.2</td>
+      <td>3.7–4.3</td>
+      <td>3.7–4.1</td>
+      <td>4.1</td>
+    </tr>
+  </tbody>
+</table>
+
+_N.D.: not detectable_
+
+### Structural visualization of nonenzymatic primer extension
 
 Encouraged by our success at soaking the reactive Gp-AI-pG intermediate into preformed crystals of the RNA duplex, we asked whether soaking the activated monomer 2-AIpG into the crystal in the presence of Mg2+ might lead to formation of the intermediate, possibly followed by reaction with the primer in the crystal. We therefore grew crystals of the RNA duplex in buffer at pH 7.0 containing dGMP and 20 mM Mg2+. The RNA-dGMP crystals were then transferred to a new drop of the same pH 7.0 crystallization buffer, containing 20 mM 2-AIpG and 20 mM Mg2+. Crystal soaking was terminated by equilibrating the crystal in cryo-protectant (35% 2-methyl-2,4-pentanediol, MPD) for 2 min followed by storage in liquid nitrogen prior to analysis. In the crystallization buffer, only 8% of the 2-AIpG decayed in 3 hr as determined by 31P NMR, indicating that the majority of the monomer remains activated during these experiments (Figure 4—figure supplement 1).
 
 After 5 min of soaking in exchange buffer containing 2-AIpG, the dGMP monomers co-crystallized with the RNA duplex had already been replaced by 2-AIpG monomers (Figure 4A). The rapid diffusion and exchange of the monomer 2-AIpG relative to the dimer Gp-AI-pG is clear from the appearance of the electron density of the 2′-hydroxyl in these structures, which cannot come from dGMP. The faster diffusion of the 2-AIpG monomer into the crystal is likely due to its smaller size. At this early time point, the 2-AIpG monomer at the +1 position is bound through Watson-Crick base pairing, but the monomer at the +2 position is bound through a non-canonical interaction. This atypical hydrogen bonding pattern has been observed in our previous studies of analogues for the guanosine-5′-phosphoro-2-methylimidazole monomer (Zhang et al., 2016). However, the 2-AIpG monomers in both the +1 and +2 positions are Watson-Crick base paired in the crystal structure obtained after 15 min of soaking the crystal (Figure 4B). These results further suggest that a variety of interactions are possible between monomers and the template during primer extension reactions. It is interesting to note that the distance between the primer 3′-hydroxyl and the 5′-phosphate of the incoming monomer increases when both monomers are bound to the template in Watson-Crick conformation (Table 1). In addition, we again observe electron density, likely corresponding to Mg2+ and coordinated water molecules, that bridges from N7 of the 3′-G of the primer to N7 of the 2-AIpG monomer in the +1 position.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/36422/elife-36422-fig4-v1.jpg)
+
+**Figure 4.:** Wheat meshes in all structures indicate the corresponding Fo-Fc omit maps contoured at 1.5 σ. (A) Structure after 5 min of soaking shows 2-AIpG monomer binding template through Watson-Crick and non-canonical base pairing. Inset also shows electron density belonging to 2′-hydroxyl (red dashed circle) and water molecules (red dots) that interact with N7 guanosine bases. (B) Structure after 15 min soaking shows both 2-AIpG monomers bound through Watson-Crick base pairing. Inset shows two water molecules that bridge the first monomer to the primer. (C) Structures after 30 min and (D) 1 hr of soaking shows the imidazolium-bridged Gp-AI-pG intermediate bound to the template. (E) Structures after 1.5 hr, and (F) 2 hr show a mix of template-bound Gp-AI-pG and extended primer (red dashed circle) (G) After 3 hr soaking, the electron density predominantly corresponds to the extension product.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/36422/elife-36422-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** 31P NMR spectra of 20 mM 2-AIpG after 3 min (A) or 3 hr (B) of incubation in crystal soaking buffer (5% v/v (+/-) −2-methyl-2, 4-pentanediol, 20 mM sodium cacodylate pH 7.0, 6 mM spermine tetrahydrocholoride, 40 mM sodium chloride) with 20 mM MgCl2. The large peak at −11.11 ppm corresponds to 2-AIpG. During the three hours of incubation, only 7.8% of the monomer decays, mostly to an unknown product corresponding to the peak at 5.99 ppm that may represent reaction with a buffer component. The small peak at −12.92 ppm corresponds to Gp-AI-pG. The experiment was performed in triplicate.
 
 Structures obtained after continued incubation of the crystals with activated monomer 2-AIpG reveal the gradual appearance of the imidazolium-bridged dinucleotide Gp-AI-pG. While the 2-aminoimidazole groups are largely disordered and the imidazolium bridge is not observed in the structures obtained after 5 and 15 min of soaking, new density corresponding to formation of the imidazolium bridge clearly emerges after 30 min to 1 hr of soaking (Figure 4C–D). In addition, the ~6.2 Å (15 min) distance between the two phosphorus atoms of separate monomers decreases to 5.2 Å, very close to the 5.1 Å distance observed for the template-bound structure of Gp-AI-pG (Table 1). Similar to the structure obtained by soak-in of Gp-AI-pG (Figure 3), these structures show the dinucleotide intermediate bound to the template through two Watson-Crick base pairs and an imidazolium bridge that is ordered through hydrogen bonds between the 2-amino group and the non-bridging oxygen atoms of the phosphates. These results suggest that the 2-AIpG monomers are reacting inside the crystal to form the dinucleotide intermediate Gp-AI-pG.
 
@@ -75,7 +200,73 @@ Many important aspects of phosphodiester bond formation between the primer and t
 
 ## Materials and methods
 
-## Preparation of oligonucleotides, RNA crystallization, data collection, and structure determination
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>synthetic RNA</td>
+      <td>Exiqon Inc.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial kit</td>
+      <td>Crystallization Screening kits</td>
+      <td>Hampton research, Inc.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Refmac5</td>
+      <td>University of Cambridge DOI: 10.1107/S0907444996012255</td>
+      <td>RRID:SCR_014225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>HKL2000</td>
+      <td>HKL Research Inc. DOI: 10.1016/S0076-6879(97)76066-X</td>
+      <td>RRID:SCR_015547</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Phaser 2.7</td>
+      <td>University of Cambridge DOI: 10.1107/S0021889807021206</td>
+      <td>RRID:SCR_014219</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>MestReNova</td>
+      <td>Mestrelab Research, Inc.</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Pymol2</td>
+      <td>Schrödinger, Inc.</td>
+      <td>RRID:SCR_000305</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Preparation of oligonucleotides, RNA crystallization, data collection, and structure determination
 
 The oligonucleotide 5′-CCCGACUUAAGUCG-3′ was synthesized in-house by standard solid-phase techniques using native and locked nucleoside phosphoramidites from Exiqon Inc., followed by HPLC purification. C denotes LNA 5-methylcytidine residues and G denotes LNA guanosine residues, while A, C, G and U denote unmodified RNA residues. For the annealing step prior to crystallization, the RNA duplex (1 mM) was mixed with an equal volume of dGMP (50 mM) and heated to 80o C for 2 min before being slowly cooled to room temperature. All crystals were grown at 18o C. The Nucleic Acid Mini Screen Kit, Natrix High Throughput Kit and Index High Throughput Kit (Hampton Research, Aliso Viejo, CA) were used for screening crystallization conditions by the hanging drop or sitting drop vapor diffusion methods. Optimal crystals grew in a crystallization buffer of 5% v/v (+/-)−2-methyl-2, 4-pentanediol, 20 mM sodium cacodylate pH 7.0, 6 mM spermine tetrahydrochloride, 40 mM sodium chloride, and 20 mM magnesium chloride. Crystals used for soak-in of Gp-AI-pG were obtained under identical conditions except that magnesium chloride was omitted. For crystallization of the RNA duplex with GMP, 20 mM SrCl2 was added in place of MgCl2. To soak 2-AIpG or Gp-AI-pG into crystals of the RNA duplex with dGMP, the preformed crystals were first stabilized in a drop containing crystallization buffer for 20 min. Then, the crystals were transferred to a drop containing crystallization buffer containing 20 mM Gp-AI-pG or 2-AIpG and incubated for various amounts of time to allow diffusion of the molecules into the crystal. As with the crystallization procedure, Mg2+ was omitted for soaking Gp-AI-pG into the crystal. After incubation with the activated substrates, the crystal was dipped into cryo-protectant (35% MPD) for 2 min and then placed in liquid nitrogen.
 
@@ -83,6 +274,6 @@ All crystal diffraction data were collected under a stream of nitrogen at 99 K. 
 
 The structures at 1.5 and 2 hr were refined as mixtures of the intermediate state and product state.
 
-## Preparation of activated substrates 2-AIpG and Gp-AI-pG and analysis of decay
+### Preparation of activated substrates 2-AIpG and Gp-AI-pG and analysis of decay
 
 2-AIpG and Gp-AI-pG were synthesized and purified as previously described (Li et al., 2017; Zhang et al., 2017). To characterize the stability of these substrates during the crystal soaking procedure, samples of 2-AIpG and Gp-AI-pG were prepared in crystallization buffer and monitored by 31P NMR. These samples were placed in a Shigemi tube with a co-axial insert containing D2O for locking the NMR signal. All NMR spectra were taken on a Varian INOVA 400 MHz NMR spectrometer at 25°C and analyzed by integration of peaks using MestReNova software. 31P NMR signals are referenced to internal trimethyl phosphate added after the experiments. The NMR spectra were shown in Figure 3—figure supplement 1 and Figure 4—figure supplement 1.

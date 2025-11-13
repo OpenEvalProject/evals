@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02jx3x895 Department of Neuromuscular Diseases and UCL Queen Square Motor Neuron Disease Centre, UCL Queen Square Institute of Neurology, University College London London United Kingdom
-2. https://ror.org/02wedp412 UK Dementia Research Institute at UCL London United Kingdom
+1. Department of Neuromuscular Diseases and UCL Queen Square Motor Neuron Disease Centre, UCL Queen Square Institute of Neurology, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+2. UK Dementia Research Institute at UCL London United Kingdom ([ROR:02wedp412](https://ror.org/02wedp412))
 
 † Corresponding author
 
@@ -28,65 +28,91 @@ In this work, we specifically focused on Rab10 since it has been shown that Rab1
 
 ## Results
 
-## Decreasing the expression of Rab10 in neurons
+### Decreasing the expression of Rab10 in neurons
 
 To manipulate Rab10 expression levels in hippocampal neurons, we used a lentiviral system encoding a doxycycline-inducible short hairpin RNA (shRNA). We monitored the effects of this virus on cell viability and expression levels of Rab10 and TrkB at different time points after addition of doxycycline. We observed that 48 hr of treatment consistently halved the number of cells per field compared to control group, whereas incubation for 24 hr did not affect neuronal density (Figure 1a and b). Rab10 immunoreactivity appeared significantly decreased at both 24 and 48 hr after addition of doxycycline compared to control lentivirus (Figure 1a and c). Finally, we monitored expression levels of TrkB receptors, to confirm that this system allows the study of the trafficking of the endogenous receptor upon Rab10 knockdown. We observed comparable levels of TrkB even at 48 hr of treatment with shRNA Rab10 (Figure 1d).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/81532/elife-81532-fig1-v1.jpg)
 
-**Figure 1.:** (a) Representative fields of a primary mass culture of hippocampal neurons transduced with shRNA Rab10 versus control and treated with doxycycline for 48 hr. Cells have been immunolabelled for MAP2 (grey) and Rab10 (colour scale 0–255). Scale bar = 50 µm. (b) Cell density was quantified in 18 fields per treatment across three independent experiments, showing a significant decrease after 48 hr. Two-way ANOVA, F(1,68), p value for knockdown = 0.0270, p value for time = 0.0406, p value for interaction = 0.2114 (non-significant). The p values for Bonferroni multiple comparison tests, t(68), are indicated in the plot. (c) In the same experiments, immunoreactivity for Rab10 was quantified per cell at 12, 24, and 48 hr with doxycycline, and analysed using two-way ANOVA (p value for knockdown, time, and interaction <0.0001); p values for Bonferroni multiple comparison tests, t(68), are indicated in the plot and show a significant effect of the shRNA at 24 and 48 hr. (d) Representative low-magnification fields showing no difference on immunoreactivity for TrkB in hippocampal neurons treated with shRNA Rab10 versus control after 48 hr with doxycycline. The right panel shows zoomed boxes with TrkB (orange) and MAP2 (grey). Source data of the plots have been included in Figure 1—source data 1.Figure 1—source data 1.Figure 1 are given as individual CSV files.
+**Figure 1.:** (a) Representative fields of a primary mass culture of hippocampal neurons transduced with shRNA Rab10 versus control and treated with doxycycline for 48 hr. Cells have been immunolabelled for MAP2 (grey) and Rab10 (colour scale 0–255). Scale bar = 50 µm. (b) Cell density was quantified in 18 fields per treatment across three independent experiments, showing a significant decrease after 48 hr. Two-way ANOVA, F(1,68), p value for knockdown = 0.0270, p value for time = 0.0406, p value for interaction = 0.2114 (non-significant). The p values for Bonferroni multiple comparison tests, t(68), are indicated in the plot. (c) In the same experiments, immunoreactivity for Rab10 was quantified per cell at 12, 24, and 48 hr with doxycycline, and analysed using two-way ANOVA (p value for knockdown, time, and interaction <0.0001); p values for Bonferroni multiple comparison tests, t(68), are indicated in the plot and show a significant effect of the shRNA at 24 and 48 hr. (d) Representative low-magnification fields showing no difference on immunoreactivity for TrkB in hippocampal neurons treated with shRNA Rab10 versus control after 48 hr with doxycycline. The right panel shows zoomed boxes with TrkB (orange) and MAP2 (grey). Source data of the plots have been included in Figure 1—source data 1.
 
-## Rab10 is required for retrograde TrkB trafficking and signalling
+### Rab10 is required for retrograde TrkB trafficking and signalling
 
 To study axonal TrkB dynamics, we cultured hippocampal neurons in microfluidic chambers, which allow the cellular and fluidic compartmentalisation of axon terminals. After 7 days in vitro, neurons plated in one of the compartments (designated as ‘somatic’) displayed axons reaching the axonal compartment (Figure 2a). Maintaining a higher volume of media in the somatic compartment allows a micro-flow along the grooves, keeping any substance added to the axonal compartment confined. Using this experimental set-up, we incubated axon terminals with an antibody against the extracellular domain of TrkB and induced its endocytosis by adding 20 ng/mL BDNF. After 2.5 hr, we were able to detect axonal TrkB in the cell body of neurons stimulated with BDNF, but not in neurons depleted of BDNF by addition of an anti-BDNF-blocking antibody (Figure 2b), confirming the specificity of the antibody and the overall reliability of our retrograde accumulation assay.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/81532/elife-81532-fig2-v1.jpg)
 
-**Figure 2.:** (a) Schematic of two-compartment microfluidic chambers highlighting compartmentalisation of somata (left) and axon terminals (right). Micro-flow from somatic to axonal compartments provides fluidic isolation of the somatic compartment to probes added to the other chamber. (b) Representative images from the cell bodies of neurons incubated for 2.5 hr with anti-TrkB in the axonal compartment, with (+) or without (-) brain-derived neurotrophic factor (BDNF). Pink arrowheads indicate examples of retrogradely transported TrkB-positive organelles. Scale bar: 10 µm. (c) Neurons treated with the shRNA targeting Rab10 were compared to control transduced neurons. Immunofluorescence revealed similar neuronal density (see ßIII-tubulin in orange and nuclear staining in green, top panel), but a decrease in both, expression of Rab10 (grey, middle panel) and retrograde accumulation of TrkB after 2.5 hr (colour intensity scale, bottom panel). Scale bar: 50 µm. (d) Quantification of retrograde TrkB accumulation in three independent experiments show statistically significant differences (unpaired Student’s t-test, t(140), p<0.0001). (e) Correlation between expression level of Rab10 and retrograde TrkB accumulation in control and Rab10-knockdown neurons show a significant linear correlation (goodness-of-fit R2=0.61; Pearson r, XY pairs = 131, p<0.0001). (f) Axonal stimulation with BDNF for 2.5 hr leads to robust appearance of phosphorylated CREB in the nucleus of control neurons (left panel). This response was impaired in neurons depleted of Rab10 (middle panel), and rescued by the co-expression of a shRNA-resistant mutant Rab10 (right panel). Immunofluorescence for Rab10 is shown in grey, with the nuclei indicated with a pink mask, and nuclear phosphorylated CREB is shown in a colour intensity scale. Scale bar: 50 µm. (g) Quantification from three independent experiments showing the statistically significant effect of manipulating Rab10 expression on the levels of phosphorylated CREB in the nucleus (one-way ANOVA, F(2,280), p<0.0001; p values for the Bonferroni multiple comparison tests, t(280), are indicated in the plot). Source data of the plots have been included in Figure 2—source data 1.Figure 2—source data 1.Figure 2 are given as individual CSV files.
+**Figure 2.:** (a) Schematic of two-compartment microfluidic chambers highlighting compartmentalisation of somata (left) and axon terminals (right). Micro-flow from somatic to axonal compartments provides fluidic isolation of the somatic compartment to probes added to the other chamber. (b) Representative images from the cell bodies of neurons incubated for 2.5 hr with anti-TrkB in the axonal compartment, with (+) or without (-) brain-derived neurotrophic factor (BDNF). Pink arrowheads indicate examples of retrogradely transported TrkB-positive organelles. Scale bar: 10 µm. (c) Neurons treated with the shRNA targeting Rab10 were compared to control transduced neurons. Immunofluorescence revealed similar neuronal density (see ßIII-tubulin in orange and nuclear staining in green, top panel), but a decrease in both, expression of Rab10 (grey, middle panel) and retrograde accumulation of TrkB after 2.5 hr (colour intensity scale, bottom panel). Scale bar: 50 µm. (d) Quantification of retrograde TrkB accumulation in three independent experiments show statistically significant differences (unpaired Student’s t-test, t(140), p<0.0001). (e) Correlation between expression level of Rab10 and retrograde TrkB accumulation in control and Rab10-knockdown neurons show a significant linear correlation (goodness-of-fit R2=0.61; Pearson r, XY pairs = 131, p<0.0001). (f) Axonal stimulation with BDNF for 2.5 hr leads to robust appearance of phosphorylated CREB in the nucleus of control neurons (left panel). This response was impaired in neurons depleted of Rab10 (middle panel), and rescued by the co-expression of a shRNA-resistant mutant Rab10 (right panel). Immunofluorescence for Rab10 is shown in grey, with the nuclei indicated with a pink mask, and nuclear phosphorylated CREB is shown in a colour intensity scale. Scale bar: 50 µm. (g) Quantification from three independent experiments showing the statistically significant effect of manipulating Rab10 expression on the levels of phosphorylated CREB in the nucleus (one-way ANOVA, F(2,280), p<0.0001; p values for the Bonferroni multiple comparison tests, t(280), are indicated in the plot). Source data of the plots have been included in Figure 2—source data 1.
 
 Neurons transduced with the shRNA Rab10 and treated with doxycycline for 18–22 hr showed lower levels of endogenous Rab10 (Figure 2c, grey) and significantly reduced retrograde accumulation of TrkB compared with neurons expressing control lentivirus (Figure 2c and d). Since expression of Rab10 is variable among neurons, we tested the correlation between the levels of endogenous Rab10 with the retrograde accumulation of TrkB (Figure 2e). We found that, even though there was overlap, control and knocked down neurons clustered as expected. Moreover, when we take both populations together, we found a significant correlation between Rab10 expression and TrkB accumulation, strongly suggesting that Rab10 plays a role in retrograde axonal transport of internalised TrkB (Figure 2e).
 
 To confirm the functional consequences of this decrease on the retrograde transport of TrkB, we treated neurons in the axonal compartment with BDNF and analysed the levels of phosphorylated cAMP response element binding protein (pCREB) in the nucleus. pCREB is a well-established proxy for neurotrophic signalling in neurons and has been shown to be critical for global neuronal responses to neurotrophins, such as BDNF-induced dendritic branching (González-Gutiérrez et al., 2020). Neurons treated with an shRNA directed against Rab10 showed a significant decrease in nuclear pCREB (Figure 2f and g), which was rescued by treatment of Rab10 knockdown cells with a lentivirus encoding shRNA-resistant Rab10, further confirming the specificity of this effect.
 
-## Rab10 associates transiently to TrkB-containing retrograde carriers
+### Rab10 associates transiently to TrkB-containing retrograde carriers
 
 Given its critical role regulating retrograde accumulation of TrkB, we investigated whether Rab10 was present in retrograde signalling endosomes. As stated before, signalling endosomes are likely to be a heterogeneous pool of functionally related organelles with diverse molecular compositions (Villarroel-Campos et al., 2018). Most of these axonal carriers are positive for Rab7 (Deinhardt et al., 2006), which enables the recruitment of the dynein motor complex and their processive retrograde transport along microtubules (Ha et al., 2008; Zhou et al., 2012). Super-resolution radial fluctuations (SRRF) microscopy was used to examine the distribution of endogenous Rab10, Rab7, and Rab5 along the axon of neurons stimulated with 20 ng/mL BDNF for 30 min (Figure 3a). We found that Rab10 (orange) and Rab7 (green) consistently showed a very low degree of overlap (see yellow regions in Figure 3a and superposition of intensity peaks in Figure 3b). On the other hand, the super-resolution imaging revealed a population of organelles where Rab10 (orange) and Rab5 (purple) partially co-localise (see pink regions, Figure 3a), suggesting that Rab5-positive retrograde carriers (Goto-Silva et al., 2019), or stationary early endosomes, could also contain Rab10. To quantitatively assess whether co-localisation between endogenous Rab10 and these endosomal markers depended on BDNF signalling, we used confocal microscopy to evaluate co-localisation by using Manders index in neurons stimulated with BDNF (20 ng/mL for 30 min), as well as in neurons depleted of BDNF by treatment with a blocking antibody. Significance compared to randomised distributions was determined using confined-displacement algorithm (CDA) (Ramírez et al., 2010). Rab10 and Rab5 were confirmed to have around 20% co-localisation and a significant increase in the amount of Rab5 in Rab10 domains when stimulated with BDNF (Figure 3c). On the other hand, Rab10 and Rab7 were found to exhibit very low co-localisation levels, which was unaffected by BDNF stimulation, suggesting that Rab10 is more likely to be associated with early components of the endosomal system rather than mature and processive signalling endosomes. Similar co-localisation analysis has been done for the recycling endosomes markers Rab4 and Rab11 and included as supplementary material (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/81532/elife-81532-fig3-v1.jpg)
+
+**Figure 3.:** (a) Representative super-resolution radial fluctuations (SRRF) microscopy of an axon stained for endogenous Rab5 (purple), Rab7 (green), and Rab10 (orange). The inset at ×6 higher magnification shows examples of partial co-localisation of Rab10 with Rab5 and Rab7. Scale bar = 5 µm. (b) Intensity along the same axonal segment shown in (a) was plotted to show the correlation between the three markers. (c) Co-localisation of endogenous Rab10 and Rab5 was analysed comparing axons from starved neurons versus incubated 30 min with brain-derived neurotrophic factor (BDNF). Confined-displacement algorithm (CDA) has been used to compute Manders coefficients (Welch’s corrected unpaired Student’s t-test; M1: t(46.27), p-value = 0.0244; M2: t(48.94), p-value = 0.4794). Data points showing significant co-localisation compared to random distribution are marked with coloured dots. No significant differences were found between starved and BDNF-stimulated neurons. (d) Co-localisation of endogenous Rab10 and Rab7 was analysed in a similar experimental set-up (Welch’s corrected unpaired Student’s t-test; M1: t(72.32), p-value = 0.0621; M2: t(62.33), p-value = 0.1043). (e) Labelled HCT and anti-TrkB were co-internalised in the presence of BDNF for 30, 60, and 90 min, and their level of overlap with endogenous Rab10 in axons was evaluated using confocal microscopy. Relative areas positive for HCT and TrkB are shown in cyan (normalised to 30 min) and the fraction of the normalised area that was triple positive for HCT, TrkB and Rab10 is plotted in white. Whereas the double TrkB/HCT-positive area significantly increased by 90 min (one-way ANOVA, F(2,72), p-value <0.0001; Bonferroni multiple comparison test p value is shown in the plot), the triple TrkB/HCT/Rab10 surface remained low and fairly constant at all time points (one-way ANOVA, F(2,72), p-value = 0.2730; Bonferroni multiple comparisons test for 60 vs. 90 min, t(72), p-value >0.9999). (f) Representative SRRF microscopy from the same three time points. Double-positive puncta for TrkB (green) and HCT (purple) is indicated with cyan arrowheads. Triple-positive puncta of TrkB/HCT (cyan) and Rab10 (orange) are indicated with white empty triangles. Scale bar = 5 µm. Source data of the plots have been included in Figure 3—source data 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/81532/elife-81532-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Expansion of the analysis in Figure 3c and d to include Rabs related to recycling endosomes. (a) Manders coefficients for Rab10 and Rab4 in the axon of hippocampal neurons treated or not with 50 ng/mL brain-derived neurotrophic factor (BDNF) for 30 min. Welch’s corrected unpaired Student’s t-test; M1: t(76.31), p-value = 0.7600; M2: t(65.11), p-value = 0.1528. (b) Manders coefficients for Rab10 and Rab11 in the axon of hippocampal neurons treated or not with 50 ng/mL BDNF for 30 min. Welch’s corrected unpaired Student’s t-test; M1: t(64.71), p-value = 0.9001; M2: t(66.74), p-value = 0.0038.
+
 To specifically identify retrograde signalling endosomes containing TrkB, we took advantage of the property of the non-toxic carboxy-terminal domain of the heavy chain of tetanus neurotoxin (HCT) of being transported almost exclusively in retrograde axonal organelles in neurons (Deinhardt et al., 2006). We co-internalised HCT-Alexa Fluor647 and mouse anti-Flag antibodies in neurons transfected with a TrkB-Flag construct, and stimulated them with BDNF. Axonal double-positive TrkB/HCT puncta were considered signalling endosomes moving in the retrograde direction. We analysed the proportion of these organelles co-localising with endogenous Rab10. Figure 3e represents the relative area of TrkB/HCT and the triple-positive area of TrkB/HCT/Rab10 across three different time points (30, 60, and 90 min) post-endocytosis. As expected, the amount of TrkB in retrograde carriers increases with time (cyan). However, the proportion of TrkB present in Rab10 compartments is very low and remains constant across the duration of the experiment (white). These results provide another evidence suggesting that TrkB localises transiently on Rab10-positive membrane compartments en route to its delivery to axonal retrograde carriers. This observation is also supported by super-resolution images (Figure 3f), showing an increase in TrkB/HCT double-positive puncta (cyan arrowheads), but very few TrkB/HCT/Rab10 triple-positive puncta (white empty triangles) at 60 and 90 min.
 
-## Overexpressed Rab10 is co-transported with retrograde TrkB
+### Overexpressed Rab10 is co-transported with retrograde TrkB
 
 The data presented so far support a model in which Rab10 is critical for retrograde transport of TrkB, but it does not specifically define a stable population of retrograde carriers. Rather, the evidence shown in Figure 3e and f suggests that TrkB is transiently associated to Rab10-positive membranes, opening the possibility that Rab10 participates in the sorting of internalised receptors to retrogradely transported signalling endosomes. To directly monitor this process, we overexpressed EGFP-Rab10 in primary hippocampal neurons. Since it is well documented that overexpression of Rab GTPases promotes their activity due to their increased association to membranes (Zhen and Stenmark, 2015), we expected that an increase in the abundance and/or activity of Rab10 would stabilise its association to TrkB retrograde carriers, allowing its visualisation by time-lapse microscopy. Neurons were co-transfected with EGFP-Rab10 and TrkB-Flag and, after 1 hr of starvation in non-supplemented Neurobasal medium, we internalised Alexa Fluor647-labelled anti-Flag antibodies in the presence of BDNF for 45 min (Figure 4a). Time-lapse confocal imaging of axon segments was performed at least 200 µm from the cell body. Sequential frames of a representative movie are shown in Figure 4b, where the retrograde co-transport of TrkB and EGFP-Rab10 is indicated with yellow arrowheads. Kymographs (Figure 4c) were generated for EGFP-Rab10 (orange) and TrkB-Flag (green). Tracks are shown in the bottom panel, with examples of co-transport indicated by yellow lines. Quantification of five independent experiments confirmed that approximately 60% of retrograde TrkB carriers are positive for Rab10 under these experimental conditions (Figure 4d). Interestingly, no anterograde TrkB/Rab10 double-positive compartments were observed, suggesting that TrkB is present in organelles with a strong retrograde bias.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/81532/elife-81532-fig4-v1.jpg)
 
-**Figure 4.:** (a) Hippocampal neurons in mass culture were co-transfected with EGFP-Rab10 and TrkB-Flag plasmids. Fluorescently labelled anti-Flag antibodies were internalised in the presence of brain-derived neurotrophic factor (BDNF) and their axonal dynamics monitored by time-lapse microscopy. (b) Representative images of the axon of a double transfected neuron, where a double-positive organelle for EGFP-Rab10 (orange) and anti-Flag (green) is indicated with yellow arrowheads. Scale bar = 5 µm. (c) Representative kymograph of the axon of a double transfected neuron during 5 min of imaging showing Rab10 and TrkB-Flag channels. Double-positive tracks (in yellow) show transport predominantly in the retrograde direction (right to left). Scale bar = 10 µm. (d) Quantification of five experiments showing the proportion of TrkB-containing mobile organelles that were positive for Rab10. No anterograde TrkB organelles were found; therefore, presence of Rab10 could not be determined (N.D.). (e) An equivalent experiment was performed by transfecting EGFP-Rab10 and visualising it together with endocytosed fluorescently-labelled anti-p75NTR antibodies. (f) Representative frames from a time-lapse movie displaying a double-positive organelle for Rab10 (orange) and p75NTR (green) moving anterogradely. Scale bar = 5 µm. (g) Representative kymograph showing Rab10 and p75NTR channels. Double-positive tracks (in yellow) show transport in both anterograde (left to right) and retrograde directions. Scale bar = 10 µm. (h) Quantification of five experiments displaying the proportion of p75NTR mobile organelles positive for Rab10 moving in the anterograde and retrograde direction. Source data of the plots have been included in Figure 4—source data 1.Figure 4—source data 1.Figure 4 are given as individual CSV files.
+**Figure 4.:** (a) Hippocampal neurons in mass culture were co-transfected with EGFP-Rab10 and TrkB-Flag plasmids. Fluorescently labelled anti-Flag antibodies were internalised in the presence of brain-derived neurotrophic factor (BDNF) and their axonal dynamics monitored by time-lapse microscopy. (b) Representative images of the axon of a double transfected neuron, where a double-positive organelle for EGFP-Rab10 (orange) and anti-Flag (green) is indicated with yellow arrowheads. Scale bar = 5 µm. (c) Representative kymograph of the axon of a double transfected neuron during 5 min of imaging showing Rab10 and TrkB-Flag channels. Double-positive tracks (in yellow) show transport predominantly in the retrograde direction (right to left). Scale bar = 10 µm. (d) Quantification of five experiments showing the proportion of TrkB-containing mobile organelles that were positive for Rab10. No anterograde TrkB organelles were found; therefore, presence of Rab10 could not be determined (N.D.). (e) An equivalent experiment was performed by transfecting EGFP-Rab10 and visualising it together with endocytosed fluorescently-labelled anti-p75NTR antibodies. (f) Representative frames from a time-lapse movie displaying a double-positive organelle for Rab10 (orange) and p75NTR (green) moving anterogradely. Scale bar = 5 µm. (g) Representative kymograph showing Rab10 and p75NTR channels. Double-positive tracks (in yellow) show transport in both anterograde (left to right) and retrograde directions. Scale bar = 10 µm. (h) Quantification of five experiments displaying the proportion of p75NTR mobile organelles positive for Rab10 moving in the anterograde and retrograde direction. Source data of the plots have been included in Figure 4—source data 1.
 
 To extend this analysis to the other physiological BDNF receptors, the internalisation of endogenous p75 neurotrophin receptor (p75NTR) was monitored in neurons expressing EGFP-Rab10. After depletion of trophic factors, p75NTR uptake was visualised by incubating neurons for 45 min with an Alexa Fluor647-labelled antibody against the extracellular domain of p75NTR, in the presence of BDNF (Figure 4e). Live-cell imaging of axon segments was done under conditions identical to those used for TrkB. Representative frames and kymographs of EGFP-Rab10 (orange) and internalised p75NTR (green) are shown in Figure 4f and g. Interestingly, p75NTR receptor can be found in both retrograde and anterograde Rab10 carriers. On average, 29.6% of anterograde and 15.5% of retrograde p75NTR-containing organelles were found positive for Rab10 across five independent experiments (Figure 4h).
 
-## BDNF promotes anterograde trafficking of Rab10-positive compartments
+### BDNF promotes anterograde trafficking of Rab10-positive compartments
 
 In agreement with the bidirectional transport observed for p75NTR carriers (Figure 4h), previous work suggested that Rab10-positive compartments travel along the axon in both directions (Deng et al., 2014). In light of these results, we hypothesised that the dynamics of axonal compartments containing Rab10 may be responsive to BDNF signalling to direct the sorting of TrkB to retrograde carriers. We therefore examined the axonal transport of Rab10-positive organelles in hippocampal neurons under two opposite conditions: depletion of BDNF using an anti-BDNF blocking antibody, followed by stimulation with 50 ng/mL BDNF (Figure 5—figure supplement 1).
 
 Figure 5a shows representative frames of an EGFP-Rab10 organelle moving in the retrograde direction along the axon (white arrows) in the absence of BDNF. Five-minute segments of time-lapse microscopy have been used to generate kymographs (Figure 5b) at different time points of BDNF stimulation: before BDNF (top), immediately after BDNF addition (centre), and after 10 min of BDNF incubation (bottom). Traces have been colour-coded as retrograde (cyan), anterograde (pink), or stationary/bidirectional (yellow) to reveal changes in the direction bias of Rab10 organelles in the same axon, before, and after the addition of BDNF. Quantification of five independent experiments shows that BDNF-depleted axons exhibit a bias towards retrograde Rab10 transport, which significantly switches to anterograde after 10 min of stimulation with BDNF (Figure 5c).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/81532/elife-81532-fig5-v1.jpg)
+
+**Figure 5.:** Hippocampal neurons in mass culture were transfected with EGFP-Rab10 and depleted of BDNF for 60 min. (a) Representative axon of a live neuron showing retrograde (right to left) transport of a Rab10-positive organelle (white arrowheads) in the absence of BDNF. Scale bar = 5 µm. (b) In the panels on the left, representative kymographs (colour-coded as in a) are presented from the same axon upon BDNF depletion (top), immediately after the addition of 50 ng/mL of BDNF (middle), and 10 min thereafter (bottom). In the panels on the right, tracks have been traced and categorised as retrograde (cyan), anterograde (pink), or stationary/bidirectional (yellow). Scale bar = 10 µm. (c) The frequencies of tracks from each of the three categories have been quantified and plotted, comparing no BDNF and 10 min post-addition of 50 ng/mL BDNF. N = 14 axonal segments from 10 independent experiments. Unpaired Student’s t-test, t(14), showed a significant increase in anterograde carriers (p-value = 0.0150, *) at the expense of retrograde carriers (p-value = 0.003, **). Stationary and bidirectional carriers did not show any significant change (p-value = 0.4278). See Figure 5—video 1 for a video. Source data of the plots have been included in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/81532/elife-81532-fig5-figsupp1-v1.jpg)
+
 These surprising results reveal a novel mechanism ensuring a tight balance between retrograde and anterograde transport of Rab10 organelles, which is fine-tuned by BDNF. This result predicts that any local increase in BDNF release from post-synaptic compartments will increase the abundance of Rab10 organelles in the immediate vicinity of the source of BDNF.
 
-## BDNF increases the recruitment of KIF13B to Rab10 organelles in the axon
+### BDNF increases the recruitment of KIF13B to Rab10 organelles in the axon
 
 The uniform polarity of the microtubules in the axon of mature neurons implies that the directionality of axonal carriers largely depends on their association to anterograde or retrograde motor proteins (Guillaud et al., 2020; Kwan et al., 2008). To provide further mechanistic insights into the directional switch of Rab10 axonal carriers upon BDNF stimulation, we analysed the distribution of two anterograde microtubule-associated motor proteins predominantly found in central neuron axons, KIF5B and KIF13B (Yang et al., 2019). Figure 6a and d show representative high-resolution confocal images of axons where endogenous Rab10 (green) and either KIF13B or KIF5B (orange) have been detected. Neurons were either starved in the presence of a blocking anti-BDNF antibody (control) or treated for 30 min with 50 ng/mL BDNF (BDNF). Insets displaying two different views of three-dimensional reconstructions of axonal segments show Rab10 membranes positive for KIF13B (Figure 6a) or KIF5B (Figure 6d) in the absence and presence of BDNF. Interestingly, the axonal pool of KIF13B appears to decrease after stimulation with BDNF, whereas that of KIF5B increases under the same experimental conditions, suggesting that the total axonal content of these kinesins may be differentially regulated by BDNF signalling.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/81532/elife-81532-fig6-v1.jpg)
+
+**Figure 6.:** (a) The co-distribution of endogenous KIF13B (orange) and Rab10 (green) was monitored using high-resolution Airyscan confocal microscopy in axons of neurons with or without BDNF for 30 min. Top images correspond to maximum projection of z-stacks, scale bar = 5 µm. A 3D reconstruction of the inset area (grey frame) is shown for each top image on its original position and after turning the image 210° around the x axis. (b) KIF13B intensity was measured in the entire axon segment and in Rab10-positive areas, and the intensity ratio was plotted and analysed showing a significant enrichment of KIF13B in Rab10 areas upon 30 min of BDNF stimulation (Kolmogorov–Smirnoff nonparametric t test, t(79.5), p-value = 0.0177). (c) Ratio between KIF13B-positive area that overlaps with Rab10 from total KIF13B area was plotted, finding no difference between neurons starved or incubated with BDNF 30 min (Kolmogorov–Smirnoff nonparametric t test, t(79.5), p-value = 0.8024). (d) Co-distribution of KIF5B (orange) and Rab10 (green) was also analysed and displayed as in (a). Scale bar = 5 µm. Insets show 3D reconstructions on their original and rotated position. (e) Quantification of intensity ratio of KIF5B in Rab10 domains versus total KIF5B in the axon shows no significant difference between starved and BDNF-treated neurons (Kolmogorov–Smirnoff nonparametric t test, t(62.5), p-value = 0.0644). (f) Proportion of the KIF5B-positive area that overlaps with Rab10 is lower than KIF13B and is not altered by BDNF stimulation (Kolmogorov–Smirnoff nonparametric t test, t(62.5), p-value = 0.3738). (g) The interaction of HA-Rab10 and GFP-KIF13B from N2A cells is modulated by BDNF. Top panel: representative western blot showing the presence of both proteins in the lysate (input). Bottom panel: Western blot of co-immunoprecipitated samples from the same experiment using an antibody against the HA tag. (h) Quantification of the ratio between normalised KIF13B and Rab10 in three independent experiments. Western blots have been done in duplicate, and the corresponding paired experiments are indicated by data points of the same shade of grey. Groups were compared using paired Student’s t test, t(6), p-value = 0.0024. Source data of the plots have been included in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/81532/elife-81532-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Quantification of the GFP-KIF13B (a) and HA-Rab10 (b) pulled down used to compute the ratio of the Figure 6h.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/81532/elife-81532-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Preliminary results showing (a and c) representative images of axons stained for Rab10 (green) and JIP3 or JIP4 (orange) and (b and d) Manders co-localisation coefficients for control versus brain-derived neurotrophic factor (BDNF)-treated axons, showing that only ~2% of JIP3 or JIP4 is in Rab10-positive domains, with no change upon treatment with 50 ng/mL BDNF for 30 min.
 
 Quantification of the intensity of KIF13B in Rab10-positive areas (Figure 6b) reveals a statistically significant 12.7% increase in the amount of the motor recruited to Rab10-positive organelles. On the other hand, Figure 6c shows that the ratio between the Rab10-positive and total KIF13B-positive area in the axon remained unchanged (7.3% of the area), suggesting that the proportion of double KIF13B/Rab10 compartments remains constant. In contrast, when we performed the same analysis for KIF5B, we found that, despite its overall increase in the axon upon BDNF stimulation, there is no significant change in the intensity ratio in Rab10-positive domains (Figure 6e). Consistently, Figure 6f shows that the proportion of KIF5B axonal organelles that overlap with Rab10 is lower than KIF13B (around 4% of the area) and remained unchanged after BDNF stimulation.
 
 Prompted by the results shown in Figure 6b, we investigated whether KIF13B and Rab10 interact in a BDNF-dependent manner by expressing GFP-KIF13B and HA-Rab10 in Neuro-2A (N2A) cells. This mouse neuroblastoma cell line expresses TrkB and has been previously used in our laboratory to study trafficking and signalling of neurotrophic receptors (Terenzio et al., 2014). After 1 hr of starvation, transfected cells were treated or not with BDNF 50 ng/mL and then we used anti-HA-conjugated magnetic beads to pull down HA-Rab10. Lysates, as well as the co-immunoprecipitated samples eluted from the beads, were analysed by Western blot. A representative example is shown in Figure 6g, with the top panels showing the total amount of HA-Rab10 and GFP-KIF13B in the lysates (input). Co-immunoprecipitated HA-Rab10 and GFP-KIF13B eluted from the beads are displayed in the bottom panels (co-IP). Lysates from N2A cells only expressing GFP-KIF13B were used as controls. Quantification of three independent experiments (Figure 6h) show an average twofold increase in the KIF13B/Rab10 ratio when cells were stimulated with BDNF. A consistent change in pulled down KIF13B with no change of Rab10 is shown as separated plots in Figure 6—figure supplement 1.
 
-## Rab10 regulates the sorting of TrkB in early endosomes, with no effect on recycling
+### Rab10 regulates the sorting of TrkB in early endosomes, with no effect on recycling
 
 After endocytosis, TrkB accumulates in early endosomes, from which it is sorted either to the recycling route or to endosomal organelles with signalling capabilities (Deinhardt et al., 2006; Zhou et al., 2012). Rab10, on the other hand, has been shown to regulate multiple processes, including trafficking across early endosomes, the formation of specialised tubular endosomes, the recycling of cargoes back to the plasma membrane, as well as the targeting of plasmalemmal precursor vesicles (PPVs), among other functions (Babbey et al., 2006; Brewer et al., 2016; Deng et al., 2014; Etoh and Fukuda, 2019; Xu et al., 2014). To understand the mechanism linking Rab10-positive organelles with the retrograde axonal transport of TrkB in signalling endosomes, we designed experiments to discern between a potential role of Rab10 on recycling of internalised TrkB back to the plasma membrane, and sorting of TrkB out of early endosomes into retrograde transport carriers (Figure 7a).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/81532/elife-81532-fig7-v1.jpg)
 
-**Figure 7.:** (a) Main hypotheses about the role of Rab10 regulating the sorting of TrkB to signalling endosomes include recycling back to the plasma membrane or sorting of TrkB receptors out of early endosomes to retrograde carriers. (b) Top: diagram of the experiment showing TrkB-Flag receptors on the axonal surface bound to anti-Flag antibodies (green). After internalisation, the remaining anti-Flag is removed from the surface and the labelled receptor that recycled to the plasma membrane is chased with a secondary antibody (orange). Bottom: representative examples of internalised TrkB (green) and recycled TrkB (orange) in axons from neurons transfected with EGFP or a Rab10 DN mutant. (c) Normalised recycling shows no difference between EGFP and Rab10 DN transfected neurons. Unpaired Student’s t-test, t(60.40), p-value = 0.3914. (d) Top: diagram of the internalisation of TrkB-flag labelled with anti-Flag antibodies (orange) to Rab5-positive early endosomes (green). Bottom: representative thresholded microscopy images from the axon of neurons transfected with EGFP or Rab10DN mutant. While the amount of orange puncta is similar in both conditions, yellow areas showing co-localisation of internalised TrkB and Rab5 are increased upon Rab10 DN expression. (e) Quantification of co-localisation between internalised TrkB-Flag and endogenous Rab5 is significantly higher in neurons expressing Rab10DN compared to EGFP. Unpaired Student’s t-test, t(38.22), p-value = 0.008. Significant co-localisation according to confined-displacement algorithm (CDA) (p-value < 0.05 compared to randomised signal) is shown with black circles, while inconclusive co-localisation (p-value > 0.05) is shown in grey. Scale bars = 5 µm. Source data of the plots have been included in Figure 7—source data 1.Figure 7—source data 1.Figure 7 are given as individual CSV files.
+**Figure 7.:** (a) Main hypotheses about the role of Rab10 regulating the sorting of TrkB to signalling endosomes include recycling back to the plasma membrane or sorting of TrkB receptors out of early endosomes to retrograde carriers. (b) Top: diagram of the experiment showing TrkB-Flag receptors on the axonal surface bound to anti-Flag antibodies (green). After internalisation, the remaining anti-Flag is removed from the surface and the labelled receptor that recycled to the plasma membrane is chased with a secondary antibody (orange). Bottom: representative examples of internalised TrkB (green) and recycled TrkB (orange) in axons from neurons transfected with EGFP or a Rab10 DN mutant. (c) Normalised recycling shows no difference between EGFP and Rab10 DN transfected neurons. Unpaired Student’s t-test, t(60.40), p-value = 0.3914. (d) Top: diagram of the internalisation of TrkB-flag labelled with anti-Flag antibodies (orange) to Rab5-positive early endosomes (green). Bottom: representative thresholded microscopy images from the axon of neurons transfected with EGFP or Rab10DN mutant. While the amount of orange puncta is similar in both conditions, yellow areas showing co-localisation of internalised TrkB and Rab5 are increased upon Rab10 DN expression. (e) Quantification of co-localisation between internalised TrkB-Flag and endogenous Rab5 is significantly higher in neurons expressing Rab10DN compared to EGFP. Unpaired Student’s t-test, t(38.22), p-value = 0.008. Significant co-localisation according to confined-displacement algorithm (CDA) (p-value < 0.05 compared to randomised signal) is shown with black circles, while inconclusive co-localisation (p-value > 0.05) is shown in grey. Scale bars = 5 µm. Source data of the plots have been included in Figure 7—source data 1.
 
 To assess the contribution of Rab10 to the recycling of TrkB in the axon, hippocampal neurons were transfected with EGFP or a dominant negative mutant of Rab10 (Rab10T23N; referred to as Rab10DN) and TrkB-Flag. As illustrated in Figure 7b, endocytosis of anti-Flag M1 antibodies was allowed for 30 min in the presence of BDNF, and then the residual antibody still bound to the neuronal surface was removed using EDTA, which dissociates this antibody from the Flag peptide (Chen et al., 2005). Recycling receptors were then chased using Alexa Fluor647-conjugated secondary antibodies. After fixation, internalised TrkB-Flag was labelled with Alexa Fluor555-conjugated secondary antibodies. Comparison between recycling ratio (recycled/internalised) of EGFP- and Rab10DN-expressing neurons shows no significant differences (Figure 7c).
 
@@ -126,50 +152,493 @@ Little is known about the specific sorting machinery required for the biogenesis
 
 ## Materials and methods
 
-## Neuronal cultures
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat polyclonal anti-Rab10</td>
+      <td>Santa Cruz Biotechnologies</td>
+      <td>Cat#sc-6564; RRID:AB_2237844</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Rab10</td>
+      <td>Abcam</td>
+      <td>Cat#ab104859; RRID:AB_10711207</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-Rab10</td>
+      <td>Cell Signalling</td>
+      <td>Cat#8127; RRID:AB_10828219</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-TrkB</td>
+      <td>Merck (Millipore)</td>
+      <td>Cat#AB9872; RRID:AB_11214317</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Chicken polyclonal anti-tubulin ßIII</td>
+      <td>Synaptic Systems</td>
+      <td>Cat#302 306; RRID:AB_2620048</td>
+      <td>1:300</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit monoclonal anti-phosphorylated CREB</td>
+      <td>Abcam</td>
+      <td>Cat#ab32096; RRID:AB_731734</td>
+      <td>1:250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Rab7</td>
+      <td>Abcam</td>
+      <td>Cat#ab50533, RRID:AB_882241</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Rab5</td>
+      <td>Abcam</td>
+      <td>Cat#ab13253; RRID:AB_299796</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-KIF13B</td>
+      <td>Bioss</td>
+      <td>Cat#bs-12387R; RRID:AB_2895287</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-KIF5B</td>
+      <td>Abcam</td>
+      <td>Cat#ab5629; RRID:AB_2132379</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-GFP (B-2)</td>
+      <td>Santa Cruz Biotechnologies</td>
+      <td>Cat#sc-9996; RRID: AB_627695</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-HA (12CA5)</td>
+      <td>Cancer Research UK</td>
+      <td>Cat#12CA5; RRID:AB_2920713</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Flag (M1)</td>
+      <td>Sigma</td>
+      <td>Cat#F3040; RRID:AB_439712</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-p75NTR</td>
+      <td>Cancer Research UK</td>
+      <td>Cat#CRD5410; RRID:AB_2864325</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TET ON Advance</td>
+      <td>Takara Bio (Clontech)</td>
+      <td>Cat#630930</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVX shRNA Rab10</td>
+      <td>This study</td>
+      <td></td>
+      <td>The shRNA MSH031352 from GeneCopoeia targeting Rab10 has been cloned into a pLVX tight puro plasmid</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVX mCherry-Rab10</td>
+      <td>This study</td>
+      <td></td>
+      <td>A mouse mCherry-Rab10 has been cloned into a pLVX tight puro inducible lentiviral vector using XbaI/NheI</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLVX myc-Rab10 (shRNA resistant)</td>
+      <td>This study</td>
+      <td></td>
+      <td>From the pLVX mCherry-Rab10, mCherry has been replaced by myc, and 3 silent mutations have been introduced</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-C1</td>
+      <td>Clontech</td>
+      <td></td>
+      <td>Discontinued</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-Rab10 WT</td>
+      <td>DOI:10.1111/j.1462–5822.2010.01468.x</td>
+      <td>RRID:Addgene_49472</td>
+      <td>Marci Scidmore lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-Rab10 T23N; Rab10DN</td>
+      <td>DOI:10.1111/j.1462–5822.2010.01468.x</td>
+      <td>RRID:Addgene_49545</td>
+      <td>Marci Scidmore lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>EGFP-Rab10 Q68L</td>
+      <td>DOI:10.1111/j.1462–5822.2010.01468.x</td>
+      <td>RRID:Addgene_49544</td>
+      <td>Marci Scidmore lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>HA-Rab10 WT</td>
+      <td>MRC Protein Phosphorylation and Ubiquitylation Unit</td>
+      <td>DU44250</td>
+      <td>Dario Alessi lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>GFP-KIF13B</td>
+      <td>10.1111/tra.12692</td>
+      <td>RRID:Addgene_134626</td>
+      <td>Marvin Bentley lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>TrkB-FLAG</td>
+      <td>10.1091/mbc.e05-07-0651</td>
+      <td></td>
+      <td>Francis Lee lab</td>
+    </tr>
+  </tbody>
+</table>
+
+### Neuronal cultures
 
 Embryonic hippocampal neurons from C57BL/6 mice of either sex and embryonic age of 16–17 days were dissected adapting previously described protocols (Kaech and Banker, 2006). Dissection was performed in cold Hanks’ balanced salt solution (HBSS) and the tissue was collected in cold Hibernate E medium (Thermo Fisher, #A1247601). After incubating for 10 min in 300 µL of Accumax (Innovative Cell Technologies, #AM105) diluted in HBSS (1:1), tissue was washed in HBSS, resuspended in warm plating medium (Minimum Essential Medium supplemented with 10% horse serum, 0.6% glucose, and 2 mM glutamine), and mechanically dissociated by pipetting. 10,000–12,000 neurons per cm2 were then seeded on glass coverslips or microfluidic chambers, pre-coated with 1 mg/mL poly-L-lysine. Before coating, glass coverslips were treated overnight with NoChromix (Godax Laboratories), washed three times and sterilised in 70% ethanol. Microfluidic chambers were produced in-house as previously described (Restani et al., 2012; Sannerud et al., 2011). Polydimethylsiloxane inserts were fabricated from resin moulds, which are replicas of the master template produced by soft lithography, and then irreversibly bound to glass-bottom dishes (WillCo Wells, #HBSB-3512) by plasma treatment. Neurons were left in plating medium for 1.5 hr and then shifted to maintenance medium (Neurobasal supplemented with B27, 2 mM glutamine, 0.6% glucose, and antibiotics). Half of the culture medium was replaced by fresh medium every 3–4 days.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Cells were washed in phosphate buffer saline (PBS) and fixed for 15 min in 3% paraformaldehyde (PFA) and 4% sucrose dissolved in PBS. Next, they were incubated in 0.15 M glycine dissolved in PBS for 10 min and then blocked and permeabilised simultaneously by incubation in 5% bovine serum albumin (BSA) and 0.1% saponin in PBS for 1 hr. Samples were incubated at 4°C overnight with primary antibodies diluted in 5% BSA, 0.05% saponin, 0.1 mM CaCl2, and 0.1 mM MgCl2 dissolved in PBS at the concentrations indicated in the Key resources table. Then, cells were washed three times with PBS and incubated for 90 min with Alexa Fluor-conjugated secondary antibodies 1:400 (Thermo Fisher) in 5% BSA, 0.05% saponin, 0.1 mM CaCl2, and 0.1 mM MgCl2 dissolved in PBS. 4′,6-diamidino-2-phenylindole (DAPI) was added with the secondary antibodies when appropriate. Finally, coverslips were washed in PBS and mounted with Mowiol.
 
-## Rab10 knockdown
+### Rab10 knockdown
 
 Rab10 was knocked down by transducing 5 days in vitro (DIV) hippocampal neurons with an inducible shRNA Rab10 lentivirus (pTightPuro-shRNA Rab10) and its doxycycline-dependent regulator TET-ON Advance (Clontech). After 48 hr, they were treated with doxycycline 1 µg/mL and kept in the incubator for 12, 18, 24, 36, and 48 hr. Cell density, levels of Rab10 and TrkB, as well as the general health of the culture were analysed at 12, 24, and 48 hr to establish the optimal time frame for the following experiments.
 
-## Transfection and plasmids
+### Transfection and plasmids
 
 Hippocampal neurons were transfected at 7 DIV using Lipofectamine 2000 (Thermo Fisher, Cat# 11668019). Experiments were carried out after 20–24 hr. The pEGFP-C1 plasmid is from Clontech (Addgene plasmid # 13031, RRID:Addgene_13031), the plasmids for EGFP-Rab10 WT (RRID:Addgene_49472), EGFP-Rab10 T23N (RRID:Addgene_49545), and EGFP-Rab10 Q68L (RRID:Addgene_49544) were a gift from Marci Scidmore (Huang et al., 2010), TrkB-FLAG plasmid was a gift from Francis Lee (Chen et al., 2005). Neuro-2a cells were transfected using Lipofectamine 3000 (Thermo Fisher, Cat# L3000001) and the experiments were done 48 hr later. The GFP-KIF13B plasmid (RRID:Addgene_134626) was a gift from Marvin Bentley (Yang et al., 2019), whilst the HA-Rab10 plasmid was provided by Dario Alessi and Miratul Muqit (Dundee University, DU44250).
 
-## Retrograde accumulation and signalling assays
+### Retrograde accumulation and signalling assays
 
 Hippocampal neurons were seeded in custom-made microfluidic devices and after 5 DIV they were transduced with the inducible shRNA Rab10 and TET-ON Advance lentiviruses. At 7 DIV, dishes with overt axon crossing were selected and doxycycline 1 µg/mL was added to the cell bodies, 18–22 hr later the media was replaced with Neurobasal in somatic and axonal compartments to deplete cells from endogenous growth factors for 1 hr. For analysing the retrograde accumulation of TrkB, we added polyclonal antibodies against the extracellular domain of TrkB (1:50 rabbit anti-TrkB, Millipore, Cat# AB9872, RRID:AB_2236301) together with 20 ng/mL BDNF for 2.5 hr. After PFA fixation, the transport of internalised antibodies was revealed by incubating the somatic compartment with fluorescently labelled secondary antibodies. The same protocol was used to study retrograde propagation of neurotrophic signalling; after 1 hr of growth factor depletion, axons were stimulated with 20 ng/mL BDNF for 2.5 hr, and after fixation, phosphorylation of CREB in the nucleus was analysed by immunofluorescence. Transduction with a myc-Rab10 containing three silent mutations was used for rescue.
 
-## Co-localisation studies
+### Co-localisation studies
 
 To analyse the presence of two markers in the same organelle, we used confocal z-stack images (voxel size: 0.197 × 0.197 × 0.5 µm) and the confined displacement algorithm to measure Manders’ correlation index within axons and determine its statistical significance compared to random images of identical total intensity and shape (Ramírez et al., 2010). To compute random scenarios, seven random radial displacements were taken at a maximum radial distance of 12 pixels (a total of 353 samples), and histograms binning = 16. CDA was implemented by using the plugin from the GDSC University of Sussex (http://www.sussex.ac.uk/gdsc/intranet/microscopy/UserSupport/AnalysisProtocol/imagej/colocalisation). All the data points were plotted and the mean and standard error are indicated for each group and compared using Student’s t-test. Statistical significance of the individual data point is colour-coded (see figure legends).
 
-## Super-resolution radial fluctuations
+### Super-resolution radial fluctuations
 
 High-fidelity super-resolution information was extracted from time series of 1000 confocal images per channel by using super-resolution radial fluctuations (SRRF) algorithm (Culley et al., 2018b). Super-resolution images were then quality-controlled by using Super-Resolution Quantitative Image Rating and Reporting of Error Locations (SQUIRREL) algorithm (Culley et al., 2018a). Implementation of the algorithms was done in FIJI by using the open-source plugin NanoJ-core (https://henriqueslab.github.io/resources/NanoJ).
 
-## Immunoendocytosis
+### Immunoendocytosis
 
 Hippocampal neurons transfected with TrkB-Flag were kept in Neurobasal media for 1 hr and then incubated on ice with 1:50 mouse anti-Flag antibody (Sigma-Aldrich, Cat# F3040, RRID:AB_439712). In selected samples, 20 nM HCT was also added (Deinhardt et al., 2006). Internalisation of receptors was then induced by incubation with 50 ng/mL BDNF for 30 min at 37°C. Antibodies bound to receptors still at the cell surface were dissociated by washing twice for 1 min in PBS supplemented with 1 mM EDTA. In experiments to measure recycling of internalised receptors, neurons were further stimulated with BDNF for other 60 min in the presence of an Alexa Fluor647-conjugated anti-mouse secondary antibody, fixed, permeabilised, and incubated with an Alexa Fluor555-conjugated anti-mouse secondary antibody to detect total internalised receptor.
 
-## Axonal transport
+### Axonal transport
 
 Axonal transport of overexpressed fluorescent proteins and internalised fluorescent antibodies was analysed from confocal time series of 1 frame/s and a pixel size of ~0.1 × 0.1 µm2, captured during 5 min intervals at different time points by using a Zeiss LSM 780 NLO multiphoton confocal microscope with an oil immersion ×63 objective and equipped with an environmental chamber (Zeiss XL multi S1 DARK LS set at 37°C and environmental CO2). For these experiments, neurons were cultured on 25 mm coverslips kept in Neurobasal for 1 hr prior to cell imaging and mounted inside Attofluor chambers (Thermo Fisher Scientific, Cat# A7816) with BrightCell NEUMO photostable media (Sigma-Aldrich, Cat# SCM145) supplemented with 10 mM HEPES. Speed, pausing, and direction of labelled organelles were analysed from kymographs by using Kymoanalyzer set of macros from Encalada lab (https://www.encalada.scripps.edu/kymoanalyzer; Neumann et al., 2017).
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 Neuro-2A cells have been originally obtained from ATCC and modified to stably express TrkB-Flag (Terenzio et al., 2014). Their identity has been confirmed in the future batches by assesing their morphology and probing for TrkB-flag. They have been tested for mycoplasma contamination routinely. Cells transfected with plasmids encoding HA-Rab10 and GFP-KIF13B were starved for 1 hr, stimulated or not with BDNF for 30 min at 37°C, and then scrapped and incubated at 4°C for 30 min in lysis buffer containing 25 mM 4-morpholine-propanesulfonic acid sodium salt (MOPS) pH 7.2, 100 mM KCl, 10 mM MgCl2, 1% octyl-phenoxy-polyethoxyethanol (IGEPAL CA-630, Sigma-Aldrich, Cat# I3021) and HALT proteases and phosphatases inhibitor (Thermo Fisher, Cat# 78425). After clearing by centrifugation at 21,000 × g for 10 min, the detergent concentration was adjusted to 0.5%. Pre-washed anti-HA magnetic beads (Pierce, Cat# 88837) were incubated with lysates overnight at 4°C. Samples were washed in lysis buffer five times and elutes in loading buffer (NuPAGE LDS sample buffer, Thermo Fisher, Cat# NP0007, supplemented with 50 mM DTT) at 95°C for 10 min. The levels of immunoprecipitated Rab10 and KIF13B were analysed by Western blot using mouse anti-HA (Cancer Research UK, Cat# 12CA5, RRID:AB_2920713) and mouse anti-GFP B-2 (Santa Cruz Biotechnologies, Cat# sc-9996, RRID:AB_627695) antibodies.
 
-## Statistical analysis
+### Statistical analysis
 
 Data generated in independent experiments were tested for normality and homoscedasticity to apply the appropriate corrections to the statistical tests. Each specific test, its degrees of freedom, and level of significance are indicated in the respective figure legends. Further details are summarised in the statistical annex (Table 1). Plots show mean ± standard error, and exact p-values are indicated when relevant.
 
-## Software
+**Table 1.**
+ Statistical summary.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">Figure</th>
+      <th>Variable</th>
+      <th>Test</th>
+      <th>Groups</th>
+      <th>Degrees of freedom</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="7">Figure 1</td>
+      <td rowspan="3">b</td>
+      <td rowspan="3">Cells per field</td>
+      <td>Two-way ANOVA</td>
+      <td>Knock down; time; interaction</td>
+      <td>F(1,68)</td>
+      <td>0.0270; 0.0406; 0.2114</td>
+    </tr>
+    <tr>
+      <td>Multiple comparisons</td>
+      <td>Control: shRNA Rab10 at 24 hr</td>
+      <td>t(68)</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td>Multiple comparisons</td>
+      <td>Control: shRNA Rab10 at 48 hr</td>
+      <td>t(68)</td>
+      <td>0.0183</td>
+    </tr>
+    <tr>
+      <td rowspan="4">c</td>
+      <td rowspan="4">Rab10 expression</td>
+      <td>Two-way ANOVA</td>
+      <td>Knock down; time; interaction</td>
+      <td>F(1,653); F(2,653); F(2,653)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Multiple comparisons</td>
+      <td>Control: shRNA Rab10 at 12 hr</td>
+      <td>t(653)</td>
+      <td>0.2012</td>
+    </tr>
+    <tr>
+      <td>Multiple comparisons</td>
+      <td>Control: shRNA Rab10 at 24 hr</td>
+      <td>t(653)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Multiple comparisons</td>
+      <td>Control: shRNA Rab10 at 48 hr</td>
+      <td>t(653)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Figure 2</td>
+      <td>d</td>
+      <td>TrkB accumulation</td>
+      <td>Unpaired Student’s t</td>
+      <td>Control: shRNA Rab10</td>
+      <td>t(140)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>e</td>
+      <td>TrkB accumulation and Rab10 expression</td>
+      <td>Pearson r</td>
+      <td>Control: shRNA Rab10</td>
+      <td>XY pairs = 131</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td rowspan="3">g</td>
+      <td rowspan="3">pCREB abundance</td>
+      <td>One-way ANOVA</td>
+      <td>Control, shRNA Rab10 and rescue</td>
+      <td>F(2,280)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Multiple comparisons</td>
+      <td>Control: shRNA Rab10</td>
+      <td>t(280)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Multiple comparisons</td>
+      <td>Control: rescue</td>
+      <td>t(280)</td>
+      <td>0.0336</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Figure 3</td>
+      <td rowspan="2">c</td>
+      <td>Co-localisation Rab10 and Rab5</td>
+      <td>Unpaired Student’s t</td>
+      <td>M1 control: BDNF</td>
+      <td>t(46.27)</td>
+      <td>0.0244</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Unpaired Student’s t</td>
+      <td>M2 control: BDNF</td>
+      <td>t(48.94)</td>
+      <td>0.4794</td>
+    </tr>
+    <tr>
+      <td rowspan="2">d</td>
+      <td rowspan="2">Co-localisation Rab10 and Rab7</td>
+      <td>Unpaired Student’s t</td>
+      <td>M1 control: BDNF</td>
+      <td>t(72.32)</td>
+      <td>0.0621</td>
+    </tr>
+    <tr>
+      <td>Unpaired Student’s t</td>
+      <td>M2 control: BDNF</td>
+      <td>t(62.33)</td>
+      <td>0.1043</td>
+    </tr>
+    <tr>
+      <td rowspan="6">e</td>
+      <td rowspan="3">Area of overlay HcT and TrkB (retrograde TrkB)</td>
+      <td>One-way ANOVA</td>
+      <td>30, 60, and 90 min</td>
+      <td>F(2,72)</td>
+      <td>&lt;0.0001</td>
+    </tr>
+    <tr>
+      <td>Multiple comparisons</td>
+      <td>30:60 min</td>
+      <td>t(72)</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td>Multiple comparisons</td>
+      <td>60:90 min</td>
+      <td>t(72)</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Area of overlay retrograde TrkB and Rab10</td>
+      <td>One-way ANOVA</td>
+      <td>30, 60, and 90 min</td>
+      <td>F(2,72)</td>
+      <td>0.2730</td>
+    </tr>
+    <tr>
+      <td>Multiple comparisons</td>
+      <td>30:60 min</td>
+      <td>t(72)</td>
+      <td>0.5717</td>
+    </tr>
+    <tr>
+      <td>Multiple comparisons</td>
+      <td>60:90 min</td>
+      <td>t(72)</td>
+      <td>&gt;0.9999</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Figure 5</td>
+      <td rowspan="3">c</td>
+      <td rowspan="3">Direction of Rab10 organelles</td>
+      <td>Unpaired Student’s t</td>
+      <td>Anterograde pre: post BDNF</td>
+      <td>t(14)</td>
+      <td>0.0150</td>
+    </tr>
+    <tr>
+      <td>Unpaired Student’s t</td>
+      <td>Retrograde pre: post BDNF</td>
+      <td>t(14)</td>
+      <td>0.0030</td>
+    </tr>
+    <tr>
+      <td>Unpaired Student’s t</td>
+      <td>Non-mobile pre: post BDNF</td>
+      <td>t(14)</td>
+      <td>0.4278</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Figure 6</td>
+      <td>b</td>
+      <td>KIF13B intensity ratio</td>
+      <td>Kolmogorov–Smirnov Student’s t</td>
+      <td>Control: BDNF</td>
+      <td>t(79.5)</td>
+      <td>0.0177</td>
+    </tr>
+    <tr>
+      <td>c</td>
+      <td>KIF13B area occupancy ratio</td>
+      <td>Kolmogorov–Smirnov Student’s t</td>
+      <td>Control: BDNF</td>
+      <td>t(79.5)</td>
+      <td>0.8024</td>
+    </tr>
+    <tr>
+      <td>e</td>
+      <td>KIF5B intensity ratio</td>
+      <td>Kolmogorov–Smirnov Student’s t</td>
+      <td>Control: BDNF</td>
+      <td>t(62.5)</td>
+      <td>0.0644</td>
+    </tr>
+    <tr>
+      <td>f</td>
+      <td>KIF5B area occupancy ratio</td>
+      <td>Kolmogorov–Smirnov Student’s t</td>
+      <td>Control: BDNF</td>
+      <td>t(62.5)</td>
+      <td>0.3738</td>
+    </tr>
+    <tr>
+      <td>h</td>
+      <td>KIF13B co-immunoprecipitation</td>
+      <td>Paired Student’s t</td>
+      <td>Control: BDNF</td>
+      <td>t(6)</td>
+      <td>0.0024</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Figure 7</td>
+      <td>c</td>
+      <td>Recycling of TrkB</td>
+      <td>Unpaired Student’s t</td>
+      <td>EGFP: Rab10 DN</td>
+      <td>t(60.40)</td>
+      <td>0.3914</td>
+    </tr>
+    <tr>
+      <td>e</td>
+      <td>Co-localisation TrkB and Rab5</td>
+      <td>Unpaired Student’s t</td>
+      <td>EGFP: Rab10 DN</td>
+      <td>t(38.22)</td>
+      <td>0.0080</td>
+    </tr>
+  </tbody>
+</table>
+
+### Software
 
 Images were handled, edited, and analysed using ImageJ/FIJI (version 2.1.0, 1.53c). Figures were checked with Coblis (https://www.color-blindness.com/coblis-color-blindness-simulator/) using The Colour Blind Simulator algorithms from Matthew Wickline and the Human-Computer Interaction Resource Network. Palettes were adjusted to maximise visibility. The Orange/Green/Purple balanced look-up table was obtained from Christophe Leterrier’s GitHub repository (https://github.com/cleterrier/ChrisLUTs, copy archived at Lazo, 2023a). Data were imported, analysed, and sorted as R files using RStudio (version 1.0.44). GraphPad Prism for Mac (version 6.00, GraphPad Software) was used for running statistical analysis and generate the plots included in the figures. Illustrations were created with BioRender (http://www.biorender.com). Updated versions of ImageJ macros and R scripts used in this article, as well as the specific implementation of Kymoanalyzer used to analyse our datasets, can be found on our GitHub repository (https://github.com/omlazo; copies archived at Lazo, 2023b, Lazo, 2023c and Lazo, 2023d).

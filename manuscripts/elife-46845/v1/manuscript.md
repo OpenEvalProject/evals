@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.46845.001 The swimming larvae of many marine animals identify a location on the sea floor to undergo metamorphosis based on the presence of specific bacteria. Although this microbe–animal interaction is critical for the life cycles of diverse marine animals, what types of biochemical cues from bacteria that induce metamorphosis has been a mystery. Metamorphosis of larvae of the tubeworm Hydroides elegans is induced by arrays of phage tail-like contractile injection systems, which are released by the bacterium Pseudoalteromonas luteoviolacea . Here we identify the novel effector protein Mif1. By cryo-electron tomography imaging and functional assays, we observe Mif1 as cargo inside the tube lumen of the contractile injection system and show that the mif1 gene is required for inducing metamorphosis. Purified Mif1 is sufficient for triggering metamorphosis when electroporated into tubeworm larvae. Our results indicate that the delivery of protein effectors by contractile injection systems may orchestrate microbe–animal interactions in diverse contexts.
+The swimming larvae of many marine animals identify a location on the sea floor to undergo metamorphosis based on the presence of specific bacteria. Although this microbe–animal interaction is critical for the life cycles of diverse marine animals, what types of biochemical cues from bacteria that induce metamorphosis has been a mystery. Metamorphosis of larvae of the tubeworm Hydroides elegans is induced by arrays of phage tail-like contractile injection systems, which are released by the bacterium Pseudoalteromonas luteoviolacea. Here we identify the novel effector protein Mif1. By cryo-electron tomography imaging and functional assays, we observe Mif1 as cargo inside the tube lumen of the contractile injection system and show that the mif1 gene is required for inducing metamorphosis. Purified Mif1 is sufficient for triggering metamorphosis when electroporated into tubeworm larvae. Our results indicate that the delivery of protein effectors by contractile injection systems may orchestrate microbe–animal interactions in diverse contexts.
 
 ## Introduction
 
@@ -40,15 +40,47 @@ In this study, we set out to identify a potential metamorphosis-inducing effecto
 
 ## Results
 
-## Two bacterial genes are responsible for densities within the inner tube lumen of MACs and are involved in metamorphosis induction
+### Two bacterial genes are responsible for densities within the inner tube lumen of MACs and are involved in metamorphosis induction
 
 We previously identified a genomic locus in P. luteoviolacea encoding six genes (gene numbers JF50_12590, JF50_12595, JF50_12600, JF50_12605, JF50_12610 and JF50_12615) that was essential for inducing the larvae of Hydroides to undergo metamorphosis (Shikuma et al., 2016). Here we analyzed biofilms of strains with in-frame deletions of each of the six genes and tested their ability to induce Hydroides metamorphosis. The ΔJF50_12605 and ΔJF50_12615 mutants exhibited a reduced ability to induce metamorphosis (less than 20%, Figure 1A), while mutation of the other four genes had no observable effect. When JF50_12605 and JF50_12615 were replaced back into their native chromosomal loci, metamorphosis induction was restored (Figure 1B). We confirmed the effect of MACs on Hydroides metamorphosis by producing cell-free MAC array preparations. While larvae exposed to MACs from a ∆JF50_12615 mutant did not induce metamorphosis (even at high concentrations), MACs from a ∆JF50_12605 mutant induced metamorphosis when added at higher doses (Figure 1—figure supplement 1A/B). Our results suggest that JF50_12615 was essential for the induction of metamorphosis, while JF50_12605 contributed but was dispensable. Based on our results here and below, we name the protein encoded by JF50_12615 as ‘Mif1’ for Metamorphosis-Inducing Factor 1.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig1-v1.jpg)
+
+**Figure 1.:** (A) Metamorphosis (%) assay of Hydroides larvae in response to biofilms of P. luteoviolacea wildtype (WT) and different gene deletion strains. Deletion of JF50_12605 or mif1 (JF50_12615) showed a significant loss in the ability to induce metamorphosis when compared to wildtype. (B) Restoration of JF50_12605 and mif1 (JF50_12615) into their native chromosomal loci restored function. Graphs in (A/B) show an average of biological replicates, where each point represents one biological replicate. *p-value≤0.05, ns = not significant. (C–E) Representative cryotomographic images of the ‘filled’ phenotype from wildtype MACs (C), and ‘empty’ phenotype from ΔJF50_12605 (D), and Δmif1 (E) MACs. Scale bar, 100 nm. (F/G) Shown are representative MAC structures (on left; taken from C/E) and their density plots. The wildtype ‘filled’ phenotype shows a relatively homogeneous density profile across the diameter of the MAC. The Δmif1 ‘empty’ phenotype shows a low-density region in the center of the MAC. (H) Shown is the fraction of empty structures for different deletion mutants as observed by cryoET imaging. Note that the ‘empty’ phenotype correlates with the inability to induce metamorphosis (A).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Metamorphosis (%) of Hydroides larvae 24 h after exposure to extracted MACs from P. luteoviolacea wildtype (WT) and mutants. MAC extracts were diluted 1:100 before being mixed with larvae. (B) Dose-response curve of MAC extracts from WT (red), ∆macB (blue), ∆JF50_12605 (green), and ∆mif1 (purple) mutants.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A-D) MAC arrays were present in (A/B) wildtype (WT) and (C/D) ΔJF50_12590-12615 MAC extracts. Both strains showed arrays that comprised individual contractile structures in extended and contracted conformations. Shown are cryotomographic slices. Scale bar, 100 nm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A-F) Shown are cryotomographic slices of representative extended MACs for different strains and the corresponding density plots (plots were calculated from the boxed image region). ‘Empty’ and ‘filled’ phenotypes are characterized by differences in densities in the MAC center (arrowheads indicate low-density region in empty structures). Scale bar, 100 nm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A–B) When complemented into the native chromosomal loci, (A) JF50_12605 and (B) mif1 assemble wildtype-like MACs with a filled phenotype. Scale bar, 100 nm.
+
 To search for structural differences between MACs from wildtype P. luteoviolacea and the specific gene deletion mutants, we employed cryo-electron tomography (cryoET) imaging. Deletion of the full JF50_12590–JF50_12615 locus (Figure 1—figure supplement 2), or each of the six genes individually (Figure 1—figure supplement 3), did not impair the formation of ordered arrays of MACs, featuring both extended and contracted conformations. Upon detailed analyses, we observed that extended MACs from both ΔJF50_12605 and Δmif1 strains exhibited a central lumen with very low density. By contrast, MACs from wildtype and the other deletion mutants possessed a density distribution that was homogeneous and a lumen was not discernable (Figure 1C–G and Figure 1—figure supplement 3). We refer to these structural phenotypes as ‘empty’ and ‘filled’ respectively. Strikingly, quantitative analyses showed that the empty phenotype in ΔJF50_12605 and Δmif1 MACs correlated with the inability to induce metamorphosis (Figure 1A/H). The replacement of mif1 and JF50_12605 back into their native chromosomal loci reverted the empty phenotype back to filled (Figure 1—figure supplement 4).
 
-## The density within the MAC tube lumen represents a cargo protein
+### The density within the MAC tube lumen represents a cargo protein
 
 To investigate whether the structural differences between wildtype and Δmif1/ΔJF50_12605 MACs represented potential cargo, we performed sub-tomogram averaging of the extended sheath-tube complex (resolution estimation in Figure 2—figure supplement 1). The resulting MAC structures for both wildtype and Δmif1 revealed densities corresponding to the sheath and the inner tube (Figure 2A–F), similar to the structures of homologous CISs (Jiang et al., 2019). While the Δmif1 structure lacked any discernible density inside the ~4 nm-wide tube lumen (Figure 2E,F), the wildtype structure exhibited repeating packets of density inside the tube (Figure 2A–D), suggesting the presence of a potential cargo. The densities in the tube lumen reinforced less strongly compared to the sheath-tube complex, which could be caused by one or a combination of the following factors: 1) during averaging, the alignment of the cargo was affected by the strong densities from the sheath-tube, 2) the cargo was not structured or flexible, and/or 3) the cargo was present at a sub-stoichiometric amount compared to tube subunits or tube-rings. In any case, it is likely that the packet-like shape of the cargo density was caused by alignment artifacts. This is supported by a difference map between the wildtype and ∆mif1 structure, which shows a continuous density filling the inner tube lumen (Figure 2G,H). It is important to note, however, that the cargo and tube densities were separated by a low-density region (arrowheads in Figure 2B). Furthermore, any expelled tubes from triggered MACs always showed an ‘empty’ phenotype in cryotomography images (Figure 2—figure supplement 2). These results together could indicate weak or entirely absent interactions between cargo and tube, possibly facilitating rapid release of the cargo from the tube upon contraction.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig2-v1.jpg)
+
+**Figure 2.:** (A–F) Cross sectional (A/C/E) and longitudinal (B/D/F) slices through subtomogram averages of the MAC sheath-tube complex from wildtype (WT; A–D) and ∆mif1 (E–F). The hexameric sheath and tube modules could be clearly discerned (indicated in C/D). The inner tube lumen displayed clear differences in density between WT and ∆mif1. The wildtype tube lumen was filled with densities that likely represent cargo (A-D, indicated in yellow), which was not present in the ∆mif1 lumen (E/F). Note the low-density region that separates the tube and cargo (indicated by arrowheads in B). (G/H) Shown are isosurfaces of the ∆mif1 structure (gray) and of a difference map (yellow; calculated from the wildtype and ∆mif1 structure), highlighting the additional density in the wildtype tube lumen. Scale bar, 10 nm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Fourier shell correlation (FSC) between the two independently aligned and averaged half-datasets for the wildtype (yellow graph, WT) and the ∆mif1 (green graph) MAC subtomogram averages. Resolution estimates are ~17 Å and ~23 Å at the 0.5 threshold for wildtype and ∆mif1, respectively, and ~14 Å and ~18 Å at the 0.143 threshold.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Shown is a representative cryotomographic slices of WT MACs. Arrowheads indicate expelled tubes with ‘empty’ phenotype.
 
 To test whether JF50_12605 and/or Mif1 were present within the MAC complex and represented the cargo within the tube lumen, we performed protein identification by mass spectrometry of purified MACs. In two independent experiments, we detected Mif1 but not JF50_12605 in wildtype MAC samples (Figure 3A). MACs from the ΔJF50_12605 mutant exhibited considerably fewer spectral counts for the Mif1 protein. These results are consistent with the ‘empty’ phenotype observed by cryoET imaging of the ΔJF50_12605 strain (Figure 1D and Figure 1—figure supplement 3E). To further corroborate the association of Mif1 with MAC arrays, we tagged Mif1 with a FLAG-tag in its native chromosomal locus in three different locations. After purifying MACs, we detected Mif1 strongly associated with MACs from two Mif1-FLAG-tagged strains and one at a reduced level by dot-blot and an anti-FLAG antibody (Figure 3B).
 
@@ -58,9 +90,21 @@ To test whether JF50_12605 and/or Mif1 were present within the MAC complex and r
 
 Because JF50_12605 is important for localizing Mif1 within the MAC complex, we analyzed protein–protein interactions between JF50_12605 and Mif1. To this end, we performed a reciprocal pull down of S-tagged JF50_12605 and 6xHis-tagged Mif1. We detected JF50_12605 when pulling down Mif1 by nickel chromatography, and we detected Mif1 when pulling down JF50_12605 with S-tag antibodies (Figure 3C). To determine whether Mif1 or JF50_12605 associated with other components of the MAC complex, we utilized a bacterial two-hybrid system based on the interaction-mediated reconstruction of a cyclic AMP (cAMP) signaling cascade (Karimova et al., 2000). When JF50_12605, Mif1 and MacT1 (JF50_12680, tube) were screened for interactions, we found a significant interaction between JF50_12605 and Mif1 as well as JF50_12605 with itself (Figure 3D–F). However, neither JF50_12605, nor Mif1 interacted with MacT1 (JF50_12680, tube). Together, these data indicate that Mif1 is present within the MAC structure and represents the densities seen in the tube lumen, while JF50_12605 might act as a chaperone that helps to localize Mif1 inside the MAC tube. Mif1, however, could also associate with MACs independently of JF50_12605 in an inefficient manner. This is shown by 1) the residual presence of Mif1 in MACs from a ∆JF50_12605 mutant as detected by mass spectrometry (Figure 3A), and 2) the fact that high concentrations of a cell-free ∆JF50_12605 MAC extract can induce metamorphosis (Figure 1—figure supplement 1).
 
-## Purified and electroporated Mif1 protein induces tubeworm metamorphosis
+### Purified and electroporated Mif1 protein induces tubeworm metamorphosis
 
 Because our results suggested that Mif1 was loaded into the MAC tube lumen, we next tested whether Mif1 was sufficient for stimulating metamorphosis when delivered to Hydroides larvae. We therefore purified N-terminally His-tagged Mif1 by nickel chromatography (Figure 4A) and verified its identity by western blot with a Mif1-specific antibody (Figure 4B). As controls, we purified JF50_12605 and GFP under the same conditions. Mif1 protein provided exogenously to competent larvae of Hydroides at concentrations of up to 250 ng/µl did not stimulate metamorphosis (Figure 4—figure supplement 1). We reasoned, however, that the Mif1 protein might require intracellular delivery into host cells to initiate metamorphosis of Hydroides. To this end, we utilized a custom electroporator that was previously successfully used for other marine invertebrates (Zeller, 2018; Zeller et al., 2006). Successful translocation of protein was confirmed by anti-GFP western blotting of larval lysate after electroporation (Figure 4—figure supplement 2). When we delivered Mif1 into competent Hydroides larvae, a significant percentage of the larvae underwent metamorphosis (Figure 4C). In contrast, neither JF50_12605 nor GFP stimulated metamorphosis when electroporated under the same conditions. Our results suggest that Mif1 was sufficient to stimulate Hydroides metamorphosis when delivered by electroporation.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig4-v1.jpg)
+
+**Figure 4.:** (A) Shown is an SDS page gel of purified Mif1, JF50_12605 and GFP. (B) Western blot of purified Mif1 protein probed with a C-terminal anti-Mif1 peptide antibody confirms Mif1 identity. (C) Metamorphosis (%) of Hydroides larvae 24 hr after electroporation with purified Mif1, JF50_12605 or GFP protein, shows induction of metamorphosis by electroporated Mif1. Graph shows an average of biological replicates, where each point represents one biological replicate. ****p-value≤0.0001 by t-test, ns = not significant.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Metamorphosis (%) of Hydroides larvae after being soaked in 250 ng/μl of purified GFP, JF50_12605, and JF50_12615 protein for 24 h. Wildtype (WT) MACs diluted 1:100 were used as a positive control for larval competence.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/46845/elife-46845-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** We tested if electroporation results in a higher abundance of protein within tubeworm larvae. To this end, tubeworm larvae were mixed with purified GFP protein (0.625 µg/µl, 50 µg total) and electroporated at 30 V (150 V/cm) at 10 ohms and 3000 µF. As a control, a second treatment of tubeworm larvae mixed with GFP without electroporation was performed. After electroporation, larvae were washed five times to remove unassociated GFP protein. (A) Western blot analysis of larval lysate with and without electroporation resulted in higher recovery of GFP in electroporated larvae (+) when compared to un-electroporated control (-). (B) To normalize protein loading, we visualized the stain-free SDS-PAGE gel. (C/D) To quantify the amount of protein recovered after electroporation, a GFP standard curve was created by performing a Western blot on known GFP concentrations (n = 3). (E) To determine the amount of GFP associated with tubeworm larvae, we quantified GFP with (+) and without (-) electroporation. Values are a mean percent of total GFP electroporated (n = 4 biological replicates, ± SD).
 
 ## Discussion
 
@@ -78,54 +122,548 @@ The fact that bacteria are known to stimulate metamorphosis in every major group
 
 ## Materials and methods
 
-## Metamorphosis assays
+### Metamorphosis assays
 
 Bioassays were conducted with specimens of Hydroides elegans obtained from Quivira Basin, San Diego, California. Embryos were obtained and maintained as previously described (Nedved and Hadfield, 2008; Shikuma et al., 2016). Competent larvae were exposed to biofilms of P. luteoviolacea wild type, as a positive control, to P. luteoviolacea mutants, and to P. luteoviolacea strains unable to produce MAC structures (∆macB), as well as to artificial seawater (-). The percent of larvae that underwent metamorphosis was scored 24 hr after the induction of metamorphosis. Metamorphosis was scored visually by observing the number of individuals that formed branchial radioles, and a primary and secondary tube. Four biological replicates of approximately 30 larvae each were performed for each treatment on three separate occasions with larvae spawned from different adults.
 
-## Bacterial strains, plasmid construction and culture conditions
+### Bacterial strains, plasmid construction and culture conditions
 
 All bacterial strains, plasmids and primer sequences used are listed in the supplemental Tables 1 and 2. All deletion and fusion strains were created according to previously published protocols (Rocchi et al., 2019; Shikuma et al., 2016; Shikuma et al., 2014). Plasmid insert sequences were verified by DNA sequencing. Deletion and insert strains were confirmed by PCR. All E. coli strains were grown in Lysogeny-Broth (LB) media at 37°C shaking at 200 revolutions per minute (RPM). All P. luteoviolacea cultures were grown in seawater tryptone (SWT) media (35.9 g/l Instant Ocean, 2.5 g/l tryptone, 1.5 g/l yeast extract, 1.5 ml/l glycerol) at 25°C shaking at 200 RPM. Media that contained antibiotics were at a concentration of 100 mg/ml unless otherwise stated.
 
-## Gentle MAC extraction
+**Table 1.**
+ Strains and plasmids used in this work.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Strain no.</th>
+      <th></th>
+      <th>Genotype</th>
+      <th>Source or reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Strain</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NJS5</td>
+      <td>HI1 StrR</td>
+      <td>P. luteoviolacea HI1, StrR</td>
+      <td>(Huang et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>NJS23</td>
+      <td>∆macB</td>
+      <td>P. luteoviolacea HI1, StrR∆macB</td>
+      <td>(Shikuma et al., 2014)</td>
+    </tr>
+    <tr>
+      <td>NJS235</td>
+      <td>∆JF50_12590-F50_12615</td>
+      <td>P. luteoviolacea HI1, StrR ∆R4</td>
+      <td>(Shikuma et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>NJS289</td>
+      <td>∆JF50_12590</td>
+      <td>P. luteoviolacea HI1, StrR∆JF50_12590</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>NJS287</td>
+      <td>∆JF50_12595</td>
+      <td>P. luteoviolacea HI1, StrR∆JF50_12595</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>NJS285</td>
+      <td>∆JF50_12600</td>
+      <td>P. luteoviolacea HI1, StrR∆JF50_12600</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>NJS283</td>
+      <td>∆JF50_12605</td>
+      <td>P. luteoviolacea HI1, StrR∆JF50_12605</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>NJS281</td>
+      <td>∆JF50_12610</td>
+      <td>P. luteoviolacea HI1, StrR∆JF50_12610</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>NJS279</td>
+      <td>∆JF50_12615</td>
+      <td>P. luteoviolacea HI1, StrR∆JF50_12615</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>NJS294</td>
+      <td>∆JF50_12605::12605</td>
+      <td>P. luteoviolacea HI1, StrR∆JF50_12605::JF50_12605</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>NJS295</td>
+      <td>∆JF50_12615::12615</td>
+      <td>P. luteoviolacea HI1, StrR∆JF50_12615::JF50_12615</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Plasmid</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>pNJS007</td>
+      <td>pCVD443</td>
+      <td>AmpR, KmR, sacB, pGP704 derivative</td>
+      <td>(Huang et al., 2012)</td>
+    </tr>
+    <tr>
+      <td>pNJS266</td>
+      <td>pCVD443_∆12590</td>
+      <td>pCVD443::∆12590 AmpR, KmR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS265</td>
+      <td>pCVD443_∆12595</td>
+      <td>pCVD443::∆12595 AmpR, KmR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS264</td>
+      <td>pCVD443_∆12600</td>
+      <td>pCVD443::∆12600 AmpR, KmR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS263</td>
+      <td>pCVD443_∆12605</td>
+      <td>pCVD443::∆12605 AmpR, KmR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS262</td>
+      <td>pCVD443_∆12610</td>
+      <td>pCVD443::∆12610 AmpR, KmR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS261</td>
+      <td>pCVD443_∆12615</td>
+      <td>pCVD443::∆12615 AmpR, KmR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS256</td>
+      <td>pCVD443_12590–615 complement</td>
+      <td>AmpR, KmR</td>
+      <td>(Shikuma et al., 2016)</td>
+    </tr>
+    <tr>
+      <td>pNJS282</td>
+      <td>pCVD443_12605 complement</td>
+      <td>AmpR, KmR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS074</td>
+      <td>pCVD443_∆12585</td>
+      <td>AmpR, KmR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS267</td>
+      <td>pUT18</td>
+      <td>AmpR</td>
+      <td>(Karimova et al., 2000)</td>
+    </tr>
+    <tr>
+      <td>pNJS268</td>
+      <td>pUT18C</td>
+      <td>AmpR</td>
+      <td>(Karimova et al., 2000)</td>
+    </tr>
+    <tr>
+      <td>pNJS269</td>
+      <td>pKT25</td>
+      <td>KmR</td>
+      <td>(Karimova et al., 2000)</td>
+    </tr>
+    <tr>
+      <td>pNJS270</td>
+      <td>pKNT25</td>
+      <td>KmR</td>
+      <td>(Karimova et al., 2000)</td>
+    </tr>
+    <tr>
+      <td>pNJS283</td>
+      <td>pUT18_12605</td>
+      <td>AmpR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS299</td>
+      <td>pUT18_12615</td>
+      <td>AmpR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS527</td>
+      <td>pUT18_12680</td>
+      <td>AmpR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS284</td>
+      <td>pKT25_12605</td>
+      <td>KmR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS285</td>
+      <td>pKT25_12615</td>
+      <td>KmR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS529</td>
+      <td>pKT25_12680</td>
+      <td>KmR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS286</td>
+      <td>pKNT25_12605</td>
+      <td>KmR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS300</td>
+      <td>pKNT25_12615</td>
+      <td>KmR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS530</td>
+      <td>pKNT25_12680</td>
+      <td>KmR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS393</td>
+      <td>pET15b_12605</td>
+      <td>AmpR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS395</td>
+      <td>pET15b_12615</td>
+      <td>AmpR</td>
+      <td>This Study</td>
+    </tr>
+    <tr>
+      <td>pNJS397</td>
+      <td>pET15b_GFP</td>
+      <td>AmpR</td>
+      <td>This Study</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Primers used in this work.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer</th>
+      <th>Sequence</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1556_dA</td>
+      <td>TGATGGGTTAAAAAGGATCGATCCTCTAGATTGGAGCAATAAACGGGTTC</td>
+    </tr>
+    <tr>
+      <td>1556_dB</td>
+      <td>GTTCATAATTAAACTGCGATCGCAGCCATAAGGCCTCCTTGATA</td>
+    </tr>
+    <tr>
+      <td>1556_dC</td>
+      <td>TATCAAGGAGGCCTTATGGCTGCGATCGCAGTTTAATTATGAAC</td>
+    </tr>
+    <tr>
+      <td>1556_dD</td>
+      <td>TTTTGAGACACAACGTGAATTCAAAGGGAGAGCTCCGCTTTGGGTACTGGCTTTA</td>
+    </tr>
+    <tr>
+      <td>1556_intF</td>
+      <td>CCGAGCAAACGTTATCACAA</td>
+    </tr>
+    <tr>
+      <td>1556_intR</td>
+      <td>TCAGCGCTCTCATTATGTGC</td>
+    </tr>
+    <tr>
+      <td>1555_dA</td>
+      <td>TGATGGGTTAAAAAGGATCGATCCTCTAGACCGAGCAAACGTTATCACAA</td>
+    </tr>
+    <tr>
+      <td>1555_dB</td>
+      <td>CCTTGCATGAGGTTAAGAAAGTTTGACGTACCCTTCAGCCATATT</td>
+    </tr>
+    <tr>
+      <td>1555_dC</td>
+      <td>AATATGGCTGAAGGGTACGTCAAACTTTCTTAACCTCATGCAAGG</td>
+    </tr>
+    <tr>
+      <td>1555_dD</td>
+      <td>TTTTGAGACACAACGTGAATTCAAAGGGAGAGCTCGATGCGGTAACGGTTGTTCT</td>
+    </tr>
+    <tr>
+      <td>1555_intF</td>
+      <td>AGCGATTGATGCTGAACAAA</td>
+    </tr>
+    <tr>
+      <td>1555_intR</td>
+      <td>ACCATCGCATAACCCGTAAC</td>
+    </tr>
+    <tr>
+      <td>1554_dA</td>
+      <td>TGATGGGTTAAAAAGGATCGATCCTCTAGATACGCCGTCCAGTTAGGACT</td>
+    </tr>
+    <tr>
+      <td>1554_dB</td>
+      <td>GTTTGTTAACGTCACGGCAGCTGCATTGCCATTTAAACTCC</td>
+    </tr>
+    <tr>
+      <td>1554_dC</td>
+      <td>GGAGTTTAAATGGCAATGCAGCTGCCGTGACGTTAACAAAC</td>
+    </tr>
+    <tr>
+      <td>1554_dD</td>
+      <td>TTTTGAGACACAACGTGAATTCAAAGGGAGAGCTCATTGATTGGAAGCGCGATAG</td>
+    </tr>
+    <tr>
+      <td>1554_intF</td>
+      <td>TTTATGAGGCACCAACGACA</td>
+    </tr>
+    <tr>
+      <td>1554_intR</td>
+      <td>GCCTGTGCCGTTTTATCTGT</td>
+    </tr>
+    <tr>
+      <td>1553_dA</td>
+      <td>TGATGGGTTAAAAAGGATCGATCCTCTAGAGGCGATCAGTGGAGTGAAGT</td>
+    </tr>
+    <tr>
+      <td>1553_dB</td>
+      <td>AATACTTCTTGCTCAGCCCCGCGTGCTTCTTCTGTCATGT</td>
+    </tr>
+    <tr>
+      <td>1553_dC</td>
+      <td>ACATGACAGAAGAAGCACGCGGGGCTGAGCAAGAAGTATT</td>
+    </tr>
+    <tr>
+      <td>1553_dD</td>
+      <td>TTTTGAGACACAACGTGAATTCAAAGGGAGAGCTCTCAGAACCAGCAGTCTCACG</td>
+    </tr>
+    <tr>
+      <td>1553_intF</td>
+      <td>CGGGCCTAGAAATCACTCAA</td>
+    </tr>
+    <tr>
+      <td>1553_intR</td>
+      <td>TCGACGTCAAATCAGTCGAG</td>
+    </tr>
+    <tr>
+      <td>1552_dA</td>
+      <td>TGATGGGTTAAAAAGGATCGATCCTCTAGAGAGAGCAAGAAGTGGCGAGT</td>
+    </tr>
+    <tr>
+      <td>1552_dB</td>
+      <td>TAGCCTTTTAGTGCCGCTTTTGAGGCGTCCATATCTGACA</td>
+    </tr>
+    <tr>
+      <td>1552_dC</td>
+      <td>TGTCAGATATGGACGCCTCAAAAGCGGCACTAAAAGGCTA</td>
+    </tr>
+    <tr>
+      <td>1552_dD</td>
+      <td>TTTTGAGACACAACGTGAATTCAAAGGGAGAGCTCTGCTGACCAAGCAGATTGAC</td>
+    </tr>
+    <tr>
+      <td>1552_intF</td>
+      <td>GGGCAATTGTTGTGGATTTT</td>
+    </tr>
+    <tr>
+      <td>1552_intR</td>
+      <td>TGATCCCAAACCACTTGTGA</td>
+    </tr>
+    <tr>
+      <td>1551_dA</td>
+      <td>TGATGGGTTAAAAAGGATCGATCCTCTAGAGACTGCTGGTTCTGATTCGAT</td>
+    </tr>
+    <tr>
+      <td>1551_dB</td>
+      <td>AACAGATCATTACATTAAAATGAGCCTCTGTTCTTGTTGTTGCATTTCA</td>
+    </tr>
+    <tr>
+      <td>1551_dC</td>
+      <td>TGAAATGCAACAACAAGAACAGAGGCTCATTTTAATGTAATGATCTGTT</td>
+    </tr>
+    <tr>
+      <td>1551_dD</td>
+      <td>TTTTGAGACACAACGTGAATTCAAAGGGAGAGCTCCTTCTCCATTTTCGCCTTTG</td>
+    </tr>
+    <tr>
+      <td>1551_intF</td>
+      <td>CGTTTTCAGTGACCATCACG</td>
+    </tr>
+    <tr>
+      <td>1551_intR</td>
+      <td>CGGTGGGCAAAAAGGTATAA</td>
+    </tr>
+    <tr>
+      <td>pUT18_605_F1</td>
+      <td>CAGCTATGACCATGATTACGCCAAGCTTGCATGCCATGACAGAAGAAGCACGCGAAAAAA</td>
+    </tr>
+    <tr>
+      <td>pUT18_605_R1</td>
+      <td>CTGGCGGCTGAATTCGAGCTCGGTACCCGGGGATCATTCACAAGTGCTAATTGATAAAAT</td>
+    </tr>
+    <tr>
+      <td>pUT18_615_F1</td>
+      <td>CAGCTATGACCATGATTACGCCAAGCTTGCATGCCATGCAACAACAAGAACAGGAGCAAG</td>
+    </tr>
+    <tr>
+      <td>pUT18_615_R1</td>
+      <td>CTGGCGGCTGAATTCGAGCTCGGTACCCGGGGATCCATTAAAATGAGCCTTTCTTTTTCA</td>
+    </tr>
+    <tr>
+      <td>pUT18_680_F</td>
+      <td>CATGATTACGCCAAGCTTGCATGCCATGGCTACTACTAAAGCAGATATCG</td>
+    </tr>
+    <tr>
+      <td>pUT18_680_R</td>
+      <td>AATTCGAGCTCGGTACCCGGGGATCATGGAACTCAATCTTGATGTCATCT</td>
+    </tr>
+    <tr>
+      <td>pKT_605_F1</td>
+      <td>CCGATTACCTGGCGCGCACGCGGCGGGCTGCAGGGATGACAGAAGAAGCACGCGAAAAAA</td>
+    </tr>
+    <tr>
+      <td>pKT_605_R1</td>
+      <td>AACGACGGCCGAATTCTTAGTTACTTAGGTACCCGCTAATTCACAAGTGCTAATTGATAA</td>
+    </tr>
+    <tr>
+      <td>pKT_615_F1</td>
+      <td>CCGATTACCTGGCGCGCACGCGGCGGGCTGCAGGGATGCAACAACAAGAACAGGAGCAAG</td>
+    </tr>
+    <tr>
+      <td>pKT_615_R1</td>
+      <td>AACGACGGCCGAATTCTTAGTTACTTAGGTACCCGTTACATTAAAATGAGCCTTTCTTTT</td>
+    </tr>
+    <tr>
+      <td>pKT_680_F1</td>
+      <td>CCTGGCGCGCACGCGGCGGGCTGCAATGGCTACTACTAAAGCAGATATCG</td>
+    </tr>
+    <tr>
+      <td>pKT_680_R1</td>
+      <td>GCCGAATTCTTAGTTACTTAGGTACTTAATGGAACTCAATCTTGATGTCA</td>
+    </tr>
+    <tr>
+      <td>pKNT_605_F1</td>
+      <td>CAGCTATGACCATGATTACGCCAAGCTTGCATGCCATGACAGAAGAAGCACGCGAAAAAA</td>
+    </tr>
+    <tr>
+      <td>pKNT_605_R1</td>
+      <td>TGATGCGATTGCTGCATGGTCATTGAATTCGAGCTATTCACAAGTGCTAATTGATAAAAT</td>
+    </tr>
+    <tr>
+      <td>pKNT_615_F1</td>
+      <td>CAGCTATGACCATGATTACGCCAAGCTTGCATGCCATGCAACAACAAGAACAGGAGCAAG</td>
+    </tr>
+    <tr>
+      <td>pKNT_615_R1</td>
+      <td>TGATGCGATTGCTGCATGGTCATTGAATTCGAGCTCATTAAAATGAGCCTTTCTTTTTCA</td>
+    </tr>
+    <tr>
+      <td>pKNT_615_F2</td>
+      <td>CATGATTACGCCAAGCTTGCATGCCATGCAACAACAAGAACAGGAGCAAG</td>
+    </tr>
+    <tr>
+      <td>pKNT25-680_F</td>
+      <td>CATGATTACGCCAAGCTTGCATGCCATGGCTACTACTAAAGCAGATATCG</td>
+    </tr>
+    <tr>
+      <td>pKNT25-680_R</td>
+      <td>GCTGCATGGTCATTGAATTCGAGCTATGGAACTCAATCTTGATGTCATCT</td>
+    </tr>
+    <tr>
+      <td>pET15b_605_F1</td>
+      <td>TGCCGCGCGGCAGCCATATGATGACAGAAGAAGCACGCG</td>
+    </tr>
+    <tr>
+      <td>pET15b_605_R1</td>
+      <td>GCTTTGTTAGCAGCCGGATCCCTAATTCACAAGTGCTAATT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Gentle MAC extraction
 
 P. luteoviolacea was grown in 50 ml SWT media in 250 ml flasks at 30 °C for 6 hr or overnight (12–14 h). Cells were centrifuged for 30 min at 4000 g and 4 °C and resuspended in 5 ml cold extraction buffer (20 mM Tris, pH 7.5, 1M NaCl). Cultures were centrifuged for 30 min at 4000 g and 4 °C and the supernatant was isolated and centrifuged for 30 min at 7000 g and 4 °C. The pellet was resuspended in 20–100 µl cold extraction buffer and stored at 4°C for further use.
 
-## Plunge freezing of MACs
+### Plunge freezing of MACs
 
 Plunge freezing was performed as implemented in Weiss et al. (2017). In essence, gentle MAC extractions were seeded with 10 nm BSA-coated colloidal gold particles (1:4 v/v, Sigma) and 4 μl of the mixture was applied to a glow-discharged holey-carbon copper EM grid (R2/1, Quantifoil). The grid was backside blotted in a Vitrobot (FEI Company) by using a Teflon sheet on the front pad, and plunge-frozen in a liquid ethane-propane mixture (37%/63%) cooled by a liquid nitrogen bath. Frozen grids were stored in liquid nitrogen.
 
-## Cryo-electron tomography
+### Cryo-electron tomography
 
 The gentle MAC extractions were imaged by cryo-electron tomography (cryoET) (Weiss et al., 2017). Images were recorded on a Titan Krios TEM (FEI) equipped with a Quantum LS imaging filter operated at a 20 eV slit width and K2 Summit (Gatan). Pixel sizes at specimen level ranged from 2.14 Å to 2.72 Å. Tilt series were collected using a bidirectional tilt-scheme from −30° to +60° and −32° to −60° in 2° increments. Total dose was ~90 e-/Å2 and defocus was kept at −5 to −6 µm. Some tilt series were recorded in focus using a Volta phase plate (Danev et al., 2014). Tilt series were acquired using SerialEM (Mastronarde, 2005) and reconstructed and segmented using the IMOD program suite (Kremer et al., 1996). Density plots to determine filled and empty phenotypes were done using Fiji (Schindelin et al., 2012). Contrast enhancement of some tomograms was done using the tom_deconv deconvolution filter (https://github.com/dtegunov/tom_deconv).
 
-## Sub-tomogram averaging
+### Sub-tomogram averaging
 
 Tomograms used for structure identification and picking were binned by a factor of 4. Defocus was estimated using Gctf (Zhang, 2016) and CTF correction, exposure filtering and backprojection was done using IMOD. SR data were binned by a factor of 2 resulting in a pixel size of 4.29 Å/px. The discrete extended MAC structures were identified visually in individual tomograms and their longitudinal axes were modeled with open contours in 3dmod (Mastronarde, 2008). Individual model points were added at defined intervals of about 12 nm along the contours using the addModPts program from the PEET package (Heumann et al., 2011) resulting in 24’721 initial particles for filled tubes and 37’024 initial particles for empty tubes. Models were imported into Dynamo (Castaño-Díez et al., 2012), particles were extracted, the azimuth angle was randomized and all particles were averaged to obtain an initial reference. Four times binned subtomograms (17.14 Å/px) were used for four iterations of initial alignment with the reference low-pass filtered to about 50 Å. No symmetry was applied, but rotational search was limited to +/- 30°. Before unbinning, subtomograms were cleaned by distance and cross correlation coefficient leaving 20’358 filled and 20’782 empty tube particles. Two times binned subtomograms (8.57 Å/px) were extracted using the refined coordinates and the dataset was split in two half sets. Half sets were aligned independently for five iterations. Unbinned subvolumes (4.29 Å/px) were extracted using the refined coordinates and aligned for eight more iterations. Subvolumes were cleaned by cross correlation coefficient and final averages were generated using 13’039 particles and 13’425 particles for filled and empty tubes, respectively. UCSF Chimera (Pettersen et al., 2004) was used for visualization of the 3D models and to generate the difference map between wildtype and ∆mif1 structure.
 
-## Bacterial two-hybrid analysis
+### Bacterial two-hybrid analysis
 
 Bacterial two-hybrid Analysis was performed following the protocols detailed previously (Karimova et al., 2000). Briefly, proteins of interest were cloned into one of four Bacterial Two Hybrid (BTH) plasmids pUT18, pUT18C, pKT25, and pKNT25. These produced individual N- or C-terminal fusions between the proteins of interest and the T18 and T25 subunits on of the adenylate cyclase (CyaA) protein. All plasmid sequences were confirmed by PCR. Plasmid combinations containing the genes of interest were then electroporated into BTH101 electrocompetent cells that lacked a native CyaA gene. The BTH101 cells were grown on LB agar containing ampicillin (100 mg/ml), kanamycin (100 mg/ml) and 1% glucose. Glucose was used to suppress the expression of proteins before performing the assay. Protein–protein interactions were quantified by performing a β-galactosidase assay with cells being grown overnight at 37°C and shaking at 200 RPM. Protein expression was induced with 1.0 mM IPTG. The cultures were incubated at 25°C shaking at 200 RPM for 6 hr before being mixed with a one-step ‘β-gal’ mix (Schaefer et al., 2016). A plate reader was then used to measure the absorbance at 420 nm and 600 nm. The optical densities were used to calculate Miller Units as previously described (Miller, 1972).
 
-## Protein purification and electroporation
+### Protein purification and electroporation
 
 To purify JF50_12615, JF50_12605 and GFP proteins, genes of interest were cloned into the pET15b plasmid and grown in E. coli BL21 pLysE. Bacteria were struck out on LB agar plates with ampicillin (100 µg/µl) and grown at 37°C for 24 hr. A single colony was inoculated into 5 ml LB with ampicillin (100 µg/µl) and grown at 37°C shaking at 200 RPM for 14–16 hr. The overnight culture was diluted 1:500 into 500 ml LB with ampicillin (100 µg/µl), grown at 37°C shaking at 200 RPM until the culture reached an OD600 of 0.95. Protein expression was induced with 0.1 mM IPTG and grown for 25°C for 16 hr. The culture was centrifuged at 4000 g for 20 min and the supernatant was removed. The pellet was then resuspended in lysis buffer (20 mM imidazole, 25 mM tris-HCl, 500 mM NaCl, pH 8) with a protease inhibitor cocktail (100 µM leupeptin, 1 µM pepstatin and 5 µM bestatin). The culture was French pressed twice (1000 psi) and sonicated 3 times for 10–30 s each time. The lysed culture was then spun down at 12,000 g for 20 min and the supernatant was discarded. Inclusion bodies were purified from the pellet by first washing the pellet twice with 20 mM tris pH 8, 2 M urea, 2% triton X-100, 500 mM NaCl. The remaining pellet was resuspended using 5 ml 6M guanidinium HCl, 5 mM imidazole, 20 mM tris pH 8, 500 mM NaCl. The 6XHIS tagged proteins were then bound to Ni-agarose beads which had been pre-equilibrated to the resuspension buffer. The proteins were refolded by adding 1 ml/min of 5 mM imidazole, 20 mM tris pH 8, 500 mM NaCl up to a total of 50 ml. After refolding, the beads were loaded onto a vacuum column and washed twice with 10 ml of refolding buffer. The protein was then eluted using 250 mM imidazole, 20 mM tris pH 8, 500 mM NaCl. Fractions containing the protein were buffer exchanged into a storage buffer (25 mM tris, 250 mM NaCl, pH 7.6) and stored at −80°C. A Bradford protein assay (BioRad) was done in order to quantify the amount of protein present. An antibody produced against the Mif1-specific peptide sequence CERSKGEFTEGKPKP (Genscript) was used to confirm expression and purification.
 
-## Western blot
+### Western blot
 
 Protein samples and lysates were first normalized using Bradford protein assay to quantify protein concentrations. Equal concentrations of protein were loaded onto BioRad stain-Free SDS-PAGE gels 4–20% (catalog no. 4568093) and imaged prior to transfer to confirm equal loading using BioRad gel doc ez system and stain free tray. The protein gel was then used to transfer protein to a PVDF membrane via semi-dry transfer system. The membranes were blocked in 5% milk-TBST (50 mM Tris-Cl, pH 7.6; 150 mM NaCl, 0.1% tween-20) for 30 min. The primary antibody was added at 1:1000 dilution (unless otherwise stated) to 5% milk-TBST and rocked overnight at 4°C. The membrane was washed three times for 10 min each in TBST. Secondary antibody was added at 1:20,000 to TBST and rocked for 1 hr at room temperature. The membrane was washed three more times for 15 min each before chemiluminescent substrate was added and visualized using BioRad XRS imaging cabinet. Antibodies include a custom Mif1 antibody (Genscript), S-Tag antibody (GenScript catalog no. A00625, RRID:AB_915085), DYKDDDDK antibody (Thermo Fisher Scientific catalog no. 701629, RRID:AB_2532497), GFP antibody (Thermo Fisher Scientific catalog no. G10362, RRID:AB_2536526) and Goat anti-Rabbit IgG (H+L) secondary antibody, HRP (Thermo Fisher Scientific Catalog no. 31460, RRID:AB_228341).
 
-## Electroporation
+### Electroporation
 
 The method for electroporation of Hydroides larvae was adapted from those established for ascidian embryos (Zeller, 2018; Zeller et al., 2006). Specifically, 50 µl of 0.77 M mannitol, 20 µl of concentrated larvae (approximately 30 larvae), and 10 µl of purified protein (1.25–12.5 µg, 15.6–156 ng/µl final concentration based on protein recovery from inclusion bodies) were mixed and added to a 2 mm electroporation cuvette. The mixture was then electroporated with 30 V (150 V/cm) at 10 ohms and 3000 µF using a custom electroporation apparatus as previously described (Zeller et al., 2006). After electroporation, the mixture was immediately removed from the cuvette and mixed with 1 ml filtered artificial sea water and transferred into a 24-well plate. The larvae were then observed for metamorphosis 24 to 72 hr later (dependent on WT MACs positive control). Purification of proteins was performed on three separate occasions and each purification was electroporated twice, for a total of six independent biological replicates, each yielding similar outcomes.
 
-## Quantification of electroporation
+### Quantification of electroporation
 
 To test whether purified protein is transferred to tubeworm larvae by electroporation, larvae were concentrated to 30 larvae/µl. Final GFP concentration used was 0.625 µg/µl (50 µg total per electroporation). 20 µl of larvae were either electroporated by adding them to 50 µl 0.77 M mannitol and 10 µl of 5 µg/µl purified GFP, then electroporated at 30 V (150 V/cm) at 10 ohms and 3000 µF or not electroporated. Larvae were recovered from the electroporation cuvette by adding 1 ml instant ocean and moved to microcentrifuge tubes. Larvae were then washed 5 times with 1 ml instant ocean by first spinning down at 4000 g for 30 s and removing all but 50 µl of liquid. After the five washes larvae were then spun down at 4000 for 2 min and the sea water was removed. On ice, the larvae were then lysed in 100 µl 50 mM tris pH 8, 150 mM NaCl, 1% Triton X-100, and vortexed three times for 30 s each. Cell debris was pelleted by centrifuging at 21,000 g for 10 min and the pellet was discarded. The lysate was then quantified by first diluting a small aliquot of lysate (5 µl) 1:10 and using a Bradford protein assay. The GFP standard curve was created by performing 2-fold serial dilutions of the original purified GFP and using densitometry of the western blot. 8.76 µg of larvae lysate was loaded onto the same gel, with both the mock zap negative control and the electroporated larvae. Recovered protein was calculated using densitometry and the GFP standard curve. This was repeated for four biological replicates each with separate western blots.
 
-## Pulldown assays
+### Pulldown assays
 
 E. coli containing a dual expression plasmid with 12605, Mif1, or both 12605 and Mif1 was grown in 50 ml of LB supplemented with chloramphenicol (100 µg/ml) until an OD600 0.6 at 37°C. The E. coli plasmid was induced with 1 mM IPTG and the temperature was lowered to 20°C, then expression was allowed to proceed overnight (16 hr). Cells were recovered by pelleting at 4000 g for 10 min and media was discarded. Cells were resuspended in 25 mM tris pH 7.6, 150 mM NaCl and protease inhibitor cocktail (100 µM leupeptin, 1 µM pepstatin and 5 µM bestatin). Cells were lysed twice by French press 1000 Psi and then centrifuged at 10,000 g to remove cellular debris where the supernatant was then transferred to a new tube and the pellet was discarded. The conjugated agarose beads (Ni-NTA agarose and S-Tag binding agarose, EMD Millipore 69704–3) were equilibrated with the lysis buffer and 1 ml of agarose was added in batch to the recovered supernatant. Agarose was then recovered on a column and washed an additional two times with the lysis buffer to remove non-specific bound proteins. Proteins were eluted using either, 500 µl 3 M MgCl2, 20 mM tris pH 7.6 (S-TAG beads), or 500 µl 250 mM imidazole, 500 mM NaCl, 20 mM Tris pH 7.6 (Ni-NTA beads). 20 µg protein was loaded onto SDS-PAGE gel and then transferred onto PVDF membrane for western blot using either the endogenous Mif1 antibody or S-Tag antibody (GenScript Cat# A00625, RRID:AB_915085).
 
-## Mass spectrometry
+### Mass spectrometry
 
 P. luteoviolacea was grown in 50 ml Marine Broth (MB) media in 250 ml flasks at 30°C for 6 hr or overnight (12–14 hr). Cells were centrifuged for 30 min at 7000 g and 4°C and resuspended in 5 ml cold extraction buffer (20 mM Tris, pH 7.5, 1 M NaCl). The resuspensions were centrifuged for 30 min at 4000 g and 4°C and the supernatant was isolated and centrifuged for 30 min at 7000 g and 4°C. The pellet was resuspended in 20–100 µl cold extraction buffer and stored at 4°C for further use. All mass spectrometry was done by the Functional Genomics Center Zurich (FGCZ). To prep the MAC extracts for mass spectrometry, the extracts were precipitated by mixing 30 µl of sample with 70 µl water and 100 µl 20% TCA. The samples were then washed twice with cold acetone. The dry pellets were dissolved in 45 µl buffer (10 mM Tris/2 mM CaCl2, pH 8.2) and 5 µl trypsin (100 ng/µl in 10 mM HCl). They were then microwaved for 30 min at 60°C. The samples were dried, then dissolved in 20 µl 0.1% formic acid and transferred to autosampler vials for LC/MS/MS. 1 µl was injected.

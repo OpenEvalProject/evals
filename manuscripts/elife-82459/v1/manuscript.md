@@ -20,10 +20,10 @@
 
 ### Affiliations
 
-1. https://ror.org/035xkbk20 Aix-Marseille University, INSERM, TAGC, Turing Center for Living systems Marseille France
+1. Aix-Marseille University, INSERM, TAGC, Turing Center for Living systems Marseille France ([ROR:035xkbk20](https://ror.org/035xkbk20))
 2. Centre for Molecular Medicine Norway (NCMM) Oslo Norway
-3. https://ror.org/03m1g2s55 Development, Aging and Regeneration Program, Sanford Burnham Prebys Medical Discovery Institute La Jolla United States
-4. https://ror.org/02feahw73 CNRS Marseille France
+3. Development, Aging and Regeneration Program, Sanford Burnham Prebys Medical Discovery Institute La Jolla United States ([ROR:03m1g2s55](https://ror.org/03m1g2s55))
+4. CNRS Marseille France ([ROR:02feahw73](https://ror.org/02feahw73))
 
 † Corresponding author
 
@@ -45,11 +45,194 @@ Comparison of human GWAS of cardiac disorders with results in flies identified a
 
 ## Results
 
-## Quantitative genetics of heart performances in the DGRP
+### Quantitative genetics of heart performances in the DGRP
 
 In this study, we aimed to evaluate how naturally occurring genetic variations affect cardiac performance in young Drosophila adults and identify variants and genes involved in the genetic architecture of cardiac traits. To assess the magnitude of naturally occurring variations of the traits, we measured heart parameters in 1-week-old females for 167 lines from the DGRP, a publicly available population of sequenced inbred lines derived from wild caught females (Figure 1A). Briefly, semi-intact preparations of individual flies (Ocorr et al., 2007c) were used for high-speed video recording combined with Semi-automated Heartbeat Analysis (SOHA) software (http://www.sohasoftware.com/) which allows precise quantification of a number of cardiac function parameters (Fink et al., 2009; Cammarato et al., 2015). Fly cardiac function parameters are highly influenced by sex (Wessells et al., 2004). Due to the experimental burden of analyzing individual cardiac phenotypes, we focused on female flies only and designed our experiment in the following way: we randomly selected 14 lines out of 167 that were replicated twice. The remaining 153 lines were replicated once. Each replicate was composed of 12 individuals. No block effect was observed due to the replicates in the 14 selected lines (see Supplementary file 1a). This allowed us to perform our final analysis on one replicate of each of the 167 lines. A total sample of 1956 individuals was analyzed. Seven cardiac traits were analyzed across the whole population (Figure 1—source data 1 and Table 1). As illustrated in Figure 1A, we analyzed phenotypes related to the rhythmicity of cardiac function: the systolic interval (SI) is the time elapsed between the beginning and the end of one contraction, the diastolic interval (DI) is the time elapsed between two contractions and the heart period (HP) is the duration of a total cycle (contraction+relaxation (DI+SI)). The arrhythmia index (AI, std-dev(HP)/mean (HP)) is used to evaluate the variability of the cardiac rhythm. In addition, three traits related to contractility were measured. The diameters of the heart in diastole (end diastolic diameter [EDD]), in systole (end systolic diameter [ESD]), and the fractional shortening (FS), which measures the contraction efficacy (EDD −ESD/EDD). We found significant genetic variation for all traits (Figure 1B and Figure 1—figure supplement 1) with broad sense heritability ranging from 0.30 (AI) to 0.56 (EDD) (Table 1). Except for EDD/ESD and HP/DI, quantitative traits were poorly correlated with each other (Figure 1—figure supplement 1).
 
-## GWAS analyses of heart performance
+![Figure 1.](https://cdn.elifesciences.org/articles/82459/elife-82459-fig1-v1.jpg)
+
+**Figure 1.:** (A) Left: Cardiac performance traits were analyzed in 167 sequenced inbred lines from the DGRP population. Approximately 12 females per line were analyzed. Right panels: Schematic of the Drosophila adult heart assay and example of M-mode generated from video recording of a beating fly heart. Semi-intact preparations of 1-week-old adult females were used for high-speed video recording followed by automated and quantitative assessment of heart size and function. The representative M-mode trace illustrate the cardiac traits analyzed. DI: diastolic interval; SI: systolic interval; HP: heart period (duration of one heartbeat); EDD: end diastolic diameter (fully relaxed cardiac tube diameter); ESD: end systolic diameter (fully contracted cardiac tube diameter). Fractional shortening (FS=EDD − ESD/EDD) and arrythmia index (AI=Std Dev (HP)/HP) were additionally calculated and analyzed. (B) Distribution of line means and within lines variations (box plots) from 167 measured DGRP lines for HP and EDD. DGRP lines are ranked by their increasing mean phenotypic values. For both phenotypes, representative M-modes from extreme lines are shown below (other traits are displayed in Figure 1—figure supplement 1). (C) Pearson residuals of chi-square test from the comparison of indicated single nucleotide polymorphism (SNP) categories in the DGRP and among variants associated with cardiac traits. According to DGRP annotations, SNPs are attributed to genes if they are within the gene transcription unit (5’ and 3’ UTR, synonymous and non-synonymous coding, introns) or within 1 kb from transcription start and end sites (1 kb upstream, 1 kb downstream). NA: SNPs not attributed to genes (>1 kb from transcription start site [TSS] and transcription end sites [TES]). (D) Comparison of gene sets identified by single marker using Fast-LMM (LMM) and in interaction using FastEpistasis (Epistasis). The Venn diagram illustrates the size of the two populations and their overlap. (E) Overlap coefficient of gene sets associated with the different cardiac traits analyzed.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82459/elife-82459-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Distribution of line means and within lines variations (box plots) from 167 measured Drosophila Genetic Reference Panel (DGRP) lines for diastolic interval (DI), systolic interval (SI), arrhythmia index (AI), end systolic diameter (ESD), and fractional shortening (FS). DGRP lines are ranked by their mean phenotypic values. (B) Overall correlations between phenotypes in the DGRP population. Spearman correlations were calculated based on average of line means for each cardiac trait.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/82459/elife-82459-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** QQ plot displays the quantile distribution of observed marker-phenotype association p-values vs. the distribution of expected p-values assuming the null hypothesis (uniformly distributed). The first part shows the QQ plot for trait means and the second part shows the QQ plot for trait CVe’s. QQ plots fail to capture deviation from uniformity for most of the phenotypes.
+
+**Table 1.**
+ Quantitative genetics of cardiac traits in the Drosophila Genetic Reference Panel (DGRP).Summary statistics over all DGRP genotypes assayed. Number of lines and individuals (after outlier removal, see Materials and methods) analyzed for each cardiac trait is indicated. Mean, standard deviation (Std dev.), and coefficient of variation (Coef. Var) among the whole population are indicated. Genetic, environment, and phenotypic variance (respectively Genet. var, Env. var, and Phen. var) were calculated for each trait. Broad sense heritability of traits means (H2) suggested heritability of corresponding traits. Levene test indicated significant heterogeneity of the variance among the lines.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Diastolicintervals</th>
+      <th>Systolicintervals</th>
+      <th>Heartperiod</th>
+      <th>Diastolic Diameter</th>
+      <th>Systolic diameter</th>
+      <th>Fractional shortening</th>
+      <th>Arrhythmia Index</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>total.nb.lines</td>
+      <td>167</td>
+      <td>167</td>
+      <td>167</td>
+      <td>167</td>
+      <td>167</td>
+      <td>167</td>
+      <td>167</td>
+    </tr>
+    <tr>
+      <td>mean</td>
+      <td>0.4638</td>
+      <td>0.2166</td>
+      <td>0.6883</td>
+      <td>79.4200</td>
+      <td>51.0500</td>
+      <td>0.3538</td>
+      <td>0.2475</td>
+    </tr>
+    <tr>
+      <td>Std dev.</td>
+      <td>0.26330</td>
+      <td>0.03216</td>
+      <td>0.27690</td>
+      <td>14.09000</td>
+      <td>9.49300</td>
+      <td>0.06837</td>
+      <td>0.29230</td>
+    </tr>
+    <tr>
+      <td>Coef. var</td>
+      <td>0.5677</td>
+      <td>0.1485</td>
+      <td>0.4022</td>
+      <td>0.1774</td>
+      <td>0.1860</td>
+      <td>0.1933</td>
+      <td>1.1810</td>
+    </tr>
+    <tr>
+      <td>lines (mean)</td>
+      <td>165</td>
+      <td>166</td>
+      <td>165</td>
+      <td>159</td>
+      <td>157</td>
+      <td>158</td>
+      <td>166</td>
+    </tr>
+    <tr>
+      <td>Indiv. (mean)</td>
+      <td>1914</td>
+      <td>1911</td>
+      <td>1920</td>
+      <td>1779</td>
+      <td>1753</td>
+      <td>1767</td>
+      <td>1832</td>
+    </tr>
+    <tr>
+      <td>lines (Cve)</td>
+      <td>165</td>
+      <td>166</td>
+      <td>165</td>
+      <td>159</td>
+      <td>157</td>
+      <td>158</td>
+      <td>166</td>
+    </tr>
+    <tr>
+      <td>Indiv. (Cve)</td>
+      <td>1914</td>
+      <td>1911</td>
+      <td>1920</td>
+      <td>1779</td>
+      <td>1753</td>
+      <td>1767</td>
+      <td>1832</td>
+    </tr>
+    <tr>
+      <td>Genet. var</td>
+      <td>2.59e-02</td>
+      <td>5.03e-04</td>
+      <td>2.87e-02</td>
+      <td>1.13e+02</td>
+      <td>4.39e+01</td>
+      <td>1.57e-03</td>
+      <td>2.21e-02</td>
+    </tr>
+    <tr>
+      <td>Env. var</td>
+      <td>4.36e-02</td>
+      <td>5.35e-04</td>
+      <td>4.82e-02</td>
+      <td>8.64e+01</td>
+      <td>4.65e+01</td>
+      <td>3.11e-03</td>
+      <td>6.35e-02</td>
+    </tr>
+    <tr>
+      <td>Phen. var</td>
+      <td>6.95e-02</td>
+      <td>1.04e-03</td>
+      <td>7.68e-02</td>
+      <td>1.99e+02</td>
+      <td>9.04e+01</td>
+      <td>4.68e-03</td>
+      <td>8.56e-02</td>
+    </tr>
+    <tr>
+      <td>H2</td>
+      <td>0.373</td>
+      <td>0.485</td>
+      <td>0.373</td>
+      <td>0.566</td>
+      <td>0.485</td>
+      <td>0.335</td>
+      <td>0.258</td>
+    </tr>
+    <tr>
+      <td>F value</td>
+      <td>76,864</td>
+      <td>11,686</td>
+      <td>74,715</td>
+      <td>46,950</td>
+      <td>15,041</td>
+      <td>11,164</td>
+      <td>65,308</td>
+    </tr>
+    <tr>
+      <td>Pr(F)</td>
+      <td>8.8e-120</td>
+      <td>2.3e-187</td>
+      <td>5.8e-116</td>
+      <td>7.1e-62</td>
+      <td>1.9e-231</td>
+      <td>8.8e-175</td>
+      <td>1.8e-96</td>
+    </tr>
+    <tr>
+      <td>Levene test</td>
+      <td>1.9e-10</td>
+      <td>1.9e-10</td>
+      <td>1.7e-08</td>
+      <td>1.6e-05</td>
+      <td>2.1e-13</td>
+      <td>1.6e-05</td>
+      <td>2.1e-13</td>
+    </tr>
+  </tbody>
+</table>
+
+### GWAS analyses of heart performance
 
 To identify candidate variants associated with cardiac performance variation, we performed GWAS analyses and evaluated single marker associations of line means with common variants using a linear mixed model (Lippert et al., 2011) and after accounting for effects of Wolbachia infection and common polymorphism inversions (see Materials and methods). Genotype-phenotype associations were performed separately for all seven quantitative traits and variants were ranked based on their p-values. For most of the phenotypes analyzed, quantile-quantile (QQ) plots were uniform (Figure 1—figure supplement 2) and none of the variants reached the strict Bonferroni correction threshold for multiple tests (2 · 10–8), which is usual in the DGRP given the size of the population. However, the decisive advantage of the Drosophila system is that we can use GWA analyses as primary screens for candidate genes and mechanisms that can be subsequently validated by different means. We therefore chose to analyze the 100 top ranked variants for each quantitative trait. This choice is based on our strategy to test the selected single nucleotide polymorphisms (SNPs) and associated genes by a variety of approaches – data mining and experimental validation (see below) – in order to provide a global validation of association results and to gain insights into the characteristics of the genetic architecture of the cardiac traits. This cut-off was chosen in order to be able to test a significant number of variants while being globally similar to the nominal cut-off (10–5) generally used in DGRP analyses. A large proportion of the variants retained have indeed a p-value below 10–5. Selected variants were further filtered on the basis of minor allele frequency (MAF >4%) (Figure 1—source data 2, Supplementary file 1b). Among the seven quantitative traits analyzed, we identified 530 unique variants. These variants were associated to genes if they were within 1 kb of transcription start site (TSS) or transcription end sites (TES). Using these criteria, 417 variants were mapped to 332 genes (Supplementary file 1c). We performed a chi-squared test to determine if the genomic location of variants associated with cardiac traits is biased toward any particular genomic region when compared with the whole set of variants with MAF >4% in the DGRP population and obtained a p-value of 2.778e-13. Genomic locations of the variants were biased toward regions within 1 kb upstream of genes TSS, and, to a lesser extent, to genes 5’ UTR (Figure 1C). Variants not mapped to genes (located at >1 kb from TSS or TES) were slightly depleted in our set.
 
@@ -57,13 +240,25 @@ In GWAS analyses, loci associated with a complex trait collectively account for 
 
 Taken together, single marker GWAS and epistatic interactions performed on the seven cardiac phenotypes identified a compendium of 562 genes associated with natural variations of heart performance (Supplementary file 1f). In line with the correlation noted between their phenotypes (Figure 1—figure supplement 1B), the GWAS for HP and DI identified partially overlapping gene sets (overlap index 0.23, Figure 1E). The same was true, to a lesser extent, for ESD and EDD (0.15). Otherwise, the sets of genes associated with each of the cardiac traits are poorly correlated with each other.
 
-## Functional annotations and network analyses of association results
+### Functional annotations and network analyses of association results
 
 Our next objective was to identify the biological processes potentially affected by natural variation in cardiac performance. Gene Ontology (GO) enrichment analysis of the combined single marker GWAS and epistatic interactions analyses indicated that genes encoding signaling receptors, TFs, and cell adhesion molecules were over-represented among these gene sets (pval=1.4 × 10–9 [FC=2.9], 5×10–4 [FC=2], and 3×10–3 [FC=4.6], respectively). There was also a bias for genes encoding proteins located at the plasma membrane, at ion channel complexes as well as components of contractile fibers (pval=3.4 × 10–10 [FC=3], 7×10–5 [FC=4.2], and 4×10–2 [FC=3.6]; Figure 2A; Supplementary file 2a). Of note, although a number of genes have previously been identified as being required during heart development or for the establishment and maintenance of cardiac function by single gene approaches, we found no enrichment for these gene categories in our analysis. In addition, genes identified in a global screen for stress-induced lethality following heart-specific RNAi KD (Neely et al., 2010) were also not enriched in GWAS detected genes (FC=1; Supplementary file 2b). This indicates that genes associated to natural variations of cardiac traits are typically missed by traditional forward or reverse genetics approaches, which highlights the value of our approach.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/82459/elife-82459-fig2-v1.jpg)
+
+**Figure 2.:** (A) Gene Ontology (GO) enrichment analyses. Selected molecular functions (MF, left) and cellular components (CC, right) associated with cardiac performances at FDR < 0.05 are shown. Enrichment analysis was performed using G:profiler with a correction for multitesting (see Materials and methods). (B) Interaction network of genes associated with natural variations of cardiac performance. Direct genetic and physical interactions between cardiac fly GWAS genes are displayed. Nodes represent genes and/or proteins, edges represent interactions (blue: genetic; black: physical). Node shapes refer to single marker and/or epistasis GWAS, node color to the cardiac performances phenotype(s) for which associations were established. Genes and proteins highlighted in pink point to transcription factors, in green and blue to signaling pathways (FGF and TGFb, respectively), and in yellow to ion channels. (C) Heatmap representing the effects on indicated cardiac traits of heart-specific RNAi-mediated knockdown (KD) of 42 genes identified in GWAS for cardiac performance. Results of Wilcoxon rank sum test of the effects of indicated heart-specific RNAi-mediated gene KD (rows) for cardiac performance traits (columns), analyzed on semi-intact 1-week females flies. Detailed data are presented in Figure 2—source data 2. Thirty-eight (out of 42) genes tested lead to significant effects on cardiac performance traits upon KD. Black dots indicate the trait(s) for which the corresponding gene was associated in GWAS. ns: not significant; *: pval <0.05; **: pval <0.01; ***: pval <0.005; ****pval <0.0001 (p-values were adjusted for multiple testing using Bonferroni correction). Comparison with heart-specific effect of random selected genes is displayed in Figure 2—figure supplement 1. (D) Schematic drawing of BMP and activin pathways in Drosophila. (E) Genetic interactions between BMP and activin pathway genes. Genetic interactions tested between snooBSC234 and sogU2 for SI and between dppd14 and babo32 for FS (other phenotypes are shown in Figure 2—figure supplement 2). Cardiac traits were measured on each single heterozygotes and on double heterozygotes flies. Two-way ANOVA reveals that the interaction between snooBSC234 and sogU2 for SI and between dppd14 and babo32 for FS are significant. Detailed data for interaction effect corresponding to all phenotypes are displayed in Figure 2—figure supplement 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82459/elife-82459-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Heatmap representing the effects on indicated cardiac traits of heart-specific RNAi-mediated KD of 20 genes selected randomly (below the top 100 threshold for reporting associations). Results of Wilcoxon rank sum test of the effects of indicated heart-specific RNAi-mediated gene KD (rows) for cardiac performance traits (columns), analyzed on semi-intact 1-week females’ flies. (B) For each phenotype and each gene, Z-scores summarizes the difference in the phenotype distribution from tested genes to their respective control (detailed data are in Figure 2—source data 2). The density curve highlighted in pink shows the distribution of the absolute Z-scores of all the phenotypes for the genome-wide associations studies (GWAS) associated genes and the density curve in blue highlights the corresponding distribution for randomly selected genes. Using the Mann-Whitney-Wilcoxon test, we showed that the Z-scores of GWAS associated genes were significantly different (higher) from the randomly selected genes.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82459/elife-82459-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Cardiac performances of controls, snooBSC234, sogU2 heterozygotes, and snooBSC234; sogU2 double heterozyotes. Box plots and Wilcoxon test results are indicated (*: pval<0.05; **: pval<0.01; ***: pval<0.005; ****: pval<0.0001). n: number of individual flies analyzed for each genotype. p-Values from two-way ANOVA, testing the significance of the genetic interaction between snooBSC234 and sogU2, are indicated for each phenotype. (B) Cardiac performances phenotypes of heterozygotes for babo32 and dppd14 and of babo32; dppd14 double heterozyotes. Box plots and Wilcoxon test results are indicated (*: pval< 0.05; **: pval<0.01; ***: pval< 0.005; ****: pval<0.0001). n: number of individual flies analyzed for each genotype. The two-way ANOVA p-values testing the significance of the genetic interaction between babo32 and dppd14 are reported. (C) Cardiac performances phenotypes of heterozygotes for babo32 and tkv8 and of babo32; tkv8 double heterozyotes. Box plots and Wilcoxon test results are indicated (*: pval< 0.05; **: pval<0.01; ***: pval< 0.005; ****: pval<0.0001). n: number of individual flies analyzed for each genotype. The two-way ANOVA p-values testing the significance of the genetic interaction between babo32 and tkv8 are reported. (D) Cardiac performances phenotypes of heterozygotes for smoxG0348 and mad12 and of smoxG0348; mad12 double heterozyotes. Box plots and Wilcoxon test results are indicated (*: pval< 0.05; **: pval<0.01; ***: pval< 0.005; ****: pval<0.0001). n: number of individual flies analyzed for each genotype. The two-way ANOVA p-values testing the significance of the genetic interaction between smoxG0348 and mad12 are reported. (E) Cardiac performances phenotypes of heart-specific dpp RNAi knockdown. Hand>Gal4; UAS RNAi 1-week adult females were analyzed for cardiac performance. Box plots and Wilcoxon test results are indicated (*: pval< 0.05; **: pval<0.01; ***: pval< 0.005; ****: pval<0.0001). n: number of individual flies analyzed for each genotype.
+
 In order to gain additional knowledge about the cellular and molecular pathways affected by natural variations of cardiac traits, we have mapped the associated genes and gene products onto characterized interaction networks. Of the 562 identified genes, 419 were mapped to the fly interactome that includes both physical (protein-protein) and genetic interactions from both DroID (Murali et al., 2011) and flybi databases (see Materials and methods and Figure 2—source data 1). Remarkably, a high proportion (148) of the GWAS identified genes were directly connected within the fly interactome and formed a large network of interacting genes/proteins (Supplementary file 2c and d, Figure 2B), suggesting that they participate in common biological processes. This network encompasses several TFs and ion channel complex genes, consistent with their potential role in the genetic architecture of natural variation of heart performance. Several components of signaling pathways are also present in the network, including members of the FGF and TGFβ pathways (see below).
 
-## Functional validations of candidate genes
+### Functional validations of candidate genes
 
 To assess in an extensive way whether mutations in genes harboring SNPs associated with variation in cardiac traits contributed to these phenotypes, we selected 42 GWAS associated genes for cardiac-specific RNAi KD and tested the effects on cardiac performance. We selected genes that were identified in at least two independent GWAS for two traits or that were known to be dynamically expressed in the adult heart (Monnier et al., 2012) and for which inducible RNAi lines were available. Genes were tested in 1-week-old adult female flies, using the heart-specific Hand>Gal4 driver (Popichenko et al., 2007) and the same semi-intact heart preparations and SOHA analyses as for DGRP lines screening. Notably, 38 of the 42 selected genes led to various levels of cardiac performance defects following heart-specific KD (Figure 2C). In parallel, we tested the effect on cardiac performance of knocking down 18 genes randomly selected in the genome – the GWAS associated genes being excluded from the selection (see Materials and methods and Figure 2—figure supplement 1). Although a number of these genes lead to cardiac phenotypes when inactivated – which is consistent with published observations that quantitative traits can be influenced by a large number of genes (Zhang et al., 2021) – when inactivated in the heart, the genes selected from GWAS lead to significantly more frequent phenotypes compared to the randomly selected genes (Figure 2—figure supplement 1). These results therefore supported our association results. It is important to emphasize that our approach is limited to testing the effects of tissue-specific gene KD. Since some of the variants may lead to increased gene function and/or expression, this can lead to a false negative rate that is difficult to estimate. In addition, some of the associated variants may influence heart function by non-cell-autonomous mechanisms, which would not be replicated by cardiac-specific RNAi KD.
 
@@ -71,11 +266,11 @@ We further focused on the TGFβ pathway, since members of both BMP and activin p
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/82459/elife-82459-fig3-v1.jpg)
 
-**Figure 3.:** (A) Schematic representation of the workflow used for motifs analysis in the vicinity of the non-coding variants and comparison with TFBSs databases. (B) Logo representation of position-specific scoring matrices (PSSMs) identified in corresponding sets of non-coding variants. Potential cognate TFs are indicated and were identified by comparing PSSMs to TFBSs databases. (C) Cardiac-specific RNAi knockdown phenotypes of TFs tested in vivo. Hand>Gal4; UAS RNAi 1-week adult females (n>30 per cross) were analyzed for cardiac performance in intact flies. Scatter plots of individual data, mean, and SD are represented. Wilcoxon test results are indicated (*: pval <0.05; **: pval <0.01; ***: pval <0.005; ****pval <0.0001). Data were normalized to genotype matched controls. Raw data are presented in Figure 2—source data 2. Detailed statistical analyses are in Supplementary file 2e.Figure 3—source data 1.
+**Figure 3.:** (A) Schematic representation of the workflow used for motifs analysis in the vicinity of the non-coding variants and comparison with TFBSs databases. (B) Logo representation of position-specific scoring matrices (PSSMs) identified in corresponding sets of non-coding variants. Potential cognate TFs are indicated and were identified by comparing PSSMs to TFBSs databases. (C) Cardiac-specific RNAi knockdown phenotypes of TFs tested in vivo. Hand>Gal4; UAS RNAi 1-week adult females (n>30 per cross) were analyzed for cardiac performance in intact flies. Scatter plots of individual data, mean, and SD are represented. Wilcoxon test results are indicated (*: pval <0.05; **: pval <0.01; ***: pval <0.005; ****pval <0.0001). Data were normalized to genotype matched controls. Raw data are presented in Figure 2—source data 2. Detailed statistical analyses are in Supplementary file 2e.
 
 As a whole, the cardiac phenotypes observed following RNAi-mediated gene KD of GWAS selected genes and the complex interplay characterized between different activin and BMP pathways members are strong validations of the GWAS results that are further supported by the functional analysis of non-coding variants and by the correlations we observed between identified fly genes and human genes associated to cardiac dysfunction (discussed below).
 
-## Natural variations of heart performance primarily affect gene regulatory networks
+### Natural variations of heart performance primarily affect gene regulatory networks
 
 The over-representation of genes coding for TFs found in GWAS for cardiac performance traits (pval=5559 · 10–4, Figure 2A, Supplementary file 2a) suggested that perturbations of gene regulatory networks (GRNs) play a central role in the genetic architecture of natural variations of cardiac performance. In addition, most variants (95%) were localized in non-coding regions of the genome. Remarkably, their distribution was enriched in gene proximal (0–1 kb) upstream regions (Figure 1C) suggesting that a high proportion of variants affects cis-regulatory sequences.
 
@@ -87,9 +282,21 @@ We did not test individually the effects on cardiac performance of mutations in 
 
 Taken together, the high rate of non-coding SNPs among variants identified in GWAS, the TFBS predictions with in vivo validation of potential cognate TFs, and enrichment for TFs among genes associated with natural variations of heart performance support a central role of GRN deviations in the natural variation of cardiac performance.
 
-## Identifying natural variations of phenotypic variability of cardiac performance
+### Identifying natural variations of phenotypic variability of cardiac performance
 
 The use of inbred lines offers the possibility of studying the heritability of the within-line variance of the phenotypes. Several studies have indeed shown that the within-line environmental variance of inbred lines is heritable (Morgante et al., 2015; Harbison et al., 2013; Ayroles et al., 2015). These genetic variations in phenotypic variability suggest that different genotypes respond differently in response to micro-environmental changes (Geiler-Samerotte et al., 2013; Anholt and Mackay, 2018). We used the Levene test Levene, 1960 to examine heterogeneity of the ‘micro-environmental’ variance among lines for the seven analyzed cardiac traits. We found evidence of significant heterogeneity among the lines in the variance for all analyzed cardiac traits (Table 1). This suggests that the lines differ in their ability to adapt to micro-environmental variations, and supports the heritability of this differing adaptability. The coefficient of within-line variation (CVe) was used as the metric for within-line environmental variance. We found significant genetic variation for all CVe traits (Figure 4A and B and Figure 4—figure supplement 1A) indicating that within some lines, individuals display relatively constant cardiac performance traits, whereas within others, individuals display widely varying cardiac traits. Similar to trait means, CVe traits were poorly correlated with each other (Figure 4—figure supplement 1B), except for HP/DI and EDD/ESD. Correlations of CVe traits with their respective trait means ranged from moderate (FS: –0.53) to none (DI: 0.064, SI: 0.09, ESD: 0.08) (Figure 4—figure supplement 1C). This suggested that distinct loci may affect natural variations of CVe and means of cardiac performance parameters.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/82459/elife-82459-fig4-v1.jpg)
+
+**Figure 4.:** (A) Distribution of end systolic diameter (ESD) CVe values among DGRP lines. Lines are arranged by increasing CVe values (other phenotypes are displayed in Figure 4—figure supplement 1). (B) Distribution of ESD values across individuals for two representative DGRP lines with low and high intra-genotypic variability. Each dot represents ESD value of a single fly. (Individual values scaled by line mean). (C) Venn diagram illustrating the overlap between single nucleotide polymorphisms (SNPs) (left) and genes (right) associated with mean (yellow) and CVe traits (pink). While only three SNPs were retrieved from GWAS of both mean and CVe traits, genes associated with CVe traits are largely overlapping with those associated with mean traits. (D) Miami plots showing the results of GWAS performed on mean of ESD (top, red) and ESD CVe (bottom, blue). No overlap between sets of variants is observed. Miami plots for other traits are displayed in Figure 4—figure supplement 2. (E) Pearson residuals of chi-square test from the comparison of indicated SNPs categories in the DGRP and among variants associated with cardiac traits CVe (see legend to Figure 1C for detailed description of SNPs categories). (F) Gene Ontology (GO) enrichment analyses of genes associated with CVe traits. Selected molecular functions and cellular components associated with variance of cardiac performances at FDR < 0.05 are shown. (G) Logo representation of position-specific scoring matrices (PSSMs) identified in corresponding sets of non-coding variants associated with cardiac traits CVe. Potential cognate transcription factors (TFs) indicated below were identified by comparing PSSMs to TF binding sites databases.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82459/elife-82459-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Barplot distribution of heart period (HP), diastolic interval (DI), systolic interval (SI), arrhythmia index (AI), end diastolic diameter (EDD), and fractional shortening (FS) CVe values among Drosophila Genetic Reference Panel (DGRP) lines. Lines are arranged by increased CVe values. (B) Overall correlations between CVe phenotypes. Spearman correlations were calculated on line CVe for each cardiac trait. (C) Overall correlations among mean and CVe phenotypes. Spearman correlations were calculated among line mean and line CVe for each cardiac trait.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/82459/elife-82459-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Miami plots showing the results of GWAS performed on mean (top, red) and CVe (bottom, blue) of indicated cardiac traits. The arrows point the Ca-β single nucleotide polymorphisms (SNPs) associated to both mean fractional shortening (FS) and CVe FS.
 
 We performed GWAS analysis to identify candidate variants and genes associated with variation of CVe of cardiac performance using both single marker and epistasis GWAS analyses. Similar to trait means we retained the 100 top ranked variants for reporting single marker associations. These variants were further used as focal variants for epistasis detection and the best ranked interacting SNP for each starting focal SNP was identified. Overall, this led to the identification of 887 variants and 566 genes associated with natural variations of CVe of cardiac performance (Figure 4—source data 1, Supplementary file 3a), which were used for hypothesis generation and functional annotations. Although the number of individuals we were able to analyze – due to the experimental burden of analyzing individual cardiac phenotypes – reduced the statistical power of the analysis of micro-environmental variance, the functional enrichment analyses of variants and genes described below provide support for our association results and highlight important features of the genetic architecture of cardiac traits.
 
@@ -97,11 +304,70 @@ Consistent with the weak correlation between cardiac trait CVe and trait means, 
 
 Within the CVe-associated genes we observed an over-representation of cell adhesion processes, transmembrane signaling, and ion channel activity (pval=1.6 × 10–8 (FC=7), 1.1×10–3 (FC=2,2), and 4.5×10–2 (FC=2,5) respectively). Enriched cellular component annotations included cell-cell junction (pval=5.7 × 10–3 (FC=3.2), receptor complexes (pval=3.3 × 10–4 (FC=4.6), sarcolemma (pval=1.3 × 10–2 (FC=25), as well as several annotations related to neuronal projections suggesting both cell autonomous and non-autonomous activity of related genes (Figure 4F, Supplementary file 3d). In addition, genes leading to stress-induced lethality upon heart-specific KD (Neely et al., 2010) were significantly under-represented in this gene set (FC=0,6; p=0,05; Supplementary file 3e). This may suggest that a significant proportion of CVe GWAS-associated genes affect cardiac trait variance non-cell autonomously. As for trait means, variants localized in the proximal region of the genes (0–1 kb upstream of TSS) are over-represented among SNPs associated with traits CVe (Figure 4E). This suggested that natural variations of cardiac performance variance are also mainly affecting cis-regulatory regions. We also identified over-represented PSSMs in sequences within 150 pb of non-coding CVe variants (Figure 4G). Some of these identified PSSMs were specifically enriched in the sequences around CVe variants. This is the case for instance for Ladybird-early, Lbe, the fly orthologue of the mammalian LBX TF. However, several identified CVe PSSMs are similar to those identified in the vicinity of variants associated with trait means. This is the case for motifs predicted to be bound by Luna and Lola – variants of which are associated with CVe traits (Supplementary file 3a) – and it is also the case for Klu and Mad. Therefore, similar to the situation described for trait means, natural variations of phenotypic plasticity of cardiac performance appears, for a large part, to be driven by modifications of gene regulatory networks.
 
-## Conserved features of natural variations of heart performance between flies and humans
+### Conserved features of natural variations of heart performance between flies and humans
 
 Next, we compared our GWAS results for cardiac performance in flies with similar data in humans. A literature survey identified a comprehensive set of human genes associated with cardiac disorders and coronary artery diseases (CAD) in human populations (Supplementary file 3f and h). Using DIOPT (Hu et al., 2011), we identified human orthologues of the genes associated with cardiac trait means and CVe in flies (Supplementary file 4a and d). Compared to the whole fly genome gene set (17,500 genes), both sets of GWAS-associated genes were significantly enriched for genes that have a human orthologue (FC = 1.4, pval = 4.3 · 10–21 for genes associated with trait means and FC = 1.25; pval = 7 · 10–11 for genes associated with traits CVe, Table 2), indicating that, overall, the loci associated with natural variations in cardiac traits have evolutionary conserved functions. More importantly, GWAS loci were enriched for genes whose human orthologues were associated with cardiac disorders (FC = 1.66 [trait means] and 1.7 [traits CVe], pval = 7 · 10–6, Table 2 and Supplementary file 4b and e). Lower enrichment was found for orthologues of human genes associated with CAD (FC = 1.35, pval = 0.04 [trait means] and 1.25, pval = 0.07 [traits CVe]). This analysis strongly supports the view that the cellular and molecular processes of heart development and physiology – which is already well characterized between fly and humans (Ocorr et al., 2007b; Diop and Bodmer, 2015; Rosenthal et al., 2010; Bier and Bodmer, 2004) – are not only conserved but also have a common genetic basis underlying their natural variation.
 
+**Table 2.**
+ Conserved genes associated with natural variations of cardiac traits from flies to humans.Enrichment analyses for genes conserved in human and for genes whose human orthologue is associated with either coronary artery diseases (CAD) or cardiac disorders. Numbers in parenthesis indicate the total number of genes in each analyzed gene set (whole fly genome/mean and CVe GWAS-associated genes). First row (human orthologue): Number of fly genes that display a human orthologue according to DIOPT (high and moderate rank). Second and third rows: Number of genes whose human orthologue (high and moderate rank) has been associated with CAD or cardiac disorders by genome-wide associations studies (GWAS) in human populations (Supplementary file 3f-i). Fold change (FC): Ratio between expected (based on successes observed on fly genome) and observed number of successes in respective GWAS gene sets. pval: hypergeometric p-value.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Fly genome (17500)</th>
+      <th>GWAS mean (562)</th>
+      <th>FC</th>
+      <th>pval</th>
+      <th>GWAS Cve (566)</th>
+      <th>FC</th>
+      <th>pval</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Human orthologue</td>
+      <td>9463</td>
+      <td>410</td>
+      <td>1.4</td>
+      <td>4.3 · 10–21</td>
+      <td>379</td>
+      <td>1.25</td>
+      <td>7 ·10–11</td>
+    </tr>
+    <tr>
+      <td>CAD</td>
+      <td>321</td>
+      <td>19</td>
+      <td>1.35</td>
+      <td>0.04</td>
+      <td>16</td>
+      <td>1.25</td>
+      <td>0.07</td>
+    </tr>
+    <tr>
+      <td>Cardiac disorders</td>
+      <td>944</td>
+      <td>68</td>
+      <td>1.66</td>
+      <td>7 · 10–6</td>
+      <td>64</td>
+      <td>1.7</td>
+      <td>7 · 10–6</td>
+    </tr>
+  </tbody>
+</table>
+
 Building on these observations, we next wanted to determine whether our data in flies could guide the identification of novel players in the human cardiac system. We focused on the paired box TF gene pox-meso (poxm/PAX9) and on the zinc finger containing TF stripe (sr/EGR2) – both were associated with natural variations of cardiac trait means (Supplementary file 1f). Notably, neither the fly genes nor their human orthologues have a known function in the cardiac system. In flies, poxm contributes to the development and specification of somatic muscles (Duan et al., 2007), while sr is required for induction of tendon cell fate (Gunage et al., 2017). We first tested the effects of heart-specific KD on cardiac performance in flies using the in vivo assay. Both induced an increased heart rate (reduced HP and SI; Figure 5A) but did not affect other cardiac traits analyzed (not shown). The function of their human orthologues PAX9 and EGR2 was then tested in hiPSC-CMs. We asked whether siRNA-mediated KD affected action potential kinetics using a recently developed in vitro assay (Figure 5B; McKeithan et al., 2017). As shown in Figure 5C–E, both gene KDs induced shortening of the AP duration, thus suggesting conserved function in setting cardiac rhythm for both TFs. The effect was stronger for PAX9 KD and seems specific to the repolarization phase, as suggested by APD50 and 75 shortening (Figure 5F–I). APD shortening for PAX9 KD was coincident with increased expression of Na+ and K+ ion channels (SCN5A, KCNH2, and KNCQ1) (Figure 5J), supporting the APD shortening phenotype. In this context, the AP kinetics also correlated with shorter calcium transient duration (Figure 5—figure supplement 1A-D and H-K), including faster upstroke and downstroke calcium kinetics and increased beat rate (peak frequency) (Figure 5—figure supplement 1E-G and L, M), consistent with decreased expression of Calsequestrin 2 isoform (CASQ2) associated with PAX9 KD (Figure 5J). Finally, assessment of the PAX9 KD effect on sarcomeric content revealed an increase in sarcomeric gene expression (Figure 5K), and an upregulation of genes associated with an hypertrophic response (NPPA, NPPB, and NPR1) (Battistoni et al., 2012), which was coincident with increased CM size as quantified by the area of TNNT2 staining per cardiac nuclei (Figure 5L and M).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/82459/elife-82459-fig5-v1.jpg)
+
+**Figure 5.:** (A) Heart-specific knockdown (KD) of poxm/Pax9 and sr/Egr2 lead to increased heart rate in flies. Cardiac-specific RNAi KD phenotypes of tested transcription factors (TFs). Hand>Gal4; UAS RNAi 1-week adult females (n>30 per cross) were analyzed for cardiac performance using the in vivo assay on intact flies. Scatter plots of individual data, mean, and SD are represented. Wilcoxon test results are indicated (***: pval <0.005). Data were normalized to genotype matched controls. Right panel: representative M-modes (5 s) of RNAi KD and their respective control illustrating the increased heart rate observed upon poxm and sr inactivation. Number of heartbeats counted from M-modes are indicated. (B–I) Effects of Pax9 and Egr2 siRNA on hiPSC-CM action potentials. (B) Schematic overview of single cell and high-throughput voltage assay. (C) Two-dimensional graph for APD75 and Kolgomorov-Smirnov distance (KS-D) representing screen results for PAX9 and EGR2 KD. (D–E) Population distribution of APD75 measurements for siPAX9 and siEGR2 vs. siControl-transfected hiPSC-CMs, respectively. (F) Median action potential traces for siPAX9, siEGR2, and siControl-transfected hiPSC-CMs. (G–I) Histograms showing median APD50, APD75, and APD90 for siPAX9, siEGR2, and siControl-transfected hiPSC-CMs. n > 4 in all experiments. SD are represented. (J,K) Heatmaps of differentially expressed genes in siControl- and siPAX9-transfected hiPSC-CMs. (L) Histogram showing the effect of PAX9 KD on the average TNNT2 staining area per CM as compared to siControl. n > 4 in all experiments. SD are represented. (M) Representative images for siPAX9 and siControl. TNNT2 is shown in red and nuclei are stained with DAPI in blue. Scale bar = 25 μm. t-Test was used to calculate p-values. *p<0.05, ***p<0.001, ****p<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82459/elife-82459-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Schematic overview of single cell and high-throughput calcium assay. (B) Two-dimensional graph for CTD75 and Kolgomorov-Smirnov distance (KS-D) representing screen results for PAX9 and EGR2 KD. (C–D) Population distribution of CTD75 measurements for siPAX9 and siEGR2 vs. siControl-transfected hiPSC-ACMs, respectively. (E) Two-dimensional graph for peak frequency measurements and Kolgomorov-Smirnov distance representing screen results for PAX9 and EGR2 KD. (F–G) Population distribution of peak frequency measurements for siPAX9 and siEGR2 vs. siControl-transfected hiPSC-ACMs, respectively. (H) Median action potential traces for siPAX9, siEGR2, and siControl-transfected hiPSC-ACMs. (I–O) Histograms showing median CTD50, CTD75, CTD90, peak frequency, peak count, peak rise time, and peak decay time for siPAX9, siEGR2, and siControl-transfected hiPSC-ACMs. n > 4 in all experiments. SD are represented. t-Test was used to calculate p-values. *p<0.05, **p<0.01, ***p<0.001, ****p<0.0001.
 
 Collectively, these data illustrate conserved functions for poxm/PAX9 and sr/EGR2 in setting the cardiac rhythm and identify PAX9 as a novel and key regulator of cardiac performance at the cellular level, via the integrated regulation of expression of genes controlling electrophysiology, calcium handling, and sarcomeric functions in hiPSC-CMs.
 
@@ -125,27 +391,27 @@ In summary, the analysis of natural variations of cardiac performance in Drosoph
 
 ## Materials and methods
 
-## Flies’ strains and husbandry
+### Flies’ strains and husbandry
 
 Fly strains were obtained from the Bloomington Drosophila Stock Center or the Vienna Drosophila Resource Center. Flies were reared at a controlled density on corn flour/yeast/sucrose-agar medium at 25°C, 50% relative humidity and 12 hr light/dark. For movies acquisitions, newly emerged adults (0–24 hr) were collected and aged for 7 days. For screening of the DGRP population, 12 flies were analyzed for each DGRP strain. For validations (RNAi-mediated gene KD or mutant analyses), 30–40 flies per genotype were analyzed. All fly strains used in this study are listed in Supplementary file 4h and i.
 
-## Fly heart-specific RNAi KD and mutant analyses
+### Fly heart-specific RNAi KD and mutant analyses
 
 Driver-line (Hand>Gal4 4.2) (Popichenko et al., 2007) virgins were crossed to UAS-RNAi males or corresponding isogenic control males. BMP mutants were back-crossed into the same isogenic control background. Flies were raised on standard fly food and kept at 25°C. Female progeny were collected and aged to 1 week at 25°C, at which point they were imaged and analyzed.
 
-## Semi-intact preparations and SOHA analyses
+### Semi-intact preparations and SOHA analyses
 
 To measure cardiac function parameters, denervated, semi-intact Drosophila females adult fly hearts were prepared according to previously described protocols (Ocorr et al., 2007c). High-speed ~3000 frames movies were taken at a rate of 140 frames per second using a Hamamatsu ORCAFlash4.0 digital CMOS camera (Hamamatsu Photonics) on a Zeiss Axioplan microscope with a ×10 water immersion lens. The live images of the heart tube within abdominal A3-4 segments were captured using HCI imaging software (Hamamatsu Photonics). M-modes and cardiac parameters were generated using SOHA (http://www.sohasoftare.com/), as described previously (Ocorr et al., 2007c). M-mode records provide a snapshot of the movement of heart wall over time. Cardiac parameters were calculated as below: DI is the period when the heart is completely relaxed (diastole). SI is the period when the heart is actively contracted. HP is the time between the two consecutive diastoles (i.e., DI+SI) and heart rate is calculated from HP (1/HP). AI is the standard deviation of the HP mean for each fly normalized to the median HP. FS was calculated as (diastolic diameter – systolic diameter/diastolic diameter).
 
-## In vivo analysis of heart function (tdtk)
+### In vivo analysis of heart function (tdtk)
 
 R94C02::tdTomato (attP2) (Klassen et al., 2017) was combined with Hand-Gal4 as stable stock. Flies were then crossed to RNAi lines and reared to 3 weeks of age. To assay fluorescent hearts in vivo flies were mounted as described (Klassen et al., 2017) and were illuminated with green light (3 mW power). Five s movies of the beating heart were acquired at 270 fps and high-speed recordings were then processed using a custom R script (Vogler, 2022a).
 
-## Source code for analyses
+### Source code for analyses
 
 We have developed a GitHub project containing the instructions and material to reproduce the analyses (Saha et al., 2021). Source code are available in the GitHub repository. Required data and built singularity images are available on download. Instructions to reproduce the analyses are provided.
 
-## Quantitative genetic analyses
+### Quantitative genetic analyses
 
 Phenotype data were analyzed separately to perform quality control. In each line, data outside the range [Q1 − 1.5*IQR; Q3+1.5*IQR] were identified (where Q1/3 are first/third quartile and IQR = Q3 −Q1). Most of the films corresponding to these outlier data were re-analyzed. It was identified that these extreme results corresponded to technical problems (poor quality film, bad placement of the measurement points, etc.) and were removed from the analysis to avoid technical bias.
 
@@ -153,7 +419,7 @@ Mean and coefficient of variation (CV) were computed for each line and each phen
 
 Correlation between phenotypes was computed using Spearman correlation between mean/CV of lines. Genetic indicators, like broad sense heritability, were computed from the QC data.
 
-## Genotype-phenotype associations: GWAS and epistasis study
+### Genotype-phenotype associations: GWAS and epistasis study
 
 We used mean and CV summary statistics from our GWAS analysis to study the leverage effect of extreme values. We identified strong leverage effects in some phenotypes and treated them for outliers. We decided to remove lines with large leverage effect from GWAS analysis of the phenotype, since they imply a strong bias in the linear model. Hence, mean/CV values outside the range of [Q1 − 1.5*IQR; Q3+1.5*IQR] were discarded from GWAS analysis of the corresponding phenotype, thus removing all leverage effects.
 
@@ -163,11 +429,11 @@ A QQ plot was generated to display the quantile distribution of observed marker-
 
 Miami plots were designed according to Vogler, 2022a.
 
-## Interaction network analysis
+### Interaction network analysis
 
 Drosophila interactome: A network generated from genetic and physical interaction databases has been built. Briefly, known protein-protein interactions, identified using Y2H and AP-MS techniques, and genetic interactions, are curated in the DroID database (http://www.droidb.org/) (Murali et al., 2011), to which the Y2H FlyBi dataset (https://flybi.hms.harvard.edu/results.php) has been added. Overall, this Drosophila interaction network contains 79,698 interactions between 11,022 genes/proteins. Network representations were made using Cytoscape (Shannon et al., 2003).
 
-## Statistics
+### Statistics
 
 Enrichment p-values were based on a test following the hypergeometric distribution. Enrichment (FC) were calculated as the ratio between observed and expected successes in samples (based on the observations in the population). GO enrichment analyses were conducted using the online version of G:profiler tool (Raudvere et al., 2019) with default parameters, including g:SCS method for computing multiple testing corrections for p-values gained from GO and pathway enrichment analysis.
 
@@ -181,26 +447,26 @@ Tests for genetic interactions (Figure 2E and Figure 2—figure supplement 2): T
 
 Phenotypic correlation between each trait pair was computed using Spearman correlation. Pearson chi-squared test was applied to test if the genomic location of variants associated with cardiac traits is biased toward any particular genomic region when compared against the whole set of variants in the entire genome of the DGRP population. The overlap coefficient/overlap index is a similarity measure that measures the overlap between two finite sets. This is used to quantify the overlap between the gene sets associated with the different cardiac traits.
 
-## Motif’s analysis
+### Motif’s analysis
 
 For every set of SNPs (rhythmicity CVe and mean, contractility CVe, and mean), the coordinates (dm3 genome assembly) were extended 75 nt to both sides and their corresponding fasta sequences were retrieved. TF binding motifs were identified using RSAT peak motifs (Thomas-Chollier et al., 2012) (default parameter) using two distinct background models: intrinsic (frequencies of short k-mers in the input sequences to calculate the enrichment of longer k-mers) and random (set of random genomic regions matching length and nucleotide composition using biasaway; Worsley Hunt et al., 2014). To reduce the redundancy of the found motifs (PSSMs), we applied the RSAT matrix-clustering (Castro-Mondragon et al., 2017) algorithm (default parameters) to find clusters of motifs. The clustered motifs were manually annotated by comparison with PSSM databases (Cis-BP Weirauch et al., 2014, JASPAR Fornes et al., 2020, and FlyFactorSurvey Zhu et al., 2011) using the tool SAT compare matrices (Nguyen et al., 2018) (default parameters).
 
-## Generation of hiPSC-CMs
+### Generation of hiPSC-CMs
 
 Id1 overexpressing hiPSCs (Cunningham et al., 2017) were dissociated with 0.5 mM EDTA (Thermo Fisher Scientific) in PBS without CaCl2 and MgCl2 (Corning) for 7 min at room temperature. hiPSC were resuspended in mTeSR-1 media (STEMCELL Technologies) supplemented with 2 µM Thiazovivin (STEMCELL Technologies) and plated in a Matrigel-coated 12-well plate at a density of 3×105 cells per well. After 24 hr after passage, cells were fed daily with mTeSR-1 media (without Thiazovivin) for 3–5 days until they reached ≥90% confluence to begin differentiation. hiPSC-ACMs were differentiated as previously described (Burridge et al., 2015). At day 0, cells were treated with 6 µM CHIR99021 (Selleck Chemicals) in S12 media (Pei et al., 2017) for 48 hr. At day 2, cells were treated with 2 µM Wnt-C59 (Selleck Chemicals), an inhibitor of WNT pathway, in S12 media. Forty-eight hr later (at day 4), S12 media is fully changed. At day 5, cells were dissociated with TrypLE Express (Gibco) for 2 min and blocked with RPMI (Gibco) supplemented with 10% FBS (Omega Scientific). Cells were resuspended in S12 media supplemented with 4 mg/L Recombinant Human Insulin (Gibco) (S12+media), 2 µM Thiazovivin and plated onto a Matrigel-coated 12-well plate at a density of 9×105 cells per well. S12+media was changed at day 8 and replaced at day 10 with RPMI (Gibco) media supplemented with 213 µg/µL L-ascorbic acid (Sigma), 500 mg/L BSA-FV (Gibco), 0.5 mM L-carnitine (Sigma), and 8 g/L AlbuMAX Lipid-Rich BSA (Gibco) (CM media). Typically, hiPSC-ACMs start to beat around day 10. At day 15, cells were purified with lactate media (RPMI without glucose, 213 µg/µL L-ascorbic acid, 500 mg/L BSA-FV, and 8 mM Sodium-DL-Lactate, Sigma), for 4 days. At day 19, media was replaced with CM media.
 
-## Voltage assay in hiPSC-CMs
+### Voltage assay in hiPSC-CMs
 
 Voltage assay is performed using labeling protocol described in McKeithan et al., 2017. Briefly, hiPSC-CMs at day 25 of differentiation were dissociated with TrypLE Select ×10 for up to 10 min and action of TrypLE was neutralized with RPMI supplemented with 10% FBS. Cells were resuspended in RPMI with 2% KOSR (Gibco) and 2% B27 ×50 with vitamin A (Life Technologies) supplemented with 2 µM Thiazovivin and plated at a density of 6000 cells per well in a Matrigel-coated 384-well plate. hiPSC-CMs were then transfected with siRNAs directed against PAX9 and EGR2 (ON-TARGETplus Human) using Lipofectamine RNAi Max (Thermo Fisher Scientific). Each siRNA was tested individually in 8-plicates. Three days post-transfection, cells were first washed with pre-warmed Tyrode’s solution (Sigma) by removing 50 µL of media and adding 50 µL of Tyrode’s solution five times using a 16-channel pipette. After the fifth wash, 50 µL of ×2 dye solution consisting in voltage-sensitive dye Vf2.1 Cl (Fluovolt, 1:2000, Thermo Fisher Scientific) diluted in Tyrode’s solution supplemented with 1 µL of 10% Pluronic F127 (diluted in water, Thermo Fisher Scientific) and 20 µg/mL Hoescht 33258 (diluted in water, Thermo Fisher Scientific) was added to each well. The plate was placed back in the 37°C 5% CO2 incubator for 45 min. After incubation time, cells were washed four times with fresh pre-warmed Tyrode’s solution using the same method described above. hiPSC-CMs were then automatically imaged with ImageXpress Micro XLS microscope at an acquisition frequency of 100 Hz for a duration of 5 s with excitation wavelength of 485/20 nm and emission filter 525/30 nm. A single image of Hoescht was acquired before the time series. Fluorescence over time quantification and trace analysis were automatically quantified using custom software packages developed by Molecular Devices and Colas lab. Two independent experiments were performed.
 
-## Calcium assay in hiPSC-CMs
+### Calcium assay in hiPSC-CMs
 
 Calcium assay is performed using labeling protocol as described (Cerignoli et al., 2012). Cells were prepared and transfected with siRNAs against PAX9 and EGR2 as described above in the voltage assay. Three days post-transfection, 50 µL of media was removed and replaced in each well by a ×2 calcium dye solution consisting in Fluo-4 NW dye (Invitrogen), 1.25 mM Probenecid F-127 (Invitrogen), and 100 µg/mL Hoescht 33258 (diluted in water, Thermo Fisher Scientific) diluted in warm Tyrode’s solution (Sigma). The plate was placed back in the 37°C 5% CO2 incubator for 45 min. After incubation time, cells were washed four times with fresh pre-warmed Tyrode’s solution and imaged as described above.
 
-## RNA-seq and data analysis
+### RNA-seq and data analysis
 
 Day 25 hiPSC-CMs were transfected with 25nM final concentrations of siRNA against PAX9 and with scrambled control siRNAs. After 3days, cells were pelleted and resuspended in 500µL TRIzol reagent followed by total RNA extraction. Library preparation and sequencing of the samples was done at La Jolla Institute of Immunology (La Jolla, CA). FASTQ files were processed using nf-core/rnaseq (Ewels et al., 2021) with Nextflow Version: 21.03.0.edge. Differential gene expression was determined using R/DESeq2 (Love et al., 2014) and GO term enrichment was done using gprofiler2 (Kolberg and Raudvere, 2021). All analysis scripts can be downloaded at https://github.com/gvogler/eLife-2022-Saha-et-al (copy archived at swh:1:rev:b102c48b85976216c37d2e5aed060670535192f6; Vogler, 2022b). All sequencing data were deposited on the Gene Expression Omnibus (GEO) repository (accession number GSE217655).
 
-## Immunostaining of hiPSC-CMs
+### Immunostaining of hiPSC-CMs
 
 Three days post-transfection cells were fixed with 4% paraformaldehyde for 30 min and blocked in blocking buffer (10% Horse Serum, 10% Gelatin, and 0.5% Triton X-100) for 20 min. hPSC-CMs were stained with sarcomeric protein TNNT2 (Catalog #: HPA017888 Lot #: A91786, Sigma, dilution 1/200), secondary antibody Goat anti-Rabbit IgG Alexa Fluor 568 (Invitrogen, 1/500) and DAPI (1/1000) in Blocking Buffer. Cells were imaged with ImageXpress Micro XLS microscope (Molecular Devices) and custom algorithms were used to quantify the area of TNNT2 mask per cardiac nuclei. All experiments were performed at least in biological quadruplicates.

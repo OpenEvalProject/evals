@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0420db125 Laboratory of Chromosome and Cell Biology, The Rockefeller University New York United States
-2. https://ror.org/0420db125 Bioinformatics Resource Center, The Rockefeller University New York United States
+1. Laboratory of Chromosome and Cell Biology, The Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))
+2. Bioinformatics Resource Center, The Rockefeller University New York United States ([ROR:0420db125](https://ror.org/0420db125))
 
 † Corresponding author
 
@@ -35,23 +35,39 @@ We previously suggested that ZBTB24, CDCA7, and HELLS form a linear pathway to s
 
 ## Results
 
-## CDCA7 is absent from the classic model organisms that lack genomic 5mC
+### CDCA7 is absent from the classic model organisms that lack genomic 5mC
 
 CDCA7 is characterized by the unique zf-4CXXC_R1 domain (Pfam PF10497 or Conserved Domain Database [CDD] cl20401) (Lu et al., 2020; Mistry et al., 2021). Conducting a BLAST search using human CDCA7 as a query sequence against the Genbank protein database, we realized that no zf-4CXXC_R1-containing proteins are identified in the classic model organisms Drosophila melanogaster, Caenorhabditis elegans, Schizosaccharomyces pombe and Saccharomyces cerevisiae, which are all also known to lack any DNMTs and genomic 5mC (Zemach et al., 2010). However, we identified a protein with a zf-4CXXC_R1 motif in the bumblebee Bombus terrestris and the thale cress A. thaliana, which have both maintenance and de novo DNMTs (Bewick et al., 2017b; Chan et al., 2005; Li et al., 2018; Zemach et al., 2010; Figure 1 and Figure 1—source data 1). Based on the reciprocal best hits (RBH) criterion using human HELLS as a query sequence (see Methods) (Ward et al., 2014), HELLS-like proteins were identified in A. thaliana (DDM1) and S. cerevisiae (Irc5) in line with previous reports (Litwin et al., 2017), as well as in B. terrestris. No clear HELLS-like proteins were identified in D. melanogaster, C. elegans, or S. pombe. This pilot-scale analysis based on the RBH criterion led us to hypothesize that the evolutionary maintenance of CDCA7 is linked to that of HELLS and DNMTs. In order to statistically validate this hypothesis, we set out to systematically identify and classify homologs of CDCA7, HELLS and DNMTs in a broad range of evolutionary lineages.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/86721/elife-86721-fig1-v1.jpg)
 
-**Figure 1.:** Filled squares and open squares indicate presence and absence of an orthologous protein(s), respectively. CDCA7 homologs are absent from model organisms where DNMT1, DNMT3 and 5mC on genomic are absent.Figure 1—source data 1.Tab1, Full list. The list contains species names, their taxonomies, Genbank accession numbers of proteins, PMID of references supporting the 5mC status, and genome sequence assembly statistics. ND; not detected. DNMT5 proteins shown in red lack the Snf2-like ATPase domain. UHRF1 proteins shown in red lack the Ring-finger E3 ubiquitin-ligase domain. CDCA7 proteins shown in red indicate ambiguous annotation as described in the main text. CDCA7 orthologs that contain additional conserved domains found by NCBI CD-search were shown in light blue. Tab2, Full list 2. The list is used to make presence (1) or absence (0) list. Tab3 Ecdysozoa CoPAP. List of presence/absence annotations for Ecdysozoa species used for CO-PAP analysis. Tab4 Full CoPAP1. List of presence/absence data annotations for the panel of all 180 species used for CO-PAP analysis. Fungal CDCA7F proteins with class II zf-4CXXC_R1 are included in CDCA7. Tab5 Full CoPAP2. List of presence/absence data annotations for the panel of all 180 species used for CO-PAP analysis. Fungal CDCA7F proteins are included in class II zf-4CXXC_R1. Tab6 Full clustering. Table used for clustering analysis. Tab7 Metazoan invertebrates. Table used for clustering analysis for metazoan invertebrates. Tab7 No 5mC list. List of species where absence of genomic 5mC has been experimentally shown.
+**Figure 1.:** Filled squares and open squares indicate presence and absence of an orthologous protein(s), respectively. CDCA7 homologs are absent from model organisms where DNMT1, DNMT3 and 5mC on genomic are absent.
 
-## CDCA7 family proteins in vertebrates
+### CDCA7 family proteins in vertebrates
 
 We first characterized evolutionary conservation of CDCA7 family proteins in vertebrates, where 5mC, DNMT1, and DNMT3 are highly conserved. A BLAST search against the Genbank protein database identified two zf-4CXXC_R1 domain-containing proteins, CDCA7/JPO1 and CDCA7L/R1/JPO2, throughout Gnathostomata (jawed vertebrates; Figure 2A, Figure 2B, Figure 2—figure supplement 1, and Figure 1—source data 1). In frogs (such as Xenopus, but not all amphibians), and some fishes (such as Astyanax mexicanus and Takifugu rubripes), a third paralog CDCA7e exists. CDCA7e is the only CDCA7-like protein that can be detected in Xenopus eggs (Jenness et al., 2018), and thus likely represents a form specific to oocytes and early embryos in these species. Among twelve conserved cysteine residues originally reported in the zf-4CXXC_R1 domain (Ou et al., 2006), the 12th cysteine residue is not conserved in Rhincodon typus (whale shark) CDCA7 and in Xenopus laevis CDCA7e. In general, the 12th cysteine residue of the zf-4CXXC_R1 domain is least conserved among CDCA7 homologs within and outside of vertebrates, such that we do not consider it a key component of the zf-4CXXC_R1 domain (see below). Considering that the jawless fish Petromyzon marinus (sea lamprey) and other invertebrates commonly possess only one CDCA7 family gene (Figure 2, see Figure 6 and Figure 1—source data 1), the CDCA7 paralogs may have emerged in jawed vertebrates. Overall, the zf-4CXXC_R1 sequence is highly conserved among vertebrate CDCA7 homologs, including three residues that are mutated in ICF3 patients (R274, G294 and R304 in human CDCA7) (Figure 2B; Thijssen et al., 2015). Note that these amino acid positions of the ICF3 mutations in human CDCA7 are based on the previously reported sequence of an NP_665809 (Thijssen et al., 2015), which is annotated as isoform 2 (371 amino acids), whereas we list the isoform 1 (NP_114148) with 450 amino acids in this study (Figure 2A).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/86721/elife-86721-fig2-v1.jpg)
+
+**Figure 2.:** (A) Schematics of vertebrate CDCA7 primary sequence composition, based on NP_114148. Yellow lines and light blue lines indicate positions of evolutionary conserved cysteine residues and residues that are mutated in ICF patients, respectively. (B) Sequence alignment of the zf-4CXXC_R1 domain of vertebrate CDCA7-family proteins. White arrowheads; amino residues unique in fish CDCA7L. Black arrowheads; residues that distinguish CDCA7L and CDCA7e from CDCA7. (C) Sequence alignment of LEDGF-binding motifs. (D) Sequence alignment of the conserved leucine-zipper.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86721/elife-86721-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Amino acid sequences of zf-4CXXC_R1 domain from indicated species were aligned with CLUSTALW. A phylogenetic tree of this alignment is shown. Genbank accession numbers of analyzed sequences are indicated. The tree topology was largely consistent with a tree generated by IQ-TREE based on an alignment using Muscle (Figure 2—source data 1 and Figure 2—source data 2).
+
 While the presence of four CXXC motifs in the zf-4CXXC_R1 domain is reminiscent of a classic zinc finger-CXXC domain (zf-CXXC, Pfam PF02008), which binds to nonmethylated CpG (Long et al., 2013), their cysteine arrangement is distinctly different, perhaps reflecting the capacity of zf-4CXXC_R1 domain to recognize nucleosomes (Jenness et al., 2018) and potentially specific epigenetic marks or DNA sequences. In vertebrate CDCA7 paralogs, 11 conserved cysteines are arranged as CXXCX10CX4CX7CXXCX19CXXCX3CXCXXC. In contrast, in the classic zf-CXXC domain eight cysteines are arranged as CXXCXXCX4-5CXXCXXCX8-14CX4C (Long et al., 2013). Apart from the zf-4CXXC_R1 domain, vertebrate CDCA7 family proteins often, but not always, contain one or two Lens epithelium-derived growth factor (LEDGF)-binding motif(s) (Figure 2A and Figure 2C), defined as ([E/D]XEXFXGF; Tesina et al., 2015). It has been reported that human CDCA7L and CDCA7 both interact with c-Myc but apparently via different regions, a leucine zipper and a less-defined adjacent segment that overlaps with a bipartite nuclear localization signal, respectively (Gill et al., 2013; Huang et al., 2005). This leucine zipper sequence is highly conserved among vertebrate CDCA7 family proteins (Figure 2A and Figure 2D). In contrast to zf-CXXC domain-containing proteins such as KDM2A/B, DNMT1, MLL1/2, and TET1/3, the vertebrate CDCA7 family proteins do not contain any predicted enzymatic domains (Huang et al., 2005; Maertens et al., 2006; Tesina et al., 2015).
 
-## Plant homologs of CDCA7
+### Plant homologs of CDCA7
 
 A BLAST sequence homology search identified three classes of zf-4CXXC_R1 domain-containing proteins in Arabidopsis thaliana (Figure 3). Class I proteins have one zf-4CXXC_R1 domain with no other detectable domains listed in CDD or Pfam/InterPro (Paysan-Lafosse et al., 2023). Strikingly, all three ICF-associated residues (R274, G294, and R304 in human CDCA7) as well as all eleven characteristic cysteines of the zf-4CXXC_R1 domain are conserved, with the exception that the position of the fourth cysteine is shifted two residues toward the N terminus. We define the domain with the conservation of the signature cysteine residues and three ICF-associated residues as ‘class I zf-4CXXC_R1’ and hypothesize that proteins with class I zf-4CXXC_R1 are CDCA7 orthologs (including their highly homologous paralogs in this report).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/86721/elife-86721-fig3-v1.jpg)
+
+**Figure 3.:** Top; alignments of the zf-4CXXC_R1 domain found in Arabidopsis thaliana. Bottom; domain structure of the three classes of zf-4CXXC_R1-containing proteins in Arabidopsis.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86721/elife-86721-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** CDCA7 orthologs are characterized by the class I zf-4CXXC_R1 domain, where eleven cysteine residues and three residues mutated in ICF patients are conserved. Class II zf-4CXXC_R1 domain is similar to class I except that ICF-associated glycine (G294 in human) is substituted. Class III is zf-4CXXC_R domain with more substitutions at the ICF-associated residues (R274 and/or G294). Proteins that also contain JmjC domain (sequence not shown here) are indicated. Note that codon frame after the stop codon (an asterisk in a magenta box) of Naegleria XP_002678720 encodes a peptide sequence that aligns well with human CDCA7, indicating that the apparent premature termination of XP_002678720 is likely caused by a sequencing or annotation error.
 
 Class II proteins contain a zf-4CXXC_R1 domain, a DDT domain and a WHIM1 domain. These proteins were previously identified as DDR1-3 (Dong et al., 2013). DDT and WHIM1 domains are commonly found in proteins that interact with SNF2h/ISWI (Aravind and Iyer, 2012; Li et al., 2017; Yamada et al., 2011). Indeed, it was reported that Arabidopsis DDR1 and DDR3 interact with the ISWI orthologs CHR11 and CHR17 (Tan et al., 2020). Among the eleven cysteine residues in the zf-4CXXC_R1 domain of these proteins, the position of the fourth residue is shifted towards the C-terminus. The ICF-associated glycine residue (G294 in human CDCA7, mutated to valine in ICF3 patients) is replaced by isoleucine. We define the zf-4CXXC_R1 containing a substitution at this glycine residue as class II zf-4CXXC_R1.
 
@@ -59,7 +75,7 @@ Class III proteins are longer (~1000 amino acid) and contain an N-terminal zf-4C
 
 Homologs of these three classes of CDCA7 proteins found in Arabidopsis are widely identified in green plants (Viridiplantae), including Streptophyta (e.g. rice, maize, moss, fern) and Chlorophyta (green algae; Figure 3—figure supplement 1 and Figure 1—source data 1). Other variants of zf-4CXXC_R1 are also found in Viridiplantae. In contrast to green plants, in which the combined presence of HELLS/DDM1-, CDCA7- and DNMT- orthologs is broadly conserved, no zf-4CXXC_R1-containing proteins can be identified in red algae (Rhodophyta; Figure 1—source data 1, see Figure 5 and Figure 5—figure supplement 1).
 
-## Zf-4CXXC_R1-containing proteins in Fungi
+### Zf-4CXXC_R1-containing proteins in Fungi
 
 Although S. pombe and S. cerevisiae genomes do not encode any CDCA7 family proteins, a BLAST search identified various fungal protein(s) with a zf-4CXXC_R1 domain. Among the zf-4CXXC_R1-containing proteins in fungi, 10 species (Kwoniella mangroviensis, Coprinopsis cinere, Agaricus bisporus, Taphrina deformans, Gonapodya prolifera, Basidiobolus meristosporus, Coemansia reversa, Linderina pennispora, Rhizophagus irregularis, Podila verticillate) harbor a class II zf-4CXXC_R1 domain with two notable deviations (Figure 4A). First, the space between the third and fourth cysteine residues is variable. Second, the fifth cysteine is replaced by aspartate in Zoopagomycota (Basidiobolus meristosporus ORX82853, Coemansia reversa PIA14937, Linderina pennispora ORX71196) (Figure 4). As these proteins do not contain any additional CDD-annotated domain like vertebrate and plant CDCA7 orthologs (except for Taphrina deformans CCG81269, which also has a CHROMO domain), we define this fungal protein family as CDCA7F, which forms a distinct clade in our phylogenetic analysis of zf-4CXXC_R1 sequence alignment (Figure 2—figure supplement 1 and Figure 3—figure supplement 1).
 
@@ -69,7 +85,7 @@ Although S. pombe and S. cerevisiae genomes do not encode any CDCA7 family prote
 
 Besides CDCA7F, several fungal species encode a protein with a diverged zf-4CXXC_R1 domain, including those with a JmjC domain at the N-terminus (Figure 4B, Figure 1—source data 1). This composition mimics the plant class III proteins, for which the JmjC domain is located at the C-terminus. Among these proteins, it was suggested that Neurospora crassa DMM-1 does not directly regulate DNA methylation or demethylation but rather controls the deposition of histone H2A.Z and/or H3K56 acetylation, which inhibit spreading of heterochromatin segments with methylated DNA and H3K9me3 (Honda et al., 2010; Zhang et al., 2022). Thus, the known roles of these divergent variants of zf-4CXXC_R1 are not directly associated with DNA methylation.
 
-## Systematic identification of CDCA7 and HELLS homologs in eukaryotes
+### Systematic identification of CDCA7 and HELLS homologs in eukaryotes
 
 To systematically identify CDCA7 and HELLS homologs in the major eukaryotic supergroups, we conducted a BLAST search against the NCBI protein database using human CDCA7 and HELLS protein sequences. To omit species with a high risk of false negative identification, we selected species containing at least 6 distinct proteins with compelling homology to the SNF2 ATPase domain of HELLS, based on the assumption that each eukaryotic species is expected to have 6–20 SNF2 family ATPases (Flaus et al., 2006). Indeed, even the microsporidial pathogen Encephalitozoon cuniculi, whose genome size is a mere 2.9 Mb, contains six SNF2 family ATPases (Flaus et al., 2006). As such, we generated a panel of 180 species encompassing all major eukaryote supergroups (5 Excavata, 18 SAR [2 Rhizaria, 6 Alveolata, 10 Stramenopiles]), 1 Haptista, 1 Cryptista, 15 Archaeplastida [3 Rhodophyta and 12 Viridiplantae], 4 Amoebozoa, 136 Opisthokonts [34 Fungi, 3 Holozoa, and 99 Metazoa] (Figure 5—figure supplement 1, and Figure 1—source data 1).
 
@@ -77,15 +93,35 @@ To annotate HELLS orthologs, a phylogenetic tree was constructed from a multiple
 
 A BLAST search with the human CDCA7 sequence across the panel of 180 species identified a variety of proteins containing the zf-4CXXC_R1 domain, which is prevalent in all major supergroups (Figure 5, Figure 5—figure supplement 1, and Figure 1—source data 1). Each of these identified proteins contains only one zf-4CXXC_R1 domain. The resulting list of CDCA7 BLAST hits were further classified as prototypical CDCA7 orthologs if they preserve the criteria of the class I zf-4CXXC_R1 (signature 11 cysteine residues and the three ICF-associated residues) (Figure 3—figure supplement 1). A phylogenetic tree analysis of zf-4CXXC_R1 domains from diverse species confirmed that these CDCA7 orthologs with the class I zf-4CXXC_R1 domain are clustered under the same clade (Figure 2—figure supplement 1, also see Methods, Figure 2—source data 1 and Figure 2—source data 2). CDCA7 orthologs are broadly found in the three supergroup lineages (Archaeplastida, Amoebozoa, Opisthokonta; Figure 5, Figure 5—figure supplement 1, and Figure 1—source data 1). In Excavata, the amoeboflagellate Naegleria gruberi encodes a protein that is a likely ortholog of CDCA7 with an apparent C-terminal truncation (XP_002678720), possibly due to a sequencing error (Figure 3—figure supplement 1). In SAR, CDCA7 orthologs are absent from all available genomes, except stramenopile Tribonema minus, which encodes a distantly related likely ortholog of CDCA7 (KAG5177154). These conservations suggest that the class I zf-4CXXC_R1 domain in CDCA7 was inherited from the LECA.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/86721/elife-86721-fig5-v1.jpg)
+
+**Figure 5.:** The phylogenetic tree was generated based on Timetree 5 (Kumar et al., 2022). Filled squares and open squares indicate presence and absence of an orthologous protein(s), respectively. Squares with dotted lines imply preliminary-level genome assemblies. Squares with a diagonal line; Paramecium EED was functionally identified (Miró-Pina et al., 2022), but not by the sequence-based search in this study; homologs of EZH1/2 and EED were identified in Symbiodinium sp. KB8 but not in Symbiodinium microadriaticum (Figure 1—source data 1). An opaque box of DNMT5 in Symbiodinium indicates a homolog that does not contain the ATPase domain, which is commonly found in DNMT5 family proteins. Opaque boxes of UHRF1 indicate homologs that harbor the SRA domain but not the RING-finger domain. Full set of analysis on the panel of 180 eukaryote species is shown in Figure 5—figure supplement 1 and Figure 1—source data 1. Genbank accession numbers of each protein and PMID numbers of published papers that report presence or absence of 5mC are reported in Figure 1—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/86721/elife-86721-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Presence and absence of each annotated proteins in the panel of 180 eukaryote species is marked as filled and blank boxes. The phylogenetic tree was generated by iTOL, based on NCBI taxonomy by phyloT. Bottom right; summary of combinatory presence or absence of CDCA7 (including fungal CDCA7F containing class II zf-4CXXC_R1), HELLS, and maintenance DNA methyltransferases DNMT1/Dim-2/DNMT5. Supporting information including Genbank accession numbers are listed in Figure 1—source data 1.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/86721/elife-86721-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Amino acid sequences of full-length HELLS proteins from the panel of 180 eukaryote species listed in Figure 1—source data 1 were aligned with full length sequences of other SNF2 family proteins with CLUSTALW. A phylogenetic tree of this alignment is shown. Genbank accession numbers of analyzed sequences are indicated.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/86721/elife-86721-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** Amino acid sequences of SNF2-doman without variable insertions from representative HELLS and DDM1-like proteins from Figure 3 were aligned with the corresponding domain of other SNF2 family proteins with CLUSTALW. A phylogenetic tree of this alignment is shown. Genbank accession numbers of analyzed sequences are indicated. The tree topology was largely consistent with a tree generated by IQ-TREE based on an alignment using Muscle (Figure 5—source data 1 and Figure 5—source data 2).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/86721/elife-86721-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** DNA methyltransferase domain of DNMT proteins across eukaryotes (Figure 1—source data 1, excluding majority of those from Metazoa), the Escherichia coli DNA methylases DCM and Dam, and Homo sapiens PCNA as an outlier sequence, were aligned with Muscle, and a consensus phylogenetic tree was constructed from 1000 bootstrap trees using IQ-TREE. Branch lengths are optimized by maximum likelihood on original alignment. Numbers in parentheses are bootstrap supports (%).
+
 In addition to the class I zf-4CXXC_R1 domain, we also identified divergent zf-4CXXC_R1 domains across eukaryotes, although metazoan species only contain CDCA7 orthologs (and their paralogs such as CDCA7L and CDCA7e) with the exception of the sponge Amphimedon queenslandica, which also encodes a protein (XP_019849176) with the class II zf-4CXXC_R1 domain, DDT, and WHIM1 domain, the composition of which is similar to plant DDR1-3 (Figure 3, Figure 5, Figure 3—figure supplement 1, and Figure 1—source data 1). The Amoebozoa Acanthamoeba castellanii encodes a protein (XP_004340890) containing the class II zf-4CXXC_R1 domain as well as the CHROMO domain (cd00024) (Figure 3—figure supplement 1 and Figure 1—source data 1). This domain combination is also found in the Taphrina deformans CDCA7F, CCG81269 (Figure 4). Proteins with a combinatory presence of a diverged zf-4CXXC_R1 domain and the JmjC domain are found in plants, fungi, Amoebozoa, and Naegleria gruberi (Figure 1—source data 1).
 
 Despite the prevalence of the zf-4CXXC_R1 domain and its variants in eukaryotes, no zf-4CXXC_R1 domain was found in prokaryotes and Archaea. This is in contrast to SNF2 family proteins and DNA methyltransferases, which can be identified in prokaryotes and Archaea (Colot and Rossignol, 1999; Flaus et al., 2006; Huff and Zilberman, 2014; Ponger and Li, 2005), pointing toward a possibility that the zf-4CXXC_R1 domain emerged to deal with unique requirement of eukaryotic chromatin.
 
-## Classification of DNMTs in eukaryotes
+### Classification of DNMTs in eukaryotes
 
 A simple RBH approach is not practical to classify eukaryotic DNMT proteins due to the presence of diverse lineage-specific DNMTs (Huff and Zilberman, 2014). Therefore, we collected proteins with a DNMT domain within the panel of 180 eukaryote species, and then extracted the DNMT domains from each sequence (based on an NCBI conserved domains, Dcm [COG0270], Dcm super family [cl43082], AdoMet_MTases superfamily [cl17173]). Generating a phylogenetic tree based on the multisequence alignment of the DNMT domains, we were able to classify the majority of all identified DNMTs as previously characterized DNMT subtypes according to their sequence similarity (Figure 5—figure supplement 4 and ). These DNMT subtypes include DNMT1; DNMT3; the plant specific de novo DNA methyltransferases DRM1-3; the ‘true’ plant DNMT3 orthologs Yaari et al., 2019; the plant-specific CMT Bewick et al., 2017a; the fungi-specific maintenance methyltransferase Dim-2 and de novo methyltransferase DNMT4 Bewick et al., 2019a; Nai et al., 2020; the SNF2 domain-containing maintenance methyltransferase DNMT5 Dumesic et al., 2020; Huff and Zilberman, 2014; DNMT6 (a poorly characterized putative DNMT identified in Stramenopiles, Haptista and Chlorophyta) (Huff and Zilberman, 2014), and the tRNA methyltransferase TRDMT1 (also known as DNMT2; Figure 5—figure supplement 4). In this report, we call a protein DNMT3 if it clusters into the clade including metazoan DNMT3, plant DNMT3, and DRM. We also identified other DNMTs, which did not cluster into these classes. For example, although it has been reported that DNMT6 is identified in Micromonas but not in other Chlorophyta species such as Bathycoccus and Ostreococcus (Huff and Zilberman, 2014), we identified Chlorophyta-specific DNMTs that form a distinct clade, which seems to be diverged from DNMT6 and DNMT3. We temporarily called this class Chlorophyta DNMT6-like (Figure 5—figure supplement 4). Other orphan DNMTs include the de novo DNA methyltransferase DNMTX in fungus Kwoniella mangroviensis (Catania et al., 2020), and an uncharacterized DNMT in N. gruberi (XP_002682263).
 
-## Coevolution of CDCA7, HELLS and DNMTs
+### Coevolution of CDCA7, HELLS and DNMTs
 
 The classification of homologs of CDCA7, HELLS and DNMTs across the panel of 180 eukaryotic species reveals that they are conserved across the major eukaryote supergroups, but they are also dynamically lost (Figure 5, Figure 5—figure supplement 1 and Figure 1—source data 1). We found 40 species encompassing Excavata, SAR, Amoebozoa, and Opisthokonta that lack CDCA7 (or CDCA7F), HELLS and DNMT1. Species that encode the set of DNMT1, UHRF1, CDCA7, and HELLS are particularly enriched in Viridiplantae and Metazoa. A clear exception in Amoebozoa is Acanthamoeba castellanii, whose genome also encodes these four proteins and is reported to have methylated cytosines (Moon et al., 2017). N. gruberi is an exceptional example among Excavata species, encoding a putative CDCA7 (XP_002678720) as well as HELLS; an orphan DNMT protein (XP_002682263), and a UHRF1-like protein. DNMT1, DNMT3, HELLS, and CDCA7 seem to be absent in other Excavata lineages, although Euglenozoa variants of DNMT6 and cytosine methylation are identified in Trypanosoma brucei and Leishmania major (Huff and Zilberman, 2014; Militello et al., 2008). The yellow-green algae Tribonema minus is the only SAR species that encodes a putative CDCA7 (KAG5177154), along with DNMT5 and HELLS (Figure 5, Figure 2—figure supplement 1, and Figure 3—figure supplement 1).
 
@@ -95,13 +131,21 @@ To quantitatively assess coevolution of DNMTs, CDCA7 and HELLS, we performed CoP
 
 We next conducted the CoPAP analysis against a panel of 50 Ecdysozoa species, where DNA methylation system is dynamically lost in multiple lineages (Figure 6A; Bewick et al., 2017b; Engelhardt et al., 2022), yet the annotation of DNMTs, UHRF1, CDCA7 and HELLS is unambiguous. As a negative control, we included INO80, which is dynamically lost in several Ecdysozoa lineages, such as C. elegans (Figure 5, Figure 6A and Figure 5—figure supplement 1). As expected, CoPAP analysis showed a highly significant coevolutionary interaction between DNMT1 and UHRF1 (Figure 6B). In addition, HELLS interacts with DNMT1, UHRF1 and CDCA7. In contrast, no linkage from INO80 or DNMT3 was determined. Altogether, these CoPAP analyses reproducibly found coevolutionary linkages between DNMT1-UHRF1 and CDCA7-HELLS, although the exact interaction topology is sensitive to the selection of species and protein classification methods.
 
-## Loss of CDCA7 in braconid wasps together with DNMT1 or DNMT3
+![Figure 6.](https://cdn.elifesciences.org/articles/86721/elife-86721-fig6-v1.jpg)
+
+**Figure 6.:** (A) Presence (filled squares) /absence (open squares) patterns of indicated proteins and genomic 5mC in selected Ecdysozoa species. Squares with dotted lines imply preliminary-level genome assemblies. Domain architectures of CDCA7 proteins with a zf-4CXXC_R1 domain are also shown. (B) CoPAP analysis of 50 Ecdysozoa species. Presence/absence patterns of indicated proteins during evolution were analyzed. List of species are shown in Figure 1—source data 1. Phylogenetic tree was generated by amino acid sequences of all proteins shown in Figure 1—source data 1. The number indicates the p-values.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/86721/elife-86721-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** CoPAP analysis of 180 eukaryote species. Presence and absence patterns of indicated proteins during evolution were analyzed. List of species are shown in Figure 1—source data 1 (A, Tab4. Full CoPAP1; B, Tab5. Full CoPAP2). Fungal CDCA7F proteins are included in CDCA7 and zf-4CXXC_R1 class II in A and B, respectively. Phylogenetic tree was generated by amino acid sequences of all proteins shown in Figure 1—source data 1. The number indicates the p-values.
+
+### Loss of CDCA7 in braconid wasps together with DNMT1 or DNMT3
 
 CoPAP analysis detected the coevolutionary linkage between CDCA7 and DNMT1-UHRF1, rather than DNMT3. We were therefore intrigued by the apparent absence of CDCA7 and DNMT3 in two insect species, the red flour beetle Tribolium castaneum and the braconid wasp Microplitis demolitor, whose genomic DNA does not have any detectable 5mC despite the presence of DNMT1 (Bewick et al., 2017b; Schulz et al., 2018; Zemach et al., 2010; Figure 5). To further validate the co-loss of CDCA7 and DNMT1/DNMT3 in insects, we focused on the Hymenoptera clade (including M. demolitor), for which genome synteny has been reported (Li et al., 2021). Indeed, a striking synteny is observed in the genome region surrounding CDCA7 among the parasitic wood wasp (Orussus abietinus) and Aculeata species (bees Bombus terrestris and Habropoda laborlosa, and the eusocial wasp Polistes canadensis), which diverged ~250 MYA (Li et al., 2021; Peters et al., 2017; Figure 7 and Figure 7—source data 1). In these species, CDCA7 is located between Methyltransferase-like protein 25 homolog (MET25, E) and Ornithine aminotransferase homolog (OAT, F). In fact, the gene cluster containing LTO1 homolog (D), MET25 (E), OAT (F), and Zinc finger protein 808 (ZN808, G) is highly conserved in all the analyzed Hymenoptera species, but not outside of Hymenoptera (e.g. Drosophila).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/86721/elife-86721-fig7-v1.jpg)
 
-**Figure 7.:** Genome compositions around CDCA7 genes in Hymenoptera insects are shown. For genome with annotated chromosomes, chromosome numbers (Chr) or linkage group numbers (LG) are indicated at each gene cluster. Gene clusters without chromosome annotation indicate that they are within a same scaffold or contig. Gene locations within each contig are listed in Figure 7—source data 1. Dash lines indicate the long linkages not proportionally scaled in the figure. Due to their extraordinarily long sizes, DE-cadherin genes (L) are not scaled proportionally. Presence and absence of 5mC, CDCA7, HELLS, DNMT1, DNMT3, and UHRF1 in each genome is indicated by filled and open boxes, respectively. Absence of 5mC in Aphidus gifuensis (marked with an asterisk) is deduced from the study in Aphidius ervi (Bewick et al., 2017b), which has an identical presence/absence pattern of the listed genes (Figure 7—source data 2).The phylogenetic tree is drawn based on published analysis (Li et al., 2021; Peters et al., 2017) and TimeTree.Figure 7—source data 1.Figure 7.Figure 7—source data 2.Figure 7.
+**Figure 7.:** Genome compositions around CDCA7 genes in Hymenoptera insects are shown. For genome with annotated chromosomes, chromosome numbers (Chr) or linkage group numbers (LG) are indicated at each gene cluster. Gene clusters without chromosome annotation indicate that they are within a same scaffold or contig. Gene locations within each contig are listed in Figure 7—source data 1. Dash lines indicate the long linkages not proportionally scaled in the figure. Due to their extraordinarily long sizes, DE-cadherin genes (L) are not scaled proportionally. Presence and absence of 5mC, CDCA7, HELLS, DNMT1, DNMT3, and UHRF1 in each genome is indicated by filled and open boxes, respectively. Absence of 5mC in Aphidus gifuensis (marked with an asterisk) is deduced from the study in Aphidius ervi (Bewick et al., 2017b), which has an identical presence/absence pattern of the listed genes (Figure 7—source data 2).The phylogenetic tree is drawn based on published analysis (Li et al., 2021; Peters et al., 2017) and TimeTree.
 
 However, CDCA7 is absent from this gene cluster in parasitoid wasps, including Ichneumonoidea wasps (braconid wasps [M. demolitor, Cotesia glomerata, Aphidius gifuensis, Fopius arisanus] and ichneumon wasp [Venturia canescent]) and chalcid wasps (Copidosoma floridanum, Nasonia vitripennis) (Figure 7 and Figure 7—source data 2). Among Ichneumonoidea wasps, CDCA7 is undetectable in the genome of braconid wasps, while CDCA7 is located on a different chromosome in the ichneumon wasp Venturia canescens. In chalcid wasps, CDCA7 is present at a genome segment between Artemis (I) and Chromatin accessibility complex protein 1 (CHRC1, J). Supported by the chromosome-level genome assembly for Cotesia glomerata and Aphidius gifuensis (Feng et al., 2020; Pinto et al., 2021), the synteny analysis strongly indicates that CDCA7 is lost from braconid wasps. Intriguingly, braconid wasps co-lost CDCA7 either with DNMT3 (in M. demolitor, Cotesia glomerata, Cotesia typhae and Chelonus insularis) or with DNMT1 and UHRF1 (in Fopius arisanus, Diachasma alloeum and Aphidius gifuensis) (Figure 7 and Figure 7—source data 2). Notably, in addition to M. demolitor (which lacks CDCA7 and DNMT3), it has been reported that little or no 5mC can be detected in Aphidius ervi (which lacks CDCA7, DNMT1 and UHRF1, Figure 7—source data 2; Bewick et al., 2017b). In contrast, all Hymenoptera species that are known to have detectable 5mC possess CDCA7 along with DNMT1, UHRF1, DNMT3, and HELLS, except for Polistes canadensis, which has all but DNMT3 (Figure 7 and Figure 7—source data 2). This co-loss of CDCA7 and DNA methylation (together with either DNMT1-UHRF1or DNMT3) in braconid wasps suggests that evolutionary preservation of CDCA7 is more sensitive to DNA methylation status per se than to the presence or absence of a particular DNMT subtype. Consistent with this idea, among the panel of 180 eukaryote species, none of the 17 species where absence of genomic 5mC has been experimentally shown encodes CDCA7 (Figure 1—source data 1 tab8) (Aliaga et al., 2019; Antequera et al., 1984; Bewick et al., 2019a; Bewick et al., 2017b; Cock et al., 2010; Engelhardt et al., 2022; Geyer et al., 2011; Mondo et al., 2017; Noordhoek et al., 2018; Schulz et al., 2018; Singh et al., 2018; Zemach et al., 2010).
 
@@ -125,30 +169,110 @@ Considering the broad conservation of DNA methylation in vertebrates (Hemmi et a
 
 ## Methods
 
-## Building a curated list of 180 species for analysis of evolutionary co-selection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type(species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MacVector</td>
+      <td>MacVector, Inc</td>
+      <td>Version 16–18</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Muscle</td>
+      <td>https://www.drive5.com/muscle/</td>
+      <td>Muscle5.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IQ-TREE</td>
+      <td>http://www.iqtree.org/</td>
+      <td>Version 2.0.3 and 2.2.2.6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Timetree</td>
+      <td>http://www.timetree.org/</td>
+      <td>Version 5</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>phyloT</td>
+      <td>https://phylot.biobyte.de/</td>
+      <td>Version 2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>iTOL</td>
+      <td>https://itol.embl.de/</td>
+      <td>Version 6</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CoPAP</td>
+      <td>http://copap.tau.ac.il/source.php</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ETE Toolkit</td>
+      <td>http://etetoolkit.org/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Jalview</td>
+      <td>https://www.jalview.org/</td>
+      <td>Version 2.22.2.7</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Building a curated list of 180 species for analysis of evolutionary co-selection
 
 A list of 180 eukaryote species was manually generated to encompass broad eukaryote evolutionary clades (Figure 1—source data 1). Species were included in this list based on two criteria: (i) the identification UBA1 and PCNA homologs, two highly conserved and essential proteins for cell proliferation; and (ii) the identification of more than 6 distinct SNF2 family sequences. Homologs of CDCA7, HELLS, UBA1, and PCNA were identified by BLAST search against the Genbank eukaryote protein database available at National Center for Biotechnology Information using the human protein sequence as a query (NCBI). Homologs of human UHRF1, ZBTB24, SMARCA2/SMARCA4, INO80, RAD54L, EZH2, EED, or Suz12 were also identified based on the RBH criterion. To get a sense of genome assembly level of each genome sequence, we divided ‘Total Sequence Length’ by ‘Contig N50’ (‘length such that sequence contigs of this length or longer include half the bases of the assembly’; https://www.ncbi.nlm.nih.gov/assembly/help/). In the species whose genome assembly level is labeled as ‘complete’, this value is close to the total number of chromosomes or linkage groups. As such, as a rule of thumb, we arbitrarily defined the genome assembly ‘preliminary’, if this value is larger than 100. In Figure 5, these species with preliminary-level genome assembly were noted as boxes with dotted outlines.
 
 CDCA7 homolog identification and annotation BLAST search was conducted using human CDCA7 (NP_114148) as the search query against NCBI protein database. The obtained list of CDCA7 homologs was classified based on the conservation of eleven cysteine and three ICF-associated residues in the zf-4CXXC_R1 domain, as described in Results. This classification was further validated based on their clustering in a phylogenetic tree built from the CLUSTALW alignment of the zf-4CXXC_R1 domain identified by NCBI conserved domains search (Higgins and Sharp, 1988; Lu et al., 2020; Thompson et al., 1994; Figure 2—figure supplement 1), using MacVector (MacVector, Inc). Jalview was used to color-code amino acids based on conservation and amino acid types (Waterhouse et al., 2009). The cluster of class I zf-4CXXC_R1 domain-containing proteins (where all three ICF-associated residues are conserved) was segregated from other variants of zf-4CXXC_R1-containing proteins except for the moss Physcomitrium XP_024393821 and green algae Bathycoccus XP_007512509 and Chlamydomonas GAX81623, which has class II zf-4CXXC-R1 (where the ICF-associated glycine residue is substituted). To further assess this validation, another phylogenetic tree was built by the optimal maximum likelihood-based model selected by IQ-TREE 2.2.2.6 (Minh et al., 2020), using the zf-4CXXC_R1 domain alignment generated and selected by Muscle v5 (Figure 2—source data 1; Edgar, 2022). A consensus tree was then constructed from 1000 bootstrap trees using UFBoot2 (Figure 2—source data 2; Hoang et al., 2018). The phylogenetic tree built by this second method deviated all class II and other zf-4CXXC_R1 variants from CDCA7 orthologs with class I zf-4CXXC_R1 (Figure 2—source data 2).
 
-## HELLS homolog identification and annotation
+### HELLS homolog identification and annotation
 
 HELLS homologs were first identified according to the RBH criterion. Briefly, a BLAST search was conducted using human HELLS as the query sequence, after which protein sequences of obtained top hits (or secondary hits, if necessary) in each search were used as a query sequence to conduct reciprocal BLAST search against the Homo sapiens protein database. If the top hit in the reciprocal search returned the original input sequence (i.e. human HELLS), it was temporarily annotated as an orthologous protein. If HELLS showed up as a next best hit, it is temporarily listed as a “potential HELLS ortholog”. To further validate the identified HELLS orthologs, full length amino acid sequences of these proteins were aligned using CLUSTALW in MacVector with homologs of the Snf2 family proteins SMARCA2/SMARCA4, CHD1/CHD3/CHD7, ISWI, RAD54L, ATRX, HLTF, TTF2, SHPRH, INO80, SMARCAD1, SWR1, MOT1, ERCC6, and SMARCAL1, which were also identified and temporarily annotated with a similar reciprocal BLAST search methods. The phylogenetic tree generated by this full-length alignment separated the clade containing HELLS, DDM1, INO80, SMARCA2/SMARCA4, CHD1/CDH3/CHD7, and ISWI from other Snf2 family proteins (Figure 5—figure supplement 2). This alignment was used to define the conserved SNF2 domain and variable linker regions in the putative HELLS orthologs and other homologous SNF2-family proteins (INO80, SMARCA2/SMARCA4, CHD1/CDH3/CHD7, and ISWI). The variable linker regions were then removed from selected proteins for each kingdom/phylum to conduct the secondary CLUSTALW alignment in MacVector, from which a phylogenetic tree was generated (Figure 5—figure supplement 3). A distinct cluster of HELLS and other SNF2 family proteins can be identified from the phylogenetic tree, hence confirming that the annotation of HELLS orthologs based on the reciprocal BLAST search method is reasonable. Exceptions are Leucosporidium creatinivorum ORY88017 and ORY88018, which did not cluster within the HELLS clade of the phylogenetic tree. However, we decided to annotate L. creatinivorum ORY88017 and ORY88018 as HELLS orthologs since among other L. creatinivorum SNF2-family proteins in this species these two proteins are most similar to human HELLS while clear orthologs of other L. creatinivorum SNF2 family proteins, CHD1 (ORY55731), ISWI (ORY89162), SMARCA2/4 (ORY76015), SRCAP/SWR1 (ORY90750), and INO80 (ORY91599), can be identified. To further validate the phylogenetic tree generated in Figure 5—figure supplement 3, another phylogenetic tree was built by the optimal maximum likelihood-based model selected by IQ-TREE 2.2.2.6 (Minh et al., 2020), using the alignment generated and selected by Muscle v5 (Figure 5—source data 1; Edgar, 2022). A consensus tree was then constructed from 1000 bootstrap trees using UFBoot2 (Figure 5—source data 2; Hoang et al., 2018). The topology of the phylogenetic tree build by this second method was consistent with the original tree shown in Figure 5—figure supplement 3.
 
-## DNMT homolog identification and annotation
+### DNMT homolog identification and annotation
 
 Proteins with a DNA methyltransferase domain were identified with BLAST searches using human DNMT1 and DNMT3A. Additional BLAST searches were conducted using human DNMT2, C. neoformans DNMT5, N. crassa Dim-2 and DNMT4, Thalassiosira pseudonana DNMT6 (XP_002287631; Huff and Zilberman, 2014), and Kwoniella mangroviensis DNMTX (XP_019001759; Catania et al., 2020). DNMT domains were extracted from selected proteins that represent each kingdom/phylum and DNMT type (including ambiguous classes) based on a NCBI conserved domains search and were aligned with CLUSTALW to build a phylogenetic tree in MacVector. To further assess this validation, another phylogenetic tree was built by the optimal maximum likelihood-based model selected by IQ-TREE 2.0.3 (Minh et al., 2020), using the alignment generated and selected by Muscle v5 (; Edgar, 2022). A consensus tree was then constructed from 1000 bootstrap trees using UFBoot2 (; Hoang et al., 2018). The topology of the phylogenetic tree built by this second method was largely consistent with the original tree except for placement of orphan DNMTs. In both trees, Vitrella brassicaformis CEM15752, Fragilariopsis cylindrus OEU08290, OEU15938, Thalassiosira pseudonana XP_002295472, and Tribonema minus KAG5185060 form a clade, which, only in the IQ-TREE generated tree, splits from the canonical DNMT4 clade. As proteins in this clade have been previously annotated as DNMT4 (Huff and Zilberman, 2014), we followed this classification and present this IQ-TREE-based phylogenetic tree of DNMTs in Figure 5—figure supplement 4, which was illustrated using the ETE3 toolkit.
 
-## CoPAP
+### CoPAP
 
 The published method was used (Cohen et al., 2013). The curated list of orthologous proteins listed in Figure 1—source data 1 was first used to generate a presence-absence FASTA file. Next, a phylogenetic species tree was generated from all orthologous protein sequences listed in Figure 1—source data 1 using the ETE3 toolkit. For this, protein sequences were retrieved using the rentrez Bioconductor package and exported to a FASTA file alongside a COG file containing gene to orthologous group mappings. ETE3 was used with the parameters -w clustalo_default-trimal01-none-none and -m cog_all-alg_concat_default-fasttree_default and the resulting tree exported in Newark format. CoPAP was run using default parameters and results visualized using Cytoscape. Code and files required for CoPAP input generation as well CoPAP parameters and output results can be found in our Github repository (https://github.com/RockefellerUniversity/Copap_Analysis copy archived at Carroll, 2023). A method to calculate p-value for CoPAP was described previously (Cohen et al., 2012). Briefly, for each pair of tested genes, Pearson’s correlation coefficient was computed. Parametric bootstrapping was used to compute a p-value by comparing it with a simulated correlation coefficient calculated based on a null distribution of independently evolving pairs with a comparable exchangeability (a value reporting the likelihood of gene gain and loss events across the tree).
 
 As negative and positive controls for the CoPAP analysis, we identified several well-conserved protein orthologs across the panel of 180 eukaryotic species, including Snf2-like proteins SMARCA2/SMARCA4, INO80, and RAD54L (Flaus et al., 2006), as well as subunits of the polycomb repressive complex 2 (PRC2), which plays an evolutionary conserved role in gene repression via deposition of the H3K27me3 mark. PRC2 is conserved in species where DNMTs are absent (including in D. melanogaster and C. elegans) but is frequently lost particularly in several lineages of SAR and Fungi (Sharaf et al., 2022). Among the four core subunits of PRC2, we focused on the catalytic subunit EZH1/2, EED, and SUZ12, since the fourth subunit RbAp46/48 has a PRC2-independent role (Margueron and Reinberg, 2011). We are aware that the reciprocal BLAST search missed previously reported highly divergent functional orthologs of SUZ12 in Neurospora (Jamieson et al., 2013), and EED and Suz12 in Paramecium (Miró-Pina et al., 2022). However, we did not attempt to use these divergent homologs of EED and SUZ12 as baits to expand our search in order to consistently apply our homology-based definition of orthologs.
 
-## Hymenoptera synteny analysis
+### Hymenoptera synteny analysis
 
 The mapping of gene loci is based on the information available on the Genome Data Viewer (https://www.ncbi.nlm.nih.gov/genome/gdv). Genome positions of listed genes are summarized in Figure 7—source data 1.
 
-## Artworks
+### Artworks
 
 Artworks of species images were obtained from https://www.phylopic.org/, of which images of Daphnia, Platyhelminthes, Tribolium and Volvox were generated by Mathilde Cordellier, Christopher Laumer/T. Michael Keesey, Gregor Bucher/Max Farnworth and Matt-Crook, respectively.

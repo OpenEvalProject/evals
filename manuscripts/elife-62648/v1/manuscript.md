@@ -32,21 +32,33 @@ The induction of cross-reactive broadly neutralizing antibodies (bNAbs) that can
 
 ## Results
 
-## Study cohort characteristics
+### Study cohort characteristics
 
 Twenty-two HIV-infected individuals, 4 female and 18 male, were included in this study. 11 participants were African American and 11 were of European descent. All individuals were US-based and therefore likely infected with clade B viruses. Plasma samples were tested for neutralizing activity using a standard reference panel of tier 2 and 3 clade B Env pseudoviruses (Li et al., 2005). Six individuals neutralized >90% of viruses at 50% inhibitory dose (ID50) titers above background, and were classified as top-neutralizer (TN), while seven individuals neutralized <10% of the panel viruses and were classified as non-neutralizer (NN). The remaining individuals were considered intermediate neutralizer, exhibiting neutralization of 36–82% of the virus panel (Supplementary file 1). There was no statistically significant difference in age (mean 53 years; min 44, max 63), CD4 count (mean 726 cells/μl [SD 168]), HIV RNA levels (mean 961 copies/ml [SD 1645]), and time-off-ART (mean 17 years; min 4.5, max 30) between the TN and NN groups (Figure 1—figure supplement 1). Single HIV-1 Env-specific CD19+CD20+IgM-IgA-MBCs were FACS-sorted (Figure 1—figure supplement 2) and we obtained repertoires of natively paired, full variable region IGH and IGL by Immune Repertoire Capture analysis; 12,591 total sequence pairs were generated for all study participants, with 5771 sequences from TN and 2707 sequences from NN (Figure 1—figure supplement 2). To exclude potential bias caused by the number of input cells or sequences, we normalized the proportion of each repertoire signature across all sequences in each individual (see 'Materials and methods'). TN MBCs showed an Ig subclass distribution similar to serum IgG antibodies, with average levels of IgG1 (78.6%) > IgG2 (12.5%) > IgG3 (8.8%) > IgG4 (0.1%) while Ig subclasses from NNs differed in hierarchy with average levels of IgG1 (82.5%) > IgG3 (11.1%) > IgG2 (6.2%) > IgG4 (0.2%) (Figure 1A).
 
-## IGH-VDJ and IGL-VJ gene segment usage
+![Figure 1.](https://cdn.elifesciences.org/articles/62648/elife-62648-fig1-v1.jpg)
+
+**Figure 1.:** (A) IgG subclass distribution in NNs and TNs. (B) The proportion of IGHV-IGLV gene combination in NN and TN individuals' usage was averaged and plotted in heatmaps representing the intensities of heavy and light chain paired V gene usage. (C) CDRH3 and CDRL3 length distribution (in aa) in NN and TN.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62648/elife-62648-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62648/elife-62648-fig1-figsupp2-v1.jpg)
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/62648/elife-62648-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) The frequencies at which the IGH V/D/J and IGL V/J gene families are expressed by NN and TN memory B-cells (MBCs) are shown in pie charts as the average of percentages of gene sequences obtained in each individual. (B) The proportion of IGHV, IGHD, IGLV, IGLJ genes used per individual was plotted in a heatmap. Each row is annotated with the donor ID and the number of total sequences obtained from the individual. (C) The frequencies at which the paired IGH and IGL V/J gene families are expressed by NN and TN MBCs are shown. Per individual, proportions of each IGHV-IGHJ-IGLV-IGLV gene combination over the total number of sequences obtained from the individual were calculated. Then, these proportions are averaged in each NN and TN group separately. The total height of the plot reflects the cumulative quantity of the proportions. The height of each gene segment represents the proportion of usage. The thickness of flow lines reflects the proportion of gene combinations, NN sequences as blue lines, and TN sequences as orange lines.
+
+### IGH-VDJ and IGL-VJ gene segment usage
 
 The MBC repertoires were found to use 40 IGHV genes representing all seven human VH gene families. Of the seven IGHV gene families, IGHV1 was most commonly used in both NN and TN repertoires, consistent with prior reports that anti-HIV antibodies frequently use IGHV1 genes (Breden et al., 2011; Gorny et al., 2009; Figure 1—figure supplement 3A). The top two most frequently used IGHV genes were IGHV1-69 and IGHV4-34 in both the TN and NN repertoires, followed by IGHV4-4 in the TN and IGHV1-24 and IGHV1-2 in the NN repertoire (Figure 1—figure supplement 3B). For IGHD and IGHJ genes, no statistical significant differences were observed. The most frequently used heavy chain VDJ genes were IGHV1-69, IGHD3-22, IGHJ4 in NN and IGHV1-69, IGHD4-17, IGHJ4 in TN. Among IGLV and IGLJ genes, IGLKV3 and IGLKV3-20 dominated in both TN and NN repertoires (Figure 1—figure supplement 3B). This is consistent with previously reported data showing the dominance of IGLKV3-20 (Jackson et al., 2012).
 
 We next compared the proportions of specific IGH/IGL pairs between TNs and NNs. IGHV1-69/IGKV3-20 combination followed by IGHV1-69/IGKV1-5 dominated in NN while IGHV4-4/IGLV6-57 followed by V1-69-2/LV1-51 were most frequently found in TNs (Figure 1B). Specifically the most frequent IGHV-IGHJ-IGLV-IGLJ combination in NN was IGHV1-69/IGHJ6/IGKV3-20/IGKJ5 and IGHV4-4/IGHJ6/IGLV6-57/IGLJ2 in TNs (Figure 1—figure supplement 3C). Overall, the frequencies of the top 3 IGHV/HJ-IGLV/LJ pairs differed significantly between NNs and TNs (Mann Whitney U-test, p<0.05). We next were interested to determine if we could find sequences of known bNAbs as listed in the CATNAP database (Yoon et al., 2015) and as summarized by Sok and Burton, 2018, using the same IGHV and IGLV gene segment usage and equal CDRH3 length as minimum criteria. Overall, very few sequences in our data matched known bNAb IGHV and IGLV gene pairs and of those none showed high levels of CDRH3 sequence similarity. No difference in these frequencies between TNs and NNs was observed. Only the V3 glycan antibody BG18 that had been identified previously in TN 622800 (Freund et al., 2017) was again detected in the BCR repertoire of this individual (Supplementary file 3). Taken together, these results suggest that V(D)J gene usage was similar overall between TNs and NNs, but the frequency and combination of IGH/IGL pairs differed between groups.
 
-## Characteristics of CDRs
+### Characteristics of CDRs
 
 Complementarity determining regions (CDRs) play critical roles in the binding of antibodies to antigens and unusually long CDRH3s have been described for some bNAbs (Sok and Burton, 2018). The CDRH3/L3 length in TNs was between 3 and 37 aa and 5 and 17 aa, respectively, and 4 to 31 aa and 5 to 14 aa in the NNs, respectively. CDRH3 length distribution in TN sequences was significantly different to CDRH3 length distribution in NN sequences (p<2.2e-16 Kolmogorov-Smirnov test; Figure 1C). Furthermore, significant differences in length were observed for CDRH2, CDRL1 (data not shown), and CDRL3 (p<2.2e-16 Kolmogorov-Smirnov test; Figure 1C). There were no significant differences for CDRH1 and CDRL2. The mean CDRH3 lengths observed here are more consistent with what has been described in the CD4 binding site-specific bNAbs like VRC01 and 3BNC117, which have CDRH3 lengths of 14 and 12, respectively, while V2 and V3 glycan-specific bNAbs like PGDM1400 and PGT121 have substantially longer CDRH3 length with 34 and 26 aa, respectively (Sok and Burton, 2018). Nevertheless, CDRH3 length by itself is not a determining feature for neutralization potency and breadth but rather CDRH3-specific sequence characteristics that contribute to the superior binding activity of certain bNAbs. Other than for BG18, however, no CDRH3 sequences, that matched known bNAbs exactly, were indentified in our dataset.
 
-## Rates of SHM in IGHV and IGLV
+### Rates of SHM in IGHV and IGLV
 
 When we calculated the number of SHMs in IGHV, we noticed that the TN repertoires had significantly higher frequencies of nucleotide mutations compared to NN (mean ± SD: 54 ± 17 mutations for TN and 29 ± 8 mutations for NN, unpaired t-test, p<0.05) with more than 65% of sequences showing mutation frequencies greater than 15% (Figure 2A). When comparing the frequency of mutations in IGHV (TNs, NNs, and intermediate neutralizers) with the degree of serum neutralization breadth across the entire cohort, a direct correlation was observed (Spearman’s rho = 0.60, p<0.01) (Figure 2B and C). Similarly, SHM in IGLV (Figure 2D) was more frequent in TN than NN (mean ± SD: 35 ± 18 mutations for TN and 14 ± 5 mutations for NN, unpaired t-test, p<0.05) with more than 50% of sequences showing mutation rates greater than 10%. Here as well, the frequencies of mutations in IGLV correlated with neutralization breadth (Spearman’s rho = 0.63, p<0.01; Figure 2E and F). We were next interested to determine whether the IGH and IGL V-J gene usage would differ between the more (with higher than 15% mutations in IGH, 10% mutations in IGL) and less (≤15% mutations in IGH, 10% mutations in IGL) mutated sequences. While including all sequences, independent of the mutation rates, there was no apparent difference in IGHV-J (Figure 2G) or the IGLV-J combinations between NNs and TNs (Figure 2H). For the sequences with higher than 15% mutations in IGHV, however, which occurred nearly exclusively in the TNs, the pattern was distinct, demonstrating a selection for fewer dominant V-J combinations (Figure 2G). In particular HJ4/HV1-69-2, HJ6/HV4-4, HJ6/HV3-30.33, and HJ6/HV4-34 were significantly enriched in TN sequences with high mutation rates (p<0.01, one-sided Fisher’s exact test followed by correction for multiple comparison using Benjamini-Hochberg method). The enrichment of HV4-34 usage (p<0.001, one-sided Fisher’s exact test followed by correction for multiple comparison using Benjamini-Hochberg method), a feature of autoimmunity (Wardemann et al., 2003), in the TN sequences with high mutation rates, is consistent with a recent report that suggested that HIV infection induces a permissive state in which potentially autoreactive clones that would otherwise be eliminated can persist (Roskin et al., 2020). A similar contraction to fewer dominant V-J combinations was also observed for sequences with higher than 10% mutations in IGLV (Figure 2H). The frequencies of the paired IGHV and IGLV genes (Figure 2I) demonstrated a dominant pairing of the HV1-69-2 and HV3-30.33 with LV1-51, and HV4-4 with LV6-57 in TNs with >15% heavy chain mutations. Assuming that the somatic IGHV mutation rates in B-cells correlate with the total exposure time in the GC environment, and in light of the fact that the TN and NN did not differ in age, time-off-ART, and viral loads, our data suggests that TNs were more permissive for extensive SHM of B-cell clones.
 
@@ -54,7 +66,7 @@ When we calculated the number of SHMs in IGHV, we noticed that the TN repertoire
 
 **Figure 2.:** (A) The overall mutation frequencies in IGHV in top-neutralizers (TNs) versus non-neutralizers (NNs) are significantly different with mean number of mutations of 54 in TNs and 29 in NNs (unpaired t-test, p<0.05). (B) The number of mutations in IGHV for each of the 22 study participants is plotted and the serum neutralization breadth is color-coded ranging from blue (0% neutralization) to red (100% neutralization). (C) The mean frequency of mutations in IGHV correlates with the serum neutralization breadth in % (Spearman’s rho = 0.60, p<0.01). Similarly, for IGLV, the mean number of mutations differ (35 in TNs and 14 in NNs) (D) and correlates with the serum neutralization breadth in % (r = 0.63, p<0.01) (E and F). Circos plots summarize the combinations of V and J segments used in the rearranged IGH genes (G) and IGL genes (H) and V segment combinations of IGH and IGL (I) expressed by memory B-cells (MBCs). Top circos graphs demonstrate combinations expressed by NN MBCs and second row graphs demonstrate TN MBCs independent of the number of detected mutations. Third and fourth row circos graphs demonstrate gene combinations expressed by TN MBCs with low and high mutation rates. For each (G)/(H) plot, the bottom half depicts J genes and the top half depicts V genes. For (I) top half depicts IGHV and bottom half IGLV. To exclude potential bias caused by the number of input cells, the number of sequences in each repertoire signature was weighted by the total number of sequences and total number of unique clones in each individual (see 'Materials and methods'). The arc length of each segment denotes the normalized frequency at which each gene segment was identified. Rearrangement of a J gene with a V gene segment in a clonal immunoglobulin (Ig) sequence is represented by a ribbon (ribbons carry the color of the HV or LV family of the gene participating in the pairing). The width of the ribbons corresponds to the weighted frequency at which each particular HV-HJ or LV-LJ rearrangement was used in the respective MBC repertoire.
 
-## Clonal selection
+### Clonal selection
 
 To further assess the clonal nature of the BCR repertoire in TNs, we clustered sequences into clonal groups. Each unique clone is a cluster of sequences that meet the following criteria: (1) derived from the same individual; (2) share the same V and J gene segment annotations in heavy chain and light chain; (3) have equal CDRH3 length; and (4) junction regions share similarity by a defined sequence distance cutoff (see 'Materials and methods'). This clonal assignment identified 770 clones (mean number of sequences 7.4) and showed that larger sized clusters (dominant clones) consist of highly mutated sequences (Figure 3A). To quantify the greater clonality of the highly mutated sequences, we used an unevenness measure, the Gini index. We selected individuals (subject IDs: 330183, 280008, 622800) for whom a total of more than 600 sequences were available. Sequences were divided into two sets, highly mutated (>15% mutations) and less mutated (≤15% mutations) sequences. Each set of sequences was clustered into clones and the Gini index was calculated based on the clone size distributions. For all three subjects, the Gini index was greater in the highly mutated set (paired t-test, p<0.04), thus supporting the observation that the BCR repertoire becomes more narrow with increasing mutation rates, suggesting the dominance of certain clones (Figure 3B).
 
@@ -80,27 +92,184 @@ In summary, development of B-cell lineages with superior neutralization breadth 
 
 ## Materials and methods
 
-## Human subjects
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propidium iodide</td>
+      <td>Life Technologies</td>
+      <td>Cat# P1304MP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD3 (FITC, clone UCHT1)</td>
+      <td>Biolegend</td>
+      <td>Cat# 300406, RRID:AB_314060</td>
+      <td>10 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD14 (FITC, clone HCD14)</td>
+      <td>Biolegend</td>
+      <td>Cat# 325604, RRID:AB_830677</td>
+      <td>Dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgM (FITC, clone MHM-88)</td>
+      <td>Biolegend</td>
+      <td>Cat# 314506, RRID:AB_493009</td>
+      <td>Dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD20 (PE-cy7, clone 2H7)</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 560735, RRID:AB_1727450</td>
+      <td>Dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD19 (BV421, clone HIB19)</td>
+      <td>Biolegend</td>
+      <td>Cat# 302233, RRID:AB_10897802</td>
+      <td>Dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IgA (FITC, clone IS11-8E10)</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-093-071, RRID:AB_1036156</td>
+      <td>Dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>hCD40L His tag</td>
+      <td>BPS Biosciences</td>
+      <td>Cat# 71191</td>
+      <td>Dilution (1:100)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Streptavidin conjugated to PE or AlexaFluor 647</td>
+      <td>Life Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>Clade B JR-CSF gp120, JR-FL gp140, 92BR020 gp120, clade A BG505 SOSIP, clade C IAVI C22 gp120</td>
+      <td>Duke Human Vaccine Institute, protein production facility</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>TZM-bl cells</td>
+      <td>NIH AIDS Reagent Program</td>
+      <td>Cat# 8129–442, RRID:CVCL_B478</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>AC10.0.29, RHPA4259.7, THRO4156.18, REJO4541.67, WITO4160.33, TRO.11, SC422661.8, QH0692.42, CAAN5342.A2, PVO.4 TRJO4551.58</td>
+      <td>Seaman lab</td>
+      <td></td>
+      <td>Plasmids</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ampure XP beads</td>
+      <td>Beckman Coulter</td>
+      <td>Cat# A63881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quant-iT PicoGreen dsDNA Assay Kit</td>
+      <td>Invitrogen</td>
+      <td>Cat# P7589</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>https://www.flowjo.com/solutions/flowjo</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IgBLAST</td>
+      <td>https://www.ncbi.nlm.nih.gov/igblast/</td>
+      <td>RRID:SCR_002873</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>454 GS FLX data analysis software</td>
+      <td>Roche</td>
+      <td>RRID:SCR_018028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R version 4.0.0</td>
+      <td>https://cloud.r-project.org</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Igphyml (version 1.1.0)</td>
+      <td>https://igphyml.readthedocs.io/en/latest/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Alakazam (version 1.0.0)</td>
+      <td>https://alakazam.readthedocs.io/en/1.0.1/news/</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Human subjects
 
 A total of 22 HIV-infected individuals were recruited for this study. All participants underwent leukapheresis and routine blood draws as per study protocol. All subjects signed informed consent, and the study was approved by the MGH/Partners Institutional Review Board (Protocol # 2003P001894).
 
-## Neutralization assay
+### Neutralization assay
 
 HIV-1 neutralization breadth was assessed using the Tzm-bl cell-based pseudovirus neutralization assay, as described (Sarzotti-Kelsoe et al., 2014), against a standard panel of Env-pseudoviruses derived from nine clade B tier 2 viruses: AC10.0.29, RHPA4259.7, THRO4156.18, REJO4541.67, WITO4160.33, TRO.11, SC422661.8, QH0692.42, CAAN5342.A2, and two tier 3 viruses: PVO.4 and TRJO4551.58 (Li et al., 2005). Murine leukemia virus (MuLV) was included in all assays as a negative control. Neutralization titers (50% inhibitory dose [ID50]) were defined as the reciprocal of the plasma sample dilution that caused a 50% reduction in relative luminescence units (RLUs) compared to virus control wells after subtraction of background RLUs. Neutralization breadth was determined as the proportion of pseudoviruses with an ID50 score threefold above background titers observed against MuLV negative control virus (3× ID50 of MuLV) (Sarzotti-Kelsoe et al., 2014).
 
-## Cell lines
+### Cell lines
 
 TZM-bl cells (also called JC53BL-13) were obtained from the NIH AIDS Reagent Program and authenticated by (1) morphology and growth characteristics, (2) cell surface expression of CD4 and co-receptors was assessed by flow cytometry, and (3) susceptibility in vitro to HIV, with readout being firefly Luc activity in infected cell lysates. All cell lines were tested to confirm absence of mycoplasma contamination.
 
-## Single-cell flow cytometry sorting
+### Single-cell flow cytometry sorting
 
 Isolated cells were stained with fluorochrome-antibody conjugates and reagents to identify antigen-specific MBCs. The panel consisted of propidium iodide (Life Technologies); CD3 (FITC, clone UCHT1), CD14 (FITC, clone HCD14), IgM (FITC, clone MHM-88), CD20 (PE-cy7, clone 2H7), CD19 (BV421, clone HIB19) (All Biolegend); IgA (FITC, clone IS11-8E10) (Miltenyi Biotec). Preformed conjugates for antigen-specific B-cell sorting were made as described (Sok et al., 2014) using streptavidin conjugated to PE or AlexaFluor 647 (Life Technologies). B-cell probes were made using clade B JR-CSF gp120, JR-FL gp140, 92BR020 gp120, clade A BG505 SOSIP, and clade C IAVI C22 gp120 tags (Duke Human Vaccine Institute, protein production facility) and a cocktail of all antigens was used for cell sorting. IgG+ B-cells were defined as CD3/14−, CD19+, CD20+, and IgA/IgM-; antigen-specific B-cells positive for probes in either PE or APC color were sorted into 96-well U-bottom plates containing 200 µl of B-cell culture medium (IMDM supplemented with FBS, Normocin, hIL-2, hIL-21, hCD40L His tag, and anti-His antibody). After 4-day culture, the B-cells were sorted into microtiter plates at one cell per well. Sorted plates were frozen immediately and maintained at −80°C before reverse transcription (RT)/PCR.
 
-## BCR sequencing
+### BCR sequencing
 
 Natively paired variable region sequences from individual cells were generated by RT, cDNA barcoding, amplification, and sequencing as described previously (Tan et al., 2014; DeFalco et al., 2018). cDNA sequences were determined by 454 Titanium sequencing. A minimum of 10 reads for each chain (heavy and light) was required, and a contig was kept only if it included at least 90% of the reads for that chain from that well. V(D)J assignment and mutation identification was performed using IMGT reference sequences and IgBLAST through Immcantation analysis framework (Supplementary file 2). Percentage SHM was calculated by calling observed mutations of the entire input sequence compared to the germline sequence.
 
-## Analysis
+### Analysis
 
 Statistical analyses and visualizations were performed in R version 4.0.0 (April 24, 2020). Subclass distribution, gene family, and gene usage analysis: to exclude potential bias caused by the number of input cells or sequences, we divided the number of occurrences of each repertoire signature by the total number of all sequences for each individual. Gene recombination profiles: to avoid skewing of mean frequencies when averaged across all individuals by individuals with high or low number of available sequences (in particular for sequences with higher than 15% heavy chain mutations), normalized frequencies were multiplied by a factor (number of unique clones per individual). For IGHV-IGLV recombinations, the highly mutated sequences were defined using only heavy chain mutation cutoff. CDRH3 length distributions consist of CDRH3 length of each unique clone. Kolmogorov-Smirnov test was used to compare the distributions between TN and NN repertoires.
 

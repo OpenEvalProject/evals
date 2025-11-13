@@ -16,11 +16,11 @@
 
 ### Affiliations
 
-1. https://ror.org/00ks66431 Discipline of Microbes, Infection & Immunity, School of Biosciences, Faculty of Health and Medical Sciences, University of Surrey Guildford United Kingdom
-2. https://ror.org/013meh722 Cambridge Centre for Proteomics, University of Cambridge Cambridge United Kingdom
-3. https://ror.org/00k6tx165 Department of Chemistry, Ball State University Muncie United States
-4. https://ror.org/01f5ytq51 Texas A&M Veterinary Medical Diagnostic Laboratory College Station United States
-5. https://ror.org/018h10037 United Kingdom Health Security Agency, UKHSA-Porton Down Salisbury United Kingdom
+1. Discipline of Microbes, Infection & Immunity, School of Biosciences, Faculty of Health and Medical Sciences, University of Surrey Guildford United Kingdom ([ROR:00ks66431](https://ror.org/00ks66431))
+2. Cambridge Centre for Proteomics, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+3. Department of Chemistry, Ball State University Muncie United States ([ROR:00k6tx165](https://ror.org/00k6tx165))
+4. Texas A&M Veterinary Medical Diagnostic Laboratory College Station United States ([ROR:01f5ytq51](https://ror.org/01f5ytq51))
+5. United Kingdom Health Security Agency, UKHSA-Porton Down Salisbury United Kingdom ([ROR:018h10037](https://ror.org/018h10037))
 
 † Corresponding author
 
@@ -42,9 +42,29 @@ In order to determine the molecular mechanisms driving mycolactone-induced endot
 
 ## Results
 
-## Sec61 blockade impacts endothelial cell morphology and adhesion
+### Sec61 blockade impacts endothelial cell morphology and adhesion
 
 We recently observed that mycolactone induces morphological changes in primary endothelial cells in vitro, leading to a dose-dependent increase in monolayer permeability at 24 hr (Hsieh et al., 2022). To understand the longer-term effects of mycolactone, we performed time-lapse imaging of HDMECs exposed to mycolactone (Figure 1—video 1) or solvent (DMSO) control (Figure 1—video 2) every 30 min for 48 hr. As in previous observations, the cells began to take on an ‘elongated’ phenotype after 8 hr. The proportion of elongated cells increased with time (Figure 1A) and after 24 hr exposure, approximately half the cells (51.63 ± 2.89%) had this phenotype. The average ratio of cell length to width doubled in 16 hr, and quadrupled after 24 hr exposure (Figure 1C). At 24 hr, a small proportion (9.73 ± 4.01%) had acquired a rounded appearance (Figure 1B) similar to that reported for mycolactone exposure of fibroblasts (Gama et al., 2014) and epithelial cells (Guenin-Macé et al., 2013). Notably, these cells retained the ability to reattach to the culture vessel (Figure 1—video 1), in line with their continued viability in this time window (Ogbechi et al., 2015). However, after this time their ability to re-adhere declined and the proportion of detached cells steadily increased. Although the number of rounded cells increased between 24 and 48 hr, the elongated phenotype remained predominant at this time point (Figure 1B).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig1-v2.jpg)
+
+**Figure 1.:** HDMECs were exposed to 10 ng/mL mycolactone (Myco), 0.02% DMSO, 400 nM Ipomoeassin F or 20 nM ZIF-80. (A–C). Mycolactone-treated cells were imaged at indicated times in (A) and cell numbers of each phenotype (i.e. normal, elongated or rounded) were counted and presented as a percentage of total cell number per field in (B) (mean ± SEM of three independent experiments, **, p<0.01, *, p<0.05. (C) Length and width of each cell exposed to mycolactone for 16 and 24 hr or DMSO for 24 hr per image were measured and presented as a ratio. Data is representative of three independent experiments. ****, p<0.0001 (D) A scratch was introduced to a HDMEC monolayer prior to the treatment and visualised at 0, 16, 24 hr. The scratch area is presented as a percentage of the value obtained at 0 hr (mean ± SEM of three independent experiments) ns, not significant, *, p<0.05. Cells exposed to an alternative Sec61 inhibitor ipomoeassin F (IpomF) (E) or ZIF-80 (F) were imaged at indicated times. Images are representative of three independent experiments. Scale bar = 100 μm. (G–H). Live cell imaging was performed with the zenCELL Owl incubator microscope every 30 min over 48 hr. Algorithms of cell coverage (G), detached cell numbers (H) per time point from three independent experiments are summarised as mean ± SEM. Data presented as cell coverage relative to the value obtained from initial time point (G) or a % of detached cells to total cell number (H) of each condition. (I) Confluent HDMECs under uniaxial shear stress (SHEAR) or not (STATIC) for 24 hr were then exposed to 0.02% DMSO or 10 ng/ml mycolactone. Phase-contrast images were taken 0, 24 and 48 hr later following return to the same conditions. Data is representative of three independent experiments. (J). Cell numbers of each phenotype at different time points, presented as a percentage of total cell number per field in (I), showing mean of three independent experiments ± SEM, * p<0.05. (K). Length and width measurements of cells exposed to mycolactone or DMSO under shear stress conditions for 24 and 48 hr presented as a ratio. Data is representative of three independent experiments. ****, p<0.0001. Statistical analysis was performed by two-way ANOVA (panel B, D and J) or one-way ANOVA with Dunnett’s (panel C) or Tukey’s (panel D) correction in GraphPad Prism Version 9.4.1 and 10.2.3. Panel K) was analysed using a mixed-effects model with Tukey’s correction for multiple comparisons.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Cells were exposed in triplicate to serial dilutions of compound for 96 hr and viability measured with resazurin. Results are expressed as a percentage of the DMSO control. Data from three independent experiments (mean ± SEM).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Imaging was performed with the zenCELL Owl incubator microscope over 48 hr. Images from selected times are shown. Scale bar = 50 μm. Images are representative of three independent experiments.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Left panel: Cell numbers of each phenotype were counted and presented as a percentage of total cell number per field (mean ± SD for triplicate wells) *, p<0.05; **, p<0.01, n=1. Right panel: Length and width of cells exposed to mycolactone for 16 and 24 hr or DMSO for 24 hr measured and presented as a ratio. Data is representative of duplicate independent experiments. Statistical analysis was performed by two-way ANOVA in GraphPad Prism Version 9.4.1 and 10.2.3. **, p<0.01; ****, p<0.0001.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Data represents the mean ± SD for triplicate wells, and is representative of two independent experiments.
 
 In order to confirm that these phenotypes were relevant to biologically derived mycolactone, we compared the response to the synthetically made mycolactone to that of mycolactone A/B extracted from M. ulcerans bacteria. The preparations showed equivalent potency against HDMEC (Figure 1—figure supplement 1) and caused similar changes in phenotype in live cell imaging assays (Figure 1—figure supplement 2 and Figure 1—figure supplement 3).
 
@@ -56,11 +76,43 @@ As the responses of endothelial cells grown in static culture plates may not acc
 
 To establish the in vivo relevance of these findings, we performed fibrinogen immunostaining in the pre-ulcerative mouse footpad model of M. ulcerans infection (Figure 2, Figure 2—figure supplement 1). Fibrinogen is a high molecular weight (~330 kDa) plasma protein that is normally retained within the lumen of intact vessels and, indeed, in uninfected (vehicle control) mouse feet, fibrinogen was rarely detected, and then only within the vessel lumen (Figure 2A). In contrast, at 21 days post infection (Grade 1 lesions; metatarsal thickness increase ~10%), fibrin(ogen) was seen within the blood vessel wall surrounding the endothelium (Figure 2B). After 28 days (Grade 2/3 lesions, metatarsal thickness increase 50–100%), widespread fibrin(ogen) staining was seen outside blood vessels within the dermis, in foci consistent with its conversion to insoluble fibrin (Figure 2C). The lack of signal in isotype control-stained tissue (Figure 1—figure supplement 2) confirms the specificity of staining. This penetration of fibrinogen between the endothelial monolayer lining the vessel, then through the vessel wall and conversion to fibrin by other components of the coagulation cascade within deeper tissue is consistent with our previous findings in human BU patient punch biopsies (Hsieh et al., 2022). Furthermore, the changes in endothelial cell morphology and monolayer integrity described here and previously Hsieh et al., 2022 demonstrates that the extravascular deposition of fibrin is an early feature of infection.
 
-## Mycolactone predominantly targets proteins involved in glycosylation and adhesion
+![Figure 2.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig2-v2.jpg)
+
+**Figure 2.:** Immunohistochemistry for fibrin(ogen) in the feet of C57BL/6 J mice that received vehicle control (PBS) (A1-2) or intradermal injection of 1x105 colony forming units M. ulcerans at 21 (Grade 1; B1-3) or 28 days (Grade 3; C1-3) post-infection. Positive fibrin(ogen) staining is brown in colour, the haematoxylin counterstain is purple. Scale bars in A1, B1, and C1: 2 mm; all others: 20 µm. Data representative of three mice at each infection grade, in two independent infections.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** At 21 days immune cell infiltration as well as apparently intracellular bacteria can be clearly seen in proximity to mycobacterial clusters. Scale bars: 20 μm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Scale bars: 20 µm.
+
+### Mycolactone predominantly targets proteins involved in glycosylation and adhesion
 
 While proteomic studies of mycolactone action have been performed previously (Baron et al., 2016; Morel et al., 2018; Grotzke et al., 2017; Gama et al., 2014), these have used whole cell lysates, leading to systematic limitations in detection of membrane and secreted proteins, due to their relatively low abundance compared to cytosolic proteins. Therefore, to understand the molecular mechanisms driving the pathogenic phenotypic changes in endothelial cells, we instead used a total membrane proteomics approach to enrich for the Sec61 substrates that are targeted by mycolactone.
 
 We isolated total membrane fractions from HDMECs exposed to DMSO or mycolactone for 24 hr and analysed them by tandem mass tagging (TMT) multiplex LC/MS over biological triplicates (Figure 3A). A total of 6649 proteins were detected, of which 482 were significantly downregulated and 220 upregulated by mycolactone (>2 Fold change, p<0.05; Figure 3B, Figure 3—source data 1). Among the total proteins discovered, 36.9% were trafficked via the secretory/endolysosomal pathways that primarily depend on the Sec61 translocon (Figure 3C). This group represented 84.6% of the downregulated but only 23.7% of the upregulated proteins. As predicted, membrane proteins were the most affected in the downregulated group, with little effect on cytoplasmic, cytoskeletal, mitochondrial or nuclear proteins. The downregulated fraction included previously published endothelial targets of mycolactone including coagulation regulators thrombomodulin (TM), von Willebrand Factor (vWF), platelet endothelial cell adhesion molecule (CD31), endothelial protein C receptor and tissue factor pathway inhibitor (TFPI) and cell junction components tyrosine protein kinase receptor TIE1, angiopoietin-1 receptor (TEK), cadherin 5 (CDH5), junctional adhesion molecule 3 (JAM-3) and catenin β1 (Ogbechi et al., 2015; Hsieh et al., 2022; Figure 3—figure supplement 1), validating our dataset.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig3-v2.jpg)
+
+**Figure 3.:** (A) Workflow for isolation and proteomic analysis of HDMEC membrane proteins. In three independent replicates, HDMEC were exposed to 10 ng/ml mycolactone or DMSO for 24 hr, lysed by hypotonic lysis and membrane fractions enriched by differential centrifugation as described in Methods. Acetone precipitated proteins were reduced, alkylated and trypsinised then subjected to TMT labelling for quantitative proteomic analysis by LC-MS/MS. (B) Volcano Plot of differential expression between DMSO and mycolactone treated samples, plotting mean fold change against false discovery rate adjusted p-values; orange = downregulated, p<0.05; blue = upregulated, p<0.05; black = p > 0.05 (C) Pie charts showing subcellular localisation of proteins in total, >twofold upregulated or downregulated (p<0.05) fractions. (D) Quantitation of membrane or secreted proteins according to type: blue = upregulated; white = unchanged; orange = downregulated. (E) Percentage of downregulated, unchanged and upregulated multi-pass membrane proteins possessing a signal peptide. (F) Overlap between mycolactone downregulated endothelial membrane proteome and Sec61-dependent proteome. Venn diagram created using JVenn (Bardou et al., 2014), showing overlap in significantly downregulated proteome between the dataset presented here and those obtained in Hela cells treated with siRNA for Sec61α (Nguyen et al., 2018). (G) Top significantly over-represented (p<0.05) GO groups in downregulated and upregulated data sets, compared to whole genome. Data generated with WebGestalt. (H) Quantitation of numbers of up and down regulated proteins in GO groups identified in (G).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** significantly downregulated (p<0.05) or not (p≥0.05) in bold or Italic, respectively.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Membrane protein type and SP sequence based on Uniprot data, ΔG quantified using ΔG Prediction Server V1.0. Right panel: Impact of distance between signal peptide and first transmembrane domain on susceptibility of multipass proteins to downregulation by mycolactone. Statistical analysis was performed by one-way ANOVA with Tukey’s correction for multiple comparisons in GraphPad Prism Version 9.4.1 and 10.2.3. *, p<0.05.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (i) Binding of a nascent chain signal peptide to Sec61α opens a lateral gate into the membrane and causes a shift in the position of the plug domain, allowing access to the ER lumen. (ii) TRAP increases translocation of proteins whose signal peptides bear a high GP content. TRAP is a heterotetrameric complex which interacts with the ribosome on the cytosolic side of the ER membrane and with Sec61α on the luminal side, binding to a hinge region between the N- and C-terminal halves of the protein facilitating channel opening (iii) The Sec62/63 complex is involved in post-translational translocation but can also assist opening of the channel for proteins with signal peptides that gate slowly due to the presence relatively long but less hydrophobic “H-regions” and lower carboxy terminal polarity. This complex also interacts with the ribosome and the translocon and may also interact directly with the nascent peptide chain. In addition, Sec63 recruits BiP to the translocon to further assist channel opening on the luminal side. Right panel: Overlap between mycolactone-downregulated endothelial membrane proteome and translocon-dependent proteome. Venn diagram created using JVenn showing overlap in significantly downregulated proteome between the dataset presented here and those obtained in Hela cells treated with siRNA for Sec61α and translocon associated protein TRAP or HEK293 cells with Sec62 or Sec623 knocked out (Nguyen et al., 2018; Schorr et al., 2020).
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Data generated with WebGestalt.
 
 As seen in previous proteomic studies and in vitro translocation assays (McKenna et al., 2017; Morel et al., 2018; Demangel and High, 2018; McKenna et al., 2016), mycolactone preferentially targeted secreted and single pass type I and type II membrane proteins in endothelial cells, with no effect on the EMC-dependent Type III proteins or the GET pathway-dependent tail-anchored proteins (Figure 3D). A small number (51 out of 606 detected) of multi-pass membrane proteins were also >twofold downregulated by mycolactone (Figure 3—source data 1). This group was relatively enriched for signal peptide-bearing proteins (42% vs 4% amongst unchanged and upregulated multi-pass proteins; Figure 3E). The rules governing sensitivity of this subgroup to mycolactone appear to be similar to those reported for single pass type I proteins (Morel et al., 2018), with higher signal peptide hydrophobicity and a shorter distance between the signal peptide and first transmembrane domain being associated with increased resistance to the effects of mycolactone (Figure 3—figure supplement 2). Of the remaining mycolactone-sensitive multi-pass proteins, 80% contained at least one long loop (>50 aa) between transmembrane domains. Among the upregulated proteins, 88% of the integral membrane proteins were multi-pass membrane proteins, and only one of the predicted single pass proteins contained a signal peptide. Likewise, the four upregulated secreted proteins identified are all secreted by non-conventional pathways.
 
@@ -70,33 +122,93 @@ Our membrane targeted approach identified a higher number of Sec61-dependent pro
 
 Gene ontology (GO) analysis of mycolactone-upregulated proteins supported previous observations by ourselves and others of cellular stress responses, with significant enrichment of terms associated with oxidative stress and detoxification (Figure 3G; Morel et al., 2018; Ogbechi et al., 2018; Förster et al., 2020; Grönberg et al., 2010). The upregulated proteins also included several proteins involved in the autophagy pathway, including SQSTM1/p62, which is involved in the cellular response to mycolactone (Hall et al., 2022; Figure 3—figure supplement 1). However, in the significantly downregulated fraction a distinct pattern emerged, with GO terms associated with glycosylation, matrix organisation, adhesion and cell migration showing the greatest over-representation compared to the whole genome. Within these GO groups, the vast majority of proteins detected in our proteome were downregulated by mycolactone (Figure 3H). Similar results were obtained when the downregulated proteins were compared to the total detected proteome (Figure 3—figure supplement 4), showing this pattern was not an artefact resulting from membrane enrichment.
 
-## Mycolactone disproportionately targets Golgi-resident proteins involved in glycosylation and glycosaminoglycan chain synthesis leading to the loss of surface GAGs
+### Mycolactone disproportionately targets Golgi-resident proteins involved in glycosylation and glycosaminoglycan chain synthesis leading to the loss of surface GAGs
 
 The Golgi is the site of higher order protein glycosylation and GAG synthesis and, of the intracellular organelles, is the most affected by mycolactone (Figure 3C, Figure 4—figure supplement 1). The Golgi has a particularly high proportion of type II membrane proteins as the membrane anchor and sequences around it can act as a signal for Golgi retention (Kikegawa et al., 2018) and nearly all of these Golgi-expressed type II membrane proteins were significantly downregulated by mycolactone (Figure 4A). Interestingly, type II Golgi proteins showed a higher degree of down-regulation by mycolactone than ER or plasma membrane localised type II proteins (Figure 4B). This suggests the signals that lead to Golgi localisation may make proteins more sensitive to Sec61 inhibition, although it is equally possible that Golgi proteins are turned over at a higher rate than those at other sites as depletion is generally at the turnover rate (Ogbechi et al., 2015). The effect is not due to differences in transmembrane domain hydrophobicity, which shows little variation and has no impact on Type II protein levels in mycolactone-treated cells (Figure 4—figure supplement 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig4-v2.jpg)
+
+**Figure 4.:** HDMECs exposed to 10 ng/mL of mycolactone (Myco) or 0.02% DMSO for 24 hr or indicated times were subjected to proteomic analysis (A–D), surface immunostaining (E–F, H) or immunoblotting (G). (A) Volcano Plot of differential expression between DMSO and mycolactone-treated samples, plotting mean fold change against false discovery rate adjusted p-values. Pale blue = total detected proteins; dark blue = Type II membrane proteins; yellow = Golgi-localised Type II membrane proteins. (B) Violin plot showing fold change in protein levels for Type II membrane proteins grouped according to subcellular location. ns, not significant; **, p<0.01; ****, p<0.0001. (C) Heat map showing fold change in Golgi-localised O- and N-glycosylation enzymes in mycolactone exposed HDMEC. Dual-colour coding is shown, only one unique peptide detected in asterisks, and significantly downregulated (p<0.05) or not (p≥0.05) in bold or Italic, respectively. (D) Genes in GAG biosynthesis categorised according to function and side chains of chondroitin sulphate/ dermatan sulphate (CS/DS), heparan sulphate (HS) or keratan sulphate (KS). Heatmap showing Log2 fold change of these genes in response to mycolactone in three independent experiments. Dual-colour coding is shown. Genes undetected are indicated as crossed, only one unique peptide detected in asterisks, and significantly downregulated (p<0.05) or not (p≥0.05) in bold or Italic, respectively. (E–F) Cells were treated with or without chondroitinase ABC (ABC) or heparinase III (HepIII), immunostained with anti-chondroitin sulphate (CS), anti-Δ-heparan sulphate (dHS) antibodies or the isotype controls for flow cytometry analysis. Histogram plot for single cell population of CS (E) and dHS (F) and the respective mean fluorescence intensity (MFI) are shown. Unstained untreated cells filled grey; isotype control of untreated cells, dashed line in black; untreated cells incubated with chondroitinase ABC prior to CS staining or without HepIII prior to dHS staining, grey line; untreated cells with CS-PE or dHS-PE, black line; cells exposed to DMSO stained with antibodies, blue line; cells exposed to mycolactone stained with antibodies, red line. MFI is presented as a % of untreated control (mean ± SEM of three independent experiments). **, p<0.01; ***, p<0.001; ****, p<0.0001. (G) Cells were lysed, treated with heparinase III and analysed by immunoblotting. HS neoepitopes were visualised with anti- Δ-heparan sulphate (dHS) antibody with the approximate migration of molecular weight markers in kDa. GAPDH used as loading control. Images are representative of three independent experiments. (H) Cells were incubated with HepIII, fixed and immunostained with anti-dHS antibody (green), permeabilised and labelled with TRITC-conjugated phalloidin (magenta). Nuclei were stained with DAPI (blue). Images are representative of two independent experiments. Scale bar = 50 μm. Statistical analysis was performed one-way ANOVA with Tukey’s (panel B) or Dunnett’s (panel E&F) correction for multiple comparisons in GraphPad Prism Version 9.4.1 and 10.2.3.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig4-figsupp1-v2.jpg)
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig4-figsupp2-v2.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Each intermediate product is shown in blue and alongside with its responsible enzyme(s). Candidates significantly downregulated (p<0.05) by mycolactone are shown in red, unchanged in black and undetected in grey. Unique peptide numbers detected in proteome are in purple (underlined).
 
 Detailed analysis of our dataset revealed that targeting of Golgi-localised proteins by mycolactone leads to significantly decreased abundance of multiple enzymes involved in both higher order N- and O-linked glycosylation (Figure 4C). However, the biggest impact is seen in GAG production, with the majority of the enzymes involved in GAG synthesis lost in mycolactone treated HDMECs (Figure 4D, Figure 4—figure supplement 3). All of the 23 proteins in the GAG biosynthetic pathway detected in our analysis are type II membrane proteins and 19 (82%) of these were downregulated by mycolactone (Figure 4D), affecting every step of glycosaminoglycan production (Figure 4—figure supplement 3). Three of the mycolactone-targeted proteins were involved in initial steps of keratan sulphate formation, four in common synthesis initiation of chondroitin sulphate (CS), dermatan sulphate (DS), and heparan sulphate (HS), six in chain elongation of CS/DS and HS (two and four, respectively), and six in epimerisation or sulfation processes that enhance the structural diversity of CS/DS or HS (Figure 4D, Figure 4—figure supplement 3).
 
 Given the importance of GAGs to endothelial function and the dramatic loss in GAG biosynthetic enzymes induced by mycolactone, we evaluated surface levels of the predominant endothelial GAGs, HS, and CS, using flow cytometry on HDMECs exposed to mycolactone for 24 hr. As a control, chondrointinase ABC was used to remove surface CS, resulting in fluorescence levels 60% lower than untreated cells. Remarkably, CS fluorescence intensity was even lower in cells exposed to mycolactone (Figure 4E). Similarly, using an antibody specific for a neoepitope of HS generated by heparinase III digestion, dHS, disrupted surface HS expression was observed in mycolactone-exposed cells (14.11 ± 7.40% vs. DMSO solvent control 105.30 ± 9.79%, p=0.0006, Figure 4F). In addition, HS-containing proteoglycans were detected by immunoblot using the anti-dHS antibody. Heparinase III digestion revealed an abundance and diversity of heparan sulphate containing proteins present in untreated or DMSO-exposed HDMECs that decreased progressively with mycolactone exposure (Figure 4G, Figure 4—source data 2, Figure 4—source data 3). By immunofluorescence, HS forms a mesh-like network around and between cells in untreated and DMSO solvent controls (Figure 4H). However, in HDMECs exposed to mycolactone, or ZIF-80, the HS-positive network was disrupted within 20 hr (Figure 4H). Collectively, this data confirms that Sec61 inhibition by mycolactone profoundly impairs the ability of endothelial cells to synthesise GAG chains.
 
-## Loss of galactosyltransferase II drives changes in endothelial cell morphology and monolayer permeability
+### Loss of galactosyltransferase II drives changes in endothelial cell morphology and monolayer permeability
 
 We reasoned that mycolactone-dependant depletion of any enzyme involved in the early stages of GAG biosynthesis would, on its own, be sufficient to explain the loss of HS and CS. Therefore, we validated its effect on the GAG linker building enzyme galactosyltransferase II (B3GALT6) by immunofluorescence. Endothelial B3GALT6 colocalised with the Golgi marker GOLGB1/Giantin in a perinuclear region in untreated cells and was unchanged in those exposed to the solvent control (0.02% DMSO; Figure 5A). B3GALT6 expression levels remained normal in HDMECs exposed to mycolactone for 6 hr but a clear reduction was seen after 12 hr (Figure 5A). Similar findings were made with biological mycolactone (Figure 5—figure supplement 1). Notably, ZIF-80 reduced B3GALT6 expression in a similar manner (Figure 5—figure supplement 2).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig5-v2.jpg)
+
+**Figure 5.:** (A) HDMECs exposed to 10 ng/mL mycolactone (Myco) or 0.02% DMSO for indicated times. (B–G) HUVECs transfected with si-B3GALT6 or si-negative control (Ctrl) oligos for 48 hr. (A–B) Cells were fixed, permeabilised and immunostained with anti-B3GALT6 and anti-GOLGB1 antibodies. B3GALT6 (green) and the Golgi apparatus (magenta) were visualised and nuclei stained with DAPI (blue). Scale bar = 50 μm (20 μm in the crop panels of A). Corrected total cell fluorescence of B3GALT6 in Golgi apparatus per cell was measured and presented as a value normalised to the mean value obtained from untreated control of each experiment. More than 30 cells per condition were measured per experiment. Images and quantification are representative of three independent experiments. (C–E) HUVECS exposed to 10 ng/mL mycolactone (Myco) or 0.02% DMSO for 24 hr one day post-transfection were imaged by an inverted microscope. (D) Length and width of each cell presented as a ratio. At least 100 cells were measured for each treatment. Values are representative of three independent experiments. (E) Rounded cell number per image presented as a % of total cell number per condition (values represent the mean ± SEM of three independent experiments). (F) Permeability of transfected HUVEC monolayers on inserts with 1 μm pores treated with 100 ng/mL IL-1β, 10 ng/mL mycolactone (Myco) or 0.02% DMSO for 24 hr was quantified. Fluorescence intensity of FITC-dextran in the receiver wells was measured and presented as a % where 100% is the value obtained from transwells lacking a cell monolayer, and 0% is untreated control wells (mean ± SEM of three independent experiments). (G) HUVECs were transfected with si-B3GALT6 or si-negative control (si-Ctrl) oligos. A scratch was introduced to the monolayer prior to the treatment (10 ng/mL mycolactone (Myco) or DMSO) and live cell imaging was performed with the zenCELL Owl incubator microscope every 15 min for 30 hr. Migration time in hours (hrs) to reform the monolayer is presented as mean ± SEM (n=3); wells with no visible monolayer at the end point were given a maximum value = 30. ns, not significant; *, p<0.05; ****, p<0.0001. Statistical analysis was performed using one-way ANOVA with Dunnett’s correction for multiple comparisons in GraphPad Prism Version 9.4.1 and 10.2.3 (all analysed panels).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** B3GALT6 (green) and GOLGB1 (magenta) were visualised and nuclei stained with DAPI (blue). Scale bar = 50 μm (20 μm in the crop panels). Corrected total cell fluorescence of B3GALT6 in Golgi apparatus per cell measured and presented as a value normalised to the mean value obtained from untreated control of each experiment. At least 60 cells per condition were measured. Data is representative of duplicate experiments. Statistical analysis was performed by one-way ANOVA with Dunnett’s correction for multiple comparisons in GraphPad Prism Version 9.4.1 and 10.2.3. ****, p<0.0001.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Images are representative of two independent experiments. Scale bar = 50 μm.
 
 In order to investigate whether loss of B3GALT6 was sufficient to induce the phenotypic changes we saw after mycolactone exposure, we knocked down B3GALT6 in HUVECs using siRNA. The reduction in B3GALT6 protein expression compared to cells transfected with non-targeting si-control RNA (Figure 5B) was comparable to that caused by mycolactone (~80%). B3GALT6 siRNA-treated cells demonstrated a similar elongated appearance (Figure 5C) and image analysis confirmed a significant increase in the ratio of cell length to width in HUVECs transfected with si-B3GALT6 RNA (Figure 5D). However, knockdown of B3GALT6 did not recapitulate the cell rounding phenotype (Figure 5E).
 
 We next investigated the potential contribution of B3GALT6 loss to the previously observed mycolactone-induced increase in HDMEC and human dermal lymphatic endothelial cell monolayer permeability (Hsieh et al., 2022). Exposure of mock-transfected HUVEC monolayers to 10 ng/mL mycolactone for 24 hr increased permeability to 23.13 ± 7.38%, an effect comparable to 100 ng/mL IL-1β (21.30 ± 3.48%; Figure 5E). B3GALT6 knockdown in HUVECs also led to a rise in monolayer permeability (10.08 ± 4.37% and 15.47 ± 1.27% of the values seen in empty wells, p=0.2371 and 0.0367, for two different oligonucleotides, Figure 5F). Interestingly, B3GALT6 knockdown did not reduce the rate of HUVEC migration in scratch assays (Figure 5G); instead the cells exhibited a slightly increased healing rate compared to controls.
 
-## Mycolactone rapidly depletes endothelial surface proteoglycans
+### Mycolactone rapidly depletes endothelial surface proteoglycans
 
 Since loss of GAGs did not explain all the phenotypes observed, we considered the so-called core proteins to which GAGs synthesised in the Golgi are covalently linked to form the proteoglycans. These can be secretory, plasma membrane or GPI-anchored proteins, all of which require the Sec61 translocon for their biogenesis. Our proteome revealed that seven HS, CS, and/or DS-carrying proteoglycans were significantly down-regulated after 24 hr mycolactone exposure (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig6-v2.jpg)
+
+**Figure 6.:** HDMECs exposed to 10 ng/mL mycolactone (Myco), 0.02% DMSO or 20 nM ZIF-80 for 24 hr or indicated times. (A) Heatmap showing representative data for genes encoding proteoglycans. Dual-colour coding for log2 fold change in response to Myco is shown. Possible attached glycosaminoglycan chains such as heparan sulphate (HS), chondroitin sulphate (CS) or dermatan sulphate (DS) shown. Candidates with one unique peptide detected indicated with asterisks, significantly downregulated (p<0.05) or not (p≥0.05) in bold or Italic, respectively. (B) Cells were harvested for flow cytometry analysis. Histogram plots for single cell population of HSPG2, GPC1, and BGN. Unstained untreated cells, filled grey; isotype control of untreated cells, dashed black line. untreated cells stained with antibodies, black line; cells exposed to DMSO stained with antibodies, blue line; cells exposed to mycolactone stained with antibodies, red line. MFI is presented as a % of untreated control (mean ± SEM of three independent experiments). **, p<0.01; ***, p<0.001; ****, p<0.0001. (C) Cells were fixed and immunostained with anti-perlecan antibody (green), permeabilised and labelled with TRITC-conjugated phalloidin (magenta). Nuclei were stained with DAPI (blue). Images are representative of three independent experiments. Scale bar = 50 μm. Statistical analysis was performed using one-way ANOVA with Dunnett’s correction for multiple comparisons in GraphPad Prism Version 9.4.1 and 10.2.3 (all analysed panels).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Cells were harvested for flow cytometry analysis. Histogram plots for single cell population of HSPG2 and GPC1. Unstained, untreated cells, filled grey; isotype control of untreated cells, dashed black line. untreated cells stained with antibodies, black line; cells exposed to DMSO stained with antibodies, blue line; cells exposed to mycolactone for 2, 6, and 24 hr stained with antibodies, pink, orange and red line, respectively. MFI is presented as a % of untreated control (mean ± SEM of three independent experiments). Statistical analysis was performed by one-way ANOVA with Dunnett’s correction for multiple comparisons in GraphPad Prism Version 9.4.1 and 10.2.3. ns, not significant; **, p<0.01; ***, p<0.001.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Cells were fixed and immunostained with anti-HSPG2 antibody (green), permeabilised and labelled with TRITC-conjugated phalloidin (magenta). Nuclei were stained with DAPI (blue). Scale bar = 20 μm, Data from one experiment.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Scale bar = 10 μm, data from one experiment.
 
 Using flow cytometry, we validated the changes in abundance of three cell surface proteoglycans; perlecan (HSPG2; secreted, HS/CS), glypican-1 (GPC1; GPI-anchored, HS/CS) and biglycan (BGN; secreted, CS/DS). Syndecan-2, a membrane-bound protein for which only one unique peptide was found in the proteome, could not be detected by flow cytometry. The most profound effects were seen for perlecan and glypican-1 (detection at 10.8 ± 4.8% and 28.8 ± 9.0% of untreated control, Figure 6B), while biglycan was partly reduced (43.7 ± 6.8% of untreated control). As the turnover rate of HS proteoglycans is rapid t1/2 = 3–4 hr in granulosa and 6.9 hr in macrophages (Owens and Wagner, 1991; Yanagishita and Hascall, 1984), we explored the rate of perlecan and glypican-1 loss at early time points in HUVECs. A~50% reduction in perlecan was evident after only 2 hr mycolactone treatment, reaching significance at 6 hr. Depletion of glypican-1 was slower, evident at 6 hr and reaching significance at 24 hr (Figure 6—figure supplement 1).
 
 Immunofluorescence staining of HDMECs showed abundant perlecan staining in control cells, particularly around intercellular junctions, but the staining rapidly decreased in response to mycolactone, with reduced expression detectable after 8 hr (Figure 5C). HDMECs exposed to ZIF-80 for 8 hr displayed similarly limited perlecan-positive junctional staining (Figure 6C), and the depletion was duplicated when biological purified mycolactone was compared to synthetic material (Figure 6—figure supplement 2), and also occurred when the endothelial cells were under shear stress (Figure 6—figure supplement 3). The parallel loss of GAGs and the proteoglycans that bear them means that the glycocalyx is severely disrupted by mycolactone.
 
-## Mycolactone depletes endothelial basement membrane components and their ligands
+### Mycolactone depletes endothelial basement membrane components and their ligands
 
 Taken together, our results so far show that mycolactone profoundly depletes the endothelial glycocalyx, due to the loss of both GAG and proteoglycan biosynthesis following Sec61 inhibition. However, while loss of GAG production affected permeability, it had less impact on adhesion and migration. We therefore next focused on the downregulated proteins in our dataset with GO classifications linked to these processes. Numerous adhesion molecules and basement membrane components were downregulated by mycolactone, including nidogen 1 (NID1), laminins and collagens (Figure 7A). Although the abundance of major BM component collagen IV was not significantly influenced by mycolactone, perhaps indicating a slow turnover rate, several ER-localised and/or secreted enzymes involved in collagen biosynthesis, were reduced as previously reported in murine fibroblasts (Gama et al., 2014). Laminins are the other key constituent glycoproteins of the BM and important binding partners for endothelial cell integrins. Our proteomic data suggested multiple laminins are affected by mycolactone. Laminin α4 and α5 are both common to all types of vessel wall, but α4 has a slightly higher turnover rate (Sixt et al., 2001). By immunofluorescence staining, laminin α4 was seen in perinuclear regions within cells and in the network bridging intercellular junctions between endothelial cells in untreated and DMSO control HDMEC (Figure 7B). After 16 hr of exposure to mycolactone, the perinuclear staining was absent and the laminin-positive network between cells had become disconnected (Figure 7B). Similar findings were made in biological purified mycolactone was compared to synthetic material (Figure 7—figure supplement 1). Loss of laminin α4 staining was also observed in endothelial cells exposed to mycolactone under shear stress (Fig Figure 7—figure supplement 2). The same striking decrease was also seen in HDMECs exposed to ZIF-80 (Figure 7B).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig7-v2.jpg)
+
+**Figure 7.:** (A–C) HDMECs exposed to 10 ng/mL mycolactone (Myco), 0.02% DMSO or 20 nM ZIF-80 for 24 hr or indicated times. (A) Heatmap showing representative data for genes encoding junctional or adhesion molecules, basement membrane components and proteins involved in platelet adhesion. Dual-colour coding for log2 fold change in response to Myco is shown. Candidate with one unique peptide detected is indicated with asterisks, significantly downregulated (p<0.05) or not (p≥0.05) in bold or Italic, respectively. (B) HDMEC were fixed and immunostained with anti-laminin α4 antibody (green), permeabilised and labelled with TRITC-conjugated phalloidin (magenta). Nuclei were stained with DAPI (blue). Images are representative of two independent experiments. Scale bar = 50 μm. (C) HDMEC were harvested for flow cytometry analysis. Histogram plots for single cell population of integrin β1, integrin β4, and laminin α5. Unstained, untreated cells, filled grey; isotype control of untreated cells, dashed black line. untreated cells stained with antibodies, black line; cells exposed to DMSO stained with antibodies, blue line; cells exposed to Myco stained with antibodies, red line. MFI is presented as a % of untreated control (mean ± SEM of three independent experiments). Statistical analysis was performed using one-way ANOVA with Dunnett’s correction for multiple comparisons in GraphPad Prism Version 9.4.1 and 10.2.3; ns, not significant; **, p<0.01; ***, p<0.001. (D–E) C57BL/6 J mice were infected with M. ulcerans bacteria using the footpad model (D) Alcian blue-periodic acid Schiff stain of mice that received vehicle control (PBS) (D1, D4) or intradermal injection of 1*105 colony forming units M. ulcerans at 21 (Grade 1; D2, D5) or 28 days (Grade 2/3; D3, D6-7) post-infection. Neutral glycans are indicated by purple staining and acidic glycans by light blue Blood vessel lumens are indicated by an “L”. Scale bars in D1-3: 2 mm; all others: 20 µm. (E) Representative transmission electron microscopy scan of grade 1 M. ulcerans infected murine footpad. The ultrathin section of glabrous skin shows the pericapillary interstitium slightly expanded, collagen (c) fibrils variably disaggregated and infiltrating macrophages (m). The endothelial cells (e) are reactive and exhibit cytoplasmic projections (*) whilst the basement membrane is multifocally disrupted (arrows). A thin layer of pericytes (p) is variably expanded by oedema. Scale bar: 2 μm.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Cells were fixed and immunostained with anti-LAMA4 antibody (green), permeabilised and labelled with TRITC-conjugated phalloidin (magenta). Nuclei were stained with DAPI (blue). Scale bar = 20 μm, Data from one experiment.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Scale bar = 10 μm. Data from one experiment.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Cells were lysed and subjected to immunoblotting with anti-FN1 antibodies. Each immunoblot intensity was normalised according to GAPDH and untreated controls. Statistical analysis was performed by one-way ANOVA with Dunnett’s correction for multiple comparisons in GraphPad Prism Version 9.4.1 and 10.2.3. ****, p<0.0001. Data from three independent experiments (mean ± SEM).
+
+![Figure 7—figure supplement 4.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig7-figsupp4-v2.jpg)
+
+**Figure 7—figure supplement 4.:** Cells were lysed and subjected to immunoblotting with anti-ITGA5 antibodies. Each immunoblot intensity was normalised according to GAPDH and untreated controls. Statistical analysis was performed by one-way ANOVA with Dunnett’s correction for multiple comparisons in GraphPad Prism Version 9.4.1 and 10.2.3. ns, not significant; **, p<0.01. Data from three independent experiments (mean ± SEM).
 
 The effect of mycolactone on the abundance of the laminin binding integrin β subunits β1 and β4 and laminin α5 in HDMEC were determined by flow cytometry (Figure 7C). After 24 hr, they were reduced to 45.0 ± 6.2%, 27.3 ± 7.7% and 15.6 ± 5.4% respectively of control levels (Figure 7C). In addition, the loss of expression of the basement membrane component fibronectin and cell surface integrin α5 were validated using immunoblot analysis; fibronectin levels decreased very rapidly showing >75% depletion after 4 hr exposure to mycolactone (p<0.01; Figure 7—figure supplement 3, Figure 7—source data 2, Figure 7—source data 3) whilst the level of integrin α5 decreased more slowly, reaching ~50% of control levels at 24 hr (p<0.01; Figure 7—figure supplement 4, Figure 7—source data 4, Figure 7—source data 5).
 
@@ -104,9 +216,29 @@ To determine whether the basement membrane was disrupted in vivo, we stained the
 
 To confirm the impact of infection on the basement membrane we used transmission electron microscopy (Figure 7E) to characterize the early vascular changes in the podal dermis of mice inoculated with M. ulcerans. Multiple transverse, oblique and longitudinal sections of arterioles, venules and lymphatics were examined. In Grade 1, the interstitium surrounding the capillary was expanded by electron-lucent granular material, pericyte processes were often separated and collagen fibrils close to the blood vessels increasingly disaggregated. The endothelial cells exhibited varying degrees of swelling and vacuolation with an irregular luminal surface including cytoplasmic undulation and projections. The subendothelial basement membrane appeared multifocally disrupted, expanded or discontinuous (Figure 7E, arrows). Taken together the data shows that even at early stages of infection, the endothelial basement membrane is compromised and the loss of constituent proteins caused by mycolactone is likely a major factor in these changes.
 
-## Exogenous laminin-α5 ameliorates mycolactone-driven cell detachment and impaired migration
+### Exogenous laminin-α5 ameliorates mycolactone-driven cell detachment and impaired migration
 
 Since laminins are secreted proteins, which are then deposited to form cell-associated extracellular matrix, we wondered whether exogenous provision of these molecules might protect mycolactone-exposed cells. We therefore coated tissue culture plates with laminin-111,–411 or –511, complexes that contain laminin β1γ1 in combination with laminins α1, α4, or α5 respectively. As expected (Di Russo et al., 2017), primary HDMECs efficiently re-attached to laminin-511-coated culture vessels, with very little reattachment to uncoated vessels (p=0.0020, Figure 8—figure supplement 1). Re-attachment to laminin-411 or the non-endothelial specific laminin-111 was also observed albeit to a lesser extent (p=0.1226 and 0.3365 compared to the uncoated wells, respectively). We then quantified the re-attachment of endothelial cells that had been pre-exposed to mycolactone for 24 hr compared to controls (Figure 8A). Remarkably, mycolactone-exposed cells re-adhered to specifically to laminin-511- (but not 411- or 111-) coated vessels with the same efficiency as controls (Figure 8A).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig8-v2.jpg)
+
+**Figure 8.:** Endothelial cells exposed to 10 ng/mL mycolactone (Myco) or 0.02% DMSO for 24 hr or indicated times. (A) Treated HDMECs were harvested and re-seeded to laminin-511, 411, 111 or uncoated plates. After an hour, unbound cells were washed away and attached cells were imaged and cell numbers per field are presented as mean ± SEM of three independent experiments. (B–D) Endothelial cells seeded onto laminin-511 or uncoated plates were exposed to mycolactone (Myco) or DMSO. (B–C) HDMECs were imaged every 30 min over 48 hr. Rounded or attached cells per condition were counted at 0, 24, 36, 48 hr. Data are presented as a % of total cell number of each condition (B) or normalised to the attached cell number counted at 0 hr (C) (mean ± SEM of three independent experiments). (D) A scratch was introduced to a HUVEC monolayer prior to treatment. The wounded area was imaged every 15 min for 24 h. Scale bar: 200 μm. Cells migrating into the original scratch area were counted at 0, 8, and 16 hr. Data are presented as cell count per scratch area (mean ± SEM of three independent experiments). ns, not significant; *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001. Statistical analysis was performed in GraphPad Prism Version 9.4.1 and 10.2.3 using two-way ANOVA with Tukey’s correction for multiple comparisons (all analysed panels; panels B&C also included the Geisser Greenhouse correction for sphericity).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Non-adherent cells were washed away and attached cells per field were counted. Data from three independent experiments (mean ± SEM). Statistical analysis was performed by a repeated measures one-way ANOVA with Dunnett’s correction for multiple comparisons in GraphPad Prism Version 9.4.1 and 10.2.3. *, p<0.05; ***, p<0.001.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** Rounded or attached cells per condition were counted at 0, 24, 36, 48 hr. Data are presented as a % of total cell number of each condition (Left panel) or normalised to the attached cell number counted at 0 hr (Right panel). Statistical analysis was performed by a two-way ANOVA with Tukey’s correction for multiple comparisons and the Geisser Greenhouse correction for sphericity in GraphPad Prism Version 9.4.1 and 10.2.3. Data from three independent experiments (mean ± SEM).
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** Their viability was assessed using CellEvent detection kit as described in Ogbechi et al., 2018. The number of live cells (negative for both active caspase 3/7 and PI) in three fields was determined and expressed as a proportion of total cells. Data from three independent experiments (mean ± SEM).
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/86931/elife-86931-fig8-figsupp4-v2.jpg)
+
+**Figure 8—figure supplement 4.:** The wounded area was imaged every 15 min for 24 hr. Scale bar: 200 μm. Cells migrating into the original scratch area were counted at 0, 8, and 16 hr. Data are presented as cell count per scratch area (mean ± SEM of three independent experiments). Statistical analysis was performed by a two-way ANOVA with Tukey’s correction for multiple comparisons in GraphPad Prism Version 9.4.1 and 10.2.3. ns, not significant; **, p<0.01; ***, p<0.001.
 
 We then investigated whether exogenous laminin-511 could ameliorate the cell rounding, attachment or migration phenotypes observed in response to mycolactone using time-lapse imaging of HDMECs. On uncoated wells, mycolactone caused the expected phenotypic changes (Figure 8B–C), and remarkably, exogenous laminin α5 significantly reduced mycolactone-driven cell rounding, even after 48 hr (7.7 ± 1.5% vs 17.6 ± 2.4%, p=0.0153, Figure 8B). Similarly, while the relative number of attached cells did not increase steadily with time as for the DMSO control (Figure 8C), laminin-511 coating prevented the decrease in attached cells seen between 36 and 48 hr in uncoated wells (p=0.0123). These effects were absent in laminin-411 and –111-coated wells (Figure 8—figure supplement 2). Laminin coating did not impact HDMEC survival in the presence or absence of mycolactone at 48 hr (Figure 8—figure supplement 3), although as mentioned before, cell death due to mycolactone is minimal prior to 72 hr (Ogbechi et al., 2015).
 
@@ -134,74 +266,546 @@ In summary, this study identifies loss/disruption of the endothelial glycocalyx 
 
 ## Materials and methods
 
-## Mycolactone and other translocation inhibitors
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, female)</td>
+      <td>C57BL/6 J</td>
+      <td>Charles River</td>
+      <td>RRID:MGI:3028467</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. ulcerans)</td>
+      <td>Mu_1082</td>
+      <td>Richard Phillips, KCCR, Ghana</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Human primary cells)</td>
+      <td>HUVEC</td>
+      <td>PromoCell</td>
+      <td>C-12200</td>
+      <td>Single Donor</td>
+    </tr>
+    <tr>
+      <td>Cell line (Human primary cells)</td>
+      <td>HDMEC</td>
+      <td>PromoCell</td>
+      <td>C-12210</td>
+      <td>Juvenile, Single Donor, male</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-fibrinogen(rabbit polyclonal)</td>
+      <td>Agilent DAKO</td>
+      <td>A0080RRID:AB_2894406</td>
+      <td>IHC: (1:3000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Biotinylated anti-rabbit IgG (horse polyclonal)</td>
+      <td>Vector laboratories</td>
+      <td>BP-100–50RRID:AB_3661924</td>
+      <td>IHC (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human Δ-HS (mouse monoclonal F69-3G10)</td>
+      <td>AMSBIO</td>
+      <td>370260 SRRID:AB_10892311</td>
+      <td>FACS (1:200)WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-chondroitin sulphate (mouse monoclonal CS56)</td>
+      <td>Merck</td>
+      <td>C8035RRID:AB_476879</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-perlecan (mouse monoclonal 7B5)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>13–4400RRID:AB_86311</td>
+      <td>FACS (1:200)IFA (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-glypican-1 (goat polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>AF4519RRID:AB_2232505</td>
+      <td>FACS (2.5 µg/106 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-integrin β4/CD104 (rat monoclonal 439-9B)</td>
+      <td>eBioscience</td>
+      <td>14-1049-82RRID:AB_1210460</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-integrin β1/CD29 (mouse monoclonal P4C10)</td>
+      <td>Novus Biologicals</td>
+      <td>NBP2-36561RRID:AB_3295906</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-syndecan-2 (rat monoclonal 305515)</td>
+      <td>Novus Biologicals</td>
+      <td>MAB2965RRID:AB_2182871</td>
+      <td>FACS (0.25 µg/106 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-biglycan (goat polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>AF2667RRID:AB_2065204</td>
+      <td>FACS (0.1 µg/106 cells)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-laminin α5 (mouse monoclonal CL3118)</td>
+      <td>Novus Biologicals</td>
+      <td>NBP2-42391RRID:AB_3306362</td>
+      <td>FACS (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-laminin α4 (sheep polyclonal)</td>
+      <td>Biotechne</td>
+      <td>AF7340RRID:AB_3644426</td>
+      <td>IFA (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Isotype control (mouse monoclonal IgG1κ P3.6.2.8.1)</td>
+      <td>Thermo Fisher Scientific(Invitrogen)</td>
+      <td>14-4714-81RRID:AB_470110</td>
+      <td>FACS (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Isotype control (mouse monoclonal IgG2b)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>MG2B00RRID:AB_2921189</td>
+      <td>As appropriate (same as test Ab)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Isotype control (polyclonal goat IgG)</td>
+      <td>R&amp;D Systems</td>
+      <td>AB-108-CRRID:AB_354267</td>
+      <td>As appropriate (same as test Ab)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Isotype control rat monoclonal IgG2bκ (eB149/10H5)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>14-4031-81RRID:AB_470098</td>
+      <td>As appropriate (same as test Ab)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Isotype control (mouse monoclonal IgM, clone PFR-03)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>MA1-10438RRID:AB_2536806</td>
+      <td>As appropriate (same as test Ab)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-F(ab’)2-anti-mouse IgG (rat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>12-4010-82RRID:AB_11063706</td>
+      <td>As appropriate</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC-anti-goat IgG (donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A16000RRID:AB_2534674</td>
+      <td>As appropriate</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC-anti-rat IgG (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>31629RRID:AB_228240</td>
+      <td>As appropriate</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-fibronectin (rabbit polyclonal)</td>
+      <td>Merck Millipore</td>
+      <td>AB1945RRID:AB_2231910</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-integrin α5 (mouse monoclonal IgG1κ A-11)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-166665RRID:AB_2280538</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-Anti-rabbit IgG (donkey polyclonal)</td>
+      <td>GE Healthcare</td>
+      <td>NA934VRRID:AB_2722659</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-Anti-mouse IgG (sheep polyclonal)</td>
+      <td>GE Healthcare</td>
+      <td>NA931VRRID:AB_772210</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-B3GALT6 (mouse polyclonal)</td>
+      <td>Bio-Techne</td>
+      <td>H00126792-B01PRRID:AB_3146818</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-giantin (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab80864RRID:AB_10670397</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594 anti-rabbit IgG (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A11012RRID:AB_2534079</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 anti-mouse IgG (donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A21202RRID:AB_141607</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488 anti-sheep IgG (donkey polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A11015RRID:AB_2534082</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 anti-mouse IgG (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A21235RRID:AB_2535804</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 647 anti-rabbit IgG (goat polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>A21244RRID:AB_2535812</td>
+      <td>IF (1:400)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Silencer SiRNA negative control No 1</td>
+      <td>ThermoFisher Scientific</td>
+      <td>AM4611</td>
+      <td>50 nM</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human B3GALT6 siRNA</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Assay ID#112321</td>
+      <td>50 nM</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human B3GALT6 siRNA</td>
+      <td>ThermoFisher Scientific</td>
+      <td>Assay ID#112322</td>
+      <td>50 nM</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human Laminin-111</td>
+      <td>BioLamina</td>
+      <td>LN111-02</td>
+      <td>5 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human Laminin-411</td>
+      <td>BioLamina</td>
+      <td>LN411-02</td>
+      <td>5 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human Laminin-511</td>
+      <td>BioLamina</td>
+      <td>LN511-0202</td>
+      <td>5 μg/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Human IL-1β</td>
+      <td>Gibco</td>
+      <td>PHC0813</td>
+      <td>100 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ImmPACT NovaRED peroxidase substrate kit</td>
+      <td>Vector Laboratories</td>
+      <td>SK4805</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>VECTASTAIN Elite ABC kit</td>
+      <td>Vector Laboratories</td>
+      <td>PK6100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dimethyl sulfoxide HYBRI-MAX</td>
+      <td>Merck</td>
+      <td>D2650</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Synthetic Mycolactone</td>
+      <td>Prof Yoshito Kishi, Harvard University</td>
+      <td>CAS: 222050-77-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biological Mycolactone</td>
+      <td>Dr Estelle Marion, INSERM</td>
+      <td>CAS: 222050-77-3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ipomoeassin F</td>
+      <td>Prof Wei Shi, University of Arkansas</td>
+      <td>CHEMBL4163767</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ZIF-80</td>
+      <td>Prof Wei Shi, University of Arkansas</td>
+      <td>None</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J (v1.52n)</td>
+      <td>Fiji</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zencell-owl software (version 3.3)</td>
+      <td>innoME GmbH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism Version 9.4.1 and 10.2.3</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ΔG prediction server v1.0</td>
+      <td>dgpred.cbr.su.se</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo v9</td>
+      <td>FlowJo.com</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JVenn</td>
+      <td>jvenn.toulouse.inrae.fr</td>
+      <td>RRID:SCR_016343</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Webgestalt</td>
+      <td>https://www.webgestalt.org/</td>
+      <td>RRID:SCR_006786</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Optimem</td>
+      <td>ThermoFisher Scientific</td>
+      <td>15392402</td>
+      <td>Serum free medium</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Escort IV transfection reagent</td>
+      <td>Merck</td>
+      <td>L3287</td>
+      <td>Transfection reagent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Endothelial cell growth medium 2</td>
+      <td>PromoCell</td>
+      <td>C-22011</td>
+      <td>Culture medium</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Osteosoft</td>
+      <td>Merck</td>
+      <td>1.01728</td>
+      <td>Decalcifying reagent for histopathology</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Heparinase III (EC4.2.2.8 from Flavobacterium heparinum)</td>
+      <td>Merck</td>
+      <td>H8891</td>
+      <td>Enzyme used at 1mU/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Chondroitinase ABC (EC 4.2.2.4 from Proteus vulgaris)</td>
+      <td>AMSBIO</td>
+      <td>100330–1 A</td>
+      <td>Enzyme used at 10mU/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Immobilon western chemiluminescence HRP substrate</td>
+      <td>ThermoFisher Scientific</td>
+      <td>11556345</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TRITC-conjugated phalloidin</td>
+      <td>Merck</td>
+      <td>FAK100</td>
+      <td>Stain for F-Actin used at 1:500</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>FITC-dextran 70 kDa</td>
+      <td>Merck</td>
+      <td>46945</td>
+      <td>Fluorescently-labelled dextran used for permeability studies used at 1:500</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mycolactone and other translocation inhibitors
 
 For all experiments in main figure panels, we used synthetic mycolactone A/B (Song et al., 2002), which was generously donated by Prof. Yoshito Kishi (Harvard University). However, we also compared synthetic mycolactone A/B to that extracted from cultures of M. ulcerans (which also makes mycolactone A/B) which was a kind gift from Dr Estelle Marion (INSERM). Here, M. ulcerans 1615 strain, was grown in Middlebrook 7H10 agar supplemented with Oleic Albumin Dextrose Catalase growth supplement. Bacteria were re-suspended in chloroform-methanol (2:1, v/v) and cell debris were removed after centrifugation. Folch extraction was realized by adding 0.2 volume water. The organic phase was dried and phospholipids were precipitated with ice-cold acetone. The acetone-soluble lipids were loaded on a thin layer chromatography plate and eluted with chloroform-methanol-water (90:10:1) solvent as mobile phase. The yellow band with a retention factor of 0.23 was scraped, filtered, evaporated and then resuspended in absolute ethanol. Mycolactone was stored in absolute ethanol at –20 °C in the dark. The amount of purified mycolactone was determined by high-performance liquid chromatography (HPLC) on a C18 column.
 
 Ipomoeassin F and ZIF-80 (Compound 2 in ref 30) were synthesised by Dr Wei Shi. All synthetic compounds were diluted from stock solutions in DMSO (biological mycolactone stock solution was in ethanol) and were used at the minimal inhibitory concentration, which was 10 ng/ml (~13 nM) mycolactone (Hall et al., 2022), 400 nM Ipomoessin F (Zong et al., 2015) and 20 nM ZIF-80 (Zong et al., 2020). To control for potential impact of the DMSO solvent on cell function, DMSO diluted equivalently was used; typically this was 0.02%.
 
-## Cell culture and treatment
+### Cell culture and treatment
 
 Juvenile, single donor human microvascular endothelial cells (HDMEC) and human umbilical vein endothelial cells (HUVEC) (Promocell) were cultured in hVEGF containing Endothelial cell growth medium 2 (Promocell) at 37 °C and 5% CO2. Cells were routinely seeded at a concentration of 1x104 /cm2 in 25 cm2 or 75 cm2 flasks for no more than 15 population doublings. Where used, laminin-511,–411 or –111 (BioLamina, Sweden) were coated on the surface of uncoated 96-well tissue culture plates at 5 µg/mL in PBS at 4 °C overnight, then washed with medium prior to further experiment. Viability assays used either resazurin dye (Sigma Aldrich) or CellEvent (Invitrogen) as described (Hall et al., 2022; Ogbechi et al., 2018).
 
-## Uniaxial shear stress induction
+### Uniaxial shear stress induction
 
 In order to mimic the conditions of flow, we used an established technique using an orbital shaker (Warboys et al., 2019). HDMEC were grown to confluency in 6-well plates then placed on an orbital shaker rotating at 150 rpm for 24 hr. Mycolactone or DMSO were added in triplicate and the cells cultured for an additional 48 hr maximum. All phase contrast and fluorescent images were taken towards the edge of the wells, where cells experience uniaxial shear stress (Warboys et al., 2019) using an Etaluma Lumascope 620.
 
-## Time-lapse imaging of live cells
+### Time-lapse imaging of live cells
 
 For time-lapse monitoring, endothelial cells were imaged every 30 min using a zenCELL Owl incubator microscope (innoME GmbH, supplied by LabLogic UK) for 48 hr. Time-lapse videos were generated with zencell-owl software (version 3.3, innoME GmbH), and analysed using their proprietary built-in algorithms of relative cell coverage, proportion of detached cells, and total cell numbers. In some cases, images of cells from certain time points were further analysed in Image J (v1.52n) to cell count of rounded cells per field, and/or the proportion and length/width ratio of elongated cells.
 
-## Scratch assay
+### Scratch assay
 
 Endothelial cells were grown to confluency in 24 well plates then single lines were scratched into the monolayer using a p20 pipette tip. Healing of HDMECs was monitored by imaging at various time points up to 24 hr. Each assay was carried out in triplicate wells. Wounded HUVECs were monitored every 15 min by zenCELL Owl microscope (innoME GmbH) for up to 30 hr.
 
-## Mycobacterium ulcerans mouse footpad infection model
+### Mycobacterium ulcerans mouse footpad infection model
 
 Mycobacterium ulcerans strain Mu_1082 was cultivated on Middlebrook 7H11 agar (Merck) supplemented with 0.2% glycerol (Thermo Fisher Scientific) and 10% OADC (Thermo Fisher Scientific). Several days before inoculation, bacteria were scraped from the plate and resuspended in 10 ml 7H9 medium (Becton Dickinson) containing 0.5% glycerol, 10% OADC and 0.2% Tween-80 (Merck) and incubated shaking with 3 µm glass beads for 3 days at 31 °C. To prepare the inoculum, cultures were allowed to stand for 10 min (to allow clumps to settle) then 1 ml culture was centrifuged at 13,000 x g for 2 min. The supernatant was removed, and the pellet resuspended in Dulbecco’s PBS (Thermo Fisher Scientific). After measuring the OD600, 3.33x107 bacteria were pelleted and resuspended in 10 ml PBS, to give an inoculum of ~105 cfu/footpad in a volume of 30 µl.
 
 All in vivo procedures were approved by the University of Surrey’s AWERB and UK Home office and met relevant animal welfare and biosafety regulatory standards (under PPL PP0344017). ARRIVE guidelines were followed, and the ARRIVE checklist is provided. In this publication we present new histological analysis of archived material from 8 to 9-week-old wild type C57BL/6J female mice (Charles River, UK), which had been inoculated intradermally with 30 μl of the bacterial suspension or vehicle control (PBS) to the left hind footpad, under gas anaesthesia. Mice were maintained under specific pathogen-free conditions at a temperature of 20–24 °C and humidity of 45 to 65% in individually HEPA filtered cages. The mice were acclimatised for >1 week before being transferred into the CL3, where they acclimatised for at least a further 48 hours before infection. They had free access to water and a standard balanced diet, standard bedding and enrichments including a tunnel and nesting material. Infected mice were housed separately from uninfected mice and blinding was not possible as the infection is clearly visible. Infection grade was assessed daily according to the method of Converse (Converse et al., 2011), where Grade 1 showed swelling of the metatarsal area (<50% increase compared to normal), Grade 2 showed greater swelling (50-150%) and Grade 3 had swelling further up the leg, visualised at the hock. No mice were excluded, experienced adverse events, or reached the humane endpoint (based on infection score, mobility, weight, and assessment of pain and secondary infection; or oedema extending into the “thigh” area and/or bedding adhering to the footpad suggesting footpad ulceration) in these experiments. Mice were killed by a schedule 1 method (cervical dislocation). The whole foot was then removed and fixed by immersion in 10% neutral buffered formalin for at least 24 hr.
 
-## Histological analysis of murine foot samples
+### Histological analysis of murine foot samples
 
 Fixed murine feet were decalcified using the EDTA-based Osteosoft solution (Merck) and then embedded in paraffin for histological analysis by Ziehl-Neelsen stain, Alcian blue-periodic acid Schiff stain, and immunohistochemistry (IHC) for fibrin(ogen). For IHC staining, 5 μm tissue sections on polylysine-coated slides were deparaffinised, endogenous peroxidase quenched, epitope unmasked with heated IHC citrate buffer (pH 6.0) (Merck) and blocked with 5% bovine serum albumin. The tissue sections were incubated with anti-fibrinogen antibody (A0080, DAKO) or matched isotype control overnight at 4 °C. Staining was then performed with biotinylated horse anti-rabbit IgG (Vector Laboratories) and VECTASTAIN Elite ABC kit and ImmPACT NovaRED peroxidase substrate and further counterstained with Harris Haematoxylin (ThermoFisher Scientific). Whole slide images were captured using the NanoZoomer slide scanner (Hamamatsu Photonics) and analysed using ImageScope software (Leica Biosystems) and ndp2.view software (Hamamatsu). Some photographs were taken with Micropix microscope camera (acquisition software Cytocam) attached to a Yenway CX40 laboratory microscope (Micropix).
 
-## Electron microscopy
+### Electron microscopy
 
 Glabrous skin from the infected hind paw of a mouse at grade 1 was dissected and freshly immersed in a fixative solution containing 4% Formaldehyde and 3% Glutaraldehyde. After 24 hr, the tissue area of interest was chosen via examination of semi-thin sections of 500 nm stained with toluidine blue. By using a Leica ultramicrotome with diamond knife, ultrathin sections of 100 nm were collected into copper grids and images were obtained by FEI Tecnai T12.
 
-## Membrane protein preparation
+### Membrane protein preparation
 
 HDMEC (1x107 cells) were seeded onto 15 cm dishes (Corning) and grown to 90% confluency then exposed to solvent carrier DMSO or 10 ng/ml mycolactone for 24 hr. Cells were washed four times in PBS and once in lysis buffer (10 mM Tris pH 7.5, 250 mM Sucrose, protease inhibitor cocktail). Cells were incubated for 20 min on ice in 10 ml lysis buffer then lysed in by 20 strokes dounce homogenisation. Lysates were centrifuged at 1000xg for 10 min at 4 °C then the post-nuclear supernatant was centrifuged at 100,000xg for 1 hr at 4 °C. Pellets were resuspended in 110 µl lysis buffer. Protein concentration was determined by BCA assay and 50 µg aliquots were subjected to acetone precipitation. Triplicate samples were prepared from three independent assays.
 
-## Proteomics
+### Proteomics
 
 Acetone precipitated proteins were reduced, alkylated and digested with trypsin before 9-plex isobaric TMT labelling according to the manufacturer’s protocol. Labelled peptides were separated by high pH reverse phase liquid chromatography, collecting 20 fractions which were then lyophilised, desalted and analysed by LC-MS/MS. TMT labelled samples were analysed by the SPS-MP3 method using an Orbitrap Lumos mass spectrometer. Spectra were searched using the Mascot search engine version (Matrix Science) and analysed using the Proteome Discovery platform. (Version 2.2 Thermo Fisher Scientific). NA values and low confidence proteins were removed, and data was normalised using each channel median. Differential expression analysis was carried out using Limma. Adjusted p values were calculated by the Benjamini-Hochberg method. UniProt and the Human Protein Atlas (https://www.proteinatlas.org) were used to determine protein location and characteristics. Over-representation of GO groups was assessed using Webgestalt (https://www.webgestalt.org/) (ref). Signal peptide ΔG values were obtained via the ΔG Prediction Server V1.0 (https://dgpred.cbr.su.se). The mass spectrometry proteomics data have been deposited to the ProteomeXchange Consortium via the PRIDE (Perez-Riverol et al., 2022) partner repository with the dataset identifier PXD037489.
 
-## siRNA transfection
+### siRNA transfection
 
 HUVECs (2x105 cells) were seeded onto a six-well plate. The next day, cells were washed with Opti-MEM (Gibco) and then kept in 1 ml medium. Each siRNA (Silencer siRNA assays ID#112321, #112322 for B3GALT6 or Silencer negative control No.1 siRNA AM4611; Invitrogen ThermoFisher Scientific) was diluted in Opti-MEM to 0.6 μM, mixed with equal volume of diluted Escort IV transfection reagent (L3287, Merck; final concentration 60 μg/mL). The transfection was performed onto HUVECs with ~40% confluency. Medium was changed back to normal endothelial culture medium 5 hr later. The transfectants received treatment 24 hr post transfection and were subjected to the respective analysis (e.g. image, sample harvest for immunochemical assays) after another 24 hr.
 
-## Flow cytometry
+### Flow cytometry
 
 Flow cytometry was carried out according to standard methods as described in Ogbechi et al., 2015 using an Attune NxT flow cytometer (ThermoFisher Scientific). Cells were detached with non-enzymatic cell dissociation solution (Merck) or briefly (for Itgb4 staining only) trypsinised with 0.04% trypsin/ 0.03% EDTA (PromoCell). For surface GAG detection, cells were treated with 1mU of heparinase III (EC4.2.2.8 from Flavobacterium heparinum) to expose the neo-epitope of heparan sulphate or with chondroitinase ABC (EC 4.2.2.4 from Proteus vulgaris) (AMS Biotechnology) for 1 hr at 37 °C prior to the staining procedures. Antibodies were Δ-HS (F69-3G10, AMS Biotechnology), CS (CS56, Merck), HSPG2/perlecan (7B5, ThermoFisher Scientific), glypican-1 (AF4519), integrin β4/CD104 (clone 439-9B, eBioscience), integrin β1/CD29 (P4C10, NBP2-36561), syndecan-2 (MAB2965), biglycan (AF2667), laminin α5 (NBP2-42391) from Biotechne. Isotype control mouse IgG1 (P3.6.2.8.1; 14-4714-81 from Invitrogen), mouse IgG2b (MG2B00), goat IgG (AB-108-C from R&D), rat IgG2b (14-4031-81), mouse IgM (PFR-03) and fluorophore-conjugated secondary antibodies goat anti-mouse IgG PE (12-4010-82), donkey anti-goat IgG FITC (A16000), and anti-rat IgG FITC (31629) were from ThermoFisher Scientific. The main population was gated by forward and side scatter plot of untreated cells using FlowJo (v9); among this, single cell population of 104 cells per condition was subjected to analysis. Mean fluorescence intensity was determined and presented as % relative to untreated control.
 
-## Immunoblotting
+### Immunoblotting
 
 Immunoblotting was carried out according to standard methods as described in Ogbechi et al., 2015. Endothelial cells were lysed either in RIPA buffer (where protein content-equalised post-nuclear fractions were used) or directly in ‘gel sample buffer’ (with sonication to degrade genomic DNA). Immunoblotting of commercial pre-cast gels (BioRad) used either Immobilon PVDF membranes (Merck) or nitrocellulose membranes (GE Healthcare). Antibodies used in this study were: Δ-HS (F69-3G10, AMS Biotechnology); anti-fibronectin (AB1945, Merck); anti-integrin α5 (sc-166665); anti-rabbit-HRP (GE Healthcare, NA934V), anti-mouse-HRP (GE Healthcare, NA931V). To visualise the HS neoepitope, protein lysate was digested with 1 mU of heparinase III (EC4.2.2.8 from Flavobacterium heparinum) prior to SDS-PAGE. Blots were developed using enhanced chemiluminescence with Immobilon western chemiluminescence HRP substrate (Thermo Fisher Scientific, 11556345) and imaged on a Fusion FX Imager (Vilber-Lourmatclean), which provides a warning if the areas of the image are saturated.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Immunofluorescent imaging was carried out according to standard methods as described in Hall et al., 2022. Cells were fixed with 4% paraformaldehyde in PBS. For visualising intracellular markers, cells were permeabilised wit 0.25% Nonidet P-40 alternative in NETGEL buffer (150 mM NaCl, 5 mM EDTA, 50 mM Tris-Cl, pH 7.4, 0.05% Nonidet P-40 alternative, 0.25% gelatin and 0.02% sodium azide). Antibodies used in this study were: B3GALT6 (H00126792-B01P, Biotechne), GOLGB1/Giantin (ab80864, abcam), Laminin α4 (AF7340, Biotechne), Δ-HS (F69-3G10, AMS Biotechnology), HSPG2/perlecan (7B5, Thermo Fisher Scientific), TRITC-conjugated phalloidin (FAK100, Merck), Alexa Fluor 594 goat anti-rabbit (A11012), Alexa Fluor 488 donkey anti-mouse (A21202) and Alexa Fluor 488 donkey anti-sheep (A11015) from Invitrogen/Thermo Fisher Scientific. For B3GALT6 intensity in the Golgi apparatus, the region of interest per cell was defined by giantin-positive staining using ImageJ selection tools. The integrated density of B3GALT6 fluorescence of selected regions and background reading were then measured and the difference between the two numbers were corrected total cell fluorescence.
 
-## Vascular permeability assay
+### Vascular permeability assay
 
 Endothelial cells were seeded on hanging cell culture inserts containing 1 µm pores with a polyethylene terephthalate membrane (Falcon). Treatment as above or with 100 ng/mL IL-1β (Gibco) were applied to both the insert and receiver wells. After indicated time, fluorescein isothiocyanate (FITC)-conjugated dextran (70 kDa, Millipore) was applied to each insert for 20 min. The fluorescence intensity of the solution in the receiver wells was then assessed by a fluorescent plate reader (FLUOstar Omega, BMG Labtech) with excitation/ emission wavelength at 485/530 nm. Fluorescence intensity was normalised to untreated control wells with an intact monolayer of endothelial cells and expressed as a % of subtracted value obtained from wells where no cells were seeded to the insert.
 
-## Adhesion assay
+### Adhesion assay
 
 HDMECs were harvested, incubated with anti-integrin β1 (clone P4C10, NBP2-36561, Biotechne) or isotype control mouse IgG1 (P3.6.2.8.1; 14-4714-81 from Invitrogen) for 5 min, then 1.5x104 cells were added to the wells of a 96-well plate that had been coated or not with different laminins as described above. After 1 hr, each well was washed three times with serum free medium and attached cells were imaged with a digital microscope camera (Micropix) attached to an AE31E inverted microscope (Motic). The cell count per image was determined using ImageJ.
 
-## Statistical analysis
+### Statistical analysis
 
 All data, with exception of the live-cell imaging using the ZenCell OWL (see above), were analysed using GraphPad Prism Version 9.4.1 and 10.2.3. Data were analysed using a one- or two-way ANOVA using an appropriate correction for multiple comparisons (either Dunnett’s, or Tukey’s). Some two-way ANOVAs also included the Geisser Greenhouse correction for sphericity.

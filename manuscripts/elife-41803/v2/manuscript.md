@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.41803.001 Transport of proteins across membranes is a fundamental process, achieved in every cell by the ‘Sec’ translocon. In prokaryotes, SecYEG associates with the motor ATPase SecA to carry out translocation for pre-protein secretion. Previously, we proposed a Brownian ratchet model for transport, whereby the free energy of ATP-turnover favours the directional diffusion of the polypeptide (Allen et al., 2016). Here, we show that ATP enhances this process by modulating secondary structure formation within the translocating protein. A combination of molecular simulation with hydrogendeuterium-exchange mass spectrometry and electron paramagnetic resonance spectroscopy reveal an asymmetry across the membrane: ATP-induced conformational changes in the cytosolic cavity promote unfolded pre-protein structure, while the exterior cavity favours its formation. This ability to exploit structure within a pre-protein is an unexplored area of protein transport, which may apply to other protein transporters, such as those of the endoplasmic reticulum and mitochondria.
+Transport of proteins across membranes is a fundamental process, achieved in every cell by the ‘Sec’ translocon. In prokaryotes, SecYEG associates with the motor ATPase SecA to carry out translocation for pre-protein secretion. Previously, we proposed a Brownian ratchet model for transport, whereby the free energy of ATP-turnover favours the directional diffusion of the polypeptide (Allen et al., 2016). Here, we show that ATP enhances this process by modulating secondary structure formation within the translocating protein. A combination of molecular simulation with hydrogendeuterium-exchange mass spectrometry and electron paramagnetic resonance spectroscopy reveal an asymmetry across the membrane: ATP-induced conformational changes in the cytosolic cavity promote unfolded pre-protein structure, while the exterior cavity favours its formation. This ability to exploit structure within a pre-protein is an unexplored area of protein transport, which may apply to other protein transporters, such as those of the endoplasmic reticulum and mitochondria.
 
 ## Introduction
 
@@ -33,6 +33,14 @@ The encapsulation and compartmentalisation of cells has necessitated the evoluti
 The bulk of protein secretion and membrane protein insertion is conducted by the ubiquitous Sec translocon. In bacteria, this comprises SecY, SecE and usually SecG, with the protein-conducting pore running through the centre of SecY. This complex can associate with either the ribosome for co-translational protein translocation (Blobel and Dobberstein, 1975) – the main pathway for nascent membrane protein insertion in bacteria (Müller et al., 2001; Jungnickel et al., 1994; Ulbrandt et al., 1997) – or with the motor protein SecA for post-translational secretion of pre-proteins (Hartl et al., 1990), which contain an N-terminal cleavable signal sequence. In the latter case, the fully synthesised pre-protein is maintained in an unfolded conformation by chaperones, such as SecB, and SecA itself (Hartl et al., 1990; Arkowitz et al., 1993). The protein must then fold during or after the translocation process.
 
 Post-translational translocation of the unfolded pre-protein occurs through a contiguous channel formed through SecA and SecY (Figure 1A–C; Zimmer et al., 2008; Van den Berg et al., 2004; Li et al., 2016; Bauer and Rapoport, 2009). The first step in this process is the ATP-dependent ‘initiation’ phase, whereby the pre-protein is targeted via its cleavable N-terminal signal sequence to SecA, and subsequently to the SecYEG complex (Fessl et al., 2018). Transfer of the signal sequence to SecY unlocks the protein-channel, enabling the intercalation of the rest of the pre-protein (Corey et al., 2016; Hizlan et al., 2012). Next, the pre-protein is fed through the SecY channel in a process driven by both ATP and the proton-motive-force (PMF) (Brundage et al., 1990), with each mechanism requiring specific interactions with cardiolipin (Gold et al., 2010; Corey et al., 2018; Hendrick and Wickner, 1991). Finally, the signal sequence is cleaved and the pre-protein is either folded or trafficked onwards.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/41803/elife-41803-fig1-v2.jpg)
+
+**Figure 1.:** Interior views of (A) SecYEβ (PDB 1RHZ; Van den Berg et al., 2004) and (B) SecYEG-SecA (PDB 3DIN; Zimmer et al., 2008) showing the cavities through the channel, with the protein in grey surface, the pre-protein pore constrictions in red (SecY) or purple (SecA) mesh, and the SecY plug in red helix. The image was produced by embedding the crystal structures in a POPC membrane, solvating with explicit waters and allowing the non-heavy atoms to relax through restrained molecular dynamics (MD) over 4 ps. Degree of solvation and water density in the channel to be considered for illustrative purposes only. (C) Cartoon representation of SecA-SecYEG with an engaged pre-protein, modelled from PDB 5EUL (Li et al., 2016). SecY is shown in light pink, SecE orange, and SecA light-blue, with the 2HF highlighted. The unfolded pre-protein is shown in dark blue surface, labelled ‘PP’, and the signal sequence as blue cartoon (‘SS’). The ATP analogue is coloured as orange (phosphate), blue (nitrogen) and red (oxygen) spheres. The approximate position of the membrane is marked. The cartoon is overlaid on a coloured schematic, used throughout the manuscript.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41803/elife-41803-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Showing how the pre-protein sits in the pore in the original crystal coordinates (Li et al., 2016), with SecY shown as white cartoon, the four pore ring residues (Ile-78, Ile-183, Ile-275 and Ile-404) shown as black sticks and red mesh, and a small section of the pre-protein shown in blue. (B) In white cartoon are the coordinates for SecA and SecYE kept from the original crystal structure (Li et al., 2016). Selected loops which were modelled here are shown as red cartoon and labelled as per Table 1. The modelled pre-protein is shown in blue: the signal sequence and section through SecY are from the crystal coordinates (Li et al., 2016); the section through SecA is labelled ‘Extended PP’. (C) Showing the known pre-protein interactions sites within SecA and SecYE. The SecY pore is shown as light blue spheres, and some of the key SecA pre-protein crosslinking sites in SecA as purple spheres (Bauer and Rapoport, 2009).
 
 The SecY pore is constricted centrally by a ring of six hydrophobic residues (Van den Berg et al., 2004) (Figure 1A; red mesh), which is flanked on the cytoplasmic and exterior sides by large solvated cavities, resulting in an hourglass-like configuration (Van den Berg et al., 2004) (Figure 1A). This pore ring is capped by the so-called ‘plug’ motif (Van den Berg et al., 2004), which sits on the external face of the pore (Figure 1A; red helix), and helps to seal the channel against undesirable ion flux (Park and Rapoport, 2011). Upon SecA binding, SecY rearranges to form a more open state, involving the relocation of the plug (Zimmer et al., 2008), likely controlled by the ATPase activity of SecA (Fessl et al., 2018; Allen et al., 2016). This state still contains solvated cytoplasmic and exterior cavities, but with a profoundly changed shape of the channel (Figure 1B).
 
@@ -44,59 +52,194 @@ Here, we extend this model to include structural changes within the channel and 
 
 ## Results
 
-## Asymmetric secondary structure formation of translocon-engaged pre-protein
+### Asymmetric secondary structure formation of translocon-engaged pre-protein
 
 To investigate the structural changes in the pre-protein during the translocation process, we remodelled the pseudo-translocation state crystal structure (PDB 5EUL (Li et al., 2016)) into a physiological complex (i.e. a non-fusion protein) containing SecA, SecYE and 76 residues of unfolded pre-protein, hereafter referred to as ‘SecA-SecYE-PP’; see Materials and methods section for full modelling detail (Figure 1—figure supplement 1B–C and Table 1). This structure was built into a solvated lipid bilayer, and simulated over 1 µs with SecA occupied by either ADP or ATP. The simulations were stable within the core SecY region (Figure 2—figure supplement 1) and, crucially, the SecY pore remained tightly formed around the bound pre-protein (Figure 2—figure supplement 2A).
 
+**Table 1.**
+ Details of remodelling performed on the crystal coordinates (Li et al., 2016).In the left column is the residue number, as per the input model. In the second column is the residue sequence associated with that region of protein. Next is the name used here to describe this region. Names match the regions shown in Figure 1—figure supplement 1B. The last column briefly outlines how the region was modelled. See the text for more detail.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Residues</th>
+      <th>Sequence</th>
+      <th>Name</th>
+      <th>Strategy</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>246–249</td>
+      <td>AEKD</td>
+      <td>SecA loop1</td>
+      <td>Built using Modeller</td>
+    </tr>
+    <tr>
+      <td>489–490</td>
+      <td>RG</td>
+      <td>SecA loop2</td>
+      <td>Built using Modeller</td>
+    </tr>
+    <tr>
+      <td>620–624</td>
+      <td>SENL</td>
+      <td>SecA loop3</td>
+      <td>Built using Modeller</td>
+    </tr>
+    <tr>
+      <td>643–683</td>
+      <td>TPREELPEEWKLDGLVDLINTTYLDEGALEKSDIFGKEPDE</td>
+      <td>HWD 1</td>
+      <td>Built from region in 3DIN</td>
+    </tr>
+    <tr>
+      <td>700–705</td>
+      <td>EEQFGK</td>
+      <td>HWD 2</td>
+      <td>Built from region in 3DIN</td>
+    </tr>
+    <tr>
+      <td>744–790</td>
+      <td></td>
+      <td>Substrate</td>
+      <td>Removed from SecA, made into new chain and extended through SecA by 30 residues</td>
+    </tr>
+    <tr>
+      <td>738–748</td>
+      <td>GGSGG</td>
+      <td>2HF</td>
+      <td>Added new region for end of 2HF, based on 3DIN</td>
+    </tr>
+    <tr>
+      <td>792–794</td>
+      <td>QTN</td>
+      <td>SecA loop4</td>
+      <td>Built using Modeller</td>
+    </tr>
+    <tr>
+      <td>144–145</td>
+      <td>GI</td>
+      <td>SecY loop1</td>
+      <td>Built using Modeller</td>
+    </tr>
+    <tr>
+      <td>207–213</td>
+      <td>QTFGGLN</td>
+      <td>SecY loop2</td>
+      <td>Modelled loop with Modeller based on Uniprot entry: QQFENVGEDLFLR</td>
+    </tr>
+    <tr>
+      <td>245–258</td>
+      <td>YAKRLEGRNPVGGH</td>
+      <td>C4 loop</td>
+      <td>Functionally important loop. Modelling based on 3DIN, including a short linker from Thermotoga maritima RITIQ to maintain 3D geometry.</td>
+    </tr>
+    <tr>
+      <td>268–272</td>
+      <td>PAGVI</td>
+      <td>SecY loop3</td>
+      <td>Built using Modeller, and sequence shortened to fit space</td>
+    </tr>
+    <tr>
+      <td>296–300</td>
+      <td>DVTLWI</td>
+      <td>SecY loop4</td>
+      <td>Built using Modeller</td>
+    </tr>
+  </tbody>
+</table>
+
 A range of hydrogen-bonded secondary structure motifs are observed within the SecY channel, mainly α-helix in the ATP simulation and 310-helix in the ADP simulation (Figure 2—figure supplement 2B). Strikingly, however, most of this secondary structure appears to form in the exterior cavity, with little on the cytosolic side of the pore ring (e.g. Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/41803/elife-41803-fig2-v2.jpg)
+
+**Figure 2.:** (A) A 1 µs MD snapshot of the pre-protein from the SecA-SecYE-PP complex with ATP bound, overlaid on the SecA-SecY schematic from Figure 1C. A region of α-helix, as computed by the dictionary of secondary structure of proteins (DSSP) and confirmed visually, is visible in the exterior cavity. The approximate position of the membrane is shown, and each nine residue stretch of pre-protein used for folding analyses, respectively in the exterior and cytoplasmic cavities, are indicated by dashed lines. (B) Deformation analysis of the pre-protein within SecA-SecYEG. SecA-SecY is shown as a schematic, and the pre-protein is shown as tube, color-coded and sized according to its deformation energy (low deformation blue and thin; high deformation red and wide). Analysis reveals three major sites with high deformation energy; at the beginning of the signal sequence, in the SecY cytoplasmic cavity, and in the SecA ring. The former is more pronounced in the ATP state, the latter two in the ADP-bound state (see Figure 2—figure supplement 4A). (C) The degree of pre-protein folding in the exterior and cytoplasmic cavities of SecY in the ADP and ATP states. Shown are the combined datasets for the mirrored and tandem substrates (see Materials and methods for details), in either a simple or more complex bilayer supplemented with negative phospholipids (PG and cardiolipin). Data are collected from the ATP (blue) or ADP (red) bound states. There is a marked difference in degree of asymmetry in the ATP data, but not the ADP (p<0.0001 and p=0.0690 respectively, from two tailed t-tests). Error bars are s.e.m. The breakdown of data between uniform bilayers and those supplemented with negative phospholipids can be seen in Figure 2—figure supplement 4E. (D) As panel C, but showing the degree of folding in bulk water; that is, not in the presence of translocon. These analyses used the same pre-protein starting coodinates as panel C. In both the ATP (light blue) and ADP (pink) data, there is no significant difference between the cytoplasmic and exterior regions of pre-protein. Reported p values are 0.15 and 0.98. Error bars are s.e.m. (E) Comparison of folding data set with the wild-type signal sequence (blue; as per panel C) and a defective signal sequence (SSΔ4; green). The introduction of a defective signal sequence significantly increases the degree of pre-protein secondary structure in both the cytoplasmic and exterior cavities (p=0.021 and p=0.002). The breakdown of data can be seen in Figure 2—figure supplement 4B.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41803/elife-41803-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** On the left is the RMSD of all of the Cα atoms, which is the standard RMSD analysis. In these simulations, the RMSD is reasonably high, presumably as a result of the high degree of structural remodelling required. Root-mean-squared-fluctuation analyses reveal a very high degree of fluctuation in a specific SecA loop (green data), which affects the global analysis. The RMSDs of SecY alone – which is the region of interest in this study – are much lower and more stable (orange). The SecA 2HF is also highly stable (gold).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/41803/elife-41803-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) As Figure 1—figure supplement 1A, but of the pore ring in the ADP- and ATP-bound simulations, using a 1 μs snap shot as an illustration. The pore remains tightly clasped around the pre-protein, making it a good system to study cross-pore asymmetry. (B) Following helix formation in the pre-protein during equilibrium MD. The raw data is shown in grey, and will either have a value of 0 (no helix), 3 (310-helix) or 4 (α-helix). On the right are examples of each state, taken from the same region of pre-protein in the ATP and ADP simulations. To increase the clarity of the data, a Savitzky-Golay smoothed data line is shown in red. After 100 ns the ATP state largely switches between 310-helix and α-helix, whereas the ADP state samples the no-helix conformation considerably.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/41803/elife-41803-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Deformation energy plotted as a function of residue index in substrate, starting from N-terminus of signal peptide (ATP state in blue, ADP state in red). The position in relation to the pre-protein is shown in the blue schematic above the graph. Three distinct regions with higher deformation energy are clearly visible and highlighted by ovals; in the signal sequence (‘SS’), the cytoplasmic cavity (‘cyto’) and SecA ring. These data are used for visualisation in Figure 2B. (B) The degree of hydrogen bonded secondary structure in the 18 residue stretch of glycine residues through the SecY channel, as determined using the dihedral-based DSSP analysis. The y-axis shows the number of residues considered secondary structure in each frame of the simulation. Note that the higher degree of secondary structure in the ATP-bound state meant that additional simulation time was required (top). Black circles mark the times that snapshots were taken for further analyses.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/41803/elife-41803-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Comparison of folding data gathered from the pre-protein in a mirrored (ELERQHTFAAFTHQRELE) or tandem (ELERQHTFAELERQHTFA) arrangement. (B) The degree of pre-protein folding in the exterior and cytoplasmic cavities of SecY, for the simulations of SecA-SecYE-PP with a defective signal sequence (SSΔ4), starting at three different snapshots (1 = 90 ns, 2 = 100 ns, 3 = 110 ns). Error bars are s.e.m, and reported significance is from two-tailed t-tests, where p=0.003 and p=0.002; p=0.938 for run 3. (C) View of SecA-SecYE complex with ATP following coarse-grained simulation and back mapping to an atomistic description. Show in spheres are acidic lipids (i.e. phosphatidylglycerol and cardiolipin) in contact with the complex. The other lipids and solvent have been omitted for clarity. (D) As panel C, but for the ADP-bound complex. (E) Comparison of folding data from systems in a simple (i.e. containing only 1-palmitoyl-2-oleoyl-sn-glycero-3-phosphocholine) membrane (dark blue and red) and a membrane containing acidic lipids (light blue and pink – labelled ‘PG/CDL’). There is no significant impact of lipid composition on pre-protein secondary structure formation; p-values=0.95, 0.06, 0.49 and 0.46 from a two tailed t-test.
 
 Deformation analysis, which reports on local conformational flexibility in structural ensembles (see Materials and methods including Figure 2—figure supplement 3A for details), reveals a high degree of pre-protein perturbation within SecY, particularly in the cytoplasmic cavity (Figure 2B). As the pre-protein is observed to fold primarily in the exterior cavity, this suggests that Sec may be actively keeping the stretch of pre-protein in the cytosolic cavity unfolded.
 
-## Quantification of cross-translocon pre-protein secondary structure
+### Quantification of cross-translocon pre-protein secondary structure
 
 To quantify the pre-protein folding more precisely, we carried out a series of additional simulations. Analysis of the initial trajectories (Figure 2—figure supplement 2B) suggests that a time scale of 110 ns is sufficient to kinetically sample helix formation. This matches time scales previously reported for model protein secondary structure formation (Davis et al., 2015), although it should be noted that any potential slower folding events, in the µs range, will not be sampled. We set up 36 independent simulations of ~110 ns (about 4 μs in total) per nucleotide state, varying both lipid composition and pre-protein sequence orientation (see Materials and methods for full details).
 
 The simulations for each nucleotide state were analysed for hydrogen-bonded secondary structure in the 18 residue stretch of pre-protein through SecY. In the ATP-bound state there is >10 fold more pre-protein structure apparent in the exterior cavity compared to the cytoplasmic cavity (Figure 2C; blue data). In contrast, in the ADP-bound state no significant asymmetry with respect to pre-protein secondary structure was observed (Figure 2C; red data). This suggests an ATP-dependent and highly asymmetric influence of the translocon on the folded state of the pre-protein; set up to permit folding on the exterior side of the channel only.
 
-## Pre-protein folding asymmetry is enforced by the translocon
+### Pre-protein folding asymmetry is enforced by the translocon
 
 Further simulations were conducted to determine if this observed asymmetry was caused by the translocon, or was an intrinsic property of the chosen polypeptide sequence. The coordinates for the unfolded 18 residue stretch were extracted from the simulation and built into separate water boxes, without either SecA-SecYE or the membrane. Mild positional restraints were added to the ends of the peptide to replicate the constraints applied by the translocon and the bound signal sequence. These systems were then treated in the same way as the SecA-SecYE-PP simulations (i.e. simulated for 110 ns and each half analysed for secondary structure). The data show a small difference between the ADP and ATP states, likely a result of the mild positional restraints on the ends of the polypeptide, added to keep the substrate in a relatively transport-like conformation. This does not affect the primary outcome from this experiment, which is that no significant asymmetry in pre-protein formation is observed in either the simulation sets, be they derived from the ADP or ATP simulations (Figure 2D).
 
 Therefore, the asymmetric secondary structure formation must be a consequence of the ATP-bound translocon, rather than the intrinsic properties of the pre-protein per se.
 
-## Unfolding of the pre-protein requires the correct signal sequence
+### Unfolding of the pre-protein requires the correct signal sequence
 
 Next, we conducted a critical control experiment, by analysing the dependence of asymmetric pre-protein structure on the interaction with a functional signal sequence; required to ‘unlock’ the complex (Corey et al., 2016). For this, we constructed a system in which the engaged pre-protein possesses a defective signal sequence (‘SSΔ4’; missing residues 5–9), but retains its strategic position in contact with the lipid bilayer (Hizlan et al., 2012; Briggs et al., 1986; McKnight et al., 1991). Analysis of this complex reveals that the ATP-induced cross-channel asymmetry is somewhat reduced (Figure 2C and Figure 2—figure supplement 4B). However, more interestingly the degree of pre-protein secondary structure is significantly higher in both cavities; particularly in the cytosolic cavity (Figure 2E). Thus, a productive interaction of the signal sequence with the ATP-associated translocon seems to be required to reduce pre-protein folding in the cytosolic cavity. This suggests that the ability of the translocon to asymmetrically influence the folding propensity of the translocating pre-protein is subject to both activation by ATP and the signal sequence.
 
-## No apparent role for specific protein-lipid interactions
+### No apparent role for specific protein-lipid interactions
 
 Given the known dependency of protein secretion on anionic phospholipids, particularly cardiolipin (Gold et al., 2010; Corey et al., 2018; Hendrick and Wickner, 1991), we decided to look at their effects on the observed translocon-induced asymmetry. The data presented in Figure 2C combine simulations with different lipid compositions, including data in the presence of physiological concentrations of phosphatidylglycerol (PG) lipid and cardiolipin. For these, coarse-grained simulations were run on the post-1 µs ATP and ADP snapshots using the Martini force field (Monticelli et al., 2008; Marrink et al., 2007). Following 1 µs of simulation, multiple protein-lipid specific interactions were identified (Figure 2—figure supplement 4C–D), as per previous data (Corey et al., 2018). These systems were then converted back to an atomistic description (Stansfeld and Sansom, 2011) for further analyses.
 
 Comparison of pre-protein folding in the presence and absence of PG/cardiolipin reveals no significant difference for any of the cavities (Figure 2—figure supplement 4E). Therefore, there appears to be no role for specific protein-lipid interactions in generating a cross-membrane pre-protein folding asymmetry.
 
-## Perturbed translational dynamics of water molecules within the SecY translocon
+### Perturbed translational dynamics of water molecules within the SecY translocon
 
 The thermodynamics and kinetics of protein folding can be affected by perturbed water dynamics (Lucent et al., 2007), and water molecules within SecY have previously been shown to exhibit reduced mobility (Capponi et al., 2015). Therefore, to examine the role of water in the pre-protein folding process, 31 structural snapshots were extracted from each of the 1 µs SecA-SecYE-PP ATP and ADP simulations. Short simulations were run to model the water dynamics accurately (see Materials and methods for details).
 
 To measure the translational water dynamics, mean squared displacement (MSD) calculations were employed (as per Capponi et al., 2015; see Materials and methods for details). When applied to the water molecules through SecA-SecYE-PP, there is a clear pattern of perturbation throughout SecY, with the water dynamics at the centre of the channel severely restricted (Figure 3 and Figure 3—figure supplement 1). Comparison of the water molecules on either side of the pore reveal an asymmetry in the ATP-bound system – that is a higher degree of translational diffusion (disorder) in the cytoplasmic cavity than the exterior cavity – but not in the ADP-bound system.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/41803/elife-41803-fig3-v2.jpg)
+
+**Figure 3.:** (A) Cartoon showing the prism of waters analysed for translational dynamics. The waters are shown as coloured dots, coloured according to degree of diffusion, with blue slowest and red highest. Note that whilst the membrane and solvent outside of this prism are missing from this figure, they were present in the simulation. (B) MSD data of the waters along the length of the protein. The average MSD was calculated for each 0.5 nm horizontal slice, the data fitted to a power law equation, and the power value ('A') for each slice was averaged across all 31 simulations. Here, the average for each slice is shown, with s.e.m as error bars. Both the ATP and ADP simulations are perturbed in the centre of SecY, but the waters in the ATP-bound complex are perturbed in an asymmetric manner.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41803/elife-41803-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** These plots represent the time evolved MSD for the waters in each slice along the protein (coloured from purple to red). After about 10 ps, the data fits a simple power law function – highlighted with a dotted black line. Note that these data are averaged over the 31 time points. The perturbation of water dynamics at the centre of the pore is clearly visible in the green traces.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/41803/elife-41803-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Average MSD values along the length of the SecYEβ channel in isolation (Serek et al., 2004). Data analysed as per Figure 3B. This data agrees with previously published data (Capponi et al., 2015), and shows no asymmetry across the channel. (B) The raw MSD data for one simulation set (from the 1 µs time point) plotted onto the oxygens for each water molecule. The dark blue waters around SecY represent a lower MSD than the green/yellow waters in the bulk solvent.
+
 Additional calculations were run for the translocon in a resting state, without pre-protein (Figure 3—figure supplement 2), which resembles the SecA-SecYE-PP in the ADP state, with no asymmetry between cavities. As with the analysis of pre-protein secondary structure formation, these data mark the cytoplasmic cavity of the ATP and pre-protein activated translocon as unusual in its environment. This observation suggests that the arrangement and ordering of waters within the SecY translocon may be contributing to the formation of pre-protein structure, with this effect – and hence the degree of pre-protein structure – lessened in the cytoplasmic cavity when bound to ATP.
 
 However, it must be noted that it is unclear as to whether the perturbed water dynamics are affecting pre-protein folding/unfolding, or are a consequence of the folded state present.
 
-## Nucleotide-dependent variation in the geometry of the exterior and interior cavities of the translocon
+### Nucleotide-dependent variation in the geometry of the exterior and interior cavities of the translocon
 
 The conformational entropy of an extended polypeptide is reduced when confined, which should favour more compact, folded states (Zhou and Dill, 2001). This raises the possibility that the ATP-driven opening of the SecY translocon (Allen et al., 2016) might have a direct impact on pre-protein secondary structure, whereby opening of the SecY cavities could promote pre-protein unfolding.
 
 To test this, the cavity sizes of the translocon associated with either ATP or ADP were assessed throughout the 1 µs simulations. The pre-protein was removed from the translocon and the dimensions of the cavities on either side were measured for 31 structural snapshots from each simulation using the HOLE program (Smart et al., 1996). For consistency, the analyses were initiated at a set point between the residues Ile-78 and Ile-275 at the centre of the SecY pore (see Figure 1—figure supplement 1A). The cavity volumes were measured for 6.5 Å on either side of the pore, towards the cytosol (inside) or exterior (Figure 4A; Figure 4—figure supplement 1A). The relative sizes of these defined regions reveal an asymmetry between cytoplasmic and exterior cavities in the ATP-bound simulations (Figure 4B; blue data), but not in the ADP-bound simulations (Figure 4B; red data). The ATP cytoplasmic cavity is the outlier, being at least 10% larger than any of the others. This in turn reduces the degree of pre-protein contact with SecY (Figure 4C), suggesting a role in SecY-pre-protein contact in regulating secondary structure formation.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/41803/elife-41803-fig4-v2.jpg)
+
+**Figure 4.:** (A) Representative HOLE data used for averaging analysis. The protein backbone is shown as coloured trace and the calculated cavity as blue mesh. The central coordinate from the HOLE program is shown as a green line. (B) Quantified cavity sizes from the ATP and ADP simulation data, plotting the median and interquartile range. The difference between the exterior and cytoplasmic cavities was tested against an unpaired two-tailed t-test, reporting p values of < 0.0001 and 0.1264 for ATP and ADP, respectively. (C) Degree of contact between the pre-protein and SecY channel, defined as inter-residue distances of less than 0.3 nm, averaged over all of the residues. Correlated with a wider cavity, there is significantly less contact in the cytoplasmic cavity in the ATP-bound state (p<0.0001), but not in the ADP-bound stage (p=0.1404).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41803/elife-41803-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Quantified cavity sizes (i.e.cavity radius in Å) from the ATP- and ADP-bound SecA-SecYE-PP simulations along the z-axis of the SecY channel. Used for secondary analysis in Figure 4B. All traces are shown in grey, with a running average plotted in red. (B) As panel A, but for simulation data of ATP and ADP bound SecA-SecYEG complexes without pre-protein, where models were built based on PDB 3DIN (Zimmer et al., 2008), and simulated as described previously (Allen et al., 2016). (C) Secondary analysis of the data from panel B. Plotted are the median and interquartile range. The difference between the exterior and cytoplasmic cavities was tested against an unpaired two-tailed t-test, reporting p values of < 0.0001 and 0.5672 for ATP and ADP, respectively.
+
 The pre-protein folding analyses (above; Figure 2) do not reveal the structural basis for asymmetric control of pre-protein folding; specifically, is it a consequence of promoted folding at the exterior, or prevention at the cytosolic cavity? The geometric analyses here suggest it is the latter, caused by a widening of the cytoplasmic cavity in the ATP-bound state.
 
-## Cavity size regulation occurs in the absence of pre-protein
+### Cavity size regulation occurs in the absence of pre-protein
 
 To test whether the ATP-driven increase in size of the cytosolic chamber (Figure 4) is dependent on pre-protein, we analysed previously produced simulation data (Allen et al., 2016) of the SecA-SecYEG complex (PDB code 3DIN (Zimmer et al., 2008)) with ATP or ADP bound, without pre-protein. Cavity size analyses reveal the same effect as described above: that is the cytoplasmic cavity of SecY is much larger than either the periplasmic cavity in the ATP-bound state or either cavity in the ADP-bound state (Figure 4—figure supplement 1B–C). Evidently, the cytoplasmic cavity opens up in response to ATP irrespective of the presence of pre-protein.
 
-## Validation of MD simulations showing asymmetric SecY cavity size by EPR
+### Validation of MD simulations showing asymmetric SecY cavity size by EPR
 
 Experimental measurement of localised and transient secondary structure changes within a highly dynamic Sec-engaged pre-protein is a challenging prospect, arguably beyond our current capabilities. Instead, we chose to experimentally analyse the observed asymmetry in SecY cavity sizes. To this end, we applied the EPR technique of double electron-electron resonance (DEER; otherwise known as PELDOR) spectroscopy, which allows detailed conformational sampling of the distances between two spin labels attached at specific positions to a molecule (Milov et al., 1981; Martin et al., 1998; Jeschke, 2012).
 
@@ -104,13 +247,33 @@ Firstly, we conducted MD simulations of the T. thermophilus SecYEG resting state
 
 Next, we recreated the effect of SecA-ATP binding through targeted MD, using SecY from the SecA-SecYEG crystal structure (Zimmer et al., 2008) as a template, and with the targeting force constants being increased every 100 ps over 800 ps (Figure 5—figure supplement 1C). This allowed us to produce an ensemble of conformations of spin-labelled complexes based on the experimental open structure. Comparing the two ensembles, we observe that transitioning to the open structure reduces the inter-label distance substantially (Figure 5A–C). This is mainly caused by resizing of the central cavity, which permits one of the spin labels to flip inside (Figure 5B). Note that the cavity sizes are asymmetric in the open ensemble but not in the resting state (Figure 5D) exactly as for the other simulation sets (Figure 4B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/41803/elife-41803-fig5-v2.jpg)
+
+**Figure 5.:** (A) Snapshot from the resting spin-labelled SecYEG simulation, showing the protein as grey surface and slabbed to show the interior of the channel. The spin label carbons are shown as cyan sticks, with the spectroscopically-relevant NO group in blue and red spheres. The disulphide bond to the SecY cysteine residues is shown in yellow. A predicted DEER distance is shown as a red line. (B) As panel A, but of the open channel. Upon channel widening, the MTS is able to flip into the channel (yellow arrow), resulting in a much shorter predicted DEER distance C) Histograms of intra-MTS distance data for the resting MD simulation (red) and the opened simulation (blue), overlaid with a normal distribution. The x-axis has been set as per panel F. (D) HOLE cavity analysis of the open and resting channel with MTS labels attached. The systems based on the open structure exhibit an asymmetry with respect to cavity size (blue data), whereas simulations based on the closed PDB exhibit no asymmetry (red). (E) Background corrected DEER time traces of spin-labelled SecYEG alone (green) and with excess SecA in the presence of either ADP (red) or AMPPNP (blue). The dipolar coupling between the nitroxide spin labels is evident in all three traces as modulations on the intensity of the detected spin-echo. This is almost the same for the spin-labelled SecYEG with SecA/ADP or without. (F) Distance distributions obtained from DeerAnalysis2016 (Jeschke et al., 2006) from the DEER time traces shown in E. The results for spin-labelled SecYEG with SecA and AMPPNP are, on average, at a shorter distance with a broader distribution than the overlapping distance distributions for spin-labelled SecYEG alone or with SecA/ADP. More information on the implementation of DeerAnalysis is given in the Supporting Information.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/41803/elife-41803-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Views of parameterised spin-label (MTS; S-(1-oxyl-2,2,5,5-tetramethyl-2,5-dihydro-1H-pyrrol-3-yl)methyl methanethiosulfonate). The molecule is shown as lines and coloured according to atom type, with hydrogens shown as white points. Multiple simulation frames from 100 ns of simulation are overlaid and reveal the geometric stability of the molecule. (B) Snapshot from the resting spin-labelled SecYEG simulation, showing the protein as cartoon, coloured as per Figure 1C. The NO of the spin labels are shown as red and blue spheres, with the surface of the entire spin label shown in light shade. (C) RMSD over time as the systems from panel B are subjected to targeted MD. Here, the alpha carbons are compared to the alpha carbons of SecY from the opened SecA-SecYEG complex (Zimmer et al., 2008). Each dotted black line represents the addition of a stronger restraining force. After 800 ps, the RMSD is stable and very low, and the channel is now in an opened conformation. (D) As panel B, but of the opened channel. Upon channel widening, the MTS is able to flip into the channel, resulting in a much shorter predicted DEER distance.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/41803/elife-41803-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Expansion of the DEER results shown in Figure 5 of the main text where spin-labelled SecYEG does not have additional cardiolipin added. Top panel: DEER time traces for spin-labelled SecYEG with 5 × excess SecA and the non-hydrolysable ATP analogue AMPPNP (blue) or ADP (red). The fitted background functions are overlaid in dash cyan and correspond to a fifth order polynomial fit on the data (using DeerAnalysis2016 (Jeschke et al., 2006)) with a 129 ns zerotime and 800 ns cut from the end of the data. Middle panel: Background corrected DEER time traces with the distance distribution fits from Tikhonov Regularization shown by dash cyan. Bottom panel: Distance distributions from the DEER shown above calculated using the default best fit given by DeerAnalysis2016 with Tikhonov Regularization parameters 38 (blue) and 46 (red). The results are presented in the main text. (B) DEER results for spin-labelled SecYEG with SecA and SecA/ADP and additional cardiolipin. Top panel: DEER time traces for spin-labelled SecYEG with 5 × excess SecA alone (green) or with ADP (red). The fitted background functions are overlaid in dash cyan and correspond to a fifth order polynomial fit on the data with a 129 ns zerotime and 800 ns cut from the end of the data. Middle panel: Background corrected DEER time traces with the distance distribution fits from Tikhonov Regularization shown by dash cyan. Bottom panel: Distance distributions from the DEER shown above calculated in DeerAnalysis2016 with Tikhonov Regularization parameters 49 (green) and 46 (red). Taken with the data from A the results show that, for these spin labelling positions, there is no difference in conformation between SecYEG alone, with SecA or with SecA and ADP. (C) DEER results for spin-labelled SecYEG with excess or equivalent SecA, AMPPNP and with or without additional cardiolipin. Top panel: DEER time traces for spin-labelled SecYEG with 5 × excess SecA with additional cardiolipin (blue) and AMPPNP, equivalent SecA and additional cardiolipin (magenta) with AMPPNP and with 5 × excess SecA and no additional cardiolipin but also AMPPNP (mustard). The fitted background functions are overlaid in dash cyan and correspond to a fifth order polynomial fit on the data with a 129 ns zerotime and 800 ns cut from the end of the data. Middle panel: Background corrected DEER time traces with the distance distribution fits from Tikhonov Regularization shown by dash cyan. Bottom panel: Distance distributions from the DEER shown above calculated in DeerAnalysis2016 with Tikhonov Regularization parameters 38 (blue), 188 (magenta) and 140 (mustard). The distributions are compared to the data spin-labelled SecYEG with excess SecA, additional cardiolipin and ADP shown in A (red). These data show that cardiolipin is essential to the gating and that an equivalent ratio of SecA to SecYEG at the concentrations used is not enough to move the population of SecYEG to predominantly open.
+
 Experimental DEER spectra were then obtained by attaching spin labels at the equivalent sites on E. coli SecYEG, and measuring the inter-nitroxide distance (Martin et al., 1998; Jeschke, 2012; Haugland et al., 2016; Jeschke et al., 2006; Todd et al., 1989) for SecYEG alone; with SecA and ADP; and with SecA and the non-hydrolysable ATP analogue AMPPNP. The results reveal a strong nucleotide-dependent effect on channel conformation (Figure 5E–F and Figure 5—figure supplement 2). The most probable distance between the two sites in the SecA-SecYEG complex with ADP is ~2.7 nm, with a full width at half height (FWHH) of ~0.4 nm (Figure 5F), matching the MD data extremely well (Figure 5C). This value is identical to the distance for SecYEG alone – supporting earlier findings that the resting SecY and ADP-bound SecA-SecYEG states are very similar with respect to the channel region (Allen et al., 2016). Addition of AMPPNP, meanwhile, causes the two positions to rearrange, with the spin labels coming much closer together to give a modal distance of ~2.3 nm and broader FWHH of ~0.9 nm (Figure 5F) – again, in good agreement with the MD data (Figure 5C). These experimental distances are only an indirect measure of cavity opening, however they do provide direct experimental validation for the MD data, and confirm that ATP does indeed have a potent effect on the conformation of the channel.
 
-## HDX-MS reveals asymmetry in SecY cavities
+### HDX-MS reveals asymmetry in SecY cavities
 
 To further explore the environment and conformational dynamics of the protein-channel during the ATPase cycle, we carried out differential HDX-MS experiments on E. coli SecA-SecYEG. HDX-MS reports on the exchange of hydrogen to deuterium in backbone amides of a protein or protein complex (Englander and Kallenbach, 1983; Konermann et al., 2011; Engen, 2009). The exchange rates are dependent on the protein solvent accessibility and hydrogen bonding (Wales and Engen, 2006). The main strength of HDX-MS is it allows non-invasive monitoring of the dynamics of an unmodified protein complex at peptide-level of resolution, enabling comparison between distinct protein states. Here, we directly compare the HDX rates between the ADP- and ATP-bound states, aiming to gain quantitative information on how nucleotide affects global conformational changes in the SecA-SecYEG complex, including networks within the SecY cavities.
 
 We performed differential HDX-MS experiments on SecYEG saturated with SecA and either ADP or AMPPNP (hereafter referred to as ATP, for clarity). The nucleotide-bound conditions require SecA in a slight molar excess over SecY, so any data pertinent to SecA was ignored. By mapping the difference in deuterium uptake between the ATP- and ADP-bound states (ΔATP–ADP) on the crystal structure of SecA-SecYEG (PDB 3DIN), we showed significant changes primarily located in the periplasmic and cytoplasmic regions (Figure 6A and Figure 6—figure supplement 1A–C). Specific peptides were identified with significant ΔHDX (99% confidence interval), as useful reporters for changes in these two regions of interest (Figure 6B and Figure 6—figure supplement 1A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/41803/elife-41803-fig6-v2.jpg)
+
+**Figure 6.:** (A) Differences in relative deuterium uptake (ΔHDX) (ΔATP-ADP) of SecYEG after a 30 min exposure to deuterated solvent. A significant change in ΔHDX was determined as >0.9 Da (99% CI). Blue and red coloured regions indicate peptides that become HDX protected or deprotected, respectively. White regions represent peptides where no significant ΔHDX is observed. Regions with no coverage obtained are coloured grey. SecA data have been removed for clarity. HDX data are mapped onto a SecA-SecYEG complex structure (PDB: 3DIN). (B) View of SecYEG from PDB 3DIN (Zimmer et al., 2008). Shown in coloured spheres are backbone nitrogens which are located in the SecY cavities, and which exhibit a significant difference in deuterium exchange between the ATP and ADP states. The colour represents the difference in magnitude (blue = higher exchange in the ADP state, red = higher exchange in the ATP state). The approximate positions of the respective cavities are shown in green. (C–D) Deuterium uptake plots of peptides in the SecYEG cytoplasmic cavity (CC, residues 273–278, 179–189 and 417–422 in SecY, and 35–42 in SecG) and the periplasmic cavity (PC, residues 31–45 and 391–403 in SecY). E. coli residue numbering used throughout. On the right of each panel, the peptides are highlighted on the equivalent position of the SecYEG crystal structure from PDB 3DIN (Zimmer et al., 2008).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/41803/elife-41803-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Woods plots showing the differences in relative deuterium uptake (ΔHDX) (ΔATP-ADP) of (i) SecY, (ii) SecE and (iii) SecG after exposure to deuterated solvent for 30 min. The length of the blocks represents the length of the peptide. Blue and red blocks indicate protected or deprotected peptides, respectively. The transmembrane (TM), periplasmic loop ('P') and cytoplasmic loop ('C') regions are annotated. A significant change in ΔHDX was determined as 99% confidence intervals for each protein at any single time point and noted on the top right of the woods plot. (B) ΔHDX difference plots of SecY with ATP (green) and ADP (purple) at 30 min for peptides in the cytoplasmic cavity (CC). Red-shaded areas highlight deprotected regions (ΔATP-ADP). (C) As panel A, but for peptides in the periplasmic cavity (PC). (D) ΔHDX difference plots of SecY with ATP and ADP at 30 min for peptides in the extended plug loop (EPL), amphipathic helix (AH) and cytoplasmic loop (CL). (E) Woods plots of differences in ΔHDX of SecY, SecE and SecG (ΔATP-ADP) after exposure to deuterium oxide for 0.25 min, 1 min and 5 min. (F) Differences in ΔHDX of SecYEG in the presence of ATP (ΔATP-apo), ADP (ΔADP-apo) and (ΔATP-ADP). Blue and red coloured regions indicate protected and deprotected regions, respectively. White regions represent peptides where no significant ΔHDX is observed. Regions with no coverage obtained are coloured yellow. Differential HDX data is mapped onto a SecYEG-SecA complex structure (PDB: 3DIN (Zimmer et al., 2008)). (G) Weblogo of 64 different bacterial SecY sequences showing the highly conserved nature of the CC/1b peptide. (H) Views of SecY from the cytoplasm, following 1 μs of simulation in complex with SecE, SecA and pre-protein (small section shown in blue). The CC/1b region is highlighted in red.
 
 Peptides lining the cytoplasmic cavity (CC) show deprotection induced by the presence of ATP (4 out of 4 peptides; Figure 6B–C and Figure 6—figure supplement 1B). This is consistent with a destabilisation of this region and may indicate a more ‘open’ cavity. In contrast, from the two peptides identified that line the exterior cavity (PC; not including the ‘plug’, see below), one of them revealed protection and the other a mild deprotection suggesting a more limited effect of ATP on the exterior cavity (Figure 6B,D and Figure 6—figure supplement 1C). This is consistent with the MD simulations which also showed mild dynamic changes in these regions.
 
@@ -118,7 +281,7 @@ Interestingly, detailed inspection of the equivalent regions in the MD simulatio
 
 Overall the data confirm the presence of long-range conformational changes from the nucleotide binding site on SecA to the protein-channel (Figure 1C) (Fessl et al., 2018; Allen et al., 2016; Robson et al., 2007). Many of these differences occur in regions of SecYEG known to be susceptible to remote nucleotide modulation (Figure 6—figure supplement 1D). For example, the increased HDX (ATP versus ADP) observed in the ‘plug’ (extended plug loop; EPL) of SecY and the amphipathic helix (AH) of SecE are consistent with their known mobilisation in the translocon when activated by ATP (Corey et al., 2016). The contrasting decrease in HDX seen in the two largest cytosolic loops (CL) of SecY (Figure 6—figure supplement 1D) reflects the tighter association with SecA in the ATP bound state (Robson et al., 2007; Robson et al., 2009). Therefore, our HDX-MS experiments clearly support the notion of ATP-induced asymmetry in the SecYEG channel.
 
-## Pre-protein secondary structure prevents transit through SecY pore
+### Pre-protein secondary structure prevents transit through SecY pore
 
 To determine whether or not the pre-protein secondary structures observed in the simulation data impede passage through the SecY pore, a series of steered MD simulations were carried out. In these, a directional pulling force was applied to a stretch of the pre-protein through SecYE, with SecA and the rest of the pre-protein removed (Figure 7A). The pre-protein contained either an α-helical region – as sampled by equilibrium MD in the ATP- or ADP-bound states (Figure 2), and stabilised here using a distance restraint between positions i and i + 4 – or had the helix abolished using a short steered MD simulation. These substrates were then pulled through the SecY pore, and the passage time of 10 independent repeats recorded. Note that the translocation of α-helical pre-protein is unlikely to occur in the physiological system. These simulations are designed not to determine time to pass a folded region through the SecY pore, rather to report on the ease with which different pre-protein structural states might freely diffuse through.
 
@@ -154,13 +317,13 @@ Given the universal nature of secondary structure in polypeptides, such conforma
 
 ## Materials and methods
 
-## Modelling the SecA-SecYEG-PP complex
+### Modelling the SecA-SecYEG-PP complex
 
 The bulk of the data here are collected from a SecA-SecYEG-PP complex in an ATP or ADP state. Models for the simulations were built using chains A, Y and E of the crystal structure 5EUL (Li et al., 2016) as starting coordinates. Several small missing loops were added using the Modeller program (Sali and Blundell, 1993), detailed in Table 1. Some larger loops were added manually based on similar structures of SecA-SecYEG (PDB code 3DIN; Zimmer et al., 2008). These include HWD 1 and 2, two periplasmic SecY loops and a cytoplasmic SecY loop. The details of these loops are given in Table 1, and the loops are shown in Figure 1—figure supplement 1B. We reasoned that this would produce a better model than loops built simply based from sequence.
 
 The original structure has a non-physiological arrangement of the SecA 2HF and bound pre-protein substrate, where these are represented by a single, continuous chain. To correct for this, we remodelled the tip of the 2HF based on 3DIN, to generate a physiological 2HF conformation, which is stable during simulation (Figure 2—figure supplement 1). In the SecA NBS, the ADP-BeFx molecule was replaced with either ADP or ATP (Piggot et al., 2012). The substrate was extended in an unfolded conformation through the SecA ring, via known crosslinking sites (Bauer and Rapoport, 2009). Substrate building was done with PyMOL (Delano, 2002).
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 All simulations were run using GROMACS 4.6.4 or 5.1.2 (Berendsen et al., 1995). Simulations were built using the SecA-SecYEG-PP complex described above, or alternatively the M. jannaschii SecYEβ crystal structure (Van den Berg et al., 2004) or the T. thermophilus SecYEG crystal structure (Tanaka et al., 2015).
 
@@ -170,25 +333,25 @@ Production simulations were run without positional restraints with 2 fs time ste
 
 For some of the folding data, membranes consisting of 63% POPE, 32% POPG and 5% cardiolipin in a coarse-grained description were built around the protein using the MemProtMD program (Stansfeld et al., 2015). Following 1 µs simulation, snapshots were obtained in which multiple acidic lipids were seen to bind to the complex (Figure 2—figure supplement 4C–D). These were then converted to an atomistic description (Stansfeld and Sansom, 2011), and the systems simulated using the Charmm36 force field (Best et al., 2012).
 
-## Deformation analysis on pre-protein
+### Deformation analysis on pre-protein
 
 Deformation energies were calculated from the SecA-SecYEG-PP ADP and ATP MD trajectories. Deformation analysis based on normal mode (vibrational) analysis provides a measure for the amount of local flexibility in the protein structure - that is atomic motion relative to neighbouring atoms. We calculated deformation energies and atomic fluctuations of the first three non-trivial modes in Bio3D (Hinsen, 1998; Grant et al., 2006) and visualized the results in PyMOL (Delano, 2002).
 
-## Targeted MD
+### Targeted MD
 
 For the systems built from T. thermophilus SecYEG (Tanaka et al., 2015), simulations were initially run of the resting state of the channel (i.e. SecYEG alone), with MTS spin labels attached to cysteine residues engineered at positions 58 and 101. MTS parameters were produced using ACPYPE (Sousa da Silva and Vranken, 2012). MD simulation of the MTS in water produces the appropriate geometries (Figure 5—figure supplement 1A).
 
 Over 110 ns simulation, distance analyses were carried about between the centre-of-mass of the ON groups of each spin label. After this, targeted MD was carried out on the SecY subunit to sample the conformational arrangement of 3DIN SecY (chain C (Zimmer et al., 2008)). Force constants were applied to the CA atoms, and increased at 100 ps intervals from 10 to 1000 kJ−1 mol−1 nm−2 restraints over 1 ns. Following this, the systems were simulated for a further 70 ns, with the positional restraints eased to 10 kJ−1 mol−1 nm−2. This therefore allowed us to simulate a SecA-bound state of the complex, without needing SecA present. Upon opening, the MTS label was able to flip into the centre of SecY. This process was modelled through a manual switching of rotamer state for the backbone cysteine. Again, distance analyses were performed between the spin labels.
 
-## Modelling a defective signal sequence
+### Modelling a defective signal sequence
 
 To investigate the effect of signal sequence interaction on the system, we modelled in a known defective signal sequence (Hizlan et al., 2012; Emr et al., 1980), where a conserved four hydrophobic residue stretch is removed (here, KKTAIAIAVALAGFATVAS). We modelled this in PyMOL from a 1 µs snapshot of the ATP-bound SecA-SecYE-PP system. To reduce input bias, we allowed the N-terminal KK to remain in contact with the lipid phosphate groups and simply removed the four residues from the protein. We then repositioned the flanking residues slightly to allow bond formation, and relaxed the system using energy minimization. We then simulated the complex out to >400 ns for further analyses.
 
-## Secondary structure formation analyses
+### Secondary structure formation analyses
 
 Formation of secondary structure was determined both using visual analysis and quantified using the dictionary of secondary structure of proteins (DSSP) algorithm (Kabsch and Sander, 1983; Joosten et al., 2011). This was implemented using the Gromacs utility do_dssp, which provides an estimation of secondary structure for each reside based on dihedral angle, including ‘no structure’, ‘α-helix’, ‘310-helix’ and ‘hydrogen-bonded turn’.
 
-## Extending simulations to investigate secondary structure formation
+### Extending simulations to investigate secondary structure formation
 
 To provide broad conformational sampling and reduce any input bias from the starting configurations, multiple simulations were run from different starting coordinates. For this, new systems were modelled based on snapshots of the ADP- and ATP-bound systems at 1 µs. To abolish all the secondary structure within the pre-protein, the nine residues on each side of the central constriction were substituted with glycine using SCWRL4 (Krivov et al., 2009). Following steepest descents energy minimization and 1 ns equilibration, production runs were carried out until all of the secondary structure within this region had been abolished, according to DSSP analysis (Joosten et al., 2011); ~110 ns for the ATP-bound complex and ~80 ns for the ADP-bound complex (Figure 2—figure supplement 3). For each simulation, three time points (70, 80 and 110 ns for ATP and 50, 65 and 80 ns for ADP, with only the 50 and 65 ns simulations run for the tandem sequence (see below) simulations) were chosen which displayed no structure at all according to DSSP analysis (Figure 2—figure supplement 3). This represents a reasonably broad configurational sampling, and prevents the analyses being too biased by a specific starting configuration.
 
@@ -196,25 +359,29 @@ For each time point, an 18 residue region of pre-protein through the SecY channe
 
 Due to sampling restrictions, we were realistically only able to analyse a single nine residue sequence. We opted to use the sequence from the original crystal structure, as this has already been shown to be stable in the SecY channel, thereby reducing the potential for artefacts arising from changes of sequence. Additionally, the sequence has already been shown to fold within a reasonable time frame (Figure 2—figure supplement 2B).
 
-## Water dynamics simulations
+### Water dynamics simulations
 
 To model the water dynamics in and around the translocon, a series of simulations were run using structural snapshots of the 1 µs SecA-SecYE-PP ATP simulation from Figure 2 as starting points (500, 502, 504, 506, 508, 510, 600, 602, 604, 606, 608, 610, 700, 702, 704, 706, 708, 710, 800, 802, 804, 806, 808, 810, 900, 902, 904, 906, 908, 910, 1000 ns). Water dynamics simulations were run in the NVE ensemble, meaning a constant number of particles, volume and energy were maintained throughout. The advantage of this is to avoid introduction of artificial perturbations through use of a thermostat or barostat. Simulations were run with a 1 fs time step, writing coordinates every 5 fs. The Verlet cutoff scheme was used with a buffer size of 0.001 kJ mol−1 ps−1 to achieve proper energy conservation, as monitored through following the energy of the simulations.
 
-## Mean squared displacement calculations
+### Mean squared displacement calculations
 
 To model the translational dynamics of the waters in the system, mean squared displacement (MSD) calculations were employed. MSD is a common statistical mechanics measure of translational motion. It follows the progression of an atom in relation to a reference position as a product of time, revealing the extent of its exploration of 3D space. Analyses were carried out as described previously (Capponi et al., 2015). Briefly, a box of 5×5×12 nm was built around SecY, with the geometric centre at the pore ring. This box was subdivided into 24 slices 0.5 nm thick, and the waters from each slice were analysed separately. The MSD of the waters in each slice was plotted, and the last 25 ps was fitted to power law equations (Equation 1).
 
-Equation 1.(1)MSD(t)=ktA
+Equation 1.
+
+$$
+MSD_{(t)}=kt^{A}
+$$
 
 Where k is a fitting parameter, and the exponent A provides information on the molecular diffusivity. From this, the A value was plotted for each slice.
 
-## HOLE
+### HOLE
 
 To analyse the SecY cavity sizes, snapshots were taken from the 1 µs SecA-SecYE-PP ATP and ADP simulations at 500, 502, 504, 506, 508, 510, 600, 602, 604, 606, 608, 610, 700, 702, 704, 706, 708, 710, 800, 802, 804, 806, 808, 810, 900, 902, 904, 906, 908, 910 and 1000 ns. In addition, snapshots were taken at the same time points from simulations previously published (Allen et al., 2016) of the SecA-SecYEG complex without pre-protein, with ATP or ADP bound. Snapshots were also taken from simulations of T. thermophilus SecYEG (Tanaka et al., 2015) in a resting and open conformation (see Targeted MD section above).
 
 For each snapshot, the centre of the SecY channel was initially defined as the geometric centre of the pore ring residues, and this was used to seed the HOLE calculations. The correct siting of the cavity was determined with visual inspection using VMD (Humphrey et al., 1996). For the successful calculations, data were extracted for 6.5 Å on either side of the pore ring. The area under the curves were computed and integrated using the trapezoidal rule with partitions of 0.5 Å.
 
-## EPR DEER
+### EPR DEER
 
 Proteins for spin-labelling were produced as described previously (Collinson et al., 2001). Complexes were labelled by incubation with a 20 fold excess of MTS and 40 μM cardiolipin at room temperature for 30 min, in buffer A (20 mM Tris pH 8, 130 mM NaCl, 10% glycerol with 0.02% by volume n-Dodecyl-β-D-Maltoside (DDM)). Following this, excess (unbound) cardiolipin and MTS were removed using size exclusion chromatography with a superose 6 10/300 column at 4°C. Purified fractions were concentrated and stored at −80°C. SecA was purified as described previously (Gold et al., 2007) and stored in buffer B (20 mM Tris pH 8, 50 mM KCl, 2 mM MgCl2).
 
@@ -228,7 +395,7 @@ Note that for a fully spin-labelled SecYEG, the modulation depth would be expect
 
 The research data supporting the DEER data can be accessed at https://doi.org/10.17630/0fedaeec-7e27-4876-a6d1-cda2d3a6799c
 
-## Hydrogen deuterium exchange mass spectrometry (HDX-MS)
+### Hydrogen deuterium exchange mass spectrometry (HDX-MS)
 
 Peptide identification and peptide coverage were optimized for SecYEG and SecA using un-deuterated controls. The sample workflow for HDX-MS involved mixing 10 μM of SecYEG and 15 μM of SecA and incubating for 10 min on ice. 5 μl of SecYEG-SecA complex was diluted into 95 μL of equilibration buffer C (20 mM Tris pH 8, 50 mM KCl, 2 mM MgCl2 and 0.02% DDM in H2O) or with deuterated buffer C (20 mM Tris pH 8, 50 mM KCl, 2 mM MgCl2 and 0.02% DDM in D2O) at 25°C. For experiments analysing the dynamics of the SecYEG-SecA in presence of either AMPPNP or ADP, 1 mM of nucleotide was added to the protein mixture and to buffer A.
 
@@ -238,6 +405,6 @@ Peptide fragments were then trapped using an Acquity BEH C18 1.7 μM VANGUARD ch
 
 All deuterated time points and un-deuterated controls were carried out in triplicate. MSE data from un-deuterated controls samples of SecYEG and SecA were used for sequence identification using the Waters ProteinLynx Global Server 2.5.1 (PLGS) and filtered using DynamX (v. 3.0). Filtering parameters used were a minimum and maximum peptide sequence length of 4 and 25, respectively, minimum intensity of 1000, minimum MS/MS products of 2, minimum products per amino acid of 0.2, and a maximum MH +error threshold of 5 ppm. Furthermore, all the spectra were examined and checked visually and only peptides with a high signal to noise ratios were used for HDX-MS analysis.
 
-## Steered MD
+### Steered MD
 
 1 µs snapshots were taken from the SecA-SecYE-PP ADP- and ATP-bound simulations, in which four pre-protein residues in the exterior SecY cavity had formed an α-helical configuration (Figure 2A). From these, SecA was removed and the backbone of the pre-protein was broken at a position equivalent to proOmpA residue 25, separating the signal sequence and rest of the pre-protein. All residues after the equivalent of proOmpA residue 40 were removed (Figure 7A), and simulated for 5 ns. The α-helix was then either forced into an unstructured conformation using steered MD with a pulling force of 1000 kJ mol−1 nm−1 for 36 ps on the C-terminal residue, or stabilised using a constraint of 0.2–0.25 nm between the backbones of the i and i + 4 helix residues, followed by five ns unbiased simulation. Then, 10 independent steered MD simulations were run for each state, where the substrate was pulled from the C-terminal residue in a z-axis direction using a force constant of 600 kJ mol−1 nm−1. For each repeat, the time take for the helical/non-helical region to cross the pore was measured, based on the centre-of-mass distance between the region and the SecY pore residues, Ile-78, Ile-183, Ile-275 and Ile-404 (G. thermodentrificans numbering).

@@ -13,14 +13,14 @@
 
 ### Affiliations
 
-1. https://ror.org/041gvmd67 Institut D’Investigacions Biomèdiques August Pi i Sunyer Barcelona Spain
-2. https://ror.org/03yjb2x39 Department of Microbiology, Immunology and Infectious Diseases, Snyder Institute for Chronic Diseases, Cumming School of Medicine, University of Calgary Calgary, Alberta Canada
+1. Institut D’Investigacions Biomèdiques August Pi i Sunyer Barcelona Spain ([ROR:041gvmd67](https://ror.org/041gvmd67))
+2. Department of Microbiology, Immunology and Infectious Diseases, Snyder Institute for Chronic Diseases, Cumming School of Medicine, University of Calgary Calgary, Alberta Canada ([ROR:03yjb2x39](https://ror.org/03yjb2x39))
 
 † Corresponding author
 
 ## Abstract
 
-Chronic antigenic stimulation can trigger the formation of interleukin 10 (IL-10)-producing T-regulatory type 1 (TR1) cells in vivo. We have recently shown that murine T-follicular helper (TFH) cells are precursors of TR1 cells and that the TFH-to-TR1 cell transdifferentiation process is characterized by the progressive loss and acquisition of opposing transcription factor gene expression programs that evolve through at least one transitional cell stage. Here, we use a broad range of bulk and single-cell transcriptional and epigenetic tools to investigate the epigenetic underpinnings of this process. At the single-cell level, the TFH-to-TR1 cell transition is accompanied by both, downregulation of TFH cell-specific gene expression due to loss of chromatin accessibility, and upregulation of TR1 cell-specific genes linked to chromatin regions that remain accessible throughout the transdifferentiation process, with minimal generation of new open chromatin regions. By interrogating the epigenetic status of accessible TR1 genes on purified TFH and conventional T-cells, we find that most of these genes, including Il10 , are already poised for expression at the TFH cell stage. Whereas these genes are closed and hypermethylated in Tconv cells, they are accessible, hypomethylated, and enriched for H3K27ac-marked and hypomethylated active enhancers in TFH cells. These enhancers are enriched for binding sites for the TFH and TR1-associated transcription factors TOX-2, IRF4, and c-MAF. Together, these data suggest that the TR1 gene expression program is genetically imprinted at the TFH cell stage.
+Chronic antigenic stimulation can trigger the formation of interleukin 10 (IL-10)-producing T-regulatory type 1 (TR1) cells in vivo. We have recently shown that murine T-follicular helper (TFH) cells are precursors of TR1 cells and that the TFH-to-TR1 cell transdifferentiation process is characterized by the progressive loss and acquisition of opposing transcription factor gene expression programs that evolve through at least one transitional cell stage. Here, we use a broad range of bulk and single-cell transcriptional and epigenetic tools to investigate the epigenetic underpinnings of this process. At the single-cell level, the TFH-to-TR1 cell transition is accompanied by both, downregulation of TFH cell-specific gene expression due to loss of chromatin accessibility, and upregulation of TR1 cell-specific genes linked to chromatin regions that remain accessible throughout the transdifferentiation process, with minimal generation of new open chromatin regions. By interrogating the epigenetic status of accessible TR1 genes on purified TFH and conventional T-cells, we find that most of these genes, including Il10, are already poised for expression at the TFH cell stage. Whereas these genes are closed and hypermethylated in Tconv cells, they are accessible, hypomethylated, and enriched for H3K27ac-marked and hypomethylated active enhancers in TFH cells. These enhancers are enriched for binding sites for the TFH and TR1-associated transcription factors TOX-2, IRF4, and c-MAF. Together, these data suggest that the TR1 gene expression program is genetically imprinted at the TFH cell stage.
 
 ## Introduction
 
@@ -38,7 +38,7 @@ Collectively, the above observations indicate that, in most cases, acquisition o
 
 ## Results
 
-## Single-cell multiomic profiles of pMHCII-NP-induced TFH and TR1 cells
+### Single-cell multiomic profiles of pMHCII-NP-induced TFH and TR1 cells
 
 The compaction status of the chromatin has a direct impact on gene expression, by modulating the accessibility of TF binding sites and the physical interactions between GREs. We therefore sought to map changes in the genome-wide distribution and location of open chromatin regions (OCRs) along the TFH-TR1 pathway and determine whether pMHCII-NP-induced TR1-like cells inherit their chromatin exposure status from TFH cell precursors. We focused on the BDC2.5mi/I-Ag7 Tet+ cells arising in BDC2.5mi/I-Ag7-NP-treated nonobese diabetic (NOD) mice. BDC2.5mi/I-Ag7-specific CD4+ T-cells comprise a population of autoreactive T-cells that contribute to the progression of spontaneous autoimmune diabetes in NOD mice. The size of this type 1 diabetes-relevant T-cell specificity is small and barely detectable in untreated NOD mice, but treatment with cognate pMHCII-NPs leads to the expansion and formation of anti-diabetogenic TR1 cells that retain the antigenic specificity of their precursors (Clemente-Casares et al., 2016). As a result, treatment of hyperglycemic NOD mice with these compounds results in the reversal of type 1 diabetes (Clemente-Casares et al., 2016).
 
@@ -46,15 +46,23 @@ Since the pMHCII-NP-induced Tet+ cell pools contain TFH and TR1 sub-pools (~30% 
 
 Cell clustering using the pMHCII-NP-induced Tet+ cell pool’s two-dimensional scRNAseq and scATACseq dataset analysis using weighted nearest neighbor (WNN) revealed the presence of a well-defined TFH-like cell cluster and a larger cluster of cells containing both TR1-like and TR1 cells (Solé et al., 2023b). The KLH-induced TFH subset contained three sub-pools of TFH cells that we referred to as TFH.1, TFH.2, and TFH.3 (Figure 1A). The scMultiome profile of the BDC2.5mi/I-Ag7-NP-induced TFH cell sub-pool overlapped with the KLH-induced TFH1.1 sub-pool, corresponding to effector Bcl6hiTox2hiIl21+Pdcd1+TFH cells (Figure 1A, left). At the scRNAseq level, the KLH-induced TFH.2 cells were also similar to their TFH.1 counterparts but expressed lower levels of Pdcd1, Il21, Bcl6, and Tox2 and higher levels of Maf, Tcf7, Cxcr5, and Cd69 (Solé et al., 2023b). In contrast, the KLH-induced TFH.3 cells display transcriptomic features of follicular T-regulatory cells (Foxp3+Bcl6+Bhlhe40+Icos+Il10+) (Solé et al., 2023b).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/97665/elife-97665-fig1-v1.jpg)
+
+**Figure 1.:** BDC2.5mi/I-Ag7-NP-induced Tet+ (TET); KLH-DNP-induced TFH (TFH), and Tconv cells (Tconv) from female nonobese diabetic (NOD) mice (n=4, 8, and 1 mice, respectively) were sorted and processed for 10X GEX+ATAC multiome. (A) Left: multidimensional analysis of scRNAseq and ATACseq data using weighted nearest neighbor (WNN). Cell-type prediction is based on K-means clusterization and predicted cell subtype classification of scRNAseq data. Middle and right: scRNAseq (middle) and scATACseq (assay for transposable-accessible chromatin using sequencing) (right) UMAP (Uniform Manifold Approximation and Projection) plots with K-means clusterization and predicted cell subtype classification based on scRNAseq data. The legends’ colors correspond to different T-cell types and the legends’ shape correspond to sample type. (B) Hierarchical clustering of multiome data based on Euclidean distance of all the clusters found in all sample types. (C) Bar plot with the number of differentially OCRs in TFH.1 (including Tet+ TFH.1 and KLH-DNP-induced TFH.1 cells), TR1/TR1-like cells, as compared to Tconv cells (adjusted p<0.05). Color depicts the proportion of OCRs that are shared with KLH-DNP-induced TFH.1 (vs. Tconv cells) (yellow) or that appear de novo in TR1/TR1-like cells (gray). (D) Volcano plot of Wilcox differential analysis of scRNAseq data from the multiome dataset comparing TFH.1 and TR1/TR1-like cells. Not overlapping dots were labeled. Genes mentioned in the text are boxed. (E–F) Jitter plots depicting log2FC in gene expression between TR1/TR1-like and TFH.1 cells as measured by scRNAseq (adjusted p<0.05) for genes associated with OCRs found in TFH.1 cells (left; closed in TR1/TR1-like cells) or TR1/TR1-like (right; closed in TFH.1 cells) (E), or in both TFH.1 and TR1/TR1-like cells (F) as measured by scATACseq (adjusted p<0.05). Dot (gene) colors define the -log10 (adjusted p) for RNA expression of Wilcox test; dot sizes are proportional to the number of differential OCRs associated with each gene. All genes are labeled except when overlapping. Chromatin closure by TR1 cells was significantly associated with gene downregulation as determined via Chi-square test. TFH, T-follicular helper; TR1, T-regulatory type 1; KLH, keyhole limpet hemocyanin.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/97665/elife-97665-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Figure corresponds to an MA plot comparing the transcriptome of the TFH.1 cells from the KLH-induced TFH cell pool and the TFH-like cells contained within the BDC2.5mi/I-Ag7-NP-induced Tet + pool. There were only five differentially expressed genes (|log2FC|>0.5 and adjusted p<0.05; Actb, Ifi27l2a, Inpp4b, Nav2, and Tmsb10) between these two subsets. NP, nanoparticle; pMHCII, peptide-major histocompatibility complex class II; TFH, T-follicular helper; KLH, keyhole limpet hemocyanin.
+
 Further mono-omic analyses of the scRNAseq and scATACseq data of the scMultiome datasets provided additional information on the lineage relationships among the various T-cell sub-pools. Specifically, UMAP (Uniform Manifold Approximation and Projection) dimensional reduction of the scRNAseq data confirmed a high degree of transcriptional similarity between the TFH.1 cells from the KLH-induced TFH cell pool and the TFH-like cells contained within the BDC2.5mi/I-Ag7-NP-induced Tet+ pool (Figure 1A, middle). In fact, these two highly similar subsets only had five differentially expressed genes (|log2FC|>0.5 and adjusted p<0.05; Actb, Ifi27l2a, Inpp4b, Nav2, and Tmsb10) (Figure 1—figure supplement 1). Dimensional reduction of the scATACseq data showed that the open chromatin landscapes of the KLH-induced TFH.1 and TFH.2 sub-pools co-localized with those corresponding to the BDC2.5mi/I-Ag7-NP-induced Tet+ TFH and TR1 sub-pools (Figure 1A, right).
 
 The transcriptional and epigenetic relationships among these various T-cell subsets were confirmed by hierarchical clustering of the two-dimensional scMultiome datasets (Figure 1B); despite coming from different mice and arising in response to different cues, the BDC2.5mi/I-Ag7-NP-induced TFH cells and the KLH-induced TFH.1/TFH.2 cells were more similar to each other than to other cell subsets within each sample.
 
-## Extensive closure of open chromatin during the TFH-to-TR1 cell conversion within the Tet+ cell pool
+### Extensive closure of open chromatin during the TFH-to-TR1 cell conversion within the Tet+ cell pool
 
 Comparison of the scATACseq profiles of the KLH-induced TFH and BDC2.5mi/I-Ag7-NP-induced Tet+ TFH sub-pools indicated that TFH cells undergo massive closure of OCRs as they transdifferentiate into TR1-like and TR1 cells (Figure 1C). The data further indicated that most, albeit not all, of the OCRs that remain open in the terminally differentiated TR1 subset and, especially, the transitional TR1-like cells were already open at the TFH.1 cell stage (Figure 1C). Thus, the TFH-to-TR1 cell conversion process involves massive contraction of the chromatin and limited generation of new OCRs.
 
-## Chromatin closure during the TFH-to-TR1 conversion within the Tet+ pool is associated with massive silencing of gene expression
+### Chromatin closure during the TFH-to-TR1 conversion within the Tet+ pool is associated with massive silencing of gene expression
 
 Binding of TFs to their corresponding binding sites in DNA (TFBS) typically occurs in nucleosome-free regions in open chromatin. We next used the scMultiome datasets to investigate the effects of chromatin remodeling on gene expression during the TFH-to-TR1 cell conversion at the single-cell level. We focused on differentially OCRs in BDC2.5mi/I-Ag7-NP-induced TR1-like/TR1 cells (including both the TR1-like and TR1 sub-clusters) or TFH.1 cells (including both the BDC2.5mi/I-Ag7-NP-induced TFH and the KLH-induced TFH.1 cluster) as compared to their Tconv counterparts. We identified 688 genes that were associated with chromatin regions specifically open in TFH cells but not TR1-like/TR1 cells, and 545 genes that were associated with chromatin regions open in both TFH and TR1-like/TR1 cells or only TR1-like/TR1 cells.
 
@@ -66,17 +74,17 @@ In contrast, the relative frequency of upregulated and downregulated genes among
 
 Collectively, the above data indicate that the TFH-to-TR1 cell conversion involves extensive remodeling of the chromatin and massive silencing of TFH gene expression.
 
-## Contraction of the chromatin in pMHCII-NP-induced Tet+ vs. TFH cells at the bulk level
+### Contraction of the chromatin in pMHCII-NP-induced Tet+ vs. TFH cells at the bulk level
 
 Bulk ATACseq studies of pMHCII-NP-induced Tet+ cells (~70% of which are TR1-like/TR1 cells; n=4) and KLH-induced TFH cells (~70% of which are TFH.1/TFH.2 cells; n=3) were consistent with the scMultiome data. KLH-induced TFH cells contained 13 times more differential OCRs (as compared to Tconv cells; n=3) than their BDC2.5mi/I-Ag7-NP-induced Tet+ counterparts (n=10,919 vs. 821, respectively). Furthermore, the overwhelming majority of the chromatin regions that are differentially exposed in pMHCII-NP-induced Tet+ cells (as compared to Tconv controls) (97.9%) are also differentially exposed in KLH-induced TFH cells (Figure 2A and Figure 2—source data 1). This includes genes such as Batf, Bhlhe40, Cxcr5, Icos, Il10, Il21, Lag3, Maf, Nt5e, Pdcd1, Stat3, Tcf7, and Tox2. In addition, the chromatin regions that are differentially open in the pMHCII-NP-induced Tet+ and/or KLH-induced TFH cell pools (as compared to Tconv cells, where these OCRs are closed) are significantly associated with gene upregulation (p<7.88e-11); no such association is found for genes linked to closed chromatin in either pMHCII-NP-induced Tet+ or KLH-induced TFH cells (p=0.86) (Figure 2B and Figure 2—source data 2). Moreover, chromatin closure in BDC2.5mi/I-Ag7-NP-induced Tet+ cells relative to KLH-induced TFH cells was associated with downregulation of gene expression: 158 of the 341 genes that were downregulated in the former were linked to differentially closed OCRs (46.3%), as opposed to 94 of the 367 genes that were upregulated (25.6%) (p=1.38e-08) (Figure 2C).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/97665/elife-97665-fig2-v1.jpg)
 
-**Figure 2.:** g7-NP-induced Tet+ and KLH-DNP-induced T-follicular helper (TFH) cells vs. gene expression.(A) Euler’s plot comparing the number and sharing of differential open chromatin regions (OCRs) between BDC2.5mi/I-Ag7-NP-induced Tet+ and KLH-induced TFH cells relative to their Tconv counterparts (n=4, 3, and 3, respectively) (adjusted p<0.01). (B) Associations between the number and status of differentially open or closed chromatin sites and gene expression as measured via bulk ATACseq (adjusted p<0.01) and RNAseq (adjusted p<0.01 and |log2FC|>2), respectively. Data correspond, from left to right, to BDC2.5mi/I-Ag7-NP-induced Tet+ vs. Tconv and KLH-induced TFH vs. Tconv. Each dot represents a gene, and its size is proportional to the number of associated OCRs. Dot color represents RNAseq differential analysis’ -log10 of false discovery rate (FDR). Only genes with the highest log2FC value in each condition were labeled. (C) Associations between the status of chromatin accessibility in BDC2.5mi/I-Ag7-NP-induced Tet+ vs. KLH-induced TFH cells and gene expression as measured via bulk ATACseq (adjusted p<0.01) and RNAseq (adjusted p<0.01 and. |log2FC|>2), respectively. Each dot represents a gene, and its size is proportional to the number of associated OCRs. Dot color represents RNAseq differential analysis’ -log10 of FDR. Only genes with the highest log2FC value in each condition were labeled. p-Values in (B) and (C) were calculated using Chi-square. KLH, keyhole limpet hemocyanin.Figure 2—source data 1.Figure 2—source data 2.Also includes the count of differentially expressed genes and those overlapping with genes linked to differentially accessible regions in these cell types.
+**Figure 2.:** (A) Euler’s plot comparing the number and sharing of differential open chromatin regions (OCRs) between BDC2.5mi/I-Ag7-NP-induced Tet+ and KLH-induced TFH cells relative to their Tconv counterparts (n=4, 3, and 3, respectively) (adjusted p<0.01). (B) Associations between the number and status of differentially open or closed chromatin sites and gene expression as measured via bulk ATACseq (adjusted p<0.01) and RNAseq (adjusted p<0.01 and |log2FC|>2), respectively. Data correspond, from left to right, to BDC2.5mi/I-Ag7-NP-induced Tet+ vs. Tconv and KLH-induced TFH vs. Tconv. Each dot represents a gene, and its size is proportional to the number of associated OCRs. Dot color represents RNAseq differential analysis’ -log10 of false discovery rate (FDR). Only genes with the highest log2FC value in each condition were labeled. (C) Associations between the status of chromatin accessibility in BDC2.5mi/I-Ag7-NP-induced Tet+ vs. KLH-induced TFH cells and gene expression as measured via bulk ATACseq (adjusted p<0.01) and RNAseq (adjusted p<0.01 and. |log2FC|>2), respectively. Each dot represents a gene, and its size is proportional to the number of associated OCRs. Dot color represents RNAseq differential analysis’ -log10 of FDR. Only genes with the highest log2FC value in each condition were labeled. p-Values in (B) and (C) were calculated using Chi-square. KLH, keyhole limpet hemocyanin.
 
 Thus, studies of pMHCII-NP-induced Tet+ and KLH-induced TFH cells at the bulk level faithfully replicate the observations made using scMultiome. Together, they indicate that the TR1-like/TR1 cells contained within the Tet+ pool close a significant fraction of the chromatin as they transdifferentiate from TFH cells, leading to downregulation of gene expression, but the chromatin that remains open in TR1 cells is already exposed at the TFH cell stage. We acknowledge that, in the bulk ATACseq studies, the differences in the number of OCRs found in tetramer+ cells or KLH-induced TFH cells vs. naïve T-cells may be influenced by the intrinsic oligoclonality of the tetramer+ T-cell pool arising in response to repeated pMHCII-NP challenge (Solé et al., 2023b). However, we note that scATACseq studies of the tetramer+ T-cell pool found similar differences between the oligoclonal tetramer+ TFH sub-pool and its (also oligoclonal) tetramer+ TR1 counterparts (i.e. substantially higher number of OCRs in the former vs. the latter relative to naïve T-cells).
 
-## H3K4me3, H3K27me3, and H3K27ac marks in genes upregulated during the TFH-to-TR1 cell conversion are already in place at the TFH cell stage
+### H3K4me3, H3K27me3, and H3K27ac marks in genes upregulated during the TFH-to-TR1 cell conversion are already in place at the TFH cell stage
 
 Histones can positively and negatively regulate gene expression upon undergoing post-translational modifications on N-terminal residues via acetylation, methylation, and ubiquitination of lysines; methylation and citrullination of arginines; or phosphorylation of serine, threonine, or tyrosine (Greer and Shi, 2012). Although some of these histone modifications are not involved in gene regulation but rather occur upon gene activation and RNA polymerase elongation, they are considered good epigenetic indicators of the status of the chromatin.
 
@@ -84,21 +92,29 @@ H3 is the histone that undergoes more epigenetic modifications. Acetylation of t
 
 The scMultiome dataset described above indicated that there were 545 genes that were associated with regions of the chromatin that remain exposed as TFH.1 cells differentiate into TR1-like/TR1 cells and/or, to a much lesser extent, appear de novo in the latter. We therefore focused on this list of genes to investigate whether their lack of expression at the TFH cell stage was associated with absence of active/poised enhancers and promoters or with presence of repressive histone marks.
 
-## H3K4me3
+#### H3K4me3
 
 The KLH-induced TFH, pMHCII-NP-induced Tet+, and the Tconv subsets had a similar number of H3K4me3 marked regions/peaks (as defined via ChIPseq) (Figure 3—source data 1). As expected, most of these H3K4me3 marks (78%) were found at TSSs (Figure 3—figure supplement 1; Figure 3—source data 1). Representative chromosome track views are shown further below, in Figure 6.
 
 The heatmaps shown in Figure 3A (left) show that the overall H3K4me3 deposition landscape in BDC2.5mi/I-Ag7-NP-induced Tet+ cells (containing ~70% TR1 cells) is closer to that seen in KLH-induced TFH cells than in their Tconv counterparts (at the global level, including all chromatin regions, both open and closed at the TR1 cell stage) (Figure 3—source data 1). Figure 3B (left) shows the total number and relative percentage of differentially H3K4me3-marked regions (enriched for or depleted of H3K4me3) between KLH-induced TFH vs. Tconv, BDC2.5mi/I-Ag7-NP-induced Tet+ vs. Tconv and BDC2.5mi/I-Ag7-NP-induced Tet+ vs. KLH-induced TFH cells, respectively (Figure 3—source data 2). There were only 123 differentially marked H3K4me3 peaks between Tet+ and TFH cells (adjusted p<0.01) and, in the scMultiome dataset, most of these were linked to areas of the chromatin that were closed in TR1 cells as compared to their TFH precursors, except for two genes (Ptpn11 and Angptl2), suggesting that differential H3K4me3 deposition at these genes is due to differential chromatin exposure. Further analysis of the data revealed that most of the H3K4me3 peaks found in genes linked to OCRs shared by TFH and TR1 cells at the single-cell level (77.6%; p<2.2e-16) were found in all three subsets (BDC2.5mi/I-Ag7-NP-induced Tet+, KLH-induced TFH cells, and Tconv cells), indicating that the corresponding genes are already marked for expression at both the naïve and TFH cell stages (Figure 3—source data 3).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/97665/elife-97665-fig3-v1.jpg)
+
+**Figure 3.:** (A) Clustering heatmaps of all the regions enriched for H3K4me3 (left), H3K27me3 (middle), and H3K27Ac (right) deposition in BDC2.5mi/I-Ag7-NP-induced Tet+ cells, KLH-DNP-induced TFH cells, and Tconv cells. The intensity of the red color is proportional to the magnitude of enrichment vs. the corresponding background. (B) Bar plot comparing the relative percentages (X-axis) and absolute numbers (number annotations in each bar) of differentially marked regions for each histone modification (false discovery rate [FDR]<0.01). Top, middle, and bottom rows correspond to KLH-DNP-induced TFH vs. Tconv, BDC2.5mi/I-Ag7-NP-induced Tet+ vs. Tconv, and BDC2.5mi/I-Ag7-NP-induced Tet+ vs. KLH-DNP-induced TFH comparisons, respectively. KLH, keyhole limpet hemocyanin; NP, nanoparticle.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/97665/elife-97665-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Pie charts showing the relative distribution of H3K4me3 (top), H3K27me3 (middle), and H3K27Ac (bottom) marks in different gene regions. (B) Jitter plots comparing differences in gene expression between BDC2.5mi/I-Ag7-NP-induced TR1/TR1-like and TFH.1 cells (log2 fold change between the two cell clusters in the single-cell Multiome [scMultiome] dataset) for genes linked to open chromatin regions (OCRs) shared between BDC2.5mi/I-Ag7-NP-induced Tet+ and KLH-DNP-induced TFH cells, as a function of shared or differential H3K4me3 (top), H3K27me3 (middle), and H3K27Ac (bottom) deposition status (false discovery rate [FDR]<0.01). Gene expression was not associated with differential histone deposition in any case (Wilcox test for differential gene expression: adjusted p<0.05): H3K4me3: Pearson’s Chi-square test p=0.53; H3K27me3: Fisher exact test p=1; H3K27Ac: Pearson’s Chi-square test p=0.23. Color depicts the -log10(adjusted p-value) of scRNAseq analysis. Bubble size corresponds to the number of marked regions annotated to specific genes. Most differentially expressed and TR1/TR1-like and TFH-relevant genes included in the 106 genes list from Supplementary file 1 are labeled. KLH, keyhole limpet hemocyanin; NP, nanoparticle.
+
 Thus, the genes associated with regions of the chromatin that remain open in TR1 cells have nearly identical H3K4me3 deposition landscapes in both Tet+ and TFH cells.
 
-## H3K27me3
+#### H3K27me3
 
 We identified a total of 56,454 H3K27me3-marked peaks in the three subsets described above (Figure 3—source data 1). KLH-induced TFH cells had a significantly higher number of H3K27me3-marked peaks than Tconv or BDC2.5mi/I-Ag7-NP-induced Tet+ cells (42,274 vs. 10,944 and 3236, respectively) (p<2.2e-16). These H3K27me3 marks were found at the TSS (27.13%), or at intronic (19.29%) or intergenic regions (30%) (Figure 3—figure supplement 1) (Figure 3—source data 1).
 
 The heatmaps shown in Figure 3A (middle; Figure 3—source data 1) show that as was the case for H3K4me3, the overall H3K27me3 deposition landscape in pMHCII-NP-induced Tet+ cells is closer to that seen in TFH cells than in their Tconv counterparts. Figure 3B (middle; Figure 3—source data 2) shows the number of differentially marked regions (enriched for or depleted of H3K27me3) between KLH-induced TFH vs. Tconv, BDC2.5mi/I-Ag7-NP-induced Tet+ vs. Tconv and BDC2.5mi/I-Ag7-NP-induced Tet+ vs. KLH-induced TFH cells. There were only 167 differentially marked regions between Tet+ and TFH cells (adjusted p<0.01), and most of these mapped to areas of the chromatin that are closed during the TFH.1-to-TR1 transition, except for two genes (Filip1l and Cdk8). As was also the case for H3K4me3, most of the H3K27me3 marks found in genes associated with OCRs shared by both TFH and/or TR1 cells at the single-cell level (95.8%; p<2.2e-16) were shared by all three subsets (BDC2.5mi/I-Ag7-NP-induced Tet+, KLH-induced TFH cells, and Tconv cells), indicating that the corresponding genes already had this mark at the naïve and TFH cell stages (Figure 3—source data 3).
 
-## H3K27Ac
+#### H3K27Ac
 
 As with H3K4me3, but unlike H3K27me3, the absolute number of H3K27Ac marks in each cell type were similar (~44,000/cell type). As expected, H3K27Ac marks were found at TSS (34%), intronic (24%), and intergenic locations (18%) (Figure 3—figure supplement 1) (Figure 3—source data 1).
 
@@ -108,11 +124,35 @@ We note that, although in the representative chromosome track views shown in Fig
 
 Collectively, these results suggest that most of the genes that are upregulated during the TFH-to-TR1 cell conversion have H3K4me3, H3K27me3, and H3K27ac marks that are already in place at the TFH stage.
 
-## The methylation status of most of the genes that remain accessible at the TR1 cell stage is already imprinted at the TFH stage
+### The methylation status of most of the genes that remain accessible at the TR1 cell stage is already imprinted at the TFH stage
 
 DNA methylation is based on the covalent binding of a methyl group to the C-5 position of a cytosine ring of DNA. In adult mammalian cells, 98% of DNA methylation targets cytosines in CpG dinucleotides, is directly associated with transcriptional silencing, and is maintained through cell division (i.e. is a heritable epigenetic trait) (Schübeler, 2015). Demethylation is an ultimate defining step of cell identity and is associated with long-term enhancer accessibility (Barnett et al., 2020). Consequently, differentiated cells possess a stable and unique methylome structure that regulates their cell-specific transcriptomic profile.
 
 To investigate the potential contribution of changes in DNA methylation to gene expression as BDC2.5mi/I-Ag7-NP-induced TFH.1 cells transdifferentiate into TR1 cells, we performed genome-wide bisulfite sequencing of BDC2.5mi/I-Ag7-NP-induced Tet+, KLH-induced TFH cells, and Tconv cells. We focused our analysis on differentially methylated regions (DMRs; q-value<0.05) (Figure 4—source data 1). Among all the DMRs found in BDC2.5mi/I-Ag7-NP-induced Tet+ and KLH-induced TFH cells vs. Tconv cells, 43.2% were shared by BDC2.5mi/I-Ag7-NP-induced Tet+ and KLH-induced TFH cells, 33.9% were unique to KLH-induced TFH cells and 24.8% were unique to BDC2.5mi/I-Ag7-NP-induced Tet+ cells (Figure 4A and Figure 4—source data 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/97665/elife-97665-fig4-v1.jpg)
+
+**Figure 4.:** (A) Venn diagram of differentially methylated regions (DMRs) in BDC2.5mi/I-Ag7-NP-induced Tet+ and KLH-DNP-induced TFH vs. Tconv cells. (B) Venn diagrams of differentially hypomethylated (left) or hypermethylated (right) regions shared by BDC2.5mi/I-Ag7-NP-induced Tet+ cells and KLH-DNP-induced TFH cells as compared to their Tconv counterparts. Gene names found in the 106 TFH/TR1/Treg gene list in Supplementary file 1, with shared methylation status, are indicated. (C) Bar plot showing the numbers of differentially hypo- or hypermethylated regions (separated by gene region: promoter, gene body, or distal intergenic) in BDC2.5mi/I-Ag7-NP-induced Tet+ and KLH-DNP-induced TFH vs. Tconv cells, respectively. DMRs are classified, from left to right, into those only found in BDC2.5mi/I-Ag7-NP-induced Tet+ cells (only Tet), KLH-DNP-induced TFH cells (only TFH), or found in both subsets (shared by tet+ and TFH). (D) Pie-donut chart showing the distribution of DMRs (hyper- and hypomethylated status) in genes associated with open chromatin regions (OCRs) (n=328) shared by TFH.1 and TR1/TR1-like cells (identified via single-cell Multiome [scMultiome]). (E) Jitter plot comparing differential gene expression between TR1/TR1-like and TFH.1 cells (as determined by scMultiome) and differential methylation status, focusing on the genes that remain open at the TR1/TR1-like cell stage, as determined by scMultiome. DMR-associated genes are classified based on their cell pool specificity, i.e., only found in BDC2.5mi/I-Ag7-NP-induced Tet+ cells (only Tet+), KLH-DNP-induced TFH cells (only TFH), or both (shared by Tet+ and TFH). Color depicts the methylation status (hypo- or hypermethylated) of the regions associated with these genes. No significant correlation between methylation status and differential gene expression was found. KLH, keyhole limpet hemocyanin; NP, nanoparticle.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/97665/elife-97665-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Pie charts show the relative distribution of DMRs in BDC2.5mi/I-Ag7-NP-induced Tet+ vs. Tconv (left), KLH-DNP-induced TFH vs. Tconv (middle), and BDC2.5mi/I-Ag7-NP-induced Tet+ vs. KLH-DNP-induced TFH (right). KLH, keyhole limpet hemocyanin; NP, nanoparticle.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/97665/elife-97665-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Lolliplots comparing the location of differentially methylated CpGs in Il2 (left), Il10 (middle), and Il21 (right) in BDC2.5mi/I-Ag7-NP-induced Tet+ vs. Tconv (top), KLH-DNP-induced TFH vs. Tconv (middle), and BDC2.5mi/I-Ag7-NP-induced Tet+ vs. KLH-DNP-induced TFH cells’ comparisons (bottom). KLH, keyhole limpet hemocyanin; NP, nanoparticle.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/97665/elife-97665-fig4-figsupp3-v1.jpg)
+
+**Figure 4—figure supplement 3.:** Heatmap depicting the presence of different epigenetic marks (from left to right: differential methylation, differential open chromatin regions [OCRs], differential H3K27ac deposition, differential H3K4me3 deposition, and differential H3K27me3 deposition) in antigen-induced TFH vs. Tconv cells. Data correspond to differentially expressed genes with shared OCRs between TR1 and TFH cells. Differential epigenetic data is scaled for each technique and when multiple genomic regions are associated to a gene, the average is provided. Genes are ordered by decreasing fold change of differential gene expression. TFH, T-follicular helper; TR1, T-regulatory type 1.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/97665/elife-97665-fig4-figsupp4-v1.jpg)
+
+**Figure 4—figure supplement 4.:** Heatmap depicting the presence of different epigenetic marks (from left to right: differential methylation, differential open chromatin regions [OCRs], differential H3K27ac deposition, differential H3K4me3 deposition, and differential H3K27me3 deposition) in BDC2.5mi/IAg7-NP-induced Tet+ vs. Tconv cells. Data correspond to differentially expressed genes with shared OCRs between TR1 and TFH cells. Differential epigenetic data is scaled for each technique and when multiple genomic regions are associated to a gene, the average is provided. Genes are ordered by decreasing fold change of differential gene expression. TFH, T-follicular helper; TR1, T-regulatory type 1.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/97665/elife-97665-fig4-figsupp5-v1.jpg)
+
+**Figure 4—figure supplement 5.:** Heatmap depicting the presence of different epigenetic marks (from left to right: differential methylation, differential open chromatin regions [OCRs], differential H3K27ac deposition, differential H3K4me3 deposition, and differential H3K27me3 deposition) in BDC2.5mi/IAg7-NP-induced Tet+ vs. KLH-DNP-induced TFH cells. Data correspond to differentially expressed genes with shared OCRs between TR1 and TFH cells. Differential epigenetic data is scaled for each technique and when multiple genomic regions are associated to a gene, the average is provided. Genes are ordered by decreasing fold change of differential gene expression. KLH, keyhole limpet hemocyanin; TFH, T-follicular helper; TR1, T-regulatory type 1; NP, nanoparticle.
 
 Most of these DMRs were primarily found in intronic CpG islands, followed by exonic and then intergenic regions and gene promoters (Figure 4—figure supplement 1 and Figure 4—source data 1). The differentially hypomethylated regions found in BDC2.5mi/I-Ag7-NP-induced Tet+ cells relative to Tconv cells were associated with 2714 genes. Most of these genes (70%; p<2.2e-16) were also differentially hypomethylated in KLH-induced TFH cells (Figure 4B, left; Figure 4—source data 1 and 2). Likewise, of the 2748 genes that were associated with differentially hypermethylated regions in BDC2.5mi/I-Ag7-NP-induced Tet+ cells, most (71%; p<2.2e-16) also harbored differentially hypermethylated regions in KLH-induced TFH cells (Figure 4B, right; Figure 4—source data 1 and 2). Figure 4C provides a graphical representation of the genic location of these DMRs as a function of whether they are shared between Tet+ and TFH vs. Tconv cells and their methylation status. Thus, BDC2.5mi/I-Ag7-NP-induced Tet+ cells and KLH-induced TFH cells share a remarkably similar methylome (Figure 4—source data 1).
 
@@ -124,19 +164,19 @@ This apparent inheritance of gene methylation status by pMHCII-induced TR1 cells
 
 Collectively, the above data suggest that the methylation status of most of the genes that remain accessible at the TR1 cell stage is already imprinted at the TFH stage, and that most gene expression differences between TR1 and TFH cells cannot be accounted for changes in the overall methylation status of the corresponding genes. In a small number of cases, however, the TFH-to-TR1 cell conversion is accompanied by further gene demethylation of TR1-specific genes (i.e. Il10) and remethylation of TFH-specific ones (i.e. Cxcr5).
 
-## Changes in gene expression during the TFH-to-TR1 cell conversion are largely dissociated from redistribution of epigenetic marks
+### Changes in gene expression during the TFH-to-TR1 cell conversion are largely dissociated from redistribution of epigenetic marks
 
 To further define the contribution of the various epigenetic modifications discussed above on gene expression, we again focused on the genes associated with chromatin regions that remain open as TFH cells become TR1. We then ranked these genes according to gene expression changes, from upregulated to downregulated in TFH or Tet+ cells as compared to Tconv cells (Figure 4—figure supplements 3–4) or in Tet+ vs. TFH cells (Figure 4—figure supplement 5; Figure 4—source data 4). Whereas for most genes, differential gene expression in TFH or Tet+ vs. Tconv cells is associated with differential gene methylation, open chromatin, and H3K27ac and/or H3K4me3 deposition, very few differences were noted in all these readouts when comparing Tet+ to TFH cells.
 
-## Loss of TFH-specific TF gene expression during the TFH-to-TR1 conversion is associated with chromatin closure
+### Loss of TFH-specific TF gene expression during the TFH-to-TR1 conversion is associated with chromatin closure
 
 The above data collectively suggest that transdifferentiation of TFH cells into TR1 cells is driven by changes in the expression of TFH-stabilizing and TR1-promoting TFs. This, coupled to the extensive closure of chromatin sites in TFH cells as they become TR1 cells, suggested that changes in TF expression, particularly the loss of TFH-associated TFs, might be driven, in part, via chromatin remodeling of the coding loci. To investigate this, we compared the types and direction (expression-promoting or suppressing) of the various epigenetic modifications studied above on TF-coding genes as a function of upregulation or downregulation. As shown in Figure 5; Figure 5—source data 1, the TF-coding genes that are downregulated during the TFH-to-TR1 conversion, unlike those that are upregulated (based on the scMultiome data), close a significant number of OCRs (13/29 of downregulated TF-coding genes had closed OCRs, as compared to only 4/38 of upregulated TF-coding genes, p<0.0001). As expected, based on the epigenetic similarity of TFH vs. TR1 cells, upregulation of TF-coding genes was largely dissociated from the epigenetic marks studied here.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/97665/elife-97665-fig5-v1.jpg)
 
-**Figure 5.:** Heatmap depicting the presence of different epigenetic marks (from left to right: differential methylation, differential open chromatin regions [OCRs], differential H3K27ac deposition, differential H3K4me3 deposition, and differential H3K27me3 deposition) in BDC2.5mi/I-Ag7-NP-induced Tet+ vs. KLH-DNP-induced TFH cells. Data correspond to differentially expressed TF-coding genes between TR1 and TFH.1 cells as determined by the single-cell Multiome (scMultiome) analyses. Differential epigenetic data is scaled for each technique and when multiple genomic regions are associated to a gene, the average is provided. Genes are arranged from most to least upregulated, followed by least to most downregulated (fold change). No differentially enriched sites for H3K27Ac histone deposition were associated with differential expression of these genes. KLH, keyhole limpet hemocyanin; TFH, T-follicular helper; TR1, T-regulatory type 1; NP, nanoparticle.Figure 5—source data 1.
+**Figure 5.:** Heatmap depicting the presence of different epigenetic marks (from left to right: differential methylation, differential open chromatin regions [OCRs], differential H3K27ac deposition, differential H3K4me3 deposition, and differential H3K27me3 deposition) in BDC2.5mi/I-Ag7-NP-induced Tet+ vs. KLH-DNP-induced TFH cells. Data correspond to differentially expressed TF-coding genes between TR1 and TFH.1 cells as determined by the single-cell Multiome (scMultiome) analyses. Differential epigenetic data is scaled for each technique and when multiple genomic regions are associated to a gene, the average is provided. Genes are arranged from most to least upregulated, followed by least to most downregulated (fold change). No differentially enriched sites for H3K27Ac histone deposition were associated with differential expression of these genes. KLH, keyhole limpet hemocyanin; TFH, T-follicular helper; TR1, T-regulatory type 1; NP, nanoparticle.
 
-## TR1 cells inherit active enhancers from their TFH precursors
+### TR1 cells inherit active enhancers from their TFH precursors
 
 Gene expression is driven by the sequential recruitment of DNA-binding TFs (bound to proximal promoters and/or distal GREs), non-DNA-binding cofactors and the transcription machinery to the core promoter. Enhancers are GREs that positively activate transcription in primed gene promoters found thousands of kb away and even on different chromosomes but are proximal in the three-dimensional structure of the chromatin in the nucleus. Whereas active enhancers are typically marked with H3K4me1, H3K27ac, and some H3K4me3, poised enhancers contain both H3K4me1 and the repressive H3K27me3 mark (Creyghton et al., 2010; Heintzman et al., 2007; Rada-Iglesias et al., 2011; Pekowska et al., 2011). Active enhancers target genes marked with H3K27ac and H3K4me1 at and downstream of their TSS, respectively (Creyghton et al., 2010; Heintzman et al., 2007; Rada-Iglesias et al., 2011; Pekowska et al., 2011).
 
@@ -144,7 +184,7 @@ Thus, whereas ATACseq helps to identify areas of open chromatin associated with 
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/97665/elife-97665-fig6-v1.jpg)
 
-**Figure 6.:** (A) Euler’s plot showing total active enhancer sharing by BDC2.5mi/I-Ag7-NP-induced Tet+ cells, KLH-DNP-induced TFH cells, and Tconv cells. Overlapping of active enhancers in BDC2.5mi/I- Ag7-NP-induced Tet+ cells and KLH-DNP-induced TFH cells was significantly higher than overlapping between BDC2.5mi/I-Ag7-NP-induced Tet+ and Tconv cells (Pearson’s Chi-squared test with Yates' continuity correction p<2.2e-16). (B) Jitter plot comparing differential gene expression between TR1/TR1-like and TFH.1 cells (as determined by single-cell Multiome [scMultiome]), focusing on the genes that remain open at the TR1/TR1-like cell stage, and both distribution and number of active enhancers per gene as a function of their cell pool specificity (i.e. only found in BDC2.5mi/I- Ag7-NP-induced Tet+ cells (only Tet+), KLH-DNP-induced TFH cells (only TFH), or both (shared by Tet+ and TFH)). Color and size depict the region type (gene body or intergenic) and the number of active enhancers per gene, respectively. Gene names are displayed for all the genes except when more than 20 dots are in the same region of the plot. No significant correlation between active enhancer distribution and differential gene expression (Wilcox test for differential analysis: adjusted p<0.05) was found using Pearson’s Chi-square test, p=0.76. (C) Figure displays genome tracks for the various readouts examined herein in Tconv CD4+ T-cells (left), KLH-DNP-induced TFH cells (middle), and BDC2.5mi/I-Ag7-NP-induced Tet+ cells (right). Tracks correspond, from top to bottom, to reads for RNAseq (n=4), ATACseq (n=3), ChIPseq (n=1) for H3K4me3, H3K27me3, and H3K4me3 immunoprecipitation, respectively; ChiPseq (n=1) for Tox- 2 (TFH cells), Irf4 (Th17 cells), and cMaf (Th17 cells) deposition, respectively (see main text for references), active enhancers and differential methylation, respectively. Visualization reads were normalized to total sequencing depth per sample using BPM (bins per million) and, where replicates were available, height mean per bin was also computed. ChIPseq data was also normalized for input (non-immunoprecipitated) sequenced reads. Height (y-axis) is equivalent to the normalized number of mapped reads in each region. Active enhancers (ACT ENH) were predicted as overlapping regions of open chromatin region (OCR) (ATACseq) and H3K27Ac deposited peaks (ChIPseq H3K27Ac) and are depicted as absent or present in each region. DIFF METH shows differentially methylated regions (n=3) obtained comparing BDC2.5mi/I-Ag7-NP-induced Tet+ cells and KLH-DNP-induced TFH to Tconv cells. Height corresponds to the relative mean methylation value for each region. KLH, keyhole limpet hemocyanin; NP, nanoparticle.Figure 6—source data 1.Figure 6—source data 2.
+**Figure 6.:** (A) Euler’s plot showing total active enhancer sharing by BDC2.5mi/I-Ag7-NP-induced Tet+ cells, KLH-DNP-induced TFH cells, and Tconv cells. Overlapping of active enhancers in BDC2.5mi/I- Ag7-NP-induced Tet+ cells and KLH-DNP-induced TFH cells was significantly higher than overlapping between BDC2.5mi/I-Ag7-NP-induced Tet+ and Tconv cells (Pearson’s Chi-squared test with Yates' continuity correction p<2.2e-16). (B) Jitter plot comparing differential gene expression between TR1/TR1-like and TFH.1 cells (as determined by single-cell Multiome [scMultiome]), focusing on the genes that remain open at the TR1/TR1-like cell stage, and both distribution and number of active enhancers per gene as a function of their cell pool specificity (i.e. only found in BDC2.5mi/I- Ag7-NP-induced Tet+ cells (only Tet+), KLH-DNP-induced TFH cells (only TFH), or both (shared by Tet+ and TFH)). Color and size depict the region type (gene body or intergenic) and the number of active enhancers per gene, respectively. Gene names are displayed for all the genes except when more than 20 dots are in the same region of the plot. No significant correlation between active enhancer distribution and differential gene expression (Wilcox test for differential analysis: adjusted p<0.05) was found using Pearson’s Chi-square test, p=0.76. (C) Figure displays genome tracks for the various readouts examined herein in Tconv CD4+ T-cells (left), KLH-DNP-induced TFH cells (middle), and BDC2.5mi/I-Ag7-NP-induced Tet+ cells (right). Tracks correspond, from top to bottom, to reads for RNAseq (n=4), ATACseq (n=3), ChIPseq (n=1) for H3K4me3, H3K27me3, and H3K4me3 immunoprecipitation, respectively; ChiPseq (n=1) for Tox- 2 (TFH cells), Irf4 (Th17 cells), and cMaf (Th17 cells) deposition, respectively (see main text for references), active enhancers and differential methylation, respectively. Visualization reads were normalized to total sequencing depth per sample using BPM (bins per million) and, where replicates were available, height mean per bin was also computed. ChIPseq data was also normalized for input (non-immunoprecipitated) sequenced reads. Height (y-axis) is equivalent to the normalized number of mapped reads in each region. Active enhancers (ACT ENH) were predicted as overlapping regions of open chromatin region (OCR) (ATACseq) and H3K27Ac deposited peaks (ChIPseq H3K27Ac) and are depicted as absent or present in each region. DIFF METH shows differentially methylated regions (n=3) obtained comparing BDC2.5mi/I-Ag7-NP-induced Tet+ cells and KLH-DNP-induced TFH to Tconv cells. Height corresponds to the relative mean methylation value for each region. KLH, keyhole limpet hemocyanin; NP, nanoparticle.
 
 We next focused on active enhancers proximal to genes linked to accessible chromatin in both TFH and TR1 cells, as defined via scATACseq. We divided the corresponding active enhancers into three sub-groups: (1) those exclusively found in BDC2.5mi/I-Ag7-NP-induced Tet+ cells; (2) only found in KLH-induced TFH cells, and (3) shared by both cell types. As shown in Figure 6B, most of the genes that remain open as the cells transition from the TFH state to its TR1 counterparts (i.e. are not closed), already harbor active enhancers in TFH cells. Specifically, most of the 396 genes that are associated with accessible chromatin in both TR1-like/TR1 and TFH cells and are marked with active enhancers (89.6%; p<2.2e-16) display such enhancers in both the BDC2.5mi/I-Ag7-NP-induced Tet+ and KLH-induced TFH pools.
 
@@ -152,7 +192,7 @@ We then investigated whether differences in the expression of these genes, as de
 
 Together, these data suggest that: (1) most of the genes that remain open as BDC2.5mi/I-Ag7-NP-induced TFH cells transition into TR1-like/TR1 cells also share active enhancers in both subsets; and (2) differences in the expression of these genes are likely mediated by other factors, such as DNA demethylation and/or differential TF availability.
 
-## Most of the upregulated genes at the TR1 stage had already demethylated their distal GREs at the TFH stage
+### Most of the upregulated genes at the TR1 stage had already demethylated their distal GREs at the TFH stage
 
 Detailed analyses of the intergenic DMRs found in KLH-induced TFH cells (and shared with BDC2.5mi/I-Ag7-NP-induced Tet+ cells) revealed a striking overlap with active enhancers. Figure 6C illustrates the location of DMRs around Il10 locus relative to the various transcriptional and epigenetic readouts explored herein, including active enhancers, in Tconv, BDC2.5mi/I-Ag7-NP-induced Tet+ and KLH-induced TFH cells. Several lines of evidence suggest that the patterned hypomethylation status of distal gene regulatory elements of TR1 genes in TFH precursors define the TR1-poised nature of the TFH epigenome. First, DNA methylation is generally not permissive for transcription (Schübeler, 2015), even at active enhancers. Second, enhancer demethylation is highly cell type-specific and accurately predicts target gene transcription (Schlesinger et al., 2013). Third, differential methylation among cell types is greatest at distal gene regulatory elements than in promoters (Schlesinger et al., 2013; Stadler et al., 2011). Finally, demethylation at these sites appears to be a required final step in enhancer activation during cell fate transitions, leading to the stabilization of cell line identity (Barnett et al., 2020).
 
@@ -160,11 +200,11 @@ To reveal the identity of differentially expressed genes proximal to ‘distal�
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/97665/elife-97665-fig7-v1.jpg)
 
-**Figure 7.:** g7-NP-induced Tet+ and KLH-DNP-induced T-follicular helper (TFH) cells vs. Tconv cells.(A) Euler’s plots with differentially methylated active enhancers for each comparison: BDC2.5mi/I- Ag7-NP-induced Tet+ cells vs. Tconv (Tet+; red), KLH-DNP-induced TFH vs. Tconv (TFH; orange), and Tconv vs. BDC2.5mi/I-Ag7-NP-induced Tet+ cells (Tconv; green). Pie charts on the left show the methylation status (hypomethylated or hypermethylated) of each subset of active enhancers for the same subset-to-subset comparisons. The BDC2.5mi/I-Ag7-NP-induced Tet+ and KLH-DNP-induced TFH cell subsets share significantly more differentially methylated active enhancers among each other than with Tconv cells (Pearson’s Chi-squared test with Yates' continuity correction; p<2.2e-16). (B) Jitter plot of differentially methylated active enhancers in BDC2.5mi/I- Ag7-NP-induced Tet+ cells (Tet+) and KLH-DNP-induced TFH (TFH) vs. Tconv cells vs. differential gene expression along the TFH.1-TR1 axis as determined by single-cell Multiome (scMultiome). Plot corresponds to genes that remain accessible as TFH.1 cells transdifferentiate into TR1/TR1-like cells. The differentially methylated enhancers linked to these genes were classified as being specific for BDC2.5mi/I-Ag7-NP-induced Tet+ cells (only Tet+), exclusive for KLH-DNP-induced TFH cells (only TFH) or shared by both Tet+ and TFH cells. Gene bubble color depicts -log10 of adjusted p-value from scRNAseq differential analysis, and bubble size depicts the number of regions associated per gene. Gene names are displayed for all the genes except when more than 20 dots are in the same region of the plot. No statistically significant associations between the presence of differentially hypo- or hypermethylated active enhancers and gene expression differences were found (Chi-square test: p=0.32). (C) Overlap of active enhancers with Tox2, IRF4, and c-MAF binding sites. Histogram plot compares the relative proportion of the active enhancers linked to genes that are accessible in both TR1/TR1-like and TFH.1 cells (as defined via scMultiome) and that are upregulated in TR1/TR1-like vs. TFH.1 cells (as determined via scMultiome), which overlap with binding sites for Tox-2 in TFH cells, and IRF4 or c-MAF in Th17 cells. Bars correspond from left to right, to: (1) binding sites shared by both BDC2.5mi/I-Ag7-NP-induced Tet+ and KLH-DNP-induced TFH cells (shared Tet+ & TFH); (2) exclusively found in the BDC2.5mi/I- Ag7-NP-induced Tet+ pool (only Tet+); (3) shared by BDC2.5mi/I-Ag7-NP-induced Tet+, KLH-DNP-induced TFH and Tconv cells (shared Tet+ & TFH & Tconv); and (4) shared by BDC2.5mi/I-Ag7-NP-induced Tet+ and Tconv cells (shared Tet+ & Tconv). KLH, keyhole limpet hemocyanin; TR1, T-regulatory type 1; NP, nanoparticle.Figure 7—source data 1.Figure 7—source data 2.
+**Figure 7.:** (A) Euler’s plots with differentially methylated active enhancers for each comparison: BDC2.5mi/I- Ag7-NP-induced Tet+ cells vs. Tconv (Tet+; red), KLH-DNP-induced TFH vs. Tconv (TFH; orange), and Tconv vs. BDC2.5mi/I-Ag7-NP-induced Tet+ cells (Tconv; green). Pie charts on the left show the methylation status (hypomethylated or hypermethylated) of each subset of active enhancers for the same subset-to-subset comparisons. The BDC2.5mi/I-Ag7-NP-induced Tet+ and KLH-DNP-induced TFH cell subsets share significantly more differentially methylated active enhancers among each other than with Tconv cells (Pearson’s Chi-squared test with Yates' continuity correction; p<2.2e-16). (B) Jitter plot of differentially methylated active enhancers in BDC2.5mi/I- Ag7-NP-induced Tet+ cells (Tet+) and KLH-DNP-induced TFH (TFH) vs. Tconv cells vs. differential gene expression along the TFH.1-TR1 axis as determined by single-cell Multiome (scMultiome). Plot corresponds to genes that remain accessible as TFH.1 cells transdifferentiate into TR1/TR1-like cells. The differentially methylated enhancers linked to these genes were classified as being specific for BDC2.5mi/I-Ag7-NP-induced Tet+ cells (only Tet+), exclusive for KLH-DNP-induced TFH cells (only TFH) or shared by both Tet+ and TFH cells. Gene bubble color depicts -log10 of adjusted p-value from scRNAseq differential analysis, and bubble size depicts the number of regions associated per gene. Gene names are displayed for all the genes except when more than 20 dots are in the same region of the plot. No statistically significant associations between the presence of differentially hypo- or hypermethylated active enhancers and gene expression differences were found (Chi-square test: p=0.32). (C) Overlap of active enhancers with Tox2, IRF4, and c-MAF binding sites. Histogram plot compares the relative proportion of the active enhancers linked to genes that are accessible in both TR1/TR1-like and TFH.1 cells (as defined via scMultiome) and that are upregulated in TR1/TR1-like vs. TFH.1 cells (as determined via scMultiome), which overlap with binding sites for Tox-2 in TFH cells, and IRF4 or c-MAF in Th17 cells. Bars correspond from left to right, to: (1) binding sites shared by both BDC2.5mi/I-Ag7-NP-induced Tet+ and KLH-DNP-induced TFH cells (shared Tet+ & TFH); (2) exclusively found in the BDC2.5mi/I- Ag7-NP-induced Tet+ pool (only Tet+); (3) shared by BDC2.5mi/I-Ag7-NP-induced Tet+, KLH-DNP-induced TFH and Tconv cells (shared Tet+ & TFH & Tconv); and (4) shared by BDC2.5mi/I-Ag7-NP-induced Tet+ and Tconv cells (shared Tet+ & Tconv). KLH, keyhole limpet hemocyanin; TR1, T-regulatory type 1; NP, nanoparticle.
 
 We next explored the methylation status of active enhancers linked to genes that remain accessible as TFH cells transdifferentiate into TR1 cells. The differentially methylated enhancers linked to these genes were classified as: (1) specific for BDC2.5mi/I-Ag7-NP-induced Tet+ cells; (2) specific for KLH-induced TFH cells; and (3) shared by both BDC2.5mi/I-Ag7-NP-induced Tet+ and KLH-induced TFH cells as compared to Tconv cells. Notably, most of these differentially methylated enhancers (66%) were shared by Tet+ and TFH cells. As with most other readouts examined herein, there was no statistically significant association between the presence of differentially hypo- or hypermethylated active enhancers and overall gene expression differences (Figure 7B; p=1) (Figure 7—source data 1). This observation is consistent with the idea that the methylation status of distal GREs for genes specifically upregulated in TR1 cells is almost invariably imprinted at the TFH stage, thus indicating that TFHs are epigenetically poised to acquire a TR1 transcriptional profile. The Il10 locus, for example, whose expression is significantly upregulated in BDC2.5mi/I-Ag7-NP-induced Tet+ cells as compared to KLH-induced TFH cells, harbors eight and six differentially hypomethylated active enhancers in Tet+ and TFH samples, respectively, as compared to Tconv cells (Figure 6C). Thus, most of the upregulated genes at the TR1 stage appear to have already demethylated their distal GREs at the TFH stage.
 
-## Active enhancers at genes specifically upregulated at the TR1 cell stage are enriched for binding sites for the TFH/TR1 TFs TOX-2, IRF4, and c-MAF
+### Active enhancers at genes specifically upregulated at the TR1 cell stage are enriched for binding sites for the TFH/TR1 TFs TOX-2, IRF4, and c-MAF
 
 We next sought to investigate if the putative active enhancers identified in BDC2.5mi/I-Ag7-NP-induced Tet+ and KLH-induced TFH cells contained binding sites for the TFH TFs TOX-2, IRF4, and c-MAF. The genes that were upregulated at the TR1 cell stage and shared an open chromatin status with TFH cells, based on the scMultiome dataset, were associated with 285 active enhancers. We then mapped ChIPseq peaks for TOX-2 from TFH cells, and IRF4 and c-MAF from Th17 cells (Ciofani et al., 2012; Li et al., 2012; Xu et al., 2019) onto these active enhancers. Remarkably, 34.4%, 66.3%, and 70.1% of these enhancers had TOX-2, IRF4, and c-MAF binding sites, respectively, and ~61% of these TF-binding active enhancers are already present in TFH cells (vs. <2% in Tconv cells; p<3.03e-8) (Figure 7C and Figure 7—source data 2).
 
@@ -194,79 +234,880 @@ We have recently shown that αGalCer/CD1d-NPs can trigger the differentiation of
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Mouse reference genome</td>
+      <td>UCSC; http://hgdownload.soe.ucsc.edu/goldenPath/mm10/bigZips/</td>
+      <td>Mouse reference genome NCBI build 38, GRCm38/mm10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Mouse: NOD/ShiLtJ</td>
+      <td>The Jackson Laboratory</td>
+      <td>Cat#001976</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Cricetulus griseus)</td>
+      <td>Chinese hamster: CHO-S cells</td>
+      <td>ThermoFisher</td>
+      <td>Cat#R80007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Anti-mouse CD4-FITC</td>
+      <td>BD Biosciences</td>
+      <td>Cat#553047</td>
+      <td>5 ug/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Anti-mouse CD4-PB</td>
+      <td>BioLegend</td>
+      <td>Cat#100428</td>
+      <td>5 ug/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Anti-mouse CD45R/B220-PerCP</td>
+      <td>BD Biosciences</td>
+      <td>Cat#553093</td>
+      <td>2 ug/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Anti-mouse CD16/32</td>
+      <td>BD Biosciences</td>
+      <td>Cat#553141</td>
+      <td>1/100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Anti-mouse CD16/32</td>
+      <td>BioLegend</td>
+      <td>Cat#101320</td>
+      <td>1/100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Anti-mouse CXCR5-biotin</td>
+      <td>BD Biosciences</td>
+      <td>Cat#551960</td>
+      <td>1/100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Anti-mouse CD44-FITC</td>
+      <td>BD Biosciences</td>
+      <td>Cat#553133</td>
+      <td>1/100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Anti-mouse CD279 (PD1)</td>
+      <td>BD Biosciences</td>
+      <td>Cat#562584</td>
+      <td>1/100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal Anti-mouse Histone 3 (acetyl K27)</td>
+      <td>Abcam</td>
+      <td>Cat#ab4729</td>
+      <td>1/200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal Anti-mouse Histone 3 (trimethyl K4)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#04–745</td>
+      <td>1/1200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal Anti-mouse Histone 3 (trimethyl K27)</td>
+      <td>CellSignaling</td>
+      <td>Cat#9733 S</td>
+      <td>1/1200</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ad1_noMx</td>
+      <td>Conda</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ad2.1</td>
+      <td>Conda</td>
+      <td></td>
+      <td>Ad2.1: TAAGGCGA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ad2.2</td>
+      <td>Conda</td>
+      <td></td>
+      <td>Ad2.2: CGTACTAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ad2.3</td>
+      <td>Conda</td>
+      <td></td>
+      <td>Ad2.3: AGGCAGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ad2.4</td>
+      <td>Conda</td>
+      <td></td>
+      <td>Ad2.4: TCCTGAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ad2.5</td>
+      <td>Conda</td>
+      <td></td>
+      <td>Ad2.5: GGACTCCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Ad2.6</td>
+      <td>Conda</td>
+      <td></td>
+      <td>Ad2.6: TAGGCATG</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>BDC2.5mi/IAg7 tetramer</td>
+      <td>Clemente-Casares et al., 2016</td>
+      <td>Not applicable</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant protein, fluorochrome labelled</td>
+      <td>Streptavidin-PE</td>
+      <td>Life Technologies</td>
+      <td>Cat#SNN1007</td>
+      <td>1:4 molar ratio with pMHCII monomers</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Anti-mCD4 microbeads</td>
+      <td>Milteny Biotec</td>
+      <td>Cat#130-049-201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera XT</td>
+      <td>Illumina</td>
+      <td>Cat#FC-131–1024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plus Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat#74134</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TruSeq Stranded mRNA Sample Prep Kit v2</td>
+      <td>Illumina</td>
+      <td>Cat#RS-122-2101/2</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Reverse transcriptase SuperScript II</td>
+      <td>Invitrogen</td>
+      <td>Cat#18064–014</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agencourt AMPure XP Beads</td>
+      <td>Beckman Coulter</td>
+      <td>Cat#A63881</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>KAPA Library Quantification Kit</td>
+      <td>KapaBiosystems</td>
+      <td>Cat#KK4835</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BirA500 biotinylation kit</td>
+      <td>Avidity</td>
+      <td>Cat#BirA500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EZ DNA Methylation-Gold kit</td>
+      <td>ZYMO</td>
+      <td>Cat#D5005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MinElute PCR purification kit</td>
+      <td>Qiagen</td>
+      <td>Cat#28004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MinElute Reaction Cleanup kit</td>
+      <td>Qiagen</td>
+      <td>Cat#28204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext High Fidelity PCR kit</td>
+      <td>New England BioLabs</td>
+      <td>Cat#M0541S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra DNA Library Prep kit</td>
+      <td>Illumina</td>
+      <td>Cat#E7645S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera DNA Library Preparation kit</td>
+      <td>Illumina</td>
+      <td>Cat#FC-121–1030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce Comassie (Bradford) Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#23200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cat#23200</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Pierce Comassie (Bradford) Kit</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce Monomeric Avidin Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#20227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Tagment DNA TDE1 Enzyme and Buffer kit</td>
+      <td>Illumina</td>
+      <td>Cat#20034197</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PCR cleanup</td>
+      <td>Qiagen</td>
+      <td>Cat#28104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dynabeads Protein A</td>
+      <td>Invitrogen</td>
+      <td>Cat#10001D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MACS separation LS columns</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat#130-042-401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Chromium Next GEM single cell 3’ reagent v3.1</td>
+      <td>10 x Genomics</td>
+      <td>Cat#PN-1000128</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Amicon Ultra-15 100 kDa cut-off</td>
+      <td>Millipore</td>
+      <td>Cat#UFC910024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DNA LoBind 1.5 ml tubes</td>
+      <td>Eppendorf</td>
+      <td>Cat#0030108051</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PD-10 Desalting Columns</td>
+      <td>GE Healthcare</td>
+      <td>Cat#52-1308-00 BB</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cat#23225</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Pierce BCA Assay Kit</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Protein LoBind 1.5 ml tubes</td>
+      <td>Eppendorf</td>
+      <td>Cat#0030108442</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ultra-Fine 30 G insulin syringes</td>
+      <td>BD</td>
+      <td>Cat#320927</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-Glutamine Solution (200 mM)</td>
+      <td>Cultek</td>
+      <td>Cat#H3BE17-605E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin/Streptomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#P4333</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gentamycin</td>
+      <td>Lonza</td>
+      <td>Cat#91 L0012-010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Keyhole Limpet Hemocyanin (KLH)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#H7017</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DNP-Keyhole Limpet Hemocyanin Conjugate, (DNP-KLH)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#324121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Freund’s Adjuvant, Complete</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#F5881-10ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Freund’s Adjuvant, Incomplete</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#F5506-10ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Avidin</td>
+      <td>Thermo Scientific</td>
+      <td>Cat#21121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Maleimide-PEG 2 kDa</td>
+      <td>Jenkem Tech</td>
+      <td>Cat#MAL-PEG2000-MAL</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cell Boost 7 a</td>
+      <td>HyClone</td>
+      <td>Cat#SH31026.07</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cell Boost 7b</td>
+      <td>HyClone</td>
+      <td>Cat#SH31027.01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dulbecco’s Phosphate Buffered Saline (DPBS)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#D8573-1L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat#15710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Protease Inhibitor Cocktail</td>
+      <td>Roche</td>
+      <td>Cat#4693132001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Proteinase K</td>
+      <td>Roche</td>
+      <td>Cat#03 115 879 001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#D6429−6X1 L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNAse A</td>
+      <td>Qiagen</td>
+      <td>Cat# 19101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fetal Bovine Serum (FBS)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#F7524</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BiocManager (v1.30.16)</td>
+      <td>https://cran.r-project.org/package=BiocManager%0A%0A</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>biomaRt (v2.48.3)</td>
+      <td>Durinck et al., 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2 (v2.4.2)</td>
+      <td>Langmead and Salzberg, 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BSMAP (v3.0)</td>
+      <td>Xi and Li, 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BWA (v0.0.)</td>
+      <td>Li and Durbin, 2010</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cellranger (v6.0)</td>
+      <td>https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cellranger-arc (v2.0)</td>
+      <td>https://support.10xgenomics.com/single-cell-multiome-atac-gex/software/pipelines/latest/what-is-cell-ranger-arc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Cellranger-atac (v2.1)</td>
+      <td>https://support.10xgenomics.com/single-cell-atac/software/pipelines/latest/what-is-cell-ranger-atac</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ChipSeeker (v1.28.3)</td>
+      <td>Yu et al., 2015</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>clusterProfiler (v4.0.5)</td>
+      <td>Wu et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Deeptools (v3.5.0)</td>
+      <td>Ramírez et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Deseq2 (v1.32.0)</td>
+      <td>Love et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DiffBind (v3.2.7)</td>
+      <td>Ross-Innes et al., 2012</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC</td>
+      <td>http://www.bioinformatics.babraham.ac.uk/projects/fastqc/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo v9</td>
+      <td>Becton, Dickinson and Company; https://www.flowjo.com</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Gene Ontology</td>
+      <td>http://geneontology.org</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Genomic Ranges (v1.44.0)</td>
+      <td>Lawrence et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MACS2 (v2.2.7.1)</td>
+      <td>Zhang et al., 2008</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Monocle3 (v1.0.1)</td>
+      <td>Cao et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>org.Mm.eg.db (v3.13.0)</td>
+      <td>https://bioconductor.org/packages/release/data/annotation/html/org.Mm.eg.db.html</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Partek Flow software</td>
+      <td>https://www.partek.com/partek-flow/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Picard (v2.25.0)</td>
+      <td>https://broadinstitute.github.io/picard/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R (v4.1.0)</td>
+      <td>https://www.eea.europa.eu/data-and-maps/indicators/oxygen-consuming-substances-in-rivers/r-development-core-team-2006</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Rstudio (v1.4.1103)</td>
+      <td>https://www.rstudio.com/</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R- trackViewer Bioconductor package</td>
+      <td>https://github.com/jianhong/trackViewer (jianhong, 2024)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools</td>
+      <td>http://samtools.sourceforge.net</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat (v4.0.3)</td>
+      <td>Hao et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Signac (v1.3.0)</td>
+      <td>Stuart et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR (v2.7.10a)</td>
+      <td>Dobin et al., 2013</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Tidyverse (v1.3.1)</td>
+      <td>https://www.tidyverse.org</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trackviewer (v1.31.1)</td>
+      <td>Ou and Zhu, 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Trimmomatic (v.03)</td>
+      <td>Bolger et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ÄKTA Pure 25 FPLC</td>
+      <td>GE Healthcare</td>
+      <td></td>
+      <td>FPLC equipment used to purify proteins</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BD FACSAria II</td>
+      <td>BD Biosciences</td>
+      <td></td>
+      <td>Flow cytometer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>BD FACSAria SORP</td>
+      <td>BD Biosciences</td>
+      <td></td>
+      <td>Flow cytometer</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bioruptor</td>
+      <td>Diagenode</td>
+      <td></td>
+      <td>Sonicator</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Covaris S220</td>
+      <td>Covaris</td>
+      <td></td>
+      <td>Sonicator</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Zetasizer dynamic light scatter (DLS) equipment</td>
+      <td>Malvern</td>
+      <td></td>
+      <td>Equipment used to measure hydrodynamic diameter and monodispersion of nanoparticles</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HiSeq2500</td>
+      <td>Illumina</td>
+      <td></td>
+      <td>DNA sequencing apparatus</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>NovaSeq 6000</td>
+      <td>Illumina</td>
+      <td></td>
+      <td>DNA sequencing apparatus</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Qubit fluorometer</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>DNA/RNA/protein quantification apparatus</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TapeStation 4200</td>
+      <td>Agilent</td>
+      <td></td>
+      <td>Automated electrophoresis apparatus for DNA/RNA sample quality control</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 NOD/ShiLtJ mice (strain #: 001976) were from the Jackson Lab (Bar Harbor, ME, USA). The experiments described herein were approved by the Cumming School of Medicine’s Animal Care Committee at the University of Calgary (protocol AC24-0053) and by the Animal Care Committee at Universitat de Barcelona (protocol 130/19).
 
-## pMHCII production
+### pMHCII production
 
 Recombinant pMHC class II were produced in CHO-S cells transduced with lentiviruses encoding peptide-MHCII beta and MHCII alpha chains and IRES-CFP and IRES-EGFP cassettes, respectively, as described (Serra et al., 2019). Briefly, transduced CHO cells were grown in 2 L baffled flasks (Nalgene, Thermo Fisher Scientific, Waltham, MA, USA) at 125 rpm, 5% CO2 and 37°C. Basal medium was Power-CHO-2 (Lonza, Basel, Switzerland) supplemented with 8 mM Glutamine (Cultek, Madrid, Spain) and Gentamicine Sulfate (0.25 mg/mL) (Lonza). The cultures were started in a volume of 400 mL of basal medium at a cell density of 350,000–400,000 cells/mL and were supplemented with Cell Boost 7a (Hyclone) at 3% vol/vol and Cell Boost 7b (Hyclone, GE Healthcare, Chicago, IL, USA) at 0.3% vol/vol on days 0, 3, 4, 5, 6, 8, 9, and 10. Temperature shift to 34°C was done when cell densities reached 5–7×106 cells/mL. Additional Glutamine was added on day 7,–2 mM. Glucose was added to 4.5 g/L when levels dropped below 3.5 g/L. Cells were harvested on day 14 or when viability fell below 60%. The secreted proteins were purified by sequential affinity chromatography on nickel and strep-tactin columns and used for NP coating or biotinylated in vitro to produce pMHCII tetramers.
 
-## pMHCII tetramers
+### pMHCII tetramers
 
 Phycoerythrin (PE)- or APC-conjugated tetramers were prepared using biotinylated pMHCII monomers and used to stain peripheral T-cells. Briefly, pMHCII monomers were subjected to biotinylation using biotin ligase (Avidity, Aurora, CO, USA) following the supplier’s protocols, and biotinylated monomers purified by ion exchange chromatography using an AKTA FPLC system (GE Healthcare, Chicago, IL, USA). The final product was verified by denaturing SDS-PAGE. Tetramers were generated by adding PE-conjugated streptavidin (Life Technologies, Carlsbad, CA, USA) at a 4:1 molar ratio.
 
-## Flow cytometry for pMHCII-NP-induced Tet+ cells and KLH-DNP-induced TFH cells
+### Flow cytometry for pMHCII-NP-induced Tet+ cells and KLH-DNP-induced TFH cells
 
 To stain mononuclear cell suspensions from mice, splenic CD4+ T-cells were incubated with avidin for 15 min at room temperature and stained with tetramer (5 µg/mL) in FACS buffer (0.05% sodium azide and 1% FBS in PBS) for 30 min at 4°C, washed, and incubated with FITC-conjugated anti-CD4 (RM4-5 or GK1.5 from BD Biosciences, San Diego, CA, USA; 5 µg/mL) and PerCP-conjugated anti-B220 (RA3-6B2 from BD Biosciences; 2 µg/mL; as a ‘dump’ channel) for 30 min at 4°C, in the presence of an anti-CD16/CD32 mAb (2.4G2; BD Biosciences, or BioLegend, San Diego, CA, USA) to block Fc receptors. Cells were washed, fixed in 1% paraformaldehyde (PFA) in PBS, and analyzed with FACSaria, or BD LSRII flow cytometers. Analysis was done using FlowJo software (FlowJo, BD Biosciences, San Diego, CA, USA).
 
 TFH cells (PD-1hiCXCR5hi) were generated by immunizing NOD mice intraperitoneally with KLH or KLH-DNP (Sigma-Aldrich, St. Louis, MO, USA) three times (100 µg/dose, CFA+IFA+IFA) once a week for 3 consecutive weeks. Splenic T-cells were stained with anti-CD4-Pacific Blue (GK1.5, BD Biosciences), anti-CD45R-PerCP (BD Biosciences), anti-CD44-FITC (IM7 from BD Biosciences), anti-CXCR5-biotin (2G8 from BD Biosciences), and anti-CD279-BV421 (PD-1; J43 from BD Biosciences) mAbs for 30 min at 4°C and with streptavidin-APC for 20 min at 4°C. TFH cells were identified within the CD4+CD45R– CD44hi gate as cells expressing high levels of CXCR5 and CD279 (PD-1).
 
-## NP synthesis
+### NP synthesis
 
 Maleimide-functionalized, pegylated iron oxide NPs (PFM series) were produced in a single-step thermal decomposition in the absence of surfactants as described recently (Singha et al., 2017). Briefly, 3 g Maleimide-PEG (2 kDa MW, Jenkem Tech USA) were melted in a 50 mL round-bottom flask at 100°C and then mixed with 7 mL of benzyl ether and 2 mmol Fe(acac)3. The reaction was stirred for 1 hr and heated to 260°C with reflux for 2 hr. The mixture was cooled to room temperature and mixed with 30 mL water. Insoluble materials were removed by centrifugation at 2000×g for 30 min. The NPs were purified using magnetic (MACS) columns (Miltenyi Biotec, Auburn, CA, USA) and stored in water at room temperature or 4°C. The concentration of iron was determined spectrophotometrically at 410 nm in 2 N hydrochloric acid (HCl).
 
-## pMHCII conjugation to NPs
+### pMHCII conjugation to NPs
 
 pMHCII conjugation to maleimide-functionalized NPs (PFM) was done via the free C-terminal Cys engineered into the MHCII chain/knob. Briefly, pMHCs were mixed with NPs in 40 mM phosphate buffer, pH 6.0, containing 2 mM ethylenediaminetetraacetic acid, 150 mM NaCl, and incubated overnight at room temperature. pMHCII-conjugated NPs were purified by magnetic separation and concentrated by ultrafiltration through Amicon Ultra-15 (100 kDa cut-off) (Merck KGaA, Darmstadt, Germany) and stored in PBS.
 
-## NP characterization
+### NP characterization
 
 The size and dispersity of unconjugated and pMHCII-conjugated NPs were assessed via transmission electron microscopy (TEM, Hitachi H7650, Hitachi, Chiyoda, Tokyo, Japan) and dynamic light scattering (DLS, Zetasizer, Malvern Panalytical, Spectris, Egham, UK). Pegylated and pMHC-NPs were analyzed via 0.8% agarose gel electrophoresis, native and denaturing 10% SDS-PAGE. To quantify pMHCII valency, we measured the pMHCII concentration of the pMHCII-NP preps using the Bradford assay (Thermo Scientific).
 
-## pMHCII-NP therapy of NOD mice
+### pMHCII-NP therapy of NOD mice
 
 Cohorts of 10-week-old female NOD mice were injected i.v. with BDC2.5mi/IAg7-coated NPs in PBS twice a week for 5 weeks. Treatment-induced formation and expansion of cognate tetramer+ CD4+ T-cells were assessed by flow cytometry.
 
-## CD4+ T-cell samples used for next-generation sequencing
+### CD4+ T-cell samples used for next-generation sequencing
 
 Unless stated otherwise, next-generation sequencing data was obtained from non-restimulated BDC2.5/IAg7-NP-induced CD4+ BDC2.5/IAg7-tetramer+ (CD4+/B220–/tet+) T-cells, Tconv (CD4+/B220–/tet–) cells, also obtained from BDC2.5/IAg7-NP-treated mice; KLH-DNP-immunized TFH (CD4+/B220–/CD44+/PD1+/CXCR5high), and TH0 cells obtained from KLH-DNP-immunized mice (CD4+/B220–/CD44–/PD1–/CXCR5–).
 
-## Bulk RNAseq
+### Bulk RNAseq
 
 Cells were sorted in lysis buffer or PBS (5e4 cells) to perform RNA extractions for RNAseq. For bulk RNAseq, we generated four independent samples containing tetramer+ and tetramer– (Tconv) cells from two BDC2.5/IAg7-NP-treated mice for each sample. For TFH and TH0 cells, we prepared RNA from three independent TFH cell pools (CD4+/CD44hi/CXCR5hi/PD1hi) and TH0 cells (CD4+/CD44–/CXCR5–/PD1–), as a negative control. All samples were coming from three immunized mice each.
 
 Total RNA was prepared from sorted cells using the RNeasy Plus Mini Kit (QIAGEN, Hilden, Germany) and used to prepare RNAseq libraries and sequencing. Libraries were prepared using the TruSeq Stranded mRNA Sample Prep Kit v2 according to the manufacturer’s protocol (Illumina, San Diego, CA, USA). Briefly, 10–50 ng of total RNA was used for poly(A)-mRNA purification using streptavidin-coated magnetic beads, followed by fragmentation to ~300 bp. cDNA was synthesized using reverse transcriptase (SuperScript II, Invitrogen, Thermo Fisher Scientific, Waltham, MA, USA) and random primers. The second strand of the cDNA incorporated dUTP in place of dTTP. Double-stranded DNA (dsDNA) was further used for library preparation. dsDNA was subjected to A-tailing and ligation of the barcoded TruSeq adapters. All purification steps were performed using AMPure XP Beads (Beckman Coulter, Brea, CA, USA). Library amplification was performed by PCR using the primer cocktail supplied in the kit. Final libraries were analyzed using Agilent DNA 1000 chip to estimate the quantity and size distribution. They were then quantified by qPCR using the KAPA Library Quantification Kit (Kapa Biosystems, Roche, Basel, Switzerland) before amplification with Illumina’s cBot. Libraries were loaded at a concentration of 2.75 pM onto the flowcell and sequenced 1×50 on Illumina’s HiSeq 2500 to obtain 30–40 M reads.
 
-## 10X scRNAseq
+### 10X scRNAseq
 
 At least 5e4 fresh, alive cells were collected in DMEM media (Sigma-Aldrich) supplemented with 10% FBS (Hyclone) at 4°C and sent to CNAG-CRG for processing and sequencing. In short, cells were separated into nanoscale gel beads emulsions with a 10X barcode. Cell numbers and viability were assessed using a TC20 Automated Cell Counter (Bio-Rad Laboratories, Hercules, CA, USA), with a minimum target of 5000 cells. Later, cDNA sequencing libraries were produced using the NextGEM Single-cell 3’ mRNA kit (v3.1; 10X Genomics) following the manufacturer’s instructions. These steps involved GEM-RT clean-up, cDNA Amplification for 13 cycles, and cDNA quality control and quantification using the Agilent Bioanalyzer High Sensitivity chip (Agilent Technologies). Libraries were indexed by PCR using the PN-220103 Chromium i7 Sample Index Plate. Finally, sequencing was carried out on a NovaSeq 6000 sequencer (Illumina).
 
-## ATACseq
+### ATACseq
 
 For ATACseq (assay for transposase-accessible chromatin using sequencing), 5e4 cells were sorted in PBS and processed for library preparation as described by Buenrostro et al., 2013. Briefly, cells were lysed in cold lysis buffer (10 mM Tris-HCl, pH 7.4, 10 mM NaCl, 3 mM MgCl2, and 0.1% IGEPAL CA-630), washed, and right after resuspended in transposase reaction mix (25 μL 2× TD buffer, 2.5 μL transposase [Illumina], and 22.5 μL nuclease-free water) and incubated for 30 min at 37°C. Next, library fragments were amplified using 1× NEB Next PCR master mix (New England BioLabs) and 1.25 μM of custom Nextera PCR primers forward and reverse. Libraries were rendered using the barcoded primers Ad1_noMX as forward and Ad2.1-6 as reverse and purified using a PCR cleanup kit (QIAGEN), yielding a final concentration of about 30 nM in 20 μL. Libraries were then analyzed on Bioanalyzer using an Agilent DNA High Sensitivity chip (Agilent Technologies, Santa Clara, CA, USA) to estimate the quantity and size distribution. Next, they were quantified by qPCR using the KAPA Library Quantification Kit before amplification with Illumina’s cBot. Libraries were finally loaded at 3.33 pM onto the flowcell and sequenced 1×50 on Illumina’s HiSeq 2500.
 
-## 10X scMultiome (scRNAseq+scATACseq)
+### 10X scMultiome (scRNAseq+scATACseq)
 
 For 10X Multiome RNAseq+ATACseq, at least 5e5 fresh, alive cells were collected in DMEM media (Sigma-Aldrich) supplemented with 10% FBS (Hyclone) at 4°C, and then lysed and nuclei isolated. Nuclei were transposated and adapter sequences added to DNA fragments. Nuclei were then processed for single-cell barcoding and library generation following the manufacturer’s instructions (CG000338; 10X Genomics). Briefly, isolated nuclei were partitioned into Gel Bead-In-Emulsions to produce barcoded cDNA from poly-adenylated mRNA as described above, as well as barcoded DNA fragments, and processed for library amplification and sequencing on a NovaSeq 6000 sequencer (Illumina) as described above.
 
-## ChIPseq
+### ChIPseq
 
 Chromatin immunoprecipitation (ChIP) and sequencing was performed for H3K4me3, H3K27me, and H3K27Ac bound DNA via ChIPseq. We used 1e6 cells. Cells were pooled from tetramer+ T-cells from BDC2.5/IAg7-NP-treated mice (eight mice), and TFH (CD4+/CD44hi/CXCR5hi/PD1hi), and TH0 cells (CD4+/CD44–/CXCR5–/PD1–) (extract from the same group of eight mice). In brief, cell dry pellets were fixed right after cell sorting with 10% PFA in DMEM (Sigma-Aldrich) supplemented with 10% FBS (Hyclone). Next, cells were lysed, sheared, and sonicated using an S220 Focused-ultrasonicator (Covaris, Woburn, MA, USA) (13 min, 105 W, 2% Duty Factor, 200 cycles). This was followed by overnight incubation with the precipitating antibody: 0.5 µL of H3K4me3 (Sigma), 0.5 µL of H3K27me3 (Cell Signaling, Danvers, MA, USA), and 2 µL of H3K27Ac (Abcam, Cambridge, United Carlsbad, CA, USA) and precipitated using Protein-A-Dynabeads (Abcam). RNA was cleared using RNAse A (QIAGEN) (1 hr at 65°C), and decrosslinking was performed overnight with proteinase K at 65°C. DNA was finally purified with Phenol-Chloroform and EtOH-precipitation. After validation by Bioanalyzer analysis quality control (Agilent Technologies), samples were sequenced. Libraries were prepared using the NEB Next Ultra DNA Library Prep kit (Illumina) following the manufacturer’s protocol. Libraries were loaded at a concentration of 2.75 pM onto flowcells and were sequenced 1×50 on Illumina’s HiSeq 2500.
 
-## Methylome
+### Methylome
 
 For methylome analysis, genomic DNA was extracted using the DNeasy Blood and Tissue kit (QIAGEN) following the manufacturer’s instructions. Samples were then sent to Beijing Genomics Institute (BGI, Shenzhen, China), once frozen, for sequencing and bioinformatics analysis. DNA was processed by whole-genome bisulfite sequencing. DNA was sonicated to a mean size of 250 bp using a Bioruptor (Diagenode, Belgium) and ends blunted by dA addition to the 3’-end. Finally, adapters were ligated to protect bisulfite conversions. Next, ligated DNA was bisulfite converted using an EZ DNA Methylation-Gold kit (ZYMO, Irvine, CA, USA). Unmethylated cytosines were converted into uracil, which after purification and amplification via PCR, were converted back to thymine. Finally, samples were sequenced at 2×150 bp using NovaSeq 6000 system (Illumina).
 
-## Bioinformatic and statistical analyses
+### Bioinformatic and statistical analyses
 
 All fastq files obtained for each omics analysis were assessed for their quality control metrics before further downstream analysis using the FastQC tool. Sources for the indicated bioinformatic packages and tools are described further below.
 
-## RNAseq
+#### RNAseq
 
 For bulk RNAseq analysis, fastq file reads were aligned using STAR to GRCm38.p6 mouse genome, and gene counts were obtained using Gencode M25 annotation release version simultaneously with the ‘GeneCounts’ STAR function. The resulting BAM files were processed into BigWig format for genomic tracks representation using SAMtools, deepTools, and trackViewer. Next, raw count values were processed and analyzed using R packages DESeq2 for normalization, scaling, and negative binomial distribution differential analysis. ggplot2 (tidyverse) was mainly used for graphics rendering purposes. Differential analysis log2 fold changes results were shrunk using ‘apglm’ to remove noise (Zhu et al., 2019).
 
-## ATACseq and ChIPseq
+#### ATACseq and ChIPseq
 
 For bulk ATACseq analysis, Illumina adapters and low-quality bases were first removed from fastq files reads using Trimmomatic. Next, reads were aligned to GRCm38.p6 mouse genome using Bowtie2, and duplicates were removed using Picard’s ‘MarkDuplicates’. Then peaks were called using MACS2 with a q-value cutoff of 0.05, read extension of 5’->3’ of 150, and keeping duplicates as they had been removed previously (‘-q 0.05 --nomodel --extsize 150 --keep-dup all’). The resulting BAM files were processed into BigWig format for genomic tracks representation using SAMtools, deepTools, and trackViewer.
 
@@ -274,30 +1115,30 @@ For ATACseq analysis differential OCRs between samples were analyzed using DiffB
 
 Differential peaks between ChIPseq samples were obtained using GSA (gene set analysis) from Partek. Peaks were annotated using ‘annotatePeak’ from the ChIPseeker package, using the UCSC mm10 reference included in org.Mm.eg.db and TxDb.Mmusculus.UCSC.mm10.knownGene R packages. Given that peak calling alone does not account for variations in the intensity of histone mark deposition, analysis of differential histone deposition includes both qualitative and quantitative assessments. Whereas qualitative assessment involves evaluating the overall pattern and distribution of the various histone marks, quantitative assessment measures the intensity and magnitude of histone mark deposition.
 
-## Methylome
+#### Methylome
 
 Upstream bioinformatic analysis of whole-genome methylome data was performed by the bioinformatics team at BGI. In short, sequencing data was first filtered to remove adaptor sequences and low-quality reads from raw reads. Filtered data was then mapped to the reference genome (mm10) by BSMAP, and duplication reads were removed. Regarding alignment quality metrics, the mapping rate and bisulfite conversion rate were measured for each sample. Only uniquely mapped data was used to get methylation data. Methylation level was determined by dividing the number of reads covering each mC by the total reads covering that cytosine. DMRs were identified by comparison between sample methylomes using windows that contained at least five CpG (CHG or CHH) sites with at least a twofold change in methylation level and Fisher’s exact test p-value≤0.05. Adjacent DMRs would be considered interdependent and joined into one continuous DMR if all the regions were differentially methylated between samples. Otherwise, DMRs were identified as independent. Genomic tracks for methylome data were represented using the trackViewer R package.
 
-## scRNAseq
+#### scRNAseq
 
 10X scRNAseq data was demultiplexed, aligned, and counts measured using Cellranger software from 10X Genomics. In short, Cellranger 10X software first filter and trim low-quality reads, then align them to a reference genome using STAR. Next, UMI (reads) and cell barcodes are filtered, grouped, and counted. Cells are called and reported their gene expression in matrices based on RNA content for each cell barcode. We then performed the secondary analysis of gene expression using the Seurat R package, where we first discarded poor quality cells based on features counts and mitochondrial and ribosomal content. Then, data was normalized, scaled, and dimensionally reduced using PCA (principal component analysis) and UMAP. Finally, cells were clustered using K-means, and visualization and differential analysis were performed.
 
-## scMultiome (scRNAseq+scATACseq)
+#### scMultiome (scRNAseq+scATACseq)
 
 10X single-cell multiomic data of simultaneous RNAseq and ATACseq was analyzed using 10X Genomics software Cellranger-arc. In this case, gene expression matrices from gene expression data are obtained like with Cellranger software (see the previous section). On the other hand, transposase accessibility data is adapter-removed and trimmed. Next, alignment is performed using the BWA-MEM algorithm, using a fixed insert size distribution, and duplicates removed. Afterward, peaks are called across all the cells to maximize the signal and then separated by barcode, obtaining peak-barcode matrices. Subsequently, gene expression and accessibility peaks matrices were combined and downstream-analyzed using Seurat and Signac packages. Like the scRNAseq pipeline, data were first filtered for poor-quality cells using features and peaks counts, mitochondrial content, nucleosome signal, and TSS enrichment. Later, RNA and ATAC data were normalized and scaled. Also, each dataset was dimensionally reduced using PCA for RNA and LSI (Latent Semantic Indexing) for ATAC and UMAP. Multidimensional reduction of joint RNAseq and ATACseq data simultaneously was performed using the WNN algorithm from Seurat and clustered using K-means.
 
-## Active enhancer prediction
+#### Active enhancer prediction
 
 ATACseq and H3K27ac-ChIPseq were used to predict potential active enhancer regions. Using the ‘GenomicRanges’ package, all peaks called for ATACseq overlapping peaks called for H3K27Ac deposition in the same sample, which were not in a promoter region (2 kb region upstream of TSS), were considered active enhancers.
 
-## Chromosome views
+#### Chromosome views
 
 We used the trackViewer R package to combine the information from RNAseq, ATACseq, ChIPseq, predicted active enhancers, and methylation data in linear plots representing gene tracks for specific genes. Alignment bam files for RNAseq, ATACseq, and ChIPseq were transformed to BigWig format using deepTools.
 
-## Software and tools used for bioinformatic analyses
+### Software and tools used for bioinformatic analyses
 
 Bowtie2 (v2.4.2) (Langmead and Salzberg, 2012); BSMAP (v3.0) (Xi and Li, 2009); BWA (v0.0.7) (Li and Durbin, 2010); Cellranger (v6.0) (https://support.10xgenomics.com/single-cell-gene-expression/software/pipelines/latest/what-is-cell-ranger); Cellranger-arc (v2.0) (https://support.10xgenomics.com/single-cell-multiome-atac-gex/software/pipelines/latest/what-is-cell-ranger-arc); ChIPSeeker (v1.28.3) (Yu et al., 2015); clusterProfiler (v4.0.5) (Wu et al., 2021); deepTools (v3.5.0) (Ramírez et al., 2014); DESeq2 (v1.32.0) (Love et al., 2014); DiffBind (v3.2.7) (Ross-Innes et al., 2012); FastQC (http://www.bioinformatics.babraham.ac.uk/projects/fastqc/); FlowJo (v9) (https://www.flowjo.com); GenomicRanges (v1.44.0) (Lawrence et al., 2013); MACS2 (v2.2.7.1) (Zhang et al., 2008); org.Mm.eg.db (v3.13.0) (https://bioconductor.org/packages/release/data/annotation/html/org.Mm.eg.db.html); Partek Flow software (https://www.partek.com/partek-flow/); Picard (v2.25.0) (https://broadinstitute.github.io/picard/); R (v4.1.0), R Core Team (2020). — European Environment Agency, n.d. (https://www.eea.europa.eu/data-and-maps/indicators/oxygen-consuming-substances-in-rivers/r-development-core-team-2006); RStudio (v1.4.1103) (https://www.rstudio.com/); SAMtools (Li et al., 2009); Seurat (v4.0.3) (Hao et al., 2021); Signac (v1.3.0) (Stuart et al., 2021); STAR (v2.7.10a) (Dobin et al., 2013); tidyverse (v1.3.1) (https://www.tidyverse.org); trackViewer (v1.31.1) (Ou and Zhu, 2019); Trimmomatic (v.039) (Bolger et al., 2014).
 
-## Statistical analyses
+### Statistical analyses
 
 Statistical significance of the transcriptomic and epigenetic data was compared using the bioinformatic tools described above. Statistical significance for differences in the numbers of genes shared between different subsets was determined using the Chi-square test.

@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.42583.001 Posterior parietal cortex (PPC) has been implicated in navigation, in the control of movement, and in visually-guided decisions. To relate these views, we measured activity in PPC while mice performed a virtual navigation task driven by visual decisions. PPC neurons were selective for specific combinations of the animal's spatial position and heading angle. This selectivity closely predicted both the activity of individual PPC neurons, and the arrangement of their collective firing patterns in choice-selective sequences. These sequences reflected PPC encoding of the animal’s navigation trajectory. Using decision as a predictor instead of heading yielded worse fits, and using it in addition to heading only slightly improved the fits. Alternative models based on visual or motor variables were inferior. We conclude that when mice use vision to choose their trajectories, a large fraction of parietal cortex activity can be predicted from simple attributes such as spatial position and heading.
+Posterior parietal cortex (PPC) has been implicated in navigation, in the control of movement, and in visually-guided decisions. To relate these views, we measured activity in PPC while mice performed a virtual navigation task driven by visual decisions. PPC neurons were selective for specific combinations of the animal's spatial position and heading angle. This selectivity closely predicted both the activity of individual PPC neurons, and the arrangement of their collective firing patterns in choice-selective sequences. These sequences reflected PPC encoding of the animal’s navigation trajectory. Using decision as a predictor instead of heading yielded worse fits, and using it in addition to heading only slightly improved the fits. Alternative models based on visual or motor variables were inferior. We conclude that when mice use vision to choose their trajectories, a large fraction of parietal cortex activity can be predicted from simple attributes such as spatial position and heading.
 
 ## Introduction
 
@@ -36,6 +36,16 @@ To investigate how spatial navigation, body movement, and decision-making are re
 
 We trained mice in a virtual navigation task driven by perceptual decisions (Figure 1a–c). Head-fixed mice performed a visual two-alternative forced-choice (2AFC) contrast-detection task by walking on an air-suspended ball (Dombeck et al., 2010) through a virtual corridor (Figure 1a, Video 1). One of the corridor’s side walls, chosen randomly, contained a vertical grating, and mice indicated that side by turning into the left or right arms at the end of the corridor (Figure 1b). Successful trials were followed by a water reward, and unsuccessful ones by a brief white-noise sound. To control the task difficulty, we varied the grating’s contrast randomly across trials. Accordingly, contrast exerted a powerful influence on performance: mice frequently chose the correct side for high-contrast stimuli, and performed at chance when contrast was low or zero (Figure 1c).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/42583/elife-42583-fig1-v2.jpg)
+
+**Figure 1.:** (a) Schematic view of the experimental setup. The monitors are positioned at 90 deg relative to each other, spanning 270 deg of the horizontal field of view. (b) Schematic of the virtual environment. The mouse receives a water reward for turning in the correct direction at the end of the corridor. (c) Psychometric curve for an example session. Negative contrasts indicate stimuli on the left wall, positive values indicate stimuli on the right wall. Error bars indicate 95% confidence intervals. (d-f) Examples of trajectories in position-heading coordinates within a single session (where heading was allowed to vary between −90 and 90), divided according to the whether the final choice was leftward (red) or rightward (blue). For easier trials (high contrast, (f), the trajectories in the corridor tended to diverge sooner than for harder trials (low or zero contrast, (d–e). Thick lines indicate the median θ for each z, shaded areas indicate 25th-75th percentile range of θ, dotted lines indicate individual trials. (g) The probability of predicting the final choice of the animal (predictability) from its heading increases as the mouse progresses through the corridor. Error bars represent s.e.m. (1409 trials in seven sessions in one mouse). (h) Heading provides increasingly accurate predictions of the psychometric functions as the animal progresses through the corridor (same data as in g), gray levels as in g). (i) Retinotopic map acquired using widefield imaging of a GCaMP6f transgenic mouse. This map was used in combination with stereotaxic coordinates to identify brain areas (Figure 1—figure supplement 1). (j) Mean fluorescence of a single plane obtained in PPC with two-photon imaging. Active cells (shown in color) were identified by a cell detection algorithm, and curated to include only cell bodies. (k–n) Choice-specific sequences of activity. PPC cells appeared to be selective to the trial outcome, some firing in trials ending with a left choice (k) and others in trials ending with a right choice (n). Also, cells were only active in a specific position in the corridor. These figures show all active cells from two example recording sessions (no cells were excluded).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42583/elife-42583-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Outlines of visual, primary visual, somatosensory and motor cortices were derived from Allen Institute atlas, and aligned to coordinates relative to bregma – [0, 0]. Magenta circle represents the coordinates of PPC as identified in Harvey et al. (2012) – [−2.0 AP, 1.7 ML]. Peach-colored patch represents the FOVs of the 2-photon imaging sessions.
+
+![Video 1.](https://cdn.elifesciences.org/articles/42583/elife-42583-video1.mp4.jpg)
+
 These visual decisions strongly influenced navigation throughout the corridor, as mice typically turned towards the intended side before reaching the end (Figure 1d–h). To describe the navigation trajectories, we considered two variables: position along the corridor (z) and heading angle (θ). In these coordinates, the paths that ended in left and right choices progressively deviated from each other: the animal started heading towards the chosen side before reaching the end of the corridor. This dependence of heading angle θ on decision was particularly clear for trials with higher contrast, which were easier (Figure 1f). The final choice could thus be predicted from the heading angle with increasing accuracy as the mouse reached the end of the corridor (Figure 1g,h).
 
 While mice performed this task, we measured PPC population activity using 2-photon calcium imaging (Figure 1i,j). To identify the borders of visual cortical areas we obtained retinotopic maps using widefield imaging (Figure 1i), and identified PPC as a region anterior to the V1 region, along a contour of pixels that represent a retinotopic azimuth of 60–80 degrees. The average stereotaxic coordinates of this region (Figure 1—figure supplement 1) were close to the coordinates used in previous studies of mouse PPC (2.0 mm posterior, 1.7 mm lateral, Goard et al., 2016; Harvey et al., 2012). We then targeted 2-photon imaging to this region while the mouse was performing the task (Figure 1j). To obtain calcium traces from well-identified cell bodies we applied Suite2p, an image-processing pipeline that provides image registration, cell detection, and neuropil correction, followed by manual curation (Pachitariu et al., 2016).
@@ -43,6 +53,14 @@ While mice performed this task, we measured PPC population activity using 2-phot
 In agreement with previous observations made in a memory-based task (Harvey et al., 2012), all the recorded PPC cells could be divided into two groups forming distinct, choice-dependent sequences of activation (Figure 1k–n). One group of cells responded primarily during trials that ended in a leftward choice (Figure 1k,l), and the other during trials that ended in a rightward choice (Figure 1m,n). Moreover, cells could be ordered so that the responses of each group of cells could be arranged in a sequence of activations (Harvey et al., 2012). While some cells that responded during the initial part of the task tended to fire in both trials that ended with left and right choices, the rest of the cells unambiguously fired only in one or the other of those trials.
 
 To investigate this apparent dependence of activity on choice, we plotted the firing of individual neurons as a function of the animal’s position and heading (Figure 2a,b). Consider an example neuron, which fired mostly during trajectories that ended with rightward choices. Plotting the neuron’s activity on top of the individual trajectories reveals that the neuron tended to respond in precise combinations of position z (~60 cm into the corridor) and heading angle θ (~20 deg to the right). This combination occurred most frequently in trajectories that ended with rightward choices (Figure 2b) but also occasionally in trajectories that ended with leftward choices (Figure 2a). The neuron was active whenever a trajectory brought the mouse to the appropriate combinations of position and heading, regardless of final choice.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/42583/elife-42583-fig2-v2.jpg)
+
+**Figure 2.:** (a,b) Activity ($ΔF/F$) of an example neuron, plotted in pseudocolor, for trajectories that ended in leftward (a) or rightward (b) choices. Columns correspond to different stimulus contrasts and sides as indicated. Trajectories are plotted as a function of position and heading. The neuron fired (red) in a small region of this space, and was mostly silent (blue) elsewhere. (c) The same data, plotted as a function of normalized time. The rows in each panel correspond to trials, divided depending on whether they ended in rightward vs. leftward choices (above vs. below the black bar). (d) Same format as in c, but predicted by the position-heading model in e. Color scale is the same for panels a–d (color bar in c). (e) Position-heading field of this example neuron. Color represents the normalized $ΔF/F$of the neuron. (f). Model prediction (red) compared to the actual calcium traces (cyan) in representative trials. For each trial, the position-heading model was estimated without the calcium data from that trial. (g) The model provides a good explanation for the different levels of activity of the cell in different trials, with a correlation between actual data and model prediction of 0.8 (373 trials). (h–j) Examples of three other cells with position-heading fields in different locations from a different session (216 trials).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/42583/elife-42583-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Responses (top) and model predictions (bottom) for the cell in Figure 2h. Format as in Figure 2b,d. (b,c) same as a, for the example cells in Figure 2i–j.
 
 Indeed, a simple ‘position-heading field’ was sufficient to accurately predict the calcium activity of the neuron (Figure 2c–g). We obtained an activity map of the neuron as a function of position and heading (Figure 2e), and found that it could be used effectively to predict responses as a function of time (Figure 2f). The model performed well across trials (Figure 2c,d), capturing not only the overall preference for trajectories that ended in rightward choices, but also detailed differences in responses in individual trials (Figure 2c,d). For instance, the position-heading field correctly predicted the occasional trials when the neuron responded during leftward choices (above the black bar in Figure 2c,d).
 
@@ -58,6 +76,22 @@ The preferred heading of these PPC cells was thus sufficient to explain their se
 
 Decision was a worse predictor of PPC activity than heading (Figure 4a–c). A model f(z, d) where responses depend on position and decision alone is implicit in representations where neurons are arranged in choice-selective activation sequences (Harvey et al., 2012). It could in principle explain the sequences seen in our data (Figure 1k–n). However, it provided only a rough approximation of the trial-by-trial activity of individual cells, missing its graded dependence on heading angle θ (Figure 4a). To compare the model with the position-heading model f(z, θ), we calculated the correlation between trial-averaged measurements and model predictions, and we cross-validated the results. Before averaging activity in each trial, we excluded positions where decision and heading angle were so highly correlated as to be indistinguishable as predictors. The range of positions varied from session to session and invariably included the end of the corridor. This analysis gave a clear advantage to the position-heading model, with correlations higher by 5.6% than for the position-decision model (±9.8%, m.a.d., n = 7646 neurons, Figure 4b). This advantage was visible also in individual sessions (Figure 4c).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/42583/elife-42583-fig4-v2.jpg)
+
+**Figure 4.:** (a) Average responses of the example cell shown previously (Figure 2a–g) in the range of positions (z) of 60–80 cm, where the cell responds maximally, for trials ending in leftward choices (red) or rightward choices (blue). Curve: fits of the position-heading f(z, θ) model. The bottom panel shows the same data, fitted with a model f(z, (d) where responses depend on position z and decision, d. (b) Comparison of performance of the position-heading model (abscissa) and of the position-decision model (ordinate) for n = 7646 neurons in seven mice. Because of the vast number of neurons, data are summarized by density (gray level). For each neuron, model performance was measured by the correlation across trials between neuronal activity and model prediction. Neuronal activity and model predictions were trial-averaged, after excluding timepoints where decision and heading angle were highly correlated. The histogram shows the distribution of differences in correlation with the two models. (c): Same, but summarized as median values of correlation coefficients on a session-by-session basis. Different symbols denote different mice as indicated in Figure 4—figure supplement 1. (d) Same as b, for the extended model f(z, θ, d), where responses depend on position z, heading angle θ, and decision, d. The model predicts two largely overlapping curves. (e–f) Same as b–c, comparing the performance of the extended model with the position-heading model.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/42583/elife-42583-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a–g) The seven individual mice, each with the symbol used to denote it in Figure 4. The genetic backgrounds of the mice were C57bl/6 (a,b), Camk2a-TTA;Ai93;Emx1 (c–e), and Ai95;Slc17a7-Cre (f,g). The median values of these distributions were not significantly different across the three genotypes (p=0.48, one-way ANOVA). (h) All neurons from all mice.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/42583/elife-42583-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (a) In the playback condition, the estimated position-heading fields of PPC neurons were either much weaker (example cell 1) than during the task behavior, or completely absent (example cell 2) (b) When comparing responses between behavior and playback, neurons in primary visual cortex (posterior fields of view) showed more similarity in their responses between the two conditions than neurons in PPC (anterior fields of view).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/42583/elife-42583-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (a) The position-heading model performs better than the alternative motor model, as measured by cross-validated explained variance. (b) The explained variance of the position-heading model is significantly larger than the explained variance of the motor model (p<0.001, one-sided t-test).
+
 Furthermore, a model with all three predictors performed only slightly better than the model with position and heading alone (Figure 4d–f). We extended the position-heading model to obtain a model f(z, θ, d) that includes explicit knowledge of the mouse decisions (d = left or right). This extended model effectively endows the cell with two position-heading fields for trajectories that end in leftward vs. rightward choices. The extended model thus predicted slightly different curves for trials ending in left vs. right choices (Figure 4d). Across all neurons, the extended model performed at a similar cross-validated level as the simple position-heading model, improving the correlations by only 0.4% (±2.9%, m.a.d., n = 7646 neurons, Figure 4e). Similar results were seen in individual sessions (Figure 4f). Conversely, adding heading angle θ to a model that already includes d considerably improved the fits, with a median increase in correlation of 6.1% (±6.1% m.a.d., n = 7646 neurons). Therefore, heading angle was a much better predictor of responses than decision.
 
 Taken together, these results suggest that much of the activity of PPC neurons in our task can be explained by two spatial attributes: position and heading. A possible caveat in this conclusion, however, is that in our experiment those spatial attributes may covary with visual and motor factors. Position and heading determined the visual scene, and the visual scene could in turn determine the activity of PPC neurons, especially given that mouse PPC overlaps at least partially with regions of higher visual cortex (Wang and Burkhalter, 2007; Zhuang et al., 2017). Likewise, position in z-θ space is itself determined by the animal’s movement on the ball and therefore by motor factors such as linear and angular velocity, which may in turn determine PPC activity (McNaughton et al., 1994; Nitz, 2006; Whitlock, 2014; Whitlock et al., 2012).
@@ -67,6 +101,18 @@ To assess the role of visual factors, we ran a control experiment where the anim
 To assess the role of motor factors, we evaluated a model where PPC activity depends on the mouse’s movement, measured by the ball’s angular and linear velocities. These quantities are related to the derivatives of position z and heading θ, but they are not identical because they are in mouse-centered coordinates and are unconstrained by the boundaries of the virtual corridor. The model based on motor factors performed markedly worse than the model based on position and heading in virtual reality (Figure 4—figure supplement 3).
 
 We finally asked if PPC population activity and its dependence on position and heading were sufficient to decode the details of the mouse’s trajectories and choices (Figure 5). Using established methods (Oram et al., 1998; Zhang et al., 1998) we implemented a simple Bayesian decoder (Figure 5—figure supplement 1). The decoder successfully predicted the position of the animal in position-heading space at individual time points (Figure 5a) and replicated the animal’s trajectory (Figure 5b; Video 2). In predicting the final choice, in fact, the population decoder was just as good as the animal’s actual heading: both showed a similar dependence on position z (Figure 5c) and stimulus contrast (Figure 5d). This result provides further support for the view that during visually-guided navigation, populations of PPC neurons encode spatial position and heading angle.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/42583/elife-42583-fig5-v2.jpg)
+
+**Figure 5.:** (a) The posterior estimate of the position closely follows the actual trajectory of the animal. Different rows represent different trials; different columns represent different moments in the trial. Red dashed line represents the trajectory of the mouse in the trial, circle – the actual position of the mouse in the corridor. Estimation of underlying position-heading fields $\mu_{i}z,\theta$ used for position decoding during a specific trial was performed without including the neural data of that same trial. (b) Estimated trajectories in z-θ space closely follow the actual trajectories of the mouse. The red dashed line represents the actual mouse’s trajectory, green solid line represents estimated trajectory, superimposed on a pseudocolor representation of the underlying posterior probability distribution. (c) Choice predictability, as estimated from the decoded trajectories at different stages of the trial, from early in the trial (faint red) to late in the trial (full red). The neurometric choice predictability increases as the mouse progresses through the corridor, meaning that the final choice becomes increasingly more predictable from the neural activity. Error bars represent s.e.m. (d) Neurometric functions, estimated at different positions in the corridor (faint red line to full red line). The data points here are the same as in Figure 1h), however the curves are fit to the data points decoded from neural activity (not shown).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/42583/elife-42583-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Posterior distribution estimated from PPC population activity at a specific time t and z= z(t). (b) Probability distribution of the heading angle $Pr⁡\theta$ is estimated by calculating an integral of the posterior distribution from a across z. Heading angle θ is estimated as a center of mass of$Pr⁡\theta$. (c) Performing the steps in (a) and (b) for each z provides a prediction of the whole trajectory of the mouse during the trial (green line). Red frame indicates the z=z(t) from the example frame in (a) and (b).
+
+![Video 2.](https://cdn.elifesciences.org/articles/42583/elife-42583-video2.mp4.jpg)
+
+**Video 2.:** The main rectangle represents the position of the mouse in the coordinates of position (z) vs. heading angle (θ). For each trial, the contrast and position of the stimulus shown in that trial is indicated by the grating shown on the left, and the trajectory of the mouse is indicated by a black dashed line. The frame-by-frame position of the mouse is indicated by a circle. The color-coded map is the log posterior distribution of the current position of the mouse estimated from population activity of PPC neurons. The peak (white) indicates the decoded position.
 
 ## Discussion
 
@@ -94,76 +140,120 @@ We report here on experiments performed in seven mice (two C57bl/6 mice, three C
 
 The recordings from the three Ai93-Emx1 mice were made before we realized that this strain tends to show epileptiform activity (Steinmetz et al., 2017). We tested our recordings for this activity and the results were negative. However, we only imaged posterior regions of the cortex, where epileptiform activity can be missed (Steinmetz et al., 2017). For this reason, we recorded from the other strains and we ran a mouse-by-mouse analysis. This analysis did not reveal differences between the strains we used (Figure 4—figure supplement 1), so we pooled the data across all of them.
 
-## Surgery
+### Surgery
 
 For the initial surgery the animal was anesthetized with isoflurane (Merial) at 3–5% for induction, and 0.75–1.5% subsequently. Carprofen (5 mg/kg weight, Rimadyl, Pfizer) was administered subcutaneously for systemic analgesia, and dexamethasone (0.5 mg/kg weight, Colvasone, Norbrook) was administered to prevent brain swelling. The scalp was shaved and disinfected, and a local analgesic (Lidocaine, 5% ointment, TEVA UK; or intradermal injection, 6 mg/kg, Hameln Pharmaceuticals Ltd) was applied prior to the incision. The eyes were covered with eye-protective gel (Viscotears, Alcon; or Chloramphenicol, Martindale Pharmaceuticals Ltd). The animal was positioned in a stereotaxic frame (Lidocaine ointment was applied to the ear bars), the skin covering and surrounding the area of interest was removed, and the skull was cleaned of connective tissue. A custom headplate was positioned above the area of interest and attached to the bone with Superbond C and B (Sun Medical). Then, a round craniotomy (3–4 mm diameter) was made with a fine-tipped diamond drill and/or a biopsy punch (Kai Medical). A cranial window was inserted into the craniotomy and fixed with Vetbond (3M) and Superbond C and B. The cranial window consisted of two superimposed round coverslips (WPI, #1 thickness) – one matching the inner diameter of the craniotomy (3–4 mm), and the other one providing mechanical support on the skull (typically 5 mm diameter). The two coverslips were glued together beforehand using a Norland optical UV curing adhesive (NOA61, ThorLabs Inc.). After the surgery the animal was allowed to recover for at least three days before any behavioral or physiological measurements.
 
 In C57Bl/6 mice, we injected the virus AAV2/1.Syn.GCaMP6f.WPRE.SV40 at a final concentration of 2.3e12 GC/ml before covering the craniotomy with the window. 100 nl of the virus was injected 300 µm below the brain surface at each of two locations targeting PPC (AP = −2 mm, ML = 1.7 mm) and V1 (AP = −3.5 mm, ML = 2.5 mm). The virus was injected at a rate of 2.3 nl every 6 s (Nanoject II, Drummond). The injection pipette was kept in place for about 10 min after the injection to allow full absorption of the virus solution in the tissue.
 
-## Widefield imaging
+### Widefield imaging
 
 To obtain maps of retinotopy we performed widefield imaging: fluorescence imaging on transgenic mice (GCaMP6f-TTA-Emx1-Cre), and intrinsic imaging on wildtype (C57bl/6) mice, with methods described previously (Garrett et al., 2014; Pisauro et al., 2013).
 
-## Water control
+### Water control
 
 To motivate the mice to perform the task we controlled their water intake. Mice obtained a drop of water (typically 2 or 4 μl) for every correct choice. If the water obtained during the task was below the minimum daily dose (40 ml/kg/day), mice received the rest of the dose through an appropriately weighted amount of Hydrogel. On rest days (typically Saturday and/or Sunday) the mice received all their dose through Hydrogel.
 
-## Virtual reality setup
+### Virtual reality setup
 
 The mouse was head fixed with a headplate holder that did not obstruct the visual field. The mouse was free to run on an air-suspended Styrofoam ball (20 cm in diameter), whose rotation was measured by two optical computer mice (Dombeck et al., 2010) and then used in a custom virtual reality engine implemented in Matlab utilizing OpenGL through the Psychophysics Toolbox (Brainard, 1997; Pelli, 1997) to control the visual scene. The rotation of the ball along the axis perpendicular to the animal was responsible for forward movement in virtual reality, and the rotation of the ball along the vertical axis (at 20% gain) was responsible for turning in virtual reality. The lateral displacement of ball (rotation along the axis parallel to the animal’s orientation) was ignored. The virtual reality scene was presented on three computer monitors (Iiyama ProLite E1980SD, 1280 × 1024 pixels, 60 Hz) positioned in a U-shaped configuration around the mouse spanning 270 degrees of the visual field horizontally and 75 degrees vertically. We used a multiplex video card (Matrox TripleHead2Go Digital Edition) to present the visual stimulus on three monitors in a synchronized manner. The light intensity response of the green and the blue channels of the monitors was linearized, while the red component was switched off to reduce light contamination in the fluorescence channel. In addition, to compensate for the light intensity drop-off at sharp viewing angles we attached three Fresnel lenses (f = 22 cm, BHPA220-2-6, Wuxi Bohai Optics Apparatus Electronic Co., Ltd, Wuxi, Jiangsu, China) in front of the monitors.
 
-## Behavior
+### Behavior
 
 The virtual reality environment consisted of a 110 cm long T-Maze with a 20 cm wide corridor. Virtual position was never allowed to be less than 5 cm to any wall. During a trial, a vertical grating appeared on the left or right wall of the corridor. The grating was superimposed on a noise texture (20% visual contrast), which was identical on both walls and across trials. The spatial frequency of the grating was 14 cycles/m, and the resulting spatial frequency in the mouse visual field (in cycles/deg) varied depending on the distance and angle of the wall relative to the mouse. To provide additional visual flow and context, a 40% visual contrast noise pattern was applied to the floor of the corridor (and the ceiling, in some experiments). The sequence of grating contrasts was randomly drawn from a uniform distribution, with negative values indicating positions on the left wall, and positive values positions on the right wall. However, to prevent the animal from developing behavioral biases, trials ending in a wrong choice were repeated until finished correctly, at which point the next trial in the sequence was again a random trial. This ‘baiting’ strategy was applied mainly when the animals displayed a behavioral bias. Correct trials were indicated by a brief beep (0.1 s, 6.6 kHz) tone, while error trials were indicated by a brief (0.2 s) white noise sound. During the inter-trial interval (~2 s) the screen was gray. Trials not finished within 45 s were timed out and a longer (3 s) white-noise sound was played. Mice typically performed between 200 and 400 trials per session (session duration 45–60 min), with typical duration of the finished trials of 6.0 ± 2.0 (median ±m.a.d.) seconds, varying between 4.7 and 11.6 s (median values) for individual animals. The behavioral session was aborted when either the animal stopped performing, or stopped consuming the water reward. Mice required different numbers of training sessions to reach behavioral performance sufficient to be considered for imaging (7 to 36 sessions, 21 on average across seven animals).
 
-## Playback
+### Playback
 
 Playback trials were run immediately after the actual behavioral session, while recording the same cells. The water spout was removed, and the visual stimulus was constructed by chopping the sequence of visual scenes into 0.5 s segments and presenting them in randomized order. To reduce the flickering effect of the visual stimulus, each 0.5 s segment was modified by sinusoidally modulating the contrast at the frequency of 2 Hz, thus smoothing the transition between sequential segments. The animal was free to run on the ball, but this had no effect on the visual stimuli presented. Typically, during these measurements the animals chose to alternate bouts of running with periods of rest.
 
-## Two-photon imaging
+### Two-photon imaging
 
 Two-photon imaging (total of 33 recording sessions) was performed using a standard resonant B-Scope microscope (ThorLabs Inc.) equipped with Nikon 16x, 0.8 NA objective, and controlled by ScanImage 4.2 (Pologruto et al., 2003). Frame rate was set to ~30 Hz, with the field of view of ~500×500 µm (512 × 512 pixels). This frame rate was further shared between 3–5 imaging planes spanning the depth of L2/3 using a piezo focusing device (P-725.4CA PIFOC, Physik Instrumente) resulting in a 6–10 Hz effective sampling rate per cell. Laser power was depth-adjusted and synchronized with piezo position using an electro-optical modulator (M350-80LA, Conoptics Inc.). The imaging objective and the piezo device were light shielded using a custom-made metal cone, a tube, and black cloth to prevent contamination of the fluorescent signal caused by the monitors’ light. Excitation light at 970 nm was delivered by an Ultra II femtosecond laser (Coherent, UK)
 
-## Data preprocessing
+### Data preprocessing
 
-Preprocessing of the two-photon data routinely included registration, segmentation, and neuropil correction (. The whole cell detection pipeline is explained in Pachitariu et al., 2016. ). To analyze playback experiments we also applied a deconvolution algorithm to extract spikes from the continuous calcium data (Vogelstein et al., 2010). To calculate ΔF/F, the baseline fluorescence F0 was taken as the 20th percentile of the overall level of fluorescence of a cell.
+Preprocessing of the two-photon data routinely included registration, segmentation, and neuropil correction (. The whole cell detection pipeline is explained in Pachitariu et al., 2016. ). To analyze playback experiments we also applied a deconvolution algorithm to extract spikes from the continuous calcium data (Vogelstein et al., 2010). To calculate ΔF/F, the baseline fluorescence $F_{0}$ was taken as the 20th percentile of the overall level of fluorescence of a cell.
 
-## Estimation of z-θ maps
+### Estimation of z-θ maps
 
-To estimate the position-heading field of each neuron we used a local likelihood approach (Loader, 1999). First, we used the data to estimate the occupancy map Mocc(z,θ) and the accumulated fluorescence signal map Msig(z,θ). Then, we filtered both maps with a Gaussian filter, and we calculated the resulting position-heading field as:Fz,θ=Msigfiltz,θ+λ ⋅FmeanMoccfiltz,θ+λ
+To estimate the position-heading field of each neuron we used a local likelihood approach (Loader, 1999). First, we used the data to estimate the occupancy map $M_{occ}(z,\theta)$ and the accumulated fluorescence signal map $M_{sig}(z,\theta)$. Then, we filtered both maps with a Gaussian filter, and we calculated the resulting position-heading field as:
 
-Where Fmean is the mean fluorescence of the cell, and λ is a small number used for regularization, to prevent large estimation errors in location where little or no data is available in z-θ space.
+$$
+Fz,\theta=\frac{M_{sig}^{filt}z,\theta+\lambda⋅F_{mean}}{M_{occ}^{filt}z,\theta+\lambda}
+$$
 
-The size of the Gaussian filter σz,σθ was optimally chosen for each cell through a 10-fold cross-validation procedure. In this procedure, for each set of values σz,σθ 90% percent of the trials (training subset) were chosen to estimate F^(z,θ). Then, performance of the model F^(z,θ) was measured on the remaining 10% of the trials (test subset). On each fold the following error function was used to estimate the performance of the fit:ϵ(σz,σθ)=⟨(F^(z(t),θ(t))−F(z(t),θ(t)))2⟩t⟨(F(z(t),θ(t))−Fmeantrain)2⟩t
+Where $F_{mean}$ is the mean fluorescence of the cell, and $\lambda$ is a small number used for regularization, to prevent large estimation errors in location where little or no data is available in z-θ space.
 
-Where Fmeantrain is the average ΔF/F of the training (90%) subset of the data. The procedure was repeated 10 times for different 90/10 partitions of the data. The set of filter values σz,σθ, which resulted in the best overall performance of the model was chosen as optimal and used in subsequent analyses for that neuron.
+The size of the Gaussian filter $\sigma_{z},\sigma_{\theta}$ was optimally chosen for each cell through a 10-fold cross-validation procedure. In this procedure, for each set of values $\sigma_{z},\sigma_{\theta}$ 90% percent of the trials (training subset) were chosen to estimate $F^(z,\theta)$. Then, performance of the model $F^(z,\theta)$ was measured on the remaining 10% of the trials (test subset). On each fold the following error function was used to estimate the performance of the fit:
 
-## Models involving decision
+$$
+ϵ(\sigma_{z},\sigma_{\theta})=\frac{⟨(F^(z(t),\theta(t))−F(z(t),\theta(t)))^{2}⟩_{t}}{⟨(F(z(t),\theta(t))−F_{mean}^{train})^{2}⟩_{t}}
+$$
 
-Models incorporating decision were estimated using a similar cross-validation approach. The data for trials ending in leftward and rightward choices were treated separately. For each half of the data, we estimated the optimal σz (for the f(z,d) model) or σz,σθ (for the f(z,θ,d) model) using the same cross-validation procedure as for the f(z,θ) model, explained previously. This effectively resulted in two sub-models for each model (f(z,d) or f(z,θ,d)), with two sets of optimal smoothing parameters – one for trials ending in leftward choices and one for trials ending in rightward choices. The two sub-models were then taken together to predict calcium activity on the full set of trials.
+Where $F_{mean}^{train}$ is the average $ΔF/F$ of the training (90%) subset of the data. The procedure was repeated 10 times for different 90/10 partitions of the data. The set of filter values $\sigma_{z},\sigma_{\theta}$, which resulted in the best overall performance of the model was chosen as optimal and used in subsequent analyses for that neuron.
 
-## Quality of fit analysis
+### Models involving decision
 
-Depending on the model, different combinations of behavioral parameters (z-θ, z-d, or z-θ-d) were used to predict each cell’s activity. For each session the data were randomly divided into 10 groups of trials (with balanced rightward and leftward trials in each group). For each group of trials, the activity was predicted using the other 90% of the dataσz or σz,σθ. The Pearson’s correlation coefficient between mean trial-by-trial actual and predicted responses was used to evaluate and compare performance of different models.
+Models incorporating decision were estimated using a similar cross-validation approach. The data for trials ending in leftward and rightward choices were treated separately. For each half of the data, we estimated the optimal $\sigma_{z}$ (for the $f(z,d)$ model) or $\sigma_{z},\sigma_{\theta}$ (for the $f(z,\theta,d)$ model) using the same cross-validation procedure as for the $f(z,\theta)$ model, explained previously. This effectively resulted in two sub-models for each model ($f(z,d)$ or $f(z,\theta,d)$), with two sets of optimal smoothing parameters – one for trials ending in leftward choices and one for trials ending in rightward choices. The two sub-models were then taken together to predict calcium activity on the full set of trials.
+
+### Quality of fit analysis
+
+Depending on the model, different combinations of behavioral parameters (z-θ, z-d, or z-θ-d) were used to predict each cell’s activity. For each session the data were randomly divided into 10 groups of trials (with balanced rightward and leftward trials in each group). For each group of trials, the activity was predicted using the other 90% of the data$\sigma_{z}$ or $\sigma_{z},\sigma_{\theta}$. The Pearson’s correlation coefficient between mean trial-by-trial actual and predicted responses was used to evaluate and compare performance of different models.
 
 At certain positions (z) of the T-Maze (typically towards the end of the corridor), heading (θ) and final choice (d) become strongly correlated. To increase sensitivity of the comparison between the models we excluded data coming from these times (effectively, when the mouse is at certain z positions) when estimating quality of fits (Figure 4). For each behavioral session and for each position z we have estimated the area under the ROC (auROC) curve for two variables – heading and choice (which is a measure of how well one can be predicted from another). On a session-by-session basis, data from positions z where the auROC curve was greater than 0.95 were excluded from the estimation of fit quality.
 
-## Analysis of playback data
+### Analysis of playback data
 
 Calcium dynamics measured with GCaMP6f is slow, with decay times as long as a few hundreds of milliseconds (Chen et al., 2013). During playback presentation of 0.5 s visual stimuli, this slowly decaying signal will cross-contaminate responses to sequential stimuli. Therefore, for the analysis of the playback experiment, where this issue is critical, we used inferred firing rate (Vogelstein et al., 2010) and not ΔF/F. To compare activity between the behavior and playback conditions at the corresponding 0.5 s segments, we used the correlation coefficient between the inferred firing rates (binned at 0.5 s).
 
-## Decoding of population responses
+### Decoding of population responses
 
-To predict the distribution of locations in z-θ space visited by the animal during the session (Prz,θ) we used the position-heading fields (μiz,θ estimated separately for each cell i), and employed a Bayesian decoding approach.
+To predict the distribution of locations in z-θ space visited by the animal during the session ($Prz,\theta$) we used the position-heading fields ($\mu_{i}z,\theta$ estimated separately for each cell $i$), and employed a Bayesian decoding approach.
 
-Below we show that in this approach, the posterior probability distribution for the animal’s position in z-θ space at time t is:log⁡Post(z,θ)=−∑i(μi(z,θ)−ri(t))22σi2+log⁡Pr(z,θ)+constwhere rit is the response of cell i at time t, and σi2 is the overall variance of the response of cell i throughout the session.
+Below we show that in this approach, the posterior probability distribution for the animal’s position in z-θ space at time $t$ is:
 
-To see this, assume that the response (ΔF/F, or even simply F) of cell i at each location z,θ is a Gaussian random variable:Riz,θ~ Nμiz,θ, σiz,θwhere μiz,θ is the expected fluorescence of the cell at position z,θ, that is its position-heading field, and σiz,θ is the variability of fluorescence at this location. Let’s make the additional assumption that σiz,θ=σi, that is it depends on the cell i but not on location in z,θ.
+$$
+log⁡Post(z,\theta)=−\sumi\frac{(\mu_{i}(z,\theta)−r_{i}(t))^{2}}{2\sigma_{i}^{2}}+log⁡Pr(z,\theta)+const
+$$
 
-Given these assumptions, the probability of this random variable to equal the value ri at time t is:PrRiz,θ=rit=12π⋅σi⋅exp⁡-μiz,θ-rit22σi2and the likelihood of a measured population response is:Lz,θ=∏iPrRiz,θ=rit=∏i12π⋅σi⋅exp⁡-μiz,θ-rit22σi2
+where $r_{i}t$ is the response of cell $i$ at time $t$, and $\sigma_{i}^{2}$ is the overall variance of the response of cell $i$ throughout the session.
 
-Taking the logarithm yields:log⁡L(z,θ)=−∑i(μi(z,θ)−ri(t))22σi2−∑ilog⁡(σi)−∑ilog⁡(2π)
+To see this, assume that the response ($ΔF/F$, or even simply F) of cell i at each location $z,\theta$ is a Gaussian random variable:
 
-If we want to incorporate the position prior (occupancy map) to get the posterior probability distribution:Postz,θ=Lz,θ⋅Prz,θlog⁡Post(z,θ)=log⁡L(z,θ)+log⁡Pr(z,θ)=−∑i(μi(z,θ)−ri(t))22σi2−∑ilog⁡(σi)−∑ilog⁡(2π)+log⁡Pr(z,θ)
+$$
+R_{i}z,\theta~N\mu_{i}z,\theta,\sigma_{i}z,\theta
+$$
+
+where $\mu_{i}z,\theta$ is the expected fluorescence of the cell at position $z,\theta$, that is its position-heading field, and $\sigma_{i}z,\theta$ is the variability of fluorescence at this location. Let’s make the additional assumption that $\sigma_{i}z,\theta=\sigma_{i}$, that is it depends on the cell i but not on location in $z,\theta$.
+
+Given these assumptions, the probability of this random variable to equal the value $r_{i}$ at time t is:
+
+$$
+PrR_{i}z,\theta=r_{i}t=\frac{1}{\sqrt{2\pi}⋅\sigma_{i}}⋅exp⁡-\frac{\mu_{i}z,\theta-r_{i}t^{2}}{2\sigma_{i}^{2}}
+$$
+
+and the likelihood of a measured population response is:
+
+$$
+Lz,\theta=\prodiPrR_{i}z,\theta=r_{i}t=\prodi\frac{1}{\sqrt{2\pi}⋅\sigma_{i}}⋅exp⁡-\frac{\mu_{i}z,\theta-r_{i}t^{2}}{2\sigma_{i}^{2}}
+$$
+
+Taking the logarithm yields:
+
+$$
+log⁡L(z,\theta)=−\sumi\frac{(\mu_{i}(z,\theta)−r_{i}(t))^{2}}{2\sigma_{i}^{2}}−\sumilog⁡(\sigma_{i})−\sumilog⁡(\sqrt{2\pi})
+$$
+
+If we want to incorporate the position prior (occupancy map) to get the posterior probability distribution:
+
+$$
+Postz,\theta=Lz,\theta⋅Prz,\theta
+$$
+
+
+
+$$
+log⁡Post(z,\theta)=log⁡L(z,\theta)+log⁡Pr(z,\theta)=−\sumi\frac{(\mu_{i}(z,\theta)−r_{i}(t))^{2}}{2\sigma_{i}^{2}}−\sumilog⁡(\sigma_{i})−\sumilog⁡(\sqrt{2\pi})+log⁡Pr(z,\theta)
+$$
 
 Dropping the constants leaves only position-dependent variables, to obtain the expression at the beginning of this section.

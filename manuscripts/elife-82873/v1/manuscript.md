@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/01cby8j38 Departamento de Bioquímica, Facultad de Medicina, Universidad Autónoma de Madrid Madrid Spain
-2. https://ror.org/00ha1f767 Instituto de Investigaciones Biomédicas “Alberto Sols”, Consejo Superior de Investigaciones Científicas Madrid Spain
-3. https://ror.org/00ca2c886 CIBER de Enfermedades Raras, Instituto de Salud Carlos III Madrid Spain
+1. Departamento de Bioquímica, Facultad de Medicina, Universidad Autónoma de Madrid Madrid Spain ([ROR:01cby8j38](https://ror.org/01cby8j38))
+2. Instituto de Investigaciones Biomédicas “Alberto Sols”, Consejo Superior de Investigaciones Científicas Madrid Spain ([ROR:00ha1f767](https://ror.org/00ha1f767))
+3. CIBER de Enfermedades Raras, Instituto de Salud Carlos III Madrid Spain ([ROR:00ca2c886](https://ror.org/00ca2c886))
 
 † Corresponding author
 

@@ -18,7 +18,7 @@
 
 ## Abstract
 
-Dietary magnesium (Mg 2+ ) supplementation can enhance memory in young and aged rats. Memory-enhancing capacity was largely ascribed to increases in hippocampal synaptic density and elevated expression of the NR2B subunit of the NMDA-type glutamate receptor. Here we show that Mg 2+ feeding also enhances long-term memory in Drosophila . Normal and Mg 2+ -enhanced fly memory appears independent of NMDA receptors in the mushroom body and instead requires expression of a conserved CNNM-type Mg 2+ -efflux transporter encoded by the unextended ( uex ) gene. UEX contains a putative cyclic nucleotide-binding homology domain and its mutation separates a vital role for uex from a function in memory. Moreover, UEX localization in mushroom body Kenyon cells (KCs) is altered in memory-defective flies harboring mutations in cAMP-related genes. Functional imaging suggests that UEX-dependent efflux is required for slow rhythmic maintenance of KC Mg 2+ . We propose that regulated neuronal Mg 2+ efflux is critical for normal and Mg 2+ -enhanced memory.
+Dietary magnesium (Mg2+) supplementation can enhance memory in young and aged rats. Memory-enhancing capacity was largely ascribed to increases in hippocampal synaptic density and elevated expression of the NR2B subunit of the NMDA-type glutamate receptor. Here we show that Mg2+ feeding also enhances long-term memory in Drosophila. Normal and Mg2+-enhanced fly memory appears independent of NMDA receptors in the mushroom body and instead requires expression of a conserved CNNM-type Mg2+-efflux transporter encoded by the unextended (uex) gene. UEX contains a putative cyclic nucleotide-binding homology domain and its mutation separates a vital role for uex from a function in memory. Moreover, UEX localization in mushroom body Kenyon cells (KCs) is altered in memory-defective flies harboring mutations in cAMP-related genes. Functional imaging suggests that UEX-dependent efflux is required for slow rhythmic maintenance of KC Mg2+. We propose that regulated neuronal Mg2+ efflux is critical for normal and Mg2+-enhanced memory.
 
 ## Introduction
 
@@ -36,23 +36,43 @@ Here we demonstrate that Drosophila long-term memory (LTM) can be enhanced with 
 
 ## Results
 
-## Mg2+ feeding enhances LTM of wild-type flies
+### Mg2+ feeding enhances LTM of wild-type flies
 
 Prior studies reported that feeding rats with food containing a high concentration of Mg2+-enhanced their learning and memory capability (Slutsky et al., 2010; Landfield and Morgan, 1984; Abumaria et al., 2011; Mickley et al., 2013; Abumaria et al., 2013). We therefore tested whether similar effects exist in flies by feeding them with food containing a high concentration of Mg2+ before training. Surprisingly, wild-type flies fed for 4 days before training with food supplemented with additional magnesium chloride (MgCl2) exhibited significantly enhanced 24 hr memory performance. Memory enhancement depends on concentration and was maximal when food was supplemented with 80 mM MgCl2 (Figure 1A). Immediate memory performance was not obviously enhanced (Figure 1B). The enhancing effect of MgCl2 was also observed in flies fed with magnesium sulfate (MgSO4) but not calcium chloride (CaCl2) (Figure 1C). In addition, feeding flies for 4 days with food containing between 5 and 80 mM strontium chloride (SrCl2) resulted in high levels of mortality and flies that survived 5 mM SrCl2 feeding did not show enhanced immediate or 24 hr memory performance (data not shown). The memory enhancing effects can therefore be specifically attributed to dietary supplementation of divalent Mg2+.
 
-## Mg2+-enhanced memory is independent of NMDAR in the mushroom bodies
+![Figure 1.](https://cdn.elifesciences.org/articles/61339/elife-61339-fig1-v2.jpg)
+
+**Figure 1.:** (A) Wild-type flies were trained and tested for 24 hr appetitive memory after 1–5 days of ad libitum feeding on food supplemented with Mg2+. Memory was significantly enhanced in flies fed for 4 days with 80 mM MgCl2, as compared to those fed with 1 mM. 80 mM MgCl2 produced marginally higher performance than 50 mM or 100 mM and so was considered optimal (asterisks denote p<0.05, t-test between 1 mM and 80 mM groups for each time point, n = 6–8). (B) 4 days of 80 mM MgCl2 food did not enhance immediate memory. (C) Appetitive 24 hr memory was enhanced by feeding wild-type flies for 4 days with MgCl2 and MgSO4, but not CaCl2. Asterisks denote significant differences (p<0.05, ANOVA, n = 6) between Mg2+ fed and plain groups. (D) RT-qPCR showed no significant differences in glutamate receptor mRNA expression between 1 mM and 80 mM fed flies (t-test, n = 5). (E) c739-GAL4; UAS-MagFRET-1 flies were fed for 4 days on food supplemented with Mg2+. Brains were dissected and fixed and a fluorescence emission ratio measurement (Citrine/Cerulean) was taken as an indicator of [Mg2+]i. The MagFRET signal was significantly greater in the αβ lobes of flies fed with 80 mM MgCl2 than those fed with 1 mM MgCl2 (p<0.05, t-test, n = 52–60). Unless otherwise noted, all data are mean ± standard error of mean (SEM). Asterisks denote significant differences (p<0.05), individual data points displayed as open circles.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/61339/elife-61339-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Expressing UAS-Nmdar1RNAi (BDSC line 25941) in all neurons with nSyb-GAL4 significantly impaired 24 hr memory (p<0.05, ANOVA, n = 6–12). (B) Expressing UAS-Nmdar1RNAi (BDSC line 25941) in αβ Kenyon cells (KCs) with c739-GAL4 did not alter memory (ANOVA, n = 6–8). (F). Mg2+ feeding enhanced LTM in flies expressing UAS-Nmdar1RNAi (BDSC line 25941) in αβ KCs and also in controls (p<0.05, t-test, n = 6–8). Data are mean ± SEM. Individual data points are plotted as circles.
+
+### Mg2+-enhanced memory is independent of NMDAR in the mushroom bodies
 
 Since magnesium-L-threonate enhanced memory in rats was correlated with an upregulation of hippocampal NR2B subunit-containing NMDARs (Slutsky et al., 2010), we tested for changes in glutamate receptor expression in flies fed with MgCl2. RT-qPCR analyses did not reveal a significant difference in the abundance of mRNAs for the putative NMDA (Nmdar1, Nmdar2), AMPA (GluRIA), or kainate-type (GluRIIA) receptors in heads taken from flies fed for 4 days with 80 mM MgCl2 versus those fed with 1 mM MgCl2 (Figure 1D).
 
 We next directly tested whether Mg2+-enhanced memory required NMDAR function, by knocking down expression of the Nmdar1 or Nmdar2 genes using transgenic UAS-driven RNA interference (RNAi) constructs (Dietzl et al., 2007; Perkins et al., 2015). Of the two independent UAS-Nmdar1RNAi and four UAS-Nmdar2RNAi lines we tested, only one Nmdar1RNAi (BDSC 25941) line, when driven in all neurons by neuronal Synaptobrevin (nSyb)-GAL4, exhibited significantly decreased 24 hr memory performance, as compared to that of heterozygous control flies (Figure 1—figure supplement 1A). In contrast, more selective expression of this UAS-Nmdar1RNAi in LTM-relevant αβ KCs using c739-GAL4 did not significantly impair 24 hr memory performance (Figure 1—figure supplement 1B). Moreover, flies expressing Nmdar1RNAi in αβ neurons retained robust Mg2+-enhanced memory (Figure 1—figure supplement 1C). These results suggest that Mg2+-enhanced memory does not alter expression of glutamate receptors, or require NMDAR function in αβ KCs.
 
-## Mg2+ concentration in αβ neurons is elevated in flies fed high Mg2+
+### Mg2+ concentration in αβ neurons is elevated in flies fed high Mg2+
 
 We used MagFRET, the first genetically encoded fluorescent Mg2+ sensor (Lindenburg et al., 2013), to test whether Mg2+ feeding altered the intracellular Mg2+ concentration ([Mg2+]i). We constructed flies harboring a UAS-MagFRET-1 transgene and combined it with c739-GAL4 to express MagFRET-1 in αβ KCs. We compared the FRET signals in fixed brains from c739; UAS-MagFRET-1 flies fed with either 1 mM or 80 mM MgCl2 food for 4 days. The MagFRET signal was significantly higher in both the α and β collaterals of αβ KCs of flies fed with 80 mM, than in those fed with 1 mM (Figure 1E). This result indicates that Mg feeding elevates neuronal [Mg2+]i. Given the affinity of MagFRET-1 (Kd = 148 µM) and the ~50% increase in FRET signal upon Mg2+ binding (Lindenburg et al., 2013), we estimate that the ~8% enhancement of the MagFRET signal measured in flies fed 80 mM MgCl2 corresponds approximately to a 50 µM increase of αβ KC [Mg2+]i on average.
 
-## The unextended encoded CNNM-type Mg2+ transporter has a role in memory
+### The unextended encoded CNNM-type Mg2+ transporter has a role in memory
 
 We identified unextended (uex; Maeda, 1984; Coulthard et al., 2010) as a gene altering appetitive olfactory LTM, reinforced with sucrose reward. Flies with the uexMI01943 MiMIC insertion (Venken et al., 2011) showed a strong defect in 24 hr memory, but their performance immediately after training was indistinguishable from that of wild-type controls. More detailed analysis of uexMI01943 flies revealed a steady decay of memory that first became significantly different to that of wild-type flies 12 hr after training (Figure 2A). No memory defect was evident in heterozygous uexMI01943/+ flies, demonstrating that this putative uex allele is recessive.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/61339/elife-61339-fig2-v2.jpg)
+
+**Figure 2.:** (A) Appetitive memory retention was tested at various times after training. Flies homozygous for uexMI01943 showed a significant defect in memory from 12 hr after training, as compared to the performance of heterozygous uexMI01943/+ and wild-type control flies (p<0.05, ANOVA, n = 6–10). (B) The uex locus lies on chromosome 2R between 3,900,285 and 3,949,425 (light blue bar). The four alternate uex transcripts, uex-RE, uex-RG, uex-RH, and uex-RF, all encode the same protein. The uexMI01943 MiMIC (blue triangle) resides ~17 kb downstream of the uex coding region. The CRISPR/Cas9 edited uexΔ allele replaces a 3047 bp fragment, including Exon 7 of uex with a STOP signal (termination codon in all three reading frames) and a GFP cassette, truncating the uex reading frame (dark blue bar). (C) Precise excision of the uexMI01943 MiMIC restores normal 24 hr memory to uexMI01943.ex1 and uexMI01943.ex2 flies (p<0.05, ANOVA, n = 8–11). (D) uexΔ fails to complement the 24 hr memory defect of uexMI01943 (p<0.05, ANOVA, n = 6–8). (E) Flies homozygous for uexMI01943 showed a significant defect in aversive LTM, as compared to the performance of heterozygous uexMI01943/+ and wild-type control flies (p<0.05, ANOVA, n = 8–12). An LTM defect was also observed following five cycles of aversive spaced training and a 16 hr fasting facilitated one-cycle training protocol. Immediate aversive memory was unaffected in uexMI01943 homozygous mutant flies.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/61339/elife-61339-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Alignment of the protein sequences of UEX and its orthologs. The DUF21 and CBS pair domains are highly conserved. Accession numbers for these protein sequences are: 1.NP_014581.1 (Mam3p in Saccharomyces cerevisiae), 2.NP_503052.1 (CNNM-1 in Caenorhabditis elegans), 3.NP_001104391.2 (UEXin Drosophila melanogaster), 4.NP_001138257.1 (CNNM2 in Danio rerio), 5.NPNP_291047.2 (CNNM2 in Mus musculus), 6.NPNP_060119.3 (CNNM2 in Homo sapiens). (B) Focus on the DUF21, CBS pair, and cyclic nucleotide-binding homology (CNBH) domains from UEX and CNNM1-4. Similarity in each aligned sequence is proportional to its gray scale, that is, darker color corresponds to greater similarity. Accession numbers for these protein sequences are: 1.NP_001104391.2 (UEX in Drosophila melanogaster), 2.NP_065081.2 (CNNM1 in Homo sapiens), 3.NP_060119.3 (CNNM2 in Homo sapiens), 4.NP_060093.3 (CNNM3 in Homo sapiens), 5.NP_064569.3 (CNNM4 in Homo sapiens). (C) Protein sequence alignment of the CNBH domains (red rectangle) between UEX and CNNM2 shows high similarity (TM score = 0.98, top panel). The predicted 3D structures of the CNBH domain (lower panel) of UEX (left) and CNNM2 (right) also resemble each other.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/61339/elife-61339-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Mating scheme for Minos excision from uexMI01943 flies. (B) DNA sequence around the MiMIC insertion. Successful excision events were identified in flies with body color reverted to yellow. Genomic DNA from progeny of these flies was extracted, and the uex locus was PCR amplified and sequenced. Two lines (uexMI01943.ex1 and uexMI01943.ex2) were confirmed to be precise excision events, which restored their genomic sequence to the wild-type form. (C) CRISPR-Cas9 editing scheme for the uexΔ lesion. A fragment of 3047 bp spanning part of Exon 6, Exon 7, and part of Exon 8 of the uex locus was replaced by a STOP signal and a GFP cassette. The original sequence was cut by two gRNAs flanking Exon 7, and the new sequence was introduced by homologous recombination using a double-stranded DNA donor. The final uexΔ locus contains a truncated uex reading frame. The GFP cassette facilitates identification of flies with the edited locus.
 
 uex piqued our attention because it is the single fly ortholog of the four human CNNM genes that encode Mg2+ transporters (Ishii et al., 2016), and it also contains a putative CNBH domain that is structurally related to those in cyclic nucleotide-gated channels (Zagotta et al., 2003; Flynn et al., 2007; Kesters et al., 2015). Alignment of the 834 amino acid UEX sequence with CNNM1-4 reveals particularly high sequence conservation with CNNM2 and CNNM4 in the DUF21, CBS pair, and CNBH domains (Figure 2—figure supplement 1A–C). We therefore hypothesized that UEX had potential to link the memory-enhancing effects of dietary Mg2+ with cAMP-dependent neuronal plasticity.
 
@@ -62,25 +82,57 @@ Both qRT-PCR of mRNA and western blot analysis of protein extracts from fly head
 
 We also tested the aversive memory performance of uexMI01943 mutant flies. Homozygous uexMI01943 flies exhibited immediate memory that was indistinguishable from that of heterozygous and wild-type controls (Figure 2E). However, their 24 hr memory, formed following either five trials of aversive spaced training (Tully et al., 1994; Jacob and Waddell, 2020), or one trial of fasting facilitated training (Hirano et al., 2013), was significantly impaired (Figure 2E). These experiments suggest that uexMI01943 flies are more generally compromised in their ability to form LTM. Unless otherwise specified, all subsequent analyses of memory in this study use appetitive sugar-rewarded conditioning.
 
-## A role for uex in the mushroom bodies
+### A role for uex in the mushroom bodies
 
 To localize uex in the brain we first took advantage of VT23256-GAL4 transgenic flies, in which GAL4 is driven by an 853 bp sequence from the first intron of uex (Kvon et al., 2014). VT23256-driven UAS-EGFP revealed restricted expression in αβ KCs with particularly strong label in αβ core (αβc) neurons (Figure 3A). We also used CRISPR to insert a C-terminal HA-epitope tag into the uex open reading frame (Figure 3—figure supplement 1A). These flies were viable as homozygotes indicating that the resulting UEX::HA fusion protein retains function. Immunostaining flies harboring this uex::HA locus with an anti-HA antibody revealed prominent labeling of all the major KC classes in the MB, in addition to lower expression throughout the brain (Figure 3B). This uex expression profile is also supported by single-cell sequencing analyses (Figure 3—figure supplement 1B; Croset et al., 2018; Davie et al., 2018). Given the established role for αβ KCs in olfactory LTM (Pascual and Préat, 2001; Yu et al., 2006; Krashes et al., 2007; Krashes and Waddell, 2008), we reasoned that a mnemonic role for UEX may involve expression in KCs.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/61339/elife-61339-fig3-v2.jpg)
+
+**Figure 3.:** (A) A uex promoter fragment-GAL4 directs GFP expression in αβc KCs. Anti-GFP immunostained uex-GAL4 (VT23256); UAS-EGFP line. (B) Anti-HA immunostaining of brains harboring the CRISPR/Cas9-edited uex::HA locus shows strong labeling of UEX in all the major subdivisions of the mushroom body (MB). Scale bars 20 µm. (C) RNAi knockdown of uex in all αβ (c739-GAL4) or just αβc (NP7175-GAL4) KCs specifically impaired 24 hr memory. αβs (0770-GAL4) or α′β′ (c305a-GAL4) KC expression had no effect (p<0.05, ANOVA, n = 6–10 for immediate and n = 8–14 for 24 hr memory). (D) Defective LTM was observed if uexRNAi expression was confined to αβ KCs of adult flies using GAL80ts-mediated temporal control. (E) LTM performance was unaffected if the uexRNAi was kept suppressed throughout and (F) LTM performance was restored to normal levels if expression of uexRNAi was re-suppressed for 3 days (p<0.05, ANOVA, n = 6 for immediate and n = 8 for 24 hr memory). (G) Immunostaining shows the effectiveness of uexRNAi. Fluorescence intensity in the αβ and γ lobes of uex::HA flies decreased significantly when UAS-uexRNAi was expressed with MB247-GAL4. Scale bars 20 µm. (H) Quantification of fluorescence intensity in G (p<0.05, t-test, n = 6–8).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/61339/elife-61339-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) CRISPR-Cas9 editing scheme for production of the uex::HA locus. A 6xHA tag was inserted immediately before the STOP codon of uex using the 2-step ScarlessDsRed system. In step 1, a pBAC transposon containing a DsRed cassette and a 6xHA tag was inserted in frame with the uex ORF, just prior to the STOP codon, through homologous recombination. In step 2, the pBAC transposon was excised to leave only the 6xHA tag in the final uex::HA locus. (B) tSNE plots show the broad expression of uex in the fly brain, which is consistent with the uex::HA staining result in Figure 3B. Left, data from Croset et al., 2018 and right from Davie et al., 2018 were plotted using the online Scope viewer (http://scope.aertslab.org).
 
 We next used GAL4-directed expression of RNAi to test whether 24 hr memory performance required uex in the MB. Flies expressing uexRNAi (Perkins et al., 2015) in all αβ KCs (c739-GAL4; Yang et al., 1995; Perisse et al., 2013) or only in αβc KCs (NP7175-GAL4; Tanaka et al., 2008) showed normal immediate memory but significantly impaired 24 hr memory (Figure 3C). In contrast, uexRNAi expression in αβ surface (αβs, 0770-GAL4; Perisse et al., 2013) or α′β′ KCs (c305a-GAL4; Krashes et al., 2007) did not significantly alter immediate or LTM performance. Normal 24 hr appetitive memory performance is therefore particularly sensitive to uex expression in αβc neurons. To reduce the likelihood that the uexRNAi associated memory defect results from a developmental consequence, we also restricted UAS-uexRNAi expression to adulthood using GAL80ts-mediated temporal control (McGuire et al., 2003). At permissive 18°C, GAL80ts binds to GAL4 and suppresses its transcriptional activator function. At restrictive 30°C, GAL80ts can no longer bind to GAL4, which frees GAL4 to direct expression of the UAS-uexRNAi transgene. Flies were raised through development at 18°C and moved to 30°C after eclosion. Restricting UAS-uexRNAi expression to αβ KCs in adult flies using c739-GAL4 with GAL80ts produced a similar 24 hr specific memory defect to that observed when UAS-uexRNAi was expressed without temporal control (Figure 3D–F). We assessed the efficacy of the UAS-uexRNAi knockdown using our tagged uex::HA locus. Brains from heterozygous uex::HA flies expressing uexRNAi in the αβ and γ KCs with MB247-GAL4 (Zars et al., 2000) were immunostained using anti-HA antibody. Comparing the intensity of immunolabeling in brains from uex::HA; MB247-GAL4/uexRNAi flies with that from uex::HA; MB247-GAL4/+ flies showed that uexRNAi expression significantly reduced anti-HA signal in the αβ and γ KCs (Figure 3G and H). This result demonstrates the efficiency of the uexRNAi transgene and the utility of the CRISPR/Cas9 edited uex::HA locus.
 
 We next tested whether expression in specific KCs of an UAS-uex transgene could restore 24 hr memory capacity to uexMI01943 flies. Memory performance of uexMI01943 flies expressing UAS-uex in αβ and γ KCs (MB247-GAL4; Zars et al., 2000) or only the αβ KCs (c739-GAL4) was significantly improved over that of uexMI01943 flies, and was statistically indistinguishable from that of controls with an intact uex locus (Figure 4A). In contrast, UAS-uex expression in α′β′, αβc, or αβs KCs did not restore memory performance to uexMI01943 flies and overexpressing uex in αβ KCs of wild-type flies did not augment 24 hr memory (Figure 4A and B). Normal 24 hr memory performance could also be restored to uexMI01943 flies if UAS-uex expression was confined to c739-GAL4 neurons (all αβ KCs) in adulthood using GAL80ts-mediated temporal control (Figure 4C and D). Together, these loss-of-function RNAi and restoration experiments establish that UEX plays an important role in adult αβ KCs. Finding that αβc RNAi knockdown of uex produces a memory defect (Figure 3C) but UAS-uex expression in αβc does not rescue the uexMI01943 mutant defect (Figure 4A) suggests that UEX function in αβc KCs is essential for appetitive LTM, whereas both the αβc and αβs KCs need to have functional UEX to support LTM. In addition, the ability of UAS-uex to restore performance to uexMI0194 flies provides further support that uex is responsible for the memory impairment in uexMI01943 flies.
 
-## uex expression in the MB supports Mg2+-enhanced memory
+![Figure 4.](https://cdn.elifesciences.org/articles/61339/elife-61339-fig4-v2.jpg)
+
+**Figure 4.:** Restoring expression of UAS-uex in αβ and γ (MB247-GAL4) or αβ Kenyon cells (KCs) rescued 24 hr memory performance of uexMI01943 flies, whereas expression in αβc, αβs or α′β′ KCs did not (p<0.05, ANOVA and t-test, n = 8–12). (B) Overexpression of UAS-uex in αβ KCs did not enhance 24 hr memory performance in wild-type flies (ANOVA, n = 8–12). (C) Defective LTM was rescued if UAS-uex expression was confined to αβ KCs of adult flies using GAL80ts mediated temporal control (p<0.05, ANOVA, n = 6 for immediate and n = 8 for 24 hr memory) but (D) remained defective if UAS-uex expression was not released. (E) Memory enhancement with dietary Mg2+ is supported by UEX in αβ KCs. Memory of flies expressing UAS-uexRNAi in the αβ KCs cannot be enhanced with Mg2+ feeding (t-test, n = 8). (F) Memory of uexMI01943 mutant flies cannot be enhanced with Mg2+ feeding, but enhancement was restored by expressing UAS-uex in αβ KCs (p<0.05, t-test, n = 8–12). (G) Memory of wild-type flies was not sensitized to Mg2+ enhancement by overexpressing UAS-uex in αβ KCs. Memory was enhanced if the flies were fed with 80 mM MgCl2, but not with suboptimal 40 mM MgCl2 (p<0.05, ANOVA, n = 8).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/61339/elife-61339-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) 24 hr memory after five spaced trials of aversive training was enhanced in wild-type, but not uexMI01943 mutant flies, fed for 4 days beforehand with MgCl2 (p<0.05, t-test, n = 8). (B) 4 days of 80 mM MgCl2 food did not enhance immediate aversive memory in either wild-type or mutant flies (t-test, n = 8).
+
+### uex expression in the MB supports Mg2+-enhanced memory
 
 We next investigated whether Mg2+ feeding (4 days with 80 mM MgCl2) could improve memory performance in flies with compromised uex function. Flies carrying the uexMI01943 allele (Figure 4F) or those expressing UAS-uexRNAi in the αβ KCs with c739-GAL4 (Figure 4E) did not show enhanced memory when fed with 80 mM MgCl2, as compared to flies fed with 1 mM MgCl2. Moreover, the Mg2+-enhanced memory was recovered in uexMI01943 mutant flies when uex expression was restored to the αβ KCs (Figure 4F). All control flies (c739-GAL4, UAS-uexRNAi, and UAS-uex) with unperturbed uex expression exhibited significantly enhanced memory when fed with 80 mM as compared to 1 mM MgCl2. Overexpressing UAS-uex in αβ KCs with c739-GAL4 in flies with a wild-type genetic background neither enhanced regular 24 hr memory (Figure 4B), or that in flies fed for 4 days with 40 or 80 mM MgCl2 (Figure 4G). We also tested whether 4 days of 80 mM MgCl2 supplementation enhanced 24 hr memory performance following aversive spaced training. Again, memory of wild-type, but not uexMI01943 mutant flies showed enhancement (Figure 4—figure supplement 1). Together these results indicate that optimal memory enhancement with Mg2+ feeding requires, and can be fully supported by, UEX function in αβ KCs.
 
-## UEX is a functionally conserved magnesium transporter
+### UEX is a functionally conserved magnesium transporter
 
 Given the strong sequence conservation of UEX with mammalian CNNM2/4 we tested whether CNNM2 could functionally substitute for UEX and restore the LTM defect of uexMI01943 flies. Several point mutations in CNNM2 have been identified in human patients with hypomagnesemia, which is associated with brain malformation and intellectual disability (Arjona et al., 2014). Introduction of the equivalent mutations into mouse CNNM2 (CNNM2E357K, CNNM2T568I, CNNM2S269W, and CNNM2E122K) showed that these patient-derived lesions impair magnesium transport (Arjona et al., 2014). We constructed flies carrying wild-type and these mutant variant UAS-CNNM2 transgenes (Figure 5A). Staining for an associated C-terminal HA-tag revealed clear expression of all UAS-CNNM2::HA variants in αβ neurons when driven with c739-GAL4 (Figure 5—figure supplement 1). However, only expression of wild-type CNNM2, and not point-mutant forms, in αβ KCs of uexMI01943 mutant flies restored 24 hr memory performance (Figure 5B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/61339/elife-61339-fig5-v2.jpg)
+
+**Figure 5.:** (A) Model of CNNM2 protein structure showing clinically relevant point mutations. Adapted and modified from Arjona et al., 2014. (B) Overexpression of wild-type, but not mutant, CNNM2 in αβ Kenyon cells rescues the memory defect of uexMI01943 mutant flies (p<0.05, ANOVA, n = 6–8 for immediate and n = 8–12 for 24 hr memory).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/61339/elife-61339-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Anti-HA immunostained brains from flies expressing UAS-CNNM2::HA variants driven by c739-GAL4. Genotype from left to right: c739/+; UAS-CNNM2WT::HA/+, c739/+; UAS-CNNM2E357K::HA/+, c739/+; UAS-CNNM2T568I::HA/+, c739/+; UAS-CNNM2S269W::HA/+, c739/+; UAS-CNNM2E122K::HA/+. Scale bar 20 μm.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/61339/elife-61339-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) HEK293 cells transfected with uex-FLAG or CNNM4-FLAG constructs stained with anti-FLAG antibody (green) and rhodamine-phalloidin (red). Scale bar 10 µm. (B) Mg2+-efflux assay. HEK293 cells transfected with the indicated constructs were loaded with Mg2+ and Magnesium Green, and subjected to Mg2+-depletion at the indicated time point (arrowhead). Line plot indicates the time course of mean relative fluorescence intensities, and bar graph indicates the mean relative fluorescence intensities at 5 min. Data are mean ± SEM (***p<0.001, ANOVA, n = 10).
+
 We also tested whether UEX can mediate Mg2+ extrusion. UEX expressed in HEK293 cells localized to the plasma membrane and cells loaded with Mg2+ and the Mg2+ indicator Magnesium Green showed rapid Mg2+ efflux (Figure 5—figure supplement 2 and Video 1), as compared to cells transfected with empty vector. Mg2+ extrusion driven by UEX was noticeably less efficient than in cells expressing Human CNNM4 (Figure 5—figure supplement 2), which is known to have similar efficiency to CNNM2 (Hirata et al., 2014). However, we do not know if UEX and CNNM4 expression is equivalent. Nevertheless, demonstration of cross-species complementation and Mg2+ efflux activity defines UEX as a functional homolog of mammalian CNNM2/4.
 
-## An intact CNBH domain is required for memory
+![Video 1.](https://cdn.elifesciences.org/articles/61339/elife-61339-video1.mp4.jpg)
+
+**Video 1.:** Representative movies showing Mg2+-efflux from HEK293 cells transfected with different expression vectors. Imaging protocol is described in Yamazaki et al., 2013. The cells indicated with asterisks in the first frame of each movie are the cells expressing the anti-FLAG immunostained CNNM4 or UEX, which were identified after each live-imaging experiment. Empty vector control is shown in the upper left. The fluorescence signal of CNNM4-FLAG and UEX-FLAG expressing cells decreases rapidly when extracellular Mg2+ is depleted, which was performed between the third and fourth frames in each movie.
+
+### An intact CNBH domain is required for memory
 
 Given the established role for cAMP signaling in memory-relevant plasticity in invertebrates and mammals (Kandel, 2012), we tested the importance of the CNBH domain in UEX. We constructed flies carrying a point-mutated CNBH UAS-uexR622K transgene (Figure 6A). The equivalent R622K amino acid substitution abolishes cAMP binding in the regulatory subunit of cAMP-dependent protein kinase, PKA (Bubis et al., 1988). Expressing UAS-uexR622K in αβ neurons with c739-GAL4 did not restore 24 hr memory performance, or alter the immediate memory performance, of uexMI01943 mutant flies (Figure 6B).
 
@@ -90,19 +142,51 @@ Given the established role for cAMP signaling in memory-relevant plasticity in i
 
 We also used CRISPR to attempt to introduce the R622K mutation into the CNBH of the native uex locus (Bassett et al., 2013; Gratz et al., 2013; Yu et al., 2013). Unexpectedly, this approach did not introduce the R622K substitution but instead replaced T626 in the CNBH with NRR. Fortuitously, flies homozygous for this uexT626NRR allele were viable as adults, unlike those homozygous for uexΔ, suggesting that the uexT626NRR encoded UEX retains function. However, flies homozygous for uexT626NRR or heterozygous uexT626NRR/ uexMI01943 flies exhibited a strong 24 hr memory defect (Figure 6C). Immediate memory was also impaired in homozygous uexT626NRR flies, unlike flies carrying all other combinations of uex alleles. In addition, memory of uexT626NRR flies could not be enhanced with Mg2+ feeding (Figure 6D). The uexT626NRR mutation therefore uncouples the essential role for uex from a function in memory and suggests that cyclic nucleotide regulated activity is critical for UEX to support normal and Mg2+-enhanced memory. Although we confirmed using western blotting that a full-length protein is expressed in uexT622NRR flies (Figure 6E), our antibody did not permit us to verify that the UEXT626NRR protein localizes appropriately in the brain. Further work is therefore required to characterize the cellular localization, cAMP binding, and Mg2+ transport function of the protein encoded by this serendipitous uexT626NRR allele.
 
-## Chronic cAMP manipulation alters UEX localization in KCs
+### Chronic cAMP manipulation alters UEX localization in KCs
 
 We tested whether cAMP could acutely alter UEX activity by applying forskolin to UEX-expressing HEK293 cells. However, no obvious change in the UEX-dependent Mg2+ efflux dynamic was observed (data not shown). We therefore tested whether KC expression of UEX::HA was altered in flies with chronic alterations of cAMP metabolism, by introducing learning-relevant mutations in the rutabaga-encoded Ca2+-stimulated adenylate cyclase, or the dunce-encoded cAMP-specific phosphodiesterase. Anti-HA immunostaining of brains from rut2080; uex::HA and dnc1; uex::HA flies revealed a striking change in UEX localization (Figure 7A and B and Videos 2–4). Whereas UEX::HA is usually detected in the lobes of all KCs at a roughly equivalent level in wild-type flies, labeling was lower in the MB γ lobe and more pronounced in the αβc KCs in rut2080 and dnc1 mutant backgrounds (Figure 7C), although the overall MB expression of UEX::HA is similar between wild-type and mutant flies (Figure 7D). In addition, western blot analyses of protein extracted from heads of these flies did not reveal a significant difference in overall UEX::HA expression levels (data not shown). These data are therefore consistent with cAMP regulating UEX function and perhaps its cellular localization in KCs.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/61339/elife-61339-fig7-v2.jpg)
 
-**Figure 7.:** uex expression is altered in rutabaga and dunce mutant flies.(A) Anti-HA stained brains reveal UEX::HA protein localization is altered in rut2080; uex::HA and dnc1; uex::HA flies, becoming more prominent in αβc KCs (arrows). Scale bars 20 µm. (B) Enlarged images of the mushroom bodies (MBs) highlighting αβc KC expression in rut2080 and dnc1 mutant flies, as compared with wild-type uex::HA flies. Scale bars 20 µm. (C) Quantification of fluorescence intensity. Left, micrograph with a measurement line through the α lobe tip and rectangular ROIs for the γ lobe and a control area. Middle, relative fluorescence intensity profiles across the α lobe tip show significantly higher signal in rut2080 and dnc1 mutant flies in the center region occupied by the αβ core KCs (*p<0.05, ANOVA, n = 6–10). Right, the relative intensity in the γ lobe was significantly lower in rut2080 and dnc1 mutant flies, as compared to wild-type controls (*p<0.05, ANOVA, n = 6–10). Scale bars 10 µm. (D) Left, micrograph showing circular ROIs. Right, quantification. Total intensity over all six ROIs on the MBs was not significantly different between the rut2080, dnc1 and wild-type brains (p>0.13; ANOVA, n = 6–10).
+**Figure 7.:** (A) Anti-HA stained brains reveal UEX::HA protein localization is altered in rut2080; uex::HA and dnc1; uex::HA flies, becoming more prominent in αβc KCs (arrows). Scale bars 20 µm. (B) Enlarged images of the mushroom bodies (MBs) highlighting αβc KC expression in rut2080 and dnc1 mutant flies, as compared with wild-type uex::HA flies. Scale bars 20 µm. (C) Quantification of fluorescence intensity. Left, micrograph with a measurement line through the α lobe tip and rectangular ROIs for the γ lobe and a control area. Middle, relative fluorescence intensity profiles across the α lobe tip show significantly higher signal in rut2080 and dnc1 mutant flies in the center region occupied by the αβ core KCs (*p<0.05, ANOVA, n = 6–10). Right, the relative intensity in the γ lobe was significantly lower in rut2080 and dnc1 mutant flies, as compared to wild-type controls (*p<0.05, ANOVA, n = 6–10). Scale bars 10 µm. (D) Left, micrograph showing circular ROIs. Right, quantification. Total intensity over all six ROIs on the MBs was not significantly different between the rut2080, dnc1 and wild-type brains (p>0.13; ANOVA, n = 6–10).
 
-## UEX is required to maintain a fluctuating [Mg2+]i in αβ KCs
+![Video 2.](https://cdn.elifesciences.org/articles/61339/elife-61339-video2.mp4.jpg)
+
+**Video 2.:** Confocal Z-stack of a uex::HA fly brain stained with anti-HA antibody.
+
+![Video 3.](https://cdn.elifesciences.org/articles/61339/elife-61339-video3.mp4.jpg)
+
+**Video 3.:** Confocal Z-stack of a brain from a rut2080; uex::HA fly stained with anti-HA antibody. The αβc Kenyon cells label more prominently than in the wild-type uex::HA brain in Video 2.
+
+![Video 4.](https://cdn.elifesciences.org/articles/61339/elife-61339-video4.mp4.jpg)
+
+**Video 4.:** Confocal Z-stack of a brain from a dnc1; uex::HA fly stained with anti-HA antibody. The αβc Kenyon cells label more prominently than in the wild-type uex::HA brain in Video 2.
+
+### UEX is required to maintain a fluctuating [Mg2+]i in αβ KCs
 
 Although MagFRET can report [Mg2+] it does not respond quickly enough to record stimulus-evoked signals. We therefore constructed flies harboring UAS-transgenes for two newer genetically encoded Mg2+ sensors, MagIC (non-FRET based; Koldenkova et al., 2015) and MARIO (FRET based; Maeshima et al., 2018). We were unable to detect UAS-MARIO expression in the fly brain and therefore could only use UAS-MagIC. MagIC was reported to respond most strongly to Mg2+ but also to a lesser extent to Ca2+ (Koldenkova et al., 2015). We therefore first verified the specificity of MagIC responses in a cell-permeabilized ex vivo fly brain preparation. Brains were removed from flies expressing UAS-MagIC in αβ KCs with c739-GAL4 (Figure 8A), incubated in a dish with saline (Barnstedt et al., 2016) and changes in fluorescence were monitored before and after bath application of chemicals. Whereas application of MgCl2 evoked a dose-dependent increase in the MagIC response, chelation of Mg2+ with EDTA produced a dose-dependent decrease (Figure 8B and Videos 5 and 6). In comparison, CaCl2 only registered a slight increase at the highest concentrations whereas the more Ca2+-selective chelator EGTA had little effect (Figure 8B). These results demonstrate that UAS-MagIC can monitor [Mg2+]i in the αβ KCs in the fly brain.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/61339/elife-61339-fig8-v2.jpg)
+
+**Figure 8.:** (A) Explant fly brain expressing UAS-MagIC driven by c739-GAL4. Upper panel, wide-field phase contrast view; middle panels, fluorescence views of Venus and mCherry channels; lower panel, confocal section at the level of the KC somata showing Venus and mCherry channels. Scale bars 20 µm. (B) MagIC selectively responds to changes in [Mg2+]i in KCs. Traces of MagIC ratio following bath application of 10, 20, or 40 mM MgCl2 or CaCl2; 5, 10, or 20 mM EDTA or EGTA. (C) Representative trace of MagIC ratio following application of FSK shows an initial wave followed by a gradual rise and the development of a slow oscillation. (D) The primary responses result from changes in the Mg2+-sensitive Venus signal. (E) The mCherry signal exhibits a steady decay. (F) FSK-evoked MagIC responses are greater in uex mutant flies. Averaged MagIC responses show that FSK induced a significantly greater increase in uexMI01943 mutant than in wild-type flies. (G). Averaged saline-evoked MagIC responses were not significantly altered in uex mutant flies. (H) Individual Venus (green) and mCherry (red) channel traces showing that the slow oscillation is only evident in the Venus channel of wild-type, but not uex mutant, flies. (I) Power spectral density (PSD) analysis of the time series from 200 to 900 s of all data shows that traces from wild-type flies have significantly more oscillatory activity, centered around 0.015 Hz, than those from uex mutant flies.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/61339/elife-61339-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Application of 30 μM FSK induced a MagIC ratio response than saline application in wild-type flies (c739/+; UAS-MagIC/+). (B) A sample trace from (A) showing a fluctuating signal following saline application. (C–E) Traces of relative intensity (ΔF/F0) of GCaMP6f signal from c739/+; UAS-GCaMP6f/+ flies. Slow oscillations were not observed. (C) Individual GCaMP6f traces following FSK application. (D) Individual GCaMP6f traces following saline application. (E) Average GCaMP6f response following FSK application is significantly stronger than that after saline. (F) The average MagIC ratio response following ddFSK application is not sensitive to uex mutation. Responses of wild-type (c739/+; UAS-MagIC/+) and uex mutant flies (c739, uexMI01943/uexMI01943; UAS-MagIC/+) are indistinguishable. (G) Individual MagIC ratio traces from wild-type (c739/+; UAS-MagIC/+, upper panels) and uex mutant (c739, uexMI01943/uexMI01943, lower panels) flies following 30 μM FSK (left panels) or saline (right panels) application.
+
+![Video 5.](https://cdn.elifesciences.org/articles/61339/elife-61339-video5.mp4.jpg)
+
+**Video 5.:** Confocal time-series recording from a c739/+; UAS-MagIC/+ fly brain shows an increase in Venus, but not mCherry, fluorescence signal in response to 20 mM MgCl2 application.
+
+![Video 6.](https://cdn.elifesciences.org/articles/61339/elife-61339-video6.mp4.jpg)
+
+**Video 6.:** Confocal time-series recording from a c739/+; UAS-MagIC/+ fly brain shows a strong decrease in Venus and a weak decrease in mCherry fluorescence signal in response to 10 mM EDTA application.
+
 Increasing intracellular cAMP has been shown to elicit Mg2+ flux from mammalian cells (Romani and Scarpa, 2000; Vormann and Günther, 1987; Jakob et al., 1989; Romani and Scarpa, 1990b; Romani and Scarpa, 1990a; Vormann and Günther, 1987; Günther et al., 1990; Howarth et al., 1994). Since our experiments also indicated that cAMP might regulate UEX, we next tested whether stimulating cAMP synthesis with forskolin (FSK) might alter MagIC signals in αβ KCs. For these experiments we again used an ex vivo brain preparation but this time the cells were not permeabilized. 30 μM FSK has been shown to evoke a peak increase in cAMP in KCs that approximates that observed following appetitive conditioning (Louis et al., 2018). Applying 30 μM FSK to c739-GAL4; UAS-MagIC brains evoked a consistent dynamic in MagIC fluorescence. After a sharp initial rise, responses slowly decayed back toward baseline before again rising slowly to a point at which the signal started to fluctuate. (Figure 8C and D and Video 7). The key signatures of this response were only recorded in the Mg2+-sensitive Venus signal (Figure 8D). In contrast﻿ mCherry fluorescence did not fluctuate but steadily decreased across the time course of the recording (likely a result of photo-bleaching), demonstrating that the fluctuation in the Venus signal is not a movement artifact (Figure 8E). Importantly, FSK﻿induced MagIC responses were greater than those following application of saline (Figure 8—figure supplement 1A). However, a fluctuating response also developed after saline applications (Figure 8—figure supplement 1B) suggesting that the rhythmic MagIC signal may be a general response to an increase in [Mg2+]i that follows cellular perturbation.
+
+![Video 7.](https://cdn.elifesciences.org/articles/61339/elife-61339-video7.mp4.jpg)
+
+**Video 7.:** Confocal time-series recording from a c739/+; UAS-MagIC/+ fly brain shows a slow oscillation in Venus, but not mCherry, fluorescence signal in response to 30 μM forskolin.
 
 The Drosophila MB has previously been reported to exhibit a slow (0.004 Hz) Ca2+ oscillation in ex vivo brains whereas a much faster 20 Hz oscillation is evoked by odors in the locust MB (Laurent and Naraghi, 1994; Rosay et al., 2001). Although our initial characterization of MagIC in the fly brain indicated a preferential response to Mg2+ (Figure 8B), we nevertheless explicitly tested whether FSK﻿ induced fluctuation of the [Ca2+]i of αβ KCs, using expression of UAS-GCaMP6f (Chen et al., 2013). FSK induced a delayed increase in the GCaMP response but no clear oscillatory activity was observed (Figure 8—figure supplement 1C–E).
 
@@ -138,15 +222,1082 @@ Our physiological data using Magnesium ﻿Green in mammalian cell culture and th
 
 ## Materials and methods
 
-## Contact for reagent and resource sharing
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Canton-S</td>
+      <td>Originally from W.G.Quinn lab</td>
+      <td>Canton-S</td>
+      <td>Waddell Lab stock</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-EGFP</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_5431</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>c739-GAL4</td>
+      <td>McGuire et al., 2001</td>
+      <td>c739-GAL4</td>
+      <td>Lab stock</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>c305a-GAL4</td>
+      <td>Krashes et al., 2007</td>
+      <td>c305a-GAL4</td>
+      <td>Lab stock</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>NP7175-GAL4</td>
+      <td>Tanaka et al., 2004</td>
+      <td>NP7175-GAL4</td>
+      <td>Lab stock</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>0770-GAL4</td>
+      <td>Gohl et al., 2011</td>
+      <td>0770-GAL4</td>
+      <td>Lab stock</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MB247-GAL4</td>
+      <td>Zars et al., 2000</td>
+      <td>MB247-GAL4</td>
+      <td>Lab stock</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nSyb-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_51635</td>
+      <td>Gift from J. Simpson</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>﻿elav-GAL4</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_8765</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>tubPGAL80ts</td>
+      <td>McGuire et al., 2003</td>
+      <td>tubP-GAL80ts</td>
+      <td>Lab stock</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Nmdar1RNAi</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_25941</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nos-Cas9.P</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_54591</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>nos-Cas9(X)</td>
+      <td>Fly Stocks of National Institute of Genetics</td>
+      <td>CAS0002</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>lig4 KO vasa-Cas9</td>
+      <td>Zimmer et al., 2016</td>
+      <td>lig4 KO vasa-Cas9</td>
+      <td>Gift from C. Zimmer</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>PhsILMiT</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_24613</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>rut2080</td>
+      <td>Han et al., 1992</td>
+      <td>rut2080</td>
+      <td>Lab stock</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>dnc1</td>
+      <td>Dudai et al., 1976</td>
+      <td>dnc1</td>
+      <td>Lab stock</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>uexMI01943</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_32805</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>uexNC1</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_7176</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-uexRNAi</td>
+      <td>Bloomington Drosophila Stock Center Perkins et al., 2015</td>
+      <td>RRID:BDSC_36116</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>uex-GAL4</td>
+      <td>Vienna Drosophila Resource Center</td>
+      <td>VT23256</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-GCaMP6f</td>
+      <td>Bloomington Drosophila Stock Center</td>
+      <td>RRID:BDSC_42747</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>uexMI01943.ex1</td>
+      <td>This study</td>
+      <td>uexMI01943.ex1</td>
+      <td>See Methods and Figure 2—figure supplement 2A and B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>uexMI01943.ex2</td>
+      <td>This study</td>
+      <td>uexMI01943.ex2</td>
+      <td>See Methods and Figure 2—figure supplement 2A and B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>uexΔ</td>
+      <td>This study</td>
+      <td>uexΔ</td>
+      <td>See Methods and Figure 2—figure supplement 2C</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>uex::HA</td>
+      <td>This study</td>
+      <td>uex::HA</td>
+      <td>See Methods and Figure 3—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>uexT626NRR</td>
+      <td>This study</td>
+      <td>uexT626NRR</td>
+      <td>See Methods and Figure 6A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-uex</td>
+      <td>This study</td>
+      <td>UAS-uex</td>
+      <td>See Methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-uexR622K</td>
+      <td>This study</td>
+      <td>UAS-uexR622K</td>
+      <td>See Methods and Figure 6A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-CNNM2WT</td>
+      <td>This study</td>
+      <td>UAS-CNNM2WT</td>
+      <td>See Methods and Figure 5A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-CNNM2E357K</td>
+      <td>This study</td>
+      <td>UAS-CNNM2E357K</td>
+      <td>See Methods and Figure 5A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-CNNM2T568I</td>
+      <td>This study</td>
+      <td>UAS-CNNM2T568I</td>
+      <td>See Methods and Figure 5A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-CNNM2S269W</td>
+      <td>This study</td>
+      <td>UAS-CNNM2S269W</td>
+      <td>See Methods and Figure 5A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-CNNM2E122K</td>
+      <td>This study</td>
+      <td>UAS-CNNM2E122K</td>
+      <td>See Methods and Figure 5A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-MagFRET-1</td>
+      <td>This study</td>
+      <td>UAS-MagFRET-1</td>
+      <td>See Methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-MARIO</td>
+      <td>This study</td>
+      <td>UAS-MARIO</td>
+      <td>See Methods</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-MagIC</td>
+      <td>This study</td>
+      <td>UAS-MagIC</td>
+      <td>See Methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (Rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11122, RRID:AB_221569</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (Rabbit monoclonal)</td>
+      <td>New England Biolabs</td>
+      <td>Cat# 3724T</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (Rabbit polyclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F-7425, RRID:AB_439687</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-UEX (Rabbit polyclonal)</td>
+      <td>Eurogentec</td>
+      <td>Cat# ZGB-15047</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tubulin (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T-6199, RRID:AB_477583</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG (Alexa 488 goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11034, RRID:AB_2576217</td>
+      <td>IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG (HRP-conjugated goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 32260, RRID:AB_1965959</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG (HRP-conjugated goat polyclonal)</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 32230, RRID:AB_1965958</td>
+      <td>WB (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUAST-uex (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>pUAST vector containing uex cDNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUAST- uexR622K(plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>pUAST vector containing uexR622KcDNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUAST- CNNM2WT(plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>pUAST vector containing mouse CNNM2WT cDNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUAST- CNNM2E122K(plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>pUAST vector containing mouse CNNM2E122K cDNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUAST- CNNM2E357K(plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>pUAST vector containing mouse CNNM2E357K cDNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUAST- CNNM2S269W(plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>pUAST vector containing mouse CNNM2S269W cDNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUAST- CNNM2T568I(plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td>pUAST vector containing mouse CNNM2T568I cDNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJFRC-MUH- MagFRET-1 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pJFRC-MUH vector containing MagFRET-1 CDS</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTW-MARIO (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pTW vector containing MARIO CDS</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTW-MagIC (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pTW vector containing MagIC CDS</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCFD3-dU6:3gRNA vector</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_49410</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMVMagFRET-1</td>
+      <td>Addgene</td>
+      <td>RRID:Addgene_50742</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pScarlessHD-2xHA-DsRed</td>
+      <td>Addgene</td>
+      <td>80822</td>
+      <td>Gift to Addgene from Kate O’Connor-Giles</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>gRNA constructs for uexΔ</td>
+      <td>GenetiVision</td>
+      <td>Y17.C253.Q002</td>
+      <td>Generated by GenetiVision for this study</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Donor construct for uexΔ</td>
+      <td>GenetiVision</td>
+      <td>Y17.C253.Q002</td>
+      <td>Generated by GenetiVision for this study</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>gRNA construct for uex::HA</td>
+      <td>WellGenetics</td>
+      <td>WG-16107 gRNA</td>
+      <td>Generated by WellGenetics for this study</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Donor construct for uex::HA</td>
+      <td>WellGenetics</td>
+      <td>PWG1521 pUC57-Kan-16107 donor</td>
+      <td>Generated by WellGenetics for this study</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>gRNA construct for uexT626NRR</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Gipc1_F</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>GGGAAAGGACAAAAGGAACCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>uex CDS, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>ATCGCCGCGGATGAACACATATTTCATATCATTTATTAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>uex CDS, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>ATCGCTCGAGTTAGGGCTTACTTTGCTTGCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>uexR622K, fragment 1, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>ATGAACACATATTTCATATCATTTATTACAATAATTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>uexR622K, fragment 1, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>GTGACTTCTACTTTACCCTCCAAAATAAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>uexR622K, fragment 2, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>GTACTTATTTTGGAGGGTAAAGTAGAAGTCACAATTGGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>uexR622K, fragment 2, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>TTAGGGCTTACTTTGCTTGCTCTCGAATTTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CNNM2 cDNA, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>ATCGCTCGAGATGATTGGCTGTGGCGCTTGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>CNNM2 cDNA, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>ATCGTCTAGACTATGCGTAGTCTGGCACGTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MagFRET-1 CDS, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>ATCGCTCGAGGCCACCATGGGCCATATGGTGAGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MagFRET-1 CDS, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>ATCGTCTAGATTACTTGTACAGCTCGTCCATGCCGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MagIC CDS, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CACCAGGATGGCCATCATCAAGGAGTTCATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MagIC CDS, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CCGTTACTCGATGTTGTGGCGGATCTTGAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MARIO CDS, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CACCAGGGCTTGGTACCGAGCTCGGAT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>MARIO CDS, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CCGCCACTGTGCTGGATATCTGCAGAATTCTTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Inverse PCR of uexMI01943, Set 1, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>ATGATAGTAAATCACATTACG3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Inverse PCR of uexMI01943, Set 1, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CAATAATTTAATTAATTTCCC3</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Inverse PCR of uexMI01943, Set 2, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CAAAAGCAACTAATGTAACGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Inverse PCR of uexMI01943, Set 2, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>TTGCTCTTCTTGAGATTAAGGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR of Nmdar1, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>ATCCCTCGACGTACAACATTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR of Nmdar1, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>GAGGTGCTTTATTGTGGTGCTAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR of Nmdar2, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>ACTGCTGGGCAACCTGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR of Nmdar2, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>GATTTCCGTCTTGTACGACCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR of GluRIA, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>TTTTCTGGCCGGAATTTAGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR of GluRIA, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CCTGTTCGAAGATTGCACCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR of GluRIIA, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>AACCACCAGATGTCCATCAATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR of GluRIIA, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>GAAGGTGCGCCACTCATAGT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR of Gapdh, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CTTCTTCAGCGACACCCATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR of Gapdh, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>ACCGAACTCGTTGTCGTACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR of Tbp, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>ACAGGGGCAAAGAGTGAGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR of Tbp, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CTTAAAGTCGAGGAACTTTGCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR of Ef1α100E, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>GCGTGGGTTTGTGATCAGTT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR of Ef1α100E, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>GATCTTCTCCTTGCCCATCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>uexMI01943 Minos excision, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>GTGCCAGACCACTGCACCATC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>uexMI01943 Minos excision, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CCGTACCTATGTCGATTCCCACCTC</td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>uexΔ lesion</td>
+      <td>This study</td>
+      <td>CRISPR gRNA1</td>
+      <td>ACTTTCCAGTACCTTAGCAC [TGG]</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>uexΔ lesion</td>
+      <td>This study</td>
+      <td>CRISPR gRNA2</td>
+      <td>GTCACTCCTCGCGGTACCAC [TGG]</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Verification of uexΔ, set 1, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>AAGACATGGATTGGCGATTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Verification of uexΔ, set 1, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>AAGTCGCCATGTTGGATCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Verification of uexΔ, set 2, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CTGGGCATGGATGAGCTGTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Verification of uexΔ, set 2, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CTGGAGCGCAACAATTCTCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>uexT626NRR lesion</td>
+      <td>This study</td>
+      <td>CRISPR gRNA</td>
+      <td>GGTCGTGTAGAAGTCACAAT [TGG]</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>uexT626NRR lesion</td>
+      <td>This study</td>
+      <td>ssODN</td>
+      <td>GTCTTTATATTTTCACTCAAGGAAAAGCTGTCGACTTTTTTGTACTTATTTTGGAGGGTAAAGTAGAAGTCACAATTGCCAAGGAAGCGCTTATGTTTGAAAGCGGGCCCTTTACTTATT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Screen for uexT626NRR, set 1, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>GGTTATTCTCGTATTCCAGTGTACGATGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Screen for uexT626NRR, set 1, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>GAGATTCAGCATCTAGAGACAAAGACGCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Screen for uexT626NRR, set 2, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CGGTCGGGTTAGTTACTCTGGAAGATG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Screen for uexT626NRR, set 2, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CGCGTAAGCATTCACACTAGCTGAGTAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Screen for uexT626NRR, set 3, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>GGCTACTTTCCAGTACCTTAGCACTGG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Screen for uexT626NRR, set 3, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CGCGTAAGCATTCACACTAGCTGAGTAAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Screen for uexT626NRR, set 4, Forward</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CGGAGGTTACTCAATCAAGACGTGTTTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Screen for uexT626NRR, set 4, Reverse</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>CGCGTAAGCATTCACACTAGCTGAGTAAC</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-zol RNA MiniPrep</td>
+      <td>Cambridge Bioscience</td>
+      <td>R2050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript III First-Strand Synthesis SuperMix</td>
+      <td>Invitrogen</td>
+      <td>18080400</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LightCycler 480 SYBR Green I Master</td>
+      <td>Roche</td>
+      <td>04707516001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>pENTR/D-TOPO cloning kit</td>
+      <td>Invitrogen</td>
+      <td>K240020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gateway LR ClonaseTM II Enzyme mix</td>
+      <td>Invitrogen</td>
+      <td>11791020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBuilder HiFi DNA Assembly Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>E2621S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>ExoSAP-IT PCR Product Cleanup Reagent</td>
+      <td>Thermo Fisher</td>
+      <td>78201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MgCl2</td>
+      <td>Sigma-Aldrich</td>
+      <td>M1028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MgSO4</td>
+      <td>Sigma-Aldrich</td>
+      <td>M3409</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>CaCl2</td>
+      <td>Sigma-Aldrich</td>
+      <td>21115</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>KCl</td>
+      <td>Sigma-Aldrich</td>
+      <td>60142</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EDTA</td>
+      <td>Sigma-Aldrich</td>
+      <td>324504</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Forskolin</td>
+      <td>Sigma-Aldrich</td>
+      <td>F6886</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,9-Dideoxyforskolin</td>
+      <td>Sigma-Aldrich</td>
+      <td>D3658</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Magnesium Green</td>
+      <td>Invitrogen</td>
+      <td>M3733</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sucrose</td>
+      <td>Sigma-Aldrich</td>
+      <td>S0389</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mineral oil</td>
+      <td>Sigma-Aldrich</td>
+      <td>M5904</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-Octanol</td>
+      <td>Sigma-Aldrich</td>
+      <td>218405</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-Methyl-Cyclohexanol</td>
+      <td>Sigma-Aldrich</td>
+      <td>66360</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde</td>
+      <td>Fisher Scientific</td>
+      <td>15713</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phosphate buffered saline tablets</td>
+      <td>Fisher Scientific</td>
+      <td>1282–1680</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Triton X-100</td>
+      <td>Sigma-Aldrich</td>
+      <td>T9284</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Vectashield antifade mounting medium</td>
+      <td>Vector Laboratories</td>
+      <td>H1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRIzol RNA isolation reagents</td>
+      <td>Thermo Fisher</td>
+      <td>15596018</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 6.0</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>https://www.graphpad.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SnapGene Viewer 4.1</td>
+      <td>SnapGene</td>
+      <td>RRID:SCR_015052</td>
+      <td>https://www.snapgene.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Geneious R10.2</td>
+      <td>Geneious</td>
+      <td>RRID:SCR_010519</td>
+      <td>https://www.geneious.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji/ImageJ 1.4</td>
+      <td>NIH</td>
+      <td>RRID:SCR_002285</td>
+      <td>https://imagej.nih.gov</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB R2017b</td>
+      <td>Mathworks</td>
+      <td>RRID:SCR_013499</td>
+      <td>https://www.mathworks.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Python 3.7</td>
+      <td>Python Software Foundation</td>
+      <td>RRID:SCR_008394</td>
+      <td>https://www.python.org</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Visual Studio Code 1.42</td>
+      <td>Microsoft</td>
+      <td></td>
+      <td>https://code.visualstudio.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Adobe Illustrator CC</td>
+      <td>Adobe Systems</td>
+      <td>RRID:SCR_010279</td>
+      <td>https://www.adobe.com</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>InterPro</td>
+      <td>EMBL-EBI</td>
+      <td>RRID:SCR_005829</td>
+      <td>https://www.ebi.ac.uk/interpro</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phyre2</td>
+      <td>Genome3D</td>
+      <td></td>
+      <td>http://www.sbg.bio.ic.ac.uk/~phyre2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TM-align</td>
+      <td>Zhang Lab</td>
+      <td></td>
+      <td>https://zhanglab.ccmb.med.umich.edu/TM-align/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Chimera 1.11</td>
+      <td>UCSF</td>
+      <td>RRID:SCR_004097</td>
+      <td>https://www.cgl.ucsf.edu/chimera/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Contact for reagent and resource sharing
 
 A full list of reagents can be viewed in the Key Resources Table.
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Scott Waddell (scott.waddell@cncb.ox.ac.uk).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## Fly strains
+#### Fly strains
 
 Unless stated otherwise, flies were raised on standard cornmeal food under a 12 hr light–dark cycle at 60% humidity and 25°C. Test and control flies for GAL80ts experiments were raised at 18°C. Mixed sex flies 1–7-days-old were used in experiments.
 
@@ -166,9 +1317,9 @@ CRISPR/Cas9-edited uex::HA flies were generated by WellGenetics using the Scarle
 
 To construct the CRISPR/Cas9-edited uexT626NRR flies, we designed and cloned a gRNA and designed and ordered (Sigma) a single-stranded oligo-deoxynucleotide (ssODN). gRNA and ssODN sequences are detailed in the Resource Table. As we planned to make a single amino acid substitution R622K in the UEX CNBH domain, the 120 bp ssODN donor was centered on codon R622 and carries the codon change CGT to AAA (at 31,179.31,181) corresponding to R622K. The expected cut site of the gRNA (between 31,192 and 31,193) is only 11 bp away from the expected mutation point. To enhance the likelihood of HDR, which is reportedly low using ssODN as donor, we commercially (GenetiVision) injected editing material into 250 lig4 KO vasa-Cas embryos (Zimmer et al., 2016). We obtained 37 viable G0 flies from the injected embryos. A total of 224 G1 flies were subjected to single fly genomic PCR and sequencing to screen for the expected mutation. Primers detailed in Resource Table. We identified 59 putative edited lines from first-round screening, and of these 12 were confirmed. Despite using lig4 KO vasa-Cas9, we detected only non-homologous end joining (NHEJ) events instead of HDR-mediated point mutations. Of the 12 edited lines, six were homozygous lethal and the other six were viable. In four of the homozygous viable lines, we found a replacement of G with T at position 31,192 together with a 6 bp in frame insertion of ATCTTC between 31,192 and 31,193. This NHEJ editing corresponds to the T626 → NRR change in the protein sequence of UEX (Figure 5A). The X chromosome vasa-Cas9 was removed from these lines by crossing and one line referred to as uexT626NRR was used in the behavior experiments in the manuscript.
 
-## Method details
+### Method details
 
-## Behavioral experiments
+#### Behavioral experiments
 
 For behavioral T-maze experiments, 1–7-day-old mixed sex flies were used. Odors were 4-methylcyclohexanol (MCH) and 3-octanol (OCT), diluted ~1:103 (specifically, 9 μl MCH or 7 μl OCT in 8 ml mineral oil). All experiments were performed at 23°C and 55–65% relative humidity.
 
@@ -180,13 +1331,13 @@ Aversive immediate and 24 hr memory experiments were conducted as previously des
 
 Sensory acuity tests (Figure 2—source data 1) were performed as described (Keene et al., 2004; Keene et al., 2006; Schwaerzel et al., 2003) with modifications. To test olfactory acuity, untrained flies were given 2 min to choose between a diluted odor as used in conditioning and air bubbled through mineral oil in the T maze. An Avoidance Index was calculated as the number of flies in the air arm minus the number in the odor arm, divided by the total number of flies. Electric shock avoidance was performed and calculated similarly. Untrained flies chose for 1 min between two tubes containing electric grids, but only one was connected to the power source. An avoidance index was calculated as the number of flies in the non-electrified arm minus the number in the electrified arm, divided by the total number of flies. To assess sugar acuity, starved flies were given 2 min to choose between an arm of the T-maze containing a dried sugar paper and the other containing a dried ‘water’ filter paper. Both papers were prepared as in the appetitive memory assays. A Preference Index was calculated as the number of flies in the sugar arm minus that in the other arm, divided by the total number of flies. We found that keeping the light on in the behavioral room and having air flow running through the testing tubes greatly enhanced the Preference Index in wild-type flies and therefore applied those conditions for all sugar preference testing.
 
-## Anti-UEX antibody and western blot
+### Anti-UEX antibody and western blot
 
 A polyclonal UEX antibody was developed commercially by Eurogentec. Two peptides were synthesized as antigens: Peptide 1 H-CLPKLDDKFESKQSKP-OH (16aa) and Peptide 2 H-CVDNRTKTRRNRYKKA-NH2 (16aa) and injected into rabbits. Only Peptide 2 induced a robust immune response and was processed further. The final serum was purified against Peptide 2 and used for western blot analysis as a 1:2000 dilution.
 
 For each sample in western blot, proteins were extracted from 20 fly heads by homogenizing thoroughly in 120 µl of protein sample buffer containing a mixture of 30 μl 2-mercaptoethanol (BioRad), 270 µl 4× Laemmli sample buffer (BioRad), and 900 µl Nuclease Free Water (Invitrogen). Samples were then boiled on a 100°C heat block for 3 min and centrifuged for 10 min before loading. A sample volume equivalent to four heads was loaded into each SDS-PAGE gel lane. Proteins were transferred to PVDF membrane and blocked in 5% skim milk for 1 hr at 25°C with 35 rpm agitation. Membrane was then incubated in anti-UEX solution (1:2000 rabbit anti-UEX in 5% skim milk) overnight at 4°C with 35 rpm agitation. Membrane was washed quickly three times followed by 3 × 10 min washes in TBST solution (100 ml of TBS 10× solution, BioRad, diluted in 900 ml of MilliQ water, with 0.1% Tween 20) and then incubated with HRP-conjugated secondary antibody solution (1:5000 of goat anti-rabbit in 5% skim milk) for 1–2 hr at 25°C with 35 rpm agitation. The membrane was again washed quickly for three times followed by 3 × 10 min washes in TBST. Protein bands were visualized using Pierce ECL western blotting substrate (Life technologies, 32134). Membrane was then stripped using Millipore ReBlot Plus Mild solution (Merck, 2502), blocked again in 5% skim milk, and probed with mouse anti-Tubulin primary antibody (1:2000, Sigma, T6199) and corresponding HRP conjugated goat anti-mouse secondary antibody (1:5000) following the protocol detailed above.
 
-## Immunostaining
+### Immunostaining
 
 Immunostaining was performed as described (Wu and Luo, 2006). Brains from 1- to 5-day-old adult flies were dissected in PBS and fixed for 20 min in PBS with 4% paraformaldehyde at room temperature. They were then washed twice briefly in 0.5% PBT (2.5 ml Triton-X100 in 497.5 ml PBS) and three 20 min washes. Brains were then blocked for 30 min at room temperature in PBT containing 5% normal goat serum and then incubated with primary and secondary antibodies with mild rotation (35 rpm) at 4°C for 1 or 2 days. Primary antibodies were rabbit anti-GFP (1:250; Invitrogen A11122) and rabbit anti-HA (1:250, NEB 3724T). Alexa 488–conjugated goat anti-rabbit (1:250; Invitrogen, A11034) was the secondary antibody. Before and after the secondary antibody incubation, brains were subjected to two quick washes followed by three 20 min washes in 0.5% PBT. Stained brains were mounted on glass slides in Vectashield (Vector Labs H1000) and imaged using a Leica TCS SP5 confocal microscope at 40× magnification (HCX PL APO 40×, 1.3 CS oil immersion objective, Leica). Image stacks were collected at 1024 × 1024 resolution with 1 μm steps and processed using Fiji (Schindelin et al., 2012). For quantification in Figure 3G and H, rectangular ROIs of approximately 40 × 25 μm for the for γ lobe, or round ROIs with diameter of 15 μm for αβ, α'β', and EB were manually drawn on a single section of a z-stack scan of the fly brain. Corresponding ROIs were also drawn on the superior medial protocerebrum (SMP) as a background control region, and the mean fluorescence was calculated using ImageJ. ROI intensity of the MB lobes and the EB was normalized to that of the respective SMP intensity. An average between left and right brains was used for a single data point. For quantification in Figure 7C and D, ROIs are indicated in the figures and ROI intensity was calculated similar to results in Figure 3H. In Figure 7C, a line was drawn through the widest part of the tip of the α lobe. The intensity profile of this line was obtained through ImageJ. Thirty data points in the middle of such a profile spanning about a 15 μm line were extracted for each line profile. The profile was further normalized to the mean value of the first five data points (F0) and calculated as (F−F0)/F0. Mean values of these normalized profiles from different brains were plotted (Figure 7C, middle panel). Left and right profiles of brains were calculated and are separately displayed. In Figure 7D, the relative intensities from different ROIs representing different regions are added together to generate a total intensity measure for the MB.
 
@@ -196,11 +1347,11 @@ For immunostaining, cells were fixed with 3.7% formaldehyde in PBS for 20 min an
 
 Mg2+-imaging with Magnesium Green was performed as described (Yamazaki et al., 2013), with slight modifications. To avoid potentially decreasing [Mg2+]i with the expressed proteins, transfected HEK293 cells were cultured in growth media supplemented with 40 mM MgCl2 until imaging. Cells were then incubated with Mg2+-loading buffer (78.1 mM NaCl, 5.4 mM KCl, 1.8 mM CaCl2, 40 mM MgCl2, 5.5 mM glucose, and 5.5 mM HEPES-KOH [pH 7.4]), including 2 μM Magnesium Green-AM (Invitrogen), for 30 min at 37°C. Cells were then rinsed once with loading buffer and viewed with an Olympus IX81 microscope equipped with an ORCA-Flash 4.0 CMOS camera (Hamamatsu) and a SHI-1300L mercury lamp (Olympus). Fluorescence was measured every 20 s (excitation at 470–490 nm and emission at 505–545 nm) under the control of Metamorph software (Molecular Devices). Buffer was then changed to Mg2+free buffer (MgCl2 in the loading buffer was replaced with 60 mM NaCl). Data are presented as line plots (mean of 10 cells). After imaging, cells were fixed with PBS containing 3.7% formaldehyde and subjected to immunofluorescence microscopy to confirm protein expression.
 
-## FRET-based Mg2+ concentration measurements in fixed fly brains
+### FRET-based Mg2+ concentration measurements in fixed fly brains
 
 One- to two-day-old flies with genotype c739; UAS-MagFRET-1 were housed in vials with 1 mM or 80 mM [Mg2+] food for 4 days before being collected. Fly brains were dissected in PBS and fixed for 20 min in PBS with 4% paraformaldehyde at room temperature. They were then washed twice briefly in 0.5% PBT (2.5 ml Triton-X100 in 497.5 ml PBS) and three 10 min washes. Brains were then mounted on glass slides in Vectashield (Vector Labs H1000) and imaged using a wide-field Scientifica Slicescope with a 40×, 0.8 NA water-immersion objective and an Andor Zyla sCMOS camera with Andor Solis software (v4.27). In order to get the FRET ratio that indicates the Mg2+ concentration of the αβ neuron, time series were acquired alternatively between the cerulean channel and the citrine channel at 3 Hz with 512 × 512 pixels and 16 bit. The excitation wavelength for both channels is 436 nm, while the emission filter for cerulean is 460–500 nm and that for citrine is 520–550 nm. Series acquisition starts from the cerulean channel and lasts for 5 s, then switches to the citrine channel and last for another 5 s, and this cycle is repeated for two more times. A total of 30 s (90 frames) image stack was therefore acquired for each brain. Image stacks were subsequently analyzed using ImageJ and custom-written Matlab scripts. In brief, rectangle ROIs (Figure 1E, left panel) were manually drawn on the αβ lobes (one on α lobe and one on β lobe for each hemisphere), and outside the αβ lobes (one for each hemisphere) as background control. Fluorescence intensity from the cerulean channel was calculated by dividing each vertical or horizontal lobe ROI by the background ROI, and averaged between the two hemispheres for each lobe, and averaged over the 15 frames for each cycle. That from the citrine channel was obtained similarly. A FRET ratio was obtained from the above intensities, further averaged among the three cycles of acquisition, depicted as one data point in Figure 1E (right panel).
 
-## Confocal Mg2+ imaging in explant fly brain
+### Confocal Mg2+ imaging in explant fly brain
 
 Explant brains expressing c739-GAL4 driven UAS-MagIC were placed at the bottom of a 35 mm glass bottom microwell dish (Part No. P35G-1.5–14 C, MatTek Corporation), beneath extracellular saline buffer solution (103 mM NaCl, 3 mM KCl, 5 mM N-Tris, 10 mM trehalose, 10 mM glucose, 7 mM sucrose, 26 mM NaHCO3, 1 mM NaH2PO4, 1.5 mM CaCl2, 4 mM MgCl2, osmolarity 275 mOsm [pH 7.3]) following dissection in calcium-free buffer (Barnstedt et al., 2016). To determine the Mg2+ sensitivity of UAS-MagIC as well as the response of UAS-MagIC to other chemicals such as EDTA, EGTA, and CaCl2 (Figure 8B), brains were incubated in the saline buffer solution with 20 μg/ml digitonin for 6 min before imaging (Koldenkova et al., 2015). To investigate the Mg2+ fluctuation in response to Forskolin (FSK) application (Figure 8C–I), brains were put in the saline buffer solution without digitonin or incubation. In both situations, saline refers to the buffer (either with or without digitonin) in which the brain is submerged.
 
@@ -208,18 +1359,18 @@ Imaging was carried out in a LSM780 confocal microscope (Zeiss) with a 20× air 
 
 Image stacks were subsequently analyzed using ImageJ and custom-written Python scripts. In brief, rectangle ROIs were manually drawn on the αβ neurons (one for each hemisphere, Figure 8A), and another ROI of the same size was drawn in the middle but outside the MBs as background control. Fluorescence intensity from the Venus (or mCherry) channel was calculated by subtracting the background ROI from the calyx ROIs, respectively, and averaged between the two hemispheres. This is referred as ‘Rel. Intensity (a.u.)' in Figure 8D and E. The ratio between Venus and mCherry intensity was calculated as ‘MagIC Ratio’ in Figure 8B and C and Figure 8F and G. For Figure 8H, the intensity for the two channels was calculated separately. In this case, ‘Rel. Intensity (ΔF/F0)’ refers to the relative fluorescence intensity normalized to the mean intensity from the baseline period F0, calculated as (F−F0)/F0. The relative intensity ΔF/F0 of Venus was used to calculate the PSD (Figure 8I) through python function psd (under matplotlib.pyplot), which adopted a Welch’s average periodogram method (Bendat et al., 2000).
 
-## Reverse transcription and quantitative real-time PCR
+### Reverse transcription and quantitative real-time PCR
 
 For each sample, 120 flies were frozen in liquid nitrogen and their heads were homogenized completely in TRIzol reagent (Invitrogen). Total RNA was extracted using Direct-zol RNA MiniPrep (R2050) kit following the manufacturer’s instructions. cDNA was synthesized using SuperScript III First-Strand synthesis System (Invitrogen). Five independent samples were prepared for each different treatment or genotype. Quantitative PCR was performed in triplicate for each cDNA sample on a LightCycler 480 Instrument (Roche) using SYBR Green I Master Mix (Roche). Melting curves were analyzed after amplification, and amplicons were visualized by agarose gel electrophoresis to confirm primer specificity. Relative transcript levels were calculated by the 2-ΔΔCt method (Livak and Schmittgen, 2001), and the geometric mean of the Ct values of three reference genes (Gapdh, Tbp, and Ef1α100E) was used for normalization. Primers are detailed in the Resource Table.
 
-## Inverse PCR
+### Inverse PCR
 
 Inverse PCR was used to map the MiMIC insertion position in uexMI01943 flies. Genomic DNA was prepared from 15 adult flies. DNA equivalent to two flies was then digested in a 25 μl restriction reaction with Mbo I and 10 μl of the product was ligated overnight at 4°C overnight to circularize the fragments; 5 μl of the ligation product was used for inverse PCR. PCR product was purified using Exo/SAP reaction (Thermo Fisher, 78201) before being sequenced. Sequence was compared to the D. melanogaster genome (FlyBase, Release 6) by BLAST and matched uniformly to the region 3,882,886.3,882,641 on 2R, consistent with the reported uexMI01943 insertion on FlyBase. Primers detailed in the Resource Table.
 
-## Protein domain prediction and alignment
+### Protein domain prediction and alignment
 
 Protein sequence alignment was carried out using Geneious R10.2.2. Protein domain prediction was performed with InterPro (Finn et al., 2017; Jones et al., 2014) and Phyre2 (Kelley et al., 2015). Protein domain and structure alignment was performed using TM-align (Zhang and Skolnick, 2005). Protein structure visualization was rendered in Chimera 1.11.2 (Pettersen et al., 2004).
 
-## Quantification and statistical analyses
+### Quantification and statistical analyses
 
 Behavior data were analyzed using Excel and Prism 6. Imaging data were analyzed using ImageJ and custom-written MATLAB or Python scripts. Unpaired two-tailed t-tests were used for comparing two groups, and one-way ANOVA followed by a Tukey’s post-hoc test was used for comparing multiple groups. Threshold of statistical significance was set at p<0.05.

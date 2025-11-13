@@ -6,8 +6,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05gq02987 Department of Ecology, Evolution and Organismal Biology, Brown University Providence United States
-2. https://ror.org/05gq02987 Center for Computational Molecular Biology, Brown University Providence United States
+1. Department of Ecology, Evolution and Organismal Biology, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
+2. Center for Computational Molecular Biology, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
 
 † Corresponding author
 

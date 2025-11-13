@@ -16,7 +16,7 @@
 ### Affiliations
 
 1. Translational Research Laboratory Advanced Centre for Treatment, Research and Education in Cancer Tata Memorial Centre Kharghar Navi Mumbai India
-2. https://ror.org/02bv3zr67 Homi Bhabha National Institute, Anushakti Nagar Mumbai India
+2. Homi Bhabha National Institute, Anushakti Nagar Mumbai India ([ROR:02bv3zr67](https://ror.org/02bv3zr67))
 
 † Corresponding author
 
@@ -36,11 +36,13 @@ In this study, we investigated the intracellular processes and functions that re
 
 The results of the study are summarized in Video 1.
 
+![Video 1.](https://cdn.elifesciences.org/articles/103771/elife-103771-video1.mp4.jpg)
+
 Our results are described under three separate headings depending on whether NIH3T3 cells were treated with cfChPs isolated from sera of cancer patients or healthy individuals or with cfChPs that were released from hypoxia-induced dying MDA-MB-231 breast cancer cells. Most of the experiments were conducted using cfChPs isolated from cancer patients because of our special interest in cancer and our earlier results (Mittra et al., 2015b), which had shown that cfChPs isolated from cancer patients had significantly greater activity in terms of DNA damage and activation of apoptotic pathways than those isolated from healthy individuals. The majority of experiments were performed more than once with reproducible results.
 
-## Experiments using cfChPs from cancer patients
+### Experiments using cfChPs from cancer patients
 
-## cfChPs are rapidly and abundantly internalised by NIH3T3 mouse fibroblast cells
+#### cfChPs are rapidly and abundantly internalised by NIH3T3 mouse fibroblast cells
 
 We isolated cfChPs from the sera of cancer patients by a protocol described by us earlier (Mittra et al., 2015b). A representative electron microscopy image of the cfChPs is given in Figure 1. In order to track the intracellular activities of cfChPs, we fluorescently dually labelled the isolated cfChPs in their DNA with Platinum Bright Red 550 and in their histones with ATTO-488 and applied them (10 ng) to NIH3T3 mouse fibroblast cells. A representative image of isolated cfChPs that had been fluorescently dually labelled and used to treat the NIH3T3 cells is given in Figure 2a. Examination of NIH3T3 mouse fibroblasts treated with the dually fluorescently labelled cfChPs confirmed our earlier observation (Mittra et al., 2015b) that cfChPs can readily and rapidly horizontally transfer themselves to healthy cells via phagocytosis (Mittra et al., 2017) to accumulate in their cytoplasm and nuclei by 6 hr (Figure 2b). The fluorescent cfChPs appeared prominent, ostensibly owing to the amalgamation of multiple cfChPs to form large concatemers following their cellular entry (described in detail later). Chromatin fibres prepared from similarly treated NIH3T3 cells at 6 hr revealed the presence of numerous dually labelled cfChPs of varying sizes, which were present in both the cytoplasm and overlapping with mouse chromatin fibres (Figure 2c). Since chromatin fibres are derived from interphase cells, we further investigated whether the internalised concatemers could also be detected in metaphase cells. The detection of concatemers on metaphase spreads was of especial interest to us in view of the resurgence of interest in extra-chromosomal DNA (ecDNA) in human cancers, which have largely been conducted on metaphase chromosomes (Wu et al., 2022; Yan et al., 2024). We were interested to examine how the cfChP concatemers might relate to the reported characteristics of cancer ecDNAs. Metaphase spreads prepared from cfChPs-treated NIH3T3 cells at 6 hr revealed many dually labelled cfChPs, some of which were associated with the chromosomes while others were present in extrachromosomal spaces (Figure 2d).
 
@@ -52,17 +54,57 @@ We isolated cfChPs from the sera of cancer patients by a protocol described by u
 
 **Figure 2.:** The DNA and histones of cfChPs were dually fluorescently labelled with Platinum Bright 550 and ATTO-488, respectively, and applied (10 ng) to NIH3T3 cells. (a) Representative images of dually labelled cfChPs prior to their application to NIH3T3 cells. (b) Confocal microscopy images of cfChPs-treated cells at 6 hr showing many dually labelled fluorescent signals in the cytoplasm and nuclei. (c) Fluorescence microscopy images of chromatin fibres prepared from similarly treated cells at 6 hr showing numerous dually labelled fluorescent signals of varying sizes in the cytoplasm and in association with the chromatin fibres. (d) Fluorescence microscopy images of metaphase spreads prepared from cfChPs-treated cells at 6 hr showing multiple dually labelled fluorescent signals, which are either associated with the chromosomes or are present in extrachromosomal spaces. The latter are marked with arrows.
 
-## cfChPs randomly combine to form complex concatemers
+#### cfChPs randomly combine to form complex concatemers
 
 We had earlier hypothesised that when the cfChPs are horizontally transferred to another cell, the latter perceives the dsDNA breaks present in their two ends as damaged ‘self’ DNA, and in an attempt to repair the ‘perceived damage’, activates proteins of the DDR pathway which links up multiple disparate cfChPs as a part of the repair process leading to the formation of concatemers of variable sizes (Mittra et al., 2015b). To test this hypothesis, we performed FISH analysis using multiple different pairs of human chromosome-specific FISH probes on chromatin fibres and metaphase spreads prepared from cfChPs-treated NIH3T3 cells that were in continuous passage. Since these chromosome- specific probes were custom synthesised, we ensured that the probes that we used were human-specific and did not cross-react with mouse chromosomes (Figure 3—figure supplement 1a and b). We detected frequent co-localisation of red and green fluorescent signals suggesting that unrelated chromosomal fragments containing disparate DNA sequences had randomly amalgamated with each other to form highly complex concatemers (Figure 3). Some of the concatemers appeared strikingly prominent, which is particularly evident from images presented in Figure 3a. This suggested that the components of the concatemer had been markedly amplified. Even the small fluorescent signals shown in Figure 3b appeared as concatemers. As the analytical resolution of a FISH signal under a fluorescent microscope is in the range of 100–200 Kb (Cui et al., 2016), even the small concatemers can be assumed to be at least of a similar size range. Surprisingly, we detected the fluorescence signals of chromosome 4 to co-localise with those of centromeres and of chromosome 22 to co-localise with those of telomeres. This finding highlighted the extent of genetic complexity and chaotic nature of the concatemers (Figure 3a, panels 4 and 5). Perhaps the ultimate evidence of the chaotic composition of the concatemers comes from our detection of co-localising signals of telomeres and centromeres (Figure 3a, panel 6). The centromeric signal seen in Figure 3a, panel 4 is strikingly prominent, suggesting that the concatemers had not only incorporated centromeric DNA sequences (171 bp in size) within their folds but that they had undergone large-scale amplification. Results of quantitative analysis of the degree of co-localisation of fluorescent signals generated upon treatment with FISH probes specific to different chromosome pairs are given in Figure 3—figure supplement 2. The extent of co-localisation ranged between 32.4% and 39.8%. Concatemerisation could also be detected in metaphase spreads prepared from serially passaged cfChPs-treated NIH3T3 cells (Figure 3c). Negative control experiments performed on native NIH3T3 cells that had not been exposed to cfChPs treatment did not react with human-specific FISH probes against chromosome 4 and chromosome 16 which were tested (Figure 3—figure supplement 3).
 
-## Concatemers exhibit variable spatial relationships with mouse chromatin fibres
+![Figure 3.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig3-v1.jpg)
+
+**Figure 3.:** (a) FISH analysis of chromatin fibres prepared from cfChPs-treated NIH3T3 cells in continuous passage using different combinations of human chromosome-specific FISH probes, including probes specific for the human centromere and telomere, revealing co-localised fluorescent signals (arrows). (b) Small cfChPs also show co-localised signals suggesting that they too are comprised of concatemers (c) Similar co-localising signals are shown on metaphase spreads. Co-localised signals are marked with arrows.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Chromatin fibres were prepared from HEK-293 (human embryonic kidney) and NIH3T3 (mouse fibroblast) cells and both cell types were probed with different pairs of human chromosome specific FISH probes and those against human telomere and centromere. (a) Positive control cells (HEK-293); (b) Negative control cells (NIH3T3).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Five hundred fluorescent signals were analysed and the number of co-localising red and green signals was estimated. The results were expressed in percentage terms.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The human-specific FISH probes did not detect any human DNA signals in mouse cells.
+
+#### Concatemers exhibit variable spatial relationships with mouse chromatin fibres
 
 We next undertook immuno-FISH analysis using an antibody against histone H4 and a human whole genomic FISH probe on chromatin fibres prepared from cfChPs-treated NIH3T3 cells in continuous passage. We detected numerous dually labelled signals representing concatemers which exhibited extensive structural and size variability, as well as remarkably variable spatial relationships with mouse chromatin fibres (Figure 4a). Many concatemers were detected in the cytoplasm or to have aligned with long stretches of mouse DNA, while others exhibited unusual conformations or were seen to be dangling from the mouse DNA. A similar peculiar conformation was found in clone D5 which had been developed several years earlier by treatment of NIH3T3 cells with cfChPs isolated from sera of cancer patients and which had undergone numerous passages and multiple freeze–thaw cycles (Mittra et al., 2015b; Figure 4b). This finding suggested that concatemers persist across cell generations, showing remarkable stability. The fluorescent signals of the concatemers were also strikingly prominent, suggesting that they greatly exceeded the threshold of detection of FISH signals (100–200 kb; Cui et al., 2016). Control experiments were performed to confirm that the whole genomic DNA FISH probe used was human specific and did not cross-react with mouse (Figure 4—figure supplement 1).
 
-## Concatemers synthesise DNA polymerase and can replicate
+![Figure 4.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig4-v1.jpg)
+
+**Figure 4.:** (a) Immuno-FISH analysis of chromatin fibres prepared from cfChPs-treated NIH3T3 cells in continuous passages using an antibody against histone H4 and a human whole-genome FISH probe. (b) Immuno-FISH analysis of chromatin fibres prepared from clone D5 showing that the concatemers persisted even after numerous passages and freeze–thaw cycles.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Positive control experiment using HEK-293 (human embryonic kidney) cells treated with human specific DNA FISH probe; (b) Negative control experiment using NIH3T3 (mouse embryonic fibroblast) cells treated with mouse specific DNA FISH probe.
+
+#### Concatemers synthesise DNA polymerase and can replicate
 
 Cells in continuous passage were pulse-labelled with BrdU followed by immuno-FISH analysis using an antibody against BrdU and a human genomic DNA probe. The analysis revealed co-localisation of the fluorescent signals of BrdU and DNA, indicating that the concatemers were actively synthesising DNA (Figure 5a, upper panel). Immuno-FISH experiments further revealed that the concatemers expressed human DNA polymerase γ (Figure 5a, middle panel), while dual immunofluorescence staining using antibodies against BrdU and human-specific DNA polymerase γ revealed co-localised signals, indicating that the concatemers had the potential to autonomously replicate themselves (Figure 5a, lower panel). Since human DNA polymerases are well conserved in mouse and across mammals, we ensured that the antibodies against DNA polymerase γ were human specific and did not cross-react with mouse (Figure 5—figure supplement 1). Results of quantitative analysis of the degree of co-localisation of fluorescent signals of human DNA and BrdU; human DNA and human DNA polymerase γ; and BrdU and human DNA polymerase γ are given in Figure 5—figure supplement 2. The extent of co-localisation ranged between 82.0% and 88.8%. These findings were confirmed on metaphase preparations from serially passaged cfChP-treated NIH3T3 cells, wherein we detected multiple co-localising signals of human DNA and BrdU, human DNA and human DNA polymerase γ, and BrdU and human DNA polymerase γ in the extrachromosomal spaces (Figure 5b). Negative control experiments performed on native NIH3T3 cells that had not been exposed to cfChPs treatment did not react with either to the human genomic DNA probe or the antibody against human DNA polymerase γ (Figure 5—figure supplement 3).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig5-v1.jpg)
+
+**Figure 5.:** (a) Chromatin fibres were prepared from NIH3T3 cells in continuous passage and were pulse-labelled for 24 hr with BrdU (10 µm). Immuno-FISH experiments using antibodies against BrdU, human-specific DNA polymerase γ, and a human whole-genome FISH probe show co-localised signals of human DNA and BrdU, human DNA and DNA polymerase γ, and BrdU and DNA polymerase γ. Co-localised signals are marked with arrows. (b) Similar co-localising signals are shown on metaphase spreads. Co-localised signals are marked with arrows.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Positive control experiment using HEK-293 (human embryonic kidney) cells probed with human specific DNA FISH probe, antibody against BrdU and antibody against human specific DNA Polymerase γ; (b) Negative control experiment using NIH3T3 (mouse embryonic fibroblast) cells do not react with either human specific DNA FISH probe or with human specific DNA Polymerase γ antibody.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Five hundred fluorescent signals were analysed and the number of co-localising red and green signals was estimated. The results were expressed in percentage terms.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** The human-specific FISH probe and antibody did not detect any human DNA and DNA polymerase signals in mouse cells.
 
 Given the above results that the concatemers expressed DNA polymerase which co-localised with BrdU signals, we investigated their potential for self-replication. Ten metaphase spreads were prepared from cells in each successive passage, and the number of human FISH signals (representing concatemers) per chromosome was determined. The result showed that human FISH signals on mouse chromosomes increased progressively such that the number of signals at passage 198 was 4.07 times higher than those in passage 2 (Figure 6a). It should be noted that this analysis is restricted to the proliferative capacity of concatemers that were associated with the chromosomes and did not take into account the replicative potential of those that are present in the cytoplasm. We also did a similar exercise to investigate whether the concatemers could amplify themselves with time by estimating the mean fluorescent intensity (MFI) per chromosome. We found that the increase in MFI between passage 2 and 198 was 237.2-fold (Figure 6b). Taken together, these results indicated that the concatemers increased their copy number and extensively amplified themselves with time in culture.
 
@@ -70,7 +112,7 @@ Given the above results that the concatemers expressed DNA polymerase which co-l
 
 **Figure 6.:** Metaphase spreads were prepared from cells in each progressively increasing passage and probed with a human-specific DNA FISH probe. (a) The total number of human DNA FISH signals on the DAPI-stained chromosomes was counted, and the mean number of human FISH signals per chromosome was calculated after analysing 10 metaphase spreads at each passage. A progressive increase in mean FISH signals per chromosomes is evident with increasing passage number (analysis of variance for linear trend p<0.0001). The mean number of human FISH signals per chromosome between passage no. 2 and passage no. 198 increased by a factor of 4.07. (b) A similar exercise was done as above except that mean fluorescent intensity (MFI) of human FISH signals per chromosome, indicative of amplification, was determined. A progressive increase in mean MFI per chromosomes is evident with increasing passage number (analysis of variance for linear trend p<0.0001). The MFI per chromosome increased by a factor of 237.19 between passage no. 2 and passage no. 198. The insets represent partial metaphase images showing human DNA signals on the chromosomes. Blue and red signals represent DAPI and human DNA, respectively.
 
-## Concatemers are composed of open chromatin
+#### Concatemers are composed of open chromatin
 
 We next examined the epigenetic constitution of the concatemers using antibodies against the histone markers representing trimethylation of histone H3 at lysine 4 (H3K4me3) and trimethylation of histone H3 at lysine 9 (H3K9me3), indicative of regions associated with active gene promoters and regions associated with long-term repression, respectively (Barski et al., 2007). Chromatin fibres prepared from cfChPs-treated NIH3T3 cells in continuous passage were dually immune-stained with antibodies targeting H3K4me3 and H3K9me3, and the number of concatemers that reacted with the antibodies was counted. We found that the vast majority of the concatemers either reacted exclusively with antibodies against H3K4me3 (open chromatin) or were hybrids of H3K4me3 and H3K9me3, with only a small fraction of reacting exclusively with H3K9me3 (Figure 7). The figure also shows that the concatemers contained open chromatin irrespective of whether the regions of the host mouse DNA reacted with antibodies against H3K4me3 or H3K9me3. Taken together, these data indicated that concatemers primarily contained nucleosome-depleted regions and could bind to protein factors that facilitate gene transcription (Thomas et al., 2011) and DNA replication (MacAlpine et al., 2010).
 
@@ -78,7 +120,7 @@ We next examined the epigenetic constitution of the concatemers using antibodies
 
 **Figure 7.:** Representative images of chromatin fibres immunostained with antibodies against H3k4me3 (red) and H3k9me3 (green). The hybrid concatemers are represented by co-localised yellow signals. The host mouse DNA in the upper image is seen to react with H3k4me3 antibody representing open chromatin, while the host mouse DNA segment in the lower image is comprised of heterochromatin and seen to react with antibody against H3k9me3. However, the concatemers were largely composed of open chromatin irrespective of the epigenetic status of the host mouse DNA. Histograms represent quantitative estimates of H3k4me3, H3k9me3, and hybrid histones after counting 100 fluorescent signals. The values are expressed as mean ± SEM values. Statistical analysis was performed using two-tailed Student’s t-test. * p<0.05, ** p<0.01, and **** p<0.0001.
 
-## Concatemers can synthesise RNA
+#### Concatemers can synthesise RNA
 
 As the above findings suggested that concatemers are largely composed of open chromatin and potentially capable of active transcription, we investigated their potential for RNA synthesis. Using an assay kit which detects global RNA transcription, we detected abundant RNA in the cytoplasm of cfChP-treated passaged cells, which was absent in the control NIH3T3 cells (Figure 8). As RNA synthesis is normally restricted to the nucleus, the detection of RNA in the cytoplasm indicated that DNA contained within the concatemers was undergoing active transcription. Treatment of the cfChPs-treated passaged cells with actinomycin D or maintaining the cells at low temperature (31 °C) abolished RNA synthesis. These data indicated that the concatemers were actively involved in RNA synthesis, which is dependent on active cellular metabolism.
 
@@ -86,37 +128,117 @@ As the above findings suggested that concatemers are largely composed of open ch
 
 **Figure 8.:** Images showing cytoplasmic RNA synthesis by cfChP-treated cells in continuous passage, which is absent in control NIH3T3 cells. Treatment of cfChP-treated cells with Actinomycin D (0.0005 μg/mL) or maintenance at low temperature (31 °C) abolishes RNA synthesis indicating that the latter is dependent on active cellular metabolism.
 
-## Concatemers synthesise their own protein synthetic machinery
+#### Concatemers synthesise their own protein synthetic machinery
 
 The ability of the concatemers to synthesise RNA led us to investigate whether they were involved in protein synthesis. We looked for three critical components of protein synthetic machinery, viz. ribosomal RNA, RNA polymerase, and ribosomal protein. For detection of ribosomal RNA, we undertook dual-FISH using a human genomic FISH probe (to detect the concatemers) and a FISH probe against human ribosomal RNA. We ensured that the latter FISH probe was specific to human and did not cross-react with mouse (Figure 9—figure supplement 1, upper panel). Dual FISH analysis on chromatin fibres prepared from serially passaged cfChP-treated cells revealed strictly co-localised signals, indicating that the concatemers were synthesising ribosomal RNA (Figure 9a, upper panel). We next investigated whether the concatemers could synthesise the other two components of the protein synthetic machinery, viz. RNA polymerase and ribosomal protein after ensuring that the antibodies against them were specific to humans (Figure 9—figure supplement 1, middle and lower panels). Immuno-FISH analysis revealed co-localised fluorescent signals generated by a human-specific genomic DNA probe and antibodies against RNA polymerase III and ribosomal protein (Figure 9a, middle and lower panels, respectively). These findings indicated that concatemers could autonomously synthesise critical components of the protein synthetic machinery. Results of quantitative analysis of the degree of co-localisation of fluorescent signals of human DNA and human ribosomal RNA; human DNA and RNA polymerase III; and human DNA and ribosomal protein are given in Figure 9—figure supplement 2. The extent of co-localisation ranged between 77.2% and 81.4%. We confirmed these findings in metaphase preparations from serially passaged cells for all three components of the protein synthetic machinery mentioned above (Figure 9b). Negative control experiments performed on native NIH3T3 cells that had not been exposed to cfChPs treatment did not react with the human-specific probes against DNA, ribosomal RNA, and the human-specific antibodies against RNA polymerase III and ribosomal protein (Figure 9—figure supplement 3).
 
-## Concatemers synthesise a variety of human proteins in mouse cells
+![Figure 9.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig9-v1.jpg)
+
+**Figure 9.:** Chromatin fibres (a) and metaphase spreads (b) were prepared from cfChPs-treated cells in continuous passage. Dual-FISH experiments were performed using a human-specific genomic DNA FISH probe and a probe against human-specific ribosomal RNA, and immune-FISH experiments were performed using a human-specific genomic DNA FISH probe and antibodies against human-specific RNA polymerase III and human-specific ribosomal protein. Co-localised fluorescent signals of DNA and the components of the above protein synthetic machinery are marked with arrows.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig9-figsupp1-v1.jpg)
+
+**Figure 9—figure supplement 1.:** (a) Positive control cells using HEK-293 (human embryonic kidney) cells; (b) Negative control experiments using NIH3T3 (mouse embryonic fibroblast) cells.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig9-figsupp2-v1.jpg)
+
+**Figure 9—figure supplement 2.:** Five hundred fluorescent signals were analysed and the number of co-localising red and green signals was estimated. The results were expressed in percentage terms.
+
+![Figure 9—figure supplement 3.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig9-figsupp3-v1.jpg)
+
+**Figure 9—figure supplement 3.:** The human-specific FISH probe and antibodies did not detect any signals of human DNA and human ribosomal RNA, human DNA and human RNA polymerase III, and human DNA and human ribosomal protein in mouse cells.
+
+#### Concatemers synthesise a variety of human proteins in mouse cells
 
 Having confirmed that concatemers are capable of synthesising RNA and assembling their own protein synthetic machinery, we went on to investigate whether they were capable of autonomously synthesising proteins. We conducted immune-FISH experiments using a human-specific genomic DNA probe (to detect the concatemers) and antibodies against various proteins. We found that the fluorescent signals of the various proteins frequently co-localised with those of human DNA, suggesting that the concatemers were capable of synthesising proteins (Figure 10a). Significantly, the newly synthesised proteins consistently remained associated with the concatemers of their origin (identified by fluorescent human DNA signals). This finding suggested that, although the concatemers contained the critical components of a protein synthetic machinery, they apparently lacked the machinery required for protein sorting. It should be noted that all the proteins that we detected seemed to be over-expressed, confirming that the gene segments corresponding to the proteins within the concatemers were amplified. Results of quantitative analysis of the degree of co-localisation of fluorescent signals of human DNA and of various human proteins are given in Figure 10—figure supplement 1. The extent of co-localisation varied between 70.0% and 72.6%. We further confirmed these findings in metaphase preparations from serially passaged cfChPs-treated NIH3T3 cells (Figure 10b). We also conducted extensive control experiments on native NIH3T3 cells that had not been exposed to cfChPs treatment using a variety of human-specific antibodies and found that none of them showed any positive fluorescent signals (Figure 10—figure supplement 2). The above results indicated that the disparate DNA sequences that comprise the concatemers are transcribed and translated to generate proteins corresponding to the diverse DNA sequences that they contain apparently using their own protein synthetic machinery. Results of control experiments confirming the human specificity of the antibodies against all the proteins described above are given in Figure 10—figure supplement 3.
 
-## The proteins that concatemers synthesise are complex fusion proteins
+![Figure 10.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig10-v1.jpg)
+
+**Figure 10.:** Immuno-FISH analysis on chromatin fibres (a) and metaphase spreads (b) prepared from cfChPs-treated NIH3T3 cells in continuous passage using human specific whole genomic FISH probe and antibodies against various human proteins. The co-localising signals of human DNA and various human proteins are marked with arrows.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig10-figsupp1-v1.jpg)
+
+**Figure 10—figure supplement 1.:** Five hundred fluorescent signals were analysed and the number of co-localising red and green signals was estimated. The results were expressed in percentage terms.
+
+![Figure 10—figure supplement 2.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig10-figsupp2-v1.jpg)
+
+**Figure 10—figure supplement 2.:** The human-specific DNA probe and antibodies did not detect any DNA or protein signals in mouse cells.
+
+![Figure 10—figure supplement 3.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig10-figsupp3-v1.jpg)
+
+**Figure 10—figure supplement 3.:** Various human and mouse cell lines were probed with human specific antibodies. It can be seen that only human cells reacted with the antibodies and the mouse cells did not.
+
+#### The proteins that concatemers synthesise are complex fusion proteins
 
 As the concatemers are formed as a result of amalgamation of widely disparate DNA sequences, we investigated whether the proteins that they synthesised might be fusion proteins. Dual-immunofluorescence experiments using pairs of antibodies against proteins, the corresponding genes of which were located on different chromosomes, revealed that the fluorescent signals frequently co-localised. This finding indicated that the proteins synthesised by the concatemers were fusion proteins with potentially novel functions (Figure 11). Fusion proteins were detected both on chromatin fibres and metaphase preparations. Results of quantitative analysis of the degree of co-localisation of fluorescent signals indicative of fusion proteins are shown in Figure 11a. The extent of co-localising signals ranged between 33.0% and 36.3% (Figure 11—figure supplement 1). Results of control experiments confirming the human specificity of the antibodies against the fusion proteins not included in Figure 10—figure supplement 3 are given in Figure 11—figure supplement 2.
 
-## Concatemers are vehicles for transposable elements
+![Figure 11.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig11-v1.jpg)
+
+**Figure 11.:** Dual immunofluorescence analysis using antibody pairs targeting diverse human-specific proteins in chromatin fibres (a) and metaphase spreads (b) prepared from cfChPs-treated NIH3T3 cells in continuous passage. Results show frequent co-localised signals indicative of fusion proteins (arrows). The numbers given in the parenthesis indicate the chromosomal location of the genes that correspond to the proteins.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig11-figsupp1-v1.jpg)
+
+**Figure 11—figure supplement 1.:** Five hundred fluorescent signals were analysed and the number of co-localising red and green signals was estimated. The results were expressed in percentage terms.
+
+![Figure 11—figure supplement 2.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig11-figsupp2-v1.jpg)
+
+**Figure 11—figure supplement 2.:** A-375 (human melanoma cells); B16F10 (mouse melanoma cells).
+
+#### Concatemers are vehicles for transposable elements
 
 Among the fusion proteins shown in Figure 11 we accidentally found reverse transcriptase and transposase to co-localise with Bcl2 and cMyc, respectively. This finding raised the possibility that the concatemers might harbour gene components related to transposable elements. We used human-specific LINE-1 and Alu DNA probes which had been custom synthesised (Supplementary file 1). Nonetheless, we checked for their specificity to ensure that they reacted only to human and not to mouse transposable elements (Figure 12—figure supplement 1). Dual-FISH experiments using a human genomic DNA probe and those targeting human LINE-1 and Alu showed that many of the fluorescent signals had co-localised indicating that the concatemers harboured DNA sequences of retro-transposable elements (Figure 12a). Results of quantitative analysis of the degree of co-localisation of fluorescent FISH signals of human DNA and human LINE-1 and Alu on chromatin fibres are given in Figure 12—figure supplement 2. The extent of co-localisation was 70.4% and 72.8% for LINE-1 and Alu, respectively. Similar co-localising signals were also seen on metaphase preparations (Figure 12b). The fact that both LINE-1 and Alu signals could be clearly detected by FISH analysis indicated that they were extensively amplified, given that LINE-1 and Alu are approximately 6000 bp and 300 bp in size, respectively. The issue of amplification of the transposable elements is discussed in detail under section 1.12. Control experiments performed on native NIH3T3 cells that had not been exposed to cfChPs treatment using human LINE-1 and Alu probes did not reveal any positive signals (Figure 12—figure supplement 3).
 
-## LINE-1 and Alu elements are associated with reverse transcriptase, transposase, and DNA polymerase
+![Figure 12.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig12-v1.jpg)
+
+**Figure 12.:** Dual-FISH analysis on chromatin fibres (a) and metaphase spreads (b) prepared from cfChPs-treated NIH3T3 cells in continuous passage using a human-specific genomic DNA FISH probe and those against human LINE-1 or human Alu show co-localised signals (marked with arrows).
+
+![Figure 12—figure supplement 1.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig12-figsupp1-v1.jpg)
+
+**Figure 12—figure supplement 1.:** cfChPs treated cells in continuous passage were used to study species specificity of the probes and antibodies. (a) Positive control cells using A-375 (human melanoma) cells; (b) Negative control experiments using B16F10 (mouse melanoma) cells.
+
+![Figure 12—figure supplement 2.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig12-figsupp2-v1.jpg)
+
+**Figure 12—figure supplement 2.:** Five hundred fluorescent signals were analysed and the number of co-localising red and green signals was estimated. The results were expressed in percentage terms.
+
+![Figure 12—figure supplement 3.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig12-figsupp3-v1.jpg)
+
+**Figure 12—figure supplement 3.:** The human-specific FISH probes did not detect any human DNA or LINE-1 or Alu signals in mouse cells.
+
+#### LINE-1 and Alu elements are associated with reverse transcriptase, transposase, and DNA polymerase
 
 Immuno-FISH analysis using antibodies against human reverse transcriptase and transposase and FISH probes against LINE-1 and Alu revealed co-localised signals, indicating that the enzymes reverse transcriptase and transposase were frequently associated with DNA sequences corresponding to LINE-1 and Alu (Figure 13a and b). Such an association could potentially allow the transposable elements to re-arrange themselves on the mouse cell genome by translocating themselves from one location to another. Results of quantitative analysis of the degree of co-localisation on chromatin fibres of fluorescent FISH signals of human LINE-1 and human reverse transcriptase and transposase; and Alu and human reverse transcriptase and transposase are given in Figure 13—figure supplement 1. The extent of co-localisation ranged between 34.4% and 36.1%. Control experiments performed on native NIH3T3 cells that had not been exposed to cfChPs treatment using human-specific antibodies against reverse transcriptase and transposase and FISH probes against h-LINE-1 and h-ALU did not reveal any positive signals (Figure 13—figure supplement 2).
 
+![Figure 13.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig13-v1.jpg)
+
+**Figure 13.:** Immuno-FISH analysis of chromatin fibres (a) and metaphase spreads (b) prepared from cfChPs-treated NIH3T3 cells in continuous passage using human Alu or LINE-1 probes and antibodies against human reverse transcriptase and human transposase shows co-localising signals (marked with arrows).
+
+![Figure 13—figure supplement 1.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig13-figsupp1-v1.jpg)
+
+**Figure 13—figure supplement 1.:** Five hundred fluorescent signals were analysed and the number of co-localising red and green signals was estimated. The results were expressed in percentage terms.
+
+![Figure 13—figure supplement 2.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig13-figsupp2-v1.jpg)
+
+**Figure 13—figure supplement 2.:** The human-specific FISH probes and antibodies did not detect any human LINE-1, human Alu, human reverse transcriptase, and human transposase signals in mouse cells.
+
 As transposable elements are known to increase their copy number with time (Li et al., 2013), we were curious to find out whether the LINE-1 and Alu elements would proliferate and increase their copy number with progressively increasing passages. Immuno-FISH experiments using antibodies against human DNA polymerase γ and FISH probes against LINE-1 and Alu detected co-localised signals, indicating that LINE-1 and Alu elements were associated with DNA polymerase, raising the possibility that they may have the potential to proliferate (Figure 14a and b). This possibility was supported by the finding that LINE-1 and Alu elements could synthesise DNA. Immuno-FISH analysis of cells in continuous passage that had been pulse-labelled with BrdU showed co-localised signals generated by antibodies against BrdU and FISH probes against LINE-1 and Alu. Taken together, these findings supported the idea that the DNA of both the transposable elements had the potential to replicate. Results of quantitative analysis of the degree of co-localisation of fluorescent FISH signals of human LINE-1 and human DNA polymerase and BrdU; and Alu and human DNA polymerase and BrdU are given in Figure 14—figure supplement 1. The extent of co-localisation varied between 35.8% and 36.9%.
 
-## LINE-1 and Alu elements increase their copy number and amplify themselves with time
+![Figure 14.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig14-v1.jpg)
+
+**Figure 14.:** (a) Immuno-FISH images of cfChPs-treated cells in continuous passage showing co-localising signals of LINE-1 (green) and Alu (green) and DNA polymerase γ (orange) and BrdU (red) on chromatin fibres. (b) Similar co-localising signals are shown on metaphase spreads. Co-localised signals are marked with arrows.
+
+![Figure 14—figure supplement 1.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig14-figsupp1-v1.jpg)
+
+**Figure 14—figure supplement 1.:** Five hundred fluorescent signals were analysed and the number of co-localising red and green signals was estimated. The results were expressed in percentage terms.
+
+#### LINE-1 and Alu elements increase their copy number and amplify themselves with time
 
 Given the above findings, we were curious to find out whether LINE-1 and Alu elements could indeed replicate and increase their copy numbers within the mouse genome. Metaphase spreads were prepared from cfChPs-treated NIH3T3 cells in continuous passage and probed with FISH probes against LINE-1 and Alu elements. Fifteen metaphases were analysed at each passage, and the number of LINE-1 and Alu fluorescent signals per metaphase was determined (Figure 15). Our results showed that the numbers of human LINE-1 and Alu signals per chromosome increased steadily between passage 2 and 198, resulting in a 7.6-fold increase in copy number in the case of LINE-1 and a 6.7-fold increase in the case of Alu (Figure 15a). These data indicated that LINE-1 and Alu elements progressively increased their copy numbers by retrotransposition over time in the mouse genome. It should be noted that this analysis is restricted to the proliferative capacity of LINE-1 and Alu elements that are associated with chromosomes and does not take into account the replicative potential of those elements that are present in the cytoplasm. We also did a similar exercise to investigate whether the concatemers could amplify themselves by estimating the mean fluorescent intensity (MFI) of LINE-1 and Alu signals per chromosome. We found that the increase in MFI between passage 2 and 198 was 151.3-fold in the case of LINE-1 and 83.4-fold in the case of Alu (Figure 15b). Taken together, these data indicated that the transposable elements could not only proliferate but also extensively amplify themselves, thereby becoming increasingly effective in modifying the host genome.
 
 ![Figure 15.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig15-v1.jpg)
 
-**Figure 15.:** Alu elements proliferate and amplify themselves within the mouse genome over time.Metaphase spreads were prepared from cells in each progressively increasing passage and probed with a human-specific LINE-1 and Alu probes. (a) The total number of human LINE-1 and Alu signals on the DAPI stained chromosomes was counted, and the mean number of LINE-1 and Alu signals per chromosome was calculated after analysing 15 metaphase spreads at each passage. A progressively increasing LINE-1 and Alu signals per chromosomes is evident with increasing passage number (analysis of variance for linear trend p<0.0001). The number of human LINE-1 signals per chromosome increased by a factor of 7.6 between passage no. 2 and passage no. 198, and by a factor of 6.7 in the case of Alu. (b) A similar exercise was done as above except that mean fluorescent intensity (MFI) of human LINE-1 and Alu per chromosome, indicative of amplification, was determined. A progressively increasing MFI per chromosomes is evident with increasing passage number (analysis of variance for linear trend p<0.0001). Mean MFI per chromosome increased by a factor of 151.3 between passage no. 2 and passage no. 198 in the case of LINE-1, and by a factor of 83.4 in the case of Alu. The insets represent partial metaphase images showing human LINE-1 and Alu signals on the chromosomes. Blue and red signals represent DAPI and human DNA, respectively.
+**Figure 15.:** Metaphase spreads were prepared from cells in each progressively increasing passage and probed with a human-specific LINE-1 and Alu probes. (a) The total number of human LINE-1 and Alu signals on the DAPI stained chromosomes was counted, and the mean number of LINE-1 and Alu signals per chromosome was calculated after analysing 15 metaphase spreads at each passage. A progressively increasing LINE-1 and Alu signals per chromosomes is evident with increasing passage number (analysis of variance for linear trend p<0.0001). The number of human LINE-1 signals per chromosome increased by a factor of 7.6 between passage no. 2 and passage no. 198, and by a factor of 6.7 in the case of Alu. (b) A similar exercise was done as above except that mean fluorescent intensity (MFI) of human LINE-1 and Alu per chromosome, indicative of amplification, was determined. A progressively increasing MFI per chromosomes is evident with increasing passage number (analysis of variance for linear trend p<0.0001). Mean MFI per chromosome increased by a factor of 151.3 between passage no. 2 and passage no. 198 in the case of LINE-1, and by a factor of 83.4 in the case of Alu. The insets represent partial metaphase images showing human LINE-1 and Alu signals on the chromosomes. Blue and red signals represent DAPI and human DNA, respectively.
 
-## NIH3T3 cells are not unique in their ability to internalise cfChPs
+### NIH3T3 cells are not unique in their ability to internalise cfChPs
 
 We next investigated whether the ability to internalise cfChPs is a property that is unique to NIH3T3 cells or whether other cells from different species also have similar ability to internalise cfChPs. We treated four different cell lines, namely Vero (monkey kidney cells); Dolly (dog cells); B/CMBA. OV (mouse ovary cells) and HEK293 (human embryonic kidney cells) with cfChPs isolated from human serum (10 ng). The treated cells were harvested after the 5th passage, and chromatin fibres prepared from them were probed with a human whole genomic probe and a probe against human LINE-1. We detected the presence of human DNA and human LINE-1 signals in all the above cell lines indicating that all of them had the ability to internalise cfChPs (Figure 16). This finding led us to the conclusion that horizontal transfer of cfChPs is likely to be a universal phenomenon.
 
@@ -124,7 +246,7 @@ We next investigated whether the ability to internalise cfChPs is a property tha
 
 **Figure 16.:** We used four different cell lines other than NIH3T3 viz. Vero (monkey kidney cells); Dolly (female dog cells); B/CMBA. OV (mouse ovary cells) and HEK293 (human embryonic kidney cells) and tested them for their ability to internalise cfChPs. The cells were treated with cfChPs derived from human serum and chromatin fibres were prepared at 5th passage. The chromatin fibres were probed with a whole genomic DNA probe or with a human specific LINE-1 probe. Human DNA and LINE-1 signal are clearly seen in the treated cells. It is to be noted that the dog FISH probe was specific for X (red) and Y (green) chromosome. Since the cells came from a female dog, only the red X chromosome is seen to react.
 
-## The concatemers are largely composed of non-coding DNA
+#### The concatemers are largely composed of non-coding DNA
 
 Given that 99% of the human genome is comprised of non-coding DNA, and in view of our detection of LINE-1 and Alu elements among the cfChP concatemers, we investigated whether the majority of the cfChPs that had been internalised might have been derived from non-coding DNA. To investigate this, we used a human long non-coding RNA probe which comprised a set of Stellaris RNA FISH probes containing a pool of up to 48 unique sequences, each labelled with a fluorophore, that collectively bind along an RNA target transcript (Supplementary file 1). When we applied this RNA probe to chromatin fibres prepared from two human cell lines (HEK293 and MRC5), we found that the RNA probe aligned with the entire length of the human DNA with almost 100% coverage (Figure 17a). The human specificity of the RNA probe was confirmed by the demonstration that it did not bind to NIH3T3 mouse DNA (Figure 17a). This finding suggested that the long non-coding RNA probe could be used as a substitute to detect human non-coding DNA. We, therefore, used the RNA probe to detect the presence of non-coding human DNA in NIH3T3 cells treated with cfChPs isolated from human serum (Figure 17b). We discovered that the internalised cfChPs concatemers reacted with probes against both human whole genomic DNA and human non-coding DNA, and their fluorescent signals co-localised to the extent of 98.2% (Figure 17b). This finding was confirmed on metaphase preparations of the cfChPs treated cells (Figure 17c). This led us to the conclusion that virtually all the cfChPs concatemers were composed of non-coding DNA.
 
@@ -132,17 +254,25 @@ Given that 99% of the human genome is comprised of non-coding DNA, and in view o
 
 **Figure 17.:** (a) The human long non-coding RNA probe aligns with human DNA but not with mouse DNA. Chromatin fibres were prepared from two human cell lines viz. HEK293, MRC5 and one mouse cell line viz. NIH3T3 and the cells were hybridised with the long non-coding RNA probe. The results show that the probe has almost 100% coverage in case of the two human cells but does not react with the mouse cells. (b) The concatemers are largely composed of non-coding DNA. cfChPs treated passaged cells were simultaneously probed with a fluorescently labelled human whole genomic DNA FISH probe and the human long non-coding RNA probe (which substituted for a non-coding DNA probe). The degree of co-localisation of fluorescent signals is represented as a histogram, which was generated after counting 1000 human DNA signals, and which shows that the extent of co-localisation of the fluorescent signals was of the order of 98.2%. (c) Confirmation of these findings on metaphase spreads.
 
-## Biological activities of concatemers are largely attributable to non-coding DNA
+#### Biological activities of concatemers are largely attributable to non-coding DNA
 
 The above finding that the concatemers are largely composed of non-coding DNA led us to investigate whether the biological activities of the concatemers that we described earlier were attributable to non-coding DNA. We discovered this to be indeed the case. We found that the fluorescent signals of a selected set of target enzymes, viz. DNA polymerase, RNA polymerase, and reverse transcriptase co-localised with those of non-coding DNA, as did BrdU signals representing DNA synthesis (Figure 18). As anticipated, the fluorescence signals of LINE-1 and Alu also co-localised with those of non-coding DNA (Figure 18). The degree of co-localisation of fluorescent signals of non-coding DNA and those of the above biomarkers is given in Figure 18—figure supplement 1. The latter also shows that the degree of co-localisation with the biomarkers was similar irrespective of whether we used a whole human genomic probe (results of which are shown earlier) or the one against non-coding DNA. Collectively, these findings provided confirmation that the biological activities of the concatemers are attributable to non-coding DNA and suggested that non-coding DNA has many unique biological functions which remain dormant but are activated following cellular apoptosis to become detectable in association with the cfChP concatemers.
 
-## Experiments using cfChPs isolated from healthy individuals
+![Figure 18.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig18-v1.jpg)
+
+**Figure 18.:** Immuno-FISH and dual-FISH analysis of chromatin fibres prepared from cfChPs-treated cells in continuous passage. The chromatin fibres were probed with antibodies against various human proteins and the human non-coding RNA probe (which substituted for a non-coding DNA probe) or the human non-coding RNA probe and FISH probes against LINE-1 and Alu. Co-localisation of various signals is clearly seen. These data suggested that biological activities of the concatemers are attributable to non-coding DNA.
+
+![Figure 18—figure supplement 1.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig18-figsupp1-v1.jpg)
+
+**Figure 18—figure supplement 1.:** Histograms showing the degree of co-localisation of fluorescent signals of human non-coding DNA or of human whole genomic DNA and those of various biomarkers and LINE-1 and Alu elements. The degree of co-localisation with the biomarkers was similar irrespective of whether a whole human genomic probe or one against non-coding DNA probe was used. These data suggested that biological activities of the concatemers are attributable to non-coding DNA.
+
+### Experiments using cfChPs isolated from healthy individuals
 
 The experiments described above were performed with NIH3T3 cells that had been treated with cfChPs isolated from the sera of cancer patients and passaged continuously. We simultaneously performed similar experiments with NIH3T3 cells that had been treated with cfChPs isolated from the sera of healthy individuals. We found that cfChPs from healthy individuals were also readily internalised by NIH3T3 cells, wherein they behaved in a manner similar to that of cfChPs derived from the cancer patients (Figure 19).
 
 ![Figure 19.](https://cdn.elifesciences.org/articles/103771/elife-103771-fig19-v1.jpg)
 
-## Experiments using cfChPs released from hypoxia-induced dying MDA-MB-231 cells
+### Experiments using cfChPs released from hypoxia-induced dying MDA-MB-231 cells
 
 Finally, given our previous finding that cfChPs spontaneously released from dying cancer cells were readily internalised by healthy cells (Mittra et al., 2017), we further investigated the intracellular activities of cfChPs released from dying MDA-MB-231 breast cancer cells. Hypoxia-induced cfChPs were collected in 1 ml of culture medium and added to NIH3T3 cells (please see Materials and methods). We observed that cfChPs that were released from hypoxia-induced dying MDA-MB-231 cells could reciprocate all the intracellular activities and functions that were observed using cfChPs isolated from serum of both cancer patients and healthy individuals (Figure 20).
 
@@ -174,23 +304,23 @@ In summary, the present findings lead to a novel hypothesis that a cell simultan
 
 ## Materials and methods
 
-## Isolation of cfChPs from human serum
+### Isolation of cfChPs from human serum
 
 cfChPs were isolated from sera of five patients suffering from cancer and five healthy volunteers using the protocol described by us earlier (Mittra et al., 2015b). Serum from five donors of each group was pooled prior to a cfChPs isolation. The steps of the isolation protocol can be summarised as follows: (1) centrifugation of the pooled serum samples (1 mL) at 700,000 × g for 16 hr at 4 °C; (2) treating the pellet obtained with lysis buffer; (3) centrifugation of the lysate at 700,000 × g for 16 hr at 4 °C; (4) suspension of the pellet in 1 mL PBS; (5) passing the suspension through an affinity column (Thermo Fisher Scientific, USA) containing biotinylated anti-histone H4 antibody (125 µg) bound to 2 mL of Pierce Streptavidin Plus Ultralink Resin (Thermo Fisher Scientific, USA); (6) elution of the column with 1 mL 0.25 M NaCl; (7) ultra-centrifuging the elute as described above and suspending the pellet containing cfChPs in 1 mL PBS. The presence of cfChPs was confirmed using a nucleosome specific sandwich ELISA kit (Cell Death Detection ELISAPLUS kit, Roche Diagnostics GmbH, Germany). A representative electron microscopy image of the isolated cfChPs is given in Figure 1. The concentrations of cfChPs in the isolates are expressed in terms of their DNA content, as estimated using the PicoGreen dsDNA quantitation assay (Thermo Fisher Scientific, USA; Mittra et al., 2015b). The age, sex, and tumour types of the participants are given in Supplementary file 2.
 
-## Cell lines and culture
+### Cell lines and culture
 
 A list of the various cell lines used in this study, their tissue origin and procurement source, is given in Supplementary file 3. Origin of all cell lines was authenticated by species-specific DNA FISH probes. NIH3T3 and MDA-MB-231 cells were additionally authenticated by PCR using species-specific primers of housekeeping genes. Mycoplasma negativity testing was done using the Mycoplasma antigen detection method and by PCR. NIH3T3 mouse fibroblast cells were maintained in Dulbecco’s modified Eagle medium (DMEM) containing 10% bovine calf serum and grown at 37 °C in 35 mm culture dishes in an atmosphere of 95% air, 5% CO2, and 95% humidity. The cells (10×104) were treated with 10 ng of cfChPs isolated from the serum of cancer patients or healthy individuals and maintained in continuous culture by passaging every fourth day. We chose to use 10 ng based on our earlier report in which we had obtained robust biological effects such as activation of DDR and apoptotic pathways using this concentration of cfChPs (Mittra, 2015a).
 
-## Collection of conditioned medium containing cfChPs released from dying MDA-MB-231 human breast cancer cells
+### Collection of conditioned medium containing cfChPs released from dying MDA-MB-231 human breast cancer cells
 
 In addition to cfChPs isolated from the cancer patients and healthy individuals, we also investigated the effects of treating NIH3T3 cells with cfChPs that were released into the conditioned medium from hypoxia-induced dying MDA-MB-231 human breast cancer cells. The protocol for collecting cfChPs from hypoxia-induced dying cells has been described by us in detail earlier (Raghuram et al., 2024). The only difference was that in the earlier study, we had used dying NIH3T3 cells instead of MDA-MB-231 cells for collecting media containing hypoxia-induced cfChPs. In the dual-chamber system used in these experiments, the pore size of the filter separating the two chambers was 400 µm. Consequently, the cfChPs from the dying MDA-MB-231 cells that were collected in the lower chamber were <400 µm in size. NIH3T3 cells (1×105) were treated with 1 ml of the hypoxic media containing cfChPs.
 
-## Fluorescent dual labelling of cfChPs
+### Fluorescent dual labelling of cfChPs
 
 In some experiments, the DNA and histones of the isolated cfChPs from serum were fluorescently dually labelled with Platinum Bright 550 Red Nucleic Acid Labelling Kit (Kreatech Diagnostics, Cat # GLK-004) and ATTO 488 NHS-ester (ATTO-TEC GmbH, Cat # AD488-35), respectively, according to our previously reported protocol (Mittra et al., 2015b). NIH3T3 cells were treated with 10 ng of dually labelled cfChPs for 6 hr, washed with PBS x 3, and examined under a confocal microscope (Carl-Zeiss, GmbH, Germany). A representative image of dually labelled cfChPs is given in Figure 2a.
 
-## Preparation of chromatin fibres
+### Preparation of chromatin fibres
 
 Chromatin fibres were prepared from NIH3T3 cells according to previously described methods (Nieminuszczy et al., 2016; Quinet et al., 2017) with minor modifications. Although the inventors of this technique had described the fibres as DNA fibres, when stained with histone H4 antibody, we found the fibres to comprise chromatin (Figure 21). To prepare the chromatin fibres, 2 µLl of the cfChPs-treated NIH3T3 cell suspension was spotted at one end of a glass slide and semi-evaporated for 10 min at room temperature (~25 °C). The spotted cells were incubated with 7 μL of lysis buffer (0.1% sodium dodecyl sulphate in phosphate-buffered saline) for 2 min with gentle shaking, and the slides were tilted at an angle of 15°–25° to allow the cell lysate containing the chromatin fibres to roll down along the slide surface. The slides were fixed with chilled methanol for 10 min and processed for immunofluorescence and FISH analyses.
 
@@ -198,26 +328,26 @@ Chromatin fibres were prepared from NIH3T3 cells according to previously describ
 
 **Figure 21.:** The fibres were stained with DAPI and anti-histone H4 antibody.
 
-## Metaphase spread preparation
+### Metaphase spread preparation
 
 Metaphase spreads from NIH3T3 cells treated with cfChPs in continuous culture were prepared using a standard protocol (Mittra et al., 2015b). The slides were processed for immunofluorescence and FISH analyses.
 
-## Human specificity of antibodies and FISH probes
+### Human specificity of antibodies and FISH probes
 
 Sources and other details of the antibodies and FISH probes used in this study are provided in Supplementary file 1. Irrespective of the specifications of the antibodies given in the vendors’ data sheets, and the custom synthesised FISH probes, we independently verified their human specificity by undertaking extensive positive and negative control experiments to ensure that all antibodies and FISH probes were human specific. The results of these control experiments are given in Figure 3—figure supplement 1, Figure 5—figure supplement 1, Figure 9—figure supplement 1, Figure 10—figure supplement 3, Figure 11—figure supplement 2, Figure 12—figure supplement 1, Figure 4—figure supplement 1.
 
-## Immunofluorescence and FISH
+### Immunofluorescence and FISH
 
 The expression of various proteins in the cells was evaluated using indirect immunofluorescence, and the presence of human DNA in chromatin fibres and metaphase spreads was detected using FISH, as described previously (Mittra et al., 2015b). Briefly, for immunofluorescence, the chromatin fibres were fixed in 4% paraformaldehyde, blocking in saponin buffer containing 10% normal goat serum followed by immune-staining with appropriate primary and secondary antibodies. In order to remove unbound antibodies, 1 X PBS containing 0.05% Tween20 washes were given x 3 before mounting with VectaShield DAPI for microscopic examination. In case of immunofluorescence on metaphase spreads, the paraformaldehyde fixation step was omitted. For FISH on both chromatin fibres and metaphase spreads, the slides were dehydrated using alcohol series (70%, 80%, and 100%) followed by hybridisation overnight with appropriate FISH probes in a humidified chamber at 37 °C. In order to remove the unbound probes, the slides were washed in 0.4 X SSC at 70 °C for 1 min followed by 4 X SSCT (4 X SSC in 0.05% Tween20) washes at 45 °C for 5 min each. The final wash was in 4 X SSCT for 2 minutes at room temperature followed by mounting with VectaShield DAPI for microscopic examination. For immuno-FISH experiments, the slides were first stained for immunofluorescence as described above and fixed with 2% paraformaldehyde for 10 min followed by FISH procedure as described above. For microscopic examination, immunofluorescence slides were imaged at ×400 magnification while FISH slides were analysed at ×600 under an Applied Spectral Bio-imaging System (Applied Spectral Imaging, Israel). The immuno-FISH slides were analysed at ×600 magnification.
 
-## Detection of DNA synthesis
+### Detection of DNA synthesis
 
 To detect DNA synthesis on chromatin fibres and metaphase spreads, cells were pulse-labelled while in culture with 10 µM bromodeoxyuridine (BrdU) for 24 hr, washed in PBS x 3, trypsinised and used for preparing chromatin fibres and metaphase spreads. Newly synthesised DNA was detected using anti-BrdU antibody.
 
-## Detection of RNA synthesis
+### Detection of RNA synthesis
 
 RNA synthesis in cfChP-treated cells in continuous passage was detected using an Abcam assay kit (Cambridge, UK; Catalogue No. ab228561) as per the manufacturer’s protocol. With the use of metabolic tagging with 5-ethynyluridine (EU), this assay offers a reliable method for fluorescent staining of newly produced RNA with the click chemistry facilitating viewing. In some experiments, the cfChPs-treated cells were treated with actinomycin D (0.0005 µg/mL) for 24 hr or grown at low temperature (31 °C) for 24 hr.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was done by Student’s t-test and by ANOVA for linear trend. Both analyses were done using GraphPad version 8 (RRID:SCR_002798).

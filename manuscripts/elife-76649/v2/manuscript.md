@@ -22,12 +22,12 @@
 
 ### Affiliations
 
-1. https://ror.org/035xkbk20 Aix Marseille University, CNRS, IBDM, Turing Centre for Living Systems Marseille France
-2. https://ror.org/04b6nzv94 Department of Pathology, Brigham and Women’s Hospital Boston United States
+1. Aix Marseille University, CNRS, IBDM, Turing Centre for Living Systems Marseille France ([ROR:035xkbk20](https://ror.org/035xkbk20))
+2. Department of Pathology, Brigham and Women’s Hospital Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
 3. Department of Genetics, Harvard Medical School Boston United States
-4. https://ror.org/04kj1hn59 Harvard Stem Cell Institute Boston United States
-5. https://ror.org/04b6nzv94 Division of Genetics, Department of Medicine, Brigham and Women’s Hospital, Harvard Medical School Boston United States
-6. https://ror.org/035xkbk20 Aix Marseille University, CNRS, LAI, Turing Centre for Living Systems Marseille France
+4. Harvard Stem Cell Institute Boston United States ([ROR:04kj1hn59](https://ror.org/04kj1hn59))
+5. Division of Genetics, Department of Medicine, Brigham and Women’s Hospital, Harvard Medical School Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
+6. Aix Marseille University, CNRS, LAI, Turing Centre for Living Systems Marseille France ([ROR:035xkbk20](https://ror.org/035xkbk20))
 
 † Corresponding author
 
@@ -53,15 +53,35 @@ Using two-dimensional (2D) cultures of human iPSC-derived myogenic precursors, w
 
 ## Results
 
-## Human iPSC-derived myofibers follow a biphasic differentiation process
+### Human iPSC-derived myofibers follow a biphasic differentiation process
 
 In order to study human muscle fiber morphogenesis on cellular and subcellular scales, we adapted a 2D in vitro culture system. We generated human iPSC-derived myogenic precursors by differentiating NCRM1 iPS cells for 20–30 days according to Chal et al., 2016; Al Tanoury et al., 2021. These cultures were then dissociated and filtered through 70 µm and then 40 µm cell filters to obtain single-cell suspensions. These suspensions were replated in SKGM-2 medium for 1–2 days to generate cultures enriched in myogenic precursors prior to being frozen (Chal et al., 2016; Al Tanoury et al., 2021). Frozen myogenic precursors were thawed, seeded on Matrigel-coated ibidi glass-bottom dishes and grown in proliferation medium (SKGM-2) for 2–3 days before being switched to KCTiP differentiation medium (see Materials and methods). On day 1 in KCTiP differentiation medium, the myogenic precursors initially resemble fibroblasts by shape (Figure 1A). These myogenic precursors are able to fuse to other myogenic precursors or elongated myotubes to form multi-nucleated myotubes (Figure 1—video 1, Figure 1—figure supplement 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig1-v2.jpg)
+
+**Figure 1.:** (A–I) ×10 views of phalloidin staining of human iPSC-derived myofibers. Yellow shades highlight two randomly selected myocytes, myotubes, or myofibers. (A’-I’) ×100 views of individual myocytes, myotubes, or myofibers. Rhodamine-phalloidin in grey, DAPI in magenta. Yellow dashed lines highlight individual myocytes/myotubes/myofibers. (J) Length of myocytes/myotubes/myofibers over time (n=35, 42, 4695, 3765, 4191, 2439, 2061, 1880, 1883 myofibers per reported day, respectively). Dots and solid line show the mean of each day, while shaded area shows the standard deviation. Vertical dashed line shows the transition point at day 7 from the elongation phase to the stable phase. (K) Width of myocytes/myotubes/myofibers over time (n=45, 50, 111, 191, 175, 297, 340, 315, 201 myofibers per reported day, respectively). (L) Number of nuclei per myofiber over time (n=35, 42, 76, 81, 85, 77, 62, 74, 66 myofibers per day). In (K and L), dots, shaded area, and solid line follow convention in J, with graph in J is reproduced in red. Scale bars: 250 µm in A-I, 50 µm in A’–I’. Source data available for J–L.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Stills from phase-contrast time-lapse movies of live myocultures. (A) A myocyte (yellow dot) fusing into an elongated myotube (red dot). Fusion is highlighted by the orange-coloured dot of the newly fused nucleus. (B) A single myotube (red dot) elongating. Yellow solid arrowheads show elongating ends, while yellow empty arrowhead shows a retracting extension. Scale bars: 100 µm. Related to Figure 1 and Figure 1—video 1.
+
 Concomitant with myogenic precursors fusion, myotubes rapidly elongate, while their width decreases during the first week (Figure 1A–F, A’–F’, J and K, Figure 1—video 1, Figure 1—figure supplement 1B), suggesting that they are actively extending to increase their aspect ratio. The average length of a day 7 myotube/myofiber is about 1.2 mm, while being only 3–5 µm in width in our culture conditions. During the second week of culture, average myofiber length stabilises at about 1.2–1.3 mm (Figure 1G–K), while fusion continues, reaching an average of 15 nuclei per myofiber at day 15 (Figure 1L). This happens despite that fact that our culture dishes have an average dimension of 6 mm, suggesting that a self-limiting mechanism may prevent further elongation of the myofibers. We conclude that on our unpatterned 2D substrates, differentiating myotubes/myofibers follow a biphasic behaviour of elongation until day 7, followed by a stabilisation in length until day 15.
 
-## Myofibers self-organise into bundles that merge to stable sizes
+### Myofibers self-organise into bundles that merge to stable sizes
 
 To better understand how myofibers reach stable lengths at day 7, we investigated their spatial organisation with respect to neighbouring myofibers. We found that from days 3 and 4, myotubes and myofibers generate swirly patterns that enlarge over time (Figure 2A–F), indicating that new myofibers are aligning with growing myofiber bundles despite the lack of predefined orientation cues. This suggests a self-organisation mechanism during myofiber bundling.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig2-v2.jpg)
+
+**Figure 2.:** (A–F) Rhodamine-phalloidin staining pseudo-coloured according to local fiber orientation by OrientationJ. Inset shows a colour wheel used by OrientationJ. (A’–F’) automatically segmented myofiber bundles from manually traced myofibers, colour-coded by bundle identity. (A”–F”) manually traced myofiber bundle end foci (red dots) superimposed on traced myofibers (grey lines reproduced from A’–F’). (G) Number of myofiber bundles over time (n=7 cultures per stage). Solid line shows the mean of each day, while shaded area shows the standard deviation. Vertical dashed line shows the transition point at day 7 from a merging to a stable phase. (H) Area of myofiber bundles over time (n=7 cultures per stage). (I) Number of myofiber bundle end foci over time (n=3 cultures per stage). Myofiber bundle number from G is overlayed in red. Scale bar: 1 mm. Source data available for G–I.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–F) Inverted grey scale images of phalloidin staining superimposed with grids of vector fields generated from OrientationJ. Vector orientation and coherence are represented by the direction and length of each short line. (A’–F’) Two-dimensional (2D) heatmaps showing local nematic order S for each grid position. Dark regions show misalignment (lower values), while light regions show good alignment (higher values). Blue boxes highlight grids with nematic order <0.5. Colour map shown on the right. (G) A hypothetical spatial autocorrelation function from a vector field. ηL is the nematic correlation length. (H) Time course of the nematic correlation length ηL (n=6 windows per stage). (I) Time course of the fraction of grids with local nematic order S<0.5 (n=6 windows per stage). In H and I, solid lines represent the mean, while shaded areas show standard deviation. Scale bar: 1 mm. Source data available for panels H and I.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Phase-contrast imaging of myocultures showing myofiber bundles merging during the first 6 days of differentiation. Colour-shaded areas highlight individual myofiber bundles. In each of the three events highlighted, two or three myofiber bundles merge into one. Scale bar: 200 µm. Related to Figure 2 and Figure 2—video 1.
 
 To quantitatively analyse the alignment of myotubes and myofibers with their neighbours, we first displayed the local fiber orientation as vector fields for the central region of the culture (Figure 2—figure supplement 1, see Materials and methods). At day 3 we observed small swirly patterns in vector fields (Figure 2—figure supplement 1A), indicative of short-range alignments of polarity. These aligned regions enlarge over time (Figure 2—figure supplement 1A-F), which is supported by an increasing average nematic length during differentiation (Figure 2—figure supplement 1G, H; nematic length was defined as the intersection of the initial linear decay of the spatial correlation function with the x axis, see Materials and methods). To visualise the local discontinuities of alignment, which often locate at the end of myofiber bundles, we calculated the nematic order for each vector grid (Figure 2—figure supplement 1A’-F’; nematic order is a parameter describing the alignment of local orientation of the vector field at a given position, see Materials and methods). This analysis defined regions of disorder in the cultures with a nematic order below a threshold of 0.5. The fraction of disordered regions decreases over time (Figure 2—figure supplement 1I), further supporting an expansion of aligned regions.
 
@@ -73,35 +93,59 @@ Next, we wanted to directly document the live dynamics of myofiber bundle and fo
 
 We noticed that myofiber bundles cease to merge after day 7 in our cultures (Figure 2A–G), coinciding with the end of myofiber extension (Figure 1J). Day 7 also demarcates a turning point for bundle area growth and foci fusion, both of which remain largely stable after day 7 (Figure 2H1). We conclude that myotubes and myofibers show a remarkable biphasic differentiation behaviour in vitro that is coordinated between cell and tissue scales. We hypothesised that the biphasic growth of myofibers and myofiber bundles may be caused by a switch in their mechanical status around day 7. This switch may further result in molecular changes in myofibers that enable myofibril and sarcomere formation.
 
-## A transcriptional switch to enable myofibril and sarcomere assembly
+### A transcriptional switch to enable myofibril and sarcomere assembly
 
 As a first step to investigate the molecular changes at day 7 of differentiation, we analysed a previously generated transcriptomics dataset comparing similar proliferative cultures (using the identical SKGM-2 culture conditions) with days 7 and 15 of myogenic differentiation (using the identical KCTiP differentiation conditions) (Al Tanoury et al., 2021). After verifying the quality of the transcriptomics dataset with principal components analysis (Figure 3—figure supplement 1, Supplementary file 1), we performed Mfuzz clustering (Kumar and E Futschik, 2007), choosing 10 clusters as optimal for our dataset (see Materials and methods). Mfuzz clustering assigned all expressed genes to 1 of the 10 clusters which exhibit different expression dynamics (Figure 3A, Supplementary file 1, see Materials and methods). In search for clusters that may reflect the temporal dynamics of the biphasic myofiber extension behaviour, we found that three gene clusters are upregulated at day 7 of differentiation, while reaching a plateau or decreasing again at day 15 (clusters 1, 2, 7). Notably two of these clusters are enriched for muscle-specific GO-terms (Figure 3A and B). In particular, cluster 1 contains many genes coding for sarcomeric protein components, whose expression shows a strong upregulation at day 7 and then plateaus until day 15 (Figure 3A and B, Supplementary file 1). Furthermore, cluster 5, which is also strongly upregulated at day 7 and remains high at day 15, is also enriched for striated muscle contraction GO-terms (Figure 3A and B, Supplementary file 1). In contrast, components of the mitochondrial respiratory chain are only upregulated after day 7 and hence enriched in clusters 3 and 4 (Figure 3A and B, Supplementary file 1). This indicated that the sarcomere components are selectively upregulated at day 7, coinciding with the observed myofiber bundle consolidation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig3-v2.jpg)
+
+**Figure 3.:** (A) Mfuzz clustering defined 10 distinct gene clusters with shared expression dynamics over the time course. (B) Selected enriched GO-terms for the respective clusters are displayed, a full list of GO-term enrichments is presented in Supplementary file 1. Note the two muscle-enriched Mfuzz clusters displaying a stark expression increase from undifferentiated to day 7. (C) Heatmap showing expression dynamics of various key sarcomeric genes comparing undifferentiated, day 7 and day 15 myogenic cultures to baseline. Note the stark expression increase of all components until day 7.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Read count distribution for all biological replicated analysed. (B) Principal components analysis shows the strong similarity of the replicates.
+
 Sarcomere assembly requires the concerted action of a large number of sarcomeric components (Lange et al., 2006). Closer inspection of the highly expressed and hence relevant genes coding for sarcomere components revealed that indeed all of them are strongly upregulated, many of them more than 10-fold at day 7 compared to proliferating cultures (Figure 3C, Supplementary file 1). This includes thin filament components actin A1, nebulin, leimodin 2, 3, and various troponin subunits, as well as thick filament components myosin heavy chain 1, 2, 3, 7, 8, myosin light chain 1, 3, and myosin binding protein C1, 2, and finally the titin protein, the Z-disc components α-actinin 2, the ZASP homolog LDB3, and the M-band core members obscurin and myomesin 1, 2, and 3 (Figure 3C). Many of these sarcomeric components are not further upregulated comparing day 7 to day 15 and hence are members of clusters 1 and 7, while expression of some does slightly increase further and hence these are members of cluster 5 (Figure 3A and C, Supplementary file 1). This suggests that the transcriptional switch inducing expression of the sarcomeric components at day 7 correlates well with the biphasic morphogenesis behaviour of myofibers reaching a stable length after day 7.
 
-## Periodic sarcomeres emerge as myofibers approach stable lengths
+### Periodic sarcomeres emerge as myofibers approach stable lengths
 
 The emergence of stable attachment foci during myotube differentiation and the strong induction of sarcomere gene expression at day 7 motivated a careful analysis of myofibrillogenesis and sarcomerogenesis in the differentiating cultures. We immunostained the cultures to visualise actin (with phalloidin), muscle myosin (with a myosin heavy chain antibody recognising all MyHC isoforms; Webster et al., 1988) and titin (with an N-terminal titin epitope antibody located at the sarcomeric Z-disc; Mayans et al., 1998) and manually segmented 810 myotubes or myofibers. Each fiber was then assigned to one of four morphologically distinct categories (Figure 4A): first, ‘myotubes’ display very low levels of titin in a salt-and-pepper pattern, muscle myosin levels are also low and actin does not yet form long continuous myofibrils. The lack of myofibrils is substantiated by the absence of periodic myosin or titin patterns on actin filaments (Figure 4A and B). Thus, myotubes do not yet contain myofibrils. Second, ‘immature myofibers’ display higher levels of titin and myosin, both of which are recruited onto continuous actin structures, which do not yet display an obvious periodicity (Figure 4A and B). Thus, immature myofibers contain immature myofibrils that are not yet periodic. Third, ‘transitional myofibers’ show high titin and myosin levels, both of which display a periodic pattern on long continuous periodic actin structures (Figure 4A and B). Hence, transitional myofibers contain long periodic myofibrils built from chains of immature sarcomeres. Fourth, ‘mature myofibers’ display strongly periodic patterns of titin, myosin, and actin across the entire width of the myofiber (Figure 4A and B). Thus, mature myofibrils in mature myofibers have either aligned or laterally expanded to form large Z-discs. Generally, the patterns appeared homogenous throughout most of the length of the myotube or myofiber; hence, we were able to categorise each of them into a single morphological category.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig4-v2.jpg)
 
-**Figure 4.:** (A) Multi-channel fluorescent images of four morphological categories (myotubes, immature, transitional, and mature myofibers). Left column shows a view of 100 µm wide, right column a zoomed view of 30 µm boxed area. Immunofluorescence against titin N-terminus, muscle myosin heavy chain (MyHC), and phalloidin staining of actin are shown. (B) Normalised one-dimensional (1D) fluorescent intensities for titin (black) and myosin (blue) from ROIs in right column in A. Note the emerging periodicity in transitional fibers. (C) Distribution of each morphological category during the time course. (D) Semi-automatic 1D autocorrelation analysis pipeline. Step ①: Straightening manual ROI in xy dimension. Step ②: Straightening ROI from Step ① in xz dimension. Step ③: Generating 1D intensity profile along myofiber. Step ④: Autocorrelation function (ACF) analysis with 1D intensity profile from Step ③. Presence of a secondary peak indicates the existence of periodic signal, with peak position indicating period length and peak prominence reflecting period regularity. (E) Average ACF for each time point. (E’) Randomly selected ACFs for each time point (n=36 each). (F) Average ACF for each morphological category. (F’) Randomly selected ACFs for each category (n=36 each). Source data available for C.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Multi-channel fluorescent images of four morphological categories (myotubes, immature, transitional, and mature myofibers). Left column shows a view of 100 µm wide, right column a zoomed view of 30 µm boxed area. Immunofluorescence against titin N-terminus, muscle myosin heavy chain (MyHC), and phalloidin staining of actin are shown. (B) Normalised one-dimensional (1D) fluorescent intensities for titin (black) and myosin (blue) from ROIs in right column in A. Note the emerging periodicity in transitional fibers. (C) Distribution of each morphological category during the time course. (D) Semi-automatic 1D autocorrelation analysis pipeline. Step ①: Straightening manual ROI in xy dimension. Step ②: Straightening ROI from Step ① in xz dimension. Step ③: Generating 1D intensity profile along myofiber. Step ④: Autocorrelation function (ACF) analysis with 1D intensity profile from Step ③. Presence of a secondary peak indicates the existence of periodic signal, with peak position indicating period length and peak prominence reflecting period regularity. (E) Average ACF for each time point. (E’) Randomly selected ACFs for each time point (n=36 each). (F) Average ACF for each morphological category. (F’) Randomly selected ACFs for each category (n=36 each). Source data available for C.
 
 Having these four categories in hand, we classified all the 810 traced myotubes and myofibers across the entire time course to gain insights into the evolution of myofiber morphology at the population level (Figure 4C). Myotubes and immature myofibers are largely present before day 7 in the differentiating cultures, whereas transitional and mature myofibers dominate after day 7 (Figure 4C). This fits well with the observed biphasic behaviour described above and suggests that periodic sarcomeres largely assemble around day 7, the time when myofibers become stably attached.
 
 In order to analyse the time course of sarcomere assembly in an unbiased manner, we developed a semi-automatic image analysis pipeline to quantitate periodic titin signal intensity profiles in a 3D volume extending along a length of up to 200 µm using an autocorrelation function (ACF) analysis (Figure 4D, see Materials and methods). After straightening the segmented myofibril to obtain a 1D titin intensity profile, we applied an ACF and monitored secondary ACF peaks position and prominence as a read out of the regularity of the pattern (Figure 4D; Dehapiot, 2022). We applied this pipeline to all myotubes and myofibers fixed at different time points in the differentiation time course. When averaging all ACFs for each time point, we found a secondary peak first emerging at days 5 and 7, with a period length of about 2 µm (Figure 4E). This sarcomere length fits well with the length of human foetal muscle sarcomeres (Racca et al., 2013). The peak prominence becomes higher at days 9, 12, and 15 (Figure 4E), demonstrating that the periodicity and thus the sarcomeres mature at later stages. This is also visible from individual ACFs in randomly selected myotubes or myofibers from each time point (Figure 4E’). Finally, we sorted the ACFs based on our manually assigned morphological categories and confirmed that immature myofibers do not yet display any obvious periodicity. Periodicity is however clearly detected in transitional and mature myofibers (Figure 4F and F’). We conclude that periodic sarcomeres assemble in transitional myofibers around days 5–7. This coincides with the time when myofibers have formed stable bundles with stable attachment foci (Figures 1 and 2). This correlation of morphological transitions across molecular, cellular, and tissue scales led us to hypothesise that mechanical signals may serve as a common denominator of morphological organisations.
 
-## Myofiber bundling promotes sarcomere assembly
+### Myofiber bundling promotes sarcomere assembly
 
 One important mechanical signal for sarcomerogenesis is tension (Weitkunat et al., 2014). We hypothesised that tension is modulated by myofiber bundling and hence bundling efficiency may directly impact sarcomere assembly. To test this hypothesis, we seeded myoblasts at varying densities from 2.5k to 20k cells per cm2 and assayed bundling efficiency (all previous experiments were performed at a density of about 10k cells per cm2). We found that higher seeding density indeed accelerates myofiber bundling, as quantified by an increase in nematic length found at 10k and 20k seeding densities compared to lower densities at days 3 and 5 (Figure 5A and B, Figure 5—figure supplement 1). This is consistent with the hypothesis that fiber-fiber interactions are important for efficient myofiber bundling.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig5-v2.jpg)
+
+**Figure 5.:** (A) Rhodamine-phalloidin stainings of days 3 and 5 myofibers seeded at 2.5, 5, 10, and 20 k/cm2, pseudo-coloured according to local fiber orientation by OrientationJ (orientation colour-coding as in Figure 2A–F). (B) Nematic correlation length ηL of conditions shown in A, n=5 each. (C) Immunofluorescence against titin N-terminus for conditions shown in A. (D) Average autocorrelation function (ACF) for conditions shown in C, n=15 each. (E) Amplitude of secondary ACF peaks for conditions shown in D, n=15 each. Scale bars: 500 µm in A, 20 µm in C. Multiple pair-wise t-test. Source data available for B, E.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Vector field analysis of myofiber bundle alignment at day 3. Upper row: inverted grey scale images of phalloidin staining superimposed with grids of vector fields generated from OrientationJ. Vector orientation and coherence are represented by the direction and length of each short line. Lower row: two-dimensional (2D) heatmaps showing local nematic order S for each grid position. Dark regions show misalignment (lower values), while light regions show good alignment (higher values). Blue boxes highlight grids with nematic order <0.5. Colour map shown on the bottom. (B) Vector field analysis of myofiber bundle alignment at day 5.
+
 As we found that sarcomerogenesis correlates with the appearance of large stable myofiber bundles (at 10 k seeding density, see Figure 2 and Figure 4E), we asked if changing the bundling speed will impact the dynamics of sarcomere assembly. By performing a similar ACF analysis of titin intensity as above we found that titin periodicity at day 5 is strongly increased in 10k and 20k cultures compared to lower density cultures (Figure 5C–E). At 20k density we found a few fibers that even show a mature titin pattern as early as day 3 (Figure 5C). These data support the hypothesis that myofiber bundling promotes sarcomere assembly, possibly by effective tension built-up in the larger myofiber bundles.
 
-## Sarcomeres emerge simultaneously over broad regions in myofibers
+### Sarcomeres emerge simultaneously over broad regions in myofibers
 
 In Drosophila muscles mechanical tension triggers the simultaneous assembly of periodic myofibrils across the entire length of the myofiber (Weitkunat et al., 2014). If mechanical tension also provides a long-range coordination signal in human myofiber cultures, then one would predict that sarcomeres also emerge across broad regions after stable attachment.
 
 In order to study how the first periodic myofibrils in human fibers are built, we performed local ACF analysis aiming to analyse sarcomere periodicity in 10-µm-wide windows sliding along the ‘straightened’ 1D titin intensity profiles ranging from 90 to 200 µm in length. This generated a 2D periodicity map for each myofiber, displaying the regularity of the pattern, measured by the peak prominence (Figure 6A, white line represents peak prominence), and distance between peaks (Figure 6A). To minimise artefacts generated by our straightening procedure, we optimised the peak prominence threshold and allowed for short gaps (below 6 µm in length; see Materials and methods). This enabled us to quantify the periodicity of titin distribution in all our 810 myotubes and myofibers (red lines in Figure 6A). As expected from the global ACF analysis shown in Figure 4, myotubes display almost no titin periodic region above the threshold, confirming that they do not contain any myofibrils or sarcomeres (Figure 6A and B). Similarly, immature myofibers contain on average less than one periodically patterned region per 100 µm, again verifying that they do not contain periodic myofibrils yet (Figure 6A and B). Therefore, myotubes and immature myofibers have not yet assembled periodic myofibrils and hence do not yet contain sarcomeres. In contrast, our ACF analysis revealed that mature myofibers are periodically patterned across 80% of the analysed regions, showing mostly one or two large regions (Figure 6A–C). This demonstrates that mature myofibers indeed contain highly regular periodic myofibrils that span most of the myofiber.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig6-v2.jpg)
+
+**Figure 6.:** (A) Local autocorrelation function (ACF) analysis for each morphological category (myotubes, immature, transitional and mature myofibers). For each panel, top: schematic model of the myotube and myofiber stage with actin, myosin, and titin as indicated; middle: a straightened image of titin immunofluorescence; bottom: a two-dimensional (2D) colourmap of local ACF. x-Axis shows the position along the myofiber, y-axis shows the ACF distance. Superimposed white line shows prominence of the secondary peak along the myofiber. Superimposed red segments highlight secondary peak positions classified as periodic (see Materials and methods). (B–C) Violin plots of proportion of total length of detected periodic regions over whole lengths of myofiber (B) and number of detected periodic regions (C) for each myofiber from each category. Black bars mark the distance between first and third quadrant. White dots mark the median values. (D) Stills from a time-lapse movie showing a myofiber during myofibrillogenesis (labelled with mKate2-α-actinin2, Figure 6—video 1). Note that the end of the movie the myofibrils display a periodic pattern over the entire traced length, corresponding to the morphology of a mature myofiber. In each panel, the myofiber is traced to produce the intensity profile (red) and an ACF (blue) below that panel. The amplitude of the blue curve is then used to calculate values in E. (E) Amplitudes of ACFs at different time points in myofibers undergoing myofibrillogenesis (n=5). (F) Stills from a time-lapse movie showing one myofiber end retracting (labelled with mKate2-α-actinin2 and outlined with white dashed line and a white arrowhead, Figure 6—video 2). Note that the periodicity of the initially periodic myofiber collapses. In each panel, the myofiber is traced to produce the intensity profile (red) below that panel. The amplitude of the autocorrelation from the shaded region is then used to calculate values in G. (G) Amplitudes of ACFs at different time points in collapsing myofibers (n=3). Scale bars: 20 µm. . Source data available for B, C, E, and G.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Distribution of patterned regions (autocorrelation function [ACF] peak prominence >0.6, see Materials and methods) in randomly selected myotubes, immature, transitional and mature myofibers. In each plot, the x-axis displays positions along the myofiber in µm, while each myofiber occupies a row along the y-axis. Note the homogenous distribution of the pattern regions.
 
 Together, this suggests that periodic myofibrils first assemble in transitional myofibers. This is supported by the finding that ACF analysis scores about 30% of their length as periodic (Figure 6A and B). Consistently, we find that transitional myofibers contain an average of 1.5 patterned regions per 100 µm (Figure 6C), some developed already into very long continuous regions (>50 µm, Figure 6A). This verified that transitional myofibers are the stage at which periodic sarcomeres assemble over long distances.
 
@@ -109,9 +153,21 @@ We next investigated the distribution of periodic regions along the length of tr
 
 To directly visualise sarcomerogenesis in human muscle cultures live, we tagged the endogenous α-actinin2 protein with mKate2 using CRISPR-Cas9 technology (see Materials and methods). Performing fluorescent time-lapse imaging, we were able to track individual myofibers in low-density cultures for up to 3 days, which enabled us to visualise myofibrillogenesis directly (Figure 6D). As observed in fixed cultures, we found that initially unpatterned immature myofibers develop periodic myofibrils over a broad region of the myofiber (Figure 6D and E, Figure 6—video 1). This likely coincides with a strong increase in mechanical tension as we frequently found one end of the myofiber detaching from the substrate. Strikingly, detaching from the substrate results in a local collapse of the periodic myofibrils (Figure 6F and G, Figure 6—video 2). This further supports our hypothesis that mechanical tension is the long-range signal that instructs and coordinates sarcomere assembly across the entire myofiber.
 
-## Mechanical tension build-up precedes sarcomere assembly
+### Mechanical tension build-up precedes sarcomere assembly
 
 In order to directly assess the role of tension in triggering the transition from a dynamic cytoskeleton in extending myotubes to periodic myofibrils in stable myofibers, we quantified mechanical tension using laser nano-surgery. We severed entire myotubes and myofibers expressing either endogenously tagged α-actinin2 (Figure 7A, myotube and immature myofiber) or titin (Figure 7A, transitional and mature myofibers). The recoil can be visualised by plotting the position of the severed ends as kymographs over time (Figure 7A, Figure 7—video 1). After cutting, severed myotubes, as well as immature, transitional, and mature myofibers all displayed a recoil response of their severed ends. We conclude that mechanical tension is present along the long axis of myotubes and myofibers of all morphological categories. These observations also indicate that mechanical tension precedes sarcomere assembly and persists during sarcomere maturation.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig7-v2.jpg)
+
+**Figure 7.:** (A) Line laser ablation experiments for each morphological category (myotubes, immature, transitional and mature myofibers). Myotube and immature myofibers were labelled with mKate2-α-actinin2, while transitional and mature myofibers were labelled with GFP-titin. Top, upper middle, middle, and lower middle panels show 0.1 s prior to 0.1, 1.0, and 5 s post ablation, respectively. Bottom panel shows a kymograph of ablated myofibers. Coloured boxes correspond to coloured lines in the kymograph. Yellow arrowheads show sites of ablation and severed ends. (B) Quantification and mathematical modelling of recoil distances. Dots and shaded area show average and standard deviation of recoil distance, respectively. Dashed straight lines show a linear model fitted to estimate the initial recoil velocity. Solid curve shows viscoelastic model fitted to estimate the relaxation time τ. (C–D) Box plot of initial recoil velocity (C) and relaxation time (D) from ablation experiments in each morphological category: n=11 (myotube), 16 (immature), 11 (transitional), and 8 (mature). Black bars mark the distance between first and third quadrant. White dots mark the median values. Multiple pair-wise t-test: n.s.: p>0.05. Scale bar: 10 µm. Source data available for C and D.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Examples of contracting transitional (left) and mature myofibers (right) post laser ablation. Top, upper middle and lower middle panels show 0.1 s prior to, 0.1 s after, and 1.0 after ablation, respectively. Bottom panels show the kymographs. Coloured boxes correspond to coloured lines in the kymograph. Yellow vertical arrowheads show sites of ablation and severed ends. Purple horizontal arrowheads on kymographs highlight jerky motions caused by contraction events. (B) Frequency of contraction events in myotubes, immature, transitional and mature myofibers. Scale bar: 100 µm. Related to Figure 7 and Figure 7—video 2. Source data available for panel B.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Recoil of myofibrils in an immature (left), a transitional (middle), and a mature myofiber (right) post point laser ablation. Top, upper middle and lower middle panels show the ablation events, 0.1 s after and 1.0 after ablation, respectively. Bottom panels show the kymographs. Coloured boxes correspond to coloured lines in the kymograph. Yellow vertical arrowheads show sites of ablation and severed ends. Note that the mature sarcomeres collapse after the cut. Scale bar: 100 µm. Related to Figure 7 and Figure 7—video 3.
 
 Additionally, we found that transitional and mature myofibers frequently show fast motions as consequences of active contractions (Figure 7—figure supplement 1A, B and Figure 7—video 2). Similar active contractions have been observed when severing immature myofibrils in Drosophila, as a consequence of laser-induced calcium release from the sarcoplasmic reticulum (Weitkunat et al., 2017) and have also been observed spontaneously in mature human myofibers after applying the same differentiation protocol (Al Tanoury et al., 2021). This demonstrates that transitional myofibers harbour already contractile sarcomeres.
 
@@ -119,11 +175,23 @@ If mechanical tension build-up is a trigger for periodic myofibril assembly, one
 
 To probe tension directly within the assembling myofibrils, we performed nano-lesions to only severe individual myofibrils without affecting the rest of the cell, taking advantage of the high spatial precision of the pulsed infrared laser (see Materials and methods). We found that severed myofibrils are recoiling, demonstrating that they indeed are under tension (Figure 7—figure supplement 2, Figure 7—video 3). This strongly suggests that the assembling and maturing myofibrils are the major source of the mechanical tension present in the myofibers. We found that severing a mature myofibril leads to the collapse of its neighbouring sarcomeres (Figure 7—figure supplement 2, Figure 7—video 3), similar as in detaching myofibers observed in Figure 6F. In conclusion, these data demonstrate that attached myofibers build up mechanical tension prior to and during sarcomere formation, supporting our hypothesis that tension coordinates the assembly of long periodic myofibrils upon surpassing a threshold. These myofibrils need stable anchoring to prevent them from collapsing.
 
-## Force-resistant attachment results in myofiber end clustering
+### Force-resistant attachment results in myofiber end clustering
 
 In vivo, myofibers are stably attached to tendons cells that connect to the skeleton (Lemke and Schnorrer, 2017; Schweitzer et al., 2010). To mechanically anchor the myofibrils, the terminal Z-disc of each myofibril is connected to the cytoplasmic tails of integrins by a specialised actin-rich zone (Green et al., 2018; Lemke et al., 2019; Sun et al., 2019). Integrins in turn are localised to the cell membrane and their extracellular domains bind to various components of the muscle-tendon extracellular matrix (ECM) (Brown, 2000; Hynes, 2002). As our cultures do not contain prepatterned tendon-based attachments, we wondered how myofiber bundles develop stable attachments?
 
 Integrins function as αβ-dimers. The human genome contains 18α- and 8β-integrin subunits, forming 24 functionally distinct dimers (Ringer et al., 2017; Takada et al., 2007). To identify which ones are likely relevant for attachment of muscle fibers in our cultures, we made use of the developmental gene expression time course and found that the fibronectin binding αvβ1-, α5β1-, and α6β1-integrins are the highest expressed integrins throughout the time course (Supplementary file 1). Additionally, α7-integrin is strongly upregulated at day 7, forming with β1 a laminin receptor (α7β1-integrin) (Hynes, 2002; Plow et al., 2000). These expression data fit with the severe muscle fiber and sarcomere assembly phenotypes of β1-integrin knock-out mice (Brakebusch and Fässler, 2005; Schwander et al., 2003) and the muscular dystrophy phenotype of α7-integrin knock-out mice (Mayer et al., 1997). Hence, we used β1-integrin as main adhesion marker together with paxillin, which is a force-sensitive component of adhesions (Theodosiou et al., 2016) and co-stained our cultures for titin and actin (Figure 8A–D and Figure 8—figure supplement 1A–D). Consistent with our transcriptomics data, we found that β1-integrin protein levels increase when the myofibers differentiate, coinciding with an increase in titin and actin levels (Figure 8E–G).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig8-v2.jpg)
+
+**Figure 8.:** (A–D) Immunostainings of myofibers with β1-integrin (upper middle), titin (lower middle) and actin (stained with phalloidin, bottom) in myotubes (A), immature (B), transitional (C), and mature myofibers (D). The top panel shows the outline of the myofibers superimposed on the actin channel. (E–G) Intensity of β1-integrin (E), titin (F), and actin (G) signals measured with a 50-pixel-wide line-ROI from myotubes (n=13), immature (n=22), transitional (n=28), and mature myofibers (n=22). Scale bars: 20 µm. Source data available.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A–D) Immunostainings of paxillin (top), β1-integrin (upper middle), titin (middle), actin (lower middle), and a merge of paxillin and actin signals (bottom) in myotubes (A), immature (B), transitional (C), and mature myofibers (D). Insets shows a larger zoom on the right, with paxillin (top), β1-integrin (upper middle), actin (lower middle), and a merge of paxillin, β1-integrin, and actin signals (bottom). Scale bars: 20 µm in smaller zoom and 5 µm in larger zoom.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/76649/elife-76649-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A–D) Immunostainings of actin (top), β1-integrin (upper middle), NCAM1 (lower middle), and titin (bottom) in myotubes (A), immature (B), transitional (C), and mature myofibers (D). Scale bars: 20 µm.
 
 Closer inspection of high-resolution images showed that ends of myotubes contain an actin-rich network forming prominent filopodia with some integrin and paxillin-based focal adhesions (Figure 8—figure supplement 1A). This is consistent with the highly dynamic extension behaviour of myotube ends that we documented by live imaging (Figure 1—figure supplement 1B), resembling the dynamic focal adhesions of migratory cells (Wehrle-Haller, 2012). Similar integrin and paxillin foci are detected at the ends of immature myofibers, however integrin also localises along the entire outline of the immature myofiber (Figure 8B, Figure 8—figure supplement 1B). This suggests that the immature myofibers probe their environment over large areas, which is consistent with their above-described dynamics.
 
@@ -133,7 +201,7 @@ Taken together, our data suggest that the myofiber bundle foci of transitional a
 
 ## Discussion
 
-## Multi-scale self-organisation in human myofibers in vitro
+### Multi-scale self-organisation in human myofibers in vitro
 
 In vivo, human muscle tissue displays a very ordered organisation ranging from the molecular scale of sarcomeric proteins to the tissue scale of myofiber bundles. This ensures that molecular forces produced by myosin motors translate efficiently into body movement. Here, we used a 2D culture system to investigate how muscle cells can organise themselves in the absence of any external cues. We discovered that myofibers show an autonomous multi-scale self-organisation when cultured in vitro (Figure 9).
 
@@ -151,13 +219,13 @@ The alignment of neighbouring myotubes to a shared contraction axis has also bee
 
 Here, we have presented evidence strongly supporting mechanical tension as one key signal to coordinate the self-organisation across scales. First, we detected different levels of mechanical tension during the time course of myofiber differentiation, starting with low tension in myotubes and resulting in high tension in the assembled transitional and mature myofibers. Second, we demonstrated that this tension is present across the assembling myofibrils. Since myofibrils span the entire muscle fiber, tension likely communicates rapidly across scales. Third, we found a strong correlation of tension increase with maturation of integrin attachments at the myofiber bundle foci. It is well established in many cell types that mechanical load on integrin adhesions exerted by the actin cytoskeleton results in their maturation to better withstand increased forces (Austen et al., 2015; Bulgakova et al., 2017; Lemke et al., 2019; Sun et al., 2019). Fourth, we demonstrated that more efficient myofiber bundling and thus likely faster tension build-up accelerates sarcomere assembly. Finally, we found that releasing tension either acutely by laser cutting a myofibril or by long-term detachment of a myofiber tip results in a collapse of the periodic myofibrils, which will likely result in a disassembly of the ordered structure. Altogether, this strongly suggests that mechanical tension is a key signal that coordinates morphogenesis in myofibrils, myofibers, and myofiber bundles.
 
-## A self-organisation model across scales is coordinated by tension
+### A self-organisation model across scales is coordinated by tension
 
 How may tension coordinate muscle morphogenesis across scales? In our working model (Figure 9), myotubes elongate during the initial culture phase via protrusive ends. At this stage, they are already forming first mechanical contacts with neighbouring myotubes using filopodial extensions, which in response align to form a small and short myotube cluster sharing a common axis. The tension level is low and sarcomeric genes are not or little expressed (Figure 9 – Steps ①, ②). As myotubes elongate further, they convert to immature myofibers: sarcomeric proteins begin to be expressed and actin filaments assemble into continuous myofibrils that are under higher tension but are still not periodic. The elongating myofiber bundles start to merge with neighbouring bundles to form a common axis and shared attachment foci (Figure 9 – Step ③). The stable attachment enables a further increase in tension and the now high levels of sarcomeric proteins can assemble into periodic myofibrils throughout most of the myofiber (Figure 9 – Step ④). The self-organisation process is likely myosin-driven, with myosin being responsible for the tension build-up and the ordering of the sarcomeric components, as has been shown in Drosophila (Dasbiswas et al., 2018; Loison et al., 2018) as well as in cardiomyocytes in vitro (Chopra et al., 2018; Fenix et al., 2018). Hence, we propose that tension-driven myofibril self-organisation is evolutionarily conserved across muscle types and tension can act as a compass to orient and coordinate between all the molecular components for coordinated assembly into continuous periodic myofibrils (Lemke and Schnorrer, 2017). We hypothesise that a critical tension threshold needs to be passed to trigger effective sarcomere assembly because individual myofibers progress at different speeds from myotubes to mature myofibers in our cultures.
 
 Importantly, we found that integrin-based attachments are concentrated at the ends of the myofibers, in particular at the contact interfaces between neighbouring myofibers. Likely these integrins are mechanically engaged as is the case at muscle attachments in vivo (Charvet et al., 2012) thus allow the bundling of the myofibers to large bundles with one large attachment focus at each end. Such each of the foci couples mechanically to the ECM to resist the active myosin-based contractions that become prominent in mature myofibers (Figure 9 – Step ⑤). Such active contractions are also essential for myofibril maturation in Drosophila (Weitkunat et al., 2017), primary chick myofibers cultured in vitro (Kagawa et al., 2006), and in turn even for tendon and bone maturation in vivo (Felsenthal and Zelzer, 2017; Shwartz et al., 2012). Taken together, our model proposes a key role for mechanical tension to coordinate the self-organisation of muscle morphogenesis across scales.
 
-## Tension sensing
+### Tension sensing
 
 Which molecules may sense tension to signal a coordinated assembly of myofibrils and myofibers into bundles? It is likely that tension is sensed at the myofiber level, as sarcomeres appear homogenously across the entire lengths of myofibers. A myosin-dependent self-organisation of ordered periodic actomyosin structures has even been observed in non-muscle cells (Dasbiswas et al., 2018; Hu et al., 2017). However, in contrast to non-muscle cells, the sarcomeric striations are stable over long time periods and have period length of 2–3 µm. This is achieved by titin, which ‘locks’ actin and myosin filaments in place, fulfilling its established ruler function (Brynnel et al., 2018; Granzier et al., 2014; Linke, 2018; Tskhovrebova and Trinick, 2003). In turn, titin is the major source of passive tension present in mature muscle and is responsible for the mechanical integrity of sarcomeres (Li et al., 2020; Rivas-Pardo et al., 2020; Swist et al., 2020). Hence, it is conceivable that the giant elastic titin molecules may serve as tension-sensitive catch bonds, whose incorporation into the myofibril subsequently triggers spatial segregation of actin and myosin domains into regular sarcomeres. However, molecular forces across titin during myofibril assembly have not yet been measured directly.
 
@@ -165,7 +233,7 @@ Another possible mechanism may exist at the ends of myofibers, where integrin-ba
 
 Finally, it is important that the transcriptional status of the differentiating myofiber fits with its morphological differentiation. Thus, tension may also feedback on the transcriptional machinery to boost expression of the sarcomeric components that are needed in large amounts to assemble myofibrils but are not present in extending myotubes. Such a feedback mechanism has recently been proposed in developing flight muscles, which use the mechanosensitive Hippo/YAP pathway to boost sarcomere gene expression before and during myofibril morphogenesis (Kaya-Çopur et al., 2021). Tension could also be sensed directly at the nuclear envelope, which is linked by the LINC complex to the actin cytoskeleton, inducing changes of nuclear shape and position during myofiber differentiation (Janota et al., 2020; Wang et al., 2018). Hence, it is conceivable that in the developing human muscles tension is sensed to boost sarcomeric gene expression. Such a mechanism would ensure that sarcomeres only assemble from their components when the myofibers are properly attached.
 
-## Making even better muscle in vitro – towards a muscle-skeleton ‘organoid’?
+### Making even better muscle in vitro – towards a muscle-skeleton ‘organoid’?
 
 The 2D myofibers generated in vitro are still immature compared to large adult human muscle fiber bundles attached to tendons and bone in vivo. Our myofibers show highest expression of embryonic (MYH3) and neonatal (MYH8) myosin isoforms (see Supplementary file 1; Schiaffino et al., 2015; Al Tanoury et al., 2021) and their myofibrils remain rather thin. However, longer-term culture often results in myofiber detachment followed by degeneration, likely because the attachment sites are not stable enough to withstand the even higher forces produced by more mature fibers. This could be partially solved by overlaying with second layer of Matrigel to provide additional mechanical support in 3D (Roman et al., 2018). The successful differentiation of contractile human neuromuscular organoids from neuromesodermal progenitors in 3D (Faustino Martins et al., 2020) also suggests that 3D support of the myogenic cultures is advantageous.
 
@@ -173,53 +241,322 @@ In summary, our current study has uncovered a remarkable transition from an init
 
 ## Materials and methods
 
-## Materials availability statement
+### Materials availability statement
 
 Any newly created material in this manuscript can either be accessed online or requested from the authors.
 
-## Human iPSC-derived 2D skeletal myoculture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene</td>
+      <td>ACTN2 (human)</td>
+      <td>https://www.ncbi.nlm.nih.gov/gene/88</td>
+      <td>HGNC:HGNC:164</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>NCRM-1 (Homo sapiens)</td>
+      <td>RUCDR, Rutgers University; Chal et al., 2016; Al Tanoury et al., 2021</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>GFP-titin (Homo sapiens)</td>
+      <td>Derived from PGP-1; Sharma et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line</td>
+      <td>mKate2-α-actinin2</td>
+      <td>Derived from NCRM-1, this study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit-anti-titin (N-term)</td>
+      <td>Sigma, Cat. HPA007042</td>
+      <td></td>
+      <td>1 in 50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-MyHC</td>
+      <td>DSHB, Clone A4.1025</td>
+      <td></td>
+      <td>5 ng/µL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rat anti-β1integrin</td>
+      <td>DSHB, Clone AIIB2</td>
+      <td></td>
+      <td>5 ng/µL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-paxillin</td>
+      <td>Invitrogen, Cat. AHO0492</td>
+      <td></td>
+      <td>1 in 5</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-NCAM1</td>
+      <td>DSHB, Clone 5-1H11</td>
+      <td></td>
+      <td>5 ng/µL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse Alexa405</td>
+      <td>Invitrogen, Cat. A31553</td>
+      <td></td>
+      <td>1 in 250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit Alexa405</td>
+      <td>Invitrogen, Cat. A31556</td>
+      <td></td>
+      <td>1 in 250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit Alexa488</td>
+      <td>Life Technologies, Cat. A11034</td>
+      <td></td>
+      <td>1 in 250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rat Alexa488</td>
+      <td>Invitrogen, Cat. A11006</td>
+      <td></td>
+      <td>1 in 250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse Alexa488</td>
+      <td>Invitrogen, Cat. A11001</td>
+      <td></td>
+      <td>1 in 250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rat Alexa633</td>
+      <td>Life Technologies, Cat. A21094</td>
+      <td></td>
+      <td>1 in 250</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit Alexa633</td>
+      <td>Invitrogen, Cat. A21070</td>
+      <td></td>
+      <td>1 in 250</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mKate2 dsDNA</td>
+      <td>Synthesised and obtained from Integrated DNA Technologies</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Culture-insert 4 well in µ-dish 35 mm</td>
+      <td>ibidi, Cat. 80466</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Micro-insert 4 well in µ-dish 35 mm</td>
+      <td>ibidi, Cat. 80406</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SKGM-2 medium</td>
+      <td>Lonza, Cat. CC-3245</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ROCK inhibitor Y27632</td>
+      <td>Tocris, Cat. 1254</td>
+      <td></td>
+      <td>0.1%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Matrigel</td>
+      <td>Corning, Cat. 354277</td>
+      <td></td>
+      <td>1 in 40</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DMEM/F12 medium</td>
+      <td>Thermo Fisher Scientific, Cat. 11320033</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Knock-out Serum Replacement</td>
+      <td>Invitrogen, Cat. 10828028</td>
+      <td></td>
+      <td>2%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>ITS</td>
+      <td>Life Technologies, 41400045</td>
+      <td></td>
+      <td>1%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pen/Strep</td>
+      <td>Life Technologies, Cat. 15140122</td>
+      <td></td>
+      <td>0.2%</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Chiron</td>
+      <td>Tocris Bioscience, Cat. 4423</td>
+      <td></td>
+      <td>1 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TGF-β inhibitor SB431542</td>
+      <td>Tocris, Cat. 1614</td>
+      <td></td>
+      <td>10 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Prednisolone</td>
+      <td>Sigma-Aldrich, Cat. P6004</td>
+      <td></td>
+      <td>10 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gibco Fetal Bovine Serum</td>
+      <td>Thermo Fisher Scientific, Cat. A4766801</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rhodamine-phalloidin</td>
+      <td>Invitrogen, Cat. R415</td>
+      <td></td>
+      <td>1 in 500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexa568-phalloidin</td>
+      <td>Invitrogen, Cat. A12380</td>
+      <td></td>
+      <td>1 in 500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Prolong Gold Antifade without DAPI</td>
+      <td>Invitrogen, Cat. P36934</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Prolong Gold Antifade with DAPI</td>
+      <td>Invitrogen, Cat. P36935</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CRISPOR tool</td>
+      <td>http://crispor.tefor.net</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CENTURI_Mao_FDomMuscle</td>
+      <td>https://github.com/BDehapiot/CENTURI_Mao_FDomMuscle; (Dehapiot, 2022)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Human iPSC-derived 2D skeletal myoculture
 
 The following human iPSC lines were used to perform myogenic differentiation: untagged NCRM-1 (RUCDR, Rutgers University), GFP-titin (derived from PGP-1, Sharma et al., 2018) and mKate2-α-actinin2 (derived from NCRM-1, this study, see below). The cell lines were tested to not contain any mycoplasma contamination.
 
 Maintenance of human iPSCs and their primary myogenic differentiation were performed as described in Chal et al., 2016; Al Tanoury et al., 2021. For secondary differentiation, primary myogenic cultures derived from iPSCs were dissociated at 3 weeks post differentiation, filtered through a 70 and 40 µm cell strainer, and cryopreserved in custom cryomedia (Chal et al., 2016). After thawing in 37°C water bath, myogenic progenitors were resuspended in skeletal muscle growth medium (SKGM-2, Lonza, Cat. CC-3245) with 10 µM ROCK inhibitor (Y-27632 dihydrochloride, Tocris, Cat. 1254), and seeded at a density of 10  k/cm2 (or at varying densities from 2.5 to 20 k/cm2 in Figure 5) onto polymer coverslip-bottomed imaging dishes (culture-insert 4 well in µ-dish 35 mm, ibidi, Cat. 80466 for fixed experiments or micro-insert 4 well in µ-dish 35 mm, ibidi, cat. 80406 for live experiments) coated with Matrigel (Corning, Cat. 354277). After 24  hr, culture medium was replaced by SKGM-2 medium without ROCK inhibitor. Myogenic progenitors were allowed to proliferate for 1–2 days until reaching ∼80% confluence, then induced for myogenic differentiation by replacing SKGM-2 medium with the KCTiP differentiation medium (Al Tanoury et al., 2021): DMEM/F12 medium (Thermo Fisher Scientific, Cat. 11320033) supplemented with 2% knock-out serum replacement (Invitrogen, Cat. 10828028), 1% ITS (Life Technologies, 41400045), 0.2% Pen/Strep (Life Technologies, Cat. 15140122), 1 µM Chiron (Tocris Bioscience, Cat. 4423), 10 μM TGF-β inhibitor SB431542 (Tocris, Cat. 1614), and 10 μM of prednisolone (Sigma-Aldrich, Cat. P6004). KCTiP differentiation medium was subsequently changed on days 1 and 2, and then was refreshed every other day until the end of the cell culture.
 
-## Generation of the mKate2-α-actinin2 knock-in reporter line
+### Generation of the mKate2-α-actinin2 knock-in reporter line
 
 Two different sgRNA targets were designed using the CRISPOR tool (http://crispor.tefor.net) surrounding the start site of human ACTN2 gene for N-terminal tagging (primers sequences are listed below). sgRNAs oligonucleotides were annealed and cloned into pSpCas9(BB)-2A-GFP. Donor plasmid was designed by NEBuilder (https://nebuilderv1.neb.com) using Gibson assembly in pUC10 backbone. 0.8–1 kb nucleotide sequence before the sgRNA cutting site as 5’-homology arm (HA), mKate2 and 0.8–1 kb nucleotide sequence after the sgRNA cutting site as 3’-homology arm were used to generate primers for cloning (see below). A silent mutation was introduced on each of the donor template (5’-HA and 3’-HA) in the PAM site to prevent the CRISPR from targeting the recombined sequences. 5’-HA and 3’-HA were PCR amplified using human genomic DNA. mKate2 dsDNA was synthesised and obtained from Integrated DNA Technologies. Gibson cloning method was used to ligate each part to construct the full donor plasmid (New England Biolabs). Electroporation of the pSpCas9(BB)-2A-GFP and donor plasmids was performed with an Amaxa Nucleofector IIb device (Lonza). GFP-positive cells were isolated by fluorescence-activated cell sorting, clonally expanded, and then selected by PCR and validated through Sanger sequencing.
 
-## Primer sequences:
+### Primer sequences:
 
-## Immunostaining of fixed myocultures
+### Immunostaining of fixed myocultures
 
 Myocultures in imaging dishes were rinsed one time in ×1 PBS before fixed in 4% PFA for 20 min at room temperature. Fixed myocultures were rinsed one more time in ×1 PBS, permeabilised in ×1 PBS supplemented by 0.1% Triton X-100 (Sigma-Aldrich, Cat. T8787) for 15 min at room temperature, then incubated in blocking buffer composed of ×1 PBS supplemented with 10% Gibco Fetal Bovine Serum (Thermo Fisher Scientific, Cat. A4766801) and 0.1% Triton X-100. Myocultures were subsequently incubated with appropriate primary antibodies diluted in blocking buffer at appropriate concentrations overnight at 4°C. Myocultures were then washed three times with ×1 PBS supplemented by 0.1% Tween 20, and incubated with appropriate fluorescently labelled secondary antibodies and phalloidin diluted ×1 PBS supplemented by 0.1% Tween 20 for 2 hr at room temperature. Myocultures were then washed three times with ×1 PBS supplemented by 0.1% Tween 20 (Sigma-Aldrich, Cat. P9416). The culture inserts were removed to allow mounting with a top coverslip and appropriate mounting media. Samples were sealed with nail polish and stored at 4°C until imaging.
 
 The following primary antibodies were used: rabbit-anti-titin (N-term) (Sigma, Cat. HPA007042, 1:50), mouse anti-MyHC (DSHB, Clone A4.1025, 5 ng/µL), rat anti-β1integrin (DSHB, Clone AIIB2, 5 ng/µL), mouse anti-paxillin (Invitrogen, Cat. AHO0492, 1:5), mouse-anti-NCAM1 (DSHB, Clone 5-1H11, 5 ng/µL). The following secondary antibodies were used: goat anti-mouse Alexa405 (Invitrogen, Cat. A31553, 1:250), goat anti-rabbit Alexa405 (Invitrogen, Cat. A31556, 1:250), goat anti-rabbit Alexa488 (Life Technologies, Cat. A11034, 1:250), goat anti-rat Alexa488 (Invitrogen, Cat. A11006, 1:250), goat anti-mouse Alexa488 (Invitrogen, Cat. A 11001, 1:250), goat anti-mouse Alexa633 (Life Technologies, Cat. A21052, 1:250), goat anti-rat Alexa633 (Life Technologies, Cat. A21094, 1:250), goat anti-rabbit Alexa633 (Invitrogen, Cat. A 21070, 1:250). The following staining reagents were used: rhodamine-phalloidin (Invitrogen, Cat. R415, 1:500), Alexa568-phalloidin (Invitrogen, Cat. A12380, 1:500). The following mounting media were used: Prolong Gold Antifade without DAPI (Invitrogen, Cat. P36934), Prolong Gold Antifade with DAPI (Invitrogen, Cat. P36935).
 
-## Fluorescence imaging of fixed myocultures
+### Fluorescence imaging of fixed myocultures
 
 Myocultures were differentiated in polymer coverslip-bottomed imaging dishes (culture-insert 4 well in µ-dish 35 mm, ibidi, cat. 80466) coated with Matrigel and fixed as described above. Fluorescent images of fixed myocultures were acquired on a Zeiss LSM880-I-NLO inverted confocal microscope using the following objectives: EC Plan-Neofluar ×10/0.3, Plan-C Apochrome ×40/1.2 W, Apochromat ×100/1.4 Oil DIC. For images acquired at ×10 magnification, 6×6 tiles at zoom 0.6 were used to cover the entire culture well, while single z-slices were acquired. For images acquired at ×40 or ×100 magnification, various tiles at zoom 1.0 were used to cover a larger area, with a z-step size of 0.3–0.5 µm.
 
-## Phase-contrast time-lapse imaging of live myocultures
+### Phase-contrast time-lapse imaging of live myocultures
 
 Myocultures were differentiated in polymer coverslip-bottomed imaging dishes (micro-insert 4 well in µ-dish 35 mm, ibidi, Cat. 80406) coated with Matrigel as described above. Phase-contrast time-lapse images of live myocultures were acquired on a Zeiss Axio Observer.Z1 inverted wide-field microscope with 5% CO2 at 37°C using an EC Plan-Neofluar ×20/0.5 objective. 4×4 tiles at zoom 1.0 were used to cover a larger area. Images were acquired every 30 min, for up to 6 days. Closed culture dishes filled with ample media kept in a moisturised imaging chamber allowed for stable long-term imaging without perturbing the sample by media change. Software autofocus was used to keep the imaging plane constant.
 
-## Fluorescence time-lapse imaging of myofibrillogenesis
+### Fluorescence time-lapse imaging of myofibrillogenesis
 
 Myocultures were differentiated in polymer coverslip-bottomed imaging dishes (micro-insert 4 well in µ-dish 35 mm, ibidi, Cat. 80406) coated with Matrigel as described above. Fluorescent time-lapse images of live myocultures were acquired on an Olympus IX83 inverted microscope equipped with a Yokogawa CSU-Wi spinning disc scanner unit using an UPlanXApo ×60/1.42 oil immersion objective. An Okolab UNO-T-H-CO2 heated stage was used to carry on incubation with 5% CO2 at 37°C during the entirety of time-lapse experiment. Tiled z-stacks were acquired every 15 min with a range of 10 µm at a step size of 1 µm, for up to 3 days. Closed culture dishes filled with ample media allowed for stable long-term imaging without perturbing the sample by media change. z-Drift compensation was used to keep a reference plane constant.
 
-## Laser-ablation of live myofibers
+### Laser-ablation of live myofibers
 
 Laser ablation and fluorescent live imaging of live myocultures were performed on a Nikon Eclipse TE 2000-E inverted spinning disc microscope (Ultraview ERS, Perkin Elmer) and a near-infrared (NIR, 1030 nm) femtosecond laser at 50 MHz repetition rate (t-Pulse, Amplitude Systems) (Collinet et al., 2015). Whole myofiber cuts were achieved by focusing the NIR laser using a ×100/1.4 oil immersion objective with an average power of 500 mW at the back aperture, then moving the focused beam along a 5–10 µm line perpendicular to the target myofiber at a speed of 300 µm/s using an xy-galvanometer (Cambridge Technologies). Fluorescent time-lapse images were acquired every 100 ms prior to, during, and post ablation for up to 10 s.
 
-## Transcriptomics analysis
+### Transcriptomics analysis
 
 The bulk RNA-seq data analysis was performed on the already analysed data available under the GEO accession number GSE164874. Starting from the raw count matrix file ‘GSE164874_SecondaryDifferentiation_raw_counts.xlsx’, we kept here only the relevant conditions, namely the three replicates for the SKGM-2, KCTiP at 7 days and KCTiP at 15 days of differentiation. In order to compare each time point to a baseline level, we artificially generated three pseudo-replicates for the baseline condition. For each of the three pseudo-replicates, we computed a baseline value by averaging different replicates of the three time points. Raw count matrix filtered for the conditions of interest and with pseudo-replicates can be found in the Supplementary file 1. Normalisation, rlog transformation, and differential expression analysis were done in the R environment (v3.6.0), using the DESeq2 package (v 1.22.2) (Love et al., 2014). The output files of the DESeq2 analysis can be found in the Supplementary file 1.
 
 Cluster analysis was performed on the normalised counts using the Mfuzz R package (v 2.42) (Kumar and E Futschik, 2007). To eliminate the noise, genes with lower than 50 total reads were filtered out. The data have been partitioned into 10 clusters according to the Dmin function provided by Mfuzz. Genes with membership values lower than 0.2 were filtered out generating non-overlapping clusters. Moreover, we performed 10 clustering runs and evaluated the stability of the clusters by computing the Jaccard Index. Cluster profiles are displayed in Figure 3A, while the gene membership lists in the clusters are available in Supplementary file 1. We performed GO enrichment of each cluster making use of Enrichr (Kuleshov et al., 2016). Results of the enrichment analysis can be found in the ‘GO_enrichment_clusters.xlsx’ supplementary file.
 
-## Image analysis and quantification
+### Image analysis and quantification
 
-## Segmenting and quantifying myofiber morphology, nuclei, adhesion, and maturation markers
+#### Segmenting and quantifying myofiber morphology, nuclei, adhesion, and maturation markers
 
 Myofibers were manually segmented from ×10 phalloidin channels as freehand line ROIs in Fiji (Schindelin et al., 2012) by tracing with a stylus on a digital drawing pad. Length of these line ROIs were then measured in Fiji. Width of myofibers were manually quantified from ×100 phalloidin channels as length of line segment ROIs perpendicular to the myofibers in Fiji.
 
@@ -227,29 +564,37 @@ To count nuclei automatically, freehand line myofiber ROIs generated from ×10 p
 
 Quantifications of β1-integrin, titin, and actin levels for Figure 8 were performed using line ROIs of a width of 50 pixels (4 µm) on multi-channel maximum projection images with a depth of 5 µm. Average pixel intensity per line ROI was then taken as a measure of relative protein levels.
 
-## Segmenting and quantifying myofiber bundles and attachment foci
+#### Segmenting and quantifying myofiber bundles and attachment foci
 
 First, myofibers were manually segmented from ×10 phalloidin channels as freehand line ROIs in Fiji by tracing with a stylus on a digital drawing pad. Then, line ROIs were grouped as bundles with a custom script in R using a simple clustering algorithm based on the Hausdorff distance (Borchers, 2021). The Hausdorff distance is defined as the maximum distance of a set of points to their nearest point in the other set (Rote, 1991). The Hausdorff distance is chosen to quantify the distance between two line ROIs, as it takes into account every point and is thus superior than simply comparing average distances of line ROIs. Briefly, each set of line ROIs is represented by a set of xy coordinates. A Hausdorff distance is then calculated between each set of xy coordinates to obtain a distance matrix between pair-wise line ROIs. Line ROI pairs with Hausdorff distances below arbitrary thresholds are grouped into one myofiber cluster. One unique distance threshold is chosen for each time point, based on best matching between automatically generated clusters with visual inspections. Once segmented, the number of myofiber clusters is automatically counted. The area of each myofiber cluster is automatically quantified as the convex hull of all xy coordinates in line ROIs within that cluster.
 
 Attachment foci are manually segmented from ×10 phalloidin channels, as sets of xy coordinates where one or more myofiber bundles converge.
 
-## Vector field analysis of myofiber bundles
+#### Vector field analysis of myofiber bundles
 
 Vector field analysis of myofiber bundles was performed using the OrientationJ plugin (Rezakhaniha et al., 2012) in Fiji (Schindelin et al., 2012) combined with custom R scripts. First, in order to remove edges and empty space without myoculture, a central window of 3200×3200 pixels was cropped from the original 5000×5000 pixels images from ×10 phalloidin channels. Then, the cropped image was analysed using the OrientationJ vector field plugin with the following parameters: structure tensor local window σ=10 pixels, vector field grid size = 100 pixels. The output from OrientationJ (Figure 2—figure supplement 1A–F, Figure 5—figure supplement 1A, B ) is further analysed with custom scripts in R by adapting algorithms from Guillamat et al., 2020, as follows:
 
-The spatial correlation C (Figure 2—figure supplement 1G) was defined as C(d)=2 ⟨cos2(θ(r)−θ(r+d))⟩−1
+The spatial correlation C (Figure 2—figure supplement 1G) was defined as
+
+$$
+C(d)=2 ⟨cos^{2}(\theta(r)−\theta(r+d))⟩−1
+$$
 
 where θ(r) is the local orientation angle of the vector field at a grid position r, d is the separation vector to a second grid position r+d at distance |d|=d, and brackets ⟨ ⟩ denote an average over all pairs of grid points with same distance d. The characteristic nematic length ηL was defined as the intersection of the initial linear decay of C(d) and the x axis (Figure 2—figure supplement 1G).
 
-The local nematic order parameter S (Figure 2—figure supplement 1A’–F’, Figure 5—figure supplement 1A, B) was defined asS(x,y)=⟨cos(2θ)⟩(x,y)2+⟨sin(2θ)⟩(x,y)2
+The local nematic order parameter S (Figure 2—figure supplement 1A’–F’, Figure 5—figure supplement 1A, B) was defined as
+
+$$
+S(x,y)=\sqrt{⟨cos(2\theta)⟩_{(x,y)}^{2}+⟨sin(2\theta)⟩_{(x,y)}^{2}}
+$$
 
 where θ is again the local orientation angle of the vector field at a given grid position, and brackets ⟨ ⟩ denote an average over a local regions of interest with center position (x,y). Specifically, we used square regions of interest comprising 4×4 grid positions each. The local nematic order parameter S was plotted as a heatmap (Figure 2—figure supplement 1A’–F’, Figure 5—figure supplement 1A, B). The fraction of disorder parameter is calculated as the fraction of local regions of interest for which the local nematic order parameter S is below a threshold of 0.5 (Figure 2—figure supplement 1I).
 
-## Segmenting myofibrils and generating intensity profiles
+#### Segmenting myofibrils and generating intensity profiles
 
 1D ROIs of myofibrils were manually generated from 3D stacks of ×100 titin channel in four steps (Figure 4D): First, a spline is drawn on the xy plane of the original 3D stack. This xy-spline is used to generate a xy-straightened 3D volume (①). Second, the xy-straightened 3D volume is projected onto the xz plane, where a second spline is drawn. This xz spline is then combined with the xy spline to generate a xyz spline, which is then used to generate a straightened 3D volume (②). The straightened 3D volume is finally projected on the xy plane and its 1D intensity profile is extracted by averaging intensity values over the y axis (③). For subsequent automated 1D autocorrelation analysis (④, see section below for details).
 
-## Autocorrelation analysis of sarcomere periodicity
+#### Autocorrelation analysis of sarcomere periodicity
 
 Except for analysis reported in Figures 5D and 6D–G, autocorrelation analysis was performed using an automated procedure in Matlab (version 2019b) to detect periodicity in 1D titin intensity profiles (extracted from 1D ROIs, see previous section). The position and the prominence (amplitude) of the second correlation peak provides information about the spatial periodicity and the period regularity of the repetitive sarcomeric pattern (Figure 4D, panel ④).
 
@@ -257,14 +602,18 @@ For global autocorrelation analysis (Figure 4E–F’, Figure 5C–E), the ACF w
 
 Autocorrelation analysis reported in Figures 5D and 6D–G was performed in R using the acf() function from the ‘stats’ package on manually segmented 1D intensity profile of fixed titin and live ɑ-actinin-mKate2 signals at several time points matched by myofibril morphology. The prominence of the first ACF peak is automatically extracted from the resulting ACF profile (Figures 5E, 6E and G).
 
-## Quantifying and modelling recoils of laser ablated myofibers
+#### Quantifying and modelling recoils of laser ablated myofibers
 
 Pairs of post-ablation severed ends were tracked manually for a duration of 5 s from the point of ablation onwards, with the Manual Tracking plugin in FIJI (Fabrice P Cordelières, Institute Curie) and subsequently analysed in R with custom scripts (Dehapiot, 2022). Mean and standard deviation of distances between pairs of severed ends were plotted against time (Figure 7B, dots and shaded areas, respectively).
 
-Two types of models were fitted to each recoil time course in R: First, a linear model was fitted on recoils during the first second. The initial recoil velocity was extracted as the slope of the linear model (Figure 7B, dashed line and C). Second, a viscoelastic model was fitted using an asymptotic regression model from the drc package (Ritz et al., 2015) with the following equation:L(t)=Lmax−(Lmax−L0)⋅e−tτ
+Two types of models were fitted to each recoil time course in R: First, a linear model was fitted on recoils during the first second. The initial recoil velocity was extracted as the slope of the linear model (Figure 7B, dashed line and C). Second, a viscoelastic model was fitted using an asymptotic regression model from the drc package (Ritz et al., 2015) with the following equation:
+
+$$
+L(t)=L_{max}−(L_{max}−L_{0})⋅e^{−\frac{t}{\tau}}
+$$
 
 where the recoil distance L is a function of time t, Lmax is the maximum attainable L, L0 is L at time = 0, and τ (viscoelastic relaxation time) is inversely proportional to the relative rate of L increase while t increases (Figure 7B, solid curves and D). τ is defined by the ratio of the material viscosity to the Young’s elastic modulus.
 
-## Statistical analysis and data visualisation
+#### Statistical analysis and data visualisation
 
 Multiple pair-wise statistical tests in Figures 6—8 were performed using the paired.t.test() function in R. Normality of datasets were verified with the Shapiro test using the shaprio.test() function. Statistical significance was reported as p<0.05. With the exception to Figure 4D–F’ and Figure 6A, all line and box plots were generated in R with standard plotting functions. Violin plots in Figure 5 were generated with the ‘vioplot’ package (Adler and Kelly, 2021). Figure 4D–F’and Figure 6A were produced with Matlab, with Figure 4E’ and F’ and Figure 6A generated with the pseudo-colour plot (pcolor) function.

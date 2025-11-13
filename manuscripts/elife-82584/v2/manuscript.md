@@ -11,10 +11,10 @@
 
 ### Affiliations
 
-1. https://ror.org/04p491231 Department of Chemistry, Pennsylvania State University University Park United States
-2. https://ror.org/05dxps055 Division of Biology and Biological Engineering, California Institute of Technology Pasadena United States
-3. https://ror.org/04p491231 Department of Biochemistry and Molecular Biology, Pennsylvania State University University Park United States
-4. https://ror.org/04p491231 The Huck Institutes of the Life Sciences, Pennsylvania State University University Park United States
+1. Department of Chemistry, Pennsylvania State University University Park United States ([ROR:04p491231](https://ror.org/04p491231))
+2. Division of Biology and Biological Engineering, California Institute of Technology Pasadena United States ([ROR:05dxps055](https://ror.org/05dxps055))
+3. Department of Biochemistry and Molecular Biology, Pennsylvania State University University Park United States ([ROR:04p491231](https://ror.org/04p491231))
+4. The Huck Institutes of the Life Sciences, Pennsylvania State University University Park United States ([ROR:04p491231](https://ror.org/04p491231))
 
 † Corresponding author
 
@@ -30,7 +30,7 @@ SARS-CoV-2 is a member of the family Coronavirdae along with other human pathoge
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig1-v2.jpg)
 
-**Figure 1.:** (A) The Spike (S) protein trimer (PDB:6VSB) (protomers in dark blue, teal, and green) with receptor-binding domain (RBD), N-terminal domain (NTD), S1/S2 site, fusion peptide, 2P substitutions (985-986), additional 6P substitutions (817, 892, 899, 942), and glycans. (Image created in https://Biorender.com) (B) Sequence organization for SARS-CoV-2 S (NTD = N-terminal domain, RBD – receptor binding domain, SD1=subdomain 1, SD2=subdomain 2, FP = fusion peptide, HR1=heptad repeat 1, HR2=heptad repeat 2, T.A.=transmembrane domain, I.T.=intracellular domain). The brackets define the recombinant soluble S used in this study. Furin cleavage site (685) is indicated by arrowhead (C) Mutations in Alpha, Delta, and Omicron BA.1 S mapped onto the S structure. Mutations in the NTD, RBD, S1, and S2 domains are represented as blue, green, purple, and yellow dots, respectively, wherever a mutation can be visualized. (D) Mutations specific to Alpha, Delta, and Omicron BA.1 S variants.Figure 1—source data 1.
+**Figure 1.:** (A) The Spike (S) protein trimer (PDB:6VSB) (protomers in dark blue, teal, and green) with receptor-binding domain (RBD), N-terminal domain (NTD), S1/S2 site, fusion peptide, 2P substitutions (985-986), additional 6P substitutions (817, 892, 899, 942), and glycans. (Image created in https://Biorender.com) (B) Sequence organization for SARS-CoV-2 S (NTD = N-terminal domain, RBD – receptor binding domain, SD1=subdomain 1, SD2=subdomain 2, FP = fusion peptide, HR1=heptad repeat 1, HR2=heptad repeat 2, T.A.=transmembrane domain, I.T.=intracellular domain). The brackets define the recombinant soluble S used in this study. Furin cleavage site (685) is indicated by arrowhead (C) Mutations in Alpha, Delta, and Omicron BA.1 S mapped onto the S structure. Mutations in the NTD, RBD, S1, and S2 domains are represented as blue, green, purple, and yellow dots, respectively, wherever a mutation can be visualized. (D) Mutations specific to Alpha, Delta, and Omicron BA.1 S variants.
 
 S plays three critical roles in facilitating host cell entry: S must bind ACE2, be proteolytically processed, and promote membrane fusion. During the viral entry process, the S is processed by furin protease at the S1/S2 cleavage site either prior to or after S binding to ACE2 receptor. This enables secondary cleavage by a separate protease (commonly transmembrane serine protease 2 (TMPRSS2) or cathepsin) at the S2 site (Peacock et al., 2021; Shang et al., 2020; Vankadari, 2020), which leads to dissociation of S1 and release of the S2 subunit to drive membrane fusion and cellular entry. Domain-specific investigation of S and its variants have provided insights into the effects of mutations on functionalities in isolation. However, there is a need to address the composite impact of individual variants on S conformation. Altered conformations in mutant S from variants would impact interactions of S with ACE2 (Raghuvamsi et al., 2021) and downstream functions.
 
@@ -46,7 +46,7 @@ Comparative HDXMS analysis of recombinant WT, D614G, Alpha, Delta, and Omicron B
 
 ## Results
 
-## Equilibration at 37°C shifts the S ensemble toward prefusion conformation
+### Equilibration at 37°C shifts the S ensemble toward prefusion conformation
 
 Recombinant soluble S constructs have made them more accessible for structural and biophysical research by obviating the need to culture pathogenic SARS-CoV-2 viruses, which require extensive safety procedures and related infrastructure. Engineered S ectodomain constructs show increased expression yields through the ablation of furin protease cleavage site and enhancement of stability through proline substitutions (2P) (Amanat et al., 2021) and 6P (hexapro) (Hsieh et al., 2020). These engineered constructs also eliminated the need for detergent solubilization by excluding the transmembrane C-terminal segments that are embedded in the lipid bilayer in S assembled on intact SARS-CoV-2 particles (Barnes et al., 2020b).
 
@@ -58,41 +58,149 @@ The soluble S trimer constructs have been observed to show sensitivity to cold t
 
 To test the effects of temperature optimization on the S trimer ectodomain, we compared HDXMS on WT S (2P) treated with and without a 3 hr incubation at 37℃ after flash freezing and long-term storage at –80℃. 127 non-glycosylated pepsin fragment peptides provided a primary sequence coverage of 48.4%, and HDXMS was measured at time points (Dex = 1–10 min) (Figure 2—figure supplement 3). It should be noted that the pepsin fragmentation of 2P and 6P are not identical due to the differential Pro substitutions (Figure 2—figure supplement 1). A deuterium exchange heat map (% RFU) of WT S shown in Figure 2A shows higher relative exchange on the outer edges of the trimer compared to the intra-trimer core (Figure 2A). Multiple regions of S showed decreased exchange with the greatest magnitude decreases at the trimer interface (Figure 2B and F). Decreases were most prominent for peptides in the trimer stalk region of S (peptides 899–913, 988–998, 1013–1021) and other inter-protomer contacts (peptides 553–568 and 32–48) (Figure 2C–E, Figure 2—figure supplement 4). It should be noted deuterium exchange at certain peptides (for instance, 553–568 (Figure 2C) following 37℃ incubation (3 hr)) still showed spectral envelopes indicating the presence of more than one conformation.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig2-v2.jpg)
+
+**Figure 2.:** (A) Relative fractional uptake (Dex = 10 min) for unincubated WT S mapped onto an S trimer structure with three ‘down’ RBDs (PDB ID: 6VXX) (coverage of WT S constructs shown in Figure 2—figure supplements 1–2, differences in deuterium exchange for WT 2P and 6P constructs shown in Figure 2—figure supplement 3). Deuterium exchange heat map gradient of white (0%) -red (70%) as mapped on S structure (PDB ID: 6VXX). (B) Differences in deuterium exchange (Δ RFU) (Dex = 10 min) for WT S after a 3 hr incubation at 37℃ minus unincubated WT S were mapped onto the S structure (PDB ID: 6VXX). Shades of blue correspond to negative differences in deuterium exchange and shades of red correspond to a positive difference in deuterium exchange. (C–E) Stacked mass spectra for WT S peptides 553–568, 899–913, and 988–998 with undeuterated reference spectra, 1 min and 10 min exchange (left to right). For each peptide, the top row shows spectra for unincubated WT S and the bottom row shows spectra for WT S incubated for 3 hr at 37°C. Absolute intensities are indicated at the top right of each spectrum. (F) Differences in deuterium exchange (deuterons) mapped at peptide resolution from N to C terminus for WT S incubated for 3 hr at 37°C minus unincubated WT S are shown in difference plots for 1-, 2-, and 10 min exchange. Select peptides showing significant differences in exchange are annotated. Significance was determined by hybrid significance testing (p<0.01, Figure 2—figure supplement 4). Differences are tabulated in Figure 2—source data 1 with corresponding peptide numbers* shown on the x-axis of the difference plot.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Difference plot of WT 6P S minus WT 2P S for peptides N to C terminus. Differences for 1, 2, and 10 min exchange are shown in blue, orange, and black, respectively. The gray trace denotes standard errors of deuterium exchange for each peptide. (B) Coverage map of WT 2P S compared to 6P S using the WT 2P sequence showing 160 peptides spanning 53.1% of the S. The domain organization of S is indicated.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Volcano plots for 1 min (A), 2 min (B), and 10 min (C) exchange (Figure 2—source data 3). Significantly protected (blue) or deprotected (red) peptides were identified using a hybrid significance test and a p-value <0.01.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Coverage map of WT S incubated at 37℃ compared to unincubated WT S using the WT 2P sequence showing 127 peptides spanning 48.4% of the S. The domain organization of S is shown.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Volcano plots for 1 min (A), 2 min (B), and 10 min (C) exchange (Figure 2—source data 4). Significantly protected (blue) or deprotected (red) peptides were identified using a hybrid significance test and a p-value <0.01.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Peptide locus 899–913 (blue) mapped onto the WT S structure (PDB ID: 7TGX). (B) Peptide locus 988–998 (orange) mapped onto WT S structure (PDB ID: 7TGX). (C) Spectra from three overlapping peptides in the 899–913 locus of unincubated WT S. Reference state as well as spectra for 1 and 10 min exchange are shown from top to bottom for each peptide. (D) Spectra from three overlapping peptides in the 988–998 locus of unincubated WT S. Reference state as well as spectra for 1 and 10 min exchange are shown from top to bottom for each peptide. (E) Spectra from three overlapping peptides in the 899–913 locus of incubated WT S. Reference state as well as spectra for 1 and 10 min exchange (only the first replicate) are shown from top to bottom for each peptide. (F) Spectra from three overlapping peptides in the 988–998 locus of incubated WT S. Reference state as well as spectra for 1 and 10 min exchange (only the first replicate) are shown from top to bottom for each peptide. Absolute intensities are indicated at the top right of each spectrum.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (A) Effect of 0°C storage during automated HDXMS analysis on peptides 900–913 (top) and 988–998 (bottom). Spectra shown for 1800s exchange and three replicates are shown with a 4 hr storage at 0℃ storage between each replicate. (B) Spectra shown for 1800s exchange and peptides 900–913 (top) and 988–998 (bottom) for samples that were not stored at 0℃ between replicates. Absolute intensity shown in top right of each spectra.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** Effect of 0℃ storage in between technical replicates during automated HDXMS analysis on peptides 900–913 (top) and 988–998 (bottom) at 1800s of deuterium exchange for (A) D614G, (B) Alpha, (C) Omicron. Spectra shown for the first and third replicates with 8 hr storage at 0℃ between replicates. Data for delta were collected over multiple days and, therefore, did not undergo 0℃ storage in between replicates.
+
 Resolvable bimodal mass spectral distributions were evident for core helical peptides in loci 899–913 and 988–998 (Figure 2—figure supplement 5). Our results are consistent with localized trimer-protomer transitions at the inter-protomer interface shown previously (Costello et al., 2022). Furthermore, 37 ℃ treatment stabilized S trimers, whereas incubation at 4℃ prior to deuterium exchange (see methods) resulted in a time-dependent reversal of stabilization (t1/2 = 17 hr) as described (Costello et al., 2022). We correlate increased stability with decreased deuterium exchange. In the context of peptides at the trimer stalk interface that displays bimodal spectra in our experimental timescales, this decreased exchange can be attributed to ensemble shifts toward a lower exchanging prefusion conformation and stronger inter-protomer contacts. Overall, our results reveal an increase in propensity for the prefusion conformation.
 
 We also observed that replicate measurement of samples maintained close to 0℃ for 4 hr between replicates in an automated HDX workflow highlighted expected conformational reversibility. To further examine this effect, we eliminated 0℃ incubation of replicate samples by maintaining a constant 20℃ incubation of samples throughout the experiment (Figure 2—figure supplement 6). These results highlight temperature-sensitive reversible contacts at the edge of a trimer interface core or trimer stalk region. This region encompasses a long central helical segment (987–1031) and a helix flanking the heptad repeats (900-913) (Walls et al., 2020). Variants of S were resistant to cold denaturation at 0℃ (for 8 hr between first and third technical replicates) (Figure 2—figure supplement 7, Figure 3—figure supplements 4–5).
 
-## Global conformational changes conferred by the D614G substitution
+### Global conformational changes conferred by the D614G substitution
 
 One of the earliest conserved mutations identified in emergent variants was D614G (Pandey et al., 2021) which demonstrated increased viral fitness along with enhanced furin proteolytic cleavage (Gobeil et al., 2021). To measure the impact of this mutation upon S dynamics, we compared HDXMS of D614G S with WT S. Comparative HDXMS between D614G and WT S (2P constructs) was carried out using our previously established 37℃ temperature incubation (3 hr) treatment to compare equivalent trimer stabilized states. No peptides spanning the D614G mutation site were identified and, therefore, all peptides analyzed were common to both WT and D614G S. 120 non-glycosylated pepsin fragment peptides were identified covering 45.8% of the D614G sequence (Figure 3—figure supplement 1).
 
 Relative fractional uptake values for the D614G variant mapped onto an S trimer structure (PDB 6VXX) for Dex = 10 min showed a similar relative deuterium exchange profile to that for WT S. The central stalk region showed lower exchange relative to the peripheral surface accessible regions consistent with it forming the stable core of the trimer (Figure 3A). A difference map (D614G minus WT) (Dex = 10 min) (Figure 3B) revealed three non-contiguous clusters of peptides distal to the D614G site of mutation, showing the following differences in exchange: (i) Decreased exchange at the trimer interface and (ii) Increased exchange at NTD, and (iii) Increased exchange in heptad repeat segments.
 
-## Decreased exchange at the trimer stalk region in D614G
+![Figure 3.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig3-v2.jpg)
+
+**Figure 3.:** (A) Relative fractional uptake (Dex = 10 min) for D614G S mapped onto an S structure (PDB ID: 6VXX) (coverage maps shown in Figure 3—figure supplement 1, differences in deuterium exchange for D614G S incubated at 37℃ minus D614G S without incubation is shown in Figure 3—figure supplement 4). Deuterium exchange heat map gradient of white (0%) -red (70%) as mapped on S structure (PDB ID: 6VXX). (B) Differences in deuterium exchange (Δ RFU) (Dex = 10 min) for D614G S minus wild-type (WT) S were mapped onto an S structure (PDB ID: 6VXX). Shades of blue correspond to negative differences in deuterium exchange and shades of red correspond to a positive difference in deuterium exchange. (C–E) Stacked mass spectra for peptides 245–265, 900–913, and 988–998 with undeuterated reference spectra, 1 min and 10 min exchange (left to right). For each peptide, the top row contains spectra for WT S and the bottom row contains spectra for D614G S. Absolute intensities are indicated at the top right of each spectrum. (F) Differences in deuterium exchange (deuterons) mapped at peptide resolution from N to C terminus for D614G minus WT S are shown in difference plots for 1-, 2-, 10-, and 30 min exchange. Select peptides showing significant differences in exchange are annotated. Significance was determined by hybrid significance testing (p<0.01, Figure 3—figure supplement 3). Back exchange for D614G is estimated in Figure 3—figure supplement 6. Differences are tabulated in Figure 3—source data 1 with corresponding peptide numbers* shown on the x-axis of the difference plot.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Coverage map of D614G S compared to WT S using the WT 2P sequence showing 120 peptides spanning 45.8% of the S. The domain organization of S is indicated.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Volcano plots for 1 min (A), 2 min (B), 10 min (C), and 30 min (D) exchange (Figure 3—source data 3). Significantly protected (blue) or deprotected (red) peptides were identified using a hybrid significance test and a p-value <0.01.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) Peptide locus 899–913 (blue) mapped onto the WT S structure (PDB ID: 7TGX). (B) Peptide locus 988-998 (orange) mapped onto wild-type (WT) spike (S) protein structure (PDB ID: 7TGX). (C) Spectra from three overlapping peptides in the 899-913 locus of D614G S. Reference state as well as spectra for 1 and 10 min exchange are shown from top to bottom for each peptide. (D) Spectra from three overlapping peptides in the 988–998 locus of D614G S. Reference state as well as spectra for 1 and 10 min exchange are shown from top to bottom for each peptide. Absolute intensities are indicated at the top right of each spectrum.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Difference plot of D614G S incubated for 3 hr at 37℃ minus D614G S with no incubation for peptides N to C terminus. Differences for 1, 2, and 10 min exchange are shown in blue, orange, and black, respectively. The gray trace denotes standard errors of deuterium exchange for each peptide. Differences are tabulated in Figure 3—source data 2 with corresponding numbers shown on the x-axis of the difference plot.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** Coverage map of D614G S incubated at 37℃ compared to unincubated D614G S using the D614G 2P sequence showing 133 peptides spanning 48.1% of the spike (S) protein. The domain organization of S is indicated.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** Deuterium exchange in peptides after long deuteration (Dex = 24 h) is displayed as an RFU plot. The highest exchanging peptides (943-958 and 957-967) were used to calculate an average back exchange estimate of 20%.
+
+### Decreased exchange at the trimer stalk region in D614G
 
 Deuterium exchange difference plots showed a small subset of contiguous peptides from three regions within the trimer stalk region that showed the largest magnitude protection in deuterium exchange (Dex = 1 min) in the D614G variant (Figure 3F, Figure 3—figure supplement 2). These regions also showed decreased exchange upon a 3 hr incubation at 37℃. Representative peptides 899–913, 988–998 (Figure 3—figure supplement 3), and 1013–1021 are reporters for deuterium exchange at the stalk region (Figure 3—source data 1). A similar trend with the decreased exchange in this locus with 3 hr incubation at 37℃ was seen with D614G S as with WT S (Figure 3—figure supplements 4–5). Incubation for 3 hr at 37°C showed a smaller magnitude difference in deuterium exchange overall for D614G compared to WT S (Figure 3—figure supplements 4–5). Our results are consistent with the higher stability demonstrated previously for D614G (Gobeil et al., 2021; Yang et al., 2021) The enhanced stabilization of D614G S is likely a combination of conformational changes and population shifts in the ensemble behavior of S trimers in solution.
 
-## Increased exchange in NTD of D614G S
+### Increased exchange in NTD of D614G S
 
 A minor difference in D614G not found upon 37℃ stabilization of WT S was observed in the NTD peptides (peptides spanning regions 243–265 and 306–318) (Figure 3C, Figure 3—source data 1), each of which showed increased exchange relative to WT S. This revealed that the single point mutation at D614 to glycine, induced long-range allosteric effects that are propagated across the trimer and are associated with both stalk stabilization and increased S1 domain dynamics at the NTD. These were the only loci outside the heptad repeat and across the S1 and S2 domains to show significant differences as shown in a Volcano plot (p<0.01) (Figure 3—figure supplement 2) in deuterium exchange between WT and D614G at non-glycosylated and observed peptides. These effects provided a baseline for tracking conformational changes in S in emergent variants with improved fitness. The large conformational changes elicited by the D614G mutation underscore its importance as a highly conserved mutation across emergent variants (Aleem et al., 2022).
 
-## Alpha variant S showed increased exchange relative to D614G at both trimer stalk and NTD
+### Alpha variant S showed increased exchange relative to D614G at both trimer stalk and NTD
 
 We extended our analysis of D614G to emergent variants of concern that each carried this mutation together with multiple other mutations (Figure 1). We compared each subsequent variant with its epidemiological predecessor to track changes in deuterium exchange across the timeline of emergence. 45.9% coverage was obtained with 127 non-glycosylated pepsin fragment peptides common to D614G, Alpha, and WT S for a comparative HDXMS (Dex = 1–30 min) analysis of the Alpha S versus D614G S (Figure 4—figure supplement 1). Relative fractional uptake for the Alpha S was mapped onto a WT S structure (PDB 6VXX) (Figure 4A). Differences in deuterium uptake (Δ RFU) for the Alpha S minus D614G S are mapped onto PDB 6VXX in Figure 4B.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig4-v2.jpg)
+
+**Figure 4.:** (A) Relative fractional uptake (Dex = 10 min) for Alpha S mapped onto an spike (S) protein structure with three down RBDs (PDB ID: 6VXX) coverage map is shown in Figure 4—figure supplement 1). Deuterium exchange heat map (gradient of white (0%) -red (70%) as mapped on S structure (PDB ID: 6VXX). (B) Differences in deuterium exchange (Δ RFU) (Dex = 10 min) for Alpha S minus D614G S were mapped onto an S structure (PDB ID: 6VXX). Shades of blue correspond to negative differences in deuterium exchange and shades of red correspond to a positive difference in deuterium exchange. (C–E) Stacked mass spectra for peptides 92–103, 177–191, and 900–913 with the undeuterated mass spectral envelope as a reference, 1 min and 10 min exchange (left to right). For each peptide, the top row contains spectra for D614G S and the bottom row contains spectra for Alpha S. Absolute intensities are indicated at the top right of each spectrum. (F) Differences in deuterium exchange (deuterons) mapped at peptide resolution from N to C terminus for Alpha S minus D614G S are shown in difference plots for 1-, 2-, 10-, and 30 min exchange. Select peptides showing significant differences in exchange are annotated. Significance was determined by hybrid significance testing (p<0.01, Figure 4—figure supplement 2). Differences are tabulated in Figure 4—source data 1 with corresponding peptide numbers* shown on the x-axis of the difference plot.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Coverage map of Alpha S compared to D614G S using the D614G 2P sequence showing 127 peptides spanning 45.9% of the spike (S) protein. The domain organization of S is indicated.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Volcano plots for 1 min (A), 2 min (B), 10 min (C), and 30 min (D) exchange (Figure 4—source data 2). Significantly protected (blue) or deprotected (red) peptides were identified using a hybrid significance test and a p-value <0.01.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** (A) Peptide locus 899–913 (blue) mapped onto the wild-type (WT) spike (S) protein structure (PDB ID: 7TGX). (B) Peptide locus 988–998 (orange) mapped onto WT S structure (PDB ID: 7TGX). (C) Spectra from three overlapping peptides in the 899–913 locus of Alpha S. Reference state as well as spectra for 1 and 10 min exchange are shown from top to bottom for each peptide. (D) Spectra from three overlapping peptides in the 988–998 locus of Alpha S. Reference state as well as spectra for 1 and 10 min exchange are shown from top to bottom for each peptide. Absolute intensities are indicated at the top right of each spectrum.
 
 The Alpha S compared to D614G S showed lower magnitude differences in deuterium exchange than D614G S compared to WT S showed. In the trimer stalk region for the Alpha S, changes in deuterium exchange in Alpha relative to D614G S were lower in magnitude than in the comparison between D614G and WT S. No perceptible bimodal spectral envelopes indicative of conformational heterogeneity was seen in the trimer stalk region (Figure 4—figure supplement 3). This indicated that the bulk of the stabilization of the stalk region in the Alpha S was contributed by the conserved D614G mutation.
 
 Outside the stalk, changes in deuterium exchange were primarily observed at the NTD for common peptides (Figure 4F, Figure 4—figure supplement 2). Alpha S showed increased exchange at peptides spanning 92–103, 177–191, and 201–264 (Figure 4F). Lower magnitude decreases in exchange were observed in the S2 domain, specifically at peptides at the C-terminal end of the heptad repeat one in the 940–975 region (Δ Ex = 0.4–0.8 Da), as well as peptide 553–568 (Δ Ex = 0.6 Da, 30 min), which mediates inter-monomer contacts.
 
-## Delta S shows decreased exchange at both the trimer stalk and NTD
+### Delta S shows decreased exchange at both the trimer stalk and NTD
 
 Comparative HDXMS of the Delta S to the Alpha S generated 47.0% coverage was obtained with 123 non-glycosylated pepsin fragmentation peptides common to D614G and the Delta and Alpha S variants (Figure 5—figure supplement 1). RFU for Dex = 1 min in the Delta S and differences in exchange for Delta S minus Alpha S (Δ RFU) were mapped onto an S structure (PDB: 6VXX) (Figure 5A and B). No perceptible bimodal spectral envelopes indicative of conformational heterogeneity were seen in the trimer stalk region (Figure 5—figure supplement 3). Based on volcano plot analyses (p<0.01), insignificant differences in deuterium exchange were observed for other S2 peptides relative to Alpha S (Figure 5—figure supplement 2).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig5-v2.jpg)
+
+**Figure 5.:** (A) Relative fractional uptake (Dex = 10 min) for Delta S mapped onto a wild-type (WT) spike (S) protein structure with three down receptor-binding domain s (RBDs) (PDB ID: 6VXX) coverage maps shown in Figure 5—figure supplement 1). Deuterium exchange heat map (gradient of white (0%) -red (70%) as mapped on S structure (PDB ID: 6VXX). (B) Differences in deuterium exchange (ΔRFU) (Dex = 10 min) for Delta S minus Alpha S were mapped onto a WT S structure (PDB ID: 6VXX). Shades of blue correspond to negative differences in deuterium exchange and shades of red correspond to positive differences in deuterium exchange. (C–E) Stacked mass spectra for peptides 92–103, 177–191, and 900–913 with undeuterated reference spectra, 1 min and 10 min exchange (left to right). For each peptide, the top row contains spectra for Alpha S and the bottom row contains spectra for Delta S. Absolute intensities are indicated at the top right of each spectrum. (F) Differences in deuterium exchange (deuterons) mapped at peptide resolution from N to C terminus for Delta S minus Alpha S are shown in difference plots for 1-, 2-, 10-, and 30 min exchange. Select peptides showing significant differences in exchange are annotated. Significance was determined by hybrid significance testing (p<0.01, Figure 5—figure supplement 2). Differences are tabulated in Figure 5—source data 1 with corresponding peptide numbers* shown on the x-axis of the difference plot.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Coverage map of Delta S compared to Alpha S using the D614G 2P sequence showing 123 peptides spanning 47.0% of the spike (S) protein. The domain organization of S is indicated.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Volcano plots for 1 min (A), 2 min (B), 10 min (C), and 30 min (D) exchange (Figure 5—source data 2). Significantly protected (blue) or deprotected (red) peptides were identified using a hybrid significance test and a p-value <0.01.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Peptide locus 899–913 (blue) mapped onto the wild-type (WT) spike (S) protein structure (PDB ID: 7TGX). (B) Peptide locus 988–998 (orange) mapped onto WT S structure (PDB ID: 7TGX). (C) Spectra from three overlapping peptides in the 899–913 locus of Delta S. Reference state as well as spectra for 1 and 10 min exchange are shown from top to bottom for each peptide. (D) Spectra from three overlapping peptides in the 988–998 locus of Delta S. Reference state as well as spectra for 1 and 10 min exchange are shown from top to bottom for each peptide. Absolute intensities are indicated at the top right of each spectrum.
+
 Delta S showed decreased exchange relative to the Alpha S for most peptides with decreases primarily in the trimer stalk (Figure 5F, Figure 5—figure supplement 2), other S2 domain peptides, and the NTD (Figure 5C–E). Delta S showed decreased exchange for NTD peptides relative to Alpha S. Decreased exchange was most prominent at peptides spanning 92–103, 177–191, and 200–265. Additional decreases in exchange were observed at 306–317 (Δ Ex = 0.6 Da, 2 min) while the increased exchange was observed at the RBD peptide 407–420 (Δ Ex = 0.4 Da, 2 min). Again, the conserved D614G contributed to the bulk of the stabilization seen in Delta S.
 
-## Omicron BA.1 S retains low exchange at the trimer stalk while showing increased deuterium exchange at NTD peptides
+### Omicron BA.1 S retains low exchange at the trimer stalk while showing increased deuterium exchange at NTD peptides
 
 Finally, we compared Omicron BA.1 S to Delta S. 36.4% coverage was achieved with 95 non-glycosylated pepsin fragment peptides common to D614G S (Figure 6—figure supplement 1). RFU for Dex = 1 min in Omicron BA.1 S and differences in exchange for Omicron BA.1 S minus Delta S (Δ RFU) were mapped onto a WT S structure (PDB: 6VXX) (Figure 6A and B). It should be noted that the Omicron BA.1 S used for analysis was the 6P construct. This was necessitated by poor expression of the Omicron BA.1 S 2P construct. Based on our analysis of WT S, the 2P and 6 constructs showed no differences in HDXMS, without 37℃ incubation (Figure 2—figure supplement 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig6-v2.jpg)
+
+**Figure 6.:** (A) Relative fractional uptake (Dex = 10 min) for Omicron BA.1 S mapped onto a wild-type (WT) spike (S) structure with three down receptor-binding domains (RBDs) (PDB ID: 6VXX) coverage maps shown in Figure 6—figure supplement 1). Deuterium exchange heat map (gradient of white (0%) -red (70%) as mapped on WT S structure (PDB ID: 6VXX). (B) Differences in deuterium exchange (ΔRFU) (Dex = 10 min) for Omicron BA.1 S minus Delta S were mapped onto a WT S structure (PDB ID: 6VXX). Shades of blue correspond to negative differences in deuterium exchange and shades of red correspond to a positive difference in deuterium exchange. (C–E) Stacked mass spectra for peptides 92–103, 177–191, and 900–913 with undeuterated reference spectra, 1 min, and 10 min exchange (left to right). For each peptide, the top row contains spectra for Delta S and the bottom row contains spectra for Omicron BA.1 S. Absolute intensities are indicated at the top right of each spectrum. (F) Differences in deuterium exchange (deuterons) mapped at peptide resolution from N to C terminus for Omicron BA.1 S minus Delta S are shown in difference plots for 1-, 2-, 10-, and 30 min exchange. Select peptides showing significant differences in exchange are annotated. Significance was determined by hybrid significance testing (p<0.01, Figure 6—figure supplement 2). Differences are tabulated in Figure 6—source data 1 with corresponding peptide numbers* shown on the x-axis of the difference plot.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Coverage map of Omicron S compared to Delta S using the D614G 2P sequence showing 95 peptides spanning 36.4% of the spike (S) protein. The domain organization of S is indicated.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Volcano plots for 1 min (A), 2 min (B), 10 min (C), and 30 min (D) exchange (Figure 6—source data 2). Significantly protected (blue) or deprotected (red) peptides were identified using a hybrid significance test and a p-value <0.01.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Peptide locus 899–913 (blue) mapped onto the wild-type (WT) spike (S) structure (PDB ID: 7TGX). (B) Peptide locus 988–998 (orange) mapped onto WT S structure (PDB ID: 7TGX). (C) Spectra from three overlapping peptides in the 899–913 locus of Omicron BA.1 S. Reference state as well as spectra for 1 and 10 min exchange are shown from top to bottom for each peptide. (D) Spectra from three overlapping peptides in the 988–998 locus of Omicron BA.1 S. Reference state as well as spectra for 1 and 10 min exchange are shown from top to bottom for each peptide. Absolute intensities are indicated at the top right of each spectrum.
 
 The Omicron BA.1 S showed slightly decreased exchange at the trimer stalk with the increased exchange at other S2 domain peptides and increased exchange at the NTD (Figure 6C–F, Figure 6—figure supplement 2). No perceptible bimodal spectral envelopes indicative of conformational heterogeneity were seen in the trimer stalk region (Figure 6—figure supplement 3). Notably, the Omicron BA.1 S showed a decrease in the higher exchanging population for stalk peptides suggesting both an impact on inherent trimer stability and ensemble behavior. In S2 domain peptides 968–974 (Δ Ex = 0.9 Da, 2 min), 820–829 (Δ Ex = 0.7 Da, 2 min), and 750–756 (Δ Ex = 0.6 Da, 2 min), increased exchange was observed (Figure 6F).
 
@@ -102,7 +210,7 @@ In the NTD, significantly increased exchange was observed in Omicron BA.1 S rela
 
 We report two uncorrelated effects of mutations upon the conformational dynamics of variant S. The first major trend we observed was a stabilization of the trimer stalk region. This was followed by altered NTD and RBD dynamics that emerged in later variants. We noted a stabilizing effect of 37℃ temperature treatment on the stalk region of S, however, this treatment had no effect on NTD/RBD dynamics, indicating that these trends are not allosterically coupled.
 
-## Progressive stabilization of trimer stalk
+### Progressive stabilization of trimer stalk
 
 The first prominent trend observed in our analysis of S variants was the progressive stabilization of the S trimer. Using HDXMS, we were able to observe the ensemble behavior of the S trimer. WT S is sensitive to exposure to ~0–4℃ (Costello et al., 2022), and the ensemble behavior was a heterogeneous mixture of different prefusion conformations. This is explained by the observation that the sequences of three representative peptides examined in the stalk region adopt an amphipathic helical fold (Figure 7—figure supplement 1). The propensity to undergo cold denaturation can be attributed to the hydrophobic interactions at the stalk region that contribute to stability at the trimer interface (Costello et al., 2022; Edwards et al., 2021; Privalov, 1990). Incubation at 37℃ shifted the ensemble to favor the prefusion conformation.
 
@@ -110,9 +218,25 @@ Conformational heterogeneity has been observed in other S trimers from HIV-1, ME
 
 The first mutation to confer a large stabilization on the S trimer stalk was D614G. Comparing WT S to D614G S we observed substantial stabilization (up to 1.7 Da decreases in exchange). The decreased exchange is a consequence of a shift in the ensemble toward a higher proportion of prefusion conformation and, to a lesser degree, intrinsic stabilization of the prefusion conformation. Progressive stabilization was observed in subsequent variants (three representative peptides in Figure 7A and B) with the highest stabilization occurring in Delta S and Omicron S (Figure 7—figure supplements 2 and 3). After the initial increase in stabilization from D614G, increases in subsequent variants were lower in magnitude (Figure 7B). It is notable that a single point mutation (D614G) which is conserved across nearly all recent emergent SARS-CoV-2 variants of concern (Pandey et al., 2021), had a significantly larger impact on stability than other any other mutations studied. Comparative analysis of peptides encompassing mutations in variant S with D614G S further validated D614G as the most prominent contributor to enhanced trimer stabilization (Supplementary file 2). D614G is a lynchpin S mutation and HDXMS of S demonstrates some mutations have a disproportionate impact on protein conformation and stability.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig7-v2.jpg)
+
+**Figure 7.:** (A) Trimer stalk peptides 900–913 (blue), 990–998 (orange), and 1013–1021 (red) mapped onto a wild-type (WT) spike (S) protein structure (PDB ID: 7TGX) (helical wheel analysis of stalk peptides shown in Figure 7—figure supplement 1). (B) Protection in trimer stalk peptides in S variants compared to D614G S plotted as protection per amino acid versus date of emergence at Dex = 1 min. (C) NTD and RBD peptides showing increased dynamics in the timeline of variant emergence mapped onto a 1 RBD ‘up’ WT S structure (PDB ID: 7TGX). Peptides 177–191, 245–265, and 456–467 are shown in purple, cyan, and green, respectively. (D) Changes in deuterium uptake for NTD and receptor-binding domain (RBD) peptides in variant S compared to D614G S at Dex = 30 min are plotted as a change in deuterium uptake versus date of emergence (additional plots in Figure 7—figure supplement 2). Uptake plots for representative peptides in all variants are shown in Figure 7—figure supplement 3.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Hydrophobic interactions maintain trimer core at the stalk region (A) Structure of the spike (S) protein trimer highlighting stalk region in salmon (PDB ID: 6VXX). Selected hydrogen deuterium exchange mass spectrometry (HDXMS) analysis peptides at the top, middle and bottom of the trimer stalk are colored cyan. (B, C, D) Cross-sectional view of peptides in the S trimer stalk are colored cyan. Hydrophobic residues are colored salmon. (E, F, G) Helical wheel representation of peptides classifying residues based on polarity. Hydrophobic patches are shown by orange rectangle.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Protection for each peptide was determined by subtracting deuterium uptake for each variant from wild-type (WT) and normalizing to the number of exchangeable amino acids. Protection is plotted against months after the first identification of SARS-CoV-2 in Dec. 2019 and curves fit to a one phase association (Graphpad Prism 3.0, San Diego CA).
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/82584/elife-82584-fig7-figsupp3-v2.jpg)
+
+**Figure 7—figure supplement 3.:** Uptake plots showing incubated wild-type (WT) (red), D614G (purple), Alpha (blue), Delta (green), and Omicron BA.1 (orange) for peptides 899–913 (A), 988–998 (B), 1013–1021 (C), 177–191 (D), 456–467 (E).
+
 The D614G mutation breaks a salt bridge between D614 of one protomer and either T859 or K854 on a neighboring protomer. Since this salt bridge is proximal to the trimer stalk, this provides a possible explanation for the large increase in stalk stability. These observations are also consistent with increased S packing density and decreased premature shedding on viruses containing D614G S (Zhang et al., 2020). Increased stability would improve downstream function and viral fitness which is observed in competition assays (Plante et al., 2021). Since the subsequent variants displayed further increases in stability, it is likely that this effect is also associated with increased viral fitness (Liu et al., 2022b; Ulrich et al., 2022).
 
-## Altered NTD dynamics conferred by variant mutations
+### Altered NTD dynamics conferred by variant mutations
 
 In addition to increased stability, we observed variable dynamics at the NTD and RBD. While D614G resulted in the most prominent increase in stability, only limited effects were observed at the NTD. Comparing D614G S to Alpha S, however, revealed a notable increase in exchange at NTD peptides (Figure 7C). Delta S showed a decrease in NTD dynamics relative to Alpha S, but Omicron BA.1 S showed the highest overall NTD and RBD dynamics (Figure 7C and D).
 
@@ -124,21 +248,21 @@ In summary, our results localize the impacts of mutations on conformational dyna
 
 ## Materials and methods
 
-## Expression and purification of SARS-CoV-2 S
+### Expression and purification of SARS-CoV-2 S
 
 Expression and purification of SARS-CoV-2 S ectodomains were performed as previously described (Barnes et al., 2020a; Barnes et al., 2020b). SARS-CoV-2 S constructs were composed of residues 16–1206 of the early SARS-CoV-2 isolate (GenBank MN985325.1), Alpha variant (GISAID EPI_ISL_601443), Delta variant (GenBank QWK65230.1), or Omicron variant (BA.1) (GISAID EPI_ISL_9845731) with the following stabilizing mutations: 2P (Pallesen et al., 2017) or 6P (Hsieh et al., 2020), the furin cleavage site mutated to Ala, a C-terminal TEV protease site (GSG-RENLYFQG), foldon trimerization motif (GGGSG-YIPEAPRDGQAYVRKDGEWVLLSTFL), 8x-His tag (G-HHHHHHHH), and AviTag (GLNDIFEAQKIEWHE). All S constructs were expressed using the Expi293T transient transfections system (GIBCO). S trimers from clarified transfected cell supernatants were purified over HisTrap High Performance columns (Cytiva), followed by size-exclusion chromatography (SEC) using a Superose 6 increase 10 300 columns (Cytiva). Fractions corresponding to S trimers were collected and concentrated in 10% glycerol TBS (20 mM Tris, 150 mM NaCl, pH 8.0) then flash-frozen in liquid nitrogen and stored at –80℃. Downstream purification was completed within 12 hr of the transfected cell harvest to maximize the quality of trimeric, well-folded S trimers.
 
-## Bottom-up proteomics and glycan profiling
+### Bottom-up proteomics and glycan profiling
 
 Recombinant S variants were digested with trypsin overnight. Samples were separated by RP-HPLC using a Thermo Scientific EASY-nLC 1200 UPLC system connected to a Thermo Scientific PepMap C18 column, 15 cm × 75 µm over a 90 min 5–25%, 15 min from 40–95% gradient (A: water, 0.1% formic acid; B: 80% acetonitrile, 0.1% formic acid) at 300 nL/min flow rate. The samples were analyzed on the Thermo Scientific Orbitrap Eclipse Tribrid mass spectrometer using the DDA FT HCD MS2 method. FT MS1 was acquired at resolution settings of 120 K at m/z 200 and FTMS2 at the resolution of 30 K at m/z 200.
 
 The Thermo Scientific Proteome Discoverer 2.5 software with the Byonic search node (Protein Metrics) was used for glycopeptide data analysis and glycoform quantification. Data were searched against a database containing the Uniprot/SwissProt entries of the model proteins with/out common contaminants and 57 human plasma glycans with a 1% FDR criteria for protein spectral matches. The peptide spectra were also manually validated to confirm the identification of glycosylation sites.
 
-## Deuterium exchange
+### Deuterium exchange
 
 Labeling buffer was prepared by diluting 20 X PBS in H2O in D2O (99.9%). 3 μL of the sample were added to 57 μL of labeling buffer for a final labeling concentration of 90.16%. Deuterium labeling was carried out for 1, 2, 10, 30, and 100 min at 20°C using a PAL-RTC (Leap) autosampler. During automated HDXMS experiments protein samples were stored at 0°C and stability was assessed by staggering technical replicates. This allowed us to evaluate the suitability of automated HDXMS workflows for evaluating S. It should be noted that WT S experiments were conducted without 0°C storage due to observed variability during automated runs and Delta S was collected on two separate days eliminating 0°C storage. After labeling, equivalent volumes of labeling reaction and prechilled quench solution (1.5 M GdnHCl, 0.25 M TCEP) was added to bring the reaction to pH 2.5. Reaction conditions are summarized in Supplementary file 3.
 
-## Mass spectrometry and peptide identification
+### Mass spectrometry and peptide identification
 
 Approximately 8–10 pmol of the sample were loaded onto a BEH pepsin column (2.1 × 30 mm) (Waters, Milford, MA) in 0.1% formic acid at 75 μL/min. Proteolyzed peptides were trapped in a C18 trap column (ACQUITY BEH C18 VanGuard Pre-column, 1.7 µM, Waters, Milford, MA). Peptides were eluted in an acetonitrile gradient (8–40%) in 0.1% formic acid on a reverse phase C18 column (AQUITY UPLC BEH C18 Column, Waters, Milford, MA) at 40 μL/min. All fluidics were controlled by nanoACQUITY Binary Solvent Manager (Waters, Milford, MA). Electrospray ionization mode was utilized, and ionized peptides were sprayed onto an SYNAPT XS mass spectrometer (Waters, Milford, MA) acquired in HDMSE Mode. Ion mobility settings of 600 m/s wave velocity and 197 m/s, transfer wave velocity were used with collision energies of 4 and 2 V were used for trap and transfer, respectively. High collision energy was ramped from 20 to 45 V while a 25 V cone voltage was used to obtain mass spectra ranging from 50 to 2000 Da (10 min) in positive ion mode. A flow rate of 5 µL/min was used to inject 100 fmol/μL of [Glu1]-fibrinopeptide B ([Glu1]-Fib) as lockspray reference mass.
 
@@ -148,6 +272,6 @@ Deuterium exchange was quantitated using DynamX v3.0 (Waters, Milford, MA) with 
 
 In the second step, the workflow was repeated to identify peptides unique to S variants. Pepsin fragment peptides from each variant S were identified from a database containing the amino acid sequence of the corresponding variant S. Deuterium exchange in these peptides was analyzed using DynamX 3.0 with identical parameters described above.
 
-## Hydrogen deuterium exchange analysis
+### Hydrogen deuterium exchange analysis
 
 The average number of deuterons exchanged in each peptide was calculated by subtracting the centroid mass of the undeuterated reference spectra from each deuterated spectra. Peptides were independently analyzed for quality across technical replicates. Relative deuterium exchange and difference plots were generated by DynamX v3.0. The data for the mass spectra were acquired from DynamX v3.0 and plotted in MATLAB 2022a, The MathWorks Inc, Natick, MA, USA. Relative deuterium exchange plots are reported as RFU which is the ratio of exchanged deuterons to possible exchange deuterons. Back exchange estimates were determined by RFU values from a 24 hr labeling experiment and are shown in Figure 3—figure supplement 6. Deuterons (Lau et al., 2021) was used to generate the hybrid volcano plots using hybrid significance testing (p<0.01) (Hageman and Weis, 2019). The mass spectrometry proteomics data will be deposited to the ProteomeXchange Consortium via the PRIDE partner repository.

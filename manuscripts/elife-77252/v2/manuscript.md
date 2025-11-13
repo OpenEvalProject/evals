@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02yjyfs84 Max Planck Research Group Neural Information Flow, Max Planck Institute for Neurobiology of Behavior – caesar Bonn Germany
-2. https://ror.org/02crff812 Institute of Medical Genetics, University of Zurich Zurich Switzerland
+1. Max Planck Research Group Neural Information Flow, Max Planck Institute for Neurobiology of Behavior – caesar Bonn Germany ([ROR:02yjyfs84](https://ror.org/02yjyfs84))
+2. Institute of Medical Genetics, University of Zurich Zurich Switzerland ([ROR:02crff812](https://ror.org/02crff812))
 
 † Corresponding author
 
@@ -29,11 +29,112 @@ Because of the transparent body of C. elegans, the pharynx can be directly obser
 
 Existing techniques to measure feeding fall broadly into two categories. The first focuses on indirect measures of population food intake, and the second detects each pumping contraction (Table 1). Indirect food intake measures rely either on labeling the food intake of the worm, for example using bioluminescent bacteria (Ding et al., 2020), fluorescent bacteria (You et al., 2008; Andersen et al., 2014), or fluorescent beads (Fang-Yen et al., 2009; Kiyama et al., 2020), or by measuring the remaining food concentration over time in large liquid cultures of worms (Gomez-Amaro et al., 2020). However, liquid culture neither allows direct measure of pumping activity nor of feeding related behavior such as locomotion toward food. Resolving single pump information can be achieved by combining bright-field microscopy with live worm tracking to remove center of mass motion and enable imaging of the grinder (Li et al., 2012; Cermak et al., 2020; Zou et al., 2018), or alternatively by constraining animals in microfluidics. In tracking and constrained configurations, one can read out pumps by directly following the grinder motion in the pharynx (Lee et al., 2017; Scholz et al., 2016). A complementary technique relies on recording electropharyngeograms that detect the signature of muscular contractions in a small population of constrained animals without requiring a tracking microscope (Lockery et al., 2012). Despite these numerous approaches, what is lacking is a method that allows time-resolved pumping detection in large populations of unrestrained crawling animals.
 
+**Table 1.**
+ Comparison of methods for measuring pumping.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Technique</th>
+      <th>Single pump</th>
+      <th>Single worm</th>
+      <th>Animals/ setup</th>
+      <th>Method</th>
+      <th>Label</th>
+      <th>Constrained</th>
+      <th>Source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bioluminescent bacteria</td>
+      <td>No</td>
+      <td>No</td>
+      <td>100–1000</td>
+      <td>Microscopy</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Ding et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Luciferase expressing worms</td>
+      <td>No</td>
+      <td>Yes</td>
+      <td>100</td>
+      <td>Microscopy</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>Rodríguez-Palero et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Optical density</td>
+      <td>No</td>
+      <td>No</td>
+      <td>100–1000</td>
+      <td>Absorption</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Gomez-Amaro et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Tracking microscope</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>Microscopy</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Li et al., 2012; Cermak et al., 2020; Zou et al., 2018</td>
+    </tr>
+    <tr>
+      <td>pWarp</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>4</td>
+      <td>Microscopy</td>
+      <td>No</td>
+      <td>microfluidic</td>
+      <td>Scholz et al., 2016</td>
+    </tr>
+    <tr>
+      <td>NemaChip</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>8</td>
+      <td>Electrophysiology / EPG</td>
+      <td>No</td>
+      <td>microfluidic</td>
+      <td>Lockery et al., 2012</td>
+    </tr>
+    <tr>
+      <td>Manual counting</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td>Microscopy</td>
+      <td>No</td>
+      <td>No</td>
+      <td>Song and Avery, 2012; Dallière et al., 2016; Bhatla et al., 2015 and many others</td>
+    </tr>
+    <tr>
+      <td>PharaGlow</td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>1–50</td>
+      <td>Microscopy</td>
+      <td>Yes</td>
+      <td>No</td>
+      <td>This work</td>
+    </tr>
+  </tbody>
+</table>
+
 We wanted to fill the gap to allow imaging of pumping activity at high-throughput with single-pump temporal resolution in unrestrained animals, while using only optical setups already available in most C. elegans laboratories. Our method is based on epi-fluorescence microscopy of the pharyngeal muscle with a cost effective, large chip camera that enables imaging of many worms as they explore freely on an agarose plate. We determined that the method is relatively insensitive to the optical instrument used, and does not require high-end or custom optics. The accompanying analysis software (PharaGlow) is written in Python and can be accessed using beginner friendly semi-graphical jupyter notebooks. PharaGlow is available under a permissive open source license. We demonstrate the usability and throughput of the method for multiple use cases, including those not previously possible in restrained animals, such as repeated imaging of a population of developing animals and investigating the coupling of locomotion and pumping rates. Finally, we demonstrate the utility of our approach by imaging a pair of mating animals over more than 1 hr.
 
 ## Results
 
-## Detection of pumping rates in crawling animals
+### Detection of pumping rates in crawling animals
 
 To enable automated, high-throughput detection of pumping in animals crawling on culture plates, we combined epi-fluorescence microscopy with a large area scan camera (Figure 1A). Typically, pumping is detected by manual or automated counting using high magnification to resolve the motion of the grinder in the terminal bulb (Dallière et al., 2016; Bhatla et al., 2015). Using animals expressing a fluorescent protein in the pharyngeal muscle allowed us to image at a lower magnification compared to the resolution required for bright-field imaging of the grinder. Specifically, we image animals expressing YFP under the pharyngeal myosin promoter myo-2p (gnaIs1 [myo-2p::yfp]), which is present in all pharyngeal muscles except pm1 and pm2 (Okkema et al., 1993; Okkema and Fire, 1994).
 
@@ -43,11 +144,45 @@ To enable automated, high-throughput detection of pumping in animals crawling on
 
 By using a low magnification of 1x, we could image a field of view of 7 by 5 mm, corresponding to multiple body lengths of the worms (Figure 1A). We simultaneously imaged tens of animals (typically 30–50) as they crawled and analyzed their behavior off-line using our custom analysis software (Figure 1B; Video 1). The analysis pipeline combines a particle-tracking workflow with custom shape segmentation of the fluorescent pharynx (Figure 1C). After detecting and tracking the pharynges in the field of view, the contour and centerlines are fitted. The centerline and width are used to virtually straighten the animal (Figure 1D). We then extract a pump metric from the straightened images based on the standard deviation of the fluorescence along the dorso-ventral axis (DV-axis) of the animal, which reflects pumping events (Figure 1E and F). By averaging images during these putative detected pumping events, we determined that this metric is sensitive to the opening of the pharyngeal lumen and contraction of the terminal bulb and thus indeed corresponds to pumping events (Figure 1G).
 
+![Video 1.](https://cdn.elifesciences.org/articles/77252/elife-77252-video1.mp4.jpg)
+
 Although the low magnification (1x) we use to image the animals allows us to increase the number of observed animals, this could compromise pumping detection. To determine how accurate our software detects pumping in these imaging conditions, we compared the results of our automated method and a manual annotator. Since manual annotation of pumping rates is still widely used, but practiced at higher magnifications, we simultaneously imaged worms at a magnification of 10x (pixel size 240 nm/px) in bright field and fluorescence (Figure 1H; Video 2). A human expert counted pumps in the videos acquired using the bright-field channel. We then ran our automated analysis on the video acquired on the fluorescence channel, but downscaled to 1x (pixel size 2.4 µm/px). We found that PharaGlow was able to accurately detect pumping in these videos, and the resulting rate and counts were in agreement with the human expert. Both methods result in a comparable mean pumping rate for the animals counted (Figure 1I), with a deviation between the human and automated results of less than 2 pumps per 10 s (Figure 1J). To score a typical experiment of 30 animals over 5 min of recording time, the human experimenter would need, at best, to count for at least 150 min of data (real time). This time is regularly longer, as accurate counting often requires scrutinizing the recordings in slow motion or visualizing the same part of the recording several times. PharaGlow is therefore able to automatically and reliably detect pumping in low-resolution, large field of view images, enhancing the number of animals which can be scored simultaneously.
 
-## Developmental pumping
+![Video 2.](https://cdn.elifesciences.org/articles/77252/elife-77252-video2.mp4.jpg)
+
+**Video 2.:** Downscaled fluorescent images (×1 magnification; bottom-left) and resulting pumping events detected by PharaGlow (bottom-right).
+
+### Developmental pumping
 
 Having developed this new high-throughput method which enables accurate measurements of many animals simultaneously, we wondered how pumping changes over the course of development, where the animal changes its size and its energy needs. During development, the pharynx grows with the body (Knight et al., 2002), but the ratio between pharynx and body length decreases from L1 stage to adulthood (Avery and Shtonda, 2003). To investigate how pumping rates change during development, we imaged cohorts of synchronized worms consecutively over three days in the middle of each of the four larval stages and as young adults (YA). Animals were imaged directly on their culturing plates while moving freely in the field of view (Figure 2A). We accounted for the growing pharynx by adapting the magnification of our imaging system to achieve approximately the same spatial sampling of the pharynx at each stage (Figure 2B). Under these conditions, we were able to sample at least 150 trajectories per developmental stage. Altogether, more than 1000 animal tracks remained after filtering animals that spend less than one minute in the field of view. Filtering leads to over-proportionally reducing young adult trajectories since these animals traverse the field of view quickly despite the spatially proportional scaling. Nevertheless, we obtain large samples of animals due to new animals continually entering, with a total measured time of four animal-hours for the adult stage, and more than 10 animal-hours for the L1 stage. The average track duration is well over one minute with 1.9 ± 0.9 min (mean ±s.d.) for L1 and 1.6 ± 0.6 min for adults (Figure 2—figure supplement 1). These data represent up to two orders of magnitude more single worm pumping data than is obtainable with conventional methods (see Table 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/77252/elife-77252-fig2-v2.jpg)
+
+**Figure 2.:** (A) Trajectories of 10 randomly selected animals at different larval stages (L1–L4) and young adults (YA). All scale bars correspond to 1 mm (top). (B) Size of the larvae and YA at the same scale (outlines, top) compared to the equal sizing achieved by adjusting the magnification (bottom). The image corresponds to the red track from (A). (C–E) Time-averaged mean velocity (C), (D) mean pumping rate, and reversals (E) for all animals. The boxplots follow Tukey’s rule where the middle line indicates the median, the box denotes the first and third quartiles, and the whiskers show the 1.5 interquartile range above and below the box. The number of tracklets per developmental stage are shown in (E), with N=6 independent replicates per condition. (F) Relative change in the animal’s area compared to the mean area of the YA stage (top) and relative change in velocity (blue) and pumping rate (orange) across development compared to the mean of the YA stage (bottom). Error bars denote s.d. (G) Pumping rate distribution for all larval stages as calculated by counting pumping events in a sliding window of width = 10 s and combining data from all animals of the same stage. The YA pumping rate distribution is underlaid in gray. (H) Pumping frequency distribution of individual worms for different developmental stages and YA.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/77252/elife-77252-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Mean track duration per experiment across larval stages (N=6 plates per larval stage). Error bars denote s.d. between plates. (B) Correlation between the number of animals initially in the field of view, and the resulting number of tracks (N=6 plates per larval stage). The dashed line denotes unity. Error bars denote s.d. between plates.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/77252/elife-77252-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Area of the pharynx as measured by thresholding and segmentation. Sample sizes are given in panel (B). (B) Reversal rates throughout development are detected by comparing the nose-tip motion to the center of mass motion. Rates were rescaled to reversals per 10 min to allow comparison to other studies. Error bars denote s.e.m. Significant differences between stages are indicated as ** (p<0.01) and *** (p<0.001), and exact p-values are reported in each panel for all p-values <0.01 (Welch’s unequal variance two-tailed t-test). Number of animal tracks is shown in parenthesis.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/77252/elife-77252-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Mean number of animals in the field of view during the recording. Shaded: average across plates (N=6 plates per condition), line: smoothed (averaging window = 10 s).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/77252/elife-77252-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Pharyngeal area of the detected animals for the group of animals that were imaged once (dark blue) or multiple times (light blue). (B) Velocity, (C) reversal rate and (D) pumping rate for the same two cohorts. p-values are reported at the bottom for all p-values <0.01. (Welch’s unequal variance two-tailed t-test). The sample size of each group was L1 (191/144), L2 (132/153), L3 (87/114), L4 (112/59), and YA (38/142), for Nmultiple,/NSingle, respectively. Significant p-values are explicitly reported in the figure, all other pairwise comparisons were not significant (Welch’s unequal variance two-tailed t-test).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/77252/elife-77252-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Animals expressing either YFP (blue) or mCherry (red) were imaged on food and analyzed using PharaGlow. The pumping rates are not significantly different (Welch’s unequal variance two-tailed t-test).
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/77252/elife-77252-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (A) Manually counted pumping events for 10 worms per stage (color coded) from two independent experts compared to the automated tracking. Counts of each expert are shown as a circle or triangle. The dashed line indicates unity; the dotted lines denote a 0.5 Hz difference in the resulting pumping rate. (B) The mean pumping rates per developmental stage from the experts and automated method (N=10 animal tracks per stage). The error bars are s.d. between animal tracks. The two expert counts were averaged to obtain one mean count per animal. The dashed line indicates unity; the dotted lines denote a 0.5 Hz rate difference.
 
 We find that on-food pumping rates increase slightly over the course of the larval stages, but much less dramatically than the velocity increases over development, despite the substantial growth of both the body and the pharyngeal muscles (Figure 2C–F). Owing to time resolution and the large number of individual worms that can be analyzed using PharaGlow, it is possible to generate smooth probability density functions of pumping across the different larval stages (Figure 2G). A small fraction of animals did not show pumping during our recording (Figure 2H, 5 animal tracks in L1 with <0.5 Hz, <1% for all other conditions). We wondered if we had captured animals during lethargus, the period of sleep preceding each molt despite choosing the imaging time points in the middle of each larval stage and working with an age synchronized population. However, lethargus is incompatible with the observed velocities of these animals. Alternatively, it is possible that these animals transiently show satiety quiescence, which might be absent under these conditions in the larger YA population (You et al., 2008; Gallagher et al., 2013; Davis et al., 2018).
 
@@ -57,25 +192,59 @@ We investigated whether extended exposure to light might affect worm behaviors b
 
 Overall, we find that our imaging approach can be adapted to larvae by increasing the magnification, and our analysis pipeline is capable of handling data from hundreds of animals. While there are small deviations between the automated detection and human counted data (Figure 2—figure supplement 6), we accurately detect both mean and individual rates for all stages, with a median of error between experts and our method of less than 10%. Over the course of three days and five imaging sessions, more than 1000 animals were tracked, significantly more than can be achieved with comparable methods (Table 1).
 
-## Food intake is modulated by starvation
+### Food intake is modulated by starvation
 
 Next, we wanted to determine if our method was robust to changes in locomotion and plate context, allowing a wider range of applications such as investigating starvation or different pharmacological treatments without the presence of a bacterial food source. Off-food locomotion is faster (Dillon et al., 2016; Gray et al., 2005), and pumping irregular (Lee et al., 2017; Scholz et al., 2016), which could potentially be more challenging for detecting pumping. Prior work showed that pumping rates off food are lower, but increase over the course of starvation and that this increase is mediated by a cholinergic pathway (You et al., 2006). We track animals either on-, or off food over an increasing amount of starvation time and extract behavioral dynamics (Figure 3A–D). We confirm that pumping is dependent on the starvation duration, with a reduction in pumping rate over the course of three hours (Figure 3B, D). Beyond the first time point, our data are consistent with prior data (You et al., 2006), showing a sustained rate of around 2–2.5 Hz (Figure 3E). Previously, rates measured immediately after transferring worms off food (<30 min of starvation) were very low, possibly due to a lasting pumping suppression after harsh touch (Keane and Avery, 2003), which we avoid by washing worms off plates instead of picking (see Methods).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/77252/elife-77252-fig3-v2.jpg)
+
+**Figure 3.:** (A) Example trajectories of worms after 30 min starvation (blue) or 30 min continuously on food (red), N=10. (B) The pumping rate distributions for the conditions in (A) for all animals (Nstarved = 33, NonFood = 111). (C) Same as (A) but for animals starved, or kept on food for 210 min. (D) The pumping rate distributions corresponding to (C; Nstarved = 33, NonFood = 85). (E) Velocity, reversal rate, and pumping rate for animals starved and on-food controls. The sample size is given in the bottom panel. *** indicates P<0.001 (Welch’s unequal variance two-tailed t-test). The sample size is given in parentheses in the bottom panel. (F) Joint distribution of velocity and pumping rate for increasing starvation times. The cross indicates the mean (red) and standard deviation (white). The density is normalized by sample number. (G) Distribution of instantaneous pumping rates for each animal (tracklet). Rows are sorted by the mean pumping rate to aid visualization.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/77252/elife-77252-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Correlation between velocity and pumping rate for increasing times on food. The cross indicates the mean (red) and standard deviation (white). The density is normalized by sample number.
 
 As we are able to measure pumping and locomotion behaviors simultaneously, we wanted to see if we could observe co-regulation of locomotion and feeding off-food. When taken off of food, C. elegans displays a restricted area search (local area search) which is characterized by frequent turns and reversals and an elevated speed (Gray et al., 2005; Hills et al., 2004; Sawin et al., 2000; Calhoun et al., 2014). This behavior lasts between 30 and 60 min, after which animals switch to longer runs that cover more area, which is a strategy for dispersal (Hills et al., 2004; Wakabayashi et al., 2004). Interestingly, for starved worms at 30 and 90 min, the joint distribution of pumping rates and velocities show distinct sub-populations (Figure 3F). For longer starvation durations, the population becomes homogeneous with a well-defined mean pumping rate and speed. For the shortest starvation time point we sampled, we see a mixed population with distinct speeds and pumping rates, possibly reflecting some animals that are still performing a local search and others that are not. This is consistent with the fact that these distinct populations are not apparent in worm populations that stay on food (Figure 3—figure supplement 1).
 
 To further investigate the origin of the two sub-populations observed at short starvation time, we analyzed the pumping rate distributions of individual animals (Figure 3G). Taken together, the data suggests that at 30 min starvation, a fraction of the animals show low speeds and pumping rates, and the remainder are in a high-speed, high pumping state (Figure 3F, G). This suggests two possible interpretations. First, it is possible that, with increasing starvation time, a subset of animals transitions to lower pumping rates until all animals show a similar pumping rate distribution with an average of ~2 Hz. Alternatively, the two sub-populations could result from transient behavioral changes among animals to high pumping rates. These transitions would occur less frequently with increasing starvation time. To discern among these two possibilities would require measuring single animals over longer periods of time. Further studies are required to reveal these population dynamics upon starvation.
 
-## Long-term recording of mating animals
+### Long-term recording of mating animals
 
 Having established that PharaGlow can robustly detect locomotion and pumping behaviors across a range of conditions, we wanted to test if it is a suitable tool for long-term recordings. As a proof of principle, we imaged the interactions of a male and a hermaphrodite over the course of 74 min at 30 fps (Figure 4A and B).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/77252/elife-77252-fig4-v2.jpg)
+
+**Figure 4.:** (A) Composite image of the two animals in the arena while exposed to bright-field illumination and exciting fluorescence of YFP using green light. On the right, the hermaphrodite, on the left the male identifiable by its smaller size and its tail with sensory rays and fan. (B) Trajectories obtained from the full recording of the male (blue) and hermaphrodite (red). (C) Example mating events. (D) Behavioral measures for 1 hr of data. The distance between the animals, the reversal events, pumping rate, and velocity are shown for the hermaphrodite and the male. The male shows an extended period of quiescence (orange arrow). (E) Behavioral measures for 10 min of data and (F) 100 s of data corresponding to the mating event 1 in panel (C). (G) Velocity distribution and (H) pumping rate distribution for the male and hermaphrodite.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/77252/elife-77252-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Bleaching of YFP fluorescence during continuous acquisition at 30 FPS (×1 magnification). Stroboscopic illumination was used (5ms light pulses; see Methods). Average of N=11 worms. Individual worm bleaching curves were normalized to unity at t=0. The fit to an exponential decay function yields a decay rate of 410±47 min (95% confidence bounds). Error bars indicate sem across worms.
+
 As the resulting data volume would have been prohibitive, we implemented a live segmentation method that allowed us to only store the animals coordinates and the region of interest around each animal (Videos 3 and 4; Methods). We then calculated the distance between the animals, allowing us to identify mating events (Figure 4C and D). We find that the animals frequently interact over the course of 1 h with multiple close encounters (Figure 4D). The male also showed a long period of quiescence in both locomotion and pumping rate. Overall, the animals are closer at the beginning of the recording, but later spend time at larger distances (Figure 4E, left and right panels). Despite the long imaging duration, we still observe pumping at the end of the recording, indicating that we have sufficient signal remaining to detect pumping events. We confirm this observation by calculating photo-bleaching curves. We find that the decay time of the signal is 410±47 min (Figure 4—figure supplement 1), which indicates that it is possible to do continuous imaging over multiple hours. In this case, the recording was limited by the male escaping the enclosure, rather than loss of signal.
+
+![Video 3.](https://cdn.elifesciences.org/articles/77252/elife-77252-video3.mp4.jpg)
+
+![Video 4.](https://cdn.elifesciences.org/articles/77252/elife-77252-video4.mp4.jpg)
+
+**Video 4.:** The program stores only the segmented worms from individual images and their xyzt coordinates to reduce storage requirements by several orders of magnitude thus allowing uninterrupted recordings for hours at 30 FPS.
 
 Having this multi-scale data allows observing both large-scale structure and smaller events in the data. We further examined the mating event displayed in Figure 4C. During the encounter, the male shows a larger velocity and performs many long reversals when the animals are close, as is typical for a mating attempt. It is also interesting to note that pumping does not completely cease during the attempt (Figure 4F). Despite being in the same arena, and covering most of the enclosure during the recording (Figure 4B), the velocity and pumping distributions differ strongly between the two animals (Figure 4G and H). While the distributions of the male are dominated by the long quiescence period, the hermaphrodite overall shows a bi-modal rate distribution with some infrequent pumping at 4 Hz. PharaGlow is therefore able to track behavior over more than an hour, and keep the identity of animals given that these are constrained to the field of view.
 
-## Feeding mutants
+### Feeding mutants
 
 A desired capability for a high-throughput feeding tool is the ability to faithfully detect pumping rates in mutant animals which might have different pharyngeal contraction patterns and body motion, potentially increasing the difficulty of detecting pumping events. To determine if PharaGlow could faithfully detect pumping and locomotion in mutant animals, we wanted to assay a range of feeding and locomotion phenotypes. We therefore selected mutants with reported constitutively high (unc-31) or reduced (eat-18) pumping rates and different locomotory patterns (Raizen et al., 1995; McKay et al., 2004; Avery et al., 1993). UNC-31 is involved in dense-core vesicle release, and unc-31 mutant animals display reduced, uncoordinated locomotion on food (Figure 5A). We confirm that unc-31(e928) and unc-31(n1304) animals pump at rates comparable to wildtype. However, we see a bimodal distribution of rates with a fraction of animals showing markedly lower rates (Figure 5B). By looking at the individual animals' pumping rates, we find that unc-31 animals show long pauses in pumping, unlike wt animals (Figure 5F).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/77252/elife-77252-fig5-v2.jpg)
+
+**Figure 5.:** (A) Example trajectories of tracked animals (N=20, except N=18 for eat-18(ad820)). (B) Velocity, reversal rate and pumping rate for all genotypes. The sample size is given in parentheses in the bottom panel. (C) Mean and standard deviation of the pharyngeal areas relative to wt. (D) Pumping metric for a representative sample animal per genotype. Arrows in the eat-18(ad820) trace denote slow contractions. (E) Average peak shape of the pumping signal for wt (blue) and eat-18(ad820) (orange). The shaded area denotes s.d. (F) Pumping rate distributions. The wt pumping rate distribution is underlaid in dark blue. (G) Heatmap of the pumping rates for animals recorded over 2 h. (H) Heatmap thresholded to determine ‘fast pumping’ (defined as pumping rate >2.5 Hz) and ‘slow’ states. (I) Fraction of time spent in fast pumping of each animal and (J) the number of state transitions (slow to fast and fast to slow) for each animal in (H). Significant differences between a mutant and wt are indicated as * (p<0.05), *** (p<0.001) and **** (p<0.0001). Welch’s unequal variance two-tailed t-test was for the large sample size measurements (B, C). For (I–J) significance differences were assessed with the Mann-Whitney-U test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/77252/elife-77252-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Average of the pumping metric around the detected peaks of N=10 randomly selected sample animal tracks. The shaded area denotes the standard deviation. (B), (C), (D) same as (A) but the wildtype peak shape is underlaid in dark blue.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/77252/elife-77252-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Autocorrelation of the pumping rate for the multi-hour imaging. Individual traces (colored lines) and sample mean across all measurements (black). The dashed line denotes the time at which the autocorrelation is statistically not distinguishable from zero. N=13, 12, and 12 independent animals for wt, unc-31(e928) and unc-31(n1304), respectively.
 
 In contrast to unc-31, eat-18 mutant animals have no previously reported locomotor defects, but pump slower than wildtype (McKay et al., 2004). EAT-18 is expressed in the pharyngeal muscle and interacts with a nAChR subunit EAT-2 to form a functional acetylcholine receptor (Raizen et al., 1995; Choudhary et al., 2020). Feeding impaired mutants were previously reported to have reduced body lengths and widths (Mörck and Pilon, 2006). As expected, we found that eat-18 animals were smaller (Figure 5C) and developed more slowly (approximately 91 hr from egg to adulthood compared to 63 hr for wildtype). While we detected pumping events at an average rate of 1 Hz, the animals showed a different contraction pattern and timing than either unc-31 or wt animals (Figure 5D and E). We confirmed that eat-18(ad820) animals lack the ability to perform fast pumping bursts (Figure 5B and F) and the duration of a pharyngeal contraction is approximately doubled compared to wt (Figure 5E, Figure 5—figure supplement 1, Video 3). We do observe a higher pumping rate than previously reported for eat-18, where animals were reported to rarely pump during experiments (<0.5 Hz, Raizen et al., 1995; McKay et al., 2004). To verify that the detected motion is pumping and not peristaltic movements or other non-pharyngeal muscular motion, we verified the rate by inspecting individual videos. When verifying these sample animals, we did observe slow pumping bursts at the 1–2 Hz rates indicated by PharaGlow, suggesting that these animals are able to pump at this frequency (Figure 5E, arrows and Video 3). We also found that eat-18 animals showed significantly fewer reversals than wildtype, indicating a role for the nAch receptor in modulating reversals. This is likely mediated by extrapharyngeally located neurons, since eat-18 is reported to show expression not only in the pharyngeal muscle, but also in some unidentified somatic neurons (McKay et al., 2004).
 
@@ -83,7 +252,7 @@ Considering the split distribution of mean pumping rates we observed for unc-31 
 
 To further investigate the different persistence of pumping across the different animals, we quantified the transitions between states of pumping and no or low pumping rates. We define a ‘fast’ state as a period at which the animals pump at >2.5 Hz and ‘off’ states as the converse (see also a similar analysis in Lee et al., 2017). Wild-type animals displayed frequent switching between low and high pumping rates (Figure 5H and J). In contrast, unc-31 animals displayed infrequent switches, consistent with prior reports of constitutive pumping (Avery et al., 1993) and the role of neuropeptides such as PDF in regulating switches between foraging states (Flavell et al., 2013). Taken together, these results show that studying the underlying behaviors and dynamics in a worm population requires large statistics and long recordings. Depending on the desired data, both long-term recordings and short-term high-throughput measurements are accessible with PharaGlow.
 
-## Limitations and requirements
+### Limitations and requirements
 
 Using a combination of low-magnification fluorescence imaging and dedicated analysis software, we show that it is possible to perform high-throughput, automated pumping detection of worms crawling on standard culture plates. There are some limitations to the method that are due to the reliance on a fluorescent indicator in the pharyngeal muscle and the handling of the large datasets that are generated. We find that uneven plates or improper focus leads to low signal-to-noise ratios. With careful focusing, imaging the center of evenly poured plates and using our custom peak detection method that is adaptive to the image quality (see Methods), these pitfalls can be mitigated. Additionally, once at focus, small variations of the worm height do not affect the result, as low-magnification imaging results in a large depth of field.
 
@@ -107,64 +276,151 @@ A further extension of this work would be to image pumping activity in related s
 
 ## Materials and methods
 
-## C. elegans maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Escherichia coli OP50)</td>
+      <td>OP50</td>
+      <td>CGC</td>
+      <td>CGC:OP50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>myo-2p mCherry unc-54 3’utr</td>
+      <td>Addgene</td>
+      <td>pCFJ90</td>
+      <td>5 ng/µl injected into N2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pPHA2 GFP-F</td>
+      <td>Gift from Marc Pilon</td>
+      <td>pMS17</td>
+      <td>50 ng/µl injected into N2</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>N2</td>
+      <td>CGC</td>
+      <td>N2</td>
+      <td>Background for INF30</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>gnaIs1[myo-2p::yfp]</td>
+      <td>CGC</td>
+      <td>GRU101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>nonEx9[pPHA2 GFP-F myo-2p::mCherry::unc-54 3’utr]</td>
+      <td>This publication</td>
+      <td>INF30</td>
+      <td>5 ng/ul of pMS17 and 5 ng/ul of pCFJ90 injected into N2; Figure 2—figure supplement 4</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-31(e928) gnaIs1 IV</td>
+      <td>This publication</td>
+      <td>INF5</td>
+      <td>Cross of unc-31(e928) with GRU101; Figure 3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>unc-31(n1304) gnaIs1 IV</td>
+      <td>This publication</td>
+      <td>INF17</td>
+      <td>Cross of unc-31(n1304) with GRU101; Figure 3</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>eat-18(ad820) I; gnaIs1 IV</td>
+      <td>This publication</td>
+      <td>INF44</td>
+      <td>Cross of eat-18(ad820) with GRU101; Figure 3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PharaGlow</td>
+      <td>This publication</td>
+      <td></td>
+      <td>https://github.com/scholz-lab/PharaGlow; Scholz, 2022.</td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans maintenance
 
 C. elegans were grown on NGM plates at 20 °C. Worms were synchronized by letting adult gravid animals lay eggs for 2–3 hr, then removing the adults. The average time from egg to young adult stage for strain GRU101 (gnaIs1[myo-2p::yfp]) was 63 hr. Before the experiment, synchronized adults were washed off the culture plates with 1 ml of M9 and collected in an Eppendorf tube. Worms were allowed to settle for 1 min, the supernatant was removed and the tube was refilled with M9. Washing was repeated two more times. The washing was sufficient in that we did not observe animals remaining in the spots containing the remainder of M9 on the assay plates, suggesting that the bacterial amount was too diluted to induce dwelling behavior.
 
-## Imaging setup
+### Imaging setup
 
 Imaging of worms at ×1 magnification was performed using a commercial upright epi-fluorescence microscope (Axio Zoom V16; Zeiss) equipped with a 1 x objective (PlanNeoFluar Z 1.0 x/N.A. 0.25). For imaging of YFP fluorescence, light from an LED lamp (X-Cite XYLIS) was reflected towards the sample using a dichroic mirror (FT 515; Zeiss) and filtered (BP 500/25; Zeiss). Emitted light was filtered using a band-pass filter (BP 535/30; Zeiss) and focused onto the camera sensor (acA3088-57um; BASLER) using a camera adapter with an additional 0.5 x magnification (60 N-C ⅔’’ 0.5 x; Zeiss). The power density of fluorescence excitation at the focal plane (0.24 mW/mm2 at 500 nm) was measured using a power meter sensor (PS19Q; Coherent) with the corresponding controller (PowerMax; Coherent). Animals were imaged at 30 fps for 5 min unless otherwise indicated. For imaging of mCherry, the filter cube was replaced with a commercial filter set (64 HE; Zeiss). The resulting power density using this cube was 0.76 mW/mm2 at the focal plane.
 
-## Long-term imaging
+### Long-term imaging
 
 For long-term imaging, stroboscopic illumination (5ms light pulses) were used to reduce bleaching. Excitation light was synchronized with the camera exposure using the GPIO camera line and the TTL input of the LED lamp. Frames were collected using a custom software (LabVIEW). To reduce the amount of stored data and allow continuous recording using a standard computer (Celsius W520; Fujitsu), images were segmented automatically and only areas containing worms, and their coordinates within the image, were stored. This procedure allowed a data reduction by approximately 1000 fold. For imaging, a copper frame (5.3 x 3.75 x 1 mm) was filled with 2% low melting point agarose (Sigma Aldrich) in M9 and 2–5 µl of a 10-fold concentrated overnight OP50 culture was seeded on top. The frame was deposited into a 10 cm NGM plate, and worms were transferred to the agarose arena. To preserve the moisture of the preparation and prevent shrinking of the gel, about ⅓ of the agar at the outer rim of the plate was removed using a scalpel and the space was filled with 6 ml of M9. Animals were recorded for at least 3 hr and all animals that were continuously tracked for at least 2 hr were included in the analyses in Figure 5.
 
-## Dual bright-field and fluorescence imaging
+### Dual bright-field and fluorescence imaging
 
 Dual imaging was performed using an upright microscope (BX51WI; Olympus) and a 10 x objective (UplanSApo, NA 0.4; Olympus). For bright-field imaging, light emanating from a near-infrared (780 nm) LED (M780LP1 and driver LEDD1B; Thorlabs) was filtered using a (785/62 BrightLine HC; Semrock) and projected onto the sample via the bright-field illumination condenser. To excite fluorescence, the Teal line from an LED lamp (Spectra X light engine; Lumencor) was filtered (513/17 BrightLine HC; Semrock) and projected onto the sample using a 520 nm long-pass dichroic (FF520-Di02; Semrock). Transmitted and emitted light were filtered using a 532 long-pass filter (BLP01-532R; Semrock). To simultaneously record images in bright-field and fluorescence, a dual-camera device was used (DC2; Photometrics). Light was split into two channels using a 695 long-pass dichroic mirror (695DCXRUV; Photometrics) and images were projected into two cameras (acA3088-57um; BASLER). Fluorescent light was band-pass filtered (550/49 Brightline HC; Semrock) before reaching the camera sensor. The exposure time (6ms) of one camera served to synchronize the acquisition of the second camera and the Lumencor light engine. Individual worms were manually tracked using a 3-axis motorized stage (X-LSM150A; Zaber).
 
-## Developmental pumping experiments
+### Developmental pumping experiments
 
 Worms were pre-synchronized by hypochlorite bleaching, allowed to hatch overnight in M9 and then cultured on NGM plates with OP50 at 20 °C. On day 3 after pre-synchronization, worms were synchronized again by letting 20 gravid animals lay eggs for 2 hr per assay plate, then removing the adults and letting embryos grow for specific durations to reach the appropriate larval or adult stage (19 hr for mid-L1, 31 hr for mid-L2, 39 hr for mid-L3, 50 hr for mid-L4, 65 hr for young adults). For the assay plates, 40 µl of E. coli OP50 culture was spotted onto an empty 6 cm NGM plate a few hours before the synchronization and left to dry. Synchronized worms were imaged directly on their assay plates as described in section ‘Imaging setup’. The magnification for each stage was chosen to achieve an approximate pharynx length of ~60 pixels (2 x (1.18 µm/px) for L1, 1.5 x (1.57 µm/px) for L2, 1.4 x (1.69 µm/px) for L3, 1.3 x (1.81 µm/px) for L4 and the standard 1 x (2.36 µm/px) for young adults). Three assay plates were imaged once per stage, and three additional plates were imaged at each stage to test for photo-sensitivity.
 
-## Starvation experiments
+### Starvation experiments
 
 Washed animals were transferred to the center of an empty 6 cm NGM plate at room temperature and left to recover for 15 min before imaging. The same plate was imaged at defined time points for progressively more starved animals (at 30 min, 90 min, 150 min and 210 min after being taken off food). The field of view was chosen randomly on the plate but was required to contain at minimum 3 worms at the beginning of the recording. For control, washed animals were transferred close to a 40 µl of E. coli OP50 lawn, which was spotted onto an empty 6 cm NGM plate a few hours before the recordings and allowed to dry. Acclimation time and recording are similar for starved animals.
 
-## Automated analysis
+### Automated analysis
 
-## Pharyngeal pumping - fluorescence data
+#### Pharyngeal pumping - fluorescence data
 
 Animals were tracked using our custom python analysis package PharaGlow which is freely available under a permissive GPL 3.0 license. In brief, PharaGlow runs a three-step analysis: 1. center of mass tracking and collision detection, 2. linking detected objects to trajectories and 3. extracting centerline, contour, width, and other parameters of the shape to allow extracting pharyngeal pumping events. Tracking uses the soft matter package (Allan et al., 2019). The code is fully modular and any existing tracking code could in principle be used for the first two steps provided the input data is formatted to PharaGlow standards. We provide example data and example jupyter notebooks to help users make use of our package both in personal computer and high-performance cluster settings. The resulting files contain the position, and the straightened images which are further processed to extract the behavioral measures as described in Figure 1 and section ‘Pharyngeal pumping - postprocessing’’.
 
-## Pharyngeal pumping - postprocessing
+#### Pharyngeal pumping - postprocessing
 
-To obtain pumping traces from straightened animals, the inverted maximum of the dorso-ventral standard deviation of brightness is calculated for each straightened frame per animal (Figure 1E). This metric is sensitive to the opening of the pharyngeal lumen and terminal bulb contractions. Peaks in the resulting trace correspond to pumping events. Due to the animal motion, uneven illumination or defocusing can modify the baseline of the pumping metric. We correct for baseline fluctuations and spurious fluorescence changes by subtracting the background fluctuations using a rolling mean filter of 1 s (except for eat-18 mutants, where we use 3 s otherwise the slow contractions were removed too). To the remaining signal we apply a smoothing filter of width = 66 ms (2 frames). We detect peaks using AMPD, an algorithm for peak detection in quasi-periodic signals (Scholkmann et al., 2012). We also require the peak distances to obey physiologically reasonable rates i.e., the peaks can not be closer than dmin= 132 ms (4 frames). To automatically establish the noise level of the trace, we compare the incidence of intervals between detected peaks that violate the assumption dmin> 132 ms and select the minimal prominence required, such that the fraction of violating intervals is lower than a sensitivity parameter s. For all dataset with 5-min recordings, we set s=0.999.
+To obtain pumping traces from straightened animals, the inverted maximum of the dorso-ventral standard deviation of brightness is calculated for each straightened frame per animal (Figure 1E). This metric is sensitive to the opening of the pharyngeal lumen and terminal bulb contractions. Peaks in the resulting trace correspond to pumping events. Due to the animal motion, uneven illumination or defocusing can modify the baseline of the pumping metric. We correct for baseline fluctuations and spurious fluorescence changes by subtracting the background fluctuations using a rolling mean filter of 1 s (except for eat-18 mutants, where we use 3 s otherwise the slow contractions were removed too). To the remaining signal we apply a smoothing filter of width = 66 ms (2 frames). We detect peaks using AMPD, an algorithm for peak detection in quasi-periodic signals (Scholkmann et al., 2012). We also require the peak distances to obey physiologically reasonable rates i.e., the peaks can not be closer than $dmin=$ 132 ms (4 frames). To automatically establish the noise level of the trace, we compare the incidence of intervals between detected peaks that violate the assumption $dmin>$ 132 ms and select the minimal prominence required, such that the fraction of violating intervals is lower than a sensitivity parameter $s$. For all dataset with 5-min recordings, we set $s=0.999.$
 
-In the long-term recordings, we use a hampel filter with a width of 300 frames to remove spurious outliers in the signal which affect peak detection and set s=0.9999.
+In the long-term recordings, we use a hampel filter with a width of 300 frames to remove spurious outliers in the signal which affect peak detection and set $s=0.9999.$
 
-Depending on the purpose, pumping rates have been calculated as follows: To determine the average pumping rate per track, we calculate the number of pumping events/ total track duration (e.g. Figure 3F, box plots). To obtain pumping rate distributions, we calculate the number of pumps in a sliding window of 10 s and combine data from all tracks. The ‘instantaneous pumping rate’ is defined as 1/Δt between pumps. We use the instantaneous rate when a higher temporal resolution is desired. Which rate metric is used is indicated in the caption.
+Depending on the purpose, pumping rates have been calculated as follows: To determine the average pumping rate per track, we calculate the number of pumping events/ total track duration (e.g. Figure 3F, box plots). To obtain pumping rate distributions, we calculate the number of pumps in a sliding window of 10 s and combine data from all tracks. The ‘instantaneous pumping rate’ is defined as $1/Δt$ between pumps. We use the instantaneous rate when a higher temporal resolution is desired. Which rate metric is used is indicated in the caption.
 
-## Assigning high and low pumping rate states
+#### Assigning high and low pumping rate states
 
 Pumping rates were calculated from the detected pumping events in a 30 s block window. The resulting rates were thresholded with a threshold of 2.5 Hz to discriminate between fast and slow pumping. The binary heatmap was filtered with a rolling median filter of width 5 min, which removes spurious events and allows extraction of longer term dynamics.
 
-## Autocorrelation of pumping rates
+#### Autocorrelation of pumping rates
 
 The autocorrelation of the pumping rates for the 2 hr recordings was calculated from the 10 s average pumping rates (see Pharyngeal pumping - postprocessing). The decay time of the autocorrelation was determined using a one-sided t-test for each timepoint and calculating if the sample mean of the autocorrelation for each animal differed from 0. To determine the uncertainty of the decay time, we ran leave-one-out bootstrapping and report the mean and s.t.d. of the leave-one-out testing.
 
-## Other behavioral parameters
+#### Other behavioral parameters
 
 Velocity was calculated from the tracked center of mass of the labeled pharynx. Reversals were calculated based on the angle between the pharynx and the animal’s nose tip direction. To avoid spurious reversals, the nose tip trajectories are coarse-grained to 6 Hz, and the angle between the nose tip and pharynx is smoothed with a window of width = 1 s (30 frames). Timepoints with angles exceeding 120° were annotated as reversals. Reversals shorter than 0.5 s are removed. The estimation of the pharyngeal area is based on an automated threshold of the pharynx.
 
-## Animal selection
+#### Animal selection
 
 All animals that were successfully tracked for at least 60 s (Figures 1—3) were included. No other filtering or outlier removal was performed. Due to age synchronization, all animals in the field of view were of similar size in the wildtype experiments. For eat-18 mutants, the size and developmental stage of the animals were more dispersed and only animals that had the appropriate size for their stage were included (Figure 5). In the starvation experiments, animals that were successfully tracked for at least 20 s were included due to the larger velocity in this condition (Figure 3).
 
-## Manual annotation of pumping behavior
+### Manual annotation of pumping behavior
 
 Movies for individual animals were created from a large field of view and expert annotators counted pumps by displaying the movie using the cell counter tool in Fiji (Schindelin et al., 2012). The annotators were blinded to the movie conditions and to the other experts’ results.
 
-## Data and code availability statement
+### Data and code availability statement
 
 The data from this manuscript is available at https://osf.io/fy4ed/. The code repository for the PharaGlow package can be found at https://github.com/scholz-lab/PharaGlow (Scholz, 2022). Imaging software can be found at https://github.com/scholz-lab/Acquisition_PharaGlow, (Bonnard, 2022 copy archived at swh:1:rev:29ae8971f66fa0722f4914deb4b70b7d53f76f07).

@@ -38,19 +38,71 @@ Here, we investigate how interactions between the lid and base subcomplexes infl
 
 ## Results
 
-## The lid is required for proteasome function independent of deubiquitination
+### The lid is required for proteasome function independent of deubiquitination
 
 Structural rearrangements, specifically the rotation of the lid relative to the base observed in response to substrate processing or binding of ATP analogs to the AAA+ motor, suggest that the lid may be directly involved in determining the proteasome conformational states (Matyskiela et al., 2013; Unverdorben et al., 2014; Wehmer et al., 2017; Eisele et al., 2018; Ding et al., 2017; de la Peña et al., 2018; Dong et al., 2019). However, the lid’s structural importance for degradation cannot simply be tested by eliminating this subcomplex from the holoenzyme, as it contains the essential DUB Rpn11 and is indispensable for efficient ubiquitin-dependent substrate turnover (Verma et al., 2002). We therefore used our previously established ubiquitin-independent substrate-delivery system, in which the bacterial SspB adaptor fused to Rpt2 allows the recruitment of model substrates containing the ssrA recognition motif (Bashore et al., 2015). Degradation was monitored through the decrease in anisotropy of a titin-I27V15P model substrate that contained a destabilizing V15P mutation, fluorescein conjugated to the N-terminus, and a C-terminal 35 amino-acid initiation region derived from cyclin B that also included the ssrA recognition motif (FAM-titin-I27V15P). Even though we eliminated the dependence on Rpn11-mediated deubiquitination, presence of the lid was still required for efficient ATP-dependent degradation (Figure 1A; Figure 1—figure supplement 1A and B). In contrast to other compartmental proteases, the proteasomal AAA+ motor and the 20S core peptidase together are not sufficient to catalyze ATP-dependent protein unfolding and degradation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig1-v2.jpg)
+
+**Figure 1.:** (A) Ubiquitin-independent degradation of fluorescein-labeled, ssrA-tagged FAM-titin-I27V15P substrate by in-vitro reconstituted 26S proteasomes with recombinantly produced SspB-fused base in the absence and presence of recombinantly produced lid subcomplex was monitored through fluorescence anisotropy under multiple-turnover conditions. Shown on the left are representative traces of changes in anisotropy, and shown on the right are the rates of degradation calculated from these data (N = 3, technical replicates, error bars plotted are SEM). (B) Cryo-EM structure of the 26S proteasome from S. cerevisiae (EMDB code: 3534) highlights contacts between the lid (yellow and orange), base (blue), and core (grey). The lid subunit Rpn5 (orange) uses a VTENKIF-sequence-containing loop (red) to interact with the small AAA+ subdomain of the base subunit Rpt3 in the substrate-free s1 conformation, but not in any other conformation, like s3 shown here (EMDB: 4321). (C) Rates for the single-turnover degradation of a ubiquitinated, TAMRA-labeled G3P substrate with 54 amino acid tail derived from cyclin-b sequence (TAMRA-G3P) by wild-type and Rpn5-VTENKIF mutant proteasomes that were purified from S. cerevisiae (shaded) or in-vitro reconstituted using recombinant lid and base (solid) (N = 3, technical replicates, error bars plotted are SEM).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative traces for the changes in anisotropy upon ubiquitin-independent degradation of FAM-titin-I27V15P by in-vitro reconstituted proteasomes containing recombinantly produced, SspB-fused base and either wild-type lid, Rpn5-VTENKIF mutant lid, or lid with inactive Rpn11 (Rpn11AXA) that were also recombinantly produced. (Matyskiela et al., 2013). (B) Comparison of rates for ubiquitin-dependent and -independent degradation of FAM-titin-I27V15P by wild-type and mutant proteasomes (both reconstituted), as derived from multiple-turnover measurements similar to the traces shown in (A) (N = 3, technical replicates, error bars plotted are SEM). (C) Normalized ubiquitin-dependent single-turnover degradations of ubiquitinated TAMRA-G3P substrate by reconstituted Rpn5-VTENKIF and wild-type proteasomes. Single-turnover conditions were verified by doubling the concentration of proteasome as indicated by 1X and 2X 26S proteasome (N = 2, technical replicates). (D) ATPase rates of the base subcomplex in the presence of core and various concentrations of wild-type or mutant lid subcomplex and excess of ubiquitinated FAM-titin-I27V15P substrate. Data were fit to a Michaelis-Menten model, and the derived values for kcat and KD are shown in the table on the right (error represents SEM of the fit). (E) Anti-FLAG immunoprecipitation of proteasomes reconstituted with 3XFLAG-tagged core, tag-less base, and tag-less lid, and incubated with or without an excess of ubiquitinated FAM-titin-I27V15P substrate. Samples were immunoblotted for Nas6 and lid subunit Rpn5. (F) Top: Immunoblotting for the presence of Nas6 in endogenous proteasomes purified from S. cerevisiae and proteasomes in-vitro reconstituted from recombinant lid, recombinant base, and core purified from S. cerevisiae. Bottom: Stain-free detection of the total protein present on the SDS-PAGE gel used for Nas6 immunoblotting above. Proteasome samples analyzed on this gel were used for the single-turnover degradation experiments shown in Figure 1C.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The stimulated peptidase activity of the 20S core (CP) upon proteasome holoenzyme formation with reconstituted regulatory particle (RP) components (lid and base) is detected by in-gel cleavage of Suc-LLVY-AMC (left). Free and holoenzyme-incorporated CP is detected by the in-gel Suc-LLVY-AMC cleavage after treatment with 0.02% SDS (middle). The Coomassie stained gel (right) shows the total protein used in the reconstitutions. The left, middle, and right images are visualizations of the same gel. (B) and (C) Technical replicates of the reconstitutions reactions and native-PAGE gel described in (A). Panel B and C show the additional SDS-PAGE analysis of the proteasome-reconstitution reactions, detected by Stain-Free imaging. (D) Native-PAGE analysis of endogenous wild-type and Rpn5-VTENKIF proteasomes visualized by in-gel Suc-LLVY-AMC cleavage after treatment with 0.02% SDS.
+
 Interactions between the lid and the AAA+ motor have been found to change in the various proteasome conformations, and these changes of contact points thus represent a possible mechanism by which the lid could act allosterically with the base to influence the regulatory particle’s conformational switching during substrate processing. Of particular interest was the contact between Rpn5’s TPR domain and Rpt3’s small AAA+ subdomain that is present only in the substrate-free s1 state (Figure 1B; Matyskiela et al., 2013; Unverdorben et al., 2014; Wehmer et al., 2017; Eisele et al., 2018). Mutating all residues in the Rpt3-contacting loop of Rpn5 (V125 - F131) to alanine (mutant denoted Rpn5-VTENKIF) decreased the rate of both, ubiquitin-dependent (Figure 1C, Figure 1—figure supplement 1B and C) and ubiquitin-independent degradation (Figure 1—figure supplement 1A and B). Importantly, this loss of degradation activity is not primarily caused by defects in proteasome assembly, which was found by native PAGE to be only slightly less efficient for the mutant compared to the wild-type enzyme (Figure 1—figure supplement 2). Furthermore, using the response of the base ATPase activity to lid binding during holoenzyme assembly, we determined similar affinities for wild-type and Rpn5-VTENKIF mutant lid (Figure 1—figure supplement 1D). Despite their lower degradation activity, Rpn5-VTENKIF mutant proteasomes show an elevated ATPase rate in the absence of substrate that increases in response to substrate processing, albeit to a lesser extent than for wild type (Figure 1—figure supplement 1D). In agreement with recent findings (Nemec et al., 2019), proteasomes containing the Rpn5-VTENKIF mutation more strongly retained the Nas6 assembly chaperone during holoenzyme reconstitution (Figure 1—figure supplement 1E). However, this presence of Nas6 is not the main cause for the observed decrease in degradation rate, as purified endogenous proteasomes from S. cerevisiae carrying the same Rpn5 mutations also exhibit major deficiencies in single-turnover degradation reactions (Figure 1C), despite containing only negligible amounts of Nas6 (Figure 1—figure supplement 1F). Moreover, we found that substrate processing efficiently evicts most Nas6 from nascent Rpn5-VTENKIF mutant proteasomes (Figure 1—figure supplement 1E), indicating that the initial Nas6 retention is not responsible for the steady-state substrate processing defect of the Rpn5-VTENKIF mutant. Overall, the observed decrease in degradation activity appears to principally be caused by intrinsically compromised substrate processing, rather than the observed minor defects in the assembly or composition of proteasome holoenzymes (Figure 1—figure supplements 1 and 2).
 
-## Lid-base contacts influence proteasome conformation
+### Lid-base contacts influence proteasome conformation
 
 We employed negative-stain electron microscopy to assess the conformational states of the proteasome and whether the Rpn5-VTENKIF mutation affects their distribution. Because the 20S core can be singly- or doubly-capped by regulatory particles, proteasome particles were half-masked to treat each regulatory particle independently for data processing (Figure 2—figure supplements 1 and 2). Consistent with previous observations, ATP-bound wild-type proteasomes in the absence of substrate were observed in two conformations, s1 and s2 (Figure 2A; Figure 2—figure supplement 3; Bard et al., 2018a). Despite the limited resolution of negative-stain electron microscopy, these conformations could be distinguished from each other and from the substrate-bound states, in which the lid is even more rotated relative to the base, as obvious from the positioning of the horse-shoe shaped structure formed by the 6 PCI (Proteasome/Cyclosome/eIF3)-domain-containing lid subunits (Figure 2B; Figure 2—figure supplement 4). In contrast to wild-type proteasomes with nearly equal distribution of s1 and s2 conformations, Rpn5-VTENKIF mutant proteasomes showed only 37% of particles in the s1 state, while also populating substrate-engaged-like states (s3/s4/s6) that are absent from wild-type samples in the presence of ATP (Figure 2A, Figure 2—figure supplements 3, 5 and 6). Interestingly, the Rpn5-VTENKIF mutant displayed predominantly s2 or s5 conformations, which similar to s3, s4, and s6 are characterized by Rpn11 obstructing the central pore. The lower population of the s1 state resembles the scenario for Walker-B mutant proteasomes that in recent structural studies were found to have perturbed conformational landscapes as well (Eisele et al., 2018). Importantly, however, with bound ATPγS the Rpn5-VTENKIF mutant proteasomes behaved similar to wild-type in shifting to a conformational distribution that is dominated by substrate engaged-like states, which demonstrates their retained ability to conformationally respond when Rpt subunits are trapped in an ATP-bound state.
 
-## The nucleotide states of Rpt6 and Rpt4 affect proteasome conformational switching
+![Figure 2.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig2-v2.jpg)
+
+**Figure 2.:** (A) Proportion of each proteasome conformation observed by negative-stain electron microscopy for wild-type or Rpn5-VTENKIF proteasome in the presence of ATP or ATPγS. Designation of substrate-free and engaged-like conformations (s1, s2/s5, s3/s4/s6) was based on best fit to the atomic models provided in Eisele et al. (2018) and more details of the classification are provided in Figure 2—figure supplement 1–6. (B) Representative densities for wild-type proteasome in the s1 conformation (top, purple) and Rpn5-VTENKIF mutant proteasome in the s3/s4/s6 conformation (bottom, orange), overlaid with low-resolution envelopes generated from the atomic models for the given state in Eisele et al. (2018) aligned by their core particles (grey). In the overlay s2/s5 is shown in grey, s3/s4/s6 is shown in orange, and s1 is shown in purple.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Representative images and 2D class averages of wild-type and Rpn5-VTENKIF proteasomes in either nucleotide condition. (B) EM workflow as described in Materials and methods. (C) Representative 3D classes, colored by conformation classification. Below, Euler distributions presented per conformer displayed above.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Representative views for all six classes attained per dataset. Classes shown in red were discarded due to incomplete density in stable portions of the proteasome, such as the core particle, and poor alignment to any of the simulated densities generated from Eisele et al. (2018). Classes were subclassified and these subclassifications were retained only when they aligned better to different states.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Each negative-stain class is shown in light grey and pairwise aligned to the core particles in the 20Å-simulated maps for the s1 (purple), s2 (dark grey), or s3 (orange). Classes were assigned to the scored state based on the best fit of these alignments.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Low resolution maps simulated at 20 Å were generated from the atomic models of the s1, s2, and s3 states from Eisele et al. (2018). The overlay on the left was aligned by the core particles and shows the positions of the PCI-horseshoe (top) and Rpn2 (bottom) as distinguishable differences between the three states (below). (B) Comparison of all states (s1, purple; s2, dark grey; s3, orange; s4, green; s5, red; and s6, yellow) described in Ref 19, using simulated 20 Å maps generated from the atomic models. At this resolution, s2 and s6 are indistinguishable (boxed in dark grey) as are s3, s4, and s5 (boxed in orange).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** Each negative-stain class is shown in light grey and pairwise aligned to the core particles in the 20Å-simulated maps for the s1 (purple), s2 (dark grey), or s3 (orange). Classes were assigned to the scored state based on the best fit of these alignments.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** Classes from wild-type and Rpn5-VTENKIF samples that were assigned the same conformational state (s1, s2, or s3) overlay with each other when aligned to a core peptidase model.
+
+### The nucleotide states of Rpt6 and Rpt4 affect proteasome conformational switching
 
 Binding of non-hydrolyzable ATP analogs to the proteasomal AAA+ motor triggers similar conformational changes as substrate engagement, suggesting that stabilizing Rpt subunits in an ATP-bound state or coordinating nucleotide binding and hydrolysis in several substrate-interacting Rpt subunits provides a common driving force for conformational transitions. To assess in more detail how perturbations in ATP-hydrolysis affect the conformational states of the proteasome, we placed Walker-B mutations (Glu to Gln) in individual Rpts. Consistent with previous in vitro and in vivo studies that revealed unequal contributions of Rpts to proteasomal degradation activity (Eisele et al., 2018; Beckwith et al., 2013), we observed differentially reduced rates of substrate turnover for these variants (Figure 3—figure supplement 1A), with the strongest defects seen in Rpt subunits that make contacts with TPR domains of lid (Rpt3, Rpt6, and Rpt4, Figure 3A). As a readout for their conformational state, we analyzed how Walker-B mutants responded in their ATPase activity to the interaction with ubiquitin-bound Ubp6. Ubp6 is a non-essential, proteasome-interacting DUB that in its ubiquitin-bound form biases the proteasome’s conformational equilibrium away from the s1 state and thereby stimulates the ATPase activity similar to substrate processing (Bashore et al., 2015; Peth et al., 2013; Aufderheide et al., 2015). Despite significantly different basal ATPase rates, proteasome variants with a Walker-B mutation in Rpt1, Rpt2, Rpt3, or Rpt5 still maintain some Ubp6-mediated stimulation of ATP hydrolysis (Figure 3B, Figure 3—figure supplement 1B). However, two mutants with severe degradation defects, Rpt6-EQ and Rpt4-EQ, did not respond to ubiquitin-bound Ubp6 (Figure 3B; Figure 3—figure supplement 1B), suggesting that a considerable fraction of those proteasomes adopt non-s1 states already in the absence of ubiquitin-bound Ubp6. Additionally, this failure to respond to ubiquitin-bound Ubp6 does not originate from compromised holoenzyme assembly (Figure 1—figure supplement 2; Figure 3—figure supplement 2).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig3-v2.jpg)
+
+**Figure 3.:** (A) Cartoon of the proteasome heterohexameric AAA+-motor and interacting lid subunit as viewed from the top, with the core particle underneath. The base subunit Rpn1 and lid subunits are shown in grey, with red bars indicating the interactions between the VTENKIF region of Rpn5 (orange) and the AAA+ domain of Rpt3 (pink), as well as the Rpn6-Rpt6 and Rpn7-Rpn2 contacts. The ATPase subunits Rpt1, Rpt2, Rpt6, Rpt3, Rpt4, and Rpt5, depicted in rainbow colors, are forming a vertical spiral staircase. In the substrate-free s1 state, Rpt3 is at the top of this staircase, Rpt2 at the bottom, and Rpt6 represents the seam subunit with an open ATPase interface to its neighbor Rpt3. In the substrate-engaged s3 state, Rpt1 is at the top and Rpt5 at the bottom, with an open seam between the two. As the ATPase ring transitions through the various engaged states during ATP hydrolysis, the staircase and the open seam are expected to progress in a counterclockwise manner around the ring (de la Peña et al., 2018). (B) Proteasome ATPase stimulation by ubiquitin-bound Ubp6, with no stimulation indicated by a solid black line (N ≥ 3, technical replicates, error bars plotted are SEM). (C) Ub-AMC cleavage activities of Ubp6 in the context of wild-type or Walker-B mutant proteasomes with ATP or ATPγS (N ≥ 3, technical replicates, error bars plotted are SEM, p values shown for a Student’s T-test). (D) Core gate-opening measured through cleavage of the fluorogenic Suc-LLVY-AMC substrate. Cleavage rates were determined by linear fitting of the AMC-fluorescence increase, normalized to wild-type proteasome in ATP, and plotted as averages with standard deviations (N ≥ 3, technical replicates).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Rates for multiple-turnover ubiquitin-dependent degradation of FAM-titin-I27V15P (N = 3, technical replicates, error bars represent SD). (B) ATPase rates of Walker-B mutant proteasomes in the absence (light grey) and presence (dark grey) of ubiquitin-bound Ubp6, Ub-Ubp6 (N ≥ 3, technical replicates, errors represent SEM).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Gate-opening was measured through cleavage of the fluorogenic Suc-LLVY-AMC substrate. Proteasomes were reconstituted with either stoichiometric amounts (1X base) or a two-fold excess of base (2X base). Cleavage rates were determined by linear fitting of the AMC-fluorescence increase, normalized to wild-type proteasome with 1X base, and plotted as averages with standard deviations (N = 3, technical replicates).
 
 Notably, there is a reciprocal crosstalk between the proteasome and Ubp6, in which Ubp6’s DUB activity depends on the proteasome conformation, and the highest activity is observed when the catalytic USP domain of Ubp6 interacts with the AAA+ motor in non-s1 states (Bashore et al., 2015). All Walker-B mutants except Rpt1-EQ showed increased Ubp6 DUB activity in the presence ATP, but resembled the wild-type enzyme when in ATPγS (Figure 3C), confirming their normal conformational response to nucleotide. That Rpt6-EQ and Rpt4-EQ-mutant proteasomes show increased Ubp6 DUB activity in ATP is consistent with their lack of Ubp6-mediated ATPase stimulation and further suggests that trapping Rpt4 or Rpt6 in permanent ATP-bound states populates non-s1 conformations, even in the absence of substrate or ATPγS (Figure 3C).
 
@@ -58,15 +110,35 @@ Rpt4-EQ and Rpt6-EQ mutant proteasomes showed strong degradation defects and wer
 
 Although Rpt4-EQ mutant proteasomes also appeared to be biased towards engaged-like, non-s1 conformations based on their crosstalk with Ubp6, their core-gate opening resembled the ATP-bound wild-type holoenzyme and was not responsive to ATPγS binding (Figure 3D). These proteasomes displayed decreased assembly under non-equilibrium conditions in native-PAGE analyses, which could explain some, yet not all of the gate-opening defects, as holoenzyme is clearly formed (Figure 1—figure supplement 2). Moreover, the gate-opening activity of the Rpt4-EQ mutant was insensitive to increased base concentrations (Figure 3—figure supplement 2), arguing against an assembly defect as the main reason for the functional deficiencies and suggesting that a biased conformational landscape of assembled proteasome is largely responsible for the observed effects. The Rpt4-EQ mutation thus seems to induce a partially distorted conformation that interacts with ubiquitin-bound Ubp6 similar to an engaged-state proteasome, but fails to properly dock with core particle for complete gate opening. Like the Rpt6-EQ mutation, the Rpt4-EQ mutation is dominant in determining the conformational state and therefore masks the stimulating gate-opening effects of the Rpn5-VTENKIF mutation in the combined mutant (Figure 3D). Compromising the lid-base interface through Rpn5-VTENKIF mutations thus appears to partially shift the conformational equilibrium of the proteasome, while trapping Rpt6 or Rpt4 in ATP-bound states overrules those changes and further shifts the equilibrium towards either a fully engaged-like or a distorted, potentially off-pathway conformation.
 
-## Proteasomes with biased conformational landscapes display various degradation defects
+### Proteasomes with biased conformational landscapes display various degradation defects
 
 To understand how these conformation-influencing mutations affect substrate degradation, we first performed Michaelis-Menten kinetic analyses using our ubiquitinated FAM-titin-I27V15P model substrate with a C-terminal 35 amino-acid initiation region that contained a single lysine-attached ubiquitin chain next to the titin folded domain. Rpt4-EQ mutant proteasome showed no discernable degradation activity at any substrate concentrations tested (Figure 4A), and further measurements under single-turnover conditions revealed only a small change in anisotropy that we could attribute solely to substrate deubiquitination (Figure 4B), as no peptide products were detected in an end-point analysis by SDS-PAGE (Figure 4C). These results were confirmed using an additional model substrate, ubiquitinated TAMRA-G3P (Figure 4—figure supplement 1B), for which the small amounts of produced peptides could be attributed to nonspecific proteolysis of the unstructured region by the core particle, as previously observed (Bard et al., 2019; Myers et al., 2018; Wenzel and Baumeister, 1995). Furthermore, free Rpt4-EQ-containing regulatory particle, a prominent species in the native-PAGE analysis (Figure 1—figure supplement 2), harbored little deubiquitination activity compared to wild-type, Rpn5-VTENKIF, and Rpt6-EQ mutant RPs (Figure 4—figure supplement 1A–D). For all wild-type and mutant proteasomes tested, the addition of excess regulatory particle did not change the rate of substrate processing, that is degradation or deubiquitination that would lead to changes in anisotropy (Figure 4—figure supplement 1A,E). Interestingly, the deubiquitination activity of the Rpt4-EQ containing regulatory particle increases in a core-dependent manner (Figure 4—figure supplement 1A), suggesting that docking to the core particle positions Rpn11 in a more active conformation than in the free mutant RP (Dambacher et al., 2016). However, the Rpt4-EQ mutant proteasome lacks substrate engagement or translocation activities, and thus appears degradation-incompetent.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig4-v2.jpg)
+
+**Figure 4.:** (A) Michaelis-Menten analysis based on initial rates for ubiquitin-dependent degradation of FAM-titin-I27V15P under multiple-turnover conditions. Km and kcat values are shown below with errors representing SEM from the fit. Rpt4-EQ had too low activity to be fit. (B) Representative anisotropy traces for the single-turnover degradation of ubiquitinated FAM-titin-I27V15P by wild-type and Rpt4-EQ mutant proteasomes (C) SDS-PAGE analysis of end-point samples from single-turnover degradation reactions, visualizing fluorescence of the FAM-titin-I27V15P model substrate in its ubiquitinated, de-ubiquitinated, and degraded form.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Normalized fluorescence anisotropy measurements showing the processing of ubiquitinated TAMRA-G3P-substrate by reconstituted Rpt4-EQ regulatory particle (RP) alone, by proteasomes reconstituted with Rpt4-EQ regulatory particle at stoichiometric amounts (2RP:1CP = 1X RP + Core) or in two-fold access (4RP:1CP = 2X RP + Core), and by core particle alone, normalized to the degradation by reconstituted wild-type 26S proteasome (N = 3; error presented = SD). (B) SDS-PAGE analysis of end-point samples from single-turnover degradation reactions performed in (A), visualizing the fluorescence of TAMRA-labeled G3P-substrate (left) and total protein at (right). (C) Normalized fluorescence anisotropy measurements showing the processing of ubiquitinated TAMRA-G3P-substrate by proteasomes reconstituted with mutant regulatory particles, normalized to reconstituted wild-type 26S proteasome. (N = 3; error present = SD). (D) SDS-PAGE analysis of end-point samples from single-turnover degradation reactions performed in (C), visualizing the fluorescence of TAMRA-G3P-substrate (left) and total protein (right). (E) Normalized fluorescence anisotropy measurements showing the processing of ubiquitinated TAMRA-G3P-substrate by wild-type, Rpn5-VTENKIF-, and Rpt6-EQ-mutant proteasomes reconstituted with a stoichiometric amount (2RP:1CP = 1 XRP) or two-fold excess of RP (4RP:1CP = 2 XRP). (N = 3, error presented = SD). (F) SDS-PAGE analysis of end-point samples from single-turnover degradation reactions performed in (D), visualizing the fluorescence of TAMRA G3P-substrate (top) and total protein (bottom).
+
 The Rpt6-EQ and Rpn5-VTENKIF mutations decreased the kcat for substrate degradation about 6-fold, with only minimal effects on Km (Figure 4A). This behavior is expected, if these mutations primarily shift the conformational equilibrium and thereby reduce the fraction of engagement-competent s1-state proteasomes. We previously identified tail engagement to be a major determinant of Km (Bard et al., 2019). Based on the lack of major Km changes, we can thus conclude that the Rpt6-EQ and Rpn5-VTENKIF mutations do not considerably affect substrate engagement of proteasomes in the s1 state (Bard et al., 2019). It is assumed that non-s1 states that are not yet substrate-engaged do not significantly contribute to substrate processing, because their coaxially aligned position of Rpn11 right above the entrance to the pore interferes with substrate-tail insertion for degradation and also limits access to the DUB active site for potential translocation-independent deubiquitination. Accordingly, we did not detect deubiquitination and release of unmodified substrate from Rpn5-VTENKIF mutant proteasomes (Figure 4C; Figure 4—figure supplement 1), which is consistent with our previous findings that non-s1-state proteasomes with bound ATPγS show only﻿ low deubiquitination activity towards unengaged protein substrates (Worden et al., 2017). It is conceivable that the Rpn5-VTENKIF mutation reduces kcat more strongly than the EM-observed shift in the conformational equilibrium would suggest, if weakening the lid-base interactions increases the dynamics of conformational transitions, and the life time of the engagement-competent s1 state in the mutant proteasomes is shorter than the time constant for substrate-tail insertion (τ = 1.6 s; Bard et al., 2019). The Rpt6-EQ mutant proteasome were previously found to exhibit a similar distribution of s1 and non-s1 states as the Rpn5-VTENKIF mutant here (Eisele et al., 2018), and its rates of switching out of and back to the engagement-competent s1 state are expected to be determined by ATP binding and release of the hydrolysis-dead Rpt6 subunit. A 6-fold reduction in kcat compared to wild-type proteasome can thus also be explained by compromised conformational switching and a shorter life time of the s1 state in the presence of the Rpt6-EQ mutation.
 
-## Disrupting the proteasome conformational equilibrium affects degradation initiation
+### Disrupting the proteasome conformational equilibrium affects degradation initiation
 
 We recently discovered that the engagement of a substrate’s unstructured initiation region by the AAA+ motor triggers the major conformational change away from the s1 state, during which the contacts between the base and the VTENKIF-containing loop in Rpn5 are broken (Bard et al., 2019). We therefore aimed to investigate how the Rpn5-VTENKIF mutation with its effects on the conformational equilibrium influences this critical step of substrate processing. Using our previously established assay to monitor FRET between a fluorescence donor placed near the central channel of the base and an acceptor fluorophore attached to the substrate, we measured the kinetics of inserting the substrate’s flexible tail into the pore (Bard et al., 2019). Inhibiting deubiquitination by Rpn11 with the Zn2+-chelator ortho-phenanthroline (o-PA) stalls further translocation in these experiments and leads to the accumulation of stably engaged substrate in a high-FRET state. Our measurements revealed that tail insertion takes about twice as long for the Rpn5-VTENKIF mutant proteasome compared to wild type (Figure 5A, Figure 5—figure supplement 1A). We assume that this rate represents a convolution of fast tail insertion for engagement-competent s1-state proteasomes and delayed tail insertion for proteasomes that first have to switch back to the s1 state. The Rpt6-EQ mutant proteasome displayed comparable tail-insertion defects (Figure 5—figure supplement 1B), indicating that initial substrate engagement is similarly compromised for both variants, likely due to changes in their conformational landscapes. In agreement with previous findings (Bard et al., 2019), very minimal, negligible tail insertion was observed with either proteasome variant in ATPγS or in the absence of core and lid (Figure 5A; Figure 5—figure supplement 1A).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig5-v2.jpg)
+
+**Figure 5.:** (A) Representative traces for the increase in acceptor fluorescence/FRET upon insertion of the ubiquitinated FAM-titin-I27V15P-Cy5 substrate’s flexible initiation into the central pore of wild-type and Rpn5-VTENKIF mutant proteasomes with o-PA inhibited Rpn11, in the presence of ATP or ATPγS. The schematic below depicts the experimental setup, where FRET occurs when a substrate’s flexible initiation region labeled with an acceptor dye (blue star) enters and then stalls in the central pore of a proteasome containing inhibited Rpn11 (red cross) and a donor dye (red star) near the processing channel. The substrate’s ubiquitin modification is represented in pink, the Rpt ring is shown in light blue, the core particle in dark grey, and Rpn5 in orange. (B) Rate constants for the single-turnover, ubiquitin-dependent degradation of ubiquitinated G3P model substrate, either without stalling the proteasome (left) or after stalling translocation for 3 min with o-PA inhibited Rpn11 and restarting by the addition of Zn2+ (right). Rates were determined from single-exponential fits of the appearance of fluorescently tagged peptide products on SDS PAGE gels. Error bars represent SEM for the fit, N ≥ 3, technical replicates. (C) Ubiquitin-dependent degradation rates for wild-type, Rpn5-VTENKIF and Rpt6-EQ mutant proteasomes degrading the destabilized FAM-titin-I27V13P/V15P-35mer tail or the non-destabilized FAM-titin-I27-35mer tail substrate under single-turnover conditions. Shown are the rate constants for the dominant fast phase derived from a double-exponential fit of the degradation kinetics (N = 3, technical replicates, error bars represent SD).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) FRET-based assay monitoring the insertion of the ubiquitinated Cy5-labeled titin-I27V15P substrate tail into the central pore of Cy3 labeled, o-PA-inhibited wild-type or Rpn5-VTENKIF mutant proteasomes. Representative traces (left) show the reciprocal change in Cy3 and Cy5 fluorescence, indicative of FRET, and the dependence of substrate-tail insertion on fully assembled proteasomes. Middle, traces for the substrate-tail insertion of wild-type and Rpn5-VTENKIF mutant proteasomes, monitored through Cy5 fluorescence and fit to Equation 2 (solid line). Residuals of the fit are shown below the traces, and derived kinetic parameters are shown on the right (N = 3, technical replicates, error represents SEM). (B) FRET-based tail-insertion assay, as described in (A), comparing wild-type, Rpn5-VTENKIF, and Rpt6-EQ mutant proteasomes (N ≥ 3, technical replicates, error represents S.E.M.).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/49806/elife-49806-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Representative SDS-PAGE gels for the end-point analyses of ubiquitinated TAMRA-G3P-degradation reactions by wild-type, Rpn5-VTENKIF, and Rpt6-EQ mutant proteasomes after restart from an o-PA-induced stall. The fluorescence signal of the substrate-attached TAMRA dye was use for in-gel detection and quantifications, which are plotted below the gels. Data were fitted to Equation 3 (N = 3, technical replicates, error bars represent SD). (B) Representative SDS-PAGE gels for the analyses of non-destabilized FAM-titin-I27 degradation by wild-type and mutant proteasomes under single-turnover conditions. Quantified FAM-fluorescence values for ubiquitinated substrate and peptide products are plotted below the gels (N = 3, technical replicates, error bars represent SD).
 
 To determine whether the degradation defects of Rpn5-VTENKIF and Rpt6-EQ mutant proteasomes originate primarily from delayed tail insertion when particles reside in the wrong state or from impaired subsequent processing steps as well, we performed degradation-restart experiments after stalling and accumulating engaged proteasomes through reversible o-PA-inhibition of substrate deubiquitination by Rpn11 (Worden et al., 2017). Upon release from the stall through the addition of excess Zn2+, we monitored the depletion of ubiquitinated TAMRA-G3P substrate as well as the accumulation of peptides products by SDS-PAGE, both of which showed single-exponential behavior (Figure 5—figure supplement 2A). As expected, wild-type proteasomes displayed degradation kinetics in the restart experiments that resembled those under non-stalled, single-turnover conditions, because the processing steps preceding the stall, that is tail insertion and the conformational switch upon substrate engagement, are not rate limiting for degradation (Figure 5B; Bard et al., 2019; Worden et al., 2017). Importantly, Rpn5-VTENKIF and Rpt6-EQ mutant proteasomes that showed significant degradation defects under non-stalled, yet otherwise identical conditions, fully regained wild-type degradation rates when restarted after the o-PA-induced deubiquitination stall (Figure 5B). These data indicate that tail insertion and engagement, but not the subsequent deubiquitination, unfolding, and translocation, are compromised by these mutations, likely through perturbations of the conformational equilibrium and reducing the fraction of proteasomes in the substrate-engagement competent s1 state. The early initiation and commitment steps of degradation are thus strongly dependent on the conformational bias and dynamics of the substrate-free proteasome.
 
@@ -90,65 +162,432 @@ In summary, the detailed characterization of Rpn5-VTENKIF and Rpt6-EQ mutant pro
 
 ## Materials and methods
 
-## Strain construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-Duet Rpn1, Rpn2, Rpn13</td>
+      <td>(Beckwith et al., 2013)</td>
+      <td>pAM81</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pACYC-Duet RIL Nas6, Hsm3, Rpn14, Nas2</td>
+      <td>(Beckwith et al., 2013)</td>
+      <td>pAM83</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCOLA FLAG-Rpt1, Rpt2, His6-Rpt3, Rpt5, Rpt6, Rpt4</td>
+      <td>(Beckwith et al., 2013)</td>
+      <td>pAM82</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCOLA FLAG-Rpt1-191TAG, Rpt2, His6-Rpt3, Rpt5, Rpt6, Rpt4</td>
+      <td>(Bard et al., 2019)</td>
+      <td>pAM88</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Synthetase pEVOL mod.</td>
+      <td>(Bard et al., 2019) (Worden et al., 2017)</td>
+      <td>pAM183</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCOLA FLAG-Rpt1, sspB permutant-Rpt2, His6-Rpt3, Rpt5, Rpt6, Rpt4</td>
+      <td>(Bashore et al., 2015)</td>
+      <td>pAM210</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCOLA FLAG-Rpt1-EQ, Rpt2, His6-Rpt3, Rpt5, Rpt6, Rpt4</td>
+      <td>(Beckwith et al., 2013)</td>
+      <td>pAM204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCOLA FLAG-Rpt1, Rpt2-EQ, His6-Rpt3, Rpt5, Rpt6, Rpt4</td>
+      <td>(Beckwith et al., 2013)</td>
+      <td>pAM205</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCOLA FLAG-Rpt1, Rpt2, His6-Rpt3-EQ, Rpt5, Rpt6, Rpt4</td>
+      <td>(Beckwith et al., 2013)</td>
+      <td>pAM209</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCOLA FLAG-Rpt1, Rpt2, His6-Rpt3, Rpt5, Rpt6, Rpt4-EQ</td>
+      <td>(Beckwith et al., 2013)</td>
+      <td>pAM206</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCOLA FLAG-Rpt1, Rpt2, His6-Rpt3, Rpt5-EQ, Rpt6, Rpt4</td>
+      <td>(Beckwith et al., 2013)</td>
+      <td>pAM207</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCOLA FLAG-Rpt1, Rpt2, His6-Rpt3, Rpt5, Rpt6-EQ, Rpt4</td>
+      <td>(Beckwith et al., 2013)</td>
+      <td>pAM208</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCOLA MBP-HRV3C-Rpt1, Rpt2, His6-HRV3C-Rpt3, Rpt5, Rpt6-EQ, Rpt4</td>
+      <td>This study</td>
+      <td>pAM214</td>
+      <td>This plasmid encodes HRV3C cleavable affinity tags to make tagless recombinant base.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-Ubp6</td>
+      <td>(Bashore et al., 2015)</td>
+      <td>pAM211</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-Ubp6 C118A</td>
+      <td>(Bashore et al., 2015)</td>
+      <td>pAM212</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MGCS-titin I27 V15P(lysineless)-ssrA-1K-35 amino acid tail including PPPY and His6</td>
+      <td>(de la Peña et al., 2018)</td>
+      <td>pAM213</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>titin I27V13P/V15P(lysineless)-PPPY-ssrA-1K-35 amino acid tail containing ssrA</td>
+      <td>(Bard et al., 2019)</td>
+      <td>pAM94</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>titin I27V15P(lysineless)-PPPY-ssrA-1K-35 amino acid tail</td>
+      <td>(Bard et al., 2019)</td>
+      <td>pAM91</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>titin I27 (lysineless)-PPPY-ssrA-1K-35 amino acid tail</td>
+      <td>(Bard et al., 2019)</td>
+      <td>pAM93</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-thrombin-N1-G3P(lysineless)−1 K-54 amino acid tail including ssrA, PPPY, C-terminal lysineless StrepII tag.</td>
+      <td>(Myers et al., 2018)</td>
+      <td>pAM77</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>His6-SUMO-Ub4</td>
+      <td>(Bard et al., 2019)</td>
+      <td>pAM102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET lid wild-type (Rpn5, MBP-HRV3C-Rpn6, Rpn8, Rpn11, Rpn9)</td>
+      <td>(Bard et al., 2019)</td>
+      <td>pAM85</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET lid VTENKIF (Rpn5-VTENKIF, MBP-HRV3C-Rpn6, Rpn8, Rpn11, Rpn9)</td>
+      <td>This study</td>
+      <td>pAM203</td>
+      <td>This plasmid encodes a cleavable MBP tag on Rpn6 and is used to make tagless Rpn5-VTENKIF lid.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCOLA (His6-HRV3C-Rpn12, Rpn7, Rpn3)</td>
+      <td>(Bard et al., 2019)</td>
+      <td>pAM86</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pACYC Sem1, Hsp90</td>
+      <td>(Lander et al., 2012)</td>
+      <td>pAM80</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS305 His10-HRV3C-RPN5</td>
+      <td>This study</td>
+      <td>pAM198</td>
+      <td>This plasmid encodes an S. cerevisiae integratableRpn5 gene with endogenous promotors and a cleavable N-terminal histidine tag on Rpn5.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS305 His10-HRV3C-rpn5-vtenkif-aaaaaaa</td>
+      <td>This study</td>
+      <td>pAM199</td>
+      <td>This plasmid encodes an S. cerevisiae integratable Rpn5-VTENKIF gene with endogenous promotors and a cleavable N-terminal histidine tag on Rpn5.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS305 3 × FLAG-HRV3C-RPN5</td>
+      <td>This study</td>
+      <td>pAM200</td>
+      <td>This plasmid encodes an S. cerevisiae integratable Rpn5 gene with endogenous promotors and a cleavable N-terminal FLAG tag on Rpn5.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS305 3 × FLAG-HRV3C-rpn5-vtenkif-aaaaaaa</td>
+      <td>This study</td>
+      <td>pAM201</td>
+      <td>This plasmid encodes an S. cerevisiae integratable Rpn5-VTENKIF gene with endogenous promotors and a cleavable N-terminal FLAG tag on Rpn5.</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pRS316 RPN6 promoter-RPN5-RPN5 terminator</td>
+      <td>This study</td>
+      <td>pAM202</td>
+      <td>This plasmid encodes the Rpn5 ORF with a Rpn6 promotor and Rpn5 terminator on anS. cerevisiae counter-selectable, non-integrating plasmid.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background E. coli</td>
+      <td>BL21(DE3)</td>
+      <td>Thermofisher</td>
+      <td>Cat#C601003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background S. cerevisiae</td>
+      <td>MATa ade2-1 his3-11,15 leu2-3,112 trp1-1 ura3-1 can1-100 bar1 PRE1::PRE1−3 × FLAG(KANMX6)</td>
+      <td>(Beckwith et al., 2013)</td>
+      <td>yAM54</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background S. cerevisiae</td>
+      <td>MATa ade2-1, his3-11,15, LEU2::His10-HRV3C-RPN5, trp1-1, ura3-1, can1-100, RPN11::RPN11-3XFLAG (HIS3)</td>
+      <td>This study</td>
+      <td>yAM99</td>
+      <td>This strain bears pAM198 integrated at LEU2 in an 3X-FLAG Rpn11 background.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background S. cerevisiae</td>
+      <td>MATa ade2-1, his3-11,15, LEU2::His10-HRV3C-rpn5-vtenkif-aaaaaaa, trp1-1, ura3-1, can1-100, RPN11::RPN11-3XFLAG (HIS3)</td>
+      <td>This study</td>
+      <td>yAM100</td>
+      <td>This strain bears pAM199 integrated at LEU2 in an 3X-FLAG Rpn11 background.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background S. cerevisiae</td>
+      <td>MATa ade2-1 his3-11,15,112 trp1-1 ura3-1 can1-100 bar1 rpn5∆::NATMX6, pRS316-promoter-RPN6-RPN5-terminator-RPN6</td>
+      <td>This study</td>
+      <td>yAM96</td>
+      <td>This strain has endogenous Rpn5 deleted and replaced with NATMX6 with pAM202 as a covering plasmid in a W303 background.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background S. cerevisiae</td>
+      <td>MATa ade2-1 his3-11,15 trp1-1 ura3-1 can1-100 bar1 rpn5∆::NATMX6, LEU2::3 × FLAG-HRV3C-RPN5</td>
+      <td>This study</td>
+      <td>yAM97</td>
+      <td>This strain bears pAM200 integrated at LEU2 in a yAM96 background.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background S. cerevisiae</td>
+      <td>MATa ade2-1 his3-11,15 trp1-1 ura3-1 can1-100 bar1 rpn5∆::NATMX6, LEU2::3 × FLAG-HRV3C-rpn5-vtenkif-aaaaaaa</td>
+      <td>This study</td>
+      <td>yAM98</td>
+      <td>This strain bears pAM201 integrated at LEU2 in a yAM96 background.</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit anti-Rpn5</td>
+      <td>Abcam</td>
+      <td>Cat#ab79773</td>
+      <td>Dilution (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Polyclonal rabbit anti-Nas6</td>
+      <td>Abcam</td>
+      <td>Cat#ab91447</td>
+      <td>Dilution (1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Monoclonal Goat anti-rabbit IgG-HRP</td>
+      <td>Bio-Rad</td>
+      <td>170–6515</td>
+      <td>Dilution (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Fluorescein-HHHHHHLPETGG</td>
+      <td>Genscript</td>
+      <td>Custom ordered</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Bovine Serum Albumin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#A9418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>UCSF Chimera</td>
+      <td>UCSF</td>
+      <td>https://www.cgl.ucsf.edu/chimera/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Origin Pro</td>
+      <td>Origin Lab</td>
+      <td>https://www.originlab.com/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageQuant</td>
+      <td>GE</td>
+      <td>ImageQuant TL 8.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Cy3 DBCO</td>
+      <td>Click Chemistry Tools</td>
+      <td>Cat#A140</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Fluorescein-5-maleimide</td>
+      <td>ThermoFisher</td>
+      <td>Cat#62245</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Cy5 Maleimide</td>
+      <td>Lumiprobe</td>
+      <td>Cat#23380</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>4-azido-L-phenylalanine</td>
+      <td>Amatek Chemical</td>
+      <td>Cat#A-7137</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>1,10-phenanthroline</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat#P9375</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Strain construction
 
 Strains yAM96, yAM97, and yAM98 were constructed using standard techniques. A W303-derived parental strain was transformed with a pRS316-RPN5 (pAM202) covering plasmid and then transformed with a PCR product containing homologous regions flanking the RPN5 gene and containing the NATMX marker (Longtine et al., 1998; Goldstein and McCusker, 1999). RPN5 disruption was confirmed by PCR and sequencing of both the 5’ and 3’ junctions of the NATMX integration. RPN5 and rpn5-vtenkif-aaaaaaa were introduced by integration of pRS305 vectors containing promoter and terminator from Rpn5 that had been linearized in the LEU2 marker. Curing of the covering plasmid was performed twice sequentially on plates containing 5-FOA and confirmed by loss of growth on dropout URA plates. yAM99 and yAM100 strains were also constructed using standard techniques. The YYS40 (Sone et al., 2004) parental strain bearing RPN11::3X-FLAG-RPN11 (HIS3) was transformed with pRS305 linearized at the LEU2 marker and containing either 10X-Histag-HRV3C-RPN5 or 10X-Histag-HRV3C-rpn5-vtenkif-aaaaaaa. Integration was confirmed by PCR.
 
-## Protein purification
+### Protein purification
 
-## Purification of the tagged heterologous base and SspB-fused base
+#### Purification of the tagged heterologous base and SspB-fused base
 
 Preparation of the Saccharomyces cerevisiae base subcomplex was conducted as described previously (Beckwith et al., 2013; Bashore et al., 2015; Worden et al., 2017; Bard and Martin, 2018b). BL21-star (DE3) E. coli cells were transformed and grown in 3L of terrific broth, shaking at 37°C until OD600 ~0.8–1.0 was reached. Temperature was lowered to 30°C and protein expression was induced with 1 mM IPTG for 5 hr at 30°C, followed by overnight expression at 16°C. Cells were harvested by centrifugation and resuspended in base lysis buffer (60 mM HEPES pH 7.6, 50 mM NaCl, 50 mM KCl, 10 mM MgCl2, 5% glycerol, 2 mM ATP, + 2 mg/mL lysozyme, proteasome inhibitors (PMSF, Aprotonin, Leupeptin, PepstainA), and benzonase, and then stored at −80°C. For the purification, cells were thawed and lysed by sonication. Lysate was clarified by centrifugation and loaded onto a HisTrap High-Performance 5 mL columns (GE Healthcare) using a peristaltic pump, washed with base NiA buffer (60 mM HEPES pH 7.6, 50 mM NaCl, 50 mM KCl, 10 mM MgCl2, 5% glycerol, 2 mM ATP + 20 mM imidazole), and eluted with base NiB buffer (60 mM HEPES pH 7.6, 50 mM NaCl, 50 mM KCl, 10 mM MgCl2, 5% glycerol, 2 mM ATP, 250 mM imidazole). Eluates were then flowed over M2 ANTI-FLAG affinity resin (Sigma) and eluted with 0.5 mg/mL 3X FLAG peptide (Genscript) in base lysis buffer. Base subcomplex was further purified by size-exclusion chromatography using a Superose 6 increase 10/300 column (GE Healthcare) pre-equilibrated with base GF buffer (60 mM HEPES pH 7.6, 50 mM NaCl, 50 mM KCl, 10 mM MgCl2, 5% glycerol, 0.5 mM TCEP, 1 mM ATP). Peak fractions corresponding to assembled base subcomplex were concentrated, flash frozen in liquid nitrogen, and stored at −80°C. The concentration of base was determined by Bradford protein assay using bovine serum albumin (BSA) as a standard.
 
-## Purification and labeling of base containing unnatural amino acid
+### Purification and labeling of base containing unnatural amino acid
 
 Preparation of 4-azidophenylalanine-containing base subcomplex was conducted as detailed previously (Bard et al., 2019; Bard and Martin, 2018b). BL21star (DE3) E. coli were cultured overnight in 2xYT media and diluted into prewarmed media containing antibiotics (300 µg/mL Ampicillin, 25 µg/mL Chloramphenicol, 50 µg/mL kanamycin, and 100 µg/mL spectinomycin). Cells were grown with shaking to OD600 = 0.6 before pelleting and resuspending, pooling 6L of cells into 1L of buffered TB containing 2 mM 4-azidophenylalanine, 17 mM KH2PO4, and 72 mM K2HPO4 at 30°C. After 30 min, protein expression was induced with 1 mM IPTG for 5 hr, followed by overnight incubation with shaking at 16 °C.
 
 Following centrifugation, cells were resuspended in base lysis buffer, and purification was performed as described above for heterologously expressed base until elution from FLAG affinity column. After elution from M2 ANTI-FLAG affinity resin (Sigma), artificial amino acid-containing base was incubated at room temperature with 150 µM 5,5′-dithiobis-2-nitrobenzoic acid for 10 min before chilling on ice and adding 300 µM DBCO-Cy3 (Click Chemistry Tools) and incubating at 4°C overnight. Following overnight labeling, the reaction was quenched with 10 mM DTT and subjected to size-exclusion chromatography on a Superose 6 Increase 10/300 (GE Healthcare) in GF buffer, as described for other base constructs above. Base concentration was determined by Bradford protein assay using BSA as a standard, while the extent of Cy3 labeling was determined by absorbance at 555 nm, and SDS-PAGE was used to confirm labeling of only Rpt1 as well as complete removal of free dye.
 
-## Purification of the heterologously expressed tagless base subcomplex
+### Purification of the heterologously expressed tagless base subcomplex
 
 Preparation of recombinantly expressed, tagless S. cerevisiae base subcomplex was conducted using standard affinity-chromatography and size-exclusion chromatography protocols. Briefly, BL21-star (DE3) E. coli cells were grown in 3L of terrific broth shaking at 37°C until OD600 ~0.8–1.0 was reached. Temperature was lowered to 30°C and protein expression was induced with 1 mM IPTG for 5 hr at 30°C, followed by overnight expression at 16°C. Cells were harvested by centrifugation and resuspended in base lysis buffer (60 mM HEPES pH 7.6, 50 mM NaCl, 50 mM KCl, 10 mM MgCl2, 5% glycerol, 2 mM ATP, + 2 mg/mL lysozyme, proteasome inhibitors (PMSF, Aprotonin, Leupeptin, PepstainA), and benzonase, and then stored at −80°C. For the purification, cells were thawed and lysed by sonication. Lysate was clarified by centrifugation and loaded onto HisTrap High-Performance 5 mL (GE Healthcare) columns using a peristaltic pump, washed with base NiA buffer (60 mM HEPES pH 7.6, 50 mM NaCl, 50 mM KCl, 10 mM MgCl2, 5% glycerol, 2 mM ATP + 20 mM imidazole), and eluted with base NiB buffer (60 mM HEPES pH 7.6, 50 mM NaCl, 50 mM KCl, 10 mM MgCl2, 5% glycerol, 2 mM ATP, 250 mM imidazole). Eluates were flowed over Amylose Resin (NEB), washed with base GF buffer (60 mM HEPES pH 7.6, 50 mM NaCl, 50 mM KCl, 10 mM MgCl2, 5% glycerol, 0.5 mM TCEP, 2 mM ATP), and eluted with base GF buffer + 10 mM maltose + ATP regeneration system (creatine kinase and creatine phosphate). HRV3C protease was added to the Amylose eluate and cleavage was allowed to proceed for 45 min at room temperature or overnight at 4°C. The Amylose resin eluate was concentrated and loaded onto a Superose 6 increase 10/300 size exclusion column equilibrated with base GF buffer. Peak fractions corresponding to assembled base were concentrated, flash frozen, and stored at −80°C. The concentration of base was determined by Bradford protein assay using BSA as a standard.
 
-## Purification of Rpn10, core particle, Ubp6, Ubp6 C118A, M. musculus Uba1, S. cerevisiae Ubc4, S. cerevisiae Rsp5, ubiquitin, and linear ubiquitin tetramer
+### Purification of Rpn10, core particle, Ubp6, Ubp6 C118A, M. musculus Uba1, S. cerevisiae Ubc4, S. cerevisiae Rsp5, ubiquitin, and linear ubiquitin tetramer
 
 Rpn10, core particle, M. musculus Uba1, Ubc4, Rsp5, and ubiquitin were prepared as described in Worden et al. (2017) using standard expression and purification procedures (Bashore et al., 2015; Worden et al., 2017; Bard and Martin, 2018b). Purification of Ubp6 and Ubp6-C118A was performed as described (Bashore et al., 2015), and linear ubiquitin tetramer was purified exactly as described (Bard et al., 2019).
 
-## Purification of His10-HRV3C-Rpn5-VTENKIF mutant and wild-type 26S holoenzymes
+### Purification of His10-HRV3C-Rpn5-VTENKIF mutant and wild-type 26S holoenzymes
 
 Yeast strains yAM99 (wild type Rpn5) and yAM100 (mutant Rpn5) were grown in 3L of YPD for 3 days at 30°C. Cells were harvested by centrifugation, weighed, and resuspended in 15 mL of 26S lysis buffer (60 mM HEPES pH 7.6, 25 mM NaCl, 10 mM MgCl2, 2.5% glycerol, 5 mM ATP + ATP regeneration (creatine kinase and creatine phosphate)). Resuspended cells were flash frozen in liquid nitrogen, lysed by cryo grinding, and stored at −80°C. Lysed yeast powder was thawed at room temperature and diluted in 26S lysis buffer to 1.5 mL buffer per gram of yeast. Lysate was clarified by centrifugation and bound in batch to M2 ANTI-FLAG affinity resin (Sigma) for 1 hr at 4°C. FLAG resin was subsequently washed in batch twice with 25 mL of 26S lysis buffer, applied to a gravity flow column, and washed with an additional 25 mL of 26S lysis buffer. Proteasome was eluted with 26S lysis buffer + 0.5 mg/mL 3X FLAG peptide. FLAG eluate was loaded onto a 1 mL HisTrap High-Performance 5 mL columns (GE Healthcare) using a peristaltic bump and washed with five column volumes of 26S NiA buffer (30 mM HEPES pH 7.6, 10 mM MgCl2, 10% glycerol, 5 mM ATP, 10 mM imidazole). Proteasome was eluted with 26S NiB buffer (30 mM HEPES pH 7.6, 10 mM MgCl2, 10% glycerol, 5 mM ATP, 500 mM imidazole). HRV3C protease was added in excess, and cleavage was allowed to proceed for 30 min at 4°C. 26S proteasome was concentrated and loaded onto a Superose 6 increase 10/300 size exclusion column pre-equilibrated with 26S GF buffer (60 mM HEPES pH 7.6, 25 mM NaCl, 10 mM MgCl2, 2.5% glycerol, 1 mM ATP, 0.5 mM TCEP). Peak fractions were spiked with ATP regeneration (creatine kinase and creatine phosphate), concentrated, flash frozen in liquid nitrogen, and stored at 80°C. 26S holoenzyme concentration was determined by Bradford protein assay using BSA as a standard for total protein and in-gel quantification using purified Rpn1 as an internal standard for total regulatory particle.
 
-## Purification of FLAG-HRV3C-Rpn5 mutant and wild-type 26S holoenzymes
+### Purification of FLAG-HRV3C-Rpn5 mutant and wild-type 26S holoenzymes
 
 Yeast strains yAM97 (wild type Rpn5) and yAM98 (mutant Rpn5) were grown in 3L of YPD for 3 days at 30°C. Cells were harvested by centrifugation, weighed, and resuspended in 15 mL of 26S lysis buffer (60 mM HEPES pH 7.6, 25 mM NaCl, 10 mM MgCl2, 2.5% glycerol, 5 mM ATP + ATP regeneration (creatine kinase and creatine phosphate)). Resuspended cells were flash frozen in liquid nitrogen, lysed by cryo grinding (SPEX Freezer/Mill), and stored at −80°C. Lysed yeast powder was thawed at room temperature and diluted in 26S lysis buffer to 1.5 mL buffer per gram of yeast. Lysate was clarified by centrifugation and bound in batch to M2 anti-FLAG affinity resin (Sigma) for 1 hr at 4°C. FLAG resin was subsequently washed in batch twice with 25 mL of 26S lysis buffer, applied to a gravity flow column, and washed with an additional 25 mL of 26S lysis buffer. 26S proteasome was eluted with 26S lysis buffer + 0.5 mg/mL 3X FLAG peptide (Genscript). FLAG eluate was cleaved with HRV protease added in excess, and cleavage was allowed to proceed for 30 min at 4°C. 26S proteasome was concentrated and loaded onto a Superose 6 increase 10/300 size-exclusion column pre-equilibrated with 26S GF buffer (60 mM HEPES pH 7.6, 25 mM NaCl, 10 mM MgCl2, 2.5% glycerol, 1 mM ATP, 0.5 mM TCEP). Peak fractions were spiked with ATP regeneration system (creatine kinase and creatine phosphate), concentrated, flash frozen in liquid nitrogen, and stored at −80°C. 26S holoenzyme concentration was determined by Bradford protein assay using BSA as a standard for total protein and in-gel quantification using purified Rpn1 as a standard for total regulatory particle.
 
-## Purification of the heterologous lid
+### Purification of the heterologous lid
 
 Heterologous expression and purification of the Saccharomyces cerevisiae lid subcomplex was performed similarly to previous studies (Bard et al., 2019). BL21-star (DE3) E. coli cells were grown in 2L of terrific broth medium shaking at 37°C until an OD600 ~1.0–1.5 was achieved. Protein expression was induced with 1 mM IPTG overnight at 18°C. Cells were harvested by centrifugation and resuspended in lid lysis buffer (60 mM HEPES pH 7.6, 25 mM NaCl, 10 mM MgCl2, 2.5% glycerol + 2 mg/mL lysozyme, proteasome inhibitors (PMSF, Aprotonin, Leupeptin, PepstainA), and benzonase, and then stored at −80°C. For purification, cells were thawed and lysed by sonication. Lystate was clarified by centrifugation and loaded onto HisTrap High-Performance 5 mL columns (GE Healthcare) using a peristaltic pump, washed with lid NiA buffer (60 mM HEPES pH 7.6, 25 mM NaCl, 10 mM MgCl2, 2.5% glycerol + 20 mM imidazole), and eluted with lid NiB buffer (60 mM HEPES pH 7.6, 25 mM NaCl, 10 mM MgCl2, 2.5% glycerol, 250 mM imidazole). Eluates were flowed over Amylose Resin (NEB), washed with lid GF buffer (60 mM HEPES pH 7.6, 25 mM NaCl, 10 mM MgCl2, 2.5% glycerol, 0.5 mM TCEP), and eluted with lid GF buffer + 10 mM maltose. HRV3C protease was added to the Amylose eluate and cleavage was allowed to proceed overnight at 4°C or at room temperature for 2 hr. Amylose resin eluate was concentrated and loaded onto a Superose 6 increase 10/300 size-exclusion column equilibrated with GF buffer. Peak fractions corresponding to assembled lid were concentrated, flash frozen, and stored at −80°C.
 
-## Substrate preparation and ubiquitination
+### Substrate preparation and ubiquitination
 
 G3P substrate preparation and labeling was performed as described previously (Worden et al., 2017), and the titin-I27V13P/V15P, titin-I27V15P, and titin-I27 substrates were purified and labeled as described (Bard et al., 2019; de la Peña et al., 2018). Ubiquitination reactions were carried out as described previously (Bard et al., 2019; de la Peña et al., 2018; Myers et al., 2018). Briefly, 10–20 μM substrate protein was incubated with 2 μM mouse E1 enzyme (mE1), 5 μM Ubc4, and 5 μM Rsp5 with 450–800 μM ubiquitin and 6–10 mM ATP in 25 mM HEPES pH 8.0, 150 mM NaCl, 5% glycerol at 25°C until completion (assessed by SDS-PAGE, 30–180 min). Ubiquitination reaction conditions were screened for uniform higher molecular weights and full non-ubiquitinated substrate depletion by SDS-PAGE.
 
-## Native polyacrylamide gel electrophoresis of purified assembled proteasomes
+### Native polyacrylamide gel electrophoresis of purified assembled proteasomes
 
 Proteasomes were reconstituted with 1 μM core particle and 2 μM base, lid, and Rpn10 in GF buffer with 5 mM ATP, 0.5 mM TCEP, and ATP regeneration system, and allowed to assemble for 5 min at room temperature. Equivalent amounts of reconstituted proteasomes were diluted appropriately in 5X native gel sample buffer (250 mM Tris*HCl pH 7.5, 50 mM MgCl2, 1 mM ATP, 50% glycerol, 0.015% w/v xylene cyanol) and loaded onto 4% native polyacrylamide gels with 1 mM ATP and a 3% polyacrylamide stacking gel containing 2.5% sucrose and 1 mM ATP. Samples were electrophoresed at 100 V and 4°C for 4 hr as described (Elsasser et al., 2004). In-gel peptidase activity was assayed by incubating the gel in GF buffer with 5 mM ATP, 0.5 mM TCEP, and 100 μM Suc-LLVY-AMC with or without 0.02% SDS for 10 min before imaging on a Chemidoc MP Imaging System (Bio-Rad). The same gel was subsequently fixed and Coomassie stained for detection of total protein. Where indicated, samples from reconstitutions were further diluted in 2X SDS-PAGE sample buffer, electrophoresed under denaturing conditions, and imaged as a loading control.
 
-## Negative-stain transmission electron microscopy
+### Negative-stain transmission electron microscopy
 
 Wild-type S. cerevisiae 26S holoenzyme was diluted to ~400 nM in a buffer (60 mM HEPES, pH 7.6, 25 mM NaCl, 10 mM MgCl2, 1 mM TCEP) supplemented with 6 mM ATP or 2 mM ATPγS. 4 μL of the ATP- or ATPγS-containing solution were applied to a plasma treated (Electron Microscopy Sciences) carbon film supported by a Maxtaform 400 mesh Cu/Rh grid (TED PELLA). After incubation for 45 s, excess solution was wicked with Whatman #1 filter paper and immediately treated with a 2% (w/v) solution of uranyl formate stain. Excess stain was removed by wicking, and the grids were allowed to dry for 10 min before visualization by transmission electron microscopy. The same dilution, blotting, and staining approach was used for a solution containing Rpn5-VTENKIF-mutant 26S holoenzyme purified as described above.
 
 Data were acquired with the Leginon automation software and a Tecnai F20 transmission electron microscope (FEI) operated at 200 keV with an under-focus range of 0.5–1.0 μm. A total fluence of 30 e-/ Å2 was used to collect ~800 micrographs for each of the 26S holoenzyme variants in ATP or ATPγS with an Eagle 4 k CCD camera (FEI) at a nominal magnification of 62,000x and amplified pixel size of 1.79 Å. Approximately 800 micrographs were processed for each of the four datasets using single particle analysis (SPA) with RELION 3.0b3. The extracted particles were subject to the same SPA workflow (Figure 2—figure supplement 1B) with a final 3D classification step into six classes to quantify the degree of heterogeneity present in each dataset (Figure 2—figure supplement 1–6, Figure 2A). Proteasome conformational state for each class was determined for each state using UCSF Chimera’s 'Fit in Map’ tool comparing each class to the atomic models in Eisele et al. (2018).
 
-## Anti-FLAG pulldown of assembled proteasome complexes
+### Anti-FLAG pulldown of assembled proteasome complexes
 
 Proteasomes were reconstituted with 500 nM core particle and 1 μM tagless base, lid, and Rpn10, and allowed to assemble for 5 min in GF buffer with 1 mg/mL BSA, 5 mM ATP, and ATP regeneration system at room temperature. Magnetic ANTI-FLAG m2 resin (Sigma) was added to the solution and resin binding was allowed to proceed at 4°C for 1 hr. Resin was washed three times with 120 μL of GF buffer including 1 mg/mL BSA and 5 mM ATP, before eluting bound complexes with 35 μL of GF buffer supplemented with 5 mM ATP and 1 mg/mL 3X FLAG peptide at 30°C for 30 min.
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 SDS-PAGE gels including Precision Plus Stained protein standards (Thermo Fisher) were transferred to activated 0.2 μm PVDF membrane (Thermo Scientific) via semi-dry transfer in (25 mM Tris-HCl pH 8.3, 192 mM glycine, 5% methanol) for 45 min using constant 80 mA current before membrane blocking with 5% milk in TBST (50 mM Tris-HCl pH 7.6, 150 mM NaCl, 0.05% Tween-20) for at least one hour. Blocked membranes were probed with primary antibody (diluted in TBST with 5% milk) for at least 1 hr before being washed with TBST and re-probed with secondary anti-Rabbit-HRP for at least 30 min. Membranes were subsequently washed three times with TBST (15 min each) before visualization of Chemiluminescence activity using Western Lightning ECL reagent (Perkin Elmer) in Chemidoc MP Imaging System (Bio-Rad) with exposure times ranging from 30 to 120 s.
 
-## ATPase activity measurements
+### ATPase activity measurements
 
 ATP-hydrolysis rates were determined using an NADH-coupled assay (pyruvate kinase and lactate dehydrogenase) as described previously (Beckwith et al., 2013; Bashore et al., 2015). Briefly, proteasomes were reconstituted under base-limiting conditions with 200 nM base of the indicated mutant, 800 nM core, 800 nM lid, and 1 µM Rpn10 in GF buffer with 5 mM ATP and 0.5 mM TCEP at room temperature for 5 min, before being 2-fold diluted into ATPase mix (final concentrations: 1 mM NADH, 5 mM ATP, 7.5 mM phosphoenolpyruvate, 3 U/mL pyruvate kinase, and 3 U/mL lactate dehydrogenase), applied to a 384-clear bottom plate (Corning), and centrifuged at (1000 x g) for 1 min prior to measurement. Steady-state depletion of NADH was assessed by measuring the absorbance at 340 nm in a Synergy Neo2 Multi-Mode Plate Reader (Biotek). Solution pathlength was manually determined per experiment through titration of NADH and used to calculate ATPase rate.
 
@@ -156,52 +595,64 @@ For ATPase response to ubiquitin-bound Ubp6, measurements were performed as desc
 
 To determine lid affinity through the ATPase response of the base, holoenzymes were assembled at room temperature for 5 min with 100 nM base, 1.6 µM core, 4 µM Rpn10, and varying concentrations of lid, before a 2-fold dilution with ATPase mix to start the reaction. For measurements in the presence of substrate, ubiquitinated titin-I27V15P was added at a final concentration of 3 µM.
 
-## Ubp6 Ub-AMC cleavage-activity assays
+### Ubp6 Ub-AMC cleavage-activity assays
 
 Ubp6 activity was measured using the cleavage of the fluorogenic Ub-AMC substrate (Life Sensors). Proteasomes were reconstituted as base-limited complexes (at a final concentration of 200 nM base, 1.2 µM lid, 600 µM core, 1.5 µM Rpn10∆UIM) in either 1X ATP regeneration mix or 4 mM ATPγS with 40 nM Ubp6. After 4 min preincubation at 25 °C, samples were mixed with Ub-AMC to a final concentration of 10 µM. Cleavage was measured by monitoring the change of fluorescence at 445 nm after excitation at 345 nm on a plate reader (Synergy Neo2 Multi-Mode Plate Reader, Biotek).
 
-## Measurement of peptidase stimulation
+### Measurement of peptidase stimulation
 
 Proteasomes were reconstituted at 2X final concentration with limiting concentration of core particle (10 nM final) and saturating concentrations of base (0.5 μM (1X) or 1 μM (2X) for experiments where the base concentration was doubled), lid (2 μM), and Rpn10 (2 μM) in GF buffer supplemented with 0.5 mM TCEP and 5 mM ATP for 5 min at room temperature. Reconstituted proteasomes were incubated in either 5 mM ATP or 5 mM ATPγS at room temperature for an additional 5 min. Suc-LLVY-AMC was diluted to 2X concentration (100 μM final) in 26S GF buffer. Reactions were initiated by aliquoting 5 μL of reconstituted proteasomes into 5 μL of Suc-LLVY-AMC solution in a 384-well flat bottom black corning plate. Suc-LLVY-AMC hydrolysis was tracked by the increase in fluorescence upon AMC release in a Synergy Neo2 Multi-Mode Plate Reader (Biotek). Data were fit by linear regression, and slopes were normalized to wild-type proteasomes in ATP.
 
-## Proteasome degradation assays
+### Proteasome degradation assays
 
-## Michaelis-Menten analyses of titin substrate degradation monitored by fluorescence anisotropy
+#### Michaelis-Menten analyses of titin substrate degradation monitored by fluorescence anisotropy
 
 Proteasomes were reconstituted at 2X concentration with limiting concentrations of core particle (100 nM final) and saturating concentrations of base, lid, and Rpn10 (2 μM final) for 5 min at room temperature in assay buffer (GF buffer supplemented with 5 mM ATP, 1 mg/mL BSA, and ATP regeneration (creatine kinase and creatine phosphate)). Fluorescein labeled titin-I27 with a V15P mutation and a C-terminal 35 residue tail (FAM-titin-I27V15P) was prepared at 2X final concentration in assay buffer. Reactions were initiated with 5 μL of proteasome sample being added to 5 μL of FAM-titin-I27V15P substrate in a 384-well flat bottom black corning plate. Degradation was monitored by the loss of fluorescence anisotropy of conjugated fluorescein over time in a Synergy Neo2 Multi-Mode Plate Reader (Biotek). Degradation rates were calculated by determining the fluorescence anisotropy difference between substrate and substrate peptides and applying linear regression to initial anisotropy decreases. Initial rates were plotted against substrate concentration and fitted to the Michaelis-Menten equation (OriginPro9) to determine kcat and Km values.
 
-## Multiple-turnover degradation measured by fluorescence anisotropy
+#### Multiple-turnover degradation measured by fluorescence anisotropy
 
 Proteasomes were either reconstituted at 2X concentration with limiting concentrations of core particle (100 nM final) and saturating concentrations of base (0.5 μM), lid (2 μM), Rpn10 (2 μM final) for 5 min at room temperature or purified holoenzyme was diluted to 100 nM (final) in 26S GF buffer with 5 mM ATP, 1 mg/mL BSA, and an ATP regeneration system (creatine kinase and creatine phosphate). Substrate was prepared at 2X concentration in 26S GF buffer. Reactions were initiated with 5 μL of proteasome sample being added to 5 μL of substrate in a 384-well flat bottom black corning plate. Degradation was monitored by the loss of fluorescence anisotropy in a Synergy Neo2 Multi-Mode Plate Reader (Biotek). Degradation rates were calculated by determining the fluorescence anisotropy difference between undegraded substrate and fully degraded substrate (using chymotrypsin (Sigma) to fully degrade substrate) and linear regression.
 
-## Single-turnover degradation measured by fluorescence anisotropy
+#### Single-turnover degradation measured by fluorescence anisotropy
 
 Proteasomes were either reconstituted at 2X concentration with limiting concentrations of core particle (0.9 μM final) and saturating concentrations of base, lid, and Rpn10 (2.5 μM each) for 5 min at room temperature or purified holoenzyme was diluted to 2X concentration (2 μM final) in 26S GF buffer with 5 mM ATP, 1 mg/mL BSA, and an ATP regeneration system (creatine kinase and creatine phosphate). Substrate was prepared at 2X concentration (150 nM final) in GF buffer. Reactions were initiated with 2.5–5 μL of proteasome sample being added to 2.5–5 μL of substrate in a 384-well flat bottom black Corning plate. Degradation was monitored by loss of fluorescence anisotropy in a Synergy Neo2 Multi-Mode Plate Reader (Biotek). Degradation rates were calculated by fitting fluorescence anisotropy traces to a double exponential decay model, see Equation 1 below (OriginPro9).
 
 To assess the effects of doubling the concentration of Rpn5-VTENKIF proteasome, holoenzyme was reconstituted at 4X concentration with limiting concentration of core particle (0.9 μM final) and saturating concentrations of base, lid, and Rpn10 (2.5 μM each, final) for 5 min at room temperature in 26S GF buffer with 5 mM ATP, 1 mg/mL BSA, and an ATP regeneration system (creatine kinase and creatine phosphate). Proteasome was either kept undiluted or diluted to 2X concentration with GF buffer before reactions were initiated with 2.5 μL of 2X substrate (150 nM final) in a 384-well flat-bottom black Corning plate. Anisotropy change over time was observed as described above.
 
-## Effects of the regulatory particle on substrate processing measured by fluorescence anisotropy
+#### Effects of the regulatory particle on substrate processing measured by fluorescence anisotropy
 
 Regulatory particles were reconstituted at 4X concentration with equimolar base, lid, and Rpn10 (2.5 μM each, final at 1X) for 5 min at room temperature in GF buffer with 5 mM ATP, 1 mg/mL BSA, and an ATP regeneration system (creatine kinase and creatine phosphate), either alone or incubated with core particle (900 nM core particle final; 2.5 μM RP final at 1X or 5 μM RP final at 2X). Control with core particle alone were prepared by mixing 2X core particle (900 nM final) in GF buffer with 5 mM ATP, 1 mg/mL BSA, and an ATP regeneration system (creatine kinase and creatine phosphate). Reactions were initiated by adding 5 μL 2X substrate (150 nM final) to RP/proteasomes in a 384-well flat-bottom black Corning plate. Substrate processing was monitored by the decrease in fluorescence anisotropy in a Synergy Neo2 Multi-Mode Plate Reader (Biotek). After completion of the measurements, samples were diluted with 2X SDS-PAGE sample buffer for SDS-PAGE analysis.
 
-## Single-turnover degradation monitored by SDS-PAGE
+#### Single-turnover degradation monitored by SDS-PAGE
 
 Gel-based single-turnover measurements of FAM-titin-I27 degradation were initiated as described above. 1.2 μL aliquots at various time points were quenched in 2X SDS-PAGE loading buffer (5 μL) and electrophoresed on 4–20% TGX SDS-PAGE gels (Bio-Rad). Gels were imaged on a Typhoon variable mode scanner (GE Healthcare) for fluorescein fluorescence. Gel lanes were quantified for fraction-of-total fluorescence intensity using ImageQuant (GE Healthcare).
 
-## Substrate-tail insertion monitored by FRET
+### Substrate-tail insertion monitored by FRET
 
 Similar to the previously described procedure (Bard et al., 2019), substrate-tail insertion was measured by detecting FRET between Cy5-labeled ubiquitinated FAM-titin-I27V15P substrate and Cy3-labeled, Rpn11-inhibited proteasomes under single-turnover conditions. Reactions containing 2-fold concentrated, base-limited, and o-PA-inhibited holoenzyme (220 nM base containing Rpt1-I191AzF- Cy3, 1.2 µM lid, 800 nM core, 1.5 µM Rpn10, 6 mM o-PA and either 2X ATP Regeneration system or 2.5 mM ATPγS) were mixed with 2X concentrated ubiquitinated Cy5-labeled FAM-titin-I27V15P substrate (6 µM, as 2X stock) in an Auto SF120 stopped flow fluorometer (Kintek). Samples were excited at 550 nm with emission at 576 nm (Cy3) and 690 nm (Cy5) measured simultaneously. Kinetics were determined by fitting of the Cy5 gain of signal to Equation 2.
 
 For substrate-tail insertion reactions monitored by FRET under single-turnover conditions, substrate was prepared as described above. Proteasomes were reconstituted at 2X concentration with limiting amounts of core particle (0.9 μM final) and saturating amounts of base, lid, and Rpn10 (2.5 μM each) for 5 min at room temperature in 26S GF buffer with 5 mM ATP, 1 mg/mL BSA, 6 mM o-PA, and an ATP regeneration system (creatine kinase and creatine phosphate). Substrate was prepared at 2X concentration (150 nM final) in GF buffer. Reactions were initiated with 2.5 μL of proteasome sample being added to 2.5 μL of substrate in a 384-well flat-bottom black Corning plate. FRET was monitored by simultaneous detection of Cy3 (680 nm, 30 nm bandpass filter) and Cy5 (590 nm, 35 nm bandpass filter) after excitation at 540 nm (25 nm bandpass) on a Synergy Neo2 Multi-Mode Plate Reader (Biotek).
 
-## Proteasome restart assays
+### Proteasome restart assays
 
 Assays were performed similarly as described (Worden et al., 2017). Briefly, proteasomes were reconstituted in GF buffer with 10 mM ATP and 0.5 mM DTT and allowed to assemble at 20°C for 3 min. Single-turnover reactions were initiated with ubiquitinated TAMRA-G3P substrate. Under restart conditions, assembled proteasome were stalled with substrate by incubating with o-PA (3 mM final) for an additional 3 min at 20°C before substrate addition. Stalled proteasomes were restarted by additional of GF with ZnCl2 at a final concentration of 1 mM. From each reaction, 1.2 μL aliquots after various times were collected and quenched in 5 μL sample buffer (50 mM Tris pH 6.8, 20% glycerol, 0.2% SDS). Gel samples were electrophoresed on Criterion TGX 4–20% SDS-PAGE gels (Bio-Rad) and imaged on a Typhoon variable mode scanner (GE Healthcare) for TAMRA fluorescence using at least 25 μm per pixel resolution. Gels were quantified for fluorescence intensity using ImageQuant (GE Healthcare). Each lane was partitioned into segments for poly-ubiquitinated substrate (Ubn), unmodified substrate, and peptide products and intensities were quantified as a fraction of total lane intensity. These data were plotted v time and fit to a first order exponential, see Equation 3 below (OriginPro9) to derive degradation rates.
 
-## Equations
+### Equations
 
-Double Exponential Decay:(1)y=y0+A1∗exp(−(x−x0)/k1)+A2∗exp(−(x−x0)/k2)
+Double Exponential Decay:
 
-Single exponential decay with linear component:(2)y=y0+A1∗exp(−x/k1)+m∗x
+$$
+y=y_{0}+A_{1}^{∗}exp(−(x−x_{0})/k_{1})+A_{2}^{∗}exp(−(x−x_{0})/k_{2})
+$$
 
-Single Exponential Decay:(3)y=y0+Aexp(−x/k)
+Single exponential decay with linear component:
+
+$$
+y=y_{0}+A_{1}^{∗}exp(−x/k_{1})+m^{∗}x
+$$
+
+Single Exponential Decay:
+
+$$
+y=y_{0}+Aexp(−x/k)
+$$

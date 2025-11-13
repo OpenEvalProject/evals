@@ -36,7 +36,7 @@
 
 ## Abstract
 
-Pharmacogenomic studies have revealed associations between rs1967309 in the adenylyl cyclase type 9 ( ADCY9 ) gene and clinical responses to the cholesteryl ester transfer protein (CETP) modulator dalcetrapib, however, the mechanism behind this interaction is still unknown. Here, we characterized selective signals at the locus associated with the pharmacogenomic response in human populations and we show that rs1967309 region exhibits signatures of positive selection in several human populations. Furthermore, we identified a variant in CETP , rs158477, which is in long-range linkage disequilibrium with rs1967309 in the Peruvian population. The signal is mainly seen in males, a sex-specific result that is replicated in the LIMAA cohort of over 3400 Peruvians. Analyses of RNA-seq data further suggest an epistatic interaction on CETP expression levels between the two SNPs in multiple tissues, which also differs between males and females. We also detected interaction effects of the two SNPs with sex on cardiovascular phenotypes in the UK Biobank, in line with the sex-specific genotype associations found in Peruvians at these loci. We propose that ADCY9 and CETP coevolved during recent human evolution due to sex-specific selection, which points toward a biological link between dalcetrapib’s pharmacogene ADCY9 and its therapeutic target CETP .
+Pharmacogenomic studies have revealed associations between rs1967309 in the adenylyl cyclase type 9 (ADCY9) gene and clinical responses to the cholesteryl ester transfer protein (CETP) modulator dalcetrapib, however, the mechanism behind this interaction is still unknown. Here, we characterized selective signals at the locus associated with the pharmacogenomic response in human populations and we show that rs1967309 region exhibits signatures of positive selection in several human populations. Furthermore, we identified a variant in CETP, rs158477, which is in long-range linkage disequilibrium with rs1967309 in the Peruvian population. The signal is mainly seen in males, a sex-specific result that is replicated in the LIMAA cohort of over 3400 Peruvians. Analyses of RNA-seq data further suggest an epistatic interaction on CETP expression levels between the two SNPs in multiple tissues, which also differs between males and females. We also detected interaction effects of the two SNPs with sex on cardiovascular phenotypes in the UK Biobank, in line with the sex-specific genotype associations found in Peruvians at these loci. We propose that ADCY9 and CETP coevolved during recent human evolution due to sex-specific selection, which points toward a biological link between dalcetrapib’s pharmacogene ADCY9 and its therapeutic target CETP.
 
 ## Introduction
 
@@ -52,41 +52,93 @@ When two or more loci interact during adaptation, a genomic scan will likely be 
 
 ## Results
 
-## Signatures of selection at rs1967309 in ADCY9 in human populations
+### Signatures of selection at rs1967309 in ADCY9 in human populations
 
 The genetic variant rs1967309 is located in intron 2 of ADCY9, in a region of high linkage disequilibrium (LD), in all subpopulations in the 1000 Genomes Project (1000G), and harbors heterogeneous genotype frequencies across human populations (Figure 2a). Its intronic location makes it difficult to assess its functional relevance but exploring selective signals around intronic SNPs in human populations can shed light on their importance. In African populations (AFR), the major genotype is AA, which is the homozygous genotype for the ancestral allele, whereas in Europeans (EUR), AA is the minor genotype. The frequency of the AA genotype is slightly higher in Asia (EAS, SAS) and America (AMR) compared to that in Europe, becoming the most frequent genotype in the Peruvian population (PEL). Using the integrated haplotype score (iHS) (Voight et al., 2006) (Step 1 a, Figure 1), a statistic that enables the detection of evidence for recent strong positive selection (typically when |iHS| > 2), we observed that several SNPs in the LD block around rs1967309 exhibit selective signatures in non-African populations (|iHSSAS| = 2.66, |iHSEUR| = 2.31), whereas no signal is seen in this LD block in African populations (Figure 2b, Appendix 1—figure 1, Appendix 1). Our analyses suggest that this locus in ADCY9 has been the target of recent positive selection in several human populations, with multiple, possibly independent, selective signals detectable around rs1967309. However, recent positive selection as measured by iHS does not seem to explain the notable increase in frequency for the A allele in the PEL population (fA = 0.77), compared to the European (fA = 0.41), Asian (fA = 0.44), and other American populations (fA = 0.54 in AMR without PEL).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/69198/elife-69198-fig2-v2.jpg)
 
-**Figure 2.:** ADCY9.(a) Genotype frequency distribution of rs1967309 in populations from the 1000 Genomes (1000G) Project and in Native Americans (NAGD). (b) Significant iHS values (absolute values above 2) for 1000G continental populations and recombination rates from AMR-1000G population-specific genetic maps, in the ADCY9 gene. (c) PBS values in the ADCY9 gene, in CHB (outgroup, left panel), PEL (middle panel), and MXL (right panel). Horizontal lines represent the 95th percentile PBS value genome-wide for each population. Vertical dotted black lines define the LD block around rs1967309 (black circle) from 1000G population-specific genetic maps. Gene plots for ADCY9 showing location of its exons are presented in blue below each plot. Abbreviations: Altaic from Mongolia and Russia: ALT; Uralic Yukaghir from Russia: URY; Chukchi Kamchatkan from Russia: CHK; Northern American from Canada, Guatemala and Mexico: NOA; Central American from Costal Rica and Mexico: CEA; Chibchan Paezan from Argentina, Bolivia, Colombia, Costa Rica, and Mexico: CHP; Equatorial Tucanoan from Argentina, Brazil, Colombia, Gualana and Paraguay: EQT; Andean from Bolivia, Chile, Colombia and Peru: AND. For 1000G populations, abbreviations can be found here https://www.internationalgenome.org/category/population/.Figure 2—source data 1.This file contains the genotype frequency of rs1967309 for each subpopulation from 1000G and NAGD, with the number of individuals by subpopulation.Figure 2—source data 2.ADCY9 gene.This file contains the iHS values for each position in the ADCY9 gene for each population of the 1000G dataset.Figure 2—source data 3.ADCY9 gene.This file contains the PBS value for PEL, MXL, and CHB for each position in the ADCY9 gene.
+**Figure 2.:** (a) Genotype frequency distribution of rs1967309 in populations from the 1000 Genomes (1000G) Project and in Native Americans (NAGD). (b) Significant iHS values (absolute values above 2) for 1000G continental populations and recombination rates from AMR-1000G population-specific genetic maps, in the ADCY9 gene. (c) PBS values in the ADCY9 gene, in CHB (outgroup, left panel), PEL (middle panel), and MXL (right panel). Horizontal lines represent the 95th percentile PBS value genome-wide for each population. Vertical dotted black lines define the LD block around rs1967309 (black circle) from 1000G population-specific genetic maps. Gene plots for ADCY9 showing location of its exons are presented in blue below each plot. Abbreviations: Altaic from Mongolia and Russia: ALT; Uralic Yukaghir from Russia: URY; Chukchi Kamchatkan from Russia: CHK; Northern American from Canada, Guatemala and Mexico: NOA; Central American from Costal Rica and Mexico: CEA; Chibchan Paezan from Argentina, Bolivia, Colombia, Costa Rica, and Mexico: CHP; Equatorial Tucanoan from Argentina, Brazil, Colombia, Gualana and Paraguay: EQT; Andean from Bolivia, Chile, Colombia and Peru: AND. For 1000G populations, abbreviations can be found here https://www.internationalgenome.org/category/population/.
 
 To test whether the difference between PEL and other AMR allele frequencies at rs1967309 is significant, we used the population branch statistic (PBS) (Step 1b, Figure 1). This statistic has been developed to locate selection signals by summarizing differentiation between populations using a three-way comparison of allele frequencies between a specific group, a closely related population, and an outgroup (Yi et al., 2010). It has been shown to increase power to detect incomplete selective sweeps on standing variation. Applying this statistic to investigate rs1967309 allele frequency in PEL, we used Mexicans (MXL) as a closely related group and a Chinese population (CHB) as the outgroup (Methods). Over the entire genome, the CHB branches are greater than PEL and MXL branches (meanCHB = 0.020, meanMXL = 0.008, meanPEL = 0.009), which reflects the expectation under genetic drift. However, the estimated PEL branch length at rs1967309 (Figure 2c), which reflects differentiation since the split from the MXL population (PBSPEL,rs1967309=0.051, empirical p-value = 0.014), surpasses the CHB branch length (PBSCHB,rs1967309=0.049, empirical p-value > 0.05), which reflects differentiation since the split between Asian and American populations, whereas no such effect is seen in MXL (PBSMXL,rs1967309=0.026, empirical p-value > 0.05), or for any other AMR populations. Furthermore, the PEL branch lengths at several SNPs in this LD block (Figure 2c) are in the top 5 % of all PEL branch lengths across the whole genome (PBSPEL,95th = 0.031), whereas these increased branch lengths are not observed outside of the LD block (Figure 2c). These results are robust to the choice of the outgroup and the closely related AMR population (Materials and methods).
 
 The increase in frequency of the A allele at rs1967309 is also seen in genotype data from Native American populations (Reich et al., 2012), with Andeans showing genotype frequencies highly similar to PEL (fA = 0.77, Figure 2a). The PEL population has a large Andean ancestry (Materials and methods, Appendix 1—figure 2a and b) and almost no African ancestry, strongly suggesting that the increase in AA genotype arose in the Andean population and not from admixture with Africans. The PEL individuals that harbor the AA genotype for rs1967309 do not exhibit a larger genome-wide Andean ancestry than non-AA individuals (p-value = 0.30, Mann-Whitney U test). Overall, these results suggest that the ancestral allele A at rs1967309, after dropping in frequency following the out-of-Africa event, has increased in frequency in the Andean population and has been preferentially retained in the Peruvian population’s genetic makeup, potentially because of natural selection.
 
-## Evidence for co-evolution between ADCY9 and CETP in Peru
+### Evidence for co-evolution between ADCY9 and CETP in Peru
 
 The pharmacogenetic link between ADCY9 and the CETP modulator dalcetrapib raises the question of whether there is a genetic relationship between rs1967309 in ADCY9 and CETP, both located on chromosome 16. Such a relationship can be revealed by analyzing patterns of long-range linkage disequilibrium (LRLD) (Lewontin and Kojima, 1960; Rohlfs et al., 2010), in order to detect whether specific combinations of alleles (or genotypes) at two loci are particularly overrepresented. To do so, we calculated the genotyped-based linkage disequilibrium (r2) (Step 2 a, Figure 1) between rs1967309 and each SNP in CETP with minor allele frequency (MAF) above 0.05. In the Peruvian population, there are four SNPs, (including two in perfect LD in PEL) that exhibit r2 values with rs1967309 that are in the top 1 % of r2 values (Figure 3a) computed for all 37,802 pairs of SNPs in ADCY9 and CETP genes with MAF >0.05 (Materials and methods). Despite the r2 values themselves being low (r2rs158477=0.080, r2rs158480;rs158617=0.089, r2rs12447620=0.090), these values are highly unexpected for these two genes situated 50 Mb apart (ADCY9/CETP empirical p-value < 0.006, Appendix 1—table 1) and thus correspond to a significant LRLD signal. This signal is not seen in other 1000G populations (Appendix 1—table 1). We also computed r2 between the four identified SNPs’ genotypes and all ADCY9 SNPs with MAF above 0.05 (Figure 3b). The distribution of r2 values for the rs158477 CETP SNP shows a clear bell-shaped pattern around rs1967309 in ADCY9, which strongly suggests the rs1967309-rs158477 genetic association detected is not simply a statistical fluke, while the signal in the region for the other SNPs is less conclusive. The SNP rs158477 in CETP is also the only one that has a PEL branch length value higher than the 95th percentile, also higher than the CHB branch length value (PBSPEL,rs158477=0.062, Appendix 1—figure 3a), in line with the observation at rs1967309. Strikingly, this CETP SNP’s genotype frequency distribution across the 1000G and Native American populations resembles that of rs1967309 in ADCY9 (Figure 3c).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/69198/elife-69198-fig3-v2.jpg)
+
+**Figure 3.:** (a) Genotype correlation (r2) between rs1967309 and all SNPs with MAF >5% in CETP, for the PEL population. (b) Genotype correlation between the three loci identified in (a) to be in the 99th percentile and all SNPs with MAF >5% in ADCY9. The dotted line indicates the position of rs1967309. The horizontal lines in (a,b) represent the threshold for the 99th percentile of all comparisons of SNPs (MAF >5%) between ADCY9 and CETP. Figure 3—figure supplement 1 presents the same plots for Andeans and in the replication cohort (LIMAA) and Figure 3—figure supplement 2 compares the r2 values between PEL and LIMAA (c) Genotype frequency distribution of rs158477 in 1000G and Native American populations. (d) Genomic distribution of r2 values from 3,513 pairs of SNPs separated by between 50 and 60 Mb and 61 ± 10 cM away across all Peruvian chromosomes from the PEL sample, compared to the rs1967309-rs158477 r2 value (dotted gray line) (genome-wide empirical p-value = 0.01). The vertical black line shows the threshold for the 95th percentile threshold of all pairs. Gene plots showing location of exons for CETP (a) and ADCY9 (b) are presented in blue below each plot. Abbreviations: Altaic from Mongolia and Russia: ALT; Uralic Yukaghir from Russia: URY; Chukchi Kamchatkan from Russia: CHK; Northern American from Canada, Guatemala and Mexico: NOA; Central American from Costal Rica and Mexico: CEA; Chibchan Paezan from Argentina, Bolivia, Colombia, Costa Rica and Mexico: CHP; Equatorial Tucanoan from Argentina, Brazil, Colombia, Gualana and Paraguay: EQT; Andean from Bolivia, Chile, Colombia and Peru: AND. For 1000G populations, abbreviations can be found here https://www.internationalgenome.org/category/population/.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69198/elife-69198-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a,c) Genotype correlation (r2) between rs1967309 and all SNPs with MAF >5% in CETP. (b,d) Genotype correlation between the three loci identified in Figure 3a to be in the 99th percentile and all SNPs with MAF >5% in ADCY9. The dotted line indicates the position of rs1967309. The horizontal lines represent the threshold for the 99th percentile of all comparisons of SNPs (MAF >5%) between ADCY9 and CETP.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/69198/elife-69198-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Comparison of genotype correlation (r2) between all SNPs in ADCY9 and CETP with MAF >5% in the Peruvian population (PEL) in 1000G (x axis) and LIMAA cohort (y axis). Colored dots represent the value for SNPs higher than the 99th percentile with rs1967309 in PEL identified in Figure 3a. Black lines represent the 99th percentile in both populations.
+
 Given that the Peruvian population is admixed (Harris et al., 2018), particular enrichment of genome segments for a specific ancestry, if present, would lead to inflated LRLD between these segments (Li and Nei, 1974; Nei and Li, 1973; Park, 2019; Slatkin, 2008), we thus performed several admixture-related analyses (Step 2b, Figure 1). No significant enrichment is seen at either locus and significant LRLD is also seen in the Andean source population (Figure 3—figure supplement 1a, b, Appendix 1). Furthermore, we see no enrichment of Andean ancestry in individuals harboring the overrepresented combination of genotypes, AA at rs1967309+ GG at rs158477, compared to other combinations (p-value = 0.18, Mann-Whitney U test). These results show that admixture patterns in PEL cannot be solely responsible for the association found between rs1967309 and rs158477. Finally, using a genome-wide null distribution which allows to capture the LRLD distribution expected under the admixture levels present in this sample (Appendix 1), we show that the r2 value between the two SNPs is higher than expected given their allele frequencies and the physical distance between them (genome-wide empirical p-value = 0.01, Figure 3d). Taken together, these findings strongly suggest that the AA/GG combination is being transmitted to the next generation more often (i.e. is likely selectively favored) which reveals a signature of co-evolution between ADCY9 and CETP at these loci.
 
-Still, such a LRLD signal can be due to a small sample size (Park, 2019). To confirm independently the association between genotypes at rs1967309 of ADCY9 and rs158477 of CETP, we used the LIMAA cohort (Asgari et al., 2020; Luo et al., 2019), a large cohort of 3509 Peruvian individuals with genotype information, to replicate our finding. The ancestry distribution, as measured by RFMix (Methods) is similar between the two cohorts (Appendix 1—figure 2a), however, the LIMAA cohort population structure shows additional subgroups compared to the 1000G PEL population sample (Appendix 1—figure 2c-e): to limit confounders, we excluded individuals coming from these subgroups (Appendix 1). In this dataset (N = 3,243), the pair of SNPs rs1967309-rs158477 is the only pairs identified in PEL who shows evidence for LRLD, with an r2 value in the top 1 % of all pairs of SNPs in ADCY9 and CETP (ADCY9/CETP empirical p-value = 0.003, Figure 3—figure supplement 1c, d, Figure 3—figure supplement 2, Appendix 1—table 1). The r2 test used above is powerful to detect allelic associations, but the net association measured will be very small if selection acts on a specific genotype combination rather than on alleles. In that scenario, and when power allows it, the genotypic association is better assessed by with a χ2 distributed test statistic (with four degrees of freedom, χ42) comparing the observed and expected genotype combination counts (Rohlfs et al., 2010). The test confirmed the association in LIMAA (χ42 = 82.0, permutation p-value < 0.001, genome-wide empirical p-value = 0.0003, Appendix 1). The association discovered between rs1967309 and rs158477 is thus generalizable to the Peruvian population and not limited to the 1000G PEL sample.
+Still, such a LRLD signal can be due to a small sample size (Park, 2019). To confirm independently the association between genotypes at rs1967309 of ADCY9 and rs158477 of CETP, we used the LIMAA cohort (Asgari et al., 2020; Luo et al., 2019), a large cohort of 3509 Peruvian individuals with genotype information, to replicate our finding. The ancestry distribution, as measured by RFMix (Methods) is similar between the two cohorts (Appendix 1—figure 2a), however, the LIMAA cohort population structure shows additional subgroups compared to the 1000G PEL population sample (Appendix 1—figure 2c-e): to limit confounders, we excluded individuals coming from these subgroups (Appendix 1). In this dataset (N = 3,243), the pair of SNPs rs1967309-rs158477 is the only pairs identified in PEL who shows evidence for LRLD, with an r2 value in the top 1 % of all pairs of SNPs in ADCY9 and CETP (ADCY9/CETP empirical p-value = 0.003, Figure 3—figure supplement 1c, d, Figure 3—figure supplement 2, Appendix 1—table 1). The r2 test used above is powerful to detect allelic associations, but the net association measured will be very small if selection acts on a specific genotype combination rather than on alleles. In that scenario, and when power allows it, the genotypic association is better assessed by with a $χ^{2}$ distributed test statistic (with four degrees of freedom, $χ_{4}^{2}$) comparing the observed and expected genotype combination counts (Rohlfs et al., 2010). The test confirmed the association in LIMAA ($χ_{4}^{2}$ = 82.0, permutation p-value < 0.001, genome-wide empirical p-value = 0.0003, Appendix 1). The association discovered between rs1967309 and rs158477 is thus generalizable to the Peruvian population and not limited to the 1000G PEL sample.
 
-## Sex-specific long-range linkage disequilibrium signal
+### Sex-specific long-range linkage disequilibrium signal
 
-Because the allele frequencies at rs1967309 were suggestively different between males and females (Figure 4—figure supplement 1), we performed sex-stratified PBS analyses, which suggested that the LD block around rs1967309 is differentiated between sexes in the Peruvians (Figure 4—figure supplement 2, Appendix 1). We therefore explored further the effect of sex on the LRLD association found between rs1967309 and rs158477 and performed sex-stratified LRLD analyses. These analyses revealed that the correlation between rs1967309 and rs158477 is only seen in males in PEL (Figure 4a and b, Appendix 1—figure 4a and b, Appendix 1—table 1): the r2 value rose to 0.348 in males (ADCY9/CETP empirical p-value = 8.23 × 10–5, genome-wide empirical p-value < 2.85 × 10–4, N = 41) and became non-significant in females (ADCY9/CETP empirical p-value = 0.78, genome-wide empirical p-value = 0.80, N = 44). In the Andean population, the association between rs1967309 and rs158477 is not significant when we stratified by sex (Appendix 1—table 1), but we still see significant association signals with rs158477 at other SNPs in ADCY9 LD block in both sexes (Figure 4—figure supplement 3, Appendix 1—figure 5a,b). The LRLD result in PEL cannot be explained by differences of Andean ancestry proportion between males and females (p-value = 0.27, Mann-Whitney U test). A permutation analysis that shuffled the sex labels of samples established that the observed difference between the sexes is larger than what we expect by chance (p-value = 0.002, Appendix 1—figure 4c, Appendix 1). In the LIMAA cohort, we replicate this sex-specific result (Figure 4c and d, Appendix 1—figure 5c,d,e,f, Appendix 1—table 1) where the r2 test is significant in males (ADCY9/CETP empirical p-value = 0.003, N = 1,941) but not in females (ADCY9/CETP empirical p-value = 0.52, N = 1302). The genotypic χ42 test confirms the association between ADCY9 and CETP is present in males (χ42 = 56.6, permutation p-value = 0.001, genome-wide empirical p-value = 0.002, Appendix 1), revealing an excess of rs1967309-AA+ rs158477 GG. This is also the genotype combination driving the LRLD in PEL. In females, the test also shows a weaker but significant effect (χ42 = 37.0, permutation p-value = 0.017, genome-wide empirical p-value = 0.001) driven by an excess of a different genotype combination, rs1967309-AA+ rs158477 AA, which is, however, not replicated in PEL possibly because of lack of power (Appendix 1).
+Because the allele frequencies at rs1967309 were suggestively different between males and females (Figure 4—figure supplement 1), we performed sex-stratified PBS analyses, which suggested that the LD block around rs1967309 is differentiated between sexes in the Peruvians (Figure 4—figure supplement 2, Appendix 1). We therefore explored further the effect of sex on the LRLD association found between rs1967309 and rs158477 and performed sex-stratified LRLD analyses. These analyses revealed that the correlation between rs1967309 and rs158477 is only seen in males in PEL (Figure 4a and b, Appendix 1—figure 4a and b, Appendix 1—table 1): the r2 value rose to 0.348 in males (ADCY9/CETP empirical p-value = 8.23 × 10–5, genome-wide empirical p-value < 2.85 × 10–4, N = 41) and became non-significant in females (ADCY9/CETP empirical p-value = 0.78, genome-wide empirical p-value = 0.80, N = 44). In the Andean population, the association between rs1967309 and rs158477 is not significant when we stratified by sex (Appendix 1—table 1), but we still see significant association signals with rs158477 at other SNPs in ADCY9 LD block in both sexes (Figure 4—figure supplement 3, Appendix 1—figure 5a,b). The LRLD result in PEL cannot be explained by differences of Andean ancestry proportion between males and females (p-value = 0.27, Mann-Whitney U test). A permutation analysis that shuffled the sex labels of samples established that the observed difference between the sexes is larger than what we expect by chance (p-value = 0.002, Appendix 1—figure 4c, Appendix 1). In the LIMAA cohort, we replicate this sex-specific result (Figure 4c and d, Appendix 1—figure 5c,d,e,f, Appendix 1—table 1) where the r2 test is significant in males (ADCY9/CETP empirical p-value = 0.003, N = 1,941) but not in females (ADCY9/CETP empirical p-value = 0.52, N = 1302). The genotypic $χ_{4}^{2}$ test confirms the association between ADCY9 and CETP is present in males ($χ_{4}^{2}$ = 56.6, permutation p-value = 0.001, genome-wide empirical p-value = 0.002, Appendix 1), revealing an excess of rs1967309-AA+ rs158477 GG. This is also the genotype combination driving the LRLD in PEL. In females, the test also shows a weaker but significant effect ($χ_{4}^{2}$ = 37.0, permutation p-value = 0.017, genome-wide empirical p-value = 0.001) driven by an excess of a different genotype combination, rs1967309-AA+ rs158477 AA, which is, however, not replicated in PEL possibly because of lack of power (Appendix 1).
 
-## Epistatic effects on CETP gene expression
+![Figure 4.](https://cdn.elifesciences.org/articles/69198/elife-69198-fig4-v2.jpg)
+
+**Figure 4.:** Genotype correlation between the loci identified in CETP in Figure 3a and all SNPs with MAF >5% in ADCY9 for (a,b) the PEL population and (c,d) LIMAA cohort in males (a,c) and in females (b,d). Genotype frequencies per sex are shown in Figure 4—figure supplement 1 and sex-specific PBS values in Figure 4—figure supplement 2. The horizontal line shows the threshold for the 99th percentile of all comparisons of SNPs (MAF >5%) between ADCY9 and CETP. The vertical dotted line represents the position of rs1967309. Blue dots represent the rs158477 SNPs and pink represents the other three SNPs identified in Figure 3a (rs158480, rs158617, and rs12447620), which are in near-perfect LD. Figure 4—figure supplement 3 shows the same analysis in Andeans from NAGD. Gene plots for ADCY9 showing location of its exons are presented in blue below each plot.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69198/elife-69198-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Genotype frequency distribution of rs1967309 in ADCY9 (a,b) and rs158477 in CETP (c,d) in populations from the 1000 Genomes (1000G) Project, in Native Americans (NAGD) and LIMAA cohorts, in females (a,c) and males (b,d). Abbreviations: Altaic from Mongolia and Russia: ALT; Uralic Yukaghir from Russia: URY; Chukchi Kamchatkan from Russia: CHK; Northern American from Canada, Guatemala and Mexico: NOA; Central American from Costal Rica and Mexico: CEA; Chibchan Paezan from Argentina, Bolivia, Colombia, Costa Rica and Mexico: CHP; Equatorial Tucanoan from Argentina, Brazil, Colombia, Gualana and Paraguay: EQT; Andean from Bolivia, Chile, Colombia and Peru: AND. For 1000G populations, abbreviations can be found here https://www.internationalgenome.org/category/population/.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/69198/elife-69198-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Horizontal lines represent the 95th percentile PBS value of the chromosome 16 for each population for each sex. Vertical black lines represent the LD block around rs1967309 (shown as a black circle for PEL). Gene plots for ADCY9 showing location of its exons are presented in blue below each plot.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/69198/elife-69198-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Genotype correlation between the loci identified in CETP in Figure 3a and all SNPs with MAF >5% in ADCY9 for the Andean population, in males (N = 54) and in females (N = 34). The horizontal line shows the threshold for the 95th percentile of all comparisons of SNPs (MAF >5%) between ADCY9 and CETP. The vertical dotted line represents the position of rs1967309.
+
+### Epistatic effects on CETP gene expression
 
 LRLD between variants can suggest the existence of gene-gene interactions, especially if they are functional variants (Park, 2019). In order to be under selection, mutations typically need to modulate a phenotype or an endophenotype, such as gene expression. We have shown previously (Rautureau et al., 2018) that CETP and Adcy9 interact in mice to modulate several phenotypes, including atherosclerotic lesion development. To test whether these genes interact in humans, we knocked down (KD) ADCY9 in hepatocyte HepG2 cells (Step 3 a, Figure 1) and performed RNA sequencing on five KD biological replicates and five control replicates, to evaluate the impact of decreased ADCY9 expression on the transcriptome. We confirmed the KD was successful as ADCY9 expression is reduced in the KD replicates (Figure 5a), which represents a drastic drop in expression compared to the whole transcriptome changes (False Discovery Rate [FDR] = 4.07 x 10–14, Materials and methods). We also observed that CETP expression was increased in ADCY9-KD samples compared to controls (Figure 5a), an increase that is also transcriptome-wide significant (FDR = 1.97 × 10–7, ß = 1.257). This increased expression was validated by qPCR, and western blot also showed increased CETP protein product (Materials and methods, Figure 5—figure supplement 1a, b, Appendix 1), but its overexpression did not significatively modulate CETP expression (Figure 5—figure supplement 1c). Knocking down or overexpressing CETP did not impact ADCY9 expression on qPCR (Figure 5—figure supplement 1d, e). These experiments demonstrate an interaction between ADCY9 and CETP at the gene expression level and raised the hypothesis that ADCY9 potentially modulates the expression of CETP through a genetic effect mediated by rs1967309.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/69198/elife-69198-fig5-v2.jpg)
+
+**Figure 5.:** (a) Normalized expression of ADCY9 or CETP genes depending on wild type (WT) and ADCY9-KD in HepG2 cells from RNA sequencing on five biological replicates in each group. p-Values were obtained from a two-sided Wilcoxon paired test. qPCR and western blot results in HepG2 are presented in Figure 5—figure supplement 1. (b,c,d)CETP expression depending on the combination of rs1967309 and rs158477 genotypes in (b) GEUVADIS (p-value = 0.03, ß = –0.22, N = 287), (c) GTEx-Skin Sun Exposed in males (p-value = 0.0017, ß = –0.32, N = 330) and in (d) GTEx-tibial artery in females (p-value = 0.026, ß = 0.38, N = 156), for individuals of European descent according to principal component analysis. p-Values reported were obtained from a two-way interaction of a linear regression model for the maximum number of PEER/sPEER factors considered. Figure 5—figure supplement 2 show the interaction p-values depending on number of PEER/sPEER factors included in the linear models.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69198/elife-69198-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Relative mRNA expression of CETP of HepG2 cells 72 hr post-transfection with siRNA against human ADCY9 (si1039). qPCR assay was normalized with PGK1 and HBS1L genes, n = 5 independent experiments, (p-value = 0.0026 from t-test). (b) Quantification of CETP protein by Western blot assay, 200 ml of cell media (concentrated with Amicon ultra 0.5 ml 10 kDA units) from cells transfected with siRNA against human ADCY9 (si1039), were separated on 10 % TGX-acrylamide gel and transferred to PVDF membrane. CETP protein expression was determined using a primary antibody rabbit monoclonal anti-CETP (Abcam, ab157183) 1:1000 (3 % BSA, TBS, Tween 20 0.5%) O/N 4 °C, followed by HRP-conjugated secondary antibody goat anti-rabbit 1:10,000 (3% BSA) 1 hr RT. Figure b represents densitometry analysis of n = 3 experiments, p-value = 0.0029 from t-test. (c,e) Relative mRNA expression of (c) CETP and (e) ADCY9 genes in HepG2 cells post-transfection with pEZ-M50-CETP (overexpression of CETP) or pEZ-M46-ADCY9 (overexpression of ADCY9) plasmids. qPCR assay was normalized with PGK1 and HBS1L genes, n = 4 independent experiments. (d) Relative mRNA expression of ADCY9 of HepG2 cells 72 hr post-transfection with siRNA against human CETP. qPCR assay was normalized with PGK1 and HBS1L genes, n = 4 independent experiments.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/69198/elife-69198-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** For the two-way interaction (rs1967309*rs158477) (a,c), rs158477 is codded as additive (GG = 0, GA = 1, AA = 2). In the additive model (green triangle), rs1967309 is codded as additive (AA = 0, AG = 1, GG = 2). For the genotypic model (orange circle), rs1967309 was codded as a genotypic variable and p-values were obtained from a likelihood ratio test comparing models with and without the interaction term between the SNPs. The color of lines linking each value represents the sex. For the three-way interaction (rs1967309*rs158477*sex), both SNPs were codded as additive, and p-values were obtained from a linear regression model in R. P-values are presented on a -log10 scale. The orange, red and pink lines represent p-values of 0.1, 0.05, and 0.01, respectively.
 
 To test for potential interaction effects between rs1967309 and CETP, we used RNA-seq data from diverse projects in humans: the GEUVADIS project (Lappalainen et al., 2013), the Genotype-tissue Expression (GTEx v8) project (GTEx Consortium, 2013) and CARTaGENE (CaG) (Awadalla et al., 2013) (Step 3b, Figure 1). When looking across tissues in GTEx, ADCY9 and CETP expressions negatively correlate in almost all the tissues (Appendix 1—figure 6, Appendix 1), which is consistent with the effect observed during the ADCY9-KD experiment, showing increased expression of CETP expression when ADCY9 is lowly expressed (Figure 5a, Figure 5—figure supplement 1a, b). We evaluated the effects of the SNPs on expression levels of ADCY9 and CETP by modelling both SNPs as continuous variables (additive model) (Methods). The CETP SNP rs158477 was reported as an expression quantitative trait locus (eQTL) in GTEx v7 and, in our models, shows evidence of being a cis eQTL of CETP in several other tissues (Appendix 1), although not reaching genome-wide significance. To test specifically for an epistatic effect between rs1967309 and rs158477 on CETP expression, we included an interaction term in eQTL models (Materials and methods). We note here that we are testing for association for this specific pair of SNPs only, and that effects across tissues are not independent, such that we set our significance threshold at p-value = 0.05. This analysis revealed a significant interaction effect (p-value = 0.03, ß = −0.22) between the two SNPs on CETP expression in GEUVADIS lymphoblastoid cell lines (Figure 5b, Appendix 1—figure 7a). In rs1967309 AA individuals, copies of the rs158477 A allele increased CETP expression by 0.46 (95% CI 0.26–0.86) on average. In rs1967309 AG individuals, copies of the rs158477 A allele increased CETP expression by 0.24 (95% CI 0.06–0.43) on average and the effect was null in rs1967309 GG individuals (p-valueGG = 0.58). This suggests that the effect of rs158477 on CETP expression changes depending on genotypes of rs1967309. The interaction is also significant in several GTEx tissues, most of which are brain tissues, like hippocampus, hypothalamus, and substantia nigra, but also in skin, although we note that the significance of the interaction depends on the number of PEER factors included in the model (Appendix 1—figure 8). These factors are needed to correct for unknown biases in the data, but also potentially lead to decreased power to detect interaction effects (Brynedal et al., 2017). In CaG whole blood samples, the interaction effect using additive genetic effect at rs1967309 was not significant, similarly to results from GTEx in whole blood samples. However, given the larger size of the dataset, we evaluated a genotypic encoding for the rs1967309 SNP in which the interaction effect is significant (P-value = 0.008, Appendix 1—figure 7b) in whole blood, suggesting that rs1967309 could be modulating rs158477 eQTL effect, in this tissue at least, with a genotype-specific effect. We highlight that the sample sizes of current transcriptomic resources do not allow to detect interaction effects at genome-wide significance, however the likelihood of finding interaction effects between our two SNPs on CETP expression in three independent datasets is unlikely to happen by chance alone, providing evidence for a functional genetic interaction.
 
 Given the sex-specific results reported above, we stratified our interaction eQTL analyses by sex. We observed that the interaction effect on CETP expression in CaG whole blood samples (Nmale = 359) is restricted to male individuals, and, despite low power due to smaller sample size in GEUVADIS, the interaction is also only suggestive in males (Appendix 1—figure 7c and d). In GTEx, most well-powered tissues that showed a significant effect in the sex-combined analyses also harbor male-specific interactions (Appendix 1—figure 9). For instance, GTEx skin male samples (Nmale = 330) show the most significant male-specific interaction effects, with the directions of effects replicating the sex-combined result in GEUVADIS (an increase of CETP expression for each rs158477 A allele in rs1967309 AA individuals) albeit with an observable reversal of the direction in rs1967309 GG individuals (decrease of CETP expression with additional rs158477 A alleles) (Figure 5c, Figure 5—figure supplement 2a). However, significant effects in females are detected in tissues not previously seen as significant for the interaction in the sex-combined analysis, in the tibial artery (Figure 5d, Figure 5—figure supplement 2) and the heart atrial appendage (Appendix 1—figure 9). For tissues with evidence of sex-specific effects in stratified analyses, we also tested the effect of an interaction between sex, rs158477 and rs1967309 (Materials and methods) on CETP expression: the three-way interaction is only significant for tibial artery (Figure 5—figure supplement 2).
 
-## Epistatic effects on phenotypes
+### Epistatic effects on phenotypes
 
 The interaction effect of rs1967309 and rs158477 on CETP expression in several tissues, found in multiple independent RNA-seq datasets, coupled with the detection of LRLD between these SNPs in the Peruvian population suggest that selection may act jointly on these loci, specifically in Peruvians or Andeans. These populations are well known for their adaptation to life in high altitude, where the oxygen pressure is lower and where the human body is subjected to hypoxia (Beall, 2007; Brutsaert et al., 2005; Julian and Moore, 2019; Moore, 2017a). High altitude hypoxia impacts individuals’ health in many ways, such as increased ventilation, decreased arterial pressure, and alterations of the energy metabolism in cardiac and skeletal muscle (Milledge et al., 2007; Murray, 2016). To test which phenotype(s) may explain the putative coevolution signal discovered (Step 4, Figure 1), we investigated the impact of the interaction between rs1967309 and rs158477 on several physiological traits, energy metabolism and cardiovascular outcomes using the UK Biobank and GTEx cohort (Figure 6—figure supplement 1, Appendix 1—table 2). The UK Biobank has electronic medical records and GTEx has cause of death and variables from medical questionnaires (GTEx Consortium, 2013). The interaction term was found to be nominally significant (p-value < 0.05) for forced vital capacity (FVC), forced expiratory volume in 1 s (FEV1) and whole-body water mass, and suggestive (p-value < 0.10) for the basal metabolic rate, all driven by the effects in females (Figure 6a). For CAD, the interaction is suggestive (p-value < 0.10) and, in this case, driven by males (Figure 6a).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/69198/elife-69198-fig6-v2.jpg)
+
+**Figure 6.:** (a) Significance of the interaction effect between rs1967309 and rs158477 on several physiological traits, energy metabolism and cardiovascular outcomes overall and stratified by sex in the UK biobank. Horizontal lines represent the p-value thresholds at 0.05 (plain) and 0.10 (dotted). Single-SNP p-values are shown in Figure 6—figure supplement 1. (b,c) Sex-stratified effects of rs158477 on (b) cardiovascular phenotypes and (c) biomarkers depending on the genotype of rs1967309 (genotypic encoding). The p-values pitx reported come from a likelihood ratio test comparing models with and without the three-way interaction term between the two SNPs and sex. Sex-combined results using GTEx cardiovascular phenotype data are shown in Figure 6—figure supplement 2. See Appendix 1—table 2 for the list of abbreviations.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/69198/elife-69198-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Significance of the marginal effect of rs1967309 and rs158477, both codded as additive, on several physiological traits, energy metabolism and cardiovascular outcomes, overall and stratified by sex in the UK biobank. The dotted line represents the p-value at 0.05. See Appendix 1—table 2 for the list of abbreviations.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/69198/elife-69198-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (a) Effect of the rs158477 SNP on the cardiovascular phenotype (n = 693, cas = 120, control = 563) depending on the genotype of rs1967309 in GTEx. For both models, rs158477 was codded as additive (GG = 0, GA = 1, AA = 2). For the additive model, rs1967309 was codded as additive (AA = 0, AG = 1, GG = 2). p-Value of the interaction (pitx) was obtained using a linear regression in R. For the genotypic model, rs1967309 was codded as a genotypic variable and p-values were obtained from a likelihood ratio test comparing models with and without the interaction term between the SNPs. (b) Proportion of cases for each genotype combinations between rs1967309 and rs158477. The numerator indicates the number of cases and the denominator the number total of individuals (cases + controls). Darker colors show higher proportions of cases.
 
 Given this sex-specific result on CAD, the condition targeted by dalcetrapib, we tested the effect of an interaction between sex, rs158477 and rs1967309 (genotypic encoding, see Materials and methods) on binary cardiovascular outcomes including myocardial infarction (MI) and CAD. For CAD, we see a significant three-way interaction effect, meaning that for individuals carrying the AA genotype at rs1967309, the association between rs158477 and CAD is in the opposite direction in males and females. In other words, in rs1967309-AA females, having an extra A allele at rs158477, which is associated with higher CETP expression (Figure 5b), has a protective effect on CAD. Conversely, in rs1967309-AA males, each A allele at rs158477 increases the probability of having an event (Figure 6a). Little effect is seen in either sex for AG or GG at rs1967309, although the heterozygotes AG behave differently in females (which further justifies the genotypic encoding of rs1967309). The beneficial effect of the interaction on CAD thus favors the rs1967309-AA+ rs153477 GG males and the rs1967309-AA+ rs153477 AA females, two genotype combinations which are respectively enriched in a sex-specific manner in the LIMAA cohort (Appendix 1). Again, observing such a result that concords with the direction of effects in the LRLD sex-specific finding is noteworthy. A significant interaction between the SNPs is also seen in the GTEx cohort (p-value = 0.004, Figure 6—figure supplement 2, Appendix 1), using questionnaire phenotypes reporting on MI, but the small number of individuals precludes formally investigating sex effects.
 
@@ -110,44 +162,474 @@ In conclusion, we discovered a putative epistatic interaction between the pharma
 
 ## Materials and methods
 
-## Population genetics datasets
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>CETP</td>
+      <td>GenBank</td>
+      <td>HGNC:1,869</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>ADCY9</td>
+      <td>GenBank</td>
+      <td>HGNC:240</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HepG2</td>
+      <td>ATCC</td>
+      <td>RRID:CVCL_0027</td>
+      <td>Hepatoblastoma</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEZ-M46-AC9 plasmid</td>
+      <td>GeneCopoeia</td>
+      <td>EX-H0609-M46</td>
+      <td>Methods section</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEZ-M50-CETP plasmid</td>
+      <td>GeneCopoeia</td>
+      <td>EX-C0070-M50</td>
+      <td>Methods section</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CETP (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>#ab157183</td>
+      <td>(1:1000) in 3 % BSA, TBS, tween 20 0.5%, O/N 4 °C</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit antibody (goat polyclonal)</td>
+      <td>Abcam</td>
+      <td>RRID:AB_955447</td>
+      <td>(1:10 000) in 3 % BSA 1 h at room temperature</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human CETP_F</td>
+      <td>IDT Technologies</td>
+      <td>PCR primers</td>
+      <td>CTACCTGTCTTTCCATAA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human CETP_R</td>
+      <td>IDT Technologies</td>
+      <td>PCR primers</td>
+      <td>CATGATGTTAGAGATGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human ADCY9_F</td>
+      <td>IDT Technologies</td>
+      <td>PCR primers</td>
+      <td>CTGAGGTTCAAGAACATCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human ADCY9_R</td>
+      <td>IDT Technologies</td>
+      <td>PCR primers</td>
+      <td>TGATTAATGGGCGGCTTA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Silencer Select siRNA against human ADCY9</td>
+      <td>Ambion</td>
+      <td>Cat. #4390826 ID 1039</td>
+      <td>CCUGAUGAAAGAUUACUUUtt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Silencer Select siRNA against human CETP</td>
+      <td>Ambion</td>
+      <td>Cat. #4392420 ID 2933</td>
+      <td>GGACAGAUCUGCAAAGAGAtt</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Negative Control siRNA</td>
+      <td>Ambion</td>
+      <td>Cat. #4390844</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine RNAiMAX reagent</td>
+      <td>Invitrogen</td>
+      <td>Cat. #13,778</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine 2000 reagent</td>
+      <td>Invitrogen</td>
+      <td>Cat. #11668–019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plus Mini Kit</td>
+      <td>Qiagen</td>
+      <td>Cat. #74,136</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High-Capacity cDNA Reverse Transcription Kit</td>
+      <td>Applied Biosystems</td>
+      <td>Cat. #4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Agilent RNA 6000 Nano Kit for Bioanalyzer 2,100 System</td>
+      <td>Agilent Technologies</td>
+      <td>Cat. #5067–1511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SYBR-Green reaction mix</td>
+      <td>BioRad</td>
+      <td>Cat. #1725274</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Amicon Ultra 0.5 ml 10 kDa cutoff units</td>
+      <td>Millipore Sigma</td>
+      <td>Cat. #UFC501096</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Western Lightning ECL Pro</td>
+      <td>Perkin Elmer</td>
+      <td>Cat. #NEL122001EA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>TGX Stain-Free FastCast Acrylamide 10%</td>
+      <td>BioRad</td>
+      <td>Cat# 1610183</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TrimGalore!</td>
+      <td>DOI:10.14806/ej.17.1.200</td>
+      <td>RRID:SCR_011847</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR (v.2.6.1a)</td>
+      <td>DOI:10.1093/bioinformatics/bts635</td>
+      <td>RRID:SCR_019993</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RSEM (v.1.3.1)</td>
+      <td>DOI:10.1186/1471-2105-12-323</td>
+      <td>RRID:SCR_013027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R statistical software (v.3.6.0/v.3.6.1)</td>
+      <td>https://www.r-project.org/</td>
+      <td>RRID:SCR_001905</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlashPCA2</td>
+      <td>DOI:10.1093/bioinformatics/btx299</td>
+      <td>RRID:SCR_021680</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Vcftools (v.0.1.17)</td>
+      <td>DOI:10.1093/bioinformatics/btr330</td>
+      <td>RRID:SCR_001235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RFMix (v.2.03)</td>
+      <td>DOI:10.1016 /j.ajhg.2013.06.020</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PEER</td>
+      <td>DOI:10.1038/nprot.2011.457</td>
+      <td>RRID:SCR_009326</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pyGenClean (v.1.8.3)</td>
+      <td>DOI:10.1093/bioinformatics/btt261</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SAS (v.9.4)</td>
+      <td>https://www.sas.com/en_us/software/stat.html</td>
+      <td>RRID:SCR_008567</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>EPO pipeline (version e59)</td>
+      <td>DOI:10.1093/database/bav096</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bcftools (v.1.9)</td>
+      <td>DOI:10.1093/bioinformatics/btr509</td>
+      <td>RRID:SCR_005227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GenotypeHarmonizer (v.1.4.20)</td>
+      <td>DOI:10.1186/1756-0500-7-901</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Hapbin (v.1.3.0)</td>
+      <td>DOI:10.1093/molbev/msv172</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SHAPEIT2 (r.837)</td>
+      <td>DOI:10.1038/nmeth.1785</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PBWT</td>
+      <td>DOI:10.1093/bioinformatics/btu014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Beacon designer software (v.8) (Premier Biosoft)</td>
+      <td>http://www.premierbiosoft.com/qOligo/Oligo.jsp?PID=1</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>1000 Genomes project</td>
+      <td>DOI:10.1038/nature15393</td>
+      <td>RRID:SCR_006828</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LIMAA</td>
+      <td>DOI:10.1038 /s41467-019-11664-1</td>
+      <td>dbGAP:phs002025.v1.p1</td>
+      <td>dbgap project #26,882</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Native American genetic dataset</td>
+      <td>DOI:10.1038/nature11258</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GEUVADIS</td>
+      <td>DOI:10.1038/nature12531</td>
+      <td>RRID:SCR_000684</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GTEx (v8)</td>
+      <td>DOI:10.1038 /ng.2653</td>
+      <td>RRID:SCR_013042</td>
+      <td>dbgap project #19,088</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CARTaGENE biobank</td>
+      <td>DOI:10.1093/ije/dys160</td>
+      <td>RRID:SCR_010614</td>
+      <td>CAG project number 406,713</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>UK biobank</td>
+      <td>DOI:10.1371/journal.pmed.1001779</td>
+      <td>RRID:SCR_012815</td>
+      <td>UKB project #15,357 and #20,168</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sanger Imputation Server</td>
+      <td>DOI:10.3389/fgene.2019.00034</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Population genetics datasets
 
 The whole-genome sequencing data from the 1000 Genomes project (1000G) Phase III dataset (http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/) was filtered to exclude INDELs and CNVs so that we kept only biallelic SNPs. This database has genomic variants of 2504 individuals across five ancestral populations: Africans (AFR, n = 661), Europeans (EUR, n = 503), East Asians (EAS, n = 504), South Asians (SAS, n = 489), and Americans (AMR, n = 347) (Auton et al., 2015). The replication dataset, LIMAA, has been previously published (Asgari et al., 2020; Luo et al., 2019) and was accessed through dbGaP [phs002025.v1.p1, dbgap project #26,882]. This cohort was genotyped with a customized Affymetric LIMAAray containing markers optimized for Peruvian-specific rare and coding variants. We excluded related individuals as reported previously (Asgari et al., 2020), resulting in a final dataset of 3,509 Peruvians. We also identified fine-scale population structure in this cohort and a more homogeneous subsample of 3243 individuals (1302 females and 1941 males) in this cohort was kept for analysis (Table 1, Appendix 1). The Native American genetic dataset (NAGD) contains 2351 individuals from Native descendants from the data from a previously published study (Reich et al., 2012). Individuals were separated by their linguistic families identified by Reich and colleagues (Reich et al., 2012). NAGD came under the Hg18 coordinates, so a lift over was performed to transfer to the Hg19 genome coordinates. Pre-processing details for these datasets are described in Appendix 1.
 
-## eQTL datasets
+**Table 1.**
+ Cohort information.Sample sizes are reported after quality control steps.
 
-We used several datasets (Table 1) for which we had both RNA-seq data and genotyping. First, the GEUVADIS dataset (Lappalainen et al., 2013) for 1000 G individuals was used (available at https://www.internationalgenome.org/data-portal/data-collection/geuvadis). A total of 287 non-duplicated European samples (CEU, GBR, FIN, TSI) were kept for analysis. Second, the Genotype-tissue Expression v8 (GTEx) (GTEx Consortium, 2013) was accessed through dbGaP (phs000424.v8.p2, dbgap project #19088) and contains gene expression across 54 tissues and 948 donors, genetic and phenotypic information. Phenotype analyses are described in Appendix 1. The cohort contains mainly of European descent (84.6%), aged between 20 and 79 years old. Analyses were done on 699 individuals, 66 % of males and 34 % of females (Appendix 1—figure 10a). Third, we used the data from the CARTaGENE biobank (Awadalla et al., 2013) (CAG project number 406713) which includes 728 RNA-seq whole-blood samples with genotype data, from individuals from Quebec (Canada) aged between 36 and 72 years old (Appendix 1—figure 10b). Genotyping and RNA-seq data processing pipelines for these datasets are detailed in Appendix 1. To quantify ADCY9 gene expression, we removed the isoform transcript ENST00000574721.1 (ADCY9-205 from the Hg38) from the Gene Transfer Format (GTF) file because it is a “retained intron” and accumulates genomic noise (Appendix 1), masking true signals for ADCY9. To take into account hidden factors, we calculated PEER factors (Stegle et al., 2012) on the normalized expressions, on all samples and stratified by sex (sPEER factors). To detect eQTL effects, we performed a two-sided linear regression on ADCY9 and CETP expressions using R (v.3.6.0) (https://www.r-project.org/) with the formula lmp∼rs1967309*rs158477+Covariates for evaluating the interaction effect, lmp∼rs1967309+rs158477+Covariates for the main effect of the SNPs and lmp∼rs1967309*rs158477*sex+Covariates for evaluating the three-way interaction effect. Under the additive model, each SNP is coded by the number of non-reference alleles (G for rs1967309 and A for rs158477), under the genotypic model, dummy coding is used with homozygous reference genotype set as reference. The covariates include the first 5 Principal Components (PCs), age (except for GEUVADIS, information not available), sex, as well as PEER factors. We tested the robustness of our results to the inclusion of different numbers of PEER factors in the models and we report them all for GEUVADIS, CARTaGENE and GTEx (Appendix 1—figures 7–9). Reported values in the text are for 5 PEER factors in GEUVADIS, 10 PEER factors in CARTaGENE, 25 sPEER for skin sun exposed in male and 10 sPEER for artery tibial in female in GTEx. Covariates specific to each cohort are reported in Appendix 1.
 
-## UK biobank processing and selected phenotypes
+<table>
+  <thead>
+    <tr>
+      <th>Cohort/Subpopulation</th>
+      <th>Abbreviation</th>
+      <th>Ethnicity</th>
+      <th>Sample size(% female)</th>
+      <th>Age</th>
+      <th>Reference</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1000 G – Peruvian</td>
+      <td>PEL*</td>
+      <td>Peruvian</td>
+      <td>85 (52%)</td>
+      <td>NA</td>
+      <td>Auton et al., 2015</td>
+    </tr>
+    <tr>
+      <td>LIMAA/Peruvian</td>
+      <td>LIMAA</td>
+      <td>Peruvian</td>
+      <td>3,243 (40%)</td>
+      <td>29.6 ± 13.8</td>
+      <td>Asgari et al., 2020; Luo et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Native Amerind/Andean</td>
+      <td>NAGD/AND</td>
+      <td>Amerind/Peruvian</td>
+      <td>88 (40%)</td>
+      <td>NA</td>
+      <td>Reich et al., 2012</td>
+    </tr>
+    <tr>
+      <td>GEUVADIS</td>
+      <td>GEUVADIS*</td>
+      <td>European descent</td>
+      <td>287 (54%)</td>
+      <td>NA</td>
+      <td>Lappalainen et al., 2013</td>
+    </tr>
+    <tr>
+      <td>CARTaGENE</td>
+      <td>CaG</td>
+      <td>European descent</td>
+      <td>728 (51%)</td>
+      <td>53.6 ± 8.7</td>
+      <td>Awadalla et al., 2013</td>
+    </tr>
+    <tr>
+      <td>GTEx</td>
+      <td>GTEx</td>
+      <td>European descent</td>
+      <td>699 (34%)</td>
+      <td>52.6 ± 13.1</td>
+      <td>GTEx Consortium, 2013</td>
+    </tr>
+    <tr>
+      <td>UK biobank</td>
+      <td>Ukb*</td>
+      <td>European descent</td>
+      <td>413,138 (54%)</td>
+      <td>56.8 ± 8.0</td>
+      <td>Sudlow et al., 2015</td>
+    </tr>
+  </tbody>
+</table>
+
+_*indicates a discovery cohort.NA: not available._
+
+### eQTL datasets
+
+We used several datasets (Table 1) for which we had both RNA-seq data and genotyping. First, the GEUVADIS dataset (Lappalainen et al., 2013) for 1000 G individuals was used (available at https://www.internationalgenome.org/data-portal/data-collection/geuvadis). A total of 287 non-duplicated European samples (CEU, GBR, FIN, TSI) were kept for analysis. Second, the Genotype-tissue Expression v8 (GTEx) (GTEx Consortium, 2013) was accessed through dbGaP (phs000424.v8.p2, dbgap project #19088) and contains gene expression across 54 tissues and 948 donors, genetic and phenotypic information. Phenotype analyses are described in Appendix 1. The cohort contains mainly of European descent (84.6%), aged between 20 and 79 years old. Analyses were done on 699 individuals, 66 % of males and 34 % of females (Appendix 1—figure 10a). Third, we used the data from the CARTaGENE biobank (Awadalla et al., 2013) (CAG project number 406713) which includes 728 RNA-seq whole-blood samples with genotype data, from individuals from Quebec (Canada) aged between 36 and 72 years old (Appendix 1—figure 10b). Genotyping and RNA-seq data processing pipelines for these datasets are detailed in Appendix 1. To quantify ADCY9 gene expression, we removed the isoform transcript ENST00000574721.1 (ADCY9-205 from the Hg38) from the Gene Transfer Format (GTF) file because it is a “retained intron” and accumulates genomic noise (Appendix 1), masking true signals for ADCY9. To take into account hidden factors, we calculated PEER factors (Stegle et al., 2012) on the normalized expressions, on all samples and stratified by sex (sPEER factors). To detect eQTL effects, we performed a two-sided linear regression on ADCY9 and CETP expressions using R (v.3.6.0) (https://www.r-project.org/) with the formula $lmp∼rs1967309*rs158477+Covariates$ for evaluating the interaction effect, $lmp∼rs1967309+rs158477+Covariates$ for the main effect of the SNPs and $lmp∼rs1967309*rs158477*sex+Covariates$ for evaluating the three-way interaction effect. Under the additive model, each SNP is coded by the number of non-reference alleles (G for rs1967309 and A for rs158477), under the genotypic model, dummy coding is used with homozygous reference genotype set as reference. The covariates include the first 5 Principal Components (PCs), age (except for GEUVADIS, information not available), sex, as well as PEER factors. We tested the robustness of our results to the inclusion of different numbers of PEER factors in the models and we report them all for GEUVADIS, CARTaGENE and GTEx (Appendix 1—figures 7–9). Reported values in the text are for 5 PEER factors in GEUVADIS, 10 PEER factors in CARTaGENE, 25 sPEER for skin sun exposed in male and 10 sPEER for artery tibial in female in GTEx. Covariates specific to each cohort are reported in Appendix 1.
+
+### UK biobank processing and selected phenotypes
 
 The UK biobank (Sudlow et al., 2015) contains 487,392 genotyped individuals from the UK still enrolled as of August 20th 2020, imputed using the Haplotype Reference Consortium as the main reference panel, and accessed through project #15,357 and UKB project #20,168. Additional genetic quality control was done using pyGenClean (v.1.8.3) (Lemieux Perreault et al., 2013). Variants or individuals with more than 2 % missing genotypes were filtered out. Individuals with discrepancies between the self-reported and genetic sex or with aneuploidies were removed from the analysis. We considered only individuals of European ancestry based on PCs, as it is the largest population in the UK Biobank, and because ancestry can be a confounder of the genetic effect on phenotypes. We used the PCs from UK Biobank to define a region in PC space using individuals identified as ‘white British ancestry’ as a reference population. Using the kinship estimates from the UK Biobank, we randomly removed individuals from kinship pairs where the coefficient was higher than 0.0884 (corresponding to a third-degree relationship). The resulting post QC dataset included 413,138 individuals. For the reported phenotypes, the date of baseline visit was between 2006 and 2010. The latest available hospitalization records discharge date was June 30th 2020 and the latest date in the death registries was February 14th 2018. We used algorithmically defined cardiovascular outcomes based on combinations of operation procedure codes (OPCS) and hospitalization or death record codes (ICD9/ICD10). A description of the tested continuous variables can be found in Appendix 1—table 2. We used age at recruitment defined in variable #21,022 and sex in variable #31. We ignored self-reported events for cardiovascular outcomes as preliminary analyses suggested they were less precise than hospitalization and death records.
 
 In association models, each SNP analyzed is coded by the number of non-reference alleles, G for rs1967309 and A for rs158477. SNP rs1967309 was also coded as a genotypic variable, to allow for non-additive effects. For continuous traits (Appendix 1—table 2) in the UK Biobank, general two-sided linear models (GLM) were performed using SAS software (v.9.4). A GLM model was first performed using the covariates age, sex and PCs 1–10. The externally studentized residuals were used to determine the outliers, which were removed. The normality assumption was confirmed by visual inspection of residuals for most of the outcomes, except birthwt and sleep. For biomarkers and cardiovascular endpoints, regression analyses were done in R (v.3.6.1). Linear regression analyses were conducted on standardized outcomes and logistic regression was used for cardiovascular outcomes. Marginal effects were calculated using margins package in R. In both cases, models were adjusted for age at baseline and top 10 PCs, as well as sex when not stratified. In models assessing two-way (rs1967309 by rs158477) or three-way (rs1967309 by rs158477 by sex) interactions, we used a 2 d.f. likelihood ratio test for the genotypic dummy variables’ interaction terms (genotypic model) (Appendix 1).
 
-## RNA-sequencing of ADCY9-knocked-down Hepg2 cell line
+### RNA-sequencing of ADCY9-knocked-down Hepg2 cell line
 
 The human liver hepatocellular HepG2 cell line was obtained from ATCC, a cell line derived from the liver tissue of a 15-year-old male donor (López-Terrada et al., 2009). Our cells tested negatively for mycoplasma contamination and have a morphology and expression profile concordant with this cell type. Cells were cultured in EMEM Minimum essential Medium Eagle’s, supplemented with 10 % fetal bovine serum (Wisent Inc). A total of 250,000 cells in 2 ml of medium in a six-well plate were transfected using 12.5 pmol of Silencer Select siRNA against human ADCY9 (Ambion cat # 4390826 ID 1039), Silencer Select siRNA against CETP (Ambion cat 4392420 ID 2933) or Negative Control siRNA (Ambion cat #4390844) with 5 μl of Lipofectamine RNAiMAX reagent (Invitrogen cat #13778) in 500 μl Opti-MEM I reduced serum medium (Invitrogen cat # 31985) for 72 hr (Appendix 1—table 3, Appendix 1). The experiment was repeated five times at different cell culture passages. Total RNA was extracted from transfected HepG2 cells using RNeasy Plus Mini Kit (Qiagen cat #74136) in accordance with the manufacturer’s recommendation. Preparation of sequencing library and sequencing was performed at the McGill University Innovation Center. Briefly, ribosomal RNA was depleted using NEBNext rRNA depletion kit. Sequencing was performed using Illumina NovaSeq 6000 S2 paired end 100 bp sequencing lanes. Basic QC analysis of the 10 samples was performed by the Canadian Centre for Computational Genomics (C3G). To process the RNA-seq samples, we first performed read trimming and quality clipping using TrimGalore! (Martin, 2011; Krueger et al., 2021), we aligned the trimmed reads on the Hg38 reference genome using STAR (v.2.6.1a) and we ran RSEM (v.1.3.1) on the transcriptome aligned libraries. Prior to normalization with limma and voom, we filtered out genes which had less than six reads in more than 5 samples. For ADCY9 and CETP gene-level differential expression analyses, we compared the mean of each group of replicates with a t-test for paired samples. The transcriptome-wide differential expression analysis was done using limma, on all genes having an average of at least 10 reads across samples from a condition. Samples were paired in the experiment design. The multiple testing was taken into account by correcting the p-values with the qvalue R package (v.4.0.0) (Storey, 2002), to obtain transcriptome-wide FDR values.
 
-## Overexpression of ADCY9 and CETP genes in HepG2 cell line
+### Overexpression of ADCY9 and CETP genes in HepG2 cell line
 
 For ADCY9 and CETP overexpression experiments, 500,000 cells in 2 ml of medium in a six-well plate were transfected using 1 µg of pEZ-M46-AC9 or pEZ-M50-CETP plasmids (GeneCopoeia) with 5 µl of Lipofectamine 2000 reagent (Invitrogen cat # 11668–019) for 72 hr. Total RNA was extracted from transfected HepG2 cells using RNeasy Plus Mini Kit (Qiagen cat #74136) in accordance with the manufacturer’s recommendation (Appendix 1—table 3, Appendix 1).
 
-## Natural selection analyses
+### Natural selection analyses
 
 We used the integrated Haplotype Statistic (iHS) (Voight et al., 2006) and the population branch statistic (PBS) (Auton et al., 2015) to look for selective signatures. The iHS values were computed for the each 1000G population. An absolute value of iHS above two is considered to be a genome wide significant signal (Voight et al., 2006). Prior to iHS computation, ancestral alleles were retrieved from six primates using the EPO pipeline (version e59) (Herrero et al., 2016) and the filtered 1000 Genomes vcf files were converted to change the reference allele as ancestral allele using bcftools (Li et al., 2009) with the fixref plugin. The hapbin program (v.1.3.0) (Maclean et al., 2015) was then used to compute iHS using per population-specific genetic maps computed by Adam Auton on the 1000G OMNI dataset (http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/technical/working/20130507_omni_recombination_rates/). When the genetic map was not available for a subpopulation, the genetic map from the closest sub-population was selected according to their global FST value computed on the phase three dataset.
 
 We scanned the ADCY9 and CETP genes using the population branch statistic (PBS), using 1000G sub-populations data. PBS summarizes a three-way comparison of allele frequencies between two closely related populations, and an outgroup. The grouping we focused on was PEL/MXL/CHB, with PEL being the focal population to test if allele frequencies are especially differentiated from those in the other populations. The CHB population was chosen as an outgroup to represent a Eurasian population that share common ancestors in the past with the American populations, after the out-of-Africa event. Using PJL (South Asia) and CEU (Europe) as an outgroup, or CLM as a closely related population (instead of MXL) yield highly similar results. To calculate FST for each pair of population in our tree, we used vcftools (Danecek et al., 2011) by subpopulation. We calculated normalized PBS values as in Crawford et al., 2017, which adjusts values for positions with large branches in all populations, for the whole genome. We use this distribution to define an empirical threshold for significance based on the 95th percentile of all PBS values genome-wide for each of the three populations.
 
-## Long-range linkage disequilibrium
+### Long-range linkage disequilibrium
 
-Long-range linkage disequilibrium (LRLD) was calculated using the function geno-r2 of vcftools (v.0.1.17) which uses the genotype frequencies. LRLD was evaluated in all subpopulations from 1000 Genomes Project Phase III, in LIMAA and NAGD, for all biallelic SNPs in ADCY9 (chr16:4,012,650–4,166,186 in Hg19 genome reference) and CETP (chr16:56,995,835–57,017,756 in Hg19 genome reference). We analyzed loci from the phased VCF files that had a MAF of at least 5 % and a missing genotype of at most 10%, in order to retain a maximum of SNPs in NAGD which has higher missing rates than the others. We extracted the 99th percentile of all pairs of comparisons between ADCY9 and CETP genes to use as a threshold for empirical significance and we refer to these as ADCY9/CETP empirical p-values. In LIMAA, we also evaluated the genotypic association using a χ2 test with four degrees of freedom (χ42) using a permutation test, as reported in Rohlfs et al., 2010 (Appendix 1).
+Long-range linkage disequilibrium (LRLD) was calculated using the function geno-r2 of vcftools (v.0.1.17) which uses the genotype frequencies. LRLD was evaluated in all subpopulations from 1000 Genomes Project Phase III, in LIMAA and NAGD, for all biallelic SNPs in ADCY9 (chr16:4,012,650–4,166,186 in Hg19 genome reference) and CETP (chr16:56,995,835–57,017,756 in Hg19 genome reference). We analyzed loci from the phased VCF files that had a MAF of at least 5 % and a missing genotype of at most 10%, in order to retain a maximum of SNPs in NAGD which has higher missing rates than the others. We extracted the 99th percentile of all pairs of comparisons between ADCY9 and CETP genes to use as a threshold for empirical significance and we refer to these as ADCY9/CETP empirical p-values. In LIMAA, we also evaluated the genotypic association using a $χ^{2}$ test with four degrees of freedom ($χ_{4}^{2}$) using a permutation test, as reported in Rohlfs et al., 2010 (Appendix 1).
 
 Furthermore, for both cohorts, we created a distribution of LRLD values for random pairs of SNPs across the genome to obtain a genome-wide null distribution of LRLD to evaluate how unusual the genotypic association between our candidate SNPs (rs1967309-rs158477) is while taking into account the cohort-specific background genomic noise/admixture and allele frequencies. We extracted 3513 pairs of SNPs that match rs1967309 and rs158477 in terms of MAF, physical distance (in base pairs) and genetic distance (in centiMorgans (cM), based on the PEL genetic map) between them in both cohorts (Appendix 1), and report genome-wide empirical p-values based on this distribution. For the analyses of LRLD between ADCY9 and CETP stratified by sex, we considered the same set of SNP pairs that we used for the full cohorts, but separated the dataset by sex before calculating the LRLD values. To evaluate how likely the differences observed in LRLD between sex are, we also performed permutations of the sex labels across individuals to create a null distribution of sex-specific effects (Appendix 1).
 
-## Local ancestry inference
+### Local ancestry inference
 
 To evaluate local ancestry in the PEL subpopulation and in the LIMAA cohort, we constructed a reference panel using the phased haplotypes from 1000 Genomes (YRI, CEU, CHB) and the phased haplotypes of NAGD (Northern American, Central American and Andean) (Appendix 1). We kept overlapping positions between all datasets, and when SNPs had the exact same genetic position, we kept the SNP with the highest variance in allele frequencies across all reference populations (Appendix 1). We ran RFMix (v.2.03) (Maples et al., 2013) (with the option ‘reanalyze-reference’ and for 25 iterations) on all phased chromosomes. We estimated the whole genome average proportion of each ancestry using a weighted mean of the chromosome specific proportions given by RFMix based on the chromosome size in cM. For comparing the overall Andean enrichment inferred by RFMix between rs1967309/rs158477 genotype categories, we used a two-sided Wilcoxon-t-test. To evaluate the Andean local ancestry enrichment specifically at ADCY9 and CETP, we computed the genome-wide 95th percentile for proportion of Andean attribution for all intervals given by RFMix.
 
-## Code and source data
+### Code and source data
 
 Numerical summary data represented as a graph in main figures, as well as the code to reproduce figures and analyses, can be found here: Gamache, 2021. Raw RNA sequencing data for knocked down experiments in hepatocyte HepG2 cells are deposited the data on NCBI Gene Expression Omnibus, accession number GSE174640.

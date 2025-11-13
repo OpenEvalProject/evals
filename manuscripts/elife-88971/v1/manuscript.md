@@ -23,10 +23,10 @@
 
 ### Affiliations
 
-1. https://ror.org/03angcq70 Institute of Microbiology and Infection, University of Birmingham Birmingham United Kingdom
-2. https://ror.org/00rqy9422 Institute for Molecular Bioscience, University of Queensland Brisbane Australia
-3. https://ror.org/01nrxwf90 Division of Infection Medicine, University of Edinburgh Edinburgh United Kingdom
-4. https://ror.org/03angcq70 Institute of Immunology and Immunotherapy, University of Birmingham Birmingham United Kingdom
+1. Institute of Microbiology and Infection, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
+2. Institute for Molecular Bioscience, University of Queensland Brisbane Australia ([ROR:00rqy9422](https://ror.org/00rqy9422))
+3. Division of Infection Medicine, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
+4. Institute of Immunology and Immunotherapy, University of Birmingham Birmingham United Kingdom ([ROR:03angcq70](https://ror.org/03angcq70))
 
 † Corresponding author
 
@@ -44,21 +44,231 @@ To define the genetic basis of the K. pneumoniae urinome and serum resistome, we
 
 ## Results and discussion
 
-## Generation and sequencing of a K. pneumoniae strain ECL8 transposon input library
+### Generation and sequencing of a K. pneumoniae strain ECL8 transposon input library
 
 A K. pneumoniae ECL8 mini-Tn5 mutant library composed of >1 million mutants was constructed and subsequently subjected to TraDIS. The resulting reads were mapped to the reference genome that consists of an ~5.3 Mb chromosome and a single 205 kb plasmid (EMBL Accessions: HF536482.1 and HF536483) (Figure 1A and B). The gene insertion index scores (IIS) of the two technical replicates of the K. pneumoniae ECL8 TraDIS library (KTL1 and KTL2) were highly correlated with each other (R2=0.955), demonstrating a high level of reproducibility (Figure 1—figure supplement 1A). Therefore, sequence reads for both replicates were combined for downstream analysis and essential gene prediction. Through iterative rounds of sequencing, we determined that the library was sequenced to near saturation as the discovery of unique reads plateaued at ~2 million reads (Figure 1—figure supplement 1B). This library contained 554,834 unique genome-wide transposon insertion sites and 499,919 of these insertions map within annotated coding sequence (CDS) boundaries. This high level of transposon coverage equates to an average transposon insertion every 9.93 bp throughout the genome, equivalent to an insertion approximately every four codons. A de Brujin graph visualized in the genome assembly package Bandage revealed that the sequencing coverage of the plasmid was only 1.33-fold higher than that of the chromosome indicating that the plasmid is likely present as a single copy (Figure 1—figure supplement 2; Wick et al., 2015). Table 1 summarizes the data relating to the ECL8 libraries.
 
-## Essential chromosomal genes in K. pneumoniae ECL8
+![Figure 1.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig1-v1.jpg)
+
+**Figure 1.:** Insertions are illustrated on the (A) chromosome and (B) plasmid, respectively. The outermost track displays the length of the ECL8 genome in base pairs. The subsequent two inner tracks correspond to coding sequences (CDSs) on the sense (blue) and antisense (green) DNA strands, respectively. Putative essential CDSs are highlighted in red. The innermost track (black) corresponds to the location and read frequency of transposon sequences mapped successfully to the K. pneumoniae ECL8 genome. Plot generated using DNAPlotter. (C) Gene insertion index scores (IIS) of the K. pneumoniae ECL8 TraDIS library mapped in order of genomic annotation of the K. pneumoniae ECL8 (left) chromosome and (right) plasmid. Example transposon insertion profiles categorized into essential, non-essential, and unclear: (D) an essential gene – bamD, an essential outer membrane factor for β-barrel protein assembly; (E) a non-essential gene – int_A1, a redundant (several copies) integrase required for bacteriophage integration into the host genome; (F) an ‘unclear’ gene – polA, an essential gene in prokaryotes required for DNA replication but showed requirement for the N-terminal 5’–3’ exonuclese domain; and (G) an insertion-free region suggestive of an unannotated open reading frame (ORF). Transposon insertion sites are illustrated in black and capped at a maximum read depth of 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Pearson correlation coefficient (R2) of gene insertion index scores (IIS) of two sequenced technical replicates of the K. pneumoniae ECL8 transposon directed insertion-site sequencing (TraDIS) library (KTL1 and KTL2). The IIS of genes located on the chromosome and plasmid are highlighted in blue and red, respectively. (B) Number of unique reads identified (%) in the raw fastQ file of the K. pneumoniae TraDIS library in sequentially larger k-mer pools up to 3 million reads. Plot generated using BBTools: bbcountunique.sh in non-cumulative mode (https://jgi.doe.gov/data-and-tools/bbtools/).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The plasmid has a read depth 1.33× that of the genome, suggesting the plasmid has a copy number of one. Figure generated using Bandage (v3).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** The insertion index score for each coding sequence (CDS) was calculated as the number of insertions per CDS divided by the CDS length in base pairs to normalize for gene length. An exponential distribution model was fitted to the left mode that includes essential genes, and a gamma distribution model was fitted to the right, non-essential mode (blue). For a given insertion index score, the probability of belonging to each mode was calculated, and the ratio of these values was the log-likelihood score. A gene was classified as essential if its log-likelihood score was less than log2 12 and was therefore 12 times more likely to belong to the red mode than the blue mode.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** This index is calculated as the percentage of the essential genome made up of a COG divided by the percentage of the whole genome made up by the same COG. The log2 fold enrichment is displayed, and significant differences were calculated using the two-tailed Fisher’s exact test. Annotations were computed using eggnog-mapper based on eggNOG orthology data (Holt et al., 2015).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** The probability of at least one insertion-free region (IFR) of length (l) occurring in a genome of 5.3 Mb containing 554,834 transposon insertions (blue). Genome length and no. of genome-wide insertions from transposon directed insertion-site sequencing (TraDIS) studies by Langridge et al., 2009 and Goodall et al., 2018, plotted for comparison (Podschun and Ullmann, 1998; Ko et al., 2002).
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** (A) The following equation: $UIPs=s−s(\frac{s−1}{s})^{n}$ was applied to calculate the approximate number of sequence reads required to sample full library diversity, i.e., 100% of unique insertion points (UIPs). UIPs = unique insertion points, n=number of mapped reads in millions (M), and s=sample size, i.e., 499,919 coding sequence (CDS) UIPs. (B) The approximate number of CDS UIPs represented by a given number of sequence reads (M) is shown as a percentage of the total CDS UIPs, i.e., 499,919.
+
+**Table 1.**
+ Summary of transposon-containing sequence reads and unique insertion points (UIPs) mapped to the K. pneumoniae ECL8.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>Mapped reads after QC</th>
+      <th>Genome-wide UIPs</th>
+      <th>CDS UIPs</th>
+      <th>Pearson correlation of replicates</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ECL8 Input libraries (LB)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KTL1</td>
+      <td>5,573,710</td>
+      <td>409,069</td>
+      <td>367,230</td>
+      <td>Figure 1—figure supplement 1A</td>
+    </tr>
+    <tr>
+      <td>KTL2</td>
+      <td>2,854,389</td>
+      <td>400,915</td>
+      <td>361,272</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>KTL (combined)</td>
+      <td>8,429,782</td>
+      <td>554,834</td>
+      <td>499,919</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Urine output libraries</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>LB</td>
+      <td>4,324,125</td>
+      <td>4,324,125</td>
+      <td>403,381</td>
+      <td>Figure 4—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>Urine</td>
+      <td>4,839,277</td>
+      <td>4,839,277</td>
+      <td>389,251</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Serum output libraries</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Serum</td>
+      <td>4,729,032</td>
+      <td>115,328</td>
+      <td>101,348</td>
+      <td>Figure 6—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>Heat-inactivated serum</td>
+      <td>3,565,433</td>
+      <td>284,761</td>
+      <td>254,735</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>180 min serum exposed</td>
+      <td>1,481,732</td>
+      <td>133,790</td>
+      <td>121,316</td>
+      <td>Figure 7—figure supplement 1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Essential chromosomal genes in K. pneumoniae ECL8
 
 To classify a gene as essential or non-essential, the number of transposon insertions within each gene on the chromosome and plasmid was normalized for gene length and this value was denoted the gene IIS (Figure 1C). IIS for the K. pneumoniae genome followed a bimodal distribution, as has been previously described (Figure 1—figure supplement 3; Goodall et al., 2018; Langridge et al., 2009). The probability of a gene being essential was calculated by determining the likelihood of each given IIS as belonging to the essential or non-essential mode. The ratio of the IIS values was denoted as the log-likelihood ratio (log2-LR), a metric previously used to categorize genes into essential or non-essential groupings (Goodall et al., 2018; Langridge et al., 2009). To limit the number of false-positive hits identified, genes were classified as essential only if they were 12 times more likely to be within the essential, rather than the non-essential mode. Based on the above criteria, 373 chromosomal genes were assigned a log2-LR of less than –3.6 and were therefore classified as essential for growth on solid Luria-Bertani (LB) medium supplemented with kanamycin (Figure 1D). It should be noted that non-CDSs such as tRNA and rRNA were excluded from this analysis. Most genes (4551) were classified as non-essential (Figure 1E). A subset of 241 genes were located between these two modes with their essentiality mode being deemed ‘unclear’ (Figure 1F). A complete list for all K. pneumoniae ECL8 bimodal essentiality categorization and their associated statistical significance metrics are listed in Figure 1—source data 1.
 
 To understand the essential gene functions, we evaluated their COG (cluster of orthologous) categories; a metric that predicts functional classification against a database of known proteins. We applied a log2 COG enrichment index to identify COG categories that were enriched among the essential genes in contrast to the wider genome eggNOG (v5.0) orthology data (Figure 1—figure supplement 4; Huerta-Cepas et al., 2019). We identified no essential genes within the COG categories for chromatin structure and dynamics (B), cell motility (N), and secondary structure (Q) suggesting genes within these categories are not required or redundant for K. pneumoniae growth in the utilized nutrient-rich liquid medium. However, genes involved in signal transduction (T) and inorganic ion transport/metabolism (P) were depleted, while genes involved in translation (J), cell cycle control (D), and co-enzyme metabolism (H) were the most highly enriched. This correlates with enriched COG categories shared among essential genes in other members of the Proteobacteria such as Salmonella enterica Typhimurium, S. enterica Typhi, and Caulobacter crescentus and serves as an internal control for the validity of the library (Christen et al., 2011; Grazziotin et al., 2015; Barquist et al., 2013).
 
-## ‘Essential’ plasmid genes
+### ‘Essential’ plasmid genes
 
 The identification of 11 genes on the K. pneumoniae ECL8 plasmid that met the criteria to be defined as essential was an unexpected observation (Table 2). As previously noted, the bacterial copy number of the plasmid was approximated to be one. The average IIS of a gene located on the plasmid and the chromosome was comparable, 0.16 and 0.11, respectively. Due to the presence of a single plasmid per bacterial cell, and an observed even distribution of IISs for genes located on the plasmid, the lack of insertions in the 11 genes is unlikely to be due to gene dosage effects arising from the presence of multiple copies of the plasmid. Notably, the 11 plasmid-borne ‘essential’ genes included repB, which is required for plasmid replication. Therefore, these genes are likely to be required for plasmid replication and stability and are unlikely to be essential for growth. This hypothesis is supported by previous observations that K. pneumoniae remains viable when large indigenous virulence plasmids are cured from the bacterium (Tang et al., 2010; Rodríguez-Medina et al., 2020; Yang et al., 2021).
 
-## Insertion-free regions
+**Table 2.**
+ K. pneumoniae ECL8 plasmid-borne genes computationally deemed essential.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Locus tag</th>
+      <th>Gene</th>
+      <th>Function*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ecl8_05075</td>
+      <td>repB_1</td>
+      <td>RCR (rolling circle replication) plasmid protein</td>
+    </tr>
+    <tr>
+      <td>ecl8_05092</td>
+      <td>–</td>
+      <td>SidC homolog</td>
+    </tr>
+    <tr>
+      <td>ecl8_05094</td>
+      <td>–</td>
+      <td>DUF2509 family protein</td>
+    </tr>
+    <tr>
+      <td>ecl8_05096</td>
+      <td>–</td>
+      <td>NB-ARC domain-containing protein</td>
+    </tr>
+    <tr>
+      <td>ecl8_05104</td>
+      <td>rcsA_2</td>
+      <td>DNA-binding transcriptional activator RcsA</td>
+    </tr>
+    <tr>
+      <td>ecl8_05105</td>
+      <td>yedA_2</td>
+      <td>Putative transporter</td>
+    </tr>
+    <tr>
+      <td>ecl8_05106</td>
+      <td>–</td>
+      <td>DUF2695 domain-containing protein</td>
+    </tr>
+    <tr>
+      <td>ecl8_05170</td>
+      <td>–</td>
+      <td>DUF305 domain-containing protein</td>
+    </tr>
+    <tr>
+      <td>ecl8_05205</td>
+      <td>–</td>
+      <td>NADPH-dependent preQ0 reductase</td>
+    </tr>
+    <tr>
+      <td>ecl8_05272</td>
+      <td>–</td>
+      <td>Transposase</td>
+    </tr>
+    <tr>
+      <td>ecl8_05279</td>
+      <td>sopB</td>
+      <td>Control of plasmid partitioning</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Function derived from the top hit using NCBI blastN (https://blast.ncbi.nlm.nih.gov/Blast.cgi)._
+
+### Insertion-free regions
 
 Using a highly saturated transposon library it is possible to not only define essential genes, but also define chromosomal regions lacking transposons that are large enough not to have occurred by chance. Previously, we described a geometric model to predict statistically significant regions of the genome that were free from transposon insertions (Goodall et al., 2018). This model indicated that with the insertion frequency calculated for this library, for a genome of 5.3 Mb, an insertion-free region (IFR) of 145 bp or greater was statistically significant (Figure 1—figure supplement 5). The size of IFRs that are statistically significant for two previously published TraDIS libraries are plotted for comparison (Goodall et al., 2018; Langridge et al., 2009). A total of 667 genomic regions with IFRs≥145 bp were identified, many which correspond to the 380 essential genes identified through the bimodal analysis described earlier.
 
@@ -66,27 +276,35 @@ The remaining IFRs can be explained in several ways. First, as noted previously 
 
 An explanation for the remaining IFRs can be derived from traditional bioinformatic approaches to genome annotation. Originally, genome annotation protocols overlooked small open reading frames (ORFs) because (i) they only consider genes that code for proteins >100 amino acids, and (ii) define genes based on sequence homology to those that have been previously annotated (Warren et al., 2010; Mat Sharani and Firdaus-Raih, 2019; Miravet-Verde et al., 2019). Interestingly, the methodology used here revealed 59 regions ≥145 bp that lacked transposon insertion sites and did not map to within annotated CDS boundaries (Figure 1G). The applied approach is conservative and does not include IFRs that overlap with the 5’ or 3’ region of any annotated CDS. Forty-six of these regions contain potential ORFs that could encode proteins through blastX identification. These putative unannotated ORFs were not characterized further within this study but might represent essential genes. This study emphasizes the untapped potential of TraDIS datasets to identify previously uncharacterized, essential, small CDSs, and promoter elements that are not immediately obvious by traditional and computational genomic annotation methods. A complete list of IFRs, within annotated ORFs or in intergenic regions, and an ECL8 curated essential gene list is found in Figure 1—source data 2.
 
-## Directional insertion bias of Tn5 transposon into cps operon
+### Directional insertion bias of Tn5 transposon into cps operon
 
 As reported previously (Goodall et al., 2018; Hutchison et al., 2019), due to the design of the transposon used in this study, transcription of polycistronic operons can be affected by the insertion orientation of the transposon (Figure 2A). Directional insertion bias of the transposon was noted within a large genomic region of ~14 kb encoding the virulence-associated cps operon (Figure 2B). The bioinformatic webtool ‘Kaptive’ determined with high confidence the K. pneumoniae ECL8 cps operon encodes for a KL2/K2 capsule with 18/18 of the expected genes (Figure 7—source data 1; Lam et al., 2022).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig2-v1.jpg)
 
-**Figure 2.:** cps) operon.(A) Schematic representing the Tn orientation and effect on downstream transcription. The utilized Tn transposon is flanked by terminator sequences (purple) and is shown inserted in gene A (yellow) of a hypothetical two-gene transcription unit AB in the forward or reverse orientation. In the forward orientation transcription of gene B (pink) is expected to occur from the promoters of 5’ of gene A or the internal Tn5 but polycistronic mRNA differs in length due to the attenuation by the terminators. (B) Transposon insertions mapping to the K2 capsular operon of K. pneumoniae ECL8. Transposon insertions are configured in the forward orientation (green), and reverse orientation (blue) and insertion densities are capped at a maximum read depth of 50. The operon structure of the K2 capsular genes consisting of three promoters driving the expression of three unidirectional polycistronic transcripts is depicted.
+**Figure 2.:** (A) Schematic representing the Tn orientation and effect on downstream transcription. The utilized Tn transposon is flanked by terminator sequences (purple) and is shown inserted in gene A (yellow) of a hypothetical two-gene transcription unit AB in the forward or reverse orientation. In the forward orientation transcription of gene B (pink) is expected to occur from the promoters of 5’ of gene A or the internal Tn5 but polycistronic mRNA differs in length due to the attenuation by the terminators. (B) Transposon insertions mapping to the K2 capsular operon of K. pneumoniae ECL8. Transposon insertions are configured in the forward orientation (green), and reverse orientation (blue) and insertion densities are capped at a maximum read depth of 50. The operon structure of the K2 capsular genes consisting of three promoters driving the expression of three unidirectional polycistronic transcripts is depicted.
 
 Notably, transposon insertions were poorly tolerated in the forward Tn orientation of the DNA strand. While bias for Tn insertions has previously been described in individual genes (e.g. ribosomal RNA genes), this study is the first to describe such a large bias across an operon (Goodall et al., 2018; Christen et al., 2011). However, the basis for this bias is not fully understood. One potential explanation for such bias might be the presence of a gene encoding a toxic small RNA (tsRNA). Typically, tsRNAs are usually present in the 5’ or 3’ untranslated regions of genes and act as regulators of gene expression at a post-transcriptional level, but due to their small size, typically <500 nucleotides, they are very difficult to predict (Pain et al., 2015; Waters and Storz, 2009). However, this hypothesis does not explain why transposon insertions are uniformly absent for the opposite orientation of the transposon and not isolated to ‘hotspots’ in the 5’ and 3’ untranslated regions. An alternative hypothesis is that the reverse orientation expression of the capsular operon might result in the accumulation of intracellular capsular intermediates that may be toxic if left to accumulate in the periplasm. This finding may hint to a more cryptic regulation mechanism of the cps operon with implications for other similar Klebsiella capsular serotypes and species.
 
-## Comparison of essential genes to other K. pneumoniae transposon libraries
+### Comparison of essential genes to other K. pneumoniae transposon libraries
 
 Transposon libraries have previously been generated in other K. pneumoniae strains, however these studies primarily focused on identifying genes that are required for a specific phenotype, i.e., antibiotic stress or capsular mutants, and therefore they lack a definitive list of essential genes for in vitro growth (Jana et al., 2017; Dorman et al., 2018; Jung et al., 2019; Paczosa et al., 2020; Ma et al., 2021). To benchmark our library, we compared our data to previously published studies that did report K. pneumoniae essential gene lists: KPNIH1 (ST258), RH201207 (ST258), and ATCC 43816 (ST493) (Ramage et al., 2017; Bruchmann et al., 2021). As shown in Figure 3, the ECL8 strain is an acceptable representative for the K. pneumoniae KpI phylogroup as demonstrated by the phylogenetic and ANI (average nucleotide identity) analyses in the context of K. pneumoniae strains previously used or ‘common’ nosocomial lineages (Gorrie et al., 2022; Feldman et al., 2019; Lin et al., 2008; Chhibber et al., 2008). Furthermore, our transposon mutant library is among the most saturated K. pneumoniae libraries reported to date, permitting accurate determination of gene essentiality and delineating between real and stochastic effects. The number of essential genes among the four strains ranged from 434 to 642; a complete list and comparison of our curated gene list against the reported gene lists of KPNIH1, RH201207, and ATCC 43816 is found in Figure 3—source data 1. We speculate that the higher number of essential genes predicted in the KPNIH1 gene list is due to a lower transposon density, as this is associated with an increased likelihood of false-positive results (Chao et al., 2016). This might be due in part to differences in the techniques used to construct the libraries; here, we used a mini-Tn5 transposon which showed no bias in insertion whereas others have used the TnSeq method relying on the Himar I Mariner transposon, which has a requirement for a TA dinucleotide motif (Lampe et al., 1996). Differences in gene essentiality might also be due to inherent genomic differences or due to differences in experimental methodology, computational approaches, or the stringency of analysis used to categorize these genes. While further validation experiments will be required to determine whether specific genes are essential, 57% of the essential genes identified in K. pneumoniae ECL8 were essential in the other three strains. Thus, together these data indicate that our transposon library is sufficiently dense and representative of K. pneumoniae (KpI phylogroup) to be used for further studies.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig3-v1.jpg)
 
-**Figure 3.:** K. pneumoniae ECL8 and comparison to previously reported essential gene lists.(A) Phylogenetic tree and average nucleotide identity (ANI) analysis generated using the Integrated Prokaryotes Genome and Pan-genome Analysis (IPGA) webserver demonstrating the phylogenetic context of K. pneumoniae ECL8 compared to other previously published K. pneumoniae strains or isolates belonging to ‘21 “common” lineages’ of nosocomial origin by other groups. The ANI is a similarity index metric between a given pair of genomes applicable to prokaryotic organisms. A cutoff score of >95% typically indicates they belong to the same species. (B) Tabular comparison of K. pneumoniae strains listing genome size and number of unique insertion points mapped (C) Venn diagram depicting the shared and unique genes required for growth in nutrient-rich media (i.e. Luria-Bertani [LB]). Complete list of genomes, gene comparisons, and exclusions lists can be found in Figure 3—source data 1.Figure 3—source data 1.
+**Figure 3.:** (A) Phylogenetic tree and average nucleotide identity (ANI) analysis generated using the Integrated Prokaryotes Genome and Pan-genome Analysis (IPGA) webserver demonstrating the phylogenetic context of K. pneumoniae ECL8 compared to other previously published K. pneumoniae strains or isolates belonging to ‘21 “common” lineages’ of nosocomial origin by other groups. The ANI is a similarity index metric between a given pair of genomes applicable to prokaryotic organisms. A cutoff score of >95% typically indicates they belong to the same species. (B) Tabular comparison of K. pneumoniae strains listing genome size and number of unique insertion points mapped (C) Venn diagram depicting the shared and unique genes required for growth in nutrient-rich media (i.e. Luria-Bertani [LB]). Complete list of genomes, gene comparisons, and exclusions lists can be found in Figure 3—source data 1.
 
-## Identification of genes required for growth in human urine
+### Identification of genes required for growth in human urine
 
 TIS has become a formidable tool for rapid genome-scale screens to link genotype to phenotype. As the urinary tract is a major site for K. pneumoniae infection, we used our transposon mutant library to identify genes required for growth in urine, thus enabling us to define the urinome of K. pneumoniae. Cultures were grown until late stationary phase (12 hr) followed by two subsequent 12 hr passages before sequencing (Figure 4A). This approach eliminated mutants that were unable to grow in urine while allowing those capable of growth to flourish. DNA from test and control samples was harvested, sequenced, and analyzed as before (Figure 1—figure supplement 6). As the gene IISs for the library passaged in both LB and urine were highly correlated with respective biological replicates of 0.8483 and 0.9078 R2, replicates were combined for downstream analyses (Figure 4—figure supplement 1). The data for all K. pneumoniae genes and their associated statistical significance metrics are listed in Figure 4—source data 1.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig4-v1.jpg)
+
+**Figure 4.:** (A) Schematic of the experimental design used to identify genes that provide a fitness advantage for K. pneumoniae ECL8 growth in pooled human urine. The K. pneumoniae ECL8 library was inoculated into either 50 mL of Luria-Bertani (LB) or 50 mL of urine and incubated at 37°C with 180 RPM shaking for 12 hr. The library was passaged into 50 mL of fresh LB or pooled human urine at an initial OD600 of 0.05 two subsequent times. A 1 mL sample normalized to an OD600 of 1 from each culture was processed for genome extraction and multiplexed sequencing using an Illumina MiSeq. (B) Log2 fold change (log2FC) of the read count for each K. pneumoniae ECL8 gene when passaged in urine relative to an LB control. Genes highlighted in red satisfy a stringent applied threshold (log2FC>–2, Q-value≤0.05). The Q-value is the p-value that has been adjusted for the false discovery rate for each gene. For brevity, only genes with a log2FC≥0 are illustrated. Selected transposon insertion profiles of genes identified as advantageous for growth in urine: (C) fepB, fepD, fepG, (D) exbB, exbD, (E) sodA, and (F) ompA. These genes exhibited a significant loss of transposon insertions following growth in urine (red) in comparison to LB broth (blue). A 5 kb genomic region including the gene is illustrated. Reads are capped at a maximum depth of 1. (G) The fitness of gene replacement mutants relative to wild-type (WT) K. pneumoniae ECL8 in either LB medium or urine. The relative competitive index of single-gene replacement mutants after 12 hr passages 3× in either LB medium or urine. A relative fitness of one would indicate comparable fitness to WT. The mean (n=3) is plotted (±1 SD).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** The inline barcode identifiers used to demultiplex and distinguish replicates are highlighted in brackets.
 
 Ten genes that satisfied a stringent threshold of a log2 fold change (log2FC)>–2 and a Q-value≤0.05, relative to the LB control, were considered as advantageous for K. pneumoniae ECL8 growth in urine (Figure 4B). The transposon insertion profiles of these genes showed a marked decrease in overall insertions following passaging in urine when compared to the LB control (Figure 4C–F), suggesting loss of these genes confers a fitness defect. These included genes encoding the superoxide dismutase SodA, the structural outer membrane protein OmpA (Pain et al., 2015), the periplasmic chaperone Skp (Mas et al., 2019), and five proteins (fepB, fepD, fepG, exbB, and exbD) associated with iron acquisition (Caza and Kronstad, 2013). The remaining two genes (ytfL and argH) play key roles in controlling cytoplasmic cadaverine and putrescine concentrations and amino acid biosynthesis, respectively (Iwadate et al., 2021; Xu et al., 2000). The proper regulation of cadaverine and putrescine maintains intracellular pH concentrations and reduces oxidative damage to proteins and DNA and may be in response to acidic conditions in urine known to be unconducive for colonization of uropathogens (Chambers and Lever, 1996; Chaturvedi et al., 2012).
 
@@ -96,9 +314,21 @@ Based on these observations, we hypothesized that iron levels were limiting grow
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig5-v1.jpg)
 
-**Figure 5.:** K. pneumoniae transposon directed insertion-site sequencing (TraDIS) library following passaging in Luria-Bertani (LB) and urine and schematic diagrams of enterobactin synthesis, secretion, and uptake.The OD600 of the K. pneumoniae TraDIS library following 12 hr of growth (P1) and two sequential 12 hr passages (P2 and P3). The library was passaged into fresh medium (A) LB or (B) urine to an initial OD600 of 0.05. To determine the effect of iron supplementation and depletion, urine was supplemented with exogenous iron (C) 100 μM FeSO4 or an iron chelator (D) 100 μM 2,2-dipyridyl. The average OD600 of three biological replicates for each time point is plotted (±) 1 SD. (E) Area under curve comparative analysis (OD600 vs. time) of K. pneumoniae ECL8 and mutants grown in LB, urine, or urine supplemented with 100 μM FeSO4 grown for 16 hr with 180 RPM shaking. The average of three biological replicates is plotted for each condition with error bars representing SD. (F) Simplified schematic of the enterobactin synthesis pathway. YbdZ, a co-factor of EntF for the terminal steps for enterobactin synthesis, depicted in light red had a log2 fold change (log2FC) sequence read value of –1.58, suggesting this gene conferred an overall fitness advantage for growth in urine. (G) Schematic representation of enterobactin secretion and uptake. The TonB transport system is present in Gram-negative bacteria and is required to transport Fe-bound enterobactin through the outer (OM) and inner membrane (IM) to the cytosol where it can be utilized. Based on log2FC sequence read value, loss of TolC (blue) was beneficial for growth, relative to an LB control. Loss of proteins, colored in red, had log2FC sequence read values <–2 suggesting they confer a fitness advantage for growth in urine. Proteins depicted in gray were genes that had log2FC values that ranged from –1 to 1 exposed to urine relative to an LB control. Genes depicted in black were essential and had no determinable log2FC value.
+**Figure 5.:** The OD600 of the K. pneumoniae TraDIS library following 12 hr of growth (P1) and two sequential 12 hr passages (P2 and P3). The library was passaged into fresh medium (A) LB or (B) urine to an initial OD600 of 0.05. To determine the effect of iron supplementation and depletion, urine was supplemented with exogenous iron (C) 100 μM FeSO4 or an iron chelator (D) 100 μM 2,2-dipyridyl. The average OD600 of three biological replicates for each time point is plotted (±) 1 SD. (E) Area under curve comparative analysis (OD600 vs. time) of K. pneumoniae ECL8 and mutants grown in LB, urine, or urine supplemented with 100 μM FeSO4 grown for 16 hr with 180 RPM shaking. The average of three biological replicates is plotted for each condition with error bars representing SD. (F) Simplified schematic of the enterobactin synthesis pathway. YbdZ, a co-factor of EntF for the terminal steps for enterobactin synthesis, depicted in light red had a log2 fold change (log2FC) sequence read value of –1.58, suggesting this gene conferred an overall fitness advantage for growth in urine. (G) Schematic representation of enterobactin secretion and uptake. The TonB transport system is present in Gram-negative bacteria and is required to transport Fe-bound enterobactin through the outer (OM) and inner membrane (IM) to the cytosol where it can be utilized. Based on log2FC sequence read value, loss of TolC (blue) was beneficial for growth, relative to an LB control. Loss of proteins, colored in red, had log2FC sequence read values <–2 suggesting they confer a fitness advantage for growth in urine. Proteins depicted in gray were genes that had log2FC values that ranged from –1 to 1 exposed to urine relative to an LB control. Genes depicted in black were essential and had no determinable log2FC value.
 
-## Identification of genes required for resistance to complement-mediated killing
+![Figure 6.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig6-v1.jpg)
+
+**Figure 6.:** (A) The experimental methodology utilized for screening the transposon directed insertion-site sequencing (TraDIS) library in human serum and a heat-inactivated serum control. K. pneumoniae ECL8 (2×108 cells) of the mutant library was inoculated into either 1 mL of human serum or 1 mL of heat-inactivated human serum and incubated for 90 min. Following exposure to serum, cells were grown to an OD600 of 1 in Luria-Bertani (LB) medium to enrich for viable mutants. A 1 mL sample normalized to an OD600 of 1 from each culture was processed for genome extraction and multiplexed sequencing using an Illumina MiSeq. (B) Log2FC for each gene of the K. pneumoniae ECL8 TraDIS library when incubated in pooled human serum relative to a heat-inactivated serum control. Selected genes highlighted in red are among the total of 144 genes that satisfy a stringent applied threshold (log2FC≥–4, Q-value≤0.05). For brevity, only genes with a log2FC≥0 are illustrated. Inset: transposon insertion profile of wbbY, gene with the highest fold log2FC, flanked by wbbZ and a transposable element at its 3’. Transposon insertions following exposure to serum and a heat-inactivated serum control are illustrated in red and blue, respectively. Transposon reads have been capped at a maximum of 10. (C) Transposon insertion profiles of genes within the: lipopolysaccharide (LPS), O-antigen, and the enterobacterial common antigen (ECA) biosynthesis operons. Genes in red font had a significantly (log2FC≥–4, Q-value≤0.05) decreased fitness when disrupted with a transposon following exposure to serum for 90 min (red), relative to a heat-inactivated serum control (blue). Operons are not drawn to scale and reads capped at a maximum read depth of 1. (D) Growth profile of wild-type (WT) K. pneumoniae ECL8 and Δwbby::aph in LB broth. Mean (n=3) is plotted (±1 SD). (E) Serum killing assay of WT K. pneumoniae ECL8 and Δwbby::aph. Mean is plotted (±1 SD). (F) LPS profiles of WT K. pneumoniae ECL8 and Δwbby::aph. Overnight cultures of each strain were normalized to an OD600 of 1. The LPS was separated on 4–12% Bis-Tris gels and was visualized by silver staining using the SilverQuest kit (Invitrogen).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** A sample of 2×108 bacterial cells were incubated in 100 μL of human serum (solid line) or heat-inactivated human serum (dashed line) for 180 min. Viable bacterial numbers (CFU/mL) were sampled at regular time points by plating onto Luria-Bertani (LB) agar, overnight incubation at 37°C and subsequent counting of the colonies. The log10 fold change in viable cell number was measured. E. coli BW25113 lacks O-antigen and was used as a serum-sensitive control. The mean of three biological replicates is shown ±1 SD.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** The inline barcodes used to demultiplex and distinguish replicates are given in brackets ().
+
+### Identification of genes required for resistance to complement-mediated killing
 
 To identify genes that protect against complement-mediated killing, previously defined as the serum resistome (Short et al., 2020; Phan et al., 2013), we first established the serum killing kinetics of K. pneumoniae ECL8. Approximately, 2×108 cells were incubated with 100 μL of human serum for 180 min. At specified time points, aliquots were plated to determine the number of viable bacteria. As expected, no viable bacteria were recovered from the E. coli BW25113 control (Doorduijn et al., 2021). In contrast, a 2 log10 decrease in the number of viable K. pneumoniae cells was observed after 90 min exposure to normal human serum, and a >4 log10 decrease after 180 min exposure. To determine whether the observed reduction in viable cells was due to the presence of active complement proteins, K. pneumoniae was incubated in heat-inactivated serum control where no reduction in viable was noted (Figure 6—figure supplement 1).
 
@@ -106,13 +336,27 @@ Subsequently, 2×108 cells from the ECL8 TraDIS library were inoculated into 1 m
 
 To validate our observations, we selected the gene with the greatest log2FC decrease between serum and a heat-inactivated control, a putative glycosyltransferase espE_3/wbbY (inset, Figure 6B). Analyses using the ‘Kaptive’ webtool suggested that ECL8 encodes the O-antigen serotype O1v2 with the operon having 98.98% nucleotide identity to the reference genome (Figure 7—source data 1; Lam et al., 2022). The O-antigen of the O1v2 serotype features distal repeating D-galactan I and D-galactan II sugar subunits (Hsieh et al., 2014). Despite its role in O-antigen biosynthesis, wbbY is not located within the rfb LPS operon. To determine the role of wbbY in serum sensitivity, the gene was replaced with an aph cassette, and the resulting mutant was compared to its parent strain using a serum bactericidal assay. A comparable growth profile was observed for K. pneumoniae ECL8 and the ΔwbbY::aph mutant in LB medium (Figure 6D). However, the ΔwbbY::aph mutant was more sensitive to human serum than the parent with no viable mutants surviving after 30 min (Figure 6E). To investigate whether the wbbY deletion affected LPS production, crude LPS extracts were visualized using silver staining (Figure 6F). The ΔwbbY::aph strain produced LPS with a lower molecular weight compared to the parent strain, suggesting that a truncated O-antigen was expressed. Alterations in the amount or length of LPS produced are known to influence susceptibility to serum-mediated killing (Salamon et al., 2020). Importantly, Hsieh et al. have previously reported that deletion by wbbY in K. pneumoniae NTUH-K2044 (ST23) resulted in LPS profile defects due to abrogated D-galactan II production (Hsieh et al., 2014). The authors also demonstrate that gene complementation restores LPS profiles and serum resistance, thus demonstrating that this screen was robust in identifying a key K. pneumoniae gene involved in complement-mediated killing.
 
-## Identification of genes required for serum resistance
+### Identification of genes required for serum resistance
 
 Following the identification of genes that when mutated confer increased sensitivity to complement-mediated killing (i.e. the serum resistome), the K. pneumoniae ECL8 TraDIS library was screened for mutants that confer increased resistance to serum killing. Approximately 2×108 TraDIS mutants were incubated in 1 mL of human serum for 180 min. The output pool was washed with PBS and plated onto LB agar supplemented with kanamycin (Figure 7A). Following overnight growth, ~150,000 colonies were recovered and pooled for sequencing confirming good correlation of replicates (Figure 7—figure supplement 1). We then used AlbaTraDIS to identify mutations that conferred a fitness advantage or disadvantage for survival in serum. In addition to identifying genes with an increase or decrease in reads between the condition and control samples, AlbaTraDIS will also analyze changes in sequencing read depth of insertions immediately upstream and downstream of a gene, as well as within-gene transposon orientation biases. Such differences can be strong indicators of mutations that result in gene expression or regulatory effects (for a detailed explanation, please see Page et al., 2020). The data for insertions with a significant (>2-fold) change in read depth following serum exposure for 180 min are listed in Figure 7—source data 2. As expected, similar to our previous experiment genes with the greatest significance in decreased insertions, suggesting decreased fitness, were O-antigen outer-core biosynthesis gene espJ_2/wabI and O-antigen ligase rfaL/waaL (Figure 7B). Genes with significantly increased insertions, suggesting increased fitness, included hns, gnd, and igaA (Figure 7C). Closer inspection of the transposon insertion profiles further confirmed the enrichment of hns mutants when comparing the serum-exposed test to the input control (Figure 7D). To validate our observations, a defined hns mutant was constructed by allelic replacement with an aph cassette in the same orientation as native gene transcription. A comparable growth profile in LB was observed for the hns mutant relative to the parent (Figure 7E). To determine whether the hns mutant was indeed more resistant to serum a sample of 1×108 cells was incubated in serum for 360 min. At 30 min post-incubation the number of viable hns::aph cells was decreased by ~2 log. However, no additional decrease in viable cell numbers was observed at later time points and these strains proliferated in serum (Figure 7F). We also attempted to complement this phenotype but were unsuccessful, presumably due to the pleiotropic nature of hns mutants (Figure 7—figure supplement 2). Ares and colleagues demonstrated that rcsA; galF; wzi; and manC were derepressed in a Δhns K. pneumoniae mutant resulting in increased capsule production (Ares et al., 2016). Similarly, upregulation of rcsA was noted in an E. coli Δhns mutant. RcsA is known to positively regulate the capsular locus (Sledjeski and Gottesman, 1995; Ebel and Trempy, 1999). Notably, IgaA represses the Rcs regulon, preventing activation of RcsA. Mutants in igaA are enriched in our experiments (Figure 7—figure supplement 3A). These data suggest that activation of the Rcs regulon confers resistance to serum killing in K. pneumoniae, as noted for other members of the Enterobacteriaceae, by increasing capsule production (Meng et al., 2021).
 
+![Figure 7.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig7-v1.jpg)
+
+**Figure 7.:** (A) The experimental methodology utilized for screening the transposon directed insertion-site sequencing (TraDIS) library to identify genetic factors that increase resistance to human serum. K. pneumoniae ECL8 (2×108 cells) of the mutant library was inoculated into 1 mL of human serum and incubated for 180 min and compared to before serum exposure input control. The output pool was washed with PBS and plated onto Luria-Bertani (LB) agar supplemented with kanamycin. Following overnight growth, ~150,000 colonies were recovered and pooled for sequencing. Comparative analysis using AlbaTraDIS software depicting genes with (B) decreased insertions suggesting a loss of fitness or (C) increased insertions suggesting a gain of fitness to serum exposure. (D) Transposon and read count insertion profiles of hns locus: red illustrating pooled mutant serum exposed for 180 min and blue denoting the before serum exposure input control. (E) Growth profile of wild-type (WT) K. pneumoniae ECL8 and Δhns::aph in LB broth. Mean (n=3) is plotted (±1 SD), where n=3. (F) Serum killing assay of WT K. pneumoniae ECL8 and Δhns::aph. Mean is plotted (±1 SD), where n=3.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig7-figsupp1-v1.jpg)
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig7-figsupp2-v1.jpg)
+
+**Figure 7—figure supplement 2.:** Overnight cultures of bacterial cells were incubated in a 1:1 ratio (2×108 cells:human serum) in a final volume of 100 μL. Viable bacterial numbers (CFU/mL) at 360 min time point was calculated by plating onto Luria-Bertani (LB) agar, overnight incubation at 37°C, and subsequent counting of the colonies with a PBS control performed in parallel. The mean of three biological replicates is shown ±1 SD.
+
+![Figure 7—figure supplement 3.](https://cdn.elifesciences.org/articles/88971/elife-88971-fig7-figsupp3-v1.jpg)
+
+**Figure 7—figure supplement 3.:** (A) Transposon and read count insertion profiles of hns locus: red illustrating pooled mutant serum exposed for 180 min and blue denoting the before serum exposure input control. (B) Directional insertion bias of transposon (Tn) into gnd. Transposon insertions configured in the forward orientation (green), reverse orientation (blue). Transposon insertion densities are capped at a maximum read depth of 2000. Below – genomic context of gnd with a putative promoter for manC driving the transcriptional unit (rfb cluster) for O-antigen biosynthesis.
+
 The gnd gene encodes a 6-phosphogluconate dehydrogenase involved in the oxidative branch of the pentose phosphate pathway. Interestingly, sequence reads mapping to gnd were enriched for the forward orientation of the transposon only (Figure 7—figure supplement 3B). Transposon insertions in this orientation have transcriptional read-through driving expression of the downstream neighboring gene manC and more distal O-antigen biosynthesis genes (i.e. rfb cluster) (Follador et al., 2016). The manC gene encodes mannose-1-phosphate guanylyltransferase that is required for the synthesis of capsule, and as noted above, upregulation of manC results in increased production of capsule.
 
-## Conclusion
+### Conclusion
 
 For a variety of reasons, the determination of gene essentiality from TraDIS data is challenging (Goodall et al., 2018). Here, we used two different computational approaches to identify essential genes ensuring that our essential gene dataset includes those genes that can tolerate insertions in regions of the gene but where specific domains are essential for growth. Coupled with the presented phylogenetic and genomic analyses, the observation that 57% of the essential genes identified in this study were found to be essential in three of the four K. pneumoniae TraDIS libraries described to date provides reassurance that this library would provide meaningful data for subsequent studies. A minor caveat that is worthwhile mentioning is the potential for false-positive gene essentiality calls due to nucleoid-assocaited proteins hinders transposon insertion (Choe et al., 2023). Nevertheless, the high density of insertion sites achieved in our study ensured reliable identification of essential and conditionally essential genes and a low probability of false-positive identification, which had previously been noted for low complexity libraries (Chao et al., 2016).
 
@@ -126,23 +370,23 @@ This genome-wide screen has identified a suite of genetic fitness factors requir
 
 ## Materials and methods
 
-## Bacterial strains, plasmids, and culturing conditions
+### Bacterial strains, plasmids, and culturing conditions
 
 A complete list of bacterial strains, plasmids, and primers utilized in this study are listed in Supplementary file 1A and Supplementary file 1B. To culture strains, scrapings from a frozen glycerol stock strain were plated onto solid LB (10 g tryptone, 5 g yeast extract, 10 g NaCl) supplemented with agar 1.5% (wt/vol) and were incubated overnight at 37°C. A single colony was isolated and used to inoculate 5 mL of liquid LB medium incubated overnight at 37°C with 180 RPM shaking. To prepare stocks, bacteria were grown to mid-exponential phase in LB medium and stored at –80°C with 25% (vol/vol) glycerol. When required, solid or liquid media were supplemented with appropriate antibiotics at the following concentrations: ampicillin (35 μg/mL), chloramphenicol (100 μg/mL), and kanamycin (100 μg/mL).
 
-## Generation of the K. pneumoniae ECL8 transposon mutant library
+### Generation of the K. pneumoniae ECL8 transposon mutant library
 
 An overnight culture of K. pneumoniae ECL8 was inoculated into 2× YT broth at OD600 of 0.05 supplemented with a final concentration of 0.7 mM EDTA and incubated at 37°C with 180 RPM shaking. Cells were harvested at 0.4 OD600 by centrifugation (4000 × g) at 4°C for 20 min. Cell pellets were washed four times with ice-cold 10% (vol/vol) glycerol. K. pneumoniae ECL8 electrocompetent cells were transformed with 0.2 µL of EZ-Tn5 transposon (Epicentre) at 1.4 kV and recovered in brain heart infusion broth for 2 hr at 37°C with 180 RPM shaking. Cells were plated onto LB agar supplemented with 50 µg/mL kanamycin and incubated overnight at 37°C. More than 1 million transformants were pooled in 15% (vol/vol) LB glycerol for storage at –80°C until required.
 
-## Transposon library screening in human urine
+### Transposon library screening in human urine
 
 Human urine from seven healthy male volunteers was sterilized using a vacuum filter (0.2 μM). Urine was pooled and stored at –80°C until required. Approximately 2×108 K. pneumoniae ECL8 TraDIS mutants were inoculated into 50 mL of urine and grown for 12 hr at 37°C with shaking (P1) in biological duplicates in parallel with control samples that were instead inoculated into 50 mL of LB medium. A sample of P1 was inoculated into 50 mL of urine or LB medium, respectively, at an initial OD600 of 0.05 and grown for a subsequent 12 hr (P2). Both control and test experiments were passaged and grown for a further 12 hr (P3). A sample of culture from P3 was removed and normalized to an OD600 of 1 for subsequent genomic DNA extraction.
 
-## Transposon library screening in human serum
+### Transposon library screening in human serum
 
 A 10 mL sample of human blood was collected from eight healthy volunteers (male and female). Blood was pooled and centrifuged at 6000 × g for 20 min to separate sera from blood components. The pooled serum was sterilized, aliquoted, and stored at –80°C until required. Approximately 2×108 K. pneumoniae ECL8 mutants were inoculated into 1 mL of pre-warmed sera, heat-inactivated sera (60°C for 1 hr) in biological duplicates. Samples were incubated at 37°C for 90 min with 180 RPM shaking. Following this, cells were harvested by centrifugation at 6000 × g for 10 min and washed twice with PBS. Cells were then inoculated into 50 mL of LB for outgrowth at 37°C with 180 RPM shaking and harvested at an OD600 of 1 by centrifugation at 6000 × g for 10 min. A 1 mL sample of each culture was used for genomic DNA extraction.
 
-## Transposon library sequencing and data analysis
+### Transposon library sequencing and data analysis
 
 Pooled kanamycin-resistant K. pneumoniae ECL8 cells were prepared for sequencing following an amended TraDIS protocol (Goodall et al., 2018). Briefly, genomic DNA from the K. pneumoniae ECL8 library of pooled mutants was extracted from ~1×109 cells in biological duplicate, as per the manufacturer’s instructions (QIAGEN QIAamp DNA blood minikit). The DNA concentration of replicates was determined using the Qubit 2.0 fluorometer (Thermo Fisher Scientific). The DNA was sheared into ~200 bp fragments by ultra-sonication (Bioruptor Plus Diagenode). Fragmented DNA samples were prepared for Illumina sequencing using the NEBNext Ultra I DNA Library Prep Kit for Illumina according to the manufacturer’s instructions with the following modifications: ends of fragmented DNA were repaired using the End Prep Enzyme Mix (NEB) and an NEBNext adaptor for Illumina sequencing was ligated to the newly repaired ends. During protocol optimization, samples were analyzed using a Tapestation 2200 (High Sensitivity D5000) to determine DNA fragment sizes following adapter ligation. The uracil within the adaptor hairpin loop was enzymically excised using the USER enzyme (NEB). AMPure XP SPRI beads (Beckman Coulter) or custom-made SPRI beads were used to select for DNA fragments ~250 bp in size.
 
@@ -150,42 +394,42 @@ To enrich for fragments containing the transposon a custom PCR step was introduc
 
 Bioinformatic analysis of sequencing reads was completed on the Cloud Infrastructure for Microbial Bioinformatics (CLIMB) (Connor et al., 2016). Raw fastQ files were first demultiplexed according to Illumina barcodes automatically using the Illumina MiSeq software. Experimental replicates were separated by custom inline barcodes using the FastX barcode splitter and the barcodes were subsequently removed using the FastX trimmer (v0.0.13). Each read was checked for the presence of the transposon sequence in two steps: first, reads that contained the first 25 bp of the transposon sequence (AGCTTCAGGGTTGAGATGTGTA), introduced by the TKK_F primer, allowing for three mismatches were filtered and parsed. Parsed reads were subsequently checked for the presence of the final 10 bp of the transposon sequence (TAAGAGACAG), allowing for one mismatch. The transposon sequence and reads <20 bp were trimmed using Trimmomatic (v0.39). Resulting reads were mapped to the K. pneumoniae ECL8 (HF536482.1 and HF536483) genome and plasmid using the Burrows-Wheeler Alignment tool (BWA-MEM) using default parameters (i.e. -k=20 bp exact match). Mapped reads were indexed using samtools (v1.8) and converted into bed format using the Bam2bed tool (Bedtools suite v2.27.1). The resulting bed file was intersected against the annotated CDS in the K. pneumoniae ECL8 gff file, which was generated using PROKKA (v1.14.0). Transposon insertion sites and their corresponding location were quantified using custom Python scripts. Mapped transposon insertion sites were visualized using the Artemis genome browser (Rutherford et al., 2000).
 
-## Statistical analysis of transposon insertion density
+### Statistical analysis of transposon insertion density
 
 A modified geometric model was applied to identify the probability of finding k-1 insertion-free bases followed by a transposon insertion as reported previously (Goodall et al., 2018). In a string of 10,000 independent trials the probability of an insertion ‘p’ was calculated using the following equation: P(k)=p(1–p)(k).
 
-## Identification of putative essential genes
+### Identification of putative essential genes
 
 In-house scripts kindly provided by Langridge et al., 2009, were amended and used for the prediction of essential genes. Briefly, the number of unique transposon insertion sites for each gene was normalized for CDS length (number of UIPs/CDS length in bp), which was denoted the IIS. The Freedman-Diaconis method was used to generate a histogram of the IIS for each gene of the K. pneumoniae ECL8 TraDIS library. Distributions were fitted to the histogram using the R MASS library (v4.0.0).
 
 An exponential distribution was applied to the ‘essential’ mode, situated on the left of the histogram. A gamma distribution was applied to the ‘non-essential’ mode, situated on the right of the histogram. The probability of a gene belonging to each mode was calculated and the ratio of these values was denoted as the log-likelihood score. Genes were classified as ‘essential’ if they were 12 times more likely to be situated in the left mode than the right mode. Genes with log-likelihood scores between the upper and lower log2(Garbati and Al Godhair, 2013) threshold values of 3.6 and –3.6 respectively were classified as ‘unclear’. Genes with log-likelihood scores below the 12-fold threshold were classified as ‘non-essential’.
 
-## Genetic context and comparison of essential gene lists between ECL8, KPNIH1, RH201207, and ATC43816
+### Genetic context and comparison of essential gene lists between ECL8, KPNIH1, RH201207, and ATC43816
 
 Annotated genomes of K. pneumoniae KPNIH1 (Accession: CP009273.1), RH201207 (Accession: FR997879.1), and ATCC 43816 (Accession: CP009208.1) were downloaded from NCBI. Nucleotide sequences of putative essential genes were extracted using the SeqKit toolbox (Shen et al., 2016). K. pneumoniae ECL8 essential gene homologs were identified in KPNIH1, RH201207, and ATC43816 using Galaxy AU NCBI BLAST+ wrapper blastn using the following criteria (e-value>1e-10, percent identity>90, percent length>30) and utilizing the top hit based on calculated e-value and bitscore (Cock et al., 2015).
 
 The phylogenetic and ANI analysis of ECL8 and other K. pneumoniae isolates (Figure 3—source data 1) was performed using the Integrated Prokaryotes Genome and Pan-genome Analysis (IPGA v1.09) webserver (Liu et al., 2022). Using the default settings of the genome analysis module, ANI values between each submitted genome pairs were calculated. Then, IPGA performed genome annotation based on entries in the gcType microbial genome database for the given target genome list for phylogenetic analysis and tree construction (Shi et al., 2021).
 
-## Bio-TraDIS analysis for the identification of conditionally advantageous genes
+### Bio-TraDIS analysis for the identification of conditionally advantageous genes
 
 To identify conditionally essential genes, we used the Bio-TraDIS analysis pipeline (Barquist et al., 2016), that measures the read count log2FC between each CDS. To ensure robust analysis, CDS with <50 sequence reads in either the test or control condition were filtered and binned. CDS with a log2FC >2 (test/control) and a Q-value of >0.05 were classified as conferring a fitness advantage under the conditions tested. To comparatively analyze the impact of transposon insertion events in genomic regions in the serum-resistant dataset (180 min) to the input, we used the AlbaTraDIS package (v1.0.1) with the following parameters: -a -c 10.0 -f 2 -m 0 (Page et al., 2020).
 
-## Generation of knock-out strains
+### Generation of knock-out strains
 
 Mutants derived from K. pneumoniae ECL8 were constructed using the λ Red recombinase system (Datsenko and Wanner, 2000). Briefly, the K. pneumoniae ECL8 strain was transformed with pACBSCSE, which contains genes coding for the arabinose-induced λ Red recombinase system that permits homologous recombination between dsDNA PCR products and target loci in the bacterial genome. The recombination is based on short stretches of flanking homology arms (~65 bp) with the site of recombination. Using pKD4 as a template for the selectable kanamycin cassette, the PCR products used for replacing the target genes were amplified, gel extracted, and electroporated into electrocompetent strain K. pneumoniae ECL8 harboring pACBSCSE prepared in the presence of 0.5% (wt/vol) arabinose. Candidate mutants were screened using antibiotics, verified by PCR using primers outside the region of recombination then followed by Sanger sequencing.
 
-## Bacterial growth assay
+### Bacterial growth assay
 
 A single colony of each bacterial strain was inoculated into 5 mL of LB medium and grown overnight as previously described. Strains were normalized to an OD600 of 1.00 (approximately 7×108 cells) and washed twice in PBS by centrifugation at 6000 × g for 10 min. Cell pellets were resuspended in 1 mL of the growth medium required for the bacterial growth assay. Greiner Bio-One 96-well U-bottom microtiter plates were inoculated with bacterial strains at an initial OD600 of 0.02 in a final well medium volume of 150 μL and sealed with a Breathe-Easy sealing membrane (Sigma-Aldrich). Inoculated plates were incubated at 37°C with 300 RPM shaking, OD600 measurements were taken at 15 min over 24 hr using a CLARIOstar plate reader (BMG LABTECH).
 
-## Urine co-culture competition studies between K. pneumoniae ECL8 and isogenic mutants
+### Urine co-culture competition studies between K. pneumoniae ECL8 and isogenic mutants
 
 Overnight cultures of K. pneumoniae ECL8 and an isogenic mutant were normalized to an OD600 of 1.00 and washed twice with PBS. Cell pellets were resuspended in 1 mL of urine. A 500 μL of either the WT or mutant culture were inoculated into 25 mL of urine and incubated at 37°C with 180 RPM shaking for 12 hr. The sample was then transferred to 25 mL of fresh urine at an initial OD600 of 0.05 and grown for a further 12 hr. The culture was passaged for a further 12 hr of growth. These cultures were serially diluted in PBS at 0, 6, 12, 24, and 36 hr and plated onto LB agar. Following overnight growth, agar plates were replica plated onto either LB agar or LB agar supplemented with 100 μg/mL kanamycin grown overnight at 37°C then enumerated. The number of WT colony forming units (CFUs) was calculated by subtracting the number of CFUs in media with antibiotics from the total number of CFUs in media without antibiotics. Relative fitness was calculated as a competitive index, defined as ratio of mutant:WT viable cells divided by the corresponding inoculum.
 
-## LPS extraction
+### LPS extraction
 
 A single colony of ECL8 was inoculated into 5 mL of LB medium and incubated overnight at 37°C with 180 RPM shaking. Overnight cultures were normalized to an OD600 of 1.00 and centrifuged at 14,000 × g for 10 min. Cells were resuspended in 100 μL of cracking buffer (0.125 M Tris-HCl, 4% [wt/vol] SDS, 20% [vol/vol] glycerol, 10% [vol/vol] 2-mercaptoethanol in dH2O). The cell suspension was incubated at 100°C for 5 min and transferred to –80°C for 5 min. The cell suspension was incubated at 100°C for a further 5 min and centrifuged at 14,000 × g for 10 min. An 80 μL sample of the supernatant was transferred to a new tube and incubated with 5 μL of 5 mg/mL Proteinase K (QIAGEN) for 1 hr at 60°C. Samples were diluted 2× with Laemmli sample buffer (Sigma-Aldrich) and incubated at 95°C for 5 min. Samples were loaded onto a 4–12% Bis-Tris precast NuPAGE gel (Invitrogen) and run at 150 V for 1.5 hr. LPS was visualized by silver staining using the SilverQuest kit (Invitrogen) following the manufacturer’s instructions.
 
-## Serum bactericidal assay
+### Serum bactericidal assay
 
 Pooled serum was thawed on ice and pre-warmed to 37°C. Overnight cultures of bacterial strains were normalized to an OD600 of 1.00 in LB medium. Bacterial cells were washed twice with PBS and resuspended in a final volume of 1 mL PBS. A 50 μL sample of the cell suspension was inoculated into 50 μL of sera. Sera and cell samples were incubated at 37°C with 180 RPM shaking. Viable bacterial cells were enumerated by plating 10 μL of cell and sera suspension onto LB agar over a time-course: 0 min, 30 min, 60 min, 90 min, 180 min. Serum bactericidal activity was plotted as the log10 change in CFU relative to the initial inoculum.

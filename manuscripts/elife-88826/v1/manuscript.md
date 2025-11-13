@@ -15,13 +15,13 @@
 
 ### Affiliations
 
-1. https://ror.org/035cy3r13 Laboratory of Molecular Genetics, Hellenic Pasteur Institute Athens Greece
-2. https://ror.org/04gnjpq42 Athens International Master’s Programme in Neurosciences, Department of Biology, National and Kapodistrian University of Athens Athens Greece
-3. https://ror.org/03bfqnx40 Department of Molecular Biology and Genetics, Democritus University of Thrace Alexandroupolis Greece
-4. https://ror.org/04gnjpq42 Department of Hematology, Laiko General Hospital, National and Kapodistrian University of Athens Athens Greece
-5. https://ror.org/04gnjpq42 Research Immunogenetics Laboratory, Multiple Sclerosis and Demyelinating Diseases Unit, First Department of Neurology, School of Medicine, National and Kapodistrian University of Athens, NKUA, Aeginition University Hospital Athens Greece
-6. https://ror.org/035cy3r13 Transgenic Technology Unit, Hellenic Pasteur Institute Athens Greece
-7. https://ror.org/017wvtq80 Department of Chemistry, University of Patras Patras Greece
+1. Laboratory of Molecular Genetics, Hellenic Pasteur Institute Athens Greece ([ROR:035cy3r13](https://ror.org/035cy3r13))
+2. Athens International Master’s Programme in Neurosciences, Department of Biology, National and Kapodistrian University of Athens Athens Greece ([ROR:04gnjpq42](https://ror.org/04gnjpq42))
+3. Department of Molecular Biology and Genetics, Democritus University of Thrace Alexandroupolis Greece ([ROR:03bfqnx40](https://ror.org/03bfqnx40))
+4. Department of Hematology, Laiko General Hospital, National and Kapodistrian University of Athens Athens Greece ([ROR:04gnjpq42](https://ror.org/04gnjpq42))
+5. Research Immunogenetics Laboratory, Multiple Sclerosis and Demyelinating Diseases Unit, First Department of Neurology, School of Medicine, National and Kapodistrian University of Athens, NKUA, Aeginition University Hospital Athens Greece ([ROR:04gnjpq42](https://ror.org/04gnjpq42))
+6. Transgenic Technology Unit, Hellenic Pasteur Institute Athens Greece ([ROR:035cy3r13](https://ror.org/035cy3r13))
+7. Department of Chemistry, University of Patras Patras Greece ([ROR:017wvtq80](https://ror.org/017wvtq80))
 
 † Corresponding author
 
@@ -39,9 +39,162 @@ To investigate the potential of PBMC from MS patients to induce CNS-directed imm
 
 ## Results
 
-## Reconstitution of human adaptive immune system in B2m-NOG mice engrafted with PBMC from MS patient and HI donors
+### Reconstitution of human adaptive immune system in B2m-NOG mice engrafted with PBMC from MS patient and HI donors
 
 Six long-term RRMS patients, of which five were HLA-DRB1*15-positive (DR15 MS1-5) and one HLA-DRB1*13-positive (DR13 MS), all presenting with highly active disease following immunomodulatory treatment with natalizumab, were selected as PBMC donors (Table 1). A DR15-positive healthy individual (DR15 HI) was selected as a control donor. Fresh blood samples were used for immunoprofiling by fluorescence-activated cell sorting (FACS) with a panel of standard human immune cell marker antibodies, for screening of plasma antibody responses to viruses, and for the isolation of fresh PBMC for transplantation (Table 1; Figure 1—figure supplement 1; Figure 1—figure supplement 1—source data 1C). Groups of seven to eight B2m-NOG mice were injected intravenously with freshly prepared PBMC (1 × 107/mouse) from each donor (Figure 1—figure supplement 2, protocol 1). The transplanted mice were monitored for human immune cell engraftment by flow cytometry analysis of small blood samples recovered from the tail vein at different time points and all showed progressive engraftment by human CD45+ (hCD45+) leukocytes from day 7 (Figure 1A; Figure 1—source data 1; Figure 1—figure supplement 4A; Figure 1—figure supplement 4—source data 1A). At day 14 post-transplantation (dpt 14), four to five mice from each group were immunized for EAE using a mixture of immunodominant T cell myelin peptide antigens, following two different protocols. In EAE experiment 1, groups of DR13 MS, DR15 MS1, and DR15 HI mice were immunized twice, 7 days apart, using 200 μg each peptide/mouse/injection (Figure 1—figure supplement 3B, C; Figure 1—figure supplement 3—source data 1A). In EAE experiment 2, groups of DR15 MS2-5 were immunized once, using 100 μg each peptide/mouse (Figure 1—figure supplement 3C). Several PBMC donors used in this study were previously shown to have human T cell proliferation responses to myelin peptides (Dagkonaki et al., 2020; Table 1). Non-immunized mice, and mice immunized for EAE with low-dose peptides (1 × 100 μg) showed steadily increasing levels of blood hCD45+ leukocytes up to sacrifice at dpt 42 (Figure 1A; Figure 1—figure supplement 4A). Mice immunized for EAE with high-dose peptides (2 × 200 μg) showed reduced levels of blood hCD45+ leukocytes following immunization (Figure 1A). Further FACS analysis showed preferential expansion of hCD4+ T lymphocytes compared to hCD8+ T lymphocytes in blood and spleens of all engrafted mice (Figure 1B, C; Figure 1—figure supplement 4B; Figure 1—figure supplement 4—source data 1B), a finding consistent with a previous report describing the B2m-NSG model (King et al., 2009a).
+
+**Table 1.**
+ Clinical and demographic data of MS patient and healthy control blood donors.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>HLA genotypeDiagnosis(donor type)</th>
+      <th>G</th>
+      <th>Age</th>
+      <th>MS duration (year)</th>
+      <th>Therapies</th>
+      <th>Relapse(12/24 months)</th>
+      <th>MRIBrain/Gd</th>
+      <th>MRISpine/Gd</th>
+      <th>EDSS</th>
+      <th>Viral infections(titre)</th>
+      <th>EBV clinical interpretation (Figure 1—figure supplement 1C)</th>
+      <th>T cell responses [Dagkonaki et al., 2020]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DR131302/1303RRMS(donor for DR13 MS mice)</td>
+      <td>F</td>
+      <td>42</td>
+      <td>27</td>
+      <td>AzathioprineInterferon beta-1aInterferon beta-1bFingolimodNatalizumab (5 months)Cortisone (for 1 month prior to sampling)</td>
+      <td>1/1Last relapse 05/23</td>
+      <td>(+) stable</td>
+      <td>(+)GD (+)</td>
+      <td>2.5</td>
+      <td>JC+ (1.24)EBV VCA IgG+EBV VCA IgM−EBV VCA IgA+EBV EA IgG+EBV EBNA1 IgG+EBV EBNA1 IgM−</td>
+      <td>Suspect recent or ongoing reactivation</td>
+      <td>MBP83-99hMOG35-55[Patient 17 Dagkonaki et al., 2020]</td>
+    </tr>
+    <tr>
+      <td>DR150402/1501RRMS(donor for DR15 MS1 mice)</td>
+      <td>F</td>
+      <td>38</td>
+      <td>15</td>
+      <td>Interferon beta-1aFingolimodNatalizumab (24 months)To Cladribine (after sampling)</td>
+      <td>1/1No relapse during the last year</td>
+      <td>(+) stable</td>
+      <td>(+) stable</td>
+      <td>2.5</td>
+      <td>JC+ (1.47)EBV VCA IgG+EBV VCA IgM−EBV VCA IgA−EBV EA IgG−EBV EBNA1 IgG+EBV EBNA1 IgM+</td>
+      <td>Anomalous reactivation</td>
+      <td>MBP13-32MBP83-99hMOG35-55[Patient 11 Dagkonaki et al., 2020]</td>
+    </tr>
+    <tr>
+      <td>DR1504/15healthy(donor for DR15 HI mice)</td>
+      <td>F</td>
+      <td>28</td>
+      <td>NA</td>
+      <td>None</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>JC NDEBV VCA IgG+EBV VCA IgM−EBV VCA IgA−EBV EA IgG+EBV EBNA1 IgG+EBV EBNA1 IgM+</td>
+      <td>Anomalous reactivation</td>
+      <td>None[Normal 1 Dagkonaki et al., 2020]</td>
+    </tr>
+    <tr>
+      <td>DR15RRMS(donor for DR15 MS2 mice)</td>
+      <td>F</td>
+      <td>47</td>
+      <td>10</td>
+      <td>Dimethyl FumarateNatalizumab (1 year and ongoing)</td>
+      <td>0/0No relapses during the last year</td>
+      <td>(+) stable</td>
+      <td>(+) stable</td>
+      <td>1.5</td>
+      <td>JC+ (0,96)EBV VCA IgG+EBV VCA IgM−EBV VCA IgA−EBV EA IgG−EBV EBNA1 IgG+EBV EBNA1 IgM-</td>
+      <td>Seropositive without symptoms of active infection</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>DR15RRMS(donor for DR15 MS3 mice)</td>
+      <td>F</td>
+      <td>39</td>
+      <td>15</td>
+      <td>Interferon beta-1bNatalizumab (8 years and ongoing)</td>
+      <td>0/0No relapse during the last year</td>
+      <td>(+) stable</td>
+      <td>(+) stable</td>
+      <td>2.0</td>
+      <td>JC (−)EBV VCA IgG+EBV VCA IgM−EBV VCA IgA+EBV EA IgG+EBV EBNA1 IgG+EBV EBNA1 IgM−</td>
+      <td>Suspect recent or ongoing reactivation</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>DR15RRMS(donor for DR15 MS4 mice)</td>
+      <td>F</td>
+      <td>53</td>
+      <td>23</td>
+      <td>Interferon beta-1aInterferon beta-1bGlatiramer AcetateNatalizumab (13 years and ongoing)</td>
+      <td>0/0No relapse during the last year</td>
+      <td>(+) stable</td>
+      <td>(+) stable</td>
+      <td>3.5</td>
+      <td>JC (−)EBV VCA IgG+EBV VCA IgM−EBV VCA IgA−EBV EA IgG+EBV EBNA1 IgG+EBV EBNA1 IgM+</td>
+      <td>Anomalous reactivation</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>DR15RRMS(donor for DR15 MS5 mice)</td>
+      <td>F</td>
+      <td>30</td>
+      <td>13</td>
+      <td>Interferon beta-1aInterferon beta-1bFingolimodNatalizumab (8 years and ongoing)</td>
+      <td>0/0No relapse during the last year</td>
+      <td>(+) stable</td>
+      <td>(+) stable</td>
+      <td>1.5</td>
+      <td>JC (−)EBV VCA IgG+EBV VCA IgM+EBV VCA IgA+EBV EA IgG−EBV EBNA1 IgG+EBV EBNA1 IgM−</td>
+      <td>Suspect recent or ongoing reactivation</td>
+      <td>ND</td>
+    </tr>
+  </tbody>
+</table>
+
+_KEY: EBV, Epstein-Barr virus; EDSS, expanded disability status scale; G, gender; Gd, gadolinium-enhancing lesions; JC; John Cunningham virus; NA, not applicable; ND, not done; RRMS, relapse-remitting MS._
+
+![Figure 1.](https://cdn.elifesciences.org/articles/88826/elife-88826-fig1-v1.jpg)
+
+**Figure 1.:** (A) Progressive engraftment of human (h) CD45+ leukocytes from selected donors in groups of B2m-NOG mice, non-immunized (left bars) and immunized for experimental autoimmune encephalomyelitis (EAE) (right bars) using a myelin peptide cocktail in repeat immunizations with 200 μg/each myelin peptide (EAE experiment 1), or single immunization with 100 μg/each myelin peptide (EAE experiment 2), measured in peripheral blood samples taken at different time points , and in spleen recovered at sacrifice 42 days’ post-transplantation (dpt 42) by fluorescence-activated cell sorting (FACS) (non-immunized mice, dpt 7 & 13, n=7-8 mice/group; dpt 42, n=3 mice/group; immunized mice, dpt 42, n=4-5 mice/group). (B) Proportions of hCD4+ and hCD8+ T cells in blood hCD45+CD3+ T cells at different time points by FACS (non-immunized mice, dpt 7 & 13, n=7-8 mice/group; dpt 42, n=3 mice/group; immunized mice, dpt 42, n=4-5 mice/group). (C) Proportions of human immune cell subpopulations in spleens of immunized and non-immunized mice at dpt 42 by FACS (non-immunized mice n=3 mice/group; immunized mice n=4-5 mice/group). (D) Proportions of interferon-γ- and IL-17A-producing CD4+ and CD8+ (or CD4−) T cells in splenocytes recovered from mice in the different groups at dpt 42 by FACS (non-immunized mice n=2-3 mice/group; immunized mice n=4-5 mice/group). (E) Antigen-specific T cell proliferation responses to the immunizing antigens (mMOG35-55, hMOG35-55, MOG1-20, and MBP83-99), anti-hCD3 (positive control) and medium (unstimulated; US), in splenocytes recovered from non-immunized and immunized DR13 MS PBMC humanized mice at dpt 42 by FACS (non-immunized mice n=3 mice/group; immunized mice n=3-4 mice/group). Results are expressed as a cell division index. (F) Draining lymphoid structures in inguinal fat of mice engrafted with DR13 MS and DR15 MS PBMC and immunized with myelin peptides, recovered at dpt 42. Immunohistochemistry revealed the presence of hCD45- and mCD45-positive leukocytes, hCD4- and hCD8-positive T cells, and hCD20-positive B cells (latter only DR13 MS mice). Scale bar 200 μm; ×20 objective (F). All results are depicted as mean ± standard error of the mean (SEM). Statistical significance is shown after pairwise comparisons between groups using Student’s t test (*p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88826/elife-88826-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Panel of human immune cell markers used for fluorescence-activated cell sorting (FACS). (B) Immunoprofiling of fresh peripheral blood from donors by FACS using antibody panel in A. (C) Clinical interpretation of enzyme-linked immunosorbent assay (ELISA) results for detection of Epstein–Barr virus (EBV) antibodies in plasma from donors.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/88826/elife-88826-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Three different PBMC isolation protocols were compared for the preparation of cells for transplantation into B2m-NOG mice. Specifically, PBMC were isolated from peripheral blood samples from a healthy individual, fresh on the day of transplantation (protocol 1), after dilution of fresh blood with culture medium and 3 days’ storage at 4°C (protocol 2), freshly isolated, frozen, thawed, and cultured for 24 hr (protocol 3).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/88826/elife-88826-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Previously, we found that humanized HLA-DR2b transgenic mice lacking all mouse MHCII genes required greater amounts of peptide antigen to induce clinical EAE than wild-type C57BL/6 (B6) mice (Dagkonaki et al., 2020). (A, B) To test for possible toxicity of EAE induced by high amounts of myelin peptide antigens, we compared increasing dosages of peptide in three groups of 6- to 8-week-old female B6 mice (n=2 mice/ group): Group 1 was immunized using our standard EAE protocol in B6 mice; Group 2 was immunized using an EAE protocol for HLA-DR2b transgenic mice; Group 3 was immunized using a myelin peptide cocktail. (C) EAE immunization protocols used for immunization of humanized B2m-NOG mice. In experiment 1, humanized B2m-NOG mice were immunized with the myelin peptide cocktail at 200 μg/peptide, followed by a repeat boost immunization 7 days later. In experiment 2, humaized B2m-NOG mice were immunized once with the myelin peptide cocktail at 100 μg/peptide. (A) Results are depicted as mean ± standard error of the mean (SEM).
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/88826/elife-88826-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Progressive engraftment of human (h) CD45+ leukocytes from donors in groups of B2m-NOG mice, non-immunized (left) and immunized (right) for experimental autoimmune encephalomyelitis (EAE) using the single immunization protocol with 100 μg/each myelin peptide (EAE experiment 2), measured in peripheral blood samples taken at different time points, and in spleen recovered at sacrifice 42 days’ post-transplantation (dpt 42) by fluorescence-activated cell sorting (FACS) (non-immunized mice, dpt 7 & 13, n=7 mice/group; dpt 42, n=2-3 mice/group; immunized mice, dpt 42, n=4 mice/group). (B) Proportions of hCD4+ and hCD8+ T cells in blood hCD45+CD3+ T cells at different time points by FACS. (C) Proportions of CFSElow (proliferating) splenocytes recovered from non-immunized (−) and EAE-immunized (+) PBMC B2m-NOG mice at sacrifice on dpt 42 and cultured for 120 hr in the presence of individual myelin peptides, anti-CD3 and phytohemaglutinin (PHA), or unstimulated (US) by FACS analysis (non-immunized mice, dpt 7 & 13, n=7 mice/group; dpt 42, n=3 mice/group; immunized mice, dpt 42, n=4 mice/group). All results are depicted as mean ± standard error of the mean (SEM). Statistical analysis was performed by pairwise comparisons between different groups of mice using Student’s t test.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/88826/elife-88826-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Analysis of splenocytes recovered from non- and experimental autoimmune encephalomyelitis (EAE)-immunized (+) PBMC B2m-NOG mice at sacrifice on day post-transplantation 42 (dpt 42) by fluorescence-activated cell sorting (FACS), showing engraftment by human CD45+ leukocyte populations.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/88826/elife-88826-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** Analysis of blood mCD11b+ myeloid cell subpopulations in non-immunized (naive) B2m-NOG (n = 4), NOD-scid (n = 2), and C57BL/6 (B6) (n = 5), as well as in groups of experimental autoimmune encephalomyelitis (EAE) immunized NOD-scid (n = 2) and B6 (n = 5) mice at dpi 8. EAE immunization was performed by subcutaneous (s.c.) tail-base injection of CFA emulsion supplemented with H37Ra and without myelin peptides, followed by two injections of Bordetella pertussis toxin, as described in Materials and methods.
 
 Successful engraftment of mice by hCD45+ leukocytes was confirmed in the spleen recovered from non-immunized and immunized mice at sacrifice on dpt 42. Further analysis of splenocytes revealed robust engraftment of hCD4+ and hCD8+ T cells in all mice, and of hCD19+ B cells in DR13 MS, DR15 MS3, and DR15 MS5 mice (Figure 1C; Figure 1—figure supplement 5; Figure 1—figure supplement 5—source data 1). Notably, B cell engraftment was best in MS patients interpreted as having suspected recent or ongoing reactivation of Epstein–Barr virus (EBV), as determined by plasma levels of anti-EBV antibodies (Table 1; Figure 1—figure supplement 1C; Figure 1—figure supplement 1—source data 1C). Human immune cells other than T and B cells, notably monocytes, were undetectable in dpt 42 spleen. Analysis of cytokine production by intracellular staining showed high proportions of interferon-γ (IFN-γ)-producing hCD4+ and hCD8+ splenocytes, and IL-17A-producing hCD4+ and hCD4− splenocytes in both immunized and non-immunized mice (Figure 1D).
 
@@ -51,13 +204,21 @@ Functionality of the human immune system in B2m-NOG mice was investigated using 
 
 We next investigated whether draining lymph node (LN) structures could be identified in the immunized mice at sacrifice. Mice lacking the common cytokine receptor γ-chain gene are known to have poor lymphoid organ structure and functioning, because NK cells are needed for the formation of LN inducer cells, which in turn are needed for LN organogenesis (Mebius, 2003). Nevertheless, the inguinal fat tissue from several immunized mice showed accumulated masses of leukocytes containing mCD45- and hCD45-positive leukocytes, CD8-, CD4-, and CD20-positive lymphocytes by immunohistochemistry, although lacking obvious LN organization (Figure 1F). Together the results show that human T and B lymphocytes are efficiently engrafted in B2m-NOG mice by PBMC from MS patients, that functional T cell responses can be detected depending upon the PBMC donor, while lack of organized LN and germinal centers prevents the generation of anti-MOG IgG antibody responses.
 
-## Human T cells accumulate at CNS borders in non-immunized DR15 MS and DR15 HI mice, and form spontaneous parenchymal lesions in brain and spinal cord of DR15 MS mice
+### Human T cells accumulate at CNS borders in non-immunized DR15 MS and DR15 HI mice, and form spontaneous parenchymal lesions in brain and spinal cord of DR15 MS mice
 
 For the period of the study, none of the engrafted mice showed clinical symptoms of neuroinflammation using criteria commonly used for scoring EAE (Dagkonaki et al., 2020), or other neurological deficits (Guyenet et al., 2010). Mild symptoms of GVHD, specifically fur ruffling and reduced mobility (Cooke et al., 1996), were recorded in few mice independent of group close to the time of sacrifice. To determine whether human immune cells enter CNS tissues in PBMC humanized B2m-NOG mice, we performed immunohistochemical analyses of serial sections from brain (Figure 2; Figure 2—source data 1) and spinal cord (Figure 3; Figure 3—source data 1) recovered from non-immunized mice at sacrifice using marker antibodies for human and mouse immune cells as well as for mouse microglia and astrocytes. To further monitor GVHD development we also performed standard histological analyses of lung and liver, two main tissue targets of GVHD.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/88826/elife-88826-fig2-v1.jpg)
+
+**Figure 2.:** Immunohistochemical analysis of the brain from non-immunized peripheral blood mononuclear cell (PBMC) B2m-NOG mice showing infiltration by human (h) and mouse (m) CD45-positive leukocytes, and hCD8-positive T cells, in brain border and parenchymal regions (denoted in diagrams of brain and brainstem A). (B, C) Accumulation of hCD45- and mCD45-positive leukocytes and hCD8-positive T cells, together with local activation of Iba1-positive microglia and glial fibrillary acid protein (GFAP)-positive astrocytes, at border regions in the brains of DR15 HI (left panels) and DR15 MS (right panels) mice, specifically at meninges close to the optic tract (B, arrowheads) and in the connective tissue of the interventricular foramen joining the lateral and third ventricles (C, arrowheads). Scattered hCD45-positive leukocytes and hCD8 T cells in brain parenchyma of DR15 MS mice (C, arrows). (D) Counting of border-associated and parenchymal hCD8- and hCD4-positive T cells in whole coronal sections of brain of humanized mice, represented as total cells and cells/mm2 (n=3 mice/group) (E) Ratios of hCD4/hCD8 T cells at borders and parenchyma of selected humanized mice. (F) Small hCD45-positive immune cell lesion in brainstem of DR15 MS1 mice (see also diagram A). (G) hCD45-positive immune cell lesions in gray matter of hippocampus (i, ii) and sub-hippocampus/thalamus (iii), and white matter of optic chiasm (H) of DR15 MS3 mice. (I, J) hCD45-positive immune cell lesions in gray matter of thalamus and hippocampus, respectively, of DR15 MS5 mice. Scale bars 100 μm; ×20 objective (B, C, F), 200 μm; ×10 objective (G), 100 μm; ×40 objective (H–J). All results are depicted as mean ± standard error of the mean (SEM). Statistical analysis was performed by pairwise comparisons between different groups of mice using Student’s t test.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88826/elife-88826-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Histochemical analysis of peripheral tissues recovered from non- and experimental autoimmune encephalomyelitis (EAE)-immunized humanized B2m-NOG mice at sacrifice on day post-transplantation 42 (dpt 42). Inflammation was evaluated in lung (A) and liver (Bi) by hematoxylin and eosin (H&E) staining of paraffin section prepared from non-immunized (n=3 mice/group) and immunized mice (n=5 mice/group). Representative photomicrographs of liver from the different mouse groups are shown (Bii). All results are depicted as mean ± standard error of the mean (SEM). Statistical comparisons between lung and liver inflammation in three different non-immunized and immunized mouse groups at the same time points using one-way analysis of variance (ANOVA) (*p ≤ 0.05, **p ≤ 0.01, ***p ≤ 0.001).
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/88826/elife-88826-fig3-v1.jpg)
 
-**Figure 3.:** Immunohistochemical analysis of spinal cord from non-immunized peripheral blood mononuclear cell (PBMC) B2m-NOG mice showing infiltration by human (h) CD3-positive T cells in the gray and white matter regions. (A) Infiltrating hCD3-positive T cells were scattered individually throughout spinal cord gray and white matter and formed small lesions in the white matter (WM) of both DR15 MS and DR15 HI mice (lower panels, arrowheads), and gray matter lesions only in DR15 MS mice (upper panels, arrowheads). The dotted lines mark the boundary between gray matter and white matter. (B) Semi-quantitative estimation of hCD3-positive T cells in comparable whole spinal cord sections from DR15 HI and DR15 MS mice (n=3 mice/group). (C) Counting of parenchymal hCD3-positive T cell lesions (≥3 adjacent cells) in gray matter (GM) (i) and white matter (WM) (ii) in whole spinal cord sections from DR15 HI and DR15 MS mice. (D) Ratios of hCD4/hCD8 T cells at borders and parenchyma of DR15 HI and DR15 MS mice. (E) Double immunofluorescence staining for hCD45-positive leukocytes (green, arrowheads) and MBP-positive myelin (red), with 4′,6-diamidino-2-phenylindole (DAPI) counterstained nuclei (blue), in spinal cord WM of DR15 MS mice. Scale bars 100 μm; ×20 objective (A, top panels); ×40 objective (A, bottom panels). All results are depicted as mean ± standard error of the mean (SEM). Statistical analysis was performed by pairwise comparisons between different groups of mice using Student’s t test (**p ≤ 0.01).Figure 3—source data 1.
+**Figure 3.:** Immunohistochemical analysis of spinal cord from non-immunized peripheral blood mononuclear cell (PBMC) B2m-NOG mice showing infiltration by human (h) CD3-positive T cells in the gray and white matter regions. (A) Infiltrating hCD3-positive T cells were scattered individually throughout spinal cord gray and white matter and formed small lesions in the white matter (WM) of both DR15 MS and DR15 HI mice (lower panels, arrowheads), and gray matter lesions only in DR15 MS mice (upper panels, arrowheads). The dotted lines mark the boundary between gray matter and white matter. (B) Semi-quantitative estimation of hCD3-positive T cells in comparable whole spinal cord sections from DR15 HI and DR15 MS mice (n=3 mice/group). (C) Counting of parenchymal hCD3-positive T cell lesions (≥3 adjacent cells) in gray matter (GM) (i) and white matter (WM) (ii) in whole spinal cord sections from DR15 HI and DR15 MS mice. (D) Ratios of hCD4/hCD8 T cells at borders and parenchyma of DR15 HI and DR15 MS mice. (E) Double immunofluorescence staining for hCD45-positive leukocytes (green, arrowheads) and MBP-positive myelin (red), with 4′,6-diamidino-2-phenylindole (DAPI) counterstained nuclei (blue), in spinal cord WM of DR15 MS mice. Scale bars 100 μm; ×20 objective (A, top panels); ×40 objective (A, bottom panels). All results are depicted as mean ± standard error of the mean (SEM). Statistical analysis was performed by pairwise comparisons between different groups of mice using Student’s t test (**p ≤ 0.01).
 
 DR13 MS humanized mice showed very few hCD45-positive leukocytes at CNS borders, specifically meninges, and none in CNS parenchyma, and no further analysis was made (data not shown). DR15 HI mice showed an accumulation of human immune cells at CNS borders, particularly the meninges and some in the choroid plexus of the interventricular foramen between lateral and third ventricles of the brain, and few cells scattered throughout the brain parenchyma (Figure 2A–C). Both brain border and parenchymal hCD45-positive immune cells comprised mainly hCD8-positive T cells (Figure 2D), leading to low hCD4/hCD8 T cell ratios, especially in parenchyma (Figure 2E). Mild activation of Iba1-positive microglia and GFAP-positive astrocytes was seen at sites of immune cell accumulation at CNS borders (Figure 2C). In spinal cord, hCD3-positive T cells accumulated at borders and few individual cells infiltrated parenchyma of white and gray matter (Figure 3A–C), forming rare small T cell lesions (≥3 adjacent cells) in the white matter (Figure 3A, bottom left panel, arrowhead). Spinal cord-infiltrating cells in DR15 HI mice also comprised mainly hCD8-positive T cells, leading to low hCD4/hCD8 T cell ratios (Figure 3D). Mouse CD45-positive cells were rare at barriers, absent from parenchyma, and demyelination was not observed in the brain or spinal cord of DR15 HI mice.
 
@@ -65,7 +226,7 @@ Three of the five groups of DR15 MS mice, specifically DR15 MS1, DR15 MS3, and D
 
 To determine whether differences in the severity of CNS immune infiltration in the immunized mice could be secondary to levels of GVHD inflammation in the periphery, we performed semi-quantitative analysis of hematoxylin and eosin (H&E) stained liver and lung sections, which are main targets of GVHD responses (Cooke et al., 1996). The mouse groups showed equal levels of inflammation in both liver and lung, revealing a dissociation between peripheral GVHD and CNS inflammation (Figure 2—figure supplement 1; Figure 2—figure supplement 1—source data 1). These results show that non-immunized DR15 MS1 humanized mice show increased infiltration of brain and spinal cord by human T cells compared to non-immunized DR15 HI mice, and uniquely develop spontaneous T cell lesions in spinal cord gray matter and brain parenchyma.
 
-## Immunization with myelin peptides increases hCD4 T cell infiltration of CNS parenchyma resulting in mixed hCD4/hCD8 T cell lesions in brain and spinal cord of DR15 MS and DR15 HI mice
+### Immunization with myelin peptides increases hCD4 T cell infiltration of CNS parenchyma resulting in mixed hCD4/hCD8 T cell lesions in brain and spinal cord of DR15 MS and DR15 HI mice
 
 To further investigate whether human immune cells have the potential to induce CNS immunopathology in PBMC humanized B2m-NOG mice, we immunized mice for EAE. In a previous study, humanized HLA-DR2b transgenic mice lacking all mouse MHCII genes were found to require higher amounts of peptide antigen than B6 mice to induce clinical EAE (Dagkonaki et al., 2020). Here, EAE tests in wild-type B6 mice showed that disease could be induced by immunization with high amounts of peptides with no evidence of increased morbidity or mortality (Figure 1—figure supplement 3A, B). A peptide cocktail containing myelin epitopes previously associated with MS, specifically hMOG35-55, MOG1–20 and MBP83-99 (Pette et al., 1990; Ota et al., 1990; Kerlero de Rosbo et al., 1993; Cao et al., 2015), plus mMOG35-55, was chosen for immunization in groups of 12- to 14-week-old humanized B2m-NOG mice on dpt 14. In the first experiment, groups of B2m-NOG mice engrafted with PBMC from DR13 MS, DR15 MS1 and DR15 HI donors received a repeat immunization with 200 μg/peptide spaced 7 days apart, similar to that used in HLA-DR2b transgenic mice. In the second experiment, groups of B2m-NOG mice engrafted with PBMC from DR15 MS2-5 donors received a single immunization with 100 μg/peptide, to reduce the possibility of T cell tolerance (Figure 1—figure supplement 3C). None of the PBMC humanized B2m-NOG mice immunized with myelin antigens developed typical clinical symptoms of EAE, a finding consistent with a previous study in NSG mice humanized with PBMC from healthy donors (Zayoud et al., 2013).
 
@@ -73,11 +234,11 @@ To investigate whether immunization for EAE increased immune cell infiltration o
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/88826/elife-88826-fig4-v1.jpg)
 
-**Figure 4.:** Immunohistochemical analysis of the brain from peripheral blood mononuclear cell (PBMC) B2m-NOG mice immunized for experimental autoimmune encephalomyelitis (EAE) showing infiltration by human (h) and mouse (m) CD45-positive leukocytes, hCD8- and hCD4-positive T cells, and local activation of Iba1-positive microglia and GFAP-positive astrocytes, in brain regions denoted in the diagram (A). (B) Individual hCD45-positive leukocytes and hCD8-positive T cells form small lesions in the optic tract (arrowhead) in immunized DR15 HI mice. (C) Counting of hCD45-positive immune cells at borders (total cells in section) and parenchyma (cells/mm2) in whole coronal sections of brain from non-immunized (n=3/group) and immunized (n=5 mice/group) DR15 HI and DR15 MS mice. (D) Counting of hCD4- and hCD8-positive T cells at borders (total cells in section) and parenchyma (cells/mm2) in whole coronal sections of brain from non-immunized (n=3 mice/group) and immunized DR13 MS, DR15 HI and DR15 MS1 (all n=5 mice/group), DR15 MS2-5 (n=4 mice/group). (E) Ratios of hCD4/hCD8 T cells at borders and parenchyma of non-immunized and immunized DR15 HI and DR15 MS mice. (F) Prominent lesions in the corpus callosum white matter of two of five DR15 MS1 mice (arrowheads), containing hCD45- and mCD45-positive leukocytes, hCD4- and hCD8-positive T cells, and locally activated Iba1-positive microglia. Inset shows a serial section stained by Luxol fast blue showing absence of demyelination. (G) Double immunofluorescence staining for hCD45-positive leukocytes (green, arrowheads) and MBP-positive myelin (red), with DAPI counterstained nuclei (blue), in corpus callosum in immunized DR15 MS1 mice, showing inflammatory lesion without demyelination. (H) Small white matter lesion in DR15 MS2 mouse. (I) Prominent white and (J) gray matter lesions containing both hCD4 and hCD8 T cells in DR15 MS3 mice. (K) Small lesion containing human hCD45-positive immune cells in sub-thalamic area of DR15 MS5 mice. (L) Correlation analysis between numbers of hCD4 or hCD8 with number of hCD45 lesions in brain parenchyma of all combined immunized DR15 HI and DR15 MS1-5 mice. Scale bars 100 μm; ×20 objective (B, F); ×40 objective (G, K). All results are depicted as mean ± standard error of the mean (SEM). Statistical analysis was performed by pairwise comparisons between different groups of mice using Student’s t test.Figure 4—source data 1.
+**Figure 4.:** Immunohistochemical analysis of the brain from peripheral blood mononuclear cell (PBMC) B2m-NOG mice immunized for experimental autoimmune encephalomyelitis (EAE) showing infiltration by human (h) and mouse (m) CD45-positive leukocytes, hCD8- and hCD4-positive T cells, and local activation of Iba1-positive microglia and GFAP-positive astrocytes, in brain regions denoted in the diagram (A). (B) Individual hCD45-positive leukocytes and hCD8-positive T cells form small lesions in the optic tract (arrowhead) in immunized DR15 HI mice. (C) Counting of hCD45-positive immune cells at borders (total cells in section) and parenchyma (cells/mm2) in whole coronal sections of brain from non-immunized (n=3/group) and immunized (n=5 mice/group) DR15 HI and DR15 MS mice. (D) Counting of hCD4- and hCD8-positive T cells at borders (total cells in section) and parenchyma (cells/mm2) in whole coronal sections of brain from non-immunized (n=3 mice/group) and immunized DR13 MS, DR15 HI and DR15 MS1 (all n=5 mice/group), DR15 MS2-5 (n=4 mice/group). (E) Ratios of hCD4/hCD8 T cells at borders and parenchyma of non-immunized and immunized DR15 HI and DR15 MS mice. (F) Prominent lesions in the corpus callosum white matter of two of five DR15 MS1 mice (arrowheads), containing hCD45- and mCD45-positive leukocytes, hCD4- and hCD8-positive T cells, and locally activated Iba1-positive microglia. Inset shows a serial section stained by Luxol fast blue showing absence of demyelination. (G) Double immunofluorescence staining for hCD45-positive leukocytes (green, arrowheads) and MBP-positive myelin (red), with DAPI counterstained nuclei (blue), in corpus callosum in immunized DR15 MS1 mice, showing inflammatory lesion without demyelination. (H) Small white matter lesion in DR15 MS2 mouse. (I) Prominent white and (J) gray matter lesions containing both hCD4 and hCD8 T cells in DR15 MS3 mice. (K) Small lesion containing human hCD45-positive immune cells in sub-thalamic area of DR15 MS5 mice. (L) Correlation analysis between numbers of hCD4 or hCD8 with number of hCD45 lesions in brain parenchyma of all combined immunized DR15 HI and DR15 MS1-5 mice. Scale bars 100 μm; ×20 objective (B, F); ×40 objective (G, K). All results are depicted as mean ± standard error of the mean (SEM). Statistical analysis was performed by pairwise comparisons between different groups of mice using Student’s t test.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/88826/elife-88826-fig5-v1.jpg)
 
-**Figure 5.:** Immunohistochemical analysis of spinal cord from peripheral blood mononuclear cell (PBMC) B2m-NOG mice immunized for experimental autoimmune encephalomyelitis (EAE) showing infiltration by human (h) CD3-positive T cells in the gray and white matter regions. (A) Infiltrating hCD3-positive T cells scattered throughout spinal cord gray and white matter and forming small lesions in the white matter (WM) of both DR15 MS1 and DR15 HI mice (bottom panels, arrowheads) The dotted lines mark the boundary between gray and white matter. (B) Semi-quantitative estimation of hCD3-positive T cells in comparable whole spinal cord sections from DR15 HI and DR15 MS mice (n=5 mice/group). (C) Counting of hCD3-positive T cell lesions (≥3 adjacent cells) in gray matter (GM) (i) and white matter (WM) (ii) in whole spinal cord sections from DR15 HI and DR15 MS1 mice (n=5 mice/group). (D) Ratios of hCD4/hCD8 T cells at borders (i) and in parenchyma (ii) of spinal cord in non-immunized and immunized DR15 HI and DR15 MS mice. (E) Double immunofluorescence staining for hCD45-positive leukocytes (green, arrowheads) and MBP-positive myelin (red), with DAPI counterstained nuclei (blue), in white matter (WM) of immunized DR15 MS spinal cord. Scale bars 100 μm; ×40 objective (A). All results are depicted as mean ± standard error of the mean (SEM). Statistical analysis was performed by pairwise comparisons between different groups of mice using Student’s t test.Figure 5—source data 1.
+**Figure 5.:** Immunohistochemical analysis of spinal cord from peripheral blood mononuclear cell (PBMC) B2m-NOG mice immunized for experimental autoimmune encephalomyelitis (EAE) showing infiltration by human (h) CD3-positive T cells in the gray and white matter regions. (A) Infiltrating hCD3-positive T cells scattered throughout spinal cord gray and white matter and forming small lesions in the white matter (WM) of both DR15 MS1 and DR15 HI mice (bottom panels, arrowheads) The dotted lines mark the boundary between gray and white matter. (B) Semi-quantitative estimation of hCD3-positive T cells in comparable whole spinal cord sections from DR15 HI and DR15 MS mice (n=5 mice/group). (C) Counting of hCD3-positive T cell lesions (≥3 adjacent cells) in gray matter (GM) (i) and white matter (WM) (ii) in whole spinal cord sections from DR15 HI and DR15 MS1 mice (n=5 mice/group). (D) Ratios of hCD4/hCD8 T cells at borders (i) and in parenchyma (ii) of spinal cord in non-immunized and immunized DR15 HI and DR15 MS mice. (E) Double immunofluorescence staining for hCD45-positive leukocytes (green, arrowheads) and MBP-positive myelin (red), with DAPI counterstained nuclei (blue), in white matter (WM) of immunized DR15 MS spinal cord. Scale bars 100 μm; ×40 objective (A). All results are depicted as mean ± standard error of the mean (SEM). Statistical analysis was performed by pairwise comparisons between different groups of mice using Student’s t test.
 
 Immunized DR15 MS1-5 mice generally showed prominent accumulation of human immune cells at CNS borders, widespread immune cell infiltration of the parenchyma and development of T cell lesions in the brain and the spinal cord. Brain border and parenchymal hCD45-positive leukocytes comprised hCD8-positive T cells together with higher numbers of hCD4-positive cells compared to non-immunized controls (Figure 4C and D), leading to higher hCD4/hCD8 T cell ratios (Figure 4E). Border and parenchymal T cells were generally increased in immunized DR15 MS mice compared to immunized DR15 HI mice, but differences did not reach significant due to intra-group variation (Figure 4D). Unique features of immunized DR15 MS mice included large human immune cell lesions in the corpus callosum white matter of DR15 MS1 mice containing both hCD8- and hCD4-positive T cells (Figure 4A, F), without detectable myelin damage (Figure 4F, inset, Figure 4G), a white matter lesion in DR15 MS2 mice (Figure 4A, H), numerous white and gray matter lesions in DR15 MS3 mice (Figure 4A, I, J), and small subthalamic gray matter lesions in DR15 MS5 mice (Figure 4A, K). Increased brain infiltration by CD4-positive T cells in immunized mice was not associated with increased frequency of brain lesions, but rather the presence of mixed lesions containing both CD4- and CD8-postive T cells (Figure 4J). Correlation analysis showed a positive correlation between numbers of hCD4 and hCD8 with numbers of hCD45 lesions (Figure 4L). Locally activated Iba1-positive microglia and GFAP-positive astrocytes were present at sites of human immune cell entry at CNS borders and in T cell lesions (Figure 4F, and data not shown). In spinal cord, hCD3-positive T cells accumulated at borders and individual cells infiltrated parenchyma of gray and white matter (Figure 5A, right panels, Figure 5B), forming small T cell lesions only in the white matter (WM) (Figure 5A, right bottom panel, arrowhead, Figure 5Cii). Semi-quantitative analysis of parenchymal hCD3-positive T cells in comparable whole spinal cord sections showed equal infiltration in DR15 MS1 mice compared to control HI mice (Figure 5B) and numbers of T cell lesions in the white matter were equal to those in immunized HLA-DR15 HI mice (Figure 5Cii). Spinal cord border and parenchymal T cells of immunized DR15 MS1 mice comprised hCD8-positive T cells and also high numbers of hCD4-positive T cells compared to non-immunized controls, leading to higher hCD4/hCD8 T cell ratios (Figure 5D). Mouse CD45-positive cells were rare at barriers, absent from parenchyma, and demyelination was not observed in the brain (Figure 4F) or spinal cord of immunized DR15 MS mice.
 
@@ -101,19 +262,19 @@ In summary, PBMC humanized B2m-NOG mice show partial representation of MS immuno
 
 ## Materials and methods
 
-## MS patients and healthy subjects
+### MS patients and healthy subjects
 
 Blood donors were selected from a Hellenic MS patient cohort attending the MS outpatient clinic at Aeginition University Hospital of the National and Kapodistrian University of Athens (NKUA) School of Medicine, supervised by Dr. Maria Anagnostouli and genotyped for the HLA-DRB1 allele, at the Research Immunogenetics Laboratory, of the same Hospital, as previously described (Dagkonaki et al., 2020; Table 1). Six patients with long-term RRMS recently presenting with highly active disease since the last dose of immunomodulatory therapy (natalizumab) were selected. Natalizumab treatment was chosen as a criterion for this study because it blocks lymphocyte migration to the brain, thereby increasing circulating T and B lymphocytes (Yednock et al., 1992). One patient was HLA-DRB1*13-positive (DR13 MS), and five were HLA-DRB1*15-positive (DR15 MS). The HLA-DRB1*13-positive patient additionally received cortisone treatment 1 month prior to sampling because of high disease activity. A healthy HLA-DRB1*15-matched healthy individual (DR15 HI) was selected as control. Donor characteristics, including viral infections and EBV status are listed in Table 1. Blood samples were obtained from MS patients and a healthy individual under signed informed consent in accordance with the Declaration of Helsinki and approval from the Institutional Ethics Committee of Aeginition Hospital, NKUA (Protocol No: 7BSH46Y8N2-B66, 13/05/2015).
 
-## PBMC isolation
+### PBMC isolation
 
 Fresh peripheral blood (50 ml) was collected in ethylenediaminetetraacetic acid (EDTA)-treated polypropylene tubes and PBMC were isolated under Ficoll-Histopaque-1077 gradient centrifugation (Sigma-Aldrich). Buffy coats containing blood leukocytes were washed with 2% fetal bovine serum (FBS) in phosphate-buffered saline (PBS). Erythrocytes were removed using Quicklysis erythrocyte lysis buffer (Cytognos) and leukocytes were washed with 2% FBS in PBS. Before transfer of PBMC into mice, we compared several protocols for preparation of human PBMC using blood from a healthy individual, specifically, (1) PBMC isolated from fresh blood on the day of transfer, (2) PBMC isolated from blood after 3 days’ storage at 4°C, (3) PBMC cultured for 24 hr in complete RPMI-1640 after snap freezing of fresh PBMC and thawing. Cell viability and analysis of immune cell populations by flow cytometry showed that freshly isolated PBMC gave the best results and were used for transfer in this study (Figure 1—figure supplement 2, protocol 1).
 
-## EBV antibody responses in human blood
+### EBV antibody responses in human blood
 
 Blood plasma from the DR13 MS, DR15 MS, and DR15 HI donors was analyzed for EBV antibody responses using the following enzyme-linked immunosorbent assay (ELISA) tests: ELISA-VIDITESTS anti-VCA EBV IgG (ODZ-265), anti-VCA IgM (ODZ-005), anti-VCA IgA (ODZ-096), anti-EA (D) EBV IgG (ODZ-006), anti-EBNA-1 EBV IgM (ODZ-002), and anti-EBNA-1 EBV IgG (ODZ-001) (Vidia). Standardized criteria for the clinical interpretation of EBV antibody responses are shown in Figure 1—figure supplement 1C.
 
-## Mice
+### Mice
 
 Ten- to twelve-week-old female immunodeficient B2m-NOD/Shi - scid IL2rgnull (B2m-NOG) mice (stock number 14,957 F: NOD.Cg-B2m<em1Tac>Prkdc < scid>Il2rg <tm1Sug>JicTac; Taconic Biosciences) were used for transfer of freshly isolated human PBMC. These mice lack mature T, B, and NK cells and lack MHC class I molecules. Previous studies show that an equivalent mouse strain, NOD.Cg-PrkdcscidIl2rgtm1WjlB2mtm1Unc/Sz (NSG β2mnull; The Jackson Laboratory) facilitates the engraftment of CD4+ over CD8+ T cells and exhibits delayed onset of GVHD (Morillon et al., 2020a; King et al., 2009a). NOD.CB17-Prkdc scid/NCrHsd (Envigo) mice were used for investigation of peripheral mouse myeloid cell populations in a related severely immunodeficient mouse strain by flow cytometry.
 
@@ -121,28 +282,28 @@ Mice were transplanted via tail vein injection with 10 × 106 PBMC in 200 μl HB
 
 All experiments were performed under sterile conditions in the Department of Animal Models for Biomedical Research of the Hellenic Pasteur Institute. Mice were housed in a specific pathogen-free facility in microisolator cages and given ad libitum UV-sterilized standard chow, acidified water and gels for hydration. The experiments complied with ARRIVE guidelines and were in accordance with the local Ethical Committee guidelines on the use of experimental animals at the Hellenic Pasteur Institute, were approved by the national authorities and complied to EU Directive 2010/63/EU for animal experiments. The animal study was reviewed and approved by Committee for Evaluation of Experimental Procedures, Department of Experimental Animal Models, Hellenic Pasteur Institute (Presided by Dr P Andriopoulos pandriopoulos@patt.gov.gr for the Hellenic Republic, General Secretariat for Agricultural Economy, Veterinary and Licenses), and performed under licence numbers 770851/27-11-2019 and 1343917/02-11-2023.
 
-## Immunization with myelin peptides
+### Immunization with myelin peptides
 
 Peptides MBP83-99, MOG1-20, and mMOG35-55 and hMOG35-55 (S42 in mMOG, P42 in hMOG) were synthesized as previously described (Tapeinou et al., 2015). In a previous study, we found that humanized HLA-DR2b transgenic mice lacking all mouse MHCII genes required greater amounts of peptide antigen to induce clinical EAE than wild-type B6 mice (Dagkonaki et al., 2020). Due to limited numbers of B2m-NOG mice available for this study, several EAE protocols were first tested using wild-type B6 mice, mainly to exclude the possibility of toxicity at high peptide doses. Briefly, 8-week-old female B6 mice were immunized by subcutaneous (s.c.) tail-base injection of 37 μg (our standard EAE protocol) or 200 μg mMOG35-55, or a myelin peptide antigen cocktail containing 200 μg each of mMOG35-55, hMOG35-55, MOG1-20, and MBP83-99, dissolved in 100 μl saline and emulsified in an equal volume of Freund’s complete adjuvant (FCA) (Sigma-Aldrich). FCA was supplemented with 400 μg/injection of H37Ra Mycobacterium tuberculosis (Difco, BD Biosciences). All mice, except those immunized using the standard protocol, received an identical boost immunization 7 days later. The immunized mice also received intraperitoneal (i.p.) injections of 200 ng of Bordetella pertussis toxin (PTx) (Sigma-Aldrich) at the time of each immunization and 48 hr later. All mice developed clinical symptoms of EAE with no evidence of increased morbidity or mortality at high peptide doses (Figure 1—figure supplement 3A, B). For this reason, the high-dose peptide cocktail was chosen for immunization of groups of 12- to 14-week-old PBMC humanized B2m-NOG mice on dpt 14 in EAE experiment 1 (Figure 1—figure supplement 3C). In EAE experiment 2, groups of 12- to 14-week-old PBMC humanized B2m-NOG were immunized once, using 100 μg each peptide/mouse, to reduce the possibility of immune tolerance (Figure 1—figure supplement 3C). Mice were monitored daily for the clinical symptoms of EAE according to criteria commonly used for scoring EAE: 0, normal; 1, limp tail; 2, hind limb weakness; 3, hind limb paralysis; 4, forelimb paralysis; 5, moribund or dead (0.5 gradations represent intermediate scores) (Dagkonaki et al., 2020). Mice were also monitored for signs of other neurological deficits (Guyenet et al., 2010).
 
-## MOG antibody responses in PBMC humanized mouse blood
+### MOG antibody responses in PBMC humanized mouse blood
 
 Peripheral blood was collected from immunized and non-immunized mice at sacrifice on dpt 42, and sera collected for analysis of antibody responses. Samples were screened for IgG antibodies against MOG, using indirect immunofluorescence assays (IFA). Sera were analyzed at a starting dilution of 1:10, on EU 90 cells transfected with MOG protein and on EU 90 control transfected cells, according to the manufacturer’s instructions (Euroimmun, Lubeck, Germany). Visualization and evaluation of IFA results were performed under a fluorescence microscope (Zeiss, Axioskop 40).
 
-## Fluorescence-activated cell sorting (FACS)
+### Fluorescence-activated cell sorting (FACS)
 
 Fresh peripheral blood samples from the MS and HI donors were analyzed by FACS using a panel of immune cell marker antibodies. To monitor immune cell populations, 3 ml fresh peripheral blood was collected in EDTA tubes and a 100-μl aliquot was used for flow cytometry. Erythrocyte lysis was achieved with with Quicklysis (Cytognos) for 25 min. Cells were washed and incubated with an antibody mixture for human immune cell markers BV-510-hCD45 (clone 2D1), APC-Cyanine 7-hCD3 (clone HIT3a), PE-Cyanine 7-hCD4 (clone A161A1), PerCP-hCD8 (clone SK1), PE-hCD19 (clone 4G7), FITC-hCD56 (clone 5.1H11), APC-hCD66b (clone G1OF5), and BV-421-hCD14 (clone HCD14) (all from Biolegend), for 30 min at 4°C (Figure 1—figure supplement 1A). To monitor engraftment of human immune cells in B2m-NOG mice, peripheral blood was collected in heparin tubes from the tail vein at dpt 7, 13, and 42. Erythrocyte lysis and incubation with antibody mixture were performed as for fresh human blood above, except that the APC-hCD66b antibody was replaced by mouse APC-CD45 (clone 30-F11) (Biolegend) (Figure 1—figure supplement 1A). Data were acquired with FACSCelesta, FACSCanto II or FACSMelody cytometer and analyzed with FACSDiva (BD) and FlowJo software (Tree Star, Inc).
 
 For intracellular staining of IFN-γ, splenocytes were isolated at sacrifice at dpt 42 as described above, and cells were stimulated with phorbol 12-myristate 13 acetate (PMA) (20 ng/ml, Sigma-Aldrich) and ionomycin (1 μg/ml, Sigma-Aldrich) and treated with brefeldin-A (5 μg/ml, Sigma-Aldrich) for 3 hr at 37°C/5% CO2 in order to disrupt Golgi-mediated transport. Cells were fixed with 2% paraformaldehyde (PFA) in PBS, permeabilized using 0.5% wt/vol saponin, and stained with PerCP-Cyanine 5.5-CD3 (clone HIT3a, Biolegend), antibodies for APC-CD4 (clone RPA-T4, BD Biosciences), PerCP-CD8 (clone SK1, Biolegend), PE-IFN-γ (clone B27; BD Biosciences), and PE-IL-17A (clone eBio64DEC17, eBioscience). Data acquisition was performed using a FACSCalibur cytometer and analyzed with FlowJo software (Tree Star, Inc).
 
-## T cell proliferation assay
+### T cell proliferation assay
 
 Spleens were isolated at sacrifice and cells mechanically separated in RPMI (Invitrogen Life Technologies) containing 10% heat-inactivated FBS. To obtain single-cell suspensions, the washed homogenate was passed through a 70-μm cell strainer and erythrocyte lysis was performed with Gey’s erythrocyte lysis buffer for 5 min. The reaction was stopped with RPMI 1640/FBS. Washed splenocytes at a concentration of 107 cells/ml in PBS were incubated with 5 μΜ carboxylfluorescein succinimidyl ester (CFSE, V12883, Thermofisher) for 15 min at 37°C. Cells were washed and PBS/2% FBS was applied for 30 min at 37°C to stop the reaction. Cells were washed and resuspended in RPMI 1640/FBS with 50 μM 2-mercaptoethanol (Sigma-Aldrich) at concentration of 106 cells/ml. The cells were stimulated in triplicates in round-bottom 96-well plates with a myelin peptide antigen cocktail containing 30 μg/ml each mMOG35-55, hMOG35-55, MOG1-20, and MBP83-99 for 120 hr. Negative control cells were incubated with medium only, and positive control cells were incubated in plates coated with anti-CD3 (1 μg/ml) (clone HIT3a, BD Biosciences) or PHA (2 μg/ml) (Sigma-Aldrich). Results were expressed as cell division index which is the ratio of %CFSElow splenocytes (proliferating splenocytes) cultured with peptides or anti-CD3 to the of %CFSElow splenocytes cultured with medium only. Data acquisition was performed using a FACSCalibur cytometer and analyzed with FlowJo software (Tree Star, Inc).
 
-## Histopathology and immunohistochemistry
+### Histopathology and immunohistochemistry
 
 Mice were transcardially perfused with ice-cold PBS at sacrifice on dpt 42 by carbon dioxide inhalation. Brains, spinal cords, and peripheral tissues (including lung, liver, and inguinal fat tissue) were dissected and post-fixed in 4% PFA fixative overnight at 4°C. Tissues were embedded in paraffin and 5 μm sections used for immunohistochemistry and histopathology. Inflammation in peripheral tissues was visualized by H&E using standard techniques. Immune cell infiltration and inflammation of brain and spinal cord were visualized by immunohistochemistry using antibodies specific for hCD3 (SP7; Epredia), hCD45 (HI30; Biolegend), hCD4 (4B12; Agilent-Dako), hCD8 (C8/144B; Agilent-Dako), mouse CD45 (30-F11; Biolegend), mouse Iba1 (019-19741; Wako chemicals), and mouse GFAP (Z0334; Agilent-Dako). Primary antibodies to the human immune cell markers were visualized using an EnVision FLEX High pH kit (Agilent-Dako). Antibodies to mouse markers were detected using biotinylated secondary anti-IgG antibodies followed by horseradish peroxidase-labeled avidin–biotin complex, and signal development with 3′3′-diaminobenzidine (all Vector Laboratories). Nuclei were counterstained with hematoxylin. Ιmages were captured with an Olympus DP71 microscope digital camera using cell^A imaging software (Soft Imaging System GmbH). For measurements of brain areas Image J software was used. Semi-quantitative scoring of hCD3-positive T cells in whole spinal cord sections was perfomed as follows: 0, 0-3 cells; 0.5, 3-10 cells; 1, 10-25 cells; 2, 25-50 cells; 3, 50-90 cells; 4, more tha 90 cells. High-resolution immunofluorescence imaging was performed by confocal microscopy using paraffin sections immunostained with marker antibodies for myelin (rat anti-MBP; ab7349; Abcam), microglia (rabbit anti-Iba1; 019-19741; Wako chemicals) followed by anti-rat CF-647 (Biotium) and anti-rabbit AlexaFluor 568- (A11011; Invitrogen) labeled secondary antibodies, respectively. Nuclei were counterstained with DAPI (D1306; Invitrogen). A Leica TCS SP8 confocal microscope was used to acquire fluorescent images.
 
-## Statistical analysis
+### Statistical analysis
 
 Data were processed using Microsoft Excel, and statistical analysis was performed with GraphPad Prism 8. Figures were made using Adobe Illustrator V24.3. Data were analyzed with Student’s t test and one-way analysis of variance and results are presented as means ± standard error of the mean. Results were considered statistically significant when p ≤ 0.05.

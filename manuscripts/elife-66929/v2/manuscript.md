@@ -38,15 +38,138 @@ Actomyosin and Arp2/3 networks have been individually simulated as continuum or 
 
 **Figure 1.:** (A) Schematics show major aspects of the node-based actomyosin network: (top) the connections randomly made by one node within a search radius, (middle) the actomyosin and elastic forces along node-node connections, (bottom) the organization of nodes and connections mimicking a broad cortical network with a small thickness. (B–E) Within a large circle of nodes with only elastic connections (blue), node-based contractility is additionally induced in specific patterns (white). Twofold magnifications of the central region show the shape changes of the activated regions over indicated simulation steps (bottom right of each panel). Red squares provide references to detect the shape changes in C-E. In each case, similar results were observed for five simulations with distinct starting conditions. (F) Schematics show major aspects of the node-based Arp2/3 network, focusing on (1) the displacement of one plus end node from a nucleation point (minus end), (2) branching from this connection, (3) halting of the plus end node displacement, and (4) deletion of the plus end node. (G) Growth of plus end nodes (yellow) from a central patch of nucleation points over indicated simulation steps. Bottom right quadrants show the original simulation images and visualization of the other quadrants was enhanced by Gaussian blurring and a brightness and contrast adjustment. (H) The setup and visualization is the same as (G) except a circular wall was in place until simulation step 3000 (the position of the wall is shown at simulation step 2). (I) Network area plotted over simulation steps without a wall (black) and with a wall from the start of the simulation to simulation step 3000 (red). Note the similar area growth rate of both cases after simulation step 3000. Means ± SD shown for four simulations with distinct starting conditions.
 
-## The actomyosin network model mimics properties of actomyosin networks reported in vitro
+**Table 1.**
+ Parameters used in simulations.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Value</th>
+      <th>Remark</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>One simulation step</td>
+      <td>0.1 s</td>
+      <td>Estimated from in vivo cap growth (Jiang and Harris, 2019)</td>
+    </tr>
+    <tr>
+      <td>One pixel</td>
+      <td>0.1 micron</td>
+      <td>Estimated from in vivo cap growth (Jiang and Harris, 2019)</td>
+    </tr>
+    <tr>
+      <td>Actomyosin network</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Myosin node density (Den_m)</td>
+      <td>Varied (0–1)</td>
+      <td>Proportion of total pixels in the actomyosin zone with a myosin node</td>
+    </tr>
+    <tr>
+      <td>Myosin node activity (M)</td>
+      <td>Varied (0–1)</td>
+      <td>Relative activities</td>
+    </tr>
+    <tr>
+      <td>Search radius for establishing connections with surrounding myosin nodes (Dthres)</td>
+      <td>five pixels</td>
+      <td>Based on optimal actin filament length for cortical actomyosin contractility (Chugh et al., 2017)</td>
+    </tr>
+    <tr>
+      <td>Maximum number of connections with surrounding myosin nodes (MaxNeigh)</td>
+      <td>6</td>
+      <td>Optimized*</td>
+    </tr>
+    <tr>
+      <td>Maximum number of myosin nodes per pixel (Nmax)</td>
+      <td>20</td>
+      <td>Optimized*</td>
+    </tr>
+    <tr>
+      <td>Coefficient of myosin force (Kmyosin)</td>
+      <td>0.5 nN</td>
+      <td>Order of magnitude measured for myosin force (Finer et al., 1994)</td>
+    </tr>
+    <tr>
+      <td>Coefficient of spring force (Kspring)</td>
+      <td>0.05 nN/nm</td>
+      <td>Order of magnitude measured for actin elasticity (Kojima et al., 1994)</td>
+    </tr>
+    <tr>
+      <td>Node-node connection resting length (lo)</td>
+      <td>Variable</td>
+      <td>Mean length of all connections before a simulation starts</td>
+    </tr>
+    <tr>
+      <td>Arp2/3 network</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial nucleation site density (Den_c)</td>
+      <td>0.1 and 0.01‡</td>
+      <td>Proportion of total pixels in the nucleation zone with a nucleation site†</td>
+    </tr>
+    <tr>
+      <td>Actin polymerization force coefficient (Kpoly)</td>
+      <td>0.5 nN</td>
+      <td>Order of magnitude measured for Arp2/3 networks with same area (Bieling et al., 2016)†</td>
+    </tr>
+    <tr>
+      <td>Age of plus end node when a branch is induced (AgeBr)</td>
+      <td>nine steps</td>
+      <td>Optimized*</td>
+    </tr>
+    <tr>
+      <td>Maximum length between nucleation site and plus end node (Lth)</td>
+      <td>20 pixels</td>
+      <td>Ordered of magnitude calculated for capped actin filaments (Schafer et al., 1996)</td>
+    </tr>
+    <tr>
+      <td>Minimum age of plus end node when its loss becomes possible (Ageth)</td>
+      <td>20 steps</td>
+      <td>Optimized*</td>
+    </tr>
+    <tr>
+      <td>Probability of loss of plus end node at each step (Pdel)</td>
+      <td>0.7</td>
+      <td>Optimized*</td>
+    </tr>
+    <tr>
+      <td>Network-network Interface</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Radius around a node’s initial position to identify potentially interacting nodes of the other network (SR)</td>
+      <td>five pixels</td>
+      <td>Assumed‡</td>
+    </tr>
+    <tr>
+      <td>Radius around a node’s target position to determine if nodes of the other network are absent, which allows the move (Vex)</td>
+      <td>two pixels</td>
+      <td>Assumed‡</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Optimized in relation to other parameters of the actomyosin or Arp2/3 model (see Model Formulation for details).†These parameters of the Arp2/3 model were coarsened to account for a plus end node representing only one actin filament whereas a myosin node represents a myosin mini-filament connected to many actin filaments. To increase the impact of each plus end node relative to a myosin node, the initial actin nucleation site density was set on the lower side whereas the polymerization force of a single plus end node was set on the higher side.‡See Model Formulation for details._
+
+### The actomyosin network model mimics properties of actomyosin networks reported in vitro
 
 Since we sought to understand the emergence of a mesoscale property, a smooth interface between two cortical networks, we validated the simulated actomyosin network by comparing its mesoscale properties with those of an actomyosin network reconstituted in vitro. By inducing myosin motor activity in specific geometric patterns within a larger non-contractile network in vitro, Schuppler et al., 2016 showed that re-shaping of the embedded contractile actomyosin network is influenced by the boundary pattern of its initial activation (Schuppler et al., 2016). As a simple example, an activated circle of actomyosin contracted into a smaller circle. More interestingly, the edges of an activated square became concave, whereas the edges of an activated outline of a square became convex (Schuppler et al., 2016). Remarkably, optogenetic activation of actomyosin in the complex environment of the Drosophila embryo ectoderm had a similar effect: the edges of an activated square became concave as the square contracted (Izquierdo et al., 2018). To test our simulated actomyosin network, we activated myosin node contractility in different shapes embedded within a thick border of nodes that lacked myosin node contractility but retained elastic connections (Figure 1B–E; see Model Formulation for details). Not surprisingly, an activated circle displayed isotropic contraction (Figure 1B). Notably, the sides of an activated solid square became concave (Figure 1C), mimicking both the in vitro (Schuppler et al., 2016) and in vivo studies (Izquierdo et al., 2018). The outer sides of a hollow square with a thin boundary of activation became convex (Figure 1D), mimicking the in vitro behavior (Schuppler et al., 2016). For a hollow square with a thick boundary of activation, the outer sides of the boundary became concave and the inner edges bent in the opposite direction (Figure 1E), as also seen in vitro (Schuppler et al., 2016). In addition to the patterned activation of myosin, these realistic responses also required the entire simulated network to contain elastic connections that prevented excessive stretching of connections between the inner contractile region and the outer non-contractile region.
 
-## The Arp2/3 network model mimics properties of Arp2/3 networks reported in vitro
+### The Arp2/3 network model mimics properties of Arp2/3 networks reported in vitro
 
 When simulated individually, a centrally induced Arp2/3 network grows centrifugally with an outer perimeter of non-aligned actin plus end nodes (Figure 1G), a behavior resembling initial in vivo growth of an actin cap in the embryo surface plane (e.g. Zhang et al., 2018). Next, we compared the simulated network to an Arp2/3 actin network reconstituted in vitro and grown against a solid object. By combining light and atomic force microscopy, Bieling et al., 2016 found that Arp2/3 network growth against a cantilever lead to an increased density of F-actin plus ends at the interface, without an accumulation of elastic energy (Bieling et al., 2016). We tested our model for these properties by placing a circular wall around a centrifugally growing network. With network growth into the immovable wall, the density of plus end nodes within 20 pixels of the network circumference increased 1.57-fold from the start of the simulation to step 3000 (calculated from four simulations with distinct starting conditions; see images in Figure 1H). For networks growing without a wall, the equivalent value decreased 0.77-fold by simulation step 3000 (see example images in Figure 1G). To test for stored elastic energy, we removed the wall after local accumulation of plus end nodes had occurred. If elastic energy accumulated with compression, then an increased network growth rate upon removal of the load was expected. However, network area growth rates after removal of the wall were indistinguishable from those of networks that never experienced a wall (Figure 1I). Thus, like an in vitro Arp2/3 network (Bieling et al., 2016), when the simulated network grew against a solid object it accumulated plus end numbers at the interface with the object but did not accumulate elastic energy.
 
-## Simulation of the network-network interface maintains network segregation and allows the networks to displace each other
+### Simulation of the network-network interface maintains network segregation and allows the networks to displace each other
 
 To test the mesoscale effects of our internetwork displacement and segregation rules, we distributed myosin nodes as a broad ring and examined behavior of the ring with and without a growing Arp2/3 network at its hollow center. In the absence of a central Arp2/3 network, the ring was re-shaped by myosin activity alone. Without myosin activity (0.0), the broad ring maintained its structure (Figure 2A). With full myosin activity (1.0), the broad ring of dispersed nodes initially constricted into a narrow ring of nodes, and after thinning, the ring constricted centripetally (Figure 2E), a sequence of events consistent with in vitro observations of a myosin network activated in a rectangular shape (Schuppler et al., 2016). A moderate level of myosin activity (0.4) had an intermediate effect (Figure 2C). Adding a growing Arp2/3 network to the center of a broad ring with zero or moderate myosin activity led to centrifugal displacement of myosin nodes and a thinning of the ring, but no ring constriction was observed (Figure 2B,D). As the Arp2/3 network grew, the thinned ring of myosin nodes was displaced outward and displayed diminished circularity that resembled the rough outer edge of the segregated Arp2/3 network. During this displacement, the two networks remained segregated, confirming the effectiveness of the node-based rules, and myosin nodes aggregated at the network-network interface (Figure 2B,D, arrows). With full myosin node activity, the actomyosin ring counteracted the expansion of the central Arp2/3 network (Figure 2F). The ring narrowed and then contracted centripetally, but the central Arp2/3 network restrained its centripetal contraction relative to an actomyosin ring lacking a central Arp2/3 network (Figure 2F). Quantifications of inner clearance area changes across myosin node activities with or with Arp2/3 networks (Figure 2G) further demonstrated that the rules for the network-network interface allowed the two segregated networks to counteract each other’s physical effects. For example, without myosin activity, the inner clearance area was maintained over the simulation, but adding an Arp2/3 network to inner clearance expanded its area (Figure 2G, compare black lines with and without Arp2/3). With full myosin activity, the effect of the Arp2/3 network was counteracted (Figure 2G, compare black and red lines in right graph), but the Arp2/3 network also hindered the contractility of the myosin ring (Figure 2G, compare red lines with and without Arp2/3).
 
@@ -54,21 +177,61 @@ To test the mesoscale effects of our internetwork displacement and segregation r
 
 **Figure 2.:** (A–F) Actomyosin networks (white) with zero (A–B), moderate (0.4) (C–D), or full (1.0) (E–F) myosin activity. In each case, the initial configuration is a circle with an inner clearance of nodes removed in a rough pattern. Each case is simulated with (B, D, F) or without (A, C, E) an Arp2/3 network grown from a central patch of nucleation points within the inner clearance (Arp2/3 networks shown in yellow). (A) With zero myosin activity, the actomyosin network maintains its shape without an Arp2/3 network. (B) In response to Arp2/3 network growth, the inner area expands and myosin nodes aggregate at the network-network interface (arrows). (E) With full myosin activity (1.0) in the absence of an Arp2/3 network, the thickness of the actomyosin ring first decreases (accompanied by an increase to the inner clearance area and an increased density of myosin nodes in the ring) and then the overall ring constricts (accompanied by a decrease to the inner circle area). (F) With full myosin activity (1.0) in the presence of a growing Arp2/3 network, the actomyosin ring undergoes greater thinning and then the overall constriction of the ring is reduced. (C–D) Simulations of moderately contractile actomyosin networks (0.4 activity) alone or with a growing Arp2/3 network, displayed intermediate behaviors. (G) Quantifications of inner clearance area versus simulation step for actomyosin networks with a range of activities (0–1.0), without Arp2/3 networks (left) or with Arp2/3 networks (right). Means ± SD shown for three simulations with distinct starting conditions. SD values were low without addition of the growing Arp2/3 networks.
 
-## A smooth and circular interface between an actin cap and its actomyosin border requires Arp3 in vivo
+### A smooth and circular interface between an actin cap and its actomyosin border requires Arp3 in vivo
 
 Genetic analyses of Drosophila embryo cleavage have shown that Arp2/3 is required for displacing actomyosin networks from the cap and that myosin activity is needed for restraining lateral cap growth. These and other data suggest that the two networks physically engage to control each other’s distributions (Zhang et al., 2018). A physical interaction should be evident at the interface between the laterally segregated networks. To investigate the effect of Arp2/3 on myosin organization at this interface, we imaged GFP-tagged myosin heavy chain (Zipper (Zip)-GFP) in embryos depleted of Arp3 by RNAi. In control RNAi embryos during the transition from mitotic cycle 10 to 11, the actomyosin network initially assembled a rough, non-circular interface around each myosin-devoid cap, but within minutes, smooth and circular boundaries formed (Figure 3A; the transition was most obvious for completely new networks formed between sister nuclei, solid black arrows). In contrast, Arp3 RNAi embryos assembled actomyosin networks that failed to form smooth boundaries and instead retained a variable distribution of puncta at the interface with the myosin-devoid cap (Figure 3A, solid red arrows). In control embryos, the formation of a smooth interface was often accompanied by an accumulation of Zip-GFP along the interface (Figure 3A, solid and hollow black arrows), and both demarked the site of initial pseudo-cleavage furrow ingression (Figure 3A, 143s, side view, blue arrowheads). Arp3 RNAi embryos lacked Zip-GFP accumulation at the interface (Figure 3A, solid and hollow red arrows) and furrow ingression failed (Figure 3A, 143s, side view, blue bracket shows a broad band of myosin at the embryo surface). These data suggest that the Arp2/3-based actin network of the cap is required for forming a smooth interface with the actomyosin border, and that smooth interface formation coincides with myosin accumulation and furrow initiation at the interface. Notably, both networks initially have a rough boundary (Zhang et al., 2018; Figure 3A), and the smooth interface seems to arise from their lateral interaction.
 
-## The effect of depleting Arp2/3 in vivo is mimicked by simulations with no Arp2/3 networks and low myosin activity
+![Figure 3.](https://cdn.elifesciences.org/articles/66929/elife-66929-fig3-v2.jpg)
+
+**Figure 3.:** (A) In vivo live imaging of Zip-GFP (myosin) from telophase of cycle 10 to prophase of cycle 11 in control (mCh-shRNA) and Arp3 RNAi (Arp3-shRNA) embryos. In the control embryo, solid black arrows show the rough-to-smooth transitions of myosin network boundaries from 36 s to 143 s. By 143 s, the boundaries display an accumulation of Zip-GFP (solid and hollow black arrows), and doming of the cortex (blue dots) is evident in the side view with myosin accumulations at the base of the dome (blue arrowheads). In the Arp3 RNAi embryo, the boundaries of the myosin network remain rough (red arrows) and fail to accumulate Zip-GFP, which retains a punctate distribution (red solid and hollow arrows). In the side views, the cortex remains flat with broader distributions of Zip-GFP (blue brackets). These observations were made in 15/15 control embryos and 8/9 Arp3 RNAi embryos (additional examples shown in Figure 3—figure supplement 1). (B) An example of the configuration used to simulate the in vivo organization of the actomyosin network. At the start of the simulation, a large circle of myosin nodes with contractility and elasticity (white) is surrounded by a square boundary of myosin nodes with only elasticity (blue). Within the large contractile circle, 13 roughed-edged clearances were laid out at the beginning of the simulation. Simulation step 3500 shows the contracted state of the simulation with high myosin activity. (C) A phase diagram of increasing myosin node densities compared with increasing myosin node activities. The central seven clearances of configurations similar to (B) are shown at simulation step 3500. Note the network fragmentation at node densities of 0.05 (bottom row). Yellow arrows indicate smooth boundary formation at node densities between 0.10 and 0.25 and myosin activities between 0.2 and 1.0. Red arrows indicate rough boundary maintenance at node densities between 0.10 and 0.25 and myosin activity of 0.1. (D) At 0.1 myosin activity, network shapes change initially (step 2–300) but are then maintained. The central clearance of configurations similar to (B) are shown for node densities of 0.1 and 0.25. The observations of (C) and (D) were reproduced in three sets of simulations with distinct starting conditions.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/66929/elife-66929-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Top, six control RNAi (mCh-shRNA) embryos displaying smooth and circular boundaries of actomyosin zone (Zip-GFP) at their interfaces with growing actin caps (devoid of Zip-GFP signal). Bottom, six Arp3 RNAi embryos displaying rough boundaries of actomyosin zones (Zip-GFP) at their interfaces with diminished actin caps (smaller areas devoid of Zip-GFP signal). Related to Figure 3A.
+
+### The effect of depleting Arp2/3 in vivo is mimicked by simulations with no Arp2/3 networks and low myosin activity
 
 To address how a smooth boundary forms in vivo, we configured our simulated actomyosin and Arp2/3 networks to resemble their arrangement in the embryo. The embryo cortex is coated with a continuous actomyosin network embedded with evenly distributed Arp2/3-based actin caps (Foe et al., 2000; Zhang et al., 2018; Figure 3A). This organization was simulated by generating a large circle of active myosin nodes with 13 evenly spaced clearances for the growth of 13 Arp2/3 networks (Figure 3B). Within the large circle, the myosin nodes were activatable in addition to their elastic interactions. Outside of the large circle, a border of inactive but elastic myosin nodes was generated to restrain the contraction of the central circle, thereby mimicking the effect of an actomyosin network distributed around the full embryo circumference. To avoid distortions due to the surrounding inactive border, we restricted our quantifications to the central clearance of the 13-clearance array.
 
 To understand the effects of actomyosin alone, we first varied properties of the myosin nodes in the absence of Arp2/3 networks. The density of nodes was varied over a fivefold range, and the activity of nodes was varied over a 10-fold range (Figure 3C). Within each simulation, all nodes had homogenous activity. The lowest density of nodes (0.05; 5% of pixels containing a node) resulted in fragmentation of the network at all myosin activity levels (Figure 3C; bottom row), consistent with in vitro studies (Schuppler et al., 2016). At node densities that retained connectivity (0.1–0.25), higher myosin activities (0.2–1.0) produced smooth and circular boundaries with the clearances (Figure 3C, yellow arrows). This result is consistent with the sufficiency of myosin activity to produce extended, smooth structures in vivo, such as cell junction-associated actomyosin cables (Harris, 2018; Livne and Geiger, 2016) or the cytokinetic ring (Schwayer et al., 2016). In contrast, low myosin activity (0.1) allowed persistence of rough boundaries with the clearances (Figure 3C; red arrows), and displayed modest network rearrangements during early stages of the simulation (Figure 3D). This result resembled the myosin distribution in Arp3 RNAi embryos (Figure 3A). Together, these data suggest that myosin activity is relatively low in the early embryo. Indeed, several inhibitors of myosin activity are required for maintaining proper syncytial architecture of the early Drosophila embryo (Lee and Harris, 2013; Mason et al., 2016; Zhang et al., 2018), and a specific mechanism locally elevates myosin activity for budding and full division of mono-nucleated primordial germ cells from the syncytium (Cinalli and Lehmann, 2013). The simulated myosin networks with enough density for broad connectivity but insufficient activity to form smooth boundaries provided an opportunity to study the effect of adding Arp2/3-based actin caps.
 
-## Arp2/3 network growth is insufficient to form a smooth and circular interface with a weakly contractile myosin network
+### Arp2/3 network growth is insufficient to form a smooth and circular interface with a weakly contractile myosin network
 
 To test the effect of centrifugal cap growth, we induced Arp2/3 network growth from the center of each clearance within weakly contractile actomyosin networks (0.1 activity) with two different myosin node densities (0.1 and 0.2). Compared with the myosin network boundaries formed in the absence of Arp2/3 networks (Figure 3C–D), local smoothness improved but the network-network interface was wavy, and each clearance gained a hexagon-like shape (Figure 4A). Sensitivity analyses showed a failure to form a smooth and circular interface over a wide range of parameter values affecting the myosin network, the Arp2/3 network, and their interface (Figure 4—figure supplements 1–6). However, Arp2/3 network growth did induce an aggregation of myosin nodes at the interface (Figure 4A, arrows). Also, myosin node connections became substantially longer than their resting length specifically at the interface, and only with Arp2/3 network growth (Figure 4B). In the presence of growing Arp2/3 networks, node-node connections of two or more pixels greater than resting length rose linearly from 0% of all connections at simulation step 0, to 0.48 ± 0.01% at step 500, to 2.05 ± 0.06% at step 2500 (calculated from four simulations with distinct starting distributions, a myosin node density of 0.2, and a myosin node activity of 0.1; p<0.001 comparing steps 500 and 2500). In the absence of growing caps, the percentages remained at <0.003% from simulation steps 0 to 2500. Thus, Arp2/3 network growth aggregated myosin nodes at the interface and increased tension between myosin nodes at the interface. However, it also resulted in a wavy interface and a space-filling effect, suggesting the simulated actomyosin borders were unnaturally deformable.
 
-## Local activation of myosin nodes by pushing from plus end nodes leads to a smooth and circular interface
+![Figure 4.](https://cdn.elifesciences.org/articles/66929/elife-66929-fig4-v2.jpg)
+
+**Figure 4.:** (A–D) Central views of configurations similar to Figure 3B. (A) Addition of growing Arp2/3 networks (yellow) to the clearances of actomyosin networks with low contractility (myosin nodes in white), led to clearance area increases (compare with Figure 3D) and accumulation of myosin nodes at the network-network interface (arrows), but the interfaces were wavy and the clearances became polygonal. These effects were documented at two myosin node densities (0.10 and 0.20). (B) Detection of myosin node-node distances greater than the resting length by two pixels or more (see color scale). The detections accumulated at the interface between the actomyosin network and growing Arp2/3 networks, and were rare in actomyosin networks without Arp2/3 networks. Shown at simulation step 2500. Representative of four replicates. Shown for myosin node density of 0.2, and also seen for myosin node density of 0.1 (Figure 4—figure supplement 7A). (C) Enrichment of myosin node activity elevations (black) above baseline (pink) at the interface of a mechanosensitive actomyosin network with growing Arp2/3 caps (arrows). The enrichment increased as the Arp2/3 network grew (compared simulation steps 500 to 2500), did not occur in other regions of the actomyosin network, and did not occur in the absence of growing Arp2/3 networks. Shown for myosin node density of 0.2, and also seen for myosin node density of 0.1 (Figure 4—figure supplement 7B). (D) Addition of growing Arp2/3 networks (yellow) to the clearances of actomyosin networks with low contractility and mechanosensitivity (myosin nodes in white), led to clearance area increases, accumulation of myosin nodes at the network-network interface (arrows), and interfaces that were smooth and circular. These effects were documented at two myosin node densities (0.10 and 0.20). Compared with the non-mechanosensitive actomyosin networks of (A), the mechanosensitive networks retained greater separation between clearances as the Arp2/3 networks grew (compare simulation steps 2500 in A and D). (E) Quantifications of the smoothness, circularity and area of the central clearance of simulations indicated. Means ± SD shown for eight simulations with distinct starting conditions. Blue asterisks compare mechanosensitive actomyosin networks plus Arp2/3 networks with non-mechanosensitive actomyosin networks plus Arp2/3 networks. Gray asterisks compare mechanosensitive actomyosin networks plus Arp2/3 networks with mechanosensitive actomyosin networks alone (example images of the latter in Figure 4—figure supplement 7C). Single asterisk; p<0.05: double asterisks; p<0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/66929/elife-66929-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Each square shows step 2500 of a distinct simulation. In all the simulations, myosin node activity was 0.1 and myosin node density was 0.2. All the simulations had a configuration similar to Figure 3B, except they were conducted with a central clearance surrounded by only six outer clearances to reduce overall computation time (the central clearance of each simulation is shown in each square of the figure). Myosin nodes are white. Arp2/3 network plus end nodes are yellow. (A) Without myosin node elevations, only one combination of tested parameter values resulted in a smooth and circular interface (red outline), suggesting an increase to both the search radius for making connections and the maximum number of connections can produce an actomyosin network with sufficient contractility to form a smooth contractile ring. The parameter values of the center square are the same as those used in Figure 4A. (B) With myosin node elevations allowed, smooth and circular interfaces formed with many more parameter values, indicated with red outlines. The parameter values of the center square are the same as those used in Figure 4D. When the search radius for establishing connections was too low (bottom), or the maximum number of connections was too low (left), the myosin networks fragmented. When myosin nodes could make excessive interconnections over long distances (top right), a smooth and circular interface also failed to form.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/66929/elife-66929-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Analyses conducted and displayed as in Figure 4—figure supplement 1. (A) Without myosin node elevations, only two combinations of tested parameter values resulted in a smooth and circular interface (red outline), suggesting high levels of both parameters can produce an actomyosin network with sufficient contractility to form a smooth contractile ring. The parameter values of the center square are the same as those used in Figure 4A. (B) With myosin node elevations allowed, smooth and circular interfaces formed with many more parameter values, indicated with red outlines. The parameter values of the center square are the same as those used in Figure 4D. When the maximum number of myosin nodes allowed per pixel was reduced (bottom two rows), smooth and circular boundaries failed to form, and myosin node elevation events would be restricted since they depend on a myosin node being allowed to move into a pixel already occupied by five or more myosin nodes. The lowest spring force between myosin nodes also compromised formation of a smooth and circular interface (left column).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/66929/elife-66929-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Analyses conducted and displayed as in Figure 4—figure supplement 1. (A) Without myosin node elevations, no combination of tested parameter values resulted in a smooth and circular interface. The parameter values of the center square are the same as those used in Figure 4A. (B) With myosin node elevations allowed, smooth and circular interfaces formed with the parameter values indicated with red outlines. The parameter values of the center square are the same as those used in Figure 4D. When the initial nucleation site density and the actin polymerization force coefficient were both excessively decreased, myosin nodes were minimally displaced and retained a rough boundary (to bottom left). When the initial nucleation site density and the actin polymerization force coefficient were both excessively increased, myosin nodes were strongly displaced and gained hexagonal boundaries, likely due to a space filling effect from the dominant expansive forces of the Arp2/3 networks (to top right).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/66929/elife-66929-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Analyses conducted and displayed as in Figure 4—figure supplement 1. (A) Without myosin node elevations, no combination of tested parameter values resulted in a smooth and circular interface. The parameter values of the center square are the same as those used in Figure 4A. (B) With myosin node elevations allowed, smooth and circular interfaces formed with the parameter values indicated with red outlines. The parameter values of the center square are the same as those used in Figure 4D. When network branches were added infrequently, myosin nodes were minimally displaced and retained a rough boundary (top row). Changes to the probability of plus end node loss had minimal effects (left-to-right).
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/66929/elife-66929-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Analyses conducted and displayed as in Figure 4—figure supplement 1. (A) Without myosin node elevations, no combination of tested parameter values resulted in a smooth and circular interface. The parameter values of the center square are the same as those used in Figure 4A. (B) With myosin node elevations allowed, smooth and circular interfaces formed with the parameter values indicated with red outlines. The parameter values of the center square are the same as those used in Figure 4D. When plus end node loss became possible for young plus end nodes, myosin nodes were minimally displaced and retained a rough boundary (bottom row). When plus end node loss only became possible for old plus end nodes, myosin nodes were strongly displaced and gained hexagonal boundaries, likely due to a space filling effect from the dominant expansive forces of the Arp2/3 networks (top-right). Changes to maximum polymer length had minimal effects (left-to-right).
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/66929/elife-66929-fig4-figsupp6-v2.jpg)
+
+**Figure 4—figure supplement 6.:** Analyses conducted and displayed as in Figure 4—figure supplement 1. (A) Without myosin node elevations, no combination of tested parameter values resulted in a smooth and circular interface. The parameter values of the center square are the same as those used in Figure 4A. (B) With myosin node elevations allowed, smooth and circular interfaces formed with the parameter values indicated with red outlines. The parameter values of the center square are the same as those used in Figure 4D. Reducing the radius used by a node of one network to search for a node of the other network to physically affect resulted in rough interfaces (bottom row) and would decrease myosin node elevation events since they occur by Arp2/3 network plus end nodes displacing myosin nodes. Increasing the radius used by a node of one network to test if its movement is into a region lacking nodes of the other network resulted in rough interfaces (right column) and would decrease myosin nodes elevation events because of restricted allowance of Arp2/3 network plus end node movements.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/66929/elife-66929-fig4-figsupp7-v2.jpg)
+
+**Figure 4—figure supplement 7.:** (A) Detection of myosin node-node distances greater than the resting length by two pixels or more (see color scale). The detections accumulated at the interface between the actomyosin network and growing Arp2/3 networks and were rare in actomyosin networks without Arp2/3 networks. Shown at simulation step 2500. Representative of four replicates. Shown for myosin node density of 0.1. Related to Figure 4B. (B) Enrichment of myosin node activity elevations (black) above baseline (pink) at the interface of a mechanosensitive actomyosin network with growing Arp2/3 caps (arrows). The enrichment increased as the Arp2/3 network grew (compared simulation steps 500–2500), did not occur in other regions of the actomyosin network, and did not occur in the absence of growing Arp2/3 networks. Shown for myosin node density of 0.1. Related to Figure 4C. (C) In the absence of Arp2/3 networks, actomyosin networks of 0.1 node activity and the potential to elevate node activity underwent minimal change. Shown for node densities of 0.1 and 0.2. Related to Figure 4E.
+
+### Local activation of myosin nodes by pushing from plus end nodes leads to a smooth and circular interface
 
 Although proper syncytial structure requires regulators that reduce cortical actomyosin activity (Lee and Harris, 2013; Mason et al., 2016; Zhang et al., 2018), our in vivo imaging revealed an Arp2/3-dependent accumulation of myosin at the smooth and circular interface between each cap and myosin border (Figure 3A, black arrows). Mechanical enhancement of actomyosin activity is evident in vivo (Effler et al., 2006; Fernandez-Gonzalez et al., 2009), and implicated mechanisms include stabilization of the myosin-actin interaction (Kobb et al., 2017; Kovács et al., 2007; Yamashiro et al., 2018), and alignment of actin filaments for optimal myosin activity (Ennomani et al., 2016). Thus, we hypothesized that the pushing forces of a growing cap would stabilize and/or align myosin nodes at the interface, and thereby locally increase myosin contractility within an otherwise weakly contractile network.
 
@@ -76,7 +239,7 @@ To incorporate mechanosensitive elevation of local myosin node activity into the
 
 To test how local, Arp2/3-dependent, myosin node activity elevations affected the interface between the actomyosin and Arp2/3 networks, we compared simulations with and without the activations. Strikingly, the elevations significantly enhanced the smoothness and circularity of the interfaces (Figure 4D), compared to simulations without the elevations (Figure 4A). The areas of the clearances were also reduced. Quantifications of clearance smoothness, circularity, and area showed the importance of a combination of Arp2/3 network growth and mechanosensitivity of the actomyosin network (Figure 4E). Sensitivity analyses showed that the smooth and circular interfaces arose upon inclusion of mechanosensitivity over a wide range of parameter values affecting the myosin network, the Arp2/3 network, and their interface (Figure 4—figure supplements 1–6). The overall organization of the myosin networks simulated with mechanosensitivity and Arp2/3 network growth (Figure 4D) closely resembled the myosin networks formed in the presence of Arp2/3 actin caps in wild-type embryos (Figure 3A). These analyses suggest that a smooth and circular interface can form from the growth of an Arp2/3 network against a weakly contractile actomyosin network that is mechanosensitive to local activation.
 
-## The smooth and circular interface forms with the local induction and contraction of an actomyosin ring
+### The smooth and circular interface forms with the local induction and contraction of an actomyosin ring
 
 Since smoothening and circularization of the interface coincided with local enrichment of myosin nodes activated by the pushing forces of centrifugal Arp2/3 network growth, we hypothesized that re-shaping of the interface occurred through formation and contraction of an actomyosin ring within an otherwise weakly contractile actomyosin network. To test this idea, we first examined the behavior of an isolated single ring of myosin nodes with uniform activity equal to the activity induced by Arp2/3 network growth in the two-network simulations. The isolated network was initiated as a thick, rough-edged ring of randomly positioned myosin nodes containing a central clearance instead of an Arp2/3 network (similar to the single ring in Figure 2E). Since the movement of a node is directly linked to the net forces applied to it by surrounding nodes, we traced node movements to map forces within the network. Figure 5A traces the movements of myosin nodes at the inner boundary of the rough ring. Consistent with our single ring analyses in Figure 2E, the inner boundary nodes initially moved centrifugally as the ring thinned (Figure 5A), and then moved centripetally as the thin and smooth ring constricted (Figure 5A). To determine the directions of net forces experienced by all individual nodes during the process, we calculated angles of node displacement relative to the circular network’s radii at each node’s position at each simulation step. At the beginning of the simulation, a broad distribution of node displacement angles was observed (Figure 5C), but during the transition from thinning to constricting, the distribution became biased toward 0° and 180° relative to local radii of the circular network (Figure 5D–E). To understand this bimodal distribution, we examined individual node displacements at full temporal and spatial resolution during the final stages of the simulation. Strikingly, nodes mostly displayed back-and-forth displacements closely aligned with the radii (Figure 5B). The angles of these oscillations are partly what would be expected for centripetal normal forces of a contractile circle, but with additional centrifugal counterforces arising from the network’s interconnected nodes. Although the in vivo relevance of these extremely rapid oscillations is unclear, the oriented oscillations provided a signature of contractile actomyosin ring formation in our simulations.
 
@@ -100,23 +263,116 @@ Our simulations of network-network interactions at the surface of the early Dros
 
 ## Materials and methods
 
-## Model formulation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>maternal-GAL4-VP16</td>
+      <td>Mark Peifer</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASp-Arp3-shRNA</td>
+      <td>Bloomington Drosophila Stock Center (BDSC)</td>
+      <td>BDSC #53972 RRID:BDSC_53972</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UASp-mCherry-shRNA</td>
+      <td>BDSC</td>
+      <td>BDSC #35785 RRID:BDSC_35785</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Zipper-GFP</td>
+      <td>Flytrap</td>
+      <td>BDSC #51564 RRID:BDSC_51564</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Volocity</td>
+      <td>Quorum Technologies Inc</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Image J</td>
+      <td>NIH</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel</td>
+      <td>Microsoft</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PowerPoint</td>
+      <td>Microsoft</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Photoshop</td>
+      <td>Adobe</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Model formulation
 
 MATLAB code is available at: https://github.com/medha7575/sharma-et-al-ELIFE2021  (copy archived at swh:1:rev:7e64a1ebff4e56bc056bb27b0675be09d53fb8f8; Sharma, 2021). Annotated PDFs of the code are provided as Source code 1, 2 and 3.
 
 Node-based models were created for the actomyosin network, the Arp2/3 network, and the interface between the two networks. Nodes change their positions synchronously during each simulation step. We assume a low Reynold’s number, in which viscosity dominates (Purcell, 1977), and thus there is no inertia between steps. Unless otherwise stated, simulation rules were standardized across our analyses.
 
-## Simulation of the actomyosin network
+### Simulation of the actomyosin network
 
-A 2D array of nodes simulated the properties of a contractile actomyosin network (Banerjee et al., 2020; Lecuit et al., 2011; Mangione and Gould, 2019). Each node represents a myosin mini-filament. Interconnecting actin filaments are not explicitly modeled, but would be cross-linked in anti-parallel orientations to allow plus-end directed myosin activity to pull nodes together. Each myosin motor domain binds an actin filament, uses ATP-derived energy to displace the filament, and then dissociates from the filament. Since a mini-filament contains multiple motor domains, this cycle can be repeated by separate motor domains, allowing processive displacement of an actin filament by a myosin mini-filament. The activity of a motor domain can be regulated, and the number of motor domains in a mini-filament can vary. We incorporated these properties into our model by assuming that actin-based connections between nodes are never lost, and that the pulling force between two connected myosin nodes is proportional to the product of an adjustable myosin activity at each node. Considering only two myosin nodes (n1 and n2) with equal myosin activities (M1 and M2), pulling between n1 and n2 would displace both nodes by the same distance toward each other. The force experienced by each node is defined by Kmyosin.M1.M2U^, where the unit vector, U^, defines the direction of pulling force based on the relative positions of n1 and n2, and the coefficient Kmyosin assigns units of force to the myosin activity (Equation 1).
+A 2D array of nodes simulated the properties of a contractile actomyosin network (Banerjee et al., 2020; Lecuit et al., 2011; Mangione and Gould, 2019). Each node represents a myosin mini-filament. Interconnecting actin filaments are not explicitly modeled, but would be cross-linked in anti-parallel orientations to allow plus-end directed myosin activity to pull nodes together. Each myosin motor domain binds an actin filament, uses ATP-derived energy to displace the filament, and then dissociates from the filament. Since a mini-filament contains multiple motor domains, this cycle can be repeated by separate motor domains, allowing processive displacement of an actin filament by a myosin mini-filament. The activity of a motor domain can be regulated, and the number of motor domains in a mini-filament can vary. We incorporated these properties into our model by assuming that actin-based connections between nodes are never lost, and that the pulling force between two connected myosin nodes is proportional to the product of an adjustable myosin activity at each node. Considering only two myosin nodes (n1 and n2) with equal myosin activities (M1 and M2), pulling between n1 and n2 would displace both nodes by the same distance toward each other. The force experienced by each node is defined by $K_{myosin}.M_{1}.M_{2}U^$, where the unit vector, $U^$, defines the direction of pulling force based on the relative positions of n1 and n2, and the coefficient Kmyosin assigns units of force to the myosin activity (Equation 1).
 
 To generate an array of many myosin nodes, the nodes are distributed randomly over a 500 by 500 lattice of pixels. Nodes at the lattice boundary maintain their positions even when a force is applied on them (a fixed boundary condition). Each node is visualized as a single pixel. However, node connection angles, node connection distances, force angles, and node displacements are defined at 1/100th of a pixel. Since the cell cortex is 50–400 nm thick (Chugh and Paluch, 2018; Salbreux et al., 2012; Svitkina, 2020), the positioning of nodes above and below each other in 3D space is represented in the 2D simulation by allowing a maximum of 20 nodes to occupy the same pixel (with no information encoding the third dimension) (see Table 1 for a full list of parameters). Incorporating this allowance avoided jamming of nodes into a non-dynamic state, but to mimic local steric hindrance within the cell cortex the upper limit to the number of nodes per pixel was implemented. If a node attempts to move to a fully occupied pixel, then the move is disallowed and the node maintains its original location leading to a configuration akin to a mini-filament stack (Henson et al., 2017; Hu et al., 2017).
 
 After the myosin nodes are positioned across 2D space they are linked by permanent connections. Each node is randomly connected with a maximum of six other nodes within a search radius of 5 pixels (500 nm). This design is based on myosin mini-filaments (i) having 28–58 motor domains (Billington et al., 2013; Niederman and Pollard, 1975), which would not all be simultaneous bound to actin (discussed above), (ii) displaying motor domains at angles of up to 180° relative to each other (Billington et al., 2013; Laplante et al., 2016; Niederman and Pollard, 1975; Sellers and Kachar, 1990), and (iii) engaging actin filaments with lengths of ~500 nm for optimal contractility of cortical actomyosin networks (Chugh et al., 2017). If a connection is attempted with a saturated neighbor, then the attempt is aborted. If the node density is low, then a node may not maximize its connections in the available search radius. By considering pairwise relationships between nodes instead of modeling actin filaments, node-node pairings can cross each other in the 2D simulation, representing actin filaments crossing each other at different levels of 3D space.
 
-Once an interconnected array of nodes is assembled, myosin activity is triggered to simulate network contraction. The pulling forces from ‘n’ connected neighboring myosin nodes on the ‘mth’ myosin node are determined by:(1)F→m,myosin=Kmyosin∑i=1n(Mm∗Mi)U^miwhere,
+Once an interconnected array of nodes is assembled, myosin activity is triggered to simulate network contraction. The pulling forces from ‘n’ connected neighboring myosin nodes on the ‘mth’ myosin node are determined by:
 
-F→m,myosin: Net force due to inter-node pulling forces on the ‘mth’ node.
+$$
+F→_{m,myosin}=K_{myosin}\sumi=1n(M_{m}∗M_{i})U^_{mi}
+$$
+
+where,
+
+$F→_{m,myosin}$: Net force due to inter-node pulling forces on the ‘mth’ node.
 
 Kmyosin: Coefficient of myosin force.
 
@@ -124,17 +380,29 @@ Mm: Myosin node activity level of the ‘mth’ node.
 
 Mi: Myosin node activity level of the ‘ith’ connected node.
 
-U^mi: Unit vector pointing in the direction of the ith node from the mth node.
+$U^_{mi}$: Unit vector pointing in the direction of the ith node from the mth node.
 
-In addition, cross-linked actin networks display elastic responses to stretching but not compression (Banerjee et al., 2020; Salbreux et al., 2012). This asymmetric elasticity is incorporated by activating spring-like forces between the myosin nodes in response to stretching, but not to compression. The spring forces on the ‘mth’ myosin node are determined by:(2)F→m,spring=Kspring∑i=1n(li−lo)U^mi:ifli>loF→m,spring=0:otherwisewhere,
+In addition, cross-linked actin networks display elastic responses to stretching but not compression (Banerjee et al., 2020; Salbreux et al., 2012). This asymmetric elasticity is incorporated by activating spring-like forces between the myosin nodes in response to stretching, but not to compression. The spring forces on the ‘mth’ myosin node are determined by:
 
-F→m,spring: Net force due to spring-like forces on the ‘mth’ node.
+$$
+F→_{m,spring}=K_{spring}\sumi=1n(li−lo)U^_{mi}:ifli>loF→_{m,spring}=0:otherwise
+$$
+
+where,
+
+$F→_{m,spring}$: Net force due to spring-like forces on the ‘mth’ node.
 
 Kspring: Coefficient of spring force li-lo: Current length of connection – resting length of connection lo: Mean length of all connections before a simulation starts.
 
-U^mi: Unit vector pointing in the direction of the ith node from the mth node.
+$U^_{mi}$: Unit vector pointing in the direction of the ith node from the mth node.
 
-A damping coefficient, ξ, of 0.1 nN.s.µm−1 (Belmonte et al., 2017; Matsuda et al., 2019) determines the node displacement induced by the calculated net force. The damping coefficient is held constant throughout all simulations in this study. The displacement of the ‘mth’ myosin node is determined by:(3)Δsm=(F→m,myosin+F→m,spring).Δtξ−1where,
+A damping coefficient, ξ, of 0.1 nN.s.µm−1 (Belmonte et al., 2017; Matsuda et al., 2019) determines the node displacement induced by the calculated net force. The damping coefficient is held constant throughout all simulations in this study. The displacement of the ‘mth’ myosin node is determined by:
+
+$$
+Δs_{m}=(F→_{m,myosin}+F→_{m,spring}).Δtξ^{−1}
+$$
+
+where,
 
 Δsm: Displacement of the ‘mth’ node.
 
@@ -142,19 +410,39 @@ A damping coefficient, ξ, of 0.1 nN.s.µm−1 (Belmonte et al., 2017; Matsuda e
 
 ξ: Damping coefficient.
 
-Using the pre-existing position and the net displacement of the ‘mth’ myosin node, its new position is calculated after every simulation step by:(4)NewPosition=OldPosition+Δsm
+Using the pre-existing position and the net displacement of the ‘mth’ myosin node, its new position is calculated after every simulation step by:
 
-## Simulation of the Arp2/3 network
+$$
+NewPosition=OldPosition+Δs_{m}
+$$
+
+### Simulation of the Arp2/3 network
 
 Like the actomyosin model, the Arp2/3 network was simulated as a 2D array of nodes. In the Arp2/3 actin model, however, actin plus end nodes move away from stationary nucleation points representing Arp2/3 nucleation sites, and the overall array expands. The filaments themselves are not explicitly modelled. Since the Arp2/3 complex nucleates actin polymerization (Pollard, 2016; Svitkina, 2018) and centrosomes act as spatial landmarks for the induction of Arp2/3-enirched actin caps in Drosophila (Raff and Glover, 1989; Stevenson et al., 2001), an Arp2/3 network is initiated by randomly positioning the nucleation points in a dense inner circle (20 pixel radius with 10% of pixels containing a nucleation point) and a sparse, larger and overlapping circle (50 pixel radius with 1% of pixels containing a nucleation point). The outer circle of sparse nucleation sites is expected from graded diminishment of a centrosome-based signal, and was needed to generate an Arp2/3 network that grew with an irregular shape, as occurs in vivo (Zhang et al., 2018). Actin polymerization is simulated by displacing a plus end node away from its corresponding nucleation point. The nucleation point is only used to define the filament position, length, and angle, in combination with the positional information of the plus end node. The polymerization and associated pushing force is modeled by the plus end node only. At the simulation start, plus end nodes move from their nucleation points in random directions. During the simulation, the nucleation points maintain their position, assuming a stabilizing effect of the larger network.
 
-The polymerization force of a plus end at each simulation step is determined by:(5)F→poly=Kpoly∗U^where,
+The polymerization force of a plus end at each simulation step is determined by:
+
+$$
+F→_{poly}=K_{poly}∗U^
+$$
+
+where,
 
 Kpoly: Actin polymerization force coefficient.
 
-U^: Unit vector pointing in the direction of the plus end node from the nucleation point.
+$U^$: Unit vector pointing in the direction of the plus end node from the nucleation point.
 
-Thus, the plus end node will move to a new position given by:(6)NewPosition=OldPosition+Δspolywhere,(7)Δspoly=F→poly.Δt.ξ−1
+Thus, the plus end node will move to a new position given by:
+
+$$
+NewPosition=OldPosition+Δs_{poly}
+$$
+
+where,
+
+$$
+Δs_{poly}=F→_{poly}.Δt.ξ^{−1}
+$$
 
 To form a dendritic network, the Arp2/3 complex nucleates growth of a new actin polymer at a 70° angle relative to a preexisting polymer (Pollard, 2016; Svitkina, 2018). In vitro, branching can occur from either side of the mother filament, anywhere along the mother filament (with a preference toward the barbed end), and the mother and daughter filaments polymerize at the same rate (Amann and Pollard, 2001). To implement branched polymerization from an existing filament, the age of the plus end node is monitored, and after nine simulation steps a new nucleation point is created halfway between the pre-existing nucleation point and the plus end node. From the new nucleation point, a new plus end node extends with an angle of ±70° (randomized) relative to the mother filament and its plus end node. One actin filament is limited to forming one branch.
 
@@ -162,43 +450,65 @@ Two major effects regulate the growth and structure of Arp2/3 networks. Capping 
 
 The Arp2/3 network simulation is considered to be a broad 2D array with a 50–400 nm thickness in 3D (Chugh and Paluch, 2018; Salbreux et al., 2012; Svitkina, 2020). Like the actomyosin model, this organization is implemented by positioning nodes on an off-lattice model to avoid steric hindrance, with close positioning of two nodes in 2D representing their occupancy of different levels of the same vertical column in 3D. Unlike the actomyosin network, there was no need to create an upper limit to the number of nodes at a pixel because nodes of the Arp2/3 network continually expand away from each other.
 
-## Simulation of the network-network interface
+### Simulation of the network-network interface
 
 To enable study of the lateral interaction between two segregated cytoskeletal networks, we combined the actomyosin and Arp2/3 networks into a single lattice. Although actomyosin networks and Arp2/3 networks form segregated domains with close neighbor relationships during Drosophila embryo pseudocleavage (Foe et al., 2000; Zhang et al., 2018), mammalian oocytes polar body budding (Yi and Li, 2012), and mammalian cell podosome formation (van den Dries et al., 2019), we are unaware of in vivo or in vitro studies addressing the structural properties of the lateral interface between the neighboring networks. In lieu of experimental data, we reasoned that displacement of a node at the interface would be dictated by a balance of local forces on the node from nodes of its own network and from nodes of the neighboring network. In the two-network model, the constituent actomyosin and Arp2/3 networks have the same individual properties described in the previous sections, but all nodes of each network additionally perform two searches that indicate if a node is in proximity to a network-network interface. If so, the searches trigger mechanisms of internetwork displacement and segregation. Each node searches for nodes of the other network in a five-pixel radius. If a node of the distinct network is detected, then displacement of the searching node is dictated by both the rules of its own network and by effects of the neighboring network (as described in the following paragraphs). However, a potential displacement can be overridden. To maintain the network segregation apparent in vivo (Foe et al., 2000; Mavrakis et al., 2009; Zhang et al., 2018), each node searches a two-pixel radius around its potential displacement position for nodes of the other network. If a node of the other network is detected in this area, then the searching node aborts the move and maintains its position during the simulation step. Although the mechanistic basis of the in vivo network segregation is unclear, we assume involvement of steric hindrance and immiscibility of branched networks and bundled networks.
 
-The displacement of an interface myosin node is determined by the aforementioned rules of the actomyosin network, and additionally by the pushing forces of actin plus end nodes within the five-pixel search radius. The net effect of the nearby plus end nodes on the new position of the myosin node is based upon the degree to which each expected plus end node displacement is directed toward the myosin node. The component of a plus end node polymerization force directed toward the myosin node is determined by ϕ: the angle between the spatial vector joining the plus end node to the myosin node and the displacement vector calculated for the plus end node. If cos(ϕ) < 0, then the plus end node is about to move away from the myosin node, and would not push the myosin node. If cos(ϕ) > 0, then the plus end node displacement is directed toward the myosin node to a certain degree, and the component of the pushing force directed toward the myosin node is determined by cos⁡ϕ. The force on the myosin node by the cumulative effects of ‘n’ nearby plus end nodes is calculated by:(8)F→m,actin=∑i=1nF→polycos⁡(ϕi):forcos(ϕ)>0F→m,actin=0,otherwise
+The displacement of an interface myosin node is determined by the aforementioned rules of the actomyosin network, and additionally by the pushing forces of actin plus end nodes within the five-pixel search radius. The net effect of the nearby plus end nodes on the new position of the myosin node is based upon the degree to which each expected plus end node displacement is directed toward the myosin node. The component of a plus end node polymerization force directed toward the myosin node is determined by $ϕ$: the angle between the spatial vector joining the plus end node to the myosin node and the displacement vector calculated for the plus end node. If $cos(ϕ)$ < 0, then the plus end node is about to move away from the myosin node, and would not push the myosin node. If $cos(ϕ)$ > 0, then the plus end node displacement is directed toward the myosin node to a certain degree, and the component of the pushing force directed toward the myosin node is determined by $cos⁡ϕ$. The force on the myosin node by the cumulative effects of ‘n’ nearby plus end nodes is calculated by:
 
-The new position of the myosin node is determined by forces from both the actomyosin network and the nearby plus end nodes:(9)Δsm,net=(F→m,actin+F→m,myosin+F→m,spring).Δtξ−1NewPosition=OldPosition+Δsm,net
+$$
+F→_{m,actin}=\sumi=1nF→_{poly}cos⁡(ϕ_{i}):forcos(ϕ)>0F→_{m,actin}=0,otherwise
+$$
+
+The new position of the myosin node is determined by forces from both the actomyosin network and the nearby plus end nodes:
+
+$$
+Δs_{m,net}=(F→_{m,actin}+F→_{m,myosin}+F→_{m,spring}).Δtξ^{−1}NewPosition=OldPosition+Δs_{m,net}
+$$
 
 The myosin node moves to the new position, unless a plus end node is within a 2-pixel radius of the position, or if the position has the maximum myosin nodes allowed. If the move is prevented, then the myosin node maintains its old position.
 
-The displacement of an interface actin plus end node is determined by the aforementioned rules of the Arp2/3 network, and by additional forces exerted by myosin nodes within the plus end node’s five-pixel sensing radius. The networks are assumed to lack an interconnection for conveying pulling forces, and thus the myosin nodes can only impact the plus end node through pushing forces associated with myosin node displacement. At each simulation step, the contribution of the myosin-based pushing force to the displacement of the plus end node is based on the anticipated displacement of the myosin node directed toward the plus end node. The forces responsible for the myosin node displacement arise from the pulling and elastic forces between it and its associated myosin nodes. The component of this displacement directed toward the plus end node is determined by ϕ: the angle between the spatial vector joining the myosin node to the plus end node and the displacement vector calculated for the myosin node. If cos(ϕ) < 0 then the myosin node is about to be displaced away from the plus end node, and would thus have no pushing effect on the plus end node. If cos(ϕ) > 0 then the myosin node displacement is directed toward the plus end node to a certain degree, and the component of the pushing force directed toward the plus end node is determined by cos⁡ϕ. Considering ‘n’ pixels in the sensing radius of a plus end node have myosin nodes with cos(ϕ) > 0, the forces on the plus end node are summed as:(10)F→a,myo=∑i=1nNi.(F→m,myosin+F→m,spring)i.cos⁡(ϕi):forcos(ϕ)>0F→a,myo=0,otherwisewhere Ni represents the number of myosin nodes on pixel i.
+The displacement of an interface actin plus end node is determined by the aforementioned rules of the Arp2/3 network, and by additional forces exerted by myosin nodes within the plus end node’s five-pixel sensing radius. The networks are assumed to lack an interconnection for conveying pulling forces, and thus the myosin nodes can only impact the plus end node through pushing forces associated with myosin node displacement. At each simulation step, the contribution of the myosin-based pushing force to the displacement of the plus end node is based on the anticipated displacement of the myosin node directed toward the plus end node. The forces responsible for the myosin node displacement arise from the pulling and elastic forces between it and its associated myosin nodes. The component of this displacement directed toward the plus end node is determined by $ϕ$: the angle between the spatial vector joining the myosin node to the plus end node and the displacement vector calculated for the myosin node. If $cos(ϕ)$ < 0 then the myosin node is about to be displaced away from the plus end node, and would thus have no pushing effect on the plus end node. If $cos(ϕ)$ > 0 then the myosin node displacement is directed toward the plus end node to a certain degree, and the component of the pushing force directed toward the plus end node is determined by $cos⁡ϕ$. Considering ‘n’ pixels in the sensing radius of a plus end node have myosin nodes with $cos(ϕ)$ > 0, the forces on the plus end node are summed as:
 
-The new position of the plus end node is determined by both its polymerization force and the forces from nearby myosin nodes:(11)Δsactin=(F→a,myo+F→poly).Δtξ−1NewPosition=OldPosition+Δsactin
+$$
+F→_{a,myo}=\sumi=1nN_{i}.(F→_{m,myosin}+F→_{m,spring})_{i}.cos⁡(ϕ_{i}):forcos(ϕ)>0F→_{a,myo}=0,otherwise
+$$
+
+where Ni represents the number of myosin nodes on pixel i.
+
+The new position of the plus end node is determined by both its polymerization force and the forces from nearby myosin nodes:
+
+$$
+Δs_{actin}=(F→_{a,myo}+F→_{poly}).Δtξ^{−1}NewPosition=OldPosition+Δs_{actin}
+$$
 
 The plus end node moves to the new position, unless a myosin node is within a two-pixel radius of the position. If a myosin node exists in this radius, then the plus end node maintains its old position.
 
-## Software
+### Software
 
 Simulation codes were written and run using MATLAB (MathWorks). Annotated codes are provided (Source code 1, 2 and 3). MATLAB and Image J (NIH) were used for quantifications. Excel (Microsoft) was used for graphing means ± SD, and for determining p values with T-tests of samples with unequal variance and two-tailed distributions. PowerPoint (Microsoft) was used for schematics. Photoshop (Adobe) was used for figure preparation.
 
-## Quantifications
+### Quantifications
 
-## Arp2/3 network area
+#### Arp2/3 network area
 
 To quantify the area of growing Arp 2/3 networks with and without a wall (Figure 1I), the outermost plus end nodes of the network were connected manually using the polygon selection tool in Image J, and then the area of the polygon was calculated by Image J.
 
-## Inner clearance area
+#### Inner clearance area
 
 To quantify inner clearance areas in single ring simulations (Figure 2G), a custom tool script was written in MATLAB. For each simulation step, the tool used a swarm-based approach to detect the boundary of the clearance and then calculated the area of the clearance. Each input image of the myosin nodes was preprocessed by conversion to grayscale, application of a 2x2 pixel median filter, and conversion to binary black and white. The tool then released 180 swarms from a central position and the swarms moved outward along straight trajectories each separated by two degrees (spanning 360 degrees in total). As each swarm moved, it collected pixel intensity values and coordinate values. The boundary pixel was determined as the pixel where the detected intensity became greater than the mean intensity. However, two occasional errors occurred: (i) swarms passed through the region of myosin nodes without encountering a node or (ii) stray myosin nodes were detected. To remove these errors, the data was divided into six 60 degree segments, the median of the clearance boundary distance measurements was calculated for each segment, and detections of the boundary beyond ±5 pixels of the median were then deleted. The detection of the clearance boundary by the swarms was first used to correct a manually estimated center of the clearance. To maximize the accuracy of the clearance area calculation, each clearance boundary was determined 50 times with swarms emanating from randomized central positions in each case. Clearance area was calculated from the detected boundary coordinates using the surveyor's formula (Braden, 1986).
 
-## Interface smoothness, circularity and area
+### Interface smoothness, circularity and area
 
-For quantifications of interface properties in the multi-ring simulations (Figure 4E), the boundary of the central clearance of myosin was first manually traced in Image J using the polygon selection tool and the following steps: (1) from a starting boundary myosin node subsequent boundary myosin nodes were traced around the clearance circumference until the starting node was reached again; (2) if two subsequent nodes were the same distance away, the node closer to the clearance center was chosen; and (3) after tracing the full boundary, it was corrected by comparing the tracing with the distribution of boundary myosin nodes at earlier simulation steps. The traced polygon was subjected a two pixel-radius Gaussian blur and was then converted into a binary black and white mask. The area and circularity of the mask was calculated in Image J, with circularity having a maximum value of one. To calculate the smoothness parameter, we first employed the swarms tool to determine the coordinates of the mask boundary using 180 swarms. The swarm-derived data was divided into six segments of 60 degrees each. For each segment, the standard deviation (σ) of the derivatives of the radii was calculated. The derivatives of the radii were calculated by dividing the difference between consecutive swarm radii by half the angle between the two points. Smoothness, S, of the entire boundary of the central clearance was calculated as the inverse of the mean of the standard deviations, σ, over the six segments, as follows:(12)S=(∑i=16σi6)-1
+For quantifications of interface properties in the multi-ring simulations (Figure 4E), the boundary of the central clearance of myosin was first manually traced in Image J using the polygon selection tool and the following steps: (1) from a starting boundary myosin node subsequent boundary myosin nodes were traced around the clearance circumference until the starting node was reached again; (2) if two subsequent nodes were the same distance away, the node closer to the clearance center was chosen; and (3) after tracing the full boundary, it was corrected by comparing the tracing with the distribution of boundary myosin nodes at earlier simulation steps. The traced polygon was subjected a two pixel-radius Gaussian blur and was then converted into a binary black and white mask. The area and circularity of the mask was calculated in Image J, with circularity having a maximum value of one. To calculate the smoothness parameter, we first employed the swarms tool to determine the coordinates of the mask boundary using 180 swarms. The swarm-derived data was divided into six segments of 60 degrees each. For each segment, the standard deviation (σ) of the derivatives of the radii was calculated. The derivatives of the radii were calculated by dividing the difference between consecutive swarm radii by half the angle between the two points. Smoothness, S, of the entire boundary of the central clearance was calculated as the inverse of the mean of the standard deviations, σ, over the six segments, as follows:
+
+$$
+S=(\frac{\sumi=16\sigma_{i}}{6})^{-1}
+$$
 
 The calculated smoothness approaches infinity for perfectly smooth shapes, but the pixelated images generated by MATLAB are not perfectly smooth, and we calculated S close to ~nine from MATLAB-generated circular plots.
 
-## Drosophila work
+### Drosophila work
 
 Animals were maintained under standard conditions. True breeding stocks were maintained at room temperature, 18°C or 25°C on fly food provided by a central University of Toronto kitchen operated by H. Lipshitz. Embryos were collected on plates of apple juice agar (25 g agar, 250 ml store-bought apple juice, 12.5 g store-bought white sugar, 10 ml 10% Tegosept (in ethanol), plus dH2O to 1000 ml) plates at 25°C after 2–3 days of caged adult feeding on dabs of store-bought baker’s yeast with daily plate changes. Adults were caged for embryo collection within 1 week of pupal hatching, and no health issues were noticed. Embryo sexes were not determined and embryo populations with a specific genotype of interest displayed relatively normally distributed phenotypes suggesting no detectable sex contribution.
 

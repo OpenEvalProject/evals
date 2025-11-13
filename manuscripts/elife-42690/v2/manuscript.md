@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.42690.001 The Drosophila larval neuromuscular system provides an ideal context in which to study synaptic partner choice, because it contains a small number of pre- and postsynaptic cells connected in an invariant pattern. The discovery of interactions between two subfamilies of IgSF cell surface proteins, the Dprs and the DIPs, provided new candidates for cellular labels controlling synaptic specificity. Here we show that DIP-α is expressed by two identified motor neurons, while its binding partner Dpr10 is expressed by postsynaptic muscle targets. Removal of either DIP-α or Dpr10 results in loss of specific axonal branches and NMJs formed by one motor neuron, MNISN-1s, while other branches of the MNISN-1s axon develop normally. The temporal and spatial expression pattern of dpr10 correlates with muscle innervation by MNISN-1s during embryonic development. We propose a model whereby DIP-α and Dpr10 on opposing synaptic partners interact with each other to generate proper motor neuron connectivity.
+The Drosophila larval neuromuscular system provides an ideal context in which to study synaptic partner choice, because it contains a small number of pre- and postsynaptic cells connected in an invariant pattern. The discovery of interactions between two subfamilies of IgSF cell surface proteins, the Dprs and the DIPs, provided new candidates for cellular labels controlling synaptic specificity. Here we show that DIP-α is expressed by two identified motor neurons, while its binding partner Dpr10 is expressed by postsynaptic muscle targets. Removal of either DIP-α or Dpr10 results in loss of specific axonal branches and NMJs formed by one motor neuron, MNISN-1s, while other branches of the MNISN-1s axon develop normally. The temporal and spatial expression pattern of dpr10 correlates with muscle innervation by MNISN-1s during embryonic development. We propose a model whereby DIP-α and Dpr10 on opposing synaptic partners interact with each other to generate proper motor neuron connectivity.
 
 ## Introduction
 
@@ -42,13 +42,21 @@ Based on these findings, we surveyed DIP expression in the larval neuromuscular 
 
 A subset of muscles innervated by MNISN-1s axon branches are muscles 4, 3, and 2, which are arranged in a ventral→dorsal sequence (Figure 1C). In DIP-α mutant larvae, the interstitial axon branch onto muscle 4 (m4) is always missing, and the branch onto m3 is usually absent. The branch onto m2, however, is always present. MNISN-1s filopodia are observed in the m4 target area in both wild-type and DIP-α mutant embryos, but 1s boutons never form on m4 in mutants. This suggests that nascent axonal projections onto m4 fail to stabilize and convert into NMJs in the absence of DIP-α.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/42690/elife-42690-fig1-v2.jpg)
+
+**Figure 1.:** (A–B) DIP-α-T2A-GAL4 driving EGFP expression in (A) embryonic and (B) third instar larval ventral nerve cords labeled with anti-GFP (green) and anti-Eve (red). Arrowheads denote segmentally repeating Eve expressing neurons, including RP2/MNISN-1s. (C) Dorsal larval body wall hemisegment labeled with anti-GFP (green), anti-HRP (red) and phalloidin (blue). DIP-α is only expressed in 1s neurons (arrow in C) and not 1b neurons (arrowhead). Muscles are labeled as m1-4 and m20 in C’. (D) DIP-α-EGFP-DIP-α protein trap embryo labeled with anti-GFP (green) anti-Fas2 (red), and phalloidin (blue), showing that DIP-α is enriched in MNISN-1s filopodia (arrow) but absent in others (arrowhead). (E) DIP-α-EGFP-DIP-α protein trap reveals DIP-α localization to 1s (arrow) NMJ and not 1b boutons (arrowhead), labeled with anti-GFP (green) and anti-HRP (red). Calibration bar is 16 µm in A, 13 µm in B, 50 µm in C, 3 µm in D and 4 µm in E. See also Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/42690/elife-42690-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Ventral confocal projections of VNC in st16 embryos depicting DIP-α-GAL4 expression of EGFP. Arrow denotes MNISNb/d-1s. (B) Dorsal confocal projections of VNC in larval animals depicting DIP-α-GAL4 expression of EGFP labeled with anti-GFP (green) and anti-HRP (red). Arrow denotes MNISN-1s. (C) Ventral larval body wall muscles labeled with anti-GFP (green), anti-HRP (red), and phalloidin (blue), showing that DIP-α-GAL4 is expressed in MNISNb/d-1s motor neurons as well. (D) Ventral nerve cord from DIP-α-EGFP-DIP-α protein trap larva, labeled with anti-GFP (green) and anti-HRP (red), showing that DIP-α also localizes to the 1s dendritic processes. (E) Dorsal body wall muscles from DIP-α-EGFP-DIP-α protein trap larva, labeled with anti-GFP (green) and anti-HRP (red), showing that DIP-α localizes to type 1s boutons (arrows) on several different muscles. Calibration bar is 19 µm in A, 17 µm in B, 40 µm in C, 18 µm in D and 10 µm in E. See also Figure 1.
+
 The ‘Dpr-ome’ revealed that DIP-α binds to Dpr6 and Dpr10. We examined phenotypes in the larval neuromuscular system caused by loss of these Dprs, and found that in dpr10 null mutant larvae the MNISN-1s axon branch onto m4 is missing, mimicking the DIP-α mutant phenotype. In third instar larvae, dpr10 is expressed in almost all muscle fibers. However, during motor axon outgrowth in embryos, dpr10 expression initiates in two muscle fibers in the immediate vicinity of m4, and then comes on in m4 itself around the time at which axon branches appear on this muscle. These results suggest that Dpr10 is a muscle recognition cue whose binding to DIP-α on the motor axon triggers recognition and stabilization of the MNISN-1s filopodia on specific muscles.
 
 The accompanying paper (Venkatasubramanian et al., 2019) shows that DIP-α and Dpr10 have expression patterns in adult leg motor neurons and muscles that are qualitatively similar to those seen in the larval neuromuscular system, and that loss of DIP-α or Dpr10 causes failure of DIP-α-expressing leg motor neurons to innervate a subset of their normal muscle targets. Thus, in both of these neuromuscular systems, interactions between DIP-α and Dpr10 control formation of synapses on specific muscle targets.
 
 ## Results
 
-## DIP-α is selectively expressed by two identified motor neurons
+### DIP-α is selectively expressed by two identified motor neurons
 
 In a previous study, we showed that several Dprs and DIPs, including DIP-α, are expressed in subsets of neurons in the larval ventral nerve cord (VNC). DIP-α reporter expression was observed in a subset of neurons (Figure 1—figure supplement 1B), including a segmentally repeated pair of motor neurons (Carrillo et al., 2015). Here we sought to investigate the identity of these DIP-α-expressing neurons and to determine if DIP-α is required for their targeting to specific muscles. We monitored DIP-α expression with reporters driven by a gene trap GAL4 in embryos and third instar larvae (Figure 1A,B, respectively). The GAL4 line was generated by replacing a splice-trap MiMIC transposable element, MI02031 (Venken et al., 2011), in the first DIP-α coding intron with a T2A-GAL4 cassette (Diao and White, 2012), using recombination-mediated cassette exchange (RMCE). It has been demonstrated that most MiMIC-derived GAL4 cassettes faithfully reproduce the expression patterns of the genes into which they are inserted (Nagarkar-Jaiswal et al., 2015b). T2A-GAL4 cassettes in coding introns have the additional feature that GAL4 expression is from a transcript whose translation initiates at the normal ATG of the gene. This means that the expression pattern of GAL4 should correspond to that of the nascent endogenous protein. However, proteins are also subject to post-translational control, so GAL4-driven reporter expression may not necessarily mimic the expression pattern of an accumulated protein as observed by antibody staining (Diao et al., 2015; Venken et al., 2011).
 
@@ -58,47 +66,87 @@ In order to prove that the medial DIP-α+ cell is MNISN-1s, we examined its mus
 
 DIP-α is a cell surface protein, and analysis of its subcellular localization might provide insights into its function. To address where DIP-α localizes within MNISN-1s, we used a ‘protein trap’, DIP-α-EGFP-DIP-α, constructed by using RMCE to insert GFP into the reading frame of DIP-α, using the same MiMIC as for the T2A-GAL4 replacement (Nagarkar-Jaiswal et al., 2015a). If such protein traps are expressed well, they usually are transported to the subcellular compartments where the endogenous protein is located. During late embryonic development, DIP-α-EGFP-DIP-α localized to growth cones prior to muscle innervation (Figure 1D) and remained distributed to all larval MNISN-1s NMJs (Figure 1—figure supplement 1E), including m4 (Figure 1E). We were unable to determine if DIP-α-EGFP-DIP-α also localizes to MNISN-1s dendrites due to the abundant signal in the VNC neuropil (Figure 1—figure supplement 1D).
 
-## DIP-α is required for MNISN-1s targeting specificity
+### DIP-α is required for MNISN-1s targeting specificity
 
 Previously, we and others reported expression patterns that support a role for Dpr-DIP interactions in synaptic partner choice (Carrillo et al., 2015; Tan et al., 2015). Given the selective expression of DIP-α in two 1s motor neurons within the neuromuscular system and the localization of DIP-α to presynaptic terminals, we speculated that DIP-α may be involved in targeting of motor axons to muscle fibers. The innervation pattern of the larval musculature is almost invariant, so we can readily evaluate changes in connectivity due to alterations in gene function. MNISN-1s innervates most of the dorsal muscles, including muscles 1, 2, 3, 4, 9, 10, 19, and 20 (Hoang and Chiba, 2001).
 
 The DIP-α-GAL4 reporter that we used for expression studies is also an LOF allele, since the splice-trap into the GAL4 cassette creates a truncated DIP-α. Conveniently, due to the fact that DIP-α is an X-linked gene, we could use DIP-α-GAL4>EGFP/+ heterozygous females as controls and DIP-α-GAL4>EGFP/Y hemizygous males as LOF mutants. In controls, the MNISN-1s branch onto m4, hereafter referred to as m4-1s, is easily identifiable and reproducibly found (Figure 2A). Remarkably, loss of DIP-α produces a unique phenotype in which the MNISN-1s branch on m4 is always missing (the m4-1s phenotype; Figure 2B). In control DIP-α heterozygous animals, MNISN-1s innervates m4 with a frequency of 77%, but we never observed m4-1s branches in DIP-α-GAL4>EGFP hemizygous males (Figure 2B,D). We confirmed the loss of innervation with a targeted null deletion mutation in DIP-α (DIP-α1-178; Figure 2D) produced by CRISPR. Thus, DIP-α is necessary for innervation of m4 by MNISN-1s. By contrast, examination of MNISNb/d-1s, the other motor neuron that expresses DIP-α, revealed no obvious highly penetrant phenotype upon loss of DIP-α.
 
-## DIP-α is required presynaptically for proper MNISN-1s connectivity
+![Figure 2.](https://cdn.elifesciences.org/articles/42690/elife-42690-fig2-v2.jpg)
+
+**Figure 2.:** (A–C) Larval neuromuscular junctions labeled with anti-GFP (green) and anti-HRP (red) from (A) heterozygous DIP-α-GAL4 animals, (B) homozygous DIP-α-GAL4 mutants and (C) rescue of homozygous DIP-α-GAL4 mutants by expressing a UAS-DIP-α construct in DIP-α expressing cells, including MNISN-1s. DIP-α is only expressed in 1s neurons (green) (arrows in A,C) and not 1b neurons (arrowhead). (D–F) Frequency of 1s innervation of m4 from (D) mutants and rescue, (E) overexpression of UAS-DIP-α or (F) UAS-DIP-α-RNAi. n (animals/hemisegments) = (D) (12/60), (10/30), (18/100), (18/96), (9/56), (14/69), (E) (8/48), (6/30), (9/54), (F) (6/30), (12/71), (10/60), (10/59) (respectively). Calibration bar is 9 µm in A-C. **p<0.001, ***p<0.0001. Error bars represent SEM. See also Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/42690/elife-42690-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A,B) The DIP-α rescue construct, tagged with a c-terminal Myc tag, labeled with (A) anti-Myc (green), anti-HRP (red) and anti-Dlg (blue) or (B) anti-DIP-α (green), anti-HRP (red) or phalloidin (blue). Note localization only to 1s boutons (arrows) and not 1b boutons (arrowheads). Open arrowheads denote the ISN. Calibration bar is 10.5 µm. See also Figure 2.
+
+### DIP-α is required presynaptically for proper MNISN-1s connectivity
 
 Although DIP-α reporters demonstrate that DIP-α is expressed in MNISN-1s and localizes to MNISN-1s terminals, we cannot rule out low-level expression in muscles. To define the cells in which DIP-α is required for proper MNISN-1s innervation, we performed rescue experiments by expressing a C-terminally Myc-tagged UAS-DIP-α construct in a DIP-α mutant background. First, we confirmed that the tagged DIP-α is able to localize to MNISN-1s NMJs on m4 by staining with anti-Myc and anti-DIP-α antibodies (Figure 2—figure supplement 1A,B). The lack of DIP-α in the MNISN-1s axon in the intersegmental nerve (Figure 2—figure supplement 1A,B) also suggests that DIP-α is actively targeted to the NMJ. We then performed GOF controls to ensure that overexpression of DIP-α in MNISN-1s had no adverse effects on targeting. Overexpression of DIP-α utilizing two drivers that are expressed in subsets of motor neurons (eveRN2-GAL4, expressed in MNISN-1s and aCC, plus interneurons; and DIP-α-GAL4, expressed in MNISN-1s and MNISNb/d-1s, plus interneurons) produced normal m4-1s NMJs. We expressed these same constructs in a DIP-α null background and found complete rescue of the m4-1s phenotype (Figure 2C,D), suggesting that DIP-α functions in MNISN-1s. We confirmed that DIP-α is required in MNISN-1s using RNAi-mediated knock down of DIP-α. Utilizing either Elav-GAL4 (pan-neuronal) or DIP-α-GAL4 to drive RNAi expression, we observed significant reductions in the frequency of m4-1s innervations (Figure 2F). Knockdown of DIP-α in muscles using Mef2-GAL4-driven RNAi had no effect on m4-1s, indicating that DIP-α is required only in the presynaptic neuron.
 
 Interestingly, driving pan-neuronal expression of DIP-α with Elav-GAL4 in a wild-type background produced a complete loss of m4-1s, similar to DIP-α LOF. The same result was observed when DIP-α was expressed in muscles using Mef2-GAL4 (Figure 2E). Possible models to explain these surprising results are considered in the Discussion.
 
-## DIP-α does not control MNISN-1s axon guidance or defasciculation
+### DIP-α does not control MNISN-1s axon guidance or defasciculation
 
 Motor neuron axons exit the VNC during embryonic st13-14 and begin to innervate their muscle targets prior to hatching (Sánchez-Soriano et al., 2007). During the larval instars, NMJs formed during embryogenesis expand in order to keep pace with the growth of the muscle fibers. We investigated whether DIP-α is expressed at the appropriate embryonic stage to function in MNISN-1s muscle targeting. MNISN-1s begins to express DIP-α-GAL4>EGFP at st13/14 (Figure 3—figure supplement 1A) and this expression continues through embryonic st17 and then persists during larval development (Figure 1). The proper wiring of MNISN-1s requires the coordination of axon guidance, fasciculation, defasciculation, and synaptic partner choice. Thus, the striking loss of m4-1s observed upon removal of DIP-α could result from defects in various developmental processes.
 
 Axon guidance requires the integration of attractive and repulsive external cues through cell surface proteins. MNISN-1s innervates the dorsal muscles, the most distal of which is m1. To determine the gross progression of MNISN-1s muscle innervation, we quantified terminal ‘swellings’ which precede varicosity formation in st15-16 embryos in distal (m1, 2, 9, and 10) and proximal (m3, 4, 19, and 20) muscle fields. MNISN-1s rarely formed terminal swellings in the proximal muscle field at this stage, unlike distal muscles, suggesting that MNISN-1s innervates muscles distal to proximal (Figure 3—figure supplement 1B). Thus, if DIP-α is required for axon guidance we would expect to observe defects in MNISN-1s axons in the vicinity of m1 and m2 in mutants. In control st15 embryos, the MNISN-1s growth cone is easily identifiable in the m1/m2 target area (Figure 3A). DIP-α nulls are indistinguishable from controls, suggesting that axon guidance is likely not affected (Figure 3B). Additionally, in third instars, we observe proper MNISN-1s innervation of m2 in DIP-α mutants (Figure 4).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/42690/elife-42690-fig3-v2.jpg)
+
+**Figure 3.:** (A–D) Embryonic NMJs labeled with anti-GFP (green), anti-HRP (red) and phalloidin (blue) from (A,C) heterozygous and (B,D) hemizygous DIP-α-GAL4 mutants. (A–B) are st15 embryos; (C–D) are st17 embryos. MNISN-1s protrusions over m4 form late in embryonic development (C) while protrusions over m2 form earlier (A). Note that MNISN-1s axon protrusions form properly over dorsal muscles, including m2, at st15 in (A) controls and (B) DIP-α mutants and over m4 at st17 in controls (C) and DIP-α mutants (D). Also, ^ indicates all filopodia in (A) and (B), and m4 filopodia in (C) and (D); * indicates st17 non-m4 filopodia. (E–F) First instar larva labeled with anti-GFP (green), anti-HRP (red) and phalloidin (blue) from DIP-α-GAL4 heterozygous animals and (F) DIP-α-GAL4 homozygous mutants. Note 1b boutons present in both first instar larvae (arrowhead in E,F), but only heterozygous animals have 1s boutons (arrow in E). Calibration bar is 8 µm in A,B, 4 µm in C,D and 6 µm in E,F. See also Figure 3—figure supplement 1.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/42690/elife-42690-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) A ventral nerve cord labeled with anti-GFP (green) and anti-Fas2 (red) from a DIP-α-GAL4 driving EGFP st14 embryo. (B) Frequency of MNISN-1s terminal swellings (varicosity precursors) from DIP-α-T2A-GAL4 driving GFP observed in st16/17 embryos. Terminal swellings are observed predominantly in distal (most dorsal). Calibration bar in A is 14 µm. n (animals/hemisegments) = (6/57). Error bars represent SEM. ***p<0.0001. See also Figure 3.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/42690/elife-42690-fig4-v2.jpg)
+
+**Figure 4.:** (A,B) Dorsal body wall hemisegments labeled with anti-GFP (green), anti-HRP (red) and phalloidin (blue) from (A) heterozygous DIP-α-GAL4 animals, and (B) homozygous DIP-α-GAL4 mutants. Arrow denotes 1s boutons in (A), arrowhead denotes 1b boutons, and * denote muscles in mutant that have lost 1s innervation. Overgrown 1s arbors on m2 and m1 are circled in mutants. (C) Quantification of the frequency of innervation of MNISN-1s neurons on the respective muscles from the above genotypes. n (animals/hemisegments) = (16/30), (12/30) (respectively). Calibration bar is 60 µm. See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/42690/elife-42690-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Quantification of the number of MNISN-1s branches on m2 in controls (DIP-α-T2A-GAL4/+) and hemizygous nulls (DIP-α-T2A-GAL4/Y). n (animals/hemisegments) = (13/54), (15/59) (respectively). Error bars represent SEM. ***p<0.0001. See also Figure 4.
+
 Another critical step in establishing neuromuscular wiring is the defasciculation of motor neuron axons from the main nerve. This process requires the appropriate balance of adhesion between axons and repulsive signals that facilitate separation of axons from the nerve bundle. Defasciculation is typically initiated by filopodia emanating from the growth cone (when an entire axon leaves the bundle) or from the axon shaft (when an interstitial branch is being formed). We investigated whether DIP-α was required for MNISN-1s filopodia to leave the nerve bundle. In control st17 embryos, there are obvious motor neuron filopodia, including MNISN-1s filopodia (identified by their selective expression of DIP-α-GAL4>EGFP) that defasciculate from the ISN throughout the dorsal body wall (Figure 3C). We observed similar filopodial projections in age-matched DIP-α null embryos (Figure 3D caret), ruling out a function for DIP-α in general defasciculation (Figure 3C,D asterisk).
 
 We then looked more closely at MNISN-1s axon defasciculation and bouton formation at m4, since this would address whether the m4-1s branch initially forms and then retracts or never forms at all in DIP-α mutants. During axon pathfinding, filopodia extend and contact both target and non-target muscles. The developmental time course for MNISN-1s innervation of m4 is not known, so we examined MNISN-1s axons at various embryonic stages and in first instar larvae. In control embryos, we observe MNISN-1s axon defasciculation and filopodia at m4 beginning in st17 (Figure 3C). MNISN-1s filopodia at more dorsal muscles are evident at earlier stages (Figure 3A). In DIP-α LOF st17 embryos, we still observe MNISN-1s axon protrusions at m4 (Figure 3D), suggesting that the m4-1s branch initially extends but is not properly stabilized due to loss of DIP-α. In first instar larvae, 1s boutons are found on m4 in wild-type (Figure 3E), but we never observed a 1s bouton on m4 in DIP-α mutants (Figure 3F; 64 hemisegments examined). These data suggest that MNISN-1s filopodia still contact m4 in the absence of DIP-α, but fail to establish a stable interstitial branch.
 
-## Loss of DIP-α selectively reduces and expands MNISN-1s connectivity
+### Loss of DIP-α selectively reduces and expands MNISN-1s connectivity
 
 The localization of DIP-α to all MNISN-1s boutons prompted us to perform a more exhaustive analysis of MNISN-1s targeting to determine if there were any subtle changes in connectivity. Previous studies reported that MNISN-1s innervates eight dorsal muscles (1, 2, 3, 4, 9, 10, 19, and 20) (Hoang and Chiba, 2001). A detailed analysis of innervation shows that MNISN-1s targets m2, 3, 4, 9, 10, 19, and 20 almost invariantly (Figure 4A,C). However, m1, the most dorsal muscle, is usually not innervated in control animals.
 
 We repeated this analysis in a DIP-α null background and observed interesting alterations in connectivity. First, m1, which rarely has 1s innervation, consistently had 1s branches (Figure 4B,C). Second, two muscles, m11 and m18, which are never innervated by MNISN-1s in controls, now sometimes receive ectopic 1s branches upon removal of DIP-α. Third, muscles adjacent to m4 also lose 1s innervation in mutants (Figure 4B,C). Specifically, m3, 19, and 20 show major reductions in 1s branch frequency. It is interesting to note that the more dorsal muscles in the dorsal muscle field gain 1s branches (m1, 2, 11, 18), while more ventral muscles (m3, 4, 19, 20) lose innervation. m2, for example, has an approximately 2-fold increase in the number of MNISN-1s branches (Figure 4—figure supplement 1A).
 
-## Expression of DIP-α binding partners, Dpr6 and Dpr10, in the neuromuscular system
+### Expression of DIP-α binding partners, Dpr6 and Dpr10, in the neuromuscular system
 
 DIP-α binds to only two of the 21 Dprs, Dpr6 and Dpr10 (Cosmanescu et al., 2018; Özkan et al., 2013). We sought to determine where dpr6 and dpr10 are expressed, in order to ascertain if either could potentially function with DIP-α to control MNISN-1s targeting. dpr6-T2A-GAL4>EGFP shows dpr6 expression in subsets of cells in the embryonic VNC, including MNISN-1s and aCC (Figure 5A), and analysis of the larval bodywall reveals that dpr6 is expressed in type 1b and 1s motor neurons (Figure 5B). Thus, dpr6 and DIP-α are co-expressed in MNISN-1s.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/42690/elife-42690-fig5-v2.jpg)
+
+**Figure 5.:** (A,C) Embryonic ventral nerve cord from (A) dpr6-GAL4 and (C) dpr10-GAL4 driving EGFP expression, labeled with anti-GFP (green), anti-Eve (red) and anti-Elav (blue). dpr6 is expressed in aCC and RP2 (MNISN-1s) neurons, while dpr10 is not expressed in these Eve+ cells (see also Figure 5—figure supplement 1A). (B,D) Larval dorsal body wall hemisegments from (B) dpr6-GAL4 or (D) dpr10-GAL4 driving EGFP expression, labeled with anti-GFP (green), and anti-HRP (red). Muscles are labeled m4-m1, m20. Dpr10 is also expressed in unknown neurons ( ^ in 5D denotes axon). (E) Larval m4 NMJ from animals expressing Dpr10-V5 using MHC-GeneSwitch-GAL4 in the absence of RU486 (low-level muscle expression only), labeled with anti-V5 (green), anti-HRP (red) and anti-Dlg (blue). 1b and 1s neurons are marked with arrowhead and arrow, respectively. (F,G) Larval m4 NMJ from either (F) control w1118 or (G) 24B-GAL4>UAS-Dpr10-V5 (high level pan-muscle expression). Live tissue was incubated with DIP-α-AP5 protein (see Materials and methods) and then labeled with anti-AP (green) and anti-HRP (red). Calibration bar is 15 µm in A,C, 60 µm in B,D, 12 µm in E, and 18 µm in F,G. See also Figure 5—figure supplement 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/42690/elife-42690-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) An embryonic ventral nerve cord from dpr10-GAL4 > EGFP labeled with anti-GFP (green) and anti-Elav (red) from sections below the MNISN-1s neuron cell bodies seen in Figure 4. (B) A larval m4 NMJ in a UAS-Dpr10-V5/+ (no GAL4 driver) labeled with anti-V5 (green), anti-HRP (red) and anti-Dlg (blue). Note the lack of anti-V5 signal. 1s boutons (arrow), 1b boutons (arrowhead), and type two boutons (asterisk). Calibration bar is 11 µm in A and 8 µm in B. See also Figure 5.
+
 We next investigated dpr10 expression using a dpr10-T2A-GAL4 reporter. dpr10 is found in subsets of cells in the embryonic VNC (Figure 5—figure supplement 1A) but, unlike dpr6 and DIP-α, it is not expressed in embryonic MNISN-1s (Figure 5C). dpr10 is prominently expressed in third instar larval muscles, including m4 (Figure 5D). As the GFP signal is very high within muscles, we were unable to determine if dpr10 was expressed in motor neurons with the current reporter. Some signal is detected in the nerves (Figure 5D caret), suggesting that dpr10 is expressed in neurons that have axons in the periphery. To define Dpr10 localization, we expressed a UAS-Dpr10-V5 construct in muscles. Remarkably, V5 staining was selectively found at NMJs, surrounding both 1b and 1s boutons, indicating that the protein localizes to the postsynaptic side of NMJs (Figure 5E; see Figure 5—figure supplement 1B for anti-V5 staining of control NMJs).
 
-## Dpr10 is able to bind DIP-α in tissue
+### Dpr10 is able to bind DIP-α in tissue
 
 Based on DIP-α localization to MNISN-1s terminals, we hypothesize that DIP-α interacts in trans with another cell surface protein on m4 to confer specificity. An attractive candidate for this role is Dpr10, which is expressed in muscles and interacts biochemically with DIP-α. We sought to determine if DIP-α–Dpr10 interactions could occur in the larval tissue. We used a recombinant DIP-α fused with pentameric alkaline phosphatase (DIP-α-AP5) to probe dissected, unfixed third instar larvae. After subsequent fixation, DIP-α-AP5 was then detected by immunofluorescence, using antibodies against the AP epitope. In wild type animals, DIP-α-AP5 shows minimal binding to tissue (Figure 5F). However, upon ectopic postsynaptic expression of Dpr10-V5 in muscles, we observed strong labeling of the postsynaptic membrane surrounding boutons (Figure 5G), suggesting that DIP-α is able to directly bind to Dpr10. This observation supports a model whereby endogenous muscle Dpr10 interacts transsynaptically with DIP-α in MNISN-1s terminals.
 
-## dpr10 is required for MNISN-1s innervation of m4
+### dpr10 is required for MNISN-1s innervation of m4
 
 Since Dpr10 interacts with DIP-α, both in vitro and in tissue, and is able to localize to the postsynaptic membrane, we decided to investigate the requirement of dpr10 for MNISN-1s innervation of m4. In order to distinguish 1s and 1b terminals, we stained for a subsynaptic reticulum (SSR) marker, Discs-Large (Dlg), and identified 1s boutons by their less extensive SSR relative to 1b boutons (Guan et al., 1996) (Figure 6A). We examined a CRISPR-generated null deletion mutant of dpr10, dpr1014-5. In this mutant, we observed loss of almost 100% of 1s boutons on m4 (Figure 6B and D), similar to the DIP-α null phenotype (Figure 2B). Dorsal MNISN-1s innervation (m1, 2, 9, and 10) was largely unaltered (Figure 6—figure supplement 1A). 1b boutons were still present on m4 (Figure 6B), indicating that Dpr10 is specifically required for MNISN-1s innervation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/42690/elife-42690-fig6-v2.jpg)
+
+**Figure 6.:** (A–C) Larval m4 NMJs labeled with anti-DLG (green) and anti-HRP (red) from (A) control w1118 animals, (B) dpr1014-5/Df null mutants and (C) dpr6-GAL4/Df. The difference in anti-Dlg staining intensity allows us to differentiate 1b and 1s NMJs. 1b and 1s neurons are marked with arrowhead and arrow, respectively. (D–F) Frequency of 1s innervation of m4 from (D) dpr6 and dpr10 mutants and (E) overexpression of UAS-Dpr10-V5 and (F) UAS-dpr10-RNAi. n (animals/hemisegments) = (D) (8/62), (12/70), (11/60) and (E) (8/48), (6/36), (5/30), (8/47), (F) (8/48), (8/48), (10/60), (8/48) (respectively). Calibration bar is 16 µm in A-C. Error bars represent SEM. ***p<0.0001. See also Figure 6—figure supplement 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/42690/elife-42690-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Frequency of MNISN-1s innervation of dorsal muscles from control (w1118) and dpr10 mutants. (B) Quantification of MNISN-1s branches on m2 in control (UAS-Dpr10/+) and muscle overexpressedDpr10-V5. n (animals/hemisegments) = (A) (7/30), (7/32) and (B) (6/30), (12/62) (respectively). Error bars represent SEM. *p<0.05, ***p<0.0001. See also Figure 6.
 
 Since dpr6 is expressed in 1b and 1s motor neurons, and DIP-α is in 1s motor neurons, whose axons fasciculate with 1b axons, axon-axon contact through Dpr6–DIP-α interactions could potentially affect MNISN-1s targeting to m4. However, as shown above, MNISN-1s is able to properly defasciculate without DIP-α (Figure 3C,D). Also, dpr6-T2A-GAL4/Df mutants have no m4-1s phenotype, and do not produce any other detectable alterations in MNISN-1s (Figure 6C and D). Thus, the role of DIP-α in formation of the m4-1s branch is likely to be mediated through its interactions with Dpr10.
 
@@ -106,13 +154,13 @@ In the neuromuscular system, we found that dpr10 is expressed in neurons (Carril
 
 We also attempted to rescue the m4-1s phenotype using the UAS-Dpr10-V5 construct described above. Dpr10-V5 localizes to NMJs when it is expressed in muscles. However, we observed that expression of Dpr10-V5 from pan-neuronal (Elav-GAL4) or muscle (Mef2-GAL4) drivers reduced the frequency of m4-1s branches, even in a wild-type background (Figure 6E), similar to DIP-α GOF. Pan-neuronal expression of Dpr10 almost eliminated m4-1s branches. We asked whether this was likely to be a cis or trans effect by expressing Dpr10 only in 1s neurons. We observed that expression of Dpr10-V5 in MNISN-1s using DIP-α-GAL4 also produced loss of M4-1s branches (Figure 6E), suggesting that a GOF cis DIP-α–Dpr10 interaction can interfere with the DIP-α–Dpr10 trans interactions that are important for branch formation.
 
-## dpr10 is dynamically expressed in muscle subsets during embryonic development
+### dpr10 is dynamically expressed in muscle subsets during embryonic development
 
 In third instar larvae, dpr10 is expressed in almost all abdominal muscles, but loss of branches in DIP-α or dpr10 mutants is only observed for m4 and adjacent muscles. This led us to examine if dpr10 expression in muscles was temporally and spatially regulated during the period of embryonic development in which the neuromuscular circuit is established. We used the dpr10-GAL4>EGFP reporter and focused on three time points: late 14/early 15, late 15/early 16, and late 16/early 17. Using confocal images of embryos stained for the axonal marker Fasciclin II (Fas2; used to more accurately determine developmental stage) and GFP, we qualitatively scored samples, where muscle GFP signal above background received a score of 1, and anything at background levels received a score of 0. Figure 7G thus represents the probability that dpr10-GAL4>EGFP is expressed in each muscle examined.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/42690/elife-42690-fig7-v2.jpg)
 
-**Figure 7.:** dpr10 in embryonic muscles.(A,C,E) Embryonic dpr10-GAL4>EGFP abdominal body wall hemisegments labeled with anti-GFP (green), anti-Fas2 (red) and phalloidin (blue) from (A) late st14/early st15, (C) late st15/early st16, and (E) late st16/early st17. Open arrowhead denotes Intersegmental Nerve (ISN), which carries dorsal neurons. (B,D,F) Cartoon representation of an embryonic hemisegment. Green muscles are those that express dpr10 at the respective developmental stage while blue muscles do not express dpr10. (G) Heat map quantification of the frequency of dpr10-GAL4>EGFP expression in each muscle at each developmental stage, where 1 represents 100% probability of expression. n (embryos) = 7, 6, 8 (respectively). Calibration bar is 19 µm.10.7554/eLife.42690.019Figure 7—source data 1.Figure 7.
+**Figure 7.:** (A,C,E) Embryonic dpr10-GAL4>EGFP abdominal body wall hemisegments labeled with anti-GFP (green), anti-Fas2 (red) and phalloidin (blue) from (A) late st14/early st15, (C) late st15/early st16, and (E) late st16/early st17. Open arrowhead denotes Intersegmental Nerve (ISN), which carries dorsal neurons. (B,D,F) Cartoon representation of an embryonic hemisegment. Green muscles are those that express dpr10 at the respective developmental stage while blue muscles do not express dpr10. (G) Heat map quantification of the frequency of dpr10-GAL4>EGFP expression in each muscle at each developmental stage, where 1 represents 100% probability of expression. n (embryos) = 7, 6, 8 (respectively). Calibration bar is 19 µm.
 
 The first muscles that reproducibly show dpr10 expression are m5 and m20, which flank m4 (Figure 7A,B and G). In late st15/early st16 embryos, dpr10 expression becomes more consistent in m5 and m20 and expands to m2 in the dorsal muscle field and several muscles in the ventral muscle field (Figure 7C,D and G). By late st16/early st17, most muscles, including m4, express dpr10 (Figure 7E–G). The first MNISN-1s filopodia in the vicinity of m4 are observed in late st16/early st17 embryos, and the first discernable 1s boutons on m4 are found in early first instar larvae (Figure 3). Thus, dpr10 expression in m4 coincides with MNISN-1s innervation. The earlier expression of dpr10 in muscles adjacent to m4 (m5 and m20) might mean that these muscles provide cues for formation or stabilization of an MNISN-1s axon branch in this area. Innervation of m20 is also lost in DIP-α mutants. m5, however, lacks 1s innervation even in wild-type. Interestingly, m18 and m11 do not express dpr10 even in st17 embryos (Figure 7G). These muscles are among those that are not innervated by either of the DIP-α positive motor neurons (Figure 4C). Some of these muscles do receive 1s innervation from the third 1s motor neuron, which does not express DIP-α.
 
@@ -120,7 +168,7 @@ The first muscles that reproducibly show dpr10 expression are m5 and m20, which 
 
 In this paper, we show that interactions between DIP-α and its in vitro binding partner, Dpr10, are essential for innervation of a specific subset of larval muscle fibers by branches of the MNISN-1s motor axon. DIP-α is expressed by only two motor neurons, and the protein localizes to the NMJs of those neurons (Figure 1, Figure 1—figure supplement 1). MNISN-1s innervates most of the muscles in the dorsal muscle field, but only the proximal (most ventral) branches of its axon are affected in DIP-α mutants. The branch innervating m4, m4-1s, is absent in 100% of hemisegments in mutants. DIP-α is required in the MNISN-1s neuron to direct innervation of m4 (Figure 2). Examination of the MNISN-1s axon during embryonic development shows that its filopodia explore the surface of m4 and surrounding muscles in a normal manner in DIP-α mutants, but a stable m4 NMJ never forms (Figure 3). Innervation of muscles near m4 is also reduced in DIP-α mutants, while innervation of more dorsal muscles is increased (Figure 4). One of DIP-α’s two binding partners, Dpr10, is expressed at high levels in muscles and can localize to the postsynaptic side of NMJs (Figure 5), and the m4-1s branch is also absent in dpr10 mutants. RNAi knockdown experiments show that Dpr10 is required in muscles (Figure 6). By examination of the temporal and spatial expression patterns of dpr10 in embryos, we found that its earliest expression is on muscles flanking m4, some of which also lack 1s NMJs in DIP-α mutants (Figure 7). This suggests that recognition of Dpr10 on these muscles by DIP-α on the MNISN-1s growth cone is a cue for branch formation or stabilization.
 
-## A model for control of muscle innervation by interactions between DIP-α and Dpr10
+### A model for control of muscle innervation by interactions between DIP-α and Dpr10
 
 A number of mutant screens for alterations in the morphologies and patterning of NMJs in the larval neuromuscular system have been performed (Aberle et al., 2002; Kraut et al., 2001; Valakh et al., 2012). LOF mutations in a few genes, including those encoding the cell-surface IgSF domain protein Sidestep and its binding partner, Beaten Path, cause motor axons to fail to arborize normally onto any muscle fibers, resulting in large-scale alterations in innervation patterns (Kinold et al., 2018; Pipes et al., 2001; Siebert et al., 2009; Sink et al., 2001). However, there are no prior reports (to our knowledge) of LOF mutations in single genes that cause high-penetrance changes in targeting of single larval motor axons to individual, or groups of, muscle fibers.
 
@@ -142,7 +190,7 @@ Knockdown or overexpression of DIP-α or Dpr10 in neurons or in muscles does not
 
 Using these results, we have constructed a model that can explain how interactions between DIP-α and Dpr10 specify targeting of MNISN-1s axon branches to m4 and the other muscles in its vicinity. DIP-α begins to be expressed in MNISN-1s (RP2) in st14 embryos, during the period of motor axon guidance. The MNISN-1s axon reaches its terminus in the vicinity of m1/m2 at st16, before it forms interstitial branches onto m20, where Dpr10 is already expressed. After the m20-1s branch forms, Dpr10 appears on m4, and binding of DIP-α on MNISN-1s to Dpr10 on m4 and surrounding muscles results in the formation of stable branches that differentiate into NMJs. During this process, DIP-α on MNISN-1s might switch from interacting with Dpr10 on fasciculated axons within the ISN bundle to binding to Dpr10 on muscles.
 
-## Functions of the Dpr-DIP network in formation of synaptic circuits
+### Functions of the Dpr-DIP network in formation of synaptic circuits
 
 The Dpr-ome binding network was defined by a global in vitro ‘interactome’ screen for binding interactions among all Drosophila cell-surface and secreted proteins containing three common extracellular domain types: IgSF, Fibronectin Type III, and LRR. There are 21 Dpr proteins, each containing two IgSF domains, 11 DIP proteins, each containing three IgSF domains, and an LRR protein called cDIP that binds to many Dprs and DIPs (Carrillo et al., 2015; Cosmanescu et al., 2018; Özkan et al., 2013).
 
@@ -158,13 +206,261 @@ The functions of DIP-α and Dpr10 appear to be conserved between the larval neur
 
 ## Materials and methods
 
-## Transgenic and T2A-Gal4 lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>w1118</td>
+      <td></td>
+      <td>Bloomington Drosophila Stock center (BDSC)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Mef2-GAL4</td>
+      <td>PMID: 9671578</td>
+      <td></td>
+      <td>Gift of Hugo Bellen</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>DIP-α-T2A-GAL4</td>
+      <td>PMID: 21985007</td>
+      <td></td>
+      <td>Gift of Hugo Bellen</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>DIP-α-EGFP-DIP-α</td>
+      <td>PMID: 26687361</td>
+      <td></td>
+      <td>Gift of Hugo Bellen</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>DIP-α1-178</td>
+      <td>PMID: 30467079</td>
+      <td></td>
+      <td>Gift of Lawrence Zipursky</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>dpr1014-5</td>
+      <td>PMID: 30467079</td>
+      <td></td>
+      <td>Gift of Lawrence Zipursky</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-DIP-α-Myc</td>
+      <td>PMID: 30467079</td>
+      <td></td>
+      <td>Gift of Lawrence Zipursky</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-Dpr10-V5</td>
+      <td>PMID: 30467079</td>
+      <td></td>
+      <td>Gift of Lawrence Zipursky</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>dpr10-T2A-GAL4</td>
+      <td>PMID: 21985007</td>
+      <td></td>
+      <td>Gift of Hugo Bellen</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>dpr6-T2A-GAL4</td>
+      <td>PMID: 21985007</td>
+      <td></td>
+      <td>Gift of Hugo Bellen</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-2XEGFP</td>
+      <td>PMID: 12324968</td>
+      <td>BDSC #6874</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Elav-GAL4</td>
+      <td>PMID: 22319582</td>
+      <td>BDSC #8765</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>24B-GAL4</td>
+      <td>PMID: 8223268</td>
+      <td>BDSC #1767</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>MHC-GeneSwitch</td>
+      <td>PMID: 11675495</td>
+      <td></td>
+      <td>Gift of Haig Keshishian</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>EveRN2-GAL4</td>
+      <td>PMID: 14624243</td>
+      <td>BDSC #7470</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-dpr10-RNAi</td>
+      <td>PMID: 17625558</td>
+      <td>Vienna Drosophila Resource Center #103511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>UAS-DIP-α-RNAi</td>
+      <td>PMID: 26320097</td>
+      <td>BDSC #38965</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>Df(3L)BSC673</td>
+      <td></td>
+      <td>BDSC #26525</td>
+      <td>Deficiency covering dpr6 and dpr10</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-HRP-TRITC</td>
+      <td>Jackson Immunological Research</td>
+      <td>#123-025-021</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-HRP-Alexa405</td>
+      <td>Jackson Immunological Research</td>
+      <td>#123-475-021</td>
+      <td>1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Dlg</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>#4F3</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-Fas2</td>
+      <td>Developmental Studies Hybridoma Bank</td>
+      <td>#1D4</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-DIP-α</td>
+      <td>PMID: 30467079</td>
+      <td>Gift of Lawrence Zipursky</td>
+      <td>1:20</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse anti-V5</td>
+      <td>ThermoFisher</td>
+      <td>#R960-25</td>
+      <td>1:400</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-GFP</td>
+      <td>ThermoFisher</td>
+      <td>#A11122</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Dlg</td>
+      <td>PMID: 9354326</td>
+      <td>Gift of Vivian Budnik</td>
+      <td>1:40,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-Myc</td>
+      <td>Cell Signaling Technology</td>
+      <td>#71D10</td>
+      <td>1:200</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse-Alexa488</td>
+      <td>ThermoFisher</td>
+      <td>#A11029</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Mouse-Alexa568</td>
+      <td>ThermoFisher</td>
+      <td>#A11031</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit-Alexa488</td>
+      <td>ThermoFisher</td>
+      <td>#A11008</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-Rabbit-Alexa568</td>
+      <td>ThermoFisher</td>
+      <td>#A11036</td>
+      <td>1:500</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phalloidin-Alexa647</td>
+      <td>ThermoFisher</td>
+      <td>#A22287</td>
+      <td>1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit anti-alkaline phosphatase</td>
+      <td>Abcam</td>
+      <td>#ab16695</td>
+      <td>1:100</td>
+    </tr>
+  </tbody>
+</table>
+
+### Transgenic and T2A-Gal4 lines
 
 For construction of UAS-DIP-α-Myc, the Myc sequence (gaacaaaaacttatttctgaagaagatctg) was inserted two amino acids before the end of DIP-α protein sequence, following a GGS linker sequence, and cloned into JFRC28 vector. The final construct was injected into BDSC stock #9744, and inserted into chromosome 3R via PhiC31 mediated integration (Bestgene, Inc.). Plasmid and primer design were carried out using the software Snapgene.
 
 T2A-GAL4 lines were generated as described in (Diao et al., 2015). Briefly, flies carrying the MiMIC insertion were crossed with the flies bearing the triplet donor (T2A-GAL4 for all three phases of DNA). The F1 males from this progeny carrying both components were then crossed to females carrying germline transgenic sources of Cre and ΦC31. The F2 males with all four components were crossed to a UAS-2XEGFP reporter line and progeny larvae were screened for T2A-GAL4 transformants. The GFP+ larvae were confirmed by PCR.
 
-## Dissection and immunocytochemistry
+### Dissection and immunocytochemistry
 
 Embryonic dissections were performed as in (Lee et al., 2009). Egg laying chambers were setup with adult flies and grape juice plates (3% agar, 1.3% sucrose, 25% grape juice in water) and left in the dark at room temperature to lay eggs for 2 hr. Embryos were incubated overnight at 18°C, and then raised to 29°C for 2 hr to maximize GFP expression. Under a Zeiss V20 stereoscope with fluorescence, embryos were transferred to a microscope slide with double sided tape and staged using the autofluorescence and shape of the gut (Bownes, 1975; Hartenstein et al., 1987). Embryos were dechorionated on the double sided tape with a sharpened metal probe and transferred to a small agar slab. A dissection chamber was then prepared on Superfrost Plus slides (ThermoFisher #22-037-246) by outlining a rectangle with a PAP pen (Research Products International, #195506) to create a dissecting area. Embryos were transferred to a small piece of double sided tape placed into the dissection area, and then covered with phosphate buffered saline (PBS) (0.01M Sodium Phosphate, 150 mM Sodium Chloride). Using a 0.1 mm electrolytically sharpened tungsten wire held in a pin vice, the embryos were carefully opened along their dorsal surface, and removed from the vitellin membrane. Dissected embryos were then trasferred to the adherent charged slide. When all embryos were dissected, the well was washed once with PBS, and then fixed for 1 hr at room temperature using 4% paraformaldehyde (20% paraformaldehyde solution (Electron Microscopy Sciences) diluted into PBS). After fixation, samples were washed three times, 15 min each, in 0.05% PBST (PBS with 0.05% TritonX100), and then blocked for 1 hr in 5% normal goat serum (5% Goat serum in 0.05% PBST). Slides were incubated in primary antibody solutions overnight at 4°C in a humidified chamber. Samples were then washed three times, 15 min each, with PBST, and incubated for two hours at room temperature with secondary antibodies. After incubation, samples were washed three times, 15 min each, with PBST and mounted in vectashield (Vector Laboratories).
 
@@ -172,7 +468,7 @@ Larval dissections were performed as in (Menon et al., 2015). Wandering third in
 
 For in vivo staining of larvae (Figure 5F,G), we modified a previously described embryo protocol in (Bali et al., 2016; Fox and Zinn, 2005; Lee et al., 2013). Supernatant from S2 cell culture containing the DIP-α-AP5 fusion protein was concentrated 5-fold (Amicon Ultra-4 Filter Unit, 100 kDa cutoff). After larvae were dissected in sylgard dishes, the area surrounding each larva was patted dry with a Kimwipe. The DIP-α-AP5 (75 μl) was applied to each prep and incubated for 1.5 hr at room temperature in a humidified chamber. Following incubation, the standard larval immunocytochemistry protocol (above) was followed.
 
-## Microscopy and analysis
+### Microscopy and analysis
 
 Third instar samples that were quantified for 1s bouton presence or absence were examined using a Zeiss AxioImager M2 and a 40X plan-neofluar 1.3NA objective. Boutons were examined using HRP and scored as 1s or 1b based on Dlg signal, as 1s boutons have a smaller and dimmer Dlg signal than 1b boutons. For DIP-α-GAL4>EGFP studies, 1s boutons were scored based on the presence of GFP although Dlg staining was also present. To count embryonic MNISN-1s terminal swellings, we grouped dorsal muscles into the distal (m1, 2, 9, 10) and proximal (m3, 4, 19, 20) fields and scored bulbous endings that were at least twice the thickness of the neurite shaft. Primary and secondary branches on m2 were scored and the total reported.
 

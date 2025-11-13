@@ -6,8 +6,8 @@
 
 ### Affiliations
 
-1. https://ror.org/04b6nzv94 Channing Division of Network Medicine, Brigham and Women’s Hospital and Harvard Medical School Boston United States
-2. https://ror.org/03vek6s52 Division of Sleep Medicine, Harvard Medical School Boston United States
+1. Channing Division of Network Medicine, Brigham and Women’s Hospital and Harvard Medical School Boston United States ([ROR:04b6nzv94](https://ror.org/04b6nzv94))
+2. Division of Sleep Medicine, Harvard Medical School Boston United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
 
 † Corresponding author
 

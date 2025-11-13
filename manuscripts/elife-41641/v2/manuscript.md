@@ -40,7 +40,7 @@
 
 ## Abstract
 
-10.7554/eLife.41641.001 Although B cells expressing the IFNγR or the IFNγ-inducible transcription factor T-bet promote autoimmunity in Systemic Lupus Erythematosus (SLE)-prone mouse models, the role for IFNγ signaling in human antibody responses is unknown. We show that elevated levels of IFNγ in SLE patients correlate with expansion of the T-bet expressing IgD neg CD27 neg CD11c + CXCR5 neg (DN2) pre-antibody secreting cell (pre-ASC) subset. We demonstrate that naïve B cells form T-bet hi pre-ASCs following stimulation with either Th1 cells or with IFNγ, IL-2, anti-Ig and TLR7/8 ligand and that IL-21 dependent ASC formation is significantly enhanced by IFNγ or IFNγ-producing T cells. IFNγ promotes ASC development by synergizing with IL-2 and TLR7/8 ligands to induce genome-wide epigenetic reprogramming of B cells, which results in increased chromatin accessibility surrounding IRF4 and BLIMP1 binding motifs and epigenetic remodeling of IL21R and PRDM1 loci. Finally, we show that IFNγ signals poise B cells to differentiate by increasing their responsiveness to IL-21.
+Although B cells expressing the IFNγR or the IFNγ-inducible transcription factor T-bet promote autoimmunity in Systemic Lupus Erythematosus (SLE)-prone mouse models, the role for IFNγ signaling in human antibody responses is unknown. We show that elevated levels of IFNγ in SLE patients correlate with expansion of the T-bet expressing IgDnegCD27negCD11c+CXCR5neg (DN2) pre-antibody secreting cell (pre-ASC) subset. We demonstrate that naïve B cells form T-bethi pre-ASCs following stimulation with either Th1 cells or with IFNγ, IL-2, anti-Ig and TLR7/8 ligand and that IL-21 dependent ASC formation is significantly enhanced by IFNγ or IFNγ-producing T cells. IFNγ promotes ASC development by synergizing with IL-2 and TLR7/8 ligands to induce genome-wide epigenetic reprogramming of B cells, which results in increased chromatin accessibility surrounding IRF4 and BLIMP1 binding motifs and epigenetic remodeling of IL21R and PRDM1 loci. Finally, we show that IFNγ signals poise B cells to differentiate by increasing their responsiveness to IL-21.
 
 ## Introduction
 
@@ -56,25 +56,69 @@ Since T-bethi DN2 pre-ASCs produce autoAbs and correlate with disease severity i
 
 ## Results
 
-## Expansion of T-bethi DN2 cells correlates with systemic IFNγ levels in SLE patients
+### Expansion of T-bethi DN2 cells correlates with systemic IFNγ levels in SLE patients
 
 Recent studies from our group (Stone et al., 2019) revealed that differentiation of mouse B cells activated in the presence of IFNγ-producing T cells was dependent on B cell intrinsic expression of the IFNγR and the IFNγ-induced transcription factor (TF), T-bet. This result fit well with data from our group (Figure 1—figure supplement 1) and others (Rubtsova et al., 2017; Liu et al., 2017) showing that B cell intrinsic expression of T-bet is required for the development of autoAb-mediated disease in SLE mouse models and suggested that IFNγ signaling in B cells might also regulate development of ASCs from autoreactive B cells. Consistent with this possibility, we and others (Wang et al., 2018; Jenks et al., 2018) identified a population of circulating T-bet-expressing B cells in SLE patients, referred to as DN2 cells (Jenks et al., 2018), that express high levels of T-bet and exhibit phenotypic and functional properties of pre-ASCs. Based on these data, we postulated that the T-bethi DN2 pre-ASC population that is expanded in a subset of SLE patients likely arises in response to IFNγ-dependent signals. To test this hypothesis, we first assessed whether expansion of the T-bethi DN2 pre-ASC subset in SLE patients correlated with IFNγ levels in these patients. Consistent with our prior studies using a different cohort of SLE patients (Jenks et al., 2018), we observed that a subset of our SLE patients presented with an expanded population of circulating IgDnegCD27neg (double negative, BDN cells) (Figure 1a–b) that could be subdivided into CD11c+CXCR5neg DN2 cells and CD11cnegCXCR5+ DN1 cells (Figure 1c). The DN2 cells, but not the DN1 cells, uniformly expressed high levels of T-bet (Figure 1d) and also expressed high levels of CD19 and FcRL5 (Figure 1—figure supplement 2a). In agreement with our prior studies, the T-bethi BDN cells (gated as in Figure 1—figure supplement 2b) expressed intermediate levels of the ASC-promoting TFs, Blimp1 and IRF4 (Figure 1e–f,) and their presence correlated with anti-Smith autoAb titers in the patients (Figure 1g). Next, we measured cytokines in plasma from the SLE patients (Figure 1h-k). Consistent with our hypothesis, we observed a significant positive correlation between IFNγ, as well as the IFNγ-induced cytokines CXCL10, IL-6 and TNFα, and the frequency of T-bethi DN2 cells in these individuals (Figure 1h). These data therefore indicated that the circulating T-bethi BDN cells present in our SLE patient cohort were phenotypically identical to the previously described (Jenks et al., 2018) DN2 pre-ASC subset and that this pre-ASC population is most expanded in SLE patients with elevated amounts of autoAbs, IFNγ and IFNγ-driven inflammatory cytokines.
 
-## IFNγ-producing Th1 cells promote development of T-bethi BDN cells and ASCs
+![Figure 1.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig1-v2.jpg)
+
+**Figure 1.:** (a–f) Characterization of T-bethi B cells in peripheral blood B cell subsets from healthy donor (HD) and SLE patients. Gating strategy to identify CD38hiCD27+ ASCs, B cells (non-ASCs) (a, left) and double negative IgDnegCD27neg (BDN) cells (a, right) from the peripheral blood of HD and SLE patients. Frequency of BDN cells (b) within the total B cells. Subdivision of the SLE BDN population into CXCR5+CD11clo DN1 and T-bethi CXCR5negCD11chi DN2 populations (c) with T-bet expression levels (d) in each subset shown as a histogram. Expression of BLIMP1 (e) and IRF4 (f) by ASCs, T-bethi BDN cells and T-betlo B cells from SLE patients. Representative flow plots and mean fluorescence intensity (MFI) expression of BLIMP1 and IRF4 in each population are shown. (g) Correlation analysis between frequency of circulating T-bethi BDN cells and anti-Smith autoAb titers in SLE patients. (h–k) Correlation (h) between plasma cytokine levels and frequency of T-bethi BDN cells in SLE patient peripheral blood. Plasma concentration of IFNγ (i), CXCL10 (j) and TNFα (k) in HD (blue symbols) and SLE patients (red symbols). See Figure 1—figure supplement 1 for analysis of T-bet expressing B cells in the Yaa.Fcgr2b-/- SLE mouse model. See Figure 1—figure supplement 2a for additional phenotypic characterization of T-bethi B cells in SLE patients. See Figure 1—figure supplement 2b for gating strategy to identify T-bethi BDN cells (DN2 cells) in SLE patients. Individual human subjects in each analysis are represented by a symbol. Horizontal black lines represent the median (b,i–k) within the group. Data shown from n = 20 HD and 40 SLE patients (b), representative flow plots from 16 SLE patients (c–d), 3 SLE patients (e–f), 16–18 SLE patients (g–h) or 5 HD and 26 SLE patients (i–k). Statistical analyses were performed using a non-parametric Mann-Whitney test (b,i–k), a one-way paired T test (e–f) or Spearman Correlation test (g–h). Correlation P and r values listed in the figure. P values *≤0.05, **<0.01, ***<0.001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Cartoon (a) depicting generation of SLE-prone bone marrow (BM) Yaa.Fcgr2b-/- chimeras lacking T-bet in all B lineage cells or in 20% of all hematopoietic cells. To generate Yaa.Fcgr2b-/- mice with selective deletion of T-bet in B cells (B-YFT chimeras), we reconstituted lethally irradiated B cell deficient μMT mice with a mixture of 80% B cell deficient Yaa.Fcgr2b-/-.μMT BM +20% Yaa.Fcgr2b-/-.Tbx21-/- BM. In these chimeras all hematopoietic cells, including B cells, carry the autoimmune loci (Yaa.Fcgr2b-/-). Furthermore, all B cells (100%) and ~20% of cells in all other hematopoietic cells in these animals will be T-bet deficient (Tbx21-/-). For controls (20%Control chimeras), we reconstituted irradiated μMT hosts with 80% Yaa.Fcgr2b-/- BM +20% Yaa.Fcgr2b-/-.Tbx21-/- BM. In these chimeras all hematopoietic cells, including B cells, will carry the autoimmune loci (Yaa.Fcgr2b-/-). In addition, 20% of all hematopoietic cells, including B cells, will be T-bet deficient. Flow cytometry analysis (b) showing T-bet expression by B cells isolated from the cervical lymph node (cLN) of a representative B-YFT and 20%Control mouse at 35 weeks post-BM reconstitution. (c) Representative images and quantification of anti-nuclear antibodies (ANAs) in serum from chimeras at 24 weeks post-transplant. (d) Kidney function reported as the urinary albumin:creatinine ratio (UACR) in individual chimeras at 24 weeks post-transplant. (e) Mantel-Cox survival curve of chimeras up to 35 weeks post-transplant. Representative data shown as mean ±SD from 1 of 2 independent experiments with 7–10 mice per group. Statistical analyses were performed using a Student’s t test (c–d) and Mantel-Cox survival test (e).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Expression of CD19, CD11c, FcRL5, CD23 and CXCR5 by T-bethi B cells from a representative SLE patient. (b) Gating strategy to identify CD38hiCD27+ ASCs, T-bethi BDN cells and T-betlo B cells in a representative SLE patient.
+
+### IFNγ-producing Th1 cells promote development of T-bethi BDN cells and ASCs
 
 Since IFNγ can induce T-bet expression in B cells (Stone et al., 2019) and the T-bethi DN2 pre-ASCs are expanded in SLE patients with higher systemic levels of IFNγ, we predicted that the IFNγ might regulate the formation of T-bethi pre-ASCs. To test this, we developed an in vitro B cell/T cell mixed lymphocyte reaction (MLR) paired co-culture system (Figure 2a) containing BN cells (purified as described in Figure 2—figure supplement 1a) purified from the peripheral blood or tonsil of one HD and highly polarized human Th1 and Th2 effectors (Zhu et al., 2010), which were generated in vitro using purified naïve peripheral blood T cells isolated from a second unrelated HD. The Th1 cells expressed T-bet and produced IFNγ and IL-8 following restimulation while Th2 cells expressed GATA-3 and produced elevated levels of IL-4, IL-5, and IL-13 (Figure 2—figure supplement 1b–c). Since neither the Th1 nor Th2 cells produced IL-21 following restimulation (Figure 2—figure supplement 1d), we added IL-21 to the co-cultures to ensure optimal BN activation (Ettinger et al., 2008; Tangye, 2015) and included IL-2 to enhance the survival of the T effectors (Rochman et al., 2009). After 6 days in culture, approximately 50% of the HD B cells activated in the presence of IFNγ-producing Th1 cells (Be1 cells) expressed T-bet while very few (<3%) of the HD B cells activated with IL-4 producing Th2 cells (Be2 cells) upregulated T-bet (Figure 2b). Approximately half of the T-bethi B cells present in the Be1 cultures downregulated IgD and these cells were CD19hiCD27negCD11c+FcRL5+CD23neg (Figure 2c). Therefore, activation of BN cells with Th1 cells and IL-21 +IL-2 resulted in the formation of a T-bethi IgDnegCD27neg BDN population that was phenotypically similar to the SLE patient-derived T-bethi DN2 cells.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig2-v2.jpg)
+
+**Figure 2.:** Cartoon (a) depicting day 6 paired co-cultures containing Th1 (Be1 co-cultures) or Th2 (Be2 co-cultures) effectors generated from the same HD, BN cells from a second allogeneic HD and exogenous IL-21 and IL-2. Flow cytometric analysis showing T-bet expression (b) on gated HD B cells (non-ASCs) from Be1 and Be2 co-cultures. Phenotyping (c) of day 6 B cell-gated Be1 cells showing T-bet expression in combination with other surface markers. (d–g) ASC development in HD day 6 paired Be1 and Be2 co-cultures showing representative flow plots (d) and frequencies (e) of CD38hiCD27+ ASCs in CD19+/lo-gated B lineage cells. Frequencies of IgM+ (f) or IgG+ (g) ASCs in day 6 paired Be1 and Be2 co-cultures. See Figure 2—figure supplement 1 for BN isolation strategy and characterization of polarized Th1 and Th2 effectors. See Figure 2—figure supplement 2 for gating strategy to identify IgG+ and IgM+ ASCs. See Figure 2—figure supplement 3 for proliferation analysis of B cells in paired day 6 HD Be1 and Be2 co-cultures. Analyses in (b–c) are from representative co-cultures (n > 30). Experiments (e–g) performed on 15 (e), 8 (f) or 6 (g) independent paired Be1 and Be2 co-cultures. Statistical analyses were performed using a non-parametric Wilcoxon paired t test (e) or paired Student’s t test (f–g). P values *<0.05, **<0.01, ****<0.0001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Purification strategy for BN cells (red gate) from tonsil and blood used in cultures. (b–d) Characterization of in vitro polarized Th1 and Th2 cells showing T-bet and GATA-3 expression (b) in Th1 (solid line) and Th2 (dotted line) cells restimulated for 6 hr with plate-bound anti-CD3 and anti-CD28. Cytokine levels (c) in supernatants from restimulated (ST) or non-restimulated (nil) Th1 (black circles) and Th2 cells (open circles) from 5 independent experiments with the gray bars representing the mean of all experiments. Dotted line indicates maximal measurable levels of the cytokine in the assay. IL-21 production (d) by restimulated Th1 and Th2 cells. Statistical analyses (c) were performed using one-way ANOVA with Tukey’s multiple comparison test. P values *<0.05, **<0.01, ***, <0.001 and ****<0.0001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Gating strategy to identify unswitched and isotype switched ASCs in Be1 and Be2 co-cultures. Representative flow plots showing intracellular IgM, IgA and IgG staining (b) on ASC-gated cells (from panel a) in paired Be1 and Be2 co-cultures. Data are reported as the frequency of intracellular IgM, IgG or IgA expressing CD19loCD38hi ASCs within either the total CD19+/lo B lineage compartment (black font) or within the total ASCs (bold blue font).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Co-cultures generated with purified Cell Trace Violet (CTV)-labeled HD BN cells and allogeneic Th1 or Th2 cells + IL-21 and IL-2. B lineage cells in day 6 gated as CD19+/lo (includes both ASCs and non-ASC B cells). Data reported as the proportion of total CD19+/lo B lineage cells (a) in each cell division or the fraction of cells within each cell division that are identified as CD38hiCD27+ ASCs (b–c). Data are representative of >5 experiments using independent co-cultures.
+
 In addition to observing the T-bethi BDN pre-ASC like population in the Be1 co-cultures, we also identified CD38hiCD27+ ASCs in both the Be1 and Be2 co-cultures (Figure 2d). However, we always found more ASCs in the Be1 co-cultures, even across multiple experiments using BN and T effectors from different HD pairs (Figure 2e). To address whether the increased ASC formation observed in the Be1 co-cultures was limited to isotype switched or unswitched B cells, we measured the frequency of IgM and IgG-producing (gated as in Figure 2—figure supplement 2) ASCs across multiple paired Be1 and Be2 co-cultures. Again, we found that ASCs, regardless of isotype, were greatly enriched in the Be1 co-cultures (Figure 2f–g). This increase in ASCs in the Be1 co-cultures was not due to intrinsic differences in the proliferative rates of the cells in each culture but rather that a higher proportion of the Be1 cells at each cell division committed to the ASC lineage (Figure 2—figure supplement 3). These data indicated that Be1 co-cultures efficiently promoted the formation of T-bethi BDN pre-ASC-like cells and ASCs.
 
-## T-bethi BDN cells induced with Th1 cells and IL-21 are pre-ASCs
+### T-bethi BDN cells induced with Th1 cells and IL-21 are pre-ASCs
 
 Given the phenotypic similarities between the in vitro generated T-bethi BDN cells and SLE patient T-bethi DN2 cells and the fact that the in vitro cultures containing T-bethi BDN cells also efficiently formed ASCs, we predicted that the in vitro generated Tbethi BDN cells were likely to be pre-ASCs. To test this, we first asked whether the in vitro generated T-bethi BDN cells were transcriptionally related to SLE patient-derived T-bethi DN2 pre-ASCs or to ASCs from HD. We therefore sort-purified IgDnegCD27neg BDN cells (Figure 3a) from 3 independent paired day 6 Be1 and Be2 co-cultures and performed RNA-seq analysis (Supplementary file 1). We identified 427 differentially expressed genes (DEGs) between the BDN cells from the Be1 and Be2 co-cultures (Figure 3b). Consistent with our data showing that T-bet was selectively upregulated in the B cells from Be1 co-cultures, we observed significantly higher levels of TBX21 mRNA in the in vitro induced BDN Be1 cells compared to BDN Be2 cells (Figure 3c). Next, we used Gene Set Enrichment Analysis (GSEA) to compare the transcriptomes of the in vitro generated Be1 and Be2 BDN cells to the T-bethi DN2 population isolated from SLE patients (Jenks et al., 2018, Supplementary file 2) and to curated ASC transcriptome datasets (Abbas et al., 2005; Tarte et al., 2003). Consistent with our phenotyping data, the transcriptome of the T-bet expressing BDN Be1 cell subset was highly enriched relative to the BDN Be2 cells for genes that are specifically upregulated in the SLE-derived T-bethi DN2 subset (Figure 3d). Moreover, the transcriptome of the in vitro-induced BDN Be1 population was significantly enriched in expression of genes that are upregulated in ASCs compared to BN cells (Figure 3e), mature B cells (Figure 3f) and switched memory B cells (Figure 3g). In addition, genes that are direct targets of IRF4 and upregulated in ASCs (Shaffer et al., 2008) were significantly enriched in the in vitro generated T-bethi Be1 BDN cells relative to the Be2 BDN cells (Figure 3h). Consistent with this finding, we observed that the Be1 T-bethi BDN cells had undergone multiple rounds of cell division (Figure 3—figure supplement 1) and expressed intermediate levels of IRF4 (Figure 3i–j), when compared to the CD38hiCD27+ ASCs and the IgD+CD27neg B cells present in the Be1 cultures.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig3-v2.jpg)
+
+**Figure 3.:** (a–h) Transcriptome analysis of in vitro generated IgDnegCD27neg BDN cells from Be1 and Be2 co-cultures. RNA-seq analysis performed on IgDnegCD27neg BDN cells (gating in panel a) that were sort-purified from day 6 HD Be1 and Be2 co-cultures. Heat map (b), showing 427 differentially expressed genes (DEGs) based on FDR < 0.05. T-bet mRNA expression levels (c) in BDN cells from day 6 Be1 and Be2 co-cultures. Gene Set Enrichment Analysis (GSEA, panels d-h) comparing transcriptome profile of in vitro generated BDN cells from Be1 and Be2 co-cultures with published DEGs identified in different B cell subsets. Data are reported as Enrichment Score (ES) plotted against the ranked BDN Be1 and Be2 gene list (n = 11598). DEG lists used for GSEA include: DEGs that are upregulated in sort-purified SLE patient-derived T-bethi DN2 cells (CD19hiIgDnegCD27negCXCR5negIgG+) compared to other SLE patient-derived mature B cell subsets (d, Jenks et al., 2018); DEGs that are upregulated in human plasma cells (ASCs) relative to: BN cells (e, Abbas et al., 2005), total B cells (f, Tarte et al., 2003) or switched memory (BSW) B cells (g, Abbas et al., 2005); and IRF4-dependent upregulated target genes in ASCs (h, Shaffer et al., 2008). (i–j) IgDnegCD27neg T-bethi BDN cells express intermediate levels of IRF4. Gating strategy (i) to identify CD38hiCD27+ ASCs, IgD+CD27neg B cells and IgDnegCD27neg BDN cells in day 6 Be1 co-cultures generated from HD BN cells. Expression of T-bet and IRF4 (j) by ASCs (blue), IgD+CD27neg B cells (green) and IgDnegCD27neg BDN cells (red) from day 6 Be1 co-cultures. (k–l) BDN Be1 cells rapidly differentiate into ASCs. BDN cells from day 6 HD Be1 and Be2 cultures were sort-purified, Cell-Trace Violet (CTV) labeled and incubated 18 hr in conditioned medium. Enumeration of ASCs (CD19loCD38hiCD27+) in the undivided cells (D0, ) and the cells that divided one time (D1, ). Representative flow plots (k) showing the frequency of cells in D0 or D1 in each culture and the frequency of CD19loCD38hiCD27+ ASCs present in the D0 or D1 fraction. Panel (l) reports frequency of ASCs within the cultures from 3 independent experiments. See Supplementary file 1 for BDN Be1 and Be2 RNA-seq data set and Supplementary file 2 for SLE patient-derived T-bethi BDN DEG list. See Figure 3—figure supplement 1 for proliferation profile of the T-bethiIRF4int BDN subset in Be1 cells. RNA-seq performed with 3 samples/subset derived from 3 independent paired co-culture experiments. Statistical analysis performed with unpaired (c) or paired (l) Students t test. Nominal P values (d–h) for GSEA are shown. P values *<0.05, **<0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Proliferation profile of B cell subsets from day 6 co-cultures generated with purified CTV-labeled HD BN cells and allogeneic Th1 or Th2 cells + IL-21 and IL-2. T-betloIRF4neg (Pop-A, IgD+CD27neg, BN cells), T-bethiIRF4lo/int (Pop-B, IgDnegCD27neg BDN cells), T-bethiIRF4int/hi (Pop-C, IgDnegCD27neg BDN cells) and T-betloIRF4hi (Pop-D, IgDnegCD27hi ASCs) subsets are shown.
+
 To determine whether the Be1 T-bethi BDN cells were functional pre-ASCs, we sort-purified the IgDnegCD27neg BDN cells from day 6 Be1 and Be2 co-cultures, labeled the sorted BDN cells with Cell Trace Violet (CTV), incubated the cells for 18 hr in conditioned media and enumerated CD38hiCD27+ ASCs in the cultures. As expected, the sorted Be1 and Be2 BDN cells were activated, with 47–65% of the cells undergoing one cell division within 18 hr (Figure 3k). CD38hiCD27+ ASCs were only detected in proliferating cells (Figure 3k), indicating that the sorted BDN cells include pre-ASCs that are poised to differentiate within one round of replication. Although ASCs were detected in the cultures containing either Be1 or Be2 BDN cells, significantly more ASCs were found in cultures containing the sorted T-bet expressing Be1 BDN cells (Figure 3l). Thus, activation of BN cells with Th1 cells and IL-21 +IL-2 gave rise to a population of T-bethi BDN cells that were phenotypically, transcriptionally and functionally similar to the T-bethi DN2 pre-ASCs that are expanded in SLE patients (Jenks et al., 2018).
 
-## IFNγ is required for in vitro development of T-bethi BDN pre-ASCs and ASCs from BN cells
+### IFNγ is required for in vitro development of T-bethi BDN pre-ASCs and ASCs from BN cells
 
 Since the in vitro generated Th1-induced T-bethi BDN subset and the SLE patient derived T-bethi DN2 pre-ASC population (Jenks et al., 2018) were quite similar, we asked whether we could use our in vitro co-culture system to define the minimal signals required to generate this potentially pathogenic population of T-bethi pre-ASCs. Using Ingenuity Pathway Analysis (IPA) to interrogate the Be1 and Be2 BDN cell RNA-seq data-sets, we identified predicted upstream regulators of the T-bethi BDN pre-ASC transcriptional network. These included antigen receptor signaling molecules, like Btk, cytokines, like IFNα, IFNγ, IL-2 and IL-21, and cytokine-induced TFs, like STAT1 and STAT3 (Figure 4a). In addition, both TLR7 and TLR9 were predicted as upstream regulators of the T-bethi BDN Be1 cells (Figure 4a). This was unexpected, given that we did not add exogenous TLR ligands to the co-cultures, however, endogenous TLR7 and TLR9 ligands are known to be released by dying cells in vitro (Sindhava et al., 2017).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig4-v2.jpg)
+
+**Figure 4.:** (a) Ingenuity Pathway Analysis (IPA) to identify predicted upstream direct and indirect regulators of the HD BDN Be1 transcriptome. IPA performed using the 427 DEG (BDN Be1 over BDN Be2; FDR < 0.05) identified in the RNA-seq analysis described in Figure 3b. The predicted activation state (z-score of BDN Be1 over BDN Be2) of each regulator/signaling pathway is shown as bar color (orange, activated; blue, inhibited) with predicted upstream regulators sorted in order of significance (overlap P value). Regulators with an overlap P-value<0.00001 are shown. (b–d) IPA-identified stimuli induce development of T-bethiIRF4int BDN pre-ASC-like cells from HD BN cells. Cartoon (b) depicting in vitro stimulation conditions to activate purified HD BN cells with cytokines (IL-2, BAFF, IL-21, IFNγ), anti-Ig and R848 for 6 days. Phenotypic characterization of day 6 activated cells showing expression of IRF4 and T-bet (c) and other markers (d) on the IgDnegCD27neg BDN subset. (e–h) Cartoon (e) depicting HD BN cells activated with anti-Ig +cytokine cocktail (IFNγ, IL-2, IL-21, BAFF) and R848 (ALL) or activated with individual stimuli (as indicated) removed from the cultures. Representative flow plots showing T-bet and IRF4 expression (f–g) by day 3 B cells in each culture. Enumeration of CD38hiCD27+ ASCs (h) in day 6 ‘ALL’ cultures. (i–j) Transient BCR activation is required for ASC development. Cartoon (i) depicting activation of HD BN cells for 3 days with R848, cytokines (IFNγ, IL-2, IL-21, BAFF) ±anti-Ig (Step 1). Cells were then washed and recultured for an additional 3 days with the same stimuli ± anti-Ig (Step 2). Enumeration of CD38hiCD27+ ASCs (j) on day 6 in cultures that were not exposed to anti-Ig during Steps 1 and 2 (-,-); were exposed to anti-Ig throughout Steps 1 and 2 (+,+); were exposed to anti-Ig only in Step 1 (+,-); or were exposed to anti-Ig only in Step 2 (-,+). (k–l) IFNγ, R848 and IL-21 are required for ASC development. Cartoon (k) showing HD BN cells activated with anti-Ig + cytokine cocktail (IFNγ, IL-2, IL-21, BAFF) and R848 for 3 days (Step 1) and then cultured for an additional 3 days (Step 2) with cytokine cocktail and R848. Alternatively, individual stimuli (as indicated) were excluded from the cultures for all 6 days. Enumeration of day 6 CD38hiCD27+ ASCs (l). See Figure 4—figure supplement 1 for % ASCs and number of total cells recovered in cultures lacking individual stimuli. RNA-seq IPA analysis was performed on n = 3 samples/subset derived from 3 independent paired co-culture experiments. Data in (c–l) are representative of ≥3 experiments. The recovery of ASCs in (j, l) are shown as the mean ±SD of cultures containing purified BN cells from 3 independent healthy donors. Statistical analyses (j, l) were performed using one-way ANOVA with Tukey’s multiple comparison test. P values *<0.05, **<0.01.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** HD BN cells were activated as described in Figure 4 and analyzed on day 6. Data shown include representative flow panels depicting % CD38hiCD27+ ASCs recovered (a) quantitation of % ASCs recovered across multiple cultures (b) and total cells recovered in the cultures (c). The frequency of ASCs (b) and cell recovery (c) are shown as the mean ±SD of cultures containing purified BN cells from 3 independent healthy donors. Statistical analyses were performed using one-way ANOVA with Tukey’s multiple comparison test. P values *<0.05, **<0.01, ***<0.001, ****<0.0001. The number of total ASCs recovered is shown in Figure 4l.
 
 Next, we addressed whether stimulation of BN cells with the IPA-predicted activators of the T-bethi BDN transcriptional network was sufficient to induce the formation of the T-bethi BDN pre-ASC population. We therefore stimulated HD BN cells with anti-Ig, cytokines (IFNγ, IL-2, IL-21 and BAFF) and the TLR7/8 ligand, R848 (Figure 4b) and evaluated the B cells on day 6. We found that >95% of the BN cells activated with these defined stimuli resembled SLE patient T-bethi DN2 cells (Jenks et al., 2018) as the in vitro activated cells were IgDnegCD27neg T-bethiIRF4int, expressed the DN2 markers, CD11c and FcRL5, and were losing expression of CD21 and CXCR5 (Figure 4c–d). To address which signals were critical for the in vitro development of T-bethi BDN cells we set up ‘all minus one cultures’ by activating BN cells for 3 days with or without individual stimuli (Figure 4e). As expected, when HD BN cells were activated for 3 days in the presence of anti-Ig and all cytokines + R848 (ALL condition), essentially all of the cells upregulated T-bet and IRF4 (Figure 4f–g). Similar results were observed when the BN cells were activated for 3 days without anti-Ig (Figure 4f) or without R848, IL-21, BAFF or IL-2 (Figure 4g). By contrast, when the cells were activated without IFNγ, more than 80% of the cells were T-betneg/lo (Figure 4g). While this wasn’t particularly surprising, given that T-bet is IFNγ-inducible (Stone et al., 2019), the cells also failed to upregulate IRF4 (Figure 4g), indicating that IFNγ signals are obligate for the in vitro generation of the T-bethiIRF4int BDN pre-ASC like population.
 
@@ -82,31 +126,71 @@ Although HD BN cells activated with anti-Ig, cytokines and R848 developed in an 
 
 Next, we asked whether IFNγ signals were required for the development of ASCs in the culture. We therefore activated BN cells with the cytokine cocktail and R848 for 6 days, including 3 days in the presence of anti-Ig and 3 days without anti-Ig. In individual cultures we excluded specific cytokines or R848 for all 6 days (Figure 4k). In agreement with our earlier experiment, ASCs were recovered (Figure 4l) when B cells were transiently activated with anti-Ig in the continuous presence of R848 and the complete cytokine cocktail. Although elimination of BAFF or IL-2 from the cultures decreased the number of ASCs recovered from the cultures (Figure 4l), neither cytokine was obligate for ASC development. By contrast, and consistent with prior reports showing that ASC development from BN cells requires IL-21 (Ettinger et al., 2008; Tangye, 2015), no ASCs were detected in the cultures lacking IL-21 (Figure 4l). Likewise, ASC recovery in cultures lacking R848 or IFNγ was also at background levels (Figure 4l). Collectively, the data indicated that formation of the T-bethiIRF4int pre-ASC like population required IFNγ signals while the development and recovery of ASCs were dependent on transient BCR signals, IFNγ, R848 and IL-21.
 
-## Temporal control of ASC development from T-bethiIRF4int pre-ASCs by IFNγ, R848 and IL-21
+### Temporal control of ASC development from T-bethiIRF4int pre-ASCs by IFNγ, R848 and IL-21
 
 Although the number of ASCs recovered from cultures lacking IL-21, R848 or IFNγ was equally low (Figure 4l), the frequencies of ASCs and number of total cells recovered from each culture differed dramatically (Figure 4—figure supplement 1). These data suggested that the different stimuli were likely to play distinct roles in the development and recovery of ASCs. Since IFNγ, but not R848 or IL-21, was required for the formation of the pre-ASC population, we postulated that IFNγ signals would be required during the initial activation (Days 0–3, priming phase) while TLR7/8 and IL-21 signals would be more critical later in the culture period (Days 4–6, differentiation phase). To test this hypothesis, we activated CTV-labeled BN cells for 3 days in the presence of anti-Ig and 3 days without anti-Ig – while adding the various stimuli minus one during the priming phase (+,-), during the differentiation phase (-,+) or throughout (+,+) the culture period (Figure 5a). We then measured proliferation, cell recovery and the frequency and number of ASCs present in cultures on day 6 (see Figure 5—figure supplement 1 for representative flow cytometry plots). Eliminating IFNγ from the cultures during the first 3 days prevented formation of the T-bethiIRF4int pre-ASC like population (Figure 5—figure supplement 1a). Moreover, consistent with our prediction, CD38hiCD27+ ASCs, whether measured as the frequency (Figure 5b) or number (Figure 5c) were essentially undetected in cultures lacking IFNγ in the first 3 days. BN cells that did not receive an IFNγ signal during the priming phase proliferated less over the 6 day culture period (Figure 5d), resulting in minimal cell recovery on day 6 (Figure 5e). By contrast, adding IFNγ only during the priming phase was sufficient to induce formation of the T-bethiIRF4int pre-ASC population (Figure 5—figure supplement 1a) and to promote proliferation (Figure 5d) and cell recovery on day 6 (Figure 5e). Moreover, addition of IFNγ only during the early priming phase resulted in similar frequencies (Figure 5b) and numbers (Figure 5c) of ASCs compared to cultures that contained IFNγ throughout the entire culture period. Thus, early IFNγ signals were required to drive the development of the T-bethi pre-ASC like subset and the formation and recovery of ASCs in the cultures.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig5-v2.jpg)
+
+**Figure 5.:** Cartoon (a) depicting stimulation of CTV-labeled HD BN cells for 3 days with anti-Ig, R848, IL-21 and IFNγ (Step 1). Cells were washed and re-cultured for 3 days with R848, IFNγ, and IL-21 (Step 2, +,+ condition) or individual stimuli were included in Step 1 only (+,- condition) or in Step 2 only (-,+ condition). Cells from day 6 cultures containing IFNγ (b–e), R848 (f–i) or IL-21 (j–m) in Step 1, Step 2 or both steps were analyzed to determine ASC frequencies (b, f, j), ASC recovery (c, g, k), cell division (d, h, l) and total cell recovery (e, i, m). Summary of data (n) showing that ASC development and recovery from T-bethiIRF4int BDN pre-ASCs requires early IFNγ, R848 and BCR ‘priming’ signals and late R848 and IL-21 proliferation and differentiation signals. See Figure 5—figure supplement 1 for representative flow cytometry plots from each culture showing T-bethiIRF4int BDN cells on day 3, CD38hiCD27+ ASCs on day 6 and CTV dilution on day 6. Data are representative of ≥3 experiments. The percentage of cells in each division, the frequency of ASCs and cell recovery (total and ASCs) are shown as the mean ±SD of cultures containing purified BN cells from 3 independent healthy donors. All statistical analyses were performed using one-way ANOVA with Tukey’s multiple comparison test. P values *<0.05, **<0.01, ***<0.001, ****<0.0001.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** HD BN cells were activated as described in Figure 5a. Representative flow cytometry plots from cultures containing IFNγ (a–c), R848 (d–f) or IL-21 (g–i) are provided and indicate the frequencies of T-bethiIRF4int B cells on day 3 (a, d, g), CD38hiCD27+ ASCs on day 6 (b, e, h) and CTV dilution on day 6 (c, f, i). Quantitation across multiple experiments (n ≥ 3 with independent donors) shown in Figure 5.
 
 Next, we analyzed when TLR7/8 signals were necessary for ASC development. When R848 was only added during the first 3 days, ASCs could not be detected in the cultures, whether measured as the frequency (Figure 5f) or number (Figure 5g) of ASCs. This was due, at least in part, to the fact that proliferation was severely stunted (Figure 5h), resulting in greatly reduced cell recovery (Figure 5i) in the day 6 cultures. When R848 was only added to the cultures between days 3–6, we observed no impact on pre-ASC formation (Figure 5—figure supplement 1d) or the frequency of ASCs in the day 6 cultures (Figure 5f). However, the number of cells recovered on day 6 was significantly reduced (Figure 5i), which affected the number of ASCs recovered in the cultures (Figure 5g). Despite the poor recovery of cells in the cultures that received TLR7/8 stimulation only between days 3–6, proliferation of the cells was not impacted (Figure 5h). These data therefore indicated that R848 played both early and late roles in the development of ASCs, with early TLR7/8 signals appearing to promote B cell survival and late TLR7/8 signals promoting proliferation.
 
 Finally, we assessed when IL-21 signals were required for ASC development. When IL-21 was only included for the first 3 days of the culture, pre-ASCs formed normally (Figure 5—figure supplement 1g) but ASCs could not be detected whether measured by frequency (Figure 5j) or number (Figure 5k) of ASCs recovered. The lack of ASCs in this culture correlated with greatly decreased proliferation (Figure 5l) and cell recovery (Figure 5m) on day 6. By contrast, the proliferation (Figure 5l) and recovery (Figure 5m) of cells stimulated with IL-21 only during the late phase were not significantly different from cells that were stimulated for all 6 days in the presence of IL-21. Moreover, the frequency (Figure 5j) and number (Figure 5k) of ASCs recovered from the cultures that were exposed to IL-21 between days 3–6 only were very similar to cells that were stimulated all 6 days in the presence of IL-21. Therefore, late IL-21 signals were sufficient to drive ASC formation. Thus, while inclusion of IFNγ, TLR7/8 ligand and IL-21 throughout the entire culture period promoted optimal ASC recovery, IFNγ and BCR signals were required during the priming phase, IL-21 was necessary during the later expansion and differentiation phase and R848 was important throughout the culture period (Figure 5n).
 
-## IFNγ synergizes with R848 and IL-2 to promote proliferation, IL-21 responsiveness and ASC recovery
+### IFNγ synergizes with R848 and IL-2 to promote proliferation, IL-21 responsiveness and ASC recovery
 
 Our data indicated that IFNγ played a non-redundant and critical role in the formation of the TbethiIRF4int BDN cells in vitro, and was necessary for development and recovery of ASCs, even when IL-21 and R848 were present. These data led us to hypothesize that IFNγ signaling might sensitize B cells to respond to other stimuli, like IL-21, IL-2 and TLR ligands, that promote B cell proliferation and differentiation. To test whether IFNγ signals promoted B cell responsiveness to R848 we activated CTV-labeled HD BN cells with anti-Ig, IL-2 and increasing concentrations of R848 in the presence and absence of IFNγ for 3 days, washed the cells and then re-cultured them for an additional 3 days with IL-21 and the same concentration of R848 that the cells were exposed to during the priming phase. On day 6 we measured cell division and ASC formation. Consistent with our earlier experiments (Figure 5), the B cells remained largely undivided when R848 was completely excluded from the cultures (Figure 6a). By contrast, when high dose R848 was included in the cultures, the cells proliferated regardless of whether IFNγ was included in the cultures for the first 3 days (Figure 6b). However, when we activated BN cells with a 100-fold lower dose of TLR7/8 ligand, proliferation was only seen in the cultures that contained IFNγ (Figure 6c). Moreover, we observed that the frequency of ASCs in the cultures that were activated with low dose TLR ligand in the presence of IFNγ was approximately 10-fold higher than that observed for the cultures that lacked IFNγ (Figure 6d). Similar results were seen when we cross-titrated the IFNγ and R848 in the cultures (Figure 6—figure supplement 1). Thus, exposure of BN cells to IFNγ during the initial priming phase allowed these cells to differentiate even in the face of sub-optimal stimulation with R848.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig6-v2.jpg)
+
+**Figure 6.:** (a–d) IFNγ synergizes with subthreshold amounts of TLR7/8 ligand to induce proliferation and differentiation of BN cells. CTV-labeled HD BN cells were activated for 3 days (Step 1) with anti-Ig, IL-2, and increasing concentrations of R848 (as indicated) in the presence or absence of IFNγ (10 ng/ml). Cells were washed and re-cultured for 3 additional days (Step 2) with IL-21 and the same concentration of R848 that was used in Step 1. B cell division was measured on day 6 in cultures that were activated with IFNγ (green circles) or without IFNγ (orange circles) in the presence of no R848 (0 μg/ml, (a), high dose R848 (10 μg/ml, (b) or low dose R848 (0.1 μg/ml, (c). The frequency of CD38hiCD27+ ASCs (d) on day 6 is shown. (e–i) IFNγ cooperates with IL-2 to promote ASC development and recovery. Cartoon (e) depicting CTV-labeled HD BN cells activated for 3 days (Step 1) with anti-Ig and R848 alone (Be.0); with anti-Ig +R848+IFNγ (Be.IFNγ); with anti-Ig +R848+IL-2 (Be.IL2); or with anti-Ig +R848+IFNγ+IL-2 (Be.γ2). Cells were then washed and recultured for an additional 3 days (Step 2) with R848 and IL-21. The percentage of cells that have undergone cell division (f), the total cell recovery (g), the ASC frequencies (h) and total ASCs recovered (i) from each day 6 culture are shown. (j–k) Early IFNγ signals regulate IL-21R signaling. Phospho-STAT3 (pSTAT3) expression levels (reported as Mean Fluorescence Intensity (MFI)) in day 3 HD Be.0, Be.IFNγ, Be.IL2 and Be.γ2 cells under basal conditions (j) or following 20 min IL-21 stimulation (k). See Figure 6—figure supplement 1 for measurements of ASC formation in cultures containing cross-titrated IFNγ and R848. See Figure 6—figure supplement 2 for representative flow cytometry plots from Be.0, Be.IFNγ, Be.IL2 and Be.γ2 cells showing CD38hiCD27+ ASCs and CTV dilution on day 6. See Figure 6—figure supplement 3 for representative flow cytometry plots showing pSTAT3 expression. Data are representative of ≥3 experiments and are shown as the mean ±SD of cultures containing purified BN cells from 2 to 3 independent healthy donors. All statistical analyses were performed using one-way ANOVA with Tukey’s multiple comparison test. P values *<0.05, **<0.01, ***<0.001, ****<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** CTV-labeled BN cells were activated for 3 days with anti-Ig, IL-2 and normally non-stimulatory doses of R848 (0–0.1 μg/ml) in combination with different concentrations of IFNγ (0–10 ng/ml). Cells were washed and re-cultured for 3 additional days with IL-21 and the same concentration of R848 used in Step 1. The frequency of ASCs in the indicated cultures on day 6 is reported.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Day 6 Be.0, Be.IL2, Be.IFNγ and Be.γ2 cells were generated as described in Figure 6e. Representative flow cytometry plots from day 6 Be.0, Be.IFNγ, Be.IL2 and Be.γ2 cultures showing CD38hiCD27+ ASCs (a) and CTV dilution (b).
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** Day 3 Be.0, Be.IL2, Be.IFNγ and Be.γ2 cells were generated as described in Figure 6e. Cells were analyzed directly (basal), (a) or 20 min following exogenous IL-21 exposure (+IL-21), (b) and phospho-STAT3 (pSTAT3) levels were assessed by flow cytometry. Representative flow histograms showing pSTAT3 levels.
 
 Next, we asked whether the IFNγ priming signals enhanced the early response of B cells to cytokines. We first assessed cooperation between IFNγ and IL-2 as IL-2, while not obligate for ASC development, did significantly enhance ASC recovery in our in vitro cultures (Figure 4). We activated HD BN cells for 3 days with anti-Ig +R848 (Be.0 conditions), anti-Ig +R848+IL-2 (Be.IL2 conditions), anti-Ig +R848+IFNγ (Be.IFNγ conditions) or with anti-Ig +R848+IL-2+IFNγ (Be.γ2 conditions). We then washed and stimulated the cells for an additional 3 days with R848 +IL-21 (Figure 6e) and evaluated cell recovery and ASC formation (see Figure 6—figure supplement 2 for representative flow cytometry plots). As expected, we recovered very few viable cells (Figure 6f–g) and no ASCs (Figure 6h–i) from the Be.0 cells on day 6. B cell proliferation (Figure 6f) and recovery of total cells (Figure 6g) and ASCs (Figure 6i) were also very low in the Be.IL2 cultures. Consistent with our earlier experiment (Figure 5), ASCs were easily detected in the Be.IFNγ cultures (Figure 6h–i). However, when B cells were exposed to both IL-2 and IFNγ during the early priming phase, the number of ASCs recovered on day 6 (Figure 6i) was significantly more than seen in the Be.IFNγ or Be.IL2 cultures. This was due to an increase in the number of cells recovered (Figure 6g) and to an increase in the frequency of ASCs (Figure 6h) in the cultures. Thus, early IFNγ and IL-2 signals cooperate to induce formation and recovery of ASCs.
 
 Finally, since IL-21 signaling was obligate for ASC differentiation in our in vitro cultures, we hypothesized that early IFNγ signals might program the B cells to respond to IL-21. To test this hypothesis, we measured phosphorylation of the IL-21R associated TF, STAT3, before and after IL-21 stimulation in day 3 Be.0, Be.IL2, Be.IFNγ and Be.γ2 cells. Day 3 basal levels of phospho-STAT3 were similar and low in the Be.0, Be.IL2 and Be.IFNγ cells and modestly higher in the Be.γ2 cells (Figure 6j, see Figure 6—figure supplement 3 for flow cytometry plots). However, following a 20 min exposure to IL-21, phospho-STAT3 levels were increased significantly in the B cells that were exposed to IFNγ during the priming phase (Figure 6k), indicating that early IFNγ stimulation enhanced IL-21R signaling. Collectively, these data show that early IFNγ signals sensitize human BN cells to respond more robustly to stimuli, like TLR7/8 ligands, IL-2 and IL-21, that promote B cell activation, proliferation and differentiation.
 
-## Early IFNγ signals cooperate with IL-2 and R848 to initiate ASC epigenetic programming and IL-21R expression
+### Early IFNγ signals cooperate with IL-2 and R848 to initiate ASC epigenetic programming and IL-21R expression
 
 Our data showed that early IFNγ signals cooperated with both IL-2 and R848 to promote IL-21 dependent ASC formation and recovery. Given the importance of IFNγ in driving the development of the T-bethi pre-ASC like population, we hypothesized that IFNγ might induce molecular and epigenetic changes that would initiate early commitment to the ASC lineage and/or regulate IL-21R expression and responsiveness. To test this possibility, we used ATAC-seq analysis (Supplementary file 3) to identify differentially accessible regions (DAR) in the genome of Be.0, Be.IL2, Be.IFNγ and Be.γ2 cells on day 3 – a time in which cell recovery was similar in the cultures (Figure 7a–b, see Figure 7—figure supplement 1 for representative flow plots) and the T-bethi pre-ASC like population was easily detected in the IFNγ-containing cultures. As expected, distinct sets of DAR were found in all 4 groups of activated B cells (Figure 7c), however the largest number of chromatin accessible regions was seen in the day 3 Be.γ2 cells (Figure 7c). Moreover, the chromatin accessibility pattern in the Be.γ2 cells appeared to reflect cooperation or synergy between the IFNγ and IL-2 signals (Figure 7c). Examination of chromatin accessibility within 100 bp surrounding consensus TF binding motifs revealed significant (see Supplementary file 4 for statistical analyses) enrichment in accessibility near T-bet binding sites in the B cells that were exposed to IFNγ (Figure 7d). Similarly, accessibility around STAT5 binding motifs was enriched in IL-2 exposed B cells (Figure 7e). However, the Be.γ2 cells exhibited the greatest enrichment in chromatin accessibility surrounding both T-bet and STAT5 binding sites (Figure 7d–e), suggesting that IFNγ and IL-2 cooperate to remodel the epigenome. Consistent with this, binding motifs for NF-κB p65 and REL, TFs activated by anti-Ig and TLR7/8 stimulation (Kaileh and Sen, 2012), were most accessible in the Be.γ2 cells compared to all other groups (Figure 7f–g). Moreover, chromatin accessibility surrounding the HOMER-defined IRF4 and BLIMP1 binding motifs (Heinz et al., 2010) was also highly enriched in the Be.γ2 cells (Figure 7h–i). These data therefore suggested that these key ASC initiating TFs were already exerting epigenetic changes to the genome of the Be.γ2 cells, even before these cells were exposed to IL-21. Consistent with this finding, when we examined the PRDM1 (BLIMP1) locus, we identified 4 DAR that were each more accessible in the Be.γ2 cells relative to the other cells (Figure 7j). Although none of these DAR contained a T-bet binding motif, each DAR directly aligned with peaks previously identified in a published T-bet ChIP-seq analysis of GM12878 cells (ENCODE Project Consortium, 2012), suggesting that T-bet could be associated with TF complexes that bind to these regulatory regions. Moreover, 3 of the 4 PRDM1-associated DAR were also seen in T-bethi DN2 cells purified from SLE patients (Figure 7j), indicating that these DAR were present in the pre-ASC population found in SLE patients.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig7-v2.jpg)
+
+**Figure 7.:** (a–b) Cell division and total cell recovery in day 3 Be.0, Be.IFNγ, Be.IL2 and Be.γ2 cultures generated with HD BN cells. (c–k) Chromatin accessibility analysis using ATAC-seq data from day 3 Be.0, Be.IFNγ, Be.IL2 and Be.γ2 cell. Heatmap (c) showing 15,917 differentially accessible regions (DAR) based on FDR < 0.05. Chromatin accessibility plots and histograms for T-bet (d), STAT5 (e), NF-κB p65 (f), NF-κB REL (g), IRF4 (h) and BLIMP1 (i). Plots report reads per million (rpm) in the 100 bp surrounding the transcription factor binding motifs and histograms show accessibility at the indicated motif and for the indicated surrounding sequence. Genome plots showing chromatin accessibility for the PRMD1 (j) and IL21R (k) loci. DAR are shown and consensus T-bet, IRF4 and STAT5 binding motifs within DAR are indicated. DAR are aligned with previously reported T-bet binding sites in GM12878 cells (assessed by ChIP, ENCODE Project Consortium, 2012) and with ATAC-seq data derived from B cell subsets purified from SLE patients (Jenks et al., 2018). Data reported in rpm. (l–m) Early IFNγ signals control IL-21R expression levels. Representative flow plots showing IL-21R expression in day 3 (l) and day 6 (m) Be.0, Be.IFNγ, Be.IL2 and Be.γ2 cells. See Figure 7—figure supplement 1 for representative flow plots showing cell division profile. See Supplementary file 3 for ATAC-seq data. See Supplementary file 4 for enrichment of TF binding motifs P values. ATAC-seq analysis was performed on 3 independent experimental samples/group over 2 experiments. Flow cytometry plots depicting IL-21R expression are representative of ≥2 experiments. Box plots (d–i) show 1st and 3rd quartile range (box) and upper and lower range (whisker) of 2 samples/group.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Day 3 Be.0, Be.IL2, Be.IFNγ and Be.γ2 cells were generated as described in Figure 6e. Representative flow cytometry plots from day 3 Be.0, Be.IFNγ, Be.IL2 and Be.γ2 cultures showing CTV dilution. Quantitation across multiple experiments (n ≥ 3 with independent donors) shown in Figure 7a-b.
+
 Finally, given our data showing that IFNγ and IL-2 potentiated signaling through the IL-21R, we examined the 2 DAR assigned to the IL21R locus of the day 3 cells (Figure 7k). One of the DAR contained two putative T-bet binding motifs and was directly aligned with a T-bet ChIP-seq peak from GM12878 cells (ENCODE Project Consortium, 2012) (Figure 7k). This DAR was only observed in the cells that were exposed to IFNγ and was most enriched in the Be.γ2 population. Interestingly, we identified the same DAR in the SLE patient T-bethi DN2 cells (Figure 7k), which are reported to be highly responsive to IL-21 (Jenks et al., 2018). To address whether these early IFNγ-dependent epigenetic changes in the IL21R were associated with altered expression of IL-21R, we measured IL-21R expression in the day 3 and day 6 stimulated cells. Although day 3 B cells from Be.IFNγ and Be.γ2 cultures expressed slightly higher levels of IL-21R compared to B cells from Be.0 and Be.IL2 cultures (Figure 7l), IL-21R expression were comparable between all groups at this timepoint. By day 6 however, IL-21R expression levels were 5.5–6-fold higher in the B cells that were cultured in the presence of IFNγ during the first 3 days (Figure 7m). Taken together, the data suggested that early IFNγ signals synergize with BCR, TLR and IL-2 signals to induce global changes in chromatin accessibility and promote increased TF binding at T-bet, NF-κB, STAT5, BLIMP1 and IRF4 binding sites as well as chromatin remodeling at the PRDM1 and IL21R loci.
 
-## SLE patient T-bethi DN2 cells differentiate into ASCs without a further requirement for BCR stimulation
+### SLE patient T-bethi DN2 cells differentiate into ASCs without a further requirement for BCR stimulation
 
 Previous data from our group (Jenks et al., 2018) showed that the T-bethi DN2 cells from SLE patients were transcriptionally distinct from conventional memory cells and, like BN cells (Tangye, 2015), require IL-21 signals to differentiate. Since our in vitro culture system accurately predicted that the T-bethi DN2 cell differentiation would be IL-21 dependent, we hypothesized that the in vitro culture data could be used to make additional testable predictions about the molecular properties of the T-bethi DN2 cells found in SLE patients. To evaluate this possibility, we first tested the prediction that IFNγ-dependent ASC formation from the BN cells isolated from SLE patients would require transient BCR stimulation. We therefore purified T-betlo BN cells (see Figure 8—figure supplement 1 for purification strategy) from the peripheral blood of SLE patients and stimulated the cells with the complete cytokine cocktail (IFNγ, IL-2, IL-21 and BAFF) plus R848 for 6 days in the continuous presence of anti-Ig (+,+), in the complete absence of anti-Ig (-,-) or in the presence of anti-Ig for the first 3 days (+,-) (Figure 8a). Consistent with our prediction, SLE patient BN cells did acquire phenotypic characteristics of the T-bethi DN2 subset following in vitro activation with R848, IL-2, IFNγ and IL-21 (Figure 8b). Moreover, the recovery of ASCs in the cultures started with SLE patient BN cells was highly dependent on transient but early stimulation with anti-Ig as continuous stimulation with anti-Ig or no stimulation with anti-Ig reduced both the frequency and number of ASCs recovered in the cultures (Figure 8c–d). Thus, these data indicated that transient BCR stimulation was required for ASC development from SLE patient-derived BN cells activated with R848, IFNγ, IL-2 and IL-21.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig8-v2.jpg)
+
+**Figure 8.:** (a–d) ASC generation from SLE BN cells requires early but transient BCR activation. Cartoon (a) depicting in vitro stimulation conditions to activate sort-purified T-betlo BN cells from SLE patients. BN cells were stimulated for 3 days with R848, cytokines (IFNγ, IL-2, IL-21, BAFF) ± anti-Ig (Step 1) and then washed and recultured for an additional 3 days with the same stimuli ± anti-Ig (Step 2). Cells were analyzed by flow cytometry on day 6 (b–d). Phenotypic characterization (b) of IgDnegCD27neg BDN cells in cultures containing anti-Ig for all 6 days showing expression of T-bet, CD11c, FcRL5, CD21 and CXCR5 by the T-bethi BDN subset. The frequency (c) and number (d) of CD38hiCD27+ ASCs in cultures lacking anti-Ig (-,-), containing anti-Ig for all 6 days (+,+) or exposed to anti-Ig for the first 3 days only (+,-). (e) SLE patient T-bethi BDN cells rapidly differentiate in ASCs. Purified SLE B cell subsets (T-betlo BN, T-betlo CD11cnegCXCR5+ CD27negIgDneg DN1 memory cells, T-betlo CD27+ memory B cells (Bmem) and T-bethi CD11c+CXCR5neg DN2 cells) were stimulated with cytokines (IFNγ, IL-21, IL-2, BAFF) and R848 for 2.5 days then counted and transferred to anti-IgG ELISPOT plates for 6 hr. The frequency of IgG ASCs derived from each B cell subset is shown. See Figure 8—figure supplement 1 for gating strategy to purify B cell subsets from SLE patients. Data shown in (c–d) are from a single SLE individual and are representative of 2 independent experiments. Data reported in (e) are representative of 3 independent experiments using B cells sorted from 3 different SLE donors. Statistical analyses were performed using one-way ANOVA with Tukey’s multiple comparison test (d–e). P values *<0.05, **<0.01, ***<0.001, ****<0.0001.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/41641/elife-41641-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** Peripheral blood CD19+/lo B lineage cells from SLE patients were subdivided into CD38hiCD27+ ASCs and non-ASC B cells (see Figure 1a). The non-ASC B cells were subdivided (a) into CD11chiCXCR5neg cells (that were highly enriched (99%) in T-bethi B cells (b)) and CD11cloCXCR5+ cells (that were highly enriched in T-betlo/neg cells (b)). The CD11chiCXCR5lo (T-bethi) and CD11cnegCXCR5+ (T-betlo) B cells were then subdivided based on expression of IgD and CD27 (c) and sort-purified as T-betlo BN cells (black gate, CD11cloCXCR5+IgD+CD27neg), T-betlo BDN memory B cells (blue gate, CD11cloCXCR5+IgDnegCD27neg, also referred to as DN1 cells [Jenks et al., 2018]), T-betlo conventional memory B cells (green gate, CD11cloCXCR5+IgDnegCD27+, also referred to as Bmem) and T-bethi BDN cells (red gate, CD11chiCXCR5negIgDnegCD27neg, also referred to as DN2 cells; Jenks et al., 2018).
 
 Based on these data and our in vitro experiments, we made two additional testable predictions. First, we postulated that T-bethi DN2 cells isolated from SLE patients should differentiate without a requirement for BCR stimulation. Second, we predicted that SLE patient T-bethi DN2 cells should differentiate more rapidly than BN cells. To test these predictions, we sort-purified (see Figure 8—figure supplement 1 for purification strategy) SLE patient-derived T-bethi DN2 cells, T-betlo BN cells and T-betlo memory B cells, including the IgDnegCD27neg BDN memory (DN1 cells; Jenks et al., 2018) and IgDnegCD27+ memory (conventional Bmem) subsets. We stimulated the cells for 2.5 days with R848, IFNγ, IL-21 and IL-2 and then enumerated IgG-producing ASCs. As expected, the conventional Bmem and DN1 memory cells efficiently formed ASCs in this short timeframe (Figure 8e), while BN cells failed to differentiate (Figure 8e). Consistent with our predictions, ASCs were easily identified in the day 2.5 cultures containing T-bethi DN2 cells (Figure 8e). Indeed, ASC recovery was at least 50-fold higher in T-bethi DN2 cell cultures compared to the BN cultures and only 2–3 times less than that seen with the memory B cell populations (Figure 8e). These data therefore suggested that the expanded population of T-bethi DN2 cells present in some SLE patients likely represent a population of IFNγ, TLR ligand and antigen programmed primary effectors that can rapidly differentiate in a BCR-signaling independent manner into ASCs following IL-21 exposure. The importance of IFNγ in driving human ASC commitment and differentiation in the context of autoimmune disease is discussed.
 
@@ -128,86 +212,799 @@ In summary, we demonstrate that IFNγ is critical for the in vitro formation of 
 
 ## Materials and methods
 
-## Human Subjects and samples
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="5">Commercial Assays or Kits</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human Anti-SM IgG ELISA Kit</td>
+      <td>Alpha Diagnostic International</td>
+      <td>3300–100-SMG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Milliplex MAP Human Cytokine/Chemokine Magnetic Bead Panel</td>
+      <td>Millipore</td>
+      <td>HCYTOMAG-60K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Milliplex MAP Human Th17 Magnetic Bead Panel</td>
+      <td>Millipore</td>
+      <td>HTH17MAG-14K</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fixable Aqua Dead Cell Stain Kit</td>
+      <td>Life Technologies</td>
+      <td>34966</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>CellTrace Violet</td>
+      <td>Invitrogen by Thermo Fisher Scientific</td>
+      <td>C34557</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Transcription Factor PhosphoPlus Buffer Set</td>
+      <td>BD Pharmingen</td>
+      <td>565575</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Foxp3/Transcription Factor Staining Buffer Set</td>
+      <td>eBioscience</td>
+      <td>00-5523-00</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EasySep Human Naïve B Cell Enrichment Set</td>
+      <td>STEMCELL Technologies</td>
+      <td>19254</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EasySep Human Naïve CD4 + T Cell Isolation Kit</td>
+      <td>STEMCELL Technologies</td>
+      <td>19155</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Anti-IgD Microbeads human</td>
+      <td>Miltenyi Biotec</td>
+      <td>130-103-775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>HA, Sterile Clear Plates 0.45microm Surfactant-Free, Mixed Cellulose Ester Membrane</td>
+      <td>Millipore</td>
+      <td>MAHAS4510</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="5">Cytokines For Culture</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human IFN-gamma</td>
+      <td>R&amp;D</td>
+      <td>285-IF</td>
+      <td>20 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human IL4</td>
+      <td>R&amp;D</td>
+      <td>204-IL</td>
+      <td>20 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human IL12</td>
+      <td>R&amp;D</td>
+      <td>219-IL</td>
+      <td>1 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human IL21</td>
+      <td>Peprotech</td>
+      <td>200–21</td>
+      <td>10 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human BAFF</td>
+      <td>Peprotech</td>
+      <td>310–13</td>
+      <td>10 ng/ml</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Recombinant Human IL2</td>
+      <td>Peprotech</td>
+      <td>200–02</td>
+      <td>50 U/ml</td>
+    </tr>
+    <tr>
+      <td colspan="5">Chemical Compounds/Drugs For Culture or Flow</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>R848</td>
+      <td>InvivoGen</td>
+      <td>tlrl-r848</td>
+      <td>5 microgram/ml</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Iscove's DMEM, 1X</td>
+      <td>Corning Mediatech</td>
+      <td>10–016-CV</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RPMI-1640</td>
+      <td>Lonza</td>
+      <td>12–702F</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MEM Nonessential Amino Acids</td>
+      <td>Corning Mediatech</td>
+      <td>25–025 Cl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium Pyruvate100 mM Solution</td>
+      <td>GE Life sciences</td>
+      <td>SH30239.01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin Streptomycin Solution</td>
+      <td>Corning</td>
+      <td>30–002 Cl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Gentamicin</td>
+      <td>Gibco</td>
+      <td>15750–060</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>7-amino-AMD</td>
+      <td>Calbiochem</td>
+      <td>129935</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fluoresbrite Carboxylate YG 10 micron Microspheres</td>
+      <td>Polysciences</td>
+      <td>18142</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DPBS, 1X</td>
+      <td>Corning Mediatech</td>
+      <td>21–031-CV</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EDTA</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>15575–038</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>HEPES Buffer1M Solution</td>
+      <td>Corning Mediatech</td>
+      <td>25–060 Cl</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="5">Chemical Compounds/Drugs For ELISPOT</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>BCIP/NBT Alkaline Phosphatase Substrate/membrane</td>
+      <td>Moss, Inc</td>
+      <td>NBTM-1000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="5">Antibodies For Culture</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Purified anti-human CD3 (mouse IgG1)</td>
+      <td>Biolegend</td>
+      <td>300414</td>
+      <td>5 microgram/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Purified anti-human CD28 (mouse IgG1)</td>
+      <td>Biolegend</td>
+      <td>302914</td>
+      <td>5 microgram/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Human IL-12 Antibody (goat IgG)</td>
+      <td>R&amp;D</td>
+      <td>AB-219-NA</td>
+      <td>10 microgram/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Human IFN-gamma Antibody (goat IgG)</td>
+      <td>R&amp;D</td>
+      <td>AB-285-NA</td>
+      <td>10 microgram/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Human IL-4 Antibody (goat IgG)</td>
+      <td>R&amp;D</td>
+      <td>AB-204-NA</td>
+      <td>10 microgram/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AffiniPure F(ab')₂ Fragment Goat Anti-Human IgM, Fcμ fragment specific</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>109-006-129</td>
+      <td>5 microgram/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AffiniPure F(ab')₂ Fragment Goat Anti-Human IgG, F(ab')₂ fragment specific</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>109-006-097</td>
+      <td>5 microgram/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AffiniPure F(ab')₂ Fragment Goat Anti-Human Serum IgA, α chain specific</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>109-006-011</td>
+      <td>5 microgram/ml</td>
+    </tr>
+    <tr>
+      <td colspan="5">Antibodies For ELISPOT</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AffiniPure Goat Anti-Human IgG (H + L)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>109-005-088</td>
+      <td>2 microgram/ml</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alkaline Phosphatase AffinitiPure F(ab')2 Fragment Goat, Anti-Human IgG, Fc-gamma Fragment Specific</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>109-056-098</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td colspan="5">Others For Culture</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Human Serum AB</td>
+      <td>GemCell</td>
+      <td>100–512</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fetal Bovine Serum</td>
+      <td>Biowest</td>
+      <td>S1690</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan="5">Antibodies For Flow</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fitc Mouse Anti-Human CD3 (clone HIT3a)</td>
+      <td>BD Biosciences</td>
+      <td>555339</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PercP/Cy5.5 Mouse Anti-Human CD3 (clone OKT3)</td>
+      <td>eBioscience</td>
+      <td>45-0037-71</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fitc Mouse Anti-Human CD4 (clone OKT4)</td>
+      <td>eBioscience</td>
+      <td>11-0048-80</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Mouse Anti-Human CD4 (clone OKT4)</td>
+      <td>Biolegend</td>
+      <td>317410</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PercP/Cy5.5 Mouse Anti-HumanCD4 (clone OKT4)</td>
+      <td>eBioscience</td>
+      <td>45-0048-42</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV510 Mouse Anti-Human CD4 (clone OKT4)</td>
+      <td>Biolegend</td>
+      <td>317444</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fitc Mouse Anti-HumanCD11c (clone Bu15)</td>
+      <td>Biolegend</td>
+      <td>337214</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Mouse Anti-Human CD11c (clone Bu15)</td>
+      <td>Biolegend</td>
+      <td>337205</td>
+      <td>(1:400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PercP/Cy5.5 Mouse Anti-Human CD14 (clone HCD14)</td>
+      <td>Biolegend</td>
+      <td>325621</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fitc Mouse Anti-Human CD19 (clone LT19)</td>
+      <td>Miltenyi</td>
+      <td>302256</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Mouse Anti-Human CD19 (clone HIB19)</td>
+      <td>Biolegend</td>
+      <td>302208</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PercP/Cy5.5 Mouse Anti-Human CD19 (clone HIB19)</td>
+      <td>Biolegend</td>
+      <td>302230</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC Mouse Anti-Human CD19 (clone HIB19)</td>
+      <td>BD Pharmingen</td>
+      <td>555415</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-H7 Mouse Anti-Human CD19 (clone HIB19)</td>
+      <td>BD Pharmingen</td>
+      <td>560727</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421 Mouse Anti-Human CD19 (clone HIB19)</td>
+      <td>Biolegend</td>
+      <td>302234</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>V500 Mouse Anti-Human CD19 (clone HIB19)</td>
+      <td>BD Horizon</td>
+      <td>561121</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PercP/Cy5.5 Mouse Anti-Human CD21 (clone Bu32)</td>
+      <td>Biolegend</td>
+      <td>354908</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fitc Mouse Anti-Human CD23 (clone M-L23.4)</td>
+      <td>Miltenyi</td>
+      <td>130-099-365</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Mouse Anti-Human CD23 (clone EBVCS-5)</td>
+      <td>Biolegend</td>
+      <td>338507</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC Mouse Anti-Human CD23 (clone M-L233)</td>
+      <td>BD Pharmingen</td>
+      <td>558690</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fitc Mouse Anti-Human CD27 (clone M-T271)</td>
+      <td>Biolegend</td>
+      <td>356404</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PercP/Cy5.5 Mouse Anti-Human CD27 (clone M-T271)</td>
+      <td>Biolegend</td>
+      <td>356408</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC Mouse Anti-Human CD27 (clone M-T271)</td>
+      <td>Biolegend</td>
+      <td>356410</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-H7 Mouse Anti-Human CD27 (clone M-T271)</td>
+      <td>eBioscience</td>
+      <td>560222</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421 Mouse Anti-Human CD27 (clone M-T271)</td>
+      <td>Biolegend</td>
+      <td>356418</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE/Cy7 Mouse Anti-HumanCD38 (clone HIT2)</td>
+      <td>eBioscience</td>
+      <td>25-0389-42</td>
+      <td>(1:1200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PercP/Cy5.5 Mouse Anti-HumanCD56 (clone 5.IH11)</td>
+      <td>Biolegend</td>
+      <td>362505</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Mouse Anti-Human FcRL5 (clone 509 F6)</td>
+      <td>Biolegend</td>
+      <td>340304</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>eFluor660 Mouse Anti-Human FcRL5 (clone 509 F6)</td>
+      <td>eBioscience</td>
+      <td>50-3078-42</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC Mouse Anti-HumanFcRL5 (clone 509 F6)</td>
+      <td>Biolegend</td>
+      <td>340306</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Mouse Anti-HumanCXCR3 (clone CEW33D)</td>
+      <td>eBioscience</td>
+      <td>12-1839-42</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Mouse Anti-HumanCXCR3 (clone 49801)</td>
+      <td>R&amp;D</td>
+      <td>FAB160P</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fitc Mouse Anti-HumanCXCR5 (clone J252D4)</td>
+      <td>Biolegend</td>
+      <td>356914</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Mouse Anti-Human CXCR5 (clone J252D4)</td>
+      <td>Biolegend</td>
+      <td>356904</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PercP-Cy5.5 Mouse Anti-Human CXCR5 (clone J252D4)</td>
+      <td>Biolegend</td>
+      <td>356910</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC Mouse Anti-Human CXCR5 (clone J252D4)</td>
+      <td>Biolegend</td>
+      <td>356907</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421 Mouse Anti-HumanCXCR5 (clone J252D4)</td>
+      <td>Biolegend</td>
+      <td>356920</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fitc Mouse Anti-HumanIgD (clone IgD26)</td>
+      <td>Miltenyi</td>
+      <td>130-099-633</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fitc Mouse Anti-Human IgD (clone IA6-2)</td>
+      <td>BD Pharmingen</td>
+      <td>555778</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421 Mouse Anti-Human IgD (clone IA6-2)</td>
+      <td>Biolegend</td>
+      <td>348226</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV510 Mouse Anti-HumanIgD (clone IA6-2)</td>
+      <td>BD Horizon</td>
+      <td>561490</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC Mouse Anti-HumanIgM (clone MHM-88)</td>
+      <td>Biolegend</td>
+      <td>314509</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fitc Mouse Anti-Human IgG (clone IS11-3B2.2.3)</td>
+      <td>Miltenyi</td>
+      <td>130-099-229</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Mouse Anti-HumanIgG (clone IS11-3B2.2.3)</td>
+      <td>Miltenyi</td>
+      <td>130-099-201</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Mouse Anti-HumanIgA(1) (clone IS11-8E10)</td>
+      <td>Miltenyi</td>
+      <td>130-099-108</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Mouse Anti-HumanIgA(2) (clone IS11-21E11)</td>
+      <td>Miltenyi</td>
+      <td>130-100-316</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fitc Mouse Anti-Human/MouseT-bet (clone 4B10)</td>
+      <td>Biolegend</td>
+      <td>644812</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC Mouse Anti-Human/MouseT-bet (clone 4B10)</td>
+      <td>Biolegend</td>
+      <td>644814</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AF488 Mouse Anti-Human/Mouse GATA (clone L50-823)</td>
+      <td>BD Pharmingen</td>
+      <td>560163</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Rat Anti-Human/MouseBlimp-1 (clone 6D3)</td>
+      <td>BD Pharmingen</td>
+      <td>564702</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE Rat Anti-Human/Mouse IRF4 (clone IRF4.3E4)</td>
+      <td>Biolegend</td>
+      <td>646403</td>
+      <td>(1:600)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC Mouse Anti-Human IL21 (clone 3A3-N2)</td>
+      <td>Biolegend</td>
+      <td>513007</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC Mouse Anti-HumanIL21R (clone 2 G1-K12)</td>
+      <td>Biolegend</td>
+      <td>347807</td>
+      <td>(1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421 Mouse Anti-Human/MousepSTAT3 (clone 13A3-1)</td>
+      <td>Biolegend</td>
+      <td>651009</td>
+      <td>(1:100)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Human Subjects and samples
 
 The UAB and Emory Human Subjects Institutional Review Board approved all study protocols for HD (UAB) and SLE patients (UAB and Emory). All subjects gave written informed consent for participation and provided peripheral blood for analysis. SLE patients were recruited in collaboration with the outpatient facilities of the Division of Rheumatology and Clinical Immunology at UAB or the Division of Rheumatology at Emory. UAB and Emory SLE patients met a minimum of three ACR criteria for the classification of SLE. HDs were self-identified and recruited through the UAB Center for Clinical and Translational Science and the Alabama Vaccine Research Center (AVCR). The UAB Comprehensive Cancer Center Tissue Procurement Core Facility provided remnant tonsil tissue samples from patients undergoing routine tonsillectomies.
 
-## Lymphocyte and plasma isolation
+### Lymphocyte and plasma isolation
 
 Peripheral blood (PB) from human subjects was collected in K2-EDTA tubes (BD Bioscience). Human tonsil tissue was dissected, digested for 30 min at 37°C with DNAse (150 U/ml, Sigma) and collagenase (1.25 mg/ml, Sigma), and then passed through a 70 μm cell strainer (Falcon). Human PBMCs and plasma from blood samples and low-density tonsil mononuclear cells were separated by density gradient centrifugation over Lymphocyte Separation Medium (CellGro). Red blood cells were lysed with Ammonium Chloride Solution (StemCell). Plasma was fractionated in aliquots and stored at −80°C. Human PBMCs and tonsil mononuclear cells were either used immediately or were cryopreserved at −150°C.
 
-## Human lymphocyte purification
+### Human lymphocyte purification
 
 Naïve CD4+ T cells and CD19+ B cells were isolated from human PBMCs or tonsils using EasySep enrichment kits (StemCell). BN cells were then positively selected using anti-IgD microbeads (Miltenyi). B cell subsets were sort-purified from PBMCs and tonsils as described in text.
 
-## Generation of Th1 and Th2 cells
+### Generation of Th1 and Th2 cells
 
 Polarized CD4+ effector T cells were generated by activating purified HD naïve CD4 T cells with plate-bound anti-CD3 (UCHT1) and anti-CD28 (CD28.2) (both 5 μg/ml, Biolegend) in the presence of IL-2 (50 U/ml), IL-12 (1 ng/ml) and anti-IL4 (10 μg/ml) (Th1 conditions) or IL-2 (50 U/ml), IL-4 (20 ng/ml), anti-IL12 (10 μg/ml) and anti-IFNγ (10 μg/ml) (Th2 conditions). Cells were transferred into fresh media on day 3 and IL-2 was added, as needed. Cells were re-activated every 7 days using the same cultures conditions for 3 rounds of polarization. All cytokines and Abs except IL-2 (Peprotech) were purchased from R and D and T cell polarizing media contained Iscove’s DMEM supplemented with penicillin (200 μg/ml), streptomycin (200 μg/ml), gentamicin (40 μg/ml), 10% FBS and 5% human serum blood type AB.
 
-## T/B co-cultures
+### T/B co-cultures
 
 Purified B cell subsets from HD or SLE patients were co-cultured in B cell media in the presence of IL-2 (50 U/ml)±IL-21 (10 ng/ml) with allogeneic in vitro generated Th1 or Th2 effectors (0.6 × 106 cells/ml, ratio 5B:1T) for 5–6 days, as indicated. B cell media contained Iscove’s DMEM supplemented with penicillin (200 μg/ml), streptomycin (200 μg/ml), gentamicin (40 μg/ml), 10% FBS, and insulin (5 μg/ml; Santa Cruz Biotechnology).
 
-## B cell activation with defined stimuli
+### B cell activation with defined stimuli
 
 Purified B cell subsets isolated from the tonsil or blood of HD or SLE patients were cultured (1 × 106 cells/ml) for 3 days with 5 μg/ml anti-Ig (Jackson ImmunoResearch), 5 μg/ml R848 (InvivoGen), 50 U/ml IL-2, 10 ng/ml BAFF, 10 ng/ml IL-21 (Peprotech) and 20 ng/ml IFNγ (R and D) (Step 1). Cells were either directly analyzed or washed and recultured (2 × 105 cells/ml) for an additional 3 days with the same stimuli (Step 2). The number of ASCs and total cells recovered in cultures on day 6 were determined and then normalized based on cell input. In some experiments, anti-Ig, R848, IL-21, IL-2, IFNγ or BAFF were omitted from the cultures during Step 1, or Step 2 or both steps. In other experiments, the concentration of R848 in Step 1 and Step 2 and/or the concentration of IFNγ in Step1 was varied, as indicated in the text. In some experiments, B cell subsets isolated from blood of SLE patients and HD were stimulated for 2.5–6 days with R848 and IL-21, IL-2, BAFF and IFNγ.
 
-## STAT3 phosphorylation assays
+### STAT3 phosphorylation assays
 
 HD BN cells were cultured with 5 μg/ml anti-Ig and 5 μg/ml R848 alone (Be.0) or in combination with IFNγ (Be.IFNγ), IL2 (Be.IL2), or IL2 plus IFNγ (Be.γ2). On day 3 cells were washed and restimulated with medium alone or with IL-21 (10 ng/ml) for 20 min at 37°C. The cells were fixed and permeabilized with BD Transcription Factor Phospho Buffer Set and intracellular staining with anti phospho-STAT3 was performed.
 
-## In vitro B cell proliferation
+### In vitro B cell proliferation
 
 Purified B cell subsets (1−5 × 106 cells/ml) were stained for 10 min at 37°C with PBS diluted CellTrace Violet (Molecular Probes, Thermofisher). The cells were washed and either used in T effector co-culture experiments or were cultured in the presence of defined stimuli.
 
-## In vitro ASC differentiation
+### In vitro ASC differentiation
 
 BN cells were co-cultured with in vitro generated Th1 or Th2 cells plus IL-2 and IL-21. On day 6 of the co-culture BDN cells from both cultures were sort-purified and then cultured in 0.22μM-filtered conditioned media (media collected from the original T/B co-cultures). ASCs were enumerated after 18 hr by flow cytometry.
 
-## Cytokine measurements
+### Cytokine measurements
 
 Th1 and Th2 cells were restimulated with platebound anti-CD3 and anti-CD28 (both 5 μg/ml). Cytokine levels in restimulated T cell cultures and SLE patient plasma samples was measured using Milliplex MAG Human Cytokine/Chemokine Immunoassays (Millipore).
 
-## Elispot
+### Elispot
 
 Serial diluted B cells were transferred directly to anti-IgG (Jackson ImmunoResearch) coated ELISPOT plates (Millipore) for 6 hr. Bound Ab was detected with alkaline phosphatase-conjugated anti-human IgG (Jackson ImmunoResearch) followed by development with alkaline phosphatase substrate (Moss, Inc). ELISPOTs were visualized using a CTL ELISPOT reader. The number of spots detected per well (following correction for non-specific background) was calculated.
 
-## Anti-SMITH ELISAs
+### Anti-SMITH ELISAs
 
 Anti-Smith IgG autoantibodies in plasma from SLE patients and healthy donors were detected using the enzymatic immunoassay kit (Alpha Diagnostic) according to the manufacturer protocol.
 
-## Flow cytometry
+### Flow cytometry
 
 Single cell suspensions were blocked with 10 μg/ml FcR blocking mAb 2.4G2 (mouse cells) or with 2% human serum or human FcR blocking reagent (Miltenyi) (human cells) and then stained with fluorochrome-conjugated Abs. 7AAD or LIVE/DEAD Fixable Dead Cell Stain Kits (Molecular Probes/ThermoFisher) were used to identify live cells. For intracellular staining, cells were stained with Abs specific for cell surface markers, fixed with formalin solution (neutral buffered, 10%; Sigma) and permeabilized with 0.1% IGEPAL (Sigma) in the presence of Abs. Alternatively, the transcription factor and phospho-transcription factor staining buffers (eBioscience) were used. Stained cells were analyzed using a FACSCanto II (BD Bioscience). Cells were sort-purified with a FACSAria (BD Biosciences) located in the UAB Comprehensive Flow Cytometry Core. Analysis was performed using FlowJo v9.9.3 and FlowJo v10.2.
 
-## RNA-seq library preparation and analysis
+### RNA-seq library preparation and analysis
 
 RNA samples were isolated from TRIzol (FisherThermo) treated sort-purified day 6 Be1 and Be2 IgDnegCD27neg B cells. 300 ng of total RNA from 3 biological replicates per B cell subset was used as input for the KAPA stranded mRNA-seq Kit with mRNA capture beads (KAPA Biosystems). Libraries were assessed for quality on a bioanalyzer, pooled, and sequenced using 50 bp paired-end chemistry on a HiSeq2500. Sequencing reads were mapped to the hg19 version of the human genome using TopHat with the default settings and the hg19 UCSC KnownGene table as a reference transcriptome. For each gene, the overlap of reads in exons was summarized using the GenomicRanges package in R/Bioconductor. Genes that contained two or more reads in at least 3 samples were deemed expressed (11598 of 23056) and used as input for edgeR to identify differentially expressed genes (DEGs). P-values were false-discovery rate (FDR) corrected using the Benjamini-Hochberg method and genes with a FDR of <0.05 were considered significant. Expression data was normalized to reads per kilobase per million mapped reads (FPKM). Data processing and visualization scripts are available (Scharer, 2019a; Scharer, 2019b; Scharer, 2019c; copies archived at https://github.com/elifesciences-publications/genomePlots, https://github.com/elifesciences-publications/heatmap, and https://github.com/elifesciences-publications/plotScaledBEDfeatures respectively). All RNA-seq data is available from the GEO database under the accession GSE95282. See also Supplementary file 1.
 
-## ATAC-seq preparation and analysis
+### ATAC-seq preparation and analysis
 
 ATAC-seq data generated from the SLE B cell subsets was previously reported (Jenks et al., 2018). ATAC-seq analysis on in vitro generated B cell was performed on 10,000 Be.0, Be.IFNγ, Be.IL2 or Be.γ2 cells as previously described (Scharer et al., 2016). Sorted cells were resuspended in 25 μl tagmentation reaction buffer (2.5 μl Tn5, 1x Tagment DNA Buffer, 0.2% Digitonin) and incubated for 1 hr at 37°C. Cells were lysed with 25 μl 2x Lysis Buffer (300 mM NaCl, 100 mM EDTA, 0.6% SDS, 1.6 μg Proteinase-K) for 30 min at 40°C, low molecular weight DNA was purified by size-selection with SPRI-beads (Agencourt), and then PCR amplified using Nextera primers with 2x HiFi Polymerase Master Mix (KAPA Biosystems). Amplified, low molecular weight DNA was isolated using a second SPRI-bead size selection. Libraries were sequenced using a 50 bp paired-end run at the NYU Genome Technology Center. Raw sequencing reads were mapped to the hg19 version of the human genome using Bowtie (Langmead et al., 2009) with the default settings. Duplicate reads were marked using the Picard Tools MarkDuplicates function (http://broadinstitute.github.io/picard/) and eliminated from downstream analyses. Enriched accessible peaks were identified using MACS2 (Zhang et al., 2008) with the default settings. Differentially accessible regions were identified using edgeR v3.18.1 (Robinson et al., 2010) and a generalized linear model. Read counts for all peaks were annotated for each sample from the bam file using the Genomic Ranges (Lawrence et al., 2013) R/Bioconductor package and normalized to reads per million (rpm) as previously described (Scharer et al., 2016). Peaks with a greater than 2-fold change and FDR < 0.05 between comparisons were termed significant. Genomic and motif annotations were computed for ATAC-seq peaks using the HOMER (Heinz et al., 2010) annotatePeaks.pl script. The findMotifsGenome.pl function of HOMER v4.8.2 (42) was used to identify motifs enriched in DAR and the ‘de novo’ output was used for downstream analysis. To generate motif footprints, the motifs occurring in peaks were annotated with the HOMER v4.8.2 annotatePeaks.pl function (Heinz et al., 2010) using the options ‘-size given’. The read depth at the motif and surrounding sequence was computed using the GenomicRanges v1.22.4 (66) package and custom scripts in R/Bioconductor. All other analyses and data display were performed using R/Bioconductor with custom scripts (Scharer, 2019a; Scharer, 2019b; Scharer, 2019c). ATAC-seq data has been deposited in the NCBI GEO database under accession number GSE119726. See also Supplementary files 3–5 for complete list of DAR and for analysis of TF motif enrichment in the ATAC-seq dataset.
 
-## GSEA
+### GSEA
 
 For gene set enrichment analysis samples were submitted to the GSEA program (http://software.broadinstitute.org/gsea/index.jsp). For the comparison of interest (i.e., BDN Be1 and BDN Be2 cells), all detected genes were ranked by multiplying the -log10 of the P-value from edgeR by the sign of the fold change and used as input for the GSEA Preranked analysis. The custom gene set defining genes upregulated in SLE T-bethi BDN relative to other B cell subsets were derived from Jenks et al. (2018) and are listed in Supplementary file 2.
 
-## Ingenuity Pathway Analysis (IPA)
+### Ingenuity Pathway Analysis (IPA)
 
 IPA upstream regulator analysis (Krämer et al., 2014, Qiagen, Redwood City CA) was performed using the log2 fold-change in gene expression between genes that were significantly differentially expressed (FDR < 0.05) in BDN Be1 and BDN Be2 cells. Upstream regulators with an activation z-score of ≥2 or ≤ −2 were considered to be activated or inhibited in BDN Be1 cells. Overlap P-value (between the regulator’s downstream target list and the DEG list was based on Fisher’s exact test.
 
-## Statistical analysis
+### Statistical analysis
 
 Comparisons between two groups were performed with the Student’s t test for normally distributed variables and the Mann-Whitney test for non-normally distributed variables. The one-way ANOVA test was used to compare mean values of 3 or more groups and the Kruskal-Wallis nonparametric test was used to compare medians. Strength and direction of association between two variables measures was performed using the D’Agostino-Pearson normality test followed by Pearson’s or Spearman’s correlation test. Data were considered significant when p≤0.05. Analysis of the data was done using the GradhPad Prism version 7.0a software (GraphPad). See Supplementary file 5 for all statistical comparisons.
 
-## Mice and bone marrow chimeras
+### Mice and bone marrow chimeras
 
 All experimental animals were bred and maintained in the UAB animal facilities. All procedures involving animals were approved by the UAB Institutional Animal Care and Use Committee and were conducted in accordance with the principles outlined by the National Research Council. B6.SB-Yaa/J.B6;129S-Fcgr2btm1Ttk/J (Yaa.Fcgr2b-/-) (Pisitkun et al., 2006) (obtained by permission from Dr. Sylvia Bolland (NIH)) were intercrossed with B6.129S2-Ighmtm1Cgn/J (μMT) or B6.129S6-Tbx21tm1Glm/J (Tbx21-/-) mice (both strains obtained from Jackson Laboratory) to produce B cell deficient (Yaa.Fcgr2b-/-.μMT) or T-bet deficient (Yaa.Fcgr2b-/-.Tbx21-/-) lupus-prone mice. To generate bone marrow chimeras, μMT recipient mice were irradiated with 950 Rads from a high-energy X-ray source, delivered in a split dose 4 hr apart. Recipients were reconstituted (107 total BM cells) with 80% Yaa.Fcgr2b-/-.μMT BM +20% Yaa.Fcgr2b-/-.Tbx21-/- BM (B-YFT chimeras) or with 80% Yaa.Fcgr2b-/- BM +20% Yaa.Fcgr2b-/-.Tbx21-/- BM (20%Control chimeras).
 
-## Mouse ANA detection and imaging
+### Mouse ANA detection and imaging
 
 Antinuclear antibodies (ANA) were detected by an indirect immunofluorescence assay using HEp-2 cells. Fixed HEp-2-coated microscope slides (Kallestad, BioRad) were blocked, incubated with serum diluted 1:100 and stained with anti-IgG-FITC (Southern Biotech) (10 μg/ml). Slides were mounted with SlowFade Gold Antifade Mountant with DAPI (ThermoFisher) and imaged. Anti-nuclear staining was quantitated as the mean flourescence intensity (MFI) of IgG-FITC over DAPI-staining areas (nuclei) using NIS-Elements AR software (Nikon). Data are presented as log nuclear IgG MFI normalized by subtracting the MFI of negative control serum from B6 mice. ANA images were collected using a Nikon Eclipse Ti inverted microscope and recorded with a Clara interline CCD camera (Andor). The images were taken with a 20X (immunofluorescence) objective for 200-400X final magnification. Images were collected using NIS Elements software, scale bars were added and images were saved as high-resolution JPEGs. JPEG images were imported into Canvas Ver 12 software and were resized, cropped with the identical settings applied to all immunofluorescence images from the same experiment. Final images presented at 600–650 dpi (ANA).
 
-## Urinary Albumin to Creatinine Ratio (UACR)
+### Urinary Albumin to Creatinine Ratio (UACR)
 
 Albumin concentrations in urine samples, collected from live or euthanized mice, were measured using the Mouse Albumin ELISA Quantitation Set (Bethyl Labs) according to manufacturer’s protocol using a mouse reference serum as an albumin standard. To normalize for urine concentration, urinary creatinine was measured by liquid chromatography-mass spectrometry in the UAB/UCSD O'Brien Core Center for Acute Kidney Injury Research. The UACR was calculated as μg/ml albumin divided by mg/ml creatinine and is reported as μg albumin/mg creatinine.

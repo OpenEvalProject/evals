@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/05a0ya142 Broad Institute of MIT and Harvard Cambridge United States
+1. Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))
 
 † Corresponding author
 

@@ -31,15 +31,120 @@ In D. melanogaster, simple, tandemly repeated satellite DNAs, such as AAGAG(n) a
 
 We first analyzed RNA expression for 31 of the most abundant satellite DNAs, using published RNA-seq data (modENCODE) (Brown et al., 2014) and RNA-Fluorescence In-Situ Hybridization (RNA-FISH) (Figure 1—figure supplement 1). Further characterizations and functional analyses were focused on AAGAG(n) RNA (hereafter AAGAG RNA) because it is highly abundant, and a previous study suggested it was linked to the nuclear matrix and necessary for viability (Pathak et al., 2013). Northern blot analysis of RNA isolated from stage 1–4 embryos shows that AAGAG RNA is maternally loaded as an ~1500 nucleotide (nt) transcript. Smaller RNAs (~20–750 nt) accumulate in later stage embryos (2–24 hr) and third instar larvae (L3 larvae) (Figure 1—figure supplement 2A). AAGAG RNA-FISH in 0–18 hr embryos and L3 larvae revealed localization to only one or a few nuclear foci, with no visible cytoplasmic signal (Figure 1, A and D). AAGAG RNA foci are not detected prior to embryonic cycle 11, but by cycles 12 and 13, 33% and 67% of embryos (respectively) have one or more foci (Figure 1—figure supplement 2, B and C). Furthermore, 100% of embryos exhibit nuclear AAGAG RNA foci by blastoderm (cycle 14,~2 hr after egg laying), coincident with the formation of stable, mature heterochromatin (Strom et al., 2017; Yuan and O'Farrell, 2016) (Figure 1A and Figure 1—figure supplement 2D). Surprisingly, the complementary RNA (CUCUU(n)) is not observed in Northern or RNA-FISH analysis (Figure 1—figure supplement 4, B and data not shown, respectively), suggesting that most or all of the stable embryo RNA expressed from tandem AAGAG(n) DNA present at multiple genome locations corresponds to AAGAG(n) and not CUCUU(n). This conclusion is supported by the results of RNase digestion experiments, which demonstrate that cycle 14 AAGAG RNA foci contain single-stranded RNA (ssRNA), and not R-loops or double-stranded RNA (dsRNA) (Figure 1—figure supplement 3). A combination of transcriptome mining, Northern blotting and RNA-FISH indicates that the majority of AAGAG RNA is transcribed from loci in 2R, X and 3R heterochromatin (Figure 1—figure supplement 4). Finally, we ruled out the possibility that detected foci represent DNA, since signal was abolished by RNaseIII, but not RNaseH treatments after probe hybridization (Figure 1—figure supplement 5).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/48940/elife-48940-fig1-v2.jpg)
+
+**Figure 1.:** (a) AAGAG RNA distributions (magenta) throughout embryonic and larval development in Oregon R flies. DNA/DAPI = blue; all images are confocal sections. White box indicates location of enlarged nucleus (right column). (b) Distributions of AAGAG RNA in intact larval L3 brain (left) and salivary gland (SG) tissue (right) (confocal sections). (c) Salivary gland squash projection indicating presence of AAGAG RNA (magenta, see arrows) at the chromocenter (marked with H3K9me2), and not the euchromatic arms. (d) Brain cell sections show that there are one or two AAGAG RNA foci per nucleus that are located in or near the pericentromeric heterochromatin (H3K9me2 antibody IF, green). Specifically, 100% of nuclei (N = 5) with AAGAG foci contain foci that completely or partially co-localize with H3K9me2 (left panel). Of these nuclei, (20%) have an additional AAGAG focus that generally does not co-localize with H3K9me2. (e) Projections of representative nuclei probed for AAGAG RNA (magenta) and AAGAG DNA (yellow) and stained for H3K9me3 (gray) and DNA (DAPI = blue). Left = cycle 12 nuclei prior to stable heterochromatin formation; right = early cycle 14 nucleus during heterochromatin formation. Note that in cycle 12, the few AAGAG RNA foci do not co-localize with AAGAG DNA. In cycle 14, AAGAG RNA foci co-localize with AAGAG DNA and H3K9me3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/48940/elife-48940-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) ND = Not detected, *repeats tested for expression from both strands. For more details about AAGAG RNA in cycle 14, see Figure 1, A and E and Figure 1—figure supplement 2D. (b) Projections of cycle 14 nuclei (dashed circle = nuclear periphery); DNA (DAPI) = blue, indicated satellite RNAs in magenta.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/48940/elife-48940-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Northern blot analyzing RNA from Oregon R embryos and third instar larva hybridized with a probe complementary to AAGAG(n). Note that signal intensity is not a representation of relative AAGAG RNA levels since different exposure times were used. (b-d) Examples of AAGAG RNA distributions in cycle 12, 13 and 14 embryos. Projections through embryo nuclei stained with DAPI (Blue). AAGAG RNA foci are shown in magenta and marked with arrows. (b) One of the 33% of cycle 12 embryos with AAGAG RNA foci. (c) One of the 67% of cycle 13 embryos with one or more foci (d) Cycle 14 embryo in which 100% of embryos contain AAGAG(n) RNA.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/48940/elife-48940-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Confocal sections of embryonic nuclei in cycle 14 (with exception of left panel in ‘b’), nuclear periphery outlined in dotted circles. (a) No RNase control. (b) Treated with RNaseIII (left nucleus is cycle 12) (c) RNaseH (d) RNase1 and (e) RNaseA.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/48940/elife-48940-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Unique regions adjacent to AAGAG(n), or AAGAG(n) within AG rich regions, were identified as potential sources of satellite transcripts, as described in Materials and methods. (+) indicates transcript containing AAGAG(n) or AG(n) blocks, while (-) indicates transcript containing CUCUU(n) or CU(n) blocks. Note that this designation of (+) and (-) strand does not preclude the possibility of rearrangements, that is conversion or flipping of satellite units within an array. (b) Northern blots of L3 RNA using probes to satellite (AAGAG or CUCUU), or adjacent unique regions. Unique regions shown are those containing at least one similar band size as AAGAG RNA. (-) strand regions for chrX 22,453,019–22,453,076 and the chr3R region did not exhibit any bands with a similar size as AAGAG RNA. (c—h) Confocal sections of embryo ventral ganglia or L3 brain lobe nuclei stained with DAPI (blue), and RNA-FISH to AAGAG (yellow) and unique region locations (magenta). ‘Unique Region’ (single copy sequence) RNA-FISH required Tyramide Signal Amplification (TSA), and therefore displays poorer resolution compared to AAGAG RNA (detected without TSA). Images labeled (+) used probes complementary to the strand containing AAGAG(n) or AG(n) blocks, while those labeled (-) recognize the strand containing CUCUU(n) or CU(n) blocks. Note that ‘unique region’ probe binds to regions adjacent to AAGAG(n) or AG(n), and not AAGAG(n) or AG(n) sequences themselves. Also note that the chr3R region indicated in ‘b’ was not analyzed in larvae. Only regions that co-localized with AAGAG RNA are shown. (c) Nuclei from late embryo ventral ganglia, RNA-FISH to AAGAG and probe from genomic coordinates chr2R:1,825,641–1,825,699 (top) or chrX:12,660,096–12,660,145 (bottom). (d-h) Confocal sections from L3 brain lobe nuclei, RNA-FISH to AAGAG and the following: (d) Unique region chr2R:1,825,641–1825699 (e) chr2R:1,826,691–1,826,740 f, chrX:11,830,844–11,830,910 g, chrX:12,660,096–12,660,145 hr, chrX:22,453,019–22,453,076.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/48940/elife-48940-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** Confocal sections of cycle 14 nuclei treated with either (a) RNAseH or (b) RNAseIII after AAGAG RNA probe (magenta) hybridization. A higher laser intensity for the AAGAG probe channel was used in b to demonstrate abolishment of AAGAG signal.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/48940/elife-48940-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** Also, AAGAG RNAi results in lethality. (a-c) Left column- section of brain lobes stained with DAPI (blue) and RNA-FISH to AAGAG RNA (magenta) imaged with the same intensity. Arrows point to AAGAG RNA foci. Right column- expanded images of left column indicated by dashed square. (a) Brain lobe from AAGAG RNAi (b) Brain lobe from scrambled RNAi. (c) Brain lobe from mCherry RNAi d, Northern blot with probes to AAGAG RNA or actin-5c in L3 RNAi. The AAGAG RNAi L3 AAGAG RNA top band signal is approximately 86% and 75% reduced compared to either scrambled or mCherry controls, respectively, when normalized to the actin-5c loading control. (e) RNA transcript levels (qRT-PCR) for euchromatic genes whose mRNAs contain short runs of AAGAG (pip5k59B, peb, CG33080). Numbers are means (from three biological replicates) ± standard deviation, after normalization to either (e) actin-5c loading control, or (f) rpl32 loading control. t-tests were performed in comparison to Oregon R or scrambled RNAi controls. This demonstrates that RNA levels of the few mRNAs containing an AAGAG sequence are not affected by AAGAG RNAi, ruling out the possibility that the observed lethality is due to off-target effects. (g) Ratio of pupae containing RNAi (driven by ubiquitous actin-GAL4 driver) or Tubby control, demonstrating lethality in AAGAG RNAi prior to the adult stage. (h) For embryos that hatch, death rates in larval and pupal stages differ after RNAi depletion of AAGAG, scrambled and mCherry controls (driven by ubiquitous actin-GAL4 driver). Note that death rate per stage is a measure of death only for those that survive to the indicated stage. **p<0.01, *p<0.05; error bars = SD; two tailed, type three t test.
+
 To determine where these transcripts localize within the nucleus, we simultaneously performed antibody staining (IF) for a histone post-translational modification enriched in heterochromatin (H3K9me3), and FISH for both AAGAG RNA and DNA. In cycle 12 embryos, AAGAG RNA is distributed randomly throughout the nucleus (Figure 1E) and does not co-localize with AAGAG(n) DNA. Once stable heterochromatin forms (cycle 14) (Yuan and O'Farrell, 2016), AAGAG RNA foci specifically co-localize with H3K9me3 (Figure 1E). By stage 13 embryos (~9.5 hr after egg-laying) AAGAG RNA is specifically enriched in the ventral ganglia (neural tissue), and foci remain either co-localized with or immediately adjacent to heterochromatin (Figure 1B and D). In addition, AAGAG RNA localizes to the chromocenter in polytene larval salivary glands (Figure 1C).
 
 The presence of AAGAG RNA throughout development suggested a potential role in development or viability. This hypothesis was tested by depleting AAGAG RNA in somatic cells, using actin-GAL4-driven AAGAG shRNA expression (Figure 1—figure supplement 6). Depletion of AAGAG RNA results in significantly lower viability by pupal stage compared to controls, with most lethality occurring during third instar larval (L3) stages (Figure 1—figure supplement 6, G and H, respectively). We conclude that AAGAG RNA associates with the earliest forms of heterochromatin, maintains this localization at least partially throughout embryonic and larval development, is enriched in neural tissue, and is important for viability.
 
 Surviving act-GAL4-driven AAGAG RNAi adults exhibited partial sterility, prompting further investigation into the distribution and potential functions of AAGAG RNA in the germ line (see Figure 2—figure supplement 1 for an overview of spermatogenesis). In larval and adult testes, high levels of AAGAG RNA are observed in primary spermatocytes, where they are enriched in regions adjacent to the DAPI-bright ‘chromosome territories’ located at the nuclear periphery (Figure 2, A to C). This pattern is distinct from CUCUU(n) RNA, which is localized to the lumen in primary spermatocytes (Figure 2—figure supplement 3). AAGAG RNA is not detectable, even with amplified signal, at earlier stages near the hub, or at later stages (meiosis I and II, and subsequent stages of sperm development). Spermatocyte AAGAG RNA originates from the same 2R, 3R and X heterochromatic satellite regions identified in somatic cells and is specifically not generated from the Y chromosome (Figure 2—figure supplement 2A and B, respectively).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/48940/elife-48940-fig2-v2.jpg)
+
+**Figure 2.:** (a) Confocal section of a larval testis. RNA-FISH to AAGAG = magenta, H2Av (chromatin) IF = gray, DNA (DAPI) = blue. S3, S5, and S6 refer to primary spermatocyte stages. (b) Enlarged confocal sections (representative boxes in a) of spermatocyte stages in larvae testes; scale bars = 5 µm. (c) Schematic summary of AAGAG RNA (magenta) localization in adult testes (see Figure 2—figure supplement 1 for a detailed description of spermatogenesis stages and events). AAGAG RNAs are visible in 16 cell primary spermatocytes (dark pink), and potentially 16 cell spermatogonial cysts (light pink); no AAGAG RNA was detected at earlier stages (hub, 2–8 cell spermatogonial cysts) or after the primary spermatocyte stage (meiosis I and II, sperm elongation- which includes leaf, canoe, individualization steps, and maturation). Post-round spermatid stages are indicated as spermatid nuclei. (d) Fertility after depletion of AAGAG(n) RNA in male primary spermatocytes or female ovaries using the Bam-GAL4 driver. An ~72% reduction in AAGAG RNA levels in testes (see Figure 2—figure supplement 3, B and C) results in complete male sterility but has no effect on female fertility. Expression of AAGAG(37) RNA simultaneously with AAGAG RNAi (both driven by Bam-Gal4) partially rescues male sterility (46% fertile). Expression of AAGAG RNA alone, without depletion of endogenous AAGAG RNAs, has no impact on male fertility. Statistically significant differences based on T-tests (two tailed, type three) are indicated by horizontal lines; ***p<0.001, **p<0.01; variation is represented by stdev.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/48940/elife-48940-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Spermatogenesis in Drosophila melanogaster initiates at the apical end of the testes (Hub), where GSCs divide asymmetrically, producing gonialblasts (GBs) that begin cell-differentiation. GB cells then undergo four mitotic divisions with incomplete cytokinesis to produce a cyst of 16 primary spermatocytes. Spermatocytes then undergo pre-meiotic S phase, mature during a prolonged G2 phase, and increase substantially in volume. The majority of testes-specific gene expression occurs at the primary spermatocyte stage, while genes not required until later stages are translationally repressed (reviewed in White-Cooper, 2010). Mature spermatocytes then undergo two rounds of meiosis to produce round spermatids (McKee et al., 2012), which are then processed into independent, condensed sperm nuclei in two stages (Rathke et al., 2014; Eren-Ghiani et al., 2015; Steinhauer, 2015). First, round spermatids undergo chromatin compaction, acrosome formation and flagellar elongation (Rathke et al., 2014; Eren-Ghiani et al., 2015). During chromatin compaction, a wave of histone H4 acetylation occurs, followed by deposition of the transition protein Mst77f, (Kost et al., 2015). Next, transition proteins are removed followed by the incorporation of protamines and prtl99c (histone:protamine exchange, indicated by tan to deep orange gradient) (Rathke et al., 2014; Eren-Ghiani et al., 2015). Finally, spermatid individualization involves removal of cytoplasm and tight condensing and coiling of chromatin (Steinhauer, 2015). Mature sperm are then stored in the seminal vesicle. (b) Summary of defects in late stages of spermatogenesis observed after depletion of AAGAG RNA by RNAi, using the Bam-Gal4 driver (data in Figure 3). Although AAGAG RNA is not visible in normal testes after the S6 spermatocyte stage (see a), RNAi depletion of AAGAG RNA only produces visible defects after the round spermatid stage. Aberrant elongation, sperm bundles, and defective histone:protamine exchange likely cause the observed complete absence of mature sperm in the SV.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/48940/elife-48940-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) Projections of Oregon R S5 spermatocytes probed for unique regions of RNA (green) adjacent to AAGAG(n) (magenta) or AAGAG(n) containing AG rich blocks. DAPI (DNA) is indicated in blue. (b) Projections of S5 spermatocyte probed to AAGAG RNA (magenta) imaged at same laser intensities in XY and XO genotypes. DNA is stained with DAPI (blue).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/48940/elife-48940-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Although visibly absent in embryos and somatic larval tissues, CUCUU RNA (green) is expressed in adult spermatocytes. Note that CUCUU RNA is localized to the S5 lumen, internal to the chromatin (DAPI), in contrast to the peripheral localization of AAGAG RNA (see Figure 3b); DNA = DAPI (blue). (b) Projections of AAGAG foci (magenta) in S5 spermatocytes after Bam-GAL4-driven Scrambled control or AAGAG RNAi. Signal was imaged with the same laser intensities for each genotype. (c) Average median intensities (arbitrary units, ± st. dev.) of AAGAG RNA, p=2×10−5 and CUCUU RNA in S5 spermatocytes in AAGAG and Scrambled RNAi testes (not significant). This represents a 72% reduction of AAGAG RNA in S5 spermatocytes after AAGAG RNAi, compared to scrambled controls, with little to no decrease in CUCUU RNA. (d) Average intensity of AAGAG RNA in S5 spermatocytes after AAGAG RNAi increases significantly (p=0.03) upon co-expression of AAGAG(37) RNA (also induced by the Bam-Gal4 driver). two tailed, type three t test used for all.
+
 To deplete AAGAG RNA in 4–16 cell spermatogonial cysts, we used the Bag of marbles (Bam)-GAL4 (White-Cooper, 2012) driver to express AAGAG shRNA. Strikingly, AAGAG depletion (~72% reduction) results in 100% male sterility, with no impact on female fertility (Figure 2D). AAGAG RNAi using drivers expressed earlier in spermatogenesis does not cause fertility defects (Table 1). We conclude that expression of AAGAG RNA in primary spermatocytes is required for male fertility.
 
+**Table 1.**
+ Male fertility in AAGAG RNAi with GAL4 drivers expressed at earlier testes stages than Bam.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>GAL4 RNAi driver</th>
+      <th>Expression location (Demarco et al., 2014)</th>
+      <th>% fertile</th>
+      <th>+ /- stdev.</th>
+      <th>Minimum number of males per set</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fascillin</td>
+      <td>Hub</td>
+      <td>94</td>
+      <td>16</td>
+      <td>15</td>
+    </tr>
+    <tr>
+      <td>PTC</td>
+      <td>Soma- CySCs and cyst cells</td>
+      <td>90</td>
+      <td>5</td>
+      <td>18</td>
+    </tr>
+    <tr>
+      <td>Traffic Jam</td>
+      <td>Soma- Hub and CySCs</td>
+      <td>97</td>
+      <td>4</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Dpp1</td>
+      <td>Soma- CySCs and early cyst cells</td>
+      <td>96</td>
+      <td>6</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>Nanos</td>
+      <td>Germline- GSCs and early germline cysts</td>
+      <td>83</td>
+      <td>5</td>
+      <td>13</td>
+    </tr>
+  </tbody>
+</table>
+
 These results suggested that male infertility upon AAGAG RNA depletion would be caused by defects at stages where AAGAG RNA is expressed. Surprisingly, Bam-GAL4-driven depletion of AAGAG RNA resulted in no gross morphological defects prior to or during meiosis I or II in pupal or adult (0–6 hr and 4–7 days post-eclosion) testes. However, individualized mature sperm DNA was completely absent from the seminal vesicles (SV), in contrast to their abundance in controls (Figure 3A), demonstrating that AAGAG RNA is important for later steps in spermatogenesis. In fact, the first visible defects are observed during the canoe, individualization and maturation stages (Figure 3—figure supplement 1A and Figure 3B), which are devoid of detectable AAGAG RNA in wild-type testes (Figure 2C). For instance, aberrant canoe stage and individualizing sperm DNA (i.e. irregular, long and decondensed sperm DNA) were observed at significantly higher frequencies after AAGAG RNA depletion, compared to scrambled RNAi controls (Figure 3—figure supplement 1 and Figure 3E). At later individualization stages, sperm bundles in AAGAG RNA depleted testes often contained less than the normal 64 sperm and were disorganized, displaying ‘lagging’ sperm nuclei and loosely packed sperm bundles (Figure 3, B and E). Finally, sperm DNA present was abnormally ‘kinked,’ ‘needle eyed’ or ‘knotted’ in appearance, and normal, mature forms of sperm DNA readily found in basal regions (just prior to entry into the seminal vesicle) of control testes were never observed after AAGAG depletion (Figure 3B). These phenotypes indicated that AAGAG RNA is important for sperm nuclear organization, similar to the consequences of defective histone-protamine transitions observed previously (Rathke et al., 2010; Jayaramaiah Raja and Renkawitz-Pohl, 2006). Strikingly, antibody IF revealed that Bam-GAL4-driven AAGAG RNA depletion caused reduced and defective incorporation of the transition protein Mst77F (Figure 3C), an absence of Protamine A/B (Figure 3D), and histone retention into the late canoe stage (Figure 3—figure supplement 1).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/48940/elife-48940-fig3-v2.jpg)
+
+**Figure 3.:** (a) Seminal vesicles (SVs) in testes from 0 to 6 hr old adults; DAPI (DNA) = cyan. Mature sperm nuclei visible as thin, elongated DAPI signals in the scrambled control (top, white arrow) are absent after AAGAG RNAi. Individualized mature sperm (white arrow) are visible in SVs from AAGAG RNAi males that also express AAGAG(37) RNA (partial rescue, 4–7 day old adults). (b) Bundles of elongating sperm nuclei visible in the scrambled RNAi control (top). Defective ‘decondensed’ (middle, white arrowheads), ‘knotted,’ ‘kinked ‘needle eyed’ and ‘lagging’ (bottom, white arrowheads) sperm phenotypes are visible in the AAGAG RNAi but are much less frequent or absent in controls (see e). (c) Transition Protein Mst77F (red) is present on sperm DNA in control RNAi but is largely absent and/or disorganized after AAGAG RNAi (dashed boxes indicate regions in the zoomed images to the right). (d) Protamine A/B (purple) is present on sperm DNA in the scrambled control RNAi but is absent after AAGAG RNAi. Scale bars = 10 µm except for zoomed images in c and d = 8 µm. (e) Quantitation of sperm defects (4–6 day adult testes) associated with AAGAG RNAi depletion, along with AAGAG RNA rescue, compared to scrambled RNAi control.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/48940/elife-48940-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Histones are retained until late canoe stage with AAGAG RNAi in primary spermatocytes but removed by early canoe stage in scrambled RNAi. (b) Canoe stage nuclei exhibit abnormal morphology with AAGAG RNAi, and this morphology is partially restored with AAGAG(37) rescue.
 
 Importantly, fertility defects resulting from AAGAG RNA depletion are partially rescued by simultaneously expressing AAGAG RNA (185 bases, 37 repeats), when both are controlled by the Bam-GAL4 driver. Under these conditions we observe a 2-fold increase in AAGAG RNA signal compared to AAGAG RNAi alone (Figure 2—figure supplement 3D), which is sufficient to partially restore male fertility (46% with AAGAG RNA expression compared to 0% in AAGAG RNAi alone, Figure 2D), the presence of mature sperm in the seminal vesicles (Figure 3A), and normal sperm DNA morphology (Figure 3E and Figure 3—figure supplement 1B). We conclude that RNA transcribed from the simple tandem repeat AAGAG(n) in primary spermatocytes is necessary for completing spermatogenesis and male fertility in Drosophila melanogaster, at least in part by promoting the histone-protamine transition and/or other post-meiotic steps in sperm maturation.
 
@@ -59,106 +164,1296 @@ It is also worth noting that the expression of simple repeats for essential func
 
 ## Materials and methods
 
-## Imaging
+### Imaging
 
 Most images were acquired using a Zeiss LSM710 confocal microscope using 40X water or 63X oil objectives. For these confocal images, projections were acquired as z-stacks with step sizes depending on the sample. Image files were then processed and analyzed using Fiji. Non-rescue testes images in Figure 3 and Figure 3—figure supplement 1 were acquired using DeltaVision Elite wide-field microscope system (Applied Precision). Images were acquired as z-stacks with a step size of 0.5 μm, raw data files were deconvolved using a maximum intensity algorithm. 3D z-stack images were represented in 2D by projection using SoftWorx (Applied Precision).
 
-## RNA probe generation for RNA-FISH
+### RNA probe generation for RNA-FISH
 
 RNA probes were made by using oligo templates with antisense T3 promoters on the 3’ends, hybridizing an oligo composed of sense T3 promoter so as to create a double stranded 3’ end, or in the case of 359 bp repeat, amplification with oligos containing T3 and T7 promoter ends on genomic DNA using standard protocols. Probe templates were then transcribed with T3 RNA polymerase (or T7 for one strand of 359 bp repeat) and either UTP-biotin or UTP-digoxigenin labels, or in the case of RNA without Uracil, biotin-ATP. Oligos are listed in Table 2 and were ordered standard desalted from IDT. Reaction conditions were as follows: In a 40 ul reaction, 1X RNApol reaction buffer (NEB cat. MO3782), 1 mM each final concentration of ATP, GTP, CTP and 0.62 mM UTP, supplemented with 0.35 mM final concentration of either digoxegenin-11-UTP (Roche cat. 3359247910), biotin-UTP (Sigma, cat. 11388908910), or biotin-11-ATP (Perkin Elmer, cat. NEL544001EA), 1 Unit Protector RNase inhibitor (Roche cat. 3335402001), 5 μM each of probe template and T3 promoter oligo (5’-AATTAACCCTCACTAAAG), and H20 to 40 μl were combined. Reactions were heated to 80°C, 3 min to denature probes, iced 2 min., 4 μl (or 200Units) of T3 (or T7) RNA polymerase (NEB cat. M0378S) added and incubated at 37°C overnight. 2 μl Turbo DNAse (ThermoFisher Cat. AM2238) was then added to degrade DNA templates, incubated at 37°C for 15 min and the reaction stopped by adding 1.6 μl of 500 mM EDTA. Probes were then purified using standard sodium acetate/ethanol purification. Probe concentration was then assessed using Qubit RNA high sensitivity protocols and reagents and stored at −80°C.
 
-## RNA-FISH buffers
+**Table 2.**
+ Oligos for RNA probes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Repeat or region</th>
+      <th>Oligo with T3 antisense promoter</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>CAGC(n)</td>
+      <td>CAGCCAGCCAGCCAGCCAGCCAGCTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CCCA(n)</td>
+      <td>CCCACCCACCCACCCACCCACCCACCCATCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CATTA(n)</td>
+      <td>CATTACATTACATTACATTACATTATCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CGGAG(n)</td>
+      <td>CGGAGCGGAGCGGAGCGGAGCGGAGTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CGA(n)</td>
+      <td>CGACGACGACGACGACGACGACGATCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CAACT(n)</td>
+      <td>CAACTCAACTCAACTCAACTCAACTTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CGAAG(n)</td>
+      <td>CGAAGCGAAGCGAAGCGAAGCGAAGTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CCCCAG(n)</td>
+      <td>CCCCAGCCCCAGCCCCAGCCCCAGTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CCGAG(n)</td>
+      <td>CCGAGCCGAGCCGAGCCGAGCCGAGTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CGGAA(n)</td>
+      <td>CGGAACGGAACGGAACGGAACGGAATCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CACCC(n)</td>
+      <td>CACCCCACCCCACCCCACCCCACCCTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CTAGT(n)</td>
+      <td>CTAGTCTAGTCTAGTCTAGTCTAGTTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CATCG(n)</td>
+      <td>CATCGCATCGCATCGCATCGCATCGTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CAT(n)</td>
+      <td>CATCATCATCATCATCATCATCATTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CAAAC(n)</td>
+      <td>CAAACCAAACCAAACCAAACCAAACTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CGAAA(n)</td>
+      <td>CGAAACGAAACGAAACGAAACGAAATCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CATAT(n)</td>
+      <td>CATATCATATCATATCATATCATATTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>GAAA(n)</td>
+      <td>GAAAGAAAGAAAGAAAGAAAGAAATCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CAGAA(n)</td>
+      <td>CAGAACAGAACAGAACAGAACAGAATCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>AAGGAG(n)</td>
+      <td>AAGGAGAAGGAGAAGGAGAAGGAGAAGGAGTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>AAGAGG(n)</td>
+      <td>AAGAGGAAGAGGAAGAGGAAGAGGAAGAGGTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>AATAC(n)</td>
+      <td>AATACAATACAATACAATACAATACAATACTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>AATAG(n)</td>
+      <td>AATAGAATAGAATAGAATAGAATAGAATAGTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>AATAGAC(n)</td>
+      <td>AATAGACAATAGACAATAGACAATAGACTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>AATAACATAG(n)</td>
+      <td>AATAACATAGAATAACATAGAATAACATAGTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>AACAC(n)</td>
+      <td>AACACAACACAACACAACACAACACAACACTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>dodeca(n)</td>
+      <td>ACCGAGTACGGGACCGAGTACGGGTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>GTGTT(n)</td>
+      <td>GTGTTGTGTTGTGTTGTGTTGTGTTGTGTTTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>GTAAT(n)</td>
+      <td>GTAATGTAATGTAATGTAATGTAATGTAATTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>GTATT(n)</td>
+      <td>GTATTGTATTGTATTGTATTGTATTGTATTTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>TTAA (n)</td>
+      <td>TTAATTAATTAATTAATTAATTAATTAATTAATCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CAAT (n)</td>
+      <td>CAATCAATCAATCAATCAATCAATCAATCAATTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>AAGAG(n)</td>
+      <td>GAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAATCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>CTCTT(n)</td>
+      <td>CTCTTCTCTTCTCTTCTCTTCTCTTCTCTTTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>359 Forward</td>
+      <td>AATTAACCCTCACTAAAGGGAGAAATGGAAATTAAATTTTTTGG</td>
+    </tr>
+    <tr>
+      <td>359 Reverse</td>
+      <td>TTAATACGACTCACTATAGGGAGAGTTTTGAGCAGCTAATTACC</td>
+    </tr>
+    <tr>
+      <td>chr2R:1,825,641–1825699 sense</td>
+      <td>GGCAGTTTATGTGCGTACAACAACAACAGGACTGCAAACAAAACACGAAACAGATATTTTTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>chr2R:1,825,641–1825699 anti-sense</td>
+      <td>AAAATATCTGTTTCGTGTTTTGTTTGCAGTCCTGTTGTTGTTGTACGCACATAAACTGCCTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>chr2R:1,826,691–1,826,740 sense</td>
+      <td>TAGACACATCTACGAAGACACAATTCTACAAGAACTAAACAACAAAAAGTTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>chr2R:1,826,691–1,826,740 anti-sense</td>
+      <td>ACTTTTTGTTGTTTAGTTCTTGTAGAATTGTGTCTTCGTAGATGTGTCTATCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>chrX:11,830,844–11,830,910 sense</td>
+      <td>CCAAGCTTCAGGAGAAAGAGAAAGAAGAAAGCTTTAAACTTAAGGAAAGAGAAGAGAGCCTTAGGATTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>chrX:11,830,844–11,830,910 antisense</td>
+      <td>CTAAGGCTCTCTTCTCTTTCCTTAAGTTTAAAGCTTTCTTCTTTCTCTTTCTCCTGAAGCTTGGCTTTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>chrX:12,660,096–12,660,145 sense</td>
+      <td>TCGCACACACACACGCAACACTTAGGCACACATAGGAGATAGAGTGAGATCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>chrX:12,660,096–12,660,145 anti-sense</td>
+      <td>TCTCACTCTATCTCCTATGTGTGCCTAAGTGTTGCGTGTGTGTGTGCGATCTCCCTTTAGTGAGGGTTAA TT</td>
+    </tr>
+    <tr>
+      <td>chrX:22,453,019–22,453,076 sense</td>
+      <td>CGACAGACAGTAAAATTAAACAAACTGCGGACGCGTGTGACAGAACTAATCCAACTTTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>chrX:22,453,019–22,453,076 anti-sense</td>
+      <td>AAGTTGGATTAGTTCTGTCACACGCGTCCGCAGTTTGTTTAATTTTACTGTCTGTCGTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>chr3R:3,169,758–3,169,820 antisense</td>
+      <td>TCGGAAGAGACTAAACTTGTGCATTCGATATAGCTCTTTGTCGGCCCTAGCTGCTGTAAACAATCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>chr3R:3,169,758–3,169,820 sense</td>
+      <td>TTGTTTACAGCAGCTAGGGCCGACAAAGAGCTATATCGAATGCACAAGTTTAGTCTCTTCCGATCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>chr3R:3,170,372–3,170,441 antisense</td>
+      <td>TTAAACTATATTAAACATTGTATATAAGTATAATAGCGAATACTATTTACGTATATGTTCT TTCATAAATTCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+    <tr>
+      <td>chr3R:3,170,372–3,170,441 sense</td>
+      <td>ATTTATGAAAGAACATATACGTAAATAGTATTCGCTATTATACTTATATACAATGTTTAATATAGTTTAATCTCCCTTTAGTGAGGGTTAATT</td>
+    </tr>
+  </tbody>
+</table>
+
+### RNA-FISH buffers
 
 For clarity, the methods for RNA-FISH probe hybridization and detection are numbered below.
 
-## RNA-FISH methods
+#### RNA-FISH methods
 
-## Protocol 1. RNA-FISH probe hybridization and primary antibody incubation
+##### Protocol 1. RNA-FISH probe hybridization and primary antibody incubation
 
 RNA probe hybridization for all tissues was carried about according to Legendre (2013), steps 10–17 under subheading #3. Samples were then washed one time with PBT then blocked in PBT block 1 hr at room temperature. Samples were then processed for either ‘non-Tyramide Signal Amplification (TSA) probe amplification’ (Protocol 2) or ‘TSA amplification for RNA-FISH probe detection’ (Protocol 3).
 
-## Protocol 2. Non-TSA probe detection for RNA-FISH
+##### Protocol 2. Non-TSA probe detection for RNA-FISH
 
 For ‘non-TSA amplification’, samples were incubated with either mouse anti-digoxigenin-Cy5 (source unknown) or rabbit anti-digoxigenin A488 (Invitrogen cat# 700772) in PBT block at 1/200 dilution for 1 hr at room temperature. Afterwards, samples were incubated 6x’s 10 min each in PBT block, stained with DAPI 10 min, washed 3’xs 10 min. each in PBS and mounted in Prolong-Gold antifade mountant (Thermofisher, cat. P36390).
 
-## Figures processed using this protocol
+##### Figures processed using this protocol
 
 Figure 1D (see below for 1C); Figure 2A and B; Figure 1—figure supplement 4, C–H for AAGAG only; Figure 1—figure supplement 6, A–C; Figure 2—figure supplements 2 and 3.
 
-## Protocol 3. TSA amplification for RNA-FISH probe detection
+##### Protocol 3. TSA amplification for RNA-FISH probe detection
 
 For samples undergoing ‘TSA amplification for RNA-FISH probe detection,’ samples were incubated with primary antibody (1/400 dilution of mouse anti-digoxigenin coupled to biotin (Jackson Immuno Research cat.200-062-156, lot. 123482)), with 0.2 U/μl protector RNAse inhibitor and incubated overnight at 4°C. Next, samples were washed 6x’s 10 min each in PBT block. The next steps are essentially as per ‘tyramide signal amplification kit’ protocols (ThermoFisher) but with reagents purchased separately: Samples were incubated with 1:100 streptavidin-HRP (Molecular probes, cat. S911) in PBT block for 1 hr at room temperature. Samples were then washed in 1:1 PBT/2XWBR 6x’s 10 min each, once with PBT, and 2x’s with PBS. Samples were then incubated with Alexa 647 tyramide (TSA Reagent, Alexa Fluor 647 Tyramide cat. T20951) according to company protocols. Essentially, this consisted of adding 1 μl of 30% hydrogen peroxide to 200 μl tyramide signal kit amplification buffer, then diluting this solution 1/100 in tyramide signal amplification buffer for a final hydrogen peroxide concentration of 0.0015%. This solution was then added to the sample and incubated at room temperature for 1 hr in the dark. Samples were then washed 1x with PBS for 10 min, stained with DAPI for 10 min, washed 4x’s with PBS 10 min. each, and mounted in Prolong Gold Antifade mountant.
 
-## Figures processed using this protocol
+##### Figures processed using this protocol
 
 Figure 1A and B (see below for 1E); Figure 1—figure supplements 1–3; Figure 1—figure supplement 4, C–H for non AAGAG RNA detection (ie 2R and X heterochromatic transcripts); Figure 1—figure supplement 5.
 
-## RNA-FISH of repeats in embryos
+### RNA-FISH of repeats in embryos
 
 For RNA-FISH of repeat RNAs, 0–8 hr Oregon R embryos were collected on apple juice plates, dechorionated and processed according to Legendre (2013), as per protocols 1 and 3 above, with the exception of using 37% formaldehyde stock from Sigma (cat. F1635-500ML). For Figure 1—figure supplement 1, for non-AAGAG repeat RNAs, at least 50 cycle-14 embryos were imaged. With the exception of AAGAG(n) RNA, we did not quantify the percent of embryos with RNA foci. For Figure 1—figure supplement 2, at least 10 embryos prior to cycle 12, at least three embryos for cycles 12 and 13, and hundreds of embryos for cycle 14 were imaged for AAGAG(n) foci.
 
-## Co-IF DNA/RNA-FISH of AAGAG RNA in embryos
+### Co-IF DNA/RNA-FISH of AAGAG RNA in embryos
 
 (Figure 1E). Co-IF RNA/DNA-FISH was performed essentially as described in Shpiz et al. (2013), in which RNA-FISH was performed first, signal detected via tyramide signal amplification, RNAse treatment to remove RNA and prevent DNA-FISH probes binding to RNA, and then DNA-FISH performed. Essentially, RNA-FISH was performed as above, but after tyramide signal amplification (protocols 1 and 3 above) and washing, samples were fixed in 4% formaldehyde. Samples were then washed 3x in PBS 2 min. each. RNA was then removed under the following conditions: In a 50 μl final volume, 1X Shortcut RNaseIII buffer (NEB cat. M0245S), 1.5 ul RNASEIII (neb cat. MO245S), 100 μg/ml RNaseA final concentration, 1X MnCl2 (NEB cat. MO245S) and water to 50 μl were added and samples incubated overnight at 4°C. Samples were then rinsed 3x’s in PBT 5 min each, rinsed in 1:5, 1:1 and 5:1 mixtures of PBT: RNA hybridization solution for 15 min each. Samples were then replaced with hybridization buffer and incubated 15 min. A DNA oligo probe to AAGAG(7) tagged with Alexa5 was then diluted in hybridization buffer to 2.5 ng/μl, denatured at 70°C for 3 min, then left on ice for 2 min. Hybridization solution was removed from the embryos, probe solution added, and the sample denatured at 80°C for 15 min and hybridized overnight at 37°C with nutation. Samples were then washed 2x’s with pre-warmed 37°C hybridization buffer 10 min each. Samples were then washed in 3:1, 1:1, 1:3 hybridization buffer:PBT 15 min. each at 37°C. Samples were then washed 2x’s in PBT at room temperature 5 min. each. Samples were then stained with DAPI 10 min., washed once in PBS, and mounted in Pro-Long Gold Antifade mountant.
 
-## RNA-FISH in larvae
+### RNA-FISH in larvae
 
 This protocol is essentially as described in Jandura et al. (2017). All figures containing larval RNA-FISH (Figure 1B and D, Figure 2A and B and Figure 1—figure supplement 4, C–H) used protocol A) and C) below. Those processed for TSA (needed for protocol three above) additionally used B below. For Figure 1—figure supplement 6, A–C, at least three brain lobes were imaged.
 
-## RNA-FISH in salivary gland squash
+### RNA-FISH in salivary gland squash
 
 (Figure 1C) Larvae were grown, prepped and salivary glands processed as per Cai et al. (2010), rehydrated in 95%, 70%, then 30% ethanol 1 min each, then washed 5 min in PBT (0.1% Triton X-100 (TX100)). Slides were then fixed again in 3.7% formaldehyde in PBT (0.1% TX100), washed 2x 3 min. each in PBT (0.1% TX100), treated with 0.1% DEPC in PBT (0.1% TX100) and washed one time in PBT (0.1% TX100). Sample was then covered with pre-denatured hybridization solution, covered with a coverslip and incubated at 56°C in a sealed hybridization chamber for 2 hr. The probe solution was then created by adding 100 ng probe in 100 μl hybridization solution, heating at 80°C for 3 min., and cooling on ice for 5 min. This probe solution was then added to the sample, a coverslip added and sealed with rubber cement, and incubated overnight at 56°C in a humid box. At 55°C in a coplin jar, slides were then treated in 50% formamide/PBT (0.1% tx100) 1 hr, 25% formamide/PBT (0.1% Tx100) 10 min, then 3x with PBT (0.1%Tx100) 10 min each. Once at room temp, samples were blocked in 1:1 PBT/2xWBR and processed as per larval RNA-FISH using non -TSA probe detection (protocol two above).
 
-## RNAse treatment of embryos
+### RNAse treatment of embryos
 
 (Figure 1—figure supplement 3) For RNAse of embryos prior to probe hybridization: RNA-FISH to AAGAG was performed on embryos pre-treated with RNaseIII (which cleaves dsRNA; Nicholson, 2014), RNaseH (which cleaves the RNA strand in RNA/DNA hybrids), RNase I (which non-specifically cleaves ssRNA and dsRNA), and RNaseA (which cleaves adjacent to pyrimidines, preferentially in ssRNA, and specifically not between purines such as 5’-AGAAGGGAGAAG [Herbert et al., 2018; Kelemen et al., 2000]). Reaction conditions were as follows: Samples were treated in 50 μl final volume with either RNAseIII: 1X RNAseIII buffer, 1.5 μl Shortcut RNaseIII (New England Biolabs, cat. M0245s), and 1X MnCL2; RNAseH treatment: 1X RNAseH buffer, 1.5 μl RNAseH (New England Biolabs, cat. M0297S); RNAse one treatment: 1X RNAseH buffer, 1.5 μl RNAse1 (Ambion cat. AM2294); RNAse A treatment: 1x RNAseH buffer, 15 μg RNAseA- at 37°C for 5 hr. Samples were then washed 5x’s in PBT 2 min each, treated with 0.1% DEPC to deactivate any remaining RNAse, then washed in PBT. Samples were then rinsed in 1:1 mixture of PBT:RNA hybridization solution for 2 min and resuspended in 100% hybridization solution. Samples were then processed as per ‘RNA-FISH probe hybridization and primary antibody incubation’ (protocol one above) and protocol ‘TSA amplification for RNA-FISH probe detection’ (protocol three above). For each condition, at least 10 entire embryos were imaged.
 
-## RNAse of embryos after probe hybridization
+### RNAse of embryos after probe hybridization
 
 (Figure 1—figure supplement 5). After probe hybridization and washing with PBS, samples were treated in 50 μl final volume for either RNAseIII treatment: 1X RNAseIII buffer, 1.5 μl Shortcut RNaseIII (New England Biolabs, cat. M0245s), and 1X MnCL2 or RNAseH treatment: (1X RNAseH buffer, 1.5 μl RNAseH (New England Biolabs, cat. M0297S) at 37°C for 2 hr. Samples were then blocked with 2x PBT:WBR 1 hr then processed as per protocol ‘TSA amplification for RNA-FISH probe detection’ (protocol three above). Three embryos treated with RNaseH were imaged, while six treated with RNAseIII were imaged.
 
-## RNA-FISH in adult testes
+### RNA-FISH in adult testes
 
 For analysis of AAGAG RNA in RNAi adult testes (Figure 2—figure supplement 3), flies were mated at 29°C and F1 progeny grown at 29°C to mimic conditions used to assess sperm morphological defects. AAGAG RNA was also visualized in RNAi testes grown at 25°C to rule out that temperature affected levels and distribution of AAGAG RNA (not shown). For analysis of AAGAG RNA in Oregon R and XO/XY testes (Figure 2—figure supplement 2), flies were grown at 25°C. Flies were then anesthetized with CO2, testes removed with forceps and placed in 7 μl of PBS on (+) charged slides, the contents spilled by poking with sharp forceps, a RainX-treated coverslip placed over the testes and both snap frozen in LiN2. The coverslip was then immediately removed with a razor blade and slides stored at −80°C until needed. When ready to process, slides were fixed for 20 min in 4% formaldehyde in PBT, washed three times, 5 min. each wash, in PBT. Samples were then incubated in 80% cold acetone in PBT for 10 min at −20°C and processed as per RNA-FISH for ‘all larval samples’ using protocol two above for detection without TSA amplification. For determination of average AAGAG(n) intensity levels, for each condition at least three testes were imaged, and at least 5 S5 spermatocytes derived from each of these testes were imaged.
 
-## Immuno-fluorescence in adult testes without RNA-FISH
+### Immuno-fluorescence in adult testes without RNA-FISH
 
 Flies were grown at 29°C and processed as above in ‘RNA-FISH in adult testes’ up until −80°C storage. Samples were then fixed 20 min in 4% formaldehyde in PBT, passed through an ethanol series (75–85–95%) at −20°C and dried prior to permeabilisation in 1X PBS-0.4% Triton X-100 (0.4 PBT). Samples were then blocked in 0.1PBT with 1% BSA for 1 hr at room temperature, incubated with primary antibodies overnight at 4°C and with secondary antibodies for 1 hr at room temperature (see Table 3 for antibody information).
 
-## Northern blotting
+**Table 3.**
+ Antibodies used for Immuno-Fluorescence.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Supplier; Cat. number</th>
+      <th>Working concentration</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Rabbit-anti H3K9me3</td>
+      <td>Abcam; 8898</td>
+      <td>1/250</td>
+    </tr>
+    <tr>
+      <td>Mouse-anti H3K9me2</td>
+      <td>Active Motif; 39753</td>
+      <td>1/250</td>
+    </tr>
+    <tr>
+      <td>Rabbit-anti-H2AV</td>
+      <td>Lake placid AM318; 9751</td>
+      <td>1/100</td>
+    </tr>
+    <tr>
+      <td>Goat anti-GFP</td>
+      <td>Rockland 121600-101-215</td>
+      <td>1/500</td>
+    </tr>
+    <tr>
+      <td>Rabbit anti-H4acetyl</td>
+      <td>Millipore 06–598</td>
+      <td>1/200</td>
+    </tr>
+    <tr>
+      <td>Rat anti-Mst77F</td>
+      <td>Elaine Dunleavy, PhD; NUI Galway, Ireland</td>
+      <td>1/200</td>
+    </tr>
+    <tr>
+      <td>Guinea pig anti-Mst35Ba/Bb (Protamine A/B)</td>
+      <td>Elaine Dunleavy, PhD; NUI Galway, Ireland</td>
+      <td>1/200</td>
+    </tr>
+    <tr>
+      <td>Mouse anti pan-histone</td>
+      <td>Millipore MAB 3422</td>
+      <td>1/200</td>
+    </tr>
+  </tbody>
+</table>
+
+### Northern blotting
 
 Non-radioactive, denaturing northern blots were essentially carried out according to Chemiluminescent Nucleic Acid Detection Module Kit (Thermofisher cat# 89880). Essentially, purified RNA was denatured for 3 min at 70°C in NorthernMax formaldehyde loading dye. Samples were then run on denaturing agarose gels with 6.9% formaldehyde in MOPS buffer. RNA was transferred to (+) charged nylon membranes in an electroblotter (FisherBiotech Semi-Dry blotting unit, FB-SDB-2020) using 200mA for 30 min. The membrane was then UVC crosslinked and prehybridized with ULTRAhyb Ultrasensitive Hybridization Buffer (Thermofisher, cat# 8669) at 68°C for 30 min. Biotinylated probes at a concentration of 30 ng/ml were then added to UltraHyb buffer, pre-hybridization solution replaced with solution containing probe and hybridized overnight at 68°C with rotation. The next day, membranes were washed and processed according to Chemiluminescent Nuclei Acid Detection kit manual. For Northern blots shown in Figure 1—figure supplement 2, at least three northern blots from three biological replicates were performed with similar patterns. For Northern blot shown in Figure 1—figure supplement 6, at least two biological replicates for each genotype were performed, with similar knockdown results.
 
-## Identification of genomic sources of AAGAG RNA
+### Identification of genomic sources of AAGAG RNA
 
 To identify the genomic origin of AAGAG RNA, we mined D. melanogaster transcriptome data (modENCODE staged embryo and L3 larvae total RNA-seq reads) (Brown et al., 2014) for AAGAG RNA attached to mappable ends with uniquely mapped sequences and adjacent to >50 bp blocks of annotated AAGAG(n) DNA. More specifically, we first used trim_galore to filter out adaptors and low quality sequencing reads. Reads with at least three consecutive AAGAG repeats were identified and their corresponding pair-end sequences were extracted. Including only AAGAG containing reads, assemble the other end sequences into contigs using Phrap (-vector_bound 0 -forcelevel 5 -minscore 30 -minmatch 10). We then used Blast (e-value <10−5) to identify potential genomic locations in release 6 of D. melanogaster genome (Hoskins et al., 2015) (Table 4). This conservative analysis revealed that the majority of AAGAG RNA originates from 2R and X heterochromatic satellites (Table 4 and Figure 1—figure supplement 4). To confirm that this computational genomic analysis identified sources of AAGAG transcripts, we performed northern blotting and RNA-FISH to these and a 3R heterochromatic region. Essentially, transcript sizes using probes to these regions are similar if not identical to AAGAG RNA, and foci from these mappable regions co-localize with AAGAG RNA foci (Figure 1—figure supplement 4, B and C–H, respectively), demonstrating that AAGAG RNA originates from identified 2R, X and 3R heterochromatin genomic regions.
 
-## Insertion of shRNA or overexpression constructs
+**Table 4.**
+ Uniquely mapped RNA identified via phrap adjacent AAGAG(>10) containing blocks
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Chr</th>
+      <th>e0-2hr</th>
+      <th>e2-4hr</th>
+      <th>e4-8hr</th>
+      <th>e8-12hr</th>
+      <th>e12-14hr</th>
+      <th>e14-16hr</th>
+      <th>e16-20hr</th>
+      <th>e20-24hr</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2R</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>chr2R.1825640.1825699</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>chrX.12660077.12660134</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>chrX.11830795.11830858</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>X</td>
+      <td>chrX.22453019.22453120</td>
+      <td>NA</td>
+      <td>chrX.22453019.22453182</td>
+      <td>NA</td>
+      <td>chrX.22453019.22453163</td>
+      <td>chrX.22453019.22453177</td>
+      <td>chrX.22453019.22453093</td>
+      <td>chrX. 22453019.22453196</td>
+    </tr>
+  </tbody>
+</table>
+
+### Insertion of shRNA or overexpression constructs
 
 RNAi and overexpression lines were created via small-hairpin RNA (shRNA) to AAGAG RNA driven with the UAS/GAL4 system, or in the case of control, a scrambled RNA sequence, using genomic insertion of the pValium20 vector used for the Transgenic RNAi project (TRiP) at Harvard (Ni et al., 2011). Importantly, the scrambled shRNA sequence contained the same percentage of A’s and G’s but in a random order (see Table 5 for sequences). pValium20 constructs with shRNA or overexpression sequences (see next) were injected and screened for insertion by Rainbow Transgenic, Inc.
 
-## Cloning of shRNA and over-expression constructs into pValium20 vector
+**Table 5.**
+ shRNA and overexpression oligos.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Description</th>
+      <th>Sequence 5’−3’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>shRNA to AAGAG(n)</td>
+      <td>ctagcagtGAAGAGAAGAGAAGAGAAGAGtagttatattcaagcataCTCTTCTCTTCTCTTCTCTTCgcg</td>
+    </tr>
+    <tr>
+      <td>shRNA to AAGAG(n) complement</td>
+      <td>aattcgcGAAGAGAAGAGAAGAGAAGAGtatgcttgaatataactaCTCTTCTCTTCTCTTCTCTTCactg</td>
+    </tr>
+    <tr>
+      <td>shRNA to scrambled</td>
+      <td>ctagcagtGAGAGAAAAAGGGAAAGAAGGtagttatattcaagcataCCTTCTTTCCCTTTTTCTCTCgcg</td>
+    </tr>
+    <tr>
+      <td>shRNA to scrambled complement</td>
+      <td>aattcgcGAGAGAAAAAGGGAAAGAAGGtatgcttgaatataactaCCTTCTTTCCCTTTTTCTCTCactg</td>
+    </tr>
+    <tr>
+      <td>AAGAG(37) for over-expression</td>
+      <td>ATCAAGACTGCTAGCAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAGAAGAG</td>
+    </tr>
+    <tr>
+      <td>AAGAG(37) over-expression complement</td>
+      <td>CCATTGACTGAATTCCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTTCTCTT</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cloning of shRNA and over-expression constructs into pValium20 vector
 
 Sense and antisense strands were annealed and ligated into digested pValium20 vector . For annealing, in a 50 μl final volume, 1.5 μl each of 100 μM stock oligos were added to 1X NEBuffer, incubated 4 min at 95°C, then slowly cooled to RT in a 1L beaker filled with 70°C water. Samples were blunt ended with klenow using standard procedures, purified with min-elute PCR purification kit, run on agarose gel, and appropriate size bands removed and purified. Purified bands were digested with Nhe1 and EcoR1 HF enzymes and purified with min-elute PCR purification kit. For cloning, 1 μl of annealed and purified oligo pair complement was added to 30 ng of digested pValium20 vector and ligated with T4 DNA ligase (not quick ligase) at 16°C overnight, and transformed into dh5alpha E. coli cells.
 
-## Viability assay
+### Viability assay
 
 y[1] v[1]:UAS-AAGAGshRNA:: (shRNA to AAGAG), y[1] v[1]:UAS-scramble shRNA:: (shRNA to scrambled) y[1] sc[*] v[1]; P{y[+t7.7] v[+t1.8]=VALIUM20-mCherry}attP2 (dsRNA to mCherry) males were crossed to y[1] w[*]:: P{w[+mC]=Act5 C-GAL4}17bFO1/TM6B, Tb[1] (actin-GAL4/Tubby) female virgins (see Table 6 for fly lines). For calculation of ratios of RNAi/Tubby control prior to pupal stage (Figure 1—figure supplement 6G), the numbers of non-Tubby (RNAi) and Tubby pupae were scored. For each parental cross, a minimum of 11 biological replicates were completed at 25°C, and each vial included at least eight and no more than 43 pupae of any individual genotype. p-value (two tailed, type 3): **p=0.013. For calculation of death rates during different stages of development, (Figure 1—figure supplement 6H), we used the following: To determine L1-L2 death rates, L1 and L2 Tubby and non-Tubby (RNAi) larvae were transferred to separate vials. Those that did not survive to visible L3 were scored as dead. To determine L3 death rates, L3 from lay plates were transferred to vials and those that did not survive to pupae were scored as dead. For pupal lethality, non-eclosed pupae from L1-L2, and L3 transfers were scored as dead. L1-L2 death rate (min. n L1/L2 analyzed per parental set of three experiments = 7 L1/L2): p-values (two tailed, type 3): A/M = AAGAG to mCherry; A/S = AAGAG to Scrambled; S/M = scrambled to mCherry; A/S = 0.457, A/M = 0.404; L3 death rate (min. n per five parental sets of L3 analyzed = 7 L3): A/S = 0.125, A/M = 0.019; Pupal death rate (min. n per three parental sets of pupae analyzed = 10 pupae): A/S = 0.002, A/M = 0.992, S/M = 0.002. Of note, the high pupal death in scrambled control is perplexing considering that we could not find mRNAs that would be targeted by this hairpin. We speculate that this lethality results from off-target effects on un-annotated RNA, and/or the hairpin RNA is toxic. Importantly, however, the lethal phase differed between AAGAG RNAi (L1-L3) vs scrambled RNAi (pupal) (Figure 1—figure supplement 6H).
 
-## Fertility assay
+**Table 6.**
+ Fly lines.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Stock name or genotype</th>
+      <th>Obtained from: stock number</th>
+      <th>Description</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>y[1] v[1]; P{y[+t7.7]=CaryP}attP40</td>
+      <td>Bloomington: 36304</td>
+      <td>Background strain for insertion of pValium20 vector containing shRNA</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>y[1] v[1]; P{y[+t7.7]=CaryP}attP2</td>
+      <td>Bloomington: 36303</td>
+      <td>Background strain for insertion of pValium vector containing AAGAG expression construct.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>y[1] sc[*] v[1]; P{y[+t7.7] v[+t1.8]=VALIUM20-mCherry}attP2</td>
+      <td>Bloomington: 35785</td>
+      <td>Control strain for RNAi. Expresses dsRNA to mCherry</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>y[1] v[1]:UAS-AAGAG shRNA::</td>
+      <td>Rainbow Transgenic Flies, Inc</td>
+      <td>Expresses shRNA under UAS promoter targeting AAGAG(n)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>y[1] v[1]:UAS-scramble shRNA::</td>
+      <td>Rainbow Transgenic Flies, Inc</td>
+      <td>Expresses shRNA under UAS promoter targeting random AG containing sequences</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>y[1] w[67c23]; P{w[+mC]=dpp-GAL4.PS}6A/TM3, Ser[1]</td>
+      <td>Bloomington: 7007</td>
+      <td>Dpp-GAL4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>y[1] v[1]::UAS-AAGAG(37)</td>
+      <td>Rainbow Transgenic Flies, Inc</td>
+      <td>Expresses a 187 base repeat of AAGAG RNA under a UAS promoter</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>C(1;Y)1, y[1] w[A738]: y[+]/0 and C(1)RM, y[1] v[1]/0</td>
+      <td>Bloomington:2494</td>
+      <td>XO (Y chromosome deficient males)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>y[*] w[*]; P{w[+mW.hs]=GawB}NP1233/CyO, P{w[-]=UAS lacZ.UW14}UW14</td>
+      <td>Kyoto: 103948</td>
+      <td>Fascillin-GAL4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>y[*] w[*]; P{w[+mW.hs]=GawB}NP1624/CyO, P{w[-]=UAS lacZ.UW14}UW14</td>
+      <td>Kyoto:104055</td>
+      <td>Traffic Jam-GAL4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>w[*]; P{w[+mW.hs]=GawB}ptc[559.1]</td>
+      <td>Kyoto: 103948</td>
+      <td>PTC-GAL4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>:: nanos-Gal4, dcr2-UAS/TM3 sb</td>
+      <td>Unknown</td>
+      <td>Nanos-GAL4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>w;;bamGAL4, UAS-dicer2</td>
+      <td>Unknown</td>
+      <td>Bam-GAL4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>y[1] w[*]::P{w[+mC]=Act5 C-GAL4}17bFO1/TM6B, Tb[1]</td>
+      <td>Bloomington: stock 3954</td>
+      <td>Expresses GAL4 ubiquitously under control of Act5C promoter</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Fertility assay
 
 Flies containing shRNA to AAGAG or scrambled control were mated to different testes GAL4 drivers (Table 1) at 25°C, in at least duplicate parental (F0) sets. From each parental set, individual F1 male progeny (minimum of 12 per parental set) were then allowed to mate with two female Oregon R virgins for 10 days at 25°C. Male flies were counted as sterile if, after 10 days, the male and at least one female were still alive and no larvae, pupae or adult F2 progeny present. Female fertility was calculated as above, with one female RNAi and two Oregon R males. For Bam-GAL4-driven RNAi, female fertility was calculated as above from a minimum of three parental (F0) sets using a minimum of 10 F1 progeny for each. Scrambled RNAi male fertility for this cross was calculated as above from a minimum of four parental (F0) sets, using a minimum of 11 F1 progeny.
 
 AAGAG Bam-GAL4-driven RNAi male fertility of 0% was calculated from >>10 (F0) parental sets, hundreds of F1 individual males, and at both 25°C and 29°C. For rescue experiments, triplicate parental sets were used, where one F1 male (minimum 15 per parental set) was mated to three Oregon R virgin females for 10 days and fertility assayed as above.
 
-## Morphology defects in RNAi sperm
+### Morphology defects in RNAi sperm
 
 For quantification of abnormalities in sperm DNA morphology (Figure 3E and Figure 3—figure supplement 1B), a minimum of 6 testes, each from a different male, were analyzed per genotype (see Tables 7 and 8 below). Essentially, a projection image of the basal end of testes was made using a 40x confocal objective and all sperm DNA bundles were scored. See Figure 3B and Figure 3—figure supplement 1A for examples of sperm DNA morphology. Calculations were based on the pooled percent of a given phenotype compared to total sperm bundles per genotype.
 
-## Cross to make XO males
+**Table 7.**
+ Quantification of post-canoe stage sperm DNA morphological defects in 4–7 day old testes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>N</th>
+      <th>Normal bundle</th>
+      <th>Lagging bundle</th>
+      <th>Kinked</th>
+      <th>Knotted</th>
+      <th>Needle eyed</th>
+      <th>Decondensed</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Scrambled RNAi</td>
+      <td>1</td>
+      <td>2</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>9</td>
+      <td>7</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>21</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>5</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5</td>
+      <td>29</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>6</td>
+      <td>6</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>AAGAG RNAi</td>
+      <td>1</td>
+      <td>0</td>
+      <td>8</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>1</td>
+      <td>8</td>
+      <td>0</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>0</td>
+      <td>1</td>
+      <td>5</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>6</td>
+      <td>0</td>
+      <td>1</td>
+      <td>5</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>7</td>
+      <td>0</td>
+      <td>0</td>
+      <td>3</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>8</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>9</td>
+      <td>1</td>
+      <td>2</td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>10</td>
+      <td>3</td>
+      <td>5</td>
+      <td>2</td>
+      <td>4</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>11</td>
+      <td>2</td>
+      <td>2</td>
+      <td>14</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>12</td>
+      <td>1</td>
+      <td>4</td>
+      <td>9</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>AAGAG RNA (Rescue)</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>5</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>7</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>8</td>
+      <td>3</td>
+      <td>6</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>9</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>6</td>
+      <td>4</td>
+      <td>4</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>7</td>
+      <td>8</td>
+      <td>4</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>8</td>
+      <td>9</td>
+      <td>6</td>
+      <td>7</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>9</td>
+      <td>11</td>
+      <td>1</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>10</td>
+      <td>8</td>
+      <td>2</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>11</td>
+      <td>3</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>12</td>
+      <td>3</td>
+      <td>0</td>
+      <td>6</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>13</td>
+      <td>2</td>
+      <td>2</td>
+      <td>8</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>14</td>
+      <td>5</td>
+      <td>7</td>
+      <td>5</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>15</td>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>16</td>
+      <td>5</td>
+      <td>5</td>
+      <td>5</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>17</td>
+      <td>3</td>
+      <td>4</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>18</td>
+      <td>5</td>
+      <td>1</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>19</td>
+      <td>3</td>
+      <td>11</td>
+      <td>5</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>20</td>
+      <td>3</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 8.**
+ Quantification of canoe stage DNA morphological defects, in 4–7 day old testes
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>N</th>
+      <th>Normal canoe</th>
+      <th>Abnormal canoe</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Scrambled RNAi</td>
+      <td>1</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>7</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>6</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>3</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5</td>
+      <td>9</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>6</td>
+      <td>5</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>AAGAG RNAi</td>
+      <td>1</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>6</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>7</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>8</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>9</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>10</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>11</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>12</td>
+      <td>3</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>13</td>
+      <td>2</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>14</td>
+      <td>1</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>AAGAG RNA (Rescue)</td>
+      <td>1</td>
+      <td>7</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>2</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>4</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>5</td>
+      <td>0</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>7</td>
+      <td>1</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>8</td>
+      <td>3</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>9</td>
+      <td>6</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>10</td>
+      <td>3</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>11</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>12</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>13</td>
+      <td>8</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>14</td>
+      <td>1</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>15</td>
+      <td>0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>16</td>
+      <td>7</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>17</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>18</td>
+      <td>3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>19</td>
+      <td>2</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>20</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cross to make XO males
 
 For analysis of AAGAG RNA levels in male testes without a Y-chromosome, y[1]w[1] males were mated to C(1)RM, y[1] v[1]/0 females (Bloomington stock # 2494) at 25°C and 0–6 hr testes from F1 males imaged.
 
-## qPCR conditions
+### qPCR conditions
 
 RNA was extracted and cDNA made by established methods. For qPCR, 10 μl 2X Absolute Blue qPCR SYBR low Rox mix (Thermofisher, cat. AB4318) was added, forward and reverse oligos each to 0.15 μM, 0.5 μl cDNA, and water to 20 μl. qPCR conditions were as follows: 95°C, 15 min; 40cycles (95°C 15 s, 58°C 30 s., 72°C 30 s); 72°C 30 s performed on AB 7500 Fast Real Time PCR System. Performed in biological triplicates. See Table 9 for qPCR oligos.
+
+**Table 9.**
+ qPCR oligos.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>mRNA target</th>
+      <th>Sequence 5’−3’</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Actin-5c Forward</td>
+      <td>CAGCCAGCAGTCGTCTAATC</td>
+    </tr>
+    <tr>
+      <td>Actin-5c Reverse</td>
+      <td>ACAACCAGAGCAGCAACTTC</td>
+    </tr>
+    <tr>
+      <td>Rpl32 Forward</td>
+      <td>CGATGTTGG GCATCAGATAC</td>
+    </tr>
+    <tr>
+      <td>Rpl32 Reverse</td>
+      <td>CCCAAGATCGTGAAGAAGC</td>
+    </tr>
+    <tr>
+      <td>pip5K59B Forward</td>
+      <td>CTCCTGCTCTGCTATCGTATTC</td>
+    </tr>
+    <tr>
+      <td>pip5K59B Reverse</td>
+      <td>AGAGGAGCCATCAACATCAC</td>
+    </tr>
+    <tr>
+      <td>Peb Forward</td>
+      <td>TGGTTGGACCGCTTAACATAG</td>
+    </tr>
+    <tr>
+      <td>Peb Reverse</td>
+      <td>GCGACACCAAGAGCCATAA</td>
+    </tr>
+    <tr>
+      <td>CG33080 Forward</td>
+      <td>ATTACGATCGCGGGCTTATC</td>
+    </tr>
+    <tr>
+      <td>CG33080 Reverse</td>
+      <td>CGGTTCTAGGAGCACTGATATAAA</td>
+    </tr>
+  </tbody>
+</table>

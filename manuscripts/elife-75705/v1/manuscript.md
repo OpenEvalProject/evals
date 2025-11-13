@@ -11,11 +11,11 @@
 
 ### Affiliations
 
-1. https://ror.org/024mw5h28 Department of Human Genetics, University of Chicago Chicago United States
-2. https://ror.org/024mw5h28 Department of Neurobiology and Institute for Neuroscience, University of Chicago Chicago United States
-3. https://ror.org/024mw5h28 Department of Pediatrics, University of Chicago Chicago United States
-4. https://ror.org/024mw5h28 Ben May Department for Cancer Research, University of Chicago Chicago United States
-5. https://ror.org/024mw5h28 Department of Pediatrics and the Department of Biochemistry and Molecular Biology, University of Chicago Chicago United States
+1. Department of Human Genetics, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+2. Department of Neurobiology and Institute for Neuroscience, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+3. Department of Pediatrics, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+4. Ben May Department for Cancer Research, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
+5. Department of Pediatrics and the Department of Biochemistry and Molecular Biology, University of Chicago Chicago United States ([ROR:024mw5h28](https://ror.org/024mw5h28))
 
 † Corresponding author
 
@@ -37,11 +37,19 @@ Here, we present a comparison of survey data collected before and during the COV
 
 ## Results
 
-## Comparing demographic data from the pre-pandemic and pandemic survey
+### Comparing demographic data from the pre-pandemic and pandemic survey
 
 In 2019, 6,292 respondents participated in our national postdoc survey, of which 5,929 identified as postdocs working in the US (we only analyzed responses from US-based postdocs). In October of 2020, 1,942 of the 6,292 respondents who participated in the 2019 survey, completed a follow-up survey assessing the effects of the COVID-19 pandemic. Of these, 1,722 (89%) were still in a postdoctoral position at a US institution. From here on, we refer to the 2019 survey as the pre-pandemic survey and the 2020 survey as the pandemic survey. Furthermore, in our analyses of current postdocs, we removed the 11% of respondents in the pandemic survey who were no longer in postdoctoral positions; however, we analyzed their career outcomes separately in Figure 7.
 
 As shown in Figure 1, the demographics of the respondents to the pandemic survey largely mirrored those of the pre-pandemic survey. The number of respondents in the pandemic and pre-pandemic survey by US state is shown in Figure 1—figure supplement 1A-B. There were slightly more responses from individuals who identified as female (61% vs 58%) and non-binary/third gender (0.9% vs 0.4%), and fewer self-identified males (38% vs 42%) in the pandemic survey compared to the pre-pandemic survey (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/75705/elife-75705-fig1-v1.jpg)
+
+**Figure 1.:** (A) More self-identified female and third gender/non-binary and fewer self-identified male respondents completed the pandemic survey (n=1,698) compared to the pre-pandemic survey (Chi-squared test, P=0.0023, χ2=12.2; n=5,805). (B) The majority of respondents were white in both the pre-pandemic (n=5,649) and pandemic surveys (n=1,673), with an increase in white and a decrease in Asian respondents in the pandemic survey compared to the pre-pandemic survey (Chi-squared test, P=0.0024, χ2=12.1). (C) The proportion of US citizens/PR respondents increased (Chi-squared test, P=0.0015, χ2=10.1; n pre-pandemic=5,813; n pandemic = 1,702). (D–E) As expected, the age of respondents (D) and the years of postdoc experience (E) both increased as the pandemic survey was conductedy with a subset of the pre-pandemic respondents almost one year after the initial survey. (F) The majority of respondents were in the life sciences with a statistically significant decrease in responses from those in the field of medicine in the pandemic survey (n=1,712) compared to the pre-pandemic survey (Chi-squared test, P=0.0012, χ2=32.47; n=5,922). PR: Permanent Resident. Additional demographic information from the two surveys is shown in Figure 1—figure supplement 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/75705/elife-75705-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A–B) Number of respondents in the pandemic (A) and pre-pandemic survey (B) by state. (C) Percentage of respondents by race and ethnicity groups in the pandemic and pre-pandemic surveys. Less respondents identify as Asian and Asian American in the pandemic survey compared to the pre-pandemic survey (Chi-squared test, χ2=20.11, P=0.0053). No statistical difference was identified for other race and ethnicity groups. (D) Number of respondents who identified as having a disability, LGBTQ, and as a veteran/active during military in the two surveys. All of the identity groups were more represented in the pandemic survey compared to the pre-pandemic survey (Chi-squared test, LGBTQ: χ2=11.55, P=2 × 10–16; Having a disability: χ2=10.08, P=2 × 10–16; veteran: χ2=12.18, P=2 × 10–16). (E) Percentage of respondents by residency status, a larger percentage of respondents were US citizens and there was a smaller percentage of F1-OPT visa holders in the pandemic survey (Chi-squared test, χ2=36.94, P=1.18 × 10–5). (F) Increased access to a PDO was observed during the pandemic, mainly due to an increase in awareness of such institutional resources (Chi-squared test, χ2=13.87, P=9.73 × 10–4). (G) No differences were observed in regards to access to a PDA before or during the pandemic.
 
 Race and ethnicity varied between the pre-pandemic and pandemic survey respondents, with a 4% increase in the proportion of respondents who identify as white, and a corresponding 4% decrease in the respondents who identify as Asian; however, no differences were observed between the proportion of respondents from underrepresented minority backgrounds (URMs; 13% in both surveys; Figure 1B; Figure 1—figure supplement 1C). We combined individuals into these three main categories (white, Asian and URM) due to the small number of respondents in some racial and ethnic groups (see Methods for a full description and Supplementary file 3 for a more granular breakdown). The number of responses from other identity groups (i.e., disability, LGBTQ, and veterans) also did not vary between the two surveys (Figure 1—figure supplement 1D).
 
@@ -49,9 +57,130 @@ The number of respondents who were US citizens or permanent residents (referred 
 
 There was a significant decrease in respondents in the field of medicine (13% pre-pandemic and 9% pandemic), while there was no significant change in the representation of any other field (Figure 1F). Respondents were from various disciplines, mostly within the life sciences (48%), followed by medicine, physical sciences, engineering, psychology, environmental sciences, and social sciences, among other research areas. Lastly, there was a significant increase in access to a PDO (65.6% pre-pandemic vs 70% pandemic), which was mainly due to increased awareness, but no differences in access to a PDA (Figure 1—figure supplement 1F-G).
 
-## The impact of COVID-19 on postdoc well-being
+### The impact of COVID-19 on postdoc well-being
 
 To directly assess the effects of COVID-19 on postdocs, we queried three general areas: stressors during the pandemic, institutional response to the pandemic, and ability to meet basic needs. In an open-ended question inquiring about main stressors during the pandemic, postdocs indicated that their main stressors were a combination of work, family, and emotional burdens (such as uncertainty, isolation, fear, and anxiety) as shown by the word cloud analysis of the responses (Figure 2A–B). Additional responses to the open-ended question are included in Table 1 along with responses to another question querying how the pandemic impacted research productivity. 2,768 comments were collected in total, which further demonstrates the impact of the pandemic on the postdoctoral population.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/75705/elife-75705-fig2-v1.jpg)
+
+**Figure 2.:** (A-B) Word cloud of postdocs’ main stressors during the COVID-19 pandemic (A) and distribution of the most frequently used words (B). (C). Satisfaction with the institution’s response to COVID-19 (n=1,718). (D) Satisfaction with the institution’s response to COVID-19 was higher in postdocs that had access to a PDO compared to the ones that did not have a PDO at their institution (multivariate ordinal logistic regression P=0.0021, Odds Ratio (OR)=1.81 [95% Confidence Interval (CI); 1.24–2.65]; n=1,613) or those unaware whether their institution had a PDO (multivariate ordinal logistic regression P=0.044, OR=1.24 [95% CI; 1.01–1.53]; n=1,700). No significant differences were observed by access to PDA. (E) Basic needs that were not met during the pandemic (n=1,676). See Figure 2—figure supplement 1 for breakdown by race/ethnicity and identity groups. (F) Having access to a PDO or a PDA significantly impacted having mental health needs met (multivariate logistic regression, No PDO P=0.02, OR=0.57 [95% CI; 0.35–0.91]; No PDA P=0.026, OR=0.52 [95% CI; 0.29–0.93]; n=1,614).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75705/elife-75705-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Postdocs who identified as Asian were less likely to have their health care (12% vs 5%, multivariate logistic regression, P=0.0072, OR=0.53 [95% CI; 0.33–0.84]; n=1,614) or food (5% vs 1%, multivariate logistic regression, P=0.015, OR=0.37 [95% CI;0.17–0.83]; n=1,614) basic needs met compared to white respondents. (B) Postdocs who identified as LGBTQ were less likely to have their food (5% vs 2%, multivariate logistic regression P=0.046, OR=0.37 [95% CI; 0.13–0.98]; n=1,614) or mental health (30% vs 20%, multivariate logistic regression P=0.018, OR=0.60 [95% CI; 0.40–0.92]) basic needs met. (C) Postdocs who reported having a disability were also less likely to have their mental health basic needs met (40% vs 20%, multivariate logistic regression P=0.007, OR=0.41 [95% CI; 0.21–0.78]; n=1,614).
+
+**Table 1.**
+ Response to open questions.Selected responses to the questions “Why or how has your research been disrupted (or not disrupted) due to the pandemic?” and “What were your main stress factors during the pandemic?” in the pandemic survey.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Mental Health</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Uncertainty in my health, uncertainty in my partner’s health, anxiety about leaving home, anxiety about how this will affect my future, depression and grievance of lost sense of "normal", lack of social interaction with others, can't visit family for forseeable [sic] future, lack of sufficient space to work from home productively, stress of fighting institutionalized racism, anxiety over changing career prospects.</td>
+    </tr>
+    <tr>
+      <td>Loss of morale, loss of collegial atmosphere, perception that the world is going to end, chronic anxiety about the US political situation, minority stress, worry about the health of family members, realization that working alone is terrible for my mental health, realization that nobody reads academic articles and nobody respects the professoriate, realization that the general public does not believe in science or truth.</td>
+    </tr>
+    <tr>
+      <td>My mental health has suffered as a consequence of being alone all the time making research more difficult….</td>
+    </tr>
+    <tr>
+      <td>…the extra stressors associated with the pandemic have significantly affected my mental health and ability to work effectively.</td>
+    </tr>
+    <tr>
+      <td>…The pandemic has also taken a huge toll on my mental health which has disrupted my focus and ability to get research done.</td>
+    </tr>
+    <tr>
+      <td>Immigration/ International postdocs</td>
+    </tr>
+    <tr>
+      <td>The government released multiple rules controlling the H1-B visa of foreign workers, which make it harder for us foreigners in the job market.</td>
+    </tr>
+    <tr>
+      <td>1. Family getting sick and dying back home in India due to COVID-19, 2. Immigration restrictions by the government, 3. Slow pace of immigration application procedures by USCIS and US Embassies…</td>
+    </tr>
+    <tr>
+      <td>As I a [sic] here in the US alone. My stress came from being worried about my family back in my country. and in experiencing this pandemic nearly all alone.</td>
+    </tr>
+    <tr>
+      <td>Having the pandemic eat into the limited amount of time I have as a postdoc here. Also being unable to travel - due to the travel ban, I cannot return home to see family (e.g. for Christmas) because I wouldn't be able to get back into the US.</td>
+    </tr>
+    <tr>
+      <td>I was stuck in Europe for 6 months due to immigration issues (expired visa and closed embassies) and therefore was not able to do any lab work.</td>
+    </tr>
+    <tr>
+      <td>Relationship with PI</td>
+    </tr>
+    <tr>
+      <td>I have been working from home, which has led to a drop in productivity. However, my PI expects me to be more productive due to "a lack of distractions." This disparity is making progress difficult….</td>
+    </tr>
+    <tr>
+      <td>Personally, my research has been disrupted by the constant pressure by my PI and my Institution to continue to work in lab during a pandemic. I don't feel safe working around so many people, and my complaint has been ignored by my PI and the Institution. This has caused me a lot of stress and anxiety.</td>
+    </tr>
+    <tr>
+      <td>… My supervisors also fell off of the map and we had almost zero contact throughout the lockdown (March - June) until we could return to the lab. Then after, the communication is still minimal and it’s unclear what the status of publications are.</td>
+    </tr>
+    <tr>
+      <td>My PI became very micromanaging, in stark contrast to her hands-off style previously. They put a lot of pressure on me to publish and be productive during the pandemic.</td>
+    </tr>
+    <tr>
+      <td>Unrealistic expectations of the PI who ignored/ignores the fact that there is a pandemic and that the pandemic has an impact on research progress. First, the lab was shut down and then reopened with 25% capacity at a time.</td>
+    </tr>
+    <tr>
+      <td>Career/job perspectives</td>
+    </tr>
+    <tr>
+      <td>Uncertainty/Instability in the job market as I try to find a job… Poor postdoc pay relative to the job market for my degree &amp; experience level.</td>
+    </tr>
+    <tr>
+      <td>… Feeling like industry/private sector is not going to be any easier to find employment in than academia with such high unemployment rates …</td>
+    </tr>
+    <tr>
+      <td>That my project is getting behind and I will not be able to apply for grants within the window of "early career"/trainee grants.</td>
+    </tr>
+    <tr>
+      <td>Lack of career perspective and being unable to do my research during the final years of my postdoc.</td>
+    </tr>
+    <tr>
+      <td>Research Productivity</td>
+    </tr>
+    <tr>
+      <td>I was expected to continue producing lab work while the labs were closed down! My PI encouraged me to break quarantine rules and continue work.</td>
+    </tr>
+    <tr>
+      <td>Lack of research output leading to fears of my career being over.</td>
+    </tr>
+    <tr>
+      <td>The feeling of guilt has been overwhelming. I feel like I should be doing more, but I really can't because I don't have the resources needed (e.g. mice) to do my research.</td>
+    </tr>
+    <tr>
+      <td>... trying to find new ways of ensuring/displaying productivity. I couldn't produce experimental results so how to represent the work that I've actually been getting done during this time. and [sic] then upon start-up, are they actually concerned and keeping student/worker safety as their primary goal.</td>
+    </tr>
+    <tr>
+      <td>Family/Childcare</td>
+    </tr>
+    <tr>
+      <td>Lockdown forced to ramp-down research to the bare minimum. Childcare restrictions have also impacted the amount of time that I can spend in the lab. Taking care of a toddler at home does not favor literature research.</td>
+    </tr>
+    <tr>
+      <td>An inability to balance work with childcare. My wife worked full or nearly full-time throughout the pandemic, and as a result, the bulk of childcare fell on me because I had a more flexible schedule and understanding PI. I constantly felt pressure and stress to accomplish research goals but consistently was unable to achieve anything because my children’s welfare was top priority.</td>
+    </tr>
+    <tr>
+      <td>Lack of childcare for my school-age child. Non-COVID health concerns for my household members and paying for co-insurance and copays with the terrible insurance of my institution. My husband is unemployed and can find safe work and we are financially struggling.</td>
+    </tr>
+    <tr>
+      <td>Loss of productivity due to loss of childcare, feeling like I am slipping behind my colleagues without children. Lots of stress and pressure around keeping up with tasks. Unable to start any new, exciting projects that would help my career due to childcare loss.</td>
+    </tr>
+    <tr>
+      <td>Trying to work from home while caring for my children; it’s like normal working mom guilt, but on steroids. Also, the university permanently closed the childcare center on campus (one of the best centers in the area) where our children went, so the uncertainty of being able to find quality childcare once centers reopened was exceptionally stressful.</td>
+    </tr>
+  </tbody>
+</table>
 
 Individual responses showed how postdocs experienced different types of burdens. Parents and caregivers faced the burden of “being a full time [sic] postdoc and staying home with two kids” or caring for a loved one who was/is struggling with COVID-19. As one postdoc indicated, “my girlfriend has been recovering from COVID-19 since March. It’s a grueling process to watch and support.” A large number of postdocs also indicated that work progress was more difficult due to “getting research done within limited shifts and hours” and an overall fear of “loss of productivity”. Many international postdocs were concerned about their visas and one respondent even indicated that the international office at their institution told them “...you will lose your job if you leave the country for any reason and are not a resident.”
 
@@ -59,11 +188,11 @@ Laboratory shutdowns also had an adverse impact on postdocs’ relationships wit
 
 Conversely, supportive PIs were lauded for their role in lessening stress. Respondents mentioned: “I did not have a lot of stress factors. I was lucky to have a supportive PI that understood how stressful a time this can be and set a pretty low expectation bar”; “working from home during shutdown with a 5 yo kid was impossible, really stressful and I am happy my PI was understanding and let me work half time.”
 
-## Institutional responses to COVID-19 and the impact of PDAs and PDOs
+### Institutional responses to COVID-19 and the impact of PDAs and PDOs
 
 Next, we examined the institutional response to COVID-19, which ranged from completely satisfied to completely unsatisfied. Most postdocs indicated that they were completely or mostly satisfied with their institution’s response to COVID-19 (59%) (Figure 2C). In particular, postdocs with access to a PDO were significantly more satisfied than those who did not (Figure 2D). On the other hand, there were no differences in satisfaction with their institution’s response between those with or without access to a PDA (Figure 2D), or with respect to gender, citizenship status, race and ethnicity, or identity (multivariate ordinal logistic regression, P>0.05, data not shown). Notably, there was also a non-negligible portion (4%) of postdocs who indicated they were completely unsatisfied with their institution’s response to COVID-19, with one respondent commenting, “... my institution did almost NOTHING to ensure that faculty and staff can be safely back at work”.
 
-## Meeting basic needs during the pandemic
+### Meeting basic needs during the pandemic
 
 Although the majority of postdocs indicated that all of their basic needs were met during the pandemic (64%), a substantial portion (36%) indicated that their needs concerning mental health (21%), childcare (11%), healthcare (7%) and/or food (2%) were unmet (Figure 2E). Additionally, 3% of postdocs mentioned other unmet needs in their responses, including the inability to pay bills or exercise, and loss of access to transportation, work safety, human connections, or loss of salary, retirement benefits, or annual raise. Furthermore, although the majority of postdocs indicated that all of their basic needs were met, their comments suggested that the pandemic had made meeting those needs more difficult: “My husband lost his job, and while we are not in danger of basic needs not being met it does change some things and adds additional stress”.
 
@@ -71,13 +200,21 @@ Postdocs who had access to a PDA or PDO (although not statistically significant 
 
 Postdoc parents were particularly affected by pandemic-related shutdowns and reported difficulties meeting childcare needs. While we did not directly inquire whether respondents in the pandemic survey had children (in the pre-pandemic survey, 20% of postdocs answered that they had children), 10% of respondents mentioned in comments that ensuring their children had proper care was a major stressor and led to severe work disruptions. Additionally, 68% of these comments were from female respondents and 32% from males, suggesting a greater burden of childcare for female postdocs. Overall, childcare was the 5th most frequently mentioned stressor (Figure 2A–B). Parents mentioned “I have lost childcare for my baby and it has had a significant impact on my ability to write, complete research goals, and apply for grants”; “It was difficult to do any writing- or reading-based work because the day cares were closed, and my partner and I had to divide the day into childcare/work time”; “Loss of productivity due to loss of childcare, feeling like I am slipping behind my colleagues without children”. Some reported feeling burnt out from putting in long hours and mentioned lack of support from their peers and their university; “Lack of childcare and intense pressure from PI to continue long hours at home”; “Loss of childcare and co-workers not respectful of the loss of childcare”; “My institution enacted strict... "shift schedules" that were outside of childcare hours so I was unable to work a full work week. However, I was expected to produce the same (if not more) results/data to make up for the time we were locked out” (additional examples in Table 1).
 
-## Impact of COVID-19 on international postdocs
+### Impact of COVID-19 on international postdocs
 
 When we focused on residency status, we saw that more international postdocs (vs. US citizens/PR) reported having food needs unmet (4% vs 1%), while US citizens/PR (vs. international postdocs) reported more difficulty in obtaining childcare (13% vs 9%) (Figure 3A). Additionally, international respondents (n=718) expressed specific worries regarding their residency status. The majority of international postdocs reported apprehension about immigration or visas either due to recent policy changes in the US (84%) or in general (11%) (Figure 3B). The primary concerns noted were traveling (75%), US immigration policy changes (69%), and travel bans (68%) (Figure 3C, Table 1). Furthermore, more international females than males were worried about immigration issues (89% vs 78%) (Figure 3—figure supplement 1A); specifically, travel (80% vs 70%), delays in visa renewal (65% vs 56%), and travel bans (72% vs 62%) (Figure 3—figure supplement 1B).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/75705/elife-75705-fig3-v1.jpg)
+
+**Figure 3.:** (A) Citizenship status had a significant impact on childcare (multivariate logistic regression, P=0.027, OR=1.49 [95% CI; 1.05–2.13]) and food (multivariate logistic regression, P=0.002, OR=0.27 [95% CI; 0.11–0.62]) basic needs that were left unmet during the pandemic (n=1,657). (B) Most international postdocs (n=718) who were concerned about immigration and policy changes in the US said these were due to the pandemic. (C) The primary immigration or visa concerns of international postdocs (n=718). See Figure 3—figure supplement 1 for breakdown of immigration concerns by gender, race and ethnicity, and LGBTQ status.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75705/elife-75705-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Female postdocs were significantly more concerned about recent immigration policy changes compared to males (89% vs 78%, multinomial logistic regression P=0.0027, OR=3.41 [95% CI; 1.53–7.53]; n=614). (B) Female respondents were also more concerned about traveling (80% vs 70%, multivariate logistic regression P=0.01, OR=1.58 [95% CI; 1.08–2.31]8; n=670), delays in visa renewal (65% vs 56%, multivariate logistic regression P=0.047, OR=1.38 [95% CI; 1.004–1.91]; n=670) and travel bans (72% vs 62%, multivariate logistic regression P=0.036, OR=1.44 [95% CI; 1.02–2.03]; n=670). (C) Asian and URM postdocs were more concerned about possible job changes that may result in changes to their visa status (Asian 41.6% vs 29%, multivariate logistic regression P=0.0032, OR=1.72 [95% CI; 1.20–2.46]; URM 42.5% vs 29%, multivariate logistic regression P=0.01, OR=1.85 [95% CI; 1.16–2.97]; n=670), change in Visa status (Asian 49% vs 40.7%, multivariate logistic regression P=0.011, OR=1.57 [95% CI; 1.11–2.22]; URM 51.9% vs 40.7%, multivariate logistic regression P=0.037, OR=1.63 [95% CI; 1.03–2.57]; n=670) and US immigration policy changes (Asian 70.3% vs 65.9%, multivariate logistic regression P=0.036, OR=1.48 [95% CI; 1.03–2.15]; URM 80.2% vs 65.9%, multivariate logistic regression P=0.0032, OR=2.32 [95% CI; 1.33–4.06]; n=670) compared to their white counterparts. Both URM and Asian postdocs were less concerned about traveling (Asian 61.5% vs 87.4%, multivariate logistic regression P=1.93 × 10–11 OR=0.22 [95% CI; 0.14–0.34]; URM 78.3% vs 87.4%, multivariate logistic regression P=0.0096, OR=0.45 [95% CI;0.25–0.83]; n=670). Asian postdocs were also less concerned about embassy closures (51% vs 58.6%, multivariate logistic regression P=0.032, OR=0.69 [95% CI; 0.49–0.97]; n=670) and travel bans (56.6% vs 77.5%, multivariate logistic regression P=1.03 × 10–6, OR=0.39 [95% CI; 0.27–0.57]; n=670) compared to URM and white respondents. (D) LGBTQ postdocs were more concerned about US Immigration policy changes compared to non-LGBTQ postdocs (69.4% vs 80%, multivariate logistic regression P=0.011, OR=3.29 [95% CI; 1.31–8.31]; n=670).
+
 Compared to white international postdocs, both Asian and URM international postdocs were more concerned about changes in jobs (42% Asian and 43% URM vs 29% White), visa status (49% and 52% vs 41%) and US immigration policy (70% and 80% vs 66%); and were less concerned about traveling (62% and 78% vs 87%). Additionally, international Asian postdocs were also less concerned about Embassy closures (51% Asian vs 59% white) and travel bans (57% vs 78%) (Figure 3—figure supplement 1C). Finally, international LGBTQ postdocs were more concerned about US immigration policy changes compared to non-LGBTQ postdocs (80% vs 69%).
 
-## Impact of the pandemic on mental health and wellness
+### Impact of the pandemic on mental health and wellness
 
 Overall, 76% of respondents stated that the COVID-19 pandemic had impacted their mental health, with 32% stating that it had a high or very high impact (Figure 4A). In open-ended responses, postdocs mentioned significant impacts on their mental health due to isolation and pandemic associated stressors leading to reduced productivity, inability to focus and work effectively: “My mental health has been struggling, which has negative consequences on my ability to focus”; “The isolation has had a negative effect on my mental health … ”; “Mental health diminished productivity despite being able to work 100% remotely” (see Table 1 for more examples).
 
@@ -87,9 +224,17 @@ Overall, 76% of respondents stated that the COVID-19 pandemic had impacted their
 
 All gender, race and ethnicity, and identity groups indicated a significant impact on mental health. However, certain groups reported more of an impact than others; females reported a greater impact than males (80% vs 68%); white and URM postdocs reported more of an impact than Asian postdocs (78% and 80% vs 68%); members of the LGBTQ community (83% vs 75%) and postdocs with disabilities (88% vs 76%) reported more of an impact than postdocs not identifying with these groups (Figure 4B).
 
-## Effect of institutional support on mental health and wellness
+### Effect of institutional support on mental health and wellness
 
 Parallel to this impact on mental health, access to institutional mental health resources rose by 15% (Figure 5A), which appears to be linked to an increase in awareness, although only 17% of postdocs indicated use of these resources. Female postdocs reported higher usage of these resources compared to male postdocs (21% vs 10%; Figure 4B). Notably, postdocs without access to, or who were unaware of, institutional mental health resources were more likely to have their mental health impacted by COVID-19 than postdocs with access to those resources (Figure 5B).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/75705/elife-75705-fig5-v1.jpg)
+
+**Figure 5.:** (A) During the pandemic, more individuals had access to mental health resources, which was reflected in an increased awareness of these resources available at their institution (multivariate logistic regression, P=0.038, OR=1.35 [95% CI; 1.02–1.78]; n=7,047). That increase in awareness is proportional to the increase in respondents stating that their institution has available mental health resources. (B) Not having access (multivariate ordinal logistic regression, P=4.3 × 10–6, OR=3.04, [95% CI; 1.89–4.88]), or not being aware (multivariate ordinal logistic regression, P=8.52 × 10–4, OR=1.50, [95% CI; 1.18–1.91]) of mental health resources increased mental health impact during the pandemic (n=1,608). (C) A larger portion of postdocs who did not have access to (multivariate logistic regression, P=1.03 × 10–13, OR=0.13 [95% CI; 0.08–0.22]) or were unaware of (multivariate logistic regression, P=6.79 × 10–10, OR=0.39, [95% CI; 0.29–0.52]) mental health resources reported having their mental health basic needs met (n=1,610) compared to postdocs who had access to mental health resources. (D) A smaller portion of postdocs who did not have access to (multivariate logistic regression, P=5.05 × 10–8, OR=0.22 [95% CI; 0.13–0.38]) or were unaware of (multivariate logistic regression, P=6.12 × 10–9, OR=0.45, [95% CI; 0.35–0.59]) mental health resources reported having all their basic needs met (n=1,610). See Figure 5—figure supplement 1A for other basic needs unmet vs access to mental health resources. (E–F) Having a PDO or a PDA increased access to mental health resources (PDO (multinomial logistic regression, P=1.36 × 10–5, OR=4.61 [95% CI; 1.86–10.58]; n=1,610); PDA (multinomial logistic regression, P=0.0073, OR=2.94 [95% CI; 1.34–6.47]; n=1,610)), whereas only access to PDOs increased the use of mental health resources (PDO (multinomial logistic regression, P=0.035, OR=2.19 [95% CI; 1.06–4.53]; n=1,607)).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/75705/elife-75705-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Postdocs that did not have access to mental health resources through their institutions were also less likely to have other basic needs met such as food (No access to mental health resources; multivariate logistic regression P=5.72 × 10–5, OR=0.16 [95% CI; 0.05–0.45]) or health care (No access to mental health resources; multivariate logistic regression P=3.37 × 10–5,OR=0.24 [95% CI; 0.13–0.48]).
 
 Indeed, postdocs were more likely to have their mental health needs met if their institution provided these resources (84%) than if their institution either did not provide them (42%) or if they were unaware of these resources at their institution (68%, Figure 5C). Postdocs at institutions that provided mental health resources were also more likely to have all their basic needs met (69%) compared to those without (35%) or unaware of these resources (50%) (Figure 5D). Unsurprisingly, postdocs that did not have access to mental health resources at their institutions, were also more likely to have other basic needs unmet such as food (8% (no) vs 2% (yes)) or health care (21% (no) vs 7% (yes); Figure 5—figure supplement 1A).
 
@@ -97,9 +242,17 @@ In written responses, several postdocs mentioned that their institutions provide
 
 As previously indicated (Figure 2F), access to a PDA and/or a PDO also increased the likelihood of mental health needs being met. This trend may be due in part to a larger proportion of postdocs with access to a PDO/PDA also having access to mental health resources (82% and 80%) compared to those that did not (59% and 61%) or were unaware (66% and 60%) (Figure 5E–F). Postdocs with a PDO/PDA were also more likely to use their institution’s mental health resources (19% and 18%) compared to those that did not have access (9% and 11%) or were unaware of these resources (13% and 9%, Figure 5E–F).
 
-## How the pandemic affected the career trajectory of postdocs
+### How the pandemic affected the career trajectory of postdocs
 
 The pandemic dramatically impacted career trajectories of the postdocs due to lab shutdowns, inability to communicate with faculty supervisors and research group members, and most significantly, additional family responsibilities, etc., compared to one year earlier (see word cloud in Figure 2A–B and select comments in Table 1). This resulted in reduced research productivity, delayed job searches, lowered confidence in attaining the desired career, and uncertainty in overall career trajectory. Even though the postdocs were older and had more years of experience when re-surveyed (Figure 1D–E), a smaller proportion were currently looking for positions (64% pre-pandemic, 56% during the pandemic), with 11% of postdocs specifically delaying their job search because of the pandemic (Figure 6A). In addition, postdocs were less confident in achieving their career goals than before the pandemic (Figure 6B, 76% said they were very confident to somewhat confident pre-pandemic compared to 68% during the pandemic), which may be contributing to the observed decline in those actively pursuing new positions (Figure 6A). Furthermore, more postdocs were undecided about their future careers than before the pandemic (9%–12%) (Figure 6C). Together, these results highlight the substantial increase in career uncertainty felt by postdocs.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/75705/elife-75705-fig6-v1.jpg)
+
+**Figure 6.:** (A) Fewer postdocs are actively looking for a permanent position than before the pandemic (multivariate logistic regression, P=8.24 × 10-7, OR=0.75 [95% CI; 0.67–0.84]; n=6,899). See Figure 6—figure supplement 1A for breakdown by type of position. (B) Postdocs are less confident in their ability to obtain their desired career than before the pandemic (multivariate ordinal logistic regression, P=2.39 × 10–19, OR=0.62 [95% CI; 0.56–0.69]; n=6,964). (C) The long-term goals of postdocs have not shifted during the pandemic. However, a larger proportion of postdocs are now uncertain about their career trajectories (multinomial logistic regression, P=0.0073, OR=1.28 [95% CI; 1.07–1.54]; n=6,954). (D) 34% of postdocs indicated that their career plans changed since the pandemic started (n=1,694). (E) Primary reasons for changes in career trajectory (n=388). See Figure 6—figure supplement 1B for breakdown by citizenship status. (F) During the pandemic, the perception of both the academic and non-academic job markets has declined (n=1,712). See Figure 6—figure supplement 1C for breakdown by citizenship status. (G) A decrease in the perception of the job market both in academia (multivariate ordinal logistic regression P=2.51 × 10–55, OR=0.39 [95% CI; 0.35–0.44]; n=6,870) and (H) outside academia (multivariate ordinal logistic regression, P=6.94 × 10–68, OR=0.38 [95% CI; 0.34–0.42] n=6,513) was observed during the pandemic compared to the pre-pandemic survey.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/75705/elife-75705-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Postdocs that changed their career plans (due and not due to the pandemic) were more likely to pursue a non-academic position (multinomial logistic regression; due to the pandemic P=1.78 × 10–15, OR=3.47 [95% CI; 2.55–4.71]; not due to the pandemic P=6.66 × 10–16, OR=5.05 [95% CI; 3.41–7.48]) and were more likely to be undecided (multinomial logistic regression; due to the pandemic P=4.44 × 10–16, OR=4.58 [95% CI; 3.18–6.61]; not due to the pandemic P=2.25 × 10–13, OR=5.96 [95% CI; 3.70–9.61]; n=1,578). (B) The following reasons for change in career plans differed by residency status: balancing family and career (multivariate logistic regression, P=7.88 × 10-4, OR=2.06 [95% CI; 1.35–3.14]); difficulty of finding desired position (P=0.0054, OR=1.74 [95% CI; 1.18–2.57]); geographic constraints (P=0.044, OR=0.64 [95% CI; 0.41–0.99]); peer pressure (P=0.014, OR=0.17 [95% CI; 0.04–0.70]; n=536) (C) Only geographical constraints differed by race/ethnicity with less Asian postdocs reporting this as a reason for their career change compared to white postdocs (multivariate logistic regression, P=0.003, OR=2.29 [95% CI; 1.32–3.96]; n=536) (D) Job market perception changed during COVID-19 by residency status; However, international postdocs perception changed less compared to US citizen/PR postdocs (multivariate logistic regression, P=2.05 × 10–5, OR=0.48 [95% CI; 0.37–0.64]).
 
 Overall, 34% of postdocs reported changing their career plans during the pandemic, with 23% of respondents indicating that COVID-19 was the direct cause of their change (Figure 6D). The postdocs that changed their career plans (both due to and not due to the pandemic), were more likely to be undecided about future careers (20% (due to the pandemic); 20% (not due to the pandemic) vs. 7% (did not change career plans)) or considering non-academic positions (28%; 37% vs 14%), and much less likely to be seeking an academic position (51%; 43% vs 79%) compared to postdocs who did not change their career plans (66% of surveyed postdocs) (Figure 6—figure supplement 1A).
 
@@ -107,7 +260,7 @@ Of those postdocs who indicated a change in career plans (both due and not due t
 
 The majority of postdocs surveyed also reported a change in their perception of the job market (81%) (Figure 6F), with more US citizens/PR than international postdocs (85% vs 74%, Figure 6—figure supplement 1D) reporting a change in perception. No differences were observed based on gender or identity groups (multivariate logistic regression, P>0.05, data not shown). This altered perception was observed for both the academic and non-academic job markets (Figure 6G and H). Overall, the majority of the respondents viewed the current academic job market as poor (66%) or fair (26%), which is a significant change compared to the pre-pandemic survey, where fewer postdocs viewed the market as poor (44%) and more viewed it as fair (33%). Although the perception of the job market outside of academia was better - 28% of the respondents found it either excellent or good compared to academic careers (8%) - there was still a decrease in perception from the pre-pandemic survey.
 
-## Career changes during the pandemic
+### Career changes during the pandemic
 
 The postdoctoral position is considered temporary, with the ultimate goal of providing the necessary training and experience to successfully transition to more permanent careers. To better understand the effects of the pandemic on career outcomes, we surveyed those who were no longer in postdoctoral positions. Of those who responded to the second survey, 11% (219/1,941) were no longer postdocs, with 14% indicating that this career transition was a consequence of the pandemic (Figure 7A).
 
@@ -129,7 +282,7 @@ Our results have been implicated in other studies, including a Nature survey ear
 
 The longer-term effects of the pandemic on the postdoctoral population, however, are not able to be predicted from our data, since our study was only conducted over a short period of time during the pandemic. Thus, further studies are needed to assess how the pandemic ultimately affects career trajectories. Likewise, it is also premature to predict irreversible trends. However, while we are barely out of the COVID-induced disruptions, there are some glimpses of positive changes that are emerging (Gardner et al., 2021; Gould, 2021; Shah et al., 2021). For example, in order to mitigate isolation and perpetuate a learning environment when labs shut down in early 2020, institutional entities responsible for professional skill-building and career-promoting programming pivoted to remote platforms with some interesting outcomes (Andrade et al., 2022). Remote sessions now appear to be not only acceptable, but may even be preferred by trainees, as they are more accessible, provide more efficient use of time and offer flexibility (such as having the possibility to watch recorded sessions later). Since PDOs and PDAs often provide these types of professional development programs, this may explain why postdocs with access to these institutional assets were significantly more satisfied. Again, this is a potentially important factor that needs further exploration.
 
-## Limitations and future directions
+### Limitations and future directions
 
 As with all such surveys, there were a few limitations to our study. First, while the pandemic survey was conducted on a subset of the pre-pandemic respondents, the responses were collected anonymously according to our IRB protocol. We therefore were unable to do a direct one-to-one comparison of pre-pandemic to pandemic responses on an individual basis. Second, in the pandemic survey, we did not directly ask if respondents were parents or caregivers and were only able to partially assess this through questions that required written responses to pandemic related stressors. Therefore, we were limited in our ability to assess exactly how many postdocs had caregiving responsibilities that disrupted their research and career progression, and further studies are needed to investigate how wide-spread the impact was on these postdocs.
 
@@ -147,7 +300,7 @@ PDOs are the appropriate institutional entities to ensure that postdocs’ minim
 
 ## Methods
 
-## Survey design and dissemination
+### Survey design and dissemination
 
 The National Postdoctoral Survey was designed to capture the experiences and demographic information of postdoctoral fellows and scholars across the US. The survey was initially conceived and developed by postdocs within the University of Chicago’s Biological Sciences Division Postdoctoral Association (PDA) in 2016, in order to identify important issues within the postdoctoral community and inform and equip those who advocate for postdoctoral policies to make positive changes. The results of the first National Postdoc Survey were published by McConnell et al. in 2018.
 
@@ -163,7 +316,7 @@ While analysis of the 2019 pre-pandemic survey data was underway, the COVID-19 p
 
 In total, 1,942 responses to the pandemic survey were collected. Of these responses, 1,722 (88.6%) were submitted by researchers currently in postdoctoral positions in the US, and these responses are analyzed here. Pre-pandemic and pandemic survey questionnaires are included in supplementary file 1 and supplementary file 2 respectively.
 
-## Data analyses
+### Data analyses
 
 Participants were queried about their race and ethnicity with the following options: white/Caucasian, Asian/Asian American, South Asian/South East Asian, Black/African American, Hispanic/Latino, Middle Eastern, Native American or Alaska Native, and Pacific Islander or Hawaiian Native. For all analyses, due to low numbers of respondents, certain racial/ethnic categories were consolidated into three groups: (1) underrepresented minorities (URM) as defined by the NIH (https://diversity.nih.gov/about-us/population-underrepresented): Black or African American, Hispanic or Latino, Native American or Alaska Native, Native Hawaiian or Pacific Islander; (2), Asians (Asian/Asian American and South Asian/Southeast Asian); and (3) white (white/Caucasian and Middle Eastern – which were grouped based on the categorization provided by the NIH and US census). The NIH also defines those with disabilities (analyzed separately here) and those from disadvantaged backgrounds (this category was not queried in this study) to also be underrepresented in the biomedical, clinical, behavioral, and social sciences. Unless stated otherwise, international postdocs and US citizens/permanent residents were included in all the analyses as long as the postdocs were working in the US.
 

@@ -31,15 +31,27 @@ The ubiquitously expressed RasGEFs (guanine nucleotide exchange factors) SOS1 an
 
 ## Results
 
-## SOS1 deletion inhibits transformation in EGFR-mutated NSCLC cells
+### SOS1 deletion inhibits transformation in EGFR-mutated NSCLC cells
 
 Previous studies showed that EGFR-mutated NSCLC cell lines show much more robust responsiveness to first-generation EGFR-TKIs in 3D culture (monoculture cancer cell line spheroids or monoculture or mixed culture organoids in ECM/Matrigel) compared to 2D adherent culture, and further that 3D conditions more readily mirror EGFR-TKI responses seen in vivo (Jacobi et al., 2017). To confirm these findings and extend them to third-generation EGFR-TKIs, we assessed dose-dependent survival of both first-generation EGFR-TKI sensitive (HCC827, exon 19 deletion [Δex19]) or resistant (NCI-H1975, L858R/T790M) NSCLC cell lines to either gefitinib or osimertinib treatment under both adherent (2D) or spheroid (3D) culture conditions (Figure 1A). HCC827 and H1975 cells were plated in either adherent or spheroid cultures, allowed to rest for 48 hr, and then treated with increasing doses of either the first-generation EGFR-TKI gefitinib or the third-generation EGFR-TKI osimertinib for 4 days. HCC827 cells showed responsiveness to both EGFR-TKIs under 2D and 3D culture conditions, however in both cases 3D spheroid cultures showed a > 1 log enhancement in EGFR-TKI efficacy and enhanced overall growth inhibition. While NCI-H1975 cells were not sensitive to gefitinib, osimertinib treatment of H1975 cells showed enhanced efficacy and increased overall growth inhibition in 3D spheroids over 2D adherent cultures.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/58204/elife-58204-fig1-v1.jpg)
+
+**Figure 1.:** (A) Dose-response curves of EGFR-mutated HCC827 (Δex19) (left) or NCI-H1975 (L858R/T790M) (right) cells treated with gefitinib or osimertinib under 2D anchorage-dependent (gray diamonds) or 3D spheroid (black squares) culture conditions. (B-C) 2D proliferation (left) or 3D spheroid growth (right) in pooled populations of (B) HCC827 or (C) NCI-H1975 cells where SOS1 or SOS2 has been deleted using CRISPR/Cas9 vs NT controls. 10x images of representative spheroids at day 0 and 21 are shown, scale bar = 250 mm. (D) 3D transformation in pooled populations of the indicated EGFR-mutated NSCLC cell lines where SOS1 or SOS2 has been deleted using CRISPR/Cas9 vs NT controls. (E) Dose-response curve cells of NCI-H1975 cells treated with the SOS1 inhibitor BAY-293 under 2D anchorage-dependent (gray diamonds) or 3D spheroid (black squares) culture conditions. Data are represented as cell # versus untreated for each individual cell line. (F) Dose-response curves of NCI-H1975 cells where SOS1 (red circles) or SOS2 (blue triangles) has been deleted using CRISPR/Cas9 vs NT controls (black squares) treated with BAY-293 under 3D spheroid culture conditions. For each condition, the untreated sample was set to 100%, and drug-treated samples were compared to untreated for each cell line. Dose-response curves and 2D proliferation are presented as mean +/- s.d. from a least three independent experiments. For transformation studies, data are from four independent experiments. Each individual experiment was performed using populations (not clones) of independently CRISPR’d cells. For each experiment, three technical replicates were assessed. Statistical significance was determined by ANOVA using Tukey’s method for multiple comparisons. *p<0.05, **p<0.01, ***p<0.001 vs. NT cells. # p<0.05, ##p<0.01 vs. SOS1 KO cells.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58204/elife-58204-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** 293 T cells were transduced with lentiviruses expressing Cas9 and either a non-targeting sgRNA (NT) or one of eight different sgRNAs targeting SOS1. Whole cell lysates (WCLs) were analyzed by western blotting with antibodies specific for SOS1 or β-actin. SOS1 sgRNA constructs #1, #2, and #8 consistently showed >90% reduction in total SOS1 protein abundance. SOS1-2 was used for experiments in Figure 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/58204/elife-58204-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A-C) Dose-response curves of NCI-H1975 (A), PC9-TM (B), or H3255-TM (C) cells where SOS1 (red circles) or SOS2 (blue triangles) has been deleted using CRISPR/Cas9 vs NT controls (black squares) treated with BAY-293 under 3D spheroid culture conditions. For each condition, the untreated sample was set to 100%, and drug-treated samples were compared to untreated for each cell line. Data are presented as mean +/- s.d. from at least three independent experiments. Data are represented as cell # versus untreated for each individual cell line. For each experiment, three technical replicates were assessed.
 
 SOS1 and SOS2 are ubiquitously expressed RasGEFs responsible for transmitting EGFR signaling to downstream effector pathways. To determine whether SOS1 or SOS2 were required for 2D anchorage-dependent proliferation or 3D spheroid growth in EGFR-mutated NSCLC cells, SOS1 (Figure 1—figure supplement 1 and Munoz et al., 2016) or SOS2 (31) were deleted in pooled populations of HCC827 and H1975 cells to avoid clonal effects, and both proliferation and spheroid growth were assessed versus NT controls (Figure 1B and C). In adherent culture, neither SOS1 nor SOS2 deletion altered proliferation (Figure 1B). In contrast, SOS1 deletion completely inhibited spheroid growth in both HCC827 and H1975 cells, indicating that SOS1 was required to maintain the transformed phenotype in both cell lines. To determine whether SOS1 was generally required for mutant EGFR-driven transformation, we further deleted SOS1 or SOS2 in both first-generation sensitive NCI-H3255 (L858R) and PC9 (Δex19) cells and in subcultures of these cell lines that had acquired T790M mutations after continuous EGFR-TKI treatment (PC9-TM [de Bruin et al., 2014] and H3255-TM [Engelman et al., 2006]). In all cases, SOS1 deletion significantly diminished oncogenic transformation, whereas SOS2 deletion had variable effects on transformation depending on the EGFR mutated cell line examined (Figure 1D). These data indicate that SOS1 is the major RasGEF responsible for oncogenesis downstream of mutated EGFR.
 
 BAY-293 was recently described as a specific inhibitor for SOS1 (Hillig et al., 2019). To determine whether SOS1 inhibition was similarly more effective in 3D spheroids over 2D adherent culture, we assessed dose-dependent survival of H1975 cells after BAY-293 treatment under both 2D and 3D culture conditions (Figure 1E). Similar to what we observed after either EGFR-TKI treatment (Figure 1A) or SOS1 deletion (Figure 1C and D), BAY-293 showed enhanced efficacy and increased overall growth inhibition in 3D spheroids over 2D adherent cultures. To confirm the specificity of BAY-293 for SOS1, we further treated 3D spheroid cultured H1975, PC9-TM, and H3255-TM cells where either SOS1 or SOS2 had been deleted versus NT controls with increasing doses of BAY-293 for four days, and assessed cell viability within the spheroids using Cell Titre Glo (Figure 1F and Figure 1—figure supplement 2). BAY-293 treatment did not inhibit survival of spheroids where SOS1 had been deleted, indicating the specificity of BAY-293 for SOS1. Further, cells where SOS2 had been deleted showed an approximately 1-log enhancement in BAY-293 efficacy and enhanced overall growth inhibition compared to NT controls, indicating that SOS1 and SOS2 have some overlapping functions in supporting survival of spheroid cultured EGFR-mutated NSCLC cells. For these experiments, the untreated sample cell number at day four of treatment for each cell line (NT, SOS1 KO, SOS2 KO) was set to 100%, so differences in transformation (see Figure 1B–D) will not be appreciated. Further, for NCI-H1975 and NCI-H3255-TM cells, SOS1 deletion does not show transformation differences after four days. Overall, these data suggest that EGFR-mutated NSCLC cells are more sensitive to either mutant EGFR or SOS1 inhibition in 3D spheroid culture compared to traditional 2D adherent conditions.
 
-## SOS1 inhibition synergizes with EGFR-TKIs to inhibit cell survival under anchorage independent (3D) culture conditions
+### SOS1 inhibition synergizes with EGFR-TKIs to inhibit cell survival under anchorage independent (3D) culture conditions
 
 Previous studies reported that combining osimertinib with an alternative RTK inhibitor may inhibit or treat the development of resistance driven by that specific RTK (Mancini et al., 2018; Romaniello et al., 2018; La Monica et al., 2017), whereas simultaneous inhibition of multiple parallel RTKs with osimertinib may be required to effectively potentiate osimertinib action (Romaniello et al., 2018). Further, while many studies show enhanced drug activity in combination therapies versus osimertinib treatment alone, they do not assess whether the effects of the two-drug combinations are truly synergistic; synergistic interactions between therapeutics allow for maximization of the therapeutic effect while minimizing adverse events and may be required for effective therapeutic combinations with targeted agents (Roell et al., 2017).
 
@@ -49,7 +61,7 @@ Isobologram analysis is a dose-effect analysis based on the principle of Loewe a
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/58204/elife-58204-fig2-v1.jpg)
 
-**Figure 2.:** (A-D) Isobologram analysis examines drug-drug synergy by comparing dose equivalent (DEQ) mixtures of two drugs based on their EC50 values to treatment with either drug alone (A and B). From the dose-response curves of the DEQ mixtures, plotting the fractional EC50 for each drug in the combination (purple) relative to the individual drug EC50 values (blue, red) on an isobologram plot (C) and calculation of the combination index (CI, D and E) allows assessment of drug-drug synergy. Additive effects occur on the dashed lines of the isobologram plot and have a CI 0.8–1.2 (gray box), whereas synergistic interactions fall below the dashed lines and have a CI <0.8. (E) Isobologram plots and CI from dose-equivalent treatments of H1975 EGFR-mutated NSCLC cells treated with DEQ combinations of osimertinib and BAY-293. Isobologram and CI data are presented as mean +/- s.d. from three independent experiments. (F) Bliss additivity evaluates whether the overall effect of an individual drug combination (EA+B mix) is greater than should be expected for two drugs with independent effects on the overall population (EA + EB – EA * EB). (G) The Bliss Index compares the ratio of the expected effect to the actual effect. Synergistic interactions have a Bliss Index < 0.85. (H) Excess over Bliss evaluates the magnitude of the difference between the actual and expected effects. Increasingly synergistic interactions show an excess over Bliss Index > 0. (I) Heat map of H1975 cells treated with the indicated doses of osimertinib and/or BAY-293 grown in either 2D (adherent) culture conditions or as 3D spheroids. Green indicates more cells, red indicates fewer cells. EC50 values for each individual drug are indicated by an *. (J) Heat map of Bliss Index assessing drug-drug synergy between osimertinib and BAY-293 at each dose combination from D. (K) Heat map of excess over Bliss assessing drug-drug synergy between osimertinib and BAY-293 at each dose combination from D. Bliss Index and excess-over Bliss are presented as the mean from three independent experiments. For each experiment, three technical replicates were assessed.Figure 2—source data 1.
+**Figure 2.:** (A-D) Isobologram analysis examines drug-drug synergy by comparing dose equivalent (DEQ) mixtures of two drugs based on their EC50 values to treatment with either drug alone (A and B). From the dose-response curves of the DEQ mixtures, plotting the fractional EC50 for each drug in the combination (purple) relative to the individual drug EC50 values (blue, red) on an isobologram plot (C) and calculation of the combination index (CI, D and E) allows assessment of drug-drug synergy. Additive effects occur on the dashed lines of the isobologram plot and have a CI 0.8–1.2 (gray box), whereas synergistic interactions fall below the dashed lines and have a CI <0.8. (E) Isobologram plots and CI from dose-equivalent treatments of H1975 EGFR-mutated NSCLC cells treated with DEQ combinations of osimertinib and BAY-293. Isobologram and CI data are presented as mean +/- s.d. from three independent experiments. (F) Bliss additivity evaluates whether the overall effect of an individual drug combination (EA+B mix) is greater than should be expected for two drugs with independent effects on the overall population (EA + EB – EA * EB). (G) The Bliss Index compares the ratio of the expected effect to the actual effect. Synergistic interactions have a Bliss Index < 0.85. (H) Excess over Bliss evaluates the magnitude of the difference between the actual and expected effects. Increasingly synergistic interactions show an excess over Bliss Index > 0. (I) Heat map of H1975 cells treated with the indicated doses of osimertinib and/or BAY-293 grown in either 2D (adherent) culture conditions or as 3D spheroids. Green indicates more cells, red indicates fewer cells. EC50 values for each individual drug are indicated by an *. (J) Heat map of Bliss Index assessing drug-drug synergy between osimertinib and BAY-293 at each dose combination from D. (K) Heat map of excess over Bliss assessing drug-drug synergy between osimertinib and BAY-293 at each dose combination from D. Bliss Index and excess-over Bliss are presented as the mean from three independent experiments. For each experiment, three technical replicates were assessed.
 
 To assess drug-drug synergy between osimertinib and BAY-293 via isobologram analysis, NCI-H1975 cells were cultured under 2D adherent or 3D spheroid conditions for 48 hr, and were treated with varying DEQ combinations of osimertinib:BAY-293 (see Figure 2B) for four days. Cell viability data was assessed using CellTiter-Glo and EC50 values from each DEQ mixture were used to generate isobologram plots and calculate combination indices (Figure 2E). When cells were cultured under 2D conditions, osimertinib and BAY-293 showed additive effects, as DEQ EC50 values fell on the isobole and CI values were between 0.8 and 1.2. In contrast, when cells were cultured as 3D spheroids, osimertinib and BAY-293 showed significant synergy, as DEQ EC50 values were well below the isobole and CI <0.8.
 
@@ -59,37 +71,45 @@ To assess drug-drug synergy between osimertinib and BAY-293 via Bliss Independen
 
 To determine whether the SOS1 inhibitor BAY-293 could generally synergize with EGFR-TKIs in EGFR-mutated lung adenocarcinoma cells, we extended our assessment of drug-drug synergy to isobologram analysis (Figure 3) and Bliss independence analysis (Figure 4) in six different EGFR-mutated lung adenocarcinoma cell lines. In cells that were sensitive to first-generation EGFR-TKIs (HCC827, PC9, H3255; T790 wild-type), we assess drug-drug synergy between BAY-293 and either a first-generation (gefitinib) or third-generation (osimertinib) EGFR-TKI. In cells that were resistant to first-generation EGFR-TKIs (H1975; PC9-TM, H3255-TM; T790M) we limited our assessment to synergy between BAY-293 and osimertinib. To first determine the individual EC50 values for gefitinib, osimertinib, and BAY-293 in each cell line, cells were cultured as 3D spheroids for 48–72 hr, and then treated with increasing doses of drug for four days followed by assessment of cell viability by CellTiter-Glo (Figure 3—figure supplement 1). In five of six cell lines, the individual dose-response curves for BAY-293, osimertinib, and gefitinib (where appropriate) showed similar maximal effects and Hill coefficients, and were thus appropriate for linear isobologram analysis for each two-drug combination of BAY-293, osimertinib, and gefitinib (Tallarida, 2011). In contrast, H3255-TM cells were only moderately sensitive to osimertinib, showing at most a 50% reduction in viability at high doses. Therefore, we limited our assessment of drug-drug synergy in H3255-TM cells to Bliss independence analysis. Further, to simplify our assessment of Bliss independence across multiple drugs and cell lines, we limited our drug treatments to 1:2, 1:1, and 2:1 mixtures of each drug combination based on dose equivalence (see Figure 4A).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/58204/elife-58204-fig3-v1.jpg)
+
+**Figure 3.:** Isobologram analysis and Combination Index (CI) from dose-equivalent treatments of the indicated EGFR-mutated gefitinib-sensitive (L858R or Δex19, top) or gefitinib-resistant (T790M, bottom) NSCLC cell lines with combinations of gefitinib, osimertinib, and BAY-293. Additive effects occur on the dashed lines of the isobologram plot and have a CI 0.8–1.2 (gray box), whereas synergistic interactions fall below the dashed lines and have a CI <0.8. Data are presented as mean +/- s.d. from three independent experiments. For each experiment, three technical replicates were assessed.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58204/elife-58204-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A-F) Dose-response curves of 3D spheroid cultured HCC827 (A), NCI-H1975 (B), PC9 (C), PC9-TM (D), H3255 (E), or H3255-TM (F) cells to osimertinib (black squares), BAY-293 (red circles) or gefitinib (grey diamonds). Hill coefficients +/- s.d. are shown to the right. Data are presented as mean +/- s.d. from at least three independent experiments. For each experiment, three technical replicates were assessed.
+
 ![Figure 4.](https://cdn.elifesciences.org/articles/58204/elife-58204-fig4-v1.jpg)
 
-**Figure 4.:** (A) Bliss Index heatmap from 3D spheroid cultured NCI-H1975 cells Figure 2A (left) and horizontal projections of Bliss Indices of drug treatments at 2:1, 1:1, and 1:2 ratios of osimertinib:BAY-293 based on dose equivalencies (right). Increasingly synergistic interactions (Bliss index <0.85) are indicated by the corresponding heat map. The concentration of BAY-293 (held constant, bottom) and of osimertinib (above each horizontal projection) are given. The IC50 for each individual drug are shown (*). (B) Bliss Index heatmaps based on A for the indicated gefitinib-sensitive and gefitinib-resistant cell lines at 2:1, 1:1, and 1:2 ratios of osimertinib, gefitinib, and BAY-293 based on dose equivalencies. Data for NCI-H1975 cells are the same as in A. Data are presented as the mean from three independent experiments. For each experiment, three technical replicates were assessed.Figure 4—source data 1.
+**Figure 4.:** (A) Bliss Index heatmap from 3D spheroid cultured NCI-H1975 cells Figure 2A (left) and horizontal projections of Bliss Indices of drug treatments at 2:1, 1:1, and 1:2 ratios of osimertinib:BAY-293 based on dose equivalencies (right). Increasingly synergistic interactions (Bliss index <0.85) are indicated by the corresponding heat map. The concentration of BAY-293 (held constant, bottom) and of osimertinib (above each horizontal projection) are given. The IC50 for each individual drug are shown (*). (B) Bliss Index heatmaps based on A for the indicated gefitinib-sensitive and gefitinib-resistant cell lines at 2:1, 1:1, and 1:2 ratios of osimertinib, gefitinib, and BAY-293 based on dose equivalencies. Data for NCI-H1975 cells are the same as in A. Data are presented as the mean from three independent experiments. For each experiment, three technical replicates were assessed.
 
 For each first-generation EGFR-TKI sensitive cell line (HCC827, PC9, H3255), gefitinib and osimertinib did not show any synergy with each other by either isobologram analysis (Figure 3) or Bliss Independence analysis (Figure 4), instead showing additive effects (CI and BI ~1) as would be expected for two drugs with the same molecular target. In contrast, BAY-293 showed significant synergy with gefitinib and osimertinib by both isobologram analysis (Figure 3) and Bliss Independence analysis (Figure 4), suggesting that SOS1 inhibition can act as a secondary treatment for all EGFR-TKIs. Further, in all three T790M mutated cell lines (H1975, PC9-TM, H3255-TM), BAY-293 again showed synergy with osimertinib. These data suggest that combined SOS1 and EGFR inhibition is a robust therapeutic combination that synergize to inhibit EGFR-mutated lung adenocarcinoma cell growth.
 
-## Synergy between BAY-293 and osimertinib is independent of SOS2
+### Synergy between BAY-293 and osimertinib is independent of SOS2
 
 We showed that SOS2 deletion sensitized NCI-H1975 cells to the SOS1 inhibitor BAY-293 (Figure 1F). We wanted to determine whether the synergy we observed between EGFR- and SOS1-inhibition (Figures 3 and 4) was enhanced by SOS2 deletion in EGFR-mutated NSCLC cell lines. To examine whether SOS2 deletion alters the synergy between osimertinib and BAY-293 in EGFR (T790M) mutated cells, SOS2 was deleted in H1975, PC9-TM, and H3255-TM cells. For H1975 and PC9-TM cells, SOS2 KO cells vs NT controls were cultured under 3D spheroid conditions for 48–72 hr, and were then treated with varying DEQ combinations of osimertinib:BAY-293 for 4 days. Cell viability data was assessed using CellTiter-Glo and EC50 values from each DEQ mixture were used to generate Isobologram plots and calculate confidence intervals (Figure 5A and B). For both cell lines, SOS2 deletion sensitized cells to BAY-293, decreasing EC50 by 5–10-fold compared to NT controls without altering the EC50 to osimertinib treatment alone. However, unlike what we observed in the NT control cells, osimertinib and BAY-293 showed only mild synergy in EGFR-mutated cells where SOS2 was deleted as assessed by the distance of the interaction points to the isobole and the increased combination index vs. NT controls. Further, when we overlaid the NT and SOS2 KO isobologram plots at two different scales of BAY-293, the drug combination data points were overlapping between NT and SOS2 KO cells, suggesting that SOS2 deletion did not enhance synergy between osimertinib and BAY-293.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/58204/elife-58204-fig5-v1.jpg)
 
-**Figure 5.:** SOS2 deletion does not enhance the synergistic interaction between SOS1 inhibition and EGFR-TKI treatment.(A-B) Isobologram analysis (left) and Combination Index (right) from dose-equivalent treatments of osimertinib and BAY-293 in H1975 (A) or PC9-TM (B) cells where SOS2 has been deleted (blue) versus NT controls (black). Overlay plots on two different BAY-293 dosing scales are shown below the individual isobologram plots. Additive effects occur on the dashed lines of the isobologram plot and have a CI 0.8–1.2 (gray box), whereas synergistic interactions fall below the dashed lines and have a CI <0.8. (C) Bliss Index heatmaps for H3255-TM cells where SOS2 has been deleted versus NT controls treated at at 1:2, 1:1, and 2:1 ratios of osimertinib and BAY-293 based on dose equivalencies. Data are presented as mean +/- s.d. from three independent experiments. For each experiment, three technical replicates were assessed.Figure 5—source data 1.SOS2 deletion does not enhance the synergistic interaction between SOS1 inhibition and EGFR-TKI treatment.
+**Figure 5.:** (A-B) Isobologram analysis (left) and Combination Index (right) from dose-equivalent treatments of osimertinib and BAY-293 in H1975 (A) or PC9-TM (B) cells where SOS2 has been deleted (blue) versus NT controls (black). Overlay plots on two different BAY-293 dosing scales are shown below the individual isobologram plots. Additive effects occur on the dashed lines of the isobologram plot and have a CI 0.8–1.2 (gray box), whereas synergistic interactions fall below the dashed lines and have a CI <0.8. (C) Bliss Index heatmaps for H3255-TM cells where SOS2 has been deleted versus NT controls treated at at 1:2, 1:1, and 2:1 ratios of osimertinib and BAY-293 based on dose equivalencies. Data are presented as mean +/- s.d. from three independent experiments. For each experiment, three technical replicates were assessed.
 
 Since H3255-TM cells are not appropriate for linear isobologram analysis between BAY-293 and osimertinib, we instead performed Bliss independence analysis to assess potential synergy between osimertinib and BAY-293 in the presence or absence of SOS2. H3255-TM cells where SOS2 had been deleted vs NT controls were cultured under 3D spheroid conditions for 48–72 hr, and were then treated with increasing doses of osimertinib alone, BAY-293 alone, or mixtures of each drug dose at 1:2, 1:1, and 2:1 mixtures of osimertinib and BAY-293 based on dose equivalence for four days. Cell viability data was assessed using CellTiter-Glo, and the Bliss index was calculated for each drug mixture as shown in Figure 2C and Figure 4. As was the case in H1975 and PC9-TM cells, while the SOS2 deletion sensitized H3255-TM cells to BAY-293 we observed less overall synergy between osimertinib and BAY-293 H3255-TM cells where we had deleted SOS2 vs NT controls. These data suggest that although osimertinib and BAY-293 synergize to limit viability of EGFR-mutated lung adenocarcinoma cells, the synergy between osimertinib and BAY-293 is independent of SOS2.
 
-## BAY-293 and osimertinib synergize to inhibit RAS effector signaling
+### BAY-293 and osimertinib synergize to inhibit RAS effector signaling
 
 Mutated EGFR signals through downstream RAF/MEK/ERK and PI3K/AKT effector pathways to promote proliferation, transformation, and survival. Since SOS2 deletion did not further enhance synergy between BAY-293 and osimertinib, we hypothesized that SOS1 inhibition specifically enhanced EGFR-TKI-dependent inhibition of downstream signaling in 3D culture. To perform signaling experiments on 3D cultured spheroids, cells were seeded in 24-well micropatterned low-attachment culture plates (Aggrewell, StemCell) containing ~1200 individual spheroids per condition. To determine the extent to which SOS1 inhibition and/or SOS2 deletion altered osimertinib-dependent inhibition of downstream effector signaling in 3D culture, H1975 or PC9-TM cells where SOS2 was deleted vs. NT controls were cultured as spheroids for 48–72 hr and then treated with increasing doses of osimertinib +/- BAY-293 prior to spheroid collection, lysis, and western blotting for phosphorylated ERK and AKT (Figure 6). In both NT and SOS2 knockout cells, BAY-293 reduced the dose of osimertinib required to inhibit both ERK and AKT phosphorylation (Figure 6). For Raf/MEK/ERK signaling, Bliss Independence analysis of pERK quantitation revealed that either SOS1 inhibition or SOS2 deletion independently synergized with osimertinib to inhibit Raf/MEK/ERK signaling, and the combination of inhibiting SOS1/2 signaling further enhanced this synergy. In contrast, for PI3K/AKT signaling SOS2 deletion did not enhance the synergy between osimertinib and BAY-293. While either osimertinib treatment or SOS2 deletion independently synergized with BAY-293 to inhibit AKT phosphorylation, SOS2 deletion did not further enhance the ability osimertinib to inhibit PI3K/AKT signaling in the presence or absence of BAY-293. These data strongly suggest that vertical inhibition of EGFR and SOS1 limits call viability by inhibiting activation of both RAF/MEK/ERK and PI3K/AKT effector pathways.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/58204/elife-58204-fig6-v1.jpg)
 
-**Figure 6.:** Western blots (A, D), pERK and pAKT quantitation (B, E), and Bliss Indices (C, F) of WCLs of NCI-H1975 cells (A-C, top) or PC9-TM cells (D-F, bottom) cultured under 3D spheroid conditions for 48 hr and then treated with the indicated concentrations of the EGFR-TKI osimertinib and/or the SOS1 inhibitor BAY-293 for 6 hr. Western blots are for pEGFR, EGFR, pAKT, AKT, pERK1/2, ERK1/2, HSP90, and β-actin. pERK and pAKT quantifications were calculated using a weighted average of total protein western blots. Combination Indices are based on pERK/Total protein and pAKT/Total protein quantitations. Increasingly synergistic combinations are indicated in yellow, orange, red, or purple. Phosphoprotein quantitations are presented as mean +/- s.d. from three independent experiments. Bliss indices are presented as mean from three independent experiments. For each experiment, three technical replicates were assessed.Figure 6—source data 1.
+**Figure 6.:** Western blots (A, D), pERK and pAKT quantitation (B, E), and Bliss Indices (C, F) of WCLs of NCI-H1975 cells (A-C, top) or PC9-TM cells (D-F, bottom) cultured under 3D spheroid conditions for 48 hr and then treated with the indicated concentrations of the EGFR-TKI osimertinib and/or the SOS1 inhibitor BAY-293 for 6 hr. Western blots are for pEGFR, EGFR, pAKT, AKT, pERK1/2, ERK1/2, HSP90, and β-actin. pERK and pAKT quantifications were calculated using a weighted average of total protein western blots. Combination Indices are based on pERK/Total protein and pAKT/Total protein quantitations. Increasingly synergistic combinations are indicated in yellow, orange, red, or purple. Phosphoprotein quantitations are presented as mean +/- s.d. from three independent experiments. Bliss indices are presented as mean from three independent experiments. For each experiment, three technical replicates were assessed.
 
-## Assessment of inhibitor landscape in EGFR-mutated cells lines shows synergy upon inhibition of upstream pathway effectors
+### Assessment of inhibitor landscape in EGFR-mutated cells lines shows synergy upon inhibition of upstream pathway effectors
 
 Since the most common EGFR-independent resistance mechanisms involve reactivation of RTK/RAS/effector pathways (Mancini et al., 2018; Romaniello et al., 2018; La Monica et al., 2017; Eberlein et al., 2015), we wanted to assess whether inhibition of different proteins within the EGFR/RAS signaling pathway could synergize to inhibit 3D survival of EGFR (T790M) mutated cancer cells. To determine drug-drug synergies after inhibition of EGFR-RAS pathway signaling at different levels, we assessed synergy between osimertinib, inhibitors of EGFR signaling intermediates upstream of RAS (BAY-293 for SOS1 and RMC-4450 for SHP2), and inhibitors of the Raf/MEK/ERK (trametinib) and PI3K/AKT (buparlisib) pathways (Figure 7A). H1975 and PC9-TM cells were treated with each individual inhibitor or 1:1 DEQ mixtures of every drug-drug combination, and the combination index was calculated to assess drug-drug synergy. Since H3255-TM cells are not suitable for isobologram analysis, these cells were treated with full-dose mixtures based on dose equivalence and the Bliss Index was calculated for each drug-drug combination (Figure 7B). Intriguingly, all three cell lines showed drug-drug synergy with any combination of EGFR, SOS1, and SHP2 inhibition. In contrast, inhibition of downstream Raf/MEK/ERK or PI3K/AKT pathways failed to consistently synergize with either osimertinib or any other inhibitor (Figure 7B, top). These data support the premise that combined vertical inhibition of proximal EGFR signaling may constitute an effective strategy to treat EGFR-mutated lung adenocarcinomas.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/58204/elife-58204-fig7-v1.jpg)
 
-**Figure 7.:** (A) Signaling diagram showing EGFR/RAS pathway inhibitors that were assessed for pairwise synergy by isobologram analysis using 50:50 dose-equivalent mixes of each drug pair. (B) Heat map of Combination Indices from isobologram analyses of the indicated drug-drug combinations in NT and SOS2 KO NSCLC cell lines. Synergistic combinations are indicated in yellow, orange, or red. Data are presented as the mean from three independent experiments. (C-D) Isobologram analysis and Combination Index (CI) from dose-equivalent treatments of 3D spheroid cultured NCI-H1975 cells treated with the indicated two-drug (C) or three-drug (D) combinations of osimertinib (black), RMC-4550 (purple), and BAY-293 (red). For three drug combination, the two drugs indicated on the y-axis were held at a 1:1 ratio, and then mixed at dose equivalent ratiow with the third drug. CI values indicate enhanced synergy beyond the two drug combination on the y-axis of the isobologram plot and are calculated based on the y-axis drug combination calculated a s single drug treatment. Additive effects occur on the dashed lines of the isobologram plot and have a CI 0.8–1.2 (gray box), whereas synergistic interactions fall below the dashed lines and have a CI <0.8. (E) Combination indices from two-drug combinations of osimertinib (black), RMC-4550 (purple), and BAY-293 (red) mixed at 2:1, 1:1, or 1:2 ratios or the three drug combination at a 1:1:1 ratio (grey). CI are calculated based on three individual drug treatments. (F) Signaling model based on data from Figures 1–7 showing that combined targeting of mutated EGFR and SOS1 provides sufficient vertical inhibition of upstream signaling to inhibit RAS effector signaling and block oncogenic transformation. This synergistic inhibition can be further enhanced by SHP2 inhibition, providing multiple potential drug combinations for therapeutic intervention in EGFR-mutated NSCLC. Isobologram and CI data are presented as mean +/- s.d. from three independent experiments. For each experiment, three technical replicates were assessed.Figure 7—source data 1.
+**Figure 7.:** (A) Signaling diagram showing EGFR/RAS pathway inhibitors that were assessed for pairwise synergy by isobologram analysis using 50:50 dose-equivalent mixes of each drug pair. (B) Heat map of Combination Indices from isobologram analyses of the indicated drug-drug combinations in NT and SOS2 KO NSCLC cell lines. Synergistic combinations are indicated in yellow, orange, or red. Data are presented as the mean from three independent experiments. (C-D) Isobologram analysis and Combination Index (CI) from dose-equivalent treatments of 3D spheroid cultured NCI-H1975 cells treated with the indicated two-drug (C) or three-drug (D) combinations of osimertinib (black), RMC-4550 (purple), and BAY-293 (red). For three drug combination, the two drugs indicated on the y-axis were held at a 1:1 ratio, and then mixed at dose equivalent ratiow with the third drug. CI values indicate enhanced synergy beyond the two drug combination on the y-axis of the isobologram plot and are calculated based on the y-axis drug combination calculated a s single drug treatment. Additive effects occur on the dashed lines of the isobologram plot and have a CI 0.8–1.2 (gray box), whereas synergistic interactions fall below the dashed lines and have a CI <0.8. (E) Combination indices from two-drug combinations of osimertinib (black), RMC-4550 (purple), and BAY-293 (red) mixed at 2:1, 1:1, or 1:2 ratios or the three drug combination at a 1:1:1 ratio (grey). CI are calculated based on three individual drug treatments. (F) Signaling model based on data from Figures 1–7 showing that combined targeting of mutated EGFR and SOS1 provides sufficient vertical inhibition of upstream signaling to inhibit RAS effector signaling and block oncogenic transformation. This synergistic inhibition can be further enhanced by SHP2 inhibition, providing multiple potential drug combinations for therapeutic intervention in EGFR-mutated NSCLC. Isobologram and CI data are presented as mean +/- s.d. from three independent experiments. For each experiment, three technical replicates were assessed.
 
 SHP2 is important for the stabilization of the GRB2:SOS1/2 complexes on EGFR (Dance et al., 2008), and the mechanism of allosteric SHP2 inhibitors depends on SOS1 (Nichols et al., 2018), although the contribution of SOS2 to SHP2 inhibitors was not assessed. To determine whether SOS2 deletion altered the spectrum of drug-drug synergies in EGFR-mutated cells, parallel studies were performed in EGFR-mutated cells where SOS2 was deleted (Figure 7B, bottom). Unlike what we observed for synergy between EGFR- and SOS1 inhibition, synergy between SOS1 and SHP2 inhibition was enhanced by SOS2 deletion. These data suggest that SOS2 plays a role in SHP2-dependent signaling. SOS1 inhibition also synergized with MEK inhibition in SOS2 KO cells. Given the strong synergy between SOS1 inhibition and SOS2 deletion in inhibiting Raf/MEK/ERK signaling (Figure 6), these data suggest that deep inhibition of MEK signaling is sufficient to inhibit survival in EGFR-mutated cells.
 
@@ -115,94 +135,912 @@ Overall, our data suggest that inhibitors of proximal signaling may be the most 
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Lung; adenocarcinoma; non-small cell lung cancer</td>
+      <td>Obtained from Udayan Guha, available at ATCC</td>
+      <td>NCI-H1975 CRL-5908 RRID:CVCL_UE30</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Lung; adenocarcinoma; epithelial</td>
+      <td>Obtained from Udayan Guha, available at ATCC</td>
+      <td>HCC827 CRL-2868 RRID:CVCL_DH92</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Lung; adenocarcinoma; non-small cell lung cancer</td>
+      <td>Obtained from Udayan Guha, available at NCI-DTP or ATCC</td>
+      <td>NCI-H3255 CRL-2882NCI-DTP Cat# NCI-H3255, RRID:CVCL_6831</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Lung; adenocarcinoma; non-small cell lung cancer</td>
+      <td>de Bruin et al., 2014</td>
+      <td>NCI-H3255TM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Dermal fibroblast (normal, Adult)</td>
+      <td>Obtained from Udayan Guha, available at Millipore Sigma or BCRJ</td>
+      <td>PC9 #90071810 BCRJ Cat# 0331, RRID:CVCL_B260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Lung; adenocarcinoma; non-small cell lung cancer</td>
+      <td>Engelman et al., 2006</td>
+      <td>PC9-TM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>Kidney; epithelial fibroblast (fetus)</td>
+      <td>ATCC</td>
+      <td>HEK-293T ATCC Cat# CRL-3216, RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TransIT-Lenti</td>
+      <td>Mirus</td>
+      <td>Catalogue # MIR 6605</td>
+      <td>Lentiviral transduction reagent</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MISSION Lentiviral packaging mix</td>
+      <td>Millipore Sigma</td>
+      <td>Catalogue # SHP001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Bovine Serum Albumin</td>
+      <td>Millipore Sigma</td>
+      <td>Catalogue # A8022</td>
+      <td>Cell culture reagent for ACL-4 media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>apo-Transferrin (human)</td>
+      <td>Millipore Sigma</td>
+      <td>Catalogue # T5391</td>
+      <td>Cell culture reagent for ACL-4 media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sodium Selenite</td>
+      <td>Millipore Sigma</td>
+      <td>Catalogue # S9133</td>
+      <td>Cell culture reagent for ACL-4 media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Hydrocortisone</td>
+      <td>Millipore Sigma</td>
+      <td>Catalogue # H0135</td>
+      <td>Cell culture reagent for ACL-4 media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ethanolamine</td>
+      <td>Millipore Sigma</td>
+      <td>Catalogue # E0135</td>
+      <td>Cell culture reagent for ACL-4 media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>O-Phosphorylethanolamine</td>
+      <td>Millipore Sigma</td>
+      <td>Catalogue # P0503</td>
+      <td>Cell culture reagent for ACL-4 media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3,3’,5-Triiodo-L-thyronine [T3]</td>
+      <td>Millipore Sigma</td>
+      <td>Catalogue # T5516</td>
+      <td>Cell culture reagent for ACL-4 media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sodium Pyruvate</td>
+      <td>Millipore Sigma</td>
+      <td>Catalogue # P4562</td>
+      <td>Cell culture reagent for ACL-4 media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>HEPES</td>
+      <td>Invitrogen</td>
+      <td>Catalogue # 15630–080</td>
+      <td>Cell culture reagent for ACL-4 media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Epidermal Growth Factor [EGF]</td>
+      <td>Millipore Sigma</td>
+      <td>Catalogue # E4127</td>
+      <td>Cell culture reagent for ACL-4 media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Recombinant Human Insulin</td>
+      <td>Millipore Sigma</td>
+      <td>Catalogue # I9278</td>
+      <td>Cell culture reagent for ACL-4 media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>AggreWell 400 low-attachment culture plates</td>
+      <td>Stem Cell</td>
+      <td>Catalogue # 34415</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ultra-low attachment 96-well round bottomed plates</td>
+      <td>Corning Corstar</td>
+      <td>Catalogue # 7007</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nunc Nucleon Sphera microplates</td>
+      <td>ThermoFisher</td>
+      <td>Catalogue # 174929</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>coated 96-well white-walled CulturePlates</td>
+      <td>Perken Elmer</td>
+      <td>Catalogue # 6005688</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Sos 1 Antibody (C-23): sc-256, rabbit polyclonal</td>
+      <td>Santa Cruz</td>
+      <td>sc-256</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-SOS2 antibody (C-19): sc-258, rabbit polyclonal</td>
+      <td>Santa Cruz</td>
+      <td>sc-258</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-actin antibody AC15, mouse monoclonal</td>
+      <td>Millipore Sigma</td>
+      <td>#A1978</td>
+      <td>(1:5000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-Phospho-EGF Receptor (Tyr1068) (D7A5) XP Rabbit mAb #3777</td>
+      <td>Cell Signaling Technology</td>
+      <td>#3777</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho p44/42 MAPK (Erk1/2) (Thr202/Tyr204) (D13.14.4E) XPRabbit mAb #4370</td>
+      <td>Cell Signaling Technology</td>
+      <td>#4370</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-p44/42 MAPK (Erk1/2) (L34F12) Mouse mAb #4696</td>
+      <td>Cell Signaling Technology</td>
+      <td>#4696</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- Phospho-Akt (Ser473) (D9E) XPRabbit mAb #4060</td>
+      <td>Cell Signaling Technology</td>
+      <td>#4060</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti- Akt (pan) (40D4) Mouse mAb #2920</td>
+      <td>Cell Signaling Technology</td>
+      <td>#2920</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HSP 90α/β Antibody (H-114): sc-7947</td>
+      <td>Santa Cruz</td>
+      <td>#sc-7947</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-EGF Receptor (D38B1) XPRabbit mAb #4267</td>
+      <td>Cell Signaling Technology</td>
+      <td>#4267</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA Reagent</td>
+      <td>pLentiCrispr v2</td>
+      <td>Sanjana et al., 2014</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>CellTiter-Glo 2.0</td>
+      <td>Promega</td>
+      <td>G9243</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiCrispr. NT</td>
+      <td>Sheffels et al., 2018</td>
+      <td>NT</td>
+      <td>sgRNA: CCATATCGGGGCGAGACATG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiCrispr. SOS2-9</td>
+      <td>Sheffels et al., 2018</td>
+      <td>SOS2-9</td>
+      <td>sgRNA: GAGAACAGTCCGAAATGGCG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiCrispr. SOS1-1</td>
+      <td>This manuscript</td>
+      <td>SOS1-1</td>
+      <td>sgRNA: GGGCAGCTGCTGCGCCTGCA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiCrispr. SOS1-2</td>
+      <td>This manuscript</td>
+      <td>SOS1-2</td>
+      <td>sgRNA: GCATCCTTTCCAGTGTACTC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiCrispr. SOS1-3</td>
+      <td>This manuscript</td>
+      <td>SOS1-3</td>
+      <td>sgRNA: TATTCTGCATTGCTAGCACC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiCrispr. SOS1-4</td>
+      <td>This manuscript</td>
+      <td>SOS1-4</td>
+      <td>sgRNA: AGTGGCATATAAGCAGACCT</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiCrispr. SOS1-5</td>
+      <td>This manuscript</td>
+      <td>SOS1-5</td>
+      <td>sgRNA: ATTGCAAGAGACAATGGACC</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiCrispr. SOS1-6</td>
+      <td>This manuscript</td>
+      <td>SOS1-6</td>
+      <td>sgRNA: GCTTATATGCCACTCAACTG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiCrispr. SOS1-7</td>
+      <td>This manuscript</td>
+      <td>SOS1-7</td>
+      <td>sgRNA: GAAGGAACTCTTACACGTGT</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pLentiCrispr. SOS1-8</td>
+      <td>This manuscript</td>
+      <td>SOS1-8</td>
+      <td>sgRNA: CTATTGGGTGTAAGGTGAGC</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Cell lines were cultured at 37°C and 5% CO2. HCC827, NCI-H1975, PC9, and PC9-TM cells were maintained in Roswell Park Memorial Institute medium (RPMI), each supplemented with 10% fetal bovine serum and 1% penicillin-streptomycin. Cell lines were authenticated by STR profiling and confirmed as mycoplasma negative. EGFR mutations were confirmed by Sanger sequencing. H3255 and H3255-TM were maintained in ACL4 medium formulated in DMEM:F-12 including: Bovine Serum Albumin 0.5% (w/v) (Sigma cat no. A8022), apo-Transferrin (human) (Sigma cat no. T5391) 0.01 mg/mL, Sodium Selenite (Sigma cat no. S9133) 25 nM, Hydrocortisone (Sigma cat no. H0135) 50 nM, Ethanolamine (Sigma cat no. E0135) 0.01 mM, O-Phosphorylethanolamine (Sigma cat no. P0503) 0.01 mM, 3,3’,5-Triiodo-L-thyronine [T3] (Sigma cat no. T5516) 100pM, Sodium Pyruvate (Sigma cat no. P4562), HEPES (Invitrogen cat no 15630–080) 10 mM, Epidermal Growth Factor [EGF] 1 ng/mL, Recombinant Human Insulin (Sigma cat no. I9278) 0.02 mg/mL, and 1% penicillin-streptomycin. For signaling experiments, cells were seeded in 24-well micropatterned AggreWell 400 low-attachment culture plates (Stem Cell # 34415) at 1.2 × 106 cells/well in 2 mL of medium. 24 hr post-plating, half of the media was carefully replaced with fresh media to not disturb the spheroids. At 48 hr, 1 mL media was removed and replaced with 2 x inhibitor. Cells were treated with inhibitor for 6 hr and then collected for cell lysis and western blot analysis.
 
-## Cell lysis and western blot analysis
+### Cell lysis and western blot analysis
 
 Cells were lysed in RIPA buffer (1% NP-40, 0.1% SDS, 0.1% Na-deoxycholate, 10% glycerol, 0.137 M NaCl, 20 mM Tris pH [8.0], protease (Biotool #B14002) and phosphatase (Biotool #B15002) inhibitor cocktails) for 20 min at 4°C and spun at 10,000 RPM for 10 min. Clarified lysates were boiled in SDS sample buffer containing 100 mM DTT for 10 min prior to western blotting. Proteins were resolved by sodium dodecyl sulfate-polyacrylamide (Criterion TGX precast) gel electrophoresis and transferred to nitrocellulose membranes. Western blots were developed by multiplex Western blotting using anti-SOS1 (Santa Cruz sc-256; 1:500), anti-SOS2 (Santa Cruz sc-258; 1:500), anti-β-actin (Sigma AC-15; 1:5,000), anti-pEGFR (Cell Signaling 3777; 1:1000), anti-EGFR (Cell Signaling 4267; 1:1000), anti-pERK1/2 (Cell Signaling 4370; 1:1,000), anti-ERK1/2 (Cell Signaling 4696; 1:1000), anti-pAKT Ser473 (Cell Signaling 4060; 1:1000), anti-AKT (Cell Signaling 2920; 1:1000), anti-HSP90 (Santa Crux sc-7947, 1:1000), primary antibodies. Anti-mouse and anti-rabbit secondary antibodies conjugated to IRDye680 or IRDye800 (LI-COR; 1:10,000) were used to probe primary antibodies. Western blot protein bands were detected and quantified using the Odyssey system (LI-COR). For quantification of SOS1 and SOS2 abundance, samples were normalized to either β-actin or HSP90. For quantification of pERK and pAKT, samples were normalized to a weighted average of HSP90, β-actin, total ERK1/2, total AKT, and total EGFR (Janes, 2015).
 
-## Proliferation studies
+### Proliferation studies
 
 For 2D proliferation assays, 5 × 102 cells were seeded on cell culture-coated 96-well white-walled CulturePlates (Perkin Elmer #6005688). Cells were lysed with CellTiter-Glo 2.0 Reagent (Promega), and luminescence was read using a Bio-Tek Cytation five multi-mode plate reader. Cell number was assessed 24 hr after plating to account for any discrepancies in plating (Day 1), and then on days 3, 5, and 7. Data were analyzed as an increase in luminescence over Day 1.
 
-## Transformation studies
+### Transformation studies
 
 H3255 and H3255-TM cells were seeded in 0.32% Nobel agar at 2 × 104 cells per 35 mm dish to assess anchorage-independent. Soft agar colonies were counted 28 days after seeding. For all other cell lines spheroid growth assessed in ultra-low attachment 96-well round bottomed plates (Corning Costar #7007), cells were seeded at 500 cells per well. Images were taken 24 hr after plating to assess initial spheroid size, and then 7, 14, and 21 days later to assess transformation. Cell number was assessed in parallel plates at 0, 7, 14, and 21 days using CellTiter-Glo 2.0 reagent.
 
-## sgRNA studies
+### sgRNA studies
 
 A non-targeting (NT) single guide RNA (sgRNA), a SOS2-targeted sgRNA (Sheffels et al., 2018), and eight potential SOS1-targeted sgRNAs previously used to target SOS1 in a genome-wide CRISPR screen (Munoz et al., 2016) were each cloned into pLentiCRISPRv2 as previously described (Sanjana et al., 2014). SOS1-2 was chosen as the SOS1 sgRNA for the study, and SOS2-9 was chosen as previously described (Sheffels et al., 2018). For studies in Figure 1, cells were infected lentivirus to express the given sgRNA with Cas9, and cells were selected for 10 days with puromycin prior to Western blotting. Cell lysates were probed for SOS1 or SOS2, and only cell populations showing grater that 80% SOS deletion within the overall population were used. Importantly, cell clones were not used, rather cell populations where > 80% of cells showed SOS deletion were used to minimize clonal effects. Independent infections were used for each experiment.
 
-ConstructsgRNANTCCATATCGGGGCGAGACATGSOS2-9GAGAACAGTCCGAAATGGCGSOS1-1GGGCAGCTGCTGCGCCTGCASOS1-2GCATCCTTTCCAGTGTACTCSOS1-3TATTCTGCATTGCTAGCACCSOS1-4AGTGGCATATAAGCAGACCTSOS1-5ATTGCAAGAGACAATGGACCSOS1-6GCTTATATGCCACTCAACTGSOS1-7GAAGGAACTCTTACACGTGTSOS1-8CTATTGGGTGTAAGGTGAGC
+<table>
+  <thead>
+    <tr>
+      <th>Construct</th>
+      <th>sgRNA</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NT</td>
+      <td>CCATATCGGGGCGAGACATG</td>
+    </tr>
+    <tr>
+      <td>SOS2-9</td>
+      <td>GAGAACAGTCCGAAATGGCG</td>
+    </tr>
+    <tr>
+      <td>SOS1-1</td>
+      <td>GGGCAGCTGCTGCGCCTGCA</td>
+    </tr>
+    <tr>
+      <td>SOS1-2</td>
+      <td>GCATCCTTTCCAGTGTACTC</td>
+    </tr>
+    <tr>
+      <td>SOS1-3</td>
+      <td>TATTCTGCATTGCTAGCACC</td>
+    </tr>
+    <tr>
+      <td>SOS1-4</td>
+      <td>AGTGGCATATAAGCAGACCT</td>
+    </tr>
+    <tr>
+      <td>SOS1-5</td>
+      <td>ATTGCAAGAGACAATGGACC</td>
+    </tr>
+    <tr>
+      <td>SOS1-6</td>
+      <td>GCTTATATGCCACTCAACTG</td>
+    </tr>
+    <tr>
+      <td>SOS1-7</td>
+      <td>GAAGGAACTCTTACACGTGT</td>
+    </tr>
+    <tr>
+      <td>SOS1-8</td>
+      <td>CTATTGGGTGTAAGGTGAGC</td>
+    </tr>
+  </tbody>
+</table>
 
-## Production of recombinant lentiviruses
+### Production of recombinant lentiviruses
 
 Lentiviruses were produced by co-transfecting MISSION lentiviral packaging mix (Sigma) into 293 T cells using Mirus TransIT-Lenti transfection reagent (Mirus Bio # MIR6605) in Opti-MEM (Thermo Scientific #31-985-062). At 48 hr post-transfection, viral supernatants were collected and filtered. Viral supernatants were then either stored at −80°C or used immediately to infect cells in combination with polybrene at 8 μg/mL. 48 hr post-infection, cells were selected in 4 μg/mL Puromycin (Invitrogen). Twelve days after selection, cells were analyzed for SOS1 and SOS2 expression and plated for proliferation and transformation assays.
 
-## Inhibitor studies
+### Inhibitor studies
 
 For all studies, outer wells (rows A and H, columns 1 and 12) were filled with 200 μL of PBS to buffer inner cells from temperature and humidity fluctuations. Triplicate wells of cells were then treated with increasing concentrations 100 μL of 2 × inhibitor at either a semilog (single drug dose response curves to determine EC50) or a 1/3-log scale (isobologram and Bliss independence experiments) for 72 (adherent cultures) or 96 (spheroids) hr. Cell viability was assessed using CellTiter-Glo 2.0 (30 μL/well). Luminescence was assessed using a Bio-Tek Cytation five multi-mode plate reader. Data were normalized to the maximum luminescence reading of untreated cells, and individual drug EC50 values were calculated using Prism eight by non-linear regression using log(inhibitor) vs. response with a variable slope (four parameters) to assess for differences in the Hill Coefficient between different drug treatments. For all drug-treatment studies, the untreated sample for each cell line was set to 100%. This would mask any differences in 3D cell proliferation seen between cell lines.
 
-## Isobologram analysis
+### Isobologram analysis
 
-Dose equivalence was first determined by assessing individual-drug EC50 values; individual-drug Hill Coefficients were determined to assure that the two drugs could be assessed for synergy by Lowe additivity. To generate dose-equivalent dose-response curves, the dose for each drug closest to the EC50 on a 1/3-log scale was set as equivalent, and 10-point dose response curves were generated for each individual drug on either side of the equivalent dose to ensure the top (no drug effect) and bottom (maximal drug effect) were represented on the dose-response curve. 100 μL of drug each drug dose was added as outlined above. To generate dose-equivalent mixtures for isobologram analysis, equivalent doses of the two drugs were mixed at different ratios so that the total dose (100 μL) would be expected to have an equivalent effect on the cells if the two drugs were additive. Drugs were mixed at either five (4:1, 2:1, 1:1, 1:2, and 1:4) or three (2:1, 1:1, and 1:2) different drug mixtures depending on the experiment. Cells were treated and EC50 values for each individual drug or drug mixture based on each drug’s dosing were determined for as outlined above. To generate an isobologram plot, the EC50 of each individual drug was plotted as the x- or y-intercept, and the calculated contribution of each drug to the overall EC50 for each DEQ mix is plotted as a single point (EC50,A, EC50,B) on the graph.CombinationIndex=EC50AmixEC50Aalone+EC50BmixEC50Balone
+Dose equivalence was first determined by assessing individual-drug EC50 values; individual-drug Hill Coefficients were determined to assure that the two drugs could be assessed for synergy by Lowe additivity. To generate dose-equivalent dose-response curves, the dose for each drug closest to the EC50 on a 1/3-log scale was set as equivalent, and 10-point dose response curves were generated for each individual drug on either side of the equivalent dose to ensure the top (no drug effect) and bottom (maximal drug effect) were represented on the dose-response curve. 100 μL of drug each drug dose was added as outlined above. To generate dose-equivalent mixtures for isobologram analysis, equivalent doses of the two drugs were mixed at different ratios so that the total dose (100 μL) would be expected to have an equivalent effect on the cells if the two drugs were additive. Drugs were mixed at either five (4:1, 2:1, 1:1, 1:2, and 1:4) or three (2:1, 1:1, and 1:2) different drug mixtures depending on the experiment. Cells were treated and EC50 values for each individual drug or drug mixture based on each drug’s dosing were determined for as outlined above. To generate an isobologram plot, the EC50 of each individual drug was plotted as the x- or y-intercept, and the calculated contribution of each drug to the overall EC50 for each DEQ mix is plotted as a single point (EC50,A, EC50,B) on the graph.
+
+$$
+CombinationIndex=\frac{EC_{50}A_{mix}}{EC_{50}A_{alone}}+\frac{EC_{50}B_{mix}}{EC_{50}B_{alone}}
+$$
 
 To calculate the combination index for each dose equivalent mixture, the calculated contribution of each drug to the overall EC50 were used in the equation:
 
 As an example, we will show data for one trial analyzing the combination of osimertinib and BAY-293 in 3D spheroid cultured H1975 cells in Figure 2B. The EC50 values for each individual drug were first determined: −8.57 for osimertinib and −5.73 for BAY-293. Based on these EC50 values, the dose equivalence was set at −8.67 for osimertinib −5.67 for BAY-293 (approximated EC50 for each drug in bold), and the following 10-point dose response curves were generated:
 
-Osimertinib−11−10.67−10.33−10−9.67−9.33-9−8.67−8.33-8BAY-293-8−7.67−7.33-7−6.67−6.33-6−5.67−5.33-5
+<table>
+  <thead>
+    <tr>
+      <th>Osimertinib</th>
+      <th>−11</th>
+      <th>−10.67</th>
+      <th>−10.33</th>
+      <th>−10</th>
+      <th>−9.67</th>
+      <th>−9.33</th>
+      <th>-9</th>
+      <th>−8.67</th>
+      <th>−8.33</th>
+      <th>-8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BAY-293</td>
+      <td>-8</td>
+      <td>−7.67</td>
+      <td>−7.33</td>
+      <td>-7</td>
+      <td>−6.67</td>
+      <td>−6.33</td>
+      <td>-6</td>
+      <td>−5.67</td>
+      <td>−5.33</td>
+      <td>-5</td>
+    </tr>
+  </tbody>
+</table>
 
 Cells were then treated with the following volumes of each drug to generate seven dose-equivalent dose response curves:
 
-4:1 mixture2:1 mixture1:1 mixture1:2 mixture1:4 mixtureosimertinib100 μL80 μL66 μL50 μL34 μL20 μL0 μLBAY-2930 μL20 μL34 μL50 μL66 μL80 μL100 μL
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>4:1 mixture</th>
+      <th>2:1 mixture</th>
+      <th>1:1 mixture</th>
+      <th>1:2 mixture</th>
+      <th>1:4 mixture</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>osimertinib</td>
+      <td>100 μL</td>
+      <td>80 μL</td>
+      <td>66 μL</td>
+      <td>50 μL</td>
+      <td>34 μL</td>
+      <td>20 μL</td>
+      <td>0 μL</td>
+    </tr>
+    <tr>
+      <td>BAY-293</td>
+      <td>0 μL</td>
+      <td>20 μL</td>
+      <td>34 μL</td>
+      <td>50 μL</td>
+      <td>66 μL</td>
+      <td>80 μL</td>
+      <td>100 μL</td>
+    </tr>
+  </tbody>
+</table>
 
 EC50 values for each dose-response curve were then determined based on each drug’s dosing:
 
-OSM alone4:1 mixture2:1 mixture1:1 mixture1:2 mixture1:4 mixtureBAY aloneosimertinib EC50 (nM)2.620.840.700.921.491.192.40BAY-293 EC50 (μM)2.141.010.831.091.491.041.82
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>OSM alone</th>
+      <th>4:1 mixture</th>
+      <th>2:1 mixture</th>
+      <th>1:1 mixture</th>
+      <th>1:2 mixture</th>
+      <th>1:4 mixture</th>
+      <th>BAY alone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>osimertinib EC50 (nM)</td>
+      <td>2.62</td>
+      <td>0.84</td>
+      <td>0.70</td>
+      <td>0.92</td>
+      <td>1.49</td>
+      <td>1.19</td>
+      <td>2.40</td>
+    </tr>
+    <tr>
+      <td>BAY-293 EC50 (μM)</td>
+      <td>2.14</td>
+      <td>1.01</td>
+      <td>0.83</td>
+      <td>1.09</td>
+      <td>1.49</td>
+      <td>1.04</td>
+      <td>1.82</td>
+    </tr>
+  </tbody>
+</table>
 
 EC50 values were then adjusted based on the amount of each drug that was put in the mixture to determine the contribution of each drug in the mixture to the overall EC50. For example, the 4:1 mixture was 80% osimertinib, so the osimertinib EC50 for that mixture is multiplied by 0.8. The corresponding corrected EC50 values and combination indices were:
 
-OSM alone4:1 mixture2:1 mixture1:1 mixture1:2 mixture1:4 mixtureBAY aloneosimertinib EC50 (nM)2.620.670.450.460.520.240BAY-293 EC50 (μM)00.200.290.540.970.841.82Combination Index0.400.340.440.650.46
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>OSM alone</th>
+      <th>4:1 mixture</th>
+      <th>2:1 mixture</th>
+      <th>1:1 mixture</th>
+      <th>1:2 mixture</th>
+      <th>1:4 mixture</th>
+      <th>BAY alone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>osimertinib EC50 (nM)</td>
+      <td>2.62</td>
+      <td>0.67</td>
+      <td>0.45</td>
+      <td>0.46</td>
+      <td>0.52</td>
+      <td>0.24</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>BAY-293 EC50 (μM)</td>
+      <td>0</td>
+      <td>0.20</td>
+      <td>0.29</td>
+      <td>0.54</td>
+      <td>0.97</td>
+      <td>0.84</td>
+      <td>1.82</td>
+    </tr>
+    <tr>
+      <td>Combination Index</td>
+      <td></td>
+      <td>0.40</td>
+      <td>0.34</td>
+      <td>0.44</td>
+      <td>0.65</td>
+      <td>0.46</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
-## Bliss independence analysis
+### Bliss independence analysis
 
-Unlike Isobologram analysis, individual drug doses are not reduced for drug-drug combinations when performing Bliss independence analysis. For data in Figure 2, wells were treated with a full dose of each individual drug or drug combination in a 10 × 10 matrix of dose combinations for osimertinib and BAY-293 on a 1/3-log scale. Data were normalized to the maximum luminescence reading of untreated cells, and a heat-map depicting cell viability was generated using Prism 8. The Bliss index was calculated by first converting viability (on a scale of 0 to 1) for each treatment to the effect of each drug or drug combination, where 0 represents no effect and 1 represents 100% effect (no viable cells).effect=1−viability
+Unlike Isobologram analysis, individual drug doses are not reduced for drug-drug combinations when performing Bliss independence analysis. For data in Figure 2, wells were treated with a full dose of each individual drug or drug combination in a 10 × 10 matrix of dose combinations for osimertinib and BAY-293 on a 1/3-log scale. Data were normalized to the maximum luminescence reading of untreated cells, and a heat-map depicting cell viability was generated using Prism 8. The Bliss index was calculated by first converting viability (on a scale of 0 to 1) for each treatment to the effect of each drug or drug combination, where 0 represents no effect and 1 represents 100% effect (no viable cells).
 
-From the effect data, the expected effect for each drug combination is calculated:Expectedeffect=EA+EB∗(1−EA)Expectedeffect=EA+EB−EA∗EB
+$$
+effect=1−viability
+$$
 
-The Bliss Index is the ratio of the expected effect/actual effect:BlissIndex=(expectedeffect)/(actualeffect)BlissIndex=(EA+EB–EA∗EB)/(EA+BMIX)
+From the effect data, the expected effect for each drug combination is calculated:
+
+$$
+Expectedeffect=E_{A}+E_{B}∗(1−E_{A})
+$$
+
+
+
+$$
+Expectedeffect=E_{A}+E_{B}−E_{A}∗E_{B}
+$$
+
+The Bliss Index is the ratio of the expected effect/actual effect:
+
+$$
+BlissIndex=(expectedeffect)/(actualeffect)
+$$
+
+
+
+$$
+BlissIndex=(E_{A}+E_{B}–E_{A}∗E_{B})/(E_{A+BMIX})
+$$
 
 A Bliss Index of 1 indicates that the actual and expected effects are equivalent, and the effects of the two drugs are additive. Bliss Index < 1 indicates increasing synergy, whereas Bliss Index > 1 indicates antagonism.
 
-Excess over Bliss is calculated by determining how much greater the actual effect of the drug combination is versus the expected effect, and is calculated as:ExcessoverBliss=100∗[actualeffect–expectedeffect]ExcessoverBliss=100∗[EA+BMIX−(EA+EB−EA∗EB)]
+Excess over Bliss is calculated by determining how much greater the actual effect of the drug combination is versus the expected effect, and is calculated as:
+
+$$
+ExcessoverBliss=100^{∗}[actualeffect–expectedeffect]
+$$
+
+
+
+$$
+ExcessoverBliss=100^{∗}[E_{A+BMIX}−(E_{A}+E_{B}−E_{A}∗E_{B})]
+$$
 
 An excess over Bliss of 0 indicates that the actual and expected effects are equivalent, and the effects of the two drugs are additive; values > 0 indicate increasing synergy, whereas values < 0 indicate antagonism.
 
 Since synergy occurred at drug combinations at or just below the EC50 values for each individual drug, Bliss experiments in Figures 4 and 5, drug mixtures were limited to 3 × 10 drug mixtures based on dose equivalence with mixtures at approximately 2:1, 1:1, and 1:2 mixes of the two drugs based on dose equivalence. Here, the doses used for one drug were held constant, and the second drug dose wash shifted by 1/3 log up or down to generate 2:1 and 1:2 mixtures. For example, for the combination of osimertinib and BAY-293 in H1975 cells, the following drug doses were used:
 
-Osimertinib (1:2 ratio of OSM:BAY)−11.33−11−10.67−10.33−10−9.67−9.33-9−8.67−8.33Osimertinib (1:1 ratio of OSM:BAY)−11−10.67−10.33−10−9.67−9.33-9−8.67−8.33-8Osimertinib (2:1 ratio of OSM:BAY)−10.67−10.33−10−9.67−9.33-9−8.67−8.33-8−7.67BAY-293 (constant)-8−7.67−7.33-7−6.67−6.33-6−5.67−5.33-5
+<table>
+  <thead>
+    <tr>
+      <th>Osimertinib (1:2 ratio of OSM:BAY)</th>
+      <th>−11.33</th>
+      <th>−11</th>
+      <th>−10.67</th>
+      <th>−10.33</th>
+      <th>−10</th>
+      <th>−9.67</th>
+      <th>−9.33</th>
+      <th>-9</th>
+      <th>−8.67</th>
+      <th>−8.33</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Osimertinib (1:1 ratio of OSM:BAY)</td>
+      <td>−11</td>
+      <td>−10.67</td>
+      <td>−10.33</td>
+      <td>−10</td>
+      <td>−9.67</td>
+      <td>−9.33</td>
+      <td>-9</td>
+      <td>−8.67</td>
+      <td>−8.33</td>
+      <td>-8</td>
+    </tr>
+    <tr>
+      <td>Osimertinib (2:1 ratio of OSM:BAY)</td>
+      <td>−10.67</td>
+      <td>−10.33</td>
+      <td>−10</td>
+      <td>−9.67</td>
+      <td>−9.33</td>
+      <td>-9</td>
+      <td>−8.67</td>
+      <td>−8.33</td>
+      <td>-8</td>
+      <td>−7.67</td>
+    </tr>
+    <tr>
+      <td>BAY-293 (constant)</td>
+      <td>-8</td>
+      <td>−7.67</td>
+      <td>−7.33</td>
+      <td>-7</td>
+      <td>−6.67</td>
+      <td>−6.33</td>
+      <td>-6</td>
+      <td>−5.67</td>
+      <td>−5.33</td>
+      <td>-5</td>
+    </tr>
+  </tbody>
+</table>
 
-## Three-drug isobologram analysis
+### Three-drug isobologram analysis
 
 For three-drug isobologram studies with osimertinib (EC50 = −8.57), BAY-293 (EC50 = −5.74), and RCM-4550 (EC50 = −6.84), drugs were again mixed based on dose equivalency. The dose-equivalent 10-point dose-response curves for these drugs in 3D cultured H1975 cells were (approximated EC50 for each drug in bold):
 
-Osimertinib−11−10.67−10.33−10−9.67−9.33-9−8.67−8.33-8BAY-293-8−7.67−7.33-7−6.67−6.33-6−5.67−5.33-5RMC-4550-9−8.67−8.33-8−7.67−7.33-7−6.67−6.33-6
+<table>
+  <thead>
+    <tr>
+      <th>Osimertinib</th>
+      <th>−11</th>
+      <th>−10.67</th>
+      <th>−10.33</th>
+      <th>−10</th>
+      <th>−9.67</th>
+      <th>−9.33</th>
+      <th>-9</th>
+      <th>−8.67</th>
+      <th>−8.33</th>
+      <th>-8</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>BAY-293</td>
+      <td>-8</td>
+      <td>−7.67</td>
+      <td>−7.33</td>
+      <td>-7</td>
+      <td>−6.67</td>
+      <td>−6.33</td>
+      <td>-6</td>
+      <td>−5.67</td>
+      <td>−5.33</td>
+      <td>-5</td>
+    </tr>
+    <tr>
+      <td>RMC-4550</td>
+      <td>-9</td>
+      <td>−8.67</td>
+      <td>−8.33</td>
+      <td>-8</td>
+      <td>−7.67</td>
+      <td>−7.33</td>
+      <td>-7</td>
+      <td>−6.67</td>
+      <td>−6.33</td>
+      <td>-6</td>
+    </tr>
+  </tbody>
+</table>
 
 Each two-drug combination was set as a single ‘drug mixture’ at a 1:1 ratio, and the third drug was combined with this drug mixture at 2:1, 1:1, and 1:2 drug ratios. To generate the proper two and three-drug mixtures for analysis, 21 total dose response curves were generated. The five dose-response curves on the right represent the mixtures used to generate the isobologram plots in Figure 7D. The other two two-drug mixtures in bold (two-drug 2:1 and 1:2 mixtures) were used to generate the isobologram plots in Figure 7CCombination indices were calculated based on whether addition of the third drug to each two-drug 1:1 mixture further enhanced synergy when added to the two-drug mixture.
 
 [osimertinib:BAY-293] mixture vs. RCM-4550:
 
-CombinationIndex=EC50OSM+BAY3−drugmixEC50OSM+BAY50:50+EC50RCM3−drugmixEC50RCMaloneOSM:BAY 2:1OSM:BAY 1:2Osm:BAY 1:1(1+1):1 2:1 mixture(1+1):2 1:1 mixture(1+1):4 1:2 mixtureRCM aloneosimertinib66 μL34 μL50 μL33 μL25 μL17 μL0 μLBAY-29334 μL66 μL50 μL33 μL25 μL17 μL0 μLRMC-45500 μL0 μL0 μL34 μL50 μL66 μL100 μL
+CombinationIndex=EC50OSM+BAY3−drugmixEC50OSM+BAY50:50+EC50RCM3−drugmixEC50RCMalone
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>OSM:BAY 2:1</th>
+      <th>OSM:BAY 1:2</th>
+      <th>Osm:BAY 1:1</th>
+      <th>(1+1):1 2:1 mixture</th>
+      <th>(1+1):2 1:1 mixture</th>
+      <th>(1+1):4 1:2 mixture</th>
+      <th>RCM alone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>osimertinib</td>
+      <td>66 μL</td>
+      <td>34 μL</td>
+      <td>50 μL</td>
+      <td>33 μL</td>
+      <td>25 μL</td>
+      <td>17 μL</td>
+      <td>0 μL</td>
+    </tr>
+    <tr>
+      <td>BAY-293</td>
+      <td>34 μL</td>
+      <td>66 μL</td>
+      <td>50 μL</td>
+      <td>33 μL</td>
+      <td>25 μL</td>
+      <td>17 μL</td>
+      <td>0 μL</td>
+    </tr>
+    <tr>
+      <td>RMC-4550</td>
+      <td>0 μL</td>
+      <td>0 μL</td>
+      <td>0 μL</td>
+      <td>34 μL</td>
+      <td>50 μL</td>
+      <td>66 μL</td>
+      <td>100 μL</td>
+    </tr>
+  </tbody>
+</table>
 
 [osimertinib:RCM-4550] mixture vs. BAY-293:
 
-CombinationIndex=EC50OSM+RCM3−drugmixEC50OSM+RCM50:50+EC50BAY3−drugmixEC50BAYaloneOSM:RCM 2:1OSM:RCM 1:2Osm:RCM 1:1(1+1):1 2:1 mixture(1+1):2 1:1 mixture(1+1):4 1:2 mixtureRCM aloneosimertinib66 μL34 μL50 μL33 μL25 μL17 μL0 μLBAY-2930 μL0 μL0 μL34 μL50 μL66 μL100 μLRMC-455034 μL66 μL50 μL33 μL25 μL17 μL0 μL
+CombinationIndex=EC50OSM+RCM3−drugmixEC50OSM+RCM50:50+EC50BAY3−drugmixEC50BAYalone
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>OSM:RCM 2:1</th>
+      <th>OSM:RCM 1:2</th>
+      <th>Osm:RCM 1:1</th>
+      <th>(1+1):1 2:1 mixture</th>
+      <th>(1+1):2 1:1 mixture</th>
+      <th>(1+1):4 1:2 mixture</th>
+      <th>RCM alone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>osimertinib</td>
+      <td>66 μL</td>
+      <td>34 μL</td>
+      <td>50 μL</td>
+      <td>33 μL</td>
+      <td>25 μL</td>
+      <td>17 μL</td>
+      <td>0 μL</td>
+    </tr>
+    <tr>
+      <td>BAY-293</td>
+      <td>0 μL</td>
+      <td>0 μL</td>
+      <td>0 μL</td>
+      <td>34 μL</td>
+      <td>50 μL</td>
+      <td>66 μL</td>
+      <td>100 μL</td>
+    </tr>
+    <tr>
+      <td>RMC-4550</td>
+      <td>34 μL</td>
+      <td>66 μL</td>
+      <td>50 μL</td>
+      <td>33 μL</td>
+      <td>25 μL</td>
+      <td>17 μL</td>
+      <td>0 μL</td>
+    </tr>
+  </tbody>
+</table>
 
 [BAY-293:RCM-4550] mixture vs. osimertinib:
 
-CombinationIndex=EC50BAY+RCM3−drugmixEC50BAY+RCM50:50+EC50OSM3−drugmixEC50OSMaloneBAY:RCM 2:1BAY:RCM 1:2Bay:RCM 1:1(1+1):1 2:1 mixture(1+1):2 1:1 mixture(1+1):4 1:2 mixtureRCM aloneosimertinib0 μL0 μL0 μL34 μL50 μL66 μL100 μLBAY-29366 μL34 μL50 μL33 μL25 μL17 μL0 μLRMC-455034 μL66 μL50 μL33 μL25 μL17 μL0 μL
+CombinationIndex=EC50BAY+RCM3−drugmixEC50BAY+RCM50:50+EC50OSM3−drugmixEC50OSMalone
 
-To calculate the three-drug combination index where each drug was considered independently (Figure 7E), the following equation was used:CombinationIndex=EC50OSM3−drugmixEC50OSM50:50+EC50BAY3−drugmixEC50BAYalone+EC50RCM3−drugmixEC50RCMalone
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>BAY:RCM 2:1</th>
+      <th>BAY:RCM 1:2</th>
+      <th>Bay:RCM 1:1</th>
+      <th>(1+1):1 2:1 mixture</th>
+      <th>(1+1):2 1:1 mixture</th>
+      <th>(1+1):4 1:2 mixture</th>
+      <th>RCM alone</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>osimertinib</td>
+      <td>0 μL</td>
+      <td>0 μL</td>
+      <td>0 μL</td>
+      <td>34 μL</td>
+      <td>50 μL</td>
+      <td>66 μL</td>
+      <td>100 μL</td>
+    </tr>
+    <tr>
+      <td>BAY-293</td>
+      <td>66 μL</td>
+      <td>34 μL</td>
+      <td>50 μL</td>
+      <td>33 μL</td>
+      <td>25 μL</td>
+      <td>17 μL</td>
+      <td>0 μL</td>
+    </tr>
+    <tr>
+      <td>RMC-4550</td>
+      <td>34 μL</td>
+      <td>66 μL</td>
+      <td>50 μL</td>
+      <td>33 μL</td>
+      <td>25 μL</td>
+      <td>17 μL</td>
+      <td>0 μL</td>
+    </tr>
+  </tbody>
+</table>
+
+To calculate the three-drug combination index where each drug was considered independently (Figure 7E), the following equation was used:
+
+$$
+CombinationIndex=\frac{EC_{50}OSM_{3−drugmix}}{EC_{50}OSM_{50:50}}+\frac{EC_{50}BAY_{3−drugmix}}{EC_{50}BAY_{alone}}+\frac{EC_{50}RCM_{3−drugmix}}{EC_{50}RCM_{alone}}
+$$

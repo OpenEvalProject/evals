@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.46187.001 The ability to flexibly use knowledge is one cardinal feature of goal-directed behaviors. We recently showed that thalamocortical and corticothalamic pathways connecting the medial prefrontal cortex and the mediodorsal thalamus (MD) contribute to adaptive decision-making (Alcaraz et al., 2018). In this study, we examined the impact of disconnecting the MD from its other main cortical target, the orbitofrontal cortex (OFC) in a task assessing outcome devaluation after initial instrumental training and after reversal of action-outcome contingencies. Crossed MD and OFC lesions did not impair instrumental performance. Using the same approach, we found however that disconnecting the OFC from its other main thalamic afferent, the submedius nucleus, produced a specific impairment in adaptive responding following action-outcome reversal. Altogether, this suggests that multiple thalamocortical circuits may act synergistically to achieve behaviorally relevant functions.
+The ability to flexibly use knowledge is one cardinal feature of goal-directed behaviors. We recently showed that thalamocortical and corticothalamic pathways connecting the medial prefrontal cortex and the mediodorsal thalamus (MD) contribute to adaptive decision-making (Alcaraz et al., 2018). In this study, we examined the impact of disconnecting the MD from its other main cortical target, the orbitofrontal cortex (OFC) in a task assessing outcome devaluation after initial instrumental training and after reversal of action-outcome contingencies. Crossed MD and OFC lesions did not impair instrumental performance. Using the same approach, we found however that disconnecting the OFC from its other main thalamic afferent, the submedius nucleus, produced a specific impairment in adaptive responding following action-outcome reversal. Altogether, this suggests that multiple thalamocortical circuits may act synergistically to achieve behaviorally relevant functions.
 
 ## Introduction
 
@@ -29,7 +29,7 @@ Thus, in the present study, we aimed to build upon our previous study (Alcaraz e
 
 ## Results
 
-## Histology
+### Histology
 
 To disconnect the OFC from its two main thalamic afferents, we performed unilateral lesions of either the OFC and the MD, or the OFC and the Sub. Critically, lesions were made in the same hemisphere (IPSI) or contralateral hemispheres (CONTRA). It is expected that in the CONTRA groups, communication between cortical and thalamic areas should be interrupted while communication remains possible in the IPSI groups. All lesion placements were counterbalanced across hemispheres. To include rats in the behavioral analyses, lesions performed at both the cortical and the thalamic levels needed to be accurate. We used the same criteria for IPSI and CONTRA groups, thus ensuring that the overall cortical and thalamic damage was equivalent in these groups.
 
@@ -43,7 +43,7 @@ NMDA injections within the MD produced variable damage (Figure 1B and E). Inclus
 
 After histological examination by two experimenters blind to behavioral data, a total of 15 rats out of 48 were excluded from behavioral analyses (5 OFC-MD-IPSI, 5 OFC-MD-CONTRA, 3 OFC-Sub-IPSI and 2 OFC-Sub-CONTRA). The final group sizes for the OFC-MD groups were: 7 IPSI and 7 CONTRA rats and for the OFC-Sub groups: 9 IPSI and 10 CONTRA rats.
 
-## Experiment 1: Disconnecting the orbitofrontal cortex from the mediodorsal thalamus
+### Experiment 1: Disconnecting the orbitofrontal cortex from the mediodorsal thalamus
 
 A schematic for the behavioral paradigm is illustrated in Figure 2, showing the successive phases consisting in instrumental training, outcome devaluation 1, outcome reversal training and outcome devaluation 2. The same paradigm was used in experiments 1 and 2.
 
@@ -51,7 +51,7 @@ A schematic for the behavioral paradigm is illustrated in Figure 2, showing the 
 
 **Figure 2.:** The design is adapted from Parkes et al. (2018) and consists in providing a choice test following outcome devaluation after an initial instrumental training phase (green), but also after reversal of action-outcome contingencies (orange).
 
-## Instrumental training
+#### Instrumental training
 
 Instrumental conditioning gradually developed over the 10 consecutive training sessions. As evident in Figure 3A, learning appeared to establish at similar rates in IPSI and CONTRA groups even though asymptotic performance appeared somewhat lower in the CONTRA group. The statistical analysis supported these observations as the ANOVA revealed a significant effect of Session (F(9,108) = 69.5, p<0.0001) but the effect of Lesion only approached significance (F(1,12) = 3.5, p=0.0853). Importantly, Lesion and Session did not interact (F(9,108) = 1.0, p=0.4215), suggesting a similar rate of instrumental acquisition in both groups.
 
@@ -59,11 +59,11 @@ Instrumental conditioning gradually developed over the 10 consecutive training s
 
 **Figure 3.:** Mean rate of lever presses (± sem) during instrumental conditioning (A) or during action-outcome contingency reversal (D). Lever presses (% Baseline,+ sem) during the initial choice test (B) or following contingency reversal (E). Consumption tests following the initial choice test (C) and the post-reversal test (F).
 
-## Outcome devaluation
+#### Outcome devaluation
 
 Figure 3b shows the test conducted under extinction conditions, immediately after outcome devaluation. During sensory-specific satiety, rats from the IPSI group consumed more food than rats from the CONTRA group (IPSI: 9.9 ± 3.8 g, CONTRA: 5.5 ± 2.6 g, F(1,12) = 6.5, p=0.0254). Nevertheless, during the subsequent choice test, both groups expressed a marked preference for the lever associated with the still valued outcome (F(1,12) = 37.8, p<0.0001). This preference did not vary as a function of lesion status as neither the main effect of Lesion (F(1,12) = 1.9, p=0.1957) nor the Lesion X Devaluation interaction (F(1,12) = 0.0, p=0.9530) approached significance. The post-test consumption assays shown in Figure 3C confirmed that devaluation was effective for both groups and that rats in the IPSI and CONTRA groups consumed a similar amount for both the valued and the devalued outcomes (Devaluation, F(1,12) = 16.5, p=0.0016; Lesion, Lesion X Devaluation, F < 1).
 
-## Reversal
+#### Reversal
 
 After the devaluation test, rats were given five RR20 instrumental training sessions, during which the action-outcome contingencies were reversed. During that phase, all rats maintained a high level of instrumental responding, comparable to that attained at the end of the initial instrumental phase (Figure 3D). Responding slightly increased during these five sessions, in a comparable manner across all groups. The ANOVA revealed a significant effect of Session (F(14, 48)=8.1, p<0.0001) but not of Lesion (F < 1) or Lesion X Session interaction (F(4,68) = 1.1, p=0.3781). Thus, during reversal training, there was no evidence that instrumental responding differed between groups.
 
@@ -71,9 +71,9 @@ During outcome devaluation, all rats consumed similar amounts of food (IPSI: 11.
 
 Collectively, these data show that disconnecting the OFC from the MD did not alter instrumental conditioning or the ability to update action-outcome contingencies. As the OFC receives a prominent innervation from another thalamic source, the submedius thalamic nucleus, which was previously suggested to interact with the OFC (Alcaraz et al., 2015), we used a separate cohort of rats to examine the effect of disconnecting the OFC from the Sub in the same instrumental procedure.
 
-## Experiment 2: Disconnecting the orbitofrontal cortex from the submedius thalamic thalamus
+### Experiment 2: Disconnecting the orbitofrontal cortex from the submedius thalamic thalamus
 
-## Instrumental training
+#### Instrumental training
 
 As in Experiment 1, instrumental conditioning gradually developed over the 10 consecutive training sessions for both groups (Figure 4A). In this instance, instrumental performance appeared similar for both groups. The ANOVA conducted on these data support this observation as we found a significant effect of Session (F(9,153) = 74.1, p<0.0001) but not Lesion or Lesion X Session interaction (Fs <1).
 
@@ -81,11 +81,11 @@ As in Experiment 1, instrumental conditioning gradually developed over the 10 co
 
 **Figure 4.:** Mean rate of lever presses (± sem) during instrumental conditioning (A) or during action-outcome contingency reversal (D). Lever presses (% Baseline,+ sem) during the choice test that followed outcome devaluation immediately after initial instrumental conditioning (B) or contingency reversal (E). Consumption tests following the initial choice test (C) or the post-reversal one (F).
 
-## Outcome devaluation
+#### Outcome devaluation
 
 Figure 4b shows the test conducted under extinction conditions, immediately after outcome devaluation. During sensory-specific outcome devaluation, all rats consumed similar amounts of food (IPSI: 5.8 ± 2.0 g, CONTRA: 7.9 ± 5.2 g, F(1,17) = 1.4, p=0.2528). As observed previously, both groups expressed a marked preference for the lever associated with the still valued outcome (F(1,17) = 29.2, p<0.0001.). Again, this preference did not vary as a function of lesion group as neither the main effect of Lesion nor that of the Lesion X Devaluation interaction were significant (Fs <1). The post-test consumption assays shown in Figure 4C confirmed that devaluation was effective for both groups and that rats in the IPSI and CONTRA groups consumed similar amounts of both the valued and the devalued outcomes (Devaluation, F(1,17) = 39.5, p<0.0001; Lesion, F(1,17) = 1.8, p=0.1884; Lesion X Devaluation, F(1,17) = 2.2, p=0.1527).
 
-## Reversal
+#### Reversal
 
 As in experiment 1, rats then received five RR20 instrumental training sessions, during which the action-outcome contingencies were reversed. During that phase, all rats maintained a high level of instrumental responding (Figure 4D) that did not differ between groups (Lesion, F < 1). Instrumental performance appeared fairly stable across sessions even if small daily variations likely prompted the main effect of Session (F(4,68) = 2.4, p=0.0609) and the Lesion X Session interaction (F(4,68) = 2.3, p=0.0643) to approach significance.
 
@@ -111,40 +111,40 @@ In conclusion, the present study complements prior findings to broaden our under
 
 ## Materials and methods
 
-## Animals and housing conditions
+### Animals and housing conditions
 
 48 male Long Evans rats weighing 275 g to 300 g at surgery were obtained from Centre d’Elevage Janvier (France). Rats were initially housed in pairs and accustomed to the laboratory facility for two weeks before the beginning of the experiments. Environmental enrichment was provided by tinted polycarbonate tubing elements, in accordance with current French (Council directive 2013–118, February 1, 2013) and European (directive 2010–63, September 22, 2010, European Community) laws and policies regarding animal experiments. The facility was maintained at 21 ± 1°C with lights on from 7 a.m. to 7 p.m. The experimental protocols received approval #5012053-A from the local Ethics Committee on December 7, 2012. After histological verification (see below), the final group sizes were: IPSI n = 7, CONTRA n = 7 for the OFC-MD disconnection and IPSI n = 9, CONTRA n = 10 for the OFC-Sub disconnection.
 
-## Surgery
+### Surgery
 
 Rats were anaesthetized with 4% Isoflurane and placed in a stereotaxic frame with atraumatic ear bars (Kopf, Tujunga, CA) in a flatskull position. Anaesthesia was maintained with 1.5–2% Isoflurane and complemented by subcutaneous administration of buprenorphin (Buprecare, 0.05 mg/kg). To disconnect the OFC from its two main thalamic afferents, unilateral neurotoxic lesions were performed in contralateral hemispheres using multiple NMDA micro-injections. 20 µg/µl NMDA (Sigma-Aldrich) in artificial cerebrospinal fluid (CMA Microdialysis AB, Solna, Sweden) was pressure injected (Picospritzer, General Valve Corporation, Fairfield, NJ) into the brain through a glass micropipette (outside diameter approximately 100 µm) and polyethylene tubing. For OFC lesions, three injections sites per side (0.1 µL each) were used: AP +4.2,+3.7, and +3.2 mm from bregma, laterality ±1.2, 2.2 and 3.0 mm, DV −4.4,–4.5 and −5.2 mm from Bregma. To perform neurotoxic MD lesions, one injection site (0.15 µL) was used at the following coordinates: AP: −2.7; Lat:±0.8; DV: −5.0 (from dura). Neurotoxic Sub lesions were made using the same procedure, with one injection site per side (0.06 µL) at the following coordinates: AP: −2.7; L:±0.7; DV: −7.1 (from dura). In all cases, the pipette was left in place 3 min after injection before slow retraction. For CONTRA groups, cortical and thalamic lesions were performed on different hemispheres while lesions were made in the same hemisphere for the IPSI groups. Importantly, the extent of cortical and thalamic damage is expected to be similar in both conditions. The lateralization of the lesions was counterbalanced across all groups and conditions (for example, in the OFC-MD-CONTRA group, half the animals had the cortical lesions in the left side and half on the right side). Rats were given at least 10 days of recovery before behavioral testing.
 
-## Behavioral experiments
+### Behavioral experiments
 
-## Behavioral apparatus
+#### Behavioral apparatus
 
 Animals were trained in eight identical conditioning chambers (40 cm wide x 30 cm deep x 35 cm high, Imetronic, France), each located inside a sound and light-attenuating wooden chamber (74 × 46×50 cm). Each chamber had a ventilation fan producing a background noise of 55 dB and four LEDs on the ceiling for illumination of chamber. Each chamber had two opaque panels on the right and left sides, two clear Perspex walls on the back and front sides and a stainless-steel grid floor (rod diameter: 0.5 cm; inter-rod distance: 1.5 cm). In the middle of the left wall, a magazine (6 × 4.5×4.5 cm) received either grain or sucrose pellets (45 mg, F0165 and F0023, Bio Serv, NJ, USA) from dispensers located outside the operant chamber. The magazine was equipped with infra-red cells to detect the animal’s visits. Two retractable levers (4 × 1×2 cm) could be inserted on the left and right of the magazine. Activation of either the left or the right lever produced the delivery of the associated outcome, as a function of the current procedure (i.e. FR1, RR5, RR10 or RR20, see below). A computer connected to the operant chambers and equipped with POLY software and interface (Imetronic, France) controlled the equipment and recorded the data.
 
-## Instrumental training
+#### Instrumental training
 
 Rats were first habituated to the magazine dispenser through two daily sessions of magazine training for 2 days. A session consisted in the delivery of 30 food rewards, grain or sucrose pellets, distributed randomly throughout a 30 min session. The first session took place in the morning, and the second in the afternoon, with the order of rewards counterbalanced between rats and days. After magazine training, instrumental conditioning began for a total of ten daily sessions, during which rats had to learn the specific, causal association between two responses (left or right lever presses) and the two different outcomes (grain or sucrose pellets). For each daily instrumental session, each lever was presented twice until 10 min elapsed or 20 rewards were earned in an alternating fashion (e.g., lever 1 → lever 2 → lever 1 → lever 2). Thus, the session could last up to 40 min and the rats could earn a maximum of 80 rewards. The action-outcome associations and the order of their presentations were counterbalanced between rats and days. For the two first sessions, each action was reinforced (FR1). Then, for the next two sessions, a random ratio schedule of 5 was introduced (probability of receiving an outcome given a response = 0.2). Sessions 5 to 7 were performed with a RR10 schedule (probability of receiving an outcome given a response = 0.1) and sessions 8 to 10 with a RR20 (probability of receiving an outcome given a response = 0.05). The last instrumental session with each action was used as a measure of baseline performance for the devaluation test. The entire behavioral procedure is depicted in Figure 2.
 
-## Outcome devaluation test
+#### Outcome devaluation test
 
 The day after the last session of instrumental training, rats were placed in a plastic feeding cage containing free access to 15 g of one of the two outcomes for one hour of specific satiety-induced devaluation. Half of the rats in each action-outcome assignment received grain pellets, the remaining received sucrose pellets. Immediately after, rats were put in the operant cages for a 10 min extinction test. During the test, both actions were available but were unrewarded. This ensured that rats were using representations of the action-outcome contingencies and outcome value to guide their behavior. Performance was quantified relative to prior baseline levels as our previous study (Alcaraz et al., 2018). After one test, a second test was conducted during which the identity of the devalued outcome was now reversed so that all rats were tested after devaluation of either outcome.
 
-## Consumption test
+#### Consumption test
 
 After the extinction test, rats were returned to the plastic feeding cages. They had free access to 10 g of each outcome for 10 min. Food consumed was then measured for each outcome to verify that the devaluation procedure was effective.
 
-## Reversal of the instrumental contingencies
+#### Reversal of the instrumental contingencies
 
 The procedure used was adapted from a previous study (Parkes et al., 2018). Following outcome devaluation testing, the same rats then underwent reversal training such that they were required to learn the reversed instrumental contingencies (e.g., the left lever now earned sugar pellets rather than grain pellets and the right lever now earned grain pellets rather than sugar pellets). Reversal training sessions were otherwise identical to initial instrumental training. Rats received five reversal sessions in total on an RR20 schedule of reinforcement. Outcome devaluation tests were conducted after reversal training in the same manner as that previously described. Consumption tests were also conducted after each instrumental test, as previously described.
 
-## Histology
+### Histology
 
 Animals received a lethal dose of sodium pentobarbital and were perfused transcardially with 150 ml of saline followed by 200 ml of 10% formalin. The sections throughout cortical and thalamic regions of interest were collected onto gelatin-coated slides and dried before being stained with thionine. Histological analysis of the lesions was performed under the microscope by two experimenters (VF and MW) blind to lesion conditions.
 
-## Data analysis
+### Data analysis
 
 The data were submitted to ANOVAs on StatView software (SAS Institute Inc). For both experiments, Lesion (IPSI/CONTRA) was the between subject factor, and Devaluation (Devalued/Valued), and Session (averaged over both actions) were repeated measures when appropriate. The alpha value for rejection of the null hypothesis was 0.05.

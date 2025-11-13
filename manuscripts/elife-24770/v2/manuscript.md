@@ -19,7 +19,7 @@
 
 ## Abstract
 
-10.7554/eLife.24770.001 The computational principles by which the brain creates a painful experience from nociception are still unknown. Classic theories suggest that cortical regions either reflect stimulus intensity or additive effects of intensity and expectations, respectively. By contrast, predictive coding theories provide a unified framework explaining how perception is shaped by the integration of beliefs about the world with mismatches resulting from the comparison of these beliefs against sensory input. Using functional magnetic resonance imaging during a probabilistic heat pain paradigm, we investigated which computations underlie pain perception. Skin conductance, pupil dilation, and anterior insula responses to cued pain stimuli strictly followed the response patterns hypothesized by the predictive coding model, whereas posterior insula encoded stimulus intensity. This novel functional dissociation of pain processing within the insula together with previously observed alterations in chronic pain offer a novel interpretation of aberrant pain processing as disturbed weighting of predictions and prediction errors. DOI: http://dx.doi.org/10.7554/eLife.24770.001
+The computational principles by which the brain creates a painful experience from nociception are still unknown. Classic theories suggest that cortical regions either reflect stimulus intensity or additive effects of intensity and expectations, respectively. By contrast, predictive coding theories provide a unified framework explaining how perception is shaped by the integration of beliefs about the world with mismatches resulting from the comparison of these beliefs against sensory input. Using functional magnetic resonance imaging during a probabilistic heat pain paradigm, we investigated which computations underlie pain perception. Skin conductance, pupil dilation, and anterior insula responses to cued pain stimuli strictly followed the response patterns hypothesized by the predictive coding model, whereas posterior insula encoded stimulus intensity. This novel functional dissociation of pain processing within the insula together with previously observed alterations in chronic pain offer a novel interpretation of aberrant pain processing as disturbed weighting of predictions and prediction errors.
 
 ## Introduction
 
@@ -29,11 +29,11 @@ However, these theories cannot explain the reduction in sensory cortical activit
 
 A direct hypothesis derived from this framework is that sensory brain responses should be reduced when the brain’s prediction was accurate. In this situation, the resulting PE is small and regional brain activation is lower for accurate than for inaccurate predictions. This has been observed for primary visual cortex (Alink et al., 2010; Kok et al., 2012), early auditory electrophysiological responses (Todorovic et al., 2011), and the fusiform face area (Summerfield et al., 2008; den Ouden et al., 2010; Egner et al., 2010). The organization of cortical pain processing differs from other sensory modalities in that many cortical pain processing areas receive direct thalamic input and thus avoid a clear hierarchical organization (Craig, 2002; Dum et al., 2009). It is therefore unclear whether the same computational principles apply to pain as well. If pain processing is also based on predictive coding principles, this framework would offer an elegant and general computational mechanisms of perception across modalities (Wiech, 2016) and could help explain several expectation-related effects, including placebo effects (Petrovic et al., 2010; Büchel et al., 2014; Tabor et al., 2017).
 
-In order to arbitrate between possible mechanisms underlying pain perception, we used a probabilistic heat pain task to formally compare a predictive coding model against a stimulus intensity model and a stimulus plus expectation model, respectively (
+In order to arbitrate between possible mechanisms underlying pain perception, we used a probabilistic heat pain task to formally compare a predictive coding model against a stimulus intensity model and a stimulus plus expectation model, respectively (Figure 1A–C). Three different visual cues manipulated expectations about an upcoming cutaneous heat stimulus (Figure 1D). Each cue was associated with a different probability of receiving painful or non-painful heat on the forearm (25, 50, or 75% chance of receiving pain and referred to as low, medium, and high cue, respectively; Figure 1E). Using functional magnetic resonance imaging (fMRI) in combination with model-based analyses in this task, we quantified evidence for all models in skin conductance responses (SCR), pupil diameter, and across the brain.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/24770/elife-24770-fig1-v2.jpg)
 
-**Figure 1.:** (A) The stimulus intensity coding model is insensitive to predictive cues and postulates only a main effect of temperature. (B) Expectation may have an additive effect on brain responses in that a higher expectation of receiving pain results increased pain and increased physiological responses. (C) The predictive coding model has two components; prediction and prediction error (PE). Pain processing regions increase activity with increasing predictions of pain (from low to high pain probability). If the stimulus is painful, a PE signaling the difference between sensory input and the prediction occurs. In accordance with previous studies, we modeled the error for warm stimuli as zero (see Materials and methods, Results). The hypothesized predictive coding response is a weighted sum of the two components. The model has two free weight parameters; both are required to be positive. Solid lines represent equal weighting, while dashed lines represent a higher weighting for the PE. (D) Subjects saw a central fixation dot during a 12 s inter-trial-interval (ITI). A cue indicating the probability of a painful stimulus in the current trial appeared 300 ms before the heat stimulus started. Duration of heat stimulation was 1.5 s during which the cue was still visible. After a variable delay of 3–5 s, a rating screen appeared for 2 s and subjects reported whether the last stimulus had been painful or not. The fixation dot changed its color in 12.5% of the trials and participants responded to this change with a button press. (E) Cues predicted pain with 25, 50, or 75% probability and were counterbalanced across subjects.DOI: http://dx.doi.org/10.7554/eLife.24770.003
+**Figure 1.:** (A) The stimulus intensity coding model is insensitive to predictive cues and postulates only a main effect of temperature. (B) Expectation may have an additive effect on brain responses in that a higher expectation of receiving pain results increased pain and increased physiological responses. (C) The predictive coding model has two components; prediction and prediction error (PE). Pain processing regions increase activity with increasing predictions of pain (from low to high pain probability). If the stimulus is painful, a PE signaling the difference between sensory input and the prediction occurs. In accordance with previous studies, we modeled the error for warm stimuli as zero (see Materials and methods, Results). The hypothesized predictive coding response is a weighted sum of the two components. The model has two free weight parameters; both are required to be positive. Solid lines represent equal weighting, while dashed lines represent a higher weighting for the PE. (D) Subjects saw a central fixation dot during a 12 s inter-trial-interval (ITI). A cue indicating the probability of a painful stimulus in the current trial appeared 300 ms before the heat stimulus started. Duration of heat stimulation was 1.5 s during which the cue was still visible. After a variable delay of 3–5 s, a rating screen appeared for 2 s and subjects reported whether the last stimulus had been painful or not. The fixation dot changed its color in 12.5% of the trials and participants responded to this change with a button press. (E) Cues predicted pain with 25, 50, or 75% probability and were counterbalanced across subjects.
 
 ## Results
 
@@ -41,47 +41,230 @@ According to the predictive coding model (Egner et al., 2010; Büchel et al., 20
 
 Alternatively, pain-processing regions could simply encode stimulus intensity (Figure 1A) or an additive combination of intensity and expectation (Figure 1B). Each model makes different predictions about the measured response profiles within the present paradigm, which we tested both in an analysis of variance (ANOVA) framework and using formal Bayesian model comparison.
 
-## Behavioral results
+### Behavioral results
 
-Before comparing the different models against each other, we verified that the two stimuli were clearly distinguishable. Pain ratings obtained after each run showed that the 28 participants distinguished between the two stimulus intensities (
+Before comparing the different models against each other, we verified that the two stimuli were clearly distinguishable. Pain ratings obtained after each run showed that the 28 participants distinguished between the two stimulus intensities (t(27) = 20.9; p<0.001), that intensity ratings were close to the calibrated intensities of 30 and 75, respectively (mean warm: 29.0 ± 9.1 std.; mean pain: 75.0 ± 10.3 std.), and that warm stimuli were not perceived as painful (Figure 2A). Trial-by-trial ratings classifying stimuli as either painful or non-painful matched the stimulus intensity with 94.3% accuracy, further supporting the qualitative difference between the two stimuli. Target reaction times to color changes of the fixation dot did also not differ between two stimulus intensities (warm 520.3 ± 94 ms; pain 516.1 ± 104.8 ms; t(27)=0.51; p=0.61; Figure 2B), suggesting a similar attention allocation for both stimulation intensities.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/24770/elife-24770-fig2-v2.jpg)
 
-**Figure 2.:** (A) Intensity ratings reported at the end of each block for warm and painful stimuli, respectively. Intensity ratings were significantly higher for pain stimuli (t(27) = 20.9; p<0.001) and correspond well to the stimulation levels chosen during calibration (30 and 75). ‘Pain threshold’ was marked at the center (50) of the visual analogue scale (VAS) used for these ratings. Error bars in all plots show the standard error of the mean. (B) Target reaction time did not differ between stimulation intensities (t(27)=0.51; p=0.61). (C) Skin conductance responses (SCR) for pain (red) and warm (blue) stimuli. SCR responses reflect the pattern hypothesized by the predictive coding model. (D) Pupil dilation amplitudes shows the same response pattern as SCR, also supporting the predictive coding model. (E) Evoked skin conductance responses (SCR) for warm (blue) and painful (red) stimuli are plotted for each condition and followed the rank order hypothesized by the predictive coding model. (F) Pupil diameter responses plotted using the same groupings as in (D). SCR and pupil traces are aligned to cue onset at 0 s, stimulus onset is at 300 ms (unlabeled tick mark), and shaded areas indicate standard errors.DOI: http://dx.doi.org/10.7554/eLife.24770.004
+**Figure 2.:** (A) Intensity ratings reported at the end of each block for warm and painful stimuli, respectively. Intensity ratings were significantly higher for pain stimuli (t(27) = 20.9; p<0.001) and correspond well to the stimulation levels chosen during calibration (30 and 75). ‘Pain threshold’ was marked at the center (50) of the visual analogue scale (VAS) used for these ratings. Error bars in all plots show the standard error of the mean. (B) Target reaction time did not differ between stimulation intensities (t(27)=0.51; p=0.61). (C) Skin conductance responses (SCR) for pain (red) and warm (blue) stimuli. SCR responses reflect the pattern hypothesized by the predictive coding model. (D) Pupil dilation amplitudes shows the same response pattern as SCR, also supporting the predictive coding model. (E) Evoked skin conductance responses (SCR) for warm (blue) and painful (red) stimuli are plotted for each condition and followed the rank order hypothesized by the predictive coding model. (F) Pupil diameter responses plotted using the same groupings as in (D). SCR and pupil traces are aligned to cue onset at 0 s, stimulus onset is at 300 ms (unlabeled tick mark), and shaded areas indicate standard errors.
 
-## Skin conductance and pupil responses
+### Skin conductance and pupil responses
 
-From an ANOVA perspective, the stimulus intensity model predicts a main effect of stimulus, whereas the stimulus plus expectation model predicts an additional main effect of cue (Figure 1A,B). By contrast, the summation of predictions and PE in the predictive coding model should result in a cue × stimulus interaction (Figure 1C). We thus computed ANOVA’s for SCR, pupil dilation and brain data before conducting formal model comparisons. Peak amplitudes of both SCR and pupil dilation showed the expected interaction effect (SCR: F(2,40)=27.7; p<0.001; pupil: F(2,38)= 9.5; p<0.001). Responses of both measures increased with higher probability for pain when the stimulus was non-painful, but responses were lower expected pain compared to unexpected pain (Figure 2C,D). This response profile mirrors the profile hypothesized by the predictive coding model (Figure 1C). Plotting the grand means of the evoked SCR and pupil responses confirmed the rank-order of conditions observed in the peak amplitude analyses (Figure 2E,F).
+From an ANOVA perspective, the stimulus intensity model predicts a main effect of stimulus, whereas the stimulus plus expectation model predicts an additional main effect of cue (Figure 1A,B). By contrast, the summation of predictions and PE in the predictive coding model should result in a cue $\times$ stimulus interaction (Figure 1C). We thus computed ANOVA’s for SCR, pupil dilation and brain data before conducting formal model comparisons. Peak amplitudes of both SCR and pupil dilation showed the expected interaction effect (SCR: F(2,40)=27.7; p<0.001; pupil: F(2,38)= 9.5; p<0.001). Responses of both measures increased with higher probability for pain when the stimulus was non-painful, but responses were lower expected pain compared to unexpected pain (Figure 2C,D). This response profile mirrors the profile hypothesized by the predictive coding model (Figure 1C). Plotting the grand means of the evoked SCR and pupil responses confirmed the rank-order of conditions observed in the peak amplitude analyses (Figure 2E,F).
 
 In addition to the interaction effects, the main effect of stimulus was also significant for SCR (F(1,20)=7.5; p=0.012) and pupil dilation (F(1,19)=32.5; p<0.001). In both cases the overall response was stronger for the painful than for the non-painful stimuli (Figure 2C,D). The main effect of cue was also significant for the SCR (F(2,40)=4.6; p=0.015), but was not significant for the pupil dilation (F(2,38)=2.7; p=0.078). Hence, the ANOVA results are compatible with both the predictive coding and stimulus intensity model, while the SCR cue effect is also predicted by the stimulus plus expectation model. However, a post-hoc t-test comparing SCRs to painful and warm stimuli following a high cue did not reveal the difference proposed by the stimulus plus expectation model (t(20)=1.54; p=0.14; Figures 1B and 2C).
 
-## Region of interest results
+### Region of interest results
 
-We next computed ANOVA’s on brain activity extracted from anatomically defined
+We next computed ANOVA’s on brain activity extracted from anatomically defined a priori regions of interest (ROI). Among those ROIs, bilateral anterior insula (left: F(2,58)=5.5; p=0.007; right: F(2,58)= 7.5; p=0.001) and right amygdala (F(2,58)=5.4; p=0.007) showed the expected cue × stimulus interaction (Figure 3A, Table 1). Importantly, the response pattern matched the pattern expected by the predictive coding model, that is, responses in anterior insula and amygdala increased with pain expectation for warm stimuli and decreased for pain stimuli. Furthermore, all regions except for the postcentral gyrus, amygdala and PAG showed a significant main effect of stimulus (Table 1), but no ROI showed a significant main effect of cue.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/24770/elife-24770-fig3-v2.jpg)
 
-**Figure 3.:** (A) Mean parameter estimates (± standard error) are plotted for left (L) and right (R) hemispheres in each panel, except for the midline structure PAG. Blue indicates warm stimuli, red indicates painful stimuli. Cues are on the x-axis, with ‘l’ designating low, ‘m’ designating medium, and ‘h’ designating high probability of pain. PAG = periaqueductal gray. (B) Pattern expression for the neurological pain signature (NPS; Wager et al., 2013). *interaction effect significant FDR corrected q < 0.05. #interaction: p<0.05, uncorrected.DOI: http://dx.doi.org/10.7554/eLife.24770.005
+**Figure 3.:** (A) Mean parameter estimates (± standard error) are plotted for left (L) and right (R) hemispheres in each panel, except for the midline structure PAG. Blue indicates warm stimuli, red indicates painful stimuli. Cues are on the x-axis, with ‘l’ designating low, ‘m’ designating medium, and ‘h’ designating high probability of pain. PAG = periaqueductal gray. (B) Pattern expression for the neurological pain signature (NPS; Wager et al., 2013). *interaction effect significant FDR corrected q < 0.05. #interaction: p<0.05, uncorrected.
+
+**Table 1.**
+ ANOVA results for brain ROI and NPS.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">Stimulus</th>
+      <th colspan="2">Cue</th>
+      <th colspan="2">Cue X stimulus</th>
+    </tr>
+    <tr>
+      <th>Region</th>
+      <th></th>
+      <th>F(1,27)</th>
+      <th>P</th>
+      <th>F(2,54)</th>
+      <th>P</th>
+      <th>F(2,54)</th>
+      <th>P</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">ACC</td>
+      <td>L</td>
+      <td>13.93</td>
+      <td>0.0009*</td>
+      <td>1.21</td>
+      <td>0.3053</td>
+      <td>1.23</td>
+      <td>0.3017</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>15.99</td>
+      <td>0.0004*</td>
+      <td>0.95</td>
+      <td>0.3923</td>
+      <td>1.11</td>
+      <td>0.3372</td>
+    </tr>
+    <tr>
+      <td rowspan="2">anterior insula</td>
+      <td>L</td>
+      <td>8.3</td>
+      <td>0.0077*</td>
+      <td>0.41</td>
+      <td>0.6651</td>
+      <td>5.46</td>
+      <td>0.0069*</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>9.69</td>
+      <td>0.0043*</td>
+      <td>1.58</td>
+      <td>0.2155</td>
+      <td>7.48</td>
+      <td>0.0014*</td>
+    </tr>
+    <tr>
+      <td rowspan="2">posterior insula</td>
+      <td>L</td>
+      <td>15.73</td>
+      <td>0.0005*</td>
+      <td>0.28</td>
+      <td>0.7538</td>
+      <td>1.58</td>
+      <td>0.2145</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>12.12</td>
+      <td>0.0017*</td>
+      <td>0.15</td>
+      <td>0.8637</td>
+      <td>0.09</td>
+      <td>0.9111</td>
+    </tr>
+    <tr>
+      <td rowspan="2">parietal operculum</td>
+      <td>L</td>
+      <td>18.3</td>
+      <td>0.0002*</td>
+      <td>1.2</td>
+      <td>0.3089</td>
+      <td>0.02</td>
+      <td>0.9779</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>23.35</td>
+      <td>&lt;0.0001*</td>
+      <td>0.17</td>
+      <td>0.8408</td>
+      <td>0.72</td>
+      <td>0.4918</td>
+    </tr>
+    <tr>
+      <td rowspan="2">post central gyrus</td>
+      <td>L</td>
+      <td>6.14</td>
+      <td>0.0198</td>
+      <td>1.1</td>
+      <td>0.3409</td>
+      <td>0.18</td>
+      <td>0.839</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>2.57</td>
+      <td>0.1206</td>
+      <td>0.18</td>
+      <td>0.8387</td>
+      <td>0.41</td>
+      <td>0.6675</td>
+    </tr>
+    <tr>
+      <td rowspan="2">amygdala</td>
+      <td>L</td>
+      <td>0.1</td>
+      <td>0.7506</td>
+      <td>0.1</td>
+      <td>0.9046</td>
+      <td>4.94</td>
+      <td>0.0107</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>0.83</td>
+      <td>0.369</td>
+      <td>0.51</td>
+      <td>0.6033</td>
+      <td>5.39</td>
+      <td>0.0074*</td>
+    </tr>
+    <tr>
+      <td rowspan="2">thalamus</td>
+      <td>L</td>
+      <td>8</td>
+      <td>0.0087*</td>
+      <td>0.39</td>
+      <td>0.6761</td>
+      <td>1.4</td>
+      <td>0.2545</td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td>7.6</td>
+      <td>0.0104*</td>
+      <td>1.32</td>
+      <td>0.275</td>
+      <td>2.62</td>
+      <td>0.0823</td>
+    </tr>
+    <tr>
+      <td>PAG</td>
+      <td></td>
+      <td>0.02</td>
+      <td>0.9027</td>
+      <td>1.02</td>
+      <td>0.3675</td>
+      <td>4.34</td>
+      <td>0.0178</td>
+    </tr>
+    <tr>
+      <td>NPS</td>
+      <td></td>
+      <td>47.73</td>
+      <td>&lt;0.0001*</td>
+      <td>0.14</td>
+      <td>0.8708</td>
+      <td>2.18</td>
+      <td>0.1228</td>
+    </tr>
+  </tbody>
+</table>
+
+_ACC: anterior cingulate cortex, PAG: periaqueductal gray, NPS: neurological pain signature.*FDR q<0.05._
 
 Although the above ROIs are associated with pain processing, a recently developed multivariate pattern, termed neurological pain signature (NPS; Wager et al., 2013), provides a more specific and sensitive estimate of heat pain intensity (Wager et al., 2013; Krishnan et al., 2016). We thus computed an ANOVA on the pattern expression values as indicators of overall pain intensity for the NPS (Figure 3B). Stimulus intensity had an effect on NPS expression (F(1,27)=47.7; p<0.001), but neither cue nor the interaction were significant (both p>0.12; Table 1). Since NPS responses are strongly correlated with experimental heat pain reports (Wager et al., 2013; Krishnan et al., 2016), they can potentially serve as an indicator of trial-by-trial pain reports in this context to test for effects of correct predictions on pain reports. A post-hoc t-test revealed that unexpected pain tended to elicit stronger responses than expected pain (t(27)=2.2; p=0.036).
 
-## Voxel-wise statistical maps
+### Voxel-wise statistical maps
 
-In order to test for the proposed effects in brain regions outside of the
+In order to test for the proposed effects in brain regions outside of the a priori defined ROIs, we computed a whole brain analysis for the effects of stimulus (pain > warm), effects of cue (cue high > cue low), and for the interaction contrast ((cue high, warm) > (cue low, warm)) > ((cue high, pain) > (cue low, pain)). The stimulus intensity contrast revealed activations in classical pain processing areas, including posterior and mid-insula, secondary somatosensory cortex, parietal operculum, and midcingulate cortex (Figure 4A). A cue × stimulus interaction was observed again in left (peak MNI coordinates: x=−30, y = 24, z=-4) and right (x = 46, y = 20, z=−8) anterior insula (Figure 4B). No other brain region showed the interaction effect at a family wise error rate of p<0.05. Testing for the main effect of cue did not reveal any significant voxels.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/24770/elife-24770-fig4-v2.jpg)
 
-**Figure 4.:** (A) A main effect of stimulus was observed in pain processing regions including insula, parietal operculum, and midcingulate cortex. (B) Anterior insula showed a significant interaction between cue and stimulus. Maps are displayed at p<0.05, whole brain FWE corrected using nonparametric permutation testing resulting in pseudo-t maps.DOI: http://dx.doi.org/10.7554/eLife.24770.007
+**Figure 4.:** (A) A main effect of stimulus was observed in pain processing regions including insula, parietal operculum, and midcingulate cortex. (B) Anterior insula showed a significant interaction between cue and stimulus. Maps are displayed at p<0.05, whole brain FWE corrected using nonparametric permutation testing resulting in pseudo-t maps.
 
-## Formal model comparisons
+### Formal model comparisons
 
 After observing that the response profiles of SCR, pupil, bilateral anterior insula, and right amygdala were as expected by a concurrent representation of predictions and PE, we conducted formal model comparisons using Bayes factors (BF) (Kass and Raftery, 1995; Rouder and Morey, 2012) to identify the best explanatory model. Bayes factors are computed as the ratio of marginal likelihoods of the data under each of two models and thus quantify the evidence for one model over the other given the data. This metric thus allows the identification of the best model while implicitly controlling for the number of free parameters. Following Kass and Raftery (1995), we consider log-BF >3 as strong evidence for the predictive coding model and values of log-BF < −3 as strong evidence for the alternative model.
 
-Comparing the predictive coding model against the stimulus intensity model revealed strong evidence in favor of the predictive coding model for both SCR and pupil responses (log-BF
+Comparing the predictive coding model against the stimulus intensity model revealed strong evidence in favor of the predictive coding model for both SCR and pupil responses (log-BFSCR = 6.65; log-BFpupil = 6.75; Figure 5A). Comparing it against the stimulus plus expectation model revealed similarly decisive evidence in favor of the predictive coding model (log-BFSCR = 8.05; log-BFpupil = 6.09; Figure 5B). These log-BF values indicate that the predictive coding model was at least 400 times more likely than each of the two alternatives.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/24770/elife-24770-fig5-v2.jpg)
 
-**Figure 5.:** (A) log-BF comparing the predictive coding model against the stimulus intensity model for SCR, pupil, NPS, and ROIs. SCR, pupil and right anterior insula show strong evidence for predictive coding (log-BF >3), while NPS and posterior insula favor the stimulus intensity model (log-BF < −3). (B) log-BF comparing the predictive coding model against the stimulus plus expectation model. Results are similar to (A), but evidence for the stimulus plus expectation model is weaker. (C) Voxel-wise log-BF comparing the predictive coding model against the stimulus intensity model and in (D) against the stimulus plus expectation model. Maps are thresholded at |log-BF|>3. Warm colors indicate support for the predictive coding model, cold colors indicate support for the alternative model. Surface projections of unthresholded log-BF insula maps reveal an anterior-posterior gradient. AI, anterior insula; PI, posterior insula; PO, parietal operculum; PCG, post-central gyrus; ACC, anterior cingulate cortex; amy, amygdala; thal, thalamus; PAG, periaqueductal gray.DOI: http://dx.doi.org/10.7554/eLife.24770.008
+**Figure 5.:** (A) log-BF comparing the predictive coding model against the stimulus intensity model for SCR, pupil, NPS, and ROIs. SCR, pupil and right anterior insula show strong evidence for predictive coding (log-BF >3), while NPS and posterior insula favor the stimulus intensity model (log-BF < −3). (B) log-BF comparing the predictive coding model against the stimulus plus expectation model. Results are similar to (A), but evidence for the stimulus plus expectation model is weaker. (C) Voxel-wise log-BF comparing the predictive coding model against the stimulus intensity model and in (D) against the stimulus plus expectation model. Maps are thresholded at |log-BF|>3. Warm colors indicate support for the predictive coding model, cold colors indicate support for the alternative model. Surface projections of unthresholded log-BF insula maps reveal an anterior-posterior gradient. AI, anterior insula; PI, posterior insula; PO, parietal operculum; PCG, post-central gyrus; ACC, anterior cingulate cortex; amy, amygdala; thal, thalamus; PAG, periaqueductal gray.
 
 In contrast, NPS expression was better explained by the stimulus intensity model compared to the predictive coding model (log-BF = −3.98), mirroring the previously observed main effect of stimulus (Figure 5A). Computing log-BF’s for the individual ROIs confirmed the results of the ANOVA interaction tests in that the anterior insula showed strong evidence for the predictive coding model compared to the two alternative models (Figure 5). Generally, the right hemisphere yielded a clearer picture in terms of model evidence, potentially because of stronger signal in the hemisphere contralateral to the heat stimulation on the left arm. For example, evidence for the predictive coding model against the stimulus intensity model in the left anterior insula ROI was below threshold, while the evidence was above threshold for the right anterior insula (Figure 5A,B). Interestingly, the right parietal operculum ROI showed strong evidence for the stimulus intensity model (log-BF = −3.02; Figure 5A).
 
@@ -89,21 +272,21 @@ Comparing the stimulus intensity against the stimulus plus expectation model did
 
 In order to obtain a spatially more detailed picture of the computational processes of pain processing across the brain, we computed voxel-wise log-BF’s comparing the predictive coding model against the stimulus intensity model and the stimulus plus expectation model, respectively. Again, responses in bilateral anterior insula strongly supported the predictive coding model (Figure 5C,D). Within the posterior insula and parietal operculum, this more fine-grained analyses revealed bilateral evidence for the simpler, stimulus-intensity model, which was less evident on the ROI level. Similar results were obtained when comparing the predictive coding model against the stimulus plus expectation model (Figure 5D), but evidence for the stimulus plus expectation model was weaker. Directly comparing the stimulus intensity model against the stimulus plus expectation model revealed modest support for the stimulus intensity model (log-BF >2) in midcingulate cortex, posterior insula, and parietal operculum.
 
-A surface projection of the non-thresholded, voxel-wise log-BF maps comparing the predictive coding model against the two alternative models within the insula, demonstrated a gradual change in evidence from anterior to posterior insula (
+A surface projection of the non-thresholded, voxel-wise log-BF maps comparing the predictive coding model against the two alternative models within the insula, demonstrated a gradual change in evidence from anterior to posterior insula (Figure 5C,D). This gradient is also evident when the average log-BF from the insula is plotted over the anterior-posterior dimension (Figure 6A). Importantly, and in line with anatomical considerations, the gradient is also steeper in the right hemisphere (contralateral to stimulation) based on the more decisive evidence in both anterior and posterior insula.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/24770/elife-24770-fig6-v2.jpg)
 
-**Figure 6.:** (A) Plotting the average log-BF for left and right insula against y-coordinates shows the anterior-posterior gradient from predictive coding to stimulus intensity coding. (B) Weight parameters are positive for prediction and PE terms, as postulated. The PE contributes approximately two times as much to the anterior insula signal as the prediction does.DOI: http://dx.doi.org/10.7554/eLife.24770.009
+**Figure 6.:** (A) Plotting the average log-BF for left and right insula against y-coordinates shows the anterior-posterior gradient from predictive coding to stimulus intensity coding. (B) Weight parameters are positive for prediction and PE terms, as postulated. The PE contributes approximately two times as much to the anterior insula signal as the prediction does.
 
 Since we expect both predictions and PEs to contribute positively to the measured brain signal, we extracted the weight parameters for predictions and PEs from the left and right anterior insula regions in which log-BF >3. Firstly, the weights for both predictions and PEs were positive as postulated by the model. Interestingly, the weight for the PE was approximately two-times as strong as the prediction (left anterior insula: 1:2.1; right: 1:2.2), which is very similar to the ratio of 1:2 reported in a previous study in the fusiform face area (Egner et al., 2010). A stronger weighting of the PE results in reduced responses for expected compared to unexpected painful stimuli as illustrated in Figure 1C and observed here in SCR (Figure 2C), pupil dilation (Figure 2D), and anterior insula and amygdala activation (Figure 3A) as well as in other studies (Alink et al., 2010; Todorovic et al., 2011).
 
-## Comparing different PE types
+### Comparing different PE types
 
-While neuronal coding of reward prediction errors is well understood (
+While neuronal coding of reward prediction errors is well understood (Schultz et al., 2015), the specifics of aversive PE coding are currently debated (Belova et al., 2007; Seymour et al., 2007; Boll et al., 2013; Fiorillo, 2013; Klavir et al., 2013; Roy et al., 2014; Matsumoto et al., 2016). We therefore compared three versions of the predictive coding model that differed in their PE specification. The original model, presented above, builds on a pain PE in which a warm stimulus does not elicit a PE within pain regions (Figures 1A and 7A). Alternative models incorporated an absolute PE (i.e., the absolute difference between stimulus and prediction) and a signed PE (i.e., the difference between stimulus intensity and prediction), respectively (Figure 7A). All models share the same prediction term.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/24770/elife-24770-fig7-v2.jpg)
 
-**Figure 7.:** (A) Different variants of the predictive coding model. All variants share the same prediction term (as in Figure 1A), but differ in the computation of the PE. The original model used here, specifies a pain PE, which equals zero for warm stimuli (second panel, solid lines). An alternative model specifies an absolute PE (third panel, dotted lines). The third alternative model uses a signed PE (fourth panel, dash-dot lines). Please note that all three alternatives result in the same PE for painful stimuli. They only differ in the PE for warm stimuli. The right-most panel shows the expected response profile for each of the three PE definitions when prediction and PE are equally weighted, i.e. simple sum of both terms. Please note that the signed PE (dash-dot line) model does not capture any factorial interactions between cues and stimuli. (B) log-BF comparing the absolute PE model against the original, pain PE model for ROIs and autonomic measures. No evidence stronger than log-BF < −3 is available for the absolute PE model. (C) log-BF comparing the signed PE model against the pain PE model shows no decisive evidence for the signed PE model.DOI: http://dx.doi.org/10.7554/eLife.24770.010
+**Figure 7.:** (A) Different variants of the predictive coding model. All variants share the same prediction term (as in Figure 1A), but differ in the computation of the PE. The original model used here, specifies a pain PE, which equals zero for warm stimuli (second panel, solid lines). An alternative model specifies an absolute PE (third panel, dotted lines). The third alternative model uses a signed PE (fourth panel, dash-dot lines). Please note that all three alternatives result in the same PE for painful stimuli. They only differ in the PE for warm stimuli. The right-most panel shows the expected response profile for each of the three PE definitions when prediction and PE are equally weighted, i.e. simple sum of both terms. Please note that the signed PE (dash-dot line) model does not capture any factorial interactions between cues and stimuli. (B) log-BF comparing the absolute PE model against the original, pain PE model for ROIs and autonomic measures. No evidence stronger than log-BF < −3 is available for the absolute PE model. (C) log-BF comparing the signed PE model against the pain PE model shows no decisive evidence for the signed PE model.
 
 The original, pain PE model provided a better fit of the pupil, NPS, and ROI responses when compared against the absolute PE model (Figure 7B). Only the PAG and bilateral amygdala tended to favor the absolute PE model, but the model evidence did not pass the threshold of log-BF < −3. The pain PE model also provided a better fit than the signed PE model for SCR and pupil diameter (Figure 7C). For the ROIs, the pain PE also provided better fits, while the signed PE tended to fit the NPS response slightly better. But again, none of the ROI comparisons revealed above threshold evidence. In summary, neither the absolute nor the signed PE model provided compelling evidence for a better fit than the pain PE model. In fact, the pain model explained the responses better than the alternatives in most of the ROIs.
 
@@ -131,21 +314,21 @@ In summary, the observed responses in SCR, pupil dilation, and anterior insula a
 
 ## Materials and methods
 
-## Sample
+### Sample
 
 Twenty-eight healthy subjects (17 female) with an average age of 25.9 years (range: 21–33 years) participated in this study. No subject reported any psychiatric, neurological, dermatological, or pain conditions. Due to equipment malfunction, skin conductance data from seven subjects could not be analyzed (resulting in a sample size of N = 21 for SCR analyses) and technical issues prohibited pupil data collection for eight subjects (leaving N = 20 for pupil analyses); only one participant had neither SCR nor pupil data. Other behavioral and fMRI data analyses are based on the full sample of 28 participants. The sample size was determined as 1.5 times the sample of a seminal fMRI study on pain expectations that tested 19 subjects (Atlas et al., 2010). The Ethics committee of the Medical Chamber Hamburg approved the study.
 
-## Procedure
+### Procedure
 
 After arrival at the laboratory, subjects were informed about the procedures of the experiment and provided written informed consent. The experiment was divided into three parts – a temperature calibration phase, a behavioral training session, and the functional magnetic resonance imaging (fMRI) experiment.
 
-First, we calibrated the temperatures to be used in the experiment individually for each subject (outside of the MR-scanner). For calibration, subjects rated 36 cutaneous heat stimuli (total duration: 1.5 s, ramp-up: 70°C/s, ramp-down: 40°C/s) with temperatures ranging from 42°C to 49.5°C (in steps of 0.5°C) in a pseudo-randomized order using a computerized visual analogue scale (VAS). Sixteen different temperatures between 42°C and 49.5°C in steps of 0.5°C were presented two times each during calibration (except for 44, 45, 46, and 47°C, which were repeated three times each), resulting in a total of 36 stimuli. The stimulus interval was 13–17 s plus the time participants needed for their VAS rating (mean: 5.04 s, standard deviation: 1.01 s). Heat stimuli were applied to the left volar forearm and different skin sites were used for calibration, behavioral training and fMRI scanning. The extremes of the VAS were labeled ‘no sensation at all’ and ‘unbearable pain’. The center of the VAS was labeled ‘pain threshold’. This VAS partition was necessary because we needed to determine one painful and one non-painful, but clearly noticeable level of stimulation for the main experiment. Subjects were instructed to only rate stimuli as above the pain threshold if the stimulus induced any painful sensation. For stimuli that were perceived as different from baseline but not painful, subjects rated the intensity of the warmth on the lower half of the VAS. ‘Unbearable pain’ was explained to the subjects as the intensity at which they would have to lift the thermode from the arm. VAS ratings were converted to numerical values ranging from 0 to 100. Intensity ratings did not differ between men and women (t(26) = 1.32; p=0.2). The average correlation across subjects between temperature and rating was high: r¯ = 0.78 (standard deviation: 0.13). We used linear regression to determine one temperature that was clearly noticed by the subject but not painful (VAS 30) and a second temperature that was perceived as painful but tolerable (VAS 75). We next applied the selected temperatures to the subjects’ forearm to ensure that the warm stimulus was not painful, but clearly distinguishable from baseline and that the painful stimulus was bearable – this was the case for every subject. The average temperature for the warm stimulus was 45.0°C (standard deviation: 1.2°C) and the average temperature for the painful stimulus was 49.4°C (standard deviation: 1.3°C) with a maximum temperature of 49.5°C.
+First, we calibrated the temperatures to be used in the experiment individually for each subject (outside of the MR-scanner). For calibration, subjects rated 36 cutaneous heat stimuli (total duration: 1.5 s, ramp-up: 70°C/s, ramp-down: 40°C/s) with temperatures ranging from 42°C to 49.5°C (in steps of 0.5°C) in a pseudo-randomized order using a computerized visual analogue scale (VAS). Sixteen different temperatures between 42°C and 49.5°C in steps of 0.5°C were presented two times each during calibration (except for 44, 45, 46, and 47°C, which were repeated three times each), resulting in a total of 36 stimuli. The stimulus interval was 13–17 s plus the time participants needed for their VAS rating (mean: 5.04 s, standard deviation: 1.01 s). Heat stimuli were applied to the left volar forearm and different skin sites were used for calibration, behavioral training and fMRI scanning. The extremes of the VAS were labeled ‘no sensation at all’ and ‘unbearable pain’. The center of the VAS was labeled ‘pain threshold’. This VAS partition was necessary because we needed to determine one painful and one non-painful, but clearly noticeable level of stimulation for the main experiment. Subjects were instructed to only rate stimuli as above the pain threshold if the stimulus induced any painful sensation. For stimuli that were perceived as different from baseline but not painful, subjects rated the intensity of the warmth on the lower half of the VAS. ‘Unbearable pain’ was explained to the subjects as the intensity at which they would have to lift the thermode from the arm. VAS ratings were converted to numerical values ranging from 0 to 100. Intensity ratings did not differ between men and women (t(26) = 1.32; p=0.2). The average correlation across subjects between temperature and rating was high: $r¯$ = 0.78 (standard deviation: 0.13). We used linear regression to determine one temperature that was clearly noticed by the subject but not painful (VAS 30) and a second temperature that was perceived as painful but tolerable (VAS 75). We next applied the selected temperatures to the subjects’ forearm to ensure that the warm stimulus was not painful, but clearly distinguishable from baseline and that the painful stimulus was bearable – this was the case for every subject. The average temperature for the warm stimulus was 45.0°C (standard deviation: 1.2°C) and the average temperature for the painful stimulus was 49.4°C (standard deviation: 1.3°C) with a maximum temperature of 49.5°C.
 
 Following calibration, subjects were informed about the cues and the contingencies between cues and heat stimuli (Figure 1E). The explicit information and the training block ensured that subjects knew the contingencies. The training also minimized learning taking place during the fMRI session. Cue-intensity contingencies were counterbalanced across subjects and subjects were shown their respective pairings on a computer screen. The behavioral training session consisted of one block of 48 trials (see Task, below). After the training block, subjects were presented with each of the cues separately on the screen and reported which cue was associated with high, medium, and low probability of pain, respectively. All subjects associated each cue with its correct probability of receiving pain.
 
 After training, subjects were positioned in the MRI scanner and completed 4 blocks of the experiment for a total of 192 trials. The design was identical to the training session, except that each block had a different, pseudo-randomized trial order. The order of blocks was randomized across subjects. The thermode was moved to a different position after each block to prevent sensitization of the skin. During each block, we measured BOLD responses, skin conductance, and pupil diameter. After the end of the fMRI experiment we acquired a high-resolution anatomical image of each subject’s head. The whole experiment lasted about 2 h per subject.
 
-## Task
+### Task
 
 During each trial, a fixation dot was presented centrally on the screen. One of three cues then appeared 300 ms before the heat stimulus started. Heat stimulus duration was 1500 ms (including ~200 ms ramp up and down, respectively). The cue was visible during heat stimulation and remained on display until the end of the heat stimulation. After a variable interval of 3–5 s, a rating screen appeared asking subjects whether the last stimulus had been painful. Subjects answered ‘yes’ or ‘no’ by pressing either the left or right arrow key of a button-box (Figure 1D). A fixation dot was presented again during the inter-trial interval (ITI) of 12 s duration. At the end of the training block and after each fMRI block, subjects rated the perceived intensity of the warm and the painful stimuli (on the same VAS as used during calibration). Ratings were in good agreement with the calibrated target ratings of VAS 30 and VAS 75, respectively (Figure 2A).
 
@@ -153,23 +336,23 @@ Each cue was presented 16 times in each experimental block. The high pain probab
 
 We included a basic target detection task to ensure that subjects paid attention to the task (Egner et al., 2010). In 12.5% of the trials, the fixation dot changed its color to red at the beginning of the somatosensory stimulation. Subjects were asked to respond to the color change by pressing a third key. They were informed that the color change was completely unrelated to the main experimental task. Cues were not related to the color change, as target trials were evenly distributed across cues. During the fMRI experiment, subjects were rewarded with 50 cents for each correct target hit. Detection performance was at ceiling with a minimum of 23 out of 24 correct detections (mean: 23.8). Importantly, the main effect of stimulus on target reaction time was non-significant (F(1,27) = 0.295; p=0.591), indicating that subjects were similarly attentive during pain and warm trials.
 
-## Data acquisition
+### Data acquisition
 
 Stimulus presentation, response logging and thermode triggering were carried out using the Psychophysics Toolbox 3 (http://www.psychtoolbox.org). Thermal stimulation was delivered via a MRI compatible 3 cm diameter Peltier thermode (CHEPS Pathway, Medoc, Israel). Skin conductance was recorded using a Biopac EDA100C MRI system (Biopac Systems, Inc., Goleta, CA, USA) and a CED1401 A/D converter (Cambridge Electronic Design, Cambridge, UK) at a sampling rate of 100 Hz. Electrodes were attached to the thenar and hypothenar eminences of the left hand. Pupil diameter was recorded from the right eye using an MR-compatible EyeLink 1000 system (SR Research, Ottawa, ON, Canada) at a sampling rate of 1000 Hz. The lights in the MRI room were dimmed and luminance was kept constant across subjects. This setup provided a balance between eye-tracking quality and participant comfort.
 
 Functional magnetic resonance imaging (fMRI) data were acquired on a Siemens Trio 3 Tesla system equipped with a 32-channel head coil (Siemens, Erlangen, Germany). Thirty-eight transversal slices (voxel size 2 × 2 × 2 mm, 1 mm inter-slice gap) were acquired within each volume using a T2* sensitive echo planar imaging (EPI) sequence (TR = 2.34 s, TE = 26 ms, flip angle: 80°, field of view: 220 × 220 mm, parallel acceleration factor = 2). Slices were tilted about 30° relative to the AC–PC line to improve coverage in the brainstem. Additionally, T1 weighted structural images (1 × 1 × 1 mm resolution) were obtained using a MPRAGE sequence (TR = 2300 ms, TE = 9 ms, flip-angle = 9°).
 
-## Data analyses
+### Data analyses
 
-## Skin conductance responses (SCR)
+#### Skin conductance responses (SCR)
 
 The search window for SCRs was constrained to physiologically plausible response onset delays of 1 s or more after cue onset (Boucsein et al., 2012), that is, the local minimum at beginning of the SCR had to have a delay of at least 1 s after cue onset and a peak within 10 s after cue onset. We then determined the response amplitudes as the difference between the maximum in the search window the first local minimum. SCR amplitudes were then log-transformed to improve normality before further analyses (Boucsein et al., 2012).
 
-## Pupil diameter
+#### Pupil diameter
 
 Pupil diameter was recorded in epochs of 3 s before stimulus onset to 10 s after stimulus onset to reduce file sizes. Pupil data-recording and analyses followed standard methods previously used (Einhäuser et al., 2008; Kietzmann et al., 2011; Geuter et al., 2014). Pupil data were down-sampled offline from 1000 Hz to 250 Hz. Periods of ±100 ms around blinks automatically detected by the EyeLink software were removed. Additionally, we removed blinks not detected by the EyeLink software (including the intervals ± 100 ms around blinks). Trials with more than 50% of the samples missing were excluded from further analyses; 10.8% of trials had to be discarded. Missing data due to blinks were then linearly interpolated and pupil diameter traces were smoothed with a low-pass filter using a cutoff frequency of 2 Hz. Interpolating over all missing samples and analyzing all trials revealed almost identical results to the original results. The pupil results are thus independent of the eye blinks and other artifacts. Response amplitudes were computed as the difference between the maximum following stimulus onset and a 1 s pre-stimulus baseline. Amplitudes were also log-transformed before further analyses.
 
-## fMRI data preprocessing and subject-level models
+#### fMRI data preprocessing and subject-level models
 
 Functional imaging data were analyzed using Matlab (v8.1) and SPM8. The first five volumes of each run were discarded and the remaining images were spatially realigned for motion correction before non-linear spatial normalization using DARTEL, a high-dimensional warping algorithm available in SPM (Ashburner, 2007). The functional images were spatially smoothed using a Gaussian kernel with a full-width-half-maximum of 6 mm, which is three times the voxel-size.
 
@@ -179,34 +362,46 @@ Contrasts testing the two main effects of stimulus (painful stimulus > warm stim
 
 To fit the competing psychological models to the fMRI data, we used the contrast estimates for the six experimental conditions (either averaged within region of interest [ROI] or across voxels). Model details and fitting techniques are described below. Note that we did not carry out any correlational analyses between ratings and fMRI data, as the additional variance in the ratings (on whether a stimulus was perceived as warm or painful) is minimal when compared to the actual stimulation: only 5% of the responses did not match the stimuli and 18% of these mismatching responses were given on the first trial of an fMRI run.
 
-## Neurological pain signature analyses
+#### Neurological pain signature analyses
 
 The Neurological Pain Signature (NPS) is a multivariate pattern of brain activity with high sensitivity and specificity in distinguishing experimental pain from other conditions like pain anticipation, pain rating periods, or vicarious pain (Wager et al., 2013; Krishnan et al., 2016). The NPS expression as a surrogate for heat pain intensity associated with a given fMRI image is computed by taking the dot-product of the NPS and the image, resulting in a scalar value. We computed NPS expression values for each of the six experimental conditions based on the regressors described above separately for each participant (Wager et al., 2011, 2013; Krishnan et al., 2016). The resulting NPS values were then plotted and submitted to further analyses the same way as the ROI averages (see below).
 
-## Region of interest masks
+#### Region of interest masks
 
 Anatomical masks for pain processing regions of interest were generated using the Harvard-Oxford Atlas (Desikan et al., 2006) freely distributed with the FSL software (https://fsl.fmrib.ox.ac.uk/fsl/fslwiki/Atlases). For each hemisphere, we thresholded the probability maps for insula, parietal operculum (SII), post-central sulcus (SI), anterior cingulate, amygdala, and thalamus at 50%. Anterior and posterior insula masks were created by splitting the insula mask at MNI y = 0. The anterior cingulate mask of this atlas includes BA24 and BA32, but excludes subgenual portions at the set threshold of 50%. The thalamic mask covers the entire thalamus. The division of insular cortex at y = 0 mm was chosen because no probabilistic atlas includes separate maps for anterior and posterior insula. The division at y = 0 mm is close to the sulcus centralis insulae (Nieuwenhuys, 2012) and has been used previously (Ploner et al., 2011). For the periaqueductal gray (PAG), we manually created a mask based on the mean anatomical image of all subjects (Stein et al., 2012). For this, we first identified the central aqueduct on the mean anatomical image (shown in Figures 4 and 5). We then manually marked the gray matter surrounding the aqueduct and validated the resulting mask using a brainstem atlas (Naidich et al., 2009).
 
-## Models of pain processing
+#### Models of pain processing
 
-The first model tested here is a pure stimulus intensity-coding model in which physiological responses are a simple function of the stimulus input:(1)y^ = wS
+The first model tested here is a pure stimulus intensity-coding model in which physiological responses are a simple function of the stimulus input:
+
+$$
+y^ = wS
+$$
 
 where S is the stimulus intensity (dummy-coded with 0 for warm and one for pain stimuli) and w is a free scaling parameter. Please note, that we do not make assumptions about the stimulus response function here. Due to the dummy-coding, the free parameter w describes the mean distance between the responses to warm and painful stimuli. The distance can be determined by an arbitrary stimulus-response function, since only two stimulus intensities are used here. Expectation (Figure 1A; cues on the x-axis) has no effect on the measured response.
 
-The second – stimulus intensity plus expectation – model (Figure 1B) assumes that pain responses are based on two additive effects of the expected pain plus the actual stimulation intensity and is described by the following formula:(2)y^ = w1S+w2P
+The second – stimulus intensity plus expectation – model (Figure 1B) assumes that pain responses are based on two additive effects of the expected pain plus the actual stimulation intensity and is described by the following formula:
+
+$$
+y^ = w_{1}S+w_{2}P
+$$
 
 where S is again the stimulus intensity, dummy-coded as in Equation (1) and P is the expected pain as determined by the pain probability following each of the three cues (i.e., 0.25, 0.5, or 0.75). The weights w1 and w2 are free parameters controlling the weighting of input parameters. Parameter w1 controls the distance between the two lines denoting warm and pain stimuli and accommodates any stimulus-response function in the current design with two intensities (due to the dummy coding). The expectation to receive a painful stimulus is assumed to have an additive, linear effect on the measured response. Hence, the basic relationship between stimulus intensity and response could have any form, but would be subject to linear modulation based on expectations.
 
-Finally, the predictive coding model states that the physiological responses (fMRI parameter estimates or SCR or pupil dilation) are the weighted sum of the prediction (P) and the prediction error (PE; Figure 1C):(3)y^ = w1P + w2PE
+Finally, the predictive coding model states that the physiological responses (fMRI parameter estimates or SCR or pupil dilation) are the weighted sum of the prediction (P) and the prediction error (PE; Figure 1C):
+
+$$
+y^ = w_{1}P + w_{2}PE
+$$
 
 where P is the expected pain (corresponding to the actual probabilities used in the experiment, that is, 0.25, 0.5, and 0.75), and w1 and w2 are free parameters. PE is the difference between pain outcome and prediction (i.e., 1-P), if the outcome is painful. In the case of non-painful warmth, the PE is 0. We chose this PE formulation based on (1) previous studies in the visual system (den Ouden et al., 2010; Egner et al., 2010), (2) the assumption that pain specific populations will only encode prediction errors for painful stimuli (Belova et al., 2007; Büchel et al., 2014), and (3) the observation that prediction errors for painful and non-painful warmth have different topographies (Ploghaus et al., 2000; Zeidan et al., 2015).
 
-In addition to this PE definition, we considered a signed PE in which PE = S−P and an absolute PE model in which PE = |S−P| (i.e., high prediction error for both, unexpected pain and unexpected non-painful stimuli). Again, S being the dummy-coded stimulus intensity and P being the expected probability of receiving pain as above. Those PE definitions are based on observations in the visual (Kok et al., 2014) and auditory (Todorovic et al., 2011; Todorovic and de Lange, 2012) systems.
+In addition to this PE definition, we considered a signed PE in which $PE = S−P$ and an absolute PE model in which $PE = |S−P|$ (i.e., high prediction error for both, unexpected pain and unexpected non-painful stimuli). Again, S being the dummy-coded stimulus intensity and P being the expected probability of receiving pain as above. Those PE definitions are based on observations in the visual (Kok et al., 2014) and auditory (Todorovic et al., 2011; Todorovic and de Lange, 2012) systems.
 
-## Model comparison
+#### Model comparison
 
-We used Bayes Factors (BF) for pairwise comparisons testing which model offers the best explanation of the data (Jeffreys, 1961; Kass and Raftery, 1995; Lee and Wagenmakers, 2014). Bayes Factors formulate evidence for one model over the other as the ratio of the two marginal likelihoods; that is the likelihood of the data under each of the models integrated over the model’s parameter space, respectively. A Bayes Factor can be interpreted as ‘how much more likely is model A compared to model B?’ For example, a Bayes Factor of four indicates that model A is four times as likely as B to have generated the data, whereas a Bayes Factor of 0.1 indicates that B is ten times as likely as A. Furthermore, Bayes Factors select the most predictive model and implicitly penalize model complexity. Another benefit of using Bayes Factors is their ability to compare non-nested models (Lee and Wagenmakers, 2014). We used the BayesFactor package (v. 0.9.11) for R by Rouder and Morrey (Rouder and Morey, 2012) to compute Bayes Factors (two chains, each with 80,000 samples with thinning factor of four for each estimation). This implementation uses default mixture-of-variance (Cauchy) priors on the weight parameters that have desirable properties of the resulting Bayes factors (location and scale invariance, consistency, and consistent in information) (Rouder and Morey, 2012). We use log-BF throughout the manuscript to ease the interpretation, because log-BF favoring one or the other model have different signs, but the same scaling: A log-BF of four indicates the same amount of evidence for model A, as a log-BF of −4 does for model B. A value of |logBF|>3 indicates that one model is ~20 times more likely than the alternative model and is conventionally labeled as ‘strong support’ for a given model (Kass and Raftery, 1995; Stephan et al., 2010; Lodewyckx et al., 2011). Multiple model comparisons using Bayes factors do not need an explicit correction as is necessary in frequentist approaches (Scott and Berger, 2006).
+We used Bayes Factors (BF) for pairwise comparisons testing which model offers the best explanation of the data (Jeffreys, 1961; Kass and Raftery, 1995; Lee and Wagenmakers, 2014). Bayes Factors formulate evidence for one model over the other as the ratio of the two marginal likelihoods; that is the likelihood of the data under each of the models integrated over the model’s parameter space, respectively. A Bayes Factor can be interpreted as ‘how much more likely is model A compared to model B?’ For example, a Bayes Factor of four indicates that model A is four times as likely as B to have generated the data, whereas a Bayes Factor of 0.1 indicates that B is ten times as likely as A. Furthermore, Bayes Factors select the most predictive model and implicitly penalize model complexity. Another benefit of using Bayes Factors is their ability to compare non-nested models (Lee and Wagenmakers, 2014). We used the BayesFactor package (v. 0.9.11) for R by Rouder and Morrey (Rouder and Morey, 2012) to compute Bayes Factors (two chains, each with 80,000 samples with thinning factor of four for each estimation). This implementation uses default mixture-of-variance (Cauchy) priors on the weight parameters that have desirable properties of the resulting Bayes factors (location and scale invariance, consistency, and consistent in information) (Rouder and Morey, 2012). We use log-BF throughout the manuscript to ease the interpretation, because log-BF favoring one or the other model have different signs, but the same scaling: A log-BF of four indicates the same amount of evidence for model A, as a log-BF of −4 does for model B. A value of $|logBF|>3$ indicates that one model is ~20 times more likely than the alternative model and is conventionally labeled as ‘strong support’ for a given model (Kass and Raftery, 1995; Stephan et al., 2010; Lodewyckx et al., 2011). Multiple model comparisons using Bayes factors do not need an explicit correction as is necessary in frequentist approaches (Scott and Berger, 2006).
 
-Bayes Factors were computed for the log-transformed amplitudes of SCR and pupil responses, as well as for the average parameter estimates extracted from our anatomical ROIs. To achieve better spatial resolution, we also computed Bayes Factors for brain voxels within a mask defined by an omnibus F-test for a non-zero effect of any condition (thresholded at p<0.005, uncorrected). Following the above introduced convention for strong model support by log-BF, we display voxels with |logBF|>3.
+Bayes Factors were computed for the log-transformed amplitudes of SCR and pupil responses, as well as for the average parameter estimates extracted from our anatomical ROIs. To achieve better spatial resolution, we also computed Bayes Factors for brain voxels within a mask defined by an omnibus F-test for a non-zero effect of any condition (thresholded at p<0.005, uncorrected). Following the above introduced convention for strong model support by log-BF, we display voxels with $|logBF|>3$.
 
 Log-BF maps were overlaid on the group-mean anatomical image using Matlab functions from Tor D. Wager’s group (https://github.com/canlab). We used Caret 5 (v. 5.65, http://brainmap.wustl.edu/caret.html) for surface visualization of the log-BF insula map.

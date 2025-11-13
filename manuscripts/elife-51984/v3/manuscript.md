@@ -70,7 +70,7 @@ Here we undertake such an analysis. Since there are no available MSV samples fro
 
 ## Results and discussion
 
-## Increased within host virus spread is not necessarily associated with harm to the host
+### Increased within host virus spread is not necessarily associated with harm to the host
 
 To determine the degrees to which symptoms of MSV-A infections have evolved since the time of the most recent common ancestor (MRCA) of all known MSV-A isolates, we quantified four infection symptom types (chlorotic areas, intensities of chlorosis, leaf deformation and leaf stunting) for 59 MSV-A isolates and one MSV-B isolate in three differentially MSV-resistant maize genotypes. These were Golden Bantam (Sakata, South Africa) which is very susceptible to infection by MSV, displays severe MSV infection symptoms and will hereafter be referred to as the ‘S’ (for susceptible) maize genotype; STAR174 (Starke Ayres, South Africa) which has a moderate degree of resistance to MSV, displays moderate MSV infection symptoms and will hereafter be referred to as the ‘M’ (for moderate) maize genotype, and PAN77 (Pannar Seed Company, South Africa) which has a high degree of resistance to MSV, displays mild MSV infection symptoms, and will hereafter be referred to as the ‘R’ (for resistant) maize genotype.
 
@@ -82,17 +82,33 @@ We first attempted to determine whether evidence existed of correlations between
 
 Collectively, these results indicate that symptoms which are indicative of harm to the host - such as the intensity of chlorosis, leaf deformation and leaf stunting - are not, as one might expect, always positively correlated with chlorotic areas; a symptom type indicative of how successfully viruses have colonized photosynthesising cell populations within maize leaves (Lucy, 1996). It is apparent, therefore, that harm to the host could, to some degree at least, be mitigated without strongly impacting the capacity of MSV to infect and replicate within host cells. Put simply, selection acting on particular symptom types will not necessarily impact how the other symptom types evolve.
 
-## MSV symptom measurements contain detectable phylogenetic signals
+### MSV symptom measurements contain detectable phylogenetic signals
 
 All of the symptom measurements for the 59 phenotyped MSV-A isolates contained detectable phylogenetic signals, in that sequences that were associated with similar symptom intensities tended to cluster together to some degree within the MSV-A phylogenetic tree (Figures 2 and 3, see also Figure 2—figure supplements 1 and 2). Specifically, Pagel’s λ values - where 0 = no correlation and 1 = perfect correlation between symptom measurements and phylogenetic placement - for every combination of symptom and host type ranged between 0.251 for leaf deformation in the M maize genotype, and 0.706 for intensity of chlorosis in the M maize genotype, with the 95% credibility intervals of these values excluding zero for every symptom x host comparison (Figures 2 and 3).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/51984/elife-51984-fig2-v3.jpg)
+
+**Figure 2.:** Symptom intensities of ancestral viruses were phylogenetically inferred based on those observed in sensitive (S), moderately resistant (M) and resistant (R) maize genotypes infected by 59 MSV-A isolates and one MSV-B isolate (the outgroup), sampled between 1979 and 2007. The intensities of symptoms are represented by coloured branches on a grey-scale. ‘A0-A6’ indicate the ancestral nodes of the constrained clades for which MRCA sequences were inferred, synthesised and used to verify symptom intensity estimates. For each maximum clade credibility tree, we also report Pagel’s λ values (Pagel, 1999), which indicate the degree of phylogenetic signal associated with the various symptom measurements. A version of the tree with taxon labels is given in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51984/elife-51984-fig2-figsupp1-v3.jpg)
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/51984/elife-51984-fig2-figsupp2-v3.jpg)
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/51984/elife-51984-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** Included here are mean symptom measurements for individual synthesised approximations of ancestral MSV-A isolates (all of which existed prior to 1975) and means of symptom measurements of different viruses descending from these ancestral sequences (all of which were sampled between 1979 and 2007). Symptom measurements were made in sensitive (S; in purple), moderately resistant (M; in orange) and resistant (R; in green) maize genotypes. Lines link ancestral sequences (on the left) with direct descendants (on the right). Error bars on each point falling before 1980 are the 95% confidence intervals of the mean of repeated symptom measurements made for an individual ancestral virus in a single maize genotype. Error bars on each point falling after 1980 are the 95% confidence intervals of the mean of averaged symptom measurements in a single maize genotype made for multiple sampled viruses that all descended from a single ancestral virus.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/51984/elife-51984-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** Selected MSV-A isolates are highlighted with green tip circles and the MSV-B outgroup is represented with a red tip circle.
+
 ![Figure 3.](https://cdn.elifesciences.org/articles/51984/elife-51984-fig3-v3.jpg)
 
-**Figure 3.:** A) and leaf stunting (B), onto the MSV-A maximum clade credibility tree.Symptom intensities of ancestral viruses were phylogenetically inferred based on those observed in sensitive (S), moderately resistant (M) and resistant (R) maize genotypes infected by 59 MSV-A isolates and one MSV-B isolate (the outgroup), sampled between 1979 and 2007. The intensities of symptoms are represented by coloured branches on a grey-scale. ‘A0-A6’ indicate the ancestral nodes of the constrained clades for which MRCA sequences were inferred, synthesised and used to verify symptom intensity estimates. For each maximum clade credibility tree, we also report Pagel’s λ values (Pagel, 1999), which indicate the degree of phylogenetic signal associated with the various symptom measurements.
+**Figure 3.:** Symptom intensities of ancestral viruses were phylogenetically inferred based on those observed in sensitive (S), moderately resistant (M) and resistant (R) maize genotypes infected by 59 MSV-A isolates and one MSV-B isolate (the outgroup), sampled between 1979 and 2007. The intensities of symptoms are represented by coloured branches on a grey-scale. ‘A0-A6’ indicate the ancestral nodes of the constrained clades for which MRCA sequences were inferred, synthesised and used to verify symptom intensity estimates. For each maximum clade credibility tree, we also report Pagel’s λ values (Pagel, 1999), which indicate the degree of phylogenetic signal associated with the various symptom measurements.
 
 This association between the symptoms induced by MSV isolates and their phylogenetic placement indicated that, just as it is possible to infer ancestral genome sequences based on the phylogenetic relationships of an observed sample of genome sequences, it should be possible to meaningfully infer the symptom intensities that were induced by ancestral MSV variants based on the observed symptom intensities of the 59 phenotyped MSV-A isolates.
 
-## Increase of MSV-induced chlorotic leaf areas over the past ~110 years of MSV evolution
+### Increase of MSV-induced chlorotic leaf areas over the past ~110 years of MSV evolution
 
 We used the continuous diffusion model implemented in BEAST 1.10 (Suchard et al., 2018) to infer the intensities of infection symptoms produced by ancestral MSV-A sequences since the emergence of MSV-A as a serious maize pathogen in the late 1800s. To identify general trends in symptom intensity changes across all of the sampled MSV-A lineages, we mapped symptom intensities to the time-scaled MSV phylogeny (i.e. the maximum clade consensus tree; Figures 2 and 3) and then examined the averaged symptom intensities associated with phylogenetic tree branches through time (Figure 4). This revealed that since 1979, the time of the earliest sampled MSV-A isolates investigated here, MSV-A lineages have been progressively inducing, on average: (1) higher percentage chlorotic areas in all tested hosts, but most notably in the S and M maize genotypes; (2) lower intensities of streak chlorosis in the M and R maize genotypes; (3) more leaf deformation in the S maize genotype; and (4) slightly lower degrees of leaf stunting in the S and M maize genotypes (Figure 4).
 
@@ -108,11 +124,11 @@ Conversely, the phylogenetic clustering of viruses that all share similar increa
 
 Although there was an overall positive correlation between the chlorotic area and leaf stunting symptoms of the 59 phenotyped MSV isolates (especially in the S and R maize genotypes; Figure 1), there were no clear instances where both chlorotic areas and leaf stunting were predicted to have concomitantly increased in extent across individual internal branches of the MSV phylogeny. There were, however, a number of instances across terminal branches of the phylogeny where predicted decreases in chlorotic area were associated with concomitant predicted decreases in leaf stunting. The viruses at the tips of these branches induce lower chlorotic areas and/or less leaf stunting than their nearest relatives in two or three of the tested maize genotypes (Figure 3B).
 
-## Potential impact of isolate sampling
+### Potential impact of isolate sampling
 
 It should be stressed here that each of the 59 phenotyped MSV-A isolates was a single clone that was sampled at random from a genetically heterogeneous population of viruses infecting an individual maize plant. It is well known that up to 10% of MSV genomes that are cloned from an infected plant will induce significantly reduced chlorotic areas and leaf stunting relative to other clones from the same infection that might better represent the dominant virus population within that plant (Boulton et al., 1991a; Boulton et al., 1991b). It is plausible, therefore, that the overall correlation between chlorotic areas and leaf stunting observed for the 59 phenotyped virus clones (Figure 1) is not solely a consequence of adaptive increases in induced chlorotic areas being causally linked with increased leaf stunting. Rather, the detected positive correlation between chlorotic areas and leaf stunting is probably attributable, at least in part, to the decreased chlorotic areas and leaf stunting symptoms produced by the approximately 10% (i.e. ~6/59) of examined MSV-A isolates which are expected to be slightly defective. Even if only affecting approximately 10% of the isolates, we acknowledge that this artefactual correlation could also, to some extent, impact the continuous character mapping of symptom intensities (Figures 2 and 3) and inferred changes in overall symptom intensities (Figure 4). However, because these 10% of isolates are a priori randomly distributed in the tree, their inclusion is mainly expected to add some random noise in the comparative analysis. Therefore, we do not expect a systematic bias in generating the trends we estimate and compare.
 
-## Observed ancestral virus symptoms confirm symptom inferences
+### Observed ancestral virus symptoms confirm symptom inferences
 
 We selected seven nodes within the MSV-A tree and inferred the genome sequences of the ancestral viruses that are represented by these nodes (Figures 2 and 3; nodes labelled ‘A0’ to ‘A6’). We then chemically synthesised these genome sequences, and directly measured the symptom phenotypes that they induced in the S, M and R maize genotypes (see the Materials and methods for further details).
 
@@ -130,7 +146,7 @@ Nevertheless, the relative chlorotic areas and intensities of chlorosis induced 
 
 The degrees of leaf deformation and leaf stunting induced by the synthesised ancestral viruses on the three maize genotypes also indicated possible trends in the evolution of these symptom types that were not revealed by the Bayesian continuous trait mapping approach. Specifically, whereas successively more recent MSV variants have tended to induce higher degrees of leaf deformation in the S and M maize genotypes (Figure 2—figure supplement 3C), these variants have tended to induce lower degrees of leaf stunting in the S maize genotype and higher degrees of leaf stunting in the M genotype (Figure 2—figure supplement 3D).
 
-## MSV-A is apparently evolving towards a maximization of host colonization with a minimization of host harm
+### MSV-A is apparently evolving towards a maximization of host colonization with a minimization of host harm
 
 If the maize genotypes analysed here are in any way representative of those cultivated throughout Africa since 1900, these results suggest that MSV-A has over the past century been evolving towards the induction in most maize genotypes of increased chlorotic leaf areas and decreased intensities of chlorosis. Although in some maize genotypes this evolution has possibly been associated with increased degrees of leaf deformation and/or stunting, in others this does not seem to have been be the case.
 
@@ -144,7 +160,7 @@ The trade-off we identify is significant because it implies that even when patho
 
 ## Materials and methods
 
-## Virus symptom quantification
+### Virus symptom quantification
 
 A set of 59 MSV field isolates (Supplementary file 3), representing the breadth of known diversity within the MSV-A strain, were used for symptom evaluation (Figure 2—figure supplement 4). These isolates were chosen from a collection of 704 fully sequenced MSV-A cloned genomes that were available in the University of Cape Town’s MSV genome bank in December 2010. Their selection was based on sampling dates to ensure the broadest possible range of sampling times - from 1979 through to 2007.
 
@@ -158,7 +174,7 @@ Leaf segments were scanned at 300 dpi on a HP Scanjet 559OP flatbed scanner (Hew
 
 Outlier measures were identified using Tukey’s method (Tukey, 1977): symptom measures below the 1.5 interquartile range were discarded. Averages of chlorotic area, intensity of chlorosis, leaf deformation and leaf stunting measurements across leaves 4, 5 and 6 for each virus in each host were later used to infer the magnitudes of these symptom types in ancestral MSV-A variants.
 
-## Inference of ancestral MSV sequences
+### Inference of ancestral MSV sequences
 
 An alignment containing the 59 MSV-A isolates for which symptoms were quantified (hereafter referred to as ‘phenotyped’ isolates), together with an additional 630 MSV-A sequences and 182 sequences belonging to MSV strains B through K (all of which can be obtained from GenBank), was constructed using MUSCLE with default settings (Edgar, 2004) and edited by eye using the suite of editing tools available in IMPALE (Khoosal and Martin, 2015). This 871 MSV full genome sequences alignment was screened for recombination using RDP4.46 (Martin et al., 2015) in a two-stage process. In an initial screen, default settings were used and all evidence of recombination within MSV strains other than MSV-A was removed from the alignment by identifying recombinationally-derived sequence fragments and removing these by replacing the associated nucleotide characters in the alignment file with the standard ‘gap’ character, ‘-”. In the second screen, other than the use of no multiple testing p-value correction and a p-value cut-off of 10−6, default RDP4.46 settings were again used. This Bonferroni uncorrected p-value cut-off is still reasonably conservative due to the fact that during the ancestral sequence reconstructions we were specifically focused only on the small subset of all detectable recombination events that impacted the inference of the seven ancestral MSV-A sequences that would later be chemically synthesized.
 
@@ -170,7 +186,7 @@ The MRCA sequences that were selected for inference were (i) the MRCA of all the
 
 Each MRCA sequence was inferred with MrBayes3.2 using either two or three independent runs, with sampling carried out every 500 generations and all but the last 1000 samples discarded as burn-in. Convergence was monitored using standard deviations of split frequencies, ranging between 0.064 and 0.007 after between 12.2 million and 44.6 million generations. Each MRCA sequence was determined based on the average posterior probabilities of the nucleotide states at each genome site that were yielded by the two/three independent runs (Supplementary file 4). At nucleotide sites where no single nucleotide state had an associated posterior probability >0.8 in any of the replicated runs (such as occurred at sites likely to be gap characters), the MRCA sequence inferred by maximum parsimony using PHYLIP (Felsenstein, 1993) from a maximum likelihood tree constructed using RAxML8 (Stamatakis, 2014) was used either as a tie-breaker, where it was likely that a site should have an associated nucleotide, or to infer that a site should have no associated nucleotide, reflecting what should be a gap character in the MRCA sequence within the context of the analysed alignment. Ancestral genome sequences (Supplementary Data 4) were synthesized at Epoch Life Science (USA). Infectious clones of these reconstructed genomes were produced as in Martin et al. (2001), and were used to infect the S, M and R maize as described above.
 
-## Phylogenetic inference of past virus infection symptoms
+### Phylogenetic inference of past virus infection symptoms
 
 Prior to fitting a dated-tip molecular clock model in a Bayesian inference approach, we evaluated the temporal signal using regressions of root-to-tip genetic distances against sequence sampling times. The analyses were based on maximum likelihood trees inferred with the program FastTree 2 (Price et al., 2010) and the determination coefficients (R2) of the linear regression were estimated with the program TempEst (Rambaut et al., 2016). The p-values were calculated using the approach of Murray et al. (2016) and based on 1000 random permutations of the sequence sampling dates (Navascués et al., 2010). This root-to-tip regression analysis confirmed the presence of a significant temporal signal (R2 = 0.196, p-value<0.001).
 
@@ -180,6 +196,6 @@ Finally, we displayed the results of the continuous diffusion analyses using two
 
 We investigated the phylogenetic signal associated with symptom measurements by estimating Pagel’s λ values (Pagel, 1999) for every combination of symptom and host type. Pagel’s λ is a commonly used measure of phylogenetic signal in continuous traits such as the symptom measurements examined here. Whereas a Pagel’s λ value of 0 reflects independence across trait observations and therefore an absence of phylogenetic signal, a value of 1 suggests that traits arise according to a classic Brownian diffusion model in a manner that is perfectly consistent with the phylogenetic relationships of the organisms from which the trait measurements were taken.
 
-## Data availability
+### Data availability
 
 All data and R code used for analyses in this study are available on the following public repository: https://github.com/sdellicour/msv_symptom_evolution (Dellicour, 2020; copy archived at https://github.com/elifesciences-publications/msv_symptom_evolution).

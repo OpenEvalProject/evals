@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.33752.001 We present a model of how neural representations of egocentric spatial experiences in parietal cortex interface with viewpoint-independent representations in medial temporal areas, via retrosplenial cortex, to enable many key aspects of spatial cognition. This account shows how previously reported neural responses (place, head-direction and grid cells, allocentric boundary- and object-vector cells, gain-field neurons) can map onto higher cognitive function in a modular way, and predicts new cell types (egocentric and head-direction-modulated boundary- and object-vector cells). The model predicts how these neural populations should interact across multiple brain regions to support spatial memory, scene construction, novelty-detection, ‘trace cells’, and mental navigation. Simulated behavior and firing rate maps are compared to experimental data, for example showing how object-vector cells allow items to be remembered within a contextual representation based on environmental boundaries, and how grid cells could update the viewpoint in imagery during planning and short-cutting by driving sequential place cell activity.
+We present a model of how neural representations of egocentric spatial experiences in parietal cortex interface with viewpoint-independent representations in medial temporal areas, via retrosplenial cortex, to enable many key aspects of spatial cognition. This account shows how previously reported neural responses (place, head-direction and grid cells, allocentric boundary- and object-vector cells, gain-field neurons) can map onto higher cognitive function in a modular way, and predicts new cell types (egocentric and head-direction-modulated boundary- and object-vector cells). The model predicts how these neural populations should interact across multiple brain regions to support spatial memory, scene construction, novelty-detection, ‘trace cells’, and mental navigation. Simulated behavior and firing rate maps are compared to experimental data, for example showing how object-vector cells allow items to be remembered within a contextual representation based on environmental boundaries, and how grid cells could update the viewpoint in imagery during planning and short-cutting by driving sequential place cell activity.
 
 ## Introduction
 
@@ -39,11 +39,23 @@ To account for the presence of objects within the environment, we propose alloce
 
 Here, we describe the neural populations of the BB-model and how they interact in detail. Technical details of the implementation, equations, and parameter values can be found in the Appendix.
 
-## Receptive field topology and visualization of data
+### Receptive field topology and visualization of data
 
 We visualize the firing properties of individual spatially selective neurons as firing rate maps that reflect the activity of a neuron averaged over time spent in each location. We also show population activity by arranging all neurons belonging to one population according to the relative locations of their receptive fields (see Figure 2A–C), plotting a snapshot of their momentary firing rates. In the case of boundary-selective neurons such a population snapshot will yield an outline of the current sensory environment (Figure 2C). Naturally, these neurons may not be physically organized in the same way, and these plots should not be confused with the firing rate maps of individual neurons (Figure 2D). Hence, population snapshots (heat maps) and firing rate maps (Matlab ‘jet’ colormap) are shown in distinct color-codes (Figure 2).
 
-## The parietal window
+![Figure 2.](https://cdn.elifesciences.org/articles/33752/elife-33752-fig2-v1.jpg)
+
+**Figure 2.:** (A1) Illustration of the distribution of receptive field centers (RFs) of place cells (PCs), which tile the environment. (A2) Receptive fields of boundary responsive neurons, be they allocentric (BVCs) or egocentric (PWb neurons), are distributed on a polar grid, with individual receptive fields centered on each delineated polygon. Two example receptive fields (calculated according to Equation 14) are overlaid (bright colors) on the polar grids for illustration. Note that each receptive field covers multiple polygons, that is neighboring receptive fields overlap. The polar grids of receptive fields tile space around the agent (red arrow head at center of plots), that is they are anchored to the agent and move with it (for both BVCs and PWb neurons). In addition, for PWb neurons the polar grid of receptive fields also rotates with the agent (i.e. their tuning is egocentric). (B1) As the agent (black arrowhead) moves through an environment, place cells (B2) track its location. (B2) Snapshot of the population activity of all place cells arranged according to the topology of their firing fields (see A1). (C1,2) Snapshots of the population activity for BVCs and boundary selective PW neurons (PWb), respectively. Cells are again distributed according to the topology of their receptive fields (see A2), that is each cell is placed at the location occupied by the centre of its receptive field in peri-personal space (ahead is shown as up for PW neurons; North is shown as up for BVCs). See Section on the transformation circuit, Video 1, and Figure 2—figure supplement 1 for the mapping between PW and BVCs patterns via the transformation circuit. (D1,2) Unlike snapshots of population activity, firing rate maps show the activity of individual neurons averaged over a whole trial in which the agent explores the environment, here for a place cell (D1) and for a boundary vector cell with a receptive field due East (D2, tuning distance roughly 85 cm).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/33752/elife-33752-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Shaded areas indicate the Parietal Window (PWb), the transformation circuit, head direction modulation, and boundary vector cells (BVCs). Example cells are represented as stylized firing rate maps in a simple square environment. Firing related to the North, East, South and West walls is depicted in four colors (blue, yellow, purple, red, respectively). Only 4 PWb cells, 16 transformation circuit neurons, 4 BVCs and four head-direction modulations (North, East, South, West) are shown for simplicity. PWb neurons have egocentric receptive fields (RFs, dashed ovals, shown left of and within each square) that are attached to the agent (black triangle). The RFs respond to boundaries at a specific distance and egocentric direction (ahead, left, right, behind). As the agent moves around the environment, any boundary can fall into the egocentric RF, depending on the agent’s orientation (four example positions and orientations shown), resulting in a firing rate map with firing related to all four boundaries (i.e. the blue, yellow, purple, and red bands, each conditional on the agent facing in a different direction). Considering the PWb cell with the RF ahead of the agent (top left, green star): due to the HD modulation a different RSC cell is receptive to input from that PWb neuron depending on the agent‘s current orientation. For example when the agent is facing East the 2nd row of the RSC transformation circuit is receptive to inputs from the PWb, and the first PWb neuron projects to the second cell in that row (green arrow). That RSC cell in turn projects to a BVC with a RF to the East (downward light grey arrow). The Eastward BVC also gets inputs from the other 3 PWb cells when the agent faces in the other three directions, via the other RSC neurons in the second column (connectivity not shown, but indicated by matching symbols: hexagon, triangle, square). Thus, this BVC can fire whenever the agent is near to the East wall, irrespective of the agent’s orientation. In top-down mode (imagery), PWb cells are driven by different BVCs depending on the facing direction of the animal. The PWb cell with the RF ahead of the agent (top left, green star) recieves connections from all transformation circuit neurons shown with star symbols: conveying input from the Eastward BVC when facing East, the Northward BVC when facing North etc. In this way, it is driven to fire whenever there is a boundary ahead of the agent. All connections between PWb and BVC cells and transformation circuit neurons are bidirectional, to enable both bottom-up and top-down operation.
+
+![Video 1.](https://cdn.elifesciences.org/articles/33752/elife-33752-video1.mp4.jpg)
+
+**Video 1.:** The video shows a visualization of the simulated neural activity in the retrosplenial transformation circuit as a simulated agent moves in a simple, familiar environment (See Figure 2-figure supplement 1 for further details). Individual sublayers of the transformation circuit are shown in a circular arrangement around the head direction ring. Head direction cells track the agent's heading and confer a gain modulation on the retrosplenial sublayers. The transformation circuit then drives boundary vector cells (see main text). Surface plots (heat maps) visualize the neural activity of populations of cells. Individual cells correspond to pixels/polygons on the heat maps (compare to figures). Cells are arranged according to the distribution of their receptive fields; however, this arrangement does not necessarily reflect anatomical relations. Bright colors indicate strong firing. Abbreviations: PWb, Parietal Window, egocentric boundary representations (ahead is up); HDCs, Head Direction Cells; TR, Retrosplenial transformation sublayers; BVCs, Boundary Vector Cells (North is up); egoc. agent view, egocentric field of view of the agentwithin the environment, purple outlines denote visibleboundary segments which correspond to sensoryinputs to the PWb (ahead is up); alloc. agent position, allocentric position of the agent in the environment (North is up).
+
+### The parietal window
 
 Perceived and imagined egocentric sensory experience is represented in the ‘parietal window’ (PW), which consists of two neural populations - one coding for extended boundaries (‘PWb neurons’), and one for discrete objects (‘PWo neurons’). The receptive fields of both populations lie in peri-personal space, that is are tuned to distances and directions ahead, left or right of the agent, tile the ground around the agent, and rotate together with the agent (Figure 2A2, Figure 3). Reciprocal connections to and from the retrosplenial transformation circuit (RSC/TR, see below) allow the parietal window representations to be transformed into allocentric (orientation-independent) representations (i.e. boundary and object vector cells) in the MTL and vice versa. Intriguingly, cells that encode an egocentric representation of boundary locations (akin to parietal window neurons in the present model) have recently been described (Hinman et al., 2017).
 
@@ -51,43 +63,43 @@ Perceived and imagined egocentric sensory experience is represented in the ‘pa
 
 **Figure 3.:** (A) Top panel: The egocentric field of view of the agent (black arrow head). Purple boundaries fall into the forward-facing 180 degree field of view and provide bottom-up drive to the parietal window (PWb; not shown, but see Figure 2C2). The environment contains two discrete objects (green circles). Bottom panel: Allocentric positions of the agent (black triangle) and objects (green circles). (B) Object-related parietal window (PWo) activity (top panel) and OVC activity (bottom panel) due to object 2, South-East of the agent, at time T1. (C) PWo activity (top panel) and OVC activity (bottom panel) due to object 1, North-East of the agent, at time T2. A heuristically implemented attention model ensures that only one object at a time drives the parietal window (PWo). (D) Illustration of the encoding of an object encountered in a familiar environment. Dashed connections are learned (as Hebbian weight updates) between active cells. Solid lines indicate connections learned in the training phase, representing the spatial context. Note that place cells (PCs) anchor the object representation to the spatial context.
 
-## The agent model and perceptual drive
+### The agent model and perceptual drive
 
 An agent model supplies perceptual information, driving the parietal window in a bottom-up manner. The virtual agent moves along trajectories in simple 2D environments (Figure 2B1). Turning motions of the agent act on the head direction network to shift the activity packet in the head direction ring attractor. Egocentric distances to environmental boundaries in a 180-degree field of view in front of the agent are used to drive the corresponding parietal window (PWb) neurons. The retrosplenial circuit (section "The Head Direction Attractor Network and the Transformation Circuit") transforms this parietal window activity into BVC activity, which in turn drives PC activity in the pattern-completing MTL network (O'Keefe and Burgess, 1996; Hartley et al., 2000). Thus, simplified perceptual drive conveyed to the MTL allows the model to self-localize in the environment based purely on sensory inputs.
 
-## The medial temporal lobe network
+### The medial temporal lobe network
 
-## Spatial context
+#### Spatial context
 
 The medial temporal lobe (MTL) network for spatial context is comprised of three interconnected neural populations: the PCs and BVCs code for the position of the agent relative to a given boundary configuration, and perirhinal neurons code for the identity (e.g. texture, color etc) of boundaries (PRb neurons). Identity has to be signaled by cells separate from BVCs because the latter respond to any boundary at a given distance and direction.
 
-## Discrete objects
+#### Discrete objects
 
 The allocentric object code is comprised of two populations of neurons. First, similarly to extended boundaries, the identity of discrete objects must be coded for by perirhinal neurons (PRo neurons). Second, we hypothesize an allocentric representation of object location, termed object vector cells (OVCs), analogous to BVCs (Figure 3B), with receptive fields at a fixed distance in an allocentric direction.
 
 Interestingly, cells which respond to the presence of small objects and resemble OVCs have recently been identified in the rodent literature (Deshmukh and Knierim, 2013; Hoydal et al., 2017), and could reside in the hippocampus proper or one synapse away. Although we treat them separately, BVCs and OVCs could in theory start out as one population in which individual cells specialize to respond only to specific types of object with experience (e.g. to small objects in the case of OVCs; see Barry and Burgess, 2007).
 
-## The role of perirhinal neurons
+#### The role of perirhinal neurons
 
 OVCs, like BVCs and parietal window (PWo and PWb) neurons signal geometric relations between object or boundary locations and the agent, but not the identity of the object or boundary. OVCs and BVCs fire for any object or boundary occupying their receptive fields. Conversely, an object’s or boundary’s identity is indicated, irrespective of its location, by perirhinal neurons. They lie at the apex of the ventral visual stream (the ‘what’ pathway; Ungerleider, 1982; Mishkin et al., 1983; Goodale and Milner, 1992; Davachi, 2006; Valyear et al., 2006) and encode the identities or sensory characteristics of boundaries and objects, driven by a visual recognition process which is not explicitly modeled. Only in concert with perirhinal identity neurons does the object or boundary code uniquely represent a specific object or boundary at a specific direction and distance from the agent.
 
-## Connections among medial temporal lobe populations
+#### Connections among medial temporal lobe populations
 
 BVCs and OVCs have reciprocal connections to the transformation circuit, allowing them to be driven by perceptual inputs (‘bottom up’), or to project their representations to the parietal window (‘top down’).
 
 For simulations of the agent in a familiar environment, the connectivity among the medial temporal lobe populations which comprise the spatial context (PCs, BVCs, PRb neurons) is learned in a training phase, resulting in an attractor network, such that mutual excitatory connections between neurons ensure pattern completion. Hence, partial activity in a set of PCs, BVCs, and/or PRb neurons - will re-activate a complete, previously learned representation of spatial context in these populations. OVCs and PRo neurons are initially disconnected from the populations that represent the spatial context. The simulated agent can then explore the environment and encode objects into memory along the way.
 
-## The head direction attractor network and the transformation circuit
+### The head direction attractor network and the transformation circuit
 
 Head direction cells (HDCs) are arranged in a simple ring-attractor circuit (Skaggs et al., 1995; Zhang, 1996). Current head direction, encoded by activity in this attractor circuit, is updated by angular velocity information as the agent explores the environment. The head direction signal enables the egocentric-allocentric transformation carried out by retrosplenial cortex.
 
 Because of their identical topology, the PWb/BVC population pair and the PWo/OVC population pair can each make use of the same transformation circuit. For simplicity we illustrate its function via BVCs and their PWb counterparts. The retrosplenial transformation circuit (RSC/TR) consists of 20 sublayers. Each sublayer is a copy of the BVC population, with firing within each sublayer also tuned to a specific head-direction (directions are evenly spaced in the [0360] degree range). That is, individual cells in the transformation circuit are directionally modulated boundary vector cells, and connect egocentric (parietal) PWb neurons and allocentric BVCs (in the MTL) in a mutually consistent way. All connections are reciprocal. For example, a BVC with a receptive field to the East is mapped onto a PWb neuron with a receptive field to the right of the agent when facing North, but is mapped onto a PWb neuron with a receptive field to the left of the agent when facing South. Similarly, a PWb neuron with a receptive field ahead of the agent is mapped onto a BVC with a receptive field to the West when facing West but is mapped onto a BVC with a receptive field to the North when facing North. Figure 2C depicts population snapshots that are mapped onto each other by the transformation circuit (also see Video 1), while Figure 2—figure supplement 1 illustrates the connections and firing rate maps at the single cell level. We hypothesize that the egocentric-allocentric transformation circuit is set up during development (see Appendix for the setup of the circuit).
 
-## Bottom-up vs top-down modes of operation
+### Bottom-up vs top-down modes of operation
 
 During perception, the egocentric parietal window representation is based on sensory inputs (‘bottom-up’ mode). The PW representations thus determine MTL activity via the transformation circuit. ‘Running the transformation in reverse’ (‘top-down’ mode), that is reconstructing parietal window activity based on BVCs/OVCs, is the BB-models account of visuo-spatial imagery. To implement the switch between modes of operation, we assume that the balance between bottom-up and top-down connections is subject to neuromodulation (see e.g. Hasselmo, 2006); Appendix, Equation 3 and following). For example, connections from the parietal window (PWb and PWo) populations to the transformation circuit and thence onto BVCs/OVCs are at full strength in bottom-up mode, but down-regulated to 5% of their maximum value in top-down mode. Conversely, connections from BVCs/OVCs to the transformation circuit and onwards to the parietal window are down-regulated during bottom-up perception (5% of their maximum value) and reach full strength only during imagery (top-down reconstruction).
 
-## Embedding object-representations into a spatial context: attention and encoding
+### Embedding object-representations into a spatial context: attention and encoding
 
 Unlike boundaries, which are hard-coded in the simulations (corresponding to the agent moving in a familiar environment), object representations are learned on the fly (simulating the ability to remember objects found in new locations in the environment).
 
@@ -97,7 +109,7 @@ To encode objects in their spatial context the connections between OVCs, PRo neu
 
 Finally, if multiple objects are present in a scene we do not by default encode all perceivable objects equally strongly into memory. We trigger encoding of an object when it reaches a threshold level of ‘salience’. In general, ‘salience’ could reflect many factors; here, we simulate relatively few objects and assume that salience becomes maximal at a given proximity, and prevent any further learning thereafter.
 
-## Imagery and the role of grid cells
+### Imagery and the role of grid cells
 
 Grid cells (GCs; Hafting et al. 2005) are thought to interface self-motion information with place cells (PCs) to enable vector navigation (Kubie and Fenton, 2012; Erdem and Hasselmo, 2012; Bush et al., 2015; Stemmler et al., 2015), shortcutting, and mental navigation (Bellmund et al., 2016); Horner et al. 2016). Importantly, both self-motion inputs (via GCs) and sensory inputs (e.g. mediated via BVCs and OVCs) converge onto PCs and both types of inputs may be weighted according to their reliability (Evans et al., 2016). GCs could thus support PC activity when sensory inputs are unreliable or absent. Here, GC inputs can drive PC firing during imagined navigation (see Section Novelty Detection (Simulations 1.3, 1.4)), whereas perceived scene elements, mediated via BVC and OVCs, provide the main input to PCs during unimpaired perception.
 
@@ -105,7 +117,7 @@ We include a GC module in the BB-model that, driven by heuristically implemented
 
 Connection weights between GCs and PCs are calculated as a simple Hebbian association between PC firing at a given coordinate (according to the mapping shown in Figure 2A,B) and pre-calculated firing rate maps of GCs (7 modules with 100 cells each, see Appendix for details).
 
-## Model summary
+### Model summary
 
 An agent employing a simple model of attention alongside dedicated object-related neural populations in perirhinal, parietal and parahippocampal (BVCs and OVCs) cortices allow the encoding of scene representations (i.e. objects in a spatial context) into memory. Transforming egocentric representations via the retrosplenial transformation circuit yields viewpoint-independent (allocentric) representations in the medial temporal lobe, while reconstructing the parietal window representation (which is driven by sensory inputs during perception) from memory is the model’s account of recall as an act of visuo-spatial imagery. Grid cells allow for mental navigation. Figure 4 shows the complete schematic of the BB-model, see Figure 2—figure supplement 1 for details of the RSC transformation circuit.
 
@@ -113,7 +125,7 @@ An agent employing a simple model of attention alongside dedicated object-relate
 
 **Figure 4.:** ‘Bottom-up’ mode of operation: Egocentric representations of extended boundaries (PWb) and discrete objects (PWo) are instantiated in the parietal window (PWb/o) based on inputs from the agent model while it explores a simple 2D environment. Attention sequentially modulates object-related PW activity to allow for unambiguous neural representations of an object at a given location. The angular velocity of the agent drives the translation of an activity packet in the head direction ring attractor network. Retrosplenial cortex (RSC) carries out the transformation from egocentric representations in the PW to allocentric representations in the MTL (driving BVCs and OVCs). The transformation circuit consists of 20 sublayers, each maximally modulated by a specific head direction while the remaining circuit is inhibited (Inh). In the medial temporal lobe network, perirhinal neurons (PRb/o) code for the identity of an object or extended boundary. PCs, BVCs and perirhinal neurons are reciprocally connected in an attractor network. Following encoding after object encounters, PCs are also reciprocally connected to OVCs and PRo neurons. ‘Top-down’ mode of operation: Activity in a subset of PCs, BVCs, and/or perirhinal neurons spreads to the rest of the MTL network (pattern completion) by virtue of intrinsic connectivity. With perceptual inputs to the PW disengaged (i.e. during recollection), the transformation circuit reconstructs parietal window (PWb/o) activity based on the current BVC and OVC activity. Updating PCs via entorhinal cortex (EC) GC inputs allows for a shift of viewpoint in imagery.
 
-## Quantification
+### Quantification
 
 To obtain a measure of successful recall or of novelty detection (i.e. mismatch between the perceived and remembered scenes), we correlate the population vectors of the model’s neural populations between recall (the reconstruction in imagery) and encoding. These correlations are compared to correlations between recall and randomly sampled times as the agent navigates the environment in bottom-up mode. This measure of mismatch could potentially be compared to experimental measures of overlap between neuronal populations (e.g. Guzowski et al., 1999) in animals, or ‘representational similarity’ measures in fMRI, e.g. Ritchey et al., 2013).
 
@@ -121,7 +133,7 @@ To obtain a measure of successful recall or of novelty detection (i.e. mismatch 
 
 In this section, we explore the capabilities of the BB-model in simulations and derive predictions for future research. Each simulation is accompanied by a Figure, a supplementary video visualizing the time course of activity patterns of neural populations, and a brief discussion. In Section Discussion, we offer a more general discussion of the model.
 
-## Encoding of objects in spatial memory and recall (Simulation 1.0)
+### Encoding of objects in spatial memory and recall (Simulation 1.0)
 
 We let the agent model explore the square environment depicted in Figure 3A. However, the spatial context now contains an isolated object (Figure 5). During exploration, parietal window (PWb) neurons activate BVCs via the retrosplenial transformation circuit (RSC/TR), which in turn drive place cell activity. Similarly, when the object is present PWo neurons are activated, which drive OVCs via the transformation circuit. At the same time, object/boundary identity is signalled by perirhinal neurons (PRb/o). When the agent comes within a certain distance (here 55 cm) of an object, the following connection weights are changed to form Hebbian associations: PRo neurons are associated with PCs, HDCs, and OVCs; OVCs are associated with PCs and PRo neurons (also see Figure 3D); PCs are already connected to BVCs (in a familiar context). The weight change is calculated as the outer product of population vectors of the corresponding neuronal populations (yielding the Hebbian update), normalized, and added to the given weight matrix.
 
@@ -130,6 +142,105 @@ We let the agent model explore the square environment depicted in Figure 3A. How
 **Figure 5.:** (A) Bottom-up mode of operation. Population snapshots at the moment of encoding during an encounter with a single object in a familiar spatial context. Left to right: PWb/o populations driven by sensory input project to the head-direction-modulated retrosplenial transformation circuit (RSC/TR, omitted for clarity, see Video 1 and Figure 2—figure supplement 1); The transformation circuit projects its output to BVCs and OVCs; BVCs and PRb neurons constitute the main drive to PCs; perirhinal (PRb/o) neurons are driven externally, representing object recognition in the ventral visual stream. At the moment of encoding, reciprocal connections between PCs and OVCs, OVCs and PRo neurons, PCs and PRo neurons, and PRo neurons and current head direction are learned (see Figure 3D). Right-most panels show the agent in the environment and the PC population snapshot representing current allocentric agent position. (B) Top-down mode of operation, after the agent has moved away from the object (black triangle, right-most panel). Current is injected into a PRo neuron (bottom right of panel), modelling a cue to remember the encounter with that object. This drives PCs associated to the PRo neuron at encoding (dashed orange connections show all associations learned at encoding). The connection weights switch globally from bottom-up to top-down (connections previously at 5% of their maximum value now at 100% and vice versa; orange arrows). PCs become the main drive to OVCs, BVCs and PRb neurons. BVC and OVC representations are transformed to their parietal window counterparts, thus reconstructing parietal representations (PWb/PWo) similar to those at the time of encoding (compare left-most panels in A and B). That is, the agent has reconstructed a point of view embodied by parietal window activity corresponding to the location of encoding (red triangle, right-most panel). Heat maps show population firing rates frozen in time (black: zero firing; white: maximal firing).
 
 After the agent has finished its assigned trajectory, we test object-location memory via object-cued recall. That is, modeling some external trigger to remember a given object (e.g. ‘Where did I leave my keys?'), current is injected into the PRo neuron coding for the identity of the object to-be recalled. By virtue of learned connections, the PRo neuron drives the PCs which were active at encoding. Pattern completion in the MTL recovers the complete spatial context by driving activity in BVCs and PRb neurons. The connections from PRo neurons to head direction cells (Figure 3D) ensure a modulation of the transformation circuit such that allocentric BVC and OVC activity will be transformed to yield the parietal representation (i.e. a point of view) similar to the one at the time of encoding. That is, object-cued recall corresponds to a full reconstruction of the scene when the object was encoded. Figure 5 depicts the encoding (Figure 5A) and recall phases (Figure 5B) of simulation 1.0. Video 2 shows the entire trial. To facilitate matching simulation numbers and figures to videos, Table 1 lists all simulations and relates them to their corresponding figures and videos.
+
+**Table 1.**
+ List of simulations, their content, corresponding Figures and videos
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Simulation no.</th>
+      <th>Content</th>
+      <th>Related figures</th>
+      <th>Video no.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>0</td>
+      <td>Activity in the transformation circuit</td>
+      <td>Figure 2—figure supplement 1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>1.0</td>
+      <td>Object-cued recall</td>
+      <td>Figures 5 and 6,8A</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>1.0n1</td>
+      <td>Object-cued recall with neuron loss</td>
+      <td>Figure 8B</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>1.0n2</td>
+      <td>Object-cued recall with firing rate noise</td>
+      <td>Figure 8C</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>1.1</td>
+      <td>Papez’ circuit Lesion (anterograde amnesia)</td>
+      <td>Figure 7A</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>1.2</td>
+      <td>Papez’ circuit Lesion (retrograde amnesia)</td>
+      <td>Figure 7B</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>1.3</td>
+      <td>Object novelty (intact hippocampus)</td>
+      <td>Figure 9A</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>1.4</td>
+      <td>Object novelty (lesioned hippocampus)</td>
+      <td>Figure 9B</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>2.1</td>
+      <td>Boundary trace responses</td>
+      <td>Figure 10A,B,C</td>
+      <td>9</td>
+    </tr>
+    <tr>
+      <td>2.2</td>
+      <td>Object trace responses</td>
+      <td>Figure 10D</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>3.0</td>
+      <td>Inspection of scene elements in imagery</td>
+      <td>Figure 11</td>
+      <td>11</td>
+    </tr>
+    <tr>
+      <td>4.0</td>
+      <td>Mental Navigation</td>
+      <td>Figure 12</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>5.0</td>
+      <td>Planning and short-cutting</td>
+      <td>Figure 13</td>
+      <td>13</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 2.](https://cdn.elifesciences.org/articles/33752/elife-33752-video2.mp4.jpg)
+
+**Video 2.:** The agent approaches the object and encodes it into long-term memory. Upon navigating past the object the agent initiates recall, reinstating patterns of neural activity similar to the patterns present during the original object encounter. Recall is identified with the re-construction of the original scene in visuo-spatial imagery (see main text). Please see caption of Video 1 for abbreviations.
 
 Recollection in the BB-model results in visuo-spatial imagery of a coherent scene from a single viewpoint and direction, that is it implements a process of scene construction (Burgess et al., 2001a; Byrne et al., 2007; Schacter et al., 2007; Hassabis et al., 2007; Buckner, 2010) at the neuronal level. A mental image is re-constructed in the parietal window reminiscent of the perceptual activity present at encoding. Note that during imagery BVCs (and hence PWb neurons, Figure 5B) all around the agent are reactivated by place cells, because the environment is familiar (the agent having experienced multiple points of view at each location during the training phase). We do not simulate selective attention for boundaries (i.e. PWb neurons), although see Byrne et al., 2007.
 
@@ -143,7 +254,7 @@ At the neuronal level, a key component of the BB-model are the object vector cel
 
 Anatomical connections between the potential loci of BVCs/OVCs and retrosplenial cortex (the suggested location of the egocentric-allocentric transformation circuit) exist. BVCs have been found in the subicular complex (Lever et al., 2009), and the related border cells and OVCs in medial entorhinal cortex (Solstad et al., 2008; Hoydal et al., 2017). Both areas receive projections from retrosplenial cortex (Jones and Witter, 2007), and project back to it (Wyss and Van Groen, 1992).
 
-## Papez’ circuit lesions induce amnesia (Simulations 1.1, 1.2)
+### Papez’ circuit lesions induce amnesia (Simulations 1.1, 1.2)
 
 Figure 5 depicts the model performing encoding and object-cued recall. However, the model also allows simulation of some of the classic pathologies of long-term memory. Lesions along Papez’ circuit have long been known to induce amnesia (Delay and Brion, 1969; Squire and Slater, 1978; 1989; Parker and Gaffan, 1997; Aggleton et al., 2016). Thus, lesions to the fornix and mammilary bodies severely impact recollection, although recognition can be less affected (Tsivilis et al., 2008). In the context of spatial representations, Papez’ circuit is notable for containing head direction cells (as well as many other cell types not in the model). That is, the mammillary bodies (more specifically the lateral mammillary nucleus, LMN), anterior dorsal thalamus, retrosplenial cortex, parts of the subicular complex and medial entorhinal cortex all contain head direction cells (Taube, 2007; Sargolini et al., 2006). Thus, lesioning Papez’ circuit removes (at least) the head direction signal from our model, and is modeled by setting the input from head direction cells to the retrosplenial transformation circuit (RSC/TR) to zero.
 
@@ -153,7 +264,7 @@ In the bottom-up mode of operation (perception), the lesion removes drive to the
 
 **Figure 7.:** (A) In the bottom-up mode of operation (perception), a lesion to the head direction circuit removes drive to the transformation circuit and consequently to the boundary vector cells (BVCs) and object vector cells (OVCs). A perceived object (present in the egocentric parietal representation, PWo) cannot elicit activity in the MTL and thus cannot be encoded into long-term memory, causing anterograde amnesia. Place cells fire at random locations, driven by perirhinal neurons. (B) For memories of an object encountered before the lesion, place cells can be cued by perirhinal neurons, and pattern completion recruits associated OVC, BVCs and perirhinal neurons, but no meaningful representation can be instantiated in parietal areas, preventing episodic recollection/imagery (retrograde amnesia for hippocampus-dependent memories).
 
-## Quantification, robustness to noise and neuron loss
+### Quantification, robustness to noise and neuron loss
 
 Figure 8A shows correlations between population vectors of neural patterns during imagery/recall and those during encoding for Simulation 1.0 (Object-cued recall; Figure 5). OVCs and PCs exhibit correlation values close to one, indicating faithful reproduction of patterns. BVC correlations are somewhat diminished because recall reactivates all boundaries fully, compared to a field of view of 180 degrees during perception with limited reactivation of cells representing boundaries outside the field of view. PW neurons show correlations below one because at recall reinstatement in parietal areas requires the egocentric-allocentric transformation (i.e. OVC signals passed through retrosplenial cells), which blurs the pattern compared to perceptual instatement in the parietal window (i.e. imagined representations are not as precise as those generated by perception).
 
@@ -165,9 +276,25 @@ To test the model’s robustness with regard to firing rate noise and neuron los
 
 The ability to maintain a stable attractor state among place cells and head direction cells is critical to the functioning of the model, while damage in the remaining (feed-forward) model components manifests in gradual degradation in the ability to represent the locations of objects and boundaries (see accompanying Video 3). For example, if certain parts of the parietal window suffer from neuron loss, the reconstruction in imagery is impaired only at the locations in peri-personal space encoded by the missing neurons (indeed, this can model representational neglect; Byrne et al., 2007), see also Pouget and Sejnowski, 1997). The place cell population was more robust to silencing than the head-direction population (containing only 100 neurons), simply because greater numbers of neurons were simulated, giving greater redundancy. As long as a stable attractor state is present, the model can still encode and recall meaningful representations, giving highly correlated perceived and recalled patterns (Figure 8B).
 
+![Video 3.](https://cdn.elifesciences.org/articles/33752/elife-33752-video3.mp4.jpg)
+
+**Video 3.:** The agent moves in a familiar environment and encounters a novel object. The agent approaches the object and encodes it into long-term memory. Upon navigating past the object, the agent initiates recall, reinstating patterns of neural activity similar to the patterns present during the original object encounter. Please see caption of Video 1 for abbreviations.
+
 The model is also robust to adding firing rate noise (up to 20% of peak firing rate) to all cells. Correlations between patterns at encoding and recall remain similar to the noise-free case, see Figure 8C. Videos 3 and 4 show an instance from the neuron-loss and firing rate noise simulations respectively.
 
-## Novelty detection (Simulations 1.3, 1.4)
+![Video 4.](https://cdn.elifesciences.org/articles/33752/elife-33752-video4.mp4.jpg)
+
+**Video 4.:** The agent moves in a familiar environment and encounters a novel object. The agent approaches the object and encodes it into long-term memory. Upon navigating past the object the agent initiates recall, reinstating patterns of neural activity similar to the patterns present during the original object encounter. Please see caption of Video 1 for abbreviations.
+
+![Video 5.](https://cdn.elifesciences.org/articles/33752/elife-33752-video5.mp4.jpg)
+
+**Video 5.:** However, a lesion to the head direction system (head direction cells are found along Papez' circuit) precludes the agent from laying down new memories, because the transformation circuit cannot drive the medial temporal lobe. That is the transformation circuit cannot instantiate OVC/BVC representations derived from sensory input for subsequent encoding, leading to anterograde amnesia in the model agent (see main text). Please see caption of Video 1 for abbreviations.
+
+![Video 6.](https://cdn.elifesciences.org/articles/33752/elife-33752-video6.mp4.jpg)
+
+**Video 6.:** A lesion to the head direction system (head direction cells are found along Papez' circuit) has been implemented similar to Simulation 1.1 (Video 5). The agent is supplied with the connection weights learned in Simulation 1.0 (Video 2), where it has successfully memorized a scene with an object. That is, the agent has acquired a memory before the lesion. However, even though cueing with the object re-activates the correct medial temporal representations, due to the lesion no reinstatement in the parietal window cannot occur, leading to retrograde amnesia for hippocampus-dependent memories in the model agent. Note, it is hypothesized that a cognitive agent only has conscious access to the egocentric parietal representation, as suggested by hemispatial representational negelct (Bisiach and Luzzatti, 1978) (see main text). Please see caption of Video 1 for abbreviations.
+
+### Novelty detection (Simulations 1.3, 1.4)
 
 In the model, hippocampal place cells bind all scene elements together. The locations of these scene elements relative to the agent are encoded in the firing of boundary vector cells (BVCs) and object vector cells (OVCs). Rats show a spontaneous preference for exploring novel/altered stimuli compared to familiar/unchanged ones. We simulate one of these experiments (Mumby et al., 2002), in which rats preferentially explore one of two objects that has been shifted to a new location within a given environment, a behavior impaired by hippocampal lesions. In Simulations 1.3 and 1.4, the agent experiences an environment containing two objects, one of which is later moved. We define a mismatch signal as the difference in firing of object vector cells during encoding versus recall (modelled as imagery, at the encoding location), and assume that the relative amounts of exploration would be proportional to the mismatch signal.
 
@@ -177,13 +304,21 @@ With an intact hippocampus (Figure 9; Video 7), the moved object generates a sig
 
 **Figure 9.:** (A) Two objects are encoded from a given location (left). After encoding, object one is moved further North. When the agent returns to the encoding location, the perceived position of object one differs from that at encoding (blue line, middle panel). When the agent initiates recall (right) the perceived location of object 1 (green filled circle) and its imagined location (end point of blue line) differ. (B) PC activity is the same in all three circumstances, that is PC activity alone is insufficient to tell which object has moved. (C-D) The perceived location as represented by OVCs during perception (C; objects 1 and 2 sampled sequentially at times T1, T2) and during recall (D; objects 1 and 2 sampled sequentially at times T3, T4). Blue circle in panel D indicates the previously perceived position of object 1. Inset bar graphs show the concurrent activity of perirhinal cells (PRo). (E) The mismatch in OVC firing results in near zero correlation between encoding and recall patterns for object 1 (black bar), while object 2 (white bar) exhibits a strong correlation, so that object one would be preferentially explored. Note, the correlation for object two is less than 1 because of the residual OVC activity of the other object (secondary peaks in both panels in D, driven by learned PC-to-OVC connections). (F) A hippocampal lesion removes PC population activity, so that OVC activity is not anchored to the agent’s location at encoding. (G-H) An incidental match between learned and recalled OVC patterns can occur for either object at specific locations (red arrow heads in second panel in G), but otherwise mismatch is signaled for both objects equally and neither object receives preferential exploration.
 
+![Video 7.](https://cdn.elifesciences.org/articles/33752/elife-33752-video7.mp4.jpg)
+
+**Video 7.:** The agent is faced with two objects and encodes them (sequentially) into memory. Following some behavior one of the two objects is moved. Note, in real experiments the animal is removed for this manipulation. In simulation, this is unnecessary. Once the agent has returned to location of encoding, it is faced with the manipulated object array. The agent then initiates recall for objects one and two in sequence. The patterns of OVC re-activation can be compared to the corresponding patterns during perception (population vectors correlated, see main text). For the moved object, the comparison signals a change (near zero correlation). That object would hence be preferentially explored by the agent, and the next movement target for the agent is set accordingly (see main text). Please see caption of Video 1 for abbreviations.
+
 Hippocampal lesions are implemented by setting the firing rates of hippocampal neurons to zero. A hippocampal lesion (Figure 9; Video 8) precludes the generation of a meaningful novelty signal because the agent is incapable of generating a coherent point of view for recollection, and the appropriate BVC configuration cannot be activated by the now missing hippocampal input. Connections between object vector cells and perirhinal neurons (see Figure 3D) can still form during encoding in the lesioned agent. Thus some OVC activity is present during recall due to these connections. However, this activity is not location specific. Without the reference frame of place cells and thence BVC activity this residual OVC activity during recall can be generated anywhere (see Figure 9F–H). It only tells the agent that it has seen this object at a given distance and direction, but not where in the environment it was seen. Hence, the mismatch signal is equal for both objects, and exploration time would be split roughly evenly between them. However, if the agent happens to be at the same distance and direction from the objects as at encoding, then perceptual OVC activity will match the recalled OVC activity (Figure 9G,H), which might correspond to the ability of focal hippocampal amnesics to detect the familiarity of an arrangement of objects if tested from the same viewpoint as encoding (King et al., 2002; but see also Shrager et al., 2007).
+
+![Video 8.](https://cdn.elifesciences.org/articles/33752/elife-33752-video8.mp4.jpg)
+
+**Video 8.:** It shows a reproduction of the object novelty paradigm of Mumby et al., 2002; detecting that one of two objects has been moved). The agent is faced with two objects and encodes an association between relative object location (signaled by OVCs) and object identity (signaled by perirhinal neurons) - see Video 7 for encoding phase. Due to the hippocampal lesion, these associations cannot be bound to place cells. Once one of the two objects is moved (compare to Simulation 1.3) the agent initiates recall and the patterns of OVC re-activation are compared to the corresponding patterns during perception (population vectors correlated, see main text). Recall is initiated at two distinct locations to highlight the following effect of the lesion: Since associations between OVCs and perirhinal neurons are not bound to a specific environmental location a comparison of OVC patterns between perception and recall signals mismatch everywhere for both objects except for the two special locations at which imagery is engaged in the video. At each of those locations, the neural pattern due to the learned association happens to coincide with the pattern during perception for one of the two objects. Hence no object can be singled out for enhanced exploration. Match and Mismatch is signaled equally for both objects (see main text). Please see caption of Video 1 for abbreviations.
 
 Rats also show preferential exploration of a familiar object that was previously experienced in a different environment, compared with one previously experienced in the same environment, and this preference is also abolished by hippocampal lesions (Mumby et al., 2002; Eacott and Norman, 2004; Langston and Wood, 2010). We have not simulated different environments (using separate place cell ensembles), but note that ‘remapping’ of PCs between distinct environments (i.e. much reduced overlap of PC population activity; e.g. Bostock et al., 1991; Anderson and Jeffery, 2003; Wills et al., 2005) suggests a mismatch signal for the changed-context object would be present in PC population vectors. Initiating recall of object A, belonging to context 1, in context 2, would re-activate the PC ensemble belonging to context 1, creating an imagined scene from context one which would mismatch the activity of PCs representing context two during perception. A hippocampal lesion precludes such a mismatch signal by removing PCs.
 
 Finally, it has been argued that object recognition (irrespective of context) is spared after hippocampal but not perirhinal lesions (Aggleton and Brown, 1999; Winters et al., 2004; Norman and Eacott, 2004) which would be compatible with the model given that its perirhinal neuronal population signals an object’s identity irrespective of location.
 
-## ‘Top-down’ activity and trace responses (Simulations 2.1, 2.2)
+### ‘Top-down’ activity and trace responses (Simulations 2.1, 2.2)
 
 Simulations 1.3 and 1.4 dealt with a moved object. Similarly, if a scene element (a boundary or an object) has been removed after encoding, probing the memorized MTL representation can reveal trace activity reflecting the previously encoded and now absent boundary or object.
 
@@ -197,13 +332,21 @@ In Simulation 2.1, the agent has a set of MTL weights which encode the contextua
 
 **Figure 10.:** (A) An environment containing a small barrier (red outline) has been encoded in the connection weights in the MTL, but the barrier has been removed before the agent explores the environment again. (B) Activity snapshots for PWb (B1), BVC (B2) and PC (B3) populations during exploration. The now absent barrier is weakly represented in parietal window activity due to the periodic modulation of top-down connectivity during perception, although ‘bottom-up’ sensory input due to visible boundaries still dominates (see main text). (C1) High gain for top-down connections yields BVC firing rate maps with trace fields due to the missing boundary. Left: BVC firing rate map. Right: An illustration of the BVC receptive field (teardrop shape attached to the agent at a fixed allocentric direction and distance) with the agent shown at two locations where the cell in the left panel fires maximally. (C2) Same as C1 for a cell whose receptive field is tuned to a different allocentric direction. (D1) Similarly to the missing boundary in A, a missing object (small red circle) can produce ‘trace’ firing in an OVC (D2). Every time the agent traverses the location from which the object was encoded (large red circle in D1), learned PC-to-OVC connections periodically reactivate the associated OVC. (D3) The same PCs also re-activate the associated perirhinal identity cell (PRo), yielding a spatial trace firing field for a nominally non-spatial perirhinal cell (red circle).
 
+![Video 9.](https://cdn.elifesciences.org/articles/33752/elife-33752-video9.mp4.jpg)
+
+**Video 9.:** However, a previously present boundary has been removed. The agent is supplied with a periodic (akin to rodent theta) modulation of the top-down connection weights (please see main text). The periodic modulation of these connections allows for a probing of the memorized spatial context without engaging in full recall and reveals the memory of the environment to be incongruent with the perceived environment. BVC activity due to the memorized (now removed) boundary periodically 'bleeds' into the egocentric parietal window ¨representation, in principle allowing the agent to attend to the part of environment which has undergone change (location of removed boundary). Time integrated neural activity from this simulation yields firing rate maps which show traces of the removed boundary (see Figure 10 in the manuscript). Note, the video is cut after 1 min to reduce filesize. The full simulation covers approximately 300 s of real time. Please see caption of Video 1 for abbreviations.
+
 Simulation 2.2 (Figures 10D1,D2 and Video 10) shows similar’ trace’ responses for OVCs. The agent has a set of MTL weights which encode the scene from Simulation 1.0 (Figure 5) where it encountered and encoded an object. The object is now absent (small red circle in Figure 10D1), but the periodic modulation of top-down connectivity reactivates corresponding OVCs, yielding trace fields in firing rate maps. This activity can bleed into the parietal representation during perception (e.g. at simulation time 9:40-10:00 in Video 6), albeit only when the location of encoding is crossed by the agent, and with weaker intensity than missing boundary activity (the smaller extent of the OVC representation leads to more attenuation of the pattern as it is processed by the transformation circuit).
+
+![Video 10.](https://cdn.elifesciences.org/articles/33752/elife-33752-video10.mp4.jpg)
+
+**Video 10.:** However, a previously present (and encoded) object has been removed. The agent is supplied with a periodic (akin to rodent theta) modulation of the top-down connection weights (please see main text). The periodic modulation of these connections allows for a probing of the memorized spatial context. With every passing through the encoding location OVC activity (reflecting the now removed object) and perirhinal activity is generated by place cells covering the encoding location. This re-activation yields firing rate maps which show traces of the removed object in OVCs, and induces a spatial firing field for the nominally non-spatially selective perirhinal neuron (compare to Figure 10 in the manuscript). Note, the video is cut after 1 min to reduce filesize. The full simulation covers approximately 300 s of real time. Please see caption of Video 1 for abbreviations.
 
 Interestingly, perirhinal identity neurons, which normally fire irrespective of location, can appear as spatially selective trace cells due to the periodic modulation of top-down connectivity at the location of encoding. Figure 10D3 shows the firing rate map of a perirhinal identity neuron. Every time the memorized representation is probed (high top-down gain), if the agent is near the location of encoding, the learned connection from PCs to perirhinal cells (PRo) lead to perirhinal firing for the absent object, yielding a spatial trace firing field for this nominally non-spatial cell.
 
 The presence of some memory-related activity during nominally bottom-up (perceptual) processing can have benefits beyond the assessment of change discussed above. For instance, additional activity in the contextual representations (BVCs, PC, PRb neurons) due to pattern completion in the MTL can enhance the firing of BVCs coding for scene elements outside the current field of view. This activity can propagate to the PW, as is readily apparent during full recall/imagery (Figure 5) but is also present in weaker form during perception. Such activity may support awareness of our spatial surrounding outside of the immediate field of view, or may enhance perceptually driven representations when sensory inputs are weak or noisy.
 
-## Sampling multiple objects in imagery (Simulation 3.0)
+### Sampling multiple objects in imagery (Simulation 3.0)
 
 Humans can focus attention on different elements in an imagined scene, sampling one after another, without necessarily adopting a new imagined viewpoint. This implies that the set of active PCs need not change while different objects are inspected in imagery. Moreover, humans can localize an object in imagined scenes and retrieve its identity (e.g. ‘What was next to the fireplace in the restaurant we ate at?”).
 
@@ -217,7 +360,11 @@ We propose that encoded objects that are not currently the focus of attention in
 
 Figure 11 and Video 11 show sequential (attention-based) encoding, subsequent recall and attentional sampling of scene elements. The agent sequentially encodes two objects from one location (Figure 11A), moves on until both objects are out of view, and engages imagery to recall object one in its spatial context (Figure 11B). The agent can then sample object two by allocating attention to the secondary peak in the parietal window (boosting the residual activity by injecting current in the PWo cells corresponding to the location of object 2). This activity spreads back to the MTL network, via OVCs, driving the corresponding PRo neuron (Figure 11C). Thus, the agent infers the identity of object 2, by inspecting it in imagery. Attention ensures disambiguation of objects at encoding, while reciprocity of connections in the MTL is necessary to form a stored attractor in spatial memory.
 
-## Grid cells and mental navigation (Simulation 4.0)
+![Video 11.](https://cdn.elifesciences.org/articles/33752/elife-33752-video11.mp4.jpg)
+
+**Video 11.:** Upon navigating past the objects the agent initiates recall, cueing with the first object. The OVC representations of both objects are bound to the same place cells. These place cells thus generate a secondary peak in the OVC representation corresponding to the non-cued object. This activity propagates to the parietal window. Allocating attention to this secondary peak in the egocentric parietal representation (i.e. injecting current), propagates back to OVCs, which then drive the perirhinal cells for the non-cued object. That is, the agent infers the identity of the second object which is part of the scene (see main text). Please see caption of Video 1 for abbreviations.
+
+### Grid cells and mental navigation (Simulation 4.0)
 
 The parietal window neurons encode the perceived spatial layout of an environment, in an egocentric frame of reference, as an agent explores it (i.e. a representation of the current point of view). In imagery, this viewpoint onto a scene is reconstructed from memory (top-down mode as opposed to bottom-up mode). We refer to mental navigation as internally driven translation and rotation of the viewpoint in the absence of perceptual input. In Simulation 4.0, we let the agent encode a set of objects into memory and then perform mental navigation with the help of grid and head direction cells.
 
@@ -233,7 +380,7 @@ Translating an established BVC pattern due to updated perceptual input (in respo
 
 **Figure 12.:** Left to right: allocentric agent position (black triangle) and recent trajectory (black dashed line); PWo, OVC, and PC population snapshots; GC input to PCs (i.e. GC firing rates multiplied by connection weights from GCs to PCs); PRo neurons. The rightmost panel indicates which objects have been encoded. (A) The agent is exploring the environment and has just encoded the second object into memory (right-most bar chart). Object one has been encoded near the start of the trajectory. (B) After encoding the third object and moving past it, the agent initiates imagery, recalling object one in its spatial context (top-down mode) from a point of view West of object 1, facing East (red triangle). (C) Mock motor efference shifts GC activity (dashed arrow on GC input to PCs) and thence drives the PC activity bump representing (imagined) agent location. The allocentric (BVCs) and egocentric (PWb) boundary representation follow suit (see main text and Video 12). As the PC activity bump passes the location at which object 3 was encoded, corresponding OVC activity is elicited by learned connections (and is transformed into PWo activity (solid orange arrows indicate GCs updating PCs, PCs updating OVCs, etc). NB object 3 appears in the reconstructed scene ahead-right of the agent (PWo snapshot, second panel), despite being encoded ahead-left of the agent when it moved southwards from object 2 toward object 3. The corresponding perirhinal neuron is also driven to fire by PCs (orange arrow in PRo panel).
 
-## Shortcutting and ‘preplay-like’ activity (Simulation 5.0)
+### Shortcutting and ‘preplay-like’ activity (Simulation 5.0)
 
 It is a small step from imagined movement to planned navigation. GCs have been suggested to compute the vector to a goal location from the current location (see Kubie and Fenton, 2012; Erdem and Hasselmo, 2012; Bush et al., 2015; Stemmler et al., 2015), a capability necessary to explain the ability to take a shortcut across previously unexplored territory (Tolman, 1948). We propose that this ability is based on mental (vector-based) navigation supported by GCs. In Simulation 5, we let the agent explore a novel part of the environment, extending a pre-existing representation of a spatial context. Simulation 5.0 consists of three distinct phases: planning movement across a previously unvisited area to a reward location (phase 1); actual navigation of this shortcut (phase 2); and finally mental navigation across the now familiar area (phase 3).
 
@@ -242,6 +389,14 @@ In phase 1, the agent generates a trajectory along the shortest path to the goal
 ![Figure 13.](https://cdn.elifesciences.org/articles/33752/elife-33752-fig13-v1.jpg)
 
 **Figure 13.:** The agent is located in an environment where the direct trajectory between two salient locations (purple dots, left column) covers an unexplored part of the environment. PCs potentially firing in the unexplored area (‘reservoir cells’) receive only random connections from GCs (see unstructured grid cell input in column 5). Left to right panel columns: allocentric agent position (triangle); PWb, BVC, PC population rates; GC inputs to PCs (see Figure 12); and (B-D only) firing of ‘reservoir’ PCs along the trajectory (x axis), stacked and ordered by time of peak firing along the trajectory (y axis). (A) Starting situation. (B) Phase 1; imagined movement across the obstructed space leads to preplay-like activity in reservoir PCs (rightmost panel). Red arrow indicates the reservoir PCs are driven by grid cells. No egocentric representation can be generated from BVCs because ‘reservoir’ PCs have no connections to BVCs, that is they are not yet part of the MTL attractor. (C) Phase 2; the barrier is removed and the agent navigates the trajectory in real space. GCs again drive PCs (thick grey arrow), so the temporal sequence of reservoir cell activity in (A) is recapitulated in the spatial sequence of PC activity. Sensory inputs drive the PW (bottom-up mode) and hence BVCs (grey arrow between panels 2 and 3). Hebbian learning proceeds between PCs and BVCs (dashed grey line), and from GCs to PCs (reinforcing the drive from GCs to PCs, grey arrow between panels 4 and 5). (D) Phase 3; having traversed the novel part of the environment, the agent initiates imagery and performs mental navigation along the newly learned trajectory. The learned connections now instantiate the correct BVC and PW activity in top-down mode (orange arrows indicating flow of information, similar to Figure 12).
+
+![Video 12.](https://cdn.elifesciences.org/articles/33752/elife-33752-video12.mp4.jpg)
+
+**Video 12.:** Upon navigating past the third object the agent initiates recall, cueing with the first object, and subsequently performs mental navigation (imagined movement in visuo-spatial imagery) with the help of grid cells. Grid cells update the place cell representation along the trajectory. The egocentric parietal representation is updated along the imagined trajectory, that is scene elements are flowing past the point of view of the agent. Note, the imagined trajectory does not correspond to a previously taken route. Nevertheless, when the imagined trajectory takes the agent past the encoding location of object 3, it is instantiated in the OVC and PWo representations (see main text). Grid cell firing rates are shown multiplied by their connection weights to place cells. Please see caption of Video 1 for further abbreviations.
+
+![Video 13.](https://cdn.elifesciences.org/articles/33752/elife-33752-video13.mp4.jpg)
+
+**Video 13.:** Newly recruited cells in the hippocampus exhibit activity reminiscent of preplay. Upon removal of the barrier the agent traverses the shortcut and associates the newly recruited hippocampal cells with the perceptually driven activity in the MTL. Subsequent mental navigation across the short cut yields activity in hippocampal cells reminiscent of replay (see main text). Grid cell firing rates are shown multiplied by their connection weights to place cells. Please see caption of Video 1 for further abbreviations.
 
 In phase 2, the barriers are removed and the agent performs the previously imagined trajectory in real space, using the novel shortcut. The same GCs are active along the trajectory and hence the same reservoir cells which fired before exploring the area, now fire in a spatial sequence along the actual trajectory. Since the agent is now actively perceiving its environment BVCs are driven in a bottom-up manner and Hebbian-like plasticity can strengthen connections between BVCs and reservoir cells as they fire along the trajectory (an analogous mechanism should also associate perirhinal neurons, which is omitted here). Hence, the reservoir cells have now effectively become place cells, with firing fields tied to the agent’s location in space (Figure 13C and Video 13). Figure 13C (rightmost panel) shows place cell activity along the trajectory during phase 2. Crucially, these cells are plotted in the order of activity shown during the previous imagined navigation (Figure 13B), indicating ‘pre-play-like’ behavior, in that the sequence of PC firing seen prior to first exploration is subsequently recapitulated during actual navigation (Figure 13C; Dragoi and Tonegawa, 2011; Ólafsdóttir et al., 2015).
 
@@ -255,7 +410,7 @@ We propose a model of how sensory experiences, which are ultimately egocentric i
 
 The model can be used to account for human spatial cognition at the level of single neurons far from the sensory periphery: Place cells, head direction cells, gain-field neurons, boundary- and object-vector cells (BVCs and OVCs), and grid cells. Future work should try to integrate the present account of spatial cognition with recent progress concerning spatial coding in parietal areas (Nitz, 2006; Nitz, 2009; Nitz, 2012; Harvey et al., 2012; Whitlock et al., 2012; Raposo et al., 2014; Vedder et al., 2017), and a broader view of retrosplenial function (e.g., Alexander and Nitz, 2015; Alexander and Nitz, 2017). Notably, BVCs were predicted by an early predecessor of the present model (Hartley et al., 2000; Burgess et al., 2001a). Here, we have introduced OVCs to show how items introduced into a familiar environment may be coded for and incorporated into long-term memory. Intriguingly, OVC-like responses have been reported recently (Deshmukh and Knierim, 2013; Hoydal et al., 2017). We also explored how long-term memory might be probed to assess novelty. Finally, we incorporated grid cells and investigated their role in exploratory behavior and mental navigation. We can thus begin to frame abstract notions such as episodic future thinking and scene construction in terms of neural mechanisms, although we note that these concepts extend beyond our model to include completely fictional scenes/scenarios (Burgess et al., 2001a; Hassabis et al., 2007; Schacter et al., 2007).
 
-## Recall of objects in a spatial context
+### Recall of objects in a spatial context
 
 We have proposed that items/objects are associated to a given (spatial) context via place cells, which index the local sensory panorama, including local objects. Attaching representations of discrete objects (in the form of object vector cell activity) to a contextual representation via place cells aligns well with neuropsychological experiments that show position specificity in visual object memory (Hollingworth, 2007). In such experiments, object memory is superior when the target object is presented at the same position in the scene as it had been viewed originally (also see object novelty Simulations 1.3, 1.4). The hippocampus in particular has been implicated in combining information about objects, locations, and contexts (Warburton and Brown, 2010; Eacott and Gaffan, 2005; Barker and Warburton, 2015), consistent with the model. Similarly, studies suggest the hippocampus and precuneus are necessary for maintaining object-location binding even in working memory (Piekema et al., 2006; Olson et al., 2006).
 
@@ -267,7 +422,7 @@ The present model of explicit recall for items in context is a small step on the
 
 Key components of the model are the ‘bottom-up’ transition from egocentric perceptual representations to allocentric MTL representations and the ‘top-down’ transition from MTL representations back to egocentric imagery. By informing perception in a top-down manner, the MTL can effectively predict perceptual input in familiar environments, allowing novelty detection and enhancing perception with remembered information. If we view imagery as a top-down reconstruction of perceptual representations, the MTL together with the retrosplenial transformation circuit could be seen as a generative model for scenes, consistent with generative models of memory such as (Káli and Dayan, 2001). It has been proposed that the bottom-up/top-down transition between encoding and retrieving occurs rhythmically at the frequency of the theta rhythm (Hasselmo et al., 1996; Burgess et al., 2001a; Hasselmo et al., 2002; Byrne et al., 2007; Douchamps et al., 2013). Theta might underlie a periodic probing of memorized representations; however, full recollection in imagery can last for long periods of time and need not correspond to specific phases of theta in humans (Düzel et al., 2010).
 
-## Mnemonic effects of newly learned connections and ‘trace cells’
+### Mnemonic effects of newly learned connections and ‘trace cells’
 
 We have proposed (Figure 10) that the relative strength of top-down and bottom-up connections can change smoothly and under control of the agent (e.g. via the release of a neuromodulator) to allow memory representations to influence neural activity during perception. This allows the agent to localize and attend to a region of space in the egocentric frame of reference where a given scene element used to be located, even if it has subsequently been moved, changed or removed. Moreover, the neural activity caused by increasing top-down connections can signal where the environment has changed. Interestingly, Tsao et al. (2013) recently reported ‘trace cells’ in lateral entorhinal cortex, whose firing reflects the previous presence of a now missing object, while related ‘mis-place’ cells have been reported in CA1 (O'Keefe, 1976).
 
@@ -275,13 +430,13 @@ We have shown that nominally non-spatially selective cells like perirhinal ident
 
 Finally, even in the absence of changes to the memorized spatial configuration, mnemonic representations can enhance perception, for example allowing the firing of cells coding for scene elements outside the current field of view. This activity is supported by pattern completion in the MTL, and may support people’s awareness of the presence of boundaries or objects outside of their field of view within a familiar environment.
 
-## Attention
+### Attention
 
 Although we do not model the mechanistic origins of attention (see e.g. Itti and Koch, 2001), attentional modulation in the present model is crucial for unambiguous representations of multiple objects within a scene. If multiple objects are encoded from the same viewpoint, multiple OVC and perirhinal (PRo) neurons can be co-active, precluding the formation of a unique representation for each object-location conjunction, that is, precluding the solving the object-location binding problem. Thus, we require the objects to be sampled rhythmically and encoded sequentially in the parietal window (Figures 3 and 11), consistent with experimental literature suggesting rhythmic and sequential sampling (VanRullen et al., 2007; Landau and Fries, 2012; for review see VanRullen, 2013). If attentional cycles have a limited duration, then there may be insufficient time for activity to build up in the corresponding neuronal populations and support robust encoding into memory if there are too many objects within a scene, producing a capacity limit (see also Lisman and Idiart, 1995; Bays and Husain, 2008).
 
 The attentional modulation described above can also act in imagery (within the parietal window), allowing the agent to inspect different parts of an imagined scene (see also Byrne et al., 2007). The model proposes that, in the absence of perceptual inputs, perirhinal neurons can be driven in a top-down fashion from hippocampus, thus reinstating an activity pattern in perirhinal cortex similar to the one present at encoding. Only the co-firing of these perirhinal neurons (PRo) and the corresponding BVCs and OVCs provides a unique representation of a given object in a given context, at a given location. The proposed binding of OVCs and PRo neurons, subject to attention, might also provide a functional interpretation of the hippocampus’ role in memory-guided attention (e.g., Summerfield et al., 2006).
 
-## Mental navigation, short-cutting, and planning
+### Mental navigation, short-cutting, and planning
 
 The model suggests a role for grid cell activity in human spatial cognition. Since both self-motion related inputs (via grid cells) and sensory inputs converge onto place cells, grid cells can update the point of view and allow an agent to translate its imagined location. If imagery can inform degraded perception (e.g. in the dark), obstacles can be identified and a suitable path can be planned. Thus, although mental navigation cannot be equated with path integration, we suggest that they reflect a common grid cell-dependent mechanism, which is required when sensory inputs are absent or unreliable. Indeed, humans likely make use of spatial imagery even in apparently non-visual tasks such as triangle completion in darkness (Tcheang et al., 2011), and there is evidence for grid-like brain activity during mental navigation (Bellmund et al., 2016; Horner et al. 2016).
 
@@ -289,7 +444,7 @@ The model of mental navigation provides a mechanistic neural-level account of so
 
 Grid cells have been proposed to support the computation of vectors to a goal (Kubie and Fenton, 2012; Erdem and Hasselmo, 2012; Bush et al., 2015; Stemmler et al., 2015). That is, they can plan trajectories across known and potentially unknown terrain (shortcuts). We proposed that grid cells recruit new hippocampal cells (future place cells) in previously unexplored parts of a familiar environment (Figure 13 and Video 13). Planning a trajectory across unexplored space engenders preplay-like activity in place cells (Dragoi and Tonegawa, 2011; Ólafsdóttir et al., 2015), whereas mental navigation is reminiscent of ‘replay’ (Wilson and McNaughton, 1994; Foster and Wilson, 2006; Diba and Buzsáki, 2007; Karlsson and Frank, 2009; Carr et al., 2011) or ‘forward sweeps (Johnson and Redish, 2007; Pfeiffer and Foster, 2015), although the faster propagation speed (e.g. during sharp wave ripples) of these sequences of place cell activity are beyond the scope of the present model. Nevertheless, the model suggests that sweeps of activity in the grid cell population may play are role in these aspects of place cell firing, and could correspond to route planning (Kubie and Fenton, 2012; Erdem and Hasselmo, 2012; Bush et al., 2015; Yamamoto and Tonegawa, 2017).
 
-## Conclusions
+### Conclusions
 
 It has been argued that the MTL-retrosplenial-parietal system supports the construction of coherent scenes (Burgess et al., 2001b; Byrne et al., 2007; Hassabis et al., 2007; Schacter et al., 2007; Buckner, 2010). However, if recollection corresponds to the (re-)construction of something akin to a perceptual experience (the defining characteristic of episodic memory; Tulving 1985), then this places strong spatial constraints on how episodic memory works. A vast number of different combinations of information could be retrieved from the body of long-term knowledge in the MTL, but only a small subset would be consistent with a single point of view, making the episodic ‘re-experiencing’ of events or visuo-spatial imagery congruent with perceptual experiences. The BB-model combines this insight with established knowledge and new hypotheses about how location, orientation, and surrounding environmental features are associated and represented by neural population activity.
 

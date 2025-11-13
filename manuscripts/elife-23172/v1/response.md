@@ -41,9 +41,7 @@ The co‐localisation of Ambra1 at focal adhesions has been quantified and COSTE
 
 6) Cells in Figure 2 look morphologically distinct (larger nuclei etc.) after FAK depletion and indeed the most noticeable difference in Ambra1 is its increased nuclear staining. A relatively small proportion of Ambra1 is detected at autophagosomes in contrast to the large and increased amounts detected in the nucleus of FAK-/- cells. This should be discussed with respect to the authors proposed conclusions.
 
-We do not see any consistent general differences in nuclear morphology or nuclear size. To be sure, we have now measured the size of the nuclei in FAK‐WT and ‐/‐ cells and could not detect any difference (Author response image 1). However, we do believe that Ambra1 is probably also in the nucleus, since biochemical purification of nuclei, via fractionation and isolation through sucrose cushions, flowed by immunoblotting, suggests Ambra1 is in the nucleus irrespective of FAK status. We have added the latter evidence to Figure 2—figure supplement 1A,B.10.7554/eLife.23172.025Author response image 1.Nuclear size comparisons in FAK-WT and FAK -/- cells.DOI: http://dx.doi.org/10.7554/eLife.23172.025
-
-DOI: http://dx.doi.org/10.7554/eLife.23172.025
+We do not see any consistent general differences in nuclear morphology or nuclear size. To be sure, we have now measured the size of the nuclei in FAK‐WT and ‐/‐ cells and could not detect any difference (Author response image 1). However, we do believe that Ambra1 is probably also in the nucleus, since biochemical purification of nuclei, via fractionation and isolation through sucrose cushions, flowed by immunoblotting, suggests Ambra1 is in the nucleus irrespective of FAK status. We have added the latter evidence to Figure 2—figure supplement 1A,B.10.7554/eLife.23172.025Author response image 1.Nuclear size comparisons in FAK-WT and FAK -/- cells.
 
 The size of nuclei from 50 SCC FAK-WT and -/- cells was measured using ImageJ. Error bars, s.d.
 

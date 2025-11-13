@@ -13,10 +13,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00240q980 Department of Physics and Astronomy, University of Padova Padova Italy
-2. https://ror.org/013meh722 Centre for Misfolding Diseases, Department of Chemistry, University of Cambridge Cambridge United Kingdom
-3. https://ror.org/00z34yn88 National Institute for Nuclear Physics (INFN), Padova Section Padova Italy
-4. https://ror.org/00240q980 Department of Biomedical Sciences, University of Padova Padova Italy
+1. Department of Physics and Astronomy, University of Padova Padova Italy ([ROR:00240q980](https://ror.org/00240q980))
+2. Centre for Misfolding Diseases, Department of Chemistry, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+3. National Institute for Nuclear Physics (INFN), Padova Section Padova Italy ([ROR:00z34yn88](https://ror.org/00z34yn88))
+4. Department of Biomedical Sciences, University of Padova Padova Italy ([ROR:00240q980](https://ror.org/00240q980))
 
 † Corresponding author
 
@@ -42,53 +42,111 @@ Finally, we note that methods to assess the critical concentration are crucial f
 
 ## Results
 
-## Formulation of the scaling ansatz
+### Formulation of the scaling ansatz
 
 Empirical evidence indicates that protein self-assembly into liquid-like condensates is characterized by: (i) a phase separation transition at a concentration ρc , (ii) a formation of droplets of sizeable dimensions already below ρc , and (iii) a droplet size distribution that, after an initial transient, does not change with the experimental observation time, although individual droplets can form, grow, shrink, and dissolve. An initial analysis of droplet size distributions observed experimentally led us to ask whether the region near the transition could be described in terms of a scaling theory, as commonly done for critical phenomena (Shimobayashi et al., 2021), as summarized above. We also note that this approach is analogous to analysing the cluster size distribution in a percolation problem (Stauffer and Aharony, 2018).
 
-In our analysis, we called P > (s|ρ) the survival distribution function (SDF = 1 - CDF, where CDF is the cumulative distribution function) corresponding to the probability to observe a droplet of size greater than s, when the concentration is ρ. The distance from the critical concentration ρc is measured in terms of the dimensionless variable ρ~ = (ρ − ρc)/ρc , which also allows to compare data from different experiments, as explained below. P > (s|ρ) in general depends separately on s, ρ, and many other parameters characterizing the process, including temperature. However, if scale invariance holds in the vicinity of ρc, that is when |ρ~| is small and the correlation length of the system is large enough, we would expect P > (s|ρ) to depend on ρ and on other details pertaining to the microscopic scales only through the characteristic droplet size, sc . The characteristic size sc is defined, apart from a proportionality constant (see below), as the ratio of the second to the first moment of the droplet size distribution. This leads us to formulate the following scaling ansatz (Stauffer and Aharony, 2018).(1)P>(s|ρ)=s−αf(ssc)
+In our analysis, we called P > (s|ρ) the survival distribution function (SDF = 1 - CDF, where CDF is the cumulative distribution function) corresponding to the probability to observe a droplet of size greater than s, when the concentration is ρ. The distance from the critical concentration ρc is measured in terms of the dimensionless variable $ρ~$ = (ρ − ρc)/ρc , which also allows to compare data from different experiments, as explained below. P > (s|ρ) in general depends separately on s, ρ, and many other parameters characterizing the process, including temperature. However, if scale invariance holds in the vicinity of ρc, that is when $|ρ~|$ is small and the correlation length of the system is large enough, we would expect P > (s|ρ) to depend on ρ and on other details pertaining to the microscopic scales only through the characteristic droplet size, sc . The characteristic size sc is defined, apart from a proportionality constant (see below), as the ratio of the second to the first moment of the droplet size distribution. This leads us to formulate the following scaling ansatz (Stauffer and Aharony, 2018).
 
-where sc depends on ρ, and it is expected to diverge at the critical concentration as (Brankov et al., 2000; Stauffer and Aharony, 2018), (2)sc=a|ρ−ρcρc|−φ=a|ρ~|−φ
+$$
+P_{>}(s|ρ)=s^{−\alpha}f(\frac{s}{s_{c}})
+$$
+
+where sc depends on ρ, and it is expected to diverge at the critical concentration as (Brankov et al., 2000; Stauffer and Aharony, 2018)
+
+$$
+s_{c}=a|\frac{ρ−ρ_{c}}{ρ_{c}}|^{−\phi}=a|ρ~|^{−\phi}
+$$
 
 where α ≥ 0 and φ > 0 are critical exponents, a is a constant and f is the so-called scaling function (Brankov et al., 2000).
 
 Thus, the scaling of the SDF is equivalent to saying that, apart from the singular behaviour s−α, the remaining s and ρ dependence occurs only through the ratio s/sc. All extra dependencies are encapsulated in sc through the constant a, ρc and, possibly, on the specific form of the scaling function f. A consequence of scaling and singular behaviour described by Equation 2, that is the divergence of the characteristic size of the droplets, is that details of any specific system may not affect the value of the critical exponents, which are therefore expected to be universal, that is independent of specific details of the system.
 
-To determine the exponents α and φ, we introduce the moments of P>(s∣ρ) for k > 0:(3)⟨sk⟩=∫0∞sk⋅⟮−dP>(s∣ρ)ds⟯ds=ck⋅sck−α
+To determine the exponents α and φ, we introduce the moments of $P_{>}(s∣ρ)$ for k > 0:
 
-where the scaling ansatz Equation 1 has been used in the last step and ck is given byck=k∫0∞xk−1−αf(x)dx
+$$
+⟨s^{k}⟩=\int_{0}^{∞}s^{k}⋅⟮−\frac{dP_{>}(s∣ρ)}{ds}⟯ds=c_{k}⋅s_{c}^{k−\alpha}
+$$
 
-which depends on the function f but is independent of ρ~. From Equation 3, we deduce that(4)⟨sk+1⟩⟨sk⟩=ck+1ck⋅sc=ck+1ck⋅a|ρ~|−φ
+where the scaling ansatz Equation 1 has been used in the last step and ck is given by
 
-If the scaling ansatz of Equation 1 is correct, by plotting the ratio of moments ⟨sk+1⟩/⟨sk⟩ for various values of k as a function of 1/|ρ~| in a double logarithmic scale, we should obtain straight parallel lines with slope φ and intercept ln(ack+1/ck).
+$$
+c_{k}=k\int_{0}^{∞}x^{k−1−\alpha}f(x)dx
+$$
 
-## Scaling behaviour of the droplet size distributions of FUS
+which depends on the function f but is independent of $ρ~.$ From Equation 3, we deduce that
 
-We investigated the validity the ansatz in Equation 2 using experimental data on the RNA-binding protein FUS, which are available for both the untagged and the SNAP-tagged protein (Kar et al., 2022; Supplementary file 1). We calculated the SDF, Equation 2, and its moments, Equation 3. We then plotted the moment ratios versus the inverse distance from the critical concentration 1/|ρ~| in double logarithmic scale (Figure 1). We used the estimates of the critical concentrations, ρc = 5.0 μM for FUS and ρc = 5.4 μM for SNAP-tagged FUS, obtained below, in a self-consistency check of the validity of the scaling ansatz. We observed that the moment ratios at different distances from the critical concentration fall onto straight lines, as predicted by the scaling ansatz. In addition, the weighted average slope (see Equations 15 and 16 below) of the lines for different moment ratios is 0.95 ± 0.05 for untagged FUS, and 0.95 ± 0.05 for SNAP-tagged FUS, which is in good agreement with φ = 1 for the exponent in the scaling ansatz in Equation 1 (Figure 1A, C).
+$$
+\frac{⟨s^{k+1}⟩}{⟨s^{k}⟩}=\frac{c_{k+1}}{c_{k}}⋅s_{c}=\frac{c_{k+1}}{c_{k}}⋅a|ρ~|^{−\phi}
+$$
+
+If the scaling ansatz of Equation 1 is correct, by plotting the ratio of moments ⟨sk+1⟩/⟨sk⟩ for various values of k as a function of 1/|$ρ~$| in a double logarithmic scale, we should obtain straight parallel lines with slope φ and intercept ln(ack+1/ck).
+
+### Scaling behaviour of the droplet size distributions of FUS
+
+We investigated the validity the ansatz in Equation 2 using experimental data on the RNA-binding protein FUS, which are available for both the untagged and the SNAP-tagged protein (Kar et al., 2022; Supplementary file 1). We calculated the SDF, Equation 2, and its moments, Equation 3. We then plotted the moment ratios versus the inverse distance from the critical concentration 1/|$ρ~$| in double logarithmic scale (Figure 1). We used the estimates of the critical concentrations, ρc = 5.0 μM for FUS and ρc = 5.4 μM for SNAP-tagged FUS, obtained below, in a self-consistency check of the validity of the scaling ansatz. We observed that the moment ratios at different distances from the critical concentration fall onto straight lines, as predicted by the scaling ansatz. In addition, the weighted average slope (see Equations 15 and 16 below) of the lines for different moment ratios is 0.95 ± 0.05 for untagged FUS, and 0.95 ± 0.05 for SNAP-tagged FUS, which is in good agreement with φ = 1 for the exponent in the scaling ansatz in Equation 1 (Figure 1A, C).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/94214/elife-94214-fig1-v1.jpg)
 
-**Figure 1.:** Determination of the exponent φ for FUS (A) and SNAP-tagged FUS (C). The ratios of the average moments of the droplet sizes (<s>/<k+1s > , at kk = 0.5, 1, 1.5, 2, Equation 4) are represented at various distances from the critical concentration (). The exponent |ρ~|φ for each value of k was determined by error-weighted linear regressions. The exponent φ and its error were determined as mean and standard deviation of the three independent measurements (Equations 15 and 16). Error bars are shown in inset for graphical clarity. Determination of the exponent α for FUS (B) and SNAP-tagged FUS (D). The mean of the droplet size distributions is plotted at various distances from the critical concentration (). The value of the exponent |ρ~|m was determined by error-weighted linear regression (Equation 6), using  , where the errors were standard deviations of the three independent measurements (φ=1Equation 16). Error bars, which were obtained as the standard deviation of the three independent measurements are shown in inset for graphical clarity. Error-weighted linear regressions are performed in both cases excluding the data point at the lowest concentration ρ = 0.125 μM. The fit corresponding to the scaling ansatz, compatible with φ = 1 and α = 0, is represented by a dashed grey line with a slope of 1.
+**Figure 1.:** Determination of the exponent φ for FUS (A) and SNAP-tagged FUS (C). The ratios of the average moments of the droplet sizes (<sk+1>/<sk > , at k = 0.5, 1, 1.5, 2, Equation 4) are represented at various distances from the critical concentration ($|ρ~|$). The exponent φ for each value of k was determined by error-weighted linear regressions. The exponent φ and its error were determined as mean and standard deviation of the three independent measurements (Equations 15 and 16). Error bars are shown in inset for graphical clarity. Determination of the exponent α for FUS (B) and SNAP-tagged FUS (D). The mean of the droplet size distributions is plotted at various distances from the critical concentration ($|ρ~|$). The value of the exponent m was determined by error-weighted linear regression (Equation 6), using  $\phi=1$, where the errors were standard deviations of the three independent measurements (Equation 16). Error bars, which were obtained as the standard deviation of the three independent measurements are shown in inset for graphical clarity. Error-weighted linear regressions are performed in both cases excluding the data point at the lowest concentration ρ = 0.125 μM. The fit corresponding to the scaling ansatz, compatible with φ = 1 and α = 0, is represented by a dashed grey line with a slope of 1.
 
-Having determined the exponent φ, we can also determine the exponent α using Equation 3  (5)⟨sk⟩=ck⋅sck−α∝|ρ−ρcρc|−φ⋅(k−α)
+Having determined the exponent φ, we can also determine the exponent α using Equation 3
 
-The exponent α is then calculated from  (6)m=k-αφ→α=k-mφ
+$$
+⟨s^{k}⟩=c_{k}⋅s_{c}^{k−\alpha}∝|\frac{ρ−ρ_{c}}{ρ_{c}}|^{−\phi⋅(k−\alpha)}
+$$
 
-where m is the slope of the linear fit of the double logarithmic plot of <s> (the first moment, k = 1) versus 1/|ρ~|. We then plotted the mean droplet size, <s>, versus the inverse distance from the critical concentration 1/|ρ~| on a natural logarithm scale, which could be fitted using a line with a slope m = 0.99 ± 0.05 for untagged FUS, and 0.93 ± 0.07 for SNAP-tagged FUS (Figure 1B, D), which is consistent with m = 1. Using the value of φ = 1, determined based on Equation 4, we obtain α = 0. Taken together, these data support the validity of the scaling ansatz of Equation 1.
+The exponent α is then calculated from
 
-## The droplet size distribution of FUS is log-normal
+$$
+m=k-\alpha\phi→\alpha=k-\frac{m}{\phi}
+$$
 
-The above analysis suggests that the droplet size distribution may follow a log-normal distribution. The scaling ansatz of Equation 1 for the SDF is equivalent to the following scaling for the probability density distribution(7)P(s∣ρ)=−dP>(s∣ρ)ds=s−α−1⋅F(s/sc),sc∝|ρ~|−φ
+where m is the slope of the linear fit of the double logarithmic plot of <s> (the first moment, k = 1) versus $1/|ρ~|$. We then plotted the mean droplet size, <s>, versus the inverse distance from the critical concentration $1/|ρ~|$ on a natural logarithm scale, which could be fitted using a line with a slope m = 0.99 ± 0.05 for untagged FUS, and 0.93 ± 0.07 for SNAP-tagged FUS (Figure 1B, D), which is consistent with m = 1. Using the value of φ = 1, determined based on Equation 4, we obtain α = 0. Taken together, these data support the validity of the scaling ansatz of Equation 1.
 
-where f, the scaling function in Equation 1, and F are related as follows(8)f(z)=zα∫z∞x−α−1F(x)dx
+### The droplet size distribution of FUS is log-normal
 
-The log-normal droplet size distribution P(s|ρ) is(9a)P(s∣ρ)=s−11σ2πexp{−(ln⁡(s/s0))22σ2}
+The above analysis suggests that the droplet size distribution may follow a log-normal distribution. The scaling ansatz of Equation 1 for the SDF is equivalent to the following scaling for the probability density distribution
 
-with  (9b)s0≡sce−3σ2/2,wheresc=⟨s2⟩⟨s⟩
+$$
+P(s∣ρ)=\frac{−dP_{>}(s∣ρ)}{ds}=s^{−\alpha−1}⋅F(s/s_{c}),s_{c}∝|ρ~|^{−\phi}
+$$
 
-being the characteristic droplet size as defined above. Consequently, the size SDF is(10)P>(s|ρ)=12⋅erfc(ln⁡(s/s0)σ⋅2)
+where f, the scaling function in Equation 1, and F are related as follows
 
-The values of s0 and σ can be determined as the average and the variance, of ln(s/u) obtained at each concentration:ln⁡(s0/u)≡⟨ln⁡(s/u)⟩ (11)σ2≡Var(ln⁡(s/u))≡⟨ln2⁡(s/u)⟩−⟨ln⁡(s/u)⟩2
+$$
+f(z)=z^{\alpha}\int_{z}^{∞}x^{−\alpha−1}F(x)dx
+$$
+
+The log-normal droplet size distribution P(s|ρ) is
+
+$$
+P(s∣ρ)=s^{−1}\frac{1}{\sigma\sqrt{2\pi}}exp{−\frac{(ln⁡(s/s_{0}))^{2}}{2\sigma^{2}}}
+$$
+
+with
+
+$$
+s_{0}≡s_{c}e^{−3\sigma^{2}/2},wheres_{c}=\frac{⟨s^{2}⟩}{⟨s⟩}
+$$
+
+being the characteristic droplet size as defined above. Consequently, the size SDF is
+
+$$
+P_{>}(s|ρ)=\frac{1}{2}⋅erfc(\frac{ln⁡(s/s_{0})}{\sigma⋅\sqrt{2}})
+$$
+
+The values of s0 and σ can be determined as the average and the variance, of ln(s/u) obtained at each concentration:
+
+$$
+ln⁡(s_{0}/u)≡⟨ln⁡(s/u)⟩
+$$
+
+
+
+$$
+\sigma^{2}≡Var(ln⁡(s/u))≡⟨ln^{2}⁡(s/u)⟩−⟨ln⁡(s/u)⟩^{2}
+$$
 
 where u is an arbitrary (and irrelevant) constant with the same units as s. In the following, when not stated, it is implicitly assumed that u = 1 in the same units as s. The droplet sizes follow a log-normal distribution only if the SDFs or, equivalently, the size distribution functions, multiplied by s, collapse when plotted versus Equation 9a or Equation 10 with the values of s0 and σ of each droplet size distributions obtained at different concentrations (Equation 11). We determined s0 and σ values for each distribution (Figure 2A, B) and plotted the properly rescaled size distribution functions versus [ln(s/s0)]/σ (Figure 2C). We observed that the size distribution functions collapsed for both FUS and SNAP-tagged FUS (Figure 2C). Furthermore, the collapsed curve overlapped with the analytic log-normal distribution we computed with s0 = 1, σ = 1, the normal distribution in the rescaled variables.
 
@@ -98,45 +156,63 @@ where u is an arbitrary (and irrelevant) constant with the same units as s. In t
 
 The observed collapse supports the observation that droplet size distributions from different experiments follows a log-normal behaviour.
 
-## Independence of the variance of the distribution from the concentration of FUS
+### Independence of the variance of the distribution from the concentration of FUS
 
-The log-normal behaviour described above is consistent with the scale invariance underlying Equation 1 if the variance of the log-normal distribution, σ, is independent of ρ or, equivalently, of ρ~ (Giometto et al., 2013). Indeed, comparing Equation 1 with Equation 7, Equation 9a, Equation 9b; and Equation 10 we obtain that the scaling invariance holds withf(x)=12erfc[ln⁡(xe3σ2/2)σ2](12)F(x)=1σ2πexp{−[ln⁡(xe3σ2/2)σ2]2}
+The log-normal behaviour described above is consistent with the scale invariance underlying Equation 1 if the variance of the log-normal distribution, σ, is independent of ρ or, equivalently, of $ρ~$ (Giometto et al., 2013). Indeed, comparing Equation 1 with Equation 7, Equation 9a, Equation 9b; and Equation 10 we obtain that the scaling invariance holds with
 
-with α = 0 and φ = 1 (Figure 1). Notice that the log-normal distribution implies that α = 0 whereas the value of φ is not determined a priori. Furthermore, the kth moment of the log-normal distribution is(13)⟨sk⟩=sckeσ2k(k−3)/2,
+$$
+f(x)=\frac{1}{2}erfc[\frac{ln⁡(xe^{3\sigma^{2}/2})}{\sigma\sqrt{2}}]
+$$
 
-which, compared with the scaling prediction Equation 3, is also consistent with α = 0, appropriate for the log-normal, and(14)ckeσ2kk-3/2
 
-which is independent of ρ~ if σ is independent of ρ~, see Equation 3.
 
-This prediction is verified in Figure 2B, where the σ (Hyman et al., 2014) values are shown to be nearly uniform at different concentrations, with the exception of the data at the lowest concentration values, that is those furthest away from the critical concentration. These results are consistent with the scaling ansatz in the vicinity of  ρ~=0.
+$$
+F(x)=\frac{1}{\sigma\sqrt{2\pi}}exp{−[\frac{ln⁡(xe^{3\sigma^{2}/2})}{\sigma\sqrt{2}}]^{2}}
+$$
+
+with α = 0 and φ = 1 (Figure 1). Notice that the log-normal distribution implies that α = 0 whereas the value of φ is not determined a priori. Furthermore, the kth moment of the log-normal distribution is
+
+$$
+⟨s^{k}⟩=s_{c}^{k}e^{\sigma^{2}k(k−3)/2},
+$$
+
+which, compared with the scaling prediction Equation 3, is also consistent with α = 0, appropriate for the log-normal, and
+
+$$
+c_{k}e^{\sigma^{2}kk-3/2}
+$$
+
+which is independent of $ρ~$ if σ is independent of $ρ~$, see Equation 3.
+
+This prediction is verified in Figure 2B, where the σ (Hyman et al., 2014) values are shown to be nearly uniform at different concentrations, with the exception of the data at the lowest concentration values, that is those furthest away from the critical concentration. These results are consistent with the scaling ansatz in the vicinity of  $ρ~=0$.
 
 Our analysis does not exclude the possibility that σ might depend on specific experimental conditions, even though the data that we analysed are suggestive of at most a weak dependence. We note that such dependence, even if present, does not invalidate the scaling, as long as the exponents do not depend on the experimental conditions.
 
-## Estimation of the critical concentration of FUS using the scale invariance
+### Estimation of the critical concentration of FUS using the scale invariance
 
-The fact that the scaling ansatz is satisfied for different set of experiments opens a possibility to estimate the critical concentration. The scaling with φ = 1 predicts ⟨sk⟩-1k versus ρ to be a straight line with a slope depending on k. It is important to note that this is the consequence only of the scaling ansatz and not of the log-normal distribution. The line should intersect the ρ-axis at the critical concentration providing an estimate of ρc.
+The fact that the scaling ansatz is satisfied for different set of experiments opens a possibility to estimate the critical concentration. The scaling with φ = 1 predicts $⟨s_{k}⟩^{\frac{-1}{k}}$ versus ρ to be a straight line with a slope depending on k. It is important to note that this is the consequence only of the scaling ansatz and not of the log-normal distribution. The line should intersect the ρ-axis at the critical concentration providing an estimate of ρc.
 
-We illustrate this process using the FUS data by plotting ⟨sk⟩-1k versus ρ. As expected, for different values of k we obtained a straight line fit of the points near ρc (Figure 3). Due to experimental uncertainties, the various lines, one for each value of k, lead to a slightly different estimate of ρc. The average of the estimated ρc values is 5.0 ± 0.2 μM for FUS and 5.4 ± 0.4 μM for SNAP-tagged FUS (Figure 3). The different ρc values predicted based on the scaling ansatz using different k values enable the estimation of error of the predicted critical concentration (Figure 3). Both estimates are higher than the values of ρc originally reported (ρc = 2 μM of untagged and ρc = 3 μM of tagged FUS; Kar et al., 2022) but consistent with them once taken into account the behaviour of the plateau of the absorbance of a spin-down assay used in that work. We also note that our estimates are compatible with other ones recently reported (Patel et al., 2015).
+We illustrate this process using the FUS data by plotting $⟨s_{k}⟩^{\frac{-1}{k}}$ versus ρ. As expected, for different values of k we obtained a straight line fit of the points near ρc (Figure 3). Due to experimental uncertainties, the various lines, one for each value of k, lead to a slightly different estimate of ρc. The average of the estimated ρc values is 5.0 ± 0.2 μM for FUS and 5.4 ± 0.4 μM for SNAP-tagged FUS (Figure 3). The different ρc values predicted based on the scaling ansatz using different k values enable the estimation of error of the predicted critical concentration (Figure 3). Both estimates are higher than the values of ρc originally reported (ρc = 2 μM of untagged and ρc = 3 μM of tagged FUS; Kar et al., 2022) but consistent with them once taken into account the behaviour of the plateau of the absorbance of a spin-down assay used in that work. We also note that our estimates are compatible with other ones recently reported (Patel et al., 2015).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/94214/elife-94214-fig3-v1.jpg)
 
-**Figure 3.:** Critical concentration of FUS (5.0 ± 0.2 μM) (A) and SNAP-tagged FUS (5.4 ± 0.4 μM) (B). The scaling model predicts that the function of the moments plotted versus the concentration ρ becomes a straight line near the critical concentration ρ and intersects the cρ-axis at ρ, independently of the value of ck. Error-weighted linear regressions are performed in both cases excluding the data point at the lowest concentration ρ = 0.125 μM. The resulting estimate of the critical concentration is shown in green along with the corresponding standard deviation, estimated from three independent measurements.
+**Figure 3.:** Critical concentration of FUS (5.0 ± 0.2 μM) (A) and SNAP-tagged FUS (5.4 ± 0.4 μM) (B). The scaling model predicts that the function of the moments plotted versus the concentration ρ becomes a straight line near the critical concentration ρc and intersects the ρ-axis at ρc, independently of the value of k. Error-weighted linear regressions are performed in both cases excluding the data point at the lowest concentration ρ = 0.125 μM. The resulting estimate of the critical concentration is shown in green along with the corresponding standard deviation, estimated from three independent measurements.
 
 We then used both the values of ρc to probe the collapse of the size distribution functions (Figure 4). We observed that both in cases of untagged and tagged FUS, the SDFs collapsed with our estimated value of ρc (Figure 4).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/94214/elife-94214-fig4-v1.jpg)
 
-**Figure 4.:** If the scaling ansatz of Equation 2 holds, the standard deviation σ of the log-normal distribution should not depend on the distance from the critical concentration, and a collapse should be achieved by rescaling the size with the distance  from the critical concentration. (|ρ~|A, C) Droplet size distributions derived from the experimental data of untagged FUS at 0.125, 0.25, 0.5, 1.0, and 2.0 μM concentrations (A) and SNAP-tagged FUS at 0.125, 0.25, 0.5, 1.0, 1.5, 2.0, 2.5, and 3.0 μM concentrations (C), and their standard error of the mean from three independent measurements (Stender et al., 2021). (B, D) Collapse of the droplet size distributions rescaled by the estimated critical concentration. The error bars show the standard error of the mean from the three independent measurements (Stender et al., 2021).
+**Figure 4.:** If the scaling ansatz of Equation 2 holds, the standard deviation σ of the log-normal distribution should not depend on the distance from the critical concentration, and a collapse should be achieved by rescaling the size with the distance $|ρ~|$ from the critical concentration. (A, C) Droplet size distributions derived from the experimental data of untagged FUS at 0.125, 0.25, 0.5, 1.0, and 2.0 μM concentrations (A) and SNAP-tagged FUS at 0.125, 0.25, 0.5, 1.0, 1.5, 2.0, 2.5, and 3.0 μM concentrations (C), and their standard error of the mean from three independent measurements (Stender et al., 2021). (B, D) Collapse of the droplet size distributions rescaled by the estimated critical concentration. The error bars show the standard error of the mean from the three independent measurements (Stender et al., 2021).
 
 These results indicate that the scaling model can be used to estimate the critical concentration based on the distribution of droplet sizes.
 
-## Estimation of the critical concentration of α-synuclein using the scale invariance
+### Estimation of the critical concentration of α-synuclein using the scale invariance
 
 As α-synuclein droplets (called clusters) were recently reported below the critical concentration (Ray et al., 2023), we aimed at characterizing whether such droplets also follow scale-invariant size distribution. Using A90C α-synuclein labelled with Alexa Fluor 647, we monitored droplet formation as previously described (Dada et al., 2023). We measured droplet sizes at 5% PEG concentration 10 min after detection of liquid-like condensates using increasing concentrations of α-synuclein (20, 40, 50, 60, 75, 80, and 100 μM) (Supplementary file 2). Using k values of 0.25, 0.75, 1.25, 1.75, the critical exponents in the scaling ansatz (Equations 4 and 6), obtaining φ = 1.3 ± 0.2 (Figure 5A) and m = 1 − α = 0.9 ± 0.2 (Figure 5B). As control, we also determined the critical exponents using the scaling ansatz in a different way, using Equation 19, obtaining φ = 1.1 ± 0.2 and m = 1 − α = 0.8 ± 0.2, corroborating the validity of the scale-invariant model. We then estimated the critical concentration using the two methods obtaining ρc = 137 ± 10 μM, using Equation 18 (Figure 5C) and ρc = 125 ± 7 μM, using Equation 19 (Figure 5D). Images of the droplets at the different concentrations are shown in Figure 6A. The droplet size distributions are stationary below the critical concentration, as expected (Figure 6B, C; Supplementary file 3).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/94214/elife-94214-fig5-v1.jpg)
 
-**Figure 5.:** (A) Determination of the critical exponent φ. The ratios of the average moments of the droplet sizes (<s>/<k+1s>, at kk = 0.25, 0.75, 1.25, 1.75, Equation 4) are represented at various distances  from the critical concentration. The exponent |ρ~|φ and its error for each value of k were determined as a mean and standard deviation of the three independent measurements (Equations 15 and 16). Error bars are shown in inset for clarity. (B) Determination of the critical exponent m. The mean of the droplet size distributions is plotted at various distances  from the critical concentration. The value of the exponent |ρ~|α was determined by error-weighted linear regression (Equation 6), using  , where the errors were standard deviations of the five independent measurements (φ=1Equation 16). Error bars, which were obtained as the standard deviation of the five independent measurements are shown in inset for clarity. Error-weighted linear regressions were performed. The fit corresponding to the scaling ansatz, compatible with φ = 1 and α = 0, is represented by a scattered grey line with a slope of 1. Determination of the critical concentration for α-synuclein using the scaling ansatz in two different ways, either using Equation 18 (C), resulting in ρ = 137 ± 10 μM, or cEquation 19 (D), resulting in ρ = 125 ± 7 μM, which are consistent within errors. The scaling model predicts that the function of the moments plotted versus the concentration cρ becomes a straight line near the critical concentration ρ and intersects the cρ-axis at ρ, independently of the value of ck. Error-weighted linear regressions were performed. The resulting estimates of the critical concentration are shown in green along with the corresponding standard deviation, estimated from four independent measurements. In panel D, φ was constrained to 1.0 using Equation 19.
+**Figure 5.:** (A) Determination of the critical exponent φ. The ratios of the average moments of the droplet sizes (<sk+1>/<sk>, at k = 0.25, 0.75, 1.25, 1.75, Equation 4) are represented at various distances $|ρ~|$ from the critical concentration. The exponent φ and its error for each value of k were determined as a mean and standard deviation of the three independent measurements (Equations 15 and 16). Error bars are shown in inset for clarity. (B) Determination of the critical exponent m. The mean of the droplet size distributions is plotted at various distances $|ρ~|$ from the critical concentration. The value of the exponent α was determined by error-weighted linear regression (Equation 6), using  $\phi=1$, where the errors were standard deviations of the five independent measurements (Equation 16). Error bars, which were obtained as the standard deviation of the five independent measurements are shown in inset for clarity. Error-weighted linear regressions were performed. The fit corresponding to the scaling ansatz, compatible with φ = 1 and α = 0, is represented by a scattered grey line with a slope of 1. Determination of the critical concentration for α-synuclein using the scaling ansatz in two different ways, either using Equation 18 (C), resulting in ρc = 137 ± 10 μM, or Equation 19 (D), resulting in ρc = 125 ± 7 μM, which are consistent within errors. The scaling model predicts that the function of the moments plotted versus the concentration ρ becomes a straight line near the critical concentration ρc and intersects the ρ-axis at ρc, independently of the value of k. Error-weighted linear regressions were performed. The resulting estimates of the critical concentration are shown in green along with the corresponding standard deviation, estimated from four independent measurements. In panel D, φ was constrained to 1.0 using Equation 19.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/94214/elife-94214-fig6-v1.jpg)
 
@@ -158,7 +234,7 @@ Quite generally, the existence of scale invariance for the droplet size distribu
 
 As a practical consequence of the scaling model, the moments of the droplet size distribution can be used to obtain an estimate of the critical concentration for phase separation.
 
-## Conclusions and perspectives
+### Conclusions and perspectives
 
 It has been challenging to determine critical concentrations in the study of protein phase separation, particularly in cell systems. As a consequence, it remains still largely unclear when the observed protein droplets are formed at subsaturation concentrations, and when they represent phase-separated condensates at supersaturation concentrations. To make progress towards understanding this problem, we have analysed the probability distributions of the droplet sizes at different concentrations. The scale-invariant log-normal behaviour that we have reported offers a tool to determine the critical concentration. This approach should enable the positioning of a system with respect to the phase boundary when experimental data could be obtained about the length (1D), area (2D), or volume (3D) of the condensates. We anticipate that this method will find applications in the study of protein condensates in the cell.
 
@@ -166,40 +242,60 @@ We also note that the scale invariance of the droplet size distribution that we 
 
 ## Methods
 
-## Expression and purification of α-synuclein
+### Expression and purification of α-synuclein
 
 Human wild-type α-synuclein and A90C cysteine variants were purified from Escherichia coli BL21 (DE3)-gold (Agilent Technologies) expressing plasmid pT7-7 encoding for α-synuclein as previously described (Dada et al., 2023; Fusco et al., 2014; Hardenberg et al., 2021). Following purification in 50 mM trisaminomethane-hydrochloride (Tris-HCl) at pH 7.4, α-synuclein was concentrated using Amicon Ultra-15 centrifugal filter units (Merck Millipore). The protein was subsequently labelled with a 1.5-fold molar excess of C5 maleimide-linked Alexa Fluor 647 (Invitrogen Life Technologies) overnight at 4°C with constant mixing. The excess dye was removed using an Amicon Ultra-15 centrifugal filter unit and used immediately for phase separation experiments.
 
-## Determination of the droplet distribution of α-synuclein
+### Determination of the droplet distribution of α-synuclein
 
 The experimental conditions were determined from a previously described phase boundary (Dada et al., 2023). To induce liquid droplet/condensate formation, wild-type α-synuclein was mixed with an A90C variant labelled with Alexa 647 at a 100:1 molar ratio in 50 mM Tris-HCl and 5% polyethylene glycol 10,000 (PEG) (Thermo Fisher Scientific). The final mixture was pipetted onto a 35-mm glass-bottom dish (P35G-1.5-20-C; MatTek Life Sciences) and immediately imaged on Leica Stellaris Will inverted stage scanning confocal microscope using a 40×/1.3 HC PL Apo CS oil objective (Leica Microsystems) at room temperature. The excitation wavelength was 633 nm for all experiments. For liquid droplet size characterization, images were captured 10 min post-liquid droplet formation. To analyse the possible time dependence of the liquid droplet size distribution, phase separation was induced, and 5 min post onset of phase separation, the glass-bottom dish containing the experiment was sealed and closed to maintain a stable and controlled environment. Subsequently, images were captured at each designated time point. All images were processed and analysed in ImageJ (NIH). Images were analysed by applying a threshold function in ImageJ that excluded the background of the image and identified the liquid droplets as having a circularity of 0.8–1.The results are reported for five replicates (Supplementary file 2). At 50 mM concentrations the droplet sizes were monitored for 16 min (Supplementary file 3).
 
-## Determination of the droplet distributions of FUS
+### Determination of the droplet distributions of FUS
 
 The previously published data on FUS droplets (Kar et al., 2022) were used, where the fluorescence intensity of the FUS droplets was reported to be proportional to their diameters (Kar et al., 2022). The abundance of untagged FUS droplets formed at 0.125, 0.25, 0.5, and 1.0, 2.0 μM concentrations were measured by nanoparticle tracking analysis for 51 different droplet sizes with three repetitions for each measure (Kar et al., 2022). Similarly, the abundance of SNAP-tagged FUS droplets at 0.125, 0.25, 0.5, 1.0, 1.5, 2.0, 2.5, and 3.0 μM concentrations were measured for 64 different sizes with 3 repetitions for each measure (Kar et al., 2022). For each data point, the mean droplet abundance and the standard error of the mean from the three experimental replicates were reported. The SDF was computed as P>x = N>x /Ntot, where N>x is the number of droplets above size x, and Ntot is the number of droplets. The values of x were chosen according to the original data (Kar et al., 2022).
 
-## Determination of the critical exponents for FUS
+### Determination of the critical exponents for FUS
 
-We computed the kth moment of each droplet size, determined the average for each value of k and computed the ratios of the subsequent moments (Equation 4). We tested several k values from 0.25 to 3 in 0.25 increments, determined the moment ratios in each case. We selected four k values (k = 0.5, k = 1.0, k = 1.5, and k = 2.0) where the moment ratios at each concentration provided the best linear fit for both FUS and SNAP-tagged FUS. Then we generated a log–log plot of the moments and ρ~, the distance from the critical concentration (Figure 1). For each value of k, the points were estimated by taking the average of the computation done on the three independent measurements. The errors of the data points are estimated as the standard error of the mean. At each k value, we performed a linear regression between the points at each concentration (Kar et al., 2022) determining the slope, resulting in four φk values, with an associated error from the weighted linear regression. Given the independent observations φk with variance σk, the value of the exponent was obtained as the weighted average(15)φ¯=Σkφkσk2Σk1σk2
+We computed the kth moment of each droplet size, determined the average for each value of k and computed the ratios of the subsequent moments (Equation 4). We tested several k values from 0.25 to 3 in 0.25 increments, determined the moment ratios in each case. We selected four k values (k = 0.5, k = 1.0, k = 1.5, and k = 2.0) where the moment ratios at each concentration provided the best linear fit for both FUS and SNAP-tagged FUS. Then we generated a log–log plot of the moments and $ρ~$, the distance from the critical concentration (Figure 1). For each value of k, the points were estimated by taking the average of the computation done on the three independent measurements. The errors of the data points are estimated as the standard error of the mean. At each k value, we performed a linear regression between the points at each concentration (Kar et al., 2022) determining the slope, resulting in four $\phi_{k}$ values, with an associated error from the weighted linear regression. Given the independent observations $\phi_{k}$ with variance $\sigma_{k}$, the value of the exponent was obtained as the weighted average
 
-The error on the exponent φ was computed as(16)Var(φ¯)=1∑k1σk2
+$$
+\phi¯=\frac{Σ_{k}\frac{\phi_{k}}{\sigma_{k}^{2}}}{Σ_{k}\frac{1}{\sigma_{k}^{2}}}
+$$
 
-The exponent α was determined based on the log–log plot of the mean of the droplet size distribution at various distances from the critical concentration (|ρ~|) (Figure 1). We performed a linear regression weighted by the inverse of the variance of the data points corresponding, as previously, to the computed mean of the three independent experiments for each concentration (Equation 6) using  φ = 1. The error on the slope from the weighted linear regression is associated with the estimate of the exponent m. The exponent α is then derived using α = 1 − m.
+The error on the exponent $\phi$ was computed as
 
-At each concentration, from the distribution of ln(s) we determined s0 as <ln(s)> = ln(s0), and σ as the standard deviation of ln(s). At each concentration, we plotted the droplet size distribution function versus ln(s/s0)/σ (Equation 10) using the s0 and σ values determined from the corresponding droplet size distribution at the given concentration. The log-normal behaviour is demonstrated by the resulting collapse (Figure 2). Furthermore, the collapsed curves overlapped with a theoretical log-normal curve computed with s0 = 1, σ = 1, which is the normal distribution in the rescaled log variables.
+$$
+Var(\phi¯)=\frac{1}{\sumk\frac{1}{\sigma_{k}^{2}}}
+$$
 
-## Determination of the critical concentration for FUS
+The exponent α was determined based on the log–log plot of the mean of the droplet size distribution at various distances from the critical concentration ($|ρ~|$) (Figure 1). We performed a linear regression weighted by the inverse of the variance of the data points corresponding, as previously, to the computed mean of the three independent experiments for each concentration (Equation 6) using  $\phi$ = 1. The error on the slope from the weighted linear regression is associated with the estimate of the exponent m. The exponent α is then derived using α = 1 − m.
 
-The kth moment of the log-normal distribution (Equation 13) and the scaling ansatz with α = 0 (Equation 3) gives(17)(⟨sk⟩)−1k=1sce(3−k)σ22
+At each concentration, from the distribution of ln(s) we determined s0 as <ln(s)> = ln(s0), and σ as the standard deviation of ln(s). At each concentration, we plotted the droplet size distribution function versus $ln(s/s_{0})/\sigma$ (Equation 10) using the s0 and σ values determined from the corresponding droplet size distribution at the given concentration. The log-normal behaviour is demonstrated by the resulting collapse (Figure 2). Furthermore, the collapsed curves overlapped with a theoretical log-normal curve computed with s0 = 1, σ = 1, which is the normal distribution in the rescaled log variables.
 
-where sc=a⋅ρ-ρcρc-1, a is a proportionality constant independent of k, and σ is the standard deviation of the logarithm of the droplet probability size distribution. Therefore, (18)(⟨sk⟩)−1/k=1ae(3−k)σ22|ρ−ρcρc|
+### Determination of the critical concentration for FUS
+
+The kth moment of the log-normal distribution (Equation 13) and the scaling ansatz with α = 0 (Equation 3) gives
+
+$$
+(⟨s^{k}⟩)^{\frac{−1}{k}}=\frac{1}{s_{c}}e^{\frac{(3−k)\sigma^{2}}{2}}
+$$
+
+where $s_{c}=a⋅\frac{ρ-ρ_{c}}{ρ_{c}}^{-1}$, a is a proportionality constant independent of k, and σ is the standard deviation of the logarithm of the droplet probability size distribution. Therefore,
+
+$$
+(⟨s^{k}⟩)^{−1/k}=\frac{1}{a}e^{\frac{(3−k)\sigma^{2}}{2}}|\frac{ρ−ρ_{c}}{ρ_{c}}|
+$$
 
 plotted versus the concentration intersects the x-axis at the value of the critical concentration.
 
-## Determination of the critical exponents for α-synuclein
+### Determination of the critical exponents for α-synuclein
 
-For α-synuclein, the critical exponents were determined in two different ways, the first using the same method as for FUS (Equation 18), and the second using(19)(<sk><s>)−1/(k−1)=(c1ck)1/(k−1)1a|ρ−ρcρ|φ
+For α-synuclein, the critical exponents were determined in two different ways, the first using the same method as for FUS (Equation 18), and the second using
 
-## Determination of the critical concentration of α-synuclein
+$$
+(\frac{<s^{k}>}{<s>})^{−1/(k−1)}=(\frac{c_{1}}{c_{k}})^{1/(k−1)}\frac{1}{a}|\frac{ρ−ρ_{c}}{ρ}|^{\phi}
+$$
 
-As for the critical exponents, we determined the critical concentration of α-synuclein using the scaling ansatz in two different ways, either using Equation 18 or using Equation 19 with the constrain φ = 1. We plotted the moments of the droplet size (Equation 3) versus the concentration, using a range of values of k to cover majority of the data. Analogously to what happens in Figure 3, the lines plotted in Figure 5D intercept the x-axis on the same point, which corresponds to the critical concentration. We performed a linear regression weighted by the inverse variance, determining the intercept on the x-axis. For each value of k, we calculated the regression errors of both intercept and slopes. We estimated the critical concentration from each fit as the intercept calculated as ρc,i=−q/m, where q and m are the y-axis intercept and the slope retrieved by the fit, respectively, where the subscript i indicates each independent experiment. The estimated ρc was obtained as the mean of the different independent values ρc,i. The error on the estimate of ρc is obtained as the standard error of the mean of the ρc,i.
+### Determination of the critical concentration of α-synuclein
+
+As for the critical exponents, we determined the critical concentration of α-synuclein using the scaling ansatz in two different ways, either using Equation 18 or using Equation 19 with the constrain φ = 1. We plotted the moments of the droplet size (Equation 3) versus the concentration, using a range of values of k to cover majority of the data. Analogously to what happens in Figure 3, the lines plotted in Figure 5D intercept the x-axis on the same point, which corresponds to the critical concentration. We performed a linear regression weighted by the inverse variance, determining the intercept on the x-axis. For each value of k, we calculated the regression errors of both intercept and slopes. We estimated the critical concentration from each fit as the intercept calculated as $ρ_{c,i}=−q/m,$ where q and m are the y-axis intercept and the slope retrieved by the fit, respectively, where the subscript $i$ indicates each independent experiment. The estimated ρc was obtained as the mean of the different independent values ρc,i. The error on the estimate of $ρ_{c}$ is obtained as the standard error of the mean of the ρc,i.

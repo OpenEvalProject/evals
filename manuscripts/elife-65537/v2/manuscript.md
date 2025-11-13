@@ -43,11 +43,23 @@ In this study, we used two approaches to gain a clearer understanding of how FPA
 
 ## Results
 
-## FPA co-purifies with proteins that mediate mRNA 3′ end processing
+### FPA co-purifies with proteins that mediate mRNA 3′ end processing
 
 In order to understand how FPA controls the site of mRNA 3′ end formation, we used in vivo interaction proteomics–mass spectrometry (IVI-MS) to identify which proteins FPA associates with inside living plant cells. First, we fixed molecular interactions using formaldehyde infiltration of Arabidopsis seedlings expressing FPA fused to YFP (35S::FPA:YFP). Wild-type Columbia-0 (Col-0) seedlings treated in the same way were used as a negative control. We then purified nuclei and performed GFP-trap immunopurification followed by liquid chromatography–tandem mass spectrometry (LC-MS/MS) to identify FPA-associated proteins. By comparing the proteins detected in three biological replicates of 35S::FPA:YFP and Col-0, we identified 203 FPA co-purifying proteins with a median log2 fold change in adundance of greater than two (Figure 1—figure supplement 1). At least 56% (113) of the enriched proteins are poly(A)+mRNA binding proteins as established by orthogonal RNA-binding proteome analysis (Bach-Pages et al., 2020; Reichel et al., 2016).
 
 Consistent with FPA control of mRNA 3′ end formation, 14 highly conserved cleavage and polyadenylation factors (CPFs) co-purified with FPA (Figure 1A, Supplementary file 1). These include members of the cleavage and polyadenylation specificity factor (CPSF) complex, cleavage stimulating factor (CstF) complex, and cleavage factor I and II (CFIm/CFIIm) complexes. The U2AF and U2 spliceosome components that interact with CFIm–CPSF to mediate terminal exon definition were also detected (Kyburz et al., 2006; Figure 1B, Supplementary file 1). We additionally detected both subunits of Pol II. Characteristically, Serine5 of the Pol II C-terminal domain (CTD) heptad repeat is phosphorylated when Pol II is at the 5′ end of genes, and Ser2 is phosphorylated when Pol II is at the 3′ end (Komarnitsky et al., 2000). The position-specific phosphorylation of these sites alters the RNA processing factors which are recruited to the CTD at the different stages of transcription. We found that the kinase CDKC;2, which phosphorylates Ser2 (Wang et al., 2014), and the phosphatase CPL1 (homolog of yeast Fcp1), which dephosphorylates Ser5 (Koiwa et al., 2004), co-purified with FPA. We also detected the homolog of the human exonuclease XRN2 (known as XRN3 in Arabidopsis), which mediates Pol II transcription termination (Krzyszton et al., 2018).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig1-v2.jpg)
+
+**Figure 1.:** (A–D) Volcano plots representing proteins co-purifying with FPA using IVI-MS. Only proteins detected in all three biological replicates of the 35S::FPA:YFP line are shown (light grey). The following classes are highlighted: (A) CPFs in dark blue; (B) Pol II-associated factors in green; terminal exon definition factors in dark orange; (C) autonomous pathway components in yellow and factors controlling alternative polyadenylation in light orange; and (D) m6A writer complex components in light blue. (E) ChIP-Seq metagene profile showing the normalised occupancy of FPA (green) and Pol II phosphorylated at Ser5 (pink) and Ser2 (brown) of the CTD (Yu et al., 2019) relative to the major 3′ position of each gene, as measured using Helicos DRS. Only long genes (>2.5 kb) are included (n = 10,215).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** ChIP-Seq metagene profile showing the normalised occupancy of FPA (green) and Pol II phosphorylated at Ser5 and Ser2 of the CTD relative to the major 3′ position of each gene, as measured using Helicos DRS. Only short genes (<2.5 kb) are included (n = 17,440).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** ChIP-Seq occupancy in counts per million (CPM) of FPA and Pol II phosphorylated at Ser5 or Ser2 at the PIF5 and PAO3 loci. fpa mutants display readthrough of the canonical PIF5 poly(A) site, with a concomitant loss of Ser2 at the poly(A) site, and an increase in Ser5 in downstream PAO3.
 
 A second major class of proteins that co-purified with FPA are components of the autonomous flowering pathway (Andrés and Coupland, 2012; Simpson, 2004; Figure 1C, Supplementary file 1). FPA functions in the autonomous pathway to limit expression of the floral repressor FLC. FPA activity is associated with alternative polyadenylation of long non-coding RNAs that are transcribed antisense to the FLC locus (Hornyik et al., 2010; Liu et al., 2007). Consistent with this, conserved CPF proteins such as FY (WDR33) (Simpson et al., 2003), PCFS4 (Xing et al., 2008), CSTF64 and CSTF77 (Liu et al., 2010) were previously identified in late flowering mutant screens. Other detected autonomous pathway factors are proteins with established roles in pre-mRNA processing, including HLP1 (Zhang et al., 2015), FLK (Mockler et al., 2004) and EMB1579/RSA1 (Zhang et al., 2020b). Notably, FLK has been found to associate with PEP, HUA1, and HEN4 (Zhang et al., 2015), and we identified all four of these as FPA co-purifying proteins. In addition to regulating FLC, the FLK–PEP complex has been shown to control alternative polyadenylation within pre-mRNA encoding the floral homeotic transcription factor AGAMOUS (Rodríguez-Cazorla et al., 2015). Their co-purification with FPA suggests that this role may be more global and involve direct interactions at RNA 3′ ends.
 
@@ -55,15 +67,35 @@ A third group of proteins that co-purified with FPA are conserved members of the
 
 The picture that emerges from this analysis is that FPA is located in proximity to proteins that promote cleavage, polyadenylation, transcription termination and RNA modification at the 3′ end of Pol II-transcribed genes.
 
-## FPA co-localises with RNA Pol II Ser2 at the 3′ end of Arabidopsis genes
+### FPA co-localises with RNA Pol II Ser2 at the 3′ end of Arabidopsis genes
 
 We next used an orthogonal approach to investigate the association of FPA with proteins that function at the 3′ end of Pol II-transcribed genes. We performed chromatin immumunoprecipitation sequencing (ChIP-Seq) using antibodies against FPA and Pol II phosphorylated at either Ser5 or Ser2 of the CTD heptad repeat (Yu et al., 2019). Our metagene analysis revealed that FPA is enriched at the 3′ end of genes and co-localises with Pol II phosphorylated at Ser2 of the CTD (Figure 1E, Figure 1—figure supplement 1). We found that FPA occupancy at 3’ ends was well correlated with Pol II Ser2 occupancy (Spearman’s ρ = 0.67, p<2 × 10−308, 95% confidence interval [0.66, 0.68]). The close relationship between FPA and Pol II Ser2 is reinforced by changes in the distribution of Pol II isoforms in fpa mutants. For example, we previously showed that FPA is required for 3′ end processing at PIF5 (Duc et al., 2013). Pol II Ser2 was enriched at the 3′ end of PIF5 in Col-0 but depleted from this region in fpa-7 mutants (Figure 1—figure supplement 2). Together, these orthogonal ChIP-Seq and IVI-MS analyses reveal the close association of FPA with proteins involved in 3′ end processing and transcription termination at the 3′ end of Arabidopsis genes.
 
-## FPA predominantly promotes poly(A) site choice
+### FPA predominantly promotes poly(A) site choice
 
 We next asked which RNA processing events are controlled by FPA. We used a combination of Illumina RNA-Seq and Helicos and Nanopore DRS technologies to analyse three different genetic backgrounds expressing different levels of FPA activity: wild-type Col-0, loss-of-function fpa-8 and a line overexpressing FPA fused to YFP (35S::FPA:YFP). In combination, these orthogonal sequencing technologies can reveal different features of transcriptomes: Helicos DRS short reads identify the 3′ ends of mRNAs, but cannot reveal the full properties of the corresponding transcripts (Ozsolak et al., 2009) Illumina RNA-Seq produces short reads derived from all expressed regions, meaning that changes in RNA 3′ end processing can only be detected by differences in coverage (Xia et al., 2014) and Nanopore DRS long reads define the 3′ ends of mRNAs in the context of reads that can correspond to full-length transcripts (Parker et al., 2020). For each genotype, we performed three biological replicates with Helicos DRS, six with Illumina RNA-Seq and four with Nanopore DRS. The resultant sequencing statistics are detailed in Supplementary file 1.
 
 We first assessed the utility of the three sequencing technologies to map changes in mRNA processing by focusing on the FPA locus. FPA autoregulates its expression by promoting premature cleavage and polyadenylation within intron 1 of FPA pre-mRNA (Duc et al., 2013; Hornyik et al., 2010). Consistent with this, a proximal poly(A) site in the first intron and distal sites in the terminal intron and exon of FPA could be mapped in Col-0 using Nanopore and Helicos DRS (Figure 2A). Using all three data types, we detected a quantitative shift towards selection of distal poly(A) sites in the loss-of-function fpa-8 mutant and a strong shift to proximal poly(A) site selection when FPA is overexpressed (35S::FPA:YFP). Nanopore DRS provided the clearest picture of alternative polyadenylation events because full-length reads reveal poly(A) site choice in the context of other RNA processing events.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig2-v2.jpg)
+
+**Figure 2.:** Loss of FPA function is associated with the preferential selection of distal poly(A) sites, whereas FPA overexpression leads to the preferential selection of proximal poly(A) sites. (A) Illumina RNA-Seq, Helicos DRS and Nanopore DRS reveal FPA-dependent RNA 3′ end processing changes at the FPA (AT2G43410) locus. The 35S::FPA:YFP construct has alternative transgene-derived untranslated regions, so mRNAs derived from the transgene do not align to the native FPA 5′UTR and 3′UTR. (B) Histograms showing change in mean RNA 3′ end position for significantly alternatively polyadenylated loci (EMD >25, FDR < 0.05) in fpa-8 (left panel) and 35S::FPA:YFP (right panel) compared with Col-0, as detected using Nanopore DRS. Orange and green shaded regions indicate sites with negative and positive RNA 3′ end position changes, respectively. (C) Effect size of significant proximal (orange) and distal (green) alternative polyadenylation events in fpa-8 (left panel) and 35S::FPA:YFP (right panel) compared with Col-0, as measured using the EMD. (D) Histograms showing change in mean RNA 3′ end position for significantly alternatively polyadenylated loci (EMD >25, FDR < 0.05) in fpa-8 (left panel) and 35S::FPA:YFP (right panel) compared with Col-0, as detected using Nanopore DRS. Orange and green shaded regions indicate sites with negative and positive RNA 3′ end position changes, respectively. (E) Effect size of significant proximal (orange) and distal (green) alternative polyadenylation events in fpa-8 (left panel) and 35S::FPA:YFP (right panel) compared with Col-0, as measured using the EMD. (F) Boxplots showing the effect size (absolute log2 fold change (logFC)) of alternatively processed loci identified using Illumina RNA-Seq in fpa-8 (left panel) and 35S::FPA:YFP (right panel) respectively. Down- and upregulated loci are shown in orange and green, respectively. For each locus, the region with the largest logFC was selected to represent the locus. Loci with both up- and downregulated regions contribute to both boxes. (G) Boxplots showing the effect size (absolute logFC) of loci with alternative splice junction usage identified using Illumina RNA-Seq in fpa-8 (left panel) and 35S::FPA:YFP (right panel), respectively. Down- and upregulated loci are shown in orange and green, respectively. For each locus, the junction with the largest logFC was selected to represent the locus. Loci with both up- and downregulated junctions contribute to both boxes.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Comparison of RNA 3′ ends identified in Nanopore and Helicos DRS datasets in fpa-8 and 35S::FPA:YFP (compared with Col-0). Bar size indicates the number of alternatively polyadenylated loci common to an intersection (highlighted using circles below). Bars indicating loci that are identified as alternatively polyadenylated in a single condition (fpa-8 or 35S::FPA:YFP) using a single technique (Nanopore or Helicos DRS) are presented in black; bars indicating loci identified as distally polyadenylated in fpa-8 using both Nanopore and Helicos DRS, in orange; bars indicating loci identified as proximally polyadenylated in 35S::FPA:YFP using both Nanopore and Helicos DRS, in green; and bars indicating loci identified as reciprocally regulated by FPA (distal polyadenylation in fpa-8, proximal in 35S::FPA:YFP) using at least one technique, in yellow.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Gene track showing chimeric RNA formation at the PIF5 gene locus, as detected with Illumina RNA-Seq, Helicos DRS, and Nanopore DRS.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Box plot showing the m6A/A ratio, as analysed using LC-MS/MS.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Venn diagram showing genes with altered H3K9me2 levels in ibm1–four mutants, in yellow (Inagaki et al., 2017) and orange (Lai et al., 2020); and genes with altered poly(A) site choice in 35S::FPA:YFP, in green.
 
 We next asked how transcriptome-wide RNA processing is affected by FPA activity. Since mutations in FPA cause readthrough of annotated 3′UTRs (Duc et al., 2013), we applied the software tool StringTie2 (Pertea et al., 2015) to create a bespoke reference annotation with Nanopore DRS reads from Col-0, fpa-8 and 35S::FPA:YFP. We then measured how changes in FPA expression altered the 3′ end distribution at each locus using the earth mover’s distance (EMD; also known as the Wasserstein distance). EMD indicates the ‘work’ required to transform one normalised distribution into another based on the proportion of 3′ ends that would have to be moved and by what distance. We used an EMD permutation test, in which reads are randomly shuffled between conditions, to estimate p-values for each locus. Loci with an EMD greater than 25 and a false discovery rate (FDR) less than 0.05 were considered differentially polyadenylated.
 
@@ -79,21 +111,644 @@ Finally, we asked whether the FPA-dependent global changes in alternative polyad
 
 Overall, these analyses reveal that the primary function of FPA is to control poly(A) site choice. FPA predominantly promotes poly(A) site selection; hence, fpa loss-of-function backgrounds exhibit readthrough at sites used in the wild type, whereas FPA overexpression results in increased selection of proximal poly(A) sites.
 
-## NLRs are major targets of FPA-sensitive alternative poly(A) site selection
+### NLRs are major targets of FPA-sensitive alternative poly(A) site selection
 
 We next asked which groups of genes are sensitive to FPA-dependent alternative polyadenylation. We used InterPro annotations (Mitchell et al., 2019) to perform protein family domain enrichment analysis of the loci affected by FPA (revealed by the Nanopore and Helicos DRS analyses). We found that sequences encoding NB-ARC, Rx-like coiled coil (CC), and/or LRR domains were enriched amongst the loci with increased proximal polyadenylation in 35S::FPA:YFP (Figure 3A and B). This combination of domains is associated with NLR disease resistance proteins.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig3-v2.jpg)
+
+**Figure 3.:** (A–B) Protein domain enrichment analysis for loci with increased proximal poly(A) site selection in 35S::FPA:YFP line, as detected using (A) Nanopore DRS or (B) Helicos DRS. (C) Nanopore DRS reveals the complexity of RNA processing at RPS6. Protein domain locations (shown in grey) represent collapsed InterPro annotations. The novel TIR domain was annotated using InterProScan (Mitchell et al., 2019). (D) Protein alignment of the predicted TIR domain from the novel gene downstream of RPS6, with the sequence of the TIR domains from RPS6 and RPS4. Helix and strand secondary structures (from UniProt: RPS4, Q9XGM3) are shown in blue and yellow, respectively. Residues are shaded according to the degree of conservation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Gene track showing alternative polyadenylation at the AT5G46490 gene locus, as detected with Illumina RNA-Seq, nanoPARE, Helicos DRS, and Nanopore DRS.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Protein alignment showing similarity between the AT5G46500 protein sequence (which forms the C-terminal portion of distally polyadenylation AT5G46490–AT5G46500 mRNAs) and other NLR protein sequences in the RPS6 cluster. LRR predictions, generated with LRRpredictor (Martin et al., 2020), are shown in orange.
 
 The Col-0 accession contains at least 206 genes encoding some combination of TIR, CC, RPW8, NB-ARC, and LRR domains, which might be classified as NLRs or partial NLRs (Van de Weyer et al., 2019). In general, these can be grouped according to their encoded N-terminal domain as TIR (TNLs), CC (CNLs), or RPW8 (RNLs) genes. We manually examined these NLR genes to identify those with alternative polyadenylation. Reannotation of some loci was required to interpret the effects of FPA activity. For example, we found that the TNL gene AT5G46490, located in the RPS6 cluster, is incorrectly annotated as two loci, AT5G46490 and AT5G46500 (Figure 3—figure supplement 1). Nanopore DRS evidence indicates that this is actually a single locus with a previously unrecognised 2.7 kb intron containing a proximal poly(A) site, the use of which is controlled by FPA. This interpretation is supported by nanoPARE data (Schon et al., 2018), which showed no evidence of capped 5′ ends originating from the annotated downstream gene. Use of the distal poly(A) site introduces an additional ~400 amino acids to the C-terminus of the protein. This C-terminal region has homology to other NLRs in the RPS6 cluster and is predicted to introduce additional LRR repeats (Martin et al., 2020; Figure 3—figure supplement 2).
 
 Notably, we could also reannotate the chromosomal region around RPS6 itself. The extreme autoimmunity phenotypes of NMD mutants and mitogen-activated kinase pathway mutants require RPS6 but the mechanisms involved are not understood (Gloggnitzer et al., 2014; Takagi et al., 2020). Nanopore DRS indicates that the 3′UTR of RPS6 is complex, with multiple splicing events and poly(A) sites (Figure 3C). We also detected transcripts expressed from this region that do not appear to be contiguous with RPS6 3′UTR reads. Instead, these reads correspond to an independent unannotated gene that overlaps the RPS6 3′UTR. This interpretation is supported by capped RNA 5′ ends detected in this region by nanoPARE (Schon et al., 2018). In addition, Nanopore DRS analysis of the RNA exosome mutant hen2-2 (Parker et al., 2021) revealed that this unannotated gene is expressed at relatively high levels, but that the transcripts are subject to degradation. Consequently, steady-state levels of RNA expressed from this locus are relatively low in Col-0. The gene encodes a TIR domain similar to that of RPS6 (Figure 3D). Therefore, use of the distal RPS6 poly(A) site constitutes readthrough into the downstream TIR-domain-only NLR. Based on these analyses, we conclude that long-read Nanopore DRS data have the potential to correct NLR gene annotation at complex loci that cannot be resolved by genome annotation software or short-read Illumina RNA-Seq.
 
-## Widespread premature transcription termination of NLRs includes frequent selection of poly(A) sites in protein-coding exons
+### Widespread premature transcription termination of NLRs includes frequent selection of poly(A) sites in protein-coding exons
 
 Of the 206 NLR genes examined, 124 had a sufficient level of expression to identify alternative polyadenylation in the Nanopore DRS data; of these 124, 62 (50.0%) were found to have FPA-dependent alternative polyadenylation (Tables 1–3). Of the 74 expressed NLRs located in major clusters, 44 (59.5%) were sensitive to FPA activity (chi2p=0.02) (Lee and Chae, 2020). The localisation of NLRs to large genomic clusters is known to facilitate diversification (Barragan and Weigel, 2020). Consistent with this, 20 (71.4%) of the 28 expressed NLRs reported to be under high levels of diversifying selection were sensitive to FPA activity (chi2p=0.02) (Prigozhin and Krasileva, 2021). In addition, FPA-sensitive NLRs tended to be located in regions with higher levels of synteny diversity (Jiao and Schneeberger, 2020), although in this case the association was not significant (t-test p=0.09; Figure 4—figure supplement 1). Overall, these findings suggest that FPA-dependent alternative polyadenylation is associated with rapidly evolving NLRs.
+
+**Table 1.**
+ Readthrough and chimeric RNA formation events at FPA-sensitive NLR genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene ID</th>
+      <th>Gene name</th>
+      <th>NLR class</th>
+      <th>Chimeric pair (upstream–downstream)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AT1G12220</td>
+      <td>RPS5</td>
+      <td>CNL</td>
+      <td>AT1G12220–AT1G12230</td>
+    </tr>
+    <tr>
+      <td>AT1G58848</td>
+      <td>RPP7a/b</td>
+      <td>TNL</td>
+      <td>AT1G58848–AT1G58889</td>
+    </tr>
+    <tr>
+      <td>AT1G59218</td>
+      <td>RPP7a/b</td>
+      <td>TNL</td>
+      <td>AT1G59218–AT1G59265</td>
+    </tr>
+    <tr>
+      <td>AT1G61190</td>
+      <td>-</td>
+      <td>CNL</td>
+      <td>ncRNA–AT1G61190</td>
+    </tr>
+    <tr>
+      <td>AT1G63730</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>AT1G63730–AT1G63740</td>
+    </tr>
+    <tr>
+      <td>AT1G63740</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>AT1G63730–AT1G63740</td>
+    </tr>
+    <tr>
+      <td>AT3G46730</td>
+      <td>-</td>
+      <td>CNL</td>
+      <td>AT3G46740–AT3G46730</td>
+    </tr>
+    <tr>
+      <td>AT4G16860</td>
+      <td>RPP4</td>
+      <td>TNL</td>
+      <td>AT4G16860–AT4G16870–AT4G16857</td>
+    </tr>
+    <tr>
+      <td>AT4G16960</td>
+      <td>SIKIC3</td>
+      <td>TNL</td>
+      <td>AT4G16970–AT4G16960–AT4G16957</td>
+    </tr>
+    <tr>
+      <td>AT4G19060</td>
+      <td>-</td>
+      <td>NB only</td>
+      <td>AT4G19070–AT4G19060</td>
+    </tr>
+    <tr>
+      <td>AT4G19530</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>AT4G19530–AT4G19540</td>
+    </tr>
+    <tr>
+      <td>AT5G38850</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>AT5G38850–AT5G38860</td>
+    </tr>
+    <tr>
+      <td>AT5G40090</td>
+      <td>CHL1</td>
+      <td>TNL</td>
+      <td>ncRNA–AT5G40090</td>
+    </tr>
+    <tr>
+      <td>AT5G44510</td>
+      <td>TAO1</td>
+      <td>TNL</td>
+      <td>AT5G44520–AT5G44510</td>
+    </tr>
+    <tr>
+      <td>AT5G45490</td>
+      <td>-</td>
+      <td>CNL</td>
+      <td>AT5G45472–AT5G45490</td>
+    </tr>
+    <tr>
+      <td>AT5G46470</td>
+      <td>RPS6</td>
+      <td>TNL</td>
+      <td>AT5G46470–TIR gene</td>
+    </tr>
+    <tr>
+      <td>AT5G48780</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>AT5G48775–AT5G48780</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Intronic proximal polyadenylation events at FPA-sensitive NLR genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene ID</th>
+      <th>Gene name</th>
+      <th>NLR class</th>
+      <th>Predicted function</th>
+      <th>Protein isoform</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AT1G12210</td>
+      <td>RFL1</td>
+      <td>CNL</td>
+      <td>non-coding (5′UTR)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G58602</td>
+      <td>RPP7</td>
+      <td>CNL</td>
+      <td>non-coding (5′UTR); alternative 3′UTR</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G63750</td>
+      <td>WRR9</td>
+      <td>TNL</td>
+      <td>protein coding</td>
+      <td>TIR only</td>
+    </tr>
+    <tr>
+      <td>AT1G63880</td>
+      <td>RLM1B</td>
+      <td>TNL</td>
+      <td>protein coding; non-stop</td>
+      <td>TIR only</td>
+    </tr>
+    <tr>
+      <td>AT1G69550</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>protein coding</td>
+      <td>LRR truncation</td>
+    </tr>
+    <tr>
+      <td>AT3G44480</td>
+      <td>RPP1</td>
+      <td>TNL</td>
+      <td>protein coding</td>
+      <td>LRR truncation</td>
+    </tr>
+    <tr>
+      <td>AT3G50480</td>
+      <td>HR4</td>
+      <td>RPW8</td>
+      <td>protein coding</td>
+      <td>RPW8 truncation</td>
+    </tr>
+    <tr>
+      <td>AT4G16860</td>
+      <td>RPP4</td>
+      <td>TNL</td>
+      <td>protein coding</td>
+      <td>TIR only</td>
+    </tr>
+    <tr>
+      <td>AT4G16900</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>protein coding</td>
+      <td>LRR truncation</td>
+    </tr>
+    <tr>
+      <td>AT4G19510</td>
+      <td>RPP2B</td>
+      <td>TNL</td>
+      <td>alternative 3′UTR</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT5G17890</td>
+      <td>DAR4/CHS3</td>
+      <td>TNL</td>
+      <td>protein coding</td>
+      <td>TIR only</td>
+    </tr>
+    <tr>
+      <td>AT5G40910</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>protein coding</td>
+      <td>TIR only</td>
+    </tr>
+    <tr>
+      <td>AT5G43730</td>
+      <td>RSG2</td>
+      <td>CNL</td>
+      <td>non-coding (5′UTR)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT5G43740</td>
+      <td>-</td>
+      <td>CNL</td>
+      <td>non-coding (5′UTR)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT5G46270</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>protein coding</td>
+      <td>TIR/NB-ARC only; LRR truncation</td>
+    </tr>
+    <tr>
+      <td>AT5G46470</td>
+      <td>RPS6</td>
+      <td>TNL</td>
+      <td>alternative 3′UTR</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>AT5G46490</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>protein coding; non-stop</td>
+      <td>TIR/NB-ARC only; LRR truncation</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Exonic proximal polyadenylation events at FPA-sensitive NLR genes.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene ID</th>
+      <th>Gene name</th>
+      <th>NLR class</th>
+      <th>Predicted function</th>
+      <th>Protein isoform</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AT1G10920</td>
+      <td>LOV1</td>
+      <td>CNL</td>
+      <td>protein coding*</td>
+      <td>CC-only*</td>
+    </tr>
+    <tr>
+      <td>AT1G27180</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G31540</td>
+      <td>RAC1</td>
+      <td>TNL</td>
+      <td>non-stop; protein coding^</td>
+      <td>LRR truncation^</td>
+    </tr>
+    <tr>
+      <td>AT1G33560</td>
+      <td>ADR1</td>
+      <td>RNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G53350</td>
+      <td>-</td>
+      <td>CNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G56510</td>
+      <td>WRR4A</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G56520</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G58602</td>
+      <td>RPP7</td>
+      <td>CNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G58807</td>
+      <td>RF45</td>
+      <td>CNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G58848</td>
+      <td>RPP7a/b</td>
+      <td>CNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G59124</td>
+      <td>RDL5</td>
+      <td>CNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G59218</td>
+      <td>RPP7a/b</td>
+      <td>CNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G61300</td>
+      <td>-</td>
+      <td>CNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G62630</td>
+      <td>-</td>
+      <td>CNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G63360</td>
+      <td>-</td>
+      <td>CNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G63730</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G63860</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G63880</td>
+      <td>RLM1B</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT1G72840</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>non-coding (5′UTR)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT2G14080</td>
+      <td>RPP28</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT3G44480</td>
+      <td>RPP1</td>
+      <td>TNL</td>
+      <td>non-stop; protein coding†</td>
+      <td>LRR truncation†</td>
+    </tr>
+    <tr>
+      <td>AT3G44630</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT3G44670</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>non-stop; protein coding†</td>
+      <td>TIR only†</td>
+    </tr>
+    <tr>
+      <td>AT3G46530</td>
+      <td>RPP13</td>
+      <td>CNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT4G16860</td>
+      <td>RPP4</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT4G16890</td>
+      <td>SNC1</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT4G16900</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT4G19520</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT4G19530</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT4G36140</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT5G17890</td>
+      <td>DAR4/CHS3</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT5G35450</td>
+      <td>-</td>
+      <td>CNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT5G38850</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT5G40060</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>protein coding*</td>
+      <td>TIR only*</td>
+    </tr>
+    <tr>
+      <td>AT5G40910</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT5G43470</td>
+      <td>RPP8</td>
+      <td>CNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT5G43740</td>
+      <td>-</td>
+      <td>CNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT5G44510</td>
+      <td>TAO1</td>
+      <td>TNL</td>
+      <td>non-stop; protein coding†</td>
+      <td>LRR truncation†</td>
+    </tr>
+    <tr>
+      <td>AT5G44870</td>
+      <td>LAZ5</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT5G45050</td>
+      <td>RRS1B</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT5G45250</td>
+      <td>RPS4</td>
+      <td>TNL</td>
+      <td>protein coding†</td>
+      <td>LRR truncation†</td>
+    </tr>
+    <tr>
+      <td>AT5G45260</td>
+      <td>RRS1</td>
+      <td>TNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT5G46270</td>
+      <td>-</td>
+      <td>TNL</td>
+      <td>non-stop; protein coding†</td>
+      <td>LRR truncation†</td>
+    </tr>
+    <tr>
+      <td>AT5G48620</td>
+      <td>-</td>
+      <td>CNL</td>
+      <td>non-stop</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>AT5G58120</td>
+      <td>DM10</td>
+      <td>TNL</td>
+      <td>non-stop; protein coding†</td>
+      <td>LRR truncation†</td>
+    </tr>
+  </tbody>
+</table>
+
+_* indicates loci where exonic proximal polyadenylation generates transcripts that may be protein coding due toupstream ORFs.† indicates loci where exonic proximal polyadenylation coupled with intron retention results in a protein-coding ORF._
 
 The effects of FPA activity can be broadly classified into three modes of control involving (i) readthrough and chimeric RNAs, (ii) intronic poly(A) sites, and (iii) poly(A) sites within protein-coding exons. At certain complex loci, FPA can affect poly(A) site choice using combinations of these different modes of regulation.
 
 For 17 NLR genes, we found that a change in FPA activity altered the formation of readthrough or chimeric RNAs containing one or more NLR loci (Table 1). The duplicated RPP7a/b-like genes AT1G58848 and AT1G59218 (which form part of the RPP7 cluster containing five CNL-class NLRs) displayed increased readthrough into downstream transposable elements (TEs) in fpa-8 (Figure 4A). EMD tests could not be performed at these loci due to the multi-mapping of reads at these duplicated genes (AT1G58848 and AT1G59218). Loss of FPA function can also lead to clusters of two or more NLR genes being co-transcribed as a single transcriptional unit. For example, the TNL-class gene AT1G63730, located in the B4/RLM1 cluster, forms chimeric RNA with the downstream TNL-class gene AT1G63740 in fpa-8 (Helicos EMD = 1099, FDR = 0.02; Figure 4—figure supplement 2).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig4-v2.jpg)
+
+**Figure 4.:** FPA controls (A) readthrough and chimeric RNA formation at AT1G58848 (unique mapping of short Helicos DRS reads was not possible due to the high homology of AT1G58848 to tandemly duplicated NLR loci in the same cluster); (B) intronic polyadenylation at AT1G69550, resulting in transcripts encoding a protein with a truncated LRR domain; (C) exonic polyadenylation at AT2G14080, resulting in stop-codonless transcripts; and (D) exonic polyadenylation at AT5G40060, resulting in transcripts encoding a TIR-domain-only protein due to an upstream ORF.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Boxplot showing the synteny diversity, calculated from seven diverse A. thaliana accessions (Jiao and Schneeberger, 2020), of expressed NLR genes with and without FPA-sensitive alternative polyadenylation.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Gene track showing chimeric RNA formation at the AT1G63730 gene locus, as detected with Illumina RNA-Seq, Helicos DRS, and Nanopore DRS.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Gene track showing proximal polyadenylation at the RPP13 gene locus, as detected with Illumina RNA-Seq, Helicos DRS, and Nanopore DRS.
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** Gene track showing proximal polyadenylation at the RPS4 gene locus, as detected with Illumina RNA-Seq, Helicos DRS, and Nanopore DRS.
 
 We identified another 17 NLR genes with intronic polyadenylation controlled by FPA (Table 2). Of these, four contained poly(A) sites in 5′UTR introns (which would result in non-coding transcripts) and three contained alternative poly(A) sites after the stop codon (which could alter potential regulatory sequences contained in 3′UTRs). The remainder contained poly(A) sites in introns between protein-coding exons. Selection of these poly(A) sites introduce premature stop codons that result in truncated open reading frames (ORFs). For example, we identified a proximal poly(A) site within the third intron of AT1G69550, which encodes a TNL-type singleton NLR (Figure 4B). Use of this poly(A) site results in mRNAs with a premature stop codon; the encoded protein lacks most of the predicted LRR domain. In fpa-8, readthrough at this poly(A) site is increased (Helicos EMD = 1271, FDR = 1.2 × 10−4), resulting in an increase in the relative number of full-length transcripts.
 
@@ -105,13 +760,29 @@ In seven of the identified genes, exonic proximal polyadenylation is associated 
 
 FPA controlled NLR poly(A) site selection at 16 complex loci with combinations of intronic, exonic, and readthrough sites. One example is RPP4 (AT4G16860), a TNL-class NLR known to mediate Arabidopsis resistance to Hpa isolate Emoy2 (Hpa-Emoy2) (van der Biezen et al., 2002). RPP4 is part of the RPP5 cluster, comprising seven TNL-class NLRs. In agreement with a previous study (Wang and Warren, 2010), we found that in wild-type Col-0, RPP4 can be transcribed as a chimeric RNA together with the downstream AtCOPIA4 TE (AT4G16870) through selection of one of the two distal poly(A) sites located within the TE (Figure 5; Wang and Warren, 2010) or selection of a third poly(A) site in the downstream gene AT4G16857. Use of the proximal poly(A) site within the TE is associated with an approximately 8 kb cryptic splicing event between the 5′ splice site of the first exon of RPP4 and a 3′ splice site located within the TE. Both Nanopore DRS and Illumina RNA-Seq data provide evidence for this cryptic splicing event, which skips all RPP4 exons downstream of exon 1, removing most of the RPP4 coding sequence and introducing a stop codon (Figure 5, Inset 1). The resulting transcript is predicted to encode a TIR-domain-only protein. Loss of FPA function decreases chimeric RNA formation by shifting poly(A) site selection towards a proximal poly(A) site located within the protein-coding region of the final exon (Figure 5—figure supplement 1). This results in the production of RPP4 transcripts lacking in-frame stop codons (Figure 5, Inset 2). Furthermore, in 35S::FPA:YFP, we observed increased selection of a proximal poly(A) site located within the first intron of RPP4, which would also encode a truncated RPP4 protein. We conclude that FPA-dependent alternative polyadenylation at RPP4 produces transcripts with unusually long 3′UTRs, alternative protein isoforms and transcripts that cannot be efficiently translated.
 
-## FPA controls RPP7 by promoting premature termination within protein-coding exon 6
+![Figure 5.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig5-v2.jpg)
+
+**Figure 5.:** FPA-dependent intronic, exonic and readthrough poly(A) site selection in RPP4. (Inset 1) A magnified view of TIR-domain-only RPP4 transcripts detected in 35S::FPA:YFP caused by proximal polyadenylation in intron 1, and distal polyadenylation within the TE associated with cryptic splicing. (Inset 2) A magnified view of the stop-codonless transcripts produced within the protein-coding RPP4 region in fpa-8.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Comparison of the expression of four classes of RPP4 (AT4G16860) transcripts detected using (A) Nanopore DRS or (B) Helicos DRS. N-terminal truncation, TIR-domain-only transcripts generated by proximal intronic polyadenylation or distal polyadenylation and cryptic splicing; Non-stop, mRNAs lacking in-frame stop codons; Full-length, full-length protein-coding mRNAs; and Chimeric, mRNAs containing RPP4, COPIA-like retrotransposon (AT4G16870) and/or downstream AT4G16857.
+
+### FPA controls RPP7 by promoting premature termination within protein-coding exon 6
 
 To examine the functional impact of FPA on the regulation of NLRs, we focused on RPP7. RPP7 encodes a CNL-class NLR protein which is necessary for resistance to Hpa isolate Hiks1 (Hpa-Hiks1) in Col-0 (McDowell et al., 2000). The full-length expression of RPP7 is controlled by elongation factors that interact with H3K9me2, which is associated with the COPIA-type retrotransposon (COPIA-R7) located in RPP7 intron 1 (Saze et al., 2013). Using Nanopore and Helicos DRS data, we identified at least two poly(A) sites within the COPIA-R7 element, both of which were selected more frequently in fpa-8 (Figure 6A, Figure 6—figure supplement 1). We also identified two poly(A) sites within the second intron of RPP7. The use of both sites is reciprocally sensitive to FPA activity, with a moderate decrease in fpa-8 and an increase in 35S::FPA:YFP. All these intronic proximal poly(A) sites are located before the start of the RPP7 ORF and generate transcripts that do not encode RPP7 protein. At the 3′ end of RPP7, we found three alternative poly(A) sites located in the terminal intron, in addition to the previously reported most distal and most commonly used poly(A) site in the terminal exon (Figure 6A, Inset 1) (Tsuchiya and Eulgem, 2013). Selection of each of these poly(A) sites is associated with alternative splicing events that lead to the generation of four possible 3′UTR sequences. Termination at the 3′UTR intronic poly(A) sites is suppressed by FPA: their usage is increased in fpa-8 and decreased in 35S::FPA:YFP. These data indicate that FPA influences RPP7 intronic polyadenylation at a larger number of poly(A) sites than previously supposed.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig6-v2.jpg)
+
+**Figure 6.:** (A) FPA-dependent RNA 3′ end formation changes at the RPP7 (AT1G58602) locus. (Inset 1) Magnified view of the RPP7 3′UTR region with alternative RNA 3′ ends. (Inset 2) Magnified view of the stop-codonless transcripts produced in protein-coding RPP7 exon 6. (B) RNA gel blot visualising RPP7 transcripts in Col-0, fpa-8 and 35S::FPA:YFP. Probe location in second exon is shown on (A) (light brown). Beta-TUBULIN was used as an internal control. (C) FPA-dependent premature exonic termination of RPP7 compromises immunity against Hpa-Hiks1. Point plot showing median number of sporangiophores per plant calculated 4 days after Hpa-Hiks1 inoculation. Error bars are 95% confidence intervals. Each experimental replicate was generated from 7 to 45 plants per genotype.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/65537/elife-65537-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Comparison of the expression of three classes of RPP7 transcripts detected using (A) nanopore DRS or (B) Helicos DRS. 5′UTR (non-coding), mRNAs prematurely terminated within the 5′UTR; exon 6 (non-stop), stop-codonless transcripts terminated at proximal poly(A) sites in exon 6; and full-length, protein-coding mRNAs terminated at distal poly(A) sites within the 3′UTR. List of supplementary files.
+
 The major effect of FPA on RPP7 is within protein-coding exon 6, where we identified three poly(A) sites (Figure 6A, Inset 2): two at the end of the region encoding the NB-ARC domain and one within the region encoding the LRR repeats. Cleavage and polyadenylation at these sites result in transcripts without in-frame stop codons, thereby disrupting the coding potential of RPP7 mRNA. These poly(A) sites were identified in both Helicos and Nanopore DRS data, indicating that they are unlikely to be caused by alignment errors. The relative selection of exon 6 poly(A) sites depends on FPA expression: in Col-0, 25% of RPP7 Nanopore DRS reads terminate at one of these exon 6 poly(A) sites; and when FPA is overexpressed, this figure increases to 63%. Consistent with this, a relative drop in coverage at exon 6 was also observed in 35S::FPA:YFP Illumina RNA-Seq data. Consequently, only 23% of RPP7 transcripts are expected to encode RPP7 protein in the FPA-overexpressing line. In contrast, 4% of RPP7 Nanopore DRS reads identified in fpa-8 terminate in exon 6, and 79% of transcripts are expected to be protein coding. In an orthogonal approach, we used RNA gel blot analysis to visualise RPP7 mRNAs in Col-0, fpa-8, and 35S::FPA:YFP backgrounds and detected a clear decrease in signal corresponding to full-length RPP7 transcripts in 35S::FPA:YFP (Figure 6B). These data support previous evidence of FPA-dependent control of RPP7 (Deremetz et al., 2019) but reveal that the predominant mechanism is via exonic transcription termination.
 
-## RPP7-dependent immunity to the biotrophic pathogen Hpa is sensitive to FPA expression
+### RPP7-dependent immunity to the biotrophic pathogen Hpa is sensitive to FPA expression
 
 We next asked whether FPA-dependent premature transcription termination at RPP7 exon 6 has a functional consequence. Since FPA reduced the level of full-length protein-coding RPP7 transcripts, we asked whether increased FPA activity might compromise RPP7-dependent immunity. To test this hypothesis, we carried out pathogenesis assays using the oomycete strain Hpa-Hiks1. RPP7 function is required for immunity to Hpa-Hiks1 in Col-0 (McDowell et al., 2000). The Keswick (Ksk-1) accession is susceptible to Hpa-Hiks1 (Lai et al., 2019) and we used it as a control in these studies.
 
@@ -121,13 +792,13 @@ We inoculated Arabidopsis seedlings with Hpa-Hiks1 spores in three independent e
 
 We have identified a novel role for the RNA-binding protein FPA in the control of plant innate immunity. Using IVI-MS proteomics and ChIP-Seq, we showed that FPA is closely associated with proteins involved in RNA 3′ processing and co-localises with Ser2 phosphorylated Pol II at the 3′ ends of genes. Integrative analysis using three RNA sequencing technologies confirmed that the major effect of modulating FPA activity is to alter poly(A) site selection. An unexpected finding was that half of expressed NLR loci were sensitive to FPA activity. In most cases, FPA promoted the use of poly(A) sites within protein-coding exons of NLR genes. At RPP7, an increase in exonic polyadenylation caused by FPA overexpression was shown to compromise immunity to Hpa-Hiks1. The widespread nature of this control mechanism suggests that transcription termination plays an important role in the regulatory and evolutionary dynamics of NLR genes.
 
-## Uncovering protein assemblies that mediate 3′ end processing in living plant cells
+### Uncovering protein assemblies that mediate 3′ end processing in living plant cells
 
 We used an in vivo formaldehyde cross-linking approach to identify proteins that co-localise with FPA inside living plant cells. These data provide in-depth knowledge of the proteins involved in Arabidopsis RNA 3′ end processing and clues to the function of the uncharacterised proteins identified here. Components of the m6A writer complex also co-purify with FPA. However, unlike related proteins in human and Drosophila (Knuckles et al., 2018; Patil et al., 2016), we found that FPA is not required to maintain global levels of m6A modification in Arabidopsis.
 
 Two Arabidopsis PCF11 paralogs with Pol II CTD-interacting domains (CIDs), PCFS2 and PCFS4, co-purified with FPA, but two paralogs lacking CIDs, PCFS1, and PCFS5, did not. PCF11 was previously shown to have functionally separable roles in transcription termination and cleavage and polyadenylation (Sadowski et al., 2003): the N-terminal PCF11 CID is required for transcription termination, whereas the C-terminal domains are required for cleavage and polyadenylation. The specific interaction of FPA with CID-containing PCF11 paralogs suggests that FPA controls alternative polyadenylation by altering Pol II speed and transcription termination. The human SPOC domain protein PHF3 can bind to two adjacent Ser2 phosphorylated heptads of the CTD of Pol II via two electropositive patches on the surface of its SPOC domain (Appel et al., 2020). One of these patches, and the key amino acid residues within it, is conserved in the structure of the FPA SPOC domain (Zhang et al., 2016). Consequently, FPA might also interact with the CTD, possibly in conjunction with CID domains of PCFS2 and PCFS4. Such interactions could account for the global correlation between FPA and Pol II Ser2 occupancy and explain how FPA is able to associate with terminating Pol II at the 3’ ends of most expressed genes.
 
-## Widespread control of NLR transcription termination by FPA
+### Widespread control of NLR transcription termination by FPA
 
 An unanticipated finding of this study is that Arabidopsis NLR genes were enriched amongst loci with FPA-sensitive poly(A) sites. NLRs function in the immune response and, consistent with this crucial role, they are under powerful and dynamic selective pressure. Defining the inventory of Arabidopsis NLRs depended on long-range DNA sequencing of diverse accessions (Van de Weyer et al., 2019). Here, we show that long-read Nanopore DRS provides insight into the authentic complexity of NLR mRNA processing and enables the accurate annotation of NLR genes. For example, our reannotation of the RPS6 locus is essential to understand the recurring role of RPS6 in autoimmunity. The autoimmune phenotypes of mutants defective in NMD or the mitogen-activated kinase pathway are RPS6 dependent, but the mechanisms involved are unclear (Gloggnitzer et al., 2014; Takagi et al., 2020). We found that RPS6 is transcribed through a previously unrecognised downstream gene that encodes an RPS6-like TIR domain. We showed that expression of the downstream gene is dependent on the RNA exosome component HEN2. In addition, mutations in HEN2 were recently identified as suppressors of RPS6-dependent autoimmune phenotypes (Takagi et al., 2020). It is clear that accurate annotation of complex NLR loci facilitates the interpretation of basic features of NLR function.
 
@@ -149,112 +820,367 @@ At least two distinct patterns of alternative polyadenylation mediate RPP7 regul
 
 The impact of FPA overexpression on gene expression and immunity revealed here derives from artificial transgene expression. However, pathogens could similarly modulate NLR activity by evolving effectors that target the expression or activity of factors controlling NLR poly(A) site choice. Consistent with this idea, the HopU1 effector of P. syringae targets the RNA-binding protein AtGRP7 (Fu et al., 2007), which co-purified with FPA. In addition, the Pi4089 effector of the oomycete pathogen Phytophthora infestans targets the KH-domain RNA-binding protein StKRBP1 in potato; as a result, the abundance of StKRBP1 increases and infection by P. infestans is enhanced (Wang et al., 2015). This precedent reveals that effector-mediated increases in RNA-binding protein abundance can transform host RNA-binding proteins into susceptibility factors. Phylogenetic analysis of StKRBP1 suggests that a direct homolog is absent in Brassicaceae. However, the most closely related Arabidopsis proteins are FLK and PEP (Zhang et al., 2020a), both of which co-purify with FPA and have been shown to regulate poly(A) site choice (Rodríguez-Cazorla et al., 2015). FPA, GRP7, FLK and PEP, along with other RNA-binding proteins, act in concert to fine-tune the timing of flowering through the regulation of FLC. In a similar way, RNA-binding protein-dependent modulation of NLR expression might explain how quantitative disease resistance occurs (Corwin and Kliebenstein, 2017).
 
-## New ways to analyse RNA processing
+### New ways to analyse RNA processing
 
 An essential feature of our study was the introduction of new approaches to study RNA processing and 3′ end formation. The use of long-read Nanopore DRS transformed our understanding of the complexity of NLR gene expression by providing insight that short-read Illumina RNA-Seq and Helicos DRS could not. We recently showed that Nanopore DRS mapping of RNA 3′ ends closely agrees with short-read Helicos DRS, and that Nanopore DRS is not compromised by internal priming artefacts (Parker et al., 2020). Consequently, we used Nanopore DRS to quantify alternative patterns of cleavage and polyadenylation. We also introduced a new approach to analyse alternative polyadenylation by applying the EMD metric. EMD incorporates information on the both the relative abundance and the genomic distance between alternative poly(A) sites. This is valuable because large distances between poly(A) sites are more likely to impact the mRNA coding potential or trigger mRNA surveillance compared with subtle changes in 3′UTR length.
 
 A limitation of short-read analyses of RNA processing is their dependence upon reference transcript annotations because these may be incomplete. For example, in disease or mutant conditions, RNA processing often occurs at novel sites that are not present in reference transcriptomes (as was the case here for NLR genes). For this reason, using long-read sequencing data to generate bespoke reference transcriptomes for the genotypes under analysis can increase the value of short-read sequencing data. Until the throughput of long-read sequencing matches that of short-read technologies, a combined approach is likely to be generally useful in interpreting transcriptomes.
 
-## Concluding remarks
+### Concluding remarks
 
 It is difficult to identify alternative polyadenylation from conventional short-read RNA-Seq data. As a result, the impact of alternative polyadenylation is probably under-reported. Here we show that premature transcription termination of NLR genes is widespread. Using Nanopore DRS, we could improve the accuracy of NLR annotation and revealed a layer of NLR gene regulation that may also influence the dynamics of NLR evolution. The continued development of approaches that reveal full-length native RNA molecules is likely to provide new insight into other important, but previously unrecognised, aspects of biology.
 
 ## Materials and methods
 
-## Plants
+**Key resources table**
 
-## Plant material and growth conditions
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Arabidopsis thaliana)</td>
+      <td>Columbia (Col-0)</td>
+      <td>NA</td>
+      <td>ABRC: CS22625</td>
+      <td>Country of Origin: USA</td>
+    </tr>
+    <tr>
+      <td>Strain (Arabidopsis thaliana)</td>
+      <td>Keswick (Ksk-1)</td>
+      <td>Lai and Eulgem, 2018</td>
+      <td>ABRC: CS1634</td>
+      <td>Country of Origin: UK</td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>FPA</td>
+      <td>NA</td>
+      <td>TAIR/ABRC: AT2G43410</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Gene (Arabidopsis thaliana)</td>
+      <td>RPP7</td>
+      <td>NA</td>
+      <td>TAIR/ABRC: AT1G58602</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>fpa-7</td>
+      <td>Duc et al., 2013</td>
+      <td>ABRC: SALK_021959C</td>
+      <td>T-DNA insertion mutant in Col-0 background. Gifted by R. Amasino, UW-Madison.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>fpa-8</td>
+      <td>Bäurle et al., 2007</td>
+      <td>TAIR: 4515120225</td>
+      <td>EMS point mutation in Col-0 background. Gifted by C. Dean, John Innes Centre</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>35S::FPA:YFP fpa-8</td>
+      <td>Bäurle et al., 2007</td>
+      <td>NA</td>
+      <td>Transgenic line in fpa-8 background, gifted by C. Dean, John Innes Centre</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>pFPA::FPA fpa-8</td>
+      <td>Zhang et al., 2016</td>
+      <td>NA</td>
+      <td>Transgenic line in fpa-8 background.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Arabidopsis thaliana)</td>
+      <td>vir-1</td>
+      <td>Růžička et al., 2017</td>
+      <td>TAIR: 6532672723</td>
+      <td>EMS point mutant in Col-0 background. Gifted by K. Růžička, Brno.</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Rneasy Plant Mini kit</td>
+      <td>QIAGEN</td>
+      <td>Cat#: 74904</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>SuperScript III Reverse Transcriptase</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 18080044</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>NEBNext Ultra Directional RNA Library Prep Kit for Illumina</td>
+      <td>New England Biolabs</td>
+      <td>Cat#: E7420</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Dynabeads mRNA Purification Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: 61006</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Nanopore Direct RNA sequencing kit</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>Cat#: SQK-RNA001</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>MinION Flow cell r9.4</td>
+      <td>Oxford Nanopore Technologies</td>
+      <td>Cat#: FLO-MIN106</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>T4 DNA ligase</td>
+      <td>New England Biolabs</td>
+      <td>Cat#: M0202</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Quick Ligase reaction buffer</td>
+      <td>New England Biolabs</td>
+      <td>Cat#: B6058S</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Agencourt RNAclean XP magnetic beads</td>
+      <td>Beckman Coulter</td>
+      <td>Cat#: A63987</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Qubit RNA BR Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: Q10210</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA ScreenTape System</td>
+      <td>Agilent</td>
+      <td>Cat#: 5067–5576 - 5067–5578</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FPA antibody</td>
+      <td>Covance</td>
+      <td>NA</td>
+      <td>Rabbit polyclonal antibody. Raised against FPA amino acids536–901.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>[γ−32P]-ATP</td>
+      <td>Perkin Elmer</td>
+      <td>Cat#: BLU012H250UC</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DECAprime II DNA labelling kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: AM1455</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Illustra MicroSpin G-50 Columns</td>
+      <td>GE Healthcare</td>
+      <td>Cat#: 27-5330-01</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RiboRuler High Range RNA Ladder</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: SM1821</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FastAP Thermosensitive Alkaline Phosphatase</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: EF0651</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>T4 Polynucleotide Kinase</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#: EK0031</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Nuclease P1</td>
+      <td>Merck</td>
+      <td>Cat#: N8630-1VL</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Calf Intestinal Alkaline Phosphatase</td>
+      <td>New England Biolabs</td>
+      <td>Cat#: M0290S</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>N6-Methyladenosine (m6A), Modified adenosine analog</td>
+      <td>Abcam</td>
+      <td>Cat#: ab145715</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Adenosine, Endogenous P1 receptor agonist</td>
+      <td>Abcam</td>
+      <td>Cat#: ab120498</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>GFP-Trap Agarose</td>
+      <td>Chromotek</td>
+      <td>Cat#: gta-20</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>d3pendr</td>
+      <td>10.5281/zenodo.4319112</td>
+      <td>NA</td>
+      <td>Scripts to perform differential 3' end analysis using Nanopore DRS or Helicos DRS data</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Simpson_Barton_FPA_NLRs</td>
+      <td>10.5281/zenodo.4319108</td>
+      <td>NA</td>
+      <td>All pipelines, scripts and notebooks used for analyses in this manuscript.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plants
+
+#### Plant material and growth conditions
 
 The wild-type Col-0 accession and fpa-7 were obtained from the Nottingham Arabidopsis Stock Centre. The fpa-8 mutant (Col-0 background) and 35S::FPA:YFP in fpa-8 (Bäurle et al., 2007) were provided by C. Dean (John Innes Centre). Generation of the pFPA::FPA line was previously described (Zhang et al., 2016). Surface-sterilised seeds were sown on MS10 medium plates containing 2% agar, stratified at 4°C for 2 days, germinated in a controlled environment at 20°C under 16 hr light/8 hr dark conditions and harvested 14 days after transfer to 20°C.
 
-## IVI-MS
+### IVI-MS
 
-## Preparation of IVI-MS samples
+#### Preparation of IVI-MS samples
 
 Seedlings were harvested 14 days after germination and cross-linked with 1% (v/v) formaldehyde under vacuum. The cross-linking reaction was stopped after 15 min by the addition of glycine to a final concentration of 0.125 M and returned to vacuum for a further 5 min. Nuclei were isolated from frozen ground plant tissue using Honda buffer (20 mM Hepes-KOH pH 7.4, 10 mM MgCl2, 440 mM sucrose, 1.25% (w/v) Ficoll, 2.5% (w/v) Dextran T40, 0.5% (v/v) Triton X-100, 5 mM DTT, 1 mM PMSF, 1% (v/v) Protease Inhibitor Cocktail; (Sigma)) and collected by centrifugation at 2000 g for 17 min at 4°C. Nuclei were washed twice with Honda buffer (centrifugation at 1500 g for 15 min at 4°C between washes) and lysed in nuclear lysis buffer (50 mM Tris-HCl pH 8, 10 mM EDTA, 1% (w/v) SDS, 1 mM PMSF, 1% (v/v) Protease Inhibitor Cocktail) by sonication for four cycles of 30 s pulses with low power and 60 s cooling between pulses using a Bioruptor UCD-200 (Diagenode). Following centrifugation (16,100 g for 10 min at 4°C), the supernatant was diluted 10-fold with sample dilution buffer (16.7 mM Tris-HCl pH 8, 167 mM NaCl, 1.1% (v/v) Triton X-100, 1% (v/v) Protease Inhibitor Cocktail). Cross-linked protein complexes were isolated with GFP-trap agarose beads (Chromotek) and incubated at 4°C with constant rotation for 5 hr, followed by centrifugation (141 g for 3 min at 4°C). Beads were washed three times with washing buffer (150 mM NaCl, 20 mM Tris-HCl pH 8, 2 mM EDTA pH 8, 1% (v/v) Triton X-100, 0.1% (w/v) SDS, 1 mM PMSF) by centrifugations between washes (400 g for 3 min at 4°C). Samples were incubated at 90°C for 30 min to reverse the cross-linking prior to SDS-PAGE. Each biological replicate was separated into five fractions following SDS-PAGE, subjected to in-gel digestion with trypsin and submitted for LC-MS/MS analysis (LTQ Orbitrap Velos Pro mass spectrometer; Thermo Fisher Scientific). Three biological replicates were performed for each genotype.
 
-## IVI-MS data analysis
+#### IVI-MS data analysis
 
 Raw peptide data files from IVI-MS were analysed by MaxQuant software (version 1.6.10.43) (Cox and Mann, 2008). Peptide tables were then loaded using Proteus (version 0.2.14) (Gierlinski et al., 2018) and summarised to protein level counts using the hi-flyer method (mean of the top three most abundant peptides). Because wild-type plants lacking GFP were used as controls, a large number of the proteins enriched by immunoprecipitation were below the detection threshold in the control. This group of proteins can be classified as ‘missing not at random’ (MNAR). In all proteomics experiments, there will also be a number of proteins which are not detected purely by chance: these are referred to as ‘missing at random’ (MAR). We treated proteins that were missing from all replicates of a condition as MNAR, and proteins that were missing only from a subset of replicates as MAR. Using the imputeLCMD package (version 2.0) (Lazar, 2015), a K nearest neighbours’ strategy was used to impute MAR examples, and a quantile regression imputation of left centred data (QRILC) approach was used to impute MNAR examples. Differential expression analysis was performed on imputed data using limma (version 3.40.0) (Ritchie et al., 2015). Because imputation is not deterministic (i.e. will lead to different outcomes every time), we improved the robustness of the analysis by performing 999 bootstraps of the imputation and differential expression, and summarising the results using the median log2 fold change and harmonic mean p value.
 
-## ChIP-Seq
+### ChIP-Seq
 
-## Preparation of libraries for ChIP-Seq
+#### Preparation of libraries for ChIP-Seq
 
 ChIP against FPA and Pol II phosphorylated at either Ser5 or Ser2 of the CTD heptad repeat was performed as previously described (Yu et al., 2019). Polyclonal antibodies against FPA amino acids 536–901 were raised in rabbit by Covance.
 
-## ChIP-Seq data processing
+#### ChIP-Seq data processing
 
 FPA and Pol II ChIP-Seq data are available at ENA accession PRJNA449914. H3K9me2 ChIP-Seq data were downloaded from ENA accessions PRJDB5192 (Inagaki et al., 2017) and PRJNA427432 (Lai et al., 2020). Reads were aligned to the TAIR10 reference genome using Bowtie2 (version 2.3.5.1) (Langmead and Salzberg, 2012) with the parameters –mm –very-sensitive –maxins 800 –no-mixed –no-discordant. Counts per million normalised coverage profiles were generated using deepTools (version 3.4.3) (Ramírez et al., 2014). For 3′ end centred metagene profiles, we determined the major 3′ position per gene using the Araport11 annotation and existing Col-0 Helicos DRS data (Sherstnev et al., 2012). Metagenes centred on these positions were then generated in Python 3.6 using pyBigWig (version 0.3.17) (Ramírez et al., 2014), Numpy (version 1.18.1) (Harris et al., 2020) and Matplotlib (version 3.1.3) (Hunter, 2007). For differential H3K9me2 analysis, read counts per gene (including intronic regions) were generated using pysam (version 0.16.0), and differential expression analysis was performed using edgeR (version 3.22.5) (Robinson et al., 2010).
 
-## RNA
+### RNA
 
-## Total RNA isolation
+#### Total RNA isolation
 
 Total RNA was isolated using RNeasy Plant Mini kit (QIAGEN) and treated with TURBO DNase (Thermo Fisher Scientific) according to the manufacturers’ instructions. The total RNA concentration was measured using a Qubit 1.0 Fluorometer and Qubit RNA BR Assay Kit (Thermo Fisher Scientific), whilst RNA quality and integrity was assessed using a NanoDrop 2000 spectrophotometer (Thermo Fisher Scientific) and Agilent 2200 TapeStation System (Agilent).
 
-## Nanopore DRS
+### Nanopore DRS
 
-## Preparation of libraries for DRS using nanopores
+#### Preparation of libraries for DRS using nanopores
 
 Total RNA was isolated from Col-0, fpa-8 and 35S::FPA:YFP seedlings as described above. mRNA was isolated and Nanopore DRS libraries prepared (using the SQK-RNA001 Nanopore DRS Kit; Oxford Nanopore Technologies) as previously described (Parker et al., 2020). Libraries were loaded onto R9.4 flow cells (Oxford Nanopore Technologies) and sequenced using a 48 hr runtime. Four biological replicates were performed for each genotype.
 
-## Nanopore DRS data processing
+#### Nanopore DRS data processing
 
 Nanopore DRS reads were basecalled using the Guppy (version 3.6.0) high-accuracy model. Reads were mapped to the Arabidopsis TAIR10 genome (Arabidopsis Genome Initiative, 2000) using minimap2 (version 2.17) with the parameters -a -L --cs=short x splice -G20000 --end-seed-pen=12 --junc-bonus=12 uf. Spliced alignment was guided using junctions from the Araport11 annotation (Cheng et al., 2017). Nanopore DRS reads can suffer from ‘oversplitting’ – where the signal originating from a single RNA molecule is incorrectly interpreted as two or more reads (Parker et al., 2020). These errors can be systematic and result in false positive 3′ ends. To filter these errors, we identified reads that were sequenced consecutively through the same pore and also mapped contiguously on the genome (within 1 kb of each other). In this way, we filtered all except the most 3′ reads, which should contain the genuine RNA 3′ end. Pipelines for processing Nanopore DRS data were built using Snakemake (Köster and Rahmann, 2012).
 
-## Helicos DRS
+### Helicos DRS
 
-## Preparation of samples for Helicos DRS
+#### Preparation of samples for Helicos DRS
 
 Total RNA was isolated from the Col-0, fpa-8 and 35S::FPA:YFP seedlings as described above. Samples were processed by Helicos BioSciences as previously described (Ozsolak et al., 2009; Sherstnev et al., 2012). Three biological replicates were performed for each genotype.
 
-## Helicos DRS data processing
+#### Helicos DRS data processing
 
 Helicos DRS reads were mapped to the Arabidopsis TAIR10 genome using Heliosphere (version 1.1.498.63) as previously described (Sherstnev et al., 2012). Reads were filtered to remove those with insertions or deletions of >4 nt and to mask regions with low complexity, as determined using DustMasker (Camacho et al., 2009) (from BLAST +suite version 2.10.1) set at DUST level 15 (Sherstnev et al., 2012).
 
-## Differential 3′ end analysis of Nanopore and Helicos DRS datasets
+### Differential 3′ end analysis of Nanopore and Helicos DRS datasets
 
 Transcriptional loci were first identified in Col-0, fpa-8 and 35S::FPA:YFP Nanopore DRS reads using the long-read transcript assembly tool StringTie2 version 2.1.1 (Pertea et al., 2015). Novel transcriptional loci were merged with annotated loci from the Araport11 reference (Cheng et al., 2017). To detect sites with altered 3′ end distributions in fpa-8 and 35S::FPA:YFP, we pooled the replicates of either Nanopore or Helicos DRS data and identified reads overlapping each transcriptional locus. These reads were used to build distributions of 3′ end locations. The difference in 3′ end distributions between the treatment and control (Col-0) was measured using EMD. To identify loci with statistically significant differences in 3′ distributions, we performed an EMD permutation test using 999 bootstraps: for this, reads for each locus were randomly shuffled between the treatment and control samples to create null distributions, and the EMD recalculated. The histogram of null EMDs was fitted using a gamma distribution, and the p-value (probability of achieving the observed EMD or greater by chance) was calculated from the distribution. p-Values were corrected for multiple testing using the Benjamini–Hochberg method. Genes with an EMD >25 and an FDR < 0.05 were considered to be differentially alternatively polyadenylated, and the directionality of change was identified using the difference in mean 3′ position. Software developed to perform differential 3′ analysis is available on GitHub at https://github.com/bartongroup/d3pendr copy archived at [swh:1:rev:a6cb6db47749db76907ba58194d22d4958154238]; and 10.5281/zenodo.4319113, and can be used with Nanopore DRS, Helicos DRS, or Illumina 3′ tag-based datasets.
 
-## Illumina RNA sequencing
+### Illumina RNA sequencing
 
-## Preparation of libraries for Illumina RNA sequencing
+#### Preparation of libraries for Illumina RNA sequencing
 
 Total RNA was isolated from the Col-0, fpa-8 and 35S::FPA:YFP seedlings as described above. mRNA was isolated and sequencing libraries prepared using the NEBNext Ultra Directional RNA Library Prep Kit for Illumina (New England Biolabs) by the Centre for Genomic Research (University of Liverpool). 150 bp paired-end sequencing was carried out on Illumina HiSeq 4000. Six biological replicates were performed for each genotype.
 
-## Illumina RNA sequencing data processing
+#### Illumina RNA sequencing data processing
 
 Illumina RNA-Seq data were assessed for quality using FastQC (version 0.11.9) and MultiQC (version 1.8) (Andrews, 2010; Ewels et al., 2016). Reads were mapped to the TAIR10 genome using STAR (version 2.7.3a) (Dobin et al., 2013) with a splice junction database generated from the Araport11 reference annotation (Cheng et al., 2017). Counts per million normalised coverage tracks were created using samtools (version 1.10) and deepTools (version 3.4.3) (Ramírez et al., 2014). To identify expressed regions in each locus, the coverage profiles of each treatment and control replicate were first extracted using pyBigWig (version 0.3.17) (Ramírez et al., 2014). These were normalised such that the area under each profile was equal to the mean area under the profiles. A normalised coverage threshold of 1 was used to identify expressed regions of the loci. These regions were further segmented when at least two-fold differences in expression within a 25-nt window were found between control and treatment conditions (and then regions smaller than 50 nt removed). Expression of the segmented regions was then calculated using featureCounts (version 2.0.0) (Liao et al., 2013). Each read pair was counted as one fragment, and only properly paired, concordant and primary read pairs were considered. Differential usage within transcriptional loci was assessed using DEXSeq (version 1.32.0) (Reyes et al., 2013). Loci were considered to be differentially processed if they had a locus-level FDR < 0.05 and at least one region with an absolute logFC >1 and FDR < 0.05. For differential splice junction usage analysis, counts of splice junctions annotated in the bespoke Nanopore DRS-derived annotation, plus Araport11 annotation, were generated for each locus using pysam (version 0.16.0). Differential splice junction usage was assessed using DEXSeq (version 1.32.0) (Reyes et al., 2013). Loci were considered to be differentially spliced if they had a locus-level FDR < 0.05 and at least one junction with an absolute logFC >1 and FDR < 0.05.
 
-## Gene tracks
+### Gene tracks
 
 Gene track figures were generated in Python 3.6 using Matplotlib (version 3.1.3) (Hunter, 2007). For gene tracks where any condition had >200 Nanopore DRS read alignments, 200 representative alignments were selected by random sampling without replacement (except for the FPA gene track figure, where 500 read alignments were sampled). nanoPARE data (Schon et al., 2018) were processed as previously described (Parker et al., 2020). For reannotated gene loci, domains were predicted using the InterproScan web client (Mitchell et al., 2019) and LRRs were predicted using LRRpredictor web client (Martin et al., 2020). Protein alignments were created and visualised in Jalview (version 2.11) (Waterhouse et al., 2009) using T-Coffee (Notredame et al., 2000).
 
-## Protein domain family enrichment analysis
+### Protein domain family enrichment analysis
 
 To conduct protein domain enrichment analysis, InterPro domain annotations of Arabidopsis proteins were downloaded from BioMart (Smedley et al., 2009) and converted to genomic co-ordinates using the Araport11 annotation (Cheng et al., 2017). Domain families overlapping each locus tested for alternative polyadenylation using either Nanopore or Helicos DRS were identified using pybedtools (version 0.8.1) (Dale et al., 2011). To identify enriched domain families, domains were randomly shuffled between tested loci in 19,999 bootstraps, and the number of times that each domain class overlapped by chance with significantly alternatively polyadenylated loci was recorded. This was compared with the observed overlap of each domain family with alternatively polyadenylated loci to calculate p-values, which were corrected for multiple testing using the Benjamini–Hochberg method.
 
-## Manual annotation of alternatively polyadenylated NLR genes
+### Manual annotation of alternatively polyadenylated NLR genes
 
 To identify which of the 206 previously annotated NLR genes present in Col-0 were alternatively polyadenylated in fpa-8 and 35S::FPA, we devised a standard operating procedure for visual inspection. Genes that had Nanopore DRS read coverage in at least two conditions were considered to be expressed. Genes were considered to be alternatively polyadenylated if they had multiple 3′ end locations with each supported by at least four Nanopore DRS reads, and if there was a clear difference in Nanopore DRS coverage in the treatment condition compared with Col-0. Helicos and Illumina corroboration of poly(A) sites and coverage changes was also taken into consideration.
 
-## Genomic organisation of alternatively polyadenylated NLR genes
+### Genomic organisation of alternatively polyadenylated NLR genes
 
 To test whether expressed NLR genes with FPA-dependent alternative polyadenylation were associated with NLR gene clusters, we used previously produced cluster assignments for Col-0 NLR genes (Lee and Chae, 2020). We also tested the association of FPA-dependent alternative polyadenylation with previously produced hypervariable NLR classifications (Prigozhin and Krasileva, 2021). The association of alternatively polyadenylated genes with both major NLR gene clusters and hypervariable NLRs was assessed using a Chi squared test. To test whether FPA-sensitive NLRs are found in regions with high synteny diversity, we used 5 kb sliding window estimates of synteny diversity calculated from seven diverse Arabidopsis ecotypes (Jiao and Schneeberger, 2020). For each expressed NLR gene, the window with the largest overlap was used as the estimate of synteny diversity. The association with alternatively polyadenylated genes was assessed using a t-test.
 
-## RNA gel blot analysis of RPP7 mRNAs
+### RNA gel blot analysis of RPP7 mRNAs
 
 RNA gel blot analysis was carried out as previously described (Quesada et al., 2003) with minor modifications. RPP7 mRNA was detected using a probe annealing to the second exon of the RPP7 (AT1G58602) gene (200 bp PCR product amplified with the following primers: Forward: 5′-TCGGGGACTACTACTACTCAAGA-3′ and Reverse: 5′-TCTTGATGGTGTGAAAGAATCTAGT-3′). β-TUBULIN mRNA was used as a loading control and visualised by a probe annealing to the third exon of the β-TUBULIN (AT1G20010) gene (550 bp PCR product amplified with the following primers: Forward: 5′- CTGACCTCAGGAAACTCGCG-3′ and Reverse: 5′- CATCAGCAGTAGCATCTTGG-3′). The probes were 5′ labelled using [γ-32P]-ATP (Perkin Elmer) and DECAprime II DNA labelling kit (Thermo Fisher Scientific) and purified on illustra G-50 columns (GE Healthcare Life Sciences). mRNA isoforms were visualised and quantified using an Amersham Typhoon Gel and Blot Imaging System (GE Healthcare Bio-Sciences AB). The RiboRuler High Range RNA Ladder (Thermo Fisher Scientific), used to identify the approximate size of RNA bands, was first dephosphorylated using FastAP Thermosensitive Alkaline Phosphatase (Thermo Fisher Scientific) and then labelled with [γ-32P]-ATP (Perkin Elmer) using T4 Polynucleotide Kinase (Thermo Fisher Scientific) before gel loading.
 
-## m6A LC-MS/MS
+### m6A LC-MS/MS
 
 Total RNA was isolated and checked as described above. mRNA was extracted twice from approximately 75 μg of total RNA using the Dynabeads mRNA Purification Kit (Thermo Fisher Scientific) according to the manufacturer’s instructions. The quality and quantity of mRNA was assessed using a NanoDrop 2000 spectrophotometer (Thermo Fisher Scientific) and Agilent 2200 TapeStation System (Agilent). Samples for m6A LC-MS/MS were prepared as previously described (Huang et al., 2018) with several modifications. First, 100 ng mRNA was diluted in a total volume of 14 ml nuclease-free water (Thermo Fisher Scientific) and digested by nuclease P1 (1 U, Merck) in 25 µl buffer containing 20 mM NH4OAc (pH 5.3) at 42°C for 2 hr. Next, 3 µl freshly made 1 M NH4HCO3 and calf intestinal alkaline phosphatase (1 U, New England Biolabs) were added, and samples were incubated at 37°C for 2 hr. The samples were then diluted to 50 µl with nuclease-free water and filtered (0.22 μm pore size, 4 mm diameter; Millipore). LC-MS/MS was carried out by the FingerPrints Proteomics facility at the University of Dundee. m6A/A ratio quantification was performed in comparison with the curves obtained from pure adenosine (endogenous P1 receptor agonist, Abcam) and m6A (modified adenosine analog, Abcam) nucleoside standards. Statistical analysis was performed using a two-way t-test.
 
-## Pathogenesis assays
+### Pathogenesis assays
 
 Pathogenesis assays were carried out as previously described (Tomé et al., 2014). The Hpa-Hiks1 isolate was maintained by weekly sub-culturing on Ksk-1 plants. A solution containing Hpa-Hiks1 spores was used to inoculate 14-day-old Col-0, Ksk-1, fpa-7, fpa-8, pFPA::FPA, and 35S::FPA:YFP seedlings. Sporangiophores were counted 4 days after inoculation. The experiment was repeated three times using up to 45 plants per genotype per each repeat. Statistical analysis was performed with negative binomial regression using Statsmodels (version 0.11.0) (Seabold and Perktold, 2010), plants were grouped by experimental repeat during testing to control for variation between repeats.
 
-## Code availability
+### Code availability
 
 All pipelines, scripts and notebooks used to generate figures are available from GitHub at https://github.com/bartongroup/Simpson_Barton_FPA_NLRs and Zenodo at 10.5281/zenodo.4319108. The software tool developed for detecting changes in poly(A) site choice in Nanopore and Helicos DRS data are available from GitHub at https://github.com/bartongroup/d3pendr and Zenodo at 10.5281/zenodo.4319112.

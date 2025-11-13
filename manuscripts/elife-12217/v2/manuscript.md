@@ -53,7 +53,7 @@
 
 ## Abstract
 
-10.7554/eLife.12217.001 Swine influenza presents a substantial disease burden for pig populations worldwide and poses a potential pandemic threat to humans. There is considerable diversity in both H1 and H3 influenza viruses circulating in swine due to the frequent introductions of viruses from humans and birds coupled with geographic segregation of global swine populations. Much of this diversity is characterized genetically but the antigenic diversity of these viruses is poorly understood. Critically, the antigenic diversity shapes the risk profile of swine influenza viruses in terms of their epizootic and pandemic potential. Here, using the most comprehensive set of swine influenza virus antigenic data compiled to date, we quantify the antigenic diversity of swine influenza viruses on a multi-continental scale. The substantial antigenic diversity of recently circulating viruses in different parts of the world adds complexity to the risk profiles for the movement of swine and the potential for swine-derived infections in humans. DOI: http://dx.doi.org/10.7554/eLife.12217.001
+Swine influenza presents a substantial disease burden for pig populations worldwide and poses a potential pandemic threat to humans. There is considerable diversity in both H1 and H3 influenza viruses circulating in swine due to the frequent introductions of viruses from humans and birds coupled with geographic segregation of global swine populations. Much of this diversity is characterized genetically but the antigenic diversity of these viruses is poorly understood. Critically, the antigenic diversity shapes the risk profile of swine influenza viruses in terms of their epizootic and pandemic potential. Here, using the most comprehensive set of swine influenza virus antigenic data compiled to date, we quantify the antigenic diversity of swine influenza viruses on a multi-continental scale. The substantial antigenic diversity of recently circulating viruses in different parts of the world adds complexity to the risk profiles for the movement of swine and the potential for swine-derived infections in humans.
 
 ## Introduction
 
@@ -71,47 +71,33 @@ In order to help fill this knowledge gap, we compiled the largest and most geogr
 
 ## Results
 
-## Dimensionality of influenza virus antigenic evolution in swine
+### Dimensionality of influenza virus antigenic evolution in swine
 
 We used hemagglutination inhibition (HI) assays to antigenically characterize a geographically diverse collection of H1 viruses from swine and humans from 1930–2013 (n=194) and H3 viruses from swine and humans from 1968–2013 (n=379) and genetically sequenced all antigenically characterized viruses. Of these, 101 H1 and 73 H3 swine influenza viruses were newly characterized for this study.
 
 In order to accurately quantify the antigenic variation of influenza viruses from swine we first determined the appropriate number of dimensions for accurately representing their antigenic relationships. Previous work on quantifying the antigenic evolution of seasonal influenza viruses showed that the evolution of H3 viruses in humans, as measured in HI assays, could be accurately visualized in two dimensions (2D) using antigenic cartography (Smith et al., 2004). In contrast, previous work on swine and equine H3 influenza viruses found that three dimensions (3D) were necessary to accurately visualize antigenic evolution using antigenic cartography (Lewis et al., 2011; 2014; de Jong et al., 2007; Lorusso et al., 2011). In this study we extensively tested the dimensionality of H1 and H3 influenza virus antigenic maps and found that the antigenic variation of both virus subtypes was most accurately represented in three dimensions.
 
-## Antigenic diversity of H1 influenza viruses in swine
+### Antigenic diversity of H1 influenza viruses in swine
 
-To investigate the combined antigenic and genetic evolution of our study viruses we implemented a Bayesian multi-dimensional scaling (BMDS) method for inferring antigenic and genetic relationships (
+To investigate the combined antigenic and genetic evolution of our study viruses we implemented a Bayesian multi-dimensional scaling (BMDS) method for inferring antigenic and genetic relationships (Bedford et al., 2014). As of 2013, three major H1 lineages circulated in swine: 1. the classical 1A lineage – descended from the ancestors of the 1918 human influenza pandemic, was first detected in swine in the 1930’s, and gave rise to the human H1N1pdm09 viruses and swine H1N1pdm09-like sub-lineage viruses; 2. the human seasonal-like 1B lineage – resulting from multiple introductions from human seasonal H1 viruses; 3. the Eurasian avian-like 1C lineage – arising from an introduction from wild birds into swine and first detected in Europe in the 1980’s (Figure 1A, Zell et al., 2013).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/12217/elife-12217-fig1-v2.jpg)
 
-**Figure 1.:** Each colored ball represents a single virus. Viruses are colored by lineage (A,C) and by geography (B,D). Lines connecting each virus represent inferred phylogenetic relationships. Distances for antigenic dimensions are measured in antigenic units (AU) and each unit is equivalent to a two-fold dilution in HI assay data. Antigenic distance can be interpreted as a measure of antigenic similarity – viruses close to one another are more antigenically similar than viruses further apart. Interactive visualizations are available at https://phylogeography.github.io/influenzaH1/ and https://phylogeography.github.io/influenzaH3/. Source data and GIF files for rotational views of 3D antigenic maps in Figure 1 have been deposited in Dryad (Lewis et al., 2016).DOI: http://dx.doi.org/10.7554/eLife.12217.003
+**Figure 1.:** Each colored ball represents a single virus. Viruses are colored by lineage (A,C) and by geography (B,D). Lines connecting each virus represent inferred phylogenetic relationships. Distances for antigenic dimensions are measured in antigenic units (AU) and each unit is equivalent to a two-fold dilution in HI assay data. Antigenic distance can be interpreted as a measure of antigenic similarity – viruses close to one another are more antigenically similar than viruses further apart. Interactive visualizations are available at https://phylogeography.github.io/influenzaH1/ and https://phylogeography.github.io/influenzaH3/. Source data and GIF files for rotational views of 3D antigenic maps in Figure 1 have been deposited in Dryad (Lewis et al., 2016).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/12217/elife-12217-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** Figure 1A,B colored by H1 genetic sub lineages in the Bayesian MCC tree.DOI: http://dx.doi.org/10.7554/eLife.12217.004
-
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/12217/elife-12217-fig1-figsupp2-v2.jpg)
-
-**Figure 1—figure supplement 2.:** DOI: http://dx.doi.org/10.7554/eLife.12217.005
 
 ![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/12217/elife-12217-fig1-figsupp3-v2.jpg)
 
-**Figure 1—figure supplement 3.:** Figure 1C,D colored by H3 genetic sub lineages in the Bayesian MCC tree.DOI: http://dx.doi.org/10.7554/eLife.12217.006
-
 ![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/12217/elife-12217-fig1-figsupp4-v2.jpg)
-
-**Figure 1—figure supplement 4.:** DOI: http://dx.doi.org/10.7554/eLife.12217.007
 
 ![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/12217/elife-12217-fig1-figsupp5-v2.jpg)
 
-**Figure 1—figure supplement 5.:** DOI: http://dx.doi.org/10.7554/eLife.12217.008
-
 ![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/12217/elife-12217-fig1-figsupp6-v2.jpg)
 
-**Figure 1—figure supplement 6.:** DOI: http://dx.doi.org/10.7554/eLife.12217.009
-
 ![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/12217/elife-12217-fig1-figsupp7-v2.jpg)
-
-**Figure 1—figure supplement 7.:** DOI: http://dx.doi.org/10.7554/eLife.12217.010
 
 Our combined antigenic and genetic analyses of H1 viruses in swine showed an inconsistent relationship between antigenic clustering and genetic lineage through time with occasional emergence of new antigenic variants. In all geographic regions for which we had antigenic data we found unique patterns of antigenic evolution within individual lineages.
 
@@ -125,7 +111,7 @@ In the USA, the classical swine 1A lineage viruses co-circulated with the H1N1pd
 
 To assess the risk of virus introduction associated with moving live swine between continents we compared the MPDs of swine influenza H1 viruses circulating in different parts of the world. The human seasonal-like 1B viruses circulating in European swine were on average 11.7 AU (MPD) from the human seasonal-like 1B viruses in USA swine. The Eurasian avian-like 1C lineage viruses were 6.8 AU (MPD) from the human seasonal-like 1B lineage viruses in the USA.
 
-## Antigenic diversity of H3 influenza viruses in swine
+### Antigenic diversity of H3 influenza viruses in swine
 
 Just as for the H1 viruses, we used BMDS (Bedford et al., 2014) to investigate the antigenic and genetic evolution of H3 viruses (Figure 1C,D). In European swine there were four H3 introductions included in our antigenic characterization (Figure 1—figure supplement 3: Figure 1—figure supplement 4). Of these, the European 3A lineage (A/Port Chalmers/1973-like) introduction was the most commonly detected lineage, showing evidence for three sequential antigenic clusters and evolving on a markedly different path from the putative ancestor in humans (Figure 1C,D [blue]). A separate introduction from humans into swine of an antigenically distinct 1970’s-like human seasonal virus also circulated in European swine in the 1980s and 1990s (Figure 1—figure supplement 1 [Europe 2 Introduction]). The earliest strain in the European 3A lineage was 6.5 AU from the A/Port Chalmers/1973 reference strain (Figure 1C large grey) and the most recent strain was 9.8 AU (Supplementary file 2). The distance from our representative of recent human seasonal H3 viruses (A/Victoria/361/2011) to the H3 European virus in swine and was 14.9 AU (MPD).
 
@@ -133,17 +119,17 @@ In the USA, we found evidence for three H3 virus introduction events from humans
 
 In Asia we found evidence for multiple introductions of H3 viruses and subsequent antigenic drift from the six representative viruses in our dataset including an introduction likely mediated by translocation of a virus circulating in USA swine to Asian swine (Nelson et al., 2015d). Two separate introductions from humans were detected in Japan that resulted in circulation in swine beyond the time of circulation of the ancestral strain in humans. The introductions were ~5.2 AU from A/Victoria/361/2011 and 10.9 AU (MPD) from the H3 strains circulating in European swine. The most recent seasonal human H3 introduction detected in Asia was from Vietnam and this virus was 3.8 AU away from A/Victoria/361/2011 (Supplementary file 2).
 
-## Rates of antigenic drift in swine
+### Rates of antigenic drift in swine
 
-To investigate the rates of swine influenza virus antigenic drift away from the most recent common ancestor for each genetic lineage in each geographic region we used TimeSlicer available in SPREAD (
+To investigate the rates of swine influenza virus antigenic drift away from the most recent common ancestor for each genetic lineage in each geographic region we used TimeSlicer available in SPREAD (Bielejec et al., 2011). For H1 viruses in swine, the classical 1A lineage evolved at a mean rate of 0.15 AU per year from the earliest antigenically characterized representative in the dataset (A/swine/Iowa/15/1930) (Figure 2A, Supplementary file 3). The human seasonal-like 1B viruses introduced into European swine evolved at a mean rate of 0.17 AU per year (Figure 2B, Supplementary file 3). The introductions of human seasonal H1 viruses into USA swine that gave rise to the Delta-1 and Delta-2 lineages showed slightly different rates of antigenic drift – 0.63 for Delta-1 and 0.85 for Delta-2 – both significantly faster than the human seasonal introduction in European swine (Figure 2B, Supplementary file 3) but they were only observed over a relatively short time period. The Eurasian avian-like swine 1C lineage evolved at a mean rate of 0.15 AU per year (Figure 2C, Supplementary file 3). With the exception of the human seasonal-like 1B lineage viruses in the USA, the overall antigenic diversity of H1 viruses in swine remained remarkably constant over the study period (Figure 2A,B,C). The antigenic diversity of the Delta-1 and Delta-2 sublineages in the USA began to expand rapidly around 2009 for reasons that remain to be elucidated (Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/12217/elife-12217-fig2-v2.jpg)
 
-**Figure 2.:** Solid colored lines represent year-to-year antigenic drift distance, where drift for year i is measured as the mean of Euclidean distances among strains in a phylogenetic lineage in year i compared to the mean of Euclidean distances among strains of that phylogenetic lineage from the previous year (i–1). The dotted line represents antigenic diversity among H1 and H3 strains by lineage through time. For the solid and dotted lines, the shaded region represents the range of the highest posterior density estimates. Multiple introductions which circulate for >5 years of the human seasonal-like swine H1 lineage in European (purple) and USA (gold) swine were calculated separately. Source data for Figure 2 has been deposited in Dryad (Lewis et al., 2016).DOI: http://dx.doi.org/10.7554/eLife.12217.011
+**Figure 2.:** Solid colored lines represent year-to-year antigenic drift distance, where drift for year i is measured as the mean of Euclidean distances among strains in a phylogenetic lineage in year i compared to the mean of Euclidean distances among strains of that phylogenetic lineage from the previous year (i–1). The dotted line represents antigenic diversity among H1 and H3 strains by lineage through time. For the solid and dotted lines, the shaded region represents the range of the highest posterior density estimates. Multiple introductions which circulate for >5 years of the human seasonal-like swine H1 lineage in European (purple) and USA (gold) swine were calculated separately. Source data for Figure 2 has been deposited in Dryad (Lewis et al., 2016).
 
 For H3 viruses, we found that the 3B lineages viruses in USA swine evolved antigenically at a faster rate than the H3 viruses introduced into European swine (0.49 AU per year vs 0.28 AU per year [Figure 2D,E, Supplementary file 3]). Additionally, the antigenic diversity of H3 viruses in USA swine, particularly since 2010, has increased at a faster rate than that of H3 viruses in Europeans swine. Thus sustained circulation of antigenic drift variants within US swine has substantially increased the observed antigenic diversity in this lineage relative to the observed antigenic diversity in other geographic regions.
 
-## Additional antigenic diversity can be inferred from genetic sequence data
+### Additional antigenic diversity can be inferred from genetic sequence data
 
 In addition to the BMDS analyses of viruses for which we had both antigenic and genetic data, we also performed large-scale phylogenetic analyses of publicly available swine influenza virus sequence. Through these analyses we inferred potentially important gaps in the global antigenic data that suggest our antigenic dataset underrepresents the true global antigenic diversity of swine influenza viruses.
 
@@ -151,7 +137,7 @@ For H1 viruses that circulated in swine as of 2013, we find that the major genet
 
 Even in cases where we have antigenically-characterized clade representatives, the long branch lengths associated with some introductions could conceal antigenic drift away from the characterized clade representatives. The markedly different evolutionary patterns seen in the H3 lineages characterized in swine and the inferred antigenic profile of the viruses introduced to swine, suggests that the true diversity of H3 viruses circulating in swine is likely to be substantially greater than the diversity found in our BMDS analyses. In particular, we identified 19 additional examples of introductions of seasonal H3 viruses from humans in 10 countries (Figure 1—figure supplement 5 – black tips: Figure 1—figure supplement 7). Based on the likely time of these introductions from humans into swine we estimate that the introduced viruses represent at least 12 distinct antigenic variants based on the antigenic variation of their human seasonal influenza ancestors. Similar to the H1 genetic lineages described above, these additional H3 lineages also require antigenic testing to interpret the impact of these introductions on the global antigenic diversity of IAV in swine.
 
-## Risk posed by swine influenza viruses to the humans
+### Risk posed by swine influenza viruses to the humans
 
 In addition to the challenge the observed antigenic diversity poses to swine populations, the antigenic diversity of swine influenza viruses also creates substantial risks for human populations. The outbreak and pandemic potential of swine influenza viruses in humans is at least partially determined by human population immunity against swine viruses. This component of risk can be inferred from the antigenic distance of swine influenza viruses to seasonal viruses or vaccine strains in humans to which humans are likely to have immunity. Importantly, individuals are unlikely to have immunity to viruses that only circulated before they were born (Fonville et al., 2014).
 
@@ -175,27 +161,27 @@ Quantifying the public health risk of circulating swine influenza viruses in ter
 
 ## Materials and methods
 
-## Viruses
+### Viruses
 
 Using hemagglutination inhibition (HI) assays, we characterized the antigenic properties of swine influenza A H1 and H3 virus strains circulating 1) in Europe, as part of the third program of the European Surveillance Network for Influenza in Pigs (ESNIP3) (www.esnip3.com), and 2) in Asia in collaboration with laboratories in Hong Kong, Japan, Vietnam and Thailand. We also expanded previously published datasets for North America. To this HI assay dataset we added previously published swine and human HI assay data for H1 and H3 influenza viruses (Lewis et al., 2014; de Jong et al., 2007; Lorusso et al., 2011; Koel et al., 2013; Nfon et al., 2011), resulting in an antigenic dataset consisting of 194 swine and human H1 influenza viruses and 379 swine and human H3N2 influenza viruses.
 
 Viruses were propagated in Madin-Darby canine kidney (MDCK) cells or embryonated fowls’ eggs. Harvested cell culture supernatant or allantoic ﬂuid was clarified by centrifugation. For antisera production virus was concentrated by ultracentrifugation over a 20% w/v sucrose cushion. Virus pellets were resuspended overnight at 4°C in sterile phosphate buffered saline at pH 7.4 and stored at - 70°C for use in immunizing naïve pigs.
 
-## Swine antisera production
+### Swine antisera production
 
 Swine antisera to influenza A viruses were generated by the United States Department of Agriculture National Animal Disease Centre, Ames, Iowa as previously described (Lorusso et al., 2011). Additional sera were generated by the French Agency for Food, Environmental and Occupational Health & Safety, Ploufragan, France, and by the Technical University of Denmark, Copenhagen, Denmark. To generate these additional antisera each animal was first inoculated intranasally with live influenza virus (7 to 8 log10 EID50 in a volume of 3 ml; 1.5 ml per nostril). Three weeks later equal volumes of the same inoculating virus and Freund’s complete adjuvant (total volume 3 ml) or inoculating virus and Montanide ISA206 (Seppic, Givaudan-Lavirotte, France) (total volume 2 ml) were administered by intramuscular/intradermal injection The animals were killed and bled two weeks after the last immunization. For sera raised in the USA, pigs were cared for in compliance with the Institutional Animal Care and Use Committee of the National Animal Disease Centre and for sera raised in the EU, all animal work was done in accordance with the local rules and procedures with ethical permissions granted following the codes of practice for performing scientific studies using animals.
 
-## Virus antigenic characterization
+### Virus antigenic characterization
 
 HI assays using swine antisera were performed to compare the antigenic properties of swine and human influenza H1 and H3 viruses. Prior to HI testing, sera used for testing most H1 and all H3 viruses were treated with receptor-destroying enzyme (Sigma-Aldrich, MO, USA) and sera used for testing H1 viruses from the USA were treated with kaolin (Fisher Scientific, Pittsburg, PA, USA). All sera were then heat inactivated at 56°C for 30 min and adsorbed with 50% turkey red blood cells (RBC) to remove nonspecific inhibitors of hemagglutination. HI assays were performed by testing reference antisera raised to swine influenza viruses against selected H1 and H3 swine and human influenza viruses according to standard techniques. Serial 2-fold dilutions starting at 1:10 were tested for their ability to inhibit the agglutination of 0.5% turkey RBC with four hemagglutinating units of swine and human H1 and H3 viruses.
 
-## Antigenic cartography
+### Antigenic cartography
 
 To combine HI data generated in different laboratories we used a standard reference panel consisting of viruses and swine antisera raised to selected reference strains and shared among laboratories (Lewis et al., 2014; Lorusso et al., 2011). Our initial quantitative analyses of the antigenic properties of swine and human influenza H1 and H3 viruses used antigenic cartography methods as previously described for human (H3) and swine influenza A (H3) and (H1) viruses (Smith et al., 2004; Lewis et al., 2014; de Jong et al., 2007; Lorusso et al., 2011; Nfon et al., 2011).
 
 To identify the most appropriate dimensionality of the antigenic maps for each virus subtype, we made first constructed antigenic maps of H1 and H3 viruses in 1, 2, 3, 4, and 5 dimensions and compared the HI titer differences to the resultant antigenic map distances for each dimension. Increasing from 1 to 2, and from 2 to 3 dimensions, resulted in significant improvement in correlation between HI data and map distances indicating that 3 dimensional (3D) maps provide a more accurate representation of the underlying HI data (Supplementary file 1). Further increasing map dimensionality resulted in smaller and statistically insignificant improvements in the quality of the fit of the map to the underlying HI data. Based on these results, we concluded that 3D maps were sufficient for capturing the antigenic variation of both H1 and H3 viruses in our combined swine and human datasets. Next we removed a random 10%, 20%, 30%, 40%, and 50% of the HI data and re-made the antigenic maps to test the robustness of the antigenic maps and the resolution at which they could visualize antigenic distances among viruses. The precision of point positioning in the 3D antigenic maps was 0.68 antigenic units (AU) for H1 and 0.85 AU for H3. One AU is equivalent to a two-fold difference in HI assay titer. Three AUs are considered sufficient antigenic difference to warrant an update of the human influenza vaccine.
 
-## Integrated analysis of antigenic and genetic evolution
+### Integrated analysis of antigenic and genetic evolution
 
 For all isolates with both HA sequence data and HI measurements available, we implemented a Bayesian multidimensional scaling (BMDS) cartographic model to jointly infer antigenic and phylogenetic relationships of the viruses as described by Bedford et al. (2014)
 
@@ -205,7 +191,7 @@ The BMDS approach implements a Bayesian analog of antigenic cartographic models 
 
 We used TimeSlicer available in SPREAD (Bielejec et al., 2011) to quantify the rates of antigenic evolution and levels of standing diversity over the posterior distribution of trees. This was achieved by ‘slicing’ through the BMDS-derived antigenic map location-tagged phylogenies at year-intervals, imputing the unobserved ancestral antigenic locations for branches that intersect those time points, and summarizing the drift front distance (in AU) from the most recent common ancestor (MRCA) and the mean pairwise distance between locations (in AU) for each lineage at that slice time. The overall antigenic drift rate was calculated by taking the total imputed drift front distance from the lineage MRCA divided by the total time elapsed, measured in AU per year. 95% high posterior density (HPD) estimates were used to measure the uncertainty in these inferences from the posterior sample of trees.
 
-## Other analyses
+### Other analyses
 
 H1 and H3 influenza A hemagglutinin (HA1) sequences representing the swine reference strains as well as viruses from swine populations in all available geographic regions were compiled from the NIAID Influenza Research Database (IRD) through the web site at http://www.fludb.org on 22/9/2014 (Squires et al., 2012) and combined with then unpublished sequences from European swine influenza viruses generated as part of the ESNIP3 project (Watson et al., 2015). We added HA1 human seasonal H1 and H3 influenza virus sequences from IRD that represented the entire time period of the study and all human vaccine strain selections.
 

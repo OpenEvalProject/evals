@@ -39,23 +39,54 @@ The stance and swing times during running were 304 ± 23 ms and 439 ± 26 ms for
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/67182/elife-67182-fig1-v1.jpg)
 
-**Figure 1.:** A) and muscle fascicle length (normalized to optimal fascicle length L0, B), pennation angle (C), and electromyographic (EMG) activity (normalized to a maximum voluntary isometric contraction, D) during the stance phase of running (mean ± SD).Figure 1—source data 1.
-
 The stance phase-averaged force-length potential of both muscles was high and not significantly different (p=0.689, Figure 2). The average pennation angle of the soleus was significantly greater than that of the vastus lateralis (soleus 23.9 ± 5.1°, vastus lateralis 13.3 ± 1.8°, p<0.001) and increased continuously throughout stance, whereas it remained almost unchanged in the vastus lateralis (Figure 1). The average operating velocity of the soleus fascicles was significantly higher compared to the vastus lateralis (soleus 0.799 ± 0.260 L0/s, vastus lateralis 0.084 ± 0.258 L0/s, p<0.001), which showed an almost isometric contraction throughout stance. Consequently, the force-velocity potential (p<0.001) and thus the overall force-length-velocity potential (p<0.001) of the soleus was significantly lower compared to the vastus lateralis during the stance phase (Figure 2). However, the higher shortening velocity of the soleus was close to the optimum for maximum enthalpy efficiency, leading to a significantly higher enthalpy efficiency over the stance phase in comparison to the vastus lateralis (p<0.001, Figure 3).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/67182/elife-67182-fig2-v1.jpg)
 
-**Figure 2.:** lateralis (VL, n = 14) force-length potential (A), force-velocity potential (B), and overall force-length-velocity potential (C) averaged over the stance phase of running.*Significant difference between muscles (p<0.05).Figure 2—source data 1.
+**Figure 2.:** *Significant difference between muscles (p<0.05).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/67182/elife-67182-fig3-v1.jpg)
 
-**Figure 3.:** *Significant difference between muscles (p<0.05).Figure 3—source data 1.
+**Figure 3.:** *Significant difference between muscles (p<0.05).
 
 The fascicle, muscle belly, and MTU length changes throughout stance as well as the resulting velocity decoupling coefficients (DC) are illustrated in Figure 4 for both muscles, where DCTendon quantifies the decoupling due to tendon compliance, DCBelly due to fascicle rotation, and DCMTU the overall decoupling of MTU and fascicles. There was a clear length and velocity-decoupling of MTU and belly due to tendon compliance in both muscles (Figure 4). The statistical parametric mapping (SPM) analysis revealed a significantly lower DCTendon of the soleus compared to the vastus lateralis between 4% and 8% of the stance phase (p=0.032) since decoupling started later for the soleus. Between 20% and 57% of the stance phase (p<0.001) and between 65% of the stance phase until lift-off, the soleus DCTendon was significantly higher than vastus lateralis (p<0.001, Figure 4). The DCTendon averaged over the stance phase of the soleus was also significantly greater (p<0.001, Table 1). Furthermore, the velocity-decoupling of muscle belly and fascicles due to fascicle rotation progressively increased in the second part of the stance phase for the soleus but was negligible for the vastus lateralis (Figure 4). The soleus DCBelly was significantly higher from 33% of the stance phase until lift-off compared to the vastus lateralis as shown by the SPM analysis (p<0.001, Figure 4) but also when averaged over the entire stance phase (p<0.001, Table 1). DCBelly was markedly lower than DCTendon, indicating that the tendon took over the majority of the overall decoupling in both muscles (Figure 4). Accordingly and similarly to DCTendon, the SPM analysis for the overall decoupling of MTU and fascicles showed that DCMTU of the soleus was significantly lower between 4% and 8% of the stance phase (p=0.032) and significantly higher from 20% to 57% of the stance phase and from 65% of the stance phase until lift-off compared to the vastus lateralis (p<0.001, Figure 4). The stance phase-averaged DCMTU of the soleus was significantly greater compared to the vastus lateralis as well (p<0.001, Table 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/67182/elife-67182-fig4-v1.jpg)
 
-**Figure 4.:** Differences between curves illustrate the length-decoupling due to tendon compliance, fascicle rotation, and the overall decoupling, respectively. The bottom row shows the resulting velocity-decoupling coefficients (DCs) as the absolute velocity differences between fascicles, belly, and MTU normalized to the maximum shorting velocity (see Materials and methods). Intervals of stance with a significant difference between both muscles are illustrated as hatched areas (p<0.05).Figure 4—source data 1.
+**Figure 4.:** Differences between curves illustrate the length-decoupling due to tendon compliance, fascicle rotation, and the overall decoupling, respectively. The bottom row shows the resulting velocity-decoupling coefficients (DCs) as the absolute velocity differences between fascicles, belly, and MTU normalized to the maximum shorting velocity (see Materials and methods). Intervals of stance with a significant difference between both muscles are illustrated as hatched areas (p<0.05).
+
+**Table 1.**
+ Average tendon (DCTendon), belly (DCBelly), and muscle-tendon unit (DCMTU) decoupling coefficients for the soleus (SOL) and vastus lateralis (VL) muscles during the stance phase of running (mean ± SD).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>SOL (n = 19)</th>
+      <th>VL (n = 14)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DCTendon (V/Vmax)</td>
+      <td>0.567 ± 0.128</td>
+      <td>0.180 ± 0.053*</td>
+    </tr>
+    <tr>
+      <td>DCBelly (V/Vmax)</td>
+      <td>0.016 ± 0.008</td>
+      <td>0.003 ± 0.002*</td>
+    </tr>
+    <tr>
+      <td>DCMTU (V/Vmax)</td>
+      <td>0.574 ± 0.127</td>
+      <td>0.179 ± 0.014*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Statistically significant difference between the two muscles (p<0.05)._
 
 ## Discussion
 
@@ -73,21 +104,21 @@ In conclusion, the present study demonstrated that during the stance phase of st
 
 ## Materials and methods
 
-## Participants and experimental design
+### Participants and experimental design
 
 Thirty-three physically active adults, accustomed to regular running on a recreational basis (i.e., no competitive runners), were included in the present investigation. None of the participants reported any history of neuromuscular or skeletal impairments in the 6 months prior to the recordings. The ethics committee of the university approved the study (EA2/076/15), and the participants gave written informed consent in accordance with the Declaration of Helsinki. From the right leg, either the soleus (n = 19, 29 ± 6 years, 177 ± 9 cm, 69 ± 9 kg, seven females) or vastus lateralis (n = 14, age 28 ± 4 years, height 179 ± 7 cm, body mass 75 ± 8 kg, three females) muscle fascicle length, fascicle pennation angle, and EMG activity were recorded during running on a treadmill at 2.5 m/s. Corresponding MTU lengths were calculated from the kinematic data and individually measured tendon lever arms. We further assessed the soleus and vastus lateralis force-fascicle length and force-fascicle velocity relationship to calculate the force-length and force-velocity potential of the soleus and the vastus lateralis muscle fascicles during running. The operating fascicle velocity was additionally mapped on the enthalpy efficiency-velocity relationship to assess the enthalpy efficiency of both muscles. The contribution of the decoupling of the fascicle length and velocity from the MTU to the operating force potential and enthalpy efficiency at the level of tendon and muscle belly during running was examined for both muscles as well. All data for one participant were collected on the same day and sensors (EMG, ultrasound, reflective markers) remained attached between the different parts of the experiment.
 
-## Joint kinematics, fascicle behavior, and electromyographic activity during running
+### Joint kinematics, fascicle behavior, and electromyographic activity during running
 
 After a familiarization phase, a 4 min running trial on a treadmill (soleus: h/p cosmos mercury, Isny, Germany; vastus lateralis: Daum electronic, ergo_run premium8, Fürth, Germany) was performed and kinematics of the right leg were captured by a Vicon motion capture system (version 1.8, Vicon Motion Systems, Oxford, UK, 250 Hz) using an anatomically referenced reflective marker setup (greater trochanter, lateral femoral epicondyle and malleolus, fifth metatarsal, and tuber calcanei). The kinematic data were used to determine the touchdown of the foot and the toe-off as consecutive minima in knee joint angle over time (Fellin et al., 2010). Furthermore, the kinematics of the ankle and knee joint served to calculate the MTU length change of the soleus and vastus lateralis during running as the product of ankle joint angle changes and Achilles tendon lever arm as well as knee joint angle changes and patellar tendon lever arm (Lutz and Rome, 1996), respectively. We used the ultrasound-based tendon-excursion method for the Achilles tendon lever arm determination (An et al., 1984). The patellar tendon lever arm was measured using magnetic resonance imaging in fully extended knee joint position and calculated as a function of the knee joint angle change using the data by Herzog and Read (Herzog and Read, 1993; for a detailed description of both tendon lever arm measurements, see Bohm et al., 2019; Bohm et al., 2018; Bohm et al., 2021). The initial soleus and vastus lateralis MTU length was calculated based on the regression equation provided by Hawkins and Hull (Hawkins and Hull, 1990) at neutral ankle joint angle for the soleus MTU and at touchdown for the vastus lateralis MTU. During the running trial, ultrasound images of either the soleus or vastus lateralis muscle fascicles were recorded synchronously to the kinematic data (soleus: Aloka Prosound Alpha 7, Hitachi, Tokyo, Japan, 6 cm linear array probe, UST-5713T, 13.3 MHz, 146 Hz; vastus lateralis: My Lab60, Esaote, Genova, Italy, 10 cm linear array probe LA923, 10 MHz, 43 Hz). The ultrasound probe was mounted over the medial aspect of the soleus muscle belly or on the vastus lateralis muscle belly (≈50% of femur length) using a custom anti-skid neoprene-plastic cast. The fascicle length was post-processed from the ultrasound images using a self-developed semi-automatic tracking algorithm (Marzilger et al., 2018) that calculated a representative reference fascicle on the basis of multiple muscle fascicle portions identified from the entire displayed muscle (for details, see Bohm et al., 2018; Marzilger et al., 2018; Figure 5). Visual inspection of each image was conducted and corrections were made if necessary. At least nine steps were analyzed for each participant and then averaged (Bohm et al., 2018; Giannakou et al., 2011). The pennation angle was calculated as the angle between the deeper aponeurosis and the reference fascicle (Figure 5). The length changes of the muscle belly of soleus and vastus lateralis were calculated as the differences of consecutive products of fascicle length and the respective cosine of the pennation angle (Fukunaga et al., 2001). Note that this does not give the length of the entire soleus or vastus lateralis muscle belly but rather the projection of the instant fascicle length onto the plane of the MTU, which can be used to calculate the changes of the belly length (Bohm et al., 2019). The velocities of fascicles, belly, and MTU were calculated as the first derivative of the lengths over time.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/67182/elife-67182-fig5-v1.jpg)
 
-**Figure 5.:** A) and vastus lateralis (B) force-fascicle length relationship.Maximum isometric plantar flexions (MVC) at eight different joint angles were performed on a dynamometer. During the MVCs, ultrasound images of the soleus and vastus lateralis were recorded and a representative muscle fascicle length (F) was calculated based on multiple fascicle portions (short dashed lines). Accordingly, an individual force-fascicle length relationship for the soleus and vastus lateralis muscle was derived from the MVCs (squares) by means of a second-order polynomial fit (dashed line, bottom graphs, MVCs and curves of one representative participant).
+**Figure 5.:** Maximum isometric plantar flexions (MVC) at eight different joint angles were performed on a dynamometer. During the MVCs, ultrasound images of the soleus and vastus lateralis were recorded and a representative muscle fascicle length (F) was calculated based on multiple fascicle portions (short dashed lines). Accordingly, an individual force-fascicle length relationship for the soleus and vastus lateralis muscle was derived from the MVCs (squares) by means of a second-order polynomial fit (dashed line, bottom graphs, MVCs and curves of one representative participant).
 
 Surface EMG of the vastus lateralis and the soleus were measured by means of a wireless EMG system (Myon m320RX, Myon AG, Baar, Switzerland, 1000 Hz). A fourth-order high-pass Butterworth filter with 50 Hz cut-off frequency, a full-wave rectification, and then a low-pass filter with 20 Hz cut-off frequency were applied to the raw EMG data. The EMG activity was averaged over the same steps that were analyzed for the soleus parameters and for the vastus lateralis over 10 running steps. EMG values were then normalized for each participant to the maximum obtained during a individual maximum voluntary contraction.
 
-## Assessment of the force-length, force-velocity, and enthalpy efficiency-velocity relationship
+### Assessment of the force-length, force-velocity, and enthalpy efficiency-velocity relationship
 
 To determine the soleus and the vastus lateralis force-length relationship, eight maximum voluntary plantar flexion or knee extension contractions (MVCs) in different joint angles were performed with the right leg on an isokinetic dynamometer (Biodex Medical, Syst. 3, Inc, Shirley, NY), following a standardized warm-up (Bohm et al., 2019; Bohm et al., 2018; Nikolaidou et al., 2017; Figure 5). For the plantar flexion MVCs, the participants were placed in prone position with the knee in fixed flexed position (~120°) to restrict the contribution of the bi-articular m. gastrocnemius to the plantar flexion moment (Hof and van den Berg, 1977) and the joint angles were set in a randomized equally distributed order ranging from 10° plantar flexion to the individual maximum dorsiflexion angle. Regarding the knee extensions, participants were seated with a hip joint angle of 85° to reduce the contribution of the bi-articular m. rectus femoris (Herzog et al., 1990), while the knee joint angle ranged between 20° to 90° knee joint angle (0° = knee extended) in randomly ordered 10° intervals. The resultant moments at the ankle and knee joint were calculated under consideration of the effects of gravitational and passive moments and any misalignment between joint axis and dynamometer axis using an established inverse dynamics approach (Arampatzis et al., 2005; Arampatzis et al., 2004). The required kinematic data were recorded during the MVCs based on anatomically referenced reflective markers (medial and lateral malleoli and epicondyle, calcaneal tuberosity, second metatarsal, and greater trochanter) by a Vicon motion capture system (250 Hz). Furthermore, the contribution of the antagonistic moment produced by tibialis anterior during the plantar flexion MVCs or by the hamstring muscles during the knee extension MVCs was taken into account by means of an EMG-based method according to Mademli et al. (Mademli et al., 2004), considering the force-length dependency of the antagonists (Bohm et al., 2021). The force applied to the Achilles or patellar tendon during the plantar flexion or knee extension MVCs was calculated as quotient of the joint moment and individual tendon lever arm, respectively. The soleus or the vastus lateralis fascicle behavior during the MVCs was synchronously captured by ultrasonography and fascicle length was determined using the same methodology described above (Figure 5). Accordingly, an individual force-fascicle length relationship was calculated for soleus or vastus lateralis by means of a second-order polynomial fit and Fmax and L0 was derived, respectively (Figure 5).
 
@@ -95,12 +126,28 @@ The force-velocity relationship of the soleus and the vastus lateralis muscle wa
 
 Furthermore, we determined the enthalpy efficiency-velocity relationship for the soleus and the vastus lateralis muscle fascicles in order to calculate the enthalpy efficiency of both muscles as a function of the fascicle operating velocity during running. For this purpose, we used the experimental efficiency values provided by the paper of Hill, 1964 in Table 1 for a/P0 = 0.25 (Hill, 1964). By means of the classical Hill equation (Hill, 1938), we then transposed the original efficiency values that were presented as a function of relative load (relative to maximum tension) to shortening velocity (normalized to Vmax). The values of enthalpy efficiency and shortening velocity were then fitted using a cubic spline, giving the right-skewed parabolic-shaped curve with a peak efficiency of 0.45 at a velocity of 0.18 V/Vmax. The resulting function was then used to calculate the enthalpy efficiency of the soleus and the vastus lateralis during running based on the average value of the fascicle velocity over stance, accordingly.
 
-## Assessment of decoupling within the MTU
+### Assessment of decoupling within the MTU
 
-To quantify the decoupling of fascicle, belly, and MTU velocities over the time course of stance, we calculated a decoupling coefficient to account for the tendon compliance (DCTendon, equation 1), fascicle rotation (DCBelly, equation 2), as well as for the overall decoupling of MTU and fascicle velocities that includes both components (DCMTU, equation 3).(1)DCTendon(t)= |VMTU(t)−VBelly(t)|/Vmax(2)DCBelly(t)= |VBelly(t)−VFascicle(t)|/Vmax(3)DCMTU(t)= |VMTU(t)−VFascicle(t)|/Vmax
+To quantify the decoupling of fascicle, belly, and MTU velocities over the time course of stance, we calculated a decoupling coefficient to account for the tendon compliance (DCTendon, equation 1), fascicle rotation (DCBelly, equation 2), as well as for the overall decoupling of MTU and fascicle velocities that includes both components (DCMTU, equation 3).
+
+$$
+DC_{Tendon}(t)= |V_{MTU}(t)−V_{Belly}(t)|/V_{max}
+$$
+
+
+
+$$
+DC_{Belly}(t)= |V_{Belly}(t)−V_{Fascicle}(t)|/V_{max}
+$$
+
+
+
+$$
+DC_{MTU}(t)= |V_{MTU}(t)−V_{Fascicle}(t)|/V_{max}
+$$
 
 where V(t) is the velocity at each percentage of the stance phase (i.e. t = 0, 1, …, 100% stance). We introduced these new decoupling coefficients because previously suggested decoupling ratios (i.e., tendon gearing = VMTU/VBelly, belly gearing [or architectural gear ratio] = VBelly/VFascicle, MTU gearing = VMTU/VFascicle; Azizi et al., 2008; Wakeling et al., 2011) may feature limitations for the application under in vivo conditions, that is, considering that muscle belly and fascicle velocities may be very close to or even zero during functional tasks as walking and running (Bohm et al., 2019; Bohm et al., 2018), which results in non-physiological gear ratios.
 
-## Statistics
+### Statistics
 
 A t-test for independent samples was used to test for group differences in anthropometric characteristics, temporal gait parameters, and differences between the soleus and the vastus lateralis fascicle belly, MTU, and EMG parameters. The Mann–Whitney U test was applied in case the assumption of normal distribution, tested by the Kolmogorov–Smirnov test with Lilliefors correction, was not met. The level of significance was set to α = 0.05, and the statistical analyses were performed using SPSS (IBM Corp., version 22, NY). Furthermore, SPM (independent samples t-test, α = 0.05) was used to test for differences between the DCTendon, DCBelly, and DCMTU of the soleus and the vastus lateralis throughout the stance phase of running. SPM was conducted using the software package spm1D (version 0.4, http://www.spm1d.org; Pataky, 2012).

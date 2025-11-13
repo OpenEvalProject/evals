@@ -20,12 +20,12 @@
 
 ### Affiliations
 
-1. https://ror.org/03k1gpj17 Mycobacteria Research Laboratories, Colorado State University Fort Collins United States
-2. https://ror.org/03k1gpj17 Microbiology, Immunology and Pathology, Colorado State University Fort Collins United States
-3. https://ror.org/03k1gpj17 Program in Cell & Molecular Biology, Colorado State University Fort Collins United States
-4. https://ror.org/02r3e0967 Department of Chemical Biology and Therapeutics, St. Jude Children’s Research Hospital Memphis United States
-5. https://ror.org/052tfza37 Technology Advancement and Commercialization, RTI International Research Triangle Park United States
-6. https://ror.org/0011qv509 Department of Pharmaceutical Sciences, University of Tennessee Health Science Center Memphis United States
+1. Mycobacteria Research Laboratories, Colorado State University Fort Collins United States ([ROR:03k1gpj17](https://ror.org/03k1gpj17))
+2. Microbiology, Immunology and Pathology, Colorado State University Fort Collins United States ([ROR:03k1gpj17](https://ror.org/03k1gpj17))
+3. Program in Cell & Molecular Biology, Colorado State University Fort Collins United States ([ROR:03k1gpj17](https://ror.org/03k1gpj17))
+4. Department of Chemical Biology and Therapeutics, St. Jude Children’s Research Hospital Memphis United States ([ROR:02r3e0967](https://ror.org/02r3e0967))
+5. Technology Advancement and Commercialization, RTI International Research Triangle Park United States ([ROR:052tfza37](https://ror.org/052tfza37))
+6. Department of Pharmaceutical Sciences, University of Tennessee Health Science Center Memphis United States ([ROR:0011qv509](https://ror.org/0011qv509))
 
 † Corresponding author
 
@@ -49,59 +49,131 @@ One of the limitations of using 1599 as an injectable is the potential risk for 
 
 ## Results
 
-## Linezolid and spectinamide 1599 show similar efficacy in monotherapy
+### Linezolid and spectinamide 1599 show similar efficacy in monotherapy
 
 To compare the efficacy of L or S in monotherapy, Mtb-infected C3HeB/FeJ (n=7) and BALB/c (n=4–6) mice received L (administered 5/7 days per week orally at 100 mg/Kg) or S (administered 3/7 days per week on alternate days via intrapulmonary aerosol delivery at 100 mg/Kg and 50 mg/Kg, respectively) for 4 weeks. At the end of treatment, the animals were sacrificed, and the CFU in the lungs and spleen was enumerated (Figure 1A–D). Treatment of C3HeB/FeJ mice with L (7.30±0.45 log10) or S (6.90±0.48 log10) for 4 weeks resulted in an average of 0.51 and 0.91 log10 CFU reduction in the lungs respectively, compared to untreated (UnRx) control (7.81±0.36 log10) (Figure 1A). This difference failed to achieve statistical significance owing to the larger standard deviation associated with heterogenous advanced lung pathology observed in this model (Rathi et al., 2019; Irwin et al., 2015; Driver et al., 2012). In contrast, L (4.49±0.10 log10) treated C3HeB/FeJ mice had significantly lower spleen bacterial burden compared to UnRx (5.43±0.27 log10), with no significant difference between the L and S (4.94±0.11 log10) treatment arm (Figure 1C). In BALB/c mice, L or S treatment was found to promote a significant reduction in lung bacterial burden (0.83 and 0.77 log10, respectively) compared to UnRx or the vehicle-only controls (Figure 1B). There was no significant difference in lung bacterial burden after L or S treatment in BALB/c mice and there was no change in spleen bacterial burden compared to UnRx control (Figure 1D).
 
-## Combination therapy with BPaL or BPaS has similar efficacy
+![Figure 1.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig1-v1.jpg)
+
+**Figure 1.:** BALB/c and C3HeB/FeJ female mice were chronically infected with a low dose aerosol infection of Mtb Erdman strain to deliver ∼75 and ∼100 bacilli respectively. Post-infection, BALB/c and C3HeB/FeJ mice were rested for 4 and 8-9 weeks respectively until they were randomly assigned to the study groups. The mice were treated with monotherapy of linezolid or spectinamide 1599 or combination therapy of BPaL, BPa or BPaS for 4 weeks. Bedaquiline (B), pretomanid (Pa) and linezolid (L) were administered at 25, 100 and 100 mg/kg respectively by oral gavage for 5/7 a week while spectinamide 1599 at 50 and 100 mg/kg in BALB/c and C3HeB/FeJ TB models respectively for 3/7 a week on the alternate days via intrapulmonary aerosol delivery. On the third day of the last treatment, the mice were euthanized, and their lungs and spleen were collected. The organs were homogenized, serially diluted and plated on 7H11 agar with 4% charcoal (to avoid drug carry-over effect) to determine bacterial burden in the form of colony forming units (CFU) in each sample. CFU were enumerated after 4-6 weeks of incubation at 37 °C and expressed as log10.C3HeB/FeJ and BALB/c TB models showing efficacy of monotherapy (A-D) and combination therapy (E-H). The C3HeB/FeJ graphs (E, G) represent the pooled data from three independent studies (n=3-8, Figure 1—figure supplements 1–3) and two of the three studies contained BPa as a reference control. The BALB/c graphs (F, H) represent the pooled data from two independent studies (n=5, Figure 1—figure supplements 8 and 9). Statistical significance was calculated using one-way ANOVA with Tukey’s multiple comparison test, p < 0.05 was considered significant and ** = p<0.001, *** = p<0.0001, **** = P<0.0001. UnRx = untreated, L = linezolid, S = spectinamide 1599, LOD: limit of detection.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Bacterial burden (colony-forming units, CFU) in Mycobacterium tuberculosis infected C3HeB/FeJ mice treated with BPaL and BPaS regimen for 4weeks. n=7, LOD: limit of detection, p<0.05.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Bacterial burden (colony-forming units, CFU) in Mycobacterium tuberculosis infected C3HeB/FeJ mice treated with BPa, BPaL, and BPaS regimen for 4 weeks. n=3–9, LOD: limit of detection, p<0.05.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Bacterial burden (colony-forming unit CFU) in Mycobacterium tuberculosis infected C3HeB/FeJ mice treated with BPa, BPaL, and BPaS regimen for 4 weeks. n=5–7, LOD: limit of detection, p<0.05.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** Change in the average body weight of Mycobacterium tuberculosis infected C3HeB/FeJ mice during drug treatment. (A) Represents the change during monotherapy of linezolid (L) and spectinamide 1599 (S) compared to untreated (UnRx) control while (B) represents the combined data from three independent studies during combination treatment with BPa, BPaL, and BPaS. p<0.05.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** Change in the average body weight of Mycobacterium tuberculosis infected C3HeB/FeJ mice during drug treatment. n=7, p<0.05.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig1-figsupp6-v1.jpg)
+
+**Figure 1—figure supplement 6.:** Change in the average body weight of Mycobacterium tuberculosis infected C3HeB/FeJ mice during drug treatment. n=3–9, p<0.05.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig1-figsupp7-v1.jpg)
+
+**Figure 1—figure supplement 7.:** Change in the average body weight of Mycobacterium tuberculosis infected C3HeB/FeJ mice during drug treatment. n=5–7, p<0.05.
+
+![Figure 1—figure supplement 8.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig1-figsupp8-v1.jpg)
+
+**Figure 1—figure supplement 8.:** Bacterial burden (colony-forming units, CFU) in Mycobacterium tuberculosis infected BALB/c mice treated with BPaL and BPaS regimen for 4 weeks. n=5, LOD: limit of detection, p<0.05.
+
+![Figure 1—figure supplement 9.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig1-figsupp9-v1.jpg)
+
+**Figure 1—figure supplement 9.:** Bacterial burden (colony-forming units, CFU) in Mycobacterium tuberculosis infected BALB/c mice treated with BPaL and BPaS regimen for 4 weeks. n=5–7, LOD: limit of detection, p<0.05.
+
+![Figure 1—figure supplement 10.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig1-figsupp10-v1.jpg)
+
+**Figure 1—figure supplement 10.:** Change in the average body weight of Mycobacterium tuberculosis infected BALB/c mice during drug treatment. (A) represents the change during monotherapy of linezolid (L) and spectinamide 1599 (S) compared to untreated (UnRx) and vehicle control while (B) represents the combined data from two independent studies during combination treatment with BPaL and BPaS. p<0.05.
+
+![Figure 1—figure supplement 11.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig1-figsupp11-v1.jpg)
+
+**Figure 1—figure supplement 11.:** Change in the average body weight of Mycobacterium tuberculosis infected BALB/c mice during drug treatment. n=5, p<0.05.
+
+![Figure 1—figure supplement 12.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig1-figsupp12-v1.jpg)
+
+**Figure 1—figure supplement 12.:** Change in the average body weight of Mycobacterium tuberculosis infected BALB/c mice during drug treatment. n=5–7, p<0.05.
+
+### Combination therapy with BPaL or BPaS has similar efficacy
 
 We further tested and compared the efficacy of L or S when used in combination therapy with BPa. Mtb-infected C3HeB/FeJ mice were treated with either BPaL (B=25 mpk; Pa = 100 mg/Kg and L=100 mg/Kg all administered 5/7 a week via oral gavage) or BPaS (BPa as in BPaL and S=100 mg/Kg administered 3/7 a week on alternate days via intrapulmonary aerosol delivery) for 4 weeks. The comparative analysis from combined data of three independent studies is shown in Figure 1E and G (data from individual studies are shown in Figure 1—figure supplements 1–3). Two of the three studies contained an extra group of BPa-treated mice as a reference control. Compared to UnRx (7.48±0.12 log10) control, mice in the BPa (5.49±0.42 log10), BPaL (4.76±0.38 log10) and BPaS (4.98±0.35 log10) treatment groups had significantly reduced the lung bacterial burden by 1.99, 2.72, and 2.50 log10, respectively (Figure 1E). Although a higher CFU reduction was observed in the lungs of C3HeB/FeJ mice treated with BPaL or BPaS, these differences failed to achieve statistical significance compared to the BPa backbone regimen. All three regimens proved highly effective at reducing spleen bacterial burden in C3HeB/FeJ mice, with most mice returning no CFU within the limit of detection (LOD) employed herein (Figure 1G).
 
 The effect of BPaL and BPaS (S=50 mg/Kg) combination therapy on the bacterial burden in the lungs and spleen of Mtb-infected BALB/c mice was determined at the end of 4 weeks of treatment. Figure 1F, H shows the combined lung and spleen CFU data from two independent studies (data for each study is shown in Figure 1—figure supplements 8–9). The combined result demonstrated that compared to UnRx (5.24±0.17 log10) control, mice in the BPaL (1.29±0.13 log10) and BPaS (1.44±0.17 log10) treatment groups returned significantly fewer CFU in the lungs, with most mice returning no CFU within the LOD employed herein (Figure 1F). As in the C3HeB/FeJ TB model, no significant difference was observed in the lung CFU of BALB/c mice treated with either the BPaL or BPaS regimen. BPaL and BPaS therapy reduced BALB/c spleen bacterial burden to below the LOD of the assay with no CFU recovered for any treated mice (Figure 1H). In summary, these results support our hypothesis and demonstrate that both BPaL, BPaS (and BPa in the C3HeB/FeJ TB model) multidrug regimens show equivalent bactericidal effects in C3HeB/FeJ and BALB/c chronic TB efficacy models.
 
-## Monitoring of adverse events
+### Monitoring of adverse events
 
 Five approaches were employed to monitor treatment-associated AEs in mice in this study including (1) changes in the body weight of mice; (2) lung histopathology and lesion scoring; (3) evaluation of complete blood count (CBC); (4) clinical pathology to study myelosuppression in the bone marrow and (5) changes in the content of immune cells in the lungs, spleen, bone marrow and blood.
 
-## BPaL therapy decreases the body weight of mice
+### BPaL therapy decreases the body weight of mice
 
 No significant difference in the body weight among the treatment groups in either C3HeB/FeJ or BALB/c mice was observed following 4 weeks of treatment with S or L alone (Figure 1—figure supplements 4–7 and Figure 1—figure supplements 10–12, respectively). On the other hand, C3HeB/FeJ or BALB/c mice treated with BPa, BPaL, or BPaS showed marginal loss of body weight, ranging from 2.37–5.13% and only mice receiving the BPaL regimen, when compared to the UnRx control, reached statistically significant loses in body weight by the end of treatment (Figure 1—figure supplements 4 and 10, respectively).
 
-## BPaL and BPaS therapy result in a significant lower lung lesion burden
+### BPaL and BPaS therapy result in a significant lower lung lesion burden
 
 The lesions in Mtb-infected UnRx C3HeB/FeJ mice (Figure 2A and B) showed a spectrum of diverse granuloma types ranging from aggregations of macrophages and lymphocytes to highly organized granulomas with collagen encapsulation and a region of central caseous necrosis that resembles to those found in some human patients (Irwin et al., 2015; Driver et al., 2012). By comparison, lung lesions of Mtb-infected UnRx BALB/c mice (Figure 2C and D) consisted of granulomas with a very homogeneous structure (Irwin et al., 2015) formed also by aggregations of macrophages and lymphocytes without a necrotic core. Mice treated for 4 weeks with the BPaL or BPaS regimen presented with a significant reduction in the number and size of granulomas in both C3HeB/FeJ and BALB/c TB models compared to their respective UnRx control, with no significant difference in lesion burden score between the combination drug treatment groups (Figure 2E and F).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig2-v1.jpg)
 
-**Figure 2.:** At the end of therapy, the mice were euthanized, and their lungs were collected and processed for histopathology and lesion scoring. FFPE sections were cut at 5 µm, stained with hematoxylin and eosin (H and E) and imaged at 40x (A: C3HeB/FeJ, C: BALB/c). Lesion maps (B: C3HeB/FeJ, D: BALB/c) show the infected areas in red color while green color represents the uninvolved parenchymal tissue. Lesion scores (E: C3HeB/FeJ, F: BALB/c) were calculated as the proportion of infected area over the total lung area per animal. Statistical significance was calculated using one-way ANOVA with Tukey’s multiple comparison test, and p < 0.05 was considered significant and ** = p<0.001, *** P<0.0001. UnRx = untreated.Figure 2—source data 1.Figure 2—source data 2.
+**Figure 2.:** At the end of therapy, the mice were euthanized, and their lungs were collected and processed for histopathology and lesion scoring. FFPE sections were cut at 5 µm, stained with hematoxylin and eosin (H and E) and imaged at 40x (A: C3HeB/FeJ, C: BALB/c). Lesion maps (B: C3HeB/FeJ, D: BALB/c) show the infected areas in red color while green color represents the uninvolved parenchymal tissue. Lesion scores (E: C3HeB/FeJ, F: BALB/c) were calculated as the proportion of infected area over the total lung area per animal. Statistical significance was calculated using one-way ANOVA with Tukey’s multiple comparison test, and p < 0.05 was considered significant and ** = p<0.001, *** P<0.0001. UnRx = untreated.
 
-## Association of L with altered blood profile and mild anemia in mice
+### Association of L with altered blood profile and mild anemia in mice
 
 The effect of L in the blood profile of humans and mouse has been reported (Tang et al., 2015; Gerson et al., 2002; Mase et al., 2022; Bigelow et al., 2020; Bigelow et al., 2021) but the same has not been reported for S. Therefore, a CBC profile was performed on Mtb-infected C3HeB/FeJ mice at the end of 4 weeks of treatment to quantify treatment-associated hematological changes. The results obtained from mice treated with L or S alone are summarized in Figure 3A. Of the 20-blood parameters evaluated, two blood parameters were affected during treatment. When compared to UnRx control and S-treated mice, L treatment significantly increased the red blood cell distribution width standard deviation (RDWs), while both L and S treatment were associated with a significant decrease in the mean corpuscular hemoglobin concentration (MCHC) compared to UnRx control (Figure 3A).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig3-v1.jpg)
 
-**Figure 3.:** During therapy of mice in Figure 1, the blood was collected at 1-, 2- and 4-weeks of treatment. The complete blood count was collected in VETSCAN HM5 hematology analyzer (Zoetis). (A) Monotherapy, (B) multidrug therapy. The MCHC (mean corpuscular hemoglobin concentration) and RDWs (red blood cell distribution width-standard deviation) along with the HGB (hemoglobin concentration) and MPV (mean platelet volume) are shown. A horizontal dotted line indicates the lower end of the reference interval for C3HeB/FeJ mice. The sternum, femur and tibias bones from each mouse were collected, fixed in 4% PFA, and processed for histology (C and D). Sections were cut at 5 µm, stained with hematoxylin and eosin (H and E) and imaged at 40x. (C) Representative photos of bone marrow sections showing myeloid (black arrows) and erythroid (white arrows) cells in bone marrow of untreated (UnRx) and treatment (BPa, BPaS and BPaS) groups. (D) The number of myeloid (M) and erythroid (E) among a total of 300 cells in 5 different regions were counted for each group and M:E was calculated. Statistical significance was calculated using one-way ANOVA with Tukey’s test for multiple comparisons. p < 0.05 was considered significant and ** = p<0.001, *** = P<0.0001.Figure 3—source data 1.Figure 3—source data 2.
+**Figure 3.:** During therapy of mice in Figure 1, the blood was collected at 1-, 2- and 4-weeks of treatment. The complete blood count was collected in VETSCAN HM5 hematology analyzer (Zoetis). (A) Monotherapy, (B) multidrug therapy. The MCHC (mean corpuscular hemoglobin concentration) and RDWs (red blood cell distribution width-standard deviation) along with the HGB (hemoglobin concentration) and MPV (mean platelet volume) are shown. A horizontal dotted line indicates the lower end of the reference interval for C3HeB/FeJ mice. The sternum, femur and tibias bones from each mouse were collected, fixed in 4% PFA, and processed for histology (C and D). Sections were cut at 5 µm, stained with hematoxylin and eosin (H and E) and imaged at 40x. (C) Representative photos of bone marrow sections showing myeloid (black arrows) and erythroid (white arrows) cells in bone marrow of untreated (UnRx) and treatment (BPa, BPaS and BPaS) groups. (D) The number of myeloid (M) and erythroid (E) among a total of 300 cells in 5 different regions were counted for each group and M:E was calculated. Statistical significance was calculated using one-way ANOVA with Tukey’s test for multiple comparisons. p < 0.05 was considered significant and ** = p<0.001, *** = P<0.0001.
 
 The Nix-TB trial associated the long-term administration of L within the BPaL regimen as the causative agent resulting in anemia in patients treated with the BPaL regimen (Conradie et al., 2020). Thus, the effect of combination therapy with the BPaL or BPaS regimen on CBC profile was analyzed at 1-, 2-, and 4 weeks of treatment (Figure 3B). None of the 20 parameters of CBC changed during the first 2 weeks of treatment. However, out of the 20 blood parameters evaluated, a total of four blood parameters were affected at 4 weeks of treatment. L-containing BPaL regimen was again associated with a significant increase in the RDWs, and lower hemoglobin (HGB) compared to UnRx control after 4 weeks. This effect was not observed in mice treated with BPa or BPaS (Figure 3B). However, as in monotherapy, there was a trend towards lower overall MCHC in mice treated with either BPaL or BPaS. The mean platelet volume (MPV) was marginally higher at 4 weeks in mice treated with BPa compared to BPaL or BPaS, albeit not significantly different from UnRx control (Figure 3B). Given that no difference in HGB or RDWs was observed between UnRx control and their comparator BPa and BPaS regimens, we concluded that the significant HGB decrease and RDWs increase (often observed during the development of anemia) were associated with inclusion of L in the BPaL regimen.
 
-## Spectinamide 1599 recovers the altered ratio of myeloid to erythroid cells in bone marrow
+### Spectinamide 1599 recovers the altered ratio of myeloid to erythroid cells in bone marrow
 
 To further evaluate if L was associated with myelosuppressive effect, we performed hematopathology analysis on bone marrow from Mtb-infected C3HeB/FeJ and BALB/c mice at the end of treatment. For C3HeB/FeJ mice, the number of myeloid (M) and erythroid (E) precursor cells were calculated from H&E stained sections and their myeloid to erythroid ratio (M:E) was determined by counting 300 bone marrow cells in five different regions (Figure 3C). The BPa and BPaL treatment significantly decreased myeloid cells while increasing the proportion of erythroid cells (Figure 3D). Hence, the corresponding ratio in the bone marrow of animals treated with BPaL or BPa was lower compared to the UnRx control. Importantly, the BPaS treatment did not show any difference in the content of myeloid or erythroid cells when compared to UnRx control suggesting that S in the BPaS was able to recover this effect. In Mtb-infected BALB/c mice, the number of myeloid and other cell types were counted, however, no significant difference was found among the control and treatment groups (data not shown).
 
-## BPaL therapy increases proinflammatory cytokine response in bone marrow
+### BPaL therapy increases proinflammatory cytokine response in bone marrow
 
 A comparative analysis for the concentration of cytokines and chemokines in the bone marrow, plasma, and lung samples from Mtb-infected C3HeB/FeJ mice treated with BPaL or BPaS regimen was also conducted. The bone marrow samples demonstrated a significant difference between the BPaL and BPaS groups, with appreciably higher level of pro-inflammatory cytokines and chemokines (IL-1β, IL-12p70, IL-23, TNFα, GROα (CXCL1), MP-2α (CXCL2), IP-10 (CXCL10), MP-1α (CCL3), RANTES (CCL5), MCP-3 (CCL7), and Eotaxin (CCL11)) in the BPaL- compared to BPaS-treated mice (Figure 4B). The plasma and lung samples, however, had similar cytokine and chemokine contents the treatment groups except for MCP-3 (CCL7) in plasma which was significantly higher in BPaS compared to the BPaL group (Figure 4—figure supplement 1). We also performed a correlation analysis of bone marrow cytokine and chemokine content with lung CFU obtained from treatment (BPaL or BPaS) and UnRx groups (Figure 4C). The analysis suggested that compared to UnRx control, there was a strong correlation between the profound reduction of lung bacterial burden and the profound reduction in bone marrow cytokine and chemokine contents observed in mice from BPaL or BPaS groups. Similar correlations were found between lung CFU and content of cytokines and chemokines in lung (Figure 4—figure supplement 2) and plasma (Figure 4—figure supplement 3).
 
-## BPaL and BPaS therapies reduce inflammation-associated cells
+![Figure 4.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig4-v1.jpg)
+
+**Figure 4.:** Femur bones from selected studies in mice in Figure 1 were collected to harvest the bone marrow. The bone marrow was resuspended in PBS, centrifuged and the supernatant was collected for the evaluation of cytokine’s content. BPaL and BPaS therapy showed profile of 26 cytokines and chemokines in bone marrow and the data were converted to Z score and represented as a heatmap (A) and graphically (B). (C) Spearman’s correlation analysis of bone marrow cytokines and chemokines (Y axis: pg/ml) with the lung bacterial burden (X axis; log10CFU). Statistical significance was calculated using the t test. p < 0.05 was considered significant and ** = p<0.001*** = p<0.0001, **** = P<0.00001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Plasma and (B) lung cytokine and chemokine contents in mice treated with BPaL or BPaS.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig4-figsupp2-v1.jpg)
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig4-figsupp3-v1.jpg)
+
+### BPaL and BPaS therapies reduce inflammation-associated cells
 
 We further assessed the environment of immune cells using flow cytometry in bone marrow, lungs, and blood from each group of Mtb-infected C3HeB/FeJ mice (Figure 5). The bone marrow (Figure 5A) results revealed that as compared to UnRx control, there was a significant decrease in the percentage of inflammatory myeloid phenotypes (CD45 +CD3-CD11b+CD11c-Ly6C+CCR2+, CD45 +CD3-CD11b+CD11c-Ly6C+CCR2+MHC-II+and CD45+CD3-D14+CCR2+) in response to therapy with either BPa, BPaL, or BPaS. In contrast, neutrophils (CD45 +CD3-CD11b+CD11c-Ly6C+Ly6Ghigh), precursor T cells (CD45 +CD3+), and B cells (CD45 +CD3 CD19+B220-) were significantly increased in either BPa, BPaL, or BPaS treatment groups compared to UnRx control in bone marrow. This reduced inflammatory response in treatment groups is also consistent in blood shown by significantly reduced inflammatory myeloid cells (CD45 +CD3-CD11b+CD11c-Ly6C+CCR2+) (Figure 5B). Interestingly, the response to therapy in the lungs (Figure 5C) was manifested by a significant increase of CD3 +CD4+T helper cells and B-1 cells (CD3-CD19+) and a reverse trend for CD3 +CD8+and γδ-T cells (CD3 +CD8+γδTCR+).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig5-v1.jpg)
 
-**Figure 5.:** The bone marrow, lung and blood from selected studies from Figure 1 were evaluated by flow cytometry. The samples were processed for a panel of 17-color antibodies and the data were analyzed by FlowJo software using manual gating strategy. The myeloid and lymphoid phenotypes present in the untreated (UnRx) and treatment (BPa, BPaL or BPaS) groups are shown. Statistical significance was calculated using one-way ANOVA with Tukey’s test for multiple comparisons. p < 0.05 was considered significant and ** = p<0.001*** = p<0.0001, **** = P<0.00001.Figure 5—source data 1.
+**Figure 5.:** The bone marrow, lung and blood from selected studies from Figure 1 were evaluated by flow cytometry. The samples were processed for a panel of 17-color antibodies and the data were analyzed by FlowJo software using manual gating strategy. The myeloid and lymphoid phenotypes present in the untreated (UnRx) and treatment (BPa, BPaL or BPaS) groups are shown. Statistical significance was calculated using one-way ANOVA with Tukey’s test for multiple comparisons. p < 0.05 was considered significant and ** = p<0.001*** = p<0.0001, **** = P<0.00001.
 
 Furthermore, we also assessed changes in the distribution of immune cells in the lungs from Mtb-infected C3HeB/FeJ mice in response to therapy using multiplex fluorescent immunohistochemistry (mfIHC). A seven-color composite image for cell markers (B220, CD4, CD8, Foxp3, F4/80, and Ly6G) along with DAPI is shown in Figure 6A, while their single-color staining is shown in Figure 6B. Figure 6A shows a typical necrotic TB granuloma comprised of central necrosis, peripheral rim, and lung parenchyma. The analysis of mfIHC images revealed that the BPaL and BPaS treatments significantly and dramatically lowered the number of neutrophils (count based on Ly6G+) compared to UnRx control, however, F4/80+ cells were observed significantly higher in BPaS compared to UnRx control (Figure 6—figure supplement 1). Interestingly, the spearman’s correlation plot (Figure 6D) shows that a significant decrease in neutrophils was positively correlated with the corresponding increase in most of the other immune cells.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig6-v1.jpg)
+
+**Figure 6.:** Selected mice from those shown in Figure 1 were processed for multiplex fluorescence immunohistochemistry (mfIHC). The mfIHC was performed for a panel of 6-color antibodies + DAPI using Opal-plex Tyramide Signal Amplification (TSA). Slides were scanned using multispectral automated PhenoImager (Akoya Biosciences) and analyzed for different immune cell populations using the inForm tissue Finder and Phenochart software (Akoya Biosciences). (A) The lung mfIHC full composite image displays B220, CD4, CD8, F4/80, FoxP3 and Ly6G markers along with DAPI staining for nuclei in the TB granuloma. The central and peripheral regions of a TB granuloma and the parenchyma of lung are also shown. (B) Single color composite image of individual markers with DAPI showing distribution of each immune cell population in the TB granuloma. (C) Cell populations (%) of several immune cells per total number of phenotypes calculated in untreated (UnRx: n = 2 mice) and treatment (BPaL and BPaS: n = 3 mice each) groups based on a panel of 6-color antibodies + DAPI. (D) Spearman’s correlation matrix for several immune cell populations (B220, CD4, CD8, F4/80, FoxP3, Ly6G) showing all relationships. A coefficient with a value of either +1 (blue), 0 (white), or -1 (red) indicates a perfect association, no association, and a perfect negative association of ranks, respectively. Numbers indicate the correlation coefficient.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/96190/elife-96190-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Statistical significance was calculated using two-way ANOVA with Tukey’s test for multiple comparisons and p<0.05 was considered significant.
 
 ## Discussion
 
@@ -123,48 +195,152 @@ To conclude, the TB drug development field is working towards developing shorter
 
 Female C3HeB/FeJ and BALB/c mice at 6–8 weeks of age were purchased from the Jackson Laboratories. All protocols (PARF 16-047B) and the use of these animals were approved by the Institutional Animal Care and Use Committee (IACUC; 1508) at CSU. Animals were infected with a low-dose aerosol infection of Mtb (Erdman strain; ATCC 35801) using an inhalation exposure system (Glas-Col, Terre Haute, IN) calibrated to deliver ~50–100 colony-forming units (CFU) to the lungs (Gonzalez-Juarrero et al., 2021). Clinical observations (e.g. inactivity, rough fur, hunched posture, increased respiratory rate or effort) were monitored daily and their body weights were taken weekly.
 
-## Drug preparation and treatment
+### Drug preparation and treatment
 
 Bedaquiline fumarate (B) and linezolid (L) were obtained from LKT laboratories, pretomanid (Pa) from ChemShuttle, and 1599 (S: dihydrochloride) was provided by Dr. Lee at St. Jude Children’s Research Hospital. B was administered at 25 mg/kg. Pa and L were administered at 100 mg/kg each and S was delivered by inhalation in liquid form at 50 and 100 mg/kg to BALB/c and C3HeB/FeJ mice, respectively. The drugs were formulated in weekly batches according to the body weight of the animals, aliquoted for single daily dosing, and stored at 4 °C in the dark.
 
 The drugs were prepared and administered as reported previously (Robertson et al., 2017; Gonzalez-Juarrero et al., 2021). Drug treatment was started 4 weeks post-aerosol infection for BALB/c and at 8–9 weeks post-aerosol infection for C3HeB/FeJ mice to allow time for lung pathology to fully develop. All drugs were administered once daily for 5 days/week for 4 weeks by oral (gavage) administration except S which was administered 3 days/week by intrapulmonary aerosol delivery using the Penn Century microsprayer as reported previously (Gonzalez-Juarrero et al., 2021). B was administered in the morning, Pa 1 hr after B and, L and S at least 4 hr after Pa.
 
-## Necropsy
+### Necropsy
 
 After 4-weeks of treatment, C3HeB/FeJ and BALB/c mice were humanely euthanized by CO2 narcosis. Blood, lungs, spleen, femur, and tibia bones were collected from each mouse for further processing and analysis.
 
-## Assessment of efficacy
+### Assessment of efficacy
 
 The efficacy of the treatment was assessed by determining changes in bacterial burden [measured as CFU] in the lungs and spleen of animals at necropsy. The lungs and spleen were homogenized and prepared as reported previously (Gonzalez-Juarrero et al., 2021). The lung homogenates were plated onto 7H11 agar plates supplemented with 0.4% activated charcoal to reduce the carryover effect of drugs and incubated at 37 °C for 6–8 weeks before the final CFU count. The remaining lung homogenate was centrifuged, and the supernatant was collected and stored at –80 °C for evaluation of cytokines and chemokines.
 
-## Histopathology and lesion scoring
+### Histopathology and lesion scoring
 
 The lungs were fixed in 4% paraformaldehyde (PFA) for 48 hr and then embedded in paraffin for histopathology. Sections from formalin-fixed and paraffin-embedded (FFPE) tissues were cut at 5 µm, stained with hematoxylin and eosin (H&E), and scanned at 40 X magnification using multispectral automated PhenoImager (Akoya Biosciences) for histopathological evaluation. The extent of lung lesion burden was quantified in blinded digital images using an open-source QuPath software for image analysis as described previously (Dutt et al., 2022). For each tissue section, a region of interest (ROI) was generated at low magnification with a custom tissue-detecting algorithm using decision forest training and classification to differentiate tissue versus background based on color and area. Lesions were identified within tissue ROIs at high magnification with an additional custom-made algorithm using decision forest training and classification based on staining intensity, color normalization and deconvolution, area, and morphological features. Percent lesion calculations were integrated into the same algorithm and calculated from tissue area and lesion area as designated by the ROI and lesions detected.
 
 The sternum and one femur were fixed in 4% PFA and processed for histology. To evaluate the myelosuppressive effect of the drugs, bone sections were cut at 5 µm and stained with H&E. The number of myeloid and erythroid cells from 5 different regions of the bone were blinded and then counted by a veterinary clinical pathologist.
 
-## Bone marrow collection
+### Bone marrow collection
 
 Briefly, a 0.6 mL sterile Eppendorf tube punctured at the bottom with the help of a 26-gauge needle was inserted into a 1.5 mL sterile Eppendorf tube. One end of the epiphysis of the long bones was cut open to expose the bone marrow and placed down into the small Eppendorf tube system. The tubes were centrifuged at 10,000 x g for 15 s and the marrow was collected from the base of the large Eppendorf tube. The bone marrow was resuspended in PBS and centrifuged again. Thereafter, the supernatant was collected and stored at –80 °C for evaluation of cytokines and chemokines while the bone marrow cells were saved in 4% PFA and freezing media for further use in clinical pathology analysis and flow cytometry, respectively.
 
-## Processing of blood
+### Processing of blood
 
 For CBC analysis of C3HeB/FeJ animals during the treatment, blood was collected in K2-EDTA tubes via submandibular vein puncture as described previously (Golde et al., 2005). The blood was immediately analyzed in a VETSCAN HM5 hematology analyzer (Zoetis).
 
 At the time of necropsy, whole blood was collected via cardiac puncture in K2-EDTA-containing tubes. After adding an equal volume of PBS, the samples were centrifuged at 800×g for 10 min at 25 °C with the brake off (deceleration = 0). The top plasma layer was collected and stored at –80°C for evaluation of their cytokine’s content. The buffy coat was collected, and washed and the erythrocytes were lysed using Miltenyi RBC lysis buffer (Miltenyi, CA). The cells were washed and resuspended in 500 µL of complete DMEM media and prepared for flow cytometry analysis.
 
-## Cytokine quantification
+### Cytokine quantification
 
 Multiplex immunoassay was performed using a Luminex bead-based multiplex ELISA kit (ProcartaPlex Mouse Cytokine & Chemokine Panel 1 26plex, reference # EPXR260-26088-901, Invitrogen). Each sample was normalized to the total protein concentration determined by Bicinchoninic acid (BCA) assay (Thermo Fisher). The BCA and Luminex assay were performed according to the manufacturer’s instructions and the final stained samples were fixed with 4% PFA prior to acquisition. Sample data were acquired on a MAGPIX instrument running xPONENT 4.3 software (Luminex Corp.). Heatmaps were generated using the R pheatmap package. Correlation analysis of cytokine contents in bone marrow, plasma, and lungs with the lung bacterial burden was performed using the corrplot package in R.
 
-## Immune cell population analysis
+### Immune cell population analysis
 
 Single-cell suspension of bone marrow, blood, and lungs from C3HeB/FeJ mice was prepared as described previously (Dutt et al., 2022). Cells counting, viability staining, and cell staining (Table 1) was performed accordingly (Dutt et al., 2022). Samples were acquired using Cytek Aurora 4-Laser spectral flow cytometer where 100,000 events were recorded. Data were analyzed in FlowJo software (BD Biosciences) using manual gating (Fox et al., 2020).
 
-## Multiplex fluorescence immunohistochemistry
+**Table 1.**
+ Itemized list of antibodies for flow cytometry.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent or resource</th>
+      <th>Source</th>
+      <th>Identifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Antibodies</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse LY6G PerCP</td>
+      <td>BioLegend</td>
+      <td>Cat# 127654; RRID: AB_11218876</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD14 PerCP Cy5.5</td>
+      <td>Invitrogen</td>
+      <td>Cat# 120606; RRID: AB_493267</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse NKp46/CD335 PE</td>
+      <td>BioLegend</td>
+      <td>Cat# 137604; RRID: AB_2566163</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse B220/CD45 R PE-Cy7</td>
+      <td>BioLegend</td>
+      <td>Cat# 103222; RRID: AB_2573837</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD8 FITC</td>
+      <td>BioLegend</td>
+      <td>Cat# 100706; RRID: AB_394458</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD34 PE-Dazzle 594</td>
+      <td>BioLegend</td>
+      <td>Cat# 128616; RRID: AB_11219403</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse TER119 APC</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 561033; RRID: AB_10900980</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse γδ-TCR APC Fire 750</td>
+      <td>BioLegend</td>
+      <td>Cat# 118129; RRID: AB_755986</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse LY6C Alexa Fluor 700</td>
+      <td>BioLegend</td>
+      <td>Cat# 128024; RRID: AB_2869739</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD4 BV421</td>
+      <td>BioLegend</td>
+      <td>Cat# 100544; RRID: AB_2562555</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse MHC-II BV480</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 566088; RRID: AB_2562612</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD11b Pacific Blue</td>
+      <td>BioLegend</td>
+      <td>Cat# 101224; RRID: AB_2565937</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD3e BV510</td>
+      <td>BioLegend</td>
+      <td>Cat# 100353; RRID: AB_2563056</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD45 BV570</td>
+      <td>BioLegend</td>
+      <td>Cat# 103136; RRID: AB_2814047</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CD19 BV605</td>
+      <td>BioLegend</td>
+      <td>Cat# 115540; RRID: AB_2563289</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CCR2 BV711</td>
+      <td>BD Biosciences</td>
+      <td>Cat# 747964; RRID: AB_2660295</td>
+    </tr>
+    <tr>
+      <td>Anti-mouse CC11c BV785</td>
+      <td>BioLegend</td>
+      <td>Cat# 117335; RRID: AB_2073247</td>
+    </tr>
+  </tbody>
+</table>
+
+### Multiplex fluorescence immunohistochemistry
 
 Five µm sections of FFPE lung tissues were stained for multiplex fluorescence immunohistochemistry (mfIHC) by the Imaging Core at the University of Colorado, Anschutz Medical Campus, Denver. The mfIHC was performed for a panel of 6-color antibodies + DAPI using the Opal-plex Tyramide Signal Amplification (TSA) technique using a Leica Bond III autostainer. The details of antibodies and Opal fluorophores used are given in Supplementary file 1. Each antibody was optimized using Opal 3-Plex Anti-Rb Detection Kit (Akoya Biosciences Inc cat# NEL830001KT) and stained with automated LabSat Research (Lunaphore Technologies SA, Epredia). Slides were scanned using multispectral automated PhenoImager (Akoya Biosciences) and analyzed for several immune cell populations using the inForm tissue Finder (Version 2.4.8) and Phenochart (Version 1.0.12) software (Akoya Biosciences).
 
-## Statistical analysis
+### Statistical analysis
 
 Bacterial burden data were expressed as CFU which were Log10-transformed and analyzed using GraphPad Prism version 9.5.1 (GraphPad Software, La Jolla, CA). The statistical analysis was performed using a Tukey’s multiple comparison test as part of either one-way or two-way ANOVA and mixed-model effect where necessary. The correlation analysis was performed using the spearman’s correlation test. Flow cytometry and mfIHC data were graphed in R studio and statistical evaluation was performed using stats package in R.

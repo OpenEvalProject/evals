@@ -28,7 +28,7 @@
 
 ## Abstract
 
-The resistance of synovial sublining macrophages to apoptosis has a crucial role in joint inflammation and destruction in rheumatoid arthritis (RA). However, the underlying mechanism is incompletely understood. Here we report that inactivation of the pro-apoptotic BCL-2 family protein BAD is essential for survival of synovial sublining macrophage in RA. Genetic disruption of Bad leads to more severe joint inflammation and cartilage and bone damage with reduced apoptosis of synovial sublining macrophages in collagen-induced arthritis (CIA) and TNFα transgenic (TNF-Tg) mouse models. Conversely, Bad mice, in which BAD can no longer be inactivated by phosphorylation, are protected from collagen-induced arthritis. Mechanistically, phosphorylation-mediated inactivation of BAD specifically protects synovial sublining macrophages from apoptosis in highly inflammatory environment of arthritic joints in CIA and TNF-Tg mice, and in patients with RA, thereby contributing to RA pathology. Our findings put forward a model in which inactivation of BAD confers the apoptosis resistance on synovial sublining macrophages, thereby contributing to the development of arthritis, suggesting that BAD may be a potential therapeutic target for RA. 3SA/3SA
+The resistance of synovial sublining macrophages to apoptosis has a crucial role in joint inflammation and destruction in rheumatoid arthritis (RA). However, the underlying mechanism is incompletely understood. Here we report that inactivation of the pro-apoptotic BCL-2 family protein BAD is essential for survival of synovial sublining macrophage in RA. Genetic disruption of Bad leads to more severe joint inflammation and cartilage and bone damage with reduced apoptosis of synovial sublining macrophages in collagen-induced arthritis (CIA) and TNFα transgenic (TNF-Tg) mouse models. Conversely, Bad3SA/3SA mice, in which BAD can no longer be inactivated by phosphorylation, are protected from collagen-induced arthritis. Mechanistically, phosphorylation-mediated inactivation of BAD specifically protects synovial sublining macrophages from apoptosis in highly inflammatory environment of arthritic joints in CIA and TNF-Tg mice, and in patients with RA, thereby contributing to RA pathology. Our findings put forward a model in which inactivation of BAD confers the apoptosis resistance on synovial sublining macrophages, thereby contributing to the development of arthritis, suggesting that BAD may be a potential therapeutic target for RA.
 
 ## Introduction
 
@@ -40,55 +40,131 @@ The pro-apoptotic BCL-2 family protein BAD has a critical role in mitochondrial-
 
 ## Results
 
-## Bad loss aggravates CIA
+### Bad loss aggravates CIA
 
 To investigate the role of BAD in RA, we established CIA model in Bad−/− mice and wild-type (WT) littermates, since the murine CIA model resembles most pathological features of human RA (Schinnerling et al., 2019). The disease incidence was much higher and the arthritis was much severer in Bad−/− mice compared with WT littermates in CIA model (Figure 1A). Histopathological analysis showed significantly increased synovitis, pannus formation, as well as cartilage and bone destruction in Bad−/− mice compared with WT littermates (Figure 1B,C). Although there was no detectable difference in bone phenotype between Bad−/− mice and WT littermates at basal level (Figure 1B,D), X-ray and Micro-CT revealed that bone destruction was severer in Bad−/− mice in CIA (Figure 1D). Consistently, Bad−/− mice had increased number of osteoclasts and higher mRNA expression levels of osteoclast marker TRAP and Ctsk in the joints compared with WT littermates in CIA model (Figure 1—figure supplement 1A,B). However, when osteoclast differentiation was induced from bone marrow-derived macrophages (BMDMs) isolated from WT and Bad−/− mice in vitro, there was no significant difference in the number or mRNA expression levels of TRAP and Ctsk between WT and Bad−/− osteoclasts (Figure 1—figure supplement 1C,D). These results suggest that overly activation of osteoclasts in the synovium of Bad−/− mice in CIA model is not likely the result of Bad loss-induced direct differentiation of osteoclasts, but most likely due to increased levels of pro-inflammatory cytokines such as TNFα, which is known to promote osteoclastogenesis (Wei et al., 2005; Wu et al., 2017). In support of this notion, the levels of circulating collagen II-specific IgG and its subtypes in the serum after immunization were significantly elevated in Bad−/− mice, as analyzed by ELISA (Figure 1E). Quantitative PCR (qPCR) revealed that the mRNA levels of pro-inflammatory cytokines such as TNFα, IL-6, IL-1β, and MMPs like MMP-3 and MMP-13 in the joint were significantly increased, while anti-inflammatory cytokine IL-10 was decreased in Bad−/− mice (Figure 1F). Consistently, ELISA analysis showed that the protein levels of pro-inflammatory cytokines such as TNFα, IL-6, and IL-1β were also increased in the serum of Bad−/− mice (Figure 1G). These results demonstrate that Bad−/− mice are more susceptible to CIA.
 
-## Bad loss leads to accumulation of macrophages and B cells but not CD4+ T cells in CIA
+![Figure 1.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig1-v1.jpg)
+
+**Figure 1.:** (A) Incidence and clinical scores of wild-type (WT; n = 12) and Bad−/− (n = 12) mice in CIA model. (B) H & E and Safranin O staining in ankle joint sections of WT and Bad−/− mice in CIA model and untreated control mice, ankle joints were harvested 63 days after primary immunization. Scale bar, 500 μm; magnified inset, 100 μm. (C) Evaluation of synovitis, pannus, and erosion of ankle joints of WT (n = 12) and Bad−/− (n = 12) mice in CIA model. (D) Representative photographs and radiographs of the hind paws of WT and Bad−/− mice in CIA model and untreated control mice. (E) Circulating levels of collagen II-specific antibodies in serum of WT (n = 12) and Bad−/− (n = 12) mice in CIA model were determined by ELISA. (F) Relative mRNA expression levels of pro-inflammatory cytokines (TNFα, IL-6, and IL-1β), matrix degradation enzymes (MMP-3 and MMP-13), and anti-inflammatory cytokine IL-10 in the joints of WT (n = 6) and Bad−/− (n = 9) mice in CIA model were determined by real-time qPCR. (G) Protein levels of pro-inflammatory cytokines TNFα, IL-6, and IL-1β in the serum of WT (n = 12) and Bad−/− (n = 12) mice in CIA model were determined by ELISA. All data are presented as mean ± SEM, and dots represent individual mice. Significant difference was analyzed by Mann–Whitney U-test (A) or unpaired Student’s t-test (C, E, F, and G), *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 1—figure supplement 1 .](https://cdn.elifesciences.org/articles/56309/elife-56309-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1 .:** (A) TRAP staining and quantification of TRAP+ multinucleated cells (MNCs) per field in the joints of wild-type (WT) (n = 5) and Bad−/− (n = 6) mice in CIA model. Scale bar, 50 μm. (B) Relative mRNA expression levels of osteoclast specific markers (TRAP and Ctsk) in the joints of WT (n = 7) and Bad−/− (n = 9) mice in CIA model. (C) WT and Bad−/−bone marrow-derived macrophages (BMDMs) were treated with M-CSF and RANKL to induce osteoclast differentiation, osteoclasts were detected by TRAP staining. Scale bar, 50 μm. The number of TRAP positive MNCs per field was quantified. (D) Relative mRNA expression levels of TRAP and Ctsk in BMDMs treated with M-CSF and RANKL. Data in (C and D) represent two individual experiments with similar results. All data are presented as mean ± SEM, dots represent individual mice. Significant difference was analyzed by unpaired Student’s t-test, *p<0.05; **p<0.01.
+
+### Bad loss leads to accumulation of macrophages and B cells but not CD4+ T cells in CIA
 
 We wanted to know whether Bad loss affects macrophages, which have a crucial role in inflammation in CIA, and the infiltration of lymphocytes in synovium, as B cell-mediated humoral immunity and T cell-mediated cellular immunity are known to play important roles in the pathogenesis of RA (McInnes and Schett, 2011). Flow cytometry analysis showed accumulation of macrophages was significantly increased in the synovium of Bad−/− mice compared with WT littermates in CIA model (Figure 2—figure supplement 1A,B). The percentage of synovial B cells was also increased in Bad−/− mice with CIA (Figure 2—figure supplement 1C,D), consistent with upregulated collagen II-specific antibodies production in the serum of Bad−/− mice in CIA model (Figure 1E). However, the percentage of synovial CD4+ T cells was comparable between Bad−/− mice and WT littermates (Figure 2—figure supplement 1E,F). Consistently, Bad loss did not affect expression levels of CD4+ T cell-associated cytokines including IFN-γ, IL-4, and IL-17 between WT and Bad−/− mice with CIA, although increased expression of IL-21 that is known to promote B cell differentiation and proliferation (Dienz et al., 2009; Liu and King, 2013; Zotos et al., 2010; Figure 2—figure supplement 1G). By contrast, the percentages of both CD4+ T cells and B cells in spleen and lymph nodes (LNs) had no significant differences (Figure 2—figure supplement 2). These results suggest that Bad loss results in accumulation of macrophages and B cells but not CD4+ T cells in synovium in mice with CIA.
 
-## Bad-deficient B cells alone are not sufficient to promote the development of CIA
+### Bad-deficient B cells alone are not sufficient to promote the development of CIA
 
 To determine the role of Bad-deficient B cells in the development of CIA, bone marrow cells isolated from Bad−/− mice and WT littermates were mixed with the bone marrow cells isolated from mature B cell-deficient μMT mice at a ratio of 1:4, respectively, and then transferred into lethally irradiated μMT mice to establish CIA model (Figure 2—figure supplement 3A). The percentage of B cells in peripheral blood was comparable between μMT mice transferred with WT (μMT:WT mice) and Bad−/− (μMT:Bad−/− mice) bone marrow cells after transplantation (Figure 2—figure supplement 3B). The incidence and severity of CIA were similar between μMT:WT mice and μMT:Bad−/− mice (Figure 2—figure supplement 3C,D). In support of this notion, histopathological analysis showed that there was no significant difference in synovitis, pannus formation, as well as bone and cartilage destruction between these two different groups of mice (Figure 2—figure supplement 3E,F). Consistently, Bad loss did not affect the autoantibody production, as measured by ELISA that detects anti-dsDNA IgG level in serum of 5-month-old WT and Bad−/− mice (Figure 2—figure supplement 3G). Thus, Bad-deficient B cells alone are not sufficient to promote the development of CIA. Most likely, the function of B cells in Bad−/− mice with CIA is augmented extrinsically, thereby contributing to CIA pathogenesis.
 
-## Bad loss protects synovial macrophages from apoptosis in CIA
+### Bad loss protects synovial macrophages from apoptosis in CIA
 
 We hypothesized that Bad loss reduces apoptosis of synovial cells in mice with CIA. Immunoblotting analysis of cleaved Caspase-3 (cCasp-3), one of the executioner caspases in BAD-mediated apoptosis pathway, in the joint extracts of WT and Bad−/− mice with CIA revealed that the Casp-3 activity was decreased in Bad−/− mice (Figure 2—figure supplement 4A). Immunofluorescence double staining of TUNEL with anti-Vimentin (marker of fibroblast), anti-CD4 (marker of CD4+ T cell), or anti-CD45R (marker of B cell) revealed that there was no significant difference in cell death in fibroblasts, CD4+ T cells, or B cells in the synovium of Bad−/− and WT littermate mice in CIA model (Figure 2—figure supplement 4B–D). By contrast, death of macrophage as detected by TUNEL and anti-F4/80 double staining was significantly reduced in the synovium of Bad−/− mice (Figure 2—figure supplement 4E). Consistently, immunofluorescence double staining of anti-F4/80 and anti-cleaved Casp-3 revealed that macrophage apoptosis in sublining was significantly reduced, which was most likely responsible for accumulation of macrophages in the synovium of Bad−/− mice with CIA (Figure 2A,B). Consistently, flow cytometry analysis of cleaved caspase-3 positive synovial macrophages isolated from arthritic joints of WT and Bad−/− mice in CIA model showed reduced ratio of apoptotic macrophages in the joints of Bad−/− mice compared with WT mice in CIA model (Figure 2C,D). In addition, flow cytometry analysis of Annexin V showed reduced ratio of apoptotic macrophages in the joints of Bad−/− mice in CIA model (Figure 2—figure supplement 5). By contrast, there was no significant difference in the ratio of apoptotic B cells, CD4+ T cells, or synovial fibroblasts in arthritic joints of WT and Bad−/− mice in CIA model, analyzed by either cleaved caspase-3 (Figure 2—figure supplement 6) or Annexin V (Figure 2—figure supplement 7) flow cytometry assay. These results indicate that Bad loss mainly affects macrophage apoptosis, while apoptosis of other cell types appear to be less affected. Suppression of macrophage apoptosis may not only promote inflammation but also further stimulate B cell proliferation, thereby aggravating CIA in Bad−/− mice.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig2-v1.jpg)
+
+**Figure 2.:** (A) Double staining of anti-F4/80 and anti-cleaved Casp-3 in the ankle joint sections of wild-type (WT) and Bad−/− mice in CIA model. L: lining; SL: Sublining. Scale bar, 25 μm. (B) Quantification of the number of cleaved Casp-3 positive macrophage and total macrophage per region of interest (ROI) in the ankle joint sections of WT (n = 4) and Bad−/− (n = 6) mice in CIA model. (C) Apoptotic synovial macrophages from WT and Bad−/− mice in CIA model were analyzed by flow cytometry by staining cleaved Casp-3. (D) Quantification of the ratio of cleaved Casp-3 positive synovial macrophages in WT (n = 6) and Bad−/− (n = 6) mice in CIA model. (E) Apoptotic cell death of WT and Bad−/− bone marrow-derived macrophages (BMDMs) pretreated with PS1145 (10 μM) for 2 hr, followed by stimulation with TNFα (5 ng/ml) for various times as indicated, was analyzed by flow cytometry. (F) Quantification of apoptotic BMDMs for various time points as indicated. Data in (E and F) represent two individual experiments with similar results. All data are presented as mean ± SEM; dots represent individual mice. Significant difference was analyzed by unpaired Student’s t-test, **p<0.01; ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A, C, and E) The percentages of macrophage (CD11b+ F4/80+) (A), B cell (CD45+ B220+) (C), and CD4+ T cell (CD45+ CD4+) (E) in the synovium of WT and Bad−/− mice in CIA model were determined by flow cytometry. (B, D, and F) Quantification of the percentages of macrophage (B), B cell (D), and CD4+ T cell (F) in the synovium of WT (n = 6) and Bad−/− (n = 6) mice in CIA model. (G) Relative mRNA expression levels of cytokines secreted by CD4+ T cell subtypes in the joints of WT (n = 6) and Bad−/− (n = 9) mice in CIA model. All data are presented as mean ± SEM; dots represent individual mice. Significant difference was analyzed by unpaired Student’s t-test, *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) The percentages of B cell and CD4+ T cell in the spleen of WT and Bad−/− mice in CIA model were determined by flow cytometry. (B) The percentages of B cell and CD4+ T cell in the LN of WT and Bad−/− mice in CIA model were determined by flow cytometry. All data are presented as mean ± SEM, dots represent individual mice, and n = 6 for each group. Significant difference was analyzed by unpaired Student’s t-test.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) The experimental design diagram for bone marrow transplantation in μMT mice followed by CIA model. (B) The percentages of B cell in the peripheral blood (6 weeks after transplantation) of μMT:wild-type (WT) (n = 6) and μMT:Bad−/− (n = 6) mice were analyzed by flow cytometry. WT mice served as positive control and μMT mice served as negative control. (C) Representative photographs of the hind paws from μMT:WT mice and μMT:Bad−/− mice in CIA model. (D) Incidence and clinical scores of μMT:WT (n = 16) and μMT:Bad−/− (n = 16) mice in CIA model. (E) H & E and Safranin O staining in ankle joint sections of μMT:WT and μMT:Bad−/− mice in CIA model, ankle joints were harvested 63 days after primary immunization. Scale bar, 100 μm. (F) Evaluation of synovitis, pannus, and erosion of ankle joints from μMT:WT (n = 12) and μMT:Bad−/− (n = 12) mice in CIA model. (G) Anti-dsDNA IgG levels in the serum of 5-month-old WT (n = 6) and Bad−/− (n = 5) mice were detected by ELISA. All data are presented as mean ± SEM; dots represent individual mice. Significant difference was analyzed by Mann–Whitney U-test (D) or unpaired Student’s t-test (B, F, and G).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Immunoblotting analysis of caspase-3, cCasp-3, and BAD in ankle joint extracts of immunized wild-type (WT) (n = 3) and Bad−/− (n = 3) mice. (B) Double staining of anti-Vimentin (fibroblast marker) and TUNEL in ankle sections of WT (n = 4) and Bad−/− (n = 6) mice in CIA model. The number of Vimentin and TUNEL double positive cells per field was quantified. (C) Double staining of anti-CD4 (CD4+ T cell marker) and TUNEL in ankle sections of WT (n = 4) and Bad−/− (n = 6) mice in CIA model. The number of CD4 and TUNEL double positive cells per field was quantified. (D) Double staining of anti-CD45R (B cell marker) and TUNEL in ankle sections of WT (n = 4) and Bad−/− (n = 6) mice in CIA model. The number of CD45R and TUNEL double positive cells per field was quantified. (E) Double staining of anti-F4/80 (macrophage marker) and TUNEL in ankle sections of WT (n = 4) and Bad−/− (n = 6) mice in CIA model. The number of F4/80 and TUNEL double positive cells per field was quantified. Scale bar, 50 μm. All data are presented as mean ± SEM; dots represent individual mice. Significant difference was analyzed by unpaired Student’s t-test, *p<0.05.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Apoptotic synovial macrophages from wild-type (WT) and Bad−/− mice in CIA model were analyzed by flow cytometry by staining Annexin V. (B) Quantification of the ratio of Annexin V positive synovial macrophages in WT (n = 6) and Bad−/− (n = 6) mice in CIA model. All data are presented as mean ± SEM; dots represent individual mice. Significant difference was analyzed by unpaired Student’s t-test, **p<0.01.
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig2-figsupp6-v1.jpg)
+
+**Figure 2—figure supplement 6.:** (A, C, and E) Apoptotic synovial B cells (A), CD4+ T cells (C), and fibroblasts (E) from wild-type (WT) and Bad−/− mice in CIA model were analyzed by flow cytometry by staining cleaved Casp-3. (B, D, and F) Quantification of the apoptotic B cells (B), CD4+ T cells (D), and fibroblasts (F). All data are presented as mean ± SEM, dots represent individual mice, and n = 6 for each group. Significant difference was analyzed by unpaired Student’s t-test.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig2-figsupp7-v1.jpg)
+
+**Figure 2—figure supplement 7.:** (A, C, and E) Apoptotic synovial B cells (A), CD4+ T cells (C), and fibroblasts (E) from WT and Bad−/− mice in CIA model were analyzed by flow cytometry by staining Annexin V. (B, D, and F) Quantification of the apoptotic B cells (B), CD4+ T cells (D), and fibroblasts (F). All data are presented as mean ± SEM, dots represent individual mice, and n = 6 for each group. Significant difference was analyzed by unpaired Student’s t-test.
+
 Next we wanted to know whether BAD involves in TNFα-induced macrophage apoptosis, as RA is a chronic inflammatory disease which has consistent expression of TNFα, while inactivation of BAD by IKK can inhibit TNFα-induced apoptosis (Yan et al., 2013). When WT and Bad−/− BMDMs were pretreated with IKK-specific inhibitor PS1145 to block TNFα-induced IKK activation, Bad−/− BMDMs were resistant to TNFα-induced apoptosis in vitro, as analyzed by flow cytometry (Figure 2E,F), indicating Bad loss can protect synovial macrophages from TNFα-induced apoptosis, thereby augmenting CIA.
 
-## Bad-deficient macrophages sufficiently aggravate CIA
+### Bad-deficient macrophages sufficiently aggravate CIA
 
 To determine the role of Bad loss in macrophages in the development of CIA, bone marrow cells isolated from WT or Bad−/− mice (both on CD45.2 background) were transferred into lethally irradiated WT recipient mice (CD45.1 background), which had a complete and stable chimerism with donor mice in bone marrow after transplantation (Figure 3—figure supplement 1). The recipient mice were subjected to CIA 6 weeks after transplantation (Figure 3A), among which the mice transferred with Bad−/− bone marrow cells (CD45.1:Bad−/− mice) displayed more severe arthritis and higher incidence and clinical score than the mice transferred with WT bone marrow cells (CD45.1:WT mice) (Figure 3B,C). Histopathological analysis showed increased synovitis, pannus formation, as well as cartilage and bone destruction in CD45.1:Bad−/− mice compared with CD45.1:WT mice (Figure 3D,E). The number of synovial sublining macrophages in CD45.1:Bad−/− mice was also increased compared with that in CD45.1:WT mice, while apoptosis of synovial sublining macrophages in CD45.1:Bad−/− mice was significantly reduced, as analyzed by double staining of anti-F4/80 and anti-cleaved Casp-3 (Figure 3F,G). Thus, Bad-deficient macrophages are sufficient to promote the development of CIA, suggesting that macrophage function is augmented intrinsically in Bad−/− mice to contribute to CIA pathology.
 
-## The pro-apoptotic activity of BAD was suppressed in synovial sublining macrophages in CIA
+![Figure 3.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig3-v1.jpg)
+
+**Figure 3.:** (A) The experimental design diagram for bone marrow transplantation in CD45.1 background mice followed by CIA model. (B) Representative photographs of the hind paws from CD45.1:WT and CD45.1:Bad−/− mice in CIA model. (C) Incidence and clinical scores of CD45.1:WT (n = 15) and CD45.1:Bad−/− (n = 17) mice in CIA model. (D) H & E and Safranin O staining in ankle joint sections of CD45.1:WT and CD45.1:Bad−/− mice in CIA model, ankle joints were harvested 63 days after primary immunization. Scale bar, 100 μm. (E) Evaluation of synovitis, pannus, and erosion of ankle joints from CD45.1:WT (n = 15) and CD45.1:Bad−/− (n = 17) mice in CIA model. (F) Double staining of anti-F4/80 and anti-cleaved Casp-3 in the ankle joint sections of CD45.1:WT and CD45.1:Bad−/− mice in CIA model. Scale bar, 25 μm. (G) Quantification of the number of cleaved Casp-3 positive macrophage and total macrophage per field in the ankle joint sections of CD45.1:WT (n = 7) and CD45.1:Bad−/− (n = 9) mice in CIA model. All data are presented as mean ± SEM; dots represent individual mice. Significant difference was analyzed by Mann–Whitney U-test (C) or unpaired Student’s t-test (E and G), *p<0.05; **p<0.01.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The percentages of overall CD45.2 cells in the peripheral blood (4 weeks after transplantation) of CD45.1:WT and CD45.1:Bad−/− mice were analyzed by flow cytometry. (B) The percentages of overall CD45.2 cells in the peripheral blood (8 weeks after transplantation) of CD45.1:WT and CD45.1:Bad−/− mice were analyzed by flow cytometry. (C) The percentages of CD45.2 myeloid cells (gated by Mac1 and Gr1) in the peripheral blood (4 weeks after transplantation) of CD45.1:WT and CD45.1:Bad−/− mice were analyzed by flow cytometry. All data are presented as mean ± SEM, dots represent individual mice, and n = 5 mice for each group. Significant difference was analyzed by unpaired Student’s t-test.
+
+### The pro-apoptotic activity of BAD was suppressed in synovial sublining macrophages in CIA
 
 We next determined how the pro-apoptotic activity of BAD is regulated in synovial sublining macrophages in mice with CIA. There was no significant difference in BAD protein level in total joint extracts between control (non-arthritic) and arthritic joints of WT mice in CIA (Figure 4A). By contrast, phosphorylation of BAD at the ‘regulatory serines’ (Ser112, Ser136, and Ser155), indicative of BAD inactivation (Datta et al., 2002) was profoundly increased in arthritic joints compared with control joints (Figure 4A). Immunohistochemistry (IHC) staining revealed that Ser136-phosphorylated BAD [pBAD(S136)] was significantly increased mainly in the synovial sublining layer of arthritic joint compared with that in the control joint (Figure 4B,C). Furthermore, the cells with strong pBAD(S136) signal were mostly localized in the cartilage-pannus junction areas (Figure 4B), which are often infiltrated by macrophages (Tak and Bresnihan, 2000). In support of this notion, immunofluorescence double staining of anti-pBAD(S136) along with different cell markers revealed that pBAD(S136) mainly located in macrophages (F4/80+), but not T cells (CD3+), B cells (CD45R+) or fibroblasts (Vimentin+) (Figure 4D,E). This was not the result of cell-type specific expression of BAD (Figure 4—figure supplement 1), and little pBAD(S136) signal was found in these cell types in non-arthritic joints (Figure 4—figure supplement 2). More importantly, pBAD(S136)+ macrophages mainly located in the sublining layer of arthritic joint synovium (Figure 4F). These data indicate that inactivation of BAD is responsible for, at least in part, the resistance of infiltrated macrophages to apoptosis in CIA.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig4-v1.jpg)
+
+**Figure 4.:** (A) Immunoblotting analysis of pBAD(S112), pBAD(S136), pBAD(S155), and BAD in ankle joints extracts of wild-type (WT) control (non-arthritic) and arthritic mice in CIA model (n = 3). (B) Immunohistochemistry staining of anti-pBAD(S136) in the synovium of WT control and arthritic mice in CIA model, Bad−/− mice serve as control. Scale bar, 50 μm. (C) Quantification of the number of pBAD(S136) positive cells per field (n = 4). (D) Double staining of anti-pBAD(S136) with T cell marker anti-CD3, B cell marker anti-CD45R, macrophage marker anti-F4/80, or synovial fibroblast marker anti-Vimentin respectively in the synovium of WT arthritic mice in CIA model. Scale bar, 25 μm. (E) Quantification of percentages of pBAD(S136) positive cells in total cells per field of different cell types (n = 3). (F) Double staining of anti-pBAD(S136) and anti-F4/80 in the synovium of WT control and arthritic mice in CIA model. Scale bar, 25 μm. All data are presented as mean ± SEM; dots represent individual mice. Significant difference was analyzed by unpaired Student’s t-test (C) or one-way ANOVA test (E), **p<0.01; ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Double staining of anti-BAD with T cell marker anti-CD3, B cell marker anti-CD45R, macrophage marker anti-F4/80, or synovial fibroblast marker anti-Vimentin respectively in the synovium of wild-type (WT) arthritic mice in CIA model. Scale bar, 25 μm. (B) Quantification of percentages of BAD positive cells in total cells per field of different cell types (n = 3). Data are presented as mean ± SEM; dots represent individual mice. Significant difference was analyzed by one-way ANOVA test.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Double staining of anti-pBAD(S136) with T cell marker anti-CD3, B cell marker anti-CD45R, macrophage marker anti-F4/80 or synovial fibroblast marker anti-Vimentin, respectively, in the synovium of WT non-arthritic mice. Scale bar, 25 μm. (B) Quantification of percentages of pBAD(S136) positive cells in total cells per field of different cell types (n = 3). Data are presented as mean ± SEM; dots represent individual mice. Significant difference was analyzed by one-way ANOVA test.
 
 To elucidate the signaling pathways that lead to inactivation of BAD in synovial macrophages in CIA, we examined the activity of Akt and IKK in the synovial macrophages in the control and arthritic joints of WT mice with CIA, since Akt is a known BAD(S136) kinase upon stimulation by growth factors and survival factors and is upregulated in the synovium of RA for survival of synovial cells (Datta et al., 1997; Jiao et al., 2018), while IKK is known to phosphorylate BAD at Ser26, which is a prerequisite for BAD to be phosphorylated at Ser112, Ser136, and Ser155 upon stimulation by TNFα (Yan et al., 2013), which is the key pro-inflammatory cytokine that induces inflammation in RA (van Schouwenburg et al., 2013). Immunofluorescence double staining of anti-pAkt and anti-F4/80 revealed that macrophages in the sublining synovium of arthritic joints had significantly increased activation of Akt compared with that in control joints (Figure 5A,C), so was activation of IKK (Figure 5B,D). Consistently, phosphorylation of Akt and IKK, as well as the protein levels of PDGF and VEGF were significantly increased in the arthritic joint extracts (Figure 5E). Taken together, activation of Akt and IKK are responsible for, at least in part, phosphorylation and inactivation of BAD in infiltrated sublining macrophages in CIA model.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig5-v1.jpg)
 
-**Figure 5.:** (A) Double staining of anti-pAkt and anti-F4/80 in the synovium of wild-type (WT) control and arthritic mice in CIA model. Scale bar, 25 μm. (B) Double staining of anti-pIKK and anti-F4/80 in the synovium of WT control and arthritic mice in CIA model. Scale bar, 25 μm. (C) Quantification of the number of pAkt and F4/80 double positive cells per field in the synovium of WT control (n = 4) and arthritic (n = 4) mice in CIA model. (D) Quantification of the number of pIKK and F4/80 double positive cells per field in the synovium of WT control (n = 4) and arthritic (n = 4) mice in CIA model. (E) Immunoblotting analysis of the protein levels of platelet-derived growth factor (PDGF), vascular endothelial growth factor (VEGF), pAkt, Akt, pIKK, and IKK in the joint extracts of WT non-arthritic (n = 3) and arthritic (n = 3) mice in CIA model. All data are presented as mean ± SEM; dots represent individual mice. Significant difference was analyzed by unpaired Student’s t-test, **p<0.01; ***p<0.001.  Figure 5—source data 1.Figure 5C and D.
+**Figure 5.:** (A) Double staining of anti-pAkt and anti-F4/80 in the synovium of wild-type (WT) control and arthritic mice in CIA model. Scale bar, 25 μm. (B) Double staining of anti-pIKK and anti-F4/80 in the synovium of WT control and arthritic mice in CIA model. Scale bar, 25 μm. (C) Quantification of the number of pAkt and F4/80 double positive cells per field in the synovium of WT control (n = 4) and arthritic (n = 4) mice in CIA model. (D) Quantification of the number of pIKK and F4/80 double positive cells per field in the synovium of WT control (n = 4) and arthritic (n = 4) mice in CIA model. (E) Immunoblotting analysis of the protein levels of platelet-derived growth factor (PDGF), vascular endothelial growth factor (VEGF), pAkt, Akt, pIKK, and IKK in the joint extracts of WT non-arthritic (n = 3) and arthritic (n = 3) mice in CIA model. All data are presented as mean ± SEM; dots represent individual mice. Significant difference was analyzed by unpaired Student’s t-test, **p<0.01; ***p<0.001.
 
-## Inactivation of BAD in synovial sublining macrophages in TNF-Tg mice
+### Inactivation of BAD in synovial sublining macrophages in TNF-Tg mice
 
 We also determined the pathological function of BAD in TNF-Tg mice, another murine model of experimental arthritis in which overexpression of human TNFα leads to inflammatory-erosive arthritis (Li and Schwarz, 2003). Histopathological analysis showed increased synovitis, pannus formation, as well as cartilage and bone destruction in the joints of 3-month-old TNF-Tg/Bad−/− mice compared with TNF-Tg littermates (Figure 6A,B), suggesting that Bad loss also exacerbates experimental arthritis in TNF-Tg model. IHC staining revealed that pBAD(S136) was significantly increased in the synovial sublining layer of TNF-Tg mice compared with that in the control mice (Figure 6C,D) and was co-stained with anti-F4/80 (Figure 6E), suggesting that pBAD(S136)+ macrophages were mainly increased in the synovial sublining layer. More importantly, the macrophage apoptosis, as revealed by anti-F4/80 and anti-cleaved Casp-3 double staining, was significantly reduced in the synovial sublining layer in TNF-Tg/Bad−/− mice compared with the control TNF-Tg littermates, correlating with increased macrophage numbers in synovial sublining layer in TNF-Tg/Bad−/− mice (Figure 6—figure supplement 1). Consistently, flow cytometry analysis of cleaved caspase-3 also revealed reduced macrophage apoptosis under the same conditions (Figure 6F,G). These results suggest that BAD phosphorylation and inactivation is a shared mechanism for apoptosis resistance of synovial sublining macrophage in two different experimental arthritis murine models.
 
-## Bad3SA/3SA mice are resistant to CIA
+![Figure 6.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig6-v1.jpg)
+
+**Figure 6.:** (A) H & E and Safranin O staining in ankle joint sections of 3-month-old wild-type (WT), Bad−/−, TNF-Tg, and TNF-Tg/Bad−/− mice. Scale bar, 500 μm; magnified inset, 100 μm. (B) Evaluation of synovitis, pannus, and erosion of ankle joints of TNF-Tg (n = 10) and TNF-Tg/Bad−/− (n = 10) mice. (C) Immunohistochemistry staining of anti-pBAD(S136) in the synovium of 3-month-old WT, TNF-Tg, and TNF-Tg/Bad−/− mice. Scale bar, 50 μm. (D) Quantification of the number of pBAD(S136) positive cells per field (n = 3). (E) Double staining of anti-pBAD(S136) and anti-F4/80 in the synovium of 3-month-old WT control and TNF-Tg mice. Scale bar, 25 μm. (F) Apoptotic synovial macrophages from TNF-Tg and TNF-Tg/Bad−/− mice were analyzed by flow cytometry by staining cleaved Casp-3. (G) Quantification of the ratio of cleaved Casp-3 positive synovial macrophages in TNF-Tg (n = 6) and TNF-Tg/Bad−/− (n = 6) mice. All data are presented as mean ± SEM; dots represent individual mice. Significant difference was analyzed by unpaired Student’s t-test, *p<0.05; **p<0.01; ***p<0.001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Double staining of anti-F4/80 and anti-cleaved Casp-3 in the ankle joint sections of 3-month-old TNF-Tg and TNF-Tg/Bad−/− mice. Scale bar, 25 μm. (B) Quantification of the number of cleaved Casp-3 positive macrophage and total macrophage per field in the ankle joint sections of TNF-Tg (n = 4) and TNF-Tg/Bad−/− (n = 4) mice. All data are presented as mean ± SEM; dots represent individual mice. Significant difference was analyzed by unpaired Student’s t-test, *p<0.05; **p<0.01.
+
+### Bad3SA/3SA mice are resistant to CIA
 
 To demonstrate phosphorylation-mediated inactivation of BAD contributes to the development of experimental arthritis, we performed CIA in Bad3SA/3SA knockin mice, in which the regulatory serine sites were mutated to alanines so that the resultant BAD mutant can no longer be phosphorylated and inactivated (Datta et al., 2002; Figure 7A,B). Bad3SA/3SA mice displayed very lower incidence and significantly reduced severity of arthritis compared with WT littermates in CIA model (Figure 7C,D). Histopathological analysis showed significantly decreased synovitis, pannus formation, as well as cartilage and bone destruction in Bad3SA/3SA mice (Figure 7E,F).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig7-v1.jpg)
 
-**Figure 7.:** Bad mice are resistant to collagen-induced arthritis (CIA).3SA/3SA(A) Immunoblotting analysis of pBAD(S112), pBAD(S136), pBAD(S155), and BAD in the joint extracts of wild-type (WT; n = 3) and Bad3SA/3SA (n = 3) mice in CIA model. (B) Representative IHC staining of pBAD(S136) in the synovium of immunized WT and Bad3SA/3SA mice. Scale bar, 50 μm. (C) Representative photographs of the hind paws of WT and Bad3SA/3SA mice in CIA model. (D) Incidence and clinical scores of WT (n = 13) and Bad3SA/3SA (n = 14) mice in CIA model. (E) H & E and Safranin O staining in ankle joint sections of WT and Bad3SA/3SA mice in CIA model. Ankle joints were harvested 63 days after primary immunization. Scale bar, 100 μm. (F) Evaluation of synovitis, pannus, and erosion of ankle joints from WT (n = 13) and Bad3SA/3SA (n = 14) mice in CIA model. (G) Immunoblotting analysis of caspase-3 and cleaved Casp-3 in ankle joints of immunized WT (n = 3) and Bad3SA/3SA (n = 3) mice. (H) Double staining of anti-F4/80 and anti-cleaved Casp-3 in the sublining area of ankle joint sections of WT and Bad3SA/3SA mice in CIA model. Scale bar, 50 μm. (I) Quantification of the cleaved Casp-3-positive macrophage and number of total macrophage per field in the ankle joint sections of WT (n = 6) and Bad3SA/3SA (n = 6) mice in CIA model. All of the data are presented as mean ± SEM; dots represent individual mice. Significant difference was analyzed by Mann–Whitney U-test (D) or unpaired Student’s t-test (F and I), *p<0.05; **p<0.01.  Figure 7—source data 1.Figure 7D,F, and I.
+**Figure 7.:** (A) Immunoblotting analysis of pBAD(S112), pBAD(S136), pBAD(S155), and BAD in the joint extracts of wild-type (WT; n = 3) and Bad3SA/3SA (n = 3) mice in CIA model. (B) Representative IHC staining of pBAD(S136) in the synovium of immunized WT and Bad3SA/3SA mice. Scale bar, 50 μm. (C) Representative photographs of the hind paws of WT and Bad3SA/3SA mice in CIA model. (D) Incidence and clinical scores of WT (n = 13) and Bad3SA/3SA (n = 14) mice in CIA model. (E) H & E and Safranin O staining in ankle joint sections of WT and Bad3SA/3SA mice in CIA model. Ankle joints were harvested 63 days after primary immunization. Scale bar, 100 μm. (F) Evaluation of synovitis, pannus, and erosion of ankle joints from WT (n = 13) and Bad3SA/3SA (n = 14) mice in CIA model. (G) Immunoblotting analysis of caspase-3 and cleaved Casp-3 in ankle joints of immunized WT (n = 3) and Bad3SA/3SA (n = 3) mice. (H) Double staining of anti-F4/80 and anti-cleaved Casp-3 in the sublining area of ankle joint sections of WT and Bad3SA/3SA mice in CIA model. Scale bar, 50 μm. (I) Quantification of the cleaved Casp-3-positive macrophage and number of total macrophage per field in the ankle joint sections of WT (n = 6) and Bad3SA/3SA (n = 6) mice in CIA model. All of the data are presented as mean ± SEM; dots represent individual mice. Significant difference was analyzed by Mann–Whitney U-test (D) or unpaired Student’s t-test (F and I), *p<0.05; **p<0.01.
 
 We next determined whether the decreased incidence and reduced severity of CIA in Bad3SA/3SA mice is the result of increased apoptosis of synovial sublining macrophages. Immunoblotting analysis showed increased protein level of cleaved Casp-3 in joint extracts of Bad3SA/3SA mice compared with WT littermates in CIA model (Figure 7G). Furthermore, immunofluorescence double staining of anti-F4/80 with anti-cleaved Casp-3 revealed that apoptosis of synovial sublining macrophage was significantly increased, consistent with decreased synovial macrophage number in Bad3SA/3SA mice compared with that in WT littermates (Figure 7H,I). Taken together, these results demonstrate that phosphorylation-mediated inactivation of BAD is critical for synovial sublining macrophages survival and the development of CIA.
 
-## Inactivation of BAD in synovial sublining macrophages in patients with RA
+### Inactivation of BAD in synovial sublining macrophages in patients with RA
 
 We wondered whether BAD also plays an important role in human RA. H & E staining showed increased infiltration of inflammatory cells in the synovial sections of RA patients compared with osteoarthritis (OA) patients (Figure 8A), consistent with previous reports (Kennedy et al., 1988). IHC staining of anti-pBAD (S99, equivalent to S136 in mouse) revealed that phosphorylation of human BAD (hBAD) at Ser99 was significantly higher in sublining layer of synovium of RA patients compared with that in OA patients (Figure 8A,B), consistent with the results in mouse arthritic joints (Figure 4B,C). Immunofluorescence double staining of anti-pBAD(S99) along with the markers of several synovial cell types including macrophage (CD68+), B cell (CD20+), T cell (CD3+), and fibroblast (Vimentin+) revealed that pBAD(S99) was mainly located in macrophages in sublining but not B cells, T cells, or fibroblasts (Figure 8C–E), consistent with the observations in CIA mice (Figure 4D–F). This was not the result of cell-type-specific expression of BAD (Figure 8—figure supplement 1). These results demonstrate that phosphorylation of BAD was increased in macrophages in sublining synovium of RA patients, thereby contributing to the apoptotic resistance of pro-inflammatory macrophages and pathology in RA patients.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig8-v1.jpg)
+
+**Figure 8.:** (A) H & E and pBAD(S99) immunohistochemistry staining of the synovium specimen sections of patients with OA and RA. Scale bar, 100 μm. (B) Quantification of pBAD(S99)-positive cells per field in the synovial specimen sections of patients with OA (n = 5) and RA (n = 5). (C) Double staining of anti-pBAD(S99) with T cell marker anti-CD3, B cell marker anti-CD20, macrophage marker anti-CD68 or synovial fibroblast marker anti-Vimentin in serial synovial specimen sections of patients with RA. Scale bar, 100 μm. (D) Quantification of the percentage of pBAD(S99)-positive cells in total cells per field of different cell types (n = 5). (E) Double staining of anti-pBAD(S99) and anti-F4/80 in the synovial specimen sections of patients with OA and RA. Scale bar, 25 μm. All data are presented as mean ± SEM; dots represent individual human samples. Significant difference was analyzed by unpaired Student’s t-test (B) or one-way ANOVA test (D), **p<0.01, ***p<0.001.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/56309/elife-56309-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Double staining of BAD with T cell marker anti-CD3, B cell marker anti-CD20, macrophage marker anti-CD68, or synovial fibroblast marker anti-Vimentin in serial synovial specimen sections of patients with RA. Scale bar, 100 μm. (B) Quantification of percentages of BAD positive cells in total cells per field of different cell types (n = 3). Data are presented as mean ± SEM; dots represent individual human samples. Significant difference was analyzed by one-way ANOVA test.
 
 ## Discussion
 
@@ -104,57 +180,417 @@ Our finding has important pathological significance and clinic relevance. The cu
 
 ## Materials and methods
 
-## Patient samples
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Synovial tissue of RA and OA patients</td>
+      <td>The University of Chicago</td>
+      <td>Department of Pathology’s diagnostic archive</td>
+      <td>Paraffin-embedded slides</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background Mus musculus</td>
+      <td>CD45.1 mice (C57BL/6 congenic)</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock #:002014 RRID:IMSR_JAX:002014</td>
+      <td>B6.SJL-Ptprca Pepcb/BoyJ</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background Mus musculus</td>
+      <td>μMT mice (C57BL/6 congenic)</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock #:002288 RRID:IMSR_JAX:002288</td>
+      <td>B6.129S2-Ighmtm1Cgn/J</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BAD (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #:9292 RRID:AB_331419</td>
+      <td>Immunoblotting (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pBAD(S136) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #:4366 RRID:AB_10547878</td>
+      <td>Immunoblotting (1:500) Immunofluorescence (1:100) Immunohistochemistry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pBAD(S112) (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #:9291 RRID:AB_331417</td>
+      <td>Immunoblotting (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pBAD(S155) (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #:9297 RRID:AB_2062131</td>
+      <td>Immunoblotting (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pAkt(S473) (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #:4060 RRID:AB_2315049</td>
+      <td>Immunoblotting (1:1000) Immunofluorescence (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Akt (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #:4691 RRID:AB_915783</td>
+      <td>Immunoblotting (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pIKKα/β (rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #:2078 RRID:AB_2079379</td>
+      <td>Immunoblotting (1:500) Immunofluorescence (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-IKKβ (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #:2684 RRID:AB_2122298</td>
+      <td>Immunoblotting (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cleaved Caspase-3 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #:9661 RRID:AB_2341188</td>
+      <td>Immunoblotting (1:500) Immunofluorescence (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Caspase-3 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #:9662 RRID:AB_331439</td>
+      <td>Immunoblotting (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 488-conjugated cleaved Caspase-3 (rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat #:9669 RRID:AB_2069869</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vimentin (chicken polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>Cat #:NB300-223 RRID:AB_10003206</td>
+      <td>Immunofluorescence (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-BAD (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #:ab32445 RRID:AB_725614</td>
+      <td>Immunofluorescence (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD11b (rabbit monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #:ab133357 RRID:AB_2650514</td>
+      <td>Immunofluorescence (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-F4/80 (rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #:ab6640 RRID:AB_1140040</td>
+      <td>Immunofluorescence (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45R (rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #:ab64100 RRID:AB_1140036</td>
+      <td>Immunofluorescence (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD3 (rat monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #:ab11089 RRID:AB_369097</td>
+      <td>Immunofluorescence (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vimentin (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat #:ab8069 RRID:AB_306239</td>
+      <td>Immunofluorescence (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD68 (mouse monoclonal)</td>
+      <td>Dako</td>
+      <td>Cat #:M0876 RRID:AB_2074844</td>
+      <td>Immunofluorescence (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-actin (mouse monoclonal)</td>
+      <td>Santa Cruz</td>
+      <td>Cat #:sc-47778 RRID:AB_2714189</td>
+      <td>Immunoblotting (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-mouse CD11b (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat #:101211 RRID:AB_312794</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421-conjugated anti-mouse F4/80 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat #:123131 RRID:AB_10901171</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-mouse CD4 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat #:100411 RRID:AB_312696</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421-conjugated anti-mouse CD4 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat #:100437 RRID:AB_10900241</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-mouse/human CD45R/B220 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat #:103211 RRID:AB_312996</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421-conjugated anti-mouse B220 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat #:103239 RRID:AB_10933424</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>BV421-conjugated anti-mouse CD45 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat #:103133 RRID:AB_10899570</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FITC-conjugated anti-mouse CD45 (rat monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat #:103107 RRID:AB_312972</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-mouse CD45.1 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat #:110713 RRID:AB_313502</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APCCy7-conjugated anti-mouse CD45.2 (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat #:109824 RRID:AB_830789</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa Fluor 594-conjugated anti-mouse Vimentin (mouse monoclonal)</td>
+      <td>Biolegend</td>
+      <td>Cat #:677804 RRID:AB_2566179</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PE-conjugated anti-mouse Gr1 (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Cat #:12-5931-82 RRID:AB_466045</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>APC-conjugated anti-mouse Mac1 (rat monoclonal)</td>
+      <td>eBioscience</td>
+      <td>Cat #:17-0112-82 RRID:AB_469343</td>
+      <td>Flow cytometry (1:100)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>FITC Annexin V Apoptosis Detection Kit I</td>
+      <td>BD Pharmingen</td>
+      <td>Cat #:556547</td>
+      <td>Flow cytometry (5 μl)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>In Situ Cell Death Detection Kit</td>
+      <td>Roche</td>
+      <td>Cat #:11684817910</td>
+      <td>TUNEL staining</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IL-1β ELISA Kit</td>
+      <td>R and D Systems</td>
+      <td>Cat #:MLB00C</td>
+      <td>ELISA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse IL-6 ELISA Kit</td>
+      <td>R and D Systems</td>
+      <td>Cat #:M6000B</td>
+      <td>ELISA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse TNFα ELISA Kit</td>
+      <td>R and D Systems</td>
+      <td>Cat #:MTA00B</td>
+      <td>ELISA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mouse anti-dsDNA IgG ELISA Kit</td>
+      <td>Alpha Diagnostic</td>
+      <td>Cat #:5120</td>
+      <td>ELISA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Leukocyte Acid Phosphatase Kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat #:387A</td>
+      <td>TRAP staining</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism 6.0</td>
+      <td>GraphPad Prism</td>
+      <td>RRID:SCR_002798</td>
+      <td>http://www.graphpad.com/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ</td>
+      <td>RRID:SCR_003070</td>
+      <td>https://imagej.net/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo 10</td>
+      <td>FlowJo</td>
+      <td>RRID:SCR_008520</td>
+      <td>https://www.flowjo.com/solutions/flowjo</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CytExpert</td>
+      <td>CytExpert Software</td>
+      <td>RRID:SCR_017217</td>
+      <td>https://www.beckman.fr/flow-cytometry/instruments/cytoflex/software</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Chicken type II collagen</td>
+      <td>Chondrex</td>
+      <td>Cat #:20012</td>
+      <td>2 mg/ml</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Complete Freund’s adjuvant (CFA)</td>
+      <td>Chondrex</td>
+      <td>Cat #:7023</td>
+      <td>5 mg/ml heat-denatured mycobacterium</td>
+    </tr>
+  </tbody>
+</table>
+
+### Patient samples
 
 Paraffin-embedded slides of synovial tissue from RA patients and OA patients (five each) were obtained from the Department of Pathology’s diagnostic archive of the University of Chicago with diagnostic reports with patients’ consent. The mean age of RA patients was 56 years old, ranging from 33 to 67 years old (female/male = 1.5). The mean age of OA patients was 65.4 years old, ranging from 55 to 75 (female/male = 1.5). This study was reviewed and approved by an Institutional Review Board (IRB) at the University of Chicago.
 
-## Mice
+### Mice
 
 Bad−/− and Bad3SA/3SA mice have been previously described (Datta et al., 2002; Ranger et al., 2003). Briefly, Bad−/− and Bad3SA/3SA mice have been backcrossed into the C57BL/6J genetic background for at least 14 generations and validated by genome scanning to be 99.9% congenic with C57BL/6J. Heterozygous mice were further bred to generate knockout/knockin experimental mice and WT littermates. CD45.1 (B6.SJL-Ptprca Pepcb/BoyJ, #002014) mice and μMT (B6.129S2-Ighmtm1Cgn/J, #002288) mice were purchased from the Jackson Laboratory. The 3647 line of TNF-Tg mice was generated by Dr. George Kollias (Institute of Immunology, Alexander Fleming Biomedical Sciences Research Center, Vari, Greece) (Keffer et al., 1991). The TNF-Tg mice were bred as heterozygotes on a C57BL/6J background. TNF-Tg/Bad−/− mice were generated by crossbreeding Bad−/− mice with TNF-Tg mice. Only male mice were used and were randomly chosen for each genotype with age-matched. For clinical score of the mice and microscopic analysis of immunofluorescence staining, the experimenters were blinded to each genotype. All of the mice were maintained under specific pathogen-free conditions. Animal studies were approved by the Institutional Animal Care and Use Committee of Shanghai Institute of Biochemistry and Cell Biology or the Institutional Animal Care and Use Committee of the University of Chicago.
 
-## Collagen-induced arthritis
+### Collagen-induced arthritis
 
 CIA in C57BL/6 background mice was established, as previously reported (Inglis et al., 2008). Briefly, 2 mg/ml chicken type II collagen (20012, Chondrex) was emulsified with an equal volume of complete Freund’s adjuvant (CFA) containing 5 mg/ml heat-denatured mycobacterium (7023, Chondrex). Eight to twelve weeks old mice were immunized intradermally at several sites near the base of the tail with 100 μl emulsion. A booster injection was administered on day 21 with the same emulsion of collagen II and CFA. The mice were monitored every other day after booster immunization. Development of arthritis was evaluated as described previously (Campbell et al., 2000).
 
-## Bone marrow transplantation
+### Bone marrow transplantation
 
 For bone marrow transplantation in CD45.1 mice, 6-week-old male recipient mice (CD45.1 background) were injected with one million bone marrow cells from donor mice of Bad−/− or WT littermates (CD45.2 background) in 100 μl PBS within 24 hr after lethal irradiation of the recipient mice with two doses of 540 rad (total 1080 rad) delivered at least 2 hr apart by RS 2000 X-ray irradiator. The recipient mice were administrated Uniprim diet 1 week prior to irradiation and continuously treated with Uniprim diet for 2 weeks after transplantation to against infection. Six weeks later, the recipient mice were immunized with collagen II and CFA to establish the CIA model.
 
 For bone marrow transplantation in μMT mice, the bone marrow cells from Bad−/− and WT littermates were mixed with bone marrow cells from μMT mice as the ratio of 1:4 and then injected into lethally irradiated μMT mice (6-week-old) with 5 × 106 cells in 100 μl PBS per recipient within 24 hr after lethal irradiation. Six weeks later, the mice were immunized with collagen II and CFA to establish the CIA model.
 
-## Radiography
+### Radiography
 
 Control and immunized WT and Bad−/− mice were euthanized with CO2 63 days after the primary immunization and the hind paws were removed and fixed in 70% ethanol and analyzed by X-ray (Faxitron X-ray MX-20 Specimen Radiography System) and Micro-CT (Skyscan1172, Bruker Biospin) instrument.
 
-## Histopathology
+### Histopathology
 
 Hind limbs of the control mice or mice with CIA were removed, fixed in 4% PFA for 48 hr, decalcified in 15% EDTA (pH 7.8), and embedded in paraffin. Serial sections of ankle joints at 5 μm were cut and stained with H & E and Safranin O. The evaluation of synovitis, pannus formation, as well as bone and cartilage destruction were determined by a graded scale as described previously (Tang et al., 2011).
 
-## Antibodies
+### Antibodies
 
 Antibodies against BAD (#9292), pBAD(S136) (#4366), pBAD(S112) (#9291), pBAD(S155) (#9297), pAkt(S473) (#4060), Akt (#4691), pIKKα/β (#2078), IKKβ (#2684), cleaved Caspase-3 (#9661), Caspase-3 (#9662), and Alexa Fluor 488-conjugated cleaved Caspase-3 (#9669) were from Cell signaling Technologies (CST). Antibody against mouse Vimentin (NB300-223) was from Novus Biologicals. Antibodies against BAD (ab32445), CD11b (ab133357), F4/80 (ab6640), CD45R (ab64100), CD3 (ab11089), and human Vimentin (ab8069) were from Abcam. Antibodies against CD68 (M0876) and CD20 (IS604) were from Dako. Antibody against β-actin (sc-47778) was from Santa Cruz. APC-conjugated anti-mouse CD11b (M1/70) (101211), BV421-conjugated anti-mouse F4/80 (BM8) (123131), FITC-conjugated anti-mouse F4/80 (BM8) (11-4801-81), APC-conjugated anti-mouse CD4 (GK1.5) (100411), Alexa Fluor 594-conjugated anti-mouse Vimentin (O91D3) (677804), APC-conjugated anti-mouse B220 (RA3-6B2) (50-0452-82), APC-conjugated anti-mouse/human CD45R/B220 (RA3-6B2) (103211), BV421-conjugated anti-mouse B220 (RA3-6B2) (103239), PE-conjugated anti-mouse B220 (RA3-6B2) (12-0452-83), FITC-conjugated anti-mouse CD4 (GK1.5) (11-0041-85), BV421-conjugated anti-mouse CD4 (GK1.5) (100437), BV421-conjugated anti-mouse CD45 (30-F11) (103133), FITC-conjugated anti-mouse CD45 (30-F11) (103107), APC-conjugated anti-mouse CD45.1 (A20) (110713), FITC-conjugated anti-mouse CD45.2 (104) (109805), APCCy7-conjugated anti-mouse CD45.2 (109824), PE-conjugated anti-mouse Gr1 (12-5931-82), and APC-conjugated anti-mouse Mac1 (M1/70) (17-0112-82) were from Biolegend or eBioscience. Annexin V (556419) and APC-conjugated anti-mouse CD8 (53–6.7) (553035) were from BD Pharmingen.
 
-## Immunofluorescence staining
+### Immunofluorescence staining
 
 Paraffin embedded slides of tissue were dewaxed in three containers of fresh xylene for 5 min each, and then rehydrated in 100% ethanol twice for 10 min each, 95% ethanol twice for 10 min each, and dH2O twice for 5 min each. Antigen retrieval was performed in pH 6.0 citrate buffer in water bath at 95°C for 10 min and cooled slides on bench top for 30 min, and then rinsed in dH2O for three times. Slides were then blocked in TBST (0.1% Tween-20) with 5% normal goat serum for 1 hr at room temperature and then incubated with primary antibody diluted in blocking buffer overnight at 4°C. Before staining with anti-pBAD(S136), primary antibody solution was incubated twice with membranes from SDS-PAGE loaded with Bad−/− mouse joint extracts overnight to eliminate nonspecific bindings and immunoblotting analysis was performed to confirm the elimination of nonspecific bindings. Next day, slides were washed with TBST three times for 5 min each and incubated with corresponding Alexa-Fluor 488 and Alexa-Fluor 594 labeled secondary antibodies (Invitrogen) diluted in blocking buffer for 2 hr at room temperature in dark. The slides were washed with TBST three times for 5 min each, incubated with DAPI (Sigma) and washed with TBST three times for 5 min each. Slides were mounted with fluorescent mounting medium (Dako) and visualized by Olympus BX51 or Nikon Eclipse Ti2 microscope. Validation of antibodies used for immunofluorescence staining was showed in Supplementary file 1.
 
-## Immunohistochemistry staining
+### Immunohistochemistry staining
 
 Paraffin embedded slides of mice or patients were dewaxed in xylene three times for 5 min each, and then rehydrated in 100% ethanol twice for 10 min each, 95% ethanol twice for 10 min each, and dH2O twice for 5 min each. Antigen retrieval was performed in pH 6.0 citrate buffer in water bath at 95°C for 10 min and cooled slides on bench top for 30 min and then rinsed slides in dH2O for three times. Incubated slides with 3% hydrogen peroxide for 10 min and rinsed slides in dH2O for two times. Slides were blocked in TBST with 5% normal goat serum for 1 hr at room temperature and then incubated with primary antibody diluted in blocking buffer overnight at 4°C. Slides were washed with TBST three times for 5 min each and incubated with one to three drops of SignalStain Boost Detection Reagent (#8114, CST) in a humidified chamber for 1 hr at room temperature. Slides were then washed with TBST three times for 5 min each and applied with 200 μl diluted SignalStain DAB (#8059, CST) for each section according to manufacturer instructions. Slides were immersed in dH2O and counterstained with Hematoxylin (#14166, CST) for 1 min. Sections were washed in dH2O twice for 5 min each and dehydrated in 95% ethanol twice for 10 s each, 100% ethanol twice for 10 s each, and xylene twice for 10 s each. Sections were then mounted with coverslips using mounting medium and visualized by Olympus BX51 or Nikon Eclipse Ti2 microscope.
 
-## TUNEL assay
+### TUNEL assay
 
 Apoptosis in paraffin embedded slides of synovium from CIA mice was detected using In Situ Cell Death Detection Kit (Cat No.11684817910, Roche) according to manufacturer’s instructions. In brief, paraffin embedded slides were dewaxed in xylene three times for 5 min each, and then rehydrated in 100% ethanol twice for 10 min each, 95% ethanol twice for 10 min each, and dH2O twice for 5 min each. Antigen retrieval was performed in 20 μg/ml Protein K solution for 20 min at 37°C and rinsed slides in PBS for five times. Then sections were incubated with TUNEL reaction mixture (prepared freshly before use) at 37°C for 1 hr in humidified chamber. Slides were incubated with DAPI (Sigma) and washed with PBS three times for 5 min each and mounted with fluorescent mounting medium (Dako) and visualized by Olympus BX51 or Nikon Eclipse Ti2 microscope.
 
-## Immunoblotting
+### Immunoblotting
 
 Total proteins of snap frozen joints were extracted in RIPA buffer (50 mM Tris-HCl, pH 7.6, 150 mM NaCl, 1% deoxycholic acid sodium salt, 0.1% SDS, 1% NP-40, 1 mM EDTA, and 1 mM EGTA) with phosphatase and protease inhibitors (1 mM DTT, 1 mM PMSF, 1 mM NaF, 1 mM Na3VO4, 1 μg/ml leupeptin, 1 μg/ml aprotinin, and 1 μg/ml pepstatin). Samples were rotated at 4°C for 30 min. The protein concentration was measured by BCA assay. Equal amounts of proteins were subjected to SDS-PAGE gels. Proteins were transferred to PVDF membranes (Millipore). Membranes were blocked in 5% (w/v) skim milk or 3% bovine serum albumin (BSA) diluted in TBST for 1 hr at room temperature and then incubated with diluted primary antibody overnight at 4°C. Next day, membranes were washed with TBST three times for 10 min each and then incubated with HRP-linked anti-rabbit IgG (#7074, CST) or HRP-linked anti-mouse IgG (#7076, CST) secondary antibody for 1 hr at room temperature. Membranes were washed with TBST three times for 10 min each and then exposed by enhanced chemiluminescence method. Original blots for immunoblotting analysis were showed in Supplementary file 2.
 
-## Real-time quantitative PCR
+### Real-time quantitative PCR
 
 Total RNA of snap frozen joints or cultured cells was extracted with TRIZOL reagent (No. 15596–018, Invitrogen), according to the manufacturer’s instructions. Reverse transcription of RNA to complementary DNA was performed using M-MLV Reverse Transcriptase (M1705, Promega). Real-time quantitative PCR (qPCR) was performed using SYBR Premix Ex Taq (#RR420A, TaKaRa) and the program for qPCR was 95°C for 30 s, 40 cycles of 95°C for 10 s, 55°C for 30 s, and 72°C for 30 s. The following primers were used for mRNA expression detection: TNFα (forward: CCAAGGCGCCACATCTCCCT; reverse: GCTTTCTGTGCTCATGGTGT), IL-6 (forward: TAGTCCTTCCTACCCCAATTTCC; reverse: TTGGTCCTTAGCCACTCCTTC), IL-1β (forward: GAAGAAGAGCCCATCCTCTG; reverse: TCATCTCGGAGCCTGTAGTG), IL-17A (forward: TTTAACTCCCTTGGCGCAAAA; reverse: CTTTCCCTCCGCATTGACAC), IL-4 (forward: GGTCTCAACCCCCAGCTAGT; reverse: GCCGATGATCTCTCTCAAGTGAT), IFN-γ (forward: ATGAACGCTACACACTGCATC; reverse: CCATCCTTTTGCCAGTTCCTC), IL-21 (forward: GGACCCTTGTCTGTCTGGTAG; reverse: TGTGGAGCTGATAGAAGTTCAGG), IL-10 (forward: GCTGGACAACATACTGCTAACC, reverse: ATTTCCGATAAGGCTTGGCAA), MMP-3 (forward: ACATGGAGACTTTGTCCCTTTTG, reverse: TTGGCTGAGTGGTAGAGTCCC), MMP-13 (forward: CTTCTTCTTGTTGAGCTGGACTC, reverse: CTGTGGAGGTCACTGTAGACT), TRAP (forward: CACTCCCACCCTGAGATTTGT, reverse: CATCGTCTGCACGGTTCTG), Cstk (forward: GAAGAAGACTCACCAGAAGCAG, reverse: TCCAGGTTATGGGCAGAGATT), and β-actin (forward: GGCTGTATTCCCCTCCATCG, reverse: CCAGTTGGTAACAATGCCATGT). Relative mRNA expression levels were calculated using the 2-∆∆Ct method.
 
-## ELISA
+### ELISA
 
 For titration of collagen II-specific antibodies in CIA, 96-well plate (#9018, Corning) was coated with 100 μl of 5 μg/ml collagen II overnight at 4°C, followed by blocking with PBS containing 1% (w/v) BSA for 1 hr at room temperature. Diluted serum (begin at 1:100) was applied and incubated at room temperature for 2 hr. HRP-conjugated goat anti-mouse IgG (1030–05), IgG1 (1070–05), IgG2b (1090–05), IgG2c (1708–05), and IgG3 (1100–05), all of which were from SouthernBiotech, were added and incubated at room temperature for 2 hr, followed by incubation with 50 μl/well TMB (P0209, Beyotime) for 20 min in dark at room temperature and stopped by 25 μl/well 1M H2SO4. Color development was monitored at 450/540 nm by a microplates reader.
 
@@ -162,7 +598,7 @@ For detection of cytokines in the serum of mice with CIA, ELISA kits for mouse I
 
 For detection of anti-dsDNA autoantibody in the serum of mice under normal condition, the Mouse anti-dsDNA IgG ELISA kit (5120, Alpha Diagnostic) was used, according to the manufacturer’s instructions.
 
-## Flow cytometry
+### Flow cytometry
 
 For flow cytometry of infiltrated cells in the joints of mice with CIA, the hind paws were harvested. After the skins were removed, the paws were minced and digested in collagenase II (2 mg/ml; Sigma C6885) and DNase I (0.1 mg/ml; Roche, 776785) in 5 ml HBSS at 37°C for 2 hr with vortex every 30 min. The digested cells were washed and passed through 70 μm cell strainers (BD Biosciences). Cells were counted and stained with cell surface markers or Annexin V, or fixed, permeabilized, and stained with intracellular cell marker or cleaved Caspase-3, and finally analyzed using LSR II (BD Biosciences) or CytoFLEX (Beckman) flow cytometer.
 
@@ -172,14 +608,14 @@ For flow cytometry of cells from peripheral blood, about 10 μl peripheral blood
 
 For flow cytometry of BMDMs, about 8-week-old mice were euthanized by CO2 and BMDMs were isolated from femur and tibia bones of mice and cultured in L929 conditioned completed DMEM medium supplemented with 10% (v/v) FBS and 1% penicillin/streptomycin (100 U/ml) at 37°C with 5% CO2 for 7 days after removing red blood cells. After treatment, cells were collected by TE without EDTA, counted, and washed with PBS, then centrifuged at 300 × g for 5 min at 4°C and resuspended with 100 μl Annexin V staining buffer. Cells were added 5 μl Annexin V for each tube and incubated at room temperature for 15 min in dark. Then cells were added 400 μl Annexin V staining buffer and analyzed using LSR-Fortessa 4–15 HTS flow cytometer (BD Biosciences).
 
-## In vitro osteoclastogenesis
+### In vitro osteoclastogenesis
 
 Bone marrow cells were harvested from femur and tibia bones. After removing red blood cells by adding ACK lysis buffer, cells were resuspended in DMEM medium containing 10% FBS, 20% L929 medium, and 1% penicillin/streptomycin, and then plated in 12-well plates. Medium was changed on day 3. After 7 days, bone marrow macrophages were cultured in the presence of 50 ng/ml M-CSF (416 ML, R and D systems) and 100 ng/ml RANKL (315–11, PeproTech) or 50 ng/ml M-CSF alone for another 7 days. The culture medium was changed every other day. Cells were then fixed and stained with TRAP (leukocyte acid phosphatase kit #387A; Sigma-Aldrich) and TRAP-positive multinucleated cells (TRAP+ MNCs) were counted using light microscopy.
 
-## TRAP staining
+### TRAP staining
 
 Paraffin embedded slides of joints were dewaxed in xylene and rehydrated in gradient ethanol and then incubated with the TRAP staining solution (leukocyte acid phosphatase kit #387A; Sigma-Aldrich), according to the manufacturer’s instructions. TRAP+ MNCs were counted using light microscopy.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using unpaired two-tailed Student’s t-test for comparison of two groups and using one-way ANOVA test for comparison of four groups. The severity of clinical score of CIA model was evaluated by Mann–Whitney U-test. For all statistical analysis, p<0.05 was considered statistically significant.

@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.11692.001 Death domains (DDs) mediate assembly of oligomeric complexes for activation of downstream signaling pathways through incompletely understood mechanisms. Here we report structures of complexes formed by the DD of p75 neurotrophin receptor (p75 NTR ) with RhoGDI, for activation of the RhoA pathway, with caspase recruitment domain (CARD) of RIP2 kinase, for activation of the NF-kB pathway, and with itself, revealing how DD dimerization controls access of intracellular effectors to the receptor. RIP2 CARD and RhoGDI bind to p75 NTR DD at partially overlapping epitopes with over 100-fold difference in affinity, revealing the mechanism by which RIP2 recruitment displaces RhoGDI upon ligand binding. The p75 NTR DD forms non-covalent, low-affinity symmetric dimers in solution. The dimer interface overlaps with RIP2 CARD but not RhoGDI binding sites, supporting a model of receptor activation triggered by separation of DDs. These structures reveal how competitive protein-protein interactions orchestrate the hierarchical activation of downstream pathways in non-catalytic receptors. DOI: http://dx.doi.org/10.7554/eLife.11692.001
+Death domains (DDs) mediate assembly of oligomeric complexes for activation of downstream signaling pathways through incompletely understood mechanisms. Here we report structures of complexes formed by the DD of p75 neurotrophin receptor (p75NTR) with RhoGDI, for activation of the RhoA pathway, with caspase recruitment domain (CARD) of RIP2 kinase, for activation of the NF-kB pathway, and with itself, revealing how DD dimerization controls access of intracellular effectors to the receptor. RIP2 CARD and RhoGDI bind to p75NTR DD at partially overlapping epitopes with over 100-fold difference in affinity, revealing the mechanism by which RIP2 recruitment displaces RhoGDI upon ligand binding. The p75NTR DD forms non-covalent, low-affinity symmetric dimers in solution. The dimer interface overlaps with RIP2 CARD but not RhoGDI binding sites, supporting a model of receptor activation triggered by separation of DDs. These structures reveal how competitive protein-protein interactions orchestrate the hierarchical activation of downstream pathways in non-catalytic receptors.
 
 ## Introduction
 
@@ -34,146 +34,402 @@ In this study, we have undertaken a structural biology approach to elucidate the
 
 ## Results
 
-## Solution structure of the complex between the p75NTR DD and RhoGDI
+### Solution structure of the complex between the p75NTR DD and RhoGDI
 
-RhoGDI interacts constitutively with the DD of unliganded p75
+RhoGDI interacts constitutively with the DD of unliganded p75NTR, linking the receptor to the RhoA pathway (Yamashita and Tohyama, 2003). Neurotrophin binding induces the release of RhoGDI from p75NTR and decreases RhoA activity (Gehler et al., 2004; Yamashita et al., 1999; Yamashita and Tohyama, 2003). Using biochemical and cell-based assays, we have previously identified solvent-exposed residues in the p75NTR DD that are critical for its interaction with RhoGDI and RhoA activation, including residues in helices H1 and H6 (Charalampopoulos et al., 2012). In order to obtain a molecular understanding of this interaction, we determined the solution structure of the human p75NTR DD:RhoGDI complex by multidimensional nuclear magnetic resonance (NMR) spectroscopy (Figure 1—figure supplement 1 and Table 1). We note that, unless otherwise indicated, all amino acid residue numbering in this study corresponds to the human forms of the respective proteins. Human and rat p75NTR DD share more than 90% sequence identity—including all functionally relevant residues—and an essentially identical three-dimensional structure with an overall RMSD of 1.7 Å ((Liepinsh, 1997) and this study). The ensemble of the 10 lowest-energy conformers of the DD:RhoGDI complex and a representative structure are depicted in Figure 1A,B. p75NTR DD in the complex consists of one 310-helix followed by six α-helices and its global fold is very similar to that of our previously described structure of rat p75NTR DD (Liepinsh, 1997). In the complex, the C-terminal domain of RhoGDI primarily displays an immunoglobulin-like fold similar to previously described structures of this protein (Longenecker et al., 1999). Residues Glu40 to Gly57 in the RhoGDI N-terminal domain fold into a long helix, which is not involved in p75NTR DD binding and remains flexible in the complex (Figure 1A). Removal of this N-terminal domain did not affect RhoGDI binding to p75NTR DD (Figure 1—figure supplement 2). Inspection of the interface in the complex showed that it is mainly formed by α-helices H1 and H6 of the p75NTR DD and β-strands S2, S3, S9 and α-helix H2 of RhoGDI, forming a small hydrophobic core surrounded by polar residues (Figure 1C). Charged residues play an important role in the binding interface and high concentration of salt (i.e., greater than 200 mM NaCl) can almost completely disrupt p75NTR DD:RhoGDI interaction in vitro (Figure 1—figure supplement 1C). It is gratifying to note that all functional DD determinants that we have previously identified by site-directed mutagenesis clustered at the DD:RhoGDI interface of the complex structure (labeled red in Figure 1C,D). The structure of the DD:RhoGDI complex offered an opportunity to address the functional importance of a larger set of residues in the p75NTR DD as well as in RhoGDI. Co-immunoprecipitation experiments were performed in cells transfected with constructs of full-length p75NTR and RhoGDI carrying different point mutations in selected residues. Alanine substitution of individual amino acid residues likely uncovers only those side chains making the most critical contribution to the binding interface. In the p75NTR DD, substitution of either Asp412, Lys343 or Glu420 was found to significantly diminish interaction with RhoGDI (Figure 1D). In RhoGDI, substitution of Lys99 or Lys199 abolished its interaction with p75NTR (Figure 1E). In agreement with this, the structure of the complex shows that these two positively charged side chains make charge interactions with Glu420 and Asp412, respectively, in the p75NTR DD (Figure 1C).
+
+**Table 1.**
+ NMR and refinement statistics for p75NTR DD complexes and RIP2 CARD.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>NMR distance and dihedral constraints</th>
+      <th>DD:RhoGDI</th>
+      <th>RIP2 CARD</th>
+      <th>DD:CARD</th>
+      <th>DD:DD</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Distance constraints</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total NOE</td>
+      <td>3525</td>
+      <td>2107</td>
+      <td>3760</td>
+      <td>3344</td>
+    </tr>
+    <tr>
+      <td>Intra-residue</td>
+      <td>809</td>
+      <td>436</td>
+      <td>798</td>
+      <td>728</td>
+    </tr>
+    <tr>
+      <td>Inter-residue</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequential ( i – j = 1)</td>
+      <td>1054</td>
+      <td>656</td>
+      <td>1130</td>
+      <td>986</td>
+    </tr>
+    <tr>
+      <td>Medium-range ( i – j ≤ 4)</td>
+      <td>665</td>
+      <td>589</td>
+      <td>1016</td>
+      <td>892</td>
+    </tr>
+    <tr>
+      <td>Long-range ( i – j ≥ 5)</td>
+      <td>945</td>
+      <td>426</td>
+      <td>771</td>
+      <td>706</td>
+    </tr>
+    <tr>
+      <td>Intermolecular NOE</td>
+      <td>52</td>
+      <td>-</td>
+      <td>45</td>
+      <td>32</td>
+    </tr>
+    <tr>
+      <td>Total dihedral angle restraints a</td>
+      <td>222</td>
+      <td>132</td>
+      <td>260</td>
+      <td>280</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Structure Statistics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Violations (mean and s.d.)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Distance constraints (Å)</td>
+      <td>0.36 ± 0.02</td>
+      <td>0.25 ± 0.01</td>
+      <td>0.36 ± 0.03</td>
+      <td>0.28 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>Dihedral angle constraints (º)</td>
+      <td>3.50 ± 0.46</td>
+      <td>2.75 ± 0.28</td>
+      <td>3.37 ± 0.28</td>
+      <td>2.86 ± 0.59</td>
+    </tr>
+    <tr>
+      <td>Max. dihedral angle violation (º)</td>
+      <td>4.16</td>
+      <td>3.25</td>
+      <td>3.77</td>
+      <td>4.28</td>
+    </tr>
+    <tr>
+      <td>Max. distance constraint violation (Å)</td>
+      <td>0.39</td>
+      <td>0.26</td>
+      <td>0.44</td>
+      <td>0.29</td>
+    </tr>
+    <tr>
+      <td>Ramachandran Plot (allowed region)</td>
+      <td>99.8%</td>
+      <td>99.5%</td>
+      <td>99.8%</td>
+      <td>99.9%</td>
+    </tr>
+    <tr>
+      <td>Average RMSD (Å) b</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Heavy atoms</td>
+      <td>0.91 ± 0.12</td>
+      <td>0.83 ± 0.06</td>
+      <td>0.99 ± 0.08</td>
+      <td>0.77 ± 0.06</td>
+    </tr>
+    <tr>
+      <td>Backbone atoms</td>
+      <td>0.55 ± 0.13</td>
+      <td>0.36 ± 0.05</td>
+      <td>0.66 ± 0.09</td>
+      <td>0.43 ± 0.02</td>
+    </tr>
+  </tbody>
+</table>
+
+_a Dihedral angle constraints were generated by TALOS based on Cα and Cβ chemical shifts.b Average r.m.s. deviation (RMSD) to the mean structure was calculated among 10 refined structures. Superimposing residues for DD:RhoGDI, RIP2 CARD, DD:CARD, and DD:DD are 334–421 of DD with 70–204 of RhoGDI, 436–523 of RIP2 CARD, 334–420 of DD with 435–534 of RIP2 CARD and 334–421 of DD respectively. The total AMBER energy for DD:RhoGDI, RIP2 CARD, DD:CARD, and DD:DD are –9884 ± 41, –4437 ± 32, –7706 ± 32 and –7161 ± 18 kcal/mol respectively._
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/11692/elife-11692-fig1-v2.jpg)
 
-**Figure 1.:** NTR DD and RhoGDI.(A) Superposition of backbone heavy atoms of the 10 lowest-energy structures of the human p75NTR DD:RhoGDI complex. N- and C-termini are indicated. (B) Ribbon drawing of the lowest-energy conformer. Light brown, p75NTR DD; Cyan, RhoGDI. N- and C-termini, as well as DD helices H1 and H6 are indicated. (C) Details of binding interface in the complex viewed in the same orientations as panel B, respectively. Key residues at the binding interface are labeled and depicted as stick models. Red labels denote interface residues functionally validated in our earlier mutagenesis study (Charalampopoulos et al., 2012). (D) Co-immunoprecipitation of wild type (WT) and DD point mutants of human p75NTR with Myc-tagged RhoGDI in transfected HEK 293 cells. Antibodies used for immunoprecipitation (IP) and Western blotting (WB) are indicated. WCE, whole cell lysate. The immunoblots shown are representative of three independent experiments. (E) Co-immunoprecipitation of WT and point mutants of Myc-tagged human RhoGDI with p75NTR in transfected HEK 293 cells. Antibodies used for immunoprecipitation (IP) and Western blotting (WB) are indicated. WCE, whole cell extract. The immunoblots shown are representative of three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.11692.004
+**Figure 1.:** (A) Superposition of backbone heavy atoms of the 10 lowest-energy structures of the human p75NTR DD:RhoGDI complex. N- and C-termini are indicated. (B) Ribbon drawing of the lowest-energy conformer. Light brown, p75NTR DD; Cyan, RhoGDI. N- and C-termini, as well as DD helices H1 and H6 are indicated. (C) Details of binding interface in the complex viewed in the same orientations as panel B, respectively. Key residues at the binding interface are labeled and depicted as stick models. Red labels denote interface residues functionally validated in our earlier mutagenesis study (Charalampopoulos et al., 2012). (D) Co-immunoprecipitation of wild type (WT) and DD point mutants of human p75NTR with Myc-tagged RhoGDI in transfected HEK 293 cells. Antibodies used for immunoprecipitation (IP) and Western blotting (WB) are indicated. WCE, whole cell lysate. The immunoblots shown are representative of three independent experiments. (E) Co-immunoprecipitation of WT and point mutants of Myc-tagged human RhoGDI with p75NTR in transfected HEK 293 cells. Antibodies used for immunoprecipitation (IP) and Western blotting (WB) are indicated. WCE, whole cell extract. The immunoblots shown are representative of three independent experiments.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/11692/elife-11692-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (A) [1H-15N] HSQC spectra of 15N-RhoGDI in the absence (black) and presence (red) of p75NTR DD. The concentration of RhoGDI and p75NTR DD was 0.5 and 2 mM, respectively. (B) Representative slices from the 13C,15N-filtered 3D NOESY spectrum. (C) [1H-15N] HSQC spectra of 15N-RhoGDI in complex with p75NTR DD in the absence (black) and presence (red) of 250 mM NaCl.DOI: http://dx.doi.org/10.7554/eLife.11692.005
+**Figure 1—figure supplement 1.:** (A) [1H-15N] HSQC spectra of 15N-RhoGDI in the absence (black) and presence (red) of p75NTR DD. The concentration of RhoGDI and p75NTR DD was 0.5 and 2 mM, respectively. (B) Representative slices from the 13C,15N-filtered 3D NOESY spectrum. (C) [1H-15N] HSQC spectra of 15N-RhoGDI in complex with p75NTR DD in the absence (black) and presence (red) of 250 mM NaCl.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/11692/elife-11692-fig1-figsupp2-v2.jpg)
 
-**Figure 1—figure supplement 2.:** NTR DD.[1H-15N] HSQC spectra of p75NTR DD in the presence of RhoGDI (black) and RhoGDI without N-terminal domain (RhoGDI ΔN, red) at 28°C and pH 6.9. Molar ratio of DD to RhoGDI or to RhoGDI ΔN was 1:4.DOI: http://dx.doi.org/10.7554/eLife.11692.006
+**Figure 1—figure supplement 2.:** [1H-15N] HSQC spectra of p75NTR DD in the presence of RhoGDI (black) and RhoGDI without N-terminal domain (RhoGDI ΔN, red) at 28°C and pH 6.9. Molar ratio of DD to RhoGDI or to RhoGDI ΔN was 1:4.
 
-Analysis of the p75
+Analysis of the p75NTR DD:RhoGDI complex and a previously described crystal structure of the RhoGDI:RhoA(GDP) complex (Longenecker et al., 1999) indicated that p75NTR DD and RhoA interact with different surfaces in RhoGDI, located at opposite sides of the molecule. The two distant binding sites on RhoGDI suggested that a heterotrimer complex p75NTR DD:RhoGDI:RhoA may be structurally feasible. We investigated this by performing HADDOCK calculations (Dominguez et al., 2003) using our solution structure of p75NTR DD from its complex with RhoGDI and the crystal structure of the RhoGDI:RhoA(GDP) complex. Multiple refinements converged to a mean backbone root mean square deviation (RMSD) of 0.64 ± 0.05 Å (Figure 2A,B and Table 2). Ramachandran plot analysis of the docking model indicated that the trimer structure, including the two intermolecular interfaces, still occupies the energetically preferred conformation. In the tripartite complex, the N-terminal domain of RhoGDI folded into two helices and bound to RhoA(GDP), similar to its conformation in the RhoGDI:RhoA(GDP) complex (Longenecker et al., 1999). The DD binding site on RhoGDI remained nearly identical to that in the DD:RhoGDI complex. This analysis shows that interaction of the three proteins can indeed occur simultaneously and explains previous biochemical studies showing that RhoA can be co-immunoprecipitated with p75NTR in the presence of RhoGDI (Yamashita et al., 1999). Using the purified proteins, we determined the binding affinity of the RhoGDI:RhoA complex by surface plasmon resonance (SPR). Titration of RhoGDI onto immobilized RhoA, yielded a binding Kd of 0.14 ± 0.01 μM, which is in agreement with previous measurements (Tnimov et al., 2012) (Figure 2C). Interestingly, when RhoGDI was precomplexed with purified p75NTR DD, the Kd was 2.2 ± 0.11 μM (Figure 2D), indicating that binding to the p75NTR DD decreases the affinity of the RhoGDI:RhoA interaction by about 15-fold. We note that, in the absence of RhoGDI, no binding between p75NTR DD and RhoA could be detected in these experiments (Figure 2E). These results suggest that RhoGDI binding to the p75NTR DD weakens its interaction with RhoA, a step which may facilitate RhoA activation.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/11692/elife-11692-fig2-v2.jpg)
 
-**Figure 2.:** NTR death domain, RhoGDI and RhoA.(A) Superposition of backbone traces of the 10 lowest-energy structures of p75NTR DD:RhoGDI:RhoA tripartite complex. N- and C-termini are indicated. (B) Ribbon diagram of a representative structure of p75NTR DD:RhoGDI:RhoA heterotrimer complex. Light brown, p75NTR DD; Cyan, RhoGDI; Blue, RhoA. Mg2+ and GDP appear in ball-and-stick models. p75NTR DD helices H1, H5 and H6 as well as N- and C-termini are indicated. (C) Binding of RhoGDI to immobilized RhoA:GDP:Mg2+ measured by surface plasmon resonance (SPR). Binding affinity was determined by steady-state analysis. One binding site model was used for fitting of SPR data. The sensorgram shown is representative from three independent experiments. (D) Binding of RhoGDI complexed with p75NTR DD (molar ratio 1:2) to immobilized RhoA:GDP:Mg2+ measured by SPR. Binding affinity was determined by steady-state analysis. One binding site model was used for fitting of SPR data. The sensorgram shown is representative from three independent experiments. (E) Sensorgram showing lack of interaction between p75NTR DD (tested at 125–500 nM) and immobilized RhoA:GDP:Mg2+. The sensorgram shown is representative from three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.11692.007
+**Figure 2.:** (A) Superposition of backbone traces of the 10 lowest-energy structures of p75NTR DD:RhoGDI:RhoA tripartite complex. N- and C-termini are indicated. (B) Ribbon diagram of a representative structure of p75NTR DD:RhoGDI:RhoA heterotrimer complex. Light brown, p75NTR DD; Cyan, RhoGDI; Blue, RhoA. Mg2+ and GDP appear in ball-and-stick models. p75NTR DD helices H1, H5 and H6 as well as N- and C-termini are indicated. (C) Binding of RhoGDI to immobilized RhoA:GDP:Mg2+ measured by surface plasmon resonance (SPR). Binding affinity was determined by steady-state analysis. One binding site model was used for fitting of SPR data. The sensorgram shown is representative from three independent experiments. (D) Binding of RhoGDI complexed with p75NTR DD (molar ratio 1:2) to immobilized RhoA:GDP:Mg2+ measured by SPR. Binding affinity was determined by steady-state analysis. One binding site model was used for fitting of SPR data. The sensorgram shown is representative from three independent experiments. (E) Sensorgram showing lack of interaction between p75NTR DD (tested at 125–500 nM) and immobilized RhoA:GDP:Mg2+. The sensorgram shown is representative from three independent experiments.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/11692/elife-11692-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** NTR DD or RhoA:GDP.Ribbon diagram of RhoGDI from the complex with p75NTR DD (light brown) is shown in cyan, and from the complex with RhoA (blue) in red (from Longenecker et al., 1999). Main structural differences in RhoGDI are indicated by the dotted line circle.DOI: http://dx.doi.org/10.7554/eLife.11692.008
+**Figure 2—figure supplement 1.:** Ribbon diagram of RhoGDI from the complex with p75NTR DD (light brown) is shown in cyan, and from the complex with RhoA (blue) in red (from Longenecker et al., 1999). Main structural differences in RhoGDI are indicated by the dotted line circle.
 
-## Solution structure of the complex between the p75NTR DD and RIP2 CARD
+**Table 2.**
+ Structural statistics for the 10 lowest-energy structures of p75NTRDD:RhoGDI:RhoA Trimer and Hexamera.
 
-NGF binding to p75
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Trimer</th>
+      <th>Hexamer</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Backbone RMSD (Å)</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>From the mean, full complex</td>
+      <td>0.61 ± 0.25</td>
+      <td colspan="2">0.59 ± 0.20</td>
+    </tr>
+    <tr>
+      <td>From the mean, all interfaces</td>
+      <td>0.58 ± 0.22</td>
+      <td colspan="2">0.48 ± 0.13</td>
+    </tr>
+    <tr>
+      <td>Total energy (kcal/mol)</td>
+      <td>-20721 ± 137</td>
+      <td colspan="2">-37682 ± 210</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot (%)b</td>
+      <td></td>
+      <td colspan="2"></td>
+    </tr>
+    <tr>
+      <td>Residues in the most favored regions</td>
+      <td>82.2</td>
+      <td colspan="2">84.7</td>
+    </tr>
+    <tr>
+      <td>Residues in additional allowed regions</td>
+      <td>14.1</td>
+      <td colspan="2">12.5</td>
+    </tr>
+    <tr>
+      <td>Residues in generously allowed regions</td>
+      <td>1.9</td>
+      <td colspan="2">1.9</td>
+    </tr>
+    <tr>
+      <td>Residues in disallowed regions</td>
+      <td>1.8</td>
+      <td colspan="2">0.9</td>
+    </tr>
+  </tbody>
+</table>
+
+_aStructural statistics for the 10 lowest-energy conformers were obtained from HADDOCK calculation using NOEs between DD and RhoGDI.bRamachandran analysis was carried out using PROCHECK-NMR._
+
+### Solution structure of the complex between the p75NTR DD and RIP2 CARD
+
+NGF binding to p75NTR elicits the recruitment of RIP2 kinase to the receptor. Recruitment of RIP2 is required for regulation of the NF-kB pathway by p75NTR. Previous biochemical studies established that the interaction between p75NTR and RIP2 is mediated by their DD and CARD domains, respectively (Khursigara et al., 2001). The RIP2 CARD consists of 107 amino acids and is located in the C-terminal of the protein. It connects to the N-terminal kinase domain via a linker of 120 amino acids. We determined the NMR structure of human RIP2 CARD in monomeric form (Figure 3A,B and Table 1). The solution structure of RIP2 CARD comprises an arrangement of six α-helices followed by one short 310-helix, all tightly packed around a hydrophobic core. A C-terminal tail of 17 amino acids (Leu524-Met540) follows the CARD and is unstructured and flexible in solution. A unique segment (Gln518-Ile523) between the C-terminal tail and the 310-helix contains two structural disruptor residues (i.e., Pro519 and Pro520, Figure 3B) and lacks a secondary structure, but its orientation was well-defined in the NMR structure. A number of hydrophobic residues (e.g., Ile523, Figure 3B) in this segment closely interact with the first and the last α-helices in the RIP2 CARD. Structural comparison using the DALI server (Holm and Rosenström, 2010) showed that the most similar structure to RIP2 CARD was the CARD of nucleotide-binding oligomerization domain-containing protein 1 (NOD1), with a Z-score between 9 and 11. NOD1 and RIP2 have been shown to interact with each other through their CARDs to propagate immune signaling (Mayle et al., 2014). The two CARDs share similar structural features, including a similar arrangement of all but the last of the α-helices, which displays different local secondary structures in the two proteins (Figure 3—figure supplement 1A). Despite their folding similarities, the two CARDs exhibit significantly different surface characteristics. Particularly, RIP2 CARD has many more charged residues on its surface than its NOD1 counterpart (Figure 3—figure supplement 1B,C). Different electrostatic surfaces will confer different interaction specificities, a common feature among members of the DD superfamily, including the CARD subfamily.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/11692/elife-11692-fig3-v2.jpg)
 
-**Figure 3.:** NTR DD.(A) Superposition of backbone heavy atoms of the 10 lowest-energy structures of human RIP2 CARD. N- and C-termini are indicated. (B) Ribbon drawing of the lowest-energy conformer of human RIP2 CARD. N- and C-termini, as well as selected residues in the C-terminal tail are indicated. (C) Superposition of backbone heavy atoms of the 10 lowest-energy structures of the human p75NTR DD:RIP2 CARD complex. N- and C-termini are indicated. (D) Ribbon drawing of the lowest-energy p75NTR DD:RIP2 CARD conformer. Light brown, p75NTR DD; Green, RIP2 CARD. N- and C-termini, as well as DD helices H2, H3, and H5 are indicated. (E and F) Details of binding interface in the complex viewed in the same orientations as panel D, respectively. Key residues at the binding interface are labeled and depicted as stick models. Red labels denote interface residues functionally validated in our earlier mutagenesis study (Charalampopoulos et al., 2012). (G) Co-immunoprecipitation of wild type (WT) and point mutants of Flag-tagged human RIP2 with p75NTR in transfected HEK 293 cells. In the overexpression conditions used for this experiment, interaction of RIP2 with p75NTR was constitutive in the absence of ligand. Antibodies used for immunoprecipitation (IP) and Western blotting (WB) are indicated. WCE, whole cell extract. The immunoblots shown are representative of three independent experiments.DOI: http://dx.doi.org/10.7554/eLife.11692.010
+**Figure 3.:** (A) Superposition of backbone heavy atoms of the 10 lowest-energy structures of human RIP2 CARD. N- and C-termini are indicated. (B) Ribbon drawing of the lowest-energy conformer of human RIP2 CARD. N- and C-termini, as well as selected residues in the C-terminal tail are indicated. (C) Superposition of backbone heavy atoms of the 10 lowest-energy structures of the human p75NTR DD:RIP2 CARD complex. N- and C-termini are indicated. (D) Ribbon drawing of the lowest-energy p75NTR DD:RIP2 CARD conformer. Light brown, p75NTR DD; Green, RIP2 CARD. N- and C-termini, as well as DD helices H2, H3, and H5 are indicated. (E and F) Details of binding interface in the complex viewed in the same orientations as panel D, respectively. Key residues at the binding interface are labeled and depicted as stick models. Red labels denote interface residues functionally validated in our earlier mutagenesis study (Charalampopoulos et al., 2012). (G) Co-immunoprecipitation of wild type (WT) and point mutants of Flag-tagged human RIP2 with p75NTR in transfected HEK 293 cells. In the overexpression conditions used for this experiment, interaction of RIP2 with p75NTR was constitutive in the absence of ligand. Antibodies used for immunoprecipitation (IP) and Western blotting (WB) are indicated. WCE, whole cell extract. The immunoblots shown are representative of three independent experiments.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/11692/elife-11692-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** http://v3-4.cathdb.info/).(A) Overlap of RIP2 CARD (red) and NOD1 CARD (gray, PDB ID: 2B1W). (B) Surface charge of RIP2 CARD without C-terminal tail. Positive charge surface is colored in blue, negative in red and noncharged in white. (C) Surface charge of NOD1 CARD. (D) Statistics of pairwise alignment of CARDs from RIP2 and NOD1.DOI: http://dx.doi.org/10.7554/eLife.11692.011
+**Figure 3—figure supplement 1.:** (A) Overlap of RIP2 CARD (red) and NOD1 CARD (gray, PDB ID: 2B1W). (B) Surface charge of RIP2 CARD without C-terminal tail. Positive charge surface is colored in blue, negative in red and noncharged in white. (C) Surface charge of NOD1 CARD. (D) Statistics of pairwise alignment of CARDs from RIP2 and NOD1.
 
 ![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/11692/elife-11692-fig3-figsupp2-v2.jpg)
 
-**Figure 3—figure supplement 2.:** (A) [1H-15N] HSQC spectra of p75NTR DD in water in the absence (black) and presence (red) of RIP2 CARD. (B) Representative slices from the 13C,15N-filtered 3D NOESY spectra. Asterisk denotes ambiguous NOE peak.DOI: http://dx.doi.org/10.7554/eLife.11692.012
+**Figure 3—figure supplement 2.:** (A) [1H-15N] HSQC spectra of p75NTR DD in water in the absence (black) and presence (red) of RIP2 CARD. (B) Representative slices from the 13C,15N-filtered 3D NOESY spectra. Asterisk denotes ambiguous NOE peak.
 
 ![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/11692/elife-11692-fig3-figsupp3-v2.jpg)
 
-**Figure 3—figure supplement 3.:** NTR DD and RIP2 CARD domains.(A) Structural comparison between p75NTR DD from the DD:RhoGDI (red) and DD:CARD (green) complexes. (B) Structural comparison between monomeric RIP2 CARD (cyan) and RIP2 CARD from the DD:CARD complex (light brown).DOI: http://dx.doi.org/10.7554/eLife.11692.013
+**Figure 3—figure supplement 3.:** (A) Structural comparison between p75NTR DD from the DD:RhoGDI (red) and DD:CARD (green) complexes. (B) Structural comparison between monomeric RIP2 CARD (cyan) and RIP2 CARD from the DD:CARD complex (light brown).
 
 ![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/11692/elife-11692-fig3-figsupp4-v2.jpg)
 
-**Figure 3—figure supplement 4.:** NTRDD.(A) CD spectra of CARD (orange) and CARD ΔC mutant lacking the C-terminal tail (blue). (B) Sensorgram of binding kinetics of CARD ΔC binding to p75NTR DD at pH 7.0. One binding site model was used for fitting of SPR data.DOI: http://dx.doi.org/10.7554/eLife.11692.014
+**Figure 3—figure supplement 4.:** (A) CD spectra of CARD (orange) and CARD ΔC mutant lacking the C-terminal tail (blue). (B) Sensorgram of binding kinetics of CARD ΔC binding to p75NTR DD at pH 7.0. One binding site model was used for fitting of SPR data.
 
 In order to obtain a molecular understanding of the p75NTR DD:RIP2 CARD interaction, we determined the NMR structure of the complex. Figure 3C,D present the three-dimensional solution structure of this complex obtained from the NMR experimental restraints (Table 1 and Figure 3—figure supplement 2). The core helical structure of the p75NTR DD in the p75NTR DD:RIP2 CARD complex was similar to that in the p75NTR DD:RhoGDI complex, with a pairwise RMSD of ~1.9 Å (Figure 3—figure supplement 3A). The orientation of α-helices H3 and H6 changed by approximately 7°–8°. Similarly, pairwise RMSD between RIP2 CARD in monomeric form and in complex with the p75NTR DD was ~1.5 Å (Figure 3—figure supplement 3B). The main interface in the core structure of the p75NTR DD:RIP2 CARD complex involved α-helices H2, H3, H5, H6, and H5–H6 loop of p75NTR DD and α-helices H1, H3–H4, and H5–H6 loops of RIP2 CARD (Figure 3E,F). Both electrostatic and hydrophobic interactions contribute to the p75NTR DD:RIP2 CARD interface. Interestingly, the C-terminal tail of RIP2 CARD was better defined in its complex with the p75NTR DD compared to its monomeric form, although the last six amino acids still remained flexible. The C-terminal tail bound to α-helices H1, H5, and H6 of p75NTR DD, through both hydrophobic and charged interactions (Figure 3D and Figure 3—figure supplement 3B). In our previous site-directed mutagenesis studies of the p75NTR DD, we had identified residues in helices H2 (Asp357, His361, and Glu365), H3 (Gln369 and Glu371), H5 (Asp399), and H6 (Asp412 and Glu415) as being critical for its interaction with RIP2 (Charalampopoulos et al., 2012). We were pleased to note that all these residues mapped to the DD:CARD binding interface defined in our NMR structure of the complex (labeled red in Figure 3E,F). The NMR structure of the DD:CARD complex offered an opportunity to address the functional importance of residues in the RIP2 CARD. Co-immunoprecipitation experiments were performed in cells transfected with constructs of full-length p75NTR and RIP2, the latter carrying different point mutations in selected residues of the CARD. We found that individual substitution of interface residues Gln437, Asp467, Lys471, Ile496, Glu500, or Arg528, significantly diminished RIP2 interaction with p75NTR (Figure 3G).
 
-## Differential binding of RhoGDI and RIP2 CARD to the p75NTR DD
+### Differential binding of RhoGDI and RIP2 CARD to the p75NTR DD
 
-Comparison of the DD interfaces used for binding to RhoGDI and RIP2 CARD showed that these shared partially overlapping binding sites on p75
+Comparison of the DD interfaces used for binding to RhoGDI and RIP2 CARD showed that these shared partially overlapping binding sites on p75NTR DD (Figure 4A), indicating that RIP2 and RhoGDI cannot bind to the p75NTR DD simultaneously due to steric hindrance. This is in agreement with our previous biochemical studies that identified overlapping epitopes required for the interaction of p75NTR DD with both RIP2 and RhoGDI (Charalampopoulos et al., 2012). In order to better understand the hierarchical relationship of these interactions, we determined the binding affinities of the DD:RhoGDI and DD:CARD complexes by SPR. The Kd of RhoGDI binding to the p75NTR DD was 0.82 ± 0.3 μM, while the Kd of CARD binding to the DD was 4.67 ± 0.7 nM (Figure 4B,C), indicating that RIP2 CARD binds with approximately 177-fold higher affinity than RhoGDI to the p75NTR DD. This is in line with the larger buried solvent accessible area in the p75NTR DD:RIP2 CARD complex (~1400 Å2) compared to that in the p75NTR DD:RhoGDI complex (~900 Å2). Kinetic analyses revealed that CARD associates with the p75NTR DD with faster on-rate, and dissociates with slower off-rate, than RhoGDI (Table 3). The RIP2 CARD could still fold into a typical α-helical structure after deletion of the C-terminal tail (Figure 3—figure supplement 4A). However, the binding affinity of this construct to the p75NTR DD was 58.7 ± 8.8 nM, that is, approximately 12-fold lower than with the C-terminal tail (Figure 3—figure supplement 4B), indicating a significant contribution of the C-terminal tail to the association of RIP2 with p75NTR.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/11692/elife-11692-fig4-v2.jpg)
 
-**Figure 4.:** NTR DD.(A) Surface representation of p75NTR DD (light brown) with overlapped ribbon drawings of RhoGDI (cyan) and RIP2 CARD (green). The expanded view shows detail of the overlapping interfaces demonstrating steric clashes between residues in RhoGDI and CARD (highlighted as stick models). (B and C) Binding of RhoGDI (B) and RIP2 CARD (including C-terminal tail) (C) to captured His-tagged p75NTR DD measured by SPR. Colored lines represent experimentally recorded values at different concentrations and black lines are fitting data. Binding affinities were determined by kinetic analysis using one binding site model was used for fitting of SPR data. The sensorgrams shown are representative from three independent experiments. (D) [1H-15N] HSQC spectra of 15N-RhoGDI showing the ability of RIP2 to displace RhoGDI from the p75NTR DD. The panels show details of different regions of the spectra for RhoGDI alone (green), RhoGDI in the presence of p75NTR DD (red), and RhoGDI in the presence of both p75NTR DD and RIP2 CARD (blue). Representative RhoGDI residues located in and/or close to the DD:RhoGDI interface are labeled. Arrows denote shifts in the spectra of labeled RhoGDI residues upon addition of p75NTR DD and RIP2 CARD. All the spectra were recorded at pH 6.9 and 28°C. The concentrations of RhoGDI, p75NTR DD and RIP2 CARD were 0.05, 0.2, and 0.2 mM respectively. (E) Analysis of RhoA-GTP levels in lysates of HEK293 cells transfected with p75NTR and RIP2 expression constructs, as indicated. Increasing concentrations of RIP2 construct is indicated. The histogram shows average RhoA-GTP levels (from triplicate measurements) normalized to p75NTR alone. Protein expression levels were controlled by Western blotting (not shown). * p<0.01 vs. p75NTR alone (t-test). (F) Analysis of RhoA-GTP levels in cerebellar extracts prepared from P7 Rip2 knockout mice and wild type littermates (WT). The histogram shows average RhoA-GTP levels in WT (N = 3) and KO (N = 4) animals normalized to WT levels. *p<0.05 vs. WT (t-test).DOI: http://dx.doi.org/10.7554/eLife.11692.015
+**Figure 4.:** (A) Surface representation of p75NTR DD (light brown) with overlapped ribbon drawings of RhoGDI (cyan) and RIP2 CARD (green). The expanded view shows detail of the overlapping interfaces demonstrating steric clashes between residues in RhoGDI and CARD (highlighted as stick models). (B and C) Binding of RhoGDI (B) and RIP2 CARD (including C-terminal tail) (C) to captured His-tagged p75NTR DD measured by SPR. Colored lines represent experimentally recorded values at different concentrations and black lines are fitting data. Binding affinities were determined by kinetic analysis using one binding site model was used for fitting of SPR data. The sensorgrams shown are representative from three independent experiments. (D) [1H-15N] HSQC spectra of 15N-RhoGDI showing the ability of RIP2 to displace RhoGDI from the p75NTR DD. The panels show details of different regions of the spectra for RhoGDI alone (green), RhoGDI in the presence of p75NTR DD (red), and RhoGDI in the presence of both p75NTR DD and RIP2 CARD (blue). Representative RhoGDI residues located in and/or close to the DD:RhoGDI interface are labeled. Arrows denote shifts in the spectra of labeled RhoGDI residues upon addition of p75NTR DD and RIP2 CARD. All the spectra were recorded at pH 6.9 and 28°C. The concentrations of RhoGDI, p75NTR DD and RIP2 CARD were 0.05, 0.2, and 0.2 mM respectively. (E) Analysis of RhoA-GTP levels in lysates of HEK293 cells transfected with p75NTR and RIP2 expression constructs, as indicated. Increasing concentrations of RIP2 construct is indicated. The histogram shows average RhoA-GTP levels (from triplicate measurements) normalized to p75NTR alone. Protein expression levels were controlled by Western blotting (not shown). * p<0.01 vs. p75NTR alone (t-test). (F) Analysis of RhoA-GTP levels in cerebellar extracts prepared from P7 Rip2 knockout mice and wild type littermates (WT). The histogram shows average RhoA-GTP levels in WT (N = 3) and KO (N = 4) animals normalized to WT levels. *p<0.05 vs. WT (t-test).
+
+**Table 3.**
+ Association and dissociation binding constants of p75NTR DD binding to RhoGDI and RIP2 CARD.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>ka (µM-1·s-1)</th>
+      <th>kd (s-1·10-3)</th>
+      <th>Kd (nM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>DD:RhoGDI</td>
+      <td>0.06 ± 0.01</td>
+      <td>50 ± 9</td>
+      <td>827 ± 338</td>
+    </tr>
+    <tr>
+      <td>DD:CARD</td>
+      <td>0.72 ± 0.34</td>
+      <td>3.32 ± 1.5</td>
+      <td>4.67 ± 0.7</td>
+    </tr>
+  </tbody>
+</table>
 
 The differential binding of RhoGDI and RIP2 CARD to the p75NTR DD was further tested through analysis of 2D NMR spectra of RhoGDI binding to p75NTR DD in competition with RIP2 CARD. Figure 4D shows details of the RhoGDI spectra focusing on representative residues located in and/or close to the DD:RhoGDI interface. Addition of p75NTR DD produced a shift in the cross-peaks of these residues (red in Figure 4D), indicating binding of RhoGDI to the DD. Addition of RIP2 CARD to the RhoGDI:DD complex shifted these cross-peaks back to their initial positions (arrows in Figure 4D), indicating dissociation of RhoGDI from the p75NTR DD. These data demonstrate that RhoGDI and RIP2 CARD compete for binding to the p75NTR DD and that RIP2 CARD can displace RhoGDI from the receptor. In order to test the functional significance of the antagonism between RIP2 and RhoGDI, we assessed the levels of RhoA-GTP, a measure of RhoA activation, in cells transfected with a p75NTR expression construct in the absence or presence of increasing concentrations of a RIP2 construct (Figure 4E). While expression of p75NTR increased RhoA-GTP levels in transfected cells, coexpression of RIP2 decreased RhoA-GTP levels in a concentration-dependent manner (Figure 4E), in agreement with an inhibitory role of RIP2 in p75NTR-mediated activation of the RhoA pathway. In line with this, we found elevated levels of RhoA-GTP in brain extracts from Rip2 knockout mice compared to wild type littermates (Figure 4F), suggesting that RIP2 can also restrict the activation of the RhoA pathway in vivo.
 
-## Solution structure of the p75NTR DD homodimer
+### Solution structure of the p75NTR DD homodimer
 
 The current model of p75NTR activation by neurotrophins predicts that the DDs should be in close proximity to each other to account for the high FRET state of the unliganded receptor. Purified rat p75NTR DD has been shown to exist in either monomeric form or equilibrium between monomeric and dimeric forms depending on pH and counterion (Vilar et al., 2014). However, the complete assignment of the DD homodimer was not reported in that study. We also found that human p75NTR DD exists mainly in monomeric form in TRIS or HEPES buffer at pH 6.0–7.0, which were the buffer conditions used for structure determination of DD:RhoGDI and DD:CARD complexes. In phosphate buffer, however, we observed a new form of p75NTR DD as revealed by the appearance of a new set of cross peaks in the [1H-15N] HSQC spectrum (Figure 5—figure supplement 1A,B). The set of cross peaks corresponding to monomeric DD was still visible, with nearly identical chemical shift but weaker intensity (Figure 5—figure supplement 1A), suggesting the coexistence of dimeric and monomeric DDs under these conditions. Dynamic lighter scattering (DLS) also indicated the formation of dimeric p75NTR DDs in the presence of phosphate ions (Figure 5—figure supplement 1C,D). EGFP-tagged p75NTR DDs showed anisotropic changes due to homodimerization at different DD concentrations. The apparent Kd of dimerization derived from anisotropic change was 49 ± 15 µM (Figure 5—figure supplement 1E). This relatively low-affinity interaction may facilitate DD separation (low FRET state) upon receptor activation by neurotrophins.
 
-In order to identify the dimerization interface, we determined the NMR structure of the p75
+In order to identify the dimerization interface, we determined the NMR structure of the p75NTR DD homodimer. The p75NTR DD homodimer adopted a C2 symmetry (Figure 5A,B). A short C-terminal tail of 7 amino acids (Ser421-Val427) in each monomer remained disordered, similar to the DD:RhoGDI and DD:CARD complexes. The helical bundle, including the 310 helix, did not undergo significant structural change with an RMSD lower than 1.5 Å compared to the other complexes. The dimerization interface consisted of α-helices H2 and H3 as well as residues in the H1–H2 and H3–H4 loops. Dimerization involved both charge and hydrophobic interactions. The key residues in the dimer interface included Asp357, Arg360, Thr377, His378, Glu379, and Ala380 (corresponding to Asp354, Arg358, Thr375, His376, Glu377, and Ala378 in rat p75NTR DD). This is in agreement with previous site-directed mutagenesis and NMR titration studies of the rat p75NTR DD homodimer (Vilar et al., 2014) (red-labeled residues in Figure 5C). Cys381 (homologous to Cys379 in rat p75NTR DD) was also located in the dimerization interface but appeared in reduced form with a Cβ chemical shift of 26.5 ppm. The distance between Cys381Sγ from each monomer was 6.7 ± 0.1 Å, that is, too long for the formation of a disulfide bond. The buried solvent accessible area in the p75NTR DD homodimer was 573 Å2, in line with the low affinity of the DD:DD interaction. We conclude that the two p75NTR DD protomers form a low-affinity, noncovalent homodimer in our structure.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/11692/elife-11692-fig5-v2.jpg)
 
-**Figure 5.:** NTR DD homodimer.(A) Superposition of backbone heavy atoms of the 10 lowest-energy structures of the human p75NTR DD homodimer. N- and C-termini are indicated. (B) Ribbon drawing of the lowest-energy conformer viewed perpendicular (top) and parallel (bottom) to the twofold symmetry axis. DD monomers are colored in light brown and orange. N- and C-termini, as well as DD helices H1, H2, H3, and H4 are indicated. (C) Detail of binding interface in the DD homodimer. The top image shows the same view as that in panel B, bottom. Key residues at the binding interface are labeled and depicted as stick models. Red labels denote interface residues functionally validated in a previous mutagenesis study (Vilar et al., 2014).DOI: http://dx.doi.org/10.7554/eLife.11692.017
+**Figure 5.:** (A) Superposition of backbone heavy atoms of the 10 lowest-energy structures of the human p75NTR DD homodimer. N- and C-termini are indicated. (B) Ribbon drawing of the lowest-energy conformer viewed perpendicular (top) and parallel (bottom) to the twofold symmetry axis. DD monomers are colored in light brown and orange. N- and C-termini, as well as DD helices H1, H2, H3, and H4 are indicated. (C) Detail of binding interface in the DD homodimer. The top image shows the same view as that in panel B, bottom. Key residues at the binding interface are labeled and depicted as stick models. Red labels denote interface residues functionally validated in a previous mutagenesis study (Vilar et al., 2014).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/11692/elife-11692-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** NTR DD.(A) [1H-15N] HSQC spectra of p75NTR DD in HEPES buffer (black) and phosphate buffer (red) at pH 6.9 and 28°C. (B) Representative slices from the 13C,15N-filtered 3D NOESY spectrum. (C) Apparent hydrodynamic radius (Rh) distribution of DD from DLS measurement in HEPES (top) and phosphate buffer (bottom), respectively. The protein concentrations used are ~0.2 mM. (D) Average Rh of DD in HEPES and phosphate buffers. The theoretical Rh of DD monomer (~10 kDa) and homodimer (~20 kDa) are ~1.6 and ~2.2 nm, respectively. (E) Determination of monomer-dimer Kd using anisotropy change resulting from FRET. p75NTR DD tagged with EGFP(A206K) in its C-terminus was used in these experiments. N= 3.DOI: http://dx.doi.org/10.7554/eLife.11692.018
+**Figure 5—figure supplement 1.:** (A) [1H-15N] HSQC spectra of p75NTR DD in HEPES buffer (black) and phosphate buffer (red) at pH 6.9 and 28°C. (B) Representative slices from the 13C,15N-filtered 3D NOESY spectrum. (C) Apparent hydrodynamic radius (Rh) distribution of DD from DLS measurement in HEPES (top) and phosphate buffer (bottom), respectively. The protein concentrations used are ~0.2 mM. (D) Average Rh of DD in HEPES and phosphate buffers. The theoretical Rh of DD monomer (~10 kDa) and homodimer (~20 kDa) are ~1.6 and ~2.2 nm, respectively. (E) Determination of monomer-dimer Kd using anisotropy change resulting from FRET. p75NTR DD tagged with EGFP(A206K) in its C-terminus was used in these experiments. N= 3.
 
-The p75
+The p75NTR DD homodimer interface defined in our NMR studies did not overlap with the RhoGDI binding site (Figure 6A,B). This is in agreement with the constitutive interaction of RhoGDI with the closed conformation of the receptor. On the other hand, the DD homodimer partially occluded the RIP2 CARD interaction surface (Figure 6C), indicating that interaction of RIP2 with p75NTR requires dissociation of the DD homodimer. We investigated whether the recruitment of RIP2 contributes to the separation of DDs triggered after neurotrophin binding to the receptor. This was done by taking real-time homo-FRET anisotropy measurements of DD:DD interaction in response to NGF in cells transfected with EGFP-tagged constructs of full length wild type p75NTR and a DD mutant deficient in RIP2 binding (Charalampopoulos et al., 2012) as previously described (Vilar et al., 2009). Application of NGF to cells expressing wild type p75NTR produced large oscillations of increased anisotropy at the cell membrane (Figure 6D), resulting in a positive net change averaged over a 15-min treatment compared to vehicle (Figure 6E). As anisotropy is inversely related to FRET, this behavior indicates ligand-triggered separation of receptor intracellular domains, as proposed earlier (Vilar et al., 2009). We note that the oscillations observed here are unlikely to represent the synchronous behavior of ensembles of receptors, as their average period (2–3 min) would seem too slow to reflect real molecular dynamics. Importantly, the p75NTR construct carrying mutations in the CARD binding site (CBS mutant) produced very similar anisotropy changes after NGF treatment (Figure 6D,E), indicating that recruitment of RIP2 is not required for DD separation in response to ligand binding to p75NTR. Finally, we note that the DD homodimer interface also overlapped with several residues involved in neurotrophin-mediated activation of JNK, caspase-3 and the apoptosis pathway (Figure 6F) as identified in our previous studies (Charalampopoulos et al., 2012). Thus, while the structure and biochemical properties of the p75NTR DD homodimer support the ligand-independent interaction of RhoGDI with the receptor, they also demonstrate that dissociation of the p75NTR DD homodimer is required for recruitment of RIP2 and for activation of the JNK/caspase-3 pathway in response to neurotrophins.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/11692/elife-11692-fig6-v2.jpg)
 
-**Figure 6.:** NTR DD dimer interface and sites of interaction with downstream effectors.(A) Surface presentation of p75NTR DD with homodimer interface colored in blue. N- and C-termini are indicated. (B, C and F) Representation of RhoGDI binding site (yellow in (B) RIP2 CARD binding site (green in (C) and JNK/caspase-3 activation sites (from [Charalampopoulos et al., 2012]) (red in (F) on the p75NTR DD surface showing overlap of DD homodimer interface (blue) with CARD binding and JNK/caspase-3 activation sites but not with RhoGDI binding site. N- and C-termini are indicated. (D) Representative experiment showing traces of average anisotropy change after addition of NGF or vehicle in cells expressing wild type p75NTR or a CARD binding site mutant (CBS mut) that is unable to bind RIP2 (Charalampopoulos et al., 2012). Addition of NGF, but not vehicle, induced positive anisotropy oscillations above baseline (horizontal axis at 0) in both wild type and mutant receptor constructs. (E) Net anisotropy change over 15 min after addition of NGF or vehicle in cells expression wild type p75NTR or the CARD binding site mutant (CBS mut). Results are expressed as average ± SD (N = 3 experiments; n = 15–17 cells examined per experiment). **p < 0.001 vs. vehicle.DOI: http://dx.doi.org/10.7554/eLife.11692.019
+**Figure 6.:** (A) Surface presentation of p75NTR DD with homodimer interface colored in blue. N- and C-termini are indicated. (B, C and F) Representation of RhoGDI binding site (yellow in (B) RIP2 CARD binding site (green in (C) and JNK/caspase-3 activation sites (from [Charalampopoulos et al., 2012]) (red in (F) on the p75NTR DD surface showing overlap of DD homodimer interface (blue) with CARD binding and JNK/caspase-3 activation sites but not with RhoGDI binding site. N- and C-termini are indicated. (D) Representative experiment showing traces of average anisotropy change after addition of NGF or vehicle in cells expressing wild type p75NTR or a CARD binding site mutant (CBS mut) that is unable to bind RIP2 (Charalampopoulos et al., 2012). Addition of NGF, but not vehicle, induced positive anisotropy oscillations above baseline (horizontal axis at 0) in both wild type and mutant receptor constructs. (E) Net anisotropy change over 15 min after addition of NGF or vehicle in cells expression wild type p75NTR or the CARD binding site mutant (CBS mut). Results are expressed as average ± SD (N = 3 experiments; n = 15–17 cells examined per experiment). **p < 0.001 vs. vehicle.
 
 ## Discussion
 
-## Novel heterotypic interactions in the death domain superfamily
+### Novel heterotypic interactions in the death domain superfamily
 
 The main paradigm in signal transduction by DD-containing proteins is oligomerization via homotypic DD interactions. Although p75NTR contains a DD, which is required for downstream signaling, no intracellular p75NTR effectors containing canonical DDs have been identified. The study of DD signaling in p75NTR therefore addresses an unexplored dimension of the repertoire of interactions and activities in the DD superfamily. Homotypic interactions between DDs have been classified as type I, II, and III according to the interfaces involved (Park, 2011; Park et al., 2007b; Weber and Vincenz, 2001). Despite what might have been expected of homotypic interactions, all known interactions in the DD superfamily are asymmetric, that is, the interaction is mediated by different interfaces in each of the two interacting domains (e.g., Ia and Ib for type I). Remarkably, none of the binding surfaces in the p75NTR DD (or in RIP2 CARD) identified in this study show a close match to any of the six conserved surfaces that characterize classical type I, II, and III interactions in the DD superfamily. The p75NTR DD surface that binds RhoGDI is formed by residues in helices H1 and H6. A previous study had proposed helix 5 as a binding site to RhoGDI based on serial deletion analysis of the p75NTR DD (Yamashita and Tohyama, 2003). This conclusion is not supported by our solution structure of the DD:RhoGDI complex, in which H5 appears at the opposite side of the interface (Figure 2B), nor by previous structure–function studies (Charalampopoulos et al., 2012). This discrepancy highlights some of the pitfalls in serial deletion studies that disregard the three-dimensional structures of proteins. The surface in the p75NTR DD that interacts with the CARD of RIP2 includes residues in helices H2, H3, and H6 plus residues in the H5–H6 loop. On the other side of this interaction, residues in helix H1 as well as the H3–H4 and H5–H6 loops form the binding surface on the CARD of RIP2. To the best of our knowledge, this p75NTR DD:RIP2 CARD complex represents the first structural characterization of an heterotypic interaction in the DD superfamily. Our solution structure of this complex also revealed an additional interaction between residues in the C-terminal half of helix H5 of the p75NTR DD and the C-terminal tail of RIP2, which extends beyond the RIP2 CARD. This additional contact confers approximately fivefold increased binding affinity between the two proteins. Finally, the interface that mediates the p75NTR DD homodimer involves residues located in helix H3 as well as the H1–H2 and H3–H4 loops. This surface is similar, but not identical, to the type IIIb surface, like the one identified in the DD of PIDD for interaction with RAIDD (Park et al., 2007b). Unlike the classical type IIIb surface, however, the DD:DD interaction in p75NTR makes extensive use of residues in the H3 helix, and the same surface in the two interacting DDs is used to form a symmetric dimer. Further studies will be required to determine whether the interactions identified here for the p75NTR DD are exceptions or else represent new types of interactions that are yet to be identified in other DD-containing proteins.
 
-## A symmetric DD homodimer in p75NTR
+### A symmetric DD homodimer in p75NTR
 
 The solution structure of the p75NTR DD homodimer shows it is a symmetric, noncovalent dimer held together by low-affinity interactions involving residues in helix H3 and the H1–H2 and H3–H4 loops. The p75NTR DD dimer interface is in agreement with sites of interaction with downstream effectors identified by the structures reported here and in our previous site-directed mutagenesis studies (Figure 6). This p75NTR DD dimer structure is also in accordance with a recent mutagenesis study that identified residues important for dimerization of rat p75NTR DD (Vilar et al., 2014), many of which are also implicated in our structure. On the other hand, our results do not support two crystallographic structures reported for the rat p75NTR DD homodimer that suggested this to be either a covalent symmetric dimer, held by a disulfide bond between Cys379 residues, or a noncovalent asymmetric dimer (Qu et al., 2013). None of the currently available evidence derived from structural, mutagenesis, or functional studies appears to support those crystal structures. Nevertheless, we cannot at present rule out the possibility that p75NTR DDs may under certain circumstances form alternative oligomeric complexes through different interfaces. A recent study has suggested that p75NTR can form trimers in transfected cells based on the apparent molecular weights of p75NTR species in SDS/PAGE (Anastasia et al., 2015). Our NMR studies of the p75NTR DD do not support such conclusion as we have not found any evidence for the existence of DD trimers in any of the conditions tested. Another recent study has used solution NMR spectroscopy to investigate the mobility of the transmembrane and intracellular domains of p75NTR incorporated into lipid–protein nanodisks (Mineev et al., 2015). These authors found a high level of flexibility in the juxtamembrane domain of p75NTR, an observation that we also reported in our earlier NMR studies of this domain (Liepinsh, 1997), but they could not detect self-association of intracellular domains. However, it is unclear whether the lipid detergent used to form the lipid–protein nanodisks interacted with the p75NTR DD and prevented its dimerization. A few detergent molecules, too few to affect DD rotational correlation time, would be sufficient to hinder DD:DD interactions.
 
-## Competitive protein–protein interactions define the hierarchical activation of downstream pathways in p75NTR signaling
+### Competitive protein–protein interactions define the hierarchical activation of downstream pathways in p75NTR signaling
 
 The mechanism underlying ligand-induced dissociation of RhoGDI from p75NTR has remained unclear. As neurotrophins induce the release of RhoGDI and the recruitment of RIP2, we have speculated that RIP2 may displace RhoGDI from binding sites in the p75NTR DD (Charalampopoulos et al., 2012). Our solution structures of the p75NTR DD in complex with RhoGDI and the RIP2 CARD lend experimental support to this notion by showing how steric clashes between the two effector proteins preclude their simultaneous binding to the p75NTR DD. SPR experiments indicated that RIP2 CARD binds with over 100-fold higher affinity to the p75NTR DD than RhoGDI, and 2D-NMR competition studies demonstrated that RIP2 CARD can in fact displace RhoGDI from the receptor. The functional significance of this relationship was evidenced by the ability of RIP2 to decrease p75NTR-mediated RhoA activation in a dose-dependent manner. Furthermore, the enhanced activation of the RhoA pathway observed in brain extracts of Rip2 knockout mice suggests that RIP2 may also restrict activation of this pathway in vivo. These results demonstrate how a hierarchy of binding affinities dictates the differential interaction of downstream effectors with p75NTR and ultimately controls the logic of p75NTR signaling.
 
-## A model for the early stages of p75NTR engagement with the RhoA and NF-kB pathways
+### A model for the early stages of p75NTR engagement with the RhoA and NF-kB pathways
 
-p75
+p75NTR has been postulated to function as a “displacement factor” that releases RhoA from RhoGDI leading to RhoA activation (Yamashita and Tohyama, 2003). This model has led to the idea that the p75NTR DD and RhoA may compete for binding to RhoGDI. On the other hand, biochemical experiments have shown that RhoA can associate with p75NTR through RhoGDI and the three proteins can be recovered together in co-immunoprecipitation assays (Yamashita et al., 1999; Yamashita and Tohyama, 2003), a result that would be incompatible with the displacement concept. Our structural studies show that the p75NTR DD and RhoA bind on opposites sides of the RhoGDI molecule, allowing the formation of a tripartite DD:RhoGDI:RhoA complex. Using a model of this complex and our solution structure of the p75NTR DD homodimer, we have constructed a model of the hexameric complex of these proteins (Video 1). This model retains the two fold symmetry of the DD homodimer, and accommodates all six components without any steric clashes. How can these interactions lead to RhoA activation? Our SPR experiments showed that association of RhoGDI with the p75NTR DD reduced its affinity for RhoA by 15-fold. Close comparison of RhoGDI structures in the complexes with either p75NTR DD or RhoA revealed local structural perturbations in RhoGDI (Figure 2—figure supplement 1), suggesting a potential allosteric mechanism underlying the release and activation of RhoA upon RhoGDI biding to the receptor. Based on the present studies, we propose a model for the early stages of p75NTR engagement with the RhoGDI/RhoA and RIP2/NF-kB pathways based on differential binding affinities and competitive protein–protein interactions (Figure 7). At the plasma membrane, the p75NTR forms a dimer held together by interactions between its DD and TM domains (Figure 7A). Recruitment of the RhoGDI:RhoA complex brings RhoA close to the plasma membrane (Figure 7B). RhoGDI binding to the p75NTR DD weakens its interaction with RhoA, a lipid-modified protein, allowing it to equilibrate with the plasma membrane where it can be activated by membrane-associated guanine nucleotide exchange factors (GEFs) (Garcia-Mata et al., 2011). RhoA may thus be in equilibrium between the cell membrane and the RhoGDI:p75NTR complex, and the action of GEFs and GTPase-activating proteins (GAPs) may further contribute to the dynamics of this exchange (Figure 7B). Upon dissociation from p75NTR, for example, as a consequence of RIP2 recruitment in response to NGF binding, RhoGDI regains high affinity for RhoA, extracting it from the membrane and holding it back in the cytosol in an inactive state (Figure 7C). This new view of the p75NTR DD in the activation of RhoA is in better agreement with the emerging role of RhoGDI as a general facilitator of small GTPase activity cycles. Recruitment of RIP2 to p75NTR ultimately leads to increased NF-kB activity by as yet unknown mechanisms. Another p75NTR interactor, TRAF6, is also a known regulator of the NF-kB pathway (Khursigara et al., 1999; Ye et al., 1999). As TRAF6 has been shown to interact with the juxtamembrane region of p75NTR, but not with the DD, RIP2 and TRAF6 may be able to bind simultaneously to the receptor and together contribute to enhance NF-kB activity in response to neurotrophins.
+
+![Video 1.](https://cdn.elifesciences.org/articles/11692/elife-11692-media1.mp4.jpg)
+
+**Video 1.:** Animation around the two-fold symmetry axis of the hexameric p75NTR DD:RhoGDI:RhoA(GDP) complex. p75NTR DD appears in light brown, RhoGDI in cyan and RhoA in blue.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/11692/elife-11692-fig7-v2.jpg)
 
-**Figure 7.:** to the RhoGDI/RhoA and RIP2/NF-kB pathways.NTRSchematic drawing of a model for the coupling of p75NTR to the RhoGDI/RhoA and RIP2/NF-kB pathways based on the structural and biochemical studies presented above. (A) The p75NTR dimer in the cell membrane is held by homotypic interactions of DDs (light brown) and TM domains (blue). (B) RhoGDI (cyan) brings RhoA (dark purple) in proximity to the plasma membrane through its interaction with the DD of p75NTR. While the twofold symmetry axis of the DD:RhoGDI:RhoA hexametric complex is likely to be perpendicular to the plasma membrane, its relative orientation is hypothetical. RhoGDI binding to the p75NTR DD decreases its affinity for RhoA by 15-fold, and allows equilibration of RhoA with the plasma membrane, where it can be activated by GEFs. (C) Neurotrophin binding induces a conformational change in p75NTR resulting in the separation of its DDs (Vilar et al., 2009), exposing binding sites to downstream effectors that couple to the JNK/caspase-3 or NF-kB pathways, including RIP2. Recruitment of RIP2 to the p75NTR DD is mediated by the interaction of its CARD (green) with a binding surface that partially overlaps with that occupied by RhoGDI. As the binding affinity of the RIP2 CARD for the p75NTR DD is 100-fold higher than that of RhoGDI, the recruitment of RIP2 displaces RhoGDI from the receptor. Released from the DD, RhoGDI regains higher affinity for RhoA, extracting it from the membrane and holding it back in the cytosol.DOI: http://dx.doi.org/10.7554/eLife.11692.021
+**Figure 7.:** Schematic drawing of a model for the coupling of p75NTR to the RhoGDI/RhoA and RIP2/NF-kB pathways based on the structural and biochemical studies presented above. (A) The p75NTR dimer in the cell membrane is held by homotypic interactions of DDs (light brown) and TM domains (blue). (B) RhoGDI (cyan) brings RhoA (dark purple) in proximity to the plasma membrane through its interaction with the DD of p75NTR. While the twofold symmetry axis of the DD:RhoGDI:RhoA hexametric complex is likely to be perpendicular to the plasma membrane, its relative orientation is hypothetical. RhoGDI binding to the p75NTR DD decreases its affinity for RhoA by 15-fold, and allows equilibration of RhoA with the plasma membrane, where it can be activated by GEFs. (C) Neurotrophin binding induces a conformational change in p75NTR resulting in the separation of its DDs (Vilar et al., 2009), exposing binding sites to downstream effectors that couple to the JNK/caspase-3 or NF-kB pathways, including RIP2. Recruitment of RIP2 to the p75NTR DD is mediated by the interaction of its CARD (green) with a binding surface that partially overlaps with that occupied by RhoGDI. As the binding affinity of the RIP2 CARD for the p75NTR DD is 100-fold higher than that of RhoGDI, the recruitment of RIP2 displaces RhoGDI from the receptor. Released from the DD, RhoGDI regains higher affinity for RhoA, extracting it from the membrane and holding it back in the cytosol.
 
-## Conclusions
+### Conclusions
 
 The structural studies of DD signaling in p75NTR presented here uncovered novel heterotypic interactions not previously seen in other DD-containing complexes. They represent new ways by which DDs regulate intracellular signaling. NMR, biochemical, and functional studies defined competitive interactions between RhoGDI and RIP2 CARD and between RIP2 CARD and the p75NTR DD homodimer. These interactions give us unique insights into the molecular mechanisms underlying p75NTR activation and signaling, and reveal how overlapping interfaces and differential binding affinities cooperate to orchestrate the hierarchical activation of downstream pathways in noncatalytic receptors.
 
 ## Materials and methods
 
-## Sample preparation
+### Sample preparation
 
 The cDNAs of human p75NTR DD (330–427), RhoGDI (2–204), RhoA (2–190), and RIP2 CARD (434–539) were amplified from total human embryonic stem (ES) cell cDNA and subcloned into pET32-derived expression vectors between BamH I and Xho I restriction sites. Each recombinant protein contains 16 additional residues (MHHHHHHSSGLVPRGS) at the N-terminal, including one 6×His tag. Unlabeled proteins were expressed in E. coli strain SoluBL21 (DE3) in LB or M9 medium. Protein samples were purified using Ni-NTA affinity chromatography, FPLC gel filtration (Superdex 75), and/or ionic exchange (MonoQ or MonoS). Isotopic labeling was carried out by expressing the proteins in M9 minimal medium containing 15N-NH4Cl and/or 13C-labeled glucose as the sole source of nitrogen and carbon. Protein complexes were prepared by mixing individual purified domains. Due to the weak binding affinities of DD:RhoGDI and DD homodimer complexes, as well as solubility problems of the DD:CARD complex in salt-containing buffers, gel filtration chromatography could not be used to purify these protein complexes. For the p75NTR DD:RhoGDI complex, two double-labeled samples were prepared in 10 mM D18-HEPES, 10 mM D10-DTT, 1 mM EDTA, and 0.01% sodium azide at pH 6.9: (1) 0.5 mM 13C,15N-labeled p75NTR DD mixed with 2 mM unlabeled RhoGDI; (2) 0.5 mM 13C, 15N-labeled RhoGDI mixed with 2 mM unlabeled p75NTR DD. For the p75NTR DD:RIP2 CARD complex, two double-labeled samples were made in water with 10 mM D10-DTT: (1) 0.5 mM 13C, 15N-labeled p75NTR DD mixed with 1 mM unlabeled RIP2 CARD; (2) 0.5 mM 13C, 15N-labeled RIP2 CARD mixed with 1 mM unlabeled p75NTR DD. For the RIP2 CARD on its own, 0.7 mM 13C, 15N-labeled RIP2 CARD was prepared in 50 mM D10-DTT in water. For the p75NTR DD homodimer, 1 mM 13C, 15N-labeled p75NTR DD was mixed with 1 mM unlabeled p75NTR DD in 50 mM phosphate buffer, 10 mM D10-DTT, 1 mM EDTA and 0.01% sodium azide at pH 6.9.
 
-## NMR spectroscopy and structure calculations
+### NMR spectroscopy and structure calculations
 
 NMR experiments were performed on a Bruker 800 MHz NMR spectrometer with a cryogenic probe at 28°C. All spectra were processed with NMRPipe (Delaglio et al., 1995) and analyzed with NMRView supported by a NOE assignment plugin (Johnson and Blevins, 1994). Resonance assignments of backbone, aliphatic, and aromatic side chains were obtained using previously described methods (Lin et al., 2006; Xu et al., 2006). Intramolecular NOE restraints were obtained from 4D time-shared 13C, 15N-edited NOESY spectra (Xu et al., 2007). Intermolecular NOEs were identified from 13C,15N-filtered 3D experiments (Zwahlen et al., 1997). Ambiguous NOEs were assigned with iterated structure calculations by DYANA (Herrmann et al., 2002). Final structure calculation was started from 100 conformers. Energy minimization of the 10 conformers with the lowest final target function values was performed in AMBER force field (Case et al., 2002). The mean structure was obtained from the 10 energy-minimized conformers for each domain. PROCHECK-NMR (Laskowski et al., 1996) was used to assess the quality of the structures. All the structural figures were made using MOLMOL (Koradi et al., 1996) or Chimera (Pettersen et al., 2004). The coordinates of p75NTR DD:RhoGDI, RIP2 CARD, p75NTR DD:RIP2 CARD, and p75NTR DD homodimer have been deposited with the Protein Data Bank with PDB IDs 2n80, 2n7z, 2n83, and 2n97, respectively.
 
-## Model structure calculations, structure-based alignments and structural comparison
+### Model structure calculations, structure-based alignments and structural comparison
 
 The structure of DD:RhoGDI:RhoA was modeled using HADDOCK 2.2 (Dominguez et al., 2003). The starting structures for the trimer were the DD monomeric structure from the lowest-energy structure of p75NTR DD:RhoGDI complex and the crystal structure of human RhoGDI:RhoA(GDP) (PDB ID: 1CC0). The starting structures used to build the hexameric model were the lowest-energy structure of the p75NTR DD homodimer and the crystal structure of human RhoGDI:RhoA(GDP). NOE data between p75NTR DD and RhoGDI were employed to create interaction restraints for both trimer and hexamer. Totally, 1000 rigid-body docking solutions were first generated by energy minimization. The best 100 structures according to intermolecular energies were subjected to semi-flexible simulated annealing in torsion angle space followed by a final refinement in explicit water. Pairwise structure-based alignment and comparison were carried out using a sequential structure alignment program (SSAP) available at the SSAP server (http://www.cathdb.info/cgi-bin/cath/SsapServer.pl).
 
-## Dynamic lighter scattering (DLS) and circular dichroism (CD)
+### Dynamic lighter scattering (DLS) and circular dichroism (CD)
 
 The apparent hydrodynamic radii of p75NTR DD domain in HEPES or phosphate buffer at pH 7.0 were examined by DLS (DynaPro, Protein Solutions Inc., Lakewood, NJ) at 22°C. The data were analyzed using Dynamics 5.0 software. The CD spectra of all samples were recorded on a Jasco J-810 spectropolarimeter equipped with a thermal controller at 22°C.
 
-## Surface plasmon resonance (SPR) and anisotropy measurements of DD homodimerization
+### Surface plasmon resonance (SPR) and anisotropy measurements of DD homodimerization
 
 All sensorgrams were recorded on a BIAcore T200 at 22°C. For experiments with captured p75NTR DD (ligand), purified p75NTR DD-His was captured onto NTA sensor chips via Ni2+/NTA chelation. Protein samples of purified RIP2 CARD or RhoGDI (analytes) were sequentially diluted in running buffer (10 mM HEPES, 50 mM NaCl, 0.005% Surfactant P20, 0.02% protease-free BSA at pH 7.0) and injected over the surfaces at different concentrations post capture. Regeneration of the NTA surface was performed using 350 mM EDTA. For experiments involving immobilized RhoA, unprenylated RhoA:GDP:Mg2+ was immobilized via amine coupling onto CM5 sensor chips. Unreacted carboxymethyl sites were capped by ethanolamine. Protein samples of analytes were sequentially diluted in running buffer (10 mM HEPES, 50 mM NaCl, 0.005% Surfactant P20, pH 7.0) and injected over the surfaces at different concentrations. To measure the binding of RhoGDI to RhoA, 1 mM MgCl2 and 100 µM GDP were also included in the running buffer. Binding affinities were expressed as equilibrium dissociation constants (Kd) determined by steady state (Figure 2C,D) or kinetic analyses (Figures 4B,C and Figure 3—figure supplement 4B) using the BIA evaluation software. One binding site model was used for fitting of SPR data.
 
 For anisotropy measurements of DD homodimerization, a cDNA encoding Enhanced Green Fluorescent Protein (EGFP) carrying the A206K mutation (to prevent its dimerization) was linked to the C-terminal of the human p75NTR cDNA via DNA ligation and the chimera protein (p75NTR DD-EGFP) was expressed in E. coli BL21(DE3) and purified by FPLC. p75NTR DD-EGFP was sequentially diluted in 50 mM phosphate buffer at pH 7.0. The anisotropy value was obtained from the measurements of fluorescence intensity in both parallel and perpendicular emission modes using a BioTek Cytation Imaging Reader at room temperature. Dimer dissociation constants were obtained by nonlinear fitting of anisotropy measurements to an equation describing a monomer–dimer equilibrium (Martin and Martin, 1996).
 
-## Plasmids, antibodies, and mice
+### Plasmids, antibodies, and mice
 
 Full-length cDNAs encoding human p75NTR, RhoGDI and RIP2 were amplified from human embryonic stem (ES) cell cDNA and subcloned in the pCDNA3 vector backbone (Invitrogen) for protein expression in mammalian cells. Mutations and epitope tags were introduced using QuickChange Site-Directed Mutagenesis Kit (Stratagene, United Kingdom) and verified by DNA sequencing. Normal expression of all constructs was verified by immunoblotting. The origin of antibodies was as follows: ANT-007 anti-p75NTR (for immunoprecipitation) from Alomone Labs; ab52987 anti-p75NTR (for immunoblotting) and anti-RhoGDI from Abcam; anti-Myc from Cell Signaling Technologies; anti-RIP2 from Enzo Life Sciences; anti-β-actin and anti-βIII-tubulin from Sigma-Aldrich. Rip2 knockout mice were obtained from Koichi Kobayashi and Richard Flavell (Kobayashi et al., 2002).
 
-## Cell culture, cell transfection, immunoprecipitation, immunoblotting, and RhoA activation assay
+### Cell culture, cell transfection, immunoprecipitation, immunoblotting, and RhoA activation assay
 
 HEK293 and COS-7 cells were obtained from ATCC and cultured under standard conditions in DMEM supplemented with 10% fetal calf serum, 100 units/ml penicillin, 100 mg/ml streptomycin, and 2.5 mM glutamine. HEK293 cells were transfected with the polyethylenimine (PEI) method. Briefly, cells were plated in a 10 cm tissue culture dish at a confluency of 3 × 106 cells/dish in normal growth media. Twenty-four hours after plating, the media was changed to growth media containing 1% v/v FBS. Transfection mix was prepared by mixing 1 μg of plasmid with 3 μg of PEI (1 mg/ml) in DMEM. The transfection mix was left to stand at room temperature followed by addition dropwise into culture plates. 24 hrours after transfection, the transfected cells were returned to normal growth media. After a further 24 hr, cells were placed in sera-free media for 16 hr prior to harvest and lysis in 50 mM Tris/HCl pH 7.5, 1 mM EDTA, 270 mM Sucrose, 1% (v/v) Triton X-100, 1 mM benzamidine, 1 mM PMSF, 0.1% (v/v) 2-mercaptoethanol, and in the presence of phosSTOP (Roche) phosphatase inhibitor cocktail mix as per manufacturer instructions. The cellular extracts were then centrifuged at 4°C top speed on a benchtop centrifuge for 15 min. The supernatant was collected and filtered using a 0.2 μM syringe filter. Protein concentration was determined by Bradford Assay. For anisotropy microscopy, COS-7 cells were transfected with Fugene6 (Promega) according to manufacturer’s instructions. For immunoprecipitation, cell extracts (0.5 mg protein) was incubated for 16 hr at 4°C on a rotating wheel with 0.5 μg of anti-p75 antibody (ANT-007, Alomone) attached to Protein G–Sepharose (7.5 μl packed beads). The beads were collected by brief centrifugation (2 min,780× g, 4°C), washed three times with 0.5 ml of Wash Buffer (50 mM Tris/HCl pH 7.5, 1% (v/v) Triton X-100, 0.05% (v/v) 2-mercaptoethanol, and 0.2 M NaCl). After the last wash, pelleted beads were aspirated off the wash buffer followed by addition of Laemmli sample buffer and analysis by SDS-PAGE and Western Blot. Immunoblots were developed using the ECL Western Blotting Kit (Thermo Scientific) and exposed to Kodak X-Omat AR films. Image analysis and quantification of band intensities were done with ImageJ software (NIH). For RhoA activation assays, mouse cerebella were dissected from postnatal day (P) 7 pups. RhoA activity was evaluated in total cerebellar extracts or in lysates of transfected HEK293 cells using the RhoA G-Lisa kit (Cytoskeleton) following the manufacturer’s instructions. Equal amount of protein was used from each sample as determined by Bradford Assay.
 
-## Homo-FRET anisotropy microscopy
+### Homo-FRET anisotropy microscopy
 
 Anisotropy microscopy was done as previously described (Vilar et al., 2009) in transiently transfected COS-7 cells. Images were acquired 24 hr post-transfection, using a Nikon Eclipse Ti-E motorized inverted microscope (Nikon, Japan) equipped with a X-Cite LED illumination system. A linear dichroic polarizer (Meadowlark Optics) was placed in the illumination path of the microscope, and two identical polarizers were placed in an external filter wheel at orientations parallel and perpendicular to the polarization of the excitation light. The fluorescence was collected via a CFI Plan Apochromat Lambda 40×, 0.95 NA air objective, and parallel and polarized emission images were acquired sequentially on an Orca CCD camera (Hamamatsu Photonics, Japan). Data acquisition was controlled by the Metamorph software (Molecular Devices, USA). NGF (from Alomone Labs) or vehicle was added 3 min after the start of the time lapse at a concentration of 100 ng/ml. Anisotropy values were extracted from image stacks of 30 images acquired in both parallel and perpendicular emission modes every 30 s for a time period of 15 min after NGF addition. For each construct, 12–15 ROIs were measured in three independent transfections performed in duplicate. Fluorescence intensity and anisotropy images were calculated as described by Squire et al. (2004). Wild type and CARD binding site (CBS) mutant cDNA constructs of rat p75NTR were tagged at the C terminus with a monomeric version of EGFP (Clontech) carrying the A206K mutation that disrupts EGFP dimerization. The CBS p75NTR mutant corresponded to the triple mutant D355A/H359A/E363A described in our previous study (Charalampopoulos et al., 2012).

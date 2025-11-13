@@ -50,13 +50,91 @@ We exome sequenced two large population-based cohorts with substantial autozygos
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/54363/elife-54363-fig1-v2.jpg)
 
-**Figure 1.:** HAO1 variant (rs1186715161, GRCh37:20;7866212 AG/A).(A) Exome sequencing performed using Agilent in solution capture and Illumina short read sequencing using blood DNA. Top half of image, individual with homozygous ENST00000378789.3:c.997delC genotype. Bottom half of image, a different individual with homozygous reference sequence genotype. Neither sequencing assay (see also Figure 1B) in the different tissues suggested mosaicism however additional tissues (e.g. skin) for more definitive exclusion could not be obtained. () Sanger sequencing around the ENST00000378789.3:c.997delC BHAO1 (rs1186715161) variant using saliva DNA taken at a different timepoint to the blood DNA in Figure 1A.
+**Figure 1.:** (A) Exome sequencing performed using Agilent in solution capture and Illumina short read sequencing using blood DNA. Top half of image, individual with homozygous ENST00000378789.3:c.997delC genotype. Bottom half of image, a different individual with homozygous reference sequence genotype. Neither sequencing assay (see also Figure 1B) in the different tissues suggested mosaicism however additional tissues (e.g. skin) for more definitive exclusion could not be obtained. (B) Sanger sequencing around the ENST00000378789.3:c.997delC HAO1 (rs1186715161) variant using saliva DNA taken at a different timepoint to the blood DNA in Figure 1A.
 
 No complete knockout (homozygous predicted loss of function, pLOF) variants in HAO1 were observed in the online gnomAD v2.1 database of 141,456 whole exome/genome sequenced individuals (Karczewski, 2020; Minikel et al., 2019). The cumulative frequency of known pLOF variants in HAO1 is low, in gnomAD v2.1 approximately 1 in 2700 individuals is heterozygous. Analysis of pLOF constraint, to assess the degree of natural selection against loss of function, revealed 13 variants observed out of 17.7 expected (obs/exp = 74%, 90% CI 48–117%), with a confidence interval spanning the range for recessive disease genes (mean obs/exp = 59%) and homozygous pLoF tolerant genes (mean obs/exp = 92%) (Minikel et al., 2019). The lack of strong constraint makes the HAO1 gene unlikely to have a haploinsufficient phenotype, but does not rule out a deleterious health effect in homozygotes or a mild phenotype in heterozygous carriers. However, since the expected homozygote frequency in an outbred population would be only ~1 in 30 million individuals, assessing the health effects of HAO1 loss to date has been challenging. Three children have previously been reported with suspected glycolate oxidase deficiency, however all were ascertained to have complicating factors such as multiple gene deletions or additional mutations associated with a severe genetic disease, thus confounding clinical interpretation. Furthermore none had plasma biochemical assays, and not all had HAO1 sequencing performed (Frishberg et al., 2014), (Clifford-Mobley et al., 2017), (Craigen, 1996).
 
 HAO1 inhibition is a potential chronic therapeutic approach for a devastating metabolic disease (primary hyperoxaluria type 1, PH1). Thus, the phenotype of a HAO1 null individual could illuminate the mechanism and safety profile of drugs targeting this enzyme (Nguyen et al., 2018). Her medical history, and UK National Health Service (NHS) primary and secondary care health records were reviewed. At the time of assessment, she was in her 5th decade and a mother with three healthy children. She declared British-Pakistani ethnicity. Renal ultrasound, carried out as part of a gynaecology assessment, was normal. She was overweight (BMI 30–35 kg/m2), and other than common non-serious short-term illnesses and pregnancy symptoms, otherwise healthy.
 
 Standard clinical venous blood biochemistries including serum sodium, potassium, bicarbonate, chloride, creatinine, transaminases, and bilirubin were repeatedly normal at recall and over the previous decade. At genotype directed recall, her serum anion gap was normal, and plasma and urinary oxalate were both normal. However, confirming the loss of function predicted from the genetics, her plasma glycolate and urinary glycolate levels were markedly elevated (Table 1), at, respectively, 12 times and six times the upper limit of normal in healthy reference individuals.
+
+**Table 1.**
+ Blood and Urine biochemical measurements in a healthy woman with a p.Leu333SerfsTer4 HAO1 knockout.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample and assay</th>
+      <th>Level</th>
+      <th>Reference Range*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Venous blood</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Plasma oxalate</td>
+      <td>&lt;1.0 mcmol/L</td>
+      <td>&lt;1.6</td>
+    </tr>
+    <tr>
+      <td>Plasma glycolate</td>
+      <td>171 nmol/mL</td>
+      <td>≤14</td>
+    </tr>
+    <tr>
+      <td>Plasma glycerate</td>
+      <td>&lt;1 nmol/mL</td>
+      <td>≤28</td>
+    </tr>
+    <tr>
+      <td>Urine (single void, same day as blood tests)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Urine oxalate</td>
+      <td>0.16 mmol/L</td>
+      <td>Not applicable</td>
+    </tr>
+    <tr>
+      <td>Urine oxalate/creatinine ratio</td>
+      <td>20 mg/g</td>
+      <td>≤75</td>
+    </tr>
+    <tr>
+      <td>Urine glycolate/creatinine ratio</td>
+      <td>199 mg/g</td>
+      <td>≤50</td>
+    </tr>
+    <tr>
+      <td>24 hr urine (on a different day)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Urine oxalate (total/24 hr)</td>
+      <td>0.27 mmol/24 hr</td>
+      <td>&lt;0.46</td>
+    </tr>
+    <tr>
+      <td>Urine oxalate/creatinine ratio</td>
+      <td>23 mg/g</td>
+      <td>≤75</td>
+    </tr>
+    <tr>
+      <td>Urine glycolate/creatinine ratio</td>
+      <td>309 mg/g</td>
+      <td>≤50</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Reference ranges (mean+2sd) derived from studies of 67 healthy adults at the Mayo Clinic._
 
 We analyzed 914 metabolites (736 known, 178 unknown, Metabolon HD4 Panel) and 957 lipids (Metabolon TrueMass Complex Lipid Panel) from her blood plasma and from controls. Consistent with the expectation that HAO1 plays a relatively limited metabolic role, the majority of her metabolites were similar (+/- 3 sd) compared to those of 25 control individuals. Principal component analysis of the metabolomics data showed her to be an outlier on PC2 (Figure 2), analysis of loadings suggested the high glycolate level to be the major driver. We observed that 18 biochemicals (including glycolate) were markedly elevated (extreme outliers at >5 sd compared to controls) in addition to other more modestly elevated biochemicals (Supplementary file 1 and 2). Some of these may reflect the known roles of glycolate in human metabolism, and be directly related to the very high glycolate. The elevated cholic acid related compounds might be due to reduced local availability of glycine (a product of the glycolate pathway) to conjugate cholic acid and its bile acid derivatives (unconjugated bile acids are elevated; glycine and taurine conjugated bile acids are reduced). Six of the significantly elevated metabolites have a structure compatible with being potential HAO1 substrates, two further evidenced by reduced levels of their predicted metabolic products (annotated in Supplementary file 1).
 
@@ -70,7 +148,7 @@ HAO1 protein is normally found exclusively in hepatocyte peroxisomes and require
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/54363/elife-54363-fig3-v2.jpg)
 
-**Figure 3.:** HAO1 variant p.Leu333SerfsTer4 is expressed at significantly lower levels and mislocalised in cells.(A) Western blot showing glycolate oxidase (GO, encoded by the HAO1 gene) protein for both tagged and untagged reference sequence HAO1 (wild type, WT) and p.Leu333SerfsTer4. (B) Protein expression quantification of both tagged and untagged wild type and p.Leu333SerfsTer4. (C) mRNA expression quantification of both tagged and untagged wild type and p.Leu333SerfsTer4. (D) Immunofluorescence shows lower expression levels and diffuse signal for p.Leu333SerfsTer4 relative to wild type. Cells imaged at 60X magnification. The right panel was adjusted to be 2.3-fold brighter than the left or middle panel in ImageJ software in order show green fluorescence.
+**Figure 3.:** (A) Western blot showing glycolate oxidase (GO, encoded by the HAO1 gene) protein for both tagged and untagged reference sequence HAO1 (wild type, WT) and p.Leu333SerfsTer4. (B) Protein expression quantification of both tagged and untagged wild type and p.Leu333SerfsTer4. (C) mRNA expression quantification of both tagged and untagged wild type and p.Leu333SerfsTer4. (D) Immunofluorescence shows lower expression levels and diffuse signal for p.Leu333SerfsTer4 relative to wild type. Cells imaged at 60X magnification. The right panel was adjusted to be 2.3-fold brighter than the left or middle panel in ImageJ software in order show green fluorescence.
 
 PH1 is a rare autosomal recessive metabolic disorder of oxalate metabolism (Cochat and Rumsby, 2013). Overproduction of oxalate occurs in the liver due to an inherited genetic defect of the enzyme alanine-glyoxylate aminotransferase (encoded by AGXT). High concentrations of urinary oxalate result in precipitation of insoluble calcium oxalate salts and may lead to paediatric end stage kidney disease. Multi-organ damage can also occur from systemic oxalosis. Substantial unmet need exists for therapies to treat PH1 without requiring dual liver-kidney transplantation.
 
@@ -84,23 +162,61 @@ The top two traces (forward sequencing, then below, reverse sequencing) are of t
 
 ## Materials and methods
 
-## Ethics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Chinese Hamster Ovary)</td>
+      <td>CHO-K1</td>
+      <td>ATCC CCL-61</td>
+      <td></td>
+      <td>RRID:CVCL_0214</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Taqman Assay for RT-qPCR HAO1 FAM</td>
+      <td>Thermofisher</td>
+      <td>Assay Id Hs00213909_m1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Taqman Assay for RT-qPCR GAPDH VIC</td>
+      <td>Thermofisher</td>
+      <td>Assay Id Cg04424038_gH</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethics
 
 The HAO1 knockout volunteer took part in both the Born In Bradford study and the Genes and Health study. Volunteers providing control samples took part in the Genes and Health study. Ethical approval was obtained from Bradford National Research Ethics Committee (06/Q1202/48) and the South East London National Research Ethics Committee (14/LO/1240). Informed consent and consent to publish was obtained. Information Sheets and Consent Forms are available on the study website (http://www.genesandhealth.org/volunteer-information).
 
-## Exome sequencing
+### Exome sequencing
 
 Exome sequencing was performed using Agilent in solution capture and Illumina short read sequencing as described in detail in Narasimhan et al. (2016). This experiment was performed once. Data reported in the paper are available at the European Genotypephenome Archive (www.ebi.ac.uk/ega) under accession numbers EGAS00001000462, EGAS00001000511, EGAS00001000567, EGAS00001000717 and EGAS00001001301.
 
-## Sanger sequencing
+### Sanger sequencing
 
 Sanger sequencing was performed as described in detail in Narasimhan et al. (2016). Samples were amplified using M13 tagged primer pair below (PCR conditions: Initial denaturation: 10 min at 96°C; followed by 35 cycles of 15 s at 95°C; 15 s at 55°C; 30 s at 72°C with a final extension at 72°C for 5mins) before sending for PCR clean up and sequencing with M13F and M13R in-house primers at Source Bioscience. Forward: 5’TGTAAAACGACGGCCAGTTCAAATTCACTTCTCTCCACCA, Reverse: 5’CAGGAAACAGCTATGACCTGGGGCTTAGCTTTCCAGG. This experiment was performed once, but replicated in forward versus reverse, and versus the exome sequencing and other results..
 
-## Variant annotation
+### Variant annotation
 
 The HAO1 variant rs1186715161 is present on a single transcript in Ensembl 99 (which uses GENODE v33 BASIC); and on a single transcript in each of the GENCODE v32 comprehensive, NCBI RefSeq, CCDS (consensus coding sequence) annotations in the USCS genome browser. Whilst additional transcripts are possibly suggested by more experimental tools such as vizER (using GTEx RNAseq data, snca.atica.um.es/browser) or older tools such as AceView (ncbi.nlm.nih.gov/IEB/Research/Acembly/) our in vivo biological data in the human volunteer with this homozygous variant supports complete functional knockout.
 
-## Plasma and urine collection
+### Plasma and urine collection
 
 Non-fasting blood samples were collected from the HAO1 knockout individual and a control (control data not shown) for the bespoke biochemical assays. Samples sent for testing at the Mayo Clinical Laboratories were prepared as per specimen collection guidelines stipulated for each test by the Mayo Clinical Laboratories. Specifically 4 × 6.0 ml Na Hep vacutainers were filled with blood followed by inversion 10 times. Samples were centrifuged (1500xg, 10 min, slow deceleration) at 4°C, within 45 min of collection. 3 × 1.0 ml aliquots of plasma were prepared in 2.0 ml cryovials which were frozen on dry ice before storing at −80°C. A further 2.0 ml aliquot of plasma was aliquoted into a 3.0 ml cryovial which was then acidified to 2.3 < pH < 3.5 using concentrated (12N) hydrochloric acid, samples were then frozen on dry ice before storing at −80°C.
 
@@ -110,11 +226,11 @@ For the bespoke assays at the Mayo, one control sample was sent along with the H
 
 Metabolon assays were carried out on plasma obtained from the HAO1 knockout woman along with 25 controls. Control samples were of adults of south Asian ethnicity and both genders from the Genes and Health study. Demographics are provided in Supplementary file 1. For each person, a 6.0 ml EDTA vacutainer was filled with blood, vacutainers were then inverted five times before centrifugation (2200xg, 15mins, slow deceleration) at room temperature. 0.25 ml plasma was aliquoted into 2.0 ml pre-chilled cryovials, on ice, before immediate transfer to −80°C freezer for storage until samples were transferred to Metabolon on dry ice. Metabolon assays were performed in duplicate (technical replicate) in the HAO1 knockout individual.
 
-## Bespoke biochemical assays
+### Bespoke biochemical assays
 
 Mayo Clinical Labs were blinded to the identity of the HAO1 knockout individual, and a control individual. Urine and plasma oxalate and glycolate quantification was performed at the Mayo Clinical Labs with samples prepared as instructed for each test (see https://www.mayocliniclabs.com/test-catalog). Urine oxalate (Test ID: ROXU) was measured using a modification of the oxalate oxidase method as previously described (Wilson and Liedtke, 1991). Plasma oxalate (Test ID: POXA) concentrations were determined for an acidified sample (to minimize spontaneous conversion of ascorbate to oxalate) by ion-exchange chromatography using the Dionex ICS 2100 instrument. Urine glycolate (Test ID: HYOX) was determined along with a panel of metabolites (4-hydroxy-2-oxoglutaric, HOG; oxalate, glyoxylate, and glycerate). Briefly, urine samples corresponding to 0.25 mg of creatinine (not to exceed 1 mL of urine) were oximated by reaction with methoxyamine hydrochloride to stabilize one of the target analytes (HOG). The urine was then acidified and extracted with 4:1 ethyl acetate:isopropanol. After evaporation, the dry residue was silylated with 80:20 BSTFA/1%TMCS:pyridine and analyzed by capillary gas chromatography/mass spectrometry (GC/MS) for quantification of each analyte. For plasma glycolate quantification (Test ID: HYOXP), non-acidified plasma samples were spiked with a mixture of stable isotope internal standards and treated with pentafluorobenzyl hydroxylamine HCl to prepare PFB-oxime derivatives of any oxo-acids present. After oximation, available hydroxy groups (alcohols or carboxylic acids) were derivatized with a silylating reagent (N,O-Bis(trimethylsilyl)trifluoroacetamide; BSTFA) to impart necessary volatility and stability for analysis by capillary GC-MS in PCI SIM mode. Quantification was enabled by calibration with use of internal standard, and one quantifier ion and one qualifier ion.
 
-## Metabolon metabolomics (UPLC-MS/MS), Metabolon HD4 panel
+### Metabolon metabolomics (UPLC-MS/MS), Metabolon HD4 panel
 
 Following receipt by Metabolon, samples were inventoried and immediately stored at −80°C. Each sample received was accessioned into the Metabolon LIMS system and was assigned by the LIMS a unique identifier that was associated with the original source identifier only. This identifier was used to track all sample handling, tasks, results, etc. The samples (and all derived aliquots) were tracked by the LIMS system. All portions of any sample were automatically assigned their own unique identifiers by the LIMS when a new task was created; the relationship of these samples was also tracked. All samples were maintained at −80°C until processed.
 
@@ -130,7 +246,7 @@ Principal components analysis was performed for metabolomics (and lipidomics sep
 
 Excellent correlation (r = 0.9976) between two duplicates of the HAO1 knockout samples were observed. Therefore the mean of the two HAO1 knockout samples was compared to the mean of the 25 other controls, and extreme differences reported (full individual level data for all biochemicals is provided in Supplementary file 1).
 
-## Metabolon lipidomics (infusion MS), Metabolon CLP panel
+### Metabolon lipidomics (infusion MS), Metabolon CLP panel
 
 The extracts were dried under nitrogen and reconstituted in a dichloromethane:methanol solution containing ammonium acetate. The extracts were transferred to vials for infusion-MS analysis, performed on a Shimadzu LC with nano PEEK tubing and the Sciex SelexIon-5500 QTRAP. The samples were analyzed via both positive and negative mode electrospray. The 5500 QTRAP was operated in MRM mode with a total of more than 1100 MRMs. Individual lipid species were quantified by taking the ratio of the signal intensity of each target compound to that of its assigned internal standard,then multiplying by the concentration of internal standard added to the sample. Lipid class concentrations were calculated from the sum of all molecular species within a class, and fatty acid compositions were determined by calculating the proportion of each class comprised by individual fatty acids.
 
@@ -142,7 +258,7 @@ Principal components analysis was performed for lipidomics using the ‘PCAtools
 
 Excellent correlation (r = 0.9737) between two duplicates of the HAO1 knockout samples were observed. Therefore, the mean of the two HAO1 knockout samples was compared to the mean of the 25 other controls, and extreme differences reported (full individual level data for all biochemicals is provided in Supplementary file 2).
 
-## Cell line expression assays
+### Cell line expression assays
 
 Plasmids: Plasmids were generated by GenScript and were verified using Sanger sequencing.
 

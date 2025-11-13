@@ -22,17 +22,17 @@
 
 ### Affiliations
 
-1. https://ror.org/02vjkv261 UMR 1297-I2MC, Inserm, Université de Toulouse Toulouse France
-2. https://ror.org/02feahw73 UMR 1301-RESTORE, Inserm, CNRS 5070, Etablissement Français du Sang-Occitanie (EFS), National Veterinary School of Toulouse (ENVT), Université de Toulouse Toulouse France
-3. https://ror.org/02785qs39 UMR5535 CNRS-IGMM, Université de Montpellier Montpellier France
-4. https://ror.org/016zvc994 Institut de Pharmacologie et Biologie Structurale (IPBS), Université de Toulouse, CNRS Toulouse France
-5. https://ror.org/02v6kpv12 Molecular, Cellular and Developmental Biology Unit (MCD), Centre de Biologie Intégrative (CBI), Université de Toulouse Toulouse France
+1. UMR 1297-I2MC, Inserm, Université de Toulouse Toulouse France ([ROR:02vjkv261](https://ror.org/02vjkv261))
+2. UMR 1301-RESTORE, Inserm, CNRS 5070, Etablissement Français du Sang-Occitanie (EFS), National Veterinary School of Toulouse (ENVT), Université de Toulouse Toulouse France ([ROR:02feahw73](https://ror.org/02feahw73))
+3. UMR5535 CNRS-IGMM, Université de Montpellier Montpellier France ([ROR:02785qs39](https://ror.org/02785qs39))
+4. Institut de Pharmacologie et Biologie Structurale (IPBS), Université de Toulouse, CNRS Toulouse France ([ROR:016zvc994](https://ror.org/016zvc994))
+5. Molecular, Cellular and Developmental Biology Unit (MCD), Centre de Biologie Intégrative (CBI), Université de Toulouse Toulouse France ([ROR:02v6kpv12](https://ror.org/02v6kpv12))
 
 † Corresponding author
 
 ## Abstract
 
-Internal ribosome entry sites (IRESs) drive translation initiation during stress. In response to hypoxia, (lymph)angiogenic factors responsible for tissue revascularization in ischemic diseases are induced by the IRES-dependent mechanism. Here, we searched for IRES trans -acting factors (ITAFs) active in early hypoxia in mouse cardiomyocytes. Using knock-down and proteomics approaches, we show a link between a stressed-induced nuclear body, the paraspeckle, and IRES-dependent translation. Furthermore, smiFISH experiments demonstrate the recruitment of IRES-containing mRNA into paraspeckle during hypoxia. Our data reveal that the long non-coding RNA Neat1 , an essential paraspeckle component, is a key translational regulator, active on IRESs of (lymph)angiogenic and cardioprotective factor mRNAs. In addition, paraspeckle proteins p54 nrb and PSPC1 as well as nucleolin and RPS2, two p54 nrb -interacting proteins identified by mass spectrometry, are ITAFs for IRES subgroups. Paraspeckle thus appears as a platform to recruit IRES-containing mRNAs and possibly host IRESome assembly. Polysome PCR array shows that Neat1 isoforms regulate IRES-dependent translation and, more widely, translation of mRNAs involved in stress response.
+Internal ribosome entry sites (IRESs) drive translation initiation during stress. In response to hypoxia, (lymph)angiogenic factors responsible for tissue revascularization in ischemic diseases are induced by the IRES-dependent mechanism. Here, we searched for IRES trans-acting factors (ITAFs) active in early hypoxia in mouse cardiomyocytes. Using knock-down and proteomics approaches, we show a link between a stressed-induced nuclear body, the paraspeckle, and IRES-dependent translation. Furthermore, smiFISH experiments demonstrate the recruitment of IRES-containing mRNA into paraspeckle during hypoxia. Our data reveal that the long non-coding RNA Neat1, an essential paraspeckle component, is a key translational regulator, active on IRESs of (lymph)angiogenic and cardioprotective factor mRNAs. In addition, paraspeckle proteins p54nrb and PSPC1 as well as nucleolin and RPS2, two p54nrb-interacting proteins identified by mass spectrometry, are ITAFs for IRES subgroups. Paraspeckle thus appears as a platform to recruit IRES-containing mRNAs and possibly host IRESome assembly. Polysome PCR array shows that Neat1 isoforms regulate IRES-dependent translation and, more widely, translation of mRNAs involved in stress response.
 
 ## Introduction
 
@@ -52,9 +52,29 @@ In this study, we were interested in finding new ITAFs responsible for activatin
 
 ## Results
 
-## FGF1 IRES activation during hypoxia correlates with paraspeckle formation and with Neat1 induction in different cell types
+### FGF1 IRES activation during hypoxia correlates with paraspeckle formation and with Neat1 induction in different cell types
 
 In order to analyze the regulation of IRES activity during hypoxia, HL-1 cardiomyocytes were transduced with the ‘Lucky Luke’ bicistronic lentivector validated in our previous reports, containing the renilla luciferase (LucR) and firefly luciferase (LucF) genes separated by the FGF1 IRES (Video 1, Figure 1A). In this construct, the first cistron LucR is expressed in a cap-dependent manner and the second cistron LucF is under the control of the IRES. The ratio LucF/LucR reflects the IRES activity.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig1-v2.jpg)
+
+**Figure 1.:** (A) Schema depicting the Lucky Luke bicistronic construct and HL-1 cells transduced by a lentivector carrying the transgene. The LucF/LucR ratio indicates the IRES activity. (B) Activity of the human FGF1 IRES in HL-1 cardiomyocytes at 4 hr, 8 hr, or 24 hr of hypoxia normalized to normoxia. The corresponding luciferase values are presented in Figure 1—figure supplement 1, Supplementary file 1. (C) Detection of endogenous mouse FGF1 by capillary Simple Western in normoxic and hypoxic (2 hr) cardiomyocytes. The curve corresponds to the chemiluminescence signal detected with FGF1 antibody. A numerical blot is represented. Below the blot is shown the quantification of FGF1 normalized to total proteins and to control gapmer. Total proteins are detected by a dedicated channel in capillary Simple Western. The full raw unedited gel is provided in Figure 1—figure supplement 1 (Figure 1—figure supplement 1—source data 1). (D) HL-1 cells were subjected to normoxia (0 hr) or to hypoxia during 4 hr, 8 hr, and 24 hr. Neat1 and Neat1_2 expression was analyzed by droplet digital PCR (Primer sequences in Supplementary file 2). RNA expression is normalized to the normoxia time point. (E) Schema depicting the Neat1 mouse gene and the Neat1_1 and Neat1_2 RNA isoform carrying a poly(A) tail or a triple helix, respectively. Black arrowheads represent FISH probes against Neat1 and Neat1_2 (sequences in Supplementary file 2). (F–K) Neat1 (F) or Neat1_2 (I) FISH labeling in HL-1 cardiomyocytes in normoxia or at 4 hr, 8 hr, and 24 hr of 1% O2. DAPI staining is represented in blue and Neat1 or Neat1_2 cy3 labeling in red. Nuclei are delimited by dotted lines. Scale bar = 10 µm. Larger fields are presented in Figure 1—figure supplement 2. (G and J) Quantification of Neat1 (G) or Neat1_2 (J) foci per cell by automated counting (ImageJ). (H and K) Percentage of cell harboring at least one focus of Neat1 (H) or Neat1_2 (K); Histograms correspond to means ± standard deviation, with Mann-Whitney (n=12) (B) or one-way ANOVA (G-H, n=269–453) and (J-K, n=342–499); **p<0.01, ***<0.001, ****p<0.0001.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Renilla (A) and firefly (B) luciferase activities were measured in HL-1 cardiomyocytes transduced by the bicistronic vector with the FGF1 IRES, after 4 hr, 8 hr, or 24 hr of hypoxia or normoxia. The experiments were performed with triplicates from four distinct transduced cell samples (Supplementary file 1). The graphs show a representative triplicate experiment. (C) Raw gel and chemiluminescence curve of endogenous FGF1 expression analyzed by capillary Simple Western. Source data of the capillary Simple Western are provided (Figure 1—figure supplement 1—source data 1).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** FISH experiment with representative images of Neat1 (both isoforms)(left panels) or Neat1_2 isoform (right panels) in normoxia and hypoxia at 4 hr, 8 hr, 24 hr in HL-1 cardiomyocytes. DAPI, Neat1 cy3 or Neat1_2 cy3 labelling and merge. The open square represents magnified zones presented in Figure 1F and I. Scale bar: 10µm.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A–B) 67NR cells (mouse breast cancer) were subjected to normoxia (0 hr) or to hypoxia (1% 02) during 4 hr, 8 hr and 24 hr. Neat1 (A) or Neat1_2 (B) expression was analyzed by RT qPCR (Primer sequences in Supplementary file 2). RNA expression is normalized to normoxia time point. (C) Activity of the human FGF1 IRES in 67NR cells at 4 hr, 8 hr, or 24 hr of hypoxia normalized to normoxia. (D–E) Neat1 or Neat1_2 knock-down obtained by transduction of 67NR cells with lentivectors expressing an artificial miRNA targeting Neat1 (miR-Neat1, D) or Neat1_2 (miR-Neat1_2, E). To knock down Neat1_2, a pool of two lentivectors coding two different miRNAs was used (sequences in Supplementary file 2). (C) Activity of the human FGF1 IRES in 67NR cells transduced with lentivector miR-Neat1 or miR-Neat1_2 and submitted to normoxia or 24 hr of hypoxia 1% O2. Statistics were performed by two-way ANOVA with multiple comparison Dunnet test. Normoxia versus hypoxia for each time. *p<0.05, **p<0.005, ***p<0.0005, ****p<0.0001.
+
+![Video 1.](https://cdn.elifesciences.org/articles/69162/elife-69162-video1.mp4.jpg)
+
+**Video 1.:** Mouse atrial HL-1 cardiomyocytes exhibit a beating phenotype when cultured in Claycomb medium at high density (Claycomb et al., 1998). This phenotype was required to obtain all the data described in the present study.
 
 LucR and LucF activities were measured in HL-1 cells subjected to hypoxia for 4 hr, 8 hr, or 24 hr (Figure 1—figure supplement 1, Supplementary file 1). These conditions were exactly the same as that used in our previous report providing evidence of IRES activation by hypoxia (Hantelys et al., 2019). We previously showed in the same report that eIF2α is phosphorylated after 4 hr of hypoxia, while no change in 4E-BP1 phosphorylation is observed. The polysome/monosome ratio indicated that global protein synthesis decreases in these conditions (Hantelys et al., 2019). Those data allowed us to conclude that IRES activities are not negatively affected by eIF2α phosphorylation.
 
@@ -66,31 +86,389 @@ These data revealed that FGF1 IRES activation correlates with increased Neat1 ex
 
 These data indicate that the correlation between Neat1_2 isoform induction and IRES activation under hypoxia exists in different cell types.
 
-## LncRNA Neat1 knock-down drastically affects the FGF1 IRES activity and endogenous FGF1 expression
+### LncRNA Neat1 knock-down drastically affects the FGF1 IRES activity and endogenous FGF1 expression
 
 To determine whether Neat1 could have a role in the regulation of FGF1 IRES activity, we depleted HL-1 for this non-coding RNA using locked nucleic acid (LNA) gapmers, antisense modified oligonucleotides described for their efficiency in knocking-down nuclear RNAs. HL-1 cells transduced with the bicistronic vector were transfected with a pool of gapmers targeting Neat1 and with a control gapmer (Supplementary file 2). The knock-down efficiency was measured by smiFISH (single molecule inexpensive FISH) and ddPCR and showed a decrease in the number of paraspeckles, correlated to the decrease of Neat1 RNA, which shifted from 5 to 2 foci per cell (Figure 2A–B, Figure 2—figure supplement 1A; Tsanov et al., 2016). In these experiments performed in normoxia, the number of paraspeckles was high (almost 5 foci per cell), suggesting that cells were already stressed by the gapmer treatment, before being submitted to hypoxia. Alternatively, it could also be explained by the high sensitivity of the smiFISH method used here, whereas paraspeckles were detected by FISH in Figure 1. To evaluate the IRES activity, the ratio LucF/LucR was measured in normoxia or after 4 hr of hypoxia, revealing that the IRES activity decreased by two times upon Neat1 depletion (Figure 2C, Supplementary file 3). This effect was also observed on endogenous FGF1 protein expression, measured by capillary Simple Western, which decreased by three times (Figure 2D, Figure 2—figure supplement 2).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig2-v2.jpg)
+
+**Figure 2.:** (A) SmiFISH imaging of Neat1 knock-down by a pool of LNA gapmers targeting both isoforms (Sequences in Supplementary file 2C). Cells were treated during 48 hr with the gapmers. Scale bar = 10 µm. (B) Neat1 foci counting per cell for the control gapmer and Neat1 LNA gapmer pool, using unpaired two-tailed student t-test with n=249 for control and 187 for Neat1 LNA gapmer. (C) FGF1 IRES activities in HL-1 cells transduced with Lucky Luke bicistronic reporter and treated with gapmer Neat1 or control during normoxia or hypoxia (1% O2). Histograms correspond to means ± standard deviation of the mean. Non-parametric Mann-Whitney test was performed with n=9. *p<0.05, ***<0.001, ****p<0.0001. The mean has been calculated with nine cell culture biological replicates, each of them being already the mean of three technical replicates (27 technical replicates in total). Detailed values of biological replicates are presented in Supplementary file 3. (D) Detection of endogenous mouse FGF1 by capillary Simple Western. The curve corresponds to the chemiluminescence signal detected with FGF1 antibody. A numerical blot is represented. Below the blot is shown the quantification of FGF1 normalized to total proteins and to control gapmer. The source data of the capillary Simple Western are provided in Figure 2—figure supplement 2. Total proteins are detected by a dedicated channel in capillary Simple Western.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Neat1 knock-down was performed in HL-1 cells using pooled LNA gapmers against Neat1 (48 hr)(A) or Neat1_2 (72 hr)(B). Neat1 and Neat1_2 RNA expression was measured by droplet digital PCR and normalized to gapmer control (Ctrl) at 100% expression.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Endogenous mouse FGF1 was detected using anti-FGF1 antibody in hypoxic HL-1 cells treated either by control gapmer (ctrl) or Neat1_2 gapmer by capillary Simple Western. The source data of the capillary Simple Western are presented (Figure 2—figure supplement 2—source data 1). The curve corresponds to the chemiluminescence signal detected with FGF1 antibody.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** Neat1-2 knock-down was performed in HL-1 cells transduced by the bicistronic lentivector with the FGF1 IRES during normoxia or hypoxia (1% O2). Luciferase activities as well as the LucF/LucR ratios (defined as IRES activities) are presented. (A–B) LucR and LucF activities. (C) FGF1 IRES activities. (D) Neat1_2 RNA expression was measured by RT-qPCR and normalized to control gapmer.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Expression and phosphorylation of eIF2α in HL-1 cells either untreated (NT) or treated by control gapmer (ctrl) or Neat1_2 gapmer were measured using anti-eIF2α (A) and anti-phospho-eIF2α antibodies (B), respectively, by Jess capillary Simple Western, normalized to the Jess quantification of total proteins. The ratio p-eIF2α/ eIF2α was calculated and normalized by untreated cells (C) The source data of the capillary Simple Western are provided (Figure 2—figure supplement 4—source data 1).
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A–E) FGF1 half-life was determined in HL-1 cells treated with control gapmer, Neat1_2 gapmer or untreated. The half-life determination was performed by blocking protein synthesis with cycloheximide at 10 μg/mL, with time-course points at 0 hr, 2 hr, 4 hr, 8 hr, 16 hr, and 24 hr. FGF1 protein stability was measured bu capillary western. P21 was used as a control for its short half life (Figure 2—figure supplement 6). Capillary western are presented, showing FGF1 protein during the cycloheximide time course in HL-1 cells untreated (A), treated with gapmer control (B) or with gapmer Neat1_2. (C) Percentage of FGF1 is normalized to the 0 hr time course point. Source data of capillary Simple Western are provided (Figure 2—figure supplement 5—source data 1 and Figure 2—figure supplement 6—source data 1)
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** (A–E) p21 half-life half-life was determined as a control in HL-1 cells treated with control gapmer, Neat1_2 gapmer or untreated, in the experiment shown in Figure 2—figure supplement 5. p21 protein stability was measured by capillary western, showing p21 protein level during the cycloheximide time course in HL-1 cells untreated (A) treated with gapmer control (B) or with gapmer Neat1_2. (C) Percentage of p21 is normalized to the 0 hr time course point. Source data of capillary Simple Western are provided (Figure 2—figure supplement 5—source data 1 and Figure 2—figure supplement 6—source data 1).
+
 Neat1_2 knock-down was then performed to evaluate the contribution of the long Neat1 isoform. Also, the FGF1 IRES activity decreased following Neat1_2 depletion, however less importantly than with the knock-down of the two isoforms (Figure 2—figure supplement 3), suggesting an involvement of both Neat1 isoforms. Capillary Western experiments indicated a slight increase of eIF2α phosphorylation upon Neat1_2 depletion (Figure 2—figure supplement 4). It was not sufficient to block global translation, as shown by the renilla luciferase activity (Supplementary file 3, page 2). Furthermore, we have shown in a previous report that the FGF1 IRES activity increases in hypoxia in conditions of strong eIF2α phosphorylation. FGF1 half-life was superior to 24 hr and was not affected by Neat1 knock-down (Figure 2—figure supplements 5–6). All these arguments indicate that the significant decrease of FGF1 IRES activity and of endogenous FGF1 expression observed in Figure 2 does not result from eIF2α phosphorylation or decrease in FGF1 half-life, and probably results from Neat1 depletion. This suggested that Neat1 might regulate FGF1 mRNA translation, directly or indirectly.
 
-## The IRES-containing mRNA is colocalized with Neat1 during hypoxia
+### The IRES-containing mRNA is colocalized with Neat1 during hypoxia
 
 The effect of Neat1 on FGF1 IRES activity suggested an interaction (direct or indirect) between these two RNAs. SmiFISH experiments were performed with two sets of 48 primary probes targeting Neat1 or the bicistronic mRNA, respectively. As a control, we also used a bicistronic construct with a hairpin instead of the IRES. The two secondary probes were coupled to different fluorophores to detect Neat1 and the bicistronic mRNA separately and look for a putative colocalization (Figure 3). Data clearly show that the IRES containing bicistronic mRNA is colocalized with Neat1 and that this colocalization significantly increases during hypoxia, which is not the case for the hairpin control (Figure 3C and D). These data suggested that the IRES-containing mRNA is recruited into paraspeckles during hypoxia.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig3-v2.jpg)
 
-**Figure 3.:** Neat1 in hypoxic HL-1 cells.Cells were transduced with lentivectors carrying bicistronic Lucky Luke constructs with the FGF1 IRES or a hairpin (control), subjected or not to 4 hr hypoxia. SmiFISH experiments were performed. (A) SmiFISH images showing the bicistronic mRNA carrying the FGF1 IRES (green) colocalized with Neat1 RNA (red) in hypoxia condition. Two representative cells are presented. Scale bars are 3 µm for higher panels, 4 µm for lower panesl and 1 µm for zoomed images of colocalized spots. (B) Quantification of colocalized spots per cell (n=30). Unpaired two-tailed Student T-test was performed.
+**Figure 3.:** Cells were transduced with lentivectors carrying bicistronic Lucky Luke constructs with the FGF1 IRES or a hairpin (control), subjected or not to 4 hr hypoxia. SmiFISH experiments were performed. (A) SmiFISH images showing the bicistronic mRNA carrying the FGF1 IRES (green) colocalized with Neat1 RNA (red) in hypoxia condition. Two representative cells are presented. Scale bars are 3 µm for higher panels, 4 µm for lower panesl and 1 µm for zoomed images of colocalized spots. (B) Quantification of colocalized spots per cell (n=30). Unpaired two-tailed Student T-test was performed.
 
-## Paraspeckle proteins P54nrb and PSCP1, but not SFPQ, are ITAFs of the FGF1 IRES
+### Paraspeckle proteins P54nrb and PSCP1, but not SFPQ, are ITAFs of the FGF1 IRES
 
 The correlation between paraspeckle formation and FGF1 IRES activation, together with the probable recruitment of IRES-containing mRNA into paraspeckles during hypoxia, incited us to study the role of other paraspeckle components in the control of IRES activity. Three major paraspeckle proteins were chosen, the DBHS proteins, SFPQ, p54nrb and PSPC1 (Figure 4A). SFPQ and p54nrb have been previously described for their ITAF function (Ainaoui et al., 2015; Cobbold et al., 2008; Lampe et al., 2018; Sharathchandra et al., 2012; Shen et al., 2017). In particular, p54nrb regulates the FGF1 IRES activity during myoblast differentiation (Ainaoui et al., 2015).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig4-v2.jpg)
+
+**Figure 4.:** (A) Schema of paraspeckle and DBHS proteins. (B–D) FGF1 IRES activity upon knock-down of SFPQ (B), P54nrb (C) or PSPC1 (D) in HL-1 cell (Figure 4—figure supplement 1—source data 1) transduced with Lucky Luke bicistronic reporter during normoxia or hypoxia was measured as in Figure 2. Cells were harvested 72 hr after siRNA treatment. The IRES activity values have been normalized to the control siRNA. Histograms correspond to means ± standard deviation of the mean, with a non-parametric Mann-Whitney test with n=9; *p<0.05, ***<0.001. The mean has been calculated with nine cell culture biological replicates, each of them being already the mean of three technical replicates (27 technical replicates in total). Detailed values of biological replicates are presented in Supplementary file 3, Supplementary file 4, Supplementary file 5. (E and F) Capillary Simple Western detection of endogenous FGF1 protein with P54nrb (E) or PSPC1 (F) knock-down. Source data of capillary Simple Western are presented in Figure 4—figure supplement 2 (Figure 4—figure supplement 2—source data 1).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A–B) Capillary Simple Western detection (as described in Figure 2) of p54nrb (A) and PSPC1 (B) proteins using anti-p54nrb and anti-PSPC1 antibodies, respectively, following p54nrb and PSPC1 knock-down using siRNAs. Western detection was performed 72 hr after siRNA treatment. (C–D) SFPQ knock-down was performed in HL-1 cells using siRNA against SFPQ. SFPQ RNA expression was measured by RT-qPCR and normalized to control siRNA (C). One representative experiment is shown with n=2 biological replicates. SFPQ protein expression was visualized by Western Blot using an anti-SFPQ antibody (D). Histograms correspond to means ± standard deviation. Source data of capillary Simple Western are provided (Figure 4—figure supplement 1—source data 1).
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Endogenous FGF1 protein was detected by Capillary Simple Western in conditions of P54nrb or PSPC1 knock-down mentioned in Figure 4—figure supplement 1. The raw data presented correspond to the experiment shown in Figure 4E–F . Source data of capillary Simple Western are provided (Figure 4—figure supplement 2—source data 1).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** FGF1 half-life was determined on HL-1 cells treated with p54nrb siRNA, PSPC1 siRNA or control siRNA, by blocking protein synthesis with cycloheximide at 10 μg/mL, with time-course points at 0 hr, 30 min, 1 hr, 2 hr, 4 hr, 8 hr, 16 hr, and 24 hr. FGF1 protein stability was measured by capillary Western, with normalization to 0 hr time-course point. Source data of capillary Simple Western are provided (Figure 4—figure supplement 3—source data 1).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig4-figsupp4-v2.jpg)
+
+**Figure 4—figure supplement 4.:** p21 half-life was determined on HL-1 cells treated with p54nrb siRNA, PSPC1 siRNA or control siRNA in the same experiment as in that presented in Figure 4—figure supplement 3. p21 protein stability was measured by capillary western, with normalization to 0 hr time-course point. Source data of capillary Simple Western are provided (Figure 4—figure supplement 4—source data 1).
 
 HL-1 cells transduced by the ‘Lucky Luke’ bicistronic construct were transfected with siRNA smartpools targeting each of the three proteins. The knock-down efficiency was checked by capillary Simple Western, classical Western, or RT qPCR (Figure 4—figure supplement 1).
 
 SFPQ knock-down did not affect the IRES activity (Figure 4B, Supplementary file 4). In contrast, we observed a decrease in IRES activity with p54nrb and PSPC1 knock-down, both in normoxia and in hypoxia (Figure 4C–DSupplementary file 4, Supplementary file 5), despite a knock-down efficiency below 50%. p54nrb and PSPC1 knock-down also inhibited the expression of endogenous FGF1 protein (Figure 3E–F, Figure 4—figure supplement 2). FGF1 half-life was not altered by siRNA treatment, indicating a translational control (Figure 4—figure supplements 3–4). These data confirmed the ITAF role of p54nrb in HL-1 cardiomyocyte, and indicated that PSPC1 is also an ITAF of the FGF1 IRES. The ability of three paraspeckle components, Neat1, p54nrb and PSPC1, to regulate the FGF1 IRES activity, together with the colocalization of the bicistronic mRNA with Neat1 observed in Figure 3, led us to the hypothesis that the paraspeckle might be involved in the control of IRES-dependent translation.
 
-## P54nrb interactome in normoxic and hypoxic cardiomyocytes
+### P54nrb interactome in normoxic and hypoxic cardiomyocytes
 
 The moderate effect of p54nrb or PSPC1 depletion on FGF1 IRES activity, possibly due to the poor efficiency of knock-down (>50%), also suggested that other proteins may be involved. Previous data from the literature support the hypothesis that the IRESome is a multi-partner complex. In order to identify other members of this complex, we analysed the p54nrb interactome in HL-1 cell nucleus and cytoplasm using a label-free quantitative mass spectrometry approach. For this purpose, cells were transduced by a lentivector expressing an HA-tagged p54nrb (Figure 5A). After cell fractionation (Figure 5B and Figure 5—figure supplement 1A and B), protein complexes from normoxic and hypoxic cells were immunoprecipitated with anti-HA antibody. Immunoprecipitated interacting proteins (three to four biological replicates for each group) were isolated by SDS-PAGE, in-gel digested with trypsin and analyzed by nano-liquid chromatography-tandem mass spectrometry (nanoLC-MS/MS), leading to the identification and quantification of 2013 proteins (Supplementary file 7). To evaluate p54nrb interaction changes, pairwise comparisons based on MS intensity values were performed for each quantified protein between the four groups, cytoplasmic and nuclear complexes from cells subjected to normoxia or hypoxia (Figure 5C). Enriched proteins were selected based on their significant protein abundance variations between the two compared group (fold-change (FC) >2 and<0.5, and Student t test p<0.05) (see STAR Method for details) (Figure 5D–E and Figure 5—figure supplement 1). Globally, the HA-tag capture revealed an enrichment of hnRNP proteins in nucleus and of ribosomal proteins in the cytoplasm (Figure 5—figure supplement 1C and D). In nucleus P54nrb interacted with itself (endogenous mouse Nono), PSPC1 and SFPQ, as well as with other paraspeckle components: in total P54nrb interaction was identified with 22 proteins among 40 paraspeckle components listed in previous reports (Table 1; Naganuma et al., 2012; Yamamoto et al., 2021). Six of these paraspeckle components exhibit an ITAF function (FUS, hnRNPA1, hnRNPK, hnRNPM, hnRNPR, and SFPQ Figure 5—figure supplement 1, Table 1). Two additional ITAFs interact with p54: hnRNPC and hnRNPI (Godet et al., 2019).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig5-v2.jpg)
+
+**Figure 5.:** (A) Experimental workflow: p54nrb-HA transduced HL-1 cells were subjected to normoxia or hypoxia, then nucleus and cytoplasm fractionation was performed and extracts were immunoprecipitated using anti-HA antibody. Enriched interacting proteins were identified by using a label-free quantitative mass spectrometry approach. (B) Western blot of fractionation experiment of HL-1 cells in normoxia and hypoxia. Histone H3 was used as a nuclear control and GAPDH as a cytoplasm control. The dotted line delineates two different blots of the same fractionation experiment. (C) Schema of the four pairwise comparisons submitted to statistical analysis. (D and E) Volcano plots showing proteins enriched (bold black) and significantly enriched (after elimination of false-positive hits from quantitation of low-intensity signals) in the nucleus for hypoxia (purple) versus normoxia (red) (D) or in the cytoplasm for hypoxia (green) versus normoxia (E). An unpaired bilateral student t-test with equal variance was used. Enrichment significance thresholds are represented by an absolute log2-transformed fold-change (FC) greater than 1 and a -log10-transformed (p-value) greater than 1.3. Details are provided in Supplementary file 7.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A-B) Raw data of the Western blots using nuclear or cytoplasmic extracts of HL-1 cells in normoxia and hypoxia, presented in Figure 5B. (A) Western blot successively blotted with anti-GAPDH, anti-histone H3, and anti-p54nrb antibodies. (B) Western blot successively blotted with anti-GAPDH and anti-PSPC1 antibodies. Size markers are indicated. NT corresponds to total extracts of non-transduced cells.(C-D) Volcano plots showing proteins significantly enriched in the normoxia condition for nucleus (dots in red) versus cytoplasm (dots in orange) (C) or in the hypoxia condition (4 hr) for nucleus (dots in purple) versus cytoplasm (dots in green) (D). The p54nrb bait (endogenous mouse Nono) is indicated in blue. An unpaired bilateral student t-test with equal variance was performed. Enrichment significance thresholds are represented by an absolute log2-transformed fold-change (FC) greater than 1 and a -log10-transformed (p-value) greater than 1.3.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Immunoprecipitation was performed from HL-1 cell nuclear extracts, using either IgG (negative control), or antibody against p54nrb, or antibody against nucleolin. Capillary Simple Western (Jess) was then performed using a-p54nrb antibody. Data show an enrichment of p54 using anti-nucleolin antibody. Interestingly, a smaller isoform of p54 is efficiently co-immunoprecipitated, described in a previous report. Source data of capillary Simple Western are provided (Pavao et al., 2001; Figure 5—figure supplement 2—source data 1).
+
+**Table 1.**
+ The p54 interactome includes 22 among 40 proteins described as paraspeckle components.The paraspeckle components listed in the reports by Naganuma et al., 2012 and by Yamamoto et al., 2021 is presented here with their ITAF function and their presence in the p54nrb interactome. Their belonging to class I, II, or III of the paraspeckle proteins is indicated. Class I proteins are essential for paraspeckle formation.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Alternative name</th>
+      <th>Class</th>
+      <th>ITAF</th>
+      <th>Presence in p54nrb MS-IP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ASXL1</td>
+      <td>MDS/BOPS</td>
+      <td>I</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>CELF6</td>
+      <td></td>
+      <td>n/d</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>CIRBP</td>
+      <td></td>
+      <td>IIIB</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>CPSF6</td>
+      <td></td>
+      <td>IIIA</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>CPSF7</td>
+      <td></td>
+      <td>II</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>DAZAP1</td>
+      <td></td>
+      <td>IB</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>DLX3</td>
+      <td></td>
+      <td>n/d</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>EWSR1</td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>FAM113A</td>
+      <td></td>
+      <td>II</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>FAM98A</td>
+      <td></td>
+      <td>II</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>FIGN</td>
+      <td></td>
+      <td>II</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>FUS</td>
+      <td></td>
+      <td>IB</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>FUSPI1</td>
+      <td>SRSF10</td>
+      <td>II</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>hnRNPA1</td>
+      <td></td>
+      <td>II</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>hnRNPA1L2</td>
+      <td></td>
+      <td>n/d</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>hnRNPF</td>
+      <td></td>
+      <td>n/d</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>hnRNPH1</td>
+      <td></td>
+      <td>n/d</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>hnRNPH3</td>
+      <td></td>
+      <td>IB</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>hnRNPK</td>
+      <td></td>
+      <td>IA</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>hnRNPM</td>
+      <td></td>
+      <td>n/d</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>hnRNPR</td>
+      <td></td>
+      <td>II</td>
+      <td>Yes</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>hnRNPUL1</td>
+      <td></td>
+      <td>II</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>MEX3C</td>
+      <td></td>
+      <td>n/d</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>NUDT21</td>
+      <td></td>
+      <td>IIIA</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>p54nrb</td>
+      <td>NONO</td>
+      <td>IA</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>PSPC1</td>
+      <td></td>
+      <td>IIIB</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>RBM12</td>
+      <td></td>
+      <td>II</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>RBM14</td>
+      <td></td>
+      <td>IA</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>RBM3</td>
+      <td></td>
+      <td>IIIB</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>RBM4B</td>
+      <td></td>
+      <td>IIIB</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>RBM7</td>
+      <td></td>
+      <td>IIIB</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>RBMX</td>
+      <td></td>
+      <td>IIIB</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>RUNX3</td>
+      <td></td>
+      <td>IIIB</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>SFPQ</td>
+      <td>PSF</td>
+      <td>IA</td>
+      <td>Yes</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>SS18L1</td>
+      <td></td>
+      <td>n/d</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>SWI/SNF</td>
+      <td></td>
+      <td>IB</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>TAF15</td>
+      <td></td>
+      <td></td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>TDP-43</td>
+      <td></td>
+      <td>II</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>UBAP2L</td>
+      <td></td>
+      <td>IIIA</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>ZNF335</td>
+      <td>TARDBP</td>
+      <td>IIIB</td>
+      <td>No</td>
+      <td>Yes</td>
+    </tr>
+  </tbody>
+</table>
 
 As regards cytoplasmic proteins, we identified RPS25, a ribosomal protein previously described as an ITAF for many IRESs (Figure 5—figure supplement 1A; Hertz et al., 2013). Interestingly, p54nrb also interacted with RPS5, RPS18 and RPS19, and other RPs, mainly from the small ribosomal subunit.
 
@@ -98,19 +476,27 @@ Only few proteins were significantly enriched when comparing hypoxic versus norm
 
 These data showed that p54nrb interacts in normoxia and hypoxia with several ITAFs known as paraspeckle components, suggesting that the paraspeckle might be involved in the formation of the IRESome. Its interaction with numerous RPs also suggests that it interacts with the small ribosomal subunit in the cytoplasm.
 
-## p54nrb-interacting proteins, nucleolin and RPS2, control the FGF1 IRES activity
+### p54nrb-interacting proteins, nucleolin and RPS2, control the FGF1 IRES activity
 
 The three candidates identified in nuclear extracts of hypoxic cardiomyocytes, hnRNPM, nucleolin and RPS2 represent potential candidates as ITAFs of the FGF1 IRES in hypoxia. Among them, hnRNPM has been previously described as an ITAF during myoblast differentiation while nucleolin is an ITAF of several IRESs including p53 and VEGFD IRESs but has never been described for FGF1 IRES (Ainaoui et al., 2015; Chen et al., 2012; Godet et al., 2019; Morfoisse et al., 2016; Peddigari et al., 2013; Takagi et al., 2005).
 
 HL-1 cardiomyocytes transduced by the Lucky Luke lentivector with the FGF1 IRES were transfected as above with siRNA smartpools targeting RPS2, hnRNPM or nucleolin (Figure 6). The knock-down was effective, but only 50–60%, for the three mRNAs (Figure 6A–D). This moderate knock-down was probably due to a weak transfection efficiency of HL-1 cells with the siRNAs. Nevertheless, we observed a decrease in IRES activity upon depletion of RPS2 and nucleolin, significant in normoxia but with the same trend in hypoxia while no effect was observed upon hnRNPM depletion (Figure 6E, Supplementary file 4). Nucleolin depletion inhibited endogenous FGF1 protein expression (Figure 6F, Figure 6—figure supplement 1). These data suggest that nucleolin and RPS2 are new ITAFs of the FGF1 IRES. Their nuclear localization and interaction with p54nrb indicate that they could be components of the paraspeckle. RPS2 has never been described as an ITAF before the present study.
 
-## Neat1 is the key activator of (lymph)angiogenic and cardioprotective factor mRNA IRESs
+![Figure 6.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig6-v2.jpg)
+
+**Figure 6.:** (A–C) Quantification of RPS2 (A), hnRNPM (B) and nucleolin (C) RNA expression in HL-1 cells transfected with siRNAs against Rps2, hnRNPM or nucleolin mRNA, respectively. RNA expression was measured by RT-qPCR and normalized to control siRNA. One representative experiment is shown with n=3 biological replicates. Student two-tailed t-test was performed with n=3 or Mann-Whitney test with n=9; *p<0.05, **p<0.01, ***<0.001, ****p<0.0001. (D) Capillary Simple Western of nucleolin following nucleolin knock-down. The full raw unedited gel is provided in Figure 6—figure supplement 1A (Figure 6—figure supplement 1—source data 1). (E) FGF1 IRES activity with knock-down by siRNA interference of candidate ITAF nucleolin in HL-1 in normoxia or hypoxia 1% O2 was performed as in Figure 2. The IRES activity values have been normalized to the control siRNA. Histograms correspond to means ± standard deviation of the mean, with a non-parametric Mann-Whitney test *p<0.05, **p<0.01. The mean has been calculated with nine cell culture biological replicates, each of them being already the mean of three technical replicates (27 technical replicates in total but the M-W test was performed with n=9). Detailed values of biological replicates are presented in Supplementary file 6. (F) Capillary Simple Western of endogenous FGF1 following nucleolin knock-down. Histograms correspond to means ± standard deviation. The source data or capillary Simple Western are provided in Figure 1—figure supplement 1B (Figure 6—figure supplement 1—source data 1).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Knock-down of nucleolin was achieved in HL-1 cells using siRNA against nucleolin mRNA. Capillary Simple Western were performed using anti-nucleolin (A) of anti-FGF1 antibody (B). The source data of the capillary Simple Western are provided (Figure 6—figure supplement 1—source data 1).
+
+### Neat1 is the key activator of (lymph)angiogenic and cardioprotective factor mRNA IRESs
 
 We have shown above that three main paraspeckle components, Neat1, p54nrb and PSPC1, control the FGF1 IRES activity in HL-1 cardiomyocytes. To determine if the role of paraspeckle in translational control may be generalized to other IRESs, we used Lucky Luke lentivectors containing a set of other IRESs from FGF2, VEGFA, VEGFC, VEGFD, or MYC genes and from EMCV virus, between the two luciferase genes (Figure 7). The VEGFA mRNA contains two IRESs called here VEGFAa and VEGFAb IRESs (Huez et al., 1998).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig7-v2.jpg)
 
-**Figure 7.:** Neat1 is the key activator of (lymph)angiogenic and cardioprotective factor mRNA IRESs.(A–C) HL-1 subjected to normoxia or 1% O2 hypoxia were transduced by Lucky Luke bicistronic lentivectors with FGF1, FGF2, VEGFAa, VEGFAb, VEGFC, VEGFD, IGF1R, MYC, or EMCV IRES, then the knock-down of p54nrb(A) PCPC1 (B) and Neat1 (C) was performed as in Figure 2 and Figure 4. IRES activities were measured and normalized to activities in normoxia. IRES activity in normoxia is represented by a dotted line at 1. Histograms correspond to means ± standard deviation, and Mann-Whitney test with n=9 or n=12 for FGF1 IRES; *p<0.05, **p<0.01, ***<0.001, ****p<0.0001. For each IRES the mean has been calculated with nine cell culture biological replicates, each of them being already the mean of three technical replicates (27 technical replicates in total). Detailed values of biological replicates are presented in Supplementary file 3, Supplementary file 5, Supplementary file 6. (D) Schema depicting groups of IRESs regulated by Neat1, PSPC1, or P54nrb in normoxia or hypoxia.
+**Figure 7.:** (A–C) HL-1 subjected to normoxia or 1% O2 hypoxia were transduced by Lucky Luke bicistronic lentivectors with FGF1, FGF2, VEGFAa, VEGFAb, VEGFC, VEGFD, IGF1R, MYC, or EMCV IRES, then the knock-down of p54nrb(A) PCPC1 (B) and Neat1 (C) was performed as in Figure 2 and Figure 4. IRES activities were measured and normalized to activities in normoxia. IRES activity in normoxia is represented by a dotted line at 1. Histograms correspond to means ± standard deviation, and Mann-Whitney test with n=9 or n=12 for FGF1 IRES; *p<0.05, **p<0.01, ***<0.001, ****p<0.0001. For each IRES the mean has been calculated with nine cell culture biological replicates, each of them being already the mean of three technical replicates (27 technical replicates in total). Detailed values of biological replicates are presented in Supplementary file 3, Supplementary file 5, Supplementary file 6. (D) Schema depicting groups of IRESs regulated by Neat1, PSPC1, or P54nrb in normoxia or hypoxia.
 
 HL-1 cells were transduced by the different lentivectors and transfected either by the siRNA smartpools to deplete p54nrb and PSPC1, or by the gapmer pool to deplete Neat1. The data revealed that p54nrb or PSPC1 depletion affected several IRESs but not all (Figure 7A–BSupplementary file 5, Supplementary file 6), whereas Neat1 depletion clearly affected all cellular IRESs but not the viral EMCV IRES (Figure 7C, Supplementary file 3).
 
@@ -118,9 +504,21 @@ These data allowed us to group the IRESs in different ‘regulons’ in normoxia
 
 In conclusion, these data suggest that IRESome composition varies for each IRES and with the normoxic or hypoxic conditions. The long non-coding RNA Neat1 appears as the key ITAF for the activation of all the cellular IRESs, suggesting a crucial role of the paraspeckle in IRESome formation and in the control of IRES-dependent translation, at least for cellular IRESs.
 
-## Neat1 isoforms impact the recruitment into polysomes of mRNAs involved in the stress response
+### Neat1 isoforms impact the recruitment into polysomes of mRNAs involved in the stress response
 
 The role of Neat1 on translatome was then studied using a Fluidigm Deltagene PCR array targeting 96 genes coding IRES-containing mRNAs, ITAFs or proteins involved in angiogenesis and cardioprotection (Supplementary file 2E). HL-1 cells were treated with gapmers targeting the two Neat1 isoforms or only Neat1_2 before analyzing the recruitment of mRNAs into polysomes compared to the control gapmer. Recruitment into polysomes decreased for 49% of IRES-containing mRNAs following Neat1 invalidation, and increased for the other 51%. In contrast this decrease concerned 95% of these mRNAs after Neat1_2 knock-down (Figure 8A and B, Supplementary file 8). In contrast, the global level of translation was not affected (Figure 8—figure supplement 1). As eIF2α phosphorylation was slightly increased in these conditions (Figure 2—figure supplement 4), we cannot completely rule out that it could affect the expression of certain mRNAs, despite the absence of inhibition of global translation. However, the insensitivity of many IRESs to eIF2α phosphorylation shown previously suggests that the present data result from an effect of Neat1, particularly on translation of IRES-containing mRNAs, while the two isoforms may have distinct effects (Hantelys et al., 2019). Interestingly, a similar effect was observed for the other genes tested in the PCR array: Neat1 or Neat1_2 knock-down inhibited translation of ITAF-coding genes by 71% or 87%, respectively (Figure 8C and D, Supplementary file 8). This inhibition concerned 57% or 89% of the remaining genes involved in angiogenesis and cardioprotection for Neat1 or Neat1_2 knock-down, respectively (Figure 8—figure supplement 2). In total, 92% of the genes of the PCR array were less recruited into polysomes after Neat1_2 knock-down, versus only 56% after Neat1 knock-down. These data strongly suggest that Neat1_2 might be a translational activator of families of genes involved in the response to hypoxic stress in cardiomyocytes.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig8-v2.jpg)
+
+**Figure 8.:** HL-1 cardiomyocytes were transfected with gapmer Neat1, Neat1_2, or control. Polysomes were purified on sucrose gradient as described in Star Methods. The polysome profile is presented in Figure 8—figure supplement 1. RNAs were purified from cytoplasmic extracts and from pooled polysomal fractions and analyzed on a Fluidigm deltagene PCR array from two biologicals replicates (cell culture dishes and cDNAs), each of them measured in three technical replicates (PCR reactions) (Supplementary file 8). IRES-containing mRNAs (A–B) and ITAF mRNA levels in polysomes (C–D) polysomal RNA/ total RNA were analyzed. Relative quantification (RQ) of mRNA level was calculated using the 2– ΔΔCT method with normalization to GAPDH mRNA and to HL-1 tranfected by gapmer control, and is shown as fold change of repression (red) or induction (blue).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** In order to isolate translated mRNAs, polysomes from transfected HL-1 cardiomyocytes were purified on a sucrose gradient, as described in Star Methods. Polysomal profiles of HL-1 cardiomyocytes transfected by gapmer Neat1 (A) or Neat1_2 (B) was analyzed and compared to gapmer control. The P/M ratio (polysome/monosome) (C) was determined by delimiting the 80 S and polysome peaks, taking the lowest plateau values between each peak and calculating the area under the curve (AUC). Then the sum of area values of the nine polysome peaks was divided by the area of the 80 S peak.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/69162/elife-69162-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** HL-1 cardiomyocytes were transfected with gapmer Neat1, Neat1-2, or control. Polysomes were purified on sucrose gradient as described in Star Methods. Polysome profile is presented in Figure 8—figure supplement 1. RNAs were purified from cytoplasmic extracts and from pooled polysomal fractions and analyzed on a Fluidigm deltagene PCR array from two biologicals replicates (cell culture dishes and cDNAs), each of them measured in three technical replicates (PCR reactions) (Supplementary file 8). Angiogenesis and cardioprotection gene mRNA levels in polysomes (polysomal RNA/ total RNA) were analyzed after knock-down of Neat1 (A) or Neat1_2 (B). Relative quantification (RQ) of mRNA levels was calculated using the 2–ΔΔCT method with normalization to GAPDH mRNA and to HL-1 tranfected by gapmer control, and is shown as fold change of repression (red) or induction (blue).
 
 ## Discussion
 
@@ -150,122 +548,874 @@ Neat1, as a stress-induced lncRNA, plays a role in many pathologies including ca
 
 ## Materials and methods
 
-## Lead contact and materials availability
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P54nrb(rabbit polyclonal)</td>
+      <td>Santacruz</td>
+      <td>Sc-67016</td>
+      <td>Dilution 1:200(capillary Western)Dilution 1:400(classical Western)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PSPC1(rabbit polyclonal)</td>
+      <td>bethyl laboratory</td>
+      <td>A303-205A</td>
+      <td>Dilution 1:100(capillary Western)Dilution 1:1000(classical Western)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SFPQ(mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Ab11825</td>
+      <td>Dilution 1:100</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FGF1(rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab207321</td>
+      <td>Dilution 1:25</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-nucleolin(rabbit polyclonal)</td>
+      <td>Novus biological</td>
+      <td>NB600-241</td>
+      <td>Dilution 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Histone H3(rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>4499</td>
+      <td>Dilution1 : 10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH(mouse monoclonal)</td>
+      <td>SantaCruz</td>
+      <td>Sc-32233</td>
+      <td>Dilution 1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mousetotal IgG(mouse polyclonal)</td>
+      <td>Sigma</td>
+      <td>I5381</td>
+      <td>2 mg/mL</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-eIF2α(rabbit polyclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>9721</td>
+      <td>Dilution 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-phospho-eIF2α(mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>2103</td>
+      <td>Dilution 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-p21(mouse monoclonal)</td>
+      <td>Santacruz</td>
+      <td>Sc-6246</td>
+      <td>Dilution 1:50</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA(mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>H9558/H3663</td>
+      <td>2.4 mg/mL(72 μg)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit-peroxidase conjugate(donkey polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>711-035-152</td>
+      <td>Dilution 1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse-peroxidase conjugate(rabbit polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>715-035-150</td>
+      <td>Dilution 1:10000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit detection module</td>
+      <td>Protein Simple</td>
+      <td>DM-001</td>
+      <td>10 μl</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse detection module</td>
+      <td>Protein Simple</td>
+      <td>DM-002</td>
+      <td>10 μl</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Top10</td>
+      <td>InVitrogen</td>
+      <td>C404003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>Strataclone</td>
+      <td>Agilent technologies</td>
+      <td>200185</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TRI-Reagent</td>
+      <td>MRC Inc</td>
+      <td>TR118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isopropanol</td>
+      <td>Sigma-Aldrich</td>
+      <td>33539</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethanol</td>
+      <td>Sigma-Aldrich</td>
+      <td>32221</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Digitonin</td>
+      <td>Sigma-Aldrich</td>
+      <td>D141</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NP40 (IGEPAL 630)</td>
+      <td>Sigma-Aldrich</td>
+      <td>I8896</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EDTA</td>
+      <td>Euromedex</td>
+      <td>EU0084-A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Proteinase inhibitor cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td>P2714</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNAse inhibitor</td>
+      <td>AppliedBiosystem</td>
+      <td>N8080119</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formamide</td>
+      <td>Invitrogen</td>
+      <td>15515026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Paraformaldehyde 16%</td>
+      <td>Electron Microscopy Science</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SSC saline-sodium citrate buffer</td>
+      <td>Euromedex</td>
+      <td>EU0300-C</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RIPA</td>
+      <td>BioBasic</td>
+      <td>RB4476</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HA peptides</td>
+      <td>Sigma-Aldrich</td>
+      <td>I2149</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Premix Ex Taq II</td>
+      <td>Takara</td>
+      <td>RR820B</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EZ view red protein G beads</td>
+      <td>Sigma</td>
+      <td>E3403</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DG32 cartridge</td>
+      <td>Bio-Rad</td>
+      <td>#1864108</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QX200 ddPCR EvaGreen Supermix</td>
+      <td>Bio-Rad</td>
+      <td>1864034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High capacity cDNA Reverse transcription kit</td>
+      <td>Thermofisher</td>
+      <td>4368814</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NucleoBond Xtra Maxi kits</td>
+      <td>Macherey-Nagel</td>
+      <td>740414.10</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>EZ-10 Spin Column Plasmid DNA Miniprep Kit</td>
+      <td>BioBasic</td>
+      <td>BS413</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>StrataClone Blunt PCR Cloning Kit</td>
+      <td>Agilent</td>
+      <td>240207</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Dual-Luciferase Reporter Assay system</td>
+      <td>Promega</td>
+      <td>E1980</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Jess or Wes Separation Module</td>
+      <td>ProteinSimple</td>
+      <td>SM-SW004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fluorescent 5 x Master Mix 1</td>
+      <td>ProteinSimple</td>
+      <td>PS-FL01-8</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>293 FT</td>
+      <td>Invitrogen</td>
+      <td>R700-07</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo-sapiens)</td>
+      <td>HT1080</td>
+      <td>ATCC</td>
+      <td>CCL-121</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Mus musculus)</td>
+      <td>HL-1</td>
+      <td>(Claycomb et al., 1998) / Sigma-Aldrich</td>
+      <td>SCC065</td>
+      <td>Beating cardiomyocytes (Video 1)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NEAT1</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>FGF1</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NEAT1_2</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HPRT</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RPL11</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>18 S</td>
+      <td>Hantelys et al., 2019</td>
+      <td>PCR primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SFPQ</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P54nrb</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PSPC1</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NUCLEOLIN</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>RPS2</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HNRNPM</td>
+      <td>Hantelys et al., 2019</td>
+      <td>PCR primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Fluidigm deltagene probes</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Neat1 and Neat1_2 FISH probes</td>
+      <td>This paper</td>
+      <td>Hybridization probes</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SmiFISH secondary probes (FLAP X-Cy3 and FLAP-Y-Cy5)</td>
+      <td>This paper</td>
+      <td>Hybridization probes</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SmiFISH Neat1 primary probes</td>
+      <td>This paper</td>
+      <td>Hybridization probes</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SmiFISH bicistronic Lucky Luke mRNA primary probes</td>
+      <td>This paper</td>
+      <td>Hybridization probes</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HA-p54nrb</td>
+      <td>This paper</td>
+      <td>Cloning primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>miR-Neat1-G2</td>
+      <td>This paper</td>
+      <td>Cloning primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>miR-Neat1_2-G6</td>
+      <td>This paper</td>
+      <td>Cloning primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>miR-Neat1_2-G7</td>
+      <td>This paper</td>
+      <td>Cloning primers</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P54nrb mouse</td>
+      <td>DharmaconE-048587-01-0005</td>
+      <td>siRNA smartpool</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>PSPC1 mouse</td>
+      <td>DharmaconE-049216-00-0005</td>
+      <td>siRNA smartpool</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>SFPQ mouse</td>
+      <td>DharmaconE-044760-00-0005</td>
+      <td>siRNA smartpool</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Nucleolin mouse</td>
+      <td>DharmaconE-059054-00-0005</td>
+      <td>siRNA smartpool</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Rps2 mouse</td>
+      <td>DharmaconE-049205-00-0005</td>
+      <td>siRNA smartpool</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>hnRNPM mouse</td>
+      <td>DharmaconE-044465-00-0005</td>
+      <td>siRNA smartpool</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA non-targeting control</td>
+      <td>DharmaconD-001910-10-20</td>
+      <td>siRNA</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NEAT1 A</td>
+      <td>LG00218175</td>
+      <td>LNA gapmer</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NEAT1 B</td>
+      <td>LG00218176</td>
+      <td>LNA gapmer</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NEAT1 C</td>
+      <td>LG00218177</td>
+      <td>LNA gapmer</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NEAT1 D</td>
+      <td>LG00218178</td>
+      <td>LNA gapmer</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NEAT1_2</td>
+      <td>LG00234548</td>
+      <td>LNA gapmer</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NEGATIVE CONTROL</td>
+      <td>LG00000002</td>
+      <td>LNA gapmer</td>
+      <td>Supplementary file 2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CRHL+</td>
+      <td>Sequence available on Dryad, (2)</td>
+      <td>SIN lentivector plasmid</td>
+      <td>doi:10.5061/dryad.nvx0k6dq7</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CRF1AL+</td>
+      <td>Sequence available on Dryad, (17; 26)</td>
+      <td>SIN lentivector plasmid</td>
+      <td>doi:10.5061/dryad.nvx0k6dq7</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CRFL+</td>
+      <td>Sequence available on Dryad, (25)</td>
+      <td>SIN lentivector plasmid</td>
+      <td>doi:10.5061/dryad.nvx0k6dq7</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CRVAaL+</td>
+      <td>Sequence available on Dryad, (16)</td>
+      <td>SIN lentivector plasmid</td>
+      <td>doi:10.5061/dryad.nvx0k6dq7</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CRVAbL+</td>
+      <td>Sequence available on Dryad, (16)</td>
+      <td>SIN lentivector plasmid</td>
+      <td>doi:10.5061/dryad.nvx0k6dq7</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CRhVCL+</td>
+      <td>Sequence available on Dryad, (2)</td>
+      <td>SIN lentivector plasmid</td>
+      <td>doi:10.5061/dryad.nvx0k6dq7</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CRhVDL+</td>
+      <td>Sequence available on Dryad, (13)</td>
+      <td>SIN lentivector plasmid</td>
+      <td>doi:10.5061/dryad.nvx0k6dq7</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CRMP2L+</td>
+      <td>Sequence available on Dryad, (42)</td>
+      <td>SIN lentivector plasmid</td>
+      <td>doi:10.5061/dryad.nvx0k6dq7</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CREL+</td>
+      <td>Sequence available on Dryad, (25)</td>
+      <td>SIN lentivector plasmid</td>
+      <td>doi:10.5061/dryad.nvx0k6dq7</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-CRIGL+</td>
+      <td>This paper</td>
+      <td>SIN lentivector plasmid</td>
+      <td>doi:10.5061/dryad.m0cfxpp75</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-dR8.91</td>
+      <td>Addgene</td>
+      <td>Plasmid for lentivector production</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-VSV-G</td>
+      <td>Addgene</td>
+      <td>Plasmid for lentivector production</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-Neat1-miR-G2</td>
+      <td>This paper</td>
+      <td>SIN lentivector plasmid</td>
+      <td>doi:10.5061/dryad.m0cfxpp75</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-Neat1_2-miR-G6</td>
+      <td>This paper</td>
+      <td>SIN lentivector plasmid</td>
+      <td>doi:10.5061/dryad.m0cfxpp75</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-Neat1_2-miR-G7</td>
+      <td>This paper</td>
+      <td>SIN lentivector plasmid</td>
+      <td>doi:10.5061/dryad.m0cfxpp75</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pTRIP-HA2-P54nrb</td>
+      <td>This paper</td>
+      <td>SIN lentivector plasmid</td>
+      <td>doi:10.5061/dryad.m0cfxpp75</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism 6</td>
+      <td>Graphpad</td>
+      <td>Software to perform statistics</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Excel 2007</td>
+      <td>Microsoft office</td>
+      <td>Software to perfom graphs and tables</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI</td>
+      <td>FIJI</td>
+      <td>Software for image analysis</td>
+      <td>https://fiji.sc/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>ImageJ/NIH</td>
+      <td>Software for image analysis</td>
+      <td>https://imagej.nih.gov/ij/download.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen black/Blue edition</td>
+      <td>Zeiss</td>
+      <td>Microscope software</td>
+      <td>https://www.zeiss.fr/microscopie/produits/microscope-software/zen-lite.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QuantStudio</td>
+      <td>AppliedBiosystems</td>
+      <td>Quantification software</td>
+      <td>https://www.thermofisher.com/fr/fr/home/global/forms/life-science/quantstudio-3-5-software.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>QuantaSoft 1.7.4</td>
+      <td>Bio-Rad</td>
+      <td>Western blot quantification software</td>
+      <td>https://www.bio-rad.com/fr-fr/sku/1864011-quantasoft-software-regulatory-edition?ID=1864011</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Microwin 2000</td>
+      <td>Berthold</td>
+      <td>Microplaque testing software</td>
+      <td>https://fr.freedownloadmanager.org/Windows-PC/MikroWin-2000.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>LSM780 Zeiss confocal microscope</td>
+      <td>Zeiss</td>
+      <td>Microscope software</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Compass for SW</td>
+      <td>Protein Simple</td>
+      <td>Capillary Western software</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+### Lead contact and materials availability
 
 Further information and requests for resources and reagents should be directed to and will be fulfilled by the Lead Contact, Anne-Catherine Prats (anne-catherine.prats@inserm.fr).
 
-## Experimental model and subject details
+### Experimental model and subject details
 
-## Cell lines
+#### Cell lines
 
 Female human embryonic kidney cells HEK-293FT (Invitrogen R700-07) and male human fibrosarcoma HT1080 cells (ATCC CCL-121) were cultured in DMEM-GlutaMAX +Pyruvate (Life Technologies SAS, Saint-Aubin, France), supplemented with 10% fetal bovine serum (FBS), and MEM essential and non-essential amino acids (Sigma-Aldrich). They were characterized by the supplier, then by their capacity to be transfected efficiently to produce and titrate lentivectors. Female mouse atrial HL-1 cardiomyocytes (Sigma-Aldrich SCC065) were extensively characterized by the supplier and by ourselves, by their beating phenotype (Video 1). They were cultured in Claycomb medium containing 10% FBS, Penicillin/Streptomycin (100 U/mL-100μg/mL), 0.1 mM norepinephrine, and 2 mM L-Glutamine. Cell culture flasks were precoated with a solution of 0.5% fibronectin and 0.02% gelatin for 1 hr overnight at 37 °C (Sigma-Aldrich). To keep HL-1 phenotype, cell culture was maintained as previously described (Claycomb et al., 1998). All cells were cultured in a humidified chamber at 37 °C and 5% CO2. When subjected to hypoxia, cells were incubated at 37 °C under 1% O2. All cell types were tested negative for mycoplasma contamination every three months with the MycoAlert Mycoplasma Detection Kit (Lonza).
 
-## Bacterial strains
+#### Bacterial strains
 
 These cells were stored at –80 °C and grown in LB medium at 37 °C. Top10 cells were used for plasmid amplification of pTRIP lentivector. Strataclone cells were used for recombination and amplification of PCR product into pSC-B-amp/kan plasmid.
 
-## Method details
+### Method details
 
-## Cell transfection
+#### Cell transfection
 
 siRNA treatment on transduced cells was performed 72 hr after transduction (and after one cell passage) in 24-well plates for reporter activity assay or 12 well plates for gene expression experiments. HL-1 were transfected by siRNAs as follows: one day after being plated, cells were transfected with 10 nM of small interference RNAs from Dharmacon Acell SMARTpool targeting P54nrb, PSPC1, SFPQ, hnRNPM, Nucleolin, RPS2, or non-targeting siRNA control (siControl), using INTERFERin (Polyplus Transfection) according to the manufacturer’s recommendations, in DMEM-GlutaMAX +Pyruvate media without penicillin-streptomycin. The media was changed 24 hr after transfection and the cells were incubated 72 hr for the time of transfection at 37 °C with siRNA. For Neat1 knock-down, HL-1 cells were transduced with a pool of 4 gapmers (Qiagen) at 40 nM (10 nM each) and incubated 48 hr after transfection, proceeded essentially as described above (siRNA and gapmer sequences are provided in Supplementary file 2).
 
-## Cell transduction
+#### Cell transduction
 
 For lentivector transduction, HL-1 cardiomyocytes were plated into a T25 flask and transduced overnight in 2.5 mL of transduction medium (OptiMEM-GlutaMAX, Life Technologies SAS) containing 5 μg/mL protamine sulfate in the presence of lentivectors (MOI 2). HL-1 cells were transduced with an 80–90% efficiency in the mean.
 
-## Lentivector construction
+#### Lentivector construction
 
 Bicistronic lentivectors coding for the renilla luciferase (LucR) and the stabilized firefly luciferase Luc+ (called LucF in the text) were constructed from the dual luciferase lentivectors described previously, which contained Luc2CP (Morfoisse et al., 2014; Morfoisse et al., 2016). The LucR gene used here is a modified version of LucR where all the predicted splice donor sites have been mutated. The cDNA sequences of the human FGF1, –2, VEGFA, -C, -D, MYC and EMCV IRESs were introduced between the first (LucR) and the second cistron (LucF) (Giraud et al., 2001; Nanbru et al., 1997; Prats et al., 2013; Vagner et al., 1995). IRES sequence sizes are: 430 nt (FGF1), 480 nt (FGF2), 302 nt (VEGFAa), 485 nt (VEGFAb), 419 nt (VEGFC), 507 nt (VEGFD), 363 nt (c-MYC), 640 nt (EMCV), 973 nt (rat IGF1R) (Huez et al., 1998; Martineau et al., 2004; Morfoisse et al., 2014; Morfoisse et al., 2016; Nanbru et al., 1997; Vagner et al., 1995). The two IRESs of the VEGFA mRNA have been used and are called VEGFAa and VEGFAb, respectively (Huez et al., 1998). The hairpin negative control contains a 63 nt long palindromic sequence cloned between LucR and LucF genes (Hantelys et al., 2019). This control has been successfully validated in previous studies (Créancier et al., 2000; Morfoisse et al., 2014). The expression cassettes were inserted into the SIN lentivector pTRIP-DU3-CMV-MCS vector described previously (Prats et al., 2013). All cassettes are under the control of the cytomegalovirus (CMV) promoter. The lentivectors coding artificial miRNAs miR-Neat1 and miR-Neat1_2 were constructed by inserting double-stranded oligonucleotides targeting Neat1 or Neat1_2, according to a protocol adapted from the BLOCK-iT technology of Life Technologies (sequences provided in Supplementary file 2). The lentivector coding HA-p54nrb was obtained by amplifying the p54 cDNA by PCR with a forward primer containing the sequence of two HA motifs. The resulting fragment was cloned into the pTRIP vector. Plasmid construction and amplification were performed in the bacteria strain TOP10 (Thermofisher Scientific, Illkirch Graffenstaden, France). Vector sequences are available on Dryad (doi:10.5061/dryad.nvx0k6dq7 or doi:10.5061/dryad.m0cfxpp75).
 
-## Lentivector production
+#### Lentivector production
 
 Lentivector particles were produced using the CaCl2 method based by tri-transfection with the plasmids pCMV-dR8.91 and pCMV-VSVG, CaCl2 and Hepes Buffered Saline (Sigma-Aldrich, Saint-Quentin-Fallavier, France), into HEK-293FT cells. Viral supernatants were harvested 48 hr after transfection, passed through 0.45 μm PVDF filters (Dominique Dutscher SAS, Brumath, France), and stored in aliquots at –80 °C until use. Viral production titers were assessed on HT1080 cells with serial dilutions of a lentivector expressing GFP and scored for green fluorescent protein (GFP) expression by flow cytometry analysis on a BD FACSVerse (BD Biosciences, Le Pont de Claix, France).
 
-## Reporter activity assay
+#### Reporter activity assay
 
 For reporter lentivectors, luciferase activities were performed in vitro and in vivo were performed using Dual-Luciferase Reporter Assay (Promega, Charbonnières-Les-Bains, France). Briefly, proteins from HL-1 cells were extracted with Passive Lysis Buffer (Promega France). Bioluminescence was quantified with a luminometer (Centro LB960, Berthold, Thoiry, France) from 9 to 12 biological replicates and with three technical replicates for each sample in the analysis plate.
 
-## FISH
+#### FISH
 
 HL-1 cells were cultured in 12-well plates on fibronectin-gelatin coated 15 mm coverglass 1.5 thickness (Menzel-Gläser). FISH probes were produced and purchased from Sigma-Aldrich, and delivered HPLC purified at 50 nmol. The 3/2 probes used per target (Neat1 and Neat1_2 isoform respectively) are between 38 and 40 mer long and are conjugated to one Cy3 through 5' amino acid modifications (see Supplementary file 2 for sequences).
 
 FISH was performed as previously described (http://www.singerlab.org/protocols). Briefly, cells were fixed with 4% paraformaldehyde (electron microscopy science), rinsed twice, and permeabilized overnight in 70% ETOH. Then cells were pre-hybridized in a 15% formamide/2 X SSC buffer at room temperature. The hybridization reaction was performed overnight at 37 °C with a Mix of 2XSSC, 0.5 mg/mL yeast tRNA, 15% formamide, 10% dextran sulfate, and 10 ng of mixed probes. Then the coverslip was rinsed two times 10 min in 2 X SSC and 1XSSC for 10 min, before mounting on Moviol mounting medium supplemented with DAPI. Three-dimensional image stacks were captured on LSM780 Zeiss confocal microscope, camera lens x63 with Z acquisition of 0.45 μM, and Zen software (Zeiss).
 
-## SmiFISH
+#### SmiFISH
 
 A set of target-specific primary probes was produced and purchased from Integrated DNA Technologies (IDT). Each probe carried an additional 28 nt-long sequence ‘FLAP’ which is not represented in either mouse or human genomes. The primary probes against bicistronic mRNA were complementary to the fluorescent secondary probe FLAP-X, and the primary probes Neat1 were complementary to the fluorescent secondary probe FLAP-Y. The two secondary probes FLAP-X and FLAP-Y were also from IDT, conjugated to fluorophores Cy3 and Cy5, respectively. All probe sequences are presented in Supplementary file 2. SmiFISH was performed as previously described (Tsanov et al., 2016). Cells were grown to 80% confluence in six-well plates and subjected or not to 4 hr of hypoxia. Cells were fixed with 4% paraformaldehyde for 20 min (electron microscopy science) at room temperature, rinsed twice and permeabilized overnight in 70% ETOH. Cy3 and Cy5-labeled fluorescent FLAPs were pre-annealed to primary probes prior to in situ hybridization. Then cells were pre-hybridized with probes (40 pmol) in a 15% formamide/1 X SSC buffer at 37 °C. The hybridization reaction was performed overnight at 37 °C with Mix 1 (2XSSC, 25 µg/µL yeast tRNA, 100% formamide, FLAP-structured duplex (FLAP-Y duplex +FLAP X duplex) and H2O)+Mix 2 (20 mg/mL RNAse free BSA, 200 mM VRC, 40% dextran sulfate and H2O). Then the coverslip was rinsed five times in 1 X SSC 15% formamide mix at 37 °C and twice in PBS before mounting on Dako mounting medium supplemented with DAPI. Three-dimensional image stacks were captured on Zeiss Axiomager Z3 Apotome confocal microscope, camera lens x63 with Z acquisition of 0.45 μM, and Zen software (Zeiss). For Figure 2, images were analyzed with a script for ImageJ. For each segmented nucleus, spots were segmented by detecting local maxima after applying a laplacien filter. For Figure 3, images were analyzed with IMARIS. For each image, spots were detected using the ‘spot’ function and the colocalization with the ‘co-localize spots’ function.
 
-## Western blot
+#### Western blot
 
 Cells were harvested on ice, washed with cold PBS, and collected on RIPA buffer Biobasic supplemented with protease inhibitor (Sigma). Protein concentration was measured using BCA Protein Assay Kit (Interchim), and equal amounts of proteins were subjected to SDS-PAGE (TGX Stin Free FastCast Acrylamid, 12%, Bio-Rad, 161–0185) and transferred onto nitrocellulose membrane (Transblot Turbo, Bio-Rad, 1704271). Membranes were washed in Tris-buffered saline supplemented with 0.05% Tween-20 and then saturated in Tris-buffered saline supplemented with 0.05% Tween-20 with 5% BSA, incubated overnight with primary antibodies in Tris-buffered saline supplemented with 0.05% Tween-20 with 5% BSA, washed and revealed with Clarity Western ECL Substrate (Bio-Rad, 170–5060). Western blotting was conducted using standard methods with the following antibodies: Rabbit anti-PSPC1 (bethyl laboratory, A303-205A) diluted 1:1000, Rabbit anti-P54nrb (Santacruz, sc67016) diluted 1/400, Rabbit Histone H3 (Cell Signaling, 4499) diluted 1/10000, mouse GAPDH (SantaCruz, SC32233) diluted 1/1000, secondary donkey anti-rabbit IgG antibody, Peroxidase Conjugated, (Jackson ImmunoResearch, 711-035-152) diluted 1:10000, secondary rabbit anti-mouse IgG antibody, Peroxidase Conjugated, (Jackson ImmunoResearch, 715-035-150) diluted 1:10000.
 
-## Capillary Western
+#### Capillary Western
 
 Diluted protein lysate was mixed with fluorescent master mix and heated at 95 °C for 5 min. Three μL of protein mix (1 mg/mL maximal concentration) containing Protein Normalization Reagent, blocking reagent, wash buffer, target primary antibody (rabbit anti-eIF2α [Cell Signaling Technology 9721]) diluted 1:50, mouse anti-phospho-eIF2α [Cell Signaling Technology 2103] diluted 1:50, mouse anti-p21 antibody [Santacruz, sc-6246] diluted 1:50, rabbit anti-P54nrb diluted 1:200 [Santacruz, sc-67016], rabbit anti-PSPC1 diluted 1:100 [bethyl laboratory, A303-205A], mouse anti-SFPQ diluted 1:100 [Abcam, Ab11825]; rabbit anti-FGF1 diluted 1:25 [Abcam Ab207321], rabbit anti-Nucleolin diluted 1:50 [Novus biological, NB600-241], secondary-HRP (ready to use rabbit or mouse ‘detection module’, DM-001 or αDM-002), and chemiluminescent substrate were dispensed into designated wells in a manufacturer-provided microplate. The plate was loaded into the instrument (Jess, Protein Simple) and proteins were drawn into individual capillaries on a 25 capillary cassette (12–230 kDa) (SM-SW004). Normalization reagent allow detecting total protein in the capillary through the binding of amine group by a biomolecule and to get rid of housekeeping protein that can arbor an inconsistent and unreliable expression. Graph plotted in Figures represent chemiluminescence value before normalization.
 
-## Measurement of protein half-life
+#### Measurement of protein half-life
 
 To measure protein half-life, HL-1 cardiomyocytes were treated with cycloheximide (InSolution CalBioChem) diluted in PBS to a final concentration of 10 µg/mL in six-well plates. Time-course points were taken by stopping cell cultures after 0 hr, 30 min, 1 hr, 2 hr, 4 hr, 8 hr, 16 hr, or 24 hr of incubation and subsequent capillary Western analysis of cell extracts.
 
-## RNA purification and cDNA synthesis
+#### RNA purification and cDNA synthesis
 
 Total RNA extraction from HL-1 cells was performed using TRI Reagent according to the manufacturer’s instructions (Molecular Research Center Inc, USA). RNA quality and quantification were assessed by a Nanodrop spectrophotometer (Nanodrop 2000, Thermo Scientific). 750 ng RNA was used to synthesize cDNA using a High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems, France). Appropriate no-reverse transcription and no-template controls were included in the qPCR assay plate to monitor potential reagent or genomic DNA contaminations, respectively. The resulting cDNA was diluted 10 times in nuclease-free water. All reactions for the PCR array were run in biological triplicates.
 
-## qPCR
+#### qPCR
 
 7.5 ng cDNA were mixed with 2 X TB green Premix Ex Taq II (Takara, RR820B), 10 μM forward and reverse primers, according to manufacturer instruction. qPCR reactions were performed on Viia7 (Applied Biosystems) and the oligonucleotide primers used are detailed in Supplementary file 2. The reference genes were Hprt, 18 S and/or Rpl11.
 
-## ddPCR
+#### ddPCR
 
 ddPCR reaction for Neat1 knock-down control were performed with the Bio-Rad system. The ddPCR reaction mixture (22 μl) contained 2 x QX200 ddPCR EvaGreen Supermix (no dUTP) (Bio-Rad), 2 μM of a mix of forward and reverse primers (Supplementary file 2), and 2/4/6 μL of cDNA depending on the target. The reaction mixture was transferred for droplet generation by AutoDG System (Bio-Rad) in individual wells of disposable DG32 Automated Droplet Generator Cartridges that were already placed in the cartridge holder. The droplet was generated by AutoDG System, between 15000–20000 droplets/well. The prepared droplet emulsions were further loaded in ddPCR 96-Well Plates (Bio-rad) by aspirating 40 μl from the DG32 cartridge by the AutoDG System. The plate was then heat sealed with pierceable foil using a PX1 PCR plate sealer 5 s at 180 °C (Bio-Rad), and PCR amplification was carried out in a T100 thermal cycler (Bio-Rad). The thermal consisted of initial denaturation at 95 °C for 5 min followed by 40 cycles of 95 °C for 30 s (denaturation) and 60 °C for 1 minute (annealing/elongation) with a ramp of 2 °C/s, a signal stabilization step at 4 °C 5 min followed by 90 °C 5 min. After PCR amplification the positive droplets were counted with a QX200 droplet reader (Bio-Rad).
 
-## Cell fractionation
+#### Cell fractionation
 
 HL-1 cells placed in normoxia or hypoxia and transduced by P54nrb-HA construct were trypsinized, rinsed with PBS and lysed in solution 1 (Hepes 50 mM/NaCl 150 mM pH7.3, digitonin (100 μg/mL), EDTA 1 mM, protease inhibitor cocktail) and incubated on ice. Then the lysate was centrifugated at 2000 g for 5 min and the supernatant (cytosolic fraction) was aliquoted. Then the pellet was rinsed in PBS, and incubated in solution 2 (Hepes 50 mM/NaCl 150 mM pH7.3, NP40 1%, EDTA 1 mM, protease inhibitor cocktail) during 30 min at 4 °C. After centrifugation at 7000 g, the pellet was rinsed and resuspended in solution 3 (Tris/HCl 50 mM, NaCl 150 mM, NP40 1%, sodium deoxycholate 0.5%, SDS 0.1% (RIPA), protease inhibitor cocktail) and incubated for 10 min at 4 °C. Finally, the lysate was centrifuged for 10 min at 8200 g and the supernatant was aliquoted (nuclear fraction).
 
-## Immunoprecipitation
+#### Immunoprecipitation
 
 Immunoprecipitation experiments were realized with 150 μg of total protein amounts from the cytosolic and nuclear fraction in normoxia or hypoxia, with a HA antibody (H9558/H3663, Sigma) 72 μg (2.4 mg/mL) or IgG mouse control (Sigma I5381) (2 mg/mL) using EZ view red protein G beads (Sigma). The beads-antibody-protein mix was incubated overnight at 4 °C and bounds protein were eluted with 35 μg HA peptides diluted in PBS (Sigma); then Laemmli buffer was added and the eluate heated at 95 °C 2 min.
 
-## In-gel trypsin digestion and mass spectrometry analysis
+#### In-gel trypsin digestion and mass spectrometry analysis
 
 For mass spectrometry analysis, immunoprecipitated samples, prepared in triple or quadruple biological replicates for each condition, were submitted to an additional protein reduction in 24.5 mM dithiothreitol for 30 min at 56 °C followed by alkylation of cysteine residues in 74 mM iodoacetamide for 30 min in the dark at room temperature. Each reduced/alkylated sample was loaded onto 1D SDS-PAGE gel (stacking 4% and separating 12% acrylamide). For a one-shot analysis of the entire mixture, no fractionation was performed, and the electrophoretic migration was stopped as soon as the protein sample entered the separating gel. The gel was briefly stained using Quick Coomassie Blue (Generon). Each single slice containing the whole sample was excised and subjected to in-gel tryptic digestion using modified porcine trypsin (Promega, France) at 10 ng/μl as previously described (Shevchenko et al., 1996). The dried peptide extracts obtained were dissolved in 17 μl of 0.05% trifluoroacetic acid in 2% acetonitrile and analyzed by online nanoLC using an Ultimate 3000 RSLCnano LC system (Thermo Scientific Dionex) coupled to an LTQ Orbitrap Velos mass spectrometer (Thermo Scientific, Bremen, Germany) for data-dependent CID fragmentation experiments. Five μl of each peptide extracts were loaded in two or three injection replicates onto 300 μm ID x 5 mm PepMap C18 pre-column (ThermoFisher, Dionex) at 20 μl/min in 2% acetonitrile, 0.05% trifluoroacetic acid. After 5 min of desalting, peptides were online separated on a 75 μm ID x 50 cm C18 column (in-house packed with Reprosil C18-AQ Pur 3 μm resin, Dr. Maisch; Proxeon Biosystems, Odense, Denmark), equilibrated in 95% of buffer A (0.2% formic acid), with a gradient of 5 to 25% of buffer B (80% acetonitrile, 0.2% formic acid) for 80 min then 25% to 50% for 30 min at a flow rate of 300 nL/min. The LTQ Orbitrap Velos was operated in data-dependent acquisition mode with the XCalibur software (version 2.0 SR2, Thermo Fisher Scientific). The survey scan MS was performed in the Orbitrap on the 350–1800 m/z mass range with the resolution set to a value of 60,000. The 20 most intense ions per survey scan were selected with an isolation width of 2 m/z for subsequent data-dependent CID fragmentation, and the resulting fragments were analyzed in the linear trap (LTQ). The normalized collision energy was set to 30%. To prevent repetitive selection of the same peptide, the dynamic exclusion duration was set to 60 s with a 10 ppm tolerance around the selected precursor and its isotopes. Monoisotopic precursor selection was turned on. For internal calibration the ion at 445.120025 m/z was used as lock mass.
 
-## MS-based protein identification
+#### MS-based protein identification
 
 Acquired MS and MS/MS data as raw MS files were converted to the mzDB format using the pwiz-mzdb converter (version 0.9.10, https://github.com/mzdb/pwiz-mzdb) executed with its default parameters (Bouyssié et al., 2015). Generated mzDB files were processed with the mzdb-access library (version 0.7, https://github.com/mzdb/mzdb-access; Bouyssié et al., 2020) to generate peak lists. Peak lists were searched against the UniProtKB/Swiss-Prot protein database with Mus musculus taxonomy (16,979 sequences) in the Mascot search engine (version 2.6.2, Matrix Science, London, UK). Cysteine carbamidomethylation was set as a fixed modification and methionine oxidation as a variable modification. Up to two missed trypsin/P cleavages were allowed. Mass tolerances in MS and MS/MS were set to 10 ppm and 0.6Da, respectively. Validation of identifications was performed through a false-discovery rate set to 1% at protein and peptide-sequence match level, determined by target-decoy search using the in-house-developed software Proline software version 1.6 (Bouyssié et al., 2020).
 
-## Polysomal RNA preparation
+#### Polysomal RNA preparation
 
 HL-1 cells were cultured in 150 mm dishes. Ten0 min before harvesting, cells were treated with cycloheximide at 100 mg/mL. Cells were washed with PBS at room temperature containing 100 mg/mL cycloheximide and harvested with Trypsin. After centrifugation at 500 g for 3 min at 4 °C, cells were washed two times in PBS cold containing 100 mg/mL cycloheximide, and cells were lysed by hypotonic lysis buffer (10 mM HEPES-KOH Ph7.5; 10 mM KCl; 1.5 mM MgCl2) containing 100 mg/mL cycloheximide. Cells were centrifuged at 500 g for 3 min and lysed by lysis solution containing hypotonic buffer, 1 mM DTT, 0.5 U/mL Rnasin, and protease inhibitor 100 X. Cells were centrifuged by two times, first at 1000 g for 10 min at 4 °C and second at 10,000 g for 15 min; the supernatants were collected and loaded onto a 10–50% sucrose gradient. The gradients were centrifuged in a Beckman SW41 Ti rotor at 39,000 rpm for 2.3 hr at 4 °C without a brake. Fractions were collected using a Foxy JR ISCO collector and UV optical unit type 11. RNA was purified from pooled heavy fractions containing polysomes (fractions 12–19) as well as from cell lysate before gradient loading.
 
-## qPCR fluidigm array
+#### qPCR fluidigm array
 
 The DELTAgene Assay was designed by Fluidigm Corporation (San Francisco, USA). The qPCR-array was performed on BioMark with the Fluidigm 96.96 Dynamic Array following the manufacturer’s protocol (Real-Time PCR Analysis User Guide PN 68000088). The list of primers is provided in Supplementary file 2. A total of 25 ng of cDNA was preamplified using PreAmp Master Mix (Fluidigm,100–5581, San Francisco, USA) in the plate thermal cycler at 95 °C for 10 min, 16 cycles at 95 °C for 15 sec, and 60 °C for 4 min. The preamplified cDNA was treated with Exonuclease I in the plate thermal cycler at 37 °C for 30 min, 80 °C for 15 min and 10 °C infinity. The preamplified cDNA was mixed with 2 x TaqMan Gene Expression Master Mix (Applied Biosystems), 20 μM of mixed forward and reverse primers, and sample Loading Reagent (Fluidigm, San Francisco, USA). The sample was loaded into the Dynamic Array gene expression 96.96 IFC (Fluidigm San Francisco, USA). The qPCR reactions were performed in the BioMark RT-qPCR system. Data were analyzed using the BioMark RT-qPCR Analysis Software Version 4.5.2.
 
 GAPDH rRNA was used as a reference gene, and all data were normalized based on GAPDH rRNA level. Relative quantification (RQ) of gene expression was calculated using the 2-ΔΔCT method. When the RQ value was inferior to 1, the fold change was expressed as –1/RQ. The oligonucleotide primers used are detailed in Supplementary file 2.
 
-## Quantification and statistical analysis qPCR and ddPCR analysis
+### Quantification and statistical analysis qPCR and ddPCR analysis
 
 qPCR data were analyzed on Quantstudio (AppliedBiosystems). RPL11 or HPRT were used as reference gene. Relative quantification (RQ) of gene expression was calculated using the 2-ΔΔCT method. ddPCR data was analyzed using the QuantaSoft 1.7.4 software (Bio-Rad). HPRT was used as a reference gene, and Neat1 RNA expression was normalized by normoxia control and expressed in %.
 
-## Label-free quantitative proteomics analysis
+#### Label-free quantitative proteomics analysis
 
 For label-free relative quantification across samples, raw MS signal extraction of identified peptides was performed using Proline. The cross-assignment of MS/MS information between runs was enabled (it allows to assign peptide sequences to detected but non-identified features). Each protein intensity was based on the sum of unique peptide intensities and was normalized across all samples by the median intensity. Missing values were independently replaced for each run by its 5% quantile. After log2-transformation of the data, the values of the technical replicates were averaged for each analyzed samples. For each pairwise comparison, an unpaired two-tailed Student’s t-test was performed. Proteins were considered significantly enriched when their absolute log2-transformed fold change was higher than 1 and their p-value lower than 0.05. To eliminate false-positive hits from quantitation of low-intensity signals, two additional criteria were applied: only the proteins identified with a total number of averaged peptide spectrum match (PSM) counts >4 and quantified in a minimum of two biological replicates, before missing value replacement, for at least one of the two compared conditions were selected. Volcano plots were drawn to visualize significant protein abundance variations between the two compared conditions. They represent -log10 (p-value) according to the log2 ratio. The complete list of proteins identified and quantified in immunopurified samples and analyzed according to this statistical procedure is described in Supplementary file 7.
 
-## Dual luciferase system
+#### Dual luciferase system
 
 Data were analyzed on MicroWin 2000. Background noise was measured with non-transduced cell samples and removed from transduced cell sample measurement. Then LucF/LucR ratio was calculated on Excel 2007 (Microsoft Office) and mean and SD were calculated as well.
 
-## FISH
+#### FISH
 
 Images were analyzed with a script for ImageJ. For each segmented nucleus, spots are segmented by detecting local maxima after applying a laplacien filter. Spot colocalization is determined by the distance between them.
 
-## Capillary Western
+#### Capillary Western
 
 Data were analyzed on compass software provided by the manufacturer.
 
-## Statistical analysis
+#### Statistical analysis
 
 All statistical analyses were performed using One Way ANOVA, unpaired two-tailed student t-test, or Mann-Whitney rank comparisons test calculated on GraphPad Prism software depending on n number obtained and experiment configuration. Results are expressed as mean ± standard deviation, *p<0.05, **p<0.01,***<0.001, ****<0.0001.

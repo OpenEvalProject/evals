@@ -28,7 +28,7 @@
 
 ## Abstract
 
-10.7554/eLife.49374.001 Myogenic vasoconstriction is an autoregulatory function of small arteries. Recently, G-protein-coupled receptors have been involved in myogenic vasoconstriction, but the downstream signalling mechanisms and the in-vivo-function of this myogenic autoregulation are poorly understood. Here, we show that small arteries from mice with smooth muscle-specific loss of G 12 /G 13 or the Rho guanine nucleotide exchange factor ARHGEF12 have lost myogenic vasoconstriction. This defect was accompanied by loss of RhoA activation, while vessels showed normal increases in intracellular [Ca 2+ ]. In the absence of myogenic vasoconstriction, perfusion of peripheral organs was increased, systemic vascular resistance was reduced and cardiac output and left ventricular mass were increased. In addition, animals with defective myogenic vasoconstriction showed aggravated hypotension in response to endotoxin. We conclude that G 12 /G 13 - and Rho-mediated signaling plays a key role in myogenic vasoconstriction and that myogenic tone is required to maintain local and systemic vascular resistance under physiological and pathological condition.
+Myogenic vasoconstriction is an autoregulatory function of small arteries. Recently, G-protein-coupled receptors have been involved in myogenic vasoconstriction, but the downstream signalling mechanisms and the in-vivo-function of this myogenic autoregulation are poorly understood. Here, we show that small arteries from mice with smooth muscle-specific loss of G12/G13 or the Rho guanine nucleotide exchange factor ARHGEF12 have lost myogenic vasoconstriction. This defect was accompanied by loss of RhoA activation, while vessels showed normal increases in intracellular [Ca2+]. In the absence of myogenic vasoconstriction, perfusion of peripheral organs was increased, systemic vascular resistance was reduced and cardiac output and left ventricular mass were increased. In addition, animals with defective myogenic vasoconstriction showed aggravated hypotension in response to endotoxin. We conclude that G12/G13- and Rho-mediated signaling plays a key role in myogenic vasoconstriction and that myogenic tone is required to maintain local and systemic vascular resistance under physiological and pathological condition.
 
 ## Introduction
 
@@ -42,39 +42,67 @@ To understand the function of Gq/G11- and G12/G13-mediated signaling pathways in
 
 ## Results
 
-## Myogenic autoregulation in arteries depends on smooth muscle G12/G13 function
+### Myogenic autoregulation in arteries depends on smooth muscle G12/G13 function
 
 To analyze the role of Gq/G11 and G12/G13 in vascular myogenic contraction, we used tamoxifen-inducible smooth muscle-specific Gαq/Gα11- and Gα12/Gα13-deficient mice described before (Wirth et al., 2008), henceforth called Sm-q/11-KO and Sm-12/13-KO, respectively. To analyze myogenic contraction in these animals, we performed pressure myography on first or second order mesenteric arteries from wild-type, Sm-q/11-KO and Sm-12/13-KO mice treated for five days with tamoxifen. Mesenteric arteries were exposed to stepwise (20 mmHg) increases in intraluminal pressure between 20 and 140 mmHg in the presence and absence of extracellular Ca2+ to determine active and passive vessel diameter, respectively. A difference between the diameter in the presence and absence of extracellular Ca2+ at each pressure step was defined as an active vasoconstriction. Stepwise increases in intraluminal pressure generated active contraction at pressures higher than 60 mmHg in mesenteric arteries from wild-type mice reaching peak contractions at about 80 to 120 mmHg (Figure 1A and B and Suppl. Figure 1A). Mesenteric arteries from Sm-q/11-KO mice behaved like wild-type mice and showed comparable myogenic contraction (Figure 1A and Figure 1—figure supplement 1A and B). In contrast, mesenteric arteries from Sm-12/13-KO mice completely lacked active vasoconstriction indicating loss of myogenic contraction (Figure 1B and Figure 1—figure supplement 1C), a finding also made in third order mesenteric arteries (Figure 1—figure supplement 1E–G).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/49374/elife-49374-fig1-v2.jpg)
+
+**Figure 1.:** (A–D) First order mesenteric arteries (A,B) and posterior cerebral arteries (C,D) were isolated from control (black circles), Sm-q/11-KO (blue circles) and Sm-12/13-KO (red circles) mice and were pressurized with the indicated pressure steps. The myogenic tone (% of passive diameter (PDA)) was determined using MyoView four software (A,B) or with Acknowledge software (C,D) (n = 7 mice (control groups and Sm-q/11-KO) and eight mice (Sm-12/13-KO) in A and B and n = 5 mice (control group for Sm-q/11-KO), nine mice (Sm-q/11-KO), 27 mice (control group for Sm-12/13-KO) and 21 mice (Sm-12/13-KO) in C and D). (E) RhoA activity was determined in the pressurized (80 mmHg for 10 min, ‘+') and non-pressurized (‘-') mesenteric arterial segments (6–8 per animal) from control (open bars), Sm-q/11-KO (blue bars), Sm-12/13-KO (red bars) and Sm-Larg-KO (green bars) mice (n = 3 mice in each group). (F) Myogenic tone responses of first order mesenteric arteries incubated for 30 min in the presence (red circles) or absence (black circles) of Rho-kinase inhibitor (Y27632, 10 µM) (n = 3 mice for both groups). (G) Mouse MYPT1 phosphorylation (P-MYPT1) was determined in pressurized (80 mmHg ‘+') and non-pressurized (‘-') mesenteric arteries from control and Sm-12/13-KO mice after homogenization by immunoblotting. Total MYPT1 and GAPDH immunoblots served as controls. The bar diagram shows a statistical analysis of immunoblots (n = 8 mice in four independent experiments (control) and n = 6 mice in three independent experiments (Sm-12/13-KO)). (H) Myogenic tone responses of first order mesenteric arteries in control (black circles) and Sm-Larg-KO (green circles) mice (n = 6 mice (control) and five mice (Sm-Larg-KO)). (I–K) Determination of intracellular [Ca2+] during myogenic tone induction in first order mesenteric arteries isolated from control (black circles), Sm-q/11-KO, (blue circles), Sm-12/13-KO (red circles), and Sm-Larg-KO mice (green circles). All arteries were loaded with Fura-2-AM (12.5 µM) for determination of free intracellular [Ca2+] (n = 5 mice (control groups, Sm-q/11-KO and Sm-12/13-KO) and n = 4 mice (Sm-Larg-KO)). All values are mean values ± SEM. *, p≤0.05; **, p≤0.01; ***, p≤0.001; n.s. = non significant (2-way ANOVA and Bonferroni’s post-hoc test (in A-D and F-K); unpaired t-test (in E)).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/49374/elife-49374-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A-D) Representative traces of first order mesenteric arteries isolated from control (A, black), Sm-q/11-KO (B, blue), Sm-12/13-KO (C, red) and Sm-Larg-KO (D, green) mice showing changes in the luminal diameter over a range of increased perfusion pressure (10–140 mmHg) in the presence (active diameter, left panels) and absence of calcium (passive diameter, right panels).(E–G) Third order mesenteric arteries were isolated from control (black circles), Sm-q/11-KO (blue circles) and Sm-12/13-KO (red circles) mice and were pressurized with the indicated pressure steps. The myogenic tone was determined as described above (n = 7 mice (control), n = 5 mice (Sm-12/13-KO and Sm-Larg-KO)). All values are mean values ± SEM. **, p≤0.01; ***, p≤0.001 (2-way ANOVA and Bonferroni’s post-hoc test).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/49374/elife-49374-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Determination of intracellular [Ca2+] during myogenic tone induction in first order mesenteric arteries incubated for 30 min in the presence (red circles) or absence (black circles) of L-type channel inhibitor (nifedipine, 1 µM) and TRP channel inhibitor (2-Aminoethoxydiphenyl borate, 1 µM) (n = 3 mice for both groups). PDA, passive diameter. All values are mean values ± SEM. *, p≤0.05 (2-way ANOVA and Bonferroni’s post-hoc test).
+
 We also performed myogenic tone experiments in cerebral vessels (Figure 1C and D). When proximal cerebral arteries were exposed to stepwise increases in intraluminal pressure, an active vasoconstriction was observed in vessels of wild-type mice, which was indistinguishable from the response observed in vessels from mice with induced smooth muscle-specific Gαq/Gα11 deficiency (Figure 1C). However, the myogenic response in vessels from induced smooth muscle-specific Gα12/Gα13-deficient animals was significantly reduced (Figure 1D). Thus, similar to mesenteric vessels, the myogenic response of cerebral vessels does not require Gq/G11-mediated signaling in smooth muscle cells but depends on a functional G12/G13-mediated signaling pathway.
 
-## Smooth muscle ARHGEF12 and RhoA-mediated signaling are involved in myogenic contraction
+### Smooth muscle ARHGEF12 and RhoA-mediated signaling are involved in myogenic contraction
 
 Given that G12/G13 can couple GPCRs to the regulation of Rho/Rho-kinase (Worzfeld et al., 2008; Kozasa et al., 2011), we determined RhoA activity during the development of myogenic tone in mesenteric vessels from wild-type, Sm-q/11-KO and Sm-12/13-KO mice. In pressurized mesenteric arteries from Sm-12/13-KO mice, RhoA activity was strongly reduced compared to vessels from wild-type and Sm-q/11-KO mice (Figure 1E). Consistent with published data (Gokina et al., 2005; Dubroca et al., 2005), we found that the Rho-kinase inhibitor Y-27632 blocked myogenic response in mesenteric arteries (Figure 1F). In addition, we found that phosphorylation of the regulatory subunit of myosin phosphatase, MYPT1, a substrate of Rho-kinase, was increased in pressurized wild-type mesenteric arteries, but in vessels from Sm-12/13-KO mice this effect could not be observed any more (Figure 1G). This supports the concept that Rho/Rho-kinase-mediated signaling plays a central role in the myogenic response. The Rho-guanine nucleotide exchange factor 12 (ARHGEF12, also known as leukemia-associated RhoGEF (LARG)) has been shown to couple G12/G13 to the regulation of RhoA activity in vascular smooth muscle cells (Wirth et al., 2008). We therefore tested myogenic contraction in mesenteric arteries from tamoxifen-induced smooth muscle-specific ARHGEF12-deficient animals (Sm-Larg-KO) and found that, similar to vessels from Sm-12/13-KO mice, RhoA activation was decreased (Figure 1E), and the myogenic response was abrogated (Figure 1H and Figure 1—figure supplement 1D). These data strongly indicate that G12/G13-mediated Rho/Rho-kinase activation is required for myogenic contraction.
 
 To test whether the increase in intracellular [Ca2+] described to occur during myogenic contraction (Gokina et al., 2005; D'Angelo et al., 1997) was affected by smooth muscle-specific Gαq/Gα11 or Gα12/Gα13 deficiency, we loaded mesenteric arteries with Fura-2AM and determined the intracellular free Ca2+ concentration during the stepwise increases in intraluminal pressure (Figure 1I–K). We observed in vessels from wild-type mice an increase in [Ca2+]i, which accompanied the myogenic response. However, this response was unaffected by smooth muscle-specific Gαq/Gα11 and Gα12/Gα13 deficiency (Figure 1I–K), whereas inhibition of L-type Ca2+ channels and transient receptor potential (TRP) channels by nifedipine and 2-ABP, respectively, reduced the increase in [Ca2+]i by about 50% (Figure 1—figure supplement 2).
 
-## Loss of myogenic contraction affects vascular resistance and perfusion in peripheral organs
+### Loss of myogenic contraction affects vascular resistance and perfusion in peripheral organs
 
 To study the consequences of a loss of the myogenic response for organ perfusion, we analyzed renal, hindlimb and cerebral perfusion (Tan et al., 2013; Burke et al., 2014). When isolated kidneys were perfused at increasing pressures, an increase in the vascular resistance could be observed, which did not differ between kidneys from wild-type mice and kidneys from Sm-q/11-KO animals (Figure 2A). In contrast, kidneys from Sm-12/13-KO animals showed a significantly reduced increase in renal vascular resistance (Figure 2A). To analyze the role of vascular smooth muscle G12/G13 and Gq/G11 in hindlimb perfusion, we determined perfusion before and after tamoxifen-induced recombination using laser speckle imaging. Sm-12/13-KO as well as Sm-Larg-KO animals showed significantly increased hind limb perfusion after induction compared to control and Sm-q/11-KO mice (Figure 2B and C). Consistent with the loss of myogenic contraction in proximal cerebral arteries of Sm-12/13-KO mice, semiquantitative laser speckle imaging of brains from Sm-12/13-KO animals showed an increased brain perfusion compared to wild-type and Sm-q/11-KO animals (Figure 2D). This phenotype was also observed in Sm-Larg-KO animals (Figure 2D). These data show that the G12/G13-mediated myogenic response is required for the autoregulation of vessels of the hind limb, kidney and brain and suggests a reduced peripheral vascular resistance in these animals. Within a few weeks after induction of Sm-12/13 KO mice, we did not observe any major dysfunction of the kidney or brain in these animals when analyzing urine volume, glomerular filtration rate, blood urea nitrogen and plasma creatinine levels or after performing several tests for motoric functions and after analyzing circadian activity (Figure 2—figure supplement 1).
 
-## Effect of loss of myogenic contraction on cardiac morphology and function
+![Figure 2.](https://cdn.elifesciences.org/articles/49374/elife-49374-fig2-v2.jpg)
+
+**Figure 2.:** (A) Flow-induced increase in vascular resistance in isolated perfused kidneys of control (black circles), Sm-12/13-KO (red circles) and Sm-q/11-KO mice (blues circles) (n = 12 mice (control) and n = 7 (Sm-q/11-KO and Sm-12/13-KO)). (B, C) Laser speckle perfusion imaging of the hind limb from wild-type (control), Sm-q/11-KO, Sm-12/13-KO and Sm-Larg-KO mice before and 2 weeks after tamoxifen treatment (n = 8 mice (control and Sm-12/13-KO) and n = 6 mice (Sm-q/11-KO and Sm-Larg-KO)). (D) Laser speckle perfusion imaging of the brain from wild-type (control), Sm-q/11-KO, Sm-12/13-KO and Sm-Larg-KO mice (n = 6 mice (control), n = 5 mice (Sm-q/11-KO and Sm-Larg-KO) and n = 8 mice (Sm-12/13-KO)). Shown are representative images as well as the statistical evaluation (bar diagrams). LSPU, laser speckle perfusion units. All values are mean values ± SEM. *, p≤0.05; **, p≤0.01; ***, p≤0.001 (Bonferroni’s post-hoc test (in A); unpaired t-test (in C and D; compared to control in D)).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/49374/elife-49374-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–D) Urine volume. (A), glomerular filtration rate (GFR) (B), blood urea nitrogen (BUN) (C) and plasma creatinine levels (D) in wild-type and the indicated mutant mice (n = 7 mice (control and Sm-12/13-KO in A), n = 5 mice (Sm-q/11-KO and Sm-Larg-KO in A), n = 10 mice (control in B), n = 3 mice (Sm-q/11-KO in B and control in C and D), n = 4 mice (Sm-12/13-KO in B), n = 2 mice (Sm-12/13-KO in C and D)). (E–I) day and night activity (E), running distance (F), rotarod analysis (G), mesh grip analysis (H) and beam cross test (I) in wild-type and the indicated mutant mice (n = 4 mice (control and mutant mice in E,F,H and I), n = 4 mice (control and mutant mice in G)). All values are mean values ± SEM. n.s. = non significant (student’s t-test (A–D, F–I) and 2-way ANOVA and Bonferroni’s post-hoc test (E).
+
+### Effect of loss of myogenic contraction on cardiac morphology and function
 
 The consequences of defective peripheral vascular autoregulation for cardiovascular function were then analyzed by studying hearts from Sm-12/13-KO mice 3–4 weeks after tamoxifen injection. Both heart weight and cardiomyocyte cross-sectional area of Sm-12/13-KO mice were significantly increased compared to wild-type animals without any sign of fibrosis or change in capillary density (Figure 3A). Using magnetic resonance imaging, we confirmed that Sm-12/13-KO mice had a significantly increased left ventricular mass (Figure 3B) and found that left ventricular ejection fraction, stroke volume and cardiac output were significantly enhanced, whereas the heart rate was not affected (Figure 3C). Loss of smooth muscle Gα12/Gα13 expression had no effect on the blood pressure as reported previously (Wirth et al., 2008) indicating a reduced peripheral vascular resistance in these animals.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/49374/elife-49374-fig3-v2.jpg)
+
+**Figure 3.:** (A) Hearts of wild-type (control, left) and Sm-12/13-KO mice (right) were stained 4 weeks after induction with hematoxylin and eosin (H and E), wheat germ agglutinin-AF488 (WGA-AF488), picrosirius red or IB4. Quantification of heart weights (normalized to tibia length), cardiomyocyte cross-sectional area (CSA) and capillary density is represented by bar graphs. Scale bar: 2 mm (H and E- as well as Sirius red-stained sections) and 50 µm (WGA- and IB4-stained sections) (n = 7 mice per group (heart weight per tibia length), n = 4 mice per group (Cardiomyocyte area) and n = 3 mice (capillary density)). (B) MRI images in long-axis four chamber view and short-axis view from control and Sm-12/13-KO mice. Left ventricular mass, as calculated from the MRI data, normalized to tibia length of wild-type and Sm-12/13-KO mice is represented as bar graph (n = 7 mice per group). (C) MRI assessment of LV function in control (black bar) and Sm-12/13-KO mice (red bar). LVEF, left ventricular ejection fraction; LVED, left ventricular end diastolic volume; LVES, left ventricular end systolic volume; LVSV, left ventricular stroke volume; CO, cardiac output (n = 7 mice per group). All values are mean values ± SEM. *, p≤0.05; **, p≤0.01 (unpaired t-test; compared to control).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/49374/elife-49374-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Scale bar: 5 mm.
 
 To analyze whether the myocardial hypertrophy in Sm-12/13-KO mice was accompanied by increased expression of fetal genes, which would indicate a pathological form of hypertrophy, we analyzed expression of Acta1, Myh7, Nppa and Nppb 4 weeks after induction of smooth muscle-specific Gα12/Gα13 deficiency. However, expression of none of these genes was increased (Figure 4A). Nppa, Nppb and Acta1 rather showed a decreased expression. In addition, expression of different fibrosis markers was unchanged, and plasma catecholamine, angiotensin II and aldosterone levels were comparable between wild-type and Sm-12/13-KO mice 4 weeks after induction (Figure 4A and B). Thirty five weeks after induction of smooth muscle-specific Gα12/Gα13 deficiency, hypertrophy marker genes were still unchanged or slightly reduced, and plasma levels of catecholamines, angiotensin II and aldosterone were unchanged (Figure 4C and D). While 2 of the six fibrosis marker genes were upregulated by 50–100% (Figure 4C) 35 weeks after induction, sirius red staining showed no signs of fibrosis in hearts 35 weeks after induction (Figure 3—figure supplement 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/49374/elife-49374-fig4-v2.jpg)
 
-**Figure 4.:** (A and C) relative expression of myocardial genes and fibrosis marker genes in the hearts of control (white bars) and Sm-12/13-KO mice (red bars) 4 weeks (A) and 35 weeks (C) after tamoxifen treatment (n = 9 mice (A) and n = 3 mice (C)). (B and D) plasma levels of catecholamines, angiotensin-II and aldosterone in control (white bars) and Sm-12/13-KO mice (red bars) 4 weeks (B) and 35 weeks (D) after induction (n = 3–7 mice). All values are mean values ± SEM. *, p≤0.05 (compared to control; unpaired t-test).10.7554/eLife.49374.014Figure 4—source data 1.12/Gα13deficient mice.
+**Figure 4.:** (A and C) relative expression of myocardial genes and fibrosis marker genes in the hearts of control (white bars) and Sm-12/13-KO mice (red bars) 4 weeks (A) and 35 weeks (C) after tamoxifen treatment (n = 9 mice (A) and n = 3 mice (C)). (B and D) plasma levels of catecholamines, angiotensin-II and aldosterone in control (white bars) and Sm-12/13-KO mice (red bars) 4 weeks (B) and 35 weeks (D) after induction (n = 3–7 mice). All values are mean values ± SEM. *, p≤0.05 (compared to control; unpaired t-test).
 
-## Aggravated hypotensive response to LPS in the absence of myogenic autoregulation
+### Aggravated hypotensive response to LPS in the absence of myogenic autoregulation
 
 Since reduced vascular resistance due to an overactivity of vasodilatory stimuli including nitric oxide is believed to be a major mechanism underlying septic shock resulting in severe hypotension (Hotchkiss et al., 2016; Landry and Oliver, 2001), we tested the contribution of myogenic vasoconstriction to endotoxin-induced hypotension (Figure 5). We therefore determined the effect of lipopolysaccharide (LPS) on the arterial blood pressure in wild-type mice as well as in Sm-12/13-KO and Sm-Larg-KO animals. While LPS induced a transient decrease in arterial blood pressure by maximally 15 mmHg in wild-type animals, the same dose of LPS resulted in a prolonged and significantly increased hypotension when given to Sm-12/13-KO and Sm-Larg-KO mice (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/49374/elife-49374-fig5-v2.jpg)
 
-**Figure 5.:** 12/Gα13 and LARG deficiency on LPS-induced hypotension.(A and B), telemetric blood pressure measurements (systolic in A, diastolic in B) were performed in wild-type (control), Sm-12/13-KO and Sm-Larg-KO mice. At the indicated time point animals were injected with 10 mg/kg of lipopolysaccharide (LPS), and the blood pressure was monitored for 24 hr (n = 8 mice (control and Sm-Larg-KO) and n = 7 mice (Sm-12/13-KO)). The bar diagrams show the statistical evaluation of the average systolic (A) and diastolic blood pressure (B) during the period between 10 and 24 hr after LPS injection. Shown are mean values ± SEM. **, p≤0.01; ***, p≤0.001 (compared to control; unpaired t-test).10.7554/eLife.49374.016Figure 5—source data 1.12/Gα13and ARHGEF12 (LARG) deficient mice.
+**Figure 5.:** (A and B), telemetric blood pressure measurements (systolic in A, diastolic in B) were performed in wild-type (control), Sm-12/13-KO and Sm-Larg-KO mice. At the indicated time point animals were injected with 10 mg/kg of lipopolysaccharide (LPS), and the blood pressure was monitored for 24 hr (n = 8 mice (control and Sm-Larg-KO) and n = 7 mice (Sm-12/13-KO)). The bar diagrams show the statistical evaluation of the average systolic (A) and diastolic blood pressure (B) during the period between 10 and 24 hr after LPS injection. Shown are mean values ± SEM. **, p≤0.01; ***, p≤0.001 (compared to control; unpaired t-test).
 
 ## Discussion
 
@@ -86,7 +114,7 @@ Our observation that the increase in intracellular Ca2+ concentration during myo
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/49374/elife-49374-fig6-v2.jpg)
 
-**Figure 6.:** 12/G13 in vascular myogenic tone.VDCC, voltage-dependent Ca2+ channels; TRP, transient receptor potential channels; PLC-β, phospholipase C-β; PIP2, phosphatidyl inositol bisphosphate; DAG, diacyl glycerol, IP3, inositol-1,4,5-triphosphate; LARG, RhoGEF protein ARHGEF12; MYPT1 and PPC1, regulatory and catalytic subunit of myosin phosphatase, respectively; ROCK, Rho-kinase. ROCK phosphorylates MYPT1 and thereby inhibits myosin phosphatase activity. AT1, angiotensin AT1 receptor; CysLT1, cysteinyl leukotriene receptor 1; S1P2/3, sphingosine-1-phosphate receptors 2 and 3; P2Y6, purinergic receptor Y6; TP, thromboxane A2 receptor. AT1 and CysLT1 have been shown to be activated by increased vascular pressure in a ligand independent manner, whereas activation of S1P2/3, TP and P2Y6 is believed to require formation or release of the respective receptor ligand. For details see text.
+**Figure 6.:** VDCC, voltage-dependent Ca2+ channels; TRP, transient receptor potential channels; PLC-β, phospholipase C-β; PIP2, phosphatidyl inositol bisphosphate; DAG, diacyl glycerol, IP3, inositol-1,4,5-triphosphate; LARG, RhoGEF protein ARHGEF12; MYPT1 and PPC1, regulatory and catalytic subunit of myosin phosphatase, respectively; ROCK, Rho-kinase. ROCK phosphorylates MYPT1 and thereby inhibits myosin phosphatase activity. AT1, angiotensin AT1 receptor; CysLT1, cysteinyl leukotriene receptor 1; S1P2/3, sphingosine-1-phosphate receptors 2 and 3; P2Y6, purinergic receptor Y6; TP, thromboxane A2 receptor. AT1 and CysLT1 have been shown to be activated by increased vascular pressure in a ligand independent manner, whereas activation of S1P2/3, TP and P2Y6 is believed to require formation or release of the respective receptor ligand. For details see text.
 
 The fact that myogenic vasoconstriction of both, mesenteric and cerebral arteries, is lacking in smooth muscle-specific Gα12/Gα13-deficient mice suggests that this mouse line is a useful model to study the in vivo function of myogenic tone under physiological and pathophysiological conditions. Early observations showed that Sm-12/13-KO mice have a normal basal blood pressure but do not respond with arterial hypertension to desoxycorticosterone (DOCA)/NaCl treatment (Wirth et al., 2008). The present study indicates that Sm-12/13-KO mice have an increased cardiac output due to an increased stroke volume, suggesting that loss of myogenic tone in Sm-12/13-KO mice results in a reduced vascular resistance compensated by increased cardiac output. Interestingly, we did not find signs of increased sympathetic activity or changes in angiotensin II and aldosterone levels. Thus, the increased stroke volume and increased cardiac output might just be the result of a reduced afterload. Similar observations have been made during physical exercise or after pharmacological inhibition of peripheral resistance (Andersen and Vik-Mo, 1984; Radovits et al., 2013). The increased cardiac output was accompanied by myocardial hypertrophy resembling other forms of physiological hypertrophy as it did not go along with the expression of fetal genes such as those encoding natriuretic peptide A and B as well as the cardiac myosin heavy chain (Myh7) or skeletal muscle α-actin (Acta1) (Nakamura and Sadoshima, 2018). As described before, Acta1 expression was rather reduced 4 weeks after induction of smooth muscle-specific Gα12/Gα13 deficiency typical for physiological cardiac hypertrophy (Nakamura and Sadoshima, 2018; McMullen and Jennings, 2007). Also, 35 weeks after induction, no expression of fetal genes was observed, while 2 of 6 fibrosis marker genes showed a slight increase in expression. However, no fibrosis could be seen in histological sections of hearts 35 weeks after induction.
 
@@ -96,66 +124,230 @@ In conclusion, our findings indicate that G12/G13-mediated signaling through Rho
 
 ## Materials and methods
 
-## Solutions and agents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Gna12−/−</td>
+      <td>PMID: 12077299</td>
+      <td>RRID:MGI:3819345</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Gna13flox/flox</td>
+      <td>PMID: 14528298</td>
+      <td>RRID:MGI:3819345</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Gnaqflox/flox</td>
+      <td>PMID: 11689889</td>
+      <td>RRID:MGI:3819271</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Gna11−/−</td>
+      <td>PMID: 9687499</td>
+      <td>RRID:MGI:3819271</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Largflox/flox</td>
+      <td>PMID: 18084302</td>
+      <td>RRID:MGI:3819344</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>Myh11-CreERT2</td>
+      <td>PMID: 18084302</td>
+      <td>RRID:IMSR_JAX:019079</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-phospho-MYPT1 (rabbit polyclonal)</td>
+      <td>Merck Millipore</td>
+      <td>Catalog: 36–003 RRID:AB_310812</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-MYPT1 (rabbit polyclonal)</td>
+      <td>Cell Signalling Technologies</td>
+      <td>Catalog: 2634 RRID:AB_915965</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-GAPDH (rabbit monoclonal)</td>
+      <td>Cell Signalling Technologies</td>
+      <td>Catalog: 2118 RRID:AB_561053</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Commercialassay or kit</td>
+      <td>Rho-GLISA</td>
+      <td>Cytoskeleton Inc</td>
+      <td>BK124</td>
+      <td>for determination of Rho activity</td>
+    </tr>
+    <tr>
+      <td>Ccommercial assay or kit</td>
+      <td>3-CAT ELISA-ImmuSmol</td>
+      <td>LDN</td>
+      <td>BA E-5600</td>
+      <td>for determination of adrenaline, dopamine and noradrenaline levels</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Angiotensin II ELISA kit</td>
+      <td>ENZO Life Sciences</td>
+      <td>ADI-900–204</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Aldosterone ELISA kit</td>
+      <td>ENZO Life Sciences</td>
+      <td>ADI-900–173</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Y-27632</td>
+      <td>Sigma Aldrich</td>
+      <td>Y0503</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Aminoethyl diphenylborinate (2-ABP)</td>
+      <td>Sigma Aldrich</td>
+      <td>D9754</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Nifedipine</td>
+      <td>Sigma Aldrich</td>
+      <td>N7634</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fura-2AM</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>F1225</td>
+      <td>12.5 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ionomycin</td>
+      <td>Sigma Aldrich</td>
+      <td>I0634</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LPS (Lipopolysaccharide)</td>
+      <td>Sigma Aldrich</td>
+      <td>L2630</td>
+      <td>10 mg/kg b.w</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>WGA-AF488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>W11261</td>
+      <td>Histology (20 µg/ml)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>IB4-AF488</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>I21411</td>
+      <td>Histology (1:200)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Solutions and agents
 
 Tamoxifen, lipopolysaccharide (LPS), 2-aminoethoxydiphenyl borate (2-ABP), nifedipine, phenylephrine, acetylcholine, Y-27632 and ionomycin were purchased from Sigma-Aldrich. U-46619 was from Cayman Europe and Fura-2-AM was purchased from ThermoFischer Scientific. Krebs-Ringer bicarbonate-buffered salt solution (KRB) contained (in mmol/l): 118.5 NaCl, 4.7 KCl, 2.5 CaCl2, 1.2 MgSO4, 1.2 KH2PO4, 25.0 NaHCO3 and 5.5 glucose. The KRB solution was continuously aerated with 95% O2/5% CO2 and maintained at 37°C.
 
-## Genetic mouse models
+### Genetic mouse models
 
 The generation of floxed alleles of the genes encoding Gαq (Gnaq), Gα13 (Gna13) and LARG (Arhgef12) as well as of null alleles of the genes encoding Gα11 (Gna11) and Gα12 (Gna12), has been described previously (Wirth et al., 2008; Moers et al., 2003; Wettschureck et al., 2001). All mouse lines were on a C57/BL6 background or have been backcrossed at least ten times on this genetic background. The inducible, smooth muscle-specific Cre transgenic mouse line was described before (Wirth et al., 2008). Since this line carries the transgene on the Y chromosome, all experiments were performed in males. To induce Cre-mediated recombination, 8- to 10-week-old mice were injected intraperitoneally with tamoxifen (1 mg/day) for five consecutive days as described before (Wirth et al., 2008). Mice were housed in standard cages at constant room temperature and humidity on a 12 hr light/dark cycle and had free access to standard chow pellets and tap water. All animal care and use procedures in this study were approved by the local authorities (Regierungspräsidia Karlsruhe and Darmstadt).
 
-## Pressure myography
+### Pressure myography
 
 Pressure myograph experiments were performed as described previously (Wang et al., 2016; Wang et al., 2015). In brief, 10–14 days after tamoxifen injection, first order and second order mesenteric arteries were removed from the mesentery and were mounted between two glass micropipettes seated in a pressure myograph chamber (Danish Myo Technology; 110P and 114P). The external diameter of the artery was visualized and recorded with a CCD camera using MyoView software. Arterial segments were pressurized step-wise from 20 mmHg to 120 or 140 mmHg as indicated. Myogenic tone was expressed as the percentage of passive diameter ((passive diameter - active diameter)/passive diameter x 100). Proximal cerebral arteries were carefully isolated and similarly proceeded on a video‐monitored arteriograph system (Living System; LSI, Burlington, VT) which allowed to measure changes in arterial internal diameter of cannulated cerebral arteries following stepwise increases in intraluminal pressure from 10 to 100 mmHg.
 
-## Determination of [Ca2+]i
+### Determination of [Ca2+]i
 
 For measurements of the free intracellular Ca2+ concentration arterial segments were mounted in a pressure myograpgh chamber (110P) and incubated with 6 ml of Krebs solution containing 12.5 μM Fura-2-AM, and 0.02% pluronic F-12. The chamber was connected to a pressure myograph unit and left at 37°C for 2 hr in the dark while under constant aeration with 95% O2/5% CO2. At the end of the loading period, the artery was washed two times with Krebs buffer. The arterial segment was then pressurized step-wise (20 mmHg) from 20 to 140 mmHg. During the pressure steps, the artery was illuminated with light of 340 and 380 nm wavelengths using an Olympus CellR MT-20 mercury-xenon burner connected to Olympus (IX71) inverted microscope. The emitted fluorescence (340/380 nm ratio) was assessed by CellR software. At the end of the experiment all arterial segments were treated with 1 µM ionomycin to induce the maximal calcium level. The fluorescence ratio (340/380 nm) for each pressure step was expressed as percent of the maximal fluorescent ratio observed in the presence of ionomycin.
 
-## Rho-activation assay
+### Rho-activation assay
 
 RhoA activity was determined using the G-LISA RhoA activation assay biochemical kit (Cytoskeleton, Inc). Active RhoA was assessed according to the manufacturer's instructions. In brief, first and second order mesenteric arteries were isolated and mounted in a pressure myograph. The pressure was increased step-wise up to 80 mmHg until the myogenic contraction was apparent. In case of Sm-12/13-KO and Sm-Larg-KO animals in which no myogenic contraction could be observed, arterial segments were pressurized step-wise up to 80 mmHg and RhoA activity was determined after 5 min. Arteries were immediately snap-frozen and lyzed and processed according to the manufacturer's instructions. 50 μl of the protein sample (0.5 μg/μl) from arterial segments were added to 96-well plates coated with the Rho binding domain of Rho effector protein and incubated at 4°C for 30 min under shaking. The plates were subsequently incubated with anti-RhoA antibody and secondary horseradish peroxidase-conjugated antibody for 45 min at room temperature. Active RhoA levels were determined by measuring absorbance at 490 nm using a microplate spectrophotometer.
 
-## Analysis of MYPT1 phosphorylation
+### Analysis of MYPT1 phosphorylation
 
 Whole mesenteric arterial beds including first to fourth order vessels were isolated in a cold Krebs buffer. Open ends of the arteries were closed with sutures, the superior mesenteric artery was cannulated in the pressure myograph chamber (P1 side) and vessels were incubated for 20 min at 37 C. The intraluminal pressure was increased stepwise to 80 mmHg using a pressure myograph unit (Danish Myo Technology). After reaching the target pressure, arteries were snap frozen and transferred to a vial with trichloroacetic acid in acetone (10% wt/vol) as described (Kitazawa et al., 2003) and stored at −80°C. Frozen arteries were washed in acetone, homogenized and lysed in a radioimmunoprecipitation assay (RIPA) buffer containing 150 mM NaCl, 50 mM Tris-HCl (pH 7.4), 5 mM EDTA, 0.1% (wt/vol) SDS, 0.5% sodium deoxycholate, and 1% Triton X-100 as well as protease inhibitors (10 mg/ml leupeptin, pepstatin A, 4-(2-aminoethyl) benzenesulfonyl-fluoride, and aprotinin) and phosphatase inhibitors (PhosSTOP, Roche). Total tissue lysates were separated by SDS-PAGE. Proteins were then transferred onto nitrocellulose membranes followed by blocking for 1 hr with TBST containing 5% skim milk and 1% BSA. Membranes were incubated overnight with primary antibodies, for additional 2 hr with HRP-conjugated secondary antibodies (Cell Signaling Technology) at room temperature and were then developed using the ECL detection system (Thermo Scientific Pierce, Life Technologies). Intensity values of bands representing phosphorylated sites of proteins were normalized to the intensity of the band representing total protein. Antibody directed against phosphorylated MYPT1 was from Merck-Millipore (36-003) and antibodies against MYPT1 (catalog 2634) and GAPDH (catalog 2118) were obtained from Cell Signalling Technologies.
 
-## Kidney perfusion experiments
+### Kidney perfusion experiments
 
 Isolated kidneys were perfused ex-situ as described in detail previously (Demerath et al., 2014). The perfusion medium consisted of a modified Krebs-Henseleit buffer supplemented with bovine serum albumin (6 g/100 ml) and human erythrocytes (10% hematocrit). The renal vein was cannulated and samples of the venous perfusate were collected every 2 min to determine the renal blood flow. Three samples were taken during each experimental period and the last two values of each experimental period were averaged for statistical analysis. To determine the pressure-dependent regulation of vascular resistance, the perfusion pressure was changed in steps of 15 mmHg between 130 mmHg and 55 mmHg.
 
-## Laser speckle perfusion measurements
+### Laser speckle perfusion measurements
 
 Hind limb and cerebral blood flow was analyzed using a laser speckle contrast images (MoorFLPI-2, Moor Instruments, UK) mounted on an adjustable tripod and connected to a standard laptop computer equipped with real-time data acquisition software (MoorFLPI measurement software, Moor Instruments). Video frame rates of flow within the microcirculation are provided at up to one image per second at a maximum resolution of 49,000 pixels/cm2 (for reference, the system simultaneously records a corresponding gray scale image with an integrated charge-coupled device video camera). All experiments were performed under 1.5% isoflurane anesthesia. The whole equipment was placed on an anti-vibration table. For the analysis of cerebral blood flow, the hair was removed from the cranium, and the head was fixed in a stereotaxic frame (Stoelting, USA) with a self-controlled heating system keeping temperature at 37°C. To enhance the image quality by minimizing the effects of static scattering elements, mineral oil was placed on the surface of the brain (Boas and Dunn, 2010). After 10 min, live brain images were sampled at a sampling rate of 1 Hz for flux measurements. A region of interest was defined (flexible in size and location), and the mean flow in that region was calculated and recorded in real time. Laser speckle contrast imager data were evaluated using MoorFLPI review software (moorFLPI Full-Field Laser Perfusion Imager Review Version 4.0). A mean image was calculated from the 60 perfusion images taken during a 5 min time span. Mean flux values were determined from the whole brain region. Hind limb perfusion was evaluated as described before (Ungerleider et al., 2016).
 
-## Heart MRI measurements
+### Heart MRI measurements
 
 To assess the morphological and functional changes, LV structure and function were determined by cardiac magnetic resonance imaging (MRI) after 3 weeks of tamoxifen treatment. Isoflurane (2.0% v/v) anesthesia was delivered to mice in an oxygen/medical air (0.5/0.5 L/min) mixture during the measurement. The body temperature was maintained 37°C by a thermostatically regulated water flow system during the entire imaging protocol. Measurements were performed on a 7.0 T Bruker PharmaScan, equipped with a 760 mT/m gradient system using a 1H Array MRI Cryoprobe and the IntraGate self-gating tool (Bruker, Ettlingen, Germany). The measurement is based on the gradient echo method (repetition time = 6.2 ms; echo time = 1.3 ms; field of view = 2.20 × 2.20 cm; slice thickness = 1.0 mm; matrix = 128 × 128; repetitions = 100; resolution 0.0172 cm/pixel). The imaging plane was localized using scout images showing the 2- and 4-chamber view of the heart, followed by acquisition in short axis view, orthogonal on the septum in both scouts. Multiple contiguous short-axis slices consisting of 9 or 10 slices were acquired for complete coverage of the left ventricle. MRI data were analysed using Qmass digital imaging software (Medis, Leiden, Netherlands).
 
-## Telemetric blood pressure measurement and LPS treatment
+### Telemetric blood pressure measurement and LPS treatment
 
 Mice were implanted with a pressure sensing transmitter (PA-C10, Data Sciences International) as described previously (Wirth et al., 2008) to measure the blood pressure in conscious animals. After a recovery period of 10 days, basal blood pressure was recorded for 3 days and Cre-recombination was induced by injection of tamoxifen as described above. One week after induction of Cre-recombination, LPS (10 mg / kg body weight, dissolved in PBS) was administered through intraperitoneal injection. Blood pressure, temperature and various other parameters (Shrum et al., 2014) were monitored.
 
-## Kidney function tests
+### Kidney function tests
 
 For urine volume measurements, mice were separated in metabolic cages with free access to water and powdered food pellets 2 weeks after tamoxifen induction, and urine was collected during 24 hr. The glomerular filtration rate (GFR) was calculated from FITC-sinistrin plasma clearance in conscious mice as described (Schreiber et al., 2012). To evaluate blood urea nitrogen (BUN) and creatinine, blood was collected after two weeks of tamoxifen induction, and plasma samples were analyzed by a diagnostic laboratory (IDEEX, Germany).
 
-## Motor coordination and circadian activity tests
+### Motor coordination and circadian activity tests
 
 Experiments were performed 3 weeks after tamoxifen induction. For the rotarod test, mice were trained for 3 days on a rotarod (Panlab, Barcelona, Spain). After a training session, mice were subjected to test session with accelerating speeds (4–40 rpm). Each test session was composed of 2 trials on the rotarod with a maximum duration of 5 min, and an inter-trial interval of 15 min. The retention time on the rotarod for each mouse was measured. For the cage grip test, mice were placed on a metal cage lid and lifted approximately 10 cm from the ground. Slowly cage lids were tilted (180 degree), and the latency of the mouse to release the cage lid was measured. All mice were trained for two days prior to the experiment. For bar cross assays, animals were placed on a metal rod with a diameter of 3 cm and a length of 60 cm fixed by a G-clamp to a table. The hindpaw lateral slippings were observed during a 5 min test period. To determine circadian activity, 10 weeks old mice were single housed in a Phenomaster system (TSE-Systems) with free access to food and water. After 24 hr of adaptation, activity was determined by light (laser beam) barrier interruption, and data were analyzed using the PhenoMaster-Software (TSE-Systems, Bad Homburg, Germany).
 
-## Histology
+### Histology
 
 Freshly dissected hearts were perfused and fixed in 4% paraformaldehyde and embedded in paraffin after dehydration. Embedded sections (10 µm) were stained with hematoxylin and eosin as well as with picrosirius red according to standard protocols. From the stained heart sections, 6–10 randomly chosen frames were quantified to assess the degree of heart fibrosis using ImageJ software. To quantify the myocyte cross-sectional area, heart sections were incubated with DAPI (1:1000) and WGA-AF488 conjugate (20 µg/ml in PBS) for 2 hr. Cardiomyocyte cross-sectional area (CSA) was quantified in 10 randomly chosen frames from the stained sections using ImageJ software. To assess the capillary density, heart sections were incubated with DAPI (1:1000) and IB4-AF488 conjugate (1:200) in PBS overnight and quantified using ImageJ software.
 
-## Determination of catecholamine, angiotensin II and aldosterone levels
+### Determination of catecholamine, angiotensin II and aldosterone levels
 
 Two weeks after tamoxifen treatment, blood was collected from different experimental groups and plasma was prepared and snap-frozen. Plasma samples were stored at −80°C. To assess dopamine, noradrenaline and adrenaline concentrations 3 Catecholamines ELISA kit (BA-E-5600) from ImmuSmol was used. Plasma angiotensin II and aldosterone levels were determined using an ELISA from ENZO Life Sciences (ADI-900–204 and ADI-900–173). Analyses were performed according to the manufacturer’s instructions.
 
-## qRT-PCR
+### qRT-PCR
 
 Quantitative RT-PCR was performed as described (Sivaraj et al., 2013). Hearts were collected 4 weeks and 35 weeks after tamoxifen induction. RNA was isolated using Qiagen RNeasy mini kit, and cDNA was preamplified using ProtoScript II Reverse Transcriptase (M0368S, New England BioLabs). Primers were designed with the online tool provided by Roche, and quantification was performed using the LightCycler 480 Probe Master System (Roche). Relative expression levels were obtained by normalization with GAPDH. Primer sequences were as follows: ANP, forward: 5′-cacagatctgatggatttcaaga-3′, reverse: 5′-cctcatcttctaccggcatc-3′; BNP, forward: 5′-gtcagtcgtttgggctgtaac-3′, reverse: 5′-ggaaagagacccaggcaga-3′; Myh7, forward: 5′-cgcatcaaggagctcacc-3′, reverse: 5′-ctgcagccgcagtaggtt-3′; Acta1, forward: 5′-tgaagcctcacttcctaccc-3′, reverse: 5′-cgtcgcacatggtgtctagt-3′, PGC-1α, forward: 5’-tgaaagggccaaacagagag-3’, reverse: 5’-gtaaatcacacggcgctctt-3’; Tgfβ, forward: 5’-TGGAGCAACATGTGGAACTC-3′, reverse: 5’-CAGCAGCCGGTTACCAAG-3′; Fgf2, forward: 5’-CGGCTCTACTGCAAGAACG-3′, reverse: 5’-TGCTTGGAGTTGTAGTTTGACG-3′; Ctgf, forward: 5’-TGACCTGGAGGAAAACATTAAGA-3′, reverse: 5’-AGCCCTGTATGTCTTCACACTG-3′; Postn, forward: 5’-CGGGAAGAACGAATCATTACA-3′, reverse: 5’-ACCTTGGAGACCTCTTTTTGC-3′; Col1, forward: 5’-CATGTTCAGCTTTGTGGACCT-3′, reverse: 5’-GCAGCTGACTTCAGGGATGT-3′; Col3, forward: 5’-TCCCCTGGAATCTGTGAATC-3′, reverse: 5’-TGAGTCGAATTGGGGAGAAT-3′ Gapdh, forward: 5′-AGCTTGTCATCAACGGGAAG-3′, reverse: 5′-TTTGATGTTAGTGGGGTCTCG-3′.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical data analysis is included in every figure and described in detail on the respective figure legends. The exact P values and numbers of number of independent experiments (n) are stated in the figures and figure legends. Trial experiments or experiments done previously were used to determine sample size with adequate statistical power. Samples were excluded in cases where RNA/cDNA quality or tissue quality after processing was poor (below commonly accepted standards). Animals were excluded from experiments if they showed any signs of sickness. The investigator was blinded to the group allocation and during the experiment. Data are presented as means ± SEM. All statistical analyses were performed using Prism five software (GraphPad). A level of p<0.05 was considered significant and reported to the graphs. Comparisons between two groups were performed using unpaired 2-tailed Student’s t-test and multiple group comparisons were performed by ANOVA followed by Bonferroni’s post-hoc test.

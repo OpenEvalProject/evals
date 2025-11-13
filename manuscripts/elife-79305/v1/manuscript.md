@@ -13,14 +13,14 @@
 
 ### Affiliations
 
-1. https://ror.org/01zwmgk08 Cellular Neuroscience, Leibniz Institute for Neurobiology Magdeburg Germany
-2. https://ror.org/05dxps055 Department of Computing and Mathematical Sciences, California Institute of Technology Pasadena United States
-3. https://ror.org/01cwqze88 Rodent Behavioral Core, National Institute of Mental Health, National Institutes of Health Bethesda United States
-4. https://ror.org/020f3ap87 Department of Biochemistry and Cellular & Molecular Biology, University of Tennessee Knoxville United States
-5. https://ror.org/05x2bcf33 Department of Biological Sciences, Carnegie Mellon University Pittsburgh United States
-6. https://ror.org/017zqws13 Department of Neuroscience, University of Minnesota Minneapolis United States
-7. https://ror.org/03xez1567 The Salk Institute of Biological Studies La Jolla United States
-8. https://ror.org/052w4zt36 Department of Neuroscience, American University Washington D.C. United States
+1. Cellular Neuroscience, Leibniz Institute for Neurobiology Magdeburg Germany ([ROR:01zwmgk08](https://ror.org/01zwmgk08))
+2. Department of Computing and Mathematical Sciences, California Institute of Technology Pasadena United States ([ROR:05dxps055](https://ror.org/05dxps055))
+3. Rodent Behavioral Core, National Institute of Mental Health, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+4. Department of Biochemistry and Cellular & Molecular Biology, University of Tennessee Knoxville United States ([ROR:020f3ap87](https://ror.org/020f3ap87))
+5. Department of Biological Sciences, Carnegie Mellon University Pittsburgh United States ([ROR:05x2bcf33](https://ror.org/05x2bcf33))
+6. Department of Neuroscience, University of Minnesota Minneapolis United States ([ROR:017zqws13](https://ror.org/017zqws13))
+7. The Salk Institute of Biological Studies La Jolla United States ([ROR:03xez1567](https://ror.org/03xez1567))
+8. Department of Neuroscience, American University Washington D.C. United States ([ROR:052w4zt36](https://ror.org/052w4zt36))
 
 † Corresponding author
 
@@ -52,13 +52,74 @@ In the case of reward seeking behavior, human annotation of videos could resolve
 
 Pose estimation methods have been crucial for several recent publications on topics as diverse as tracking fluid consumption to understand the neural coding of reward prediction errors (Ottenheimer et al., 2020), accounting for the effects of wind on the behavior of Drosophila (Okubo et al., 2020), understanding the contributions of tactile afferents and nociceptors to the perception of touch in freely moving mice (Schorscher-Petcu et al., 2021), understanding interactions between tactile processing by the rodent whisker system and its ability to guide locomotion (Warren et al., 2021), and measuring the relationship between eye movements and neural activity in freely behaving rodents (Keshavarzi et al., 2022). While a number of studies are emerging that take advantage of methods for pose estimation, there is still not enough widespread adoption of the methods across the research community, perhaps in part due to the technical nature of collecting high-quality video recordings as well as setting up and using methods for pose estimation. These methods depend on access to computing systems with GPUs and the ability to set up and use the required computer software, which is usually available as computer code written in Python or MATLAB. A researcher who wants to get started with these approaches will therefore face a number of questions about how to set up video methods in a laboratory setting. New users may also need to learn some of the jargon associated with video analysis methods, and some of these terms are defined in Table 1. The primary goals of this document are twofold: to provide information for researchers interested in setting methods for video analysis in a research lab and to propose best practices for the use and development of video analysis methods.
 
+**Table 1.**
+ Frequently used terms for video analysis.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>pose</td>
+      <td>The configuration (position and/or orientation) of an animal, object, or body parts in an image or video recording</td>
+    </tr>
+    <tr>
+      <td>keypoints/landmarks</td>
+      <td>Distinct identifiable morphological features (e.g., the tip of the snout or the base of the tail in a rodent) that can be localized in 2D or 3D from images, typically via pose estimation</td>
+    </tr>
+    <tr>
+      <td>part grouping</td>
+      <td>A process for assigning keypoints to individual animals</td>
+    </tr>
+    <tr>
+      <td>multi-object tracking</td>
+      <td>In multi-animal pose tracking, the task of determining which detected poses belong to which individual animal across time</td>
+    </tr>
+    <tr>
+      <td>re-identification</td>
+      <td>A process for identifying all images containing the same individual animal based primarily on their distinct appearance</td>
+    </tr>
+    <tr>
+      <td>kinematics</td>
+      <td>Information about the angles and velocities of a set of keypoints</td>
+    </tr>
+    <tr>
+      <td>supervised learning</td>
+      <td>Machine learning methods that use experimenter-provided labels (e.g., ground truth poses, or ‘running’ vs ‘grooming’) to train a predictive model</td>
+    </tr>
+    <tr>
+      <td>unsupervised learning</td>
+      <td>Machine learning methods that only use unlabeled data to find patterns based on its intrinsic structure (e.g., clustering behavioral motifs based on the statistics of their dynamics)</td>
+    </tr>
+    <tr>
+      <td>transfer learning</td>
+      <td>Machine learning methods that use models trained on one dataset to analyze other datasets (e.g., models of grooming in mice applied to rats)</td>
+    </tr>
+    <tr>
+      <td>self-supervised learning</td>
+      <td>Machine learning methods that use only unlabeled data for training by learning to solve artificially constructed tasks (e.g., comparing two variants of the same image with noise added against other images; predicting the future; or filling in blanks)</td>
+    </tr>
+    <tr>
+      <td>embedding</td>
+      <td>A representation of high-dimensional data into lower dimensional representation</td>
+    </tr>
+    <tr>
+      <td>lifting</td>
+      <td>A process through which 2D pose data are converted to 3D representations</td>
+    </tr>
+    <tr>
+      <td>behavioral segmentation</td>
+      <td>A process for detecting occurrences of behaviors (i.e., starting and ending frames) from video or pose sequences</td>
+    </tr>
+  </tbody>
+</table>
+
 ## A basic setup for video recordings in animal experiments
 
 In a typical setup for video recording, cameras are placed above, and in some cases to the side or below, the behavioral arena (Figure 1). The cameras send data to a computer and can be integrated with inputs from behavioral devices using custom-written programs using popular libraries such as OpenCV (Bradski, 2000), open-source data collection systems such as Bonsai (Lopes et al., 2015), or software included with many common commercial video capture boards (loopbio Motif). Video files can then be analyzed using a variety of open-source tools.
 
 A common approach is to use methods for pose estimation, which track the position and orientation of the animal. This is done by denoting a set of ‘keypoints’ or “landmarks” (body parts) in terms of pixel locations on frames in the video recordings. Packages for pose estimation provide graphical user interfaces for defining keypoints and the keypoints are then analyzed with video analysis methods. In the example shown in Figure 1, keypoints are the colored dots on the tip of the snout, the ears, forelimbs and paw, midpoint of back, hindlimbs and paws, and base, middle, and end of tail. Once body parts have been defined, computer algorithms are used to track the skeleton formed by the points and to track the position and orientation of the skeleton over frames in the video file. Many open-source tools use machine learning methods for these intensive computational processes, which require GPUs to run in reasonable time. To run these analyses, many labs have either dedicated computers, institutional computing clusters, or cloud computing services such as Google Colab. The outputs of pose estimation can be analyzed to account for movement variability associated with different behaviors, to relate position and orientation to simultaneously collected brain activity (electrophysiology, optical imaging), or with algorithms that can describe and predict states and dynamical transitions of behaviors.
 
-## Data acquisition
+### Data acquisition
 
 The first step in setting up for video recording is to purchase a camera with an appropriate lens. Researchers should determine if they need precisely timed video frames, for example, for integration with electrical or optical recordings. Inexpensive USB webcams with frame rates of at least 30 fps are suitable for many neuroscience experiments. However, it is important to make sure that each camera is connected to a dedicated USB channel in the computer used for video recording. Webcam cameras can be a challenge to integrate with systems used for behavioral control and electrophysiology or imaging because they lack a means of precisely synchronizing video frames to other related data. As such, the timing of specific behaviors must be based on the animal’s location or an observable event in the video field (e.g., onset of an LED indicating reward availability).
 
@@ -72,19 +133,44 @@ It is also necessary to think about lighting for the experimental setup. If all 
 
 Finally, for some applications, it is necessary to invest time in calibrating the video system. Calibration is often overlooked and not easily accessible in many current software packages. The intrinsic parameters of a camera include the focal length of the lens and if the lens has obvious distortions (i.e., fisheye lens). Extrinsic parameters also affect the quality of video recordings and are largely due to the camera’s position in the scene. It is fairly easy to calibrate a single camera using a checkerboard or ArUco board. To do so, one sweeps a precalibrated board manually around the field of view of a camera and uses the extracted images to estimate the camera’s intrinsic parameters (focal length and distortions). This approach can scale easily to cameras with overlapping fields of view but becomes difficult if larger camera networks do not share extrinsic parameters or need to be repeatedly recalibrated (e.g., if one of the cameras is moved between experiments). If the environment has enough structure in it, structure from motion can estimate the intrinsic and extrinsic parameters by treating the multiple cameras as an exhaustive sweep of the environment. This process can be fully scripted and automatically performed on a daily basis leading to substantially increased reliability and precision in multi-camera system performance. Several references on these topics include Bala et al., 2020; Rameau et al., 2022; Schönberger et al., 2016; Schonberger and Frahm, 2016.
 
-## Hardware and software for data analysis
+### Hardware and software for data analysis
 
 Once video recordings are acquired, the researcher may proceed to setting up their computing environment for pose estimation and tracking. Modern markerless motion capture software tools like DeepLabCut (Mathis et al., 2018a) and SLEAP (Pereira et al., 2022) rely on deep learning to automate this process. The most compute-intensive step of these methods involves a ‘training’ stage in which a deep neural network is optimized to learn to predict poses from user-provided examples. Training is typically accelerated with a GPU, a hardware component traditionally used for computer graphics, but which has been co-opted for deep learning due to its massively parallel processing architecture. Having a GPU can speed up training by 10- to 100-fold, resulting in model training times in as little as minutes with lightweight network architectures (Pereira et al., 2022). For most researchers, the most practical option is to purchase a consumer-grade workstation GPU which can be installed in conventional desktop computers to afford local access to this hardware from the pose tracking software. In this case, any recent NVIDIA GPU with greater than 6 GB of memory will suffice for practical use of pose estimation tools. This type of computer hardware has, in recent years, been significantly impacted by supply chain shortages, driving prices up to >$1000, which makes this a less accessible option for many labs just starting off in video analysis. For this situation, most tools provide the means for using Google Colab, which provides limited access to GPUs on the cloud. This is an excellent way to set up analysis workflows while getting familiar with deep learning-based video analysis but may not be practical for sustained usage (e.g., processing 100 s of videos). Another common scenario is that institutions with a high-performance computing center will typically have GPUs available as a local shared resource. Other than GPUs, most other computer requirements are modest (modern CPU, 8–16 GB of RAM, minimal disk space).
 
 Researchers will need to set up their software environment to be able to install and use pose tracking tools. Most commonly available open-source methods for pose estimation were developed using the Python language. It is highly recommended to make use of ‘environment managers’ such as Anaconda (‘conda’) which enable the creation of isolated installations of Python for each video analysis method of interest. This allows for the methods to be installed with all its dependencies without affecting other Python libraries on the system. Alternatives include Docker, which allows for running an entire virtual machine in isolation. This is done to facilitate the installation of GPU-related dependencies, which may be technically challenging for novice users.
 
-## 2D pose estimation and tracking
+### 2D pose estimation and tracking
 
 Pose tracking methods (Figure 2, part 1) enable researchers to extract positional information about the body parts of animals from video recordings. Tools for pose tracking (see Table 2) decompose the problem of pose tracking into sub-tasks outlined below. A note on nomenclature: pose estimation is the term typically reserved to mean single-animal keypoint localization within a single image; multi-animal pose estimation refers to; multi-animal pose estimation refers to keypoint localization and part grouping of multiple animals within a single image; and multi-animal pose tracking refers to combined keypoint localization, part grouping, and identification across video frames.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/79305/elife-79305-fig2-v1.jpg)
 
 **Figure 2.:** Video recordings are analyzed with either keypoints from 2D or 3D pose estimation or directly by computing video features. These videos or trajectory features are then used by downstream algorithms to relate the keypoints to behavioral constructs such as predicting human-defined behavior labels (supervised learning) or discovering behavior motifs (unsupervised learning). Each part of the analysis steps outlined in the figure is described in more detail below.
+
+**Table 2.**
+ Methods for 2D pose estimation.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>DeepLabCut</td>
+      <td>DeepLabCut (Mathis et al., 2018a; Mathis et al., 2018b) uses a popular architecture for deep learning (He et al., 2016), called ResNet. DeepLabCut models are pre-trained on a massive dataset for object recognition called ImageNet (Russakovsky et al., 2015). Through a process called transfer learning, the DeepLabCut model learns the position of keypoints using as few as 200 labeled frames. This makes the model very robust and flexible in terms of what body parts (or objects) users want to label as the model provides a strong backbone of image filters within their ResNet architecture. To detect the keypoint position, DeepLabCut replaces the classification layer of the ResNet with deconvolutional layers to produce spatial probability densities from which the model learns to assign high probabilities to regions with the user labeled keypoints. DeepLabCut can provide very accurate pose estimations but can require extensive time for training.</td>
+    </tr>
+    <tr>
+      <td>SLEAP</td>
+      <td>SLEAP (Pereira et al., 2022) is based on an earlier method called LEAP (Pereira et al., 2022), which performed pose estimation on single animals. SLEAP uses simpler CNN architectures with repeated convolutional and pooling layers. This makes the model more lightweight compared to DLC’s ResNet architecture and, hence, the model is faster to train with comparable accuracy. Similar to DeepLabCut, the model uses a stack of upsampling or deconvolutional layers to estimate confidence maps during training and inference. Unlike DLC, SLEAP does not solely rely on transfer learning from general-purpose network models (though this functionality is also provided for flexible experimentation). Instead, it uses customizable neural network architectures that can be tuned to the needs of the dataset. SLEAP can produce highly accurate pose estimates starting at about 100 labeled frames for training combined and is quick to train on a GPU (&lt;1 hour).</td>
+    </tr>
+    <tr>
+      <td>DeepPoseKit</td>
+      <td>DeepPoseKit (Graving et al., 2019a; Graving et al., 2019b) uses a type of CNN architecture, called stacked DenseNet, an efficient variant of the stacked hourglass (Newell et al., 2016), and uses multiple down- and upsampling steps with densely connected hourglass networks to produce confidence maps on the input image. The model uses only about 5% of the amount of parameters used by DeepLabCut, providing speed improvements over DeepLabCut and LEAP.</td>
+    </tr>
+    <tr>
+      <td>B-KinD</td>
+      <td>B-KinD (Sun et al., 2021a; Sun et al., 2021b) discovers key points without human supervision. B-KinD has the potential to transform how pose estimation is done, as keypoint analysis is one of the most time-consuming aspects of doing pose estimation analysis. However, there are challenges for the approach when occlusions occur in the video recordings, e.g., recordings of animals tethered to brain recording systems.</td>
+    </tr>
+  </tbody>
+</table>
 
 Keypoint localization involves recovering the spatial coordinates of each distinct keypoint. This is normally done by estimating body part confidence maps, that is, image-based representations that encode the probability of the body part being located at each pixel. Recovering the coordinates of each body part is reduced to the task of finding the pixel with highest probability. A key consideration of this task is that the larger the image, the larger the confidence maps. Computer memory requirements can potentially exceed the capacity of most consumer-grade GPUs. This can be compensated by reducing the resolution of the confidence maps, though this comes at the cost of potentially reduced accuracy. Subpixel refinement methods are typically employed to compensate for this, but ultimately confidence map resolution is one of the most impactful choices for achieving reliable keypoint localization.
 
@@ -100,7 +186,7 @@ The rule of thumb is that ‘if you can see it, you can track it’, but this ap
 
 Improving the capability of models to generalize to new data with fewer (or zero) labels is a currently active area of research. Techniques such as transfer learning and self-supervised learning aim to reduce the labeling burden by training models on related datasets or tasks. For example, B-KinD (Sun et al., 2021a) is able to discover semantically meaningful keypoints in behavioral videos using self-supervision without requiring human annotations. These approaches work by training models to solve similar problems and/or on similar data than those used for pose estimation, with the intuition that some of that knowledge can be reused and thereby will require fewer (or no) labeled examples before achieving the same performance as fully supervised equivalents. Future work in this domain is on track to produce reusable models for commonly encountered experimental species and conditions. We highly encourage practitioners to adopt open data and model sharing to facilitate these efforts where possible.
 
-## 3D pose estimation
+### 3D pose estimation
 
 Several methods have emerged in recent years for 3D tracking based on pose data. For some applications, it is of interest to track animals in complete 3D space. This affords a more detailed representation of the kinematics by resolving ambiguities inherent in 2D projections – an especially desirable property when studying behaviors that involve significant out-of-plane movement, such as in large arenas or non-terrestrial behaviors.
 
@@ -112,7 +198,7 @@ Alternative approaches attempt to circumvent triangulation entirely. LiftPose3D 
 
 Overall, a practitioner should be mindful of the caveats with implementing 3D pose estimation and is recommended to consider whether the advantages are truly necessary given the added complexity. We note that at the time of writing, none of the above methods can natively support the multi-animal case in 3D, other than by treating them as individual animals after preprocessing with a 2D multi-animal method for pose estimation. This limitation is due to issues with part grouping and identification as outlined above and would seem to be a future area of growth for animal pose estimation.
 
-## Behavior quantification
+### Behavior quantification
 
 After using pose estimation to quantify the movements of animal body parts, there are a number of analyses that can be used to understand how movements differ by experimental conditions (Figure 2, parts 2–4). A simple option is to use statistical methods such as ANOVA to assess effects on discrete experimental variables such as the time spent in a given location or the velocity of movement between locations. These measures can also be performed with data from simpler tracking methods, such as the commercially available EthoVision, TopScan, and ANY-maze programs. The primary benefits of the open source pose estimation methods described in this paper over these commercially available programs are the richness of the data obtained from pose estimation (see Figure 1) and the flexibility and customization of behavioral features are tracked (see Figure 2).
 
@@ -121,6 +207,35 @@ If researchers want to go beyond kinematic readouts and investigate the behavior
 If one wants to understand sequences of behaviors, there are many methods available to embed pose data into lower-dimensional representations. Such structures can be discovered through unsupervised methods. Some methods provide generic embeddings and do not explicitly model the dynamics of the behaving animal. Two examples of this approach are B-SOiD (Hsu and Yttri, 2021a), which analyses pose data with unsupervised machine learning, and MotionMapper (Berman et al., 2014), a method that does not use pose estimation methods. These models embed data points based on feature dynamics (e.g., distance, speed) into a lower-dimensional space. Within this space it is possible to apply clustering algorithms for the segmentation of behavioral episodes. Generally, dense regions in this space (regions with many data points grouped together) are considered to be conserved behaviors. Other methods are aimed at explicitly capturing structure from the dynamics (Batty et al., 2019; Bregler, 1997; Costa et al., 2019; Luxem et al., 2022a; Shi et al., 2021; Sun et al., 2021c). These models learn a continuous embedding that can be used to identify lower-dimensional trajectory dynamics that can be correlated to neuronal activity and segmented in relation to significant behavioral events.
 
 Behavioral segmentation and other methods for quantification require a similar computing environment to that used for pose estimation. The input to those methods is generally the output of a pose estimation method (i.e., keypoint coordinates) or time series from a dimensionality reduction method such as principal component analysis that accounts for the keypoints or the raw video. It is crucial that pose estimation is accurate as the segmentation capabilities of the subsequent methods is bounded by pose tracking quality. Highly noisy key points will drown out biological signals and make the segmentation results hard to interpret, especially for unsupervised methods. Furthermore, identity switches between virtual markers can be catastrophic for multi-animal tracking and segmentation. A summary of methods for behavioral segmentation is provided in Table 3.
+
+**Table 3.**
+ Methods for behavioral segmentation using pose data.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td>SimBA</td>
+      <td>SimBA (Nilsson et al., 2020a; Nilsson et al., 2020b) is a supervised learning pipeline for importing pose estimation data and a graphical interface for interacting with a popular machine learning algorithm called Random Forest (Breiman, 2001). SimBA was developed for studies in social behavior and aggression and has been shown to be able to discriminate between attack, pursuit, and threat behaviors in studies using rats and mice.</td>
+    </tr>
+    <tr>
+      <td>MARS</td>
+      <td>MARS (Segalin et al., 2021a; Segalin et al., 2021b) is another supervised learning pipeline developed for studies of social interaction behaviors in rodents, such as attacking, mounting, and sniffing, and uses the XGBoost gradient boosting classifier (Chen and Guestrin, 2016).</td>
+    </tr>
+    <tr>
+      <td>B-SOiD</td>
+      <td>B-SOiD (Hsu and Yttri, 2021a; Hsu and Yttri, 2021b) uses unsupervised methods to learn and discover the spatiotemporal features in pose data of ongoing behaviors, such as grooming and other naturalistic movements in rodents, flies, or humans. B-SOiD uses UMAP embedding (McInnes et al., 2020) to account for dynamic features within video frames that are grouped using an algorithm for cluster analysis, HDBSCAN (McInnes et al., 2017). Clustered spatiotemporal features are then used to train a classifier (Random Forest; Breiman, 2001) to detect behavioral classes in data sets that were not used to train the model and with millisecond precision.</td>
+    </tr>
+    <tr>
+      <td>VAME</td>
+      <td>VAME (Luxem et al., 2022a; Luxem et al., 2022b) uses self-supervised deep learning models to infer the full range of behavioral dynamics based on the animal movements from pose data. The variational autoencoder framework (Kingma and Welling, 2019) is used to learn a generative model. An encoder network learns a representation from the original data space into a latent space. A decoder network learns to decode samples from this space back into the original data space. The encoder and decoder are parameterized with recurrent neural networks. Once trained, the learned latent space is parameterized by a Hidden Markov Model to obtain behavioral motifs.</td>
+    </tr>
+    <tr>
+      <td>TREBA</td>
+      <td>TREBA (Sun et al., 2021c; Sun et al., 2021d) relates measures from pose estimation to other quantitative or qualitative data associated with each frame in a video recording. Similar to VAME, a neural network is trained to learn to predict movement trajectories in an unsupervised manner. TREBA can then incorporate behavioral attributes, such as movement speed, distance traveled, and heuristic labels for behavior (e.g., sniffing, mounting, attacking) into representations of the pose estimation data learned by its neural networks, thereby bringing aspects of supervised learning. This is achieved using a technique called task programming.</td>
+    </tr>
+  </tbody>
+</table>
 
 Before selecting any approach to segment animal behavior, it is important to first define the desired outcome. If the goal is to identify episodes of well-defined behaviors like rearing or walking, then the most straightforward approach is to use a supervised method. Moreover, it is generally a good starting point to use a supervised learning approach and the outputs of these models can be layered on top of unsupervised models to give them immediate interpretability. One tradeoff, however, is the extensive training datasets that are often required to ensure good supervised segmentation. Such methods can be established quite easily using standard machine learning libraries available for the Python, R, and MATLAB, if one has already experience in building these methods. Alternatively, open-source packages such as SimBA (Nilsson et al., 2020a) or MARS (Segalin et al., 2021a) can be used, and is especially beneficial for those who are relatively new to the topic of machine learning. However, if the researcher wants to understand more about the spatiotemporal structure of the behaving animal, they either need to label many different behaviors within the video or turn to unsupervised methods. Unsupervised methods offer the advantage to identify clusters in the video or keypoint time series and quantify behavior in each frame. Recently, A-SOiD, an active-learning algorithm, iteratively combines these supervised and unsupervised approaches to reduce the amount of training data required and enable the discovery of additional behavior and structure (Schweihoff et al., 2022).
 
@@ -132,13 +247,13 @@ Finally, as behavior is highly hierarchically structured, multiple spatio-tempor
 
 Having described how to set up and use video recording methods and analysis methods for pose estimation, we would like to close by discussing some best practices in the use and development of methods for video analysis, including recommendations for the open sharing of video data and analysis code.
 
-## Best practices for experimenters
+### Best practices for experimenters
 
 For those using video analysis methods in a laboratory setting, there are several key issues that should be followed as best practices. It is most crucial to develop a means of storing files in a manner in which they can be accessed in the lab, through cloud computing resources, and in data archives. These issues are discussed above in the ‘Hardware and software for data analysis’ section of this paper. Documentation of hardware is also a key best practice. All methods sections of manuscripts that use methods for video analysis should include details on the camera and lens that were used, the locations of and distances from the cameras relative to the behavioral arena, the acquisition rate and image resolution, environmental lighting (e.g., IR grids placed above the behavioral arena), properties of the arena (size, material, color, etc.).
 
 Beyond within-lab data management and reporting details on hardware used in research manuscripts, more widespread sharing of video data is very much needed and is a core aspect of best practices for experimenters. In accordance with the demands of funders such as the NIH for data sharing, the open sharing of raw and processed videos and pose tracking data is crucial for research reproducibility and also for training new users on video methods. Several groups have created repositories to address this need (Computational Behavior, OpenBehavior). With widespread use, these repositories will help new users learn the required methods for data analysis, enable new analyses of existing datasets that could lead to new findings without having to do new experiments, and would enable comparisons of existing and newly developed methods for pose estimation and behavioral quantification. The latter benefit of data sharing could lead to insight into a major open question about methods for animal pose estimation: how choices about the parameters of any method for pose estimation or subsequent analysis impact analysis time, accuracy, and generalizability. Without these resources, it has not been possible to make confident statements about how existing methods compare across a wide range of datasets involving multiple types of research animals and in different experimental contexts. Guidance for how to implement data sharing can be found in several existing efforts of the machine learning community (Gebru et al., 2021; Hutchinson et al., 2021; Stoyanovich and Howe, 2019). A more widespread use of these frameworks for sharing data can improve the transparency and accessibility of research data for video analysis.
 
-## Best practices for developers
+### Best practices for developers
 
 We recommend three topics receive more attention by developers of methods for video analysis. First, there is a need for a common file format for storing results from pose estimation. Second, there is a need for methods to compare pose estimation packages and assess the impact of the parameters of each package on performance in terms of accuracy and user time. Third, there is a need for better code documentation and analysis reproducibility. Each of these issues is discussed below. In addition to these topics, we would like to encourage developers to design interfaces to make their tools more accessible to novice users. This will allow the tools to become more widely used and studied, and will further not limit use of the tools to researchers with advanced technical skills such as programming.
 
@@ -147,6 +262,131 @@ First, it is important to point out that there is no common and efficient data f
 Second, there has also been a general lack of direct comparisons of different methods and parameter exploration within a given method on a standard set of videos. The choice of deep learning method and specific hyperparameters can affect the structural biases embedded in video data, thereby affecting the effectiveness of a given method (Sculley et al., 2015). Yet, it seems that many users stick to default parameters available in popular packages. For example, in pose estimation, certain properties of neural network architectures such as its maximum receptive field size can dramatically impact the performance across species owing to the variability in morphological features (Pereira et al., 2022). In addition to the intrinsic properties of particular species (e.g., Hayden et al., 2022), the analysis type will also dictate the importance of particular parameters on the task performance. For example, algorithms that achieve temporal smoothness in pose tracking are crucial for studies of fine motor control (Wu et al., 2020), but perhaps not as essential as preventing identity swaps for studies of social behavior (Pereira et al., 2022; Segalin et al., 2021a). Another important issue is that most methods do not report well-calibrated measures of the confidence of model fits or predictions. This is important as it has become clear that machine learning tools tend to be overconfident in their predictions (Abdar et al., 2021). Establishing standardized, interoperable data formats and datasets that include estimates of the fitted models and their predictions will enable comprehensive comparisons of existing and new methods for pose estimation and behavioral quantification.
 
 For evaluating specific methods on lab-specific data, appropriate metrics and baseline methods for the research questions should be chosen. There may be cases where comparable baseline methods may not exist. For example, if a lab develops a new method for quantifying behavior for a specific organism or task on a lab-specific dataset, and there are no existing studies for that task. However, if related methods exist, it would be beneficial to compare performance of the new method against existing methods to study the advantages and disadvantages of the method. For more general claims (e.g., state-of-the-art pose estimator across organisms), evaluations on existing datasets and comparisons with baselines is important (see Table 4), to demonstrate the generality of the method and improvements over existing methods. A consensus on a standard set of data in the community for evaluation and an expansion to include more widely used behavioral tasks and assays would facilitate general model development and comparison. We show existing datasets in the community for method development in Table 4 and encourage the community to continue to open-source data and expand this list of available datasets to accelerate model development.
+
+**Table 4.**
+ Datasets for model development.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Dataset</th>
+      <th>Task</th>
+      <th>Setting</th>
+      <th>Organism</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Human3.6M</td>
+      <td>2D/3D Pose Estimation</td>
+      <td>Videos from 4 camera views with poses from motion capture</td>
+      <td>Human (single-agent)</td>
+    </tr>
+    <tr>
+      <td>MS COCO</td>
+      <td>2D Pose Estimation</td>
+      <td>Images from uncontrolled settings with annotated poses</td>
+      <td>Human (multi-agent)</td>
+    </tr>
+    <tr>
+      <td>PoseTrack</td>
+      <td>2D Pose Estimation &amp; Tracking</td>
+      <td>Videos from crowded scenes with annotated poses</td>
+      <td>Human (multi-agent)</td>
+    </tr>
+    <tr>
+      <td>AP-10K</td>
+      <td>2D Pose Estimation</td>
+      <td>Images of diverse animal species with annotated poses</td>
+      <td>Diverse species (single &amp; multi-agent)</td>
+    </tr>
+    <tr>
+      <td>MARS</td>
+      <td>2D Pose Estimation</td>
+      <td>Videos from 2 camera views with annotated poses</td>
+      <td>Mouse (multi-agent)</td>
+    </tr>
+    <tr>
+      <td>3D-ZEF</td>
+      <td>2D/3D Pose Estimation &amp; Tracking</td>
+      <td>Videos from 2 camera views with annotated poses</td>
+      <td>Zebrafish (multi-agent)</td>
+    </tr>
+    <tr>
+      <td>OpenMonkeyStudio</td>
+      <td>2D/3D Pose Estimation</td>
+      <td>Images with annotated poses from a 62 camera setup</td>
+      <td>Monkey (single-agent)</td>
+    </tr>
+    <tr>
+      <td>PAIR-R24M</td>
+      <td>2D/3D Pose Estimation &amp; Tracking</td>
+      <td>Videos from 12 camera views with poses from motion capture</td>
+      <td>Rat (multi-agent)</td>
+    </tr>
+    <tr>
+      <td>3DPW</td>
+      <td>2D/3D Pose Estimation &amp; Tracking</td>
+      <td>Videos from moving phone camera in challenging outdoor settings</td>
+      <td>Human (multi-agent)</td>
+    </tr>
+    <tr>
+      <td>3DHP</td>
+      <td>2D/3D Pose Estimation</td>
+      <td>Videos from 14 camera views with poses from motion capture</td>
+      <td>Human (single-agent)</td>
+    </tr>
+    <tr>
+      <td>Rat 7M</td>
+      <td>2D/3D Pose Estimation</td>
+      <td>Videos from 12 camera views with poses from motion capture</td>
+      <td>Rat (single-agent)</td>
+    </tr>
+    <tr>
+      <td>Kinetics</td>
+      <td>Video-level Action Classification</td>
+      <td>Videos from uncontrolled settings that cover 700 human actions</td>
+      <td>Human (single &amp; agent, may interact with other organisms/objects)</td>
+    </tr>
+    <tr>
+      <td>NTU-RGBD</td>
+      <td>Video-level Action Classification (also has 3D poses)</td>
+      <td>Videos from 80 views and depth with 60 human actions</td>
+      <td>Human (single &amp; multi-agent)</td>
+    </tr>
+    <tr>
+      <td>MultiTHUMOS</td>
+      <td>Frame-level Action Classification</td>
+      <td>Videos from uncontrolled settings with 65 action classes</td>
+      <td>Human (single &amp; multi-agent)</td>
+    </tr>
+    <tr>
+      <td>CRIM13</td>
+      <td>Frame-level Behavior Classification</td>
+      <td>Videos from 2 views, with 13 annotated social behaviors</td>
+      <td>Mouse (multi-agent)</td>
+    </tr>
+    <tr>
+      <td>Fly vs. Fly</td>
+      <td>Frame-level Behavior Classification (also has 2D poses)</td>
+      <td>Videos &amp; trajectory, with 10 annotated social behaviors</td>
+      <td>Fly (multi-agent)</td>
+    </tr>
+    <tr>
+      <td>CalMS21</td>
+      <td>Frame-level Behavior Classification (also has 2D poses)</td>
+      <td>Videos &amp; trajectory, with 10 annotated social behaviors</td>
+      <td>Mouse (multi-agent)</td>
+    </tr>
+    <tr>
+      <td>MABe</td>
+      <td>Frame-level Behavior Classification (also has 2D poses)</td>
+      <td>Top-down views, 7 annotated keypoints, hundreds of videos</td>
+      <td>Mouse (multi-agent)</td>
+    </tr>
+  </tbody>
+</table>
 
 Third, reproducibility of results is crucial for acceptance of new methods for video analysis within the research community and for research transparency. Guidance for documenting the details of models and algorithms can be obtained from the Machine Learning Reproducibility Checklist. It is applicable to any computational model in general. Importantly, the checklist calls for including the range of hyperparameters considered for experiments, mean and variance of results from multiple runs, and an explanation of how samples were allocated for train/validation/test. Further guidance for sharing code is available in this GitHub resource: Publishing Research Code. It provides tips on open-sourcing research code, including specifications of code dependencies, training and evaluation code, and including pre-trained models as part of any code repository. Beyond these resources, we note that there is also a broader definition of reproducibility in that experiments should be robustly reproducible: experimental results should ideally not vary significantly under minor perturbations. For example, even if there are minor variations to lighting or arena size from the original experiments, the video analysis results should not change significantly. A framework to ensure robust reproducibility is currently an open question, but the existing frameworks should facilitate producing the same results under the same experimental conditions. Model interpretability is another important consideration depending on the purpose of the video analysis experiment. Many machine learning models are ‘black box’ models, and not easily interpretable; as such, post hoc explanations may not always be reliable (Rudin, 2019). One way to generate human-interpretable models is through program synthesis (Balog et al., 2017) and neurosymbolic learning (Sun et al., 2022; Zhan et al., 2021). These methods learn compositions of symbolic primitives, which are closer in form to human-constructed models than neural networks. Interpretable models can facilitate reproducibility and trustworthiness in model predictions for scientific applications. Efforts at deploying these approaches for methods for video analysis and behavioral quantification are very much needed.
 

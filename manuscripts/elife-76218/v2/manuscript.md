@@ -12,10 +12,10 @@
 
 ### Affiliations
 
-1. https://ror.org/03cve4549 School of Life Sciences, IDG/McGovern Institute for Brain Research, Tsinghua University Beijing China
-2. https://ror.org/05kje8j93 Tsinghua-Peking Center for Life Sciences Beijing China
-3. https://ror.org/00vpwhm04 Institute of Neuroscience, State Key Laboratory of Neuroscience, Chinese Academy of Sciences Center for Excellence in Brain Science and Intelligence Technology Shanghai China
-4. https://ror.org/0551a0y31 Shanghai Center for Brain Science and Brain-Inspired Intelligence Technology Shanghai China
+1. School of Life Sciences, IDG/McGovern Institute for Brain Research, Tsinghua University Beijing China ([ROR:03cve4549](https://ror.org/03cve4549))
+2. Tsinghua-Peking Center for Life Sciences Beijing China ([ROR:05kje8j93](https://ror.org/05kje8j93))
+3. Institute of Neuroscience, State Key Laboratory of Neuroscience, Chinese Academy of Sciences Center for Excellence in Brain Science and Intelligence Technology Shanghai China ([ROR:00vpwhm04](https://ror.org/00vpwhm04))
+4. Shanghai Center for Brain Science and Brain-Inspired Intelligence Technology Shanghai China ([ROR:0551a0y31](https://ror.org/0551a0y31))
 
 † Corresponding author
 
@@ -37,31 +37,297 @@ In this work, we develop Selfee (Self-supervised Features Extraction) that adopt
 
 ## Results
 
-## Workflow of Selfee and its downstream analyses
+### Workflow of Selfee and its downstream analyses
 
 Selfee is trained to generate Meta-representations at the frame level, then analyzed at different time scales. First, grayscale videos are decomposed into single frames, and three tandem frames are stacked into a live-frame to generate a motion-colored RGB picture (Figure 1A). These live-frames preserve not only spatial information (e.g., postures of each individual or relative distances and angles between individuals) within each channel but also temporal information across different channels. Live-frames are used to train Selfee to produce comprehensive and discriminative representations at the frame level (Figure 1B). These representations can be later used in numerous applications. For example, anomaly detection on mutant animals can discover new phenotypes compared with their genetic controls (Figure 1C). Also, the AR-HMM could be applied to model the micro-dynamics of behaviors, such as the duration of states or the probabilities of state transitions (Wiltschko et al., 2015). The AR-HMM splits videos into modules and yields behavioral state usages that visualize differences between genotypes (Figure 1D). In contrast, DTW could compare the long-term dynamics of animal behaviors and capture global differences at the video level (Myers et al., 1980) by aligning pairs of time series and calculating their similarities (Figure 1E). These three demonstrations cover different time scales from frame to video level, and other downstream analyses could also be incorporated into the workflow of Selfee.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig1-v2.jpg)
+
+**Figure 1.:** (A) One live-frame is composed of three tandem frames in R, G, and B channels, respectively. The live-frame could capture the dynamics of animal behaviors. (B) Live-frames are used to train Selfee, which adopts a backbone of ResNet-50. (C, D, and E) Representations produced by Selfee could be used for anomaly detection that could identify unusual animal postures in the query video compared with the reference videos. (C) AR-HMM (autoregressive hidden Markov model) that models the local temporal characteristics of behaviors and clusters frames into modules (states) and calculates stages usages of different genotypes (D) DTW (dynamic time warping) that aligns behavior videos to reveal differences of long-term dynamics (E) and other potential tasks including behavior classification, forecasting, or even image segmentation and pose estimation after appropriately modifying and fine-tuning of the neural networks.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Textures on the damped filter paper would mislead Selfee to output features similar to copulation but not wing extension (ground truth). The left example showed a background that would not affect Selfee neural network, and the right example showed a background that could strongly affect classification accuracy. (B) Background inconsistency would affect the training process when Selfee was applied to mice behavior data. Therefore, backgrounds were removed from all frames to avoid potential defects. After background removal, illumination normalization was applied.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Visualization of fly courtship live-frames with t-SNE dimension reduction of distances between key points, including head, tail, thorax, and wings. Each dot was colored based on human annotations. Points representing non-interactive behaviors (‘others’), chasing, wing extension, copulation attempt, and copulation were colored with red, yellow, green, blue, and violet, respectively. (B) Visualization of fly courtship live-frames with t-SNE dimension reduction of human-engineered features, including male head to female tail distance, male body to female body distance, male wing angle, female wing angle, and angle between male body axis. Each dot was colored based on human annotations. Points representing non-interactive behaviors (‘others’), chasing, wing extension, copulation attempt, and copulation were colored with red, yellow, green, blue, and violet, respectively.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Visualization of DLC tracking results on intensive interactions between mice during mating behavior. The nose, ears, body center, hips, and bottom were labeled. DLC tended to detect two animals as one due to occluding. (B) Visualization of FlyTracker tracking results provided in Fly-vs-Fly dataset. The head, tail, center, and wings were colored in red, blue, purple, and green, respectively. When two flies were close, wings became hard to be detected correctly. (C) Visualization of SLEAP tracking results on close interactions during fly courtship behavior. Five body parts were marked with points, including head, tail, thorax, and wings, and head to tail, thorax to wings were linked by lines. Female was labeled in red, and the male was in blue. Body parts were wrongly assigned when two animals were close.
+
 Compared with previous machine learning frameworks for animal behavior analysis, Selfee has three major advantages. First, Selfee and the Meta-representations could be used for various tasks. The contrastive learning process of Selfee would allow output features to be appropriately compared by cosine similarity. Therefore, distance-based applications, including classification, clustering, and anomaly detection, would be easily realized. It was also reported that with some adjustment of backbones, self-supervised learning would facilitate tasks such as pose estimation (Dahiya et al., 2021) and object segmentation (Caron et al., 2021; He et al., 2020). Those findings indicate that Selfee could be generalized, modified, and fine-tuned for animal pose estimation or segmentation tasks. Second, Selfee is a fully unsupervised method developed to annotate animal behaviors. Although some other techniques also adopt semi-supervised or unsupervised learning, they usually require manually labeled pre-defined key points of the images (Huang et al., 2021; Luxem et al., 2020); some methods also require expert-defined programs for better performance (Sun et al., 2021). Key point selection and program incorporation require a significant amount of prior knowledge and are subject to human bias. In contrast, Selfee does not need any prior knowledge. Finally, Selfee is relatively hardware-inexpensive compared with other self-supervised learning methods (Chen et al., 2020; Chen et al., 2020; Grill et al., 2020). Training Selfee only takes 8 hr on a single RTX 3090 GPU (graphic card), and the inference speed could reach 800 frames per second. Selfee could accept top-view 2D grayscale video frames as inputs so that neither depth cameras (Wiltschko et al., 2015) nor fine-calibrated multi-view camera arrays (Huang et al., 2021) are required. Therefore, Selfee can be trained and used with routinely collected behavior videos on ordinary desktop workstations, warranting its accessibility to biology laboratories.
 
-## Siamese CNNs capture discriminative representations of animal posture
+### Siamese CNNs capture discriminative representations of animal posture
 
 Selfee contains a pair of Siamese CNNs trained to generate discriminative representations for live-frames. ResNet-50 (He et al., 2016) is chosen as the backbone whose classifier layer is replaced by a three-layer multi-layer perceptron (MLP). These MLPs are called projectors which yield final representations during the inference stage. There are two branches in Selfee. The main branch is equipped with an additional predictor, while the reference branch is a copy of the main branch (the SimSiam style; Chen et al., 2020). To the best of our knowledge, the SimSiam style is the most straightforward Siamese CNN frameworks with only one term of loss. Both branches contain group discriminators after projectors and perform dimension reduction on extracted features for online clustering (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig2-v2.jpg)
+
+**Figure 2.:** (A) The architecture of Selfee networks. Each live-frame is randomly transformed twice before being fed into Selfee. Data augmentations include crop, rotation, flip, Turbo, and color jitter. (B) Selfee adopts a SimSiam-style network structure with additional group discriminators. Loss 1 is canonical negative cosine loss, and loss 2 is the newly proposed CLD (cross-level instance-group discrimination) loss. (C) A brief illustration of two loss terms used in Selfee. The first term of loss is negative cosine loss, and the outcome from the reference branch is detached from the computational graph to prevent mode collapse. The second term of loss is the CLD loss. All data points are colored based on the clustering result of the upper branch, and points representing the same instance are attached by lines. For one instance, the orange triangle, its representation from one branch is compared with cluster centroids of another branch and yields affinities (green arrows). Loss 2 is calculated as the cross-entropy between the affinity vector and the cluster label of its counterpart (blue arrows).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Visualization of each augmentation. For data augmentations, crop, rotation, flip, Turbo, and color jitter were applied. Each live-frame was randomly cropped into a smaller version containing more than 49% (70%×70%) of the original image; then the image was randomly (clockwise or anticlockwise) rotated for an angle smaller than the acute angle formed by the diagonal line and the vertical line, then the image would be vertically flipped, horizontally flipped, and/or applied the Turbo lookup table at the probability of 50%, respectively; and finally, the brightness, contrast, saturation, and hue were randomly adjusted within 10% variation. Detailed descriptions of each augmentation could be found in the Materials and methods and source codes.
 
 During the training stage, batches of live-frames are randomly transformed twice and fed into the main branch and reference branch, respectively. Augmentations applied to live-frames include crop, rotation, flip, and application of the Turbo lookup table (Mikhailov, 2019) followed by color jitters (Figure 2A, Figure 2—figure supplement 1). The reference branch yields a representation of received frames, while the main branch predicts the outcome of the reference branch. This is the first objective of the training process, which optimizes the cosine similarity between the outcome of the reference branch and its prediction given by the main branch. To prevent mode collapse, the reference branch will not receive gradient information during optimization, which means the outcome of the reference branch is detached from the computational graph and treated as ground truth (Figure 2C). The second objective is to optimize the clustering results of representations from two discriminators. For one instance, its representation from one branch is compared with cluster centroids of another branch and yields affinities. The affinity vector is optimized to be consistent with the cluster label of its counterpart. In the original publication (Wang et al., 2021), this loss is termed cross-level instance-group discrimination (CLD) loss (Figure 2C). Because the main branch and reference branch are symmetric, similar loss calculations can also be done after swapping the identity of these two branches. The final loss is the average loss under the two conditions. In this way, Selfee is trained to be invariant to those transforms and focus on critical information to yield discriminative representations.
 
 After the training stage, we evaluated the performance of Selfee with t-SNE visualization and k-NN classification. To investigate whether our model captured human-interpretable features, we manually labeled one clip of Drosophila courtship video and visualized those representations with t-SNE dimension reduction. On the t-SNE map, human-annotated courtship behaviors, including chasing, wing extension, copulation attempt, copulation, and non-interactive behaviors (‘others’), were grouped in a non-random pattern (Figure 3A). Then, we would like to know if our neural network could capture fine-grained features beyond human-defined labels. Using cutting-edge animal tracking software SLEAP (Pereira et al., 2022), flies’ wings, heads, tails, and thoraxes were tracked throughout the clip automatically with manual proofreading (Figure 3—video 1). Three straight-forward features were visualized on the t-SNE map. Distances between male heads and female tails could indicate chasing intensity; wing angles of male flies were correlated to wing extension behavior, and distances of male flies away from the chamber center could reflect the trade-off between their thigmotaxis (Besson and Martin, 2005) and courtship motivation. We found that the features extracted by Selfee separated wing extension behaviors based on the wing angles (Figure 3—figure supplement 1C) and male head to female tail distance (Figure 3—figure supplement 1D). The result also showed that chasing behavior could be separated based on the positions of male flies in the chamber, which might indicate the thigmotaxis level. In conclusion, Selfee is capable of extracting comprehensive features that consist of human observations or animal tracking results, and in this way, Selfee uniforms natural-languages-based human descriptions and engineered features from tracking results in different units (e.g., rad for angle and mm for distance) and scales in a single discriminative Meta-representation.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig3-v2.jpg)
+
+**Figure 3.:** (A) Visualization of fly courtship live-frames with t-SNE dimension reduction. Each dot was colored based on human annotations. Points representing chasing, wing extension, copulation attempt, copulation, and non-interactive behaviors (‘others’) were colored with yellow, green, blue, violet and red, respectively. (B) The confusion matrix of the k-NN classifier for fly courtship behavior, normalized by the numbers of each behavior in the ground truth. The average F1 score of the sevenfold cross-validation was 72.4%, and mAP was 75.8%. The recall of each class of behaviors was indicated on the diagonal of the confusion matrix. (C) A visualized comparison of labels produced by the k-NN classifier and human annotations of fly courtship behaviors. The k-NN classifier was constructed with data and labels of all seven videos used in the cross-validation, and the F1 score was 76.1% and mAP was 76.1%. (D) Visualization of live-frames of mice mating behaviors with t-SNE dimension reduction. Each dot is colored based on human annotations. Points representing non-interactive behaviors (‘others’), social interest, mounting, intromission, and ejaculation were colored with red, yellow, green, blue, and violet, respectively. (E) The confusion matrix of the LightGBM (Light Gradient Boosting Machine) classifier for mice mating behaviors, normalized by the numbers of each behavior in the ground truth. For the LightGBM classifier, the average F1 score of the eightfold cross-validation was 67.4%, and mAP was 69.1%. The recall of each class of behaviors was indicated on the diagonal of the confusion matrix. (F) A visualized comparison of labels produced by the LightGBM classifier and human annotations of mice mating behaviors. An ensemble of eight trained LightGBM was used, and the F1 sore was 68.1% and mAP was not available for this ensembled classifier due to the voting mechanism.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Visualization of fly courtship live-frames with t-SNE dimension reduction. Each dot was colored based on human annotations. Points representing non-interactive behaviors (‘others’), chasing, wing extension, copulation attempt, and copulation were colored with red, yellow, green, blue, and violet, respectively. Same as Figure 3A. (B) Fly skeletons were semi-automated labeled, and three features were used in the following panels. Five body parts were marked with points, including head, tail, thorax, wings, and head to tail, thorax to wings were linked by lines. Females were indicated by blue color and males were indicated by orange color. Three features were male head to female tail distance, male thorax to chamber center, and the angle between male wings, which were indicated in violet. (C) Male wing angles were visualized on the t-SNE map same as panel A. Frames of wing extension behaviors in the red box were of relatively smaller wing angles than those in the orange box. Some examples from these two groups were exhibited on the right, with their angle values below each image. (D) Male head to female tail distances were visualized on the t-SNE map same as panel A. Frames of wing extension behaviors in the red box were of relatively shorter distance than those in the orange and violet boxes. Some examples from these three groups were exhibited on the right, with their distance values below each image. (E) Male thorax to chamber center distances were visualized on the t-SNE map same as panel A. Frames of chasing behaviors in the violet box were of relatively shorter distance than those in the orange box. Some examples from these two groups were exhibited on the right, with their distance values below each image.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Some wing extension frames are hard to distinguish from chasing behaviors. Images in the first row were labeled as no wing extension; images in the second to the fourth rows were labeled as wing extension. Images in the second row were of relatively weak wing extension (blue indicators pointed at slightly extended wings), and the fourth row showed a process from no wing extension to strong wing extension. (B) The confusion matrix of the k-NN classifier, normalized by the numbers of each behavior in inferred labels. The average F1 score of the sevenfold cross-validation was 72.4%, and mAP was 75.8%. The precision of each class of behaviors was indicated on the diagonal of the confusion matrix.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (A) For the k-NN classifier, the average F1 score of the eightfold cross-validation was 59.0%, and mAP was 53.0%. The confusion matrix of the k-NN classifier, normalized by the numbers of each behavior in the ground truth. The recall of each class of behaviors was indicated on the diagonal of the confusion matrix. (B) The confusion matrix of the k-NN classifier, normalized by the numbers of each behavior in inferred labels. The precision of each class of behaviors was indicated on the diagonal of the confusion matrix. (C) The confusion matrix of the LightGBM (Light Gradient Boosting Machine) classifier, normalized by the numbers of each behavior in inferred labels. The precision of each class of behaviors was indicated on the diagonal of the confusion matrix. The LightGBM classifier had a much better performance compared with the k-NN classifier.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) The average F1 score of the ninefold cross-validation was 49.6%, and mAP was 46.6%. The confusion matrix of the k-NN classifier, normalized by the numbers of each behavior in the ground truth. The recall of each class of behaviors was indicated on the diagonal of the confusion matrix. (B) The confusion matrix of the k-NN classifier, normalized by the numbers of each behavior in inferred labels. The precision of each class of behaviors was indicated on the diagonal of the confusion matrix.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (A) The distribution of different behaviors in wild-type flies courtship videos. (B) Visualization of the same live-frames as Figure 3A with t-SNE dimension reduction. Used representations were extracted by models trained without cross-level instance-group discrimination (CLD) loss. Each dot is colored based on human annotations. The legend is shared with panel A. (C) The confusion matrix of the k-NN classifier, normalized by the numbers of each behavior in the ground truth. The recall of each class of behaviors was indicated on the diagonal of the confusion matrix. Used representations were extracted by models trained without CLD loss. (D) Collapse levels during the training process. Collapse level was calculated as one minus to the average standard deviation of each channel of the representation multiplied by the square root of the channel number. One means maximum collapse, while zero means no collapse. Without CLD loss, Selfee suffered from catastrophic mode collapse. Details for collapse level calculation could be found in Materials and methods. (E) Visualization of the same live-frames as Figure 3A with t-SNE dimension reduction. Used representations were extracted by models trained without Turbo transformation. Each dot is colored based on human annotations. The legend is shared with panel A. (F) The confusion matrix of the k-NN classifier, normalized by the numbers of each behavior in the ground truth. The recall of each class of behaviors was indicated on the diagonal of the confusion matrix. Used representations were extracted by models trained without Turbo transformation.
+
 Meta-representations can also be used for behavior classification. We manually labeled seven 10,000-frame videos (around 5 min each) as a pilot dataset. A weighed k-NN classifier was then constructed as previously reported (Wu et al., 2018). Sevenfold cross-validation was performed on the dataset with the k-NN classifier, which achieved a mean F1 score of 72.4% and achieved a similar classification result as human annotations (Figure 3B and C). The classifier had the worst recall score on wing extension behaviors (67% recall, Figure 3B), likely because of the ambiguous intermediate states between chasing and wing extension (Figure 3—figure supplement 2A). The precisions also showed that this k-NN classifier tended to have strict criteria for wing extension and copulation and relatively loose criteria for chasing and copulation attempts (Figure 3—figure supplement 2B). It was reported that independent human experts could only reach agreements on around 70% of wing extension frames (Leng et al., 2020), comparable to the performance of our k-NN classifier.
 
 Next, we compared Selfee extracted features with animal-tracking derived features. In a previous study Leng et al., 2020, labeled wing extension intensities of male flies for three clips of male-female interaction videos: each frame was scored from 0 (no wing extension) to 3 (strong wing extension) by two experienced researchers. Here, we used their summarized score as ground-truth labels. FlyTracker (Fleet et al., 2014) was used to track each fly’s body, wings and legs, and the identity swap between male and female flies was manually corrected in the previous work. We used four types of post-processing for the tracking results. Features from FlyTracker and JAABA (Kabra et al., 2013) were from the work by Leng et al., 2020. We also constructed pure distance-based features recording distances between all key points (heads, tails, thoraxes, wings, and with or without legs). For a fair comparison, we evaluated the performance of weight k-NN classifiers in sixfold cross-validations for all types of features, and none of the additional temporal information aggregation was used (e.g., sliding window voting used in Selfee, bout features used in FlyTracker, or window features used in JAABA). Three evaluation metrics were applied, including a robust version of Pearson’s correlation coefficient (Lai et al., 2019), F1 score, and average precision. We found that Selfee extracted features achieved comparable results with FlyTracker features or JAABA features, and it achieved the best performance evaluated by Pearson’s correlation and F1 score (Table 1). We also found that additional irrelevant key points marking fly legs would strongly interfere the performance of pure distance-based features, indicating that key point choice and feature engineering were crucial for downstream classification. The comparison also yielded an interesting result that the pure distance-based feature could even outperform human-engineered features like FlyTracker features. Distances between key points indeed preserved detailed information on animal behaviors, but it remained unclear if they could capture the universals of behavioral stereotypes. For further investigation, we visualized distance-based features and human-engineered features on the same clip as in Figure 3A with t-SNE dimension reduction. Results showed that distance-based features were overfocused on subtle differences between frames and neglected differences between major types of behaviors. In contrast, human-engineered features formed distinct clusters corresponding to human annotations on the t-SNE map (Figure 1—figure supplement 2), so did Selfee features (Figure 3A). Therefore, although pure distance-based features could outperform human-engineered features and Selfee features using highly non-linear k-NN classifier, they were less abstractive. Overall, Selfee extracted features are as discriminative as classic animal-tracking derived features, but could be used more easily without careful key points definition or dedicated feature engineering.
+
+**Table 1.**
+ A comparison between Selfee (Self-supervised Features Extraction) extracted features and animal-tracking derived features.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Evaluationssetups</th>
+      <th>Pearson’s R</th>
+      <th>F1 score</th>
+      <th>AP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Selfee</td>
+      <td>0.774*</td>
+      <td>0.629*</td>
+      <td>0.354</td>
+    </tr>
+    <tr>
+      <td>FlyTracker -&gt;FlyTracker</td>
+      <td>0.756</td>
+      <td>0.571</td>
+      <td>0.330</td>
+    </tr>
+    <tr>
+      <td>FlyTracker -&gt;JAABA</td>
+      <td>0.755</td>
+      <td>0.613</td>
+      <td>0.346</td>
+    </tr>
+    <tr>
+      <td>FlyTracker (w/o legs) -&gt;distance</td>
+      <td>0.771</td>
+      <td>0.613</td>
+      <td>0.374*</td>
+    </tr>
+    <tr>
+      <td>FlyTracker (w/ legs) -&gt;distance</td>
+      <td>0.629</td>
+      <td>0.400</td>
+      <td>0.256</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Best results of different feature extractors under each evaluation metric are indicated in bold values._
 
 We then asked whether Selfee can be generalized to analyze behaviors of other species. We fine-tuned fly video pre-trained Selfee with mice mating behavior data. The mating behavior of mice can be defined mainly into five categories (McGill, 1962), including social interest, mounting, intromission, ejaculation, and others (see Materials and methods for detailed definitions). With t-SNE visualization, we found that five types of behaviors could be separated by Selfee, although mounting behaviors were rare and not concentrated (Figure 3D). We then used eight human-annotated videos to test the k-NN classification performance of Selfee-generated features. We achieved an F1 score of 59.0% (Table 3-Replication 1, Figure 3—figure supplement 3). Mounting, intromission, and ejaculation share similar static characteristics but are different in temporal dynamics. Therefore, we asked if more temporal information would assist the classification. Using the LightGBM (Light Gradient Boosting Machine) classifier (Ke et al., 2017), we achieved a much higher classification performance by incorporating slide moving average and standard deviation of 81-frame time windows, the main frequencies, and their energy within 81-frame time windows. The average F1 score of eightfold cross-validation could reach 67.4%, and the classification results of the ensembled classifier (see Materials and methods) were closed to human observations (Figure 3E and F). Nevertheless, it was still difficult to distinguish between mounting, intromission, and ejaculation because mounting and ejaculation are much rarer than social body contact or intromission.
 
 Selfee is more robust than the vanilla SimSiam networks when applied to the behavioral data. Behavioral data often suffer from severe imbalance. For example, copulation attempts are around sixfold rarer than wing extension during fly courtship (Figure 3—figure supplement 5A). Therefore, we added group discriminators to vanilla SimSiam networks, which were reported to fight against the long-tail effect proficiently (Wang et al., 2021). As noted in the original publication of CLD loss, k-means clustering lifted weights of rare behaviors in batches from the reciprocal of the batch size to the reciprocal of the cluster number, for which the imbalance between majority and minority classes can be ameliorated (Wang et al., 2021). Aside from overcoming the long-tail effect, we also found group discriminators helpful for preventing mode collapse during ablation studies (Figure 3—figure supplement 5B-D and Table 2). We hypothesized that the convergence could be easily reached on images of similar objects (two flies), by which CNNs may not be well trained to extract good representations. Without CLD loss, it could be easier to output similar representations than to distinguish images apart, because only the attraction between positive samples was applied. Using CLD loss, Selfee could explicitly utilize negative samples and encourage both repulsion and attraction. Therefore, the mode collapse could be largely avoided. Aside from CLD loss, Turbo transformation was another customed modification. Applying the Turbo lookup table on grayscale frames brought more complexity and made color distortions more powerful on grayscale images, one of the most critical type of augmentations reported before (Chen et al., 2020). Because hue and saturation of a grayscale image are meaningless, color jitter can be strongly enhanced after Turbo transforms. Selfee would capture more useful features with this Turbo augmentation (Figure 3—figure supplement 5E, F and Table 2). Live-frames used by Selfee were also helpful to capture temporal information of animal behaviors, especially for highly dynamic ones such as mice mating behaviors. We found that Selfee features extracted from single frames were less discriminative than those extracted from live-frames (Table 3). In summary, our modifications to original SimSiam designs, including live-frames extracting temporal dynamics, Turbo transformation customed for grayscale images, and CLD loss coping with the long-tailed nature of behavioral data, provide a significant performance boost in the case of animal behavior analysis.
 
-## Anomaly detection at the frame level identifies rare behaviors at the sub-second time scale
+**Table 2.**
+ An ablation test of Selfee (Self-supervised Features Extraction) training process on fly datasets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th colspan="2">Pre-trained ResNet-50 with random projectors</th>
+      <th colspan="2">Selfee</th>
+      <th colspan="2">Selfee without CLD loss</th>
+      <th colspan="2">Selfee without Turbo transformation</th>
+    </tr>
+    <tr>
+      <th>Evaluation</th>
+      <th>Mean F1 score</th>
+      <th>Mean AP</th>
+      <th>Mean F1 score</th>
+      <th>Mean AP</th>
+      <th>Mean F1 score</th>
+      <th>Mean AP</th>
+      <th>Mean F1 score</th>
+      <th>Mean AP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Replication 1</td>
+      <td>0.586</td>
+      <td>0.580</td>
+      <td>0.724</td>
+      <td>0.758</td>
+      <td>0.227</td>
+      <td>0.227</td>
+      <td>0.604</td>
+      <td>0.550</td>
+    </tr>
+    <tr>
+      <td>Replication 2</td>
+      <td>0.597</td>
+      <td>0.570</td>
+      <td>0.676</td>
+      <td>0.683</td>
+      <td>0.163</td>
+      <td>0.200</td>
+      <td>0.574</td>
+      <td>0.551</td>
+    </tr>
+    <tr>
+      <td>Replication 3</td>
+      <td>0.596</td>
+      <td>0.586</td>
+      <td>0.714</td>
+      <td>0.754</td>
+      <td>0.172</td>
+      <td>0.214</td>
+      <td>0.517</td>
+      <td>0.497</td>
+    </tr>
+    <tr>
+      <td>Best</td>
+      <td>0.597</td>
+      <td>0.586</td>
+      <td>0.724*</td>
+      <td>0.758*</td>
+      <td>0.227</td>
+      <td>0.227</td>
+      <td>0.604</td>
+      <td>0.551</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Best results of different training setups under each evaluation metric are indicated in bold values._
+
+**Table 3.**
+ An ablation test of Selfee training process on mice datasets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model</th>
+      <th colspan="2">Single frame + KNN</th>
+      <th colspan="2">Live-frame + KNN</th>
+      <th colspan="2">Single frame + LGBM</th>
+      <th colspan="2">Live-frame + LGBM</th>
+    </tr>
+    <tr>
+      <th>Evaluation</th>
+      <th>Mean F1 score</th>
+      <th>Mean AP</th>
+      <th>Mean F1 score</th>
+      <th>Mean AP</th>
+      <th>Mean F1 score</th>
+      <th>Mean AP</th>
+      <th>Mean F1 score</th>
+      <th>Mean AP</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Replication 1</td>
+      <td>0.554</td>
+      <td>0.498</td>
+      <td>0.590</td>
+      <td>0.530</td>
+      <td>0.645</td>
+      <td>0.671</td>
+      <td>0.674</td>
+      <td>0.691</td>
+    </tr>
+    <tr>
+      <td>Replication 2</td>
+      <td>0.574</td>
+      <td>0.508</td>
+      <td>0.599</td>
+      <td>0.549</td>
+      <td>0.653</td>
+      <td>0.663</td>
+      <td>0.663</td>
+      <td>0.699</td>
+    </tr>
+    <tr>
+      <td>Replication 3</td>
+      <td>0.566</td>
+      <td>0.514</td>
+      <td>0.601</td>
+      <td>0.539</td>
+      <td>0.652</td>
+      <td>0.692</td>
+      <td>0.663</td>
+      <td>0.700</td>
+    </tr>
+    <tr>
+      <td>Mean</td>
+      <td>0.565</td>
+      <td>0.507</td>
+      <td>0.597</td>
+      <td>0.539</td>
+      <td>0.650</td>
+      <td>0.675</td>
+      <td>0.667*</td>
+      <td>0.697*</td>
+    </tr>
+    <tr>
+      <td>Best</td>
+      <td>0.574</td>
+      <td>0.514</td>
+      <td>0.601</td>
+      <td>0.549</td>
+      <td>0.653</td>
+      <td>0.692</td>
+      <td>0.674*</td>
+      <td>0.700*</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Best results of different training setups under each evaluation metric are indicated in bold values._
+
+### Anomaly detection at the frame level identifies rare behaviors at the sub-second time scale
 
 The representations produced by Selfee could be directly used for anomaly detection without further post-processing. During the training step, Selfee learns to compare Meta-representations of frames with cosine distance which is also used for anomaly detection. When given two groups of videos, namely the query group and the reference group, the anomaly score of each live-frame in the query group is calculated in two steps (Figure 4A). First, distances between the query live-frame and all reference live-frames are measured, and the k-nearest distance is referred to as its inter-group score (IES). Without further specification, k equals 1 in all anomaly detections in this work, which is a trivial and intuitive case of the k-NN algorithm to avoid parameter search of k. Some false positives occurred when only the IES was used as the anomaly score (Figure 4—figure supplement 1A). The reason could be that two flies in a chamber could be in mathematically infinite relative positions and form a vast event space. However, each group usually only contains several videos, and each video is only recorded for several minutes. For some rare postures, even though the probability of observing them is similar in both the query and reference group, they might only occur in the query group but not in the reference group. Therefore, an intra-group score (IAS) is introduced in the second step to eliminate these false-positive effects. We assume that those rare events should not be sampled frequently in the query groups either. Thus, the IAS is defined as the k-nearest distance of the query frame against all other frames within its group, except those within the time window of ±50 frames, because representations for frames beyond 50 frames were less similar to the current frame (Figure 4—figure supplement 1B). The final anomaly score is defined as the IES minus the IAS.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig4-v2.jpg)
+
+**Figure 4.:** (A) The calculation process of anomaly scores. Each query frame is compared with every reference frame, and the nearest distance was named IES (the thickness of lines indicates distances). Each query frame is also compared with every query frame, and the nearest distance is called IAS. The final anomaly score of each frame equals IES minus IAS. (B) Anomaly detection results of 15 fly lines with mutations in neurotransmitter genes or with specific neurons silenced ( n = 10,9,10,7,12,15,29,7,16,8,8,6,7,7,9,7, respectively). RA is short for CCHa2-R-RA, and RB is short for CCHa2-R-RB. CCHa2-R-RBGal4>Kir2.1, q<0.0001; TrhGal4, q=0.0432; one-way ANOVA with Benjamini and Hochberg correction. (C) Examples of mixed tussles and copulation attempts identified in CCHa2-R-RBGal4>Kir2.1 flies. (D) The temporal dynamic of anomaly scores during the mixed behavior, centralized at 1.67 s. SEM is indicated with the light color region. (E) Examples of close body contact behaviors identified in TrhGal4 flies. (F) The cosine similarity between the center frame of the close body contact behaviors (1.67 s) and their local frames. SEM is indicated with the light color region. (G) The kicking index of TrhGal4 flies (n=30) was significantly lower than w1118 flies (n=27), p=0.0034, Mann-Whitney test. (H) Examples of social aggregation behaviors of TrhGal4 flies and w1118 flies. Forty male flies were transferred into a vertically placed triangle chamber (blue dashed lines), and the photo was taken after 20 min. A fly was indicated by a blue arrow. The lateral sides of the chamber were 16.72 cm. (I) Social distances of TrhGal4 flies (n=6) and w1118 flies (n=6). TrhGal4 flies had much closer social distances with each other compared with w1118 flies; nearest, p=0.0043; median, p=0.002; average, p=0.0087; all Mann-Whitney test. (J) Distributions of the median social distance of TrhGal4 flies and w1118 flies. Distributions were calculated within each replication. Average distributions were indicated with solid lines, and SEMs were indicated with light color regions.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Anomaly scores without IAS of wild-type male-male interactions with the same genotype as references. The blue region indicates the max anomaly score when using IAS; blue dots indicate anomaly scores without IAS that fall into the blue region; red dots indicate false-positive anomaly scores. (B) The cosine similarity between the center frame of wild-type courtship behaviors (1.67 s) and their local frames. SEM is indicated with the light color region. Seven videos containing 70,000 frames were split into non-overlapping 100-frame fragments for calculations. Beyond ±50 frames, the cosine similarity dropped to a much lower level, not affecting anomaly detection.
 
 To test whether our methods could detect anomalous behavior in real-world data, we performed anomaly detection to 15 previously recorded neurotransmitter-related mutant alleles or neuron-silenced lines (with UAS-Kir2.1; Paradis et al., 2001; Figure 4B). Their male-male interaction videos were inferred by Selfee trained on male-female courtship videos. Since we aimed to find interactions distinct from male-male courtship behaviors, a baseline of ppk23 >Kir2.1 flies was established because this line exhibits strong male-male courtship behaviors (Thistle et al., 2012). We compared the top-100 anomaly scores from sets of videos from experimental groups and wild-type control flies. The results revealed that one line, CCHa2-R-RB>Kir2.1, showed a significantly high anomaly score. By manually going through all anomalous live-frames, we further identified its phenotype as a brief tussle behavior mixed with copulation attempts (Figure 4C, Figure 4—video 1, 0.2× play speed). This behavior was ultra-fast and lasted for less than a quarter second (Figure 4D), making it difficult to be detected by human observers. Up to this point, we have demonstrated that the frame-level anomaly detection could capture sub-second behavior episodes that human observers tend to neglect.
 
@@ -69,9 +335,13 @@ Selfee also revealed that Trh (Tryptophan hydroxylase) knock-out flies had close
 
 To further ask whether these close body contacts have biological significance, we performed corresponded behavior assays on mutant flies. Based on the fact that the Trh mutant male flies have a higher tolerance to body touch, we hypothesized that they would have a decreased defensive behavior. As previously reported, fruit flies show robust defensive behavior to mechanical stimuli on their wings (Li et al., 2016; Liu et al., 2020). Decapitated flies would kick with their hind legs when a thin probe stimulates their wings. This stimulation mimics the invasion of parasitic mites and could be used to test its defensive behavior. Our results showed that Trh knock-out flies had a significantly lower kicking rate than control flies (Figure 4G), indicating a reduction of self-defensive intensity. Next, we performed social behavior assay (McNeil et al., 2015; Simon et al., 2012) on the mutant flies because the close body contact can also be explained by reduced social distance. We measured the nearest distance, median distance, and average distance of each male fly in a 40-individual group placed in a vertical triangular chamber (Figure 4H). By comparing median values of these distances of each replication, Trh knock-out flies kept significantly shorter distances from others than the control group (Figure 4H, I). The probability density function of their median distances also showed that knock-out flies had a closer social distance than control flies (Figure 4J). Therefore, we concluded that Trh knock-out flies had reduced self-defensive behavior and social distance, which validated the anomaly detected by Selfee. Taken together, Selfee is capable of discovering novel features of animal behaviors with biological relevance when a proper baseline is defined.
 
-## Modeling motion structure of animal behaviors
+### Modeling motion structure of animal behaviors
 
 Animal behaviors have long-term structures beyond single-frame postures. The duration and proportions of each bout and transition probabilities of different behaviors have been proven to have biological significance (Mueller et al., 2019; Wiltschko et al., 2015). To better understand those long-term characteristics, we introduce AR-HMM and DTW analyses to model the temporal structure of animal behaviors. AR-HMM is a powerful method for analyzing stereotyped behavioral data (Rudolph et al., 2020; Wiltschko et al., 2015; Wiltschko et al., 2020). It discovers modules of behaviors and describes the modules with autoregressive matrixes. In other words, each embedding of the frame is predicted by a linear combination of embeddings of several previous frames, and frames within each module share the same coefficients of the linear combination, which is called autoregressive matrixes. In an AR-HMM, these fitted autoregressive patterns are utilized as hidden states of the HMM. The transition between each hidden state (autoregressive pattern) is determined by the transition matrix of the HMM. By the definition of Markov property, the transition from the current state to the next state is only determined by the current state and transition probabilities (Figure 5A). In this way, AR-HMM could capture local structures (autoregressive pattern) of animal behaviors as well as syntaxes (transition probabilities).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig5-v2.jpg)
+
+**Figure 5.:** (A) A brief illustration of the autoregressive hidden Markov model (AR-HMM). The local autoregressive property is determined by βt, the autoregressive matrix, which is yield based on the current hidden state of the HMM. The transition between each hidden state is described by the transition matrix (pij). (B) Principal component analysis (PCA) visualization of state usages of mice in control groups (n=17, blue points) and chronic immobilization stress (CIS) groups (n=17, red points). (C) State usages of 10 modules. Module No.0 and No.3 showed significantly different usages in wild-type and mutant flies; p=0.00065, q=0.003 and p=0.015, q=0.038, respectively, Mann-Whitney test with Benjamini and Hochberg correction. (D) The differences spotted by the AR-HMM could be explained by the mice’s position. Mice distances to the two nearest walls were calculated in each frame. Distance distributions (the bin width was 1 cm) throughout open-field test (OFT) experiments were plotted in solid lines, and SEMs were indicated with light color regions. Green blocks indicated bins with statistic differences between the CIS group and control groups. Frames assigned to modules No.0 and No.3 were isolated, and their distance distributions were plotted in blue and yellow bars, respectively. Frames of module No.0 were enriched in bins of larger values, while frames of module No.3 were enriched in bins of smaller values. (E) A brief illustration of the dynamic time warping (DTW) model. The transformation from a rounded rectangle to an ellipse could contain six steps (gray reference shapes). The query transformation lags at step 2 but surpasses at step 4. The dynamic is visualized on the right panel. (F) NorpA36 flies (n=6) showed a significantly longer copulation latency than wild-type flies (n=7), p=0.0495, Mann-Whitney test. (G) NorpA36 flies had delayed courtship dynamics than wild-type flies with DTW visualization. Dynamic of wild-type flies and NorpA mutant flies were indicated by blue and red lines, respectively, and SEMs were indicated with light color regions. The red line was laid below the blue line, showing a delayed dynamic of NorpA mutant flies.
 
 We asked if we could detect the dynamic changes in mice behaviors after chronic immobilization stress (CIS) during the open-field test (OFT). The CIS model is well established to study the depression-like behavior of experimental animals, and the anxiety level of mice can be evaluated with OFT. Mice prefer to walk near the wall, and the time spent in the center of the arena is considered to be related with anxiety behavior (Crusio et al., 2013; Prut and Belzung, 2003). We tested the OFT performance of mice with or without the CIS treatment. After preprocessing, videos were processed with Selfee trained with mice mating behavior. An AR-HMM with five modules (No.0 to No.4) was fitted to analyze behaviors during OFT. PCA of state usages revealed an apparent difference between mice with and without CIS experience (Figure 5B). Usages of two modules (No.0 and No.3) showed statistically significant differences between the two groups (Figure 5C). By watching sampled fragments of these two behaviors, we found module No.0 might be exploratory-like behavior, while module No.3 contained mice walking alongside walls (Figure 5—videos 1 and 2). To further confirm these observations, videos were analyzed by an animal tracking program, whose results were proofread manually. Mice in the CIS group spent more time near walls while mice in the control group spent more time in the central area (Figure 5C, blue and red lines), and similar observations had been reported before (Ramirez et al., 2015). Then, we analyzed whether these two modules were related to mice’s position in the arena. All frames belonging to each module were extracted, and distances to the two nearest walls were calculated, the same as what was performed on all videos. The result indicated that mice performing behavior No.0 were relatively distant from walls, while in module No. 3, mice were closer to the border (Figure 5C, cyan and yellow bars). These results showed that Selfee with AR-HMM successfully distinguished mice in the control group from the CIS group, and the differences spotted by Selfee were consistent with previous observations (Ramirez et al., 2015). It is also established that Selfee with AR-HMM could discover the differences in proportions of behaviors, similar to what could be achieved with classic manual analysis or animal tracking software.
 
@@ -79,9 +349,21 @@ The AR-HMM modeling does not necessarily capture the difference in long-term dyn
 
 Previously, DTW was widely applied to numerical measures of animal behaviors, including trajectory (Cleasby et al., 2019), audios (Kohlsdorf et al., 2016), and acceleration (Aurasopon, 2016). For the first time, we applied DTW to image data, with the aid of Selfee, to study the prolonged dynamic of animal behaviors. We applied DTW to analyze representations of NorpA mutant flies. Visual cues are essential for male flies to locate female flies during courtship (Ribeiro et al., 2018), and mutant flies of NorpA, which have defective visual transduction (Bloomquist et al., 1988), have a prolonged courtship latency in our experiments (Figure 5F), similar to previously findings (Markow and Manning, 1980). When wild-type flies were used as the reference for the DTW, the group of NorpA mutant flies yielded a curve lower than the diagonal line, indicating a delay in their courtship behaviors (Figure 5G). In this way, our experiments confirm that Selfee and DTW could capture differences in long-term dynamics such as behavior latency. In conclusion, DTW and AR-HMM could capture temporal differences between control and experimental groups beyond single-frame postures, making Selfee a competent unsupervised method for traditional analyses like courtship index or copulation latency.
 
-## A brief demonstration of the whole Selfee pipeline
+### A brief demonstration of the whole Selfee pipeline
 
 Selfee is a powerful end-to-end unsupervised behavior analysis tool. We went through the whole pipeline using the mice OFT discussed in previous sections as a demonstration. The first step to use Selfee is setting up a development environment containing packages in Key resources table. When recording conditions are consistent for different sets of videos, preprocessing can be simple frame extraction (Figure 6A, the dashed line). As mice open-field videos were recorded with some variations in our case, arenas in the video were first cropped; backgrounds were removed, and the luminance was normalized (Figure 6A, solid lines).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig6-v2.jpg)
+
+**Figure 6.:** (A) Image preprocessing for Selfee. The area of the behavior chamber was cropped, and the background was extracted. Illumination normalization was performed after background subtraction. This preprocessing could be skipped if the background was consistent in each video, as our pipeline for fly videos (dashed lines). (B) Anomaly detection of mice OFT videos after chronic immobilization stress (CIS) experiences. Only 12 frames (red points, indicated by arrows) were detected based on a threshold constructed with control mice (the blue region), and anomaly scores were slightly higher than the threshold. (C) Dynamic time warping (DTW) analysis of mice OFT videos after CIS experiences. The dynamic difference between control groups and CIS groups was visualized, and positive values indicated a delay of the reference (control groups). Results from Selfee features and animal positions were similar (red and blue lines, respectively). (D) Autoregressive hidden Markov model (AR-HMM) analysis of mice OFT videos after CIS experiences. Principal component analysis (PCA) visualization of state usages of mice in control groups (n=17, blue points) and CIS groups (n=17, red points). Same as Figure 5B.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Anomaly scores of CIS mice with half of mice in the control groups as references and another half as negative controls. The blue region indicates the max anomaly score of negative controls; blue dots indicate anomaly scores fall into the blue region; red dots indicate detected anomalies (12 points in total). Detected anomalies were only of scores slightly higher than the threshold. (B) Twelve anomalous frames. These frames contained mice near walls with their head facing the center of the arena. All frames seemed normal.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/76218/elife-76218-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (A) DTW analysis using Selfee (Self-supervised Features Extraction) features of mice in CIS groups with control mice as reference. The red line represents CIS groups, and the blue line represents control groups. The red line is slightly above the blue line. (B) DTW analysis using mice distances to two nearest walls of mice in CIS groups with control mice as reference. The red line represents CIS groups, and the blue line represents control groups. The red line is slightly above the blue line.
 
 After preprocessing, image embeddings were extracted with pre-trained Selfee. Features were then grouped according to experimental designs, and features for mice in the control group and CIS group were sent to the following modules. First, features of the control group were randomly assigned as references or negative controls. The maximum anomaly score of negative controls was set as the threshold. In the CIS group, 12 frames of anomaly behaviors were sorted out (Figure 6A, Figure 6—figure supplement 1A). However, these anomaly frames with their score slightly higher than the threshold only contributed to less than 0.01% of all frames, and occurred only in 2 out of 17 videos. Therefore, these frames were classified as false-positive after being examined manually (Figure 6—figure supplement 1B). Second, the features of the control group and CIS group were analyzed with AR-HMM. As previously showed, AR-HMM separated two groups apart, and the major differences were related to mice’s distances to the arena walls (Figure 5D).
 
@@ -103,29 +385,326 @@ Another direction will be explainable behavior forecasting for a deeper understa
 
 ## Materials and methods
 
-## Fly stocks
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>w1118</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Female, Figure 3A–C &amp; Figure 5F–G; male, Figure 4G–J</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>CS</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Male, Figure 3A–C, Figure 4B &amp; Figure 5F–G</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila. melanogaster)</td>
+      <td>CCHa1attP</td>
+      <td>BDRC</td>
+      <td>84458</td>
+      <td>w[*]; TI{RFP[3xP3.cUa]=TI}CCHa1[attP]; male, Figure 4B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>CCHa1-RattP</td>
+      <td>BDRC</td>
+      <td>84459</td>
+      <td>w[*]; TI{RFP[3xP3.cUa]=TI}CCHa1-R[attP]; male, Figure 4B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>CCHa2attP</td>
+      <td>BDRC</td>
+      <td>84460</td>
+      <td>w[*]; TI{RFP[3xP3.cUa]=TI}CCHa2[attP]; male, Figure 4B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>CCHa2-RattP</td>
+      <td>BDRC</td>
+      <td>84461</td>
+      <td>w[*]; TI{RFP[3xP3.cUa]=TI}CCHa2-R[attP]; male, Figure 4B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>CCHa2-R-RAGal4</td>
+      <td>BDRC</td>
+      <td>84603</td>
+      <td>TI{2 A-GAL4}CCHa2-R[2 A-A.GAL4]; with Kir2.1, Figure 4B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>CCHa2-R-RBGal4</td>
+      <td>BDRC</td>
+      <td>84604</td>
+      <td>TI{2 A-GAL4}CCHa2-R[2A-B.GAL4]; with Kir2.1, Figure 4B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>CNMaattP</td>
+      <td>BDRC</td>
+      <td>84485</td>
+      <td>w[*]; TI{RFP[3xP3.cUa]=TI}CNMa[attP]; male, Figure 4B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>OambattP</td>
+      <td>BDRC</td>
+      <td>84555</td>
+      <td>w[*]; TI{RFP[3xP3.cUa]=TI}Oamb[attP]; male, Figure 4B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Dop2RKO</td>
+      <td>BDRC</td>
+      <td>84720</td>
+      <td>TI{TI}Dop2R[KO]; male, Figure 4B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>DopEcRGal4</td>
+      <td>BDRC</td>
+      <td>84717</td>
+      <td>TI{GAL4}DopEcR[KOGal4.w-]; male, Figure 4B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>SerTattP</td>
+      <td>BDRC</td>
+      <td>84572</td>
+      <td>w[*]; TI{RFP[3xP3.cUa]=TI}SerT[attP]; male, Figure 4B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>TrhGal4</td>
+      <td>BDRC</td>
+      <td>86146</td>
+      <td>w[*]; TI{RFP[3xP3.cUa]=2 A-GAL4}Trh[GKO]; male, Figure 4B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>TKattP</td>
+      <td>BDRC</td>
+      <td>84579</td>
+      <td>w[*]; TI{RFP[3xP3.cUa]=TI}Tk[attP]; male, Figure 4B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>UAS-Kir2.1</td>
+      <td>BDRC</td>
+      <td>6595</td>
+      <td>w[*]; P{w[+mC]=UAS-Hsap\KCNJ2.EGFP}7; with Gal4, Figure 4B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>NorpA36</td>
+      <td>BDRC</td>
+      <td>9048</td>
+      <td>w[*] norpA[P24]; male, Figure 5F–G</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Tdc2RO54</td>
+      <td>Pan Lab at SEU</td>
+      <td></td>
+      <td>Tdc2[RO54]; male, Figure 4B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Drosophila melanogaster)</td>
+      <td>Taotie-Gal4</td>
+      <td>Zhu Lab at IBP</td>
+      <td></td>
+      <td>w[*]; P{w[+mC]=Gr28 b.b-GAL4.4.7}10; with Kir2.1, Figure 4B</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus musculus)</td>
+      <td>C57BL/6J</td>
+      <td>–</td>
+      <td>–</td>
+      <td>Figure 3D–F &amp; Figure 5B–D</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>python</td>
+      <td>Anaconda</td>
+      <td>–</td>
+      <td>3.8.8</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>numpy</td>
+      <td>Anaconda</td>
+      <td>–</td>
+      <td>1.19.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>matplotlib</td>
+      <td>Anaconda</td>
+      <td>–</td>
+      <td>3.4.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>av</td>
+      <td>conda-forge</td>
+      <td>–</td>
+      <td>8.0.3</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>scipy</td>
+      <td>Anaconda</td>
+      <td>–</td>
+      <td>1.6.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cudatoolkit</td>
+      <td>conda-forge</td>
+      <td>–</td>
+      <td>11.1.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pytorch</td>
+      <td>pytorch</td>
+      <td>–</td>
+      <td>1.8.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>torchvision</td>
+      <td>pytorch</td>
+      <td>–</td>
+      <td>0.9.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pillow</td>
+      <td>Anaconda</td>
+      <td>–</td>
+      <td>8.2.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>scikit-learn</td>
+      <td>Anaconda</td>
+      <td>–</td>
+      <td>0.24.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pandas</td>
+      <td>Anaconda</td>
+      <td>–</td>
+      <td>1.2.4</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>lightgbm</td>
+      <td>conda-forge</td>
+      <td>–</td>
+      <td>3.2.1</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>opencv-python</td>
+      <td>PyPI</td>
+      <td>–</td>
+      <td>4.5.3.56</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>psutil</td>
+      <td>PyPI</td>
+      <td>–</td>
+      <td>5.8.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pytorch-metric-learning</td>
+      <td>PyPI</td>
+      <td>–</td>
+      <td>0.9.99</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>pyhsmm</td>
+      <td>PyPI</td>
+      <td>–</td>
+      <td>0.1.6</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>autoregressive</td>
+      <td>PyPI</td>
+      <td>–</td>
+      <td>0.1.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>dtw-python</td>
+      <td>PyPI</td>
+      <td>–</td>
+      <td>1.1.10</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SLEAP</td>
+      <td>conda-forge</td>
+      <td>–</td>
+      <td>1.2.2</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DEEPLABCUT</td>
+      <td>PyPI</td>
+      <td>–</td>
+      <td>2.2.0.2</td>
+    </tr>
+  </tbody>
+</table>
+
+### Fly stocks
 
 All fly strains were maintained under a 12 hr/12 hr light/dark cycle at 25°C and 60% humidity (PERCIVAL incubator). The following fly lines were acquired from Bloomington Drosophila Stock Center: CCHa1attP (84458), CCHa1-RattP (84459), CCHa2attP (84460), CCHa2-RattP (84461), CCHa2-R-RAGal4 (84603), CCHa2-R-RBGal4 (84604), CNMaattP (84485), OambattP (84555), Dop2RKO (84720), DopEcRGal4 (84717), SerTattP (84572), TrhGal4 (86146), TKattP (84579), NorpA36 (9048), UAS-Kir2.1 (6595). Tdc2RO54 was a gift from Dr Yufeng Pan at Southeast University, China. Taotie-Gal4 was a gift from Dr Yan Zhu at Institute of Biophysics, Chinese Academy of Sciences, China.
 
-## Fly courtship behavior and male-male interaction
+### Fly courtship behavior and male-male interaction
 
 Virgin female flies were raised for 4–6 days in 15-fly groups, and naïve male flies were kept in isolated vials for 8–12 days. All behavioral experiments were done under 25°C and 45–50% humidity. Flies were transferred into a customized chamber of 3 mm in height and 10 mm in diameter by a homemade aspirator. Fly behaviors were recorded using a stereoscopic microscope mounted with a CCD camera (Basler ORBIS OY-A622f-DC) at the resolution of 1000×500 (for two chambers at the same time), or 640×480 (for individual chambers) and a frame rate of 30 Hz. Five types of behaviors were annotated manually, including ‘chasing’ (a male fly follows a female fly), ‘wing extension’ a male fly extends unilateral wing and orientates to the female to sing courtship son, ‘copulation attempt’ (a male fly bends its abdomen toward the genitalia of the female or the unstable state that male fly mounts on a female with its wings open), and ‘copulation’ (male fly mounts on a female in a stable posture for several minutes).
 
-## Fly defensive behavior assay
+### Fly defensive behavior assay
 
 The kicking behavior was tested based on previously reported paradigms (Li et al., 2016; Liu et al., 2020). Briefly, flies were raised in groups for 3–5 days. Flies were anesthetized on ice, and then male flies were decapitated and transferred to 35 mm Petri dishes with damped filter paper on the bottom to keep the moisture. Flies were allowed to recover for around 30 min in the dishes. The probe for stimulation was homemade from a heat-melt yellow pipette tip, and the probe’s tip was 0.3 mm. Each side of flies’ wing margin was gently touched five times, and the kicking behavior was recorded manually. The statistical analysis was performed with the Mann-Whitney test with GraphPad Prism Software.
 
-## Social behavior assay for flies
+### Social behavior assay for flies
 
 The social distance was tested based on the previously reported method (McNeil et al., 2015). Briefly, flies were raised in groups for 3 days. Flies were anesthetized paralyzed on ice, and male flies were picked and transferred to new vials (around 40 flies per vial). Flies were allowed to recover for 1 day. The vertical triangular chambers were cleaned with 75% ethanol and dried with paper towels. After assembly, flies were transferred into the chambers by a homemade aspirator. The photos were taken after 20 min, and the positions of each fly were manually marked in ImageJ. The social distances were measured with the lateral sides of the chambers (16.72 cm) as references, and the median values of the nearest, median, and average distance of each replication are calculated. The statistical analysis was performed with the Mann-Whitney test in GraphPad Prism Software.
 
-## Mice mating behavior assay
+### Mice mating behavior assay
 
 Wild-type mice of C57BL/6J were purchased from Slac Laboratory Animal (Shanghai). Adult (8–24 weeks of age) male mice were used for sexual behavior analysis. All animals were housed under a reversed 12 hr/12 hr light-dark cycle with water and food ad libitum in the animal facility at the Institute of Neuroscience, Shanghai, China. All experiments were approved by the Animal Care and Use Committee of the Institute of Neuroscience, Chinese Academy of Sciences, Shanghai, China (IACUC No. NA-016-2016).
 
 Male mice were singly housed for at least 3 days prior to sexual behavioral tests. All tests were initiated at least 1 hr after lights were switched off. Behavioral assays were recorded using infrared cameras at the frame rate of 30 Hz. Female mice were surgically ovariectomized and supplemented with hormones to induce receptivity. Hormones were suspended in sterile sunflower seed oil (Sigma-Aldrich, S5007) and injected 10 mg (in 50 mL oil) and 5 mg (in 50 mL oil) of 17b-estradiol benzoate (Sigma-Aldrich, E8875) 48 and 24 hr preceding the test, respectively. On the day of the test, 50 mg of progesterone (Sigma-Aldrich, P0130; in 50 mL oil) was injected 4–6 hr prior to the test. Male animals were adapted 10 min to behavioral testing rooms where a recording chamber equipped with video acquisition systems was located. A hormonal primed ovariectomized C57BL/6J female (OVX) was introduced to the home cage of male mice and videotaped for 30 min. Mating behavior tests were repeated three times with different OVX at least 3 days apart. Videos were manually scored using a custom-written MATLAB program. The following criteria were used for behavioral annotation: active nose contacts initiated by male mouse toward the female’s genitals, body area, faces were defined collectively as ‘social interest’; male mouse climbs the back of the female and moves the pelvis were defined as ‘mount’; rhythmic pelvic movements after mount were defined as ‘intromission’; a body rigidity posture after final deep thrust were defined as ‘ejaculation’.
 
-## Mice OFT
+### Mice OFT
 
 All experiments were performed using the principles outlined in the Guide for the Care and Use of Laboratory Animals of Tsinghua University. C57BL/6J male mice, aged 8–12 weeks, were used for behavior test. Mice were housed five per cage with free access to food and water and under a 12 hr light-dark cycle (light on from 7 p.m. to 7 a.m.). All mice were purchased and maintained under standard conditions by the Animal Research Centre of Tsinghua University.
 
@@ -133,7 +712,7 @@ All studies and experimental protocols were approved by Institutional Animal Car
 
 The animal tracking program was coded in Python 3 with Open-CV. Each frame was first preprocessed, and then a median filter with a kernel size of 5 and a threshold of 150 was performed sequentially. Connected components with the maximum area were extracted, and the center of gravities and borders were visualized with original images for manual proofreading. Tracking results were saved in plain text format.
 
-## Data preprocessing, augmentation, and sampling
+### Data preprocessing, augmentation, and sampling
 
 Fly behavior videos were decomposed into frames by FFmpeg, and only the first 10,000 frames of each video were preserved and resized into images with a resolution of 224×224. For model training of Drosophila courtship behavior, each video was manually checked to ensure successful copulations within 10,000 frames.
 
@@ -143,21 +722,49 @@ For data augmentations, crop, rotation, flip, Turbo, and color jitter were appli
 
 For fly data sampling, all images of all videos were randomly ranked, and each batch contained 256 images from different videos. For mice data sampling, all images of each video were randomly ranked, and each batch contained 256 images from the same video. This strategy was designed to eliminate the inconsistency of recording conditions of mice that was more severe than flies.
 
-## Selfee neural network and its training
+### Selfee neural network and its training
 
 All training and inference were accomplished on a workstation with 128 GB RAM, AMD Ryzen 7 5800×, and one NVIDIA GeForce RTX 3090. Selfee neural network was constructed based on publications and source codes of BYOL (Grill et al., 2020), SimSiam (Chen et al., 2020), and CLD (Wang et al., 2021) with PyTorch (Paszke et al., 2019). In brief, the last layer of ResNet-50 was removed, and a three-layer 2048-dimension MLP was added as the projector. Hidden layers of the projector were followed by batch normalization (BN) and ReLU activation, and the output layer only had BN. The predictor was constructed with a two-layer bottleneck MLP with a 512-dimension hidden layer and a 2048-dimension output layer. The hidden layer but not the output layer of the predictor had BN and ReLU. As for the group discriminator for CLD loss, it had only one normalized fully connected layer that projected 2048-dimension output to 1024 dimensions, followed by a customized normalization layer that was described in the paper of CLD (Wang et al., 2021). The collapse level was monitored as one minus to average standard deviation of each channel of the normalized representation multiplied by the square root of the channel number. If a collapse happens, the standard deviation becomes zero, and the collapse level should be one. If no collapse happens, each channel should obey standard normal distribution, and the average standard deviation is one. The normalization operation cancels out the square root of the channel number. In this way, the collapse level is zero.
 
-The loss function of Selfee had two major parts. The first part was the negative cosine loss (Chen et al., 2020; Grill et al., 2020), and the second part was the CLD loss (Wang et al., 2021). For a batch of n samples, Z, P, V represented the output of projector, predictor, and group discriminator of the main branch, respectively; Z’, P’, V’ represented the output of the reference branch; and sg as the stop-gradient operator. After k-means clustering of V, the centroids of k classes were given by M, and labels of each sample were provided in the one-hot form as L. The hyperparameter θ was 0.07, and λ was 2. The loss function was given by the following equations:CosineDistance(m,n)=1−m∣∣m∣∣2.n∣∣n∣∣2Loss1=12n∑i=1nCosineDistance(sg(zi),p′i)+12n∑i=1nCosineDistance(sg(z′i),pi)CrossEntropyLoss(x,l)=−x.l+log(∣∣exp(x)∣∣1)Loss2=12CrossEntropyLoss(νiθ.M′T,li)+12CrossEntropyLoss(ν′iθ.MT,l′i)Loss= Loss1 + λ Loss2
+The loss function of Selfee had two major parts. The first part was the negative cosine loss (Chen et al., 2020; Grill et al., 2020), and the second part was the CLD loss (Wang et al., 2021). For a batch of n samples, Z, P, V represented the output of projector, predictor, and group discriminator of the main branch, respectively; Z’, P’, V’ represented the output of the reference branch; and sg as the stop-gradient operator. After k-means clustering of V, the centroids of k classes were given by M, and labels of each sample were provided in the one-hot form as L. The hyperparameter θ was 0.07, and λ was 2. The loss function was given by the following equations:
+
+$$
+CosineDistance(m,n)=1−\frac{m}{∣∣m∣∣_{2}}.\frac{n}{∣∣n∣∣_{2}}
+$$
+
+
+
+$$
+Loss_{1}=\frac{1}{2n}\sumi=1nCosineDistance(sg(z_{i}),p^{}′_{i})+\frac{1}{2n}\sumi=1nCosineDistance(sg(z^{}′_{i}),p_{i})
+$$
+
+
+
+$$
+CrossEntropyLoss(x,l)=−x.l+log(∣∣exp(x)∣∣_{1})
+$$
+
+
+
+$$
+Loss_{2}=\frac{1}{2}CrossEntropyLoss(\frac{ν_{i}}{\theta}.M^{}′^{T},l_{i})+\frac{1}{2}CrossEntropyLoss(\frac{ν^{}′_{i}}{\theta}.M^{T},l^{}′_{i})
+$$
+
+
+
+$$
+Loss= Loss_{1} + \lambda Loss_{2}
+$$
 
 For all training processes, the Selfee network was trained for 20,000 steps with the SDG optimizer with a momentum of 0.9 and a weight decay of 1e-4. The learning rate was adjusted in the one-cycle learning rate policy (Smith and Topin, 2017) with base learning rates and a pct start of 0.025. The model for Drosophila courtship behavior was initialized with ResNet-50 pre-trained on the ImageNet, and the base learning rate was 0.025 per batch size of 256. As for the mating behaviors of mice, the model was initialized with weights trained on the fly dataset, and the base learning rate was 0.05 per batch size of 256.
 
 For fly courtship behavior, 516 and 7 videos (4,607,274 and 55,708 frames) were used as train set and test set, respectively; for mice mating behavior, 118 and 13 videos (4,943,101 and 548,993 frames) were used as train set and test set, respectively. For comparison with animal tracking methods, Selfee was fine-tuned with 11 and 1 videos (1,188,550 and 108,050 frames).
 
-## t-SNE visualization
+### t-SNE visualization
 
 Video frames for t-SNE visualization were all processed by Selfee. Embeddings of three tandem frames were averaged to eliminate potential noises. All embeddings were transformed using t-SNE provided in the scikit-learn (Paszke et al., 2019) package in Python without further tuning of parameters. Results were visualized with the Matplotlib (Hunter, 2007) package in Python, and their colors were assigned based on human annotations of video frames.
 
-## Classification
+### Classification
 
 Two kinds of classification methods were implemented, including the k-NN classifier and the LightGBM classifier. The weighed k-NN classifier was constructed based on the previous reports (Chen et al., 2020; Wu et al., 2018). LightGBM classifier (Ke et al., 2017) was provided by its official package in Python. The F1 score and mAP were calculated with the scikit-learn (Paszke et al., 2019) package in Python. Scores for different type of behaviors were averaged in the ‘macro’ way, while scores for behaviors of different intensity were averaged in the ‘micro’ way.
 
@@ -169,9 +776,13 @@ For rat behavior classification, the RatSI dataset (Lorbach et al., 2018) (a kin
 
 For mice behavior classification, eight videos were annotated manually. Eightfold cross-validation was performed using embeddings generated by Selfee and the k-NN classifier. To incorporate more temporal information, the LightGBM classifier and additional features were also used. Additional features include slide moving average and standard deviation of 81-frame time windows, the main frequencies, and their energy (using short-time Fourier transform in SciPy; Virtanen et al., 2020) within 81-frame time windows. Early-stop was used to prevent over-fitting. Inferred labels were forced to be continuous through time by using inferred labels of 81 neighbor frames to determine the final result. Then, a video independent of the cross-validation was annotated and inferred by an ensemble classifier of eight previously constructed classifiers, and all frames were used for the raster plot.
 
-## Anomaly detection
+### Anomaly detection
 
-For a group of query embeddings of sequential frames q1, q2, q3, …, qn, and a group of reference embeddings of sequential frames r1, r2, r3, …, rm, the anomaly score of each query frame was given by the following equation:AnomalyScore(qi)=minj=1m(CosineDistance(qi,rj))−min∣j−i∣<50(CosineDistance(qi,qj))
+For a group of query embeddings of sequential frames q1, q2, q3, …, qn, and a group of reference embeddings of sequential frames r1, r2, r3, …, rm, the anomaly score of each query frame was given by the following equation:
+
+$$
+AnomalyScore(q_{i})=min_{j=1}^{m}(CosineDistance(q_{i},r_{j}))−min_{∣j−i∣}<50(CosineDistance(q_{i},q_{j}))
+$$
 
 A PyTorch implementation of cosine similarity (Musgrave et al., 2020) was used for accelerated calculations.
 
@@ -179,26 +790,26 @@ The anomaly score of each video was the average anomaly score of the top 100 ano
 
 If negative controls are provided, anomalous frames are defined as frames with higher anomaly scores than the maximum anomaly score of frames in negative control videos.
 
-## Autoregressive hidden Markov model
+### Autoregressive hidden Markov model
 
 All AR-HMMs were built with the implementation of MoSeq (Wiltschko et al., 2015) (https://github.com/mattjj/pyhsmm-autoregressive; Linderman, 2018). A PCA model that could explain 95% of variance of the control group was built and used to transform both control and experiment groups. The max module number was set as 10 for all experiments unless indicated otherwise. Each model was sampled for 1000 iterations. We kept other hyperparameters the same as the examples provided by this package. State usages of each module in control and experimental groups were analyzed by Mann-Whitney test with SciPy Virtanen et al., 2020 followed with Benjamini and Hochberg correction. The state usages were also visualized after PCA dimensional reduction with scikit-learn (Paszke et al., 2019) and Matplotlib (Hunter, 2007) for the exclusion of possible obvious outliners or batch effects.
 
-## Dynamic time warping
+### Dynamic time warping
 
 DTW was modified from the Python implementation (Toni, 2009) (https://dynamictimewarping.github.io/python/). Specifically, PyTorch implementation of cosine similarity (Musgrave et al., 2020) was used for accelerated calculations.
 
-## Pose estimation with SLEAP
+### Pose estimation with SLEAP
 
 We used the official implementation of SLEAP. For explanation for t-SNE plot of Selfee features, we labeled the same 3000 frames with the help of SLEAP. First, we labeled around 400 frames and trained a SLEAP model. The trained SLEAP model was used to infer all 3000 frames, tracking was performed using the ‘simple’ method, and the target number of instances per frame was set to 2. Inferred skeletons and tracking results were manually proofread and corrected. These results were used for the following analysis of the t-SNE plot. Then, all 3000 frames were used to train a new SLEAP model. This new model was used for the pose estimation of another clip of a fly courtship video (shown in Figure 1—videos 1–3 and Figure 1—figure supplement 3).
 
-## Visualization tracking results from FlyTracker
+### Visualization tracking results from FlyTracker
 
 Tracking results of the Fly-vs-Fly dataset were obtained from its official website. The head and tail coordinates were calculated from the center, the orientation, and the major axis length. Tracking results were visualized with OpenCV.
 
-## Pose estimation with DeepLabCut
+### Pose estimation with DeepLabCut
 
 We used the official implementation of DeepLabCut (Lauer et al., 2021; Mathis et al., 2018). For training, 120 frames of a mating behavior video were labeled manually, and 85% were used as the training set. Marked body parts included nose, ears, body center, hips, and bottom, following previous publications (Segalin et al., 2020; Sun et al., 2021). The model (ResNet-50 as the backbone) was trained for 100,000 iterations, with a batch size of 16. We kept other hyperparameters the same as default settings.
 
-## Data and code availability statement
+### Data and code availability statement
 
 Major datasets that support the findings of this study are available from Dryad (https://doi.org/10.5061/dryad.brv15dvb8). Other data are available from the corresponding author upon reasonable request, because they are too large to upload to a particular server. Source codes used in this article are available on GitHub (https://github.com/EBGU/Selfee; Jia, 2022; copy archived at swh:1:rev:3af2d1ed2dfcf3bd1d1c18d488ed87f7b826529c).

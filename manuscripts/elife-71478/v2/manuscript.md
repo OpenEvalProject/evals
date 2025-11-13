@@ -16,16 +16,16 @@
 
 ### Affiliations
 
-1. https://ror.org/04rswrd78 Department of Genetics, Development and Cell Biology, Iowa State University Ames United States
-2. https://ror.org/04rswrd78 Interdepartmental Graduate Program in Genetics and Genomics, Iowa State University Ames United States
-3. https://ror.org/04rswrd78 Interdepartmental Graduate Program in Molecular, Cellular and Developmental Biology, Iowa State University Ames United States
-4. https://ror.org/02qp3tb03 Department of Biochemistry and Molecular Biology, Mayo Clinic Rochester United States
+1. Department of Genetics, Development and Cell Biology, Iowa State University Ames United States ([ROR:04rswrd78](https://ror.org/04rswrd78))
+2. Interdepartmental Graduate Program in Genetics and Genomics, Iowa State University Ames United States ([ROR:04rswrd78](https://ror.org/04rswrd78))
+3. Interdepartmental Graduate Program in Molecular, Cellular and Developmental Biology, Iowa State University Ames United States ([ROR:04rswrd78](https://ror.org/04rswrd78))
+4. Department of Biochemistry and Molecular Biology, Mayo Clinic Rochester United States ([ROR:02qp3tb03](https://ror.org/02qp3tb03))
 
 † Corresponding author
 
 ## Abstract
 
-The ability to regulate gene activity spatially and temporally is essential to investigate cell-type-specific gene function during development and in postembryonic processes and disease models. The Cre/ lox system has been widely used for performing cell and tissue-specific conditional analysis of gene function in zebrafish. However, simple and efficient methods for isolation of stable, Cre/ lox regulated zebrafish alleles are lacking. Here, we applied our GeneWeld CRISPR-Cas9 targeted integration strategy to generate floxed alleles that provide robust conditional inactivation and rescue. A universal targeting vector, UFlip, with sites for cloning short homology arms flanking a floxed 2A-mRFP gene trap, was integrated into an intron in rbbp4 and rb1. rbbp4 and off rb1 integration alleles resulted in strong mRFP expression,>99% reduction of endogenous gene expression, and recapitulated known indel loss-of-function phenotypes. Introduction of Cre led to stable inversion of the floxed cassette, loss of mRFP expression, and phenotypic rescue. off rbbp4 and on rb1 integration alleles did not cause phenotypes in combination with a loss-of-function mutation. Addition of Cre led to conditional inactivation by stable inversion of the cassette, gene trapping and mRFP expression, and the expected mutant phenotype. Neural progenitor Cre drivers were used for conditional inactivation and phenotypic rescue to showcase how this approach can be used in specific cell populations. Together these results validate a simplified approach for efficient isolation of Cre/ on lox -responsive conditional alleles in zebrafish. Our strategy provides a new toolkit for generating genetic mosaics and represents a significant advance in zebrafish genetics.
+The ability to regulate gene activity spatially and temporally is essential to investigate cell-type-specific gene function during development and in postembryonic processes and disease models. The Cre/lox system has been widely used for performing cell and tissue-specific conditional analysis of gene function in zebrafish. However, simple and efficient methods for isolation of stable, Cre/lox regulated zebrafish alleles are lacking. Here, we applied our GeneWeld CRISPR-Cas9 targeted integration strategy to generate floxed alleles that provide robust conditional inactivation and rescue. A universal targeting vector, UFlip, with sites for cloning short homology arms flanking a floxed 2A-mRFP gene trap, was integrated into an intron in rbbp4 and rb1. rbbp4off and rb1off integration alleles resulted in strong mRFP expression,>99% reduction of endogenous gene expression, and recapitulated known indel loss-of-function phenotypes. Introduction of Cre led to stable inversion of the floxed cassette, loss of mRFP expression, and phenotypic rescue. rbbp4on and rb1on integration alleles did not cause phenotypes in combination with a loss-of-function mutation. Addition of Cre led to conditional inactivation by stable inversion of the cassette, gene trapping and mRFP expression, and the expected mutant phenotype. Neural progenitor Cre drivers were used for conditional inactivation and phenotypic rescue to showcase how this approach can be used in specific cell populations. Together these results validate a simplified approach for efficient isolation of Cre/lox-responsive conditional alleles in zebrafish. Our strategy provides a new toolkit for generating genetic mosaics and represents a significant advance in zebrafish genetics.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ To address this need for a simple method to recover zebrafish germline condition
 
 ## Results
 
-## UFlip, a universal vector to generate stable Cre/lox regulated conditional alleles by CRISPR-Cas9 targeted integration
+### UFlip, a universal vector to generate stable Cre/lox regulated conditional alleles by CRISPR-Cas9 targeted integration
 
 The Universal Flip (UFlip) vector was designed to be used with the GeneWeld strategy for CRISPR-Cas9 targeted integration driven by short homology (Wierson et al., 2020). The vector contains a cassette with a floxed gene trap plus secondary marker flanked by cloning sites for homology arms (HA) complementary to the genomic CRISPR target site, and universal gRNA sites (UgRNA) for in vivo liberation of the cassette after injection into zebrafish embryos (Figure 1A). The gene trap was derived from the gene-breaking Tol2 transposon RP2 that has previously been shown to lead to >99% knockdown of gene expression (Clark et al., 2011; Ichino et al., 2020). RP2 was modified by insertion of the porcine teschvirus-1 2A peptide sequence in between the splice acceptor and mRFP, which enables expression of a primary fluorescent reporter from the gene trap without creating a fusion protein. The ocean pout antifreeze gene transcriptional terminator follows the mRFP cDNA. Like our recently published endogenous Cre driver lines (Almeida et al., 2021), the primary gene trap reporter is followed by a secondary marker that drives tissue-specific expression of blue fluorescent protein (BFP) from the Xenopus gamma crystallin 1 (gcry1) lens promoter or the zebrafish myosin light chain 7 (myl7) cardiac muscle promoter, simplifying identification of an integration allele. Alternating pairs of loxP and lox2272 sites oriented head to head flanking the cassette are designed to drive two Cre recombination events that invert and lock the cassette in place, a design strategy described previously to generate floxed conditional alleles in mice (Robles-Oteiza et al., 2015; Schnütgen et al., 2003) and zebrafish (Sugimoto et al., 2017). rox sites flanking the entire cassette provide an alternative method for inversion using Dre recombinase (Figure 1A), which we demonstrate below provides highly efficient recovery of inverted alleles through the germline. Integration of UFlip into an intron in the active, gene ‘off’ orientation is expected to lead to premature transcriptional termination of the primary transcript in the gene trap and splicing of upstream exons into 2A-mRFP (Figure 1B), resulting in a loss-of-function allele. In contrast, integration of UFlip into an intron in the passive, gene ‘on’ orientation is not predicted to interrupt endogenous gene expression, since RNA polymerase will read through the cassette in the intron, which is then spliced out of the mature transcript (Figure 1C). For clarity, the UFlip alleles described here are referred to as ‘off’ when the cassette was integrated in the active, gene trap orientation. Alleles are designated ‘on’ when UFlip was integrated in the passive orientation, that leads to removal of the UFlip cassette during splicing and allows proper functioning of the gene.
 
@@ -47,13 +47,93 @@ The Universal Flip (UFlip) vector was designed to be used with the GeneWeld stra
 
 The process by which Cre recombination leads to stable inversion of the UFlip cassette is illustrated in Figure 1D, E (Schnütgen et al., 2003). Introduction of Cre leads to stochastic recombination at either the loxP or the lox2272 pairs of recombinase sites. Figure 1D, E show the intermediate results after 1 recombination event at the lox2272 sites. In the intermediate the cassette has inverted from ‘off’ to ‘on’ (Figure 1D) or from ‘on’ to ‘off’ (Figure 1E), resulting in a pair of loxP sites flanking one of the lox2272 sites. Recombination at the head to tail oriented loxP sites removes the intervening lox2272, resulting in a cassette flanked by a single pair of incompatible loxP and lox2272 sites. This prevents further recombination and produces stable inversion of the cassette.
 
-## Isolation of rbbp4 and rb1 UFlip conditional alleles
+### Isolation of rbbp4 and rb1 UFlip conditional alleles
 
 To test the ability of the UFlip cassette to generate zebrafish Cre-responsive conditional alleles, we chose to target integration of UFlip two genes, retinoblastoma binding protein 4 (rbbp4) and retinoblastoma 1 (rb1). We had previously isolated indel mutations in both genes that show strong loss-of-function phenotypes at the morphological and cellular level (Schultz et al., 2018; Schultz-Rogers et al., 2022; Solin et al., 2015). Intronic genomic DNA was amplified from wild-type WIK fish, cloned, sequenced, and analyzed to locate unique Cas9 gRNA sites that were shared among fish and that did not map to repetitive elements or retrotransposons. Cas9 target sites were identified in rbbp4 intron 4 and rb1 intron 6 (Table 1) and synthetic guides ordered from Synthego (https://www.synthego.com). Efficient indel formation at the intronic gRNA sites was confirmed by co-injection of gRNA and Cas9 mRNA into single-cell embryos, followed by extraction of genomic DNA at 2 dpf. A PCR amplicon surrounding the target site was directly sequenced followed by ICE analysis (https://ice.synthego.com/#/). The rbbp4 intron 4 and rb1 intron 6 guides showed 50% and 95% indel formation at the target site, respectively (Figure 2A, B). UFlip targeting vectors were assembled with 48 bp 5’ and 3’ homology arms complementary to the DNA flanking the Cas9 genomic DNA double strand break site (Table 1). One cell stage WIK embryos were co-injected with targeting vector (10 pg), Cas9 mRNA (150 pg), universal gRNA (25 pg), and gene-specific gRNA (25 pg). Four to six embryos with positive expression of the primary mRFP reporter and secondary BFP reporter were selected to test for evidence of on target integration by PCR amplification of the 5’ and 3’ junctions (data not shown). Primary and secondary reporter positive siblings were raised to adulthood. rbbp4 intron 4 was targeted with the UFlip-2A-mRFP cassette in the active orientation to recover an ‘off’ allele. Embryos expressing the primary reporter mRFP in the nervous system, where rbbp4 is normally expressed, and the lens:BFP secondary marker, were raised to adulthood. Two out of seven adult F0 fish transmitted embryos with widespread mRFP and lens BFP expression (Table 2; Table 2—source data 1). One adult transmitted an allele with precise 5’ and 3’ junctions at the intron target site. F1 embryos were raised to adulthood and the presence of the precise rbbp4-2A-mRFP-off, gcry1:BFP (rbbp4off) allele confirmed by fin clip and sequencing (Figure 2C). An F1 adult with the precise integration allele was outcrossed to WIK to establish an F2 family of the rbbp4off is61 allele.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/71478/elife-71478-fig2-v2.jpg)
 
-**Figure 2.:** rbbp4 and rb1 intronic gRNA efficiency and F1 UFlip allele junction analysis.(A) rbbp4 gene model with sequence of the intron 4 reverse strand gRNA. Gel image of PCR amplicons surrounding the target site from 8 Cas9 plus gRNA injected and 1 uninjected (U) embryo. Amplicons from embryo #3 and the uninjected embryo were sequenced and analyzed with Synthego’s ICE software, and indicate 50% indel efficiency at the target site. Plot shows the range and percentage of indels present in the sequences. PAM sequence shown in bold and underlined. (B) rb1 gene model with sequence of the intron 6 reverse strand gRNA. Gel image of PCR amplicons surrounding the target site from eight embryos injected with Cas9 and the gRNA (1-8), and two uninjected embryos (U). Amplicons from embryo #1 and an uninjected embryo were sequenced and analyzed with Synthego’s ICE software, and indicate 95% indel efficiency at the target site. Plots show the range and percentage of indels present in the sequences. PAM sequences shown in bold and underlined. (C) 5’ and 3’ genomic-UFlip integration junctions were PCR amplified from F1 transgenic zebrafish fin clip genomic DNA. The PCR products were sequenced and aligned to the reference sequence expected for a precise integration at the genomic target site. Capitalized red nucleotides represent 48 bp homology arms. Lowercase green nucleotides represent random inserted sequences.
+**Figure 2.:** (A) rbbp4 gene model with sequence of the intron 4 reverse strand gRNA. Gel image of PCR amplicons surrounding the target site from 8 Cas9 plus gRNA injected and 1 uninjected (U) embryo. Amplicons from embryo #3 and the uninjected embryo were sequenced and analyzed with Synthego’s ICE software, and indicate 50% indel efficiency at the target site. Plot shows the range and percentage of indels present in the sequences. PAM sequence shown in bold and underlined. (B) rb1 gene model with sequence of the intron 6 reverse strand gRNA. Gel image of PCR amplicons surrounding the target site from eight embryos injected with Cas9 and the gRNA (1-8), and two uninjected embryos (U). Amplicons from embryo #1 and an uninjected embryo were sequenced and analyzed with Synthego’s ICE software, and indicate 95% indel efficiency at the target site. Plots show the range and percentage of indels present in the sequences. PAM sequences shown in bold and underlined. (C) 5’ and 3’ genomic-UFlip integration junctions were PCR amplified from F1 transgenic zebrafish fin clip genomic DNA. The PCR products were sequenced and aligned to the reference sequence expected for a precise integration at the genomic target site. Capitalized red nucleotides represent 48 bp homology arms. Lowercase green nucleotides represent random inserted sequences.
+
+**Table 1.**
+ Genome intronic CRISPR gRNA sites and UFlip targeting vector homology arm sequences.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Genomic sgRNA with PAM</th>
+      <th>5' Homology arm</th>
+      <th>3' Homology arm</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rbbp4</td>
+      <td>GTTGAAGGATTAAGAGTTAAGGG</td>
+      <td>AAAATCTGCTAGCTGTATATTGTTCTTATTTGATGAAGAAGACCCTTA</td>
+      <td>ACTCTTAATCCTTCAACTTCGTTGCAAAAAAGTCAGTTGTGTAAAGGT</td>
+    </tr>
+    <tr>
+      <td>rb1</td>
+      <td>ATTAGAAGAGAGTCCCAATGGGG</td>
+      <td>CCTTGATTACAGTTTCTGCTTTTGTGAGTGTACTGTAGTTTGCCCTAA</td>
+      <td>TCTTCTCTCAGGGTTACATGTTTAATGGATAGTGTGTCCATGTTGTCA</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Recovery of rbbp4 and rb1 UFlip floxed conditional alleles by GeneWeld CRISPR-Cas9 targeted integration.Table 2—source data 1.rbbp4 and rb1 UFlip embryo injection secondary marker F0 screening data and germline transmission data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>UFlip allele</th>
+      <th>Targeted Intron</th>
+      <th>Homology arm length bp/bp</th>
+      <th>Injected F0 embryo secondary marker expression</th>
+      <th>Germline transmission of secondary marker</th>
+      <th>Germline transmission of precise integration allele</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rbbp4off is61</td>
+      <td>4</td>
+      <td>48/48</td>
+      <td>19% (26/134)</td>
+      <td>29% (2/7)</td>
+      <td>14% (1/7)</td>
+    </tr>
+    <tr>
+      <td>rb1off is58</td>
+      <td>6</td>
+      <td>48/48</td>
+      <td>47% (34/73)</td>
+      <td>9% (3/33)</td>
+      <td>6% (2/33)</td>
+    </tr>
+    <tr>
+      <td>rb1off is63</td>
+      <td>6</td>
+      <td>48/48</td>
+      <td>48% (60/125)</td>
+      <td>25% (2/8)</td>
+      <td>12.5% (1/8)</td>
+    </tr>
+    <tr>
+      <td>rb1on is57</td>
+      <td>6</td>
+      <td>48/48</td>
+      <td>43% (61/101)</td>
+      <td>20% (5/25)</td>
+      <td>4% (1/25)</td>
+    </tr>
+  </tbody>
+</table>
 
 We initially targeted rb1 intron 6 with the original UFlip-mRFP primary reporter construct designed to create an in-frame fusion of the polypeptide with mRFP. We recovered rb1-mRFP-off, gcry1:BFP (rb1off) and rb1-mRFP-on, gcry1:BFP (rb1on) alleles with frequencies of 6% (2/33) for rb1off and 4% (1/25) for rb1on (Table 2; Table 2—source data 1). 5’ and 3’ junction PCR and sequence analysis of F1 embryos showed the integrations were precise, except for the 5’ junction in the allele transmitted by the second rb1off founder #26 (Figure 2C). The 5’ junction included a duplication of the 5’ Homology Arm sequence that flanked a 115 bp segment of the vector backbone. The rb1off founder #18 transmitting the precise allele was lost, therefore we moved forward with the allele from founder #26. As shown below, the 153 bp insertion on the 5’ side of the rb1off integration did not appear to affect the functionality of the allele. F1 adults were outcrossed to wildtype WIK to establish rb1off is58 and rb1on is57 families. We subsequently targeted the same rb1 intron six site with the updated UFlip-2A-mRFP vector, which allows expression of mRFP without creating a fusion protein with the targeted gene polypeptide. We recovered 2/8 (12.5%) founders transmitting lens:BFP +alleles with ubiquitous expression of the mRFP primary reporter (Table 2; Table 2—source data 1). Founder F0#14 transmitted two alleles, one with precise junctions, the other with a precise 3’ junction and a 5’ junction with a homology arm duplication and insertion of 19 bp (Figure 2C). F1s from this founder will be used to establish the line rb1off is63. For the experiments outlined below demonstrating Cre-meditated rb1 conditional rescue and inactivation, we used the established F3 generation rb1off is58 and rb1on is57 lines generated with the original UFlip construct, which did not show the mRFP gene trap reporter expression.
 
@@ -61,51 +141,208 @@ The UFlip construct contains rox sites flanking the entire cassette to allow the
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/71478/elife-71478-fig3-v2.jpg)
 
-**Figure 3.:** Dre mRNA injection into rbbp4off/+ embryos leads to inversion of the UFlip cassette and efficient germline recovery of an inverted rbbp4 allele.on(A) Diagram illustrating Dre-mediated inversion of the rbbp4 allele to the on orientation. Repeated inversion of the cassette will continue as long as Dre is present. The final allele is predicted to be in the inverted ‘on’ orientation at a frequency of 50%. (offB) PCR junction analysis of 8 embryos from an F1 adult that had been injected with Dre mRNA at the one-cell stage. Three embryos positive for expression of the lens BFP secondary marker show the expected 5’ and 3’ junction PCR amplicons for the inverted rbbp4 allele. (onC) Sequence analysis confirms Dre-mediated inversion of the cassette from the ‘off’ to ‘on’ orientation in BRP+/RFP - embryos.
+**Figure 3.:** (A) Diagram illustrating Dre-mediated inversion of the rbbp4off allele to the on orientation. Repeated inversion of the cassette will continue as long as Dre is present. The final allele is predicted to be in the inverted ‘on’ orientation at a frequency of 50%. (B) PCR junction analysis of 8 embryos from an F1 adult that had been injected with Dre mRNA at the one-cell stage. Three embryos positive for expression of the lens BFP secondary marker show the expected 5’ and 3’ junction PCR amplicons for the inverted rbbp4on allele. (C) Sequence analysis confirms Dre-mediated inversion of the cassette from the ‘off’ to ‘on’ orientation in BRP+/RFP - embryos.
 
-## rbbp4off allele provides robust gene knockdown and loss of function
+**Table 3.**
+ Germline recovery of rbbp4on allele by Dre-mediated inversion of rbbp4off.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Adult rbbp4off/+</th>
+      <th>BFP-/RFP- embryos</th>
+      <th>BFP+/RFP + embryos (Off) original allele</th>
+      <th>BFP+/RFP- embryos (On) inverted allele</th>
+      <th>% transmission of On inverted allele/total BFP+</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>F1 Female #1</td>
+      <td>48</td>
+      <td>37</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>F1 Female #2</td>
+      <td>76</td>
+      <td>62</td>
+      <td>11</td>
+      <td>15% (11/73)</td>
+    </tr>
+    <tr>
+      <td>F1 Female #3</td>
+      <td>25</td>
+      <td>16</td>
+      <td>5</td>
+      <td>24% (5/21)</td>
+    </tr>
+    <tr>
+      <td>F1 Female #4</td>
+      <td>20</td>
+      <td>13</td>
+      <td>2</td>
+      <td>13% (2/15)</td>
+    </tr>
+    <tr>
+      <td>F1 Female #5</td>
+      <td>19</td>
+      <td>12</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>F2 Female #1</td>
+      <td>18</td>
+      <td>24</td>
+      <td>2</td>
+      <td>7.7% (2/26)</td>
+    </tr>
+    <tr>
+      <td>F2 Female #2</td>
+      <td>50</td>
+      <td>25</td>
+      <td>19</td>
+      <td>43.2% (19/44)</td>
+    </tr>
+    <tr>
+      <td>F2 Female #3</td>
+      <td>36</td>
+      <td>40</td>
+      <td>4</td>
+      <td>9.1% (4/44)</td>
+    </tr>
+    <tr>
+      <td>F2 Female #4</td>
+      <td>22</td>
+      <td>14</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>F2 Male #1</td>
+      <td>139</td>
+      <td>87</td>
+      <td>14</td>
+      <td>13.9% (14/101)</td>
+    </tr>
+    <tr>
+      <td>F2 Male #2</td>
+      <td>37</td>
+      <td>28</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+
+_Experimental group 1: F1 embryos from the F0 founder rbbp4off/+ adult crossed to WIK were injected with 15 pg Dre mRNA. Inversion was confirmed by PCR on genomic DNA isolated from -injected embryos . 5 sibling injected embryos were raised to adulthood and were outcrossed to WIK. F2 embryos were screened for Primary (RFP+) and Secondary (BFP+) marker expression. Embryos inheriting the original rbbp4off allele show expression of both markers. Embryos inheriting an allele that was inverted from “off” to “on” by Dre recombination show expression of the secondary marker (BFP+) but lose expression of the primary marker due to the inverted orientation of the cassette. Experimental group 2: The same experiment was performed with an adult F1 rbbp4off/+ female crossed to WIK. F2 Dre mRNA injected embryos were raised to adulthood, and 7 adults screened for transmission of the inverted rbbp4on allele to the F3 generation._
+
+### rbbp4off allele provides robust gene knockdown and loss of function
 
 To demonstrate that integration of the UFlip cassette in the active, ‘off’ orientation leads to effective gene knockdown we examined gene expression by quantitative PCR in rbbp4off/off homozygotes. Homozygous rbbp4off/off 3 dpf larvae show a>99% reduction in rbbp4 mRNA levels in comparison to wild type sibling larvae (Figure 4A, B; Figure 4—source data 1). In comparison to wild-type larvae, the rbbp4off allele is easily identifiable by primary reporter gene trap RFP expression in the retina, brain, and mesodermal tissues, and secondary marker lens specific BFP expression (Figure 4C, D arrowhead). In trans-heterozygous combination with the established loss-of-function indel allele rbbp4Δ4 (Figure 4D, E), the rbbp4off allele recapitulates the microcephaly and microphthalmia phenotypes found in rbbp4Δ4/Δ4 homozygotes (Schultz et al., 2018; Schultz-Rogers et al., 2022). In comparison to control, anti-activated caspase 3 labeling and quantification in sectioned rbbp4off/Δ4 2 dpf head tissue reveals extensive apoptosis throughout the midbrain (** p<0.01) and retina (** p<0.01) (Figure 4F, G). This cellular phenotype is not significantly different from our previous description of apoptosis in rbbp4Δ4/Δ4 homozygotes (Figure 4F–H). Together these results demonstrate the rbbp4off allele causes robust gene knockdown by the primary reporter RFP gene trap, induces the expected pattern of RFP expression, and recapitulates the rbbp4 strong loss of phenotype at the molecular, cellular, and morphological levels.
 
-## rbbp4on allele maintains rbbp4 function
+![Figure 4.](https://cdn.elifesciences.org/articles/71478/elife-71478-fig4-v2.jpg)
+
+**Figure 4.:** (A) Diagram of the rbbp4off allele. (B) Plot of RT-qPCR results from wild type +/+ (n=3), heterozygous rbbp4off/+(n=3), and homozygous rbbp4off/off (n=3) larvae showing the relative level of rbbp4 mRNA transcript using reference gene rps6kb1b. Primer pairs were located in exons 4 and 5, or downstream exons 11 and 12. (C – E) Gross phenotype of rbbp4Δ4/+ (C), rbbp4off/Δ4 (D), and rbbp4Δ4/Δ4 (E) 5 dpf larvae. Arrowhead in (D) points to overlap of rbbp4off 2A-mRFP primary reporter and gcry1:BFP secondary reporter expression in the lens, which appears purple. (F – H) Caspase-3 and HuC/D labeling of sectioned head tissue from 2 dpf rbbp4Δ4/+ (F) rbbp4off/Δ4 (G) and rbbp4Δ4/Δ4 (H) embryos. (I) Diagram of the rbbp4on allele. (J) Plot of RT-qPCR results from wild type +/+ (n=3), heterozygous rbbp4on/+ (n=3), and homozygous rbbp4on/on (n=3) larvae showing the relative level of rbbp4 mRNA transcript using reference gene rps6kb1b. Primer pairs were located in exons 4 and 5, or downstream exons 11 and 12. (K, L) Gross phenotype of rbbp4on/+ (K) and rbbp4on/Δ4 (L) 5 dpf larvae. The rbbp4on allele secondary marker gcry1:BFP expression is visible in the lens. Caspase-3 and HuC/D labeling of sectioned head tissue from 2 dpf rbbp4Δ4/+ (M) and rbbp4off/Δ4 (N) embryos. OT, optic tectum; R, retina; Th, thalamic region. Error bars represent mean ± s.e.m. Scale bars: 200 μm (C–E, K, L), 50 μm (F–H, M,N).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71478/elife-71478-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Plot of quantification of caspase-3a labeled cells in rbbp4Δ4/+ (n=3), rbbp4off/Δ4 (n=4), and rbbp4Δ4/Δ4 (n=4). rbbp4off/Δ4 vs. rbbp4Δ4/+ midbrain (** p<0.01) and retina (** p<0.01). rbbp4off/Δ4 vs. rbbp4Δ4/Δ4 midbrain (n.s. p=0.6865) and retina (n.s. p=0.6778). Error bars represent mean ± s.e.m. with two-tailed t-test.
+
+### rbbp4on allele maintains rbbp4 function
 
 In the rbbp4on allele, the UFlip cassette is predicted to be read through by RNA polymerase and then removed from the primary transcript when intron 4 is spliced out (Figure 4I). To test whether the rbbp4on allele alters normal rbbp4 mRNA expression levels RT-qPCR was performed on 3 dpf rbbp4on/+ heterozygous and rbbp4on/on homozygous larvae. rbbp4on/+ heterozygotes showed ~25% reduction in wild-type rbbp4 mRNA levels, while rbbp4on/on homozygotes showed ~40% reduction (Figure 4J, Figure 4—source data 1). This suggests the integrated UFlip cassette may impact splicing rate, stability, or other processing of the primary transcript. However, neither rbbp4on/+ heterozygotes nor rbbp4on/Δ4 trans-heterozygous show a gross phenotype in 5 dpf larvae (Figure 4K and L) or evidence of apoptosis in the developing midbrain and retina at 2 dpf (Figure 4M and N). Therefore, the level of processed, mature rbbp4 transcript is enough to maintain wild type levels of rbbp4 activity.
 
-## Cre/lox recombination of rbbp4off leads to stable inversion and conditional gene rescue
+### Cre/lox recombination of rbbp4off leads to stable inversion and conditional gene rescue
 
 To test the ability of the UFlip cassette to undergo stable inversion and provide conditional rescue, we first used Cre mRNA injection. A total of 12.5 pg Cre synthetic mRNA was injected into embryos from a cross between rbbp4off/+ and rbbp4Δ4/+ heterozygous adults (Figure 5A–G). In comparison to uninjected rbbp4off/Δ4 larvae (Figure 5B), 5 dpf rbbp4off/Δ4 Cre injected larvae show normal morphology and an absence of RFP expression (Figure 5C). Confocal live imaging of 2 dpf in injected rbbp4off/Δ4 confirmed loss of RFP and rescue of the cell death phenotype in the retina (Figure 5—figure supplement 1A–L). Stable inversion of the rbbp4off cassette to the ‘on’ orientation was confirmed by PCR and sequence analysis, which showed the expected sequences at the 5’ and 3’ junctions after inversion at the lox sites (Figure 5—figure supplement 1M–P). Activated caspase 3 labeling in 2 dpf sectioned head tissue showed a nearly complete absence of apoptosis in the midbrain (** p<0.01) and retina (**** p<0.0001) compared to controls (Figure 5D–F, Figure 5—source data 1). Genomic DNA quantitative PCR of the original 5’ and 3’ rbbp4on allele junction fragments in the Cre injected embryos indicated a 93% reduction (Figure 5G, Figure 5—source data 1). Together these data demonstrate Cre mediated recombination at the incompatible pairs of loxP and lox2272 sites in the rbbp4off allele leads to efficient, stable inversion of the cassette to the ‘on’ orientation, which results in robust conditional rescue of the rbbp4 loss-of-function phenotype.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/71478/elife-71478-fig5-v2.jpg)
+
+**Figure 5.:** (A) Diagram of expected Cre mediated inversion of rbbp4off to on orientation. (B) Gross morphological phenotype of microcephaly and microphthalmia in 5 dpf transheterozygous rbbp4off/Δlarva. (C) Cre injected 5 dpf transheterozygous rbbp4off/Δ4larva shows rescue of gross phenotype and loss of mRFP expression. (D) Activated caspase-3a labeling throughout midbrain and retina section from 2 dpf transheterozygous rbbp4off/Δ4embryo. (E) Absence of activated caspase-3a labeling in midbrain and retina of 2 dpf transheterozygous rbbp4off/Δ4embryo after Cre injection. (F) Quantification of caspase-3a labeling in control rbbp4off/Δ4(n=3) and Cre injected rbbp4off/Δ4 (n=3) midbrain (** p<0.01) and retina (**** p<0.0001). (G) Genomic DNA qPCR quantification of rbbp4off original orientation 5’ and 3 junctions in control rbbp4off/Δ4 (n=3) and Cre injected rbbp4off/Δ4 (n=3). Cre injection reduced the level of rbbp4off original orientation 5’ (>93%) and 3’ junctions (>93%). (H – J”) Activated caspase-3A and Cre labeling in sectioned head tissue from 2 dpf rbbp4off/Δ4 (H-H"), ascl1b-2A-Cre; rbbp4off/Δ4 (I-I"), and neurod1-2A-Cre; rbbp4off/Δ4 (J-J") embryos. (K) Quantification of caspase-3a labeling in rbbp4off/Δ4(n=3), ascl1b-2A-Cre; rbbp4off/Δ4 (n=3) and neurod1-2A-Cre; rbbp4off/Δ4 (n=3).rbbp4off/Δ4vs. ascl1b-2A-Cre; rbbp4off/Δ4 midbrain (n.s. p=0.3248) and retina (n.s. p=0.8153), and neurod1-2A-Cre; rbbp4off/Δ4 midbrain (n.s. p=0.7794) and retina (n.s. p=0.9365). OT, optic tectum; R, retina; Th, thalamic region. Error bars represent mean ± s.e.m. with two-tailed t-test. Scale bars: 200 μm (B, C), 50 μm (D, E, H – J). 10 μm (H’ – J”).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/71478/elife-71478-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A – D) Gross morphology and mRFP expression in uninjected rbbp4off/+ (A) and rbbp4off/Δ4 (B), and Cre injected rbbp4off/+ (C) and rbbp4off/Δ4 (D) 5 dpf larva. Confocal live images of mRPF expression and transmitted light in 2 dpf retina from uninjected rbbp4off/+ (E, I), uninjected rbbp4off/Δ4 (F, J), Cre injected rbbp4off/+ (G, K) and rbbp4off/Δ4 (H, L). (M, N) 5’ and 3’ junctions of the inverted allele detected by genomic DNA PCR. (O) PCR amplicon genotyping of the rbbp4Δ4 exon 2 4 bp deletion allele. (P) Sequence of the 5’ and 3 junction amplicons confirms rbbp4off stable inversion to the on orientation by Cre. Scale bar: 200 μm (A - D). 20 μm (E - L).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/71478/elife-71478-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) Genomic DNA qPCR quantification of rbbp4off original orientation 5’ and 3 junctions in control rbbp4off/Δ4 (n=3) and in ascl1b-2A-Cre; rbbp4off/Δ4(n=3). (B) Genomic DNA qPCR quantification of rbbp4off original orientation 5’ and 3 junctions in control rbbp4off/Δ4 (n=3) and in neurod1-2A-Cre; rbbp4off/Δ4Δ4(n=3). Error bars represent mean ± s.e.m.
+
 To test whether cell type-specific Cre sources could be used to rescue rbbp4 activity in distinct cell populations (Figure 5H–K), we used our previously published endogenous proneural Cre driver lines ascl1b-2A-Cre, gcry1:GFP is75 and neurod1-2A-Cre, gcry1:GFP is77 (Almeida et al., 2021). 2 dpf larvae from rbbp4off/+ crossed with ascl1b-2A-Cre/+; rbbp4Δ4/+ were sectioned and head tissue labeled to detect activated caspase 3. In comparison to control rbbp4off/Δ4 embryos, ascl1b-2A-Cre; rbbp4off/Δ4 embryos appeared to have reduced caspase labeling in the midbrain, where Cre is expressed (Figure 5H–I’), but the change was not significant (n.s. p=0.3248) (Figure 5K; Figure 5—source data 1). ascl1b isn’t expressed in the retina and consistent with this, Cre labeling was not detected in this tissue (Figure 5I”). As expected, there was no significant change in caspase labeling or levels in retinal sections from ascl1b-2A-Cre; rbbp4off/Δ4 embryos (n.s. p=0.8152) (Figure 5I" and K). To confirm expression of functional Cre recombinase and inversion of the cassette by ascl1b-2A-Cre, 5’ and 3’ junction genomic DNA qPCR showed >30% inversion of the cassette (Figure 5—figure supplement 2; Figure 5—figure supplement 2—source data 1). Testing for conditional rescue with the neurod1-2A-Cre driver showed there was no significant rescue of apoptosis in the brain (n.s. p=0.7794) and retina (n.s. p=0.9365) where neurod1-2A-Cre is expressed (Figure 5J, K; Figure 5—source data 1). 5’ and 3’ junction genomic DNA qPCR confirmed 30% inversion of the rbbp4off allele to the ‘on’ orientation (Figure 5—figure supplement 2; Figure 5—figure supplement 2—source data 1). Together, these results demonstrate a ubiquitous source of Cre can robustly rescue the loss-of-function phenotype of the rbbp4off allele. ascl1b-2A-Cre led to a modest rescue in the developing midbrain, possibly due to expression of ascl1b in a subset of proneural progenitors in this tissue. The complete absence of rescue by neurod1-2A-Cre indicates rbbp4 isn’t required for survival in this progenitor population. These interpretations are supported by the results of conditional gene inactivation experiments with the rbbp4on allele described below. rbbp4on cell-type-specific inactivation with ascl1b-2A-Cre leads to the expected apoptotic mutant phenotype in the midbrain, whereas inactivation with neurod1-2A-Cre did not result in apoptosis in either the midbrain or retina (Figure 6).
 
-## Cre/lox recombination of rbbp4on leads to efficient conditional gene inactivation and recapitulates morphological and cellular loss-of-function phenotypes
+![Figure 6.](https://cdn.elifesciences.org/articles/71478/elife-71478-fig6-v2.jpg)
+
+**Figure 6.:** (A) Diagram of expected Cre-mediated inversion of rbbp4on to “off” orientation. (B) Normal morphological phenotype in 5 dpf transheterozygous rbbp4on/Δ4larva. (C) Induction of microcephaly and microphthalmia and mRFP expression in Cre injected 5 dpf transheterozygous rbbp4on/Δ4larva. (D) Absence of activated caspase-3a labeling in sectioned tissue from 2 dpf uninjected transheterozygous rbbp4on/Δ4embryo. (E) Activated caspase-3a labeling in the midbrain and retina of 2 dpf transheterozygous rbbp4on/Δ4embryo after Cre injection. (F) Quantification of caspase-3a labeling in control rbbp4on/Δ4(n=3) and Cre-injected rbbp4on/Δ4(n=3) midbrain (* p<0.05) and retina (* p<0.05). (G) Genomic DNA qPCR quantification of rbbp4on original orientation 5’ and 3 junctions in control rbbp4on (n=3) and Cre injected rbbp4on/Δ4 (n=3). (H – K”) Activated caspase-3a and Cre labeling in sectioned head tissue from 2 dpf ascl1b-2A-Cre; rbbp4D4/+ (H-H"), ascl1b-2A-Cre; rbbp4on/Δ4 (I-I"), neurod1-2A-Cre; rbbp4Δ4/+ (J-J"), and neurod1-2A-Cre; rbbp4on/Δ4 (K-K"), embryos. Green arrowheads, activated caspase-3a-positive cells. White arrowheads, hypercondensed and fragmented nuclei. (L) Quantification of caspase-3a labeling in ascl1b-2A-Cre; rbbp4on/+ (n=4) and ascl1b-2A-Cre; rbbp4on/Δ4 (n=6) midbrain (** p<0.01) and retina (n.s. p=0.8543). (M) Quantification of caspase-3a labeling in neurod1-2A-Cre; rbbp4on/+ (n=3) and neurod1-2A-Cre; rbbp4on/Δ4 (n=3) midbrain (n.s. p=0.3739) and retina (n.s. p=0.6433). OT, optic tectum; R, retina; Th, thalamic region. Error bars represent mean ± s.e.m. with two-tailed t-test. Scale bars: 200 μm (B, C), 50 μm (D, E, H – K). 10 μm (H’ – K”).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/71478/elife-71478-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A – D) Gross morphology and mRFP expression in uninjected rbbp4on/+ (A) and rbbp4on/Δ4 (B), and Cre injected rbbp4on/+ (C) and rbbp4on/Δ4 (D) 5 dpf larva. Confocal live images of mRPF expression and transmitted light in 2 dpf retina from uninjected rbbp4on/+ (E, I), uninjected rbbp4on/Δ4 (F, J), Cre injected rbbp4on/+ (G, K) and rbbp4on/Δ4 (H, L). (M, N) 5’ and 3’ junctions of the inverted allele detected by genomic DNA PCR. (O) PCR amplicon genotyping of the rbbp4Δ4 exon 2 4 bp deletion allele. (P) Sequence of the 5’ and 3 junction amplicons confirms rbbp4on stable inversion to the ‘off’ orientation by Cre.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/71478/elife-71478-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Bright field and mRFP fluorescence images of rbbp4on/Δ4 (A, A’), ascl1b-2A-Cre; rbbp4on/Δ4 (B, B’), and neurod1-2A-Cre; rbbp4on/Δ4 (C, C’). White arrowheads point to blue lens expression from the rbbp4on allele and lens GFP expression from the 2A-Cre drivers. (D) Genomic DNA qPCR quantification of rbbp4on original orientation 5’ and 3 junctions in control rbbp4on (n=3) and ascl1b-2A-Cre; rbbp4on/Δ4 (n=3). (E) Genomic DNA qPCR quantification of rbbp4on original orientation 5’ and 3 junctions in control rbbp4on (n=3) and neurod1-2A-Cre; rbbp4on/Δ4 (n=3). Error bars represent mean ± s.e.m. Scale bars: 200 μm.
+
+### Cre/lox recombination of rbbp4on leads to efficient conditional gene inactivation and recapitulates morphological and cellular loss-of-function phenotypes
 
 To assess whether Cre recombination of the rbbp4on allele to the ‘off’ orientation would lead to conditional inactivation and induction of expression of the gene trap mRFP, we first used 12.5 pg Cre mRNA injection into embryos from a cross between rbbp4on/+ and rbbp4Δ4/+ heterozygous adults (Figure 6). In comparison to uninjected rbbp4on/Δ4 larvae which appear morphologically normal (Figure 6B), 5 dpf rbbp4on/Δ4 Cre mRNA-injected larvae display the rbbp4 microcephaly and microphthalmia loss-of-function phenotype, and induction of RFP expression (Figure 6C). Sectioned tissue from 2 dpf embryos showed a significant increase in activated caspase 3 labeling throughout the midbrain (* p<0.05) and retina (* p<0.05) (Figure 6D–F; Figure 6—source data 1), consistent with the rbbp4 mutant apoptotic cellular phenotype. Confocal live imaging in 2 dpf control and injected rbbp4on/Δ4 embryos confirmed induction of the gene trap RFP expression and cell death in the retina (Figure 6—figure supplement 1A–L). PCR junction analysis and sequencing (Figure 6—figure supplement 1M–P), and genomic DNA qPCR analysis of 5’ and 3’ junctions (Figure 6G; Figure 6—source data 1) confirmed robust stable inversion of the rbbp4on allele to the ‘off’ orientation (82%–84% efficiency) correlated with induction of the rbbp4 loss-of-function phenotype.
 
-## Proneural Cre/lox rbbp4on conditional inactivation reveals cell-type-specific requirement for rbbp4 in ascl1b progenitor survival
+### Proneural Cre/lox rbbp4on conditional inactivation reveals cell-type-specific requirement for rbbp4 in ascl1b progenitor survival
 
 We conducted the same experimental approach as described above using the endogenous proneural Cre driver lines ascl1b-2A-Cre, gcry1:GFP is75 and neurod1-2A-Cre, gcry1:GFP is77, but in combination with the rbbp4on allele to test for cell-type-specific conditional inactivation (Figure 6H–M). Embryos from rbbp4on/+ + crossed with ascl1b-2A-Cre/+; rbbp4Δ4/+ adults were examined for induction of gene trap RFP expression and assessed for Cre-mediated allele inversion by 5’ and 3’ junction genomic qPCR (Figure 6—figure supplement 2; Figure 6—figure supplement 2—source data 1). Three dpf ascl1b-2A-Cre/+; rbbp4on/Δ4 larvae show RFP expression throughout the brain and neural tube and a 20% inversion rate (Figure 6—figure supplement 2 B, B’, D). Although the larvae appeared morphologically normal, compared to controls the sectioned tissue from 2 dpf embryos showed a significant increase in activated caspase 3 labeling in the midbrain tectum and dorsal thalamic region (** p<0.01) (Figure 6H–I and L; Figure 6—source data 1). Activated caspase 3 labeling was not detected in the retina (n.s. p=0.08543), consistent with the lack of retinal expression of ascl1b and Cre (Figure 6H”–I” and L). Conditional inactivation of rbbp4on with neurod1-2A-Cre also lead to induction of RFP expression in both the brain and the retina, albeit at lower levels, and 20% cassette inversion efficiency (Figure 6—figure supplement 2 C, C’, E; Figure 6—figure supplement 2—source data 1), However, in contrast to conditional inactivation with ascl1b-2A-Cre, inactivation with neurod1-2A-Cre did not lead to significantly different levels of caspase 3 labeling in the 2 dpf brain (n.s. p=0.3739) or retina (n.s. p=0.6434) compared to controls (Figure 6J–K, M; Figure 6—source data 1). These results suggest Cre-mediated conditional inactivation of rbbp4 in the ascl1b neural progenitor population leads to apoptosis. Although rbbp4 is expressed in the neurod1 population as shown by induction of RFP, the absence of apoptosis indicates rbbp4 may not be required for survival in committed progenitors or newborn neurons. These results support two critical conclusions: First, conditional inactivation of rbbp4on with ubiquitous Cre leads to efficient stable inversion of the cassette from ‘on’ to ‘off’, and replicates the rbbp4 loss-of-function phenotype. Second, rbbp4on can be inactivated in a cell-type-specific manner that reveals a potential cell-specific function for rbbp4 in ascl1b-neural progenitor cell survival.
 
-## rb1off allele provides robust gene knockdown and loss of function
+### rb1off allele provides robust gene knockdown and loss of function
 
 To validate the UFlip approach for generating conditional alleles at a second locus, we characterized the activity of the rb1off is58 and rb1on is57 alleles (Figure 7). RT-qPCR of homozygous rb1off 3 dpf larvae with primers spanning rb1 exons 6–8 showed >99% knockdown of rb1 mRNA levels in comparison to wild-type sibling larvae (Figure 7A, B; Figure 7—source data 1). To simplify identification of trans heterozygous rb1 mutant larvae, we isolated an rb1 exon 2 CRISPR integration allele, rb1-stop-myl7:GFPis59 (rb1-stop) using a targeting vector design similar to our recently published method to isolate endogenous Cre lines in proneural genes (Almeida et al., 2021). The stop-myl:GFP cassette contains three translation termination codons, in each of the three reading frames, followed by a transcription terminator plus a myl7:GFP secondary marker (Figure 7—figure supplement 1A, B). The rb1stop allele is larval lethal in combination with the rb1Δ7 indel mutation and homozygous rb1stop/stop 5 dpf larvae show the same level of increased numbers of pH3 labeled cells throughout the midbrain (n.s. p=0.2951) and retina (n.s. P=0.1534) (Figure 7—figure supplement 1C; Figure 7—figure supplement 1—source data 1) as rb1Δ7/Δ7 homozygotes (Schultz et al., 2018). Trans-heterozygous rb1off/stop larvae from a cross between rb1off/+ and rb1stop/+ heterozygotes are easily distinguished from siblings by the expression of lens BFP by the rb1off allele (Figure 7D arrowhead) and heart GFP by the rb1stop allele (Figure 7D asterisk). rb1off/stop 5 dpf larvae appear morphologically normal compared to wild type, with the exception of the lack of a swim bladder (Figure 7C, D), similar to rb1Δ7/stop larvae (Figure 7E). In contrast to wild type (Figure 7F), 5 dpf sectioned head tissue shows pH3-labeled cells throughout the rb1off/stop midbrain (*** p<0.001) and retina (**** p<0.0001), like rb1Δ7/stop trans-heterozygotes (Figure 7F–H; Figure 7—figure supplement 2A; Figure 7—source data 1) and rb1stop/stop and rb1Δ7/Δ7 homozygotes (Figure 7—figure supplement 1C). Together these results demonstrate the rb1off allele provides robust gene knockdown and recapitulates the zebrafish rb1 loss-of-function morphological and cellular phenotypes.
 
-## rb1on allele maintains rb1 function
+![Figure 7.](https://cdn.elifesciences.org/articles/71478/elife-71478-fig7-v2.jpg)
+
+**Figure 7.:** (A) Diagram of the rb1off allele. (B) Plot of RT-qPCR results from wild type +/+ (n=3), heterozygous rb1off/+ (n=3), and homozygous rb1off/off (n=3) larvae showing the relative level of rb1 mRNA transcript using reference gene rps6kb1b. Primer pairs were located in exons 6 and 8, or downstream exons 23 and 24. (C – E) Gross phenotype of wildtype +/+ (C), rb1off/stop (D), and rb1Δ7/stop (E) 5 dpf larvae. Arrowhead in D points to rb1off allele gcry1:BFP secondary reporter expression in lens. Asterisk marks the rb1stop allele mly7:GFP secondary reporter expression in heart. (F – H) pH3 and HuC/D labeling of sectioned head tissue from 5 dpf +/+ (F), rb1off/stop (G), and rb1Δ7/stop (H). (I) Diagram of the rb1on allele. (J) Plot of RT-qPCR results from wild type +/+ (n=3), heterozygous rb1on/+ (n=3), and homozygous rb1on/on (n=3) larvae showing the relative level of rb1 mRNA transcript using reference gene rps6kb1b. Primer pairs were located in exons 6 and 8, or downstream exons 23 and 24. (K, L) Gross phenotype of wildtype +/+ (K), heterozygous rb1on/+ (L) and transheterozygous rb1on/stop (M) 5 dpf larvae. Arrowhead in L, M points to rb1off allele gcry1:BFP secondary reporter expression in lens. Asterisk in M marks the rb1stop allele mly7:GFP secondary reporter expression in heart. pH3 and HuC/D labeling of sectioned head tissue from 5 dpf +/+ (N), heterozygous rb1on/+ (O) and transheterozygous rb1on/stop (P).OT, optic tectum; R, retina; Th, thalamic region. Error bars represent mean ± s.e.m. Scale bars: 200 μm (C–E, K–M), 50 μm (F–H, N–P).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/71478/elife-71478-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Diagram of rb1 gene model with exon 2 gRNA, the stop-PRISM-myl7:GFP targeting vector, and the resulting rb1-stop-myl7:GFP allele after GeneWeld CRISPR-Cas9 targeted integration. (B) F1 adult rb1-stop 5’ and 3’ junction analysis shows precise integration of the stop-PRISM cassette at the exon 2 target site. (C) Immunolocalization and quantification of pH3-labeled cells in control +/+ (n=3), rb1stop/+ (n=3), rb1stop/stop (n=3), and rb1Δ7/Δ7 (n=3) 5 dpf sectioned head tissue in the midbrain optic tectum and thalamic region (top row) and retina (bottom row) in both rb1stop/stop and rb1Δ7/Δ7 homozygotes. rb1stop/stop vs. +/+midbrain (**** p<0.0001) and retina (**** p<0.0001), rb1stop/stop vs. rb1Δ7/Δ7 midbrain (n.s. p=0.2951) and retina (n.s. p=0.1534). Th, thalamic region; OT, optic tectum; R, retina. Error bars represent mean ± s.e.m. with two-tailed t-test. Scale bars: 50 μm.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/71478/elife-71478-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** (A) Quantification of pH3 labeled cells in 5 dpf wild type +/+ (n=3), transheterozygous rb1off/stop (n=3), and transheterozygous rb1Δ7/stop (n=3) larvae. rb1off/stop larvae show a significant difference in pH3 levels from wildtype in the midbrain (*** p<0.001) and retina (**** p<0.0001). Associated with Figure 5 panels F, G, H. (B) Quantification of pH3-labeled cells in 5 dpf wild type +/+ (n=3), heterozygous rb1on/+(n=3), and transheterozygous rb1on/stop (n=3) larvae. rb1on/stop larvae show a significant difference in pH3 levels from wildtype in the midbrain (** p<0.01) and retina (** p<0.01). Error bars represent mean ± s.e.m. with two-tailed t-test. Associated with Figure 5 panels N, O, P.
+
+### rb1on allele maintains rb1 function
 
 The rb1on allele (Figure 7I) was examined for its effect on rb1 mRNA expression and gene activity. RT-qPCR of rb1on/+ heterozygotes and rb1on/on homozygotes showed 84% and 83% levels, respectively, of rb1 mRNA compared to wild-type controls (Figure 7J; Figure 5—source data 1). Like wildtype, heterozygous rb1on/+ and trans-heterozygous rb1on/stop 5 dpf larvae appear morphologically normal (Figure 7K–M). pH3 labeling in 5 dpf sectioned head tissue showed no significant difference between wild type (+/+) and rb1on/+ (Figure 7N, O; Figure 7—figure supplement 2B; Figure 7—figure supplement 2—source data 1) in the midbrain (n.s. p=0.1118) and a slightly significant increase in the retina (* p>0.05). In rb1on/stop transheterozygous larvae an increase in pH3 labeled cells was detected in the midbrain (** p<0.01) and retina (** p0.01) (Figure 7P; Figure 7—figure supplement 2B; Figure 7—source data 1). However, the actual increase in number was minor, from 10 to ~30, in contrast to hundreds of pH3-positive cells in homozygous mutant rb1 tissues. Together, these results demonstrate the rb1off allele knocks down rb1 mRNA expression and gene activity as expected, while the rb1on allele does not significantly disrupt either.
 
-## Cre/lox recombination of rb1off leads to stable inversion and conditional gene rescue
+### Cre/lox recombination of rb1off leads to stable inversion and conditional gene rescue
 
 To test the rb1off and rb1on alleles for Cre-mediated conditional rescue and inactivation, we used the same approach as outlined above for the conditional rbbp4off and rbbp4on alleles. First, 12.5 pg Cre mRNA injection was used to test for recombinase mediated inversion and conditional gene rescue in embryos from a cross between rb1off/+and rb1stop/+adults (Figure 8A–G). Stable inversion of the rb1off cassette to the ‘on’ orientation was confirmed by PCR and sequence analysis, which showed the expected sequences at the 5’ and 3’ junctions after inversion at the lox sites (Figure 8—figure supplement 1). In comparison to uninjected rb1off/stop larvae (Figure 8B), 5 dpf rb1off/stop Cre injected larvae showed a significant reduction in the number of pH3-labeled cells in the midbrain (** p<0.01) and retina (** p<0.01) (Figure 8C, F; Figure 8—source data 1). Genomic DNA quantitative PCR of the original 5’ and 3’ rb1off allele junction fragments in the Cre injected embryos indicated a>78% inversion rate (Figure 8G; Figure 8—source data 1). Together these data demonstrate Cre mediated recombination of the rb1off allele leads to efficient, stable inversion of the cassette to the ‘on’ orientation and conditional rescue of the rb1 loss-of-function phenotype.
 
-## neurod1-specific rb1off conditional rescue demonstrates rb1 is required to suppress neurod1 neural progenitor cell cycle entry
+![Figure 8.](https://cdn.elifesciences.org/articles/71478/elife-71478-fig8-v2.jpg)
+
+**Figure 8.:** (A) Diagram of expected Cre-mediated inversion of rb1off to on orientation. (B, C) pH3 and HuC/D labeling of larval sectioned head tissue from 5 dpf transheterozygous rb1off/stop (B – B”) and Cre injected rb1off/stop (C – C”). (D, E) pH3 and Cre labeling of larval sectioned head tissue from 5 dpf transheterozygous rb1off/stop (D – D”) and neurod1-2A-Cre; rb1off/stop (E – E”). (F) Quantification of pH3-positive cells in control rb1off/stop (n=3) and Cre injected rb1off/stop (n=3) midbrain (** p<0.01) and retina (** p<0.01). (G) Genomic DNA qPCR quantification of rb1off original orientation DNA 5’ and 3’ junctions in control rb1off/stop (n=3) and Cre injected rb1off/stop (n=3). (H) Quantification of pH3-positive cells in rb1off/stop (n=3) and neurod1-2A-Cre; rb1off/stop (n=3) midbrain (** p<0.01) and retina (* p<0.05). (I) Genomic DNA qPCR quantification of rb1off original orientation DNA 5’ and 3’ junctions in control rb1off (n=3) and neurod1-2A-Cre; rb1off/stop (n=3). Error bars represent mean ± s.e.m. with two-tailed t-test. Scale bars: 50 μm (B - E), 10 μm (B’ – E”).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/71478/elife-71478-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) Diagram of expected Cre-mediated inversion of rb1off to on orientation with primers for junction analysis. (B) Gross morphology in 5 dpf larva uninjected rb1off/+ and rb1off/stop, and Cre injected rb1off/+ and rb1off/stop. (C, D) 5’ and 3’ junctions of the inverted allele detected by genomic DNA PCR. (E) Sequence of the 5’ and 3 junction amplicons confirms rb1off stable inversion to the on orientation by Cre. Scale bar 200 μm (B).
+
+### neurod1-specific rb1off conditional rescue demonstrates rb1 is required to suppress neurod1 neural progenitor cell cycle entry
 
 The proneural neurod1-2A-Cre, gcry1:GFP is77 driver was used to test for conditional gene rescue of rb1 in the neurod1 progenitor population. Five dpf larvae from adult rb1off/+ crossed with neurod1-2A-Cre/+; rb1stop/+ was labeled with antibodies to Cre and pH3 (Figure 8D–I). In comparison to control rb1off/stop larvae, neurod1-2A-Cre/+; rb1off/stop larvae showed a significant reduction in pH3 positive cells in the midbrain (* p<0.05) and retina (** p<0.01) where Cre is expressed (Figure 8D–H; Figure 8—source data 1). Rescue of the phenotype correlated with >34% Cre mediated inversion of rb1off to the ‘on’ orientation (Figure 8I; Figure 8—source data 1). The results demonstrate cell-type-specific conditional rescue and a requirement for rb1 to suppress cell cycle entry in neurod1 progenitors.
 
-## Cre/lox recombination of rb1on leads to efficient conditional gene inactivation and recapitulates cellular rb1 loss-of-function phenotype
+### Cre/lox recombination of rb1on leads to efficient conditional gene inactivation and recapitulates cellular rb1 loss-of-function phenotype
 
 Conditional rescue using the rb1on allele was first tested by injection of 12.5 pg Cre mRNA into embryos from a cross between heterozygous rb1on/+ and rb1stop/+ adults to induce inversion from the passive to the active orientation (Figure 9A). At 3 dpf rb1on/stop uninjected and injected larvae appear morphologically normal like control rb1on/+ larvae (Figure 9—figure supplement 1 A, B). However, in comparison to uninjected control sectioned head tissue (Figure 9B), Cre injected rb1on/stop showed increased levels of pH3 labeling throughout the brain and retina (Figure 9C), similar to the loss-of-function phenotype of rb1Δ7/stop and rb1off/stop (Figure 7D and E). Quantification showed a significant increase in the number of pH3-positive cells in injected larvae in both the midbrain (**** p<0.0001) and retina (** p<0.01) (Figure 9F; Figure 9—source data 1). Induction of the mutant phenotype correlated with >80% inversion rate by Cre recombination (Figure 9G; Figure 9—source data 1). Stable inversion of the UFlip cassette in Cre injected embryos was confirmed by PCR junction analysis and sequencing of the junction amplicons (Figure 9—figure supplement 1 C–F). These results demonstrate Cre recombination leads to stable inversion of the UFlip cassette and conditional gene inactivation which replicates the rb1 loss-of-function phenotype at the cellular level.
 
-## neurod1-specific rb1on conditional inactivation leads to neural progenitor cell cycle entry
+![Figure 9.](https://cdn.elifesciences.org/articles/71478/elife-71478-fig9-v2.jpg)
+
+**Figure 9.:** (A) Diagram of expected Cre mediated inversion of rb1on to ‘off’ orientation. (B, C) pH3 and HuC/D labeling of larval sectioned head tissue from 5 dpf transheterozygous rb1on/stop (B – B”) and Cre injected rb1on/stop (C – C”). (D, E) pH3 and Cre labeling of larval sectioned head tissue from 5 dpf transheterozygous rb1on/stop (D – D”) and neurod1-2A-Cre; rb1on/stop (E – E”). (F) Quantification of pH3-positive cells in control rb1on/stop (n=3) and Cre rb1on/stop (n=3) injected midbrain (**** p<0.0001) and retina (** p<0.01). (G) Genomic DNA qPCR quantification of rb1onoriginal orientation DNA 5’ and 3’ junctions in control rb1on/stop (n=3) and Cre injected rb1on/stop (n=3). (H) Quantification of pH3-positive cells in control rb1on/stop (n=3) and neurod1-2A-Cre; rb1on/stop (n=3) midbrain (*** p<0.001) and retina (* p<0.05). (I) Genomic DNA qPCR quantification of rb1on original orientation DNA 5’ and 3’ junctions in control rb1on/stop (n=3) control and neurod1-2A-Cre; rb1on/stop (n=3). Error bars represent mean ± s.e.m. with two-tailed t-test. Scale bars: 50 μm (B - E), 20 μm (B’ – E”).
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/71478/elife-71478-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Diagram of expected Cre-mediated inversion of rb1on to “off” orientation with primers for junction analysis. (B) Gross morphology in 5 dpf larva uninjected rbon/+ and rb1on/stop, and Cre injected rb1on/+ and rb1on/stop. (C, D) 5’ and 3’ junctions of the inverted allele detected by genomic DNA PCR. (E) Sequence of the 5’ and 3 junction amplicons confirms rb1on stable inversion to the “off” orientation by Cre. Scale bar 200 μm (B).
+
+### neurod1-specific rb1on conditional inactivation leads to neural progenitor cell cycle entry
 
 The proneural neurod1-2A-Cre, gcry1:GFP is77 driver was used to test for conditional inactivation of rb1 in the neurod1 progenitor population. 3 dpf larvae from adult rb1on/+ crossed with neurod1-2A-Cre/+; rb1stop/+ was labeled with antibodies to Cre and pH3 (Figure 9D–I). In comparison to control rb1on/stop larvae (Figure 9D), neurod1-2A-Cre/+; rb1on/stop larvae showed a significant increase in pH3 positive cells in the midbrain (*** p<0.001) and retina (* p<0.05) where Cre is expressed (Figure 9E and H; Figure 9—source data 1). Induction of the mutant phenotype correlated with >25% inversion of rb1on to the ‘off’ orientation (Figure 9I; Figure 9—source data 1). The results are consistent with the rb1off conditional rescue experiment, and demonstrate a requirement for rb1 in suppressing cell cycle entry in the neurod1 progenitor cell population in the developing midbrain and retina.
 
@@ -127,23 +364,334 @@ In summary, building on our previous streamlined GeneWeld approach for CRISPR-Ca
 
 ## Materials and methods
 
-## Ethics declarations and approval for animal experiments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>ascl1b</td>
+      <td>ensemble</td>
+      <td>ENSDARG00000009702</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>neurod1</td>
+      <td>ensemble</td>
+      <td>ENSDARG00000019566</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>rb1</td>
+      <td>ensemble</td>
+      <td>ENSDARG00000006782</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (Danio rerio)</td>
+      <td>rbbp4</td>
+      <td>ensemble</td>
+      <td>ENSDARG00000029058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Danio rerio)</td>
+      <td>WIK</td>
+      <td>Zebrafish International Resource Center</td>
+      <td>ZIRC:ZL84</td>
+      <td>Wildtype strain of zebrafish</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(ascl1b-2A-Cre)</td>
+      <td>McGrail lab</td>
+      <td>Tg(ascl1b-2A-Cre; gcry1:EGFP)is75</td>
+      <td>Maintained in the lab of M. McGrail (Almeida et al., 2021)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(neurod1-2A-Cre)</td>
+      <td>McGrail lab</td>
+      <td>Tg(neurod1-2A-Cre; gcry1:EGFP)is77</td>
+      <td>Maintained in the lab of M. McGrail (Almeida et al., 2021)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>rb1Δ7</td>
+      <td>McGrail lab</td>
+      <td>rb1Δ7is54</td>
+      <td>Maintained in the lab of M. McGrail (Solin et al., 2015)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>rbbp4Δ4</td>
+      <td>McGrail lab</td>
+      <td>rbbp4Δ4is60</td>
+      <td>Maintained in the lab of M. McGrail (Schultz et al., 2018)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(rb1-UFlip-on)</td>
+      <td>This paper</td>
+      <td>Tg(rb1-i6-UFlip-rox-lox2272-loxP-inverted&lt;RFP;gcry1:BFP &gt;lox2272-loxP-rox-on)is57</td>
+      <td>Available from M. McGrail lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(rb1-UFlip-off)</td>
+      <td>This paper</td>
+      <td>Tg(rb1-i6-UFlip-rox-loxP-lox2272&lt;RFP;gcry1:BFP &gt;loxP-lox2272 -rox-off)is58</td>
+      <td>Available from M. McGrail lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(rb1-UFlip-off)</td>
+      <td>This paper</td>
+      <td>Tg(rb1-i6-UFlip-rox-loxP-lox2272&lt;2A-RFP;gcry1:BFP &gt;loxP-lox2272 -rox-off)is63</td>
+      <td>Available from M. McGrail lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(rbbp4-UFlip-off)</td>
+      <td>This paper</td>
+      <td>Tg(rbbp4-i4-UFlip-rox-lox2272-loxP-&lt;2A-RFP;gcry1:BFP &gt;lox2272-loxP-rox-off)is61</td>
+      <td>Available from M. McGrail lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(rbbp4-UFlip-on)</td>
+      <td>This paper</td>
+      <td>Tg(rbbp4-i4-UFlip-rox-lox2272-loxP-&lt;2A-RFP;gcry1:BFP &gt;lox2272-loxP-rox-on)is62</td>
+      <td>Available from M. McGrail lab</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>Tg(rb1-stop-PRISM)</td>
+      <td>This paper</td>
+      <td>Tg(rb1-3XSTOP; myl7:GFP)is59</td>
+      <td>Available from M. McGrail lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pT3TS-nCas9n</td>
+      <td>Wenbiao Chen</td>
+      <td>Addgene:46,757</td>
+      <td>Plasmid for in vitro synthesis of Cas9 mRNA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pT3TS-Cre</td>
+      <td>Karl Clark</td>
+      <td></td>
+      <td>Plasmid for in vitro synthesis of Cre mRNA, available from K. Clark lab (Clark et al., 2011)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pT3TS-Dre</td>
+      <td>Karl Clark</td>
+      <td></td>
+      <td>Dre cDNA (Anastassiadis et al., 2009) expression vector for in vitro mRNA synthesis, available from K. Clark lab</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p-CS2-KalTA4</td>
+      <td>Martin Distel</td>
+      <td></td>
+      <td>Available from M. Distel lab (Distel et al., 2009)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUFlip-floxed-mRFP, gcry1:BFP</td>
+      <td>This paper</td>
+      <td>pUFlip(UgRNA-rox-loxP-lox2272&lt;RFP; gcry1:BFP &gt;loxP-lox2272-rox-UgRNA)</td>
+      <td>decommissioned</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUFlip-floxed-mRFP, myl7:BFP</td>
+      <td>This paper</td>
+      <td>pUFlip(UgRNA-rox-loxP-lox2272&lt;RFP; myl7:BFP &gt;loxP-lox2272-rox-UgRNA)</td>
+      <td>decommissioned</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUFlip-floxed-2A-mRFP, gcry1:BFP</td>
+      <td>This paper</td>
+      <td>pUFlip(UgRNA-rox-loxP-lox2272&lt;2A-RFP; gcry1:BFP &gt;loxP-lox2272-rox-UgRNA)</td>
+      <td>available from M. McGrail lab; Deposited at Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pUFlip-floxed-2A-KalTA4, gcry1:BFP</td>
+      <td>This paper</td>
+      <td>pUFlip(UgRNA-rox-loxP-lox2272&lt;2A-KalTA4; gcry1:BFP &gt;loxP-lox2272-rox-UgRNA)</td>
+      <td>available from M. McGrail lab; Deposited at Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pSTOP-PRISM-3Xstop-myl7:GFP</td>
+      <td>This paper</td>
+      <td>pPRISM(UgRNA-3XSTOP; myl7:GFP-UgRNA)</td>
+      <td>available from J. Essner lab; Deposited at Addgene</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td></td>
+      <td>This paper</td>
+      <td>PCR primers and oligos</td>
+      <td>See Table 1</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBuilder HiFi DNA Assembly Cloning kit</td>
+      <td>New England Biolabs</td>
+      <td>Catalog # E5520S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PureYield Plasmid Miniprep System</td>
+      <td>Promega</td>
+      <td>Catalog # A1223</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>mMessage mMACHINE T3 Transcription Kit</td>
+      <td>Ambion</td>
+      <td>Catalog # AM1348</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA Clean and Concentrator Kit (RCC)</td>
+      <td>Zymo</td>
+      <td>Catalog # R1013</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>pCR4 TOPO TA Cloning Kit</td>
+      <td>ThermoFisher/ Invitrogen</td>
+      <td>ThermoFisher:K457502</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Superscript III</td>
+      <td>Invitrogen</td>
+      <td>Catalog # 18080093</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial reagent</td>
+      <td>SYBR Green</td>
+      <td>BioRad</td>
+      <td>Catalog # 1725271</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial reagent</td>
+      <td>Tissue-Tek O.C.T. Compound</td>
+      <td>Fisher</td>
+      <td>Catalog # 4,583</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ICE</td>
+      <td>Synthego</td>
+      <td>Inference of CRISPR Edits (ICE) https://www.synthego.com/products/bioinformatics/crispr-analysis</td>
+      <td>Indel analysis of Sanger sequenced DNA</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Graphpad PRISM</td>
+      <td></td>
+      <td></td>
+      <td>Statistical analyses</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti -Caspase-3a</td>
+      <td>BD Pharmingen</td>
+      <td>Catalog # 559,565</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-Cre Recombinase</td>
+      <td>Chemicon</td>
+      <td>Catalog # MAB3120</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-HuC/D</td>
+      <td>Invitrogen</td>
+      <td>Catalog # A21271</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse monoclonal anti-phospho-Histone H3 (Ser10)</td>
+      <td>Millipore</td>
+      <td>Catalog # 05–806</td>
+      <td>(1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-phospho-Histone H3</td>
+      <td>Millipore</td>
+      <td>Catalog # 06–570?</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Rabbit polyclonal anti-Rbbp4</td>
+      <td>Bethyl Laboratories</td>
+      <td>Catalog # A301-206A</td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DAPI</td>
+      <td>Invitrogen</td>
+      <td>Catalog # D1306</td>
+      <td>(0.5 ug/ml)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Ethics declarations and approval for animal experiments
 
 Use of zebrafish for research in this study was performed according to the Guidelines for Ethical Conduct in the Care and Use of Animals (APA, 1986), and carried out in accordance with Iowa State University Animal Care and Use Committee IACUC-18–279 and IACUC-20–058 approved protocols. All methods involving zebrafish were in compliance with the American Veterinary Medical Association (2020), ARRIVE (Percie du Sert et al., 2020) and NIH guidelines for the humane use of animals in research.
 
-## Zebrafish strains and maintenance
+### Zebrafish strains and maintenance
 
 Zebrafish (Danio rerio) were maintained on an Aquaneering aquaculture system at 26 °C on a 14 hr light/10 hr dark cycle. The WIK strain of wild type zebrafish was obtained from the Zebrafish International Resource Center (https://zebrafish.org/home/guide.php). Other zebrafish lines used in this study were previously described: Tg(ascl1b-2A-Cre; gcry1:EGFP)is75 and Tg(neurod1-2A-Cre; gcry1:EGFP)is77 (Almeida et al., 2021); rb1Δ7is54 (Solin et al., 2015); rbbp4Δ4is60 (Schultz et al., 2018).
 
-## Contact for reagent and resource sharing
+### Contact for reagent and resource sharing
 
 Further information and requests for resources and reagents should be directed to Maura McGrail (mmcgrail@iastate.edu).
 
-## Floxed UFlip vector for CRISPR-targeted integration to generate conditional alleles
+### Floxed UFlip vector for CRISPR-targeted integration to generate conditional alleles
 
 The UFlip version 1.0 floxed mRFP gene trap vector for targeted integration (Figure 1A) was designed to be compatible with our previously published GeneWeld CRISPR-Cas9 targeted integration strategy (Wierson et al., 2020). The UFlip cassette was assembled in the pPRISM parent vector (Almeida et al., 2021) which has Universal UgRNA sequences on and BfuAI and BspQI type II restriction enzyme sites for cloning 5’ and 3’ homology arms on either side of the cassette, as previously described (Wierson et al., 2020). In the UFlip vector, the homology arm cloning sites flank head to head oriented rox sites that sit outside alternating pairs of head to head loxP and lox2272 sites for stable inversion after Cre mediated recombination (Robles-Oteiza et al., 2015; Schnütgen et al., 2003). Internal to the rox and lox sequences is the RP2 gene trap (Clark et al., 2011), consisting of a gene trap Splice Acceptor-mRFP-ocean pout (Zoarces americanus) antifreeze gene transcriptional termination and polyadenylation sequence (Gibbs and Schmale, 2000), followed by a tissue-specific lens gcry1:BFP or heart myl7:BFP secondary reporter. To assemble UFlip an intermediate vector was created by adding EagI and ClaI restriction sites to the pPRISM backbone by PCR. Six pairs of oligos, each containing the sequence of one of the rox, loxP or lox2272 sites, with complementary overhangs were ligated into the EagI and ClaI digested backbone. All three reading frames of the RP2 gene trap plus secondary reporter was directionally cloned into AvrII and SacI restriction sites located inside the pairs of rox/loxP/lox2272 sites. The UFlip version 2.0 vector was generated by mRFP primary reporter in the first version of the UFlipv1.0 vector was subsequently replaced with the porcine teschovirus-1 polyprotein 2 A peptide fused to mRFP. A UFlip version with a gene trap primary reporter containing the 2A-KalTA4 cDNA (Distel et al., 2009) for signal amplification using with a UAS:reporter is also available.
 
-## Intronic sgRNA target site selection, UFlip homology arm design and targeted integration
+### Intronic sgRNA target site selection, UFlip homology arm design and targeted integration
 
 To identify CRISPR gRNA sites in introns, intronic sequences from four adult female and four adult make WIK fish were amplified from fin clip DNA using the proofreading enzyme KOD and sequenced to identify non-repetitive sequences that were shared among adults in the population. Gene specific and vector Universal UgRNA synthetic gRNAs with 2’-O-Methyl at first and last bases, 3’ phosphorothioate bonds between first 3 and last 2 bases, were ordered from Synthego . gRNA efficiency was determined by co-injection of 25 pg gRNA plus 300 pg Cas9 mRNA into one-cell stage embryos, followed by PCR amplification of the targeted intron and analysis of heteroduplex formation by gel electrophoresis. Amplicons were Sanger sequenced and the sequences analyzed for indel efficiency using Synthego’s Inference of CRISPR Edits (ICE) analysis software (https://ice.synthego.com/#/). The UFlip targeting vectors were built following the GeneWeld protocol (Welker et al., 2021). 48 bp 5’ and 3’ homology arms were designed to sequences flanking the genome intronic CRISPR-Cas9 target site. The homology arms were assembled by annealing complementary oligonucleotides with appropriate overhangs for cloning into the BfuAI and BspQI type IIS restriction enzyme sites that flank the UFlip cassette. To generate an active, gene ‘off’ allele, the 5’ and 3’ homology arms were cloned into the UFlip BfuAI and BspQI sites, respectively. To integrate the UFlip cassette in the passive, gene ‘on’ orientation, the position of the cloned 5’ and 3’ homology arms was reversed, with the 3’ homology arm cloned into the BfuAI site upstream of the cassette, and the 5’ homology arm cloned in the BspQI site downstream of the cassette. gRNA and homology arm oligonucleotide sequences are listed in Table 1.
 
@@ -151,26 +699,172 @@ For synthesis of Cas9 mRNA the expression vector pT3TS-nCas9n (Addgene #46757) (
 
 To target CRISPR-Cas9 driven integration of the UFlip cassette into intronic sites, a 2 nl volume containing 25 pg of genomic gRNA, 25 pg of UgRNA, 10 pg of UFlip targeting vector, and 300 pg Cas9 mRNA was co-injected into one-cell stage embryos from crosses between sequence validated adult fish. Larvae were screened at 3 dpf for expression of the lens gcry1:BFP or heart myl7:BFP secondary marker. Three to four BFP-positive embryos were selected for genomic DNA isolation and confirmation of on target integration by PCR sequence analysis of 5’ and 3’ junctions. BFP-positive sibling embryos were raised to adulthood. Primers, gRNA and homology arm oligonucleotide sequences are listed in Table 1 and Table 4.
 
-## Isolation of stable zebrafish rbbp4 and rb1 UFlip and stop-PRISM integration alleles
+**Table 4.**
+ Primer oligonucleotide sequences.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer name</th>
+      <th>Sequence</th>
+      <th>Purpose</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>rbbp4e × 4 F</td>
+      <td>ACCAAACACCCCTCCAAACCAG</td>
+      <td>intron sequencing, sgRNA analysis and genome/vector 5' junction analysis</td>
+    </tr>
+    <tr>
+      <td>rbbp4e × 5 R</td>
+      <td>AGTGCACTCTCCAGAGGGGT</td>
+      <td>intron sequencing, sgRNA analysis and genome/vector 3' junction analysis</td>
+    </tr>
+    <tr>
+      <td>rb1e × 6 F</td>
+      <td>CATGTTCCTCCTGGCCAAG</td>
+      <td>genome/vector 5' junction analysis</td>
+    </tr>
+    <tr>
+      <td>rb1e × 7 R</td>
+      <td>CACAAGGTCATCTTCCATCTG</td>
+      <td>genome/vector 3' junction analysis</td>
+    </tr>
+    <tr>
+      <td>rb1e × 2 F</td>
+      <td>GAGGAGCTCCAGTCCACTAAC</td>
+      <td>genotyping and genome/vector 5' junction analysis</td>
+    </tr>
+    <tr>
+      <td>rb1e × 2 R</td>
+      <td>CCCAAAACACAAGTGCGGTAA</td>
+      <td>genotyping and genome/vector 3' junction analysis</td>
+    </tr>
+    <tr>
+      <td>R-5'-junc-Stop-pPRISM</td>
+      <td>CGGTGGCTGAGACTTAATTACT</td>
+      <td>stop-PRISM genome/vector 5' junction analysis</td>
+    </tr>
+    <tr>
+      <td>F-3'-junc-(all)-pPRISM</td>
+      <td>TTCAGATCAATTAACCCTCACC</td>
+      <td>stop-PRISM genome/vector 3' junction analysis</td>
+    </tr>
+    <tr>
+      <td>RFPj</td>
+      <td>ATGACGTCCTCGGAGGAGGC</td>
+      <td>UFlip genome/vector junction analysis</td>
+    </tr>
+    <tr>
+      <td>RFPj2</td>
+      <td>CCTTGGTCACCTTCAGCTTG</td>
+      <td>UFlip genome/vector junction analysis</td>
+    </tr>
+    <tr>
+      <td>BactinpAj</td>
+      <td>GCAAACGGCCTTAACTTTCC</td>
+      <td>UFlip genome/vector junction analysis</td>
+    </tr>
+    <tr>
+      <td>2AR</td>
+      <td>CATAGGACCGGGGTTTTCTT</td>
+      <td>UFlip and 2A-Cre genome/vector junction analysis</td>
+    </tr>
+    <tr>
+      <td>rb1e × 6 F</td>
+      <td>CAGCTGGACCATGTTCCTCC</td>
+      <td>QPCR</td>
+    </tr>
+    <tr>
+      <td>rb1e × 8 R</td>
+      <td>CCCTGATTACGGCGTGATGT</td>
+      <td>QPCR</td>
+    </tr>
+    <tr>
+      <td>rbbp4e × 4 F</td>
+      <td>TAGTGACGTGCTGGTCTTTG</td>
+      <td>QPCR</td>
+    </tr>
+    <tr>
+      <td>rppb4e × 5 R</td>
+      <td>CAGGACAGACCATAACCTTCTT</td>
+      <td>QPCR</td>
+    </tr>
+    <tr>
+      <td>rbbp4e × 11_1 F</td>
+      <td>CTCTGTGTCTGAGGACAACATC</td>
+      <td>QPCR</td>
+    </tr>
+    <tr>
+      <td>rbbp4e × 12_1 R</td>
+      <td>TATCCCTGAACCTCAGTGTCT</td>
+      <td>QPCR</td>
+    </tr>
+    <tr>
+      <td>rps6kb1b_1 F</td>
+      <td>TCCTGATGACTCCACACTGA</td>
+      <td>QPCR</td>
+    </tr>
+    <tr>
+      <td>rps6kb1b_1 R</td>
+      <td>GGCGAGGTGAACGGATTT</td>
+      <td>QPCR</td>
+    </tr>
+    <tr>
+      <td>BFP_F</td>
+      <td>CTGCCTCATCTACAACGTCAA</td>
+      <td>genotyping</td>
+    </tr>
+    <tr>
+      <td>BFP_R</td>
+      <td>CTTAGCGGGTTTCTTGGATCTAT</td>
+      <td>genotyping</td>
+    </tr>
+    <tr>
+      <td>neujF</td>
+      <td>TCCAACTGAACCCCAGAACT</td>
+      <td>genotyping</td>
+    </tr>
+    <tr>
+      <td>ascjF</td>
+      <td>GTCAACATGGGCTTCCAGAC</td>
+      <td>genotyping</td>
+    </tr>
+    <tr>
+      <td>rbbp4e × 2 F</td>
+      <td>GCGTGATGACAGATCTCATATTGTTTTCCC</td>
+      <td>genotyping</td>
+    </tr>
+    <tr>
+      <td>rbbp4e × 2 R</td>
+      <td>CTGGTGACATCTGGCAACCACT</td>
+      <td>genotyping</td>
+    </tr>
+  </tbody>
+</table>
+
+### Isolation of stable zebrafish rbbp4 and rb1 UFlip and stop-PRISM integration alleles
 
 To identify founder fish transmitting a UFlip allele, adults were outcrossed to wild-type WIK and embryos were screened for expression of the UFlip secondary reporter expressing BFP in the lens (gcry1:BFP) or heart (myl7:BFP). To identify on target integration alleles, genomic DNA was extracted from individual BFP-positive embryos by digestion in 50 mM NaOH at 95 °C for 30 min and neutralization by addition of 1/10th volume 1 M Tris-HCl pH 8.0. Genomic DNA/UFlip cassette 5’ and 3’ junctions were amplified by PCR with gene specific and UFlip primers listed in Table 4, followed by direct Sanger sequencing. BFP-positive sibling embryos from a founder that was transmitting a precise UFlip integration allele were raised to adulthood. F1 adult animals were fin clipped and the genotype of individuals confirmed by PCR and sequencing. Confirmed F1 adults were outcrossed to wild-type WIK, and F2 adults again were confirmed for the presence of a precise UFlip integration allele. Individual confirmed F2 adults were outcrossed to WIK to establish independent transgenic lines.
 
 The rb1-stop-PRISM-myl7:GFP allele was generated with a pPRISM (PRecise Integration with Secondary Marker) GeneWeld targeted integration vector containing a cassette with splice acceptor followed by three copies of TGA, TAA, TAG, the ocean pout (Zoarces americanus) antifreeze gene transcriptional termination and polyadenylation sequence (Gibbs and Schmale, 2000), and a myl7:eGFP-βactin polyadenylation secondary reporter. Previously described 5’ and 3’ homology arms complementary to the rb1 exon 2 CRISPR target site (Schultz et al., 2018; Wierson et al., 2020) were cloned into the BfuAI and BspQI type IIS restriction enzyme sites flanking the stop-PRISM-myl7:eGFP cassette. 25 pg of rb1 exon 2 genomic gRNA, 25 pg of UgRNA, 10 pg of rb1-stop-PRISM targeting vector, and 300 pg Cas9 mRNA were coinjected into one-cell stage embryos in a volume of 2 nl, and adult founders screened for transmission of the rb1-stop-PRISM-myl7:GFP allele. Precise 5’ and 3’ junctions were confirmed in heart myl7:eGFP expressing F2 fin clipped adults.
 
-## Quantitative RT-PCR
+### Quantitative RT-PCR
 
 Experiments to measure endogenous gene mRNA levels by Reverse Transcription-quantitative PCR were designed and performed according to MIQE and updated guidelines (Bustin et al., 2009; Taylor et al., 2019). Three biological replicates were performed, with each replicate representing embryos from a different mating pair of fish. At 3 dpf 20 randomly selected larvae from incrosses of heterozygous rbbp4off/+, rbbp4on/+, rb1off/+, and rb1on/+ were collected for RNA extraction and genotyping. Individual dissected head tissue was placed in RNAlater (Qiagen/Thermo Fisher AM7020) or DNA/RNA shield (Zymo Research R1100-50) and individual trunk tissue was placed in 50 mM NaOH for genotyping. Five heads of each genotype were pooled and total RNA extracted using the Direct-zol RNA Microprep kit (Zymo Research, R2060) and the quality determined using a Bioanalyzer 2100 (Agilent) at the Iowa State University DNA Facility. RNA samples with a RIN >5 were normalized to the same concentration, and first strand cDNA was synthesized using SuperScript III First-Strand Synthesis SuperMix (ThermoFisher, 11752050) containing random hexamer and oligo dT primers. Primers were designed to amplify ~200 bp amplicons with an annealing temperature of 60 °C. Primer optimization and validation was performed with 3 primer concentrations (100, 200, and 400 nM) and 3 cDNA amounts (5, 25, and 215 ng) with two replicates per condition. Primer efficiency was calculated as described (Bustin et al., 2009; Taylor et al., 2019) and primer pairs with 90–100% efficiency were used for qPCR of control and test samples. The sequence of rbbp4, rb1 and reference gene rps6kb1b qPCR primers are listed in Table 4. qPCR was performed on each sample in triplicate using SsoAdvanced Universal SYBR Green Supermix (Bio-Rad, 1725270) on a CFX Connect Real-Time System (Bio-Rad).
 
-## Cre and Dre-mediated inversion of UFlip alleles
+### Cre and Dre-mediated inversion of UFlip alleles
 
 For synthesis of Cre and Dre mRNAs, the expression vectors pT3TS-Cre (Clark et al., 2011) and pT3TS-Dre were linearized with SalI (New England Biolabs, R0138S) and BamHI (New England Biolabs, R0136S), respectively. 1 μg linearized vector was purified with the PureYield Plasmid Miniprep System (Promega, A1223) and used as template for in vitro synthesis of capped mRNA with the Ambion mMessage Machine T3 Transcription Kit (Thermo Fisher, AM1348). In vitro synthesized mRNA was purified with the RNA Clean and Concentrator Kit RCC (Zymo, R1013). A total of 12.5 pg Cre or 15 pg Dre mRNA was injected into one-cell stage embryos to promote recombination-mediated inversion of the UFlip cassette at lox or rox sites. UFlip cassette inversion in Cre or Dre injected 3 dpf larvae was confirmed by digestion of individual larvae in 50 mM NaOH at 95 °C for 30 min and neutralization by addition of 1/10th volume 1 M Tris-HCl pH 8.0. Genomic DNA/UFlip cassette 5’ and 3’ junctions were amplified by PCR with gene specific and UFlip primers listed in Table 4, followed by direct Sanger sequencing.
 
-## Zebrafish tissue embedding, sectioning, immunolocalization, and imaging
+### Zebrafish tissue embedding, sectioning, immunolocalization, and imaging
 
 Zebrafish embryo and larvae fixation, embedding, sectioning, and immunolabeling was as described previously (Schultz et al., 2018). Zebrafish embryos and larvae were anesthetized in 160 µg/ml Ethyl 3-aminobenzoate methanesulfonate (Tricaine, MS-222) C9H11NO2·CH4SO3 (Sigma-Aldrich, 886-86-2) in E3 embryo media (Westerfield, 1995) and head and trunk dissected. Trunk tissue was placed in 20 µl 50 mM NaOH for genotyping. Heads were fixed in 4% paraformaldehyde overnight at 4 °C, incubated in 30% sucrose overnight at 4 °C, then processed and embedded in Tissue-Tek OCT (Fisher, 4583). Tissues were sectioned at 14–16 µm on a Microm HM 550 cryostat. Antibodies used for labeling: rabbit polyclonal anti-phospho-Histone H3 PH3 1:1000 (Cell Signaling Technology; 9701); mouse monoclonal anti-phospho-Histone H3 (Ser10), clone 3H10 1:500 (Millipore 05–806); mouse monoclonal anti-HuC/D 1:500 (Invitrogen A-21271); mouse monoclonal Anti-Cre recombinase 1:250 (Millipore-Sigma MAB3120); rabbit polyclonal anti-Caspase-3a 1:500 (BD Biosciences 559565); Alexa-594 (Invitrogen A-11005) and Alexa-488 (Invitrogen A-11008) conjugated secondary antibodies 1:500. Tissues were counterstained with 5 µg/ml DAPI, mounted in Fluoro-Gel II containing DAPI (Electron Microscopy Sciences 17985–50) and imaged on a Zeiss LSM800 laser scanning confocal microscope.
 
 For live imaging, some embryos and larvae were treated with 0.003% 1-phenyl 2-thiourea (Sigma, P7629) to inhibit pigment synthesis, anesthetized in Tricaine in embryo media (Westerfield, 1995) and mounted on slides in 1.2% low-melt agarose/embryo media/Tricaine. Fluorescence and bright field imaging were performed on a Zeiss SteREO Discovery V12 microscope equipped with an X-Cite 120 W Metal Halide lamp (Excilitas Technologies, X-Cite 120Q). Images were captured with a Cannon Rebel T3 camera using EOS Utility software (Cannon). Bright field and fluorescence images were merged in Photoshop (Adobe). Live imaging was also performed on a Leica M165 FC stereomicroscope equipped with EL 6000 light source and K5 passive cooled sCMOS camera using Leica LAS X Multi Channel Acquisition software. Live imaging of larval retina was performed on a Zeiss LSM800 laser scanning confocal microscope.
 
-## Quantification and statistical analyses
+### Quantification and statistical analyses
 
 Quantification of proliferation and apoptosis was performed on three sections of immunolabeled head tissue for each individual, from three biological replicates of zebrafish embryos or larvae. Prism (GraphPad) software was used for two-tailed unpaired Student’s t-test with mean ± s.e.m. statistical analyses and production of bar graphs.

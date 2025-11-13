@@ -40,19 +40,35 @@ In this study, we assessed the role of β-catenin in TECs by employing β5t-iCre
 
 ## Results
 
-## GOF of β-catenin in TECs causes thymic dysplasia
+### GOF of β-catenin in TECs causes thymic dysplasia
 
 To address the potential function of β-catenin in TECs, we generated mice in which GOF of β-catenin was achieved specifically in TECs by intercrossing β5t-iCre mice (Ohigashi et al., 2013) with Ctnnb1 exon 3 floxed mice, in which the conditional deletion of exon 3 led to stabilization of β-catenin and constitutive activation of β-catenin signaling (Harada et al., 1999). Contrary to previous studies demonstrating that the Foxn1-Cre-mediated GOF of β-catenin perturbed the migration of the thymic primordium from the pharyngeal region into the thoracic cavity during the embryogenesis (Zuklys et al., 2009; Swann et al., 2017), the β5t-Cre-mediated GOF of β-catenin (β-cat GOF) showed no disruption of the thoracic migration of the embryonic thymus (Figure 1A, B). However, the thymus in these mice showed severe dysplasia by E15.5 (Figure 1B, C). The β-cat GOF embryos appeared normal in size (Figure 1B) and exhibited undisturbed limb development (data not shown), indicating that the thymic dysplasia in β-cat GOF mice occurred independent of systemic retardation in embryogenesis. Fluorescence detection of Cre-mediated recombination by further crossing to R26R-tdTomato reporter mice (Madisen et al., 2010) revealed that β5t-Cre-mediated tdTomato-expressing cells were specifically detected in the thymus in the thoracic cavity in both control and β-cat GOF mice at E15.5, further confirming that TECs successfully migrated into the thoracic cavity in β-cat GOF mice (Figure 1B). Unlike control mice in which tdTomato-labeled cells distributed uniformly throughout the thymus, tdTomato-labeled cells in β-cat GOF mice densely distributed in concentric mid-inner layers, excluding the central core, in the thymus (Figure 1B). Morphological alteration of the thymus was apparent in sagittal sections of E15.5 β-cat GOF embryos by hematoxylin and eosin staining and by the detection of keratin 5 (K5) and keratin 8 (K8) expression, in which a multilayered concentric structure of epithelial cells surrounding the central core that mainly consisted of nonepithelial structures sparsely containing erythrocytes was observed (Figure 1C, Figure 1—figure supplement 1). β-Catenin was abundant in the concentric layers of the thymus in E15.5 β-cat GOF mice, whereas β5t was undetectable throughout the E15.5 β-cat GOF thymus (Figure 1C), indicating that GOF of β-catenin in TECs diminishes β5t expression in TECs. Intracellular staining of β-catenin in CD45−EpCAM+ TECs isolated from E15.5 thymus revealed that the intracellular level of β-catenin in TECs from β-cat GOF mice was increased by 70% compared with that from control mice (Figure 1D). These results indicate that β5t-Cre-mediated GOF of β-catenin specifically in TECs causes severe thymic dysplasia by E15.5 without affecting thoracic migration of the thymic primordium.
 
-## Defective thymus development by GOF of β-catenin in TECs
+![Figure 1.](https://cdn.elifesciences.org/articles/69088/elife-69088-fig1-v1.jpg)
+
+**Figure 1.:** (A) Thoracic cavity of control mice and β-cat gain-of-function (GOF) mice at E15.5. Dotted lines show the outline of the thymic primordium. In many cases, blood clots were observed in the central core of the thymic primordium in β-cat GOF mice. Representative data from three independent experiments are shown. TH: thymus, H: heart. Bar: 1 mm. (B) Labeling of β5t-iCre-activated cell progenies with tdTomato fluorescence in the thymus of control mice and β-cat GOF mice at E15.5. Mouse sections were nuclear counterstained with TO-PRO3. Bottom panels are magnifications of white-boxed areas in the top panels. Representative data from three independent experiments are shown. Bars: indicated in figures. (C) Hematoxylin and eosin staining (top) and immunofluorescence staining for K5 and K8 (middle) and β-catenin and β5t (bottom) on sagittal sections of thymic primordium in control mice and β-cat GOF mice at E15.5. Representative results from three independent experiments are shown. Bar: 100 μm. (D) Intracellular staining of β-catenin in CD45−EpCAM+ TECs isolated from control mice and β-cat GOF mice at E15.5. Histograms show β-catenin expression in control TECs (blue line) and β-cat GOF TECs (red line). Shaded area and black line represent the fluorescence in the absence of anti-β-catenin antibody in control TECs and β-cat GOF TECs, respectively. Plots on the right show net median fluorescence intensity (MFI) values (means and standard error of the means [SEMs], n = 4–5). The numbers in parentheses indicate percentage of control value. *p < 0.05.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69088/elife-69088-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Immunofluorescence staining for K5 and K8 (left) or β-catenin and β5t (right) on sagittal sections of the thymus from control mice and β-cat gain-of-function (GOF) mice at E15.5. Shown are merged images with nuclear counterstaining (TO-PRO3) (top) and images obtained in each channel (middle, bottom). Representative data from three independent experiments are shown. Bars: 100 μm.
+
+### Defective thymus development by GOF of β-catenin in TECs
 
 To examine how early the thymic abnormality was detectable in the embryos of β-cat GOF mice, we next performed histological analysis of the thymic primordium at early stages of fetal thymus development before E15.5. The expression of Foxn1, a transcription factor that characterizes the thymic epithelium-specified domain of the third pharyngeal pouch (Nehls et al., 1994; Gordon et al., 2001), was detected in the thymic primordium in both β-cat GOF and control embryos at E11.5, indicating that the initiation of the earliest thymus organogenesis is undisturbed in β-cat GOF mice (Figure 2A, Figure 2—figure supplement 1A). At E12.5, when the expression of β5t becomes detectable in the thymus (Ripen et al., 2011), the colonization of CD45+ lymphocytes in Foxn1-expressing thymic primordium was observed in both β-cat GOF and control embryos (Figure 2A), further supporting that early thymus organogenesis is undisturbed in β-cat GOF mice. However, the thymus morphology was markedly altered in β-cat GOF embryos at E13.5, namely, the thymic primordium appeared spherical in β-cat GOF embryos and ovoid in control embryos (Figure 2A). At this stage in β-cat GOF embryos, Foxn1+ TECs and CD45+ lymphocytes accumulated preferentially in the anterior area of the thymic primordium (Figure 2A). By E15.5, Foxn1 expression became undetectable and the number of CD45+ lymphocytes was markedly reduced in the dysplastic thymus in β-cat GOF embryos (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/69088/elife-69088-fig2-v1.jpg)
+
+**Figure 2.:** (A) Immunofluorescence staining for CD45 and Foxn1 on sagittal sections of thymic primordium in control mice and β-cat GOF mice at E11.5–E15.5. The sections were nuclear counterstained with TO-PRO3. Anterior–posterior (A–P) and dorsal–ventral (D–V) orientations of the images are indicated. Representative data from three independent experiments are shown. Bar: 100 μm. (B) Quantitative RT-PCR analysis of mRNA expression levels (means and standard error of the means [SEMs], n = 3–4) of indicated genes relative to Gapdh levels in CD45−EpCAM+ thymic epithelial cells (TECs) isolated from the thymus of control mice and β-cat GOF mice at E15.5. (C) The numbers of CD45+ thymocytes were analyzed by flow cytometry. Plots show the numbers (means and SEMs, n = 3–4) of CD45+ thymocytes in the thymus of control mice and β-cat GOF mice at E15.5. (D) Flow cytometric analysis of double negative (DN) thymocytes from control mice and β-cat GOF mice at E15.5. Shown are profiles of CD44 and CD25 expression. The numbers in dot plots indicate the frequency of cells within indicated area. (E) Cell numbers (means and SEMs, n = 3–4) of indicated DN thymocyte subpopulations from control mice and β-cat GOF mice at E15.5 are plotted. *p < 0.05; **p < 0.01; ***p < 0.001; N.S., not significant.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69088/elife-69088-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Immunofluorescence staining for CD45 and Foxn1 on sagittal sections of the thymic primordium in control mice and β-cat gain-of-function (GOF) mice at E11.5–E15.5. Shown are merged images with nuclear counterstaining (TO-PRO3) (left) and images obtained in each channel (middle, right) for the thymus from control mice and β-cat GOF mice at the indicated stages. Representative data from three independent experiments are shown. Bar: 100 μm. (B) Flow cytometric analysis of thymic epithelial cells (TECs) from indicated mice at E15.5, showing the purity of the isolated TECs for quantitative RT-PCR analysis. Shown are representative profiles of CD45, PI, and EpCAM expression in total cells (left) and in isolated CD45−EpCAM+ TECs (right) from control mice and β-cat loss-of-function (LOF) mice. The numbers indicate the frequency of cells within indicated areas.
 
 Quantitative RT-PCR analysis of CD45−EpCAM+ TECs isolated from E15.5 thymus established that the expression of Wnt/β-catenin target genes, including Axin2, Dkk1, and Msx1, was upregulated in β-cat GOF TECs (Figure 2B, Figure 2—figure supplement 1B). By contrast, the expression of genes functionally relevant to TECs, such as Foxn1, Psmb11 (encoding β5t protein), and Ccl25 (encoding chemokine CCL25 protein that attracts lymphocyte progenitors to the thymic primordium; Liu et al., 2006), was significantly reduced in β-cat GOF TECs, consistent with the results of immunohistochemical analysis. The initial attraction of lymphoid progenitors to the thymic primordium is cooperatively regulated by CCL25 and CCL21 chemokines, the expression of which is dependent on Foxn1 and Glial Cells Missing Transcription Factor 2 (Gcm2), respectively (Liu et al., 2006). Given that the expression of Ccl21a was not altered in β-cat GOF TECs (data not shown), and given that β5t transcription for β5t-Cre-mediated β-catenin GOF is dependent on Foxn1 (Žuklys et al., 2016; Uddin et al., 2017), the overexpression of β-catenin in TECs primarily affected Foxn1-dependent Ccl25 expression but not Gcm2-dependent Ccl21a expression. The expression of Delta-like (Dll) 4, a Foxn1-dependent Notch ligand essential for early T-cell development (Hozumi et al., 2008; Koch et al., 2008), was markedly reduced in β-cat GOF TECs (Figure 2B). Notably, the expression of involucrin (Ivl), loricrin (Lor), and desmoglein-1 alpha (Dsg1a) genes by the terminally differentiated keratinocytes (Candi et al., 2005) and the terminally differentiated subpopulation of mTECs (Yano et al., 2008; Michel et al., 2017) was upregulated in β-cat GOF TECs but not control TECs at E15.5 (Figure 2B). These results suggest that normal differentiation of TECs is disrupted in β-cat GOF embryos; instead, embryonic TECs exhibit aberrant differentiation into epithelial cells that partially share gene expression profiles with the terminally differentiated keratinocytes.
 
 The number of CD45+ thymocytes in E15.5 thymus was significantly reduced in β-cat GOF mice compared with control mice (Figure 2C). Flow cytometric analysis of CD45+ thymocytes indicated that the majority of E15.5 thymocytes in β-cat GOF mice and control mice were equivalently CD4−CD8− double negative (DN) (data not shown). However, the DN thymocytes in β-cat GOF embryos were predominantly arrested at CD44+CD25− DN1 stage (Figure 2D). Indeed, the numbers of downstream thymocytes at DN2 (CD44+CD25+), DN3 (CD44−CD25+), and DN4 (CD44−CD25−) stages were dramatically reduced in β-cat GOF embryos compared with control embryos, whereas the number of DN1 thymocytes was comparable between β-cat GOF and control embryos (Figure 2E). These results indicate that embryonic thymus development is severely disturbed by β5t-Cre-mediated GOF of β-catenin specifically in TECs, which in turn results in early arrest of thymocyte development in embryonic thymus.
 
-## GOF of β-catenin in TECs causes postnatal loss of T cells in secondary lymphoid organs
+### GOF of β-catenin in TECs causes postnatal loss of T cells in secondary lymphoid organs
 
 β-Cat GOF mice grew to adulthood with no gross abnormality in appearance and body weight (Figure 3A, B), whereas the thymic dysplasia persisted throughout the postnatal periods in β-cat GOF mice (Figure 3C). Flow cytometric analysis of cells from postnatal lymphoid organs showed that the frequency and the number of αβTCR-expressing T cells in the spleen and the inguinal lymph node (iLN) were significantly reduced in β-cat GOF adult mice (Figure 4A, B), indicating that αβ T cells are essentially lost in β-cat GOF mice. We also detected the reduction of γδ TCR-expressing T cells in β-cat GOF mice. Vγ5+ γδT cells, which are generated in the embryonic thymus and localize to the epidermis to form dendritic epidermal T cells (DETCs) in adult mice (Havran and Allison, 1988), were severely reduced in frequency in the embryonic thymus and the postnatal skin of β-cat GOF mice (Figure 4C, D). Vγ4+ and Vγ1+ γδT cells, which are generated in the thymus during the perinatal period subsequently to the embryonic generation of Vγ5+ γδT cells (Pereira et al., 1995), were similarly reduced in frequency in the iLN and the spleen of β-cat GOF adult mice (Figure 4E, data not shown). These results indicate that the thymus-dependent γδT cells, including Vγ5+, Vγ4+, and Vγ1+ γδT cells, are essentially lost in β-cat GOF mice.
 
@@ -66,7 +82,7 @@ The number of CD45+ thymocytes in E15.5 thymus was significantly reduced in β-c
 
 Taken together, our results substantiate that GOF of β-catenin in TECs causes severe thymic dysplasia that results in postnatal loss of thymus-derived αβ and γδ T cells in secondary lymphoid organs.
 
-## LOF of β-catenin in TECs results in no apparent change in thymus development during the embryonic period
+### LOF of β-catenin in TECs results in no apparent change in thymus development during the embryonic period
 
 To further evaluate the role of β-catenin in TECs, LOF analysis of β-catenin was performed using Ctnnb1 floxed allele targeted by the β5t-Cre-mediated recombination (β-cat LOF). In contrast to β-cat GOF mice, morphological abnormality in the thymus was not apparent in β-cat LOF embryos at E15.5 (Figure 5A). Immunohistofluorescence analysis confirmed the reduction of β-catenin in the thymus of β-cat LOF mice at E15.5, whereas the expression of Foxn1, K5, and K8 in E15.5 thymus was comparable between β-cat LOF mice and littermate control mice (Figure 5B). Flow cytometric analysis revealed that intracellular β-catenin level was reduced by 77% in CD45−EpCAM+ TECs of β-cat LOF mice at E15.5 (Figure 5C). However, the number of total thymic cells and the frequency and the number of total TECs and UEA1−Ly51+ cTECs were comparable between β-cat LOF and control mice (Figure 5D, E), indicating that β5t-Cre-mediated loss of β-catenin in TECs did not alter embryonic thymus development by E15.5.
 
@@ -74,13 +90,21 @@ To further evaluate the role of β-catenin in TECs, LOF analysis of β-catenin w
 
 **Figure 5.:** (A) Thoracic cavity of control mice and β-cat LOF mice at E15.5. Dotted lines show the outline of the thymic primordium. Representative data from three independent experiments are shown. TH: thymus, H: heart. Bar: 1 mm. (B) Immunofluorescence staining for β-catenin and Foxn1 (left) or K5 and K8 (right) on sagittal sections of the thymus from control mice and β-cat LOF mice at E15.5. Shown are merged images with nuclear counterstaining (TO-PRO3) (top) and images obtained in each channel (middle, bottom). Representative data from three independent experiments are shown. Bar: 100 μm. (C) Intracellular staining of β-catenin in CD45−EpCAM+ thymic epithelial cells (TECs) from control mice and β-cat LOF mice at E15.5. Histograms show β-catenin expression in control TECs (blue line) and β-cat LOF TECs (red line). Shaded area and black line represent the fluorescence in the absence of anti-β-catenin antibody in control TECs and β-cat LOF TECs, respectively. Plots show net median fluorescence intensity (MFI) values for β-catenin (means and standard error of the means [SEMs], n = 4). The numbers in parentheses indicate percentage of control value. (D) Flow cytometric analysis of enzyme-digested thymic cells from indicated mice at E15.5. Shown are profiles of EpCAM and CD45 expression in PI− viable cells (left) and UEA1 reactivity and Ly51 expression in CD45−EpCAM+ cells (right). The numbers in dot plots indicate the frequency of cells within indicated area. (E) Plots show the number of total thymic cells (left) and the frequency and the number of total TECs (middle) and cortical thymic epithelial cell (cTECs; right) from control mice and β-cat LOF mice at E15.5 (means and SEMs, n = 4). **p < 0.01; N.S., not significant.
 
-## β-Catenin in TECs is required for optimal size of postnatal thymus
+### β-Catenin in TECs is required for optimal size of postnatal thymus
 
 β-Cat LOF mice grew to adulthood with normal hair coat (Figure 6A). However, thymus size in β-cat LOF mice was noticeably reduced in comparison to that in control mice during the postnatal period (Figure 6B), with concomitant reductions in thymus weight but not body weight (Figure 6C). Flow cytometric analysis revealed that the β-catenin expression was effectively reduced by 96% in UEA1−Ly51+ cTECs and by 94% in UEA1+Ly51− mTECs in β-cat LOF mice at 2 wk old (Figure 7A). Accordingly, quantitative RT-PCR analysis showed marked reduction of β-catenin mRNA (Ctnnb1) expression in cTECs and mTECs of β-cat LOF mice (Figure 7B, Figure 7—figure supplement 1).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/69088/elife-69088-fig6-v1.jpg)
 
 **Figure 6.:** (A) Appearance of control mice and β-cat LOF mice at 8 wk. Bar: 1 cm. (B) Appearance of the thymus from control mice and β-cat LOF mice at postnatal stages (2–8 wk). Representative data from at least three independent experiments are shown. Bar: 1 mm. (C) Bars show body weight (top) and thymus weight (bottom) at 2 wk (left, n = 3), 4 wk (middle, n = 4), and 8 wk (right, n = 5) in control mice and β-cat LOF mice (mean and standard error of the means [SEMs]). ***p < 0.001; N.S., not significant.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/69088/elife-69088-fig7-v1.jpg)
+
+**Figure 7.:** (A) Intracellular staining of β-catenin in UEA1−Ly51+ cortical thymic epithelial cells (cTECs; left) and UEA1+Ly51− medullary thymic epithelial cells (mTECs; right) from control mice and β-cat LOF mice at 2 wk. Histograms show β-catenin expression in cTECs and mTECs from control mice (blue line) and β-cat LOF mice (red line). Shaded area and black line represent the fluorescence in the absence of anti-β-catenin antibody in control TECs and β-cat LOF TECs, respectively. Plots show net MFI values for β-catenin in cTECs and mTECs (means and standard error of the means [SEMs], n = 3). The numbers in parentheses indicate percentage of control value. (B) Quantitative RT-PCR analysis of mRNA expression levels (means and SEMs, n = 5) of indicated genes relative to Gapdh levels in UEA1−Ly51+ cTECs (top) and UEA1+Ly51− mTECs (bottom) in the thymus of control mice and β-cat LOF mice at 2 wk. (C) Flow cytometric analysis of enzyme-digested thymic cells from control mice and β-cat LOF mice at 2 wk. Shown are representative profiles of EpCAM and CD45 expression in PI− viable cells (left) and UEA1 reactivity and Ly51 expression in CD45−EpCAM+ viable cells (right). The numbers in dot plots indicate the frequency of cells within indicated area. (D) Plots show the number (means and SEMs, n = 6) of cTECs and mTECs in the thymus from control mice and β-cat LOF mice at 2 wk. (E) Immunofluorescence analysis of β5t (green), CCL21 (red), and Aire (cyan) on transverse sections of thymus from control mice and β-cat LOF mice at 2 wk. Representative data from three independent experiments are shown. Bar: 100 μm. Ctrl: Control, LOF: β-cat LOF. *p < 0.05; **p < 0.01; ***p < 0.001; N.S., not significant.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/69088/elife-69088-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Flow cytometric analysis of cTECs and mTECs from indicated mice at 2 wk. Shown are representative profiles of CD45, PI, and EpCAM expression of total cells after magnetic depletion of CD45+ cells, UEA1 reactivity and Ly51 expression in CD45−EpCAM+ cells, and isolated cTECs and isolated mTECs from control mice and β-cat loss-of-function (LOF) mice. The numbers indicate the frequency of cells within indicated areas.
 
 In the thymus of β-cat LOF mice, the frequency and the number of cTECs were decreased compared with control mice (Figure 7C, D). Axin2 expression in cTECs was significantly reduced in β-cat LOF mice, indicating that Wnt/β-catenin signals were efficiently impaired in cTECs from β-cat LOF mice. However, the expression of Foxn1, Il7, and Cxcl12, which encode functionally important molecules in cTECs, was not altered in cTECs from β-cat LOF mice (Figure 7B). On the other hand, despite that the expression of β-catenin in mTECs was markedly reduced in β-cat LOF mice, the cellularity of mTECs was not altered in β-cat LOF mice (Figure 7C, D), and the expression of Axin2 was not reduced in mTECs from β-cat LOF mice (Figure 7B). The expression of functionally relevant molecules in mTECs, such as Aire, Tnfrsf11a, and Ccl21a, was comparable between β-cat LOF and control mTECs (Figure 7B). In agreement with the results of quantitative RT-PCR analysis, there were no apparent abnormalities in the corticomedullary compartmentalization of the thymus, as evidenced by the detection of β5t+ cTECs in the cortex and CCL21+ mTECs and AIRE+ mTECs in the medulla, in β-cat LOF mice (Figure 7E). These results indicate that the β-catenin in TECs is required for optimizing postnatal thymus size, mainly affecting the number of cTECs, but is dispensable for the development of the normal number of mTECs.
 
@@ -90,7 +114,7 @@ To gain an insight into the mechanism underlying the reduced number of cTECs but
 
 **Figure 8.:** (A) Volcano plot analysis of mRNA expression for cTECs (left) and mTECs (right) isolated from control (Ctrl) mice and β-cat LOF mice at 2 wk. Detected genes are plotted as log2 fold change (Ctrl/β-cat LOF) versus −log10 false discovery rate (FDR) p value. Bold horizontal lines in the plot show the p value of 0.05. (B) Correlation plot analysis for the genes differently altered (p < 0.05) in β-cat LOF cTECs (left) and β-cat LOF mTECs (right). Log2 fold changes of genes altered between Ctrl cTECs and β-cat LOF cTECs are plotted against log2 fold changes of genes altered between Ctrl mTECs and β-cat LOF mTECs. (C) Quantitative RT-PCR analysis of Cdkn1a mRNA expression normalized to Gapdh levels in UEA1−Ly51+ cTECs isolated from the thymus of control mice and β-cat LOF mice at 2 wk (means and standard error of the means [SEMs], n = 4). *p < 0.05.
 
-## β-Catenin in TECs affects postnatal thymocyte number
+### β-Catenin in TECs affects postnatal thymocyte number
 
 We next examined thymocytes in postnatal β-cat LOF mice. The number of thymocytes was reduced in β-cat LOF mice compared with control at 2, 4, and 8 wk of age (Figure 9A). The frequency of DN, DP, CD4+CD8−, and CD4−CD8+ thymocytes, as well as the frequency of TCRβ-δ+ thymocytes, was not altered in β-cat LOF mice at 8 wk (Figure 9B). As a result of the reduction in the number of total thymocytes, the number of thymocyte subsets defined by CD4 and CD8, as well as the number of TCRβ-δ+ thymocytes, was reduced in β-cat LOF mice, although the reduction in the number of CD4+CD8− thymocytes in these mice was not statistically significant (p = 0.069) (Figure 9C). We also noted that the frequency of DN subsets defined by CD44 and CD25 was unchanged, although the number of all four DN subsets was significantly reduced in β-cat LOF mice (Figure 9D). On the other hand, in contrast to the significant reduction in thymocyte numbers, the number of αβT cells and γδ T cells was not significantly altered in the secondary lymphoid organs, including the spleen and the iLN (Figure 9E, F, data not shown).
 
@@ -100,7 +124,7 @@ We next examined thymocytes in postnatal β-cat LOF mice. The number of thymocyt
 
 Our results indicate that the β-catenin in TECs is not essential for the generation of functional TECs that support T-cell development. However, the loss of β-catenin in TECs results in the reduction in the number of cTECs, which leads to the reduction in the number of thymocytes during the postnatal period.
 
-## Age-associated thymic involution occurs in LOF of β-catenin in TECs
+### Age-associated thymic involution occurs in LOF of β-catenin in TECs
 
 We next examined the phenotype of the thymus in β-cat LOF mice at 6 months old (6 mo), in which the involution of the thymus was apparent. The weight of the thymus decreased in control mice at 6 mo in comparison with those at 4 weeks old (4 wo) and 8 wo (Figures 6C and 10A). Similarly, the thymus weight decreased in β-cat LOF mice at 6 mo compared with that at 4 wo (Figures 6C and 10A). Accordingly, the thymus at 6 mo was still smaller in β-cat LOF mice than control mice (Figure 10A, B). The number of thymocytes was reduced upon the thymic involution in β-cat LOF mice (Figures 9A and 10C), although the difference in thymocyte number became insignificant between control mice and β-cat LOF mice at 6 mo (Figure 10C). The number of cTECs in β-cat LOF mice at 6 wo remained smaller than the control number, whereas the number of mTECs was equivalent to that of control at 6 mo (Figure 10 D, E). There were no apparent differences in the corticomedullary architecture of the thymus between control mice and β-cat LOF mice at 6 mo (Figure 10F). These results indicate that age-associated thymic involution is detectable in β-cat LOF mice.
 
@@ -108,7 +132,7 @@ We next examined the phenotype of the thymus in β-cat LOF mice at 6 months old 
 
 **Figure 10.:** (A) Bars show body weight (left) and thymus weight (right) at 6 mo in control female mice and β-cat LOF female mice (means and standard error of the means [SEMs], n = 4). (B) Appearance of thymus from control mice and β-cat LOF mice at 6 mo. Representative data from four independent experiments are shown. Bar: 1 mm. (C) Plots show the number (means and SEMs, n = 4) of total thymocytes in the thymus from control mice and β-cat LOF mice at 6 mo. (D) Flow cytometric analysis of enzyme-digested thymic cells from control mice and β-cat LOF mice at 6 mo. Shown are representative profiles of EpCAM and CD45 expression in PI− viable cells (left) and UEA1 reactivity and Ly51 expression in CD45−EpCAM+ viable cells (right). The numbers in dot plots indicate the frequency of cells within indicated area. (E) Plots show the number (means and SEMs, n = 4) of cortical thymic epithelial cells (cTECs) and medullary thymic epithelial cells (mTECs) in the thymus from control mice and β-cat LOF mice at 6 mo. (F) Immunofluorescence analysis of K5 (green) and K8 (magenta) on transverse sections of thymus from control mice and β-cat LOF mice at 6 mo. Representative data from three independent experiments are shown. Bar: 100 μm. Ctrl: Control, LOF: β-cat LOF. *p < 0.05; N.S., not significant.
 
-## LOF of β-catenin in TECs delays but does not abrogate recovery of thymus from stress-induced involution
+### LOF of β-catenin in TECs delays but does not abrogate recovery of thymus from stress-induced involution
 
 Because the abnormality in the thymus of β-cat LOF mice appeared much less severe than that of β-cat GOF mice, we examined how stress-induced injury would affect the thymus in β-cat LOF mice. To do so, β-cat LOF mice were treated with polyinosinic:polycytidylic acid (poly(I:C)), a synthetic analog of double-stranded RNA, which caused injury in TECs (Demoulins et al., 2008; Papadopoulou et al., 2011, Figure 11A). We found that both control and β-cat LOF mice showed transient thymic involution that was evident from the loss of thymus weight and total thymic cell number 4 days after the first poly(I:C) administration (Figure 11B, C). Subsequently, however, the involuted thymus recovered to its pretreatment size by days 18 and 25 in both control and β-cat LOF mice (Figure 11B, C), indicating that the small thymus in postnatal β-cat LOF mice retained the capability to recover from the poly(I:C)-mediated thymic injury. Indeed, the cTECs and mTECs recovered to their numbers before the treatment (Figure 11D). Interestingly, we noticed a delay in the recovery of the thymus in β-cat LOF mice compared with that in control mice (Figure 11B, C). The weight and the cell number of the thymus were still significantly lower on day 11 than day 0 in β-cat LOF mice, unlike the recovery to the pretreatment levels on day 11 in control mice (Figure 11B, C). Accordingly, the number of DP thymocytes remained slightly but significantly reduced even on day 25 in β-cat LOF mice (Figure 11E). These results indicate that LOF of β-catenin in TECs delays the recovery of the thymus from the poly(I:C)-induced thymic involution, but does not fully abolish the capability of the thymus to recover from the poly(I:C)-induced thymic injury.
 
@@ -142,21 +166,402 @@ The thymic microenvironment provided by TECs is essential for the development of
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>C57BL/6N</td>
+      <td>SLC Japan</td>
+      <td>RRID:MGI:5295404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>β5t-iCre</td>
+      <td>Ohigashi et al., 2013</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Ctnnb1 floxed(β-catfl)</td>
+      <td>Brault et al., 2001</td>
+      <td>RRID:IMSR_JAX:004152</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Ctnnb1 exon 3 floxed(β-catex3fl)</td>
+      <td>Harada et al., 1999</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Mus musculus)</td>
+      <td>Rosa26-CAG-loxP-stop-loxP-tdTomato(R26R-tdTomato)</td>
+      <td>Madisen et al., 2010</td>
+      <td>RRID:IMSR_JAX:007914</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Foxn1 (Rabbit polyclonal)</td>
+      <td>Itoi et al., 2006</td>
+      <td>N/A</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β5t(Rabbit polyclonal)</td>
+      <td>Murata et al., 2007</td>
+      <td>N/A</td>
+      <td>IHC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CCL21/6Ckine(Rat monoclonal, Clone 59106)</td>
+      <td>R&amp;D systems</td>
+      <td>Cat# MAB457, RRID:AB_2259799</td>
+      <td>IHC (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Aire-eFluor 660(Rat monoclonal,Clone 5H12)</td>
+      <td>e-Bioscience</td>
+      <td>Cat# 50-5934-82, RRID:AB_2574257</td>
+      <td>IHC (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-catenin(Mouse monoclonal, Clone 14)</td>
+      <td>BD Transduction Laboratories</td>
+      <td>Cat# 610154, RRID:AB_397555</td>
+      <td>IHC (1:200)FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Keratin 5(Chicken polyclonal,Clone Poly9059)</td>
+      <td>BioLegend</td>
+      <td>Cat# 905901, RRID:AB_2565054</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Keratin 8(Mouse monoclonal, Clone IE8)</td>
+      <td>BioLegend</td>
+      <td>Cat# 904804, RRID:AB_2616821</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45-Biotin(Rat monoclonal, Clone 30-F11)</td>
+      <td>BioLegend</td>
+      <td>Cat# 103104, RRID:AB_312969</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse CD45-PE/Cy5(Rat monoclonal, Clone 30-F11)</td>
+      <td>BioLegend</td>
+      <td>Cat# 103110, RRID:AB_312975</td>
+      <td>IHC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD45-eFluor 450(Rat monoclonal, Clone 30-F11)</td>
+      <td>eBioscience</td>
+      <td>Cat# 48-0451-80, RRID:AB_1518807</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CD45 MicroBeads(Rat monoclonal)</td>
+      <td>Miltenyi Biotec</td>
+      <td>Cat# 130-052-301, RRID:AB_2877061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-EpCAM-PE/Cy7(Rat monoclonal, Clone G8.8)</td>
+      <td>BioLegend</td>
+      <td>Cat# 118216, RRID:AB_1236471</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ly51-Alexa Fluor 647(Rat monoclonal, clone 6C3)</td>
+      <td>BioLegend</td>
+      <td>Cat# 108312, RRID:AB_2099613</td>
+      <td>FC (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ly51-PE(Rat monoclonal, clone 6C3)</td>
+      <td>BioLegend</td>
+      <td>Cat# 108308, RRID:AB_313365</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ulex Europaeus Agglutinin I (UEA1)-Biotin</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# B-1065, RRID:AB_2336766</td>
+      <td>FC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Ulex Europaeus Agglutinin I (UEA1)-DyLight 649</td>
+      <td>Vector Laboratories</td>
+      <td>Cat# DL-1068</td>
+      <td>FC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD4-APC (Rat monoclonal, Clone RM4-5)</td>
+      <td>eBioscience</td>
+      <td>Cat# 17-0042-81, RRID:AB_469322</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD8α-eFluor 450 (Rat monoclonal, Clone clone 53-6.7)</td>
+      <td>Invitrogen</td>
+      <td>Cat# 48-0081-80, RRID:AB_1272235</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD25-FITC(Rat monoclonal, Clone PC61)</td>
+      <td>BioLegend</td>
+      <td>Cat# 102006, RRID:AB_312855</td>
+      <td>FC (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD44-PE/Cy7 (Rat monoclonal, Clone IM7)</td>
+      <td>eBioscience</td>
+      <td>Cat# 25-0441-81, RRID:AB_469622</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TCRβ-PE (Armenian hamster monoclonal, Clone H57-597)</td>
+      <td>BioLegend</td>
+      <td>Cat# 109207, RRID:AB_313430</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TCRδ-Biotin (Armenian hamster monoclonal, Clone GL3)</td>
+      <td>BioLegend</td>
+      <td>Cat# 118103, RRID:AB_313827</td>
+      <td>FC (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vγ5-FITC (Hamster monoclonal, Clone 536)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 553229, RRID:AB_394721</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vγ4-FITC (Armenian hamster monoclonal, Clone UC3-10A6)</td>
+      <td>BD Pharmingen</td>
+      <td>Cat# 553226, RRID:AB_394720</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Vγ1-FITC(Armenian hamster monoclonal, Clone 2.11)</td>
+      <td>BioLegend</td>
+      <td>Cat# 141103, RRID:AB_10694242</td>
+      <td>FC (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CD3ε-APC(Armenian hamster monoclonal, Clone 145-2C11)</td>
+      <td>BioLegend</td>
+      <td>Cat# 100312, RRID:AB_312677</td>
+      <td>FC (1:20)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse IgG1 (Mouse monoclonal, Clone MOPC-21)</td>
+      <td>BD Pharmingnen</td>
+      <td>Cat# 554121, RRID:AB_395252</td>
+      <td>FC (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-chicken IgG-Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-11039, RRID:AB_142924</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG-Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11001, RRID:AB_2534069</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG-Alexa Fluor Plus 488 (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A32723, RRID:AB_2633275</td>
+      <td>FC (1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG2a-Alexa Fluor 555 (Goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat# A-21137, RRID:AB_2535776</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG-Alexa Fluor 488 (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-11034, RRID:AB_2576217</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG-Alexa Fluor 555 (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-21429, RRID:AB_2535850</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rat IgG-Alexa Fluor 555 (Goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat# A-21434, RRID:AB_2535855</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin-Alexa Fluor 488</td>
+      <td>Invitrogen</td>
+      <td>Cat# S32354, RRID:AB_2315383</td>
+      <td>IHC (1:500)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin-APC-eFluor 780</td>
+      <td>Invitrogen</td>
+      <td>Cat# 47-4317-82, RRID:AB_10366688</td>
+      <td>FC (1:80)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Streptavidin-PE</td>
+      <td>Invitrogen</td>
+      <td>Cat# S866</td>
+      <td>FC (1:400)</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>DNase I</td>
+      <td>Roche</td>
+      <td>Cat# 04716728001</td>
+      <td>(0.01%)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNeasy Plus Micro Kit</td>
+      <td>Qiagen</td>
+      <td>Cat# 74,034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SMART-seq v4 Ultra Low Input RNA Kit for Sequencing</td>
+      <td>Takara Bio</td>
+      <td>Cat# 634,888</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Nextera XT DNA Library Preparation Kit</td>
+      <td>Illumina</td>
+      <td>Cat# FC-131-1024</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NextSeq 500/550 High Output Kit v2.5 (75 cycles)</td>
+      <td>Illumina</td>
+      <td>Cat# 20024906</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>v7.0e</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CLC Genomics Workbench</td>
+      <td>Qiagen</td>
+      <td>RRID:SCR_011853</td>
+      <td>v12.0</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>poly(I:C) HMW</td>
+      <td>InvivoGen</td>
+      <td>Cat# tlrl-pic</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>TO-PRO3</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# T3605</td>
+      <td>IHC (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Liberase TM</td>
+      <td>Roche</td>
+      <td>Cat# 5401127001</td>
+      <td>(0.5 or 1 unit/ml)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 C57BL/6 mice were obtained from SLC Japan. β5t-iCre (Ohigashi et al., 2013), Ctnnb1 floxed (β-catfl) (Brault et al., 2001), Ctnnb1 exon 3 floxed (β-catex3fl) (Harada et al., 1999), and Rosa26-CAG-loxP-stop-loxP-tdTomato (R26R-tdTomato) (Madisen et al., 2010) used in this study have been described previously and genotyped accordingly. To generate conditional targeting mice, we used male mice harboring β5t-iCre allele for the mating to avoid potential germline recombination rarely observed in the offspring of female mice harboring β5t-iCre allele. TEC-specific β-catenin gain-of-function (β-cat GOF) (β5tiCre/+;β-catex3fl/+) mice were generated by intercrossing β-catex3fl/ex3fl females with β5tiCre/+ male mice. For the lineage tracing of cells, C57BL/6 females and β-catex3fl/ex3fl females were crossed with β5tiCre/+;R26RtdTomato/tdTomato males to produceβ5tiCre/+;R26RtdTomato/+ (control) and β5tiCre/+;β-catex3fl/+; R26RtdTomato/+ (β-cat GOF) mice, respectively. TEC-specific β-catenin loss-of-function (β-cat LOF) (β5tiCre/+;β-catfl/fl) mice were generated by intercrossing β-catfl/fl females with β5tiCre/+;β-catfl/+ males.
 
 Embryos were staged on the basis of standard morphological criteria; plug date was considered to be E0.5. Postnatal mice were analyzed at indicated ages up to 6 months old in an age-matched manner. Mice were housed in a 12 hr light–dark cycle in climate-controlled, pathogen-free barrier facilities. All mouse experiments were performed with consent from the Animal Experimentation Committee of the University of Tokushima (T2019-62).
 
-## Poly(I:C) treatment
+### Poly(I:C) treatment
 
 Four-week-old mice were intraperitoneally injected with 250 μg of high-molecular weight poly(I:C) (InvivoGen) twice over a 3-day interval.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Embryos and thymus tissues were fixed overnight in 4% PFA/PBS, cryoprotected in 30% sucrose, embedded in optimal cutting temperature compound (Sakura Finetek), and sectioned at 10 μm thickness. Immunohistochemistry was performed on the cryosections using the following primary antibodies: rabbit anti-Foxn1 antiserum (Itoi et al., 2006, 1:100), rabbit anti-β5t antibody (Murata et al., 2007, 1:200), rat anti-CCL21/6Ckine antibody (R&D systems, 1:10), eFluor 660-conjugated anti-Aire antibody (e-Bioscience, 1:20), and biotinylated anti-CD45 antibody (BioLegend, 1:100). Immunohistochemistry using monoclonal mouse anti-β-catenin (BD Transduction Laboratories, 1:200), chicken anti-Keratin 5 antibody (BioLegend, 1:500), and mouse anti-Keratin 8 antibody (BioLegend, 1:500) was performed after heat-induced antigen retrieval. For detection of antibodies, Alexa Fluor-conjugated secondary antibodies or streptavidin (Invitrogen) were used at 1:500 dilution as necessary. Nuclear counterstaining was performed using TO-PRO3 (Thermo Fisher Scientific, 1:1000). Fluorescent images were obtained and analyzed with a TCS SP8 (Leica) confocal laser scanning microscope.
 
-## Flow cytometry and cell sorting
+### Flow cytometry and cell sorting
 
 For flow cytometric analysis of TECs, minced thymuses from fetuses and postnatal mice were digested with 0.5 and 1 unit/ml Liberase TM (Roche) in the presence of 0.01% DNase I (Roche), respectively. Single-cell suspensions were stained for the expression of EpCAM (BioLegend, clone G8.8), CD45 (BioLegend, clone 30-F11), and Ly51 (BioLegend, clone 6C3) and for the reactivity with UEA-1 (Vector Laboratories). For the intracellular staining of β-catenin in TECs, surface-stained cells were fixed in 2% paraformaldehyde and permeabilized with 0.05% saponin, and stained with monoclonal mouse anti-β-catenin against aa. 571–781 (BD Transduction Laboratories, Clone 14, 1:100) or mouse IgG1 isotype control (BD Pharmingnen, clone MOPC-21, 1:200), followed by Alexa Fluor Plus 488-conjugated anti mouse IgG antibody (Invitrogen, 1:800).
 
@@ -166,12 +571,12 @@ For flow cytometric analysis of thymocytes, spleen cells, and lymph node cells, 
 
 For the analysis of DETCs, epidermal cells were prepared as described previously (Liu et al., 2006). Briefly, dorsal skin of 8-week-old mice was placed dermal side down in 0.25% trypsin–EDTA in PBS at 37°C for 1 hr and epidermal sheet was peeled off from dermis. Minced epidermal sheets were mechanically dissociated to make a single-cell suspension in 1xPBS containing 2% FCS. Cells were filtered and cell surface staining was performed using antibodies specific for CD3ε (eBioscience, clone145-2C11) and Vγ5 (BD Pharmingen, clone 536).
 
-## Quantitative real-time polymerase chain reaction analysis
+### Quantitative real-time polymerase chain reaction analysis
 
 Total RNA was isolated using an RNeasy Plus Micro Kit (Qiagen) according to the manufacturer’s instructions. Total RNA was reverse transcribed (RT) with PrimeScript Reverse Transcriptase (TaKaRa) to produce first-strand cDNA. Quantitative real-time polymerase chain reaction (PCR) was performed using TB Green Premix Taq II (TaKaRa) and a StepOnePlus Real-Time PCR System (Applied Biosystems). Values were calculated by using the comparative C(t) method and normalized to mouse Gapdh expression. Most of the primer sets amplified products across exon/intron boundaries and the PCR products were confirmed by gel electrophoresis and melting curves. Sequences are available by request.
 
 RNA sequencing analysis cDNA was generated from 300 isolated TECs by using a SMART-seq v4 Ultra Low Input RNA Kit for Sequencing, according to the manufacturer’s protocol (Takara Bio). A sequencing library was prepared by using a Nextera XT DNA Library Preparation Kit, according to the manufacturer’s protocol (Illumina). The concentration of the libraries was measured by an ABI PRISM 7500 Real-time PCR system in combination with a Power SYBR Green PCR Master Mix (Thermo Fisher Scientific). Single-end sequencing of cDNA libraries with the read length of 76 was performed with a NextSeq 550 system (Illumina) using a High Output 75-Cycle Kit (Illumina). Data were analyzed by using CLC Genomics Workbench 12 (Qiagen) with default parameters.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical analysis was performed using GraphPad Prism seven software. Statistical significance was evaluated using two-tailed unpaired Student’s t-test with Welch’s correction for unequal variances. All values are expressed as means and standard error of the means, unless otherwise specified. The n numbers are indicated in figure legends.

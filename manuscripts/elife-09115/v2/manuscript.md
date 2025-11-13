@@ -27,7 +27,7 @@
 
 ## Abstract
 
-10.7554/eLife.09115.001 Persistent reservoirs remain the major obstacles to achieve an HIV-1 cure. Prolonged early antiretroviral therapy (ART) may reduce the extent of reservoirs and allow for virological control after ART discontinuation. We compared HIV-1 reservoirs in a cross-sectional study using polymerase chain reaction-based techniques in blood and tissue of early-treated seroconverters, late-treated patients, ART-naïve seroconverters, and long-term non-progressors (LTNPs) who have spontaneous virological control without treatment. A decade of early ART reduced the total and integrated HIV-1 DNA levels compared with later treatment initiation, but not reaching the low levels found in LTNPs. Total HIV-1 DNA in rectal biopsies did not differ between cohorts. Importantly, lower viral transcription (HIV-1 unspliced RNA) and enhanced immune preservation (CD4/CD8), reminiscent of LTNPs, were found in early compared to late-treated patients. This suggests that early treatment is associated with some immunovirological features of LTNPs that may improve the outcome of future interventions aimed at a functional cure. DOI: http://dx.doi.org/10.7554/eLife.09115.001
+Persistent reservoirs remain the major obstacles to achieve an HIV-1 cure. Prolonged early antiretroviral therapy (ART) may reduce the extent of reservoirs and allow for virological control after ART discontinuation. We compared HIV-1 reservoirs in a cross-sectional study using polymerase chain reaction-based techniques in blood and tissue of early-treated seroconverters, late-treated patients, ART-naïve seroconverters, and long-term non-progressors (LTNPs) who have spontaneous virological control without treatment. A decade of early ART reduced the total and integrated HIV-1 DNA levels compared with later treatment initiation, but not reaching the low levels found in LTNPs. Total HIV-1 DNA in rectal biopsies did not differ between cohorts. Importantly, lower viral transcription (HIV-1 unspliced RNA) and enhanced immune preservation (CD4/CD8), reminiscent of LTNPs, were found in early compared to late-treated patients. This suggests that early treatment is associated with some immunovirological features of LTNPs that may improve the outcome of future interventions aimed at a functional cure.
 
 ## Introduction
 
@@ -47,23 +47,153 @@ We have analyzed whether 1) a decade of ART or an LTNP status was associated wit
 
 ## Results
 
-## Study participant characteristics
+### Study participant characteristics
 
-Eighty-four patients were included in this cross-sectional study from four different cohorts: patients who had undergone a decade of successful ART, initiated either during seroconversion (SRCV on ART; n = 25) or during the chronic phase of the infection (Chronic ART, n = 32), LTNPs (n = 17), and recently infected ART-naïve seroconverters (Recent SRCV; n = 10) (
+Eighty-four patients were included in this cross-sectional study from four different cohorts: patients who had undergone a decade of successful ART, initiated either during seroconversion (SRCV on ART; n = 25) or during the chronic phase of the infection (Chronic ART, n = 32), LTNPs (n = 17), and recently infected ART-naïve seroconverters (Recent SRCV; n = 10) (Figure 1; Table 1). The CD4 nadir was significantly different between each of the cohorts (p < 0.001) except between SRCV on ART and Recent SRCV (p = 0.623). The patients were sampled at a single time point (blood and rectal biopsies) to perform PCR-based assays and characterize viral reservoirs and its dynamics (total and integrated HIV-1 DNA, 2-LTR circles, and HIV-1 usRNA).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/09115/elife-09115-fig1-v2.jpg)
 
-**Figure 1.:** SRCV on antiretroviral therapy (ART): patient cohort with ART initiated at the time of HIV-1 seroconversion; LTNP: long-term non-progressors; Chronic ART: patients with ART initiated during the chronic phase of HIV-1 infection; Recent SRCV: recent ART-naïve seroconverters. In total, 84 patients were included in this study, 25 in SRCV on ART, 17 LTNPs, 32 Chronic ART patients, and 10 Recent SRCV. Blue arrows represent time of sampling. PHI: primary HIV-1 infection.DOI:http://dx.doi.org/10.7554/eLife.09115.003
+**Figure 1.:** Patient cohorts in the cross-sectional study. SRCV on antiretroviral therapy (ART): patient cohort with ART initiated at the time of HIV-1 seroconversion; LTNP: long-term non-progressors; Chronic ART: patients with ART initiated during the chronic phase of HIV-1 infection; Recent SRCV: recent ART-naïve seroconverters. In total, 84 patients were included in this study, 25 in SRCV on ART, 17 LTNPs, 32 Chronic ART patients, and 10 Recent SRCV. Blue arrows represent time of sampling. PHI: primary HIV-1 infection.
 
-## Total and integrated HIV-1 DNA in blood is reduced after a decade of ART with early treatment initiation, but does not reach the low levels found in LTNPs
+**Table 1.**
+ Clinical and laboratory characteristics of the four patient cohorts.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Value for cohort*</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>SRCV on ART</th>
+      <th>LTNP</th>
+      <th>Chronic ART</th>
+      <th>Recent SRCV</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>n = 25</th>
+      <th>n = 17</th>
+      <th>n = 32</th>
+      <th>n = 10</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Clinical characteristics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>44 (34–53)</td>
+      <td>49 (31–51)</td>
+      <td>48 (31–53)</td>
+      <td>39 (30–46)</td>
+    </tr>
+    <tr>
+      <td>Number of females (%)</td>
+      <td>0 (0)</td>
+      <td>7 (41.2)</td>
+      <td>5 (15.6)</td>
+      <td>1 (10)</td>
+    </tr>
+    <tr>
+      <td>Total ART duration (years)</td>
+      <td>10.8 (4.2–11.9)</td>
+      <td>0</td>
+      <td>9.8 (4.9–14.7)</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Viremia zenith (log10HIV-1 c/ml)</td>
+      <td>5.5 (2.4–5.9)</td>
+      <td>2.5 (1.6–2.8)</td>
+      <td>4.9 (1.9–5.5)</td>
+      <td>6.2 (5.2–6.4)</td>
+    </tr>
+    <tr>
+      <td>CD4 count, nadir (cells/mm3)</td>
+      <td>390 (107–466)</td>
+      <td>624 (507–693)</td>
+      <td>155 (0–266)</td>
+      <td>440 (284–495)</td>
+    </tr>
+    <tr>
+      <td>CD4 count at sampling (cells/mm3)</td>
+      <td>714 (476–977)</td>
+      <td>793 (414–1010)</td>
+      <td>624.5 (172–889)</td>
+      <td>440 (284–604)</td>
+    </tr>
+    <tr>
+      <td>CD4/CD8 ratio</td>
+      <td>1.10 (0.52–1.35)</td>
+      <td>0.91 (0.36–1.47)</td>
+      <td>0.74 (0.23–0.93)</td>
+      <td>0.62 (0.36–0.94)</td>
+    </tr>
+    <tr>
+      <td>Virological markers</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total HIV-1 DNA (c/106 PBMCs)</td>
+      <td>92 (9.8–127.7)</td>
+      <td>48 (5.4–56.5)</td>
+      <td>137 (8.6–219.2)</td>
+      <td>1901.3 (602.4–4786.9)</td>
+    </tr>
+    <tr>
+      <td>Integrated HIV-1 DNA (c/106 PBMCs)</td>
+      <td>211.3 (0–589.3)</td>
+      <td>28.2 (0–158.4)</td>
+      <td>586.7 (131.6–918.2)</td>
+      <td>1802.7 (367.9–5890.6)</td>
+    </tr>
+    <tr>
+      <td>HIV-1 usRNA (c/106 PBMCs)</td>
+      <td>1.6 (0–3.7)</td>
+      <td>0.4 (0–3.51)</td>
+      <td>6.1 (0–10.1)</td>
+      <td>15.5 (0.9–100.6)</td>
+    </tr>
+    <tr>
+      <td>2-LTR circles (c/106 PBMCs)</td>
+      <td>2.1 (0–4.3)</td>
+      <td>0.8 (0–2.7)</td>
+      <td>1.3 (0–2.2)</td>
+      <td>13.3 (5.1–21.6)</td>
+    </tr>
+    <tr>
+      <td>Total HIV-1 DNA (c/106 cells) in rectal biopsies</td>
+      <td>27.2 (22.2–61.7)</td>
+      <td>21.3 (16.7–34.5)</td>
+      <td>35.1 (16–77.5)</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_*Values are reported as median (IQR); c: copies; PBMCs: peripheral blood mononuclear cells; usRNA: unspliced RNA; ART: antiretroviral therapy; SRCV on ART: early treated seroconverters; LTNP: long-term non-progressors; Chronic ART: late treated patients during chronic HIV-1 infection; Recent SRCV: acute ART-naïve seroconverters; LTR: Long terminal repeat._
+
+### Total and integrated HIV-1 DNA in blood is reduced after a decade of ART with early treatment initiation, but does not reach the low levels found in LTNPs
 
 Total HIV-1 DNA represents the most commonly used virological marker for the assessment of the size of the proviral HIV-1 reservoir and is predictive of viral rebound when tested at the time of treatment interruption in early-treated patients (Williams et al., 2014). We have assessed the impact of the temporal treatment initiation (during early versus chronic infection) in the context of very prolonged ART treatment (e.g. a decade) on this marker and compared results to those of LTNPs and acute seroconverters before ART initiation to assess the size of HIV-1 DNA using digital PCR.
 
-All patient cohorts had detectable levels of total HIV-1 DNA in peripheral blood mononuclear cells (PBMCs). Differences in the reservoir size in terms of total HIV-1 DNA were observed between patient cohorts. Median total HIV-1 DNA was: 92 (interquartile range (IQR): 9.8–127.7), 48 (IQR: 5.4–56.5), 137 (IQR: 8.6–219.2) and 1901.3 (IQR: 602.4–4786.9) copies (c)/10
+All patient cohorts had detectable levels of total HIV-1 DNA in peripheral blood mononuclear cells (PBMCs). Differences in the reservoir size in terms of total HIV-1 DNA were observed between patient cohorts. Median total HIV-1 DNA was: 92 (interquartile range (IQR): 9.8–127.7), 48 (IQR: 5.4–56.5), 137 (IQR: 8.6–219.2) and 1901.3 (IQR: 602.4–4786.9) copies (c)/106 PBMCs in SRCV on ART, LTNPs, Chronic ART, and Recent SRCV, respectively. Lower total HIV-1 DNA was detected in the SRCV on ART compared to the Chronic ART cohort (p = 0.041; Figure 2A). The LTNP cohort showed the lowest total HIV-1 DNA levels when compared to SRCV on ART (p = 0.015) and other patient cohorts (p < 0.001; Figure 2A). These results demonstrate that, the total HIV-1 DNA remains detectable in all patients even in the setting of effective early and prolonged ART, although at lower levels than in patients with later ART initiation, but not reaching the levels found in LTNPs.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/09115/elife-09115-fig2-v2.jpg)
 
-**Figure 2.:** A) and integrated HIV-1 DNA (B) in four patient cohorts.Data is shown as log10 copies/million (c/M) PBMCs and significant p-values are indicated by *. Differences between the cohorts were determined by Wilcoxon Signed Rank test.DOI:http://dx.doi.org/10.7554/eLife.09115.005
+**Figure 2.:** Total HIV-1 DNA (A) and integrated HIV-1 DNA (B) in four patient cohorts.Data is shown as log10 copies/million (c/M) PBMCs and significant p-values are indicated by *. Differences between the cohorts were determined by Wilcoxon Signed Rank test.
 
 In addition to total HIV-1 DNA levels, we also measured integrated HIV-1 DNA levels. This marker is not biased by the presence of variable quantities of unintegrated HIV-1 DNA produced after reverse transcription of newly infecting HIV-1 or dead-end DNA products of failed integration such as 1- and 2-LTR circles. Some authors have suggested that integrated HIV-1 DNA represents a better surrogate marker of viral burden, especially in patients off ART in whom HIV-1 replication might be ongoing (Graf et al., 2011).
 
@@ -73,31 +203,31 @@ Of note, the absolute values derived from total and integrated HIV-1 DNA measur
 
 Due to the lower limit of detection compared to that of the total HIV-1 DNA assay, integrated HIV-1 DNA was undetectable in 12 patients; 5 were SRCV on ART, 6 LTNPs, and 1 Recent SRCV.
 
-## Levels of episomal 2-LTR circles in blood are low in ART-treated patients and LTNPs but high in recent ART-naïve seroconverters
+### Levels of episomal 2-LTR circles in blood are low in ART-treated patients and LTNPs but high in recent ART-naïve seroconverters
 
-Residual viral replication is one of the likely mechanisms through which the viral reservoir is replenished, even with effective ART (
+Residual viral replication is one of the likely mechanisms through which the viral reservoir is replenished, even with effective ART (Hong and Mellors, 2015). Markers that reflect such a phenomenon provide insight into the reservoir dynamics. Episomal 2-LTR circles can be used as a marker of viral replication and have been shown to be labile end-products of failed proviral integrations (Sharkey et al., 2005; 2011). They are likely to be particularly elevated in acutely infected patients because of the intense level of viral replication. Median levels of 2-LTR circles in the various cohorts were: 2.1 (IQR: 0–4.3), 0.77 (IQR: 0–2.7), 1.3 (IQR: 0–2.2) and 13.3 (IQR: 5.1–21.6) c/106 PBMCs in SRCV on ART, LTNPs, Chronic ART, and Recent SRCV, respectively. As expected, 2-LTR levels were significantly higher in the Recent SCRV compared to the other cohorts (p ≤ 0.002; Figure 3A), but did not differ between SRCV on ART and Chronic ART (p = 0.259) or LTNPs (p = 0.595) or between the Chronic ART and LTNP cohorts (p = 0.743;Figure 3A). Of note, 2-LTR circles were undetectable in a number of patients. They were detected in 17/25 (68%) of SRCV on ART, 13/17 (76%) of LTNPs, 25/32 (78%) of late-treated patients and in all recent ART-naïve seroconverters 10/10 (100%). The absence of detection in about one-quarter of patients on ART in contrast to the Recent SRCV cohort suggests that residual replication is substantially halted with ART.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/09115/elife-09115-fig3-v2.jpg)
 
-**Figure 3.:** A), cell-associated HIV-1 usRNA (B) and CD4/CD8 ratio (C) in four patient cohorts.Total HIV-1 DNA in rectal biopsies (D) in three patient cohorts (SRCV on ART, LTNP, and Chronic ART). Data is shown as log10 copies/million (c/M) PBMCs (A,B), ratio (C) or log10 c/M cells in rectal biopsies (D) and significant p-values are indicated by *. Differences between the cohorts were determined by Wilcoxon Signed Rank test.DOI:http://dx.doi.org/10.7554/eLife.09115.006
+**Figure 3.:** 2-LTR circles (A), cell-associated HIV-1 usRNA (B) and CD4/CD8 ratio (C) in four patient cohorts.Total HIV-1 DNA in rectal biopsies (D) in three patient cohorts (SRCV on ART, LTNP, and Chronic ART). Data is shown as log10 copies/million (c/M) PBMCs (A,B), ratio (C) or log10 c/M cells in rectal biopsies (D) and significant p-values are indicated by *. Differences between the cohorts were determined by Wilcoxon Signed Rank test.
 
-## Cell-associated HIV-1 usRNA levels in blood are lower in early-treated seroconverters than in late-treated patients but not different compared to LTNPs
+### Cell-associated HIV-1 usRNA levels in blood are lower in early-treated seroconverters than in late-treated patients but not different compared to LTNPs
 
 Levels of cell-associated HIV-1 usRNA are associated with recent HIV-1 transcriptional activity and indicate an active proviral reservoir (Pasternak et al., 2013). Median levels were: 1.6 (IQR: 0–3.7), 0.4 (IQR: 0–3.5), 6.1 (IQR: 0–10.1) and 15.5 (IQR: 1–100.6) c/106 PBMCs in SRCV on ART, LTNPs, Chronic ART, and Recent SRCV, respectively. The patients with the highest levels of HIV-1 usRNA were found in the Recent SRCV cohort, indicating that this cohort is not similar to the others, but this study was underpowered to reach statistical significance between the Recent SRCV and the other cohorts. Of note, HIV-1 usRNA was not detected in 8/84 samples (10%, two samples in each patient cohort). Three samples (one in SRCV on ART and two in Chronic ART) were excluded from the final analysis due to missing values for the reference genes. Higher levels of HIV-1 usRNA were detected in the Chronic ART cohort compared to the SRCV on ART (p = 0.007) and LTNPs (p = 0.027; Figure 3B). The SRCV on ART cohort was not significantly different from LTNPs based on HIV-1 usRNA levels (p = 0.615; Figure 3B).
 
-## A higher CD4/CD8 ratio is present in early-treated seroconverters and LTNPs compared to late-treated patients
+### A higher CD4/CD8 ratio is present in early-treated seroconverters and LTNPs compared to late-treated patients
 
 Not only have we used the CD4/CD8 ratio as a measure of immune preservation/reconstitution in terms of T cell count but also as an indirect marker of residual immune activation as shown recently (Serrano-Villar et al., 2014). The CD4/CD8 ratio was higher in SRCV on ART (median = 1.10, IQR: 0.52–1.35) compared to the cohorts of Chronic ART (median = 0.74, IQR: 0.23–0.93), (p = 0.009) and Recent SRCV (median = 0.62, IQR: 0.36–0.94), (p = 0.017), and was comparable to that of LTNPs (median = 0.91, IQR: 0.36–1.47), (p = 0.978; Figure 3C). The LTNP cohort had a higher CD4/CD8 ratio compared to late-treated patients (p = 0.036) and Recent SRCV (p = 0.048; Figure 3C). Of note, CD4 T cell counts at sampling did not differ significantly between the cohorts of SRCV on ART (median = 714 cells/mm3, IQR: 476–977) and Chronic ART (median = 625 cells/mm3, IQR: 172–889), (p = 0.066).
 
-## Total HIV-1 DNA levels in rectal biopsies are not different in early-treated seroconverters, late-treated patients, and LTNPs
+### Total HIV-1 DNA levels in rectal biopsies are not different in early-treated seroconverters, late-treated patients, and LTNPs
 
-Conflicting results have been published regarding the impact of ART on the HIV-1 DNA reservoir in the gut compartment when using rectal biopsies (
+Conflicting results have been published regarding the impact of ART on the HIV-1 DNA reservoir in the gut compartment when using rectal biopsies (Yukl et al., 2010; Chun et al., 2008; Anton et al., 2003). It remains unclear whether HIV-1 DNA decays more substantially after a decade of ART compared to a shorter intervention and whether some LTNPs may have undetectable levels in rectal biopsies. We have measured total HIV-1 DNA in rectal biopsies from 51 patients who had consented to sampling: 14 SRCV on ART, 8 LTNPs, and 29 Chronic ART patients. Five patients had undetectable total HIV-1 DNA; one SRCV on ART, one LTNP, and three Chronic ART patients. Median HIV-1 DNA levels were: 27.2 (IQR: 22.2–61.7), 21.3 (IQR: 16.7–34.5), and 35.1 (IQR: 16–77.5) c/106 cells in SRCV on ART, LTNP, and Chronic ART, respectively. No difference was found between SRCV on ART and Chronic ART (p = 0.604) or LTNPs (p = 0.375; Figure 3D) or between the Chronic ART cohort and the LTNPs (p = 0.337; Figure 3D). The median number of cells assayed per patient was 125,390 (IQR: 101,308–168,156). Of note, we did not find any correlation in terms of total HIV-1 DNA levels between the blood (PBMCs) and the gut mucosa (rectal biopsies) compartments (R2 = 0, p = 0.919; Figure 4A).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/09115/elife-09115-fig4-v2.jpg)
 
-**Figure 4.:** A).Correlation was assessed in 46 patients in whom total HIV-1 DNA was detected both in the blood and rectal biopsies, representing patients from three cohorts: SRCV on antiretroviral therapy (ART), Chronic ART, and long-term non-progressors (LTNP). Data is shown as log10 copies/million (c/M) cells in rectal biopsies and log10 c/M peripheral blood mononuclear cells (PBMCs) in blood. Correlation of blood HIV-1 usRNA and total HIV-1 DNA (B), HIV-1 usRNA and integrated HIV-1 DNA (C), integrated HIV-1 DNA and total HIV-1 DNA (D) and CD4/CD8 ratio and integrated HIV-1 DNA (E). Data is shown as log10 c/M PBMCs in detectable patients from three cohorts: SRCV on ART, Chronic ART, and LTNP (B–E). To assess correlations between the markers, a linear regression was performed.DOI:http://dx.doi.org/10.7554/eLife.09115.007
+**Figure 4.:** Correlation of total HIV-1 DNA in rectal biopsies and blood (A).Correlation was assessed in 46 patients in whom total HIV-1 DNA was detected both in the blood and rectal biopsies, representing patients from three cohorts: SRCV on antiretroviral therapy (ART), Chronic ART, and long-term non-progressors (LTNP). Data is shown as log10 copies/million (c/M) cells in rectal biopsies and log10 c/M peripheral blood mononuclear cells (PBMCs) in blood. Correlation of blood HIV-1 usRNA and total HIV-1 DNA (B), HIV-1 usRNA and integrated HIV-1 DNA (C), integrated HIV-1 DNA and total HIV-1 DNA (D) and CD4/CD8 ratio and integrated HIV-1 DNA (E). Data is shown as log10 c/M PBMCs in detectable patients from three cohorts: SRCV on ART, Chronic ART, and LTNP (B–E). To assess correlations between the markers, a linear regression was performed.
 
-## Correlation between viroimmunological markers
+### Correlation between viroimmunological markers
 
 In order to assess whether we could observe correlations between the various viroimmunological markers used in this study, we have performed a linear regression analysis using combined data from the cohorts of patients on ART and LTNPs. The Recent SRCV cohort was excluded from this analysis because of its high level of active replication, which would have biased the HIV-1 usRNA, 2-LTR, and total HIV-1 DNA measurements. For this analysis, patient-derived samples with detectable markers were included. This was confirmed by Spearman’s rank correlation, which includes all samples (data not shown).
 
@@ -125,7 +255,7 @@ In conclusion, our study provides important data on the blood HIV-1 reservoir si
 
 ## Material and methods
 
-## Patient cohorts
+### Patient cohorts
 
 Eighty-four HIV-1 infected patients from four pre-defined cohorts under clinical follow-up were enrolled into the study in two clinical centers (The Ian Charleson Day Centre, Royal Free Hospital, London, United Kingdom and the AIDS Reference Center, Ghent University Hospital, Ghent, Belgium): long-term-treated patients with ART initiated during seroconversion or chronic infection, LTNPs, and recent ART-naïve seroconverters. The first three cohorts were recruited using databases at the clinical centers (the Royal Free Center Research Database and Ghent University Hospital Database). The fourth cohort consisting of acute seroconverters was enrolled prospectively in both clinical centers. The study was approved by the Ethics Committee of Ghent University Hospital (Reference number: B670201317826) and the Royal Free Hospital (Reference number: 13/LO/0729).
 
@@ -141,7 +271,7 @@ Baseline characteristics, clinical and laboratory parameters including total dur
 
 Both the SRCV on ART and Chronic ART cohorts had a comparable uninterrupted ART duration with a median of 10.8 (IQR: 4.2–11.9) and 9.8 years (4.9–14.7), (p = 0.936), respectively.
 
-## Blood and rectal biopsies
+### Blood and rectal biopsies
 
 PBMCs and rectal biopsies were collected on one occasion for each patient (Figure 1). Blood was drawn in 6 EDTA 9 ml tubes and 10 rectal biopsies were sampled after obtaining written informed consent from the patients.
 
@@ -149,13 +279,13 @@ PBMCs were isolated within 4 hr of blood sampling by using Lymphoprep centrifuga
 
 PBMCs were collected from all patients (n = 84) included in the study and rectal biopsies were obtained from 51 patients, 14 in SRCV on ART, 8 in LTNP, and 29 in Chronic ART cohorts.
 
-## Quantification of the HIV-1 reservoir, ongoing replication and transcription
+### Quantification of the HIV-1 reservoir, ongoing replication and transcription
 
 Methods used to quantify virological parameters relating to HIV-1 reservoirs, ongoing replication, and transcription in this study have been recently published and include total HIV-1 DNA and 2-LTR circles (Malatinkova et al., 2014), cell-associated HIV-1 usRNA (Kiselinova et al., 2014) with the use of droplet digital PCR (ddPCR) and integrated HIV-1 DNA measured by a repetitive sampling Alu-HIV PCR (Liszewski et al., 2009; De Spiegelaere et al., 2014).
 
 Total HIV-1 DNA, 2-LTR circles, and HIV-1 usRNA were measured in triplicates on ddPCR with the QX100Droplet Digital PCR platform (Bio-Rad, Hercules, CA). The ddPCR mix was made by adding 2 µl of sample (restricted genomic DNA [gDNA] or plasmid DNA) or 4 µl of sample (cDNA) to 10 µl 2× ddPCR™ supermix for probes (Bio-Rad), 500 nM of primers and 250 nM of probe in a final volume of 20 µl. ddPCR amplification reactions consisted of initial denaturation at 95°C for 5 min, followed by 40 cycles of 95°C for 30 s denaturation and assay-specific annealing/elongation temperature (Supplementary file 1) for 60 s with a ramp rate of 2.5°C/s. Droplets were read by the QX100 droplet reader (Bio-Rad) and the data was analyzed with the QuantaSoft analysis software (Bio-Rad). Primers and probes used for each quantification assay are summarized in Supplementary file 1 and were purchased from IDT DNA Technologies (Integrated DNA Technologies, Leuven, Belgium).
 
-## Total and integrated HIV-1 DNA
+### Total and integrated HIV-1 DNA
 
 Total gDNA was isolated from 106 PBMCs using DNeasy Blood & Tissue Kit (Qiagen, Venlo, The Netherlands) and eluted in 75 µl elution buffer, kept at 56°C for 10 min in order to maximize the DNA yield.
 
@@ -167,16 +297,16 @@ To quantify integrated HIV-1 DNA, gDNA isolated from PBMCs was subjected to a re
 
 The quantities of total and integrated HIV-1 DNA c/106 PBMCs or total HIV-1 DNA c/106 cells in rectal biopsies were normalized to a reference gene RPP30 measured by ddPCR. The number of cells assayed per patient was measured by RPP30 in all PBMCs and rectal biopsies samples.
 
-## Episomal HIV-1 2-LTR circles
+### Episomal HIV-1 2-LTR circles
 
 Episomal HIV-1 2-LTR circles were measured in plasmid DNA isolated by QIAprep Spin Miniprep kit (Qiagen) from dry pelleted 106 PBMCs. A known number of pSIF1-H1-Puro non-HIV plasmid was spiked to the samples (System Biosciences, Mountain view, CA) as an internal control for copy number normalization and plasmid DNA was eluted in 25 µl in order to increase DNA concentration, as described previously (Malatinkova et al., 2014). The internal reference plasmid was quantified by detection of the woodchuck hepatitis virus posttranscriptional regulatory element (WPRE) (Lizee et al., 2003). The 2-LTR assay is designed to span over the 2-LTR junction (Buzon et al., 2010; Supplementary file 1).
 
-## Cell-associated HIV-1 usRNA
+### Cell-associated HIV-1 usRNA
 
 RNA was isolated from 106 PBMCs by using RNeasy mini kit (Qiagen) subjected to DNase treatment by RNase-Free DNase Set (Qiagen) and eluted in 30 µl nuclease-free water. Samples were measured by NanoDrop 2000 (Thermo Fisher Scientific, Waltham, MA) and 1.5 mg of RNA was processed by the iScript cDNA Synthesis Kit (Bio-Rad) 5 min at 25°C, 30 min at 42°C, and 5 min at 85°C. The cDNA was used to measure HIV-1 usRNA on ddPCR.
 
 Normalization of input cDNA was performed by quantifying gene expression of stably expressed internal reference genes as described earlier (Ceelen et al., 2014; Messiaen et al., 2012). Briefly, the three most stably expressed reference genes (from total of nine genes tested) were selected over all patient samples by geNorm analysis (Beta-2-microglobulin: B2M, TATA box binding protein: TBP, and Ubiquitin C: UBC) (Vandesompele et al., 2002). Normalization factors were determined per patient as the geometric mean of the three most stable reference genes. Subsequently, raw ddPCR values for HIV-1 usRNA were divided by the normalization factors to reach normalized data and reported as c/106 PBMCs for each patient sample. Previously described primers and probe sets for HIV-1 usRNA quantification were used (Kiselinova et al., 2014; Palmer et al., 2008), as summarized in Supplementary file 1.
 
-## Statistical analysis
+### Statistical analysis
 
 Total HIV-1 DNA, integrated HIV-1 DNA, 2-LTR circles and cell-associated HIV-1 usRNA levels as well as immunological data (CD4/CD8 T cell ratios and CD4 T cell counts at sampling and nadir CD4 T cell counts) were described using median values and IQR. Statistical analysis was performed using R (RStudio, Inc., Boston, MA). Standard non-parametric test (Wilcoxon Signed Rank Test) was performed to assess statistically significant differences between patient cohorts. A p-value of <0.05 was considered significant. Linear regression was used to assess the correlations.

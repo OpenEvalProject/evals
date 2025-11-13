@@ -39,7 +39,7 @@ The serial interval and incubation period distributions, in particular, can be u
 
 ## Results
 
-## Descriptive analyses
+### Descriptive analyses
 
 Figures 1 and 2 show the daily counts, putative origin of the exposure and individual time courses for the Singapore and Tianjin data. In the Singapore dataset, new hospitalization and discharge cases were documented daily from January 23 to February 26, 2020. 66.7% (62/93) of the confirmed cases recovered and were discharged from the hospital by the end of the study period (Figure 1(a)). The disease progression timeline of the 93 documented cases in Figure 1(c) indicates that symptom onset occurred 1.71 ± 3.01 (mean ± SD) days after the end of possible viral exposure window and cases were confirmed 7.43 ± 5.28 days after symptom onset. The mean length of hospital stay was 13.3 ± 6.01 days before individuals recovered and were discharged.
 
@@ -53,11 +53,130 @@ Figures 1 and 2 show the daily counts, putative origin of the exposure and indiv
 
 In the Tianjin dataset, new confirmed cases were documented daily from January 21 to February 22, 2020. 48.1% (65/135) recovered and 2.2% (3/135) had died by the end of the study period (Figure 2(a)). The timeline of the 135 cases is shown in Figure 2(c). Symptom onset occurred 4.98 ± 4.83 (mean ± SD) days after the end of the possible viral exposure window. Cases were confirmed 5.23 ± 4.15 days after symptom onset. The duration of hospital stay of the Tianjin cases is unknown as the discharge date of each case was not available. In both datasets, daily counts decline over time, which is likely a combination of delays to symptom onset and between symptom onset and reporting, combined with the effects of strong social distancing and contact tracing.
 
-## Incubation period
+### Incubation period
 
 In the Singapore dataset, we find that the median incubation period in our direct analysis (without accounting for intermediate cases) is 5.32 days with the gamma distribution; shape 3.05 (95%CI 2.0, 3.84); and scale 1.95 (1.23, 2.34). The mean incubation period is 5.99 (95%CI 4.97, 7.14) days. In Tianjin, we find a median 8.06 days; shape 4.74 (3.35, 5.72); scale 1.83 (1.29, 2.04). The mean is 8.68 (7.72, 9.7) days. These results are summarised in Table 1, and we also fitted Weibull and log normal distributions; see Appendix 1—table 1. These are consistent with, or slightly longer than, previous estimates, see Appendix 1—table 5 for comparison.
 
-In Singapore, these estimates are based on a combination of cases for whom last possible exposure is given by travel, and later cases (for whom the presumed infector was used). In Tianjin, social distancing measures were implemented during the outbreak. We find that the estimated incubation period is different, particularly in Tianjin, for cases with symptom onset on or prior to January 31st: see Figure 3 and Figure 4. The estimated median incubation period for pre-Feb one cases in Tianjin is 6.48 days; the q=(0.025,0.975) quantiles are (2.5, 13.3) days. In contrast, post-Jan 31 the median is 12.13 days with q=(0.025,0.975) quantiles (7.3, 18.7) days. The means are 6.88 (5.97, 7.87) days for early cases and 12.4 (11.1, 13.7) days for later cases. Social distancing seems unlikely to change the natural course of infection, but these results might be explained if exposure occurred during group quarantine or otherwise later than the last time individuals thought they could have been exposed. Pre-symptomatic transmission would enable this, if an individual was thought to have been exposed before group quarantine, but in actuality was exposed during quarantine by a pre-symptomatic individual. The time interval in the data would then not be a sample of the incubation period, instead it would be a sample of one or more generation times plus an incubation period.
+**Table 1.**
+ Mean incubation period, serial interval and pre-symptomatic transmission.Incubation periods are based on the gamma estimates because these are the most convenient for taking the covariation of serial intervals and incubation periods into account (done throughout the table). 95% CIs are provided in brackets.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Without intermediates</th>
+      <th>Incubation (days)</th>
+      <th>Serial interval (days)</th>
+      <th>Mean difference (days)</th>
+      <th>Portion pre-symptomatic(-)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Singapore (all)</td>
+      <td>5.99 (4.97, 7.14)</td>
+      <td>4.0 (2.73, 5.57)</td>
+      <td>1.99</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td>Singapore (early)</td>
+      <td>5.91 (4.50,7.64)</td>
+      <td></td>
+      <td>1.91</td>
+      <td>0.742</td>
+    </tr>
+    <tr>
+      <td>Singapore (late)</td>
+      <td>6.06 (4.70, 7.67 )</td>
+      <td></td>
+      <td>2.06</td>
+      <td>0.744</td>
+    </tr>
+    <tr>
+      <td>Tianjin (all)</td>
+      <td>8.68 (7.72, 9.7)</td>
+      <td>5.0 (3.82, 6.12)</td>
+      <td>3.68</td>
+      <td>0.81</td>
+    </tr>
+    <tr>
+      <td>Tianjin (early)</td>
+      <td>6.88 (5.97,7.87)</td>
+      <td></td>
+      <td>1.88</td>
+      <td>0.72</td>
+    </tr>
+    <tr>
+      <td>Tianjin (late)</td>
+      <td>12.4 (11.1,13.7)</td>
+      <td></td>
+      <td>7.4</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td colspan="5">Account for intermediates</td>
+    </tr>
+    <tr>
+      <td>Singapore r=0.05</td>
+      <td>4.91</td>
+      <td>4.17 (2.44, 5.89)</td>
+      <td>0.77</td>
+      <td>0.53</td>
+    </tr>
+    <tr>
+      <td>Singapore r=0.1</td>
+      <td>4.43</td>
+      <td></td>
+      <td>0.26</td>
+      <td>0.46</td>
+    </tr>
+    <tr>
+      <td>Singapore r=0.15</td>
+      <td>4.12</td>
+      <td></td>
+      <td>−0.05</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <td>Singapore r=0.2</td>
+      <td>3.89</td>
+      <td></td>
+      <td>−0.28</td>
+      <td>0.38</td>
+    </tr>
+    <tr>
+      <td>Tianjin r=0.05</td>
+      <td>7.54</td>
+      <td>4.31 (2.91, 5.72)</td>
+      <td>3.23</td>
+      <td>0.79</td>
+    </tr>
+    <tr>
+      <td>Tianjin r=0.1</td>
+      <td>6.89</td>
+      <td></td>
+      <td>2.58</td>
+      <td>0.74</td>
+    </tr>
+    <tr>
+      <td>Tianjin r=0.15</td>
+      <td>6.30</td>
+      <td></td>
+      <td>1.99</td>
+      <td>0.67</td>
+    </tr>
+    <tr>
+      <td>Tianjin r=0.2</td>
+      <td>5.91</td>
+      <td></td>
+      <td>1.6</td>
+      <td>0.64</td>
+    </tr>
+  </tbody>
+</table>
+
+In Singapore, these estimates are based on a combination of cases for whom last possible exposure is given by travel, and later cases (for whom the presumed infector was used). In Tianjin, social distancing measures were implemented during the outbreak. We find that the estimated incubation period is different, particularly in Tianjin, for cases with symptom onset on or prior to January 31st: see Figure 3 and Figure 4. The estimated median incubation period for pre-Feb one cases in Tianjin is 6.48 days; the $q=(0.025,0.975)$ quantiles are (2.5, 13.3) days. In contrast, post-Jan 31 the median is 12.13 days with $q=(0.025,0.975)$ quantiles (7.3, 18.7) days. The means are 6.88 (5.97, 7.87) days for early cases and 12.4 (11.1, 13.7) days for later cases. Social distancing seems unlikely to change the natural course of infection, but these results might be explained if exposure occurred during group quarantine or otherwise later than the last time individuals thought they could have been exposed. Pre-symptomatic transmission would enable this, if an individual was thought to have been exposed before group quarantine, but in actuality was exposed during quarantine by a pre-symptomatic individual. The time interval in the data would then not be a sample of the incubation period, instead it would be a sample of one or more generation times plus an incubation period.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/57149/elife-57149-fig3-v2.jpg)
 
@@ -65,7 +184,7 @@ In Singapore, these estimates are based on a combination of cases for whom last 
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/57149/elife-57149-fig4-v2.jpg)
 
-**Figure 4.:** a) Singapore and (b) Tianjin.Top panels show unstratified data (all cases with symptom onset given). Bottom panels show ‘early’ and ‘late’ cases, where early cases are defined as those with symptom onset on or prior to January 31, and late otherwise.
+**Figure 4.:** Top panels show unstratified data (all cases with symptom onset given). Bottom panels show ‘early’ and ‘late’ cases, where early cases are defined as those with symptom onset on or prior to January 31, and late otherwise.
 
 In Singapore, we find the same effect, although much less pronounced. The estimated median incubation time is 5.26, with (0.025, 0.975) quantiles of (1.30, 13.8) days for early cases (also defined as cases with symptom onset on or prior to January 31st) and 5.35 (quantiles (1.22, 14.6)) days for late-arising cases. The means are 5.91 (4.50, 7.64) days for early cases and 6.06 (4.70, 7.67) days for later cases. Fits of gamma and log-normal distributions are similar; see Appendix 1—table 2. Changes in perception of exposure times after control measures were introduced (i.e. people may assume that they must have been exposed prior to control measures), together with pre-symptomatic transmission, could result in missing intermediate transmission events and hence lengthened incubation period estimates. This in part motivates our analysis with intermediate cases.
 
@@ -77,39 +196,37 @@ Our estimates of the incubation period with intermediates are similar, under the
 
 However, this approach makes a number of assumptions and is limited by the fact that if we do not know the true infectors then we are also unlikely to know the true exposure. The data we have is well suited to this method in the sense that there were particular events where exposure is thought to have occurred, and so we can account for intermediates in the manner we have done, but we do not have information for the alternative scenario in which the true exposures were prior to those given in the data. This could happen if, for example, individuals were exposed before attending an event or before known contact, and developed symptoms well after it. Exposure would thus be wrongly attributed to the event or contact. We have accommodated this with uncertainty in the exposure intervals, in particular not insisting that individuals who are likely to be the index case for a cluster (e.g. who developed symptoms on the same day as an event) must have been exposed then, but instead allowing the possibility that they were exposed earlier.
 
-## Serial intervals
+### Serial intervals
 
 Figure 6 represents the empirical serial intervals between all potential transmission case-pairs as noted in the data and represented in Figure 7, split into groups based on date of first symptom onset for each case-pair. The empirical mean serial intervals shorten in the ’late’ group in both Singapore and Tianjin; however, the empirically derived 95% confidence intervals overlap (Singapore early 4.44 (-2.81, 11.7) vs. late 3.18 (-1.52, 7.88); Tianjin early 5.48 (-0.968, 11.9) vs. late 4.18 (-2.33, 10.7)). Negative lower bounds are due to the high standard deviation.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/57149/elife-57149-fig6-v2.jpg)
 
-**Figure 6.:** a) Singapore and (b) Tianjin.Pairs represent a presumed infector and their presumed infectee plotted by date of symptom onset. Cases are defined as 'early' if they have symptom onset on or prior to January 31st.
+**Figure 6.:** Pairs represent a presumed infector and their presumed infectee plotted by date of symptom onset. Cases are defined as 'early' if they have symptom onset on or prior to January 31st.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/57149/elife-57149-fig7-v2.jpg)
-
-**Figure 7.:** a) Singapore (b) Tianjin.
 
 Shortening serial intervals are expected as increased quarantine measures are enacted during the course of an outbreak and can be an indication of improved control through successful contact tracing, as seen in SARS (Lipsitch et al., 2003). Our results suggest that serial intervals shortened as the outbreak progressed in both clusters, but they could also be due to right truncation. Accounting for this, we found that the mean serial intervals were 4 and 5 days (Singapore, Tianjin); a Cox regression found no significant difference between the early and late groups’ serial intervals. This estimate is made directly from case pairs in the data without accounting for intermediate infectors and co-primary infection, as in the ICC analysis.
 
 Table 1 shows our ICC estimates of the mean and standard deviation for the serial intervals, with comparison to other analyses and assumptions in Appendix 1—table 5. The ICC method finds the mean serial interval to be 4.17 (2.44, 5.89 95% bootstrap CI) days (0.882 bootstrap standard deviation) for Singapore and 4.31 (2.91, 5.72) days (0.716 bootstrap sd) for Tianjin, using the first four cases in each cluster. This is consistent with the results with right truncation.
 
-## Pre-symptomatic transmission
+### Pre-symptomatic transmission
 
 We estimated incubation periods and serial intervals with and without accounting for intermediate unknown cases. To estimate the portion of transmission that occurs before symptom onset, we compare the ‘direct’ (no intermediate) estimates of each, and the ‘indirect’ (accounting for intermediates) estimates of each. We estimate consistently shorter serial intervals than incubation period, suggesting that there is pre-symptomatic transmission.
 
-We took the covariation of incubation periods and serial intervals (and of generation times and incubation periods) into account by sampling the intervals jointly before estimating the fraction of the relevant differences that are negative. Even accounting for correlation, the estimated fraction of pre-symptomatic transmission for Singapore is 0.74 (regardless of early/late split) and for Tianjin is 0.72, 0.96, 0.81 (early, late, all), based on the direct estimates of the incubation periods and serial intervals (see also Figure 8). When we use the incubation period estimates that account for intermediates, the portions pre-symptomatic transmission are 0.53 in Singapore and 0.79 in Tianjin, when the assumed ‘rate of appearance’ of intermediates r is 0.05 (i.e. when we assume a relatively low rate of unknown intermediates). If this rate r is increased, the portion of pre-symptomatic transmission decreases, but even for r=0.2 we estimate the pre-symptomatic portion to be 0.38 in Singapore and 0.64 in Tianjin.
+We took the covariation of incubation periods and serial intervals (and of generation times and incubation periods) into account by sampling the intervals jointly before estimating the fraction of the relevant differences that are negative. Even accounting for correlation, the estimated fraction of pre-symptomatic transmission for Singapore is 0.74 (regardless of early/late split) and for Tianjin is 0.72, 0.96, 0.81 (early, late, all), based on the direct estimates of the incubation periods and serial intervals (see also Figure 8). When we use the incubation period estimates that account for intermediates, the portions pre-symptomatic transmission are 0.53 in Singapore and 0.79 in Tianjin, when the assumed ‘rate of appearance’ of intermediates $r$ is 0.05 (i.e. when we assume a relatively low rate of unknown intermediates). If this rate $r$ is increased, the portion of pre-symptomatic transmission decreases, but even for $r=0.2$ we estimate the pre-symptomatic portion to be 0.38 in Singapore and 0.64 in Tianjin.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/57149/elife-57149-fig8-v2.jpg)
 
 **Figure 8.:** Top: Singapore. Bottom: Tianjin. Left: without intermediates. Right: accounting for intermediates. Grey vertical line: 0. Samples below zero indicate pre-symptomatic transmission. In all cases there is substantial pre-symptomatic transmission.
 
-These results were obtained under an estimated correlation between the incubation period and serial interval of 0.289 in Tianjin. If instead the correlation were 0.1, the portion of pre-symptomatic transmission in Tianjin under r = 0.05, 0.1, 0.15 and 0.2, respectively, is estimated as 0.783, 0.725, 0.663 and 0.62. With correlation 0.8, the equivalent portions are 0.849, 0.781, 0.704 and 0.660. We therefore find that the degree of positive correlation does not greatly impact our estimates of pre-symptomatic transmission. We retain high estimates of the fraction pre-symptomatic in Tianjin, due to the long apparent incubation periods. It seems likely that these are an artifact of either pre-symptomatic transmission during quarantine/lockdown, or of other assumptions made about exposures in the creation of the original dataset. We conclude that overall for this data and under reasonable assumptions, we see evidence of at least 65% of transmission occurring before symptom onset.
+These results were obtained under an estimated correlation between the incubation period and serial interval of 0.289 in Tianjin. If instead the correlation were 0.1, the portion of pre-symptomatic transmission in Tianjin under $r$ = 0.05, 0.1, 0.15 and 0.2, respectively, is estimated as 0.783, 0.725, 0.663 and 0.62. With correlation 0.8, the equivalent portions are 0.849, 0.781, 0.704 and 0.660. We therefore find that the degree of positive correlation does not greatly impact our estimates of pre-symptomatic transmission. We retain high estimates of the fraction pre-symptomatic in Tianjin, due to the long apparent incubation periods. It seems likely that these are an artifact of either pre-symptomatic transmission during quarantine/lockdown, or of other assumptions made about exposures in the creation of the original dataset. We conclude that overall for this data and under reasonable assumptions, we see evidence of at least 65% of transmission occurring before symptom onset.
 
-In our direct analysis, we estimate that infection occurred on average 1.99 and 3.68 days before symptom onset of the infector (Singapore, Tianjin). Because the incubation period is different for early- and late-occurring cases in our data, on average transmission for early-occurring cases is 1.91 and 2.06 days before symptom onset (Singapore, Tianjin) and 1.88, 7.4 days before (Singapore, Tianjin) for late-occurring cases. Taking a low rate (r=0.05) of potential unknown intermediate cases into account, the mean difference reduces to 0.77 and 3.23 days (Singapore, Tianjin), though we still estimate a significant portion of pre-symptomatic transmission (0.53, 0.79), as above.
+In our direct analysis, we estimate that infection occurred on average 1.99 and 3.68 days before symptom onset of the infector (Singapore, Tianjin). Because the incubation period is different for early- and late-occurring cases in our data, on average transmission for early-occurring cases is 1.91 and 2.06 days before symptom onset (Singapore, Tianjin) and 1.88, 7.4 days before (Singapore, Tianjin) for late-occurring cases. Taking a low rate ($r=0.05$) of potential unknown intermediate cases into account, the mean difference reduces to 0.77 and 3.23 days (Singapore, Tianjin), though we still estimate a significant portion of pre-symptomatic transmission (0.53, 0.79), as above.
 
 Overall, serial intervals are robustly shorter than incubation periods in our analyses (Table 1). These estimates are strengthened by the fact that we have estimated both incubation period and serial interval in the same populations and by the fact that we obtain the same result in two distinct datasets. In both sets of estimates, samples of the incubation period minus serial interval are negative with probability 0.38 or higher (Singapore) and 0.64 or higher (Tianjin), and these lower bounds require a high rate of unknown intermediates early in the outbreak. This indicates that a substantial portion of transmission may occur before symptom onset (see Appendix 1 and Figure 8), consistent with the clinical observations reported by Rothe et al., 2020 and (Bai et al., 2020).
 
-Shorter serial intervals yield lower reproduction number estimates. For example, if the epidemic grows at a rate of 0.15 (doubling time of 4.6 days [Jung et al., 2020], scenario 1), an estimated reproduction number using the mean of the bootstrapped estimates is R=1.76⁢(1.30,2.17) with a serial interval of 4.17 days (Singapore) and R=1.95⁢(1.72,2.47) with a serial interval of 4.3 days (Tianjin). In contrast, if a longer serial interval (7.5 days [Jung et al., 2020; Li et al., 2020b]) is used, the estimate is R=3.05. This is based on the relationship between R⁢0, serial interval, and growth rate, and is a simple estimate that does not take into account a complex and variable natural history of infection (Wallinga and Lipsitch, 2007). It serves primarily to illustrate how our estimated serial intervals impact R in simple models for COVID-19 dynamics.
+Shorter serial intervals yield lower reproduction number estimates. For example, if the epidemic grows at a rate of 0.15 (doubling time of 4.6 days [Jung et al., 2020], scenario 1), an estimated reproduction number using the mean of the bootstrapped estimates is $R=1.76⁢(1.30,2.17)$ with a serial interval of 4.17 days (Singapore) and $R=1.95⁢(1.72,2.47)$ with a serial interval of 4.3 days (Tianjin). In contrast, if a longer serial interval (7.5 days [Jung et al., 2020; Li et al., 2020b]) is used, the estimate is $R=3.05$. This is based on the relationship between $R⁢0$, serial interval, and growth rate, and is a simple estimate that does not take into account a complex and variable natural history of infection (Wallinga and Lipsitch, 2007). It serves primarily to illustrate how our estimated serial intervals impact $R$ in simple models for COVID-19 dynamics.
 
 ## Discussion
 
@@ -131,39 +248,49 @@ We estimated both the incubation period and the serial interval in Singapore and
 
 ## Materials and methods
 
-## Data
+### Data
 
 All datasets and R code are available on GitHub (github.com/carolinecolijn/ClustersCOVID19; Tindale et al., 2020; copy archived at https://github.com/elifesciences-publications/ClustersCOVID19).
 
 Singapore data was obtained from the Ministry of Health Singapore, 2020 online press releases. The Singapore dataset comprised 93 confirmed cases from the date of the initial case on January 23, 2020 until February 26, 2020. Tianjin data was obtained from the Tianjin Health Commission, 2020 online press releases. The Tianjin dataset comprises 135 cases confirmed from January 21 to February 22, 2020. The symptom onsets were available on the official website for all but a few patients who had not had symptoms before being diagnosed at a quarantine center. Both datasets contained mainly information on exposure times, contacts among cases, time of symptom onset (See Appendix 1 for column descriptions and data processing).
 
-## Statistical analysis
+### Statistical analysis
 
 All statistical analyses were performed using R (R Development Core Team, 2013).
 
-## Incubation periods: not accounting for intermediate cases
+#### Incubation periods: not accounting for intermediate cases
 
 The daily incidence of hospitalization and mortality was plotted with the cumulative number of cases confirmed and discharged. The daily incidence was also visualized by date of symptom onset. For the symptom onset plots, any cases that did not have information on date of onset of symptoms were removed. Cases were then grouped based on their assumed source of infection (see Appendix 1 for full details).
 
 Incubation periods were estimated in two ways: directly from the exposure to symptom onset times, and using a model allowing for unknown intermediate cases to have been the true source of infection (see below). The direct estimates were based on the earliest and latest possible exposure times, and on the reported times of symptom onset. It is impossible to confirm the exact times of exposure and thus we used interval censoring, which uses the likelihood of a time falling in a defined window, (R package icenReg [Anderson-Bergman, 2017]) to make parametric estimates of the incubation period distribution. For cases without a known earliest possible exposure time, we assume that the case must have been exposed within the 20 days prior to their symptom onset. For cases without a known latest possible exposure time, we assume that exposure had to have occurred before symptom onset. Some cases had a travel history or contact with a known location or presumed source of the virus and this defined their window for exposure. In the Singapore dataset, other individuals had estimated exposure times based on the symptom times for their presumed infector. For these, we define an exposure window using the symptoms of their presumed infector −7/+4 days. Having defined exposure windows, we proceed with interval censoring. In both datasets we stratified the data according to whether symptom onset occurred early or late, and estimated incubation periods separately. We define ‘early’ cases as those with symptom onset on or prior to January 31.
 
-## Incubation periods: accounting for intermediate cases
+#### Incubation periods: accounting for intermediate cases
 
-Standard estimates of the incubation period from exposure and symptom data require knowledge of the true exposure event. In our data, exposures were frequently attributed to attendance at events or locations where there had been known COVID-19 cases. It is conceivable that some cases were not in fact exposed at the event, but subsequent to it, by an unknown (perhaps asymptomatic) case who also attended the event or was otherwise linked. We developed the following approach to account for possible unknown intermediates. Suppose the data suggest that case i was exposed at an event by individual A, but in fact, there is an unknown intermediate x who was infected at the event and who subsequently infected i. In this case, the time between i’s apparent exposure and i’s symptom onset is not a sample of the incubation period. Instead, it is one generation time (the time between A infecting x and x infecting i) followed by one incubation period (from x infecting i to i’s symptoms). Similarly, if x infects a second unknown intermediate y, and y infects i, then the time elapsed is two generation intervals followed by an incubation period. Under the simplifying assumption that the generation time and the incubation period follow a gamma distribution with the same scale parameter, we can explicitly write the density for the elapsed time, given k intermediates. We model the assumption that longer times between (presumed) exposure and symptom onset have more room for undetected intermediate cases. To describe this with likelihoods, we model unknown intermediate cases occurring with a probability proportional to the length of the apparent incubation period, using a Poisson process (see Appendix 1). We estimate the mean incubation period and generation interval with this approach, also accounting for right truncation (which is not available in the interval censoring estimator in icenReg). If f⁢(t), g⁢(t) are the densities for the incubation period and generation time respectively, then with k intermediates, the time elapsed has density hk⁢(t)=g*…*g*f=g(k)*f, where * denotes convolution, i.e., g*f=∫0tg⁢(s)⁢f⁢(t-s)⁢𝑑s. The right trunctation time Ti is the time between i’s exposure and the end of the observation period (because if the symptom onset does not happen after Ti has elapsed it will not be observed, and this can bias estimates). Let the time from symptom onset to the beginning of the exposure window be tm⁢a⁢xi, and to the end of the window tm⁢i⁢ni. The incubation period is then somewhere in the interval (tm⁢i⁢ni,tm⁢a⁢xi). The likelihood of observing a time in this interval, conditional on k intermediates, is Lki=Hk⁢(tm⁢a⁢xi)-Hk⁢(tm⁢i⁢ni)Hk⁢(Ti). We use a Poisson process with rate r to model the probability that there are k intermediates. This means that the likelihood for the i’th observation is Li=∑k=03pk⁢Lki. The complete likelihood is the product over all cases, L=∏iLi. To compute this, note that if g and f are both gamma densities with shapes ag and ai, and if they have the same scale parameter b, then the convolution g*f⁢(t)=Gamma⁢(ag+ai,b). We can extend this to k intermediates: the density is g(k)*f=Gamma⁢(k⁢ag+ai,b). We truncate the number of possible intermediates at n, so we condition the usual Poisson probability for k arrivals, ρk,r=rk⁢e-r/k!, accordingly. Let Cn,r=∑i=0npi⁢(r), and use(1)pk={ρk,r/Cn,r,k≤n0otherwise
+Standard estimates of the incubation period from exposure and symptom data require knowledge of the true exposure event. In our data, exposures were frequently attributed to attendance at events or locations where there had been known COVID-19 cases. It is conceivable that some cases were not in fact exposed at the event, but subsequent to it, by an unknown (perhaps asymptomatic) case who also attended the event or was otherwise linked. We developed the following approach to account for possible unknown intermediates. Suppose the data suggest that case $i$ was exposed at an event by individual $A$, but in fact, there is an unknown intermediate $x$ who was infected at the event and who subsequently infected $i$. In this case, the time between $i$’s apparent exposure and $i$’s symptom onset is not a sample of the incubation period. Instead, it is one generation time (the time between $A$ infecting $x$ and $x$ infecting $i$) followed by one incubation period (from $x$ infecting $i$ to i’s symptoms). Similarly, if $x$ infects a second unknown intermediate $y$, and $y$ infects $i$, then the time elapsed is two generation intervals followed by an incubation period. Under the simplifying assumption that the generation time and the incubation period follow a gamma distribution with the same scale parameter, we can explicitly write the density for the elapsed time, given $k$ intermediates. We model the assumption that longer times between (presumed) exposure and symptom onset have more room for undetected intermediate cases. To describe this with likelihoods, we model unknown intermediate cases occurring with a probability proportional to the length of the apparent incubation period, using a Poisson process (see Appendix 1). We estimate the mean incubation period and generation interval with this approach, also accounting for right truncation (which is not available in the interval censoring estimator in icenReg). If $f⁢(t)$, $g⁢(t)$ are the densities for the incubation period and generation time respectively, then with $k$ intermediates, the time elapsed has density $h_{k}⁢(t)=g*…*g*f=g^{(k)}*f$, where * denotes convolution, i.e., $g*f=\int_{0}^{t}g⁢(s)⁢f⁢(t-s)⁢𝑑s$. The right trunctation time $T_{i}$ is the time between $i$’s exposure and the end of the observation period (because if the symptom onset does not happen after $T_{i}$ has elapsed it will not be observed, and this can bias estimates). Let the time from symptom onset to the beginning of the exposure window be $t_{m⁢a⁢x}^{i}$, and to the end of the window $t_{m⁢i⁢n}^{i}$. The incubation period is then somewhere in the interval $(t_{m⁢i⁢n}^{i},t_{m⁢a⁢x}^{i})$. The likelihood of observing a time in this interval, conditional on $k$ intermediates, is $L_{k}^{i}=\frac{H_{k}⁢(t_{m⁢a⁢x}^{i})-H_{k}⁢(t_{m⁢i⁢n}^{i})}{H_{k}⁢(T_{i})}$. We use a Poisson process with rate $r$ to model the probability that there are $k$ intermediates. This means that the likelihood for the $i$’th observation is $L^{i}=\sum_{k=0}^{3}p_{k}⁢L_{k}^{i}$. The complete likelihood is the product over all cases, $L=\prod_{i}L^{i}.$ To compute this, note that if $g$ and $f$ are both gamma densities with shapes $a_{g}$ and $a_{i}$, and if they have the same scale parameter $b$, then the convolution $g*f⁢(t)=Gamma⁢(a_{g}+a_{i},b)$. We can extend this to $k$ intermediates: the density is $g^{(k)}*f=Gamma⁢(k⁢a_{g}+a_{i},b)$. We truncate the number of possible intermediates at $n$, so we condition the usual Poisson probability for $k$ arrivals, $ρ_{k,r}=r^{k}⁢e^{-r}/k!$, accordingly. Let $C_{n,r}=\sum_{i=0}^{n}p_{i}⁢(r)$, and use
 
-We use maximum likelihood to estimate the shape parameters ag and ai of the generation and incubation periods under a range of intermediate ‘arrival rates’ r and we use bootstrapping to estimate the credible intervals. We refer to this analysis as the ‘incubation period with intermediates’ analysis.
+$$
+p_{k}={ρ_{k,r}/C_{n,r},k\leqn0otherwise
+$$
 
-## Serial intervals: not accounting for intermediates
+We use maximum likelihood to estimate the shape parameters $a_{g}$ and $a_{i}$ of the generation and incubation periods under a range of intermediate ‘arrival rates’ $r$ and we use bootstrapping to estimate the credible intervals. We refer to this analysis as the ‘incubation period with intermediates’ analysis.
+
+#### Serial intervals: not accounting for intermediates
 
 We illustrate the empirical serial intervals implied by contact links reported in the data. We compute the mean and standard deviation of these in entirety, and separated into early- and late-occurring cases, calculating summary statistics of possible transmission pairs in ’early’ (i.e. first date of symptom onset on or before Jan 31, 2020) vs. ‘late‘ portions of both clusters. We estimate the mean serial intervals using these ‘directly reported’ contacts, accounting for right truncation (R package SurvTrunc) and using Cox proportional hazards to determine whether there is a significant early vs. late difference. We use the non-parametric survival curves to estimate the mean serial interval for both datasets.
 
-## Serial intervals: accounting for intermediates
+#### Serial intervals: accounting for intermediates
 
-As with incubation periods, reported serial intervals may miss unknown intermediates, and co-infectors of two cases presumed to be a transmission pair. We used the expectation-maximization approach described in Vink et al., 2014, which not only takes unknown intermediates into account but also explicitly models a fixed set of possible mis-allocation of infector-infectee pairs in contact data. Briefly, this approach assigns the case with earliest symptom onset in a cluster a ‘putative index’ (PI) status, and uses the time difference between symptom onset of subsequent cases in the cluster and the putative index as ‘index case to case’ (ICC) intervals for putative index cases in small, closely-linked sets of cases (‘small clusters’). The ICC intervals are the time differences between the symptom onset time tp⁢i of the putative index (PI) case and the other members’ symptom onset (call these times tj, where j is another case in the same small cluster as this PI). These intervals are not samples of the serial interval distribution, because it need not be the case that the PI infected the others. Vink et al., 2014 used a mixture model in which ICC intervals tj-tp⁢i can arise in four ways: (1) an outside case infects PI and j; (2) PI infects j; (3) PI infects an unknown who infects j and (4) PI infects unknown one who infects unknown two who infects j. Accordingly, if the serial interval x∼𝒩⁢(μ,σ2), the density for the ICC intervals isf⁢(x;μ,σ2)=∑iwi⁢fi⁢(μ,σ2)where wi are weights of the i’th component density and fi are the component densities for the i’th transmission route. Expectation-maximization is used to determine μ and σ (See Vink et al., 2014 for more details).
+As with incubation periods, reported serial intervals may miss unknown intermediates, and co-infectors of two cases presumed to be a transmission pair. We used the expectation-maximization approach described in Vink et al., 2014, which not only takes unknown intermediates into account but also explicitly models a fixed set of possible mis-allocation of infector-infectee pairs in contact data. Briefly, this approach assigns the case with earliest symptom onset in a cluster a ‘putative index’ (PI) status, and uses the time difference between symptom onset of subsequent cases in the cluster and the putative index as ‘index case to case’ (ICC) intervals for putative index cases in small, closely-linked sets of cases (‘small clusters’). The ICC intervals are the time differences between the symptom onset time $t_{p⁢i}$ of the putative index (PI) case and the other members’ symptom onset (call these times $t_{j}$, where $j$ is another case in the same small cluster as this PI). These intervals are not samples of the serial interval distribution, because it need not be the case that the PI infected the others. Vink et al., 2014 used a mixture model in which ICC intervals $t_{j}-t_{p⁢i}$ can arise in four ways: (1) an outside case infects PI and $j$; (2) PI infects $j$; (3) PI infects an unknown who infects $j$ and (4) PI infects unknown one who infects unknown two who infects $j$. Accordingly, if the serial interval $x∼𝒩⁢(\mu,\sigma^{2})$, the density for the ICC intervals is
 
-For each dataset, we create a network, with individuals represented by nodes. The network’s edges are the reported direct contacts between individuals. Every such network (or graph) consists of one or more components – sets of nodes that are connected by edges. We use the components of the network to define transmission clusters. Since the four models in the mixture are likely insufficient to model the transmission in large clusters, we restrict the analysis to only the first four cases per cluster (or the first 3, 5, or 6 cases per cluster to determine impact of altering number of cases per cluster; see Appendix 1). We defined the first case within the cluster as the case with the earliest date of symptom onset within the cluster; however we also examined the impact of using the earliest end exposure time if the first symptomatic case was not the index case for the cluster (See Appendix 1). Given the serial interval, we calculate an approximate reproduction number using the empirical growth rate (Wallinga and Lipsitch, 2007): R=exp⁡(rμ−1/2r2σ2), where r, μ and σ are the exponential growth rate, the mean serial interval and the standard deviation of the serial interval, respectively). To obtain confidence intervals for R we resample μ and σ using bootstrapping.
+$$
+f⁢(x;\mu,\sigma^{2})=\sumiw_{i}⁢f_{i}⁢(\mu,\sigma^{2})
+$$
 
-## Pre-symptomatic transmission
+where $w_{i}$ are weights of the $i$’th component density and $f_{i}$ are the component densities for the $i$’th transmission route. Expectation-maximization is used to determine $\mu$ and $\sigma$ (See Vink et al., 2014 for more details).
+
+For each dataset, we create a network, with individuals represented by nodes. The network’s edges are the reported direct contacts between individuals. Every such network (or graph) consists of one or more components – sets of nodes that are connected by edges. We use the components of the network to define transmission clusters. Since the four models in the mixture are likely insufficient to model the transmission in large clusters, we restrict the analysis to only the first four cases per cluster (or the first 3, 5, or 6 cases per cluster to determine impact of altering number of cases per cluster; see Appendix 1). We defined the first case within the cluster as the case with the earliest date of symptom onset within the cluster; however we also examined the impact of using the earliest end exposure time if the first symptomatic case was not the index case for the cluster (See Appendix 1). Given the serial interval, we calculate an approximate reproduction number using the empirical growth rate (Wallinga and Lipsitch, 2007): $R=exp⁡(r\mu−1/2r^{2}\sigma^{2})$, where $r$, $\mu$ and $\sigma$ are the exponential growth rate, the mean serial interval and the standard deviation of the serial interval, respectively). To obtain confidence intervals for $R$ we resample $\mu$ and $\sigma$ using bootstrapping.
+
+#### Pre-symptomatic transmission
 
 We estimate the portion of transmission that occurs before symptoms as the fraction of samples where serial interval minus incubation period is negative. We introduce an approach to take covariation between the two variables into account, as follows. The mean difference between two random variables is the difference between the means. Therefore, the mean serial interval minus the mean incubation periods gives an estimate of the mean time before symptoms that transmission occurs according to our data. However, the distribution of the difference depends on the covariance between the incubation period and the serial interval. Unfortunately, it is challenging to obtain a good estimate of the covariance between these quantities. We estimated the covariance (and correlation) using case pairs; each pair is associated with two numbers: a serial interval estimate and an incubation period for the infectee. The covariance between these is a (somewhat crude) estimate of the covariance in the incubation period and serial intervals. We sampled incubation periods and serial intervals from our estimated distributions, ensuring that we respected the observed correlation, and used the serial interval - incubation period differences to estimate the portion of transmission that is pre-symptomatic. Further details of this approach are given in Appendix 1.
 

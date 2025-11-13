@@ -9,8 +9,8 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Solomon H. Snyder Department of Neuroscience, Kavli Neuroscience Discovery Institute, Brain Science Institute, Johns Hopkins University School of Medicine Baltimore United States
-2. https://ror.org/00za53h95 Zanvyl Krieger Mind/Brain Institute, Johns Hopkins University Baltimore United States
+1. Solomon H. Snyder Department of Neuroscience, Kavli Neuroscience Discovery Institute, Brain Science Institute, Johns Hopkins University School of Medicine Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. Zanvyl Krieger Mind/Brain Institute, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
 
 † Corresponding author
 
@@ -32,9 +32,21 @@ Here, we investigate how task rules affect activity in a sensorimotor pathway to
 
 ## Results
 
-## Task rules modulate touch-evoked activity of individual neurons in the tactile processing stream
+### Task rules modulate touch-evoked activity of individual neurons in the tactile processing stream
 
 We trained head-fixed mice to perform a cross-modal sensory selection task (Chevée et al., 2022) in which they switched between ‘respond-to-touch’ and ‘respond-to-light’ rules in different blocks of trials (Figure 1a and b). During the respond-to-touch rule, mice responded to a tactile stimulus by licking to the right reward port, and to withhold licking following a visual stimulus. During the respond-to-light rule, mice responded to a visual stimulus by licking to the left reward port, and withheld licking following a tactile stimulus. For each trial, the stimulus duration was 0.15 s and an answer period extended from 0.1 to 2 s from stimulus onset. Blocks of trials under the two rules alternated multiple times in a session (Figure 1b; 4–6 blocks per session, ~60 trials per block). No cue was immediately provided after rule switching, so mice detected the rule change through reward availability over the first few trials. On the 9th trial, a drop of water from the correct reward port was released following the stimulus to ensure switching (Figure 1b, black dots).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/92620/elife-92620-fig1-v1.jpg)
+
+**Figure 1.:** (a) Schematic of the cross-modal sensory selection task. Tactile and visual stimuli were associated with water reward during the respond-to-touch and respond-to-light rules, respectively. Mice were trained to lick to the right reward port after a tactile stimulus during the respond-to-touch rule, and lick to the left reward port after a visual stimulus during the respond-to-light rule. Mice withheld licking after a reward irrelevant stimulus (tactile stimulus during the respond-to-light rule or visual stimulus during the respond-to-touch rule). (b) Example behavioral session. Tactile and visual trials were randomly interleaved. Respond-to-touch and respond-to-light rules alternated in different blocks of trials during a behavioral session (~60 trials/block). The mouse adaptively changed its stimulus-response strategies based on the task rules. Each bar represents a trial and colors indicate lick responses (right lick: purple; left lick: orange; no lick: gray). A drop of water was delivered to the new reward port on the 9th trial (black dot) to cue mice to the rule switch. (c) Task design and trial outcomes. Correct licking responses were hits, and correct withholding of responses were correct rejections (CR). Failed responses were misses, and incorrect licking responses were false alarms (FA). Two sensory modalities and four types of trial outcomes comprise eight trial types. (d) The fractions of trial outcomes were similar between the respond-to-touch and respond-to-light rules (touch vs light: hit [36 ± 1% vs 35 ± 2%]; correct rejection [38 ± 1% vs 40 ± 1%]; miss [13 ± 1% vs 14 ± 1%]; false alarm [13 ± 1% vs 12 ± 1%]). The behavioral performance was ~75% correct for both rules (touch: 74 ± 1%, light: 75 ± 1%). Means ± s.e.m.; n=12 mice. (e) Reconstructed locations of silicon probes. S1: primary somatosensory cortex (6 mice, 10 sessions). S2: secondary somatosensory cortex (5 mice, 8 sessions). MM: medial motor cortex (7 mice, 9 sessions). ALM: anterolateral motor cortex (8 mice, 13 sessions). (f) Raster plots (top) and trial-averaged activity (bottom) of an example S1 unit. Correct tactile (left) and visual (right) trials were sorted by rule and response (tactile hit [tHit], blue; tactile correct rejection [tCR], cyan; visual hit [vHit], red; visual correct rejection [vCR], magenta). Dots indicate the first lick in hit trials. Thick black bars show the stimulus delivery window. Error shading: bootstrap 95% confidence interval (CI). (g) Normalized activity (z-score) across the population of recorded neurons in S1 (177 neurons), S2 (162 neurons), MM (140 neurons), and ALM (256 neurons). Error shading: bootstrap 95% CI. (h) Distribution of tHit and tCR discriminability for individual neurons. Discriminability of tHits and tCRs was defined as the ability of an ideal observer to discriminate tHits from tCRs on a trial-by-trial basis (0–150 ms; 10 ms bins). Approximately 15–35% of neurons showed significant difference between tHit and tCR responses (gray area; Bonferroni corrected 95% CI of area under the receiver-operating curve (AUC) does not include 0.5 for at least three consecutive time bins) in S1 (28.8%), S2 (17.9%), MM (32.9%), and ALM (23.4%).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/92620/elife-92620-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a, b) Raster plots (top) and trial-averaged activity (bottom) of two example S1 units. Correct tactile (left) and visual (right) trials were grouped by rules and responses (tactile hit, blue; tactile correct rejection, cyan; visual hit, red; visual correct rejection, magenta). Dots indicate the first lick in hit trials. Thick black bars show periods of stimulus delivery. Error shading shows bootstrap 95% CI. (c–j) Same as (a) and (b) but for example units from S2 (c, d), MM (medial motor cortex) (e, f), ALM (anterolateral motor cortex) (g, h), and AMM (the anteromedial part of the motor cortex; (i, j). (k)) Normalized activity (z-score) across the population of recorded neurons in AMM (110 neurons). Error shading: bootstrap 95% CI.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/92620/elife-92620-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Mean firing rates across the population of recorded neurons in S1 (177 neurons), S2 (162 neurons), medial motor cortex (MM) (140 neurons), and anterolateral motor cortex (ALM) (256 neurons). Left panel: Responses in correct tactile trials (tactile hits [tHit], blue; tactile correct rejections [tCR], cyan). Right panel: Responses in correct visual trials (visual hits [vHit], red; visual correct rejections [vCR], magenta). Thick black bars show the stimulus delivery window. Error shadings show bootstrap 95% CIs. (b) Distribution of peak responses during the stimulus period in tHit (left) and tCR (right) trials for the neurons shown in a.
 
 The two stimulus-response rules determined the behavioral relevance of sensory stimuli. For example, tactile stimuli were behaviorally relevant in respond-to-touch blocks but irrelevant in respond-to-light blocks. Four trial outcomes were defined based on the behavioral relevance of a sensory stimulus and on the response of the mouse. Correct licking responses following a relevant stimulus were ‘hits’, and correct withholding of responses following an irrelevant stimulus were ‘correct rejections’. Failed responses to a relevant stimulus were ‘misses’, and incorrect licking responses (following an irrelevant stimulus and/or at the incorrect port) were ‘false alarms’. Two sensory modalities and four trial outcomes composed eight trial types in the cross-modal sensory selection task (Figure 1c). Only hit trials were rewarded with a drop of water, and the other trial types were neither rewarded nor punished. We used stimulus strengths (tactile stimulus: single whisker, 20 Hz, 150 ms, ~800 degrees/s; visual stimulus: 470 nm LED, 150 ms, ~3 μW) that yielded performance of approximately 75% correct for both respond-to-touch and respond-to-light blocks (Figure 1d; touch: 74 ± 1%, light: 75 ± 1% [mean ± s.e.m.], p=0.56, paired sample t-test, n=12 mice). Thus, mice flexibly responded to tactile and visual stimuli in a rule-dependent manner.
 
@@ -42,7 +54,7 @@ To examine how the task rules influenced the sensorimotor transformation occurri
 
 We first determined to what extent the rules modulated touch-evoked activity by comparing tactile correct trials between respond-to-touch and respond-to-light blocks (tHit vs tCR). We restricted analysis to the 150 ms period of stimulus delivery, to focus on rule-dependent processing that was not influenced by overt movements (97% of lick onsets occurred >150 ms after stimulus onset). We used ideal observer analysis to determine how well trial-by-trial activity of a single neuron could discriminate between the task rules (Materials and methods). We found that 18–33% of neurons in these cortical areas had area under the receiver-operating curve (ROC) (AUC) values significantly different from 0.5, and therefore discriminated between tHit and tCR trials (Figure 1h; S1: 28.8%, 177 neurons; S2: 17.9%, 162 neurons; MM: 32.9%, 140 neurons; ALM: 23.4%, 256 neurons; criterion to be considered significant: Bonferroni corrected 95% CI on AUC did not include 0.5 for at least three consecutive 10 ms time bins). Moreover, the distribution of AUC values for discriminative neurons showed that the majority had enhanced responses (AUC >0.5) to tactile stimuli that were behaviorally relevant. Therefore, touch-evoked responses were overall enhanced by the relevance of tactile stimuli according to the current stimulus-response rule.
 
-## Pre-stimulus activity of single neurons signals task rules
+### Pre-stimulus activity of single neurons signals task rules
 
 In our cross-modal selection task, rules were block-based and there were no cues to indicate the current rule (except for the rule transition cue on the 9th trial of each block), so the mice were required to maintain rule information during the intertrial interval (ITI). To test if ITI activity of neurons in the somatosensory and motor cortical areas reflected task rules, we first analyzed neural activity during the 1 s window preceding stimulus delivery. Trials with licking in this time window were removed to minimize possible movement effects on pre-stimulus activity (Material and methods). We found that some cortical neurons showed obvious changes in their pre-stimulus activity across blocks (Figure 2a). A preference for the respond-to-touch rule (i.e. with activity higher in respond-to-touch blocks compared with respond-to-light blocks) and a preference for the respond-to-light rule were both observed (Figure 2a and b). We next calculated discriminability between block types for each neuron to see how well an ideal observer could categorize the current trial’s task rule on the basis of pre-stimulus activity (−100 to 0 ms from stimulus onset). To ensure mice were in the correct state to treat the following stimuli according to the rule, only correct tactile and visual trials were included. Less than 5% of neurons in S1 and S2 showed significant rule discriminability, while MM and ALM had around 10–20% significant neurons (Figure 2c; S1: 4.5%, 177 neurons; S2: 2.5%, 162 neurons; MM: 21.4%, 140 neurons; ALM: 10.2%, 256 neurons; Bonferroni corrected 95% CI on AUC did not include 0.5).
 
@@ -56,21 +68,37 @@ The rule dependence of pre-stimulus activity indicates that neurons were in diff
 
 Together, these results demonstrate that the pre-stimulus activity of single units in the sensory and motor cortical areas reflected task rules, with better discrimination of rules by units in the motor areas.
 
-## Pre-stimulus states of neuronal populations reflect task rules
+### Pre-stimulus states of neuronal populations reflect task rules
 
 We next investigated the function of rule-dependent pre-stimulus activity from the perspective of neural population dynamics. In a dynamical system, state variables change based on their current values. This implies that the evolution of neural population activity during a trial will depend in part on the activity state of the population at the beginning of the trial (Vyas et al., 2020; Ebitz and Hayden, 2021). We hypothesized that pre-stimulus activity—i.e., the state of the population at the start of the trial—would be set in such a way as to enable processing of the upcoming sensory signals according to the appropriate rule. Predictions from this hypothesis are that: (1) the pre-stimulus state of a neural population could be used to decode the current task rule; (2) the rule-dependent separation of neural subspaces before and after the tactile stimulus onset should be correlated; (3) pre-stimulus states would shift when the mice switched between rules; and (4) perturbations of the pre-stimulus state should disrupt task performance. We tested each prediction via the following analyses and experiments.
 
 We first determined whether the pre-stimulus population state could be used to decode the current task rule. For each session, we used linear discriminant analysis (LDA) to obtain a classification accuracy for block type (respond-to-touch vs respond-to-light) based on the pre-stimulus activity (−100 to 0 ms relative to stimulus onset) of simultaneously recorded neurons on correct trials (Figure 3a). Pre-stimulus states in S1, S2, MM, and ALM could each be used to decode the block type (Figure 3b; medians of classification accuracy [true vs shuffled]: S1 [0.61 vs 0.5], 10 sessions; S2 [0.62 vs 0.53], 8 sessions; MM [0.7 vs 0.52], 9 sessions; ALM [0.68 vs 0.55], 13 sessions). Support vector machine (SVM) and Random Forests classifiers showed similar decoding abilities (Figure 3—figure supplement 1a and b; medians of classification accuracy [true vs shuffled]; SVM: S1 [0.6 vs 0.53], 10 sessions, S2 [0.61 vs 0.51], 8 sessions, MM [0.71 vs 0.51], 9 sessions, ALM [0.65 vs 0.52], 13 sessions; Random Forests: S1 [0.59 vs 0.52], 10 sessions, S2 [0.6 vs 0.52], 8 sessions, MM [0.65 vs 0.49], 9 sessions, ALM [0.7 vs 0.5], 13 sessions).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/92620/elife-92620-fig3-v1.jpg)
+
+**Figure 3.:** (a) Decoding of task rule (respond-to-touch vs respond-to-light) through linear discriminant analysis (LDA) for an example session. Pre-stimulus population activity (medial motor cortex [MM]; 21 neurons; –100 to 0 ms from stimulus onset) in respond-to-touch (green) and respond-to-light (yellow) blocks were projected onto the first linear discriminant (LD1). This plot shows the histogram of the projections onto the LD1 axis. (b) Distribution of classification accuracy for task rule (respond-to-touch vs respond-to-light) based on pre-stimulus activity for simultaneously recorded neurons in each session (S1: 10 sessions; S2: 8 sessions; MM: 9 sessions; anterior lateral motor cortex [ALM]: 13 sessions). The true (cyan) data showed better classification accuracy compared with the shuffled (gray) data (medians of classification accuracy [true vs shuffled]: S1 [0.61 vs 0.5]; S2 [0.62 vs 0.53]; MM [0.7 vs 0.52]; ALM [0.68 vs 0.55]). Arrows show classification accuracy medians. Dashed lines indicate the chance level (0.5). The downward-pointing triangle shows the example session in (a). (c) Session-averaged classification accuracy for task rules based on pre-stimulus population activity in S1 (95% CI of true [cyan] and shuffled [gray] data: true [0.52,0.61], shuffled [0.49,0.55]), S2 (true [0.53,0.63], shuffled [0.49, 0.54]), MM (true [0.60,0.73], shuffled [0.48, 0.53]) and ALM (true [0.56,0.66], shuffled [0.49, 0.54]). Error bars show bootstrap 95% CI. (d) Same as (c) but for the classification accuracy for stimulus types. (e) Same as (c) but for the classification accuracy for stimulus types based on population activity after stimulus onset (0–100 ms).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/92620/elife-92620-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (a) Distribution of classification accuracy for task rule (respond-to-touch vs respond-to-light) based on pre-stimulus population activity (−100 to 0 ms from stimulus onset) using a support vector machine (SVM). Arrows show classification accuracy medians for true (cyan) and shuffled (gray) data. Dashed lines indicate the chance level (0.5). (b) Same as (a) but using a Random Forests classifier. (c) Distribution of classification accuracy for stimulus types (tactile stimulus vs visual stimulus) based on pre-stimulus population activity using linear discriminant analysis (LDA). (d) Same as (c) but based on population activity after stimulus onset (0–100 ms from stimulus onset). S1: 10 sessions, S2: 8 sessions, medial motor cortex (MM): 9 sessions, anterior lateral motor cortex (ALM): 13 sessions.
+
 Interestingly, activity in the motor cortical areas allowed robust block-type classification (no overlap between bootstrap 95% CIs for the true and shuffled data, 95% CIs for true vs shuffled data: MM [0.60,0.73] vs [0.48, 0.53]; ALM [0.56,0.66] vs [0.49, 0.54]). In contrast, the sensory cortical areas showed limited block-type discriminability (Figure 3c; bootstrap 95% CIs for the true data were above 0.5 but overlapped with the bootstrap 95% CIs for the shuffled data, 95% CIs for true vs shuffled data: S1 [0.52,0.61] vs [0.49,0.55]; S2 [0.53,0.63] vs [0.49, 0.54]). In positive and negative control analyses, we found that neural population activity could be used to discriminate between stimulus types (tactile vs visual) after stimulus onset (Figure 3e and Figure 3—figure supplement 1d; 0–100 ms relative to stimulus onset) but not before stimulus onset (Figure 3d and Figure 3—figure supplement 1c; from –100 to 0 ms).
 
 Together these results show that each of the two task rules was associated with a different pattern of pre-stimulus population activity in sensory and motor cortical areas, with a larger difference in the motor areas.
 
-## Separation of pre-stimulus states predicts subsequent divergent processing
+### Separation of pre-stimulus states predicts subsequent divergent processing
 
 We found pre-stimulus population activity was rule-dependent across sensory and motor cortical areas. We next asked if these rule-dependent pre-stimulus states affect post-stimulus neural activity. We investigated the relationship between the difference in pre-stimulus states between tHits and tCRs and the divergence of their subsequent neural trajectories. To assess this for the four cortical areas, we quantified how the tHit and tCR trajectories diverged from each other by calculating the Euclidean distance between matching time points for all possible pairs of tHit and tCR trajectories for a given session and then averaging these for the session (Figure 4a and b; S1: 10 sessions, S2: 8 sessions, MM: 9 sessions, ALM: 13 sessions, individual sessions in gray and averages across sessions in black; window of analysis: –100 to 150 ms relative to stimulus onset; 10 ms bins; using the top three principal components [PCs]; Materials and methods). The resulting time series of distance values from all sessions (n=40) were then ranked according to their means over the 100 ms period preceding stimulus onset and split into two groups, those above and below the median. The top 50% group showed a larger mean distance between tHit and tCR trajectories after stimulus onset compared with the bottom 50% group (Foffani and Moxon, 2004; O’Connor et al., 2010; Figure 4c; permutation test, p<0.001, 40 sessions). This result shows that the difference in population responses to the tactile stimuli under the two rules is commensurate with the difference in pre-stimulus states.
 
-## Neural subspaces for tactile processing are rule-dependent
+![Figure 4.](https://cdn.elifesciences.org/articles/92620/elife-92620-fig4-v1.jpg)
+
+**Figure 4.:** (a) Schematic of distance (dashed line) between tactile hit (tHit) (blue) and tactile correct rejection (tCR) (cyan) trajectories. (b) Distance between tHit and tCR trajectories in S1, S2, medial motor cortex (MM), and anterior lateral motor cortex (ALM). Gray traces show the time varying tHit-tCR distance in individual sessions and black traces are session-averaged tHit-tCR distance (S1:10 sessions; S2: 8 sessions; MM: 9 sessions; ALM: 13 sessions). (c) Distance between tHit and tCR trajectories. Traces show individual sessions (n=40) pooled across areas and were sorted and labeled based on the distance prior to the stimulus (top 50%: green; bottom 50%: orange). The post-stimulus-onset distance was larger in the top 50% group than the bottom 50% group (permutation test, p<0.001). In (b) and (c) thick black bars show periods of stimulus delivery. (d) Schematic of the subspace overlap between tHit and tCR. A subspace (green parallelogram) for population activity of tHit (blue) is in a high-dimensional neural state space (left panel). If the subspaces of tHit and tCR are aligned, the tHit subspace could explain much of the variance of tCR (high subspace overlap; middle panel). That is, the projection of tCR onto the tHit subspace (purple) preserves much of the variance of tCR (cyan). If the subspaces of tHit and tCR are unaligned, the projection of tCR onto the tHit subspace preserves little of the variance of tCR (right panel). (e) Subspace overlap for control tHit (gray) and tCR (purple) trials in the somatosensory and motor cortical areas. Each circle is a subspace overlap of a session. Paired t-test, tCR – control tHit: S1: –0.23, 8 sessions, p=0.0016; S2: –0.23, 7 sessions, p=0.0086; MM: –0.36, 5 sessions, p<0.001; ALM: –0.35, 11 sessions, p<0.001; significance: ** for p<0.01, *** for p<0.001. (f) Relationship between pre- and post-stimulus-onset subspace overlaps. The subspace overlaps between tHit and tCR trials, calculated during pre- and post-stimulus-onset periods, were correlated (Pearson correlation, r=0.68, p<0.001; linear regression [black line]; 31 sessions).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/92620/elife-92620-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Population activity projected on the stimulus CD in respond-to-touch blocks. Two stimulus types and two behavioral responses compose four conditions (tactile-right-lick: blue; tactile-no-lick: cyan; visual-right-lick: red; visual-no-lick: magenta). Thick black bars (on the top of each panel) show periods of stimulus delivery (0–150 ms). Error shading: bootstrap 95% CI. (b) Population activity projected on the stimulus CD in respond-to-light blocks. Two stimulus types and two behavioral responses compose four conditions (tactile-left-lick: blue; tactile-no-lick: cyan; visual-left-lick: red; visual-no-lick: magenta). (c) Same as (a) but for choice CDs. (d) Same as (b) but for choice CDs. (e) Magnitude of dot product between the stimulus CDs in respond-to-touch and respond-to-light blocks. We used tactile vs visual trials to obtain the stimulus CDs in respond-to-touch and respond-to-light blocks. Means ± 95% CI from bootstrapping. (f) Magnitude of dot product between the choice CDs in respond-to-touch and respond-to-light blocks. To obtain choice CDs, we used right-lick vs no-lick trials in respond-to-touch blocks and left-lick vs no-lick trials in respond-to-light blocks. (g, h) Same as (e, f) but using tactile-right-lick, tactile-left-lick, visual-right-lick, and visual-left-lick trials, with choice CDs calculated based on right-lick vs left-lick trials.
+
+### Neural subspaces for tactile processing are rule-dependent
 
 Although the full dimensionality of a neural state space is equal to the number of neurons, correlations among neurons typically cause dynamics to occur within a subspace of lower dimensionality (Ebitz and Hayden, 2021; Cunningham and Yu, 2014). Population activity associated with each task rule might not only follow distinct trajectories, but could also occur within different neural subspaces. To test this, we calculated the overlap between the subspaces associated with tHit and tCR trials (Raposo et al., 2014; Elsayed et al., 2016; Russo et al., 2020; Figure 4d; see Materials and methods). We expect that, if tHit and tCR trial activity occupies largely overlapping subspaces, then the neural dimensions capturing most of the tHit activity will also explain much of the tCR activity (Figure 4d, middle). Conversely, if they occupy largely distinct subspaces, then the dimensions capturing most of the tHit activity will explain little of the tCR activity (Figure 4d, right). For each session, tHit trials were divided randomly into equally sized ‘reference’ and ‘control’ groups. The reference tHit trials were then used to perform a PC analysis (PCA; using data 0–150 ms from stimulus onset; 10 ms bins). We projected activity from tCR trials and from the control tHit trials into the space of the top three PCs obtained from the reference group PCA, then calculated and normalized their variance explained (Materials and methods). For S1, S2, MM, and ALM, subspace overlaps for tCR trials were significantly lower than the corresponding subspace overlaps for the control tHit trials (Figure 4e, purple vs gray symbols; tCR – control tHit: S1 [–0.23], 8 sessions, p=0.0016; S2 [–0.23], 7 sessions, p=0.0086; MM [–0.36], 5 sessions, p =<0.001; ALM [–0.35], 11 sessions, p< 0.001, paired t-test). This finding suggests that different neural subspaces were used for processing tactile stimuli under each of the two rules, in both sensory and motor cortical areas.
 
@@ -78,7 +106,7 @@ We next asked if the rule-dependent separation of subspaces during stimulus deli
 
 Together, our results suggest that cortical populations are ‘pre-configured’ according to the current rule, such that an incoming sensory signal leads to distinct processing and ultimately distinct actions.
 
-## Choice coding dimensions change with task rule
+### Choice coding dimensions change with task rule
 
 Gating of sensory information involves changing how sensory information is represented and read out (Finkelstein et al., 2021). This can be achieved by shifting sensory and/or choice coding dimensions (CDs) in the population activity space (Mante et al., 2013; Ruff and Cohen, 2019). In the previous section, we showed that neural subspaces containing trial dynamics changed between the two task rules. We next asked whether stimulus and choice CDs within these subspaces also shifted with task rules. For each task rule, we estimated CDs that maximally discriminated the neural trajectories for different conditions (Li et al., 2016; Yang et al., 2022; Figure 4—figure supplement 1a–d; Materials and methods). Since mice rarely licked the wrong port for a given block (Figure 1b), right-lick and no-lick trials were used to obtain choice CDs for the respond-to-touch blocks, and left-lick and no-lick trials for the respond-to-light blocks. To assess whether stimulus and choice CDs changed with task rule, we calculated for each session the dot product between the CDs obtained from respond-to-touch and respond-to-light blocks. We then used the magnitude of this dot product as an unsigned measure of the relative orientations of the CDs. In ALM, the dot product magnitudes calculated between stimulus CDs for the two block types were not significantly different from those calculated after shuffling trial-type labels (Figure 4—figure supplement 1e; significance defined as non-overlap of 95% CIs). This suggests that the stimulus CD in a respond-to-touch block had an orientation unrelated to that in a respond-to-light block. In contrast, we found that S1, S2, and MM had stimulus CDs that were significantly aligned between the two block types (Figure 4—figure supplement 1e; magnitude of dot product between the respond-to-touch stimulus CDs and the respond-to-light stimulus CDs, mean ± 95% CI for true vs shuffled data: S1: 0.5 ± [0.34, 0.66] vs 0.21 ± [0.12, 0.34], 10 sessions; S2: 0.62 ± [0.43, 0.78] vs 0.22 ± [0.13, 0.31], 8 sessions; MM: 0.48 ± [0.38, 0.59] vs 0.24 ± [0.16, 0.33], 9 sessions; ALM: 0.33 ± [0.2, 0.47] vs 0.21 ± [0.13, 0.31], 13 sessions). In contrast, the choice CDs for the two block types were not aligned well in S1, S2, MM, or ALM (Figure 4—figure supplement 1f; magnitude of dot product between the respond-to-touch choice CD and the respond-to-light choice CD, mean ± 95% CI for true vs shuffled data: S1: 0.28 ± [0.15, 0.43] vs 0.21 ± [0.12, 0.33], 10 sessions; S2: 0.22 ± [0.11, 0.33] vs 0.21 ± [0.13, 0.32], 8 sessions; MM: 0.22 ± [0.13, 0.33] vs 0.22 ± [0.14, 0.3], 9 sessions; ALM: 0.27 ± [0.16, 0.39] vs 0.21 ± [0.13, 0.31], 13 sessions).
 
@@ -86,15 +114,35 @@ Choice CDs were obtained from right-lick and no-lick trials in respond-to-touch 
 
 Overall, these results suggest that the different subspaces for tactile processing under the two rules result at least in part from changes in choice CDs.
 
-## Pre-stimulus states in motor cortex track behavioral rule switches
+### Pre-stimulus states in motor cortex track behavioral rule switches
 
 Task rules switched multiple (three to five) times in each behavioral session. Mice detected a rule switch either through trial and error during the first few trials after the switch, or when a drop of water from the correct reward port was given on the 9th trial (which served as a cue to ensure that mice switched by this point; Figure 1b). The probabilities of right-licks and left-licks showed that the mice switched their motor responses during block transitions depending on task rules (Figure 5a, mean ± 95% CI across 12 mice). We used the first hit trial as the mark of a successful behavioral switch and found that mice switched before or immediately after the cue (Figure 5b, total number of block switches: respond-to-touch: 88 switches, respond-to-light: 91 switches). To analyze how pre-stimulus states changed over the course of a rule transition, we defined a ‘transition period’ that spanned from the first trial after a block switch until the first hit trial of the new block. In addition, we divided each transition period into ‘early’ and ‘late’ parts based on the occurrence of the first false alarm trial of the new block (Figure 5c). We considered the first false alarm trial to be the point at which the mouse first received feedback to indicate that a block change had occurred.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/92620/elife-92620-fig5-v1.jpg)
+
+**Figure 5.:** (a) Probabilities of right-licks (blue) and left-licks (red) during block transitions (left panel: respond-to-light → respond-to-touch transitions; right panel: respond-to-touch → respond-to-light transitions). Mean ± 95% CI across 12 mice. (b) Histogram showing the distribution of the trial number of the first hit after block switch. Most first hits in respond-to-touch (left) and respond-to-light (right) blocks occurred before or immediately after the switch cue (dashed line). (c) Schematic of rule transition in the cross-modal selection task. A transition period was defined as spanning from the first trial after the block switch until the first hit trial of that block. ‘Early’ and ‘late’ transitions were separated by the first false alarm trial of that block. (d) Fraction of trials classified as coming from a respond-to-touch block based on the pre-stimulus population state, for trials occurring in different periods (see c) relative to respond-to-touch → respond-to-light transitions. For medial motor cortex (MM) (top row) and anterior lateral motor cortex (ALM) (bottom row), progressively fewer trials were classified as coming from the respond-to-touch block as analysis windows shifted later relative to the rule transition. Kendall’s tau (rank correlation): MM: –0.39, 9 sessions; ALM: –0.29, 13 sessions. Left panels: individual sessions, right panels: mean ± 95% CI. Dashed lines are chance levels (0.5). (e) Same as (d) but for respond-to-light → respond-to-touch transitions. Kendall’s tau: MM: 0.37, 9 sessions; ALM: 0.27, 13 sessions.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/92620/elife-92620-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Fraction of trials classified as coming from a respond-to-touch block based on the pre-stimulus population state, for trials occurring in different periods (see Figure 5c) relative to respond-to-touch → respond-to-light transitions. Top row: S1; bottom row: S2. Left panels: individual sessions; right panels: mean ± 95% CI across 10 (S1) or 8 (S2) sessions. Kendall’s tau (rank correlation): S1: –0.16; S2: –0.15. (b) Same as (a) but for respond-to-light → respond-to-touch transitions. Kendall’s tau: S1: 0.21; S2: 0.25.
+
 We hypothesized that the behavioral change that marked a successful switch in rule application would be accompanied by a neural change. Specifically, that the pre-stimulus population state would progress from that typical of the prior type of block to that typical of the new type of block in parallel with the behavioral shift. To test this, we trained an LDA classifier to discriminate respond-to-touch block and respond-to-light block trials using pre-stimulus neural activity. We used 90% of the correct trials as training data and tested classifier performance on the held-out 10% of correct trials (Figure 5d and e). Using our ‘transition period’ definition as described above, we tested classifier performance on ‘early’ transition and ‘late’ transition trials (Figure 5c). For respond-to-touch to respond-to-light block transitions, the fractions of trials classified as respond-to-touch for MM and ALM decreased progressively over the course of the transition (Figure 5d; rank correlation of the fractions calculated for each of the separate periods spanning the transition, Kendall’s tau, mean ±95% CI: MM: –0.39 ± [–0.67,–0.11], 9 sessions, ALM: –0.29 ± [–0.54,–0.04], 13 sessions; criterion to be considered significant: 95% CI on Kendall’s tau did not include 0). Similarly, the fractions of trials classified as respond-to-touch increased progressively over the course of transitions from respond-to-light to respond-to-touch blocks (Figure 5e; Kendall’s tau, mean ± 95% CI: MM: 0.37 ± [0.07, 0.63], 9 sessions, ALM: 0.27 ± [0.03, 0.49], 13 sessions). Accuracies for classification of trials by block type based on S1 and S2 activity were uniformly poor and showed no clear trends across block transitions (Figure 5—figure supplement 1; mean ± 95% CI on Kendall’s tau for respond-to-touch → respond-to-light transitions: S1: –0.16 ± [–0.43, 0.1], 10 sessions, S2: –0.15 ± [–0.54, 0.21], 8 sessions; for respond-to-light → respond-to-touch transitions: S1: 0.21 ± [–0.07, 0.5], 10 sessions, S2: 0.25 ± [–0.17, 0.63], 8 sessions). Together, these results indicate that the pre-stimulus states of neural populations in MM and ALM shifted over the course of block transitions in a manner commensurate with the behavioral shift in rule application.
 
-## Disruption of pre-stimulus motor cortical state impairs rule-dependent tactile detection
+### Disruption of pre-stimulus motor cortical state impairs rule-dependent tactile detection
 
 So far, we have shown that pre-stimulus neural population states in the somatosensory and motor cortical areas differed between the two task rules. This suggests that pre-stimulus activity may play a critical role in our task. To test this, we bilaterally inhibited the different cortical areas shortly before stimulus onset via optogenetic activation of parvalbumin-positive (Pvalb) GABAergic neurons (Guo et al., 2014; Sachidhanandam et al., 2013; Figure 6a, middle panel; –0.8 to 0 s from stimulus onset). Additionally, we included two other areas of the dorsal cortex, the anteromedial part of the motor cortex (AMM) and the posterior parietal cortex (PPC). We recorded from AMM in our cross-modal sensory selection task and observed visually evoked activity (Figure 1—figure supplement 1i–k), suggesting that AMM may play an important role in rule-dependent visual processing. PPC contributes to multisensory processing (Mohan et al., 2018; Olcese et al., 2013; Song et al., 2017) and sensory-motor integration (Le Merre et al., 2018; Funamizu et al., 2016; Gallero-Salas et al., 2021; Goard et al., 2016; Harvey et al., 2012; Mohan et al., 2019). Therefore, we wanted to test the roles of these areas in our cross-modal sensory selection task. Finally, we also performed negative control (sham) sessions that were identical except that the optogenetic light path was obstructed.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/92620/elife-92620-fig6-v1.jpg)
+
+**Figure 6.:** (a) Schematic of inhibition conditions for stimulus trials. Sessions comprised 80% stimulus trials and 20% laser-only trials (see h). In 15% of the stimulus trials, optogenetic inhibition occurred before tactile or visual stimuli (middle, –0.8 to 0 s from stimulus onset) to suppress pre-stimulus activity in the targeted cortical area. In another 15% of stimulus trials, optogenetic inhibition began simultaneously with the stimulus onset (right, 0–2 s from stimulus onset) in order to suppress sensory-evoked activity. (b–d) Changes in detection sensitivity for tactile stimuli during respond-to-touch blocks in the cross-modal selection task when each cortical area was optogenetically inhibited. For pre-stimulus-onset inhibition (c), detection sensitivity decreased when medial motor cortex (MM) and anterior lateral motor cortex (ALM) but not S1 and S2 were suppressed. For post-stimulus-onset inhibition (d), the detection sensitivity decreased when sensory and motor cortical regions were suppressed. S1/S2: 4 mice, 10 sessions; MM: 4 mice, 11 sessions; ALM: 4 mice, 10 sessions. Sham: 7 mice, 28 sessions. AMM: anteromedial motor cortex, 7 mice, 21 sessions. PPC: posterior parietal cortex, 7 mice, 21 sessions. (e–g) Same as (b–d) but for a simple tactile detection task (not cross-modal selection task). Detection sensitivity for tactile stimuli was reduced when the sensory (S1 and S2) and motor (MM and ALM) cortical areas were inhibited during the post-stimulus-onset window (g) but not during the pre-stimulus-onset window (f). Sham: 5 mice, 9 sessions; S1/S2: 3 mice, 3 sessions; MM: 3 mice, 5 sessions; ALM: 3 mice, 4 sessions; AMM: 3 mice, 4 sessions; PPC: 3 mice, 4 sessions. (h) Schematic of inhibition conditions for ‘laser-only’ trials. The probability of licking during the response window (0–2 s from laser offset) was compared with the probability of licking during the intertrial interval (ITI, –2 to 0 s from laser onset). (i) Changes in the probability of right licks within the laser-only trials during respond-to-touch blocks in the cross-modal selection task. (j) Changes in the probability of right licks within the laser-only trials in the simple tactile detection task. Error bars show bootstrap 95% CI. Criterion to be considered significant: 95% CI did not include 0.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/92620/elife-92620-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Schematic of inhibition within tactile stimulus trials during respond-to-touch blocks in the cross-modal selection task. (b) Changes in tactile hit rate when each cortical area was optogenetically inhibited before stimulus onset. The tactile hit rate is the probability of right licks for tactile stimuli during respond-to-touch blocks. S1/S2: 4 mice, 10 sessions; medial motor cortex (MM): 4 mice, 11 sessions; anterior lateral motor cortex (ALM): 4 mice, 10 sessions. Sham: 7 mice, 28 sessions. Anteromedial motor cortex (AMM): 7 mice, 21 sessions. Posterior parietal cortex (PPC): 7 mice, 21 sessions. Means± 95% CI from bootstrapping. Criterion to be considered significant: 95% CI did not include 0. (c) Same as (b) but for inhibition after stimulus onset. (d) Schematic of inhibition within visual stimulus trials during respond-to-touch blocks in the cross-modal selection task. (e) Changes in visual false alarm rate when each cortical area was optogenetically inhibited before stimulus onset. The false alarm rate is the probability of right licks for visual stimuli during respond-to-touch blocks. (f) Same as (e) but for inhibition after stimulus onset. (g) Schematic of inhibition within tactile stimulus trials in the tactile detection task. (h) Changes in tactile hit rate when each cortical area was optogenetically inhibited before stimulus onset. The tactile hit rate is the probability of right licks for tactile stimuli in the tactile detection task. Sham: 5 mice, 9 sessions; S1/S2: 3 mice, 3 sessions; MM: 3 mice, 5 sessions; ALM: 3 mice, 4 sessions; AMM: 3 mice, 4 sessions; PPC: 3 mice, 4 sessions. Means ± 95% CI from bootstrapping. (i) Same as (h) but for inhibition after stimulus onset. (j) Schematic of inhibition when there was no stimulus in the tactile detection task. (k) Changes in false alarm rate when each cortical area was optogenetically inhibited before trial onset. The false alarm rate is the probability of right licks when there was no stimulus. (l) Same as (k) but for inhibition after trial onset.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/92620/elife-92620-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (a) Schematic of inhibition within visual stimulus trials during the respond-to-light blocks in the cross-modal selection task. (b) Changes in visual hit rate when each cortical area was optogenetically inhibited before stimulus onset. The visual hit rate is the probability of left licks for visual stimuli during respond-to-light blocks. S1/S2: 4 mice, 10 sessions; MM: 4 mice, 11 sessions; anterior lateral motor cortex (ALM): 4 mice, 10 sessions. Sham: 7 mice, 28 sessions. Anteromedial motor cortex (AMM): 7 mice, 21 sessions. Posterior parietal cortex (PPC): 7 mice, 21 sessions. Means ± 95% CI from bootstrapping. Criterion to be considered significant: 95% CI did not include 0. (c) Same as (b) but for inhibition after stimulus onset. (d) Schematic of inhibition within tactile stimulus trials during respond-to-light blocks in the cross-modal selection task. (e) Changes in tactile false alarm rate when each cortical area was optogenetically inhibited before stimulus onset. The false alarm rate is the probability of left licks for tactile stimuli during respond-to-light blocks. (f) Same as (e) but for inhibition after stimulus onset. (g) Changes in detection sensitivity for visual stimuli when each cortical area was inhibited before stimulus onset. The detection sensitivity for visual stimuli was determined by the difference of visual hit rate and tactile false alarm rate during respond-to-light blocks. (h) Same as (g) but for inhibition after stimulus onset.
 
 We defined detection sensitivity for tactile stimuli as the difference between tHit rate and visual false alarm rate during the response-to-touch blocks. Tactile detection sensitivity was significantly decreased when MM and ALM but not S1 and S2 were inhibited during the pre-stimulus period (Figure 6c; criterion to be considered significant: 95% CI on Δ tactile sensitivity did not include 0; S1/S2: [–0.47, 0.08], 4 mice, 10 sessions; MM: [–0.65,–0.12], 4 mice, 11 sessions; ALM: [–0.68,–0.02], 4 mice, 10 sessions). This was primarily due to a reduction in the tHit rate (Figure 6—figure supplement 1b; 95% CI on Δ tHit rate: S1/S2 [–0.31, 0.01], 4 mice, 10 sessions; MM [–0.49,–0.15], 4 mice, 11 sessions; ALM [–0.46,–0.07], 4 mice, 10 sessions). Inhibition of S1, S2, MM, and ALM during a 2 s window starting at the time of the stimulus onset served as a positive control (Figure 6a, right panel). Consistent with previous studies (Guo et al., 2014; Le Merre et al., 2018), inhibition of these cortical areas after stimulus onset reduced detection sensitivity for tactile stimuli (Figure 6d; 95% CI on Δ tactile sensitivity: S1/S2 [–0.67,–0.08], 4 mice, 10 sessions; MM [–0.6,–0.34], 4 mice, 11 sessions; ALM [–0.55,–0.27], 4 mice, 10 sessions). Neither the negative control (sham) condition nor inhibition of AMM before stimulus onset showed an effect on the detection sensitivity for tactile stimuli (Figure 6c; sham: [–0.12, 0.13], 7 mice, 28 sessions; AMM [–0.19, 0.06], 7 mice, 21 sessions). Together, our results suggest that the pre-stimulus network activity states in MM and ALM play an important role in rule-dependent tactile processing.
 
@@ -134,15 +182,349 @@ Pre-stimulus activity in MM and ALM showed a strong dependence on the current ru
 
 ## Materials and methods
 
-## Mice
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Mus musculus, male and female)</td>
+      <td>PvalbCre: B6.129P2-Pvalbtm1(cre)Arbr/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>008069</td>
+      <td>Materials and methods &gt;Mice</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male and female)</td>
+      <td>Emx1Cre: B6.129S2-Emx1tm1(cre)Krj/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>005628</td>
+      <td>Materials and methods &gt;Mice</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male and female)</td>
+      <td>Ai32: B6.129S-Gt(ROSA)26Sortm32(CAG-COP4*H134R/EYFP)Hze/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>012569</td>
+      <td>Materials and methods &gt;Mice</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (M. musculus, male and female)</td>
+      <td>Slc32a1ChR2-EYFP: B6.Cg-Tg (Slc32a1-COP4*H134R/ EYFP)8Gfng/J</td>
+      <td>The Jackson Laboratory</td>
+      <td>014548</td>
+      <td>Materials and methods &gt;Mice</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>MathWorks</td>
+      <td>2019a</td>
+      <td>https://www.mathworks.com/help/matlab/release-notes-R2019a.html</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BControl software</td>
+      <td>Brody, Princeton University</td>
+      <td></td>
+      <td>https://brodywiki.princeton.edu/bcontrol/index.php?title=Main_Page</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Kilosort</td>
+      <td>Pachitariu et al., 2016; Pachitariu et al., 2024</td>
+      <td>Kilosort 1</td>
+      <td>https://github.com/MouseLand/Kilosort</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Isoflurane</td>
+      <td>Penn Veterinary</td>
+      <td>VED1360CS</td>
+      <td>Materials and methods &gt;Surgery</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dental acrylic</td>
+      <td>Jet Repair Acrylic</td>
+      <td>L25-0335</td>
+      <td>Materials and methods &gt;Surgery</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Clear adhesive luting cement (C&amp;B Metabond)</td>
+      <td>Parkell</td>
+      <td>S399</td>
+      <td>Materials and methods &gt;Surgery</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Silicone elastomer</td>
+      <td>World Precision Instruments</td>
+      <td>KWIK-CAST</td>
+      <td>Materials and methods &gt;Surgery</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dil Stain</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>D282</td>
+      <td>Materials and methods &gt;Ephy.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Piezo actuator</td>
+      <td>Piezo Systems</td>
+      <td>D220-A4-203YB</td>
+      <td>Materials and methods &gt;Behav. tasks</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Piezo controller</td>
+      <td>Thorlabs</td>
+      <td>MDTC93B</td>
+      <td>Materials and methods &gt;Behav. tasks</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LED</td>
+      <td>Thorlabs</td>
+      <td>M470F1</td>
+      <td>Materials and methods &gt;Behav. tasks</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Optic fiber</td>
+      <td>Thorlabs</td>
+      <td>M43L01, TM200FL1B</td>
+      <td>Materials and methods &gt;Behav. tasks and Opto. inhibition</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Density filter</td>
+      <td>Thorlabs</td>
+      <td>NE530B</td>
+      <td>Materials and methods &gt;Behav. tasks</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Stereotaxic apparatus (Mouse Gas Anesthesia Head Holder)</td>
+      <td>David Kopf Instruments</td>
+      <td>Model 923-B</td>
+      <td>Materials and methods &gt;Surgery</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Silicon probe</td>
+      <td>Cambridge NeuroTech</td>
+      <td>ASSY-77 H3</td>
+      <td>Materials and methods &gt;Ephy.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Intan recording system</td>
+      <td>Intan Technologies</td>
+      <td>RHD2000</td>
+      <td>Materials and methods &gt;Ephy.</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Laser, 473 nm</td>
+      <td>UltraLasers</td>
+      <td>DHOM-L-473–200 mW</td>
+      <td>Materials and methods &gt;Opto. inhibition</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Acousto-optic modulator</td>
+      <td>QuantaTech</td>
+      <td>MTS110-A3-VIS</td>
+      <td>Materials and methods &gt;Opto. inhibition</td>
+    </tr>
+  </tbody>
+</table>
+
+### Mice
 
 All procedures were performed in accordance with protocols approved by the Johns Hopkins University Animal Care and Use Committee (M018M187 and M021M195). Twelve mice (8 male, 4 female) were obtained by crossing Pvalbcre lines (Hippenmeyer et al., 2005) (Jackson Labs: 008069) with Ai32 lines (Madisen et al., 2012) (Jackson Labs: 012569). Seven Pvalbcre; Ai32 mice (5 male, 2 female) were trained to perform the cross-modal selection task and included in behavioral and optogenetic inhibition experiments. Five Pvalbcre; Ai32 mice (3 male, 2 female) were trained to perform the tactile detection task and included in optogenetic inhibition experiments. Four male mice included in behavioral experiments were obtained by crossing Emx1cre mice (Gorski et al., 2002) (Jackson Labs: 005628) with Ai32 mice. Two male mice included in behavioral experiments were heterozygous Slc32a1ChR2-EYFP (Jackson Labs: 014548) (Zhao et al., 2011). Mice ranged in age from 2 to 5 months at the start of training. Mice were housed in a vivarium with a reverse light-dark cycle (12 hr each phase), and were singly housed after surgery and during behavioral experiments. Details of assignment to different experimental conditions are listed in Table 1.
 
-## Behavioral tasks
+**Table 1.**
+ Experimental subjects.Tabulated metadata for each mouse, including appearances in each figure.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Animal ID</th>
+      <th>Genotype</th>
+      <th>Sex</th>
+      <th>Date of Birth</th>
+      <th>Test Session Dates</th>
+      <th>Figure Appearances</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>EF0147</td>
+      <td>Emx1cre; Ai32</td>
+      <td>male</td>
+      <td>180627</td>
+      <td>190204–190,206</td>
+      <td>Figure 1d, e, g and h; Figure 2b–f; Figure 3b–e; Figure 4; Figure 5; Figure 1—figure supplement 1h, k; Figure 1—figure supplement 2; Figure 3—figure supplement 1; Figure 4—figure supplement 1; Figure 5—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>EF0148</td>
+      <td>Emx1cre; Ai32</td>
+      <td>male</td>
+      <td>180627</td>
+      <td>190228–190,305</td>
+      <td>Figure 1d, e, g and h; Figure 2b–f; Figure 3b–e; Figure 4; Figure 5; Figure 1—figure supplement 1c, i, k; Figure 1—figure supplement 2; Figure 3—figure supplement 1; Figure 4—figure supplement 1; Figure 5—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>EF0150</td>
+      <td>Emx1cre; Ai32</td>
+      <td>male</td>
+      <td>180627</td>
+      <td>190223–190,318</td>
+      <td>Figure 1d, e, g and h; Figure 2b–f; Figure 3b–e; Figure 4; Figure 5; Figure 1—figure supplement 1j, k; Figure 1—figure supplement 2; Figure 3—figure supplement 1; Figure 4—figure supplement 1; Figure 5—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>EF0151</td>
+      <td>Emx1cre; Ai32</td>
+      <td>male</td>
+      <td>180627</td>
+      <td>190506</td>
+      <td>Figure 1; Figure 2b–f; Figure 3b–e; Figure 4; Figure 5; Figure 1—figure supplement 1g, k; Figure 1—figure supplement 2; Figure 3—figure supplement 1; Figure 4—figure supplement 1; Figure 5—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>YT053</td>
+      <td>Pvalbcre; Ai32</td>
+      <td>male</td>
+      <td>180211</td>
+      <td>181115–181,207</td>
+      <td>Figure 6c, d, i; Figure 6—figure supplement 1b, c, e, f; Figure 6—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>JL005</td>
+      <td>Slc32a1ChR2-EYFP</td>
+      <td>male</td>
+      <td>181121</td>
+      <td>190716–190,723</td>
+      <td>Figure 1d, e, g and h; Figure 2b–f; Figure 3b–e; Figure 4; Figure 5; Figure 1—figure supplement 1e, k; Figure 1—figure supplement 2; Figure 3—figure supplement 1; Figure 4—figure supplement 1; Figure 5—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>YT071</td>
+      <td>Slc32a1ChR2-EYFP</td>
+      <td>male</td>
+      <td>180726</td>
+      <td>190721–190,722</td>
+      <td>Figure 1d, e, g and h; Figure 2; Figure 3b–e; Figure 4; Figure 5; Figure 1—figure supplement 1f, k; Figure 1—figure supplement 2; Figure 3—figure supplement 1; Figure 4—figure supplement 1; Figure 5—figure supplement 1</td>
+    </tr>
+    <tr>
+      <td>YT080</td>
+      <td>Pvalbcre; Ai32</td>
+      <td>male</td>
+      <td>181112</td>
+      <td>190503–190514; 190827–190,828</td>
+      <td>Figure 1d, e, g and h; Figure 2b–f; Figure 3b–e; Figure 4; Figure 5; Figure 6c, d, i; Figure 1—figure supplement 1k; Figure 1—figure supplement 2; Figure 3—figure supplement 1; Figure 4—figure supplement 1; Figure 5—figure supplement 1; Figure 6—figure supplement 1b, c, e, f; Figure 6—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>YT081</td>
+      <td>Pvalbcre; Ai32</td>
+      <td>male</td>
+      <td>181112</td>
+      <td>190418–190505; 190826–190,908</td>
+      <td>Figure 1d, e, g and h; Figure 2b–f; Figure 3b–e; Figure 4; Figure 5; Figure 6c, d and i; Figure 1—figure supplement 1b, k; Figure 1—figure supplement 2; Figure 3—figure supplement 1; Figure 4—figure supplement 1; Figure 5—figure supplement 1; Figure 6—figure supplement 1b, c, e, f; Figure 6—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>YT083</td>
+      <td>Pvalbcre; Ai32</td>
+      <td>female</td>
+      <td>190401</td>
+      <td>191205–200108; 200123</td>
+      <td>Figure 1d, e, g and h; Figure 2b–f; Figure 3b–e; Figure 4; Figure 5; Figure 6c, d and i; Figure 1—figure supplement 1k; Figure 1—figure supplement 2; Figure 3—figure supplement 1; Figure 4—figure supplement 1; Figure 5—figure supplement 1; Figure 6—figure supplement 1b, c, e, f; Figure 6—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>YT084</td>
+      <td>Pvalbcre; Ai32</td>
+      <td>female</td>
+      <td>190620</td>
+      <td>191020–200103; 200124–200,210</td>
+      <td>Figure 1d, e, g and h; Figure 2b–f; Figure 3b–e; Figure 4; Figure 5; Figure 6c, d and i; Figure 1—figure supplement 1a, k; Figure 1—figure supplement 2; Figure 3—figure supplement 1; Figure 4—figure supplement 1; Figure 5—figure supplement 1; Figure 6—figure supplement 1b, c, e, f; Figure 6—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>YT085</td>
+      <td>Pvalbcre; Ai32</td>
+      <td>male</td>
+      <td>190620</td>
+      <td>191205–200108; 200308–200,320</td>
+      <td>Figure 1d, e, g and h; Figure 2b–f; Figure 3b–e; Figure 4; Figure 5; Figure 6c, d and i; Figure 1—figure supplement 1d, k; Figure 1—figure supplement 2; Figure 3—figure supplement 1; Figure 4—figure supplement 1; Figure 5—figure supplement 1; Figure 6—figure supplement 1b, c, e, f; Figure 6—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>YT086</td>
+      <td>Pvalbcre; Ai32</td>
+      <td>male</td>
+      <td>190620</td>
+      <td>191205–200110; 200314–200,320</td>
+      <td>Figure 1d, e, g and h; Figure 2b–f; Figure 3b–e; Figure 4; Figure 5; Figure 6c, d and i; Figure 1—figure supplement 1b, k; Figure 1—figure supplement 2; Figure 3—figure supplement 1; Figure 4—figure supplement 1; Figure 5—figure supplement 1; Figure 6—figure supplement 1b, c, e, f; Figure 6—figure supplement 2</td>
+    </tr>
+    <tr>
+      <td>YT091</td>
+      <td>Pvalbcre; Ai32</td>
+      <td>male</td>
+      <td>200830</td>
+      <td>201124–201,211</td>
+      <td>Figure 6f, g, j; Figure 6—figure supplement 1h, i, k, l</td>
+    </tr>
+    <tr>
+      <td>YT092</td>
+      <td>Pvalbcre; Ai32</td>
+      <td>female</td>
+      <td>200830</td>
+      <td>201126–201,214</td>
+      <td>Figure 6f, g, j; Figure 6—figure supplement 1h, i, k, l</td>
+    </tr>
+    <tr>
+      <td>YT093</td>
+      <td>Pvalbcre; Ai32</td>
+      <td>male</td>
+      <td>200919</td>
+      <td>210102–210,106</td>
+      <td>Figure 6f, g, j; Figure 6—figure supplement 1h, i, k, l</td>
+    </tr>
+    <tr>
+      <td>YT094</td>
+      <td>Pvalbcre; Ai32</td>
+      <td>male</td>
+      <td>200919</td>
+      <td>201228–210,103</td>
+      <td>Figure 6f, g, j; Figure 6—figure supplement 1h, i, k, l</td>
+    </tr>
+    <tr>
+      <td>YT095</td>
+      <td>Pvalbcre; Ai32</td>
+      <td>female</td>
+      <td>200919</td>
+      <td>201230–210,116</td>
+      <td>Figure 6f, g, j; Figure 6—figure supplement 1h, i, k, l</td>
+    </tr>
+  </tbody>
+</table>
+
+### Behavioral tasks
 
 All behavioral experiments were conducted with head-fixed mice during the dark phase. Behavioral apparatus was controlled by BControl software (C. Brody, Princeton University). Four to 7 days after a headpost implantation and 7–14 days before behavioral training, mice were allowed 1 ml of water daily until reaching ~80% of their starting body weight. On training days, mice were allowed to perform until sated (~1 hr/day) and were weighed before and after each session to determine the amount of water consumed. Additional water was given if mice consumed <0.3 ml of water in order to maintain a stable body weight. On days when their behavior was not tested, they received 1 ml of water.
 
-## Cross-modal sensory selection task
+### Cross-modal sensory selection task
 
 The cross-modal sensory selection training consists of two stages. Mice were first trained to perform tactile and visual detection separately, then trained on the cross-modal selection task where tactile and visual stimuli were randomly interleaved.
 
@@ -156,13 +538,13 @@ In an initial stage of cross-modal selection training (~7 sessions), a drop of w
 
 Behavioral sessions lasted until mice were sated. To ensure stable engagement, the last 20 trials of each session were removed from further analysis. In addition, sessions were omitted from analysis if overall performance was <60% correct, at least one of block performances (respond-to-touch or respond-to-light blocks) was <55% correct, or at least one of hit rates (tactile or visual hits) was <35%. Three sessions in total were removed for these reasons (from two mice).
 
-## Tactile detection task
+### Tactile detection task
 
 Head-fixed mice were trained to perform a Go/NoGo tactile detection task. On Go trials, the whisker was deflected (0.15 s sinusoidal deflections at 20 Hz, ~600 degrees/s). If mice licked the right reward port following a tactile stimulus, a drop of water was released and it was scored as a hit trial. If mice failed to respond to a tactile stimulus, it was scored as a miss trial. On NoGo trials, the target whisker was not deflected. If mice licked during the answer period, it was scored as a false alarm. If mice withheld licking, it was scored as a correct rejection. Go and NoGo trials were randomly interleaved (subject to a limit of 4 consecutive trials of the same type), and no trial-start cue was presented. The answer, grace, and censor periods were as described above for the cross-modal selection task. Tactile stimuli of the tactile detection task were slightly weaker compared with the cross-modal selection task in order to control task difficulties by making behavioral performance similar (~75% correct).
 
 Similar to the cross-modal selection task, the last 20 trials in each session were excluded, and sessions with performance <60% correct or tHit rate <35% were removed from subsequent analysis. Five Pvalbcre; Ai32 mice performed the tactile detection task during inhibition experiments.
 
-## Surgery
+### Surgery
 
 Prior to behavioral testing, mice were implanted with clear-skull caps (Guo et al., 2014) and metal headposts designed to expose a large area of the dorsal surface of the skull. During surgery, mice were anesthetized under isoflurane (1–2% in O2; Surgivet) and mounted in a stereotaxic apparatus (David Kopf Instruments) with a thermal blanket (Harvard Apparatus). Mice were given a subcutaneous injection of Marcaine or Lidocaine for local analgesia and an intraperitoneal injection of Ketoprofen to reduce inflammation. The scalp and periosteum over the dorsal surface of the skull were removed. To expose S2 on the left hemisphere, the left temporal muscle was detached and the bone ridge at the temporal-parietal junction was thinned using a dental drill. Headposts were fixed to the skull over the lambda structure using clear adhesive luting cement (C&B Metabond Quick Adhesive Cement System; Parkell). A thin layer of clear cement followed by an additional layer of cyanoacrylate glue (Krazy Glue) was applied to the entire surface of the exposed skull, leaving it largely transparent. To protect the clear skull from scratching, a silicone elastomer (Kwik-Cats) was applied prior to optogenetic experiments.
 
@@ -170,7 +552,7 @@ Intrinsic signal imaging (ISI) was used to guide the whisker parts of S1 and S2 
 
 For silicon probe recording, a small craniotomy (~1 mm in diameter) over the recording site (always on the left hemisphere) was made (S1 and S2 determined by ISI; MM: 1.5 mm anterior, 1.0 mm lateral; ALM: 2.5 mm anterior, 1.5 mm lateral to bregma). The dental acrylic and skull was thinned using a dental drill and the remaining bone was removed with a tungsten needle or forceps. A separate, smaller craniotomy (~0.6 mm in diameter) on the right hemisphere was made for implantation of a ground screw (0.6 mm anterior, 3.0 mm lateral to bregma; S1 trunk region). Additional craniotomies were usually made in new locations after finishing recordings in previous ones (12 mice; 1–4 recording sites per mouse).
 
-## Electrophysiology and data preprocessing
+### Electrophysiology and data preprocessing
 
 Linear 64-channel probes (H3, Cambridge NeuroTech) were coated with DiI (saturated) or DiD (5–10 mg/ml) to histologically verify the site of recording post hoc. The silicon probe was inserted into the cortex either vertically (for MM and ALM) or at ~40 degrees from vertical (for S1 and S2). After probe insertion, the brain was covered with a layer of 1.5% agarose and ACSF and was left for ~10 min prior to recording.
 
@@ -178,7 +560,7 @@ Neural signals and behavioral timestamps were recorded using an Intan system (RH
 
 For analyses about stimulus-evoked responses, neural spike rates were calculated in 10 ms bins and smoothed with a Gaussian kernel (50 ms). For analyses about pre-stimulus activity, neural spike rates were calculated in 100 ms bins without smoothing. Spike rates of simultaneously recorded neurons were normalized for all population-level analyses including LDA and PCA. We used soft normalization to make activity in a roughly unity range and to reduce the impact of units with low firing rate (normalized response = (response–mean(response))/(range(response)+5)) (Churchland et al., 2012; Russo et al., 2020). In addition, to minimize movement effects on neural activity during the pre-stimulus window (−1 to 0 s from stimulus onset), trials with licking occurring in this window were removed (~25%).
 
-## Optogenetic inhibition
+### Optogenetic inhibition
 
 Pvalbcre; Ai32 mice implanted with clear-skull caps were given optogenetic inhibition experiments after behavioral task training (cross-modal selection or tactile detection). Laser stimuli (473 nm; MBL-III-473-100, Ultralasers) were directed to the brain via optic fibers (200 μm diameter, 0.22 NA; TM200FL1B, Thorlabs) positioned over (~2 mm above) the cortical areas bilaterally (8–10 mW each side). The intensity of laser stimuli was controlled by an acousto-optic modulator (MTS110-A3-VIS, QuantaTech). For S1 and S2, the left whisker areas were guided by ISI (as described above) and the right whisker areas were determined as the symmetric positions. Other targeted areas on the dorsal cortex included MM (1.5 mm anterior, 1.0 mm lateral to bregma), ALM (2.5 mm anterior, 1.5 mm lateral), AMM (2.5 mm anterior, 0.5 mm lateral), and PPC (1.94 mm posterior, 1.6 mm lateral). Sham sessions were identical to optogenetic inhibition sessions except that the dorsal cortex was covered by blackout cloth in order to not inhibit any brain areas. For each session, one of the cortical areas or the sham condition was randomly assigned for inhibition. A cone, blackout cloth and tape were used to shield the mouse’s eyes from scattered light due to the laser.
 
@@ -188,51 +570,95 @@ For the tactile detection task, laser stimuli were delivered in ~30% of trials. 
 
 Baseline behavioral performance was measured by trials without laser stimuli and used to determine if a session passed the criteria of good performance (as described in the Behavioral tasks section). In addition, sessions with laser catch rates >75% or >hit rates were removed from analysis because a high laser catch rate indicates that mice detected laser stimuli instead of tactile or visual stimuli (laser catch rate = 100*(# of laser-only trials in which licking occurred)/(# of laser-only trials total)).
 
-## Single-neuron discrimination analyses
+### Single-neuron discrimination analyses
 
-## ROC analysis
+#### ROC analysis
 
 ROC analysis was used to calculate how well trial-by-trial activity of a single neuron could discriminate certain conditions (e.g. tHit vs tCR). The AUC represents the performance of an ideal observer in discriminating trials based on these conditions (MATLAB ‘perfcurve’). For discriminability of touch-evoked activity between task rules (Figure 1h), tactile correct trials were split into tHit (respond-to-touch) and tCR (respond-to-light). The analysis window was the first 150 ms after stimulus onset to minimize any movement effects resulting from licking. A Bonferroni corrected 95% confidence interval for AUC was obtained by bootstrap. For each time bin (10 ms), if its 95% CI did not include the chance level (0.5), it was considered significant. We defined a unit as showing significant tHit-tCR selectivity when three consecutive time bins (>30 ms) of AUC values were significant.
 
 For discriminability of pre-stimulus activity between task rules (Figure 2c), correct trials were split based on block types (respond-to-touch: tHit and visual correct rejections; respond-to-light: visual hits and tCR). The analysis window was the 100 ms window before stimulus onset. For discriminability of pre-stimulus activity between stimulus types (Figure 2d), correct trials were split based on stimulus types rather than block types (tactile: tHit and tCR; visual: visual hits and visual correct rejections). For discriminability of sensory-evoked activity between stimulus types (Figure 2e), correct trials were split based on stimulus types, and the analysis window was the first 100 ms after stimulus onset rather than before stimulus onset. For Figure 2c–e, the analysis window was one time bin (100 ms). If the Bonferroni corrected 95% CI for this time bin did not include the chance level (0.5), it was considered significant.
 
-## PSTH-based permutation test
+#### PSTH-based permutation test
 
 To determine whether water reward affected touch-evoked activity in the cross-modal selection task, we compared the mean PSTHs for tHit and for tactile false alarms in which mice licked to the right water port following a tactile stimulus in the respond-to-light blocks (Figure 1c). For each neuron, the Euclidean distance between the mean PSTHs for tHit and tactile false alarms was calculated (0–250 ms from stimulus onset). We then performed a permutation test on whether this Euclidean distance was significantly different from zero (Foffani and Moxon, 2004; O’Connor et al., 2010). A p-value was then calculated using the distribution of resampled Euclidean distances. Significance was determined at the alpha = 0.05 level after Bonferroni correction for the number of neurons.
 
-## Population decoding analyses
+### Population decoding analyses
 
 We used LDA (MATLAB ‘fitcdiscr’) to measure how well population activity from simultaneously recorded neurons could decode (1) task rules (respond-to-touch vs respond-to-light) prior to stimulus delivery (−100 to 0 ms from the stimulus onset), (2) stimulus types (tactile vs visual stimuli) prior to stimulus delivery, and (3) stimulus types after stimulus onset (0–100 ms). All correct trials were used and classification accuracy was obtained using 10-fold cross-validation (Figure 3 and Figure 3—figure supplement 1c and d). In addition, SVM (Figure 3—figure supplement 1a; MATLAB ‘fitcsvm’) and Random Forests (Figure 3—figure supplement 1b; MATLAB ‘TreeBagger’ with 500 trees) were used to discriminate task rules prior to stimulus delivery. The shuffled data was generated by shuffling the labels for individual trials (e.g. block types).
 
 We also applied LDA to determine how the pre-stimulus states shifted during rule transitions (Figure 5 and Figure 5—figure supplement 1). We used 90% of the correct trials as training data for task rules and the held-out 10% of correct trials to classify trials as having come from respond-to-touch or respond-to-light blocks. We also separately classified trials occurring in the ‘early transition’ and ‘late transition’ periods as having come from one or the other of the block types.
 
-## Distance between neural trajectories
+### Distance between neural trajectories
 
 We calculated the distance between tHit and tCR trajectories to determine how these trajectories diverged (Figure 4a and b). For each session, we performed a PCA using the trial-averaged tHit and tCR population spike rate responses (−100 to 150 ms from stimulus onset). Population responses for individual tHit and tCR trials were projected onto the top three PC space. For each pair of tHit and tCR trials, the Euclidean distances between the neural states of tHit and tCR trajectories at each time point were calculated. The distances between tHit and tCR trajectories were averaged across these pairs in each session.
 
 To investigate the relationship between a difference in pre-stimulus activity and a difference in subsequent sensory-evoked activity, the distances between tHit and tCR trajectories from all recording sessions (total 40 sessions; S1 [10], S2 [8], MM [9], ALM [13]) were ranked based on the distances before stimulus delivery (−100 to 0 ms). The mean tHit-tCR distances after stimulus onset (0–150 ms) between the top and bottom 50% groups were compared using a permutation test (Figure 4c). Specifically, we calculated the Euclidean distance between the mean tHit-tCR distances for these two groups. The group labels were then randomly shuffled, and new mean tHit-tCR distances of the shuffled groups were obtained. The Euclidean distance between these shuffled mean tHit-tCR distances was calculated. This shuffling procedure was repeated 1000 times, and then the p-value was calculated (one-tailed; null hypothesis: no difference; distance ≥ 0).
 
-## Subspace overlap
+### Subspace overlap
 
 The subspace overlap between tHit and tCR trials was obtained through their variance alignment (Figure 4d–f). For each session, the trial-averaged tHit activity was used to perform a PCA (0–150 ms from stimulus onset). The trial-averaged tCR activity was projected onto the top three PC space (tCRtHit-subspace), and the variance explained was calculated. For normalization, a separated PCA was performed on the trial-averaged tCR activity, and its own (tCRtCR-subspace) variance explained was calculated. The subspace overlap was defined as the ratio of the variance explained of tCRtHit-subspace to the variance explained of tCRtCR-subspace. We chose the top three PCs because most of the variances of tHittHit-subspace (~90%) and tCRtCR-subspace (~85%) were captured.
 
 To test if the subspace for processing tactile signals significantly changed under different rules, we compared the subspace overlap between tHit and tCR trials with a control group. Specifically, we randomly assigned tHit trials into equal sized reference and control groups. The tCR and tHit control groups were projected to the PC space of the tHit reference group, and their subspace overlaps were compared (Figure 4e). To calculate the separation of subspaces prior to stimulus delivery, pre-stimulus activity in tCR trials (−100 to 0 ms from stimulus onset) was projected to the PC space of the tHit reference group and the subspace overlap was calculated. In this analysis, we used tHit activity during stimulus delivery (0–150 ms from stimulus onset) to obtain reliable PCs. In addition, the subspace overlap could be overestimated when there were only few neurons in a session (low dimensionality). To avoid this issue, sessions having less than 10 units were excluded from this analysis.
 
-## Stimulus and choice CDs
+### Stimulus and choice CDs
 
-For each session, n simultaneously recorded neurons created an n dimensional space. A CD is defined as an nx1 vector that maximally separates the neural trajectories for different conditions (Li et al., 2016; Yang et al., 2022). For example, to estimate a stimulus CD in respond-to-touch blocks, we used trial-averaged trajectories for tactile (xtactile = (xtactile-right-lick + xtactile-no-lick)/2) and visual (xvisual = (xvisual-right-lick + xvisual-no-lick)/2) trials and calculated their difference at each time point (νt = xtactile – xvisual). We then averaged νt during the analysis window (0–150 ms from stimulus onset) to obtain the stimulus CD.
+For each session, n simultaneously recorded neurons created an n dimensional space. A CD is defined as an nx1 vector that maximally separates the neural trajectories for different conditions (Li et al., 2016; Yang et al., 2022). For example, to estimate a stimulus CD in respond-to-touch blocks, we used trial-averaged trajectories for tactile (xtactile = (xtactile-right-lick + xtactile-no-lick)/2) and visual (xvisual = (xvisual-right-lick + xvisual-no-lick)/2) trials and calculated their difference at each time point ($ν$t = xtactile – xvisual). We then averaged $ν$t during the analysis window (0–150 ms from stimulus onset) to obtain the stimulus CD.
 
 In Figure 4—figure supplement 1, the trial types used to calculate stimulus and choice CDs were:
 
+<table>
+  <thead>
+    <tr>
+      <th>Figure a–f</th>
+      <th>Respond-to-touch blocks</th>
+      <th>Respond-to-light blocks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stimulus CD</td>
+      <td>Tactile (tactile-right-lick, tactile-no-lick)vs Visual (visual-right-lick, visual-no-lick)</td>
+      <td>Tactile (tactile-left-lick, tactile-no-lick)vs Visual (visual-left-lick, visual-no-lick)</td>
+    </tr>
+    <tr>
+      <td>Choice CD</td>
+      <td>Right-lick (tactile-right-lick, visual-right-lick) vs No-lick (tactile-no-lick, visual-no-lick)</td>
+      <td>Left-lick (tactile-left-lick, visual-left-lick)vs No-lick (tactile-no-lick, visual-no-lick)</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th>Figure g and h</th>
+      <th>Respond-to-touch blocks</th>
+      <th>Respond-to-light blocks</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Stimulus CD</td>
+      <td>Tactile (tactile-right-lick, tactile-left-lick)vs Visual (visual-right-lick, visual-left-lick)</td>
+      <td>Tactile (tactile-right-lick, tactile-left-lick)vs Visual (visual-right-lick, visual-left-lick)</td>
+    </tr>
+    <tr>
+      <td>Choice CD</td>
+      <td>Right-lick (tactile-right-lick, visual-right-lick) vs Left-lick (tactile-left-lick, visual-left-lick)</td>
+      <td>Right-lick (tactile-right-lick, visual-right-lick) vs Left-lick (tactile-left-lick, visual-left-lick)</td>
+    </tr>
+  </tbody>
+</table>
+
 To test if stimulus (choice) CDs changed with the task rules, we calculated the dot product between the stimulus (choice) CD in respond-to-touch blocks and the stimulus (choice) CD in respond-to-light blocks. The CDs here are unit vectors, so the magnitude of the dot product ranges from 0 (orthogonal) to 1 (aligned).
 
-## Stimulus sensitivity
+### Stimulus sensitivity
 
 For the cross-modal sensory selection task, the detection sensitivity for tactile stimuli was calculated as the difference of tHit rate and visual false alarm rate during the respond-to-touch blocks. The tHit rate was the probability of licking right in response to tactile stimuli, and the visual false alarm rate was the probability of licking right in response to visual stimuli. Correspondingly, the detection sensitivity for visual stimuli was determined by the difference of visual hit rate and tactile false alarm rate during the respond-to-light blocks. The visual hit rate was the probability of licking left in response to visual stimuli, and the tactile false alarm rate was the probability of licking left in response to tactile stimuli.
 
 For the tactile detection task, the detection sensitivity for tactile stimuli was calculated as the difference of hit rate and false alarm rate. The hit rate was the probability of licking in the stimulus trials (Go trials), and the false alarm rate was the probability of licking in the no-stimulus trials (NoGo trials).
 
-## Statistics
+### Statistics
 
 We report data as mean ± standard error of the mean (s.e.m.) except where noted. Statistical tests were two-tailed unless otherwise noted. We made the Bonferroni correction for multiple comparisons across neurons in each cortical area (Figures 1h and 2c–e).
 

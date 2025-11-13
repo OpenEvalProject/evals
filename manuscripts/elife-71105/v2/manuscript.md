@@ -30,7 +30,7 @@ We analyzed bacterial cluster sizes obtained from recent imaging-based studies o
 
 ## Results
 
-## Different bacterial species share a common family of broad cluster size distributions in the larval zebrafish intestine
+### Different bacterial species share a common family of broad cluster size distributions in the larval zebrafish intestine
 
 We combined and analyzed previously generated datasets of gut bacterial cluster sizes in larval zebrafish (Schlomann et al., 2018; Wiles et al., 2020). In these experiments, zebrafish were reared devoid of any microbes, that is ‘germ-free’, and then mono-associated with a single, fluorescently labeled bacterial strain (Figure 1A). After a 24 hr colonization period the complete intestines of live hosts were imaged with light sheet fluorescence microscopy (Keller et al., 2008; Parthasarathy, 2018; Figure 1B). Bacteria were identified in the images (Figure 1C) using a previously described image analysis pipeline (Jemielita et al., 2014; Schlomann et al., 2018). Single bacterial cells and multicellular aggregates were identified separately, and then the number of cells per multicellular aggregate was estimated by dividing the total fluorescence intensity of the aggregate by the mean intensity of single cells (Materials and methods).
 
@@ -40,17 +40,94 @@ We combined and analyzed previously generated datasets of gut bacterial cluster
 
 In total, we characterized eight different bacterial strains, summarized in Table 1. Six of the strains were isolated from healthy zebrafish (Stephens et al., 2016) and then engineered to express fluorescent proteins (Wiles et al., 2018), and two are genetically engineered knockout mutants of Vibrio ZWU0020, defective in motility (specifically, knockout of the two-gene operon encoding the polar flagellar motor, pomAB, referred to as ‘Δmot’) and chemotaxis (specifically, knockout of the histidine kinase cheA2, referred to as ‘Δche’), as described in reference (Wiles et al., 2020). The parent strain of these mutants, Vibrio ZWU0020, scarcely forms aggregates at all, existing primarily as single, highly motile cells (Wiles et al., 2016; Schlomann et al., 2019; Wiles et al., 2020), and so was excluded from this analysis. All strains are of the phylum Proteobacteria (Wiles et al., 2018). A table of all cluster sizes by sample is included in Figure 2—source data 1.
 
-We calculated for each bacterial strain the reverse cumulative distribution of cluster sizes, P(size>n) , denoting the probability that an intestinal aggregate will contain more than n bacterial cells. We computed P(size>n) separately for each animal (Figure 2, small circles) and also pooled the sizes from different animals colonized by the same bacterial strain (Figure 2, large circles). There is substantial variation across fish, but the pooled distributions exhibit a well-defined average of the individual distributions. We also computed binned probability densities (Figure 2—figure supplement 1), which show similar patterns, but focus our discussion on the cumulative distribution to circumvent technical issues related to bin sizes.
+We calculated for each bacterial strain the reverse cumulative distribution of cluster sizes, $P(size>n)$ , denoting the probability that an intestinal aggregate will contain more than $n$ bacterial cells. We computed $P(size>n)$ separately for each animal (Figure 2, small circles) and also pooled the sizes from different animals colonized by the same bacterial strain (Figure 2, large circles). There is substantial variation across fish, but the pooled distributions exhibit a well-defined average of the individual distributions. We also computed binned probability densities (Figure 2—figure supplement 1), which show similar patterns, but focus our discussion on the cumulative distribution to circumvent technical issues related to bin sizes.
 
-We find broad distributions of P(size>n) across all strains (Figure 2, bottom right panel). For comparison, for each strain we overlay a dashed line representing the power law distribution P(size>n)∼n-1. This P(size>n) is equivalent to a probability density of p⁢(n)∼n-2 since the latter is proportional to the derivative of the former. Each strain's cumulative distribution follows a similar power-law-like decay at low n, with an apparent exponent in the vicinity of -1, and then becomes shallower in a strain-dependent manner. For example, Aeromonas ZOR0002 has a quite straight distribution on a log-log plot (Figure 2, top row, middle column), while the distribution of Enterobacter ZOR0014 exhibits a plateau-like feature at large sizes (Figure 2, top row, right column). The mutant strains Vibrio ZWU0020 Δche and Δmot follow qualitatively similar distributions to the native strains (Figure 2, bottom row, left and middle columns).
+![Figure 2.](https://cdn.elifesciences.org/articles/71105/elife-71105-fig2-v2.jpg)
 
-We performed a sensitivity analysis and found that these two key features of the measured distributions—an initial power law-like decay with cumulative distribution exponent close to -1 and a strain-dependent plateau at large sizes—are robust to measurement error in enumeration of cluster sizes. For the initial decay of the distribution, the largest source of error is the misidentification of auto-fluorescent background as single cells. To assess the impact of our single-cell count uncertainty on the distribution, we fit a power law model to clusters sizes up to 100 cells two times: once including single cells and once considering only cells of size in the range 2–100 (Supplementary file 1, Materials and methods). In both fits we find cumulative distribution exponents consistent with −1 for most strains. The average exponent tended to decrease mildly when single cells were excluded from the fit (the distribution decayed more slowly), consistent with an over-estimation of the number of single cells, but the shifts were all within uncertainties. Estimates of distribution exponents from small sizes can easily be biased (Clauset et al., 2009), so we performed our sensitivity analysis with two different methods: a linear fit to logP(size>n) vs. log⁡n, and maximum likelihood estimation (Materials and methods). The maximum likelihood estimate gave higher values than line-fitting, but the shifts upon removing single cells were within uncertainties for both methods.
+**Figure 2.:** Reverse cumulative distributions, the probability that the cluster size is greater than $n$ as a function of $n$, for eight bacterial strains in larval zebrafish intestines. Small circles connected by lines represent the distributions constructed from individual fish. Large circles are from pooled data from all fish. The dashed line represents $P(size>n)∼n^{-1}$ and is a guide to the eye. Bottom right panel shows the pooled distributions for each strain as solid lines.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/71105/elife-71105-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Different bacterial species exhibit similar cluster size distributions. Probability densities for eight bacterial strains monoassociated in larval zebrafish intestines. Small circles connected by lines represent the distributions constructed for each fish. Large circles are the result of pooling together sizes from all fish. Dashed line represents $p⁢(n)∼n^{-2}$ and is a guide to the eye. Bottom right panel shows the pooled distributions for each strain as solid lines. Summary of data is given in Table 1.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/71105/elife-71105-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** Images of individual $z$-slices showing mild heterogeneity of fluorescence intensity within aggregates.Fluorescence intensity is mostly homogeneous within clusters, although small dark regions do occur. Three individual z slices of a fish colonized with Enterobacter are shown. The approximate gut boundary is outlined in orange. Dark regions within the cluster are noted with white arrows. The approximate location of the field of view within the animal is noted with a dashed black box on the fish cartoon.
+
+**Table 1.**
+ Summary of cluster data by bacterial strain.Each row corresponds to one of the bacterial strains included in this study. Entries include strain name, total number of fish colonized with that strain, total number of clusters identified across all fish, and the original publication that the data was pulled from.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Bacterial strain</th>
+      <th>Number of fish</th>
+      <th>Number of clusters</th>
+      <th>Source publication</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Aeromonas ZOR0001</td>
+      <td>6</td>
+      <td>445</td>
+      <td>Schlomann et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Aeromonas ZOR0002</td>
+      <td>6</td>
+      <td>1901</td>
+      <td>Schlomann et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Enterobacter ZOR0014</td>
+      <td>18</td>
+      <td>3597</td>
+      <td>Schlomann et al., 2018; Schlomann et al., 2019</td>
+    </tr>
+    <tr>
+      <td>Plesiomonas ZOR0011</td>
+      <td>3</td>
+      <td>223</td>
+      <td>Schlomann et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Pseudomonas ZWU0006</td>
+      <td>6</td>
+      <td>133</td>
+      <td>Schlomann et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Vibrio ZOR0036</td>
+      <td>6</td>
+      <td>2430</td>
+      <td>Schlomann et al., 2018</td>
+    </tr>
+    <tr>
+      <td>Vibrio ZWU0020 Δmot</td>
+      <td>11</td>
+      <td>5888</td>
+      <td>Wiles et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Vibrio ZWU0020 Δche</td>
+      <td>11</td>
+      <td>3551</td>
+      <td>Wiles et al., 2020</td>
+    </tr>
+  </tbody>
+</table>
+
+We find broad distributions of $P(size>n)$ across all strains (Figure 2, bottom right panel). For comparison, for each strain we overlay a dashed line representing the power law distribution $P(size>n)∼n^{-1}$. This $P(size>n)$ is equivalent to a probability density of $p⁢(n)∼n^{-2}$ since the latter is proportional to the derivative of the former. Each strain's cumulative distribution follows a similar power-law-like decay at low $n$, with an apparent exponent in the vicinity of -1, and then becomes shallower in a strain-dependent manner. For example, Aeromonas ZOR0002 has a quite straight distribution on a log-log plot (Figure 2, top row, middle column), while the distribution of Enterobacter ZOR0014 exhibits a plateau-like feature at large sizes (Figure 2, top row, right column). The mutant strains Vibrio ZWU0020 Δche and Δmot follow qualitatively similar distributions to the native strains (Figure 2, bottom row, left and middle columns).
+
+We performed a sensitivity analysis and found that these two key features of the measured distributions—an initial power law-like decay with cumulative distribution exponent close to -1 and a strain-dependent plateau at large sizes—are robust to measurement error in enumeration of cluster sizes. For the initial decay of the distribution, the largest source of error is the misidentification of auto-fluorescent background as single cells. To assess the impact of our single-cell count uncertainty on the distribution, we fit a power law model to clusters sizes up to 100 cells two times: once including single cells and once considering only cells of size in the range 2–100 (Supplementary file 1, Materials and methods). In both fits we find cumulative distribution exponents consistent with −1 for most strains. The average exponent tended to decrease mildly when single cells were excluded from the fit (the distribution decayed more slowly), consistent with an over-estimation of the number of single cells, but the shifts were all within uncertainties. Estimates of distribution exponents from small sizes can easily be biased (Clauset et al., 2009), so we performed our sensitivity analysis with two different methods: a linear fit to $logP(size>n)$ vs. $log⁡n$, and maximum likelihood estimation (Materials and methods). The maximum likelihood estimate gave higher values than line-fitting, but the shifts upon removing single cells were within uncertainties for both methods.
 
 For the large-size plateau, the existence of dim cells in the center of the aggregate, perhaps due to a state of low metabolic activity, would lead to an underestimate of total cluster size. Underestimating the size of large clusters would then result in a less extreme plateau; the plateaus we observe are therefore a lower bound. In cross-sections of large aggregates, we observe mostly homogeneous fluorescence, suggesting that this effect is mild, although small dark regions do occur (Figure 2—figure supplement 2). Whether these dark regions correspond to dead or inactive bacteria, mucus, or empty space, is not clear, although we note that small clumps of dead bacteria have been observed in expelled clusters via live/dead staining (Schlomann et al., 2019). Regardless of their origin, we conclude that these mild heterogeneities are unlikely to significantly alter the behavior of the size distributions, which span 4 orders of magnitude.
 
 In summary, we find that different bacterial strains, which exhibit a variety of swimming and sticking behaviors (Wiles et al., 2018; Schlomann et al., 2018), abundances (Schlomann et al., 2018; Wiles et al., 2020), and population dynamics (Wiles et al., 2016; Schlomann et al., 2019; Wiles et al., 2020), share a common family of cluster size distributions. This observation suggests that generic processes, rather than strain-specific ones, determine gut bacterial cluster sizes. Notably, these distributions are extremely broad, inconsistent with the exponential-tailed distributions found for linear chains of bacteria (Bansept et al., 2019). We next sought to understand the kinetics that give rise to our measured cluster size distributions.
 
-## A growth-fragmentation process generates power-law distributions
+#### A growth-fragmentation process generates power-law distributions
 
 Previous time-lapse imaging of bacteria in the zebrafish intestine revealed four core processes that can alter bacterial cluster sizes: (1) clusters can increase in size due to cell division, a process we refer to as ‘growth’; (2) clusters can decrease in size as single bacteria escape from them, a process we refer to as ‘fragmentation’ and believe to be linked to cell division at the surface; (3) clusters can increase in size by joining with another cluster during intestinal mixing, a process we refer to as ‘aggregation’; and (4) clusters can be removed from the system by transiting along and out of the intestine, a process we refer to as ‘expulsion’. The breakup of large clusters into medium ones appears to be rare in our system, so we ignore this process. The single cell fragmentation process we describe conserves cell number and is analogous to the ‘chipping’ kernel that has been used to describe the breaking off of monomers from the ends of linear polymers (Krapivsky and Redner, 1996).
 
@@ -58,43 +135,151 @@ To understand how each of these process affect the distribution of cluster sizes
 
 We previously showed that a version of this model with all parameters measured (i.e., no remaining free parameters) generates a size distribution consistent with that of Enterobacter ZOR0014 (Schlomann et al., 2019). However, it was not clear which processes generated which features of the distribution, or how generalizable the model was. Therefore, we studied this model in more detail, starting from a simplified version and iteratively adding complexity.
 
-The observation that all distributions appeared to be organized around P(size>n)∼n-1 inspired us to consider connections to a classic populations genetics model that has this form for the distribution of allele frequencies, known as the Yule-Simons process (Yule, 1925; Simon, 1955; Altan-Bonnet et al., 2020; Neher and Hallatschek, 2013). An exponentially growing population subject to random neutral mutations that occur with probability ϵ will amass an allele frequency distribution that follows P(frequency>x)∼x-11-ϵ for large sizes, with the limit to P(frequency>x)∼x-1 for rare mutation. This heavy-tailed distribution reflects ‘jackpot’ events in which mutants that appear early rise to large frequencies through exponential growth. As long as mutation is rare compared to replication, this process robustly generates distributions P(size>n)∼n-1, without the need for fine tuning of the microscopic details. We therefore saw it as an attractive hypothesis for generating similar size distributions across diverse bacterial species.
+The observation that all distributions appeared to be organized around $P(size>n)∼n^{-1}$ inspired us to consider connections to a classic populations genetics model that has this form for the distribution of allele frequencies, known as the Yule-Simons process (Yule, 1925; Simon, 1955; Altan-Bonnet et al., 2020; Neher and Hallatschek, 2013). An exponentially growing population subject to random neutral mutations that occur with probability $ϵ$ will amass an allele frequency distribution that follows $P(frequency>x)∼x^{-\frac{1}{1-ϵ}}$ for large sizes, with the limit to $P(frequency>x)∼x^{-1}$ for rare mutation. This heavy-tailed distribution reflects ‘jackpot’ events in which mutants that appear early rise to large frequencies through exponential growth. As long as mutation is rare compared to replication, this process robustly generates distributions $P(size>n)∼n^{-1}$, without the need for fine tuning of the microscopic details. We therefore saw it as an attractive hypothesis for generating similar size distributions across diverse bacterial species.
 
-Analogously, the size of mutant clones maps onto the size of a bacterial cluster, and the mutation process that generates new clones maps onto the fragmentation process that generates new clusters (Figure 3A). In situations where all cells in a cluster have the same probability of fragmenting, this analogy is exact and the same distribution emerges (Appendix). However, gut bacterial clusters are three-dimensional and likely encased in mucus (van der Waaij et al., 1996), so spatial structure likely influences fragmentation rates. We hypothesized that this spatial structure could be a mechanism for generating distributions shallower than P(size>n)∼n-1 that we observe in the data for large sizes (Figure 2) but that cannot be produced by the standard Yule-Simons mechanism. Therefore, we modified the Yule-Simons process by decoupling the growth and fragmentation processes and invoking a fragmentation rate, Fn, that scales as a power of the cluster size, Fn∼β⁢nνF (Figure 3B). A value of νF=1 corresponds to the well-mixed limit of the Yule-Simons process. A value of νF=2/3 corresponds to only bacteria on the surface of clusters being able to fragment. An extreme value of νF=0 means that all clusters have the same rate of fragmenting, regardless of their size, and can be thought of as representing a chain of cells where only the cells at ends of the chain can break off.
+Analogously, the size of mutant clones maps onto the size of a bacterial cluster, and the mutation process that generates new clones maps onto the fragmentation process that generates new clusters (Figure 3A). In situations where all cells in a cluster have the same probability of fragmenting, this analogy is exact and the same distribution emerges (Appendix). However, gut bacterial clusters are three-dimensional and likely encased in mucus (van der Waaij et al., 1996), so spatial structure likely influences fragmentation rates. We hypothesized that this spatial structure could be a mechanism for generating distributions shallower than $P(size>n)∼n^{-1}$ that we observe in the data for large sizes (Figure 2) but that cannot be produced by the standard Yule-Simons mechanism. Therefore, we modified the Yule-Simons process by decoupling the growth and fragmentation processes and invoking a fragmentation rate, $F_{n}$, that scales as a power of the cluster size, $F_{n}∼\beta⁢n^{ν_{F}}$ (Figure 3B). A value of $ν_{F}=1$ corresponds to the well-mixed limit of the Yule-Simons process. A value of $ν_{F}=2/3$ corresponds to only bacteria on the surface of clusters being able to fragment. An extreme value of $ν_{F}=0$ means that all clusters have the same rate of fragmenting, regardless of their size, and can be thought of as representing a chain of cells where only the cells at ends of the chain can break off.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/71105/elife-71105-fig3-v2.jpg)
 
-**Figure 3.:** (A) Fragmentation is analogous to mutation and we can construct a genealogy that mirrors the physical structure of the clusters. (B) Summary of a growth/fragmentation process that includes the effect of spatially confined clusters. (C) Examples of reverse cumulative size distributions obtained from stochastic simulations of the model for different values of the fragmentation exponent, . The tails of the distribution are approximately power laws, defined as νF. Parameters: P(size>n)∼n-μ+1 = 0.5 hrr-1,  hrβ=0.4,0.2,0.167-1, for  0, 2/3, 1, respectively, time νF= hr, and the system was initialized with 10 single cells. (t=24D) Dependence of the resulting distribution exponent, μ, on ratio of fragmentation to aggregation rate () and fragmentation exponent (β/r). Markers show mean and standard deviation across 100 simulations. Solid lines are approximate analytic results (νFTable 2). Parameters: same as (C) with β varying.Figure 3—source data 1.
+**Figure 3.:** (A) Fragmentation is analogous to mutation and we can construct a genealogy that mirrors the physical structure of the clusters. (B) Summary of a growth/fragmentation process that includes the effect of spatially confined clusters. (C) Examples of reverse cumulative size distributions obtained from stochastic simulations of the model for different values of the fragmentation exponent, $ν_{F}$. The tails of the distribution are approximately power laws, defined as $P(size>n)∼n^{-\mu+1}$. Parameters: $r$ = 0.5 hr-1, $\beta=0.4,0.2,0.167$ hr-1, for $ν_{F}=$ 0, 2/3, 1, respectively, time $t=24$ hr, and the system was initialized with 10 single cells. (D) Dependence of the resulting distribution exponent, μ, on ratio of fragmentation to aggregation rate ($\beta/r$) and fragmentation exponent ($ν_{F}$). Markers show mean and standard deviation across 100 simulations. Solid lines are approximate analytic results (Table 2). Parameters: same as (C) with β varying.
 
-In stochastic simulations of this model (Materials and methods) we find broad, power-law-like distributions for each value of νF (Figure 3C), but no signature of a shallow plateau at larger sizes. We define μ as the exponent of the probability distribution, p⁢(n)∼n-μ, such that the cumulative distribution function has the form P(size>n)∼n-μ+1 (the latter is proportional to the integral of the former). Following established methods, we fit a power law, P(size>n)∼n-μ+1 for n>nmin to simulation outputs using maximum likelihood estimation (Clauset et al., 2009) and examined the dependence on fragmentation rate. Faster fragmentation results in larger values of μ, reflecting steeper distributions, with the dependence being superlinear for νF=1, approximately linear for νF=2/3, and sublinear for νF=0 (Figure 3D, circles). Increasing values of νF also appeared to have increasing minimum values of μ, corresponding to rare fragmentation.
+**Table 2.**
+ Analytic results for the minimal growth-fragmentation process.Distribution exponent, μ, as a function of fragmentation exponent, $ν_{F}$, fragmentation rate, β, and growth rate, r, as plotted in Figure 3D. Results are expected to be valid for long times ($t→∞$), large sizes ($n→∞$), and slow fragmentation ($\beta/r<1$). See Appendix for details.
 
-The minimum value of the distribution exponent can be computed by considering, for example, the total rate of fragmentation events. Denoting the total number of clusters by M and the number of clusters of size n by cn, the rate of cluster production follows M˙≈β⁢∑nnνF⁢cn (Appendix). Assuming a power-law solution cn∼n-μ and approximating the sum by an integral, we see that the rate of cluster production is finite only if(1)μ>νF+1,consistent with simulations. Therefore, spatial structure—modeled by decreasing νF—is indeed a mechanism to generate distributions shallower than P(size>n)∼n-1. A heuristic argument for the rate dependence of the exponents in the long time, large size limit is provided in the Appendix, with the results summarized in Table 2 and plotted as solid lines in Figure 3D. The analytic results agree reasonably well with simulations, with deviations becoming prominent as β/r≈1.
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>νF=1</th>
+      <th>νF=2/3</th>
+      <th>νF=0</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>distribution exponent, μ</td>
+      <td>1+11-β/r</td>
+      <td>53+βr</td>
+      <td>1+β/r1+β/r</td>
+    </tr>
+  </tbody>
+</table>
+
+In stochastic simulations of this model (Materials and methods) we find broad, power-law-like distributions for each value of $ν_{F}$ (Figure 3C), but no signature of a shallow plateau at larger sizes. We define μ as the exponent of the probability distribution, $p⁢(n)∼n^{-\mu}$, such that the cumulative distribution function has the form $P(size>n)∼n^{-\mu+1}$ (the latter is proportional to the integral of the former). Following established methods, we fit a power law, $P(size>n)∼n^{-\mu+1}$ for $n>n_{min}$ to simulation outputs using maximum likelihood estimation (Clauset et al., 2009) and examined the dependence on fragmentation rate. Faster fragmentation results in larger values of μ, reflecting steeper distributions, with the dependence being superlinear for $ν_{F}=1$, approximately linear for $ν_{F}=2/3$, and sublinear for $ν_{F}=0$ (Figure 3D, circles). Increasing values of $ν_{F}$ also appeared to have increasing minimum values of μ, corresponding to rare fragmentation.
+
+The minimum value of the distribution exponent can be computed by considering, for example, the total rate of fragmentation events. Denoting the total number of clusters by $M$ and the number of clusters of size $n$ by cn, the rate of cluster production follows $M˙≈\beta⁢\sum_{n}n^{ν_{F}}⁢c_{n}$ (Appendix). Assuming a power-law solution $c_{n}∼n^{-\mu}$ and approximating the sum by an integral, we see that the rate of cluster production is finite only if
+
+$$
+\mu>ν_{F}+1,
+$$
+
+consistent with simulations. Therefore, spatial structure—modeled by decreasing $ν_{F}$—is indeed a mechanism to generate distributions shallower than $P(size>n)∼n^{-1}$. A heuristic argument for the rate dependence of the exponents in the long time, large size limit is provided in the Appendix, with the results summarized in Table 2 and plotted as solid lines in Figure 3D. The analytic results agree reasonably well with simulations, with deviations becoming prominent as $\beta/r≈1$.
 
 In summary, we identified a minimal growth-fragmentation process that generates power-law distributions with tuneable exponents in the experimentally observed range. However, this model does not include other features known to occur in the experimental system, including a finite carrying capacity that limits growth, cluster aggregation, and cluster expulsion, which may alter the asymptotic distributions. Moreover, this model fails to capture the large-size behavior of many of the experimental distributions, which exhibit a plateau (Figure 2). Therefore, we investigated extensions of the model.
 
-## Size-dependent aggregation enhances the abundance of large clusters
+#### Size-dependent aggregation enhances the abundance of large clusters
 
 We explored a number of potential mechanisms for generating plateaus in the size distribution at large cluster sizes. As shown below, several plausible models fail to produce this feature. It emerges, however, from the incorporation of size-dependent aggregation rates.
 
-First we tested whether finite time effects could introduce plateaus to the distributions of the minimal growth-fragmentation model, since our power-law solutions are only valid asymptotically. Indeed, stochastic simulations with νF=1 and rare fragmentation (r=0.5 hr-1, β=0.05 hr-1) showed that for systems initialized with 10 single cells (a reasonable comparison with initial colonization in the experiments Wiles et al., 2016), slight curvature appears in the distribution that weakens with time but is still detectable at 24 hr (Figure 4—figure supplement 1, circles). We confirmed that this effect was solely due to dynamics and not to any finite system effect by numerically integrating the master equation for this model, which describes the deterministic dynamics of an infinite system yet agrees with the stochastic simulation results (Figure 4—figure supplement 1, lines; Materials and methods). However, the curvature observed at finite times is substantially smaller than what occurs for some of the strains, such as Enterobacter ZOR0014 and Vibrio ZOR0036, so we believe it is not the dominant effect.
+First we tested whether finite time effects could introduce plateaus to the distributions of the minimal growth-fragmentation model, since our power-law solutions are only valid asymptotically. Indeed, stochastic simulations with $ν_{F}=1$ and rare fragmentation ($r=0.5$ hr-1, $\beta=0.05$ hr-1) showed that for systems initialized with 10 single cells (a reasonable comparison with initial colonization in the experiments Wiles et al., 2016), slight curvature appears in the distribution that weakens with time but is still detectable at 24 hr (Figure 4—figure supplement 1, circles). We confirmed that this effect was solely due to dynamics and not to any finite system effect by numerically integrating the master equation for this model, which describes the deterministic dynamics of an infinite system yet agrees with the stochastic simulation results (Figure 4—figure supplement 1, lines; Materials and methods). However, the curvature observed at finite times is substantially smaller than what occurs for some of the strains, such as Enterobacter ZOR0014 and Vibrio ZOR0036, so we believe it is not the dominant effect.
 
-We next asked whether including additional processes to the model could produce the plateau effect, focusing on stationary distributions. As discussed above, populations in the larval zebrafish gut are known to reach carrying capacities that halt growth (Jemielita et al., 2014). Since we believe fragmentation is tied to growth, we modeled this as the fragmentation rate being slowed as the total number of cells, N, approaches carrying capacity, K, in the same way as the growth rate: r→r⁢(1-N/K) and β→β⁢(1-N/K). Carrying capacities have been estimated to range from 103-106 cells, depending on the bacterial strain (Jemielita et al., 2014; Wiles et al., 2016; Schlomann et al., 2018; Wiles et al., 2020).
+We next asked whether including additional processes to the model could produce the plateau effect, focusing on stationary distributions. As discussed above, populations in the larval zebrafish gut are known to reach carrying capacities that halt growth (Jemielita et al., 2014). Since we believe fragmentation is tied to growth, we modeled this as the fragmentation rate being slowed as the total number of cells, $N$, approaches carrying capacity, K, in the same way as the growth rate: $r→r⁢(1-N/K)$ and $\beta→\beta⁢(1-N/K)$. Carrying capacities have been estimated to range from 103-106 cells, depending on the bacterial strain (Jemielita et al., 2014; Wiles et al., 2016; Schlomann et al., 2018; Wiles et al., 2020).
 
-With this addition to the model, fragmentation halts in the steady state. However, in the larval zebrafish gut it has been well-documented that large bacterial aggregates are quasi-stochastically expelled out the intestine, after which exponential growth by the remaining cells is restarted (Wiles et al., 2016). We modeled expulsion by having clusters removed from the system altogether at a size-dependent rate En=λ⁢nνE. It is unclear what value of the exponent νE best describes the experimental system, but previous studies measured expulsion rates for the largest clusters, typically of order K∼103 cells, in the range of 0.07 to 0.11 hr-1 (Wiles et al., 2016; Schlomann et al., 2019). Therefore, we co-varied νE and λ such that λ⁢KνE∼10-1 hr-1. Combining finite carrying capacity and expulsion leads to a non-trivial stationary distribution of the model that lacks a plateau for νE= 0, 1/3, or 2/3 (Figure 4—figure supplement 2).
+With this addition to the model, fragmentation halts in the steady state. However, in the larval zebrafish gut it has been well-documented that large bacterial aggregates are quasi-stochastically expelled out the intestine, after which exponential growth by the remaining cells is restarted (Wiles et al., 2016). We modeled expulsion by having clusters removed from the system altogether at a size-dependent rate $E_{n}=\lambda⁢n^{ν_{E}}$. It is unclear what value of the exponent $ν_{E}$ best describes the experimental system, but previous studies measured expulsion rates for the largest clusters, typically of order $K∼10^{3}$ cells, in the range of 0.07 to 0.11 hr-1 (Wiles et al., 2016; Schlomann et al., 2019). Therefore, we co-varied $ν_{E}$ and $\lambda$ such that $\lambda⁢K^{ν_{E}}∼10^{-1}$ hr-1. Combining finite carrying capacity and expulsion leads to a non-trivial stationary distribution of the model that lacks a plateau for $ν_{E}=$ 0, 1/3, or 2/3 (Figure 4—figure supplement 2).
 
-Finally, we considered the effect of cluster aggregation, which has been directly observed in live imaging experiments (Schlomann et al., 2019). We model aggregation with pairwise interactions where clusters come together and form a single cluster with size equal to the sum of the individual sizes. The aggregation rate is allowed to be size-dependent with the homogenous kernel An⁢m=α⁢(n⁢m)νA. As with expulsion, it is not clear which exponent value is the most realistic. Accurate measurements of aggregation rates are lacking, but we estimate bounds to be between 1 and 100 total aggregation events per hour for a typical population (Materials and methods), so we consider only pairs of α and νA that match these bounds. Further, an important theoretical distinction is that in purely aggregating systems, models with νA≥1/2 exhibit a finite-time singularity corresponding to a gelation transition, at which point the distribution acquires a power-law tail, while distributions have exponential tails when νA<1/2 (Krapivsky et al., 2010). We considered both regimes.
+Finally, we considered the effect of cluster aggregation, which has been directly observed in live imaging experiments (Schlomann et al., 2019). We model aggregation with pairwise interactions where clusters come together and form a single cluster with size equal to the sum of the individual sizes. The aggregation rate is allowed to be size-dependent with the homogenous kernel $A_{n⁢m}=\alpha⁢(n⁢m)^{ν_{A}}$. As with expulsion, it is not clear which exponent value is the most realistic. Accurate measurements of aggregation rates are lacking, but we estimate bounds to be between 1 and 100 total aggregation events per hour for a typical population (Materials and methods), so we consider only pairs of $\alpha$ and $ν_{A}$ that match these bounds. Further, an important theoretical distinction is that in purely aggregating systems, models with $ν_{A}\geq1/2$ exhibit a finite-time singularity corresponding to a gelation transition, at which point the distribution acquires a power-law tail, while distributions have exponential tails when $ν_{A}<1/2$ (Krapivsky et al., 2010). We considered both regimes.
 
-We added aggregation to our growth-driven process and arrived at the general model described in Figure 4A. Parameters are also summarized in Table 3. Strikingly, we found that increasing aggregation rate produces the large-size plateau seen in our data, but only when aggregation rate scales sufficiently quickly with cluster size (Figure 4B, right, νA = 2/3) and not when aggregation is size-independent (Figure 4B, left, νA=0). A mild effect is observed for νA=1/3 (Figure 4B, middle). The largest plateau (Figure 4B, νA=2/3, highest curve) corresponds to 15 ± 3 (mean ± std. dev) total aggregation events per hour. This value is consistent with our rough experimental bounds of 1–100 hr-1.
+We added aggregation to our growth-driven process and arrived at the general model described in Figure 4A. Parameters are also summarized in Table 3. Strikingly, we found that increasing aggregation rate produces the large-size plateau seen in our data, but only when aggregation rate scales sufficiently quickly with cluster size (Figure 4B, right, $ν_{A}$ = 2/3) and not when aggregation is size-independent (Figure 4B, left, $ν_{A}=0$). A mild effect is observed for $ν_{A}=1/3$ (Figure 4B, middle). The largest plateau (Figure 4B, $ν_{A}=2/3$, highest curve) corresponds to 15 ± 3 (mean ± std. dev) total aggregation events per hour. This value is consistent with our rough experimental bounds of 1–100 hr-1.
 
-We further found that this plateau effect is intrinsic to finite systems (Figure 4C). For the most aggregated cases in Figure 4B, we numerically solved the corresponding master equation, representing the deterministic dynamics of an infinite system, and found that the plateau did not occur. Master equation and stochastic simulation solutions agree for νA=0, but for larger values of νA, the two solutions only agree in the small size regime. At large sizes, stochastic simulations produce an overabundance of large clusters compared to the master equation solution. This result indicates that in a finite system, strong aggregation can deplete small clusters, condensing them into a small number of large clusters on the order of the system-size.
+![Figure 4.](https://cdn.elifesciences.org/articles/71105/elife-71105-fig4-v2.jpg)
 
-This overall process is reminiscent of the gelation transition in soft materials. Stochastic dynamics of finite systems of purely aggregating particles at the gelation transition also produces distributions with plateaus, but with an initial decay given approximately by a power law with μ=5/2 (Figure 4—figure supplement 3, see also Matsoukas, 2015). Combined with a growth/fragmentation/expulsion process, we found that size-dependent aggregation produces a distribution that initially decays in a power-law-like manner with tunable exponents and then exhibits a tuneable plateau, as we observe in the experimental data.
+**Figure 4.:** (A) Schematic of the generalized model. Parameters summarized in Table 3. (B) Reverse cumulative distributions obtained from simulations for different values of $ν_{A}$ (left, middle, right) and $\alpha$ (different colored lines within each panel). Increasing aggregation produces a plateau if the aggregation depends strongly enough on cluster size. (C) The plateau arises only in stochastic simulation of finite systems with size-dependent aggregation. Solid lines are stochastic simulations, dashed lines are the result of numerically integrating the master equation. Parameters: $r$ = 0.5 hr-1, $ν_{F}=2/3$, $\beta=0.5$ hr-1, $ν_{E}=1/3$, $\lambda=0.01$ hr-1, $K=10^{3}$, and the number of simulation was replicates = 150 per parameter set. For each value of $ν_{A}$, we considered $\alpha$ values of 0 (no aggregation) and then varied α logarithmically, with the following (min, max) values for $log_{10}⁡\alpha$: (−4,–2) for $ν_{A}=0$, (−4.5,–2.5) for $ν_{A}=1/3$, and (−5,–3) for $ν_{A}=2/3$.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/71105/elife-71105-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Mild curvature appears in the minimal growth/fragmentation process distribution at finite time, but the result is inconsistent with experimental data. Circles are the result of stochastic simulation, solid lines are the result of numerical integration of the master equation. Color denotes simulation time. Dashed black line indicates $P(size>n)∼n^{-1}$ and is a guide to the eye.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/71105/elife-71105-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** A modified process with carrying capacity and expulsion does not produce a plateau in the stationary size distribution. Reverse cumulative distributions computed from stochastic simulations with different values of the expulsion exponent, $ν_{E}$. For each value of $ν_{E}$, the expulsion rate, $\lambda$, was chosen such that for clusters of size $K=1000$ cells, $\lambda⁢K^{ν_{E}}=0.1$ hr-1, consistent with experimental data. Three different simulation times are shown in each panel in differently colored solid lines. Long simulation times are required to approach steady state when $\lambda$ becomes small, and the steady state is not quite reached in the right panel even after 720 hr. Dashed line indicates $P(size>n)∼n^{-1}$ and is a guide to the eye. Other parameters: $r=0.5$ hr-1, $ν_{F}=2/3$, $\beta=0.5$ hr-1, and the number of simulations = 100.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/71105/elife-71105-fig4-figsupp3-v2.jpg)
+
+**Figure 4—figure supplement 3.:** Distributions for a model with only aggregation and $ν_{A}=1$.Plateaus arise at the gelation transition of purely aggregating systems. Reverse cumulative distributions computed from stochastic simulations are shown. Different curves represent different simulation times, ranging linearly from 0.1 to 0.175 hr (magenta to cyan). Dashed line represents an approximate analytic prediction of $P(size>n)∼n^{-3/2}$ in the sol phase at the transition point and is a guide to the eye. Parameters: $\alpha=0.01$ hr-1, number of cells = 103, number of simulations = 100.
+
+**Table 3.**
+ Summary of model variables and parameters.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Variable/parameter</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>n</td>
+      <td>Cluster size (number of cells)</td>
+    </tr>
+    <tr>
+      <td>p⁢(n)</td>
+      <td>Probability of cluster size, n</td>
+    </tr>
+    <tr>
+      <td>P(size&gt;n)</td>
+      <td>Cumulative probability; probability of size being larger than n</td>
+    </tr>
+    <tr>
+      <td>μ</td>
+      <td>Exponent of power law; p⁢(n)∼n-μ, P(size&gt;n)∼n-μ+1</td>
+    </tr>
+    <tr>
+      <td>r</td>
+      <td>Cell division rate</td>
+    </tr>
+    <tr>
+      <td>K</td>
+      <td>Carrying capacity; maximum number of cells</td>
+    </tr>
+    <tr>
+      <td>β</td>
+      <td>Fragmentation rate</td>
+    </tr>
+    <tr>
+      <td>νF</td>
+      <td>Fragmentation exponent; clusters of size n fragment with rate β⁢nνF</td>
+    </tr>
+    <tr>
+      <td>α</td>
+      <td>Aggregation rate</td>
+    </tr>
+    <tr>
+      <td>νA</td>
+      <td>Aggregation exponent; clusters of sizes n and m aggregate with rate α⁢(n⁢m)νA</td>
+    </tr>
+    <tr>
+      <td>λ</td>
+      <td>Expulsion rate</td>
+    </tr>
+    <tr>
+      <td>νE</td>
+      <td>Expulsion exponent; clusters of size n are expelled with rate λ⁢nνE</td>
+    </tr>
+  </tbody>
+</table>
+
+We further found that this plateau effect is intrinsic to finite systems (Figure 4C). For the most aggregated cases in Figure 4B, we numerically solved the corresponding master equation, representing the deterministic dynamics of an infinite system, and found that the plateau did not occur. Master equation and stochastic simulation solutions agree for $ν_{A}=0$, but for larger values of $ν_{A}$, the two solutions only agree in the small size regime. At large sizes, stochastic simulations produce an overabundance of large clusters compared to the master equation solution. This result indicates that in a finite system, strong aggregation can deplete small clusters, condensing them into a small number of large clusters on the order of the system-size.
+
+This overall process is reminiscent of the gelation transition in soft materials. Stochastic dynamics of finite systems of purely aggregating particles at the gelation transition also produces distributions with plateaus, but with an initial decay given approximately by a power law with $\mu=5/2$ (Figure 4—figure supplement 3, see also Matsoukas, 2015). Combined with a growth/fragmentation/expulsion process, we found that size-dependent aggregation produces a distribution that initially decays in a power-law-like manner with tunable exponents and then exhibits a tuneable plateau, as we observe in the experimental data.
 
 ## Discussion
 
 We analyzed image-derived measurements of bacterial cluster sizes from larval zebrafish intestines and discovered a common family of size distributions shared across bacterial species. These distributions are extremely broad, exhibiting a power-law-like decay at small sizes that becomes shallower at large sizes in a strain-specific manner. We then demonstrated how these distributions emerge naturally from realistic kinetics: growth and single-cell fragmentation together generate power-law distributions, analogous to the distribution of neutral alleles in expanding populations, while size-dependent aggregation leads to a plateau representing the depletion of mid-sized clusters in favor for a single large one. In summary, we found that gut bacterial clusters are well-described by a model that combines the features of evolutionary dynamics in growing populations with those of inanimate systems of aggregating particles; intestinal bacteria form a ‘living gel’.
 
-Gels are characterized by the emergence of a massive connected cluster that is on the order of the system size. In the larval zebrafish intestine, we often find for some bacterial species that the majority of the cells in the gut are contained within a single cluster, similar to a gel-like state. While growth by cell division generates large clusters, it is the aggregation process that leads to system-sized clusters being over-represented. This enhancement of massive clusters manifests as a plateau in the size distribution and is reminiscent of a true gelation phase transition. In our model, the prominence of this plateau appears to follow the same trend as in non-living, purely aggregating systems: the plateau depends strongly on the aggregation exponent that dictates the size-dependence of aggregation, with exponents larger than 1/2 leading to strong plateaus and exponents less than 1/2 leading to weak or no plateaus.
+Gels are characterized by the emergence of a massive connected cluster that is on the order of the system size. In the larval zebrafish intestine, we often find for some bacterial species that the majority of the cells in the gut are contained within a single cluster, similar to a gel-like state. While growth by cell division generates large clusters, it is the aggregation process that leads to system-sized clusters being over-represented. This enhancement of massive clusters manifests as a plateau in the size distribution and is reminiscent of a true gelation phase transition. In our model, the prominence of this plateau appears to follow the same trend as in non-living, purely aggregating systems: the plateau depends strongly on the aggregation exponent that dictates the size-dependence of aggregation, with exponents larger than $1/2$ leading to strong plateaus and exponents less than $1/2$ leading to weak or no plateaus.
 
 How this strong size-dependence in aggregation emerges in the intestine is unclear, although we hypothesize that active mixing by intestinal contractions, which can in fact merge multiple clusters at once (Schlomann et al., 2019), is an important driver. We envision that the exponents for aggregation and also for fragmentation are likely generic, set by physical aspects of the intestine and the geometry of clusters, while the rates of these processes are bacterial-species dependent. In our system, we predict that differences in aggregation and/or fragmentation rates between strains underly the differences in measured size distributions. Further, it is possible that individual bacteria can tune these rates by altering their behavior, for example, modulating swimming motility (Wiles et al., 2020), in response to environmental cues. Quantitatively understanding how the combination of intestinal fluid mechanics and bacterial behaviors determine aggregation and fragmentation rates would be a fruitful avenue of future research. More abstractly, active growth combined with different aggregation processes, for example the fractal structures of diffusion-limited aggregation, may lead to different families of size distributions that would be interesting to explore.
 
@@ -110,43 +295,96 @@ To close, we emphasize that the degree of bacterial clustering in the gut is an 
 
 ## Materials and methods
 
-## Data
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Analysis code</td>
+      <td>This study</td>
+      <td></td>
+      <td>see Materials and methods, Simulations</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cluster size data</td>
+      <td>Schlomann and moments, 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cluster size data</td>
+      <td>Schlomann et al., 2019</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Cluster size data</td>
+      <td>Wiles et al., 2020</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Data
 
 We assembled data on gut bacterial cluster sizes from three different studies on larval zebrafish (Schlomann et al., 2018; Wiles et al., 2020). Size data from Schlomann et al., 2018 and Schlomann et al., 2019 were taken directly from the supplementary data files associated with those publications. The raw size data from Wiles et al., 2020 was not included in its associated supplementary data file, but summary statistics such as planktonic fraction were. All sizes were rounded up to the nearest integer.
 
 Details of experimental procedures can be found in the original papers. In brief, as described in Figure 1, animals were reared germ-free, mono-associated with a single bacterial strain, each carrying a chromosomal GFP tag, and then imaged 24 hr later using a custom-built light sheet fluorescence microscope (Jemielita et al., 2014). The gut is imaged in four tiled sub-regions that are registered via cross-correlation and manual adjustment. Imaging a full gut volume (≈1200 μm × 300 μm × 150 μm) with 1 μm slices takes approximately 45 s. Laser power (5 mW) and exposure time (30 ms) were identical for all experiments.
 
-The image analysis pipeline used to enumerate bacterial cluster sizes is also described in detail in the original publications and in reference (Jemielita et al., 2014). In brief, single cells (small objects) and multicellular aggregates (large objects) are identified separately. The number of cells per aggregate is then estimated as the total fluorescence intensity of the aggregate divided by the mean fluorescence intensity of a single cell. Small objects are identified in three dimensions with a combination of difference-of-gaussians and wavelet filters (Olivo-Marin, 2002) and then culled using a support vector machine classifier and manual curation. Large objects are segmented in maximum intensity projections using a graph-cut algorithm (Boykov and Kolmogorov, 2004) seeded by either an intensity- or gradient-thresholded mask. The total intensity of an aggregate is computed by extending the two-dimensional mask in the z-direction and summing fluorescence intensities above a threshold calculated from the boundary of the mask, with pixels detected as part of single cells removed. The boundary of the gut is manually outlined prior to image analysis and used to exclude extra-intestinal fluorescence.
+The image analysis pipeline used to enumerate bacterial cluster sizes is also described in detail in the original publications and in reference (Jemielita et al., 2014). In brief, single cells (small objects) and multicellular aggregates (large objects) are identified separately. The number of cells per aggregate is then estimated as the total fluorescence intensity of the aggregate divided by the mean fluorescence intensity of a single cell. Small objects are identified in three dimensions with a combination of difference-of-gaussians and wavelet filters (Olivo-Marin, 2002) and then culled using a support vector machine classifier and manual curation. Large objects are segmented in maximum intensity projections using a graph-cut algorithm (Boykov and Kolmogorov, 2004) seeded by either an intensity- or gradient-thresholded mask. The total intensity of an aggregate is computed by extending the two-dimensional mask in the $z$-direction and summing fluorescence intensities above a threshold calculated from the boundary of the mask, with pixels detected as part of single cells removed. The boundary of the gut is manually outlined prior to image analysis and used to exclude extra-intestinal fluorescence.
 
-## Size distribution
+### Size distribution
 
-For the experimental data, reverse cumulative distributions were computed as(2)P(size>n)=numberofclusterswithsize>ntotalnumberofclusters.
+For the experimental data, reverse cumulative distributions were computed as
 
-In combining data from different samples colonized with the same strain, we pooled together all sizes and computed the distribution in the same way. For simulations with large numbers clusters, we computed this distribution iteratively, looping through each simulation replicate and independently updating (number clusters with size >n) and (total number of clusters), and normalizing at the end.
+$$
+P(size>n)=\frac{numberofclusterswithsize>n}{totalnumberofclusters}.
+$$
+
+In combining data from different samples colonized with the same strain, we pooled together all sizes and computed the distribution in the same way. For simulations with large numbers clusters, we computed this distribution iteratively, looping through each simulation replicate and independently updating (number clusters with size $>n$) and (total number of clusters), and normalizing at the end.
 
 For the binned probability densities in Figure 2—figure supplement 1, data were similarly pooled across samples and then sorted into logarithmically spaced bins of log10 width = 0.4.
 
-## Estimates on bounds of agg rates
+### Estimates on bounds of agg rates
 
 We estimated approximate bounds on the rate of total aggregation events as follows. For the maximum rate, we note that a typical population contains approximately 200 clusters (mean ± std. dev of 244 ± 182). In the absence of other processes, condensing this system into one cluster would require 100 aggregation events. Populations consisting of almost entirely one large cluster are rare but have been documented (Schlomann et al., 2018). Therefore, we estimate that this complete condensation can occur no more than once an hour, leading to an upper bound on the total rate of aggregation events of 100 per hour.
 
 For the minimum rate, we start with the observation that aggregation has been directly observed between small clusters and also between small clusters and a single large cluster during a large expulsion event (Schlomann et al., 2019). Considering just the latter process, we know that large expulsion events happen roughly once every 10 hr. If approximately 10 small clusters are grouped into the large cluster during transit out of the gut, that would correspond 10 total aggregation events in 10 hr, or, 1 per hour, which we take as a lower bound.
 
-## Simulations
+### Simulations
 
-We used three different numerical approaches for studying the models discussed here. The minimal growth-fragmentation process in Figure 3 was simulated with a Poisson tau-leaping algorithm Gillespie, 2001 with a simple fixed tau value of τ=0.1 hr. At each time step, the number of growth and fragmentation events was drawn from a Poisson distribution with the rates given in Figure 3B along with the constraint that clusters must be of size two or larger to fragment.
+We used three different numerical approaches for studying the models discussed here. The minimal growth-fragmentation process in Figure 3 was simulated with a Poisson tau-leaping algorithm Gillespie, 2001 with a simple fixed tau value of $\tau=0.1$ hr. At each time step, the number of growth and fragmentation events was drawn from a Poisson distribution with the rates given in Figure 3B along with the constraint that clusters must be of size two or larger to fragment.
 
-For the full model including aggregation and expulsion, we used Gillespie's algorithm Gillespie, 1977 for fragmentation, aggregation, and expulsion events, while growth was updated deterministically according to a continuous logistic growth law approximated by an Euler step with d⁢t=min⁢(τ,0.1⁢ hr), where τ here refers to the time to next reaction. For the Gillespie steps, if the time to next reaction exceeded the doubling time, (ln⁡2)/r, the growth steps were performed and then the propensity functions were re-calculated.
+For the full model including aggregation and expulsion, we used Gillespie's algorithm Gillespie, 1977 for fragmentation, aggregation, and expulsion events, while growth was updated deterministically according to a continuous logistic growth law approximated by an Euler step with $d⁢t=min⁢(\tau,0.1⁢hr)$, where $\tau$ here refers to the time to next reaction. For the Gillespie steps, if the time to next reaction exceeded the doubling time, $(ln⁡2)/r$, the growth steps were performed and then the propensity functions were re-calculated.
 
-Finally, we compared these stochastic simulations to a model in the thermodynamic limit where individual clusters are replaced with cluster densities that evolve deterministically, which is referred to as a master equation (Krapivsky et al., 2010). The master equation for the general model readsc˙n= α2∑m=1n[(n−m)(m)]νAcn−mcm−αnνAcn∑mmνAcm+r(1−NK)[(n−1)cn−1−ncn]−λnνEcn+β(1−NK)((n+1)νFcn+1−nνFcn+δn,1∑mmνFcm).
+Finally, we compared these stochastic simulations to a model in the thermodynamic limit where individual clusters are replaced with cluster densities that evolve deterministically, which is referred to as a master equation (Krapivsky et al., 2010). The master equation for the general model reads
 
-This set of equations was solved numerically on a bounded size grid using an Euler method with step size d⁢t=0.0001 hr. Models that include a carrying capacity, K, are already defined on a finite domain of integers ranging from one to K and the master equation is naturally represented by a set of K ordinary differential equations. For models without a carrying capacity, we introduced a maximum size given by the average population size at the last time point, nmax=exp⁢(r⁢tmax) (rounded up to the nearest integer), and used reflecting boundary conditions at nmax.
+$$
+c˙_{n}= \frac{\alpha}{2}\summ=1n[(n−m)(m)]^{ν_{A}}c_{n−m}c_{m}−\alphan^{ν_{A}}c_{n}\summm^{ν_{A}}c_{m}+r(1−\frac{N}{K})[(n−1)c_{n−1}−nc_{n}]−\lambdan^{ν_{E}}c_{n}+\beta(1−\frac{N}{K})((n+1)^{ν_{F}}c_{n+1}−n^{ν_{F}}c_{n}+\delta_{n,1}\summm^{ν_{F}}c_{m}).
+$$
+
+This set of equations was solved numerically on a bounded size grid using an Euler method with step size $d⁢t=0.0001$ hr. Models that include a carrying capacity, $K$, are already defined on a finite domain of integers ranging from one to $K$ and the master equation is naturally represented by a set of $K$ ordinary differential equations. For models without a carrying capacity, we introduced a maximum size given by the average population size at the last time point, $n_{max}=exp⁢(r⁢t_{max})$ (rounded up to the nearest integer), and used reflecting boundary conditions at $n_{max}$.
 
 A distribution was deemed stationary if it was visibly unchanged after an additional 50% of simulation time.
 
 MATLAB code for simulating these models and plotting data can be found at https://github.com/rplab/cluster_kinetics (copy archived at swh:1:rev:f55a54a9c88e4fb8376dfc91e25ac4383c4240ae, Schlomann, 2021).
 
-## Estimating distribution exponents
+### Estimating distribution exponents
 
 For the simulated distributions in Figure 3 we estimated a power law exponent using the maximum likelihood-based method described in Clauset et al., 2009 and the plfit.m code supplied therein. This model includes a minimum size as a free parameter that dictates when the power-law tail begins. The minimum size is chosen to minimize the Kolmogorov-Smirnov distance between the data and model distributions for sizes greater than the minimum size. Best fit values of the exponent and minimum size are included in Figure 3—source data 1.
 

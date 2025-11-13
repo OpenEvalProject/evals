@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.35012.001 Many intercellular signals are synthesised as transmembrane precursors that are released by proteolytic cleavage (‘shedding’) from the cell surface. ADAM17, a membrane-tethered metalloprotease, is the primary shedding enzyme responsible for the release of the inflammatory cytokine TNFα and several EGF receptor ligands. ADAM17 exists in complex with the rhomboid-like iRhom proteins, which act as cofactors that regulate ADAM17 substrate shedding. Here we report that the poorly characterised FERM domain-containing protein FRMD8 is a new component of the iRhom2/ADAM17 sheddase complex. FRMD8 binds to the cytoplasmic N-terminus of iRhoms and is necessary to stabilise iRhoms and ADAM17 at the cell surface. In the absence of FRMD8, iRhom2 and ADAM17 are degraded via the endolysosomal pathway, resulting in the reduction of ADAM17-mediated shedding. We have confirmed the pathophysiological significance of FRMD8 in iPSC-derived human macrophages and mouse tissues, thus demonstrating its role in the regulated release of multiple cytokine and growth factor signals.
+Many intercellular signals are synthesised as transmembrane precursors that are released by proteolytic cleavage (‘shedding’) from the cell surface. ADAM17, a membrane-tethered metalloprotease, is the primary shedding enzyme responsible for the release of the inflammatory cytokine TNFα and several EGF receptor ligands. ADAM17 exists in complex with the rhomboid-like iRhom proteins, which act as cofactors that regulate ADAM17 substrate shedding. Here we report that the poorly characterised FERM domain-containing protein FRMD8 is a new component of the iRhom2/ADAM17 sheddase complex. FRMD8 binds to the cytoplasmic N-terminus of iRhoms and is necessary to stabilise iRhoms and ADAM17 at the cell surface. In the absence of FRMD8, iRhom2 and ADAM17 are degraded via the endolysosomal pathway, resulting in the reduction of ADAM17-mediated shedding. We have confirmed the pathophysiological significance of FRMD8 in iPSC-derived human macrophages and mouse tissues, thus demonstrating its role in the regulated release of multiple cytokine and growth factor signals.
 
 ## Introduction
 
@@ -27,13 +27,235 @@ Despite the role of the iRhom/ADAM17 shedding complex in controlling signalling,
 
 ## Results
 
-## FRMD8 is a novel interaction partner of iRhom1 and iRhom2
+### FRMD8 is a novel interaction partner of iRhom1 and iRhom2
 
 To investigate the molecular mechanisms that underlie iRhom2 functions, we performed a mass spectrometry-based screen to identify new proteins that interact with human iRhom2. iRhom2-3xHA was stably expressed in human embryonic kidney (HEK) 293T cells and immunoprecipitated. The bead eluates containing immunoprecipitated iRhom2 and its interacting proteins were analysed by label-free mass spectrometry. As a negative control, we did the same analysis in parallel with 3xHA-tagged UNC93B1, an unrelated polytopic protein that, like iRhom2, is predominantly located in the ER (Koehn et al., 2007) (Figure 1—figure supplement 1A). Quantitative protein abundance data from three biological replicates of iRhom2 and UNC93B1 co-immunoprecipitations were statistically analysed using the Perseus software platform (Tyanova et al., 2016). Validating the overall approach, we detected ADAM17, the known iRhom2 interacting protein (Adrain et al., 2012; McIlwain et al., 2012; Christova et al., 2013) as a statistically significant hit (Figure 1A, Table 1). Among the hits were several 14-3-3 proteins (eta, epsilon, gamma, sigma, theta, zeta/delta) and MAPK1/3 (Table 1), which we have previously reported to participate in the regulation of inflammatory signalling by phosphorylation of iRhom2 (Grieve et al., 2017). The top hit by a long way, however, was FRMD8 (Figure 1A, Table 1), a poorly studied protein that has not previously been implicated in iRhom function, ADAM17 regulation, and growth factor or cytokine signalling.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/35012/elife-35012-fig1-v2.jpg)
+
+**Figure 1.:** (A) Volcano plot representing results from three iRhom2 co-immunoprecipitations. The fold change of label-free quantification values (in log2 ratio) was plotted against the p value (-log10 transformed). The grey dotted line indicates p-values <0.05 (analysed with a two-sample t-test). Benjamini-Hochberg correction was applied to adjust the p-value for multiple hypothesis testing (dark grey dotted line). (B) Lysates of HEK293T cells stably expressing human iRhom1-3xHA or iRhom2-3xHA transfected with human FRMD8-V5 (where indicated) were subjected to anti-HA and anti-V5 immunoprecipitation (HA-IP, V5–IP) and a western blot using anti-HA and anti-V5 antibodies was performed. Black arrowheads indicated the co-immunoprecipitated FRMD8-V5; white arrowheads indicated the co-immunoprecipitated iRhoms.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/35012/elife-35012-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) HEK293T cells transiently transfected with human iRhom2-3xHA or UNC93B1-3xHA were stained with DAPI (blue) to label nuclei, anti-HA to label iRhom2-HA (red), and anti-calnexin to label the ER (green). Scale bar = 10 μm. (B) Lysates and anti-HA immunoprecipitation (HA-IP) from wild-type (WT) and FRMD8 knockout (KO) HEK293T cells stably expressing iRhom2-3xHA (where indicated) were immunoblotted for HA and FRMD8. Nonspecific bands are marked with an asterisk.
+
+**Table 1.**
+ List of iRhom2 interaction partners identified in the mass spectrometry screen that have either shown a significant adjusted p-value or been reported previously (Adrain et al., 2012; McIlwain et al., 2012; Grieve et al., 2017).P-values from a two-sample t-test in Perseus are listed below. P-values were adjusted for multiple hypothesis testing with the Benjamini-Hochberg correction and are listed under ‘adjusted p-values’.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Prot. ID</th>
+      <th>Protein name</th>
+      <th>Gene</th>
+      <th>p-value</th>
+      <th>Adjusted p-value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Q9BZ67</td>
+      <td>FERM domain-containing protein 8</td>
+      <td>FRMD8</td>
+      <td>2.44 · 10−7</td>
+      <td>2.38 · 10−4</td>
+    </tr>
+    <tr>
+      <td>Q9BY50</td>
+      <td>Signal peptidase subunit SEC11C</td>
+      <td>SEC11C</td>
+      <td>2.94 · 10−6</td>
+      <td>1.71 · 10−3</td>
+    </tr>
+    <tr>
+      <td>Q9NUP9</td>
+      <td>Protein lin-7 homolog C</td>
+      <td>LIN7C</td>
+      <td>1.55 · 10−5</td>
+      <td>6.45 · 10−3</td>
+    </tr>
+    <tr>
+      <td>P11940</td>
+      <td>Polyadenylate-binding protein 1; Polyadenylate-binding protein 3</td>
+      <td>PABPC1; PABPC3</td>
+      <td>2.10 · 10−5</td>
+      <td>7.66 · 10−3</td>
+    </tr>
+    <tr>
+      <td>Q9BXB1</td>
+      <td>Leucine-rich repeat-containing GPCR 4</td>
+      <td>LGR4</td>
+      <td>2.63 · 10−5</td>
+      <td>8.53 · 10−3</td>
+    </tr>
+    <tr>
+      <td>O00629</td>
+      <td>Importin subunit alpha-3</td>
+      <td>KPNA4</td>
+      <td>5.76 · 10−5</td>
+      <td>1.40 · 10−2</td>
+    </tr>
+    <tr>
+      <td>Q13454</td>
+      <td>Tumor suppressor candidate 3</td>
+      <td>TUSC3</td>
+      <td>7.05 · 10−5</td>
+      <td>1.58 · 10−2</td>
+    </tr>
+    <tr>
+      <td>Q9HD26</td>
+      <td>GOPC/PIST</td>
+      <td>GOPC</td>
+      <td>8.54 · 10−5</td>
+      <td>1.78 · 10−2</td>
+    </tr>
+    <tr>
+      <td>Q9UKX7</td>
+      <td>Nuclear pore complex protein Nup50</td>
+      <td>NUP50</td>
+      <td>8.77 · 10−5</td>
+      <td>1.71 · 10−2</td>
+    </tr>
+    <tr>
+      <td>O95754</td>
+      <td>Semaphorin-4F</td>
+      <td>SEMA4F</td>
+      <td>1.06 · 10−4</td>
+      <td>1.83 · 10−2</td>
+    </tr>
+    <tr>
+      <td>Q96EK5</td>
+      <td>KIF1-binding protein</td>
+      <td>KIAA1279</td>
+      <td>1.47 · 10−4</td>
+      <td>2.26 · 10−2</td>
+    </tr>
+    <tr>
+      <td>P51809</td>
+      <td>Vesicle-associated membrane protein 7</td>
+      <td>VAMP7</td>
+      <td>1.55 · 10−4</td>
+      <td>2.26 · 10−2</td>
+    </tr>
+    <tr>
+      <td>Q12899</td>
+      <td>Tripartite motif-containing protein 26</td>
+      <td>TRIM26</td>
+      <td>1.93 · 10−4</td>
+      <td>2.68 · 10−2</td>
+    </tr>
+    <tr>
+      <td>O14763</td>
+      <td>TRAIL receptor 2</td>
+      <td>TNFRSF10B</td>
+      <td>2.29 · 10−4</td>
+      <td>3.04 · 10−2</td>
+    </tr>
+    <tr>
+      <td>Q5SWA1</td>
+      <td>Protein phosphatase 1 subunit 15B</td>
+      <td>PPP1R15B</td>
+      <td>3.35 · 10−4</td>
+      <td>4.25 · 10−2</td>
+    </tr>
+    <tr>
+      <td>Q6PJF5</td>
+      <td>iRhom2</td>
+      <td>RHBDF2</td>
+      <td>3.42 · 10−4</td>
+      <td>4.16 · 10−2</td>
+    </tr>
+    <tr>
+      <td>P61225</td>
+      <td>Ras-related protein Rap-2b</td>
+      <td>RAP2B</td>
+      <td>4.27 · 10−4</td>
+      <td>4.98 · 10−2</td>
+    </tr>
+    <tr>
+      <td>P28482</td>
+      <td>Mitogen-activated protein kinase 1</td>
+      <td>MAPK1</td>
+      <td>3.37 · 10−3</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>P27361</td>
+      <td>Mitogen-activated protein kinase 3</td>
+      <td>MAPK3</td>
+      <td>5.34 · 10−3</td>
+      <td>0.32</td>
+    </tr>
+    <tr>
+      <td>P62258</td>
+      <td>14-3-3 protein epsilon</td>
+      <td>YWHAE</td>
+      <td>6.61 · 10−3</td>
+      <td>0.35</td>
+    </tr>
+    <tr>
+      <td>P78536</td>
+      <td>ADAM17</td>
+      <td>ADAM17</td>
+      <td>8.07 · 10−3</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <td>P63104</td>
+      <td>14-3-3 protein zeta/delta</td>
+      <td>YWHAZ</td>
+      <td>9.14 · 10−3</td>
+      <td>0.41</td>
+    </tr>
+    <tr>
+      <td>P27348</td>
+      <td>14-3-3 protein theta</td>
+      <td>YWHAQ</td>
+      <td>1.20 · 10−2</td>
+      <td>0.45</td>
+    </tr>
+    <tr>
+      <td>P31947</td>
+      <td>14-3-3 protein sigma</td>
+      <td>SFN</td>
+      <td>2.19 · 10−2</td>
+      <td>0.63</td>
+    </tr>
+    <tr>
+      <td>Q04917</td>
+      <td>14-3-3 protein eta</td>
+      <td>YWHAH</td>
+      <td>2.33 · 10−2</td>
+      <td>0.65</td>
+    </tr>
+    <tr>
+      <td>P61981</td>
+      <td>14-3-3 protein gamma</td>
+      <td>YWHAG</td>
+      <td>3.15 · 10−2</td>
+      <td>0.75</td>
+    </tr>
+    <tr>
+      <td>P31946</td>
+      <td>14-3-3 protein alpha/beta</td>
+      <td>YWHAB</td>
+      <td>6.53 · 10−2</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>P51812</td>
+      <td>Ribosomal protein S6 kinase alpha-3</td>
+      <td>RPS6KA3</td>
+      <td>6.53 · 10−2</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+
 We confirmed the interaction between iRhom2 and FRMD8 by immunoprecipitation. C-terminally V5-tagged FRMD8 co-immunoprecipitated with either iRhom1-3xHA or iRhom2-3xHA (Figure 1B). Conversely, we pulled down both iRhom1-3xHA and iRhom2-3xHA with an antibody against the V5 tag. Finally, we were also able to co-immunoprecipitate endogenous FRMD8 with iRhom2-3xHA (Figure 1—figure supplement 1B). Together these results identify FRMD8 as a bona fide binding partner of iRhom1 and iRhom2 in human cells.
 
-## FRMD8 is required for iRhom function
+### FRMD8 is required for iRhom function
 
 As its name indicates, FRMD8 is a FERM (4.1/ezrin/radixin/moesin) domain-containing protein. It is predicted to be a soluble cytoplasmic protein, and the only report about its function describes it as binding to the Wnt accessory receptor low-density lipoprotein receptor-related protein 6 (LRP6), and negatively regulating Wnt signalling (Kategaya et al., 2009). To investigate the functional significance of FRMD8 binding to iRhoms, we examined the effects of loss of FRMD8 on iRhom function in HEK293T cells, using both siRNA and CRISPR/Cas9-mediated gene deletion (Figure 2A,B). In both cases, loss of FRMD8 drastically reduced the protein levels of mature ADAM17 (Figure 2A,B). This effect was specific to ADAM17, as the maturation of its closest homologue, ADAM10, was unaffected by loss of FRMD8 (Figure 2B). Moreover, mature ADAM17 levels were rescued by expression of FRMD8-V5 in FRMD8 knockout HEK293T cells (Figure 2C), confirming that the phenotype was caused by FRMD8 loss. Finally, in addition to this reduction of mature ADAM17 caused by FRMD8 loss, we found a striking loss of ADAM17, but not ADAM10, on the cell surface (Figure 2D). These phenotypes partially phenocopy the loss of iRhoms (Christova et al., 2013; Grieve et al., 2017), consistent with FRMD8 being needed for iRhoms to act as positive regulators of ADAM17.
 
@@ -43,13 +265,21 @@ As its name indicates, FRMD8 is a FERM (4.1/ezrin/radixin/moesin) domain-contain
 
 We also examined the consequences of loss of FRMD8 on ADAM17-dependent signalling. The shedding of alkaline phosphatase (AP)-tagged EGF receptor ligands AREG and HB-EGF, after stimulation with phorbol 12-myristate 13-acetate (PMA), were both substantially reduced in FRMD8 knockout cells (Figure 2E). To exclude the possibility that the defect in FRMD8 knockout cells is an inability to respond to PMA, we measured both PMA-stimulated and unstimulated, constitutive shedding of AP-tagged TGFα, another major EGFR ligand. Again, FRMD8 knockout cells released significantly less AP-TGFα compared to wild-type cells, both after stimulation but also after 20 hr of constitutive shedding (Figure 2F), implying that mutant cells had fundamental defects in their ability to shed ADAM17 ligands, regardless of PMA stimulation. To demonstrate that the release of ligands was indeed caused by metalloprotease shedding and not simply an indication of leakage caused by cell death, we showed that it was sensitive to the ADAM10/17 inhibitor GW280264X (GW) (Figure 2E,F). Overall, as with ADAM17 maturation, the shedding defects in FRMD8-deficient cells resemble those caused by the loss of iRhoms.
 
-## FRMD8 binds to the cytoplasmic iRhom2 N-terminus and regulates mature ADAM17 levels
+### FRMD8 binds to the cytoplasmic iRhom2 N-terminus and regulates mature ADAM17 levels
 
 As described above, iRhoms regulate ADAM17 function at multiple stages: from ER-to-Golgi trafficking, to the activation of the sheddase at the cell surface. To address where FRMD8 fits in this long-term relationship between iRhoms and ADAM17, we started by analysing the FRMD8 binding site within iRhom2. As a cytoplasmic protein, FRMD8 was likely to bind to the only substantial cytoplasmic region of iRhom2, its N-terminus. We therefore made a set of iRhom2-3xHA N-terminal deletion constructs (Figure 3A) to locate the binding site. Deletion of the first 200 amino acids in the N-terminus of iRhom2 (iRhom2∆200) did not disrupt FRMD8 binding, but no interaction was detected in mutants greater than ∆300 (Figure 3B), implying that the region between 200 and 300 amino acids was necessary for FRMD8 binding. An internal deletion of amino acids 201–300 within iRhom2 (iRhom2∆201-300) led to the loss of exogenous FRMD8 binding (Figure 3C), confirming that the FRMD8 binding site lies within this region. In line with this, an iRhom1/2 DKO cell line reconstituted with iRhom2∆201-300 showed a similar deficiency to FRMD8 KO cells in ADAM17-mediated shedding of AREG (compare Figures 3D and 2E). This reduction in shedding correlates with a reduction in the level of mature ADAM17 (Figure 3E). Overall, this makes the iRhom2∆201-300 mutant a useful tool to study the loss of FRMD8 binding to iRhom2 and highlights that FRMD8 binding affects levels of mature ADAM17, presumably either through controlling ADAM17 maturation or stability. Interestingly, the FRMD8 binding site is also absent in a mouse iRhom2 mutant called curly-bare (cub), which lacks residues 1–268 (Hosur et al., 2014; Siggs et al., 2014). Sequence alignment shows that the deletion of 268 amino acids in mouse iRhom2 corresponds to the loss of residues 1–298 in the human protein (Figure 3—figure supplement 1A). Consistent with this mapping data, we found that whereas full-length mouse iRhom2 bound human FRMD8, the cub mutant cannot (Figure 3—figure supplement 1B). This failure of FRMD8 binding presumably contributes to the complex defects that underlie the cub phenotype (Johnson et al., 2003; Hosur et al., 2014; Siggs et al., 2014).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/35012/elife-35012-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic representation of truncated human iRhom2 constructs used in (B–E). (B, C) Lysates and anti-HA immunoprecipitation (HA-IP) from HEK293T cells transiently co-transfected with FRMD8-V5 and either empty vector (vect) or truncated human iRhom2-3xHA constructs were immunoblotted for V5 and HA. (D) iRhom1/2 double knockout HEK293T cells stably expressing empty vector (vect) or human iRhom2-3xHA constructs were transiently transfected with alkaline phosphatase (AP)-tagged AREG and then incubated with 200 nM PMA or with DMSO for 30 min. AP activity was measured in supernatants and cell lysates. Each experiment was performed in biological triplicates. The results of three independent shedding experiments are shown. Statistical analysis was performed using a Mann-Whitney test. ****=p value<0.0001. (E) Lysates from iRhom1/2 double knockout HEK293T cells transiently transfected with empty vector (vect) or human iRhom2-3xHA constructs were immunoblotted for ADAM17 and HA.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/35012/elife-35012-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The region required for FRMD8 binding is highlighted in red. Conserved phosphorylation sites that have been mutated to alanine in the iRhom2pDEAD (Figure 10—figure supplement 1) are marked in yellow. Grey residues indicate additional phosphorylation sites that have been reported on PhosphoSitePlus (www.phosphosite.org). An asterisk (*) indicates positions which have a fully conserved residue, a colon (:) indicates strongly similar properties of the amino acids, and a period (.) indicates weakly similar properties according to the Clustal Omega tool. (B) Lysates and anti-HA immunoprecipitation (HA-IP) from HEK293T cells transiently transfected with FRMD8-V5 and either empty vector (vect), mouse iRhom2WT (WT) or Rhom2cub (Δ268) were immunoblotted for V5 and HA.
+
 Combined, these data show that FRMD8 is recruited to a discrete 201–300 amino acid region of the iRhom2 N-terminus, and that this binding is required for sufficient levels of mature ADAM17, as well as ADAM17-dependent shedding.
 
-## FRMD8, iRhom2, and ADAM17 form a tripartite complex
+### FRMD8, iRhom2, and ADAM17 form a tripartite complex
 
 We next investigated the nature of a putative tripartite complex between iRhom2, FRMD8 and ADAM17. Previous work has shown a strong interaction between iRhom2 and ADAM17 (Adrain et al., 2012; McIlwain et al., 2012; Grieve et al., 2017), yet how FRMD8 intersects with this complex is not known. When performing an immunoprecipitation of FRMD8, we found both immature and mature ADAM17 as well as iRhom2 (Figure 4A). This indicates that FRMD8 does indeed form a tripartite complex with ADAM17 and iRhom2. To test this further, we performed a series of pairwise co-immunoprecipitations in the absence of FRMD8, ADAM17 or iRhoms. First we tested the requirement for ADAM17 in the iRhom2/FRMD8 interaction. We found that exogenous FRMD8 and iRhom2 co-immunoprecipitated with each other in ADAM17 knockout cells (Figure 4B). In turn, iRhom2 and ADAM17 were still able to interact with each other in FRMD8 knockout cells (Figure 4C), showing that FRMD8 is not essential for the iRhom/ADAM17 sheddase complex to form. In contrast, FRMD8 did not pull down ADAM17 in cells mutant for both iRhoms (Figure 4D). This demonstrated that there is no direct link between FRMD8 and ADAM17; instead both bind simultaneously to iRhom2. Supporting this, FRMD8 co-immunoprecipitated with pro- or mature ADAM17 in iRhom1/2 DKO cells reconstituted with iRhom2WT, but not with iRhom2∆201-300 (Figure 4D), the mutant that does not bind to FRMD8 (Figure 3C). FRMD8 binds to both iRhom2/proADAM17 and iRhom2/mature ADAM17 complexes but associates preferentially with iRhom2/mature ADAM17 complexes (Figure 4A,D), which have been shown to exist at the cell surface (Grieve et al., 2017; Cavadas et al., 2017). This is consistent with the observation of specific effects of FRMD8 loss on mature ADAM17 at the cell surface, but not immature ADAM17 (Figure 2A–C).
 
@@ -57,7 +287,7 @@ We next investigated the nature of a putative tripartite complex between iRhom2,
 
 **Figure 4.:** (A) Lysates, anti-HA and anti-V5 immunoprecipitations (HA-IP, V5–IP) of HEK293T cells co-expressing human iRhom2-3xHA and human FRMD8-V5 were immunoblotted for ADAM17, HA and V5. (B) Lysates of wild-type (WT) and ADAM17 knockout (KO) HEK293T cells were transiently transfected with human iRhom2-3xHA and FRMD8-V5 (where indicated), anti-HA and anti-V5 immunoprecipitated (HA-IP; V5–IP) and immunoblotted for ADAM17, HA, and V5. (C) Lysates of WT and FRMD8 KO HEK293T cells stably expressing human iRhom2-3xHA were anti-HA immunoprecipitated (HA-IP) and stained for ADAM17 and HA. Nonspecific bands are indicated by an asterisk. (D) Lysates of WT and iRhom1/2 double knockout (DKO) HEK293T cells stably expressing human iRhom2WT-3xHA or iRhom2Δ201-300-3xHA were anti-V5 immunoprecipitated (V5–IP) and immunoblotted for ADAM17, HA and V5.
 
-## FRMD8 recruitment promotes cell surface localisation of iRhom2 and ADAM17
+### FRMD8 recruitment promotes cell surface localisation of iRhom2 and ADAM17
 
 To further investigate a potential role for FRMD8 at the cell surface, we first assessed its effects on iRhom2 localisation by immunofluorescence. Overexpression of FRMD8-V5 in iRhom1/2 DKO cells reconstituted with wild-type iRhom2 led to a striking increase in plasma membrane iRhom2 (Figure 5A), which in wild-type cells is almost exclusively observed within the endoplasmic reticulum (Figure 1—figure supplement 1A). As a control, the iRhom2∆300 mutant, which cannot bind to FRMD8 (Figure 3B), did not undergo the same ER-to-plasma membrane relocalisation upon FRMD8 overexpression. Indicating a reciprocal relationship between the two proteins, we also observed that the iRhom2 N-terminus was required for FRMD8 localisation at the cell surface (Figure 5A,B).
 
@@ -67,7 +297,7 @@ To further investigate a potential role for FRMD8 at the cell surface, we first 
 
 To test whether FRMD8 is sufficient to target iRhom2 to the cell surface, we fused FRMD8 to the N-terminus of the ER-localised iRhom2∆300 mutant (FRMD8-iRhom2∆300). Strikingly, we saw that the normal ER localisation of iRhom2∆300 (Figure 5D) shifted to the plasma membrane upon fusion to FRMD8 (Figure 5E). Furthermore, we found that the localisation of ADAM17-V5 followed that of iRhom in both conditions: in iRhom2∆300 cells ADAM17 localised to the ER, and in FRMD8-iRhom2∆300 cells it was readily observed at the cell surface. We also noted that FRMD8-iRhom2∆300 showed strikingly higher total levels of iRhom2 (Figure 5E), which hinted that FRMD8 may play a role in the protein turnover of iRhoms at the cell surface. In line with these observations, we found that FRMD8-iRhom2∆300 was much more stable compared to iRhom2∆300 or iRhom2WT as seen in cells incubated with cycloheximide (CHX) to block the synthesis of new proteins (Figure 5F). Taken together, these data suggest that FRMD8 binding to iRhom2 stabilises the iRhom2 pool in the late secretory pathway and increases the cell surface localisation of the iRhom2/ADAM17 sheddase complex.
 
-## FRMD8 recruitment protects iRhom2/ADAM17 from lysosomal degradation
+### FRMD8 recruitment protects iRhom2/ADAM17 from lysosomal degradation
 
 Previous studies have shown that the cytoplasmic N-terminal region of iRhom2 is required to prevent lysosomal degradation of ADAM17 (Grieve et al., 2017). Therefore, we questioned whether the absence of FRMD8 recruitment to the iRhom2 N-terminus led to delivery of iRhom and ADAM17 to lysosomes. By immunofluorescence microscopy, iRhom2WT localisation is indistinguishable from iRhom2∆300 (Figure 6A,B) within the endoplasmic reticulum (Figure 1—figure supplement 1A). However, upon treatment with the lysosomal degradation inhibitor, bafilomycin A1, both proteins accumulated in LAMP1-positive lysosomal puncta (Figure 6C,D). This suggests that there is a constant turnover of iRhom2 through the endo-lysosomal pathway, with iRhoms presumably cycling via the plasma membrane, before being degraded. Interestingly, unlike the partial colocalisation between LAMP1 and iRhom2WT (Figure 6C), iRhom2∆300 overlapped completely with LAMP1 (indicated by the arrows in Figure 6D). This confirmed that in the absence of FRMD8 recruitment, iRhom2 is constitutively sent to lysosomes. Importantly, this lysosomal pool of iRhom2∆300 also colocalised with ADAM17-V5 after bafilomycin treatment (highlighted with arrows in Figure 6F). All these data together indicate that the iRhom2/ADAM17 complex follow the same fate in the absence of FRMD8 recruitment (Figure 6E,F). Using a complementary approach, we tested the stability of ADAM17 in FRMD8 knockout cells. After 16 hr of treatment with the lysosomal degradation inhibitors bafilomycin and ammonium chloride, the mature form of ADAM17 was partially restored (Figure 6G; Figure 7—figure supplement 1B).
 
@@ -77,7 +307,15 @@ Previous studies have shown that the cytoplasmic N-terminal region of iRhom2 is 
 
 Combined, these results explain the reduced level of mature ADAM17 in FRMD8 knockout cells: it implies that the defect caused by loss of FRMD8 is not a failure of ADAM17 maturation, but instead a failure to stabilise the mature form. In line with this interpretation, the proteasomal inhibitor MG132 had no effect on the stability of mature ADAM17 (Figure 7A). We conclude that FRMD8 binding to iRhom2 acts to promote ADAM17 function by ensuring its stability after its maturation in the trans-Golgi network.
 
-## FRMD8 functions to stabilise levels of iRhoms at the cell surface
+![Figure 7.](https://cdn.elifesciences.org/articles/35012/elife-35012-fig7-v2.jpg)
+
+**Figure 7.:** (A) Unpermeabilised WT (black) and FRMD8 KO HEK293T (cyan) cells stably expressing human iRhom2-3xHA were immunostained on ice for HA. Wild-type HEK293T cells immunostained for HA served as a negative control (grey). (B) Cells were permeabilised and stained at room temperature with an anti-HA antibody. Immunostaining with the Alexa Fluor 488-coupled secondary antibody served as a control (grey). The flow cytometry graphs shown are one representative experiment out of three experiments. The geometric mean fluorescence was calculated for each experiment using FlowJo software. Statistical analysis was performed using an unpaired t-test; ns = p value>0.05; *=p value<0.05. (C) Lysates of HEK293T cells stably expressing human iRhom2-3xHA and transiently transfected with FRMD8-V5 (where indicated) were analysed by western blot for iRhom2 levels using anti-HA, anti-V5 and anti-actin immunostaining. Nonspecific bands are marked with an asterisk. (D) Lysates of WT and FRMD8 KO HEK293T cells stably expressing human iRhom2-3xHA (where indicated) were immunoblotted for HA, FRMD8 and actin. An asterisk marks nonspecific bands. (E) FRMD8 mRNA levels relative to actin mRNA levels were determined by TaqMan PCR in cells used in (D).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/35012/elife-35012-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) iRhom1/2 double knockout HEK293T cells stably expressing iRhom2WT-3xHA, iRhom2Δ300-3xHA or FRMD8-iRhom2Δ300-3xHA were treated with 100 µg/ml cycloheximide (CHX) for the indicated time (0–8 hr) to block protein synthesis. Cell lysates were immunoblotted for HA and actin. (B) Cell lysates of wild-type (WT) and FRMD8 knockout (KO) HEK293T cells treated with 10 µM MG-132 (MG), 200 nM bafilomycin A1 (Baf) or 50 mM ammonium chloride (NH4Cl) for 16 hr were immunoblotted for ADAM17, FRMD8, and actin. An asterisk marks a nonspecific band. (C) N-glycosylation of iRhom2 was analysed using EndoH and PNGase to distinguish ER/cis-Golgi (EndoH sensitive) and late Golgi localisation (EndoH resistant). Lysates of WT and FRMD8 KO HEK293T cells transiently transfected with mouse iRhom2-3xHA were deglycosylated with EndoH or PNGase and then immunoblotted for mouse iRhom2, human FRMD8 and actin. An asterisk marks a nonspecific band. (D) Lysates of HEK293T cells stably expressing human iRhom1-3xHA and transfected with FRMD8-V5 (where indicated) were immunoblotted for HA, V5, and actin. (E) Levels of ADAM17 were analysed in HEK293T-iRhom2-3xHA and HEK293T WT cells transfected with siRNAs targeting iRhom2 where indicated. Cell lysates were immunoblotted using an anti-ADAM17 or anti-actin antibody. An asterisk marks a nonspecific band.
+
+### FRMD8 functions to stabilise levels of iRhoms at the cell surface
 
 If FRMD8 acts as a stabilising factor for the plasma membrane-localised iRhom2/ADAM17 sheddase complex, a difference in the cell surface level of iRhom2 is expected in the absence of FRMD8. Most tagged iRhom2 is ER-localised (Figure 1—figure supplement 1A, Figure 6A) and the cell surface fraction is relatively small (Maney et al., 2015; Grieve et al., 2017). Therefore, we used cell surface immunostaining of iRhom2 followed by flow cytometry to measure specifically the pool of iRhom2 at the cell surface. In the absence of FRMD8 we detected a significant loss of cell surface iRhom2 (Figure 7A). In line with our observation that cell surface iRhom2 represents only a small fraction of the total pool, a reduction of total iRhom2 levels was not detectable (Figure 7B). This further supports our observations that FRMD8 binding to iRhoms is required to stabilise the cell surface pool of iRhoms. Consistent with our conclusion that FRMD8 primarily functions late in the iRhom2/ADAM17 relationship, we detected no defects in the ER-based iRhom2/proADAM17 interaction in FRMD8 knockout cells (Figure 4C), nor in the trafficking of iRhom2 from the ER to the Golgi (Figure 7—figure supplement 1C).
 
@@ -91,11 +329,23 @@ To ensure that our conclusion that FRMD8 stabilises iRhoms was not distorted by 
 
 To summarise our results to this point, we have discovered that by binding to the iRhom2 cytoplasmic N-terminus, FRMD8 stabilises the cell surface iRhom2/ADAM17 sheddase complex. In the absence of FRMD8 recruitment to iRhom2, this enzyme complex is sent to lysosomes and degraded.
 
-## FRMD8 binding to iRhom2 is essential for inflammatory signalling in human macrophages
+### FRMD8 binding to iRhom2 is essential for inflammatory signalling in human macrophages
 
 We tested the pathophysiological significance of our conclusions by analysing the consequence of loss of FRMD8 in human macrophages, which release TNFα in response to tissue damage and inflammatory stimuli. To generate mutant human macrophages, we used CRISPR/Cas9 to knock out FRMD8 in an iPSC line that had previously been generated from dermal fibroblasts of a healthy female donor (Fernandes et al., 2016). The FRMD8 knockout and control iPSCs were analysed for deletions in the FRMD8 gene by PCR (Figure 9—figure supplement 1A), and a normal karyotype was confirmed by single nucleotide polymorphism (SNP) analysis (Figure 9—figure supplement 1B) before differentiation into macrophages (Figure 9A). These mutant macrophages expressed no detectable FRMD8 and, as in the HEK293T cells, showed severely reduced levels of mature ADAM17 (Figure 9B). When challenged with the inflammatory trigger LPS, TNFα shedding from the cells, as measured by ELISA, was reduced (Figure 9C). Confirming the expected specificity, the ADAM10 inhibitor GI254023X (GI) had no effect on TNFα release from these cells, whereas GW, an inhibitor of both ADAM10 and ADAM17, further reduced TNFα release (Figure 9—figure supplement 1C). Although shedding was inhibited, TNFα expression by LPS was normal in these cells (Figure 9—figure supplement 1D). These results demonstrate that our conclusions about the requirement for FRMD8 in ADAM17 function in cell culture models does indeed apply to human macrophages.
 
-## Loss of FRMD8 in mice highlights its physiological role in stabilising the iRhom/ADAM17 complex
+![Figure 9.](https://cdn.elifesciences.org/articles/35012/elife-35012-fig9-v2.jpg)
+
+**Figure 9.:** (A) Schematic representation of the differentiation protocol of iPSCs into macrophages based on (van Wilgenburg et al., 2013). Scale bars = 10 μm. (B) Lysates of iPSC-derived macrophages (on day seven after harvest from EBs) were immunoblotted for ADAM17, FRMD8, and actin. Western blots from three experiments were quantified using ImageJ with actin serving as the loading control. (C) 25,000 iPSC-derived macrophages were either left unstimulated or stimulated with 50 ng/ml LPS for 4 hr. TNFα concentration in the cell supernatants was measured by ELISA and then normalised to the protein concentration in macrophage cell lysates to adjust the cytokine release for potential differences in cell numbers. Each experiment was performed in biological triplicates. Data from three independent experiments were statistically analysed using a Mann-Whitney test; ***=p value<0.001; ****=p value<0.0001. (D, E) Lysates from tissues derived from Frmd8-/- or Rhbdf2-/- and their wild-type littermates were immunoblotted for ADAM17, FRMD8, iRhom2 and actin. Blots from three experiments using three different littermates of Frmd8-/- and Frmd8+/+ mice were quantified using ImageJ with actin serving as the loading control.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/35012/elife-35012-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** (A) Sequencing of the genomic DNA isolated from clonal FRMD8 KO iPSCs shows a 1-nt insertion (clone 1) and a 7-nt and 10-nt deletion (clone 2). The targeting sequence of the sgRNA is shown in bold; small letters indicate the sequence within the intronic region; the protospacer adjacent motif (PAM) sequence underlined. (B) Parental wild-type and FRMD8 KO iPSC lines were karyotyped by SNP array. Detected copy number variations are indicated in red (DNA copy number loss in the indicated region) and green (DNA copy number increase). The AH017-13 iPSC line used was derived from a female donor, therefore the Y chromosome is marked in red (loss of Y chromosome DNA). (C) 25,000 iPSC-derived macrophages were either left unstimulated, stimulated with 50 ng/ml LPS, or with 50 ng/ml LPS and simultaneously with 2 μM GI or 2 μM GW for 4 hr. TNFα concentration in the cell supernatants was measured by ELISA and then normalised to the protein concentration in macrophage cell lysates to adjust the cytokine release for potential differences in cell numbers. Each experiment was performed in biological triplicates. Data from three independent experiments were statistically analysed using a Mann-Whitney test; ns = p value>0.05; ****=p value<0.0001. (D) TNFα mRNA levels relative to actin mRNA levels were measured by TaqMan PCR in WT and FRMD8 KO iPSC-derived macrophages without stimulation and after stimulation with 200 ng/ml LPS for 0.5 hr.
+
+![Figure 9—figure supplement 2.](https://cdn.elifesciences.org/articles/35012/elife-35012-fig9-figsupp2-v2.jpg)
+
+**Figure 9—figure supplement 2.:** (A) Schematic representation of the insertion of a lacZ/neomycin cassette into the Frdm8 locus in the ES cells used to generate Frmd8-/- mice. (B) Offspring of Frmd8+/- × Frmd8+/- (HET x HET) crosses listed by genotype: Frmd8+/+(WT), Frmd8+/- (HET), and Frmd8-/- (KO). Two Frmd8 mouse strains were bred (both in BL6 background): one with the entire lacZ/neomycin cassette inserted and one strain in which the neomycin resistance gene has been removed from the cassette. (C) Lysates from skin derived from Frmd8-/-, Rhbdf2-/- mice and their wild-type littermate were immunoblotted for iRhom2 and actin.
+
+### Loss of FRMD8 in mice highlights its physiological role in stabilising the iRhom/ADAM17 complex
 
 To investigate further the physiological significance of our discovery of the role of FRMD8 in stabilising iRhom/ADAM17 sheddase complexes, we analysed the levels of ADAM17 and iRhom2 in tissues from FRMD8-deficient mice. These mice were generated from embryonic stem (ES) cells from the KOMP Repository, University of California Davis, in which all coding exons (2-11) of the Frmd8 gene were deleted (Figure 9—figure supplement 2A). Frmd8-/- mice are viable (Figure 9—figure supplement 2B) and fertile. The knockout was confirmed by western blot (Figure 9D). Western blot analysis of tissues of Frmd8-/- mice showed that mature ADAM17 levels were reduced in all tissues examined compared to tissues from wild-type littermates (Figure 9D). This confirms that FRMD8 controls the level of mature ADAM17 in vivo. Of note, there was a major reduction of mature ADAM17 levels in the brain, a tissue in which iRhom2 in almost completely absent but iRhom1 levels are high (Christova et al., 2013; Li et al., 2015). This supports our hypothesis that FRMD8 regulates mature ADAM17 levels through iRhom1 as well as iRhom2. We also tested in vivo our conclusion that FRMD8 loss destabilises endogenous iRhoms (Figure 8B). Using an antibody that we had previously generated against mouse iRhom2 (Adrain et al., 2012), we analysed iRhom2 levels in Frmd8+/+ and Frmd8-/- mouse tissues. In lung and skin, both tissues with high iRhom2 expression (Christova et al., 2013), we detected a strong decrease of iRhom2 protein levels in Frmd8-/- compared to wild-type (Figure 9E, Figure 9—figure supplement 2C). Tissue from Rhbdf2-/- mice served as a control for the iRhom2 antibody specificity (Figure 9E, Figure 9—figure supplement 2C). The reduction of endogenous iRhom2 and mature ADAM17 levels in mouse lung was about 75% (Figure 9E), which is comparable to the reduction of mature ADAM17 levels in iPSC-derived human macrophages (Figure 9B). In summary, our experiments in mice confirm the physiological importance of our prior conclusions: FRMD8 is required in vivo to regulate the stability of the iRhom/ADAM17 sheddase complex and is therefore a previously unrecognised essential component in regulating cytokine and growth factor signalling.
 
@@ -104,6 +354,14 @@ To investigate further the physiological significance of our discovery of the ro
 ADAM17 is the shedding enzyme that is responsible for not only the activation of inflammatory TNFα signalling, but also the release from the cell surface of multiple EGF family growth factors and other proteins. Its regulation has therefore received much attention, both from the perspective of fundamental cell biology and because of the proven therapeutic significance of blocking TNFα (Monaco et al., 2015). Here we report that FRMD8 is a new component of the regulatory machinery that controls the release of ADAM17 substrates, including TNFα. We identified FRMD8 as a prominent binding partner of iRhoms, which are rhomboid-like proteins that act as regulatory cofactors of ADAM17. Our subsequent experiments demonstrate that although FRMD8 binds to iRhoms throughout their life cycle, its function appears to be confined to the later stages of their role in regulating ADAM17. FRMD8 stabilises the iRhom2/ADAM17 complex at the cell surface, ensuring it is available to shed TNFα and growth factors. We took advantage of iPSC technology to generate human FRMD8 knockout macrophages, allowing us to confirm that the mechanistic conclusions derived mostly from HEK293T cell models were indeed relevant to the human cells that provide the primary inflammatory response. Finally, tissues from FRMD8 knockout mice demonstrate the physiological importance of FRMD8 in a whole organism, and confirm that it stabilises the iRhom/mature ADAM17 complex in vivo.
 
 Bringing together all our results, we propose the following model of FRMD8 function in ADAM17-dependent signalling: FRMD8 binds to the cytoplasmic domain of iRhoms throughout the secretory pathway, forming a tripartite complex when iRhoms are also bound to ADAM17. Despite this long-term relationship, we have found no evidence for a functional role for FRMD8 in ER-to-Golgi trafficking or ADAM17 maturation. Instead, FRMD8 acts later, to prevent the endolysosomal degradation of the iRhom/ADAM17 complex (Figure 10). The exact molecular detail of FRMD8 action on the iRhom2/ADAM17 sheddase complex is unclear. It is possible that FRMD8 increases the delivery of the iRhom2/ADAM17 sheddase complex from the Golgi apparatus to the cell surface, stabilises the complex by preventing its internalisation, or promotes the endosomal retrieval to the cell surface. In all cases, it is likely that the recruitment of additional proteins is required. Therefore, understanding the molecular interactions of FRMD8, as well as the FRMD8/iRhom2/mature ADAM17 complex at the cell surface, will shed light into the molecular mechanism.
+
+![Figure 10.](https://cdn.elifesciences.org/articles/35012/elife-35012-fig10-v2.jpg)
+
+**Figure 10.:** Schematic representation of the role of FRMD8 in the iRhom2/ADAM17 pathway: under wild-type conditions ADAM17 and iRhom2 are stabilised by FRMD8 and thereby protected from degradation through the endolysosmal pathway.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/35012/elife-35012-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** Where indicated cells have been stimulated with 200 nM PMA for 30 min.
 
 As we have previously reported, it is the iRhom2/ADAM17 complex that is responsible for shedding ADAM17 substrates including TNFα. Without FRMD8, iRhoms and mature ADAM17 are destabilised and the cell cannot shed TNFα in response to an inflammatory challenge. Combined with our previous studies (Grieve et al., 2017), this work has changed our perspective on ADAM17, the central enzyme in cytokine and growth factor shedding. Our evidence implies that it would be more appropriate to consider it as the active subunit of a regulatory complex at the cell surface, where iRhoms provide regulatory functions (Maney et al., 2015; Cavadas et al., 2017; Grieve et al., 2017), and FRMD8 maintains the stability of the iRhom/ADAM17 complex post-ADAM17 maturation. It is essential that a pool of the sheddase is available on the cell surface to execute, for example, rapid cytokine release in response to inflammatory signals induced by bacterial infection.
 
@@ -119,17 +377,937 @@ In conclusion, our work demonstrates the cellular and physiological significance
 
 ## Materials and methods
 
-## Molecular cloning
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>Frmd8-/-: C57BL/6- Frmd8tm1(KOMP)Vlcg</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>FRMD8 KO mice generated as described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>WT control: C57BL/6</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>WT control for FRMD8 KO mice</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (mouse)</td>
+      <td>Rhbdf2-/-: C57BL/6 -Rhbdl6A22</td>
+      <td>(Adrain et al., 2012)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T cells</td>
+      <td>Freeman lab</td>
+      <td>RRID:CVCL_0063</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T human iRhom1WT</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>HEK293T cells transduced with pLEX.puro-human iRhom1WT-3xHA</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T human iRhom2WT</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>HEK293T cells transduced with pLEX.puro-human iRhom2WT-3xHA</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T human UNC93B1</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>HEK293T cells transduced with pLEX.puro-human UNC93B1-3xHA</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T FRMD8 KO</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>CRISPR/Cas9-mediated KO cell line as described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T FRMD8 KO + human iRhom2WT</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>FRMD8 KO cells transduced with pLEX.puro-human iRhom2WT-3xHA</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T endogenous iRhom2-3xHA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>CRISPR/Cas9-mediated knock-in cell line as described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T iRhom1/iRhom2 double-knockout (DKO)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>CRISPR/Cas9-mediated KO cell line as described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T iRhom1/iRhom2 DKO + human iRhom2WT</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>DKO cells transduced with pLEX.puro-human iRhom2WT-3xHA</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T iRhom1/iRhom2 DKO + human iRhom2Δ300</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>DKO cells transduced with pLEX.puro-human iRhom2Δ300-3xHA</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T iRhom1/iRhom2 DKO + human FRMD8- iRhom2Δ300</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>DKO cells transduced with pLEX.puro-human FRMD8- iRhom2Δ300-3xHA</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>HEK293T iRhom1/iRhom2 DKO + human iRhom2Δ 201–300</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>DKO cells transduced with pLEX.puro-human iRhom2Δ201-300-3xHA</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hiPSC line AH017-13</td>
+      <td>(Fernandes et al., 2016)</td>
+      <td>James Martin Stem Cell Facility</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hiPSC line AH017-13 FRMD8 KO clone 1 (clone F1)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>CRISPR/Cas9-mediated KO cell line as described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hiPSC line AH017-13 FRMD8 KO clone 2 (clone G6)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>CRISPR/Cas9-mediated KO cell line as described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Cell line (human)</td>
+      <td>hiPSC line AH017-13 WT (clone E4)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>unedited WT control for FRMD8 KO iPSCs clones</td>
+    </tr>
+    <tr>
+      <td>Cell line (mouse)</td>
+      <td>Frmd8-/- ES cells: C57BL/ 6NTac-Frmd8tm1(KOMP)Vlcg (clone 17364AC3)</td>
+      <td>KOMP</td>
+      <td>RRID:IMSR_KOMP: VG17364-1-Vlcg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-actin-HRP, mouse monoclonal (clone AC-15)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#A3854; RRID:AB_262011</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ADAM10, mouse monoclonal (clone SHM14)</td>
+      <td>BioLegend</td>
+      <td>Cat#352702; RRID:AB_10897813</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ADAM10, rabbit polyclonal</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#14194</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ADAM17, mouse monoclonal (clone A300E)</td>
+      <td>(Yamamoto et al., 2012); received from Stefan Düsterhöft</td>
+      <td>N/A</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-ADAM17, rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat#ab39162; RRID:AB_722565</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-calnexin, rabbit polyclonal</td>
+      <td>Santa Cruz</td>
+      <td>Cat#sc-11397; RRID:AB_2243890</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-FRMD8, rabbit polyclonal</td>
+      <td>Abcam</td>
+      <td>Cat#ab169933</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA, rabbit polyclonal</td>
+      <td>Santa Cruz</td>
+      <td>Cat#sc-805; RRID:AB_631618</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA, rat monoclonal (clone 3F10)</td>
+      <td>Roche</td>
+      <td>Cat#11867423001; RRID:AB_10094468</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA tag, rabbit monoclonal (C29F4)</td>
+      <td>CST</td>
+      <td>Cat#3724; RRID:AB_1549585</td>
+      <td>dilution is described in materials and methods, used at 1:1000 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-HA-HRP, rat monoclonal (clone 3F10)</td>
+      <td>Roche</td>
+      <td>Cat#12013819001; RRID:AB_390917</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-iRhom2, rabbit polyclonal</td>
+      <td>(Adrain et al., 2012)</td>
+      <td>N/A</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ant-LAMP1, mouse monoclonal (H4A3)</td>
+      <td>Santa Cruz</td>
+      <td>Cat#sc-20011; RRID:AB_626853</td>
+      <td>dilution is described in materials and methods, used at 1:250 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-transferrin receptor 1, mouse monoclonal (clone H68.4)</td>
+      <td>Thermos Fisher Scientific</td>
+      <td>Cat#13–6800; RRID:AB_86623</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-V5, goat polyclonal</td>
+      <td>Santa Cruz</td>
+      <td>Cat#sc-83849; RRID:AB_2019670</td>
+      <td>dilution is described in materials and methods, used at 1:1000 for IF</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-goat-HRP, mouse monoclonal</td>
+      <td>Santa Cruz</td>
+      <td>Cat#sc-2354; RRID:AB_628490</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse-HRP, goat polyclonal</td>
+      <td>Santa Cruz</td>
+      <td>Cat#sc-2055; RRID:AB_631738</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit-HRP, goat polyclonal</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#A9169; RRID:AB_258434</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-mouse Alexa Fluor 488, donkey polyclonal</td>
+      <td>Thermos Fisher Scientific</td>
+      <td>Cat#A-21202; RRID:AB_141607</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit Alexa Fluor 488, donkey polyclonal</td>
+      <td>Thermos Fisher Scientific</td>
+      <td>Cat#A-21206; RRID:AB_2535792</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-rabbit Alexa Fluor 647, donkey polyclonal</td>
+      <td>Thermos Fisher Scientific</td>
+      <td>Cat#A-31573; RRID:AB_2536183</td>
+      <td>dilution is described in materials and methods</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>cDNA: human iRhom2 (NM_024599.2)</td>
+      <td>Origene</td>
+      <td>Cat#SC122961</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>cDNA: human FRMD8 (NM_031904)</td>
+      <td>Origene</td>
+      <td>Cat#SC107202</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>cDNA: human UNC93B1</td>
+      <td>(Brinkmann et al., 2007)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pLEX.puro</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#OHS4735</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pcDNA3.1(+)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#V790-20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: entiviral packaging plasmid</td>
+      <td>(Adrain et al., 2012)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: entiviral envelope plasmid</td>
+      <td>(Adrain et al., 2012)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pSpCas9(BB) −2A-Puro (pX459)</td>
+      <td>(Ran et al., 2013)</td>
+      <td>Addgene plasmid #48139</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: epX459(1.1)</td>
+      <td>received from Joey Riepsaame</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pSpCas9(BB) −2A-Puro V2.0 (pX462 V2.0)</td>
+      <td>(Ran et al., 2013)</td>
+      <td>Addgene plasmid #62987</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Plasmid: pLEX.puro-human iRhom1WT-3xHA</td>
+      <td>(Christova et al., 2013)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Plasmid: pLEX.puro-human iRhom2WT-3xHA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>cloned from human iRhom2 (NM_024599.2)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Plasmid: pLEX.puro-human iRhom2Δ100-3xHA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>human iRhom2 lacking amino acids 1–100</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Plasmid: pLEX.puro-human iRhom2Δ200-3xHA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>human iRhom2 lacking amino acids 1–200</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Plasmid: pLEX.puro-human iRhom2Δ300-3xHA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>human iRhom2 lacking amino acids 1–300</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Plasmid: pLEX.puro-human iRhom2Δ201-300-3xHA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>human iRhom2 lacking amino acids 1–382</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Plasmid: pLEX.puro-human iRhom2Δ382-3xHA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>human iRhom2 lacking amino acids 201–300</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (human)</td>
+      <td>Plasmid: pLEX.puro-human FRMD8-iRhom2Δ300-3xHA</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>human FRMD8 fused to human iRhom2Δ300 via a flexible linker (GSGSGS)</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mouse)</td>
+      <td>Plasmid: pM6P.blast-mouse iRhom2WT-3xHA</td>
+      <td>(Grieve et al., 2017)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mouse)</td>
+      <td>Plasmid: pM6P.blast-mouse iRhom2cub-3xHA</td>
+      <td>(Grieve et al., 2017)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected construct (mouse)</td>
+      <td>Plasmid: pM6P.blast-mouse iRhom2pDEAD-3xHA</td>
+      <td>(Grieve et al., 2017)</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNA targeting exon 7 of human FRMD8 (ACCC ATAAAACGGCAGCTCG)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>gRNA targeting exon 7 of human FRMD8</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNA targeting exon 19 of human RHBDF2 (AG CGGTCAGTGCAGCACCT)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>gRNA targeting exon 19 of human RHBDF2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNA targeting exon 3 of human RHBDF1 (GGAACC ATGAGTGAGGCCCC)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>gRNA targeting exon 3 of human RHBDF1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNA targeting exon 3 of human RHBDF1 (GGGTGG CTTCTTGCGCTGCC)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>gRNA targeting exon 3 of human RHBDF1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNA targeting exon 10 of human RHBDF1 (AGCCGT GTGCATCTATGGCC)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>gRNA targeting exon 10 of human RHBDF1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNA targeting exon 10 of human RHBDF1 (CCGTCTC ATGCTGCGAGAAC)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>gRNA targeting exon 10 of human RHBDF1</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNA targeting exon 2 of human RHBDF2 (GCAGAG CCGGAAGCCACCCC)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>gRNA targeting exon 2 of human RHBDF2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNA targeting exon 2 of human RHBDF2 (GGGTCT CTTTCTCGGGTGGC)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>gRNA targeting exon 2 of human RHBDF2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNA targeting exon 9 of human RHBDF2 (AAACTC GTCCATGTCATCATCACC)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>gRNA targeting exon 9 of human RHBDF2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>gRNA targeting exon 9 of human RHBDF2 (ACGGG TGCGATGCCATACGC)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td>gRNA targeting exon 9 of human RHBDF2</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>non-targeting siGENOME control pool</td>
+      <td>Dharmacon</td>
+      <td>D-001206-13-50</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siGENOME SMARTpool for human FRMD8</td>
+      <td>Dharmacon</td>
+      <td>M-018955-01-0010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA targeting human RHBDF2 (HSS128594)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#1299001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA targeting human RHBDF2 (HSS128595)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#1299001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human ACTB (Hs99999903_m1)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#4331182</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human ADAM17 (Hs01041915_m1)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#4331182</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human FRMD8 (Hs00607699_mH)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#4331182</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human RHBDF2 (Hs00226277_m1)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#4331182</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Human TNF (Hs00174128_m1)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#4331182</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>BCA Protein Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat# 23225</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Human TNF alpha ELISA Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#88-7346-86</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperScript VILO cDNA synthesis kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#11754050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>1,10-Phenanthroline</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#131377–5G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DSP (dithiobis(succinimidyl propionate))</td>
+      <td>Thermos Fisher Scientific</td>
+      <td>Cat#22585</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>EDTA-free protease inhibitor mix</td>
+      <td>Roche</td>
+      <td>Cat#11873580001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GW280264X (GW)</td>
+      <td>(Lorenzen et al., 2016); received from Stefan Düsterhöft</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>GI254023X (GI)</td>
+      <td>(Lorenzen et al., 2016); received from Stefan Düsterhöft</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>LPS</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#L5668-2ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>nocodazole</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#M1404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PNPP substrate</td>
+      <td>Thermos Fisher Scientific</td>
+      <td>Cat#34045</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rho kinase inhibitor Y-27632</td>
+      <td>Abcam</td>
+      <td>Cat#ab120129</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Q5 High-Fidelity DNA polymerase</td>
+      <td>New England Biolabs</td>
+      <td>Cat#M0491S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Sequencing Grade Trypsin</td>
+      <td>Promega</td>
+      <td>Cat#V5111</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>HA peptide</td>
+      <td>Roche</td>
+      <td>Cat#I2149-.5MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>M-CSF</td>
+      <td>Gibco</td>
+      <td>Cat#PHC9501</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>IL-3</td>
+      <td>Gibco</td>
+      <td>Cat#PHC0033</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>BMP-4</td>
+      <td>Invitrogen</td>
+      <td>Cat#PHC9534</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>VEGF</td>
+      <td>PeproTech</td>
+      <td>Cat#100–20</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>SCF</td>
+      <td>Miltenyi</td>
+      <td>Cat#130-094-303</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>RhFGF (bFGF)</td>
+      <td>R and D</td>
+      <td>Cat#4114-TC</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>anti-HA magnetic beads</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#88837</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>anti-V5 magnetic beads</td>
+      <td>MBL International</td>
+      <td>Cat#M167-11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>concanavalin A sepharose</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#C9017-25ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>C18 spin columns</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#89873</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>vivaspin concentrator 500 (10,000 kDa MWCO)</td>
+      <td>Sartorius</td>
+      <td>Cat#VS0102</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>mouse IgG agarose</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#A0919-5ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>DMEM</td>
+      <td>Thermo Fischer Scientific</td>
+      <td>Cat#41965039</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fetal bovine serum</td>
+      <td>Thermo Fischer Scientific</td>
+      <td>Cat#10500064</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fish skin gelatin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#G7765</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>KnockOut -DMEM</td>
+      <td>Thermo Fischer Scientific</td>
+      <td>Cat#10829</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>KnockOut - serum replacement</td>
+      <td>Thermo Fischer Scientific</td>
+      <td>Cat#10828</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>MEM Non-Essential Amino Acids (100x)</td>
+      <td>Thermo Fischer Scientific</td>
+      <td>Cat#11140–035</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>GlutaMAX (100x)</td>
+      <td>Thermo Fischer Scientific</td>
+      <td>Cat#35050–038</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>2-Mercaptoethanol (1000x)</td>
+      <td>Thermo Fischer Scientific</td>
+      <td>Cat#31350–010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Penicillin-Streptomycin (P/S 100x)</td>
+      <td>Thermo Fischer Scientific</td>
+      <td>Cat#15140–122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>6-well ultra-low attachment plates</td>
+      <td>Corning</td>
+      <td>Cat#3471</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>X-VIVO 15</td>
+      <td>Lonza</td>
+      <td>Cat#BE04-418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>mTeSR1</td>
+      <td>Stemcell Technologies</td>
+      <td>Cat#12491</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Paraformaldehyde 16%</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat#15710</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>hESC-qualified Geltrex</td>
+      <td>Thermo Fischer Scientific</td>
+      <td>Cat#A1413302</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>ProLong Gold antifade reagent with DAPI</td>
+      <td>Molecular Probes</td>
+      <td>Cat#P36935</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo (version X 10.0.7r2)</td>
+      <td>FlowJo, LLC</td>
+      <td>https://www.flowjo.com/ solutions/flowjo</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism (version 7)</td>
+      <td>GraphPad</td>
+      <td>https://www.graphpad.com/ scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MaxQuant (version 1.5.0.35)</td>
+      <td>(Cox and Mann, 2008)</td>
+      <td>http://www.coxdocs.org/ doku.php?id=maxquant:start</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Perseus (version 1.5.5.3)</td>
+      <td>(Tyanova et al., 2016)</td>
+      <td>http://www.coxdocs.org/ doku.php?id=perseus:start</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji (version 2.0.0-rc- 43/1.52a)</td>
+      <td>(Schindelin et al., 2012)</td>
+      <td>https://fiji.sc/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Clustal Omega</td>
+      <td>EMBL-EBI</td>
+      <td>https://www.ebi.ac.uk/ Tools/msa/clustalo/</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Molecular cloning
 
 Human UNC93B1, human iRhom2WT, iRhom2Δ100, iRhom2Δ200, iRhom2Δ300, iRhom2Δ382 iRhom2Δ201-300, and FRMD8-iRhom2Δ300 were amplified from human UNC93B1 (BC025669.1), human iRhom2 cDNA (NM_024599.2; Origene (SC122961)) and human FRMD8 cDNA (NM_031904; Addgene (SC107202)) by PCR and cloned with an C-terminal 3xHA tag into the lentiviral vector pLEX.puro using Gibson assembly (New England Biolabs) following the manufacturer’s instructions. C-terminal V5-tagged FRMD8 (FRMD8-V5) was amplified from human FRMD8 cDNA (Addgene (SC107202)) by PCR and cloned into pcDNA3.1(+) using Gibson assembly. All constructs were verified by Sanger sequencing (Source Bioscience, Oxford, UK). pM6P.blast plasmids expressing mouse iRhom2WT, iRhom2Δ268 (iRhom2 cub), and iRhom2pDEAD were described previously (Grieve et al., 2017).
 
-## Transfection and transduction of cell lines
+### Transfection and transduction of cell lines
 
 Human embryonic kidney (HEK) 293T cells were cultured in DMEM (Sigma-Aldrich) supplemented with 10% fetal calf serum (FCS) and 1x penicillin-streptomycin (PS) (all Gibco) at 37°C with 5% CO2. Cells were transiently transfected with DNA using FuGENE HD (Promega). Per 10 cm2 growth area 4 μl FuGENE HD was added to 1 μg DNA diluted in OptiMEM (Gibco). The transfection mix was incubated for 20 min at room temperature and added to cells. Protein expression was analysed 48–72 hr after transfection. For knockdown experiments, siRNA was transfected using Lipofectamin RNAiMax (Invitrogen) following the manufacturer’s instructions. Per 6 well 50 pmol of FRMD8 SMARTpool siRNA (Dharmacon; siGENOME Human FRMD8 (83786) siRNA; M-018955-01-0010), non-targeting siRNA control pools (Dharmacon; siGENOME D-001206-13-50), RHBDF2 siRNA (Thermo Fisher Scientific; HSS128594 and HSS128595) were used. Protein expression was analysed 72 hr after transfection.
 
 HEK293T wild-type cell lines stably expressing human UNC93B1-3xHA or human iRhom2-3xHA, and HEK293T iRhom1/2 DKO cell lines expressing iRhom2WT, iRhom2Δ300, iRhom2Δ201-300, or FRMD8-iRhom2Δ300 were generated by lentiviral transduction using the pLEX.puro vector as described previously (Adrain et al., 2012). Cells were selected by adding 2.5 μg/ml puromycin (Gibco).
 
-## CRISPR/Cas9 genome editing in HEK293T cells
+### CRISPR/Cas9 genome editing in HEK293T cells
 
 For CRISPR/Cas9-mediated knockout of FRMD8 the plasmid pSpCas9(BB)−2A-Puro (pX459; Addgene plasmid #48139) co-expressing the wild-type Streptococcus pyogenes Cas9 and the guide RNA (gRNA) was used. For gRNA design target sequences with a low chance of off targets were selected using online tools (http://crispr.mit.edu; http://www.sanger.ac.uk/htgt/wge). A gRNA targeting exon 7 (ACCCATAAAACGGCAGCTCG), which is present in all FRMD8 isoforms, was cloned into pX459. 1 µg plasmid was transfected into a 6-well of HEK293T cells. Cells were selected with puromycin 48 hr after transfection to eliminate non-transfected cells. Single colonies were selected to establish clonal cell lines. Loss of FRMD8 expression was analysed by western blot and quantitative PCR.
 
@@ -139,76 +1317,76 @@ To generate a knock-in of a triple HA tag at the C-terminus of endogenous iRhom2
 
 HEK293 ADAM17 knockout cells were kindly provided by Dr Stefan Düsterhöft and have been published previously (Riethmueller et al., 2016).
 
-## Mass spectrometry and data analysis
+### Mass spectrometry and data analysis
 
 HEK293T cells expressing human UNC93B1-3xHA (control) and human iRhom2-3xHA were used for anti-HA co-immunoprecipitation and analysed by mass spectrometry as described previously (Grieve et al., 2017). Peptides were injected into a nano-flow reversed-phase liquid chromatography coupled to Q Exactive Hybrid Quadrupole-Orbitrap mass spectrometer (Thermo Scientific). The raw data files generated were processed using the MaxQuant (version 1.5.0.35) software, integrated with the Andromeda search engine as described previously (Cox and Mann, 2008; Cox et al., 2011). Differential protein abundance analysis was performed with Perseus (version 1.5.5.3). A two-sample t-test was used to assess the statistical significance of protein abundance fold-changes. P-values were adjusted for multiple hypothesis testing with the Benjamini-Hochberg correction (Hochberg and Benjamini, 1990).
 
-## Co-immunoprecipitation
+### Co-immunoprecipitation
 
 Cells were washed with ice-cold PBS and then lysed on ice in Trition X-100 lysis buffer (1% Triton X-100, 150 mM NaCl, 50 mM Tris-HCl pH 7.5) supplemented with EDTA-free protease inhibitor mix (Roche) and 10 mM 1,10-Phenanthroline (Sigma-Aldrich). Cell debris were pelleted by centrifugation at 20,000 g at 4°C for 10 min. Proteins were immunoprecipitated by incubation with anti-HA magnetic beads (Thermo Scientific) or anti-V5 magnetic beads (MBL International) for 1 hr at 4°C. Beads were washed with Trition X-100 wash buffer (1% Triton X-100, 300 mM NaCl, 50 mM Tris-HCl pH 7.5). Proteins were eluted in 2x LDS buffer (life technologies) supplemented with 50 mM DTT for 10 min at 65°C.
 
-## Concanavalin A enrichment
+### Concanavalin A enrichment
 
 N-glycosylated proteins were enriched by incubating cells lysates with concanavalin A sepharose (Sigma-Aldrich) at 4°C for at least 3 hr with over-head rotation. Beads were pelleted (2,500 g, 5 min, 4°C) and washed with Triton X-100 wash buffer. Proteins were eluted in 2x LDS buffer supplemented with 50 mM DTT and 50% sucrose for 10 min at 65°C.
 
-## Cycloheximide chase
+### Cycloheximide chase
 
 To access protein stability, HEK293T cells were treated with 100 µg/ml cycloheximide (CHX; Sigma-Aldrich) for 0–8 hr to block protein synthesis. After incubation, cells were washed with ice-cold PBS and then lysed on ice in Trition X-100 lysis buffer supplemented with EDTA-free protease inhibitor mix and 10 mM 1,10-Phenanthroline. Lysates were centrifuged at 20,000 g at 4°C for 10 min and analysed by SDS-PAGE.
 
-## SDS-PAGE and western blotting
+### SDS-PAGE and western blotting
 
 Cell lysates were mixed with 4x LDS buffer (life technologies) supplemented with 50 mM DTT and denatured for 10 min at 65°C prior to loading on 4–12% Bis-Tris gradient gels run in MOPS running buffer (both Invitrogen). Proteins were transferred to a polyvinylidene difluoride (PVDF) membrane (Millipore) in transfer buffer (Invitrogen). The membrane was blocked in 5% milk-TBST (150 mM NaCl, 10 mM Tris-HCl pH 7.5, 0.05% Tween 20, 5% dry milk powder) and then incubated with the primary antibody: mouse monoclonal anti-β-actin-HRP (Sigma-Aldrich, A3854, 1:5000), rabbit polyclonal anti-ADAM17 (abcam; ab39162; 1:2000), rabbit polyclonal anti-FRMD8 (abcam; ab169933; 1:500), rat monoclonal anti-HA-HRP (Roche, 11867423001, 1:2000), goat polyclonal anti-V5 (Santa Cruz, sc-83849, 1:2000), mouse monoclonal anti-transferrin receptor 1, (Thermo Fisher Scientific, 13–6800, 1:2000), and rabbit polyclonal anti-iRhom2 ([Adrain et al., 2012]; 1:500). After three washing steps with TBST (150 mM NaCl, 10 mM Tris-HCl pH 7.5, 0.05% Tween 20), membranes were incubated with the secondary antibody for 1 hr at room temperature using either goat polyclonal anti rabbit-HRP (Sigma-Aldrich, A9169, 1:20000), mouse monoclonal anti-goat-HRP (Santa Cruz, sc-2354, 1:5000) or goat polyclonal anti-mouse-HRP (Santa Cruz, sc-2055, 1:5000).
 
-## mRNA isolation and quantitative RT-PCR
+### mRNA isolation and quantitative RT-PCR
 
 Cells were harvested in PBS and pelleted at 3000 g, 5 min, 4°C. RNA was isolated using the RNeasy kit (Qiagen) and reverse transcribed using the SuperScript VILO cDNA synthesis kit (Invitrogen). Resulting cDNA was used for quantitative PCR (qPCR) using the TaqMan Gene Expression Master Mix (Applied Biosystems) and the following TaqMan probes (all Thermo Fisher Scientific): human ACTB (Hs99999903_m1), human FRMD8 (Hs00607699_mH), human RHBDF2 (Hs00226277_m1), and human TNFα (Hs00174128_m1). qPCR was performed on a StepOnePlus system (Applied Biosystems). Gene expression was normalized to ACTB expression and expressed as relative quantities compared to the corresponding wild-type cell line. Error bars indicate the standard derivation of technical replicates.
 
-## Shedding assay
+### Shedding assay
 
 eight × 104 HEK293T cells were seeded in triplicates per condition into poly-(L)-lysine (PLL; Sigma-Aldrich)-coated 24-well plates and transfected the next day with 30 ng plasmid DNA encoding Alkaline Phosphatase (AP)-conjugated AREG, HB-EGF or TGFα (received from Prof Carl Blobel). 48 hr after transfection, cells were washed with OptiMEM and then incubated with 200 µl phenolred-free OptiMEM (Gibco) containing either 200 nM PMA, the corresponding volume of the solvent (DMSO), or 200 nM PMA and 1 µM GW (synthesized by Iris Biotech (Marktredwitz, Germany) and kindly provided by Dr Stefan Düsterhöft) for 30 min at 37°C. Cell supernatants were collected, the cells were washed in PBS and lysed in 200 µl Trition X-100 lysis buffer. The activity of AP in cell lysates and supernatants was determined by incubating 100 µl AP substrate p-nitrophenyl phosphate (PNPP) (Thermo Scientific) with 100 µl cell lysate or cell supernatant at room temperature followed by the measurement of the absorption at 405 nm. The percentage of AP-conjugated material released from each well was calculated by dividing the signal from the supernatant by the sum of the signal from lysate and supernatant. The data was expressed as mean of at least three independent experiments, each of which contained three biological replicates per condition.
 
-## Deglycosylation assay
+### Deglycosylation assay
 
 Cells were lysed in Triton X-100 lysis buffer as described above. Lysates were first denatured with Glycoprotein Denaturing Buffer (New England Biolabs) at 65°C for 15 min and then treated with endoglycosidase H (Endo H) or peptide:N-glycosidase F (PNGase F) following the manufacturer’s instructions (New England Biolabs).
 
-## Flow cytometry
+### Flow cytometry
 
 For ADAM10 and ADAM17 cell surface staining, HEK293T cells were stimulated with 200 nM PMA for 5 min before harvest in PBS. 0.5 × 106 HEK293T cells were washed with ice-cold FACS buffer (0.25% BSA, 0.1% sodium azide in PBS) and stained with rabbit polyclonal anti-HA antibody (Santa Cruz, sc-805; 0.5 µg diluted in FACS buffer), mouse monoclonal anti-ADAM10 (Biolegend, 352702; 4 µg diluted in FACS buffer) or mouse monoclonal anti-ADAM17 (A300E antibody (Yamamoto et al., 2012), kindly provided by Dr Stefan Düsterhöft; 8 µg diluted in FACS buffer) on ice for 45 min. After two washes with FACS buffer, the cells were incubated with Alexa Fluor 488-coupled secondary antibody (Invitrogen, A21202 or A21206); 1:1000 dilution in FACS buffer) on ice for 30 min. Cells were washed twice with ice-cold FACS buffer and then analysed with a BD FACSCalibur (BD Biosciences) and FlowJo software. Cells stained only with the secondary antibody or anti-HA negative cells served as control.
 
-## Immunofluorescence staining and confocal microscopy
+### Immunofluorescence staining and confocal microscopy
 
 HEK293T iRhom1/2 DKO cells (1.5 × 105) transduced with indicated iRhom2 constructs were plated on 13 mm PLL-coated glass coverslips in 12-well dishes. In FRMD8-V5 or TACE-V5 overexpression experiments, cells were transfected with 200 ng vector and grown for 72 hr prior to fixation. As indicated, cells were treated with 100 nM bafilomycin for 16 hr before fixation, to inhibit lysosomal degradation. Cells were washed three times in PBS at room temperature and fixed with 4% paraformaldehyde in PBS at room temperature for 20 mins. Fixative was quenched with 50 mM NH4Cl for 5 min. Cells were permeabilised in 0.2% Triton X-100 in PBS for 30 min and epitopes blocked with 1% fish-skin gelatin (Sigma-Aldrich) in PBS for 1 hr. Coverslips were then incubated at room temperature for 2 hr with rabbit anti-HA tag (Cell Signalling, 3724) and goat anti-V5 probe (Santa Cruz, sc-83849) in 1% fish-skin gelatin/PBS. After three PBS washes, coverslips were incubated with Alexa Fluor-coupled secondary antibodies raised in donkey (Invitrogen) for 45 min at room temperature. Cells were subsequently washed three times with PBS and once with H2O, prior to mounting on glass slides with mounting medium containing DAPI (ProLong Gold; ThermoFisher Scientific). Images were acquired with a laser scanning confocal microscope (Fluoview FV1000; Olympus) with a 60 × 1.4 NA oil objective and processed using Fiji (ImageJ).
 
-## Culture of human iPSCs
+### Culture of human iPSCs
 
 To generate iPSC-derived FRMD8 knockout macrophages, the human iPSC line AH017-13 was used. The AH017-13 line was derived from dermal fibroblasts of healthy donor in the James Martin Stem Cell Facility, University of Oxford as published previously (Fernandes et al., 2016). Donors had given signed informed consent for the derivation of human iPSC lines from skin biopsies and SNP analysis (Ethics Committee: National Health Service, Health Research Authority, NRES Committee South Central, Berkshire, UK (REC 10/H0505/71)). AH017-13 iPSCs were cultured feeder cell-free in mTeSR1 (STEMCELL Technologies) on hESC-qualified geltrex (Gibco). iPSCs were fed daily and routinely passaged with 0.5 mM EDTA, or when required using TrypLE (Gibco) and plated in media containing 10 μmol/l Rho-kinase inhibitor Y-27632 (Abcam).
 
-## Genome editing of iPSCs lines
+### Genome editing of iPSCs lines
 
 AH017-13 iPSCs were transfected by electroporation using the Neon Transfection System (Invitrogen). 3 × 106 AH017-13 iPSCs were electroporated (1400 mV, 20 ms, one pulse) in a 100 μl tip with 15 μg pX459-FRMD8-exon7 plasmid DNA (endotoxin-free quality), then plated at a density of 4 × 105 cells/cm2 and selected 48 hr after transfection with 0.25 µg/ml puromycin. After 48 hr of selection, surviving cells were plated on a feeder-layer of 4 × 106 irradiated mouse embryonic fibroblasts (MEFs) in 0.1% gelatin-coated 10 cm culture dishes and cultured in hES medium (KnockOut DMEM, 20% KnockOut serum replacement, 2 mM L-Glutamine, 100 µM nonessential amino acids, 50 µM 2-Mercaptoethanol (all Gibco) and 10 ng/mL basic fibroblastic growth factor (bFGF, R and D)). Colonies were manually selected and grown on geltrex in mTeSR1. Clones were analysed by western blot using the anti-FRMD8 antibody, and PCR followed by Sanger sequencing. For PCR DNA was isolated from iPSCs by incubation in DNA isolation buffer (10 mM Tris-HCl (pH 8), 1 mM EDTA, 25 mM NaCl, 200 µg/ml proteinase K added freshly) at 65°C for 30 min. Proteinase K was inactivated at 95°C for 2 min. PCR using Q5 polymerase was performed according to the manufacturer’s instructions (New England Biolabs) using primers FRMD8_fw (tgcagATCCATGACGAGGA) and FRMD8_rev (gtgctcgtgacaagacac). The PCR product was purified and sequenced using the primer FRMD8_exon7_fw (GCCAGAGTCTCTTTGCTG) for Sanger sequencing (Source Bioscience, Oxford).
 
-## Differentiation of iPSCs into macrophages
+### Differentiation of iPSCs into macrophages
 
 AH017-13 wild-type and FRMD8 knockout clones were analysed by Illumina HumanOmniExpress24 single nucleotide polymorphism (SNP) array at the Wellcome Trust Centre for Human Genetics at the University of Oxford and assessed using KaryoStudio software to confirm normal karyotypes before differentiation into macrophages. For this study iPSCs were differentiated into embryoid bodies (EBs) by mechanical lifting of iPSC colonies and differentiated into macrophages as described in (van Wilgenburg et al., 2013). Briefly, iPSCs were grown on a feeder layer of MEFs in hES medium. A dense 10 cm2 well of iPSCs was scored into 10 × 10 sections using a plastic pipette tip. The resulting 100 patches were lifted with a cell scraper and cell clumps were transferred into a 6-well ultra-low adherence plate (Corning) containing EB formation medium (hES medium supplemented with 50 ng/ml BMP4 (Invitrogen), 50 ng/ml VEGF (Peprotech) and 20 ng/ml SCF (Miltenyi)) to form EBs. A 50% medium change was performed every second day. On day 5 EBs were harvested. Approximately 60–80 EBs were transferred into a T75 flask containing factory medium (X-VIVO 15 (Lonza) supplemented with 2 mM L-Glutamine, 50 µM 2-Mercaptoethanol, 100 ng/ml M-CSF and 25 ng/mL IL-3, 100 U/ml penicillin and 100 µg/ml streptomycin (all Gibco)). The EBs were fed weekly with fresh factory medium. After approximately two weeks EBs started to produce non-adherent macrophage precursors, which were harvested from the supernatant of EB cultures through a 70 µM cell strainer. Cells were differentiated into mature adherent macrophages for 7 days in macrophage medium (X-VIVO 15 supplemented with 2 mM L-Glutamine, 100 ng/ml M-CSF, 100 U/ml penicillin and 100 µg/ml streptomycin).
 
-## ELISA
+### ELISA
 
 iPSC-derived macrophages were harvested from EB cultures, counted and seeded at 25,000 cells per well into 96-well tissue culture plates in triplicates per condition. Macrophages were cultured in macrophage differentiation medium for 7 days, and then activated with 50 ng/ml LPS (Sigma-Aldrich) in fresh macrophage differentiation medium for 4 hr. For inhibitor treatments cells were incubated with 50 ng/ml LPS and 3 µM GW or GI (synthesized by Iris Biotech (Marktredwitz, Germany) and kindly provided by Dr Stefan Düsterhöft) for 4 hr. Cell culture supernatants were collected and cleared from cells by centrifugation. TNFα in supernatants was measured by ELISA (Human TNF alpha ELISA Ready-SET-Go, eBioscience (88-7346-86)) according to the manufacturer’s instructions. Macrophages were lysed in Trition X-100 lysis buffer and protein concentration was determined using a BCA assay (Thermo Scientific). The amount of TNFα in the supernatant was normalised to the protein concentration of the corresponding cell lysate to adjust for differences in TNFα release due to cell numbers.
 
-## Mouse work
+### Mouse work
 
 Commercially available Frmd8-/- mouse ES cells from KOMP Repository at UC Davis were used to generate Frmd8-/- mice. The mouse ES cells (C57BL/6NTac strain) were injected into blastocysts of Balb/c mice. Chimeras were bred to C57BL/6 to generate Frmd8+/- mice that were used for breeding of the colony and the generation of Frmd8-/- mice. For mice described in Figure 9—figure supplement 2B, we excised the LoxP-flanked neomycin resistance gene by breeding Frmd8-/- mice with homozygous Sox2-Cre deleter strain mice. The mouse work was performed under project licenses 80/2584 and 30/2306. Mouse tissues were collected from sacrificed animals and stored on dry ice or at −80°C. Tissues were lysed in Triton X-100 RIPA buffer (1% Triton X-100, 150 mM NaCl, 50 mM Tris-HCl (pH 7.5), 0.1% SDS, 0.5% sodium deoxycholate) supplemented with EDTA-free protease inhibitor mix and 10 mM 1,10-Phenanthroline using a tissue homogeniser (Omni International). Lysates were cleared from cell debris by centrifugation (20,000 g, 4°C, 10 min). Protein concentrations of tissue lysates were determined using a BCA assay.
 
-## Statistical analysis and data presentation
+### Statistical analysis and data presentation
 
 Values are expressed as means of at least three independent experiments with error bars representing the standard deviation. Unpaired, two‐tailed t‐tests were used for statistical analysis. Shedding assays and ELISA data was analysed using a Mann-Whitney test. Flow cytometry blots shown represent one from at least three experiments with similar outcome.
 
-## Ethics statement
+### Ethics statement
 
 Human iPSC lines were derived from dermal fibroblasts of donors that had given signed informed consent for the derivation of human iPSC lines from skin biopsies and SNP analysis (Ethics Committee: National Health Service, Health Research Authority, NRES Committee South Central, Berkshire, UK (REC 10/H0505/71)).
 
 All procedures on mice were conducted in accordance with the UK Scientific Procedures Act (1986) under a project license (PPL) authorized by the UK Home Office Animal Procedures Committee, project licenses 80/2584 and 30/2306, and approved by the Sir William Dunn School of Pathology Local Ethical Review Committee.
 
-## Cell lines statement
+### Cell lines statement
 
 We used HEK293T cells (RRID: CVCL_0063) for analysis of protein-protein interactions, subcellular localisation and loss-of-function experiments. These cells were used for experiments that provided a strong platform of in vitro evidence of a relationship between FRMD8 and iRhoms, prior to the generation of iPSC-derived macrophages and FRMD8 knock-out mice. The HEK293T cell line has been tested negative for mycoplasma contamination.

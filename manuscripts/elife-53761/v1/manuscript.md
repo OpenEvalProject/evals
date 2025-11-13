@@ -26,13 +26,25 @@ ACVR1 and its signaling partners belong to the transforming growth factor beta (
 
 The zebrafish embryo is an excellent genetically tractable in vivo vertebrate model for investigating the signaling mechanism of the ACVR1-FOP receptor (Shen et al., 2009; Mucha et al., 2018). In the early zebrafish embryo, BMP acts as a morphogen to pattern the dorsoventral (DV) axis in a process that is conserved throughout the animal kingdom (Zinski et al., 2018). High levels of BMP signaling specify ventral cell fates and intermediate signaling specifies lateral fates, while absence of signaling allows dorsal cell fate specification. The DV pattern is generated through a quantifiable pSmad1/5 signaling gradient within the gastrulating embryo that peaks ventrally and decreases dorsally (Little and Mullins, 2006; Zinski et al., 2017; Zinski et al., 2019; Tucker et al., 2008; Mintzer et al., 2001). Perturbations to this BMP signaling gradient in the developing embryo result in distinct, dose-dependent patterning phenotypes (Figure 1b). Over-activation of the BMP signaling pathway by FOP-ACVR1 causes ventralization, an excess of ventral cell fate specification at the expense of dorsal fates (Shen et al., 2009; Mucha et al., 2018), while loss of endogenous acvr1l expression leads to an opposite dorsalization. Loss of acvr1l in the zebrafish can be rescued by human ACVR1, demonstrating their conserved activity (Shen et al., 2009).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/53761/elife-53761-fig1-v1.jpg)
+
+**Figure 1.:** (a) Embryos expressing ACVR1 HA-tagged constructs were immunostained for HA at the shield stage (early gastrula); ACVR1 domain schematics of the constructs are above each set of corresponding images. Nuclei (yellow), βcatenin (cyan), ACVR1-HA (magenta). Scale bars = 40 μm. ΔAcvr1 constructs lack residues 35–100, which contain the cysteine-rich ligand binding motifs. Uninjected (N = 6) and embryos injected with: Acvr1 (N = 6), ΔAcvr1 (N = 5), Acvr1-R206H (N = 9), ΔAcvr1-R206H (N = 4), Acvr1-G328R (N = 5), and ΔAcvr1-G328R (N = 5). (b) BMP signaling dose-dependent 12–30 hpf zebrafish embryo phenotypes: severe dorsalization (C5-C4, dark blue), mild dorsalization (C3-C1, light blue), wild-type development (WT, violet), mild ventralization (V1-V3, light orange), and severe ventralization (V4-V5, dark orange). (c) Bubble plot circle sizes correspond to the percent of total embryos within a condition that are in a particular phenotypic category. Examples are shown for: 100%, 90%, 80%, 70%, 60%, 50%, 40%, 30%, 20% and 10%. (d) Representative phenotypes of wild-type embryos (evaluated at 12 and 30 hpf) and embryos injected with acvr1l MO (evaluated at 12 hpf; none survive to 30 hpf). (e–g) DV phenotypes of 12–30 hpf embryos injected with Acvr1 or ΔAcvr1 mRNA alone or together with acvr1l MO. Data are from four pooled experiments. (e) Acvr1 or ΔAcvr1 injected embryos. Columns: 1, N = 240; 2, N = 121; 3, N = 140; 4, N = 153; 5, N = 96; 6, N = 118. (e’) Representative 12 or 30 hpf phenotypes. (f) Acvr1-R206H or ΔAcvr1-R206H injected embryos. Columns: 1, N = 240; 2, N = 70; 3, N = 84; 4, N = 153; 5, N = 73; 6, N = 91. (f’) Representative 30 hpf phenotypes. (g) Acvr1-G328R or ΔAcvr1-G328R injected embryos. Columns: 1, N = 240; 2, N = 88; 3, N = 79; 4, N = 153; 5, N = 78; 6, N = 71. (g’) Representative 30 hpf phenotypes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/53761/elife-53761-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Representative 12–14 and 30 hpf phenotypes of injected embryos.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/53761/elife-53761-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** 12–30 hpf embryos injected with Acvr1 or ΔAcvr1 mRNA alone or together with acvr1l MO. Data are from two pooled experiments. Embryos in a and b are siblings injected on the same plate with each MO or mRNA in the same calibrated needle (a) DV phenotypes. Columns: 1, N = 70; 2, N = 62; 3, N = 18; 4, N = 28; 5, N = 28; 6, N = 31; 7, N = 53; 8, N = 80; 9, N = 21; 10, N = 20; 11, N = 34; 12, N = 45; 13, N = 52; 14, N = 49. (b) HA-tag fluorescence per μm2 of β-catenin expression of embryos injected in a. All imaged embryos were WT (with no Acvr1 KD). Uninjected embryos N = 6, Acvr1 injected N = 5, Acvr1-R206H injected N = 7, Acvr1-G328R N = 7, ΔAcvr1 injected N = 6, ΔAcvr1-R206H injected N = 7, ΔAcvr1-G328R N = 6. Horizontal bars indicate statistical significance based on a two-tailed t-test assuming unequal variance (* indicates p<0.05, ns indicates no significance).
+
 Some aspects of ACVR1-R206H signaling have been investigated. Previous work by our lab demonstrated that expression of ACVR1-R206H in the zebrafish embryo over-activates BMP signaling in the absence of Bmp2 and Bmp7, the obligatory patterning ligands of the developing zebrafish (Shen et al., 2009; Little and Mullins, 2009; Nguyen et al., 1998; Dick et al., 2000; Schmid et al., 2000). Surprisingly, ACVR1-R206H shows acquired responsiveness to novel ligands in cell culture and mouse models; most notably Activin A, a TGFβ superfamily ligand that normally signals through ACVR1b (also called ALK4) and pSmad2/3 (Hatsell et al., 2015; Lees-Shepard et al., 2018; Hino et al., 2015). While ACVR1-R206H has been shown to require its normal type II BMP receptor partners, BMPR2 and ACVR2a (Hino et al., 2015; Bagarova et al., 2013), it is unknown whether it retains a requirement for its type I BMP receptor partner, BMPR1. ACVR1-R206H has been shown to signal in the absence of BMPR1a or BMPR1b individually (Hino et al., 2015). However, the ability of FOP-ACVR1 to function in the absence of both BMPR1a and BMPR1b, which largely function redundantly (Yoon et al., 2005; Wine-Lee et al., 2004), has not been tested.
 
 In this study, we used BMP-pSmad1/5 dose-dependent DV patterning of the developing zebrafish to assay for signaling activity of ACVR1-R206H and ACVR1-G328R in vivo. We show that ligand-binding domain-deficient ACVR1-R206H and -G328R can over-activate pSmad1/5 signaling, demonstrating that these mutant receptors have enhanced signaling activity in the absence of ligand binding. However, intact ACVR1-R206H shows hyperactive pSmad1/5 signaling in response to Bmp7 and Activin A ligands. We further determined that neither the ligand-independent nor the ligand-responsive signaling modalities of ACVR1-R206H require the partner type I BMP receptors that are necessary for signaling by wild-type ACVR1. These results demonstrate that the ACVR1-R206H and ﻿G328R receptors have acquired a fundamentally altered signaling mechanism.
 
 ## Results
 
-## ACVR1-R206H and -G328R over-activate BMP signaling in the absence of an intact ligand binding domain
+### ACVR1-R206H and -G328R over-activate BMP signaling in the absence of an intact ligand binding domain
 
 Previous work by our lab showed that ACVR1-R206H can signal independently of Bmp2/7 heterodimers, the only functional DV patterning ligand in the zebrafish embryo (Little and Mullins, 2009), suggesting that the mutant receptor can signal independently of all BMP ligand (Shen et al., 2009). More recent studies have reported that ACVR1-R206H has an acquired response to the TGFβ family ligand, Activin A (Hatsell et al., 2015; Lees-Shepard et al., 2018; Hino et al., 2017). This ligand response has been implicated in inciting heterotopic ossification in patients with FOP (Hino et al., 2017; Alessi Wolken et al., 2018). Interestingly, however, ACVR1-R206H can signal without its ligand-binding domain in Drosophila and murine cell culture systems (Haupt et al., 2018; Le and Wharton, 2012; Hildebrand et al., 2017; Haupt et al., 2014).
 
@@ -46,27 +58,37 @@ We next expressed Acvr1 or ΔAcvr1 mRNAs in acvr1l-knockdown (acvr1l-KD) embryos
 
 To test if our results could be influenced by differences in expression levels of injected mRNA, we determined the relative amounts of receptor in our injected embryos, using immunofluorescence to measure the cell surface expression of our Acvr1-HA-tagged mutant receptors in confocal sections of mid-gastrula embryos. Mid-gastrula embryos were collected for immunofluorescence and the remaining embryos were allowed to develop to 30 hpf for phenotyping. As described above, Acvr1, but not ΔAcvr1 could rescue Acvr1l-KD embryos, and all FOP mutant receptors ventralized embryos regardless of the presence of a ligand-binding domain (Figure 1—figure supplement 2). The amount of WT-Acvr1 that partially to fully rescued Acvr1l KD was determined per μm2 of β-catenin fluorescence surface area (Figure 1—figure supplement 2). This receptor amount should reflect the amount of receptor expression that is required to pattern the zebrafish embryo. The amounts of Acvr1-R206H and Acvr1-G328R fluorescence that ventralized the embryo were similar to or significantly lower than WT-Acvr1, respectively. The levels of ΔAcvr1-G328R and ΔAcvr1-R206H fluorescence were also similar to or significantly lower than ΔAcvr1, respectively. These results show that the amount of Acvr1-R206H or -G328R required to ventralize the zebrafish embryo is similar to or lower than the amount of Acvr1 required to pattern the wild-type zebrafish, regardless of the presence of a ligand-binding domain. Altogether, the results indicate that the ventralization is not due to overexpression of the FOP mutant receptors.
 
-## ACVR1-R206H and -G328R over-activate pSmad1/5 signaling with or without the presence of a ligand-binding domain
+### ACVR1-R206H and -G328R over-activate pSmad1/5 signaling with or without the presence of a ligand-binding domain
 
 During early embryonic development, a nuclear gradient of pSmad1/5 activity forms across the DV axis of the zebrafish embryo in response to BMP signaling (Zinski et al., 2017; Zinski et al., 2019; Tucker et al., 2008; Figure 2a). This gradient persists throughout gastrulation and specifies DV axial fates. To test the ability of the ligand-binding domain mutant ΔAcvr1 to signal through pSmad1/5, we knocked down endogenous Acvr1l, injected embryos with mouse Acvr1 or ΔAcvr1 mRNAs, and then immunostained early-gastrula embryos (shield-65% epiboly stage) for pSmad1/5.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/53761/elife-53761-fig2-v1.jpg)
 
-**Figure 2.:** (a,a’–g,g’) Animal pole view of relative pSmad1/5 intensities (using arbitrary units (AU)) within each nucleus of the embryo in representative WT early-gastrula embryos (shield-65% epiboly stage) with endogenous Acvr1l present (a–g) or knocked down (a’–g’). Injected mRNAs are noted above for b-g and b’-g’. (a–c, a’–c’) Embryos are oriented with ventral (V) side to the left and the dorsal (D) side to the right. (d–g, d’–g’) Dorsal side of the embryo could not be identified due to loss of the shield structure with severe ventralization. Scale bars = 100 μm. (a, a’) Wild-type and Acvr1l-KD embryos, respectively (N = 18 and 15). (b, b’) Acvr1 injected embryos (N = 10 and 9). (c, c’) ΔAcvr1 injected embryos (N = 9 and 7). (d, d’) Acvr1-R206H injected embryos (N = 14 and 17). (e, e’) ΔAcvr1-R206H injected embryos (N = 8 and 11). (f, f’) Acvr1-G328R injected embryos (N = 12 and 9). (g, g’) ΔAcvr1-G328R injected embryos (N = 12 and 12). (h) Mean nuclear pSmad1/5 fluorescence of injected embryos. Each dot represents the mean nuclear fluorescence for an individual embryo. Mean and standard deviation of each condition are shown by bars. * indicates p<0.05, ** indicates p<0.001, ns indicates no significance.Figure 2—source data 1.Figure 1h.Figure 2—source data 2.Figure 1h.
+**Figure 2.:** (a,a’–g,g’) Animal pole view of relative pSmad1/5 intensities (using arbitrary units (AU)) within each nucleus of the embryo in representative WT early-gastrula embryos (shield-65% epiboly stage) with endogenous Acvr1l present (a–g) or knocked down (a’–g’). Injected mRNAs are noted above for b-g and b’-g’. (a–c, a’–c’) Embryos are oriented with ventral (V) side to the left and the dorsal (D) side to the right. (d–g, d’–g’) Dorsal side of the embryo could not be identified due to loss of the shield structure with severe ventralization. Scale bars = 100 μm. (a, a’) Wild-type and Acvr1l-KD embryos, respectively (N = 18 and 15). (b, b’) Acvr1 injected embryos (N = 10 and 9). (c, c’) ΔAcvr1 injected embryos (N = 9 and 7). (d, d’) Acvr1-R206H injected embryos (N = 14 and 17). (e, e’) ΔAcvr1-R206H injected embryos (N = 8 and 11). (f, f’) Acvr1-G328R injected embryos (N = 12 and 9). (g, g’) ΔAcvr1-G328R injected embryos (N = 12 and 12). (h) Mean nuclear pSmad1/5 fluorescence of injected embryos. Each dot represents the mean nuclear fluorescence for an individual embryo. Mean and standard deviation of each condition are shown by bars. * indicates p<0.05, ** indicates p<0.001, ns indicates no significance.
 
 While wild-type embryos formed a gradient of pSmad1/5 expression that peaks ventrally and decreases dorsally (Figure 2a; Mucha et al., 2018), Acvr1l-KD embryos lacked detectable pSmad1/5 signal (Figure 2a’). The mean nuclear pSmad1/5 fluorescence of Acvr1l-KD embryos was significantly decreased compared to WT embryos (Figure 2h). Injected mouse Acvr1 mRNA did not alter the pSmad1/5 gradient in WT embryos and rescued pSmad1/5 in Acvr1l-KD embryos (Figure 2b,b’). There was no significant difference in mean nuclear pSmad1/5 intensity between uninjected wild-type, Acvr1-injected wild-type, and Acvr1l-KD embryos injected and rescued with Acvr1 (Figure 2h). ΔAcvr1 also did not perturb normal gradient formation in WT embryos, but could not rescue loss of pSmad1/5 in Acvr1l-KD embryos (Figure 2c,c’). There was no significant difference in mean pSmad1/5 fluorescence between Acvr1l-KD embryos and Acvr1l-KD embryos injected with ΔAcvr1, showing that WT-Acvr1 cannot signal through pSmad1/5 without a ligand-binding domain (Figure 2h). In contrast, both Acvr1-R206H and ΔAcvr1-R206H restored pSmad1/5 signaling in Acvr1l-KD embryos and greatly expanded the signaling gradient dorsally (Figure 2d,d’,e,e’). Likewise, Acvr1-G328R and ΔAcvr1-G328R rescued and expanded the pSmad1/5 gradient even when endogenous Acvr1l was absent (Figure 2f,f’,g,g’). Both ACVR1-R206H and ACVR1-G328R significantly increased the mean pSmad1/5 signaling intensity in Acvr1l-KD embryos regardless of the presence of a ligand-binding domain (Figure 2h). These results confirm that ACVR1-R206H and ACVR1-G328R have acquired the capacity to over-activate Smad1/5 phosphorylation even in the absence of an intact ligand-binding domain.
 
-## ACVR1-R206H and -G328R, but not ΔAcvr1-R206H, are responsive to Bmp7 ligand
+### ACVR1-R206H and -G328R, but not ΔAcvr1-R206H, are responsive to Bmp7 ligand
 
 We next tested if FOP-ACVR1 with an intact ligand-binding domain retained the ability to respond to ligand. We used Bmp7 in this experiment since previous studies showed that ACVR1 binds and signals in response to Bmp7 (Yadin et al., 2016; Little and Mullins, 2009; Heinecke et al., 2009; Allendorph et al., 2007). We injected human WT- or FOP-ACVR1 mRNAs into one-cell stage bmp7sb1aub null mutant zebrafish embryos that also had Acvr1l KD. We then determined whether Bmp7 ligand expression enhanced signaling by these ACVR1 receptors.
 
 Homozygous bmp7-/- embryos exhibit a severely dorsalized C5 phenotype (Figure 3a,b column 1; Figure 3—figure supplement 1; Nguyen et al., 1998; Dick et al., 2000; Schmid et al., 2000). This dorsalization can be rescued by injected bmp7 mRNA (Figure 3a,b column 2; Figure 3—figure supplement 1). However, bmp7 mRNA expression does not rescue bmp7-/- embryos that are also deficient for Acvr1l, as expected (Figure 3a,b column 3; Figure 3—figure supplement 1). Conversely, in the absence of endogenous bmp7, WT ACVR1 expression cannot rescue bmp7-/- embryos (Figure 3b column 4, b’; Figure 3—figure supplement 1), confirming that both of these components are required for BMP signaling to pattern the developing embryo. Co-injection of human ACVR1 with bmp7 mRNA rescued embryos to less dorsalized or wild-type phenotypes (Figure 3b column 5, b’; Fig Figure 3—figure supplement 1). Similarly, mouse Acvr1 rescued DV patterning with bmp7 mRNA, but could not pattern embryos in the absence of bmp7 (Figure 3—figure supplement 1, columns 5 and 6).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/53761/elife-53761-fig3-v1.jpg)
+
+**Figure 3.:** (a) Representative dorsal-ventral (DV) phenotypes of bmp7-/- embryos not injected (12 hpf), injected with bmp7 mRNA (12 and 30 hpf), or bmp7 mRNA and acvr1l KD (12–14 hpf). (b–d) 12–30 hpf DV phenotypes of bmp7-/- embryos with acvr1l KD that were injected with human ACVR1 mRNA alone or combined with bmp7 mRNA. (b) WT ACVR1 injected embryos. Three pooled experiments. Columns: 1, N = 240; 2, N = 150; 3, N = 143; 4, N = 101; 5, N = 120. (b’) Representative 12 and 30 hpf phenotypes. (c) ACVR1-R206H injected embryos. Two pooled experiments. Columns: 1, N = 177; 2, N = 78; 3 N = 132; 4, N = 100; 5, N = 86. (c’) Representative 12 and 30 hpf phenotypes. (d) ACVR1-G328R injected embryos. Two pooled experiments. Columns: 1, N = 52; 2, N = 46; 3, N = 55; 4, N = 56; 5, N = 82. (d’) Representative 12 and 30 hpf phenotypes. (e–f) 12–30 hpf DV phenotypes of bmp7-/- embryos with acvr1l KD that were injected with a mouse Acvr1 or ΔAcvr1 mRNA alone or in combination with bmp7 mRNA. Four pooled experiments. (e) WT Acvr1 or ΔAcvr1 mRNA Columns: 1, N = 540; 2, N = 172; 3, N = 143; 4, N = 152; 5, N = 231; 6, N = 163; 7, N = 104; 8, N = 97; (f) Acvr1-R206H or ΔAcvr1-R206H mRNA Columns: 1, N = 540; 2, N = 172; 3, N = 143; 4, N = 152; 5, N = 176; 6, N = 217; 7, N = 119; 8, N = 145.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/53761/elife-53761-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Representative 12–14 and 30 hpf phenotypes of injected embryos.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/53761/elife-53761-fig3-figsupp2-v1.jpg)
+
 We next tested if ACVR1-R206H or ACVR1-G328R signaling can be enhanced by Bmp7 ligand. ACVR1-R206H rescued bmp7-/-, acvr1l-KD fish primarily to mildly ventralized phenotypes (Figure 3c column 4, c’; Figure 3—figure supplement 1). This rescue was enhanced to severe ventralization phenotypes by the addition of bmp7 ligand mRNA (Figure 3c column 5, c’, Figure 3—figure supplement 1). Similarly, ACVR1-G328R rescued bmp7-/- embryos to less severe dorsalized phenotypes (Figure 3d column 4, d’, Figure 3—figure supplement 1) and induced further ventralization in response to bmp7 ligand (Figure 3d column 5, d’; Figure 3—figure supplement 1).
 
 We then tested if our intact and ligand-binding mutant mouse Acvr1 could respond to Bmp7. Like human ACVR1, mouse Acvr1 only rescued bmp7-/- mutant fish in the presence of injected bmp7 mRNA (Figure 3e, columns 5 and 6; Figure 3—figure supplement 2). ΔAcvr1, however, could not rescue bmp7-/- embryos regardless of the presence of Bmp7 (Figure 3e, columns 7 and 8; Figure 3—figure supplement 2), demonstrating that WT Acvr1 requires a ligand-binding domain to signal. Acvr1-R206H rescued bmp7-/-, acvr1l-KD embryos primarily to mildly ventralized phenotypes (Figure 3f, column 5; Figure 3—figure supplement 2) and additional bmp7 ligand mRNA enhanced the rescue to severely ventralized phenotypes (Figure 3f, column 6; Figure 3—figure supplement 2). Importantly, while ΔAcvr1-R206H rescued bmp7-/- embryos to ventralized phenotypes (Figure 3e, column 7; Figure 3—figure supplement 2), the addition of bmp7 mRNA did not further enhance ventralization (Figure 3e, column 8; Figure 3—figure supplement 2), supporting that loss of the ligand-binding domain prevents ligand response. These data show that ACVR1-R206H and ACVR1-G328R are responsive to BMP ligand, and together with the data in Figures 1 and 2, demonstrate that these FOP-ACVR1 mutant receptors have both ligand-independent and ligand-responsive activity.
 
-## ACVR1-R206H signaling in response to activin A ligand depends on its ligand binding domain
+### ACVR1-R206H signaling in response to activin A ligand depends on its ligand binding domain
 
 Studies have shown that ACVR1-R206H has acquired the ability to respond to Activin A ligand, in addition to its normal BMP ligands (Hatsell et al., 2015; Lees-Shepard et al., 2018; Hino et al., 2015). Previous studies reported that ΔAcvr1-R206H does not respond to Activin A or BMP ligand in cell culture (Hildebrand et al., 2017). To test if ACVR1-R206H requires a ligand-binding domain to activate pSmad1/5 in response to Activin A or BMP7 ligand in vivo in the zebrafish vertebrate model, we injected Acvr1l-KD, bmp7-/- embryos with mouse Acvr1 or ΔAcvr1 mRNA with or without Activin A or bmp7 mRNA and assayed pSmad1/5 activation in six hpf embryos and DV phenotypes in 30 hpf embryos.
 
@@ -74,7 +96,7 @@ Expression of Activin A ligand in the early embryo enhances Nodal signaling thro
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/53761/elife-53761-fig4-v1.jpg)
 
-**Figure 4.:** (a, b) Representative 6 hpf (shield stage) WT (a) and bmp7-/- (b) embryos uninjected or injected with Activin A mRNA. WT and bmp7-/- develop normal dorsal organizers (arrows). Activin A injection causes embryos to have expanded (filled arrowheads) or duplicated (empty arrowheads) dorsal organizers. (c–m) Animal pole view of pSmad1/5 intensities (using arbitrary units (AU)) within each nucleus of the embryo in representative bmp7-/- early gastrula (shield stage) embryos with endogenous Acvr1l present (c–e) or knocked down (f–m). Injected receptor mRNA is noted to the left and ligand mRNA is noted above. Embryos are oriented with the dorsal shield to the right. Scale bars = 100 μm. (c–e) bmp7-/- uninjected embryos (N = 8), or injected with bmp7 (N = 10), or Activin A (N = 8) mRNA. (f and g) bmp7-/-, acvr1l KD embryos injected with bmp7 (N = 6) or Activin A (N = 8) mRNA. (h–j) Acvr1-R206H injected bmp7-/-, acvr1l KD embryos with no injected ligand (N = 8), bmp7 (N = 8), or Activin A (N = 9) mRNA. (k–m) ΔAcvr1-R206H injected bmp7-/-, acvr1l KD embryos (N = 11), with injected bmp7 (N = 11), or Activin A (N = 11) mRNA. (n) Mean nuclear pSmad1/5 fluorescence of injected embryos. Each dot represents the mean fluorescence of an individual embryo. Mean and standard deviation of each condition is shown. * indicates p<0.05, ns indicates no significance. (o–s) Lateral views showing relative pSmad2 intensities (using arbitrary units (AU)) within each nucleus of the embryo in representative bmp7-/- early gastrula embryos (shield stage) with endogenous acvr1l present (i and j) or knocked down (k–m). Injected mRNA is noted above each image. Embryos are oriented with the presumptive dorsal side facing forward. Scale bars = 100 μm. (o) bmp7-/- embryo (N = 5) (p) Activin A injected embryo (N = 8) (q) Activin A injected embryo with Acvr1l knockdown (N = 5) (r) mAcvr1-R206H injected embryo with Acvr1l knockdown (N = 5) (s) mAcvr1-R206H and Activin A injected embryo with Acvr1l knockdown (N = 5) (t) Mean nuclear pSmad2 fluorescence of injected embryos. Each dot represents the mean fluorescence of an individual embryo. Mean and standard deviation of each condition is shown by bars. * indicates p<0.05, ns indicates no significance.Figure 4—source data 1.Figure 4n.Figure 4—source data 2.Figure 4n.Figure 4—source data 3.Figure 4t.Figure 4—source data 4.Figure 4t.
+**Figure 4.:** (a, b) Representative 6 hpf (shield stage) WT (a) and bmp7-/- (b) embryos uninjected or injected with Activin A mRNA. WT and bmp7-/- develop normal dorsal organizers (arrows). Activin A injection causes embryos to have expanded (filled arrowheads) or duplicated (empty arrowheads) dorsal organizers. (c–m) Animal pole view of pSmad1/5 intensities (using arbitrary units (AU)) within each nucleus of the embryo in representative bmp7-/- early gastrula (shield stage) embryos with endogenous Acvr1l present (c–e) or knocked down (f–m). Injected receptor mRNA is noted to the left and ligand mRNA is noted above. Embryos are oriented with the dorsal shield to the right. Scale bars = 100 μm. (c–e) bmp7-/- uninjected embryos (N = 8), or injected with bmp7 (N = 10), or Activin A (N = 8) mRNA. (f and g) bmp7-/-, acvr1l KD embryos injected with bmp7 (N = 6) or Activin A (N = 8) mRNA. (h–j) Acvr1-R206H injected bmp7-/-, acvr1l KD embryos with no injected ligand (N = 8), bmp7 (N = 8), or Activin A (N = 9) mRNA. (k–m) ΔAcvr1-R206H injected bmp7-/-, acvr1l KD embryos (N = 11), with injected bmp7 (N = 11), or Activin A (N = 11) mRNA. (n) Mean nuclear pSmad1/5 fluorescence of injected embryos. Each dot represents the mean fluorescence of an individual embryo. Mean and standard deviation of each condition is shown. * indicates p<0.05, ns indicates no significance. (o–s) Lateral views showing relative pSmad2 intensities (using arbitrary units (AU)) within each nucleus of the embryo in representative bmp7-/- early gastrula embryos (shield stage) with endogenous acvr1l present (i and j) or knocked down (k–m). Injected mRNA is noted above each image. Embryos are oriented with the presumptive dorsal side facing forward. Scale bars = 100 μm. (o) bmp7-/- embryo (N = 5) (p) Activin A injected embryo (N = 8) (q) Activin A injected embryo with Acvr1l knockdown (N = 5) (r) mAcvr1-R206H injected embryo with Acvr1l knockdown (N = 5) (s) mAcvr1-R206H and Activin A injected embryo with Acvr1l knockdown (N = 5) (t) Mean nuclear pSmad2 fluorescence of injected embryos. Each dot represents the mean fluorescence of an individual embryo. Mean and standard deviation of each condition is shown by bars. * indicates p<0.05, ns indicates no significance.
 
 Therefore, to assess the ability of Acvr1-R206H to respond to Activin A with or without a ligand-binding domain, we used immunostaining to quantify pSmad1/5 activity in Acvr1l-KD, bmp7-/- embryos injected with Acvr1 or ΔAcvr1 with or without bmp7 or Activin A. For these experiments, a lower amount of Acvr1-R206H and ΔAcvr1-R206H mRNA was injected than in the DV phenotyping experiments to decrease the initial pSmad1/5 intensity prior to the addition of ligand and permit detection of Activin A ligand-induced effects. Embryos were collected at shield stage before Activin A expressing embryos halt their development.
 
@@ -88,27 +110,55 @@ We next evaluated the ability of Acvr1-R206H to activate pSmad2 signaling. A nuc
 
 To test if Acvr1-R206H enhances signaling through the pSmad2 pathway, we injected Acvr1-R206H mRNA into bmp7-/-, Acvr1l-KD embryos with or without Activin A mRNA and measured pSmad2 immunofluorescence intensity. Embryos mutant for bmp7 were used to eliminate possible competition between Activin A and Bmp7 for Acvr1 and type II BMP receptors and enhance any potential results. Expression of Activin A significantly increased mean pSmad2 signaling regardless of the presence of endogenous Acvr1l (Figure 4p,q,t). Acvr1-R206H alone did not increase the mean pSmad2 intensity compared to uninjected embryos and had significantly lower mean pSmad2 intensity compared to embryos injected with Activin A (Figure 4r,t). Activin A significantly increased mean pSmad2 intensity in Acvr1-R206H injected embryos, but no more than in the absence of Acvr1-R206H (Figure 4s,t). These data show that Activin A enhances pSmad2 signaling in the embryo, but Acvr1-R206H does not, and confirm that Acvr1-R206H over-activates pSmad1/5, but not pSmad2 signaling.
 
-## ACVR1-R206H signals in the absence of the type I Bmpr1 receptor
+### ACVR1-R206H signals in the absence of the type I Bmpr1 receptor
 
 The ability of FOP-ACVR1 to signal independently of ligand suggests the possibility that the mutant receptor could signal in the absence of receptor complex partners as well. In the developing zebrafish, both type I BMP receptors, Acvr1l and Bmpr1, are required for signaling and to pattern the embryo (Mintzer et al., 2001; Little and Mullins, 2009). BMP ligand is required for Acvr1l to associate with Bmpr1 in the zebrafish gastrula embryo (Little and Mullins, 2009). Previous studies showed that ACVR1-R206H retained the ability to over-activate BMP signaling when either BMPR1A or BMPR1B was knocked down in cell culture (Hino et al., 2015). However, given that these two genes have largely redundant activity (Yoon et al., 2005; Wine-Lee et al., 2004), one copy of BMPR1 (A or B) may be sufficient to allow ACVR1-R206H to signal.
 
 Zebrafish have two bmpr1a genes (aa and ab) and two bmpr1b genes (ba and bb). To test if ACVR1-R206H can signal in the absence of all other type I BMP receptors, we first intercrossed bmpr1aa+/-; bmpr1ab-/- zebrafish (Figure 5a) to deplete bmpr1a gene function. We next injected the bmpr1a-deficient embryos with MOs against bmpr1ba, bmpr1bb, and acvr1l (designated as Type I KD fish henceforth). We then injected these Type I KD fish with human ACVR1-R206H mRNA, collected embryos at an early gastrula stage for pSmad1/5 immunostaining or at 12 to 30 hpf for phenotyping, analyzed them blindly, then genotyped for the bmpr1aa mutation. Using immunostaining, we confirmed that Flag-tagged ACVR1-R206H is expressed and localized to the cell membrane in bmpr1a+/-embryos (Figure 5b).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/53761/elife-53761-fig5-v1.jpg)
+
+**Figure 5.:** (a) Experimental workflow. bmpr1aa+/-; ab-/- fish were crossed with each other to generate bmpr1a+/- (bmpr1aa+/+; ab-/-), bmpr1a+/- (bmpr1aa+/-; ab-/-), and bmpr1a-/- (bmpr1aa-/-;ab-/-) embryos. One-cell stage eggs were injected with bmpr1ba, bmpr1bb morpholinos, and separately injected with an acvr1l morpholino to additionally knockdown these endogenous BMP receptors, and then were injected with ACVR1-R206H mRNA. Early gastrula (shield-65% epiboly) stage embryos were collected and fixed for immunostaining. At 12 to 30 hpf the remaining embryos were scored for DV patterning phenotypes. Following blindly immunostaining and imaging, or phenotyping, embryos were individually genotyped. (b) Representative immunostained embryo for ACVR1-Flag (magenta), β-Catenin (marking the cell membrane cyan), and nuclei (yellow) (N=5). (c-e) Representative 24 hpf phenotypes of (b) bmpr1aa+/+; ab-/-, (c) bmpr1aa+/-; ab-/-, and (d) bmpr1aa-/-; ab-/- embryos. (f) Injected embryo phenotypes at 12 to 30 hpf. Three pooled experiments. Columns: 1, N=104; 2, N=41; 3, N=69; 4, N=69; 5, N=78; 6, N=70; 7, N=36; 8, N=19; 9, N=25; 10, N=29; 11, N=23; 12, N=22. (g-j) Animal pole view of relative pSmad1/5 intensities (AU) within each nucleus in representative early-gastrula embryos. (d and f) Embryos are oriented with the ventral (V) side to the left and the dorsal (D) side to the right. (e and g) Dorsal side of the embryo could not be identified due to loss of the shield structure with ventralization. (g) bmpr1a+/- embryo (N=5). (h) bmpr1a+/- embryo injected with ACVR1-R206H mRNA (N=5). (i) bmpr1a-/- embryo with acvr1l and bmpr1b KD (Type I KD embryo) (N=4). (j) Type I KD embryo injected with ACVR1-R206H mRNA (N=5). (k) Mean nuclear pSmad1/5 fluorescence of injected embryos. Each dot represents the mean fluorescence of an individual embryo. Mean and standard deviation of each condition (e-h) is shown. * indicates P<0.05, ns indicates no significance.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/53761/elife-53761-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** Representative 12 and 30 hpf phenotypes of injected embryos. Dead C5 embryos were removed from 30 hpf live embryos prior to photographing. Orange asterisks indicate C5 bmpr1a-/- embryo with bmpr1b KD; indicating that loss of all Bmpr1 function eliminates BMP signaling.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/53761/elife-53761-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** Top bubble plots are from two pooled experiments. Columns: 1, N = 24; 2, N = 76; 3, N = 101; 4, N = 66; 5, N = 72; 6, N = 59; 7, N = 36; 8, N = 28; 9, N = 32; 10, N = 20; 11, N = 30; 12, N = 13. Lower panels are injected embryo phenotypes at 14 to 30 hpf. 14–16 hpf C5 embryos are in the process of lysing. Dead C5 embryos were removed from 30 hpf live embryos prior to photographing.
+
 Both bmpr1aa+/+; ab-/- (bmpr1a+/+) and bmpr1aa+/-; ab-/- (bmpr1a+/-) embryos developed normally (Figure 5c,d,f column 1; Figure 5—figure supplement 1), but embryos null for both bmpr1aa and bmpr1ab (bmpr1a-/-) were severely dorsalized to a C4 phenotype (Figure 5e,f column 7; Figure 5—figure supplement 1). bmpr1b KD does not affect DV patterning of bmpr1a+/+ or +/- embryos (Figure 5f column 2; Figure 5—figure supplement 1), demonstrating that Bmpr1aa with Acvr1l is sufficient for signaling and patterning the zebrafish embryo. However, bmpr1b KD further dorsalized bmpr1a-/- embryos to a C5 phenotype (Figure 5f column 8; Figure 5—figure supplement 1). Embryos were severely dorsalized to a C5 phenotype by KD of bmpr1b and acvr1l (Figure 5f column 3; Figure 5—figure supplement 1) and Type I KD embryos were also dorsalized to a C5 phenotype (Figure 5f column 9; Figure 5—figure supplement 1). However, ACVR1-R206H was able to ventralize Type I KD embryos, indicating that it does not require its normal signaling partner, Bmpr1, to pattern the embryo (Figure 5f column 12; Figure 5—figure supplement 1). Similarly, ACVR1-G328R could ventralize Type I KD embryos, demonstrating it shares the ability to signal without Bmpr1 (Figure 5—figure supplement 2).
 
 We examined how the pSmad1/5 gradient was affected in the injected embryos. ACVR1-R206H significantly increased the mean pSmad1/5 intensity compared to uninjected bmpr1a+/-sibling embryos (Figure 5g,h,k). Type I KD embryos lacked a pSmad1/5 gradient and had a significantly lower mean pSmad1/5 fluorescence than uninjected siblings (Figure 5i,k), demonstrating that loss of type I receptors results in loss of pSmad1/5 signaling. However, ACVR1-R206H significantly increased pSmad1/5 intensity in Type I KD embryos (Figure 5j,k), consistent with the observed ventralized phenotype. These data suggest that FOP-ACVR1 does not require BMPR1a or BMPR1b to phosphorylate Smad1/5 and that this mutant receptor does not require the presence of wild-type ACVR1-BMPR1 signaling complexes.
 
-## ΔACVR1-R206H signals in the absence of the type I Bmpr1 receptor
+### ΔACVR1-R206H signals in the absence of the type I Bmpr1 receptor
 
 To test if ligand-independent FOP-ACVR1 signaling requires Bmpr1 or endogenous Acvr1l, we injected Type I KD embryos with mouse ΔAcvr1-R206H or Acvr1-R206H and evaluated DV patterning phenotypes at 30 hpf and dorsal marker expression in 5- to 9-somite stage embryos. Interestingly, like Acvr1-R206H (Figure 5; Figure 6a, Figure 6—figure supplement 1), ΔAcvr1-R206H also ventralized Type I KD embryos (Figure 6b column 8; Figure 6—figure supplement 1), indicating that ligand-independent ACVR1-R206H signaling also does not require other type I BMP receptors to signal in patterning the zebrafish embryo.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/53761/elife-53761-fig6-v1.jpg)
+
+**Figure 6.:** (a–b) Injected bmpr1a+/- or -/- 12 to 30 hpf embryo phenotypes with bmpr1b KD, acvr1 KD with or without Acvr1-R206H or ΔAcvr1-R206H mRNA. Two pooled experiments. (a) Acvr1-R206H injected embryos. Columns: 1, N = 150; 2, N = 80; 3, N = 98; 4, N = 89; 5, N = 76; 6, N = 36; 7, N = 31; 8, N = 30. (b) ΔAcvr1-R206H injected embryos. Columns: 1, N = 150; 2, N = 80; 3, N = 92; 4, N = 127; 5, N = 76; 6, N = 36; 7, N = 26; 8, N = 37. (c–i) Representative dorsal view of pax2.1 (white arrowheads: anteriorly in the midbrain-hindbrain boundary and posteriorly in the pronephric mesoderm), krox20 (black arrowheads; rhombomeres 3 and 5), and myod (black arrow; paraxial mesoderm) expression in 5–9 somite stage bmpr1a+/-or -/- embryos with bmpr1b KD, acvr1 KD with or without Acvr1-R206H or ΔAcvr1-R206H. Two independent experiments. Embryos are oriented with the anterior (A) side left and the posterior (P) side right. Number of embryos that showed expression patterns similar to the representative embryos out of the total number of embryos analyzed is shown. (c) bmpr1a+/- embryo (d) bmpr1a-/- embryo (e) bmpr1a-/-embryo with acvr1l and bmpr1b KD (Type I KD embryo) (f) Type I KD embryo injected with Acvr1-R206H mRNA. (g) Type I KD embryo injected with ΔAcvr1-R206H mRNA.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/53761/elife-53761-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** Representative 12 and 30 hpf phenotypes of injected embryos. Dead C5 embryos were removed from 30hpf live embryos prior to photographing.
+
 We additionally evaluated expression of two dorsal markers, pax2.1 and krox20, by whole-mount in situ hybridization. In wild-type 5- to 9-somite stage embryos, pax2.1 is expressed in the midbrain-hindbrain (MHB) boundary (Figure 6c, white arrowhead at anterior) and krox20 is expressed in rhombomeres 3 and 5 (Figure 6c, black arrowheads) (Thisse et al., 2001; Strähle et al., 1993; Krauss et al., 1991; Hashiguchi and Mullins, 2013). In bmpr1a-/- embryos, which develop to a C4 dorsalized phenotype, the MHB and rhombomere expression of pax2.1 and krox20, respectively, were expanded laterally (Figure 6d). In Type I KD embryos, which display a C5 dorsalized phenotype, pax2.1 and krox20 became radially expressed in the MHB and rhombomere 3 and 5 (Figure 6e). Acvr1-R206H mRNA injection rescued Type I KD embryos to a ventralized phenotype, characterized by dorsally restricted neural expression of pax2.1 and krox20 (Figure 6f) compared to Type I KD embryos. Injection of Type I KD embryos with ΔAcvr1-R206H mRNA, which lacks critical regions of the ligand-binding domain, similarly restricted expression of pax2.1 and krox20 to dorsal regions (Figure 6g). These data provide additional support that ligand-independent signaling by ACVR1-R206H also does not require Bmpr1a, Bmpr1b, or endogenous Acvr1l.
 
-## ACVR1-R206H responds to ligand in the absence of Bmpr1
+### ACVR1-R206H responds to ligand in the absence of Bmpr1
 
 Since ligand facilitates association of Acvr1 and Bmpr1 in the developing zebrafish (Little and Mullins, 2009), we next examined if FOP-ACVR1 requires other type I BMP receptors for its enhanced ventralizing activity in response to ligand. We expressed human ACVR1-R206H in Type I KD embryos that were either deficient in BMP (by overexpressing the BMP ligand-binding inhibitor Chordin) or overexpressing Bmp7. Embryos were evaluated for DV patterning and dorsal marker gene expression.
 
 Overexpression of Chordin dorsalized embryos in both the presence and absence of Bmpr1 (Figure 7a columns 1 and 9; Figure 7—figure supplement 1). While Bmp7 overexpression ventralized embryos in the presence of Bmpr1a (Figure 7a column 3; Figure 7—figure supplement 1), Bmp7 had no effect on patterning in Bmpr1a-deficient or Type I KD embryos, as expected (Figure 7a column 11 and 13; Figure 7—figure supplement 1). The inability of Bmp7 to affect Bmpr1a-deficient embryos, while it ventralizes Bmpr1a+/-embryos (Figure 7a columns 3,10,11), attests to the strong Bmpr1 loss of function. As in Figure 5f, ACVR1-R206H ventralized embryos even in the absence of all other type I BMP receptors (Figure 7a, column 15; Figure 7—figure supplement 1). Comparatively, overexpression of Chordin inhibited ventralization by ACVR1-R206H with or without Bmpr1 (Figure 7a columns 6 and 14, compare to columns 7 and 15; Figure 7—figure supplement 1), consistent with reduced BMP pathway activity. Overexpression of Bmp7 enhanced ventralization by ACVR1-R206H with or without Bmpr1, consistent with increased signaling (Figure 7a, compare columns 8 and 16, to columns 7 and 15; Figure 7—figure supplement 1).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/53761/elife-53761-fig7-v1.jpg)
+
+**Figure 7.:** (a) 12–30 hpf phenotypes of bmpr1a+/-or -/- embryos with bmpr1b KD and acvr1l KD with or without ACVR1-R206H, with or without chordin (chd) mRNA or bmp7 mRNA. Four pooled experiments plus two experiments with controls only. Columns: 1, N = 172; 2, N = 160; 3, N = 106; 4, N = 135; 5, N = 104; 6, N = 121; 7, N = 169; 8, N = 117; 9, N = 32; 10, N = 91; 11, N = 17; 12, N = 57; 13, N = 29; 14, N = 28; 15, N = 49; 16, N = 49. (b–g) Representative dorsal view of pax2.1, krox20, and myod expression in 5–9 somite stage bmpr1a+/-or -/- embryos with bmpr1b KD, acvr1 KD, with or without ACVR1-R206H, and with or without chordin or bmp7 mRNA. Three experiments. Embryos are oriented with the anterior (A) side left and the posterior (P) side right. Number of embryos that showed expression patterns similar to the representative embryos out of the total number of embryos analyzed is shown. (b) bmpr1a +/- embryo (c) bmpr1a-/-embryo (d) bmpr1a-/-embryo with acvr1l and bmpr1b KD (Type I KD embryo) (e) Type I KD embryo injected with ACVR1-R206H and chd mRNA (f) Type I KD embryo injected with ACVR1-R206H mRNA (g) Type I KD embryo injected with ACVR1-R206H and bmp7 mRNA.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/53761/elife-53761-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** Dead C5 embryos were removed from 30hpf live embryos prior to photographing. C4 (bmpr1aa-/-;ab-/-) and V5 (bmpr1a+/+;ab-/-) embryos indicated in bmpr1aa+/-;bmpr1ab-/-cross progeny injected with bmp7; showing that bmp7 overexpression does not rescue the bmpr1aa-/-;ab-/-C4 phenotypes.
 
 We next evaluated 5–9 somite stage embryos for pax2.1 and krox20 expression using in situ hybridization. Compared to bmpr1a+/+ and +/- embryos (Figure 7b, as in Figure 6c), bmpr1a-/-embryos displayed expanded neural expression of pax2.1 and krox20 (Figure 7c, as in Figure 6d) and Type I KD embryos had radialized expression of pax2.1 and krox 20 (Figure 7d, as in Figure 6e). Type I KD embryos co-injected with ACVR1-R206H and chordin mRNA had dorsally-restricted expression of pax2.1 and krox20 compared to Type I KD embryos (Figure 7d,e), although not as restricted as bmpr1a+/- embryos (Figure 7b), consistent with moderately dorsalized phenotypes. Type I KD embryos injected with ACVR1-R206H or co-injected with ACVR1-R206H and bmp7, expressed pax2.1 and krox20 in patterns similar to, or more dorsally-restricted than bmpr1a+/- embryos, consistent with rescue to wild-type or ventralized phenotypes (Figure 7f and g). These results suggest that ACVR1-R206H can respond to ligand in the absence of Bmpr1a, Bmpr1b, and endogenous Acvr1l.
 
@@ -136,11 +186,259 @@ The pathological significance of the ACVR1-R206H signaling modalities elucidated
 
 ## Materials and methods
 
-## Zebrafish
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>bmpr1aap3/+</td>
+      <td>This paper</td>
+      <td>p3</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>bmpr1absa0028</td>
+      <td>ZIRC</td>
+      <td>sa0028</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Danio rerio)</td>
+      <td>bmp7asb1aub</td>
+      <td>Schmid et al., 2000</td>
+      <td>sb1aub, RRID:ZFIN_ZDB-GENO-100415-21</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Alk 8 (Acvr1l) Morpholino 4</td>
+      <td>Gene Tools LLC</td>
+      <td>MO4-acvr1l (previously MO2-acvr1l)</td>
+      <td>TGCCTTTCAGTATTCGCACAGCCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Alk8 (Acvr1l) Morpholino 2</td>
+      <td>Gene Tools LLC</td>
+      <td>MO2-acvr1l (previously MO3-acvr1l)</td>
+      <td>GATTCATGTTTGTGTTCAATTTCCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Alk6a (Bmpr1ba) Morpholino 1</td>
+      <td>Gene Tools LLC</td>
+      <td>MO1-bmpr1ba</td>
+      <td>AGAACTCCAGTGAGCCAGAGAATCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>Alk6b (Bmpr1bb) Morpholino 1</td>
+      <td>Gene Tools LLC</td>
+      <td>MO1-bmpr1bb</td>
+      <td>ACTGCTCCACAGCTACTCCACACTG</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Human ActivinA (plasmid)</td>
+      <td>Origene</td>
+      <td>Cat #RC203226 INHBA, inhibinβa, ActivinA</td>
+      <td>Cloned into pCS2 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Zebrafish bmp7a (plasmid)</td>
+      <td>Schmid et al., 2000</td>
+      <td>bmp7a</td>
+      <td>Cloned into pCS2 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Zebrafish chordin (plasmid)</td>
+      <td>Miller-Bertoglio et al., 1997</td>
+      <td>chd</td>
+      <td>Cloned into pCS2 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Human ACVR1 (plasmid)</td>
+      <td>The Shore Lab. This Paper.Shen et al., 2009</td>
+      <td>ACVR1</td>
+      <td>Cloned into pCS2 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Human ACVR1-R206H (plasmid)</td>
+      <td>The Shore Lab. Shen et al., 2009</td>
+      <td>ACVR1-R206H</td>
+      <td>Cloned into pCS2 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Human ACVR1-G328R (plasmid)</td>
+      <td>The Shore Lab. This Paper.(Shore et al., 2006).</td>
+      <td>ACVR1-G328R</td>
+      <td>Cloned into pCS2 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mouse Acvr1 (plasmid)</td>
+      <td>Haupt et al., 2014</td>
+      <td></td>
+      <td>Cloned into pCS2 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mouse Acvr1-R206H (plasmid)</td>
+      <td>Haupt et al., 2014</td>
+      <td>p.R206H</td>
+      <td>Cloned into pCS2 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mouse Acvr1-G328R (plasmid)</td>
+      <td>Haupt et al., 2014</td>
+      <td>p.G328R</td>
+      <td>Cloned into pCS2 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mouse ΔAcvr1 (plasmid)</td>
+      <td>Haupt et al., 2014</td>
+      <td>ΔLBD-Acvr1</td>
+      <td>Cloned into pCS2 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mouse ΔAcvr1-R206H (plasmid)</td>
+      <td>Haupt et al., 2014</td>
+      <td>ΔLBD-Acvr1</td>
+      <td>Cloned into pCS2 backbone</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Mouse ΔAcvr1-G328R (plasmid)</td>
+      <td>Haupt et al., 2014</td>
+      <td>ΔLBD-Acvr1</td>
+      <td>Cloned into pCS2 backbone</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pSmad1/5/8 (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat #13820 RRID:AB_2493181</td>
+      <td>IF (1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pSmad2/3 (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>Cat #8828, RRID:AB_2631089</td>
+      <td>IF (1:800)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Beta catenin (mouse monoclonal)</td>
+      <td>Sigma</td>
+      <td>Cat #C7207, RRID:AB_476865</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (rabbit polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat #71–5500, RRID:AB_87935</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Flag (rabbit polyclonal)</td>
+      <td>Sigma</td>
+      <td>Cat #F7425, RRID:AB_439687</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit Alexa 647 (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Cat #A-21245, RRID:AB_2535813</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse Alexa 594 (goat polyclonal)</td>
+      <td>Molecular Probes</td>
+      <td>Cat #A21123, RRID:AB_141592</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sytox green</td>
+      <td>Fisher</td>
+      <td>Cat #S7020</td>
+      <td>IF (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>pax2.1 zebrafishin situ probe</td>
+      <td>Krauss et al., 1992</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>krox20 zebrafishin situ probe</td>
+      <td>Oxtoby and Jowett, 1993</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>myod zebrafishin situ probe</td>
+      <td>Weinberg et al., 1996</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, Kit</td>
+      <td>mMESSAGE mMACHINE SP6 Transcription Kit</td>
+      <td>ThermoFisher</td>
+      <td>Cat #AM1340</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Fiji (ImageJ)</td>
+      <td>Fiji</td>
+      <td></td>
+      <td>https://fiji.sc/#download</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Imaris</td>
+      <td>Oxford Instruments</td>
+      <td>Imaris 9.6</td>
+      <td>https://imaris.oxinst.com/</td>
+    </tr>
+  </tbody>
+</table>
+
+### Zebrafish
 
 Procedures involving animals were approved by the University of Pennsylvania IACUC. Adult zebrafish were kept at 28°C in a 13 hr light/11 hr dark cycle. All zebrafish husbandry was performed in accordance with institutional and national ethical and animal welfare guidelines. The characterized mutant bmp7asb1aub (bmp7-/-) (Schmid et al., 2000) and bmpr1aap3/+; bmpr1ab sa0028 (bmpr1aa+/-;bmpr1ab-/-) were used in this study. bmp7sb1aub fish were maintained as homozygous mutant stocks by rescuing the C5 dorsalized embryonic phenotype with bmp7 mRNA injection. bmpr1aa+/-; bmpr1ab-/-fish were generated by intercrossing and genotyping for the bmpr1aa allele (described below). Embryos used in these experiments were 0–48 hpf. Embryos were maintained at 28–32°C in E3 solution. Sex/gender was not accounted for as zebrafish sex determination takes place later, during juvenile stages of development (Santos et al., 2017).
 
-## CRISPR generation and identification of bmpr1aa mutant allele
+### CRISPR generation and identification of bmpr1aa mutant allele
 
 A mutant allele of bmpr1aa (bmpr1aap3) in the zebrafish was generated using CRISPR-Cas9 mutagenesis. The target site GGTATAAGTGGCAGACAGAG in exon 8 (out of 13) in the kinase domain, was selected with the assistance of the web tool CHOPCHOP (https://chopchop.cbu.uib.no). Single guide RNAs (sgRNAs) were designed to utilize the T7 Promoter. sgRNAs were synthesized in-vitro from PCR amplified templates using the cloning-free method of Gagnon et al., 2014 with the following changes: sgRNA templates were amplified using Phusion Polymerase 40 uL reaction (ThermoFischer F553S). sgRNA templates were purified after amplification using the MinElute purification kit (QIAGEN 28004). sgRNAs were synthesized from the templates in vitro using the MEGAshortscript T7 kit (ThermoFischer AM1354). Megashortscript reactions were run overnight rather than the recommended 2–4 hr, as this was found to increase yield. sgRNA was purified post synthesis using the ethanol precipitation protocol from Gagnon et al., 2014. Purified sgRNAs were assessed and quantified visually by running a dilution series on a glyoxal/sodium phosphate buffer RNA gel and comparing to RiboRuler (ThermoFischer SM1821), as the Nanodrop was found to be an unreliable to quantify these guide RNAs.
 
@@ -156,23 +454,23 @@ Target site Sequencing Primers:
 
 Mutant Allele Sequence:
 
-## Genotyping
+### Genotyping
 
 Adult and embryonic genomic DNA was obtained using HotShot DNA isolation. Genotyping of adults and embryos for bmpr1aa was performed using KASPar genotyping (Smith and Maughan, 2015). Primers were designed and synthesized by LGC Bioscience Technologies. The following sequence was submitted for primer design: ATAAGAGGAGTCAGGAGTGATCTCTTTAACATCAAGGATA[CNAAAAAAACAGCTTTGACTGTGTTTTGTCATCAGGTATAAGTGGCAGACAGA/GTCCGTTATCAACTTGAAAAAGTGGCACC]GAGGCAGCGCTACCACAGAGACCTGGAGCAAGACGAGGCCTTTATCCCAGCAGGAGAATCCCTGAAAGA (Primer sequences are proprietary, LGC Biosearch technologies). Immunostained embryos were recovered after photographing and placed in methanol prior to Hotshot and KASPar genotyping. Alternatively, bmpr1aa mutant fish were genotyped by conventional PCR using Choice Taq Blue Mastermix (Denville CB4065-7), and the aforementioned HRM primers.
 
-## mRNA synthesis
+### mRNA synthesis
 
 Human, mouse, or zebrafish ACVR1 cDNAs were cloned into the pCS2+ expression vector. Mouse Acvr1 constructs contained an HA tag inserted after amino acid M34. ΔAcvr1 constructs contained a 64 amino acid deletion (C35-C99) within the extracellular domain (Haupt et al., 2014). Human ACVR1 constructs all contained a C-terminal Flag tag. mRNA was synthesized using SP6 mMessage machine kit (Sigma Aldrich) and purified using phenol:chloroform extraction. The mRNA was stored in nuclease-free water at −80°C.
 
-## Microinjection of one-cell stage zebrafish embryos
+### Microinjection of one-cell stage zebrafish embryos
 
 Eggs at 0–15 min post fertilization were collected in E3 media and injected at 22°C. For each experiment, each mRNA was injected into eggs with the same calibrated needle. For serial injections, eggs were loaded onto the same plate and injected with the first mRNA or morpholino, a subset were then set aside for controls and the remainder were injected with the next mRNA or morpholino. This process was repeated multiple times in different orders to ensure consistency between experimental and control conditions. Injection concentrations of each mRNA were determined based on phenotypic evaluation. In cases in which multiple mRNA syntheses were used, different mRNA concentrations were used to achieve the same phenotype due to presumed inconsistent mRNA 5’ capping. Working concentrations of mRNA based on Nanodrop spectrometer measurements: 2.5–200 pg mAcvr1 and ΔmAcvr1 mRNAs, 65–250 pg hACVR1 mRNAs, 1 ng chordin mRNA, 200 pg bmp7 for rescue of bmp7-/- to a wildtype phenotype, 500 pg-1 ng of bmp7 was used for overexpression experiments, 5–10 pg of Activin A mRNA. Morpholinos were synthesized by Gene Tools LLC and reconstituted in Daneaue solution at 25 mg/ml. A morpholino mixture of 2.3 ng Alk8MO4 (5’TGCCTTTCAGTATTCGCACAGCCAG3’) and 9.2 ng Alk8MO2 (5’GATTCATGTTTGTGTTCAATTTCCG3’) was used to knockdown endogenous acvr1l. To knock down all the type I BMP receptors, 17 ng Alk8MO2 was co-injected with a mixture of 5 ng Alk6aMO1 (5’AGAACTCCAGTGAGCCAGAGAATCC3’) and 2 ng Alk6bMO1 (5’ACTGCTCCACAGCTACTCCACACTG3’). All morpholinos bind independent sequences upstream of their target gene start sites to inhibit translation (Little and Mullins, 2009; Bauer et al., 2001).
 
-## Phenotypic evaluation
+### Phenotypic evaluation
 
 Embryos between 12 to 48 hpf were categorized into dorsoventral patterning phenotypes (Figure 1g). All images of embryos were photographed in E3 media with a Leica IC80HD. Injection results and controls from multiple experiments were then pooled. Phenotype pictures were corrected with background subtraction using ImageJ, and white balanced using Adobe Photoshop. Embryo bubble graphs were generated by pooling total numbers of embryos within each phenotypic category (C5-V5, Figure 1g) in each condition. These numbers were converted into percent of total embryos to generate the bubble graphs using excel bubble graph. (Figure 1—source data 1, Figure 1—figure supplement 2—source data 1, Figure 3—source data 1, Figure 5—source data 1, Figure 5—figure supplement 2—source data 1, Figure 6—source data 1, Figure 7—source data 1).
 
-## Immunofluorescence
+### Immunofluorescence
 
 P-Smad1/5 immunostaining and imaging were performed as previously described (Zinski et al., 2017; Zinski et al., 2019). For all immunostaining, embryos were fixed in 4% formaldehyde in PBST between shield stage and 60% epiboly (approximately 6–7 hpf), blocked with 10% FBS in PBST, and probed overnight at 4°C with a 1:200 dilution of anti-PSmad1/5/9 (Cell Signaling 13820). Embryos were then treated overnight at 4°C with a 1:500 dilution of antibody Alexa 647 (Invitrogen A-21245) and 1:2000 of Sytox green (Fisher S7020) diluted in blocking solution. Stained embryos were stored in the dark at 4°C in PBST for up to 2 months.
 
@@ -180,7 +478,7 @@ P-Smad2 immunostaining was performed as described for P-Smad1/5 immunostaining w
 
 Receptor tag immunostaining was performed as described for P-Smad1/5. Primary antibodies used were: 1:200 of anti-HA (Invitrogen 71–5500) or 1:200 of anti-Flag (Sigma F7425), and 1:1000 of anti-beta-Catenin (Sigma C7207) diluted in blocking solution. Secondary antibodies used were: 1:500 of Alexa 546 (Molecular Probes A21123), and/or 1:2000 of Sytox green (Fisher S7020).
 
-## Immunofluorescence imaging and analysis
+### Immunofluorescence imaging and analysis
 
 Prior to imaging, immunostained embryos were gradually dehydrated in MeOH and then cleared using BABB: a 1:2 ratio of benzyl alcohol (Sigma B-104) and benzyl benzoate (Sigma B-6630). Whole embryos were mounted with the DV axis parallel to the cover slip (either animal pole up or down). Imaging was performed using a Ziess LSM880 confocal microscope with an LD LCI Plan-Achromat 25X/0.8 lmm Corr DIC M27 multi-immersion lens in the oil-immersion setting. A single bead from a calibration slide (ThermoFisher Scientific Cat#F369009, Well A1) was imaged between each slide of embryos to account for fluctuations in power of the 633 nm laser over time (This laser was used for detecting pSmad1/5, pSmad2, or HA/Flag). Immunoflourescence was performed as described in Zinski et al., 2017 for pSmad2 immunostained embryos in Figure 2 and pSmad1/5 Immunostained embryos in Figure 4. pSmad1/5 immunostained embryos in Figures 2 and 5 were imaged with the following changes: embryos were imaged in a single ~567×567 μm frame and pixel dwell time was reduced to 0.77μsec. Receptor HA and Flag tagged embryos were imaged at 63x. Images of receptor stains were taken approximately 18 μm from the outer yolk syncytial layer of the embryo in a ~ 225×225 μm frame (Figure 1a). Quantitative receptor tag images were taken by imaging 16 2.2 μm stacks starting at the apical end of the embryo in a ~ 225×225 μm frame (Figure 1—figure supplement 2).
 
@@ -190,7 +488,7 @@ For pSmad1/5 and pSmad2 immunostained embryos, calibrated Images were analyzed u
 
 For HA immunostained embryos, calibrated embryos were analyzed using the Imaris software surfaces function to detect the area stained by β-catenin. The total HA flourescence was then measured within the area of β-catenin and the fluorescence per μm2 was calculated (Figure 1—figure supplement 2—source data 2).
 
-## Statistical analysis
+### Statistical analysis
 
 For pSmad1/5 and pSmad2 immunostained embryos, mean fluorescence was calculated for all individual nuclei within each embryo using the Imaris spots function, as described above. For each embryo, nuclei that fell outside 1.8 times the interquartile range were removed. The mean of the remaining nuclei was calculated to generate a mean nuclear pSmad1/5 or pSmad2 fluorescence for each embryo. Mean nuclear fluorescence was then compared using a two-tailed T-test assuming unequal variance (Figure 2—source data 1, Figure 4n—source data 2, Figure 4t—source data 2, Figure 5—source data 2).
 
@@ -198,6 +496,6 @@ For receptor tag immunostained embryos, HA fluorescence per μm2 calculated valu
 
 Representative embryos in all figures were selected from the three embryos closest to the mean fluorescence of the group, using embryos without any significant tears or defects.
 
-## In situ hybridization
+### In situ hybridization
 
 Whole mount in situ hybridizations were performed on fixed 5–9 somite stage embryos using DIG-labeled anti-sense RNA probes (made with labeling kit: Roche 11277073910) to pax2.1, krox20, and myod. Probes were visualized with anti-DIG-Alkaline Phosphatase (Roche11093274910) and developed in BM Purple (Roche 11442074001). Embryos were mounted on agarose in methanol and photographed with a Leica IC80HD. Images were processed using image J. After imaging, embryos were collected in MeOH for genotyping. pax2.1 and krox20 expression patterns were categorized as completely radialized (as in a C5 embryo), expanded compared to wild-type, similar to wild-type, or restricted compared to wild-type. A representative embryo was chosen from the category most represented in each condition.

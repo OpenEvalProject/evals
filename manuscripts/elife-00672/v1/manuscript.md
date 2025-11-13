@@ -18,7 +18,7 @@
 
 ## Abstract
 
-10.7554/eLife.00672.001 Eukarya, Archaea, and some Bacteria encode all or part of the essential mevalonate (MVA) metabolic pathway clinically modulated using statins. Curiously, two components of the MVA pathway are often absent from archaeal genomes. The search for these missing elements led to the discovery of isopentenyl phosphate kinase (IPK), one of two activities necessary to furnish the universal five-carbon isoprenoid building block, isopentenyl diphosphate (IPP). Unexpectedly, we now report functional IPKs also exist in Bacteria and Eukarya. Furthermore, amongst a subset of species within the bacterial phylum Chloroflexi, we identified a new enzyme catalyzing the missing decarboxylative step of the putative alternative MVA pathway. These results demonstrate, for the first time, a functioning alternative MVA pathway. Key to this pathway is the catalytic actions of a newly uncovered enzyme, mevalonate phosphate decarboxylase (MPD) and IPK. Together, these two discoveries suggest that unforeseen variation in isoprenoid metabolism may be widespread in nature. DOI: http://dx.doi.org/10.7554/eLife.00672.001
+Eukarya, Archaea, and some Bacteria encode all or part of the essential mevalonate (MVA) metabolic pathway clinically modulated using statins. Curiously, two components of the MVA pathway are often absent from archaeal genomes. The search for these missing elements led to the discovery of isopentenyl phosphate kinase (IPK), one of two activities necessary to furnish the universal five-carbon isoprenoid building block, isopentenyl diphosphate (IPP). Unexpectedly, we now report functional IPKs also exist in Bacteria and Eukarya. Furthermore, amongst a subset of species within the bacterial phylum Chloroflexi, we identified a new enzyme catalyzing the missing decarboxylative step of the putative alternative MVA pathway. These results demonstrate, for the first time, a functioning alternative MVA pathway. Key to this pathway is the catalytic actions of a newly uncovered enzyme, mevalonate phosphate decarboxylase (MPD) and IPK. Together, these two discoveries suggest that unforeseen variation in isoprenoid metabolism may be widespread in nature.
 
 ## Introduction
 
@@ -26,11 +26,11 @@ Isoprenoids constitute a substantial family of primary and secondary metabolites
 
 Isopentenyl diphosphate (IPP, 1) and its isomer, dimethylallyl diphosphate (DMAPP, 2), are the five-carbon building blocks of all higher order isoprenoids. It is currently accepted that IPP is biosynthesized via one of two metabolic pathways: the mevalonate (MVA or sometimes MEV) pathway (Katsuki and Bloch, 1967; Lynen, 1967) or the 1-deoxy-D-xylulose 5-phosphate (DXP) pathway (also known as the 2-C-methyl-D-erythritol 4-phosphate, MEP, or Rohmer pathway) (Arigoni et al., 1997; Eisenreich et al., 1998; Rohmer, 1999). These two metabolic systems utilize non-homologous enzymes that evolved independently to produce the same 5-carbon end product, IPP (1). Typically, a given organism uses one pathway or the other (Lange et al., 2000). Eukarya appear to encode the classical MVA pathway (with some exceptions, see [Cassera et al., 2004]); plants additionally encode the DXP pathway that operates in the chloroplast. Most bacteria employ the DXP pathway with the exception of several phyla that contain full or partial MVA pathway genes (Bochar et al., 1999, Lombard and Moreira, 2011).
 
-While the domain Archaea and the bacterial class Chloroflexi do not encode gene homologs for the DXP pathway, nearly all of these species characterized genomically to date encode an incomplete classical MVA pathway. That is, many of these species lack identifiable genes encoding enzymes for one or both of the terminal steps of IPP biosynthesis through mevalonate. This observation is puzzling due to the essentiality of isoprenoid compounds in all organisms. Recent phylogenetic and experimental data suggest that Archaea (and probably also the Chloroflexi) encode an alternative MVA pathway, which bifurcates from the classical pathway following the phosphorylation of mevalonate to phosphomevalonate (MVAP, also known as mevalonate 5-phosphate,
+While the domain Archaea and the bacterial class Chloroflexi do not encode gene homologs for the DXP pathway, nearly all of these species characterized genomically to date encode an incomplete classical MVA pathway. That is, many of these species lack identifiable genes encoding enzymes for one or both of the terminal steps of IPP biosynthesis through mevalonate. This observation is puzzling due to the essentiality of isoprenoid compounds in all organisms. Recent phylogenetic and experimental data suggest that Archaea (and probably also the Chloroflexi) encode an alternative MVA pathway, which bifurcates from the classical pathway following the phosphorylation of mevalonate to phosphomevalonate (MVAP, also known as mevalonate 5-phosphate, 3) (Grochowski et al., 2006; Matsumi et al., 2010; Miziorko, 2010) (Figure 1). Following MVAP biosynthesis, the classical MVA pathway uses phosphomevalonate kinase (PMK) to phosphorylate MVAP (3) producing diphosphomevalonate (MVAPP, also known as mevalonate 5-diphosphate, 5). MVAPP then undergoes a phosphorylation-dependent decarboxylation catalyzed by mevalonate 5-diphosphate decarboxylase (MDD, also known as MDC or DPM-DC) producing the key five-carbon isoprenoid building block, IPP (1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/00672/elife-00672-fig1-v1.jpg)
 
-**Figure 1.:** Both branches of the MVA pathway begin with acetyl-CoA (and acetoacetyl-CoA) and proceed through a series of enzymatic reactions involving 3-hydroxy-3-methylglutary-CoA Synthase (HMGS), 3-hydroxy-3-methylglutary-CoA Reductase (HMGR, the presumed early rate-limiting step), and mevalonate kinase (MVK) before branching. At the bifurcation, the canonical MVA pathway, highlighted by light blue arrows, guides MVAP (3) through an additional phosphorylation reaction followed by a phosphorylation-dependent decarboxylation carried out by phosphomevalonate kinase (PMK) and diphosphomevalonate decarboxylase (MDD), respectively. The alternative MVA pathway, highlighted with light brown arrows, hypothetically decarboxylates MVAP (3) prior to the phosphorylation reaction carried out by IPK but the former step has not been discovered until now (Grochowski et al., 2006). The enzymes MVK, PMK, MDD, and IPK all consume ATP during catalysis. All enzymes are shown in green type. Statins serve as inhibitors of HMGR as highlighted.DOI: http://dx.doi.org/10.7554/eLife.00672.003
+**Figure 1.:** Both branches of the MVA pathway begin with acetyl-CoA (and acetoacetyl-CoA) and proceed through a series of enzymatic reactions involving 3-hydroxy-3-methylglutary-CoA Synthase (HMGS), 3-hydroxy-3-methylglutary-CoA Reductase (HMGR, the presumed early rate-limiting step), and mevalonate kinase (MVK) before branching. At the bifurcation, the canonical MVA pathway, highlighted by light blue arrows, guides MVAP (3) through an additional phosphorylation reaction followed by a phosphorylation-dependent decarboxylation carried out by phosphomevalonate kinase (PMK) and diphosphomevalonate decarboxylase (MDD), respectively. The alternative MVA pathway, highlighted with light brown arrows, hypothetically decarboxylates MVAP (3) prior to the phosphorylation reaction carried out by IPK but the former step has not been discovered until now (Grochowski et al., 2006). The enzymes MVK, PMK, MDD, and IPK all consume ATP during catalysis. All enzymes are shown in green type. Statins serve as inhibitors of HMGR as highlighted.
 
 The alternative MVA pathway is posited to reverse these steps; decarboxylation of MVAP (3) followed by phosphorylation of isopentenyl phosphate (IP, 4) (Figure 1). The first step would require a currently undetected enzyme activity, MVAP decarboxylase (MPD). The final phosphorylation activity has been characterized in Archaea and is catalyzed by isopentenyl phosphate kinase (IPK), an ATP-dependent kinase that phosphorylates IP (4) forming IPP (1) (Figure 1).
 
@@ -42,55 +42,604 @@ Through biochemical characterization of the enzymes encoded by the remaining MVA
 
 ## Results
 
-## Phylogenetic analyses of IPK homologs
+### Phylogenetic analyses of IPK homologs
 
-IPK is a member of the amino acid kinase (AAK) superfamily. To date, the search for eukaryotic
+IPK is a member of the amino acid kinase (AAK) superfamily. To date, the search for eukaryotic IPK-like genes has been limited since putative eukaryotic IPK homologs are divergent in sequence and can be difficult to distinguish from other AAK superfamily genes (Lombard and Moreira, 2011). Within IPK, we previously identified a catalytically essential active site histidine residue that is not conserved among AAK family members belonging to the amino acid kinase superfamily (Dellas and Noel, 2010). Using this structurally and functionally defined residue as an indication of possible IPK activity (Dellas and Noel, 2010), we next identified putative IPK homologs from all three domains of life. We used PSI-BLAST and profile Hidden Markov Models (HMMs) to detect IPK homologs in public protein, expressed sequence tag (EST), and genome databases. IPK homologs bearing the key histidine signature appear in nearly all archaea (Lombard and Moreira, 2011, Matsumi et al., 2010), a cluster of Chloroflexi bacteria (Lombard and Moreira, 2011), every sequenced green plant genome, and, in an exceptionally sporadic distribution, across most major eukaryotic lineages (Figure 2, Table 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/00672/elife-00672-fig2-v1.jpg)
 
-**Figure 2.:** Maximum likelihood tree of selected IPK protein sequences. Eukaryotes are highlighted with blues, selected archaeal clades with grays and a small group of bacteria with purple. The tree is anchored by several bacterial fosfomycin kinases. See Figure 2—source data 1 for an alignment of IPK homologs. See Figure 2—source data 2 for a table of IPK homolog sequences.DOI: http://dx.doi.org/10.7554/eLife.00672.00410.7554/eLife.00672.005Figure 2—source data 1.DOI: http://dx.doi.org/10.7554/eLife.00672.00510.7554/eLife.00672.006Figure 2—source data 2.DOI: http://dx.doi.org/10.7554/eLife.00672.006
+**Figure 2.:** Maximum likelihood tree of selected IPK protein sequences. Eukaryotes are highlighted with blues, selected archaeal clades with grays and a small group of bacteria with purple. The tree is anchored by several bacterial fosfomycin kinases. See Figure 2—source data 1 for an alignment of IPK homologs. See Figure 2—source data 2 for a table of IPK homolog sequences.
+
+**Table 1.**
+ Phylogenetic distribution of IPK in Eukarya
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Classification</th>
+      <th>IPK-bearing species</th>
+      <th>Species with no IPK</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mammals</td>
+      <td></td>
+      <td>35 mammalian genomes</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Birds</td>
+      <td rowspan="3"></td>
+      <td>Gallus gallus</td>
+    </tr>
+    <tr>
+      <td>Taeniopygia guttata</td>
+    </tr>
+    <tr>
+      <td>Meleagris gallopavo</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Reptiles</td>
+      <td>Anolis carolensis</td>
+      <td rowspan="2"></td>
+    </tr>
+    <tr>
+      <td>Philodryas olfersii (EST)*</td>
+    </tr>
+    <tr>
+      <td>Amphibians</td>
+      <td>Notophthalmus viridescens (EST)</td>
+      <td>Xenopus tropicalis</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Fish</td>
+      <td rowspan="5">Callorhinchus milii (partial IPK from draft genome)</td>
+      <td>Danio rerio</td>
+    </tr>
+    <tr>
+      <td>Oryzias latipes</td>
+    </tr>
+    <tr>
+      <td>Takifugu rubripes</td>
+    </tr>
+    <tr>
+      <td>Tetraodon nigrovidris</td>
+    </tr>
+    <tr>
+      <td>Gasterosteus aculeatus</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Invertebrate chordates</td>
+      <td>Branchiostoma floridae</td>
+      <td>Ciona intestinalis</td>
+    </tr>
+    <tr>
+      <td>Saccoglossus kowalevskii</td>
+      <td>Ciona savignyi</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Echinoderms (Deuterostomes)</td>
+      <td>Paracentrotus lividus (EST) (almost complete assembly)</td>
+      <td rowspan="2"></td>
+    </tr>
+    <tr>
+      <td>Strongylocentrotus purpuratus (almost complete prediction)</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Arthropods</td>
+      <td rowspan="8">Homarus americanus (EST)</td>
+      <td>Drosophila sp. (Cassera et al., 2004)</td>
+    </tr>
+    <tr>
+      <td>Apis mellifera</td>
+    </tr>
+    <tr>
+      <td>Aedes aegypti</td>
+    </tr>
+    <tr>
+      <td>Anopheles gambiae</td>
+    </tr>
+    <tr>
+      <td>Culex quinquefasciatus</td>
+    </tr>
+    <tr>
+      <td>Pediculus humanus</td>
+    </tr>
+    <tr>
+      <td>Ixodes scapularis</td>
+    </tr>
+    <tr>
+      <td>Daphnia pulex</td>
+    </tr>
+    <tr>
+      <td rowspan="7">Other bilaterians</td>
+      <td>Hirudo medicinalis (EST)</td>
+      <td>Capitella teleta</td>
+    </tr>
+    <tr>
+      <td>Eisenia fetida (EST)</td>
+      <td>Helobdella robusta</td>
+    </tr>
+    <tr>
+      <td>Lottia gigantea</td>
+      <td>Schistosoma mansoni</td>
+    </tr>
+    <tr>
+      <td>Aplysia kurodai (EST)</td>
+      <td>Schistosoma japonicum</td>
+    </tr>
+    <tr>
+      <td>Aplysia californica (partial prediction)</td>
+      <td>Brugia malayi</td>
+    </tr>
+    <tr>
+      <td rowspan="2"></td>
+      <td>Meloidogyne incognita</td>
+    </tr>
+    <tr>
+      <td>Pristionchus pacificus</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Cnidarians</td>
+      <td>Acropora palmate (EST)</td>
+      <td rowspan="3">Hydra magnapilliata</td>
+    </tr>
+    <tr>
+      <td>Montastraea faveolata (EST)</td>
+    </tr>
+    <tr>
+      <td>Nematostella vectensis (predicted)</td>
+    </tr>
+    <tr>
+      <td>Other early metazoans</td>
+      <td>Trichoplax adherens</td>
+      <td>Amphimedon queenslandica</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Pre-metazoans (within Holozoa)</td>
+      <td rowspan="3"></td>
+      <td>Monosiga brevicollis</td>
+    </tr>
+    <tr>
+      <td>Salpingoeca rosetta</td>
+    </tr>
+    <tr>
+      <td>Capsaspora owczarzaki</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Fungi</td>
+      <td>Spizellomyces punctatus</td>
+      <td rowspan="4">34 fungal genomes</td>
+    </tr>
+    <tr>
+      <td>Rhizopus oryzae</td>
+    </tr>
+    <tr>
+      <td>Mucor circinelloides</td>
+    </tr>
+    <tr>
+      <td>Epichloe festucae (EST)‡</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Green plants</td>
+      <td>all plants, including:</td>
+      <td rowspan="8"></td>
+    </tr>
+    <tr>
+      <td>Selaginella moellendorffii</td>
+    </tr>
+    <tr>
+      <td>Physcomitrella patens</td>
+    </tr>
+    <tr>
+      <td>Ostreococcus tauri</td>
+    </tr>
+    <tr>
+      <td>Ostreococcus lucimarinus</td>
+    </tr>
+    <tr>
+      <td>Micromonas pusilla</td>
+    </tr>
+    <tr>
+      <td>Chlamydomonas reinhardtii</td>
+    </tr>
+    <tr>
+      <td>Volvox carteri</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Amoebozoa</td>
+      <td>Dictyostelium discoideum</td>
+      <td rowspan="5"></td>
+    </tr>
+    <tr>
+      <td>Polysphondylium pallidum</td>
+    </tr>
+    <tr>
+      <td>Entamoeba hislolytica§</td>
+    </tr>
+    <tr>
+      <td>Entamoeba invadens§</td>
+    </tr>
+    <tr>
+      <td>Entamoeba dispar§</td>
+    </tr>
+    <tr>
+      <td rowspan="5">Alveolata</td>
+      <td rowspan="5">Perkinsus marinus</td>
+      <td>Plasmodium sp. (Lynen, 1967)</td>
+    </tr>
+    <tr>
+      <td>Cryptosporidium sp. (Hedden and Kamiya, 1997)</td>
+    </tr>
+    <tr>
+      <td>Tetrahymena thermophila</td>
+    </tr>
+    <tr>
+      <td>Paramecium tetraurelia</td>
+    </tr>
+    <tr>
+      <td>Ichthyophthirius multifilis</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Diatoms</td>
+      <td>Thalassiosira pseudonana</td>
+      <td rowspan="2"></td>
+    </tr>
+    <tr>
+      <td>Phaeodactylum tricornutum</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Kinetoplastida</td>
+      <td rowspan="2"></td>
+      <td>Trypanosoma sp. (Chew and Bryant, 2007)</td>
+    </tr>
+    <tr>
+      <td>Leishmania sp. (Chew and Bryant, 2007)</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Excavates</td>
+      <td rowspan="2"></td>
+      <td>Giardia lamblia</td>
+    </tr>
+    <tr>
+      <td>Trichomonas vaginalis</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Others</td>
+      <td>Malawimonas jakobiformis (EST)</td>
+      <td rowspan="2">Naegleria gruberi</td>
+    </tr>
+    <tr>
+      <td>Alexandrium tamarense</td>
+    </tr>
+  </tbody>
+</table>
+
+_*EST stands for expressed sequence tag. All other IPKs were found in draft or complete genomes.‡Since IPK was not found in related fungal genomes, this may be a case of horizontal transfer or even EST library contamination.§Greater similarity to IPK from a clade of archaea than to eukaryotes._
 
 IPK appears to have been lost independently in many animal lineages (Figure 2, Table 1). It is absent from choanoflagellates and sponges, but found in early branching animals such as Trichoplax, cnidarians (Nematostella, but not Hydra), and corals. It is found in bilaterians, including molluscs (Aplysia sp., Lottia gigantea), annelids (earthworm and leech), and a crustacean (lobster), but not in any insect or nematode. Within deuterostomes, it is found in the sea urchin and sea star, as well as the hemichordate Saccoglossus kowalevskii (acorn worm) and the chordate Branchiostoma floridae (lancelet). Within the vertebrates, it is found in a shark (Callorhinchus milii) but no teleost fish; in an amphibian (the newt Notophthalmus viridescens) but not in frogs; and in a lizard (Anolis carolinensis) and a snake (Philodryas olfersii), but not in any bird or mammal. Within the fungi, IPK is present in one of two sequenced chytrids and two other basal fungal genomes, but is otherwise absent.
 
-While all identified IPK homologs retain 11 invariant residues (see Table 2), their sequences are otherwise highly divergent, and their predicted phylogeny agrees only in part with organismal taxonomy. For instance, while all plant and animal IPKs cluster together, sequences from the archaeal class Thermoprotei fall into four distinct clusters on the calculated phylogenetic tree, and in the eukaryotic genus Entamoeba, sequences cluster with the archaeal class Methanomicrobia (Figure 2). This sporadic grouping pattern suggests horizontal gene transfer and/or parallel evolution is not uncommon and may relate to shared organismal needs in similar ecological niches.10.7554/eLife.00672.008Table 2.Conserved residues in IPKDOI: http://dx.doi.org/10.7554/eLife.00672.008Highly-conserved residues*Partially conserved residuesK6, G8, G9, K15, G54, H60, P140, G144, D213, T215, G216K221†, G253‡, T254‡*Numbering is in accordance with IPK from M. jannaschii.†Conserved in nearly all species except one possibly due to a gene prediction error.‡May be invariant, but mis-predicted in several sequences.
+While all identified IPK homologs retain 11 invariant residues (see Table 2), their sequences are otherwise highly divergent, and their predicted phylogeny agrees only in part with organismal taxonomy. For instance, while all plant and animal IPKs cluster together, sequences from the archaeal class Thermoprotei fall into four distinct clusters on the calculated phylogenetic tree, and in the eukaryotic genus Entamoeba, sequences cluster with the archaeal class Methanomicrobia (Figure 2). This sporadic grouping pattern suggests horizontal gene transfer and/or parallel evolution is not uncommon and may relate to shared organismal needs in similar ecological niches.
 
-## Kinetic characterization of IPKs, PMKs, and MDDs
+**Table 2.**
+ Conserved residues in IPK
 
-To confirm the phylogenetic analyses and identification of putative IPK genes, we next overexpressed, purified, and biochemically characterized seven IPK homologs selected from all three domains of life. These include the previously characterized IPK from M. jannaschii (Grochowski et al., 2006; Dellas and Noel, 2010) and homologs from two other archaeal species, Methanococcus maripaludis and Sulfolobus solfataricus (one of the few archaeal species that also encodes the complete classical MVA pathway), the bacterium Roseiflexus castenholzii (an organism with an annotated MDD but no obvious PMK), and three eukaryotes, Trichoplax adhaerens (early-branching metazoan), Branchiostoma floridae (chordate), and Arabidopsis thaliana (plant). Kinetic experiments were performed using a quantitative lactate dehydrogenase-pyruvate kinase coupled assay demonstrating that all seven IPK homologs catalyze the efficient phosphorylation of IP (4) to IPP (1) with high specificity as reported in Table 3.10.7554/eLife.00672.009Table 3.Steady-state kinetic constants for enzymes of the MVA pathway*DOI: http://dx.doi.org/10.7554/eLife.00672.00910.7554/eLife.00672.010Table 3—source data 1.Steady-state kinetic plots for IPKs listed above each curve.DOI: http://dx.doi.org/10.7554/eLife.00672.01010.7554/eLife.00672.011Table 3—source data 2.Steady-state kinetic plots for PMKs listed above each curve.DOI: http://dx.doi.org/10.7554/eLife.00672.01110.7554/eLife.00672.012Table 3—source data 3.Steady-state kinetic plots for MDDs listed above each curve.DOI: http://dx.doi.org/10.7554/eLife.00672.01210.7554/eLife.00672.013Table 3—source data 4.Stead-state kinetic plots for MPD from R. castenholzii.DOI: http://dx.doi.org/10.7554/eLife.00672.013Organismgi numberEnzymeSubstrateKM (μM)kcat (s−1)Ki (μM)kcat/KM (s−1μM−1)R2 (†)M. jannaschii15668214IPKIP4.3 (± 0.6)‡1.46 (± 0.03)–§0.34 (± 0.05)0.90M. maripaludis132664414IPKIP21.4 (± 4.3)15.2 (± 1.4)877 (± 550)0.71 (± 0.16)0.99S. solfataricus15897030IPKIP23.6 (± 4.8)0.91 (± 0.05)–0.04 (± 0.01)0.9215899698PMKMVAP23.1 (± 3.8)1.98 (± 0.10)5500 (± 2200)0.09 (± 0.01)0.98R. castenholzii156743980IPKIP4.3 (± 0.7)1.70 (± 0.04)–0.40 (± 0.06)0.96156740939MPD#MVAP152 (± 38)1.7 (± 0.1)–0.011 (± 0.003)0.98156740939MDDMVAPPND#NDNDNDNDB. floridaeNA¶IPKIP13.3 (± 2.0)27.2 (± 1.2)2820 (± 1700)2.05 (± 0.32)0.98260829481PMKMVAP38.0 (± 7.3)12.6 (± 0.4)–0.33 (± 0.06)0.93260794527MDDMVAPP15.1 (± 3.7)1.36 (± 0.09)–0.09 (± 0.02)0.89A. thaliana22329798IPKIP0.79 (± 0.35)1.9 (± 0.2)522 (± 381)2.4 (± 1.1)0.9515222502PMKMVAP11.8 (± 2.0)20.9 (± 0.7)–1.77 (± 0.31)0.9715224931MDDMVAPP15.7 (± 5.0)2.02 (± 0.13)–0.13 (± 0.04)0.89T. adhaerens195996013IPKIP3.1 (± 1.6)2.4 (± 0.2)–0.77 (0.40)0.79*See Table 3—source data 1, Table 3—source data 2, Table 3—source data 3, and Table 3—source data 4 for Michaelis-Menten fitted kinetic curves for each enzyme.†R2 represents goodness of fit for the kinetic curve to the experimental data. R2 = 1.0 − (SSreg/SStot), where SSreg = sum of squares, SStot = sum of squares of the distances between each point and a horizontal line passing through the average of all y values.‡Values in parentheses represent standard error (or propagation of error) for each calculated kinetic constant.§Ki constant was not calculated or was not applicable.#Not detected.¶B. floridae IPK sequence was predicted from scaffold_167 of the genome assembly (Putnam et al., 2008) using genewise and manual annotation.
+
+<table>
+  <thead>
+    <tr>
+      <th>Highly-conserved residues*</th>
+      <th>Partially conserved residues</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>K6, G8, G9, K15, G54, H60, P140, G144, D213, T215, G216</td>
+      <td>K221†, G253‡, T254‡</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Numbering is in accordance with IPK from M. jannaschii.†Conserved in nearly all species except one possibly due to a gene prediction error.‡May be invariant, but mis-predicted in several sequences._
+
+### Kinetic characterization of IPKs, PMKs, and MDDs
+
+To confirm the phylogenetic analyses and identification of putative IPK genes, we next overexpressed, purified, and biochemically characterized seven IPK homologs selected from all three domains of life. These include the previously characterized IPK from M. jannaschii (Grochowski et al., 2006; Dellas and Noel, 2010) and homologs from two other archaeal species, Methanococcus maripaludis and Sulfolobus solfataricus (one of the few archaeal species that also encodes the complete classical MVA pathway), the bacterium Roseiflexus castenholzii (an organism with an annotated MDD but no obvious PMK), and three eukaryotes, Trichoplax adhaerens (early-branching metazoan), Branchiostoma floridae (chordate), and Arabidopsis thaliana (plant). Kinetic experiments were performed using a quantitative lactate dehydrogenase-pyruvate kinase coupled assay demonstrating that all seven IPK homologs catalyze the efficient phosphorylation of IP (4) to IPP (1) with high specificity as reported in Table 3.
+
+**Table 3.**
+ Steady-state kinetic constants for enzymes of the MVA pathway*Table 3—source data 1.Steady-state kinetic plots for IPKs listed above each curve.Table 3—source data 2.Steady-state kinetic plots for PMKs listed above each curve.Table 3—source data 3.Steady-state kinetic plots for MDDs listed above each curve.Table 3—source data 4.Stead-state kinetic plots for MPD from R. castenholzii.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Organism</th>
+      <th>gi number</th>
+      <th>Enzyme</th>
+      <th>Substrate</th>
+      <th>KM (μM)</th>
+      <th>kcat (s−1)</th>
+      <th>Ki (μM)</th>
+      <th>kcat/KM (s−1μM−1)</th>
+      <th>R2 (†)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>M. jannaschii</td>
+      <td>15668214</td>
+      <td>IPK</td>
+      <td>IP</td>
+      <td>4.3 (± 0.6)‡</td>
+      <td>1.46 (± 0.03)</td>
+      <td>–§</td>
+      <td>0.34 (± 0.05)</td>
+      <td>0.90</td>
+    </tr>
+    <tr>
+      <td>M. maripaludis</td>
+      <td>132664414</td>
+      <td>IPK</td>
+      <td>IP</td>
+      <td>21.4 (± 4.3)</td>
+      <td>15.2 (± 1.4)</td>
+      <td>877 (± 550)</td>
+      <td>0.71 (± 0.16)</td>
+      <td>0.99</td>
+    </tr>
+    <tr>
+      <td>S. solfataricus</td>
+      <td>15897030</td>
+      <td>IPK</td>
+      <td>IP</td>
+      <td>23.6 (± 4.8)</td>
+      <td>0.91 (± 0.05)</td>
+      <td>–</td>
+      <td>0.04 (± 0.01)</td>
+      <td>0.92</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>15899698</td>
+      <td>PMK</td>
+      <td>MVAP</td>
+      <td>23.1 (± 3.8)</td>
+      <td>1.98 (± 0.10)</td>
+      <td>5500 (± 2200)</td>
+      <td>0.09 (± 0.01)</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td>R. castenholzii</td>
+      <td>156743980</td>
+      <td>IPK</td>
+      <td>IP</td>
+      <td>4.3 (± 0.7)</td>
+      <td>1.70 (± 0.04)</td>
+      <td>–</td>
+      <td>0.40 (± 0.06)</td>
+      <td>0.96</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>156740939</td>
+      <td>MPD#</td>
+      <td>MVAP</td>
+      <td>152 (± 38)</td>
+      <td>1.7 (± 0.1)</td>
+      <td>–</td>
+      <td>0.011 (± 0.003)</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>156740939</td>
+      <td>MDD</td>
+      <td>MVAPP</td>
+      <td>ND#</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+      <td>ND</td>
+    </tr>
+    <tr>
+      <td>B. floridae</td>
+      <td>NA¶</td>
+      <td>IPK</td>
+      <td>IP</td>
+      <td>13.3 (± 2.0)</td>
+      <td>27.2 (± 1.2)</td>
+      <td>2820 (± 1700)</td>
+      <td>2.05 (± 0.32)</td>
+      <td>0.98</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>260829481</td>
+      <td>PMK</td>
+      <td>MVAP</td>
+      <td>38.0 (± 7.3)</td>
+      <td>12.6 (± 0.4)</td>
+      <td>–</td>
+      <td>0.33 (± 0.06)</td>
+      <td>0.93</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>260794527</td>
+      <td>MDD</td>
+      <td>MVAPP</td>
+      <td>15.1 (± 3.7)</td>
+      <td>1.36 (± 0.09)</td>
+      <td>–</td>
+      <td>0.09 (± 0.02)</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>A. thaliana</td>
+      <td>22329798</td>
+      <td>IPK</td>
+      <td>IP</td>
+      <td>0.79 (± 0.35)</td>
+      <td>1.9 (± 0.2)</td>
+      <td>522 (± 381)</td>
+      <td>2.4 (± 1.1)</td>
+      <td>0.95</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>15222502</td>
+      <td>PMK</td>
+      <td>MVAP</td>
+      <td>11.8 (± 2.0)</td>
+      <td>20.9 (± 0.7)</td>
+      <td>–</td>
+      <td>1.77 (± 0.31)</td>
+      <td>0.97</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>15224931</td>
+      <td>MDD</td>
+      <td>MVAPP</td>
+      <td>15.7 (± 5.0)</td>
+      <td>2.02 (± 0.13)</td>
+      <td>–</td>
+      <td>0.13 (± 0.04)</td>
+      <td>0.89</td>
+    </tr>
+    <tr>
+      <td>T. adhaerens</td>
+      <td>195996013</td>
+      <td>IPK</td>
+      <td>IP</td>
+      <td>3.1 (± 1.6)</td>
+      <td>2.4 (± 0.2)</td>
+      <td>–</td>
+      <td>0.77 (0.40)</td>
+      <td>0.79</td>
+    </tr>
+  </tbody>
+</table>
+
+_*See Table 3—source data 1, Table 3—source data 2, Table 3—source data 3, and Table 3—source data 4 for Michaelis-Menten fitted kinetic curves for each enzyme.†R2 represents goodness of fit for the kinetic curve to the experimental data. R2 = 1.0 − (SSreg/SStot), where SSreg = sum of squares, SStot = sum of squares of the distances between each point and a horizontal line passing through the average of all y values.‡Values in parentheses represent standard error (or propagation of error) for each calculated kinetic constant.§Ki constant was not calculated or was not applicable.#Not detected.¶B. floridae IPK sequence was predicted from scaffold_167 of the genome assembly (Putnam et al., 2008) using genewise and manual annotation._
 
 These IPK-bearing organisms all appear from previous annotations to encode genes associated with the classical MVA pathway. To explore possible MVA pathway bifurcation, we next overexpressed, purified, and biochemically characterized PMK-like and MDD-like proteins from organisms containing biochemically verified IPKs. PMKs from B. floridae and A. thaliana catalyze the efficient phosphorylation of MVAP as annotated (3) with similar kinetic constants (Table 3). PMK from S. solfataricus is catalytically active using ATP and MVAP (3) as substrates, however, its MDD catalyzes the phosphorylation-dependent decarboxylation of MVAPP (5) to IPP (1) at a very slow rate. Under steady state conditions, we were unable to accurately determine kinetic parameters for S. solfataricus MDD.
 
-## Kinetic characterization of a Chloroflexi MPD
+### Kinetic characterization of a Chloroflexi MPD
 
 Unexpectedly, the MDD homolog from R. castenholzii does not catalyze the decarboxylation of MVAPP (5) to IPP (1) at a measurable rate as annotated. Instead, it efficiently catalyzes the phosphorylation-dependent decarboxylation of MVAP (3) to IP (4) (Table 3). This annotated R. castenholzii MDD, in fact, functions in a completely unexpected way as a bona fide MPD assuming the metabolic role of the long sought MPD of the alternative MVA pathway.
 
-The determined catalytic constants of
+The determined catalytic constants of R. castenholzii MPD with MVAP suggest it is less catalytically efficient than bona fide MDD enzymes (Table 3). R. castenholzii, however, is a thermophilic bacterium and assays at its optimal growth temperature (50°C and above) (Hanada et al., 2002) were not possible due to stability limitations of the coupled assay system. Fluorescence thermal shift assays (Pantoliano et al., 2001) demonstrate that recombinant R. castenholzii MPD is stable at temperatures exceeding 90°C (inflection point of the slope of the fluorescence vs temperature curves (Tm) = 94°C at pH 5.8), indicating that the enzyme maintains structural integrity at temperatures well beyond what it commonly encounters in nature and is most likely maximally active at high temperatures (Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/00672/elife-00672-fig3-v1.jpg)
 
-**Figure 3.:** Roseiflexus castenholzii MDD-like MPD.(A) Thermograms for R. castenholzii MPD in 100 mM buffer (pH 3.0–3.8 citric acid; pH 4.0–4.8 sodium acetate; pH 5.0–5.8 sodium citrate; pH 6.0–6.8 sodium cacodylate; pH 7.0–7.8 sodium HEPES; pH 8.0–8.8 Tris-HCl; pH 9.0–11.0 CAPSO) colored from red to violet (acidic to alkaline pH depicted in the inset). (B) Negative derivatives of the thermograms (−dF/dT) color-coded as in (A). (C) Ts for each of the curves show in (mA) and (B) plotted as a function of pH. R. castenholzii MPD was unfolded from pH 2.2 to 2.8 at 20°C (data now shown).DOI: http://dx.doi.org/10.7554/eLife.00672.014
+**Figure 3.:** (A) Thermograms for R. castenholzii MPD in 100 mM buffer (pH 3.0–3.8 citric acid; pH 4.0–4.8 sodium acetate; pH 5.0–5.8 sodium citrate; pH 6.0–6.8 sodium cacodylate; pH 7.0–7.8 sodium HEPES; pH 8.0–8.8 Tris-HCl; pH 9.0–11.0 CAPSO) colored from red to violet (acidic to alkaline pH depicted in the inset). (B) Negative derivatives of the thermograms (−dF/dT) color-coded as in (A). (C) Tms for each of the curves show in (A) and (B) plotted as a function of pH. R. castenholzii MPD was unfolded from pH 2.2 to 2.8 at 20°C (data now shown).
 
 To the best of our knowledge, this is the first enzyme discovered to function as a catalytically efficient MPD. Given the annotation bias associated with functional assignment based upon sequence homology alone, this newly discovered MPD activity encoded by an MDD-like sequence suggests that functional expectations of the enzymes comprising the canonical MVA biosynthetic pathway must be reexamined.
 
-## GC-MS quantification of reconstituted alternative and classical MVA pathways
+### GC-MS quantification of reconstituted alternative and classical MVA pathways
 
 To confirm that the functional R. castenholzii MPD (MDD-like protein sequence) catalyzes the transformation of MVAP (3) to IP (4) in a pathway specific manner with a measurable flux, we next reconstituted each pathway in vitro using a five-enzyme reaction mixture of homogenously purified enzymes and substrates. Briefly, MVAP (3) and ATP were incubated for 30 min with MPD and IPK from R. castenholzii. The reaction mixture was then diluted into a mixture containing all necessary downstream enzymes to biosynthesize a higher order isoprenoid metabolite, namely the GC-detectable sesquiterpene 5-epi-aristolochene (5-EA, 7). Similar reactions were performed for the in vitro reconstitution of the classical MVA pathway using PMK and MDD from each respective organism.
 
-The in vitro classical MVA pathway reactions for
+The in vitro classical MVA pathway reactions for S. solfataricus, A. thaliana, and B. floridae yield 39%, 49%, and 52% conversion of MVAP (3) to 5-EA (7), respectively (Figure 4). The in vitro classical MVA pathway reaction from R. castenholzii (using B. floridae PMK to complete the missing step) yields less then 0.2% conversion to 5-EA (Figure 4). In contrast, the in vitro alternative MVA pathway from R. castenholzii enzymes yields a 2.0% conversion of MVAP (3) to 5-EA (7). B. floridae, A. thaliana, and S. solfataricus were tested for a possible alternative MVA pathway using their IPKs and MDDs. These reactions do not yield any detectable 5-EA (7), indicating that these MDDs behave as expected from their gene annotations and lack detectable MPD activity. Control reactions lacking ATP, enzyme, or MVAP (3) do not yield any 5-EA (7).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/00672/elife-00672-fig4-v1.jpg)
 
-**Figure 4.:** (A) Terminal steps of the MVA pathways shown with enzymes of the alternative (orange) and classical (blue) pathways depicted as arrows. The putative neofunctionalization of MDD to MPD is highlighted by a grey arrow. (B) In vitro assays include either the alternative or the classical enzymes to produce IPP (1) (as shown in panel A) as well as all downstream enzymes, including isopentenyl phosphate isomerase (IPPI) to produce DMAPP (2), farnesyl diphosphate synthase (FPPS) to produce farnesyl diphosphate (FPP, 6) and tobacco 5-epi-aristolochene synthase (TEAS) to produce the sesquiterpene product, 5-EA (7). Products are separated by GC and detected by MS ionization and fragmentation. Enzymes used are highlighted in turquoise type. (C) Results of the in vitro reconstitutions of various enzyme combinations. The y-axis of the graph represents combinations of enzymes shown in panel A and panel B and the % conversion to the expected sesquiterpene end product, 5-EA (7) shown as grey bars along the x-axis. Abbreviations of organisms are as follows: Bf = Branchiostoma floridae , At = Arabidopsis thaliana, Ss = Sulfolobus solfataricus, and Rc = Roseiflexus castenholzii. Note, RcMPD is colored both orange and blue on the y-axis, depending on whether it is being tested as an MDD (blue) or an MPD (orange).DOI: http://dx.doi.org/10.7554/eLife.00672.015
+**Figure 4.:** (A) Terminal steps of the MVA pathways shown with enzymes of the alternative (orange) and classical (blue) pathways depicted as arrows. The putative neofunctionalization of MDD to MPD is highlighted by a grey arrow. (B) In vitro assays include either the alternative or the classical enzymes to produce IPP (1) (as shown in panel A) as well as all downstream enzymes, including isopentenyl phosphate isomerase (IPPI) to produce DMAPP (2), farnesyl diphosphate synthase (FPPS) to produce farnesyl diphosphate (FPP, 6) and tobacco 5-epi-aristolochene synthase (TEAS) to produce the sesquiterpene product, 5-EA (7). Products are separated by GC and detected by MS ionization and fragmentation. Enzymes used are highlighted in turquoise type. (C) Results of the in vitro reconstitutions of various enzyme combinations. The y-axis of the graph represents combinations of enzymes shown in panel A and panel B and the % conversion to the expected sesquiterpene end product, 5-EA (7) shown as grey bars along the x-axis. Abbreviations of organisms are as follows: Bf = Branchiostoma floridae , At = Arabidopsis thaliana, Ss = Sulfolobus solfataricus, and Rc = Roseiflexus castenholzii. Note, RcMPD is colored both orange and blue on the y-axis, depending on whether it is being tested as an MDD (blue) or an MPD (orange).
 
-## Modeling of R. castenholzii MPD reveals an altered MVAP (P) selectivity filter
+### Modeling of R. castenholzii MPD reveals an altered MVAP (P) selectivity filter
 
 The experiments described above indicate that the MDD-like enzyme from R. castenholzii does not accept MVAPP (5) as a substrate. Instead, R. castenholzii ‘MDD’ functions as an MPD and possesses a newly discovered biochemical activity, namely the utilization of MVAP (3) as a substrate for the phosphorylation-dependent decarboxylation of MVAP (3) to IP (4). These biochemical results conclusively demonstrate that this MDD-like gene in fact encodes an MPD. Closer examinations of sequences and three-dimensional structures of MDDs highlight catalytic elements that set MPD from R. castenholzii apart from other bacterial MDDs. A structural model of R. castenholzii MPD was computed using Swissmodel (Arnold et al., 2006; Kiefer et al., 2009) and the Staphylococcus aureus MDD structure (PDBID 2HK2) as a template (26% sequence identity to R. castenholzii MPD) (Byres et al., 2007).
 
-Residues surrounding the diphosphate group of 6F-MVAPP (
+Residues surrounding the diphosphate group of 6F-MVAPP (5) bound to S. epidermidis MDD (PDBID 3QT7(Barta et al., 2011)) were then contrasted with the corresponding residues in the R. castenholzii MPD model. A comparison of the phosphate-binding residues of the canonical MDD from S. epidermidis to the same positions in R. castenholzii MPD reveals that the R. castenholzii MPD lacks several conserved hydrogen bonding interactions associated with recognition of the terminal phosphate on the diphosphate moiety of MVAPP (5) (Figure 5). Second, the R. castenholzii MPD contains additional residues including arginine and lysine side chains that appear poised to bind the single phosphate of MVAP (3). Finally, these residues, unique to atypical MDDs such as the R. castenholzii MPD, clash sterically and electronically with the terminal phosphate on the diphosphate moiety of MVAPP (5) (Figure 5, Table 4).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/00672/elife-00672-fig5-v1.jpg)
 
-**Figure 5.:** Interactions between the terminal phosphate of 6F-MVAPP and the surrounding amino acid residues from the crystal structure of S. epidermidis MDD (PDB ID 3QT7(Barta et al., 2011)) and the 3D model of MPD from R. castenholzii. (A) S. epidermidis MDD has multiple interactions with the diphosphate of MVAPP (5). Atoms are colored by type with carbon gold. (B) The active site model of R. castenholzii MPD lacks many of the key interactions shown by S. epidermidis MDD in panel A. Atoms are colored by type with carbon green. (C) Interactions between the monophosphate of modeled 6F-MVAP and the surrounding amino acids in a superposition of the modeled R. castenholzii MPD, backbone atoms and carbon colored green, on the crystal structure of S. epidermidis MDD, backbone atoms and carbon colored gold. In R. castenholzii MPD, two divergent side chains, Arg83 and Lys161, putatively provide additional electrostatic interactions with the single phosphate group of MVAP (3). These amino acid side chains would clash with the second phosphate of MVAPP (5). These models suggest that the predicted active site topology of R. castenholzii MPD facilitates substrate recognition of MVAP (3) through complementary charged and polarized hydrogen bonds and excludes MVAPP (5) through steric incompatibility with its second phosphate.DOI: http://dx.doi.org/10.7554/eLife.00672.016
+**Figure 5.:** Interactions between the terminal phosphate of 6F-MVAPP and the surrounding amino acid residues from the crystal structure of S. epidermidis MDD (PDB ID 3QT7(Barta et al., 2011)) and the 3D model of MPD from R. castenholzii. (A) S. epidermidis MDD has multiple interactions with the diphosphate of MVAPP (5). Atoms are colored by type with carbon gold. (B) The active site model of R. castenholzii MPD lacks many of the key interactions shown by S. epidermidis MDD in panel A. Atoms are colored by type with carbon green. (C) Interactions between the monophosphate of modeled 6F-MVAP and the surrounding amino acids in a superposition of the modeled R. castenholzii MPD, backbone atoms and carbon colored green, on the crystal structure of S. epidermidis MDD, backbone atoms and carbon colored gold. In R. castenholzii MPD, two divergent side chains, Arg83 and Lys161, putatively provide additional electrostatic interactions with the single phosphate group of MVAP (3). These amino acid side chains would clash with the second phosphate of MVAPP (5). These models suggest that the predicted active site topology of R. castenholzii MPD facilitates substrate recognition of MVAP (3) through complementary charged and polarized hydrogen bonds and excludes MVAPP (5) through steric incompatibility with its second phosphate.
+
+**Table 4.**
+ Active site phosphate-binding residues identified in MDDs across Archaea, Bacteria and Eukarya*Table 4—source data 1.Amino acid sequence alignments of archaeal MDDs.Table 4—source data 2.Amino acid sequence alignments of bacterial MDDs.Table 4—source data 3.Amino acid sequence alignments of Chloroflexi MDDs.Table 4—source data 4.Amino acid sequence alignments of eukaryotic MDDs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="7">MDD-like active site residues</th>
+    </tr>
+    <tr>
+      <th>S. epidermidis</th>
+      <th>Tyr18</th>
+      <th>Lys21</th>
+      <th>Ile27</th>
+      <th>Ser139</th>
+      <th>Ser141</th>
+      <th>Ser192</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bacteria</td>
+      <td>Tyr</td>
+      <td>Lys</td>
+      <td>X†</td>
+      <td>Ser</td>
+      <td>Ser</td>
+      <td>Ser</td>
+    </tr>
+    <tr>
+      <td>Sulfolobales</td>
+      <td>Tyr</td>
+      <td>Lys</td>
+      <td>Asn</td>
+      <td>Ser</td>
+      <td>Ser</td>
+      <td>Ser</td>
+    </tr>
+    <tr>
+      <td>Eukarya</td>
+      <td>Tyr</td>
+      <td>Lys</td>
+      <td>Ile/Asn</td>
+      <td>Ser</td>
+      <td>Ser</td>
+      <td>Ser</td>
+    </tr>
+    <tr>
+      <td colspan="7">MPD-like active site residues</td>
+    </tr>
+    <tr>
+      <td>R.castenholzii</td>
+      <td>Tyr74</td>
+      <td>Leu77</td>
+      <td>Arg83</td>
+      <td>Ala201</td>
+      <td>Ser203</td>
+      <td>Thr255</td>
+    </tr>
+    <tr>
+      <td>Haloarchaea/Thermoplasmatales</td>
+      <td>Tyr /Phe</td>
+      <td>Met/Tyr</td>
+      <td>Arg</td>
+      <td>Ser</td>
+      <td>Ser</td>
+      <td>Polar‡</td>
+    </tr>
+    <tr>
+      <td>Chloroflexi</td>
+      <td>Tyr</td>
+      <td>Leu</td>
+      <td>Arg/Thr</td>
+      <td>Ala</td>
+      <td>Ser</td>
+      <td>Thr</td>
+    </tr>
+  </tbody>
+</table>
+
+_*See Table 4—source data 1, Table 4—source data 2, Table 4—source data 3, and Table 4—source data 4 for alignments.†Not conserved among canonical bacterial MDDs.‡Includes Glu, Asp, Asn, and Ser._
 
 Phylogenetic analyses demonstrate that MDDs from the Chloroflexi are distant from those of other bacteria but similar to those of the two archaeal classes that also encode an IPK but no PMK, the Haloarchaea and Thermoplasmata classes. The model described above thus illustrates a logical route through which atypical MDDs may have over time attenuated MVAPP (5) substrate selectivity and acquired high selectivity for MVAP (3).
 
@@ -114,29 +663,29 @@ These results biochemically elucidate the terminal biosynthetic steps in an alte
 
 ## Materials and methods
 
-## Cloning of IPK homologs
+### Cloning of IPK homologs
 
 Archaeal IPK genes from M. jannaschii, M. maripaludis C5, and S. solfataricus P2, in addition to MDD and PMK genes from S. solfataricus P2, were cloned from genomic DNA from American Type Cell Cultures (ATCC, Manassas, VA) as previously described for M. jannaschii (Dellas and Noel, 2010) into a pET28a(+) vector containing a thrombin-cleavable N-terminal 8-His tag. IPK, MDD, and PMK genes from A. thaliana, T. adhaerens, B. floridae, and R. castenholzii were ordered as synthetic genes from Genscript (Piscataway, NJ, USA) and sub-cloned using Gateway technology from Invitrogen (San Diego, CA, USA) into pHIS9GW, an in-house pET28-based vector modified to contain a thrombin-cleavable 9-His tag.
 
-## Protein expression and purification
+### Protein expression and purification
 
 All proteins were expressed according to a previously described procedure with several modifications (Dellas and Noel, 2010). Generally, each plasmid containing the gene of interest was transformed into BL21 (DE3) cells (Novagen®, Germany), grown at 37°C in 1 L cultures of TB media to an OD600 nm of 1.0, induced with 1 mM IPTG, and grown overnight at 20°C. All proteins were purified similarly and as previously described (Dellas and Noel, 2010); however, only the M. jannaschii protein was incubated at 80°C during purification. Additionally, the 9-His tag was removed from R. castenholzii MPD with thrombin for kinetic assays. MPD was then further purified by anion exchange on a Mono Q column (GE healthcare, Wauwatosa, WI) with a linear gradient of 0 M–1 M NaCl in 50 mM Tris-HCl, pH 8.0, over 40 column volumes and ultimately by size exclusion chromatography on Superdex 200 column (GE healthcare) developed in 50 mM Tris-HCl, pH 8.0, 0.5 M NaCl and 1 mM DTT.
 
-## Steady-state kinetic analyses
+### Steady-state kinetic analyses
 
 Kinetic measurements were performed on IPKs from M. maripaludis, S. solfataricus, and B. floridae using a coupled pyruvate kinase–lactate dehydrogenase assay as previously described that employs IP concentrations ranging from 2 µM to 1 mM (Dellas and Noel, 2010). The substrate IP was purchased from Isoprenoids, LLC (>95% purity) (Tampe, FL). Steady-state kinetic curves were fitted using Prism (GraphPad Software Inc., San Diego, CA, USA) to compute KM, kcat, and where appropriate, Ki. Activity measurements were performed for T. adhaerens and A. thaliana using the coupled assay at four different IP concentrations (2 µM, 10 µM, 50 µM, and 100 µM) in triplicate.
 
 Kinetic measurements were performed on MDDs from B. floridae and A. thaliana as discussed above with concentrations of (RS)-MVAPP (95% purity, Sigma, St. Louis, MO) ranging from 2 µM to 1 mM. Kinetic measurements were performed on MPD from R. castenholzii with concentrations of (RS)-MVAP (Sigma, 95% purity) ranging from 4 µM to 4 mM and PMKs from B. floridae, A. thaliana, and S. solfataricus with concentrations of (RS)-MVAP ranging from 5 µM to 2.5 mM.
 
-## Fluorescence thermal shift assays
+### Fluorescence thermal shift assays
 
 R. castenholzii MPD Tms were calculated from pH 2.2 to 11.0 in 100 mM buffer (pH 2.2–3.8 citric acid; pH 4.0–4.8 sodium acetate; pH 5.0–5.8 sodium citrate; pH 6.0–6.8 sodium cacodylate; pH 7.0–7.8 sodium HEPES; pH 8.0–8.8 Tris-HCl; pH 9.0–11.0 CAPSO). Assays were carried out in white 96-well plates in a LightCycler 480 II (Roche Applied Science, Indianapolis, IN). Each well contained a 20 μl total volume, made up with 2 μl of 320 × SyproOrange Dye (Invitrogen, Carlsbad, CA) and 18 μl of MPD (2 μM) in 100 mM of the buffers listed above. The plate temperature was ramped from 20 to 99°C with 10 data points acquired per degree. SyproOrange dye (Invitrogen) was excited at 483 nm and fluorescence intensity (F) detected at 568 nm using the dynamic integration mode (max integration time, 999 ms). Tms were obtained at temperatures (T) where the derivative of the thermograms (−dF/dT) was minimum.
 
-## GC-MS assays
+### GC-MS assays
 
 All GC-MS reconstitution assays were carried out in two steps. First, 1 µM of each of two enzymes (PMK and MDD for the classical MVA pathway or MDD and IPK for the alternative MVA pathway) was incubated for 30 min with 500 µM (RS)-MVAP, 4 mM ATP, and 10 mM MgCl2 buffered with 50 mM Tris-HCl, pH 8.0. Second, 40 µl of this reaction was transferred to a glass vial containing 10 mM MgCl2 buffered with 50 mM Tris-HCl, pH 8.0, containing at least a 150-fold excess of each of the following enzymes: Escherichia coli isopentenyl diphosphate isomerase (IPPI), E. coli farnesyl diphosphate synthase (FPPS), and tobacco 5-epi-aristolochene synthase (TEAS). This reaction mixture was overlaid with ethyl acetate, incubated overnight, and vortexed to extract hydrocarbons from the aqueous layer the next day. Quantitative GC-MS analyses were performed as previously described (Dellas and Noel, 2010). All values were compared to a control reaction, where FPP was added in place of MVA pathway enzymes at appropriate concentrations to simulate complete turnover of MVAP.
 
-## Bioinformatic analyses on IPK homologs
+### Bioinformatic analyses on IPK homologs
 
 Public protein, cDNA, EST and genomic databases were searched for IPK homologs using individual IPK protein sequences, and profile Hidden Markov models built from several individual IPK clades. Genes were predicted from genomic sequences using Genewise (Birney et al., 2004) and TimeLogic GeneDetective (Active Motif Inc., Carlsbad, CA) programs, with manual editing. Protein sequences were aligned with Muscle (Edgar, 2004) and edited with ClustalX (Larkin et al., 2007) and JalView (Waterhouse et al., 2009). Figure 2 was created using PhyML (Guindon et al., 2005) using the SPR model and rooted with fosfomycin kinase sequences. Manual editing was used to merge EST sequences and gene predictions, to correct frameshifts, and to fuse one gene split across two contigs. Discrepancies between individual ESTs were resolved to maximize sequence similarity to highly similar homologs.
 
@@ -146,6 +695,6 @@ Within the Bacteria domain, clear IPK homologs were only found in all five seque
 
 In the Eukarya domain, searches for IPK homologs were made using the non-redundant amino acid (NRAA) Genbank database (Benson et al., 2010), the database of expressed sequence tags (dbEST) (Boguski et al., 1993), and a wide variety of genome databases, including those at Ensembl (www.ensembl.org) (Birney et al., 2004), Joint Genome Institute (JGI, genome.jgi-psf.org/), Baylor College of Medicine (www.hgsc.bcm.tmc.edu), Sanger Institute (www.genedb.org/) and the Broad Institute (www.broadinstitute.org). Searches were carried out with a series of IPK homologs (blastp against predicted peptides, tblastn against genome) using a hidden Markov model profile searched against the genome of interest using Gene Detective.
 
-## MDD alignments
+### MDD alignments
 
 Alignments of MDDs were performed using a combined structure and sequence-based approach. Representatives from each of four groups (eukaryotes, archaea, bacteria, and Chloroflexi) were modeled using Swissmodel and superimposed to identify aligning active site residues (Table 4). Each of these four groups were then aligned with other sequences from the same group using the programs Muscle (Edgar, 2004) and Jalview (Waterhouse et al., 2009) to generate four separate alignments.

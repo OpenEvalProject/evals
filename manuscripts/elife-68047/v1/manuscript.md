@@ -19,21 +19,21 @@
 ### Affiliations
 
 1. Department of Pediatrics and Center for Human Genomics and Precision Medicine, University of Wisconsin School of Medicine and Public Health Madison, WI United States
-2. https://ror.org/04a9tmd77 Department of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai New York, NY United States
-3. https://ror.org/04a9tmd77 Department of Pediatrics, Icahn School of Medicine at Mount Sinai New York, NY United States
-4. https://ror.org/04a9tmd77 Mindich Child Health and Development Institute, Icahn School of Medicine at Mount Sinai New York, NY United States
-5. https://ror.org/00wm07d60 Department of Metabolism and Nutritional Programming, Van Andel Institute Grand Rapids, MI United States
-6. https://ror.org/00t9vx427 Children’s Medical Center Research Institute, University of Texas Southwestern Medical Center Dallas, TX United States
-7. https://ror.org/0575yy874 Department of Pediatrics, Nijmegen Center for Mitochondrial Disorders, Radboud University Medical Center Nijmegen Netherlands
-8. https://ror.org/04a9tmd77 Department of Radiology, Icahn School of Medicine at Mount Sinai New York, NY United States
-9. https://ror.org/006w34k90 Howard Hughes Medical Institute Chevy Chase, MD United States
-10. https://ror.org/03r0ha626 Department of Biochemistry, University of Utah Salt Lake City, UT United States
+2. Department of Genetics and Genomic Sciences, Icahn School of Medicine at Mount Sinai New York, NY United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+3. Department of Pediatrics, Icahn School of Medicine at Mount Sinai New York, NY United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+4. Mindich Child Health and Development Institute, Icahn School of Medicine at Mount Sinai New York, NY United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+5. Department of Metabolism and Nutritional Programming, Van Andel Institute Grand Rapids, MI United States ([ROR:00wm07d60](https://ror.org/00wm07d60))
+6. Children’s Medical Center Research Institute, University of Texas Southwestern Medical Center Dallas, TX United States ([ROR:00t9vx427](https://ror.org/00t9vx427))
+7. Department of Pediatrics, Nijmegen Center for Mitochondrial Disorders, Radboud University Medical Center Nijmegen Netherlands ([ROR:0575yy874](https://ror.org/0575yy874))
+8. Department of Radiology, Icahn School of Medicine at Mount Sinai New York, NY United States ([ROR:04a9tmd77](https://ror.org/04a9tmd77))
+9. Howard Hughes Medical Institute Chevy Chase, MD United States ([ROR:006w34k90](https://ror.org/006w34k90))
+10. Department of Biochemistry, University of Utah Salt Lake City, UT United States ([ROR:03r0ha626](https://ror.org/03r0ha626))
 
 † Corresponding author
 
 ## Abstract
 
-Malonyl-CoA-acyl carrier protein transacylase (MCAT) is an enzyme involved in mitochondrial fatty acid synthesis (mtFAS) and catalyzes the transfer of the malonyl moiety of malonyl-CoA to the mitochondrial acyl carrier protein (ACP). Previously, we showed that loss-of-function of mtFAS genes, including Mcat , is associated with severe loss of electron transport chain (ETC) complexes in mouse immortalized skeletal myoblasts (Nowinski et al., 2020). Here, we report a proband presenting with hypotonia, failure to thrive, nystagmus, and abnormal brain MRI findings. Using whole exome sequencing, we identified biallelic variants in MCAT . Protein levels for NDUFB8 and COXII, subunits of complex I and IV respectively, were markedly reduced in lymphoblasts and fibroblasts, as well as SDHB for complex II in fibroblasts. ETC enzyme activities were decreased in parallel. Re-expression of wild-type MCAT rescued the phenotype in patient fibroblasts. This is the first report of a patient with MCAT pathogenic variants and combined oxidative phosphorylation deficiency.
+Malonyl-CoA-acyl carrier protein transacylase (MCAT) is an enzyme involved in mitochondrial fatty acid synthesis (mtFAS) and catalyzes the transfer of the malonyl moiety of malonyl-CoA to the mitochondrial acyl carrier protein (ACP). Previously, we showed that loss-of-function of mtFAS genes, including Mcat, is associated with severe loss of electron transport chain (ETC) complexes in mouse immortalized skeletal myoblasts (Nowinski et al., 2020). Here, we report a proband presenting with hypotonia, failure to thrive, nystagmus, and abnormal brain MRI findings. Using whole exome sequencing, we identified biallelic variants in MCAT. Protein levels for NDUFB8 and COXII, subunits of complex I and IV respectively, were markedly reduced in lymphoblasts and fibroblasts, as well as SDHB for complex II in fibroblasts. ETC enzyme activities were decreased in parallel. Re-expression of wild-type MCAT rescued the phenotype in patient fibroblasts. This is the first report of a patient with MCAT pathogenic variants and combined oxidative phosphorylation deficiency.
 
 ## Introduction
 
@@ -45,7 +45,7 @@ A mouse model with reduced Mcat expression displays decreased physical activity,
 
 Although MCAT has not been demonstrated to have a role in oxidative phosphorylation, the mitochondrial ACP encoded by NDUFAB1 has been shown to be essential for complex I assembly (Stroud et al., 2016). In an effort to further study the mtFAS pathway, Nowinski et al. recently generated hypomorphic Mcat clones in an immortalized mouse skeletal myoblast line using CRISPR-Cas9. These hypomorphic Mcat clones have a 30–40% decreased basal respiration rate compared to controls, which is explained by markedly decreased levels of fully assembled complexes I, II, and IV. Metabolomics and carbon-labeling studies are all consistent with decreased function of the TCA cycle and oxidative phosphorylation in the hypomorphic Mcat mutant cells (Nowinski et al., 2020). This work demonstrates that the role of mtFAS extends beyond protein lipoylation and includes a crucial role in the maintenance of electron transport chain (ETC) activity. We now present a proband with mitochondrial disease and a biallelic missense variant in MCAT.
 
-## Case presentation
+### Case presentation
 
 A 2-year-old boy, born prematurely, with a past medical history notable for failure to thrive and global developmental delay presented for genetics evaluation. Birth weight was 1.106 kg. The patient was hospitalized in the neonatal intensive care unit for respiratory support (oxygen via nasal cannula) and was discharged home at 7 weeks. The patient was being followed by ophthalmology for retinopathy of prematurity and at 8 months of age was noted to have esotropia and horizontal jerk nystagmus that decreased with convergence. He was prescribed eye patching resulting in some improvement of the esotropia, but at 19 months was noted to have new-onset vertical nystagmus. A brain MRI completed at 21 months was notable for bilaterally symmetrical increase in signal intensity on T2- and T2 FLAIR (fluid attenuated inversion recovery)-weighted sequences in the dorsal medulla, periaqueductal gray matter, substantia nigra, medial hypothalamus, and habenular nuclei. There were two asymmetric foci in the subcortical white matter of the cerebellar hemispheres. There was no surrounding edema and no abnormal contrast enhancement. Developmentally, at 2 years of age the patient could say approximately two to three words, had no two-word phrases, and could not walk independently. On exam, his head circumference was at the 0.4 percentile (Z=−2.59), height was at the 0.46 percentile (Z=−2.61), and weight was at the <0.01 percentile (Z=−3.73). He had plagiocephaly with sagittal suture prominence, but was otherwise nondysmorphic. Vertical and horizontal nystagmus were present. Neurological exam was notable for truncal and peripheral hypotonia, decreased muscle mass, and brisk reflexes. Serum creatine kinase, blood lactate, pyruvate, ammonia, acylcarnitine profile, plasma amino acids, and urine organic acids were normal. Repeat brain MRI at 3 years 3 months showed substantially increased signal intensity and extent of involvement at the same sites, with no edema, no mass effect, and no abnormal contrast enhancement at any site (Figure 1A–F; Naidich and Duvernoy, 2009; Standring, 2020). No new sites of involvement were identified. The remaining portions of the brain showed no abnormality. Brain MR spectroscopy at short TE was normal within the right thalamus and left subcortical white matter. Chromosomal microarray revealed no pathogenic copy number variation, but absence of heterozygosity of unknown clinical significance totaling 32.2 Mb was detected. Family history was significant for an older sibling born with cleft lip, who died at a year of age from a choking episode. Visual symptoms were not seen in this sibling. The proband has two younger siblings who are healthy and have normal development. Family history was otherwise non-contributory, and while both parents are from the same region of Mexico, consanguinity was denied.
 
@@ -59,11 +59,77 @@ By whole exome sequencing, we identified a homozygous variant in MCAT c.812T>C; 
 
 To evaluate whether this patient’s symptoms may be due to MCAT deficiency with disrupted mtFAS and mitochondrial pathology, we first performed immunoblot analysis in lymphoblast and fibroblast samples from the proband and controls. In lymphoblasts, immunoblot analysis revealed a decreased protein level for MCAT as well as NDUFB8 and COXII, which are selected subunits of complex I and IV, respectively (Figure 2A–B, Figure 2—figure supplement 1). In fibroblasts, immunoblot analysis revealed decreased protein levels for NDUFB8, SDHB, UQCRC2, and COXII which are selected subunits of complexes I, II, III, and IV, respectively (Figure 2D, Figure 2—figure supplement 1). Respiratory chain enzyme activities were evaluated in the proband’s fibroblasts and revealed decreased activities for complexes I, II, and IV (Table 1; Rodenburg, 2011).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/68047/elife-68047-fig2-v1.jpg)
+
+**Figure 2.:** (A) Western blot analysis to assess the expression level of one subunit of each of the five different oxidative phosphorylation complexes in the patient lymphoblast sample (P) compared to three control lymphoblast lines from healthy individuals (C1–3). Protein content of NDUFB8 and COXII, which are subunits of complexes I and IV, respectively, are decreased in the patient compared to healthy controls. (B) Western blot analysis to assess malonyl-CoA-acyl carrier protein transacylase (MCAT) levels reveals decreased expression of MCAT in patient lymphoblasts (P) compared to three controls (C1–3). (C) Western blot analysis to assess lipoylation with an anti-lipoic acid antibody in patient lymphoblasts (P) compared to controls (C1–3) reveals normal lipoylation of the PDH and OGDH E2 components (DLAT and DLST, respectively) in the patient sample. (D) Western blot analysis to assess the expression level of one subunit of each of the five different oxidative phosphorylation complexes in the patient fibroblast sample (P) compared to five fibroblast controls (C1–5). Protein content of NDUFB8, COXII, and SDHB, which are subunits of complexes I, IV, and II, respectively, are decreased in the patient compared to healthy controls.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/68047/elife-68047-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The intensity of the protein of interest was normalized to GAPDH. The average of the controls was set to 100% and the individual values are expressed as a percentage.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/68047/elife-68047-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Oxidative decarboxylation of 2-oxoglutaric acid by OGDHc is measured in cell lysates from lymphoblasts from the patient (P) and three healthy controls (C1–3). Control 1 (C1) was a single observation from one cell pellet, controls 2 and 3 (C2 and C3) were duplicate measurements from one cell pellet. For the patient (P), we analyzed two cell pellets, one measured in duplicate and the other measured as a single data point. Standard deviation is shown with the error bars. No deficit in OGDHc activity was identified in the patient sample (P).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/68047/elife-68047-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Three cell pellets were collected for the patient fibroblast cell line (P) and each of five control fibroblast lines (C1–5). Lactate was elevated in the patient line, while 2-oxoglutarate and 2-oxoadipate were normal.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/68047/elife-68047-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** The T235 residue in the crystal structure corresponds to the residue at the site of the T271I mutation. This mutation occurs one residue away from the active site histidine (H234) and is located in a semi-structured region between the end of an alpha helix and a linker region between the alpha helix and a series of beta sheets. In the wild-type protein, the T235 residue makes several contacts with surrounding residues. The carboxy group of T235 makes contact with the amide nitrogen of M238. The hydroxyl group of T235 forms a hydrogen bond with the carboxyl group of A232 and the amide nitrogen of L238. The mutation of threonine to isoleucine results in a loss of polar contacts with A232 and L238 due to a loss of the hydroxyl moiety. This likely reduces the structure of the end of the alpha helix and may generate additional flexibility of the linker region. Although the mutant protein shows maintenance of a contact between the active site histidine and another active site residue (S117), the proximity of this mutation to the active site may suggest a negative impact on catalytic efficiency.
+
+**Table 1.**
+ Clinical biochemical testing of respiratory chain enzyme activities in the proband’s fibroblasts.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Proband</th>
+      <th>Reference range</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Complex I</td>
+      <td>119 mU/U CS</td>
+      <td>163–599 mU/U CS</td>
+    </tr>
+    <tr>
+      <td>Complex II</td>
+      <td>286 mU/U CS</td>
+      <td>335–888 mU/U CS</td>
+    </tr>
+    <tr>
+      <td>Complex III</td>
+      <td>632 mU/U CS</td>
+      <td>570–1383 mU/U CS</td>
+    </tr>
+    <tr>
+      <td>Complex IV</td>
+      <td>103 mU/U CS</td>
+      <td>288–954 mU/U CS</td>
+    </tr>
+    <tr>
+      <td>Complex V</td>
+      <td>630 mU/U CS</td>
+      <td>193–819 mU/U CS</td>
+    </tr>
+    <tr>
+      <td>CS</td>
+      <td>412 mU/mg</td>
+      <td>151–449 mU/mg</td>
+    </tr>
+  </tbody>
+</table>
+
 In mammals, ETC components assemble into respiratory supercomplexes composed of complexes I, III, and IV in varying stoichiometries (Letts et al., 2016). Intact, fully assembled complex I-containing supercomplexes and complex IV-containing supercomplexes were decreased in abundance in fibroblasts from the patient by blue-native PAGE (BN-PAGE), similar to what we observed in SDS-PAGE analysis. The complex III-containing supercomplexes also appeared decreased in abundance in patient fibroblasts, although this can likely be attributed to the observed decreases in complexes I and IV, especially in light of no measured difference in complex III activity. Re-expression of MCAT (+hMCAT), but not a mitochondrially targeted GFP construct (+mtGFP), partially rescued these mitochondrial phenotypes in the patient cells (Figure 3).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/68047/elife-68047-fig3-v1.jpg)
 
-**Figure 3.:** Mitochondrial lysates generated from four control fibroblast lines (C1–4), the patient fibroblast line (P), the patient line expressing the control plasmid mtGFP (P+mtGFP), and the patient line with re-expression of wild-type malonyl-CoA-acyl carrier protein transacylase (MCAT) (P+MCAT). The lysates are separated by blue-native PAGE and immunoblotted with the indicated antibodies. Expression of GRIM19, UQCRCQ, and MTCO1 delineating supercomplexes I, III, and IV respectively are decreased in the patient cells (P) compared to four controls, and improved with re-expression of wild-type MCAT (P+MCAT). For each immunoblot, at least two technical replicates were completed and one representative blot is shown. SC = supercomplex.Figure 3—source data 1.Figure 3.Figure 3—source data 2.Figure 3.
+**Figure 3.:** Mitochondrial lysates generated from four control fibroblast lines (C1–4), the patient fibroblast line (P), the patient line expressing the control plasmid mtGFP (P+mtGFP), and the patient line with re-expression of wild-type malonyl-CoA-acyl carrier protein transacylase (MCAT) (P+MCAT). The lysates are separated by blue-native PAGE and immunoblotted with the indicated antibodies. Expression of GRIM19, UQCRCQ, and MTCO1 delineating supercomplexes I, III, and IV respectively are decreased in the patient cells (P) compared to four controls, and improved with re-expression of wild-type MCAT (P+MCAT). For each immunoblot, at least two technical replicates were completed and one representative blot is shown. SC = supercomplex.
 
 To assess lipoylation, we performed immunoblot analysis in lymphoblasts with an anti-lipoic acid antibody and noted no change in the proband compared to control samples (Figure 2C, Figure 2—figure supplement 1). We also measured OGDHc activity in lymphoblasts and noted no deficits in the proband compared to controls (Figure 2—figure supplement 2). To assess the effects of the homozygous MCAT p.T271I mutation, we also compared metabolite levels between patient fibroblasts and control fibroblast lines. This revealed that lactate is elevated in the patient cells, but metabolites related to other 2-oxoacid dehydrogenase complexes including 2-oxoglutarate and 2-oxoadipate were within the range of normal, consistent with the lack of a deficiency in lipoylation and normal OGDHc activity (Figure 2—figure supplement 3).
 
@@ -71,7 +137,7 @@ Although rescue of fully assembled ETC complexes in patient fibroblasts by re-ex
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/68047/elife-68047-fig4-v1.jpg)
 
-**Figure 4.:** (A) Mitochondrial lysates generated from MCAT hypomorphic CRISPR mutant C2C12 mouse skeletal myoblasts (MCAT) and isogenic controls (GFP), stably infected with either WT human MCAT or p.T271I mutant human MCAT (T271I) transgenes. Lysates were separated by SDS-PAGE and immunoblotted with the indicated antibodies. Protein lipoylation (lipoic acid) is undetectable in MCAT mutant C2C12 and rescued by both WT and p.T271I mutant MCAT, while complex I (NDUFA9, CI) is only rescued by expression of WT human MCAT. For each immunoblot, at least two technical replicates were completed and one representative blot is shown. (B–C) Cells from each of the indicated genotypes were seeded in eight wells of a 96-well seahorse plate and allowed to adhere overnight, then equilibrated and treated with the indicated drugs following standard mitochondrial stress test protocols from the manufacturer to determine oxygen consumption rate (OCR). Error bars are SEM. Oxygen consumption is fully rescued by WT human MCAT but only partially rescued by expression of the p.T271I patient mutation.Figure 4—source data 1.Figure 4.Figure 4—source data 2.Figure 4.Figure 4—source data 3.Figure 4 Panel B.Figure 4—source data 4.Figure 4 Panel C.
+**Figure 4.:** (A) Mitochondrial lysates generated from MCAT hypomorphic CRISPR mutant C2C12 mouse skeletal myoblasts (MCAT) and isogenic controls (GFP), stably infected with either WT human MCAT or p.T271I mutant human MCAT (T271I) transgenes. Lysates were separated by SDS-PAGE and immunoblotted with the indicated antibodies. Protein lipoylation (lipoic acid) is undetectable in MCAT mutant C2C12 and rescued by both WT and p.T271I mutant MCAT, while complex I (NDUFA9, CI) is only rescued by expression of WT human MCAT. For each immunoblot, at least two technical replicates were completed and one representative blot is shown. (B–C) Cells from each of the indicated genotypes were seeded in eight wells of a 96-well seahorse plate and allowed to adhere overnight, then equilibrated and treated with the indicated drugs following standard mitochondrial stress test protocols from the manufacturer to determine oxygen consumption rate (OCR). Error bars are SEM. Oxygen consumption is fully rescued by WT human MCAT but only partially rescued by expression of the p.T271I patient mutation.
 
 ## Discussion
 
@@ -83,50 +149,50 @@ Recently, double homozygous mutations in MCAT (p.L81R and p.R212W) were identifi
 
 ## Materials and methods
 
-## Human subjects enrollment
+### Human subjects enrollment
 
 The family was enrolled in Icahn School of Medicine at Mount Sinai (13-00495; 17-02143) and University of Wisconsin School of Medicine and Public Health (2021-0723) approved genetics research studies. Written informed consent was obtained, and all investigations were conducted in accordance with the principles of the Declaration of Helsinki.
 
-## Whole exome sequencing
+### Whole exome sequencing
 
 Raw whole exome sequencing data (fastq files) for the proband and both parents (trio testing) were received from an outside clinical testing laboratory and were reanalyzed. Sequence reads were independently mapped to the reference genome (hg19) with BWA-MEM and further processed using the GATK Best Practices workflows (Li and Durbin, 2009; Van der Auwera et al., 2013; McKenna et al., 2010); 96% of the exome was covered at ≥10×. Single nucleotide variants and small indels were called with GATK HaplotypeCaller and annotated using ANNOVAR, dbSNP (v138), 1000 Genomes (August 2015), NHLBI Exome Variant Server (EVS), and ExAC (v3) (Wang et al., 2010; Sherry et al., 2001; Genomes Project et al., 2015; Lek et al., 2016). Called variants were filtered with Ingenuity Variant Analysis (Qiagen, Redwood City, CA, USA, http://www.ingenuity.com). A total of 102,052 total variants in 17,924 genes were identified in the three samples. Variants were filtered based on confidence (call quality of ≥20, passed upstream pipeline filtering, and outside top 3% most exonically variable 100 base windows and/or 3% most exonically variable genes in healthy public genomes included), frequency (variants excluded if frequency was at least 0.2% in the 1000 Genomes Project, NHLBI ESP exomes, or ExAC), predicted deleteriousness (frameshift, in-frame indel, start/stop codon changes, missense changes, splice site loss up to six bases into intron or as predicted by MaxEntScan, and variants listed in HGMD were included), and genetic analysis (de novo or recessive inheritance considered). This filtering strategy resulted in the identification of 21 variants in 20 genes. All of these variants were considered, and knowledge of gene function was reviewed.
 
-## Cell lines
+### Cell lines
 
 A blood sample was collected from the male proband and a lymphoblast line was set up according to standard practices. A skin biopsy was obtained from the proband and a fibroblast culture was established according to standard practices. All patient and control human cell lines receive authentication by genotyping and chromosomal microarray prior to freezing large stocks. All cell lines are tested monthly for mycoplasma contamination.
 
-## Oxidative phosphorylation enzyme activities
+### Oxidative phosphorylation enzyme activities
 
 The enzyme activities of complexes I, II, III, IV, and V and citrate synthase in fibroblasts were measured using spectrophotometry in a mitochondrial enriched fraction (Rodenburg, 2011).
 
-## Immunoblot analysis
+### Immunoblot analysis
 
 Lymphoblast and fibroblast samples from the proband and control samples were utilized for immunoblot analysis and processed as described (Houten et al., 2014). The membrane was probed with total OXPHOS human WB antibody cocktail at 1:1000 (MitoSciences, ab110411), anti-MCAT antibody at 1:1000 (Sigma-Aldrich, HPA035471, RRID:AB_10670590), anti-lipoic acid antibody at 1:1000 (Calbiochem, 437695), anti-DLAT at 1:1000 (Abcam, ab172617, RRID:AB_2827534), and/or anti-DLST at 1:1000 (Cell Signaling, 5556, RRID:AB_106951) with anti-GAPDH antibody at 1:2500 (Abnova, H00002597-K) used as a loading control. For each immunoblot, at least two technical replicates were completed and one representative blot is shown and quantified.
 
-## OGDHc activity
+### OGDHc activity
 
 Control and patient-derived lymphoblasts were resuspended in PBS, lysed by sonication and centrifuged for 10 min at 1000 × g at 4°C. The supernatant (60 μg total protein) was mixed with assay buffer (final concentration: 50 mM MOPS, pH 7.4, 0.2 mM MgCl2, 0.01 mM CaCl2, 0.3 mM TPP (C8754, Sigma), 0.12 mM CoA (C3144, Sigma), 2 mM NAD+ (N6522, Sigma), 2.6 mM β-mercaptoethanol). The reaction was started by the addition of 1 mM 2-oxoglutarate substrate (K1128, Sigma). The activity of the OGDHc was followed by measuring the NADH production at 340 nm at 30°C and steady-state velocities were calculated from the linear portion of the time curve.
 
-## Rescue of proband fibroblasts
+### Rescue of proband fibroblasts
 
 For rescue experiments, proband fibroblasts were infected with lentivirus harboring a control transfer plasmid (pLenti mtGFP) or pLenti expressing MCAT off the full CMV promoter (pLenti hMCAT). Human MCAT was cloned from a mixture of human cDNA isolated from the common cell lines HCT116, HCT15, and 293T. Virus was packaged in HEK293T cells, collected at 48–72 hr post-transfection, and viral supernatants were filtered and applied directly to patient fibroblasts for 16 hr. Media was changed and replaced with fresh media and cells were allowed to expand and recover for 48 hr, then harvested for BN-PAGE.
 
-## Crude mitochondrial isolation and BN-PAGE
+### Crude mitochondrial isolation and BN-PAGE
 
 Cells were harvested with 0.25% trypsin-EDTA (Gibco, 25200-072), pelleted, washed with sterile PBS (Gibco, 10010-023), pelleted again, and frozen in liquid nitrogen. Mitochondria were isolated as previously described (Nowinski et al., 2020). Briefly, cells were suspended in 1 mL CP-1 buffer (100 mM KCl, 50 mM Tris-HCl, 2 mM EGTA, pH 7.4), lysed by passing through a 27-gauge needle, and centrifuged at 700 × g to pellet debris. Supernatant was subsequently centrifuged at 10,000 × g to pellet crude mitochondria. Mitochondrial pellets were resuspended in CP-1 buffer, normalized for mitochondrial protein by BCA Assay (Pierce), and used in assays described below. BN-PAGE was performed using the Invitrogen NativePAGE system. One hundred micrograms of mitochondria were resuspended in 1× pink lysis buffer (Invitrogen, BN20032). Digitonin (GoldBio D-180-2.5) was added to a final concentration of 1% mass/volume. Samples were incubated on ice for 15 min, then spun for 20 min at 20,000 × g. Six microliters of NativePAGE sample buffer (Invitrogen, BN20041) was added, and 10 µL of sample was run on precast 3–12% NativePAGE gels (Invitrogen, BN2011BX10) according to the manufacturer’s instructions. Gels were subsequently transferred to nitrocellulose and blotted with the indicated primary antibodies. Secondary anti-mouse HRP antibody and SuperSignal West Femto Maximum Sensitivity Substrate (Thermo Fisher Scientific, 34096) was used to visualize bands on film (GeneMate, F-9024-8X10).
 
-## Metabolomics analysis
+### Metabolomics analysis
 
 Cells for metabolomics analysis were grown simultaneously with samples for BN-PAGE assessment. One hundred thousand cells were seeded and then collected after 48 hr. Cells were collected and lysed in 80:20 optima-grade methanol:water and frozen in liquid nitrogen. After three consecutive freeze-thaw cycles, samples were centrifuged at top speed for 10 min in a refrigerated centrifuge. Supernatants were transferred to fresh tubes and a protein assay was performed on the methanol lysate. Metabolite extracts were dried in a sample concentrator and then metabolites were resuspended in 80:20 acetonitrile:water relative to their protein abundance in preparation for LCMS analysis. Data acquisition was performed by reverse-phase chromatography on a 1290 UHPLC liquid chromatography (LC) system interfaced to a high-resolution mass spectrometry 6550 iFunnel Q-TOF mass spectrometer (MS) (Agilent Technologies, CA, USA). The MS was operated in both positive and negative (ESI+ and ESI-) modes. Analytes were separated on a Sequant ZIC-pHILIC column (5 μm, 2.1×150 mm, Merck, Damstadt, Germany). The column was kept at room temperature. Mobile phase A composition was 10 mM ammonium acetate in water (pH 9.8) and mobile phase B composition was 100% acetonitrile. The LC gradient was 0 min: 90% B; 15 min: 30% B; 18 min: 30% B; 19 min: 10% B; and 27 min: 10% B. The flow rate was 250 μL/min. The sample injection volume was 10 μL. ESI source conditions were set as follows: dry gas temperature 225°C and flow 18 L/ min, fragmentor voltage 175  V, sheath gas temperature 350°C, and flow 12  L/min, nozzle voltage 500 V, and capillary voltage +3500 V in positive mode and −3500 V in negative. The instrument was set to acquire over the full m/z range of 40–1700 in both modes, with the MS acquisition rate of 1 spectrum/s in profile format. Raw data files (.d) were processed using Profinder B.08.00 SP3 software (Agilent Technologies, CA, USA) with an in-house database containing retention time and accurate mass information on 600 standards from Mass Spectrometry Metabolite Library (IROA Technologies, MA, USA) which was created under the same analysis conditions. The in-house database matching parameters were: mass tolerance 10 ppm; retention time tolerance 0.5 min. Peak integration result was manually curated in Profinder for improved consistency and exported as a spreadsheet (.csv). Peak areas were blank subtracted and normalized to total ion content. The experiment was replicated with consistent results.
 
-## Rescue of MCAT CRISPR mutant C2C12 cell lines
+### Rescue of MCAT CRISPR mutant C2C12 cell lines
 
 Two clonal C2C12 cell lines with mutations in MCAT were generated and thoroughly characterized previously (Nowinski et al., 2020). These cell lines or a control clonal line (GFP) were infected with retrovirus expressing the human MCAT CDS (WT), human MCAT harboring the T271I mutation (T271I), or a mitochondrially targeted DSRed control (mtDSRed). Stably infected cells were selected by culturing in normal growth medium (DMEM [Corning 10-013-CV]+10% FBS) supplemented with 2 µg/mL puromycin for 7 days. Cells were expanded and harvested for mitochondrial isolation and western blotting at 70% confluency or plated for Seahorse assays. For immunoblotting, samples were processed as published previously (Nowinski et al., 2020).
 
-## Seahorse assay for mitochondrial respiration
+### Seahorse assay for mitochondrial respiration
 
 Cells were plated in 8 wells of a 96-well Seahorse plate at 6000 cells/well in DMEM+10% FBS and incubated overnight. Prior to the assay, cells were washed 2× and media was replaced with XF base DMEM (Agilent 103334-100) supplemented with 25 mM glucose (Agilent 103577-100), 2 mM glutamine (Agilent 103579-100), and 1 mM pyruvate (Agilent 103578-100), pH 7.4. A mitochondrial stress test was performed on a Seahorse XFe96 Analyser under standard assay conditions according to the manufacturer’s instructions using 1 µM oligomycin, 3 µM FCCP, and 0.5 µM Rotenone+0.5 µM Antimycin A (Agilent 103015-100). Data were normalized to total cell content per well using crystal violet staining. Briefly, cells were fixed in 4% paraformaldehyde, washed, stained with crystal violet. Excess dye was washed away, and then cells were permeabilized using 1% SDS to solubilize the crystal violet stain. Samples were transferred to a standard 96-well plate and absorbance at 595 nm was read on a BioTek plate reader. Results were analyzed in WAVE software and processed through the XF Mito Stress Test Report. The experiment was replicated with consistent results.
 
-## Modeling of MCAT p.T271I mutation
+### Modeling of MCAT p.T271I mutation
 
 The human MCAT crystal structure was downloaded from the Protein Data Bank (PDB 2C2N). The crystal sequence was aligned with the full-length sequence (Uniprot: Q8IVS2) to identify the residue in the crystal structure (T235) that corresponds with the mutated residue identified in the patient (T271). The crystal structure was imported into PyMol 2.5.2, and T235 was mutated to an isoleucine in order to model the structural impact of the mutation on interactions with nearby residues.

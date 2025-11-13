@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.43322.001 Generating recombinant monoclonal antibodies (R-mAbs) from mAb-producing hybridomas offers numerous advantages that increase the effectiveness, reproducibility, and transparent reporting of research. We report here the generation of a novel resource in the form of a library of recombinant R-mAbs validated for neuroscience research. We cloned immunoglobulin G (IgG) variable domains from cryopreserved hybridoma cells and input them into an integrated pipeline for expression and validation of functional R-mAbs. To improve efficiency over standard protocols, we eliminated aberrant Sp2/0-Ag14 hybridoma-derived variable light transcripts using restriction enzyme treatment. Further, we engineered a plasmid backbone that allows for switching of the IgG subclasses without altering target binding specificity to generate R-mAbs useful in simultaneous multiplex labeling experiments not previously possible. The method was also employed to rescue IgG variable sequences and generate functional R-mAbs from a non-viable cryopreserved hybridoma. All R-mAb sequences and plasmids will be archived and disseminated from open source suppliers.
+Generating recombinant monoclonal antibodies (R-mAbs) from mAb-producing hybridomas offers numerous advantages that increase the effectiveness, reproducibility, and transparent reporting of research. We report here the generation of a novel resource in the form of a library of recombinant R-mAbs validated for neuroscience research. We cloned immunoglobulin G (IgG) variable domains from cryopreserved hybridoma cells and input them into an integrated pipeline for expression and validation of functional R-mAbs. To improve efficiency over standard protocols, we eliminated aberrant Sp2/0-Ag14 hybridoma-derived variable light transcripts using restriction enzyme treatment. Further, we engineered a plasmid backbone that allows for switching of the IgG subclasses without altering target binding specificity to generate R-mAbs useful in simultaneous multiplex labeling experiments not previously possible. The method was also employed to rescue IgG variable sequences and generate functional R-mAbs from a non-viable cryopreserved hybridoma. All R-mAb sequences and plasmids will be archived and disseminated from open source suppliers.
 
 ## Introduction
 
@@ -37,7 +37,7 @@ There are numerous routes to obtaining validated R-mAbs, including their de novo
 
 ## Results
 
-## Effective cloning of immunoglobulin VH and VL regions from cryopreserved hybridomas and generation of R-mAbs
+### Effective cloning of immunoglobulin VH and VL regions from cryopreserved hybridomas and generation of R-mAbs
 
 We previously generated a large library of mouse mAbs that have been extensively validated for efficacy and specificity for immunolabeling endogenous target proteins in mammalian brain samples in immunoblotting (IB) and immunohistochemistry (IHC) applications (Bekele-Arcuri et al., 1996; Rhodes and Trimmer, 2006; Gong et al., 2016). Here, we undertook the systematic conversion of a sizable subset of this existing mAb collection to R-mAbs. We developed an innovative pipeline for R-mAb cloning, expression and validation. For the cloning steps, we built upon a previously described method (Crosnier et al., 2010; Müller-Sienerth et al., 2014) to clone IgG VH and VL region sequences, but with the modification that we cloned directly from cryopreserved hybridomas, without the need for their labor-intensive recovery into cell culture. Our overall cloning strategy (Figure 1A) employs PCR-mediated amplification to generate IgG VH and VL region sequences from hybridoma-derived cDNA, followed by PCR-based fusion of these VH and VL regions with a joining fragment that contains a subset of the elements needed for high level expression of R-mAbs from transfected mammalian cell lines. The product of this fusion PCR reaction is then inserted into a plasmid containing the remainder of the elements for propagation in bacteria and expression of intact heavy and light chains in, and secretion of R-mAbs from transfected mammalian cells (Figure 1B).
 
@@ -49,7 +49,7 @@ As described in detail in the Materials and methods section, we extracted RNA fr
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/43322/elife-43322-fig2-v2.jpg)
 
-**Figure 2.:** L and VH domain sequences from hybridomas into the R-mAb expression plasmid.(A) Agarose gel analysis of VL and VH domain PCR products amplified from cDNA synthesized from RNA extracted from the N59/36 (anti-NR2B/GRIN2B) and K39/25 (anti-Kv2.1/KCNB1) hybridomas. The expected size of mouse IgG VL and VH domains is ≈360 bp. (B) Agarose gel analysis of VH and digested VL fragments joined by fusion PCR (F-PCR) to the P1316-derived joining fragment to create a dual IgG chain cassette. (C) Agarose gel analysis of colony PCR samples of transformants from the N59/36 R-mAb project. (D) Agarose gel analysis of products of restriction enzyme digestion of N59/36 plasmid DNA with NotI and AscI. The plasmid backbone is seven kbp, and the intact insert comprising the VL and VH domains and the intervening joining fragment is 2.4 kbp. (E) Agarose gel analysis of PCR products of VL domain cDNA synthesized from RNA extracted from mouse splenocytes, the fusion partner Sp2/0-Ag14, and various hybridomas after digestion with the BciVI restriction enzyme to cleave the Sp2/0-Ag14-derived aberrant light chain product. The intact VL domains are ≈360 bp, and the digested aberrant light chains ≈180 bp.
+**Figure 2.:** (A) Agarose gel analysis of VL and VH domain PCR products amplified from cDNA synthesized from RNA extracted from the N59/36 (anti-NR2B/GRIN2B) and K39/25 (anti-Kv2.1/KCNB1) hybridomas. The expected size of mouse IgG VL and VH domains is ≈360 bp. (B) Agarose gel analysis of VH and digested VL fragments joined by fusion PCR (F-PCR) to the P1316-derived joining fragment to create a dual IgG chain cassette. (C) Agarose gel analysis of colony PCR samples of transformants from the N59/36 R-mAb project. (D) Agarose gel analysis of products of restriction enzyme digestion of N59/36 plasmid DNA with NotI and AscI. The plasmid backbone is seven kbp, and the intact insert comprising the VL and VH domains and the intervening joining fragment is 2.4 kbp. (E) Agarose gel analysis of PCR products of VL domain cDNA synthesized from RNA extracted from mouse splenocytes, the fusion partner Sp2/0-Ag14, and various hybridomas after digestion with the BciVI restriction enzyme to cleave the Sp2/0-Ag14-derived aberrant light chain product. The intact VL domains are ≈360 bp, and the digested aberrant light chains ≈180 bp.
 
 To permit cloning of both the VH and VL regions into a single expression vector, fusion PCR (F-PCR) was performed using as templates the VH and VL PCR products, as well as a joining fragment amplified from the P1316 expression plasmid (Crosnier et al., 2010; Müller-Sienerth et al., 2014) to produce a 2.4 kbp amplicon (Figure 2B). The joining fragment (Figure 1B) contains kappa light chain constant region sequences and an associated polyadenylation signal, followed by a CMV promoter to drive VH expression, and a VH leader sequence (Crosnier et al., 2010; Müller-Sienerth et al., 2014). The F-PCR reaction products were then treated with NotI and AscI restriction enzymes and purified in preparation for cloning into a NotI/AscI restriction enzyme-digested fragment of the P1316 expression plasmid (Figure 1B). Upstream of the NotI cloning site, the digested P1316 fragment contains a CMV promoter to drive light chain expression and a VL leader sequence, and downstream of the AscI cloning site a mouse IgG1 CH sequence, and a polyadenylation signal (Figure 1B). Clones expressing the full-length IgG expression cassette were identified by colony PCR (Figure 2C). Following NotI/AscI restriction digestion to verify the correct insert size (Figure 2D), these plasmid clones were subjected to further analysis (Figure 1A), including expression in mammalian cells, and R-mAb validation and sequencing as detailed in the subsequent sections.
 
@@ -57,13 +57,192 @@ While a number of bona fide R-mAbs were isolated using this approach, we found a
 
 As such, we sought to eliminate this aberrant light chain during the cloning process. We treated the VL PCR products with the restriction enzyme BciVI. The restriction site for this enzyme is present in the VL region of the aberrant Sp2/0-derived transcript, but is predicted to occur at a low frequency in functional mouse VL kappa sequences (Juste et al., 2006). We used VL PCR products derived from the Sp2/0 cell line and from pooled BALB/c mouse splenocytes as positive and negative controls, respectively, for sensitivity to BciVI digestion. Due to the exclusive presence of aberrant light chain in Sp2/0 cells, VL PCR products from these cells were completely digested, as shown by the decreased size of the VL PCR products from ≈360 bp typical of VL PCR products (see Figure 2A for examples) to the ≈180 bp fragment that results from BciVI digestion (Figure 2E). In contrast, the sample prepared from the pooled mouse splenocytes was not detectably affected by BciVI digestion (Figure 2E). Treatment of VL PCR products from various Sp2/0-derived hybridomas with BciVI resulted in varying degrees of digestion, yielding different proportions of the bands representing the intact VL PCR product of ≈360 bp and the cleaved aberrant SP2/0-derived VL fragment of ≈180 bp (Figure 2E). After BciVI digestion was incorporated into the protocol, DNA sequencing of 149 colony PCR-positive clones from 26 different hybridomas revealed that only 12 (8%) still contained the aberrant Vk light chain (Table 1). In certain cases, digestion of hybridoma VL PCR products resulted in fragments of unexpected sizes (see the K58/35 lane in Figure 2E), indicating, as predicted by an earlier bioinformatics analysis (Juste et al., 2006), that in rare cases (in our hands, 3/248 clones pursued to this step) the BciVI restriction site was also present in these functionally rearranged splenocyte-derived VL genes. As such, we attempted to clone these VL PCR products without BciVI treatment. As one example, the splenocyte-derived Vk light chain PCR products from the K58/35 hybridoma were sensitive to BciVI digestion, which necessitated their cloning in the absence of the BciVI digestion step. This project yielded somewhat lower frequency of clones that produced functional R-mAbs able to detect target antigen (≈37%) than, on average, those containing splenocyte-derived VL PCR products refractory to BciVI digestion (≈48%; Supplementary file 1). For the bulk of mAbs encoded by splenocyte-derived VL PCR products resistant to BciVI digestion, ligations were performed following BciVI digestion, and 10–14 candidate clones that were colony PCR-positive were selected. Plasmid DNA was digested with AscI/NotI restriction enzymes to confirm the correct insert (Figure 2D). On average, ≈93% of all clones subjected to restriction analysis passed this screening step.
 
+**Table 1.**
+ Aberrant VL sequences remaining after BciVI digestion.Table delineates for specific mAb cloning projects the total number of clones sequenced, and the number of sequenced clones with VL chains corresponding to the Sp2/0-Ag14 hybridoma-derived aberrant VL transcript.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>mAb</th>
+      <th>Number of clones sequenced</th>
+      <th>Number of clones with aberrant chain</th>
+      <th>% with aberrant chain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>K7/45</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>K9/40</td>
+      <td>7</td>
+      <td>2</td>
+      <td>28.6</td>
+    </tr>
+    <tr>
+      <td>K13/31</td>
+      <td>10</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>K14/16.2</td>
+      <td>2</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>K14/16.2.1</td>
+      <td>9</td>
+      <td>2</td>
+      <td>22.2</td>
+    </tr>
+    <tr>
+      <td>K17/70</td>
+      <td>6</td>
+      <td>1</td>
+      <td>16.7</td>
+    </tr>
+    <tr>
+      <td>K28/86</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>K36/15</td>
+      <td>6</td>
+      <td>1</td>
+      <td>16.7</td>
+    </tr>
+    <tr>
+      <td>K74/71</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>K75/41</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>K87A/10</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>L6/60</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>L21/32</td>
+      <td>4</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>L23/27</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>L61/14</td>
+      <td>7</td>
+      <td>1</td>
+      <td>14.3</td>
+    </tr>
+    <tr>
+      <td>N59/20</td>
+      <td>2</td>
+      <td>2</td>
+      <td>100</td>
+    </tr>
+    <tr>
+      <td>N70/28</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>N86/8</td>
+      <td>8</td>
+      <td>2</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <td>N86/38</td>
+      <td>22</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>N100/13</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>N103/31</td>
+      <td>4</td>
+      <td>1</td>
+      <td>25.0</td>
+    </tr>
+    <tr>
+      <td>N103/39</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>N105/13</td>
+      <td>5</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>N106/36</td>
+      <td>6</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>N116/14</td>
+      <td>3</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>N297/59</td>
+      <td>7</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Total</td>
+      <td>149</td>
+      <td>12</td>
+      <td>8.1</td>
+    </tr>
+  </tbody>
+</table>
+
 We next transfected the colony PCR and restriction digest-validated plasmids into COS-1 cells and after a 3 to 6 day incubation, tested the conditioned culture media for production of target-specific R-mAbs. While the parent mAbs had previously been validated for efficacy and specificity in a variety of applications (IF-ICC, IB and IHC on brain samples), we selected the IF-ICC assay in transiently transfected heterologous cells for R-mAb validation. This method was chosen because it is high-throughput, employing 96 well microtiter plates, it requires only a small amount of R-mAb sample, and the robust difference between target-expressing and non-expressing cells in the same sample allows for sensitivity and clarity of results. Importantly, each of the parent mAbs had been previously validated in this procedure. We took advantage of the fact that in most cases we switched the IgG subclass during conversion of the hybridoma-derived mAb into the corresponding R-mAb, allowing for their separate detection by subclass-specific secondary Abs (Manning et al., 2012). This assay involved expressing the full-length target protein in transiently transfected COS-1 cells cultured in individual wells of a black polystyrene 96 well clear bottom plate that allows for microscopic visual analysis and imaging using indirect immunofluorescence. For each of 1 to 15 R-mAb candidate clones to be assayed from a given project, a set of replicate wells were prepared expressing the given target protein. After fixation and permeabilization, the individual wells were then immunolabeled with either the hybridoma-generated mAb alone, the R-mAb alone, or the mAb and R-mAb together. Each well was subsequently incubated with a cocktail of the two distinct subclass-specific secondary Abs, one specific for the respective mAb and one specific for the subclass-switched R-mAb mouse IgG subclasses, and both conjugated to spectrally distinct Alexa Fluors. The ‘mAb only’ well was used to demonstrate that the target protein was expressed in a subset of the transiently transfected cells, and that the only detectable secondary Ab labeling was for the IgG subclass of the parent hybridoma-generated mAb. Similarly, the 'R-mAb only' wells were used to show that the R-mAb labeled a comparable number of cells, and that the only detectable secondary Ab labeling was for the IgG subclass of the subclass-switched R-mAb. The wells containing both the parent mAb and candidate R-mAb were used to show that the mAb and R-mAb gave indistinguishable labeling patterns at both the cellular and subcellular level and could be detected separately using subclass-specific secondary Abs. Numerous examples of this assay are shown in the following sections focusing on specific R-mAb projects. We note that only in rare cases was the labeling for one or both secondaries noticeably depressed in the well containing both mAb and R-mAb relative to the wells with these primary antibodies alone, as would occur due to competitive binding to the same epitope. However, this was generally not apparent, suggesting that in this assay system, in which the target protein was overexpressed, we were typically operating under conditions of antigen excess.
 
 In comparing the overall results from 180 recent projects that had BciVI-resistant splenocyte-derived VL PCR products, and that were taken through this entire pipeline one time (Supplementary file 1), we found that a range of 1–15 colony PCR- and restriction digest-positive candidate R-mAbs per project were evaluated in the COS-ICC assay (919 total, mean/project = 5.11 ± 0.23 S.E.M.). For these 180 projects, cloning was performed after BciVI digestion, and all restriction digest-validated candidates were tested for functional mAb production. Of these 180 projects, 72% (129 projects) yielded at least one positive R-mAb on their first pass through the pipeline. A retrospective analysis of these 129 successful projects revealed a range of 1 to 13 restriction digest-validated candidates were evaluated (mean/project = 5.74 ± 0.26 S.E.M.), with an overall success rate of 48.4% for all 741 restriction digest-validated candidate R-mAbs tested. A parallel analysis of the 51 projects that did not yield a positive R-mAb on their first pass through the pipeline revealed a similar range of 1 to 15 restriction digest-validated candidates per project evaluated. However, an overall lower number of colony PCR- and restriction digest-positive candidates were evaluated in the COS-ICC assay (178 total, mean/project = 3.5 ± 0.37 S.E.M.) in these projects than for the successful projects. A statistically significant difference (two-tailed P value = 2.48×10−6) existed between the number of candidates evaluated in successful versus unsuccessful projects. The per-project COS-ICC rate success was impacted by number of clones tested. For 1–3 clones tested (66 projects), the project success rate was 50%, for 4–6 (62 projects) it was ≈ 77%, and for ≥7 (52 projects) it was ≈92%. However, the per clone success rate was similar between the three bins (≈ 45% vs. ≈39% vs. ≈ 45%).
 
 Following validation in the COS-ICC assay, a subset of positive clones for each project was subjected to DNA sequencing. We employed a set of sequencing primers that allowed for determination of sense and antisense strands of the VH and VL domain-encoding cDNA inserts that were unique to each R-mAb. The sequences were searched against the NCBI database, and against a custom database that contained the VH and VL domain sequences of the parent P1316 plasmid, the VL domain of the aberrant Sp2/0 cell line, and the VH and VL domain sequences of all of the R-mAbs we had cloned to date. The set of COS-ICC validated R-mAb plasmids derived from a single hybridoma that had matching sequences unique from any sequences in the custom database were subsequently archived as frozen plasmid DNA and bacterial glycerol stocks, and their sequence used as the archival sequence of that particular R-mAb.
 
-## Effective cloning and IgG subclass switching of a widely used monoclonal antibody
+### Effective cloning and IgG subclass switching of a widely used monoclonal antibody
 
 We initiated our R-mAb cloning efforts with the K28/43 mAb, a mouse mAb specific for the neural scaffolding protein PSD-95. This mAb is widely used as a marker of excitatory synapses (e.g., as of 1/1/19 ≈520 publications have cited the use of the K28/43 mAb as obtained from the UC Davis/NIH NeuroMab Facility alone). While the K28/43 mAb is already of a less common IgG subclass (IgG2a), generating a subclass switched version with an alternate IgG subclass would provide greater flexibility in its use in multiplex labeling experiments, and also provide proof of concept that we could use our process to effectively generate subclass switched R-mAbs with efficacy and specificity comparable to the parent mAb. We generated VL and VH domain cDNA fragments from the cryopreserved K28/43 hybridoma and cloned them into the original P1316 plasmid that contains a mouse IgG1 CH domain (Crosnier et al., 2010). COS-1 cells were transiently transfected with the resultant plasmids. We evaluated the conditioned medium from the transfected cells for the presence of the subclass-switched K28/43R IgG1 R-mAb by ICC against fixed and permeabilized transiently transfected COS-1 cells expressing full-length PSD-95 (Figure 3A). We note that we have designated the recombinant R-mAb versions of each of our mAbs by a capital ‘R’ after the clone designation, in this case the R-mAb cloned from the K28/43 hybridoma is designated K28/43R. We screened the COS-1 cell-generated R-mAbs for functional R-mAb immunoreactivity in the 96-well IF-ICC assay detailed in the previous section. After primary antibody labeling, all wells received both IgG1- and IgG2a-subclass-specific, fluorescently labeled secondary antibodies. As shown in Figure 3A, as expected, the sample receiving only the native K28/43 hybridoma-generated mAb exhibited a signal corresponding to the IgG2a subclass-specific secondary Ab (red) with no detectable signal for the IgG1 subclass-specific secondary Ab (green). Conversely, labeling with the K28/43R R-mAb alone produced only an IgG1 subclass-specific green signal demonstrating a successful IgG subclass switch for the R-mAb (Figure 3A). Simultaneous multiplex labeling with the hybridoma-generated mAb and a positive R-mAb resulted in an identical pattern of immunolabeling at the cellular level in the specific cells recognized, and at the subcellular level as to the pattern of immunolabeling within the labeled cells, as shown by the uniform hue of the signal in the merged panel, indicating that both the mAb and R-mAb were recognizing the same target (Figure 3A). We next performed multiplex immunofluorescent IHC on adult mouse brain sections with the K28/43 mAb and the K28/43R R-mAb. As shown in Figure 3B, as detected with secondary Abs specific for their respective mouse IgG subclasses, the signal from these two primary antibodies was indistinguishable in its laminar and subcellular pattern in cerebellar cortex, consistent with previous studies of PSD-95 (e.g., Kistner et al., 1993). Both signals were especially intense in the terminal pinceau of basket cells located adjacent to the Purkinje cell layer, and both signals were also present in the molecular layer, and for the most part lacking in the granule cell layer (Figure 3B). This demonstrates that consistent with the validation in heterologous COS-1 cells expressing exogenous PSD-95, the K28/43 R-mAb can be used reliably for multiplex immunolabeling of endogenous PSD-95 in brain sections.
 
@@ -73,13 +252,13 @@ We initiated our R-mAb cloning efforts with the K28/43 mAb, a mouse mAb specific
 
 The specificity of recombinant K28/43R was also assessed on immunoblots of samples from COS-1 cells exogenously expressing various representatives of the MAGUK superfamily of scaffolding proteins, of which PSD-95 is one member (Figure 3C). Immunoblots were probed with a rabbit polyclonal antibody raised against PSD-95 and that also cross-reacts with SAP97 as a positive control, and recombinant K28/43R in either the IgG1 or IgG2a mouse IgG subclass form (Figure 3C). Generation of the IgG2a expression plasmid is described below. Both the IgG1 and IgG2a subclass isoforms of the K28/43R R-mAb gave identical immunolabeling patterns against samples from rat brain and COS-1 cells overexpressing PSD-95. Moreover, the pattern of R-mAb immunolabeling was similar to that obtained with the rabbit polyclonal antibody, and absent against samples of COS-1 cells exogenously expressing other MAGUK superfamily members (Figure 3C). To confirm expression of these MAGUK proteins, immunoblots were probed with rabbit polyclonal anti-PSD-95 and with the hybridoma-generated K28/43 mAb (IgG2a) or a mAb that recognizes all mammalian MAGUK proteins mAb (K28/86; IgG1) (Rasband et al., 2002) (Figure 3C). These initial results demonstrated that we could use this cloning and expression process to generate and validate subclass-switched R-mAbs that recapitulate the immunolabeling characteristics of the native mAbs.
 
-## Generation of an R-mAb expression plasmid with an IgG2a CH backbone allows for effective subclass switching of mAbs from prevalent IgG1 subclass
+### Generation of an R-mAb expression plasmid with an IgG2a CH backbone allows for effective subclass switching of mAbs from prevalent IgG1 subclass
 
 Most (≈70%) mouse IgG mAbs are of the IgG1 subclass (Manning et al., 2012). Generating R-mAbs employing the efficient VH and VL cloning approach developed by Gavin Wright and colleagues includes their subsequent insertion into an expression plasmid that yields R-mAbs of the mouse IgG1 subclass due to the presence of the mouse γ1 CH domain in the plasmid backbone (Crosnier et al., 2010). To generate R-mAbs of less common mouse IgG subclasses, we modified this plasmid by replacing the γ1 CH domain with a mouse γ2a CH domain. We amplified the γ2a CH domain sequence from cDNA generated from the hybridomas producing the K28/43 IgG2a mAb and then replaced the γ1 CH domain present in the K28/43R plasmid with this γ2a CH domain using standard cloning. This plasmid was sequenced verified and validated for expression of a K28/43R R-mAb of the IgG2a subclass (Figure 3C).
 
 We subsequently used this plasmid as the target cloning vector for generation and expression of numerous R-mAb plasmids encoding functional IgG2a R-mAbs. Our strategy entailed cloning all native IgG1 and IgG2b mAbs into this plasmid to generate forms distinct from the parent native mAbs. Toward this end, we have successfully cloned and validated as functional R-mAbs a total of 178 mAbs (Supplementary file 2). This includes 148 mAbs of distinct subclasses converted to IgG2a R-mAbs (125 IgG1, 21 IgG2b, and 3 IgG3), and 29 IgG2a mAbs that were retained in their native IgG subclass (Supplementary file 2). We also converted the IgG2a mAb K28/43 to an IgG1 R-mAb. Each of these R-mAbs have been assigned unique RRID numbers in the Antibody Registry (Supplementary file 2) and all will be deposited in plasmid form at Addgene, a subset of which are already available (https://www.addgene.org/James_Trimmer/).
 
-## Multiplex brain immunofluorescent labeling with subclass switched R-mAbs
+### Multiplex brain immunofluorescent labeling with subclass switched R-mAbs
 
 One benefit of subclass switching R-mAbs is the ability to perform multiplex immunolabeling not previously possible due to IgG subclass conflicts. Examples of such enrichment in cellular protein localization are shown in Figure 4. Figure 4A shows labeling with the subclass switched IgG2a R-mAb derived from the widely used pan-voltage-gated sodium channel or ‘pan-Nav channel’ IgG1 mAb K58/35 (Rasband et al., 1999). Like the corresponding mAb, K58/35 R-mAb gives robust labeling of Nav channels concentrated on the axon initial segment (AIS, arrows in Figure 4A main panel), and at nodes of Ranvier (arrows in Figure 4A insets). Importantly, subclass switching allowed Nav channel labeling at nodes to be verified by co-labeling with K65/35 an IgG1 subclass antibody directed against CASPR, a protein concentrated at paranodes (Menegoz et al., 1997; Peles et al., 1997). Similarly, simultaneous labeling for the highly-related GABA-A receptor β1 and β3 subunits (Zhang et al., 1991) with their widely used respective mAbs N96/55 and N87/25 could not be performed as both are IgG1 subclass. Switching the N96/55 mAb to the IgG2a N96/55R R-mAb allowed simultaneous detection of these two highly-related but distinct GABA-A receptor subunits. In Figure 4B localization of GABA-A receptor β1 and β3 subunits appeared completely non-overlapping in separate layers of cerebellum. Figure 4C illustrates localization of protein Kv2.1 and AnkyrinG in separate subcellular neuronal compartments. Labeling for the K89/34R R-mAb (IgG2a, red), specific for the Kv2.1 channel, highly expressed in the plasma membrane of the cell body and proximal dendrites (arrows in panel C1) is shown together with labeling for N106/65 (green), an IgG1 mAb specific for AnkyrinG, a scaffolding protein highly expressed in the AIS (arrows in panel C2) and at nodes of Ranvier. Subclass switching N229A/32 (IgG1, GABA-AR α6) to IgG2a, allows comparison with Kv4.2 potassium channel (K57/1, IgG1) in the cerebellum where both are highly expressed in the granule cell layer (Figure 4D). While both are prominently found in the glomerular synapses present on the dendrites of these cells, simultaneous labeling reveals that some cells express both (Figure 4D, magenta) while others appear to predominantly express Kv4.2 (Figure 4D, blue). Labeling for both proteins is in contrast to that for mAb N147/6 (IgG2b) which recognizes all isoforms of the QKI transcription factor and labels oligodendrocytes within the granule cell layer and throughout the Purkinje cell layer (PCL, green). In Figure 4E, localization of pan-QKI (N147/6, IgG2b, blue) is compared with GFAP (N206A/8, IgG1, green) predominantly thought to be in astrocytes. Surprisingly many (but not all) cells co-label both proteins. We also labeled cortical neurons with these two mAbs (pan-QKI in blue, GFAP in green). Multiplex labeling for the neuron-specific Kv2.1 channel, using subclass-switched K89/34R (IgG2a, red) confirms non-neuronal localization of both proteins. Lastly, we labeled for the postsynaptic scaffold protein PSD-93 using R-mAb N18/30R (IgG2a, red), which in the cerebellum is prominently localized to Purkinje cell somata and dendrites (Brenman et al., 1998). As shown in Figure 4F, the R-mAb labeling is consistent with the established localization of PSD-93. Because of subclass switching the N18/30R R-mAb, this labeling can now be contrasted with labeling for the excitatory presynaptic terminal marker VGluT1, labeled with mAb N28/9 (IgG1, blue), which exhibits robust labeling of parallel fiber synapses in the molecular layer, and glomerular synapses in the granule cell layer. Together these results demonstrate the utility of employing subclass-switched R-mAbs to obtain labeling combinations not possible with native mAbs.
 
@@ -87,7 +266,7 @@ One benefit of subclass switching R-mAbs is the ability to perform multiplex imm
 
 **Figure 4.:** (A) A section from neocortex labeled with anti-pan-Nav R-mAb K58/35R (IgG2a, red) at nodes of Ranvier and AIS (arrows), anti-CASPR mAb K65/35 (IgG1, green) at paranodes, and anti-Kv2.1 rabbit polyclonal (KC) antibody (blue) on somata and proximal dendrites. Scale bar = 150 μm. Insets (dashed box) show details of labeling for pan-Nav (red) and CASPR (green) at the node and paranodes (arrows), respectively, at a single node of Ranvier as indicated by box in main panel. (B) A section through cerebellum showing labeling with anti-GABA-AR β1 R-mAb N96/55R (IgG2a, magenta) in the molecular layer (ML), and anti-GABA-AR β3 mAb N87/25 (IgG1, green) in the granule cell layer (GL). PCL = Purkinje cell layer. Scale bar = 150 μm. (C) A section through hippocampus labeled with anti-Kv2.1 R-mAb 89/34R (IgG2a, red) on somata and proximal dendrites, anti-AnkyrinG mAb N106/65 (IgG2b, green) on AIS, and nuclear stain Hoechst 33258 (blue). Scale bar = 150 μm. Panels C1-C3 show magnified details of labeling for pan-Kv2.1 (red) on somata and proximal dendrites (arrows in C1), and anti-AnkyrinG (green) on AIS (arrows in C2). Scale bar = 50 μm (C1–C3). (D) A section through cerebellum labelled with anti-GABA-AR α6 R-mAb K229A/32R (IgG2a, red) in the granule cell layer (GL), anti-pan-QKI mAb N147/6 (IgG2b, green) labeling glial cells in/near the Purkinje cell layer (PCL), and anti-Kv4.2 mAb K57/1 (IgG1, blue) labeling the granule cell layer (GL). Scale bar = 30 μm. (E) A section from neocortex labelled with anti-Kv2.1 R-mAb 89/34R (IgG2a, red) on somata and proximal dendrites of neurons, and anti-GFAP mAb N206A/8 (IgG1, green) and anti-pan-QKI mAb N147/6 (IgG2b, blue) labeling glial cell processes and cell bodies respectively. Scale bar = 15 μm. (F) A section through cerebellum showing labeling with anti-PSD-93 R-mAb N18/30R (IgG2a, red) in the cell bodies and dendrites of Purkinje cells, the nuclear stain Hoechst 33258 (green) and anti-VGluT1 mAb N28/9 (IgG1, blue) in the molecular layer (ML). PCL = Purkinje cell layer. Scale bar = 10 μm.
 
-## Recovery of functional R-mAbs from a non-viable hybridoma
+### Recovery of functional R-mAbs from a non-viable hybridoma
 
 While not a common event, mAb-producing B cell hybridomas can lose their mAb production due to genetic instability (Morrison and Scharff, 1981; Frame and Hu, 1990; Castillo et al., 1994), mycoplasma contamination leading to amino acid depletion and cytopathic effects (Drexler and Uphoff, 2002), or other factors. Non-optimal cryopreservation due to problems during the freezing process itself or inadequate storage conditions can result in non-recoverable frozen seeds. As the method described here for cloning of VH and VL domain sequences from cryopreserved hybridomas does not require expansion of cells in culture prior to RNA extraction, we speculated that it may be possible to use this approach to generate functional R-mAbs from even those hybridoma cell lines that are no longer viable in cell culture.
 
@@ -95,7 +274,7 @@ We had in our cryopreserved hybridoma archive a hybridoma cell line that produce
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/43322/elife-43322-fig5-v2.jpg)
 
-**Figure 5.:** L and VH domain cDNAs from a nonviable hybridoma.(A) Agarose gel analysis of PCR amplified VL and VH domains from cDNA synthesized from RNA extracted from the non-viable D3/71 hybridoma. The panel to the right shows the VL after digestion with the BciVI restriction enzyme to cleave the Sp2/0-Ag14-derived aberrant light chain product. The expected size of mouse IgG VL and VH domains is ≈360 bp, and of the cleaved aberrant VL domain is ≈180 bp. (B) Agarose gel analysis of D3/71 VH and digested VL fragments joined by fusion PCR (F-PCR) to the P1316 joining fragment to create a dual IgG chain cassette. (C) Agarose gel analysis of colony PCR samples of transformants from the of D3/71 R-mAb project. (D) Agarose gel analysis of products of restriction enzyme digestion of D3/71 plasmid DNA with NotI and AscI. The plasmid backbone is seven kbp, and the intact insert comprising the VL and VH domains and the intervening joining fragment is 2.4 kbp.
+**Figure 5.:** (A) Agarose gel analysis of PCR amplified VL and VH domains from cDNA synthesized from RNA extracted from the non-viable D3/71 hybridoma. The panel to the right shows the VL after digestion with the BciVI restriction enzyme to cleave the Sp2/0-Ag14-derived aberrant light chain product. The expected size of mouse IgG VL and VH domains is ≈360 bp, and of the cleaved aberrant VL domain is ≈180 bp. (B) Agarose gel analysis of D3/71 VH and digested VL fragments joined by fusion PCR (F-PCR) to the P1316 joining fragment to create a dual IgG chain cassette. (C) Agarose gel analysis of colony PCR samples of transformants from the of D3/71 R-mAb project. (D) Agarose gel analysis of products of restriction enzyme digestion of D3/71 plasmid DNA with NotI and AscI. The plasmid backbone is seven kbp, and the intact insert comprising the VL and VH domains and the intervening joining fragment is 2.4 kbp.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/43322/elife-43322-fig6-v2.jpg)
 
@@ -117,7 +296,66 @@ There is a growing impetus to enhance research reproducibility by both improving
 
 ## Materials and methods
 
-## Primers
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Cercopithecus aethiops)</td>
+      <td>COS-1</td>
+      <td>ATCC Cat No CRL-1650; PMID: 6260373</td>
+      <td>RRID:CVCL_0223</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>numerous</td>
+      <td></td>
+      <td></td>
+      <td>See Table 2, Supplementary file 1, 2</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p1316 plasmid</td>
+      <td>PMID: 20525357</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Photoshop</td>
+      <td>Adobe Systems</td>
+      <td>RRID:SCR_014199</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Axiovision</td>
+      <td>Carl Zeiss MicroImaging</td>
+      <td>RRID:SCR_002677</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Fiji</td>
+      <td>PMID: 22743772</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Primers
 
 Primer sets for mouse Ig V region amplification and fusion PCR (F-PCR) were used as described previously (Crosnier et al., 2010; Müller-Sienerth et al., 2014). The following primers were used for other PCR steps.
 
@@ -153,11 +391,11 @@ Reverse strand of VH region (IgG1 plasmids): DownAscI = 5’-GGGCAGCAGATCCAGGG
 
 Reverse strand of VH region (IgG2a plasmids): Rev IgG2a = 5’- ACCCTTGACCAGGCATCCTAGAGT- 3’
 
-## RNA preparation from cryopreserved hybridomas and RT-PCR
+### RNA preparation from cryopreserved hybridomas and RT-PCR
 
 The Ambion RNAqueous 96 Extraction kit (Thermo Fisher Cat# AM1920) was used for high throughput RNA extraction. Frozen vials containing 0.5–1 × 107 hybridoma cells per vial were thawed in a 37°C water bath for 5 min, in batches of 20 vials for high through-put purposes. Cells were spun down in a table top centrifuge at 2000 rpm for 5 min, the supernatant was removed, and cells were washed with 1 mL cold PBS. A 250 µL aliquot of this cell suspension, representing 1–3 × 106 cells, was used for RNA extraction according to the manufacturer’s instructions. We replica plated using 4.0 µL of RNA (1/16 of the extract volume) to a second 96 well plate and used the Superscript III Reverse Transcriptase First Strand Synthesis System (Thermo Fisher Cat# 18080051) for high throughput cDNA synthesis using oligo (dT) primers.
 
-## Immunoglobulin V region amplification, BciVI treatment, and fusion PCR
+### Immunoglobulin V region amplification, BciVI treatment, and fusion PCR
 
 Following the cDNA synthesis reaction, we replica plated ≈5% of the volume (1.0 µL of 10-fold dilution) of the cDNA synthesis product to a third 96 well plate to serve as the template for PCR amplification of the IgG VH and VL domain sequences. As such, the templates for the VH and VL domain PCR amplification represented the cDNA yield from ≈3,000–7,500 hybridoma cells. Amplification of Ig V region sequences and fusion PCR (F-PCR) to join VL and VH PCR products were performed as described (Crosnier et al., 2010; Müller-Sienerth et al., 2014) with the noted modifications. Briefly, degenerate primer sets were used to amplify mouse Ig kappa VL and VH sequences using PFU Ultra II Fusion HS DNA polymerase (Agilent Technologies Cat# 600670) and Advantage 2 Polymerase Mix (ClonTech Cat# 639201) for VL and VH amplification, respectively. PCR conditions for VL amplification were: 95°C for 5 min; 5 cycles of 95°C for 20 s, 60°C for 20 s, 72°C for 30 s; 19 cycles of 95°C for 20 s, 60.5°C for 20 s with 0.5°C decrement per cycle, 72°C for 30 s; 10 cycles of 95°C for 20 s, 55°C for 20 s, 72°C for 30 s; 72°C for 15 min. PCR conditions for VH amplification were: 95°C for 5 min; 5 cycles of 95°C for 45 s, 62°C for 30 s, 72°C for 1 min; 19 cycles of 95°C for 45 s, 64.5°C for 30 s with 0.5°C decrement per cycle, 72°C for 1 min; 10 cycles of 95°C for 45 s, 55°C for 30 s, 72°C for 1 min; 72°C for 15 min. VL PCR products (7.0 µL per reaction) were digested with 5 units of the restriction enzyme BciVI (BfuI) (Thermo Fisher Cat# ER1501) in a 20 µL reaction at 37°C for 2 hr. The enzyme was inactivated by heating to 80°C for 20 min.
 
@@ -165,32 +403,134 @@ In preparation for fusion of the VL and VH PCR products, a joining fragment was 
 
 VL (BciVI restriction enzyme digested), the joining fragment, and VH PCR products were joined via F-PCR in a 96-well format. We observed that purification of VL and VH PCR products was not necessary. Each 50 µL reaction consisted of the following: 0.2 µM of primers 51 and 52 (Crosnier et al., 2010; Müller-Sienerth et al., 2014), 0.2 mM dNTPs, 1.5 µL VL (BciVI digested), 0.5 µL VH, 0.5 µL purified joining fragment (50 ng), and 1.0 µL PFU Ultra II Fusion HS DNA polymerase. PCR conditions were: 95°C for 2 min; 11 cycles of 95°C for 45 s, 63°C for 30 s, 72°C for 5 min; 7 cycles of 95°C for 45 s, 62°C for 30 s with 1°C decrement per cycle, 72°C for 5 min, 95°C for 45 s; 26 cycles of 56°C for 30 s, 72°C for 5 min; 72°C for 15 min.
 
-## Cloning of immunoglobulin variable domain regions into a dual promoter expression plasmid
+### Cloning of immunoglobulin variable domain regions into a dual promoter expression plasmid
 
 F-PCR products were digested with FastDigest NotI and AscI (Thermo Fisher Cat# ER0595 and ER1891, respectively) at 37°C for 20 min, followed by inactivation at 80°C for 5 min and column purification (Qiagen/QiaQuick PCR Purification Cat# 28106). The P1316 plasmid was also NotI/AscI digested and gel purified (Qiagen/QiaQuick Gel Extraction Cat# 28706). P1316 is a derivative of the pTT3 expression vector (Durocher et al., 2002) and consists of (5’ to 3’): a CMV promoter, the mouse V kappa leader sequence, a NotI restriction site, an insert consisting of VL/joining fragment/VH, and the mouse IgG1 CH sequence amplified from mouse genomic DNA, flanked by AscI and XbaI restriction sites (Crosnier et al., 2010; Müller-Sienerth et al., 2014). Ligation was performed overnight at 16°C with T4 DNA ligase (Thermo Fisher Cat# 15224017) using 20 ng insert and 20 ng vector, a 3:1 molar ratio. Half of each ligation reaction was used to transform 25 µL of Mach I chemically competent E. coli. (Thermo Fisher Cat# C862003). Cells and DNA were incubated on ice for 30 min, heat shocked at 42°C for 30 s, incubated on ice for 2 min, and allowed to recover for 1.0 hr in 250 µL SOC medium in a 37°C shaking incubator. The cells were spun in a centrifuge at 3000 rpm (≈950 x g) for 2 min and the supernatant was removed until 150 µL remained. Cells were resuspended, and the entire volume was plated on LB plates containing 100 µg/mL ampicillin and incubated overnight at 37°C.
 
-## Colony PCR, restriction analysis and sequencing of R-mAb clones
+### Colony PCR, restriction analysis and sequencing of R-mAb clones
 
 Colony PCR was performed to identify E. coli colonies that contained the full-length, 2.4 kb Ig cassette. Colonies were diluted in 96-well plates containing 50 µL water and patch plates were made for later recovery of positive clones. 2 µL of diluted colony was used in each PCR. Conditions were 94°C for 5 min; 23 cycles of 94°C for 20 s, 58°C for 30 s, 72°C for 2.5 min; 72°C for 10 min. For additional confirmation of the presence of the full-length Ig cassette, plasmid DNA was isolated from PCR positive clones and subjected to restriction enzyme digestion with NotI/AscI at 37°C for 20 min followed by agarose gel electrophoresis. The VL and VH regions of functional R-mAbs were subjected to sequencing in both orientations to generate a permanent archive. The primers ‘UpNotI’ and ‘Seq_VL_Rev_IgG2a’ were used for VL domain sequencing, and the ‘VH seq forward’, and either ‘DownAscI’ or ‘Rev IgG2a’ for sequencing of VH regions in the IgG1 or IgG2a expression plasmids, respectively.
 
-## Generation of a mouse IgG2a expression vector
+### Generation of a mouse IgG2a expression vector
 
 The mouse γ2a CH domain was amplified from the cDNA preparation that was obtained from the K28/43 (RRID: AB_2292909) hybridoma (Rasband et al., 2002; Shibata et al., 2003) that was used for cloning of the K28/43 VL and VH domains. PCR conditions were: 94°C for 5 min; 29 cycles of 94°C for 30 s, 65°C for 30 s, 72°C for 30 s. The forward primer included an AscI restriction site and the reverse primer included an XbaI restriction site to facilitate cloning into the K28/43 IgG1 recombinant R-mAb plasmid. The K28/43 IgG1 recombinant R-mAb plasmid was derived from the P1316 plasmid (Crosnier et al., 2010) by restriction enzyme-based cloning of K28/43 variable region sequences as described above. The IgG2a CH PCR product and the K28/43 IgG1 recombinant plasmid were both digested with AscI and XbaI restriction enzymes (New England BioLabs Cat# R0558 and R0145, respectively) and column purified (Qiagen/QiaQuick PCR Purification Cat# 28106) or agarose gel purified, respectively (Qiagen/QiaQuick Gel Extraction Cat# 28706). Because XbaI is methylation sensitive, the K28/43 IgG1 plasmid was sourced from dam-/dcm- E. coli (New England Biolabs Cat# C2925). T4 DNA ligase (New England Biolabs Cat# M0202) was used to insert the IgG2a CH fragment into the digested K28/43R plasmid to generate a K28/43 IgG2a R-mAb plasmid, which was confirmed by DNA sequencing.
 
-## R-mAb expression in mammalian cells
+### R-mAb expression in mammalian cells
 
 COS-1 cells (ATCC Cat No CRL-1650; RRID:CVCL_0223) were used for R-mAb expression. To rule out inter-species contamination, cells were authenticated at ATCC as being from African Green Monkey by a PCR based method to detect species-specific variants of the cytochrome C oxidase I gene (COI analysis). Cells were tested in house for mycoplasma contamination using the MycoAlert Mycoplasma Detection Kit (Lonza Catalog#: LT07-318). For production of recombinant mAbs in mammalian cell culture, 3 × 105 COS-1 cells were plated on 35 mm tissue culture dishes and cultured overnight in DMEM (high glucose/pyruvate, Thermo Fisher Cat# 11995065) with 10% Fetal Clone III (HyClone Cat# SH30109.03) and 100 µg/ml penicillin/streptomycin (Thermo Fisher Cat# 15140122). Cells were then transfected with a 1:1 ratio of plasmid (1 µg):Lipofectamine 2000 (1 µL) (Thermo Fisher Cat# 11668019) diluted in Opti-MEM reduced serum medium (Thermo Fisher Cat# 31985070). Following an overnight incubation, the transfection solution was replaced with culture medium, and the cells incubated for an additional 3–6 days, at which time the conditioned medium was collected as R-mAb tissue culture supernatant (TC supe) for analysis. In certain cases, R-mAbs were produced from COS-1 cells cultured in 12 well plates, using proportionally reduced amounts of cells (1.5 × 105) plasmid (0.5 µg):Lipofectamine 2000 (0.5 µL) and Opti-MEM.
 
-## COS-1 cell immunofluorescence immunocytochemistry validation assay
+### COS-1 cell immunofluorescence immunocytochemistry validation assay
 
 R-mAb TC supes were screened for immunoreactivity in an immunofluorescence assay against transiently transfected COS-1 cells cultured in 96-well plates. COS-1 cells were plated in black, clear bottom 96-well plates (Greiner Cat# 655090) at a density of 4,700 cells/well. After overnight incubation, each well received 50 ng plasmid DNA encoding the R-mAb target protein plus Lipofectamine 2000 at a 1:1 ratio as described above. On day three post-transfection, cells were washed three times with DPBS (138 mM NaCl, 2.67 mM KCl, 1.47 mM KH2PO4, 8.1 mM Na2HPO4, 1 mM CaCl2 and 1 mM MgCl2), pH 7.4 and then fixed using 3.0% formaldehyde (prepared fresh from paraformaldehyde) in in DPBS plus 0.1% Triton X-100 on ice for 20 min. Cells were washed three times with DPBS/0.1% Triton X-100, blocked with Blotto/0.1% Triton X-100 for 1 hr, and stored in DPBS/0.02% sodium azide. For primary antibody labeling, R-mAb TC supes were used without dilution and hybridoma-generated mAb TC supe controls (see Table 2 for details of non-R-mAb Abs used in this study) were diluted 1:10 in COS-1 cell culture medium. Each R-mAb was tested alone and in combination with the corresponding hybridoma-generated mAb TC supe. Primary antibodies were incubated at room temperature for 1 hr and cells were washed 3 × 10 min with Blotto/0.1% Triton X-100. Secondary labeling was performed at room temperature for 30 min using subclass-specific, anti-mouse secondary antibodies conjugated to Alexa Fluors (Thermo Fisher, Cat#/IgG subclass/Alexa Fluor dye conjugates: (A-21121/IgG1/488 and A-21241/IgG2a/647) and diluted to 1.3 µg/mL in Blotto/0.1% Triton X-100. Hoechst 33342 (Thermo Fisher Cat# H3570) was used at 0.1 µg/mL in the secondary antibody cocktail to stain nuclear DNA. Cells were washed 3 × 10 min with DPBS/0.1% Triton X-100. Imaging was performed using a Zeiss M2 AxioImager microscope. Images were processed using Axiovision (Carl Zeiss Microimaging, RRID:SCR_002677 and Fiji (NIH, RRID:SCR_002285) software.
 
+**Table 2.**
+ Non-R-mAb antibodies used in this study.Table lists Abs used in this study outside of the R-mAbs whose generation is described here. For each Ab the name, immunogen used in Ab generation, source and RRID number in the Antibody Registry, form and concentration/dilution used, and specific use in this paper is detailed.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibody</th>
+      <th>Immunogen</th>
+      <th>Manufacturer information</th>
+      <th>Concentration/dilution used</th>
+      <th>Figures</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>KC</td>
+      <td>Synthetic peptide aa 837–853 of rat Kv2.1</td>
+      <td>Rabbit pAb, In-house (Trimmer Laboratory), RRID:AB_2315767</td>
+      <td>Affinity purified, 1:100</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>PSD-95</td>
+      <td>Fusion protein aa 77–299 of human PSD-95</td>
+      <td>Rabbit pAb, In-house (Trimmer Laboratory), RRID:AB_2750832</td>
+      <td>Affinity purified, 1:150</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>K28/43</td>
+      <td>Fusion protein aa 77–299 of human PSD-95</td>
+      <td>Mouse IgG2a mAb, NeuroMab RRID:AB_10698024</td>
+      <td>Tissue culture supernatant, 1:5</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>K28/86</td>
+      <td>Fusion protein aa 77–299 of human PSD-95</td>
+      <td>Mouse IgG1 mAb, NeuroMab RRID:AB_10698179</td>
+      <td>Tissue culture supernatant, 1:5</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>K57/1</td>
+      <td>Synthetic peptide aa 209–225 of human Kv4.2</td>
+      <td>Mouse IgG1 mAb, NeuroMab RRID:AB_10672254</td>
+      <td>Tissue culture supernatant, 1:5</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>K65/35</td>
+      <td>Fusion protein aa 1308–1381 of rat CASPR</td>
+      <td>Mouse IgG1 mAb, NeuroMab, RRID:AB_10671175</td>
+      <td>Tissue culture supernatant, 1:5</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>K89/34</td>
+      <td>Synthetic peptide aa 837–853 of rat Kv2.1</td>
+      <td>Mouse IgG1 mAb, NeuroMab RRID:AB_10672253</td>
+      <td>Tissue culture supernatant, 1:10</td>
+      <td>6</td>
+    </tr>
+    <tr>
+      <td>N28/9</td>
+      <td>Fusion protein aa 492–560 of rat VGluT1</td>
+      <td>Mouse IgG1 mAb, NeuroMab RRID:AB_10673111</td>
+      <td>Tissue culture supernatant, 1:5</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>N87/25</td>
+      <td>Fusion protein aa 370–433 of mouse GABA-A-receptor β3 subunit</td>
+      <td>Mouse IgG1 mAb, NeuroMab RRID:AB_10673389</td>
+      <td>Tissue culture supernatant, 1:5</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>N106/65</td>
+      <td>Full-length recombinant human Ankyrin-G</td>
+      <td>Mouse IgG2a mAb, NeuroMab RRID:AB_10673449</td>
+      <td>Tissue culture supernatant, 1:5</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>N147/6</td>
+      <td>Fusion protein aa 1–341 (full-length) of human QKI-5</td>
+      <td>Mouse IgG2b mAb, NeuroMab RRID:AB_10671658</td>
+      <td>Tissue culture supernatant, 1:5</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>N206A/8</td>
+      <td>Synthetic peptide aa 411–422 of human GFAP</td>
+      <td>Mouse IgG1 mAb, NeuroMab RRID:AB_10672298</td>
+      <td>Tissue culture supernatant, 1:5</td>
+      <td>4</td>
+    </tr>
+  </tbody>
+</table>
+
 For higher resolution imaging, COS-1 cells were plated on poly-L-lysine coated #1.5 glass cover slips and cultured overnight followed by transfection with plasmids encoding the target protein. Cells were fixed and immunolabeled as described in the previous section. Images were acquired on a Zeiss AxioImager M2 microscope using a 40x/0.8 NA plan-Apochromat oil-immersion objective and an AxioCam MRm digital camera. Optical sections were acquired using an ApoTome two structured illumination system (Carl Zeiss MicroImaging). Imaging and post processing were performed in Axiovision and Photoshop (Adobe Systems; RRID:SCR_014199).
 
-## Multiplex immunofluorescence labeling of immunoblots
+### Multiplex immunofluorescence labeling of immunoblots
 
 Multiplex immunofluorescence labeling of immunoblots using mouse IgG subclass-specific secondary antibodies was performed as described previously (Manning et al., 2012). In brief, samples were generated from COS-1 cells transiently transfected to express individual target proteins essentially as described above for the immunofluorescence experiments except that the cells were cultured in 35 mm tissue cultures dishes. Transfected COS-1 cells were washed once with ice-cold PBS and lysed with 150 µL of ice-cold lysis buffer containing 1% v/v Triton X-100, 150 mM NaCl, 1 mM EDTA, 50 mM Tris-HCl (pH 7.4), 1 mM sodium orthovanadate, 5 mM NaF, 1 mM PMSF and a protease inhibitor cocktail for 10 min at 4°C (Shi et al., 1994). The cell lysates were centrifuged at 12,000 x g at 4 ˚C for 10 min. The cell lysate supernatants were mixed with 150 µL of 2X RSB and size-fractionated by 7.5% SDS–PAGE. Following SDS-PAGE, proteins were transferred to nitrocellulose membranes (Bio-Rad Cat# 1620115), which were blocked for 1 hr with Blotto (3% w/v nonfat milk in Tris-buffered saline (TBS: 50 mM Tris, pH 7.5, 150 mM NaCl) plus 0.1% v/v Tween-20 followed by 2 hr or overnight incubation with primary antibodies. Primary antibodies were mAb TC supes diluted 1:10, non-diluted R-mAb TC supes, and an in-house anti-PSD-95 rabbit polyclonal antibody raised against a GST fusion protein, GSTKAP1.13, containing amino acids 77–299 of human PSD-95 [clone 2, (Kim et al., 1995)] and that crossreacts with SAP97 (see Table 2 for details of non-R-mAb Abs used in this study). After three washes with Blotto, the membranes were incubated with the appropriate subclass-specific Alexa Fluor conjugated secondary antibodies (Manning et al., 2012) for 1 hr. After three washes with TBS containing 0.1% v/v Tween-20, the immunoblots were visualized directly on a FluorChem Q imager (Cell Biosciences Cat# DE500-FCQ). Alternatively, crude rat brain membranes (RBM) (Shi et al., 1994) were subjected to immunoblotting as described above except that a single RBM sample (3 mg protein) were size fractionated on a curtain gel, and after transfer to nitrocellulose the membrane was cut into 30 strips, each containing 100 μg of RBM protein. Immunolabeling was detected on autoradiography film after treatment of strip immunoblots with HRP-conjugated anti-mouse IgG-specific secondary antibody and enhanced chemiluminescence (ECL).
 
-## Multiplex immunofluorescence labeling of brain sections
+### Multiplex immunofluorescence labeling of brain sections
 
 Multiplex immunofluorescence labeling of rat brain sections was performed essentially as described previously (Manning et al., 2012; Bishop et al., 2015). All experimental procedures were approved by the UC Davis Institutional Animal Care and Use Committee and conform to guidelines established by the National Institutes of Health (NIH). Rats were anesthetized with sodium pentobarbital (Fatal-Plus solution, 100 mg/kg sodium pentobarbital) and perfused transcardially with 100 mL of phosphate buffered saline (PBS), containing 10 units/mL heparin, pH 7.4, followed by 400 mL of 4% formaldehyde (prepared fresh from paraformaldehyde) in 0.1 M sodium phosphate buffer or PB (pH 7.4). The brains were removed, cryoprotected for 48 hr in 30% sucrose, frozen in a bed of pulverized dry ice, and then cut into 30 μm sections on a freezing-stage sliding microtome. Sections were collected in 0.1 M PB and processed immediately for immunohistochemistry. Free-floating brain sections were blocked with 10% goat serum in 0.1 M PB containing 0.3% Triton X-100 (vehicle) for 1 hr at RT and then incubated overnight at 4°C in vehicle containing different combinations of primary antibodies (see Table 2 for details of non-R-mAb Abs used in this study). The following day sections were washed 4 × 5 min each with vehicle, and then incubated for 1 hr at RT in mouse IgG subclass-specific or anti-rabbit Alexa-conjugated secondary antibodies as described previously (Manning et al., 2012; Strassle et al., 2005). Sections were then washed 2 × 5 min each with 0.1 M PB, 2 × 5 min each with 0.05 M PB and mounted on gelatin-coated microscope slides and air dried. Sections were cover slipped after adding ProLong Gold Antifade Mountant (Thermo Fisher Scientific catalog # P36930). Images were obtained on a Zeiss Axiovert 200 microscope with Apotome. Imaging and post-imaging processing was performed in Zeiss Axiovision and Adobe Photoshop software, taking care to maintain any linear differences in signal intensities present in the original samples.

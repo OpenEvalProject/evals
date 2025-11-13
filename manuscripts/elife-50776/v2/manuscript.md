@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.50776.001 The functional mechanisms of membrane proteins are extensively investigated with cysteine mutagenesis. To complement cysteine-based approaches, we engineered a membrane protein with thiol-independent crosslinkable groups using azidohomoalanine (AHA), a non-canonical methionine analogue containing an azide group that can selectively react with cycloalkynes through a strain-promoted azide-alkyne cycloaddition (SPAAC) reaction. We demonstrate that AHA can be readily incorporated into the Shaker Kv channel in place of methionine residues and modified with azide-reactive alkyne probes in Xenopus oocytes. Using voltage-clamp fluorometry, we show that AHA incorporation permits site-specific fluorescent labeling to track voltage-dependent conformational changes similar to cysteine-based methods. By combining AHA incorporation and cysteine mutagenesis in an orthogonal manner, we were able to site-specifically label the Shaker Kv channel with two different fluorophores simultaneously. Our results identify a facile and straightforward approach for chemical modification of membrane proteins with bioorthogonal chemistry to explore their structure-function relationships in live cells.
+The functional mechanisms of membrane proteins are extensively investigated with cysteine mutagenesis. To complement cysteine-based approaches, we engineered a membrane protein with thiol-independent crosslinkable groups using azidohomoalanine (AHA), a non-canonical methionine analogue containing an azide group that can selectively react with cycloalkynes through a strain-promoted azide-alkyne cycloaddition (SPAAC) reaction. We demonstrate that AHA can be readily incorporated into the Shaker Kv channel in place of methionine residues and modified with azide-reactive alkyne probes in Xenopus oocytes. Using voltage-clamp fluorometry, we show that AHA incorporation permits site-specific fluorescent labeling to track voltage-dependent conformational changes similar to cysteine-based methods. By combining AHA incorporation and cysteine mutagenesis in an orthogonal manner, we were able to site-specifically label the Shaker Kv channel with two different fluorophores simultaneously. Our results identify a facile and straightforward approach for chemical modification of membrane proteins with bioorthogonal chemistry to explore their structure-function relationships in live cells.
 
 ## Introduction
 
@@ -24,11 +24,23 @@ Traditionally, cysteine mutagenesis experiments have been carried out by assessi
 
 The goal of the present study was to develop a facile and generalizable strategy to incorporate a bioorthogonal (a chemical group which is absent in vivo) crosslinkable amino acid into membrane proteins for installation of biophysical reporters that could then be combined with cysteine mutagenesis for the arsenal of approaches outlined above. We used an alternate to the nonsense suppression approach where an essential amino acid is simply replaced by supplying excess of an non-canonical analogue, resulting in the global replacement of the natural amino acid in the newly synthesized protein (Budisa, 2004; Johnson et al., 2010; Link and Tirrell, 2005). One of the most successful examples of this strategy is the replacement of methionine residues by incorporation of selenomethionine into proteins for X-ray crystallography (Cohen and Cowie, 1957; Saotome et al., 2016; Yang et al., 1990). Incorporation of methionine analogues into proteins has been particularly successful due to the unique conformational flexibility in the amino acid binding site of methionyl tRNA synthetase (Nadarajan et al., 2013; van Hest and Tirrell, 1998) and indispensable dependence of most eukaryotic systems on external sources for this essential amino acid. To install a bioorthogonally crosslinkable amino acid, we chose azidohomoalanine (AHA) (Figure 1A) (Kiick et al., 2002), a non-canonical amino acid that is nearly isosteric with methionine (Figure 1A) and contains an azide group capable of reacting selectively with strained alkynes (Figure 1B). Indeed, AHA has previously been incorporated into proteins to identify and visualize newly synthesized proteins after attachment of biotin (Dieterich et al., 2006) or fluorescent probes (Dieterich et al., 2010) using bioorthogonal azide-alkyne cycloaddition reactions (Agard et al., 2004; Rostovtsev et al., 2002; Tornøe et al., 2002), approaches that have been successful in both prokaryotic and eukaryotic systems (Ma and Yates, 2018).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/50776/elife-50776-fig1-v2.jpg)
+
+**Figure 1.:** (A) Structures of Methionine and Azidohomoalanine. (B) A schematic for the strain promoted azide alkyne cycloaddition (SPAAC) reaction. (C) Transmembrane region of a single subunit of a Kv channel containing voltage sensing domain (red) and pore domain (pink). Methionine residues are colored in cyan. Inset shows tetrameric structure of the Kv1.2–2.1 paddle chimera crystal structure, 2R9R (Long et al., 2007). (D) Structures of biotin probes; DBCO-sulfo-biotin (top) and NHS-sulfo-biotin (bottom). (E–F) Anti-myc western blots for the surface fraction (top) and total cell protein (bottom) isolated from Xenopus laevis oocytes injected with ShakerΔ5-V478W-myc (Wild-type, E) or the mutant lacking the methionine residues facing the extracellular side (M356A/M448L, F). (G) Densitometry plots of anti-myc western blots for the surface fraction of the wild-type Shaker Kv channel in the absence or presence of AHA. A.U. refers to arbitrary units for absolute chemiluminescence intensity. Boxes represent SEM for n = 4–6. The small open squares and black horizontal lines represent the mean and weighted mean values, respectively, for the chemiluminescence intensity. Vertical black lines represent the full range of data.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50776/elife-50776-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Xenopus laevis oocytes expressing the Shaker Kv channel are incubated in the absence or presence of 4 mM AHA and probed with azide or amine-reactive biotin probes (1 mM each) to label the cell surface proteins. Subsequently, oocytes are lysed, and biotinylated proteins are pulled down using NeutrAvidin agarose beads followed by anti-myc western blotting to detect the myc-tagged Shaker Kv channel containing AHA in place of methionine residues.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50776/elife-50776-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** A.U. refers to arbitrary units for absolute chemiluminescence intensity. Box represents SEM for n = 8.
+
 Using the Shaker voltage-activated potassium (Kv) channel as a test case, we find that AHA can be readily incorporated into the channel and enables site-specific installation of fluorophores in the protein via a catalyst-independent strain-promoted azide-alkyne cycloaddition (SPAAC) reaction in live Xenopus laevis oocytes (Figure 1B) (Agard et al., 2004). We show that fluorophores attached to AHA can be used to track conformational changes of the voltage-sensor in a manner analogous to cysteine-based methods. Finally, we implement a straightforward strategy to carry out two-color labeling of membrane proteins in a site-specific manner using a combination of AHA incorporation and cysteine mutagenesis.
 
 ## Results
 
-## Incorporation of AHA into the Shaker Kv channel
+### Incorporation of AHA into the Shaker Kv channel
 
 We began by testing whether AHA could be introduced into the Shaker Kv channel, an extensively studied ion channel protein that opens and closes in response to changes in membrane voltage (Bezanilla, 2000; Horne and Fedida, 2009; Swartz, 2008). Shaker is an oligomeric integral membrane protein containing four identical subunits, with each subunit containing six transmembrane (TM) segments. The S1-S4 segments from each subunit form peripheral voltage-sensing domains, while the S5-S6 segments from all four subunits constitute the central pore domain (Long et al., 2007) (Figure 1C). Due to a close homology with other eukaryotic Kv channels and optimal expression in heterologous expression systems, Shaker has been extensively subjected to a variety of chemical modifications through cysteine mutagenesis (Gandhi et al., 2003; Gonzalez et al., 2005; Gross and MacKinnon, 1996; Holmgren et al., 1998; Horne and Fedida, 2009; Larsson et al., 1996; Liu et al., 1996). In addition, many non-canonical amino acids have been successfully incorporated into the Shaker Kv channel (Infield et al., 2018; Kalstrup and Blunck, 2013; Pless et al., 2015; Tao et al., 2010).
 
@@ -38,11 +50,19 @@ Next, we tested whether AHA replaces only methionine residues in the Shaker Kv c
 
 To assess the efficiency of AHA incorporation into the Shaker Kv channel, we used densitometry to analyze the anti-myc western blots from wild-type protein (Figure 1E). In general, AHA incorporation had no detectable effect on the total protein expression of the Shaker Kv channel (Figure 1—figure supplement 2). Moreover, AHA supplementation does not alter the surface expression of the Shaker Kv channel, as the amount of protein pulled down with NHS-sulfo-biotin, which provides an estimate for the total expression of Shaker on the surface of oocytes, was similar in the absence and presence of AHA (Figure 1G). In contrast, DBCO-sulfo-biotin pulls down a comparable amount of protein in the presence of AHA and fails to pull down any protein in the absence of AHA in repeated trials (Figure 1G). We did observe some variability in the pull down with DBCO-sulfo-biotin as compared to NHS-sulfo-biotin, suggesting that the extent of AHA incorporation can vary between different batches of oocytes.
 
-## AHA incorporation does not alter the gating properties of the Shaker Kv channel
+### AHA incorporation does not alter the gating properties of the Shaker Kv channel
 
 AHA-modification of the Shaker Kv channel will replace up to 12 methionine residues with the non-canonical amino acid in regions of the protein known to be critical for voltage-dependent gating (Figure 1C) (Bezanilla, 2008; Swartz, 2008). To explore whether AHA incorporation alters the gating behavior of the Shaker Kv channel, we initially expressed the channel in the absence and presence of AHA and used the two-electrode voltage clamp recording technique to obtain voltage-activation relationships from macroscopic ionic currents with K+ as the charge carrier (See Materials and methods). When the membrane voltage was stepped between −100 mV and +50 mV, we observed robust voltage-activated K+ currents in the presence and absence of AHA, with voltage-activation relationships that were not discernably different (Figure 2A,B), suggesting that AHA incorporation does not detectably alter the overall process of voltage-dependent gating in the Shaker Kv channel. Activation of the voltage-sensing domains in the Shaker Kv channel involves the movement of positively charged arginine residues, which can be directly measured as non-linear capacitive currents known as gating currents (Bezanilla et al., 1991). Using the V478W non-conducting mutant of the Shaker Kv channel (Hackos et al., 2002; Kitaguchi et al., 2004), we also measured gating currents in the presence and absence of AHA and obtained gating charge (Q)-voltage (V) relationships that were similar (Figure 2C,D), suggesting that voltage-sensor activation was also not detectably altered with AHA incorporation. Finally, we tested whether AHA incorporation alters the sensitivity of the Shaker Kv channel to a tarantula toxin that binds to the S1-S4 voltage-sensing domain to allosterically inhibit opening of the channel in response to membrane depolarization. Using a construct of the Shaker Kv channel that is sensitive to the tarantula toxin GxTx1E (ShakerΔ5) (Herrington et al., 2006; Milescu et al., 2009; Milescu et al., 2013), we observed that the toxin produced robust and indistinguishable shifts of voltage-activation relationships to more positive voltages, both in the absence and presence of AHA (Figure 2—figure supplement 1). Collectively, these results demonstrate that global replacement of methionine residues with AHA in the Shaker Kv channel does not result in detectable alterations in the gating properties of the channel.
 
-## Site-specific installation of fluorophores into AHA-modified Shaker Kv channels
+![Figure 2.](https://cdn.elifesciences.org/articles/50776/elife-50776-fig2-v2.jpg)
+
+**Figure 2.:** (A) Ionic currents elicited by voltage steps for oocytes injected with Shaker-IR in the absence (left) or presence of AHA (right). Holding voltage = −90 mV, tail voltage = −60 mV. (B) G-V relationships obtained from tail currents at −60 mV in the absence (open circles) and presence of AHA (closed circles). All data points represent mean ± SEM (n = 3) (C) Gating currents obtained from Shaker-V478W, a non-conducting mutant of Shaker, in the absence (top) or presence of AHA (bottom). (D) Q-V relationships obtained from the gating currents elicited after stepping to different voltages from a holding voltage of −90 mV in the absence (open circles) and presence of AHA (closed circles).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50776/elife-50776-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A–F) Representative traces for the ionic currents elicited in the absence (black traces) or presence of 2.5 μM GxTx1E (red traces) at −10 mV (A–B), 50 mV (C–D) and 100 mV (E–F) from oocytes injected with ShakerΔ5 (No AHA, left and AHA, right), holding voltage = −90 mV, tail voltage = −60 mV. (G–H) Conductance-voltage (relationships obtained in the absence (black, control) and presence of GxTx1E (red, toxin) for oocytes injected with ShakerΔ5 in the absence (G) or presence (H) of AHA. G-V relations in control solution were obtained from tail currents elicited at −60 mV after stepping to test voltages and normalized to the maximal value following voltage steps to +100 mV. In the presence of toxin (red), steady state currents were used to calculate the G-V relationships due to rapid kinetics of the tail currents and normalized to the maximal conductance at +100 mV in control solution. All data points represent mean ± SEM (n = 3).
+
+### Site-specific installation of fluorophores into AHA-modified Shaker Kv channels
 
 After successfully labeling the Shaker Kv channel with cyclooctyne-conjugated biotin probes through AHA, we explored the possibility of using the SPAAC reaction to install environmentally-sensitive fluorophores in a site-specific manner and monitor the conformational dynamics of the channel using voltage-clamp fluorometry (VCF) (Cha and Bezanilla, 1997; Mannuzzu et al., 1996). This technique has been widely used to investigate a variety of membrane proteins, including the Shaker Kv channel (Horne and Fedida, 2009), after installation of different thiol-reactive fluorophores using cysteine mutagenesis (Priest and Bezanilla, 2015). For site-specific fluorescent labeling, we generated the Shaker-M356 construct (M356/M448L), where the methionine residue in the pore domain (M448) was mutated to leucine, leaving a single accessible methionine residue (M356) on the extracellular side of the channel. M356 is located at the N-terminus of the S4 helix within the voltage-sensing domain (Figure 1C), is accessible to extracellular thiol-reactive compounds when mutated to cysteine (Cha and Bezanilla, 1997; Larsson et al., 1996; Mannuzzu et al., 1996) and fluorophores attached at this position exhibit changes in fluorescence as the protein undergoes conformational changes in response to changes in membrane voltage (Cha and Bezanilla, 1997; Mannuzzu et al., 1996). To facilitate gating current measurements, all voltage clamp fluorometry experiments were carried out with the V478W non-conducting mutant. Since the advent of the SPAAC reaction, a variety of cyclooctynes with varying size, hydrophobicity and reactivity towards the azide group have been synthesized (Dommerholt et al., 2016; Sletten and Bertozzi, 2011). In addition, many cyclooctyne conjugated fluorophores have been generated and are commercially available (Supplementary files 1 and 2), although in some instances their solubility is limited in aqueous solutions (e.g. TAMRA-DBCO). In order to maximize the aqueous solubility of cyclooctyne-fluorophore conjugate, we chose to work with a relatively polar and charged fluorophore, Alexa 488 (Hughes et al., 2014).
 
@@ -54,9 +74,15 @@ We began by measuring baseline fluorescence signals at a holding voltage of −9
 
 Next, we investigated whether voltage-sensor activation would produce a change in the fluorescence of AF488-DBCO labeled oocytes expressing Shaker-M356. As the oocyte membrane was depolarized to positive voltages from a holding voltage of −90 mV, we observed readily detectable increase in fluorescence signals that saturated at positive membrane voltages and returned to the baseline value on membrane repolarization (Figure 3D). We observed no detectable change in fluorescence with AF488-DBCO labeled oocytes expressing the M356A mutant (M356A/M448L) in the presence of AHA (Figure 3E), demonstrating that the voltage-dependent fluorescence response specifically originates from AF488-DBCO conjugated at the M356 position in the Shaker Kv channel. Similarly, oocytes expressing Shaker-M356 in the absence of AHA and labeled with AF488-DBCO did not produce any change in fluorescence on membrane depolarization (Figure 3F). Taken together, these results demonstrate that AHA-modified Shaker Kv channels can be labeled with azide-reactive fluorophores in a site-specific and chemoselective manner to track the conformational changes of the channel in response to changes in membrane voltage.
 
-## Comparing fluorescence responses with fluorophores installed into Shaker using AHA and cysteine
+### Comparing fluorescence responses with fluorophores installed into Shaker using AHA and cysteine
 
 Having established AHA as a unique chemical handle for site-specific fluorescent labeling of the Shaker Kv channel, we wanted to compare the properties of AHA-mediated fluorescent labeling of the channel with the well-established cysteine-based method. To monitor the fluorescence response from a single methionine or cysteine residue placed at identical sites in the protein, we designed a construct, Shaker-M356* (M356/M448L/C245V/C462A) that has two endogenous cysteines (C245V and C462A) along with the methionine (M448L) residue in the pore domain mutated. For AHA-mediated labeling, we used the native methionine at M356 position and for the cysteine-mediated labeling, we mutated this methionine to a cysteine and generated the Shaker-M356C construct (M356C/M448L/C245V/C462A). We chose AF488-C5-maleimide to carry out cysteine mediated labeling as the linker length in the two probes is similar (Figure 4—figure supplement 1). Although our comparison was done using the same fluorophore, labeling sites and background constructs, the residue at the labeling site and attachment chemistries are necessarily different, and therefore the results are not expected to be identical. In addition, the M356C mutant of the Shaker Kv channel has been shown to slow voltage sensor activation and shift the Q-V relationship to more positive voltages (Cha and Bezanilla, 1997), perturbations not observed with replacement of M356 with AHA (Figure 2C,D). Oocytes injected with Shaker-M356* and Shaker-M356C were labeled with the complementary azide or thiol-reactive fluorophores using identical protocols (See Materials and methods). For both AF488-DBCO and AF488-C5-maleimide labeled oocytes, we observed an increase in fluorescence intensity with membrane depolarization that saturated at positive membrane voltages (Figure 4A,B), indicating that the labeling chemistry does not affect the qualitative behavior of the fluorophore in response to voltage-dependent conformational changes in the Shaker Kv channel.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50776/elife-50776-fig4-v2.jpg)
+
+**Figure 4.:** (A–B) Representative traces for gating currents (black) and fluorescence responses (green) obtained from oocytes injected with Shaker-M356* (M356/M448L/C245V/C462A) (A) or Shaker-M356C (M356C/M448L/C245V/C462A) (B) after labeling with AF488-DBCO or AF488-C5-Maleimide, respectively. (C–D) Relationship between total gating charge displaced (Q, black) and change in fluorescence intensity (F, green) at steady state as a function of voltage for oocytes injected with Shaker-M356*, n = 18 (C) or Shaker-M356C, n = 5 (D). All data points represent mean ± SEM. (E–H) Kinetics of displacement of gating charge (black) and change in fluorescence intensity (green) during activation (E–F) and deactivation (G–H) of voltage sensors at weak (−30 mV, top) and strong depolarization (30 mV, bottom). Dashed lines represent the displacement of gating charge in unlabeled oocytes. Gray traces represent the integrated capacitive transient as a measure of the speed of the voltage clamp.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50776/elife-50776-fig4-figsupp1-v2.jpg)
 
 We characterized the behavior of the two fluorescent probes with respect to the gating behavior of the Shaker Kv channel and analyzed the relationship between gating charge movement and changes in fluorescence intensity in each case. The steady state F-V relationship obtained from the labeled Shaker-M356* construct exhibited a detectable shift towards depolarized voltages in comparison to the Q-V relationship (Figure 4C), whereas a closer overlap was observed between the Q-V and F-V relationships obtained from the labeled Shaker-M356C construct (Figure 4D). In addition, the onset of the fluorescence response from Shaker-M356* was discernibly slower than the displacement of gating charge upon depolarization (Figure 4E) but overlapped closely during repolarization (Figure 4G). In the case of the Shaker-M356C channel, both the gating currents and fluorescence response showed multiple kinetic components during activation and deactivation of the channel (Figure 4F,H). Our observations on the behavior of the AF488-C5-maleimide labeled Shaker-M356C channel are similar to those reported for the M356C mutant of Shaker after labeling with Oregon green maleimide, a thiol-reactive fluorophore with identical excitation and emission spectra to AF488 (Cha and Bezanilla, 1997). Taken together, this comparison shows that fluorescent labeling of AHA-modified Shaker Kv channels with cyclooctyne-conjugated fluorophores can be utilized to track the conformational rearrangements similar to cysteine-based methods.
 
@@ -66,7 +92,7 @@ To compare the magnitude of fluorescence responses as a function of protein expr
 
 **Figure 5.:** (A–B) Gating currents (black) and fluorescence responses (green) from AF488-DBCO labeled Shaker-M356 (M356/M448L) in the presence of AHA (A) or AF488-C5-maleimide labeled Shaker-M356C (M356C/M448L/C245V/C462A) (B). (C–D) Scatter plot for maximum fluorescence signal (Max ΔF/F, %) obtained as a function of total gating charge displaced (Max Q, nC) for oocytes labeled at M356 through AHA (C) or cysteine (D).
 
-## Two-color labeling of the Shaker Kv channel using a combination of AHA and cysteine
+### Two-color labeling of the Shaker Kv channel using a combination of AHA and cysteine
 
 Membrane proteins are also labeled simultaneously with two distinct biophysical reporters to investigate their conformational transitions through FRET (Taraska, 2012; Taraska and Zagotta, 2010) or to independently track structural rearrangements in two different regions of the protein (Kalstrup and Blunck, 2013; Kalstrup and Blunck, 2018). Thus far, two-color labeling of membrane proteins has been achieved using pairs of cysteine residues (Glauner et al., 1999; Koch, 2005; Posson and Selvin, 2008; Wang et al., 2018), where it is difficult to monitor the site-specific attachment of fluorophores and often suffers from complexities arising from mixed populations of proteins containing one or both fluorophores. Cysteine mutagenesis has also been combined with fluorescently-labeled ligands (Posson and Selvin, 2008), transition metal binding sites (Billesbølle et al., 2016; Taraska et al., 2009), lanthanide metal binding peptide tags (Vázquez-Ibar et al., 2002) or fluorescent non-canonical amino acids (Gordon et al., 2018; Kalstrup and Blunck, 2013) to achieve site-specific labeling of membrane proteins with two different biophysical reporters. Interestingly, biorthogonal reactions including the SPAAC reaction and the copper mediated azide alkyne cycloaddition (CuAAC) reaction have also been combined with thiol-mediated reactions for two-color labeling, but exclusively with relatively small and soluble purified proteins containing azide- or alkyne-terminated amino acids introduced through the nonsense suppression method (Sadoine et al., 2017; Seo et al., 2011; Tyagi and Lemke, 2013). Given the straightforward nature of AHA incorporation, the biocompatible nature of the SPAAC reaction and the comparable fluorescence responses observed using AHA- and cysteine-based approaches (Figures 4 and 5), we explored the possibility of combining the two methods for two-color labeling of the Shaker Kv channel using azide and thiol-mediated chemical reactions in live cells.
 
@@ -78,7 +104,29 @@ To install two different fluorophores simultaneously into the Shaker Kv channel,
 
 For two-color labeling, oocytes expressing the Shaker Kv channel containing only the M356 or S424C sites were used to assess the degree of cross-reactivity between cyclooctyne and cysteine residues (Beatty et al., 2010; Conte et al., 2011; van Geel et al., 2012; Zhang et al., 2018a). To minimize the cross-reactivity, oocytes were labeled sequentially with TAMRA-MTS and then AF488-DBCO (See Materials and methods). As expected, two-color labeled Shaker-M356* produced voltage-dependent fluorescence changes through the AF488 filter cube (Figure 7E,K) which closely resembled Shaker-M356* labeled only with AF488-DBCO (Figure 4A,C), and there was no measurable change in fluorescence intensity through the TAMRA filter cube (Figure 7H). Similarly, two-color labeling of oocytes expressing Shaker-M356*-S424C in the absence of AHA showed no voltage-dependent fluorescence through the AF488 filter cube (Figure 7F), while the fluorescence response through the TAMRA filter cube was consistent with previous reports for S424C labeled with TAMRA-maleimide (Figure 7I,L) (Claydon et al., 2007). The lack of voltage-dependent fluorescence responses in the TAMRA channel (ex. 535/50 nm; em. 610/75 nm) after two-color labeling of M356* (Figure 7H) indicates that TAMRA-MTS does not cross-react with AHA at M356, since TAMRA produces a robust response when attached at this position using cysteine chemistry (Cha and Bezanilla, 1997; Mannuzzu et al., 1996). Similarly, the absence of voltage-dependent fluorescence responses in the AF488 channel for two-color labeling of M356*-S424C indicates that AF488-DBCO does not cross-react with S424C under these labeling conditions, since labeling S424C with AF488-C5-maleimide produces robust fluorescence responses (Figure 7—figure supplement 1). Finally, the two-color labeled Shaker-M356*-S424C showed distinct voltage-dependent fluorescence responses through both AF488 and TAMRA filter cubes (Figure 7G,J,M), similar to the single color labeling (Figure 6). These results demonstrate that AHA- and cysteine-mediated fluorescent labeling approaches can be combined for chemically selective and site-specific installation of different fluorophores into the Shaker Kv channel.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/50776/elife-50776-fig7-v2.jpg)
+
+**Figure 7.:** (A) A schematic for two-color labeling of the Shaker Kv channel. Each subunit contains an azide group from AHA (yellow) on the top of S4 within the voltage-sensing domain and a thiol group from cysteine (magenta) in the pore domain. Voltage-dependent conformational changes in the channel (blue and black arrows) result into a change in the fluorescence intensity of AF488-DBCO (green) and TAMRA-MTS (red) fluorophores. (B–D) Gating currents obtained from two-color labeled oocytes expressing Shaker-M356* (M356/M448L/C245V/C462A) in the presence of AHA (B) or Shaker-M356*-S424C (M356/M448L/C245V/C462A/S424C) in the absence (C) or presence of AHA (D). (E–J) Fluorescence responses from the two-color labeled oocytes through 488 filter cube (ex. 480/40 nm; em. 535/50 nm) (E–G) and TAMRA filter cube (ex. 535/50 nm; em. 610/75 nm) (H–J). (K–M) Q-V (Q, black) and steady-state F-V relationships (F_488; green, F_TAMRA; red) obtained from oocytes labeled with both AF488-DBCO and TAMRA-MTS. In all cases, data points are the mean ± SEM (n = 4–6). For Shaker-M356*, maximal ΔF/F (%) for TAMRA filter cube was 0.013 ± 0.003 (H). For Shaker-M356*-S424C without AHA, maximal ΔF/F (%) for 488 filter cube was 0.046 ± 0.011 (F).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/50776/elife-50776-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Representative signals for gating currents (black) and fluorescence responses (green) obtained from oocytes expressing Shaker-M356*-S424C (M356/M448L/C245V/C462A/S424C) and labeled with AF488-C5-Maleimide. The gray traces represent the voltage steps from a holding voltage of −90 mV. (B) Relationship between total gating charge displaced (Q, black) and change in fluorescence intensity (F, green) at steady state as a function of voltage (n = 5). All data points represent mean ± SEM.
+
 To determine whether individual Shaker Kv channels have been simultaneously labeled with both fluorophores, we looked for direct intramolecular energy transfer between AF488 and TAMRA. In the structure of the Kv1.2/2.1 paddle chimera (Long et al., 2007), the Cα distances between the residues corresponding to M356 in S4 and S424 in the four subunits forming the pore domain are 23.7 Å, 38.5 Å, 45.8 Å and 55 Å (Figure 8—figure supplement 1), near enough to allow FRET from AF488 to TAMRA (where R0 ~55 Å). To distinguish such intra-molecular FRET in our system, we must account for background sources of fluorescence (e.g. fluorophores attached to other surface proteins, oocyte auto-fluorescence, etc.) as well as ‘bleed through’ due to direct emission of the donor and direct excitation of the acceptor through the FRET filter cube. Conveniently, the background fluorescence is independent of voltage, so its contribution can be excluded by considering only the voltage-dependent fluorescence changes (∆F). Figure 8 shows the voltage-dependent fluorescent changes for constructs containing only the fluorescent donor site (Shaker-M356*) or the fluorescent acceptor site, (Shaker M356A-S424C) or both donor and acceptor sites (Shaker M356*-S424C) in the presence of AHA. Because the signal through the FRET cube (Alexa 488 excitation: ex. 480/40 nm; TAMRA emission: em. 535/50 nm) includes contributions from AF488 fluorophores emitting directly into the TAMRA channel and TAMRA fluorophores directly excited by the AF488 excitation, we used oocytes expressing the Shaker-M356*-S424C labeled only with AF488-DBCO or TAMRA-MTS to estimate and correct for this spectral bleed-through (Figure 8—figure supplement 2). Subtraction of AF488-DBCO direct emission into the TAMRA channel should be quite reliable as the emission in the AF488 channel and TAMRA channel have identical voltage dependent behavior with a mean bleed through ratio of 0.142 ± 0.004 at 50 mV (Figure 8—figure supplements 2G and 3). In contrast, the subtraction of the TAMRA direct excitation signal is more approximate because the voltage-dependence of TAMRA emission depends on the excitation wavelength and was not identical with AF488 and TAMRA excitation (Figure 8—figure supplement 2H). The mean bleed through ratio for TAMRA was estimated to be 0.076 ± 0.004 at 50 mV. (Figure 8—figure supplement 3). Nevertheless, both the raw and corrected FRET signals (Alexa 488 excitation; TAMRA emission) are larger when both donor and acceptor are present (Figure 8L,O) compared to when only the donor (Figure 8J) or acceptor (Figure 8K) is present. Furthermore, the increase in the FRET signal upon depolarization correlates with the upward movement of the S4 helix (and donor) towards the acceptor with the corrected FRET F-V relationship closely following the Q-V relationship for the oocytes expressing Shaker-M356*-S424C in the presence of AHA (Figure 8R). Collectively, these results establish that AHA incorporation and cysteine mutagenesis can be efficiently combined to carry out site-specific two-color labeling of individual Shaker Kv channels in live cells.
+
+![Figure 8.](https://cdn.elifesciences.org/articles/50776/elife-50776-fig8-v2.jpg)
+
+**Figure 8.:** (A–C) Gating currents obtained from two-color labeled oocytes expressing Shaker-M356* (M356/M448L/C245V/C462A) (A), Shaker-M356A-S424C (M356A/M448L/C245V/C462A/S424C) (B) or Shaker-M356*-S424C (M356/M448L/C245V/C462A/S424C) (C) in the presence of AHA. (D–O) Fluorescence responses from two-color labeled oocytes through 488 filter cube (ex. 480/40 nm; em. 535/50 nm) (D–F), TAMRA filter cube (ex. 535/50 nm; em. 610/75 nm) (G–I) or FRET filter cube (ex. 480/40 nm; em. 610/75 nm) before (J–L) and after (M–O) bleed through correction. (P–R) Q-V (Q, black) and steady-state F-V relationships (F_488; green, F_TAMRA; red, FRETObserved; gray and FRETCorrected; cyan) obtained from oocytes labeled with both AF488-DBCO and TAMRA-MTS. In all cases, data points are the mean ± SEM (n = 5–7). For Shaker-M356*, maximal ΔF for TAMRA filter cube was 0.131 ± 0.003 (G) and FRETCorrected was −0.00585 ± 0.004 (M). For Shaker-M356A-S424C, maximal ΔF for 488 filter cube was 0.010 ± 0.008 (E) and FRETCorrected cube was 0.032 ± 0.018 (N).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/50776/elife-50776-fig8-figsupp1-v2.jpg)
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/50776/elife-50776-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A–B) Gating currents obtained from oocytes expressing Shaker-M356*-S424C (M356/M448L/C245V/C462A/S424C) in the presence of AHA and labeled with AF488-DBCO (A) or TAMRA-MTS (B). (C) Fluorescence responses from AF488-DBCO labeled oocytes through 488 filter cube (ex. 480/40 nm; em. 535/50 nm). (D) Fluorescence responses from TAMRA-MTS labeled oocytes through TAMRA filter cube (ex. 535/50 nm; em. 610/75 nm). (E–F) Bleed through fluorescence responses from oocytes labeled with AF488-DBCO (E) or TAMRA-MTS (F) through FRET filter cube (ex. 480/40 nm; em. 610/75 nm). (G–H) Q-V (Q, black) and steady-state F-V relationships (F_488; green, F_TAMRA; red, Bleed through; gray) from AF488-DBCO (G) or TAMRA-MTS (H) labeled oocytes.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/50776/elife-50776-fig8-figsupp3-v2.jpg)
+
+**Figure 8—figure supplement 3.:** Ratio of maximal ΔF obtained through FRET cube (ex. 480/40 nm; em. 610/75 nm) and 488 filter cube (ex. 480/40 nm; em. 535/50 nm) or TAMRA filter cube (ex. 535/50 nm; em. 610/75 nm) for AF488-DBCO (green, n = 7) or TAMRA-MTS (red, n = 9) labeled oocytes expressing Shaker-M356*-S424C (M356/M448L/C245V/C462A/S424C).
 
 ## Discussion
 
@@ -98,22 +146,123 @@ Our FRET measurements demonstrate that we can simultaneously install two differe
 
 ## Materials and methods
 
-## Molecular biology
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Drosophila melanogaster)</td>
+      <td>Shaker</td>
+      <td>Gene ID: 32780</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Oocytes (Xenopus laevis, female)</td>
+      <td>Xenopus Oocytes or oocytes</td>
+      <td>Xenopus Express</td>
+      <td>IMP XL FM</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-myc antibody</td>
+      <td>ThermoFisher</td>
+      <td>Cat. No. 46–0603</td>
+      <td>1:1000 (2 µl in 2 ml)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HRP-conjugated anti-mouse secondary antibody</td>
+      <td>Amersham ECL</td>
+      <td>Cat. No. NA931VS</td>
+      <td>1:3750 (4 µl in 15 ml)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGEMHE vector</td>
+      <td></td>
+      <td></td>
+      <td>Liman et al., 1992</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>GxTx1E</td>
+      <td>This paper</td>
+      <td>Toxin</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>NHS-sulfo-biotin</td>
+      <td>ThermoFisher</td>
+      <td>Cat. No. 21335</td>
+      <td>1 mM from 10X stock in ddH2O</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>DBCO-sulfo-biotin</td>
+      <td>Sigma</td>
+      <td>Cat. No. 760706</td>
+      <td>1 mM from 10X stock in ddH2O</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AF488-DBCO</td>
+      <td>Click Chemistry Tools</td>
+      <td>Cat. No. 1278</td>
+      <td>100 µM from 100X stock in anhydrous DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>AF488-C5-Maleimide</td>
+      <td>Click Chemistry Tools</td>
+      <td>Cat. No. 1014</td>
+      <td>100 µM from 100X stock in anhydrous DMSO</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TAMRA-MTS</td>
+      <td>Toronto Research Chemicals</td>
+      <td>Cat. No. T305175</td>
+      <td>10 µM from 1000X stock in ddH2O</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Azidohomoalanine (AHA)</td>
+      <td>Bachem</td>
+      <td>Cat. No. F-4265</td>
+      <td>4 mM from100 mM stock in ddH2O</td>
+    </tr>
+  </tbody>
+</table>
+
+### Molecular biology
 
 All the constructs were generated in the pGEMHE vector (Liman et al., 1992) with Shaker-IR (ΔN, 6–46) (Hoshi et al., 1990) as the common background. The mutations for methionine and cysteine residues were carried out using the QuickChange Lightning site-directed mutagenesis kit as per manufacturer’s protocol (Agilent Technologies). The DNA sequence of all constructs and mutants was confirmed by automated DNA sequencing and complementary RNA (cRNA) was synthesized using T7 polymerase after linearizing the DNA with NheI restriction enzyme. The RNA was purified using the RNAse easy kit (Qiagen), eluted in RNAse-free water and stored at −80°C until use. All the chemicals were purchased from Sigma-Aldrich unless specified.
 
-## Detection of AHA incorporation through surface biotinylation of Xenopus laevis oocytes
+### Detection of AHA incorporation through surface biotinylation of Xenopus laevis oocytes
 
 Female Xenopus laevis animals were housed and surgery was performed according to the guidelines of the National Institutes of Health, Office of Animal Care and Use (OACU) (Protocol Number 1253–18). Oocytes were removed surgically and incubated with agitation for 1 hr in a solution containing (in mM) 82.5 NaCl, 2.5 KCl, 1 MgCl2, 5 HEPES, pH 7.6 (with NaOH), and collagenase (2 mg/ml; Worthington Biochemical, Lakewood, NJ). All surface biotinylation experiments were carried out with ShakerΔ5-V478W-myc (Hackos et al., 2002; Milescu et al., 2013) containing a myc tag at the C-terminal. Defolliculated oocytes were injected with 50 nl of channel RNA (~500 ng/μl) after preincubating them in the absence or presence of 4 mM AHA (Bachem, 100 mM stock in ddH2O) at 17°C overnight in an ND96 oocyte maintenance buffer, containing (in mM): 96 NaCl, 2 KCl, 5 HEPES, 1 MgCl2 and 1.8 CaCl2 plus 50 mg/ml gentamycin, pH 7.6 with NaOH. After four days of maintaining the oocytes at 17°C, excess AHA was removed with 5–6 washes of ND96 and oocytes were labeled with amine or azide reactive biotin reagents, EZ-Link-sulfo-NHS-LC-biotin (ThermoFisher) or DBCO-sulfo-biotin (Sigma), according to the previously published protocol with minor modifications (Silberberg et al., 2005; Zhang et al., 2018b). Twenty healthy oocytes were incubated with 1 mM of each biotin probe (10X stock in ddH2O) in separate wells of a 24-well plate in a final volume of 0.5 ml at room temperature. The reaction was terminated after 20 min for NHS-sulfo-LC-biotin and 60 min for DBCO-sulfo-biotin by transferring the oocytes to ND96, followed by 6–8 washes to remove excess biotinylation reagent. Subsequently, oocytes were homogenized in 400 µl of lysis buffer containing (in mM): 100 NaCl, 20 Tris⋅Cl, pH 7.4, 1% Triton X-100, 5 µl/ml protease inhibitor mixture (Sigma). Homogenization and all subsequent steps were performed at 4°C. After centrifugation at 16,000 × g for 3 min, a 20 µl aliquot of the supernatant (total cell protein) was mixed with equal volume of 2 × NuPAGE LDS sample buffer (ThermoFisher) plus reducing agent: 50% 4 × LDS sample buffer (Bio-Rad), 10% 2-mercaptoethanol and 40% 100 mM DTT. The remaining supernatant was diluted 1:1 with the lysis buffer and 60 µl of High Capacity NeutrAvidin agarose beads (ThermoFisher) were added followed by gentle tumbling overnight at 4°C. The NeutrAvidin agarose beads were washed six times with the lysis buffer with a 2 min centrifugation (16,000 × g) step between each wash. At the end of the final wash, 40 µl of 2 × LDS sample buffer plus reducing agent was added to the beads and samples were heated at 70°C for 10 min. Following a 2 min centrifugation (16,000 × g), the supernatant (surface protein) and total cell protein (collected earlier) were separated in 10% Bis-Tris acrylamide gel (ThermoFisher) using a MOPS running buffer containing (in mM): 20 Tris base, 20 MOPS, 1.25 EDTA, 0.1% SDS, pH 7.6. Seeblue Plus2 prestained ladder (ThermoFisher) was used as the protein molecular weight marker. After SDS-PAGE, proteins in the gel were transferred to nitrocellulose membrane using the iBLOT semi-dry transfer apparatus (ThermoFisher). The nitrocellulose membrane was probed with mouse anti-myc antibody (ThermoFisher, Cat. No. 46–0603) diluted 1:1000 in TBS-T containing (in mM): 25 Tris, 137 NaCl, 3 KCl, 0.05% Tween20 followed by HRP-conjugated anti-mouse secondary antibody (4 µl in 15 ml TBS-T). The blot was developed using Immobilon ECL Western detection reagents (Millipore). Densitometry was performed with the Image lab software (Bio Rad).
 
-## Two-electrode voltage clamp recordings of macroscopic ionic currents
+### Two-electrode voltage clamp recordings of macroscopic ionic currents
 
 All ionic currents were recorded using the Shaker-IR construct where residues 6–46 were deleted to remove N-type inactivation (Hoshi et al., 1990). For experiments with the tarantula toxin GxTx1E, the toxin-sensitive ShakerΔ5 construct (L327I, A328F, V330T, V331E and A332S) was used (Milescu et al., 2013). GxTx1E toxin was synthesized on an ABI peptide synthesizer using Fmoc chemistry, refolded in vitro and purified as previously described (Gupta et al., 2015). Experiments with AHA-modified channel were performed after preincubating the oocytes in 4 mM AHA (prepared in ND96 from a 100 mM stock in ddH2O) overnight, followed by cRNA injection. Oocytes were injected with 50 nl of channel RNA (5–10 ng/μl) in the absence or presence of AHA and studied after 1–4 days to allow for expression at 17°C in ND96 solution. All the recordings were performed using the two-electrode voltage-clamp recording technique (OC-725C amplifier; Warner Instruments, Hamden, CT) using a 150 μl recording chamber. Data were filtered at 1 kHz and digitized at 5–10 kHz using Digidata 1321A interface board and pCLAMP 10 software (Molecular Devices, Sunnyvale, CA). Microelectrode resistances were 0.2–0.8 MΩ when filled with 3 M KCl. The external recording solution contained (in mM): 50 KCl, 50 NaCl, 10 HEPES, pH 7.6 with NaOH at room temperature (~22°C).
 
-## Voltage-clamp fluorometry
+### Voltage-clamp fluorometry
 
 All voltage-clamp fluorometry experiments were performed using the non-conducting V478W mutant of the Shaker Kv channel (Hackos et al., 2002; Kitaguchi et al., 2004), with additional methionine or cysteine mutations as indicated in the text and figure legends. Oocytes were injected with 50 nl of channel RNA (100–500 ng/μl) in the absence or presence of 4 mM AHA and maintained at 17°C for 1–5 days. Fluorescent labeling of oocytes was carried out by first removing excess AHA with 5–6 washes with ND96, followed by incubation with 100 µM AF488-DBCO (Alexa fluorophore 488-dibenzocyclooctyne, Click Chemistry Tools, 100X stock in DMSO) or AF488-C5-maleimide (Alexa fluorophore 488-C5-maleimide, Click Chemistry Tools, 100X stock in DMSO) for 60 min at room temperature in 0.5 ml ND96. Oocytes were transferred to fresh ND96 and washed five times (5 min each) to remove the excess fluorophore and stored in the dark at 10–13°C prior to performing experiments. For TAMRA-MTS (2-((5 (6)-tetramethylrhodamine)carboxylamino)ethyl methanethiosulfonate; Toronto Research Chemicals), oocytes were incubated with 10 μM of the fluorophore (1000X stock in ddH2O) in ND96 at 4°C for 60 min, followed by five washes. For the two-color labeling, oocytes were first labeled with TAMRA-MTS, followed by AF488-DBCO labeling as documented above. Two-electrode voltage clamp recordings were obtained using a Dagan CA-1B amplifier. Electrodes were filled with 3M KCl and had resistances between 0.2–0.8 MΩ. The external recording solution was ND96 without gentamycin, containing (in mM): 96 NaCl, 2 KCl, 5 HEPES, 1 MgCl2 and 1.8 CaCl2, pH 7.6 with NaOH. For all gating current measurements, Q was obtained by integrating the OFF gating current elicited by repolarization to the holding voltage. Fluorescence signals were acquired through a 40X, 0.8-NA objective (Olympus LUMplanFLN) on an Olympus BX51WI microscope and a photodiode. For Alexa 488 signals, excitation filter, emission filter and dichroic were ET480/40, ET535/50 and T510nm, respectively (Chroma Tech.). For TAMRA-MTS, excitation filter, emission filter and dichroic were HQ535/50, HQ610/75 and T570pxrxt, respectively (Chroma Tech.). For the FRET cube, the excitation filter, emission filter and dichroic were ET480/40, HQ610/75 and T570pxrxt, respectively (Chroma Tech.). The signal from the photodiode was low-pass filtered at 3 kHz and sampled at 20 kHz through a Digidata-1440A controlled by pClamp10 (Molecular Devices). The light source used for the illumination was either a blue (470/24 nm) or a green (550/15 nm) LED (Lumencor, Spectra X). The bleed through fluorescence ratio for AF488 and TAMRA were calculated by using single-color labeled oocytes expressing Shaker-M356*-S424C in the presence of AHA and normalizing the magnitude of the steady-state voltage-dependent change in fluorescence intensity (ΔF, A.U.) obtained through the FRET cube by the one obtained from 488 and TAMRA filter cubes, respectively. All the fluorescence traces represent single recordings without averaging.
 
-## Data and materials availability
+### Data and materials availability
 
 All data needed to evaluate the conclusions in this paper are available in the main text and supplementary materials.

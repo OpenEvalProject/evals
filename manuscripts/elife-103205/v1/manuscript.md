@@ -18,14 +18,14 @@
 
 ### Affiliations
 
-1. https://ror.org/00pg6eq24 University of Strasbourg, CNRS, Institut Pluridisciplinaire Hubert Curien Strasbourg France
+1. University of Strasbourg, CNRS, Institut Pluridisciplinaire Hubert Curien Strasbourg France ([ROR:00pg6eq24](https://ror.org/00pg6eq24))
 2. National Proteomics Infrastructure, ProFi Strasbourg France
 3. Parc Zoologique et Botanique de Mulhouse Mulhouse France
-4. https://ror.org/03skt0t88 Lyon University 1, UMR CNRS 5558, Laboratoire de Biométrie et Biologie Evolutive Villeurbanne France
-5. https://ror.org/03mcsbr76 Swiss Ornithological Institute Sempach Switzerland
-6. https://ror.org/008rywf59 CEFE, Montpellier University, CNRS, EPHE, IRD Montpellier France
-7. https://ror.org/04mv1z119 Center of Biological Studies of Chizé (CEBC), UMR 7372 CNRS - La Rochelle University Villiers-en-Bois France
-8. https://ror.org/0174shg90 Ecology in the Anthropocene, Associated Unit CSIC‑UEX, Faculty of Sciences, University of Extremadura Badajoz Spain
+4. Lyon University 1, UMR CNRS 5558, Laboratoire de Biométrie et Biologie Evolutive Villeurbanne France ([ROR:03skt0t88](https://ror.org/03skt0t88))
+5. Swiss Ornithological Institute Sempach Switzerland ([ROR:03mcsbr76](https://ror.org/03mcsbr76))
+6. CEFE, Montpellier University, CNRS, EPHE, IRD Montpellier France ([ROR:008rywf59](https://ror.org/008rywf59))
+7. Center of Biological Studies of Chizé (CEBC), UMR 7372 CNRS - La Rochelle University Villiers-en-Bois France ([ROR:04mv1z119](https://ror.org/04mv1z119))
+8. Ecology in the Anthropocene, Associated Unit CSIC‑UEX, Faculty of Sciences, University of Extremadura Badajoz Spain ([ROR:0174shg90](https://ror.org/0174shg90))
 
 † Corresponding author
 
@@ -47,17 +47,17 @@ To date, although protein glycation levels have been measured in birds in severa
 
 ## Materials and methods
 
-## Species and sample collection
+### Species and sample collection
 
 A total of 484 individuals from 88 species measured were included in this study (see Appendix 1—table 1). A detailed list with the provenance of the samples, including zoos, a laboratory population, and both designated captures and samples provided by collaborators from wild populations, is provided in Supplementary file 3, with a textual description in Appendix 1.
 
 Blood samples were collected from the brachial or tarsal vein, or from the feet in the case of swifts, using heparin-lithium capillaries or Microvette (Sarstedt). As samples were collected mostly by different collaborators, handling times were not always recorded and could not be adjusted for, potentially rendering the results more conservative (for a more detailed discussion on potential stress effects on glucose, see Appendix 1), Samples were centrifuged at 4°C, 3500 × g for 10 min and plasma was aliquoted when a large volume was available. Subsequently, they were transported on dry ice to the Institut Pluridisciplinaire Hubert Curien (IPHC) in Strasbourg and stored at –80°C until analysis. Glycaemia was measured in the laboratory on the remaining plasma after taking an aliquot for glycation assessment using a Contour Plus glucometer (Ascensia Diabetes Solutions, Basel, Switzerland) and expressed in mg/dL. These of point-of-care devices have previously been assessed for its usage in birds (Mohsenzadeh et al., 2015; Morales et al., 2020), with several examples of its usage in recent literature related to the topic presented here (e.g. Tomasek et al., 2019; Downs et al., 2010; Breuner et al., 2013; McGraw et al., 2020). We also performed an assay with this particular brand on a subset of 46 samples from this study, coming from nine species distributed across the whole range of glucose values (three species with ‘low’ values, three with ‘medium’, and three with ‘high’, from both captive and wild populations, with five individuals per species, except one including six), confirming a positive linear correlation (R2marginal = 0.66; R2conditional = 0.84, for a model including the species as random factor) of this device with Randox GLUC-PAP colourimetry kits (p-value<0.001, unpublished data). Due to technical issues related to the incapability of the device to determine certain glucose values (not because of the glucose concentration, but perhaps the particular composition of the plasma samples from certain species), we could not determine glycaemia values of 95 individuals of those that we sampled and in which glycation levels were assessed (belonging to 40 species coming from different sources). For these species, if not a single individual had a glucose measurement (which was the case in 13 species), we obtained mean plasma glucose values reported for the species from the ZIMS database from Species360 (Species360 Zoological Information Management System [ZIMS] 2023, zims.Species360.org). This database provides plasma glucose data measured by colorimetric glucose kits on zoo specimens not necessary corresponding to those in which we measured glycation values. The sample sizes for both glucose and glycation measurements, either from our measured individuals or from the ones from ZIMs, are reported in the Supplementary file 5.
 
-## Glycation levels
+### Glycation levels
 
 Glycation levels for each individual were determined using liquid chromatography coupled to mass spectrometry (LC-MS), which is considered the gold standard for the assessment of protein glycation levels (see e.g. Priego-Capote et al., 2014) and has previously been used for birds (Ingram et al., 2017; Brun et al., 2022; Zuck et al., 2017). Given the relatively high time intrinsically taken by the employed methodology for analysing all the samples, linked to constraints in the access to the mass spectrometry devices, the whole set of samples of this study were analysed across several instances within a total timespan of less than 2 years (2021–2023). Only one sample from each individual was measured, given logistic limitations on the total number of samples that could be processed. Briefly, 3 µL of plasma were diluted with 22 µL of distilled water containing 0.1% of formic acid, followed by injection of 5 µL into the system. The glycation values used in the analyses represent the total percentage of glycated albumin, obtained by adding the percentages of singly and doubly glycated albumin. These percentages were calculated by dividing the areas of the peaks corresponding to each glycated molecule form (albumin plus one or two glucose) by the total albumin peak area (sum of the areas of glycated plus non-glycated molecules) observed in the spectrograms obtained from the mass spectrometry outcomes. These spectrograms represent the different intensities of signal for the components differentiated in the sample by their time of flight (TOF), which depends on the mass to charge ratio (m/z) of the ionized molecules. More detailed information regarding functioning of the method and data processing can be found in Brun et al., 2022. In cases where albumin glycation values dropped below the limit of detection, resulting in missing data, these individuals (10 individuals from four species) were excluded from the statistical analyses, as outlined below.
 
-## Data on ecology and life history
+### Data on ecology and life history
 
 Diets of individual species were extracted from the AVONET dataset (Tobias et al., 2022, coming from Pigot et al., 2020, and those adapted from Wilman et al., 2014) and life history traits from the Amniote Database (Myhrvold et al., 2015). After determining that AVONET diet classifications did not align with our research needs, minor changes were made after consulting the original Wilman et al., 2014 database (see Appendix 1).
 
@@ -65,13 +65,13 @@ For missing data on life history traits after this stage, we extracted values, i
 
 In the case of variables (other than maximum lifespan) for which two different sources provided different records, an average value was calculated. For the maximum lifespan value, available sources were cross-checked and the highest value was always used. In the absence of satisfactory support from another source, values for maximum lifespan indicated as being anecdotal and of poor quality have been excluded from the analyses. A table with the adequate citations for each value is provided as part of the online available data (see ‘Data availability’ section). When the source is AVONET (Tobias et al., 2022), this database is cited, and when it is Amniote Database (Myhrvold et al., 2015), we cite the sources provided by them, so the references can be checked in Myhrvold et al., 2015. A list with all the additional references not coming from any of these databases or not provided by their authors (and that are not already in the main text) is given in Supplementary file 4.
 
-## Statistical analyses
+### Statistical analyses
 
 All analyses were performed in R v.4.3.2 (R Development Core Team, 2023). Alpha (α)≤0.05 was reported as significant, and 0.05<α≤0.1 as trends. General linear mixed models with a Bayesian approach (MCMCglmm function in R; Hadfield, 2010) were performed. All models were run with 6 × 106 iterations, with a thinning interval of 100 and a burn-in of 1000. The models were simplified by eliminating quadratic terms where they were not significant and selecting models with lower Akaike Information Criterion and Bayesian Information Criterion. Gaussian distribution of the response variables was assumed (after log10 conversion for glucose; see Appendix 1 for further discussions). The priors were established assuming variance proportions of 0.2 for the G matrix and 0.8 for the R matrix, with ν = 2. Less informative priors with equal variance proportions for each partition (residual and random) gave similar results. Lower ν values (0.1, 0.2, 0.002) were also tested, without success (i.e. simulations aborted before the established number of iterations). For the phylogenetically controlled analyses, consensus trees (each with the species included in the model) were obtained by using the consensus.edges function from the phytools package from R [Revell, 2024] from a total of 10,000 trees downloaded from Birdtree.org [Jetz et al., 2012] (option ‘Hackett All species’; Hackett et al., 2008). For such purpose, a list of species with the names adapted to the synonyms available in such website was used (see Supplementary file 5), including the change of Leucocarbo verrucosus for Phalacrocorax campbelli, as the former was not available and it was the only species from the order Suliformes in our dataset, so that neither the position in the tree nor the branch length would be affected by this change. The consensus trees were included as pedigree in the models. We performed models with either glucose or glycation as dependent variables and with the diet, body mass, and life history traits as predicting variables (and glucose in the models with glycation as a response to assess glycation resistance; see ‘Introduction’; another set of models without glucose were performed to test if there was a covariation of glycation itself, independently of glucose levels, covaried with life history; see Appendix 1). Generalized variance inflation factors (GVIFs) were calculated for all the models with more than one predictor variable to assess the collinearity of them as it may be expected for life history traits (see results in Supplementary file 1), considering values above 1.6 as slightly concerning, above 2.2 as moderately concerning, and above 3.2 as severely concerning (i.e. indicating high collinearity; following Nahhas, 2024). Models testing the effects of age and sex on glucose and glycation levels and the number of exposed lysine residues on glycation were also carried out. Finally, we performed models on glucose and glycation values controlling for the taxonomic orders included in the dataset (see Supplementary file 5). The effects of phylogeny on all models were determined by calculating the ratio of the variance estimated for the ‘animal’ variable, representing the pedigree (see Appendix 1) by the total variance (all random factors plus units). A thorough description of all of the models, including transformations of the variables and other details, is given in Appendix 1.
 
 ## Results
 
-## Plasma glucose and albumin glycation variability across the birds’ tree
+### Plasma glucose and albumin glycation variability across the birds’ tree
 
 Plasma glucose and albumin glycation values varied considerably across species (Figure 1). Considerable within-species repeatability (see Appendix 1) was observed (glucose: R = 0.716, SE = 0.042, CI95 = [0.619, 0.785], p-value<0.0001; glycation: R = 0.703, SE = 0.042, CI95 = [0.603, 0.768], p-value<0.0001).
 
@@ -85,21 +85,227 @@ For glycation, Strigiformes (species average model: estimated mean = 25.6 %, CI9
 
 On the other hand, Casuariiformes (species average model: estimated mean = 10.8 %, CI95[3.7, 18.1]; model with individuals: estimated mean = 11.4 %, CI95[2.7, 20.6], n=1 individuals, one species), Phoenicopteriformes (species average model: estimated mean = 11.2 %, CI95[5.6, 16.7]; model with individuals: estimated mean = 10.5 %, CI95[4.6, 16.3], n = 22 individuals, two species), and Suliformes (species average model: estimated mean = 13.8 %, CI95[7, 20.7]; model with individuals: estimated mean = 13.2 %, CI95[5.6, 20.5], n = 5 individuals, one species) had the lowest average levels for the species average models, the pattern is Casuariiformes < Phoenicopteriformes < Suliformes, while for the individual models is Phoenicopteriformes < Casuariiformes < Suliformes. Graphs with raw data on species average and individual glucose and glycation values by order are shown in Supplementary file 2 (Supplementary file 2). Estimates of phylogeny effects on the residuals of the models on glucose and glycation values differ if we consider the models with intraspecific variability or without it, but not so much between the models with and without life history traits (within the previous categories). In the case of species averages, the effect of the tree on residual glucose variation is lower and the estimation is less precise than for residual glycation variation, while for the models considering individual values, it is glycation residuals what shows lower levels of tree-related variance than glucose residuals (see Supplementary file 1).
 
-## Bird glycaemia appears related to body mass and maximum lifespan
+### Bird glycaemia appears related to body mass and maximum lifespan
 
 After controlling for intraspecific variation in our analyses, we found that the variations in glucose levels were significantly explained by the variations in body mass and both the linear and quadratic components of residual maximum lifespan (i.e. mass and phylogeny-adjusted maximum lifespan), but not by variations in diet (see below), clutch mass, and developmental time (see Table 1 for the model including life history trait variables). Heavier species had lower glucose levels (see Figure 2A, drawn with the estimates from the model without life history traits, which includes more species). Glucose levels increase with increasing mass-adjusted lifespan until reaching a plateau (Figure 2B). Models that did not consider intraspecific variability show no significant effect of any of the aforementioned variables on glucose levels (see Supplementary file 1). The provenance of the samples (wild versus captive) only showed a trend to a higher glucose levels in the samples from captive individuals in the model without life history traits (estimate = 0.058; CI95[–0.008, 0.125]; p-value = 0.083).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/103205/elife-103205-fig2-v1.jpg)
 
-**Figure 2.:** A) species mean-centred body mass and (B) residual maximum lifespan.Both glucose and body mass are log transformed. Maximum lifespan (in years) is given as the residues of a phylogenetically controlled generalized least-squares model (pGLS) model with body mass (in grams), both log10 transformed, so the effects of body mass on longevity are factored out (see Appendix 1). Different bird orders, are indicated by symbols, as specified on the legends at the right side of the graphs. (A) uses the values and estimates from the glucose model without life history traits (n = 389 individuals from 75 species), while (B) uses only the data points employed on the complete model (n = 326 individuals of 58 species).
+**Figure 2.:** Both glucose and body mass are log transformed. Maximum lifespan (in years) is given as the residues of a phylogenetically controlled generalized least-squares model (pGLS) model with body mass (in grams), both log10 transformed, so the effects of body mass on longevity are factored out (see Appendix 1). Different bird orders, are indicated by symbols, as specified on the legends at the right side of the graphs. (A) uses the values and estimates from the glucose model without life history traits (n = 389 individuals from 75 species), while (B) uses only the data points employed on the complete model (n = 326 individuals of 58 species).
 
-## Bird albumin glycation is related to glycaemia and diet
+**Table 1.**
+ Final glucose model with diet, body mass, life history traits, and sample provenance (wild versus captive; see Appendix 1) as explanatory variables, including the significant quadratic effect of maximum lifespan.Posterior means, CI95 and pMCMC from a phylogenetic MCMC GLMM model including n = 326 individuals of 58 species.Both glucose and body mass are log10 transformed and life history traits are residuals from a phylogenetically controlled generalized least-squares model (pGLS) model of log10 body mass and log10 of the trait in question (see Appendix 1). Body mass was also centred to better explain the intercept, as 0 body mass would make no biological sense. The intercept corresponds to the omnivore diet, being used as the reference as it is considered the most diverse and ‘neutral’ group for this purpose. Significant predictors are indicated in bold.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Estimates</th>
+      <th>Lower 95% CI</th>
+      <th>Upper 95% CI</th>
+      <th>Sampling effort</th>
+      <th>pMCMC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept (omnivore)</td>
+      <td>2.387</td>
+      <td>2.268</td>
+      <td>2.5</td>
+      <td>59,900</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Diet: carnivore terrestrial</td>
+      <td>0.02</td>
+      <td>–0.056</td>
+      <td>0.099</td>
+      <td>59,900</td>
+      <td>0.592</td>
+    </tr>
+    <tr>
+      <td>Diet: aquatic predator</td>
+      <td>0.034</td>
+      <td>–0.047</td>
+      <td>0.112</td>
+      <td>59,900</td>
+      <td>0.393</td>
+    </tr>
+    <tr>
+      <td>Diet: herbivore</td>
+      <td>–0.053</td>
+      <td>–0.177</td>
+      <td>0.07</td>
+      <td>59,900</td>
+      <td>0.393</td>
+    </tr>
+    <tr>
+      <td>Diet: frugivore/granivore</td>
+      <td>–0.055</td>
+      <td>–0.239</td>
+      <td>0.135</td>
+      <td>59,900</td>
+      <td>0.558</td>
+    </tr>
+    <tr>
+      <td>Centred Log10 body mass</td>
+      <td>–0.061</td>
+      <td>–0.106</td>
+      <td>–0.015</td>
+      <td>59,900</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>Maximum lifespan</td>
+      <td>0.107</td>
+      <td>–0.035</td>
+      <td>0.253</td>
+      <td>59,900</td>
+      <td>0.142</td>
+    </tr>
+    <tr>
+      <td>Maximum lifespan2</td>
+      <td>–0.616</td>
+      <td>–1.166</td>
+      <td>–0.095</td>
+      <td>59,900</td>
+      <td>0.026</td>
+    </tr>
+    <tr>
+      <td>Clutch mass</td>
+      <td>–0.095</td>
+      <td>–0.265</td>
+      <td>0.069</td>
+      <td>59,900</td>
+      <td>0.258</td>
+    </tr>
+    <tr>
+      <td>Developmental time</td>
+      <td>0.011</td>
+      <td>–0.185</td>
+      <td>0.212</td>
+      <td>59,900</td>
+      <td>0.916</td>
+    </tr>
+    <tr>
+      <td>Provenance: captive</td>
+      <td>0.034</td>
+      <td>–0.039</td>
+      <td>0.106</td>
+      <td>59,900</td>
+      <td>0.346</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bird albumin glycation is related to glycaemia and diet
 
 After controlling for intraspecific variability, we found that diet, contrary to what was observed for glucose (see Figure 3A, with predictions from the model without life history traits and Supplementary file 2 with raw individual data from the same dataset), was affecting variation in albumin glycation rates, with terrestrial carnivorous species having higher glycation levels than omnivorous species (Table 2 for complete model; see Figure 3B with predictions of the model without life history traits, and Supplementary file 2 with raw individual data from the same dataset). However, for the models for species averages, there was only a trend on this pattern in the one including life history traits, and no effect in the other (see Supplementary file 1). The relation between glycation and glucose levels was positive and significant in all but the model that included life history traits but not intraspecific variation (see Table 2 for the outcome of the model with individual values and life history traits and Supplementary file 1 for the rest; see Figure 4 with estimates from the model including individual variation but no life history traits, as it contains more species and the estimates are similar). Given the logarithmic relationship between glycation and glucose (see Appendix 1), the slope lower than one (see Table 2) implies that birds with higher glucose levels have relatively lower albumin glycation rates for their glucose, fact that we would be referring to as higher glycation resistance. The glycation models excluding glucose levels, and therefore testing for covariates of life history with glycation itself, without considering resistance, rendered similar results, with only the abovementioned dietary effects being significant (see Supplementary file 1).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/103205/elife-103205-fig3-v1.jpg)
 
-**Figure 3.:** A) plasma glucose levels and (B) albumin glycation in birds.Glucose levels are given in mg/dL, while glycation levels are a percentage of total plasma albumin which is found to be glycated. Terrestrial carnivores showed significantly higher glycation levels than omnivores (estimate = 21.62 %, CI95[18, 25.95], pMCMC = 0.049). Models without life history traits, including more individuals, are represented, but the models with life history traits do not show differences in their qualitative predictions (i.e. higher albumin glycation in terrestrial carnivores than in omnivores; see Supplementary file 1).
+**Figure 3.:** Glucose levels are given in mg/dL, while glycation levels are a percentage of total plasma albumin which is found to be glycated. Terrestrial carnivores showed significantly higher glycation levels than omnivores (estimate = 21.62 %, CI95[18, 25.95], pMCMC = 0.049). Models without life history traits, including more individuals, are represented, but the models with life history traits do not show differences in their qualitative predictions (i.e. higher albumin glycation in terrestrial carnivores than in omnivores; see Supplementary file 1).
+
+**Table 2.**
+ Final glycation model with diet, body mass, glucose, and life history traits as explanatory variables.Posterior means, CI95, and pMCMC from a phylogenetic MCMC GLMM model including n = 316 individuals of 58 species.Glycation, glucose, and body mass are log10 transformed and life history traits are residuals from a linear model of log10 body mass and log10 of the trait in question (see Appendix 1). Body mass and glucose were also centred to better explain the intercept. The intercept corresponds to the omnivore diet, being used as the reference as it is considered the most diverse and ‘neutral’ group for this purpose. Significant predictors are indicated in bold, and the credible intervals are considered for making pairwise comparisons between the groups.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Estimates</th>
+      <th>Lower 95% CI</th>
+      <th>Upper 95% CI</th>
+      <th>Sampling effort</th>
+      <th>pMCMC</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Intercept</td>
+      <td>1.232</td>
+      <td>1.112</td>
+      <td>1.351</td>
+      <td>59,900</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td>Diet: carnivore terrestrial</td>
+      <td>0.101</td>
+      <td>0.017</td>
+      <td>0.187</td>
+      <td>59,900</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>Diet: aquatic predator</td>
+      <td>0.027</td>
+      <td>–0.062</td>
+      <td>0.118</td>
+      <td>59,900</td>
+      <td>0.549</td>
+    </tr>
+    <tr>
+      <td>Diet: herbivore</td>
+      <td>–0.019</td>
+      <td>–0.161</td>
+      <td>0.119</td>
+      <td>59,936</td>
+      <td>0.781</td>
+    </tr>
+    <tr>
+      <td>Diet: frugivore/granivore</td>
+      <td>0.095</td>
+      <td>–0.098</td>
+      <td>0.292</td>
+      <td>59,900</td>
+      <td>0.329</td>
+    </tr>
+    <tr>
+      <td>Centred log10 body mass</td>
+      <td>0.004</td>
+      <td>–0.043</td>
+      <td>0.05</td>
+      <td>58,765</td>
+      <td>0.876</td>
+    </tr>
+    <tr>
+      <td>Log10 glucose</td>
+      <td>0.137</td>
+      <td>0.012</td>
+      <td>0.255</td>
+      <td>59,900</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td>Maximum lifespan</td>
+      <td>0.037</td>
+      <td>–0.122</td>
+      <td>0.195</td>
+      <td>59,043</td>
+      <td>0.648</td>
+    </tr>
+    <tr>
+      <td>Clutch mass</td>
+      <td>0.151</td>
+      <td>–0.03</td>
+      <td>0.346</td>
+      <td>59,900</td>
+      <td>0.114</td>
+    </tr>
+    <tr>
+      <td>Developmental time</td>
+      <td>0.04</td>
+      <td>–0.188</td>
+      <td>0.266</td>
+      <td>59,303</td>
+      <td>0.725</td>
+    </tr>
+  </tbody>
+</table>
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/103205/elife-103205-fig4-v1.jpg)
 
@@ -111,7 +317,7 @@ We observed no significant effect of age relative to maximum lifespan nor sex on
 
 ## Discussion
 
-## Plasma glucose level and albumin glycation rate (co)variation patterns suggest resistance mechanisms
+### Plasma glucose level and albumin glycation rate (co)variation patterns suggest resistance mechanisms
 
 Our findings show that glucose levels vary widely among different bird groups. Interspecific differences are partly explained by the allometric relationship of glycaemia with body mass (Figure 2A), which has already been reported in previous studies (Szarka and Lendvai, 2024; Umminger, 1975; Braun and Sweazea, 2008; Kjeld and Ólafsson, 2008; Tomasek et al., 2019). Indeed, Passeriformes, Apodiformes, and some Columbiformes (e.g. Nesoenas mayeri holds the highest value in our dataset) are found at the higher end of the glucose-level continuum, in accordance with their relatively small body mass and powered flight, while groups of larger birds such as Phoenicopteriformes, Anseriformes, Rheiformes, and Suliformes tend to show low glycaemia levels. This pattern is similar for glycation, with some groups of large birds (such as Phoenicopteriformes, Anseriformes, and Suliformes) showing the lowest levels of glycated albumin, while small birds (such as Apodiformes) had the highest values. Nevertheless, glycation remains high in some birds in relation to their glucose levels, as in Rheiformes, or low as in Psittaciformes or Passeriformes. The case of Procellariiformes, which are typically long-lived birds, is particularly striking, with some species exhibiting some of the highest glycation levels (Calonectris diomedea and Macronectes giganteus) and others some of the lowest (Procellaria aequinoctialis). This suggests that, if birds are protected against the deleterious effects of high glycaemia, certain species may have evolved mechanisms to efficiently prevent proteins to be glycated at high rates while others may have evolved mechanisms to resist the consequences of protein glycation. We should also bear in mind that some taxonomic groups may be under-represented in our study, or biases in species selection due to availability contingencies (e.g. species common in zoos or present in European countries) may exist, so further studies should target this under-represented groups in order to confirm our predictions.
 
@@ -119,13 +325,13 @@ As expected for a non-enzymatic reaction, just by the law of mass action, bird a
 
 Our analyses do not succeed in indicating a significant positive relationship between average glycation levels and the number of glycatable lysines in the albumin sequence. This may be attributed to the limited number of species employed or the weak variation in the number of glycatable lysine residues, which are mostly ranging from 33 to 39. An interesting exception are the 18 glycatable lysine residues of flamingos (Phoenicopterus ruber), which also shows very low glycation levels (mean = 10.1%). However, the exceptions of 44 in zebra finches and 20 in godwits (Limosa lapponica, used in place of Limosa limosa) are nevertheless associated with very similar average glycation levels of 20.2% and 20.7% respectively.
 
-## Plasma glucose relates with longevity and may be influenced by reproductive strategies
+### Plasma glucose relates with longevity and may be influenced by reproductive strategies
 
 Our results were only in minor agreement with predictions from POLS theory: it holds for body mass, but not for the other life history variables tested. The only previous comparative study of glycaemia and life history traits to our knowledge (Tomasek et al., 2019) shows no relationship with mass-adjusted maximum lifespan in passerines. However, our study over 88 bird species on 22 orders revealed an increase in glucose with mass-adjusted longevity up to a plateau (see Figure 2B). Thus, the relationship between glucose and maximum lifespan may depend on differences between bird orders or be tied to specific species particularities not explored in our study. Such species particularities might involve additional undetermined ecological factors that modify the relationship of glycaemia with longevity. Further exploration of glucose metabolism in relation with lifestyle will bring further light on species-specific life history adaptations concerning glucose. For example, the species with the lower mass-adjusted maximum lifespan here was a cormorant (L. verrucosus), which have quite low glucose values for birds.
 
 Regarding reproductive investment (i.e. clutch mass), our results show no relationship with glycation (see Table 2), while previous studies reported positive relationships with glycaemia in passerines (Tomasek et al., 2019; Hackett et al., 2008). Interestingly, most of the species with high clutch mass included in our study belong to the Anseriformes (Supplementary file 2, Figure ESM2.1). While these species exhibit very low glycaemia and albumin glycation rates, they are also characterized by a particular reproductive strategy compared to passerines, for whom clutch mass does not imply the same in terms of parental investment. For instance, Anseriformes, unlike Passeriformes, are precocial and their offspring are not very dependent on parental care. Furthermore, they are capital breeders, accumulating the energetic resources required for reproduction in advance rather than collecting them during reproduction. These species typically have large clutch sizes and incubation is usually carried out by females, who store internal fat resources to support this main part of the parental investment. In addition, ducklings are born highly developed, reducing the amount of care required post-hatching (see e.g. Moreno, 1989; Winkler, 2016). Consequently, their dependence on glucose as a rapid energy source for reproduction may be lower, with investment in this activity likely more closely linked to lipid accumulation. This could explain why we did not detect previously reported effects of clutch mass on glucose levels.
 
-## Terrestrial carnivores show a paradoxically increased albumin glycation rate without increased plasma glucose levels
+### Terrestrial carnivores show a paradoxically increased albumin glycation rate without increased plasma glucose levels
 
 Contrary to our expectation of finding differences across dietary groups, plasma glucose did not significantly vary with species diet. This aligns with results previously reported by Tomasek et al., 2019 for Passeriformes or by Kapsetaki et al., 2023 for 160 species of vertebrates among which 48 were birds, but not with Tomášek et al., 2022, which showed glycaemia to be increased with the proportion of fruits/seeds in the diet, or with Szarka and Lendvai, 2024, which showed higher (mass-adjusted) glucose levels for terrestrial carnivores and insectivores (those included in our terrestrial carnivores’ category) and lower for frugivorous/nectarivorous. On the other hand, intraspecific data indicates that changes in diet composition hardly affect glycaemia in birds (Basile et al., 2022). These studies suggest that glycaemia is tightly regulated independently of dietary composition within species, while it probably varies across species depending on the diet they are adapted to, although depending on the bird groups included in the analyses and the way of assessing it.
 
@@ -135,6 +341,6 @@ Interestingly, the contrast between terrestrial and aquatic predators, which did
 
 Finally, differences between captive and wild populations could be considered as a source of variation in glucose or glycation levels due to a more sedentary lifestyle in captivity, with lower activity levels and a higher food intake likely to lead to increased circulating glucose levels in captive individuals. Additionally, differences in nutrient intake, such as antioxidants, specific fatty acids, or amino acids, between captive and wild populations could contribute to variations in glycation levels, as we saw above. Nevertheless, we think that this factor is unlikely to significantly affect our findings regarding diet categories because our study encompasses species from both captive and wild populations across various diet groups, particularly those exhibiting significant differences (e.g. omnivores versus terrestrial carnivores).
 
-## Conclusion and perspectives
+### Conclusion and perspectives
 
 In conclusion, the avian plasma glucose levels measured here are generally higher or in the high range of values recorded for mammalian species (Polakof et al., 2011). Our study also concludes that there is considerable variation in plasma glucose levels and albumin glycation rates among bird species, with those with the highest glucose levels showing greater resistance to glycation. The correlation between plasma glucose and life history traits are primarily influenced by its inverse association with body mass, along with non-linear, mass-independent effects of longevity. Finally, although diet does not explain plasma glucose levels in our study, terrestrial carnivores have higher albumin glycation rates than omnivores. Whether these intriguing results are explained by specific effects of certain dietary components, such as PUFAs and/or antioxidants, remains to be determined. Differences in plasma glucose levels, albumin glycation rates, and glycation resistance (as glycation levels adjusting for plasma glucose concentration) across bird species do not seem consistent with predictions according to the POL hypothesis, except for body mass. Further investigation is needed to elucidate the correlation between these traits and specific life conditions, such as reproductive strategy, migration patterns, flight mode, or more detailed diet composition. In addition, more in-depth exploration of glycation levels within high glycaemic groups such as the Passeriformes and other small birds, which make up a significant proportion of avian species, could provide valuable new insights. Similarly, investigating groups such as the Phoenicopteriformes or Anseriformes, which are at the other end of the glycaemic-glycation spectrum, could shed light on the origin of differences between avian orders. Furthermore, notable variations were observed between species within orders, as in the Procellariiformes, which with their high mass-adjusted longevity, and particularly given that some of the age-known individuals in our dataset (indeed, two specimens of snow petrels, Pagodroma nivea, showed ages higher than the maximum lifespan reported in the sources we explored, determining a new record) have still relatively low levels of glycation, may suggest that some species (the ones that do show higher glycation levels) are not intrinsically resistant to glycation, but rather to its adverse consequences for health. As the main limitations from this study, the usage of individuals from both wild and captive populations, sampled at different periods of the year, and the low sample size for some species, due to logistic constraints, may have introduced noise in the values reported that should be addressed in future studies by implementing a stricter sampling protocol. Also, a more thorough and accurate report and compilation of life history traits from multiple species would allow to increase the number of species included in this kind of analyses. Future research should also focus on specific species to unravel the physiological mechanisms mediating the effects of blood glucose and protein glycation on life history trade-offs, in particular mechanisms that may vary between taxa and contribute to characteristic adaptations in birds to mitigate the potentially negative effects of comparatively high glycaemia.

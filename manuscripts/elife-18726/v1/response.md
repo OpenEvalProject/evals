@@ -136,9 +136,7 @@ We apologize for this lack of clarity. We have made a number of changes to the d
 
 In the first experiment on group- vs. single-housed mice, what age are these animals? Are these adults? If not, when in the P22-35 window do these animals come from? Were there any differences across this broad range of isolation times?
 
-We did examine the effects of age on FSL in socially isolated females. There were no significant differences across this range (p=0.23) (see Author response image 1).10.7554/eLife.18726.012Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.18726.012
-
-DOI: http://dx.doi.org/10.7554/eLife.18726.012
+We did examine the effects of age on FSL in socially isolated females. There were no significant differences across this range (p=0.23) (see Author response image 1).10.7554/eLife.18726.012Author response image 1.
 
 In the Abstract, it should be stated that exposure of male mice to acute physical stress had the same effect.
 

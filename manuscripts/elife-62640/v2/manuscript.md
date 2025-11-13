@@ -46,9 +46,21 @@ We previously performed a genome-wide siRNA-based screen in human cells to ident
 
 ## Results
 
-## TRIM37 prevents formation of centriolar protein assemblies (Cenpas)
+### TRIM37 prevents formation of centriolar protein assemblies (Cenpas)
 
 To further decipher the origin of the supernumerary foci containing Centrin and CP110 that appear following TRIM37 depletion, we investigated where in the cell they first occurred. We reasoned that appearance of supernumerary foci close to resident centrioles could be indicative of centriole reduplication, with premature disengagement leading to the licensing of resident centrioles and procentrioles to prematurely seed centriole assembly. By contrast, appearance of supernumerary foci away from resident centrioles could suggest some type of de novo process. We performed live imaging of HeLa cells expressing Centrin-1:GFP (referred to as HC1 cells hereafter) and depleted of TRIM37 by siRNAs. Western blot analyses established that TRIM37 depletion using siRNA was near complete both in HC1 cells and in HeLa cells used hereafter (Figure 1—figure supplement 1A,B). As shown in Figure 1A, we found that extra Centrin-1:GFP foci can appear in the vicinity of resident centrioles (yellow arrows, 8/13 foci), as well as far from them (orange arrows, 5/13 foci). These results suggest that extra Centrin-1:GFP foci upon TRIM37 depletion may form both through centriole reduplication and some type of de novo process.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62640/elife-62640-fig1-v2.jpg)
+
+**Figure 1.:** (A) Relevant images from wide-field time-lapse recordings of HeLa cells expressing Centrin-1:GFP and depleted of TRIM37 for 48 hr before imaging onset (10 min time frame). Yellow arrows point to two foci appearing close to resident centrioles (8/13 extra foci in 11 cells), orange arrow to one focus appearing away from resident centrioles (5/13 extra foci). Solid arrows indicate first occurrence of foci, dashed arrows their continued presence. Time is indicated in h:min since imaging onset. Note that the intensity of extra Centrin-1:GFP foci was typically weaker than that of regular centrioles, especially in the early assembly stages. Note also resident centriole and procentriole appearing in the field of view at the bottom right in Cell 1, 9:20. In this and other Figure panels, scale bars correspond to 5 μm, unless indicated otherwise. (B) HeLa cells expressing Centrin-1:GFP upon treatment with TRIM37 siRNAs or upon RO3306 addition for 48 hr. Cells were immunostained for GFP, HsSAS-6 and CEP63. Nuclear contours are drawn with dashed yellow lines. In this and subsequent figures, magnified images from indicated numbered regions are shown. (C) Corresponding percentage of cells with extra Centrin-1:GFP foci that also harbor CEP63 and/or HsSAS-6. Note that extra Centrin-1:GFP foci could be positive for both Cep63 and HsSAS-6 in RO3306-treated cells. Chart shows the average and SDs from two independent experiments (n = 50 cells each). Here and in other charts of this figure, two conditions that do not share the same letter are significantly different from each other, with p<0.05; unpaired Student’s t-test; see Supplementary file 2 for exact p values. (D) HeLa cells depleted of TRIM37 and immunostained for Centrin-2 plus CP110, illustrating a case with an extra single focus (left, inset 1) and one with an extra pair of foci (right). DNA is shown in blue in this and all other figure panels unless stated otherwise. (E) Corresponding percentage of interphase cells with extra single focus or extra pairs of foci at indicated times after TRIM37 siRNA transfection. Chart shows the average and SDs from three independent experiments (n = 50 cells each). (F) Microtubule depolymerization-regrowth experiment in mitotic HeLa cells treated with control or TRIM37 siRNAs. Microtubules were depolymerized by a 30-min cold shock followed by 1–2 min at room temperature before fixation and immunostaining for Centrin-2 and α-tubulin. (G) Corresponding percentage of mitotic cells with >2 MTOCs. Chart shows the average and SDs from three independent experiments (n = 50 cells each). Note that ~40% of the extra Centrin-2 foci observed in mitosis did not nucleate microtubules, as illustrated for two of them in inset 1 (siTRIM37); data from n = 40 Cenpas in each of the three independent experiments. Source data for panels C, E, and G can be found in Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62640/elife-62640-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A, B) Western blot of lysates from HeLa cells (A) or HeLa Centrin-1:GFP cells (B) transfected with siRNAs against TRIM37 and probed with antibodies against TRIM37 (top) or α-tubulin as loading control (bottom). Select molecular weight markers are indicated in kDa in this and other western blot panels. (C) HeLa cells expressing Centrin-1:GFP immunostained for GFP, HsSAS-6 and CEP63. Nuclear contours are drawn with dashed yellow lines. In this and other supplement figure panels, scale bars correspond to 5 μm, unless indicated otherwise. (D) HeLa cells immunostained for Centrin-2 and CP110. Left: G1 cell, with two resident centrioles, right: S/G2 cell with two centriole pairs, each with one resident centriole and one procentriole. (E) Western blot of cell lysates from control and Mulibrey patient (P-1, P-2) fibroblasts probed with antibodies against TRIM37 (top) or α-tubulin as loading control (bottom). The arrow indicates TRIM37, the asterisk a non-specific band.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62640/elife-62640-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) HeLa cells expressing TRIM37:GFP or TRIM37 tagged with a nuclear export signal and GFP (TRIM37:NES:GFP) immunostained for GFP. An inset of the indicated area with modified brightness and contrast is shown at the bottom of each image (1*). (B) Quantification of extra number of CP110 foci in HeLa cells treated with control or TRIM37 siRNAs and transfected with indicated plasmids (pcDNA3: parental vector). Cells were immunostained for GFP and CP110. Chart shows the average and SDs from two independent experiments (n = 50 cells each). Two conditions that do not share the same letter are significantly different from each other, with p<0.05; unpaired Student’s t-test; see Supplementary file 2 for exact p values. (C) HeLa (left) and U2OS (right) cells transfected with TRIM37:GFP, and immunostained for GFP plus γ-tubulin. (D) HeLa cells transfected with TRIM37:GFP, and immunostained for GFP plus Centrobin. Cells with a single Centrobin focus (left) were classified as being in G1, cells with two or three Centrobin foci (right) as being in S/G2. (E) Corresponding percentage of cells in G1 or S/G2 exhibiting TRIM37:GFP at centrosomes. n = 50 cells, single experiment. (F, G) High magnification confocal images of TRIM37:GFP localization with respect to indicated centriolar markers; HeLa cells were fixed 24 hr after transfection in this case. Scale bar 500 nm. (H) Microtubule depolymerization-regrowth experiment of mitotic HeLa cells treated with control or TRIM37 siRNAs. Microtubules were depolymerized by a 30-min cold shock, fixed and immunostained for Centrin-2 and α-tubulin. Source data for panels B and E can be found in Figure 1—source data 1.
 
 To further investigate this question, we analyzed fixed HC1 cells in the S or G2 phase of the cell cycle with antibodies against GFP to monitor Centrin-1:GFP foci, as well as against CEP63 to mark the proximal region of resident centrioles, and HsSAS-6 to mark procentrioles. As expected, we found that control cells harbored four Centrin-1:GFP foci, two of which were CEP63 positive and two of which were HsSAS-6 positive (Figure 1—figure supplement 1C). Strikingly, in cells depleted of TRIM37, we found that in addition to the normal four Centrin-1:GFP foci accompanied by two Cep63 foci and two HsSAS-6 foci,~90% of extra Centrin-1:GFP foci did not harbor CEP63 or HsSAS-6 (Figure 1B,C). For comparison, we likewise analyzed cells arrested in G2 following treatment with the CDK1 inhibitor RO3306, which induces PLK1-dependent centriole reduplication (Loncarek et al., 2010). In this case, >90% of extra Centrin-1:GFP foci harbored CEP63 and/or HsSAS-6 (Figure 1B,C), in contrast to the situation upon TRIM37 depletion. These findings further indicate that TRIM37 does not act solely to prevent centriole reduplication.
 
@@ -56,13 +68,13 @@ We set out to address whether the supernumerary foci that appear following TRIM3
 
 Overall, we conclude that TRIM37 depletion results in extra Centrin-1:GFP foci both near and far from resident centrioles, suggestive of centriole reduplication happening together with some de novo process. Moreover, we find that such foci harbor some centriolar proteins but usually not others, and can trigger further rounds of centriole assembly. We will refer hereafter to these entities as Centriolar protein assemblies, or Cenpas in short.
 
-## TRIM37 regulates Cenpas formation from outside the nucleus and localizes to centrosomes
+### TRIM37 regulates Cenpas formation from outside the nucleus and localizes to centrosomes
 
 TRIM37 can regulate transcription through nuclear association with the polycomb repressive complex 2 (PRC2) (Bhatnagar et al., 2014). To explore whether TRIM37 may function as a transcriptional regulator in preventing Cenpas formation, we addressed whether rescue of the TRIM37 depletion phenotype depended on the presence of the protein in the nucleus. We generated a version of TRIM37 forced to exit the nucleus via fusion to a nuclear export signal (NES). We found that both TRIM37:GFP and TRIM37:NES:GFP equally rescued the TRIM37 depletion phenotype (Figure 1—figure supplement 2A,B), indicating that TRIM37 acts outside the nucleus to prevent Cenpas formation.
 
 We explored whether TRIM37 localizes to centrioles. Since antibodies did not prove suitable to address this question (Balestra et al., 2013; Meitinger et al., 2016), we instead expressed TRIM37:GFP, which was present in the nucleus and more clearly in the cytoplasm (Figure 1—figure supplement 2C). Intriguingly, in some cells, TRIM37:GFP also localized to centrosomes marked by γ-tubulin (Figure 1—figure supplement 2C). To investigate whether this may reflect a cell cycle restricted distribution, TRIM37:GFP-expressing cells were probed with antibodies against GFP and Centrobin, which localizes preferentially to the resident daughter centriole and to procentrioles; therefore, G1 cells bear a single Centrobin focus while S/G2 cells bear 2 or 3 (Zou et al., 2005; Figure 1—figure supplement 2D). This enabled us to establish that whereas only ~10% of G1 cells harbored centrosomal TRIM37:GFP,~60% of S/G2 cells did so (Figure 1—figure supplement 2E). We also localized the fusion protein with respect to CEP63, Centrin-2 and the distal appendage protein CEP164, finding that TRIM37:GFP partially overlapped with CEP164 (Figure 1—figure supplement 2F,G). Overall, we conclude that TRIM37 localizes to the distal part of centrioles; it will be interesting to investigate whether TRIM37 acts from this location to prevent the formation of at least some Cenpas, perhaps those near resident centrioles.
 
-## Cenpas can act as MTOCs and are present in Mulibrey patient fibroblasts, resulting in aberrant spindle assembly and chromosome segregation defects
+### Cenpas can act as MTOCs and are present in Mulibrey patient fibroblasts, resulting in aberrant spindle assembly and chromosome segregation defects
 
 TRIM37-depleted HeLa cells exhibit an increased incidence of multipolar spindles and chromosome miss-segregation (Balestra et al., 2013), suggesting that Cenpas can nucleate microtubules and serve as extra MTOCs. To thoroughly test this possibility, we performed microtubule depolymerization-regrowth experiments in HeLa cells depleted of TRIM37 (Figure 1F, figure 1 - figure supplement 2H). We found that whereas most control mitotic cells harbored two MTOCs, TRIM37 depletion resulted in an increased frequency of cells with more than two MTOCs, which often differed in size (Figure 1F,G). In addition, we found that ~40% of Cenpas did not nucleate microtubules, indicative of some compositional heterogeneity (Figure 1F, siTRIM37, inset 1). Overall, we conclude that microtubules nucleated from Cenpas contribute to the aberrant spindle assembly and chromosome miss-segregation phenotypes of TRIM37-depleted cells.
 
@@ -70,41 +82,77 @@ To further explore the importance of Cenpas, we addressed whether they are also 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/62640/elife-62640-fig2-v2.jpg)
 
-**Figure 2.:** (A) Control and patient-1 (P-1) fibroblasts in mitosis immunostained for Centrin-2 and γ-tubulin. (B) Corresponding percentage of mitotic cells with extra number of Centrin-2 or γ-tubulin foci in control and patient (P-1 and P-2) fibroblasts. Chart shows the average and SDs from three independent experiments (n: total number of cells scored per condition). Here and in other charts of this figure, two conditions that do not share the same letter are significantly different from each other, with p<0.05; unpaired Student’s t-test; see Supplementary file 2 for exact p values. (C) Control and patient-2 (P-2) fibroblasts in metaphase immunostained for Centrin-2 and α-tubulin. (D, E) Corresponding percentage of metaphase cells with bipolar, pseudobipolar or multipolar spindles (D), and percentage of metaphase cells with extra number of Centrin-2 foci (E). Charts show the average and SDs from three independent experiments (n: total number of cells scored per condition). (F) Control and patient-2 (P-2) fibroblasts in anaphase immunostained for Centrin-2 and α-tubulin. (G, H) Corresponding percentage of anaphase cells with bipolar, pseudobipolar or multipolar spindles (G), and percentage of bipolar or pseudobipolar anaphase cells with chromosome segregation defects (H). Charts show the average and SDs from three independent experiments (n: total number of cells scored per condition). (I) Control and patient-2 (P-2) interphase fibroblasts stained with DAPI. (J) Corresponding percentage of interphase cells bearing a micronucleus. Chart shows the average and SDs from three independent experiments (n: total number of cells scored per condition). Source data for panels B, D, E, G, H, and J can be found in Figure 2—source data 1.  Figure 2—source data 1.Figure 2B, D, E, G, H and J.
+**Figure 2.:** (A) Control and patient-1 (P-1) fibroblasts in mitosis immunostained for Centrin-2 and γ-tubulin. (B) Corresponding percentage of mitotic cells with extra number of Centrin-2 or γ-tubulin foci in control and patient (P-1 and P-2) fibroblasts. Chart shows the average and SDs from three independent experiments (n: total number of cells scored per condition). Here and in other charts of this figure, two conditions that do not share the same letter are significantly different from each other, with p<0.05; unpaired Student’s t-test; see Supplementary file 2 for exact p values. (C) Control and patient-2 (P-2) fibroblasts in metaphase immunostained for Centrin-2 and α-tubulin. (D, E) Corresponding percentage of metaphase cells with bipolar, pseudobipolar or multipolar spindles (D), and percentage of metaphase cells with extra number of Centrin-2 foci (E). Charts show the average and SDs from three independent experiments (n: total number of cells scored per condition). (F) Control and patient-2 (P-2) fibroblasts in anaphase immunostained for Centrin-2 and α-tubulin. (G, H) Corresponding percentage of anaphase cells with bipolar, pseudobipolar or multipolar spindles (G), and percentage of bipolar or pseudobipolar anaphase cells with chromosome segregation defects (H). Charts show the average and SDs from three independent experiments (n: total number of cells scored per condition). (I) Control and patient-2 (P-2) interphase fibroblasts stained with DAPI. (J) Corresponding percentage of interphase cells bearing a micronucleus. Chart shows the average and SDs from three independent experiments (n: total number of cells scored per condition). Source data for panels B, D, E, G, H, and J can be found in Figure 2—source data 1.
 
 Overall, we conclude that Cenpas are present and active in Mulibrey patient cells, thus contributing to genome instability.
 
-## Ultra expansion microscopy and electron microscopy reveal aberrant centriole-related structures upon TRIM37 depletion
+### Ultra expansion microscopy and electron microscopy reveal aberrant centriole-related structures upon TRIM37 depletion
 
 We set out to address whether Cenpas exhibit further hallmarks of centrioles. We stained cells depleted of TRIM37 with antibodies against acetylated tubulin, a signature modification of centriolar microtubules, finding that ~23% cells possessed extra acetylated tubulin foci (Figure 3—figure supplement 1A,B). To examine this feature at higher resolution, we turned to ultrastructure expansion microscopy (U-ExM) coupled to confocal imaging (Gambarotto et al., 2019). Control and TRIM37-depleted RPE-1 cells expressing Centrin1:GFP were immunostained for GFP to identify Cenpas, for CEP152 to mark mature centrioles and for acetylated tubulin. Control cells contained two mature centrioles positive for all three markers (Figure 3A). We found that some of the Cenpas formed upon TRIM37 depletion harbored merely Centrin1:GFP, but neither acetylated tubulin nor CEP152 (Figure 3B–D, yellow arrows). By contrast, other Cenpas were positive for all three markers (Figure 3C–E), with the acetylated tubulin signal being sometimes smaller than normal (Figure 3C,D, white arrows). Moreover, some Cenpas appeared to have matured into entities with seemingly regular acetylated tubulin and CEP152 signals (Figure 3E). Together, these findings support the notion that Cenpas are heterogeneous in nature, with partially overlapping composition.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62640/elife-62640-fig3-v2.jpg)
+
+**Figure 3.:** (A–E) Ultrastructure expansion microscopy (U-ExM) confocal images of control (A) or TRIM37 (B–E) depleted RPE-1 cells expressing Centrin-1:GFP, and immunostained for GFP, CEP152 as well as acetylated tubulin. Yellow arrows point to Cenpas lacking CEP152 and acetylated tubulin, white arrows to those harboring both proteins, but with an unusual distribution. Scale bar 500 nm. (F–J) CLEM analysis of HeLa cell (cell three in Supplementary file 1) expressing Centrin-1:GFP and depleted of TRIM37. Maximal intensity projection of wide-field microcopy image covering the entire cell volume (F), and magnified insets from the light microscopy images above the corresponding 50 nm section EM images (G–J), with white arrows pointing to relevant Centrin-1:GFP focus. Scale bars: 5 μm in F, 500 nm in G. Here and in panels K-M, green and pink dashed lines surround centriole-related and tiger structures, respectively. Filled orange lines surround resident centrioles, which could be recognized when going through all the sections encompassing the organelle. (K–M) Centriole-related (K, cell seven in Supplementary file 1; L, cell seven in Supplementary file 1), and tiger structure (M, cell two in Supplementary file 1). Scale bar is 500 nm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62640/elife-62640-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) RPE-1 cells treated with control or TRIM37 siRNAs, and immunostained for CEP152 plus acetylated tubulin. (B) Corresponding percentage of cells with extra foci of acetylated tubulin. Chart shows the average and SDs from two independent experiments (n = 50 cells each). Two conditions that do not share the same letter are significantly different from each other, with p<0.05; unpaired Student’s t-test; see Supplementary file 2 for exact p values. (C–U) CLEM analysis of HeLa and RPE-1 cells expressing Centrin-1:GFP and transfected with control (C–D) or TRIM37 (E, K, R) siRNAs. Left-most images show maximal intensity projection of wide-field microcopy image covering the entire cell volume; scale bar: 5 μm. Magnified insets from the light microscopy images are shown above the 50 nm section EM images taken from the corresponding position. E corresponds to cell 2, K to cell 7, and R to cell 6 in Supplementary file 1. White arrows indicate the Centrin-1:GFP focus that correlates with the EM image shown below. Scale bars in insets are 500 nm. Green and pink dashed lines surround centriole-related and tiger structures, respectively. Filled orange lines surround resident centrioles. Source data for panel B can be found in Figure 3—figure supplement 1—source data 1.
 
 To uncover the ultrastructure of Cenpas, we conducted correlative light and electron microscopy (CLEM). Using fluorescence microscopy, we screened HeLa and RPE-1 cells expressing Centrin-1:GFP and depleted of TRIM37 to identify Cenpas, using a gridded coverslip to acquire information regarding GFP foci position, and then conducted serial section transmission electron microscopy (TEM). In addition to control cells (Figure 3—figure supplement 1C,D), we analyzed eight cells depleted of TRIM37 (Figure 3F, Figure 3—figure supplement 1E,K,R, Supplementary file 1). We observed a total of 47 Centrin-1:GFP foci by light microscopy in these eight TRIM37-depleted cells and found most of the expected resident centrioles (15/16, Figure 3G,H; Figure 3—figure supplement 1F,G,M,Q,S,T). In addition, this analysis uncovered 22 unusual structures (Supplementary file 1). Ten of these were variable centriole-related electron-dense assemblies that harbored microtubules, but only partially resembled centrioles (Figure 3I,K,L; Figure 3—figure supplement 1I,J,L,N,O,P). Strikingly, the remaining 12 unusual structures were elongated electron-dense striped entities, hereafter referred as ‘tiger structures’ (Figure 3J,M; Figure 3—figure supplement 1H,U). We noted also that an individual tiger structure sometimes correlated with more than one Centrin-1:GFP focus (Figure 3—figure supplement 1U).
 
 Overall, we conclude that the ultrastructure of Cenpas formed upon TRIM37 depletion is somewhat heterogeneous, perhaps reflecting different pathways or steps in their assembly.
 
-## TRIM37 depletion triggers formation of elongated Centrobin assemblies that likely correspond to the tiger structures
+### TRIM37 depletion triggers formation of elongated Centrobin assemblies that likely correspond to the tiger structures
 
 Because TRIM37 is an E3 ligase, the activity of which is important for preventing Cenpas formation (Balestra et al., 2013), we reasoned that one or several proteins implicated in centriole assembly might accumulate in an aberrant manner upon TRIM37 depletion, causing the observed phenotype. Therefore, we conducted a small screen by immunostaining cells depleted of TRIM37 with antibodies against >20 centriolar and centrosomal proteins (Figure 4—figure supplement 1A). Strikingly, this analysis revealed notably that Centrobin, which normally localizes tightly to the daughter centriole and to procentrioles (Zou et al., 2005), is present in elongated assemblies in the cytoplasm upon TRIM37 depletion (Figure 4A,B). We found that ~80% of TRIM37-depleted cells usually bore one or two such Centrobin assemblies (Figure 4C; Figure 4—figure supplement 1B), and that all cells harboring Cenpas had Centrobin assemblies (n = 150), with Cenpas often colocalizing with them (~79%). Moreover, while most centriolar proteins tested did not localize to Centrobin assemblies (Figure 4—figure supplement 1A and C–E), we found that SPICE did, although it was not needed for the formation of Centrobin assemblies (Figure 4—figure supplement 1F,G). Furthermore, we uncovered that PLK4 is also detected in Centrobin assemblies, which therefore likely coincide with the large PLK4 condensates that form in TRIM37-knock out RPE-1 cells (TRIM37-ko) (Meitinger et al., 2020; Meitinger et al., 2016; Figure 4—figure supplement 1H; Materials and methods). Just like for SPICE, we found that Centrobin assemblies generated upon TRIM37 depletion formed even when PLK4 was targeted using siRNAs (Figure 4D,E), despite the presence of monopolar mitotic figures attesting to the efficiency of depletion. However, the size of Centrobin assemblies was slightly diminished upon PLK4 depletion (Figure 4D; Figure 4—figure supplement 1I,J; see Discussion). By contrast, depletion of Centrobin by siRNAs precluded formation of large PLK4 condensates (Figure 4D,E).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/62640/elife-62640-fig4-v2.jpg)
+
+**Figure 4.:** (A) HeLa cells in G2 or mitosis (M), as indicated in the upper left corners of the images, treated with control or TRIM37 siRNAs, and immunostained for CP110 plus Centrobin. (B) High-magnification confocal view of cells treated with control or TRIM37 siRNAs immunostained for Centrobin and CP110. Arrow points to elongated Centrobin assembly. Scale bar 1 μm. (C) Number of Centrobin structures in HeLa cells depleted of TRIM37. Chart shows the average and SDs from three independent experiments (n = 50 cells each). (D) HeLa cells were first transfected with PLK4 or Centrobin siRNAs and 24 hr thereafter transfected again with TRIM37 siRNAs. Cells were fixed 72 hr after first transfection and stained with Centrobin and PLK4 antibodies (Wong et al., 2015). (E) Corresponding percentage of cells bearing Centrobin structures. Chart shows the average and SDs from three independent experiments (n = 50 cells each). Here and in other charts of this figure, two conditions that do not share the same letter are significantly different from each other, with p<0.05; unpaired Student’s t-test; see Supplementary file 2 for exact p values. (F) U-ExM coupled to STED super-resolution microscopy of RPE-1 cells immmunostained for CEP152, Centrin-1 and Centrobin. White arrows point to Cenpas in close proximity to Centrobin assembly. Scale bars are 250 nm. (G) Box-and-whisker plot of inter stripe distances in TEM tiger structures (n = 53 from five tiger structures) and U-ExM Centrobin structures (n = 30 from three Centrobin structures). U-ExM-induced sample expansion was taken into consideration to compare TEM vs. U-ExM inter stripe measurements. Box plots show median, interquartile range (10–90 percentile) and SDs. (H) Western blot of lysates from HeLa cells treated with control or TRIM37 siRNAs probed with antibodies against Centrobin (top) or HSP70 as loading control (bottom). (I) Western blot of soluble (S) or insoluble (P, for pellet) fractions of lysates from HeLa cells treated with control or TRIM37 siRNAs, probed with antibodies against Centrobin (top) or α-tubulin as loading control (bottom). Note that Centrobin in the insoluble fraction migrates slower upon TRIM37 depletion, suggestive of some posttranslational modification. (J) Western blot of total Centrobin protein levels in control and TRIM37-depleted HeLa cells treated with cycloheximide (CHX) for indicated time in hours (h), probed with antibodies against Centrobin (top) or α-tubulin as loading control (bottom). Note that the amount of lysate loaded for the TRIM37-depleted sample was ~50% of that loaded for the siControl condition in this case. (K) Quantification of relative Centrobin protein levels from western blots such as the one shown in J. Chart shows the average and SDs from two independent experiments. Lower-case and upper-case letters above the charts reflect comparisons of two distinct data sets. Source data for panels C, E, G, and K can be found in Figure 4—source data 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/62640/elife-62640-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Centriolar and centrosomal proteins analyzed by immunofluorescence upon TRIM37 depletion. See Materials and methods for antibodies utilized. (B) Quantification of frequency of Centrobin assemblies in HeLa cells depleted of TRIM37. Chart shows the average and SDs from three independent experiments (n = 50 cells each). Here and in other charts of this figure, two conditions that do not share the same letter are significantly different from each other, with p<0.05; unpaired Student’s t-test; see Supplementary file 2 for exact p values. (C–E) HeLa cells depleted of TRIM37 and immunostained with antibodies against Centrobin and Rootletin (C), Centrobin and CEP68 (D), Centrobin and HsSAS-6 (E). (F) HeLa cells treated with control, TRIM37 or simultaneously with both TRIM37 and SPICE siRNAs, immunostained for SPICE and Centrobin. (G) HeLa cell expressing SPICE:GFP immunostained for GFP and Centrobin. (H) RPE-1 and RPE-1 TRIM37 knock-out cells immunostained with antibodies against Centrobin and PLK4 (Wong et al., 2015). (I) Quantification of mean PLK4 intensity in Centrobin structures in HeLa cells depleted of TRIM37 or double depleted of TRIM37 and PLK4 as in Figure 4D. Chart shows the average and SDs from two independent experiments. Approximately 50 Centrobin structures were quantified per experiment and condition. (J) Quantification of area of Centrobin assemblies in HeLa cells depleted of TRIM37 or simultaneously of both TRIM37 and PLK4, as in Figure 4D. Chart shows the average and SDs from two independent experiments. Approximately 50 Centrobin structures were quantified per experiment and condition. Source data for panels B, I, and J can be found in Figure 4—source data 1.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/62640/elife-62640-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Quantitative real time PCR of TRIM37 and Centrobin mRNA in HeLa cells treated with control or TRIM37 siRNAs. Average of three independent experiments. In the statistical analysis, lower-case and upper-case letters indicate two independent set of data analyzed. Two conditions that do not share the same letter are significantly different from each other, with p<0.05; unpaired Student’s t-test; see Supplementary file 2 for exact p values. (B) HeLa cell (left) and HeLa cell overexpressing Centrobin:GFP (right), immunostained for GFP and CP110. (C) Confocal images of HeLa cells overexpressing TRIM37:GFP immunostained with antibodies against GFP and Centrobin. Source data for panel A can be found in Figure 4—source data 1.
+
 We set out to further characterize the elongated Centrobin assemblies formed upon TRIM37 depletion. We used U-ExM coupled to STED super-resolution microscopy to analyze these assemblies at higher resolution. We immunostained RPE-1 cells expressing Centrin-1:GFP with antibodies against GFP, CEP152, and Centrobin. In control conditions, centrioles viewed in cross-section exhibited a clear localization of Centrobin between the outer CEP152 and the inner Centrin-1:GFP signals (Figure 4F). Cells depleted of TRIM37 exhibited analogous distributions at resident centrioles (Figure 4F), but also harbored elongated Centrobin assemblies abutting Centrin-1:GFP foci (Figure 4F, arrows). Strikingly, the superior resolution afforded by U-ExM coupled to STED revealed that such Centrobin assemblies were striated (Figure 4F). Suggestively, the inter-stripe distances of these Centrobin assemblies were analogous to those of the tiger structures unveiled through CLEM (Figure 4G). In summary, U-ExM analysis strongly suggests that Centrobin is a constituent of the electron-dense tiger structures observed by TEM upon TRIM37 depletion, and raises the possibility that such structures serve as platforms for Cenpas formation.
 
-## TRIM37 depletion alters Centrobin stability
+### TRIM37 depletion alters Centrobin stability
 
 How could TRIM37 regulate Centrobin? Performing real time quantitative PCR experiments showed a slight diminution in Centrobin mRNA levels upon TRIM37 depletion (Figure 4—figure supplement 2A), suggesting that regulation is not at the transcriptional level. By contrast, western blot analysis uncovered that Centrobin protein levels were slightly increased upon TRIM37 depletion (Figure 4H). Given the elongated Centrobin assemblies identified by immunostaining, we speculated that the overall increase in Centrobin protein level might reflect an accumulation into such structures, potentially in an insoluble form. Accordingly, fractionating cell lysates into soluble and insoluble fractions, we found that the increase in Centrobin protein levels was most pronounced in the latter (Figure 4I). We noted also that the insoluble pool of Centrobin appeared to migrate slower in the gel upon TRIM37 depletion, suggesting that TRIM37 not only restricts Centrobin levels, but also might somehow regulate its posttranslational state.
 
 Since TRIM37 is an E3 ubiquitin ligase, we reasoned that its activity could modulate Centrobin protein degradation and, thereby, stability. To assess Centrobin protein stability, we monitored Centrobin protein levels by Western blot analysis in the presence of the translation inhibitor Cycloheximide, both in control and TRIM37-depleted cells. As reported in Figure 4J and K, we found that TRIM37 depletion increased Centrobin protein stability. One possibility would be that, normally, TRIM37 ubiquitinates Centrobin, thus targeting it for degradation, such that increased Centrobin levels upon TRIM37 depletion would trigger formation of Centrobin assemblies and Cenpas. However, although Centrobin overexpression generates aggregates (Jeong et al., 2007), we found that such aggregates did not resemble the Centrobin assemblies uncovered here, nor did they trigger Cenpas formation (Figure 4—figure supplement 2B). In addition, TRIM37 overexpression did not alter Centrobin centrosomal distribution (Figure 4—figure supplement 2C). Moreover, no evidence for TRIM37-mediated Centrobin ubiquitination was found in cell free assays (data not show), such that the detailed mechanisms of Centrobin modulation by TRIM37 remain to be deciphered. Regardless, we conclude that TRIM37 normally regulates Centrobin stability, preventing the protein from forming the elongated assemblies that are invariably present in cells with Cenpas.
 
-## Centrobin assemblies are present in Mulibrey patient fibroblasts and may serve as platforms for Cenpas formation
+### Centrobin assemblies are present in Mulibrey patient fibroblasts and may serve as platforms for Cenpas formation
 
 We set out to investigate whether Centrobin assemblies are also present in fibroblasts derived from a Mulibrey patient. Importantly, we found that this was the case in the majority of cells (Figure 5A,B), with most Centrobin assemblies being associated with Cenpas (~88%, N = 150). Furthermore, we found that Centrobin assemblies are present and usually coincident with active MTOCs during mitosis in patient fibroblasts (Figure 5C,D).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/62640/elife-62640-fig5-v2.jpg)
+
+**Figure 5.:** (A) Control and patient-2 fibroblasts immunostained for Centrin-2 and Centrobin. (B) Corresponding percentage of cells bearing Centrobin structures. Chart shows the average and SDs from three independent experiments (n: total number of cells scored per condition). Here and in other charts of this figure, two conditions that do not share the same letter are significantly different from each other, with p<0.05; unpaired Student’s t-test; see Supplementary file 2 for exact p values. (C) Control and patient-2 fibroblasts in mitosis immunostained for Centrin-2, Centrobin and α-tubulin. Note that Centrobin structures can either act as MTOCs (inset 3, top cell) or not (inset 3, bottom cell). (D) Corresponding percentage of metaphase cells with Centrobin structures either associated or not associated to an active MTOC. Chart shows the average and SDs from three independent experiments (n: total number of cells scored per condition). Lower-case and upper-case letters above the charts reflect comparisons of two distinct data sets. (E) HeLa cells were synchronized with a double thymidine block, released and transfected with TRIM37 siRNAs 24 hr before second thymidine release. Cells were fixed and immunostained with antibodies against Centrin-2 and Centrobin at the time of transfection (−24 hr) and at the indicated times after release. (F) Corresponding percentage of cells with Centrobin assemblies either in close proximity to Cenpas or else not associated with them. Chart shows the average and SDs from three independent experiments (n = 50 cells each). (G) Control and Centrobin-ko RPE-1 cells transfected with TRIM37 siRNAs immunostained for Centrin-2 and CP110. (H) Corresponding percentages of mitotic cells with >4 CP110 foci. Chart shows the average and SDs from three independent experiments (n = 50 cells each). Source data for panels B, D, F, and H can be found in Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/62640/elife-62640-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) HeLa cells in G2 or mitosis, as indicated, treated with control or Centrobin siRNAs, and immunostained for Centrobin plus CP110. (B) Corresponding percentage of mitotic cells with indicated number of CP110 foci. In the statistical analysis, lower-case, upper-case and italic letters indicate three independent set of data analyzed. Chart shows the average and SDs from three independent experiments (n = 50 cells each). Here and in other charts of this figure, two conditions that do not share the same letter are significantly different from each other, with p<0.05; unpaired Student’s t-test; see Supplementary file 2 for exact p values. (C) HeLa cells depleted of TRIM37 alone or simultaneously of TRIM37 and Centrobin, and immunostained for CP110 plus Centrobin. (D) Corresponding percentages of mitotic cells treated with the indicated siRNAs harboring >4 CP110 foci. Chart shows the average and SDs from two independent experiments (n = 50 cells each). (E) Western blot of HeLa cells depleted of TRIM37 or Centrobin alone and simultaneously of TRIM37 and Centrobin. probed with antibodies against Centrobin (top), TRIM37 (middle), or α-tubulin as loading control (bottom). (F) Western blot of soluble (S) and insoluble (P, for pellet) fractions of lysates from HeLa cells transfected with siRNAs against TRIM37 or against both TRIM37 and Centrobin, probed with antibodies against Centrobin (top) or α-tubulin as loading control (bottom). (G) Control or Centrobin-ko RPE-1 cells transfected with control siRNAs and immunostained for Centrin-2 plus CP110. Source data for panels B and D can be found in Figure 5—source data 1.
 
 To address whether Centrobin might be required for Cenpas formation, we investigated their assembly kinetics following release from a double thymidine block in cells depleted of TRIM37. Initially most cells with elongated Centrobin assemblies lacked Cenpas, whereas at later time point cells with both Centrobin assemblies and Cenpas became more prevalent (Figure 5E,F). Therefore, the appearance of elongated Centrobin assemblies precedes that of Cenpas, compatible with the notion that the former is needed for the latter.
 
 To investigate the potential role of Centrobin in Cenpas formation, we tested whether Centrobin depletion reduces Cenpas numbers in cells depleted of TRIM37. Although Centrobin depletion was reported initially to impair centriole assembly in HeLa cells (Zou et al., 2005), more recent work with Centrobin knock out cells (Centrobin-ko) demonstrated that the protein is dispensable for this process in RPE-1 cells (Ogungbenro et al., 2018). In our hands, siRNA-mediated depletion of Centrobin did not impact centriole assembly in HeLa Kyoto cells either, despite near-complete protein depletion (Figure 5—figure supplement 1A,B). As anticipated, Centrobin assemblies disappeared entirely from cells doubly depleted of Centrobin and TRIM37 (Figure 5—figure supplement 1C). Importantly, we found that Cenpas number was significantly lowered in such doubly depleted cells compared to cells depleted of TRIM37 alone (Figure 5—figure supplement 1D). Interestingly, however, even if Centrobin depletion was complete as judged by western blot analysis (Figure 5—figure supplement 1E,F), Cenpas formation upon TRIM37 depletion was only partially prevented by Centrobin siRNA treatment (Figure 5—figure supplement 1D). To test whether this might reflect residual Centrobin in the double siRNA depletion setting, we performed a similar experiment with RPE-1 Centrobin-ko cells (Ogungbenro et al., 2018), reaching analogous conclusions (Figure 5G,H, Figure 5—figure supplement 1G). Together, these results support the view that upon TRIM37 depletion Centrobin assemblies act as a platform seeding the formation of some, but not all, Cenpas.
 
-## Centrobin and PLK1 together promote Cenpas assembly upon TRIM37 depletion
+### Centrobin and PLK1 together promote Cenpas assembly upon TRIM37 depletion
 
 To further understand the mechanisms of Cenpas formation upon TRIM37 depletion, we tested if select components that are critical for canonical centriole duplication were also needed for Cenpas generation. To test the role of PLK4 kinase activity, HeLa cells were grown in the presence of Centrinone for 5 days and then depleted of TRIM37 for 3 days in the continued presence of Centrinone. We found that Cenpas did not form under these conditions, demonstrating an essential role for PLK4 kinase activity (Figure 6A and B). We also tested the requirement for HsSAS-6, STIL, CPAP, and SPICE. As anticipated, single depletion of these components resulted in decreased centriole number (Figure 6A). However, depletion of STIL, CPAP, or SPICE did not dramatically modify the number of Cenpas upon TRIM37 depletion (Figure 6A). By contrast, HsSAS-6 depletion reduced Cenpas number, albeit less so than upon Plk4 inactivation (Figure 6A). To further explore the impact of HsSAS-6, we depleted TRIM37 from RPE-1 p53-/- HsSAS-6-knock out cells (HsSAS-6-ko) (Wang et al., 2015). Although HsSAS-6-ko cells invariably lacked centrioles (Figure 6A,B), some Cenpas nevertheless formed upon TRIM37 depletion, although to a lesser extent than following depletion of TRIM37 alone (Figure 6A,B). In agreement with the absence of HsSAS-6 in elongated Centrobin assemblies (see Figure 4—figure supplement 1E) and the fact that PLK4 depletion does not impact such assemblies (see Figure 4D), we found that elongated Centrobin assemblies were generated unabated upon TRIM37 depletion in cells treated with Centrinone or lacking HsSAS-6 (Figure 6C,D; Figure 6—figure supplement 1A). We conclude that PLK4 activity and HsSAS-6 act downstream of, or in parallel to, Centrobin in the pathways leading to Cenpas formation upon TRIM37 depletion.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/62640/elife-62640-fig6-v2.jpg)
+
+**Figure 6.:** (A) Box-and-whisker Tukey plot of Centrin-2 foci number per cell in indicated conditions. Box plots show median, interquartile range (10–90 percentile) and SDs from two independent experiments (n = 50 cells each). All cells were analyzed in mitosis with the exception of HsSAS-6-ko conditions. Here and in other charts of this figure, two conditions that do not share the same letter are significantly different from each other, with p<0.05; unpaired Student’s t-test; see Supplementary file 2 for exact p values. Lower-case and upper-case letters above the charts reflect comparisons of two distinct data sets. (B) HeLa cells grown with centrinone for 8 days (top) or RPE-1 HsSAS-6-ko cells (bottom), both treated with control or TRIM37 siRNAs, before immunostaining for CP110 and Centrin-2. (C–D) HeLa cells grown with centrinone for 8 days (C) or RPE-1 HsSAS-6-ko cells (D), both treated with control or TRIM37 siRNAs, before immunostaining for Centrobin and Centrin-2. (E) HeLa cells were synchronized with a double thymidine block, released and transfected with control, TRIM37, Centrobin, or both TRIM37 and Centrobin siRNAs, as indicated. Additionally, DMSO or BI-2536 was added to the cells, which were fixed at time 0 hr or 8 hr after release, before immunostaining with antibodies against CP110 and Centrobin. The percentage of cells with extra CP110 foci was quantified in each condition. Chart shows the average and SDs from three independent experiments (n = 50 cells each). (F) HeLa cells were synchronized with a double thymidine block, released and transfected with control, TRIM37, Centrobin, or both TRIM37 and Centrobin siRNAs, as indicated. Moreover, DMSO or BI-2536 was added to the cells, which were fixed at time 0 hr or 8 hr after release, before immunostaining with antibodies against CP110 and HsSAS-6. (G) Corresponding percentage of cells with extra CP110 foci, with an indication of the fraction of them bearing HsSAS-6. Chart shows the average and SDs from two independent experiments (n = 50 cells each). (H) Working model of TRIM37 role in preventing formation of supernumerary MTOCs. Our findings lead us to propose that TRIM37 prevents the formation of supernumerary Centrin foci through two pathways mediated by Centrobin (top) and PLK1 (bottom). The Centrobin pathway relies on tiger Centrobin assemblies that act as platforms for PLK4-dependent Cenpas formation. Thereafter, Cenpas could evolve into centriole-related structures with the stepwise incorporation of other centriolar proteins such as HsSAS-6. We propose that the PLK1 pathway might reflect its role in promoting centriole disengagement. Note that only extra MTOCs are represented. See text for details. Source data for panels A, E, and G can be found in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/62640/elife-62640-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Percentages of cells with Centrobin structures in the indicated conditions. Chart shows the average and SDs at least from two independent experiments (n = 50 cells each). In the statistical analysis, lower-case and upper-case letters indicate two independent set of data analyzed. Two conditions that do not share the same letter are significantly different from each other, with p<0.05; unpaired Student’s t-test; see Supplementary file 2 for exact p values. (B) FACs profile of HeLa cells synchronized with a double thymidine block, released and transfected with control, TRIM37, Centrobin, or both TRIM37 and Centrobin siRNAs, as indicated. Additionally, DMSO or BI-2536 was added to the cells, which were fixed at time 0 hr or 8 hr after release. Source data for panel A can be found in Figure 6—source data 1.
 
 To further understand the requirements for Cenpas generation, considering that PLK1 had been shown to contribute partially to their formation (Balestra et al., 2013), and that we found here the same to be true for Centrobin, we set out to investigate whether the combined removal of PLK1 and Centrobin fully prevents Cenpas generation. To avoid the negative impact of PLK1 inhibition on cell cycle progression, we performed these experiments in synchronized cells depleted of TRIM37, and monitored Cenpas appearance during G2 after release from an S phase arrest. Cells were also subjected to Centrobin depletion and/or BI-2536 treatment to inhibit PLK1. We ascertained by FACS analysis that cell cycle progression was not blocked in these conditions (Figure 6—figure supplement 1B). Importantly, we found that simultaneous Centrobin depletion and PLK1 inhibition completely prevented Cenpas formation (Figure 6E), indicating that PLK1 and Centrobin act in parallel to promote Cenpas formation upon TRIM37 depletion.
 
@@ -114,7 +162,7 @@ Further evidence supporting the existence of two parallel pathways was obtained 
 
 Centriole number control is critical for proper cell physiology, including genome integrity. Assemblies of centriolar proteins that can recruit PCM and nucleate microtubules despite not being bona fide centrioles must likewise be kept in check. Here, we identify the TRIM37 E3 ligase, which is mutated in Mulibrey nanism, as a critical component that prevents the formation of centriolar protein assemblies (Cenpas) through two independent pathways relying on Centrobin and PLK1. Of particular interest, we uncover that TRIM37 depletion results in the formation of striated Centrobin assemblies that we propose serve as platforms for Cenpas generation.
 
-## Two pathways together result in Cenpas upon TRIM37 depletion
+### Two pathways together result in Cenpas upon TRIM37 depletion
 
 What mechanisms lead to Cenpas formation upon TRIM37 depletion? We previously hypothesized that TRIM37 could act by restricting centriole reduplication in G2, since PLK1 inhibition in TRIM37-depleted cells reduced Cenpas formation (Balestra et al., 2013). However, some Cenpas remained upon such inhibition. Moreover, while Cenpas formed upon TRIM37 depletion as early as 4 hr after the G1/S transition (Balestra et al., 2013), PLK1-mediated centriole reduplication occurs only 24 hr after G2 arrest (Loncarek et al., 2010). Here, we obtained further evidence that Cenpas do not form solely through a reduplication mechanism. First, some Cenpas appear away from resident centrioles. Second, most Cenpas do not harbor the procentriolar protein HsSAS-6, at the least initially, in contrast to the situation during centriole reduplication during G2 arrest (Loncarek et al., 2010). Furthermore, analysis with CLEM revealed that Cenpas are usually either centriole-related structures or novel striped electron-dense structures, and not bona fide procentrioles. Together, these findings indicate that Cenpas do not form solely through centriole reduplication, but also through an alternative de novo pathway.
 
@@ -122,11 +170,11 @@ Our findings indicate that this alternative pathway relies on Centrobin, since t
 
 The heterogeneity in Cenpas ultrastructure uncovered by CLEM might also reflect the co-existence of these two independent assembly pathways. In addition, such heterogeneity may reflect a step-wise generation of Cenpas. This possibility is compatible with the fact that, compared to the 48 hr post-transfection analyzed here, a higher number of extra HsSAS-6 foci are present 72 hr after transfection with TRIM37 siRNAs (Balestra et al., 2013). Therefore, HsSAS-6 might not be present or required initially for de novo Cenpas formation, but contribute later to their consolidation. Although HsSAS-6-ko cells depleted of TRIM37 can assemble some Cenpas, perhaps they are more rudimentary ones. Regardless, de novo Cenpas generation upon TRIM37 depletion must in some way differ from the classical de novo centriole assembly, since that pathway is fully reliant on HsSAS-6 (Wang et al., 2015).
 
-## On the relationship of Centrobin and PLK4 upon TRIM37 depletion
+### On the relationship of Centrobin and PLK4 upon TRIM37 depletion
 
 PLK4 is essential for forming all Cenpas upon TRIM37 depletion, as it is essential for centriole reduplication and classical de novo centriole assembly (Habedanck et al., 2005; Wong et al., 2015). How could PLK4 be required for Cenpas generation stemming from the Centrobin assemblies formed upon TRIM37 depletion? We found that the PLK4 condensates previously observed in TRIM37-ko cells (Meitinger et al., 2020; Meitinger et al., 2016) coincide with the Centrobin assemblies uncovered here. Intriguingly, PLK4 localization at Centrobin assemblies was detected with only one out of three antibodies tested (Moyer et al., 2015; Sillibourne et al., 2010; Wong et al., 2015). We speculate that PLK4 might be poorly accessible at Centrobin assemblies for the two other antibodies (see Materials and methods). Interestingly, while Centrobin depletion precluded formation of PLK4 condensates, PLK4-depleted cells still harbored Centrobin structures. Intriguingly, PLK4 depletion did not diminish the signal detected by those PLK4 antibodies that showed colocalization with elongated Centrobin assemblies (Wong et al., 2015). Perhaps PLK4 exhibits low turnover within Centrobin assemblies, such that it remains present in that location despite siRNA-mediated depletion. Alternatively, the signal recognized in the Centrobin assemblies by these PLK4 antibodies might not be specific. In any case, it is interesting to note that in Xenopus extracts PLK4 self-assembles into condensates that recruit γ-tubulin and behave as MTOCs (Montenegro Gouveia et al., 2018), raising the possibility that Centrobin assemblies formed upon TRIM37 depletion may serve as platforms to recruit such condensates.
 
-## Cenpas threaten cell physiology
+### Cenpas threaten cell physiology
 
 Centriolar protein assemblies have been reported in other contexts, although with different molecular origins (Li et al., 2012; Shiratsuchi et al., 2015). Thus, Neurl4 interacts with CP110 and promotes its destabilization, such that Neurl4 depletion results in increased CP110 protein levels and ectopic MTOCs (Li et al., 2012). Likewise, RMB14 limits formation of the STIL/CPAP complex, with RMB14 depletion triggering formation of centriolar protein complexes that do not initially require HsSAS-6 for their assembly and results in ectopic MTOCs (Shiratsuchi et al., 2015). Centrobin distribution was inspected upon both Neurl14 and RMB14 depletion, and no elongated structures like the ones reported here were reported (Li et al., 2012; Shiratsuchi et al., 2015), suggesting that different assembly routes operate in those cases. Although these previously reported centriolar protein assemblies and the ones analyzed here do not share a clear common molecular composition or assembly route, we propose to group them jointly under the acronym Cenpas, reflecting the fact that they all form following some de novo process, resulting in the generation of centriole-related structures that behave as active MTOCs.
 
@@ -134,38 +182,524 @@ To our knowledge, our findings represent the first example in which Cenpas have 
 
 ## Materials and methods
 
-## Cell culture, cell lines, and cell treatments
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>TRIM37</td>
+      <td>Ensembl</td>
+      <td>ENST00000 262294.12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa Kyoto</td>
+      <td>Schmitz and Gerlich, 2009</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HeLa Centrin-1:GFP</td>
+      <td>Piel et al., 2000</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS</td>
+      <td>Sigma</td>
+      <td>92022711</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>hTERT-RPE-1</td>
+      <td>ATCC</td>
+      <td>CRL-4000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>hTERT-RPE-1 p53 -/- Centrin-1:eGFP</td>
+      <td>This work</td>
+      <td></td>
+      <td>carrying an integrated plasmid (pCW57.1) expressing Centrin-1:eGFP under a doxycycline inducible promoter (generous gift from George Hatzopoulos)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>hTERT-RPE-1 Centrobin -/-</td>
+      <td>Ogungbenro et al., 2018</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>hTERT-RPE-1 TRIM37 -/-</td>
+      <td>Meitinger et al., 2016</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>primary fibroblast</td>
+      <td>This work</td>
+      <td></td>
+      <td>skin biopsy samples a control individual, with approval by the Institutional Review Board of the Helsinki University Central Hospital (183/13/03/03/2009).</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>primary fibroblast</td>
+      <td>This work</td>
+      <td></td>
+      <td>skin biopsy samples from a Mulibrey nanism patient (P-1) homozygous for the Finnish founder mutation with approval by the Institutional Review Board of the Helsinki University Central Hospital (183/13/03/03/2009).</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>primary fibroblast</td>
+      <td>This work</td>
+      <td></td>
+      <td>skin biopsy samples from a Mulibrey nanism patient (P-2) homozygous for the Finnish founder mutation with approval by the Institutional Review Board of the Helsinki University Central Hospital (183/13/03/03/2009).</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TRIM37 (Rabbit polyclonal)</td>
+      <td>Bethyl Laboratories</td>
+      <td>A301-174A</td>
+      <td>WB (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- α-tubulin (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>T6199 (DM1a)</td>
+      <td>WB (1/13000) IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Centrobin (Rabbit polyclonal)</td>
+      <td>Atlas Ab</td>
+      <td>HPA023321</td>
+      <td>WB (1/500) IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Centrobin (Mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Ab70448</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HSP70 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-24</td>
+      <td>WB (1/20000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (human)</td>
+      <td>Antibody platform of Institute Curie</td>
+      <td>A-R-H#11</td>
+      <td>IF (1/50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti- α-tubulin (human)</td>
+      <td>Antibody platform of Institute Curie</td>
+      <td>A-R-H#02</td>
+      <td>IF (1/50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HsSAS-6 (Mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-81431</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CEP63 (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>06–1292</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CEP152 (Rabbit polyclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>HPA039408</td>
+      <td>IF (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-acetylated tubulin (Mouse monoclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>T6793</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-γ-tubulin (Mouse monoclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>T5326</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Centrin 2 (Mouse Monoclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>20H5</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CEP164 (Rabbit polyclonal)</td>
+      <td>Novus Biologicals</td>
+      <td>45330002</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CP110 (Rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>12780–1-AP</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CEP135 (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab-75005</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CPAP (Rabbit polyclonal)</td>
+      <td>Kohlmaier et al., 2009</td>
+      <td></td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SPICE (Rabbit polyclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>HPA064843</td>
+      <td>IF (1/500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ninein (Rabbit polyclonal)</td>
+      <td>Delgehyr et al., 2005</td>
+      <td>L77</td>
+      <td>IF (1/8000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-hPOC5 (Rabbit polyclonal)</td>
+      <td>Azimzadeh et al., 2009</td>
+      <td></td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-C-Nap (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>611374</td>
+      <td>IF (1/400)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-STIL (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab-222838</td>
+      <td>IF (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PCNT (Rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Ab-4448</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-AKAP450 (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>611518</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CDK5-Rap2 (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>06–1398</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CEP192 (Rabbit polyclonal)</td>
+      <td>Zhu et al., 2008</td>
+      <td></td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CEP170 (Rabbit polyclonal)</td>
+      <td>Sigma Aldrich</td>
+      <td>HPA042151</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P-T210-PLK1 (Mouse monoclonal)</td>
+      <td>BD Bioscience</td>
+      <td>558400</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rootletin (Rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-374056</td>
+      <td>IF (1/200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-CEP68 (Rabbit polyclonal)</td>
+      <td>Atlas Ab</td>
+      <td>HPA040493</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PLK4 (Rabbit polyclonal)</td>
+      <td>Sillibourne et al., 2010</td>
+      <td>raised against PLK4 kinase domain residues 13–265</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PLK4 (Rabbit polyclonal)</td>
+      <td>Moyer et al., 2015</td>
+      <td>raised against residues 510-970</td>
+      <td>IF (1/1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PLK4 (Rabbit polyclonal)</td>
+      <td>Wong et al., 2015</td>
+      <td>raised against residues 814–970</td>
+      <td>IF (1/2000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEBTet-TRIM37:GFP (plasmid)</td>
+      <td>Balestra et al., 2013</td>
+      <td></td>
+      <td>GFP fused version of TRIM37 into pEB-tet plasmid under a doxycycline inducible promoter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>p-Centrobin:GFP (plasmid)</td>
+      <td>Shin et al., 2015</td>
+      <td></td>
+      <td>GFP fused version of Centrobin</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP:SPICE (plasmid)</td>
+      <td>Archinti et al., 2010</td>
+      <td></td>
+      <td>GFP fused version of SPICE</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-TRIM37:GFP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GFP fused version of TRIM37</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pcDNA3-TRIM37: NES:GFP (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>GFP fused version of TRIM37 with the HIV-Rev NES sequence (LQLPPLERLTLD) Wen et al., 1995</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>CNTROB-FW</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5‘-GTCTCCATCTAGCTCAGCCC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>CNTROB-RV</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5‘-AGGCTCTGAATATGGCGCT C-3’</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>TRIM37-FW</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5‘-TGCCATCTTACGATTCAGCTAC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>TRIM37- RV</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5‘-CGCACAACTCCATTTCCATC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>GAPDH-FW</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5‘-GGAAGGTGA AGGTCGGAGTC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>GAPDH-RV</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5‘-GTTGAGGTCAATGAAGGGGTC-3’</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>siRNA-TRIM37</td>
+      <td>Invitrogen Balestra et al., 2013</td>
+      <td></td>
+      <td>5‘-UUAAGGACCGGA GCAGUAUAGAAAA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>siRNA-Centrobin</td>
+      <td>Invitrogen Zou et al., 2005</td>
+      <td></td>
+      <td>5‘-AGUGCCAGACUGCAGCAACGGGAAA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>siRNA-SPICE</td>
+      <td>Invitrogen Archinti et al., 2010</td>
+      <td></td>
+      <td>5‘-GCAGCUGAGAACAAAUGAGUCAUUA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>siRNA-HsSAS-6</td>
+      <td>Invitrogen Strnad et al., 2007</td>
+      <td></td>
+      <td>5‘-GCACGUUAAUCAGCUACAAUU-3’</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>siRNA-STIL</td>
+      <td>Invitrogen Kitagawa et al., 2011a</td>
+      <td></td>
+      <td>5‘-AACGUUUACCAUACAAAGAAA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>siRNA-CPAP</td>
+      <td>Invitrogen Kitagawa et al., 2011a</td>
+      <td></td>
+      <td>5‘-AGAAUUAGCUCGAAUAGAA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>siRNA-PLK4</td>
+      <td>Invitrogen Balestra et al., 2013</td>
+      <td></td>
+      <td>5‘-GAAAUGAACAGGUAUCUAA-3’</td>
+    </tr>
+    <tr>
+      <td>Sequenced-based reagent</td>
+      <td>Stealth RNAi siRNA Negative Control Lo GC</td>
+      <td>Invitrogen</td>
+      <td>12935200</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>BI-2536</td>
+      <td>Selleck Chemicals</td>
+      <td>S1109</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>RO-3306</td>
+      <td>Sigma Aldrich</td>
+      <td>SML0569</td>
+      <td>10 μM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Centrinone</td>
+      <td>MCE</td>
+      <td>Hy-18682</td>
+      <td>125 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Cycloheximide</td>
+      <td>Sigma Aldrich</td>
+      <td>C7698</td>
+      <td>150 μg/ml</td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture, cell lines, and cell treatments
 
 HeLa Kyoto (Cellosaurus ref: CVCL_1922, Schmitz and Gerlich, 2009, generous gift from Daniel Gerlich, Institute of Molecular Biotechnology, Vienna, Austria) and U2OS (Cellosaurus ref: CVCL_0042, provided by Sigma, 92022711) cells were grown in high glucose DMEM medium (Sigma-Aldrich), hTERT-RPE-1 (Cellosaurus ref: CVCL_4388, provided by ATCC CRL-4000) cells in high glucose DMEM/F-12 medium (Sigma-Aldrich). Fibroblast cultures were established from skin biopsy samples of two Mulibrey nanism patients homozygous for the Finnish founder mutation, as well as a control individual, with approval by the Institutional Review Board of the Helsinki University Central Hospital (183/13/03/03/2009). The patients signed an informed consent for the use of fibroblast cultures. Other cell lines used were HeLa cells carrying an integrated plasmid expressing Centrin-1:GFP (Piel et al., 2000) where the expected Centrin-1:GFP signal localizing to centrioles was observed, RPE-1 p53 -/- cells carrying an integrated plasmid (pCW57.1) expressing Centrin-1:eGFP under a doxycycline inducible promoter (reported for the first time in this work, generous gift from George Hatzopoulos), RPE-1 p53 -/- Centrobin knock out cells, confirmed by the lack of Centrobin signal in IF experiments, (Ogungbenro et al., 2018) (generous gift from Ciaran Morrison), RPE-1 p53 -/- HsSAS-6 knock out cells, confirmed by the lack of HsSAS-6 signal in IF experiments, (Wang et al., 2015) (generous gift from Bryan Tsou) and RPE-1 TRIM37 knock out cells, confirmed by the reported phenotype previously reported by Meitinger et al., 2016 (generous gift from Karen Oegema). Media were supplemented with 10% fetal bovine serum, with the exception of Mulibrey nanism patient cell lines medium, which was supplemented with 15% fetal bovine serum. In addition, all media were supplemented with 2 mM L-glutamine, 100 units/ml penicillin, and 100 μg/ml streptomycin (all from Sigma-Aldrich) and grown at 37°C in 5% CO2. All cell lines tested negative for mycoplasma contamination. HeLa Kyoto cells were synchronized using a double-thymidine block and release protocol as follows: cells were incubated in medium with 2 mM thymidine (Sigma Aldrich, T9250) for 17 hr, released for 8 hr and again incubated with 2 mM Thymidine for 17 hr. For single transfection experiments, control or TRIM37 siRNAs transfections were performed during the 8 hr period between the two thymidine treatments. For double transfection experiments, in addition to the above, either control or Centrobin siRNAs were transfected before the first Thymidine treatment. Drugs used in this work were 10 μM BI-2536 (S1109, Selleck Chemicals), 10 μM RO-3306 (Sigma-Aldrich, SML0569), 125 nM Centrinone (MCE, Hy-18682), and 150 μg/ml Cycloheximide (Sigma-Aldrich, C7698).
 
-## Transfections, plasmids, and siRNAs
+### Transfections, plasmids, and siRNAs
 
 For siRNA treatments, cells were typically transfected in a six well plate format with 20 μM siRNAs and 4 μL Lipofectamine RNAiMAX (Thermo Fisher Scientific); the depletion phenotype was inspected 72 hr after transfection unless otherwise indicated in the text or the legends. siRNAs sequences were as follows: TRIM37 (5‘-UUAAGGACCGGA GCAGUAUAGAAAA-3’) (Balestra et al., 2013) Centrobin (5‘-AGUGCCAGACUGCAGCAACGGGAAA-3’) (Zou et al., 2005), SPICE (5‘-GCAGCUGAGAACAAAUGAGUCAUUA-3’) (Archinti et al., 2010), HsSAS6 (5‘-GCACGUUAAUCAGCUACAAUU-3’) (Strnad et al., 2007), STIL (5‘-AACGUUUACCAUACAAAGAAA-3’) (Kitagawa et al., 2011a), CPAP (5‘-AGAAUUAGCUCGAAUAGAA-3’) (Kitagawa et al., 2011a), PLK4 (﻿5‘-GAAAUGAACAGGUAUCUAA-3’) (Balestra et al., 2013) and Stealth RNAi siRNA Negative Control Lo GC (Ref: 12935200; Invitrogen). For plasmid transient transfection, FuGENE 6 Transfection Reagent (Promega) was used according to the manufacturer’s protocol and the phenotype inspected 24 or 48 hr after transfection. Transfected plasmids were as follows: pEBTet-TRIM37:GFP (Balestra et al., 2013), pGFP-Centrobin:GFP (pGFP-NIP2) (Shin et al., 2015; generous gift from Kunsoo Rhee, Seoul National University, Korea) pEGFP:SPICE (Archinti et al., 2010; generous gift from Jens Lüders, IRB, Barcelona, Spain) pcDNA3-TRIM37:GFP and pcDNA3-TRIM37:NES:GFP were generated by cloning the TRIM37 ORF (964 aa) fused to GFP, or to the HIV-Rev NES sequence (LQLPPLERLTLD; Wen et al., 1995) and GFP.
 
-## Immunoblotting and cycloheximide chase assay
+### Immunoblotting and cycloheximide chase assay
 
 For western blot analysis, cells were lysed either in 2× Laemmli buffer (4% SDS, 20% glycerol, 125 mM Tris-HCl, pH 6.8) and passed 10 times through a 0.5 mm needle–mounted syringe to reduce viscosity, or in NP40 lysis buffer 10 mM Tris/HCl (pH 7.4)/150 mM NaCl/10% (v/v) glycerol/1% (v/v) Nonidet P40/1 mM PMSF and 1 μg/ml of each pepstatin, leupeptin, and aprotinin (Sigma-Aldrich) for 20 min at 4°C and then for 3 min at 37°C, before centrifugation at 20,000 g for 20 min. In this manner, the soluble fraction was separated from the insoluble pellet, which was then solubilized in 1x Laemmli buffer. Lysates were resolved by SDS-PAGE on a 10% polyacrylamide gel and immunoblotted on Immobilon-P transfer membrane (IPVH00010; 21 Millipore Corporation). Membranes were first blocked with TBS containing 0.05% Tween-20 (TBST) and 5% non-fat dry milk (TBST-5% milk) for 1 hr at room temperature, and then incubated with primary antibodies diluted in PBST-5% milk. Primary antibodies were 1:1000 rabbit anti-TRIM37 (A301-174A; Bethyl Laboratories), 1:30,000 mouse anti-α-tubulin (T6199; Sigma-Aldrich), 1:500 rabbit anti-Centrobin (HPA023321; Atlas), and 1:20,000 mouse anti-HSP70 (sc-24; Santa Cruz). Membranes were washed and incubated for 1 hr in secondary antibodies prepared also in TBST-5% milk. Secondary antibodies were 1:5000 HRP-conjugated anti-rabbit (W4011; Promega) or mouse (W4021; Promega) IgGs. The signal was detected by standard chemiluminescence (34077; Thermo Scientific). Alternatively, polyacrylamide gels were immunoblotted on low fluorescence PVDF membranes (Immobilon-FL, Millipore), membranes blocked with Odyssey Blocking Buffer (LI-COR) and blotted with appropriate primary antibodies and 1:5000 secondary antibodies IRDye 680RD anti-mouse IgG (H+L) Goat LI-COR (926–68070) and IRDye 800CW anti-rabbit IgG (H+L) Goat LI-COR (926-32211). Membranes were then air-dried in the dark and scanned in an Odyssey Infrared Imaging System (LI-COR), and images analyzed with ImageStudio software (LI-COR). In all cases, membrane washes were in TBST. For the cycloheximide chase experiments, HeLa Kyoto cells were treated with fresh DMEM containing 150 μg/ml cycloheximide (CHX). Cells were collected 0, 2, 4, 6, and 8 hr after CHX addition, and protein extracts prepared in 2× Laemmli buffer as described above. A total of 40 μg of siControl lysate and 20 μg of siTRIM37 lysate were resolved by SDS-PAGE, analyzed by immunoblotting with Centrobin and α-tubulin antibodies before quantification with ImageStudio. The siControl and siTRIM37 conditions at time 0 were normalized as 100%, and the other conditions for the same siRNA treatment expressed relative to this. Centrobin expression was quantified as the Centrobin signal divided by the α-tubulin signal.
 
-## RNA isolation, reverse transcription, and real-time PCR
+### RNA isolation, reverse transcription, and real-time PCR
 
 RNA was extracted using the RNeasy Mini kit according to the manufacturer’s instruction (QIAGEN), including DNase I to avoid potential contaminations with DNA. 3 μg of total RNA, random hexamers and SuperScript III Reverse Transcriptase (InvitrogenTM) were used to obtain complementary DNA (cDNA). Quantitative PCR from cDNA was performed to assess siRNA-mediated knock-down of TRIM37 and Centrobin, using iTaq Universal SYBR Green Supermix following the manufacturer’s instructions (Bio-Rad) in an Applied Biosystems 7500 Fast Real-time PCR System (Thermo Fisher Scientific). Relative mRNA levels of the indicated genes were calculated by the 2-DDCT method (Bulletin 5279, Real-Time PCR Applications Guide, Bio-Rad), using GAPDH expression as endogenous control. The primer sequences used were: Centrobin:_CNTROB-FW 5‘-GTCTCCATCTAGCTCAGCCC-3’, CNTROB-RV 5‘-AGGCTCTGAATATGGCGCT C-3’, TRIM37: TRIM37-FW 5‘-TGCCATCTTACGATTCAGCTAC-3’, TRIM37-RV 5‘-CGCACAACTCCATTTCCATC-3’. GAPDH: GAPDH-FW 5‘-GGAAGGTGA AGGTCGGAGTC-3’, GAPDH-RV 5‘-GTTGAGGTCAATGAAGGGGTC-3’.
 
-## Cell cycle analysis
+### Cell cycle analysis
 
 Cells were fixed with cold 70% ethanol overnight at 4°C, incubated with PBS containing 250 μg/mL RNase A (Sigma) and 10 μg/mL propidium iodide (Fluka) at room temperature for 30 min, before analysis with a FACSCalibur Flow Cytometer (BD). Cell cycle distribution data were further analyzed using ModFit LT 3.0 software (Verity Software House Inc).
 
-## Indirect immunofluorescence and microtubule-regrowth assay
+### Indirect immunofluorescence and microtubule-regrowth assay
 
 Cells were grown on glass coverslips and fixed for 7 min in −20°C methanol, washed in PBS, and blocked for 30 min in PBS 0.05% Tween 20 (PBST) with 1% bovine serum albumin. Cells were incubated overnight at 4°C with primary antibodies, washed three times for 5 min with PBST, incubated for 1 hr at room temperature with secondary antibodies, washed three times for 5 min in PBST and mounted in Vectashield mounting medium with DAPI (H-1200; Vector Laboratories). Primary antibodies used for immunofluorescence were: 1:50 human anti-GFP (hVHH antiGFP-hFc, A-R-H#11) and human anti α-tubulin (A-R-H#02) from the recombinant antibody platform of Institut Curie, 1:1000 rabbit anti-GFP (RGFP-45ALY-Z; ICL), 1:500 mouse anti-HsSAS-6 (sc-81431; Santa Cruz), 1:1000 rabbit anti-CEP63 (06–1292; Millipore), 1:2000 rabbit anti-CEP152 (HPA039408; Sigma-Aldrich), 1:1000 mouse anti-acetylated tubulin (T6793; Sigma-Aldrich), 1:1000 mouse anti-γ-tubulin (GTU88, T5326; Sigma-Aldrich), 1:1000 mouse anti-Centrin2 (20H5; Sigma-Aldrich), 1:2000 rabbit anti-CEP164 (45330002; Novus Biologicals), 1;1000 mouse anti-α-tubulin (T6199; Sigma-Aldrich), 1:1000 rabbit anti-CP110 (12780–1-AP; Proteintech), 1:1000 mouse anti-Centrobin (ab70448; Abcam), 1:1000 rabbit anti-Centrobin (HPA023321; Atlas Antibodies), 1:1000 rabbit anti-CEP135 (ab75005; Abcam), 1:500 rabbit anti-CPAP (Kohlmaier et al., 2009), 1:500 rabbit anti-SPICE (HPA064843, Sigma-Aldrich), 1:8000 rabbit anti-Ninein (L77, Delgehyr et al., 2005), 1:1000 rabbit anti-hPOC5 (Azimzadeh et al., 2009) (a generous gift from Michel Bornens), 1:400 mouse anti-C-Nap (611374; BD Biosciences) 1:2000 rabbit anti-STIL (ab222838; Abcam), 1:1000 rabbit anti-PCNT (ab4448; Abcam), 1:1000 mouse anti-AKAP450 (611518; BD Biosciences), 1:1000 rabbit anti-CDK5Rap2 (06–1398; Millipore), 1:1000 rabbit anti-CEP192 (Zhu et al., 2008)(a generous gift from Laurence Pelletier), 1:1000 rabbit anti-CEP170 (HPA042151; Sigma-Aldrich), 1:1000 mouse anti-P-T210-PLK1 (558400; BD Bioscience), 1:200 mouse anti-Rootletin (sc-374056, Santa Cruz Biotechnology), 1:1000 rabbit anti-CEP68 (HPA040493, Atlas Antibodies). We also utilized three PLK4 antibodies: 1:1000 rabbit anti-PLK4(KD) (Sillibourne et al., 2010; generous gift from Michel Bornens), raised against residues 13–265; 1:1000 rabbit anti-PLK4 (Moyer et al., 2015; a generous gift from Andrew Holland), raised against residues 510–970; as well as 1:2000 rabbit anti PLK4 (Wong et al., 2015; a generous gift from Karen Oegema), raised against residues 814–970. Secondary antibodies were 1:500 mouse Alexa-488, 1:3000 rabbit Cy3, 1:3000 human Alexa-633, 1:1000 mouse Alexa-649, and 1:500 human Alexa-488, all from Jackson ImmunoResearch. For microtubule depolymerization-regrowth experiments, cells were first incubated at 4°C for 30 min, then rinsed in pre-warmed medium (37°C), followed by incubation at room temperature for 1–2 min to allow microtubule regrowth. Thereafter, cells were fixed and stained as described above. Image J was used to measure PLK4 signal within Centrobin structures. A mask was generated using Centrobin staining to determine the area of the structure and average PLK4 intensity within the area was registered.
 
-## Live imaging, ultrastructure expansion microscopy, and confocal microscopy
+### Live imaging, ultrastructure expansion microscopy, and confocal microscopy
 
 HeLa Centrin-1:GFP cells were transfected with control or TRIM37 siRNAs for 48 hr, transferred to 35 mm imaging dishes (Ibidi, cat.no 81156), and imaged at 37°C and 5% CO2 in medium supplemented with 25 mM HEPES (Thermofisher) and 1% PenStrep (Thermofisher). Combined DIC and GFP-epifluorescence time-lapse microscopy was performed on a motorized Zeiss Axio Observer D1 using a 63 × 1.4 NA plan-Apochromat oil immersion objective, equipped with an Andor Zyla 4.2 sCMOS camera, a piezo controlled Z-stage (Ludl Electronic Products), and an LED light source (Lumencor SOLA II). Imaging was conducted every 10 min, capturing Z-stacks of optical sections 0.5 µm apart, covering a total height of 8 µm. Ultrastructure expansion microscopy was conducted essential as reported (Gambarotto et al., 2019). For imaging, the sample was mounted on a 25 mm round poly-D-lysine coated precision coverslip. STED imaging was performed on a Leica TCS SP8 STED 3X microscope with a 100 × 1.4 NA oil-immersion objective. Secondary antibodies were 1:500 Alexa-488 (A-11039; Thermofisher), Alexa-594 (ab150072; Abcam), and Atto647N (2418; Hypermol). Confocal images were captured on a Leica TCS SP5 with a HCX PL APO Lambda blue 63 × 1.4 NA oil objective. All images shown are maximal intensity projections of relevant planes. Image processing was carried out using Image J and Adobe Photoshop (Adobe).
 
-## Correlative light electron microcopy (CLEM)
+### Correlative light electron microcopy (CLEM)
 
 HeLa and RPE-1 cells expressing Centrin-1:GFP were cultured in glass-bottom Petri dishes (MatTek, Cat. No. P35G-1.5–14-CGRD), with an alpha-numeric grid pattern, and transfected with control or TRIM37 siRNAs. Cells were chemically fixed 72 hr after transfection with a buffered solution of 1% glutaraldehyde 2% paraformaldehyde in 0.1 M phosphate buffer at pH 7.4. Dishes were then screened with a wide-field fluorescent microscope (Zeiss Observer D1, using a 63 × 1.4 NA oil objective) to identify cells of interest, which were imaged with both transmitted and fluorescence microscopy to register the position of each cell on the grid, as well as the location of their GFP foci, capturing optical slices 500 nm apart. The cells were then washed thoroughly with cacodylate buffer (0.1M, pH 7.4), postfixed for 40 min in 1.0% osmium tetroxide 1.5% potassium ferrocyanide, and then for 40 min in 1.0% osmium tetroxide alone. Finally, cells were stained for 40 min in 1% uranyl acetate in water before dehydration through increasing concentrations of alcohol and then embedding in Durcupan ACM resin (Fluka, Switzerland). The coverslips were then covered with 1 mm of resin, which was hardened for 18 hr in a 65°C oven. The coverslips were removed from the cured resin by immersing them alternately into 60°C water followed by liquid nitrogen until the coverslips parted. Regions of resin containing the cells of interest were then identified according to their position on the alpha-numeric grid, cut away from the rest of the material and glued to blank resin block. Ultra-thin (50 nm thick) serial sections were cut through the entire cell with a diamond knife (Diatome) and ultramicrotome (Leica Microsystems, UC7), and collected onto single slot grids with a pioloform support film. Sections were further contrasted with lead citrate and uranyl acetate and images taken in a transmission electron microscope (FEI Company, Tecnai Spirit) operating at 80 kV, with a digital camera (FEI Company, Eagle). To correlate the light microscopy images with the EM images and identify the exact position of the Centrin-1:GFP foci, fluorescent images were overlaid onto the electron micrographs of the same cell using Photoshop.
 
-## Statistical analysis
+### Statistical analysis
 
 Statistical significance was determined with an unpaired Student’s t-test using PRISM software (Graphpad Software Inc). See Supplementary file 2 for exact values.

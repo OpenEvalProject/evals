@@ -76,9 +76,7 @@ We have now added additional p-values that can be found in figures, as well, as 
 
 7) In Figure 2i, j, I didn't see enrichment of CD150 in the vav-Cre Ddb1 deleted LSK cells - is this correct, and if so, why do the authors think this marker was not enriched?
 
-This is correct we didn’t see statistical significance in enrichment of CD150 in our microarray analysis. Although not significant 2 out of 3 probes had higher values (Author response image 1).10.7554/eLife.07539.014Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.07539.014
-
-DOI: http://dx.doi.org/10.7554/eLife.07539.014
+This is correct we didn’t see statistical significance in enrichment of CD150 in our microarray analysis. Although not significant 2 out of 3 probes had higher values (Author response image 1).10.7554/eLife.07539.014Author response image 1.
 
 8) A possible alternative explanation for the loss of WBCs and platelets alongside maintenance of RBCs is that Ddb1 deletion causes a fate switch or differentiation bias prior to progenitor cell loss. It would be useful to address this possibility, experimentally or in the text.
 

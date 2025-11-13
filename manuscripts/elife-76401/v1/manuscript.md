@@ -8,12 +8,12 @@
 
 ### Affiliations
 
-1. https://ror.org/047426m28 Department of Bioengineering, University of Illinois Urbana-Champaign Urbana United States
-2. https://ror.org/047426m28 Carl R. Woese Institute for Genomic Biology, University of Illinois Urbana-Champaign Urbana United States
-3. https://ror.org/04v3ywz14 College of Food Science and Nutritional Engineering, China Agricultural University Beijing China
-4. https://ror.org/047426m28 Department of Physics, University of Illinois Urbana-Champaign Urbana United States
-5. https://ror.org/047426m28 Center for Biophysics and Quantitative Biology, University of Illinois Urbana-Champaign Urbana United States
-6. https://ror.org/03r10zj06 National Center for Supercomputing Applications Urbana United States
+1. Department of Bioengineering, University of Illinois Urbana-Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))
+2. Carl R. Woese Institute for Genomic Biology, University of Illinois Urbana-Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))
+3. College of Food Science and Nutritional Engineering, China Agricultural University Beijing China ([ROR:04v3ywz14](https://ror.org/04v3ywz14))
+4. Department of Physics, University of Illinois Urbana-Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))
+5. Center for Biophysics and Quantitative Biology, University of Illinois Urbana-Champaign Urbana United States ([ROR:047426m28](https://ror.org/047426m28))
+6. National Center for Supercomputing Applications Urbana United States ([ROR:03r10zj06](https://ror.org/03r10zj06))
 
 † Corresponding author
 
@@ -35,7 +35,7 @@ Our specific research started by characterizing the composition and metabolite p
 
 ## Results
 
-## Characterization of the native KT microbiome
+### Characterization of the native KT microbiome
 
 We set out to identify key structural and functional traits of the KT microbiome by performing fermentations with commercially available SCOBYs and black tea substrate supplemented with 50 g/L of sucrose (Materials and methods). Each of the fermentations resulted in a light-brown broth and a floating, gel-like pellicle (Figure 1A), which were analyzed in terms of their compositional diversity and metabolite abundance using amplicon sequencing and high-performance liquid chromatography respectively. Here, we considered metabolite profiles as a representation of microbiome function because chemical ingredients in KT broth are key factors conferring benefits (Soares et al., 2021; Villarreal-Soto et al., 2018).
 
@@ -49,7 +49,7 @@ In parallel, we quantified the biochemical characteristics of KT broths, includi
 
 From the above results, we drew three traits as the defining characteristics of the KT microbiome: first, it involves both bacteria and yeasts; second, it consumes sucrose with the synthesis of acetate, ethanol and a low level of glucose and fructose as the primary extracellular metabolites; third, it results in pellicle formation. These traits serve as the criteria for the identification of a proper microbiome core.
 
-## Selection of a minimal core for the KT microbiome
+### Selection of a minimal core for the KT microbiome
 
 To develop a correct core that recapitulates the native microbiome, we isolated a series of strains from the KT samples (Figure 2—source data 1). From the isolates, we selected five bacterial species, including Komagataeibacter rhaeticus (B1), Komagataeibacter intermedius (B2), Gluconacetobacter europaeus (B3), Gluconobacter oxydans (B4) and Acetobacter senegalensis (B5), and 5 fungal species, including Brettanomyces bruxellensis (Y1), Zygosaccharomyces bailii (Y2), Candida sake (Y3), Lachancea fermentati (Y4) and Schizosaccharomyces pombe (Y5), for synthesizing microbiome cores. Guided by the criterium that the KT microbiome contains both bacteria and fungi, we performed combinatorial mixing of the selected isolates, resulting in 25 two-species minimal core candidates with each involving one bacterial and one fungal species. To determine whether these candidates resemble the native, we conducted KT fermentation with these candidates and their corresponding 10 monocultures and, subsequently, quantified their microbial composition, extracellular metabolites and pellicle formation (Materials and methods).
 
@@ -57,7 +57,7 @@ From colony forming units (CFU) counting (Figure 2A, Figure 2—source data 2), 
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/76401/elife-76401-fig2-v1.jpg)
 
-**Figure 2.:** (A) Colony forming units (CFU) counting of 25 two-species core candidates and 10 monoculture controls upon fermentation. Each core candidate is composed of one bacterial and one fungal species selected from the 10 isolates: B1 (Komagataeibacter rhaeticus), B2 (Komagataeibacter intermedius), B3 (Gluconacetobacter europaeus), B4 (Gluconobacter oxydans), B5 (Acetobacter senegalensis), Y1 (Brettanomyces bruxellensis), Y2 (Zygosaccharomyces bailii), Y3 (Candida sake), Y4 (Lachancea fermentati), and Y5 (Schizosaccharomyces pombe). Each monoculture control is one of the ten isolates. (B) Chemical property analysis of the core candidates and their controls. Measured variables include pH, sucrose, glucose, fructose, glucuronate, ethanol, acetate, polyphenol, and flavonoid. Here, the heatmap illustrates the relative concentrations of metabolites compared to their means across all samples using the Z-score normalization (Quan et al., 2019). (C) Hierarchical cluster analysis of the metabolic properties of the samples. The candidate B2Y1 is highlighted. (D) Principal component analysis of the metabolic properties. The candidate B2Y1 is circled in red.Figure 2—source data 1.Figure 2—source data 2.Figure 2—source data 3.Figure 2—source data 4.
+**Figure 2.:** (A) Colony forming units (CFU) counting of 25 two-species core candidates and 10 monoculture controls upon fermentation. Each core candidate is composed of one bacterial and one fungal species selected from the 10 isolates: B1 (Komagataeibacter rhaeticus), B2 (Komagataeibacter intermedius), B3 (Gluconacetobacter europaeus), B4 (Gluconobacter oxydans), B5 (Acetobacter senegalensis), Y1 (Brettanomyces bruxellensis), Y2 (Zygosaccharomyces bailii), Y3 (Candida sake), Y4 (Lachancea fermentati), and Y5 (Schizosaccharomyces pombe). Each monoculture control is one of the ten isolates. (B) Chemical property analysis of the core candidates and their controls. Measured variables include pH, sucrose, glucose, fructose, glucuronate, ethanol, acetate, polyphenol, and flavonoid. Here, the heatmap illustrates the relative concentrations of metabolites compared to their means across all samples using the Z-score normalization (Quan et al., 2019). (C) Hierarchical cluster analysis of the metabolic properties of the samples. The candidate B2Y1 is highlighted. (D) Principal component analysis of the metabolic properties. The candidate B2Y1 is circled in red.
 
 By measuring pH, sugars, acids and tea-derived substances in the broths, we also obtained the biochemical characteristics of the candidates (Figure 2B, Figure 2—source data 3). The results showed that the co-cultures had comparable pH (~3.5) except for the five involving Y3. The Y3-involving candidates also yielded a significantly higher level of residual sucrose and a significantly lower level of acetate and ethanol compared to others, suggesting that these candidates were unsuitable to serve as cores. The metabolite profiles of the monocultures showed that the yeasts alone could be sufficient for sucrose consumption. It also showed that acetate was produced primarily through co-cultures but not monocultures. To systematically evaluate the candidates, we performed hierarchical cluster analysis and principal component analysis over the metabolites to determine the similarities among the candidates and the four native samples (AB, BB, CB, and DB). The hierarchical cluster analysis yielded three groups, one involving bacteria monocultures and Y3-involved mono- and co-cultures, another containing CB only, and the third including the rest (Figure 2C, Figure 2—source data 4). The principal component analysis showed that the co-cultures were all relatively close to the native microbiomes except for CB (Figure 2D).
 
@@ -65,23 +65,59 @@ We further evaluated the candidates in terms of pellicle formation, the third ch
 
 Combining all three aspects of consideration, we chose B2Y1 as our minimal core of the KT microbiome for systematic, mechanistic investigation. Notably, Y1 (B. bruxellensis) was also the most predominant yeast species in the native samples (Figure 1C, Figure 2—source data 1).
 
-## Compositional and metabolic dynamics of the core
+### Compositional and metabolic dynamics of the core
 
 To reveal the detailed traits of the selected core (B2Y1), we performed a set of fermentation experiments with different initial ratios (100:1, 10:1, 1:1, 1:10, and 1:100) while maintaining a constant total inoculation (2*106 CFU/mL; Materials and methods). For all initial conditions, we found the bacterium B2 decreased in day 1 but increased afterwards with a declining magnitude of the growth rate (Figure 3A, Figure 3—figure supplement 1A, Figure 3—source data 1). By contrast, the yeast Y1 monotonically grew up with its rate reducing to null over time (Figure 3B, Figure 3—figure supplement 1B, Figure 3—source data 1). The population ratio of the two species showed that the community composition converged throughout the course of fermentation despite the variation of its initial ratio (Figure 3C).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/76401/elife-76401-fig3-v1.jpg)
+
+**Figure 3.:** (A, B) Populations of B2 (A) and Y1 (B) in broth throughout the course of a fermentation starting with 50 g/L sucrose. (C) Bacterium-to-yeast population ratio of the microbes in broth. (D) Ratio of microbial populations in pellicle during the fermentation. Notably, pellicle formation was not observed until day 6. (E–L) pH, carbon sources and metabolites during the fermentation driven by the core. The concentrations of total polyphenols and total flavonoids were expressed as mg of gallic acid equivalent (GAE) per mL of kombucha tea (mg GAE/mL) and mg of quercetin equivalent (QE) per mL of kombucha tea (mg QE/mL) respectively. Bars and error bars correspond to means and s.d.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76401/elife-76401-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A, B) Growth rates of B2 (A) and Y1 (B) in tea broth during the KT fermentation with 50 g/L sucrose. (C) Image of a typical pellicle formed during the fermentation. (D, E) Populations of B2 (D) and Y1 (E) in pellicle during the fermentation. (F) Dry weight of pellicles during the fermentation. Five initial compositions were used for fermentation, including 100:1 to 10:1, 1:1, 1:10, and 1:100. Bars and error bars correspond to means and s.d., respectively.
 
 The fermentation was also accompanied with the formation of pellicles (Figure 3—figure supplement 1C), which became visible after day 6 and grew continuously afterwards. Our CFU counting showed that, once pellicle formed, B2 and Y1 population densities remained relatively stable in the pellicles regardless of their initial abundance (Figure 3—figure supplement 1D and E). Meanwhile, their ratio converged to a fixed value (Figure 3D), although the dry weight of the pellicles increased over time (Figure 3—figure supplement 1F). The convergence of composition in both broth and pellicle suggested that there were underlying forces that drove and stabilized community population dynamics.
 
 Additionally, we quantified the temporal biochemical characteristics of the KT broth. Strikingly, although initial population ratios were varied across four orders of magnitude, each of the variables including pH, sugars, acids and tea-derived chemicals converged onto its own consensus pattern (Figure 3E–L, Figure 3—source data 2), akin to the convergence of composition in broth and pellicle. Specifically, regardless of the initial population composition, the pH dropped from 5.0 to 3.5 through fermentation (Figure 3E), which was associated with continuous sucrose reduction (Figure 3F). Throughout the process, glucose remained at a low level (~0.1 g/L) (Figure 3G) while fructose was relatively higher with a pulse-like profile (Figure 3H). Acetate and ethanol on the other hand continued to accumulate during the fermentation (Figure 3I and J). Polyphenol and flavonoids remained relatively stable with minor decrease (Figure 3K and L). In the meanwhile, we found that throughout the fermentation process, the temporal kinetics of different metabolites were coordinated. For example, continuous pH reduction (Figure 3E) was in concert with sucrose drop (Figure 3F), which was anti-correlated with the increase of ethanol (Figure 3I) and acetate (Figure 3J). The observation of these patterns, such as the fructose spike, motivated us to investigate the underlying driving forces.
 
-## Controlled fermentation assays yield causal claims for the core
+### Controlled fermentation assays yield causal claims for the core
 
 To decode the mechanistic origins of the observed patterns, we investigated the metabolic processes of the constituting species (B2 and Y1) by conducting comprehensive monoculture fermentations with defined settings. Here, we focused on sucrose, glucose, fructose, ethanol and acetate as the primary biochemical substances of interest based on our measure of the KT broth and previous literature reports (Jayabalan et al., 2014; Villarreal-Soto et al., 2018). We used them alone and in combination as substrates to grow monocultures (Materials and methods) and quantified the temporal profiles of key substances, pH, biomass growth and pellicle formation, resulting a total of 30 panels (Figure 4, Figure 4—source data 1).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/76401/elife-76401-fig4-v1.jpg)
+
+**Figure 4.:** Sucrose (abbreviated as S, 10 g/L), glucose (G, 10 g/L), fructose (F, 10 g/L), ethanol (E, 50 mL/L), and acetate (A, 2 g/L) were used alone or in combination for fermentation. The number on top left of each panel is the label of the experiment. The letters on top middle of each panel indicate specific carbon sources used in the corresponding experiment. The +or – sign on the top right indicates whether a pellicle was formed during the fermentation. Bars and error bars correspond to means and s.d.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/76401/elife-76401-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** GE: glucose and ethanol; GA: glucose and acetate; GFE: glucose, fructose and ethanol; GEA: glucose, ethanol and acetate.
 
 We harnessed the results of these panels to deduce biochemical conversion. As the starting carbon source, sucrose alone was not degradable by B2 as shown in panel 1 (abbreviated as P1) of Figure 4 but consumable by Y1 with the production of a trace amount of glucose and fructose, ethanol accumulation, pH reduction and biomass growth (P16). Sucrose also showed weak hydrolysis in the presence of ethanol or acetate, which increased microbial survival (P6,7). Glucose and fructose were produced from sucrose hydrolysis primarily by Y1 (16) and minorly by ethanol and acetate (P6,7). Glucose was efficiently utilized by B2 for growth (P2) and by Y1 with biomass and ethanol accumulation (P17). Fructose was consumable for Y1 (P18), not B2 (P3), with ethanol and biomass production. Fructose was also slowly converted to glucose in the presence of ethanol, which was mediated by B2 probably and supported B2 growth (P11). Ethanol was produced solely by Y1 during the metabolism of sucrose, glucose and fructose (P16,17,18), not by B2. Although ethanol alone was unusable by B2 (P4), it was consumed with glucose (P9), resulting in acetate production and pellicle formation without obvious growth benefits compared to glucose alone. It thus implied that ethanol was used an energy source for pellicle formation as previously reported (Molina-Ramírez et al., 2018). Ethanol was also utilized by Y1 in a weak fashion to result in biomass and acetate production (P19). Acetate was produced primarily by B2 in the presence of multiple substrates (P6,9,13–15), particularly when glucose and ethanol were co-present (P9,13,14). In addition to B2, Y1 yielded a small amount of acetate with the consumption of sucrose, glucose, fructose or ethanol (P16-19). Acetate was additionally shown to minorly promote its own production by B2 (P10 vs. P2) and ethanol production by Y1 (P29,30 vs. P24,26).
 
 Using the fermentation assays, we also inferred cellular tolerance to environmental stress. Comparison of the B2 and Y1 growth dynamics in single substrates showed that the yeast was more resistant than the bacterium to chemicals including ethanol and acetate (P4,5,19,20), which is another key factor that shapes community composition and metabolism. Additionally, the assays provided insight into pellicle formation. B2 monoculture was capable of pellicle production (P9,10,13,14) (Figure 4—figure supplement 1), whereas Y1 was deficient under all conditions (P16-30). Moreover, comparison of the pellicle-forming conditions (P9,10,13,14) with single substrate conditions (P1-5) showed that efficient biofilm development required not only glucose but also ethanol or acetate as a co-substrate. Notably, although pellicle formation could occur in the presence of glucose as a sole carbon and energy source (Masaoka et al., 1993) for certain species, at least for those we investigated, it required two substrates to produce pellicle.
 
 The above findings were synthesized and subsequently integrated with reported metabolic reactions (Koschwanez et al., 2011; DeRisi et al., 1997; Smith and Divol, 2016; Liu et al., 2018) into a system-level diagram (Figure 5), which involves major metabolic flows within each species, interspecies fluxes mediated by the environment, and regulatory effects from metabolites to fluxes. To illustrate its implications, we attempted to account for the observed compositional characteristics of the core. As the diagram showed, Y1 breaks down sucrose into glucose and fructose for its own growth, which also benefits B2 by sharing glucose. Additionally, Y1 secretes ethanol that is utilized by B2 when glucose is present. Thus, the core possesses a commensal relationship whereby Y1 provides two modes of benefits to B2. By design, such an interaction confers the stability and convergence of the ecosystem composition, thus providing a mechanistic driver for the population convergence in broth and pellicle (Figure 3C and D) and echoing with previous work demonstrating that inter-population cooperation leads to stable composition (Momeni et al., 2013).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/76401/elife-76401-fig5-v1.jpg)
+
+**Figure 5.:** Black arrows refer to metabolic fluxes while brown arrows correspond to positive or negative regulatory interactions. The numbers associated with each arrow are the corresponding fermentation assays in Figure 4 supporting the specific interaction.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76401/elife-76401-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** The invertase activity is defined as the amount of sucrose reduction per minute for a given amount of yeast cells (inoculation amount: 1*106 CFU/mL). Bars and error bars correspond to means and s.d., respectively. T-test of paired samples in each time point did not show significant differences at p<0.05. (p=0.129732 on day 3; p=0.906200 on day 6; p=0.335084 on day 10.).
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/76401/elife-76401-fig5-figsupp2-v1.jpg)
+
+**Figure 5—figure supplement 2.:** (A, B) Population (A) and growth rate (B) of Y1 in monoculture and in the B2Y1 co-culture. (C–H) pH, carbon sources and metabolites during the fermentations of the monoculture and the co-culture. Open and filled symbols correspond to the Y1 monoculture and the B2Y1 co-culture, respectively. For the co-culture, the total inoculation amount was fixed at 2*106 CFU/mL but the bacterium-yeast ratio was varied from 100:1 to 1:100. For the monoculture, the total bacterium population was varied in alignment with the bacterial population in the corresponding co-culture. Bars and error bars correspond to means and s.d., respectively.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/76401/elife-76401-fig5-figsupp3-v1.jpg)
+
+**Figure 5—figure supplement 3.:** (A) Y1 population dynamics. (B) B2 population dynamics. (C–H) pH, carbon sources and metabolites during the fermentation. The initial Y1 inoculation was fixed as 1*106 CFU/mL but the B2 inoculation was varied from 0 to 1*104, 1*105, 1*106, and 1*107 CFU/mL. Bars and error bars correspond to means and s.d., respectively.
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/76401/elife-76401-fig5-figsupp4-v1.jpg)
+
+**Figure 5—figure supplement 4.:** (A) Y1 population dynamics. (B) B2 population dynamics. (C–H) pH, carbon sources and metabolites during the fermentation. The initial B2 inoculation was fixed as 1*106 CFU/mL but the Y1 inoculation was varied from 0 to 1*104, 1*105, 1*106, and 1*107 CFU/mL. Bars and error bars correspond to means and s.d., respectively.
 
 The results also elucidated three ways in which Y1 is more robust than B2: first, B2 relies on Y1 for glucose release; second, Y1 is more versatile for utilizing different substrates including sucrose, glucose, fructose, and ethanol; third, Y1 has a higher tolerance to ethanol and acetate. These findings explained the temporal growth difference that B2 declined first before recovery while Y1 monotonically grew since the beginning of fermentation (Figure 3A, B).
 
@@ -91,9 +127,25 @@ For pellicle formation, the diagram showed that B2 was solely responsible for pe
 
 Relating to the bacterium-yeast symbiosis, some previous studies reported that the microbial social interactions are commensal while others concluded to be mutual (Laavanya et al., 2021; May et al., 2019). To resolve this debate, we conducted experiments to examine possible benefits from B2 to Y1. As certain yeasts were suggested to secret more invertase when co-cultured with cheaters (Celiker and Gore, 2012), we measured the invertase activity of Y1 in monoculture and in co-culture with B2 but did not find significant difference between the two conditions (p<0.05; Figure 5—figure supplement 1). We also compared the growth and metabolites of Y1 in the B2Y1 co-culture and in monoculture with different initial ratios; however, the results showed that B2 did not affect either growth or metabolites except the increase of acetate which was produced by B2 (Figure 5—figure supplement 2). We additionally varied the B2 level while fixing Y1’s initial amount and altered Y1 while maintaining the initial B2. In both settings, Y1 growth was not affected by B2, and all metabolic variables, except acetate, exhibited the same patterns (Figure 5—figure supplements 3 and 4). Therefore, although we did not rule out the possibility of altered interactions across SCOBYs, our experiments demonstrated that, at least in our system, the symbiosis driving the community is commensal instead of mutual.
 
-## Insights into communities with increased complexity and varied conditions
+### Insights into communities with increased complexity and varied conditions
 
 We have thus far illustrated the casual claims for the two-species core, but do these findings provide implications for communities with different complexity and settings? To answer the question, we assembled a consortium of 10 species (B1, B2, B3, B4, B5, Y1, Y2, Y3, Y4, and Y5). Using the consortium, we performed fermentations with the same medium as previous (i.e. black tea substrate supplemented with 50 g/L sucrose) and using different initial total bacteria-to-yeast ratios while keeping all bacterial species even and all yeast species even (Figure 6A).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/76401/elife-76401-fig6-v1.jpg)
+
+**Figure 6.:** (A) Schematic illustration of a ten-species community involving B1-B5 and Y1-Y5 in a fermentation with 50 g/L of initial sucrose. (B–E) Population ratio (B), sucrose (C), ethanol (D), and acetate (E) throughout the course of the fermentation shown in (A). (F) Schematic illustration of 5 two-species communities with each involving B2 and one of the yeasts ( Y1-Y5) in a fermentation starting with 50 g/L sucrose. (G–J) Population ratio, sucrose, ethanol, and acetate during the fermentation illustrated in (F). (K) Schematic illustration of five two-species communities with each involving Y1 and one of the bacteria ( B1-B5) in a fermentation with 50 g/L of initial sucrose. (L–O) Population ratio, sucrose, ethanol and acetate during the course of fermentation illustrated in (K). (P) Schematic illustration of the ten-species community involving B1-B5 and Y1-Y5 in a fermentation starting with 100 g/L sucrose. (Q–T) Population ratio, sucrose, ethanol and acetate during the fermentation depicted in (P). Bars and error bars correspond to means and s.d.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/76401/elife-76401-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Schematic illustration of a ten-species community involving B1-B5 and Y1-Y5 in a fermentation with 50 g/L of initial sucrose. (B–D) pH (B), glucose (C) and fructose (D) throughout the course of the fermentation shown in (A). (E) Schematic illustration of five two-species communities with each involving B2 and one of the yeasts (Y1-Y5) in a fermentation starting with 50 g/L sucrose. (F–H) pH, glucose and fructose during the fermentation illustrated in (E). (I) Schematic illustration of five two-species communities with each involving Y1 and one of the bacteria (B1-B5 B1–B5) in a fermentation with 50 g/L of initial sucrose. (J–L). pH, glucose and fructose during the fermentation illustrated in (I). (M) Schematic illustration of the ten-species community involving B1-B5 and Y1-Y5 in a fermentation starting with 100 g/L sucrose. (N–P) pH, glucose and fructose during the fermentation depicted in (M). Bars and error bars correspond to means and s.d., respectively.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/76401/elife-76401-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A, B) B2 (A) and Y1(B) population dynamics throughout the fermentation. (C) The B2-to-Y1 ratio in the fermentation. (D–I) pH, carbon sources and metabolites throughout the course of the fermentation. Bars and error bars correspond to means and s.d., respectively.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/76401/elife-76401-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A, B) B2 (A) and Y1(B) population dynamics during the fermentation. (C) The B2-to-Y1 ratio in the fermentation. (D–I) pH, carbon sources and metabolites during the fermentation driven by the core. Bars and error bars correspond to means and s.d.
 
 In bulk, the ten-species community yielded the same patterns as the two-species core, including the overall compositional convergence compared to the initial structure (Figure 6B, Figure 6—source data 1), continued sucrose consumption (Figure 6C, Figure 6—source data 1), increase in ethanol and acetate (Figure 6D, E), monotonic pH reduction (Figure 6—figure supplement 1B), consistent lowness of glucose (Figure 6—figure supplement 1C), pulse-like fructose profile (Figure 6—figure supplement 1D) and successful pellicle formation (data not shown). Although species composition was not directly analyzed, the similarity in patterns suggested that the core served as a good approximation of the ten-species consortium and that the knowledge from the simple core provided predictive insights into the functions of communities with an increased degree of complexity.
 
@@ -125,11 +177,84 @@ A major goal of the food industry is to improve food quality and flavor through 
 
 ## Materials and methods
 
-## Kombucha tea fermentation
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Fecal/soil Microbe Miniprep kit</td>
+      <td>ZYMO</td>
+      <td>Cat No./ID:D6010</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Gluconic acid Kit</td>
+      <td>Megazyme, Ireland</td>
+      <td>Cat No./ID:K-GATE</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>B-f</td>
+      <td>Huang et al., 2021</td>
+      <td>PCR Primer</td>
+      <td>Forward primer used for amplifying bacterial DNA for Sanger sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>B-r</td>
+      <td>Huang et al., 2021</td>
+      <td>PCR Primer</td>
+      <td>Reverse primer used for amplifying bacterial DNA for Sanger sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NL-1</td>
+      <td>Coton et al., 2017</td>
+      <td>PCR Primer</td>
+      <td>Forward primer used for amplifying yeast DNA for Sanger sequencing</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>NL-4</td>
+      <td>Coton et al., 2017</td>
+      <td>PCR Primer</td>
+      <td>Reverse primer used for amplifying yeast DNA for Sanger sequencing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Canoco</td>
+      <td>Microcomputer Power, Ithaca, NY</td>
+      <td></td>
+      <td>Version 5.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SIMCA</td>
+      <td>Umetricus, Sweden</td>
+      <td></td>
+      <td>Version 14.1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Kombucha tea fermentation
 
 Black tea (Harney & Sons Fine Teas, Millerton, NY) was purchased as the tea substrate for the fermentation. The live starter culture SCOBY used as inoculum were obtained from 4 different commercial sources, referring to samples A, B, C, and D. Kombucha tea was prepared as previously reported with minor modifications (Jayabalan et al., 2007; Cardoso et al., 2020). Briefly, 1 L deionized water was boiled, added with 12 g/L black tea and allowed to infuse for 5 min. After removing the tea leaves, sucrose (50 g/L) was dissolved in hot tea. After cooling, the tea mixture was filtered through sterile sieve to 500 mL glass vessel with cotton and gauze caps. Then, 3.0% SCOBY and liquid broth (10% v/v) of the SCOBY samples were added to tea broth. The kombucha tea was incubated at 25 °C for 14 days.
 
-## Amplicon sequencing of 16S ribosomal RNA (rRNA) and ITSs
+### Amplicon sequencing of 16S ribosomal RNA (rRNA) and ITSs
 
 Pellicle samples were first treated with 200 mg/mL cellulase (Sigma-Aldrich, Milan, Italy) for 16 hr, and sonicated in ice bath for 1 min using a probe sonicator (Model 505, Fisherbrand, USA) for 1 min. Then the samples were centrifuged at 6500 rpm at 4 °C for 10 min. The cell pellets were used for DNA extraction. Total DNA extractions were performed for tea broth and pellicle samples using Quick-DNA Fecal/soil Microbe Miniprep kit (ZYMO Research Corp.) according to the manufacturer’s instructions.
 
@@ -137,28 +262,28 @@ Pellicle samples were first treated with 200 mg/mL cellulase (Sigma-Aldrich, Mil
 
 Raw sequence data was converted into FASTQ files and de-multiplexed using Illumina’s bcl2fastq 2.17 software. QIIME data analysis package was used for 16 S rRNA and ITS rRNA data analysis (Caporaso et al., 2010). All the reads (forward and reverse) were assigned to different samples based on barcode, and then truncated by cutting off the primer and barcode. After quality filtering (Ren et al., 2019), the sequences were compared with the RDP Gold database to detect chimeric sequences using the UCHIME algorithm (Edgar et al., 2011). Subsequently, the effective sequences were grouped into operational taxonomic units (OTUs) using the clustering program VSEARCH (1.9.6) against the Silva 119 database for bacteria (Quast et al., 2013) and the UNITE ITS database for fungi (Nilsson et al., 2019), with pre-clustered at 97% of sequence identity. The Ribosomal Database Program (RDP) classifier was used to assign taxonomic category to all OTUs at a confidence threshold of 80% (Cole et al., 2009).
 
-## Species isolation and identification
+### Species isolation and identification
 
 For species isolation, kombucha tea broths were diluted and plated directly whereas pellicle samples were sonicated and digested before dilution as described above. Diluted samples were then inoculated in different selective media. For bacterial isolation, de Man, Rogosa and Sharpe medium (MRS), Mannitol medium (Coton et al., 2017), and Glucose yeast extract calcium carbonate medium (GYC) (Kim et al., 2019) were used in conjugation with 0.1% cycloheximide or 500 µg/mL natamycin for inhibiting fungi growth. Isolation of yeast species was carried out using the yeast extract peptone dextrose (YPD) medium supplemented with 100 mg/L chloramphenicol. Isolated species were identified by Sanger sequencing of the 16 S and 26 S rRNA gene regions, with the universal primers B-f (5′-AGAGTTTAGTCCTGGCTCAG-3′) and B-r (5′- AAGGAGGTGATCCAGCCGCA-3′) for bacteria (Huang et al., 2021), and NL-1 (5΄-GCATATCAATAAGCGGAGGAAAAG-3΄) and NL-4 (5΄-GGTCCGTGTTTCAAGACGG-3΄) for yeasts (Coton et al., 2017).
 
-## Biochemical analyses
+### Biochemical analyses
 
 The pH was measured with a pH meter (AE150; Fisher Scientific, Waltham, MA) inserted directly into samples. Acetate, glucuronate and ethanol concentrations were determined by high performance liquid chromatography (HPLC, Agilent Technologies 1,200 Series) equipped with a refractive index detector using a Rezex ROA Organic Acid H+ (8%) column (Phenomenex Inc Germany). The column was eluted with 0.005 N of H2SO4 at a flow rate of 0.6 mL/min at 50 °C (Ha et al., 2011). Sucrose, glucose and fructose were analyzed using RCM Monosaccharide Ca2+ column (Phenomenex Inc, Germany). The column was eluted with deionized water at a flow rate of 0.6 mL/min at 80°C (Ilaslan et al., 2015). For gluconate detection, the gluconic acid Kit (Megazyme, Ireland) was used. The concentration of total polyphenols was measured by the Folin-Ciocalteu colorimetric method, with gallic acid as standard. The absorbance was measured at 765 nm and the results were expressed as mg of gallic acid equivalent (GAE) per mL of kombucha tea (mg GAE/mL) (Bhattacharya et al., 2013). The total flavonoids were determined using an aluminum chloride assay using quercetin as standard. The absorbance was measured at 430 nm and the content was expressed as mg of quercetin equivalent (QE) per mL of kombucha tea (mg QE/mL) (Sun et al., 2015). The invertase activity was determined according to the method described by Laurent et al (Laurent et al., 2020). The remaining sucrose was detected by HPLC as described above. The measurement of pellicle weight was based on the descriptions of Florea et al. using 0.1 M NaOH for pretreatment (Florea et al., 2016).
 
-## Co-culture fermentation experiments
+### Co-culture fermentation experiments
 
 All the stocked bacteria and yeasts isolates were grown in YPD media and then centrifuged and washed twice with fresh tea liquid (12 g/L) at 6500 g for 5 min. Synthetic, pairwise bacterium-yeast cocultures were assessed in tea liquid with 50 g/L sucrose. Bacteria species included Komagataeibacter rhaeticus (B1), Komagataeibacter intermedius (B2), Gluconacetobacter europaeus (B3), Gluconobacter oxydans (B4) and Acetobacter senegalensis (B5). Yeasts included Brettanomyces bruxellensis (Y1), Zygosaccharomyces bailii (Y2), Candida sake (Y3), Lachancea fermentati (Y4) and Schizosaccharomyces pombe (Y5). For each pairwise co-culture, the total inoculation was as a final amount at 2*106 CFU/mL and the inoculation amounts of bacteria and yeast were equal. Monoculture of each species was used as control group and the inoculation was also as a final amount at 2*106 CFU/mL. The cultures were then incubated at 30 °C, and microbial populations and biochemical parameters were measured after 10 days fermentation. To count bacteria and yeasts, 1000 µg/mL of natamycin or 100 mg/L chloramphenicol of was added respectively.
 
 The B2-Y1 consortium was fermented in tea liquid supplemented with 5, 50, 100 g/L sucrose individually. To characterize the consortium, B2 and Y1 were inoculated at different initial ratios from 100:1 to 10:1, 1:1, 1:10, and 1:100. The growth rates of B2 and Y1 and the B2/Y1 ratio were calculated. Meanwhile, to determine the effect of Y1 on B2, we performed the Y1 monoculture experiment using the same inoculation amount as the B2Y1 co-culture. Moreover, we fixed the inoculation of B2 or Y1 (1*106 CFU/mL) but varied the amount of the other species from 0 to 1*104, 1*105, 1*106, 1*107 CFU/mL. Additionally, to determine if different species differ in growth and metabolic ability, Y1 was co-cultured with different bacterial species (B1, B2, B3, B4, and B5) and B2 was co-cultured with different fungal species (Y1, Y2, Y3, Y4 or Y5) in tea substrate supplemented with 50 g/L sucrose. The population dynamics and biochemical parameters were measured at 0, 3, 6, 10 days or 0, 1, 2, 3, 6, 10 days. To count microbes in pellicles, the pellicles were first digested by shaking for 16 hr at 4 °C in 15 ml of PBS buffer with 2% cellulase (Sigma Aldrich, C2730).
 
-## Monoculture fermentation with different carbon sources
+### Monoculture fermentation with different carbon sources
 
 To uncover the metabolic underpinnings that drive microbial population dynamics and metabolite synthesis, we conducted a series of monoculture growth experiments for B2 and Y1 using different carbon sources. Specifically, we used 10 g/L sucrose, 10 g/L fructose, 10 g/L glucose, 50 mg/L ethanol, and 2 g/L acetate for fermentation. The initial inoculation of B2 and Y1 was 2*106 CFU/mL. The population and biochemical parameters were measured at 2 days intervals.
 
-## Construction and fermentation of communities with increased complexity
+### Construction and fermentation of communities with increased complexity
 
 The five bacterial isolates (B1, B2, B3, B4, and B5) and the five yeast isolates (Y1, Y2, Y3, Y4, and Y5) were pooled together to create a synthetic, ten-species community. In initial inoculations, all bacterial species were equally abundant, and all yeast species were also equal; however, the total bacteria-to-yeasts ratio was varied from 100:1, 10:1,1:1, 1:10, to 1:100 while fixing the total amount of inoculation (2*106 CFU/mL). Two different sucrose levels, 50 and 100 g/L, were added to tea liquid for fermentation. The population dynamics and biochemical parameters were measured at 0, 3, 6, 10 days.
 
-## Statistical analysis
+### Statistical analysis
 
 All the experiments were performed for three times. Redundancy analysis between microbial community and metabolites was performed with Canoco 5.0 software (Microcomputer Power, Ithaca, NY). The hierarchical cluster analysis and principal component analysis on different consortia were performed with the SIMCA-14.1 software (Umetricus, Sweden). For hierarchical cluster analysis, the distances between observations were calculated using Ward’s method based on the concentrations of different metabolites. Heatmaps of the chemical properties of the 25 two-species fermentations and 10 single-species fermentations were produced using the heatmap package with Z-score normalization (Quan et al., 2019) in R.

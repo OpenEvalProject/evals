@@ -46,13 +46,109 @@ While unsupervised machine learning has been advanced to study the semantic rela
 
 The nferX software is a cloud-based platform that enables users to dynamically query the universe of possible conceptual associations from over 100 million biomedical documents, including the COVID-19 Open Research Dataset recently announced by the White House (The White House, 2020; Figure 1). An unsupervised neural network is used to recognize and preserve complex biomedical phraseology as 300 million searchable tokens, beyond the simpler words that have generally been explored using higher dimensional word embeddings previously (Mikolov et al., 2013a). Our local context score is derived from pointwise mutual information content between pairs of these tokens and can be retrieved dynamically. Our global context score is derived using word2vec (Mikolov et al., 2013a), as the cosine similarity between 180 million word vectors projected in a 300 dimensional space (Figure 1A, Figure 1—figure supplement 1).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig1-v2.jpg)
+
+**Figure 1.:** (A) Knowledge synthesis: capturing association between concepts from over 100 million documents. Schematic shows the workflow for generating literature-derived associations between phrases. Local score and global score are defined and the types of literature-derived associations are shown for combinations of high and low local and global scores. (B) Datasets enabling knowledge synthesis-powered scRNAseq analysis platform (https://academia.nferx.com/). Single-cell RNAseq data was obtained from publicly available human and mouse single-cell RNA-seq datasets. Bulk RNA-seq data was obtained from Gene Expression Omnibus (GEO) and the Genotype Tissue Expression (GTEx) project portal. Protein-level expression of coronavirus receptors was assessed using a collection of immunohistochemistry (IHC) images and tissue proteomics datasets from the Human Protein Atlas and the Human Proteome Map. Literature-derived association scores are obtained from over 100 million biomedical documents (C) Highlighting selected tissues and cell types identified by one or more modalities to express ACE2, the putative receptor of SARS-CoV-2 spike protein. Image template: https://www.proteomicsdb.org/.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** A)-(B) 1-d logistic model predicting true vs random concept pair associations from (A) cosine score and (B) Exponential Local Score. Extent of separation between the green true associations and red random associations indicates extent to which score captures known concept associations. (C) Normalized histograms of co-occurrence counts (on logarithmic scale) for high-cosine vs low-cosine token pairs. (D) Distribution of cosines between gene-disease token vector pairs vs null distributions of cosines between pairs of random 300-d vectors. (E) Null cosine distribution between two random vectors, as the dimension of the vectors varies.
+
 In order to assess the veracity of these conceptual associations derived from biomedical literature, it is absolutely essential to enable triangulation with structured data sources including gene and protein expression datasets. To address this need and empower the scientific community, we built a Single Cell RNA-seq (scRNAseq) resource (https://academia.nferx.com/) which harnesses these local and global score metrics to enable seamless integration of literature-derived associations with the analysis of transcriptomes from over 2.2 million individual cells from over 50 human and mouse tissue-types (Figure 1B). Here, we use this first-in-class resource to conduct a comprehensive expression profiling of ACE2 across host tissues and cell types and discuss how the observed expression patterns correlate with the pathogenicity and viral transmission shaping the ongoing COVID-19 pandemic (Figure 1C).
 
 ## Results
 
-## ACE2 has higher expression levels in multiple cell types of the gastrointestinal (GI) tract compared to respiratory cells
+### ACE2 has higher expression levels in multiple cell types of the gastrointestinal (GI) tract compared to respiratory cells
 
 To systematically profile the transcriptional expression of ACE2 across tissues and cell types, we triangulated scRNAseq-based measurements with literature-derived signals to automatically delineate novel, emerging, and known expression patterns (Figure 2; Supplementary file 1). This approach immediately highlights renal proximal tubular cells and small intestinal enterocytes among the cell types that most robustly express ACE2 (detection in >40% of cells). These cell types are also moderately to strongly associated with ACE2 in the literature. The strong intestinal ACE2 expression is particularly interesting given the emerging clinical reports of fecal shedding and persistence post-recovery which may reflect a fecal-oral transmission pattern (Xu et al., 2020a; Gu et al., 2020; Xiao et al., 2020).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-v2.jpg)
+
+**Figure 2.:** Scatterplot shows comparison of percentage of cells with non-zero expression (x-axis) against literature-derived associations: local score (y-axis and size of circles) and global score (transparency of circles). Data includes cell types identified from ~1.8 million human cells and 462,000 mouse cells cumulatively from 72 studies.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Ace2 expression in pancreatic cell types from the Tabula Muris study (Tabula Muris Consortium et al., 2018), including polypeptide (gamma) and alpha cells. (B) ACE2 expression in pancreatic cell types from human samples (Muraro et al., 2016; Segerstolpe et al., 2016; Grün et al., 2016), with notable absence in gamma and alpha cells.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) ACE2 expression by bulk RNA-seq across healthy tissues from GTEx. Gray box highlights the tissues with highest expression including small intestine and kidney; green arrow indicates lung. (B–C) Expression of ACE2 and other coronavirus receptors by proteomics across over 20 healthy human tissues from the Human Proteome Map (B) and the Human Protein Atlas (C). (D) IHC stained images showing ACE2 expression in the kidney, small intestine, and colon, with minimal or low expression detected in respiratory tissues.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp3-v2.jpg)
+
+**Figure 2—figure supplement 3.:** (A–C) Cosine similarities between gene expression vectors of all genes and ACE2 (A), DPP4 (B), and ANPEP (C) among all annotated proximal tubule epithelial cells from a human kidney scRNAseq dataset (Stewart et al., 2019). ACE2, DPP4, and ANPEP are reciprocally among the most similar genes to each other. (D–F) Analysis of Pearson correlation coefficients between all genes and ACE2 (D), DPP4 (E), and ANPEP (F) from human kidney cortex samples (GTEx; n = 85). ACE2, DPP4, and ANPEP are reciprocally among the most strongly correlated genes to each other.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp4-v2.jpg)
+
+**Figure 2—figure supplement 4.:** Use case shows results for a query of Ins1 in the Tabula Muris study. (A) Violin Plot section shows that pancreatic beta cells express Ins1 at the highest level among 148 annotated cell types from 18 tissues. Summary statistics for each row indicate the percent of cells within a given cluster expressing Ins1, the mean expression of Ins1 in that cluster, and a metric of expression specificity (Cohen’s D) to each cluster. On the left side of the table, ‘Signals’ columns highlight literature-derived associations between Ins1 and the tissue (‘pancreas’) or cell type (e.g. ‘pancreatic beta cells’). (B) Dimensionality reduction-based visualization of all ~100,600 cells from Tabula Muris. Left-sided plot colors cells (points) based on Ins1 expression in the individual cell; right-sided plot colors cells based on a selected metadata variable (here, tissue of origin). (C) List of cluster-defining genes for a selected cell population - by default, any cell population which highly expresses the query gene. Here, cluster-defining genes for pancreatic beta cells include Ins1, Ins2, and Iapp. Blue box highlights functionality to triangulate such cluster-defining gene lists with any literature query of interest.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp5-v2.jpg)
+
+**Figure 2—figure supplement 5.:** (A–C) GTEx tissues with highest expression observed for DPP4 (A), ANPEP (B), and TMPRSS2 (C). (D) Assessment of ACE2 expression along with other coronavirus receptors in non-GTEx tissues from the Janssen BodyMap dataset (bulk RNA-seq). (E) IHC staining showing that DPP4 and ANPEP are apically expressed in the small intestine (top), while DPP4, ANPEP, and TMPRSS2 are all expressed apically in renal tubular cells (bottom).
+
+![Figure 2—figure supplement 6.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp6-v2.jpg)
+
+**Figure 2—figure supplement 6.:** UMAP-based dimensionality reduction plot denoting cell types (A, G) and corresponding expression levels of ACE2, DPP4, ANPEP and TMPRSS2 (B, H) from adult (A–B) and fetal (G–H) human kidney samples (Stewart et al., 2019). (C–F) Violin plot visualization of gene expression for ACE2 (C), TMPRSS2 (D), ANPEP (E), and DPP4 (F) in adult human kidney scRNAseq dataset. Automated literature synthesis highlights strong associations of ACE2, DPP4, and ANPEP to the kidney.
+
+![Figure 2—figure supplement 7.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp7-v2.jpg)
+
+**Figure 2—figure supplement 7.:** UMAP-based dimensionality reduction plot denoting cell types (A, C, E) and corresponding expression levels of ACE2, DPP4, ANPEP and TMPRSS2 (B, D, F) from multiple studies: (A–B) human heart (Wang et al., 2020b), (C–D) murine heart from Tabula Muris (Tabula Muris Consortium et al., 2018), and (E–F) murine heart from Mouse Cell Atlas (Han et al., 2018).
+
+![Figure 2—figure supplement 8.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp8-v2.jpg)
+
+**Figure 2—figure supplement 8.:** UMAP-based dimensionality reduction plot denoting cell types (A, C, E) and corresponding expression levels of Ace2, Dpp4, Anpep and Tmprss2 (B, D, F) from multiple studies: (A–B) adipose stromovascular fraction from mice treated with PBS or a beta-3 adrenergic agonist (Rajbhandari and Arneson, 2019), (C–D) murine adipose stromovascular fraction from Tabula Muris (Tabula Muris Consortium et al., 2018), and (E–F) adipose tissue from mice subjected to 24 hr of cold shock and processed for single nucleus RNA-sequencing (Rajbhandari and Arneson, 2019). (G–H) Identification of adipocytes as the most likely ACE2-expressing cell type in adipose tissue based on literature associations. The query shown is from the nferX Signals platform and effectively extracts any textual fragments which contain [‘ACE2’ or its gene synonyms] AND [displayed terms related to gene expression/protein detection] AND [‘adipose’ OR 'fat']. Among these textual fragments, we extract the tokens which represent cell types and calculate enrichments of each cell type among these fragments, normalized by the number of occurrences of this cell type elsewhere in the literature.
+
+![Figure 2—figure supplement 9.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp9-v2.jpg)
+
+**Figure 2—figure supplement 9.:** UMAP-based dimensionality reduction plot denoting cell types (A, C) and corresponding expression levels of ACE2, DPP4, ANPEP and TMPRSS2 (B, D) from multiple studies: (A–B) adult human testis (Guo et al., 2018), and (C–D) murine testis from Mouse Cell Atlas (Han et al., 2018).
+
+![Figure 2—figure supplement 10.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp10-v2.jpg)
+
+**Figure 2—figure supplement 10.:** UMAP-based dimensionality reduction plot denoting cell types (A, C) and corresponding expression levels of ACE2, DPP4, ANPEP and TMPRSS2 (B, D) from multiple studies: (A–B) adult human ovary (Fan et al., 2019), and (C–D) murine ovary from Mouse Cell Atlas (Han et al., 2018).
+
+![Figure 2—figure supplement 11.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp11-v2.jpg)
+
+**Figure 2—figure supplement 11.:** (A–B) ACE2 expression on the apical surface of gallbladder epithelial cells (A) and on ductal surfaces in the pancreas (B). (C) ANPEP is expressed on apical membranes in pancreatic acini and ducts. (D) TMPRSS2 is expressed on apical membranes in pancreatic acini and ducts. (E) DPP4 is expressed weakly in the pancreas, both on ductal surfaces and in endocrine islets. (F) DPP4 expression in healthy liver. (G) ANPEP expression in healthy liver; ANPEP appears to be the most strongly expressed coronavirus receptor in the human liver.
+
+![Figure 2—figure supplement 12.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp12-v2.jpg)
+
+**Figure 2—figure supplement 12.:** UMAP-based dimensionality reduction plot denoting cell types (A, C) and corresponding expression levels of ACE2, DPP4, ANPEP and TMPRSS2 (B, D) from multiple studies: (A–B) human liver (Aizarani et al., 2019), and (C–D) three integrated studies of human pancreas (Muraro et al., 2016; Segerstolpe et al., 2016; Grün et al., 2016).
+
+![Figure 2—figure supplement 13.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp13-v2.jpg)
+
+**Figure 2—figure supplement 13.:** UMAP-based dimensionality reduction plot denoting cell types (A, C, E) and corresponding expression levels of ACE2, DPP4, ANPEP and TMPRSS2 (B, D, F) from multiple studies: (A–B) human peripheral blood mononuclear cells (Single Cell Portal, 2020b), (C–D) human spleen (Madissoon et al., 2020), and (E–F) human bone marrow (Data Browser HCA, 2020).
+
+![Figure 2—figure supplement 14.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp14-v2.jpg)
+
+**Figure 2—figure supplement 14.:** UMAP-based dimensionality reduction plot denoting cell types (A, C, E) and corresponding expression levels of ACE2, DPP4, ANPEP and TMPRSS2 (B, D, F) from multiple tissues in the Tabula Muris study (Tabula Muris Consortium et al., 2018): (A–B) spleen, (C–D) bone marrow, (E–F) thymus.
+
+![Figure 2—figure supplement 15.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp15-v2.jpg)
+
+**Figure 2—figure supplement 15.:** UMAP-based dimensionality reduction plot denoting cell types (A, C, E, G) and corresponding expression levels of ACE2, DPP4, ANPEP and TMPRSS2 (B, D, F, H) from multiple studies: (A–B) human bladder (Yu et al., 2019), (C–D) murine bladder from Tabula Muris (Tabula Muris Consortium et al., 2018), (E–F) murine bladder from Mouse Cell Atlas (Han et al., 2018), and (G–H) human prostate and prostatic urethra.
+
+![Figure 2—figure supplement 16.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp16-v2.jpg)
+
+**Figure 2—figure supplement 16.:** UMAP-based dimensionality reduction plot denoting cell types (A) and corresponding expression levels of ACE2, DPP4, ANPEP and TMPRSS2 (B) in uterus-derived cells from the Mouse Cell Atlas (Han et al., 2018).
+
+![Figure 2—figure supplement 17.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp17-v2.jpg)
+
+**Figure 2—figure supplement 17.:** UMAP-based dimensionality reduction plot denoting cell types (A, C, E) and corresponding expression levels of ACE2, DPP4, ANPEP and TMPRSS2 (B, D, F) in CNS samples from multiple studies: (A–B) murine brain from Tabula Muris (Tabula Muris Consortium et al., 2018), (C–D) murine brain from Mouse Cell Atlas (Han et al., 2018), and (E–F) human retina (Menon et al., 2019).
+
+![Figure 2—figure supplement 18.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp18-v2.jpg)
+
+**Figure 2—figure supplement 18.:** Images from the Human Protein Atlas showing brain cortex samples from three different individuals stained to assess DPP4 expression. Staining is notably absent from all cell types in all samples tested.
+
+![Figure 2—figure supplement 19.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp19-v2.jpg)
+
+**Figure 2—figure supplement 19.:** (A) Among GTEx transverse colon samples (n = 405), ACE2 expression tends to be higher in samples derived from younger individuals. (B) Among GTEx gastroesophageal junction samples, ACE2 expression tends to be higher in samples derived from older individuals. (C) Analysis of differential adverse events between ACE inhibitors and other classes of antihypertensive medications (example shown for beta-blockers), real-world evidence shows that patients taking ACE inhibitors are more likely to experience angioedema of various tissues including the small intestine and epiglottis.
+
+![Figure 2—figure supplement 20.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp20-v2.jpg)
+
+**Figure 2—figure supplement 20.:** From a non-public scRNAseq study, oral mucosal epithelial cells (including tongue-derived epithelial cells) were defined by expression of SFN, KRT6A, and KRT10. Assessment of SFN (A), KRT6A (B), and KRT10 (C) expression in tongue cells sequenced in the Tabula Muris study (Tabula Muris Consortium et al., 2018). Each gene is most strongly expressed in murine tongue keratinocytes, with expression in basal epidermal cells as well.
+
+![Figure 2—figure supplement 21.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig2-figsupp21-v2.jpg)
+
+**Figure 2—figure supplement 21.:** Plots showing the comparison expression distribution of ACE2 between samples from lung (GTEx in purple) and samples from four GEO studies (in green). The GEO identifiers for each comparison are shown.
 
 Conversely, pancreatic polypeptide cells (gamma cells), pancreatic alpha cells, and keratinocytes show similarly robust ACE2 expression but have not been strongly associated with ACE2 in the literature. This combination suggests either a biological novelty or an experimental artifact. We note that the strong ACE2 expression in pancreatic cell types is derived from only one murine study (Figure 2—figure supplement 1; Tabula Muris Consortium et al., 2018), while ACE2 expression is not observed in gamma or alpha cells from scRNAseq of human pancreatic islets (Figure 2—figure supplement 1; Segerstolpe et al., 2016; Grün et al., 2016; Muraro et al., 2016). While we cannot determine the validity of either observation, this example demonstrates how knowledge synthesis can automatically surface discordant biological signals for further evaluation.
 
@@ -60,9 +156,21 @@ Surprisingly, cells from respiratory tissues were notably absent among the popul
 
 We also applied the Single Cell resource to analyze several other human and mouse tissues including heart, adipose, liver, pancreas, blood, spleen, bone marrow, thymus, testis, prostate, bladder, ovary, uterus, placenta, brain, and retina. A summary of ACE2 expression across these tissues are provided in Figure 2—figure supplements 3–18.
 
-## Club cells, ciliated cells, pneumocytes and nasal cavity epithelial cells are likely targets of SARS-CoV-2 in respiratory tract
+### Club cells, ciliated cells, pneumocytes and nasal cavity epithelial cells are likely targets of SARS-CoV-2 in respiratory tract
 
 Next, we classified 241 respiratory cell populations from 17 independent studies based on their expression of and literature-derived associations to ACE2 (Figure 3A). Consistent with the low levels of ACE2 in respiratory tissues by bulk RNA-seq, proteomics, and IHC (Figure 2—figure supplement 2A–D), we found that ACE2 expression is detected generally in fewer than 10% of all cell types recovered from these studies. However, as mentioned above, we believe that even low ACE2 expression levels in these respiratory cells may be relevant for COVID-19 pathogenesis.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig3-v2.jpg)
+
+**Figure 3.:** (A) Schematic representation of the respiratory system highlighting key cell types from the nasal cavity, airway and alveoli. Scatterplot shows comparison of percentage of cells with non-zero expression (x-axis) from eight single-cell studies against literature-derived associations: local score (y-axis and size of circles) and global score (transparency of circles). (B) Assessing literature-based and scRNAseq-based associations between ACE2 and respiratory tract cells. On the left, the dimensionality reduction plots show different cell populations associated with lung and olfactory epithelium. On the right, violin plots show the distribution of ACE2 expression levels in selected populations with non-zero expression. The cell types and the literature-derived local and global associations scores are shown.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Distribution of Pearson correlation coefficients between expression (in TPM) of ACE2 and all other genes detected with a mean of at least 1 TPM in the GTEx lung study (n = 573). The right tail of the distribution (shaded red) includes the top 4% of correlated genes (top). Each gene encoding a known surfactant protein is strongly correlated to ACE2 in lung samples, with the Pearson correlation coefficient among this top 4%.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Shown are two samples from different patients stained with different anti-ACE2 antibodies.
 
 We found that club cells (formerly known as Clara cells), were consistently among the highest-expressing respiratory cell types (Figure 3A–B). Literature-derived local and global scores suggest that this ACE2-club cell connection is underappreciated. We also found that ACE2 is detected in type II pneumocytes in multiple studies, although the percentage of expressing cells ranges from only 0.5–7% (Figure 3A–B). This relatively low expression, which may be deemed inconsequential if viewed in isolation, is strongly supported by knowledge synthesis that highlights an existing association between ACE2 and type II pneumocytes (Figure 3A–B). Indeed, multiple studies have demonstrated ACE2 expression in these cells (Glowacka et al., 2011; van den Brand et al., 2008; Glowacka et al., 2010; Bertram et al., 2011; Hamming et al., 2004; Mossel et al., 2008; To and Lo, 2004). Further, ACE2 expression in bulk-RNAseq of GTEx lung samples (n = 578) is strongly correlated to markers of type II pneumocytes, with all seven surfactant protein-encoding genes among the top 4% of transcriptional correlations to ACE2 (out of the ~19,000 genes expressed at >1 Transcripts Per Million (TPM) in GTEx lung samples; hypergeometric p-value=1.1×10−10) (Figure 3—figure supplement 1).
 
@@ -70,7 +178,7 @@ Our scRNAseq analysis also shows that ACE2 is expressed in small fractions of ci
 
 Taken together, these scRNAseq analyses and triangulation to literature synthesis confirm that type II pneumocytes are a likely target of SARS-CoV-2 infection while also highlighting club cells, ciliated cells, and olfactory epithelial cells as additional potential sites of infection. Given the low ACE2 expression in the lung, it is important to identify the minimum ACE2 expression level required in a cell type for SARS-CoV-2 infection and examine whether there is correlation between the expression levels of ACE2 and propensity of the cell type to get infected.
 
-## Tongue keratinocytes and mature small intestinal enterocytes are potential targets of SARS-CoV-2
+### Tongue keratinocytes and mature small intestinal enterocytes are potential targets of SARS-CoV-2
 
 We then classified 246 gastrointestinal cell types from 16 scRNAseq studies based on their expression of and literature associations to ACE2 (Figure 4A). These studies encompassed samples from the upper, mid, and lower GI tracts including tongue, esophagus, stomach, small intestine, and colon (Tabula Muris Consortium et al., 2018; Han et al., 2018; Wang et al., 2020a; Smillie et al., 2019; Haber et al., 2017; HCA Data Browser, 2020).
 
@@ -82,15 +190,23 @@ This analysis highlights a robust expression of ACE2 in tongue keratinocytes tha
 
 We also found that ACE2 is highly expressed in both human and murine small intestinal enterocytes, confirming an association which has been moderately appreciated in literature, as indicated by our literature derived local score between ACE2 and enterocytes. However, to our knowledge, the transcriptional heterogeneity of ACE2 among enterocyte populations has never been explored. In this context, we found that ACE2 shows an increase in expression correlated with the maturation of murine small intestinal enterocytes, with minimal expression in stem cells and transit amplifying cells in contrast to most robust expression in mature enterocytes (Figure 4). To the best of our knowledge, this is the first demonstration that ACE2 expression synchronously increases over the course of enterocyte maturation. The recognition of such intra-tissue heterogeneity is necessary to specify the cell types which are most likely responsible for the proposed fecal-oral transmission of COVID-19 (Xiao et al., 2020).
 
-## SARS-CoV-2, SARS-CoV, MERS-CoV and HCoV-229E receptors share a transcriptional signature correlated to maturation of small intestinal enterocytes
+### SARS-CoV-2, SARS-CoV, MERS-CoV and HCoV-229E receptors share a transcriptional signature correlated to maturation of small intestinal enterocytes
 
 To determine whether this maturation-correlated expression pattern is unique to ACE2, we computed cosine similarities between the ACE2 gene expression vector (Counts Per 10,000 [CP10K] values in ~6000 small intestinal enterocytes) and that of the ~15,700 other genes detected in this study (Figure 5A). For this analysis, the vector space is constituted of the individual cells as the dimensions using the gene expression values to construct the vectors (see Materials and methods). Interestingly, we found that ANPEP, the established entry receptor for HCoV-229E, showed the third highest cosine similarity to ACE2 (Figure 5B). Further, DPP4, the entry receptor for MERS coronavirus, is also among the top 1% of similarly expressed genes by this metric (Figure 5B). We confirmed that both of these genes do indeed show a maturation-correlated transcriptional pattern similar to that of ACE2 (Figure 5C–D), highlighting an unexpected shared pattern of transcriptional heterogeneity among known coronavirus receptors in a cell population which may be relevant for viral transmission.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig5-v2.jpg)
+
+**Figure 5.:** (A) Distribution of cosine similarity between the ‘gene expression vectors’ of ACE2 and all genes in a scRNAseq study of the murine small intestine. The gene expression vector corresponds to the set of CP10K values for a given gene in each individual cell from the selected populations in the selected study. (B) Genes similar to ACE2 (cosine similarity >0.4) sorted by literature-derivation association. Arrow indicates a sort option available on the platform. (C) Transcriptional expression of ANPEP correlated to enterocyte maturation in murine small intestine. Violin plots show distribution of ANPEP expression levels in enterocytes at different stages of differentiation. (D) Transcriptional expression of DPP4 correlated to enterocyte maturation in murine small intestine. Violin plots show distribution of DPP4 expression levels in enterocytes at different stages of differentiation.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/58040/elife-58040-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Distribution of cosine similarity between the ‘gene expression vectors’ of ACE2 and all genes in a scRNAseq study of the human small intestine. (B) Genes similar to ACE2 sorted by literature-derivation association. (C) Gene expression correlations to ACE2 from bulk RNA-sequencing (GTEx) of human small intestine samples.
 
 We then asked whether this shared pattern of transcriptional heterogeneity among coronavirus receptors is observed in the human small intestine. Indeed, among all enterocytes from a human scRNAseq study, both ANPEP and DPP4 were among the top 1% of genes with similar expression vectors to that of ACE2 (Figure 5—figure supplement 1). We independently validated this observation by computing gene expression correlations from bulk RNA-sequencing of human small intestine samples from GTEx (n = 187), which similarly revealed that DPP4 and ANPEP are among the top 1% of correlated genes to ACE2 (Figure 5—figure supplement 1C). In fact, among all ~18,500 genes mean expression >1 TPM in GTEx small intestine samples, DPP4 shows the second highest correlation to ACE2 (r = 0.95).
 
 To our knowledge, this is the first demonstration that all known coronavirus entry receptors display highly coordinated and maturation-correlated transcriptional expression patterns in intestinal epithelial cells. We propose that the requisite interaction with human proteins displaying a tightly defined expression gradient on apical surfaces of epithelial cells, which is shared among known coronavirus strains, may have fundamental implications for understanding the evolution, lifecycle, and/or transmission patterns of this family of viruses.
 
-## Expression of coronavirus receptors in other tissues by scRNAseq
+### Expression of coronavirus receptors in other tissues by scRNAseq
 
 We evaluated the expression profiles of ACE2, ANPEP, DPP4, and TMPRSS2 across various other human and mouse tissues by single-cell RNA-sequencing. The complete set of studies profiled is outlined in Supplementary file 1 and includes both tissues which were identified from bulk RNA-sequencing as potential sites of expression for one or more receptors (e.g. kidney, adipose tissue, heart, testis, prostate, blood/immune system) as well as other tissues which did not show any evidence for expression at the bulk level (e.g. brain, retina, ovary, uterus). The analysis of data from all other tissues is discussed below with corresponding images found in Figure 2—figure supplements 3–18.
 
@@ -114,7 +230,7 @@ In the mouse uterus dataset of ~3700 cells from the Mouse Cell Atlas (Figure 2�
 
 Finally, we assessed the expression of these genes in central nervous system (CNS) tissues despite their uniformly low expression and lack of detection in brain samples from GTEx and HPA, respectively (data not shown). scRNAseq data suggests similarly low expression across CNS populations, including various regions of the mouse brain and the human retina (Figure 2—figure supplement 17). From the Tabula Muris study, Ace2 is detected in a small number of pericytes (22 of 146) and an even lower fraction of endothelial cells (Figure 2—figure supplement 17B). Dpp4 is also expressed here in ~20% of endothelial cells (Figure 2—figure supplement 17B), which may warrant follow-up but importantly is not reflected in endothelial cells of the cerebral cortex by IHC (Figure 2—figure supplement 18). In all brain-derived cell populations from the Mouse Cell Atlas (Figure 2—figure supplement 17C–D) and human retina-derived populations (Figure 2—figure supplement 17E–F), these genes were uniformly not detected at significant levels.
 
-## ACE2 expression and patient demographics
+### ACE2 expression and patient demographics
 
 While our study profiles the expression of the coronavirus receptors from various tissue samples, whether and how much receptor expression varies among individuals across various factors like age, disease states, genetic diversity, lifestyle, and environmental factors are not well understood. For instance, in order to understand variation of expression with age we explored ACE2 expression using GTEx samples. Interestingly, ACE2 expression levels in colon (transverse) samples were higher in younger individuals in comparison to older individuals (Figure 2—figure supplement 19A). In contrast, ACE2 expression levels in the esophagus (gastroesophageal junction) were lower in younger individuals in comparison to older individuals (Figure 2—figure supplement 19B). These patterns of ACE2 expression need to be tested more rigorously on larger sample sizes across diverse ethnicities to establish statistical significance. If ACE2 were found to be expressed more significantly in the colon of younger individuals, taken together with recent reports of sustained fecal shedding of SARS-CoV-2 (Xu et al., 2020a; Gu et al., 2020), the emerging epidemiological hypothesis of younger individuals having fewer respiratory complications in general and serving as facile vectors in transmission of COVID-19 requires more deeper investigation.
 
@@ -140,7 +256,7 @@ Overall, this study evidences the utility of an integrative data science platfor
 
 ## Materials and methods
 
-## Unstructured biomedical knowledge synthesis and triangulation capabilities
+### Unstructured biomedical knowledge synthesis and triangulation capabilities
 
 In order to capture biomedical literature-based associations, the nferX platform defines two scores: a ‘local score’ and a ‘global score’, as described previously (Park et al., 2020). Briefly, the local score is obtained from applying a traditional natural language processing technique which captures the strength of association between two concepts in a selected corpus of biomedical literature based on the frequency of their co-occurrence normalized by the frequency of each individual concept throughout the corpus. A higher local score between Concept X and Concept Y indicates that these concepts are frequently mentioned in close proximity to each other more frequently than would be expected by chance. The global score, on the other hand, is based on the neural network renaissance that has recently taken place in Natural Language Processing (NLP). To compute global scores, all tokens (e.g. words and phrases) are projected in a high-dimensional vector space of word embeddings. These vectors serve to represent the ‘neighborhood’ of concepts which occur around a given concept. The cosine similarity between any two vectors measures the similarity of these neighborhoods and is the basis for our global score metric, where concepts which are more similar in this vector space have a higher global score.
 
@@ -152,39 +268,39 @@ One key aspect of the nferX platform is that it allows the user to query associa
 
 The platform further leverages statistical inference to calculate ‘enrichments’ based on structured data, thus enabling real-time triangulation of signals from the unstructured biomedical knowledge graph various other structured databases (e.g. curated ontologies, RNA-sequencing datasets, human genetic associations, protein-protein interactions). This facilitates unbiased hypothesis-free learning and faster pattern recognition, and it allows users to more holistically determine the veracity of concept associations. Finally, the platform allows the user to identify and further examine the documents and textual fragments from which the knowledge synthesis signals are derived using the Documents and Signals applications.
 
-## Association scores
+### Association scores
 
 Having a method that automatically consumes a corpus and computes a numeric score that captures the strength of the association between any pair of entities is obviously beneficial because then given any entity, its association strength score with all other entities can be sorted to find a sorted list of other associated entities. The number of times two entities mutually co-occur in ‘small’ vicinities of a corpus is the basis of all association scores. One popular traditional measure for association strength between tokens in text is pointwise mutual information, or PMI (Evert, 2005), which we consider in several association scores.
 
-## Measures of association
+### Measures of association
 
 Formally, an association score is some real-valued function S(q, t) where q is a query token/entity and t is another token/entity. One important notion, the ‘vicinity’ of q, we formally denote as the Context of q : The context of q are those corpus segments deemed to be ‘near’ or ‘local’ to q. For single token queries (where q is a single entity and not a logical combination of entities) , q’s context consists of all corpus segments that are ‘windows’ formed by taking words within a distance w (usually a tunable parameter) of words from an occurrence of q in the corpus. The dynamic adjacency engine generalizes this notion of context in a natural way to logical queries: the context for a logical q can be generalized as a certain set of fixed-length fragments.
 
-## Co-occurrences
+#### Co-occurrences
 
 This is just the number of times t appears in the context of q.
 
-## Traditional PMI
+#### Traditional PMI
 
 This is log(p(t | q)/p(t)). Here p(t | q) is the number of times t occurs in the context of q (ie co-occurrences of t and q) divided by the total length of all q contexts in the corpus, whereas p(t) is the number of occurrences of t in the entire corpus, divided by the corpus length.
 
-## Word2vec cosine similarity
+#### Word2vec cosine similarity
 
 The popular word2vec algorithm (Raj et al., 2013) generates a vector (we use 300-dimensional vector representation) for each token in a corpus. The purpose of these vectors is usually to be used as features in downstream NLP tasks. But they can also be used for similarity. The original paper validates the vectors by testing them on word similarity tasks: the association score is the cosine between the vector for q and the vector for t. This score only applies to single-token q.
 
-## Exponential mask PMI (ExpPMI)
+#### Exponential mask PMI (ExpPMI)
 
 This is our first new proposed score. PMI treats every position in a binary way: it’s either in the context of q or not. With a window size of say 50, a token which appears three words from a query q and a token which appears 45 words from a query q are treated the same. We thought it might be useful to consider a measure which distinguishes positions in the context based on the number of words away that position is from an occurrence of q. We did this by weighting the positions in the context by some weight between 0 and 1. Our weighting is based on an exponential decay (which has some nice properties especially when we extend to the case of logical queries).
 
-## Local score
+#### Local score
 
 This is another new proposed score. We find that PMI and ExpPMI can vary a lot for small samples (i.e. small numbers of co-occurrences, occurrences). The Local Score is log(coocc) * sigmoid(PMI - 0.5), constructed to correct for this; we found that this formula too works well empirically.
 
-## Exponential mask local score (ExpLocalScore)
+#### Exponential mask local score (ExpLocalScore)
 
 We apply both modifications together: the exponential mask score is log(weighted_coocc) * sigmoid(expPMI - 0.5). Here weighted_coocc is the sum of the weights of the positions of the corpus.
 
-## Evaluation of literature-derived association scores
+### Evaluation of literature-derived association scores
 
 We need a notion of ground truth to evaluate the quality of association measures. We use sets of known pairs of related entities versus a ‘control’ group of random pairs of entities of the same classes. We use a few different sets of known pairs:
 
@@ -192,7 +308,7 @@ One demonstration of the use of the logical query system is to disambiguate a to
 
 Note: One key drawback of the word2vec vector cosine similarity (Park et al., 2020; Mikolov et al., 2013b) method is its inability to get scores for logical queries as described above, because the method (Mikolov et al., 2013b) does not address the question of how to get vectors for queries that are logical combinations of tokens.
 
-## Evaluation metrics
+### Evaluation metrics
 
 Given a scoring method and a particular set of positive/control pairs, we get two sets of scores: one set for the positive pairs and one set for the negative pairs.
 
@@ -200,7 +316,7 @@ Cohen’s d: We compute the Cohen’s d standard statistical measure of distance
 
 Mann-Whitney U (normalized): - The Mann-Whitney U is a nonparametric measure of distribution distance: it counts the number of transposed pairs (Contributors to Wikimedia projects, 2004).
 
-## Metrics based on training a 1-d logistic model
+### Metrics based on training a 1-d logistic model
 
 In this test, we are discriminating between two classes (true association/non-association) based on one feature. We have two metrics based on fitting a 1-feature logistic curve to the data. (Figure 1—figure supplement 1A–B).
 
@@ -214,49 +330,143 @@ We do this to:
 
 This procedure maps all the S(q, t’) to an Exponential(1) distribution. We chose Exponential(1) because it is simple, intuitively reasonable and many of the scores naturally seemed to be approximately exponential.
 
-## High-dimensional word embeddings for determining the significant global associations
+### High-dimensional word embeddings for determining the significant global associations
 
 Figure 1—figure supplement 1C illustrates two histograms generated from a random set of vectors (in the vector space generated by the Neural Network) where one distribution represents all vector pairs whose cosine similarity is less than 0.32 (deemed ‘not strong associations’) and the other distribution represents all vector pairs whose cosine similarity is greater than 0.32 (deemed ‘strong associations’). This can show how common a phenomenon it is to find word vector pairs that have very good cosine similarity values but yet not co-occur even once in the corpus. The ‘cosine similarity >= 0.32’ bar at zero value suggests that roughly 11% of vector pairs whose cosine similarity where greater than 0.32 (‘strong associations’) never occurred together even once in a document. It is also clear from the figure that albeit more of the mass of the ‘cosine similarity >= 0.32’ distribution is skewed to the right as expected (more co-occurrences and hence unsurprisingly larger cosine similarity values), there is a long tail of the ‘cosine similarity < 0.32’ distribution (very high co-occurrences but small cosine similarity). The long tail is a direct consequence of negative sampling—where vectors corresponding to common words that co-occur quite often with significant words in a sliding window are moved away from vectors of the other words.
 
-## What does the word2vec neural network do from the perspective of Genes-Diseases associations?
+#### What does the word2vec neural network do from the perspective of Genes-Diseases associations?
 
 One way to view the word2vec ‘black box’ operation from a Genes/Diseases perspective (cosine of <Gene, Disease> for all Genes and Diseases) is as a Transfer Function which changed the input probability distribution (pre-training randomly assigned word vectors for Genes and Diseases) to a new probability distribution. The ‘null hypothesis’ (which seems to be well preserved in actuality in the way word2vec assigns random values to vectors initially) is the ‘green colored’ Cosine Distribution (Figure 1—figure supplement 1D). Once word2vec training is over, the final word vectors are placed in specific positions in the 300-dimensional space so as to present the ‘blue colored’ Empirical distribution (the actual cosine similarity between <Gene, Disease> pairs that we observe). The ‘orange curve’ is the 2-Gamma mixture (the parametric distribution that captures the ‘empirical distribution’ with just eight parameters (two alphas, two betas, 2 ts and two phis).
 
 Observations from this analysis:
 
-## What does varying the number of dimensions in the word2vec space do to the underlying cosine similarity distributions in a large textual corpora?
+#### What does varying the number of dimensions in the word2vec space do to the underlying cosine similarity distributions in a large textual corpora?
 
 Figure 1—figure supplement 1E illustrates a cosine similarity probability density function (PDF) graph to visually describe the implementation of the word2vec-like Vector Space Model in various N-dimensional spaces. As described in the Materials and methods section, the system is a Semantic Bio-Knowledge Graph of nodes representing the words/phrases chosen to be represented as vectors and edge weights determined by measures of Semantic Association Strength (e.g. the cosine similarity between a pair of word embeddings represented as vectors in a large dimensional space). The cosine similarity ranges from 0 (representing no semantic association) to 1 (representing strongest association). This metric of association can reflect the contextual similarity of the entities in the Biomedical Corpora. The typical dimensionality used by our neural network for generating the Global Scores is n = 300 dimensions. This is because, as can be seen in the graph, the distribution is highly peaked with most of the mass centered around 0 -- that is, a randomly chosen pair of vectors typically are orthogonal or close to orthogonal. Furthermore, over 300 dimensions, the distributions all have sufficiently long tails with the most interesting (salient) biomedical associations.
 
-## Single-cell RNA-seq analysis platform
+### Single-cell RNA-seq analysis platform
 
 The objective of the single cell platform is to enable dynamic visualization and analysis of single-cell RNA-sequencing data. Currently, there are over 30 scRNAseq studies available for analysis in the Single Cell app, including studies from human donors/patients covering tissues such as adipose tissue, blood, bone marrow, colon, esophagus, liver, lung, kidney, ovary, nasal epithelium, pancreas, placenta, prostate, retina, small intestine, and spleen. Because no pan-tissue reference dataset yet exists for humans, we have manually selected individual studies to maximally cover the set of human tissues. In some cases, these studies contain cells from both healthy donors and patients affected by a specified pathology such as ulcerative colitis (colon) or asthma (lung). There are also a number of murine scRNAseq studies covering tissues including adipose tissue, airway epithelium, blood, bone marrow, brain, breast, colon, heart, kidney, liver, lung, ovary, pancreas, placenta, prostate, skeletal muscle, skin, spleen, stomach, small intestine, testis, thymus, tongue, trachea, urinary bladder, uterus, and vasculature. Note that two of these murine studies (Tabula Muris and Mouse Cell Atlas) include ~20 tissues each.
 
-## Single-cell data processing pipeline
+### Single-cell data processing pipeline
 
 For each study, a counts matrix was downloaded from a public data repository such as the Gene Expression Omnibus (GEO) or the Broad Institute Single Cell Portal (Supplementary file 1). Note that this data has not been re-processed from the raw sequencing output, and so it is likely that alignment and quantification of gene expression was performed using different tools for different studies. In some cases, multiple complementary datasets have been generated from a single publication. In these cases, we have generated separate entries in the Single Cell platform.
 
+**Table 1.**
+ Results of evaluation.Performance of approximately 2100 disease-gene pairs.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Assoc score↓</th>
+      <th>Cohen’s d (+)</th>
+      <th>Mann-W U norm. (-)</th>
+      <th>Logistic log loss (-)</th>
+      <th>Logistic Brier score (-)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cosine (w2v)</td>
+      <td>1.31</td>
+      <td>0.197</td>
+      <td>0.51</td>
+      <td>0.168</td>
+    </tr>
+    <tr>
+      <td>Raw PMI</td>
+      <td>2.07</td>
+      <td>0.0953</td>
+      <td>0.374</td>
+      <td>0.116</td>
+    </tr>
+    <tr>
+      <td>Raw PMI -log(pctile)</td>
+      <td>2.15</td>
+      <td>0.0947</td>
+      <td>0.355</td>
+      <td>0.111</td>
+    </tr>
+    <tr>
+      <td>Exp PMI</td>
+      <td>2.17</td>
+      <td>0.0897</td>
+      <td>0.356</td>
+      <td>0.109</td>
+    </tr>
+    <tr>
+      <td>Exp PMI -log(pctile)</td>
+      <td>2.21</td>
+      <td>0.0903</td>
+      <td>0.341</td>
+      <td>0.105</td>
+    </tr>
+    <tr>
+      <td>Raw Local Score</td>
+      <td>2.35</td>
+      <td>0.0828</td>
+      <td>0.312</td>
+      <td>0.0947</td>
+    </tr>
+    <tr>
+      <td>Raw Local Score -log(pctile)</td>
+      <td>2.28</td>
+      <td>0.0832</td>
+      <td>0.317</td>
+      <td>0.0963</td>
+    </tr>
+    <tr>
+      <td>Exp Local Score</td>
+      <td>2.34</td>
+      <td>0.0812</td>
+      <td>*0.301</td>
+      <td>*0.0915</td>
+    </tr>
+    <tr>
+      <td>Exp Local Score -log(pctile)</td>
+      <td>*2.36</td>
+      <td>*0.0811</td>
+      <td>0.308</td>
+      <td>0.093</td>
+    </tr>
+    <tr>
+      <td>log(coocc)</td>
+      <td>2.24</td>
+      <td>0.097</td>
+      <td>0.348</td>
+      <td>0.105</td>
+    </tr>
+  </tbody>
+</table>
+
+_Interpretation of the above table.Each row corresponds to an association score whereas each column corresponds to one of the evaluation metrics. A (+) in the column means a higher evaluation metric value, the better the association score in that row separates the positive and random pairs. A (-) means a lower evaluation metric is better. Note all the metrics are immune to linear rescalings; also the Mann-Whitney U score is nonparametric._
+
 While counts matrices have been generated using different technologies (e.g. Drop-Seq, 10x Genomics, etc.) and different alignment/pre-processing pipelines, all counts matrices were scaled such that each cell contains a total of 10,000 scaled counts (i.e. the sum of expression values for all genes equals 10,000 in each individual cell). All data were uniformly processed using the Seurat v3 package (Butler et al., 2018). In short, this pipeline involves the following steps. First, we identify 2000 variable genes across the given dataset and then perform linear dimensionality reduction by principal component analysis (PCA). Using the set of principal components which contribute >80% of variance across the dataset, we then do the following: (i) perform graph-based clustering to identify groups of cells with similar expression profiles (Louvain clustering), (ii) compute UMAP and tSNE coordinates for each individual cell (used for data visualization) and (iii) annotate cell clusters. Note that the three human pancreatic datasets (GSE81076, GSE85241, GSE86469) were integrated together in a shared multi-dimensional space using CCA (Canonical Correlation Analysis) and the integration method in the Seurat v3 package (Butler et al., 2018). Cell clustering and computation of dimensionality reduction coordinates were performed on this integrated dataset.
 
-## Cell cluster annotation
+### Cell cluster annotation
 
 In cases where publicly deposited counts matrices are accompanied by author-assigned annotations for individual cells or clusters, we have retained these cell annotations for display in the platform and accompanying analyses. For any study which was not accompanied by a metadata file containing cluster annotations, we have manually labeled clusters based on sets of canonical ‘cluster-defining genes.’ In these cases, we have attempted to leverage annotations and descriptions of gene expression patterns described by study authors in the manuscript text and figures corresponding to the data being analyzed.
 
-## Metrics to summarize cluster-level gene expression
+### Metrics to summarize cluster-level gene expression
 
 The platform allows users to query any gene in any selected study. The corresponding data is displayed in commonly employed formats including a series of violin plots and as a set of dimensionality reduction plots. Expression is summarized by listing the percent of cells expressing Gene G in each annotated cluster and the mean expression of Gene G in each cluster. To measure the specificity of Gene G expression to each Cluster C, we compute a Cohen’s D value which assesses the effect size between the mean expression of Gene G in cluster C and the mean expression of Gene G in all other clusters. Specifically, the Cohen’s D formula is given as follows: (MeanC - MeanA)/(sqrt(StDevC2 + StDevA2)) , where C represents the cluster of interest and A represents the complement of C (i.e. all other cell clusters). Note that this is functionally similar to the computation of paired fold change values and p-values between clusters which is frequently used to identify cluster-defining genes.
 
-## Gene-gene cosine similarity
+### Gene-gene cosine similarity
 
 Within the platform, we support the run-time computation of cosine similarity (i.e. 1 - cosine distance) between the queried gene and all other genes. This provides a measure of expression similarity across cells and can be used to identify co-regulated and co-expressed genes. Specifically, to perform this computation, we construct a ‘gene expression vector’ for each gene G. This corresponds to the set of CP10K values for gene G in each individual cell from the selected populations in the selected study.
 
-## Profiling expression of coronavirus receptors in single-cell datasets
+### Profiling expression of coronavirus receptors in single-cell datasets
 
 For each single-cell dataset, we examined the expression of ACE2, TMPRSS2, ANPEP, and DPP4. We generally considered a cell population to potentially express a gene if at least 5% of cells from that cluster showed non-zero expression of this gene. For each dataset, we show a figure which includes a UMAP dimensionality reduction plot colored by annotated cell type along with identical plots colored by the expression level of each coronavirus receptor in all individual cells. In some cases, we also show violin plots from the platform which automatically integrate literature-derived insights to highlight whether there exist textual associations between the queried gene and the tissue/cell types identified in the selected study.
 
-## FDA Adverse Event Reporting System (FAERS) analysis
+### FDA Adverse Event Reporting System (FAERS) analysis
 
-The FAERS application of the nferX platform supports viewing adverse event profiles of all marketed products through multiple lenses - Count, Proportional Reporting Ratio (PRR), and an nferX Adverse Event (AE) Score. AEScore=ln(count)∗1/(1+e−(prr−1.5)). Count is the raw number of reports between a drug and an adverse event. The proportional reporting ratio (PRR) is a simple way to get a measure of how common an adverse event for a particular drug is compared to how common the event is in the overall database. A PRR >1 for a drug-event combination indicates that a greater proportion of the reports for the drug are for the event than the proportion of events in the rest of the database, while a PRR of 2 for a drug event combination indicates that the proportion of reports for the drug-event combination is twice the proportion of the event in the overall database. The PRR is computed as follows:PRR=(m/n)/((M−m)/(N−n))
+The FAERS application of the nferX platform supports viewing adverse event profiles of all marketed products through multiple lenses - Count, Proportional Reporting Ratio (PRR), and an nferX Adverse Event (AE) Score. $AEScore=ln(count)∗1/(1+e^{−(prr−1.5)})$. Count is the raw number of reports between a drug and an adverse event. The proportional reporting ratio (PRR) is a simple way to get a measure of how common an adverse event for a particular drug is compared to how common the event is in the overall database. A PRR >1 for a drug-event combination indicates that a greater proportion of the reports for the drug are for the event than the proportion of events in the rest of the database, while a PRR of 2 for a drug event combination indicates that the proportion of reports for the drug-event combination is twice the proportion of the event in the overall database. The PRR is computed as follows:
+
+$$
+PRR=(m/n)/((M−m)/(N−n))
+$$
 
 Count of an event with a query drug is a good first measure of association. But it has the problem that generally common events will often show up at the top, where we are often more interested in events that are differentially associated with the query drug over other drugs. An issue with PRR is that it is noisy when the total number of event reports is small. If there are three reports of some oddly specific event and one occurs with the query drug, that event will likely have a very high PRR, but it may not be the event we would be most interested in for a drug (in FAERS such rare events are often not even proper adverse events) - we want events that occur often, and also are differentially associated with a drug - a balance between count and PRR.
 

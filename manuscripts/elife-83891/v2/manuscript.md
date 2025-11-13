@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/02vjkv261 Laboratoire de Neurosciences Cognitives et Computationnelles, Institut National de la Santé et Recherche Médicale Paris France
-2. https://ror.org/013cjyk83 Département d’Etudes Cognitives, Ecole Normale Supérieure, PSL University Paris France
-3. https://ror.org/00g30e956 Department of Psychology, University of Hamburg Hamburg Germany
+1. Laboratoire de Neurosciences Cognitives et Computationnelles, Institut National de la Santé et Recherche Médicale Paris France ([ROR:02vjkv261](https://ror.org/02vjkv261))
+2. Département d’Etudes Cognitives, Ecole Normale Supérieure, PSL University Paris France ([ROR:013cjyk83](https://ror.org/013cjyk83))
+3. Department of Psychology, University of Hamburg Hamburg Germany ([ROR:00g30e956](https://ror.org/00g30e956))
 
 † Corresponding author
 
@@ -31,57 +31,276 @@ While predominant in the current neuroeconomic debate about value encoding and a
 
 ## Results
 
-## Computational hypotheses and ex ante model simulations
+### Computational hypotheses and ex ante model simulations
 
-The goal of this study was to characterize the functional form of outcome (or reward) normalization in human reinforcement learning. More specifically, we aimed at arbitrating between two equally plausible hypotheses: range normalization and divisive normalization. Both hypotheses assume that after reception of a given objective reward R, the learner forms an internal, subjective, representation of it, RNORM, which is influenced by other contextually relevant rewards. Crucially, the two models differ in how RNORM is calculated. According to the range normalization hypothesis, the subjective normalized reward RNORM is defined as the position of the objective reward R within its contextual range:(1)RNORM=R−RMINRMAX−RMIN
+The goal of this study was to characterize the functional form of outcome (or reward) normalization in human reinforcement learning. More specifically, we aimed at arbitrating between two equally plausible hypotheses: range normalization and divisive normalization. Both hypotheses assume that after reception of a given objective reward $R$, the learner forms an internal, subjective, representation of it, $R_{NORM},$ which is influenced by other contextually relevant rewards. Crucially, the two models differ in how $R_{NORM}$ is calculated. According to the range normalization hypothesis, the subjective normalized reward $R_{NORM}$ is defined as the position of the objective reward $R$ within its contextual range:
 
-where RMAX and RMIN are the endpoints of the contextually relevant distribution and together form the range (RMAX-RMIN). On the other side, the divisive normalization hypothesis, in its simplest form, postulates that the subjective normalized reward RNORM is calculated by dividing the objective reward by the sum of all the other contextually rewards (Louie, 2022):(2)RNORM=R∑k=1nRk
+$$
+R_{NORM}=\frac{R−R_{MIN}}{R_{MAX}−R_{MIN}}
+$$
 
-where n is the number of contextually relevant stimuli. These hypotheses concerning value normalization are then easily plugged into the reinforcement learning framework, simply by assuming that the value of an option is updated by minimizing a prediction error, calculated on the basis of the subjective reward. Although these normalization functions are mathematically distinct, they make identical (or very similar) behavioral predictions in many of the experimental protocols designed to investigate context-dependent reinforcement learning so far (Klein et al., 2017; Bavard et al., 2018; Spektor et al., 2019; Bavard et al., 2021; Palminteri et al., 2015). It should be noted here that, although divisive normalization has been more frequently applied to the prospective evaluation of described outcomes (e.g., lotteries; snack-food items), rather than retrospective evaluation of obtained outcomes (e.g., bandits), it has both historical (Herrnstein, 1961) and recent (Louie, 2022) antecedents in the context of reinforcement learning. For the present study, we designed reinforcement learning tasks designed to adjudicate these computational hypotheses. The key idea behind our behavioral protocol is to orthogonally manipulate, across different learning contexts, the amplitude of the range of the possible outcomes and the number of options (often referred to as choice size set; Figure 1A; see also Figure 2—figure supplement 2A for an alternative version). The first factor (the amplitude of the range of the possible outcomes) is key to differentiate an unbiased model (where RNORM=R) from both our normalization models. The second factor (number of options) is key to differentiate the range normalization from divisive normalization. The reason for this can easily be inferred from Equations 1 and 2 because adding more outcomes has a significant impact on the subjective reward RNORM only following the divisive normalization rule (Daviet and Webb, 2023; as clearly put by the main advocate of the divisive normalization rule for value-based decision-making: “[…] a system would be highly sensitive to the number of options under consideration. As the number of elements in the denominator grows, so does the aggregate value of the denominator, shifting the overall firing rates lower and lower” (Glimcher, 2022, page 14). To quantitatively substantiate these predictions, we ran model simulations using three models. We compared a standard model with unbiased subjective values (UNBIASED), and two normalization models using either the divisive or the range normalization rules (referred to as DIVISIVE and RANGE, respectively). First, we simulated a learning phase, where each learning context in our factorial design was presented 45 times. After each trial, the simulated agent was informed about the outcomes that were drawn from normal distributions (Figure 1B). To avoid sampling issues and ambiguity concerning the definition of the relevant normalization variables, the simulated agents were provided information about the outcomes of all options (‘complete’ feedback; Hertwig and Erev, 2009; Li and Daw, 2011). After the learning phase, the simulated agents went through a transfer phase, where they made decisions among all possible binary combinations of the options (without additional feedback being provided). Similarly constructed experiments, coupling a learning to a transfer phase, have been proven key to demonstrate contextual effects in previous studies (Klein et al., 2017; Bavard et al., 2018; Pompilio and Kacelnik, 2010; Bavard et al., 2021; Palminteri et al., 2015; Hayes and Wedell, 2022; Juechems et al., 2022). When analyzing model simulations, we focused on choice patterns in the transfer phase (of note, accuracy during the learning phase is weakly diagnostic because all models predict above chance accuracy and, to some extent, a choice size set effect, whose level depends on the choice stochasticity parameter of the softmax decision rule). Figure 1C plots the average simulated choice rate in the transfer phase. For a given option, the transfer phase choice rate was calculated by dividing the number of times an option is chosen by the number of times the option is presented. In the transfer phase, the 10 cues from the learning phase were presented in all possible binary combinations (45, not including pairs formed by the same cue). Each pair of cues was presented four times, leading to a total of 180 trials. Since a given comparison counts for the calculation of the transfer phase choice rate of both involved options, this implies that this variable will not sum to one. Nonetheless, the relative ranking between transfer choice rate can be taken as a behavioral proxy of their subjective values.
+where $R_{MAX}$ and $R_{MIN}$ are the endpoints of the contextually relevant distribution and together form the range ($R_{MAX}-R_{MIN}$). On the other side, the divisive normalization hypothesis, in its simplest form, postulates that the subjective normalized reward $R_{NORM}$ is calculated by dividing the objective reward by the sum of all the other contextually rewards (Louie, 2022):
+
+$$
+R_{NORM}=\frac{R}{\sumk=1nR_{k}}
+$$
+
+where $n$ is the number of contextually relevant stimuli. These hypotheses concerning value normalization are then easily plugged into the reinforcement learning framework, simply by assuming that the value of an option is updated by minimizing a prediction error, calculated on the basis of the subjective reward. Although these normalization functions are mathematically distinct, they make identical (or very similar) behavioral predictions in many of the experimental protocols designed to investigate context-dependent reinforcement learning so far (Klein et al., 2017; Bavard et al., 2018; Spektor et al., 2019; Bavard et al., 2021; Palminteri et al., 2015). It should be noted here that, although divisive normalization has been more frequently applied to the prospective evaluation of described outcomes (e.g., lotteries; snack-food items), rather than retrospective evaluation of obtained outcomes (e.g., bandits), it has both historical (Herrnstein, 1961) and recent (Louie, 2022) antecedents in the context of reinforcement learning. For the present study, we designed reinforcement learning tasks designed to adjudicate these computational hypotheses. The key idea behind our behavioral protocol is to orthogonally manipulate, across different learning contexts, the amplitude of the range of the possible outcomes and the number of options (often referred to as choice size set; Figure 1A; see also Figure 2—figure supplement 2A for an alternative version). The first factor (the amplitude of the range of the possible outcomes) is key to differentiate an unbiased model (where $R_{NORM}=R$) from both our normalization models. The second factor (number of options) is key to differentiate the range normalization from divisive normalization. The reason for this can easily be inferred from Equations 1 and 2 because adding more outcomes has a significant impact on the subjective reward $R_{NORM}$ only following the divisive normalization rule (Daviet and Webb, 2023; as clearly put by the main advocate of the divisive normalization rule for value-based decision-making: “[…] a system would be highly sensitive to the number of options under consideration. As the number of elements in the denominator grows, so does the aggregate value of the denominator, shifting the overall firing rates lower and lower” (Glimcher, 2022, page 14). To quantitatively substantiate these predictions, we ran model simulations using three models. We compared a standard model with unbiased subjective values (UNBIASED), and two normalization models using either the divisive or the range normalization rules (referred to as DIVISIVE and RANGE, respectively). First, we simulated a learning phase, where each learning context in our factorial design was presented 45 times. After each trial, the simulated agent was informed about the outcomes that were drawn from normal distributions (Figure 1B). To avoid sampling issues and ambiguity concerning the definition of the relevant normalization variables, the simulated agents were provided information about the outcomes of all options (‘complete’ feedback; Hertwig and Erev, 2009; Li and Daw, 2011). After the learning phase, the simulated agents went through a transfer phase, where they made decisions among all possible binary combinations of the options (without additional feedback being provided). Similarly constructed experiments, coupling a learning to a transfer phase, have been proven key to demonstrate contextual effects in previous studies (Klein et al., 2017; Bavard et al., 2018; Pompilio and Kacelnik, 2010; Bavard et al., 2021; Palminteri et al., 2015; Hayes and Wedell, 2022; Juechems et al., 2022). When analyzing model simulations, we focused on choice patterns in the transfer phase (of note, accuracy during the learning phase is weakly diagnostic because all models predict above chance accuracy and, to some extent, a choice size set effect, whose level depends on the choice stochasticity parameter of the softmax decision rule). Figure 1C plots the average simulated choice rate in the transfer phase. For a given option, the transfer phase choice rate was calculated by dividing the number of times an option is chosen by the number of times the option is presented. In the transfer phase, the 10 cues from the learning phase were presented in all possible binary combinations (45, not including pairs formed by the same cue). Each pair of cues was presented four times, leading to a total of 180 trials. Since a given comparison counts for the calculation of the transfer phase choice rate of both involved options, this implies that this variable will not sum to one. Nonetheless, the relative ranking between transfer choice rate can be taken as a behavioral proxy of their subjective values.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/83891/elife-83891-fig1-v2.jpg)
 
-**Figure 1.:** (A) Choice contexts in the learning phase. Participants were presented with four choice contexts varying in the amplitude of the outcomes’ range (narrow or wide) and the number of options (binary or trinary decisions). (B) Means of each reward distribution. After each decision, the outcome of each option was displayed on the screen. Each outcome was drawn from a normal distribution with variance . NB: narrow binary, NT: narrow trinary, WB: wide binary, WT: wide trinary. (σ2=4C) Model predictions of the transfer phase choice rates for the UNBIASED (left), DIVISIVE (middle), and RANGE (right) models. Note that choice rate in the transfer phase is calculated across all possible binary combinations involving a given option. While score is proportional to the agent’s preference for a given option, it does not sum to one because any given choice counts for the final score of two options. Dashed lines represent the key prediction for each model.
+**Figure 1.:** (A) Choice contexts in the learning phase. Participants were presented with four choice contexts varying in the amplitude of the outcomes’ range (narrow or wide) and the number of options (binary or trinary decisions). (B) Means of each reward distribution. After each decision, the outcome of each option was displayed on the screen. Each outcome was drawn from a normal distribution with variance $\sigma^{2}=4$. NB: narrow binary, NT: narrow trinary, WB: wide binary, WT: wide trinary. (C) Model predictions of the transfer phase choice rates for the UNBIASED (left), DIVISIVE (middle), and RANGE (right) models. Note that choice rate in the transfer phase is calculated across all possible binary combinations involving a given option. While score is proportional to the agent’s preference for a given option, it does not sum to one because any given choice counts for the final score of two options. Dashed lines represent the key prediction for each model.
 
 Crucially, even if the transfer phase involves only binary choices, it can still tease apart the normalization rules affecting outcome valuation during the learning phase. This is because transfer choices are made based on the memory of values acquired during the learning phase, where we purposely manipulated the number of options and their ranges of values, in order to create learning contexts that allow to confidently discriminate between the two normalization accounts, in the reinforcement learning context.
 
 Unsurprisingly, within each learning context, in all models the choice rates are higher for high-value options compared to lower value options. However, model simulations show that the models produce choice patterns that differ in many key aspects. Let’s start considering the UNBIASED model as a benchmark (Figure 1C, left). Since it encodes outcomes in an unbiased manner, it predicts higher choice rates for the high-value option in the ‘wide’ contexts (WB86 and WT86) compared to high-value options in the ‘narrow’ contexts (NB50 and NT50). On the other side, the UNBIASED model predicts that choice rate in the transfer phase is not affected by whether or not the option belonged to a binary or a trinary learning context. Moving to the DIVISIVE model, we note that the difference between the choice rates of high-value options of the ‘wide’ contexts (WB86 and WT86) compared those of the ‘narrow’ contexts (NB50 and NT50) is now much smaller due to the normalization process (Figure 1C, middle). However, the DIVISIVE model also predicts that the choice rate is strongly affected by whether or not the option belonged to a binary or a trinary learning context. For instance, WB86 and NB50 present a much higher choice rate compared to WT86 and NT50, respectively, despite their objective expected value being the same. This is an easily identifiable and direct consequence of the denominator of the divisive formulation rule increasing as a function of the number of options (Equation 2). Concerning the RANGE model (Figure 1C, right), it predicts choice rates being similar across all high-value options, regardless of their objective values (because of the normalization) and whether or not the option belonged to a trinary or binary context (because of the range normalization rule; Equation 1). Finally, the choice rates of the low-value (14) options also discriminate the DIVISIVE model, where it is strongly modulated by the task factors, from the other two models, where all low-value options present the same choice rate. To conclude, model simulations confirm that our design, involving a factorial learning phase and a transfer phase, is well suited to disentangle our three a priori models because they predict qualitatively differentiable patterns of choices (see also Figure 2—figure supplement 2C for similar conclusions based on an alternative task design; Palminteri et al., 2017; Teodorescu and Usher, 2013).
 
-## Behavioral results
+### Behavioral results
 
 The above-described behavioral protocol was administered to N = 50 participants recruited online, who played for real monetary incentives as previously described (Bavard et al., 2021). We first tested whether the correct choice rate (i.e., the probability of choosing the option with the highest expected value) was overall above chance level during the learning phase to ensure that the participants engaged in the task. Indeed, correct response rate was significantly higher than chance level (0.5 and 0.33 in the binary and trinary learning contexts, respectively) in all conditions (least significant comparison: t(49) = 18.93, p<0.0001, d = 2.68; on average: t(49) = 24.01, p<0.0001, d = 3.96; Figure 2A). We further checked whether the task factors affected performance in the learning phase and found a significant effect of the decision problem (the correct choice rate being higher in the binary compared to the trinary contexts: F(1,49) = 9.26, p=0.0038, η² = 0.16), but no effect of range amplitude (wide versus narrow; F(1,49) = 0.52, p=0.48, η² = 0.01) nor interaction (F(1,49) = 2.23, p=0.14, η² = 0.04).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/83891/elife-83891-fig2-v2.jpg)
+
+**Figure 2.:** Top: successive screens of a typical trial for the three versions of the main experiment: without forced trials (A), with forced trials and complete feedback information (B) and with forced trials and partial feedback information (C). Bottom: correct choice rate in the learning phase as a function of the choice context (left panels), and choice rate per option in the transfer phase (right panels) for the three versions of the main experiment: without forced trials (A), with forced trials and complete feedback information (B) and with forced trials and partial feedback information (C). In all panels, points indicate individual average, shaded areas indicate probability density function, 95% confidence interval, and SEM (n=50). NB: narrow binary, NT: narrow trinary, WB: wide binary, WT: wide trinary.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83891/elife-83891-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Correct choice rate in the learning phase as a function of the choice context (left panels), and choice rate per option in the transfer phase (right panels) for pilot Experiment 1 (A) and pilot Experiment 2 (B). In all panels, points indicate individual average, shaded areas indicate probability density function, 95% confidence interval, and SEM. NB: narrow binary, NT: narrow trinary, WB: wide binary, WT: wide trinary. To ascertain that our task design would be feasible and that participants would be able to learn the values of 10 options by trial-and-error, a pilot online-based experiment was originally performed. We recruited 40 participants (23 females, 16 males, 1 N/A, aged 30.35 ± 9.73 y) via Prolific (https://www.prolific.co). In the pilot experiments, the outcome variance was set to $\sigma=0$, that is, the rewards were displayed without any noise (in the main tasks, the variance was set to $\sigma=4$). In order to characterize learning behavior of participants, we analyzed the correct response rate in the learning and the transfer phases, that is, choices directed toward the most favorable option at each trial. To assess successful learning, we first tested participants’ correct response rate against chance level. We found it to be above chance level in both the learning phase (0.5 and 0.33 in the binary and trinary learning contexts, respectively; pilot experiment 1: t(19) = 11.83, p<0.0001, d = 2.65; pilot experiment 2: t(19) = 7.39, p<0.0001, d = 1.65) and the transfer phase (0.5; pilot experiment 1: t(19) = 5.87, p<0.0001, d = 1.31; pilot experiment 2: t(19) = 3.01, p=0.0072, d = 0.67).
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/83891/elife-83891-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Choice contexts in the learning phase. Participants were presented with four choice contexts varying in the amplitude of the outcomes’ range (narrow or wide) and the number of options (binary or trinary decisions). (B) Means of each reward distribution. After each decision, the outcome of each option was displayed on the screen. Each outcome was drawn from a normal distribution with variance $\sigma^{2}=4$. NB: narrow binary, NT: narrow trinary, WB: wide binary, WT: wide trinary. (C) Model predictions of the transfer phase choice rates for the UNBIASED (left), DIVISIVE (middle), and RANGE (right) models. Dashed lines represent the key prediction for each model. (D–F) Correct choice rate in the learning phase as a function of the choice context (left panels), and choice rate per option in the transfer phase (right panels) for the three versions of the main experiment: without forced trials (D), with forced trials and complete feedback information (E) and with forced trials and partial feedback information (F). In all panels, points indicate individual average, shaded areas indicate probability density function, 95% confidence interval, and SEM. NB: narrow binary, NT: narrow trinary, WB: wide binary, WT: wide trinary. In addition to Experiment 1, whose results are presented in the main text, we recruited 150 participants to perform a modified version of Experiment 1. The only difference between Experiment 1 and Experiment 2 is the value of the options in the narrow contexts: in Experiment 1, they went from 14 to 50; in Experiment 2, they went from 50 to 86. Similar to Experiment 1, participants were given a bonus depending on the number of points won in the experiment (average money won in pounds: 6.38 ± 0.58, average performance against chance during the learning phase and transfer phase: M = 0.78 ± 0.099, t(149) = 34.65, p<0.0001, d = 2.83). No data had to be excluded for technical issues. In the learning phase, the correct response rate was significantly higher than chance level (0.5 and 0.33 in the binary and trinary learning contexts, respectively) in all conditions (least significant: t(49) = 13.71, p<0.0001, d = 1.94; on average: t(49) = 15.75, p<0.0001, d = 2.23). We further checked whether the task factors affected performance in the learning phase and found a small significant effect of the decision problem (the correct choice rate being higher in the binary compared to the trinary contexts: F(1,49) = 4.11, p=0.048, η2 = 0.08), but no effect of range amplitude (wide versus narrow; F(1,49) = 0.027, p=0.87, η2 = 0.00) or interaction (F(1,49) = 0.92, p=0.34, η2 = 0.02). In the transfer phase, the correct choice rate in the transfer was significantly higher than chance (t(49) = 9.56, p<0.0001, d = 1.35), thus providing positive evidence of value retrieval and generalization (Bavard et al., 2018; Bavard et al., 2021; Hayes and Wedell, 2022). Contrary to what was predicted by the UNBIASED or the DIVISIVE models, the choice rate for the lowest value options (NB50, NT50, WB14, and WT14) did not follow the patterns depicted in panel (C). In fact, all lowest value options displayed a similar choice rate (F(3,49) = 1.85, p=0.14, η2 = 0.04), which is only consistent with the predictions of the RANGE model. Concerning other features of the transfer phase performance, the mid-value options valuation is also consistent with the RANGE model, which predict that these options will be valued equally (NT68 and WT50; t(49) = –1.34, p=0.19, d = −0.19), contrary to the UNIBIASED and DIVISIVE models that both predict NT68 to be greater than WT50. Similar to Experiment 1, these mid-value options displayed a choice rate very close to that of the corresponding lowest value options (NT50 and WT14): this feature is still not perfectly captured by the RANGE model (which predicts their choice rate perfectly in between those of high- and low-value options). To rule out that this effect was not due to a lack of attention for the low- and mid-value options, we also designed two additional experiments where we added forced-choice trials to focus the participants’ attention on all possible options (Table 1). As in Experiment 1, focusing participants’ attention to all possible outcomes by forcing their choice did not significantly affect the behavioral performance neither in the learning phase (F(2,147) = 0.78, p=0.46, η2 = 0.01, Levene’s test F(2,147) = 0.38, p=0.69) nor in the transfer phase (F(2,147) = 0.81, p=0.45, η2 = 0.01, Levene’s test F(2,147) = 0.81, p=0.45). Given the absence of detectable differences across experiments, in the model-based analyses that follow, we pooled the three experiments together. To sum up, the behavioral results are consistent with those of Experiment 1, are in contrast with the predictions of both the UNBIASED and the DIVISIVE models, and are rather consistent with the range normalization process proposed by the RANGE model.
 
 We next turned to the results of the transfer phase. Following the analytical strategy used in previous studies, we first checked that the correct choice rate in the transfer was significantly higher than chance (t(49) = 9.10, p<0.0001, d = 1.29), thus providing positive evidence of value retrieval and generalization (Bavard et al., 2018; Bavard et al., 2021; Hayes and Wedell, 2022). We analyzed the choice rate per symbol, which is the average frequency with which a given symbol is chosen in the transfer phase, and can therefore be taken as a measure of the subjective preference for a given option (Bavard et al., 2018; Palminteri et al., 2015). We focus on key comparisons that crucially discriminate between competing models of normalization. First, and contrary to what was predicted by the DIVISIVE model, the choice rate for the high-value options in the trinary contexts (NT50 and WT86) was not lower compared to that of the binary ones (NB50 and WB86). Indeed, if anything, their choice rate was higher (NT50 vs. NB50: t(49) = 1.66, p=0.10, d = 0.29; WT86 vs. WB86: t(49) = 2.80, p=0.0072, d = 0.53). Similarly, the choice rate of the low-value options was not affected by their belonging to a binary or trinary context in the direction predicted by the DIVISIVE model. Concerning other features of the transfer phase performance, some comparisons were consistent with the UNBIASED model and not with the RANGE model, such as the fact that high-value options in the narrow contexts (NB50 and NT50) displayed a lower choice rate compared to the high-value options of the wide contexts (WB86 and WT86; t(49) = −4.19, p=0.00011, d = −0.72), even if the size of the difference appeared to be much smaller to that expected from ex ante model simulations (Figure 1C, right). Other features were clearly more consistent with the RANGE model. For instance, the fact that the mid-value option in the wide trinary context WT50 displayed a significantly lower choice rate compared to the high-value options in the narrow contexts (NT50 and NB50) was not predicted by the UNBIASED model. One feature was not explained by any of the models, such as the higher choice rate for the high-value options in the trinary contexts (NT50 and WT86) compared to the binary contexts (NB50 and WB86; t(49) = 3.53, p=0.00090, d = 0.50; please note that the statistical test stays significant when taking into account all experiments: t(149) = 4.11, p<0.0001, d = 0.34). Of note, the direction of the effect for this comparison is in stronger contrast with the DIVISIVE (which predicts a difference in the opposite direction) compared the RANGE and UNBIASED models (which predict no difference).
 
 Finally, the mid-value options (NT32 and WT50) displayed a choice rate very close to that of the corresponding low-value options (NT14 and WT14): this feature is clearly in contrast with both the DIVISIVE and UNBIASED models (which predict their choice rate closer to that of the corresponding high-value options: NT50 and WT86), but not perfectly captured either by the RANGE model (which predicts their choice rate exactly in between those of high- and low-value options). To rule out that this effect was not due to a lack of attention for the low- and mid-value options, we designed two additional experiments where we added forced-choice trials to focus the participants’ attention on all possible options (Table 1; Chambon et al., 2020). In one experiment (N = 50), forced-choice trials were followed by complete feedback (Figure 2B), in another experiment (N = 50) forced-choice trials were followed by partial feedback (Figure 2C). Focusing participants’ attention to all possible outcomes by forcing their choice did not significantly affect the behavioral performance neither in the learning phase (F(2,147) = 2.75, p=0.067, η² = 0.04, Levene’s test F(2,147) = 2.43, p=0.092) nor in the transfer phase (F(2,147) = 0.64, p=0.53, η² = 0.00, Levene’s test F(2,147) = 0.64, p=0.53). This suggests that the choice rates of the mid options reflect their underlying valuation (rather than lack of information). Given the absence of detectable differences across experiments, in the model-based analyses that follow, we pooled the three experiments together. To sum up, behavioral results, specifically in the transfer phase, are in contrast with the predictions of the DIVISIVE model and are rather consistent with the range normalization process proposed by the RANGE model. Behavioral results in three experiments (N = 50 each) featuring a slightly different design, where we added a mid-value option (NT68) between NT50 and NT87, converge to the same broad conclusion: the behavioral pattern in the transfer phase is largely incompatible with that predicted by outcome divisive normalization during the learning phase (Figure 2—figure supplement 2). In the following section, we substantiate these claims by formal model comparison and ex post model simulations analysis.
 
-## Model comparison and ex post model simulations
+**Table 1.**
+ Experimental design.Each version of each experiment was composed of four different learning contexts. Results of Experiments 1 and 3 are presented in the main text; results of Experiment 2 are presented in Figure 2—figure supplement 2. Entries inside square brackets represent the mean outcomes for the lowest, mid (when applicable), and highest value option in a given context. Concerning ‘forced choices,’ ‘unary’ refers to situations where only one option is available and the participants cannot make a choice; ‘binary’ refers to situations where the participant can choose between two out of three options (the high-value option cannot be chosen).
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th rowspan="2">N</th>
+      <th colspan="6">Learning contexts</th>
+      <th rowspan="2">N forced choices(type / feedback)</th>
+    </tr>
+    <tr>
+      <th>[14,50]</th>
+      <th>[14,32,50]</th>
+      <th>[50,86]</th>
+      <th>[50,68,86]</th>
+      <th>[14,86]</th>
+      <th>[14,50,86]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Experiment 1a</td>
+      <td>50</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Experiment 1b</td>
+      <td>50</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>50 (unary / complete)</td>
+    </tr>
+    <tr>
+      <td>Experiment 1</td>
+      <td>50</td>
+      <td>X</td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>50 (unary / partial)</td>
+    </tr>
+    <tr>
+      <td>Experiment 2a</td>
+      <td>50</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Experiment 2b</td>
+      <td>50</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>50 (unary / complete)</td>
+    </tr>
+    <tr>
+      <td>Experiment 2c</td>
+      <td>50</td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>X</td>
+      <td>50 (unary / partial)</td>
+    </tr>
+    <tr>
+      <td>Experiment 3a</td>
+      <td>100</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>90 (binary / complete)</td>
+    </tr>
+    <tr>
+      <td>Experiment 3b</td>
+      <td>100</td>
+      <td></td>
+      <td>X</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td>X</td>
+      <td>135 (binary / complete)</td>
+    </tr>
+  </tbody>
+</table>
+
+### Model comparison and ex post model simulations
 
 Behavioral analyses of transfer phase choices suggest that learning and valuation are more consistent with the predictions of the RANGE model compared to those of the UNBIASED or the DIVISIVE model. To quantitatively substantiate this claim, we formally compared the quality of fit of the three models using an out-of-sample log-likelihood (Wilson and Collins, 2019). Specifically, we first optimized the models’ free parameters (learning rates and choice inverse temperature) in order to maximize the log-likelihood of observing the learning phase choices, given the model and the parameters. We then used these parameters to generate the log-likelihood of observing the choices in the transfer phase, which were not included in the original model fitting. The RANGE model displayed a much higher mean and median out-of-sample log-likelihood (which indicated better fit) compared to both the DIVISIVE and the UNBIASED models (oosLLRAN vs. oosLLDIV: t(149) = 10.10, p<0.0001, d = 0.41; oosLLRAN vs. oosLLUNB: t(149) = 8.34, p<0.0001, d = 0.82; Table 2). Subsequently, we simulated transfer choice phase using the best fitting, that is, empirical, parameter values (Figure 3). The results of this ex post simulations confirmed what was inferred from the ex ante simulations and indicated that the RANGE model predicted results much closer to the observed ones, in respect of many key comparisons. All these results were replicated in three additional experiments feature with slightly different design, where the DIVISIVE model displayed a higher mean log-likelihood compared to the UNBIASED model, indicating no robust improvement in the quality of fit (see Table 2). Despite the superiority of the RANGE model in terms of both predictive (out-of-sample log-likelihood) and generative (simulation) performance (Wilson and Collins, 2019) compared to the UNBIASED and DIVISIVE one, it still failed to perfectly capture transfer phase preference, specifically concerning the mid-value options. In the subsequent section, we propose how the RANGE model could be further improved to obviate this issue.
 
-## Improving the RANGE model
+**Table 2.**
+ Quantitative model comparison in Experiments 1 and 2.Values reported here represent mean ± SD and median of out-of-sample log-likelihood for each model.
 
-Although model comparison and model simulation both unambiguously favored the RANGE model over the UNBIASED and DIVISIVE models, the RANGE model is not perfect at predicting participants’ choices in the transfer phase (Figure 3C). As mentioned previously, the mid-value options in trinary contexts (NT32 and WT50) displayed a choice rate closer to that of the corresponding low-value options (NT14 and WT14): a feature that was not captured by the RANGE model, which predicts their choice rate to be exactly halfway of those of low-value (NT14 and WT14) and high-value (NT50 and WT86) options. In addition, the choice rate of low-value options of all contexts (NB14, NT14, WB14, and WT14) was underestimated by the RANGE model. These observations are prima facie compatible with the idea that outcomes are not processed linearly (Bernoulli, 1738; Ludvig et al., 2018). To formally test this hypothesis with the goal of improving the RANGE model, we augmented it with a free parameter ω that applies a nonlinear transformation to the normalized outcome. More specifically, in this modified RANGE model (RANGEω), the normalized outcome is power-transformed by the ω parameter (0<ω<+∞) as follows:(3)RNORM=(R−RMINRMAX−RMIN)ω
 
-Crucially, for ω=1, the RANGEω reduced to the RANGE model; for ω<1, the RANGEω model induces a concave deformation of the normalized outcome; for ω>1, the RANGEω model induces a convex deformation of the normalized outcome. Quantitative model comparison favored the RANGEω model over all other models, including the RANGE model (Table 2) (oosLLRAN vs. oosLLRAN(ω): t(149) = −6.98, p<0.0001, d = −0.57; Table 2). The inspection of model simulations confirmed that the RANGEω model closely captures participants’ behavior in the transfer phase. More specifically, the mid-value options (NT32 and WT50) and the low-value options (NB14, NT14, WB14, and WT14) were better estimated in all contexts (Figure 4A; this was also true for Experiment 2; see Figure 6—figure supplement 1). On average, the power parameter ω was >1 (mean ± SD: 2.97 ± 1.36, t(149) = 17.81, p<0.0001, d = 1.45), suggesting that participants value the mid outcome less than the midpoint between the lowest and highest outcomes (i.e., closer to the low-value option, Figure 4B).
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Model</th>
+      <th colspan="2">Experiment 1 (N = 150)Out-of-sample log-likelihood</th>
+      <th colspan="2">Experiment 2 (N = 150s)Out-of-sample log-likelihood</th>
+    </tr>
+    <tr>
+      <th>Mean ± SD</th>
+      <th>Median</th>
+      <th>Mean ± SD</th>
+      <th>Median</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>UNBIASED</td>
+      <td>–275.31 ± 268.75</td>
+      <td>–162.53</td>
+      <td>–227.24 ± 269.72</td>
+      <td>–125.40</td>
+    </tr>
+    <tr>
+      <td>DIVISIVE</td>
+      <td>–143.38 ± 70.40</td>
+      <td>–124.91</td>
+      <td>–159.89 ± 65.20</td>
+      <td>–141.07</td>
+    </tr>
+    <tr>
+      <td>RANGE</td>
+      <td>–116.72 ± 57.91</td>
+      <td>–109.23</td>
+      <td>–109.71 ± 43.91</td>
+      <td>–106.83</td>
+    </tr>
+    <tr>
+      <td>RANGE (ω)</td>
+      <td>–97.70 ± 55.52</td>
+      <td>–78.73</td>
+      <td>–91.99 ± 37.79</td>
+      <td>–79.57</td>
+    </tr>
+  </tbody>
+</table>
+
+![Figure 3.](https://cdn.elifesciences.org/articles/83891/elife-83891-fig3-v2.jpg)
+
+**Figure 3.:** Behavioral data (black dots, n=150) superimposed on simulated data (colored bars) for the UNBIASED (A), DIVISIVE (B), and RANGE (C) models. Simulated data in the transfer phase were obtained with the best-fitting parameters, optimized on all four contexts of the learning phase. Dashed lines represent the key prediction for each model.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/83891/elife-83891-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Behavioral data (black dots, n=150) superimposed on simulated data (colored bars) for Experiment 1 (top row) and Experiment 2 (bottom row), for the DIVISIVE (A, D), DIVISIVEω (B, E), and DIVISIVEfull (C, F) models. Simulated data in the transfer phase were obtained with the best-fitting parameters, optimized on all four contexts of the learning phase. Dashed lines represent the key features that allow discriminating divisive normalization models from range normalization and unbiased value representations. To confirm that our power manipulation in the RANGEω model would not affect our predictions in the DIVISIVE model (especially, the difference in value between options from binary and trinary contexts, e.g., WB86 and WT86), we implemented the same manipulation in the DIVISIVE model. In the DIVISIVEω model, the normalized outcome is power-transformed by the $\omega$ parameter ($0<\omega<+∞$), as follows: $sR_{i}=\frac{R_{i}}{\sum_{k=1}^{n}⁡R_{k}}^{\omega}$ where $n$ is the number of contextually relevant stimuli. Crucially, for $\omega=1$, the DIVISIVEω model reduces to the DIVISIVE model. As expected, the DIVISIVEω model was unable to match participants’ behavior despite a small improvement in the prediction of the choice rates for mid and lowest value options, in both experiments. Moreover, over both experiments, quantitative model comparison favored the DIVISIVEω model over the DIVISIVE model (oosLLDIV(ω) = −129.25 ± 64.94, median = −116.98; oosLLDIV(ω) vs. oosLLDIV: t(299) = 11.50, p<0.0001, d = 0.66) but not over range-adaptation model (oosLLDIV(ω) vs. oosLLRAN(ω): t(299) = −11.71, p<0.0001, d = −0.68). In conclusion, the addition of a power transformation was insufficient to correct the behavioral predictions of the DIVISIVE model. Finally, we acknowledge that the normalization rule we implemented is a simpler implementation of classical divisive normalization (Louie et al., 2013; Louie et al., 2015; Webb et al., 2021). To make sure that this over-simplification did not affect the main results of this study, we implemented a more complex version of divisive normalization, including a semi-saturation parameter, a normalization weight parameter, and a $p$-norm parameter (Webb et al., 2021): $sR_{i}=\frac{R_{i}}{\sigma+η\sum_{k=1}^{n}R_{k}^{p}^{\frac{1}{p}}}$ where $n$ is the number of contextually relevant stimuli; the parameter $0<\sigma<+∞$ determines, in a neural system, how neural activity saturates with increased input and can be interpreted as the baseline activity level in the normalization; the parameter $0<η<1$ determines the contribution to the normalization from other alternatives; each alternative is scaled by the magnitude and number of its elements by a norm of degree $1<p<+∞$. Crucially, the DIVISIVEfull model is nested within the DIVISIVE and UNBIASED model: when $\sigma=0$, $η=1$ and $p=1$, the DIVISIVEfull model reduces to the DIVISIVE model; when $\sigma=1$ and $η=0$, the DIVISIVEfull model reduces to the UNBIASED model (no normalization). Quantitative model comparison showed a substantial improvement in the ability of the DIVISIVEfull model to fit participants’ data over the simple DIVISIVE model (oosLLDIV(full) = −136.19 ± 88.33, median = −120.63; oosLLDIV(full) vs. oosLLDIV: t(299) = 4.69, p<0.0001, d = 0.27), but not over range adaptation models (oosLLDIV(full) vs. oosLLRAN(ω): t(299) = −10.36, p<0.0001, d = −0.60). These comparisons were consistent with model simulations, which clearly show that the key features of the model fail to predict transfer performance. In conclusion, and unsurprisingly given the structure of the model, the more complex version of the divisive normalization rule was unable to match participants’ behavior in our task.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/83891/elife-83891-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Colored maps of pairwise choice rates during the transfer phase of Experiment 1 (top row) and experiment 2 (bottom row), for each option when compared to each of the nine other options, noted here generically as Option 1 and Option 2 in increasing order. Model simulations (colored circles) are superimposed over behavioral data (colored squares). Comparisons between the same symbols are undefined (black squares).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/83891/elife-83891-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Model attributions per participant and percentage of participants (n=150) explained by the RANGE, DIVISIVE, UNBIASED (left), and RANGEω (right) models in Experiment 1 (A) and Experiment 2 (B).
+
+### Improving the RANGE model
+
+Although model comparison and model simulation both unambiguously favored the RANGE model over the UNBIASED and DIVISIVE models, the RANGE model is not perfect at predicting participants’ choices in the transfer phase (Figure 3C). As mentioned previously, the mid-value options in trinary contexts (NT32 and WT50) displayed a choice rate closer to that of the corresponding low-value options (NT14 and WT14): a feature that was not captured by the RANGE model, which predicts their choice rate to be exactly halfway of those of low-value (NT14 and WT14) and high-value (NT50 and WT86) options. In addition, the choice rate of low-value options of all contexts (NB14, NT14, WB14, and WT14) was underestimated by the RANGE model. These observations are prima facie compatible with the idea that outcomes are not processed linearly (Bernoulli, 1738; Ludvig et al., 2018). To formally test this hypothesis with the goal of improving the RANGE model, we augmented it with a free parameter $\omega$ that applies a nonlinear transformation to the normalized outcome. More specifically, in this modified RANGE model (RANGEω), the normalized outcome is power-transformed by the $\omega$ parameter ($0<\omega<+∞$) as follows:
+
+$$
+R_{NORM}=(\frac{R−R_{MIN}}{R_{MAX}−R_{MIN}})^{\omega}
+$$
+
+Crucially, for $\omega=1$, the RANGEω reduced to the RANGE model; for $\omega<1$, the RANGEω model induces a concave deformation of the normalized outcome; for $\omega>1$, the RANGEω model induces a convex deformation of the normalized outcome. Quantitative model comparison favored the RANGEω model over all other models, including the RANGE model (Table 2) (oosLLRAN vs. oosLLRAN(ω): t(149) = −6.98, p<0.0001, d = −0.57; Table 2). The inspection of model simulations confirmed that the RANGEω model closely captures participants’ behavior in the transfer phase. More specifically, the mid-value options (NT32 and WT50) and the low-value options (NB14, NT14, WB14, and WT14) were better estimated in all contexts (Figure 4A; this was also true for Experiment 2; see Figure 6—figure supplement 1). On average, the power parameter $\omega$ was >1 (mean ± SD: 2.97 ± 1.36, t(149) = 17.81, p<0.0001, d = 1.45), suggesting that participants value the mid outcome less than the midpoint between the lowest and highest outcomes (i.e., closer to the low-value option, Figure 4B).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/83891/elife-83891-fig4-v2.jpg)
 
-**Figure 4.:** (A) Curvature function of the normalized reward per participant. Each gray line was simulated with the best-fitting power parameter  for each participant. Dashed line represents the identity function (ω), purple line represents the average curvature over participant, and shaded area represents SEM. (ω=1B) Behavioral data (black dots, n=150) superimposed on simulated data (colored bars) for the RANGEω model. Simulated data in the transfer phase were obtained with the best-fitting parameters, optimized on all four contexts of the learning phase. Dashed lines represent the key prediction for the model.
+**Figure 4.:** (A) Curvature function of the normalized reward per participant. Each gray line was simulated with the best-fitting power parameter $\omega$ for each participant. Dashed line represents the identity function ($\omega=1$), purple line represents the average curvature over participant, and shaded area represents SEM. (B) Behavioral data (black dots, n=150) superimposed on simulated data (colored bars) for the RANGEω model. Simulated data in the transfer phase were obtained with the best-fitting parameters, optimized on all four contexts of the learning phase. Dashed lines represent the key prediction for the model.
 
-## Investigating the attentional mechanisms underlying weighted normalization
+### Investigating the attentional mechanisms underlying weighted normalization
 
 However, our current design does not allow to tease apart two possible mechanisms underlying subjective weighting of outcome captured by power transformation. One possibility (implicit in the formulation we used) is that participants ‘perceive’ mid outcomes as being closer to the low one because the high outcome ‘stands out’ due to its value. Another possibility is that participants give a higher subjective weighting to chosen outcomes because of the very fact that they were chosen and obtained. The current design and results do not allow to tease apart these interpretations because during the learning phase the mid-value options were chosen as much as the low-value options (7.2% and 6.8%, t(149) = 0.97, p=0.33, d = 0.04) and therefore mid outcomes were almost systematically unchosen outcomes.
 
 To address this issue, we ran two additional experiments (Experiments 3a and 3b), featuring, as before, wide and narrow learning contexts (Figure 5A). The key manipulation in this new experiment consisted of learning contexts where we interleaved trinary choices with binary choices, where the high-value option was presented but not available to the participant (Figure 5B). We reasoned that by doing so we would be able to increase the number of times the mid-value options were chosen. The manipulation was successful in doing so: in the learning contexts featuring binary choices, the mid-value options were chosen on 48% of the trials (Experiment 3a) and 67% (Experiment 3b); significantly more than the corresponding high-value option in the same learning context (Experiment 3a, wide: t(99) = 6.03, p<0.0001, d = 0.95; narrow t(99) = 5.43, p<0.0001, d = 0.80; Experiment 3b, wide: t(99) = 33.27, p<0.0001, d = 4.47; narrow t(99) = 34.06, p<0.0001, d = 4.33; Figure 5—figure supplement 1).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/83891/elife-83891-fig5-v2.jpg)
+
+**Figure 5.:** (A) Choice contexts in the learning phase. Participants were presented with four choice contexts varying in the amplitude of the outcomes’ range (narrow or wide) and the number of available options (trinary or binary decisions). (B) Trial sequence for a binary trial (50 or 75% of the total number of learning trials), where the high-value option was presented but not available to the participant, and a standard trinary trial (50 or 25% of the total number of learning trials). (C) Behavioral data (black dots, n=200) superimposed on simulated data (colored bars) for the RANGEω and RANGEω+ models. Simulated data in the transfer phase were obtained with the best-fitting parameters, optimized on all four contexts of the learning phase. Dashed lines represent the key prediction for the model. (D) Curvature functions of the normalized reward per participant. Each gray line was simulated with the best-fitting power parameters $\omega_{c}$ and $\omega_{u}$ for each participant. Dashed line represents the identity function ($\omega=1$), purple line represents the average curvature over participant, and shaded area represents SEM. Results in (C) and (D) are pooled data for Experiments 3a and 3b.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83891/elife-83891-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Experiment design of Experiments 3a (n=100) and 3b (n=100). All contexts included three options, but one option was not selectable on either 50 or 75% of the learning trials. (B–, C) Behavior results of Experiment 3a (B) and Experiment 3b (C) in each learning context. Left: choice rate in the trinary trials.
+
 We then turned to the analysis of the transfer choices and found that the manipulation was also effective in manipulating the mid-value option, so that in the contexts featuring binary choices (i.e., impossibility of choosing the high-value options), the mid options were valued more compared to the full trinary contexts (i.e., when they were almost never chosen) (Experiment 3a, wide: t(99) = 22.80, p<0.0001, d = 3.46; narrow: t(99) = 20.10, d = 3.06, p<0.0001; Experiment 3b, wide: t(99) = 21.96, p<0.0001, d = 3.88; narrow t(99) = 20.46, p<0.0001, d = 3.76; Figure 5C). Interestingly, the results were virtually identical in the experiment with 50% and that with 25% trinary trials despite the choosiness of the high-value options being very different in the two experiments. In addition, the signatures of range adaptation (narrow vs. wide) being replicated, we pooled the experiments in the main figure.
 
-The behavioral results thus suggest that mid outcomes, although range normalized, can be valued correctly in between the lowest and the highest outcome if we force choices toward the mid-value option. These results are therefore consistent with the hypothesis that outcome weighting is contingent with option choosiness rather than a bias in outcome evaluation per se. To objectify this conclusion, we compared the RANGEω previously described, with a more complex one (RANGEω+) where two different power ω parameters apply to the obtained (chosen: ωc) and forgone (unchosen: ωu) outcomes. This augmented model displayed better higher quality of fit in both experiments (as proxied by the out-of-sample log-likelihood of the transfer phase; oosLLRAN(ω) vs. oosLLRAN(ω+): t(199) = −7.73, p<0.0001, d = −0.30). This quantitative result was backed up by model simulations analysis showing that only the RANGEω+ was able to capture the change in valuation in the mid-value options (Figure 5C). Finally, we compared the weighting parameters and found ωc significantly lower than ωu (t(199) = −17.28, p<0.0001, d = −1.92; Figure 5D). To conclude, these additional experiments further clarify the cognitive mechanisms (and specifically the role of attention) underlying outcome encoding.
+The behavioral results thus suggest that mid outcomes, although range normalized, can be valued correctly in between the lowest and the highest outcome if we force choices toward the mid-value option. These results are therefore consistent with the hypothesis that outcome weighting is contingent with option choosiness rather than a bias in outcome evaluation per se. To objectify this conclusion, we compared the RANGEω previously described, with a more complex one (RANGEω+) where two different power $\omega$ parameters apply to the obtained (chosen: $\omega_{c}$) and forgone (unchosen: $\omega_{u}$) outcomes. This augmented model displayed better higher quality of fit in both experiments (as proxied by the out-of-sample log-likelihood of the transfer phase; oosLLRAN(ω) vs. oosLLRAN(ω+): t(199) = −7.73, p<0.0001, d = −0.30). This quantitative result was backed up by model simulations analysis showing that only the RANGEω+ was able to capture the change in valuation in the mid-value options (Figure 5C). Finally, we compared the weighting parameters and found $\omega_{c}$ significantly lower than $\omega_{u}$ (t(199) = −17.28, p<0.0001, d = −1.92; Figure 5D). To conclude, these additional experiments further clarify the cognitive mechanisms (and specifically the role of attention) underlying outcome encoding.
 
-## Explicit assessment of option values
+### Explicit assessment of option values
 
 In addition to the transfer phase, participants performed another value elicitation assessment, where they were asked to explicitly rate the average value of each option using a slider ranging from 0 to 100. This explicit elicitation phase allowed us to have a complementary estimation of participants’ subjective valuations of each option to compare them with the choice-based transfer phase. The subjective values elicited through explicit ratings were consistent with those elicited in the transfer phase hrough binary choices in many key aspects (Figure 6A). Indeed, against what was predicted by the DIVISIVE principle, option subjective values did not depend on the number of options in each context, but rather on their ordinal value within the context (minimum, mid, maximum). This pattern is even clearer when looking at the difference between reported subjective values and the objective values of each option (Figure 6B). Crucially, the subjective value of the options with an objective value of 50 (NB50, NT50, and WT50) is completely determined by its position in the range of its context, and not by the total sum of the options in this context. Finally, to compare elicitation methods, we simulated transfer phase choices based on the explicit elicitation ratings. More specifically, for each participant and comparison, we generated choices using an argmax selection rule on the subjective values they explicitly reported for each option (see Equation 10). We found the pattern simulated using explicit ratings to closely match the actual choice rates of the transfer phase (simulated data vs. behavioral data per option: Spearman’s ρ(8) = 0.99, p<0.0001, Figure 6C), suggesting that both elicitation methods tap into the same valuation system. Similar results and conclusions could be drawn from Experiment 2 (Spearman’s ρ(8) = 0.99, p<0.0001, Figure 2—figure supplement 2) and Experiment 3, where we confirmed that the explicit ratings of a given option were highly dependent on its position within the range (see Figure 6D and E). Furthermore, we also confirmed that the pattern simulated using explicit ratings closely matched the actual choice rates of Experiment 3 transfer phase (simulated data vs. behavioral data per option: Spearman’s ρ(10) = 1.00, p<0.0001, Figure 6C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/83891/elife-83891-fig6-v2.jpg)
+
+**Figure 6.:** (A, D) Reported subjective values in the elicitation phase for each option, in Experiment 1 (A, n=150) and Experiment 3 (D, n=200). Points indicate individual average, and shaded areas indicate probability density function, 95% confidence interval, and SEM. Purple areas indicate the actual objective value for each option. (B, E) Difference between reported subjective value and actual objective value for each option, arranged in ascending order, in Experiment 1 (B) and Experiment 3. The legend of the x-axis represents the values of the options of the context in which each option was learned (actual option value shown in bold). Points indicate individual average, and shaded areas indicate probability density function, 95% confidence interval, and SEM. (C, F) Behavioral choice-based data (black dots) superimposed on simulated choice-based data (colored bars), in Experiment 1 (C) and Experiment 3 (F). Simulated data were obtained with an argmax rule assuming that participants were making transfer phase decision based on the explicit subjective ratings of each option.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/83891/elife-83891-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Behavioral data (black dots, n=150) superimposed on simulated data (colored bars) for the UNBIASED (A), DIVISIVE (B), RANGE (C), and RANGEω (D) models. Simulated data in the transfer phase were obtained with the best-fitting parameters, optimized on all four contexts of the learning phase. Dashed lines represent the key prediction for each model. (E) Curvature function of the normalized reward per participant. Each gray line was simulated with the best-fitting power parameter $\omega$ for each participant. Dashed line represents the identity function ($\omega=1$), purple line represents the average curvature over participant, and shaded area represents SEM. (F) Reported subjective values in the elicitation phase for each option. Points indicate individual average, and shaded areas indicate probability density function, 95% confidence interval, and SEM. Purple areas indicate the actual objective value for each option. (G) Difference between reported subjective value and actual objective value for each option, arrange in ascending order. The legend of the x-axis represents the values of the options of the context in which each option was learned (actual option value shown in bold). Points indicate individual average, and shaded areas indicate probability density function, 95% confidence interval, and SEM. (H) Behavioral choice-based data (black dots) superimposed on simulated choice-based data (colored bars). Simulated data were obtained with an argmax rule assuming that subjects were making transfer phase decisions based on the explicit subjective ratings of each option. Similar to Experiment 1, model comparison favored the RANGE model over to both the DIVISIVE and the UNBIASED models (oosLLRAN vs. oosLLDIV: t(149) = 10.61, p<0.0001, d = 0.87; oosLLRAN vs. oosLLUNB: t(149) = 5.71, p<0.0001, d = 0.47; Table 2). Model simulations also confirmed what inferred from the ex ante simulations and indicated that the RANGE model predicts results much closer to the observed ones in respect of many key comparisons. Model comparison and model simulations of the RANGEω model supported the conclusions from Experiment 1. On average, the power parameter $\omega$ was >1 (mean ± SD: 2.83 ± 1.47, t(149) = 15.25, p<0.0001, d = 1.25), suggesting that participants value the mid-value options less than the midpoint between the lowest and highest options (i.e., closer to the lowest option). Quantitative model comparison favored the RANGEω model over all other models, including the RANGE model (Table 2) (oosLLRAN vs. oosLLRAN(ω): t(149) = −8.63, p<0.0001, d = −0.70; Table 2). Moreover, the inspection of model simulations confirmed that the RANGEω model perfectly captures participants’ behavior in the transfer phase. More specifically, the mid-value options (NT68 and WT50) and the lowest value options (NB14, NT14, WB14, and WT14) were better estimated in all contexts. To conclude, the addition of a power parameter allowed our model to match participants’ behavior almost perfectly. Consistently with the results of Experiment 1, the subjective values elicited through explicit ratings were consistent with those elicited through binary choices in many key aspects. Again, to compare elicitation methods, we simulated transfer phase choices based on the explicit elicitation ratings. We found the pattern simulated using explicit ratings to perfectly match the actual choice rates of the transfer phase (t(149) = 1.18, p=0.24, d = 0.10), suggesting that both elicitation methods tap into the same valuation system.
 
 ## Discussion
 
@@ -113,74 +332,106 @@ To conclude, while our results cast serious doubt about the relevance of the div
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Across three experiments, we recruited 500 participants (227 females, 243 males, 30 N/A, aged 26.44 ± 8.31 years old) via the Prolific platform (https://www.prolific.co). The research was carried out following the principles and guidelines for experiments including human participants provided in the Declaration of Helsinki (1964, revised in 2013). The INSERM Ethical Review Committee/IRB00003888 approved the study, and participants were provided written informed consent prior to their inclusion. The results presented in the main text are those of Experiment 1 (N = 150) and Experiment 3 (N = 200). The results of an alternative design (Experiment 2) are presented in Figure 2—figure supplement 2 and Figure 6—figure supplement 1. To sustain motivation throughout the experiment, participants were given a bonus depending on the number of points won in the experiment (average money won in pounds: 5.05 ± 0.50, average performance against chance during the learning phase and transfer phase: M = 0.74 ± 0.087, t(149) = 34.04, p<0.0001, d = 2.78). The data of one participant for the explicit phase was not included due to technical issues. A pilot online-based experiment was originally performed (N = 40, the results are also presented in Figure 2—figure supplement 1).
 
-## Behavioral tasks
+### Behavioral tasks
 
 Participants performed an online version of a probabilistic instrumental learning task, instantiated as a multiarmed bandit task. After checking the consent form, participants received written instructions explaining how the task worked and that their final payoff would be affected by their choices in the task. During the instructions, the possible outcomes in points (from 0 to 100 points) were explicitly showed as well as their conversion rate (1 point = 0.02 pence). The instructions were concluded with a short three-item quiz to make sure participants’ understanding of the task was sufficient. The instructions were then followed by a short training session of 12 trials aiming at familiarizing the participants with the response modalities. If participants’ performance during the training session did not reach 60% of correct answers (i.e., choices toward the option with the highest expected value), they had to repeat the training session. Participants could also voluntarily repeat the training session up to two times and then started the actual experiment.
 
 In our main task, options were materialized by abstract stimuli (cues) taken from randomly generated identicons, colored such that the subjective hue and saturation were very similar according to the HSLUV color scheme (https://www.hsluv.org). On each trial, two or three cues were presented on different positions (left/middle/right) on the screen. The position of a given cue was randomized, such that a given cue was presented an equal number of times on the left, the middle, and the right. Participants were required to select between the cues by clicking on one cue. The choice window was self-paced. A brief delay after the choice was recorded (500 ms); the outcome was displayed for 1000 ms. There was no fixation screen between trials.
 
-## Experimental design (version a)
+#### Experimental design (version a)
 
-The full task consisted of three phases: one learning phase and two elicitation phases. During the learning phase, cues appeared in fixed pairs/triplets. Each pair/triplet was presented 45 times, leading to a total of 180 trials. Within each pair/triplet, the cues were associated to a deterministic outcome drawn from a normal distribution with variable means μϵ0,100 and fixed variance σ=4 (Table 1). At the end of the trial, the cues disappeared and were replaced by the outcome. Once they had completed the learning phase, participants were displayed with the total points earned and their monetary equivalent.
+The full task consisted of three phases: one learning phase and two elicitation phases. During the learning phase, cues appeared in fixed pairs/triplets. Each pair/triplet was presented 45 times, leading to a total of 180 trials. Within each pair/triplet, the cues were associated to a deterministic outcome drawn from a normal distribution with variable means $\muϵ0,100$ and fixed variance $\sigma=4$ (Table 1). At the end of the trial, the cues disappeared and were replaced by the outcome. Once they had completed the learning phase, participants were displayed with the total points earned and their monetary equivalent.
 
 After the learning phase, participants performed two elicitation phases: a transfer phase and an explicit rating phase. The order of the elicitation phases was counterbalanced across participants. In the transfer phase, the 10 cues from the learning phase were presented in all possible binary combinations (45, not including pairs formed by the same cue). Each pair of cues was presented four times, leading to a total of 180 trials. Participants were explained that they would be presented with pairs of cues taken from the learning phase, and that all pairs would not have been necessarily displayed together before. On each trial, they had to indicate which of the cues was the one with the highest value. In the explicit rating phase, each cue from the learning phase was presented alone. Participants were asked what was the average value of the cue and had to move a cursor ranging from 0 to 100. Each cue was presented four times, leading to a total of 40 trials. In both elicitation phases, the outcome was not provided in order not to modify the subjective option values learned during the learning phase, but participants were informed that their choices would count for the final payoff.
 
-## Experimental design (versions b and c)
+#### Experimental design (versions b and c)
 
 In the learning phase, we added forced-choice trials to the 180 free-choice trials (Chambon et al., 2020). In these forced trials, only one option was selectable and the other cue(s) were shaded. We added five forced-choice trials per option, leading to a total of 230 trials in the learning phase. In version b, even in the forced-choice trial, the participants could only see the outcomes of all options. In version c, participants could only see the outcome of the chosen option. The elicitation phases (transfer and explicit rating) remained unchanged.
 
-## Experiment 3
+#### Experiment 3
 
 In the learning phase, cues appeared in fixed triplets only. Each triplet was presented 45 times, leading to a total of 180 trials. We used a 2 × 2 design manipulating the range spread (as in Experiment 1a) and the option availability: in half of the contexts, for some proportion of trials (Experiment 3a: 50%; Experiment 3b: 75%), the most favorable option was unavailable (Figure 5A). It was displayed on the screen with a shaded mask and was not clickable. At the end of each trial, all cues disappeared and were replaced by the outcome (shaded outcome for the nonclickable option). In the transfer phase, the 12 cues from the learning phase were presented in all possible binary combinations (66, not including pairs formed by the same cue). Each pair of cues was presented two times, leading to a total of 132 trials. In the explicit phase, each cue was presented two times, leading to a total of 24 trials.
 
-## Behavioral analyses
+### Behavioral analyses
 
 For all experiments, we were interested in three different variables reflecting participants’ learning: (1) correct choice rate in the learning phase, that is, choices directed toward the option with the highest objective value; (2) choice rate in the transfer phase, that is, the number of times an option is chosen, divided by the number of times the option is presented; and (3) subjective valuation in the explicit phase, that is, average reported value per option. Statistical effects were assessed using multiple-way repeated-measures ANOVAs with range amplitude (narrow or wide) and number of presented options (binary or trinary decision problem, Figure 1) as within-participant factor and experiment version (a,b,c) as between-participant factors. Post hoc tests were performed using one-sample and two-sample t-tests for respectively within- and between-experiment comparisons. To assess overall performance, additional one-sample t-tests were performed against chance level (0.5 – two-option contexts – and 0.33 – three-option contexts). We report the t-statistic, p-value, and Cohen’s d to estimate effect size (two-sample t-test only). Given the large sample size (n = 500), central limit theorem allows us to assume normal distribution of our overall performance data and apply properties of normal distribution in our statistical analyses, as well as sphericity hypotheses. Concerning ANOVA, we report Levene’s test for homogeneity of variance, the uncorrected statistical, as well as Huynh–Feldt correction for repeated-measures ANOVA when applicable (Girden, 1992), F-statistic, p-value, partial eta-squared (ηp²), and generalized eta-squared (η²) (when Huynh–Feldt correction is applied) to estimate effect size. All statistical analyses were performed using MATLAB (https://www.mathworks.com) and R (https://www.r-project.org).
 
-## Computational models
+### Computational models
 
-The goal of our models is to estimate the subjective value of each option and choose the option that maximizes the expected reward (in our case, with the highest expected value). At each trial t, in each context s, the expected value Q of each option i is updated with a delta rule:(4)Qts,i=Qt-1s,i+αX*δt
+The goal of our models is to estimate the subjective value of each option and choose the option that maximizes the expected reward (in our case, with the highest expected value). At each trial $t$, in each context $s$, the expected value $Q$ of each option $i$ is updated with a delta rule:
 
-where αX is the learning rate and δt is a prediction error term. For all our models, at each trial, the chosen and unchosen options are updated with two distinct learning rates for chosen (αC) and unchosen (αU) options, and separate, outcome-specific, prediction error terms δt , calculated as the difference between the subjective outcome uRi and the expected one:(5)δt=uRi-Qt-1s,i
+$$
+Q_{t}s,i=Q_{t-1}s,i+\alpha_{X}*\delta_{t}
+$$
 
-We modeled participants’ choice behavior using a softmax decision rule representing the probability for a participant to choose one option a over the other options – one alternative in binary contexts (n=2), two in trinary contexts (n=3) in each context s:(6)Pts,a=eQts,a*β∑k=1neQts,k*β
+where $\alpha_{X}$ is the learning rate and $\delta_{t}$ is a prediction error term. For all our models, at each trial, the chosen and unchosen options are updated with two distinct learning rates for chosen ($\alpha_{C}$) and unchosen ($\alpha_{U}$) options, and separate, outcome-specific, prediction error terms $\delta_{t}$ , calculated as the difference between the subjective outcome $uR_{i}$ and the expected one:
 
-where n is the number of outcomes presented in a given trial (n=2;n=3) and β>0 is the inverse temperature parameter. High temperatures (β→0) cause the action to be all (nearly) equiprobable. Low temperatures (β→+∞) cause a greater difference in selection probability for actions that differ in their value estimates (Sutton and Barto, 1998).
+$$
+\delta_{t}=uR_{i}-Q_{t-1}s,i
+$$
+
+We modeled participants’ choice behavior using a softmax decision rule representing the probability for a participant to choose one option $a$ over the other options – one alternative in binary contexts ($n=2$), two in trinary contexts ($n=3$) in each context $s$:
+
+$$
+P_{t}s,a=\frac{e^{Q_{t}s,a*\beta}}{\sum_{k=1}^{n}e^{Q_{t}s,k*\beta}}
+$$
+
+where $n$ is the number of outcomes presented in a given trial ($n=2;n=3$) and $\beta>0$ is the inverse temperature parameter. High temperatures ($\beta→0$) cause the action to be all (nearly) equiprobable. Low temperatures ($\beta→+∞$) cause a greater difference in selection probability for actions that differ in their value estimates (Sutton and Barto, 1998).
 
 We compared four alternative computational models: the unbiased (UNBIASED) model, which encodes outcomes on an absolute scale independently of the choice context in which they are presented; the range normalization (RANGE) model, where the reward is normalized as a function of the range of the outcomes, the divisive normalization (DIVISIVE) model, where the reward is normalized as a function of the sum of all the outcomes; and the nonlinear range normalization (RANGEω) model, where the normalized outcome is power-transformed with an additional free parameter.
 
-## Unbiased model
+#### Unbiased model
 
-At trial t=0, for all contexts Qt=0=50. For each option i, the subjective values uRi are encoded as the participants see the outcomes, that is, their objective value in points.(7)uRi=Ri,Ri∈0,100
+At trial $t=0$, for all contexts $Q_{t=0}=50.$ For each option $i$, the subjective values $uR_{i}$ are encoded as the participants see the outcomes, that is, their objective value in points.
 
-## Range normalization model
+$$
+uR_{i}=R_{i},R_{i}\in0,100
+$$
 
-At trial t=0, for all contexts Qt=0=0.5. The subjective values uRi are encoded depending on the value of the other options, specifically the maximum and the minimum available rewards.(8)u(Ri)=Ri−min(R:)max(R:)−min(R:)
+#### Range normalization model
 
-where max(R:) and min(R:) are, respectively, the maximum and minimum outcomes presented in a given trial. In version c, where only the reward of the chosen option is displayed, the outcomes of unchosen options are replaced with the last seen outcomes for these options (Spektor et al., 2019).
+At trial $t=0$, for all contexts $Q_{t=0}=0.5.$ The subjective values $uR_{i}$ are encoded depending on the value of the other options, specifically the maximum and the minimum available rewards.
 
-## Divisive normalization model
+$$
+u(R_{i})=\frac{R_{i}−min(R_{:})}{max(R_{:})−min(R_{:})}
+$$
 
-At trial t=0, for all options Qt=0=0.5. The outcomes are encoded depending on the value of all the other options, specifically the sum of all available rewards.(9)uRi=Ri∑k=1nRk
+where $max(R:)$ and $min(R:)$ are, respectively, the maximum and minimum outcomes presented in a given trial. In version c, where only the reward of the chosen option is displayed, the outcomes of unchosen options are replaced with the last seen outcomes for these options (Spektor et al., 2019).
 
-where n is the number of outcomes presented in a given trial (n=2;n=3). In version c, where only the reward of the chosen option is displayed, the outcomes of unchosen options are replaced with the last seen outcomes for these options (Spektor et al., 2019).
+#### Divisive normalization model
 
-## Nonlinear range normalization model
+At trial $t=0$, for all options $Q_{t=0}=0.5.$ The outcomes are encoded depending on the value of all the other options, specifically the sum of all available rewards.
 
-At trial t=0, for all contexts Qt=0=0.5. The subjective values uR are encoded depending on the value of the other options, specifically the maximum and the minimum available rewards. This normalized outcome is then set to the power of ω, with 0<ω<+∞:(10)u(Ri)=(Ri−min(R:)max(R:)−min(R:))ω
+$$
+uR_{i}=\frac{R_{i}}{\sum_{k=1}^{n}R_{k}}
+$$
 
-where max(R:) and min(R:) are, respectively, the maximum and minimum outcomes presented in a given trial. In version c, where only the reward of the chosen option is displayed, the outcomes of unchosen options are replaced with the last seen outcomes for these options (Spektor et al., 2019).
+where $n$ is the number of outcomes presented in a given trial ($n=2;n=3$). In version c, where only the reward of the chosen option is displayed, the outcomes of unchosen options are replaced with the last seen outcomes for these options (Spektor et al., 2019).
 
-## Conditional, nonlinear range normalization model
+#### Nonlinear range normalization model
 
-Finally, in Experiments 3a and 3b only, we tested a more complex version of the model, which allowed for different weighting parameters for obtained (ωc) and forgone (ωu) outcomes. The weighting parameters were allowed same range as before.
+At trial $t=0$, for all contexts $Q_{t=0}=0.5.$ The subjective values $uR$ are encoded depending on the value of the other options, specifically the maximum and the minimum available rewards. This normalized outcome is then set to the power of $\omega$, with $0<\omega<+∞$:
 
-## Ex ante simulations
+$$
+u(R_{i})=(\frac{R_{i}−min(R_{:})}{max(R_{:})−min(R_{:})})^{\omega}
+$$
 
-The model predictions displayed in Figure 1C were obtained by simulating choices of artificial agents. The simulated choices were equivalent to those later performed by the participants, that is, 180 trials (45 per learning contexts) in the learning phase (where the deterministic outcomes were drawn from a normal distribution with variable means μϵ0,100 and fixed variance σ=4) and 180 trials (4 per comparison) in the transfer phase. The update rule for the option values is described in Equations 1 and 2. Predictions for each experiment were simulated for a set of 50 agents to match our number of participants per version. Each agent was associated with a set of parameters β,αc,αu for the inverse temperature, the learning rate of the chosen option, and the learning rate for unchosen options, respectively. The parameters were independently drawn from prior distributions, which we took to be Beta(1.1,1.1) for the learning rates and Gamma(1.2,5) for the inverse temperature (Daw et al., 2011). The value of the inverse temperature is irrelevant in the learning phase because the feedback is always complete, which means that the options should converge, in average, to their subjective average value independently of the choice, provided that the learning rates are different from 0. Moreover, in the transfer phase, to obtain the agents’ preferences based on the learned option values, we chose to use an argmax decision rule instead of a softmax decision rule. At each trial t in the transfer phase, comparing option a and option b, the probability of choosing option a is calculated as follows: (11)Pt(a)={1if Qf(a)>Qf(b)0.5if Qf(a)=Qf(b)0if Qf(a)<Qf(b)
+where $max(R_{:})$ and $min(R_{:})$ are, respectively, the maximum and minimum outcomes presented in a given trial. In version c, where only the reward of the chosen option is displayed, the outcomes of unchosen options are replaced with the last seen outcomes for these options (Spektor et al., 2019).
 
-where Qf is a vector of the final Q-values at the end of the learning phase.
+#### Conditional, nonlinear range normalization model
+
+Finally, in Experiments 3a and 3b only, we tested a more complex version of the model, which allowed for different weighting parameters for obtained ($\omega_{c}$) and forgone ($\omega_{u}$) outcomes. The weighting parameters were allowed same range as before.
+
+### Ex ante simulations
+
+The model predictions displayed in Figure 1C were obtained by simulating choices of artificial agents. The simulated choices were equivalent to those later performed by the participants, that is, 180 trials (45 per learning contexts) in the learning phase (where the deterministic outcomes were drawn from a normal distribution with variable means $\muϵ0,100$ and fixed variance $\sigma=4$) and 180 trials (4 per comparison) in the transfer phase. The update rule for the option values is described in Equations 1 and 2. Predictions for each experiment were simulated for a set of 50 agents to match our number of participants per version. Each agent was associated with a set of parameters $\beta,\alphac,\alpha_{u}$ for the inverse temperature, the learning rate of the chosen option, and the learning rate for unchosen options, respectively. The parameters were independently drawn from prior distributions, which we took to be Beta(1.1,1.1) for the learning rates and Gamma(1.2,5) for the inverse temperature (Daw et al., 2011). The value of the inverse temperature is irrelevant in the learning phase because the feedback is always complete, which means that the options should converge, in average, to their subjective average value independently of the choice, provided that the learning rates are different from 0. Moreover, in the transfer phase, to obtain the agents’ preferences based on the learned option values, we chose to use an argmax decision rule instead of a softmax decision rule. At each trial $t$ in the transfer phase, comparing option $a$ and option $b$, the probability of choosing option $a$ is calculated as follows:
+
+$$
+P_{t}(a)={1if Q_{f}(a)>Q_{f}(b)0.5if Q_{f}(a)=Q_{f}(b)0if Q_{f}(a)<Q_{f}(b)
+$$
+
+where $Q_{f}$ is a vector of the final $Q$-values at the end of the learning phase.

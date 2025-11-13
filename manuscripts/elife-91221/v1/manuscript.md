@@ -10,10 +10,10 @@
 
 ### Affiliations
 
-1. https://ror.org/05bnh6r87 Department of Neurobiology and Behavior, Cornell University Ithaca United States
-2. https://ror.org/05bnh6r87 Cornell Neurotech, Cornell University Ithaca United States
-3. https://ror.org/03m2x1q45 Department of Translational Neurosciences, University of Arizona College of Medicine Phoenix United States
-4. https://ror.org/03m2x1q45 Graduate Interdisciplinary Program in Neuroscience, University of Arizona Tucson United States
+1. Department of Neurobiology and Behavior, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))
+2. Cornell Neurotech, Cornell University Ithaca United States ([ROR:05bnh6r87](https://ror.org/05bnh6r87))
+3. Department of Translational Neurosciences, University of Arizona College of Medicine Phoenix United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
+4. Graduate Interdisciplinary Program in Neuroscience, University of Arizona Tucson United States ([ROR:03m2x1q45](https://ror.org/03m2x1q45))
 
 † Corresponding author
 
@@ -33,15 +33,23 @@ The question thus arises whether the activation of IL PV neurons suppresses or f
 
 ## Results
 
-## IL PV neurons signal active avoidance
+### IL PV neurons signal active avoidance
 
 We first asked how IL PV neurons respond during active avoidance behavior. To target this population for fiber photometry, we selectively expressed a genetically encoded calcium indicator in IL PV neurons by injecting AAV-CAG-Flex-GCaMP6f into IL in PV-Cre mice (Hippenmeyer et al., 2005; Chen et al., 2013). In control mice, we expressed GFP in IL PV neurons by injecting AAV-CAG-Flex-GFP. We implanted an optical fiber over IL to monitor calcium-dependent fluorescence, and recorded IL PV population activity via fiber photometry (Figure 1A and B; Cui et al., 2013; Gunaydin et al., 2014).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/91221/elife-91221-fig1-v1.jpg)
+
+**Figure 1.:** (A) Fiber photometry schematic. (B) GCaMP6f expression in IL PV neurons. Scale bar, 100 μm. (C) Active avoidance task schematic. The green box indicates presence of the tone, which lasts till animal crosses. (D) Example IL PV ΔF/F (red) and speed (black) during two successful avoidance trials. Vertical line indicates chamber crossing. Tone, light green. (E) IL PV ΔF/F during successful avoidance trials, data aligned to chamber crossing. White ticks: chamber crossing. Black ticks: tone onset. Same example mouse as D. (F) Example average IL PV ΔF/F (red) and speed (grey), aligned to chamber crossing (left) and movement initiation (right). Same example mouse as D. (G) Average IL PV ΔF/F before chamber crossing (pre, 4–2 s before cross) and during chamber crossing (peri, 1 s before to 1 s after crossing). **p<0.01, paired t-test. Shaded regions indicate SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/91221/elife-91221-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Average control IL GFP PV ΔF/F (red) and speed (grey), aligned to chamber crossing in avoidance (N=2 mice). (B) Average IL PV GCaMP6f ΔF/F before (pre, –2–0 s) and after (peri, 0–2 s) avoidance movement initiation. (C) IL PV GCaMP6f ΔF/F during successful avoidance trials, data aligned to tone onset. White ticks: tone onset. Black ticks: chamber crossing. (D) Example average IL PV GCaMP6f ΔF/F (red) and speed (grey), aligned to tone onsets. Same example mouse as C. (E) Example average IL PV GCaMP6f ΔF/F (red) and speed (grey) of long latency trials (avoidance latency longer than 3 s), aligned to tone onset. Same example mouse as C. (F) Average IL PV GCaMP6f ΔF/F before (pre, –4 to –2 s) and after (peri, 0–2 s) tone onset of long latency trials (avoidance latency longer than 3 s). (G) Correlation between maximum speed and peak IL PV GCaMP6f ΔF/F at avoidance. Each dot represents an avoidance trial, and trials from one animal are marked in the same color. (H) Distribution of slope of linear correlation between maximum speed and peak IL PV GCaMP6f ΔF/F at avoidance. One dot represents one animal. (I) Clustering of distribution of z score of maximum speed and z score of IL PV GCaMP6f ΔF/F at avoidance. (J–L) The same as (G–I), but the correlation was calculated between avoidance latency and peak IL PV GCaMP6f ΔF/F at avoidance. (M) Avoidance success rate over time. Success rate was calculated every 10 trials. (N) Peak IL PV GCaMP6f ΔF/F at avoidance (average ΔF/F –1–1 s around avoidance) every 10 trials over 2 days. ns = non-significant, **p<0.01; for B and F, paired t-test; for H and K, one-sample t-test; for N, one-way ANOVA. Shaded regions and error bars indicate SEM.
 
 We used a two-way signaled active avoidance paradigm (Figure 1C). When an auditory cue (constant tone at 12 kHz or 8 kHz) was played, mice were required to cross the midline of the behavioral testing chamber within 5 s of tone onset to avoid an impending foot shock. If mice crossed the chamber during this 5 s period, no foot shock was delivered and the trial was scored as a successful avoidance. If not, a 2 s foot shock was delivered. Mice could terminate the foot shock early by crossing the chamber, which was scored as an escape. The tone terminated at either successful avoidance or shock offset. Prior to avoidance training, mice received two tone-shock pairings to learn the association between the auditory cue and the foot shock.
 
 As IL inactivation impairs avoidance (Moscarello and LeDoux, 2013; Halladay and Blair, 2017), we predicted that the activity of inhibitory IL PV neurons would be low during successful avoidance trials. Contrary to expectations, we found that IL PV neural activity rose upon the initiation of avoidance movements and peaked at chamber crossing (Figure 1D–G and G: N=8 mice, p=0.0077, paired t-test; Figure 1—figure supplement 1A–F,B: N=8 mice, p=0.0013, paired t-test, F: N=8 mice, p=0.4682, paired t-test). The trial-by-trial variability in the amplitude of IL PV neural activity was not correlated with variability in the speed or latency of the avoidance movement (Figure 1—figure supplement 1G–L, H: N=8 mice, p=0.3541, one-sample t-test, K: N=8 mice, p=0.4132, one-sample t-test). IL PV neural activity during the avoidance movement was not attenuated by learning or repeated reinforcement (Figure 1—figure supplement 1M and N, N=8 mice, p=0.8886, one-way ANOVA).
 
-## IL PV neural activity reflects the avoidance movement, not the predictive tone
+### IL PV neural activity reflects the avoidance movement, not the predictive tone
 
 During successful avoidance trials, two events happen simultaneously: the mouse crosses the chamber, and a shock-predicting tone is terminated. To determine whether PV neural activity better reflects the avoidance movement or the termination of the predictive auditory sensory cue, we designed a version of the avoidance task with additional trial types to uncouple these events. Regular trials (80%) were interleaved with trials with shortened (10%) or lengthened (10%) tones (Figure 2A). In short-tone trials the tone lasted for only 1.5 s, and in long-tone trials the tone was not terminated until 1.5 s after successful avoidance (Figure 2A). IL PV neural activity at chamber crossing did not differ between regular and long-tone trials (Figure 2B and D, N=7 mice, p=0.9546, paired t-test). Usually, the chamber was not crossed in short-tone trials, so short-tone trials were not included in this analysis. PV neural activity at tone offset was significantly different among short-tone, regular, and long-tone trials (Figure 2C and E, N=7 mice, p=0.005, one-way repeated ANOVA. Multiple comparison, R and S, p=0.0045, R and L, p=0.0398, S and L, p=0.4620.). These results indicate that PV neural activity primarily reflects the avoidance movement and not tone offset.
 
@@ -51,25 +59,55 @@ During successful avoidance trials, two events happen simultaneously: the mouse 
 
 We extracted characteristic neural responses to each event without interference from other events close in time. We constructed a linear regression model to extract the isolated neural responses to chamber crossing and tone termination (Parker et al., 2016; Musall et al., 2019), and all major events were included in the model. We assumed (1) that neural responses would be similar for the same events and dissimilar for different events, and (2) neural responses to events can be summed up linearly to form the recorded signals. With these assumptions and through linear regression, isolated neural responses to each event were extracted. The model-extracted isolated neural response to tone offset was flat, while the isolated avoidance signal peaked at chamber crossing (Figure 2F and G). To further demonstrate that IL PV activity can be better accounted for by the action to avoid the shock than tone termination, we compared the explanatory power (R 2 , coefficient of determination) of the reduced model with shuffled time points to the full model. Shuffling the avoidance time points significantly reduced the explanatory power of the model (ΔR 2 different from zero, N=7 mice, p=0.0125, one-sample t-test), while shuffling the tone offset time points had no effect (Figure 2H, N=7 mice, p=0.0802, one-sample t-test). Thus, IL PV neural activity at chamber crossing reflects the avoidance behavior and not the cessation of the predictive auditory cue.
 
-## IL PV neural activity does not reflect movement to obtain rewards
+### IL PV neural activity does not reflect movement to obtain rewards
 
 IL PV neural activity rises during movement to avoid a predicted future shock (Figure 1E and F), but it is unclear whether this neural activity specifically reflects avoidance, or if IL PV neural activity would be elevated during any movement. If IL PV neural activity reflects locomotor activity, we would expect to see elevated neural activity during movement to obtain rewards. To test this idea, we recorded IL PV neuronal activity during a reward approach task, which mirrored the avoidance design in temporal structure, but shock omission on successful chamber crossing was replaced with reward delivery (Figure 3A). In this task, chamber-crossing movements to obtain a water reward were not associated with elevated IL PV neural activity (Figure 3B-E; E, N=7 mice, p=0.3003, paired t-test; Figure 3—figure supplement 1A-C, C: N=6 mice, p=0.0382, paired t-test; see Figure 1C-G for comparison).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/91221/elife-91221-fig3-v1.jpg)
+
+**Figure 3.:** (A) Reward approach task schematic. (B) Example IL PV ΔF/F (red) and speed (black) during two successful approach trials. Vertical line indicates chamber crossing. Tone, light green. (C) IL PV ΔF/F during successful approach trials, data aligned to chamber crossing. Black ticks: tone onset; white ticks: chamber crossing; magenta ticks: first licks. Same example mouse as B. (D) Example average IL PV ΔF/F (red) and speed (grey), aligned to chamber crossing (left). Same example mouse as B. (E) Average IL PV ΔF/F before chamber crossing (pre, 4–2 s before cross) and during chamber crossing (peri, 1 s before to 1 s after crossing). ns = non-significant, paired t-test. Shaded regions indicate SEM.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/91221/elife-91221-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Average IL PV ΔF/F (red) and speed (grey), aligned to chamber crossing in approach from PV::GFP mice. (N=2 mice). (B) Average IL PV ΔF/F (red) and speed (grey), aligned to initiation of movement for reward approach (N=6 mice). (C) Average IL PV ΔF/F before initiation of movement for reward approach (pre, 2–0 s before movement initiation) and after movement initiation (peri, 0 s to 2 s after movement initiation) (N=6 mice, p=0.0382, paired t-test). (D) Schematic of a modified reward approach task with reward omissions. (E) Average IL PV ΔF/F (top) and speed (bottom) of rewarded trials, aligned to the first lick after chamber crossing (N=5 mice).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/91221/elife-91221-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) OFT schematic. (B) Example IL PV GCaMP6f ΔF/F (red) and speed (black) during OFT under bright light (white shading) and dim light epochs (grey shading). (C) IL PV GCaMP6f ΔF/F during OFT, aligned to maximum speed of each movement epoch in OFT. White ticks: maximum speed of movement epoch. Same example mouse as B. (D) Example average IL PV GCaMP6f ΔF/F (red; purple) and speed (grey; dark blue), aligned to maximum speed of each movement epoch in OFT under bright lighting (red; grey) and under dim lighting (purple; dark blue). Same example mouse as B. (E) Average IL PV GCaMP6f ΔF/F before (pre, –4 to –2 s) and during (peri, –1–1 s) peak movement under bright light (red) and dim light (blue). (F) Average control IL PV GFP ΔF/F (red; purple) and speed (grey; dark blue), aligned to the maximum speed of each movement epoch in OFT under bright light (red; grey) and dim light (purple; dark blue) (N=2 mice). Shaded regions indicate SEM.
 
 We observed an elevation of IL PV neuronal activity after chamber crossing when the animals started to consume the water reward (Figure 3C, magenta dots, and Figure 3D). To test whether this transient increase in IL PV neuron activity after chamber crossing reflects water consumption or the preceding approach behavior, we introduced randomized water-omission trials in 10% of the trials (Figure 3—figure supplement 1D–E). We found that the PV neuron signal rose both when water was received and when the water reward was omitted, and increases in IL PV activity preceded the first lick to consume water reward delivered after a successful crossing (Figure 3—figure supplement 1E). We speculate that, rather than a reward signal related to water consumption, this signal may reflect the suppression of the habitual chamber-crossing movement in the approach task when the mouse nears the lick port.
 
 To further investigate whether elevated IL PV neuronal activity reflected avoidance or locomotion, we recorded IL PV activity in an open field test (OFT) where animals were allowed to run freely without any defined task structure (Figure 3—figure supplement 2A and B). When we aligned IL PV activity to movement peaks, no elevated activity was observed (Figure 3—figure supplement 2C). We varied the overhead lighting and found that IL PV neurons showed no elevated activity during movement under either a bright ceiling light, which is a more aversive setting to the mice, or a dim ceiling light, which is more comforting to the mice (Figure 3—figure supplement 2D and E, N=7 mice, bright light: p=0.8705, dim light: p=0.1475, paired t-test; Figure 3—figure supplement 2F). It should be noted that the OFT is a relatively neutral context, regardless of lighting conditions, when compared to the appetitive reward approach or aversive active avoidance.
 
-## IL PV neural activity becomes positively correlated to movement after shock
+### IL PV neural activity becomes positively correlated to movement after shock
 
 In environments with different emotional valence animals engage in different suites of behaviors. For example, animals in threatening environments spend more time freezing and less time exploring than animals in rewarding environments. We hypothesized that IL neural activity may become positively correlated with movement when animals learn that their environment is threatening, and must suppress behaviors such as freezing in order to engage in behaviors such as exploration.
 
 To test this hypothesis, we analyzed the recordings made on the first day of active avoidance training to determine how movement-related IL PV neural activity evolves as animals learn that the environment is threatening. On the first session, we habituated animals to the chamber for 5 min before the task started. During this habituation period, IL PV activity was not positively correlated with movement (Figure 4A; Figure 4—figure supplement 1A), similar to our observations in appetitive and neutral contexts (Figure 3; Figure 3—figure supplement 1E–I). During avoidance behavior, we found that IL PV activity peaked during movements in the inter-trial interval (Figure 4B; Figure 4—figure supplement 1A). Considering that animals minimize their movements in threatening environments, movement outside of the tone-evoked trial could require suppression of this natural inclination.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/91221/elife-91221-fig4-v1.jpg)
+
+**Figure 4.:** (A–B) Example IL PV ΔF/F (red) and speed (black) during (A) habituation prior to the first-ever shock exposure, and (B) the intertrial interval after avoidance training. (C–D) Evolution of cross-covariance between IL PV activity and speed over trials (upper panel, black) and corresponding average avoidance success rate across animals (bottom panel, cyan) (C) on the first day of avoidance training (N=7 mice) and (D) during approach in well-trained mice (N=6 mice, green shading marks the time in chamber before the task [pre-task]). Error bars indicate SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/91221/elife-91221-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Evolution of cross-covariance between movement speed and PV activity in habituation and inter-trial intervals on the first day of avoidance training (N=7 mice). (B) Evolution of cross-covariance between movement speed and PV activity in habituation and inter-trial intervals of well-trained animals during the approach task (N=6 mice).
+
 The correlation between movement and IL PV neural activity during the inter-trial interval did not emerge until after animals experienced the first foot shock (Figure 4C; Figure 4—figure supplement 1A). The correlation between movement and IL PV neuronal activity emerged immediately after receiving the first shock and did not increase during the learning process, suggesting that avoidance learning is not necessary for the correlation between movement and IL PV neural activity to emerge. The lack of positive correlation between activity and movement in the habituation phase (Figure 4A–C; Figure 4—figure supplement 1A) of the avoidance task is similar to what was observed throughout the approach task (Figure 4D; Figure 4—figure supplement 1B). These data show that the positive correlation between movement and PV neuron activity emerges immediately after animals learn that their current environment is threatening, when movement requires a suppression of freezing.
 
-## Inhibiting IL PV neural activity delays avoidance
+### Inhibiting IL PV neural activity delays avoidance
 
 To investigate the causal role of IL PV neural activity in active avoidance, we bilaterally inhibited IL PV neurons by expressing Cre-dependent halorhodopsin (AAV5-EF1α-DIO-eNpHR; control animals: AAV5-EF1α-DIO-eYFP) in PV-Cre mice (Figure 5A and B). We used the same avoidance and approach tasks described above (Figure 1A; Figure 3A), and introduced interleaved simulation blocks where IL PV neurons were optogenetically inhibited during the interval from 0.5 to 2.5 s after tone onset (Figure 5C). Inhibiting IL PV neuronal activity delayed the avoidance movement (Figure 5D–G; Figure 5—figure supplement 1A and B; Video 1) but did not delay the movement for water reward in the approach task (Figure 5H–K; Figure 5—figure supplement 1C and D) or the speed of voluntary locomotion in the OFT (Figure 5L–O, dim OFT: interaction between opsins and stimulation: N=8 NpHR mice, N=5 eYFP mice, p=0.7636, two-way ANOVA; bright OFT: interaction between opsins and stimulation: N=8 NpHR mice, N=5 eYFP mice, p=0.7469, two-way ANOVA).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/91221/elife-91221-fig5-v1.jpg)
+
+**Figure 5.:** (A) Optogenetic schematic. (B) NpHR-eYFP expression in IL PV neurons in a PV-Cre mouse. Scale bar: 200 μm. (C) Optogenetic inactivation schematic. Interleaved simulation blocks were introduced, with optogenetic inhibition of IL PV neurons 0.5–2.5 s after tone onset. (D) Speed of NpHR-expressing mice during avoidance with (red) and without (dark brown) illumination. (E) Speed of NpHR- and eYFP-expressing mice, averaged over the laser stimulation period, with and without illumination. (F) Distribution of crossing latencies during avoidance in NpHR-expressing animals with (red) and without illumination (brown). (G) Ratio of illuminated/non-illuminated chamber crossing probabilities. (H–K) Same as (D–G) for approach task. (L–M) Same as (D–E) but for OFT with dim light. (N–O) Same as (L–M) but for OFT with bright light. ns = nonsignificant, *p<0.05, **p<0.01; for (E), (I), (M), and (O), two-way ANOVA interaction term; for (G) and (K), unpaired t-test. Shaded regions indicate SEM.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/91221/elife-91221-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Speed of eYFP-expressing mice during avoidance with (red) and without (dark brown) illumination. (B) Distribution of crossing latencies during avoidance in eYFP-expressing animals with (red) and without illumination (brown). (C–D) Same as (A–B) for approach. (E) Freezing probabilities of NpHR-expressing animals during avoidance with (red) and without (dark brown) illumination. (F) Difference in freezing probabilities between with (on) and without (off) illumination in NpHR-expressing mice (red) and in eYFP-expression mice (grey). (G) Difference in freezing probabilities, averaged over the laser stimulation period, between with (on) and without (off) illumination in NpHR-expressing mice (red) and in eYFP-expression mice (grey). (H) Change in ratio of freezing duration/avoidance latency of NpHR-expressing and eYFP-expression mice during illumination compared to non-illumination. (I) Crossing latencies during avoidance in NpHR-expressing mice, grouped by relative position prior or within a stimulation block. (J) Average crossing latencies of all non-illuminated trials (off), 1st trials (1st stim) and 2nd-6th trials in illuminated blocks (2-6th stim). (K) Crossing latencies during avoidance in NpHR-expressing mice, grouped by relative position within or after a stimulation block. (L) Average crossing latencies of all illuminated trials (stim), 1st trials (1st off) and 2nd-6th trials (2-6th off) in non-illuminated blocks. (M) Post-crossing optogenetic inactivation schematic. (N) Speed of NpHR-expressing mice during avoidance with (red) and without (dark brown) illumination. (O) Same as (N), but the y-axis was plotted on a log scale. (P) Change in speed of NpHR-expressing and eYFP-expression mice during illumination (0–2 s from avoiding chamber crossing) compared to non-illumination trials. (Q) The latency of the first trials in stimulation blocks is compared to the latency of the second trials in stimulation blocks, and the latency of the first trials after stimulation blocks is compared to the latency of the second trials after stimulation blocks. ns = non-significant, *p<0.05, **p<0.01; for G and H, unpaired t-test; for J, L, and Q, paired t-test; for P, two-way ANOVA interaction term. Shaded regions and error bars indicate SEM.
+
+![Video 1.](https://cdn.elifesciences.org/articles/91221/elife-91221-video1.mp4.jpg)
 
 Both the speed of the avoidance movement (Figure 5D and E, significant interaction between opsin and stimulation, N=8 NpHR mice, N=5 eYFP mice, p=0.0281, two-way ANOVA) and the probability of successful avoidance (Figure 5F and G, N=8 NpHR mice, N=5 eYFP mice, p=0.0058, unpaired t-test) were reduced by suppression of IL PV neurons. The speed of movement and the probability of successful reward delivery were not affected in the reward approach task (speed: Figure 5H and I, interaction between opsin and stimulation, N=8 NpHR mice, N=5 eYFP mice, p=0.479, two-way ANOVA; probability of approach: Figure 5J and K, N=8 NpHR mice, N=5 eYFP mice, p=0.1204, unpaired t-test). This suggests that IL PV neuronal activity is not just correlated with avoidance behavior but plays a causal role. By further analyzing the video data, we found that freezing during tone presentation increased (Figure 5—figure supplement 1E–G, G: N=8 NpHR mice, N=5 eYFP mice, p=0.0175, unpaired t-test; Video 1). In addition, the ratio of freezing duration to avoidance latency increased during IL PV inhibition (Figure 5—figure supplement 1H, N=8 NpHR mice, N=5 eYFP mice, p=0.0302, unpaired t-test; Video 1), suggesting that increased avoidance latency was primarily due to an increase in freezing. This finding supports the idea that IL PV neural activity promotes avoidance by suppressing freezing (Murphy et al., 2005; Hardung et al., 2017).
 
@@ -95,15 +133,15 @@ Our findings have revealed the role of IL PV neural activity in facilitating fle
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All procedures conformed to guidelines established by the National Institutes of Health and have been approved by the Cornell University Institutional Animal Care and Use Committee. PV-Cre mouse line (B6.Cg-Pvalbtm1.1(cre)Aibs/J, RRID:IMSR_JAX:012358) acquired from The Jackson Laboratory (Bar Harbor, ME) was backcrossed to C57BL/6 J mice (RRID:IMSR_JAX:000664). Postnatal six weeks to ten months old PV-Cre male mice were used for all photometry and optogenetics experiments. All mice were housed in a group of two to five under 12 hr reverse light-dark cycle (dark cycle: 9 a.m.-9 p.m.).
 
-## Viral vectors
+### Viral vectors
 
 In the photometry experiment, we used AAV1-CAG-Flex-GCaMP6f (Titer: 1.33×1013, Penn Vector Core, 100835-AAV1, Philadelphia, PA) for experimental animals and AAV9-CAG.Flex.GFP (Titer: 3.7×1012, UNC Vector Core, Chapel Hill, NC) for control. All the viral vectors used in photometry experiment were diluted in eightfold PBS before injection. In the optogenetics experiment, we used AAV5-EF1α-DIO-eNPHR3.0 (Titer: 4×1012, UNC Vector Core, Chapel Hill, NC) for experimental animals and AAV5-EF1α-DIO-EYFP (Titer: 6.5×1012, UNC Vector Core, Chapel Hill, NC) for control. All the viral vectors used in optogenetics experiment were used without dilution.
 
-## Surgical procedures
+### Surgical procedures
 
 Mice were put under deep anesthesia with isoflurane (5%). Fur above the skull was trimmed, and the mice were placed in a stereotaxic frame (Kopf Instrument, Tujunga, CA) with a heating pad to prevent hypothermia. Isoflurane level was kept between 0.8 to 2% throughout the surgery. Ophthalmic ointment was applied to protect the eyes. 100 μL 1 mg/ml Baytril (enrofloxacin) was given subcutaneously, and 100 μL 2.5 mg/ml bupivacaine was injected subdermally at the incision site. The scalp was disinfected with betadine and alcohol. The skull was exposed with a midline incision. A craniotomy was made above the medial prefrontal (mPFC) cortex.
 
@@ -113,102 +151,110 @@ For optogenetics animals, virus (AAV5-EF1a-DIO-eNpHR3.0, Lot #: 4806 G, titer: 4
 
 After the fiber implant, a layer of metabond (Parkell, Inc, Edgewood, NY) and dental acrylic (Lang Dental Manufacturing, Wheeling, IL) was applied to hold the implant in place. Buprenorphine (0.05 mg/kg), carprofen (5 mg/kg), and lactated ringers (500 μL) were administered subcutaneously after surgery. Photometry recording was done no earlier than three weeks later to allow for virus expression.
 
-## Fiber photometry
+### Fiber photometry
 
 Fiber photometry was implemented with a fiber photometry console (Doric Lenses, Quebec, Canada). An FC-FC optic fiber patch cord (400 μm diameter, 0.48NA, Doric Lenses, Quebec, Canada) was connected to implanted fiber with a zirconia sleeve. 405 nm and 475 nm were measured for calcium-independent and calcium-dependent GCaMP signals and were measured with digital lock-in frequency to the input at 208 Hz and 530 Hz, respectively. Photometry signals were collected at 12 kHz and filtered with a 12 Hz low pass filter.
 
 For photometry animals, four GCamp6f animals were tested only on active avoidance. Seven GCamp6f animals and two GFP control animals were tested in the following order: open field test, reward approach test, reward approach with omission (except two GFP and two GCamp6f animals), active avoidance, active avoidance with shortening and extended tone, active avoidance extinction.
 
-## Open field test (photometry)
+#### Open field test (photometry)
 
 A 46 W x 46 L x 30.5 H (cm) white rectangular box made with PVC was used for an open field test. The ambient light was set for each 2 minute block in the order of D(dim)-B(bright)-D-B-D-B-D-B-D-B.
 
-## Reward approach (photometry)
+#### Reward approach (photometry)
 
 The reward approach task was performed in a 17.25” W x 6.75” D x 10” H metal rectangular shuttle box (MedAssociates, Fairfax, VT) divided into two equal compartments by Plexiglas semi-partitions, which allowed animals to move freely between compartments. A water sprout was located at the end of each compartment, and a syringe pump was connected to the sprout for water delivery. Licks were detected with a contact-based lickometer (MedAssociates, Fairfax, VT). Animals were water restricted prior to training. Body weight was checked daily and was maintained above 80% baseline. Animals were trained to first learn the association between tone and reward-licking at the waterspout in the opposite compartment, by playing a tone for an indefinite length of time (12 kHz or 8 kHz at 70–80 dB, counterbalancing between approach and avoidance) until successful reward collection. When an animal crossed the chamber in response to a tone, water was delivered in the goal compartment, and an indicator light above the targeted water sprout was terminated. After two to three days of training, the reward-indicating lights were removed. Tone duration was set to be turned off either at the chamber crossing or at maximum duration. Animals had to cross within the maximum duration of tone for successful water delivery. The maximum tone duration was shortened as animals progressed and were eventually set to 5 s. The inter-trial interval was pseudo-randomized at an average of 40 s. Animals were allowed to perform 30–50 trials each day during training and 100 trials on the recording day. The training lasted two to three weeks until animals reached a 70% success rate with a 5 s window. Animals were recorded the day after criterion was reached for 100 trials.
 
-## Reward approach with 10 % omission (photometry)
+#### Reward approach with 10 % omission (photometry)
 
 After training and recording in reward approach, animals were then switched to a 10% omission paradigm, where water was not delivered on 10% of the successful crossing trials. The omission trials were selected pseudo-randomly at a 10% chance.
 
-## Active avoidance (photometry)
+#### Active avoidance (photometry)
 
 Active avoidance was performed in a 14” W x 7” D x 12” H metal rectangular shuttle box (Coulbourn Instruments, Holliston, MA) divided into two equal compartments by Plexiglas semi-partitions. Animals were habituated to the chamber for at least 30 min, the day before training. On the first day, animals received five 5-s habituation tones and two Pavlovian conditionings (a 7-s tone and a 2-s shock at the last 2-s of tone) prior to avoidance trials. The same frequency and amplitude of tone were used for habituation tones, Pavlovian tones, and avoidance tones (12 kHz or 8 kHz at 70–80 dB, counterbalancing between approach and avoidance). After habituation and Pavlovian trials, the task was switched to avoidance trials where animals could prevent the shock by crossing the chamber within 5 s from the onset of the tone. Otherwise, an electrical foot shock (0.3 mA) would be delivered through the grid floor for a 2 s maximum before the animal crossed the chamber to escape the shock. The tone was terminated when animals crossed the chamber or after 7 s. The inter-trial interval was pseudo-randomized for an average of 40 s. Animals performed 100 avoidance trials per day for 2–3 days or until reaching 70% successful rate. Photometry data was recorded during training.
 
-## Active avoidance with 10% shortened and extended tones (photometry)
+#### Active avoidance with 10% shortened and extended tones (photometry)
 
 After active avoidance recording, animals were then recorded in an alternative version of active avoidance with 10% shortened and extended tones. The only change in this alternative version was to include 10% trials with shortened tones which were turned off after 1.5 s regardless, and 10% trials with extended tones, which were extended for 1.5 s after successful avoidance. The shortened and extended trials were selected pseudo-randomly at 10% chance for each trial. No shock was delivered in any shortened-tone and extended-tone trials.
 
-## Optogenetics
+### Optogenetics
 
 In the behavioral experiment, two external FC-FC optic fiber patch cords (200 μm diameter, 0.22 NA, Doric Lenses, Quebec, Canada) were connected to two implanted fibers, respectively, each with a zirconia sleeve. These patch cords were then connected to a 1x2 fiber-optic rotary joint (FRJ_1x2i_FC-2FC_0.22, Doric Lenses, Quebec, Canada) for unrestricted rotation and to prevent tangling. Another FC-FC optic fiber patch cord was used to connect the rotary joint to a 100 mW 594 nm diode-pumped solid-state laser (Cobolt Mambo 100 594 nm, HÜBNER Photonics, Sweden) for optogenetic stimulation. The power of the laser was programmed by the software and fine-tuned by a continuous filter (NDC-50C-2M, Thorlabs, NJ, USA) to 10 mW at the end of the patch cord (~71.59 mW/mm2 at the end of the implanted fiber). The stimulation timing was controlled by a shutter (SRS470, Stanford Research System, Sunnyvale, CA) and a Master-8 stimulus generator (A.M.P.I., Jerusalem, Israel). In avoidance and approach, a total of 72 trials were divided into 12 alternating blocks (OFF-ON-OFF…), and 2 s continuous stimulation was delivered 0.5 s after the onset of a tone during stimulation blocks. In the open field test, a 32 min test was divided into eight alternating stimulation blocks (OFF-ON-OFF…), and a 2 s continuous stimulation was delivered every 40 s during the stimulation blocks.
 
 For optogenetics animals, eight experimental and five controls were tested in the following order: open field test under dim light, reward approach, active avoidance, open field test under bright light.
 
-## Reward approach (optogenetics)
+#### Reward approach (optogenetics)
 
 Animals were trained using the same conditioning and chamber and tested in the same chamber as mentioned in Reward Approach (Photometry). After animals reached the learning criteria (70% success rate with 5 s window), animals were then trained with a patch cord attached for another 1–2 days to habituate the animals to a patch cord. On the test day, 72 trials were divided into 12 alternating blocks (OFF-ON-OFF……), and a 2 s continuous stimulation was delivered 0.5 s after the onset of tone during stimulation blocks, regardless of the behavioral outcome.
 
-## Active avoidance (optogenetics)
+#### Active avoidance (optogenetics)
 
 Animals were trained using the same conditioning and chamber, and were tested in the same chamber as mentioned in Behavior Paradigm: Active Avoidance (Photometry). After animals reached the learning criteria (70% success rate with 5 s window), animals were then trained with a patch cord attached for another 1–2 days to habituate the animals to a patch cord. On the test day, 72 trials were divided into 12 alternating blocks (OFF-ON-OFF……), and a 2 s continuous stimulation was delivered 0.5 s after the onset of tone during stimulation blocks, regardless of the behavioral outcome.
 
-## Open field test (optogenetics, dim light)
+#### Open field test (optogenetics, dim light)
 
 A 26 W x 48 L x 21 H (cm) clean rectangular rat homecage with mouse homecage bedding placed in a sound-proof box (MedAssociates, Fairfax, VT) lit by a red LED strip was used for an open field test. Mice were first habituated with their cagemates, food, and water in the arena for an hour the day before testing. During the test, food and water were removed from the arena, and each mouse was tested individually. At the start of the experiment, mice were first connected to the patch cord fiber and then placed in the center of the arena. A 32-min test was divided into eight alternating stimulation blocks (OFF-ON-OFF……), a 2-s continuous stimulation was delivered every 40 s during the stimulation blocks.
 
-## Open field test (optogenetics, bright light)
+#### Open field test (optogenetics, bright light)
 
 A 46 W x 46 L x 30.5 H (cm) white rectangular box made with PVC was used for an open field test under bright room light. Mice were first connected to the patch cord fiber and then placed in the center of the arena at the start of the experiment. A 32-min test was divided into eight alternating stimulation blocks (OFF-ON-OFF……), a 2-s continuous stimulation was delivered every 40 s during the stimulation blocks.
 
-## Perfusion and histology verification
+### Perfusion and histology verification
 
 After experiments, animals were deeply anesthetized with pentobarbital at a dose of 90 mg/kg and perfused with 20 ml PBS, followed by 20 ml 4% paraformaldehyde solution. Brains were soaked in 4 °C 4% paraformaldehyde for 20 hr and then switched to 30% sucrose solution for 20–40 hr until the brains sank. Brains were sectioned coronally (40–50 μm) with a freezing microtome and then washed with PBS and mounted with PVA-DABCO. Images were acquired using a Zeiss confocal with 5 x air, 20 x water, and 40 x water objectives.
 
-## Statistics and data analysis
+### Statistics and data analysis
 
 All data analysis and statistical testing were performed using custom-written scripts in MATLAB 2019 (MathWorks, Natick, MA). For all behaviors, location and movement were tracked using Ethovision XT10 (Noldus Leesburg, VA).
 
 Error bars and shaded areas in figures report standard error of the mean (s.e.m.). All statistical tests were two-tailed. Within-subject analyses were performed using paired t-test, and between-subject analyses were performed using an unpaired t-test.
 
-## Photometry signal analysis
+### Photometry signal analysis
 
-ΔF/F was calculated with equation (Equation 1). The signal measured from the 405 nm reference channel was linearly fitted to the 475 nm signal and was subtracted from the 475 nm signal. The difference was then divided by an exponential function (a∙e−b+c) fitted to 475 nm signal.(1)ΔFF=475nmsignal−fitted405nmsignalexponentialdecayfittedto475nmsignal×100
+ΔF/F was calculated with equation (Equation 1). The signal measured from the 405 nm reference channel was linearly fitted to the 475 nm signal and was subtracted from the 475 nm signal. The difference was then divided by an exponential function ($a∙e^{−b}+c$) fitted to 475 nm signal.
 
-## Open field test analysis
+$$
+\frac{ΔF}{F}=\frac{475nmsignal−fitted405nmsignal}{exponentialdecayfittedto475nmsignal}\times100
+$$
+
+### Open field test analysis
 
 Mouse speed was first grouped into three clusters, nonmovement, low movement, and high movement, using k-means. The movement threshold was thus defined by the lowest speed of the low movement cluster. Then the peak speed of the movement was detected by finding local maxima with absolute peak value larger than a threshold and at least 5 cm/s larger than the baseline. (This was performed using findpeak function in MATLAB and with ‘MinPeakProminence’ set to 5 and with ‘MinPeakHeight’ set to movement threshold.) Movement initiation was defined by when the speed first went above 10% of the peak speed within 2 s before the epoch. Only epochs with at least 1 s of less than threshold speed before movement initiation were included. Group photometry analyses compared mean ΔF/F 4–2 s before and 2 s around the peak speed of the movement. Optogenetic analyses compared speed differences of NpHR- and eYFP-expressing mice between mean speed during the 2-s stimulation period and mean speed at the 2-s period right before stimulation.
 
-## Approach task and active avoidance task
+### Approach task and active avoidance task
 
-## Group photometry analysis
+#### Group photometry analysis
 
 Group photometry analyses compared mean ΔF/F 4–2 s before and 1 s before and after chamber crossing, and only successful trials where animals crossed the chamber within a 5-s window were included. In the active avoidance task, movement initiation was defined by when the speed first went above 10% of the speed at the chamber crossing within 2 s before the chamber crossing. In Figure 1—figure supplement 1F, G and H, the maximal ΔF/F around crossing was calculated by taking the maximum ΔF/F from 0.5 s before to 1 s after avoidance chamber crossing of each trial, and the corresponding maximal speed around crossing was calculated by taking the maximum speed 0.5 s before and after avoidance chamber crossing.
 
-## Movement detection
+#### Movement detection
 
 Movement epochs in habituation and inter-trial intervals in avoidance tasks were detected by finding local maxima with absolute peak value larger than 10 cm/s and at least 3 cm/s larger than the baseline in smoothed speed traces. This was performed using findpeak function in MATLAB and with ‘MinPeakProminence’ set to 3 and with ‘MinPeakHeight’ set to 10. The speed traces were smoothed with Gaussian-weighted moving average with a window of seven frames by MATLAB function smoothdata before the movement epoch detection. (The video was recorded in 15 frames per second). The movement was excluded if it happened within 5 s after another movement. Habituation was defined as the time starting from when the animals were placed in the chamber to the start of the first Pavlovian conditioning trials on the first day of training.
 
 Movement in the intertrial intervals was measured from 5 s after the end of the trial to 5 s before the start of the next trial in a well-learned session. Movement initiation was defined by when the speed first went above 10% of the peak speed within 2 s before the epoch.
 
-## Group optogenetic speed and crossing probabilities analysis
+#### Group optogenetic speed and crossing probabilities analysis
 
 Optogenetic speed analyses compared speed differences of NpHR- and eYFP-expressing mice during the 2-s stimulation period (0.5 s to 2.5 s from the tone onset) in stimulation trials to the same period in non-stimulation trials. Trials in which animals crossed before 0.5 s after tone onset or before the laser stimulation onset were excluded from speed analyses (Figure 5D-E, H-I, Figure 5—figure supplement 1A and C). To plot a histogram of crossing probabilities under optogenetic stimulation, we first binned the crossing latency of all trials into 0.25 s bins ranging from 0 to 7 s and then normalized by the total number of trials to obtain crossing probability. Optogenetic crossing probability analyses compared differences between NpHR- and eYFP-expressing mice in crossing probability during the 2-s stimulation period (0.5 s to 2.5 s from the tone onset) in stimulation trials to non-stimulation trials.
 
-## Group optogenetic block structure analysis
+#### Group optogenetic block structure analysis
 
 In Figure 5—figure supplement 1I—L, total of 72 active avoidance trials with 12 off-on alternating stimulation blocks, pattern described in Figure 5A, were sectioned into six chunks, each chunk containing six trials before stimulation and six trials with stimulation. Each data point at each time point is the average latency across six chunks of all NpHR-expressing mice. In Figure 5—figure supplement 1K—L, a total of 72 active avoidance trials with 12 off-on alternating stimulation blocks, pattern described in Figure 5A, were then sectioned into five chunks, each chunk containing six trials with stimulation and six trials after stimulation. Due to the stimulation pattern, first ‘off’ block and last ‘on’ blocks were not included. Each data point at each time point is the average latency across five chunks of all NpHR-expressing mice. In Figure 5—figure supplement 1Q, a total of 72 active avoidance trials were sectioned into five chunks; each chunk contains three trials before stimulation, six trials with stimulation, and three trials after stimulation. Each point plotted on the graph is the average across five chunks and of all NpHR-expressing animals.
 
-## Freezing detection
+### Freezing detection
 
 Freezing is detected from video based on changes in pixels by a MATLAB function written by David A. Bulkin and Ryan J. Post. To detect the freezing of animals, we used the code first to convert the video into grayscale, crop the window to include only the bottom of the chamber, and then set the pixels belonging to a mouse to 1 s by thresholding pixel values below 27 out of 255. Once the pixels belonging to a mouse were assigned, the code compared the number of pixels changed between frames to get raw movement data. Raw movement data was then filtered with a bandpass filter between 0.01 and 0.9 to ensure the frequency of switching between freezing and non-freezing states matches with the behavior observed. Freezing was then marked when less than 190 mouse pixels were changed in filtered movement data. For Figure 5—figure supplement 1H, duration of freezing was calculated by the total number of frames when the animals were detected freezing during avoidance latency.
 
-## Cross-covariance between photometry signals and speed
+### Cross-covariance between photometry signals and speed
 
 Photometry signals were first filtered by a lowpass IIR filter with half-power frequency at 7 Hz and then interpolated to match video recording timeframes (15 Hz). Each segment included photometry and speed data from 5 s after tone offset to 5 s before the next tone onset. Cross-covariance was calculated with an offset of ±2 s for each segment by the xcov function in MATLAB. The cross-covariance value with the largest absolute value within the offset range was selected to be the cross-covariance value of the segment (Seo et al., 2019).
 
-## Linear regression model
+### Linear regression model
 
-The calcium signal was modeled as a linear combination of characteristic neural responses to each sensory or action event following the scheme of Musall et al., 2019 and Parker et al., 2016 (Musall et al., 2019; Parker et al., 2016). These events included tone onset, tone offset, avoidance, escape, shock onset, and chamber crossing in the intertrial intervals. The model can be written as the following equation, where ΔF/F (t) is the recorded calcium dynamics at time t, ki and ji are the kernel coefficients of event type I, τ is the relative time points in a kernel, n1 is the total number of action events, and n2 is the total number of sensory events. Each event kernel ka or jb was placed at the time point where the event a or b occurred. For action events, including avoidance, escape, and chamber crossing in intertrial intervals, we used kernels (ki) ranging from 1 s before to 2 s after the event to cover the action from initiation to termination. For sensory events, including tone onsets, tone offsets, and shock onsets, kernels (ji) started right at the moment where the event happened and lasted for 2 s afterwards to model the sensory responses. (2)ΔF/F(t)=∑i=1n1(∫τ=−1s2ski(τ)∗(t−τ)dτ)+∑i=1n2(∫τ=0s2sji(τ)∗(t−τ)dτ)+error
+The calcium signal was modeled as a linear combination of characteristic neural responses to each sensory or action event following the scheme of Musall et al., 2019 and Parker et al., 2016 (Musall et al., 2019; Parker et al., 2016). These events included tone onset, tone offset, avoidance, escape, shock onset, and chamber crossing in the intertrial intervals. The model can be written as the following equation, where ΔF/F (t) is the recorded calcium dynamics at time t, ki and ji are the kernel coefficients of event type I, τ is the relative time points in a kernel, n1 is the total number of action events, and n2 is the total number of sensory events. Each event kernel ka or jb was placed at the time point where the event a or b occurred. For action events, including avoidance, escape, and chamber crossing in intertrial intervals, we used kernels (ki) ranging from 1 s before to 2 s after the event to cover the action from initiation to termination. For sensory events, including tone onsets, tone offsets, and shock onsets, kernels (ji) started right at the moment where the event happened and lasted for 2 s afterwards to model the sensory responses.
+
+$$
+ΔF/F(t)=\sumi=1n1(\int_{\tau=−1s}^{2s}k_{i}(\tau)∗(t−\tau)d\tau)+\sumi=1n2(\int_{\tau=0s}^{2s}j_{i}(\tau)∗(t−\tau)d\tau)+error
+$$
 
 ΔF/F (t) was modeled as the linear combination of all event kernels. Given the event occurrence time points of all event types, we can use linear regression to decompose characteristic kernels for each event type. Kernel coefficients of the model were solved by minimizing the mean square errors between the model and the actual recorded signals. To prove that kernel ki is an essential component for the raw calcium dynamics, we compared the explanation power of the full model to the reduced model where the time points of the occurrence of event ki were randomly assigned. Thus, the kernel coefficients should not reflect the response to the event in the reduced model. The coefficients of determination (R2) were compared between the reduced model and the full model to estimate the unique contribution of certain events to the explanation power of the model. More details of the methods can be viewed in Musall et al., 2019; Parker et al., 2016.

@@ -31,9 +31,29 @@ While the ABRF survey focused on the implementation of NIH guidelines on rigor a
 
 Our survey was sent to the leaders of 1000 core facilities in different fields of the life sciences in Europe. When ranked by types of facility, microscopy and FACS facilities were top, followed by genomics and proteomics. In total, we received 253 complete forms from over 30 types of facility, which differ in the techniques and expertise they offer (Figure 1—figure supplement 1). They also vary in the number of employees and users, and in the amount of data generated (Figure 1—figure supplement 2).
 
-## Full service versus self-service facilities
+### Full service versus self-service facilities
 
 Core facilities can be classified in three distinct groups depending on who performs the experiments at the facility: (a) facility staff; (b) external researchers or users; (c) facility staff and users. We call full-service facilities those offering an “all-inclusive service”, where facility staff execute the experiment (with or without data analysis). Self-service facilities provide and maintain an infrastructure where users have access to equipment, training and expert advice. (Such facilities were called user laboratories in Meder et al., 2016). At hybrid-service facilities experiments are performed by facility staff and users. Most of the responses to our survey came from hybrid-service facilities, followed by full-service facilities and then self-service facilities (Figure 1A).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/62212/elife-62212-fig1-v2.jpg)
+
+**Figure 1.:** (A) Distribution of the surveyed core facilities (CFs) by their operating mode. (B) Fraction [%] of facilities providing different services along the research process. The overall fraction for all CFs, regardless of their operating mode, is depicted in black; different colours represent different operating modes.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/62212/elife-62212-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** NMR, nuclear magnetic resonance.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/62212/elife-62212-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Distribution of CFs by number of employees (A), number of users per month (B), and amount of data produced in a month (C).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/62212/elife-62212-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Facilities were asked to rate the overall importance of training on a scale of 1 to 5. (B) Facilities were asked to list the most important aspects of the training they provide. The results were normalized for each operating mode.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/62212/elife-62212-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** Facilities were asked who performs the analysis of the raw data generated in the facility. The results were normalized for operating mode.
 
 In addition to the distinction of who actually performs the experiments, the service range provided by the facilities varies as well, from a basic one consisting of processing the samples and sending back the data to an extended range from experimental design to publication. However, we do not specifically distinguish between these options.
 
@@ -41,13 +61,19 @@ To assess the extent of quality procedures offered to the users during the whole
 
 There are notable differences between the three operating modes (Figure 1B). Only about a quarter of self-service facilities keeps documentation of the experiments compared to >95% of full-service facilities. Similarly, storage of raw data is offered by only half as many self-service facilities (40%) compared to full-service facilities (82%). Furthermore, fewer self-service facilities provide standard experimental protocols because the users may bring their own. On the other hand, the full-service facilities tend to train their users less, they consider training less important and provide primarily theoretical training (Figure 1B and Figure 1—figure supplement 3). Only a half of full-service facilities provide guidance how to analyze raw data, because they analyze the data themselves (Figure 1B and Figure 1—figure supplement 4).
 
-## Research quality: Lack of funding is the major obstacle to research quality
+### Research quality: Lack of funding is the major obstacle to research quality
 
 In order to identify what is critical for research quality, we asked core facilities an open-field text question to list what factors they consider the most important and which of these need to be improved at their facility. As can be seen from the Figure 2A, the most prominent ones are training and communicating with users, followed by having enough qualified staff, as well as up-to-date and well-maintained equipment. From these factors, hiring more staff and purchasing/maintaining equipment are the most in need of improvement. Interestingly, although not considered as important, the aspect listed second in need of improvement is management. Management was mentioned at many different levels: facility, projects, samples, data, IT infrastructure, documentation or automation (see the section on management).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/62212/elife-62212-fig2-v2.jpg)
+
+**Figure 2.:** (A) Facilities were asked for the most important factors for achieving research quality (in blue) and the aspects that need to be improved in their facility (in red; open-field question). (B) Challenges faced by core facilities, grouped in three categories (financial, technical and personal/interpersonal). The category “career progression” includes “permanent positions” and “motivation”. (C) Facilities were asked if they agree or not that samples/experiments are replicated at their facility. Facilities were asked to rank on a 5-point scale whether they know what controls are included in experiments (D), and whether users are allowed to proceed with samples of poor quality (E). Facilities were also asked whether they have a quality control for data analysis (F) and, if not, how important such control would be. (G) Facilities were also asked if their involvement in manuscript preparation would improve the quality of published data.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/62212/elife-62212-fig2-figsupp1-v2.jpg)
+
 When asked about the biggest challenges encountered by core facilities, the most frequently cited was the lack of funding, closely followed by the lack of staff (Figure 2B). The next quoted were development (keeping the facility efficient and state-of-the-art), time and capacity. About half of the facilities that responded did not have enough funding and/or enough staff (Figure 2—figure supplement 1). The third ranked challenge concerns the interaction of facility staff with the users (see the section on communication).
 
-## Research quality: Controlling quality from experimental design to publication
+### Research quality: Controlling quality from experimental design to publication
 
 The process from experimental design to publication can be controlled at multiple checkpoints. As already shown in the Figure 1B, core facilities provide guidance along the whole process, from the experimental design, sample preparation, experimental protocol (standard operation procedures) to data analysis.
 
@@ -61,11 +87,31 @@ The last opportunity for core facilities to check if the data they helped to pro
 
 In conclusion, it is pertinent to introduce checkpoints to control the experimental design, sample quality, data analysis, and methods section and figures for publication. This seems particularly important in self-service facilities where more supervision would benefit the research quality.
 
-## Management
+### Management
 
 Management is a very important factor for achieving research quality and many core facilities recognized the need to improve it (Figure 2A). There are many aspects of management, such as managing the budget, users, projects, samples and generated data.
 
 A management software is the tool most frequently used by facilities to achieve research quality (Figure 3—figure supplement 1). Overall, close to 30% of facilities use a management software and further 34% believe it would make sense to use one (Figure 3A).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/62212/elife-62212-fig3-v2.jpg)
+
+**Figure 3.:** (A) Facilities were asked if they use management software and, if not, whether it would be useful. (B) Proportion of different management software used by core facilities. Software used by only one or two facilities is included under “Other”. In a series of “yes” and “no” questions, facilities were asked if they use data management plans (C), have a system to identify the raw data behind a published figure (D), and have sufficient documentation (E). The results were normalized for operating mode.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/62212/elife-62212-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** The category “technical aspects” includes instrumentation, robots, automation and improving techniques.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/62212/elife-62212-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** CF management software is shown in red, and data management software is shown in blue. The dashed lines indicate that some tasks are not covered or only partially covered by CF management software.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/62212/elife-62212-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Proportion of the different management software used by core facilities, normalized per operating mode. Software used by only one or two is included under “Other”.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/62212/elife-62212-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Facilities were asked to rate how different aspects of data management are implemented in their facility.
 
 Currently, the management software used in core facilities can be split into two categories (Figure 3—figure supplement 2). The first category, “core facility management software” mainly allow facilities to communicate with their users, book equipment and manage access rights, training, maintenance, technical issues and billing. It can also manage individual projects to a certain extent and keep records in the form of uploaded documents. Examples of such management software are PPMS from Stratocore, iLab from Agilent, Agendo or Open IRIS (open source). The second category is the “data management software”. Electronic Lab Notebooks (ELN) allow the precise recording of scientific procedures from the experimental design and sample preparation to the publication. It manages data acquisition, storage and analysis. This interconnected documentation ensures transparency and traceability. The Laboratory Information Management Systems (LIMS) are similar although they are often linked to one piece of equipment.
 
@@ -79,7 +125,7 @@ Looking into the different aspects of data management, we saw that about half of
 
 Strikingly, 72% of all core facilities do not have a system to identify raw data used for published figures (85% and 63% for self-service and full-service respectively; Figure 3D). The remaining facilities mentioned that they use a data management software (ELN, LIMS), unique IDs or a public repository to trace raw data (data not shown). The problem of non-traceable data is linked to the issue of insufficient documentation of experiments, which is clearly more pronounced in self-service facilities (Figure 3E). Only 20% of self-service facilities have enough documentation, while 70% of full-service facilities document their experiments sufficiently. Importantly, one half of self-service facilities does not actually know, how the experiments are documented. This might be connected to the issue of communication and responsibility addressed below.
 
-## Communication, respect and trust between facilities and users
+### Communication, respect and trust between facilities and users
 
 Communication plays a critical role in the interaction between core facilities and their users. Facilities provide a service based on their users’ requirements and users need to prepare their samples and experiments according to the advice of facility staff who have expertise in the equipment and techniques available in their facility. Communication is regarded by core facilities as a sensitive issue and the interaction with the users is seen as a challenge (Figure 2B). About 37% of facilities feel that the communication with their users needs to be improved (Figure 4A). Communication between facility staff and users is mostly done through emails and/or in person, facilities say it could be improved by using a communication management software or a chat/discussion platform, and by actively motivating users to cooperate and read the information provided (data not shown).
 
@@ -97,7 +143,7 @@ Finally, less than 20% of users of self-service facilities contact the facility 
 
 Together these results show that even though communication, trust and respect do not belong to the experimental procedure per se, they nevertheless must be fostered as they are essential for good science.
 
-## Sharing responsibility between facilities and users
+### Sharing responsibility between facilities and users
 
 Unexpectedly, numerous answers to the free text questions raised the issue of responsibility, although our survey did not specifically examine this aspect. The words “responsible” or “responsibility” were mentioned 123 times in total, referring to issues ranging from experimental design to publication. Notably, responses from facilities revealed an ambiguity in discerning “who is responsible for what”. Most facilities do not see themselves responsible, as one respondent explained: “We allow poor samples to be processed, since the responsibility for the experiment lies entirely on the researcher! “. Other responses included: “The users are responsible for their data” and “We strongly feel that responsibility for data analysis and interpretation must be in hands of researchers, especially in the hands of research group leaders who are responsible for final research outcome.”
 
@@ -123,6 +169,37 @@ Our survey reveals several weaker areas with a potential for improvement. Insuff
 
 The majority of core facilities recognize the need for monitoring the quality through the whole experimental process. Based on the responses we propose that the core facilities incorporate at least the following four quality checkpoints to efficiently ensure research quality with the active help of the users (Table 1):
 
+**Table 1.**
+ The proposed four checkpoints to improve quality of research in core facilities.Based on the current situation in core facilities (CFs) revealed by the survey, four checkpoints were identified, which have the highest potential to improve rigor and reproducibility.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Checkpoints</th>
+      <th>Recommendations</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Experimental design</td>
+      <td>CFs should provide information and advice on the experimental design and encourage their users to follow good research practices. They should check the experimental design and reject any ill-designed project.</td>
+    </tr>
+    <tr>
+      <td>Sample quality</td>
+      <td>CFs should control sample quality before starting the experiment and reject samples of poor quality. In case of limiting or rare samples, CFs should discuss with their users what consequences the sample quality will have on data interpretation and if the experiment should continue.</td>
+    </tr>
+    <tr>
+      <td>Data analysis</td>
+      <td>CFs and PIs should decide who will be responsible for checking data analysis.</td>
+    </tr>
+    <tr>
+      <td>Publication</td>
+      <td>CFs should be informed before the data produced at the CF are submitted for publication to have the possibility to check them if they wish to.</td>
+    </tr>
+  </tbody>
+</table>
+
 The proposed check points need to be adjusted to the needs of each facility. For example, blinding and randomization are very important aspects of experimental design in animal core facilities. The core facilities with a large number of users might not have the capacity to perform the data analysis and publication checkpoints. In this case, the data analysis checkpoint can be assigned to experienced PIs or other qualified scientists outside of the facility (e.g. statistician, bioinformatician). This needs to be discussed and decided before starting the experiment and be part of the user agreement. The publication checkpoint is the least important, as editors and reviewers will also be involved. However, the facility should always be informed about the publications, as these are often required to secure further funding.
 
 In addition to the above listed checkpoints, only a precise and relevant documentation can guarantee data traceability. All these aspects should be considered to achieve rigor, reproducibility and traceability. Users of self-service facilities would particularly benefit from the expertise of facility staff as most core facilities offer information to users on all stages of the research process (from experimental design to publication). This is especially relevant for techniques that are new to users (and their PIs).
@@ -145,6 +222,6 @@ The survey contained yes/no, multiple-choice and open-field text questions. The 
 
 We analyzed the data in three different ways: (1) all facilities together, (2) facilities grouped by their type/specialization (genomics, microscopy, etc) and (3) grouped by their operating mode (full-, hybrid-, self-service). While grouping the core facilities by type showed differences, these were often too specific to each type and could not be generalized with respect to quality procedures. In addition, some groups were too small to allow conclusive statements. On the other hand, grouping the facilities by operating mode revealed clear and meaningful differences between the groups in their approach to quality procedures. Therefore, the manuscript presents results from either all facilities together or grouped by their operating mode. All charts with all three groupings of data are included in the Excel file, containing the raw and analyzed data, which are available on Dryad doi:10.5061/dryad.zkh18938m.
 
-## Limitations
+### Limitations
 
 1000 core facilities were invited to participate in the survey and only a quarter completed the survey. It is possible that facilities with concerns about research quality were more likely to participate in the survey, therefore causing a selection bias. Additionally, the survey targeted only facility staff and thus lacks the users’ point of view.

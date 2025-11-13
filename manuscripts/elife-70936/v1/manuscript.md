@@ -23,18 +23,18 @@
 
 ### Affiliations
 
-1. https://ror.org/0495fxg12 Unit Stress Adaptation and Metabolism of Enterobacteria, Department of Microbiology, Université de Paris, UMR CNRS 2001, Institut Pasteur Paris France
-2. https://ror.org/02e2c7k09 Department of Bionanoscience, Kavli Institute of Nanoscience, Delft University of Technology Delft Netherlands
-3. https://ror.org/0495fxg12 Institut Pasteur, Université de Paris, CNRS UMR6047, Evolutionary Biology of the Microbial Cell, Department of Microbiology Paris France
-4. https://ror.org/02dd25k08 Univ. Grenoble Alpes, CNRS, CEA, IRIG, Laboratoire de Chimie et Biologie des Métaux Grenoble France
-5. https://ror.org/012t91r40 Aix-Marseille Université-CNRS, Laboratoire de Chimie Bactérienne UMR 7283, Institut de Microbiologie de la Méditerranée, Institut Microbiologie Bioénergies Biotechnologie Marseille France
-6. https://ror.org/02e2c7k09 Department of Biotechnology, Delft University of Technology Delft Netherlands
+1. Unit Stress Adaptation and Metabolism of Enterobacteria, Department of Microbiology, Université de Paris, UMR CNRS 2001, Institut Pasteur Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))
+2. Department of Bionanoscience, Kavli Institute of Nanoscience, Delft University of Technology Delft Netherlands ([ROR:02e2c7k09](https://ror.org/02e2c7k09))
+3. Institut Pasteur, Université de Paris, CNRS UMR6047, Evolutionary Biology of the Microbial Cell, Department of Microbiology Paris France ([ROR:0495fxg12](https://ror.org/0495fxg12))
+4. Univ. Grenoble Alpes, CNRS, CEA, IRIG, Laboratoire de Chimie et Biologie des Métaux Grenoble France ([ROR:02dd25k08](https://ror.org/02dd25k08))
+5. Aix-Marseille Université-CNRS, Laboratoire de Chimie Bactérienne UMR 7283, Institut de Microbiologie de la Méditerranée, Institut Microbiologie Bioénergies Biotechnologie Marseille France ([ROR:012t91r40](https://ror.org/012t91r40))
+6. Department of Biotechnology, Delft University of Technology Delft Netherlands ([ROR:02e2c7k09](https://ror.org/02e2c7k09))
 
 † Corresponding author
 
 ## Abstract
 
-Iron-sulfur (Fe-S) clusters are ancient and ubiquitous protein cofactors and play irreplaceable roles in many metabolic and regulatory processes. Fe-S clusters are built and distributed to Fe-S enzymes by dedicated protein networks. The core components of these networks are widely conserved and highly versatile. However, Fe-S proteins and enzymes are often inactive outside their native host species. We sought to systematically investigate the compatibility of Fe-S networks with non-native Fe-S enzymes. By using collections of Fe-S enzyme orthologs representative of the entire range of prokaryotic diversity, we uncovered a striking correlation between phylogenetic distance and probability of functional expression. Moreover, coexpression of a heterologous Fe-S biogenesis pathway increases the phylogenetic range of orthologs that can be supported by the foreign host. We also find that Fe-S enzymes that require specific electron carrier proteins are rarely functionally expressed unless their taxon-specific reducing partners are identified and co-expressed. We demonstrate how these principles can be applied to improve the activity of a radical S -adenosyl methionine(rSAM) enzyme from a Streptomyces antibiotic biosynthesis pathway in Escherichia coli . Our results clarify how oxygen sensitivity and incompatibilities with foreign Fe-S and electron transfer networks each impede heterologous activity. In particular, identifying compatible electron transfer proteins and heterologous Fe-S biogenesis pathways may prove essential for engineering functional Fe-S enzyme-dependent pathways.
+Iron-sulfur (Fe-S) clusters are ancient and ubiquitous protein cofactors and play irreplaceable roles in many metabolic and regulatory processes. Fe-S clusters are built and distributed to Fe-S enzymes by dedicated protein networks. The core components of these networks are widely conserved and highly versatile. However, Fe-S proteins and enzymes are often inactive outside their native host species. We sought to systematically investigate the compatibility of Fe-S networks with non-native Fe-S enzymes. By using collections of Fe-S enzyme orthologs representative of the entire range of prokaryotic diversity, we uncovered a striking correlation between phylogenetic distance and probability of functional expression. Moreover, coexpression of a heterologous Fe-S biogenesis pathway increases the phylogenetic range of orthologs that can be supported by the foreign host. We also find that Fe-S enzymes that require specific electron carrier proteins are rarely functionally expressed unless their taxon-specific reducing partners are identified and co-expressed. We demonstrate how these principles can be applied to improve the activity of a radical S-adenosyl methionine(rSAM) enzyme from a Streptomyces antibiotic biosynthesis pathway in Escherichia coli. Our results clarify how oxygen sensitivity and incompatibilities with foreign Fe-S and electron transfer networks each impede heterologous activity. In particular, identifying compatible electron transfer proteins and heterologous Fe-S biogenesis pathways may prove essential for engineering functional Fe-S enzyme-dependent pathways.
 
 ## Introduction
 
@@ -50,31 +50,1548 @@ Fe-S enzymes often show no activity when expressed within foreign hosts (Lanz et
 
 ## Results
 
-## Heterologous Fe-S enzymes are less likely to be functionally expressed than non-Fe-S enzymes
+### Heterologous Fe-S enzymes are less likely to be functionally expressed than non-Fe-S enzymes
 
 We performed a preliminary screen to evaluate the ability of Fe-S enzymes to retain activity within a heterologous host (Figure 1B). We constructed two knockout strains of E. coli MG1655 that each lack a conditionally essential Fe-S enzyme: NadA (quinolinate synthase) and IspG (4-hydroxy-3-methylbut-2-enyl-diphosphate synthase). These proteins were chosen because they are involved in metabolic pathways for valuable compounds (e.g. vitamins, biofuels, and fragrances). Orthologs of these enzymes were identified in genomes belonging to a diverse range of bacterial phyla (e.g. Actinobacteria, Firmicutes, Proteobacteria, Cyanobacteria) for a preliminary survey (Supplementary file 1). The activities of the heterologous enzymes were tested using a complementation assay within the corresponding E. coli knockout strain: growth in selective media indicates that the heterologous enzyme is functional when expressed in E. coli (Figure 1C). To avoid complementation failures arising from poor enzyme expression (due to e.g. weak promoters or inefficient translation), all heterologous genes were codon optimized, cloned into a multicopy expression vector, and transcribed from a chemically inducible promoter. The majority of Fe-S enzyme orthologs (65 out of 84) failed to complement growth (Figure 1D, Supplementary file 1). For comparison, we tested orthologs of a non-Fe-S enzyme (IspD, 2-C-methyl-D-erythritol 4-phosphate cytidylyltransferase, which belongs to the same biosynthetic pathway as IspG) for activity in E. coli. The majority of IspD orthologs (38 out of 45) complemented growth of E. coli ΔispD, including many orthologs from species whose IspG orthologs failed to complement growth of E. coli ΔispG (Supplementary file 1). Of note, average sequence identity of the heterologous IspG and IspD orthologs with the E. coli orthologs was 45% and 36%, respectively. These observations suggest that Fe-S enzymes are far more likely than non-Fe-S enzymes to lose activity within a heterologous host.
 
-## Correlating compatibility of heterologous enzymes with phylogenetic distance from host ortholog
+### Correlating compatibility of heterologous enzymes with phylogenetic distance from host ortholog
 
 We next sought to explore the factors that determine whether an Fe-S enzyme becomes inactive within a heterologous host. We first built a protein database that is representative of known prokaryotic diversity, comprising 248 prokaryotic (archaeal and bacterial) proteomes corresponding to 48 phyla, 96 classes, and 218 orders (Supplementary file 2). This database contains 65 proteomes that were used for preliminary screen. We identified 192 and 196 orthologs of NadA and IspG, respectively (Supplementary file 3), which were used to infer a maximum likelihood phylogeny (Figure 2A and B). Next, we used a clustering approach based on phylogenetic distances to select representative sequences in a phylogenetically based dataset to be experimentally tested, which yielded 47 sequences for NadA and IspG each (Supplementary files 3 and 4). The distribution of patristic distances of the selected orthologs from the E. coli NadA and IspG sequences closely matched with the patristic distance distribution obtained from all enzyme homologs, indicating that the selected orthologs are representative of the entire database of known orthologs (Figure 2C). Furthermore, a two-sided Wilcoxon test between full and sampled distances from E. coli rejected the hypothesis of significant differences between the selected set of orthologs (47 both) and the set of all orthologs (191 for NadA and 195 for IspG, p=0.4714 for NadA and p=0.4739 for IspG). Altogether, these results indicate that the phylogenetically based set is a representative sample of the phylogenetic diversity of NadA and IspG sequences across prokaryotes.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/70936/elife-70936-fig2-v1.jpg)
+
+**Figure 2.:** (A, B) Phylogeny of NadA orthologs (A) and IspG orthologs (B). In each diagram, the position of Escherichia coli ortholog is highlighted by an arrow. Orthologs selected for our complementation assay are indicated by color rectangles (green, successful complementation; green surrounded by red, complementation by coexpression of Bacillus subtilis SUF; red, no complementation). Orthologs complementing growth in anaerobic conditions are indicated by –O2. IspG orthologs recovered by expression of compatible electron transfer protein indicated by +ETP. NadA Clades 1 and 2 are indicated. (C) Distributions of patristic distances from the corresponding E. coli ortholog of all sequences (black curves) and the sequences of orthologs selected for testing (blue curves). (D) Complementation and reactivation results correlated with patristic distance from the E. coli ortholog. (E) Summary of complementation and recovery results for heterologous orthologs. The bar plots adjoining each wedge indicate the characteristics of native hosts (aerotolerance, optimal growth temperature, Fe-S cluster biosynthesis system). SUF and ISC indicate that homologs to SufBD or IscU, respectively, are identified in native genome. Results and properties of individual orthologs are given in Tables 1 and 2.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/70936/elife-70936-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** B.S., B. subtilis. The average of two biological replicates is reported with SD.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/70936/elife-70936-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** UV-visible spectra of (Fe-S)-ErpA and apo-IspGs were recorded before ErpA/IspG coincubation (black traces). One equivalent of apo-IspG was incubated with 2.2 equivalents of (Fe-S)-ErpA. After 1 hr incubation, proteins were separated on an affinity column (IspGs in the flow-through [FT], ErpA in the eluate). Spectra were recorded for both (red traces). The bottom left panel corresponds to spectra of E. coli ErpA incubated without IspG. IspG orthologs used: E. coli, E. coli; B. sub, B. subtilis; S. catt: Streptomyces cattleya; Synecho, Synechocystis sp. CACIAM05.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/70936/elife-70936-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Translation rates predicted by the RBS calculator for NadA and IspG orthologs from the phylogenetically based set. Predicted rates are sorted into distributions corresponding to the results of complementation assays (‘active’ vs ‘inactive’), recovery assays (‘active + recovered’ vs ‘not recovered’), and mass spectroscopy detection assays (‘active + recovered + detected’ vs ‘not detected by MS’ and ‘not analyzed’). Points indicate individual value obtained for each ortholog tested and all values are depicted. Statistical comparisons as depicted between groups revealed no significant differences (Kruskal-Wallis ANOVA test, degree of freedom = 1). n.s., not significant (p<0.05). Test applied using Origin 2019 software. (B) Pie charts depicting outcomes of mass spectroscopy detection experiments analyzing subsets of the inactive orthologs. The bar plots adjoining each wedge indicate the characteristics of native hosts (aerotolerance, optimal temperature, iron-sulfur cluster biosynthesis system).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/70936/elife-70936-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** UV-visible spectra together with iron and sulfur content of orthologs expressed within aerobic E. coli cultures followed by anaerobic purification. Spectra from (A) Dictyoglomus thermophilum NadA (33 mg/ml, Fe and S content: 0.1 ± 0.02 Fe/monomer and 0.1 ± 0.02 S/monomer); (B) Desulfurispirillum indicum NadA (2 mg/ml, 0.15 ± 0.01 Fe/monomer and 0.13 ± 0.02 S/monomer); (C) Thermotoga maritima IspG (20 mg/ml, 0.4 ± 0.02 Fe/monomer and 0.38 ± 0.03 S/monomer); (D) Symbiobacterium thermophilum IspG (2.2 mg/ml, 0.95 ± 0.02 Fe/monomer 0.85 ± 0.1 S/monomer).
+
 All orthologs from the phylogenetically based sets of IspG and NadA were each tested using the complementation assay in aerobic conditions at 37°C. Among the NadA orthologs representative of phylogenetic diversity, 14 out of 47 orthologs complemented growth of E. coli ∆nadA, indicating functional expression (Table 1). Consistent with our hypothesis, NadA orthologs that were functionally expressed in E. coli exhibited a low patristic distance from the E. coli NadA ortholog (Figure 2D). Repeating the complementation assay at a lower temperature (28°C) did not affect the outcome. The high correlation ratio (η) between heterologous expression and patristic distance (η = 0.61) and two-sided Wilcoxon test (p<0.01) suggest that phylogenetic proximity to the E. coli ortholog is a useful predictor of whether a NadA ortholog can be functionally expressed in E. coli.
+
+**Table 1.**
+ Compiled results of complementation and protein expression experiments for each NadA ortholog.Complementation of Escherichia coli ΔnadA and recovery of NadA activity with either SUF coexpression (pNadA + pBsSUF for Bacillus subtilis SUF, or pNadA + pEcSUF for E. coli SUF) or anaerobic growth (pNadA −O2). Minus (−), negative complementation; plus (+), positive complementation; N.T., not tested. Protein expression, predicted translation initiation rate from the RBS calculator (log10 scale) and outcome of SDS-PAGE and MS detection experiments. SDS-PAGE column, (+) band observed on an SDS-PAGE gel. MS column, (+) confirmed detection by mass spectroscopy; N.T., not tested; detection N.T., negative complementation and detection by MS not tested. The properties of native species for each ortholog are indicated: O2 tolerance: (+) aerotolerant, (−) obligate anaerobe, (?) unknown; iron-sulfur (Fe-S) synthesis system describes homologs to IscU or SufB identified in native genome. SufBD, SufB homolog detected; IscU, IscU homolog detected; SufBC, IscU, both systems detected.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Phylum</th>
+      <th rowspan="2">Species/strain</th>
+      <th colspan="5">Complementation/recovery</th>
+      <th colspan="4">Protein expression</th>
+      <th colspan="3">Native host characteristics</th>
+    </tr>
+    <tr>
+      <th>pNadA</th>
+      <th>pNadA + pBsSUF</th>
+      <th>pNadA + pEcSUF</th>
+      <th>pNadA −O2</th>
+      <th>Complemented or recovered</th>
+      <th>Predicted translationinitiation (log10)</th>
+      <th>SDS-PAGE</th>
+      <th>MS</th>
+      <th>Complemented/recovered/detected</th>
+      <th>O2 tolerance</th>
+      <th>Temperature</th>
+      <th>Fe-S synthesis system</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="5">Actinobacteria</td>
+      <td>Mycolicibacterium smegmatis MC2 155</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.3</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Rubrobacter xylanophilus DSM 9941</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>2.7</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Thermophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Collinsella stercoris DSM 13279</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.4</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Acidimicrobium ferrooxidans DSM 10331</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>2.2</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Thermophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Streptomyces cattleya NRRL 8057 = DSM 46488</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>4.8</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Bacteroidetes</td>
+      <td>Salinivirga cyanobacteriivorans</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Candidatus Fermentibacteria</td>
+      <td>Candidatus Fermentibacter daniensis</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.9</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Candidatus Melainabacteria</td>
+      <td>Candidatus Gastranaerophilales bacterium HUM_7</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.8</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>−</td>
+      <td>?</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Chloroflexi</td>
+      <td>Sphaerobacter thermophilus DSM 20745</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>4.1</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Thermophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Thermogemmatispora tikiterensis</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.8</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>+</td>
+      <td>Thermophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Chrysiogenetes</td>
+      <td>Desulfurispirillum indicum S5</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.6</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cyanobacteria</td>
+      <td>Synechocystis sp. PCC 6803</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>3.3</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Crocosphaera watsonii WH 8501</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>2.8</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>?</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Deinococcus-Thermus</td>
+      <td>Thermus thermophilus HB27</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>3.5</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Thermophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Dictyoglomi</td>
+      <td>Dictyoglomus thermophilum H-6–12</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.6</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Hyperthermophilic</td>
+      <td>SufBD, IscU</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Euryarchaeota</td>
+      <td>Methanopyrus kandleri AV19</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.9</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>−</td>
+      <td>Hyperthermophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Haloferax volcanii DS2</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.1</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Haloterrigena turkmenica DSM 5511</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.8</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Candidatus Methanomethylophilus alvus Mx1201</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.0</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>−</td>
+      <td>?</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Fibrobacteres</td>
+      <td>Chitinivibrio alkaliphilus ACht1</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.2</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Firmicutes</td>
+      <td>Bacillus subtilis subsp. subtilis str. 168</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.8</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Desulfitobacterium hafniense DCB-2</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.5</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Ruminiclostridium cellulolyticum H10</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.9</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Heliobacterium modesticaldum Ice1</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.4</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Thermophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Nitrospinae</td>
+      <td>Nitrospina gracilis</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.2</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Planctomycetes</td>
+      <td>Gemmata obscuriglobus</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>2.1</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Pirellula staleyi DSM 6068</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.7</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td rowspan="16">Proteobacteria</td>
+      <td>Aeromonas hydrophila</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.8</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Desulfovibrio vulgaris str. Hildenborough</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.2</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>SufBD, IscU</td>
+    </tr>
+    <tr>
+      <td>Allochromatium vinosum</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>2.9</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>SufBD, IscU (NifU)</td>
+    </tr>
+    <tr>
+      <td>Arcobacter butzleri</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.2</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD, IscU</td>
+    </tr>
+    <tr>
+      <td>Novosphingobium stygium</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+</td>
+      <td>2.3</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Herminiimonas arsenicoxydans</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.5</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Chromobacterium violaceum ATCC 12472</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.4</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Bdellovibrio bacteriovorus HD100</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.9</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Methylobacillus flagellatus KT</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>4.7</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Anaeromyxobacter dehalogenans 2 CP-C</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.7</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>SufBD, IscU</td>
+    </tr>
+    <tr>
+      <td>Candidatus Pelagibacter ubique HTCC1002</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.4</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>+</td>
+      <td>?</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Syntrophobacter fumaroxidans MPOB</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.5</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>SufBD, IscU</td>
+    </tr>
+    <tr>
+      <td>Cellvibrio japonicus Ueda107</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>2.9</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli str. K-12 substr. MG1655</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.8</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD, IscU</td>
+    </tr>
+    <tr>
+      <td>Desulfarculus baarsii DSM 2075</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.8</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Salinisphaera sp. LB1</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>4.0</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Spirochaetes</td>
+      <td>Leptospira interrogans serovar Lai str. 56,601</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>4.2</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Spirochaeta thermophila DSM 6578</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>3.2</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Thermophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Synergistetes</td>
+      <td>Thermanaerovibrio acidaminovorans DSM 6589</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>−</td>
+      <td>Thermophilic</td>
+      <td>SufBD, IscU</td>
+    </tr>
+    <tr>
+      <td>Thermotogae</td>
+      <td>Thermotoga maritima MSB8</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>4.3</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Hyperthermophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Verrucomicrobia</td>
+      <td>Coraliomargarita akajimensis DSM 45221</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.6</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+  </tbody>
+</table>
 
 Among the 47 IspG orthologs selected from the phylogenetically based set, only 8 complemented growth of E. coli ΔispG (Table 2). The sequences of functionally expressed IspG orthologs did not group together in the IspG phylogeny but were instead patchily dispersed across the entire phylogenetic distribution of sequences (Figure 2D). Accordingly, no correlation between functional expression and patristic distance from E. coli was observed (η = 0.03, two-sided Wilcoxon test p>0.01). Altogether, these results indicate that the activity of heterologous IspG orthologs in E. coli does not correlate with phylogenetic proximity, in contrast with NadA orthologs.
 
-## Aerobic conditions impede activity of heterologous Fe-S enzymes
+**Table 2.**
+ Compiled results of complementation and protein expression experiments for each IspG ortholog.Complementation of Escherichia coli ΔispG and recovery of IspG activity with either coexpression of electron transfer proteins (pIspG + Fld or Fd) or anaerobic growth (pIspG −O2). Electron transfer proteins found to activate each ortholog are listed in Supplementary files 5 and 6. Minus (−), negative complementation; plus (+), positive complementation; N.T., not tested. Protein expression, predicted translation initiation rate from the RBS calculator (log10 scale) and outcome of SDS-PAGE and mass spectroscopy detection experiments. SDS-PAGE column, (+) band observed on an SDS-PAGE gel. MS column, (+) confirmed detection by mass spectroscopy; (−), detection attempted by mass spectroscopy but no signal matching expected peptides; N.T., not tested; detection N.T., negative complementation and detection by MS not tested. The properties of native species for each ortholog are indicated: O2 tolerance: (+) aerotolerant, (−) obligate anaerobe, (?) unknown; iron-sulfur (Fe-S) synthesis system describes homologs to IscU or SufB identified in native genome. SufBD, SufB homolog detected; IscU, IscU homolog detected; SufBC, IscU, both systems detected.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Phylum</th>
+      <th rowspan="2">Species/strain</th>
+      <th colspan="4">Complementation/recovery</th>
+      <th colspan="4">Protein expression</th>
+      <th colspan="3">Native host characteristics</th>
+    </tr>
+    <tr>
+      <th>pIspG</th>
+      <th>pIspG + Fld or fd</th>
+      <th>pIspG −O2</th>
+      <th>Complemented or recovered</th>
+      <th>Predicted translation initiation rate (log10)</th>
+      <th>SDS-PAGE</th>
+      <th>MS</th>
+      <th>Complemented/recovered/detected</th>
+      <th>O2 tolerance</th>
+      <th>Temperature</th>
+      <th>Fe-S scaffold</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Acidobacteria</td>
+      <td>Candidatus Koribacter versatilis Ellin345</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.6</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td rowspan="8">Actinobacteria</td>
+      <td>Thermoleophilum album</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.9</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>+</td>
+      <td>Thermophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Streptomyces coelicolor A3</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.6</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Rubrobacter xylanophilus DSM 9941</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>2.6</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Thermophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Cutibacterium acnes KPA171202</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>4.7</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Collinsella stercoris DSM 13279</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.3</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Acidimicrobium ferrooxidans DSM 10331</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.5</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Streptomyces cattleya NRRL 8057 = DSM 46488</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+</td>
+      <td>2.7</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Egibacter sp.</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.4</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>?</td>
+      <td>?</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Aquificae</td>
+      <td>Aquifex aeolicus VF5</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.8</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Hyperthermophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Thermovibrio ammonificans HB-1</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.9</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>−</td>
+      <td>Thermophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Bacteroidetes</td>
+      <td>Pedobacter heparinus DSM 2366</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD, IscU</td>
+    </tr>
+    <tr>
+      <td>Salinivirga cyanobacteriivorans</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Candidatus Fermentibacteria</td>
+      <td>Candidatus Fermentibacter daniensis</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.0</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Candidatus Melainabacteria</td>
+      <td>Candidatus Caenarcanum bioreactoricola</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>4.1</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>?</td>
+      <td>?</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Candidatus Gastranaerophilales bacterium HUM_7</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>4.2</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>−</td>
+      <td>?</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Candidatus Sumerlaeota</td>
+      <td>Candidatus Sumerlaea chitinovorans</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.9</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>?</td>
+      <td>?</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Chlamydiae</td>
+      <td>Chlamydia caviae GPIC</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.7</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Chloroflexi</td>
+      <td>Sphaerobacter thermophilus DSM 20745</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>+</td>
+      <td>Thermophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cyanobacteria</td>
+      <td>Gloeobacter violaceus PCC 7421</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.6</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>+</td>
+      <td>?</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Synechocystis sp. PCC 6803</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+</td>
+      <td>3.5</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Deinococcus-Thermus</td>
+      <td>Thermus thermophilus HB27</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.7</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>Thermophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Fibrobacteres</td>
+      <td>Fibrobacter succinogenes subsp. succinogenes S85</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.6</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td rowspan="4">Firmicutes</td>
+      <td>Bacillus subtilis subsp. subtilis str. 168</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+</td>
+      <td>2.7</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Desulfitobacterium hafniense DCB-2</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.4</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Symbiobacterium thermophilum IAM 14863</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.0</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Thermophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Ruminiclostridium cellulolyticum H10</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.4</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Lentisphaerae</td>
+      <td>Victivallales bacterium CCUG 44730</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>?</td>
+      <td>?</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Nitrospinae</td>
+      <td>Nitrospina gracilis</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>4.0</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td rowspan="3">Planctomycetes</td>
+      <td>Blastopirellula marina DSM 3645</td>
+      <td>+/−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.1</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Isosphaera pallida ATCC 43644</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.5</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Phycisphaera mikurensis NBRC 102666</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.8</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td rowspan="10">Proteobacteria</td>
+      <td>Aeromonas hydrophila</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>2.1</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Allochromatium vinosum</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.7</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>SufBD, IscU (NifU)</td>
+    </tr>
+    <tr>
+      <td>Azoarcus sp. BH72</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.1</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Mesophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Helicobacter pylori J99</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.3</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Methylococcus capsulatus str. Bath</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.2</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD, IscU</td>
+    </tr>
+    <tr>
+      <td>Rhodobacter sphaeroides 2.4.1</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+</td>
+      <td>3.4</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD, IscU (NifU)</td>
+    </tr>
+    <tr>
+      <td>Mariprofundus ferrooxydans</td>
+      <td>−</td>
+      <td>+</td>
+      <td>−</td>
+      <td>+</td>
+      <td>3.7</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Cellvibrio japonicus Ueda107</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.6</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Escherichia coli str. K-12 substr. MG1655</td>
+      <td>+</td>
+      <td>N.T.</td>
+      <td>+</td>
+      <td>+</td>
+      <td>3.1</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD, IscU</td>
+    </tr>
+    <tr>
+      <td>Anaplasma phagocytophilum str. CRT38</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.2</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>+</td>
+      <td>?</td>
+      <td>IscU</td>
+    </tr>
+    <tr>
+      <td>Spirochaetes</td>
+      <td>Spirochaeta thermophila DSM 6578</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>4.0</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Thermophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Synergistetes</td>
+      <td>Thermanaerovibrio acidaminovorans DSM 6589</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.1</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>−</td>
+      <td>Thermophilic</td>
+      <td>SufBD, IscU</td>
+    </tr>
+    <tr>
+      <td>Tenericutes</td>
+      <td>Spiroplasma citri</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.0</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Thermodesulfobacteria</td>
+      <td>Thermodesulfatator indicus DSM 15286</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>−</td>
+      <td>−</td>
+      <td>3.3</td>
+      <td>−</td>
+      <td>N.T.</td>
+      <td>Detection N.T.</td>
+      <td>−</td>
+      <td>Thermophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Thermotogae</td>
+      <td>Thermotoga maritima MSB8</td>
+      <td>−</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>4.4</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>−</td>
+      <td>Hyperthermophilic</td>
+      <td>SufBD</td>
+    </tr>
+    <tr>
+      <td>Verrucomicrobia</td>
+      <td>Coraliomargarita akajimensis DSM 45221</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>−</td>
+      <td>2.6</td>
+      <td>−</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>Mesophilic</td>
+      <td>SufBD</td>
+    </tr>
+  </tbody>
+</table>
+
+### Aerobic conditions impede activity of heterologous Fe-S enzymes
 
 As Fe-S clusters can be altered by reactive oxygen species, the aerobic conditions used in our complementation assays may inactivate some orthologs, particularly those obtained from obligate anaerobes. We therefore repeated our complementation experiments in anaerobic conditions. Anaerobic growth enabled eight additional NadA orthologs to complement growth of E. coli ΔnadA. Five of the 8 NadA orthologs recovered in anaerobic conditions were obtained from obligate anaerobes (Table 1, Figure 2A and E). However, anaerobiosis recovered only three additional IspG orthologs (Table 2, Figure 2B and E). All NadA and IspG orthologs that complemented growth in aerobic conditions also complemented growth in anaerobic conditions. Surprisingly, the aerotolerance of the hosts from which the orthologs were obtained is not an absolute predictor of activity in aerobic or anaerobic conditions (Tables 1 and 2, Figure 2E).
 
-## Recovery of NadA orthologs using a heterologous Fe-S biogenesis pathway
+### Recovery of NadA orthologs using a heterologous Fe-S biogenesis pathway
 
 We next tested whether coexpression of a heterologous Fe-S pathway might reactivate heterologous Fe-S enzymes. We cloned the Bacillus subtilis SUF operon into a separate vector (pBbA5a), which was introduced into E. coli ΔnadA expressing B. subtilis NadA (Supplementary file 5). Coexpression of the B. subtilis SUF system together with B. subtilis NadA fully recovered growth of E. coli ΔnadA in aerobic conditions (Figure 2—figure supplement 1, Table 1). Expression of B. subtilis SUF activated eight additional NadA orthologs. Interestingly, three orthologs recovered by B. subtilis SUF were also recovered in anaerobic conditions (Table 1, Figure 2A and E). By comparison, overexpression of the E. coli SUF operon cloned into pBbA5a activated only three of the eight NadA orthologs activated by B. subtilis SUF (B. subtilis, Mycolicibacterium smegmatis, and Novosphingobium stygium) (Table 1). Thus, expression of heterologous Fe-S pathways broadens host compatibility with certain heterologous Fe-S enzymes. Interestingly, only NadA orthologs originating from organisms harboring SUF Fe-S biogenesis pathways could be recovered by E. coli or B. subtilis SUF expression (Table 1, Figure 2E).
 
-## Phylogenetic comparison reveals oxygen sensitivity and Fe-S biogenesis pathway compatibility as two barriers that impede heterologous NadA activity
+### Phylogenetic comparison reveals oxygen sensitivity and Fe-S biogenesis pathway compatibility as two barriers that impede heterologous NadA activity
 
 By mapping our complementation and recovery experiments onto NadA phylogeny, we could delineate two distinct clades (Clades 1 and 2) (Figure 2A). Twenty-two of the 23 heterologous orthologs within Clade 1 (which includes E. coli NadA) complemented growth of E. coli ΔnadA when expressed in aerobic conditions, of which 8 required coexpression with the B. subtilis SUF operon. In contrast, 5 of 24 Clade 2 orthologs could be recovered only by complementation in anaerobic conditions (Figure 2A). Only one Clade 2 ortholog (B. subtilis NadA) could be recovered in aerobic conditions with SUF overexpression. Interestingly, the majority of Clade 2 orthologs originate from organisms classified as obligate anaerobes (17/24) while most members of Clade 1 originate from aerotolerant organisms (17/23). Therefore, Clade 1 orthologs inactive in E. coli are limited by SUF expression or compatibility, whereas Clade 2 orthologs are likely limited by oxygen sensitivity. These results highlight oxygen sensitivity as the primary characteristic distinguishing Clade 1 and Clade 2 orthologs. Strikingly, membership within either clade predicts NadA activity in aerobic cultures more accurately than does the aerotolerance of the native hosts (Figure 2E).
 
-## Compatibility of IspG orthologs is limited by need for taxa-specific electron transfer proteins
+### Compatibility of IspG orthologs is limited by need for taxa-specific electron transfer proteins
 
 Coexpression of E. coli or B. subtilis SUF operons failed to restore activity of any IspG ortholog that did not complement E. coli ΔispG. This suggests that steps facilitated by the Fe-S assembly pathway do not limit heterologous IspG activity. This was consistent with our observation that the E. coli Fe-S transfer protein ErpA delivers Fe-S clusters to heterologous IspG in vitro (Figure 2—figure supplement 2). The activity of E. coli IspG is known to require an electron carrier protein, a role performed in E. coli by flavodoxin 1 (FldA) (Puan et al., 2005). We therefore considered whether the inactivity of IspG orthologs is caused by incompatibility with E. coli electron carrier proteins. Although many enzymes that depend upon electron carrier proteins are able to accept a variety of carrier proteins (Arcinas et al., 2019; Chazarreta-Cifre et al., 2011), E. coli IspG specifically requires FldA (Gaudu and Weiss, 2000). Therefore we attempted to restore heterologous IspG activity using specific electron carrier proteins native to the organisms from which the IspG orthologs were obtained. Electron carriers that support activity of Synechocystis and B. subtilis IspG orthologs have been previously identified as the ferredoxin PetF (Okada and Hase, 2005) and flavodoxins YkuP and YkuN (Kirby et al., 2016), respectively. We therefore cloned and coexpressed Synechocystis PetF together with Synechocystis IspG within E. coli ΔispG. Coexpression of PetF with Synechocystis IspG indeed complemented growth of E. coli ΔispG (Table 2). Similarly, coexpression of either B. subtilis YkuP or YkuN with B. subtilis IspG complemented E. coli ΔispG.
 
@@ -82,19 +1599,27 @@ As the electron carriers needed to activate the remaining inactive IspG ortholog
 
 We next explored the cross-species compatibility of IspG orthologs with non-native electron transfer proteins. With the exception of B. subtilis IspG, non-native electron transfer proteins did not activate any IspG ortholog tested in the phylogenetically based set. Among IspG orthologs used in the preliminary survey, far more cross-species activation by non-native electron transfer proteins was observed (Supplementary file 6). Specifically, Synechocystis PetF activated every Cyanobacteria IspG ortholog from this set. Ferredoxins from S. cattleya and R. sphaeroides activated additional IspG orthologs from the Actinobacteria and Proteobacteria, respectively. In total, 11 out of 27 inactive IspG orthologs tested from the preliminary dataset were reactivated by either native or heterologous electron transfer proteins (Supplementary file 6). Collectively, these results indicate that heterologous IspG can be recovered using compatible electron transfer proteins.
 
-## Confirming heterologous expression of inactive orthologs
+### Confirming heterologous expression of inactive orthologs
 
 In order to determine whether any apparent inactivity of orthologs in our complementation assays is caused by inefficient translation, we used a quantitative biophysical model to predict translation rates of both NadA and IspG orthologs within the phylogenetically based set (Salis et al., 2009). Distributions of predicted initiation rates were obtained for ortholog groups organized by results from complementation and recovery experiments. No significant differences were observed among NadA and IspG groups (Kruskal-Wallis ANOVA) (Figure 2—figure supplement 3). Attempts to directly confirm expression of inactive orthologs using SDS-PAGE yielded mixed results, as even some of the orthologs that complemented growth could not be detected (Tables 1 and 2 and Supplementary file 7). Focusing primarily upon orthologs that did not complement growth in any condition tested, we used a mass spectroscopy-based shotgun proteomics approach to confirm expression during aerobic growth without SUF or electron carrier protein coexpression. All seven NadA orthologs analyzed, including all five inactive orthologs, were detected. Of the 16 IspG orthologs analyzed, 10 were detected, including 8 of the 13 orthologs that could not be recovered (Tables 1 and 2, and Supplementary file 7, Figure 2—figure supplement 3).
 
 As we cannot exclude that orthologs not analyzed or detected by mass spectroscopy were inefficiently translated, we compared the translation rate distributions obtained for these orthologs against orthologs that were detected or that could recover growth. No significant difference could be observed for NadA or IspG sets (Figure 2—figure supplement 3), suggesting that inefficient translation is not affecting our complementation assays. We also note that one ortholog (Collinsella stercoris, an obligate anaerobe), which required anaerobic conditions to complement growth of E. coli ΔispG, could not be detected in the aerobic cultures prepared for mass spectroscopy analysis. As insoluble proteins may evade detection by mass spectroscopy, and as overexpressed E. coli IspG is prone to insolubility (Zhou et al., 2012), we speculate that insolubility may prevent detection and activity of these orthologs.
 
-## In vitro detection of Fe-S clusters in purified NadA and IspG orthologs
+### In vitro detection of Fe-S clusters in purified NadA and IspG orthologs
 
 To determine whether orthologs that are inactive during aerobic growth obtain Fe-S clusters, we expressed NadA orthologs from Dictyoglomus thermophilum and Desulfurispirillum indicum and the IspG ortholog from Thermotoga maritima within aerobic E. coli cultures. Following anaerobic purification, UV-visible spectroscopy and quantification of iron and sulfur confirmed the presence of Fe-S clusters within a small fraction of each purified ortholog (Figure 2—figure supplement 4). As each of these orthologs complemented growth in anaerobic cultures, inactivity during aerobic conditions suggests that the Fe-S clusters detected in the purified enzymes may be oxidized or otherwise inactivated. Surprisingly, an Fe-S cluster was also detected in a significant fraction of purified Symbiobacterium thermophilum IspG, an ortholog that could not complement growth of E. coli ΔispG in any condition tested. This intriguing observation suggests that S. thermophilium IspG requires a specific electron transfer protein for enzyme activity, but not for acquiring its Fe-S cluster.
 
-## A specific double-cluster ferredoxin enhances the activity of the Fe-S-dependent methyltransferase TsrM
+### A specific double-cluster ferredoxin enhances the activity of the Fe-S-dependent methyltransferase TsrM
 
 In order to better understand why Fe-S enzymes require electron transfer proteins with specific properties, we explored the electron transfer protein selectivity of a biotechnologically relevant Fe-S enzyme (Broderick et al., 2014). rSAM methyltransferase enzymes rely upon Fe-S clusters to catalyze biosynthesis of valuable natural products, including antibiotics (Mahanta et al., 2017; Mehta et al., 2015). The cobalamin-dependent rSAM methyltransferase TsrM, an enzyme from the thiostrepton synthesis pathway of Streptomyces laurentii, uses its cobalamin cofactor as an intermediate carrier to transfer a methyl group to C2 of tryptophan (Blaszczyk et al., 2016). Although its catalytic cycle does not require an electron donor for each turnover event, TsrM requires one electron to reduce its cobalamin cofactor to cob(I)alamin, which reacts with SAM to form MeCbl (Figure 3A). TsrM can also be inactivated by adventitious oxidation of the bound cobalamin factor from cob(I)alamin to cob(II)alamin. Recovering the catalytically active cob(I)alamin form requires reduction by an electron transfer protein (Blaszczyk et al., 2019).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/70936/elife-70936-fig3-v1.jpg)
+
+**Figure 3.:** (A) The enzyme TsrM synthesizes 2-methyltryptophan as part of the synthesis pathway of the antibiotic thiostrepton. A one-electron reduction (in green) converts the bound cobalamin to cob(I)alamin, which is converted to MeCbl via reaction with SAM. TsrM can be inactivated during catalysis by adventitious oxidation of the bound cob(I)alamin to cob(II)alamin (in red). Recovering the catalytically active cob(I)alamin form requires a one-electron reduction (green). (B) Titers of 2-methyltryptophan in a TsrM-expressing E. coli strain increase substantially upon coexpression of a specific Streptomyces cattleya ferredoxin (Fdx1) whereas coexpression of alternative S. cattleya [4Fe-4S] ferredoxins, Fdx2 and Fdx3, does not increase titers. (C, D) Identifying the molecular basis enabling Fdx1 to recover TsrM activity. (C) Biolayer interferometry of TsrM with Fdx1, Fdx2, and Fdx3 indicates that TsrM interacts measurably with Fdx1 alone. (D) Cyclic voltammetry of TsrM and the three ferredoxins indicates that the reducing potentials of one of the (Fe-S) clusters of Fdx1 are sufficiently low potential to reduce TsrM metal cofactors (cob(II)alamin to cob(I)alamin and [4Fe-4S]+2 to [4Fe-4S]+1) and thus restore activity after adventitious oxidation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/70936/elife-70936-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Protein concentration was normalized with Abs280 = 1. Consistent with previous observations, as-purified TsrM (0.9 Cbl and 3.5 Fe ± 0.3 per monomer) shows features consistent with the presence both of iron-sulfur [Fe-S] cluster and of cobalamin, including the broad absorption between 350 and 600 nm, indicative of a Fe-S cluster, and the distinct feature at 390 nm, suggestive of the presence of cob(I)alamin. Inset: TsrM treated with potassium cyanide yields the dicyanocobalamin adduct of cobalamin, which has a strong feature at 367 nm (ε367 = 30,800 M−1 cm–1). Concerning Streptomyces cattleya ferredoxins (Fdx1, Fdx2, Fdx3), their iron content was consistent with their annotations as dicluster and single-cluster ferredoxins (7.4 Fe ± 0.5/monomer, 2.9 Fe ± 0.1/monomer, and 2.8 Fe ± 0.1/monomer for Fdx1, Fdx2, and Fdx3, respectively).
 
 E. coli NCM3722 coexpressing S. laurentii TsrM together with the E. coli cobalamin import pathway (btu operon expressed from a plasmid [Lanz et al., 2018]) produced 3 ± 2 mg/L 2-methyltryptophan (Figure 3B). We sought to determine whether in vivo TsrM activity could be improved using Streptomyces [4Fe-4S] ferredoxins, as [4Fe-4S] ferredoxins exhibit low reducing potentials (−700 to –300 mV) (Cammack, 1992) that are expected to match the low reduction potential of cob(II)alamin/cob(I)alamin (<–500 mV vs NHE) (Jarrett et al., 1997; Lexa and Saveant, 2002). We used three [4Fe-4S] ferredoxins (here designated Fdx1, Fdx2, and Fdx3), two of which (Fdx1 and Fdx3) were able to activate S. cattleya IspG (Supplementary file 5). Simultaneous coexpression of all three [4Fe-4S] ferredoxins together with TsrM increased 2-methyltryptophan titer to 36 ± 16 mg/L. By coexpressing each ferredoxin individually with TsrM, we determined that Fdx1 alone improves activity of TsrM (45 ± 7 mg/L 2-methyltryptophan), while expression of Fdx2 and Fdx3 does not increase 2-methyltryptophan titers (Figure 3B).
 
@@ -112,7 +1637,7 @@ Fe-S enzymes catalyze many reactions that are relevant to biotechnology such as 
 
 ## Materials and methods
 
-## Selection of sequences and bioinformatics analysis
+### Selection of sequences and bioinformatics analysis
 
 Orthologs of IspG, NadA, and IspD selected in the preliminary screen were found in a variety of sequenced prokaryotic genomes using homology searches guided by E. coli sequences. To assemble the phylogenetically representative distribution of NadA and IspG orthologs that was assembled following the preliminary screen, a systematic approach was used. First, a protein database was built from 248 representative prokaryotic proteomes (Supplementary file 2) (including 65 proteomes that were used for preliminary screen) gathered from NCBI FTP (ftp://ftp.ncbi.nlm.nih.gov/genomes/all), selecting around one genome per order (27 archaea and 221 bacteria) by using NCBI taxonomy and privileging complete proteomes. Homologs of NadA and IspG were first identified by BLASTp v2.8.1+ (Altschul et al., 1997), using E. coli sequences as seeds (AAC73837.1 and AAC75568.1, respectively). Sequences associated to an E value lower than 10–4 were aligned with MAFFT v7.419 (Katoh and Standley, 2013) and used to build hidden Markov model (HMM) profiles using hmmbuild from the HMMER v3.2.1 package (McClure et al., 1996). These HMM profiles were then used to request the database using hmmsearch, and the sequences presenting an E value lower than 10–2 were retrieved and aligned. Alignments were manually curated using Aliview v1.25 (Larsson, 2014) and trimmed using BMGE v1.1 (Criscuolo and Gribaldo, 2010) with the substitution matrix BLOSUM30.
 
@@ -122,90 +1647,90 @@ In order to select representative NadA and IspG sequences to be experimentally t
 
 The native host characteristics have been found using BacDive (Reimer et al., 2019) and by a curation of literature. The Fe-S cluster biogenesis systems have been identified by doing a BLASTp v2.8.1+ on the 248 proteome database, starting from IscU and SufB from E. coli. The genomes containing homologs of SufB were considered as possessing SufB-based system. Then, IscU-based system has been considered when encoding an IscU homolog not in context with SufBD (SufU) and in context with a cysteine desulfurase.
 
-## Bacterial strains, media, and chemicals
+### Bacterial strains, media, and chemicals
 
 The plasmids, oligonucleotides, and E. coli strains used in this study are listed in Supplementary file 8. E. coli ΔispG was constructed by first integrating genes encoding the lower half of the mevalonate (MVA) pathway to enable isoprenoid synthesis from exogenously provided MVA. Genes encoding mevalonate kinase, phosphomevalonate kinase, and mevalonate diphosphate decarboxylase from Saccharomyces cerevisiae control by the Ptrc promoter was amplified from pJBEI-2999 (Peralta-Yahya et al., 2011) and assembled by PCR to an FRT-flanked kanamycin resistance (KanR) cassette from pKD13 and integrated into intA using homologous recombination (Datsenko and Wanner, 2000). The KanR cassette was subsequently removed using the plasmid pCP20. nadA, was removed using homologous recombination in E. coli MG1655. Bacterial strains were routinely grown in aeration at 37°C in Luria-Bertani broth (LB) or in M9 medium (M9) supplemented with glucose (0.4%), CaCl2 (100 µM), and MgSO4 (1 mM). Solid media contained 1.5% agar. Anhydrotetracycline (aTc) 100 ng/mL, isopropyl β-D-1-thiogalactopyranoside (IPTG) 250 µM, MVA 0.5 mM, and nicotinic acid (NA) 10 µg/mL were added when indicated. When required, antibiotics were added at the concentrations of 50 μg/ml kanamycin (Kan) and 100 μg/mL ampicillin (Amp). Mevalolactone (MVL) and NA were purchased from Sigma-Aldrich and resuspended in water at final concentrations of 1 M and 10 mg/mL, respectively. To prepare MVA, an equal volume of 1 M KOH was added to 1 M MVL and incubated at 37°C for 30 min.
 
-## Plasmid construction for complementation assays
+### Plasmid construction for complementation assays
 
 All the genes encoding heterologous orthologs and electron carrier proteins (with the exception of genes from B. subtilis) were codon optimized for expression in E. coli, designed with strong ribosome binding sites, synthesized, and cloned into the expression vector pBbS2k (Lee et al., 2011) by the Joint Genome Institute (JGI) directly, or were obtained as gene fragments by Twist Bioscience (TWB) (Supplementary files 1 and 4), assembled, and cloned into pBbS2k. DH5α was used for all cloning steps. Genes encoding electron carrier proteins were codon optimized for expression in E. coli, designed with strong ribosome binding sites, and assembled into the expression vector pBbA5a by JGI.
 
-## Complementation assays
+### Complementation assays
 
 E. coli knockout strains were transformed with pBbS2k plasmid encoding corresponding orthologs and selected on permissive LB medium containing kanamycin. Plates supporting growth of E. coli ΔispG strains additionally contained 0.5 mM MVA. For plate-based complementation assays, kanamycin-resistant colonies were streaked on LB plates supplemented with kanamycin and aTc (for IspG experiments) or on solid M9 glucose medium supplemented with kanamycin and aTc (for NadA experiments). Plates were incubated at 37°C and growth was scored after 16 and 40 hr. For anaerobic experiments, plates were incubated inside an anaerobic box (AnaeroPack). For liquid culture-based complementation experiments, two individual colonies for each strain were inoculated into LB medium, grown for 7 hr at 37°C, and subsequently diluted 1:500 in M9 medium (LB for IspG experiments) containing Kan and aTc. For reactivation experiments of inactive NadA orthologs, an E. coli ΔnadA strain bearing a plasmid encoding the B. subtilis SUF operon (pBbA5a-sufCDSUB) or the plasmid encoding the E. coli SUF operon (pBbA5a-sufABCDSE) was transformed with plasmids encoding orthologs and grown as described with the addition of 250 µM IPTG to induce expression of SUF (Supplementary files 5 and 8). For reactivation experiments of inactive IspG orthologs, an E. coli ΔispG strain bearing a plasmid encoding IspG orthologs was transformed with pBbA5a plasmids encoding electron transfer proteins. All growth curves have been performed in 96-wells microplates and cell density (OD600) was recorded by using an automated Spark 10Mluminometer-spectrophotometer (Tecan) for 18 hr (NadA experiments) or 12 hr (IspG experiments), every 30 min at 37°C in shaking condition.
 
-## SDS-PAGE test for protein expression
+### SDS-PAGE test for protein expression
 
 ΔnadA strains containing the pBbS2k plasmids and carrying NadA orthologs were grown in LB, Kan, and aTc at 37°C to OD600 of 1.2–1.5. ΔispG strains containing the pBbS2k plasmids carrying the IspG orthologs were grown in LB, Kan, MVA, and aTc at 37°C to OD600 of 1.2–1.5. In both cases, the cells were centrifuged at 12,000 rpm for 2 min at room temperature and after removing the supernatant, the pellets were resuspended in PBS 1× buffer and then loaded on 12% SDS-PAGE gel after denaturating with Leammli loading dye at 100°C for 15 min. The gel was stained with Coomassie brilliant blue G-250 and decolorized using a solution of 60% water, 30% isopropanol, and 10% acetic acid.
 
-## Mass spectrometry detection of orthologs
+### Mass spectrometry detection of orthologs
 
-## Sample preparation
+#### Sample preparation
 
 ΔispG and ΔnadA strains bearing corresponding inactive orthologs were inoculated in 10 mL permissive media (ΔispG in LB with 0.5 mM MVA, 100 µM IPTG, 25 µg/mL kanamycin; or ΔnadA in LB with 25 µg/mL kanamycin). When cultures reached early exponential phase (OD = 0.1), ortholog expression was maximally induced by 10 ng/mL doxycycline (added at early exponential phase before OD = 0.1). The cultures were subsequently grown to midlogarithmic phase (OD = 0.4–0.6), at which point 2 mL solution of 10% (w/vol) trichloroacetic acid (TCA) was added. Quenched samples were incubated on ice for at least 10 min before centrifugation (20,000 g, 4°C, 10 min), after which the supernatant was removed and pellet stored at –80°C before analysis.
 
-## Cell lysis and protein extraction
+#### Cell lysis and protein extraction
 
 Briefly, biomass amount equivalent to 1 mL of 1 OD E. coli was collected in an Eppendorf tube and solubilized in a suspension solution consisting of 200 µL B-PER reagent (Thermo Scientific) and 200 µL TEAB buffer (50 mM triethylammonium bicarbonate (TEAB), 1% (w/w) NaDOC, adjusted to pH 8.0) including 0.2 µL protease inhibitor (P8215, Sigma Aldrich). Further, 0.1 g of glass beads (acid, washed, approx. 100 µm diameter) were added and cells were disrupted using three cycles of bead beating on a vortex for 30 s followed by cooling on ice for 30 s in-between cycles. In the following, a freeze/thaw step was performed by freezing the suspension at –80°C for 15 min and thawing under shaking at elevated temperature using an incubator. The cell debris was further pelleted by centrifugation using a bench top centrifuge at max speed, under cooling for 10 min. The supernatant was transferred to a new Eppendorf tube and kept at 4°C until further processed. Protein was precipitated by adding one volume of TCA ( Sigma Aldrich) to four volumes of supernatant. The solution was incubated at 4°C for 10 min and further pelleted at 14,000 g for 10 min. The obtained protein precipitate was washed twice using 250 µL ice cold acetone.
 
-## Proteolytic digestion
+#### Proteolytic digestion
 
 The protein pellet was dissolved to approx. 100 µg/100 µL of 200 mM ammonium bicarbonate containing 6 M urea to a final concentration of approximately 100 µg/µL. To 100 µL protein solution, 30 µL of a 10 mM dithiothreitol (DTT) solution were added and incubated at 37°C for 1 hr. In the following, 30 µL of a freshly prepared 20 mM iodoacetic acid (IAA) solution was added and incubated in the dark for 30 min. The solution was diluted to below 1 M urea using 200 mM bicarbonate buffer and an aliquot of approximately 25 µg protein was digested using sequencing grade trypsin at 37°C overnight (trypsin/protein 1:50). Finally, protein digests were then further desalted using an Oasis HLB 96 well plate (waters) according to the manufacturer protocols. The purified peptide eluate was dried using a speed vac concentrator.
 
-## One-dimensional shot gun proteomics approach
+#### One-dimensional shot gun proteomics approach
 
 Briefly, the samples were analyzed using a nanoliquid chromatography system consisting of an ESAY nano LC 1200, equipped with an Acclaim PepMap RSLC RP C18 separation column (50 µm × 150 mm, 2 µm), and an QE plus Orbitrap mass spectrometer (Thermo). The flow rate was maintained at 350 nL/min over a linear gradient from 4% to 30% solvent B over 32.5 min, and finally to 70% B over 12.5 min. Solvent A was H2O containing 0.1% formic acid, and solvent B consisted of 80% acetonitrile in H2O and 0.1% formic acid. The Orbitrap was operated in data-depended acquisition mode acquiring peptide signals form 385 to 1250 m/z at 70 K resolution with a max IT of 100 ms and an AGC target of 3e6. The top 10 signals were isolated at a window of 2.0 m/z and fragmented using an NCE of 28. Fragments were acquired at 17 K resolution with a max IT of 75 ms and an AGC target of 2e5. Singly charged, 6× and higher charged mass peaks were excluded from selection. Data were acquired from 0 to 60 min.
 
-## Database search
+#### Database search
 
 Data were analyzed against the proteome database from E. coli K-12 (UniprotKB, TaxID 83333), including amino acid sequences for heterologous orthologs, using PEAKS Studio 10.0 (Bioinformatics Solutions Inc) allowing for 20 ppm parent ion and 0.02 m/z fragment ion mass error, two missed cleavages, carbamidomethylation as fixed and methionine oxidation and N/Q deamidation as variable modifications. Peptide spectrum matches were filtered against 1% false discovery rate and protein identifications with ≥2 unique peptides were accepted as significant.
 
-## 2-Methyl tryptophan biosynthesis
+### 2-Methyl tryptophan biosynthesis
 
 The mature protein coding sequence of the tryptophan 2-C-methyltransferase (TsrM) from S. laurentii (GenBank: FJ652572.1) was codon optimized for E. coli expression and synthetized by TWB. The optimized TsrM sequence was inserted into a pBbA5k BglBrick backbone between the BglII and BamHI sites to obtain the vector pTsrM. Codon-optimized genes encoding electron transfer proteins were cloned between the BamHI and XhoI sites of the pTsrM vector (Supplementary file 8). The vector for cobalamin importer overexpression was constructed similarly to a previously published report (Lanz et al., 2018). The genes for proteins BtuB (AYG21241.1, GenBank), BtuC (AYG19236.1, GenBank), BtuD (AYG19238.1, GenBank), BtuE (AYG19237.1, GenBank), and BtuF (AYG20683.1, GenBank) were amplified from E. coli MG1655 genome and cloned into the backbone pBbS2c BglBrick backbone to create the vector pBtu.
 
 2-Methyl tryptophan was produced using E. coli NCM3722 pBtu and with plasmids pTsrM, pTsrM_Scatt3Fd, pTsrM_Fdx1, pTsrM_Fdx2, or pTsrM_Fdx3. Individual colonies were picked and inoculated for precultures grown overnight in 1 mL of SAM MOPS minimal medium (MOPS minimal medium [Neidhardt et al., 1974] supplemented with 1% w/vol glucose, 0.25% Casamino acids, and 7 μM hydroxocobalamin), at 37°C. The cultures (triplicates) were obtained by inoculating 50 μL of precultures in 3 mL of SAM MOPS minimal medium. The cultures were grown at 37°C to OD600 of 0.05–0.1 for pBtu induction (83.3 ng/mL aTc) and continued to grow in the same conditions. At OD600 0.5, TsrM and ferredoxin expression were induced (0.25 mM IPTG) and the medium supplemented with 0.15 mM cysteine and 32.5 μM FeCl3. Cultures were incubated at room temperature. Samples were taken after 24 hr (1 ml and the equivalent of 1 ml sample with 0.5 OD600 samples). Samples were centrifuged at 15,000 rpm for 2 min, and supernatants were transferred to new tubes. Pellets were quenched with quenching solution (methanol, acetonitrile, and water, ratio of 5:3:1) + 0.1% formic acid and resuspended. Pellet samples were dried in speedvac at 40°C and resuspended with quenching solution for LC-MS measurement.
 
-## 2-Methyltryptophan quantification
+### 2-Methyltryptophan quantification
 
 2-Methyl tryptophan was quantified by an LC-MS system (Agilent) using an XBridge BEH Amide 2.5 μm (Waters, Bridge Columns) with a precolumn and equipped with a standard ESI source mass spectrometer (sample injection volume of 5 µL). The mobile phase was compound by two solvents, A (20 mM ammonium formate in 10% acetonitrile) and B (20 mM ammonium formate in 80% acetonitrile). After 6 min at 100% solvent B, the metabolites were separated by a gradient from 100% to 70% of solvent B for 6 min (flow rate 0.4 mL/min), followed by a gradient from 70% to 100% for 50 s (same flow rate) and held at 100% solvent B for 3 min 10 s. The 2-methyl tryptophan precursor ion (positive polarity, 219.1) was fragmented into product ions (144.1 and 128) using an ESI ionization in MRM mode. 2-Methyl tryptophan concentration was estimated using a calibration curve constructed with standard samples.
 
-## Expression and purification of heterologous IspGs
+### Expression and purification of heterologous IspGs
 
 Coding sequences of all tested IspG proteins were ordered codon optimized and cloned in a pET28a(+) plasmid by Genscript. A tobacco etch virus (TEV) protease cleavage site was inserted between the N-Terminal His-tag and the downstream IspG sequences. Each IspG was expressed and purified under aerobic conditions. Expression was carried out in BL21(DE3) cells for 3 hr under 1 mM IPTG induction at 37°C. Harvested cells were resuspended in lysis buffer (50 mM Tris pH 7.5, 250 mM NaCl, 10 mM imidazole), sonicated on ice (5 min, 10/30 s ON/OFF, power 70%), and resulting lysate was clarified by ultracentrifugation (40,000 g, 20 min, 4°C). Supernatant was loaded onto a 5 mL Ni-NTA column. Column was washed using lysis buffer +20 mM imidazole and proteins were eluted with lysis buffer +300 mM imidazole. Fractions containing IspG were pooled together and incubated with TEV protease harboring a His-tag (molar ratio: 1/100) o/n at 4°C for dialysis against storage buffer (50 mM Tris pH 7.5, 250 mM NaCl, 1 mM DTT). Dialysis bag content was reloaded onto 5 mL Ni-NTA column and flow-through (FT) containing IspG (without His-tag) was collected. Pure apo-IspG was concentrated and stored at –80°C. To counter instability of E. coli IspG, glycerol (50% final) was added to concentrated purified protein which was subsequently stored at –20°C.
 
-## Anaerobic purification of IspG and NadA orthologs
+### Anaerobic purification of IspG and NadA orthologs
 
 NadA orthologs from D. thermophilum and D. indicum and IspG orthologs from T. maritima and S. thermophilum were introduced for protein expression into pET22 and pET6H, respectively (Supplementary file 8). Expression was carried out aerobically in MG1655(DE3) cells for 3 hr under 0.5 mM IPTG induction at 37°C. Purifications of all proteins were performed the same day under anaerobiosis inside a glove box (Jacomex, O2 < 2 ppm) in lysis buffer (100 mM Tris pH 7.5, 150 mM NaCl), sonicated (10 min, 10/30 s ON/OFF, power 70%) and resulting lysate was clarified by ultracentrifugation (40,000 g, 20 min, 4°C). Supernatant was loaded anaerobically onto a 5 mL Ni-NTA column. Column was washed using lysis buffer +20 mM imidazole and proteins were eluted with lysis buffer +300 mM imidazole. Fractions containing enzymes (IspG and NadA) were desalted to remove imidazole using NAP-25 columns in 100 mM Tris-HCl pH 8, 150 mM NaCl and analyzed by UV-visible absorption spectroscopy and for their iron and sulfur content (Beinert, 1983; Fish, 1988).
 
-## Expression, purification, and reconstitution of E. coli ErpA
+### Expression, purification, and reconstitution of E. coli ErpA
 
 E. coli ErpA was obtained as previously reported (Loiseau et al., 2007).
 
-## Fe-S cluster transfer between E. coli ErpA and heterologous IspGs
+### Fe-S cluster transfer between E. coli ErpA and heterologous IspGs
 
 Fe-S cluster transfer experiment from E. coli ErpA to purified IspG orthologs was carried out in an anaerobic chamber (O2 < 2 ppm). For each transfer, one equivalent of apo-IspG (52 nmoles) from E. coli, B. subtilis, S. cattleya, or Synechocystis sp. CACIAM05 was incubated in transfer buffer (50 mM Tris pH 7.5, 250 mM NaCl, 1 mM DTT) for 5 min before addition of 2.2 equivalents of [Fe-S]-ErpA from E. coli (115 nmoles). After 1 hr incubation, the mixture was loaded onto a 5 mL Ni-NTA column. Fractions containing [Fe-S]-IspG were collected in the FT whereas ErpA was eluted using elution buffer (50 mM Tris pH 7.5, 250 mM NaCl, 300 mM imidazole). Fractions were analyzed by SDS-PAGE. UV-visible spectra of ErpA and IspG were recorded before and after incubation and Fe-S transfer.
 
-## TsrM overexpression and purification for in vitro studies
+### TsrM overexpression and purification for in vitro studies
 
 The coding sequence of TsrM from S. laurentii preceded by an N-terminal TEV protease cleavable His-tag, was ordered codon optimized and subcloned into pET28a(+) vectors (Genscript). TsrM was coexpressed together with the Btu operon in BL21(DE3) cultured in LB medium supplemented with FeCl3 (50 µM), L-cysteine (150 µM), and hydroxy-cobalamin (2 µM). Btu operon expression was induced at OD600 = 0.3 using aTc (100 ng/mL) and TsrM expression was induced using IPTG (1 mM) at an OD600 = 0.7 for 18 hr at 18°C. Cells were harvested (6000 rpm, 20 min, 4°C), washed with NaCl 0.9%, and stored at –80°C. TsrM was purified purification under anaerobic conditions (O2 <2 ppm) in a glove box (Jacomex). Cells expressing TsrM were resuspended in buffer containing 50 mM Tris pH 7.5, 250 mM NaCl, 10 mM imidazole, 10% glycerol, 0.1% Tween 20, and sonicated for 7 min (10/30 s ON/OFF, power 50%). After ultracentrifugation (40,000 g, 20 min, 4°C), the soluble fraction was loaded onto a 5 mL Ni-NTA column equilibrated with buffer containing 50 mM Tris pH 7.5, 250 mM NaCl. After an extensive washing with buffer containing 50 mM Tris pH 7.5, 250 mM NaCl, 20 mM imidazole buffer, TsrM was eluted with buffer containing 50 mM Tris pH 7.5, 250 mM NaCl, 300 mM imidazole. Imidazole was removed using a HiPrep 26/10 desalting column equilibrated with buffer containing 50 mM Tris pH 7.5, 250 mM NaCl, 1 mM DTT. TsrM was then concentrated using an amicon cell until 37 mg/mL. As-isolated TsrM was then buffer exchanged into 25 mM Hepes pH 7.5, 300 mM KCl, 5% glycerol using micro Bio-spin six desalting column and used for electrochemistry (cyclic voltammetry) under anaerobic conditions or aliquoted for storage in liquid N2.
 
-## Expression and purification of S. cattleya ferredoxins
+### Expression and purification of S. cattleya ferredoxins
 
 Coding sequences of the three ferredoxins from S. cattleya (AEW96347.1 (Fdx1), AEW92689.1 (Fdx2), AEW97532.1 (Fdx3)), all preceded by an N-terminal TEV protease cleavable His-tag, were ordered codon optimized for expression in E. coli and subcloned into pET28a(+) vectors (Genscript). Each ferredoxin was expressed in BL21(DE3) cells cultured in LB medium. Protein expression was induced using IPTG (1 mM) for 3 hr at 37°C. Cells were harvested (6000 rpm, 20 min, 4°C) and washed with NaCl 0.9% before storage at –80 °C. All ferredoxins were purified under anaerobic conditions (02 <2 ppm) in a glove box. Cells expressing ferredoxins were resuspended in buffer containing 50 mM Tris pH 7.5, 250 mM NaCl, 10 mM imidazole, 10% glycerol, 0.1% Tween 20, and sonicated for 7 min (10/30 s ON/OFF, power 50%). After ultracentrifugation (40,000 g, 20 min, 4°C), the soluble fractions were loaded onto three separate 5 mL Ni-NTA columns equilibrated with 50 mM Tris pH 7.5, 250 mM NaCl. Columns were washed using buffer containing 50 mM Tris pH 7.5, 250 mM NaCl, 20 mM imidazole, and proteins were eluted with buffer containing 50 mM Tris pH 7.5, 250 mM NaCl, 300 mM imidazole. Imidazole was removed using a HiPrep 26/10 desalting column, equilibrated with a buffer containing 50 mM Tris pH 7.5, 250 mM NaCl, 1 mM DTT. Ferredoxins cleared of imidazole were incubated overnight in presence of TEV (molar ratio: 1/100). The mixtures were reloaded onto five different 5 mL Ni-NTA columns and FT, containing ferredoxins, were collected.
 
-## Fe-S reconstitution of S. cattleya Fdx1
+### Fe-S reconstitution of S. cattleya Fdx1
 
 Fdx2 and Fdx3 from S. cattleya were purified anaerobically with their Fe-S clusters in contrast to Fdx1 which was obtained as an apo-form. Fdx1 was therefore reconstituted within an anaerobic chamber. Fdx1 was incubated in buffer containing 50 mM Tris pH 7.5, 250 mM NaCl, 1 mM DTT with 10-fold equivalents of Fe2+ (Mohr salt) and 10-fold equivalents of S2- (Na2S). The reaction occurred for 3 hr at RT and after centrifugation (15 min at 16,000 g) the mixture was loaded onto a Superdex-75 10/300 column. Fractions containing reconstituted Fdx1 were pooled and concentrated using concentrators for microfuge. Subsequent analysis of Fe content and concentration determination were performed as described below.
 
-## Biochemical analyses of TsrM
+### Biochemical analyses of TsrM
 
 Concentration of proteins (TsrM and ferredoxins) was determined using Rose Bengal with BSA as standard (Elliott and Brewer, 1978) and the Fe content was determined using the Fish method (Fish, 1988). The cobalamin content of as-isolated TsrM was determined by UV-visible absorption spectroscopy through its conversion to dicyanocobalamin (ε367 = 30,800 M–1cm–1) using a treatment with 0.1 M potassium cyanide following a procedure previously reported (Blaszczyk et al., 2016).
 
-## Protein-film electrochemistry
+### Protein-film electrochemistry
 
 Protein-film electrochemistry experiments were performed anaerobically inside an anaerobic chamber (O2 <2 ppm) using freshly purified TsrM, [Fe-S]-containing ferredoxins and a potentiostat (biologic). A three-electrode configuration was used in a small volume analytical cell (biologic) with a platinum wire and an Ag/AgCl electrode as counter and reference electrode, respectively. When analyzing TsrM, a pyrolytic graphite edge (PGE) electrode was used to collect electrochemical measurements. The electrode was polished with sand paper 1200 followed by 1 µm alumina, and then baseline measurements were collected by placing the PGE electrode into the buffer cell solution (10 mM MES, 10 mM CHES, 10 mM TAPS, 10 mM HEPES pH 8, 200 mM NaCl). Then, 3 µL of 350 µM TsrM were applied to the polished PGE electrode for 5 min before being rinsed with 200 µL of the buffer cell solution. Next, the electrode was immediately placed back in the buffer cell solution for measurements. For ferredoxins, a glassy carbon electrode polished using 1 µm alumina was used within a setup combining a small volume analytical cell and the sample holder of the SVC-2 kit (Biologic). Ferredoxin solutions were at 50 µM (in 10 mM MES, 10 mM CHES, 10 mM TAPS, 10 mM HEPES pH 8, 200 mM NaCl buffer). Cyclic voltammograms were collected at room temperature with a scan rate of 100 mV/s. Redox potentials of TsrM and ferredoxins were determined through square wave voltammetry (SWV) under the same conditions as previously described for cyclic voltammetry. The SWV input signal consisted of a staircase ramp from −1 to –0.3 V vs Ag/AgCl, with 2 mV increments, 50 mV stair amplitude, and 5 Hz frequency. Electrochemical signals were analyzed by correction of the non-Faradaic component from the raw data using the QSoas package (Fourmond et al., 2009).
 
-## TsrM-ferredoxin affinity measurements
+### TsrM-ferredoxin affinity measurements
 
 Affinity interactions between TsrM and S. cattleya ferredoxins were measured by BLI inside an anaerobic chamber (O2 <2 ppm) equipped with a BLItz system (FortéBio). All proteins were buffer exchanged into 25 mM Hepes pH 7.5, 300 mM KCl, 5% glycerol using micro Bio-spin6 desalting columns. Ferredoxins were biotinylated through incubation with one equivalent of NHS-PEG4-Biotin. After 30 min, excess NHS-PEG4-Biotin was removed using a micro Bio-spin six desalting column. Biotinylated ferredoxins (10 µg/mL) were bound for 60 s to streptavidin biosensors equilibrated in BLI buffer (25 mM Hepes pH 7.5, 300 mM KCl, 5% glycerol) containing Tween 20 and BSA to inhibit nonspecific binding, following manufacturer recommendations. After having been plunged for 20 s for equilibration in BLI buffer, the loaded biosensor was plunged into TsrM solution for 80 s, followed by 60 s into BLI buffer for association constant and dissociation constant measurements, respectively. This procedure was repeated for various concentrations of TsrM. Affinity constants were extracted from fitted raw data using the BLItz software (PALL/FortéBio).

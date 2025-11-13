@@ -10,8 +10,8 @@
 
 ### Affiliations
 
-1. https://ror.org/0316ej306 Department of Chemical and Biological Physics, Weizmann Institute of Science Rehovot Israel
-2. https://ror.org/0316ej306 Department of Molecular Genetics, Weizmann Institute of Science Rehovot Israel
+1. Department of Chemical and Biological Physics, Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))
+2. Department of Molecular Genetics, Weizmann Institute of Science Rehovot Israel ([ROR:0316ej306](https://ror.org/0316ej306))
 
 † Corresponding author
 
@@ -35,7 +35,7 @@ Our manuscript is organized as follows. We first show observations of a core-she
 
 ## Results
 
-## Spatial organization of chromatin and RNA Pol II in intact, live Drosophila cells
+### Spatial organization of chromatin and RNA Pol II in intact, live Drosophila cells
 
 Chromatin in intact, live tissue Drosophila cells organizes peripherally, with a chromatin-depleted central region in the nucleus (Amiad-Pavlov et al., 2021). Such organization differs from the conventional picture of chromatin as a polymer network that fills the entire nucleus (Bickmore, 2013; Misteli, 2020; Kempfer and Pombo, 2020) and motivates further investigation of the smaller scale structure of the peripheral chromatin layer. Experimental evidence shows that despite the tendency of chromatin to phase separate from the nucleoplasm, it does not behave like a simple liquid that wets the entire nuclear lamina. Instead, it further assembles into a series of dense chromatin domains distributed along the periphery (Amiad-Pavlov et al., 2021). The physical mechanisms leading to such a distribution of dense chromatin cores parallel to the nuclear envelope remain elusive. Some hints come from evidence showing that chromatin regions with H3K9ac modification, a marker of active chromatin, are also found along the periphery, but they are distributed around the dense chromatin domains. This seems to be a microphase-separated state, in which dense chromatin occupies the core of such domains and chromatin with H3K9ac modifications is only found at the shell, such that the chromatin domains exhibit a core-shell organization. If indeed active marks are related to transcription, where is the transcription machinery located? In particular, what is its role in shaping genome organization?
 
@@ -45,15 +45,15 @@ Live imaging of intact, live Drosophila third instar larvae in which total chrom
 
 **Figure 1.:** Representative image of a muscle nucleus of live Drosophila third instar larvae labeled with Histone2B-mRFP (A, red, expressed under endogenous promoter) and with Rpb3-GFP (A’, green, expressed in muscles under Mef2-GAL4 driver), and their merged images (A”). B–B” panels are corresponding enlargements of the rectangle area illustrated in A”. Note that the RNA Pol II green signal (Rpb3-GFP), representing transcribed regions, is observed mostly at the circumference of clusters of non-transcribed DNA depicted by the histone2B-associated red signal.
 
-## Theoretical model: chromatin as a multiblock copolymer
+### Theoretical model: chromatin as a multiblock copolymer
 
-We model chromatin as a multiblock copolymer with two types of blocks, active (A) and inactive (B) blocks, see Figure 2A. The A blocks represent active chromatin regions (active genes) and the B blocks inactive chromatin regions (silent genes), which could roughly correspond to euchromatin and facultative heterochromatin, respectively (Lieberman-Aiden et al., 2009; Hildebrand and Dekker, 2020; Mirny and Dekker, 2022). For simplicity, we treat a chromosome as a polymer made of N total monomers with a periodic pattern of NA monomers of type A, followed by NB monomers of type B. The total number of monomers is given by N=n⁢(NA+NB), where n is the number of blocks of each type in the polymer. For simplicity we consider the case where both types of monomers have the same molecular size a. Motivated by recent experimental and theoretical studies on chromatin organization showing that chromatin behaves as a self-attractive polymer (polymer in poor solvent) (Amiad-Pavlov et al., 2021; Bajpai et al., 2021; Adame-Arana and Safran, 2021), we model both blocks (in the absence of chromatin-binding protein complexes) as being in poor solvent conditions; both blocks phase separate from the aqueous phase, consistent with the experiments. However, due to the difference in attraction of AA vs. BB, the two types of blocks will undergo a further, microphase separation, reminiscent of the data in Amiad-Pavlov et al., 2021, where acetylated chromatin is mostly found surrounding regions of higher density of chromatin. This is in agreement with the well-established fact that chromatin separates into different compartments (Lieberman-Aiden et al., 2009; Mirny et al., 2019; Hildebrand and Dekker, 2020). In general, microphase separation can take different forms, where the selectivity of the solvent (poorer solvent for the inactive blocks) leads to lamellar, spherical, or cylindrical organization depending on the length of the different blocks, the type of solvent, and the interactions between the blocks (de Gennes, 1978; Semenov, 1985; Ohta and Kawasaki, 1986; Olvera de la Cruz, 1989; Zhulina et al., 2005). In Figure 2B, as an example, we show a string of micelles where the core is made of strongly attractive inactive blocks and the shell is composed of active blocks. In what follows we describe a minimal model of the regulation of chromatin microphase separation where the inactive blocks form a dense core (inactive core) and the active blocks are in a more dilute shell (active shell) which can be accessed by protein complexes that reversibly bind to the active blocks. Our model considers microphase separation in the strong segregation limit (Semenov, 1985; Ohta and Kawasaki, 1986) with sharp interfaces, the strong incompatibility arises here from the strong selectivity of the solvent, in which inactive blocks experience very strong compaction, reminiscent of the much higher density of DNA in inactive compartments. Hereafter, we omit the word reversibly and binding should be understood in the remaining of the text as equilibrium reversible binding unless otherwise stated. Our assumption that protein complexes only bind to active monomers stems from the observed lack of penetration of RNA Pol II into the dense chromatin cores as shown in Figure 1. Additionally, there is further evidence showing that large particles cannot diffuse into inactive chromatin domains (Gelléri et al., 2022).
+We model chromatin as a multiblock copolymer with two types of blocks, active (A) and inactive (B) blocks, see Figure 2A. The A blocks represent active chromatin regions (active genes) and the B blocks inactive chromatin regions (silent genes), which could roughly correspond to euchromatin and facultative heterochromatin, respectively (Lieberman-Aiden et al., 2009; Hildebrand and Dekker, 2020; Mirny and Dekker, 2022). For simplicity, we treat a chromosome as a polymer made of $N$ total monomers with a periodic pattern of $N_{A}$ monomers of type A, followed by $N_{B}$ monomers of type B. The total number of monomers is given by $N=n⁢(N_{A}+N_{B})$, where $n$ is the number of blocks of each type in the polymer. For simplicity we consider the case where both types of monomers have the same molecular size $a$. Motivated by recent experimental and theoretical studies on chromatin organization showing that chromatin behaves as a self-attractive polymer (polymer in poor solvent) (Amiad-Pavlov et al., 2021; Bajpai et al., 2021; Adame-Arana and Safran, 2021), we model both blocks (in the absence of chromatin-binding protein complexes) as being in poor solvent conditions; both blocks phase separate from the aqueous phase, consistent with the experiments. However, due to the difference in attraction of AA vs. BB, the two types of blocks will undergo a further, microphase separation, reminiscent of the data in Amiad-Pavlov et al., 2021, where acetylated chromatin is mostly found surrounding regions of higher density of chromatin. This is in agreement with the well-established fact that chromatin separates into different compartments (Lieberman-Aiden et al., 2009; Mirny et al., 2019; Hildebrand and Dekker, 2020). In general, microphase separation can take different forms, where the selectivity of the solvent (poorer solvent for the inactive blocks) leads to lamellar, spherical, or cylindrical organization depending on the length of the different blocks, the type of solvent, and the interactions between the blocks (de Gennes, 1978; Semenov, 1985; Ohta and Kawasaki, 1986; Olvera de la Cruz, 1989; Zhulina et al., 2005). In Figure 2B, as an example, we show a string of micelles where the core is made of strongly attractive inactive blocks and the shell is composed of active blocks. In what follows we describe a minimal model of the regulation of chromatin microphase separation where the inactive blocks form a dense core (inactive core) and the active blocks are in a more dilute shell (active shell) which can be accessed by protein complexes that reversibly bind to the active blocks. Our model considers microphase separation in the strong segregation limit (Semenov, 1985; Ohta and Kawasaki, 1986) with sharp interfaces, the strong incompatibility arises here from the strong selectivity of the solvent, in which inactive blocks experience very strong compaction, reminiscent of the much higher density of DNA in inactive compartments. Hereafter, we omit the word reversibly and binding should be understood in the remaining of the text as equilibrium reversible binding unless otherwise stated. Our assumption that protein complexes only bind to active monomers stems from the observed lack of penetration of RNA Pol II into the dense chromatin cores as shown in Figure 1. Additionally, there is further evidence showing that large particles cannot diffuse into inactive chromatin domains (Gelléri et al., 2022).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/82983/elife-82983-fig2-v1.jpg)
 
-**Figure 2.:** Left: Chromatin as a multiblock copolymer with active (green) and inactive blocks (red) comprising  and NA monomers, respectively. Right: Core-shell organization of chromatin. The cores (red area) are composed of condensed, inactive blocks of chromatin and the shells (green area) are composed of active blocks of chromatin that are less condensed that the cores in the absence of chromatin-binding protein complexes that cause them to be even more swollen.NB
+**Figure 2.:** Left: Chromatin as a multiblock copolymer with active (green) and inactive blocks (red) comprising $N_{A}$ and $N_{B}$ monomers, respectively. Right: Core-shell organization of chromatin. The cores (red area) are composed of condensed, inactive blocks of chromatin and the shells (green area) are composed of active blocks of chromatin that are less condensed that the cores in the absence of chromatin-binding protein complexes that cause them to be even more swollen.
 
-## Core-shell organization of chromatin in a solution of protein complexes
+### Core-shell organization of chromatin in a solution of protein complexes
 
 In order to simplify our discussion, we focus on the layer geometry shown in Figure 3 and later on apply our results to spherical domains. The system has three different regions. Two of these regions are the core, which contains the inactive blocks and some solvent and the shell which contains the active blocks, solvent, and protein complexes; these can either be bound to the active blocks or free in solution in the volume defined by the extension of the active blocks. Finally, there is the bulk solution, in which there are only protein complexes and solvent, which acts as a reservoir of protein complexes for the core-shell system. Below, we define the free energy contributions of each of these regions.
 
@@ -61,133 +61,287 @@ In order to simplify our discussion, we focus on the layer geometry shown in Fig
 
 **Figure 3.:** The microphase-separated state in the layer geometry is characterized by three regions: The core (red shaded area), which is composed of inactive blocks (red curves) and solvent (not shown), the shell (green shaded area), comprising active blocks (green curves), free and bound protein complexes (yellow circles) and solvent (not shown), and finally the bulk solution (blue shaded area) of protein complexes (yellow circles).
 
-## Inactive core
+#### Inactive core
 
-The core composed of inactive blocks and some solvent has an interfacial area, S, at each of its interfaces with the shell and a thickness 2⁢LB. The volume fraction of the inactive blocks within the core is ϕB and in the limit of attractive interactions among the inactive blocks that are much larger than those of the active blocks or the binding energy of the protein to the active blocks, this volume fraction is a constant. Such an approximation is motivated by the fact that dense chromatin domains are known to have much higher concentrations that chromatin found in transcriptionally active compartments (Gelléri et al., 2022). We now define the free energy of the core as(1)Fcore=2γS,
+The core composed of inactive blocks and some solvent has an interfacial area, $S$, at each of its interfaces with the shell and a thickness $2⁢L_{B}$. The volume fraction of the inactive blocks within the core is $ϕ_{B}$ and in the limit of attractive interactions among the inactive blocks that are much larger than those of the active blocks or the binding energy of the protein to the active blocks, this volume fraction is a constant. Such an approximation is motivated by the fact that dense chromatin domains are known to have much higher concentrations that chromatin found in transcriptionally active compartments (Gelléri et al., 2022). We now define the free energy of the core as
 
-and the conservation of B monomers by (2)a3⁢n⁢NB=2⁢ϕB⁢LB⁢S.
+$$
+F_{core}=2\gammaS,
+$$
+
+and the conservation of B monomers by
+
+$$
+a^{3}⁢n⁢N_{B}=2⁢ϕ_{B}⁢L_{B}⁢S.
+$$
 
 In the expression for the free energy of the core, Equation 1, we did not consider the elastic contribution from the inactive blocks because it is usually negligible compared to the interfacial tension and other contributions (Zhulina et al., 2005).
 
-## Active shell
+#### Active shell
 
-The spatial extent of the active shell region is determined by the extension of the loops of active blocks, LA, which emanate from the core. The volume of the active shell region is given by Vshell=2⁢LA⁢S. The composition variables in the shell are: the volume fraction of the active monomers, ϕA, the probability that an active monomer is bound to a protein complex, Ω, and the volume fraction of free protein complexes within the solvent of the shell, ϕfc=a3⁢Nfc/(2⁢LA⁢S). Here, we have introduced the total number of free protein complexes in the shell region, Nfc. We now define the free energy of the shell, Fshell, as the sum of three contributions,(3)Fshell=Fmix+Fbin+Fbrush.
+The spatial extent of the active shell region is determined by the extension of the loops of active blocks, $L_{A}$, which emanate from the core. The volume of the active shell region is given by $V_{shell}=2⁢L_{A}⁢S$. The composition variables in the shell are: the volume fraction of the active monomers, $ϕ_{A}$, the probability that an active monomer is bound to a protein complex, $Ω$, and the volume fraction of free protein complexes within the solvent of the shell, $ϕ_{fc}=a^{3}⁢N_{fc}/(2⁢L_{A}⁢S)$. Here, we have introduced the total number of free protein complexes in the shell region, $N_{fc}$. We now define the free energy of the shell, $F_{shell}$, as the sum of three contributions,
 
-The first contribution is the mixing entropy of the solvent molecules and the protein complexes, which is given by(4)Fmix=2LASkBTa3(ϕfclog⁡ϕfc+(1−ϕfc−ϕA−ϕAΩ)log⁡(1−ϕfc−ϕA−ϕAΩ)).
+$$
+F_{shell}=F_{mix}+F_{bin}+F_{brush}.
+$$
 
-The second contribution is the decrease in free energy due to the binding of protein complexes to the active blocksFbind=n⁢NA⁢kB⁢T⁢(Ω⁢log⁡Ω+(1-Ω)⁢log⁡(1-Ω)-ϵ⁢Ω),
+The first contribution is the mixing entropy of the solvent molecules and the protein complexes, which is given by
 
-here, the first and second terms are entropic contributions associated with the number of available active monomers to which a protein complex can bind, and the third term is the energy gain, ϵ, of a protein complex that binds to an active block. The last contribution to the free energy of the shell region, Fbrush, stems from the active blocks and we choose it to be identical with that of a polymer brush. This free energy includes the polymer stretching energy and the interactions between the monomers of the active blocks and is given by(5)Fbrush=n⁢kB⁢T⁢(3⁢LA2NA⁢a2+v⁢NA⁢ϕA⁢(1-Ω)22).
+$$
+F_{mix}=\frac{2L_{A}Sk_{B}T}{a^{3}}(ϕ_{fc}log⁡ϕ_{fc}+(1−ϕ_{fc}−ϕ_{A}−ϕ_{A}Ω)log⁡(1−ϕ_{fc}−ϕ_{A}−ϕ_{A}Ω)).
+$$
 
-where we introduced the interaction between active monomers, v, which we consider to be attractive (in the absence of protein binding), that is v<0. One core assumption in our model is that the presence of bound protein complexes reduces the effective attraction between active monomers. The rationale is based in the following: The protein complexes that bind to active chromatin tend to be relatively large (e.g., RNA Pol II pre-initiation complex), in which a myriad of proteins assemble jointly with RNA Pol II in order to initiate transcription, which can lead to steric repulsion due to the large macromolecular volume of such complexes (Hahn, 2004). Moreover, while RNA Pol II interacts with the DNA in the chromatin fiber via positively charged patches at its surface, most of its surface is negatively charged (Cramer et al., 2001). Hence, we assume that when RNA Pol II is bound to the chromatin fiber, those Pol II regions that are negatively charged would effectively provide a repulsive force within the chromatin fibers. Another possible explanation is that in the vicinity of active monomers, the transcription complex carries mRNA, which is known to segregate from chromatin (Hilbert et al., 2021). While a more thorough analysis of the molecular interactions would be interesting, it is out of the scope of our paper that uses a coarse-grained, polymer physics approach. This approach also allows our model to be predictive as to the physical organization and growth of the domains, independent of those molecular details that are as yet unknown.
+The second contribution is the decrease in free energy due to the binding of protein complexes to the active blocks
+
+$$
+F_{bind}=n⁢N_{A}⁢k_{B}⁢T⁢(Ω⁢log⁡Ω+(1-Ω)⁢log⁡(1-Ω)-ϵ⁢Ω),
+$$
+
+here, the first and second terms are entropic contributions associated with the number of available active monomers to which a protein complex can bind, and the third term is the energy gain, $ϵ$, of a protein complex that binds to an active block. The last contribution to the free energy of the shell region, $F_{brush}$, stems from the active blocks and we choose it to be identical with that of a polymer brush. This free energy includes the polymer stretching energy and the interactions between the monomers of the active blocks and is given by
+
+$$
+F_{brush}=n⁢k_{B}⁢T⁢(\frac{3⁢L_{A}^{2}}{N_{A}⁢a^{2}}+\frac{v⁢N_{A}⁢ϕ_{A}⁢(1-Ω)^{2}}{2}).
+$$
+
+where we introduced the interaction between active monomers, $v$, which we consider to be attractive (in the absence of protein binding), that is $v<0$. One core assumption in our model is that the presence of bound protein complexes reduces the effective attraction between active monomers. The rationale is based in the following: The protein complexes that bind to active chromatin tend to be relatively large (e.g., RNA Pol II pre-initiation complex), in which a myriad of proteins assemble jointly with RNA Pol II in order to initiate transcription, which can lead to steric repulsion due to the large macromolecular volume of such complexes (Hahn, 2004). Moreover, while RNA Pol II interacts with the DNA in the chromatin fiber via positively charged patches at its surface, most of its surface is negatively charged (Cramer et al., 2001). Hence, we assume that when RNA Pol II is bound to the chromatin fiber, those Pol II regions that are negatively charged would effectively provide a repulsive force within the chromatin fibers. Another possible explanation is that in the vicinity of active monomers, the transcription complex carries mRNA, which is known to segregate from chromatin (Hilbert et al., 2021). While a more thorough analysis of the molecular interactions would be interesting, it is out of the scope of our paper that uses a coarse-grained, polymer physics approach. This approach also allows our model to be predictive as to the physical organization and growth of the domains, independent of those molecular details that are as yet unknown.
 
 The free energy we consider in Equation 5 is appropriate in the limit that the surface density of the contacts between active and inactive blocks always remains relatively high; therefore, active blocks are heavily influenced by the presence of neighboring blocks. In this limit, the system behaves like a polymer brush. In the other limit that the surface density of contacts of the active and inactive brushes is sufficiently low, the appropriate expression would be that of isolated mushrooms in which each block is independent of each other and their description is equivalent to that of single polymers which obey simple scaling laws, depending on the solvent quality (Szleifer, 1996).
 
-The conservation of active monomers in the shell is expressed by(6)a3⁢n⁢Na=2⁢ϕA⁢LA⁢S.
+The conservation of active monomers in the shell is expressed by
+
+$$
+a^{3}⁢n⁢N_{a}=2⁢ϕ_{A}⁢L_{A}⁢S.
+$$
 
 In writing the free energy of the brush as in Equation 5, we made the simplifying assumption that the contribution of each loop of active blocks is the sum of the contributions of the two independent halves of a loop, disregarding the fact that the loops are closed. Since the closure only affects the conformations of the monomers at the ends of each brush, this approximation is appropriate when the brushes contain many monomers.
 
-## Bulk solution
+#### Bulk solution
 
-The bulk solution of protein complexes occupies a volume Vbulk whose free energy in the dilute limit is(7)Fbulk≈kB⁢T⁢Vbulka3⁢(ϕbulk⁢log⁡ϕbulk-ϕbulk),
+The bulk solution of protein complexes occupies a volume $V_{bulk}$ whose free energy in the dilute limit is
 
-where ϕbulk is the volume fraction of protein complexes in the bulk. Moreover, we consider the bulk solution to be much larger than the core and shell regions, so that it acts effectively as a reservoir of protein complexes whose exchange chemical potential is(8)μbulk=(∂⁡Fbulk∂⁡Nbulk)|Vbulk=kB⁢log⁡ϕbulk,
+$$
+F_{bulk}≈\frac{k_{B}⁢T⁢V_{bulk}}{a^{3}}⁢(ϕ_{bulk}⁢log⁡ϕ_{bulk}-ϕ_{bulk}),
+$$
 
-The osmotic pressure of the bulk solution is(9)Πbulk=-(∂⁡Fbulk∂⁡Vbulk)|Nbulk=kB⁢T⁢ϕbulka3,
+where $ϕ_{bulk}$ is the volume fraction of protein complexes in the bulk. Moreover, we consider the bulk solution to be much larger than the core and shell regions, so that it acts effectively as a reservoir of protein complexes whose exchange chemical potential is
 
-where we used the relation ϕbulk=a3⁢Nbulk/Vbulk. In equilibrium, the exchange chemical potentials of the protein complexes must be equal in the coexisting bulk and core-shell regions and the osmotic pressures must be balanced.
+$$
+\mu_{bulk}=(\frac{\partial⁡F_{bulk}}{\partial⁡N_{bulk}})|_{V_{bulk}}=k_{B}⁢log⁡ϕ_{bulk},
+$$
 
-## Equilibrium conditions for the chromatin core-shell system
+The osmotic pressure of the bulk solution is
 
-The total energy of the system, F, is then given by(10)F=Fcore+Fshell+Fbulk,
+$$
+Π_{bulk}=-(\frac{\partial⁡F_{bulk}}{\partial⁡V_{bulk}})|_{N_{bulk}}=\frac{k_{B}⁢T⁢ϕ_{bulk}}{a^{3}},
+$$
 
-where Fcore, Fshell, and Fbulk are the free energy of the core, shell, and bulk solution, previously defined in Equations 1, 3, and 7, respectively. The degrees of freedom to be determined are: the thickness of the shell, LA, the interfacial area, S, and the number of free and bound protein complexes, Nfc and Nbc=n⁢Ω⁢NA, respectively. The thermodynamic conditions for coexistence of the bulk solution with the core-shell structure are given by requiring equality of the exchange chemical potentials of the protein complexes within the shell (bound and free) and the protein complexes in the bulk solution as well as the balance of osmotic pressures (see Appendix 2 for details).
+where we used the relation $ϕ_{bulk}=a^{3}⁢N_{bulk}/V_{bulk}$. In equilibrium, the exchange chemical potentials of the protein complexes must be equal in the coexisting bulk and core-shell regions and the osmotic pressures must be balanced.
 
-The equalities of the exchange chemical potentials of protein complexes in the system can be expressed as(11)μfc=μbc,(12)μfc=μbulk,
+### Equilibrium conditions for the chromatin core-shell system
 
-where the exchange chemical potential of the free protein complexes is(13)μfc=(∂⁡Fshell∂⁡Nfc)LA,S,Nbc,
+The total energy of the system, $F$, is then given by
 
-and the exchange chemical potential of the bound protein complexes is given by(14)μbc=(∂⁡Fshell∂⁡Nbc)LA,S,Nfc.
+$$
+F=F_{core}+F_{shell}+F_{bulk},
+$$
 
-The third condition is the equality of the osmotic pressures in the shell region and bulk solution(15)Πshell=Πbulk,
+where $F_{core}$, $F_{shell}$, and $F_{bulk}$ are the free energy of the core, shell, and bulk solution, previously defined in Equations 1, 3, and 7, respectively. The degrees of freedom to be determined are: the thickness of the shell, $L_{A}$, the interfacial area, $S$, and the number of free and bound protein complexes, $N_{fc}$ and $N_{bc}=n⁢Ω⁢N_{A}$, respectively. The thermodynamic conditions for coexistence of the bulk solution with the core-shell structure are given by requiring equality of the exchange chemical potentials of the protein complexes within the shell (bound and free) and the protein complexes in the bulk solution as well as the balance of osmotic pressures (see Appendix 2 for details).
 
-where the osmotic pressure in the shell, Πshell, due to a change in the brush length LA is given by(16)Πshell=-12⁢S⁢(∂⁡Fshell∂⁡LA)|S,Nbc,Nfc.
+The equalities of the exchange chemical potentials of protein complexes in the system can be expressed as
 
-The free energy in the core-shell region also varies with changes in the interfacial area S, so the osmotic pressure equality also implies:(17)(∂⁡F∂⁡S)|LA,Nbc,Nfc+2⁢Πshell⁢LA=0.
+$$
+\mu_{fc}=\mu_{bc},
+$$
+
+
+
+$$
+\mu_{fc}=\mu_{bulk},
+$$
+
+where the exchange chemical potential of the free protein complexes is
+
+$$
+\mu_{fc}=(\frac{\partial⁡F_{shell}}{\partial⁡N_{fc}})_{L_{A},S,N_{bc}},
+$$
+
+and the exchange chemical potential of the bound protein complexes is given by
+
+$$
+\mu_{bc}=(\frac{\partial⁡F_{shell}}{\partial⁡N_{bc}})_{L_{A},S,N_{fc}}.
+$$
+
+The third condition is the equality of the osmotic pressures in the shell region and bulk solution
+
+$$
+Π_{shell}=Π_{bulk},
+$$
+
+where the osmotic pressure in the shell, $Π_{shell}$, due to a change in the brush length $L_{A}$ is given by
+
+$$
+Π_{shell}=-\frac{1}{2⁢S}⁢(\frac{\partial⁡F_{shell}}{\partial⁡L_{A}})|_{S,N_{bc},N_{fc}}.
+$$
+
+The free energy in the core-shell region also varies with changes in the interfacial area $S$, so the osmotic pressure equality also implies:
+
+$$
+(\frac{\partial⁡F}{\partial⁡S})|_{L_{A},N_{bc},N_{fc}}+2⁢Π_{shell}⁢L_{A}=0.
+$$
 
 The equilibrium properties of the system are then found by simultaneously solving Equation 11, Equation 12, Equation 15, and Equation 17.
 
-## Protein complexes regulate the extension of the active chromatin blocks
+### Protein complexes regulate the extension of the active chromatin blocks
 
-We first focus on the effect that protein complexes have on the stretching of the polymer brush made of active chromatin blocks; hereafter, we refer to such polymer brush as the active chromatin brush. In order to find analytical solutions, we work in the limit of dilute protein complexes in (i) the bulk ϕbulk<<1 and (ii) the free protein complexes within the solvent in the region of the shell ϕfc≈ϕbulk. We derive in the Appendix 4 that the probability of an active monomer being bound to a protein complex is given by(18)Ω≈η1+η,
+We first focus on the effect that protein complexes have on the stretching of the polymer brush made of active chromatin blocks; hereafter, we refer to such polymer brush as the active chromatin brush. In order to find analytical solutions, we work in the limit of dilute protein complexes in (i) the bulk $ϕ_{bulk}<<1$ and (ii) the free protein complexes within the solvent in the region of the shell $ϕ_{fc}≈ϕ_{bulk}$. We derive in the Appendix 4 that the probability of an active monomer being bound to a protein complex is given by
 
-where we introduced the binding parameter η=e1+ϵ⁢ϕbulk (see Appendix 4 for details).
+$$
+Ω≈\frac{η}{1+η},
+$$
 
-The equality of the osmotic pressures in the shell region and in the bulk solution Πshell-Πbulk=0, Equation 56, can thus be approximated by(19)-32⁢σ2⁢ϕA+vη2⁢ϕA2+wη3⁢ϕA3≈0,
+where we introduced the binding parameter $η=e^{1+ϵ}⁢ϕ_{bulk}$ (see Appendix 4 for details).
 
-where we introduced the interfacial area per block s=S/n (whose dimensionless form is written σ=s/a2), an effective second virial coefficient(20)vη=v+(1+2⁢η)2(1+η)2,
+The equality of the osmotic pressures in the shell region and in the bulk solution $Π_{shell}-Π_{bulk}=0$, Equation 56, can thus be approximated by
 
-and an effective third virial coefficient(21)wη=(1+2⁢η)3(1+η)3.
+$$
+-\frac{3}{2⁢\sigma^{2}⁢ϕ_{A}}+\frac{v_{η}}{2}⁢ϕ_{A}^{2}+\frac{w_{η}}{3}⁢ϕ_{A}^{3}≈0,
+$$
 
-It is important to note that in our model the second and third virial coefficients can be tuned by the binding of protein complexes. Both virial coefficients increase with η, which can be controlled in two ways, by increasing the binding energy ϵ or the concentration of the protein complexes in the bulk solution, ϕbulk. The solvent regime experienced by the active chromatin brush is then regulated by the binding of protein complexes and it can range from poor solvent, vη<0, to good solvent, vη>0, passing through the theta solvent regime when vη≈0. In general, the different solvent regimes correspond to different scaling properties of the radius of gyration of single homopolymers in solution as a function of the number of monomers in the polymer. The different scaling regimes RG∼N3/5, RG∼N1/2, and RG∼N1/3 correspond to good, theta, and poor solvent regimes, respectively (Rubinstein and Colby, 2003). However in the case of polymer brushes, the scaling laws also depend on the grafting density of such polymers. In our model, only the active monomers experience different solvent regimes depending on whether the protein complexes bind to them and their surface density is fixed from a balance of the different free energy contributions in the system. This self-assembling situation differs from a polymer brush in which the surface density is considered to be fixed.
+where we introduced the interfacial area per block $s=S/n$ (whose dimensionless form is written $\sigma=s/a^{2}$), an effective second virial coefficient
 
-We discuss below the different parameter regimes and find approximate solutions for the volume fraction of the active chromatin brush ϕA and its corresponding dimensionless extension, λA=LA/a, in each of these regimes.
+$$
+v_{η}=\frac{v+(1+2⁢η)^{2}}{(1+η)^{2}},
+$$
 
-## Weak binding modifies the length of the collapsed active chromatin blocks
+and an effective third virial coefficient
 
-In the weak binding limit, the self-attraction of active chromatin blocks is reduced by the weak binding of protein complexes to the active monomers, but not enough to change the solvent of the active chromatin brush from a poor one to a good one. In this weak binding regime, characterized by η<|v|1/2/2−1/2, the effective second virial coefficient is balanced by the effective third virial coefficient (the second and third terms in Equation 19, respectively), which leads to a volume fraction of active monomers(22)ϕAc∼|vη|wη,
+$$
+w_{η}=\frac{(1+2⁢η)^{3}}{(1+η)^{3}}.
+$$
 
-and to an extension of the active chromatin brush(23)λAc∼NA⁢wηvη⁢σ.
+It is important to note that in our model the second and third virial coefficients can be tuned by the binding of protein complexes. Both virial coefficients increase with $η$, which can be controlled in two ways, by increasing the binding energy $ϵ$ or the concentration of the protein complexes in the bulk solution, $ϕ_{bulk}$. The solvent regime experienced by the active chromatin brush is then regulated by the binding of protein complexes and it can range from poor solvent, $v_{η}<0$, to good solvent, $v_{η}>0$, passing through the theta solvent regime when $v_{η}≈0$. In general, the different solvent regimes correspond to different scaling properties of the radius of gyration of single homopolymers in solution as a function of the number of monomers in the polymer. The different scaling regimes $R_{G}∼N^{3/5}$, $R_{G}∼N^{1/2}$, and $R_{G}∼N^{1/3}$ correspond to good, theta, and poor solvent regimes, respectively (Rubinstein and Colby, 2003). However in the case of polymer brushes, the scaling laws also depend on the grafting density of such polymers. In our model, only the active monomers experience different solvent regimes depending on whether the protein complexes bind to them and their surface density is fixed from a balance of the different free energy contributions in the system. This self-assembling situation differs from a polymer brush in which the surface density is considered to be fixed.
 
-These solutions show that the volume fraction of monomers in the shell is reduced by the presence of protein complexes bound to active chromatin compared to a system without protein complexes. In the poor solvent regime, the extension of the active brush scales linearly with the number of monomers (Halperin, 1988), similarly to a brush in good solvent (Alexander, 1977; de Gennes, 1980). However, there is a crucial difference between the two, which is that they scale differently with the interfacial area per block, σ. This different scaling as a function of the interfacial area per block then results (at the end of the calculation) in different scaling behaviors of the active chromatin brush height, the thickness of the core, and the interfacial area per block as a function of the number of active monomers per block.
+We discuss below the different parameter regimes and find approximate solutions for the volume fraction of the active chromatin brush $ϕ_{A}$ and its corresponding dimensionless extension, $\lambda_{A}=L_{A}/a$, in each of these regimes.
 
-## Strong binding of protein complexes swells the active chromatin brush
+#### Weak binding modifies the length of the collapsed active chromatin blocks
 
-When the protein complexes strongly bind to the active monomers, characterized by η>(v/2)1/2−1/2, or vη>0, the effective solvent quality for the active blocks changes from poor to good. In that case, the relevant terms in the osmotic pressure balance are the ones corresponding to the stretching of the active brush and the effective second virial coefficient from Equation 19. Balancing those two terms, we find(24)ϕAe∼1vη1/3⁢σ2/3,
+In the weak binding limit, the self-attraction of active chromatin blocks is reduced by the weak binding of protein complexes to the active monomers, but not enough to change the solvent of the active chromatin brush from a poor one to a good one. In this weak binding regime, characterized by $η<|v|^{1/2}/2−1/2$, the effective second virial coefficient is balanced by the effective third virial coefficient (the second and third terms in Equation 19, respectively), which leads to a volume fraction of active monomers
 
-which predicts an extension of the active brush:(25)λAe∼NAvη1/3⁢σ1/3.
+$$
+ϕ_{A}^{c}∼\frac{|v_{η}|}{w_{η}},
+$$
+
+and to an extension of the active chromatin brush
+
+$$
+\lambda_{A}^{c}∼\frac{N_{A}⁢w_{η}}{v_{η}⁢\sigma}.
+$$
+
+These solutions show that the volume fraction of monomers in the shell is reduced by the presence of protein complexes bound to active chromatin compared to a system without protein complexes. In the poor solvent regime, the extension of the active brush scales linearly with the number of monomers (Halperin, 1988), similarly to a brush in good solvent (Alexander, 1977; de Gennes, 1980). However, there is a crucial difference between the two, which is that they scale differently with the interfacial area per block, $\sigma$. This different scaling as a function of the interfacial area per block then results (at the end of the calculation) in different scaling behaviors of the active chromatin brush height, the thickness of the core, and the interfacial area per block as a function of the number of active monomers per block.
+
+#### Strong binding of protein complexes swells the active chromatin brush
+
+When the protein complexes strongly bind to the active monomers, characterized by $η>(v/2)^{1/2}−1/2$, or $v_{η}>0$, the effective solvent quality for the active blocks changes from poor to good. In that case, the relevant terms in the osmotic pressure balance are the ones corresponding to the stretching of the active brush and the effective second virial coefficient from Equation 19. Balancing those two terms, we find
+
+$$
+ϕ_{A}^{e}∼\frac{1}{v_{η}^{1/3}⁢\sigma^{2/3}},
+$$
+
+which predicts an extension of the active brush:
+
+$$
+\lambda_{A}^{e}∼\frac{N_{A}}{vη1/3⁢\sigma^{1/3}}.
+$$
 
 This is equivalent to the scaling of the height of a polymer brush in a good solvent in a mean field approximation Alexander, 1977; de Gennes, 1980, with the modification coming from the fact that here the second virial coefficient is controlled by the binding of protein complexes. We have then shown that protein complexes can modify the effective solvent quality experienced by the active chromatin blocks depending on the extent of binding.
 
-## Theta solvent conditions for the active chromatin blocks
+#### Theta solvent conditions for the active chromatin blocks
 
-We have shown that depending on the binding strength or concentration of the protein complexes, the active chromatin brush can experience poor or good solvent conditions. The transition between the two occurs at the so-called theta pointde (de Gennes, 1979), where the second virial coefficient in the system vanishes (the effective second virial coefficient in our case) and the active blocks behave as if they were ideal polymer chains. In this regime, we find that the volume fraction of active monomers is(26)ϕAΘ∼1wη1/4⁢σ1/2,
+We have shown that depending on the binding strength or concentration of the protein complexes, the active chromatin brush can experience poor or good solvent conditions. The transition between the two occurs at the so-called theta pointde (de Gennes, 1979), where the second virial coefficient in the system vanishes (the effective second virial coefficient in our case) and the active blocks behave as if they were ideal polymer chains. In this regime, we find that the volume fraction of active monomers is
 
-and that the extension of the brush is(27)λAΘ∼NA⁢wη1/4σ1/2.
+$$
+ϕ_{A}^{Θ}∼\frac{1}{wη1/4⁢\sigma^{1/2}},
+$$
 
-If we compare the three regimes in which the brush experiences poor, good, and theta solvent conditions, we find that in all of them, the brush height scales linearly with the number of active monomers in a block, but with different scalings as a function of the surface per block, σ. Unlike tethered brushes where the density at the surface is fixed, in this system the interfacial density of monomers is adjusted by the osmotic pressure equality (equivalent to minimization of the free energy of the reservoir and the core-shell system for constant total volume), which leads to different scaling behaviors as a function of the number of monomers in the active blocks.
+and that the extension of the brush is
 
-## Core size reduction driven by binding of protein complexes
+$$
+\lambda_{A}^{Θ}∼\frac{N_{A}⁢wη1/4}{\sigma^{1/2}}.
+$$
 
-We now explore the effect of the binding of protein complexes on the size of the inactive core in the different solvent regimes. We begin by solving the equation for the osmotic pressure balance that determines the interfacial area σ per block, Equation 57, and find its values in the poor (collapsed), good (extended), and theta solvent regimes: σc, σe and σΘ, respectively. The interfacial area per block in the poor solvent regime is given by(28)σc∼wη2/3NA1/3vη2/3α1/3,
+If we compare the three regimes in which the brush experiences poor, good, and theta solvent conditions, we find that in all of them, the brush height scales linearly with the number of active monomers in a block, but with different scalings as a function of the surface per block, $\sigma$. Unlike tethered brushes where the density at the surface is fixed, in this system the interfacial density of monomers is adjusted by the osmotic pressure equality (equivalent to minimization of the free energy of the reservoir and the core-shell system for constant total volume), which leads to different scaling behaviors as a function of the number of monomers in the active blocks.
 
-where we introduced the dimensionless interfacial tension, α=γ⁢a2/kB⁢T. In the good solvent regime we find:(29)σe∼vη2/5NA3/5α3/5,
+#### Core size reduction driven by binding of protein complexes
 
-and finally, in the theta solvent regime the surface area per block is(30)σΘ∼wη1/4NA1/2α1/2.
+We now explore the effect of the binding of protein complexes on the size of the inactive core in the different solvent regimes. We begin by solving the equation for the osmotic pressure balance that determines the interfacial area $\sigma$ per block, Equation 57, and find its values in the poor (collapsed), good (extended), and theta solvent regimes: σc, σe and $\sigma^{Θ}$, respectively. The interfacial area per block in the poor solvent regime is given by
 
-We find that the surface area per block increases with the protein concentration in bulk solution and the binding energy (lumped into the binding parameter η) in every regime and that its scaling with the number of monomers in the active blocks is, as expected, most pronounced in the good solvent regime (σ∼NA3/5).
+$$
+\sigma^{c}∼\frac{w_{η}^{2/3}N_{A}^{1/3}}{v_{η}^{2/3}\alpha^{1/3}},
+$$
 
-We now combine the results for the surface area per block with the conservation of inactive monomers to find the dimensionless thickness of the core, λB=LB/a and the dimensionless extension of the active chromatin brush, λA. In what follows we neglect numerical prefactors - the full expressions are given in Appendix 5. In the poor solvent regime, the thickness of the core, λBc, and the extension of the active chromatin brush, λAc, are given by(31)λBc∼NB⁢|vη|2/3⁢α1/3NA1/3⁢wη2/3⁢ϕB,λAc∼NA2/3⁢wη1/3⁢α1/3|vη|1/3.
+where we introduced the dimensionless interfacial tension, $\alpha=\gamma⁢a^{2}/k_{B}⁢T$. In the good solvent regime we find:
 
-The corresponding values in the good solvent regime for the thickness of the core and for the extension of the active chromatin brush are(32)λBe∼NBα3/5NAvη2/5ϕB,λAe∼NA4/5vη1/5α1/5,
+$$
+\sigma^{e}∼\frac{v_{η}^{2/5}N_{A}^{3/5}}{\alpha^{3/5}},
+$$
 
-and in the case of the theta solvent they are(33)λBθ∼NB⁢α1/2NA1/2⁢wη1/4⁢ϕB,λAθ∼NA3/4⁢wη1/8⁢α1/4.
+and finally, in the theta solvent regime the surface area per block is
 
-The scaling behaviors shown in Equations 31–33 show that the presence of protein complexes that can bind to active chromatin regions can induce transitions between these different regimes in which the thickness of the core is smallest in the good solvent regime (proportional to 1/NA as opposed to fractional powers thereof). In every regime the surface area per block, σ, and the extension of the active brush, λA, are increasing functions of the binding parameter η. This means that increasing the binding interaction ϵ or the concentration of the protein complexes in the bulk solution, ϕbulk, will always lead to swelling of the active chromatin brush. In contrast, we find that the core thickness is a decreasing function of η. A summary of all scaling behaviors is presented in Appendix 5—table 1. These results show that although the protein complexes do not interact directly with the inactive blocks, they have a significant effect on the characteristic length scale of inactive chromatin cores. This has particular significance for the core-shell structure in spherical geometry (core-shell micelles) as we now discuss.
+$$
+\sigma^{Θ}∼\frac{w_{η}^{1/4}N_{A}^{1/2}}{\alpha^{1/2}}.
+$$
 
-## Organization of chromatin in core-shell spherical domains
+We find that the surface area per block increases with the protein concentration in bulk solution and the binding energy (lumped into the binding parameter $η$) in every regime and that its scaling with the number of monomers in the active blocks is, as expected, most pronounced in the good solvent regime ($\sigma∼N_{A}^{3/5}$).
 
-Thus far, we have showed that protein complexes can lead to changes in the quality of the solvent experienced by the active chromatin brush, which in turn lead to different scaling behaviors of the surface area per block and the relative extensions of both the active and inactive blocks as a function of the binding parameter η and the number of monomers in the active blocks, NA. We performed the calculations in a layer geometry for simplicity, however, it is known that block copolymer, microphase-separated states, can also form spherical micelles with a core comprising the blocks experiencing the poorer solvent conditions and a corona comprising the other type of blocks (Halperin, 1987; Mayes and Olvera de la Cruz, 1988; Halperin, 1991; Zhulina et al., 2005). Moreover, in the experimental data shown in Figure 1, the core-shell organization is reminiscent of spherical micelles. The core contains dense chromatin and the outer shell is composed of chromatin coated with RNA Pol II. Because of these reasons, it is then relevant to discuss the case of chromatin organization in core-shell spherical domains. Below, we provide some analytical insight based on our calculations in the layer geometry and complement this with Brownian dynamics simulations showing that indeed, the analytical predictions give us a qualitative understanding of how protein complexes could regulate the microphase separation of active and inactive chromatin organized in spherical domains.
+We now combine the results for the surface area per block with the conservation of inactive monomers to find the dimensionless thickness of the core, $\lambda_{B}=L_{B}/a$ and the dimensionless extension of the active chromatin brush, $\lambda_{A}$. In what follows we neglect numerical prefactors - the full expressions are given in Appendix 5. In the poor solvent regime, the thickness of the core, $\lambda_{B}^{c}$, and the extension of the active chromatin brush, $\lambda_{A}^{c}$, are given by
 
-## Analytical predictions for the number of blocks in spherical core-shell chromatin micelles
+$$
+\lambda_{B}^{c}∼\frac{N_{B}⁢|v_{η}|^{2/3}⁢\alpha^{1/3}}{N_{A}^{1/3}⁢w_{η}^{2/3}⁢ϕ_{B}},\lambda_{A}^{c}∼\frac{N_{A}^{2/3}⁢w_{η}^{1/3}⁢\alpha^{1/3}}{|v_{η}|^{1/3}}.
+$$
 
-If instead of considering the layer geometry - which is simple to treat analytically but might not be the global minimum of the free energy - we consider the case of spherical micelles, we can make a simple extrapolation of the results obtained in the layer geometry presented in the previous section as follows: the thickness of the core, LB, corresponds to the radius r of the spherical core and the interfacial area per block σ would be, up to numerical coefficients, equivalent to the area spanned by each active block at the interface of the spherical cores and the outer shells. Doing so allows us to use the conservation of B monomers to estimate the number of blocks, m, that are incorporated into each core-shell spherical domain in each regime and how these quantities scale with the number of monomers of the active blocks. The monomer conservation of B monomers in each core is expressed by(34)4⁢π⁢r3⁢ϕB3=a3⁢NB⁢m.
+The corresponding values in the good solvent regime for the thickness of the core and for the extension of the active chromatin brush are
 
-We now use Equation 34 to calculate the number of blocks in each core-shell spherical domain in the different regimes. In the poor solvent regime we find:(35)mc∼NB2α|vη|2NAwη2ϕB2,
+$$
+\lambda_{B}^{e}∼\frac{N_{B}\alpha^{3/5}}{N_{A}v_{η}^{2/5}ϕ_{B}},\lambda_{A}^{e}∼N_{A}^{4/5}v_{η}^{1/5}\alpha^{1/5},
+$$
 
-in the good solvent regime:(36)me∼NB2α9/5NA9/5vη6/5ϕB2,
+and in the case of the theta solvent they are
 
-and in the θ-solvent regime(37)mθ∼NB2α3/2NA3/2wη3/4ϕB2,
+$$
+\lambda_{B}^{\theta}∼\frac{N_{B}⁢\alpha^{1/2}}{N_{A}^{1/2}⁢w_{η}^{1/4}⁢ϕ_{B}},\lambda_{A}^{\theta}∼N_{A}^{3/4}⁢w_{η}^{1/8}⁢\alpha^{1/4}.
+$$
+
+The scaling behaviors shown in Equations 31–33 show that the presence of protein complexes that can bind to active chromatin regions can induce transitions between these different regimes in which the thickness of the core is smallest in the good solvent regime (proportional to $1/N_{A}$ as opposed to fractional powers thereof). In every regime the surface area per block, $\sigma$, and the extension of the active brush, $\lambda_{A}$, are increasing functions of the binding parameter $η$. This means that increasing the binding interaction $ϵ$ or the concentration of the protein complexes in the bulk solution, $ϕ_{bulk}$, will always lead to swelling of the active chromatin brush. In contrast, we find that the core thickness is a decreasing function of $η$. A summary of all scaling behaviors is presented in Appendix 5—table 1. These results show that although the protein complexes do not interact directly with the inactive blocks, they have a significant effect on the characteristic length scale of inactive chromatin cores. This has particular significance for the core-shell structure in spherical geometry (core-shell micelles) as we now discuss.
+
+### Organization of chromatin in core-shell spherical domains
+
+Thus far, we have showed that protein complexes can lead to changes in the quality of the solvent experienced by the active chromatin brush, which in turn lead to different scaling behaviors of the surface area per block and the relative extensions of both the active and inactive blocks as a function of the binding parameter $η$ and the number of monomers in the active blocks, $N_{A}$. We performed the calculations in a layer geometry for simplicity, however, it is known that block copolymer, microphase-separated states, can also form spherical micelles with a core comprising the blocks experiencing the poorer solvent conditions and a corona comprising the other type of blocks (Halperin, 1987; Mayes and Olvera de la Cruz, 1988; Halperin, 1991; Zhulina et al., 2005). Moreover, in the experimental data shown in Figure 1, the core-shell organization is reminiscent of spherical micelles. The core contains dense chromatin and the outer shell is composed of chromatin coated with RNA Pol II. Because of these reasons, it is then relevant to discuss the case of chromatin organization in core-shell spherical domains. Below, we provide some analytical insight based on our calculations in the layer geometry and complement this with Brownian dynamics simulations showing that indeed, the analytical predictions give us a qualitative understanding of how protein complexes could regulate the microphase separation of active and inactive chromatin organized in spherical domains.
+
+#### Analytical predictions for the number of blocks in spherical core-shell chromatin micelles
+
+If instead of considering the layer geometry - which is simple to treat analytically but might not be the global minimum of the free energy - we consider the case of spherical micelles, we can make a simple extrapolation of the results obtained in the layer geometry presented in the previous section as follows: the thickness of the core, $L_{B}$, corresponds to the radius $r$ of the spherical core and the interfacial area per block $\sigma$ would be, up to numerical coefficients, equivalent to the area spanned by each active block at the interface of the spherical cores and the outer shells. Doing so allows us to use the conservation of B monomers to estimate the number of blocks, $m$, that are incorporated into each core-shell spherical domain in each regime and how these quantities scale with the number of monomers of the active blocks. The monomer conservation of B monomers in each core is expressed by
+
+$$
+\frac{4⁢\pi⁢r^{3}⁢ϕ_{B}}{3}=a^{3}⁢N_{B}⁢m.
+$$
+
+We now use Equation 34 to calculate the number of blocks in each core-shell spherical domain in the different regimes. In the poor solvent regime we find:
+
+$$
+m^{c}∼\frac{N_{B}^{2}\alpha|v_{η}|^{2}}{N_{A}w_{η}^{2}ϕ_{B}^{2}},
+$$
+
+in the good solvent regime:
+
+$$
+m^{e}∼\frac{N_{B}^{2}\alpha^{9/5}}{N_{A}^{9/5}v_{η}^{6/5}ϕ_{B}^{2}},
+$$
+
+and in the $\theta$-solvent regime
+
+$$
+m^{\theta}∼\frac{N_{B}^{2}\alpha^{3/2}}{N_{A}^{3/2}w_{η}^{3/4}ϕ_{B}^{2}},
+$$
 
 We can now relate the results for the layer geometry with the spherical core-shell organization. Let us consider a single active block connected to a single inactive block in the layer geometry, as we have shown in the previous sections, increasing the binding strength of the protein complexes to the active chromatin monomers tends to swell the active blocks and concomitantly increase the surface area per block (Figure 4A). The swelling of the active chromatin blocks then leads to a compression of the inactive block, which in the global organization of the microphase-separated state translates into a decrease in the thickness of the core and an increase in the interfacial area (Figure 4B). If we now consider a single active block connected to a single inactive block in the spherical geometry, each block spans a conical surface. The solid angle of such cones increases with the binding of protein complexes and we intuitively suggest that just as in the case of the blocks in the layer geometry, the inactive blocks will be more compressed when the binding of the protein complexes to the active block is stronger (Figure 4C). If we now focus on the global organization of the microphase-separated state, the number of inactive cores as well as their size is regulated by the binding of protein complexes; the stronger such binding is, more and smaller inactive cores there are (Figure 4D). Thus, our minimal model suggests that nuclear size regulation (Deviri and Safran, 2022) may have a strong impact in the spatial organization of chromatin in living cells via changes in the concentration of chromatin-binding protein complexes.
 
@@ -195,17 +349,17 @@ We can now relate the results for the layer geometry with the spherical core-she
 
 **Figure 4.:** (A) Single pair of active (green) and inactive blocks (green) in the layer geometry with no (left), few (middle), and many (right) protein complexes bound to a chromatin active block. The swelling of the active block by the binding of protein complexes changes the surface area per block and compresses the inactive blocks. (B) Global changes in the microphase-separated layer geometry. Left: The active shell (green) and inactive core (red) remain unchanged in the absence of bound protein complexes (yellow). Right: Binding of protein complexes leads to swelling of the active shell (green region) and compression of the thickness of the core (red region). (C) Single pair of active (green) and inactive blocks (green) in the spherical geometry with no (left), few (middle), and many (right) protein complexes bound to the active chromatin block. A preferred radius of curvature is set by the binding of protein complexes, such preferred radius of curvature defines the size of the core. (D) Regulation of core number and size by the binding of protein complexes. Left: Weak binding of protein complexes (yellow beads) to active chromatin has little or no effect in the size and number of cores (red area). Right: Strong binding of protein complexes to active chromatin swells the active shells (green area) and increases the number of inactive cores while decreasing their size.
 
-In the calculations presented above for the spherical geometry, we have considered a homogeneous monomer concentration in both the core and shell domains. Thus, our calculation excludes the regime in which the active blocks are much larger than the blocks at the core and thus exhibit star polymer behavior (Daoud and Cotton, 1982), where the monomer concentration in each ‘blob’ decreases with its distance from the core. This is however not the focus of our manuscript; instead, we want to highlight the strong effects that selective binding of proteins to active regions of chromatin can have on the global chromatin organization. We show below results of Brownian dynamic simulations for the case NA=NB that are in qualitative agreement with our analytical results; such simulations can include the case of active blocks that are much larger than the core which are more difficult to treat analytically.
+In the calculations presented above for the spherical geometry, we have considered a homogeneous monomer concentration in both the core and shell domains. Thus, our calculation excludes the regime in which the active blocks are much larger than the blocks at the core and thus exhibit star polymer behavior (Daoud and Cotton, 1982), where the monomer concentration in each ‘blob’ decreases with its distance from the core. This is however not the focus of our manuscript; instead, we want to highlight the strong effects that selective binding of proteins to active regions of chromatin can have on the global chromatin organization. We show below results of Brownian dynamic simulations for the case $N_{A}=N_{B}$ that are in qualitative agreement with our analytical results; such simulations can include the case of active blocks that are much larger than the core which are more difficult to treat analytically.
 
-## Brownian dynamics simulations of chromatin microphase separation regulated by the binding of protein complexes
+#### Brownian dynamics simulations of chromatin microphase separation regulated by the binding of protein complexes
 
-Our computational model simulates chromatin as a block copolymer comprising both active and inactive blocks. It additionally considers that protein complexes only bind to the active chromatin blocks. Chromatin is considered to be a self-attractive block copolymer (Maeshima et al., 2016a; Gibson et al., 2019; Strickfaden et al., 2020; Amiad-Pavlov et al., 2021; Bajpai et al., 2021) and is modeled as a bead-spring polymer consisting of N beads connected by N-1 springs (harmonic bonds). These N beads are divided between periodic blocks of active and inactive monomers. Attractions between inactive monomers are taken to be larger than those between active monomers and the cross-interaction of active and inactive monomers. This gives rise to the core-shell structure observed in the experiments, shown in Figure 1. In the simulations, when any two beads of the polymer approach each other within a distance 2.5⁢a (where a is the diameter of bead), they interact via a truncated Lennard-Jones potential, whose strong repulsive regime also prevents them from overlapping (Bajpai et al., 2021). The polymer contains two types of beads: active and inactive, that represent respectively, the active and silent genes in the chromosome. The protein complexes are modeled by additional, single beads that only bind to the active polymer beads; there are no attractive interactions between protein-protein and protein-inactive beads. For simplicity, we assume the size of the protein complex beads to be equal to the size of a chromatin bead, whose diameter is a. When a protein bead approaches an active bead within a distance of 1.5⁢a, they form a bond with probability 1. For other separations of the protein and the active bead, the bond energy increases beyond its minimal value and is modeled by a harmonic potential with bonding strength K. Once an active bead and a protein complex bead form a bond, their valencies are saturated and they are not available for bonding. Our model also allows existing bonds to break. When the distance between protein complexes and active chromatin beads exceeds 2.5⁢a, the bond is broken (there is no longer an attractive force between the beads) and the protein complex is free to diffuse in solution. The chromatin polymer and the protein complexes are confined within a spherical boundary. The simulations were performed using the Brownian dynamics simulation package LAMMPS (Plimpton, 1995; Thompson et al., 2022), which solves Newton’s equations using viscous forces and a Langevin thermostat ensuring an NVT ensemble (see section Computational model for details). Our initial condition has n=500 blocks of the chromatin chain, with each block having 100 beads of active genes (NA) and 100 beads of inactive genes (NB), for a total of n(NA+NB)=100,000 beads.
+Our computational model simulates chromatin as a block copolymer comprising both active and inactive blocks. It additionally considers that protein complexes only bind to the active chromatin blocks. Chromatin is considered to be a self-attractive block copolymer (Maeshima et al., 2016a; Gibson et al., 2019; Strickfaden et al., 2020; Amiad-Pavlov et al., 2021; Bajpai et al., 2021) and is modeled as a bead-spring polymer consisting of $N$ beads connected by $N-1$ springs (harmonic bonds). These $N$ beads are divided between periodic blocks of active and inactive monomers. Attractions between inactive monomers are taken to be larger than those between active monomers and the cross-interaction of active and inactive monomers. This gives rise to the core-shell structure observed in the experiments, shown in Figure 1. In the simulations, when any two beads of the polymer approach each other within a distance $2.5⁢a$ (where $a$ is the diameter of bead), they interact via a truncated Lennard-Jones potential, whose strong repulsive regime also prevents them from overlapping (Bajpai et al., 2021). The polymer contains two types of beads: active and inactive, that represent respectively, the active and silent genes in the chromosome. The protein complexes are modeled by additional, single beads that only bind to the active polymer beads; there are no attractive interactions between protein-protein and protein-inactive beads. For simplicity, we assume the size of the protein complex beads to be equal to the size of a chromatin bead, whose diameter is $a$. When a protein bead approaches an active bead within a distance of $1.5⁢a$, they form a bond with probability 1. For other separations of the protein and the active bead, the bond energy increases beyond its minimal value and is modeled by a harmonic potential with bonding strength $K$. Once an active bead and a protein complex bead form a bond, their valencies are saturated and they are not available for bonding. Our model also allows existing bonds to break. When the distance between protein complexes and active chromatin beads exceeds $2.5⁢a$, the bond is broken (there is no longer an attractive force between the beads) and the protein complex is free to diffuse in solution. The chromatin polymer and the protein complexes are confined within a spherical boundary. The simulations were performed using the Brownian dynamics simulation package LAMMPS (Plimpton, 1995; Thompson et al., 2022), which solves Newton’s equations using viscous forces and a Langevin thermostat ensuring an NVT ensemble (see section Computational model for details). Our initial condition has $n=500$ blocks of the chromatin chain, with each block having 100 beads of active genes ($N_{A}$) and 100 beads of inactive genes ($N_{B}$), for a total of $n(N_{A}+N_{B})=100,000$ beads.
 
-A summary of our numerical results is presented in Figure 5, which shows that the increased binding of protein complexes to the active regions swell the active chromatin regions and reduce the inactive core sizes, in agreement with the analytical scaling results presented above. In Figure 5A, we show snapshots of simulations for different binding strengths. It is clear from such snapshots that the increase in binding strength leads to more extended configurations of the active chromatin regions, an increase of the number of inactive cores, and a reduction in their size (as required by the conservation of inactive monomers). We also show in Figure 5B that the number of cores at steady state, increases as a function of binding strength but then saturates to a value of around 100. The saturation is a simple consequence of the fact that in this saturation limit, all active monomers have a protein complex bound to them. The shell extends no further even if the binding energy or protein concentration is increased and the core size is also saturated at its minimal value. We show the probability distribution of core sizes measured in bead units in Figure 5C. We find that the distributions are slightly broader at low bonding strength and that they transition to narrower distributions for values of K≳3. We observe three different regimes: (i) fully collapsed, with K≲1, (ii) a transition region from fully collapsed to fully stretched going from 1≲K≲3, and (iii) the fully stretched regime which is given by 3≲K. Finally, the fraction of active monomers that have a protein complex bound is shown in Figure 5D, where we see a sigmoidal behavior for Ω as a function of the binding strength, which is characterized by the strength of the harmonic potential between the protein complexes and the active chromatin, K. This is what gives rise to the saturation mentioned above. In this saturation limit, for K≳4, the fraction of active monomers that are bound to a protein complex is approximately 1. The simulation results agree with the predictions of the analytical theory, and confirm that the binding of protein complexes can serve as regulator of the microphase separation of active and inactive chromatin regions.
+A summary of our numerical results is presented in Figure 5, which shows that the increased binding of protein complexes to the active regions swell the active chromatin regions and reduce the inactive core sizes, in agreement with the analytical scaling results presented above. In Figure 5A, we show snapshots of simulations for different binding strengths. It is clear from such snapshots that the increase in binding strength leads to more extended configurations of the active chromatin regions, an increase of the number of inactive cores, and a reduction in their size (as required by the conservation of inactive monomers). We also show in Figure 5B that the number of cores at steady state, increases as a function of binding strength but then saturates to a value of around 100. The saturation is a simple consequence of the fact that in this saturation limit, all active monomers have a protein complex bound to them. The shell extends no further even if the binding energy or protein concentration is increased and the core size is also saturated at its minimal value. We show the probability distribution of core sizes measured in bead units in Figure 5C. We find that the distributions are slightly broader at low bonding strength and that they transition to narrower distributions for values of $K≳3$. We observe three different regimes: (i) fully collapsed, with $K≲1$, (ii) a transition region from fully collapsed to fully stretched going from $1≲K≲3$, and (iii) the fully stretched regime which is given by $3≲K$. Finally, the fraction of active monomers that have a protein complex bound is shown in Figure 5D, where we see a sigmoidal behavior for $Ω$ as a function of the binding strength, which is characterized by the strength of the harmonic potential between the protein complexes and the active chromatin, $K$. This is what gives rise to the saturation mentioned above. In this saturation limit, for $K≳4$, the fraction of active monomers that are bound to a protein complex is approximately 1. The simulation results agree with the predictions of the analytical theory, and confirm that the binding of protein complexes can serve as regulator of the microphase separation of active and inactive chromatin regions.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/82983/elife-82983-fig5-v1.jpg)
 
-**Figure 5.:** (A) Simulation snapshots show a core-shell organization of chromatin. The cores (red area) are composed of inactive blocks (red lines) of chromatin, and the shells (green area) are composed of active blocks (green lines) of chromatin. The snapshots from top to bottom correspond to binding of protein complexes (yellow points) to chromatin where deviations of the bond distance from its minimal value are modeled by a harmonic potential with a spring constant  (no binding, top), K.K=0 (weak binding, middle), and K=2 (strong binding, bottom). (K=10B) Number of cores as a function of the simulation time frame by varying the harmonic potential characterized by  of protein complexes. The number of cores increases with increasing bonding strength until it saturates. (KC) Core size distributions for different bonding strengths, . (KD) Fraction of active monomers bound to a protein complex, , as a function of bonding strengths follows a sigmoidal curve.Ω
+**Figure 5.:** (A) Simulation snapshots show a core-shell organization of chromatin. The cores (red area) are composed of inactive blocks (red lines) of chromatin, and the shells (green area) are composed of active blocks (green lines) of chromatin. The snapshots from top to bottom correspond to binding of protein complexes (yellow points) to chromatin where deviations of the bond distance from its minimal value are modeled by a harmonic potential with a spring constant $K.K=0$ (no binding, top), $K=2$ (weak binding, middle), and $K=10$ (strong binding, bottom). (B) Number of cores as a function of the simulation time frame by varying the harmonic potential characterized by $K$ of protein complexes. The number of cores increases with increasing bonding strength until it saturates. (C) Core size distributions for different bonding strengths, $K$. (D) Fraction of active monomers bound to a protein complex, $Ω$, as a function of bonding strengths follows a sigmoidal curve.
 
 ## Discussion
 
@@ -219,26 +373,50 @@ In this work, we have provided a generic description at the mesoscale, that is i
 
 In addition to the observations provided in this article for chromatin being in a microphase-separated state, previous work (Popken et al., 2014; Cremer et al., 2015) has focused on the different chromatin compartments in terms of their density, classifying them into active and inactive nuclear compartments, and showing clear boundaries between them. More recently (Gelléri et al., 2022), those authors showed evidence of dense chromatin cores surrounded by extended chromatin regions, which seems to be in agreement with our proposed model of chromatin microphase separation.
 
-Our equilibrium approach can be extended by considering non-equilibrium effects such as acetylation and methylation of the histone tails of nucleosomes, which would lead to different sizes of active and inactive chromatin blocks. The simplest non-equilibrium scenario, would be one where the fraction of protein complexes bound to chromatin, Ω, is fixed by kinetic binding and unbinding rates, instead of detailed balance (and the Boltzmann factor) as in equilibrium. In this scenario, the results obtained for the equilibrium system will hold as long as the reaction kinetics are much faster than the equilibration of the core-shell system. The core-shell organization would then be controlled by the steady-state bound fraction Ω set by the binding and unbinding rates instead of by Equation 18. Another extension to the model would be to investigate the possible interplay arising from protein complexes that actively extend the active chromatin blocks and by doing so create a positive feedback for histone tail acetylation by enzymes, which in turn, would create more binding sites for the protein complexes. Finally, it would be relevant to asses the role of nuclear confinement in chromatin microphase separation by including the possibility of the association of chromatin with the nuclear envelope via its lamina-associated domains (van Steensel and Belmont, 2017), as shown in Figure 6. This would further regulate the organization of chromatin and might give rise to different microphase-separated states. The binding of chromatin to the nuclear lamina might further regulate the size and shape of the inactive domains and have an additional effect on the spatiotemporal organization of chromatin and DNA transcription.
+Our equilibrium approach can be extended by considering non-equilibrium effects such as acetylation and methylation of the histone tails of nucleosomes, which would lead to different sizes of active and inactive chromatin blocks. The simplest non-equilibrium scenario, would be one where the fraction of protein complexes bound to chromatin, $Ω$, is fixed by kinetic binding and unbinding rates, instead of detailed balance (and the Boltzmann factor) as in equilibrium. In this scenario, the results obtained for the equilibrium system will hold as long as the reaction kinetics are much faster than the equilibration of the core-shell system. The core-shell organization would then be controlled by the steady-state bound fraction $Ω$ set by the binding and unbinding rates instead of by Equation 18. Another extension to the model would be to investigate the possible interplay arising from protein complexes that actively extend the active chromatin blocks and by doing so create a positive feedback for histone tail acetylation by enzymes, which in turn, would create more binding sites for the protein complexes. Finally, it would be relevant to asses the role of nuclear confinement in chromatin microphase separation by including the possibility of the association of chromatin with the nuclear envelope via its lamina-associated domains (van Steensel and Belmont, 2017), as shown in Figure 6. This would further regulate the organization of chromatin and might give rise to different microphase-separated states. The binding of chromatin to the nuclear lamina might further regulate the size and shape of the inactive domains and have an additional effect on the spatiotemporal organization of chromatin and DNA transcription.
 
 ## Model
 
-## Brownian dynamics simulations
+### Brownian dynamics simulations
 
-In order to model the chromatin system, we use the following potential energies. The stretching energy of the chromatin chain is provided by harmonic springs that connect adjacent beads and is given by(38)Ustretching=kspring∑i=1N−1(|ri−ri+1|−a)2,
+In order to model the chromatin system, we use the following potential energies. The stretching energy of the chromatin chain is provided by harmonic springs that connect adjacent beads and is given by
 
-where ri and ri+1 are the position vectors of ith and (i+1)th beads, respectively. Here, a is the equilibrium bond length, and kspring represents the spring constant. In our simulations, spring constant is set to a large value, kspring=100⁢kB⁢T/a2, to ensure that the bonds are stable and do not fluctuate a lot.
+$$
+U_{stretching}=k_{spring}\sumi=1N−1(|r_{i}−r_{i+1}|−a)^{2},
+$$
 
-Non-bonded interactions between chromatin-chromatin and chromatin-protein beads are modeled using the standard Lennard-Jones potentials (LJ),(39)ULJ=4ϵαβ∑i<j[(a|ri−rj|)12−(a|ri−rj|)6],
+where $r_{i}$ and $r_{i+1}$ are the position vectors of $i^{th}$ and $(i+1)^{th}$ beads, respectively. Here, $a$ is the equilibrium bond length, and $k_{spring}$ represents the spring constant. In our simulations, spring constant is set to a large value, $k_{spring}=100⁢k_{B}⁢T/a^{2}$, to ensure that the bonds are stable and do not fluctuate a lot.
 
-for all |ri−rj|<rc, where rc refers to a cutoff distance beyond which LJ interaction is set to zero. Here, ϵα⁢β is the strength of the LJ potential. For the attractive interactions between chromatin-chromatin and chromatin-protein beads, rc=2.5a is used as the distance cutoff for the LJ potential. In homopolymers, the polymer chain starts to collapse at ϵα⁢β=0.3⁢kB⁢T (Bajpai and Safran, 2022). Chromatin chain beads are divided into active and inactive types based on their attractive strength. Active chromatin beads are set at minimum attractive strength, and LJ strength between any two active beads is taken to be ϵA⁢A=0.3⁢kB⁢T. The LJ strength of ϵB⁢B=0.5⁢kB⁢T is set between two inactive beads, and the strength of ϵA⁢B=0.3⁢kB⁢T between active beads and inactive beads. The attraction of chromatin-protein beads is modeled using the same LJ potential and ϵB⁢p=0.4⁢kB⁢T is taken as LJ strength between active chromatin and protein beads. There are no attractive interactions between protein-protein beads or inactive chromatin and protein beads (only excluded volume interactions), so the LJ potential is truncated at the distance where repulsive and attractive forces are equal which gives rc=21/6a and ϵp⁢p=ϵA⁢p=1⁢kB⁢T. Beads of polymer chains and protein are confined within a sphere of radius Rc. The interaction between the beads and the sphere surface is repulsive, given by(40)Uconfine=4ϵconfine∑i=1N[(aRc−|ri|)12−(aRc−|ri|)6],
+Non-bonded interactions between chromatin-chromatin and chromatin-protein beads are modeled using the standard Lennard-Jones potentials (LJ),
 
-for all (Rc−|ri|)<21/6a and ϵconfine=1⁢kB⁢T. To estimate Rc, we define the parameter ϕ as the volume fraction of chain within the sphere volume(41)ϕ=Volume of chromatin beadsVolume of confinement=N×43π(a/2)343πRc3,
+$$
+U_{LJ}=4ϵ_{\alpha\beta}\sumi<j[(\frac{a}{|r_{i}−r_{j}|})^{12}−(\frac{a}{|r_{i}−r_{j}|})^{6}],
+$$
 
-where N is the total number of beads in chromatin chain and N=100,000 beads are taken in our model. In order to observe the effect of Pol II complex proteins on the swelling of the active blocks of the chromatin, we minimize the effect of the nucleus by assuming that the chromatin volume fraction within the nucleus is 1% (ϕ=0.01). We find the confinement radius Rc=108a by plugging the value of ϕ into Equation 41.
+for all $|r_{i}−r_{j}|<r_{c}$, where rc refers to a cutoff distance beyond which LJ interaction is set to zero. Here, $ϵ_{\alpha⁢\beta}$ is the strength of the LJ potential. For the attractive interactions between chromatin-chromatin and chromatin-protein beads, $r_{c}=2.5a$ is used as the distance cutoff for the LJ potential. In homopolymers, the polymer chain starts to collapse at $ϵ_{\alpha⁢\beta}=0.3⁢k_{B}⁢T$ (Bajpai and Safran, 2022). Chromatin chain beads are divided into active and inactive types based on their attractive strength. Active chromatin beads are set at minimum attractive strength, and LJ strength between any two active beads is taken to be $ϵ_{A⁢A}=0.3⁢k_{B}⁢T$. The LJ strength of $ϵ_{B⁢B}=0.5⁢k_{B}⁢T$ is set between two inactive beads, and the strength of $ϵ_{A⁢B}=0.3⁢k_{B}⁢T$ between active beads and inactive beads. The attraction of chromatin-protein beads is modeled using the same LJ potential and $ϵ_{B⁢p}=0.4⁢k_{B}⁢T$ is taken as LJ strength between active chromatin and protein beads. There are no attractive interactions between protein-protein beads or inactive chromatin and protein beads (only excluded volume interactions), so the LJ potential is truncated at the distance where repulsive and attractive forces are equal which gives $r_{c}=2^{1/6}a$ and $ϵ_{p⁢p}=ϵ_{A⁢p}=1⁢k_{B}⁢T$. Beads of polymer chains and protein are confined within a sphere of radius $R_{c}$. The interaction between the beads and the sphere surface is repulsive, given by
 
-A major feature of the chromatin-protein complex interaction in our model is the bonding between active beads and protein complex beads. This depends on the availability of these proteins and the nature of their binding to the active chromatin. For the simplicity, we consider a total of Np=50,000 protein beads, which is equal to the total number of active chromatin beads so that the volume fraction of protein beads within the nucleus is 0.005; each active bead can bind to at most one protein complex bead. The active bead and protein complex bead each have a valence of 1. The formation of harmonic bonds between active and protein complexes occurs when they are within a defined interaction cutoff distance (rbond=1.5⁢a). The spring constant (K) for the changes in the bond distance is varied from 0 to 10⁢kB⁢T/a2. Bonding interactions have an equilibrium distance of r0=a, which means a bond, once formed, remains stable at that distance. In addition, dynamics bonds can break (potential goes to zero) when the distance between the active beads and protein complex beads exceeds the cutoff rbreak. We set the cutoff value rbreak to equal the LJ cutoff rc at which the LJ interaction also vanishes; therefore rbreak=2.5⁢a. The potential energy of bonds creating and breaking (Ubond) is calculated by using the Monte Carlo method in LAMMPS software (Plimpton, 1995; Thompson et al., 2022) and written by(42)Ubond=−U0(rbond,r0)+K∑i=1N∑j=1Np(|ri−rpj|−r0)2,
+$$
+U_{confine}=4ϵ_{confine}\sumi=1N[(\frac{a}{R_{c}−|r_{i}|})^{12}−(\frac{a}{R_{c}−|r_{i}|})^{6}],
+$$
 
-for all |ri−rpj|<rbreak, where rbreak refers to the cutoff distance beyond which dynamic bond interaction (Ubond) is set to zero. Here, rp is the position of the protein beads, and the energy function U0⁢(rbond,r0) represents the bond formation energy. The total potential energy of chromatin system is given by(43)Utot=Ustretching+ULJ+Uconfine+Ubond
+for all $(R_{c}−|r_{i}|)<2^{1/6}a$ and $ϵ_{confine}=1⁢k_{B}⁢T$. To estimate $R_{c}$, we define the parameter $ϕ$ as the volume fraction of chain within the sphere volume
 
-To simulate the chromatin system, we performed Brownian dynamics simulations using the LAMMPS molecular dynamics package (Plimpton, 1995; Thompson et al., 2022). The simulations were conducted with reduced units (a=1 and kB=1) at a constant temperature T=1.0 with a damping coefficient of 10.0⁢τ, where τ is the time unit. In all simulations, a time-step Δ⁢t=0.01⁢τ was used. Simulations were run for 107 time-steps that is much longer than the time it takes for the system to reach a steady state with constant mean energy and radius of gyration.
+$$
+ϕ=\frac{Volume of chromatin beads}{Volume of confinement}=\frac{N\times\frac{4}{3}\pi(a/2)^{3}}{\frac{4}{3}\piR_{c}^{3}},
+$$
+
+where $N$ is the total number of beads in chromatin chain and $N=100,000$ beads are taken in our model. In order to observe the effect of Pol II complex proteins on the swelling of the active blocks of the chromatin, we minimize the effect of the nucleus by assuming that the chromatin volume fraction within the nucleus is 1% ($ϕ=0.01$). We find the confinement radius $R_{c}=108a$ by plugging the value of $ϕ$ into Equation 41.
+
+A major feature of the chromatin-protein complex interaction in our model is the bonding between active beads and protein complex beads. This depends on the availability of these proteins and the nature of their binding to the active chromatin. For the simplicity, we consider a total of $N_{p}=50,000$ protein beads, which is equal to the total number of active chromatin beads so that the volume fraction of protein beads within the nucleus is 0.005; each active bead can bind to at most one protein complex bead. The active bead and protein complex bead each have a valence of 1. The formation of harmonic bonds between active and protein complexes occurs when they are within a defined interaction cutoff distance ($r_{bond}=1.5⁢a$). The spring constant ($K$) for the changes in the bond distance is varied from 0 to $10⁢k_{B}⁢T/a^{2}$. Bonding interactions have an equilibrium distance of $r_{0}=a$, which means a bond, once formed, remains stable at that distance. In addition, dynamics bonds can break (potential goes to zero) when the distance between the active beads and protein complex beads exceeds the cutoff $r_{break}$. We set the cutoff value $r_{break}$ to equal the LJ cutoff rc at which the LJ interaction also vanishes; therefore $r_{break}=2.5⁢a$. The potential energy of bonds creating and breaking ($U_{bond}$) is calculated by using the Monte Carlo method in LAMMPS software (Plimpton, 1995; Thompson et al., 2022) and written by
+
+$$
+U_{bond}=−U_{0}(r_{bond},r_{0})+K\sumi=1N\sumj=1N_{p}(|r_{i}−r_{p}_{j}|−r_{0})^{2},
+$$
+
+for all $|r_{i}−r_{p}_{j}|<r_{break}$, where $r_{break}$ refers to the cutoff distance beyond which dynamic bond interaction ($U_{bond}$) is set to zero. Here, $r_{p}$ is the position of the protein beads, and the energy function $U_{0}⁢(r_{bond},r_{0})$ represents the bond formation energy. The total potential energy of chromatin system is given by
+
+$$
+U_{tot}=U_{stretching}+U_{LJ}+U_{confine}+U_{bond}
+$$
+
+To simulate the chromatin system, we performed Brownian dynamics simulations using the LAMMPS molecular dynamics package (Plimpton, 1995; Thompson et al., 2022). The simulations were conducted with reduced units ($a=1$ and $k_{B}=1$) at a constant temperature $T=1.0$ with a damping coefficient of $10.0⁢\tau$, where $\tau$ is the time unit. In all simulations, a time-step $Δ⁢t=0.01⁢\tau$ was used. Simulations were run for 107 time-steps that is much longer than the time it takes for the system to reach a steady state with constant mean energy and radius of gyration.

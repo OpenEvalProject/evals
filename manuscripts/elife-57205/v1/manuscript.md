@@ -48,15 +48,31 @@ In this study, using a combination of cell biology, biochemistry and Ultrastruct
 
 ## Results
 
-## POC16/WDR90 is a conserved microtubule wall component of the central core region
+### POC16/WDR90 is a conserved microtubule wall component of the central core region
 
 To test the hypothesis that POC16/WDR90 is a microtubule triplet component, we analyzed its distribution using U-ExM that allows nanoscale mapping of proteins inside the centriole (Gambarotto et al., 2019; Le Guennec et al., 2020). We observed first in Chlamydomonas reinhardtii isolated centrioles that the endogenous POC16 longitudinal fluorescence signal is restricted to the central core region as compared to the tubulin signal, which depicts total centriolar length (Figure 1D–F). From top viewed centrioles, we measured the distance between both POC16 and tubulin maximal intensity signal from the exterior to the interior of the centriole and found that POC16 localizes precisely on the microtubule wall in the central core region of Chlamydomonas centrioles (Figure 1M,N, average distance between POC16 and tubulin Δ = 0 nm +/- 8). As a control, we could recapitulate the internal localization along the microtubule wall of POB15, another central core protein (Figure 1G–I and Figure 1M,N, average distance between POB15 and tubulin Δ = 12 nm +/- 7) as previously reported using immunogold-labeling (Hamel et al., 2017). In human centrioles, the POC16 human homolog WDR90 localizes similarly to POC16 on the centriolar microtubule wall, demonstrating the evolutionary conserved restricted localization of POC16/WDR90 on microtubule triplets in the central core region of centrioles (Figure 1J–L). Of note, POC16 and WDR90 display a punctate distribution that we hypothesize to be due to the poor quality of the antibody.
 
 Next, we compared the relative position of WDR90 from top view centrioles to previously described inner scaffold components (Figure 1O–Q) (see Materials and methods). We found that while WDR90 precisely localizes to the centriolar microtubule wall (Figure 1P, average distance between WDR90 and tubulin: Δ = 2 nm +/12), POC1B, FAM161A, POC5 and Centrin signals were shifted toward the centriole lumen in comparison to the tubulin signal, as previously reported (Figure 1P, Δ = 15 nm +/- 8; 22 nm +/- 5; 27 nm +/- 6 and 28 nm +/- 9, respectively) (Le Guennec et al., 2020). These results demonstrate that WDR90 longitudinal distribution is similar to the inner scaffold components but its localization on the microtubule wall suggests that WDR90 is a component of the centriolar microtubule triplet of the central core region.
 
-## POC16/WDR90 is an evolutionary conserved microtubule-associated protein
+### POC16/WDR90 is an evolutionary conserved microtubule-associated protein
 
 Proteins of the POC16/WDR90 family consist of an N-terminal DUF667-containing domain (domain of unknown function), similar to the ciliary inner junction protein FAP20 (Figure 2—figure supplement 1A; Yanagisawa et al., 2014), followed by multiple WD40 repeats that form β-propeller structures (Figure 2A and Figure 2—figure supplement 1B; Xu and Min, 2011).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/57205/elife-57205-fig2-v1.jpg)
+
+**Figure 2.:** (see also Figure 2—figure supplements 1–3). (A) Schematic of WDR90/POC16 conservation domains with the Chlamydomonas cilia proteins FAP20 and FAP52/WDR16. DUF667 domain is in orange and WD40 repeats are in grey. (B) Human U2OS cells transiently overexpressing GFP-WDR90-N (1-225) stained for GFP (green) and tubulin (magenta). Scale bar: 5 µm. (C, D) Coomassie-stained SDS-PAGE of pelleting assays performed in vitro with taxol-stabilized microtubules (C), and free tubulin (D), in the presence of different recombinant POC16/WDR90-DUF667 protein orthologs (related to Figure 2—figure supplement 1A, B). The solubility of proteins alone was assessed in parallel to the microtubule-pelleting assay. All tested proteins were soluble under the tested condition (bottom panel). (E) Electron micrographs of negatively stained taxol-stabilized microtubules alone (MT) or subsequently incubated with recombinant WDR90-N (1-225) alone (MT + WDR90-N) or in combination with tubulin (MT + WDR90-N + Tub). Scale bar: 25 nm (F) Cryo-electron micrograph of taxol-stabilized microtubules subsequently incubated with recombinant WDR90-N (1-225) and tubulin (MT + WDR90-N + Tub). Scale bar: 25 nm (G) Periodicity of complexed WDR90-N (1-225)-tubulin oligomers bound to the microtubule shown in (F).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57205/elife-57205-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) POC16 orthologs DUF667 domain amino acids sequence alignment from seven different species: Chlamydomonas reinhardtii POC16(1-200); homo sapiens WDR90(1-225), Danio rerio drPOC16(1-243), Bovine taurus btPOC16(1-224), Paramecium tetraurelia ptPOC16(1-210), Xenopus tropicalis xtPOC16(1-245) and Rat norvegicus rtPOC16(1-282). Note also below the alignment with Chlamydomonas reinhardtii FAP20. The secondary structures α-helices and β-strand are indicated on top of the amino acid sequences. (B) POC16 orthologs domain mapping and conservation. Orange: DUF667 domain. Dark grey: WD40 repeats. (C) Paramecium tetraurelia cell fixed and stained for ptPOC16 (yellow) and tubulin (1D5) (magenta), showing that ptPOC16 is a centriolar component. Scale bare: 10 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57205/elife-57205-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) POC16 3D model and (B) FAP20 reference structure model (Khalifa et al., 2020). (C) Fitting of POC16 against FAP20 yielding a RMSD value of 1.6 Angs. (D) Fitting of the POC16 model excluding the flexible loops in the FAP20 cryo-EM electron density map.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/57205/elife-57205-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (A) Human U2OS cells transiently overexpressing GFP-POC16(1-295) stained for POC16 (green) and tubulin (magenta). Scale bars for panels A-E: 5 µm. (B) Human U2OS cells transiently overexpressing at high level mCherry-WDR90-N(1-225), stained for tubulin (green) and mCherry (magenta). (C) Human U2OS cells transiently overexpressing at low level mCherry-WDR90-N(1-225), fixed after 1 hr of cold shock treatment and stained for tubulin (green) and mCherry (magenta). (D) Human U2OS cells transiently overexpressing at high level mCherry-WDR90-N(1-225), fixed after 1 hr of cold shock treatment and stained for tubulin (green) and mCherry (magenta). (E) Human U2OS cells transiently overexpressing GFP-WDR90(FL) stained for GFP (green) and tubulin (magenta). Arrowhead indicates WDR90-decorated microtubules. (F) Electron micrograph of negatively stained in vitro taxol-stabilized microtubules. Scale bar: 25 nm. (G) Electron micrograph of negatively stained in vitro taxol-stabilized microtubules incubated with recombinant POC16(1-295) and free tubulin. Scale bar: 25 nm.
 
 First, we wanted to probe the evolutionary conservation of POC16/WDR90 family members as centriolar proteins. To this end, we raised an antibody against Paramecium tetraurelia POC16 and confirmed its localization at centrioles similarly to what we found in Chlamydomonas reinhardtii and human cells (Figure 2—figure supplement 1C; Hamel et al., 2017).
 
@@ -70,15 +86,27 @@ We next investigated whether POC16/WDR90 DUF667 domain could also interact with 
 
 Based on these results, we concluded that POC16/WDR90 is an evolutionary conserved microtubule/tubulin-interacting protein with the capacity to connect microtubules, a functional prerequisite for an inner junction protein that simultaneously interacts with the A and B microtubules.
 
-## WDR90 is recruited in G2 during centriole core elongation
+### WDR90 is recruited in G2 during centriole core elongation
 
 We next assessed whether WDR90 recruitment at centrioles is correlated with the appearance of inner scaffold proteins during centriole biogenesis. In cycling human cells, centrioles duplicate only once per cell cycle during S phase, with the appearance of one procentriole orthogonally to each of the two mother centrioles. Procentrioles then elongate during the following G2 phase of the cell cycle, acquiring the inner scaffold protein POC5 that is critical for the formation of the central and distal parts of the nascent procentriole (Azimzadeh et al., 2009). We followed endogenous WDR90 localization across the cell cycle by analyzing synchronized human RPE1 cells fixed at given time points and stained for either Centrin or HsSAS-6, both early protein marker of duplicating centrioles (Azimzadeh et al., 2009; Strnad et al., 2007; Figure 3A–F and Figure 3—figure supplement 1A,B). We found that while Centrin and HsSAS-6 are recruited as expected early on during procentriole formation in S phase (22 hr) (Strnad et al., 2007), WDR90 starts appearing only in early G2 when procentriole elongation starts (24 hr) (Figure 3A–F). Signal intensity analysis over the cell cycle further demonstrates that WDR90 appears on procentrioles in early G2 and reaches full incorporation by the end of G2 (Figure 3G,H), similarly to the reported incorporation of the inner scaffold protein POC5 (Azimzadeh et al., 2009).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/57205/elife-57205-fig3-v1.jpg)
+
+**Figure 3.:** (A) Human RPE1 p53- cells synchronized by mitotic shake-off, fixed at different time points for different cell-cycle stages (related to Figure 3—figure supplement 1A, B) and stained with WDR90 (yellow) and Centrin (magenta). DNA is in blue. Dotted white squares correspond to insets. Numbers on the top right indicate respectively WDR90 and Centrin numbers of dots. Scale bar: 5 µm. (B) Percentage of cells with the following numbers of WDR90/Centrin dots based on A, n = 300 cells/condition from three independent experiments. Average +/- SD: refer to Figure 3—source data 1. (C) Model for WDR90 and Centrin incorporation during centriole biogenesis based on A. (D) Human RPE1 p53- cells synchronized by mitotic shake-off, fixed at different time points for different cell-cycle stages and stained with WDR90 and HsSAS-6. Scale bar: 5 µm. (E) Percentage of cells with the following numbers of WDR90 and HsSAS-6 based on D, n = 300 cells/condition from three independent experiments. Average +/- SD: refer to Figure 3—source data 2. (F) Model for WDR90 and HsSAS-6 incorporation during centriole biogenesis based on D. (G) WDR90 fluorescence intensity at centrioles according to cell cycle progression, n = 45 cells/condition from three independent experiments. Black circle represents WDR90 at mature centrioles, orange circle represents WDR90 at procentrioles. (H) 3D Schematic representation of WDR90 incorporation during centriole biogenesis according to cell cycle progression based on G. (I, K) Human U2OS GFP-WDR90 RNAi-resistant version (GFP-WDR90RR) inducible stable cell line treated with control or wdr90 siRNA and stained for either GFP and Centrin (I) or GFP and POC5 (K) Dotted white squares indicate insets. - and + dox indicates induction of GFP-WDR90RR expression. Scale bar: 5 µm. (J) Centrosomal Centrin fluorescence intensity based on I, n = 60 cells/condition from three independent experiments. Average +/- SD (A.U.): Control – dox = 1.02 +/- 0.4, siWDR90 – dox = 0.23+/- 0.1, siWDR90 + dox = 0.82 +/- 0.4. Statistical significance assessed by one-way ANOVA and Holm-Sidak’s multiple comparisons (***p<0.001, ****p<0.0001). (L) Centrosomal POC5 fluorescence intensity based on K, n = 75 cells/condition from three independent experiments. Average +/- SD (A.U.): Control – dox = 0.99 +/- 0.3, siWDR90 – dox = 0.41+/- 0.2, siWDR90 + dox = 0.89 +/- 0.5. One-way ANOVA and Holm-Sidak’s multiple comparisons (ns p>0.05, ****p<0.0001).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57205/elife-57205-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) FACS profiles of RPE1 p53- cells at different time point post mitotic shake-off, plotted based on propidium iodide (PI) and 5-ethynyl-2´-deoxyuridine (EdU) content. Related to Figure 3(A–E). (B) Percentage of cells in G0/G1, S or G2/M phase based on A, n = 25,000 cells/condition from three independent experiments. Average +/- SD: refer to Figure 3—figure supplement 1—source data 1. (C) Human RPE1 p53- fixed 24 hr post-mitotic shake off and stained for WDR90 (yellow) and HsSAS-6 (magenta) or PCM1 (yellow) and HsSAS-6 (magenta). DNA is in blue. Dotted white squares indicate insets. Scale bar: 5 µm. (D) Percentage of cells displaying WDR90 satellite pattern based on C, n = 150 cells/condition from three independent experiments. Average +/- SD: 14 hr: 18% +/- 3, 22 hr: 35% +/- 3, 24 hr: 63% +/- 6. (E) Human U2OS cells expressing GFP-WDR90 treated with control or pcm1 siRNA and stained for GFP and PCM1. Dotted white squares indicate insets. Scale bar: 5 µm. (F) Percentage of cells with GFP-WDR90 at satellites based on F, n = 300 cells/condition from three independent experiments Average +/- SD: siControl: 66% +/- 4, siPCM1: 1% +/- 1. Welch T-test ****p<0.0001. (G) Human U2OS cells expressing GFP-WDR90 treated with control or pcm1 siRNA and stained for GFP and POC5. Scale bar: 5 µm. Dotted white squares indicate insets. (H) Percentage of cells with GFP-WDR90 at centrioles based on G, n = 300 cells/condition from three independent experiments Average +/- SD: siControl: 99% +/- 1, siPCM1: 100% +/- 1. Welch T-test p=0.5185.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/57205/elife-57205-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Human U2OS cell treated with either control or wdr90 siRNA and stained for WDR90 (yellow) and Centrin (magenta). DNA is in blue. Dotted white squares indicate insets. Scale bar: 5 µm. (B) Percentage of cells with the following number of WDR90 dots according to the number of Centrin dots per cell based on A, n = 150 cells/condition from three independent experiments. Average +/- SD: refer to Figure 3—figure supplement 2—source data 1 (C) WDR90 centrosomal intensity based on A, n = 90 cells/condition from three independent experiments. Average +/- SD: siControl: 1 +/- 0.2 (A.U.), siWDR90: 0.56 +/- 0.2 (A.U.). Welch T-test ****p<0.0001. (D) Centrin centrosomal intensity based on A, n = 90 cells/condition from three independent experiments. Average +/- SD: siControl 1 +/- 0.4 (A.U.), siWDR90: 0.68 +/- 0.4 (A.U). Mann-Whitney ****p<0.0001. (E) Plot profiles of WDR90 centriolar intensity based on A, n = 90 cell/condition from three independent experiments. M1 and M2 respectively refer to each mature centriole within pairs. (F) Plot profiles of Centrin centriolar intensity based on A, n = 90 cells/condition from three independent experiments. (G) Human U2OS cell treated with either control or wdr90 and stained for POC5 (yellow) and HsSAS-6 (magenta). DNA is in blue. Dotted white squares indicate insets. Scale bar: 5 µm. (H) Percentage of cells with the following numbers of POC5 dots according to the number of HsSAS-6 dots per cell based on G, n = 150 cells/condition from three independent experiments. Average +/- SD: refer to Figure 3—figure supplement 2—source data 2. (I) POC5 centrosomal intensity based on G, n = 45 cells/condition from three independent experiments. Average +/- SD: siControl 1 +/- 0.3(A.U.), siWDR90: 0.67 +/- 0.4(A.U). Mann-Whitney ****p<0.0001. (J) HsSAS-6 centrosomal intensity based on G, n = 30 cells/condition from three independent experiments. Average +/- SD: siControl 0.99 +/- 0.3 (A.U.), siWDR90: 1 +/- 0.3 (A.U). Mann-Whitney p=0.2551. (K) Plot profiles of POC5 centriolar intensity based on G, n = 45 cells/condition from three independent experiments. (L) Plot profiles of HsSAS-6 centriolar intensity based on G, n = 30 cells/condition from three independent experiments. (M) Human U2OS cell treated with either control or wdr90 siRNA and stained for CP110 (yellow) and Centrin (magenta). DNA is in blue. Dotted white squares indicate insets. Scale bar: 5 µm. (N) CP110 centrosomal intensity based on M, n = 60 cells/condition from three independent experiments. Average +/- SD: siControl 1 +/- 0.4 (A.U.), siWDR90: 0.99 +/- 0.4 (A.U). Mann-Whitney p=0.7756. (O) Centrin centrosomal intensity based on M, n = 55 cells/condition from three independent experiments. Average +/- SD: siControl 1 +/- 0.3 (A.U.), siWDR90: 0.4 +/- 0.2 (A.U). Mann-Whitney ****p<0.0001. Note that Centrin intensity served as an internal control for the efficient depletion of WDR90 by siRNA in this experiment.
 
 In addition, we noticed that besides its centriolar distribution, WDR90 localizes also to centriolar satellites, which are macromolecular assemblies of centrosomal proteins scaffolded by the protein PCM1 and involved in centrosomal homeostasis (Drew et al., 2017; Odabasi et al., 2020; Figure 3—figure supplement 1C–D). Thus, we tested whether WDR90 satellite localization depends on the satellite protein PCM1 by depleting PCM1 using siRNA and assessing WDR90 distribution. We found that in absence of PCM1, WDR90 is solely found at centrioles (Figure 3—figure supplement 1E–H), demonstrating that WDR90 satellite localization is PCM1-dependent.
 
 Altogether, these data establish that WDR90 is a centriolar and satellite protein that is recruited to centrioles in the G2-phase of the cell cycle, during procentriole elongation and central core/distal formation, similarly to the recruitment of the inner scaffold protein POC5.
 
-## WDR90 is important to recruit Centrin and POC5
+### WDR90 is important to recruit Centrin and POC5
 
 To better understand the function of WDR90, we analyzed cycling human cells depleted for WDR90 using siRNA and co-labeled WDR90 with the early centriolar marker Centrin. As previously shown (Hamel et al., 2017), WDR90 siRNA-treated cells showed significantly reduced WDR90 levels at centrosomes in comparison to control cells (Figure 3—figure supplement 2A,C). Moreover, we observed an asymmetry in signal reduction at centrioles in WDR90-depleted cells, with only one of two Centrin-positive centrioles still associated with WDR90 in G1 and early S-phase (69% compared to 10% in controls) and one of four Centrin-positive centrioles in S/G2/M cells (77% compared to 0% in controls, Figure 3—figure supplement 2B). As the four Centrin-positive dots indicate duplicated centrioles, this result suggests that the loss of WDR90 does not result from a duplication failure (Figure 3—figure supplement 2B). We postulate therefore that the remaining WDR90 signal possibly corresponds to the mother centriole and that the daughter has been depleted from WDR90 (Figure 3—figure supplement 2E), similarly to what has been observed for the protein POC5 (Azimzadeh et al., 2009). We further conclude that WDR90 is stably incorporated into centrioles, in agreement with its possible structural role.
 
@@ -88,21 +116,57 @@ To ascertain the specificity of this phenotype, we generated a stable cell line 
 
 Taken together, these results indicate that the depletion of WDR90 leads to a decrease in Centrin and POC5 localization at centrioles but does not affect the initiation of centriole duplication nor the recruitment of the distal cap protein CP110.
 
-## WDR90 depletion leads to a loss of inner scaffold components and to centriole fracture
+### WDR90 depletion leads to a loss of inner scaffold components and to centriole fracture
 
 To investigate the structural role of POC16/WDR90 proteins on centrioles, we initially turned to the previously studied Chlamydomonas reinhardtii poc16m504 and poc16m55 mutants (Hamel et al., 2017; Li et al., 2016). However, after backcrossing these two strains with a wild-type strain (CC-124), it was found that the poc16 mutation is unlinked to the motility phenotype of poc16m555 and unlinked to the ciliary assembly defect of poc16m504 previously reported (personal communication from Prof. Susan Dutcher, Washington University in St. Louis). Further genetic characterization will be needed to study the phenotypes associated with poc16 mutations.
 
 Therefore, we decided to analyze WDR90 phenotype in human cells and asked whether WDR90 depletion might lead to a loss of inner scaffold components as well as to a centriole architecture destabilization. We tested this hypothesis by analyzing centrioles from WDR90-depleted U2OS cells using U-ExM (Figure 4). As expected, we observed a strong reduction of WDR90 at centrioles, with a reminiscent asymmetrical signal in one of the two mature centrioles (Figure 4A,B). Unexpectedly, we found that WDR90-depleted centrioles exhibited a slight tubulin length increase (502 nm +/- 65 compared to 434 nm +/- 58 in controls), potentially indicative of a defect in centriole length regulation (Figure 4C). In contrast, despite a slight decrease at the level of the central core, we did not observe, in neither of the conditions, any significant difference in centriole diameter at the proximal and very distal regions (Figure 4D).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/57205/elife-57205-fig4-v1.jpg)
+
+**Figure 4.:** (A, B) Expanded centrioles from S-phase U2OS cells treated with either control (A) or wdr90 siRNA (B) stained for tubulin (magenta) and WDR90 (yellow). M stands for mature centriole and P for procentriole. White arrowhead points to WDR90-depleted centriole. Scale bar: 100 nm. (C) Tubulin length in nm, n = 90 centrioles/condition from three independent experiments. Average +/- SD: siControl = 434 nm +/- 58, siWDR90 = 500 nm +/- 65. Mann-Whitney p<0.0001. Note that only efficiently depleted centrioles were counted. (D) Tubulin diameter measured in the proximal, central core and distal regions of expanded centrioles in control (black circles) and wdr90 siRNA (siWDR90, grey circles). n = 42 and 43 centrioles for siControl and siWDR90 from two independent experiments, respectively. Averages +/- SD: refer to Figure 4—source data 1. One-way ANOVA and Holm-Sidak’s multiple comparisons (ns p<0.05, **p<0.01). (E) Expanded U2OS centrioles treated with either control or wdr90 siRNA stained for tubulin (magenta) and WDR90 (yellow) or POC1B, FAM161A, POC5 or Centrin (inner scaffold components: green). White arrow indicates the distal localization of Centrin. Scale bar: 100 nm. (F) Inner scaffold protein length expressed as a percentage of the total tubulin length, n > 30 centrioles/condition from three independent experiments. Average +/- SD: refer to Figure 4—source data 2. One-way ANOVA and Holm-Sidak’s multiple comparisons (****p<0.0001). (G) Average core length coverage. Average +/- SD: siControl = 57% +/- 13; siWDR90 = 24% +/- 14.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57205/elife-57205-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A, B) Expanded centrioles from U2OS treated with either control (A) or wdr90 siRNA (B) stained for tubulin (magenta) and POC5+CEP164 (both in green. CEP164 is indicated by a green arrowhead). MC stands for mother centriole and DC for daughter centriole. White arrowhead indicates overly long centriole. Scale bar: 250 nm. (C) Quantification of the number of POC5-positive mother and daughter centrioles in siControl and siWDR90 conditions. N = 40 centrioles from two independent experiments. Average +/- SD: siControl daughter: 100% +/- 0, siControl mother: 100%+/- 0, siWDR90 daughter: 31.9+/- 2, siWDR90 mother: 90,6+/- 1.7. (D) Inner scaffold protein length coverage based on Figure 4E, n > 30 centrioles/condition from three independent experiments. (E) Centrin length coverage based on Figure 4E, measuring inner core or total (core + distal) length. (F, G) Expanded centrioles from U2OS treated with either control (F) or wdr90 siRNA (G) stained for tubulin (magenta) and CEP135 (cyan). White arrowheads indicate overly long centrioles. Scale bar: 250 nm. (H) CEP135 protein length expressed as a percentage of the total tubulin length, n = 31 and 15 centrioles for siControl and siWDR90 respectively, from two independent experiments. Average +/- SD: siControl: 104% +/- 3.8, siWDR90: 102% +/- 1.9. Mann-Whitney test p=0.235. (I, J) Expanded centrioles from U2OS treated with either control (I) or wdr90 siRNA (J) stained for tubulin (magenta) and PolyE (cyan). White arrowheads indicate overly long centrioles. Scale bar: 250 nm. (K) PolyE protein length expressed as a percentage of the total tubulin length, n = 53 and 16 centrioles for siControl and siWDR90 respectively, from two independent experiments. Average +/- SD: siControl: 81% +/- 6.5, siWDR90: 80% +/- 6.4. Mann-Whitney test p=0.375. (L, M) Expanded centrioles from U2OS treated with either control (L) or wdr90 siRNA (M) stained for tubulin (magenta) and FOP1 (cyan). White arrowheads indicate overly long centrioles. Scale bar: 250 nm. (N) FOP1 protein length expressed as a percentage of the total tubulin length, n = 24 and 11 centrioles for siControl and siWDR90 respectively, from two independent experiments. Average +/- SD: siControl: 64% +/- 9.7, siWDR90: 78% +/- 15.9. Mann-Whitney test *p=0.018.
+
 A key prediction is that the inner scaffold is connected to the microtubule wall through the stem structure that may contain WDR90. To test this, we next analyzed whether the localization of the four described inner scaffold components POC1B, FAM161A, POC5 and Centrin would be affected in WDR90-depleted cells. We found that the localization of these four proteins in the central core region of centrioles was markedly altered in WDR90-depleted daughter centrioles (Figure 4E,F) using CEP164 to label the mother centriole (Figure 4—figure supplement 1A–C). Instead of covering ~60% of the entire centriolar lumen, we only observed a ~ 20% remaining belt, positive for inner scaffold components at the proximal extremity of the core region (Figure 4E–G and Figure 4—figure supplement 1D,E), suggesting that their initial recruitment may not be entirely affected. Another possibility would be that incomplete depletion of WDR90 allows for partial localization of inner scaffold components. It should also be noted that Centrin, which displays a central core and an additional distal tip decoration (Le Guennec et al., 2020), was affected specifically in its inner core distribution (Figure 4E white arrow, Figure 4—figure supplement 1D,E).
 
 The discovery of the inner scaffold within the centriole led to the hypothesis that this structure is important for microtubule triplet stability and thus overall centriole integrity (Le Guennec et al., 2020). In line with this hypothesis, we found that upon WDR90 depletion, 10% of cells had their centriolar microtubule wall broken, indicative of microtubule triplets fracture and loss of centriole integrity (15 out of 150 centrioles, Figure 5, Videos 1 and 2). The break occurred mainly above the remaining belt of inner scaffold components (Figure 5A–D), possibly reflecting a weakened microtubule wall in the central and distal region of the centriole. We also noticed that the perfect cylindrical shape (defined as roundness) of the centriolar microtubule wall was affected with clear ovoid-shaped or opened centrioles seen from near-perfect top view oriented centrioles (Figure 5E,F and Figure 5—figure supplement 1, 95% of depleted centrioles in top view are affected), illustrating that loss of WDR90 and the inner scaffold leads to disturbance of the characteristic centriolar architecture.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/57205/elife-57205-fig5-v1.jpg)
+
+**Figure 5.:** (A, B) Expanded centrioles from S-phase U2OS cells treated with control (A) or wdr90 siRNA (B), stained for tubulin (magenta) and POC1B (green). White arrowhead: broken microtubule wall of the mature centriole. P: procentriole, M: mature centriole. Scale bars: 100 nm. (C, D) Expanded centrioles from U2OS cells treated with control (C) or wdr90 siRNA (D), stained for tubulin (magenta) and POC5 (green) or WDR90 (yellow), displaying microtubule wall fractures (white arrowheads), lateral view. Scale bars: 100 nm. (E, F) Top views of expanded centrioles from U2OS cells treated with control (E) or wdr90 siRNA (F) stained as specified above. Note the loss of roundness of centrioles treated with wdr90 siRNA. Scale bars: 100 nm. (G) Model of WDR90 function holding microtubule triplets in the central core region of centrioles.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/57205/elife-57205-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Quantification of the orientation of mother centrioles in control cells following the appendages marker CEP164. N = 215 centrioles from three independent experiments. (B, C) Percentage of normal and defective top viewed centrioles depleted for WDR90. Centrioles were considered as defective when the roundness of the centriole was lost. N = 356 centrioles from nine independent experiments. Average +/- SD: Top view depleted: 4.1% +/- 4.2 (B); Normal: 5% +/- 10; Abnormal: 95% +/- 10 (C). (D) Expanded centriole from U2OS cells treated with control or wdr90 siRNA stained for tubulin, top views. White arrows indicate centriole fracture. Numbers indicate different centrioles. Scale bar: 200 nm.
+
+![Video 1.](https://cdn.elifesciences.org/articles/57205/elife-57205-video1.mp4.jpg)
+
+**Video 1.:** Top viewed expanded centriole from U2OS cell treated with control siRNA and stained for tubulin (magenta) and POC5 (green). Z-stack acquired every 0.12 µm from the proximal to distal end of the centriole.
+
+![Video 2.](https://cdn.elifesciences.org/articles/57205/elife-57205-video2.mp4.jpg)
+
+**Video 2.:** Top viewed expanded centriole from U2OS cell treated with wdr90 siRNA and stained for tubulin (magenta) and POC5 (green). Z-stack acquired every 0.12 µm from the proximal to distal end of the centriole.
+
 To assess whether WDR90 stability phenotype correlates solely with disturbance of inner scaffold proteins, we analyzed the distribution of the centriolar proteins FOP1 and CEP135 (BLD10) as well as glutamylation (PolyE), all known to be important for centriole stability (Bayless et al., 2012; Bayless et al., 2016; Bobinnec et al., 1998; Lin et al., 2013; Matsuura et al., 2004). While CEP135 and glutamylation were not altered in WDR90-depleted cells (Figure 4—figure supplement 1F–K), we found that FOP1 distribution was slightly disturbed at centrioles (Figure 4—figure supplement 1L–N) but still present, reinforcing our interpretation that the centriole breakage is probably due to the loss of the inner scaffold components.
 
-## WDR90/POC5 co-depletion enhances centriole architecture abnormalities
+### WDR90/POC5 co-depletion enhances centriole architecture abnormalities
 
 As the inner scaffold connects the microtubule triplet together, we wondered whether the remaining belt seen in WDR90 depleted cells could limit the phenotype of centriolar breakage. To test this hypothesis, we decided to co-deplete WDR90 with the inner scaffold protein POC5. We first depleted POC5 alone using previously described siRNA (Figure 6A,B; Azimzadeh et al., 2009). Consistently with WDR90 depletion, we found that the removal of the inner scaffold POC5, which occurs mainly at daughter centrioles (Figure 6—figure supplement 1A), led to a slight centriole elongation (Figure 6C,D) and resulted in 10% of broken centrioles (Figure 6—figure supplement 2A,B; 4 out of 46 centrioles). We also confirmed that POC5 depletion leads to shorter procentrioles in metaphase as previously reported (Azimzadeh et al., 2009) but then become over elongated just after mitosis (Figure 6—figure supplement 1B,C). We next assessed whether POC5 depletion would impair WDR90 distribution; however, we found this not to be the case, as WDR90 localization is not affected at centrioles upon POC5 depletion (Figure 6E–H and Figure 6—figure supplement 1D). This result therefore indicates that WDR90 is upstream of POC5.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/57205/elife-57205-fig6-v1.jpg)
+
+**Figure 6.:** (See also Figure 6—figure supplements 1 and 2) (A) Human U2OS cell treated with either control or poc5 siRNA and stained for POC5 (green) and HsSAS-6 (magenta). DNA is in blue. Dotted white squares indicate insets. Scale bar: 5 µm. (B) Percentage of cells with the following number of POC5 dots per cell based on A, n = 50 cells/condition from three independent experiments. Average +/- SD: refer to Figure 6—source data 1. Fisher's exact test p<0.0001. (C) Expanded centrioles from U2OS treated with either control or poc5 siRNA stained for tubulin (magenta) and POC5+CEP164 (both in green. CEP164 is indicated by a green arrowhead). MC stands for mother centriole and DC for daughter centriole. Scale bar: 250 nm. (D) Tubulin length in nm, n = 30 centrioles/condition from two independent experiments. Average +/- SD: siControl = 434 nm +/- 45, siPOC5 = 485 nm +/- 64. Mann-Whitney p=0.0005. (E) Human U2OS cell treated with either control or poc5 siRNA and stained for WDR90 (yellow) and HsSAS-6 (magenta). DNA is in blue. Dotted white squares indicate insets. Scale bar: 5 µm. (F) Percentage of cells with the following number of WDR90 dots per cell based on A, n = 50 cells/condition from three independent experiments. Average +/- SD: refer to Figure 6—source data 2. Fisher's exact test p=0.6328. (G) Expanded centrioles from U2OS treated with either control or poc5 siRNA stained for tubulin (magenta) and WDR90 (yellow). Scale bar: 250 nm. (H) Average WDR90 length coverage in siControl or siPOC5. n = 30 centrioles/condition from two independent experiments. Average +/- SD: siControl = 50% +/- 21; siPOC5 = 52% +/- 23. (I) Expanded centrioles from U2OS treated with either control or wdr90/poc5 siRNA stained for tubulin (magenta) and POC5+CEP164 (both in green, CEP164 is indicated by a green arrowhead). MC stands for mother centriole and DC for daughter centriole. Inset shows a distal position of the mother centriole were CEP164 signal is visible (green arrowheads). White arrowhead indicates a loss of centriolar roundness. Scale bars: 250 nm. (J) Tubulin length in nm, n = 50 centrioles/condition from two independent experiments. Average +/- SD: siControl = 372 nm +/- 56, siWDR90/POC5 = 490 nm +/- 72. Unpaired t test ****p<0.0001.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/57205/elife-57205-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Quantification of the number of POC5-positive mother and daughter centrioles in siControl and siPOC5. n = 50 centrioles counted from two independent experiments. Average +/- SD: siControl daughter: 100% +/- 0, siControl mother: 100%+/- 0, siWDR90 daughter: 14.9+/- 5.4, siWDR90 mother: 90.4+/- 4. (B) Expanded centrioles from U2OS in metaphase treated with either control or poc5 siRNA stained for tubulin (magenta) and POC5 (green). M stands for mature centriole and P for procentriole. Scale bar: 250 nm. Note the shorter procentriole in poc5 siRNA condition. (C) Tubulin length in nm of procentriole in metaphase and post-mitosis from siControl and siPOC5. n = 18, 22, 29, 23 centrioles for siControl metaphase, siPOC5 metaphase, siControl post-mitosis, siPOC5 post-mitosis respectively from three independent experiments. Average +/- SD: refer to Figure 6—figure supplement 1—source data 1. One-way ANOVA and Holm-Sidak’s multiple comparisons *p<0.05, **p<0.001. (D) WDR90 centrosomal intensity based on Figure 6E, n = 90 cells/condition from three independent experiments. Average +/- SD: siControl: 1 +/- 0.4 (A.U.), siWDR90: 0.96 +/- 0.3 (A.U.). Mann Whitney p=0.9088. (E) Quantification of the number of POC5-positive mother and daughter centriole in siControl and siWDR90/POC5. n = 100 centrioles from two independent experiments. Average +/- SD: siControl daughter: 100% +/- 0, siControl mother: 100%+/- 0, siWDR90/POC5 daughter: 7.2+/- 2.9, siWDR90/POC5 mother: 69.1+/- 2.9. (F) Human U2OS cell treated with either control or wdr90/poc5 siRNA and stained for POC5 (green) and HsSAS-6 (magenta). DNA is in blue. Dotted white squares indicate insets. Scale bar: 5 µm. (G) Percentage of cells with the following number of POC5 dots per cell based on F, n = 100 cells/condition from two independent experiments. Average +/- SD: refer to Figure 6—figure supplement 1—source data 2. Fisher's exact test p<0.0001. (H) Human U2OS cell treated with either control or wdr90/poc5 siRNA and stained for WDR90 (yellow) and HsSAS-6 (magenta). DNA is in blue. Dotted white squares indicate insets. Scale bar: 5 µm. (I) Percentage of cells with the following number of WDR90 dots per cell based on H, n = 100 cells/condition from two independent experiments. Average +/- SD: Refer to Figure 6—figure supplement 1—source data 3. Fisher's exact test p<0.0001. (J) Number of nuclei counted per field of view (Fov) (expressed as a ratio to the siControl), n > 5000 cell/condition from 2/3 independent experiments. Average +/- SD: siControl: 100% +/- 0, siWDR90: 65% +/- 16; siWDR90/POC5: 24% +/- 2. ANOVA one-way followed by Tukey’s post hoc test. **p=0.0015.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/57205/elife-57205-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) Expanded centrioles from U2OS treated with control siRNA stained for tubulin (magenta) and POC5+CEP164 (both in green). Scale bar: 250 nm. (B) Expanded centrioles from U2OS treated with poc5 siRNA stained for tubulin (magenta) and POC5+CEP164 (both in green). Long white arrowheads indicate overly long centrioles, short white arrowhead indicates structurally abnormal centriole, that could be either blunt broken or misassembled, star indicates fully broken centriole. Scale bar: 250 nm. (C, D) Expanded centrioles from U2OS treated with wdr90/poc5 siRNA stained for tubulin (magenta) and POC5+CEP164 (both in green). Long white arrowheads indicate overly long centrioles (C), short white arrowheads indicate structurally abnormal centrioles, that could be either blunt broken or misassembled, stars indicate fully broken centrioles (D). Scale bar: 250 nm.
 
 We next capitalize on this efficient POC5 depletion to co-deplete POC5 together with WDR90 (Figure 6—figure supplement 1E–J). We found that the double siRNA led to a strong decrease of cell number as compared to WDR90 depletion alone, suggesting either an increase of cell mortality or a defect in cell cycle progression (Figure 6—figure supplement 1J). As expected, we found that the remaining POC5 belt found in WDR90-depleted centrioles was completely removed (Figure 6I). Moreover, centrioles appeared even further elongated under these conditions, indicating that the complete removal of POC5 further enhances the WDR90 phenotype (Figure 6I,J). Structurally, we noticed beside the elongated centrioles about 30%, of abnormal centrioles in WDR90/POC5 depleted cells (Figure 6—figure supplement 2A,C,D; 70 out of 260 centrioles), ranging from very short centrioles that seem to lack the entire core/distal region as well as centrioles with broken microtubule blades. We also noted a loss of centriole roundness (Figure 6I, white arrow). Overall, these phenotypes support our prediction that depletion of inner scaffolds component strongly impairs centriole integrity.
 
@@ -124,15 +188,522 @@ Given the importance of centriole integrity in enabling the proper execution of 
 
 ## Materials and methods
 
-## Method details
+**Key resources table**
 
-## Human cell lines
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Chlamydomonas reinhardtii)</td>
+      <td>WT</td>
+      <td>Chlamydomonas Resource Center</td>
+      <td>cMJ030</td>
+      <td>Wild-type</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Paramecium tetraurelia)</td>
+      <td>7S</td>
+      <td>Beisson et al., 2010</td>
+      <td>doi:10.1101/pdb.prot5364</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS</td>
+      <td>Habedanck et al., 2005</td>
+      <td>PMID:16244668</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>RPE-1 p53-</td>
+      <td>Wang et al., 2015</td>
+      <td>PMID:26609813</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>U2OS:GFP-WDR90RR</td>
+      <td>This paper</td>
+      <td>p. 19 of the manuscript (Material and methods)</td>
+      <td>Episomal, puromycine selected, doxycycline-inducible</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>GFP-WDR90RR</td>
+      <td>This paper</td>
+      <td>pEBTet-GFP-WDR90RR(FL) p. 20 of the manuscript (Material and methods)</td>
+      <td>WDR90RR DNA template from Hamel et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>GFP-WDR90(1-225)RR</td>
+      <td>This paper</td>
+      <td>pEBTet-GFP-WDR90RR(1-225) p. 20 of the manuscript (Material and methods)</td>
+      <td>WDR90RR DNA template from Hamel et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Homo sapiens)</td>
+      <td>GFP-WDR90</td>
+      <td>This paper</td>
+      <td>Genebank sequence NP_660337, pEGFP-WDR90</td>
+      <td>RT-PCR from human RPE-1 cells, cloned into modified pEGFP-C1 vector using AscI andPacI restriction sites</td>
+    </tr>
+    <tr>
+      <td>Transfected construct (Chlamydomonas reinhardtii)</td>
+      <td>POC16 (1-295)</td>
+      <td>This paper</td>
+      <td>pXLG-POC16(1-295), described p.20 of the manuscript in the Material andmethods section.</td>
+      <td>POC16 sequence synthetized by GeneArt using the E. coli codon usage (described in Hamel et al., 2017) cloned into pXLG vector using NotI and BamHI restriction sites</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Chlamydomonas reinhardtii)</td>
+      <td>Isolated basal bodies</td>
+      <td>Klena et al., 2018</td>
+      <td>PMID:30295659</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Biological sample (Sus scrofa)</td>
+      <td>Tubulin</td>
+      <td>Cytoskeleton</td>
+      <td>Cat. #: T240</td>
+      <td>Isolated from brain, used for electron microscopy</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Bovine taurus)</td>
+      <td>Tubulin</td>
+      <td>Centro de Investigastiones Biologicas, Madrid, Spain</td>
+      <td></td>
+      <td>Isolated from brain, used for pelleting assay</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Tubulin AA345 (mouse monoclonal)</td>
+      <td>Le Guennec et al., 2020</td>
+      <td>PMID:32110738</td>
+      <td>U-ExM Isolated Basal Bodies (1:500) U-ExM in cells (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alpha-Tubulin AA344 (mouse monoclonal)</td>
+      <td>Le Guennec et al., 2020</td>
+      <td>PMID:32110738</td>
+      <td>U-ExM in cells (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>POC16 (rabbit polyclonal)</td>
+      <td>Hamel et al., 2017</td>
+      <td>PMID:28781053</td>
+      <td>U-ExM (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>POB15 (rabbit polyclonal)</td>
+      <td>Hamel et al., 2017</td>
+      <td>PMID:28781053</td>
+      <td>U-ExM (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>WDR90 (rabbit polyclonal)</td>
+      <td>NovusBio</td>
+      <td>Cat. #: NBP2-31888</td>
+      <td>U-ExM (1:100) IF (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>POC1B (rabbit polyclonal)</td>
+      <td>ThermoFisher</td>
+      <td>Cat. #: PA5-24495</td>
+      <td>U-ExM (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>POC5 (rabbit polyclonal)</td>
+      <td>Bethyl</td>
+      <td>Cat. #: A303-341A</td>
+      <td>U-ExM (1:250) IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>FAM161A (rabbit polyclonal)</td>
+      <td>Le Guennec et al., 2020</td>
+      <td>PMID:32110738</td>
+      <td>U-ExM (1:250)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Centrin (mouse monoclonal, 20H5)</td>
+      <td>Merck Millipore</td>
+      <td>Cat. #: 04–1624</td>
+      <td>U-ExM (1:250) IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>DM1A Tubulin (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab7291</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>HsSAS-6 (mouse monoclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-81431</td>
+      <td>IF (1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>PCM1 (rabbit polyclonal)</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>Cat. #: sc-67204</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>CP110 (rabbit polyclonal)</td>
+      <td>Proteintech</td>
+      <td>Cat. #: 12780–1</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>GFP (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab1218</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>mCherry (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab167453</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>ptPOC16 (rabbit polyclonal)</td>
+      <td>This study</td>
+      <td>described p.27 of the manuscript in the Supplemental Methods section.</td>
+      <td>IF (1:50)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Tubulin 1D5 (mouse mono clonal)</td>
+      <td>Beisson et al., 2010</td>
+      <td></td>
+      <td>IF (1:10)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 488 anti-rabbit IgG (goat)</td>
+      <td>ThermoFisher</td>
+      <td>Cat. #: A11008</td>
+      <td>U-ExM (1:400) IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Alexa 568 anti-mouse IgG (goat)</td>
+      <td>ThermoFisher</td>
+      <td>Cat. #: A11004</td>
+      <td>U-ExM (1:400) IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEBTet-EGFP-GW</td>
+      <td>Gift from the Gönczy lab</td>
+      <td>Na.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pENTR-Age-AGT</td>
+      <td>Gift from the Gönczy lab</td>
+      <td>Na.</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEGFP-C1</td>
+      <td>Clontech</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA Control</td>
+      <td>ThermoFisher</td>
+      <td>AM4642</td>
+      <td>Silencer select</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA targetingwdr90 gene</td>
+      <td>ThermoFisher</td>
+      <td>S47097</td>
+      <td>Silencer select</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>siRNA targetingpcm1 gene</td>
+      <td>ThermoFisher</td>
+      <td>ADCSU9L</td>
+      <td>Silencer select</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>POC16(1-295)</td>
+      <td>This paper</td>
+      <td>Uniprot A8JAN3</td>
+      <td>Purified from bacteria</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>WDR90(1-225)</td>
+      <td>This paper</td>
+      <td>Uniprot Q96KV7</td>
+      <td>Purified from bacteria</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>drPOC16(1-243)</td>
+      <td>This paper</td>
+      <td>Uniprot F1RA29</td>
+      <td>Purified from bacteria</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>btPOC16(1-224)</td>
+      <td>This paper</td>
+      <td>Uniref UPI000572B175</td>
+      <td>Purified from bacteria</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>ptPOC16(2-210)</td>
+      <td>This paper</td>
+      <td>Uniprot A0DK60</td>
+      <td>Purified from bacteria</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>xtPOC16(1-245)</td>
+      <td>This paper</td>
+      <td>Uniref UPI0008473371</td>
+      <td>Purified from bacteria</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>rnPOC16(54-282)</td>
+      <td>This paper</td>
+      <td>Uniref UPI0008473371</td>
+      <td>Purified from bacteria</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine 3000 Transfection kit</td>
+      <td>LifeTechnology</td>
+      <td>Cat. #: L3000015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine RNAi max kit</td>
+      <td>LifeTechnology</td>
+      <td>Cat. #: 13778150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Click-EdU-Alexa647 FACS kit</td>
+      <td>Carl Roth</td>
+      <td>Cat. #: 7783.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>DAPCO Mounting medium</td>
+      <td>Abcam</td>
+      <td>Cat. #: ab188804</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Affi-Gel 10</td>
+      <td>Bio-Rad</td>
+      <td>Cat. #:153–6099</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formaldehyde 36.5–38%</td>
+      <td>Sigma</td>
+      <td>Cat. #: F8775</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Acrylamide 40%</td>
+      <td>Sigma</td>
+      <td>Cat. #: A4058</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>N,N’-methylbisacrylamide 2%</td>
+      <td>Sigma</td>
+      <td>Cat. #: M1533</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Sodium acrylate 97–99%</td>
+      <td>Sigma</td>
+      <td>Cat. #: 408220</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ammonium persulfate</td>
+      <td>ThermoFisher</td>
+      <td>Cat. #: 17874</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tetramethylethyldiamine</td>
+      <td>ThermoFisher</td>
+      <td>Cat. #: 17919</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Poly-D-Lysine 1 mg/mL</td>
+      <td>Gibco</td>
+      <td>Cat. #: A3890401</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Taxol/Paclitaxel</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat. #: T7191</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Coomassie staining</td>
+      <td>Biotium</td>
+      <td>Cat. #: 21003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Propidium Iodide</td>
+      <td>Sigma</td>
+      <td>Cat. #: 81845</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rnase</td>
+      <td>Roche</td>
+      <td>Cat. #: 11119915001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ/FiJi</td>
+      <td>Schindelin et al., 2012</td>
+      <td>doi:10.1038/nmeth.2019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CentrioleJ pluggin</td>
+      <td>Guichard et al., 2013</td>
+      <td>DOI:10.1016/j.cub.2013.06.061</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UnwarpJ pluggin</td>
+      <td>Sorzano et al., 2005</td>
+      <td>DOI:10.1109/TBME.2005.844030</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPadPrism7</td>
+      <td>GraphPad Software</td>
+      <td>7.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phyre2</td>
+      <td>Kelley and Sternberg, 2009</td>
+      <td>DOI:10.1038/nprot.2015.053</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>Pettersen et al., 2004</td>
+      <td>DOI:10.1002/jcc.20084</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Zeiss LSM700 microscope</td>
+      <td>Zeiss</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Leica TCS SP8 microscope</td>
+      <td>Leica</td>
+      <td></td>
+      <td>Expansion microscopy</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Leica Thunder inverted microscope</td>
+      <td>Leica</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tecnai G2 Sphera microscope</td>
+      <td>Thermofisher</td>
+      <td></td>
+      <td>Negative stain and cryo-EM</td>
+    </tr>
+  </tbody>
+</table>
+
+### Method details
+
+#### Human cell lines
 
 Human U2OS and RPE1 p53- cells (gift from Meng-Fu Bryan Tsou) were cultured similarly to Hamel et al., 2017. This cell lines have been authenticated by Microsynth. Cells were grown in DMEM supplemented with GlutaMAX (Life Technology), 10% tetracycline-negative fetal calf serum (life technology), penicillin and streptomycin (100 µg/ml). Cell lines were regularly tested for mycoplasma contamination using the Mycoplasma detection Kit-Quick Test (biotool.com, cat: B39032).
 
 To generate inducible episomal U2OS:GFP-WDR90RR cell line, U2OS cells were transfected using Lipofectamine 3000 (Life Technology). Transfected cells were selected for 6 days using 1 µg/mL puromycin starting day 2 after transfection. Selected cells were amplified and frozen. For further experiments, U2OS:GFP-WDR90 cell line was grown in the medium specified above supplemented with 1 µg/mL puromycin.
 
-## Cloning and protein purification
+#### Cloning and protein purification
 
 The constructs encompassing the predicted DUF667 domain of POC16 (Uniprot: A8JAN3), WDR90 (Uniprot: Q96KV7), drPOC16 (Uniprot: F1RA29), btPOC16 (Uniref: UPI000572B175), ptPOC16 (Uniprot: A0DK60), xtPOC16 (Uniref: UPI0008473371) and rnPOC16 (Uniref UPI0008473371) were cloned into a pET-based expression vector via Gibson assembly (Gibson et al., 2009).
 
@@ -142,21 +713,21 @@ Protein expression was carried out in E. coli BL21 (DE3) competent cells grown i
 
 The protein-containing fractions were pooled together and dialysed against the lysis buffer at 4 °C for 48 hr in the presence of the 6xHis-3C protease. The tag-free protein was reapplied onto a HisTrap HP 5 ml column (GE Healthcare) to separate the cleaved product from the respective tags and potentially uncleaved protein. The processed proteins were concentrated and further purified by size exclusion chromatography (Superdex-75 16/60, GE Healthcare) in running buffer (20 mM Tris pH 7.5, 150 mM NaCl, 2 mM DTT). Protein were analysed by Coomasie stained SDS-PAGE and the protein-containing fractions were pooled, concentrated and flash-frozen for storage at −80 °C. All protein concentrations were estimated by UV absorbance at 280 nm.
 
-## Microtubule binding assay
+#### Microtubule binding assay
 
 Taxol-stabilized microtubules (MTs) were assembled in BRB80 buffer (80 mM PIPES-KOH pH6.8, 1 mM MgCl2, 1 mM EGTA) from pure bovine brain tubulin at 1 mg/mL (Centro de Investigaciones Biológicas, Madrid, Spain). 50 µL of stabilized MTs were incubated with 20 µL of protein at 1 mg/mL for 2 hr at room temperature. After centrifugation on a taxol-glycerol cushion (8000 rpm, 30°C, 20 min) the supernatant and the pellet were analyzed by Coomasie stained SDS-PAGE gels. As a control, MTs alone and each protein alone were processed the same way.
 
-## Tubulin-binding assay
+### Tubulin-binding assay
 
 Tubulin at 10 µM was incubated with a slight molar ratio excess of each protein construct (around 15 µM) in MES buffer for 15 min on ice. After centrifugation at 13,000 x g at 4°C for 20 min, the supernatant and the pellet were analyzed by Coomasie stained SDS-PAGE.
 
-## In vitro microtubules decoration and imaging
+### In vitro microtubules decoration and imaging
 
 For simple decoration, Taxol-stabilized microtubules were nucleated as described (Schmidt-Cernohorska et al., 2019) and subsequently exposed to recombinant WDR90-N(1-225) in a 1:1 molar ratio for 30 min at room temperature. 5 µL of protein complexes solution were blotted on carbon square 300 mesh grids (EMS) and stained with Uranyl Acetate (2%) for 3 then 30 s.
 
 For double decoration, in vitro microtubules were incubated with WDR90-N(1-225) in a 1:1 molar ratio for 5 min at room temperature prior to addition of 2X free tubulin for 30 min at room temperature. Negatively stained grids were prepared as above. For cryo-microscopy, 4 µL of double decorated microtubule were deposited on a Lacey Carbon film grid (300 Mesh, EMS), blotted manually for 2 s and plunge into liquid ethane using an homemade plunger. Electron micrographs were acquired on a Tecnai G2 Sphera electron microscope (FEI Company) and analyzed using ImageJ.
 
-## Cloning and transient overexpression in human cells
+### Cloning and transient overexpression in human cells
 
 GFP-WDR90-N(1-225)RR and GFP-WDR90(FL)RR were cloned in the Gateway compatible vector pEBTet-eGFP-GW. Previously generated RNAi-resistant WDR90 DNA (Hamel et al., 2017) was used as template for PCR amplification. In brief, inserts were first subcloned in pENTR-Age-AGT using the restriction sites AgeI and XbaI. Second, a Gateway reaction was performed to generate the final expression plasmids pEBTet-GFP-WDR90-N(1-225)RR and pEBTer-GFP-WDR90(FL)RR, which were sequenced verified prior to transfection in human cells.
 
@@ -166,7 +737,7 @@ Cloning of the GFP-WDR90 construct used in Figure 2 was done as follows: WDR90 w
 
 Cloning of POC16(1-295) into the pXLG vector was performed as followed: the POC16 sequence synthetized by GeneArt using the E. coli codon usage (described in Hamel et al., 2017) was cloned into pXLG vector using NotI and BamHI restriction sites.
 
-## siRNA-mediated protein depletion
+### siRNA-mediated protein depletion
 
 U2OS cells were plated onto coverslips in a 6-well plate at 200 000 cell/well 24 hr prior transfection.
 
@@ -178,13 +749,13 @@ For WDR90/POC5 depletion, cells were transfected with 10 nM of silencer select n
 
 In U2OS:GFP-WDR90(FL-RR) stable cell line, RNA-resistant protein expression was induced constantly for 96 hr using 1 µg/mL doxycycline.
 
-## Immunofluorescence in human cells
+### Immunofluorescence in human cells
 
 Cells grown on a 15 mm glass coverslips (Menzel Glaser) were pre-extracted for 15 s in PBS supplemented with 0.5% triton prior to iced-cold methanol fixation for 7 min. Cells were washed in PBS then incubated for 1 hr in 1% bovine serum albumin (BSA) in PBS-T with primary antibodies against WDR90 (1:250, rabbit polyclonal, NovusBio NBP2-31888) (note that the WDR90 antibody also decorates the border of the cell, reminiscent to focal adhesion pattern), Centrin (1:500, mouse monoclonal, clone 20H5, 04–1624, Merck Millipore), POC5 (1:500, rabbit polyclonal, A303-341A, Bethyl) HsSAS-6 (1:100, mouse monoclonal, sc-81431, Santa Cruz Biotechnology), PCM1 (1:500, rabbit polyclonal, sc-67204, Santa Cruz Biotechnology), CP110 (1:500, rabbit polyclonal, 12780–1, Proteintech), GFP (1:500, mouse monoclonal, ab1218, Abcam), mCherry (1:500, rabbit polyclonal) or tubulin (1:500, mouse monocolonal, ab7291, Abcam). Coverslips were washed in PBS for 30 min prior to incubation with secondary antibodies (1:1000) for 1 hr at room temperature, washed again for 30 min in PBS and mounted in DAPCO mounting medium containing DAPI (Abcam). The following secondary antibodies were used: goat anti-rabbit Alexa Fluor 488 IgG H+L (1:400, A11008) and goat anti-mouse Alexa Fluor 568 IgG H+L (1:250, A11004) (Invitrogen, ThermoFisher).
 
 Imaging was performed on a Zeiss LSM700 confocal microscope or on a Leica Thunder DMi8 microscope with a PlanApo 63x oil immersion objective (NA 1.4) and optical sections were acquired every 0.33 µm, then projected together using ImageJ.
 
-## Ultrastructure Expansion Microscopy (U-ExM)
+### Ultrastructure Expansion Microscopy (U-ExM)
 
 The following reagents were used in U-ExM experiments: formaldehyde (FA, 36.5–38%, F8775, SIGMA), acrylamide (AA, 40%, A4058, SIGMA), N,N’-methylenbisacrylamide (BIS, 2%, M1533, SIGMA), sodium acrylate (SA, 97–99%, 408220, SIGMA), ammonium persulfate (APS, 17874, ThermoFisher), tetramethylethylendiamine (TEMED, 17919, ThermoFisher), nuclease-free water (AM9937, Ambion-ThermoFisher) and poly-D-Lysine (A3890401, Gibco).
 
@@ -200,11 +771,81 @@ The following secondary antibodies were used: goat anti-rabbit Alexa Fluor 488 I
 
 For each gel, a caliper was used to accurately measure its expanded size (Exsize in mm). The gel expansion factor (X factor) was obtained by dividing Exsize by 12 mm, which corresponds to the size of the coverslips use for sample seeding. Thus, X factor = Exsize (mm)/12(mm). The table below shows the Exsize and X factor for all the gels used in this study.
 
-GelsiControl Exsize (X factor)siWDR90 Exsize (X factor)POC1B (n = 1)53 mm (4.42)52 mm (4.33)POC1B (n = 2)49 mm (4.08)50.5 mm (4.21)POC1B (n = 3)50.5 mm (4.21)50.5 mm (4.21)FAM161A (n = 1)50 mm (4.16)50 mm (4.16)FAM161A (n = 2)50 mm (4.16)51 mm (4.25)FAM161A (n = 3)50 mm (4.16)50 mm (4.16)POC5 (n = 1)51 mm (4.25)50.5 mm (4.21)POC5 (n = 2)50 mm (4.16)50 mm (4.16)POC5 (n = 3)50.5 mm (4.21)49 mm (4.08)Centrin (n = 1)50 mm (4.16)50 mm (4.16)Centrin (n = 2)50 mm (4.16)50 mm (4.16)Centrin (n = 3)49 mm (4.08)49 mm (4.08)
+<table>
+  <thead>
+    <tr>
+      <th>Gel</th>
+      <th>siControl Exsize (X factor)</th>
+      <th>siWDR90 Exsize (X factor)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>POC1B (n = 1)</td>
+      <td>53 mm (4.42)</td>
+      <td>52 mm (4.33)</td>
+    </tr>
+    <tr>
+      <td>POC1B (n = 2)</td>
+      <td>49 mm (4.08)</td>
+      <td>50.5 mm (4.21)</td>
+    </tr>
+    <tr>
+      <td>POC1B (n = 3)</td>
+      <td>50.5 mm (4.21)</td>
+      <td>50.5 mm (4.21)</td>
+    </tr>
+    <tr>
+      <td>FAM161A (n = 1)</td>
+      <td>50 mm (4.16)</td>
+      <td>50 mm (4.16)</td>
+    </tr>
+    <tr>
+      <td>FAM161A (n = 2)</td>
+      <td>50 mm (4.16)</td>
+      <td>51 mm (4.25)</td>
+    </tr>
+    <tr>
+      <td>FAM161A (n = 3)</td>
+      <td>50 mm (4.16)</td>
+      <td>50 mm (4.16)</td>
+    </tr>
+    <tr>
+      <td>POC5 (n = 1)</td>
+      <td>51 mm (4.25)</td>
+      <td>50.5 mm (4.21)</td>
+    </tr>
+    <tr>
+      <td>POC5 (n = 2)</td>
+      <td>50 mm (4.16)</td>
+      <td>50 mm (4.16)</td>
+    </tr>
+    <tr>
+      <td>POC5 (n = 3)</td>
+      <td>50.5 mm (4.21)</td>
+      <td>49 mm (4.08)</td>
+    </tr>
+    <tr>
+      <td>Centrin (n = 1)</td>
+      <td>50 mm (4.16)</td>
+      <td>50 mm (4.16)</td>
+    </tr>
+    <tr>
+      <td>Centrin (n = 2)</td>
+      <td>50 mm (4.16)</td>
+      <td>50 mm (4.16)</td>
+    </tr>
+    <tr>
+      <td>Centrin (n = 3)</td>
+      <td>49 mm (4.08)</td>
+      <td>49 mm (4.08)</td>
+    </tr>
+  </tbody>
+</table>
 
 Pieces of gels were mounted on 24 mm round precision coverslips (1.5H, 0117640, Marienfeld) coated with poly-D-lysine for imaging. Image acquisition was performed on an inverted Leica TCS SP8 microscope or on a Leica Thunder DMi8 microscope using a 63 × 1.4 NA oil objective with Lightening or Thunder SVCC (small volume computational clearing) mode at max resolution, adaptive as ‘Strategy’ and water as ‘Mounting medium’ to generate deconvolved images. 3D stacks were acquired with 0.12 µm z-intervals and an x, y pixel size of 35 nm.
 
-## Image analysis
+### Image analysis
 
 For centrioles counting, immunofluorescences were analyzed on a Leica epifluorescence microscope or on a Leica Thunder DMi8 microscope.
 
@@ -222,6 +863,6 @@ Measurements of diameter in siControl and siWDR90 conditions were performed on S
 
 Roundness was calculated on perfectly imaged top views of centrioles by connecting tubulin peaks on ImageJ.
 
-## Statistical analysis
+### Statistical analysis
 
 No statistical method was used to estimate sample size. The comparison of two groups was performed using a two-sided Student's t-test or its non-parametric correspondent, the Mann-Whitney test, if normality was not granted because rejected by Pearson test The comparisons of more than two groups were made using one- or two-way ANOVAs followed by post-hoc tests (Holm Sidak’s multiple comparisons) to identify all the significant group differences. N indicates independent biological replicates from distinct samples. Every experiment was performed at least three times independently on different biological samples unless specified. Data are all represented as scatter or aligned dot plot with centerline as mean, except for percentages quantifications, which are represented as histogram bars. The graphs with error bars indicate SD (+/-) and the significance level is denoted as usual (*p<0.05, **p<0.01, ***p<0.001, ****p<0.0001). All the statistical analyses were performed using Excel or Prism7 (Graphpad version 7.0a, April 2, 2016).

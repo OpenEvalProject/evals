@@ -39,33 +39,137 @@ Stimulation of mammalian cells with growth factors elicits a variety of context-
 
 To understand how the immediate-early dynamics of the Akt pathway depend on the background level of growth factors, we used immunofluorescence to quantify the levels of pAkt in epidermal growth factor (EGF)- stimulated human non-transformed mammary epithelial MCF10A cells (Materials and methods, Figure 1—figure supplement 1). Within minutes of continuous stimulation with EGF pAkt reached maximum response, and then decayed to low steady state levels within hours (Figure 1a). The resulting steady state pAkt levels were approximately independent of the EGF stimulus, indicating an approximately adaptive response (Friedlander and Brenner, 2009; Shoval et al., 2010; Figure 1—figure supplement 2). In the sensitive range of EGF concentrations, maximal pAkt response was approximately proportional to the logarithm of the EGF stimulus (Figure 1b). Quantitative western blot experiments demonstrated that in this logarithmic regime, pAkt levels were approximately linearly proportional to the phosphorylation level of EGF receptors (EGFRs) (Figure 1—figure supplement 3). The logarithmic dependence of EGFR phosphorylation levels on EGF stimulation has been previously attributed to a mixture of receptor species with varying affinities to the ligand, negative cooperativity of ligand binding to receptor dimers, and oligomeric aggregation of receptors (Kawamoto et al., 1983; Chatelier et al., 1986; Wofsy et al., 1992; Macdonald and Pike, 2008; Huang et al., 2016).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig1-v2.jpg)
+
+**Figure 1.:** (a) Temporal profiles of phosphorylated Akt (pAkt) in cells exposed to increasing stimulation with extracellular EGF (see inset). (b) Maximal pAkt response as a function of EGF stimulation. (c) Steady state levels of surface EGFR (sEGFR) after 150 and 180 min of stimulation with a constant level of EGF. (d) Desensitization of the maximal pAkt response to an abrupt EGF stimulation. MCF10A cells were pre-treated with increasing background doses of EGF (x-axis) for three hours, followed by a second abrupt stimulation with the same concentration of EGF (2 ng/ml); the inset shows a schematic illustration of the experimental protocol. In all subpanels, error bars represent the standard deviation of n = 3 technical replicates. Source data: pakt_timecourses_first_step.mat and segfr_150_180mins.doseresponse.mat (available in Source code 1).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Representative immunofluorescence images of MCF10A cells used for the generation of quantitative data on Akt phosphorylation (pAkt) and cell surface EGFR (sEGFR). (left) MCF10A cells 5 min after control treatment (a), or treatment with 1 ng/ml (b) or 100 ng/ml of EGF stained for pAKT. (right) MCF 10A cells 180 min after control treatment (a), or treatment with 1 ng/ml (b) or 100 ng/ml of EGF stained for sEGFR. Pseudocolors: blue: nuclei; green: cytoplasm; red: pAKT (left panels) or sEGFR (right panels).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** The maximal (red) and the steady state (black, 180 mins) pAkt response (y-axis) following a constant EGF stimulation (x-axis). The maximal and steady state responses were obtained from experimentally measured pAkt levels in MCF10A cells exposed to a constant EGF stimulation for 5, 10, 15, 30, 45, 90, and 180 min. Error bars represent the standard deviation of n = 3 technical replicates.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Cells were treated with different doses of EGF for 5 min (0.1, 0.18, 0.32, 0.56, and 1 ng/ml) and phosphorylation levels of Akt and EGFR were then measured using quantiative Western blots (Pearson’s correlation coefficient is r2 = 0.95, regression p=0.004). Error bars on both axes represent the standard deviation of n = 3 technical replicates.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** pAkt levels after 180 min of exposure to different background EGF levels (x-axis) followed by stimulation with 2.5 ng/ml EGF for 5 min (blue) or with 20 μm SC79 for 30 min (green). The black bars represent pAkt levels after 180 min of stimulation with background EGF. Error bars represent the standard deviation of n = 3 technical replicates.
+
 Continuous stimulation with EGF resulted in the abundance of cell-surface EGF receptors (sEGFR) also decreasing proportionally to the logarithm of the background EGF level, and reaching a new steady state within hours (Figure 1c). Notably, prior exposure with EGF desensitized cells to subsequent EGF stimulations in a quantitative manner. When we first pre-exposed cells to different levels of EGF for 3 hr and then stimulated them with the same final EGF concentration (2 ng/ml)), the maximal pAkt response decreased monotonically with increasing pre-exposure EGF levels (Figure 1d). These experiments demonstrate that the pAkt response to an abrupt EGF stimulation is strongly affected by background EGF levels, and that this effect is likely mediated by the endocytosis-based removal of activated EGFRs from the cell surface (Wiley et al., 1991).
 
 Using pharmacological perturbations of the EGFR/Akt pathway, we confirmed that the desensitization of the phosphorylation response (Figure 1d) was likely due to receptor-based mechanisms upstream of Akt activation, and did not depend on its downregulation, for example, through phosphorylation-dependent Akt degradation (Wu et al., 2011). Specifically, we used SC79, a small molecule which promotes Akt phosphorylation even in the absence of extracellular ligands (Jo et al., 2012). Unlike the desensitization observed in the growth factor-induced pAkt response (Figure 1d), the pAkt response following stimulation with SC79 did not depend on the background EGF pre-exposure (Figure 1—figure supplement 4). This result supports the conclusion that the EGF desensitization mechanism was upstream of Akt.
 
 To understand how background EGF levels affect the pAkt response to subsequent EGF stimulation we next constructed an ordinary differential equation (ODE) model of EGF-dependent Akt phosphorylation. The model included several well-established features of the EGFR signaling cascade (Chen et al., 2009), such as endocytosis and degradation of activated receptors (Materials and methods) (Figure 2a). We constrained the ranges of model parameters based on literature-derived estimates (Supplementary file 1a), and fitted the model using experimental data on pAkt time courses (Figure 1a) and steady state sEGFR levels (Figure 1c) at different doses of EGF stimulations. We then used simulated annealing to optimize model parameters (Materials and methods, Figure 2—figure supplement 1), and considered multiple distinct parameter sets from the optimization runs for further computational analysis.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig2-v2.jpg)
+
+**Figure 2.:** (a) Schematic of the computational model of the EGFR signaling cascade leading to phosphorylation of Akt. Rate constants marked with asterisks correspond to reactions associated with activated (phosphorylated) receptors. Only a subset of reactions in the network are shown for brevity. (b) In silico protocol used to explore relative sensing, showing the temporal profiles of EGF stimulation (top) and the corresponding profiles pAkt response (bottom). Cells were first exposed to various background EGF stimulations (blue and red) and were next subjected to the same abrupt fold change in EGF at time t0. The resulting maximal pAkt responses were similar for the same EGF fold change independent of background EGF stimulation, indicating relative sensing. (c) The maximal pAkt response observed after exposing the ODE model in silico to different background EGF levels (x axis), followed by a 2-, 3-, 4-, or 6- fold increase (different colors) in EGF; inset shows pAkt response over a wider range of background EGF levels. (d) Maximal pAkt responses (y axis) induced by stimulation with different EGF background levels (data points with the same shape and color) were combined and plotted as a function of the EGF fold change (x axis). Dashed line represents log-linear fit to data (Pearson’s r2 = 0.96, regression p value < 10−15). In all subpanels, error bars represent the standard deviation of n = 10 model fits. Source code: https://github.com/dixitpd/FoldChange/.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Average fits of dynamical model to the pAkt experimental data. (b) Average fits of dynamical model to the experimental surface EGFR dose response experimental data. In both panel a) and b), solid lines represent experimental data and the dashed lines represent the corresponding model fits. Error bars in data represent standard deviation between technical replicates. Error bars in model fits represent the standard deviation across the top 10 model fits.
+
 Using the fitted dynamical model (Figure 2—figure supplement 1), we explored the ability of the Akt pathway to respond to relative, rather than absolute, changes in EGF levels. To that end, we simulated the pAkt response by exposing the model in silico to a range of background EGF levels followed by different abrupt fold change increases in EGF concentration (Figure 2b). The model predicted that the maximal pAkt response indeed depends primarily on the EGF fold change relative to the background stimulation levels (Figure 2c). This relative sensing of EGF stimuli occurred over an order of magnitude of background EGF concentrations, and the resulting pAkt response was approximately proportional to the logarithm of the EGF fold change (Figure 2d). Notably, the model predicted relative sensing exactly in the range of EGF background concentrations where sEGFR endocytosis was sensitive to background ligand stimulation. At low EGF background concentrations (<0.01 ng/ml), no substantial sEGFR removal was predicted at the steady state (Figure 2—figure supplement 1), and consequently there was no significant desensitization of the pAkt response. In that regime, the pAkt response to an abrupt fold change depended primarily on the absolute EGF level. In contrast, at high background EGF concentrations (>1 ng/ml), a large fraction of sEGFR was already removed from cell surface and consequently the network responded only weakly to further EGF stimulation.
 
 Next, we experimentally tested the model-predicted relative sensing in MCF10A cells. Cells were first treated with various background EGF concentrations for three hours to ensure that sEGFR reached steady state levels (Figure 1c), and that pAkt had decayed after a transient increase (Figure 1a). As in the computational analysis (Figure 2b), cells were then exposed to different fold changes in EGF levels; pAkt levels were measured at 2.5, 5, 10, 15, 30 and 45 min after the step increase in EGF stimulation (Figure 3—figure supplement 1). Similar results were observed in two independent biological replicates (Figure 3—figure supplements 1, 2 and 3), and the experiments confirmed the predictions of the computational model that maximal pAkt response depends primarily on the fold change of EGF and not its absolute concentration (Figure 3a, Figure 3—figure supplement 4). Specifically, across more than an order of magnitude of EGF background concentrations (0.03–0.5 ng/ml) the same EGF fold change (lines with the same colors in Figure 3a) elicited similar pAkt responses. The concentration range in which we obsered relative sensing was consistent with recent estimations of in vivo EGF levels (Pinilla-Macua et al., 2017). In close agreement with the computational model predictions, the maximal pAkt response was approximately proportional to the logarithm of EGF fold change (Figure 3b). Interestingly, in addition to the maximal pAkt response, approximate relative sensing was also observed for the time integral of pAkt levels (Figure 3—figure supplement 5), and for the entire time course of pAkt dynamics (Figure 3—figure supplement 6).
 
-To better understand the mechanism responsible for the observed relative sensing of extracellular EGF concentration, we next constructed a simplified analytical model of the signaling network (see Appendix). This model revealed that, across a broad range of background concentrations, the steady-state abundance of cell surface receptors RT decreases approximately log-linearly as a function of the background ligand (EGF) concentration L0 (Equation 1 and Figure 4a):(1)RT ~ constant-a*log⁡L0and that the maximal receptor phosphorylation response LR2*max depends approximately log-linearly on the level of the subsequent stimulation L1 and linearly on the steady-state receptor abundance RT (Equation 2, Figure 4b):(2)LR2*max~ b*log⁡L1+RTa+constantwhere a and b are numerical constants (Appendix). As a result of these relationships, the phosphorylation response LR2*max after an increase of ligand concentration from L0 to L1 depends, in agreement with computational and experimental analyses, approximately on the logarithm of the stimulation fold change L1 L0 :(3)[LR2∗]max∼b×(log⁡[L]1+[R]Ta)∼b×(log⁡[L]1−log⁡[L]0)∼blog⁡[L]1[L]0
+![Figure 3.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig3-v2.jpg)
+
+**Figure 3.:** (a) The maximal pAkt responses after exposing cells to different background EGF levels (x axis) for 3 hr, followed by 2-, 3-, 4-, and 6-fold increases (different colors) in EGF. Inset shows experimental pAkt response over a wider range of background EGF levels. (b) Maximal pAkt responses (y axis) to fold changes in EGF depended approximately logarithmically on the fold change. Maximal pAkt responses induced by stimulation with various EGF background levels (data points with the same shape and color) were combined and plotted as a function of the EGF fold change (x axis). Dashed line represents log-linear fit to the data (Pearson’s r2 = 0.93, regression p value < 10−11). In all subpanels, error bars represent the standard deviation of n = 3 technical replicates. Source data: expt_data.mat (available in Source code 1).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) MCF10A cells pretreated with a certain level of background EGF (shown in the top right corner of each figure) for three hours were then subjected to an abrupt step increases in EGF. (b) Biological replicate of panel a). Different colors represent different EGF folds changes. In both panels, individual data points represent averages from n = 3 technical replicates and error bars represent the corresponding standard deviation.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Observed pAkt levels induced by EGF fold changes were highly reproducible between two biological replicates (Pearson’s correlation coefficient is r2 = 0.94, regression p<10−5). Error bars represent the standard deviation of n = 3 technical replicates.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (a) The maximum of the measured pAkt response after exposing MCF10A cells to different background doses of EGF for 180 min followed by x2, x3, x4, or x6 fold change in background EGF exposure (shown on the logarithmic x-axis). Inset shows pAkt response over a wider range of background EGF exposures. (b) Maximum pAkt responses to fold changes in EGF depend log linearly on the fold change in EGF doses. Individual data series represent the same initial EGF concentration as shown in the legend. Dashed line represents log-linear fit to data (Pearson’s correlation coefficient is r2 = 0.95, regression p<10−12). Error bars represent the standard deviation of n = 3 technical replicates.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** Maximal Akt phosphorylation response plotted as a function of absolute level of EGF abrupt signal across different levels of background EGF stimulation. Different colors indicate different background EGF levels. Error bars represent the standard deviation of n = 3 technical replicates.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** (a) The time-integral of the measured pAkt response between 2.5 and 30 min after exposing MCF10A cells to different background doses of EGF for 180 min followed by x2, x3, x4, or x6 fold change in background EGF exposure (shown on the logarithmic x-axis). Inset shows pAkt response over a wider range of background EGF exposures. (b) Time-averaged pAkt response (between 2.5 to 30 min after a fold change in EGF) depends log linearly on the fold change. Individual data series represent the same initial EGF concentration as shown in the legend. Dashed line represents log-linear fit to data (Pearson’s correlation coefficient is r2 = 0.94, regression p<10−12). (c and d) are biological repeats of a) and b) (Pearson’s correlation coefficient is r2 = 0.94, regression p<10−12). (e and f) show similar plots for integrals computed on pAkt responses simulated in silico from top 10 best fit models (Pearson’s correlation coefficient is r2 = 0.92, regression p<10−10). Error bars represent the standard deviation of n = 3 technical replicates in subpanels a to d.
+
+![Figure 3—figure supplement 6.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig3-figsupp6-v2.jpg)
+
+**Figure 3—figure supplement 6.:** (a) The dynamic pAkt response (bold lines) averaged over multiple background EGF levels corresponding to stimulation with the same EGF fold change. The faint time courses of the same color represent individual pAkt responses to the same EGF fold change at different background stimulation levels. Error bars represent the standard deviation across n = 5 background EGF doses for the same fold. (b) The averaged squared difference of pAkt response timecourses calculated between multiple background stimulation levels for the same EGF fold changes (diagonal), and for different EGF fold changes (off-diagonal).
+
+To better understand the mechanism responsible for the observed relative sensing of extracellular EGF concentration, we next constructed a simplified analytical model of the signaling network (see Appendix). This model revealed that, across a broad range of background concentrations, the steady-state abundance of cell surface receptors $R_{T}$ decreases approximately log-linearly as a function of the background ligand (EGF) concentration $L_{0}$ (Equation 1 and Figure 4a):
+
+$$
+R_{T}~constant-a*log⁡L_{0}
+$$
+
+and that the maximal receptor phosphorylation response $LR_{2}^{*}_{max}$ depends approximately log-linearly on the level of the subsequent stimulation $L_{1}$ and linearly on the steady-state receptor abundance $R_{T}$ (Equation 2, Figure 4b):
+
+$$
+LR_{2}^{*}_{max}~b*log⁡L_{1}+\frac{R_{T}}{a}+constant
+$$
+
+where a and b are numerical constants (Appendix). As a result of these relationships, the phosphorylation response $LR_{2}^{*}_{max}$ after an increase of ligand concentration from $L_{0}$ to $L_{1}$ depends, in agreement with computational and experimental analyses, approximately on the logarithm of the stimulation fold change $\frac{L_{1}}{L_{0}}$:
+
+$$
+[LR_{2}^{∗}]_{max}∼b\times(log⁡[L]_{1}+\frac{[R]_{T}}{a})∼b\times(log⁡[L]_{1}−log⁡[L]_{0})∼blog⁡\frac{[L]_{1}}{[L]_{0}}
+$$
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig4-v2.jpg)
 
-**Figure 4.:** (a) Approximate log-linear dependence of the scaled steady-state surface receptor abundance  on the normalized background ligand concentration [R]T, where u0=[L]0/Kd1 is the equilibrium dissociation constant of EGF binding to EGFR. (Kd1b) Approximate log-linear dependence of the maximal phosphorylation response on the normalized ligand stimulus . Dashed red lines represent the exact log-linear approximation.u1=[L]1/Kd1
+**Figure 4.:** (a) Approximate log-linear dependence of the scaled steady-state surface receptor abundance $[R]_{T}$ on the normalized background ligand concentration $u_{0}=[L]_{0}/K_{d1}$, where $K_{d1}$ is the equilibrium dissociation constant of EGF binding to EGFR. (b) Approximate log-linear dependence of the maximal phosphorylation response on the normalized ligand stimulus $u_{1}=[L]_{1}/K_{d1}$. Dashed red lines represent the exact log-linear approximation.
 
-The analytical model (Appendix) also revealed that the range of the background ligand concentrations where relative sensing is observed is primarily determined by two aggregate systems parameters, which we denote α and β (Equations 4 and 5). The parameter α quantifies the ability of the signaling network to capture the input signal (EGF) and elicit a downstream phosphorylation response. The parameter β quantifies the ability of the network to preferentially internalize and degrade active (phosphorylated) receptors relative to inactive (non-phosphorylated) receptors. The two aggregate parameters are expressed as follows:(4)α=kp+kdpkdp×k2k-2×R0   where kp is the rate of receptor phosphorylation and kdp  is the rate of receptor de-phosphorylation, k2 is the rate of receptor dimerization, k-2 is the dissociation rate of receptor dimers, and R0 is the total number of cell-surface receptors at the steady state in the absence of extracellular stimuli and(5)β=kpkdp+kp×ki*ki×kdeg*kdeg*+krec*kdegkdeg+krecwhere ki*,  krec*,  kdeg* and ki,  krec,  kdeg  are correspondingly the rates of internalization, recycling, and degradation of the active (phosphorylated) and non-active receptors. Notably, an increase in the value of α increases signal sensitivity and receptor dimerization and phosphorylation. This shifts the relative sensing range to lower ligand concentrations (Figure 5a). In turn, an increase in the value of β increases the fraction of active receptors being internalized and degraded. This increases the range of background ligand concentrations where the relative sensing is observed (Figure 5b). Based on the best-fit ODE model parameter sets, we estimate α ~ 15 and β ~ 40 (Appendix). As an example, in Figure 5 we show the scaled phosphorylation response to a six-fold change in EGF concentration as a function of the scaled background ligand concentration u0 for different values of α (Figure 5a) and β (Figure 5b); the green arrows in the figure represent the predicted range of fold change detection. The model analysis showed that the relative sensing occurs across over an order of magnitude of background ligand concentrations (Appendix). Furthermore, the analytical model revealed that relative sensing does not require receptor dimerization, and similar sensing mechanisms can operate in pathways where signaling is initiated by monomeric receptors (Appendix).
+The analytical model (Appendix) also revealed that the range of the background ligand concentrations where relative sensing is observed is primarily determined by two aggregate systems parameters, which we denote $\alpha$ and $\beta$ (Equations 4 and 5). The parameter $\alpha$ quantifies the ability of the signaling network to capture the input signal (EGF) and elicit a downstream phosphorylation response. The parameter $\beta$ quantifies the ability of the network to preferentially internalize and degrade active (phosphorylated) receptors relative to inactive (non-phosphorylated) receptors. The two aggregate parameters are expressed as follows:
+
+$$
+\alpha=\frac{k_{p}+k_{dp}}{k_{dp}}\times\frac{k_{2}}{k_{-2}}\timesR_{0}
+$$
+
+where $k_{p}$ is the rate of receptor phosphorylation and $k_{dp}$ is the rate of receptor de-phosphorylation, $k_{2}$ is the rate of receptor dimerization, $k_{-2}$ is the dissociation rate of receptor dimers, and $R_{0}$ is the total number of cell-surface receptors at the steady state in the absence of extracellular stimuli and
+
+$$
+\beta=\frac{k_{p}}{k_{dp}+k_{p}}\times\frac{k_{i}^{*}}{k_{i}}\times\frac{\frac{k_{deg}^{*}}{k_{deg}^{*}+k_{rec}^{*}}}{\frac{k_{deg}}{k_{deg+k_{rec}}}}
+$$
+
+where $k_{i}^{*},k_{rec}^{*},k_{deg}^{*}$ and $k_{i},k_{rec},k_{deg}$ are correspondingly the rates of internalization, recycling, and degradation of the active (phosphorylated) and non-active receptors. Notably, an increase in the value of α increases signal sensitivity and receptor dimerization and phosphorylation. This shifts the relative sensing range to lower ligand concentrations (Figure 5a). In turn, an increase in the value of β increases the fraction of active receptors being internalized and degraded. This increases the range of background ligand concentrations where the relative sensing is observed (Figure 5b). Based on the best-fit ODE model parameter sets, we estimate α ~ 15 and β ~ 40 (Appendix). As an example, in Figure 5 we show the scaled phosphorylation response to a six-fold change in EGF concentration as a function of the scaled background ligand concentration u0 for different values of α (Figure 5a) and β (Figure 5b); the green arrows in the figure represent the predicted range of fold change detection. The model analysis showed that the relative sensing occurs across over an order of magnitude of background ligand concentrations (Appendix). Furthermore, the analytical model revealed that relative sensing does not require receptor dimerization, and similar sensing mechanisms can operate in pathways where signaling is initiated by monomeric receptors (Appendix).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig5-v2.jpg)
 
-**Figure 5.:** Scaled phosphorylation response to a six-fold change in extracellular EGF concentration as a function of the scaled background ligand concentration ( ). (u0=[L]0/Kd1a) The phosphorylation response as a function of background ligand concentration (x-axis) is shown for different values of the parameter α (y-axis), when the parameter β is fixed at β=40. (b) The phosphorylation response as a function of background ligand concentration (x-axis) is shown for different values of β (y-axis), when α is fixed at α=15. The colors represent the scaled phosphorylation response. The green dashed lines delineate the parameter ranges where the fold change detection is >90% accurate. The horizontal black lines correspond to the parameter values α=15 and β=40, which were estimated from experimental data fits; the horizontal green double arrows represent the predicted range of relative sensing for the investigated PI3K-Akt cascade.
+**Figure 5.:** Scaled phosphorylation response to a six-fold change in extracellular EGF concentration as a function of the scaled background ligand concentration ($u_{0}=[L]_{0}/K_{d1}$ ). (a) The phosphorylation response as a function of background ligand concentration (x-axis) is shown for different values of the parameter α (y-axis), when the parameter β is fixed at β=40. (b) The phosphorylation response as a function of background ligand concentration (x-axis) is shown for different values of β (y-axis), when α is fixed at α=15. The colors represent the scaled phosphorylation response. The green dashed lines delineate the parameter ranges where the fold change detection is >90% accurate. The horizontal black lines correspond to the parameter values α=15 and β=40, which were estimated from experimental data fits; the horizontal green double arrows represent the predicted range of relative sensing for the investigated PI3K-Akt cascade.
 
 In addition to EGF, Akt phosphorylation can be induced by multiple other ligands, including hepatocyte growth factor (HGF) (Stuart et al., 2000) which binds to its cognate receptor cMet (Viticchiè and Muller, 2015). Similar to EGFRs, upon ligand binding, cMet receptors dimerize (Kong-Beltran et al., 2004) and cross-phosphorylate each other; this leads to phosphorylation of multiple downstream targets, including Akt. To investigate the specificity of the receptor-based cell memory to past ligand exposures, we used the two ligands, EGF and HGF, which share many signaling components downstream of their cognate receptors (Xu and Huang, 2010). We exposed cells to background doses of either HGF or EGF for three hours, and then stimulated cells using either the same or the other growth factor to elicit pAkt response (Figure 6a,b). Pre-exposure with HGF did not substantially downregulate EGF-induced pAkt responses, but substantially decreased HGF-induced responses (Figure 6a). Similarly, we observed a relatively small desensitization of HGF-induced responses due to pre-exposure with EGF, while there was a significant desensitization of EGF-induced pAkt responses (Figure 6b). We further confirmed that exposure of MCF10A cells to various concentrations of HGF leads to pronounced HGF-dependent removal of cMet from the cell surface, without significant removal of sEGFR (Figure 6—figure supplement 1). Similarly, the pre-exposure of cells to EGF leads to EGF-dependent removal of sEGFR without a significant change in surface cMet abundance (Figure 6—figure supplement 1). These observations support the mechanism in which the relative sensing of extracellular ligands relies on the memory of their past exposures effectively encoded in the abundances of their cognate cell-surface receptors.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig6-v2.jpg)
+
+**Figure 6.:** MCF10A cells were first exposed to various background concentrations of either HGF or EGF for three hours, and then abruptly stimulated using either the same or the other growth factor. pAkt levels were then measured 10 min after the addition of the second stimulus. (a) EGF- (blue, 2.5 ng/ml) or HGF- (red, 4 ng/ml) induced pAkt response in cells pre-exposed with various background concentrations of HGF (x axis). (b) EGF- (blue, 2.5 ng/ml) or HGF- (red, 4 ng/ml) induced pAkt response in cells pre-exposed with various background concentrations of EGF (x axis). (c) The maximal pAkt response in MCF10A cells exposed to different background doses of HGF (x axis) for 3 hr, followed by 2-, 4-, and 8-fold increase (different colors) of HGF. Inset shows experimental pAkt response over a wider range of background HGF levels. (d) The maximal pAkt responses (y axis) to HGF fold changes depended approximately logarithmically on the fold change (x axis). Maximal pAkt responses induced by stimulation with various HGF background levels (data points with the same shape and color) were combined and plotted as a function of the HGF fold change (x axis). Dashed line represents log-linear fit to data (Pearson’s r2 = 0.88, regression p value < 10−6). In all subpanels, error bars represent the standard deviation of n = 3 technical replicates. Source data: expt_data.mat (available in Source code 1).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (a) Experimentally measured surface EGFR and surface cMET dose responses in MCF10A cells treated with HGF for 3 hr. (b) Experimentally measured surface EGFR and surface cMET dose responses in MCF10A cells treated with EGF for 3 hr. Error bars represent the standard deviation of n = 3 technical replicates.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** (a) The maximal pAkt response (y-axis) after exposing MCF10A cells to different background doses of HGF (x-axis) for 3 hr followed by x2, x4, or x8 abrupt fold change in HGF stimulation. Inset shows pAkt response over a wider range of background HGF exposures. (b) Maximal pAkt response to fold changes in HGF depended approximately logarithmically on the HGF fold change. Individual data series corresponding to the same background HGF concentration are shown with the same color. Dashed line represents log-linear fit to data (Pearson’s correlation coefficient is r2 = 0.88, regression p<10−6). Error bars represent the standard deviation of n = 3 technical replicates.
 
 Given the observed HGF-dependent removal of cell surface cMet receptors and the resulting pAkt desensitization, we investigated next whether the maximal pAkt response depends, similarly to EGF, on the relative fold changes in the level of extracellular HGF. To that end, we exposed cells to a range of different background levels of HGF, and then stimulated cells with different fold changes in HGF concentrations (Figure 6c,d and Figure 6—figure supplement 2). These experiments demonstrated that HGF-induced phosphorylation of Akt also depends primarily on the fold change in extracellular HGF concentration across almost an order of magnitude of background HGF exposures (between 0.1 and 1 ng/ml HGF) (Figure 6c). Moreover, like EGF, the maximum pAkt levels depended approximately log-linearly on the HGF fold change (Figure 6d).
 
 Relative sensing of extracellular ligands should affect important downstream biological targets of the PI3K-Akt pathway. The FoxO3 transcription factor is a key effector of the pathway, and it is involved in diverse cellular processes including apoptosis, proliferation, and metabolism (Webb and Brunet, 2014). Akt phosphorylation of FoxO3 leads to its translocation from the nucleus to cytoplasm and subsequent transcriptional deactivation (Webb and Brunet, 2014). Notably, following Akt activation, the typical nuclear translocation timescale for FoxO family proteins is short (less than 5 min) (Gross and Rotwein, 2017). To investigate FoxO3 activation induced by EGF stimulation, we used quantitative immunofluorescence to measure its nuclear-to-cytoplasm ratio (Worster et al., 2012). We exposed cells to two different background EGF levels for three hours, and then treated them with two different abrupt fold changes in EGF concentrations. Consistent with relative sensing by pAkt, the nuclear-to-cytoplasmic ratio of FoxO3 also reflected the relative, rather than the absolute changes in EGF stimulation (Figure 7 and Figure 7—figure supplement 1). Thus, relative sensing of the growth factor signal is faithfully transmitted in MCF10A cells to at least some of the physiologically important effectors of the PI3K-Akt pathway.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig7-v2.jpg)
+
+**Figure 7.:** MCF10A cells were first exposed to two background concentrations of EGF for three hours, and then were stimulated with 3- and 6- fold increase in EGF concentrations. The ratio of nuclear-to-cytoplasmic FoxO3 levels (y-axis) was measured using quantitative immunofluorescence (Materials and methods) after 15 min of the EGF fold changes. Statistical significance was calculated using the Wilcoxon rank sum test (n = 5); * corresponds to p<0.01, and n. s. corresponds to p>0.1. Error bars represent the standard deviation of n = 5 technical replicates. Source data: expt_data.mat (available in Source code 1).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/50342/elife-50342-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** MCF10A cells were first exposed to two background concentrations of EGF for 3 hr, and then were stimulated with 3- and 6- fold increase in EGF concentration. The ratio of nuclear to cytoplasmic FoxO3 levels (y-axis), measured 15 min after the EGF fold changes, depended on the relative but not absolute change of EGF concentration. Statistical significance was calculated using the Wilcoxon rank sum test (n = 5); n. s. corresponds to p>0.1, and * corresponds to p<0.01. Error bars represent the standard deviation of n = 5 technical replicates.
 
 ## Discussion
 
@@ -77,9 +181,9 @@ Although there are usually ~105–106 EGFR receptors on mammalian cell surface 
 
 ## Materials and methods
 
-## Experimental methods
+### Experimental methods
 
-## Measurement of EGF signaling responses
+#### Measurement of EGF signaling responses
 
 MCF10A cells were obtained from the ATCC and grown according to ATCC recommendations. Cell identity was confirmed by short tandem repeat (STR) profiling at the Dana-Farber Cancer Institute and cells were tested with the MycoAlert PLUS mycoplasma detection kit (Lonza) and found to be free of Mycoplasma prior to analyses. For experiments, 96 well plates (Thermo Scientific) were coated with type I collagen from rat tail (Sigma-Aldrich) by incubating plates with 65 µl of 4 mg/ml collagen I solution in PBS for 2 hr at room temperature, washed twice with PBS using a EL406 Microplate Washer Dispenser (BioTek), and then sterilized under UV light for 20 min prior to use. Cells were harvested during logarithmic growth and plated into collagen-coated 96 well plates using a EL406 Microplate Washer Dispenser. Cells were grown in 200 µl of complete medium for 24 hr, serum starved twice in starvation media (DMEM/F12 supplemented with 1% penicillin-streptomycin and 0.1% bovine serum albumin), incubated in 200 µl of starvation media for 19 hr, washed twice more, and incubated in 200 µl of starvation media for another hour. This time point constituted t = 0 for all experiments.
 
@@ -89,21 +193,21 @@ All subsequent washes and treatments were performed with the EL406 Microplate Wa
 
 For the quantitative Western blots, about 70% confluent MCF10A cells were serum starved and treated with different concentrations of EGF (1, 0.56, 0.31, 0.18, 0.1 ng/mL). Cell lysate was prepared in Laemmili Sample Buffer (Bio-Rad) and subjected to SDS-PAGE in the 4–20% gradient gel (Bio-Rad). Western blots were performed using standard conditions with primary antibodies anti-phospho-EGFR (Cell Signaling Technologies, 3777, 1:1000) and anti-phospho-Akt (Cell Signaling Technologies, 4060, 1:1000) and anti-Actin (Santa Cruz Biotechnology, sc-47778 HRP, 1:5000). Secondary HRP-conjugated antibodies were acquired from Cell Signaling (7074, 1:10,000). Signals were detected with SuperSignal West Dura Extended Duration Substrate (Thermo Fisher Scientific) on a myECL Imager (Thermo Fisher Scientific) and analyzed by Image Studio Lite software (LI-COR Biosciences) by normalizing the signal from each antibody by the corresponding signal from Actin.
 
-## Image Processing
+### Image Processing
 
 Images were analyzed using the Columbus image data storage and analysis system (Perkin Elmer) to quantify single cell fluorescence measurements from each imaged well. The reported intensity values were obtained by first subtracting the background fluorescence of the well and subsequently the levels of pAKT at no stimulation at the same time. From each well we thus obtained a distribution of single cell measurements of a given target (pAkt, FoxO3, scMET or sEGFR). In each distribution we discarded the top and bottom 5% of points to remove outliers due to imaging and detection errors. The nuclear FoxO3 to cytoplasmic FoxO3 compartmentalization ratio was determined by the mean intensity in each area after image segmentation based on Hoechst and whole cell stain green at the single cell level. After that, we calculated the average of the resulting single cell distributions. For each condition, we performed multiple technical repeats (multiple wells), and as a final result reported the average of the corresponding single cell distribution averages and the associated standard deviations.
 
-## Computational methods
+### Computational methods
 
 In this section, we describe in detail (1) the model of the EGF/EGFR/Akt signaling pathway, (2) model assumptions, (3) model parameters and their bounds, (4) various relevant biological constraints that were imposed while fitting the model to the data, (5) the error function that was minimized in the parameter search, (6) the numerical procedure used to minimize the error function between model predictions and experimental data, and (7) in silico predictions.
 
-## General structure of the computational model
+#### General structure of the computational model
 
 The dynamic ODE model describing the EGF/EGFR signaling cascade leading to Akt phosphorylation (Supplementary file 1a, b, and Equations A2–A20) was based on the previous work by Chen et al. (2009). We retained the components of the model relevant to EGF-dependent phosphorylation of EGFR and the subsequent cascade responsible for Akt phosphorylation. The resulting model consisted of 20 chemical species (see Supplementary file 1a) and was described by 24 parameters (20 reaction rate constants and four total species concentrations, Supplementary files 1–3, and Equations A2–﻿A20).
 
 The model included processes across three cellular compartments: cell surface (plasma membrane), cytoplasm, and endosomes. The model included interactions of the ligand with the receptors (ligand-binding and unbinding to receptor monomers and dimers) and subsequent receptor dimerization and undimerization. The model also included internalization of phosphorylated and unphosphorylated receptors, their recycling and degradation, phosphorylation and dephosphorylation by phosphatases.
 
-## Main assumptions of the model
+#### Main assumptions of the model
 
 In agreement with available literature (Wiley and Cunningham, 1982; Herbst et al., 1994), we assumed that the rates of internalization, recycling, and degradation are different for inactive (unphosphorylated) and active (phosphorylated) receptors (Supplementary file 1a). We assumed that EGFR phosphatases in MCF10A cells are present at exceedingly high concentrations (Kleiman et al., 2011), and therefore we implemented the corresponding reaction of dephosphorylation of phosphorylated EGFRs (pEGFRs) as a first order reaction. We further assumed that activated receptors on plasma membrane and in endosomes are dephosphorylated by the phosphatase with the same rate (Kleiman et al., 2011).
 
@@ -113,7 +217,7 @@ We assumed that cells are at steady state in terms of the abundances of ligand-f
 
 In agreement with the literature (Haugh and Meyer, 2002; Park et al., 2003), we assumed that Akt can be phosphorylated only by cell-surface pEGFR, and not by endosomal pEGFR. Finally, we assumed that over the course of simulation extracellular ligand concentration remained constant, unless a step increase in EGF was applied. Here we refer to the background ligand stimulation as stimulation applied at time t = 0 to the cells that were previously not exposed to the ligand.
 
-## Model parameters
+#### Model parameters
 
 The model parameters consisted of 4 total species abundances (PIP2, Akt, PDK1, and EGF receptors) and 20 rate constants. We collected multiple values of these parameters from literature (Supplementary file 1a). In our search for optimal rate parameters fitted to data, we allowed rate parameters to vary within half an order of magnitude from the lowest and the highest literature derived estimate (Supplementary file 1a). For parameters, for which experimental estimates were not available, we allowed up to four orders of magnitude in variation.
 
@@ -121,23 +225,45 @@ In addition, we allowed one and a half orders of variation in first order rate o
 
 Total number of EGFR receptors was limited to be between 105–106 molecules per cell (Niepel et al., 2013). Total protein abundance of Akt was limited to be between 105–106 molecules per cell (Chen et al., 2009). The abundance of PDK1 was limited between 103–106 molecules per cell (Chen et al., 2009; Wang et al., 2012). Total abundance of lipid molecule PIP2 was limited between 108.2–109.2. The abundance of PIP2 was calculated based on (1) surface area of MCF10A cells (calculated using a diameter of ~66 μm [Imbalzano et al., 2009] and assuming spherical cell shape), (2) total number of lipid molecules per 1 μm2 of membrane (Alberts et al., 1994) (~5×106), and (3) the fraction of PIP2 among all plasma membrane lipids (Czech, 2000) (0.75%); this corresponded to ~5×108 molecules of PIP2 per cell.
 
-## Additional constraints
+#### Additional constraints
 
 In addition to the constraints imposed on network parameters directly through the experimentally measured data at EGF stimulations, we also required several additional constraints to better capture biology of EGFR signaling based on known literature. These constraints were either added as ‘hard’ constraints: parameter sets that did not agree with hard constraints were rejected, or as ‘soft’ constraints: parameter sets that did not agree with soft constraints were penalized using additional terms in the error function.
 
-## Hard constraints
+##### Hard constraints
 
 We constrained the total number of EGF receptors prior to EGF exposure to be between 105–106 per cell, and surface EGFR to be within 105–106 receptors per cell, in agreement with EGFR abundances reported for MCF10A cell lines (Niepel et al., 2013). In the model, the number of cell surface receptors was not a free parameter, but was calculated based on the steady state condition of the differential equations that describe the system.
 
-## Soft constraint
+##### Soft constraint
 
 We also implemented a ‘soft’ constraint that ensured realistic levels of phosphorylated Akt molecules. We required that at least 10% of total Akt gets phosphorylated at EGF doses close to Akt saturation, that is in our case 3.16 ng/ml EGF (Chen et al., 2009).
 
-## Error function
+#### Error function
 
 The error function quantified the disagreement between model predictions and data and the soft constraints. At a given point θ in parameter space, we solved the system of ODEs describing EGF-induced Akt phosphorylation (see below) using the MATLAB and obtained model solutions {Si} for all experimentally measured conditions. Importantly, while the model predicts protein concentrations in units of number of molecules per cell, our experiments measured protein concentration up to a scaling factor. Therefore, we rescaled the model prediction using maximum likelihood linear-regression estimate (MLE) for both pAkt and sEGFR data between the model and the data respectively. Specifically, separately for pAkt and sEGFR, we fitted a linear model between the predictions from the ordinary differential equation model and the corresponding experimental measurements across multiple EGF doses and time points. We rescaled the predictions based on the slope and the intercept of the linear model fit. The scaled predictions were used in the evaluation of the error.
 
-The error function comprised of two different contributions. The first term was defined as the sum of the squared differences between the model predictions {Si} at parameter value θ and the corresponding experimental data D, taking into account corresponding experimental errors σ s (Equation S1a). Next, we imposed the soft constraints described above as squared error terms (Equation S1b, and Supplementary file 1b for species abbreviation). The total error function was the sum of these two contributions (Equation S1c).(S1a)E^1(θ)=∑k=1n(Sk(θ)−Dk )22σk2(S1b)E^2(θ)=(fakt,max−0.1)22×(0.004)2 if fakt,max<0.1(S1c)E^(θ)=E^1(θ)+E^2(θ)where(S1d)        E^θ= E^1θ+E^2θ
+The error function comprised of two different contributions. The first term was defined as the sum of the squared differences between the model predictions {Si} at parameter value θ and the corresponding experimental data D, taking into account corresponding experimental errors σ s (Equation S1a). Next, we imposed the soft constraints described above as squared error terms (Equation S1b, and Supplementary file 1b for species abbreviation). The total error function was the sum of these two contributions (Equation S1c).
+
+$$
+E^_{1}(\theta)=\sumk=1n\frac{(S_{k}(\theta)−D_{k} )^{2}}{2\sigma_{k}^{2}}
+$$
+
+
+
+$$
+E^_{2}(\theta)=\frac{(f_{akt,max}−0.1)^{2}}{2\times(0.004)^{2}} if f_{akt,max}<0.1
+$$
+
+
+
+$$
+E^(\theta)=E^_{1}(\theta)+E^_{2}(\theta)
+$$
+
+where
+
+$$
+E^\theta=E^_{1}\theta+E^_{2}\theta
+$$
 
 The standard deviation 0.004 in Equation S1b was chosen to ensure that the maximum pAkt levels were guaranteed to be above 10% of total Akt levels. Lower values lead to a very high rejection rate in the simulated annealing procedure and higher values were likely to return parameter points that did not satisfy the constraint that maximum pAkt levels were at least 10% of total Akt levels. The active endocytosis and degradation of cell surface receptors in our system occurred mostly between EGF doses of 0 ng/ml and 3.16 ng/ml. Accordingly, we fit the model using experimental data collected in the same range of EGF stimulations.
 
@@ -147,7 +273,7 @@ In Equation 1 a, index k runs through all n experimentally measured data points 
 
 Overall, the error function had a total of 50 terms (35 pAkt measurements, 12 sEGFR measurements, and one soft constraint). We minimized this error by searching through the parameter space using simulated annealing (SA) described in the next section.
 
-## Simulated Annealing optimization
+#### Simulated Annealing optimization
 
 Given that the mechanistic ODE models constrained by experimental measurements of several dynamical quantities are usually underdetermined (Chen et al., 2009), we used simulated annealing (SA) (Kirkpatrick et al., 1983), to numerically search the model’s parameter space.
 
@@ -155,10 +281,10 @@ The overall error (Equation S1c) was minimized with SA in order to determine par
 
 To find multiple parameter sets that fit the experimental data, we ran 100 independent SA chains with randomly selected starting points spread out across allowed parameter ranges. Each chain was started at high temperature and was cooled down in 12 stages to the lowest temperature (using the sequence of temperatures: 400, 200, 100, 50, 20, 10, 5, 2, 1, 0.5, 0.25, 0.1). At each temperature, 1500 steps in parameter space were performed. In each step, on an average four randomly chosen parameters (out of the 24) were changed in order to speed up the search in the parameter space.
 
-## Predictions from SA
+#### Predictions from SA
 
 For individual chains, the parameter set with the lowest error was recorded. The averages of parameter values from the 10 best-fit chains are shown in Supplementary file 1a. We used these top 10 optimized parameter sets (Supplementary file 1a, Figure 2—figure supplement 1) to explore phenomenon of relative sensing in silico. For each parameter set, we simulated the following. The model was first exposed to the background EGF concentration for 50 hr to ensure that all species reached a steady state. The model was subsequently exposed to a step increase in EGF concentration (2-, 3-, 4-, or 6- fold). After the step increase, EGF was kept constant as well. We noted the maximum Akt phosphorylation level at each background concentration and EGF fold-change. For each fit, we obtained a series of maximum pAkt responses across different initial EGF concentrations and for multiple fold changes as well as time integrals of pAkt responses between 0 and 30 min. We combined the predicted relative sensing dose responses at every background EGF level and at every fold by taking the average (and the corresponding standard deviation) across predictions from all 10 best parameter sets. We then plot the resulting dose response as seen in Figure 2c,d of the main text.
 
-## Statement of source code availability
+#### Statement of source code availability
 
 All data and source code are available at: https://github.com/dixitpd/FoldChange (Dixit, 2020; copy archived at https://github.com/elifesciences-publications/FoldChange).

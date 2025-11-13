@@ -45,31 +45,210 @@ The discovery of these spatiotemporal features of human seizure activity inspire
 
 ## Results
 
-## IED detection in human microelectrode array recordings
+### IED detection in human microelectrode array recordings
 
 To examine the spatiotemporal propagation of IEDs, we used a multi-institutional dataset of Utah-style microelectrode array (UEA; 10 × 10 microelectrodes in 4 × 4 mm grid, penetrating 1 mm) recordings from 10 epilepsy patients (two female, µ ±σ age: 29 ± 5.24 years) undergoing monitoring for neurosurgical treatment of medically refractory epilepsy (clinical details in Appendix 1—table 1). In order to capture seizures (2.2 ± 1.6 seizures recorded per participant; 22 total), we recorded data continuously throughout the patients’ monitoring periods (Figure 1A; 4.3 ± 2.4 days per participant; 43 total). Searching through weeks’ worth of microelectrode data, we detected 45,623 candidate IEDs across the 10 participants (4562.3 ± 5171.7 per participant) using an IED detection algorithm designed for microelectrode recordings, that operated on features of IEDs based on the American Clinical Neurophysiological Society’s definition, namely high-amplitude bursts of beta-range (20–40 Hz) local field potential (LFP) power occurring across multiple microelectrodes (Figure 1—figure supplement 2; Appendix1 - algorithm 1) (Tatum et al., 2016). We evaluated the positive predictive value of the algorithm against the ratings of two clinician experts yielding a µ ±σ precision of 0.86 ± 0.04. Interrater reliability (Cohen’s Kappa) was 44.9%, which is similar to that reported across a large multicenter study of IED ratings (Jing et al., 2020). Interrater reliability between the algorithm and board-certified neurologist was 61.1%. Using this algorithm, we detected an average of 0.43 ± 0.51 IEDs per minute. The UEA enabled us to record both LFP data and multiunit action potential firing (MUA) across high-density spatial grid during each IED. These features of an example IED are shown in Figure 1C–G.
 
-## IEDs propagate in predominant and auxiliary directions
+![Figure 1.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig1-v3.jpg)
+
+**Figure 1.:** (A) A electron micrograph of an UEA and a picture of an UEA implanted next to an ECoG electrode. (B) A raster plot showing an example time course of semi-chronic microelectrode recording during an epilepsy patient’s hospital stay. Each gray dot represents the time of one IED (y-axis is arbitrary). (C) An example IED recorded across microelectrodes. Each gray line is the same IED recorded on a different microelectrode. The mean IED waveform is overlaid in white. (D) Mean spectrogram of the IED shown in (C) across microelectrodes. (E) A temporally expanded view of the IED shown in (C) color coded by when the IED occurs. Black dots indicate the location of the IED negative peaks for each microelectrode. (F) A raster plot of IED-associated MUA firing for the same IED as in (C) and the same timescale shown in (F). (G) IED voltage minima timings, color-coded as in (E), superimposed across the footprint of the UEA. A white velocity vector derived from the multilinear regression model is also shown on the UEA footprint. (H) A polar histogram showing the distribution of all IED traveling waves from which the IED in (C) was taken. See Figure 2—figure supplement 1 and Appendix 1-Algorithm 1 for IED detection and traveling wave classification details.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** The schematic shows hypothesized dynamics for a two-dimensional brain area from which seizures originate in the ictal (A) and interictal (B) periods. (A) in the ictal period, the slowly outward propagating IW (thick dark blue line) is preceded by pre-recruitment discharges that propagate outwards from the IW (green lines) and post-recruitment discharges that propagate inwards from the IW (blue lines). (B) In the interictal period, periodic discharges propagate across the brain area, biased in directions established by the expansion of the seizure core.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Raster plot of IED detection times across UEA channels during a segment of data (approximately half an hour duration). (B) Mean IED waveforms for the retained detections shown in (A). These appear as rasters occurring across more than 10 channels in (A). (C) Recordings of a single IED across all microelectrodes. (D) Raster plot of IED-associated MUA firing. (E) Mean spectrogram across microelectrodes for the IED shown in (C). Prominent Beta power, upon which the detection algorithm operated, is clearly visible. (F) A scatter plot of the mean IED negative peak versus the median range of recorded voltages for each IED in one participant after rejecting outliers. (G) Mean IED waveform before amplitude rejection. (H) Mean IED waveform after IED rejection. (G) and (H) show that many large amplitude detections were also highly noisy.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Example IED recorded across microelectrodes. Each colored line represents the voltages recorded form a single microelectrode. (B) Scatter plot of IED extrema over time. Black dots show local minima and green dots show absolute minima. The weighted histogram of these points that was used to define the time window used for extrema detection is shown in gray. (C) Three-dimensional scatter plot of voltage minima timings plotted across the spatial footprint of the UEA. The plane from the multilinear regression model, regularized via least absolute deviation, is shown as a grid in spacetime colored by time of occurrence (earlier: black; intermediate: orange; later: yellow). (D) Scatter plot of IED extrema and slope line of the linear regression model projected into two dimensions. (E) Visual representation of the permutation test that was used to operationally define IED traveling waves. The true residual absolute deviation is shown in red and residual absolute deviations from spatially shuffled data are shown in black.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Example mean waveforms for traveling (orange) and non-traveling (blue) waves for a representative participant. (B) Scatter plots of betas for traveling wave regression models color coded as in (A).
+
+### IEDs propagate in predominant and auxiliary directions
 
 In order to determine whether the detected IEDs were traveling waves, and to measure wave speeds and directions, we fit a plane to the timings of both IED voltage extrema and MUA event times measured on each microelectrode using multi-linear regression (Liou et al., 2017). IEDs with regression slopes that were significantly different from zero were classified as traveling waves (permutation test against a distribution of 1000 spatially permuted timings; Figure 1H, Figure 1—figure supplement 3). Traveling wave speeds and directions were then derived from each significant model’s slope. Based on this operational definition, 30,278 IEDs (3027.8 ± 3190.0 per participant) were classified as traveling waves (66.4%). Example non-traveling IEDs and regression model betas are shown in Figure 1—figure supplement 4.
 
-Summary statistics for the spatiotemporal features of IEDs are shown in Table 1. Mean IED speeds were on the same order as SDs before the passage of the ictal wavefront (Liou et al., 2017; Smith et al., 2016). Traveling waves were also detected from MUA, independent of LFP recordings, though at a slightly reduced rate (2215.7 ± 3237.6 per participant; 22,157 total; 48.6%; χ2 = 2957, p < 0.05). This result was expected, as LFP is a more reliable signal to record, and action potential firing during IEDs has previously been shown to be remarkably heterogeneous, particularly in areas further from the seizure onset zone (Keller et al., 2010). That there were significantly more IED traveling waves in UEA recordings that were eventually recruited into the seizure core, further supports the idea that more firing, closer to the seizure onset zone improves reliability of traveling wave detection with MUA (McNemar Test, χ21=2957, p < 10-6). We therefore focus our analysis on IED traveling waves measured from LFP minima in order to understand IED propagation across participants.
+Summary statistics for the spatiotemporal features of IEDs are shown in Table 1. Mean IED speeds were on the same order as SDs before the passage of the ictal wavefront (Liou et al., 2017; Smith et al., 2016). Traveling waves were also detected from MUA, independent of LFP recordings, though at a slightly reduced rate (2215.7 ± 3237.6 per participant; 22,157 total; 48.6%; $χ^{2}$ = 2957, p < 0.05). This result was expected, as LFP is a more reliable signal to record, and action potential firing during IEDs has previously been shown to be remarkably heterogeneous, particularly in areas further from the seizure onset zone (Keller et al., 2010). That there were significantly more IED traveling waves in UEA recordings that were eventually recruited into the seizure core, further supports the idea that more firing, closer to the seizure onset zone improves reliability of traveling wave detection with MUA (McNemar Test, $χ^{2}1=2957,$ p < $10^{-6}$). We therefore focus our analysis on IED traveling waves measured from LFP minima in order to understand IED propagation across participants.
+
+**Table 1.**
+ Summary statistics for spatiotemporal features of the dataset.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Participant</th>
+      <th>Seizure class</th>
+      <th>N detected IEDs</th>
+      <th>N (%) traveling waves (LFP)</th>
+      <th>N traveling waves (MUA)</th>
+      <th>Median speed (cm/s)</th>
+      <th>Bimodal?</th>
+      <th>N seizures</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>recruited</td>
+      <td>1,761</td>
+      <td>1,567 (89.0)</td>
+      <td>640</td>
+      <td>20.9</td>
+      <td>yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>recruited</td>
+      <td>1,532</td>
+      <td>1,217 (79.4)</td>
+      <td>131</td>
+      <td>59.2</td>
+      <td>no</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>recruited</td>
+      <td>17,988</td>
+      <td>10,220 (56.8)</td>
+      <td>10,380</td>
+      <td>25.3</td>
+      <td>yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>recruited</td>
+      <td>2,806</td>
+      <td>1,429 (50.9)</td>
+      <td>284</td>
+      <td>63.7</td>
+      <td>yes</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>recruited</td>
+      <td>2,148</td>
+      <td>1,538 (71.6)</td>
+      <td>1,131</td>
+      <td>108.3</td>
+      <td>yes</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>recruited</td>
+      <td>3,502</td>
+      <td>3,143 (89.7)</td>
+      <td>2006</td>
+      <td>69</td>
+      <td>yes</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>penumbral</td>
+      <td>4,348</td>
+      <td>2,132 (49.0)</td>
+      <td>2,236</td>
+      <td>76.8</td>
+      <td>yes</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>penumbral</td>
+      <td>8,369</td>
+      <td>7,351 (87.8)</td>
+      <td>4,977</td>
+      <td>134.7</td>
+      <td>no</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>penumbral</td>
+      <td>834</td>
+      <td>296(35.5)</td>
+      <td>50</td>
+      <td>80.5</td>
+      <td>yes</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>penumbral</td>
+      <td>2,335</td>
+      <td>1,385 (59.3)</td>
+      <td>322</td>
+      <td>70.7</td>
+      <td>yes</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Totals</td>
+      <td></td>
+      <td>45,623</td>
+      <td>30,278</td>
+      <td>22,157</td>
+      <td></td>
+      <td></td>
+      <td>22</td>
+    </tr>
+  </tbody>
+</table>
 
 Having determined the majority of IEDs met the criteria to be classified as traveling waves, we next sought to understand whether IEDs from each participant exhibited a predominant propagation direction. We therefore tested whether distributions of IED traveling wave directions deviated from a uniform circular distribution (Fisher, 1953), we found that each participant’s IED traveling wave distribution exhibited a dominant direction (Figure 2A; Hermans-Rasson Tests, 1000 permutations, all p < 10–3). These results show that many IEDs are traveling waves with predominant, consistent directions of travel in each participant.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig2-v3.jpg)
+
+**Figure 2.:** (A) Polar histograms of IED traveling wave directions for all 10 participants. Each participant number is indicated in bold above and to the right of each histogram. (B) Classification index for bimodality of IED distributions across subjects. Criterion is indicated with a dashed line. (C) Difference in median angles of sub-distributions for bimodal IED distributions, with non-bimodal subjects omitted. See Figure 3 for bimodality classification details.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) An example IED distribution for one participant. (B) A distribution of the same number of directions sampled from the circular normal distribution with the same mean direction, and concentration parameter as the distribution in (A). (C) The first clustered distribution of angles from (A). (D) A distribution of the same number of directions sampled from the circular normal distribution with the same mean direction, and concentration parameter as the distribution in (C). (E) The second clustered distribution of angles from (A). (F) A distribution of the same number of directions sampled from the circular normal distribution with the same mean direction, and concentration parameter as the distribution in (C). (G) The permutation distribution of Kuiper test statistics comparing subsamples of angles from real IED distributions and circular normal distributions with the same parameters. The black line shows a gaussian fit to the distribution and colored lines represent the test statistics from the true data distributions. (H) A description of the classification rule for unimodal vs bimodal IED distributions.
+
 In addition to a predominant direction common to all participants, many participants appeared to have a second, auxiliary, distribution of IED directions. We therefore fit each participant’s IED distribution into a mixture of two circular normal sub-distributions (von Mises distribution). The mixture model was compared to a single von Mises distribution model by using permutation-based Kuiper tests (Figure 2—figure supplement 1; see Materials and methods). IED traveling wave distributions were thus classified as bimodal in 8 of the 10 participants (Figure 2B). The mean and ±s.d. angles between the two IED sub-distributions was 177.9 and 10.7 degrees, respectively (Figure 2C). These results show that IEDs also frequently propagate antipodally to their predominant direction, suggesting that IEDs may travel both directions on a linear track through a fixed recording site.
 
-## Spatial features of IED distributions echo ictal self-organization
+### Spatial features of IED distributions echo ictal self-organization
 
 We next sought to understand whether IED speed and direction related to the spatial self-organization of seizures. We hypothesize that spatial features of IED traveling waves would correlate with seizure propagation direction and those of seizure discharges. We therefore measured the spatial features of seizures first. Fast and slow spatial features of focal seizures were measured in both ictal LFP and MUA bands as in previous reports (Liou et al., 2017; Schevon et al., 2012; Smith et al., 2016). Both of these features were measured using the same multilinear regression framework used to measure IED speed and direction.
 
 Following previous reports with microelectrode arrays, we confirmed that seizures could be divided into two classes based on ictal recruitment: ‘recruited’ and ‘penumbral’ (see Materials and methods; Khodagholy et al., 2015; Martinet et al., 2017; Merricks et al., 2021). Recruited tissue exhibited a slow expansion of tonic neuronal firing, the ictal wavefront (Figure 3D–E; Figure 3—figure supplement 1A-D), followed by rapidly traveling SDs. Penumbral tissue showed neither an IW nor repetitive SDs associated with phase-locked firing (Figure 3—figure supplement 1E-H). Six participants’ microelectrode arrays were recruited into the ictal core (10 seizures; Figure 3A–C), while the four remaining participants were penumbral (12 seizures).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig3-v3.jpg)
+
+**Figure 3.:** (A) Mean voltage recorded across the UEA at the start of a seizure. (B) Mean MUA firing rate across microelectrodes. (C) A raster plot ordered by time of recruitment and color coded to show the IW (blue) and ictal core (“recruited”, pink). (D) Slow firing rate dynamics on each microelectrode colored by time of maximum firing rate. (E) Times of maximum firing rate on each microelectrode superimposed on the footprint of the UEA, color-coded as in (D). (F) A polar histogram of IEDs and the direction of the IW. (G) Polar histograms showing probability densities of IEDs and SDs, and the direction of the IW. See Figure 4 for examples of classes of microelectrode array recorded ictal self-organization.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Mean LFP around the time of UEA recruitment for the ‘recruited’ category. Scale bar shows 10 s. (B) Mean MUA firing rate across the microelectrodes for the same time period shown in (A). (C) Raster plot of MUA event times for each microelectrode on the UEA sorted by recruitment time. (D) MUA firing rates on each microelectrode colored by order of recruitment from black to copper. (E) Mean LFP for a seizure in the ‘penumbral’ category. Scale bar shows 10 s. (F) Mean MUA firing rate across microelectrodes for the same time period shown in (E). (G) Raster plot of multiunit event times for each microelectrode. (H) Multiunit firing rates for each microelectrode colored by the timing of maximal firing during the seizure window. Note the lack of spatiotemporal organization in the ‘penumbral’ example.
+
 As predicted by our theoretical work (Liou et al., 2020), similar patterns of IED and SD propagation were apparent in the majority of seizures in participants with ‘recruited’ seizures. The majority of IEDs travelled opposite the direction of seizure expansion (i.e. the IW; direction difference from IEDs = 148.9 ± 17.2 degrees; median tests between IW and IED distributions, all p < 0.05; Figure 3F). Moreover, IEDs traveled in similar directions as SDs in these participants (example in Figure 3G; mean ± s.d. angle difference across participants = 23.7 ± 33.7 degrees). Direction distributions for IEDs, SDs, relative to the direction of the ictal wavefront are shown for all ‘recruited’ participants in Figure 4A–F, and direction summaries for these participants are shown in Figure 4G–H (raw directions shown in Figure 4—figure supplement 1). In the ‘penumbral’ category, where the tissue under the UEAs were not obviously recruited from adjacent cortex as in the ‘recruited’ category, we could not reliably detect or measure the direction of seizure expansion.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig4-v3.jpg)
+
+**Figure 4.:** (A–F) Each lettered subpanel corresponds to one participant. Each polar histogram corresponds to one seizure. IED distributions are shown in gray and SD distributions are shown in black. Both IED and SD distributions are plotted relative to the direction of the IW (blue line). See Figure 5 for raw IED, SD, and IW directions. (G) Direction difference summaries for each seizure ordered and color coded as in (A–F). Dots indicate median directions and lines indicate standard deviations. (H) Median and standard deviation IED direction summaries relative to median SD directions. See Figure 5 for raw IW, IED, and SD directions.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** (A–F) Each lettered subpanel corresponds to one participant. Each polar histogram corresponds to one seizure. Gray histograms show IED distributions. Black histograms show SD distributions, and blue lines show the directions of IWs. (G) Direction summaries for each seizure ordered and color coded as in (A–F). Dots indicate median directions and lines indicate standard deviations.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/73541/elife-73541-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** For each patient, a schematic of the implanted grid (in a green rectangle) and MEA (gold; omitted for mesial temporal onset seizures) is shown with the IED distribution rotated to roughly match the orientation of the MEA derived from the intraoperative photos. The epileptogenic zone is indicated with pink ECoG electrodes in the schematics. An implant map is also shown for neocortical onset seizures.
 
 In order to directly quantify information about the full distribution of SDs that is gained from observing IEDs, we measured the Kullback-Leibler Divergence (KLD) between IED and SD distributions for each participant. The µ ± σ KLD across these 10 seizures was 0.66 ± 0.56, and are shown next to each pair of distributions in orange in Figure 4. The KLD values between IED and SD distributions were all significantly greater than would be expected to occur by chance in each patient (permutation tests, all p < 0.01). These results indicate that less than one extra bit of information is needed to encode the direction of SDs with IEDs on average, suggesting that IED directions could be used to accurately predict SD directions.
 
-## Spatial features of IED sub-distributions predict those of SD sub-distributions
+### Spatial features of IED sub-distributions predict those of SD sub-distributions
 
 Finally, we sought to further understand geometric features of bimodal IED distributions and how they related to patterns of SD propagation. Such an understanding was only relevant for the ‘recruited’ participants with bimodal IED distributions (five participants, seven seizures). Using the same bimodality classification strategy as for IEDs, we found that five of the seven these seizures in these participants exhibited bimodal SD distributions, with similarly antipodal sub-distribution directions (Figure 5A–B; µ ± σ angle difference = 135.2 ± 24.6). Only participants with bimodal IED distributions had bimodal SD distributions, and only one participant, who had the least bimodal IED distribution, did not have clearly bimodal SDs.
 
@@ -101,11 +280,70 @@ While these MEA recordings inform fundamental geometric relationships between IE
 
 ## Materials and methods
 
-## Participants, ethics statement, and data
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MATLAB</td>
+      <td>https://www.mathworks.com/products/matlab.html</td>
+      <td>SCR:001662</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NPMK</td>
+      <td>https://github.com/BlackrockNeurotech/NPMK (Torab, 2014)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>IED analysis code</td>
+      <td>https://github.com/elliothsmith/IEDs (Smith, 2022)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Circular statistics toollbox</td>
+      <td>https://github.com/circstat/circstat-matlab (Berens et al., 2019)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fitmvmdist</td>
+      <td>https://github.com/chrschy/mvmdist</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>hrtest</td>
+      <td>https://github.com/cnuahs/hermans-rasson (Cloherty, 2020)</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Participants, ethics statement, and data
 
 The data for this study were acquired from Utah-style microelectrode arrays (UEAs) that were implanted in 10 human patients across two surgical sites who were undergoing neurophysiological monitoring for surgical treatment for medically refractory seizures. Clinical details for all participants are shown in Appendix 1—table 1. The Institutional Review Boards at the University of Utah (IRB_00114691) and Columbia University Medical Center (IRB-AAAB6324) approved these studies. All participants provided informed consent prior to surgery for implantation of the clinical electrocorticography (ECoG) electrodes and UEA (10 × 10 electrodes in 4 × 4 mm, penetrating 1 mm). Methodological details of surgical implantation of UEAs into human epilepsy patients area described in detail in House et al., 2006. During implantation of ECoG electrodes, UEAs were pneumatically inserted into areas that were most likely to be in the seizure onset zone, and therefore most likely to be resected. Electrophysiological data were pseudodifferentially amplified by 10 and acquired at 30 kilosamples per second using a neural signal processing system (Blackrock Microsystems, Salt Lake City, UT) semi-chronically, that is throughout the duration of the participants’ hospital stays. Patients were weaned off their antiepileptic medication during that time, as dictated by their individual clinical courses. Throughout the manuscript, numerical quantities are presented as mean ± standard deviation (µ ±σ).
 
-## IED detection and signal processing
+### IED detection and signal processing
 
 In order to detect IEDs from continuous data recorded on each UEA channel, we developed a simple algorithm for detecting IEDs across a microelectrode array (Appendix 1 - Algorithm S1). For each channel on each UEA, we first resampled the data at 400 samples per second and zero-phase filtered the data between 20 and 40 Hz using a fourth-order Butterworth filter. We then detected any peaks in the absolute amplitude of this signal that were greater than eight times the standard deviation of the remainder of the recording segment (2-hr median duration; Figure 1—figure supplement 3A). In order to remove redundant detections, those following any other detection by less than 250ms were discarded. Only detections that occurred within the same 250ms window across at least 10 electrodes on the UEA were retained for further analysis (Figure 1—figure supplement 3B). Spectrograms of IEDs were generated via the continuous wavelet transform following the methods used in Schevon et al., 2012; Smith et al., 2020, and colored with the turbo color map (Mikhailov, 2021).
 
@@ -115,27 +353,27 @@ We employed several post-detection processing steps to ensure the quality of thi
 
 In order to validate the detection algorithm’s ability to detect real IEDs, we calculated the algorithm’s positive predictive value (precision) against ratings of experienced clinicians (C.A.S. and J.D.R.) on a dataset of 78 random IED detections, including 9 of those that did not pass our post-detection quality assurance steps described in the previous paragraph. Algorithmic positive predictive value (precision) was defined as the ratio of the number of true positive detections to the number of total positive detections. Cohen’s Kappa was also calculated to evaluate inter-rater reliability against chance.
 
-## Traveling wave measurement
+### Traveling wave measurement
 
 In order to measure IED traveling wave speed and direction, we fit a plane to the timings of IED voltage minima, and MUA event times, using ordinary multilinear regression, regularized via the absolute deviation of the signal (Figure 1—figure supplement 4). This methodology is described in detail and validated for measuring traveling waves during ictal discharges in Liou et al., 2017. Briefly, the regression model for each IED yielded three coefficients, describing the best-fit plane to the timing of IEDs across the UEA in spacetime. Traveling wave direction was determined by the gradient direction of the plane and speed was defined as the inverse of that gradient norm. Each IED was operationally defined as a traveling wave if its model significantly deviated from a plane with zero slope. Statistical significance for this measure was determined by a permutation test in which the model was reevaluated 1,000 times with the microelectrode spatial locations randomly permuted. Differences in IED speed across and within participants were tested using a two-way Kruskal-Wallis Test with a participant factor (10 levels; one for each participant) and a signal factor in which the two levels were the speed measurements derived from LFP and MUA. Only MUA times from 50ms before and after the median time of the LFP negative peak were included in the regression model (Liou et al., 2017). Post-hoc pairwise comparisons were carried out using Dunn’s test (Dunn, 1964). The significance criterion was chosen as 0.05 for all of these tests.
 
-## Directional statistics
+### Directional statistics
 
 Polar histograms were plotted using 18 bins. Circular normal distributions were fit using the circular statistics toolbox (Berens, 2009). These distributions defined by two parameters, μ and κ, which describe the central angle and concentration of the distribution, respectively. μ and 1/κ are analogous to the mean and variance parameters that define a standard normal distribution. Directional statistics were carried out using modified functions from the circular statistics toolbox (Berens, 2009). These modifications were such that statistical significance was evaluated using permutation tests from which p-values were derived by comparing the circular test statistic with a distribution of circular test statistics from 1000 permuted datasets. As an example, testing for differences between IED and SD means would involve comparing the test statistic from the true data to a distribution of 1000 test statistics in which the measurement categories were permuted. The significance criterion was chosen to be 0.05. Hypotheses that within-participant IED propagation directions were non-uniform, were tested with Hermans-Rasson tests of circular non-uniformity, again with 1000 permutations (Landler et al., 2018).
 
-## Bimodality and sub-distributions
+### Bimodality and sub-distributions
 
-In order to determine whether two, unimodal distributions better fit the ostensibly bimodal IED and SD distributions we observed, we first fit von Mises Mixture (vMM) Models to overall distributions of IED and SD directions using the Matlab function fitmvmdist (https://github.com/chrschy/mvmdist; Schymura, 2016). Overall IED direction distributions were then clustered into two component vMM distributions using the Matlab function cluster. We did not observe distributions that appeared to have more than two modes and therefore set an upper limit on the number of hypothesized clusters, h, at two. These vMMs yielded three parameters for each sub-distribution, h∈N, such that h≤2: the sub-distribution means, μh , concentration parameters, κh , and probability densities, θh .
+In order to determine whether two, unimodal distributions better fit the ostensibly bimodal IED and SD distributions we observed, we first fit von Mises Mixture (vMM) Models to overall distributions of IED and SD directions using the Matlab function fitmvmdist (https://github.com/chrschy/mvmdist; Schymura, 2016). Overall IED direction distributions were then clustered into two component vMM distributions using the Matlab function cluster. We did not observe distributions that appeared to have more than two modes and therefore set an upper limit on the number of hypothesized clusters, $h$, at two. These vMMs yielded three parameters for each sub-distribution, $h\inN$, such that $h\leq2$: the sub-distribution means, $\mu_{h}$ , concentration parameters, $κ_{h}$ , and probability densities, $\theta_{h}$ .
 
-Rather than assuming these vMM models better fit overall IED and SD distributions, we assessed whether the overall distribution or each vMM sub-distribution better fit the distributions defined by μh and κh . The permutation-based Kuiper tests used to assess goodness-of-fit were carried out as follows. We first estimated μh , κh , and θh for both the overall and vMM sub-distributions. We then carried out permutation-based Kuiper tests, to compare empirical distributions of 60 randomly sampled IED directions to theoretical circular normal distributions derived from μh and κh from both the original and vMM sub-distributions. We repeated this procedure 1,000 times in order to create a permutation distribution. In this way, we were able to measure the extent to which randomly sampled IED angles deviated from theoretical circular distributions defined by the overall and vMM parameters. This is akin to cross-validating vM parameters and choosing h corresponding to the highest log-likelihood, yet in a model-free way. Comparing Kuiper test statistics to a permutation distribution, rather than zero (the null hypothesis of a uniform distribution), makes the tests more conservative and allows us to determine whether the distribution cannot be determined to be non-normal (Louter and Koerts, 1970). We then defined our circular bimodality index as the minimum difference between the Kuiper test statistic for the overall distribution and each vMM sub-distribution. Positive bimodality indices thus indicated that overall traveling wave distributions were better modeled as two vMM sub-distributions, and negative bimodality indices indicated that overall traveling distributions were better modeled as a single von Mises distribution. The Matlab functions for implementing these classifications are highlighted in the online code repository.
+Rather than assuming these vMM models better fit overall IED and SD distributions, we assessed whether the overall distribution or each vMM sub-distribution better fit the distributions defined by $\mu_{h}$ and $κ_{h}$ . The permutation-based Kuiper tests used to assess goodness-of-fit were carried out as follows. We first estimated $\mu_{h}$ , $κ_{h}$ , and $\theta_{h}$ for both the overall and vMM sub-distributions. We then carried out permutation-based Kuiper tests, to compare empirical distributions of 60 randomly sampled IED directions to theoretical circular normal distributions derived from $\mu_{h}$ and $κ_{h}$ from both the original and vMM sub-distributions. We repeated this procedure 1,000 times in order to create a permutation distribution. In this way, we were able to measure the extent to which randomly sampled IED angles deviated from theoretical circular distributions defined by the overall and vMM parameters. This is akin to cross-validating vM parameters and choosing $h$ corresponding to the highest log-likelihood, yet in a model-free way. Comparing Kuiper test statistics to a permutation distribution, rather than zero (the null hypothesis of a uniform distribution), makes the tests more conservative and allows us to determine whether the distribution cannot be determined to be non-normal (Louter and Koerts, 1970). We then defined our circular bimodality index as the minimum difference between the Kuiper test statistic for the overall distribution and each vMM sub-distribution. Positive bimodality indices thus indicated that overall traveling wave distributions were better modeled as two vMM sub-distributions, and negative bimodality indices indicated that overall traveling distributions were better modeled as a single von Mises distribution. The Matlab functions for implementing these classifications are highlighted in the online code repository.
 
-## Seizure characterization
+### Seizure characterization
 
 In order to study the propagation patterns of IEDs relative to seizures, it was necessary to quantify spatial features of SDs and seizure expansion for each recorded seizure. These measures have also been described in previous publications (Smith et al., 2020; Schevon et al., 2012; Smith et al., 2020; Smith et al., 2016). The ictal wavefront (IW) is the slowly expanding edge of the seizure representing the spatial signature of failure of feedforward inhibition, and therefore defines recruitment of the tissue surrounding an electrode into the ictal core (Schevon et al., 2012). This biomarker of seizure recruitment and expansion has thus far only been detected with recordings of multiunit firing rates (Smith et al., 2016), although can also be detected on single microelectrodes by observing widening of action potential waveforms (Smith et al., 2020; Merricks et al., 2015). We followed methods from our previous manuscripts to generate multiunit firing rates, that is filtering the broadband data between 300 and 3000 Hz and detecting any peaks larger than the median absolute value of the signal divided by 0.6745 (Quiroga et al., 2004).
 
 To find seizures, we examined time periods in the microelectrode array recordings that corresponded to the seizure times reported in the clinical monitoring reports and confirmed that the microelectrode array LFP exhibited the characteristic high amplitude, rhythmic discharging associated with seizures. We then looked for tonic multiunit firing spreading across the array that would suggest the presence of an ictal wavefront, and phase locked multiunit bursting associated with ictal discharges. We detected the ictal wavefront feature of seizures by smoothing the firing rates on each microelectrode with a 250 ms Gaussian kernel and fitting a multilinear regression model to the peaks of these slow firing rate estimates across the UEA (Liou et al., 2017; Smith et al., 2016). We detected ictal discharges by detecting peaks in multiunit firing rates, calculated with a 25 ms Gaussian kernel, as we have previously (Liou et al., 2017; Smith et al., 2016). We quantified the propagation direction and speed of ictal discharges using the same methods used to determine IED traveling wave speeds and directions, as in Liou et al., 2017. IED speeds and directions were measured in a manner that was blinded to each microelectrode array’s recruitment classification. We defined the presence of ictal phase-locked firing with a Hermans-Rasson test of circular uniformity on MUA action potential times across microelectrodes relative to the phase of the mean LFP recorded across the UEA, similarly to Schevon et al., 2012. Using these measures, we operationally defined two patterns of ictal self-organization, based on observed patterns in these fast and slow spatial features of seizures: ‘recruited’ seizures were operationally defined as those with a significant ictal wavefront multilinear regression model and significant phase-locked multiunit firing (Figure 3—figure supplement 1A-D). ‘Penumbral’ seizures were operationally defined as those seizures in which we were unable to detect an ictal wavefront on the microelectrode array (Fig Figure 3—figure supplement 1E-H). Similar classifications of adjacent and non-adjacent recruitment have been reported by other groups (Martinet et al., 2015; Schevon et al., 2012). For seizures that were associated with secondary generalization, we only included discharges up to the clinically defined point of secondary generalization in order to constrain our study to the dynamics of focal seizure onset and spread.
 
-## Comparing IED and SD sub-distributions
+### Comparing IED and SD sub-distributions
 
 Mean firing rates were estimated by binning MUA event times into one-hundred 10 ms bins across microelectrodes. For distributions that were determined to be bimodal, we used cluster-based permutation tests to test for differences between median IED waveforms and firing rates between IEDs from the two component vMM distributions for each participant. Permutation tests consisted of carrying out t-tests on each sample in the IED waveforms and each bin in the IED firing rates. The t-statistics for each sample or bin were then compared to permutation distributions of t-statistics for each sample or bin in which the sub-distribution labels were shuffled. If any of these p-values exceeded the specified alpha value of 0.05, we considered that sample significant, and included it with adjacent significant samples in a temporal cluster. In order to control for multiple hypothesis testing, we used cluster-based correction over temporal clusters. This procedure involved finding the largest temporal clusters of significant samples or bins in the permutation distributions and comparing those clusters to the largest temporal clusters of significant samples or bins in the real data.
 
@@ -143,6 +381,6 @@ In order to test for different directions of overall distributions and sub-distr
 
 Finally, in order to directly quantify the reduction in uncertainty about the direction of SD travel that can be estimated from observing IED directions, we calculated the Kullback-Leibler Divergence (KLD) between distributions of IED and SD directions (Kullback and Leibler, 1951). We estimated the KLD as the expectation of the logarithmic difference between discrete distributions of IED and SD directions on the half-closed interval between 0 and 2π. We interpret the KLD as measuring the information that can be gained about SD directions from observing IED directions. We also tested for whether these KLD values were significantly greater than would be expected by chance by comparing the true KLD values against a distribution of 1000 KLD values generated from directions drawn at random from both IED and SD distributions.
 
-## Acknowledgements
+### Acknowledgements
 
 Thanks to the Schevon and Rolston labs.

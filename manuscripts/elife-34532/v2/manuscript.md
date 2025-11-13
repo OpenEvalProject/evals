@@ -13,7 +13,7 @@
 
 ## Abstract
 
-10.7554/eLife.34532.001 26S proteasome abundance is tightly regulated at multiple levels, including the elimination of excess or inactive particles by autophagy. In yeast, this proteaphagy occurs upon nitrogen starvation but not carbon starvation, which instead stimulates the rapid sequestration of proteasomes into cytoplasmic puncta termed proteasome storage granules (PSGs). Here, we show that PSGs help protect proteasomes from autophagic degradation. Both the core protease and regulatory particle sub-complexes are sequestered separately into PSGs via pathways dependent on the accessory proteins Blm10 and Spg5, respectively. Modulating PSG formation, either by perturbing cellular energy status or pH, or by genetically eliminating factors required for granule assembly, not only influences the rate of proteasome degradation, but also impacts cell viability upon recovery from carbon starvation. PSG formation and concomitant protection against proteaphagy also occurs in Arabidopsis , suggesting that PSGs represent an evolutionarily conserved cache of proteasomes that can be rapidly re-mobilized based on energy availability.
+26S proteasome abundance is tightly regulated at multiple levels, including the elimination of excess or inactive particles by autophagy. In yeast, this proteaphagy occurs upon nitrogen starvation but not carbon starvation, which instead stimulates the rapid sequestration of proteasomes into cytoplasmic puncta termed proteasome storage granules (PSGs). Here, we show that PSGs help protect proteasomes from autophagic degradation. Both the core protease and regulatory particle sub-complexes are sequestered separately into PSGs via pathways dependent on the accessory proteins Blm10 and Spg5, respectively. Modulating PSG formation, either by perturbing cellular energy status or pH, or by genetically eliminating factors required for granule assembly, not only influences the rate of proteasome degradation, but also impacts cell viability upon recovery from carbon starvation. PSG formation and concomitant protection against proteaphagy also occurs in Arabidopsis, suggesting that PSGs represent an evolutionarily conserved cache of proteasomes that can be rapidly re-mobilized based on energy availability.
 
 ## Introduction
 
@@ -35,9 +35,21 @@ Given the contrasting roles of PSGs and proteaphagy in controlling proteasome ab
 
 ## Results
 
-## Proteasomes are rapidly degraded by autophagy in response to nitrogen but not carbon starvation
+### Proteasomes are rapidly degraded by autophagy in response to nitrogen but not carbon starvation
 
 While yeast proteasomes undergo rapid proteaphagy in response to nitrogen starvation (Marshall et al., 2016), recent results from Waite et al., 2016 suggested that proteasomes are not similarly degraded in response to carbon starvation, even though both conditions activate bulk autophagy (Takeshige et al., 1992; Adachi et al., 2017). To further investigate this possibility, we exploited haploid strains in which the CP subunit Pre10 (α7) or the RP subunit Rpn5 were expressed with C-terminal GFP tags. These reporters allowed us to track proteaphagy by ‘GFP-release’ immunoblot assays that detect the liberation of stable, free GFP from the fusion proteins following their autophagic transport to vacuoles, and by confocal fluorescence microscopy that visualizes the movement of GFP-tagged proteasomes from the nucleus, where over 80% of the particles reside (Enenkel et al., 1998; Russell et al., 1999), to other cellular locations such as the vacuole (Marshall et al., 2016; Waite et al., 2016). Importantly, by measuring the ratio of free GFP to the fusion, and by morphometric analysis of confocal images (e.g. Figure 1F), we could quantitatively assess proteasome fates (Marshall et al., 2015; Marshall et al., 2016). As shown by the GFP-release assays in Figure 1A, proteasomes in wild-type cells undergo rapid proteaphagy upon nitrogen starvation, as evidenced by the accumulation of free GFP from both Pre10-GFP and Rpn5-GFP reporters, which could be seen when total cell lysates were immunoblotted with anti-GFP antibodies. Greater than 90% of both fusions disappeared within 1 day of the onset of starvation, concomitant with the strong accumulation of free GFP.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig1-v2.jpg)
+
+**Figure 1.:** (A, B and C) Measurement of proteaphagy upon nitrogen and/or carbon starvation by monitoring the release of free GFP from the CP and RP proteasome subunit reporters Pre10-GFP and Rpn5-GFP, respectively. Cells expressing PRE10-GFP or RPN5-GFP, and also containing the Δatg7 or Δatg13 mutations (panel B only), were switched from nutrient-rich medium (+N + C) to medium lacking either nitrogen (–N), carbon (–C), or both (–N –C). Total protein extracts from cells collected at the indicated times were assayed for GFP release by immunoblot analysis with anti-GFP antibodies. Open and closed arrowheads locate the GFP fusions and free GFP, respectively. The full gels are shown for the Pre10-GFP reporter, whereas only the regions of the gels containing the GFP fusion and free GFP are shown for the Rpn5-GFP reporter. Immunodetection of histone H3 was used to confirm near equal protein loading. (D) Proteasomes rapidly coalesce into PSG-type puncta soon after carbon starvation. PRE10-GFP or RPN5-GFP cells were examined by confocal fluorescence microscopy immediately before and 1 hr after switching from +N +C medium to –C medium. Scale bar, 2 µm. (E) Proteasomes are deposited into vacuoles upon nitrogen starvation, but form cytoplasmic PSG-type puncta in response to carbon starvation. PRE10-GFP or RPN5-GFP cells were grown on +N +C medium and then switched to +N +C, –N, –C, or –N –C media for 24 hr before imaging by confocal fluorescence microscopy. Scale bar, 2 µm. (F) Quantification of the cellular distribution of proteasomes when grown in +N +C, –N, –C, or –N –C media. Cells were treated and imaged as in panel (E). Each bar represents analysis of at least 200 cells. (G) Aggregation of proteasomes into IPODs, but not PSGs, requires the Hsp42 chaperone. PRE10-GFP cells with or without the Δerg6 and/or Δhsp42 mutations were switched from +N +C medium to either –C medium or +N +C medium containing 80 µM MG132 (+MG132) for 24 hr before imaging as in panel (E). Scale bar, 2 µm. (H) PSGs formed upon carbon starvation are distinct from IPOD puncta. PRE10-GFP cells also expressing the IPOD marker RNQ1-mCherry were switched from +N +C medium to –C medium for 24 hr before imaging as in panel E. Shown are the GFP, mCherry and merged fluorescence images. Scale bar, 1 µm. In panels D, E, G, and H: N, nucleus; V, vacuole; P, PSG; I, IPOD.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Both carbon and nitrogen starvation, and growth at high or low pH, strongly attenuates yeast cell growth. Cells were grown in nutrient-rich (+N +C) medium at pH 6.0 and then switched to either medium lacking nitrogen (–N), carbon (–C), or both (–N –C; left panel), or to medium buffered to pH 3.0, 6.0 or 9.0 and containing 100 μM CCCP (right panel). Cell growth at the indicated times was monitored by measuring culture density at OD600. (B) Bulk autophagy is induced upon nitrogen and carbon starvation. Cells expressing Pho8Δ60 were grown for either 0, 4, 8 or 20 hr after a switch from +N +C medium to –N, –C or –N –C media. Cells were assayed for bulk autophagy using the phosphatase activity generated upon vacuolar activation of the Pho8Δ60 reporter. Values were normalized to those obtained at 0 hr. Each bar represents the mean (±SD) of three biological replicates, each comprised of three technical replicates. Asterisks indicate data points that are statistically significantly different to the 0 hr time point (p<0.05). (C) Both carbon and nitrogen starvation induce Atg8-mediated autophagy, as judged by release of free GFP from the GFP-Atg8 reporter. GFP-ATG8 cells were switched from +N +C medium to –N, –C or –N –C media. Total protein extracts from cells collected at the indicated times were assayed for GFP release by immunoblot analysis with anti-GFP antibodies. Open and closed arrowheads locate the GFP-Atg8 fusion and free GFP, respectively. Immunodetection of histone H3 antibodies was used to confirm near equal protein loading. (D) Both carbon and nitrogen starvation activate multiple selective autophagic routes. Cells expressing the GFP-Ape1 (CVT), Om45-GFP (mitophagy), Pex14-GFP (pexophagy), or Rpl25-GFP (ribophagy) reporters were switched from +N +C medium to –N, –C or –N –C media. Total protein extracts from cells collected at the indicated times were assayed for GFP release by immunoblot analysis with anti-GFP antibodies, as in panel (C). Open and closed arrowheads highlight the different GFP fusions and free GFP, respectively.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Proteasomes rapidly coalesce into PSG-type puncta soon after carbon starvation. PRE10-GFP or RPN5-GFP cells were grown on nutrient-rich (+N +C) medium and then switched to medium lacking carbon (–C) for the indicated periods of time before imaging by confocal fluorescence microscopy. Scale bar, 2 µm. (B) Time course for the changes in the cellular distribution of proteasomes when switched to growth in –C medium. The intracellular distribution of proteasomes was quantified from cells treated and imaged as in panel (A). Each bar represents analysis of at least 200 cells. (C) PSGs form upon carbon starvation even in mutants that cannot scaffold the PAS. PRE10-GFP cells with or without the Δatg1, Δatg11, Δatg13 or Δatg17 mutations were grown on nutrient-rich (+N +C) medium and then switched to –C medium for 6 hr before imaging as in panel (A). Scale bar, 2 µm. (D) PSG formation upon carbon starvation is rapidly reversible. PRE10-GFP cells were grown on +N +C medium, switched to –C medium for 6 hr, and then returned to +C medium for 30 min before imaging as in panel (A). Scale bar, 2 µm. (E) PSG formation upon treatment with 2-deoxyglucose (2-DG) is rapidly reversible. PRE10-GFP cells were grown on +N +C medium, switched to +C medium containing 5 mM 2-DG and 2 mM NaN3 medium for 6 hr, and then returned to +C medium lacking 2-DG and NaN3 for 1 hr before imaging as in panel (A). Scale bar, 2 µm. In panels A, C, D and E: N, nucleus; V, vacuole, P, PSG.
 
 By contrast, loss of the fusions and the release of free GFP were substantially slower upon carbon starvation, which was generated by switching cells from growth on non-fermentable carbon (i.e. glycerol) to medium lacking this carbon source (Takeshige et al., 1992; Adachi et al., 2017). Here, free GFP was undetectable within the first 2 days, with only small amounts appearing subsequently (~8–12% after 6 days; Figure 1A). This relative absence of proteaphagy occurred despite that fact that the carbon starvation regime employed here effectively suppressed culture growth (Figure 1—figure supplement 1A) and stimulated bulk autophagy, as judged by the increased activity of the Pho8Δ60 reporter (Noda and Klionsky, 2008) and by the release of free GFP from GFP-Atg8, which both measure autophagic flux (Figure 1—figure supplement 1B and C). This modest accumulation of free GFP seen from the Pre10-GFP and Rpn5-GFP reporters was autophagy-dependent, as it was absent in mutants eliminating the core autophagy component Atg7, or the Atg13 regulatory subunit of the Atg1 kinase complex that activates autophagy in response to nutrient deprivation (Figure 1B). Thus, proteaphagy still occurs in yeast upon carbon starvation, but at a substantially slower rate.
 
@@ -47,11 +59,19 @@ Confocal fluorescence microscopy of cells expressing PRE10-GFP or RPN5-GFP confi
 
 We previously described the sequestration of proteasomes into cytoplasmic IPODs, which represents an intermediate step in the autophagic clearance of inactive proteasomes (Marshall et al., 2016). However, the proteasome-containing puncta emerging after carbon starvation were different, as co-localization studies with Pre10-GFP and the IPOD marker Rnq1-mCherry (Kaganovich et al., 2008) detected separate cytoplasmic foci in greater than 90% of cells (Figure 1H). Moreover, while the accretion of inactive proteasomes into IPODs requires the Hsp42 chaperone (Figure 1G; Marshall et al., 2016), the rapid accumulation of proteasomes into the cytoplasmic puncta seen here upon carbon starvation still occurred in Δhsp42 cells (Figure 1G; Peters et al., 2016). These data place the proteasome-containing foci seen upon carbon starvation as different from IPODs.
 
-## Conditions that impact PSG formation inversely affect proteaphagy
+### Conditions that impact PSG formation inversely affect proteaphagy
 
 Numerous studies have described the accumulation of PSGs in stationary phase yeast which resemble the proteasome-containing puncta seen here that form during carbon starvation (Laporte et al., 2008; Peters et al., 2013; Saunier et al., 2013; van Deventer et al., 2015; Lee et al., 2016; Gu et al., 2017; reviewed in Chowdhury and Enenkel, 2015; Yedidi et al., 2016). Consequently, we hypothesized that these puncta are PSGs, which could protect proteasomes from proteaphagic degradation by sequestering them away from the autophagic machinery. To test this proposed inverse relationship between PSG-type puncta and proteaphagy, we examined the accumulation of these puncta and rates of proteaphagy under several situations previously shown to influence PSG accumulation.
 
 One such situation involves the protein acetylase NatB, one of three acetylation complexes in yeast that modify the N-terminus of proteins in a sequence-dependent manner (Polevoda et al., 1999). Genetic analysis of both its catalytic (Nat3) and regulatory (Mdm20) subunits recently demonstrated that NatB is essential for PSG assembly (van Deventer et al., 2015). Here, we confirmed this observation by showing that both the Pre10-GFP and Rpn5-GFP reporters failed to localize to PSG-type foci in Δnat3 and Δmdm20 cells subjected to carbon starvation (Figure 2A and Figure 2—figure supplement 1A and B). Instead, both reporters accumulated in the vacuole, as expected if proteaphagy became the alternative. Likewise, whereas little free GFP accumulated from both reporters even upon extended carbon starvation of wild-type cells, rapid GFP accumulation was seen in Δnat3 and Δmdm20 cells (Figure 2B and Figure 2—figure supplement 1C). Both the accumulation of PSGs and the stability of the Pre10-GFP and Rpn5-GFP fusions were restored to wild-type levels when Δnat3 cells were rescued with HA-tagged Nat3, but not with the catalytically defective Nat3(C97A)-HA variant (Figure 2A and B, and Figure 2—figure supplement 1B), demonstrating that an active NatB complex is essential for PSG assembly and proteaphagy suppression.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig2-v2.jpg)
+
+**Figure 2.:** (A) Elimination of the Nat3 subunit of the NatB N-acetylation complex promotes autophagic transport of proteasomes to the vacuole. PRE10-GFP cells containing the Δnat3 mutation with or without rescue with HA-tagged Nat3 were grown on nutrient-rich (+N +C) medium and then switched to –C medium for 24 hr before imaging by confocal fluorescence microscopy. Quantification is shown in Figure 2—figure supplement 1B. (B) Suppression of PSG assembly by deletion of Nat3 permits proteaphagy of the entire proteasome in response to carbon starvation. PRE10-GFP or RPN5-GFP cells containing the Δnat3 mutation, with or without rescue with HA-tagged Nat3 or the inactive Nat3(C97A) variant, were switched from +N +C medium to –C medium for the indicated times. Total protein extracts were assayed for GFP release by immunoblot analysis with anti-GFP antibodies as shown in Figure 1A. Open and closed arrowheads locate the GFP fusions and free GFP, respectively. Accumulation of the Nat3-HA and Nat3(C97A)-HA proteins was confirmed by immunoblotting with anti-HA antibodies. Immunodetection of histone H3 was used to confirm near equal protein loading. (C) The rpn11-m5 mutation blocks entry of the RP into PSGs and encourages transport of the RP to the vacuole in response to carbon starvation. RPN5-GFP cells containing the rpn11-m5 mutation with or without rescue with FLAG-tagged Rpn11 were switched from +N +C medium to –C medium for 24 hr before imaging by confocal fluorescence microscopy as in panel (A). Quantification in shown in Figure 2—figure supplement 1B. (D) Suppression of RP entry into PSGs by the rpn11-m1 and rpn11-m5 mutations promotes autophagic degradation of the RP but not the CP. PRE10-GFP or RPN5-GFP cells containing the rpn11-m1 or rpn11-m5 mutations with or without rescue with FLAG-tagged Rpn11 were switched from +N +C medium to –C medium for the indicated times and assayed for GFP release by immunoblotting as in panel (B). Accumulation of the Rpn11-FLAG protein was confirmed by immunoblotting with anti-FLAG antibodies. In panels A and C: N, nucleus; V, vacuole; P, PSG. Scale bar, 2 µm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Elimination of the Mdm20 subunit of the NatB N-acetylation complex promotes autophagic transport of proteasomes to the vacuole. PRE10-GFP or RPN5-GFP cells with or without the Δmdm20 mutation were grown on nutrient-rich (+N +C) medium and then switched to –C medium for 24 hr before imaging by confocal fluorescence microscopy. Scale bar, 2 µm. (B) Quantification of the cellular distribution of proteasomes upon carbon starvation in the absence of Nat3, Mdm20, or the C-terminus of Rpn11. Cells were grown, treated and imaged as in panels A and C of Figure 2. Each bar represents analysis of at least 200 cells. (C) Suppression of PSG assembly by deletion of Mdm20 permits proteaphagy of the entire proteasome in response to carbon starvation. PRE10-GFP (left panel) or RPN5-GFP (right panel) cells with or without the Δnat3 or Δmdm20 mutations were switched from +N +C medium to –C medium for the indicated times. Total protein extracts were assayed for GFP release by immunoblot analysis with anti-GFP antibodies, as shown in Figure 1A. Open and closed arrowheads locate the GFP fusions and free GFP, respectively. Immunodetection of histone H3 was used to confirm near equal protein loading.
 
 In a similar fashion, we tested a pair of mutants affecting the intrinsic deubiquitylase of the RP, Rpn11 (termed rpn11-m1 and rpn11-m5; for details see Materials and methods), which were previously shown to prevent or delay entry of the RP, but not the CP, into PSGs (Saunier et al., 2013). Accordingly, we found that both the rpn11-m1 and rpn11-m5 alleles suppressed formation of PSGs containing Rpn5-GFP upon carbon starvation, and instead allowed concentration of the reporter in vacuoles (Figure 2C and Figure 2—figure supplement 1B). The mutants also promoted the rapid release of free GFP from the Rpn5-GFP reporter but not the Pre10-GFP reporter, indicating that proteaphagy of the RP, but not the CP, was now occurring in these carbon-starved cells (Figure 2D). In both assays, the responses of rpn11-m5 cells were restored to wild type when complemented with an RPN11-FLAG transgene (Figure 2C and D, and Figure 2—figure supplement 1B). Interestingly, small amounts of free GFP accumulated from the Rpn5-GFP reporter in the rpn11-m1 mutant even in the absence of starvation (Figure 2D). This slight accumulation was absent in Δatg7 and Δcue5 backgrounds (data not shown), suggesting that it represents proteaphagy of compromised RPs, as previously observed for the rpn5ΔC mutation that also impairs RP assembly (Peters et al., 2015; Marshall et al., 2016).
 
@@ -59,23 +79,31 @@ Intracellular pH also influences yeast PSG abundance, which can be altered by mu
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig3-v2.jpg)
 
-**Figure 3.:** (A) Growth on high pH medium, which supresses PSG assembly, promotes proteaphagy in response to carbon starvation. PRE10-GFP or RPN5-GFP cells were switched from nutrient-rich (+N +C) medium buffered to pH 6.0 to the same medium buffered to pH 3.0, 6.0 or 9.0 and containing 100 µM CCCP for 1 hr, and then incubated for the indicated times in the same media lacking carbon. Shown is quantification of the cellular distribution of proteasomes following the indicated treatments. Each bar represents analysis of at least 200 cells. (B) Growth of yeast cells at high pH, but not low pH, accelerates proteaphagy. PRE10-GFP or RPN5-GFP cells were treated as in panel (A) and total protein extracts were assayed for GFP release by immunoblot analysis with anti-GFP antibodies as shown in Figure 1A. Open and closed arrowheads locate the GFP fusions and free GFP, respectively. Immunodetection of histone H3 was used to confirm near equal protein loading. (C) Accelerated proteaphagy at high pH is dependent on the core autophagy machinery, but not the autophagic receptor Cue5. PRE10-GFP or RPN5-GFP cells containing the Δatg1, Δatg7, Δatg13 or Δcue5 mutations were grown in pH 9.0 medium lacking carbon as in panel (A). Cell aliquots were collected at the indicated times and assayed for GFP release by immunoblotting as in panel (B). (D) Bulk autophagy is not appreciably impacted by the pH of the culture medium. Cells expressing PHO8Δ60 were switched from +N +C medium buffered to pH 6.0 to the same medium buffered to pH 3.0, 6.0 or 9.0 and containing 100 µM CCCP for 1 hr, and then further incubated for either 0 or 24 hr after a switch to the same media lacking carbon. Cells were assayed for bulk autophagy using the phosphatase activity generated upon vacuolar activation of the Pho8Δ60 reporter. Values were normalized to those obtained at 0 hr. Each bar represents the mean (±SD) of three independent biological replicates, each comprised of three technical replicates. (E) Exposing cells to 2-DG stimulates PSG formation. PRE10-GFP or RPN5-GFP cells grown in +N +C medium were pre-treated for 6 hr with or without 5 mM 2-deoxyglucose (2-DG) and 2 mM NaN3, and then switched to medium lacking nitrogen for 8 hr before imaging by confocal fluorescence microscopy. N, nucleus; V, vacuole; P, PSG. Scale bar, 2 µm. (F) Exposing nitrogen-starved cells to 2-DG protects proteasomes from autophagic degradation. PRE10-GFP or RPN5-GFP cells were pre-treated with 2-DG for 6 hr and then starved of nitrogen for 8 hr as in panel (E). Cell aliquots were collected at the indicated times and total protein extracts were assayed for GFP release by immunoblotting as in panel (B).10.7554/eLife.34532.013Figure 3—source data 1.Figure 3A and D.
+**Figure 3.:** (A) Growth on high pH medium, which supresses PSG assembly, promotes proteaphagy in response to carbon starvation. PRE10-GFP or RPN5-GFP cells were switched from nutrient-rich (+N +C) medium buffered to pH 6.0 to the same medium buffered to pH 3.0, 6.0 or 9.0 and containing 100 µM CCCP for 1 hr, and then incubated for the indicated times in the same media lacking carbon. Shown is quantification of the cellular distribution of proteasomes following the indicated treatments. Each bar represents analysis of at least 200 cells. (B) Growth of yeast cells at high pH, but not low pH, accelerates proteaphagy. PRE10-GFP or RPN5-GFP cells were treated as in panel (A) and total protein extracts were assayed for GFP release by immunoblot analysis with anti-GFP antibodies as shown in Figure 1A. Open and closed arrowheads locate the GFP fusions and free GFP, respectively. Immunodetection of histone H3 was used to confirm near equal protein loading. (C) Accelerated proteaphagy at high pH is dependent on the core autophagy machinery, but not the autophagic receptor Cue5. PRE10-GFP or RPN5-GFP cells containing the Δatg1, Δatg7, Δatg13 or Δcue5 mutations were grown in pH 9.0 medium lacking carbon as in panel (A). Cell aliquots were collected at the indicated times and assayed for GFP release by immunoblotting as in panel (B). (D) Bulk autophagy is not appreciably impacted by the pH of the culture medium. Cells expressing PHO8Δ60 were switched from +N +C medium buffered to pH 6.0 to the same medium buffered to pH 3.0, 6.0 or 9.0 and containing 100 µM CCCP for 1 hr, and then further incubated for either 0 or 24 hr after a switch to the same media lacking carbon. Cells were assayed for bulk autophagy using the phosphatase activity generated upon vacuolar activation of the Pho8Δ60 reporter. Values were normalized to those obtained at 0 hr. Each bar represents the mean (±SD) of three independent biological replicates, each comprised of three technical replicates. (E) Exposing cells to 2-DG stimulates PSG formation. PRE10-GFP or RPN5-GFP cells grown in +N +C medium were pre-treated for 6 hr with or without 5 mM 2-deoxyglucose (2-DG) and 2 mM NaN3, and then switched to medium lacking nitrogen for 8 hr before imaging by confocal fluorescence microscopy. N, nucleus; V, vacuole; P, PSG. Scale bar, 2 µm. (F) Exposing nitrogen-starved cells to 2-DG protects proteasomes from autophagic degradation. PRE10-GFP or RPN5-GFP cells were pre-treated with 2-DG for 6 hr and then starved of nitrogen for 8 hr as in panel (E). Cell aliquots were collected at the indicated times and total protein extracts were assayed for GFP release by immunoblotting as in panel (B).
 
 Certainly, changes in intracellular pH likely have effects on cell growth that could indirectly impact autophagy. Indeed, we found that culture growth was robust at pH 6.0, but substantially slower in pH 3.0 or pH 9.0 media (Figure 1—figure supplement 1A). However, changes in the growth medium pH only marginally impacted bulk autophagy, based on measurements of autophagic flux using the Pho8Δ60 reporter (Figure 3D).
 
 During a screen for factors inhibiting PSG assembly during quiescence, several proteins that regulate energy balance and ATP levels were identified (Gu et al., 2017), suggesting that PSG formation accelerates upon energy depletion. To study how reductions in ATP might commensurately impact proteaphagy, we treated PRE10-GFP and RPN5-GFP cells with 2-deoxyglucose (2-DG), a glycolysis inhibitor that depresses intracellular ATP levels (Wick et al., 1957). As predicted, pre-treatment of non-starved, wild-type cells with 5 mM 2-DG rapidly induced the sequestration of proteasomes into PSG-type puncta, as observed by confocal fluorescence microscopy (Figure 3E). Their appearance strongly resembled the puncta observed following carbon starvation, including their rapid reversibility when 2-DG was removed from the culture medium (Figure 1—figure supplement 2E). In fact, PSGs even appeared in nitrogen-starved cells pre-treated with 2-DG, as they do in cells subjected to simultaneous nitrogen and carbon starvation. In contrast, when assayed for proteaphagy by the GFP-release assay of both reporters, we found that 2-DG had the inverse effect; like carbon starvation, 2-DG dampened proteaphagy induced by nitrogen starvation (Figure 3F). Taken together, we found that conditions that suppress PSG formation (the Δnat3, Δmdm20, rpn11-m1 and rpn11-m5 mutations, or growth at high pH) accentuated proteaphagy, while those that enhanced PSG formation (low pH and 2-DG) instead dampened proteaphagy, strongly suggesting that the two processes are inversely related.
 
-## Blm10 helps deliver the CP to PSGs and protects the CP from proteaphagy
+### Blm10 helps deliver the CP to PSGs and protects the CP from proteaphagy
 
 Blm10 (known as PA200 in plants and mammals) is a well-described CP capping factor, where it has been proposed to help assemble α- and β-subunits into the CP barrel, stabilize the complex before RP docking, and/or possibly promote nuclear import of the CP (Schmidt et al., 2005; Sadre-Bazzaz et al., 2010; Dange et al., 2011; Weberruss et al., 2013). This 246-kDa protein has also been implicated in PSG assembly, where it appears essential for sequestering the CP specifically (Weberruss et al., 2013).
 
 Consequently, we hypothesized that absence of Blm10 could lead to proteaphagy of the CP by limiting its incorporation into PSGs. Indeed, we found by confocal fluorescence microscopy that the Pre10-GFP reporter did not localize into PSGs in Δblm10 cells after 24 hr of carbon starvation, but instead appeared in the vacuole (Figure 4A and B), strongly suggesting an absolute requirement for Blm10 in directing the CP to PSGs. By contrast, the Rpn5-GFP reporter behaved normally in carbon-starved Δblm10 cells and rapidly coalesced into PSGs (Figure 4A and B). The appearance of Pre10-GFP in Δblm10 vacuoles upon carbon starvation was blocked in Δatg7 and Δatg13 backgrounds, where the Pre10-GFP reporter instead remained in the cytosol and nucleus, but not in the Δcue5 background (Figure 4A and B), indicating that autophagic transport of the CP proceeds via the nutrient-responsive proteaphagy pathway, and not the pathway that clears inactive proteasomes. Moreover, when we assayed proteasomes in Δblm10 cells by the GFP-release assay, we found that the CP now underwent proteaphagy upon carbon or simultaneous nitrogen and carbon starvation, as evidenced by the rapid accumulation of free GFP from the Pre10-GFP reporter (Figure 4C and Figure 4—figure supplement 1A). Further supporting a nutrient-responsive route, this accumulation of free GFP was blocked in Δatg1, Δatg7 and Δatg13 cells, but not in Δcue5 cells (Figure 4D). The RP did not encounter the same fate in starved Δblm10 cells, as the release of free GFP from Rpn5-GFP was not similarly accelerated (Figure 4C).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig4-v2.jpg)
+
+**Figure 4.:** (A) Elimination of Blm10 suppresses formation of CP-containing PSGs and permits autophagic transport of the CP to the vacuole. PRE10-GFP or RPN5-GFP cells with or without the Δblm10 mutation, either alone or in combination with the Δatg7, Δatg13 or Δcue5 mutations, were grown on nutrient-rich (+N +C) medium and then switched to –C medium for 24 hr before imaging by confocal fluorescence microscopy. Scale bar, 2 µm. (B) Quantification of the cellular distribution of 26S proteasomes in response to carbon starvation in the absence of Blm10 and components of the autophagy machinery. Cells were grown, treated and imaged as in panel A. Each bar represents analysis of at least 200 cells. (C) Deletion of Blm10 accelerates proteaphagy of the CP, but not the RP, in response to carbon starvation. PRE10-GFP or RPN5-GFP cells with or without the Δblm10 mutation were switched from +N +C medium to –C medium for the indicated times. Total protein extracts were assayed for GFP release by immunoblot analysis with anti-GFP antibodies as shown in Figure 1A. Open and closed arrowheads locate the GFP fusion and free GFP, respectively. Immunodetection of histone H3 was used to confirm near equal protein loading. (D) Autophagic turnover of the CP in response to carbon starvation in the absence of Blm10 requires the core autophagy machinery, but not Cue5. PRE10-GFP cells with or without the Δblm10 mutation, either alone or in combination with the Δatg1, Δatg7, Δatg13 or Δcue5 mutations, were grown on +N +C medium and then switched to –C medium for the indicated times. Total protein extracts were assayed for GFP release by immunoblot analysis with anti-GFP antibodies as shown in panel (C). (E) Blm10 co-localizes with Pre10 into PSGs upon carbon starvation. PRE10-GFP cells also expressing mCherry-BLM10 were switched from +N +C medium to –C medium for 24 hr before imaging by confocal fluorescence microscopy. Shown are the GFP, mCherry, and merged fluorescence images. Scale bar, 2 µm. (F) Blm10 is targeted for autophagic degradation upon nitrogen starvation but not carbon starvation. BLM10-GFP cells were switched from +N +C medium to –N, –C, or –N –C media for the indicated times. Total protein extracts were assayed for GFP release by immunoblot analysis with anti-GFP antibodies as shown in panel (C). In panels A and E: N, nucleus; V, vacuole; P, PSG.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Blm10 is required to prevent proteaphagy of the CP upon simultaneous nitrogen and carbon starvation. PRE10-GFP cells with or without the Δblm10 deletion were switched from nutrient-rich (+N +C) medium to media lacking nitrogen (–N) or both nitrogen and carbon (–N –C). Total protein extracts from cells collected at the indicated times were assayed for GFP release by immunoblot analysis with anti-GFP antibodies. Open and closed arrowheads locate the Pre10-GFP fusion and free GFP, respectively. Immunodetection of histone H3 antibodies was used to confirm near equal protein loading. (B) Carbon-starvation-induced proteaphagy of the CP in the Δblm10 mutant, and of the RP in the Δspg5 mutant, can be rescued by expression of mCherry-tagged versions of Blm10 and Spg5, respectively. PRE10-GFP cells containing the Δblm10 deletion with or without expression of mCherry-BLM10 (left panel), or RPN5-GFP cells containing the Δspg5 deletion with or without expression of mCherry-SPG5 (right panel), were switched from +N +C medium to medium lacking carbon (–C). Total protein extracts from cells collected at the indicated times were assayed for GFP release by immunoblot analysis with anti-GFP antibodies, as in panel (A). Accumulation of the mCherry fusion proteins was confirmed by immunoblotting with anti-mCherry antibodies. (C) Blm10 co-localizes with Rpn5 in PSGs upon carbon starvation, but Spg5 does not co-localize with Pre10. Cells expressing PRE10-GFP and mCherry-Spg5, or RPN5-GFP and mCherry-BLM10, were switched from +N +C medium to –C medium for 24 hr before imaging by confocal fluorescence microscopy. Shown are the GFP, mCherry and merged fluorescence images. N, nucleus; V, vacuole; P, PSG. Scale bar, 2 µm. (D) Ecm29 is not required to either stimulate or prevent carbon starvation-induced proteaphagy. PRE10-GFP or RPN5-GFP cells with or without the Δblm10, Δspg5 and/or Δecm29 deletions were switched from +N +C medium to medium lacking carbon (–C), and cell aliquots were taken at the indicated periods of time. Total protein extracts were assayed for GFP release by immunoblot analysis with anti-GFP antibodies, as in panel (A). (E) Ecm29 is not required for nitrogen starvation- or inhibitor-induced proteaphagy. Cells expressing PRE10-GFP or RPN5-GFP with or without the Δerg6 mutation were switched from +N +C medium to medium lacking nitrogen (–N), or +N +C medium containing 80 μM MG132 (+MG132) and incubated for 8 hr. Total protein extracts were assayed for GFP release by immunoblot analysis with anti-GFP antibodies as in panel (A).
+
 Given the stable association of Blm10 with the CP, which can bind to both ends of the CP barrel (Schmidt et al., 2005; Sadre-Bazzaz et al., 2010), it was likely that Blm10 also enters PSGs. To confirm this possibility, we tested for co-localization of Blm10 and the CP by confocal fluorescence microscopy of cells expressing PRE10-GFP and mCherry-BLM10. The mCherry fusion appeared to retain the activity of non-modified Blm10, as it could reverse the accelerated turnover of Pre10-GFP in Δblm10 cells (Figure 4—figure supplement 1B). Under carbon-replete conditions, the two reporters had similar intracellular distributions, with a strong enrichment in the nucleus, moderate signal in the cytoplasm, and little to no signal in the vacuole (Figure 4E). Following carbon starvation, mCherry-Blm10 rapidly migrated into PSGs along with Pre10-GFP, strongly suggesting that the CP and Blm10 reside in the same granules (Figure 4E). Similar accretion was seen in cells expressing RPN5-GFP and mCherry-BLM10 (Figure 4—figure supplement 1C), indicating that these PSGs also contain the RP, as previously reported (Laporte et al., 2008). This finding corresponds with the recent study by Gu et al. (2017), who observed GFP-tagged Blm10 in PSGs upon entry of yeast cells into quiescence.
 
 To assess if Blm10 also undergoes autophagy, we examined the Blm10-GFP reporter using the GFP-release assay. Free GFP was evident within hours of nitrogen starvation, indicating that Blm10 is a target of autophagy, possibly through its connection to the CP (Figure 4F). Conversely, free GFP did not accumulate in cells starved for carbon or both nitrogen and carbon (Figure 4F), again strongly implicating PSGs as a mechanism to not only safeguard the CP from proteaphagy, but also Blm10 bound to the CP.
 
-## Spg5 helps deliver the RP to PSGs and protects the RP from proteaphagy
+### Spg5 helps deliver the RP to PSGs and protects the RP from proteaphagy
 
 Given the possibility that other factor(s) help sequester the RP into PSGs upon carbon starvation, as Blm10 does for the CP, we searched for likely candidates among known RP-interacting proteins. One possibility was Ecm29, which co-purifies with the 26S particle (Leggett et al., 2002; Marshall et al., 2016) and appears to have roles in proteasome assembly and quality control (Lehmann et al., 2010; Park et al., 2011; De La Mota-Peynado et al., 2013; Wang et al., 2017). However, when the Δecm29 mutation was introduced into PRE10-GFP or RPN5-GFP cells, we found by GFP-release assays that, as in wild type, the autophagic clearance of the CP and RP was slow during carbon starvation (Figure 4—figure supplement 1D), implying RP-containing PSGs still accumulate without Ecm29. We additionally investigated the roles of Blm10 and Ecm29 in nitrogen starvation- and inhibitor-induced proteaphagy; however, neither Δblm10 nor Δecm29 cells showed any defect in these pathways, as judged by rapid accumulation of free GFP from the Pre10-GFP and Rpn5-GFP reporters after removal of nitrogen from the growth medium or addition of MG132, respectively (Figure 4—figure supplement 1E). The lack of an effect for Ecm29 in inhibitor-induced proteaphagy was noteworthy, given its proposed role in identifying dysfunctional proteasomes (Lehmann et al., 2010).
 
@@ -83,9 +111,17 @@ Another intriguing candidate was Spg5, which was previously shown by Hanna et al
 
 As above with Blm10, we tested the importance of Spg5 to PSG formation and proteaphagy using the confocal fluorescence microscopic and GFP-release assays. For the CP, Δspg5 cells starved for carbon behaved like wild type and rapidly coalesced Pre10-GFP into PSGs within a few hours after the onset of starvation (Figure 5A and B). In contrast, Δspg5 cells failed to similarly sequester Rpn5-GFP into PSGs, with the reporter instead re-localizing to vacuoles (Figure 5A and B). However, unlike the relationship of the CP and Blm10, the deposition of the RP into PSGs upon carbon starvation was not completely dependent on Spg5, as a sizable percentage of Δspg5 cells contained PSGs labelled with Rpn5-GFP after prolonged starvation (Figure 5E; Saunier et al., 2013), suggesting that absence of Spg5 delays, rather than blocks, deposition of the RP into PSGs. Delivery of Rpn5-GFP to the vacuole in Δspg5 cells was prevented in the Δatg7 and Δatg13, but not in the Δcue5 backgrounds, again indicating that the vacuolar transport of the RP depended on the nutrient-responsive proteaphagy pathway and not the pathway that clears inactive proteasomes (Figure 5A and B). Accordingly, when we assayed proteasomes by the GFP-release assay, we found that the RP indeed underwent proteaphagy in Δspg5 cells, as evidenced by the rapid accumulation of free GFP from the Rpn5-GFP reporter after 1 day of carbon starvation, a processes again requiring Atg1, Atg7 and Atg13, but not Cue5 (Figure 5C and D). However, the CP did not encounter the same fate, as the accumulation of free GFP from Pre10-GFP was not accelerated in carbon-starved Δspg5 cells (Figure 5C). The time course for entry of Rpn5-GFP into vacuoles in Δspg5 cells was noticeably slower than the time taken for Rpn5-GFP to enter into PSGs in wild-type cells, implying that PSG formation is faster than proteaphagy (Figure 5E).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig5-v2.jpg)
+
+**Figure 5.:** (A) Elimination of Spg5 suppresses formation of RP-containing PSGs and permits autophagic transport of the RP to the vacuole. PRE10-GFP or RPN5-GFP cells with or without the Δspg5 mutation, either alone or in combination with the Δatg7, Δatg13 or Δcue5 mutations, were grown on nutrient-rich (+N +C) medium and then switched to –C medium for 24 hr before imaging by confocal fluorescence microscopy. Scale bar, 2 µm. (B) Quantification of the cellular distribution of 26S proteasomes in response to carbon starvation in the absence of Spg5 and components of the autophagy machinery. Cells were grown, treated and imaged as in panel (A). Each bar represents analysis of at least 200 cells. (C) Deletion of Spg5 accelerates proteaphagy of the RP, but not the CP, in response to carbon starvation. PRE10-GFP or RPN5-GFP cells with or without the Δspg5 mutation were switched from +N +C medium to –C medium for the indicated times. Total protein extracts were assayed for GFP release by immunoblot analysis with anti-GFP antibodies, as shown in Figure 1A. Open and closed arrowheads locate the GFP fusion and free GFP, respectively. Immunodetection of histone H3 was used to confirm near equal protein loading. (D) Autophagic turnover of the RP in response to carbon starvation in the absence of Spg5 requires the core autophagy machinery, but not Cue5. RPN5-GFP cells with or without the Δspg5 mutation, either alone or in combination with the Δatg1, Δatg7, Δatg13 or Δcue5 mutations, were grown on +N +C medium and then switched to –C medium for the indicated times. Total protein extracts were assayed for GFP release by immunoblot analysis with anti-GFP antibodies as shown in panel (C). (E) Deletion of Spg5 delays, but does not completely block, formation of RP-containing PSGs in response to carbon starvation. RPN5-GFP cells with or without the Δspg5 mutation were switched from +N + C medium to –C medium for the indicated times before imaging by confocal fluorescence microscopy as in panel (A). The cellular distribution of GFP was quantified as in panel B; the color code for the bars is also included in this panel. Each bar represents analysis of at least 200 cells. (F) Spg5 does not routinely co-localize with Rpn5 into PSGs upon carbon starvation. RPN5-GFP cells also expressing mCherry-SPG5 were switched from +N +C medium to –C medium for 24 hr before imaging by confocal fluorescence microscopy. Shown are the GFP, mCherry, and merged fluorescence images. Scale bar, 2 µm. In panels A and F: N, nucleus; V, vacuole; P, PSG.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Total RNA was extracted from cells following 1 or 5 days of starvation for nitrogen, carbon, or both nitrogen and carbon, and converted into first-strand cDNA. The relative transcript abundance of various proteasome subunit genes, including CP α- and β-subunits, RP base and lid subunits, the CP capping factor BLM10, the selective proteaphagy receptor CUE5, and the starvation-induced gene SPG5, was determined by quantitative real-time PCR, using the ALG9 and TFC1 genes as internal reference standards. All data points were normalized to non-starved cells. The bars represent the mean (±SD) from three biological replicates, each comprised of three technical replicates.
+
 Given the possibility that Spg5 binds to the RP and helps shepherd the sub-particle into PSGs, as Blm10 appears to do for the CP, we tested for their co-localization by confocal fluorescence microscopy of cells expressing RPN5-GFP and mCherry-SPG5. The mCherry fusion appeared to retain the activity of non-modified Spg5, as its expression could reverse the accelerated turnover of Rpn5-GFP in Δspg5 cells (Figure 4—figure supplement 1B). Under carbon-replete conditions, the two reporters had similar intracellular distributions, with a strong enrichment in the nucleus, moderate signal in the cytoplasm, and little to no signal in the vacuole, similar to that observed with mCherry-Blm10 and Pre10-GFP (Figure 5F). However, unlike with Blm10, mCherry-Spg5 only rarely co-migrated with Rpn5-GFP into PSGs in carbon-starved cells; puncta containing both Rpn5-GFP and mCherry-Spg5 were visible in just 12% of over 200 cells analysed. Instead, the mCherry reporter mostly retained its nuclear/cytoplasmic pattern, implying that Spg5 does not generally follow the RP into PSGs (Figure 5F). Similarly, mCherry-Spg5 only rarely co-localized with PSGs containing Pre10-GFP (in just 6% of over 200 cells; Figure 4—figure supplement 1C). This lack of association was also confirmed by mass spectrometry of 26S proteasomes; whereas Blm10 was easily detected in proteasomes affinity-purified from carbon-starved cells (Marshall et al., 2016), we could not detect Spg5 (data not shown).
 
-## The CP and RP are separately delivered to PSGs upon carbon starvation
+### The CP and RP are separately delivered to PSGs upon carbon starvation
 
 Previous studies revealed that the CP and RP dissociate upon entry of yeast cultures into stationary phase, presumably because of depleted ATP levels (Bajorek et al., 2003), but that they are eventually found together in the same PSGs (Laporte et al., 2008). While transport of both sub-particles into PSGs could occur following re-assembly into 26S complexes, results by Weberruss et al. (2013) and us (this report) showing that Blm10 and Spg5 mediate separate delivery of the CP and RP, respectively, implied that the two sub-complexes are sequestered individually via distinct pathways that shield each from autophagy. To address this possibility, we exploited strains in which proteasome subunits (Pre1 (β4) from the CP and Rpn11 from the RP) were tagged with Protein A to facilitate their rapid and efficient affinity-purification (Leggett et al., 2005), and analyzed the composition of proteasomes purified from wild-type, Δblm10 and Δspg5 cells after 0, 1, or 5 days of carbon starvation, in search for differential CP versus RP enrichment.
 
@@ -93,23 +129,39 @@ The 26S proteasomes purified from wild-type cells contained the characteristic S
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig6-v2.jpg)
 
-**Figure 6.:** (A and B) Yeast proteasomes selectively lose the RP or CP sub-complexes when purified from Δblm10 and Δspg5 cells via the CP or RP, respectively, upon growth on –C medium. PRE1-TEV-ProA or RPN11-TEV-ProA cells with or without the Δblm10 or Δspg5 mutations were switched from nutrient-rich (+N +C) medium to –C medium for the indicated times before affinity purification of proteasomes based on their ProA tags in the presence of ATP. The enriched proteasomes were subjected to SDS-PAGE followed by either staining for total protein with silver (panel A) or by immunoblotting with antibodies specific to subunits of the CP (Pre4) or RP (Rpt1, Rpn5 or Rpn8; panel B). In panel A, the distributions of the core CP and RP subunits are indicated by the brackets, and the position of Blm10 is indicated by the arrowheads. (C) Proteasome CPs remain active under conditions that promote PSG formation, but are less associated with the RP. Cells were grown on +N +C medium and then switched to media lacking either nitrogen (–N), carbon (–C), or both (–N –C) for 1 day. Total protein extracts were then assayed for CP peptidase activity using either Suc-LLVY-amc or Mca-AKVYPYPME-(Dpa)Dnp-amide (LFP) substrates that monitor total CP activity or RP-dependent CP activity, respectively. Black and grey bars represent the mean chymotrypsin-like activity (±SD) in the absence and presence of MG132, respectively, from three independent biological replicates, each comprised of three technical replicates.10.7554/eLife.34532.022Figure 6—source data 1.Figure 6C.
+**Figure 6.:** (A and B) Yeast proteasomes selectively lose the RP or CP sub-complexes when purified from Δblm10 and Δspg5 cells via the CP or RP, respectively, upon growth on –C medium. PRE1-TEV-ProA or RPN11-TEV-ProA cells with or without the Δblm10 or Δspg5 mutations were switched from nutrient-rich (+N +C) medium to –C medium for the indicated times before affinity purification of proteasomes based on their ProA tags in the presence of ATP. The enriched proteasomes were subjected to SDS-PAGE followed by either staining for total protein with silver (panel A) or by immunoblotting with antibodies specific to subunits of the CP (Pre4) or RP (Rpt1, Rpn5 or Rpn8; panel B). In panel A, the distributions of the core CP and RP subunits are indicated by the brackets, and the position of Blm10 is indicated by the arrowheads. (C) Proteasome CPs remain active under conditions that promote PSG formation, but are less associated with the RP. Cells were grown on +N +C medium and then switched to media lacking either nitrogen (–N), carbon (–C), or both (–N –C) for 1 day. Total protein extracts were then assayed for CP peptidase activity using either Suc-LLVY-amc or Mca-AKVYPYPME-(Dpa)Dnp-amide (LFP) substrates that monitor total CP activity or RP-dependent CP activity, respectively. Black and grey bars represent the mean chymotrypsin-like activity (±SD) in the absence and presence of MG132, respectively, from three independent biological replicates, each comprised of three technical replicates.
 
 For further evidence supporting this dissociation, we measured the proteolytic activity of the CP from whole cell extracts prepared 1 day after carbon starvation, when the levels of RP and CP were unaffected (see Figure 1A), using either a substrate effective for the CP alone (Suc-LLVY-amc) or a substrate that requires the RP for import (Mca-AKVYPYPME-Dpa(Dnp)-amide, also known as LFP; Smith et al., 2005). As a control, we also measured CP activity in the rpn5ΔC mutant, which compromises binding of the RP to the CP (Peters et al., 2015). RP-independent CP activity was indistinguishable in cells starved for nitrogen, carbon, or both nitrogen and carbon (Figure 6C), implying that the activity of the CP alone was unaltered by PSG formation. In contrast, RP-dependent CP activity was significantly dampened after carbon and simultaneous nitrogen and carbon starvation, close to that seen for non-starved rpn5ΔC cells, implying that the CP and RP are less associated under these growth conditions (Figure 6C). A similar drop in RP-dependent CP activity was seen for nitrogen-starved cells, in agreement with previous studies showing that the CP and RP separate under this starvation condition as well (Waite et al., 2016; Nemec et al., 2017).
 
-## The Ubp3 deubiquitylase is required for CP proteaphagy
+### The Ubp3 deubiquitylase is required for CP proteaphagy
 
 In addition to the core autophagy machinery, the deubiquitylase Ubp3 has been connected to proteaphagy in yeast subjected to nitrogen starvation, where it promotes clearance of the CP but not the RP (Waite et al., 2016). Ubp3 has also been implicated in both mitophagy and ribophagy (Kraft et al., 2008; Müller et al., 2015), thus raising the possibility that it has a general role in starvation-induced autophagy of organelles and protein complexes. As such, we examined PSG assembly and proteaphagy in carbon-starved Δblm10, Δnat3 and Δspg5 cells also harboring the Δubp3 mutation by tracking the Pre10-GFP and Rpn5-GFP reporters. As seen above by confocal fluorescence microscopy, delivery of Pre10-GFP into PSGs proceeded normally in wild-type cells and was blocked in both Δblm10 and Δnat3 cells, with the signal instead moving to the vacuole upon carbon starvation (Figure 7A and Figure 7—figure supplement 1A). In Δubp3 cells, the Pre10-GFP signal behaved like wild type and entered PSGs, indicating that Ubp3 is not required for PSG formation. However, when the Δubp3 mutation was combined with either the Δblm10 or Δnat3 mutations, Pre10-GFP failed to enter the vacuole and instead appeared trapped in the nucleus and cytoplasm (Figure 7A and Figure 7—figure supplement 1A). The same pattern was not true for Rpn5-GFP; although this reporter entered PSGs in wild-type cells and vacuoles in Δnat3 and Δspg5 cells upon carbon-starvation, it retained the corresponding responses in Δubp3, Δnat3 Δubp3 and Δspg5 Δubp3 cells (Figure 7B and Figure 7—figure supplement 1B). When then assayed for proteaphagy by the GFP-release assay, we confirmed that Ubp3 selectively affects the CP. Accumulation of free GFP from the Pre10-GFP reporter was accelerated in carbon-starved Δblm10 or Δnat3 cells, but its release was blocked in Δblm10 Δubp3 or Δnat3 Δubp3 cells, while the release of free GFP from the Rpn5-GFP reporter was equally rapid in Δnat3 and Δspg5 cells with or without the Δubp3 mutation (Figure 7C and Figure 7—figure supplement 1C and D).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig7-v2.jpg)
+
+**Figure 7.:** (A and B) Elimination of Ubp3 suppresses transport of the CP (but not the RP) sub-complex to the vacuole in carbon-starved Δblm10 cells. Cells expressing PRE10-GFP (panel A) or RPN5-GFP (panel B) with or without the Δblm10, Δspg5 and/or Δubp3 mutations were grown on nutrient-rich (+N +C) medium and then switched to –C medium for 24 hr before imaging by confocal fluorescence microscopy. N, nucleus; V, vacuole; P, PSG. Scale bar, 2 µm. (C) Accelerated proteaphagy of the CP (but not the RP) in carbon-starved Δblm10 cells is blocked by deletion of Ubp3. PRE10-GFP or RPN5-GFP cells with or without the Δblm10, Δspg5, and/or Δubp3 mutations were switched from +N +C medium to –C medium for the indicated times. Total protein extracts were assayed for GFP release by immunoblot analysis with anti-GFP antibodies, as shown in Figure 1A. Open and closed arrowheads locate the GFP fusion and free GFP, respectively. Immunodetection of histone H3 was used to confirm near equal protein loading. (D) Autophagic degradation of the CP in Δblm10 cells starved for carbon requires active Ubp3 and its co-factor Bre5. PRE10-GFP Δblm10 cells containing the Δbre5 or Δubp3 mutations with or without rescue with HA-tagged Bre5, Ubp3, or mutated versions of Ubp3 lacking the active site cysteine (C469A) or the Bre5 binding site (LFIN-AAAA), were switched from +N +C medium to –C medium for the indicated times and assayed for GFP release by immunoblotting as in panel (C). Accumulation of the Bre5-HA, Ubp3-HA, Ubp3(C469A)-HA and Ubp3(LFIN-AAAA)-HA proteins was confirmed by immunoblotting with anti-HA antibodies.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A and B) Elimination of Ubp3 suppresses transport of the CP (but not the RP) sub-complex to the vacuole in carbon-starved Δnat3 cells. Cells expressing PRE10-GFP (panel A) or RPN5-GFP (panel B) with or without the Δnat3 and/or Δubp3 mutations were grown on nutrient-rich (+N +C) medium and then switched to –C medium for 24 hr before imaging by confocal fluorescence microscopy. N, nucleus; V, vacuole; P, PSG. Scale bar, 2 µm. (C and D) Accelerated proteaphagy of the CP (but not the RP) in carbon-starved Δnat3 cells is blocked by deletion of Ubp3. PRE10-GFP (panel C) or RPN5-GFP (panel D) cells with or without the Δnat3 and/or Δubp3 mutations were switched from +N +C medium to –C medium for the indicated times. Total protein extracts were assayed for GFP release by immunoblot analysis with anti-GFP antibodies, as shown in Figure 1A. Open and closed arrowheads locate the GFP fusion and free GFP, respectively. Immunodetection of histone H3 was used to confirm near equal protein loading. (E) Only the Ubp3 DUB is required for carbon starvation-induced proteaphagy of the CP. PRE10-GFP cells containing the Δblm10 mutation together with the indicated DUB deletions were switched from nutrient-rich (+N +C) medium to medium lacking carbon (–C) and cell aliquots were taken after 0 or 24 hr. Total protein extracts were assayed for GFP release by immunoblot analysis, as in panel (C).
 
 Ubp3 associates with a co-factor, Bre5, which promotes its activity (Cohen et al., 2003; Kraft et al., 2008). From analysis of Δbre5 cells, we found that this co-factor is also required for carbon starvation-induced proteaphagy of the CP. When the Pre10-GFP reporter was examined in Δblm10 Δbre5 cells by the GFP-release assay, little free GFP accumulated even after prolonged carbon starvation, while its accumulation was robust after 1 day in Δblm10 cells wild-type for BRE5 (Figure 7D). Complementation studies showed that active Ubp3 and Bre5 are required for proteaphagy of the CP in Δblm10 cells. Whereas UBP3-HA and BRE5-HA transgenes readily restored proteaphagy of the CP in Δblm10 Δubp3 and Δblm10 Δbre5 cells, respectively, similar transgenes expressing alanine substitution mutants of Ubp3 replacing either the catalytic cysteine at residue 469 (UBP3(C469A)-HA; Cohen et al., 2003) or the Bre5-binding site at residues 208 to 211 (UBP3(LFIN-AAAA)-HA; Li et al., 2005) were ineffective (Figure 7D).
 
 Although Ubp3 appears vital for both nitrogen starvation- and carbon starvation-induced proteaphagy (this study; Waite et al., 2016), possible roles for the other 19 yeast DUBs remained unexplored. Consequently, we examined most other ubiquitin-specific DUBs in yeast (the exceptions being the essential DUB Rpn11 and Yuh1, which has greater specificity for the ubiquitin relative Rub1). While accumulation of free GFP from Pre10-GFP upon carbon starvation was clearly evident in the Δblm10 mutant and was blocked in the Δblm10 Δubp3 double mutant, deletion of the 17 other DUBs individually had no effect (Figure 7—figure supplement 1E). These data imply that there is a specific role for Ubp3 in proteaphagy, as opposed to deubiquitylation more generally.
 
-## PSG formation promotes resumption of cell growth upon exit from starvation
+### PSG formation promotes resumption of cell growth upon exit from starvation
 
 Because PSGs appear to protect proteasomes from autophagic degradation in response to carbon starvation, we speculated that these granules might be beneficial for cell survival. In particular, the sequestration of proteasomes into PSGs could help cells resume growth as carbon availability improves by providing a rapidly re-mobilizable cache of proteasomes. To test this hypothesis, we examined the growth resumption of yeast cultures in nutrient-rich medium following exposure to carbon and/or nitrogen starvation using mutant backgrounds (Δblm10, Δnat3, Δspg5 and/or Δupb3) or culture conditions (2-DG) that impact PSG accumulation and/or proteaphagy (see above).
 
 Initially, wild-type yeast cells were subjected to 24 hr of carbon, nitrogen, or simultaneous carbon and nitrogen starvation, before being returned to nutrient-rich medium, at which point their ability to resume growth was monitored by measurement of culture density (Figure 8—figure supplement 1A). While cells not subjected to starvation grew rapidly without lag, reaching an OD600 of more than 8.0 after 6 hr of growth, cells subjected to nitrogen starvation suffered a 3 to 4 hr lag before resuming growth, reaching an OD600 of only ~2.0 after 6 hr (Figure 8A and B). By contrast, carbon starvation only modestly delayed growth resumption by itself, while remarkably accelerating re-growth of cells also missing nitrogen, indicating that the growth defect caused by nitrogen starvation can be partially overcome by a lack of carbon, in much the same way as carbon starvation protects proteasomes from autophagy even when cells are starved for nitrogen (Figure 8A and B). As a further connection of this growth phenotype to proteasome levels, we exposed nitrogen- and/or carbon-starved cells to the amino acid analogs canavanine and p-fluorophenylalanine; survival under these conditions would be aided by the capacity of proteasomes to clear abnormal proteins incorporating these analogs (Finley et al., 2012). Whereas culture growth in the presence of the analogs was dramatically impaired in cells pre-exposed to nitrogen starvation (~10% of non-treated cells after 6 hr), which would have depleted proteasomes by autophagy, culture growth was better for analog-treated cells starved for either carbon alone or nitrogen and carbon together, and was comparable to non-starved cells (~30% of untreated cells), all three of which would have avoided autophagic clearance of their proteasomes (Figure 8C and D).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig8-v2.jpg)
+
+**Figure 8.:** (A) Delayed resumption of yeast cell growth following nitrogen starvation is reversed by simultaneous carbon starvation. Cells were grown in nutrient-rich (N + C) medium and then switched to either medium lacking nitrogen (–N), carbon (–C), or both (–N –C) for 24 hr. Near equal numbers of cells were then re-suspended in +N +C medium, and monitored for the resumption of cell growth by measuring culture density at OD600 over the next 12 hr. (B) Quantification of cell growth following nutrient starvation. Cells were grown as in panel (A), and cell growth was quantified by measuring culture density at OD600 6 hr after re-suspension in +N +C medium. (C) Reduced cell growth and increased susceptibility to amino acid analogs following nitrogen starvation is reversed by simultaneous carbon starvation. Cells were treated as in panel (A), and near equal numbers of cells were re-suspended in +N +C medium. Five-fold serial dilutions were then spotted onto synthetic complete medium with or without 5 μM canavanine (Can) or 25 mM p-fluorophenylalanine (p–FP) and incubated at 30°C for 36 hr. (D) Effects of amino acid anaolgs on cell growth following nutrient starvation. Cells were grown and treated as in panel (A), re-suspended in +N +C medium, and the resumption of cell growth in the presence or absence of 5 μM Can or 25 mM p-FP was monitored by measuring culture density at OD600 after 6 hr. The OD600 values in the presence of each analog were then normalized to those in the absence of the analogs. (E) Delayed resumption of cell growth following nitrogen starvation is reversed by pre-treatment with 2-DG. Cells were grown in +N +C medium with or without 5 mM 2-DG and 2 mM NaN3, and then switched to medium lacking nitrogen for 24 hr. Near equal numbers of cells were then re-suspended in +N +C medium, and the resumption of cell growth was monitored as in panel (A). (F) Quantification of cell growth during nitrogen starvation after a pre-treatment with 2-DG. Cells were grown and treated as in panel (E), and cell growth was quantified as in panel (B). (G) Reduced cell growth following nitrogen starvation is reversed by pre-treatment with 2-DG. Cells were treated as in panel (E), and near equal numbers of cells were re-suspended in +N +C medium. Five-fold serial dilutions were then spotted onto synthetic complete medium and incubated at 30°C for 36 hr. (H) Cells lacking BLM10 delay resumption of growth following carbon starvation, which is reversed by simultaneous deletion of UBP3. Cells were grown in +N +C medium and then switched to –C medium for 24 hr. Near equal numbers of cells were then re-suspended in +N +C medium, and the resumption of cell growth was monitored as in panel (A). Left panel, non-starved cells; right panel, carbon-starved cells. (I) Quantification of cell growth for strains lacking BLM10 and/or UBP3 following carbon starvation. Cells were grown and treated as in panel (H), and cell growth was quantified as in panel (B). (J) Reduced growth of Δblm10 cells following carbon starvation is reversed by deletion of UBP3. Cells were treated as in panel (H), and near equal numbers of cells were re-suspended, spotted onto synthetic complete medium and incubated as in panel (G). (K) Cells lacking NAT3 delay resumption of growth following carbon starvation, which is reversed by simultaneous deletion of UBP3. Cells were grown and treated as in panel (H), and the resumption of cell growth was monitored as in panel (A). Left panel, non-starved cells; right panel, carbon-starved cells. (L) Quantification of cell growth for strains lacking NAT3 and/or UBP3 following carbon starvation. Cells were grown and treated as in panel (H), and cell growth was quantified as in panel (B). (M) Reduced growth of Δnat3 cells following carbon starvation is reversed by deletion of UBP3. Cells were treated as in panel (H), and near equal numbers of cells were re-suspended, spotted onto synthetic complete medium and incubated as in panel (G). (N) Cells lacking SPG5 have slightly delayed resumption of growth following carbon starvation, but this resumption is not reversed by simultaneous deletion of UBP3. Cells were grown and treated as I panel (H), and the resumption of cell growth was monitored as in panel (A). Left panel, non-starved cells; right panel, carbon-starved cells. (O) Quantification of cell growth for strains lacking SPG5 and/or UBP3 following carbon starvation. Cells were grown and treated as in panel (H), and cell growth was quantified as in panel (B). (P) Reduced growth of Δspg5 cells following carbon starvation is not reversed by deletion of UBP3. Cells were treated as in panel (H), and near equal numbers of cells were re-suspended, spotted onto synthetic complete medium and incubated as in panel (G). Bars in panels B, D, F, I, L and O represent the mean (±SD) of three independent biological replicates. Letters represent data points that are statistically significantly different from the control (p<0.05).
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) A schematic illustrating the experimental design and time courses used for the yeast growth assays shown in Figure 8 and Figure 8—figure supplement 1. (B) The delayed resumption of Δblm10 cell growth following carbon starvation is rescued by expression of mCherry-BLM10. Cells were grown in nutrient-rich (+N +C) medium and then switched to medium containing (+C) or lacking (–C) carbon for 24 hr. Near equal numbers of cells were then re-suspended in +N +C medium, and the resumption of cell growth was monitored by measuring culture density at OD600 over the next 12 hr. (C) Quantification of cell growth for strains lacking BLM10 and/or expressing mCherry-BLM10 following carbon starvation. Cells were grown and treated as in panel (B), and cell growth was quantified by measuring culture density at OD6006 hr after resumption of growth in +C medium. (D) Reduced growth of Δblm10 cells following carbon starvation is reversed by expression of mCherry-BLM10. Cells were treated as in panel (B), and near equal numbers of cells were re-suspended in +C medium. Five-fold serial dilutions were then spotted onto synthetic complete medium and incubated at 30°C for 36 hr. (E) The growth of Δblm10 Δubp3 cells following carbon starvation is delayed by expression of wild-type UBP3-HA, but not of the catalytically inactive UBP3(C469A)-HA version or the UBP3(LFIN-AAAA)-HA variant defective in binding Bre5. Cells were grown, treated and monitored as in panel (B). Left panel, non-starved cells; right panel, carbon-starved cells. (F) Quantification of cell growth for strains lacking BLM10 and/or UBP3, with or without expression of wild-type UBP3-HA or the UBP3(C469A)-HA or UBP3(LFIN-AAAA)-HA variants, following carbon starvation. Cells were grown and treated as in panel (B), and cell growth was quantified as in panel (C). (G) The delayed resumption of Δspg5 cell growth following carbon starvation is rescued by expression of mCherry-SPG5. Cells were grown, treated and monitored as in panel (B). Left panel, non-starved cells; right panel, carbon-starved cells. (H) Quantification of cell growth for strains lacking SPG5 and/or expressing mCherry-SPG5 following carbon starvation. Cells were grown and treated as in panel (B), and cell growth was quantified as in panel (C). (I) Reduced growth of Δspg5 cells following carbon starvation is reversed by expression of mCherry-SPG5. Cells were treated as in panel (B), and near equal numbers of cells were re-suspended, spotted onto synthetic complete medium and incubated as in panel (D). (J) The delayed resumption of Δnat3 cell growth following carbon starvation is rescued by expression of NAT3-HA, but not the catalytically inactive NAT3(C97A)-HA variant. Cells were grown, treated and monitored as in panel (B). Left panel, non-starved cells; right panel, carbon-starved cells. (K) Quantification of cell growth for strains lacking NAT3, and/or expressing NAT3-HA or NAT3(C97A)-HA, following carbon starvation. Cells were grown and treated as in panel (B), and cell growth was quantified as in panel (C). (L) Reduced growth of Δnat3 cells following carbon starvation is reversed by expression of NAT3-HA, but not the catalytically inactive NAT3(C97A)-HA variant. Cells were treated as in panel (B), and near equal numbers of cells were re-suspended, spotted onto synthetic complete medium and incubated as in panel (D). (M) The delayed resumption of Δblm10 cell growth following carbon starvation is partially rescued by the Δatg7 mutant that eliminates autophagy. Cells were grown, treated and monitored as in panel (B). Left panel, non-starved cells; right panel, carbon-starved cells. (N) Quantification of yeast cell growth for strains lacking BLM10 and/or ATG7 following carbon starvation. Cells were grown and treated as in panel (B), and cell growth was quantified as in panel (C). (O) Reduced growth of Δblm10 cells following carbon starvation is reversed by disruption of autophagy. Cells were treated as in panel (B), and near equal numbers of cells were re-suspended, spotted onto synthetic complete medium and incubated as in panel (D). Bars in panels C, F, H, K, and N represent the mean (±SD) of three independent biological replicates. Letters represent data points that are statistically significantly different from the control (p<0.05).
 
 As a complementary approach, we examined the resumption of growth for wild-type cells first treated with 2-DG for 6 hr prior to (and during) nitrogen starvation, which promotes PSG formation and protects against proteaphagy (Figure 3E and F), and again monitored the ability of these cells to resume growth upon a switch back to carbon- and nitrogen-rich medium lacking 2-DG. As above with simultaneous nitrogen and carbon starvation, we found that cells pre-treated with 2-DG prior to the onset of nitrogen starvation resumed growth more rapidly than cells subjected to nitrogen starvation alone (Figure 8E, F and G). We next investigated the growth resumption of cells harbouring the Δblm10, Δnat3 and Δspg5 mutations described above. None of the mutants impaired the robust resumption of cell growth in cultures transferred from nutrient-rich medium back into nutrient-rich medium. However, as predicted, Δnat3, Δblm10 and Δspg5 cells, which block PSG formation and accelerate proteaphagy, showed a substantial delay in growth resumption after exposure to carbon starvation as compared to wild-type cells (Figure 8H, I, J, K, L, M, N, O and P). In agreement with its partial impact on PSG assembly and proteaphagy, the delayed growth response of Δspg5 cells was milder than those of Δnat3 and Δblm10 cells (Figure 8N and O). In all cases, these growth defects could be rescued by expressing the corresponding wild-type transgenes (mCherry-BLM10, mCherry-SPG5 or NAT3-HA), but not one encoding the catalytically inactive C97A variant of Nat3 (Figure 8—figure supplement 1B, C, D, G, H, I, J, K and L).
 
@@ -117,7 +169,7 @@ Based on the observation that the Δubp3 mutation will reverse the effects of th
 
 For further support that the autophagic degradation of proteasomes is at least partly responsible for delaying the resumption of culture growth following carbon starvation, we assayed the growth of Δblm10 cells in which the core autophagy component Atg7 was eliminated. The Δatg7, Δblm10 and Δatg7 Δblm10 cells all grew at similar rates in the absence of starvation, while Δatg7 and Δblm10 cells had moderate and strong delays in growth resumption, respectively, following carbon starvation (Figure 8—figure supplement 1M, N and O). Strikingly, Δatg7 Δblm10 cells also resumed growth more rapidly than Δblm10 cells alone, implying that an active autophagy system plays a role in delaying the growth resumption of Δblm10 cells by clearing proteasomes in the absence of PSG assembly. Taken together, our data are consistent with a model whereby cells that can protect proteasomes from autophagy by sequestering them in PSGs are better able to resume growth when carbon availability and energy status improve.
 
-## PSG assembly and the protection of proteasomes from proteaphagy are conserved in Arabidopsis
+### PSG assembly and the protection of proteasomes from proteaphagy are conserved in Arabidopsis
 
 To test if PSGs represent a conserved mechanism to safeguard proteasomes from proteaphagy, we examined PSG dynamics and proteaphagy in Arabidopsis, using previously developed homozygous PAG1 (α7)-GFP and RPN5a-GFP reporters for the CP and RP, respectively (Marshall et al., 2015). Here, the GFP-tagged subunits expressed from their native promoters were used to rescue pag1-1 and rpn5a-2 null mutant lines; these transgenic proteins fully rescue the embryo lethality and severe dwarf phenotypes of the corresponding homozygous mutations, and were faithfully integrated into the 26S particle (Book et al., 2009; Marshall et al., 2015). Five-day-old seedlings were examined, which have almost fully completed the transition to photoautotrophic growth, thus rendering them sensitive to light and external supplies of fixed carbon (Penfield et al., 2005; Gao et al., 2015).
 
@@ -125,11 +177,19 @@ When we monitored proteaphagy by the GFP-release assay in seedlings grown in nit
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig9-v2.jpg)
 
-**Figure 9.:** Arabidopsis.(A) Measurement of proteaphagy upon nitrogen and/or fixed-carbon starvation in 5 day-old Arabidopsis seedlings by monitoring the release of free GFP from the CP and RP subunits PAG1-GFP or RPN5a-GFP, respectively. PAG1:PAG1-GFP pag1-1 and RPN5a:RPN5a-GFP rpn5a-2 seedlings were switched from growth in the light on nutrient-rich (+N +C) medium to either growth in the light on medium lacking nitrogen (–N), or growth in the dark on media lacking either carbon alone (–C) or both nitrogen and carbon (–N –C). Total protein extracts prepared from seedlings harvested at the indicated times were assayed for GFP release by immunoblot analysis with anti-GFP antibodies. Open and closed arrowheads locate the GFP fusion and free GFP, respectively. Immunodetection of histone H3 was used to confirm near equal protein loading. Rates of bulk autophagy were measured by the release of GFP from GFP-ATG8a in the same manner as above (right panel). (B) Quantification of the free GFP/GFP fusion ratios of the PAG1-GFP, RPN5a-GFP and GFP-ATG8a reporters upon switching from +N +C medium to –N, –C, or –N –C media. Levels of the GFP fusion and free GFP were determined by densitometric scans of the immunoblots shown in panel (A). Each data point represents the mean (±SD) of three independent biological replicates. (C) Proteasomes accumulate in autophagic bodies within the vacuole upon nitrogen starvation, but not fixed-carbon starvation. Five-day-old seedlings expressing PAG1-GFP, RPN5a-GFP or GFP-ATG8a were grown on +N +C medium and then switched to –N or –C media and treated with 1 µM ConA for 16 hr before imaging of the root lower elongation zone by confocal fluorescence microscopy. Scale bar, 10 µm. (D) Proteasomes assemble into large cytoplasmic PSG-like structures upon fixed-carbon starvation, instead of the smaller vacuolar puncta seen upon nitrogen starvation. Five-day-old seedlings expressing PAG1-GFP, RPN5a-GFP or GFP-ATG8a were grown, treated and imaged as in panel C, but focusing on cells closer to the root tip. Scale bar, 2 µm. (E) The PSG-like structures that form upon fixed-carbon starvation are not decorated with ATG8a. Roots from 5-day-old seedlings expressing PAG1-GFP and mCherry-ATG8a were grown, treated and imaged as in panel C. Shown are the GFP, mCherry and merged fluorescence channels. Scale bar, 5 µm. (F) The accumulation of PSG-like structures upon fixed-carbon starvation is rapidly reversible upon replenishment of the carbon source. Roots from 5 day-old seedlings expressing PAG1-GFP were grown on +N +C medium, switched to –C medium for 16 hr, and then returned to +N +C medium for the indicated times before imaging as in panel C. Scale bar, 10 µm. In panels C, D, E and F: N, nucleus; V, vacuole; P, PSG.10.7554/eLife.34532.030Figure 9—source data 1.Figure 9B.
+**Figure 9.:** (A) Measurement of proteaphagy upon nitrogen and/or fixed-carbon starvation in 5 day-old Arabidopsis seedlings by monitoring the release of free GFP from the CP and RP subunits PAG1-GFP or RPN5a-GFP, respectively. PAG1:PAG1-GFP pag1-1 and RPN5a:RPN5a-GFP rpn5a-2 seedlings were switched from growth in the light on nutrient-rich (+N +C) medium to either growth in the light on medium lacking nitrogen (–N), or growth in the dark on media lacking either carbon alone (–C) or both nitrogen and carbon (–N –C). Total protein extracts prepared from seedlings harvested at the indicated times were assayed for GFP release by immunoblot analysis with anti-GFP antibodies. Open and closed arrowheads locate the GFP fusion and free GFP, respectively. Immunodetection of histone H3 was used to confirm near equal protein loading. Rates of bulk autophagy were measured by the release of GFP from GFP-ATG8a in the same manner as above (right panel). (B) Quantification of the free GFP/GFP fusion ratios of the PAG1-GFP, RPN5a-GFP and GFP-ATG8a reporters upon switching from +N +C medium to –N, –C, or –N –C media. Levels of the GFP fusion and free GFP were determined by densitometric scans of the immunoblots shown in panel (A). Each data point represents the mean (±SD) of three independent biological replicates. (C) Proteasomes accumulate in autophagic bodies within the vacuole upon nitrogen starvation, but not fixed-carbon starvation. Five-day-old seedlings expressing PAG1-GFP, RPN5a-GFP or GFP-ATG8a were grown on +N +C medium and then switched to –N or –C media and treated with 1 µM ConA for 16 hr before imaging of the root lower elongation zone by confocal fluorescence microscopy. Scale bar, 10 µm. (D) Proteasomes assemble into large cytoplasmic PSG-like structures upon fixed-carbon starvation, instead of the smaller vacuolar puncta seen upon nitrogen starvation. Five-day-old seedlings expressing PAG1-GFP, RPN5a-GFP or GFP-ATG8a were grown, treated and imaged as in panel C, but focusing on cells closer to the root tip. Scale bar, 2 µm. (E) The PSG-like structures that form upon fixed-carbon starvation are not decorated with ATG8a. Roots from 5-day-old seedlings expressing PAG1-GFP and mCherry-ATG8a were grown, treated and imaged as in panel C. Shown are the GFP, mCherry and merged fluorescence channels. Scale bar, 5 µm. (F) The accumulation of PSG-like structures upon fixed-carbon starvation is rapidly reversible upon replenishment of the carbon source. Roots from 5 day-old seedlings expressing PAG1-GFP were grown on +N +C medium, switched to –C medium for 16 hr, and then returned to +N +C medium for the indicated times before imaging as in panel C. Scale bar, 10 µm. In panels C, D, E and F: N, nucleus; V, vacuole; P, PSG.
 
 To assess accumulation of autophagic vesicles and possible assembly of PSGs, we examined the distribution of the PAG1-GFP and RPN5a-GFP reporters by confocal fluorescence microscopy of root cells treated with concanamycin A (ConA), which stabilizes vacuolar autophagic bodies and thus enhances their visualization (Thompson et al., 2005; Marshall et al., 2015). As shown in Figure 9C, both reporters were concentrated in the nucleus along with a diffuse cytoplasmic signal under nutrient-replete growth conditions, in agreement with the largely nuclear distribution of plant proteasomes (Book et al., 2009; Marshall et al., 2015). This distribution changed substantially upon nitrogen starvation, where the dramatic accumulation of small (~1 μm) autophagic bodies in vacuoles became evident, similar to those seen with the GFP-ATG8a reporter. This re-location was not seen in fixed carbon-starved roots, even though GFP-ATG8a still moved to autophagic bodies. Instead, large, bright puncta (~5 μm) resembling PSGs accumulated in the cytoplasm, concomitant with a substantial loss of nuclear fluorescence (Figure 9C and D). These foci were not similarly decorated with mCherry-ATG8a, implying that they are not phagophores or autophagosomes that sequester cargo prior to their vacuolar deposition (Figure 9E). As with PSGs in yeast, accumulation of these puncta in Arabidopsis was also readily reversible, with the fluorescence signal from the bright PAG1-GFP foci rapidly dispersing back to a diffuse cytosolic and nuclear pattern within 1 to 2 hr following return of the seedlings to sucrose-containing medium and light (Figure 9F). These puncta were almost entirely absent 4 hr after the cessation of starvation (Figure 9F).
 
 To help demonstrate that these puncta were PSGs, as well as investigate their ability to suppress proteaphagy, we analysed the fate of the PAG1-GFP and RPN5a-GFP reporters in Arabidopsis mutants missing the plant ortholog of Blm10, known as PA200 (Book et al., 2010). When assayed by the GFP-release assay, fixed-carbon starvation did not accelerate the accumulation of free GFP from the RPN5a-GFP fusion in either wild-type plants or plants homozygous for the null pa200-2 and pa200-3 alleles (Figure 10A and B; Book et al., 2010), in agreement with our observations that yeast Δblm10 cells do not accelerate RP autophagy (Figure 4C). However, for the PAG1-GFP reporter, proteaphagy upon fixed-carbon starvation was now evident in the pa200-2 and pa200-3 mutants, as it was for yeast Δblm10 cells, with the accumulation of free GFP and loss of the PAG1-GFP fusion clearly seen (Figure 10A and B).
+
+![Figure 10.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig10-v2.jpg)
+
+**Figure 10.:** (A) Elimination of PA200 accelerates proteaphagy of the CP, but not the RP, in response to fixed-carbon starvation. PAG1:PAG1-GFP pag1-1 and RPN5a:RPN5a-GFP rpn5a-2 seedlings with or without the pa200-2 or pa200-3 mutations were switched from growth in the light on nutrient-rich (+N +C) medium to either growth in the light on medium lacking nitrogen (–N), or growth in the dark on media lacking either carbon alone (–C) or both nitrogen and carbon (–N –C). Total protein extracts prepared from seedlings harvested at the indicated times were assayed for GFP release by immunoblot analysis with anti-GFP antibodies. Open and closed arrowheads indicate the GFP fusion and free GFP, respectively. Immunodetection of histone H3 was used to confirm near equal protein loading. (B) Quantification of the free GFP/GFP fusion ratios of the PAG1-GFP and RPN5a-GFP reporters in wild-type (WT), pa200-2 or pa200-3 seedlings upon switching to –C medium. Levels of the GFP fusion and free GFP were determined by densitometric scans of the immunoblots shown in panel (A). Each data point represents the mean (±SD) of three independent biological replicates. (C) PAG1-GFP fails to coalesce into cytoplasmic PSG-like structures upon fixed-carbon starvation in the absence of PA200, and instead appears in vacuolar autophagic bodies. Five-day-old PAG1:PAG1-GFP pag1-1 seedlings with or without the pa200-2 or pa200-3 mutations were grown on +N +C medium and then transferred to –C medium containing 1 µM ConA and subjected to darkness for 16 hr. Cells were imaged by confocal fluorescence microscopy. Scale bar, 2 µm. (D) The cytoplasmic PSG-like structures containing PAG1-GFP form independently of autophagy. PAG1:PAG1-GFP pag1-1 seedlings with or without the atg7-2 mutation were grown on +N +C medium and then transferred to –N or –C media (in the light or dark, respectively) containing 1 µM ConA for 16 hr. Cells were imaged by confocal fluorescence microscopy as in panel (C). Scale bar, 10 µm. In panels C and D: N, nucleus; V, vacuole; P, PSG.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/34532/elife-34532-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** Proteasomes accumulate in PSG-like foci upon fixed-carbon starvation even in the absence of treatment with ConA, which is required to stabilize autophagic bodies within the vacuole. Five-day-old PAG1:PAG1-GFP pag1-1 seedlings were switched from growth in the light on nutrient-rich (+N +C) medium to either growth in the light on medium lacking nitrogen (–N), or growth in the dark on media lacking carbon (–C) for 24 hr before imaging of the root lower elongation zone by confocal fluorescence microscopy. Whereas PSG-like foci are observed in the cytosol upon fixed-carbon starvation, vacuolar autophagic bodies are not observed upon nitrogen starvation due to their rapid degradation in the vacuole in the absence of ConA. Scale bar, 10 µm.
 
 When similarly analysed by confocal fluorescence microscopy, we could easily detect bright cytoplasmic foci reminiscent of PSGs in PAG1-GFP roots, but not in roots also missing PA200 (Figure 10C). Instead, much smaller autophagic bodies containing PAG1-GFP accumulated in pa200-2 and pa200-3 vacuoles. Formation of the bright cytoplasmic foci did not depend on the core autophagic machinery, as their appearance after fixed-carbon starvation was still robust in homozygous atg7-2 seedlings (Figure 10D). They were also clearly visible when the seedlings were starved for fixed carbon in the absence of ConA treatment, indicating that they did not reside in the vacuole (Figure 10—figure supplement 1). Taken together, our data point to Arabidopsis also generating PSGs during carbon starvation, thus providing a second kingdom that assembles these proteaphagy-protecting condensates.
 
@@ -159,7 +219,430 @@ In conclusion, we identify here an evolutionarily conserved function of PSGs in 
 
 ## Materials and Methods
 
-## Yeast strains and manipulations
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (Saccharomyces cerevisiae)</td>
+      <td>Wild-type strains (BY4741; BY4742; SEY6210; SUB62; W303-1B)</td>
+      <td>Other</td>
+      <td>See additional information</td>
+      <td>Provided by Daniel Finley (Harvard Medical School), Audrey P. Gasch (University of Wisconsin) and Mark Hochstrasser (Yale University); allS. cerevisiae strains are listed in Supplementary file 1-Table S1</td>
+    </tr>
+    <tr>
+      <td>Strain (Arabidopsis thaliana)</td>
+      <td>Wild type ecotype Columbia-0 (Col-0)</td>
+      <td>Arabidopsis Biological Resource Center (ABRC)</td>
+      <td>CS60000</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>Yeast GFP clone collection strains (PRE10-GFP; RPN5-GFP; BLM10-GFP)</td>
+      <td>Thermo Fisher Scientific; PMID 14562095</td>
+      <td>See additional information</td>
+      <td>All S. cerevisiae strains are listed in Supplementary file 1-Table S1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>Yeast gene knockout collection strains (multiple)</td>
+      <td>GE Healthcare; PMID 10436161</td>
+      <td>See additional information</td>
+      <td>All S. cerevisiae strains are listed in Supplementary file 1-Table S1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>GFP-ATG8; GFP-APE1;OM45-GFP; PEX14-GFP;RPL25-GFP</td>
+      <td>PMID 15138258; PMID 25042851</td>
+      <td>YTS187; KL095; KL099; KL282; KL285</td>
+      <td>Provided by Stefan Jentsch (Max Planck Institut für Biochemie) and Daniel J. Klionsky (University of Michigan); all S. cerevisiae strains are listed in Supplementary file 1-Table S1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>PHO8Δ60</td>
+      <td>PMID 7741731</td>
+      <td>TN124</td>
+      <td>Provided by Daniel J. Klionsky (University of Michigan); all S. cerevisiae strains are listed in Supplementary file 1-Table S1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>rpn11-m1; rpn11-m5</td>
+      <td>PMID 18172023; PMID 19773362; PMID 23936414</td>
+      <td>N/A</td>
+      <td>Provided by Agnès Delahodde (Université Paris-Sud); all S. cerevisiae strains are listed in Supplementary file 1-Table S1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>PRE1-TEV-ProA; RPN11-TEV-ProA</td>
+      <td>PMID: 12408819</td>
+      <td>SDL133; SDL135</td>
+      <td>Provided by Daniel Finley (Harvard Medical School); allS. cerevisiae strains are listed in Supplementary file 1-Table S1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>atg7-2</td>
+      <td>GABI-Kat, Universität Bielefeld; PMID 20136727</td>
+      <td>GABI_655_B06</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>pa200-2; pa200-3</td>
+      <td>ABRC; PMID 20516081</td>
+      <td>SALK_095870; SALK_070184</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>PAG1:PAG1-GFP pag1-1</td>
+      <td>PMID 26004230</td>
+      <td>SALK_114864 forpag1-1</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>RPN5a:RPN5a-GFP rpn5a-2</td>
+      <td>PMID 26004230</td>
+      <td>SALK_010840 forrpn5a-2</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>35S:GFP-ATG8a</td>
+      <td>PMID 16040659</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (A. thaliana)</td>
+      <td>UBQ10:mCherry-ATG8a</td>
+      <td>PMID 21984698</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Genes (A. thaliana and S. cerevisiae)</td>
+      <td>See additional information</td>
+      <td>Saccharomyces Genome Database or the Arabidopsis Information Resource</td>
+      <td>See additional information</td>
+      <td>All gene accession numbers are listed in Supplementary file 1-Table S2</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FLAG (mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>F3165, RRID:AB_259529</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFP (mixture of mouse monoclonals)</td>
+      <td>Sigma-Aldrich</td>
+      <td>11814460001, RRID:AB_390913</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-H3 (rabbit polyclonal)</td>
+      <td>Abcam</td>
+      <td>AB1791, RRID:AB_302613</td>
+      <td>1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA (mouse monoclonal)</td>
+      <td>Covance</td>
+      <td>MMS-101R, RRID:AB_2314672</td>
+      <td>1:5000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mCherry (mouse monoclonal)</td>
+      <td>Abcam</td>
+      <td>AB125096, RRID:AB_11133266</td>
+      <td>1:1000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Pre4 (rabbit polyclonal)</td>
+      <td>Other</td>
+      <td>N/A</td>
+      <td>1:1,000; provided by Daniel Finley (Harvard Medical School)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rpn5 (rabbit polyclonal)</td>
+      <td>PMID 19252082</td>
+      <td>N/A</td>
+      <td>1:3000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rpn8 (rabbit polyclonal)</td>
+      <td>Other</td>
+      <td>N/A</td>
+      <td>1:1,000; provided by Daniel Finley (Harvard Medical School)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Rpt1 (rabbit polyclonal)</td>
+      <td>Other</td>
+      <td>N/A</td>
+      <td>1:1,000; provided by Daniel Finley (Harvard Medical School)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-mouse HRP conjugate</td>
+      <td>Sercare</td>
+      <td>074–1806, RRID:AB_2307348</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Goat anti-rabbit HRP conjugate</td>
+      <td>Sercare</td>
+      <td>074–1506, RRID:AB_2721169</td>
+      <td>1:10,000</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pAG424GPD-ccdB; pAG424GPD-ccdB-HA</td>
+      <td>Addgene; PMID 17583893</td>
+      <td>14152; 14248</td>
+      <td>Provided by Susan Lindquist (Whitehead Institute for Biomedical Research) via Addgene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RNQ1-mCherry</td>
+      <td>PMID 18756251</td>
+      <td>pESC::GAL1- RNQ1-mCherry</td>
+      <td>Provided by Shay Ben-Aroya (Bar-Ilan University)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mCherry-BLM10</td>
+      <td>This paper</td>
+      <td>pAG424::GPD1- mCherry-BLM10</td>
+      <td>The mCherry-BLM10 coding sequence (CDS) cloned into pAG424GPD-ccdB</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>mCherry-SPG5</td>
+      <td>This paper</td>
+      <td>pAG424::GPD1- mCherry-SPG5</td>
+      <td>The mCherry-SPG5 CDS cloned into pAG424GPD-ccdB</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>RPN11-FLAG</td>
+      <td>This paper</td>
+      <td>pAG424::GPD1- RPN11-FLAG</td>
+      <td>The RPN11-FLAG CDS cloned into pAG424GPD-ccdB</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>BRE5-HA</td>
+      <td>This paper</td>
+      <td>pAG424::GPD1- BRE5-HA</td>
+      <td>The BRE5 CDS cloned into pAG424GPD-ccdB-HA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>NAT3-HA and derivatives</td>
+      <td>This paper</td>
+      <td>pAG424::GPD1-NAT3- HA and derivatives</td>
+      <td>The NAT3 CDS (and derivatives) cloned into pAG424GPD-ccdB-HA</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>UBP3-HA and derivatives</td>
+      <td>This paper</td>
+      <td>pAG424::GPD1-UBP3- HA and derivatives</td>
+      <td>The UBP3 CDS (and derivatives) cloned into pAG424GPD-ccdB-HA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>See additional information</td>
+      <td>Integrated DNA Technologies</td>
+      <td>See additional information</td>
+      <td>All oligonucleotide primer sequences are listed in Supplementary file 1-Table S3</td>
+    </tr>
+    <tr>
+      <td>Recombinant protein</td>
+      <td>6His-TEV protease</td>
+      <td>Other</td>
+      <td>N/A</td>
+      <td>Provided by E. Sethe Burgie (Washington University in St. Louis)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>LightCycler 480 SYBR Green I Master Mix</td>
+      <td>Roche Diagnostics</td>
+      <td>04707516001</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Pierce BCA protein assay kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>23225</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>SuperSignal West Pico Plus Chemiluminescent Substrate</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>34578</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>2-deoxyglucose</td>
+      <td>Sigma-Aldrich</td>
+      <td>D8375</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Canavanine sulphate salt</td>
+      <td>Sigma-Aldrich</td>
+      <td>C9758</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Carbonyl-cyanide-3- chlorophenylhydrazone</td>
+      <td>Sigma-Aldrich</td>
+      <td>C2759</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Concanamycin A</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>SC-202111A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>LFP</td>
+      <td>GenScript; PMID 16337593</td>
+      <td>See additional information</td>
+      <td>Custom synthesis</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>MG132</td>
+      <td>Selleckchem</td>
+      <td>S2619</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>N-succinyl-LLVY-7-amido- 4-methylcoumarin</td>
+      <td>Sigma-Aldrich</td>
+      <td>S6510</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>p-fluorophenylalanine</td>
+      <td>Sigma-Aldrich</td>
+      <td>F5251</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>p-nitrophenol</td>
+      <td>Sigma-Aldrich</td>
+      <td>1048</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>p-nitrophenyl phosphate disodium salt hexahydrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>N4645</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Adobe Illustrator CC; Adobe Photoshop CC</td>
+      <td>Adobe Systems</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Nikon Elements Imaging Software</td>
+      <td>Nikon</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Total Lab Quant</td>
+      <td>Non-linear Dynamics</td>
+      <td>N/A</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Immobilon-P PVDF Transfer Membrane</td>
+      <td>EMD Millipore</td>
+      <td>IPVH00010</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Murashige and Skoog basal salt micronutrient solution</td>
+      <td>Sigma-Aldrich</td>
+      <td>M0529</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nickel-nitrilotriacetic acid-agarose beads</td>
+      <td>Qiagen</td>
+      <td>30230</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Protease inhibitor cocktail</td>
+      <td>Sigma-Aldrich</td>
+      <td>P9599</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Rabbit whole molecule IgG antigen affinity gel</td>
+      <td>MP Biomedicals</td>
+      <td>0855961</td>
+      <td>N/A</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Yeast nitrogen base without amino acids and ammonium sulphate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Y1251</td>
+      <td>N/A</td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains and manipulations
 
 Unless otherwise stated, all manipulations were performed according to standard yeast protocols (Dunham et al., 2015; Marshall et al., 2016). Details of all strains used in this study are given in Supplementary file 1-Table S1, and all relevant Saccharomyces Genome Database identifiers are given in Supplementary file 1-Table S2. Cells expressing PRE10-GFP, RPN5-GFP or BLM10-GFP in the BY4741 background (Brachmann et al., 1998) were obtained from the yeast GFP clone collection (Thermo Fisher Scientific, Waltham, MA) and cultured in synthetic complete medium lacking histidine. All deletion strains in the BY4742 background (Brachmann et al., 1998) were obtained from the yeast gene knockout collection (GE Healthcare, Chicago, IL) and cultured in YPDA medium containing 200 µg/ml Geneticin, except for the Δerg6 deletion, which was instead grown in YPDA medium containing 200 µg/ml hygromycin B (Marshall et al., 2016). The rpn11-m1 mutation is a frame-shift at position 276 that results in expression of a truncated protein replacing the last C-terminal 31 amino acids with nine non-native residues (Rinaldi et al., 2008). The rpn11-m5 mutation is an intragenic suppressor of rpn11-m1 that restored the end of the open-reading frame downstream of residue 282, but still maintained seven amino acid changes compared to the wild type sequence (Rinaldi et al., 2008; Saunier et al., 2013). Crosses between haploid strains of opposite mating types were selected for on appropriate synthetic dropout media plus antibiotics, with subsequent sporulation and asci dissection performed as previously described (Marshall et al., 2016). The identities of the resulting haploid strains were confirmed by PCR genotyping and confocal fluorescence microscopy (see below). All oligonucleotide primers used in this study are listed in Supplementary file 1-Table S3.
 
@@ -169,42 +652,42 @@ For yeast growth assays, cells were grown and treated as above, except a culture
 
 For treatment with MG132 ((N-benzyloxycarbonyl)-leucinyl-leucinyl-leucinal; Selleckchem, Houston, TX; Kisselev and Goldberg, 2001), cells containing the Δerg6 deletion were grown in YPGA medium as above and treated with 80 µM MG132 for the indicated times. For the experiment monitoring pexophagy, cells expressing the PEX14-GFP reporter were grown overnight in YPGA medium, then diluted to an OD600 of 0.1 in 15 ml SGD medium (0.67% yeast nitrogen base, 3% glycerol, 0.1% glucose) and grown for an additional 12 hr. 1.5 ml of 10X YP medium (10% yeast extract, 20% bacto-peptone) was then added, resulting in final concentrations of 1% yeast extract and 2% bacto-peptone, and the cells were grown for an additional 4 hr. Cultures were then diluted into 15 ml YTO medium (0.67% yeast nitrogen base, 0.1% Tween-20, 0.1% oleic acid) to an OD600 of 0.2 and grown overnight to induce peroxisome proliferation (Hutchins et al., 1999). Cells were then subjected to nitrogen or carbon starvation as described above. All other types of selective autophagy were monitored in YPGA medium only.
 
-## Plasmid constructions and genetic complementation
+### Plasmid constructions and genetic complementation
 
 Genetic complementation with the BRE5, NAT3, RPN11, SPG5, and UBP3 genes used coding sequences amplified from BY4741 cDNA generated at appropriate growth stages, as described below (see Quantitative real-time PCR). The oligonucleotides used for amplification of RPN11 included sequence encoding a C-terminal FLAG tag. Resulting PCR products were recombined first into pDONR221 via the Gateway BP clonase II reaction (Thermo Fisher Scientific), and then into the pAG424GPD-ccdB or pAG424GPD-ccdB-HA vectors (provided by Susan Lindquist (Whitehead Institute for Biomedical Research, Massachusetts Institute of Technology)) via the Gateway LR clonase II reaction (Thermo Fisher Scientific). Previously described point mutations that abolish Nat3 catalytic activity (C97A; Polevoda et al., 2003), Ubp3 catalytic activity (C469A; Cohen et al., 2003) or Ubp3 binding to its co-factor Bre5 (L208A F209A V210A N211A; Li et al., 2005) were introduced by the QuikChange method (Agilent Genomics, Santa Clara, CA). The construct encoding mCherry-SPG5 was generated by overlapping fusion PCR, using the mCherry coding region from the pESC::GAL1-RNQ1-mCherry plasmid as the template. The mCherry-BLM10 construct was generated by sequential Gibson assembly of 10 overlapping PCR fragments (Gibson et al., 2009). All resulting plasmids were transformed into the indicated yeast strains using the lithium acetate method and subsequently grown in synthetic complete medium lacking tryptophan, in addition to other selective amino acids.
 
-## Immunological techniques
+### Immunological techniques
 
 Total protein extracts from yeast were obtained by re-suspending harvested cells in 500 µl of yeast extraction buffer (0.2 N NaOH, 1% 2-mercaptoethanol), followed by precipitation of proteins with 50 µl of 50% trichloroacetic acid. Proteins collected by centrifugation at 16,000 x g for 5 min at 4°C were washed once with 1 ml of ice-cold acetone, re-suspended into 150 µl SDS-PAGE sample buffer (80 mM Tris-HCl (pH 6.8), 10% glycerol, 4% SDS, 4% 2-mercaptoethanol, 0.002% bromophenol blue), and heated at 95°C for 5 min. Total protein extracts from Arabidopsis were obtained by grinding frozen seedling tissue in 3 volumes of plant extraction buffer (50 mM Tris-HCl (pH 7.5), 150 mM NaCl, 2 mM dithiothreitol (DTT), 1 mM phenylmethylsulphonyl fluoride (PMSF), 50 μM MG132, 1X protease inhibitor cocktail (Sigma-Aldrich)), followed by removal of insoluble debris by centrifugation. The supernatant was then made 1X with SDS-PAGE sample buffer (from a 5X concentrate) and also heated to 95°C for 5 min. SDS-PAGE gels were then prepared and stained for protein with silver nitrate as previously described (Marshall et al., 2017). Alternatively, gels were subjected to immunoblot analysis, where proteins were electrophoretically transferred onto Immobilon-P membrane (EMD Millipore, Burlington, MA) at 80 mA for 16 hr, blocked with a 10% non-fat dry milk solution in PBS (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.8 mM KH2PO4), then probed with specific antibodies diluted in PBS containing 1% milk. See the Key Resources Table for full details of specific primary and secondary antibodies used. The anti-Rpn5 antibodies were raised against the Arabidopsis protein (Book et al., 2009), which has 30% identity and 37% similarity to the yeast version. All blots were developed using the SuperSignal West Pico Plus Chemiluminescent Substrate (Thermo Fisher Scientific). Densitometric quantification of blots was performed using TotalLab Quant software (Non-linear Dynamics; Newcastle-on-Tyne, UK), with at least three different exposures used to ensure the exposure level was within the linear range of the film.
 
-## Pho8Δ60 activity assays
+### Pho8Δ60 activity assays
 
 The Pho8Δ60 activity assays were performed essentially as previously described (Noda and Klionsky, 2008), with minor modifications. Strain TN124 was grown in a 250 ml culture, subjected to nitrogen and/or carbon starvation or growth at different pH, and aliquots corresponding to 5.0 OD600 units were sampled at the indicated times. Cell pellets were re-suspended in 500 µl lysis buffer (20 mM PIPES-KOH (pH 8.5), 50 mM KCl, 100 mM potassium acetate, 10 mM MgSO4, 10 μM ZnSO4, 0.5% Triton X‐100, supplemented with 1 mM PMSF immediately before use), and lysed by vigorous vortexing in the presence of ~200 μl acid-washed glass beads for a total of 5 min at 4°C (10 rounds of vortexing for 30 s, followed by resting on ice for 30 s). Remaining non-lysed cells and insoluble debris were pelleted by centrifugation at 16,000 x g for 5 min at 4°C, and the supernatant was collected for subsequent analysis. Equal amounts of total protein (20 μg, as determined by Pierce BCA protein assay kit) were then assayed for alkaline phosphatase activity. Protein samples in a volume of 100 μl were mixed with 400 µl of pre-warmed assay buffer (250 mM Tris-HCl (pH 8.5), 10 mM MgSO4, 10 µM ZnSO4, 1% Triton X-100) containing 1.5 mM p-nitrophenyl phosphate (Sigma-Aldrich) and incubated for 10 min at 37°C. Reactions were stopped by addition of 500 µl of 1 M glycine-KOH (pH 11.0), and the absorbance of p-nitrophenol at 400 nm was measured using a SmartSpec 3000 UV/Vis spectrophotometer (Bio-Rad, Hercules, CA). Following subtraction of the appropriate enzyme and substrate only controls, specific alkaline phosphatase activity was calculated from a p-nitrophenol standard curve. Three technical replicates were performed for each sample, and the data from three independent biological replicates was averaged and normalized to the activity observed at the 0 hr time point.
 
-## Confocal fluorescence microscopy
+### Confocal fluorescence microscopy
 
 Yeast cells were visualized by confocal laser scanning microscopy using a Nikon A1 microscope with a 100X oil objective (numerical aperture 1.46). Excitation was at 488 or 543 nm, and emission was collected from 500 to 530 nm or 565 to 615 nm, for GFP and mCherry, respectively. To prevent cell movement, all cover slips were first washed with 1 M NaOH, rinsed with sterile distilled H2O, and coated with a 2 mg/ml solution of concanavalin A (in H2O) for 10 min. The slips were then air-dried, rinsed with sterile distilled H2O, left to dry again, and stored at room temperature for up to 2 months before use. To avoid auto-fluorescence from the YPGA medium, cells were first pelleted by centrifugation at 1000 x g for 1 min, and then re-suspended in synthetic complete medium lacking appropriate nutrients prior to imaging. For imaging of Arabidopsis roots, seedlings of the indicated genotypes were grown in 5 ml liquid GM medium (3.2 g/l Gamborg’s B5 basal salts with minimal organics, 1% (w/v) sucrose, 0.05% (w/v) MES (pH 5.7)) at 21°C to 23°C under continuous white light for 5 days with gentle shaking (90 rpm), before being transferred to fresh medium containing or lacking 1 μM concanamycin A (Santa Cruz Biotechnology, Dallas, TX) and being subjected to either nitrogen and/or fixed-carbon starvation as previously described (Thompson et al., 2005; Marshall et al., 2015). Root cells within the lower elongation zone were then visualized as above, using 20X or 40X oil objectives (numerical apertures 0.75 and 1.30, respectively). All confocal images were scanned in single-track mode, except for the co-localisation studies, when GFP and mCherry signals were instead detected simultaneously in multi-track mode. Images were processed using Adobe Photoshop CC, before conversion to TIFF files for use in the Figures. Within each Figure, all images were captured using identical microscope settings.
 
-## Quantitative real-time PCR
+### Quantitative real-time PCR
 
 Yeast cell cultures (15 ml) grown in YPGA medium were subjected to nitrogen and/or carbon starvation as described above, harvested, and 2 × 107 cells were digested for 1 hr at 30°C with 100 U of lyticase in 100 µl Y1 buffer (1 M sorbitol, 100 mM EDTA, 0.1% (v/v) β-mercaptoethanol (pH 7.4)). Quantitative real-time PCR was performed exactly as previously described (Marshall et al., 2016) using a LightCycler 480 in combination with SYBR Green I master mix (Roche Diagnostics; Basel, Switzerland) and transcript-specific primers (see Supplementary file 1-Table S3). Relative transcript abundance was determined by the comparative threshold cycle method (Pfaffl, 2001), using the ALG9 and TFC1 reference genes as internal controls (Teste et al., 2009; Llanos et al., 2015). All data were normalized to non-starved wild-type cells.
 
-## Proteasome affinity purifications
+### Proteasome affinity purifications
 
 26S holo-proteasomes or the CP or RP sub-complexes were affinity purified essentially as previously described (Leggett et al., 2005), with minor modifications. Yeast strains in which the Pre1 or Rpn11 subunits had been genetically replaced by variants tagged with Protein A were grown overnight at 30°C in 50 ml YPGA medium, diluted in 500 ml YPGA medium to an OD600 of 0.1, grown for a further 2 to 3 hr until an OD600 of approximately 0.5 was reached, then subjected to nitrogen or carbon starvation for the indicated times. Cells were then pelleted by centrifugation at 4000 x g for 20 min at 4°C, washed once in sterile distilled H2O, pelleted again, and immediately frozen in liquid nitrogen until use. Frozen cell pellets were ground to a fine powder at liquid nitrogen temperatures for 15 min each, rehydrated with 1 vol of proteasome lysis buffer (50 mM Tris-HCl (pH 7.5), 5 mM MgCl2, 1 mM EDTA, 10% (v/v) glycerol, with 2 mM ATP, 2 mM PMSF, 10 mM 2-chloroiodoacetamide, 10 mM N-ethylmaleimide, 10 mM sodium metabisulphite, 1 mM benzamidine, 10 µg/ml pepstatin A, 1 µg/ml antipain and 1X protease inhibitor cocktail (Sigma-Aldrich) added immediately before use), and proteins were extracted on ice for 20 min. Extracts were filtered through two layers of Miracloth (Calbiochem, San Diego, CA), and clarified at 30,000 x g for 20 min at 4°C. Equal volumes of supernatant were then incubated with gentle rotation for 2 hr at 4°C with 100 µl of rabbit whole molecule IgG antigen affinity gel (MP Biomedicals, Santa Ana, CA) pre-equilibrated in lysis buffer.
 
 Samples were then applied to a 12 ml Polyprep chromatography column (Bio-Rad), and the collected beads were washed three times with 2 ml of proteasome wash buffer (50 mM Tris-HCl (pH 7.5), 50 mM NaCl, 5 mM MgCl2, 1 mM EDTA, 2 mM ATP, 10% (v/v) glycerol), and twice with 1 ml of tobacco etch virus (TEV) protease buffer (50 mM Tris-HCl (pH 7.5), 5 mM MgCl2, 1 mM EDTA, 2 mM ATP, 1 mM DTT, 10% (v/v) glycerol). Bound proteins were eluted by incubating the beads for 1 hr at 30°C with 300 µl of TEV protease buffer containing 20 ng/µl recombinant 6His-TEV, then collecting the flow through from the column. The remaining 6His-TEV was removed by addition of 50 µl nickel-nitrilotriacetic acid (Ni-NTA)-agarose beads (Qiagen, Germantown, MD), which were pre-equilibrated in TEV protease buffer containing 40 mM imidazole (resulting in a final concentration of 10 mM), and incubating for 1 hr at 4°C with gentle rotation. The beads were pelleted by centrifugation at 5000 x g for 1 min at 4°C, and the supernatant containing purified 26S proteasomes was removed and analyzed by SDS-PAGE followed by silver staining or immunoblotting, as described above.
 
-## Proteasome activity assays
+### Proteasome activity assays
 
 To assay 26S proteasome activity, wild-type or rpn5ΔC cells were grown in a 50 ml culture, subjected to nitrogen and/or carbon starvation treatment as described above, and cell aliquots corresponding to 5.0 OD600 units were sampled at the indicated times. Frozen cell pellets were ground to a fine powder at liquid nitrogen temperatures for 5 min each, rehydrated with 1 vol of activity assay lysis buffer (50 mM Tris-HCl (pH 7.5), 5 mM MgCl2, 1 mM EDTA, 10% (v/v) glycerol), filtered through two layers of Miracloth (Calbiochem) and clarified at 30,000 × g for 20 min at 4°C. Supernatants were then made 10% (w/v) in PEG 8000 and incubated for 30 min at 4°C with moderate stirring. The resulting precipitate was collected by centrifugation at 12,000 × g for 15 min at 4°C and re-suspended in 500 μl of lysis buffer. The total protein concentration of each sample was determined by Pierce BCA protein assay kit (Thermo Fisher Scientific), and equal amounts of protein (10 μg) from each sample were assayed for proteasome activity in the presence or absence of 80 μM MG132. Protein samples in a volume of 20 μl were incubated for 20 min at 37°C in 1 ml of assay buffer (50 mM Tris-HCl (pH 7.0), 2 mM MgCl2, with 1 mM ATP and 2 mM 2-mercaptoethanol added immediately before use) containing 100 μM of the fluorogenic substrates N-succinyl-leucyl-leucyl-valyl-tyrosyl-7-amino-4-methylcoumarin (Suc-LLVY-amc; Sigma-Aldrich) or (7-methoxycoumarin-4-yl)-acetyl-alanyl-lysyl-valyl-tyrosyl-prolyl-tyrosyl-prolyl-methionyl-glutamyl-(2,4-dinitrophenyl-(2,3-diaminopropionic acid))-amide (Mca-AKVYPYPME-Dpa(Dnp)-amide, also known as LFP; GenScript, Piscataway, NJ; Smith et al., 2005). Reactions were quenched by the addition of 1 ml of 80 mM sodium acetate (pH 4.3), and the resulting fluorescence was monitored using a TKO 100 fluorometer (Hoefer Scientific Instruments, Holliston, MA), with an excitation wavelength of 365 nm and an emission wavelength of 460 nm.
 
-## Arabidopsis materials and growth conditions
+### Arabidopsis materials and growth conditions
 
 Unless otherwise noted, A. thaliana seeds (ecotype Columbia-0) were vapor-phase sterilized, stratified at 4°C for 3 to 4 days, and germinated on solid GM medium (3.2 g/l Gamborg’s B5 basal salts with minimal organics, 1% (w/v) sucrose, 0.05% (w/v) MES (pH 5.7), 0.7% (w/v) agar) at 21°C to 23°C under a long-day photoperiod (16 hr light (75 to 100 μmol/m2/sec)/8 hr darkness). When required, after 2 to 3 weeks the seedlings were transferred onto soil (mixed in a 1:1 ratio with organic Coco Coir planting mixture, then supplemented before use with 2 g/l Peters 20-20-20 fertilizer, 80 mg/l Ca(NO3)2 and 80 mg/l MgSO4) and again grown at 21°C to 23°C under a long-day photoperiod until completion of their lifecycle. The pa200-2, pa200-3 and atg7-2 T-DNA insertion mutants (SALK_095870, SALK_070184 and GABI_655_B06, respectively), and the 35S:GFP-ATG8a, PAG1:PAG1-GFP pag1-1 and RPN5a:RPN5a-GFP rpn5a-2 reporter lines, were as previously described (Thompson et al., 2005; Chung et al., 2010; Book et al., 2010; Marshall et al., 2015). The T-DNA insertion mutants were confirmed by genomic PCR using 5ʹ and 3ʹ gene-specific primers (LP and RP, respectively) in conjunction with appropriate T-DNA left border-specific primers (BP). All oligonucleotide primers used in this study are listed in Supplementary file 1-Table S3. The PAG1-GFP and RPN5a-GFP reporters were introgressed into the pa200-2 and pa200-3 mutants by standard crossing.
 
 For chemical or starvation treatments, seedlings were grown in liquid GM medium at 21°C to 23°C under continuous light with gentle shaking (90 rpm), with the medium replenished every 3 days where required. To stabilize autophagic bodies in the vacuole, fresh medium was supplemented with 1 μM ConA for 16 hr. For nitrogen starvation, seedlings were transferred to MS medium lacking nitrogen (MS basal salt micronutrient solution (Sigma-Aldrich) supplemented with 3 mM CaCl2, 1.5 mM MgSO4, 1.5 mM KH2PO4, 5 mM KCl, 1% (w/v) sucrose, 0.05% (w/v) MES (pH 5.7)) for the indicated times. For fixed-carbon starvation, the seedlings were transferred to liquid GM medium lacking sucrose, and incubated in the dark (to prevent carbon fixation by photosynthesis), while simultaneous nitrogen and fixed carbon starvation utilised MS medium lacking nitrogen and sucrose together with incubation in the dark. For all starvation treatments, control and treated seedlings were washed three times in appropriate medium prior to commencing starvation and, following treatment, all tissue was harvested, immediately frozen in liquid nitrogen and stored at −80°C until use.
 
-## Statistical analyses
+### Statistical analyses
 
 All datasets were statistically analyzed using one-way analysis of variance (ANOVA), followed by Tukey’s post-hoc tests to identify significantly different data points. At least three biological replicates were performed in all cases, unless otherwise indicated in the Figure Legend.

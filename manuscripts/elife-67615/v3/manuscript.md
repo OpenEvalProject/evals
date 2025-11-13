@@ -31,11 +31,41 @@ We addressed this limitation by applying a hybrid approach to integrate SV disco
 
 ## Results
 
-## Graph genotyping of structural variation
+### Graph genotyping of structural variation
 
 To assess the role of SVs in human adaptive evolution, we sought to combine the accuracy of long-read sequencing with the scale and population diversity of short-read sequencing data. To this end, we reanalyzed long-read sequencing data of 15 individuals from five continents (Audano et al., 2019) to discover a set of 107,866 SVs (Figure 1—figure supplement 1). The diversity of the long-read sample set (sample ancestries: three African, two American, three East Asian, two European, two South Asian, two hydatidiform moles [likely European]) enables SV discovery across the five continental superpopulations of 1KGP. We found that 89,979 (83.4%) of the long-read-discovered variants, including 30,229 (72.3%) common SVs (allele frequency [AF] ≥ 0.05), are not represented in sets of SVs discovered with short-read sequencing by 1KGP or the Human Genome Diversity Project (HGDP) (Almarri et al., 2020; Sudmant et al., 2015). Despite the much smaller size of the long-read sample set, we were also able to rediscover 66.0% and 17.7% of common SVs found with short reads in the 1KGP and HGDP datasets, respectively, in agreement with results reported in previous studies (Zhao et al., 2021; Figure 1—figure supplement 2 and Figure 1—figure supplement 3; see Materials and methods). We expect that the SVs unique to the short-read datasets reflect both differences in the discovery sample set (i.e., many of the long-read sequenced individuals are in 1KGP, while none are in HGDP) and high rates of false positives in short-read SV detection (Nattestad et al., 2018). We additionally discovered 2.3× and 3.5× more insertions than 1KGP and HGDP, respectively, with an improved insertion-to-deletion ratio (1.46 in the long-read dataset; 0.40 in 1KGP; 0.37 in HGDP). The dearth of insertions in the short-read SV sets reflects the challenge of insertion calling with short reads, which have difficulty mapping sequences not present in the reference genome (Aganezov et al., 2020), while the excess of insertions among long-read SVs reflects a known variant calling bias caused by missing sequences (e.g., collapsed tandem repeats) in the GRCh38 reference (Aganezov et al., 2021).
 
 We then used the graph genotyping software Paragraph (Chen et al., 2019) to genotype this set of long-read discovered SVs in 2504 high-coverage (30×) short-read-sequenced samples from 1KGP (Byrska-Bishop et al., 2021; Figure 1A; see Materials and methods). Results from benchmarking, using ground truth SV data from the Genome in a Bottle Consortium (Zook et al., 2020), show that among both graph-based and non-graph-based SV genotyping tools, Paragraph consistently attains the best balance of precision and recall for both insertions and deletions (Chen et al., 2019; Hickey et al., 2020). Paragraph averages precision and recall rates of 0.72 and 0.70, respectively, across all SV types and genomic regions, and an average precision and recall of 0.86 and 0.79 when repeat regions are excluded (Hickey et al., 2020), underscoring its effectiveness for SV genotyping. Paragraph achieves such accuracy by generating graph representations of SV loci, which include diverging paths for known alternative alleles such as SVs. Short reads are aligned to the graph along the path of best fit, facilitating genotyping even in structurally complex and repetitive regions (Figure 1B). Informed by a large catalog of candidate SV alleles discovered by long-read sequencing, graph genotyping thus permits the study of variants that would be difficult or impossible to discover with short-read data alone (Chen et al., 2019; Hickey et al., 2020; Sibbesen et al., 2018; Sirén et al., 2021).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig1-v3.jpg)
+
+**Figure 1.:** (A) Genotyping of SVs was performed using a graph-based approach that represents the reference and alternative alleles of known SVs as edges. The SVs used for graph construction were originally identified from long-read sequencing of 15 individuals (Audano et al., 2019). (B) At candidate SV loci, samples sequenced with short reads are aligned to the graph along the path of best fit, and individuals are genotyped as heterozygous (middle), homozygous for the reference allele (right), or homozygous for the alternative allele (not depicted). We applied this method to the 1KGP dataset to generate population-scale SV genotypes. (C) Allele frequency spectra of SVs genotyped with Paragraph. The left-most bin represents SVs where the alternative allele is absent from the 1KGP sample (AF = 0). Samples are stratified by their 1KGP superpopulation.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** Coloring indicates the number of SVs in each non-overlapping 1 Mb window. Gray rectangles represent centromeres.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** SVs are grouped by SV type (deletion, insertion) and then by allele frequency. AFs of the long-read discovered SVs are calculated from their genotypes in 1KGP.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** SVs are grouped by SV type (deletion, insertion) and then by allele frequency. AFs of the long-read discovered SVs are calculated from their genotypes in 1KGP.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig1-figsupp4-v3.jpg)
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** Variants with a frequency of 0 are excluded from the histograms for consistency with the comparison in the main text regarding segregating variation.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig1-figsupp6-v3.jpg)
+
+**Figure 1—figure supplement 6.:** Variants with a frequency of 0 are excluded from the heatmaps for consistency with the comparison in the main text regarding segregating variation.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig1-figsupp7-v3.jpg)
+
+**Figure 1—figure supplement 7.:** LD was calculated within each of the 26 populations of 1KGP. We then determined the maximum LD of every SV with any of the nearest 100 variants, stratifying by superpopulation. The observed peaks at ~0.5, ~0.33, ~0.25, etc. are caused by the mathematical properties of r2, which has maximum values that depend on the allele frequencies of each variant in the tested pair (VanLiere and Rosenberg, 2008; see Materials and methods).
 
 As quality control, we filtered the resulting data based on genotyping rates and adherence to Hardy–Weinberg equilibrium, in accordance with Chen et al., 2019 (see Materials and methods). Specifically, we removed SVs that were not successfully genotyped in ≥50% of samples, as well as SVs that violated one-sided Hardy–Weinberg equilibrium expectations (excess of heterozygotes) in more than half of the 1KGP populations. The latter scenario, whereby nearly all individuals are genotyped as heterozygous, is a common artifact caused by slightly divergent repetitive sequences that are falsely interpreted as alternative alleles at a single locus (Graffelman et al., 2017). These filtering steps removed 15,580 SVs, leaving 92,286 variants for downstream analysis.
 
@@ -45,15 +75,27 @@ The frequency spectrum of segregating variation was meanwhile shaped by an ascer
 
 We next sought to test whether different classes of SVs exhibited differences in allele frequencies as a potential consequence of purifying selection. Among SVs that were polymorphic within the 1KGP sample, we observed a negative correlation between SV length and minor allele frequency (Kendall’s τ = –0.140, p-value < 1 × 10–10), consistent with selection against longer SVs (Figure 1—figure supplement 6). We similarly observed that deletions segregated at lower average minor allele frequencies than insertions (β = –0.555, p-value < 1 ×10–10).
 
-## Quantifying linkage disequilibrium with known SNPs and short indels
+### Quantifying linkage disequilibrium with known SNPs and short indels
 
 One intriguing question regards the extent to which SV genotypes are correlated with those of known SNPs and indels, which has implications for the novelty of any potential discoveries based on the SV data. To address this question, we quantified linkage disequilibrium (LD) between the catalog of long-read discovered SVs and known SNPs and short indels from 1KGP. For each of the 26 1KGP populations, we computed the maximum observed LD between each SV and the nearest 100 variants within a 1 Mb window. Depending on the population subject to measurement, 36–41% of segregating SVs were in strong LD (r2 > 0.8) with any known SNP or short indel, and 52–57% were in moderate LD (r2 > 0.5) with one of these variants (Figure 1—figure supplement 7). These observations of maximum LD with SNPs are slightly lower than those computed by Jakubosky et al., 2020a, which may reflect our ability to discover SVs in regions that are less accessible to short reads. Levels of LD were lowest for African populations, in accordance with known patterns of haplotype structure (Conrad et al., 2006). As with SNPs, these lower levels of LD suggest that the accuracy of SV genotype imputation based on known SNPs will be lowest in African populations, but that resolution for fine-mapping SVs that are potentially causal in phenotypic associations will also be highest (Wojcik et al., 2019).
 
 We emphasize that our LD observations are strongly affected by the challenge of small variant discovery and genotyping in repetitive regions of the genome that are enriched for SVs. Specifically, 50,917 of all SVs (47.2%) intersect at least partially with one or more genomic intervals deemed inaccessible based on the 1KGP pilot mask, and 5214 SVs (4.8%) occur within regions of the genome identified as problematic by the ENCODE Consortium (Amemiya et al., 2019). Nevertheless, LD with known SNPs and indels is a meaningful metric for our study, because it quantifies the extent to which SVs represent independent and unexplored variation relative to previous evolutionary studies. Low observed levels of LD between a substantial fraction of SVs and known variants presents an opportunity to discover novel functional associations and signatures of adaptation at loci poorly tagged by easily genotyped markers.
 
-## Expression quantitative trait locus (eQTL) mapping
+### Expression quantitative trait locus (eQTL) mapping
 
 Seeking to first test the functional impacts of common structural variation, we intersected the SV genotype data with RNA-seq data from an overlapping set of 447 samples from the Geuvadis Consortium, which was generated from lymphoblastoid cell lines (LCLs) derived from individuals from four European and one African population (Lappalainen et al., 2013). We tested for associations between levels of gene expression and genotypes for SVs within 1 Mb from the transcription start site (TSS). After filtering the data on genotyping call rate, minor allele frequency, and gene expression level (see Materials and methods), we identified a total of 1121 SV-gene pairs with significant gene expression associations at a 10% false discovery rate (FDR; Figure 2A), broadly consistent with expectations from previous eQTL studies when scaled to the number of tested SVs (Chiang et al., 2017). SVs with significant impacts on expression tended to occur near the genes that they regulate, with 62% of significant SV eQTLs occurring within 100 kb of the corresponding TSS (Figure 2B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig2-v3.jpg)
+
+**Figure 2.:** We used RNA-seq data from the Geuvadis Consortium (Lappalainen et al., 2013), obtained from LCLs derived from individuals from four European and one African population of the 1KGP dataset, to test for associations between SV genotypes and gene expression. SV-eQTL pairs that were significant at a 10% FDR are depicted in purple. (A) Q–Q plot of permutation p-values for all SV-gene pairs tested. (B) Volcano plot of eQTLs and the estimated effect of the alternative allele on expression (β). (C) Distribution of the distance of significant SV eQTLs from the transcription start site (TSS) of their associated genes. (D) Enrichment or depletion of expression associations for SVs that overlap various ChromHMM chromatin state annotations from the Roadmap Epigenomics Project (GM12878 Lymphoblastoid Cells). Chromatin states with ≤0.1% genome-wide representation were omitted for visual clarity.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Results for deletions, which in eight of nine cases exhibit negative relationships with expression, consistent with direct dosage effects. (B) Results for insertions, which in two cases exhibit negative relationships, but one case exhibits a positive relationship.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** Loci are colored based on whether the originally associated SV itself occurred within the 90% credible causal set (CCS).
 
 Top gene expression associations include several genes in the HLA complex (HLA-DQB2, HLA-DQA2, HLA-DRB6, and HLA-P), as well as ERAP2, which encodes an endoplasmic reticulum aminopeptidase that processes HLA ligands to lengths suitable for their binding (Figure 2C). While gene expression data from LCLs provides a limited snapshot of the functional implications of SVs, it is notable that these immune loci also exhibit strong gene expression diversity mediated by genetic variation.
 
@@ -61,15 +103,31 @@ We next investigated the mechanisms through which SV eQTLs may impact gene expre
 
 Lastly, we performed fine-mapping of SV and SNP eQTLs with CAVIAR (Hormozdiari et al., 2014) with the goal of homing in on candidate causal variants at SV eQTL loci. Of the 1121 loci with a significant SV eQTL, 345 (30.8%) contained the SV within the 90% credible causal set. While the median size of the credible causal sets was 19 variants, we identified 15 loci where an SV occurred among a credible causal set of five or fewer variants (Figure 2—figure supplement 2). These include a 37 Kb deletion (27005_CHM13_del) that is among just two variants in a credible causal set for expression effects on MIF-AS1, a lncRNA partially encompassed by the deletion. The expression of this lncRNA has been previously associated with breast and gastric cancer proliferation (Ding et al., 2019; Li et al., 2018). Similarly, a 3 kb insertion (20290_HX1_ins) is among two variants in a credible causal set for expression effects on CSF2RB, the dysfunction of which has been associated with pulmonary disease (Suzuki et al., 2011). While this approach offers a roadmap for future fine-mapping studies investigating the relative impacts of different variant classes on gene expression, we caution that the present analysis may still underestimate the potential causal role of SVs, due to a modestly higher error rate for genotyping of SVs versus SNPs (Chen et al., 2019).
 
-## Admixture-aware scan for signatures of local adaptation
+### Admixture-aware scan for signatures of local adaptation
 
 We next sought to use our set of population-scale SV genotypes to search for SVs with signatures of local adaptation. Such locus-specific scans for local adaptation can be broadly classified into frequency differentiation-based and LD-based approaches (Vitti et al., 2013). While powerful, LD-based methods generally require haplotype phasing and/or dense and accurate genotyping – a requirement that is infeasible for many of the complex and repetitive regions of the genome investigated in our study. In contrast, frequency differentiation-based approaches can be applied to individual loci and are based on the logic that positive selection tends to cause a particular allele to increase in frequency only in the population(s) where it became established and was advantageous. However, a limitation of these methods is the requirement that individuals are grouped into pre-defined populations that may not reflect genetic patterns or the substantial admixture exhibited by many human populations.
 
 To overcome these limitations, we used Ohana (Cheng et al., 2017; Ilardo et al., 2018; Cheng et al., 2019), a maximum likelihood-based method that models individuals as possessing ancestry from combinations of k ancestry components, inspired by related methods (Alexander et al., 2009; Falush et al., 2003). The method then tests whether individual variants adhere to this genome-wide null model, or are better explained by an alternative model in which frequencies are allowed to vary in one or more populations by consequence of local adaptation. Following the precedent set by 1KGP (The 1000 Genomes Project Consortium, 2015), we modeled individual genomes as combinations of eight ancestry components, replicating known patterns of population structure at continental scales as well as prominent signatures of admixture within a subset of populations (e.g., African ancestry in Southwest US [ASW] and admixed American populations [AMR]; Figure 3A). The distribution of ancestry components across populations was qualitatively unaffected by the choice of k (Figure 3—figure supplement 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig3-v3.jpg)
+
+**Figure 3.:** (A) To conduct an admixture-aware scan for local adaptation, we used Ohana (Cheng et al., 2017; Ilardo et al., 2018) to infer genome-wide patterns of ancestry in the 1KGP samples. This method models each individual as a combination of k ancestry components and then searches for evidence of local adaptation on these component lineages. Admixture proportions (k = 8) for all samples in the 1KGP dataset, grouped by population. Vertical bars represent individual genomes. (B) Using Ohana, we searched for evidence of local adaptation by testing whether the allele frequencies of individual variants were better explained by the genome-wide covariance matrix, or by an alternative covariance matrix where allele frequencies were allowed to vary in one ancestry component. The likelihood ratio statistic (LRS) reflects the relative support for the latter selection hypothesis. For each ancestry component, SVs with LRS > 32 are colored by their maximum linkage disequilibrium (r2) with any known SNP in the corresponding 1KGP superpopulation.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig3-figsupp1-v3.jpg)
+
+**Figure 3—figure supplement 1.:** Admixture was inferred with k = 5, 8 (used in our study), 10, and 16 ancestry components. Vertical bars represent individual samples and are grouped by population.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig3-figsupp2-v3.jpg)
+
+**Figure 3—figure supplement 2.:** SNPs and short indels are colored in black, while SVs are indicated with red.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig3-figsupp3-v3.jpg)
+
+**Figure 3—figure supplement 3.:** This SV reaches high allele frequencies in ancestry component 4, corresponding to the Peruvian (PEL), Mexican (MXL), and Colombian (CLM) populations of 1KGP. SNPs and short indels are colored based on their maximum pairwise LD with the target SV among the PEL, MXL, and CLM populations, while the target SV itself is indicated with red.
+
 Across all ancestry components, we identified 220 unique SVs exhibiting significant deviation from genome-wide patterns of allele frequency differentiation (99.9th percentile of matched distribution for SNPs and short indels; see Materials and methods; Figure 3B; Supplementary file 1; Figure 3—figure supplement 1). These included 139 SVs with coordinates overlapping with annotated genes, of which 13 intersected with annotated exons. Seven SVs at these frequency-differentiated loci were also significant eQTLs based on our previous analysis of the Geuvadis LCL data (Supplementary file 2). Through comparison to results for SNPs and indels, we found that 88 of the outlier SVs we identified were among the top 10 most frequency-differentiated variants within a 1 Mb window, suggesting that these represent examples where SVs may be causal targets of selection at adaptive loci. Finally, only 119 (54.1%) highly differentiated SVs possessed strong LD with known SNPs or short indels (r2 > 0.8; Figure 1—figure supplement 2), indicating that many of these loci constitute novel candidate targets of selection that may have been missed by previous scans.
 
-## Known and novel targets of local adaptation
+### Known and novel targets of local adaptation
 
 Notable examples of highly differentiated loci included rs333, the Δ32 allele of the chemokine receptor CCR5, which is known to confer resistance to HIV infection and progression (Dean et al., 1996). Among our results, this deletion polymorphism is the 14th most frequency-differentiated SV with respect to ancestry component 3, which is highly represented in Europe. The CCR5-Δ32 allele segregates at moderate frequencies in European populations (MAF = 10.9%) and achieves its highest frequency of 15.6% in the Finnish population, but segregates at low frequencies elsewhere. The case for historical positive selection at this locus has been contentious, with initial studies citing a geographic cline in allele frequencies and strong LD with adjacent microsatellite markers (Stephens et al., 1998), potentially driven by epidemics such as the bubonic plague or smallpox (Galvani and Slatkin, 2003). However, subsequent studies argued that patterns of long-range LD (Sabeti et al., 2005) and temporal allele frequency changes based on ancient DNA (aDNA) samples (Bollback et al., 2008) could not exclude models of neutral evolution.
 
@@ -79,15 +137,51 @@ We also identified a 2.8 kb insertion in an intron of CLEC16A, inferred to be un
 
 In rare cases, multiple SVs in LD with one another captured the same underlying signature of frequency differentiation. One such example from South Asian populations (ancestry component 5) involved a linked intronic insertion and deletion in the cellular growth and morphogenesis related gene CSNK1G1. In this case, the reference genome carries the global minor allele, such that the signature of local adaptation presents as a lower frequency of the alternative allele in South Asian populations (60–71% for 22980_HG00514_ins; 60%–72% for 25014_HG02106_del) compared to other global populations (91% and 92%, respectively).
 
-## Extreme signatures of adaptation at the immunoglobulin locus in southeast Asian populations
+### Extreme signatures of adaptation at the immunoglobulin locus in southeast Asian populations
 
 The SV with the strongest evidence of local adaptation across all populations was an insertion polymorphism in an intron of IGHG4, which codes for a constant domain of the immunoglobulin heavy chain. These heavy chains pair with light chains, the latter of which include a domain composed of variable (V), diversity (D), and joining (J) segments. Complementing their substantial germline variation, V(D)J loci experience somatic recombination and hypermutation to generate vast antibody repertoires – the defining feature of the adaptive immune system (Watson et al., 2017). This insertion polymorphism identified by our scan exhibits strong allele frequency differentiation in ancestry component 2, which is highly represented in the Chinese Dai in Xishuangbanna, China (CDX) and Kinh in Ho Chi Minh City, Vietnam (KHV) populations, where it achieves frequencies of 88% and 65%, respectively, while remaining at much lower allele frequencies in other global populations (Figure 4A,B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig4-v3.jpg)
+
+**Figure 4.:** (A) Local analysis of likelihood ratio statistics (LRS) in the region near the 33 bp insertion (red point) reveals a 325 kb haplotype encompassing 94 SNPs with strong allele frequency differentiation within ancestry component 2. Points where the alternative allele matches an allele observed in the Chagryskaya Neanderthal genome but at a frequency of 1% or less in African populations are highlighted in purple. (B) Individual haplotypes defined by the highly differentiated SNPs (LRS > 450). Four archaic hominin genomes are plotted at the top, while 30 randomly sampled haplotypes from each of 6 populations from 1KGP are plotted below. Archaic hominins samples are colored according to whether they possess more than one aligned read supporting the alternative allele at a given site. ESN refers to the Esan in Nigeria population of 1KGP. Other 1KGP population codes are provided in the main text.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig4-figsupp1-v3.jpg)
+
+**Figure 4—figure supplement 1.:** Three samples are depicted as representative of each genotype class (homozygous reference, heterozygous, homozygous alternative). Depth of coverage is plotted in upper tracks, while corresponding read alignments are plotted below. Soft-clipped portions of reads were removed to assist visualization.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig4-figsupp2-v3.jpg)
+
+**Figure 4—figure supplement 2.:** For the 215 most frequency differentiated SVs in our dataset, we calculated LD between the SV and SNPs defining introgressed haplotypes called by Sprime. LD calculations for each SV were restricted to one 1KGP population, chosen based on the ancestry component where the SV was found to exhibit branch-specific differentiation. We identified 26 candidate adaptively introgressed SVs, which had r2 > 0.5 with an introgressed SNP and were at low frequency (AF < 0.01) within African populations (excluding admixed ASW and ACB populations).
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig4-figsupp3-v3.jpg)
+
+**Figure 4—figure supplement 3.:** The top four rows depict the proportion of aligned reads supporting the alternative allele at each SNP queried for the archaic aDNA samples. The remainder of rows depict the alternate allele frequency of each SNP within each of the 26 populations of 1KGP. Analysis was restricted to SNPs that are rare (MAF < 0.05) among African populations, but common within one or more Eurasian populations (MAF > 0.3).
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig4-figsupp4-v3.jpg)
+
+**Figure 4—figure supplement 4.:** The bottom plot, identical to Figure 4A, shows likelihood ratio statistics (LRS) in the adaptive haplotype around the 33 bp IGHG4 insertion (red dot). The top inset shows the Altai Neanderthal mask (gray), used by Browning et al., 2018 to filter out sites with low-coverage or mapping quality. Positions of the two outlier SVs we identify in this region are represented by red lines. An introgressed SNP highlighted by Browning et al., 2018 is represented by the blue line.
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig4-figsupp5-v3.jpg)
+
+**Figure 4—figure supplement 5.:** Histograms show counts of a 48 bp sequence that is diagnostic of the 33 bp IGHG4 insertion per individual across the 1KGP dataset, stratified by population. Inset table depicts the counts of the diagnostic sequence in three high-coverage Neanderthal genomes and a high-coverage Denisovan genome.
+
+![Figure 4—figure supplement 6.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig4-figsupp6-v3.jpg)
+
+**Figure 4—figure supplement 6.:** For all variants with likelihood ratio statistic (LRS) > 450 at the IGH locus, we determined whether these variants fell on Sprime-inferred introgressed haplotypes in individuals of each of five 1KGP populations. Gray bars represent variants that were not identified by Sprime as introgressed, including short indels that were not included in the analysis by Browning et al., 2018. Cells are shaded black if the haplotype possesses the putative archaic allele at that variant, and white otherwise. The red bars represent two SVs with the highest LRS in the study.
+
+![Figure 4—figure supplement 7.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig4-figsupp7-v3.jpg)
+
+**Figure 4—figure supplement 7.:** We calculated pairwise LD between all variants with likelihood ratio statistic (LRS) >450 at the IGH locus, including the two SVs with the highest LRS in our study (22231_HG02059_del, 22237_HG02059_ins; red dots in the inset plot). Visualization of this LD matrix revealed at least four distinct blocks of LD, represented as colored rectangles below the LD heatmap and in the inset plot.
+
+![Figure 4—figure supplement 8.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig4-figsupp8-v3.jpg)
+
+**Figure 4—figure supplement 8.:** Allele frequencies of rs150526114, a SNP that tags the IGH haplotype and IGHG4 insertion, based on data from the Human Genome Diversity Project (HGDP) and the Simons Genome Diversity Project (SGDP).
 
 The SV was originally reported as a 34 bp insertion based on long-read sequencing of the genome of a Vietnamese individual (HG02059) (Audano et al., 2019). Based on realignment to a modified version of the reference genome that includes the alternative allele, we revised the sequence of this insertion to 33 bp, but found that it is well supported by patterns of coverage, split reads, and soft clipped alignments at the SV breakpoints (Figure 4—figure supplement 1). The sequence of the insertion itself is repetitive within the human reference genome, with two identical copies of the sequence occurring ~44 and ~117 kb downstream, respectively, also within the IGH gene cluster. This SV is included among sets of indels called by gnomAD (Karczewski et al., 2020), 1KGP, and HGDP, with a slightly altered position and insertion sequence. However, it exhibits a highly skewed allele balance (centered on 0.2, in contrast to the expectation of 0.5) – a symptom of reference bias in read mapping (Chen et al., 2019) – as well as low genotyping rates (31% for CDX in 1KGP, compared with 85% in our study). These biases result in lower estimates of the insertion’s allele frequency in East Asian populations (AF = 0.73 in CDX) and underscore the technical challenges of genotyping at this locus with traditional short-read approaches (Chin et al., 2020; Zhang et al., 2021).
 
 Interestingly, the second strongest signature of adaptation across all populations traced to a nearby 135 bp deletion, which overlaps with two transcription factor binding sites for IGHE, another component of the constant region of immunoglobulin heavy chains. This deletion, which lies only 33 kb upstream of the IGHG4 insertion (Figure 4A), again achieves high frequencies in the CDX and KHV populations (70% and 54%, respectively) but segregates at low frequencies in most other global populations. Despite their genomic proximity and similar patterns of frequency differentiation, these two SVs exhibit only modest levels of LD (r2 = 0.17), likely reflecting recombination occurring during or after the episode of selection.
 
-## Evidence of Neanderthal-introgressed origin of the high-frequency IGH haplotype
+### Evidence of Neanderthal-introgressed origin of the high-frequency IGH haplotype
 
 Approximately 2% of the genome of all non-African individuals traces to admixture with Neanderthals between 47 and 65 kya, while Oceanian populations (and Asian populations to a lesser extent) also possess sequences introgressed from Denisovans (Green et al., 2010; Sankararaman et al., 2012; Sankararaman et al., 2016; Vernot et al., 2016). Introgressed alleles, including some SVs (Almarri et al., 2020; Hsieh et al., 2019), are thought to have conferred both beneficial and deleterious effects on modern human populations, especially with respect to immune-related phenotypes (Rotival and Quintana-Murci, 2020). Motivated by these findings, we tested our set of highly differentiated SVs for evidence of archaic hominin introgression. Using results from the method Sprime (Browning et al., 2018), which leverages patterns of divergence and haplotype structure to classify archaic introgressed sequences, we identified SVs that segregate in LD with putative introgressed SNPs (see Materials and methods). Of the 220 highly differentiated SVs, 26 (12%) exhibited moderate LD (r2 > 0.5) with putative introgressed haplotypes, while simultaneously exhibiting low allele frequencies (AF < 0.01) within African populations of 1KGP (Figure 4—figure supplement 2; Supplementary file 3). Notably, this set of candidate introgressed SVs included the IGHG4 insertion and nearby deletion, which, despite their low LD with one another, each tag multiple putative introgressed SNPs within the CDX population. Indeed, the original Sprime publication reported that putative introgressed variants of IGHA1, IGHG1, and IGHG3 achieve high frequencies in Eurasian populations (Browning et al., 2018). The variants identified by Browning et al., 2018 are located in a subregion of the broader IGH locus, downstream of the introgressed SVs, and segregate at high allele frequency in East Asian, European, and American populations (Figure 4—figure supplement 3). The southeast Asian-specific haplotype we identify, which includes the IGHG4 insertion and nearby deletion, may have been challenging to discover due to the difficulties of short-read alignment and genotyping in this region of the genome (Zhang et al., 2021). Indeed, 80.7% of the sequence in the broader IGH locus was filtered out by Browning et al., 2018 through strict masking of aDNA genotypes to remove low-coverage, poorly mapping, or repeat-associated reads (Figure 4—figure supplement 4).
 
@@ -97,9 +191,21 @@ We next expanded our analysis to the genomic region around the IGHG4 insertion, 
 
 Examination of the haplotype structure at the IGH locus revealed four discrete blocks of LD within the highly differentiated region (Figure 4—figure supplement 7), consistent with substantial recombination after the original haplotype achieved high frequency. The deletion SV (22231_HG02059_del) falls within the largest LD block, while the insertion SV (22237_HG02059_ins) falls within a smaller LD block that exhibits the greatest allele frequency differences. The latter block includes the tag SNP rs150526114, where the global minor allele matches the Neanderthal genomes and segregates at 91% frequency in CDX, 73% frequency in KHV, and 59% frequency in CHS, but is rare or absent in most other populations from 1KGP. Data from HGDP (Bergström et al., 2020) and the Simons Genome Diversity Panel (SGDP) (Mallick et al., 2016) shed additional light on the geographic distribution of the putative Neanderthal-introgressed allele and confirmed its extreme pattern of frequency differentiation specific to southeast Asian populations (Figure 4—figure supplement 8). Notably, the allele is absent from the HGDP populations from the Americas, which are thought to have split from East Asian populations approximately 26 kya (Moreno-Mayar et al., 2018), further supporting the recency and geographically restricted nature of this positive selection event.
 
-## Strength and timing of adaptive introgression at the IGH locus
+### Strength and timing of adaptive introgression at the IGH locus
 
 The challenge of dense genotyping and phasing within the broader IGH region (Zhang et al., 2021) hinders haplotype-based approaches for inferring the timing of selection. Nevertheless, the global patterns of allele frequencies we observe (Figure 5A,B) can be interpreted in the context of known population demographic histories, providing a rough estimate of such timing. For example, pairwise divergence times among East Asian populations inferred by Wang et al., 2018 constrain the plausible timing of selection at the IGH locus between approximately 60 generations (1740 years) and 400 generations (11,600 years) ago (assuming a 29-year generation time Tremblay and Vézina, 2000): after the divergence of the Chinese Dai and Vietnamese populations from the Japanese (JPT) population, but before the divergence of CDX and KHV. These divergence time estimates are roughly consistent with those inferred using an alternative approach based on the joint allele frequency spectrum by Jouganous et al., 2017.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig5-v3.jpg)
+
+**Figure 5.:** (A) Population-specific frequencies of the putative Neanderthal-introgressed insertion allele in each of the 1KGP populations, in the style of the Geography of Genetic Variants browser (Marcus and Novembre, 2017). (B) Tree representation of the best-fit selection hypothesis for Neanderthal-introgressed haplotype tagged by the IGHG4 insertion polymorphism, as computed by Ohana. (C) Five-population demographic model used for simulation and parameter inference via approximate Bayesian computation (ABC). Population sizes and split times are further described in Materials and methods. (D) Posterior distribution of the selection coefficient (s). (E) Posterior distribution of the timing of the onset of selection (Tadaptive). (F) Posterior distribution of the initial allele frequency at the beginning of the simulation (p0). (G) Negative relationship between s and Tadaptive for simulations retained by ABC.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig5-figsupp1-v3.jpg)
+
+**Figure 5—figure supplement 1.:** PBS was calculated between the Chinese Dai (CDX), Northern Europeans from Utah (CEU), and Japanese (JPT) populations, as $\frac{T_{CDX-CEU}+T_{CDX-JPT}-T_{CEU-JPT}}{2}$ . The red vertical lines represent the observed pairwise allele frequency differences and PBS for the insertion allele.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/67615/elife-67615-fig5-figsupp2-v3.jpg)
+
+**Figure 5—figure supplement 2.:** SNP rs115091999 (left panel) tags 22231_HG02059_del, while rs150526114 (right panel) tags 22237_HG02059_ins within the CDX population. No phenotype association is significant after multiple testing correction (Bonferroni-adjusted p-value > 0.05).
 
 To achieve further insight into this episode of selection, we conducted forward genetic simulations of a simplified five-population demographic model based on parameters obtained from the literature (The 1000 Genomes Project Consortium, 2015; Jouganous et al., 2017; Wang et al., 2018; Figure 5C). For simplicity, we began the simulations 46 kya, after Neanderthal introgression has occurred and the introgressed haplotype is segregating within the modern human population. Our model makes an additional simplification by not including migration, but we note that this omission should make our estimates of the selection coefficient conservative, as stronger selection is required to generate allele frequency differences between populations exchanging migrants. We first performed 100,000 neutral simulations (selection coefficient [s] = 0), finding that the magnitudes of allele frequency differentiation, especially in southeast Asia, far exceed those expected under the null (Figure 5—figure supplement 1). In order to formally estimate the parameters of the selection event, we next applied approximate Bayesian computation (ABC) to an additional 175,000 simulations in which we varied relevant parameters (see Materials and methods). In line with our previous intuition, the results of this analysis indicated a recent onset of extremely strong selection, with the selection coefficient parameter (s) inferred to be 0.06 (95% credible interval [CI] [0.02, 0.12]), the selection onset time parameter (Tadaptive) inferred to be 4400 years ago (95% CI [1700, 8400]), and the initial frequency of the adaptive allele in the ancestral Eurasian population (p0) to be 0.18 (95% CI [0.04, 0.35]) (Figure 5D–F). We observed a strong correlation between estimates of the selection coefficient and timing of selection. Specifically, older, weaker selection could produce the same frequency differences as stronger and more recent selection (Figure 5G), though even the lower bound on our estimate of s places it among the strongest episodes of positive selection documented in humans.
 
@@ -121,35 +227,87 @@ Together, our study demonstrates how new sequencing technologies and bioinformat
 
 ## Materials and methods
 
-## Structural variant calling and comparison with short-read datasets
+### Structural variant calling and comparison with short-read datasets
 
 We used published long-read sequencing data from 15 individuals to generate a set of 107,866 SVs for graph genotyping (Audano et al., 2019). Raw reads were downloaded using the accessions provided in the original publication and aligned with NGM-LR (Sedlazeck et al., 2018b) using default PacBio parameters to the main chromosomes of GRCh38. Variants were called with Sniffles (Sedlazeck et al., 2018b), requiring a minimum SV length of 30 bp and a minimum of 10 supporting reads. Resulting VCFs were refined with Iris (Alonge et al., 2020) to polish the reported SV sequences. Variants were then merged with SURVIVOR v1.0.7 (Jeffares et al., 2017), using a merge distance of 50 bp and requiring strand and type to match. For each merged variant, a representative variant was then obtained from the original pre-merged call set to improve accuracy. Such representative variants were selected by first prioritizing homozygous over heterozygous calls, and then by prioritizing variants with greater proportions of reads supporting the non-reference allele. To prepare the variants for input into Paragraph, translocations, mitochondrial DNA variants, inversions and duplications over 5 kb, and variants without a ‘PASS’ filter were removed from the VCF. This resulted in a set of 107,866 SVs.
 
 We compared this set of long-read discovered SVs with SVs discovered from short-read sequencing in 1KGP (Sudmant et al., 2015; http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/phase3/integrated_sv_map/supporting/GRCh38_positions/) and HGDP (Almarri et al., 2020; ftp://ngs.sanger.ac.uk/production/hgdp/hgdp_structural_variation). We merged long-read and short-read SV sets using parameters from Aganezov et al., 2020 (maximum distance of 500 bp between SV start sites, maximum difference of 10% between SV lengths). We chose not to require matching on SV type, strand orientation, or insertion sequence due to inconsistencies in SV representations across the short-read and long-read variant callers (Aganezov et al., 2020). In order to match the minimum SV length used by the short-read datasets, we also removed all long-read discovered SVs shorter than 50 bp. For the purpose of broad allele frequency binning for SVs called in each of these sets, we then calculated dataset-wide allele frequencies with PLINK v1.90b6.4 (Purcell et al., 2007).
 
-## Graph genotyping of structural variation
+### Graph genotyping of structural variation
 
 High-coverage 30× short-read sequencing data for the core 2504 individuals in 1KGP, sequenced by the New York Genome Center (Byrska-Bishop et al., 2021), was obtained from ENA (PRJEB31736). We genotyped SVs in these samples with Paragraph v2.2 (Chen et al., 2019). In accordance with Paragraph’s recommendations, we set the maximum permitted read count for variants to 20 times the mean sample depth in order to limit runtime for repetitive regions. Genotypes from all samples were combined using bcftools v1.9 (Danecek et al., 2021).
 
 To obtain a high-quality set of genotyped SVs, we filtered the resulting data based on dataset-wide genotyping rates and within-population Hardy–Weinberg equilibrium. We determined an SV’s overall genotyping rate with cyvcf2 (Pedersen and Quinlan, 2017) and removed variants that were not genotyped in ≥50% of samples. We additionally calculated one-sided Hardy–Weinberg equilibrium p-values (excess of heterozygotes) for variants within each of the 26 1KGP populations, using the Hardy–Weinberg package from R (Graffelman, 2015). We filtered out SVs that violated equilibrium expectations (Fisher’s exact test, p < 1 × 10–4) in ≥13 populations. Unfolded, within-population allele frequencies were calculated with PLINK.
 
-## Quantifying linkage disequilibrium with known SNPs and short indels
+### Quantifying linkage disequilibrium with known SNPs and short indels
 
 To calculate linkage disequilibrium (LD) between SVs and SNPs or short indels in 1KGP samples, we used small variant genotypes produced by the 1000 Genomes Consortium. These genotypes were generated by aligning the 1KGP Phase 3 data to GRCh38 and then calling variants against the GRCh38 reference and are restricted to biallelic SNVs and indels (http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/release/20190312_biallelic_SNV_and_INDEL/). Y chromosome genotypes, not included in the former data release, were obtained from Phase 3 variant calls lifted over to GRCh38 (http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/release/20130502/supporting/GRCh38_positions/). We combined the 1KGP SNP and indel genotypes with our SV genotypes and calculated r2 within each population, using a 100-variant and 100 Mb window, with PLINK v1.90b6.4.
 
 Genome accessibility masks from 1KGP were obtained from http://ftp.1000genomes.ebi.ac.uk/vol1/ftp/data_collections/1000_genomes_project/working/20160622_genome_mask_GRCh38/, and ENCODE blacklisted regions were obtained from https://www.encodeproject.org/files/ENCFF356LFX/.
 
-We note peaks of r2 around discrete values of 1, 0.5, 0.33, 0.25, etc. (Figure 1—figure supplement 7), which occur due to the properties of the r2 statistic for various allele frequency combinations. Specifically, the maximum possible value of r2 for a pair of rare alleles with frequencies pa and pb is described by VanLiere and Rosenberg, 2008 as:rmax2(pa,pb)=pa(1−pb)(1−pa)pb
+We note peaks of r2 around discrete values of 1, 0.5, 0.33, 0.25, etc. (Figure 1—figure supplement 7), which occur due to the properties of the r2 statistic for various allele frequency combinations. Specifically, the maximum possible value of r2 for a pair of rare alleles with frequencies pa and pb is described by VanLiere and Rosenberg, 2008 as:
 
-Assuming a sample size of 198 chromosomes (the most common sample size for a given 1KGP population), the maximum possible value of r2 for a pair of singletons is therefore:pa=1/198pb=1/198rmax2=1
+$$
+r_{max}^{2}(p_{a},p_{b})=\frac{p_{a}(1−p_{b})}{(1−p_{a})p_{b}}
+$$
 
-Meanwhile, the maximum possible value of r2 for a singleton-doubleton pair is:pa=1/198pb=2/198rmax2=0.497
+Assuming a sample size of 198 chromosomes (the most common sample size for a given 1KGP population), the maximum possible value of r2 for a pair of singletons is therefore:
 
-And the maximum possible value of a singleton-tripleton pair is:pa=1/198pb=3/198rmax2=0.330
+$$
+p_{a}=1/198
+$$
+
+
+
+$$
+p_{b}=1/198
+$$
+
+
+
+$$
+r_{max}^{2}=1
+$$
+
+Meanwhile, the maximum possible value of r2 for a singleton-doubleton pair is:
+
+$$
+p_{a}=1/198
+$$
+
+
+
+$$
+p_{b}=2/198
+$$
+
+
+
+$$
+r_{max}^{2}=0.497
+$$
+
+And the maximum possible value of a singleton-tripleton pair is:
+
+$$
+p_{a}=1/198
+$$
+
+
+
+$$
+p_{b}=3/198
+$$
+
+
+
+$$
+r_{max}^{2}=0.330
+$$
 
 Given that the most common allele frequency of a SNP or SV is 1/N (i.e., singletons), followed by 2/N (doubletons), 3/N (tripletons), etc., the aforementioned allele frequency combinations occur frequently, resulting in some common discrete values of the maximum r2.
 
-## eQTL mapping
+### eQTL mapping
 
 To conduct eQTL analysis, we used gene expression data generated by the Geuvadis Consortium (Lappalainen et al., 2013), which includes 447 intersecting samples from the following 1KGP populations: CEU, FIN, GBR, TSI, and YRI. Using the recount3 package from R/Bioconductor (Collado-Torres et al., 2017), we extracted gene expression counts for all corresponding samples. Counts were normalized across samples using the trimmed mean of M values (TMM) method from edgeR (Robinson et al., 2010). TPM values were also computed from raw counts. In accordance with the methods employed for eQTL mapping in the GTEx Project (The GTEx Consortium, 2020), we retained all genes with TPM values greater than or equal to 0.1, as well as raw read counts greater than or equal to six in at least 20% of samples. We then applied rank normalization to the TMM values for each remaining gene. We then performed cis-eQTL mapping with a modified version of fastQTL (https://github.com/hall-lab/fastqtl, Colby, 2016, Ongen et al., 2016), which accounts for SV size when determining the appropriate cis window. We conducted nominal and permutation passes with genotype principal components and sex included as covariates. Beta-distribution-approximated permutation p-values from fastQTL were used as input to estimate q-values and control the false discovery rate (FDR) with the qvalue package (http://github.com/jdstorey/qvalue, Storey et al., 2020, Storey and Tibshirani, 2003).
 
@@ -157,7 +315,7 @@ Next, we used the ChromHMM epigenetic state annotations generated by the Roadmap
 
 To identify potential causal variants for the 1121 significant gene-SV pairs, we performed eQTL fine-mapping using CAVIAR v2.2 (Hormozdiari et al., 2014). Nominal pass output of fastQTL was combined for SNPs and SVs, and p-values were back-converted to z-scores while also accounting for the sign of the association (i.e., positive or negative). For each significant eQTL, we extracted all tested variants within a 1 Mb window, excluding any variants with a nominal p-value > 0.05. We then used PLINK to calculate the LD matrix relating this set of variants. Using these two inputs, we then ran CAVIAR for each of the 1121 significant gene-SV pairs, recording the 90% credible causal set for each eQTL.
 
-## Admixture-aware scan for signatures of local adaptation
+### Admixture-aware scan for signatures of local adaptation
 
 Common examples of frequency differentiation-based metrics to search for selection include Wright’s fixation index (FST) (Wright, 1949), as well as tree-based extensions of this concept such as the locus-specific branch length (LSBL) (Shriver et al., 2004) and population branch statistic (PBS) (Yi et al., 2010). While useful for polarizing frequency changes on particular lineages, these tree-based tests still require the specification of (typically three) populations for comparison. The number of possible comparisons thus grows in a combinatorial manner with the number of populations in the study. Specifically, for the 26 populations of 1KGP, there are 2600 (26 choose 3) possible comparisons. A second limitation of such tests is the definition of population, which may or may not reflect genetic patterns of population structure that occur at multiple scales. Moreover, many human populations exhibit substantial admixture, which is ignored by, and may confound, some frequency differentiation-based tests.
 
@@ -169,7 +327,7 @@ In order to generate ‘selection hypothesis’ matrices to search for selection
 
 We filtered our results to remove extreme outliers in null model log-likelihoods (global log likelihood [LLE] < −1000), which were unremarkable in their patterns of allele frequency and instead indicated a failure of the neutral model to converge for a small subset of rare variants. To calculate p-values, we then compared the LRS to a chi-square distribution with one degree of freedom (Wojcik et al., 2019) and adjusted for multiple hypothesis testing using a Bonferroni correction. To further refine the list of candidate selected loci, we also compared the ancestry component-specific LRS computed for each SV to the observed distribution of LRS computed from SNPs and short indels matched on global minor allele frequency (in 1% frequency bins). Specifically, we identified SVs with LRS exceeding the 99.9 percentile of the empirical LRS distribution for frequency-matched SNPs and short indels as calculated using identical methods. These background SNPs and indels were limited to Chromosome 1 for computational efficiency, but results were qualitatively unaffected by the choice of chromosome.
 
-## Assessment of archaic introgression
+### Assessment of archaic introgression
 
 To identify candidate archaic introgressed SVs among the set of highly differentiated variants, we tested each SV for LD with putative introgressed SNPs as identified based on published results from the method Sprime, which is based on signatures of LD and divergence from an African outgroup population (Browning et al., 2018). Specifically, we computed pairwise LD between the SV and all SNPs in a 100 kb window, matching the ancestry component to a corresponding population from 1KGP. We additionally computed the allele frequencies of SVs in African populations, excluding the ASW (Americans of African Ancestry in SW USA) and ACB (African Caribbeans in Barbados) populations which exhibit substantial non-African admixture. We reported all highly differentiated SVs possessing r2 > 0.5 with any putative introgressed SNP and AF < 0.01 in non-admixed African populations (Supplementary file 2).
 
@@ -179,7 +337,7 @@ To efficiently search for the IGHG4 insertion in additional datasets, we designe
 
 Evidence of introgression at the IGH locus was further examined by counting observed alleles at highly differentiated SNPs from sequenced alignments for each high-coverage archaic sample (see above). Sites with two or more reads supporting the alternative allele were used to define matching and color Figure 4. further conditions on alternative allele frequency ≤ 1% within African populations of 1KGP.
 
-## Inference of selection parameters with approximate Bayesian computation
+### Inference of selection parameters with approximate Bayesian computation
 
 We used a sequential algorithm for approximate Bayesian computation (Lenormand et al., 2013; Pritchard et al., 1999), implemented with the R package EasyABC (Jabot et al., 2013), to infer the strength and timing of selection at the IGHG4 locus, as well as the initial frequency of the adaptive allele. This approach consisted of drawing model parameters from prior distributions as input to the forward evolutionary simulation software package SLiM (Haller and Messer, 2019), computing summary statistics from each simulation, and comparing to those observed from our data. Simulations with summary statistics most closely matching the observed data are then used to construct posterior distributions of the model parameters. The sequential algorithm automatically determines the tolerance level and uses a predetermined stopping criterion (paccmin = 0.05), thereby reducing the necessary number of simulations and improving estimates of the posterior distribution (Lenormand et al., 2013).
 
@@ -187,6 +345,6 @@ We constructed a simplified five-population demographic model based on parameter
 
 To obtain a background distribution of the expected frequencies of the introgressed haplotype in the absence of selection, we performed 100,000 of the simulations described above with a selection coefficient of 0. For ease of comparison to the observed data, we used the end-of-simulation population branch statistic (PBS) (Yi et al., 2010), calculated between the CDX, JPT, and CEU populations, as a summary statistic. We compared these PBS values, as well as the inter-population FST, to those observed for the IGHG4 insertion in these populations.
 
-## Phenotype-wide association analysis
+### Phenotype-wide association analysis
 
 We examined potential phenotype associations with the putative Neanderthal-introgressed haplotype at the IGH locus by extracting summary statistics from the pan-ancestry analysis of the UK Biobank (https://pan.ukbb.broadinstitute.org/). Specifically, we obtained association p-values for two SNPs, which each tag one of the two major LD blocks (rs115091999 and rs150526114). We restricted analysis to individuals of East Asian ancestry. No variants were significant after Bonferroni correction (Figure 5—figure supplement 2).

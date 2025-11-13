@@ -13,15 +13,15 @@
 
 ### Affiliations
 
-1. https://ror.org/00a2xv884 Zhejiang Provincial Key Laboratory of Cancer Molecular Cell Biology, Life Sciences Institute, Zhejiang University Hangzhou China
-2. https://ror.org/00a2xv884 International Biomedicine-X research center of the Second Affiliated Hospital, Zhejiang University Hangzhou China
+1. Zhejiang Provincial Key Laboratory of Cancer Molecular Cell Biology, Life Sciences Institute, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
+2. International Biomedicine-X research center of the Second Affiliated Hospital, Zhejiang University Hangzhou China ([ROR:00a2xv884](https://ror.org/00a2xv884))
 3. Center for Stem Cell and Regenerative Medicine and Department of Burn and wound repair of the Second Affiliated Hospital, Zhejiang University School of Medicine Hangzhou China
 
 † Corresponding author
 
 ## Abstract
 
-Imaging endogenous mRNAs in live animals is technically challenging. Here, we describe an MS2-based signal amplification with the Suntag system that enables live-cell RNA imaging of high temporal resolution and with 8xMS2 stem-loops, which overcomes the obstacle of inserting a 1300 nt 24xMS2 into the genome for the imaging of endogenous mRNAs. Using this tool, we were able to image the activation of gene expression and the dynamics of endogenous mRNAs in the epidermis of live C. elegans .
+Imaging endogenous mRNAs in live animals is technically challenging. Here, we describe an MS2-based signal amplification with the Suntag system that enables live-cell RNA imaging of high temporal resolution and with 8xMS2 stem-loops, which overcomes the obstacle of inserting a 1300 nt 24xMS2 into the genome for the imaging of endogenous mRNAs. Using this tool, we were able to image the activation of gene expression and the dynamics of endogenous mRNAs in the epidermis of live C. elegans.
 
 ## Introduction
 
@@ -33,6 +33,34 @@ The MS2 system has been successfully used to trace the whole mRNA life-cycle fro
 
 In this study, we reasoned that combining the MS2 with a signal amplifier may allow the recruitment of more fluorescent proteins to the RNA with fewer MS2 repeats (i.e., 8xMS2 – see Figure 1A). To achieve this, we combined the MS2 and Suntag systems. Suntag is a 19 amino acid protein tag that binds to its specific single-chain variable fragment (scFv) antibody (Tanenbaum et al., 2014). We fused MCP with a 24xSuntag array and linked scFv with sfGFP. When coexpressed in cells, one MS2 interacts with two MCP-24xSuntag molecules, further recruiting 2 × 24 GFP molecules (Figure 1A). As the Suntag serves as a signal amplifier, the combined system was named as MS2-based signal Amplification with Suntag System (MASS). When an 8xMS2 is placed into the 3′UTR, up to 384 (2 × 8 × 24) GFP can then be tethered to a single mRNA through the MCP–Suntag–scFv–sfGFP interaction (Figure 1A). This leads to the formation of an intense GFP spot associated with single mRNA, facilitating live RNA imaging.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/82178/elife-82178-fig1-v3.jpg)
+
+**Figure 1.:** (A) Schematic of the classical MS2-MCP system and the MS2-based signal amplification with the Suntag system. (B) Representative images of β-ACTIN-8xMS2 mRNA in live HeLa cells. The sfGFP fluorescence signal is shown. Left panel: Constructs of β-ACTIN-8xMS2, MCP-24xSuntag, and scFv-sfGFP were cotransfected into HeLa cells. Images were taken 12 hr after transfection. Right panels: Where one of the elements was removed (as indicated). Scale bar, 5 µm. (C) Representative confocal images of β-ACTIN-8xMS2 labeled by MASS and single-molecule in situ hybridization (smFISH) with probes against MS2 stem-loops and probes against the linker region between the MS2 stem-loops in HeLa cells. Scale bar, 5 µm. See also Figure 1—figure supplement 1. (D) Quantification of the total and colocalized foci of β-ACTIN-8xMS2 mRNAs detected by smFISH or MASS with tdMCP-24xSuntag in HeLa cells. A total of 16 cells from three independent smFISH experiments were analyzed. See also Figure 1—source data 1. (E–H) Time-lapse imaging of β-ACTIN-8xMS2 mRNA dynamics in HeLa cells. sfGFP foci (β-ACTIN mRNAs) are shown. Constructs of β-ACTIN-8xMS2, MCP-24xSuntag, and scFv-sfGFP were cotransfected into HeLa cells. Images were taken 12 hr after transfection. (E) A fusion event of two sfGFP spots (white arrows). (F) A fission event: with large sfGFP foci split into three spots (white arrows). (G) Transient interactions of an sfGFP spot (yellow arrow) between two spots (white arrows). (H) An sfGFP spot showing no movement over a 10-s period (white arrow). Scale bars, 1 µm.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/82178/elife-82178-fig1-figsupp1-v3.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Schematic of probes targeting the β-ACTIN-8xMS2 tagged mRNA. Probe-1: against the MS2 stem-loop; probe-2: against the linker region. (B) Representative confocal images of β-ACTIN-8xMS2 labeled by MASS and single-molecule in situ hybridization (smFISH) with probes in (A). Scale bar, 5 µm (top) and 2 µm (bottom). (C) Distribution of the foci number of β-ACTIN-8xMS2 mRNAs detected by smFISH and MASS with tdMCP-24xSuntag in a single HeLa cell. Sixteen cells from three independent experiments were analyzed. Bars indicate mean ± standard deviation (SD). Unpaired t-test, p = 0.911. NS: not significant. See also Figure 1—source data 1.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/82178/elife-82178-fig1-figsupp2-v3.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Representative confocal images of β-ACTIN-8xMS2 V1 or β-ACTIN-8xMS2 V7 mRNAs labeled by MASS with tdMCP-24xSuntag. (B) Representative confocal images of C-MYC-8xMS2, HSPA1A-8xMS2, and KIF18B-8xMS2 mRNAs labeled by MASS with tdMCP-24xSuntag in HeLa cells. Scale bar, 5 µm. (C) Quantitative RT-PCR of the mRNA expression level of C-MYC, HSPA1A, and KIF18B jn HeLa cells transfected with the indicated constructs. Twelve hours after transfection, cells were treated with Actinomycin D (5 μM) for 0, 3, and 6 hr and harvested for RNA extraction. Primers for qPCR were listed in Methods. n = 3 independent experiments; bars indicate mean ± standard deviation (SD). Unpaired t-test and ordinary one-way analysis of variance (ANOVA). NS: not significant, *p < 0.05, ***p < 0.001, ****p < 0.0001. See also Figure 1—source data 1.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/82178/elife-82178-fig1-figsupp3-v3.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Confocal image of β-ACTIN-8xMS2 mRNA in live HeLa cells. sfGFP foci are shown. Constructs of β-ACTIN-8xMS2, MCP-24xSuntag, and scFv-sfGFP were cotransfected into HeLa cells. Images were taken 12 hr after transfection. The white dashed line demarcates the cell. The white arrow indicates lamellipodia. Scale bar, 5 µm. (B) Confocal images of β-ACTIN-24xMS2 mRNAs labeled by the conventional 24xMS2 system (top) and β-ACTIN-8xMS2 mRNAs labeled by MASS with tdMCP-24xSuntag (bottom) in live NIH/3T3 cells. The white dashed lines demarcate the cells. Scale bar, 5 µm.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/82178/elife-82178-fig1-figsupp4-v3.jpg)
+
+**Figure 1—figure supplement 4.:** (A, C, E, G) Confocal images of β-ACTIN-24xMS2 mRNAs labeled by the conventional 24xMS2 system and β-ACTIN-8xMS2 mRNAs labeled by MASS with tdMCP-6xSuntag, tdMCP-12xSuntag, or tdMCP-24xSuntag. Images were taken 12 hr after transfection. Scale bar, 5 µm. (B, D, F, H, I) Distribution of the signal-to-noise ratio of foci of β-ACTIN mRNAs detected in A, C, E, G. For the conventional 24xMS2 system: N = 16,890 foci from 42 cells in three independent experiments. For MASS with tdMCP-6xSuntag: N = 29,427 foci from 46 cells in three independent experiments. For MASS with tdMCP-12xSuntag, N = 20,586 foci from 36 cells in three independent experiments. For MASS with tdMCP-24xSunta: N = 14,311 foci from 39 cells in three independent experiments. See also Figure 1—source data 1.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/82178/elife-82178-fig1-figsupp5-v3.jpg)
+
+**Figure 1—figure supplement 5.:** (A, B) Distribution of the velocity of mRNA movement of β-ACTIN-24xMS2 mRNAs labeled by the conventional 24xMS2 system and β-ACTIN-8xMS2 mRNAs labeled by MASS with tdMCP-6xSuntag, tdMCP-12xSuntag, or tdMCP-24xSuntag. For the conventional 24xMS2 system: N = 16,513 foci from 42 cells in three independent experiments. For MASS with tdMCP-6xSuntag: N = 17,889 foci from 54 cells in three independent experiments. For MASS with tdMCP-12xSuntag, N = 22,781 foci from 47 cells in three independent experiments. For MASS with tdMCP-24xSunta: N = 19,232 foci from 44 cells in three independent experiments. See also Figure 1—source data 1.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/82178/elife-82178-fig1-figsupp6-v3.jpg)
+
+**Figure 1—figure supplement 6.:** (A, B) As Figure 1—figure supplement 5, but the distribution of the average intensity of each spot was shown. (C) Mean intensity of the average intensity of each spot in (A). Bars indicate mean ± standard deviation (SD). Unpaired t-test. ****p < 0.0001. See also Figure 1—source data 1.
+
 As proof of concept, 8xMS2 V14 was fused to the 3′UTR of β-ACTIN mRNA and transfected into HeLa cells. When all the required elements of the MASS (MS2, MCP, 24xSuntag, and scFv antibody) were present, bright GFP foci were readily detected (Figure 1B). As controls, no GFP foci were detected when omitting any one of these elements (Figure 1B). With MCP-24xSuntag, an MCP molecule could be labeled with up to 24 GFPs. Under our imaging conditions (100–500 ms exposure time), MCP-24xSuntag particles were not detected (Figure 1B), probably because MCP-24xSuntag are diffusing too fast to be imaged as a spot. Thus, the GFP foci clearly represent β-ACTIN RNA molecules.
 
 In addition, we performed MASS combined with single-molecule RNA fluorescence in situ hybridization (smFISH) using a probe against the MS2 stem-loop and a probe against the linker region between the MS2 stem-loops (Figure 1C, Figure 1—figure supplement 1A, B). We found that MASS detected a similar number of GFP foci compared to the spots detected by smFISH (Figure 1—figure supplement 1C, Figure 1—source data 1). Moreover, the majority of GFP foci (72%) colocalized with the smFISH spots of β-ACTIN-3′UTR-8xMS2 mRNAs (Figure 1C, D, Figure 1—figure supplement 1B, Figure 1—source data 1). It is reported that not all MS2 stem-loop will be bound by the MCP (Wu et al., 2012). As only 8xMS2 was used in MASS, it is likely that some mRNAs were not fully bound by MCP and were not detected. On the other hand, in theory, only up to 16 probes will be hybridized with the 8xMS2 stem-loops and the linker regions in the smFISH experiment, and it is possible that some mRNAs were miss labeled by smFISH. Therefore, 100% colocalization of MASS foci with the smFISH spots was hard to achieve. Taken together, our data indicated that MASS is able to detect single mRNA molecules and label the majority of mRNAs from a specific gene in live cells.
@@ -40,6 +68,10 @@ In addition, we performed MASS combined with single-molecule RNA fluorescence in
 It was reported that tagging mRNAs with MS2 stem-loops might affect mRNA stability, which could be counteracted by using improved versions of MS2 repeats (Li et al., 2022; Vera et al., 2019). We found GFP foci of β-ACTIN-3′UTR-8xMS2 mRNAs were detected regardless of using MS2-V14 or MS2-V721 with 2× tandem repeats of monomer MCPs (tdMCP) (Figure 1—figure supplement 2A). Therefore, MASS could be performed using different versions of MS2 stem-loops and MCPs. To directly test whether mRNA stability was affected while imaging by MASS, we examined the stability of three mRNAs: MYC, HSPA1A, and KIF18B, which were reported as medium stable mRNAs (Vera et al., 2019; Sharova et al., 2009). We found that the stability of those mRNAs was not significantly affected either by tagging of 8xMS2 V1 or by coexpression of the MASS imaging system (Figure 1—figure supplement 2B, C, Figure 1—source data 1). It is worth noting that we only examined three mRNAs in this study. The stability of specific mRNAs might be affected by MASS. If so, an improved version of MS2 should be used for the imaging experiment.
 
 It has been reported that β-ACTIN mRNAs with 3′UTR can localize to the lamellipodia (Katz et al., 2012). In support of this, we observed that the GFP foci of β-ACTIN-3′UTR-8XMS2 mRNAs were indeed localized to the lamellipodia in HeLa cells (Figure 1—figure supplement 3A and Video 1). To further test whether mRNA localization was affected by MASS, we imaged β-ACTIN-3′UTR mRNA with MASS or with the conventional 24xMS2 system in NIH/3T3 cells, which is a mouse fibroblast cell line. We found that GFP foci of β-ACTIN-3′UTR mRNAs detected by MASS or 24xMS2 system showed similar localization (Figure 1—figure supplement 3B). Thus, these data suggested that MASS did not affect RNA subcellular localization.
+
+![Video 1.](https://cdn.elifesciences.org/articles/82178/elife-82178-video1.mp4.jpg)
+
+**Video 1.:** The sfGFP foci of the β-ACTIN-3′UTR-8xMS2 mRNA localize to the lamellipodia in HeLa cells. The white dashed line demarcates the cell. The white arrow indicates lamellipodia. Time interval, 2 s. Scale bar, 5 µm.
 
 Haven established that MASS with MCP-24xSuntag could image single RNA molecules; we next sought to test whether MASS could be performed with shorter repeats of Suntag arrays (MCP-12xSuntag, MCP-6xSuntag) and compare MASS to the conventional 24xMS2 image system.
 
@@ -49,15 +81,79 @@ One critical concern about MASS is that intense tagging of mRNAs may affect the 
 
 We then performed time-lapse imaging of the β-ACTIN-3′UTR-8XMS2 mRNA with a time interval of 1 s in HeLa cells (Video 2). We found that foci of mRNAs showed various dynamics: (1) Fusion. GFP spots fused into a more prominent spot (Figure 1E and Video 3); (2) Fission. Large GFP foci split into smaller spots (Figure 1F and Video 4); (3) Transient interaction. GFP foci touched each other briefly, then moved away (Figure 1G and Video 5), suggesting there are dynamic RNA–RNA interactions in cells; (4) Dynamic movement or anchoring. Despite most foci of β-ACTIN-3′UTR-8XMS2 mRNAs showing dynamic movement in cells, other foci were far more static, showing little movement (Figure 1H and Video 6), suggesting that these latter mRNAs may be anchored to subcellular structures.
 
+![Video 2.](https://cdn.elifesciences.org/articles/82178/elife-82178-video2.mp4.jpg)
+
+**Video 2.:** Scale bar, 5 μm.
+
+![Video 3.](https://cdn.elifesciences.org/articles/82178/elife-82178-video3.mp4.jpg)
+
+**Video 3.:** Time interval, 2 s. Scale bar, 5μm.
+
+![Video 4.](https://cdn.elifesciences.org/articles/82178/elife-82178-video4.mp4.jpg)
+
+**Video 4.:** Time interval, 1 s. Scale bar, 1 μm.
+
+![Video 5.](https://cdn.elifesciences.org/articles/82178/elife-82178-video5.mp4.jpg)
+
+**Video 5.:** Time interval, 2 s. Scale bar, 1 μm.
+
+![Video 6.](https://cdn.elifesciences.org/articles/82178/elife-82178-video6.mp4.jpg)
+
+**Video 6.:** Time interval, 1 s. Scale bar, 1 μm.
+
 Our ultimate goal was to develop tools for endogenous mRNA imaging in live animals. It has been previously reported that the knock-in of short sequences into the genome is far more efficient than those of longer sequences (Wang et al., 2022; Paix et al., 2017). The MASS exploits this advantage as only 8xMS2 (350 nt) needs to be inserted into a genomic locus, thus overcoming the previous obstacle of the requirement of inserting a long 1300 nt 24xMS2 into the genome for live-cell imaging of endogenous mRNA.
 
 We then used the nematode C. elegans to specifically examine whether the MASS could be used for RNA imaging in live animals. An 8xMS2 was placed into the 3′UTR of cdc-42 mRNA (Figure 2—figure supplement 1). cdc-42-8xMS2, MCP-24xSuntag, and scFv-sfGFP were also expressed in the epidermis of live C. elegans. Consistent with the observations in HeLa cells, bright GFP foci could only be detected when all the required elements were present (Figure 2—figure supplement 1). Similarly, excluding any essential elements resulted in a complete failure of foci formation (Figure 2—figure supplement 1). Thus, the MASS was efficient in imaging exogenous RNAs in live animals.
 
 Next, we set out to visualize gene expression activation and the dynamics of endogenous mRNAs in live animals. We used the skin of C. elegans as a model, which is composed of an epidermal epithelium with multiple nuclei. Upon wounding the epithelium via laser or needle, specific gene expressions and downstream signaling cascades for wound repair are then triggered and activated (Xu and Chisholm, 2014; Figure 2A). To this end, 8xMS2 was knocked into the 3′UTR region of two endogenous genes, C42D4.3 and mai-1 (Figure 2B and Figure 2—figure supplement 2A), the expression levels of which were reported to increase significantly after wounding (Fu et al., 2020). MCP-24xSuntag and scFv-sfGFP were expressed in the epidermis with the tissue-specific promoter semo-1 and col-19. We then used a UV laser to injure an area of the epidermis. Prior to wounding, few sfGFP foci were detected in either wild-type (WT) or in 8xMS2 knock-in animals (Figure 2B and Figure 2—figure supplement 2A). In contrast, numerous GFP foci were formed 15 min after wounding in the C42D4.3 and mai-1 8xMS2 knock-in animals but not in the WT animals (Figure 2B and Figure 2—figure supplement 2A, Videos 7–9). This result suggests that the wounding had activated C42D4.3 and mai-1 mRNA expression. In agreement with this, qRT-PCR showed that C42D4.3 and mai-1 mRNA levels were upregulated more than eightfold 15 min after injury (Figure 2C and Figure 2—figure supplement 2B, Figure 2—source data 1), confirming that GFP foci were able to detect endogenous C42D4.3–8xMS2 and mai-1-8xMS2 mRNAs. In addition, the expression level (Figure 2—figure supplement 2C, Figure 2—source data 1) and stability of C42D4.3 mRNA (Figure 2—figure supplement 2D, Figure 2—source data 1) were similar in WT, C42D4.3 8xMS2 knock-in animals and animals expressing the MASS imaging system, indicating MASS did not affect the expression level and stability of endogenous C42D4.3 mRNAs.
 
+![Video 7.](https://cdn.elifesciences.org/articles/82178/elife-82178-video7.mp4.jpg)
+
+**Video 7.:** Time interval, 5 s. Scale bar, 10 μm.
+
+![Video 8.](https://cdn.elifesciences.org/articles/82178/elife-82178-video8.mp4.jpg)
+
+**Video 8.:** A different worm was shown. Time interval, 5 s. Scale bar, 10 μm.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/82178/elife-82178-fig2-v3.jpg)
+
+**Figure 2.:** (A) Schematic of the strategy for live imaging of endogenous mRNAs in the epidermis of C. elegans. (B) Representative images of endogenous C42D4.3-8xMS2 mRNA in the epidermis of live C. elegans using the strategy described in (A). Left: C42D4.3 without 8xMS2. Right: C42D4.3 with 8xMS2. Images were taken before and 15 min after wounding. White dashed circles indicate wound sites. Scale bar, 10 μm. (C) Quantitative RT-PCR showing the expression level of endogenous C42D4.3 mRNA in C. elegans before and 15 min after wounding. n = 3 independent experiments; bars indicate mean ± standard deviation (SD). Mann–Whitney test, ***p < 0.001. See also Figure 2—source data 1. (D) Time-lapse imaging of endogenous C42D4.3-8xMS2 mRNA in the epidermis of live C. elegans before and after wounding. White dashed circles indicate the wound sites. Scale bar, 10 μm. Shown are mean ± SD of quantification of the number (E) and size (F) of sfGFP foci (endogenous C42D4.3 mRNA) formed in the epidermis as measured 15 min after wounding. n = 10. (G) Time-lapse imaging showing fusion of endogenous C42D4.3 foci (white arrows) after laser wounding. Scale bar, 5 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/82178/elife-82178-fig2-figsupp1-v3.jpg)
+
+**Figure 2—figure supplement 1.:** Representative images of cdc42-8xMS2 mRNA in live C. elegans. sfGFP fluorescence signals are shown. Left panel: Constructs of cdc42-8xMS2, MCP-24xSuntag, and scFv-sfGFP were coexpressed in the epidermis of C. elegans. Right panels: Where one of the elements was removed as indicated. Scale bar, 10 µm.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/82178/elife-82178-fig2-figsupp2-v3.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Representative images of endogenous mai-1-8xMS2 mRNA in the epidermis of live C. elegans using the strategy described in Figure 2A. Left: mai-1 without 8xMS2. Right: mai-1 with 8xMS2. Images were taken before and 15 min after wounding. White dashed circles indicate the wound sites. Scale bar, 10 μm. (B) Quantitative RT-PCR showing the expression level of endogenous mai-1 mRNA in C. elegans before and 15 min after wounding. n = 3 independent experiments; bars indicate mean ± standard deviation (SD). Mann–Whitney test, ***p < 0.001. See also Figure 2—source data 1. (C) Quantitative RT-PCR showing the expression level of endogenous C42D4.3 mRNA before and 15 min after wounding in wild-type, C42D4.3 8xMS2 knock-in animals and animals expressing the MASS imaging system. n = 3 independent experiments; bars indicate mean ± SD. One-way analysis of variance (ANOVA). NS: no significance, ***p < 0.001. See also Figure 2—source data 1. (D) Quantitative RT-PCR showing the expression level of endogenous C42D4.3 mRNA treatment with Actinomycin D (30 μM) for 0, 3, and 6 hr in wild-type, C42D4.3 8xMS2 knock-in animals and animals expressing the MASS imaging system. n = 3 independent experiments; bars indicate mean ± SD. One-way ANOVA. NS: not significant, **p < 0.01, ***p < 0.001. See also Figure 2—source data 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/82178/elife-82178-fig2-figsupp3-v3.jpg)
+
+**Figure 2—figure supplement 3.:** Time-lapse imaging of endogenous C42D4.3-8xMS2 mRNA in the epidermis of live C. elegans before and after wounding. White dashed circles indicate the wound sites. Scale bar, 10 μm.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/82178/elife-82178-fig2-figsupp4-v3.jpg)
+
+**Figure 2—figure supplement 4.:** Time-lapse imaging of endogenous C42D4.3-8xMS2 mRNA in the epidermis of live C. elegans before and after wounding. C. elegans were treated with Actinomycin D (30 μM) for 3 hr before wounding. White dashed circles indicate the wound sites. Scale bar, 10 μm.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/82178/elife-82178-fig2-figsupp5-v3.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Time-lapse imaging of BFP-8xMS2 mRNA in the epidermis of C. elegans using MASS with MCP-24xSuntag. Scale bar, 10 μm. (B) Quantification of the puncta size of the BFP-8xMS2 mRNA foci for 5 min, bars indicate the mean ± standard deviation (SD); n = 5. See also Figure 2—source data 1. (C) Quantification of the puncta size of the BFP-8xMS2 mRNA foci at 1, 2, 3, 4, and 5 min in unwounded animals and the puncta size of endogenous C42D4.3-8xMS2 mRNA foci at 1, 2, 3, 4, and 5 min after laser wounding. Bars indicate mean ± SD. One-way analysis of variance (ANOVA). NS: not significant, ***p < 0.001. At each time point, at least 550 mRNA foci from n = 10 worms for C42D4.3-8xMS2 and n = 5 worms for BFP-8xMS2 were analyzed. See also Figure 2—source data 1.
+
+![Video 9.](https://cdn.elifesciences.org/articles/82178/elife-82178-video9.mp4.jpg)
+
+**Video 9.:** Time interval, 2 s. Scale bar, 10 μm.
+
 As the mRNA expression level of C42D4.3 and mai-1 significantly increased after wounding, we expected a boost in transcription. GFP will form extensive foci in the nuclei with active transcription. However, we failed to detect the appearance of bigger GFP foci in the nucleus. The epidermis of C. elegans is a syncytium with 139 nuclei located in different focal planes. With our microscopy, we could image only one focal plane, in which there are usually 4–10 nuclei. Therefore, it is likely that the nuclei with active transcription were out of focus, and therefore the GFP foci formed at the transcription site were not detected.
 
 Next, we tracked the dynamics of endogenous C42D4.3–8xMS2 mRNA in the C. elegans epidermis after wounding. We found that in proximity to the injury site GFP foci were detected as early as 1 min after wounding (Figure 2D, Figure 2—figure supplement 3, and Videos 7 and 8). As a control, we pretreated the C. elegans with Actinomycin D, which potently inhibits gene transcription. In such cases, no GFP foci could be detected after wounding (Figure 2—figure supplement 4). This indicated that GFP foci are newly synthesized C42D4.3–8xMS2 mRNAs. Our data demonstrated that gene expression activation and transcription occur extremely fast (in this case, within 1 min after the stimulation). In addition, the appearance of GFP foci gradually spreads from the area around the injury site to distal regions. The total foci number steadily increased in the epidermis (Figure 2D, E, Figure 2—figure supplement 3, and Videos 7 and 8). These data suggested that wounding generated a signal to activate downstream gene expression around the injury site. The signal was then diffused to distal regions and able to induce gene expression there. In addition, GFP foci preferentially underwent fusion leading to increased foci size (Figure 2F, G, and Video 10, Figure 2—source data 1). In contrast, when exogenous BFP-8xMS2 was expressed and imaged with MASS in the epidermis (Figure 2—figure supplement 5A, Figure 2—source data 1), such fusion events were not frequently observed (Video 11), and the puncta size of BFP-8xMS2 mRNAs kept constant in 5 min (Figure 2—figure supplement 5A–C, Figure 2—source data 1). In addition, the puncta size of C42D4.3-8xMS2 mRNAs was significantly larger than that of BFP-8xMS2 mRNAs (Figure 2—figure supplement 5C, Figure 2—source data 1). These data suggested that C42D4.3 mRNAs undergo clustering after wounding and form RNA granules in vivo. In agreement with our observation, it has been previously reported that mRNAs formed large clusters and are co-translated in Drosophila embryos (Dufourt et al., 2021).
+
+![Video 10.](https://cdn.elifesciences.org/articles/82178/elife-82178-video10.mp4.jpg)
+
+**Video 10.:** Time interval, 5 s. Scale bar, 5 μm.
+
+![Video 11.](https://cdn.elifesciences.org/articles/82178/elife-82178-video11.mp4.jpg)
+
+**Video 11.:** Time interval, 0.5 s. Scale bar, 10 μm.
 
 ## Discussion
 
@@ -65,19 +161,19 @@ It has been recently reported that the SunRISER and MoonRISER system by combinat
 
 ## Materials and methods
 
-## Cell lines
+### Cell lines
 
 The HEK293T/17 and NIH/3T3 cell lines were purchased from Procell. The human cervical cancer cell line, HeLa, was a gift from the lab of Christine Mayr (Memorial Sloan Kettering Cancer Center). Cells were maintained at 37°C with 5% CO2 in Dulbecco’s Modified Eagle Medium (DMEM) containing 4500 mg/l glucose, 10% fetal bovine serum, 100 U/ml penicillin, and 100 mg/ml streptomycin.
 
-## Worm culture
+### Worm culture
 
 All strains were cultured on the nematode growth medium (NGM) plates with E. coli OP50 at 20–22.5°C, unless otherwise indicated. The N2 Bristol strain was used as the WT strain.
 
-## Constructs for mammalian cells
+### Constructs for mammalian cells
 
 All PCR reactions were performed using KOD One PCR Master Mix -Blue- (TOYOBO). Recombinational cloning was performed with the ClonExpress One Step Cloning Kit (Vazyme).
 
-## MS2 constructs
+### MS2 constructs
 
 For MS2 V1 constructs, 2xMS2 was designed based on the MS2 sequence as reported by the Singer Lab (Addgene, #27118) (Bertrand et al., 1998). The sequence of 2xMS2 was as follows: ctgcaggtcgactctagaaaacatgaggatcacccatgtctgcaggtcgactctagaaaacatgaggatcacccatgt. The EcoRI-2xMS2-EcoRV was synthesized and inserted into a pcDNA-puro-BFP backbone with EcoRI and EcoRV restriction sites to make the pcDNA-puro-BFP-2xMS2 construct. The EcoRV-2xMS2-XhoI was synthesized and inserted into the pcDNA-puro-BFP-2xMS2 backbone with EcoRV and XhoI restriction sites to make the pcDNA-puro-BFP-4xMS2 construct. The XhoI-2xMS2-ApaI was synthesized and inserted into the pcDNA-puro-BFP-4xMS2 backbone with XhoI and ApaI restriction sites to make the pcDNA-puro-BFP-6xMS2 construct. The BamHI-2xMS2-EcoRI was synthesized and inserted into the pcDNA-puro-BFP-6xMS2 backbone with BamHI and EcoRI restriction sites to make the pcDNA-puro-BFP-8xMS2 construct. Ligation was performed with T4 DNA ligase.
 
@@ -101,7 +197,7 @@ To make pcDNA-puro-BFP-KIF18B-3′UTR, the KIF18B-3′UTR with a length of 1131 
 
 To make pcDNA-puro-BFP-KIF18B-3′UTR-8xMS2, the KIF18B-3′UTR with a length of 1131 bp was PCR amplified from cDNA of HeLa cells with primers KIF18B-3′UTR F KIF18B-3′UTR R. The KIF18B-3′UTR was inserted into the pcDNA3.1-puro-BFP-8xMS2 vector with KpnI and BamHI restriction sites through recombinational cloning. KIF18B-3′UTR F: TGAATCTGTACAAGAAGCTTGGTACCGCAGTGGAGGACAGCACG, KIF18B-3′UTR R: CTGCAGGGATCCATCTTCACCAGGACTGTGGTTGG.
 
-## Suntag and MCP constructs
+### Suntag and MCP constructs
 
 To make the pcDNA-MCP-mCherry-6xGCN4 construct, the 6xSuntag (6xGCN4) was PCR-amplified from pcDNA4TO-24xGCN4_v4-kif18b-24xPP7 (Addgene, #74928) (Yan et al., 2016) with primers 6xSuntag F and 6xSuntag R. The 6xSuntag was inserted into the pcDNA-MCP-mCherry vector with BsrGI and ApaI restriction sites through recombinational cloning. 6xSuntag F: CACCGGCGGCATGGACGAGCTGTACAAGGGTGGAGGTTCTGGAGGA, 6xSuntag R: GCTGATCAGCGGGTTTAAACGGGCCCTTATCCTGAGCCGGAACC.
 
@@ -129,7 +225,7 @@ To make the pcDNA3.1-tdMCP-sfGFP, the sfGFP was PCR amplified from the pcDNA-pur
 
 To make the pcDNA3.1-NLS-tdMCP-sfGFP, the NLS sequence was synthesized and inserted into the pcDNA3.1-tdMCP-sfGFP vector with NheI restriction sites. The sequence of NLS is as follows: ccaaaaaagaaaagaaaagtt.
 
-## Constructs for C. elegans
+### Constructs for C. elegans
 
 Recombinational cloning was performed with the ClonExpress One-Step Cloning Kit (Vazyme).
 
@@ -149,15 +245,15 @@ Psemo-1–24xSuntag was generated by removing MCP from the plasmid Psemo-1-MCP-2
 
 Constructs will be deposited to Addgene.
 
-## Transgenic worms
+### Transgenic worms
 
 Different combinations of plasmids were used for generating extrachromosomal array transgenic worms. Briefly, 50 ng/µl plasmids of Psemo-1-MCP-24xSuntag, 10 ng/µl plasmids of Pcol-19-antibody-sfGFP and 10 ng/µl co-injection marker Pttx-3-RFP were injected into N2 and knock-in animals. The extrachromosomal strains were as follows: SHX3314: Pcol-19-mKate2::CDC-42–8xMS2, Psemo-1-MCP-24xSuntag, Pcol-19-scFv-sfGFP(zjuEx2144); SHX3749: Pcol-19-mKate2::CDC-42–8xMS2; Psemo-1-MCP; Pcol-19-scFv-sfGFP(zjuEx2031); SHX3751: Pcol-19-mKate2::CDC-42–8xMS2; Psemo-1-MCP-24xSuntag; Pcol-19-sfGFP(zjuEx2033); SHX3755: Pcol-19-mKate2::CDC-42–8xMS2; Psemo-1–24xSuntag; Pcol-19-scFV-sfGFP(zjuEx2037); SHX3757: Pcol-19-mKate2::CDC-42; Psemo-1-MCP-24xSuntag; Pcol-19-scFv-sfGFP(zjuEx2144); SHX3908: C42D4.3–8xMS2(syb5468); Psemo-1-MCP-24xSuntag; Pcol-19-scFv-sfGFP(zjuEx2144); SHX3909: mai-1–8xMS2(syb5458); Psemo-1-MCP-24xSuntag; and Pcol-19-scFv-sfGFP(zjuEx2144); SHX4319: Pcol-19-BFP-8xMS2(zjuEx2429).
 
-## Transfections
+### Transfections
 
 Lipofectamine 2000 (Invitrogen) and Endofectin MAX (Genecopoeia) were used for all transfections.
 
-## Live-cell imaging
+### Live-cell imaging
 
 For images in Figure 1 and Videos 1–6:
 
@@ -173,67 +269,67 @@ Time-lapse imaging for calculating the speed of mRNA movement: Exposure time was
 
 Z-stack imaging for calculating intensity and signal-to-noise: Exposure time was 500 ms. Stacks of 5 planes with a z-spacing of 0.5 μm were obtained by using range mode.
 
-## Single-molecule FISH and image acquisition in cells
+### Single-molecule FISH and image acquisition in cells
 
 Two 3′ Cy3 fluorescently labeled DNA oligos (probe-1: catgggtgatcctcatgt, probe-2: ttctagagtcgacctgca) as smFISH probes against MS2 stem-loops and the linker regions were synthesized by Tsingke. HeLa cells were plated on 35-mm glass-bottom dishes (BGI, BGX-03520-100) at a density of 0.8 × 106 to grow for 12 hr and transfected with the indicated constructs. Twelve hours after transfection, cells were washed with phosphate-buffered saline (PBS), fixed with 2% formaldehyde at 37°C for 10 min, and washed twice each for 5 min with PBS. PBS was then discarded, and 2 ml 70% ethanol was added. The plates were kept at 4°C for 8 hr. The 70% ethanol was aspirated, 1 ml wash buffer was added (2× SSC (saline sodium citrate), 10% formamide in RNase-free water), and incubated at RT for 5 min. Hybridization mix was prepared by mixing 10% Dextran sulfate, 10% formamide, 2× SSC, 2 mM ribonucleoside vanadyl complex (NEB), 200 μg/ml yeast tRNA (Sigma, 10109495001), 10 nM probe-1, and 10 nM probe-2. To each plate, 800 μl hybridization mix was added and hybridized at 37°C for 16 hr. Fixed cells on plates were washed twice for 30 min (each time 15 min) with pre-warmed wash buffer (1 ml, 37°C) in the dark, followed by one quick wash with PBST, and kept in PBST for imaging within 3 hr. Images were captured using confocal ZEISS LSM 880 with Airyscan super-resolution mode.
 
-## CRISPR-Cas9-mediated gene knock-in in C. elegans
+### CRISPR-Cas9-mediated gene knock-in in C. elegans
 
 C424.3–8xMS2(syb5468) and mai-1–8xMS2(syb5458) knock-in animals were generated using the CRISPR-Cas9 system. Briefly, two repair templates were cloned using the Gibson assembly technique within a pDD282 plasmid. The MS2 sequence was designed after the termination codon of two genes in the repair template. sgRNA, repair templates, and Peft-3-Cas9-NLS-pU6-dpy-10 sgRNA, as well as Pmyo-2-cherry as co-injection markers, were injected into N2 worms. Knock-in animals were confirmed by PCR genotyping and sequencing. Roller or dumpy animals were heat-shocked or outcrossed to remove markers. The sequences of the sgRNAs used in this study are as follows: C42D4.3 sg1 (CCAAAACTTGCTTGCCAGAACTT); C42D4.3 sg2 (CCAGAACTTTCGGACAATAATTG); mai-1 sg1 (ACAACATCAGCAACGACTGAAGG); mai-1 sg2 (CGACTGAAGGAAATCGAGAAAGG). The precise sequence knock-in is described as follows: gggaggtgatagcattgcttggatccctgcaggtcgactctagaaaacatgaggatcacccatgtctgcaggtcgac tctagaaaacatgaggatcacccatgtgaattcctgcaggtcgactctagaaaacatgaggatcacccatgtctgcaggtcgactctagaaaacatgaggatcacccatgtgatatcctgcaggtcgactctagaaaacatgaggatcacccatgtctgcaggtcgactctagaaaacatgaggatcacccatgtctcgagctgcaggtcgactctagaaaacatgaggatcacccatgtctgcaggtcgactctagaaaacatgaggatcacccatgtgggcccgtttaaacccgctga.
 
-## Drug treatment
+### Drug treatment
 
 The Actinomycin D stock solution was dissolved in DMSO (Dimethyl sulfoxide) and diluted with M9 to a working concentration of 30 µM. Young adult stage worms were incubated in 100 µl Actinomycin D (APExBIO; Catalog No. A4448) solution (containing E. coli OP50) using a 1.5-ml microcentrifuge tube at 20°C for 3 hr. The worms were then transferred to fresh NGM plates to dry before wounding and imaging.
 
-## mRNA stability test in C. elegans
+### mRNA stability test in C. elegans
 
 Worms (n = 200) of WT, C42D4.3-8xMS2 knock-in animals, animals expressing the MASS imaging system, and C42D4.3-8xMS2 knock-in animals expressing the MASS imaging system were incubated in 200 µl Actinomycin D solution (containing E. coil OP50) using the 1.5 ml tubes at 20°C for 0, 3, or 6 hr. The treated worms were used to extract RNA for qRT-PCR (Quantitative Reverse Transcription PCR) of C42D4.3 expression.
 
-## mRNA stability test in cells
+### mRNA stability test in cells
 
 Three exogenous genes (C-MYC, HSPA1A, KIF18B) were selected. For each gene, two plasmids are constructed: with or without 8xMS2. Three groups of transfection were performed: BFP-gene-3′UTR, BFP-gene-3′UTR-8xMS2, and BFP-gene-3′UTR-8xMS2 co-transfected with tdMCP-24xSuntag and scFV-sfGFP. HeLa cells were plated on 12-well plates at a density of 0.3 × 106 to grow for 24 hr and transfected with the indicated constructs. After 12 hr of transfection, 5 μg/ml Actinomycin D (Act D, APExBIO, A4448) was added, and also the first samples with no treatment were collected. Cells with Act D treatment were separately collected after 3 and 6 hr. All samples were used to extract RNA for qRT-PCR (Quantitative Reverse Transcription PCR).
 
-## Wounding assay
+### Wounding assay
 
 A Micropoint UV laser was used to wound the epidermis of young adult stage worms. Briefly, worms at the young adult stage were mounted to 4% agarose gel on a slide, narcotized with 12 µM Levamisole, and wounded using a Micropoint UV laser. The energy ranged from 65 to 70. The repetition rate was 10 Hz, which repeats five times.
 
-## Live imaging in C. elegans
+### Live imaging in C. elegans
 
 Worms were imaged on a spinning disk confocal microscope Nikon Eclipse Ti with Andor confocal scanning unit (×100, NA 1.46 objective). Z-section and time-lapse were set using Andor IQ software to capture the images. For wound-induced reactions, images were single confocal planes imaged every 2 s for 930 s, including 30 s before UV laser and 900 s after wounding. Camera EM gain was 80. Green fluorescence was visualized with a 488-nm laser, and red fluorescence was visualized with a 561-nm laser. The exposure time of the GFP channel was 280 ms and the exposure time of the RFP channel was 120ms. For normal conditions, images were single confocal planes imaged every 0.5 s for 600 s. Camera EM gain was 140. The exposure time of the GFP channel was 110 ms.
 
-## Quantification of the size and number of sfGFP foci
+### Quantification of the size and number of sfGFP foci
 
 The size and number of sfGFP were quantified using Fiji software (https://imagej.net/imagej-wiki-static/Fiji). The background intensity was set as the threshold, and the size and number of foci were calculated using the Analyze Particles command. The value of puncta size and number was statistically analyzed using GraphPad. For puncta size and number, we chose 600 × 400 pixels around the wound site for analysis. The size and number changes were quantified using mean with standard deviation (SD).
 
-## qRT-PCR (Quantitative Reverse Transcription PCR) in C. elegans
+### qRT-PCR (Quantitative Reverse Transcription PCR) in C. elegans
 
 Total RNAs were extracted from 100 young adult worms with TRIzol reagent (Invitrogen, Carlsbad, CA, USA), quantitated by spectrophotometry using a NanoDrop (Thermo, USA), and reverse transcribed using HiScriptIIIReverseTranscriptase (Vazyme, China). qRT-PCR was performed with rbd-1 as the house-keeping gene using the SYBR Green Supermix (Vazyme). The following primers were used in this study.
 
 rbd-1, forward (fwd) CACGGAACAGCAACTACGGA, reverse (rev) CGGCTTGTTTGCATCACCAA; C42D4.3, fwd GCCAGACTCTTGCCTCTCAA, rev CACGCGGTGTGATCTTTTCC; mai-1, fwd CGGCTCAATCCGTGAAGC, rev TGTTGGCTTTGCGTCATATC.
 
-## qRT-PCR (Quantitative Reverse Transcription PCR) in cells
+### qRT-PCR (Quantitative Reverse Transcription PCR) in cells
 
 Total RNAs were extracted with RNA isolater (Vazyme, R401-01), and reverse transcribed using HiScriptIIIReverseTranscriptase (Vazyme, R323-01). qRT-PCR was performed with GAPDH as the house-keeping gene using the ChamQ Universal SYBR qPCR Master Mix (Vazyme, Q711-03). Primers for qRT-PCR of genes were designed as primer F at BFP and primer R at genes. The following primers were used in this study.
 
-## Statistical analysis in C. elegans
+### Statistical analysis in C. elegans
 
 Statistical analyses were performed using GraphPad Prism 7 (La Jolla, CA). One-way analysis of variance (ANOVA for multiple comparisons), a non-parametric Mann–Whitney test was used for two comparisons. NS indicates not significant, *indicates p < 0.05, **indicates p < 0.01, *** indicates p < 0.001, **** indicates p < 0.0001. Unless elsewhere stated, bars represent means ± SD.
 
-## Quantification and statistical analysis in cells
+### Quantification and statistical analysis in cells
 
-## smFISH analysis
+#### smFISH analysis
 
 To quantify mRNA numbers detected by smFISH and MASS, also the ratio of colocalization, Fiji Plugin (https://imagej.net/imagej-wiki-static/Fiji)-ComDet was used for spot detection in two-color channel images. Data were analyzed in Excel, and the scatter diagram was generated using GraphPad Prism9.
 
-## The mRNA expression level by qRT-PCR
+#### The mRNA expression level by qRT-PCR
 
 Statistical analyses were performed using GraphPad Prism 9. One-way ANOVA for multiple comparisons and non-paired t-tests were used for two comparisons. NS indicates not significant, *indicates p < 0.05, **indicates p < 0.01, *** indicates p < 0.001, **** indicates p < 0.0001. Unless elsewhere stated, bars represent means ± SD.
 
-## Intensity and signal-to-noise
+#### Intensity and signal-to-noise
 
 Single-plane images were used for analysis using the Fiji plugin Trackmate (Tinevez et al., 2017). Particle size was estimated at 0.3 μm and a Differences of Gaussian (DoG) filter was applied to detect all spots. The ‘Simple LAP tracker’ particle-linking algorithm was used and the linking max distance was 15 μm, the gap closing distance was 15 μm, and the gap closing max frame was 2. The intensity and signal-to-noise ratio were produced by TrackMate and served as source data for the generation of histogram graphs by SPSS, and curve diagrams by Excel.
 
-## Velocity analysis
+#### Velocity analysis
 
 For the conventional 24xMS2 mRNA imaging system, an NLS was fused to MCP to localize NLS-MCP-GFP into the nucleus, which allows the detection of mRNAs in the cytoplasm with a high signal-to-noise ratio. However, mRNAs in the nucleus cannot be detected clearly. Therefore, when the velocity analysis was performed, signals in the nucleus were excluded and only mRNA foci in the cytoplasm were included for analysis.
 

@@ -17,7 +17,7 @@
 
 ## Abstract
 
-10.7554/eLife.15537.001 Cut-and-paste DNA transposons of the mariner/Tc1 family are useful tools for genome engineering and are inserted specifically at TA target sites. A crystal structure of the mariner transposase Mos1 (derived from Drosophila mauritiana ), in complex with transposon ends covalently joined to target DNA, portrays the transposition machinery after DNA integration. It reveals severe distortion of target DNA and flipping of the target adenines into extra-helical positions. Fluorescence experiments confirm dynamic base flipping in solution. Transposase residues W159, R186, F187 and K190 stabilise the target DNA distortions and are required for efficient transposon integration and transposition in vitro. Transposase recognises the flipped target adenines via base-specific interactions with backbone atoms, offering a molecular basis for TA target sequence selection. Our results will provide a template for re-designing mariner/Tc1 transposases with modified target specificities. DOI: http://dx.doi.org/10.7554/eLife.15537.001
+Cut-and-paste DNA transposons of the mariner/Tc1 family are useful tools for genome engineering and are inserted specifically at TA target sites. A crystal structure of the mariner transposase Mos1 (derived from Drosophila mauritiana), in complex with transposon ends covalently joined to target DNA, portrays the transposition machinery after DNA integration. It reveals severe distortion of target DNA and flipping of the target adenines into extra-helical positions. Fluorescence experiments confirm dynamic base flipping in solution. Transposase residues W159, R186, F187 and K190 stabilise the target DNA distortions and are required for efficient transposon integration and transposition in vitro. Transposase recognises the flipped target adenines via base-specific interactions with backbone atoms, offering a molecular basis for TA target sequence selection. Our results will provide a template for re-designing mariner/Tc1 transposases with modified target specificities.
 
 ## Introduction
 
@@ -27,67 +27,287 @@ DNA transposons move from one genomic location to another using transposon-encod
 
 Mariner/Tc1/IS630 family transposases are unusual as they integrate their transposons, with a 2 bp stagger, strictly at TA target sequences (Tellier et al., 2015). They are widespread in nature and are used as tools for genome engineering and therapeutic applications. For example, the reconstructed Tc1 transposase Sleeping Beauty (Ivics et al., 1997) is being used in human clinical trials to treat B-cell lymphoma by genetic engineering of T cells (Maiti et al., 2013) and in pre-clinical studies to reduce age-related macular degeneration (Johnen et al., 2012). Up to 45 kb of DNA can be inserted into the C. elegans genome using a transposition system engineered from the mariner transposon Mos1 from Drosophila mauritiana (Frøkjær-Jensen et al., 2014). The ability to pre-select specific sites for integration, beyond the requisite TA, may be desirable for certain genome engineering applications, e.g. controlled genomic integration of a therapeutic gene. Such targeted transposition has been achieved for the bacterial transposase ISY100 using a C-terminal Zif268 DNA-binding domain fusion (Feng et al., 2010); and for Sleeping Beauty transposase either by fusing it with a targeting domain (Yant et al., 2007) or by exploiting interactions with a targeting protein (Ivics et al., 2007). Conversely, it may be useful to randomise mariner/Tc1 integrations; for example in whole genome sequencing applications as an alternative to Tn5 (Amini et al., 2014). Understanding in molecular detail how mariner/Tc1 transposons are integrated at TA target sites will aid development of these elements as genome engineering tools.
 
-The wealth of structural and biochemical data for the naturally active, eukaryotic transposon
+The wealth of structural and biochemical data for the naturally active, eukaryotic transposon Mos1 offers a paradigm for determining the molecular mechanism of mariner/Tc1 transposon integration. The 1286 bp transposon is framed by 28 bp imperfect inverted repeats (IR) (Jacobson et al., 1986) and encodes a 345 amino acid transposase that can perform cut-and-paste DNA transposition in vitro (Lampe et al., 1996), as shown in Figure 1a. The Mos1 transposase homodimer binds to the IR at one transposon end (Cuypers et al., 2013) and then captures the other IR, forming a paired-end complex (PEC). The trans architecture of the PEC regulates coordinated excision of the transposon ends (Richardson et al., 2009) and cross-talk between transposase sub-units (Bouuaert et al., 2014; Dornan et al., 2015). After excision, the Mos1 transpososome locates a TA target integration site (Pflieger et al., 2014) and, upon binding, forms a target capture complex (TCC) (Figure 1a). Attack by the 3'-OH at each transposon end on the phosphodiester 5' of the TA dinucleotide joins the excised transposon to the target site, in the DNA strand transfer reaction (Figure 1a,b). The DNA product of transposition, which contains a gap at each transposon end, is bound to the transposase in a strand transfer complex (STC).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/15537/elife-15537-fig1-v2.jpg)
 
-**Figure 1.:** (a) Schematic of pathway and complexes formed. Each transposon end has a 28 bp IR sequence (triangle) flanked by the TA target site duplication. First and second strand cleavages (scissors) are staggered by three bp and generate a 5' phosphate (filled circle) on the non-transferred strand (NTS), 3 bases within the IR, and a 3'OH (arrow) at the transferred strand (TS) end, respectively. After target DNA capture, the transposon 3' ends integrate at a symmetrical TA sequence, resulting in a 5 nt gap. Gap repair duplicates the TA. (b) Mos1 strand transfer. The transposon 3'OHs attack the phosphodiester bond between T0 and C-1 on both the top (t, black) and bottom (b, magenta) target DNA strands, joining each TS to target DNA, separating the TA base pairs, and leaving a 3'OH at C-1. (c) Sequence and numbering of the DNA used to crystallise the STC; see also Table 1.DOI: http://dx.doi.org/10.7554/eLife.15537.003
+**Figure 1.:** (a) Schematic of pathway and complexes formed. Each transposon end has a 28 bp IR sequence (triangle) flanked by the TA target site duplication. First and second strand cleavages (scissors) are staggered by three bp and generate a 5' phosphate (filled circle) on the non-transferred strand (NTS), 3 bases within the IR, and a 3'OH (arrow) at the transferred strand (TS) end, respectively. After target DNA capture, the transposon 3' ends integrate at a symmetrical TA sequence, resulting in a 5 nt gap. Gap repair duplicates the TA. (b) Mos1 strand transfer. The transposon 3'OHs attack the phosphodiester bond between T0 and C-1 on both the top (t, black) and bottom (b, magenta) target DNA strands, joining each TS to target DNA, separating the TA base pairs, and leaving a 3'OH at C-1. (c) Sequence and numbering of the DNA used to crystallise the STC; see also Table 1.
 
 To establish how mariner/Tc1 transposases recognize and integrate transposon DNA at a TA dinucleotide, we determined a crystal structure of the Mos1 STC. In this snapshot of the transposition machinery after DNA transposon integration, the target DNA is distorted from B-form and the target adenines are flipped into extra-helical positions. Base-flipping is confirmed in solution by time-resolved fluorescence of strand transfer complexes in which the target adenines are substituted by 2-aminopurine. Adenine-specific interactions, between the flipped adenine bases and transposase backbone atoms, provide a molecular basis for recognition of the TA target sequence. Interactions with Mos1 transposase residues W159, R186, F187 and K190, which are essential for transposon integration in vitro, stabilise distortions in the target DNA. Conservation of key residues involved in stabilising the target DNA distortions suggests this mechanism may also occur with other mariner/Tc1 family transposons.
 
 ## Results
 
-## Crystallisation of the Mos1 strand transfer complex
+### Crystallisation of the Mos1 strand transfer complex
 
-To assemble the Mos1 STC, full length T216A Mos1 transposase was combined, in a 1:1 molar ratio, with DNA representing the product of transposon integration (Figure 1c). This DNA contains the transposon IR joined at its 3' end to an unpaired TA dinucleotide and target DNA (Table 1). The bottom target DNA strand (strand b, magenta, Figure 1c) has a cohesive 4 nt 5' overhang (sequence GGCC) to promote interactions between adjacent complexes in the crystal lattice. This approach, of assembling the STC using the strand transfer product, and bypassing catalysis of integration, proved successful for the preparation of bona fide PFV strand transfer complexes (Yin et al., 2012).10.7554/eLife.15537.004Table 1.Sequences of oligonucleotides used in the crystallisation, target integration and fluorescence experiments. The target TA dinucleotide (and its variants) are highlighted in bold. The adenine analogue 2-aminopurine is denoted P and 2,6-diaminopurine is D; the thymine analogue 2-thio-thymine, is indicated by S. IR700 indicates the 5' addition of the infrared fluorescent dye 700.DOI: http://dx.doi.org/10.7554/eLife.15537.004NameSequenceLength (nt)Crystallisation of STCTS5' AAA CGA CAT TTC ATA CTT GTA CAC CTG ATA GCA GTG36NTS5' GGT GTA CAA GTA TGA AAT GTC GTT T25target DNA5' GGC CCA CTG C10Target Integration AssaysTS IR DNA5' AAA CGA CAT TTC ATA CTT GTA CAC CTG A28TS 5' labelled IR DNA5' IR700 / AAA CGA CAT TTC ATA CTT GTA CAC CTG A28NTS IR DNA5' GGT GTA CAA GTA TGA AAT GTC GTT T25TA target DNA (top strand)5' AGC AGT GCA CTA GTG CAC GAC CGT TCA AAG CTT CGG AAC GGG ACA CTG TT50TA target DNA (bottom strand)5' AAC AGT GTC CCG TTC CGA AGC TTT GAA CGG TCG TGC ACT AGT GCA CTG CT50TP target DNA (top strand)5' AGC AGT GCA CTP GTG CAC GAC CGT TCA AAG CTT CGG AAC GGG ACA CTG TT50TP target DNA (bottom strand)5' AAC AGT GTC CCG TTC CGA AGC TTT GAA CGG TCG TGC ACT PGT GCA CTG CT50TD target DNA (top strand)5' AGC AGT GCA CTD GTG CAC GAC CGT TCA AAG CTT CGG AAC GGG ACA CTG TT50TD target DNA (bottom strand)5' AAC AGT GTC CCG TTC CGA AGC TTT GAA CGG TCG TGC ACT DGT GCA CTG CT50SD target DNA (top strand)5' AGC AGT GCA CSD GTG CAC GAC CGT TCA AAG CTT CGG AAC GGG ACA CTG TT50SD target DNA (bottom strand)5' AAC AGT GTC CCG TTC CGA AGC TTT GAA CGG TCG TGC ACS DGT GCA CTG CT50Fluorescence experimentsTS_P15' AAA CGA CAT TTC ATA CTT GTA CAC CTG AtP gca gtg gac gta ggc c46TS_P135' AAA CGA CAT TTC ATA CTT GTA CAC CTG Ata gca gtg gac gtP ggc c46TS_A15' AAA CGA CAT TTC ATA CTT GTA CAC CTG Ata gca gtg gac gta ggc c46NTS5' GGT GTA CAA GTA TGA AAT GTC GTT T25Target_165' g gcc tac gtc cac tgc16
+To assemble the Mos1 STC, full length T216A Mos1 transposase was combined, in a 1:1 molar ratio, with DNA representing the product of transposon integration (Figure 1c). This DNA contains the transposon IR joined at its 3' end to an unpaired TA dinucleotide and target DNA (Table 1). The bottom target DNA strand (strand b, magenta, Figure 1c) has a cohesive 4 nt 5' overhang (sequence GGCC) to promote interactions between adjacent complexes in the crystal lattice. This approach, of assembling the STC using the strand transfer product, and bypassing catalysis of integration, proved successful for the preparation of bona fide PFV strand transfer complexes (Yin et al., 2012).
 
-Mos1 STC crystals diffracted X-rays to a maximum resolution of 3.3 Å. Crystallographic phases were determined by molecular replacement (Materials and methods). The difference electron density after molecular replacement and before model building is shown in Figure 2—figure supplement 1. The crystallographic asymmetric unit contains one Mos1 STC and, as predicted, base pairing of the 4 nt overhangs in adjacent complexes facilitates crystal packing (Figure 2—figure supplement 2). The refined model has an R(free) of 27.9% and good stereochemistry. The X-ray diffraction and refinement statistics are shown in Table 2.10.7554/eLife.15537.005Table 2.X-ray diffraction and refinement statistics.DOI: http://dx.doi.org/10.7554/eLife.15537.005CrystalMos1 Strand transfer complexPDB ID5HOOSpace groupC121Cell dimensionsa = 256.3 Å b = 58.9 Å c = 110.2 Å α = 90.0°, β = 94.9°, γ = 90.0°Wavelength (Å)0.9795Average mosaicity0.22OverallOuter shellResolution (Å)86.99–3.293.52–3.29Rsymm0.0770.152Total observations7835814630Unique observations252014479< I>/σ<I>8.13.3Correlation CC0.9270.996Completeness (%)99.699.5Multiplicity3.13.3Rwork0.243Rfree (5.21% of reflections)0.279R.m.s. deviations: Bond Length (Å) Bond Angle (deg) Chiral volume (Å)0.0077 1.2072 0.0785Average B factor (Å2)74.0Ramachandran plot: Core (%) Allowed (%) Outliers (%)90.8 9.2 0
+**Table 1.**
+ Sequences of oligonucleotides used in the crystallisation, target integration and fluorescence experiments. The target TA dinucleotide (and its variants) are highlighted in bold. The adenine analogue 2-aminopurine is denoted P and 2,6-diaminopurine is D; the thymine analogue 2-thio-thymine, is indicated by S. IR700 indicates the 5' addition of the infrared fluorescent dye 700.
 
-## Architecture of the Mos1 strand transfer complex
 
-The refined Mos1 STC crystal structure (
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Sequence</th>
+      <th>Length (nt)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Crystallisation of STC</td>
+    </tr>
+    <tr>
+      <td>TS</td>
+      <td>5' AAA CGA CAT TTC ATA CTT GTA CAC CTG ATA GCA GTG</td>
+      <td>36</td>
+    </tr>
+    <tr>
+      <td>NTS</td>
+      <td>5' GGT GTA CAA GTA TGA AAT GTC GTT T</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>target DNA</td>
+      <td>5' GGC CCA CTG C</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td colspan="3">Target Integration Assays</td>
+    </tr>
+    <tr>
+      <td>TS IR DNA</td>
+      <td>5' AAA CGA CAT TTC ATA CTT GTA CAC CTG A</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>TS 5' labelled IR DNA</td>
+      <td>5' IR700 / AAA CGA CAT TTC ATA CTT GTA CAC CTG A</td>
+      <td>28</td>
+    </tr>
+    <tr>
+      <td>NTS IR DNA</td>
+      <td>5' GGT GTA CAA GTA TGA AAT GTC GTT T</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>TA target DNA (top strand)</td>
+      <td>5' AGC AGT GCA CTA GTG CAC GAC CGT TCA AAG CTT CGG AAC GGG ACA CTG TT</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>TA target DNA (bottom strand)</td>
+      <td>5' AAC AGT GTC CCG TTC CGA AGC TTT GAA CGG TCG TGC ACT AGT GCA CTG CT</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>TP target DNA (top strand)</td>
+      <td>5' AGC AGT GCA CTP GTG CAC GAC CGT TCA AAG CTT CGG AAC GGG ACA CTG TT</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>TP target DNA (bottom strand)</td>
+      <td>5' AAC AGT GTC CCG TTC CGA AGC TTT GAA CGG TCG TGC ACT PGT GCA CTG CT</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>TD target DNA (top strand)</td>
+      <td>5' AGC AGT GCA CTD GTG CAC GAC CGT TCA AAG CTT CGG AAC GGG ACA CTG TT</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>TD target DNA (bottom strand)</td>
+      <td>5' AAC AGT GTC CCG TTC CGA AGC TTT GAA CGG TCG TGC ACT DGT GCA CTG CT</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>SD target DNA (top strand)</td>
+      <td>5' AGC AGT GCA CSD GTG CAC GAC CGT TCA AAG CTT CGG AAC GGG ACA CTG TT</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td>SD target DNA (bottom strand)</td>
+      <td>5' AAC AGT GTC CCG TTC CGA AGC TTT GAA CGG TCG TGC ACS DGT GCA CTG CT</td>
+      <td>50</td>
+    </tr>
+    <tr>
+      <td colspan="3">Fluorescence experiments</td>
+    </tr>
+    <tr>
+      <td>TS_P1</td>
+      <td>5' AAA CGA CAT TTC ATA CTT GTA CAC CTG AtP gca gtg gac gta ggc c</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>TS_P13</td>
+      <td>5' AAA CGA CAT TTC ATA CTT GTA CAC CTG Ata gca gtg gac gtP ggc c</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>TS_A1</td>
+      <td>5' AAA CGA CAT TTC ATA CTT GTA CAC CTG Ata gca gtg gac gta ggc c</td>
+      <td>46</td>
+    </tr>
+    <tr>
+      <td>NTS</td>
+      <td>5' GGT GTA CAA GTA TGA AAT GTC GTT T</td>
+      <td>25</td>
+    </tr>
+    <tr>
+      <td>Target_16</td>
+      <td>5' g gcc tac gtc cac tgc</td>
+      <td>16</td>
+    </tr>
+  </tbody>
+</table>
+
+Mos1 STC crystals diffracted X-rays to a maximum resolution of 3.3 Å. Crystallographic phases were determined by molecular replacement (Materials and methods). The difference electron density after molecular replacement and before model building is shown in Figure 2—figure supplement 1. The crystallographic asymmetric unit contains one Mos1 STC and, as predicted, base pairing of the 4 nt overhangs in adjacent complexes facilitates crystal packing (Figure 2—figure supplement 2). The refined model has an R(free) of 27.9% and good stereochemistry. The X-ray diffraction and refinement statistics are shown in Table 2.
+
+**Table 2.**
+ X-ray diffraction and refinement statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Crystal</th>
+      <th colspan="2">Mos1 Strand transfer complex</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PDB ID</td>
+      <td colspan="2">5HOO</td>
+    </tr>
+    <tr>
+      <td>Space group</td>
+      <td colspan="2">C121</td>
+    </tr>
+    <tr>
+      <td>Cell dimensions</td>
+      <td colspan="2">a = 256.3 Å b = 58.9 Å c = 110.2 Å α = 90.0°, β = 94.9°, γ = 90.0°</td>
+    </tr>
+    <tr>
+      <td>Wavelength (Å)</td>
+      <td colspan="2">0.9795</td>
+    </tr>
+    <tr>
+      <td>Average mosaicity</td>
+      <td colspan="2">0.22</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Overall</td>
+      <td>Outer shell</td>
+    </tr>
+    <tr>
+      <td>Resolution (Å)</td>
+      <td>86.99–3.29</td>
+      <td>3.52–3.29</td>
+    </tr>
+    <tr>
+      <td>Rsymm</td>
+      <td>0.077</td>
+      <td>0.152</td>
+    </tr>
+    <tr>
+      <td>Total observations</td>
+      <td>78358</td>
+      <td>14630</td>
+    </tr>
+    <tr>
+      <td>Unique observations</td>
+      <td>25201</td>
+      <td>4479</td>
+    </tr>
+    <tr>
+      <td>&lt; I&gt;/σ&lt;I&gt;</td>
+      <td>8.1</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>Correlation CC</td>
+      <td>0.927</td>
+      <td>0.996</td>
+    </tr>
+    <tr>
+      <td>Completeness (%)</td>
+      <td>99.6</td>
+      <td>99.5</td>
+    </tr>
+    <tr>
+      <td>Multiplicity</td>
+      <td>3.1</td>
+      <td>3.3</td>
+    </tr>
+    <tr>
+      <td>Rwork</td>
+      <td colspan="2">0.243</td>
+    </tr>
+    <tr>
+      <td>Rfree (5.21% of reflections)</td>
+      <td colspan="2">0.279</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations: Bond Length (Å) Bond Angle (deg) Chiral volume (Å)</td>
+      <td colspan="2">0.0077 1.2072 0.0785</td>
+    </tr>
+    <tr>
+      <td>Average B factor (Å2)</td>
+      <td colspan="2">74.0</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot: Core (%) Allowed (%) Outliers (%)</td>
+      <td colspan="2">90.8 9.2 0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Architecture of the Mos1 strand transfer complex
+
+The refined Mos1 STC crystal structure (Figure 2a) contains a transposase homodimer bound to two DNA duplexes representing the products of transposon integration. Target DNA binds in a channel between the two catalytic domains and the active sites contain the strand transfer products. As the TCC also contains a transposase dimer (Pflieger et al., 2014), our new STC structure indicates that Mos1 strand transfer, like transposon excision, is catalysed by a transposase dimer.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/15537/elife-15537-fig2-v2.jpg)
 
-**Figure 2.:** (a) Structure of the STC, with transposase subunits (orange and blue), IR DNA (orange and green) and target DNA (magenta and black). Figure 2—figure supplement 1 shows the crystal packing arrangement. (b) Schematic of the Mos1 STC. See Figure 2—figure supplement 2 for details of transposase DNA interactions. (c) DNA components of the STC: target DNA is bent and each IR TS connects at the 3' end to a target DNA strand. (d) The active site of catalytic domain B, showing the product of strand transfer into the bottom target strand (magenta). The simulated annealing composite omit 2Fo-Fc electron density map (grey mesh) is contoured at 1.2σ. The single Mg2+ is coordinated by D249, D156 and the 3'OH of C-1.DOI: http://dx.doi.org/10.7554/eLife.15537.006
+**Figure 2.:** (a) Structure of the STC, with transposase subunits (orange and blue), IR DNA (orange and green) and target DNA (magenta and black). Figure 2—figure supplement 1 shows the crystal packing arrangement. (b) Schematic of the Mos1 STC. See Figure 2—figure supplement 2 for details of transposase DNA interactions. (c) DNA components of the STC: target DNA is bent and each IR TS connects at the 3' end to a target DNA strand. (d) The active site of catalytic domain B, showing the product of strand transfer into the bottom target strand (magenta). The simulated annealing composite omit 2Fo-Fc electron density map (grey mesh) is contoured at 1.2σ. The single Mg2+ is coordinated by D249, D156 and the 3'OH of C-1.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/15537/elife-15537-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** The Fo-Fc electron density (at 2.3σ) is plotted as a pink mesh with the molecular replacement model: the Mos1 PEC structure (3HOS, chains A to F). (a) Full view of one Mos1 PEC molecule, and (b) close-up view of the catalytic domains and the TSs. Transposase subunits (chains A and B) are shown as ribbons and the IR DNA duplexes (chains C to F) as ladders.DOI: http://dx.doi.org/10.7554/eLife.15537.007
+**Figure 2—figure supplement 1.:** The Fo-Fc electron density (at 2.3σ) is plotted as a pink mesh with the molecular replacement model: the Mos1 PEC structure (3HOS, chains A to F). (a) Full view of one Mos1 PEC molecule, and (b) close-up view of the catalytic domains and the TSs. Transposase subunits (chains A and B) are shown as ribbons and the IR DNA duplexes (chains C to F) as ladders.
 
 ![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/15537/elife-15537-fig2-figsupp2-v2.jpg)
 
-**Figure 2—figure supplement 2.:** Four copies of the Mos1 STC are shown. The 5' end of each target DNA strand has a 4 nt overhang, with the self-complementary sequence GGCC, which base pairs with a symmetry related overhang in an adjacent STC molecule.DOI: http://dx.doi.org/10.7554/eLife.15537.008
+**Figure 2—figure supplement 2.:** Four copies of the Mos1 STC are shown. The 5' end of each target DNA strand has a 4 nt overhang, with the self-complementary sequence GGCC, which base pairs with a symmetry related overhang in an adjacent STC molecule.
 
 ![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/15537/elife-15537-fig2-figsupp3-v2.jpg)
 
-**Figure 2—figure supplement 3.:** The IR DNA is shown in blue, and the target DNA shown in black (top strand) and magenta (bottom strand). Lines connect the detailed description of the interaction to either a circle (denoting a backbone phosphate) or the central rectangle (representing a base). Transposase interactions with the backbone phosphates of nucleotides surrounding the TA target sequence support the target DNA conformation, and include contacts between the backbone amides of Y276 and N250 and C-1; Y276 OH and G-2; T213 HG1 and A4; A216 NH and G5 and R257 NH and T6.DOI: http://dx.doi.org/10.7554/eLife.15537.009
+**Figure 2—figure supplement 3.:** The IR DNA is shown in blue, and the target DNA shown in black (top strand) and magenta (bottom strand). Lines connect the detailed description of the interaction to either a circle (denoting a backbone phosphate) or the central rectangle (representing a base). Transposase interactions with the backbone phosphates of nucleotides surrounding the TA target sequence support the target DNA conformation, and include contacts between the backbone amides of Y276 and N250 and C-1; Y276 OH and G-2; T213 HG1 and A4; A216 NH and G5 and R257 NH and T6.
 
 The transposase subunits adopt a crossed (or trans) arrangement with IR DNA in the Mos1 STC, similar to the pre- and post-TS cleavage Mos1 PECs (Dornan et al., 2015; Richardson et al., 2009): each IR is recognised by the DNA-binding domain of one transposase subunit and by the catalytic domain of the other subunit (Figure 2b), and vice versa. This brings the cleaved transposon ends together, and ensures suitable spacing for their integration into TA target DNA. Transposase interactions with IR DNA in the STC (Figure 2—figure supplement 3) are similar to those in the post-TS cleavage PEC, suggesting that, after transposon excision, the transpososome is poised for target capture. Thus, rather than rearrange the transposase and IR DNA, target DNA is deformed to enable strand transfer.
 
-## Mos1 transposase sharply bends target DNA
+### Mos1 transposase sharply bends target DNA
 
 The target DNA is severely distorted from B-form conformation (Figure 2c): the backbone is bent by 147°, with the apex of the bend at the TA target dinucleotide. DNA unwinds most readily at TA sequences due to the inherent bendability of a pyrimidine-purine step (which has minimal base-to-base overlap and low twist angles) and the lower stability of a TA base pair, compared to CG. The strand transfer reaction creates a nick in both target DNA strands 5' of the target thymine T0, which likely relieves steric constraints and allows the extreme bend across the TA di-nucleotide. Transposase interactions with the backbone phosphates of target nucleotides surrounding the TA sequence support this conformation (Figure 2—figure supplement 3).
 
-## Strand transfer products are in proximity to the active sites
+### Strand transfer products are in proximity to the active sites
 
 The transposase performs three nucleophilic substitution reactions at each transposon end: sequential hydrolysis of both DNA strands to excise the transposon, followed by strand transfer to join the IR to target DNA (Figure 1a). One IR is transferred to the top strand (t, black, Figure 1b), and the other to the bottom strand (b, magenta, Figure 1b). In-line SN2 attack by each transposon 3'-OH on the scissile T0 target DNA phosphate (Figure 1c) creates a new bond between the transposon end and the target thymine (T0). At the same time, the phosphodiester linking C-1 and T0 is broken, leaving a 3'-OH on C-1 and inverting the stereochemistry of the scissile T0 phosphate.
 
 Each Mos1 transposase active site comprises the carboxylate side-chains of three conserved aspartates (D156, D249 and D284) from the same catalytic domain, which coordinate the metal ions (Mg2+ or Mn2+) required for catalysis. One Mg2+ was observed in each active site in the Mos1 STC, coordinated by the D156 and D249 carboxylates, the 3'-OH of C-1 and a water molecule. The phosphodiester joining each transposon 3' end (A56) to a T0 passes close to an active site (Figure 2b,c,d). The T0 phosphate oxygens are 4.4 Å and 7 Å from the Mg2+, precluding chelation. Moreover, the C-1 3'-OH is not in-line with the T0–A56 phosphodiester bond, consistent with repositioning of the nascent transposon-target DNA junction, away from the active site Mg2+ after strand transfer. Similar to the PFV STC (Maertens et al., 2010), this likely prevents self-destructive disintegration and drives transposition forwards.
 
-## The target thymines are unpaired and flexible
+### The target thymines are unpaired and flexible
 
-Each transposon–target thymine junction is clearly defined in the electron density map (
+Each transposon–target thymine junction is clearly defined in the electron density map (Figure 2d). There is also clear density for the nucleobase of T0 on strand b (magenta) in active site B. However, we observed no clear density for the T0 base on strand t (active site A), indicating some disorder in its position. Therefore this nucleotide was built as abasic. In active site B the T0 nucleobase π–π stacks with the base of C-1 to which T0 would have been connected before strand transfer. The T0 base is unpaired and O4 is 3.4 Å from the H122 imidazole NH, suggesting a possible base-specific hydrogen bond (Figure 3a). However, the mutation H122A had no effect on the strand transfer efficiency (Figure 3—figure supplement 1), and we conclude that the putative thymine-specific hydrogen bond is not required for target integration and may be transient, due to T0 base mobility.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/15537/elife-15537-fig3-v2.jpg)
 
-**Figure 3.:** (a) Target DNA binding in the Mos1 STC, showing the flipped A1 conformation. The unpaired T0 base stacks with the C-1 base of the same strand. See Figure 3—figure supplement 1 for the effect on strand transfer activity of the mutation H122A. (b) Schematic of the TA1 DNA duplex and gel filtration chromatograms of Mos1 transposase (red), TA1 (blue) and the STC (black). UV absorbance at 280 nm (solid line) and 260 nm (dotted line). (c and d) Fluorescence spectroscopy of the 2AP-labelled DNA oligonucleotides TP13 and TP1, shown schematically in (c) and (d) respectively. The A-factor (fractional population) and lifetime of each of the four fluorescence decay components are plotted for TP13 and TP1 alone (black circles and lines) and in the presence of Mos1 transposase (red triangles and lines); and tabulated in Figure 3—source data 1. The steady-state fluorescence emission spectra are inset in each case.DOI: http://dx.doi.org/10.7554/eLife.15537.01010.7554/eLife.15537.011Figure 3—source data 1.DOI: http://dx.doi.org/10.7554/eLife.15537.011
+**Figure 3.:** (a) Target DNA binding in the Mos1 STC, showing the flipped A1 conformation. The unpaired T0 base stacks with the C-1 base of the same strand. See Figure 3—figure supplement 1 for the effect on strand transfer activity of the mutation H122A. (b) Schematic of the TA1 DNA duplex and gel filtration chromatograms of Mos1 transposase (red), TA1 (blue) and the STC (black). UV absorbance at 280 nm (solid line) and 260 nm (dotted line). (c and d) Fluorescence spectroscopy of the 2AP-labelled DNA oligonucleotides TP13 and TP1, shown schematically in (c) and (d) respectively. The A-factor (fractional population) and lifetime of each of the four fluorescence decay components are plotted for TP13 and TP1 alone (black circles and lines) and in the presence of Mos1 transposase (red triangles and lines); and tabulated in Figure 3—source data 1. The steady-state fluorescence emission spectra are inset in each case.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/15537/elife-15537-fig3-figsupp1-v2.jpg)
 
-**Figure 3—figure supplement 1.:** (a) Denaturing PAGE of the strand transfer reaction products. Lanes 1 and 6 contain markers; lane 2 is without transposase; lane 3 has no target DNA, but integration occurs at the two TA dinucleotides within the IR DNA sequence. (b) Quantification of the 40 nt and 68 nt strand transfer products for each mutant transposase, as a percentage of total DNA.DOI: http://dx.doi.org/10.7554/eLife.15537.012
+**Figure 3—figure supplement 1.:** (a) Denaturing PAGE of the strand transfer reaction products. Lanes 1 and 6 contain markers; lane 2 is without transposase; lane 3 has no target DNA, but integration occurs at the two TA dinucleotides within the IR DNA sequence. (b) Quantification of the 40 nt and 68 nt strand transfer products for each mutant transposase, as a percentage of total DNA.
 
-## The target adenines are flipped into extra-helical positions
+### The target adenines are flipped into extra-helical positions
 
 The most striking feature of the Mos1 STC structure is flipping of both target adenine (A1) bases of the symmetrical TA sequence into extra-helical positions (Figure 3a). The phosphate backbone atoms of A1 and G2 are rotated by ~180°, with respect to the adjacent nucleotides, so that the A1 bases cannot pair with their complementary T0. Instead each unpaired A1 is wedged against the ribose face of the complementary target strand, at an oblique angle to bases G2 and C3 (Figure 3a). The aromatic ring of each F187 occupies the space vacated by a flipped A1, forming a π–π stack with the adjacent G2 nucleobase, stabilising this conformation (Figure 3a).
 
@@ -99,45 +319,45 @@ A dynamic picture of DNA conformations in solution can be gained from the interp
 
 We measured the fluorescence decays of the 2AP-containing DNA duplexes TP13 and TP1 in the absence and presence of Mos1 transposase (Figure 3c,d). In the absence of transposase, 90% of the 2AP population of TP13 has the shortest lifetime (τ1=30ps), indicating a tightly stacked duplex structure. Upon addition of Mos1 transposase, the decay parameters are essentially unchanged showing that the local duplex structure is unaffected, confirming the steady-state fluorescence results. TP1 fluorescence decay, in the absence of protein, is also dominated by the shortest lifetime, stacked component (76%, τ1= 50 ps, Figure 3d), with only 6% of the population in the unstacked state (τ4 = 7.5 ns). (The differences in the decay parameters between TP13 and TP1 are consistent with a less tightly stacked environment in the latter, where 2AP is unpaired). However, upon addition of transposase to TP1, the decay parameters change markedly (Figure 3d). Most notably, there is a large transfer of population from the highly stacked state (τ1 = 80 ps) to the unstacked, unquenched state (τ4 9.7 ns); the population of the former falls to 38% and that of the latter increases concomitantly to 31%. This clearly confirms that, in solution, 2AP at the position of the target adenine A1 in the Mos1 STC experiences base-flipping into an extra-helical environment. Moreover, flipping of this 2AP is dynamic: a number of conformational states are sampled, including base-flipped and base-stacked environments.
 
-## Transposase residues stabilise the distorted target DNA backbone
+### Transposase residues stabilise the distorted target DNA backbone
 
-Base flipping of each A
+Base flipping of each A1 severely distorts the surrounding target DNA. Side-chain atoms of transposase residues R186, K190 and W159 stabilise these distortions (Figure 4a) by forming salt bridges or hydrogen bonds with the A1 and G2 phosphates. The DNA backbone rotations bring the G2 phosphates on both target DNA strands within 6.7 Å of each other and close to the guanidinium group of R186 in subunit A (R186A); each NηH2 group hydrogen bonds with a G2 phosphate oxygen on one strand (Figure 4a). In both subunits, the K190 side-chain NζH2 forms a salt bridge with the other G2 phosphate oxygen on one strand. Furthermore, the W159 indole N1H interacts with an A1 phosphate oxygen. Additionally, the NηH2 group of R186B (which has a different conformation to R186A) interacts with the other A1 phosphate oxygen on the top strand (black, Figure 4a). The NζH2 of K190 is 5.2 Å from the W159 indole ring and forms a cation-π stack, further enhancing stability. Together these extensive transposase–DNA backbone phosphate interactions stabilise the distorted conformation of the strand transfer product.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/15537/elife-15537-fig4-v2.jpg)
 
-**Figure 4.:** (a) Target DNA phosphate interactions with catalytic domain residues. The side-chains of R186, W159 and K190 can form hydrogen bonds (dotted lines) with backbone phosphate oxygens of A1 and G2 (distances in Å). (b) Schematic of the in vitro Mos1 strand transfer assay. Integration of the 28 nt TS into the top target strand, yields a 68 nt product, whereas integration into the bottom strand gives a 40 nt product. (c) Denaturing PAGE of the strand transfer reaction products. Lanes 1 and 12 contain markers; lanes 2 and 13, reactions without transposase; lanes 3 and 14, reactions without target DNA. (Integration occurs at the two TA dinucleotides in the IR sequence). (d) Quantification of the 40 nt and 68 nt products (as a percentage of total DNA) for each mutant transposase; error bars represent the standard deviation and were calculated from 3 experiments.DOI: http://dx.doi.org/10.7554/eLife.15537.013
+**Figure 4.:** (a) Target DNA phosphate interactions with catalytic domain residues. The side-chains of R186, W159 and K190 can form hydrogen bonds (dotted lines) with backbone phosphate oxygens of A1 and G2 (distances in Å). (b) Schematic of the in vitro Mos1 strand transfer assay. Integration of the 28 nt TS into the top target strand, yields a 68 nt product, whereas integration into the bottom strand gives a 40 nt product. (c) Denaturing PAGE of the strand transfer reaction products. Lanes 1 and 12 contain markers; lanes 2 and 13, reactions without transposase; lanes 3 and 14, reactions without target DNA. (Integration occurs at the two TA dinucleotides in the IR sequence). (d) Quantification of the 40 nt and 68 nt products (as a percentage of total DNA) for each mutant transposase; error bars represent the standard deviation and were calculated from 3 experiments.
 
-## Residues that stabilise the transposition product are required for strand transfer in vitro
+### Residues that stabilise the transposition product are required for strand transfer in vitro
 
-Consistent with the structural roles of W159, R186, F187 and K190 in the STC, individual substitution of each of these residues with alanine severely reduced the in vitro strand transfer activity of transposase (
+Consistent with the structural roles of W159, R186, F187 and K190 in the STC, individual substitution of each of these residues with alanine severely reduced the in vitro strand transfer activity of transposase (Figure 4b). We detected <0.03% integration of fluorescently labelled Mos1 IR DNA into a target DNA duplex with a sole TA, using transposases containing the mutation W159A, R186A, K190A or F187A (Figure 4c,d). By contrast, the F187W substitution resulted in 9.5% strand transfer, compared to 9.1% with T216A Mos1 transposase. Thus, an indole ring, like a phenyl ring, can occupy the space vacated by the flipped A1 base and stabilise the strand transfer product by stacking with the G2 base. The individual substitutions W159A, K190A or F187A also reduced the in vitro transposition efficiency to <20% that of T216A Mos1 transposase (Figure 5).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/15537/elife-15537-fig5-v2.jpg)
 
-**Figure 5.:** Efficiencies of an in vitro Mos1 hop assay, performed using Mos1 transposase mutants and donor plasmids containing a kanamycin resistance gene flanked by Mos1 inverted repeats, as described previously (Trubitsyna et al., 2014). Excision of the IR-flanked gene from a circular plasmid by transposase, and its integration into a supercoiled target plasmid, results in transfer of the kanamycin resistance to the target plasmid. Each mutant transposase also contained the mutation T216A, which allows soluble protein expression. Sequencing of the transposition products revealed that each mutant transposases retained faithful integration at TA sites. Error bars represent the standard deviation, calculated from three repeats of two experiments.DOI: http://dx.doi.org/10.7554/eLife.15537.014
+**Figure 5.:** Efficiencies of an in vitro Mos1 hop assay, performed using Mos1 transposase mutants and donor plasmids containing a kanamycin resistance gene flanked by Mos1 inverted repeats, as described previously (Trubitsyna et al., 2014). Excision of the IR-flanked gene from a circular plasmid by transposase, and its integration into a supercoiled target plasmid, results in transfer of the kanamycin resistance to the target plasmid. Each mutant transposase also contained the mutation T216A, which allows soluble protein expression. Sequencing of the transposition products revealed that each mutant transposases retained faithful integration at TA sites. Error bars represent the standard deviation, calculated from three repeats of two experiments.
 
-To test if W159, R186, F187 and K190 are also required for transposon excision, we performed a plasmid-based transposon cleavage assay (
+To test if W159, R186, F187 and K190 are also required for transposon excision, we performed a plasmid-based transposon cleavage assay (Figure 6a). Transposon excision, and concomitant plasmid backbone release, was not affected by the transposase mutations R186A, F187A, F187W, K190A, F161A or F161W (Figure 6b,c). However, the W159A mutant transposase excised only 3.9% of the plasmid after 24 hr, compared to 55.6% for the T216A transposase. Thus, Mos1 transposase residues F187, R186 and K190 are required for target DNA integration, but are not essential for earlier cleavage steps, whereas W159 is required for both excision and strand transfer.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/15537/elife-15537-fig6-v2.jpg)
 
-**Figure 6.:** (a) Schematic of the in vitro plasmid-based Mos1 cleavage assay. (b) Agarose gel showing the products of plasmid-based transposon cleavage assays, for each mutant transposase (Tnp) after 2 hr and 24 hr. Control experiments show linearization of the plasmid with Sac1 (lane 2), excision of the transposon by Xba1 digestion (lane 3) and reaction with no transposase (lane 4). (c) Quantification of the transposon and plasmid backbone released (as a percentage of total DNA) after 2 hr and 24 hr. Error bars represent the standard deviation calculated from 2 experiments.DOI: http://dx.doi.org/10.7554/eLife.15537.015
+**Figure 6.:** (a) Schematic of the in vitro plasmid-based Mos1 cleavage assay. (b) Agarose gel showing the products of plasmid-based transposon cleavage assays, for each mutant transposase (Tnp) after 2 hr and 24 hr. Control experiments show linearization of the plasmid with Sac1 (lane 2), excision of the transposon by Xba1 digestion (lane 3) and reaction with no transposase (lane 4). (c) Quantification of the transposon and plasmid backbone released (as a percentage of total DNA) after 2 hr and 24 hr. Error bars represent the standard deviation calculated from 2 experiments.
 
-## Target DNA stabilising amino acids are conserved in mariner transposases
+### Target DNA stabilising amino acids are conserved in mariner transposases
 
-Alignment of the Mos1 transposase sequence, with other mariner and Tc1-like transposases (
+Alignment of the Mos1 transposase sequence, with other mariner and Tc1-like transposases (Figure 7), reveals that K190 and W159, which form a cation-π stack and interact with target DNA phosphates, are strictly conserved among mariner transposases. Despite the crucial role of Mos1 R186 for strand transfer in vitro, this residue is not conserved in all mariner transposases. However, the aromatic nature of F187 is conserved as either F or H in most other mariner transposases. Thus, many of the target-stabilising interactions observed in the Mos1 STC may also exist in other mariner transposases.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/15537/elife-15537-fig7-v2.jpg)
 
-**Figure 7.:** The secondary structure elements of Mos1 transposase in the Mos1 STC are shown above the alignment. A red star below the alignment denotes the position of each of the catalytic acidic residues of the DDE/D triad. The third residue of this triad is typically D in the mariner sub-family and E in the Tc sub-family. The key residues involved in target DNA stabilisation in the Mos1 STC are highlighted in blue and marked by a blue dot. The figure was created with ESPript 3.0 (http://espript.ibcp.fr/ESPript/cgi-bin/ESPript.cgi).DOI: http://dx.doi.org/10.7554/eLife.15537.016
+**Figure 7.:** The secondary structure elements of Mos1 transposase in the Mos1 STC are shown above the alignment. A red star below the alignment denotes the position of each of the catalytic acidic residues of the DDE/D triad. The third residue of this triad is typically D in the mariner sub-family and E in the Tc sub-family. The key residues involved in target DNA stabilisation in the Mos1 STC are highlighted in blue and marked by a blue dot. The figure was created with ESPript 3.0 (http://espript.ibcp.fr/ESPript/cgi-bin/ESPript.cgi).
 
 The Tc1-like sequences have a conserved lysine at the position equivalent to W159 in Mos1 and there are two, proximal conserved tryptophans – aligned with Mos1 residues 149 and 194 – which could fulfil the role of W159 in Mos1 (Figure 7). Furthermore, the Tc1-like transposases contain either K or R one amino acid upstream of R186 in Mos1, followed by an aromatic residue: F, H or Y. These residue pairs could stabilise target DNA in a similar way to R186 and F187 in Mos1. Thus, there may be common features in the target DNA integration mechanisms of the two branches of the mariner/Tc1 family.
 
-## Transposase recognises the flipped target adenines via base-specific interactions
+### Transposase recognises the flipped target adenines via base-specific interactions
 
-The target-stabilising interactions described above are non-specific. In contrast, in the flipped conformation, the Watson-Crick face of each unpaired A
+The target-stabilising interactions described above are non-specific. In contrast, in the flipped conformation, the Watson-Crick face of each unpaired A1 base makes two adenine-specific hydrogen bonds with V214 backbone atoms (Figure 8a): the exocyclic 6-amine interacts with the carbonyl oxygen, and N1 interacts with the backbone amide.
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/15537/elife-15537-fig8-v2.jpg)
 
-**Figure 8.:** (a) Close up view of one of the flipped target adenines in the Mos1 STC crystal structure showing the hydrogen bond interactions (dotted cyan lines, distance in Å) with the V214 backbone atoms and the 2 and 6 positions of the adenine ring. The simulated annealing composite omit 2Fo-Fc electron density map (grey mesh) is contoured at 1.2σ. (b) Chemical structures and base-pairing of adenine, A, and its analogues 2-aminopurine, P, and 2,6-diaminopurine, D, with thymine, T or 2-thio-thymine, S. A steric clash between the 2-thio group of S and the 2-amino group of D tilts the bases relative to each other, and thus only one H-bond forms. (c) Denaturing PAGE of the products of strand transfer reactions with target DNA containing adenine and/or thymine analogues, as indicated above lanes 4 to 11. (d) Quantification of the 40 nt and 68 nt strand transfer products for each target DNA duplex, as a percentage of total DNA. Error bars represent the standard deviation, calculated from 2 experiments.DOI: http://dx.doi.org/10.7554/eLife.15537.017
+**Figure 8.:** (a) Close up view of one of the flipped target adenines in the Mos1 STC crystal structure showing the hydrogen bond interactions (dotted cyan lines, distance in Å) with the V214 backbone atoms and the 2 and 6 positions of the adenine ring. The simulated annealing composite omit 2Fo-Fc electron density map (grey mesh) is contoured at 1.2σ. (b) Chemical structures and base-pairing of adenine, A, and its analogues 2-aminopurine, P, and 2,6-diaminopurine, D, with thymine, T or 2-thio-thymine, S. A steric clash between the 2-thio group of S and the 2-amino group of D tilts the bases relative to each other, and thus only one H-bond forms. (c) Denaturing PAGE of the products of strand transfer reactions with target DNA containing adenine and/or thymine analogues, as indicated above lanes 4 to 11. (d) Quantification of the 40 nt and 68 nt strand transfer products for each target DNA duplex, as a percentage of total DNA. Error bars represent the standard deviation, calculated from 2 experiments.
 
 To test if these adenine-specific hydrogen bonds are important for transposon integration specifically at a TA, we performed in vitro strand transfer assays with 2AP-containing target DNA. The arrangement of H-bond donors differs between adenine and 2AP (Figure 8b). Therefore, by replacing each A1 with 2AP we expect to lose the H-bond between the A1 6-amino and V214 CO, and introduce a steric clash between the 2-amino of 2AP and T213 Cα. Since 2AP, like adenine, can make two hydrogen bonds in a base pair with thymine (Figure 8b), replacing A1 with 2AP is unlikely to alter the stability and bendability of duplex target DNA.
 
@@ -151,21 +371,29 @@ We compared Mos1 strand transfer into TA and the altered target sequences TD and
 
 ## Discussion
 
-The Mos1 STC structure provides a snapshot of Mos1 transposition in the post-integration state. The severe target DNA bend (~147°) is consistent with a bias for
+The Mos1 STC structure provides a snapshot of Mos1 transposition in the post-integration state. The severe target DNA bend (~147°) is consistent with a bias for mariner/Tc1 integration at highly bendable, palindromic AT-rich sequences (Vigdal et al., 2002; Yant et al., 2005). Studies by Pflieger et al. suggested that target DNA also bends before Mos1 strand transfer (Pflieger et al., 2014). Comparison of the Mos1 STC structure with our previous TCC model (containing straight target DNA) and both the pre- and post-TS cleavage PECs (Dornan et al., 2015; Richardson et al., 2009) supports this conclusion. Our previous TCC model (Richardson et al., 2009) of straight B-form target DNA binding highlighted clashes with some transposase loop residues, indicating conformational changes in the target DNA and/or the transposase would be required for target capture. The similar architectures and interactions of the IR DNA and transposase in the STC and both PEC structures (Figure 9a and Figure 9—figure supplement 1) suggest that target DNA is likely deformed. Changes to the transposase conformation are subtle and include closing-in of the catalytic domain towards the target DNA after strand transfer (Videos 1 and 2). The largest displacement (5.7 Å) is at P210 in the turn between β7 and α8 and around helices α8 and α10, which cradle the target DNA (Figure 9b). T0 in the Mos1 STC is in a different orientation to the thymine (T57) of the flanking target site duplication in the pre-TS cleavage PEC (Figure 9c), which is recognised by base-specific interactions with the WVPHEL motif (Dornan et al., 2015). By contrast, T0 closely aligns with T54 of the additional DNA duplex in the post-TS cleavage PEC (Figure 9d), which may represent the target strand before integration.
 
 ![Figure 9.](https://cdn.elifesciences.org/articles/15537/elife-15537-fig9-v2.jpg)
 
-**Figure 9.:** (a) Orthogonal views of the Mos1 STC (orange) superimposed on the pre-TS cleavage PEC (PDB ID: 4U7B, green): r.m.s.d. over all transposase backbone atoms, 1.2 Å. Video 1 and video 2 show the transposase morphing from the pre- and post-cleavage PEC structures to the STC, respectively. (b) Close-up view of part of the catalytic domain, boxed in (a). Mos1 STC target DNA and the pre-TS cleavage PEC flanking DNA are shown as sticks (pink and black) and a green cartoon, respectively. Dotted lines indicate the displacement between the two structures, with distances in Å. (c) and (d) Close-up view of the Mos1 STC (orange) active site superimposed on (c) the pre-TS cleavage PEC (green) and (d) the post-TS cleavage PEC (PDB ID: 3HOS): T54 in the additional DNA duplex (lavender sticks) may represent T0 of target DNA before strand transfer. A full view of the Mos1 STC superposed on the post-TS cleavage PEC structures is shown in Figure 9—figure supplement 1.DOI: http://dx.doi.org/10.7554/eLife.15537.018
+**Figure 9.:** (a) Orthogonal views of the Mos1 STC (orange) superimposed on the pre-TS cleavage PEC (PDB ID: 4U7B, green): r.m.s.d. over all transposase backbone atoms, 1.2 Å. Video 1 and video 2 show the transposase morphing from the pre- and post-cleavage PEC structures to the STC, respectively. (b) Close-up view of part of the catalytic domain, boxed in (a). Mos1 STC target DNA and the pre-TS cleavage PEC flanking DNA are shown as sticks (pink and black) and a green cartoon, respectively. Dotted lines indicate the displacement between the two structures, with distances in Å. (c) and (d) Close-up view of the Mos1 STC (orange) active site superimposed on (c) the pre-TS cleavage PEC (green) and (d) the post-TS cleavage PEC (PDB ID: 3HOS): T54 in the additional DNA duplex (lavender sticks) may represent T0 of target DNA before strand transfer. A full view of the Mos1 STC superposed on the post-TS cleavage PEC structures is shown in Figure 9—figure supplement 1.
 
 ![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/15537/elife-15537-fig9-figsupp1-v2.jpg)
 
-**Figure 9—figure supplement 1.:** The Mos1 STC (orange) is superimposed on the post-TS cleavage PEC (PDB ID: 3HOS, lavender).DOI: http://dx.doi.org/10.7554/eLife.15537.019
+**Figure 9—figure supplement 1.:** The Mos1 STC (orange) is superimposed on the post-TS cleavage PEC (PDB ID: 3HOS, lavender).
 
-Strain created by target DNA bending during target capture likely drives the phosphate backbone rotations that flip the target adenines into extra helical positions (
+![Video 1.](https://cdn.elifesciences.org/articles/15537/elife-15537-media1.mp4.jpg)
+
+**Video 1.:** Related to Figure 9.
+
+![Video 2.](https://cdn.elifesciences.org/articles/15537/elife-15537-media2.mp4.jpg)
+
+**Video 2.:** Related to Figure 9.
+
+Strain created by target DNA bending during target capture likely drives the phosphate backbone rotations that flip the target adenines into extra helical positions (Figure 10). Subsequent trapping of the flipped adenines may correctly position the scissile target phosphates for in-line attack by the cleaved transposon ends. Breaking of the target DNA strands by strand transfer would allow displacement of the new transposon-target DNA junction from the active site, preventing reversal of the reaction. Structural and biochemical characterisation of the target capture complex will illuminate this sequence of events.
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/15537/elife-15537-fig10-v2.jpg)
 
-**Figure 10.:** Schematic representation of key features of the STC (right) and the proposed target capture complex (left), with transposase subunits (orange and blue). Filled circles represent residues W159 (W), R186 (R), F187 (F) and K190 (K) and the encircled DDD depicts each active site. Arrows indicate rotation of the DNA backbone of each target DNA strand (magenta and black). Dotted lines represent hydrogen bonds between TA base pairs in the TCC and between flipped target adenines and transposase backbone atoms in the STC.DOI: http://dx.doi.org/10.7554/eLife.15537.022
+**Figure 10.:** Schematic representation of key features of the STC (right) and the proposed target capture complex (left), with transposase subunits (orange and blue). Filled circles represent residues W159 (W), R186 (R), F187 (F) and K190 (K) and the encircled DDD depicts each active site. Arrows indicate rotation of the DNA backbone of each target DNA strand (magenta and black). Dotted lines represent hydrogen bonds between TA base pairs in the TCC and between flipped target adenines and transposase backbone atoms in the STC.
 
 Many DNA-metabolising enzymes use base flipping to expose bases normally embedded within a double helix; enabling base methylation (Klimasauskas et al., 1994), removal of damaged or mismatched bases or for DNA sequence recognition (Bochtler et al., 2006; Neely et al., 2009). During Tn5 transposon excision, formation and resolution of DNA hairpins at the transposon ends requires base flipping: rotation of a base close to the cleavage site, into a protein pocket, relieves strain in the tight hairpin bend and aligns the transposon ends for cleavage (Ason and Reznikoff, 2002). Similarly, DNA hairpin stabilisation by base flipping has been proposed for V(D)J recombination and transposition of Hermes and Tn10 (Lu et al., 2006; Bischerour and Chalmers, 2009).
 
@@ -179,11 +407,11 @@ Taken together our structural and biochemical data support a dynamic bend, flip 
 
 ## Materials and methods
 
-## Transposase mutation, expression and purification
+### Transposase mutation, expression and purification
 
 Expression constructs encoding Mos1 transposase mutants H122A, W159A, F161A, F161W, R186A, F187A, F187W, K190A were generated by site-directed mutagenesis (Quikchange, Stratagene) of the codon-optimised Mos1 gene (Trubitsyna et al., 2014), according to the manufacturer’s protocol. Each plasmid also incorporated the T216A mutation allowing soluble expression of Mos1 transposase in E. coli (Richardson et al., 2004). Each mutant transposase was expressed and purified as described previously (Richardson et al., 2004), exchanged into buffer containing 25 mM PIPES pH 7.5, 250 mM NaCl, 0.5 mM DTT and 50% (v/v) glycerol and concentrated to between 10–20 mg mL-1.
 
-## Preparation of ds DNA substrates
+### Preparation of ds DNA substrates
 
 The sequences of all DNA oligonucleotides are shown in Table 1. HPLC purified oligonucleotides for crystallisation of the STC were purchased from IDT (Belgium), PAGE purified and dissolved to 1 mM in TEN buffer (10 mM Tris pH 8, 1 mM EDTA, 50 mM NaCl). The 36 nt TS incorporates the 28 nt IR and target DNA (as shown in Figure 1c). The 25 nt NTS is complementary to the TS IR DNA sequence and represents the authentic product the first cleavage. The 10 nt target DNA sequence, includes six nucleotides complementary to the 3' TS target sequence and four self-complementary nucleotides (cohesive 5' ends). The three oligonucleotides were mixed in a 1:1:1 molar ratio and annealed by heating to 363 K for 3 min and cooling to room temperature over ~2 hr.
 
@@ -191,31 +419,35 @@ For time-resolved fluorescence experiments, DNA oligonucleotides were synthesise
 
 For the strand transfer assays, the IR DNA was prepared by annealing the 28 nt 5'-IRDye 700 labelled TS with the 25 nt complementary NTS. The 50-mer TA target DNA, was prepared by annealing complementary top and bottom strands (Table 1). Five target DNA variants were similarly prepared: three had 2-aminopurine (P) in place of the target adenine on the top and/or bottom strand. A fourth had 2,6-diaminopurine (D) in place of the target adenine on both strands, and the fifth also had 2-thio-thymine (S) in place of the target thymine on both strands. The annealed IR and target oligonucleotides were purified by HPLC.
 
-## Preparation of the Mos1 STC
+### Preparation of the Mos1 STC
 
 The STC was formed by adding T216A Mos1 transposase (438 μM) and STC ds DNA (229 μM) together to final concentrations of 50 μM each in a solution of 25 mM PIPES-NaOH pH 7.5, 250 mM NaCl, 20 mM MgCl2 and 1 mM DTT. The final concentration of the STC was 25 μM.
 
-## Crystallisation
+### Crystallisation
 
 Crystals were grown by sitting drop vapour-diffusion. Drops contained 2 μL of STC (25 μM) and 1 μL of well solution comprising 30% (v/v) MPD, 0.1 M sodium cacodylate pH 6.5 and 0.2 M magnesium acetate tetrahydrate. The crystals were cooled in liquid nitrogen for X-ray diffraction experiments.
 
-## X-ray crystal structure determination and refinement
+### X-ray crystal structure determination and refinement
 
 X-ray diffraction data were collected on beam line I02 at the Diamond Light Source. Crystals displayed C-centred (C121) symmetry and diffracted X-rays to a maximum resolution of 3.3 Å. The X-ray diffraction data were processed with iMosflm, scaled and merged with AIMLESS and the statistics are shown in Table 2. Initial phases were determined by molecular replacement, using our structure of the Mos1 PEC (PDB ID: 3HOS, chains A to F, comprising the transposase dimer and two cleaved IR DNA molecules) as the search model in PHASER. The difference electron density after molecular replacement is shown in Figure 2—figure supplement 1. The remaining structure was built manually. Restrained refinement was performed with Refmac and Coot and included automatic non-crystallographic symmetry restraints on the protein and DNA chains. The refinement statistics are shown in Table 2. All structural diagrams were prepared using PyMOL (http://www.pymol.org/) and Adobe Illustrator.
 
-## In vitro strand transfer and transposon cleavage assays
+### In vitro strand transfer and transposon cleavage assays
 
 Target integration assays were performed as described previously (Wolkowicz et al., 2014). 20 μL reactions containing 15 nM of a 50-mer target DNA, 1.5 nM IR DNA and 15 nM Mos1 transposase in buffer containing 25 mM HEPES pH 7.5, 50 mM Potassium Acetate, 10% (v/v) glycerol, 0.25 mM EDTA, 1mM DTT, 10 mM MgCl2, 50 μg/mL BSA and 20% (v/v) DMSO were incubated for two hours at 30°C and the products separated on an 8% denaturing polyacrylamide gel. To visualise the products, the IRDye700 was excited at 680 nm and detected on a LI-COR Odyssey system. The fluorescence intensities of the product bands were quantified using Image Studio software. Plasmid-based transposon cleavage assays were performed as described previously (Trubitsyna et al., 2014).
 
-## Steady state fluorescence
+### Steady state fluorescence
 
 Measurements were acquired, in photon counting mode, on a Fluoromax–3 spectrofluorimeter (Jobin Yvon, Stanmore, UK), on samples of the 2AP-containing duplexes TP13 or TP1 (10 μM), alone or mixed with 11 μM Mos1 transposase, in buffer composed of 25 mM PIPES-NaOH pH 7.5, 250 mM NaCl, 20 mM CaCl2, 1 mM DTT. A circulating water bath maintained sample temperatures at 25°C. Emission spectra were recorded in the range 325–550 nm, with an excitation wavelength of 317 nm and excitation and emission bandwidths of 2.5 nm.
 
-## Time-resolved fluorescence
+### Time-resolved fluorescence
 
 Measurements were performed using time-correlated single photon counting, on an Edinburgh Instruments spectrometer equipped with TCC900 photon counting electronics, as described previously (Neely et al., 2005). The excitation source was the third harmonic of the pulse-picked output of a Ti-sapphire femtosecond laser system (Coherent, 10 W Verdi and Mira Ti-Sapphire), consisting of ~200 fs pulses at a repetition rate of 4.75 MHz and a wavelength of 317 nm. The instrument response of the system was ~80 ps full-width at half-maximum.
 
-Fluorescence decay curves were analysed by iterative re-convolution, assuming a multi-exponential decay function, given in Equation (1)(1)I(t)= ∑i=14 Aiexp(−tτi)
+Fluorescence decay curves were analysed by iterative re-convolution, assuming a multi-exponential decay function, given in Equation (1)
+
+$$
+I(t)= \sum_{i=1}^{4} A_{i}exp(\frac{−t}{\tau_{i}})
+$$
 
 where I is the fluorescence intensity as a function of time (t); τi is the fluorescence lifetime of the ith decay component and Ai is the fractional amplitude (A-factor) of that component.
 

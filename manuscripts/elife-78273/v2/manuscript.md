@@ -12,8 +12,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05gq02987 Department of Molecular Microbiology and Immunology, Brown University Providence United States
-2. https://ror.org/05gq02987 Brown University Providence United States
+1. Department of Molecular Microbiology and Immunology, Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
+2. Brown University Providence United States ([ROR:05gq02987](https://ror.org/05gq02987))
 
 † Corresponding author
 
@@ -33,7 +33,7 @@ We hypothesized that therapies that target the host factors involved in SC2 infe
 
 ## Results
 
-## CHI3L1 stimulates epithelial cell uptake of the G614 and the alpha, beta, and gamma pseudotyped SC2 viruses
+### CHI3L1 stimulates epithelial cell uptake of the G614 and the alpha, beta, and gamma pseudotyped SC2 viruses
 
 Previous studies from our laboratory demonstrated that CHI3L1 is a potent stimulator of epithelial expression of ACE2 and SPP and epithelial cell viral uptake (Kamle et al., 2021). To determine if the major S variants altered these responses, we compared the uptake of pseudovirus with ancestral and mutated S proteins by untreated and CHI3L1-treated Calu-3 cells. As can be seen in Figure 1A, CHI3L1 was a potent stimulator of the uptake of pseudovirus with the ancestral G614 S protein. Similar increases in Calu-3 cell pseudovirus uptake were seen when the S proteins that are characteristic of the α, β, or γ variants were employed (Figure 1B−D). When viewed in combination, these studies demonstrate that CHI3L1 augments SC2 pseudovirus uptake when the ancestral D614G and α, β, or γ S protein mutations are present.
 
@@ -41,11 +41,11 @@ Previous studies from our laboratory demonstrated that CHI3L1 is a potent stimul
 
 **Figure 1.:** Calu-3 cells were incubated with recombinant human (rh) CHI3L1 (CHI3L1, 250 ng/ml) or vehicle (PBS) control for 48 hr. Pseudoviruses (PS) that contain S proteins with the (A) G614, (B) alpha, (C) beta, (D) gamma, or (E) delta mutations were added, and GFP was quantitated by fluorescence-activated cell sorting (FACS). The percentage of GFP-positive cells was evaluated by flow cytometry. The noted values are representative of a minimum of three similar evaluations.
 
-## CHI3L1 stimulates epithelial cell uptake of delta pseudotyped SC2 viruses
+### CHI3L1 stimulates epithelial cell uptake of delta pseudotyped SC2 viruses
 
 Because the delta SC2 variant manifests enhanced viral infectivity and has spread widely since it first appeared in December 2020, the ability of CHI3L1 to alter its ability to infect human epithelial cells was also assessed. In these experiments, CHI3L1 was also a potent stimulator of the uptake of pseudovirus with delta S protein mutations (Figure 1E). The findings noted above and these observations, in combination, demonstrate that CHI3L1 is a stimulator of human epithelial cell uptake of SC2 viral pseudotypes with S protein mutations from the α, β, γ, and δ VOC.
 
-## The monoclonal antibody ‘FRG’ abrogates the CHI3L1-induced increase in epithelial cell uptake of the G614 and the alpha, beta, and gamma pseudotyped viral variants
+### The monoclonal antibody ‘FRG’ abrogates the CHI3L1-induced increase in epithelial cell uptake of the G614 and the alpha, beta, and gamma pseudotyped viral variants
 
 Studies were next undertaken to define the effects of the monoclonal anti-CHI3L1 antibody entitled ‘FRG’ on the uptake of pseudovirus by Calu-3 cells treated with and without CHI3L1. As was seen with the ancestral G614 S protein mutation, treatment of Calu-3 cells with rCHI3L1 augmented pseudovirus uptake and FRG abrogated this increase while treatment with the IgG control did not (Figure 2A). Interestingly, FRG also diminished pseudovirus uptake by Calu-3 cells even when exogenous rCHI3L1 was not administered (Figure 2A). rCHI3L1 had similar stimulatory effects in experiments using pseudovirus with α, β, or γ S protein mutations (Figure 2B−D). Importantly, the uptake of pseudoviruses with each of the S mutations in cells treated with and without rCHI3L1 was markedly diminished by FRG as well (Figure 2A−D). When viewed in combination, these studies demonstrate that monoclonal anti-Chi3l1 targeting exogenous and/or endogenous CHI3L1 effectively inhibits the uptake of pseudovirus with ancestral, α, β, or γ S protein mutations.
 
@@ -53,23 +53,23 @@ Studies were next undertaken to define the effects of the monoclonal anti-CHI3L1
 
 **Figure 2.:** Calu-3 cells were incubated with rhCHI3L1 (CHI3L1, 250 ng/ml) or vehicle control for 48 hr in the presence of anti-CHI3L1 (FRG) or its isotype control (IgG). Pseudoviruses (PS) that contain S proteins with the (A) G614, (B) alpha, (C) beta, (D) gamma, or (E) delta mutations were added, and GFP was quantitated by fluorescence-activated cell sorting (FACS). The percentage of GFP-positive cells was evaluated by flow cytometry. The noted values are representative of a minimum of three similar evaluations.
 
-## The monoclonal antibody ‘FRG’ abrogates the CHI3L1-induced increase in epithelial cell uptake of the delta pseudotyped viral variants
+### The monoclonal antibody ‘FRG’ abrogates the CHI3L1-induced increase in epithelial cell uptake of the delta pseudotyped viral variants
 
 Because the delta SC2 variant has had such impressive clinical effects, the ability of FRG to alter its ability to infect human epithelial cells was also assessed. Fluorescence-activated cell sorting (FACS)-based evaluations demonstrated that CHI3L1 was a potent stimulator of the uptake of the pseudovirus with delta S protein mutations (Figure 2E). FRG abrogated this increase while treatment with the IgG control did not (Figure 2E). Interestingly, FRG also diminished pseudovirus uptake by Calu-3 cells even when exogenous CHI3L1 was not administered (Figure 2E). These findings were reinforced by immunocyotchemical evaluations. These studies demonstrated that CHI3L1 augmented Calu-3 cell ACE2 accumulation and delta pseudovirus infection (Figure 3). They also demonstrated that FRG abrogated the expression of ACE2 and delta pseudovirus infection at baseline and/or after the administration of rCHI3L1 (Figure 3). When viewed in combination, these studies demonstrate that monoclonal anti-CHI3L1 antibody (FRG) targeting exogenous and/or endogenous CHI3L1 effectively inhibits the expression of ACE2 and the uptake of pseudoviruses with the delta or other S protein mutations.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/78273/elife-78273-fig3-v2.jpg)
 
-**Figure 3.:** Calu-3 cells were incubated in the presence and/or absence of rhCHI3L1 (CHI3L1) in the presence of FRG or its isotype control. (A) Pseudoviruses with delta S proteins (PS-δ) were added, and ACE2 and GFP viral infection were evaluated using double-labeled immunocytochemistry (ICC). DAPI (blue) was used to evaluate nuclei, red label was used to evaluate ACE2, and the pseudoviruses contained GFP. (B, C) The quantification of ACE2 can be seen in panel (B), and the quantification of GFP is illustrated in panel (C). These evaluations were done using fluorescent microscopy (×20 of original magnification). In these quantifications, five randomly selected fields were evaluated. The values in panels (B, C) are the mean ± SEM of the noted five evaluations. **p<0.01; ***p<0.001, ****p<0.0001; ns, not significant (one-way ANOVA with multiple comparisons). Scale bar:10 μm (applies to all subpanels in A).Figure 3—source data 1.
+**Figure 3.:** Calu-3 cells were incubated in the presence and/or absence of rhCHI3L1 (CHI3L1) in the presence of FRG or its isotype control. (A) Pseudoviruses with delta S proteins (PS-δ) were added, and ACE2 and GFP viral infection were evaluated using double-labeled immunocytochemistry (ICC). DAPI (blue) was used to evaluate nuclei, red label was used to evaluate ACE2, and the pseudoviruses contained GFP. (B, C) The quantification of ACE2 can be seen in panel (B), and the quantification of GFP is illustrated in panel (C). These evaluations were done using fluorescent microscopy (×20 of original magnification). In these quantifications, five randomly selected fields were evaluated. The values in panels (B, C) are the mean ± SEM of the noted five evaluations. **p<0.01; ***p<0.001, ****p<0.0001; ns, not significant (one-way ANOVA with multiple comparisons). Scale bar:10 μm (applies to all subpanels in A).
 
-## Kasugamycin is a small molecule with strong anti-CHI3L1 activity
+### Kasugamycin is a small molecule with strong anti-CHI3L1 activity
 
 Recent studies from our lab and others identified that Kasugamycin, an aminoglycoside antibiotic, is a novel small molecule that has a strong anti-Chitinase 1 (CHIT1) activities (Lee et al., 2021; Qi et al., 2021). Since CHIT1 and CHI3L1 share structural homologies as members of 18-glycohydrolase family, we tested whether kasugamycin (KSM) inhibits CHI3L1 activity similarly to CHIT1. As shown in Figure 4, KSM treatment abrogated CHI3L1 stimulated ERK and AKT activation in Calu-3 cells, suggesting a strong anti-CHI3L1 activity of KSM.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/78273/elife-78273-fig4-v2.jpg)
 
-**Figure 4.:** Calu-3 cells were stimulated with rhCHI3L1 (250 ng/ml) or its vehicle control for 2 hr in the presence of kasugamycin (250 ng/ml) and vehicle control (PBS). (A, B) Western blotting and densitometry analysis were then employed to evaluate the levels of activated (phosphorylated) (p) and total ERK (A) and AKT (B). The noted figure is representative of a minimum of three similar experiments. ***p<0.0001 (t-test).Figure 4—source data 1.Figure 4.
+**Figure 4.:** Calu-3 cells were stimulated with rhCHI3L1 (250 ng/ml) or its vehicle control for 2 hr in the presence of kasugamycin (250 ng/ml) and vehicle control (PBS). (A, B) Western blotting and densitometry analysis were then employed to evaluate the levels of activated (phosphorylated) (p) and total ERK (A) and AKT (B). The noted figure is representative of a minimum of three similar experiments. ***p<0.0001 (t-test).
 
-## Kasugamycin abrogates the CHI3L1-induced increase in epithelial cell uptake of the alpha, beta, and gamma pseudovirus variants
+### Kasugamycin abrogates the CHI3L1-induced increase in epithelial cell uptake of the alpha, beta, and gamma pseudovirus variants
 
 Studies were next undertaken to define the effects of kasugamycin on the uptake of pseudovirus by Calu-3 cells treated with or without rCHI3L1. As seen with the ancestral G614 S protein mutation, treatment of Calu-3 cells with rCHI3L1 augmented ancestral pseudovirus uptake and kasugamycin abrogated these stimulatory effects (Figure 5A). rCHI3L1 had similar stimulatory effects in experiments using pseudoviruses with α, β, or γ S protein mutations (Figure 5B−D), and these stimulatory effects were markedly decreased by kasugamycin (Figure 5A−D). When viewed in combination, these studies demonstrate that kasugamycin targeting exogenous and/or endogenous CHI3L1 effectively inhibits the uptake of pseudovirus with ancestral, α, β, or γ S protein mutations.
 
@@ -77,15 +77,15 @@ Studies were next undertaken to define the effects of kasugamycin on the uptake 
 
 **Figure 5.:** Calu-3 cells were incubated with rhCHI3L1 (250 ng/ml) or vehicle control for 48 hr in the presence of kasugamycin or its vehicle control. Pseudoviruses that contain S proteins with the (A) G614, (B) alpha, (C) beta, (D) gamma, or (E) delta mutations were added, and GFP was quantitated by fluorescence-activated cell sorting (FACS) analysis. The percentage of GFP-positive cells was evaluated by flow cytometry. The noted values are representative of a minimum of three similar evaluations.
 
-## Kasugamycin targeting of CHI3L1 inhibits the uptake of pseudovirus with the delta S protein mutation
+### Kasugamycin targeting of CHI3L1 inhibits the uptake of pseudovirus with the delta S protein mutation
 
 Because of the importance of the delta SC2 viral variant, the ability of kasugamycin to alter the variant’s ability to infect human epithelial cells was also assessed. CHI3L1 was a potent stimulator of the uptake of pseudoviruses that contain the delta S protein mutations (Figure 5E). Kasugamycin abrogated this increase while treatment with the vehicle control did not (Figure 5E). Kasugamycin also diminished pseudovirus uptake by Calu-3 cells even when exogenous CHI3L1 was not administered (Figure 5E). These findings were reinforced by immunocytochemical evaluations. These studies demonstrated that CHI3L1 augmented Calu-3 cell ACE2 accumulation and delta pseudovirus infection (Figure 6). They also demonstrated that FRG abrogated the expression of delta pseudovirus infection at baseline and/or after the administration of rCHI3L1 (Figure 6). When viewed in combination, these studies demonstrate that kasugamycin targeting exogenous and/or endogenous CHI3L1 effectively inhibits the uptake of pseudovirus with the alpha, beta, gamma, or delta S protein mutations.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/78273/elife-78273-fig6-v2.jpg)
 
-**Figure 6.:** Calu-3 cells were incubated in the presence and/or absence of CHI3L1 (250 ng/ml) in the presence or of kasugamycin (250 ng/ml) or its vehicle control. (A) Pseudoviruses with delta S proteins were added, and ACE2 and GFP viral infection were evaluated using double-labeled immunocytochemistry (ICC). DAPI (blue) was used to evaluate nuclei, red label was used to evaluate ACE2, and the pseudoviruses contained GFP. (B, C) The quantification of ACE2 can be seen in panel (B), and the quantification of GFP is illustrated in panel (C). These evaluations were done using fluorescent microscopy (×20 of original magnification). In these quantifications, five randomly selected fields were evaluated. The values in panels (B, C) are the mean ± SEM of the noted five evaluations. *p<0.05, **p<0.01; ***p<0.001; ns, not significant (one-way ANOVA with multiple comparisons). Scale bar:10 μm (applies to all subpanels in A).Figure 6—source data 1.
+**Figure 6.:** Calu-3 cells were incubated in the presence and/or absence of CHI3L1 (250 ng/ml) in the presence or of kasugamycin (250 ng/ml) or its vehicle control. (A) Pseudoviruses with delta S proteins were added, and ACE2 and GFP viral infection were evaluated using double-labeled immunocytochemistry (ICC). DAPI (blue) was used to evaluate nuclei, red label was used to evaluate ACE2, and the pseudoviruses contained GFP. (B, C) The quantification of ACE2 can be seen in panel (B), and the quantification of GFP is illustrated in panel (C). These evaluations were done using fluorescent microscopy (×20 of original magnification). In these quantifications, five randomly selected fields were evaluated. The values in panels (B, C) are the mean ± SEM of the noted five evaluations. *p<0.05, **p<0.01; ***p<0.001; ns, not significant (one-way ANOVA with multiple comparisons). Scale bar:10 μm (applies to all subpanels in A).
 
-## The monoclonal antibody ‘FRG’ and kasugamycin inhibit epithelial uptake of omicron pseudotyped viral variants
+### The monoclonal antibody ‘FRG’ and kasugamycin inhibit epithelial uptake of omicron pseudotyped viral variants
 
 Omicron variant has rapidly spread from its first appreciation as a highly mutated variant causing a localized outbreak in South Africa to the most common SC2 variant in the United States and the world (https://covid.cdc.gov/covid-data-tracker/#variant-proportions). Thus, studies were undertaken to determine if the therapies described above that target CHI3L1, ACE2, and SPP in ancestral, alpha, beta, gamma, and delta pseudoviruses are also effective in pseudoviruses with omicron S protein mutations. As was seen with the α, β, γ, and δ pseudoviruses, CHI3L1 was a potent stimulator of the uptake of pseudoviruses that contained omicron S proteins (Figure 7). In addition, FRG and kasugamycin both inhibited epithelial cell uptake of pseudoviruses with omicron S protein mutations (Figure 7). These studies demonstrate that antibodies or small-molecule inhibitors that target CHI3L1 inhibit epithelial uptake of pseudoviruses with a wide range of S protein mutations, including those seen in the omicron SC2 variant.
 
@@ -115,26 +115,26 @@ At the onset of the SC2 pandemic, there was an urgency to mitigate this new vira
 
 ## Materials and methods
 
-## Cell lines and primary cells in culture
+### Cell lines and primary cells in culture
 
 Calu-3 (HTB-55) lung epithelial cells were purchased from American Tissue Type Collection (ATCC) and maintained at 37°C in Dulbecco’s modified eagle medium supplemented with high glucose, l-glutamine, minimal essential media nonessential amino acids, penicillin/streptomycin, and 10% fetal bovine serum until used. The Calu-3 cells were authenticated through STR profiling and mycoplasma testing by ATCC.
 
-## Generation of monoclonal antibodies against CHI3L1 (FRG)
+### Generation of monoclonal antibodies against CHI3L1 (FRG)
 
 The murine monoclonal anti-CHI3L1 antibody (FRG) was generated using peptide antigen (amino acid 223–234 of human CHI3L1) as immunogen through Abmart Inc (Berkeley Heights, NJ). This monoclonal antibody specifically detects both human and mouse CHI3L1 with high affinity (kd ≈ 1.1 × 10–9). HEK-293T cells were transfected with the FRG construct using Lipofectamine 3000 (Invitrogen, # L3000015). Supernatant was collected for 7 days, and the antibody was purified using a protein A column (Thermo Fisher Scientific, #89960). Ligand-binding affinity and sensitivity were assessed using ELISA techniques.
 
-## Infection of pseudoviruses with S protein mutations
+### Infection of pseudoviruses with S protein mutations
 
 Pseudoviruses with wildtype S proteins or the S mutations that are seen in the alpha, beta, gamma, and delta variants were purchased from BPS Bioscience Inc (San Diego, CA). The pseudovirus with omicron S protein was obtained from eEnzyme (Gaithersburg, MD). Pseudoviruses containing S protein mutations of COVID variants used in this study can be seen in Supplementary file 1. These pseudotyped SARS-CoV-2 virus moieties had a lentiviral core expressing green fluorescent protein (GFP) and the SARS-CoV-2 Spike protein but lacked core SC2 sequences. We then compared the ability of pseudotyped virus with mutated S and ancestral S proteins to infect untreated and/or treated Calu-3 epithelial cells. A plasmid expressing VSV-G protein instead of the S protein was used to generate a pantropic control lentivirus. SARS-CoV-2 pseudovirus or VSV-G lentivirus were used to spin-infect Calu-3 cells in a 6-well plate (931 g for 2 hr at 30°C in the presence of 8 μg/ml polybrene). Flow cytometry analysis of GFP (+) cells was carried out 48 hr after infection on a BD LSRII flow cytometer and analyzed with the FlowJo software.
 
-## Immunofluorescence assay (immunocytochemistry)
+### Immunofluorescence assay (immunocytochemistry)
 
 Immunofluorescent staining was used to assess cellular integration of pseudoviruses associated with expression of ACE2. Briefly, Calu-3 cells were cultured in 4-well chamber slides (106 cell/well) for 24 hr then infected with control and pseudoviruses for 48 hr. The cells on the slides were fixed, permeabilized, and treated with blocking buffer, then incubated with anti-ACE2 antibody (R&D, AF933) overnight at 4°C. The images of cellular immunofluorescence of GFP (+) pseudovirus and Cy-5 (+) ACE2 expression were taken with fluorescent microscopes (Nikon, Eclipse Ti).
 
-## Western blotting (immunoblotting)
+### Western blotting (immunoblotting)
 
 25 µg lung or cell lysates were subjected to immunoblot analysis using antibodies against phosphorylated (p) ERK (pERK), total ERK(ERK), phosphorylated (p) AKT (pAKT), total AKT (AKT) (Cell Signaling Tech, MA). These samples were gel fractionated, transferred to membranes, and evaluated as described previously by our laboratory (Lee et al., 2004).
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 Statistical evaluations were undertaken with GraphPad Prism Software. As appropriate, groups were compared with two-tailed Student’s t-test or with nonparametric Mann−Whitney U-test. Values are expressed as mean ± SEM. One-way ANOVA or nonparametric Kruskal−Wallis tests were used for multiple-group comparisons. Statistical significance was defined as a level of p<0.05.

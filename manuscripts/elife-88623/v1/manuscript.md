@@ -10,13 +10,13 @@
 
 ### Affiliations
 
-1. https://ror.org/019g8w217 Instituto de Medicina Molecular João Lobo Antunes, Faculdade de Medicina, Universidade de Lisboa Lisbon Portugal
+1. Instituto de Medicina Molecular João Lobo Antunes, Faculdade de Medicina, Universidade de Lisboa Lisbon Portugal ([ROR:019g8w217](https://ror.org/019g8w217))
 
 † Corresponding author
 
 ## Abstract
 
-We herein introduce voyAGEr, an online graphical interface to explore age-related gene expression alterations in 49 human tissues. voyAGEr offers a visualisation and statistical toolkit for the finding and functional exploration of sex- and tissue-specific transcriptomic changes with age. In its conception, we developed a novel bioinformatics pipeline leveraging RNA sequencing data, from the GTEx project, encompassing more than 900 individuals. voyAGEr reveals transcriptomic signatures of the known asynchronous ageing between tissues, allowing the observation of tissue-specific age periods of major transcriptional changes, associated with alterations in different biological pathways, cellular composition, and disease conditions. Notably, voyAGEr was created to assist researchers with no expertise in bioinformatics, providing a supportive framework for elaborating, testing and refining their hypotheses on the molecular nature of human ageing and its association with pathologies, thereby also aiding in the discovery of novel therapeutic targets. voyAGEr is freely available at https://compbio.imm.medicina.ulisboa.pt/app/voyAGEr .
+We herein introduce voyAGEr, an online graphical interface to explore age-related gene expression alterations in 49 human tissues. voyAGEr offers a visualisation and statistical toolkit for the finding and functional exploration of sex- and tissue-specific transcriptomic changes with age. In its conception, we developed a novel bioinformatics pipeline leveraging RNA sequencing data, from the GTEx project, encompassing more than 900 individuals. voyAGEr reveals transcriptomic signatures of the known asynchronous ageing between tissues, allowing the observation of tissue-specific age periods of major transcriptional changes, associated with alterations in different biological pathways, cellular composition, and disease conditions. Notably, voyAGEr was created to assist researchers with no expertise in bioinformatics, providing a supportive framework for elaborating, testing and refining their hypotheses on the molecular nature of human ageing and its association with pathologies, thereby also aiding in the discovery of novel therapeutic targets. voyAGEr is freely available at https://compbio.imm.medicina.ulisboa.pt/app/voyAGEr.
 
 ## Introduction
 
@@ -36,19 +36,75 @@ voyAGEr’s interactive exploration of tissue-specific gene expression landscape
 
 We named our approach Shifting Age Range Pipeline for Linear Modelling (ShARP-LM). Briefly, this method consists of performing differential gene expression (with gene expression as a function of the donors’ Age, Sex, and Age&Sex interaction) in moving age windows spanning 16 years. By considering the percentage of genes altered in each age range, we can highlight age periods of major tissue-specific transcriptomic alterations (Figure 1).
 
-## Gene-centric analyses of human tissue-specific expression changes across age
+![Figure 1.](https://cdn.elifesciences.org/articles/88623/elife-88623-fig1-v1.jpg)
+
+**Figure 1.:** For each of the 49 human tissues in genotype-tissue expression (GTEx), gene expression was linearly modelled in windows spanning 16 years centered in consecutive years of age, to estimate the effects thereon of Age, Sex, and the interaction between them, i.e., how the Sex effect changes with age, equivalent to how the Age effect differs between sexes (v. Methods). In each age window, the percentage of genes with expression significantly altered by each of those effects gives their respective transcriptomic impact (upper panels). voyAGEr thereby identifies the age periods at which major gene expression changes occur in each tissue. For example, in coronary artery: major age-related transcriptional alterations are found at around 60 years of age (upper left panel), illustrated by the behaviour of COX11 (bottom left panel); major gene expression differences between males and females happen across the considered age range (upper centre panel), as illustrated by CD99 (bottom centre panel); major differences between sexes in age-related gene expression alterations happen across the considered age range (upper right panel), as illustrated by AKT2 (bottom right panel). Solid loess lines in the bottom panels (green for all donors, pink for females, blue for males). Gene expression (GE) in log2 of counts per million (logCPM).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/88623/elife-88623-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Heatmap depicting the percentage of common donors between pairs of tissues. A given square illustrates the percentage of all samples of tissue in the x-axis (Tissue 1) that is in common with the tissue in the y-axis (Tissue 2). (B) Assessment of the relative contributions of different sources to the dataset’s variance. (Left panel) Tissue accounts for approximately 90% of the total variance, while donor contributes around 10%; age has a minimal impact (1%), likely due to the relative subtlety of its effects on gene expression and to the tissue specificity of ageing dynamics. (Right panel) Removal of the donor variable does not transfer variance to age, suggesting limited confounding between the two variables. (C) Impact of the relative proportion of common donors on gene expression correlation between tissue pairs. Panels A, B, and C showcase the tissue pairs with the highest (Muscle Skeletal/Kidney Cortex), median (Pancreas/Heart Left Ventricle), and lowest (Small Intestine/Brain Amygdala) percentages of common donors, respectively. The left panels illustrate gene-by-gene Pearson’s correlations of gene expression between the two tissues, comparing the scenarios with (x-axis) and without (y-axis) the removal of common donors. The right panels depict the same comparisons, but with random downsampling (y-axis) in both tissues based on the proportions defined for common donor removal. The depicted examples show that the outcomes are comparable when removing common donors or employing random downsampling. (D) Comparison of the impacts of removing common donor samples and random downsampling across tissue pairs. The process of removing common donors involved the identification and removal of samples from shared donors while maintaining the original sample size imbalance between tissues. As this process inherently involves downsampling, which may impact results, we performed additional downsampling by randomly removing samples from both tissues according to the proportions defined for the removal of common donors. The heatmap is coloured based on whether the removal of common donors has a greater (red) or lesser impact (blue) than random downsampling. The values depicted in the heatmap, denoted as the Impact of Common Donors (ICD), are computed for each tissue pair. This calculation involves several steps: first, by determining the absolute difference in Pearson’s correlation for each gene’s mean expression within each age window from the ShARP-LM pipeline, between the original data and the subset of data without common donors (DiffWoCD) or with random downsampling (DiffRD). Subsequently, the medians of DiffWoCD and DiffRD are computed, and the difference between these median values provides the ICD for each tissue pair. Due to the unidirectional nature of correlation (i.e. the results for tissue 1 vs tissue 2 mirror those for tissue 2 vs tissue 1), the resulting matrix is triangular in form. Gray tiles denote NA values, i.e., where the tissue-tissue comparison does not have a meaning, namely self-self and between sex-specific tissues. Top right insert: density line (‘smoothed’ histogram) of all ICD values. (E) - Scatter plot relating the Impact of Common Donors (ICD, values in heatmap D) with the respective percentage of common donors (values in heatmap A).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/88623/elife-88623-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (Top) Before batch effect correction, 17.7% of the variance between samples appears to be mainly explained by the COHORT variable. (Bottom) After batch effect correction, PC1 no longer appears to be explained by the COHORT variable, with its weights having a similar distribution between batches.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/88623/elife-88623-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** ShARP-LM involves fitting linear models to gene expression data for each tissue, with samples from donors grouped into age windows of 16 years each, shifted consecutively through individual years of age using a sliding window approach. As samples at the ends of the dataset’s age range would thereby be involved in fewer linear models, we made the window size gradually increase from 11 to 16 years when starting from the ‘youngest’ samples and decrease from 16 to 11 years when reaching the ‘oldest.’ The example shows the expression of an arbitrary gene over age, with 8 age windows shown. Coloured rectangles represent the age windows and coloured lines the linear modelling of the gene expression over age in each of them.
+
+### Gene-centric analyses of human tissue-specific expression changes across age
 
 The progression of tissue-specific expression of a particular gene across age can be examined in voyAGEr’s Gene tab. By entering its HGNC symbol in the Gene selector, the user has access to graphical summaries of the gene’s tissue-specific expression (sub-tab Profile) (Figure 2A) and the significance of age-related changes in its expression due to the Age, Sex, and Age&Sex effects (sub-tab Alteration) (Figure 2B) across age. Results can be displayed in a heatmap for all tissues or in a scatter plot for a chosen individual tissue (Figure 2C). When the gene is studied in a single tissue, the user can graphically and statistically profile the association of the donors’ sex and reported conditions (e.g. history of heart attack or pneumonia) with the gene’s expression profile. A table summarizing the donors’ metadata is also shown (Figure 2C). The user can interactively select donors of interest on the scatter plot and further examine their information in the automatically subsetted table.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/88623/elife-88623-fig2-v1.jpg)
+
+**Figure 2.:** (A) Heatmap of MKI67 expression across tissues over age. (B) Heatmap of the significance of Age-associated MKI67 expression alterations over age. p-values are for the moderated t-statistics of differential gene expression associated with the Age effect (v. the ShARP-LM approach in Methods). Notably, transcriptional changes are observed in the lung (mid 20’s, early 30’s, and after 55). (C) - voyAGEr’s Gene tab interface. MKI67 expression in the lung is inspected. Donors’ information is shown in a table and the scatter plot can be interactively adjusted according to the donors’ condition of interest (Figure 2—figure supplement 1B ).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/88623/elife-88623-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Heatmap of CDKN2A expression across tissues over age. (B) PCNA expression in lung over age and its association with the donor’s history of non-metastatic cancer.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/88623/elife-88623-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Scatter plots of SALL1 (A) and DDX43 (B) expression over age (above), in adipose tissue and lung, respectively, coloured based on the donor’s biological sex (male in blue and female in pink). The scatter plots of gene expression are shown together with line plots of the significance of their difference between sexes (below).
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/88623/elife-88623-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Representation of the expression of Y-chromosome-specific gene DDX3Y, stratified by sex (A), along with the corresponding significance indicating age-related alterations (B). Despite the non-zero expression values for female samples, they fall within a range deemed of background noise (−2 to –8 logCPM). Notably, when assessing the significance of age-related changes in the gene, a distinct peak emerges around the age of 40. This peak is spurious, as it primarily mirrors changes in gene expression in females.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/88623/elife-88623-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (A) Before batch effect correction, SFTPA2 expression diminishes throughout ageing. This change is particularly significant after around 55 years of age. (B) After correction, expression of this gene shows no significant alterations across age ranges.
 
 An example of a process whose molecular mechanisms are of particular interest to researchers in the ageing field is cellular senescence. Senescence is a stress-induced cell cycle arrest limiting the proliferation of potentially oncogenic cells but progressively creating an inflammatory environment in tissues as they age (van Deursen, 2014; Gorgoulis et al., 2019. CDKN2A, that encodes cell cycle regulatory protein p16INK4A known to accumulate in senescent cells Gil and Peters, 2006; Erickson et al., 1998), has its expression increased with age in the vast majority of tissues profiled (Figure 2—figure supplement 1A ). Similarly, reduced levels of proliferation markers, such as PCNA (Narita et al., 2003) and MKI67 (Sun and Kaufman, 2018), can be studied as putative markers of ageing of certain tissues. These genes have their expression altered with age in the lung and display a similar expression profile (decreasing from 25 to 30 years old, constant between 35 and 50 years old and decreasing in older ages) (Figure 2C). However, these trends appear to vary according to the donor’s history of non-metastatic cancer (Figure 2—figure supplement 1B), illustrating voyAGEr’s use in helping to find associations between gene expression and age-related diseases.
 
 On a different note, sex biases have been reported in the expression of SALL1 and DDX43 in adipose tissue and lung, respectively (Kassam et al., 2019). voyAGEr allows us to not only recapitulate those observations but also assess the temporal window where these changes occur (Figure 2—figure supplement 2).
 
-## Tissue-specific assessment of gene expression changes across age
+### Tissue-specific assessment of gene expression changes across age
 
-## Peaks of gene expression alterations
+#### Peaks of gene expression alterations
 
 The landscape of global tissue-specific gene expression alteration across age can be examined in voyAGEr’s Tissue main tab. A heatmap displaying, for all tissues, the statistical significance over age (v. Methods) of the proportion of genes altered with Age, Sex, or Age&Sex (depending on the user’s interest) is initially shown (Figure 3A), illustrating the aforementioned asynchronous ageing of tissues observed for humans and rodents (Schaum et al., 2020; Thomas et al., 2002; Yoshida et al., 2002; Gheorghe et al., 2014; Yang et al., 2015; Aramillo Irizar et al., 2018; Rando and Wyss-Coray, 2021).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/88623/elife-88623-fig3-v1.jpg)
+
+**Figure 3.:** (A) Heatmap of significance (false discovery rate, FDR, based on random permutations of age, v. Methods) over the age of the proportion of genes with expression significantly altered with Age in the 49 analysed tissues. (B) Exploration of gene expression changes across age in Subcutaneous Adipose tissue: (a) Percentage of genes with significantly altered expression with Age over age. Two main peaks of transcriptional changes are noteworthy, a major one in the late 20s and a minor one after 45; (b) Clicking on the dot of a specific age (29.57 years old in plot a) gives access to the list of the most altered genes at that age, ordered by statistical significance of expression changes (p-value of moderated t-statistic). (c) Plot of expression of the chosen top gene in the table in b across age (bottom) in parallel with the significance of its expression alterations with Age. The expression of LMO3 significantly increases at around 30 years old, concomitantly with the first peak of transcriptomic changes with Age.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/88623/elife-88623-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** voyAGEr enables the identification of a prominent age period of transcriptional alterations in the uterus, which coincides with the onset of menopause (Kaczmarek, 2014). The genes exhibiting significant changes (A) reflect the transformations observed in biological processes (B), marked by a distinct switch in enrichment scores. Positively enriched pathways become negative, and vice-versa during this age frame.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/88623/elife-88623-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Heatmap of significance over age, for each tissue, of the proportion of altered genes between sexes (left), in parallel with the number of sex-differentiated genes highlighted by Gershoni et al. (v. Figure 1 in Gershoni and Pietrokovski, 2017) (right). Mammary is corroborated as the tissue with the most sex-differentiated gene expression. For tissues like Adipose - Subcutaneous, Skin - Not Sun Exposed, Thyroid, Nerve - Tibial, Muscle - Skeletal, and Spleen, sex-related biases in expression mainly arise in late life. (B) Scatter plot relating, for each tissue (each dot), the number of sex-differentiated genes found by Gershoni et al. with the number of genes found by voyAGEr to be altered (p-value ≤0.05) between sexes in at least 25 age intervals (left). This correlation is significant (p-value ≤0.05) regardless of the considered minimum number of age intervals a gene must be altered in (right).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/88623/elife-88623-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** For thyroid as an example tissue, the sex-differentiated distribution of GTEx samples’ ages (v8) (above) are shown together with the percentage of altered genes over age (below) for the three variables (Age, Sex, and Age&Sex), as well as their statistical significance, given by the Shifting Age Range Pipeline for Linear Modelling (ShARP-LM) approach. The statistical power for detecting transcriptional changes is influenced by the age distribution of donors, leading to a higher likelihood of identifying significant alterations (FDR ≤ 0.05) in age ranges that are more prevalent in the sample population, typically associated with older individuals.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/88623/elife-88623-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Downsampling was performed by reducing the number of samples in a given window to the minimum available sample size within all age windows for a given tissue. (A) Per tissue violin plots of gene-wide distributions of Pearson’s correlation coefficients b jetween original and downsampled logFC values for the Age variable across age windows, with tissues coloured by and ordered by increasing percentage of downsampling-associated reduction in the number of samples. (B) Density scatter plots of comparison of associated original and downsampled p-values for each tissue, coloured by the downsampling percentage in each age window, highlighting the low range of p-values (from 0 to 0.1). Despite changes in logFC with downsampling, a considerable correlation in significance is maintained, although downsampling naturally results in a loss of statistical power, evident by the shift of points towards the first quadrant (dashed lines: p-value = 0.05).
 
 The user can then spot the age periods with the most significant gene expression alterations in a selected tissue (Figure 3B, a), and identify the associated altered genes (Figure 3b). The user can also plot the expression of a given gene of interest across ages together with the significance of its expression modification with Age, Sex, or Age&Sex (Figure 3B, c).
 
@@ -56,13 +112,21 @@ An example of voyAGEr’s capabilities is illustrated in Figure 1—figure suppl
 
 It is also possible to visualise tissues with more than one period of transcriptomic changes, and to individually inspect these periods. As an example, the subcutaneous adipose tissue appears to go through two main periods of transcriptional changes with age: a major one at the late 20s (~13% of altered genes), and a minor one after 45 years (~5% of altered genes) (Figure 3B, A). The most altered genes in this first peak appear to have their expression modified only at this precise age period (e.g. PRELID1, RUNX1T1, TUBB4B, FGFRL1, and MALSU1). Similarly, mitochondrial genes (e.g. MT-CYB, MT-ND4, MT-ATP6, MT-ND2) (Figure 3B) appear to be the most altered genes in the second peak (Figure 3B, C). This particularity suggests that different sets of genes drive the periods of major transcriptional changes, which begs to assess if they reflect the activation of distinct biological processes.
 
-## Gene set enrichment
+### Gene set enrichment
 
 The user can explore the biological functions of the set of genes underlying each peak of transcriptomic changes by assessing their enrichment in curated pathways from the Reactome database (Croft et al., 2014). voyAGEr performs Gene Set Enrichment Analysis (GSEA) (Subramanian et al., 2005) and the user can visualise heatmaps displaying the evolution over the age of the resulting normalised enrichment score (NES Subramanian et al., 2005, reflecting the degree to which a pathway is over- or under-represented in a subset of genes) for a given tissue, effect (Age, Sex, or Age&Sex) and Reactome pathway (all, or user-selected) (Figure 4A). To reduce redundancy and facilitate the understanding of their biological relevance, we clustered those pathways into families that also include Kyoto Encyclopedia of Genes and Genomes (KEGG) pathways (Kanehisa and Goto, 2000) and Gene Ontology (GO) Biological Processes of level 3 (Gene Ontology Consortium, 2004). Briefly, we clustered gene sets from the three sources based on the overlap of their genes (v. Methods), thereby creating families of highly functionally related pathways. Taking advantage of the complementary and distinct terminology in Reactome, KEGG, and GO, the user can interpret each family’s broad biological function by looking at the word cloud of its most prevalent terms, and browsing the list of its associated pathways (Figure 4A). For example, although most pathways enriched in the two aforementioned peaks of altered genes in subcutaneous adipose tissue were different, there is an overlap of pathways related to metabolism, including various mitochondrial processes (Figure 4A). This highlights the importance of integrating individual gene data with pathway enrichment analysis to garner more comprehensive insights into the biological relevance of those changes.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/88623/elife-88623-fig4-v1.jpg)
+
+**Figure 4.:** (A) Heatmap depicting the normalised enrichment scores (NES) of Reactome pathways associated with specific tissues and effects. Pathways are classified into 10 families (a), which can be characterised by their frequently occurring terms (b), providing insights into their biological functions. Only pathways significantly linked to gene expression changes in at least one age window (FDR ≤ 0.01) are displayed. Black squares indicate the two age periods with prominent transcriptional changes, while yellow squares denote pathways common to both peaks, primarily belonging to family 2. Word cloud analysis (b) reveals that family 2 pathways are mainly related to metabolism. (B) Enrichment of a user-provided gene set, given by the significance of Fisher’s tests, in genes altered with Age throughout ageing (based on a user-defined p-value threshold). Here, the given gene set is composed of genes from Senequest Gorgoulis et al., 2019 whose link with senescence is supported by at least four sources. In this case, there are no significant peaks.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/88623/elife-88623-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Based on their common genes (v. Methods), pathways from curated databases were clustered in 10 families.
+
 The peaks of transcriptomic changes can also be examined for enrichment in a user-provided gene set (Figure 4B). As expression of senescence-related CDKN2A is increased in the subcutaneous adipose tissue with age (Figure 2—figure supplement 1A), we hypothesised that other senescence-associated genes may be augmented too. Thus we used that voyAGEr functionality, using the Senequest (Gorgoulis et al., 2019) geneset (supported by at least four sources) to test it, observing no significant alterations (Figure 4B).
 
-## Modules of co-expressed genes
+### Modules of co-expressed genes
 
 voyAGEr also allows functional analyses of modules of co-expressed genes i.e. genes with highly correlated expression across samples, defined by weighted correlation network analysis (Langfelder and Horvath, 2008). Genes in the same module are likely to be co-regulated and share biological functions or associations with phenotypical or pathological traits (van Dam et al., 2017). Those modules may also act as markers of core transcriptional features of cellular activity and identity (Kelley et al., 2018).
 
@@ -100,13 +164,13 @@ Moreover, the observed diverse and asynchronous changes in gene expression betwe
 
 ## Methods
 
-## Development platforms
+### Development platforms
 
 Data analysis was performed in R (version 4.1.2) and the application developed with R package Shiny (Chang et al., 2024). voyAGEr’s outputs are plots and tables, generated with R packages highcharter (Kunst, 2022) and DT (Yihui et al., 2024), respectively, that can easily be downloaded in standard formats (png, jpeg, and pdf for the plots; xls and csv for the tables).
 
 voyAGEr was deployed using Docker Compose and ShinyProxy 2.6.1 in a Linux virtual machine (64 GB RAM, 16 CPU threads, and 200 GB SSD) running in our institutional computing cluster.
 
-## Read count data pre-processing
+### Read count data pre-processing
 
 The matrix with the RNA-seq read counts for each gene in each GTEx v8 sample was downloaded from the project’s data portal (https://www.gtexportal.org/) (Lonsdale et al., 2013). From the 54 tissues available from GTEx v8, five were discarded (kidney medulla, fallopian tube, bladder, ectocervix, endocervix) due to low (<50) numbers of samples.
 
@@ -116,11 +180,15 @@ However, it is well-established that batch effects, which may stem from variatio
 
 The resulting matrix of logCPM-corrected values was used for all downstream analyses. As an illustrative example of the importance of batch removal, the expression of surfactant factor SFTPA2 was found to be associated with donors on a ventilator (McCall et al., 2016). Without batch correction, SFTPA2 expression would have been associated with age due to the higher prevalence of such cases among older individuals (Figure 2—figure supplement 4).
 
-## ShARP-LM
+### ShARP-LM
 
 To model the changes in gene expression with age, we developed the Shifting Age Range Pipeline for Linear Modelling (ShARP-LM). For each tissue, we fitted linear models to the gene expression of samples from donors with ages within windows with a range of 16 years shifted through consecutive years of age (i.e. in a sliding window with window size = 16 and step size = 1 years of age). This was the minimum age span needed to guarantee the presence of more than one sample per window, across all considered tissues. As samples at the ends of the dataset’s age range would be thereby involved in fewer linear models, we made the window size gradually increase from 11 to 16 years when starting from the ‘youngest’ samples and decrease from 16 to 11 years when reaching the ‘oldest’ (Figure 1—figure supplement 3).
 
-Function lm from limma was used to fit the following linear model for gene expression (GE):GE∼E0+α.Age+β.Sex+χ.Age+Sex+ε
+Function lm from limma was used to fit the following linear model for gene expression (GE):
+
+$$
+GE∼E_{0}+\alpha.Age+\beta.Sex+χ.Age+Sex+\epsilon
+$$
 
 For each gene, α, β, and γ are the coefficients to be estimated for their respective hypothesised effects. For each sample, Age in years and Sex in binary were centered and Age&Sex interaction was given by their product. The coefficients E0 and ε are thus the expression of the average sample (i.e. with average sex and average age) and the error term.
 
@@ -128,35 +196,39 @@ For each gene in each model (i.e. each age window in each tissue), we retrieved 
 
 In summary, for a given tissue and variable (Age, Sex, and Age&Sex), ShARP-LM yields t-statistics and p-values over age for all genes, reflecting the magnitude and significance of the changes in their expression throughout adult life.
 
-## Gene-centric visualisation of tissue-specific expression changes across age
+### Gene-centric visualisation of tissue-specific expression changes across age
 
 For visualisation purposes, the trend of each gene’s expression progression over age in each tissue was derived through Local Polynomial Regression Fitting, using R function loess on logCPM values (Figures 1—3). For summarizing in a heatmap a given gene’s expression across age in multiple tissues (Figure 2A) or the expression of several genes across age in a specific tissue, each gene’s regression values are centered and scaled, using R function scale.
 
 For summarizing in a heatmap the significance of a given gene’s expression changes over age in multiple tissues (Figure 2B), cubic smoothing splines are fitted to -log10(p), with p being the t-statistic’s p-value, with R function smooth.spline.
 
-## Tissue-specific quantification of global transcriptomic alterations across age
+### Tissue-specific quantification of global transcriptomic alterations across age
 
 To assess the global transcriptomic impact of each of the three modelled effects in each tissue across age, we analysed the progression over age (i.e. over consecutive linear models) of the percentage of genes whose expression is significantly altered (t-statistic’s p-value ≤0.01) by each effect (Figure 3B). To evaluate the significance of each percentage and assess if high percentages can be confidently associated with major transcriptomic alterations, we controlled for their false discovery rate (FDR) by randomly permuting the samples’ ages and sexes within each age window fifty thousand times and performing ShARP-LM on each randomised dataset. We were then able to associate an FDR to each percentage of altered genes by comparing it with the distribution of those randomly generated (Figure 3B, A).
 
 We also applied a linear model across the entire age range, thereby providing users with more insight and supporting evidence into how a specific gene changes with age. For visualisation purposes, we incorporated a dashed orange line, with the logFC per year for the Age effect as slope, in the respective scatter plots (Figure 3B, C). We depict the Sex effect therein by prominent dots on the average samples, with pink and blue denoting females and males, respectively.
 
-## GSEA
+### GSEA
 
 For each Peak of significant gene expression modifications, we performed GSEA (Subramanian et al., 2005) on the ordered (from the most positive to the most negative) t-statistics of differential expression for the respective tissue and age, using R package fgsea (Korotkevich et al., 2021) and the Reactome database (Croft et al., 2014). We extracted the GSEA normalised enrichment score (NES), which represents the degree to which a certain gene set is overrepresented at the extreme ends of the ranked list of genes. A positive NES corresponds to the gene set’s overrepresentation amongst up-regulated genes within the age window, whereas a negative NES signifies its overrepresentation amongst down-regulated genes. The NES for each pathway was used in subsequent analyses as a metric of its up- or down-regulation in the Peak. The resulting NES for each pathway was used in subsequent analyses as a metric of its over- or down-representation in the Peak.
 
 To optimise computational efficiency and minimise redundancy in the analysed pathways, we only considered pathways containing a minimum of 15 genes and up to 500 genes, as suggested in the GSEA User Guide (GSEA-MSIGDB, 2023). For the sake of clarity in voyAGEr’s visual representations, we only included pathways with a p-adjusted value less than or equal to 0.05, further narrowing it down to pathways within the top 1% of p-adjusted values. Additionally, we exclusively featured pathways with at least one significant age Peak (FDR ≤ 0.05), as illustrated in Figure 4A.
 
-## Families of pathways
+### Families of pathways
 
 To reduce pathway redundancy and facilitate the assessment of their biological relevance in the results’ interpretation, we created an unifying representation of pathways from Reactome (Croft et al., 2014), KEGG (Kanehisa and Goto, 2000), and level 3 Biological Processes from GO (Gene Ontology Consortium, 2004), by adapting a published pathway clustering approach (Chen et al., 2014) to integrate them into families.
 
-The approach relies on the definition of a hierarchy of pathways based on the number of genes they have in common. For each two pathways Pi and Pj, respectively containing sets of genes Gi and Gj, we computed their overlap index (OI) (Chen et al., 2014), defined as follows:OIi,j=|Gi∩Gj|/min(|Gi|,|Gj|)
+The approach relies on the definition of a hierarchy of pathways based on the number of genes they have in common. For each two pathways Pi and Pj, respectively containing sets of genes Gi and Gj, we computed their overlap index (OI) (Chen et al., 2014), defined as follows:
+
+$$
+OI_{i,j}=|G_{i}∩G_{j}|/min(|G_{i}|,|G_{j}|)
+$$
 
 Where |Gi| is the number of genes in set Gi and |Gi∩Gj| is the number of genes in common between Gi and Gj. OIij = 1 would, therefore, indicate that Pi and Pj are identical in gene composition or that one is a subset of the other. On the contrary, OIij = 0 would mean that Pi and Pj have no genes in common. To ease the computational work, we removed from the analysis pathways that are subsets of larger pathways (i.e. each pathway whose genes are all present in another pathway).
 
 From the OIij matrix, from which each row is a vector with the gene overlaps of pathway i with each of the pathways, we computed the matrix of Pearson’s correlation between all pathways’ overlap indexes with R function cor. That matrix was finally transformed into Euclidean distances with R function dist, allowing for pathways to be subsequently clustered with the complete linkage method with R function hclust. The final dendrogram was empirically cut into 10 clusters (Figure 4—figure supplement 1). Pathways that were initially excluded from the computation for being subsets of others were added to the clusters of their respective parent pathways. Each daughter pathway with more than one parent was assigned to the cluster of the parent with the smallest number of genes, thereby maximizing the daughter-parent similarity. The data.table R package, for fast handling of large matrices, was used in this analysis (Robertson et al., 1992).
 
-## Gene co-expression modules
+### Gene co-expression modules
 
 Gene co-expression modules were defined with R package WGCNA (Langfelder and Horvath, 2008). For each considered tissue, the process began with the identification of a set of informative genes that exhibit high variability across samples (referred to as variable A), thus improving module definition. Next, we calculated the bicorrelation matrix for the expression of all selected genes with the bicor function. We then applied soft thresholding by raising all correlation values to the power of β, accentuating stronger correlations. The value of β=12 was chosen in accordance with the WGCNA FAQs (Langfelder and Horvath, 2024), and after confirmation of a free-scale topology using the pickSoftThreshold function. We generated the dissimilarity matrix by subtracting the output of the TOMsimilarity function from 1. Gene co-expression modules were then defined using a static tree-cutting algorithm, implemented via the cutreeStaticColor function, requiring as parameters a minimum number of genes per module (referred to as variable B) and the tree-cutting height (variable C).
 
@@ -170,6 +242,6 @@ Each module is characterised by a set of genes and an eigengene, represented by 
 
 The four tissues (Brain - Cortex, Muscle - Skeletal, Heart - Left Ventricle, and Whole Blood) covered by the Module section of voyAGEr were selected due to their relatively high sample sizes and availability of comprehensive cell type signatures. The increasing availability of human tissue scRNA-seq datasets (e.g., through the Human Cell Atlas; Regev et al., 2017) will allow future updates of voyAGEr to encompass a wider range of tissues.
 
-## Data and code availability
+### Data and code availability
 
 Processed GTEx v8 RNA-seq data (read count tables) were downloaded from the project’s data portal (https://www.gtexportal.org/). Donor metadata were obtained from dbGaP - database of Genotypes and Phenotypes (Accession phs000424.v9.p2 project ID 13661). voyAGEr’s output tables can be directly downloaded in standard xls and csv formats. The complete source code for voyAGEr (v2.0.0 for the analyses reported herein), including pre-processing and Shiny app, can be accessed on GitHub at the following repository: https://github.com/DiseaseTranscriptomicsLab/voyAGEr.

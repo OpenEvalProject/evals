@@ -49,7 +49,7 @@ To aid our estimation of total cell quantities, we additionally traced two highe
 
 Although our projectome analysis was limited to the large neurons with columnar arborizations, these reconstructions provide the most comprehensive neuroanatomical survey to date of CX cell types in any insect apart from the fruit fly.
 
-## General structure of the bumblebee CX
+### General structure of the bumblebee CX
 
 As in other insects, the bumblebee CX spans the mid-line of the protocerebrum in the central brain and is composed of four adjacent neuropils (Figure 1a–c), when labeled with antibodies against the presynaptic marker synapsin (Klagges et al., 1996). In order from posterior to anterior, these are the protocerebral bridge (PB), the paired noduli (NO), the fan-shaped body (FB; alternatively named upper division of the central body), and the ellipsoid body (EB; alternatively named lower division of the central body) (Figure 1c). The FB lays over the top of the EB and together they form the central body (CB).
 
@@ -65,7 +65,7 @@ Interestingly, the PB was devoid of both TH- and 5HT-positive processes and syna
 
 Based on projection patterns of individual columnar neurons, the CX was further divided into vertical columns (discussed further in the next section). However, no indication of columns was evident based on immunohistochemical labeling.
 
-## Columnar cell projection patterns
+### Columnar cell projection patterns
 
 All columnar cells originated from cell bodies situated dorsally of the CX. Their fibers extended ventrally to the PB where they branched to make contacts with their first synaptic partners. Following the PB, columnar cells fasciculated into prominent bundles. Eight in total, these bundles spanned the width of the CX and were bilaterally symmetric about the mid-line with four bundles in each hemisphere. The resulting formation was that of a chiasm, where neurons from a bundle in one hemisphere projected in the direction of the contralateral hemisphere (Figure 2b). From lateral to medial, these bundles are generally referred to as the W, X, Y, and Z bundles (Williams, 1975) and can be associated with either the right or left hemisphere with the addition of L or R abbreviation (i.e. RW or LZ; Figure 2b,h). In locusts and flies these bundles correspond to the developmental origin of a neuron from one of four neuroblasts on either side of the midline (Boyan and Reichert, 2011; Boyan et al., 2017), and therefore they served as our prime reference when describing columnar arborization patterns.
 
@@ -79,17 +79,180 @@ We next determined the innervated columns for all neurons of a given bundle, i.e
 
 Three alternative projection patterns were observed that could be derived from the described default pattern by shifting either the column of origin in the PB or by shifting the target projection in the CB (Figure 2e,f). Cells which are ‘CB-shifted’ were shifted by one CB column in the direction of the contralateral hemisphere, whereas cells that are ‘PB-shifted’ were shifted by one PB column toward the ipsilateral hemisphere. Finally, cells labeled here as ‘both-shifted’ were shifted by one PB column in the direction of the contralateral hemisphere and one CB column in the ipsilateral hemisphere (Figure 2f). In these alternative projection patterns, neurons did not exist in all PB columns. Interestingly, while most neurons followed the default pattern, all cell types that projected to the NO were characterized by the CB-shifted pattern, while neurons that are likely to be main CX output neurons Stone et al., 2017; Rayshubskiy et al., 2020; Hulse et al., 2020 followed a pattern with shifted PB innervation.
 
-## Columnar cell types
+### Columnar cell types
 
 We identified columnar cell types based on their projection fields within CX neuropils, their heterolateral projection patterns in the CB (i.e. the column they project to relative to the bundle they originate from), their neurite paths, their population size (number of cells per PB column), and by the tertiary neuropil they innervate (Figure 3). Overall, we found eleven columnar cell types, two that innervated the EB (Figure 3a) and nine which innervated the FB (Figure 3b). For a list of corresponding neuron names historically used in other insects, see Table 1. For additional information on nomenclature and the neuron naming scheme, see Methods. Quantities of each cell type per PB column can be found in Figure 3—figure supplement 1.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/68911/elife-68911-fig3-v2.jpg)
+
+**Figure 3.:** (a–b) Frontal views of each cell type. Colored regions in CX schematics indicate neuropil arborization domains for each cell type. The number underneath each cell type represents the total number of traceable cells for each cell type. Cell number totals are based on tracing data from the 126 nm data set with the exception of PFN and PEN cells, the numbers of which were derived from the 24 nm data set (see Figure 3—figure supplement 1). (a) Columnar cells that innervate the EB. (b) Columnar cells that innervate the FB. Due to resolution and field of view limits of our data sets, the PFN total is likely an underestimate. Numbers for PFx4 neurons are likely an underestimate as well, as the main axon diameter of this cell type was close to the resolution limit of our image data. Note also that confidence for correct identification of smaller cells is lower in the W-bundle compared to the other bundles. See Table 1 for corresponding neuron names previously used in other insects. PB, protocerebral bridge; FB, fan-shaped body; EB, ellipsoid body; NO, noduli; LX, lateral complex; LAL, lateral accessory lobe; INP, inferior protocerebrum; SMP, superior medial protocerebrum; VMP, ventromedial protocerebrum.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/68911/elife-68911-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Distribution of of columnar cell types per PB column. Quantities of each cell type in blue (right hemisphere) and red (left hemisphere) are taken from cells traced in the 126 nm data set. PFN and PEN cell charts include quantities from both the 126 nm data set and the 24 nm data set (green). Hemisphere identity for each neuron is defined by the location of its soma. Rough estimations of true cell quantities (gray bars; asterisks) are based on reconstructions from all data sets and assume hemispheric symmetry. Cells with small diameter fibers (notably PFNs) and cells that innervated the outermost PB columns were more difficult to reconstruct due to limitations with the data set (for instance, unfocused regions along image edges likely caused by lens distortion during imaging).
+
+**Table 1.**
+ List of corresponding neuropil and neuron names in Drosophila melanogaster and other insects.Names of neurons from other species are based on locust nomenclature (Heinze and Homberg, 2008), and have been used in butterflies (Heinze et al., 2013), moths (de Vries et al., 2017), beetles (El Jundi et al., 2018), and bees (Stone et al., 2017; Hensgen et al., 2021). Asterisks indicate cells identified in this study with no clear homologues in Drosophila.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2">CX neuropils</th>
+      <th colspan="2">Columnar neurons</th>
+      <th colspan="2">FB interneurons</th>
+      <th colspan="2">Tangential neurons</th>
+    </tr>
+    <tr>
+      <th>Drosophila</th>
+      <th>Other insects</th>
+      <th>Drosophila</th>
+      <th>Other insects</th>
+      <th>Drosophila</th>
+      <th>Other insects</th>
+      <th>Drosophila</th>
+      <th>Other insects</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PB</td>
+      <td>PB</td>
+      <td>EPG/PEG</td>
+      <td>CL1a/b</td>
+      <td>hΔ</td>
+      <td>Pontines</td>
+      <td>Δ7</td>
+      <td>TB1</td>
+    </tr>
+    <tr>
+      <td>FB</td>
+      <td>CBU</td>
+      <td>PEN</td>
+      <td>CL2</td>
+      <td>vΔ</td>
+      <td>Unknown</td>
+      <td>FBx</td>
+      <td>TU</td>
+    </tr>
+    <tr>
+      <td>EB</td>
+      <td>CBL</td>
+      <td>PFL1</td>
+      <td>CPU1 Type 1</td>
+      <td></td>
+      <td></td>
+      <td>ER</td>
+      <td>TL</td>
+    </tr>
+    <tr>
+      <td>NO</td>
+      <td>NO</td>
+      <td>PFL3</td>
+      <td>CPU1 Type 2</td>
+      <td></td>
+      <td></td>
+      <td>LNO</td>
+      <td>TN</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>PFL2</td>
+      <td>CPU2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>PFN</td>
+      <td>CPU4</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>PFR</td>
+      <td>Unknown</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>PFG</td>
+      <td>Unknown</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>FX</td>
+      <td>CU</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Unknown</td>
+      <td>PF1*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Unkown</td>
+      <td>PFx1,2,3,4*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td>Unknown</td>
+      <td>PFLx*</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 Columnar cell types projecting to the EB included EPG/PEG cells and PEN cells (Figure 3a). EPG/PEG cells arborized in the PB, the EB, and the gall , while PENs sent projections through the PB, the EB, and a small compartment in the NO (NOs; Figure 6a–c).
 
 All FB columnar cells contained processes that arborized in both the PB and the FB. Several FB cell types sent projections toward the lateral complex (LX). These included PFL1,3, PFL2, PFLx, and PFx2 cells (Figure 3b). PFx1 cells sent their fibers away from the CX toward regions in the inferior protocerebrum (INP) and lateral accessory lobes (LAL), while PFx2 had descending fibers toward the LX, and PFx3 and PFx4 neurons contained fibers that extended anteriorly toward regions in the superior medial protocerebrum (SMP) and INP. Lastly, one cell type, PF1, contained arborizations in only the PB and FB. The morphology, quantity and projections of these cells are discussed further in the sections that follow.
 
-## The noduli: PFN and PEN cells
+### The noduli: PFN and PEN cells
 
 In flying insects, the paired NO are two spherical units situated ventrally in the CX, posterior to the CB (Figure 1c). In bees and flies, the NO receive mixed arborizations from PFN (Figure 4a–e) and PEN cells (Figure 4d–e), which propagate signals to and from the CB and PB columns in the contralateral hemisphere, as well as input from large tangential cells (Figure 4f; Stone et al., 2017; Hensgen et al., 2021; von Hadeln et al., 2020; Hulse et al., 2020).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/68911/elife-68911-fig4-v2.jpg)
+
+**Figure 4.:** (a) Frontal view of PFN cells from the 126 nm data set. (b) Frontal view of PFN cells in 100 nm data set projecting from PB columns L2-L9. (c) Schematic of PFN cell projection patterns. PFNs are shifted contralaterally by one column in the FB. (d) Lateral and horizontal views of PFN (green), PEN (pastel red), and FB-NOc (purple) cells. (e–f) Reconstructions from 24 nm data set. (e) Lateral view of PEN, PFN, and PFNc innervations in the NO, each group occupying a discrete zone. (f) NO tangential cells (LNO1-5) and FB tangential cell (FB-NOc) fibers reveal at least three structural compartments schematized in (g). To avoid confusion with the fruit fly NO zones, which are named by anatomical position (Wolff and Rubin, 2018), we have called these the small unit (NOs), main unit (NOm), and the cap (NOc). (h) Colored regions show the arborization domains of FB-NOc cells. Scale bars: (a–b) 100 µm.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/68911/elife-68911-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Lateral view of PENs (pastel red), PFN (green) and PFNc (purple) branching in the NO 24 nm data set. (b) PFN bundles from PB columns R2-R9 innervating the noduli. PFNs occupying NOm (colored) and PFNc cells that occupy the NOc (grey) are shown together. Only the PFNc cells from bundle R8 were comprehensively traced. (c) Lateral view of FB-NOc cells. (d) Reconstruction of a dye injected FB-NOc neuron from the sweat bee Megalopta genalis; frontal and lateral views. Unlike fly FBt-NO cells, these FB-NOc cells only arborize in a single nodulus contralateral to their cell body and have no overlap with any LNO cell. Further, at approximately 15–20 individuals per hemisphere, this single group of cells is more numerous than all NO-innervating FB tangential cells in the fly. Given their arborizations in the NO, the FB, and the SMP/CRE and their apparent uniqueness within the bee, they might play a role in either relaying stored vectors from long term memory to the CX (see main text), or in storing path integration vector memory directly. Their wide branching pattern across the FB is reminiscent of ring neurons in the EB, which, in the fly, reorganize their outputs onto EPG head direction cells via Hebbian like plasticity and synaptic depression (Fisher et al., 2019; Kim et al., 2019). Depending on the identity of the upstream and downstream partners, synaptic weights in the fan-like array of the FB-NOc neurons could be remodeled in a columnar manner, potentially serving as substrate for storing the path integration vector as a distribution of synaptic weights across the FB columns. Given the large number of these cells, several such distributions could be stored at any moment in time. A reward reinforcement signal from dopaminergic FBt neurons (Hulse et al., 2020), for example in response to locating a food source, could trigger the transformation of a current path integration vector, for example stored in activity patterns of PFN or hΔ cells, into a synaptic weight distribution for long-term storage of the homing vector. (e) Reconstructions of other FBts. These cells differed from FB-NOc neurons and their morphology was more consistent with FB tangential neurons of the fly, as they possessed branches overlapping with LNO cells and likely send their fibers contralaterally, although this is difficult to determine with the limited field of view of our data set (asterisk). Scale bars: (a–b) 25 µm (d) 100 µm.
 
 To reveal the detailed cellular architecture of the bumblebee NO, we traced all input neurons as well as all columnar neurons that supply the NO in our high-resolution data (24 nm resolution). Based on these analyses, the projections from tangential neurons delineated three domains in the bumblebee NO: the small unit (NOs), main unit (NOm), and the cap (NOc; Figure 4f–g). These regions were supplied by distinct types of tangential cells. Two small types (LNO4 and LNO5) innervated specifically the NOs, while two larger neurons densely innervated the entire NOm with numerous fibers (LNO1 and LNO2; Figure 4f). A fifth large neuron, entering the NO together with the LNO4/5 cells, innervated a subcompartment of the NOm overlapping with the projection fields of LNO1/2 cells (LNO3). Finally, a set of 15–20 smaller input cells projected to the NOc region. These cells did not have neurites projecting from the direction of the ipsilateral lateral accessory lobes (LAL), but emerged from a fiber bundle that vertically passed the EB and originated in the contralateral anterior protocerebrum (Figure 4d). The same bundle contained numerous tangential cells of the FB, suggesting that the tangential neurons supplying the NOc region also belong to this group of neurons. This proposed morphology was confirmed by an intracellular dye fill from Megalopta (Figure 4—figure supplement 1d) and we named these neurons FB-NOc cells.
 
@@ -99,7 +262,7 @@ Compared to other columnar cells of the CX, PFN cells are by far the most numero
 
 At least two thirds of PFN neurons had very small fiber diameters, making them impossible to trace using the 126 nm resolution data set. Additionally, as branches within the FB could only be traced over short distances and no layering was present in the NO, we were unable to subtype this large group of neurons further, leaving PFNc and PFN (main) as the only obvious subtypes. However, clear and consistent differences in the diameter of the main PFN neurites in each columnar bundle demonstrated that the population of PFN cells is not homogeneous and many subtypes likely exist. With regard to their columnar projection pattern, PFN cells are laterally shifted by one column in the FB and are entirely absent from the innermost PB columns (Figure 4c). In this regard, they are identical to the PEN cells that connect the NOs to the EB (see next section; Figure 6d).
 
-## A fly-like head direction circuit in the bee ellipsoid body
+### A fly-like head direction circuit in the bee ellipsoid body
 
 In the bumblebee EB we found two principle types of columnar cells, EPG/PEG cells (Figure 5) and PEN cells (Figure 6a–c). While in other species, the former can be further classified into two subtypes based on their opposite polarity, this distinction could not be made in our data, owing to the limited resolution of the data set. EPG/PEG cells as well as PEN cells both carry information between the PB and EB. While PEN neurons additionally arborized in the NOs, where their fibers overlapped with tangential LNO4/LNO5 cells (Figure 6c), EPG/PEG cells extended an axon into a small region positioned laterally and anteriorly to the CX, close to the border of the protocerebrum and the antennal lobe (Figure 5a–a’). Based on the morphology of EPG/PEG neurons in other species, we concluded that this target region corresponds to the gall, despite the lack of obvious neuropil boundaries in synapsin labeled preparations.
 
@@ -107,13 +270,21 @@ In the bumblebee EB we found two principle types of columnar cells, EPG/PEG cell
 
 **Figure 5.:** (a) Intracellular dye injection of a bumblebee EPG/PEG cell (magenta), counterstained with serotonin (green) and synapsin (blue). (a’) Reconstruction of cell in (a). (b–d,f) Neural reconstructions of EPG/PEG cells from the 126 nm data set. (b) Horizontal view of all EPG/PEG cells. (c) Frontal view of isolated EPG/PEG cells projecting from each PB column (labeled ‘EPG’ here for simplicity). ‘L-’ and ‘R-’ refer to the associated PB column for each cell. Blue neurons project from right hemisphere and red from left. (d) Frontal view of all EPG/PEG cells. (e) Schematic of EPG/PEG projection pattern. EPG/PEG cells follow the ’default’ projection pattern in the EB. (f) Lateral view of all EPG/PEG cells. (g) Lateral schematic with EPG/PEG innervating layers in blue. Scale bars: (a) 50 µm; (b–d,f) 100 µm.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/68911/elife-68911-fig6-v2.jpg)
+
+**Figure 6.:** (a–b) Frontal views of PEN ’angular velocity’ neurons projecting from left (red) and right (blue) hemispheres. (c) Lateral view of PEN arborizations in the NOs in 24 nm and 126 nm data sets. (d) Schematic of PEN projection patterns. PEN cells are shifted contralaterally by one column in the EB. (e) An example illustrating how the anatomical projections of EPG/PEGs and PENs could support the shifting of an EPG activity bump as the bee rotates. (f) Schematic illustration of (e). Scale bars: (a–b) 100 µm (c) 25 µm 24 nm data set; 100 µm 126 nm data set.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/68911/elife-68911-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** EPG-PEN projectivity across EB columns. EPG/PEGs from right hemisphere, purple and cyan; EPG/PEGs from left hemisphere, yellow and orange; PENs from right hemisphere, green; PENs from left hemisphere, magenta/pink.
+
 In the fruit fly, PEN and EPG/PEG cells (hereon referred to as EPGs for simplicity) form the core of the heading direction circuit (Turner-Evans et al., 2020). Akin to a biological compass, EPGs track the flies rotational movement as a single bump of activity in the EB and two bumps of activity in the PB, one in each hemisphere (Seelig and Jayaraman, 2015). Tangential EB neurons feed predominantly visual information from the anterior visual pathway to EPGs in the EB, tethering the bump to features of the environment (Fisher et al., 2019; Kim et al., 2019). At the same time, rotational self motion cues are sent to the PEN cells, predominantly via the NO and probably also directly via the PB (Turner-Evans et al., 2017; Green et al., 2017). While activity in the EB input cells directly generates an activity bump in the EPG network that is based on allothetic information, idiothetic information laterally shifts the bump position via the PEN activity. Importantly, this circuit relies on an anatomical offset between the EB projections of PEN and EPG cells: EPGs follow a default projection pattern, whereas PENs are shifted by one column in the EB. Therefore, EPGs projecting to any given column in the EB will be flanked on either side by PEN fibers, connecting to neighboring EPG cells. This offset has the effect whereby PEN activation results in shifting the activity bump either to the left or to the right, thereby translating clockwise or counterclockwise body rotations into counterclockwise or clockwise movements of the neural activity in the EPG population (Turner-Evans et al., 2017; Green et al., 2017).
 
 An identical offset in projections between EPG/PEG and PEN cells was also present in the bumblebee CX: EPG/PEG cells followed the default projection pattern (Figure 5e), whereas PEN cells were shifted by one column in the CB (Figure 6d–f; Figure 6—figure supplement 1). Moreover, in the bee the total number of EPG/PEG and PEN cells per CX column closely approximated their homologues in the fly. In total, 69 EPG/PEG cells spanned the width of the bee CX with four neurons present in each PB column except for the innermost columns, which only contained three neurons each (Figure 5b–d; Figure 3—figure supplement 1). In the 126 nm data set, we identified 34 PEN cells at two per PB column, with the exception of the outermost columns that contained three PEN cells and the innermost columns that were entirely devoid of PEN neurons (Figure 6a–b,d; Figure 3—figure supplement 1). Interestingly however, we found 20 PEN cells projecting from a single hemisphere in the 24 nm data set, which suggest a total of 40 PEN cells are present in the entire bee CX, nearly identical to numbers to those found in Drosophila (Hulse et al., 2020). In the fly, 74 EPG/PEGs and 42 PENs span the width of the CX with a similar, but slightly different distribution of these cells per PB column (See Hulse et al., 2020).
 
 Notably, we found one set of EPG/PEG cells with arborizations in the innermost PB columns of the contralateral hemisphere (‘EPG_L1’ and ‘EPG_R1’ in Figure 5c). In contrast to the rest of the EPG/PEGs, these cells contained branching fibers in the outermost EB columns of the ipsilateral hemisphere relative to their arbor in the PB (Figure 6—figure supplement 1). These cells may provide a pathway for an activity bump to ‘jump’ from one lateral end to the other in the bumblebee EB, which compared to Drosophila is structurally an open loop (see Discussion).
 
-## The fan-shaped body
+### The fan-shaped body
 
 The FB is the largest and arguably the most functionally mysterious of the CX neuropils. In our data set, the majority of FB columnar cell types were found to connect the PB with the FB and onward to tertiary regions. They possessed arborizations in the FB where they commingle among themselves, FB tangential neurons, and interneurons that were confined solely within the FB, the hΔ cells, or pontine cells (Figure 11; e.g. Hanesch et al., 1989).
 
@@ -141,13 +312,29 @@ Two more groups of columnar FB cells were identified, all of which followed the 
 
 Finally, a set of four related cell types was found in more ventral regions of the W, X, Y, Z bundles and traversed the FB in a shared fiber tract (Figure 10). Their main neurite was comparably thin when entering the FB dorsally, but substantially thickened when giving rise to projections inside the FB, making these cells clearly distinct from PFL neurons. As their main neurite was very thin when entering the PB, it could rarely be traced inside the PB, yielding only a few examples with verifiable branches within the PB (Figure 10). This leaves some doubt as to whether all these cell types indeed posses significant PB arborizations. For two of the four cell types, PB branches were confirmed by intracellular dye fills (Figure 10; Figure 10—figure supplement 1). Assuming that PB branches are a feature of all these cells, the four types were named PFx1-4 (Figure 10).
 
+![Figure 10.](https://cdn.elifesciences.org/articles/68911/elife-68911-fig10-v2.jpg)
+
+**Figure 10.:** (a) Intracellular dye injection of a bumblebee PFx4 cell (magenta) co-stained with serotonin (green) and synapsin (blue). (a’) Reconstruction of cell in A. Arrowheads point to fibers entering the PB. Reconstruction is partially incomplete due to weak signal in overview confocal scan (asterisk), see Figure 10—figure supplement 1d for additional high resolution image data. (b,d–e,f) All four types of PFx cells traced from 126 nm data set. (b) Horizontal view of all PFx types, illustrating the differentially innervated FB layers. Arrowheads point to fibers entering the PB. (c) Schematic of PFx cell projection patterns. PFx1 cells send their fibers away from the CX toward regions in the INP/LAL, while PFx2 contains fibers ventrally descending toward the LX. PFx3,4 cells project toward regions in the SMP/INP. All PFx cells follow the ’default’ pattern in the FB. (d) Frontal view. (e) Frontal view of PFx1,2,3,4 cells projecting from each PB column. ‘L-’ and ‘R-’ refer to the associated PB column for each cell. Blue neurons project from right hemisphere and red from left. (f) Lateral view of PFx cells relative to layers defined by tyrosine hydroxylase (blue) immunolabeling. Lateral schematics underneath show approximate innervation regions of PFx1,2,3,4 cells within the FB. Scale bars: 100 µm.
+
+![Figure 10—figure supplement 1.](https://cdn.elifesciences.org/articles/68911/elife-68911-fig10-figsupp1-v2.jpg)
+
+**Figure 10—figure supplement 1.:** Intracellular dye injections of PFx2 (a–b) and PFx4 (c–d’) cells. (a) Maximum intensity projection of confocal image of system of PFx2 cells injected with dye. (b) Frontal and (b’) horizontal view of reconstruction of PFx2 cells in (a). (c) Horizontal view of partially reconstructed PFx4 cell in Figure 10. (d–d’) Shows horizontal confocal image data for the same cell. (d) PFx4 (magenta), serotonin (green), and synapsin (blue). ML; medial lobe of the mushroom body. (d’) PFx4 cell isolated. Note branching fibers missing from reconstruction in (c; asterisk). Scale bars: (a) 100 µm, (c–d) 50 µm.
+
 Two of the four cell types (PFx3,4) sent bilaterally reaching fibers toward the superior medial protocerebrum (SMP) and/or the anteriorly located portions of the inferior neuropils (INP; Figure 10). Similarly, but without bifurcation, PFx1 neurons leave the FB on the anterior side, but turn toward the contralateral anterior brain, wrapping around the anterior surface of the medial lobe of the mushroom body (Figure 10). The target of these cells was unclear and might either be the lateral complex, or the anterior regions of the inferior protocerebrum. In contrast, PFx2 cells clearly sent fibers toward the lateral complex and ventromedial protocerebrum (VMP) along a similar trajectory as PFL cells and EPG/PEG cells, with their axon passing the medial lobe of the mushroom body posteriorly.
 
 An additional, unusual type of cell included neurons with large diameter fibers that occurred in two individuals in one hemisphere and four in the other. These cells resembled PFL neurons in that they possessed very large neurites near the PB, which then dramatically thinned after passing the FB and turns toward the contralateral lateral complex. These neurons did not give rise to resolvable branches within the FB, but the existence of fibers below our resolution limit cannot be ruled out. Due to their resemblance with PFL cells, they are also assigned to the FB and were named PFLx neurons (Figure 3b). Interestingly, this cell type shows a clear asymmetry in that one individual in column L1 (projecting to the ipsilateral lateral complex) does not have a counterpart on the contralateral side.
 
-## Fan-shaped body interneurons: hΔ cells
+### Fan-shaped body interneurons: hΔ cells
 
 The FB is the only CX neuropil which generally contains a system of interneurons that are confined solely within its boundaries. These neurons contain input fibers in one column and output fibers in a column in the opposite hemisphere (Heinze and Homberg, 2008; Hulse et al., 2020). Historically, these cells have been termed pontine cells (Hanesch et al., 1989), but have been renamed as hΔ neurons in the fly literature given their proposed role as neurons that horizontally shift (i.e. horizontal-shift: hΔ) neural activity from one column of the FB to another column in the opposite hemisphere. Here, we adhere to the new nomenclature proposed by Hulse et al., 2020 and refer to these cells as hΔ (Figure 11).
+
+![Figure 11.](https://cdn.elifesciences.org/articles/68911/elife-68911-fig11-v2.jpg)
+
+**Figure 11.:** (a–f) Reconstructions of hΔ cells from 126 nm data set. (a) Oblique and (a’) horizontal views of hΔ cells entering the FB posteriorly (purple), dorsally (orange), and anteriorly (green). (b) Numbers of hΔ cells per CX bundle. Below, horizontal view of hΔ cells in each hemisphere colored according to bundle. (c–g) Cells are colored according to the FB column they arborize in. (c) Anteriorly projecting hΔ cells. These include Type 6 hΔ cells. Plus sign denotes the possibility that more subtypes of anteriorly projecting hΔ cells are likely to exist. (d) Dorsally projecting hΔ cells. (e) Posteriorly projecting hΔ cells. (f) There are at least five types of hΔ cells which clearly differ in their projection layer and morphology. More cell types may exist but would require full cell morphologies from high-resolution tracing data. Frontal views (left) and horizontal views (right). (g) Schematics of hΔ FB projection columns according to bundle. hΔ cells send putative input fibers to the column nearest their soma, and putative output fibers to FB columns shifted 3–4 columns contralateral to their inputs (see also Figure 11—figure supplement 1a). Scale bars: 100 µm.
+
+![Figure 11—figure supplement 1.](https://cdn.elifesciences.org/articles/68911/elife-68911-fig11-figsupp1-v2.jpg)
+
+**Figure 11—figure supplement 1.:** hΔ cells isolated by bundle and viewed laterally by type. (a) Frontal views of hΔ cells ordered by bundle from the right hemisphere to the left. hΔs projecting from bundles RX, RY, LY, and LX form two columns in the FB. Cells projecting to adjacent columns are blue to aid with visualization. (b) Lateral views of hΔ cells relative to layers defined by serotonin (green) immunolabeling. (c) Same as (b) but relative to layers defined by tyrosine hydroxylase (blue) immunolabeling. (d) Lateral schematics showing FB layers innervated by hΔ cells in (b) and (c). Cells are colored by type in (b–d). Scale bars: 100 µm.
 
 Similar to columnar cells, hΔ neurons possessed cell bodies residing in the dorsal-posterior regions surrounding the CX (Figure 11). We identified as many as 188 hΔ neurons that tile the FB into vertical columns, very similar to the 190 hΔ neurons identified in the fly by Hulse et al., 2020 (Figure 11). This high number makes them the second most numerous cell type of the CX after the columnar PFN cells. Their numbers were surprisingly unevenly distributed across the bundles of origin. Interestingly, the X and Y bundles on both hemispheres contained almost exactly twice the number of hΔ cells compared to the W and Z bundles (Figure 11). This suggested an overall branching system consisting of twelve lateral sectors across the width of the FB. Indeed, the cells originating in the X and Y bundles could be segregated into two adjacent arborization domains each (Figure 11).
 
@@ -161,7 +348,7 @@ Due to the limited resolution of our data set, we were unable to trace finer bra
 
 In this first study of a hymenopteran CX based on 3D EM data, we asked what neuroarchitectural information would be attainable by tracing a relatively low resolution SBEM data set of the entire CX of a Bombus terrestris worker. To this aim we manually traced more than 1300 columnar and pontine neurons of the bumblebee CX and established neural projection patterns underlying overall information flow within this brain region. Based on these patterns, we extrapolated whether anatomically constrained computational algorithms identified in particular in the fruit fly could also exist in the bumblebee. The present study is therefore a first step toward evaluating how conserved the neural circuits uncovered by the Drosophila connectome (Scheffer et al., 2020; Hulse et al., 2020) are and which of these circuits are general features of insect brains and which ones are specific adaptations relevant to fruit fly ecology and behavior.
 
-## What information is missing from our low-resolution projectome?
+### What information is missing from our low-resolution projectome?
 
 Additionally to the low-resolution data, we collected higher resolution data sets of the NO from a different individual. This not only allowed us to trace the fine neurites of PFN cells, which have been proposed to integrate heading with distance information in bees and likely play a major role in path integration (Stone et al., 2017), but also enabled us to estimate how many neurons we are likely missing when relying on low resolution data only.
 
@@ -177,7 +364,7 @@ However, mapping of EM-based skeletons and neuron skeletons based on confocal da
 
 We conclude that, despite all the missing details, known cell types can be reliably identified based on our data. Sub-classifications of these main types that are based on either fiber polarity or details of innervated layers are, however, not possible and require additional data for cross validation. Mostly owing to the missing projections outside of the CX, the morphology of unknown types of neurons are also impossible to determine without additional verification based on dye-filled preparations. Nevertheless, by using the presented data, even an individual example of a dye filled neuron is sufficient to assign identity to all individuals of this type in our projectome. Each complete neuron morphology therefore automatically provides information about the entire isomorphic set of its kind. The existence of our projectome thus substantially increases the value of single neuron morphologies obtained in future studies.
 
-## Novel insights into the overall layout of the insect CX
+### Novel insights into the overall layout of the insect CX
 
 For decades CX research did not question that the CX contains 16 columns in the PB (e.g. Hanesch et al., 1989; Heinze and Homberg, 2008; El Jundi et al., 2018). Based on work in the locust, this assumption was used to draw functional conclusions for example about the basis of representing compass directions (Heinze and Homberg, 2007). More importantly, it was implied by generalizations across species, that the CX organization in one species (e.g. the locust) was equivalent to that of others. This was well justified by the developmental origin of the columnar CX neurons, which, across insects, are derived from eight neuroblasts, four on either side of the midline (Boyan and Williams, 2011). Each of these gives rise to one of the W,X,Y,Z bundles and thereby provides neurons for two PB columns (Williams et al., 2005; Williams and Boyan, 2008).
 
@@ -199,7 +386,7 @@ On the level of neuropils, and in contrast to the strictly conserved columnar or
 
 Finally, the most pronounced difference between bees and flies was found in the organization of the NO. While the fly data, and in fact data on many other species (locusts, butterflies, moths, beetles; Heinze and Homberg, 2008; Heinze and Reppert, 2012; Immonen et al., 2017; Adden et al., 2020), reveal a highly structured organization into stacked layers, we found the bee noduli to be comparably disorganized. Our reconstructions only revealed three discrete territories, providing the possibilities for increased levels of cross-talk between the PFN neurons that remain segregated in other species (Figure 4e-e'). Interestingly, and discussed in detail below, pronounced intra-columnar microcircuits among PFN cells was one prediction made by Stone et al., 2017 for insects with highly developed path integration ability, such as bees.
 
-## Conserved core circuits and bee-specific neurons?
+### Conserved core circuits and bee-specific neurons?
 
 In total, we found 11 types of columnar cells (Figure 3). Importantly, the majority of these cell types have known homologues in other insects. These include EPG/PEGs, PENs, PFNs, hΔs, and putative motor output cells, PFL1,3 and PFL2 (Homberg, 1985; Heinze and Homberg, 2008; Heinze et al., 2013; Wolff et al., 2015; Stone et al., 2017; El Jundi et al., 2018; Hensgen et al., 2021). Drawing comparisons to the fly data, we can distinguish four different categories of cross species resemblance: First, some cell types appear to be extremely conserved, including in quantity, distribution, morphology, and projectivity. In particular, EPG/PEG and PEN cells were indistinguishable between the species with respect to these parameters. Second, other cell types differed in numbers but maintain key characteristics, such as projection pattern, suggesting conserved roles in CX computations. This was the case for PFN and hΔ cells, at least when disregarding potential subtypes. Third, some cell types share quantities, but differ in projectivity. In this category we found the main output neurons of the CX in particular, that is, PFL1,2,3 cells (discussed in detail below). Finally, some cell types appear to have no counterpart in the fly and might be unique to the bee. These include PFx1, PFx2, PFx3, PFx4 (Figure 10), PF1 (Figure 9), and PFLx neurons (Figure 3b), all of which project to the FB following the ’default’ pattern.
 
@@ -209,7 +396,7 @@ Interestingly, we also did not find any obvious candidates matching the fly FX c
 
 Finally, a fourth FB columnar cell of the bee, PFx2 neurons, sends fibers contralaterally toward the LX, but follows the default projection pattern, making these cells clearly distinct from the PFL output neurons. Given these characteristics, these cells might correspond to Drosophila PFRa or PFG cells. Both cells receive input from PFN neurons in flies. This outlines a possible line of enquiry to establish equivalence despite diverging morphology by delineating the up- and downstream synaptic connections and hence place neurons in a corresponding computational context.
 
-## Head direction coding across species
+### Head direction coding across species
 
 Two columnar cell types, EPG and PEN cells, link the EB and the PB and form the core of the head direction circuit in the fly (Turner-Evans et al., 2020). The numbers of both EPG and PEN cells per PB column identified in the bumblebee closely approximated corresponding numbers in the fly (Figure 3a, Figure 3—figure supplement 1) and, importantly, their projection patterns, characteristically offset by one column in the EB between both cell types, were also conserved (Figure 6e–f, Figure 6—figure supplement 1).
 
@@ -217,7 +404,7 @@ One major distinction between the bee and the fruit fly is the gross morphology 
 
 Intriguingly, in a recent modeling study, Pisokas et al., 2020 proposed that locusts have evolved a third solution to closing the loop, a solution that differs from both the bee and the fly (Figure 12). While most insects do not have a closed EB, evidence presented here and by Pisokas et al., 2020 suggests that these different circuit modifications may fulfill the same functional purpose. It is worth noting however, that by modeling the head direction circuit in the locust and the fly, Pisokas et al., 2020 found that other, more minor, morphological differences between the circuits of both species can significantly alter the dynamics of the ring attractor circuit underlying the head direction system in ways that could adapt circuit function in line with species specific behavioral demands. It will thus be interesting to explore the possible functional consequences and possible behavioral correlates of the detailed characteristics of the bumblebee head direction system.
 
-## Functional implications of the neuroarchitecture of the noduli
+### Functional implications of the neuroarchitecture of the noduli
 
 Several recent functional studies have implicated the NO as centers that relay idiothetic self-motion cues, including translational optic flow (Lu et al., 2020; Lyu et al., 2020; Stone et al., 2017), rotational angular velocity (Green et al., 2017; Turner-Evans et al., 2017), and wind direction (Currier et al., 2020) to other regions within the CX. So far three neuron types that innervate the NO have been shown to facilitate the encoding of self-motion cues, with anatomical homologues having been identified across insect species (Heinze and Homberg, 2008; Heinze et al., 2013; Wolff et al., 2015; Stone et al., 2017; El Jundi et al., 2018; von Hadeln et al., 2020; Hensgen et al., 2021). These include PFN, PEN, and LNO tangential cells (Figure 4e-f). LNO tangential neurons provide predominantly input to PFN and PEN neurons, carrying sensory information from other regions of the brain, mostly from the ipsilateral LX (Stone et al., 2017; Currier et al., 2020; Lyu et al., 2020; Lu et al., 2020; Hulse et al., 2020).
 
@@ -233,7 +420,7 @@ While the function of these FB-NOc tangential cells is unknown, their arborizati
 
 In summary, the specializations identified in the noduli of the bumblebee are consistent with the idea that this region plays a key role in path integration and that the highly developed abilities for path integration related behaviors in bees are indeed reflected in the circuitry of the noduli. Further analysis of the synaptic connectivity of the NOc circuit will have to test these predictions.
 
-## Proposed steering circuits differ between insect species
+### Proposed steering circuits differ between insect species
 
 PFL neurons relay signals to descending neurons in the lateral accessory lobes (LAL), making them likely candidates for cells which propagate steering or other motor commands to the ventral nerve cord (VNC) (Figure 7; Figure 8; Stone et al., 2017; Steinbeck et al., 2020; Rayshubskiy et al., 2020; Hulse et al., 2020). Connectomic analysis of the fly CX revealed the presence of three types of PFL neurons that differ in their PB-FB projection offset and downstream partners. PFL1 cells were found to be offset in their PB-FB projections by one column ipsilaterally, PFL3 cells by two columns ipsilaterally, and PFL2 cells by four columns ipsilaterally (Hulse et al., 2020). While PFL1 and PFL3 cells send output fibers to the contralateral LAL, PFL2 neurons contain bilaterally projecting output fibers that arborize in both LALs.
 
@@ -245,31 +432,301 @@ In the bumblebee, we found evidence for a single cell type that shares character
 
 Additional discrepancies between bees and flies were identified in PFL2 neurons (Figure 14). With a four column ipsilateral PB-FB offset, fly PFL2 neurons project only to ipsilateral regions within the FB. In contrast, bee PFL2 neurons show only a three column ipsilateral offset between PF-FB columnar arborizations (’Both-shifted’; Figure 8d–e). Notably, there is one PFL2 neuron in both hemispheres that differs in its projection offset compared to the other PFL2 cells by being shifted one column further ipsilaterally, matching the fly projection offset (Figure 8b; R3 and L3). Further, the PFL2 neurons in the lateral most regions appear to project to the two furthest contralateral columns in the FB (Figure 8d–e; Figure 14), generating an offset pattern that is largely dependent on which PB column an individual PFL2 cell originates in. The very wide input domains in the PB further complicate functional interpretations for PFL2 neurons in bees, as they appear to be active across a much wider range of directions than other cells (each PFL2 cell covers a range of at least 90° of head directions; Figure 14—figure supplement 1).
 
+![Figure 14.](https://cdn.elifesciences.org/articles/68911/elife-68911-fig14-v2.jpg)
+
+**Figure 14.:** (a) Schematic of PFL1 and PFL3 projection patterns in the fly compared to PFL1,3 projection patterns in the bee. In the FB, fruit fly PFL1s are offset by one column ipsilaterally and PFL3s by two. All PFL1,3s in the bee are shifted ipsilaterally by a single column in the FB, with no evidence for a second PFL cell type matching the pattern of PFL3 cells. (b) Schematic of PFL2 projections in fly and bee. In contrast to the fly, many bee PFL2 cells have contralaterally projecting PFL2 cells in the FB which overlap with PFL2s projecting from the opposite hemisphere. Further, PFL2 cells in the fly are ipsilaterally shifted by four columns (180° offset), whereas in bees they are only shifted by three columns (135° offset). (c) Schematic of hypothetical activity profiles that would result from observed differences between fly and bee PFL projection patterns following model proposed by Hulse et al., 2020.
+
+![Figure 14—figure supplement 1.](https://cdn.elifesciences.org/articles/68911/elife-68911-fig14-figsupp1-v2.jpg)
+
+**Figure 14—figure supplement 1.:** In a model proposed by Hulse et al., 2020, PFL2 cells were suggested as candidates to drive forward movement when a fruit fly would be facing 180°away from its ’stored’ vector. This is supported by the fact that PFL2 cells have bilateral projections to descending neurons in both LALs, and, in Drosophila, they are offset from the default projection in the FB by 180°. Note that ’stored’ vector refers to an accumulated vector, akin to an outbound vector in the context of a foraging bee. In bumblebees, PFL2 cells are only offset in the FB by 135°, suggesting perhaps they would not be suitable to drive forward motion when the bee is facing 180° away from its ’stored’ vector (i.e. toward its nest or ’home vector’). However, PFL2 cells that innervate multiple columns may receive head direction input from each of those columns. If so, PFL2 cells could therefore compare as many as three offsets, one 90° away from its heading, one 135° away from its heading, and the other 180° away from its heading. (a) Schematic of arborization domains (orange) of a PFL2 cell. Blue arrows indicate example heading direction which PFL2s would receive from each adjacent column. (b) View of same PFL2 cell in (a) with branches that overlap PB columns R1, R2, and R3, as defined by the projections of EPG cells (blue). (c) Schematic a bee flying toward example heading direction (PB column R2/L8). This example PFL2 cell (PFL2_R2) could be ideal to compare input from the FB (open circle) when the bee is facing 90° away from its heading (toward the direction represented by column R3), 135° away from its heading (toward the direction represented by column R2), or while facing 180°away from its heading (PB column R1). This relies on the assumption that this particular cell receives head direction input in each of these three columns, which may not be the case.
+
 PFL neurons are thought to relay motor commands, such as steering (PFL3 neurons; Rayshubskiy et al., 2020; Hulse et al., 2020) and forward velocity (PFL2 neurons; Hulse et al., 2020), from the CX to the LALs (Stone et al., 2017; Steinbeck et al., 2020). Given that PFL1,3 neurons in the bee share characteristics with both fly PFL1 and PFL3 neurons, such an arrangement may suggest that the projection offset of these neurons evolutionarily diverged in the fly. This is supported by the fact that similar numbers of cells per column exist for all PFL1 + PFL3 neurons in the fly and all PFL1,3 neurons in the bee. Further, an identical bee-like projection offset for both PFL1 and PFL3 neurons is also consistent with data from dye filled neurons in the Monarch butterfly (Heinze et al., 2013). PFL3s in the fly would be well suited to drive rotational movements when the fly is facing +/- 90° away from a goal location (Hulse et al., 2020). Due to their offsets in the FB and bilaterally projecting output fibers in the LALs, PFL2s were suggested by Hulse et al., 2020 to drive forward motion when the fly is facing in the direction opposite to their ’stored’ vector (i.e. facing toward their starting point or goal vector).
 
 Assuming a corresponding function in the bee, PFL1,3 neurons would be most active (i.e. propagate steering commands) when bees are facing +/- 45° away from their ’stored’ vector and PFL2 neurons would drive forward velocity when they are facing +/- 135° away from their stored vector (although see Figure 14—figure supplement 1). Interestingly, if we assume direct and exclusively contralateral connections between PFN and PFL neurons to underlie steering as hypothesized by Stone et al., 2017, the opposite offset by PFN neurons would add 45° to these values, leading to a fly-like +/- 90° and +/- 180° away from their ’stored’ vector (Figure 13). But as the detailed projections of PFL cells, that is the extent of their inputs in the PB and their projection width and innervated layer in the FB, are unknown and partially differ between cells originating in different PB columns, conclusions about phase offsets and possible functional implications for behavior remain preliminary, especially without support from computational models. Nevertheless, the distinct anatomical offsets between flies and bees clearly suggest that bees have evolved a different mechanism for target driven steering, as strictly applying the fly-derived steering concept to bees would result in a 45° error relative to a stored vector. Synaptic resolution connectivity data are clearly required to resolve this interspecies discrepancy.
 
 Overall, the differences found at the level of the main output neurons of the CX are intriguing and suggest that the behavioral control of steering does depend on the species, possibly explaining divergent flight patterns and, combined with distinct sensory input channels, might possibly even account for different navigational strategies.
 
-## Conclusion
+### Conclusion
 
 In summary, while limited in resolution and missing the smaller cell types of the CX as well as the projections that leave the imaged volume, the projectome analysis of the bumblebee CX provides pioneering insights about the quantity and projectivity of all major CX neurons in the brain of the bumblebee. To the best of our knowledge, this project is the first attempt at comprehensively mapping all columnar and hΔ cells in a non-dipteran insect species, the projections of which define and constrain computations carried out by the CX.
 
 ## Materials and methods
 
-## Nomenclature
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Organism (Bombus terrestris)</td>
+      <td>NA</td>
+      <td>Koppert, Netherlands</td>
+      <td>NATUPOL</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Organism (Megalopta genalis)</td>
+      <td>NA</td>
+      <td>Wild caught, Barro Colorado Island, Panama</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Synapsin (SYNORF1; Mouse, monoclonal)</td>
+      <td>Developmental Studies Hybridoma Bank (DHSB)</td>
+      <td>3C11</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Serotonin (5HT; Rabbit, polyclonal)</td>
+      <td>ImmunoStar</td>
+      <td>CAT#: 20080; RRID:AB_572263</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Tyrosine hydroxylase (TH; Mouse, monoclonal)</td>
+      <td>ImmunoStar</td>
+      <td>CAT#: 22941; RRID:AB_572268</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AZniPure Donkey Anti-Mouse IgG (H+L) Cy3 (polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>CAT#: 715-165-150; RRID:AB_2340813</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>AZniPure Donkey Anti-Rabbit IgG (H+L) Cy5 (polyclonal)</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>CAT#: 711-175-152; RRID:AB_2340607</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Other (serum)</td>
+      <td>Normal goat serum</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>CAT#: 005-000-001</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Neurobiotin</td>
+      <td>Vector Laboratories</td>
+      <td>CAT#: SP-1120</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Cy3 Streptavidin</td>
+      <td>Jackson ImmunoResearch</td>
+      <td>CAT#: 016-160-084</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Permount</td>
+      <td>Fisher Scienti1</td>
+      <td>CAT#: SP15-100</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Other (enzyme)</td>
+      <td>Pronase</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: P8811</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Osmium tetroxide 4% aqueous</td>
+      <td>Proscitech</td>
+      <td>CAT#: C011</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Potassium ferricyanide</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: 702587</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Thiocarbohydrazide</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: 223220</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Lead nitrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: 228621</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>L-Aspartic acid</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: A4534</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Uranyl acetate</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>CAT#: 22400</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Durcupan ACM resin (4-part component kit)</td>
+      <td>Sigma-Aldrich</td>
+      <td>CAT#: 44610</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound</td>
+      <td>Conductive silver epoxy (2-part)</td>
+      <td>Ted Pella</td>
+      <td>CAT#: 16043</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Amira 5.3</td>
+      <td>Thermo Fisher Scienti1c</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Skeletonize plugin for Amira 5.3</td>
+      <td>Dr. J.F. Evers Schmitt et al., 2004</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CATMAID</td>
+      <td>Saalfeld et al., 2009</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FIJI (ImageJ)</td>
+      <td>Schindelin et al., 2012</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>natverse</td>
+      <td>Bates et al., 2020</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leica Application Suite X (LAS X) Navigator</td>
+      <td>Leica</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ image stitching plugin</td>
+      <td>Preibisch et al., 2009</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Sigma VP 300 SEM</td>
+      <td>Zeiss</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>3view 2 system</td>
+      <td>Gatan</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Leica SP8 DLS inverted confocal microscope</td>
+      <td>Leica</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ampli1er (Panama): BA-03X</td>
+      <td>NPI</td>
+      <td>BA-03X</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ampli1er (Lund): SEC05-LX</td>
+      <td>NPI</td>
+      <td>SEC05-LX</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Micromanipulator: SMXS-K-R</td>
+      <td>SensApex OY</td>
+      <td>SMXS-K-R</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Electrode puller: P-97</td>
+      <td>Sutter</td>
+      <td>NA</td>
+      <td>NA</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Borosilicate glass capillaries w/ filament</td>
+      <td>Sutter</td>
+      <td>BF150-75-10</td>
+      <td>NA</td>
+    </tr>
+  </tbody>
+</table>
+
+### Nomenclature
 
 In past studies, nomenclature used to identify cells and CX areas differed between fruit flies and other insects. Due to overwhelming support for CX homology across insects, the greater availability of functional and neuroanatomical data in Drosophila (Hulse et al., 2020), and in an effort to make our anatomical descriptions more comparable to the Drosophila connectomics data, we adhere here to the short hand nomenclature used for Drosophila (Ito et al., 2014; Scheffer et al., 2020; Hulse et al., 2020) but have also provided alternative names historically used in other insects (Table 1).
 
 Briefly, columnar neurons are named with a three letter abbreviation according to the neuropils they innervate. In the fruit fly, these abbreviations are ordered by connectivity, with the first two letters being determined by the two neuropils the neuron receives the most input from, in order of which has the greatest amount of input first, and the third letter is given by the neuropil in which the neuron sends predominantly output to. For instance, a PEG cell receives mostly input in the PB and the EB and sends output to the gall. For a more in-depth description of fruit fly CX neuron nomenclature, see Hulse et al., 2020. Since connectivity information does not exist for neurons in our dataset, we define neuron homology based on corresponding morphology and arborization domains between species. As general connectivity patterns are likely conserved as well, based on the tight anatomical resemblance as well as functional conservation of CX neurons across species, we have adopted the fly naming scheme for the bumblebee. For neurons in which there are no clear homologues in the fly, we used the neuropils that they innervate within the imaged volume to define the neuron name. For example, PFx neurons innervate the PB, the FB, and an unknown tertiary region denoted here as ‘x’. Lastly, we consider all CX neurons to fall into one of three classes: columnar neurons, FB interneurons (i.e., hΔ), and tangential neurons (see Introduction). Neurons within these classes were defined as belonging to the same neuron type if they were anatomically indistinguishable from each other, yielding the columnar neuron types listed in Table 1 as well as several types of hΔ neurons. While some of these likely consist of several distinct subtypes based on connectivity and detailed projection areas (e.g. PFN neurons), we were not able to unambiguously identify those due to the limits imposed by the resolution of our image data.
 
-## Animals
+### Animals
 
 Bumblebees (Bombus terrestris), were obtained from a commercial supplier (Koppert, Netherlands) and kept in a greenhouse on campus at Lund University, Sweden. Bee colonies were maintained inside room-sized flight canvases with sugar water and pollen available from artificial feeders at all times. Only adult female workers were used in this study.
 
 A few of the intracellular dye injections were performed on female adult sweat bees (Megalopta genalis) and were used in this study to confirm single-cell morphologies where possible. Sweat bees were collected in the rainforest of Barro Colorado Island (field station of the Smithsonian Tropical Research Institute, Panama). Sweat bees were collected with a light trap made using a white sheet and illuminated by a light source containing UV wavelengths. Traps were set during early morning twilight, a time when the bees are most active. Captured bees were kept in vials containing containing honey solution and water solution soaked into cotton balls and were processed within 2 weeks following capture.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Whole mount synapsin immunolabeling followed a slightly modified version of the method described by Ott, 2008. Bees were anesthetized to immobility over ice, after which their heads were removed and immediately placed into freshly made fixative containing 1% paraformaldehyde (PFA), 0.25% zinc chloride, 0.79% sodium chloride, and 1.2% sucrose. Neural tissue was dissected free from the head capsule, removing as much of the neural sheath as possible, and left to fix overnight at 4°C.
 
@@ -281,7 +738,7 @@ After secondary antibody labeling, brain tissue was washed 3 x 20 min with 0.1% 
 
 For tyrosine hydroxylase (TH) immunolabeling, brains were dissected and fixed in 4% PFA in 0.1 M PBS containing 3% sucrose for 30–45 min. Fixation times lasting longer than an hour resulted in reduced or completely absent immunoreactivity, as has been previously reported in locusts (Lange and Chan, 2008). Whole brains were then rinsed 2 x 10 min in 0.1 M PBS, 3 x 10 min in 1% PBST, and subsequently blocked in 1% PBST containing 5% NGS for 3 hr on a gentle shake. Next, neural tissue was left to incubate for 2–3 days in primary antibody solution consisting of 1:250 mouse anti-TH (AB_572268; ImmunoStar; Hudson, WI) in 1% PBST with 1% NGS. Rinsing, secondary antibody labeling, dehydration, and mounting were then performed as described above.
 
-## Intracellular dye injections
+### Intracellular dye injections
 
 Intracellular dye injections were carried out during intracellular electrophysiology and followed the protocol described in Stone et al., 2017. In short, electrodes with a resistance of 50–150 MΩ were drawn from borosilicate glass capilaries (Sutter P-97 puller). Bees were anesthetized over ice until immobile and then waved to a plastic holder. A frontal window was cut into the head cuticle and, where necessary, air sacs, fat, and neural sheath were removed using tweezers. Electrode tips were then filled with 4% neurobiotin (Vector Laboratories) in 1 M KCl, and backed with 1 M KCl. Silver wire placed in the ventral part of the head near the mandibles as a reference electrode and the main electrode inserted frontally in the brain and positioned using a micromanipulater (Sensapex, stepping mode). Once a cell was successfully impaled, a depolarizing current of 1–3 nA was applied to iontophoretically inject neurobiotin.
 
@@ -291,17 +748,17 @@ Mass dye applications followed an identical protocol, but instead of intracellul
 
 To better determine location of arborization domains, injected brains were imaged, re-hydrated, and co-stained with immunohistochemical markers using the method reported by Heinze et al., 2013. Briefly, brain tissue mounted in Permount was freed by soaking in xylene for 2–3 hr before re-hydration in a decreasing ethanol series of 100% x 2, 90%, 70%, and 50% ethanol at 15 min steps. Brains were then rinsed 3 x 15 min in 0.01 M PBS and transferred to 0.5% PBST. Next, brains were embedded in albumin gelatin (4.8% gelatin and 12% ovalbumin) and post fixed with 4% formalin overnight at 4°C. The following day, brains were rinsed in 0.01 M PBS 3 x 15 min and vibratome sectioned at 140 µm. They were subsequently processed for immunohistochemistry as described in the previous section beginning at the blocking step, although with shorter incubation periods. Brain sections were left in blocking solution for 3 days, primary antibody solution for 4 days, and secondary antibody solution for 2 days. Rinse cycles and temperatures were the same. Following antibody incubation, sections were rinsed 4 x 15 min in 0.1% PBST, 2 x 15 min in 0.01 M PBS, then dehydrated in an increasing ethanol series at 10 min steps, cleared in methyl salicylate for 20 min and mounted in Permount between two coverslips separated by spacers.
 
-## Serial block-face electron microscopy
+### Serial block-face electron microscopy
 
 Methodology used here has been previously reported in Stone et al., 2017. Briefly, bee brains were dissected and fixed in a solution of 4% PFA and 2% glutaraldehyde in sodium cacodylate buffer overnight at 4°C. Neural tissue was then rinsed 4 x 15 min in 0.01 M PBS, embedded in albumin/gelatin, and post fixed overnight at 4°C. To image the CX, a single thick section (400 µm) was cut from the albumin/gelatin block using a vibrating blade microtome and stored in 0.01 M PBS until further processing. This same technique was used for the noduli, using a smaller section thickness (200 µm). Large volume en bloc staining was then performed, beginning with osmification in a solution containing 2% osmium tetroxide and 1.5% potassium ferricyanide in double distilled water (ddH20) for 1 hr at room temperature. Tissue was then washed 3 x 5 min in ddH20 and then sequentially immersed in 1% thiocarbohydrazide for 20 min and 2% osmium tetroxide for 30 min both steps being followed by 3 x 5 min rinses with ddH20. Neural tissue was then left to incubate in 1% uranyl acetate overnight at 4°C. The next day, tissue was washed 3 x 5 min with ddH20 before being left to soak in lead aspartate for 60 min at 60°C. Lead aspartate solution was made by adding 0.066 g lead nitrate to 10 ml ddH20, with a pH adjusted to 5.5 using KOH. Next, tissue was rinsed 3 x 5 min with ddH20 and dehydrated in an increasing ethanol series (20%, 50%, 70%, 90%, 2 x 100%) at 5 min intervals. Samples were then slowly infiltrated with increasing concentrations of Durcupan resin to ethanol (25%, 50%, 75%) at 2 hr intervals and left in 100% Durcupan overnight. The following day, tissue was transferred to fresh Durcupan for 2 hr and left to polymerize for 48 hr at 60°C. Finally, samples were trimmed and mounted onto aluminum stubs using two part conductive silver epoxy.
 
-## Image acquisition and processing
+### Image acquisition and processing
 
 Blocks of brain tissue were imaged using a Zeiss Sigma VP scanning electron microscope equipped with a Gatan 3View ultramicrotome. Three different scans were acquired for this study: an overview scan of the entire central complex imaged at a voxel size of 126 nm x 126 nm x 100 nm (field of view 400 µm x 400 µm), a slightly higher resolution scan of the noduli at 100 nm x 100 nm x 100 nm (field of view 95 µm x 95 µm), and a high-resolution scan of the noduli at 23.6 nm x 23.6 nm x 50 nm (field of view 46 µm x 46 µm). All scans were obtained with a beam energy of 2 kV under high vacuum. Following image acquisition, image alignment and contrast optimization were carried out using Amira 5.3. Image stacks were then down sampled to 8-bit depth, enabling the use of the Skeletonize plugin for Amira (Schmitt et al., 2004) as well as to perform image segmentation using Amira’ s segmentation editor. For segmentation of CX neuropils in each of the three SBEM data sets the image stacks were down-sampled to in Amira to 1 µm x 1 µm x 1 µm voxel size.
 
 A Leica SP8 DLS inverted confocal microscope was used to collect image data from immunohistochemically labeled brains as well as for individual neurons injected with neurobiotin. Image stacks of entire brains were generated using a 20x oil-immersion objective. To accomplish this, a mosaic of 8–10 image stacks (voxel size of 0.76 µm x 0.76 µm x 1 µm) were collected and stitched together in the x-y plane using Leica Application Suite X (LAS X) Navigator. Due to the relatively large brain size and limited working distance, brains had to be imaged both frontally and posteriorly with some overlap to allow for subsequent merging. Frontal and posterior image stacks were manually positioned in Amira using the transform tool and then registered using the affine registration tool with one stack as a reference. Once the transformations were applied to the stack being registered, both were exported and stitched together to form one stack of the full brain using the stitching plugin in FIJI (Preibisch et al., 2009; Schindelin et al., 2012). The resulting image stack was then down-sampled in Amira to 1 µm x 1 µm x 1 µm voxel size to enable reconstruction using Amira’ s segmentation editor.
 
-## Segmentation and neuron tracing
+### Segmentation and neuron tracing
 
 Neurons were manually reconstructed for all three SBEM data sets using both Amira (Thermo Fisher Scientific) and CATMAID software (Saalfeld et al., 2009). We used Amira with the third-party plugin Skeletonize (Schmitt et al., 2004) at the beginning stages of this project. With this method, branch points (nodes) are placed along the length of a neuronal process. Nodes are automatically connected by a straight line (edge), the diameter of which can be adjusted to approximate the diameter of the neuronal process that is being traced. Amira enabled the use of orthogonal slices along the xz and yz planes which contained a better resolution in the lowest resolution data set (126 nm x 100 nm compared to 126 nm x 126 nm). The Skeletonize plugin was also used to reconstruct and visualize neurons injected with neurobiotin.
 
@@ -311,6 +768,6 @@ Neuropils were reconstructed using the segmentation editor in Amira 5.3. This wa
 
 Immunolabeling of serotonin and tyrosine hydroxylase was used to aide in the visualization of layers within the CB (available in the insect brain database, Heinze et al.,2021). Using Amiras segmentation editor, immunoreactive layers in the CX were reconstructed for each immunostained brain and were affine registered to the CB of the EM data. Doing so enabled us to establish a rough idea of layering within the FB and EB, and to visualize the trajectories of reconstructed neurons from the 126 nm data set relative to these immunopositive layers.
 
-## Data availability
+### Data availability
 
 Reconstructed neurons are available to view and download on the Insect Brain Database (IBdb; Heinze et al., 2021): https://www.insectbraindb.org/app/connectomics;experiment=61;handle=EIN-0000061.1 and https://www.insectbraindb.org/app/connectomics;experiment=62;handle=EIN-0000062.1.

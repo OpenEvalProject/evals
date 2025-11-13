@@ -16,17 +16,17 @@
 
 ### Affiliations
 
-1. https://ror.org/04pp8hn57 Ophthalmo-Immunology, University Medical Center Utrecht, Utrecht University Utrecht Netherlands
-2. https://ror.org/04pp8hn57 Center for Translational Immunology, University Medical Center Utrecht, Utrecht University Utrecht Netherlands
-3. https://ror.org/04pp8hn57 Department of Ophthalmology, University Medical Center Utrecht, Utrecht University Utrecht Netherlands
-4. https://ror.org/04pp8hn57 Department of Rheumatology & Clinical Immunology, University Medical Center Utrecht, Utrecht University Utrecht Netherlands
-5. https://ror.org/04pp8hn57 University Medical Center Utrecht and Utrecht University Utrecht Netherlands
+1. Ophthalmo-Immunology, University Medical Center Utrecht, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
+2. Center for Translational Immunology, University Medical Center Utrecht, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
+3. Department of Ophthalmology, University Medical Center Utrecht, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
+4. Department of Rheumatology & Clinical Immunology, University Medical Center Utrecht, Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
+5. University Medical Center Utrecht and Utrecht University Utrecht Netherlands ([ROR:04pp8hn57](https://ror.org/04pp8hn57))
 
 † Corresponding author
 
 ## Abstract
 
-Type I interferons (IFNs) promote the expansion of subsets of CD1c+ conventional dendritic cells (CD1c+ DCs), but the molecular basis of CD1c+ DCs involvement in conditions not associated without elevated type I IFNs remains unclear. We analyzed CD1c+ DCs from two cohorts of non-infectious uveitis patients and healthy donors using RNA-sequencing followed by high-dimensional flow cytometry to characterize the CD1c+ DC populations. We report that the CD1c+ DCs pool from patients with non-infectious uveitis is skewed toward a gene module with the chemokine receptor CX3CR1 as the key hub gene. We confirmed these results in an independent case–control cohort and show that the disease-associated gene module is not mediated by type I IFNs. An analysis of peripheral blood using flow cytometry revealed that CX3CR1+ DC3s were diminished, whereas CX3CR1− DC3s were not. Stimulated CX3CR1+ DC3s secrete high levels of inflammatory cytokines, including TNF-alpha, and CX3CR1+ DC3 like cells can be detected in inflamed eyes of patients. These results show that CX3CR1+ DC3s are implicated in non-infectious uveitis and can secrete proinflammatory mediators implicated in its pathophysiology. The presented work is supported by UitZicht (project number #2014-4, #2019-10, and #2021-4). The funders had no role in the design, execution, interpretation, or writing of the study.
+Background:Type I interferons (IFNs) promote the expansion of subsets of CD1c+ conventional dendritic cells (CD1c+ DCs), but the molecular basis of CD1c+ DCs involvement in conditions not associated without elevated type I IFNs remains unclear.Methods:We analyzed CD1c+ DCs from two cohorts of non-infectious uveitis patients and healthy donors using RNA-sequencing followed by high-dimensional flow cytometry to characterize the CD1c+ DC populations.Results:We report that the CD1c+ DCs pool from patients with non-infectious uveitis is skewed toward a gene module with the chemokine receptor CX3CR1 as the key hub gene. We confirmed these results in an independent case–control cohort and show that the disease-associated gene module is not mediated by type I IFNs. An analysis of peripheral blood using flow cytometry revealed that CX3CR1+ DC3s were diminished, whereas CX3CR1− DC3s were not. Stimulated CX3CR1+ DC3s secrete high levels of inflammatory cytokines, including TNF-alpha, and CX3CR1+ DC3 like cells can be detected in inflamed eyes of patients.Conclusions:These results show that CX3CR1+ DC3s are implicated in non-infectious uveitis and can secrete proinflammatory mediators implicated in its pathophysiology.Funding:The presented work is supported by UitZicht (project number #2014-4, #2019-10, and #2021-4). The funders had no role in the design, execution, interpretation, or writing of the study.
 
 ## Introduction
 
@@ -38,61 +38,194 @@ For the purpose of characterizing the core transcriptional features and subset c
 
 ## Materials and methods
 
-## Patients and patient material
+### Patients and patient material
 
 This study was conducted in compliance with the Helsinki principles. Ethical approval was requested and obtained from the Medical Ethical Research Committee in Utrecht (METC protocol number #14-065/M). All patients signed written informed consent before participation. We collected blood from a discovery cohort of 23 and a replication cohort of 28 adult patients (Table 1) with HLA-B27-associated acute anterior uveitis (AU), idiopathic intermediate uveitis (IU), or HLA-A29-associated birdshot uveitis (BU). Patients were recruited at the outbound patient clinic of the Department of Ophthalmology of the University Medical Center Utrecht between July 2014 and January 2017. We recruited 27 age- and sex-matched anonymous blood donors of European Ancestry with no history of ocular inflammatory disease at the same institute to serve as unaffected controls (Table 1). Uveitis was classified and graded in accordance with the SUN classification (Jabs et al., 2005). Each patient underwent a full ophthalmological examination by an ophthalmologist experienced in uveitis, routine laboratory screening, and an X-ray of the lungs. Laboratory screening included erythrocyte sedimentation rate, renal and liver function tests, angiotensin-converting enzyme, and screening for infectious agents in the serum and an Interferon-Gamma Release Assay (IGRA) was obtained for all patients. All patients with AU and BU were HLA-B27 or HLA-A29-positive, respectively (confirmed by HLA typing). All patients had active uveitis (new onset or relapse) and there was no clinical evidence for uveitis-associated systemic inflammatory disease (e.g., rheumatic condition) till the time of sampling. None of the patients received systemic immunomodulatory treatment in the last 3 months, other than low dose (≤10 mg) oral prednisolone in one BU patient of cohort II and one AU patient of cohort I.
 
-## CD1c+ DC purification
+**Table 1.**
+ Characteristics of the patients and controls from cohorts I and II.Abbreviations: BU: birdshot uveitis, AU: HLA-B27-associated anterior uveitis, HC: healthy control, IU: idiopathic intermediate uveitis, n.a.: not applicable, *Fisher’s exact test, **ANOVA, ***Kruskal–Wallis.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Cohort I</th>
+      <th>AU</th>
+      <th>IU</th>
+      <th>BU</th>
+      <th>HC</th>
+      <th>p value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>N</td>
+      <td>10</td>
+      <td>5</td>
+      <td>8</td>
+      <td>13</td>
+      <td>Total = 36</td>
+    </tr>
+    <tr>
+      <td>Male/female</td>
+      <td>2/8</td>
+      <td>3/2</td>
+      <td>5/3</td>
+      <td>5/8</td>
+      <td>0.26*</td>
+    </tr>
+    <tr>
+      <td>Age in years; mean ± SD</td>
+      <td>45 ± 16</td>
+      <td>30 ± 9</td>
+      <td>42 ± 10</td>
+      <td>42 ± 13</td>
+      <td>0.24***</td>
+    </tr>
+    <tr>
+      <td>Disease duration in years; median (range)</td>
+      <td>8.1 (0.2–22.3)</td>
+      <td>3.4 (0.4–14.1)</td>
+      <td>0.9 (0.2–19.9)</td>
+      <td>n.a.</td>
+      <td>0.36**</td>
+    </tr>
+    <tr>
+      <td>Cohort II</td>
+      <td>AU</td>
+      <td>IU</td>
+      <td>BU</td>
+      <td>HC</td>
+      <td>p value</td>
+    </tr>
+    <tr>
+      <td>N</td>
+      <td>9</td>
+      <td>9</td>
+      <td>10</td>
+      <td>14</td>
+      <td>Total = 42</td>
+    </tr>
+    <tr>
+      <td>Male/female</td>
+      <td>3/6</td>
+      <td>2/7</td>
+      <td>4/6</td>
+      <td>6/8</td>
+      <td>0.8790*</td>
+    </tr>
+    <tr>
+      <td>Age in years; mean ± SD</td>
+      <td>47 ± 17</td>
+      <td>39 ± 14</td>
+      <td>52 ± 13</td>
+      <td>39 ± 10</td>
+      <td>0.06***</td>
+    </tr>
+    <tr>
+      <td>Disease duration in years; median (range)</td>
+      <td>5.8 (0.1–39.3)</td>
+      <td>3.7 (0.2–20.0)</td>
+      <td>1.3 (0.2–15.1)</td>
+      <td>n.a.</td>
+      <td>0.14**</td>
+    </tr>
+  </tbody>
+</table>
+
+### CD1c+ DC purification
 
 Peripheral blood mononuclear cells (PBMCs) were isolated by standard ficoll density gradient centrifugation from 70 ml heparinized blood immediately after blood withdrawal (GE Healthcare, Uppsala, Sweden). For the first cohort, 10 batches (individual days) of 4–5 randomly selected patient and control samples of nitrogen stored PBMCs (mean storage time of 11 [range 0–31] months) were carefully thawed and subjected to sorting by the BD FACSAria III sorter after incubation with a panel of surface antibodies (Supplementary file 1A) and fluorescent-activated cell sorting (FACS) buffer (1% bovine serum albumin and 0.1% sodium azide in phosphate-buffered saline [PBS]). CD3−CD19−CD56−CD14−HLA-DR+CD11c+CD1c cells were sorted. The average number of collected cells by sorting was 56,881 (range 6669–243,385). For the second cohort, fresh PBMCs were immediately subjected to magnetic-activated cell sorting (MACS) for the removal (positive selection) of CD304+ cells (pDC), followed by the removal of CD19+ cells (B cell), and subsequently isolation of CD1c+ cells by using the CD1c+ (BDCA1) isolation kit (Miltenyi Biotec, Germany) according to the manufacturer’s instructions. The isolated CD1c+ fraction contained on average 147,114 cells (range 46,000–773,000) and purity was determined by flow cytometry (Supplementary file 1B) measured on the BD LSRFortessa Cell analyzer (Figure 1—figure supplement 1). Data were analyzed using FlowJo software (TreeStar Inc). MACS or FACS purified CD1c+ cells were immediately taken up in a lysis buffer (RLT plus, QIAGEN) containing 1% β-mercaptoethanol, snap frozen on dry ice, and stored at −80°C until RNA extraction was performed. Isolation of CD1c+ DC for functional experiments was done by MACS as described above. Purification of CD1c+DC subsets based on CD36 and CX3CR1 or CD14 expression from freshly isolated PBMCs was conducted by flow cytometry using the panel in Supplementary file 1C and shown in Figure 3—figure supplement 2B.
 
-## CD1c+ DC cultures and secretome analysis
+### CD1c+ DC cultures and secretome analysis
 
 Purified CD1c+ DCs were cultured in RPMI Glutamax (Thermo Fisher Scientific) supplemented with 10% heat-inactivated fetal bovine serum (Biowest Riverside) and 1% penicillin/streptomycin (Thermo Fisher Scientific). CD1c+ DCs were cultured at a concentration of 0.5 × 106 cells/ml in a 96-well round-bottom plate (100 μl/well). Cells were stimulated overnight (18 hr) with multiple stimuli listed in Supplementary file 1D. After stimulation, cells were lysed in an RLT plus lysis buffer (QIAGEN) and stored at −80°C until RNA extraction was performed. Cell lysates were stored at −80°C until RNA extraction was performed for qPCR. In separate cultures, CD1c+ DC subsets (sorted based on CD36 and CX3CR1 expression) were cultured in the presence of 1 µg/ml lipoteichoic acid (LTA). After 18 hr of stimulation, supernatants were harvested and IL-23 cytokine production was analyzed by ELISA (R&D Systems). The levels of IL-2, IL-5, IL-6, IL-10, IL-12p70, IL-13, IL-17, IL-22, IL-27, TNF-alpha, IFN-alpha, IFN-beta, CCL1, CXCL10, CXCL13, VEGF, CD40L, FAS, TNFR1, TNFR2, Elastase, and Granzyme B were simultaneously measured in supernatant of CD1c+ DC cultures using the in-house multiplex immunoassay based on Luminex technology, as described previously (Bakker et al., 2022). Protein concentrations that were out of range were replaced with the LLOQ (lower limit of quantification) and ULOQ (upper limit of quantification) for each analyte and divided by 2 for the proteins detected below the range of detection or multiplied by 2 for values above the detection range (Supplementary file 1E).
 
-## Real-time quantitative PCR
+### Real-time quantitative PCR
 
 First-strand cDNA was synthesized from total RNA using Superscript IV kit (Thermo Fisher Scientific), and quantitative real-time PCR (RT-qPCR) was performed on the QuantStudio 12k flex System (LifeTechnologies), following the manufacturer’s instructions. Sequences of the primers used are listed in Supplementary file 1F and the Key Resource Table. RT-qPCR data were normalized to the expression of the selected housekeeping gene GUSB (ENSG00000169919). CT values were normalized to GUSB by subtracting the CT mean of GUSB (measured in duplo) from the CT mean of the target mRNA (e.g., RUNX3) = ΔCT. The fold change (FC) of each sample was calculated compared to ΔCt of the medium control using the formula FC = 2−ΔΔCt, where ΔΔCt = ΔCt sample − ΔCt reference.
 
-## Flow cytometry of CD1c+ DC populations
+### Flow cytometry of CD1c+ DC populations
 
 PBMC samples from the two cohorts (HC = 11 samples; AU = 9 samples; IU = 6 samples; BU = 11 samples) were randomly selected and measured by flow cytometry in batches of 9–10 mixed samples per run, divided over 4 days. Per batch, 10 million PBMCs per sample were quickly thawed, washed with ice cold PBS and stained with the antibody panel depicted in Supplementary file 1C. PBMCs were incubated with Fixable Viability Dye eF780 (eBioscience) at room temperature for 10 min. Cells were then plated in V-bottomed plates (Greiner Bioone), washed with PBS and incubated for 30 min at 4°C in the dark with Brilliant Stain Buffer (BD) and the fluorescently conjugated antibodies. Next, the cells were washed and taken up in the FACS buffer. Flow cytometric analyses were performed on the BD FACSAria III sorter. Manual gating of data was done using FlowJo software (TreeStar inc San Carlos, CA, USA). FlowSOM v1.18.0 analysis was done as described previously (Laban et al., 2020). Lineage- (negative for CD3/CD56/CD19) HLA-DR+ data were transformed using the logicleTransform function of the flowCore v1.52.1 R package, using default parameters (Ellis et al., 2020). The SOM was trained for a 7 × 7 grid (49 clusters) with 2000 iterations. Consensus hierarchical clustering was used to annotate clusters, based on the ConsensusClusterPlus v1.50.0 R package (Wilkerson and Hayes, 2010). Principal component analysis (PCA) analysis was done on normalized expression data from flowSOM using the factoextra v 1.0.7.999 R package.
 
-## RNA isolation and RNA-sequencing
+### RNA isolation and RNA-sequencing
 
 Total RNA from CD1c+ DC cell lysates from patients and controls was isolated using the AllPrep Universal Kit (QIAGEN) on the QIAcube (QIAGEN) according to the manufacturer’s instructions. For cohort I, RNA-seq libraries were generated by GenomeScan (Leiden, The Netherlands) with the TruSeq RNAseq RNA Library Prep Kit (Illumina Inc, Ipswich, MA, USA), and were sequenced using Illumina HiSeq 4000 generating ~20 million 150 bp paired end reads for each sample. Library preparation and Illumina sequencing was performed on samples of cohort II at BGI (Hong Kong). RNA-seq libraries were generated with the TruSeq RNAseq RNA Library Prep Kit (Illumina Inc, Ipswich, MA, USA) and were sequenced using Illumina NextSeq 500 generating approximately 20 million 100 bp paired end reads for each sample.
 
-## Power analysis
+### Power analysis
 
 We conducted power analysis using the PROPER R package v 1.22.0 (Wu et al., 2015) with 100 simulations of the build-in RNA-seq count data from antigen presenting (B) cells from a cohort of 41 individuals (i.e., large biological variation as expected in our study) (Cheung et al., 2010). Simulation parameters used the default of 20,000 genes and an estimated 10% of genes being differentially expressed. We detected 0.8 power to detect differentially expressed genes (p < 0.05) at a log2(fold change) >1 for the smallest patient group (9 cases) and we considered the sample size reasonable for analysis.
 
-## Differential gene expression and statistical analysis
+### Differential gene expression and statistical analysis
 
 Quality check of the raw sequences was performed using the FastQC tool. Reads were aligned to the human genome (GRCh38 build 79) using STAR aligner (Dobin et al., 2013) and the Python package HTSeq v0.6.1 was used to count the number of reads overlapping each annotated gene (Anders et al., 2015). We aligned the reads of the RNA-sequencing datasets to 65,217 annotated Ensemble Gene IDs. Raw count data were fed into DESeq2 v1.30.1 (Love et al., 2014) to identify differentially expressed genes between the four disease groups (AU, IU, BU, and HC). Using DESeq2, we modeled the biological variability and overdispersion in expression data following a negative binomial distribution. We used Wald’s test in each disease group versus control pairwise comparison and p values were corrected by the DESeq2 package using the Benjamini–Hochberg Procedure. We constructed co-expression gene networks with the WGCNA v 1.70-3 R package (Langfelder and Horvath, 2008) using the cumulative uveitis-associated genes from all pairwise comparisons and a soft power of 5. Module membership (MM) represents the intramodular connectivity of genes in a gene module. Gene Significance (GS >0.25) indicates a strong correlation between genes and non-infectious uveitis, whereas MM (MM >0.8) indicates a strong correlation with the EigenGene value of the modules. We calculated the intersection between the modules constructed from the two cohorts and used Fisher’s exact test to identify modules that exhibited significant overlap in genes. Gene expression data from runx3-knockout (KO) cDC2s, notch2-KO cDC2s, and ‘inflammatory’ cDC2s were obtained from the NCBI Gene Expression Omnibus (accession numbers GSE48590 [2 wild-type [WT] CD11b+ESAM+ splenic cDC2s vs. 2 CD11b+ESAM+ cDC2s from CD11c-DC-Runx3Δ mice], GSE119242 [2 untreated cDC2 vs. untreated cDC2 from CD11c-Cre notch2f/f mice], GSE149619 [5 CD172+MAR1− cDC2s in mock condition vs 3 CD172+MAR1+ cDC2 in virus condition]) using GEO2R in the GEO database, which builds on the GEOquery v2.58.0 and limma R v 3.46 packages (Davis and Meltzer, 2007; Ritchie et al., 2015). RNA-seq data from the mouse bone marrow stromal cell line OP9 expressing NOTCH ligand DLL1 (OP9-DLL1)-driven cDC2 cultures (GSE110577 [2 sorted CD11c+MHCII+B220−CD11b+ cDC2 from bone marrow cultures with FLT3L for 7 days vs. 2 sorted CD11c+MHCII+B220−CD11b +cDC2 from bone marrow cultures with FLT3L+OP9-DLL1 cells for 7 days]) were analyzed using DESeq2 and normalized count data plotted using the plotCounts function. RNA-seq count data from CD14+/− DC3 subsets from patients with SLE and systemic sclerosis were obtained via GEO (accession number: GSE136731) (Dutertre et al., 2019) and differential expression analysis was conducted using DESeq2 v1.30.1. Gene set enrichment analysis was done using the fgsea R package v1.16.0 and data plotted using the GSEA.barplot function from the PPInfer v 1.16.0 R package (Jung and Ge, 2020). Gene sets for runx3-KO, notch2-KO, inflammatory cDC2s, and cDC2s from OP9-DLL1 bone marrow cultures were generated by taking the top or bottom percentiles of ranked [−log10(p) × sign(log2(fold change))] genes from each dataset as indicated. Genes in the modules of interest that encode cell-surface proteins were identified according to surfaceome predictor SURFY (Bausch-Fluck et al., 2018).
 
-## Single-cell RNA-seq analysis of aqueous humor
+### Single-cell RNA-seq analysis of aqueous humor
 
 Single-cell RNA-seq (scRNA-seq) data from a previous study of as reported by Kasper et al., 2021 of aqueous humor of four HLA-B27-positive anterior uveitis (identical to the AU group in this study) patients were obtained and downloaded via Gene Expression Omnibus (GEO) repository with the accession code GSE178833. Data were processed using the R package Seurat v4.1.0 (Stuart et al., 2019) using R v4.0.3. We removed low-quality cells (<200 or >2500 genes and mitochondrial percentages <5%) and normalized the data using the SCTransform() function accounting for mitochondrial percentage and cell cycle score (Hafemeister and Satija, 2019). Dimensionality reduction for all cells was achieved by adapting the original UMAP coordinates for each barcode as reported by Kasper et al., 2021 (see GSE178833). Data were subjected to scGate v1.0.0 (Andreatta et al., 2022) using CLEC10A+ and C5AR1 (CD88)− cells in our gating model to purify CD1c+ DCs in the scRNAseq dataset. Dimensionality reduction for CD1c+ DCs was conducted using the R package Seurat, and cells clustered using the FindNeighbors and FindClusters functions from Seurat. After clustering and visualization with UMAP, we used the DotPlot function from the Seurat package to visualize the average expression of genes in each cluster.
 
 ## Results
 
-## A CX3CR1 gene module is associated with non-infectious uveitis
+### A CX3CR1 gene module is associated with non-infectious uveitis
 
 We characterized the transcriptome of primary CD1c+ DCs from patients with non-infectious uveitis (Figure 1A). RNA-seq analysis (RNA-seq) was performed on lineage (CD3−CD19−CD56−CD14−)-negative, and HLA-DR-positive, CD11c and CD1c-positive DCs purified from frozen PBMCs by flow cytometry from 36 patients with anterior (AU), intermediate (IU), or posterior non-infectious uveitis (BU) and healthy controls. A co-expression network was constructed using uveitis-associated genes identified by differential expression analyses (n = 2,016 genes at P<0.05, Figure 1B), which identified six modules, of which 3 were associated with non-infectious uveitis (GS >0.25, Figure 1C). The blue module was most associated with non-infectious uveitis (Figure 1C). Based on Module Membership, CX3CR1 was the top hub gene of the blue module (Figure 1D, Supplementary file 1G). Since CX3CR1 was previously associated with a distinct subset cDC2s that may also express CD14 (Brown et al., 2019; Fujita et al., 2019), we attempted to validate and expand the gene set associated with non-infectious uveitis by MACS-isolating CD1c+ DC cells from fresh blood of 28 patients and 14 healthy controls, followed by RNA-seq analysis of the highly purified CD1c+ DCs (median [interquartile range]% = 96 [3]% pure, Figure 1—figure supplement 1). We also constructed a co-expression network for uveitis-associated genes (n = 6794, p < 0.05) in the second cohort (Figure 1E), which revealed 24 gene modules (Supplementary file 1H). Note that patient samples did not cluster according to clinical parameters of disease activity (e.g., cell grade in eye fluid, macular thickness) (Figure 1—figure supplement 2). The three uveitis-associated modules in cohort I shared a significant number of co-expressed genes with one module in cohort II, the black module (Figure 1F). The black module was associated with non-infectious uveitis in cohort II (GS for uveitis >0.25) and CX3CR1 was also the hub gene for this module (Black Module Membership, p = 5.9 × 10−22; Supplementary file 1H, Figure 1G). According to these findings, the overlapping disease-associated gene modules appear to represent a single gene module. In cohort I, the separation of genes into three modules was possibly due to low sensitivity to detect disease-associated genes with low expression, as replicated genes of the black module were typically higher expressed (Figure 1—figure supplement 3). In total, we replicated 147 co-expressed genes between the two cohorts (which we will refer to as the ‘black module’), of which 94% also showed consistent direction of effect (e.g., upregulated in both cohorts) (Figure 1H, Supplementary file 1I). The black module was enriched for the GO term ‘positive regulation of cytokine production’ (GO:0001819, padj = 6.9 × 10−5). In addition to CX3CR1, the black module comprised CD36, CCR2, TLR-6,-7,-8, CD180, and transcription factors RUNX3, IRF8, and NFKB1 (Figure 1I), but not CD14. In summary, these results show that a gene module characterized by CX3CR1 in blood CD1c+ DCs is associated with non-infectious uveitis.
 
-## CX3CR1+ DC3 are diminished in peripheral blood of non-infectious uveitis patients
+![Figure 1.](https://cdn.elifesciences.org/articles/74913/elife-74913-fig1-v2.jpg)
+
+**Figure 1.:** (A) Study design. CD1c+ DCs were purified from blood and subjected to RNA-sequencing. Co-expression network analysis was used to identify gene modules associated with uveitis. (B) Principal component analysis (PCA) of the 2016 uveitis-associated genes (p < 0.05) in 36 patients and control samples of cohort I. (C) Gene significance for uveitis for the gene modules identified by WGCNA. (D) Module membership and Gene Significance for uveitis for the blue module of cohort I. (E) PCA of the 6794 uveitis-associated genes (p < 0.05) in 42 samples of cohort II. (F) Cross-tabulation of the preservation of co-expressed genes between gene modules from cohort I and the black module from cohort II. p value is from Fisher’s exact test. (G) Same as in D, but for the black module of cohort II. (H) Heatmaps of the 147 replicated co-expressed genes (rows) for samples (columns) from cohorts I and II. The venn diagram shows the up- and downregulated genes (clusters shown in H). (I) The (log2) fold change in gene expression compared to healthy controls (x-axis) for all 147 replicated genes in patients with AU, IU, and BU. Genes encoding surface proteins are indicated in black/gray. Key transcription factors are indicated in blue. AU: anterior uveitis, IU: intermediate uveitis, BU: birdshot uveitis.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74913/elife-74913-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Representative sample of flow-cytometry gating of CD14+, CD19+, CD3+, and CD1c+ cell fractions in CD304-depleted, CD19-depleted and CD1c+ enriched magnetic-activated cell sorting (MACS) fractions from fresh peripheral blood mononuclear cells. Manual gating data for each individual sample are available via: https://doi.org/10.34894/9Q0FVO. The percentage of cells positive for each marker on the group levels between the disease groups is indicated in the bottom.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74913/elife-74913-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** A principal component analysis (PCA) plot based on the 678 differentially expressed genes (padj < 0.05) (A), the anterior chamber cell grade (B), vitreous fluid cell grade (C), macular thickness in the left (OS) eye as determined by optical coherence tomography (OCT) (D), and macular thickness in the right eye (OD) as determined by OCT (E) are shown.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/74913/elife-74913-fig1-figsupp3-v2.jpg)
+
+### CX3CR1+ DC3 are diminished in peripheral blood of non-infectious uveitis patients
 
 Type I IFN cytokines promote differentiation of CD1c+ DCs (Dutertre et al., 2019; Girard et al., 2020), but patients with active non-infectious uveitis have reduced blood levels of type I IFN cytokines (Wang et al., 2019; Kuiper et al., 2022). Assessment of the transcriptome of CD1c+ DCs from patients, found no enrichment for genes associated with murine type I IFN-dependent cDC2s (Bosteels et al., 2020; Figure 2A,B). Furthermore, while RUNX3 was downregulated in RNA-seq data from CD1c+ DCs from non-infectious uveitis patients (Figure 1I), stimulation of CD1c+ DCs with from healthy human donors with IFN-alpha resulted in upregulation of RUNX3 (Figure 2—figure supplement 1A). In contrast, the transcriptome of CD1c+ DCs from patients overlapped significantly with murine cDC2s knocked out for Runx3, or its upstream regulator Notch2 (Figure 2, Figure 2—figure supplement 1B ,C; Lewis et al., 2011; Fasnacht et al., 2014; Briseño et al., 2018). Given that cDC2 subsets differ by their dependence on NOTCH signaling (Lewis et al., 2011; Fasnacht et al., 2014; Briseño et al., 2018; Kirkling et al., 2018), we hypothesized that the transcriptomic signatures of the CD1c+ DC pool in patients might reflect changes in their proportions.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/74913/elife-74913-fig2-v2.jpg)
+
+**Figure 2.:** (A) Volcano plot for the expression of genes of the black module in cDC2s of runx3-KO mice (GSE48590), notch2-KO mice (GSE119242), and type I IFN-dependent inflammatory [inf-]cDC2s (GSE149619). Up- and downregulated genes for each condition are indicated for each condition; gray dots denote the genes with no significant change in expression. (B) Results from gene set enrichment analysis for ranked transcriptomes (using 20,668 genes with baseMean >4) for AU, IU, and BU patients. The top or bottom percentiles of the ranked [−log10(p) × sign(log2(FC))] genes from runx3-KO cDC2s, notch2-KO cDC2s, and inf-cDC2s (see a) were used as gene sets. Normalized enrichment scores (NES) and p values for each gene set are indicated. The dotted lines indicate padj = 0.05. AU: anterior uveitis, IU: intermediate uveitis, BU: birdshot uveitis.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74913/elife-74913-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Gene expression (mean [standard error of the mean, SEM]) for RUNX3 and CD36 in primary human CD1c+ DCs from healthy donors stimulated overnight. Each dot represents a single donor used in the experiment. (B) Transcriptomic data (GSE110577, described by Kirkling et al., 2018) of murine bone marrow progenitors cultured for 7 days with OP9 stromal cells that express the NOTCH2 ligand DLL1 or OP-9 cells without DLL1. This analysis revealed that notch2-controlled genes were enriched in the transcriptome of CD1c+ DCs of patients and that notch2-signaling associates with the expression of cd36, ccr2, and cx3cr1 in cDC2s. Normalized counts (and adjusted p values from DESeq2) for cx3cr1, ccr2, cd36, and runx3 from cDC2s generated from murine bone marrow cells and OP-9 with (in blue) or without (in ochre) Notch ligand Delta-like 1 (DLL1). (C) Gene set enrichment analysis using the top 1% (n = 201) genes associated with the NOTCH-negative condition in b as the gene set. R848: Resiquimod, LTA: lipoteichoic acid, LPS: lipopolysaccharides, Pam3CSK4: Pam3CysSerLys4, OxLDL: oxidized low-density lipoprotein, IFNα: interferon alpha, TGFβ: transforming growth factor beta, FLT3L: FMS-like tyrosine kinase 3 ligand, TNFα: tumor necrosis factor alpha, S100A12: S100 calcium-binding protein A12, IL-4: interleukin 4, GM-CSF: granulocyte-macrophage colony-stimulating factor.
+
 Therefore, we used flow-cytometry analysis to identify CD1c+ DC clusters in PBMCs samples from 26 cases and 11 controls. We designed a panel based on the black module (CX3CR1, CD36, CCR2, and CD180), other CD1c+ DC markers that were not in the black module (CD1c, CD11c, CD14, CD5, and CD163) (Dutertre et al., 2019; Korenfeld et al., 2017). FlowSOM (Van Gassen et al., 2015) was used on HLA-DR+ and lineage (CD3/CD19/CD56)− PBMCs to cluster cells into a predetermined number of 49 clusters (7 × 7 grid) to facilitate detection of CD1c+ DC phenotypes in blood. The analysis with flowSOM clearly distinguished four CD1c+ DC clusters (cluster number 22, 37, 44, and 45) (Figure 3A and Figure 3—figure supplement 1A and B). We extracted the data for these four CD1c+ DC clusters and conducted principal component analysis (PCA). The PCA biplot identified CD5 and CD163 as top loadings (Figure 3—figure supplement 1C), which defines the DC2s (cluster 45), CD5−CD163− DC3s (cluster 37), and CD5−CD163+ DC3s (clusters 22 and 44) (Dutertre et al., 2019; Figure 3B, C). Among the identified clusters, we detected a significant reduction in the frequency of cluster 44 in patients compared to controls (Welch t-test, p = 0.03, Figure 3D and Figure 3—figure supplement 1D). Clusters 44 as well as cluster 22 were CD36 and CD14 positive, which indicates these clusters may represent CD14+ DC3s in human blood (Dutertre et al., 2019). However, cluster 44 had relatively higher levels of CX3CR1 than cluster 22 (Figure 3E, F). This suggests that DC3s may be phenotypically bifurcated by CX3CR1 independently of CD14. This is supported by weak correlation between CD14 and CX3CR1 in our RNA-seq data from bulk CD1c+ DCs (Pearson correlation coefficient = 0.35, Figure 3—figure supplement 2A). In addition, we sorted CD14-positive and -negative fractions from CD1c+ DCs of six healthy donors (Figure 3—figure supplement 2B) which showed no significant difference in expression levels for CX3CR1 (Figure 3—figure supplement 2C). CX3CR1 levels were also not significantly different in sorted CD5−CD163+CD14-positive and CD14-negative DC3s from patients with autoimmune diseases, further indicating that CX3CR1 expression in CD1c+ DCs may be independent from CD14 expression in CD1c+ DCs (Figure 3—figure supplement 2D).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74913/elife-74913-fig3-v2.jpg)
+
+**Figure 3.:** (A) Heatmap of the surface protein expression for 49 flowSOM clusters of flow-cytometry analysis of PBMC samples from 26 patients and 11 controls. The four CD1c+ (CD3−CD19−CD56−HLA-DR+CD11c+) DC clusters identified (clusters 22, 37, 44, and 45) are shown (detailed heatmap in Figure 3—figure supplement 1A). (B) Biplot of the normalized surface expression of CD5 and CD163 for the four CD1c+ DC clusters. (C) Correlation plot between manually gated CD5−CD163− DC3s and CD5−CD163+ DC3s and DC3 flowSOM clusters 22, 37, and 44. (D) The frequency of the 4 CD1c+ DC flowSOM clusters as percentage of PBMCs. p values from Welch’s t-test. (E) Principal component analysis (PCA) biplot of the DC3 clusters 22, 37, and 44. Loadings for PC1 and PC2 are shown on the right. (F) Biplots of the normalized surface expression of CD36, CD14, and CX3CR1 in the DC3 clusters 22, 37, and 44. (G) Manual gating strategy of CD1c+ DC subsets based on CD36 and CX3CR1 in PBMCs in uveitis cases and controls. p value from Welch’s t-test. Details on manual gating strategy: see Figure 3—figure supplement 3. Manual gating revealed that the CD14+CD1c+ DCs (DC3s) can be further subdivided in a CX3CR1− and a CX3CR1+ population.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74913/elife-74913-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Heatmap of the surface protein expression for 49 flowSOM clusters of flow-cytometry analysis of PBMC samples from 26 patients and 11 controls. The four CD1c+ (CD3−CD19−CD56−HLA-DR+CD11c+) DC clusters identified (clusters 22, 37, 44, and 45) are highlighted. (B) Biplot of the cell surface expression of CD1c and CD11c for the 49 flowSOM clusters in a. (C) Principal component analysis (PCA) biplot of the surface protein expression for clusters 22, 37, 44, and 45 identified in a. (D) The proportion of the four CD1c+ DC clusters in the HLA-DR+Lin−(CD3−CD19−CD56) population in controls and patients. (E) Manual gating strategy of CD1c+ DC subsets based on CD36 and CX3CR1 and the correlation between CD36+CX3CR1+CD1c+ DCs and the flowSOM cluster 44. R = Spearman correlation. Gray area represents the 95% confidence interval of the linear regression line. (F) The relative proportion of CD1c+ DC subsets based on CD36 and CX3CR1 in the HLA-DR+ Lin− gate.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/74913/elife-74913-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Correlation plot of the gene expression levels of CD14, CD36, CCR2, CX3CR1, and the EigenGene value of the black module. (B) Gating strategy to sort CD14+ and CD14−CD1c+ DCs from healthy donors. (C) Real-time PCR (RT-qPCR) results for a panel of genes of the black module in the sorted CD14+ and CD14−CD1c+ DC fractions in a. padj = adjusted p values from t-test (Bonferroni) corrected for seven genes. (D) Volcano plot showing differential expression analysis for black module genes in CD14+ versus CD14− DC3s purified from systemic lupus erythematosus (SLE) and SSc patients (GSE136731).
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/74913/elife-74913-fig3-figsupp3-v2.jpg)
 
 We validated by manual gating that cluster 44 represents the CD36+CX3CR1+ fraction of CD1c+ DCs in peripheral blood (~25% of total CD1c+ DCs) (Figure 3—figure supplement 1E). Comparison between patients and controls corroborated that the frequency of manual gated CD36+CX3CR1+ DC3s were decreased in the blood of non-infectious uveitis patients (Welch t-test, p = 0.029, Figure 3G). In detail, we show that CD14+CD1c+ DCs double positive for CD36+ and CX3CR1 were significantly decreased (p = 0.026), while CD14+CD1c+ DCs not positive for CX3CR1 were not (p = 0.43) (Figure 3G). This supports that CX3CR1 discerns a phenotypic subpopulation of CD14+ DC3s (Figure 3—figure supplement 3), that was diminished in the blood of patients with non-infectious uveitis.
 
-## CX3CR1+ DC3s can secrete pro-inflammatory cytokines upon stimulation
+### CX3CR1+ DC3s can secrete pro-inflammatory cytokines upon stimulation
 
 We compared the cytokine-producing abilities of CX3CR1+ DC3s to their negative counterparts since the gene module associated with CX3CR1 was enriched for genes involved in cytokine regulation. To this end, we freshly sorted primary human CD1c+ DC subsets based on the surface expression of CX3CR1 and CD36, of which double-positive and -negative subsets could be sorted from the selected healthy subjects in sufficient numbers for analysis (Figure 4—figure supplement 1). Since CD36 is involved in LTA-induced cytokine production (Jimenez-Dalmaroni et al., 2009), we overnight stimulated the CD1c+ subsets with LTA. Both subsets of CD1c+ DCs secreted IL-23 equally strongly (Figure 4A). To assess the secretome of the CD1c+ DC subsets in more detail, we profiled the supernatants of LTA-stimulated CD1c+ DC subsets for additional soluble immune mediators (Supplementary file 1E): The CD1c+ DC subsets could be distinguished based on the secreted protein profile (Figure 4B), of which the levels of TNF-alpha, IL-6, VEGF-A, and TNFR1 showed significant differences between the subsets (Figure 4C). These results show that CD1c+ DC subsets defined on the basis of surface co-expression of CD36 and CX3CR1 have the capacity to secrete pro-inflammatory mediators that participate in the pathophysiology of human non-infectious uveitis.
 
-## CX3CR1+ DC3s are detectable in the inflamed eye during non-infectious uveitis
+![Figure 4.](https://cdn.elifesciences.org/articles/74913/elife-74913-fig4-v2.jpg)
+
+**Figure 4.:** (A) The CD1c+ DC cells were fluorescent-activated cell sorting (FACS) sorted into CD36+CX3CR1+ and CD36−CX3CR1−CD1c+ DCs (Figure 4—figure supplement 1). The concentration of IL-23 (ELISA) in supernatants of 18 hr cultured primary human CD1c+ DC subsets cells stimulated with lipoteichoic acid (LTA). (B) Heatmap of the levels (Z-score) of 16 detected proteins in supernatants of 18 hr cultured LTA-stimulated primary human CD1c+ DC subsets cells using an in-house multiplex Luminex assay (Supplementary file 1E). (C) Scatter plots with overlay boxplot with mean and interquartile range of the levels of secreted TNF-alpha, interleukin (IL)-6, VEGF-A, and TNFR1 from the multiplex protein data in d (padj = p values from likelihood ratio test Bonferroni corrected for 16 detected proteins).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74913/elife-74913-fig4-figsupp1-v2.jpg)
+
+### CX3CR1+ DC3s are detectable in the inflamed eye during non-infectious uveitis
 
 We speculated that CX3CR1+ DC3s are important in the disease mechanisms of uveitis and may be found at increased abundance in the eye during active uveitis. We used single-cell RNA-sequencing data (scRNA-seq) of eye fluid biopsies of four noninfectious patients from Kasper et al., 2021. Cells positive for the CD1c+ DC-specific tissue-marker CLEC10A and negative for the monocyte marker C5AR1 (CD88) (Dutertre et al., 2019; Bourdely et al., 2020; Heger et al., 2018) were used to identify CD1c+ DCs among other immune cells in the scRNA-seq data (Figure 5A). Unsupervised clustering identified three clusters (1, 2, and 3) of different cells within the CD1c+ DC population (Figure 5B). We identified that cluster 1 expressed the gene profile associated with CX3CR1+ DC3s, including relatively higher levels of CX3CR1, CD36, CCR2, and lower levels of RUNX3 compared to the other two CD1c+ DC clusters (Figure 5C), which is in line with the gene profile identified by our bulk RNA-seq analysis. In summary, we conclude that CD1c+ DCs with a gene expression profile similar to CX3CR1+ DC3s can be detected in the eyes of patients during active non-infectious uveitis.
 

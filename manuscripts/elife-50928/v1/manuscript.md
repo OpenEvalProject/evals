@@ -30,7 +30,7 @@
 
 ## Abstract
 
-σ S is a master transcription initiation factor that protects bacterial cells from various harmful environmental stresses including antibiotic pressure. Although its mechanism remains unclear, it is known that full activation of σ S -mediated transcription requires a σ S -specific activator, Crl. In this study, we determined a 3.80 Å cryo-EM structure of an Escherichia coli transcription activation complex ( E. coli Crl-TAC) comprising E. coli σ S -RNA polymerase (σ S -RNAP) holoenzyme, Crl, and a nucleic-acid scaffold. The structure reveals that Crl interacts with domain 2 of σ S (σ S 2 ) and the RNAP core enzyme, but does not contact promoter DNA. Results from subsequent hydrogen-deuterium exchange mass spectrometry (HDX-MS) indicate that Crl stabilizes key structural motifs within σ S 2 to promote the assembly of the σ S -RNAP holoenzyme and also to facilitate formation of an RNA polymerase–promoter DNA open complex (RPo). Our study demonstrates a unique DNA contact-independent mechanism of transcription activation, thereby defining a previously unrecognized mode of transcription activation in cells.
+σS is a master transcription initiation factor that protects bacterial cells from various harmful environmental stresses including antibiotic pressure. Although its mechanism remains unclear, it is known that full activation of σS-mediated transcription requires a σS-specific activator, Crl. In this study, we determined a 3.80 Å cryo-EM structure of an Escherichia coli transcription activation complex (E. coli Crl-TAC) comprising E. coli σS-RNA polymerase (σS-RNAP) holoenzyme, Crl, and a nucleic-acid scaffold. The structure reveals that Crl interacts with domain 2 of σS (σS2) and the RNAP core enzyme, but does not contact promoter DNA. Results from subsequent hydrogen-deuterium exchange mass spectrometry (HDX-MS) indicate that Crl stabilizes key structural motifs within σS2 to promote the assembly of the σS-RNAP holoenzyme and also to facilitate formation of an RNA polymerase–promoter DNA open complex (RPo). Our study demonstrates a unique DNA contact-independent mechanism of transcription activation, thereby defining a previously unrecognized mode of transcription activation in cells.
 
 ## Introduction
 
@@ -46,13 +46,37 @@ In this study, we determined a 3.80 Å cryo-EM structure of the transcription a
 
 ## Results
 
-## The cryo-EM structure of E. coli Crl-TAC
+### The cryo-EM structure of E. coli Crl-TAC
 
 To understand the structural basis for transcription activation by Crl, we reconstituted the Crl–TAC complex that includes the E. coli σS-RNAP holoenzyme, Crl, and a nucleic-acid scaffold comprising a 25-bp upstream dsDNA, a 13-bp downstream dsDNA, a non-complimentary transcription bubble (−11 to +2 with respect to the transcription start site at +1), and a 5-mer RNA primer (Figure 1A and Figure 1—figure supplement 1). The cryo-EM structure of E. coli Crl-TAC was determined at a nominal resolution of 3.80 Å by a single-particle reconstitution method (Supplementary file 2 and Figure 1—figure supplement 2). The density map shows clear signals for the nucleic-acid scaffold, σS, and Crl (Figure 1B and D–E). The crystal structure of Crl could be readily fit into the density, suggesting little conformational change of Crl upon interaction with σS-RNAP holoenzyme (Figure 1D) (Banta et al., 2014).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/50928/elife-50928-fig1-v1.jpg)
+
+**Figure 1.:** (A) The scaffold used in structure determination of E. coli Crl-TAC. (B, C) The top and front view orientations of the cryo-EM density map (B) and structure model (C) of E. coli Crl–TAC. The RNAP, Crl and nucleic acids are presented as cartoon and colored as indicated in the color key. The density map is shown in gray envelop. (D) The cryo-EM density map (blue transparent surface) for Crl. (E) The cryo-EM density map (red transparent surface) for the upstream junction of the transcription bubble of promoter DNA and σS. NT, non-template-strand promoter DNA; T, template-strand promoter DNA.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50928/elife-50928-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Elution peaks of E. coli Crl–TAC from a size-exclusion column. (B) SDS-PAGE and (C) native-PAGE of the E. coli Crl–AC. The gel was first stained with SYBR Gold for nucleic acids and then with Coomassie Brilliant Blue for proteins.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50928/elife-50928-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The flowchart of data processing for the cryo-EM structure of E. coli Crl–TAC. (B) Representative cryo-EM micrograph. (C) Representative 2D classifications of E. coli Crl–TAC single particles. (D) Angular distribution of E. coli Crl–TAC particle projections. (E) The gold-standard Fourier shell correlation (FSC) of E. coli Crl–TAC. The dotted line represents the 0.143 FSC cutoff, which indicates a nominal resolution of 3.80 Å.
+
 The cryo-EM structure clearly shows that Crl locates at the outer surface of the σS-RNAP holoenzyme (Figure 1B–C). It mainly interacts with σS2 and shields the σS2 through an interface of 695 Å2; it also contacts a helical domain of RNAP-β’ clamp through a very small interface of ~85 Å2 (Figure 2A–D). Crl approaches the upstream edge of transcription bubble, but makes no direct contact with the promoter DNA (Figures 1D–E and 2A). Such a mode of interaction between Crl and σS-RPo supports previous findings from genetic, bacterial two-hybrid, cross-linking, surface plasmon resonance (SPR), NMR, or bioinformatic approaches (Banta et al., 2013; Banta et al., 2014; Cavaliere et al., 2014; England et al., 2008; Monteil et al., 2010a; Monteil et al., 2010b; Pratt and Silhavy, 1998).
 
-## Crl interacts with σS and the RNAP core enzyme
+![Figure 2.](https://cdn.elifesciences.org/articles/50928/elife-50928-fig2-v1.jpg)
+
+**Figure 2.:** (A) Crl binds to the σS2 and the RNAP-β’ subunit. Crl is represented as a blue transparent surface and cartoon. (B) σS is embedded into a shallow hydrophobic groove of Crl. The electrostatic potential surface of Crl was generated using APBS tools in Pymol. (C) The detailed salt-bridge interaction between the ‘R’ loop of Crl and the ‘specificity loop’ of σS. Salt-bridge bonds are shown as blue dashed lines. (D) The N-terminal tail of Crl makes potential weak interactions with RNAP-β’ subunit, probably through R11 and S10. The colors are as in Figure 1. (E) The yeast two-hybrid assay reveals the key interface residues (red) of Crl (left) or σS (right). Mutating the key residues disrupts interactions between Crl and σS. AD, the activation domain of GAL4; BD, the DNA-binding domain of GAL4. (F) The in vitro transcription assay shows that mutating most of the key interface residues of Crl (left) substantially impairs its transcription activation activity, and that mutating most of the key interface residues of σS resulted in reduced response to Crl. ΔR-loop, replacing residue 43–51 with a ‘GSGS’ linker. (G) Protein sequence alignment of Crl from 72 non-redundant bacterial species. Filled circles indicate residues that are involved with interactions with σS; filled red circles indicate key contact residues. The residues are numbers as in E. coli Crl. NT, non-template-strand promoter DNA; T, template-strand promoter DNA.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50928/elife-50928-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Structure superimposition of Crl proteins from crystal structure of Crl (PDB: 4Q11; cyan) and Crl in E. coli Crl-TAC (blue). (B) The σS2 inserts into a hydrophobic groove on surface of Crl. (C) The interaction between the ‘R’ loop of Crl and the ‘specificity’ loop of σS2. The cryo-EM density maps for the side chains of the interface residues of Crl and σS2 are shown as in blue and green mesh, respectively. The C, N, and O atoms of Crl residues are shown in white, blue, and red, respectively. The C, N, and O atoms of σS residues are shown in yellow, blue, and red, respectively. (D) Structure superimposition of our E. coli Crl–σS–RPo complex and E. coli σS–RPo complex (PDB 5IPM) reveals similar conformation of the specificity loop. (E) E. coli Crl interacts with σS2 in our structure. (F) Mycobacterium smegmatis RbpA interacts with σA2 in PDB 5TW1. (G) Caulobacter cresentus GcrA interacts with σ702 in PDB 5YIX. The conserved region and the non-conserved region (NCR) of σS2 in (E), (F), and (G) are shown in yellow and orange, respectively.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/50928/elife-50928-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Sequence alignment of six σ70-type E. coli σ factors. (B) The sequence alignment of the σ70subunit of ten representative bacterial species (Proteus mirabilis, Escherichia coli, Salmonella enterica serovar Typhi, Yersinia enterocolitica, Shigella flexneri, Vibrio cholerae, Dickeya dadantii, Providencia stuartii, Xenorhabdus bovienii, and Photobacterium profundum). (C) The sequence alignment of the σS subunit of the same ten bacterial species. The residues are numbered as in E. coli.
+
+### Crl interacts with σS and the RNAP core enzyme
 
 In the structure of E. coli Crl–TAC, a structural motif that includes helix α2 of σS1.2 (residues 72–82), σSNCR (residues 83–89), and helix α3 of σS2.1 (residues 90–93) is embedded into a shallow groove on Crl, and the nearby ‘specificity loop’ of σS2.3 (residues 133–141) is further anchored by Crl (Figure 2A–C; Figure 2—figure supplements 1–2). Several Crl residues (P21, Y22, C37, L38, C41, F53, F76, and W82) create a hydrophobic patch in the shallow groove and make van der Waals interactions with residues (Y78, F79, R81, R82, L84, and R85) of σS (Figure 2B and Figure 2—figure supplement 1B). Moreover, potential polar interactions between Crl (R24) and σS (D87) might also contribute to the interaction. The interface residues identified here recapitulate most of the hits in a previous genetic screen to identify interface residues of σS and Crl (Banta et al., 2014). Intriguingly, most evolutionarily conserved residues of Crl are clustered in the shallow groove, implicating a functional relevance of its interaction with σS (Figure 2G). Moreover, the Crl derivatives F53A and W82A rendered salmonella cells more sensitive to H2O2 stress (Monteil et al., 2010a), demonstrating the physiological importance of such an interface.
 
@@ -64,9 +88,29 @@ Our structure of Crl-TAC also explains the strict specificity of Crl to σS. Crl
 
 In agreement with the previous SPR results (England et al., 2008), the density of Crl also suggests possible interactions between Crl and the RNAP-β’ clamp domain (Figure 1D). The interface is relatively small and only involves residues S10 and R11 of the Crl N-terminal loop (Figure 2D). Deletion of the N-terminal loop of Crl shows only marginal effect on its activation of transcription (left panel of Figure 2F).
 
-## Crl stabilizes σS2 to facilitate the assembly of the σS-RNAP holoenzyme
+### Crl stabilizes σS2 to facilitate the assembly of the σS-RNAP holoenzyme
 
 It has been suggested that Crl may function as a σS chaperon to facilitate the assembly of the σS-RNAP holoenzyme (Banta et al., 2013). We confirm that Crl is able to increase (~3.8 fold) the binding affinity between σS and the RNAP core enzyme in a fluorescence polarization assay using fluorescein-labeled σS (Figure 3A). Moreover, an ‘R loop’-mutated derivative of Crl completely lost its effect on the assembly of the σS-RNAP holoenzyme, whereas deleting the N-terminal tail of Crl moderately affects this assembly (Figure 3B and Supplementary file 2), in agreement with our in vitro transcription results (Figure 2E–F). Such results further suggest that Crl facilitates the assembly of the σS-RNAP holoenzyme mainly through its interaction with σS rather than through its interaction with the RNA-β’ clamp.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/50928/elife-50928-fig3-v1.jpg)
+
+**Figure 3.:** (A) Crl increases binding affinity between RNAP and σS in a fluorescence polarization (FP) assay. (B) Deletion the ‘R’ loop but not the N-tail (ΔN-tail; deleting residue 1–11) abolishes the ability of Crl to promote the assembly of the σS-RNAP holoenzyme. (C) Hydrogen-to-deuterium exchange (HDX) profile of free σS after 10 s exposure to deuteron. Incorporation was mapped onto the cryo-EM structure of σS. The inset shows the color coding for different percentages of deuteron incorporation. (D) HDX changes for σS in the presence of Crl as compared to free σS, mapped on the cryo-EM structure of σS. The percentage difference in deuterium uptake values represents an average across all four time points, ranging from 10 s to 900 s. For heatmap color coding, pink, cyan, and gray indicate increase, decrease, and no significant change in HDX, respectively. Dark grey represents regions that were not consistently resolved in all HDX experiments. (E) Deuterium uptake plots and mass spectra of indicated peptides from helices α4 and α5 in the absence and presence of Crl. Left: the deuterium uptake data are plotted as percent deuterium uptake versus time on a logarithmic scale. Right: mass spectra of the indicated peptides at different labeling time points, with the mass spectra of undeuterated samples shown as controls. (F) Peak-width analysis at different time points for peptides from helices α4 and α5 reveal the existence of EX1 kinetics. (C–F) The HDX experiments were repeated at least twice. (G) σS2 regions with reduced HDX rate upon Crl binding, the colors are as in (D).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/50928/elife-50928-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) The relative deuteration levels (%D) of each peptide were calculated with the assumption that a fully deuterated sample retains 90% D in the current LC setting and plotted as a function of peptide position. The blue to red lines represent data acquired at 10 s up to 900 s deuteration. (B) Heat map of σS protein at different time points. The inset shows the color coding for different percentages of deuteron incorporation.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/50928/elife-50928-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A–D) Deuterium uptake plots, peak width plots and mass spectra of indicated peptides from σS2 in the absence and presence of Crl. Left: the deuterium uptake data are plotted as percent deuterium uptake versus time on a logarithmic scale. Middle: mass spectra of indicated peptides at different labeling time points, with the mass spectra of undeuterated samples shown as controls. Right: peak-width analysis at different time points for peptides covering helices α2–α5.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/50928/elife-50928-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** The deuterium uptake data are plotted as percent deuterium uptake versus time on a logarithmic scale.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/50928/elife-50928-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** The sequence coverage map for σs in the HDX-MS study. Green lines shown below the protein sequence represent the digested peptides identified and analyzed in this study.
 
 A previous report showed that Crl shifts the equilibrium towards σS-RNAP holoenzyme formation by promoting the association between σS and RNAP rather than by preventing the dissociation of the two (England et al., 2008). Such facts imply that Crl may stabilize σS in a conformation that is more accessible for the RNAP core enzyme. To investigate this hypothesis, we characterized the in-solution dynamic conformations of full-length σS using HDX-MS.
 
@@ -80,9 +124,15 @@ Intriguingly, increased protection from HDX was also observed for certain region
 
 Notably, α4 is one of the major anchor point on σS2 for the RNAP-β’ subunit (Figure 3G). Hence, the stabilizing effect rendered on helix α4 by Crl probably facilitates the docking of σS2 to the RNAP-β’ subunit for subsequent proper positioning of other domains onto the RNAP core enzyme, thereby promoting the assembly of functional σS-RNAP holoenzyme. Such a hypothesis is also supported by the increased rate of association that occurs during formation of σS-RNAP holoenzyme in the presence of Crl (England et al., 2008).
 
-## Crl stabilizes σS2 to assist in RPo formation
+### Crl stabilizes σS2 to assist in RPo formation
 
 A previous report suggested that Crl is also able to boost σS-mediated transcription at a step after σS-RNAP holoenzyme assembly (Bougdour et al., 2004; England et al., 2008). We here show that Crl increases the transcription activity of a pre-assembled σS-RNAP holoenzyme in an in vitro transcription assay (Figure 4A), supporting the previous finding.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50928/elife-50928-fig4-v1.jpg)
+
+**Figure 4.:** (A) Crl increases transcription by a pre-assembled σS-RNAP holoenzyme from the PosmY promoter in a concentration-dependent manner. (B) Crl promotes σS-RPo formation in a fluorescence stopped-flow experiment using Cy3-labeled λPR promoter DNA. (C) Crl promotes σS-RPo formation in a fluorescence stopped-flow experiment using 2AP-labeled λPR promoter DNA. (D) The KMO4 footprinting experiment result shows that Crl increases formation of the RPo complex. The osmY promoter dsDNA with 32P-labeled at the 5′-end of the non-template strand was used for the assay. The hyperactive T-stretch (−9 to −7) in the transcription bubble upon RPo formation is highlighted in red and labeled on the right. (E) The upstream promoter DNA is unwound by the W-dyad (W148 and W149), and the unwound A-11 nucleotide of the non-template strand DNA is recognized and stabilized by a protein pocket on σS2. (F) The ‘R’ loop of Crl stabilizes the conformation of the ‘specificity’ loop that forms the pocket for unwinding and recognizing the A-11 nucleotide of non-template strand promoter DNA.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50928/elife-50928-fig4-figsupp1-v1.jpg)
 
 To understand how Crl activates σS-mediated transcription beyond the assembly of σS-RNAP holoenzyme, we modified a stopped-flow fluorescence assay to monitor the potential effect of Crl on RPo formation using pre-assembled σS-RNAP holoenzyme or pre-assembled Crl-σS–RNAP complex. In the assay, a Cy3 fluorophore, which is attached to the +2 position of the non-template strand of λPR promoter DNA, is able to sense changes in the local environment upon promoter binding and unwinding (Figure 4—figure supplement 1). Such a technique has been employed to study the kinetics of RPo formation by E. coli σ70-RNAP holoenzyme and Mycobacterium tuberculosis σA-RNAP holoenzyme (Hubin et al., 2017). The Cy3 fluorescence slowly reaches a plateau when σS-RNAP holoenzyme alone is mixed with promoter DNA; importantly, the presence of Crl substantially increases the plateau fluorescence (Figure 4B). The results suggest that Crl probably also functions at the step of σS-RPo formation.
 
@@ -114,11 +164,343 @@ Our study provides the structural basis and molecular mechanism of an unpreceden
 
 ## Materials and methods
 
-## Plasmid construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Escherichia coli)</td>
+      <td>crl</td>
+      <td></td>
+      <td>Gene bank (7152411)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21(DE3)</td>
+      <td>Novo protein, China</td>
+      <td>V211-01A</td>
+      <td>Chemically competent cells</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-Crl (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression vector for E. coli Crl</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-EcsS (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression vector for E. coli sS</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-Crl (P21W) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression vector for E. coli Crl (P21W)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-Crl (Y22A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression vector for E. coli Crl (Y22A)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-Crl (R24A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression vector for E. coli Crl (R24A)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-Crl (L38A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression vector for E. coli Crl (L38A)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-Crl (R51A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression vector for E. coli Crl (R51A)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-Crl (F53A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression vector for E. coli Crl (F53A)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-Crl (F76A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression vector for E. coli Crl (F76A)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-Crl (ΔN-tail) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression vector for E. coli Crl (Δ1–11)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-Crl (ΔR-loop) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>pET-28a-TEV-Crl (ΔR-loop; residues 43–51 of Crl by a ‘GSGS’ linker)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-Crl (ΔN-tail /ΔR-loop) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression vector for E. coli Crl (ΔN-tail /ΔR-loop)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-EcσS(R81A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression vector for E. coli σS (R81A)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-EcσS (R82A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression vector for E. coli σS (R82A)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-EcσS (R85A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression vector for E. coli σS (R85A)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-EcσS (D135A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression vector for E. coli σS (D135A)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-EcσS (E137A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression vector for E. coliσS (E137A)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pET-28a-TEV-EcσS (A239C) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Protein expression vector for E. coli σS (A239C)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-Crl (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; Crl is fused to Gal4-AD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-Crl (P21W) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; Crl (P21W) is fused to Gal4-AD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-Crl (Y22A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; Crl (Y22A) is fused to Gal4-AD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-Crl (R24A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; Crl (R24A) is fused to Gal4-AD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-Crl (E25A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; Crl (E25A) is fused to Gal4-AD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-Crl (L38A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; Crl (L38A) is fused to Gal4-AD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-Crl (V44A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; Crl (V44A) is fused to Gal4-AD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-Crl (K45A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; Crl (K45A) is fused to Gal4-AD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-Crl (R51A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; Crl (R51A) is fused to Gal4-AD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-Crl (F53A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; Crl (F53A) is fused to Gal4-AD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-Crl (F76A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; Crl (F76A) is fused to Gal4-AD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGADT7-Crl (ΔR-loop) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; Crl (ΔR-loop) is fused to Gal4-AD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBKT7-σS2 (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; σS2(53–162) is fused to Gal4-BD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBKT7-σS2 (Y78A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; σS2 (Y78A) is fused to Gal4-BD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBKT7-σS2 (F79A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; σS2(F79A) is fused to Gal4-BD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBKT7-σS2 (R81A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; σS2 (R81A) is fused to Gal4-BD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBKT7-σS2 (R82A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; σS2 (R82A) is fused to Gal4-BD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBKT7-σS2 (R85A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; σS2 (R85A) is fused to Gal4-BD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBKT7-σS2 (R93A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; σS2 (R93A) is fused to Gal4-BD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBKT7-σS2 (D135A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; σS2 (D135A) is fused to Gal4-BD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pGBKT7-σS2 (E137A) (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid for yeast two-hybrid; σS2 (E137A) is fused to Gal4-BD</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pEasyT-PosmY (plasmid)</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Plasmid containing PosmY</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ezmax one-step cloning kit</td>
+      <td>Tolo Bio-tech, China</td>
+      <td>Cat#24305–01</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Ni-NTA agarose</td>
+      <td>smart-lifesciences, China</td>
+      <td>Cat#SA004100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>C-flat CF-1.2/1.3 400 mesh</td>
+      <td>Electron Microscopy Sciences</td>
+      <td>Cat#CF413-100</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmid construction
 
 DNA fragments containing E. coli crl and rpoS were amplified from E. coli genomic DNA and cloned into pET28a-TEV using the Ezmax one-step cloning kit (Tolo Bio-tech, China). Point mutations of crl or rpoS were generated through site-directed mutagenesis (Transgen biotech, Inc). pET-28a-TEV-Crl(ΔR-loop) was constructed by replacing residues 43–51 of Crl with a ‘GSGS’ linker. pGADT7-Crl and pGBKT7-σS2 were constructed using the Gateway LR clonase II (Invitrogen, Inc). The derivatives of pGADT7-Crl and pGBKT7-σS2 were generated through site-directed mutagenesis.
 
-## Protein preparation
+### Protein preparation
 
 The Ec RNAP core enzyme was overexpressed and purified from E. coli BL21(DE3) carrying pEcABC and pCDF-Ec rpoZ as described previously (Hudson et al., 2009).
 
@@ -126,15 +508,15 @@ The Ec Crl was overexpressed in E. coli BL21(DE3) cells (Novo protein, Inc) carr
 
 The Crl and σS derivatives were prepared by the same procedure.
 
-## Nucleic-acid scaffolds
+### Nucleic-acid scaffolds
 
 For Cryo-EM study, the DNA sequence of upstream half promoter (−36 to −7) was chosen on the basis of the nuclei-acid scaffold for obtaining the crystal structure of E. coli σS–RPo (Liu et al., 2016); whereas the DNA sequence of the downstream half promoter (−6 to +15) was chosen on the basis of the nuclei-acid scaffold for obtaining the crystal structure of σA–RPo (Zhang et al., 2012). The nucleic-acid scaffold was prepared by mixing synthetic non-template DNA, template DNA, and RNA at molar ratio of 1:1.2:1.5 and subjected to an annealing procedure (95°C, 5 min followed by 2°C-step cooling to 25°C) in annealing buffer (5 mM Tris-HCl [pH 8.0], 200 mM NaCl, and 10 mM MgCl2).
 
-## Complex reconstitution of E. coli Crl–TAC
+### Complex reconstitution of E. coli Crl–TAC
 
 The Crl–σS binary complex was prepared by incubating Crl and σS at a molar ratio of 2:1 and purified by using a Superdex 75 gel filtration column (GE Healthcare). The E. coli Crl–TAC was assembled by directly incubating the RNAP core enzyme, the Crl–σS binary complex, and the nucleic-acid scaffold at a molar ratio of 1:4:4 at 4°C overnight. The mixture was loaded onto a Superdex 200 gel filtration column (GE Healthcare) and eluted with 10 mM HEPES [pH 7.5], 50 mM KCl, 5 mM MgCl2, and 3 mM DTT. Fractions containing E. coli Crl–TAC were collected and concentrated to ~12 mg/ml.
 
-## Cryo-EM structure determination of E. coli Crl–TAC
+### Cryo-EM structure determination of E. coli Crl–TAC
 
 The E. coli Crl–TAC sample was freshly prepared as described above and mixed with CHAPSO (Hampton Research, Inc) to a final concentration 8 mM prior to grid preparation. About 4 μL of the complex sample was applied onto the glow-discharged C-flat CF-1.2/1.3 400 mesh holey carbon grids (Electron Microscopy Sciences) and the grid was plunge-frozen in liquid ethane using a Vitrobot Mark IV (FEI) with 95% chamber humidity at 10°C.
 
@@ -142,31 +524,37 @@ The data were collected on a 300 keV Titan Krios (FEI) equipped with a K2 Summit
 
 The crystal structure of E. coli σS–TIC (Kang et al., 2017)(PDB: 5IPL) and the crystal structure of P. mirabilis Crl (Cavaliere et al., 2014) (PDB: 4Q11) were manually fit into the cryo-EM density map using Chimera (Pettersen et al., 2004). Rigid body and real-space refinement was performed in Coot (Emsley and Cowtan, 2004) and Phenix (Adams et al., 2010).
 
-## Hydrogen–deuterium exchange mass spectrometry (HDX-MS) of σS
+### Hydrogen–deuterium exchange mass spectrometry (HDX-MS) of σS
 
 The HDX-MS was performed as recommended in Masson et al. (2019). Amide hydrogen exchange of σS alone was started by diluting 3 μl protein sample at 19 μM into 27 μl D2O buffer (20 mM Tris [pH 7.7], 150 mM NaCl, 1 mM tris(2-carboxyethyl)phosphine [TCEP]) at 20°C. At different time points (0 s, 10 s, 60 s, 300 s and 900 s), the labeling reaction was quenched by the addition of chilled quench buffer (200 mM KH2PO4/K2HPO4 [pH 2.2]) and the reaction mixture was immediately frozen in liquid nitrogen. For the HDX-MS of σS in the presence of Crl, 50 μL σS at 34 μM were first mixed with 40 μl Crl at 176 μM and incubated at room temperature for 1 hr. 3 μL mixture was then labeled by adding 27 μL D2O buffer before being quenched at the above time points and flash-frozen. All frozen samples were stored at −80°C until analysis.
 
 The thawed samples were immediately injected into an HPLC-MS (Agilent 1100) system equipped with in-line peptic digestion and desalting. The desalted digests were then separated with a Hypersil Gold C18 analytical column (ThermoFisher) over a 19 min gradient and directly analyzed with an Orbitrap Fusion mass spectrometer (ThermoFisher). The HPLC system was extensively cleaned with blank injections between samples to minimize any carryover. Peptides identification was performed by tandem MS/MS in the orbi/orbi mode. All peptides were identified using the Proteome Discoverer Software (ThermoFisher). We carried out the initial analysis of the peptide centroids with HD-Examiner v2.3 (Sierra Analytics) and then manually verified every peptide to check retention time, charge state, m/z range and the presence of overlapping peptides. The peptide coverage of σS were found to be 95.2% and the relative deuteration levels (%D) of each peptide were automatically calculated by HD-Examiner with the assumption that a fully deuterated sample retains 90% D in current LC setting.
 
-## Yeast two-hybrid assay
+### Yeast two-hybrid assay
 
 The GAL4-based yeast two-hybrid system (MATECHMAKER GAL4 two-hybrid system3, Clontech Laboratories, Inc) was used to analyze the protein-protein interaction according to the standard procedure. Briefly, wild-type or derivatives of EcCrl and EcσS2 were cloned into prey vector pGADT7 and the bait vector pGBKT7, respectively. The bait and prey vectors were transformed into Y187 and AH109 yeast cells, respectively. The haploid colonies of Y187 were mated with haploid prey colonies of AH109 in the YPDA medium for 24 hr, and the diploid yeast cells containing both bait and prey vectors were selected on SD (–Leu, –Trp) plates at 30°C for 48 hr. The colonies were inoculated into SD (–Leu, –Trp) medium and cultured at 30°C for 24 hr. The resulting cell suspensions with a series of dilution were spotted onto SD (–Leu, –Trp) and SD (–Ade, –His, –Leu, –Trp) plates, incubated at 30°C for 4–5 days. Positive colonies appear after 3 days on SD (–Ade, –His, –Leu, –Trp) plates and the plate images were taken 5–6 days after plating.
 
-## Fluorescence labeling
+### Fluorescence labeling
 
 The E. coli σS(A239C) was labeled with fluorescein at residues C239. The labeling reaction mixture (2 mL) containing σS (0.07 mM) and fluorescein-5-maleimide (0.7 mM; Thermo Scientific, Inc) in 10 mM Tris-HCl, pH 7.7), 100 mM NaCl, and 1% glycerol was incubated overnight at 4°C. The reaction was terminated by addition of 2 μL 1M DTT, and loaded onto a 5 mL PD-10 desalting column (Biorad, Inc). The fractions containing labeled protein was pooled and concentrated to 3 mg/mL. The labeling efficiency is estimated at ~70%.
 
-## Fluorescence polarization
+### Fluorescence polarization
 
-The reaction mixtures (100 μL) contain the fluorescein-labeled σS (4 nM; final concentration) with or without Crl (1 μM; final concentration) in FP buffer (10 mM Tris-HCl [pH 7.9], 300 mM NaCl, 1 mM DTT, 1% glycerol, and 0.025% Tween-20) were incubated for 10 min at room temperature. RNAP core enzyme (0 nM to 1024 nM; final concentration) was added and incubated for 10 min at room temperature. The FP signals were measured using a plate reader (SPARK, TECAN Inc) equipped with an excitation filter of 485/20 nm and an emission filter of 520/20 nm. The data were plotted in SigmaPlot (Systat software, Inc) and the dissociation constant Kd was estimated by fitting the data to the following equation:F=B[S]/(Kd+[S])+F0where F is the FP signal at a given concentration of RNAP, F0 is the FP signal in the absence of RNAP, [S] is the concentration of RNAP, and B is an unconstrained constant.
+The reaction mixtures (100 μL) contain the fluorescein-labeled σS (4 nM; final concentration) with or without Crl (1 μM; final concentration) in FP buffer (10 mM Tris-HCl [pH 7.9], 300 mM NaCl, 1 mM DTT, 1% glycerol, and 0.025% Tween-20) were incubated for 10 min at room temperature. RNAP core enzyme (0 nM to 1024 nM; final concentration) was added and incubated for 10 min at room temperature. The FP signals were measured using a plate reader (SPARK, TECAN Inc) equipped with an excitation filter of 485/20 nm and an emission filter of 520/20 nm. The data were plotted in SigmaPlot (Systat software, Inc) and the dissociation constant Kd was estimated by fitting the data to the following equation:
 
-## Stopped-flow assay
+$$
+F=B[S]/(Kd+[S])+F_{0}
+$$
+
+where F is the FP signal at a given concentration of RNAP, F0 is the FP signal in the absence of RNAP, [S] is the concentration of RNAP, and B is an unconstrained constant.
+
+### Stopped-flow assay
 
 The stopped-flow assay was performed essentially as in Feklistov et al. (2017). The Cy3-λPR promoter (−60 to + 53) with Cy3-amido-dT at position +2 of the non-template strand was prepared by PCR extending (−60 to + 53; Figure 4—figure supplement 1A). To monitor promoter melting, 60 μL pre-assembled Ec σs-RNAP holoenzyme or pre-assembled Ec σs-Crl-RNAP holoenzyme (200 nM; final concentration) and 60 μL Cy3-λPR promoter DNA (20 nM; final concentration) in 10 mM Tris-HCl [pH 7.7], 20 mM NaCl, 10 mM MgCl2, and 1 mM DTT were rapidly mixed, and the change of fluorescence was monitored in real time by a stopped-flow instrument (SX20, Applied Photophysics Ltd, UK) using an excitation wavelength of 519 nm (slit width = 9.3 nm) and a long-pass emission filter (570 nm).
 
 The 2AP-λPR promoter (−60 to + 53) with 2-amido purine at position −10 of the template strand was prepared by PCR extending (Figure 4—figure supplement 1B). To monitor the promoter melting, 60 μL pre-assembled Ec σs-RNAP holoenzyme or pre-assembled Ec σs-Crl-RNAP holoenzyme (400 nM; final concentration) and 60 μL Cy3-λ PR promoter DNA (100 nM; final concentration) in 10 mM Tris-HCl [pH 7.7], 20 mM NaCl, 10 mM MgCl2, and 1 mM DTT were rapidly mixed, and the change of 2-AP fluorescence was monitored in real time by a stopped-flow instrument (SX20, Applied Photophysics Ltd, UK) using an excitation wavelength of 309 nm (slit width 9.3 nm) and a long-pass emission filter (360 nm).
 
-## In vitro transcription assay
+### In vitro transcription assay
 
 The osmY promoter with a tR2 terminator was prepared by PCR amplification of the osmY promoter region (−107/+50 relative to the transcription start site) from E. coli genomic DNA using primers (forward primer: 5′–TTCCCTTCCTTATTAGCCGCTT−3′; reverse primer: 5′–AAATAAAAAGGCCTGCGATTACCAGCAGGCCCTGATATCTACGCATTGAACGG−3′). All of the in vitro transcription reactions were performed in transcription buffer (40 mM Tris-HCl [pH 7.9], 75 mM KCl, 5 mM MgCl2, 12.5% glycerol, and 2.5 mM DTT) in a 20 μl reaction mixture.
 
@@ -174,7 +562,7 @@ To study the effect of overall transcription activation by Crl, Crl (500 nM; fin
 
 To study the transcription activation of pre-assembled σs-RNAP holoenzyme by Crl, reaction mixture containing pre-assembled E. coli σs-RNAP (200 nM; final concentration) and Crl (0 nM to 1600 nM; final concentration) were incubated in transcription buffer for 10 min at 30°C, then promoter DNA (200 nM; final concentration) was added before the mixture was incubated for 10 min at 30°C for open complex formation. RNA synthesis was allowed by the addition of NTP mixture (30 μM ATP, 30 μM CTP, 30 μM GTP, 30 μM [α-32P]UTP [0.04 Bq/fmol] for each; final concentration) for 15 min at 30°C. The reactions were terminated by adding 5 μL loading buffer (8 M urea, 20 mM EDTA, 0.025% xylene cyanol, and 0.025% bromophenol blue), boiled for 2 min, and cooled down in ice for 5 min. The RNA transcripts were separated by 15% urea-polyacrylamide slab gels (19:1 acrylamide/bisacrylamide) in 90 mM Tris-borate (pH 8.0) and 0.2 mM EDTA, and analyzed by storage-phosphor scanning (Typhoon; GE Healthcare, Inc).
 
-## Potassium permanganate KMnO4 footprinting assay
+### Potassium permanganate KMnO4 footprinting assay
 
 The osmY promoter dsDNA with 32P-labeled at the 5′-end of non-template strand for the footprinting assay was prepared as follows. The pEasyT-PosmY was constructed by ligation of pEasy-Blunt and a dsDNA fragment containing osmY promoter DNA (−66/+27) followed by an EcoRI site, which was prepared by annealing synthetic non-template and template oligodeoxynucleotides (osmY-NT: 5′- CACTTTTGCTTATGTTTTCGCTGATATCCCGAGCGGTTTCAAAATTGTGATCTATATTTAACAAAGTGATGACATTTCTGACGGCGTTAAATAGAATTC-3′; osmY-T: 5′- GAATTCTATTTAACGCCGTCAGAAATGTCATCACTTTGTTAAATATAGATCACAATTTTGAAACCGCTCGGGATATCAGCGAAAACATAAGCAAAAGTG-3′). Subsequently, a dsDNA fragment of 520 bp containing osmY promoter (amplified from pEasyT-PosmY using forward primer 5′-CACTTTTGCTTATGTTTTC-3′ and reverse primer 5′-ACCCTAATCAAGTTTTTTGGGGTC-3′) was labeled with γ-32P-ATP (PerkinElmer, Inc) and T4 Polynucleotide Kinase (NEB, Inc) at 37°C for 1 hr, and purified using illustra MicroSpin G-25 columns (GE Healthcare, Inc). The labeled dsDNA was digested by EcoRI at 37°C for 1 hr, and separated by native PAGE electrophoresis. The final osmY promoter dsDNA with 32P-labeled at the 5′-end of the non-template strand was purified from the gel and quantified.
 
@@ -182,6 +570,6 @@ The reaction mixture (25 μl) containing pre-assembled E. coli σs-RNAP (200 nM;
 
 The A+G marker was prepared essentially as in Ross and Gourse (2009). Briefly, 12 μl 32P-labeled PosmY (20 nM; final concentration) was incubated with 50 μl formic acid at room temperature for 7 min. The depurinated DNA was precipitated and rinsed with 100% ethanol. The pellet was then resuspended in 100 μl 1 M piperidine and heated at 90°C for 30 min. The cleaved DNA was precipitated with 100% (v/v) ethanol, washed with 75% ethanol, air-dried, and resuspended in 20 μl loading buffer. The sample was then boiled for 2 min and loaded onto a 15% urea-polyacrylamide slab gel.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 All biochemical assays were performed at least three times independently. Data were analyzed with SigmaPlot 10.0 (Systat Software Inc).

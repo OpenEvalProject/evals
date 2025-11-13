@@ -33,35 +33,83 @@ Several studies have documented fertility defects in C. elegans mitochondrial mu
 
 ## Results
 
-## Mutation in mitochondrial alh-6 results in diet-independent reduction in fertility
+### Mutation in mitochondrial alh-6 results in diet-independent reduction in fertility
 
 Altered mitochondrial structure and activity have been correlated with sperm dysfunction across different species (Liau et al., 2007; Amaral et al., 2013; Ramalho-Santos and Amaral, 2013; Nakada et al., 2006). In addition, proper sperm function requires low levels of ROS (de Lamirande and Gagnon, 1993; Kodama et al., 1996; Leclerc et al., 1997), although a specific role for endogenous mitochondrial derived ROS is undefined. ALH-6/ALDH4A1, is a nuclear-encoded mitochondrial enzyme that functions in the second step of proline catabolism, converting 1-pyrroline-5-carboxylate (P5C) to glutamate (Figure 1A). We anticipated that mutation of alh-6 may affect the germline, based on our previous assessment of the premature aging phenotypes in somatic cells of alh-6 mutants (Pang and Curran, 2014). Using an UV-integrated alh-6::gfp strain under its endogenous promoter, we saw that ALH-6 localizes to the mitochondria in the germline of both hermaphrodites and males (Figure 1—figure supplement 1). We then assessed progeny output of alh-6(lax105) hermaphrodites fed the standard OP50/E. coli B strain diet and found a reduction in self-fertility brood size (−12.9%) (Figure 1B). Since the somatic phenotypes of alh-6(lax105) mutants are known to be diet-dependent (Pang et al., 2014; Pang and Curran, 2014), we examined self-fertility of animals fed the HT115/E. coli K-12 strain diet to determine if the reduced reproductive output is also dependent on the type of bacterial diet ingested. Surprisingly, we found that the self-fertility of alh-6 animals was markedly reduced (−20.7%), when animals were fed the HT115 diet (Figure 1C). alh-6 mutants have similar timing in their progeny output as compared to wild type animals on both diets (Figure 1—figure supplement 2). Since alh-6 mutants display normal development and reproductive timing, the progeny deficit is not a result of an attenuated reproductive span which reveals the differential impact of alh-6 loss in the soma (diet-dependent) (Pang and Curran, 2014) and the germline (diet-independent).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/52899/elife-52899-fig1-v2.jpg)
+
+**Figure 1.:** (A) Proline catabolism pathway. (B–C) alh-6 hermaphrodites have reduced brood size when fed OP50 (B) or HT115 (C) diets. (D) alh-6 hermaphrodites lay increased number of unfertilized oocytes, but few dead embryos. (E) Mated reproductive assay scheme utilizes males to maximize reproductive output (as in F) and can exploit males harboring GFP to differentiate progeny resulting from self- versus male-sperm (as in G). (F) Wild type (WT) and alh-6 hermaphrodites mated with WT males yield similar number of total progeny. (G) WT hermaphrodites mated with alh-6;gst-4p::gfp males yield more non-GFP progeny (indicating self-fertilization) than hermaphrodites mated with WT males harboring gst-4p::gfp. Statistical comparisons by unpaired t-test. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001. All studies performed in at least biological triplicate; refer to Supplementary file 1 for n for each comparison.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52899/elife-52899-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** UV integrated alh-6::gfp strain under its endogenous promoter reveals expression of ALH-6 in hermaphrodite (A–B) and male (C–D) germline. a and c are DIC images while b and d are GFP images. Scale bar for all images is 10µm.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/52899/elife-52899-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A–B) Progeny output time-courses are plotted as % total progeny for each time point. WT and alh-6 mutant have similar output on OP50 (A) and HT115 (B). Significance indicate differences in progeny output at a particular time point done by multiple t-tests. *, p<0.05; *F*, p<0.01; ***, p<0.001; ****, p<0.0001. All studies performed in biological triplicate; refer to Supplementary file 1 for n for each comparison.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/52899/elife-52899-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Day four adult WT hermaphrodites mated to either gst-4p::gfp or alh-6;gst-4p::gfp males yield similar total brood size. (B) Day four adult alh-6 hermaphrodites mated to either gst-4p::gfp or alh-6;gst-4p::gfp males yield similar total brood size. Comparisons made with unpaired t-test. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001. All studies performed in biological triplicate; refer to Supplementary file 1 for n for each comparison.
 
 We noted that alh-6 mutant hermaphrodite animals laid twice as many unfertilized oocytes as wild type animals over their reproductive-span (Figure 1D), suggesting an impairment of sperm function (McCarter et al., 1999; Ward and Miwa, 1978; Argon and Ward, 1980). It is notable that alh-6 mutant hermaphrodites lay very few, if any, dead eggs (Figure 1D), suggesting that the loss of ALH-6 activity is not lethal. To determine whether the reduced brood size of alh-6 mutants are due to a general loss of germ cells or a specific defect in oocytes or sperm, we examined the mated-fertility of these animals by mating wild type young adult (day 0–1) males to either wildtype or alh-6 mutant virgin hermaphrodites (in wild type C. elegans, male sperm outcompetes hermaphrodite sperm >99% of the time (Ward and Carrel, 1979; LaMunyon and Ward, 1995; Figure 1E). We found that the reduced fertility in alh-6 mutant hermaphrodites is fully rescued by wild type sperm, which confirmed that oocyte quality is not impaired but rather, alh-6 hermaphrodite sperm appears to be dysfunctional (Figure 1F).
 
 To better assess the quality of alh-6 mutant sperm, we compared the ability of alh-6 mutant male sperm to compete against wild type hermaphrodite sperm (Singson et al., 1999). In C. elegans wild type animals, male sperm are larger and faster than hermaphrodite sperm, which affords a competitive advantage (LaMunyon and Ward, 1998). To differentiate between progeny resulting from mating and progeny that arise from hermaphrodite self-fertilization, we made use of male animals harboring a GFP transgene such that any cross-progeny will express GFP while progeny that arise from hermaphrodite self-sperm will not (Figure 1E). We found that wild type hermaphrodites when mated to alh-6 mutant males have significantly more self-sperm-derived progeny as compared to those mated to wild type males (Figure 1G). This finding indicates a competition deficit of alh-6 male sperm resulting in this increased proportion of progeny derived from hermaphrodite sperm, which is uncommon after mating has occurred (Ward and Carrel, 1979). C. elegans hermaphrodites produce a set amount of sperm exclusively at the L4 developmental stage, before switching exclusively to oogenesis. As such, hermaphrodites eventually deplete their reservoir of sperm (Hirsh et al., 1976; Ward and Carrel, 1979). To assess whether alh-6 mutant sperm are generally dysfunctional, we mated older hermaphrodites that had depleted their complement of self-sperm and found that alh-6 mutant males are able to produce equal numbers of progeny as wild type males when the need for competition with hermaphrodite sperm is abated (Figure 1—figure supplement 3A); thus, although alh-6 mutant sperm are impaired for competition, they remain viable for reproduction. Similarly, older sperm-depleted alh-6 mutant hermaphrodites produced similar brood sizes when mated to young wild type or alh-6 mutant males, which further supports a model where sperm, but not oocytes, are defective in alh-6 mutants (Figure 1—figure supplement 3B). Taken together, these data suggest that while alh-6 mutant male sperm remain competent for fertilization, their competitive advantage is impaired when challenged against hermaphrodite sperm.
 
-## Defects in mitochondrial proline catabolism impact sperm quality
+### Defects in mitochondrial proline catabolism impact sperm quality
 
 Similar to mammals, the contribution of sperm to fertility in C. elegans is dictated by distinct functional qualities, which include: sperm number, size, and motility (Ward and Miwa, 1978; LaMunyon and Ward, 2002; LaMunyon and Ward, 1998; Singson et al., 1999). We next sought to define the nature of the sperm competition defect in alh-6 mutants by measuring sperm number, size, and motility in alh-6 mutants compared to wild type animals. One day after the onset of spermatogenesis (at the L4 larval stage of development), alh-6 adult hermaphrodites have a reduced number of sperm in the spermatheca as compared to wild type (Figure 2—figure supplement 1A), which is correlated with the reduced self-fertility observed (Figure 1B–C). In contrast, age-matched alh-6 mutant virgin males have similar numbers of spermatids as WT virgin males, suggesting that they have a similar rate of production (Figure 2A). We next examined sperm size in day one adult males and discovered that alh-6 mutant spermatids are significantly smaller as compared to wild type (Figure 2B). To achieve motility, C. elegans spermatids must form a pseudopod which requires protease activation (Ward et al., 1983; Figure 2—figure supplement 1B). Sperm activation can be recapitulated in vitro by treatment of isolated spermatids with the Streptomyces griseus protease Pronase (Shakes and Ward, 1989). After 30 min of Pronase treatment, 80% of wildtype spermatids are fully activated, while a significantly reduced population of alh-6 mutant spermatids mature over the same time period (Figure 2C). The reduction in activation, as measured by the presence of a fully extended pseudopod, in alh-6 mutant spermatids is correlated with an increase in the number of cells observed at the normally transient intermediate stage of spermiogenesis characterized by the presence of ‘spikes’ (Figure 2—figure supplement 1B–C; Shakes and Ward, 1989). We observed a similar impairment in activation of alh-6 mutant spermatids when treated with the cationic ionophore Monensin (Figure 2—figure supplement 1D–E), except that alh-6 mutant spermatids were stalled at the ‘protrusion’ intermediate stage of spermiogenesis (Nelson and Ward, 1980). Future studies to reveal where and how mitochondrial proline catabolism integrates into specific stages of spermiogenesis will be of great interest (Shakes and Ward, 1989).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/52899/elife-52899-fig2-v2.jpg)
+
+**Figure 2.:** (A–C) sperm phenotypes on OP50 diet. (A) Sperm quantity is similar between wild type (WT) and alh-6 mutant day one adult males. (B) Spermatid size is reduced in alh-6 mutant day one adult males as compared to age matched WT males. (C) Sperm activation is impaired in alh-6 mutant day one adult males relative to age-matched WT males. (D–F) sperm phenotypes on HT115 diet. (D) Sperm quantity is reduced in alh-6 mutant day one adult males compared to age-matched WT males. (E) Spermatid size is reduced in alh-6 mutant day one adult males as compared to age matched WT males fed HT115. (F) Sperm activation is impaired in alh-6 mutant day one adult males relative to age-matched WT males fed HT115. Statistical comparisons of sperm number and size by unpaired t-test and sperm activation by Fisher’s exact test. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001. All studies performed in at least biological triplicate; refer to Supplementary file 1 for n for each comparison.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52899/elife-52899-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) alh-6 hermaphrodites have reduced sperm number as day one adults. (B) Spermiogenesis stages (round, spike, protrusion, pseudopod). Spermatozoa with fully formed pseudopods are considered activated in Pronase and Monensin experiments. (C) alh-6 male spermatids treated with Pronase are stalled at the ‘spikes’ stage compared to WT male spermatids. (D) alh-6 male spermatids treated with Monensin have reduced activation compared to WT male spermatids. (E) alh-6 male spermatids treated with Monensin are stalled at the ‘protrusion stage’ compared to age-matched WT spermatids. Statistical comparisons of sperm number by unpaired t-test and sperm activation by Fisher’s exact test. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001. All studies performed in at least biological triplicate; refer to Supplementary file 1 for n for each comparison.
+
 Interestingly, although sperm number was the same between WT and alh-6 mutant males on the OP50 diet, sperm number was reduced in alh-6 mutant males fed HT115 diet compared to age-matched WT males on the same diet (Figure 2D). We also noted that spermatids from alh-6 mutant males raised on the HT115 diet were similarly defective in size and activation (Figure 2E–F). Taken together, although diet can influence sperm number, the reduction of sperm size and activation are likely contributors to the reduced fertility and competitive fitness in alh-6 mutant males; which is independent of diet.
 
-## Transcriptional signatures define temporal phenotypes of alh-6 mutant animals
+### Transcriptional signatures define temporal phenotypes of alh-6 mutant animals
 
 We first identified alh-6 mutant in a screen for activators of the cytoprotective transcription factor SKN-1/NRF2 using gst-4p::gfp as a reporter (Pang and Curran, 2014; Pang et al., 2014). When activated, SKN-1 transcribes a variety of gene targets that collectively act to restore cellular homeostasis. However, this can come with an energetic cost with pleiotropic consequences (Blackwell et al., 2015; Paek et al., 2012; Glover-Cutter et al., 2013; An and Blackwell, 2003; Lynn et al., 2015; Palikaras et al., 2015; Pang et al., 2014; Pang and Curran, 2014). alh-6 mutants have normal development, but display progeroid phenotypes towards the end of the normal reproductive span (Pang and Curran, 2014) indicating a temporal switch in phenotypic outcomes. We reasoned that the temporally controlled phenotypes in the alh-6 mutants could be leveraged to identify potential mechanisms by which alh-6 loss drives cellular dysfunction. As SKN-1 is activated in alh-6 mutants after day 2 of adulthood (Pang and Curran, 2014), we defined genes that display differentially altered expression in the L4 developmental stage, when spermatogenesis occurs, as compared to day three adults (post SKN-1 activation). We performed RNA-Seq analyses of worms with loss of alh-6 and identified 1935 genes in L4 stage animals and 456 genes in day three adult animals that are differentially expressed (+/- Log2 (fold change), 0.05 FDR) (Figure 3—figure supplement 1A–B). Notably, the gene expression changes at these two life periods had distinct transcriptional signatures (Figure 3A–B). Because the loss of alh-6 drives compensatory changes in normal cellular metabolism, which later in life results in the activation of SKN-1, we expected to identify significant changes in both metabolic genes and SKN-1 target genes. Supporting this hypothesis, the Gene Ontology (GO) terms most enriched include oxidoreductases and metabolic enzymes in L4 stage animals (Figure 3A) and SKN-1-dependent targets such as glutathione metabolism pathway genes in day three adults (Figure 3B). Importantly, our transcriptomic analysis recapitulated the temporally-dependent phenotypic outcomes resulting from alh-6 loss; genes in the pseudopodium and germ plasm GO terms class displayed reduced expression in L4 alh-6 mutant animals (Figure 3A), which include many genes in the major sperm protein (MSP) family that comprises 15% of total protein content in C. elegans sperm and impact sperm function (Klass and Hirsh, 1981). In contrast, genes in the muscle-specific GO term class displayed increased expression in day three adults (Figure 3B), which is when activation of the SKN-1 reporter is enhanced in the muscle of alh-6 mutants (Pang et al., 2014). Taken together, the transcriptomic analysis of alh-6 mutants is diagnostically relevant and informative for defining drivers of organism-level phenotypic changes in animals with altered proline catabolism.
 
-## FAD mediates sperm functionality and competitive fitness
+![Figure 3.](https://cdn.elifesciences.org/articles/52899/elife-52899-fig3-v2.jpg)
+
+**Figure 3.:** Gene Ontology (GO) term enrichment analysis of RNA-Seq data. (A) Transcriptional changes at L4 stage are enriched for metabolism and sperm-specific genes. (B) Transcriptional changes at day three adulthood are enriched for changes in glutathione activity, oxidoreductase activity, and muscle-specific genes. All studies performed in at least biological triplicate; refer to Supplementary file 1 for n for each comparison.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52899/elife-52899-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Number of genes that are significantly upregulated in alh-6(lax105) compared to WT at L4 and Day three adult stages. (B) Number of genes that are significantly downregulated in alh-6(lax105) compared to WT at L4 and Day three adult stages. FDR = 0.05. (C) alh-6 mutants display increased expression of metabolic enzymes to reduce P5C levels. All studies performed in biological triplicate; refer to Supplementary file 1 for n for each comparison.
+
+### FAD mediates sperm functionality and competitive fitness
 
 The strong enrichment of genes whose protein products utilize and/or bind cofactors or co-enzymes was intriguing as the maintenance of metabolic homeostasis and the redox state of the cell requires a sophisticated balance of multiple cofactors (Figure 4A). In fact, the proline catabolism pathway utilizes multiple cofactors to generate glutamate from proline; PRDH-1 uses FAD as a co-factor to convert proline to P5C while ALH-6 utilizes the reduction of NAD+ to convert P5C to glutamate. Additionally, in the absence of ALH-6, accumulation of P5C, the toxic metabolic intermediate of proline catabolism, drives the expression of pathways to detoxify P5C (oxidoreductases, P5C reductase, etc.) (Figure 3, Figure 3—figure supplement 1C). Although enzymes in the proline catabolism pathway utilize FAD as a cofactor, the transcriptional signature of the alh-6 mutants includes the activation of multiple enzymes that utilize FAD, which drove the hypothesis that FAD levels might be altered in alh-6 mutants. We measured FAD and found a significant reduction in alh-6 mutant animals fed the OP50 diet at the L4 stage (Figure 4B) and a similar reduction in animals fed HT115 bacteria at L4 stage (Figure 4C). Differences in FAD levels were unremarkable in day three adult animals, when spermatogenesis has long since ended (Figure 4—figure supplement 1A). Based on this finding, we predicted that restoration of FAD levels might alleviate the sperm-specific phenotypes of alh-6 mutants. Riboflavin is a precursor of FAD (Figure 4D) and dietary supplementation of riboflavin has been shown to increase cellular FAD levels in wild-type animals (Burch et al., 1956; Redondo et al., 1975). Similarly, riboflavin supplementation to the OP50 diet of alh-6 mutants restored FAD levels to wild-type levels (Figure 4E). We found that wild type hermaphrodites mated to alh-6 mutant males fed a riboflavin supplemented diet produced significantly more total progeny than alh-6 males fed the standard OP50 diet (Figure 4—figure supplement 1B). Moreover, riboflavin supplementation was sufficient to partially restore male sperm size (Figure 4F) and also rescued the impaired activation (Figure 4G) of male sperm in alh-6 mutants. Riboflavin supplementation increases sperm size in WT males, but do not change sperm activation in WT males (Figure 4—figure supplement 1C–D).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/52899/elife-52899-fig4-v2.jpg)
+
+**Figure 4.:** (A) Metabolic pathways utilize adenine dinucleotide cofactors to maintain redox balance in cells. (B–C) FAD+ levels are reduced in alh-6 mutant animals fed OP50 (B) or HT115 (C) at the L4 developmental stage. (D) FAD biosynthetic pathway. (E–G) Dietary supplement of riboflavin restores FAD level (E), sperm size (F), and sperm activation (G) in alh-6 mutants. (H–I) RNAi knockdown of R10H10.6 (H) or flad-1 (I) in WT males reduces their sperm size compared to L4440 vector control. (J–K) RNAi knockdown of R10H10.6 (J) or flad-1 (K) in WT males impairs sperm activation upon Pronase treatment. Statistical comparisons of sperm size by ANOVA. Statistical comparisons of activation by fisher’s exact test with p-value cut-off adjusted by number of comparisons. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001. All studies performed in biological triplicate; refer to Supplementary file 1 for n for each comparison.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52899/elife-52899-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) FAD levels are unchanged between WT and alh-6 mutant animals fed OP50 at day three adulthood. (B) WT hermaphrodites mated to alh-6;gst-4p::gfp males fed OP50 supplemented with 2.5 mM riboflavin results in increase in total brood size compared to WT hermaphrodites mated to non-supplemented alh-6;gst-4p::gfp males. (C) Dietary riboflavin supplement increased spermatid size of WT males. (D) WT males fed OP50 diet supplemented with riboflavin have similar % spermatid activated upon Pronase treatment as those without riboflavin supplement. (E) R10H10.6 one expression is modestly reduced by whole animal RNAi via RT-PCR verification. (F) flad-1 expression is reduced by whole animal RNAi via RT-PCR verification. (G) NAD levels are unchanged between WT and alh-6 animals at L4 and day three adulthood (H) NADH level is unchanged between aged matched WT and alh-6 hermaphrodites at both L4 and Day three adulthood. (I) NAD+/NADH level is unchanged between aged matched WT and alh-6 hermaphrodites at both L4 and Day three adulthood. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001. Statistical comparisons done by unpaired t-test for all experiments except for sperm activation, which is done by Fischer’s exact test. All studies performed in biological triplicate; refer to Supplementary file 1 for n for each comparison.
 
 We next asked whether FAD metabolism was required for proper sperm function. FAD can be synthesized de novo by a two-step enzymatic reaction where riboflavin is converted to FMN by Riboflavin Kinase/R10H10.6, which is subsequently converted to FAD by FAD Synthase/FLAD-1 (Figure 4D). We used RNA interference (RNAi) against R10H10.6 or flad-1 in wild-type male animals and measured sperm quality. Similar to alh-6 mutant sperm, RNAi reduction of the FAD biosynthetic pathway decreased sperm size (Figure 4H and I, Figure 4—figure supplement 1E–F) and impaired sperm activation (Figure 4J and K, Figures Figure 4—figure supplement 1E–F).
 
 NAD+ and NADH are also central adenine dinucleotide cofactors that play critical roles in metabolism and have received recent attention as a method to combat the decline seen in biological function with age (Guarente, 2016). As such, we also measured NAD and NADH levels, but found the ratio unremarkable between wild-type and alh-6 mutant animals (Figure 4—figure supplement 1G–I). Taken together, these data suggest that loss of alh-6 leads to a specific decrease in cellular FAD levels and that FAD is a critical cofactor that drives proper sperm function.
 
-## Mitochondrial dynamics regulate spermatid function
+### Mitochondrial dynamics regulate spermatid function
 
 Although there is a clear and documented role for mitophagy in the clearance of paternal mitochondria post-fertilization in C. elegans, the role(s) for mitochondrial dynamics and turnover in sperm function prior to zygote formation are unclear. We first examined mitochondrial dynamics in wild type spermatids by staining with the fluorescent mitochondrial-specific dye JC-1, and noted that each spermatid on average contained multiple discernable spherical mitochondria that are mostly not fused (Figure 5A, B and E). Previous studies in yeast and cultured mammalian cells have shown that when cells are exposed to mild stress, the initial response of mitochondria is to fuse in order to dilute damage (Tondera et al., 2009; Gomes et al., 2011; Rambold et al., 2011).
+
+![Figure 5.](https://cdn.elifesciences.org/articles/52899/elife-52899-fig5-v2.jpg)
+
+**Figure 5.:** (A–E) JC-1 dye stained mitochondria of WT (A–B), alh-6 mutant (C–D); (B and D) are ImageJ detection of JC-1 stained sperm mitochondria area which are quantified in (E). (F) Mitochondria in alh-6 mutant spermatids have reduced JC-1 red/green fluorescence ratio, indicating mitochondria depolarization. (G–H) RNAi knockdown of FAD biosynthetic pathway genes, R10H10.6 (G) or flad-1 (H) increases mitochondrial fusion in WT spermatids. (I) Dietary supplement of FAD precursor riboflavin restores mitochondrial fusion in alh-6 spermatids to WT level. (J–K) eat-3 or fzo-1 RNAi decreases mitochondrial fusion in both WT (J) and alh-6 (K) mutant spermatids. (L) drp-1 mutation increases mitochondrial fusion in both WT and alh-6 spermatids. (M) drp-1 mutation significantly impairs sperm activation in both WT and alh-6 mutant spermatids. (N) fzo-1 RNAi restores sperm activation in alh-6 mutant. (O) eat-3 RNAi reduces sperm activation in WT males but not alh-6 males. Statistical comparisons of JC-1 Red/Green FL ratio by unpaired t-test. Statistical comparisons of mitochondria fusion by ANOVA. Statistical comparisons of sperm activation by Fisher’s exact test with p-value cut-off adjusted by number of comparisons. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001. All studies performed in at least biological triplicate; refer to Supplementary file 1 for n for each comparison.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/52899/elife-52899-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) JC-1 stained alh-6 spermatid mitochondria show sensitivity to mitochondrial uncoupler CCCP treatment. Intensity of red mitochondria species (J-aggregates) are dissipated while that of green mitochondria species (monomers) are intensified, indicating membrane depolarization (Note that CCCP treatment is known to cause cellular swelling). Scale bar = 1 uM. (B) alh-6 spermatid mitochondria stained with MitoTracker Red CMXRos show increased fusion compared to WT male spermatids. Scale bar = 0.5 uM. (C) Spermatids of alh-6 males fed HT115 diet still display increased mitochondrial fusion compared to spermatids of age-matched WT males. (D) Riboflavin supplementation did not alter mitochondria fusion in spermatids of WT males. (E) eat-3 and fzo-1 RNAi knockdown in WT and alh-6 mutants are verified using RT-PCR. (F) fzo-1 expression is increased in alh-6 mutants, while eat-3 expression is not significantly increased. Statistical comparisons done by unpaired t-test. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001. All studies performed in biological triplicate; refer to Supplementary file 1 for n for each comparison.
 
 The mitochondrial specific dye JC-1 accumulates in mitochondria in a membrane potential-dependent manner, and as the concentration increases, its fluorescence switches from green to red emission. The accumulation of sufficient JC-1 molecules required for red emission is abolished by treatment with Carbonyl cyanide m-chlorophenyl hydrazone (CCCP), a chemical inhibitor of mitochondrial oxidative phosphorylation (Figure 5—figure supplement 1A). Therefore, a higher red-to-green fluorescence ratio in cells is indicative of healthier mitochondria species and as such, we characterized mitochondria with red JC-1 emission in our analyses of connectivity in spermatids. alh-6 mutant spermatids have reduced red:green JC-1 fluorescence that indicates a lower mitochondrial membrane potential and an accumulation of unhealthy mitochondria (Figure 5F; Smiley et al., 1991). Moreover, alh-6 mutant spermatids have mitochondria that were more interconnected (Figure 5C–E) as compared to wild type spermatids and a similar increase in connectivity was observed when mitochondria were visualized with the membrane potential-dependent mitochondrial dye Mitotracker Red CMXRos (Figure 5—figure supplement 1B). The increase in fused mitochondria in spermatids was also present in animals fed the HT115 diet, which further supports a diet-independent role for alh-6 in the germline (Figure 5—figure supplement 1C).
 
@@ -69,9 +117,17 @@ A connection between mitochondrial dynamics (fusion and fission) and FAD homeost
 
 The role of mitochondrial dynamics in the maturation of sperm has not been studied; however recent work has revealed that the mitochondrial fusion and fission machinery are important for the elimination of paternal mitochondria post-fertilization (Wang et al., 2016). FZO-1 is required for proper fusion of the mitochondrial outer membrane while EAT-3/OPA1 regulates inner membrane fusion. In opposition to the activities of FZO-1 and EAT-3, DRP-1 is required for mitochondrial fission (Smirnova et al., 2001; Lima et al., 2018). The balance of this fusion and fission machinery in the upkeep of mitochondrial homeostasis allows cells to respond to changes in metabolic needs and external stress (van der Bliek et al., 2017; Shaw and Nunnari, 2002). RNAi of fzo-1 or eat-3 reduced mitochondrial fusion in wild-type male sperm (Figure 5J and Figure 5—figure supplement 1E) and suppressed the enhanced fusion observed in alh-6 mutant spermatid mitochondria (Figure 5K); indicating mitochondrial fusion of both membranes is active in spermatids with impaired proline catabolism. We next examined spermatids from drp-1 mutant animals and observed a greater level of mitochondrial fusion as compared to wild type and alh-6 mutant spermatids (Figure 5L). We also observed a synergistic level of mitochondrial fusion in spermatids derived from alh-6; drp-1 double mutants. This finding is consistent with previous studies in yeast which reveal that defects in fusion can be compensated for by changes in the rates of fission and vice versa (Shaw and Nunnari, 2002; van der Bliek et al., 2017). In support of our model where mitochondrial dynamics act as a major driver of the sperm-specific defects in alh-6 mutants, we discovered that loss of drp-1, which results in increased mitochondrial fusion (like that observed in alh-6 mutants), also reduces sperm activation (Figure 5M). Moreover, reducing fzo-1 or eat-3 does not alter activation in wild type sperm, while fzo-1 but not eat-3 RNAi restores activation in alh-6 sperm (Figure 5N–O and Figure 5—figure supplement 1E), suggesting increased fusion mediated predominantly by fzo-1 in alh-6 sperm mitochondria is impairing proper function. We noted that alh-6 mutant animals have an increased expression of fzo-1 transcripts that is suggestive of a retrograde signaling response from the mitochondria (Figure 5—figure supplement 1F). Taken together, these data support a model where loss of mitochondrial proline catabolism induces mitochondrial stress, activating mitochondrial fusion, in order to dilute damage to preserve functional mitochondria at the cost of sperm function. These data also reveal a functional role for mitochondrial fusion and fission in spermatid development and sperm function.
 
-## alh-6 and FAD are cell autonomous regulators of sperm function
+### alh-6 and FAD are cell autonomous regulators of sperm function
 
 Signaling between germ and somatic cells can alter function in each cell type (Ghazi et al., 2009; Curtis et al., 2006; Greenwald, 1989; Berman and Kenyon, 2006; Libina et al., 2003; Lin et al., 2001; Hsin and Kenyon, 1999). In light of the differences between somatic and germline phenotypes observed in alh-6 mutant animals, we performed germline specific RNAi targeting alh-6 to deduce whether the sperm defects observed were cell autonomous. Germline specific RNAi of alh-6 in wild-type males was not sufficient to alter sperm size (Figure 6A), but did result in diminished sperm activation (Figure 6B,) and increased mitochondrial fusion in sperm (Figure 6C). Similarly, RNAi of alh-6 only in the soma resulted in a minor reduction of spermatid size (Figure 6—figure supplement 1A), but did not phenocopy the impairment of sperm activation as observed in alh-6 mutants (Figure 6—figure supplement 1B). Taken together, these findings suggest that somatic expression of alh-6 can influence spermatid size while the influence of alh-6 on spermatid activation is cell autonomous.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/52899/elife-52899-fig6-v2.jpg)
+
+**Figure 6.:** (A–C) Germline-specific RNAi of alh-6 does not change sperm size (A), but does impair sperm activation (B) and increases mitochondrial fusion in sperm (C). (D–F) Germline-specific rescue of WT alh-6 in alh-6 mutant male animals increases sperm size (D) and restores activation (E) and mitochondrial dynamics (F). Statistical comparisons of sperm size and mitochondrial fusion in spermatids by unpaired t-test. Similarly, (G–L) germline-specific RNAi of R10H10.6 and flad-1 do not change sperm size (G,J), impair sperm activation (H,K), and increase mitochondrial fusion in sperm (I,L). Statistical comparisons of sperm activation by Fisher’s exact test with p-value cut-off adjusted by number of comparisons. *, p<0.05; **, p<0.01; ***, p<0.001; ****, p<0.0001. All studies performed in biological triplicate; refer to Supplementary file 1 for n for each comparison.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52899/elife-52899-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A–B) Soma-restricted RNAi of alh-6 slightly reduces sperm size (A), but does not affect sperm activation (B). (C–F) Whole animal RNAi of alh-6 reduces sperm size (C), impairs activation (D), and increases mitofusion in spermatids (E). (F) alh-6 expression is reduced by whole animal RNAi as shown in RT-PCR verification. Statistical comparisons done by unpaired t-test for all experiments except for sperm activation, which is done by Fischer’s exact test. All studies performed in biological triplicate; refer to Supplementary file 1 for n for each comparison.
 
 Next, we restored wild-type alh-6 expression, only in the germline, in alh-6 mutant animals, which restored sperm size in one of the two transgenic lines (Figure 6D), activation (Figure 6E) and mitochondrial dynamics (Figure 6F), as compared to non-transgenic siblings. We conclude that the effects of loss of alh-6 on sperm function (activation and mitochondria) are cell autonomous because germline specific RNAi could phenocopy the sperm defects observed in whole animal loss of alh-6, while RNAi of alh-6 only in the somatic tissues could not. In contrast, the effect of alh-6 on sperm size is non-cell autonomous and requires somatic input (Figure 6—figure supplement 1C–F).
 
@@ -82,8 +138,6 @@ Since FAD functions in a variety of essential cellular processes, we next asked 
 Here we investigate the effects of disrupting mitochondrial proline catabolism through the loss of the mitochondrial enzyme gene alh-6 and the resulting changes in FAD homeostasis, mitochondrial dynamics, and male fertility (Figure 7). We found that alh-6 mutants show a reduction in brood size that is sexually dimorphic; defects in sperm function but not oocytes contribute to reduced hermaphrodite fertility. As societal factors continue to push individuals to wait longer to have children, the increase in paternal age is inversely correlated with proper sperm function and can give rise to fertility issues. Consequently, it is incumbent on future studies to elucidate how restoring and maintaining functional amino acid catabolism during aging in order to promote reproductive success.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/52899/elife-52899-fig7-v2.jpg)
-
-**Figure 7.:** alh-6 and FAD mediated male reproductive senescence.
 
 Although C. elegans is a well-established organism for studying aging and reproduction, with several studies describing hermaphrodite reproductive senescence, many questions regarding the basis of male reproductive decline remain unanswered. Decades of work have shown that exposure to pollution, toxins, xenobiotics, and other ROS-inducing compounds can prematurely drive the loss of sperm function across species (Agarwal et al., 2014; Wagner et al., 2018; Cocuzza et al., 2007), but the impact that normal cellular metabolism plays on sperm function and the identification of specific molecules that can mediate sperm quality are not well-defined. In this study we characterized a new role for mitochondrial proline catabolism and FAD homeostasis in the maintenance of proper sperm function. Perturbation of this pathway, through mutation of alh-6/ALDH4A1, causes metabolic stress. Consequently, this perturbation leads to reduction of cellular FAD level and increases mitochondrial fusion in spermatids, which results in impaired sperm function and premature reproductive senescence.
 
@@ -97,50 +151,207 @@ Our study also demonstrates that spermatids lacking alh-6 have increased mitocho
 
 ## Materials and methods
 
-## C. elegans strains and maintenance
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>N2</td>
+      <td>Caenorhabditis Genetics Center (CGG)</td>
+      <td></td>
+      <td>Laboratory reference strain (wild type)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>SPC321</td>
+      <td>PMID: 24440036</td>
+      <td></td>
+      <td>Genotype: alh-6(lax105)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>SPC326</td>
+      <td>PMID: 24440036</td>
+      <td></td>
+      <td>alh-6p::alh-6::gfp</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>SPC447</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Genotype: alh-6(lax105);laxEx025(pie-1p::alh-6;myo-2p::rfp;myo-3p::rfp;rab-3p::rfp)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>SPC455</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Genotype: alh-6(lax105);laxEx033(pie-1p::alh-6;myo-2p::rfp;myo-3p::rfp;rab-3p::rfp)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>SPC473</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Genotype: alh-6(lax105);laxEx051(pie-1p::alh-6;myo-2p::rfp;myo-3p::rfp;rab-3p::rfp)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>CL2166</td>
+      <td>Caenorhabditis Genetics Center (CGG)</td>
+      <td></td>
+      <td>Genotype: gst4-p::gfp</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>SPC223</td>
+      <td>PMID: 24440036</td>
+      <td></td>
+      <td>Genotype: alh-6(lax105);gst-4p::gfp</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>DCL569</td>
+      <td>Caenorhabditis Genetics Center (CGG)</td>
+      <td></td>
+      <td>Genotype: [mkcSi13(sun-1p::rde-1::sun-1 3'UTR + unc-119(+)) II; rde-1(mkc36) V</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>CU6372</td>
+      <td>Caenorhabditis Genetics Center (CGG)</td>
+      <td></td>
+      <td>Genotype: drp-1(tm1108)</td>
+    </tr>
+    <tr>
+      <td>Strain (C. elegans)</td>
+      <td>GR1948</td>
+      <td>PMID: 24684932</td>
+      <td></td>
+      <td>Genotype: mut-14(mg464);smut-1(tm1301) V.</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Riboflavin</td>
+      <td>Millipore Sigma</td>
+      <td>R9504</td>
+      <td>Concentration used: 2.5 mM</td>
+    </tr>
+    <tr>
+      <td>Commercial Assay or kit</td>
+      <td>FAD Colorimetric/Fluorometric Assay Kit</td>
+      <td>BioVision</td>
+      <td>K357</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial Assay or kit</td>
+      <td>NAD/NADH Quantification Colorimetric Kit</td>
+      <td>BioVision</td>
+      <td>K337</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pronase</td>
+      <td>Millipore Sigma</td>
+      <td>P8811</td>
+      <td>Concentration used: 200 ug/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>eBioscience Monensin Solution (1000X)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>00-4505-51</td>
+      <td>Concentration used: 100 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoProbe JC-1 Assay Kit</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>M34152</td>
+      <td>Concentration used: JC-1 15 uM, CCCP 50 uM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoTracker Red CMXRos</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>M7512</td>
+      <td>Concentration used: 100 uM dried on plate</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad Prism (https://graphpad.com)</td>
+      <td>RRID:SCR_015807</td>
+      <td>Version 6</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>ImageJ</td>
+      <td>ImageJ (http://imagej.nih.gov/ij/)</td>
+      <td>RRID:SCR_003070</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans strains and maintenance
 
 C. elegans were cultured using standard techniques at 20°C. The following strains were used: wild type (WT) N2 Bristol, SPC321[alh-6(lax105)], SPC326[alh-6p::alh-6::gfp], SPC447[alh-6(lax105);laxEx025(pie-1p::alh-6;myo-2p::rfp;myo-3p::rfp;rab-3p::rfp)], SPC455[alh-6(lax105);laxEx033(pie-1p::alh-6;myo-2p::rfp;myo-3p::rfp;rab-3p::rfp)], SPC473[alh-6(lax105);laxEx051(pie-1p::alh-6;myo-2p::rfp;myo-3p::rfp;rab-3p::rfp)]], CL2166[gst4-p::gfp], SPC223[alh-6(lax105);gst-4p::gfp], DCL569[mkcSi13(sun-1p::rde-1::sun-1 3'UTR + unc-119(+)) II; rde-1(mkc36) V], CU6372[drp-1(tm1108)], and GR1948[mut-14(mg464);smut-1(tm1301) V]. Double and triple mutants were generated by standard genetic techniques. E. coli strains used were as follows: B Strain OP50 (Brenner, 1974) and HT115(DE3) [F-mcrA mcrB IN(rrnD-rrnE)one lambda- rnc14::Tn10 λ(DE3)](Timmons et al., 2001). For dietary supplement assays, riboflavin was added to the NGM plate mix to final concentration 2.5 mM.
 
-## RNAi-based experiments
+### RNAi-based experiments
 
 RNAi experiments were done using HT115-based RNAi (Timmons et al., 2001), which yielded similar results as OP50 RNAi E. coli B strain as described in Dalton and Curran (2018). All strains were adapted to diets for at least three generations and strains were never allowed to starve. All RNAi clones were sequenced prior to use and RNAi knockdown efficiency measured. RNAi cultures were seeded on IPTG plates and allowed to induce overnight prior to dropping eggs on them for experiments.
 
-## Microscopy
+### Microscopy
 
 Zeiss Axio Imager and ZEN software were used to acquire all images used in this study. For GFP reporter strains, worms were mounted in M9 with 10 mM levamisole and imaged with DIC and GFP filters. For sperm number, assay samples were imaged with DIC and DAPI filters in z-stacks. For sperm size and activation assays, dissected sperm samples were imaged at 100x with DIC filter on two different focal planes for each field to ensure accuracy. For sperm mitochondria assays, dissected sperm samples were imaged at 100x with DIC, GFP, and RFP filters in z-stacks to assess overall mitochondria content within each spermatid.
 
-## Fertility assay
+### Fertility assay
 
 Worms were treated with alkaline hypochlorite and eggs were allowed to hatch overnight. The next day, synchronized L1 larvae were dropped on NGM plates seeded with either OP50 or HT115. 48 hr later, at least ten L4 hermaphrodites for each genotype were singled onto individual plates and moved every 12 hr until egg laying ceased. Progeny were counted 48 hr after the singled hermaphrodite was moved to a different plate. Plates were counted twice for accuracy.
 
-## Mated reproductive assay
+### Mated reproductive assay
 
 Males were synchronized by egg laying, picked as L4 larvae for use as young adults for mating experiments. Singled L4 stage hermaphrodites were each put on a plate with 30 ul of OP50 seeded in the center together with three virgin adult males. 24 hr post-mating, males were removed, and each hermaphrodite was moved to a new plate every 24 hr until egg laying ceased. Progeny were counted 48 hr after the hermaphrodite was moved from the plate. For sperm competition assay, progeny with GFP fluorescence were counted from the cohort. Plates were counted twice for accuracy.
 
-## Cofactor measurements
+### Cofactor measurements
 
 Worms were treated with alkaline hypochlorite and eggs were allowed to hatch overnight. The next day, synchronized L1s were dropped on NGM plates with or without supplement seeded with 25X concentrated OP50. FAD levels are measured following directions in FAD Colorimetric/Fluorometric Assay Kit (K357) from BioVision. NAD/NADH levels are measured following directions in NAD/NADH Quantification Colorimetric Kit (K337).
 
-## Sperm number assay
+### Sperm number assay
 
 Worms were treated with alkaline hypochlorite and eggs were allowed to hatch overnight. The next day, synchronized L1s were dropped on NGM plates with the indicated food source. At 48 hr (L4 developmental stage) males were isolated to new plates. 72 hr post-drop, day one adult virgin male animals were washed 3x with 1xPBST, fixed with 40% 2-propanol, and stained with DAPI for 2 hr. Samples were washed for 30 min with PBST, mounted with Vectashield mounting medium, and covered with coverslip to image. Spermatids in the seminal vesicle were counted through all planes in z-stack.
 
-## Sperm size assay
+### Sperm size assay
 
 Males were isolated at L4 stage 24 hr before assay. For each strain, five day one adult males were dissected in 35 μL pH 7.8 SM buffer (50 mM HEPES, 50 mM NaCl, 25 mM KCl, 5 mM CaCl2, 1 mM MgSO4, 10 mM dextrose) to release spermatids, which were immediately imaged.
 
-## Sperm activation with pronase and monensin
+### Sperm activation with pronase and monensin
 
 Males were isolated at L4 stage 24 hr before assay. For each strain, five day one adult males were dissected in 35 μL pH 7.8 SM buffer (50 mM HEPES, 50 mM NaCl, 25 mM KCl, 5 mM CaCl2, 1 mM MgSO4, 1 mg/ml BSA) supplemented with either 200 μg/mL Pronase (Millipore Sigma) or 100 nM Monensin (Thermo Fisher Scientific 00-4505-51) to release spermatids. Another 25 ul of the same solution was added and the spermatids were incubated at RT for 30 min for activation to occur before imaging.
 
-## Sperm mitochondria staining
+### Sperm mitochondria staining
 
 Males were isolated at L4 stage 24 hr before assay. For each strain, five day one adult males were dissected in 35 μL pH 7.8 SM buffer (50 mM HEPES, 50 mM NaCl, 25 mM KCl, 5 mM CaCl2, 1 mM MgSO4, 1 mg/ml BSA) with JC-1(Thermo Fisher Scientific M34152) added to 15 μM final concentration. Another 25 ul of the same solution was added and the spermatids were incubated at RT for 10 min. The slide was washed three times with 100 ul SM buffer before imaging. For carbonyl cyanide m-chlorophenyl hydrazine (CCCP) uncoupler control in JC-1 staining experiment, 50 uM final concentration was used in staining solution. For staining with MitoTracker Red CMXRos (Thermo Fisher Scientific M7512), stock solution was diluted to 100 uM final concentration in M9 and 50 ul of this solution was applied on top of a spot of 50 uL 25X concentrated OP50 seeded on a NGM plate. Solution was allowed to dry on the plate before L4 virgin males were moved onto the food spot. Animals were allowed to stain overnight (18–24 hr) and dissected next day in SM buffer for spermatids to image.
 
-## RNA-Sequencing
+### RNA-Sequencing
 
 Worms were egg prepped and eggs were allowed to hatch overnight. The next day, synchronized L1s were dropped on NGM plates seeded with 25X concentrated OP50. 48 and 120 hr post drop, L4 animals and day three adult animals, respectively, were washed three times with M9 and frozen in TRI Reagent at −80°C. Animals were homogenized and RNA extraction was performed following the protocol in Zymo Direct-zol RNA Isolation Kit. RNA samples were sequenced and analyzed by Novogene.
 
-## Statistical analysis
+### Statistical analysis
 
 Data are presented as mean ± SEM. Comparisons and significance were analyzed in Graphpad Prism 7. Comparisons between two groups were done using Student’s Test. Comparisons between more than two groups were done using ANOVA. For sperm activation assays, Fisher’s Exact Test was used and p-values are adjusted for multiple comparisons. *p<0.05 **p<0.01 ***p<0.001 ****<0.0001.

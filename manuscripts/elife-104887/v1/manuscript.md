@@ -11,9 +11,9 @@
 
 ### Affiliations
 
-1. https://ror.org/041nas322 Immunology and Metabolism Unit, Life and Medical Sciences (LIMES) Institute, University of Bonn Bonn Germany
-2. https://ror.org/025fw7a54 Institut of Immunology, Friedrich-Loeffler-Institut, Federal Research Institute for Animal Health Greifswald-Insel Riems Germany
-3. https://ror.org/05wg1m734 Department of Internal Medicine and Radboud Center for Infectious Diseases, Radboud University Medical Center Nijmegen Netherlands
+1. Immunology and Metabolism Unit, Life and Medical Sciences (LIMES) Institute, University of Bonn Bonn Germany ([ROR:041nas322](https://ror.org/041nas322))
+2. Institut of Immunology, Friedrich-Loeffler-Institut, Federal Research Institute for Animal Health Greifswald-Insel Riems Germany ([ROR:025fw7a54](https://ror.org/025fw7a54))
+3. Department of Internal Medicine and Radboud Center for Infectious Diseases, Radboud University Medical Center Nijmegen Netherlands ([ROR:05wg1m734](https://ror.org/05wg1m734))
 
 † Corresponding author
 
@@ -43,19 +43,19 @@ The ability of innate immune cells to adapt their functional programs based on p
 
 Similar to αβ TCR, the assembly of γ and δ chains requires recombination of variable (V), diversity (D), and joining (J) gene fragments during thymic development, which drives antigen receptor diversity. This diversity is excessively increased by random gain and loss of nucleotides at the junction sites between the various segments (Willcox et al., 2018). This untemplated process enables the generation of flexible and exceptionally long complementarity-determining region 3 (CDR3) loops, the most variable one compared to CDR1 and CDR2 (Rock et al., 1994; Xin et al., 2024). CDRs are polypeptide sequences within TCRs that play crucial roles in dictating antigen recognition and binding. Especially, CDR3 in the d chain tends to be longer and more flexible than its αβ counterpart (Pellicci et al., 2014). These stem-like extended loops provide the TCR a physical ability to reach and mould around unconventional ligands with different sizes and shapes. Therefore, γδ T cells can overcome ancestral sequence-specific restrictions and lower receptor diversity with this enhanced conformational plasticity, allowing them to recognize a broad range of pathogens and non-peptide ligands (Chen et al., 2008; Legut et al., 2015). Bypassing sequence-specific limitations further contributes to their innate-like memory and rapid recall response features. Taken together, the diversity potential of γδ TCRs is greater than that of αβ T cells and B cells, yet it is not fully realized (Carding and Egan, 2002; Hu et al., 2023). The rearrangement of the TRG locus encoding γ chain precedes the rearrangement of the TRB locus and is followed by the DNA recombination at the TRD locus. Upon successful VDJ rearrangement of both γ and δ chains, cells commit to the γδ T cell lineage and undergo a ‘γδ selection’ process in which the γδ TCR signaling confirms the functionality of the receptor (Hayes et al., 2005; Muro et al., 2018; Prinz et al., 2006; Taghon et al., 2006). It is not well established whether γδ TCR signaling during thymic development is ligand-dependent (Zeng et al., 2012; Muro et al., 2019). Based on TCR chain composition, γδ T cells are classified into distinct subsets. In general, delta chain-based and gamma chain-based classifications are used in primates and mice, respectively.
 
-## Primate γδ T cells
+### Primate γδ T cells
 
 The main human γδ T cell subsets are Vδ1, Vδ2, Vδ3, and Vδ5 (nomenclature by Lefranc and Rabbitts LeFranc et al., 1986; Wu et al., 2017). Of them, the best characterized are Vδ2 T cells. The Vδ2 chain predominantly pairs with γ9 chain (LeFranc et al., 1986; Davey et al., 2018; Hinz et al., 1997) and these Vγ9+Vδ2+ T cells consist of up to 90% of the whole γδ T cell population in human peripheral blood (Wu et al., 2014). Although most studies do not discriminate between Vγ9+ and Vγ9- Vδ2 T cell subpopulations due to the scarcity of the latter, recent studies suggest that these cell subpopulations have distinct features: Vγ9+Vδ2+ bearing characteristics of innate immunity and Vγ9-Vδ2+ having adaptive immune character (Davey et al., 2018). The antigens that activate Vγ9+Vδ2+ T cells comprise phosphoesters, alkylamines, nucleotide conjugates and heat shock proteins that are expressed by microbial pathogens but also by host cells (Fisch et al., 1979; Haregewoin et al., 1989; Bukowski et al., 1999; Constant et al., 1994; Tanaka et al., 1995). In particular, the Vγ9+Vδ2+ TCR recognizes phosphoantigens such as (E)–4-hydroxy-3-methyl-but-2-enyl pyrophosphate (HMB-PP) and isopentenyl pyrophosphate (IPP), the intermediate metabolites of the 2-C-methyl-D-erythritol 4-phosphate (MEP) pathway in many bacteria and the mevalonate pathway in mammalian cells, respectively (Tanaka et al., 1995; Gu et al., 2014; Simões et al., 2018; Tyler et al., 2015; Hintz et al., 2001). The phosphoantigens are identified by Vδ2 T cells in the context of Butyrophilin 2A1 and 3A1 molecules (Laplagne et al., 2021; Cano et al., 2021; Fulford et al., 2024). Numerous in vivo and in vitro studies point to the involvement of Vδ2 T cells in the defense against malignant cells (Schönefeldt et al., 2021) and various pathogens such as M. tuberculosis (Dieli et al., 2000; Chen, 2016), Plasmodium falciparum (Hernández-Castañeda et al., 2020; Howard et al., 2018; Junqueira et al., 2021), Listeria monocytogenes (Ryan-Payseur et al., 2012), Brucella suis (Bessoles et al., 2011; Oliaro et al., 2005), human immunodeficiency virus (HIV) (He et al., 2013; Poccia et al., 1999), influenza virus (Qin et al., 2011; Qin et al., 2009), hepatitis C virus (Cimini et al., 2018), severe acute respiratory syndrome coronavirus SARS-CoV (Poccia et al., 2006), and possibly many others (Gay et al., 2022). The effector functions of Vδ2 T cells encompass a wide range of activities. Upon activation, Vδ2 T cells produce mainly TNF and IFN-γ, but are also able to secrete IL-17 (Ness-Schwickerath et al., 2010) or IL-4 (Wesch et al., 2001) in certain conditions. Furthermore, they directly kill target cells by cytotoxic activity (Dieli et al., 2000; Tokuyama et al., 2008), phagocytosis (Junqueira et al., 2021), induction of apoptosis via Fas-Fas ligand interactions (Li et al., 2011), antibody-dependent cellular cytotoxicity (ADCC) (Gertner-Dardenne et al., 2009; Capietto et al., 2011; Tokuyama et al., 2008) or by mobilizing other immune cells (Hu et al., 2023). For example, professional antigen-presenting capabilities (Junqueira et al., 2021; Brandes et al., 2005) and B cell helper function (Caccamo et al., 2006) were also described in Vδ2 T cells. The lack of pathogen specificity and the huge functional plasticity of Vδ2 T cells make them a unique player in an immune reaction. Vγ9+Vδ2+ T cells have also been described in non-human primates (Kazen and Adams, 2011; Wang et al., 2003) and alpacas (Fichtner et al., 2020b) but no such cell population exists in mice.
 
 The second most abundant γδ T cell population in the human peripheral blood are Vδ1 T cells, which are enriched at barrier tissues (Qu et al., 2022). The Vδ1 chain is known to pair with various γ chains, including γ2, γ3, γ4, γ5, and γ8. The cells are largely found in the skin, gut, liver, spleen, lung, and bone marrow and recognize CD1 lipid-presenting molecules via their TCR (Spada et al., 2000) as well as stress-inducible MICA and MICB molecules upon tumor transformation or viral infection (Groh et al., 1998; Groh et al., 1999), although this recognition is likely not mediated by the TCR (Bauer et al., 1999). Functionally, they resemble cytotoxic, Th1-like phenotypes characterized by IFN-γ expression (Deusch et al., 1991). Apart from killing various epithelial tumors (Maeurer et al., 1996), Vδ1 T cells are also involved in tissue homeostasis and wound healing by producing insulin-like growth factor-1 (Toulon et al., 2009). Cytomegalovirus (CMV) and possibly HIV and P. falciparum drive TCR-dependent expansion of Vδ1 T cells (Hviid et al., 2001; De Maria et al., 1992; Vermijlen et al., 2010; Déchanet et al., 1999; McMurray et al., 2022; Ho et al., 1994; Worku et al., 2003; von Borstel et al., 2021), yet the role of Vδ1 T cells in the defense against these pathogens is not clear. Based on clonal expansion of Vδ1 T cells observed upon viral and parasitic infections and consequent generation of a long-lived, TCR-focused effector T cell population, they are considered to have an adaptive immune character (von Borstel et al., 2021; Davey et al., 2017; Ravens et al., 2017; McMurray et al., 2022; Hunter et al., 2018; Rutishauser et al., 2020). Yet, liver-resident Vδ2- T cells, including Vδ1 T cells, have been shown to be polyfunctional and responsive to both TCR and innate stimuli (Hunter et al., 2018). Vδ3 T cells are a minor human γδ T cell population in peripheral blood but are mainly located in the liver, gut, bone marrow, and lymph nodes and significantly expand in certain pathological conditions (Hunter et al., 2018; Dunne et al., 2013; Kenna et al., 2004; Kabelitz et al., 1997; Falk et al., 2008). They recognize the stress-related molecules CD1d and annexin-A2 (ANX) (Mangan et al., 2013; Marlin et al., 2017) and produce mainly TNF (Petrasca et al., 2018). Although there are limited reports on the function of Vδ3 T cells, they have been shown to induce dendritic cell (DC) maturation to cytokine-producing APCs (Mangan et al., 2013) and B cell maturation to IgM-secreting cells (Petrasca et al., 2018). Vδ5 T cells are a little-known subset recognizing stressed cells via the endothelial protein C receptor (EPRC), yet their functions remain largely elusive (Willcox et al., 2012). Recent findings indicate that a more diverse δ chain repertoire exists, particularly in peripheral blood and liver, including Vδ4, Vδ6, Vδ7, and Vδ8 (Hunter et al., 2018; Zheng et al., 2014; Christopoulos et al., 2016; Wang et al., 2014). Yet, these cells were only detected in pathological conditions so far, and there is still a lack of knowledge about their properties, such as gamma chain pairing and effector functions.
 
-## Mouse γδ T cells
+### Mouse γδ T cells
 
 γδ T cell subpopulations are not very well conserved between humans and mice. Vγ1, Vγ2, Vγ3, Vγ4, Vγ5, Vγ6, and Vγ7 subsets have been identified in mice so far (Heilig and Tonegawa’s nomenclature [Heilig and Tonegawa, 1986]) adopted in this review (McMurray et al., 2022). The γ chains predominantly found in mouse γδ TCRs are Vγ1 and Vγ4, which pair with a variety of delta chains (He et al., 2010). Vγ1 and Vγ4 T cells are found in peripheral blood, secondary lymphoid organs, liver, and lung (He et al., 2010; Pereira et al., 1995; Qi et al., 2021). Resident Vγ1 T cells in lymphoid tissues support B cell differentiation and antibody production upon vaccination or infection (Ullrich et al., 2021; Huang et al., 2009), while in the lung, they promote allergic airway hyperresponsiveness (AHR) by synergizing with invariant natural killer T (iNKT) cells (Jin et al., 2009; Hahn et al., 2004). They have also been shown to protect from Coxsackievirus B3 infection-induced myocarditis by promoting Th2 responses (Huber et al., 2000). Vγ4 T cells present in the dermis primarily produce IL-17A during mycobacterial infection to further promote neutrophil infiltration to the skin (Sumaria et al., 2011). Mucosal and hepatic Vγ4 T cells play an important role in protecting the mice from L. monocytogenes infection by producing IFN-γ and IL17A and collaborating with αβ T cells (Sheridan et al., 2013; Hamada et al., 2008b; Khairallah et al., 2022). In the lung, this subset might play an anti-inflammatory or pro-inflammatory role depending on invading pathogens and environmental signals, as shown in AHR (Hahn et al., 2003) or Coxsackievirus B3 infection (Huber and Sartini, 2005). It is also interesting to note that Vγ1 and Vγ4 T cells are shown to have opposing roles in selected disease models (Hahn et al., 2004; Huber et al., 2000). For example, as mentioned, AHR is promoted by Vγ1 cells but suppressed by Vγ4 cells in a mouse asthma model (Hahn et al., 2004), while the susceptibility to Coxsackievirus B3-induced myocarditis is suppressed by Vγ1 cells but promoted by Vγ4 cells (Huber et al., 2000).
 
 Apart from Vγ1 and Vγ4, Vγ6 T cells are also present in the mouse lung (Sim et al., 1994; Hayes et al., 1996). Upon infection, all these three subsets proliferate and secrete distinct chemokines and cytokines, such as CXCL2 and TNF, to recruit other immune cells, mainly neutrophils (Nakasone et al., 2007). The localization of Vγ6 T cells is not limited to the lung; they are broadly distributed in various tissues, including the peritoneal cavity (O’Brien et al., 2010), reproductive tract (Itohara et al., 1990), tongue (Itohara et al., 1990), placenta/decidua (Heyborne et al., 1992; Pinget et al., 2016), dermis (Cai et al., 2014; Tan et al., 2019), gingiva (Wilharm et al., 2019), nasal epithelium (Kim et al., 2008) and tendon-to-bone attachment sites (Reinhardt et al., 2016). These cells have been found to expand in response to a variety of bacteria (e.g., Listeria [Sheridan et al., 2013; Hamada et al., 2008a; Ikebe et al., 2001], Escherichia coli [Shibata et al., 2007], Bacillus subtilis [Simonian et al., 2006], M. tuberculosis [Umemura et al., 2016], Streptococcus pneumoniae [Paget et al., 2015], and Staphylococcus aureus [Hamada et al., 2008b; Marchitto et al., 2019]) and in several disease models, including pulmonary fibrosis (Simonian et al., 2009), nephritis (Wu et al., 2004), and testicular inflammation (Mukasa et al., 1999). Vγ5 T cells are the predominant population in the epidermis of rodent skin, where they maintain their homeostatic density throughout life by self-renewal capacity. They are also called dendritic epidermal T cells (DETC) and have unique roles in wound healing and immune surveillance (Sutoh et al., 2018). In stressed skin, DETCs are activated, resulting in elevated IFN-γ and IL-17 production as well as cytotoxic properties (Nielsen et al., 2015). Lastly, the Vγ7 subset is most abundant in the epithelial layer of the gut, playing essential roles in maintaining intestinal homeostasis and responding to pathogens or tissue damage by producing mainly IFN-γ together with a wide range of other cytokines such as TNF, TGF-β, IL-10, IL-13, and displaying high cytotoxic potential (Li et al., 2023b; Di Marco Barros et al., 2016). Interestingly, it has been shown that these cells play different roles in the different stages of colitis: a pathogenic role in the early stage but a protective role in the later stage (Kühl et al., 2007). There is also a significant population of Vγ6 T cells in the gut lamina propria that predominantly produces IL-17 and IL-22 to limit bacterial invasion and intestinal inflammation (Rampoldi and Prinz, 2022).
 
-## γδ T cells in other species
+### γδ T cells in other species
 
 γδ T cells are found in all jawed vertebrates (Holderness et al., 2013). Although best described in humans and mice, different subsets of γδ T cells have been increasingly characterized in cattle, swine, sheep, chickens, fish, and reptiles (Holderness et al., 2013). Artiodactyls, specifically cattle and swine, have relatively high frequencies of γδ T cells in blood, accounting for up to 60% of circulating lymphocytes, especially in young animals (Talker et al., 2013; Guzman et al., 2014). The classification of γδ T cell subsets is also different in these species, mainly based on the expression profiles of scavenger receptor family workshop cluster 1 (WC1), CD2, and CD8, as it has been reported for pigs (Le Page et al., 2021). Cattle γδ T cells are identified as WC1−, WC1.1+, and a WC1.2+ subsets and are involved in responses to severe infections such as that caused by foot-and-mouth disease virus (FMDV) (Wilharm et al., 2019; Toka et al., 2011). They display a great proliferative response in the peripheral blood of animals infected with bovine herpesvirus type I and bovine diarrhea virus infections (Silflow et al., 2005; Amadori et al., 1995). While WC1.2+ γδ T cell clones in cattle proliferate and secrete IFN-γ in response to Anaplasma marginale (Lahmers et al., 2006; Lahmers et al., 2005), M. tuberculosis elicits preferential activation of the WC1.1+γδ T cell subset (Bhat et al., 2023). Although γδ T cells strongly proliferate upon mycobacterial stimulation ex vivo, they release minute amounts of IFN-γ (Smyth et al., 2001). In swine, γδ T cells represent an important source of IFN-γ and IL-17 production, express cytotoxic activity and orchestrate both innate and adaptive immune responses upon infection with reproductive and respiratory syndrome virus infection (Le Page et al., 2022; Olin et al., 2005). Deletion of γδ T cells does not alter the structure of immune organs or the health of conventionally housed pigs but may reduce responses to live-attenuated vaccines (Petersen et al., 2021). Birds, such as chickens, have a high frequency of γδ T cells in the intestinal mucosa. During infection with Eimeria acervulina, an early increase of local intestinal γδ T cells has been observed, reflecting their role in early host defense (Choi and Lillehoj, 2000). While the absence of γδ T leaves chicken health under conventional breeding unaltered (von Heyl et al., 2023), it does cause susceptibility to an avian oncogenic alphaherpesvirus (Sabsabi et al., 2024). There is further evidence that γδ T cells are present in other species, yet their exact subsets and mechanisms of action are not well characterized to date. Interestingly, certain vertebrates, such as squamate reptiles, are unique in that they lost γδ T cells (Morrissey et al., 2022). The lack of TCRγ and TCRδ transcripts seems to be due to large genome deletions in the absence of compensatory changes in the conventional T cell genes in snakes and lizards. Overall, the complexity of the γδ T cell subsets and the heterogeneity between species hinders our understanding of these immune cells.
 
@@ -63,7 +63,276 @@ Apart from Vγ1 and Vγ4, Vγ6 T cells are also present in the mouse lung (Sim e
 
 γδ T cells show features of both innate immunity, such as recognizing stress-related and pathogen-unspecific antigens, initiating ADCC and performing phagocytosis, and adaptive immunity, such as somatic rearrangement of receptor genes. Immune memory responses of γδ T cells have been documented in humans, cattle and mice (Table 1). With such unique characteristics that bridge innate immunity and adaptive immunity (Shen et al., 2002; Rincon-Orozco et al., 2005; Holtmeier and Kabelitz, 2005), a question arises: do γδ T cells mount adaptive immune memory, innate immune memory (trained immunity) or both?
 
-## Adaptive immune memory of human and non-human primate γδ T cells
+**Table 1.**
+ Immune memory responses of gamma delta (γδ) T cells.BCG: Bacille Calmette-Guerin; CMV: Cytomegalovirus; HSV: herpes simplex virus; IMQ: imiquimod; MMR: measles-mumps-rubella; MPV: Mpox virus.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2">Species</th>
+      <th rowspan="2">T cell subset</th>
+      <th rowspan="2">Experimental setting</th>
+      <th rowspan="2">Location</th>
+      <th colspan="2">Adaptive immune memory responses</th>
+      <th colspan="2">Innate immune memory responses</th>
+      <th rowspan="2">Ref</th>
+    </tr>
+    <tr>
+      <th>Inducing agent</th>
+      <th>Immune memory response characteristics</th>
+      <th>Inducing agent</th>
+      <th>Immune memory response characteristics</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="13">Human and non-human primates</td>
+      <td>Vδ2</td>
+      <td>In vitro</td>
+      <td>Peripheral blood</td>
+      <td>BCG</td>
+      <td>Enhanced proliferation upon M. tuberculosis stimulation</td>
+      <td></td>
+      <td></td>
+      <td>Hoft et al., 1998; Kabelitz et al., 1991</td>
+    </tr>
+    <tr>
+      <td>Vδ2</td>
+      <td>In vivo</td>
+      <td>Peripheral blood</td>
+      <td>BCG</td>
+      <td>Enhanced proliferation and IFN-γ production upon restimulation</td>
+      <td></td>
+      <td></td>
+      <td>Kabelitz et al., 1991</td>
+    </tr>
+    <tr>
+      <td>γδ</td>
+      <td>In vivo</td>
+      <td>Pulmonary and peripheral blood</td>
+      <td>BCG</td>
+      <td>Enhanced proliferation upon reinfection</td>
+      <td></td>
+      <td></td>
+      <td>Shen et al., 2002; Lai et al., 2003</td>
+    </tr>
+    <tr>
+      <td>Vδ2</td>
+      <td>In vivo</td>
+      <td>Peripheral blood</td>
+      <td>Listeria monocytogenes</td>
+      <td>Enhanced proliferation and effector function upon reinfection</td>
+      <td></td>
+      <td></td>
+      <td>Ryan-Payseur et al., 2012</td>
+    </tr>
+    <tr>
+      <td>γδ</td>
+      <td>In vivo</td>
+      <td>Peripheral blood</td>
+      <td>Plasmodium falciparum</td>
+      <td>Enhanced proliferation and IFN-γ production upon restimulation</td>
+      <td></td>
+      <td></td>
+      <td>Teirlinck et al., 2011</td>
+    </tr>
+    <tr>
+      <td>Vδ1</td>
+      <td>In vivo</td>
+      <td>Peripheral blood</td>
+      <td>Plasmodium falciparum</td>
+      <td>Clonal expansion, recurrent parasite-exposure driven expansion and differentiation</td>
+      <td></td>
+      <td></td>
+      <td>von Borstel et al., 2021; Rutishauser et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Vδ2</td>
+      <td>In vivo</td>
+      <td>Peripheral blood</td>
+      <td>SARS-CoV-2 mRNA vaccine</td>
+      <td>Enhanced proliferation and IFN-γ production upon revaccination</td>
+      <td></td>
+      <td></td>
+      <td>Terzoli et al., 2024</td>
+    </tr>
+    <tr>
+      <td>Vδ2</td>
+      <td>In vivo</td>
+      <td>Peripheral blood</td>
+      <td>MPV</td>
+      <td>Enhanced proliferation and IFN-γ production upon rechallenge</td>
+      <td></td>
+      <td></td>
+      <td>Shao et al., 2009</td>
+    </tr>
+    <tr>
+      <td>Vδ1</td>
+      <td>In vivo</td>
+      <td>Peripheral blood</td>
+      <td>CMV</td>
+      <td>Rapid proliferation and infection resolution after reinfection</td>
+      <td></td>
+      <td></td>
+      <td>Pitard et al., 2008</td>
+    </tr>
+    <tr>
+      <td>Vδ2</td>
+      <td>In vivo</td>
+      <td>Pulmonary compartment</td>
+      <td></td>
+      <td></td>
+      <td>Listeria monocytogenes</td>
+      <td>Enhanced IFN-γ and perforin production; lower pulmonary pathology and less weight loss upon M. tuberculosis infection</td>
+      <td>Shen et al., 2019</td>
+    </tr>
+    <tr>
+      <td>γδ</td>
+      <td>In vitro</td>
+      <td>Peripheral blood</td>
+      <td></td>
+      <td></td>
+      <td>BCG</td>
+      <td>Enhanced TNF and IFN-γ production upon C. albican challenge; transcriptional rewiring</td>
+      <td>Suen et al., 2024</td>
+    </tr>
+    <tr>
+      <td>Vδ2</td>
+      <td>In vitro</td>
+      <td>Peripheral blood</td>
+      <td></td>
+      <td></td>
+      <td>HSV</td>
+      <td>Enhanced lysing ability of infected cells upon PHA or mycobacteria stimulation</td>
+      <td>Bukowski et al., 1994</td>
+    </tr>
+    <tr>
+      <td>γδ</td>
+      <td>In vitro</td>
+      <td>Peripheral blood</td>
+      <td></td>
+      <td></td>
+      <td>MMR</td>
+      <td>Enhanced TNF and IFN-γ production upon CD3 stimulation; transcriptional and metabolic rewiring</td>
+      <td>Röring et al., 2024</td>
+    </tr>
+    <tr>
+      <td rowspan="9">Mouse</td>
+      <td>Vγ4Vδ1</td>
+      <td>In vivo</td>
+      <td>Intestinal mucosa</td>
+      <td>Listeria monocytogenes</td>
+      <td>Enhanced proliferation and infection clearance upon rechallenge</td>
+      <td></td>
+      <td></td>
+      <td>Sheridan et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Vγ4</td>
+      <td>In vivo</td>
+      <td>Intestinal epithelium</td>
+      <td>Listeria monocytogenes</td>
+      <td>Enhanced IL-17 production and clustering with L monocytogenes replication foci upon secondary infection</td>
+      <td></td>
+      <td></td>
+      <td>Romagnoli et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Vγ6</td>
+      <td>In vivo</td>
+      <td>Peritoneum, draining mediastinal lymph nodes</td>
+      <td>Staphylococcus aureus</td>
+      <td>Enhanced IL-17 production and infection clearance after reinfection</td>
+      <td></td>
+      <td></td>
+      <td>Murphy et al., 2014</td>
+    </tr>
+    <tr>
+      <td>Vγ6</td>
+      <td>In vivo</td>
+      <td>Kidney</td>
+      <td>Staphylococcus aureus</td>
+      <td>Reduced renal bacterial load upon reinfection</td>
+      <td></td>
+      <td></td>
+      <td>Bertram et al., 2023</td>
+    </tr>
+    <tr>
+      <td>Vγ1</td>
+      <td>In vivo</td>
+      <td>Liver, lung, spleen</td>
+      <td>MCMV</td>
+      <td>Enhanced proliferation and survival rate upon rechallenge</td>
+      <td></td>
+      <td></td>
+      <td>Khairallah et al., 2015</td>
+    </tr>
+    <tr>
+      <td>γδ</td>
+      <td>In vitro</td>
+      <td>Liver, spleen</td>
+      <td>Plasmodium chabaudi</td>
+      <td>Enhanced CD107a expression and IFN-γ production upon rechallenge; transcriptional reprogramming</td>
+      <td></td>
+      <td></td>
+      <td>Kumarasingha et al., 2020</td>
+    </tr>
+    <tr>
+      <td>Vγ4Vδ4</td>
+      <td>In vivo</td>
+      <td>Skin</td>
+      <td></td>
+      <td></td>
+      <td>IMQ</td>
+      <td>Enhanced proliferation and IL-17 production upon IMQ rechallenge</td>
+      <td>Ramírez-Valle et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Vγ4Vδ4</td>
+      <td>In vivo</td>
+      <td>Skin; ear</td>
+      <td></td>
+      <td></td>
+      <td>IMQ</td>
+      <td>Enhanced proliferation and IL-17 production and neutrophil recruitment upon IMQ rechallenge</td>
+      <td>Hartwig et al., 2015</td>
+    </tr>
+    <tr>
+      <td>Vγ4Vδ1</td>
+      <td>In vitro</td>
+      <td>Gut; bulk mesenteric lymph nodes</td>
+      <td></td>
+      <td></td>
+      <td>Listeria monocytogenes</td>
+      <td>Enhanced proliferation and IFN-γ and IL-17A production upon S. enterica serovar Typhimurium and C. rodentium challenge</td>
+      <td>Khairallah et al., 2022</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Cow</td>
+      <td>γδ</td>
+      <td>In vitro</td>
+      <td>Airway and peripheral blood</td>
+      <td>BCG</td>
+      <td>Increased IFN-γ producing γδ T cells</td>
+      <td></td>
+      <td></td>
+      <td>Guerra-Maupome and McGill, 2019</td>
+    </tr>
+    <tr>
+      <td>γδ</td>
+      <td>In vitro</td>
+      <td>Peripheral blood</td>
+      <td></td>
+      <td></td>
+      <td>BCG</td>
+      <td>Enhanced IL-6 and TNF production upon Escherichia coli, LPS and Pam3CSK4 stimulation; epigenetic rewiring</td>
+      <td>Samuel et al., 2024</td>
+    </tr>
+  </tbody>
+</table>
+
+### Adaptive immune memory of human and non-human primate γδ T cells
 
 Immune memory responses of primate γδ T cells are best characterized in the Vδ2 T cell population. Already in the early 80s, Hoft et al. observed a drastic expansion of γδ T cells after the in vitro stimulation with Mycobacterium tuberculosis of peripheral blood mononuclear cells (PBMCs) from BCG-vaccinated individuals compared to the non-vaccinated donors or placebo recipients (Hoft et al., 1998). The highly reactive γδ T cells were mainly Vδ2 T cell subsets, most likely Vγ9Vδ2 T cell subset (Kabelitz et al., 1991), and their enhanced responsiveness to M. tuberculosis after BCG vaccination was shown to be independent of the helper function of CD4 T cells. Apart from greater expansion, the frequencies of IFN-γ-producing cells upon in vitro re-stimulation were also increased among γδ T cells from BCG-vaccinated individuals (Suliman et al., 2016). Similar observations were made in BCG-vaccinated macaques, which displayed an enhanced expansion of peripheral blood and pulmonary Vδ2 T cells upon reinfection with BCG or M. tuberculosis compared to unvaccinated animals (Shen et al., 2002; Lai et al., 2003). This coincided with improved microbial clearance, suggesting a protective role of the Vδ2 T cell recall responses, which were shown to be specific to the mycobacterial antigens. Altogether, these studies unraveled the potential of γδ T cells to mount adaptive immune memory responses specific to mycobacterial infection. Interestingly, neither BCG vaccination of infants nor re-vaccination of adults induced T cell memory phenotype in γδ T cells (Gela et al., 2022) defined by the expression of CD45RA and CCR7 surface molecules (Sallusto et al., 2004; Sallusto et al., 1999). Although frequencies of terminally differentiated effector CD45RA+CCR7-γδ T cells increased after BCG vaccination, this was accompanied by the increase in frequencies of naïve CD45RA+CCR7+ and a decrease in effector memory CD45RA-CCR7-γδ T cells (Gela et al., 2022). Pathogen-specific recall responses of Vδ2 T cells have also been reported in L.monocytogenes infection (Ryan-Payseur et al., 2012). Rhesus macaques systemically infected with an attenuated L. monocytogenes strain displayed a markedly enhanced in vivo proliferation and effector function, such as cytokine and cytotoxic molecule production and lysing potential of L. monocytogenes-infected cells, by peripheral blood Vδ2 T cells. This subset was also enriched in lung and intestinal mucosa after the secondary challenge with the pathogen compared to the initial challenge. The reduced pathogen burden in the circulation was associated with this increased responsiveness of Vδ2 T cells. The antigen involved in triggering the primary and recall immune responses of Vδ2 T cells, especially Vγ9Vδ2 T cells, in bacterial infections is most likely HMBPP, which is produced by both Mycobacterium (Bailey et al., 2002) and Listeria (Ryan-Payseur et al., 2012). It was used in in vitro stimulation assays of Vδ2 T cells from L. monocytogenes-exposed macaques to demonstrate the stronger induction of effector molecule-producing cells upon secondary infection (Ryan-Payseur et al., 2012). Yet, interestingly, in vitro exposure of human PBMCs to HMBPP and zoledronate resulted in a polyclonal proliferation of Vγ9Vδ2 T cells, questioning an adaptive character of the Vγ9Vδ2 T cell immune responses to phosphoantigens (Fichtner et al., 2020a; Papadopoulou et al., 2019).
 
@@ -73,7 +342,7 @@ Recently, the mRNA SARS-CoV-2 vaccine has been shown to induce a memory phenotyp
 
 Adaptive-like recall responses in response to viruses have also been described in Vδ1 T cells. Cytomegalovirus (CMV) seropositive subjects displayed a higher percentage of Vδ1 T cells with a more restricted TCR repertoire compared to CMV seronegative individuals (Pitard et al., 2008). Furthermore, Vδ1 T cells from CMV- donors displayed a more naïve CD45RA+CD27+CD62L+ phenotype, while those in CMV+ individuals were predominantly of effector/memory CD45RA+CD27-CD28-CD62L- phenotype (Pitard et al., 2008). Upon in vitro stimulation with CMV-infected fibroblasts, Vδ1 T cells from CMV+ patients strongly upregulated the CD107a marker, indicative of cytotoxic activity, compared to Vδ1 T cells from CMV- individuals. Individuals who experienced CMV reactivation after immunosuppressive therapy displayed a rapid secondary expansion of Vδ2- T cells and induction of effector/memory CD45RA+CD27- phenotype, most likely of Vδ1 T cells, compared to individuals who only experienced primary infections. This faster response has been associated with a quicker resolution of the infection. Thus, it has been suggested that the CMV drives an expansion of memory-like Vδ1 T cells, which can readily respond to a CMV secondary challenge (Pitard et al., 2008). Altogether, the increased responsiveness of Vδ2 T cells after restimulation with a related pathogenic stimulus indicates the development of a pathogen-specific immune memory, similar to the classical adaptive immune memory of conventional T cells.
 
-## Adaptive immune memory of murine γδ T cells
+### Adaptive immune memory of murine γδ T cells
 
 Immune memory responses have also been widely studied in different subsets of γδ T cells in mice. Intestinal and intrahepatic γδ T cells have been shown to not only provide immediate immunity by simultaneously producing IFN-γ and IL-17A (Hamada et al., 2008b) but also to develop immune memory upon L. monocytogenes infection (Sheridan et al., 2013; Romagnoli et al., 2016). Mice orally challenged with the pathogen experienced an induction of long-lived resident Vγ6 T cells in mesenteric lymph nodes and exhibited a more rapid and robust response upon secondary and tertiary oral challenge with L. monocytogenes, but it was not observed upon intravenous Listeria or oral Salmonella challenges. The memory γδ T cells protected the animals from secondary infection in a TCR-dependent manner, by clustering with myeloid cells at L. monocytogenes replication foci, producing IL-17A and cooperating with conventional T cells. Altogether, these observations indicate that murine Vγ6 T cells are also able to mount pathogen- and site-specific memory responses.
 
@@ -83,7 +352,7 @@ Immune memory responses against viral infection have also been observed in murin
 
 Similar to human γδ T cells, murine γδ T cells also imprint memory against parasitic infection after the initial exposure (Kumarasingha et al., 2020). Plasmodium infection causes activation and expansion of γδ T cells (Mamedov et al., 2018; Kumarasingha et al., 2020). Splenocytes extracted from Plasmodium chabaudi-infected mice presented a higher number of CD107a+ and IFN-γ-producing γδ T cells after in vitro challenge with P. chabaudi-infected red blood cells when compared to splenocytes from naïve mice (Kumarasingha et al., 2020). The responding cells were predominantly EM CD62L-CD44+ cells, although the frequencies of naïve, memory, and effector subsets did not vary between infected and naive animals. Consistently, γδ EM T cells displayed a similar transcriptional signature to CD8+ memory T cells, and genes related to cytokines, chemokines, antigen-presenting, and cytotoxic properties were upregulated in the γδ EM T cells of the previously infected mice, indicating a transcriptional rewiring, one of the characteristics of immune memory induction. Taken together, these observations suggest that murine γδ T cells are able to form pathogen-specific immune memory.
 
-## Innate immune memory of human and non-human primate γδ T cells
+### Innate immune memory of human and non-human primate γδ T cells
 
 As present reports focused on determining immune recall responses of γδ T cells in a pathogen-specific context, a recent study demonstrated the induction of a pathogen-unspecific memory response by γδ T cells (Shen et al., 2019). Macaques vaccinated with a bacterial-based vaccine containing an attenuated strain of L. monocytogenes exhibited a prolonged expansion of Vδ2 T cells in the circulation and pulmonary compartments, dependent on HMBPP production by the pathogen. After the infection of L. monocytogenes-immunized animals with M. tuberculosis, a higher number of IFN-γ- and perforin-producing Vδ2 T cells in the airway of the immunized animals was observed compared to the HMBPP-deficient L. monocytogenes strain, which contributed to the inhibition of the intracellular M. tuberculosis growth. As a result, the immunized macaques presented a lower pulmonary pathology and less weight loss upon the infection with unrelated bacteria (Shen et al., 2019). This study demonstrated for the first time the development of pathogen-unspecific but HMBPP-dependent memory responses by primate γδ T cells.
 
@@ -93,11 +362,11 @@ Although the activation mechanisms of Vδ2 T cells in viral infections are not f
 
 MMR vaccine is another vaccine besides BCG known to contribute to heterologous protection against nontarget infections (Sørup et al., 2014; Tielemans et al., 2017). Single-cell RNA sequencing (scRNAseq) of the PBMCs isolated from MMR-vaccinated volunteers revealed that γδ T cell population experiences the biggest transcriptional changes among the cellular components of PBMCs after vaccination (Röring et al., 2024). Furthermore, the transcriptome analysis and energy metabolic profiling unraveled a higher protein synthesis and an alteration of glycolytic capacity and mitochondrial dependency of Vδ2 T cells of vaccinated individuals upon restimulation when compared to the non-vaccinated individuals. Furthermore, the TNF and IFN-γ production by Vδ2 T cells significantly increased in MMR-re-vaccinated volunteers when compared to the non-vaccinated donors. Such transcriptional and metabolic rewiring and enhanced responsiveness of Vδ2 T cells against secondary stimulation resemble the classical phenotype of trained immunity in monocytes.
 
-## Innate immune memory of mouse γδ T cells
+### Innate immune memory of mouse γδ T cells
 
 Evidence of trained immunity induction has also been documented in murine γδ T cells. Two similar studies have revealed that local skin inflammation established long-lived memory Vγ4+Vδ4+ T cells capable of enhanced inflammatory reaction upon rechallenge with innate-like ligand imiquimod (IMQ) (Ramírez-Valle et al., 2015; Hartwig et al., 2015). After the initial application of the IMQ, the IL-17-producing γδ T cell population, mainly Vγ4+Vδ4+ T cells, populates the dermis and migrates via blood to lymph nodes and distal skin sites, where it persists for months. Upon re-challenge with IMQ, memory-like Vγ4+Vδ4+ T cells displayed a rapid secondary expansion and produced a higher amount of IL-17 than upon primary challenge, leading to an escalated skin inflammatory response (Ramírez-Valle et al., 2015). Furthermore, the inflamed sites were associated with heightened neutrophil recruitment and more rapid ear thickening upon re-challenge, which was dependent on Vγ4+Vδ4+ T cell presence, indicating that γδ T cell immune memory responses orchestrate other cells of the immune system (Hartwig et al., 2015). Transfer experiments confirmed that memory-like Vγ4+Vδ4+ T cells exhibit enhanced responsiveness (Ramírez-Valle et al., 2015). The memory Vγ4+Vδ4+ T cells displayed increased IL-1R1 surface expression and proliferation in response to IL-1β, suggesting that intrinsic increased sensitivity to IL-1β signaling is the acquired adaptation of memory γδ T cells that allows them to respond more rapidly to a secondary challenge (Ramírez-Valle et al., 2015). Such a rapid and robust secondary response to the innate ligands indicates a potential induction of trained immunity in murine γδ T cells, yet there is a certain specificity as the response to mannan, a polysaccharide causing skin inflammation by activating mannose receptors (Wu et al., 2023), was not enhanced in the IMQ-sensitized mice (Ramírez-Valle et al., 2015). Interestingly, the recall responses seem to be mediated by TCR activation even though IMQ is a TLR –7/8 ligand, suggesting the engagement of numerous immune receptors on γδ T cells (Hartwig et al., 2015). Interestingly, intestinal memory Vγ4+Vδ1+ T cells generated in response to food-borne L. monocytogenes infection seem to be reactive to unrelated bacteria such as Salmonella enterica serovar Typhimurium and Citrobacter rodentium when rechallenged ex vivo and to Yersinia pseudotuberculosis when rechallenged in vivo (Khairallah et al., 2022). Thus, these findings indicate the broadly reactive nature of memory Vγ4+Vδ1+ T cells, suggesting the potential to induce a trained immunity phenotype in these cells.
 
-## Immune memory of bovine γδ T cells
+### Immune memory of bovine γδ T cells
 
 Immune memory responses of γδ T cells have also been reported in other mammals, especially in calves (Guerra-Maupome et al., 2019). M. bovis infection triggered proliferation of CD27+ γδ T cell memory subset in the circulation (Guerra-Maupome et al., 2019). The IFN-γ-producing γδ T cells in circulation and in the airway of BCG-vaccinated cows significantly increased upon stimulation by purified protein derivatives from M. bovis 8 weeks after the vaccination (Guerra-Maupome and McGill, 2019). These studies indicate the induction of adaptive immune memory responses in bovine γδ T cells. Besides, a recent study showed that γδ T cells from BCG-vaccinated calves present an increased IL-6 and TNF production upon stimulation with E. coli, LPS and Pam3CSK4 (Samuel et al., 2024). Importantly, chromatin accessibility analysis further revealed increased promoter accessibility of certain innate immunity-related genes in the trained bovine γδ T cells, which is consistent with the common phenotype of epigenetic reprogramming in trained immunity. Altogether, these observations suggest that BCG can elicit adaptive and innate immune memory responses in bovine γδ T cells.
 

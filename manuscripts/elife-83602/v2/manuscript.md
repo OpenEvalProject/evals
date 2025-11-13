@@ -15,17 +15,17 @@
 
 ### Affiliations
 
-1. https://ror.org/01yc7t268 Department of Biochemistry and Molecular Biophysics, Washington University in St. Louis St Louis United States
-2. https://ror.org/01yc7t268 Medical Scientist Training Program, Washington University in St. Louis Philadelphia United States
-3. https://ror.org/00b30xv10 Department of Biochemistry and Biophysics, University of Pennsylvania Philadelphia United States
-4. https://ror.org/02ttsq026 Molecular, Cellular, and Developmental Biology Department, University of Colorado Boulder Boulder United States
+1. Department of Biochemistry and Molecular Biophysics, Washington University in St. Louis St Louis United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+2. Medical Scientist Training Program, Washington University in St. Louis Philadelphia United States ([ROR:01yc7t268](https://ror.org/01yc7t268))
+3. Department of Biochemistry and Biophysics, University of Pennsylvania Philadelphia United States ([ROR:00b30xv10](https://ror.org/00b30xv10))
+4. Molecular, Cellular, and Developmental Biology Department, University of Colorado Boulder Boulder United States ([ROR:02ttsq026](https://ror.org/02ttsq026))
 5. BioFrontiers Institute Boulder United States
 
 † Corresponding author
 
 ## Abstract
 
-The design of compounds that can discriminate between closely related target proteins remains a central challenge in drug discovery. Specific therapeutics targeting the highly conserved myosin motor family are urgently needed as mutations in at least six of its members cause numerous diseases. Allosteric modulators, like the myosin-II inhibitor blebbistatin, are a promising means to achieve specificity. However, it remains unclear why blebbistatin inhibits myosin-II motors with different potencies given that it binds at a highly conserved pocket that is always closed in blebbistatin-free experimental structures. We hypothesized that the probability of pocket opening is an important determinant of the potency of compounds like blebbistatin. To test this hypothesis, we used Markov state models (MSMs) built from over 2 ms of aggregate molecular dynamics simulations with explicit solvent. We find that blebbistatin’s binding pocket readily opens in simulations of blebbistatin-sensitive myosin isoforms. Comparing these conformational ensembles reveals that the probability of pocket opening correctly identifies which isoforms are most sensitive to blebbistatin inhibition and that docking against MSMs quantitatively predicts blebbistatin binding affinities (R 2 =0.82). In a blind prediction for an isoform (Myh7b) whose blebbistatin sensitivity was unknown, we find good agreement between predicted and measured IC50s (0.67 μM vs. 0.36 μM). Therefore, we expect this framework to be useful for the development of novel specific drugs across numerous protein targets.
+The design of compounds that can discriminate between closely related target proteins remains a central challenge in drug discovery. Specific therapeutics targeting the highly conserved myosin motor family are urgently needed as mutations in at least six of its members cause numerous diseases. Allosteric modulators, like the myosin-II inhibitor blebbistatin, are a promising means to achieve specificity. However, it remains unclear why blebbistatin inhibits myosin-II motors with different potencies given that it binds at a highly conserved pocket that is always closed in blebbistatin-free experimental structures. We hypothesized that the probability of pocket opening is an important determinant of the potency of compounds like blebbistatin. To test this hypothesis, we used Markov state models (MSMs) built from over 2 ms of aggregate molecular dynamics simulations with explicit solvent. We find that blebbistatin’s binding pocket readily opens in simulations of blebbistatin-sensitive myosin isoforms. Comparing these conformational ensembles reveals that the probability of pocket opening correctly identifies which isoforms are most sensitive to blebbistatin inhibition and that docking against MSMs quantitatively predicts blebbistatin binding affinities (R2=0.82). In a blind prediction for an isoform (Myh7b) whose blebbistatin sensitivity was unknown, we find good agreement between predicted and measured IC50s (0.67 μM vs. 0.36 μM). Therefore, we expect this framework to be useful for the development of novel specific drugs across numerous protein targets.
 
 ## Introduction
 
@@ -47,7 +47,7 @@ We hypothesized that blebbistatin potency among myosin-II family members is enco
 
 ## Results
 
-## Blebbistatin’s cryptic binding pocket opens in simulations
+### Blebbistatin’s cryptic binding pocket opens in simulations
 
 We first sought to establish whether the blebbistatin pocket is open in any blebbistatin-free myosin experimental structures or if it is a ‘cryptic’ site. Cryptic pockets are cavities that open and close as a protein fluctuates in solution but are typically closed and therefore hidden in experimental structures.
 
@@ -55,13 +55,19 @@ To assess whether the blebbistatin-binding site is cryptic, we queried the Prote
 
 We find that all known blebbistatin-free experimental structures of the myosin motor domain have a closed blebbistatin pocket (Figure 2A). Not a single blebbistatin-free experimental structure reaches the holo pocket volume, and most blebbistatin-free structures have less than half of the holo pocket volume. In blebbistatin-free myosin experimental structures, a leucine residue in the U50 linker (Allingham et al., 2005), a highly conserved loop in the upper 50 kDa domain, always points into the blebbistatin pocket, creating a steric impediment to binding (Figure 2A inset). While the blebbistatin binding site has previously been annotated as a cryptic pocket, previous analyses were restricted to a subset of blebbistatin-free myosin experimental structures that matched the holo structure’s sequence exactly (Cimermancic et al., 2016). Here, we have shown that all available blebbistatin-free experimental structures of the myosin family lack an open blebbistatin pocket.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/83602/elife-83602-fig2-v2.jpg)
+
+**Figure 2.:** (A) The distribution of pocket volumes from experimental crystal structures queried from the Protein Data Bank shows that the blebbistatin pocket is cryptic. The inset is a random selection of 15 structures from the accompanying distribution with an overlaid blebbistatin molecule in orange. All experimentally determined myosin structures display steric clash with a blebbistatin molecule aligned based on its contact residues in a blebbistatin-bound, or holo, structure (PDB: 1YV3). (B) Blebbistatin pocket volumes in simulations of fast skeletal myosin IIA reveal substantial pocket opening. The blebbistatin pocket volume from a ligand-bound crystal structure (PDB: 1YV3) is delineated by an orange vertical line in both panels. Simulated P(v) corresponds to the probability of adopting a given volume for each bin in the histogram. (C) MD simulations explore open holo-like states. Structure of an open conformation of the blebbistatin binding pocket from MD simulations reveals good structural alignment with the holo crystal structure (0.55 Å root mean square deviation of contact residue backbone heavy atom and Cβ positions). Blebbistatin is shown in orange with the pocket from the MD structure shown as a cyan contour. Selected residues in the blebbistatin pocket (Y269, L270, and F657) have the same backbone and sidechain positions as in the holo crystal structure. Note that reported pocket volumes are smaller than the space available to ligands because of an algorithm choice made to avoid erroneous detection of small pockets (see Materials and methods for details).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/83602/elife-83602-fig2-figsupp1-v2.jpg)
+
 Even if the blebbistatin pocket is closed in blebbistatin-free experimental structures, we reasoned that the pocket might open in excited states accessible in all-atom molecular dynamics (MD) simulations. Recent work demonstrates that in solution myosins sample a broad range of conformations driven by thermal fluctuations (Porter et al., 2020; Muretta et al., 2015), even though all myosin motor domains share a common fold (Robert-Paganin et al., 2020). To assess whether the blebbistatin pocket opens in solution without blebbistatin present, we used molecular dynamics to simulate the motor domain of human fast skeletal myosin IIA (MYH2). Fast skeletal myosin is potently inhibited by blebbistatin (average IC50: 0.3 μM Limouze et al., 2004; Várkuti et al., 2016; Radnai, 2021), so we hypothesized that its blebbistatin pocket would open extensively in simulation.
 
 We constructed Markov State Models (MSMs) from over 80 microseconds (Table 3) of simulations of the actin-free, ADP-phosphate-bound fast skeletal myosin motor domain. MSMs of molecular simulations are network models of free energy landscapes composed of many conformational states and the probabilities of transitioning between these states (Bowman et al., 2014). We constructed MSMs of the conformations seen in the blebbistatin pocket by clustering structures in a kinetically relevant projection of backbone and sidechain dihedral angles (see Materials and methods). To measure blebbistatin pocket opening, we measured pocket volumes at the blebbistatin binding site using the LIGSITE algorithm as described above. We then quantified the probability of pocket opening based on the probability of each structure in the MSM (see Materials and methods).
 
 In contrast to myosin crystal structures, we find that simulations reveal extensive opening of the blebbistatin pocket. The distribution of pocket volumes from simulation is substantially right-shifted relative to the distribution seen in crystal structures (Figure 2B). Even though our simulations were started from a closed blebbistatin-free conformation, all 8 long (>500 nanosecond) independent simulations of fast skeletal myosin IIA exceed the volume seen in the blebbistatin-bound crystal structure (Figure 2—figure supplement 1). Indeed, the blebbistatin pocket is open in about one-third of conformations at equilibrium (popen = 0.31). When we visually inspected structures from simulation that had reached the holo pocket volume (Figure 2C), we find that the blebbistatin pocket geometry closely matches that of the blebbistatin-bound crystal structure (the R.M.S.D. for the structure depicted in Figure 2C was 0.55 Å when considering the backbone heavy atom and Cβ positions of residues in contact with blebbistatin). While the leucine (L270 in skeletal muscle myosin IIA) in the U50 linker always points into the blebbistatin pocket in blebbistatin-free crystal structures, in simulations this leucine residue rotates toward its blebbistatin-bound position (Figure 2C). Thus, we find that simulations can capture blebbistatin cryptic pocket opening that is not seen in myosin crystal structures and that MSMs can be used to quantify the probability of blebbistatin pocket opening.
 
-## Blebbistatin’s cryptic pocket preferentially opens in the ADP*Pi state
+### Blebbistatin’s cryptic pocket preferentially opens in the ADP*Pi state
 
 Given that blebbistatin’s cryptic pocket opens in simulation, we wondered if pocket opening was dependent on the nucleotide present in the myosin active site. Biochemical experiments have shown that blebbistatin binds to rabbit fast skeletal muscle myosin with ~10-fold greater affinity when myosin is bound to ADP and phosphate instead of ATP (Kovács et al., 2004). Hence, we hypothesized that blebbistatin pocket opening would be more likely in simulations of myosin bound to ADP*Pi than it would be in simulation of myosin bound to ATP.
 
@@ -73,7 +79,7 @@ We find that while blebbistatin pocket opening occurs in both nucleotide states,
 
 **Figure 3.:** (A) Distributions of skeletal muscle myosin IIA blebbistatin pocket volumes in the ATP-bound state and ADP*Pi-bound state demonstrate that the blebbistatin pocket is more likely to open in the ADP*Pi-bound state, consistent with biochemical experiments which predict tighter binding between blebbistatin and myosin when myosin is bound to ADP*Pi. (B) The probability of adopting compatible structures (i.e. structures with pocket volumes equal to or greater than the blebbistatin-bound crystal structure) is higher when myosin is bound to ADP and phosphate. Error bars represent estimate of standard error of the mean from 250 trials of bootstrapping where trajectories were drawn with replacement from the entire dataset (see Materials and methods). Note that reported pocket volumes are smaller than the space available to ligands because of an algorithm choice made to avoid erroneous detection of small pockets (see Materials and methods for details).
 
-## The probability of cryptic pocket opening predicts trends in blebbistatin potency
+### The probability of cryptic pocket opening predicts trends in blebbistatin potency
 
 We reasoned that an important determinant of how potently blebbistatin inhibits a myosin isoform is how likely the blebbistatin pocket opens. If pocket opening is more likely in one isoform, then stabilizing the open state should be easier than in an isoform where pocket opening is less probable. Thus, we hypothesized that the blebbistatin pocket would be more likely to open in myosin isoforms more potently inhibited by blebbistatin (i.e. those with lower IC50s).
 
@@ -81,13 +87,37 @@ We first assessed whether pocket opening probabilities could distinguish blebbis
 
 We find that the probability of adopting a pocket conformation compatible with blebbistatin binding is higher among myosin-II isoforms compared to other isoforms. We observe large differences in the blebbistatin pocket volume distributions between MSMs of myosin-IIs and non-myosin-IIs (Figure 4). In simulations of unconventional myosin-V and myosin-Ib, the blebbistatin pocket stays entirely closed despite almost 300 microseconds of aggregate simulation time per isoform. In contrast, all myosin-IIs sample conformations with pocket volumes that exceed the volume of a blebbistatin-bound crystal structure. Interestingly, among myosin-IIs the probability of pocket opening (smooth muscle myosin <nonmuscle myosin IIb < β-cardiac myosin) correctly predicts the rank order of IC50 values (Figure 4—figure supplement 1).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/83602/elife-83602-fig4-v2.jpg)
+
+**Figure 4.:** MSM-weighted distributions of blebbistatin pocket volumes in simulations of nucleotide-free isolated myosin motor domains show that myosin-IIs (top row) are more likely to exceed the blebbistatin pocket volume of a holo crystal structure (PDB: 1YV3, orange line) than non-class II myosins. Among myosin-IIs, those with lower IC50s (Limouze et al., 2004; Eddinger et al., 2007; Wang et al., 2008; Zhang et al., 2017; Várkuti et al., 2016; Radnai, 2021) have more right-shifted pocket volume distributions. The overall opening probabilities between these isoforms can be visualized in Figure 4—figure supplement 1. Note that reported pocket volumes are smaller than the space available to ligands because of an algorithm choice made to avoid erroneous detection of small pockets (see Materials and methods for details).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/83602/elife-83602-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Structural states were considered compatible if the pocket volume at the blebbistatin binding site matched or exceeded that of a holo crystal structure (PDB: 1YV3). Error bars represent the standard error of the mean from 250 trials of bootstrapping where trajectories were drawn with replacement from the entire dataset.
+
 Thus, blebbistatin pocket opening differs between divergent myosin isoforms when there are large sequence differences at the binding site. While myosin-IIs contain small sidechains at the A466 position (skeletal muscle myosin numbering), other myosin families contain aromatic sidechains which point into the pocket, reducing the pocket volume available for blebbistatin binding (Figure 1B and D). Moreover, while myosin-II isoforms have a conserved pocket that opens during simulations of nucleotide-free motor domains, the probability of opening appears to correlate with blebbistatin’s potency.
 
 To relate the probability of pocket opening more precisely to blebbistatin potency, we ran simulations of several sensitive myosin-II isoforms (β-cardiac myosin, nonmuscle myosin IIA, and smooth muscle myosin) that exhibit a broad range of blebbistatin IC50 values (Figure 1B). Since blebbistatin preferentially inhibits myosin when the motor domain is bound to ADP and phosphate (Kovács et al., 2004), we ran these MD simulations with ADP*Pi in the active site. Each of the myosin-II isoforms was launched from a closed, blebbistatin-free starting conformation (Figure 5A). We observed pocket opening in all simulations of myosin-II isoforms, but the likelihood of opening was substantially enhanced in simulations of fast skeletal muscle myosin IIA and β-cardiac myosin. Indeed, in simulations of both skeletal muscle myosin IIA and β-cardiac myosin, a rolling average (window of 10 ns) of pocket volumes exceeds the holo volume for over 500 ns while in simulations of nonmuscle myosin IIA and smooth muscle myosin the pocket only opens transiently a handful of times (Figure 5, Figure 5—figure supplement 2).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/83602/elife-83602-fig5-v2.jpg)
+
+**Figure 5.:** (A-D) Representative pocket volume trajectory traces for several myosin-II isoforms show that pocket opening occurs with greater frequency and that the pocket stays open for longer in those isoforms more potently inhibited by blebbistatin (top row). The dotted orange line delineates the blebbistatin pocket volume in a holo crystal structure (PDB ID: 1YV3). Transparent blue lines indicate raw data while the opaque blue lines are a 10 ns rolling average. (E) Blebbistatin pocket opening is highly probable (>0.25) in skeletal muscle myosin II and β-cardiac myosin but highly unlikely (<0.01) for nonmuscle myosin IIA and smooth muscle myosin. A conformation was considered compatible if its blebbistatin pocket volume exceeded the pocket volume of a holo crystal structure (PDB ID: 1YV3). Conformations were weighted by their equilibrium probability in Markov State Models of the blebbistatin pocket. Error bars show bootstrapped estimate of standard error of the mean from 250 trials. Note that reported pocket volumes are smaller than the space available to ligands because of an algorithm choice made to avoid erroneous detection of small pockets (see Materials and methods for details).
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/83602/elife-83602-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** We determined the open pocket lifetime from trajectory traces of pocket volume. Specifically, we took a 10 ns window average and determined how long the pocket volume exceeded that of the holo structure (PDB: 1YV3) for each opening event (i.e. trajectory time from opening to closing). For smooth muscle myosin and nonmuscle myosin 2 A, a 10 ns rolling window average never exceeded the holo volume, although individual structures do.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/83602/elife-83602-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** Error bars show standard error of mean VAMP-2 score.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/83602/elife-83602-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** The gray area indicates the region where timescales become equal to or smaller than the lag time and can no longer be resolved.
+
 We find that the probability of pocket opening is larger for myosin-II isoforms more potently inhibited by blebbistatin. To quantify probabilities of pocket opening, we constructed a MSM of the conformations seen in the blebbistatin pocket for each isoform separately. We then computed the blebbistatin pocket volume for all structures visited by the simulations, assigned a probability to each structure based on the MSM, and found the overall probability of reaching a pocket volume matching or exceeding that of a holo crystal structure (see Materials and methods). Among myosin-IIs, the probability of pocket opening is substantially higher for fast skeletal myosin IIA and β-cardiac myosin than it is for nonmuscle myosin IIA and smooth muscle myosin (Figure 5E). Smooth muscle myosin has the lowest probability of pocket opening (~0.0005), so its free energy difference between open and closed states is the largest. Similarly, nonmuscle myosin IIA has a slightly larger but still low probability of pocket opening (~0.001), consistent with its intermediate IC50. Conversely, both fast skeletal myosin IIA (popen = 0.31) and β-cardiac myosin (popen = 0.46) have large probabilities of adopting open states in their MSMs. Given that β-cardiac myosin has a higher opening probability but is less sensitive to blebbistatin, we wondered if volume is a useful, yet incomplete descriptor, for assessing differences in blebbistatin affinity. To test this hypothesis, we turned to molecular docking to see if we could quantitatively predict the binding affinity for blebbistatin between these myosin-II isoforms by using ensembles of structures from our simulations.
 
-## MSM-docking quantitatively predicts blebbistatin’s potency
+### MSM-docking quantitatively predicts blebbistatin’s potency
 
 We reasoned that molecular docking could improve our ability to predict blebbistatin’s potency by considering the chemical environment of the pocket rather than just the volume available to it. Some of the states we had labeled as closed based on pocket volume, especially those with volumes slightly less than the holo crystal structure, might be able to accommodate blebbistatin in alternate poses. In contrast, some open states may be less compatible with binding than others. We have previously shown that docking compounds to a diverse set of conformations from a Markov State Model improves agreement with experiment (Hart et al., 2016). In this work, we wished to dock to open and closed structures from the ensemble to generate a robust estimate of the free energy of blebbistatin binding.
 
@@ -96,6 +126,26 @@ To determine whether crystal structures were sufficient to explain differences i
 Next, we docked blebbistatin to the ensemble of structures represented in our MSMs. Specifically, we used AutoDock Vina to dock blebbistatin against representative structures from each state of our MSM within a box centered on the blebbistatin binding site (see Materials and methods). After completing docking, we investigated both the highest scoring poses and those poses with the lowest blebbistatin RMSD from holo. Encouragingly, the highest scoring pose for skeletal muscle myosin and β-cardiac myosin is very similar to blebbistatin’s pose in the previously determined experimental holo crystal structure (RMSD <3 Å for the ligand heavy atoms, Figure 6—figure supplement 3). All four myosin-II isoforms had docked poses with ligand heavy atom RMSD <3 Å from the holo pose, but the conformational ensembles of skeletal muscle and β-cardiac myosin have a substantially higher probability of adopting conformations where blebbistatin docks in holo-like poses (Figure 6—figure supplement 2).
 
 We find that computationally predicted blebbistatin binding free energies based on state populations from our Markov State Models closely match experimental values. To calculate a blebbistatin binding free energy for each isoform, we assigned a probability to each structure from docking based on the overall probability of that structure’s MSM state and the number of other structures that were mapped to that MSM state (see Materials and methods). Finally, we aggregated the docking results by finding a weighted average of binding constants and converting this value to a free energy of binding. To assess the accuracy of these predictions, we pooled IC50 measurements from all available experiments and converted these measurements to binding free energies under the assumption that IC50 was essentially equivalent to Ki (see Materials and methods for detailed rationale). When we compared the predicted binding affinity of blebbistatin from docking to experimental averages, we find that these parameters are well correlated (Figure 6A, R2=0.82). Moreover, we note that the absolute value of our predictions of binding free energy are in good agreement with binding affinities estimated from experiment (root mean square error of 0.7 kcal/mol). Thus, our results suggest that docking to the ensemble of structures with MSM weighting provides an accurate way to rapidly assess the relative binding affinity of blebbistatin across myosin isoforms.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/83602/elife-83602-fig6-v2.jpg)
+
+**Figure 6.:** (A) Predictions from MSM-docking are highly correlated to experimental values (R2=0.82) and most predictions are within 1 kcal/mol of experimental values. Error bars for predicted free energies of binding represent bootstrapped estimate of standard error of the mean from 250 trials. Error bars for experimental values show the standard error of the IC50 or Ki converted to a binding free energy. (B) An NADH-linked ATPase assay indicates that MYH7b is highly sensitive to blebbistatin inhibition (IC50: 0.36 μM), consistent with the prediction from MSM-docking. Data show the mean ATPase activity ± standard deviation across 5 experimental replicates (2 biological replicates, each with two or three technical replicates).
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/83602/elife-83602-fig6-figsupp1-v2.jpg)
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/83602/elife-83602-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** Points are colored by density with bright colors indicate areas of high density.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/83602/elife-83602-fig6-figsupp3-v2.jpg)
+
+![Figure 6—figure supplement 4.](https://cdn.elifesciences.org/articles/83602/elife-83602-fig6-figsupp4-v2.jpg)
+
+![Figure 6—figure supplement 5.](https://cdn.elifesciences.org/articles/83602/elife-83602-fig6-figsupp5-v2.jpg)
+
+![Figure 6—figure supplement 6.](https://cdn.elifesciences.org/articles/83602/elife-83602-fig6-figsupp6-v2.jpg)
+
+**Figure 6—figure supplement 6.:** ATPase was measured using an NADH-linked assay. Error bars represent standard deviation across four trials (two biological replicates with two technical replicates each).
 
 To test our ability to make blind predictions with this approach, we computationally and experimentally interrogated blebbistatin inhibition of a sarcomeric myosin-II isoform called Myh7b whose sensitivity to blebbistatin had not been determined. Myh7b’s blebbistatin binding site is identical to β-cardiac myosin’s. However, there are numerous sequence differences immediately surrounding blebbistatin’s binding site (7 positions that differ between Myh7b and β-cardiac myosin within 1 nm of blebbistatin’s binding site). In simulations of a homology model of its motor domain, Myh7b had substantial pocket opening (Figure 6—figure supplement 5). Moreover, when we docked to representative structures from the Myh7b simulations and aggregated predicted binding affinities using its MSM, we predict that the binding affinity of blebbistatin for Myh7b is –8.8 kcal/mol. Thus, we hypothesized that Myh7b would be highly sensitive to blebbistatin inhibition and that its IC50 would be more similar to the IC50 of fast skeletal and β-cardiac myosin than that of smooth muscle myosin.
 
@@ -119,21 +169,188 @@ Finally, our results highlight the general capacity of computational modeling to
 
 ## Materials and methods
 
-## Structural bioinformatics
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>β-MyHC S1</td>
+      <td>UNIPROT: P12883</td>
+      <td></td>
+      <td>amino acids 1–842</td>
+    </tr>
+    <tr>
+      <td>Gene (H. sapiens)</td>
+      <td>MYH7b S1</td>
+      <td>PMID:36334627</td>
+      <td></td>
+      <td>amino acids 1–850</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>C2C12 cells</td>
+      <td>PMID:20080549ATCC</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Blebbistatin</td>
+      <td>Selleckchem</td>
+      <td>S7099</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GROMACS</td>
+      <td>https://doi.org/10.1016/j.softx.2015.06.001</td>
+      <td></td>
+      <td>Version 2021.1</td>
+    </tr>
+  </tbody>
+</table>
+
+### Structural bioinformatics
 
 We queried the PDB for all experimental structures of myosin motor domains with a sequence identity cutoff of 10% to hs MYH7, resolution ≤ 4.0 Å, and a BLAST E-value less than 0.1. All PDBs satisfying these criteria were downloaded for further analysis. Some of these PDB files contained fragments of motor domains; therefore, the resulting database of PDBs was parsed further by selecting the largest chain in each crystal structure if the sequence was >600 amino acids. Structures containing blebbistatin, or blebbistatin derivatives, were also excluded from the set (PDB: 6Z7U, 6YSY, 3MJX, 3BZ8,3BZ7, 3BZ9, 1YV3, 3MYK, 3MYH). In total, our set included 124 myosin experimental structures and 23 unique myosin sequences (11 of which were from the myosin-II family).
 
 A multiple sequence alignment was performed with 1YV3 as reference. The resulting alignment was used to identify ligand binding site for the blebbistatin binding pocket and pocket volumes were calculated on each of these structures with the LIGSITE pocket detection algorithm (Hendlich et al., 1997) with a minimum rank of 6, probe radius of 0.14 nm, and a minimum cluster size of 3 grid points.
 
-## Preparation of homology models
+### Preparation of homology models
 
 Initial structural models (i.e. starting structures) for each myosin isoform were generated with homology modeling using SWISS-MODEL (Waterhouse et al., 2018). Crystal structures for simulations were selected based on their sequence similarity to the isoform of interest. Higher resolution structures were prioritized. For 5N6A, the converter and N-terminal regions of the protein were replaced with the corresponding converter and N-terminal regions from 5N69 because these regions were poorly resolved in 5N6A. Below, the UniprotID of the respective human myosin isoform are provided as well as the relevant crystal structures used for modeling (Table 1).
 
+**Table 1.**
+ Homology models prepared for this study.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Isoform</th>
+      <th>Gene</th>
+      <th>UniprotID</th>
+      <th>Templatestructure</th>
+      <th>Structural state / Nucleotide state</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Fast Skeletal</td>
+      <td>MYH2</td>
+      <td>Q9UKX2</td>
+      <td>5N6A</td>
+      <td>PPS (ADP*Pi)</td>
+    </tr>
+    <tr>
+      <td>β-Cardiac</td>
+      <td>MYH7</td>
+      <td>P12883</td>
+      <td>5N6A</td>
+      <td>PPS (ADP*Pi)</td>
+    </tr>
+    <tr>
+      <td>Nonmuscle IIA</td>
+      <td>MYH9</td>
+      <td>P35579</td>
+      <td>5I4E</td>
+      <td>PPS (ADP*Pi)</td>
+    </tr>
+    <tr>
+      <td>Smooth</td>
+      <td>MYH11</td>
+      <td>P35749</td>
+      <td>1BR2</td>
+      <td>PPS (ADP*Pi)</td>
+    </tr>
+    <tr>
+      <td>MYH7b</td>
+      <td>MYH7B</td>
+      <td>A7E2Y1</td>
+      <td>5N6A</td>
+      <td>PPS (ADP*Pi)</td>
+    </tr>
+    <tr>
+      <td>Fast Skeletal</td>
+      <td>MYH2</td>
+      <td>P12883</td>
+      <td>6FSA</td>
+      <td>PR (ATP)</td>
+    </tr>
+  </tbody>
+</table>
+
+_PPS indicates prepowerstroke while PR indicates post rigor._
+
 Table 2 provides the sequence identity and sequence similarity between the modeled sequence and template structure’s sequence.
+
+**Table 2.**
+ Sequence similarity between sequence used for homology modeling and template structures.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene</th>
+      <th>Templatestructure</th>
+      <th>Sequence identity</th>
+      <th>Sequence similarity</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MYH2</td>
+      <td>5N6A</td>
+      <td>80%</td>
+      <td>88%</td>
+    </tr>
+    <tr>
+      <td>MYH7</td>
+      <td>5N6A</td>
+      <td>96%</td>
+      <td>98%</td>
+    </tr>
+    <tr>
+      <td>MYH9</td>
+      <td>5I4E</td>
+      <td>78%</td>
+      <td>90%</td>
+    </tr>
+    <tr>
+      <td>MYH11</td>
+      <td>1BR2</td>
+      <td>94%</td>
+      <td>96%</td>
+    </tr>
+    <tr>
+      <td>MYH7B</td>
+      <td>5N6A</td>
+      <td>69%</td>
+      <td>85%</td>
+    </tr>
+    <tr>
+      <td>MYH2</td>
+      <td>6FSA</td>
+      <td>80%</td>
+      <td>88%</td>
+    </tr>
+  </tbody>
+</table>
 
 We note that the prepowerstroke state structures of myosin-IIs share very high structural similarity (less than 1 Å in C-α RMSD, Supplementary file 1).
 
-## Molecular dynamics simulations
+### Molecular dynamics simulations
 
 GROMACS (Abraham et al., 2015) was used to prepare and to simulate all proteins using the CHARMM36m force fields (Huang et al., 2017). The protein structure was solvated in a dodecahedral box of TIP3P water (Jorgensen et al., 1983) that extended 1 nm beyond the protein in every dimension. Thereafter, sodium and chloride ions were added to the system to maintain charge neutrality and 0.1 M NaCl concentration. Each system was minimized using steepest descent until the maximum force on any atom decreased below 1000 kJ/(mol x nm). The system was then equilibrated with all atoms restrained in place at 300 K maintained by the Bussi-Parinello thermostat (Bussi et al., 2007) and the Parrinello-Rahman barostat (Parrinello and Rahman, 1981).
 
@@ -141,7 +358,7 @@ Production simulations were performed in the CHARMM36m forcefield. Simulations w
 
 Molecular dynamics simulations were initially performed in parallel from single starting structures first on our in-house supercomputing cluster or on Oracle Cloud Infrastructure using a combination of Tesla P100, Quadro RTX 6000, and NVIDIA RTX A5000 nodes. Five starting structures were obtained from RMSD clustering this initial trajectory data based on the pocket backbone and C-β positions. These starting structures were then used for additional simulations on Folding@home (Shirts and Pande, 2000) (750 clones initiated with different velocities for each starting structure).
 
-## Markov State Models
+### Markov State Models
 
 To construct a Markov State Model (Bowman et al., 2014) of the blebbistatin pocket, we first defined a subset of features that were relevant to blebbistatin pocket opening. We used backbone (phi, psi) and sidechain dihedrals of residues within 5 Å of the blebbistatin molecule as an input set of features describing the blebbistatin pocket.
 
@@ -151,46 +368,128 @@ To determine the number of microstates in our Markov State Model, we used a cros
 
 Finally, Markov state models of the blebbistatin pocket were fit for each isoform separately using MLE. Lag times were chosen by the logarithmic convergence of the implied timescales test (Pande et al., 2010). MSM construction was performed using the PyEMMA software package (Scherer et al., 2015). Details for each model can be found in Table 3.
 
+**Table 3.**
+ Simulation length and Markov State Model hyperparameters for myosin isoforms.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>System</th>
+      <th>Structural state</th>
+      <th>Number of cluster centers</th>
+      <th>Lag time (ns)</th>
+      <th>Total simulation time (µs)</th>
+      <th>Median trajectory length(ns)</th>
+      <th>Maximum trajectory length(ns)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Skeletal Muscle Myosin</td>
+      <td>ADP*Pi</td>
+      <td>50</td>
+      <td>5</td>
+      <td>89.0</td>
+      <td>21.2</td>
+      <td>1500</td>
+    </tr>
+    <tr>
+      <td>β-Cardiac Muscle Myosin</td>
+      <td>ADP*Pi</td>
+      <td>100</td>
+      <td>5</td>
+      <td>90.1</td>
+      <td>21.0</td>
+      <td>1500</td>
+    </tr>
+    <tr>
+      <td>Nonmuscle Myosin IIA</td>
+      <td>ADP*Pi</td>
+      <td>100</td>
+      <td>8</td>
+      <td>86.7</td>
+      <td>20.0</td>
+      <td>1500</td>
+    </tr>
+    <tr>
+      <td>Smooth Muscle Myosin</td>
+      <td>ADP*Pi</td>
+      <td>50</td>
+      <td>5</td>
+      <td>87.0</td>
+      <td>20.0</td>
+      <td>1500</td>
+    </tr>
+    <tr>
+      <td>Skeletal Muscle Myosin</td>
+      <td>ATP</td>
+      <td>100</td>
+      <td>5</td>
+      <td>2.7</td>
+      <td>910.0</td>
+      <td>925</td>
+    </tr>
+    <tr>
+      <td>Myosin 7b</td>
+      <td>ADP*Pi</td>
+      <td>100</td>
+      <td>5</td>
+      <td>100.8</td>
+      <td>375.0</td>
+      <td>1500</td>
+    </tr>
+  </tbody>
+</table>
+
 To compare blebbistatin pocket opening in myosin-IIs with opening in other myosin families, we have also used an existing dataset of myosin motor domain MSMs. These MSMs were constructed from AMBER03 force field simulations gathered on folding@home. Clustering was performed using the Euclidean distance between residue sidechain solvent accessible surface area as a distance metric. MSMs were fit for each isoform using row normalization after applying a 1 /n pseudocount. Full simulation, clustering, and MSM construction details can be found in Porter et al., 2020.
 
-## Pocket analysis
+### Pocket analysis
 
 We calculated pocket volumes for the blebbistatin pocket using the LIGSITE algorithm (Hendlich et al., 1997). Specifically, we used the LIGSITE implementation in the enspara software package (Porter et al., 2019b) with a minimum rank of 6, probe radius of 0.14 nm, and a minimum cluster size of 3 grid points. We chose a large probe radius to avoid the erroneous detection of pockets that are too small to be relevant for ligand binding. For a grid point to be part of a pocket, LIGSITE requires it be further than the probe radius and van der Waals radius of nearby protein atoms (i.e. its minimum distance to the nearest protein atom must be greater than the sum of the closest atom’s van der Waals radius and the probe radius). As a result, our reported volumes represent the core of a pocket and are smaller than the space available to ligands. After generating pocket grid points for a myosin structure, we filtered those grid points in the blebbistatin pocket if they were within 2.5 Å of an aligned blebbistatin molecule. We employed a local alignment using homologous residues within 5 Å of blebbistatin. Finally, we required that pockets be continuous and selected the largest cluster of grid points defined as having a shortest inter-grid point distance of 1.5 Å.
 
 To generate distributions of pocket volumes, we followed two different procedures. For the previously published dataset (Porter et al., 2020), we calculated volumes for each representative structure in the Markov State Model and weighted by the equilibrium probability of each state in the MSM. This was done because (a) the size of the dataset prohibited calculating pockets for all simulation frames and (b) these MSMs contained thousands of states and hence were likely to capture a substantial degree of heterogeneity in the blebbistatin pocket. For the new simulations generated for this work, we calculated pocket volumes for every structure we saved from our simulations (save rate of one frame per 20 ps) and then weighted each of these volumes by the probability of a given structure in that isoform’s MSM, specifically the equilibrium probability of the MSM state that the structure is assigned to divided by the number of structures assigned to that MSM state. This second approach allows us to track the temporal evolution of pocket volumes in individual trajectories.
 
-## Docking
+### Docking
 
-Docking against individual structures was performed using smina (Koes et al., 2013; Trott and Olson, 2010). For each MSM state, we randomly extracted either 3 different structures from that state or πi*2000 different structures if that number exceeded 3/2000 (where πi is the equilibrium probability of the MSM state). PDB files were converted to PDBQT files using AutoDockFR (ADFR suite). The ligand PDBQT files were generated using the same ADFR suite. The ligand charges were assigned using antechamber. To center the docking grid box on the blebbistatin binding pocket, we first selected backbone heavy atoms from residues within 0.5 nm of blebbistatin in its holo structure (PDB: 1YV3) and aligned this selection using an iterative procedure described in Grossfield et al., 2007. We then used the centroid of the average structure from the final alignment as the center of our box— (0,0,0) in that coordinate system. All alignment and frame selection was done using LOOS (Romo et al., 2014; Romo and Grossfield, 2009) For the docking search, we set the exhaustiveness to 8 and used the smina scoring function. Jug (Coelho, 2017) was used to parallelize docking while gnu parallel (USENIX, 2022) was used to parallelize receptor parameterization.
+Docking against individual structures was performed using smina (Koes et al., 2013; Trott and Olson, 2010). For each MSM state, we randomly extracted either 3 different structures from that state or $\pi_{i}*2000$ different structures if that number exceeded 3/2000 (where $\pi_{i}$ is the equilibrium probability of the MSM state). PDB files were converted to PDBQT files using AutoDockFR (ADFR suite). The ligand PDBQT files were generated using the same ADFR suite. The ligand charges were assigned using antechamber. To center the docking grid box on the blebbistatin binding pocket, we first selected backbone heavy atoms from residues within 0.5 nm of blebbistatin in its holo structure (PDB: 1YV3) and aligned this selection using an iterative procedure described in Grossfield et al., 2007. We then used the centroid of the average structure from the final alignment as the center of our box— (0,0,0) in that coordinate system. All alignment and frame selection was done using LOOS (Romo et al., 2014; Romo and Grossfield, 2009) For the docking search, we set the exhaustiveness to 8 and used the smina scoring function. Jug (Coelho, 2017) was used to parallelize docking while gnu parallel (USENIX, 2022) was used to parallelize receptor parameterization.
 
-The overall free energy of binding from docking to an MSM can be written as:ΔGtotal=−RTln(∑πiKeqi)
+The overall free energy of binding from docking to an MSM can be written as:
 
-where πi is the equilibrium probability of the MSM state and Keqi is the equilibrium association constant for a MSM microstate calculated from the docking score for that MSM state. Since the scoring function returns docking scores in kcal/mol, it is straightforward to convert to Keqi.
+$$
+ΔG_{total}=−RTln(\sum\pi_{i}K_{eqi})
+$$
+
+where $\pi_{i}$ is the equilibrium probability of the MSM state and Keqi is the equilibrium association constant for a MSM microstate calculated from the docking score for that MSM state. Since the scoring function returns docking scores in kcal/mol, it is straightforward to convert to Keqi.
 
 We note that this formula directly considers the configurational entropy of the protein by taking a weighted average of the micro-association constants over all the states in the apo MSM. Closed states will receive unfavorable (i.e. more positive) docking scores reflecting in small association constants while open states will receive favorable (i.e. more negative) docking scores resulting in large association constants. Similarly, high probability states will contribute more to the weighted sum of micro-association constants, which is the macro-association constant of the ligand binding reaction. Hence, a protein that pays a high entropic penalty for ligand binding because it has only a few, low probability open states will have a small macro-association constant and an unfavorable overall MSM-docking score. Conversely, a protein that pays a low entropic penalty for ligand binding because of its many, high probability open conformers will have a large macro-association constant and hence a more favorable overall MSM-docking score.
 
-Because we docked to multiple structures for each MSM state, we found a consensus docking score by using the following equation:ΔGtotal=−kBTln(∑πsfNKeqi)
+Because we docked to multiple structures for each MSM state, we found a consensus docking score by using the following equation:
+
+$$
+ΔG_{total}=−k_{B}Tln(\sum\frac{\pi_{s_{f}}}{N}K_{eqi})
+$$
 
 where f is a structure from simulation, s is the MSM state that structure belongs to, N is the number of structures from that MSM state for which docking was performed, and π is the equilibrium probability of that MSM state.
 
-## Protein expression and purification
+### Protein expression and purification
 
 Recombinant myosin was produced as previously described (Sommese et al., 2013; Deacon et al., 2012; Lee et al., 2023; Resnicow et al., 2010) with minor changes. Adenoviruses encoding human β-MyHC S1 (amino acids 1–842) and human MYH7b S1 (amino acids 1–850) followed by a flexible GSG linker and C-terminal PDZ binding peptide (RGSIDTWV) were used to infect differentiated C2C12 cells. The source of the cell lines was ATCC. They were not authenticated or tested for mycoplasma because they were exclusively used to produce protein, and their identity does not impact any of the results in the manuscript. C2C12 cells were harvested 4 days after infection, flash frozen in liquid nitrogen, and stored at –80 °C. Cell pellets were thawed and lysed using dounce homogenization in 50 mM Tris pH 8.0, 200 mM NaCl, 4 mM MgCl2, 0.5% Tween-20, 5 mM DTT, 1 mM ATP, 0.2 mM PMSF, and 1 X protease inhibitor cocktail (Millipore Sigma/Roche, 11873580001). Lysates were clarified by centrifugation at 39,000 x g for 25 min at 4 °C. The supernatant was filtered through 5 µM and 1.2 µM filters and applied to a column containing SulfoLink resin (ThermoFisher, 20402) coupled to PDZ. The column was washed with 30 mM Tris pH 7.5, 50 mM KCl, 5 mM MgCl2, 1 mM DTT, and 1 mM ATP and myosin S1 (bound by endogenous C2C12 light chains) was eluted using a peptide with tighter affinity for PDZ (WQTWV). Proteins were dialyzed against a storage buffer containing 20 mM MOPS pH 7.0, 25 mM KCl, 5 mM MgCl2 and 10% sucrose, flash frozen in liquid nitrogen, and stored at –80 °C.
 
 Actin was purified from porcine ventricles as previously described (Greenberg et al., 2014; Clippinger et al., 2019). The concentration of actin was determined spectroscopically as previously described (Greenberg et al., 2014; Clippinger et al., 2019).
 
-## NADH-linked ATPase measurements
+### NADH-linked ATPase measurements
 
 Actin-activated ATPase rates were measured across a range of blebbistatin concentrations using the NADH-coupled assay in a 96-well plate (De La Cruz and Ostap, 2009) with a 0.1 μM myosin S1 concentration and 10 μM actin concentration. Before the experiment, actin was polymerized by dialysis in ATPase buffer containing 20 mM Imidazole, 10 mM KCl, 2 mM MgCl2, and 1 mM DTT followed by 1.1 x molar ratio phalloidin stabilization. Experiments were conducted in ATPase buffer with the addition of the NADH-coupled enzymes (0.5 mM phospho(enol)pyruvate [Sigma, P0564], 0.47 mM NADH [Sigma, N7410], 100 U/mL pyruvate kinase [Sigma, P9136], and 20 U/mL lactate dehydrogenase [Sigma, L1254]). Blebbistatin (Selleckchem, S7099) was dissolved in DMSO. The blebbistatin concentration was varied using serial dilutions. Before gathering data, 2 mM ATP was added to each well. Experiments were performed at 25 ° C using a BioTek Syngergy H1 microplate reader. Absorbance was monitored at 340 nm and it decreased linearly with time. Rates for each well were determined based on the linear fitting of the absorbance as a function of time. A control well containing actin, no myosin, and 20 μM blebbistatin was used as a baseline. Finally, a Hill equation was fit to the data to determine an IC50 for each experiment. Each data point consists of five technical replicates.
 
-## Statistical analysis
+### Statistical analysis
 
 Bootstrapping was performed to generate error bars for each of the reported simulation measurements. Specifically, we performed 250 trials where we drew N trajectories with replacement from each set of N trajectories, constructed a MSM with the drawn trajectories, and recomputed the observable of interest (e.g. MSM-weighted docking score).
 
-## IC50 to Ki Conversion
+### IC50 to Ki Conversion
 
-The mechanism by which blebbistatin inhibits skeletal muscle myosin’s actin-activated ATPase activity has been characterized in detail (Kovács et al., 2004). These experiments indicate that blebbistatin binds with the highest affinity to myosin when it is in its ADP*Pi state capable of weakly binding to actin but also has non-negligible affinity for myosin in its ATP-bound state. Thus, blebbistatin can be considered a mixed inhibitor of actin-activated ATPase activity. The Km for actin activation of S1 ATPase was 24 μM while the actin concentration used to determine blebbistatin’s IC50 for skeletal muscle myosin was 43 μM (Kovács et al., 2004). Given that blebbistatin’s affinity for the ADP*Pi state is 10 x that of its affinity for the ATP-bound state and that KmS=0.56, we conclude that IC50 is essentially equal to Ki for skeletal muscle myosin (Cheng and Prusoff, 1973). We assume that the same mechanism of inhibition applies to the other myosin-II isoforms and that IC50s for other myosin-II isoforms can be directly converted to Ki’s. Thus, we pooled reported IC50s with Ki’s across experiments and converted to binding free energies under these assumptions.
+The mechanism by which blebbistatin inhibits skeletal muscle myosin’s actin-activated ATPase activity has been characterized in detail (Kovács et al., 2004). These experiments indicate that blebbistatin binds with the highest affinity to myosin when it is in its ADP*Pi state capable of weakly binding to actin but also has non-negligible affinity for myosin in its ATP-bound state. Thus, blebbistatin can be considered a mixed inhibitor of actin-activated ATPase activity. The Km for actin activation of S1 ATPase was 24 μM while the actin concentration used to determine blebbistatin’s IC50 for skeletal muscle myosin was 43 μM (Kovács et al., 2004). Given that blebbistatin’s affinity for the ADP*Pi state is 10 x that of its affinity for the ATP-bound state and that $\frac{K_{m}}{S}=0.56$, we conclude that IC50 is essentially equal to Ki for skeletal muscle myosin (Cheng and Prusoff, 1973). We assume that the same mechanism of inhibition applies to the other myosin-II isoforms and that IC50s for other myosin-II isoforms can be directly converted to Ki’s. Thus, we pooled reported IC50s with Ki’s across experiments and converted to binding free energies under these assumptions.
 
-## Code and data availability
+### Code and data availability
 
 The code used for the generation, analysis, and visualization of the molecular dynamics data is available via a Github repository at https://github.com/bowman-lab/blebbistatin-specificity; Meller, 2022. The dataset corresponding to this repository is at https://osf.io/cv6d2/. To generate Figure 4, the existing dataset found here (https://osf.io/54g7p/) was used.

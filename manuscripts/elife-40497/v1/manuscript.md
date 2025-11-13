@@ -21,7 +21,7 @@
 
 ## Abstract
 
-10.7554/eLife.40497.001 The regulation of transcription requires the coordination of numerous activities on DNA, yet how transcription factors mediate these activities remains poorly understood. Here, we use lattice light-sheet microscopy to integrate single-molecule and high-speed 4D imaging in developing Drosophila embryos to study the nuclear organization and interactions of the key transcription factors Zelda and Bicoid. In contrast to previous studies suggesting stable, cooperative binding, we show that both factors interact with DNA with surprisingly high off-rates. We find that both factors form dynamic subnuclear hubs, and that Bicoid binding is enriched within Zelda hubs. Remarkably, these hubs are both short lived and interact only transiently with sites of active Bicoid-dependent transcription. Based on our observations, we hypothesize that, beyond simply forming bridges between DNA and the transcription machinery, transcription factors can organize other proteins into hubs that transiently drive multiple activities at their gene targets. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+The regulation of transcription requires the coordination of numerous activities on DNA, yet how transcription factors mediate these activities remains poorly understood. Here, we use lattice light-sheet microscopy to integrate single-molecule and high-speed 4D imaging in developing Drosophila embryos to study the nuclear organization and interactions of the key transcription factors Zelda and Bicoid. In contrast to previous studies suggesting stable, cooperative binding, we show that both factors interact with DNA with surprisingly high off-rates. We find that both factors form dynamic subnuclear hubs, and that Bicoid binding is enriched within Zelda hubs. Remarkably, these hubs are both short lived and interact only transiently with sites of active Bicoid-dependent transcription. Based on our observations, we hypothesize that, beyond simply forming bridges between DNA and the transcription machinery, transcription factors can organize other proteins into hubs that transiently drive multiple activities at their gene targets.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -51,25 +51,69 @@ We find that both Bcd and Zld bind DNA highly transiently, with residence times 
 
 ## Results
 
-## Single-molecule tracking of proteins endogenously tagged with photoactivatable fluorescent proteins
+### Single-molecule tracking of proteins endogenously tagged with photoactivatable fluorescent proteins
 
 We used Cas9-mediated homologous replacement (Bassett et al., 2013; Bassett et al., 2014; Gratz et al., 2013; Gratz et al., 2014; Yu et al., 2013; Baena-Lopez et al., 2013; Sebo et al., 2013; Kondo and Ueda, 2013; Ren et al., 2013) (Figure 1—figure supplement 1) to tag endogenous loci of Bcd and Zld at their N-termini with the photoactivatable fluorescent protein mEos3.2 (Zhang et al., 2012), which has high-quantum efficiency, is highly monomeric, and photostable compared to other photoactivatable proteins. Zld was also independently tagged with the bright green fluorescent protein mNeonGreen (Hostettler et al., 2017). All tagged lines presented here are homozygous viable and have been maintained as homozygous lines for many generations. As Bicoid and Zelda are both required for viability (Bicoid maternally, Zelda maternally and zygotically), this provides strong support for the functionality of the fluorescently tagged fusion proteins. To account for the possibility that un-tagged protein (arising from internal initiation, cryptic splicing, or proteolytic cleavage) could be responsible for phenotypic viability of insertions, we performed western blots on embryos from tagged lines and verified that detectable amounts of un-tagged protein are not present in any of the the lines (Figure 1—figure supplement 1). To serve as a control for single-molecule experiments, we also generated lines containing ubiquitously expressed mEos3.2-tagged Histone H2B (His2B).
 
 To utilize the photoactivatable mEos3.2 for single-molecule tracking, we modified a lattice light-sheet microscope (Chen et al., 2014a; Chen et al., 2014b) to allow continuous and tunable photoactivation from a 405 nm laser (Figure 1—figure supplement 2; Figure 1—video 1). We optimized this setup using mEos3.2-Zld, controlling particle density (Figure 1—figure supplement 3) to facilitate tracking (Hansen et al., 2018; Izeddin et al., 2014) and found that we could obtain excellent signal-to-noise ratios sufficient for robust single-molecule detection (Figure 1A, Figure 1—video 2, Figure 1—video 3 , Figure 1—video 4) and tracking of both mobile and immobile molecules at frame intervals ranging from 10 to 500 ms (Figure 1B and Figure 1—video 5, Figure 1—video 6).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/40497/elife-40497-fig1-v1.jpg)
+
+**Figure 1.:** (A) First three columns are example images showing single molecules of mEos3.2-Zld tracked over at least five frames (white arrows and trajectories) at frame rates of 10, 100 and 500 ms. Cyan arrows indicate molecules that appear for only one frame and are thus detected but not tracked. For the 100 and 500 ms data, enough signal is present in the His2B-eGFP channel from the 405 nm activation laser to enable simultaneous imaging of chromatin. Last column shows all single-molecule trajectories acquired in each nucleus over 100 s, corresponding to 539, 263, and 186 trajectories over 10000, 1000, and 200 frames for the 10, 100 and 500 ms data, respectively. Dotted lines indicate the boundary of a nucleus. Contrast was manually adjusted for visualization. (B) Representative kymographs over 5 s of imaging, corresponding to 500, 50, and 10 frames for the 10, 100 and 500 ms frame rate data, respectively. Green arrows point to molecules that display relatively large motions, and white arrows to immobile molecules.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/40497/elife-40497-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Pools of homology repair template plasmids containing different protein tags were co-injected with a plasmid encoding an sgRNA targeting the N-terminus of the target coding sequence into embryos expressing transgenic Cas9. PCR genotyping and DNA sequencing were used to find chromosomes containing tag insertions and to determine the identity of the inserted protein. (B) Fusion proteins used in this study. Zelda and Bicoid fusion proteins were generated by inserting fluorescent proteins at the endogenous locus. To avoid potential problems associated with endogenous tagging of a multicopy locus, histone fusions were supplied as exogenous transgenes. (C) Western blots for Bcd and Zld in fluorescently tagged lines. OreR embryos are from a wild-type strain with untagged Bcd and Zld. The observed shifts in band size correspond to the size of fluorescently tagged Bcd or Zld protein. Expected sizes: Bcd = 54.4 kDa, mEos3.2-Bcd = 80.1 kDa, Zld = 170.1 kDa, mEos3.2-Zld = 195.8 kDa, mCherry-Zld = 198.9 kDa, mNeonGreen-Zld = 196.7 kDa.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/40497/elife-40497-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** The schematic is organized to show the major modules of the microscope. The Laser Combiner module contains six lasers (three shown here) for excitation ranging from 405 to 639 nm, each of which are independently expanded and collimated by using a pair of lenses that serve as a beam expander (BE). The paths of each laser are combined and made collinear by using 1 mirror and 1 dichroic mirror (DC) per laser. The combined beams are then input into an Acousto-optic tunable filter (AOTF) for rapid switching between lasers and control of power. A beam dump (BD) is used to safely capture the light from lasers not being used. To achieve constant and controllable photoactivation the laser combiner was modified to include a 405 nm laser that bypasses the AOTF. A half-wave plate (HWP) is used to adjust the polarization of the input light to the Spatial Patterning module. For spatial patterning, a pair of cylindrical lenses (CL) is used to stretch the Gaussian beam output from the Laser Combiner module into a thin stripe, which illuminates the Spatial Light Modulator (SLM) after passing through a polarizing beam splitter (PBS) and a second HWP. A lens projects the Fourier transform of the plane of the SLM onto an annular mask which is used to confine the spatial frequencies of the patterned light to the desired minimum and maximum numerical apertures. In the scanning module, a pair of lenses de-magnifies and projects the annular mask plane onto first the z-galvo scanning mirror for moving the light sheet through the sample, and a second pair-of lenses relays the plane of the z-galvo onto the x-galvo for dithering the sheet for uniform illumination. Another pair of lenses is then used to project a magnified image of the galvo planes to the back focal plane of the excitation objective (EO) which focuses the light to project the lattice pattern through the sample. An orthogonally placed detection objective (DO) collects the emission light, and a tube-lens (TL) then forms an image at each cameras sensor plane. A dichroic mirror first splits the light into red (>560 nm) and green (<560 nm) channels, followed by a narrower bandpass emission filter (EMF) for further filtering before each camera. With the exception of the modifications to the laser combiner module and the use of two Hamamatsu sCMOS ORCA Flash 4.0 cameras for detection the design is identical to what was originally described by Chen et al., 2014a and Chen et al., 2014b.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/40497/elife-40497-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Detections per nucleus/frame characterized over 804245, 78281, 15165 frames of imaging and 169, 434, and 359 nuclei for 10 ms, 100 ms, and 500 ms, datasets respectively. Error bars show standard errors over all nuclei.
+
 We deployed this platform to perform single-molecule imaging and tracking of Zld, Bcd, and His2B at 10, 100 ms, and 500 ms frame intervals (Figure 2, Figure 2—video 1, Figure 2—video 2, Figure 2—video 3). These different temporal resolutions each capture distinct aspects of molecular behavior: short exposure times are sufficient to detect single molecules and fast enough to track even rapidly diffusing molecules (Figure 2—video 1). However, because imaging single molecules at high-temporal resolution (10 ms) requires high-excitation illumination, most bound molecules photobleach before they unbind, encumbering the accurate measurement of long binding times. At longer exposure times of 100 ms and 500 ms, fast diffusing proteins are blurred into the background, and lower excitation powers lowers photobleaching rates such that unbinding events can be detected (Hansen et al., 2017; Mir et al., 2017; Normanno et al., 2015; Chen et al., 2014a; Chen et al., 2014b; Mazza et al., 2012). Thus, we use 10 ms data to measure the diffusion characteristics of immobile and mobile molecules, as well as to determine the fraction of total molecules that are immobile (bound) or mobile (Hansen et al., 2018), and 100 and 500 ms data to measure the duration and spatial distribution of binding events.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/40497/elife-40497-fig2-v1.jpg)
+
+**Figure 2.:** Representative single-molecule trajectories of His2B, Bcd, and Zld from data acquired at frame rates of 10, 100 and 500 ms.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/40497/elife-40497-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** FRAP curves for Bcd, Zld, and His2B and results of 2 exponential fitting. Solid lines are averages over at least 27 measurements and shaded regions indicate standard error.
 
 To gain an understanding of the dynamics of a protein which is stably associated with chromatin, we first examined single-molecule trajectories of the histone His2B at all three temporal scales. Histones are widely used as a benchmark for stably bound molecules (Mazza et al., 2012; Hansen et al., 2017; Teves et al., 2016), and we validate that His2B is a suitable control in the early Drosophila embryo through fluorescence recovery after photobleaching measurements (FRAP) (Figure 2—figure supplement 1). The FRAP data verifies that the majority of His2B molecules are bound for significantly longer times than Bcd or Zld, and indicates that the single-molecule trajectory lengths of His2B are limited by photobleaching and defocalization rather than unbinding. Consistent with this stable association, a visual examination of the single-particle trajectories of His2B at 10 ms frame rates illustrate that the vast majority of His2B molecules are immobile and confined within the localization accuracy of our measurements (Figure 2, top left and Figure 2—video 1). In comparison, the Zld and Bcd trajectories at 10 ms frame rates exhibit motions consistent with a mixed population of both chromatin-bound, slow diffusing, and mobile molecules (Figure 2 left column and Figure 2—video 1).
 
 When tracked over several seconds using exposure times of 100 and 500 ms (Figure 2, middle and right; Figure 2—video 2 and Figure 2—video 3), the His2B trajectories now reflect the underlying motion of chromatin. We note a significantly greater apparent chromatin motion in early Drosophila embryos than is observed in mammalian cells in interphase where histones typically exhibit mobility less than the achievable localization accuracy (Hansen et al., 2018). At these slower frame rates, molecules of Zld and Bcd which are not immobile for a significant portion of the exposure time motion blur into the background (Watanabe and Mitchison, 2002; Hansen et al., 2017; Zhang et al., 2012). As a result, the trajectories of all three proteins now appear visually similar with the exception that His2B trajectories are longer in time due to their stable interaction with chromatin (Figure 2—video 2 and Figure 2—video 3), with the length of trajectories now limited by unbinding, defocalization, and photobleaching. Having established His2B as a suitable control for a largely chromatin-bound protein, we next quantify and compare the single-molecule dynamics of Zld and Bcd in order to gain insight on how they explore the nucleoplasm and bind to DNA to regulate transcription.
 
-## Bicoid and Zelda bind transiently and have large free populations
+### Bicoid and Zelda bind transiently and have large free populations
 
 We first quantified the fraction of immobile molecules, and the diffusion coefficients of free and immobile molecules for His2B, Zld and Bcd, by analyzing the distributions of displacements (Hansen et al., 2018) from the high-speed (10 ms frame rate) data (Figure 3A and Figure 3—figure supplement 1). Visually the displacement distributions indicate that a greater fraction of both Zld and Bcd molecules are mobile (Figure 3A, displacements > 150–200 nm) than for His2B.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/40497/elife-40497-fig3-v1.jpg)
+
+**Figure 3.:** (A) Histograms of displacements for His2B, Zld, and Bcd after three consecutive frames (Δτ = 30 ms) at a frame rate of 10 ms. The Zld and Bcd distributions show a right tail indicative of a large free population that is missing from His2B distribution. Black lines are fits from two-state kinetic modelling, data shown is compiled from 3 embryos totalling 77869, 81660, and 11003 trajectories and 30, 128, 41 nuclei for His2B, Zld, and Bcd, respectively. (B) Fraction of molecules bound or immobile as determined from kinetic modeling of the displacement distributions, a summary of the model parameters is shown in Figure 3—figure supplement 1. Error bars show standard errors over three embryos.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/40497/elife-40497-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Overview of two-state model in which molecules are either in a free or bound state and the kinetic-model used to fit the displacement distributions, P(r,Δτ), where FBOUND is the fraction of molecules bound (or immobile), r is the displacement, Δτ is the time delay, σ is the localization error, and ZCORR is the function used to estimate the fraction of trajectories lost due to moving out of the axial detection range (Δzcorr) as detailed in Hansen et al., 2018. (B) Displacement distributions at multiple time delays and corresponding fits (black lines), data from one embryo is shown for each protein, three embryos were measured for each in total. (C) Summary of results from fits to the kinetic model where errors shown are over three biological replicates.
 
 To quantify the single-molecule kinetics of all three proteins, the displacement distributions were fit to a two-state (free diffusing or immobile) kinetic model (Figure 3—figure supplement 1) assuming Brownian motion under steady-state conditions and taking into account effects from localization errors and defocalization bias (Mazza et al., 2012; Hansen et al., 2017; Hansen et al., 2018). While it is likely that the identified immobile and free diffusing populations contain more complex sub-populations, for example molecules exhibiting 1-D diffusion on DNA, a two-state model accurately fit the displacement distributions for all three proteins and using a higher number of states did not significantly improve the model fit to justify them. We find that ~50% of Zld and Bcd, and 88% of His2B molecules are immobile or bound (Figure 3B and Figure 3—figure supplement 1). The mean immobile or bound population diffusion coefficient for His2B is lowest followed by Bcd, and Zld, whereas the free diffusion coefficients for Zld are slightly lower than both Bcd, and His2B (Figure 3—figure supplement 1). The ~50% immobile population of Zld and Bcd indicate that both proteins spend roughly the same amount of time on nuclear exploration (searching for a binding target) and actually binding to chromatin (Hansen et al., 2017).
 
 Next, we calculated the survival probability (the probability of trajectories lasting a certain amount of time) for the three factors at all three frame rates (Figure 4A). At all frame intervals, the length of His2B trajectories are, on average, longer than those of Zld and Bcd (Figure 4A). These longer trajectories reflect the greater fraction of bound His2B molecules as they defocalize with a lower probability. Since we expect, on average, the effects of nuclear and chromatin motion, as well as photobleaching, to be consistent for data acquired on the bound population of all three proteins, the longer His2B trajectories show both that His2B binds for longer than Bcd or Zld, and that unbinding and not photobleaching is likely to be dominant for Bcd and Zld trajectories at 500 ms exposure times, allowing us to estimate residence times.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/40497/elife-40497-fig4-v1.jpg)
+
+**Figure 4.:** (A) Raw survival probabilities of trajectories at all frame rates. Calculated over 77869, 81660, 11003, at 10 ms, 107998, 42698, 8990 at 100 ms, and 2420, 14487, 47681 at 500 ms, trajectories for His2B, Zld, and Bcd respectively. (B) Uncorrected two-exponent fits to the survival probability distributions obtained from the 500 ms frame rate data. Dark solid lines are the mean over fits from three embryos and the shaded regions indicate the standard error. (C) Bias corrected quantification of the slow residence times for Zld (5.56 ± 0.72 s) and Bcd (2.33 ± 0.71 s). Error bars indicate standard error over three embryos for a total of 188 and 171 nuclei for Bcd and Zld, respectively. (D) MSD/τ curves for His2B, Bcd, and Zld at 500 ms frame rates plotted on log-log-scale. For anomalous diffusion MSD(τ)=Γτα, where α is the anomalous diffusion coefficient. For MSD/τ, in log-log space, the slope is thus 0 for completely free diffusion that is when α = 1, and sub-diffusive(0<α<1), motions display higher negative slopes, with lower α corresponding to more anomalous motion.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/40497/elife-40497-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** MSD curves for His2B, Zld, and BCD, at all frame rates plotted on log-log-scale. Calculated over 77869, 81660, 11003, at 10 ms, 107998, 42698, 8990 at 100 ms, and 2420, 14487, 47681 at 500 ms, trajectories for His2B, Zld, and Bcd respectively. Error bars show standard error over all trajectories.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/40497/elife-40497-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Example fits of two-exponent model (black line) to the survival probability (SP) distributions data from a single embryo for each protein studied (B) Bias corrected residence time (RT) as a function of the minimum trajectory length threshold used for fitting, the reported inferred residence time is from when the fit parameter plateaus at a threshold of 2.02 s for both proteins (C) Comparison of inferred residence times from 100 ms vs 500 ms frame rate data sets as a function of the minimum trajectory length fitting threshold.
 
 To quantify genome average residence times, we fit the 500 ms survival probability distributions for Bcd, Zld, and His2B, to a two-exponential decay model (Figure 4B) to estimate the time constants associated with short-and long-binding events. As has been shown previously, the slow and fast time constants associated with the two exponents can be interpreted as the off-rates associated with non-specific and specific binding, respectively (Hansen et al., 2017; Mir et al., 2017; Teves et al., 2016; Chen et al., 2014a; Chen et al., 2014b). The resulting fits for Zld and Bcd are then bias corrected for photo-bleaching and defocalization using the fits to the His2B data. This correction is based on the fact that the long-lived population of His2B is associated with chromatin much longer than the dynamic range of our measurement time and that the maximum trajectory lengths that we measure for His2B are thus only limited by photo-bleaching and defocalization (see Materials and methods for more details) (Hansen et al., 2017).
 
@@ -81,27 +125,51 @@ As expected for transcription factors and proteins confined within an environmen
 
 Anomalous or sub-diffusive motion can result from a range of underlying physical interactions including aggregation, weak interactions with other proteins and chromatin, repetitive binding at proximal binding sites, among many other possibilities (Woringer and Darzacq, 2018; Fradin, 2017). The complexity of the TAMSDs from Zelda trajectories acquired at 500 ms suggest that at these frame rates we likely measure a mixture of effects that lead to a relatively immobile population of Zelda. Given that Zld is known to exhibit an extremely heterogeneous sub-nuclear spatial distribution, we next examined the bulk rather than single-molecule spatial-temporal dynamics of Zld.
 
-## Zelda and Bicoid form dynamic subnuclear hubs
+### Zelda and Bicoid form dynamic subnuclear hubs
 
 Recently, a highly clustered spatial distribution of Zld was reported (Dufourt et al., 2018), but the temporal dynamics of these clusters have not been examined due to the technical limitations of confocal microscopy. We thus performed high-resolution 4D imaging using LLSM of Zld in developing embryos. We find that the spatial distribution of Zelda is highly dynamic and linked to the nuclear cycle (Figure 5—video 1). We observe that Zld rapidly loads into nuclei near the end of telophase and associates to the still condensed chromatin. As the chromatin de-condenses and the nuclei enter interphase, Zld breaks into smaller highly dynamic clusters (Figure 5A and Figure 5—video 2). As the nucleus enters prophase and the nuclear membrane begins to break up, Zld appears to leave the nucleus and correspondingly the cytoplasmic signal around the nucleus increases (Figure 5—video 1). As the Zld concentration around the chromatin drops, so does the appearance of clusters, although Zld appears to remain associated with chromatin until the end of prophase. From the end of prophase to telophase, no Zld is observed in proximity of the condensed chromatin until it rapidly loads back in to reforming nuclei at the end of telophase.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/40497/elife-40497-fig5-v1.jpg)
+
+**Figure 5.:** Example images of the spatial distributions of Zld (A) and Bcd (B) at various time intervals illustrating the dynamic nature and wide range of size distributions and temporal persistences of enriched hubs (see also Figure 5—videos 2–4). mNeonGreen-Zld and EGFP-Bcd were imaged at 15 ms and 210 ms frame rates, respectively. To allow comparison, the sum projection of 14 frames (210 ms total integration) is shown for Zld. Images were processed with a 1-pixel radius median filter to remove salt-and-pepper noise and contrast-adjusted manually for visual presentation.
 
 The dynamic interphase hubs of Zld are amorphous, appear to have a wide distribution of sizes, and persist for highly variable amounts of time (Figure 5A and Figure 5—video 2). When imaged at higher temporal resolutions (Figure 5—video 3) we observe that both hub location and intensity vary even at sub-second time-scales, suggesting that there is dynamic exchange of Zld molecules in clusters with the rest of the nucleoplasm. Bulk imaging of Bcd also reveals that it forms dynamic hubs in interphase (Figure 5B and Figure 5—video 4) although they appear less prominent both in size and temporal persistence than those of Zld. Our observations of the nuclear cycle dynamics of Bcd are consistent with previous reports of it filling into the nucleus after mitosis (slower than Zld) and a slow decrease in concentration after the nuclear membrane breaks down (Gregor et al., 2007).
 
 These observations of highly heterogeneous and dynamic sub-nuclear distributions are consistent with our earlier work where we observed that Bcd binding is clustered in discrete subnuclear hubs (Mir et al., 2017). We also previously showed that these Bcd hubs do not form in the absence of maternal Zld which naturally led us to next ask whether there is a relationship between Bcd binding and the local concentration of Zld.
 
-## Bicoid binding events are enriched in Zelda hubs
+### Bicoid binding events are enriched in Zelda hubs
 
 To explore the relationship between Zld hubs and Bcd binding, we performed dual-color experiments recording the single-molecule dynamics of Bcd using mEos3.2-Bcd and the bulk spatial distribution of Zld using mNeonGreen-Zld. To strike a balance between the constraints of the imaging system, the dynamic range of the single-molecule trajectories, and the fast dynamics of Zld hubs (Figure 5 and Figure 6A), we acquired a bulk fluorescence image of mNeonGreen-Zld with a 1 s acquisition time followed by 10 frames of single-molecule imaging of mEos3.2-Bcd with a frame rate of 100 ms (Figure 6—video 1).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/40497/elife-40497-fig6-v1.jpg)
+
+**Figure 6.:** (A) Three-dimensional volume renderings of an interphase nucleus showing the dynamic nature of Zld hubs (see Figure 5—video 2, Figure 5—video 3).The 3D axes indicate the xyz axes and the arrow lengths are 2 μm along each direction. (B) Representative snapshot of the interphase distribution of Zelda, yellow scale bar is 2 μm. (C) Relative Zelda Density map for the nucleus shown in (B), the arrow on the colorbar indicates the threshold for defining a region as high density (corresponding to hubs). (D) Fold enrichment in the density of bound molecules of Bcd in the anterior, middle, and posterior embryo, and of Zld, in Zld hubs vs. the rest of the nucleoplasm. Error bars show standard error over three embryos with a total of 1344, 3921, 481 nuclear images for Bcd Ant, Mid, and Post, respectively, and 4399 for Zld.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/40497/elife-40497-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Major steps in nuclear segmentation algorithm, the Zelda image is first low-pass filtered and then converted to a binary mask through adaptive thresholding, a hand drawn mask is applied to remove regions of low contrast and the embryo edge. The binary mask is dilated, a label matrix is calculated and regions not meeting eccentricity and size cutoffs are removed. The relative density map for each nucleus is then calculated using the distribution of intensity values within each nucleoplasm. (B) More examples of calculated density maps. (C) Histograms of high-density areas and nuclear areas. Distributions are from 33,041 images of nuclei. (D) Mean number of single trajectories in high-density vs. low-density regions per nuclear image, for a total of 1344, 3921, 489, nuclear images in the Anterior (Ant), Middle (Mid), and Posterior(Mid) positions for Bcd, respectively, and 4399 for Zld with trajectories (# in High Density/# in low Density) of 4326/12437, 3921/11211, 836/1793 for Bcd Ant, Mid, and Post, respectively, and 25470/66923 for Zld. Error bars are standard errors over all nuclear images.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/40497/elife-40497-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** Plots show the cumulative probability of a trajectory greater than or equal to a certain length in time (as indicated by color) vs. the relative density of Zld. The top row shows the probability for single-molecule trajectories of Bicoid across the Anteroposterior axis and the bottom panel is for Zld single-molecule trajectories. For Bcd-binding events, in the anterior there is little cost in terms of Zld density for increased trajectory lengths, but in middle and posterior positions greater Zld enrichment is required for molecules to be immobilized for longer.
 
 Using the bulk Zld data, we partitioned nuclei into regions of high- and low- relative Zld density (Figure 6B–C and Figure 6—figure supplement 1), where high-density regions correspond to Zld hubs. Parsing the Bcd single-molecule data, we find that the enrichment of bound Bcd molecules is consistently higher within the high Zld density regions (Figure 6D). In the embryo anterior, where Bcd concentrations are highest, there is a two-fold increase in the enrichment of Bcd trajectories in high-density Zld regions compared to the rest of the nucleoplasm. Along the anteroposterior axis, the enrichment of Bcd trajectories within the high-density Zld regions increases, to an excess of around four-fold in the posterior (Figure 6D), whereas the Zld spatial distribution remains unchanged. This observation is consistent with our previous report of more pronounced clustering of Bcd in the embryo posterior (Mir et al., 2017). When we examined the stability of Bcd binding as a function of relative Zld density, we also find that at more posterior embryonic positions longer binding events of Bcd are associated with higher Zld density, in contrast to the embryo anterior (Figure 6—figure supplement 2). We note that while there is an increase in long Bcd-binding events in Zld hubs this effect is not large enough to account for the overall enrichment of all Bcd binding events, suggesting that Zld increases the time averaged Bcd occupancy at DNA-binding sites by increasing its local concentration (increasing kon) and not by increasing its residence times at its target sites (decreasing koff).
 
 This association between Zld hubs and Bcd binding suggests that these hubs, although dynamic and transient, might be preferentially forming on genes that are co-regulated by Zld and Bcd. Furthermore, given the strong association of Zld binding measured by chromatin immunoprecipitation with the binding of many early embryonic factors (Harrison et al., 2011) we expected a strong correlation between Zld hubs and sites of active Bcd-dependent transcription. To test this hypothesis, we next performed imaging of the spatial distributions of Bcd and Zld in the context of active transcription.
 
-## Zelda hubs are not stably associated with sites of active transcription
+### Zelda hubs are not stably associated with sites of active transcription
 
 We chose to study the relationship between Zld and Bcd hubs and transcriptional activity at the canonical Bcd target gene hunchback (hb). The hb gene was the first identified target of Bcd (Struhl et al., 1989; Tautz, 1988), and its anterior transcription is dramatically disrupted in the absence of Bcd protein (Staller et al., 2015; Ochoa-Espinosa et al., 2009; Hannon et al., 2017). The regulatory sequences for hb contain multiple clustered Bcd-binding sites, as well as recognizable Zelda motifs (Harrison et al., 2011) (Figure 7—figure supplement 1). ChIP studies show that both Zelda and Bcd bind strongly at the hb locus, though loss of Zelda has only a modest quantitative effect on hb expression (Combs and Eisen, 2017; Nien et al., 2011). An enrichment of Bcd in the vicinity of active hb loci was previously observed using FISH (Xu et al., 2015) on fixed embryos, but nothing is known about the dynamics of this enrichment or its relationship to Zld.
 
 To visualize the hb locus, we took advantage of the MS2 system, which allows fluorescent labelling of nascent transcripts of specific genes (Garcia et al., 2013; Bothma et al., 2015). Bothma, et al. generated a fly line carrying a bacterial artificial chromosome (BAC) that contains an MS2-labeled hb locus that closely recapitulates the expression of hb itself (Bothma et al., 2015). We thus performed high spatio-temporal resolution 4D imaging of the bulk distributions of Zld, and separately Bcd, in embryos carrying the hb BAC and MCP-mCherry (Figure 7A, Figure 7—figure supplement 1, Figure 7—video 1, Figure 7—video 2, Figure 7—video 3).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/40497/elife-40497-fig7-v1.jpg)
+
+**Figure 7.:** (A) Representative x-y and x-z max projections over a nuclear diameter of mNeonGreen-Zld (green) and an active hb locus tagged with MS2-MCP-mCherry (red) white scale bars are 2 μm. (B) Representative snapshots of the distribution of Zld and Bcd with the hb locus indicated by the red circle. Images suggest that high concentration Bcd hubs frequent the active locus whereas Zld exhibits more transient and peripheral interactions. Contrast of each image was manually adjusted for visualization and comparison. (C) Average Zld and Bcd signals in a 2.2 μm window centered at active hb locus (TS) and at random sites in the nucleus (RS). Averages were calculated over 3943 and 6307 images of active loci from six embryos for Bcd and Zld, respectively (see Figure 7—videos 4 and 5). (D) Radial profiles of the images in C, normalized to one at the largest radius. Error bars show standard error over all images analyzed.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/40497/elife-40497-fig7-figsupp1-v1.jpg)
+
+**Figure 7—figure supplement 1.:** (A) BAC construct used in the experiments to visualize transcription of hb, from Bothma et al. (2015). The coding region is replaced by the yellow gene and 24 MS2 stem loops are inserted downstream of the P2 promoter, allowing the visualization of transcripts from both proximal and distal promoters. The BAC spans an 18.1 kb genomic region containing all known hb regulatory sequences, and its expression closely mirrors that of native hb. (B) Segmentation and localization of active loci. A difference of gaussians is used to enhance the contrast of transcription sites, a binary mask is calculated by applying a threshold and filtered to remove large and small structures. A label matrix for remaining segmented regions is then generated and line profiles through the center of the regions is used to determine if they lie inside of a nucleus. Finally, the center of the active locus is determined using the line profile.
 
 From visual examination of movies of Zld and Bcd in the presence of hb transcription (Figure 7—video 2, Figure 7—video 3 and Figure 7B), we observe that the temporal relationship between Zld and Bcd hubs and the hb locus in nuclei where it is expressed (and therefore visible) is highly dynamic. We do not observe stable associations between high-concentration hubs of either factor and hb. However, we do see that contacts between hb and hubs of both factors occur frequently, so we next asked whether hb showed any preferential association with hubs of either factor over time.
 
@@ -131,7 +199,94 @@ Such hubs could help explain the disconnect between the canonical view of transc
 
 ## Materials and methods
 
-## Generation of transgenic fly lines
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>mNeonGreen-Zld</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Fly line with an N-terminal mNeonGreen fusion tag inserted at the endogenous Zld locus.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>mEos3.2-Zld</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Fly line with an N-terminal mEos3.2 fusion tag inserted at the endogenous Zld locus.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>H2B-EGFP</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Fly line with an H2B-EGFP transgene inserted on chromosome 3. Transgene is expressed ubiquitously under the control of a synthetic tubulin promoter.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>H2B-mEos3.2</td>
+      <td>this paper</td>
+      <td></td>
+      <td>Fly line with an H2B-mEos3.2 transgene inserted on chromosome 3. Transgene is expressed ubiquitously under the control of a synthetic tubulin promoter.</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (D. melanogaster)</td>
+      <td>MCP-mcherry</td>
+      <td>H Garcia lab</td>
+      <td></td>
+      <td>Fly line with MCP-mCherry inserted as a transgene on chromosome 2.</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sgRNA #1 bicoid</td>
+      <td>this paper</td>
+      <td></td>
+      <td>sgRNA targeting N-terminus of Bcd gene, sequence GCGGAGTGTTTGGGGAAAA</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sgRNA #1 bicoid</td>
+      <td>this paper</td>
+      <td></td>
+      <td>sgRNA targeting N-terminus of Bcd gene, sequence TAAAAGTTTTGATCTGGCGG</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sgRNA #1 bicoid</td>
+      <td>this paper</td>
+      <td></td>
+      <td>sgRNA targeting N-terminus of Bcd gene, sequence TGATGGTAAAAGTTTTGATC</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (D. melanogaster)</td>
+      <td>sgRNA Zelda</td>
+      <td>M Harrison lab</td>
+      <td></td>
+      <td>sgRNA targeting N-terminus of Zld gene, sequence CCTCTGCCGCGTGCAGGGG</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Spot-On</td>
+      <td>Hansen et al., 2018, eLife</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Generation of transgenic fly lines
 
 The following fly lines were constructed using CRISPR/Cas9 mutagenesis with homology directed repair: mNeonGreen-Zelda, mEos3.2-Zelda, mEos3.2-Bicoid. sgRNAs targeting sites near the desired insertion sites were cloned via the primer annealing method into plasmid pMRS-1, which is a version of pCFD3 (Port et al., 2014) (addgene #49410) with alterations to the sgRNA body made according to (Chen et al., 2013). sgRNA sequences were CCTCTGCCGCGTGCAGGGG for Zelda and an equimolar mixture of TGATGGTAAAAGTTTTGATC, GCGGAGTGTTTGGGGAAAA, and TAAAAGTTTTGATCTGGCGG for Bicoid. Homology directed repair templates were constructed in a pUC19 backbone via Gibson assembly with the desired tag, with an N-terminal FLAG tag, flanked by 1 kb homology arms. Fluorescent tags were inserted at the ATG located at 3R:6759268 for Bicoid and at X:19782283 for Zelda (dm6 coordinates). For both Zelda and Bicoid, the natural start ATG was removed, and the fluorescent protein and linker were fused with the first amino acid after the initiation Methionine residue. We tested a number of linker sequences and found variable tag- and protein-specific effects on viability. Linker sequences that yielded homozygous viable animals were GDGAGLIN (mNeonGreen-Zld), GGGGSGSGGS (mEos3.2-Zld and mEos3.2-Bcd) and GGGGSGSGGSMTRDYKDDDDKTRGS (H2B-mEos3.2 and H2B-EGFP).
 
@@ -141,15 +296,15 @@ His2B-mEos3.2 was introduced as a supplemental transgene under the control of a 
 
 We chose a red fluorescent protein for single-molecule imaging in embryos as better signals are achievable at longer wavelengths. First, as is well known, there is high autofluorescence at greener wavelengths in the Drosophila embryo (and for most biological materials). Second, Rayleigh scattering, scattering from particles of sizes less than the wavelength of the imaging light (the phenomenon responsible for blue skies and red sunsets), scales as ~1/λ4 where λ is the imaging wavelength. Thus, using longer wavelengths results in fewer photons being scattered and thus more photons being absorbed, emitted and collected from single molecules (Mir et al., 2018).
 
-## Western blot
+### Western blot
 
 For each genotype indicated, 50–60 embryos aged 2 hr at 25° were dechorionated in bleach, rinsed in salt solution (NaCl with TritonX-100) and flash frozen. Frozen embryos were homogenized in 50 µL of sample buffer and 20 µL of sample per lane was loaded onto two separate 4–15% SDS-PAGE gels (Bio-Rad Cat # 4561083DC). Western blots were performed using rabbit polyclonal α-Bcd or α-Zld primary antibodies and a goat α-rabbit HRP conjugated secondary antibody (Thermo Fisher Cat # 31460).
 
-## MS2 crosses
+### MS2 crosses
 
 For MS2 experiments, yw; +; MCP-mCherry (gift from S. Alamos and H.G. Garcia) virgin females were crossed to males homozygous for either EGFP-Bcd or mNeonGreen-Zld. Resulting female progeny maternally deposit both MCP and the labeled TF in embryos. Virgin females were crossed to males homozygous for the hb MS2 BAC and resulting embryos were used for imaging.
 
-## Lattice light-sheet microscopy of live embryos
+### Lattice light-sheet microscopy of live embryos
 
 Embryos were collected from flies in small cages over a 90-min laying period. Prior to embryo collection, the surface of a 5 mm diameter glass coverslip was made adhesive by deposition of of a small drop of glue solution (the glue solution was prepared by dissolving a roll of double-sided scotch tape in heptane overnight). The coverslip was allowed to dry for at least 5 min, which is sufficient time for the heptane to evaporate leaving behind a sticky surface. Embryos were washed off from the cage lids using tap water and gentle agitation with a paintbrush into a nylon cell-strainer basket. Embryos were then dechorionated in 100% bleach for 90 s. The dechorionation was then stopped by continuous washing under tap water until no further bleach smell could be detected, typically 30 s. The embryos were then transferred from the water filled strainer basket onto an agar pad using a fine haired paintbrush and arranged into an array of typically 3 rows and five columns with a consistent anteroposterior (A-P) orientation. The arranged embryos were then gently contact transferred onto the adhesive coverslip which was subsequently loaded into the microscope sample holder.
 
@@ -157,7 +312,7 @@ A home built lattice light-sheet microscope (LLSM) was used (Chen et al., 2014a;
 
 For all experiments, the stage positions corresponding to the anterior and posterior extents of each embryo imaged were recorded. The position along the anteroposterior axis for each image or movie recorded was then calculated as a fraction of the embryonic length (EL) with 0 and 1 to the anterior and posterior extents of the embryo, respectively. The nuclear cycle and progression within the nuclear cycle (e.g. interphase, prophase, mitosis) were also recorded for each movie or image. Times between nuclear cycles were also monitored to ensure that data was being acquired on a healthy and normally developing embryos. Embryos which exhibited aberrant development, for example longer than usual nuclear cycles, or numerous aberrant nuclear divisions were abandoned and the data was discarded.
 
-## Single-molecule imaging and tracking in live embryos
+### Single-molecule imaging and tracking in live embryos
 
 For single-molecule imaging experiments, the illumination module of the LLSM was modified to provide constant photoactivation using a 405 nm laser line that bypasses the Acousto-optical tunable filter (AOTF) (Figure 1—figure supplement 1). We found that even when a lattice pattern for 561 nm was displayed on the spatial light modulator (SLM) sufficient 405 nm illumination was present in the imaging plane to allow for controlled photo-activation of mEos3.2-Bcd and mEos3.2-Zld. For all single-molecule experiments, a 30 beam square lattice with 0.55 and 0.44 inner and outer Numerical Apertures, respectively, was used in dithered mode for excitation. The 405 nm laser line was kept on constantly during the acquisition period for photoswitching and a 561 nm laser line was used for excitation. For both mEos3.2-Bcd and mEos3.2-Zld, data was acquired at 7.5, 100 and 500 ms exposure times with effective frame rates of 100, 9.52, and 1.98 Hz, respectively. The excitation laser power was optimized empirically for each exposure time to achieve sufficient contrast for single-molecule tracking and the powers of the photoswitching laser were also optimized empirically to achieve low enough densities of detections to enable tracking. The excitation laser power was 0.1 mW, 0.6 mW, 2.3 mW and switching laser power was 2.3 µW, 3.9 µW, and 8.5 µW for 500, 100, and 7.5 ms exposures, respectively, as measured at the back focal plane of the excitation objective. The same settings were used to acquire control data at each exposure time on His2B-mEos3.2. For all exposure times, the length of each acquisition was 105 s, corresponding to 200, 1000, and 10,000 frames at 500, 100, and 7.5 ms exposure times, respectively. The acquisition length was set so that sufficient fields of views could be captured in the short interphase times of the early nuclear cycles while also capturing a sufficient number of single-molecule trajectories.
 
@@ -167,15 +322,15 @@ For quantification of single-molecule mEos3.2-Bcd dynamics in the context of mNe
 
 Localization and tracking of single molecules was performed using a MATLAB implementation of the dynamic multiple-target tracing algorithm (Sergé et al., 2008) as previously described (Mir et al., 2017; Hansen et al., 2018; Hansen et al., 2017; Teves et al., 2016).
 
-## Mean square displacement analysis
+### Mean square displacement analysis
 
 Mean Square Displacement curves were calculated using the open source msdanalyzer package (Tarantino et al., 2014). For analysis of sub-diffusive motion MSD/τ curves for His2B, Zld, and BCD plotted on log-log-scale. As for anomalous diffusion MSD(τ)=Γτα, where α is the confinement factor the log(MSD/τ)=log(Γ) + (α−1)τ (Izeddin et al., 2014). The log of the MSD/τ was thus used to estimate the range of α values for each protein.
 
-## Analysis of short exposure (10 ms) single-molecule trajectories
+### Analysis of short exposure (10 ms) single-molecule trajectories
 
 Single-molecule trajectories were analyzed using Spot-on (Hansen et al., 2018), a freely available open-source software (https://gitlab.com/tjian-darzacq-lab/spot-on-matlab) based on a model previously introduced in Mazza et al. (2012) and modfied in Hansen et al. (2017) to exclude state transitions. In brief, Spot-On performs fits to the distribution of displacements at multiple frameshifts to a two-state kinetic model and provides estimates of the fraction of molecules bound and free, and the corresponding apparent diffusion coefficients for each state (Figure 3—figure supplement 1) and corrects for the probability of molecules diffusing out of the axial detection range. We performed fitting using the following parameters: Gaps Allowed: 1, Jumps to Consider: 4, TimePoints: 8, Observation Slice: 0.8 μm, Fit Iterations 5. The fit parameters for each data set are summarized in Figure 3—figure supplement 1. Data are represented as the mean over the three embryo replicates ±SEM.
 
-## Calculation of residence times from long exposure single-molecule trajectories
+### Calculation of residence times from long exposure single-molecule trajectories
 
 Imaging with sufficiently long exposure times effectively blurs out fast-moving molecules into the background while molecules stably bound for a significant duration of the exposure time are imaged as diffraction limited spots (Hansen et al., 2017; Watanabe and Mitchison, 2002; Mir et al., 2017; Teves et al., 2016; Chen et al., 2014a; Chen et al., 2014b). Thus, the trajectories from the 500 ms datasets are used to infer the genome average long-lived (specific) binding times.
 
@@ -183,7 +338,7 @@ To infer the residence time, the length of trajectories in time is used to calcu
 
 Next, since the inferred ks as described above is biased by photobleaching, and nuclear and chromatin movement, bias correction is performed using the His2B data as ks,true=ks-kbias, where kbias is the slower rate from the double-exponent fit to the His2B SP curve as described previously (Teves et al., 2016; Hansen et al., 2017; Chen et al., 2014a; Chen et al., 2014b). This correction is based on the assumption that photobleaching, unbinding, and loss of trajectories from motion are all independent Poisson processes. The genome wide specific residence time is then calculated as 1/ks,true. The effectiveness of this bias correction is checked by calculating the residence time from both the 100 ms and 500 ms frame rate data and observing convergence to within 1 s (Figure 4—figure supplement 2C).
 
-## Fluorescence recovery after photobleaching
+### Fluorescence recovery after photobleaching
 
 FRAP was performed on a Zeiss (Germany) LSM 800 scanning confocal microscope equipped with several laser lines, of which the 488 nm laser was used for all experiments described here. Images were collected using a Plan-Apochromat 63 × 1.40 NA oil-immersion objective using a window 50.7 µm by 3.6 µm. Bleaching was controlled by the Zen software, and experiments consisted of 10 frames collected before the bleach and 1000 frames collected after at a frame rate of 24 ms. In each frame, five circular bleach spots of 1 µm diameter were chosen to be a sufficient distance from nuclear edges. The spots were bleached using maximum laser intensity, with dwell time adjusted to 0.57 µs, which was chosen because it gave a sufficiently deep bleach of Bicoid, the fastest-recovering molecule we studied. Total bleach time was 1.5 s.
 
@@ -195,11 +350,11 @@ FRAP(t)=1- Ae-kat - Be-kbt
 
 From these fits, we used the slower coefficient to estimate the time to half-recovery for the population of bound molecules.
 
-## Analysis of single-molecule binding in the context of Zld density
+### Analysis of single-molecule binding in the context of Zld density
 
 To analyze single-molecule trajectories of Bcd and Zld in the context of Zld density first, a relative density map for each nucleus was calculated. For each reconstructed 100 ms exposure Zld image, first each nucleus was identified and segmented out of the image using an in house segmentation algorithm built in MATLAB (Figure 6—figure supplement 1). First, the grayscale image was Gaussian filtered with a sigma of 5 pixels to enhance the contrast of the nuclei, the filtered image was then thresholded using the inbuilt adaptive threshold function in MATLAB with a sensitivity value set to 0.6. A morphological dilation was then performed on the binary mask using a disk structuring element with a radius of 3 pixels and multiplied with hand drawn mask to remove edges of the embryo and non-cortical regions deep where no nuclei were present or imaging contrast was low. Holes within the nuclei binary mask were then filled using the MATLAB imfill function. A label matrix was generated from the resulting binary mask and the size distributions and eccentricities of segmented regions were calculated, an area and eccentricity cutoff was then applied to remove false positives to generate the final label matrix. Label matrices were then further curated to remove false positives. A relative density map was calculated for each nucleus individually by assigning each pixel in the nuclear value the percentile range it fell in over the entire distribution of intensity values in the nuclear area in with a resolution of 1 percentile. Each single-molecule trajectory was then assigned a relative density value based on the mean density of the pixels it fell in during the course of the trajectory. From visual examination, we determined that a 85 relative density value threshold was reliable in differentiating the highest enriched Zld regions, corresponding to hubs, from the rest of the nucleus. Fold change in densities of detections were calculated by counting the total number of trajectories in areas of relative density greater than 85 vs. the rest of the nucleoplasm. As the single-molecule trajectories from this data set are limited in length to 1 s, an accurate estimate of the residence time from fits to the survival probability distribution could not be obtained as was done above.
 
-## Analysis of protein distribution in context of transcription dynamics
+### Analysis of protein distribution in context of transcription dynamics
 
 Two-color 4D LLSM imaging was performed on embryos with the MS2-tagged hb BAC (Figure 7—figure supplement 1) and expresing MCP-mCherry crossed with either mNeonGreen-Zld or eGFP-Bcd embryos. Z-stacks of 61 slices were acquired with a spacing of 250 nanometers to cover a range of 15 µm with an exposure time of 80–100 ms in each channel at each slice. Images in both channels were acquired at each z-position sequentially before moving to the next slice. The time between each volume acquired was ~5 s, the total length of the acquisition varied but at least one complete nuclear cycle was imaged for each embryo. The field of view for each embryo was centered at between 25% and 35% of the embryonic length from the anterior tip of the embryo to ensure that all nuclei in the image were within the hunchback expression domain. Data from a total of six embryos each for mNeonGreen-Zld or eGFP-Bcd were analyzed.
 

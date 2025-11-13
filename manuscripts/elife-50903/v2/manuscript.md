@@ -30,9 +30,25 @@ If the Hrd1 channel is activated by autoubiquitination, how is Hrd1 spared from 
 
 ## Results
 
-## Ubp1 overexpression stabilizes Hrd1
+### Ubp1 overexpression stabilizes Hrd1
 
 Our previous experiments indicated that Hrd1 is autoubiquitinated in wild-type yeast cells (Baldridge and Rapoport, 2016). The protein is moderately stable, with a half-life of about 100 min. We therefore reasoned that overexpression of a DUB that reverses the modification of Hrd1 would increase the steady state levels of the ligase. We overexpressed 23 different DUBs in yeast cells that also express Flag-tagged Hrd1. The levels of Hrd1 were determined by immunoblotting with anti-Flag antibodies (Figure 1A). The strongest increase of Hrd1 levels was seen with Ubp1, even though several other DUBs were expressed at a higher level than Ubp1 (Figure 1—figure supplement 1A). Ubp1 overexpression had no effect on the levels of Hrd3 or Usa1 (Figure 1—figure supplement 1B,C).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/50903/elife-50903-fig1-v2.jpg)
+
+**Figure 1.:** (A) Hrd1-Flag was expressed from a centromeric plasmid under its endogenous promoter in hrd1Δ cells together with individual deubiquitinating enzymes (DUBs). The DUBs were N-terminally tagged with hemagglutinin (HA) and overexpressed from a centromeric plasmid under the GPD-promoter. Hrd1 levels were analyzed by SDS-PAGE and immunoblotting for the Flag epitope. The data are the mean + /- SEM from at least three experiments. (B) Comparison of Hrd1-Flag levels in different strains. Where indicated, wild-type Ubp1 or an enzymatically inactive mutant (Ubp1(C110S)) were overexpressed (indicated by upwards-pointing arrows). The numbers below the lanes give quantification of Hrd1-FLAG levels relative to wild-type cells containing an empty vector. This panel is representative of at least three experiments. (C) The degradation of Hrd1-Flag was followed in a hrd3Δ strain overexpressing the deubiquitinating enzyme Ubp1 or a catalytically-inactive mutant (Ubp1(C110S)). Cycloheximide was added to the cell culture at time point zero, and samples were taken at different time points and analyzed by SDS-PAGE and immunoblotting with anti-Flag antibodies. The data are the mean + /- SEM from at least three experiments. (D) As in (C) but following the degradation of a catalytically-inactive Hrd1 mutant (Hrd1(C399S)-Flag). (E) The degradation of Hrd1-Flag was monitored following addition of cycloheximide in the indicated strains. This panel is representative of at least three experiments. (F) Hrd1-His10 was expressed from the endogenous Hrd1 promoter on a centromeric plasmid in either wild-type or hrd3Δ cells together with Ubp1 as in (C). The membrane proteins were purified with IMAC beads under denaturing conditions, separated by SDS-PAGE, and immunoblotted with anti-Hrd1 and anti-ubiquitin antibodies. The stain-free dye panel shows a non-specific protein band that co-eluted from the IMAC beads and serves to demonstrate equal loading of the samples. This panel is representative of at least three experiments. (G) Hrd1-Flag, Orm2-Flag, and Ubp1-V5 were expressed from their endogenous promoters on centromeric plasmids in ubp1Δ cells. The lysates were immunoprecipitated with anti-V5 affinity resin, separated by SDS-PAGE and immunoblotted with anti-Flag and anti-V5 antibodies. This panel is representative of at least three experiments. (H) The degradation of CPY*-HA was monitored following addition of cycloheximide in the hrd1Δubp1Δ strain with Hrd1-Flag and Ubp1-V5 expressed from either its endogenous or GPD promoter on a centromeric plasmid. The data are the mean + /- SEM from at least three experiments. See also Figure 1—figure supplements 1, 2 and 3.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/50903/elife-50903-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The steady-state levels of the HA-tagged deubiquitinating enzymes were analyzed by SDS-PAGE and immunoblotting for the HA epitope. Note that many of the deubiquitinating enzymes migrate slower than predicted from their molecular weights. (B) Hrd3-Flag was expressed from a centromeric plasmid under its endogenous promoter in hrd3Δ cells together with individual deubiquitinating enzymes (DUBs). The DUBs were N-terminally tagged with hemagglutinin (HA) and overexpressed from a centromeric plasmid under the GPD-promoter. Hrd3 levels were analyzed by SDS-PAGE and immunoblotting for the Flag epitope. The data are the mean + /- SEM from at least three experiments. (C) As in (B), but following Usa1-Flag in usa1Δ cells. (D) As in (B), but following the ERAD substrate CPY*-Flag in wild-type cells.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/50903/elife-50903-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) The degradation of Hrd1-Flag was followed by cycloheximide-chase experiments in usa1Δ cells overexpressing the deubiquitinating enzyme Ubp1 or a catalytically-inactive Ubp1 mutant (Ubp1(C110S)). The data are the mean + /- SEM from at least three experiments. The vertical gray dashed line indicates the 90 min end-point used for CPY* chases. (B) As in (A), but with der1Δ cells. (C) The samples used for Figure 1F were analyzed for their total ubiquitin levels and total protein. The membrane fractions were solubilized in detergent and material not bound to IMAC beads was analyzed by SDS-PAGE and blotting with anti-ubiquitin antibodies (left) or by total protein visualization with stain-free dye technology (right). (D) Two-fold serial dilutions of whole cell lysate from wild-type cells expressing Hrd1-HA and Ubp1-HA from their endogenous promoters on centromeric plasmids. This panel is representative of at least three experiments. (E) Hrd1-Flag, Orm2-Flag, and Ubp1-V5 (or Ubp1-HA) were expressed from their endogenous promoters on centromeric plasmids in ubp1Δ, hrd3Δ, or usa1Δ cells. The lysates were immunoprecipitated with anti-V5 affinity resin, separated by SDS-PAGE and immunoblotted with anti-Flag and anti-V5 antibodies. This panel is representative of at least three experiments.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/50903/elife-50903-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) GFP-CPY* was expressed from a centromeric plasmid under the GPD promoter in a hrd1Δubp1Δ strain. GFP-CPY* degradation was followed in cycloheximide-chase experiments. The indicated additional proteins were expressed from centromeric plasmids under their endogenous promoters or GPD promoter, indicated by upward arrow. Samples were analyzed by flow cytometry after 4 hr of treatment. The number of cells expressing low levels of GFP (horizontal dashed line) does not change during cycloheximide treatment, whereas those highly expressing GFP-CPY* changes (horizontal solid line). This panel is representative of at least three experiments. (B) As in (A) but with a centromeric plasmid containing Hmg2-GFP driven by the GPD promoter. Degradation was stimulated using zaragozic acid or combination of zaragozic acid and cycloheximide. This panel is representative of at least three experiments. (C) The degradation of Erg3-Flag was followed by cycloheximide chase in a hrd1Δubp1Δ strain containing the indicated proteins under endogenous promoter or GPD promoter, indicated by upward arrow. The data are the mean + /- SEM from at least three experiments. (D) As in (C) but following degradation of Hrd1-Flag in hrd1Δubp1Δ cells expressing CPY*-HA with the indicated proteins. This panel is representative of at least three experiments.
 
 A more sensitive analysis of Ubp1 function can be performed with hrd3Δ cells, in which Hrd1 autoubiquitination and degradation are greatly accelerated (half-life of about 30 min). Indeed, while Hrd1 levels are very low in hrd3Δ cells (Figure 1B; lane 3), Ubp1 overexpression increased Hrd1 to about the same level as in wild-type cells (Figure 1B; lane 8 versus 1). This increase was not seen when an enzymatically inactive mutant of Ubp1 (C110S) was overexpressed (Figure 1B, lane 13), indicating that the deubiquitination activity of Ubp1 is required for Hrd1 stabilization. An increase of Hrd1 was also seen when Ubp1 was overexpressed in cells lacking Usa1 or Der1 (Figure 1B; lanes 9 versus 4 and lane 10 versus 5).
 
@@ -42,15 +58,23 @@ To determine whether Hrd1 and Ubp1 interact in vivo, we performed co-immunopreci
 
 To test whether Ubp1 affects the function of Hrd1 in ERAD, we tested the degradation of the ERAD-L substrate carboxypeptidase Y* (CPY*) (Finger et al., 1993) in cycloheximide-chase experiments. In the absence of Ubp1 (Figure 1H, solid square with dashed black line), CPY* degradation was slower than in cells expressing Ubp1 (Figure 1H, circles with solid black line). Importantly, overexpression of Ubp1 did not prevent degradation of CPY* (Figure 1H, triangles with red line) or the steady-state levels of CPY* (Figure 1—figure supplement 1D). The degradation of the overexpressed ERAD-L substrate, GFP-CPY* was also promoted by Ubp1 expression (in Figure 1—figure supplement 3A). Surprisingly, Ubp1 was not required for ERAD-M and overexpression of Ubp1 only slightly slowed degradation of ERAD-M substrates (Figure 1—figure supplement 3B and C). These data support the idea the Ubp1 is promoting optimal ERAD-L, but not ERAD-M. Taken together, these results demonstrate that Hrd1 and Ubp1 interact with one another, and that Ubp1 counteracts the autoubiquitination activity of Hrd1 thereby inhibiting Hrd1 degradation and regulating Hrd1 function.
 
-## Ubp1 function requires its anchoring to the ER membrane
+### Ubp1 function requires its anchoring to the ER membrane
 
 Ubp1 contains an N-terminal transmembrane segment followed by a cytosolic linker and catalytic domain (Figure 2A). Ubp1 has been reported to be expressed as two distinct polypeptides; one with the transmembrane segment and the other lacking it (called ΔTM in the scheme in Figure 2A), generated from an internal translation start site (Met67) (Schmitz et al., 2005). When Ubp1 lacking the transmembrane segment was overexpressed in hrd3Δ cells, no Hrd1 stabilization was observed (Figure 2B). However, the transmembrane segment of full-length Ubp1 could be replaced by the unrelated transmembrane segment of the Cue4 protein (Figure 2C). Even when the entire N-terminal segment preceding the catalytic domain was replaced by a segment derived from Cue4, Ubp1 retained activity in stabilizing Hrd1 (Figure 2C). These results demonstrate that the role of the Ubp1 transmembrane segment is primarily to anchor Ubp1 at the ER membrane, which likely facilitates its interaction with the multi-spanning membrane protein Hrd1. In fact, the membrane anchor of Ubp1 could be replaced by the Hrd1-interacting H-domain of Usa1; this soluble fusion protein was able to completely stabilize Hrd1 (Figure 2C). The enzymatically inactive version of this construct (H-domain Ubp1 (C110S)) had a small effect on Hrd1 degradation (Figure 2—figure supplement 1A), perhaps due to its overexpression. Together, these results suggest that Hrd1 stabilization is primarily achieved by H domain-dependent recruitment of the catalytic domain of Ubp1. Control experiments showed that all Ubp1-constructs were expressed at about the same level (Figure 2—figure supplement 1B).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/50903/elife-50903-fig2-v2.jpg)
+
+**Figure 2.:** (A) Schematic of chimeric deubiquitinating enzyme constructs used in (B)-(D). TM, transmembrane. Red segments are from Ubp1, yellow ones from Cue4, cyan ones from Usa1, and blue ones from Usp2. The H domain comprises amino acids 437–490 of Usa1. (B) The degradation of Hrd1-Flag was followed in a hrd3Δ strain overexpressing the indicated Ubp1 constructs. Cycloheximide was added to the cell culture at time point zero, and samples were taken at the indicated time points and analyzed by SDS-PAGE and immunoblotting with anti-Flag antibodies. The data are the mean + /- SEM from at least three experiments. (C) As in (B), but with other Ubp1 chimeras and wild-type Ubp1 as control. (D) As in (B) with Usp2 chimeras and wild-type Ubp1 as control. (E) Hrd1-Flag and Ubp1-V5 variants were expressed from their endogenous promoters on centromeric plasmids in hrd1Δubp1Δ cells. The lysates were immunoprecipitated with anti-V5 affinity resin, separated by SDS-PAGE and immunoblotted with anti-Flag and anti-V5 antibodies. This panel is representative of at least three experiments. See also Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/50903/elife-50903-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) The degradation of Hrd1-Flag was followed in the indicated strains by cycloheximide-chase experiments. The data are the mean + /- SEM from at least three experiments. (B) The steady-state levels of C-terminally HA-tagged DUB constructs were analyzed by SDS-PAGE and immunoblotting for the HA epitope. The overexpressed constructs shown in lanes 4–12 were loaded at 10% compared to lanes 1–3.
 
 To further test the specificity of Ubp1, we used the cytosolic mammalian DUB Usp2 (Baker et al., 2005). Both Ubp1 and Usp2 are members of the ubiquitin-specific protease (USP) family that generally has low ubiquitin-chain linkage specificity (Mevissen and Komander, 2017). Overexpression of the catalytic core of Usp2 had only a minor effect on Hrd1 stability (Figure 2D). Similar results were obtained with a fusion protein containing the transmembrane domain of Ubp1 followed by Usp2 (TM Usp2; Figure 2D), indicating that mere membrane targeting of the DUB is insufficient to stabilize Hrd1. However, stabilization was observed when Usp2 was targeted directly to Hrd1 by the Hrd1-interacting H domain of Usa1 (Figure 2D), even though this construct was expressed at a lower level than transmembrane Usp2 (Figure 2—figure supplement 1B).
 
 Next, we tested if the Ubp1 chimeras co-immunoprecipitated with Hrd1. Both wild-type Ubp1 and TM(Cue4)Ubp1 interacted weakly with Hrd1 (Figure 2E). In contrast, Ubp1 missing its transmembrane segment (Ubp1 ΔTM) did not interact with Hrd1 but a soluble version of Ubp1 carrying the H-domain of Usa1 showed strong interaction with Hrd1 (Figure 2E). Thus, there is a general correlation between Ubp1’s Hrd1 interaction and its effect on Hrd1 stabilization. Together, these results suggest that wild-type Ubp1 is targeted to Hrd1 by both its transmembrane segment and the USP domain. They also provide further support for the idea that Ubp1 acts on polyubiquitinated Hrd1.
 
-## Ubp1 overexpression bypasses the requirement for Hrd3 in ERAD
+### Ubp1 overexpression bypasses the requirement for Hrd3 in ERAD
 
 Next, we analyzed the effect of Ubp1 overexpression on substrate degradation in yeast strains lacking various ERAD components. As reported previously (Bordallo et al., 1998; Buschhorn et al., 2004; Carvalho et al., 2006; Denic et al., 2006; Knop et al., 1996), the degradation of CPY* was drastically reduced when either Hrd1, Usa1, Der1, or Hrd3 were absent (compare dashed lines in Figure 3A with those in Figure 3B–E), confirming that these components are all required for ERAD-L. Ubp1 overexpression only had an effect in hrd3Δ cells, where it rescued CPY* degradation (solid line in Figure 3E versus those in Figure 3A–D). The degradation rate approached that in wild-type cells (Figure 3A). These results suggest that Hrd3’s major function is to inhibit the ubiquitination activity of Hrd1. Importantly, bypassing Hrd3 by Ubp1 overexpression does not obviate the need for the other ERAD-L components in CPY* degradation (Figure 3A–D).
 
@@ -62,11 +86,19 @@ To further test the function of Ubp1, we overexpressed Ubp1 in hrd1Δhrd3Δ cell
 
 Stabilization of wild-type Hrd1 by Ubp1 overexpression also resulted in the accelerated degradation of the ERAD-M substrate Erg3 (Figure 3L) (Christiano et al., 2014; Jaenicke et al., 2011). Surprisingly however, the Hrd1 KRK variant was also able to mediate the degradation of Erg3 (Figure 3M), in contrast to the ERAD-L substrate CPY* (Figure 3I). Overexpression of Ubp1 did not bypass Hrd1 function because inactive Hrd1(C399S) was unable to support the degradation of Erg3 (Figure 3N). It therefore appears that autoubiquitination of Hrd1 is not required for the degradation of this ERAD-M substrate.
 
-## The UBL domain of Usa1 inhibits Ubp1 activity
+### The UBL domain of Usa1 inhibits Ubp1 activity
 
 Previous reports demonstrated that Usa1 is required for Hrd1 autoubiquitination and degradation in a hrd3Δ strain (Carroll and Hampton, 2010; Vashistha et al., 2016). This activity could be assigned to the UBL domain of Usa1, but it remained unclear how this domain affects Hrd1 stability (Carroll and Hampton, 2010). We wondered if the UBL domain might inhibit Ubp1’s DUB activity; in its absence (or absence of the entire Usa1 protein), Ubp1 would effectively reduce ubiquitination and thus degradation of Hrd1.
 
 To test this idea, we used a hrd3Δusa1Δ strain, in which Hrd1 is much more stable than in a hrd3Δ single deletion strain (Carroll and Hampton, 2010; see also Figure 4—figure supplement 1A). Nevertheless, there was still some Hrd1 autoubiquitination and degradation in this strain, as overexpression of wild-type Ubp1, but not of enzymatically inactive Ubp1 (C110S), resulted in increased Hrd1 levels (Figure 4A, lanes 5–8 versus 9–12). Overexpression of Usa1 lacking its UBL domain (Usa1 ΔUBL) drastically stabilized Hrd1 (lanes 21–24), in contrast to wild-type Usa1, which only had a small effect on Hrd1 stability (lanes 17–20). Thus, the UBL domain of Usa1 indeed seems to attenuate Ubp1 activity.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/50903/elife-50903-fig4-v2.jpg)
+
+**Figure 4.:** (A) Degradation of Hrd1-Flag in hrd3Δusa1Δ cells overexpressing the indicated proteins analyzed by cycloheximide-chase experiments. Ubp1(C110S) is an enzymatically-inactive version of Ubp1, and Usa1ΔUBL is Usa1 lacking its UBL domain. This panel is representative of at least three experiments. (B) Degradation of Hrd1-Flag in hrd3Δ cells overexpressing both Ubp1 and wild-type Usa1 or Usa1ΔUBL. This panel is representative of at least three experiments. (C) Degradation of Hrd1-Flag in hrd3Δubp1Δusa1Δ cells overexpressing the indicated proteins. This panel is representative of at least three experiments. (D) Degradation of Hrd1-Flag in hrd3Δubp1Δusa1Δ cells expressing Ubp1 and overexpressing the indicated proteins. This panel is representative of at least three experiments. (E) Model for the regulation of Hrd1 by autoubiquitination and deubiquitination. Hrd3 serves as an inhibitor of Hrd1 autoubiquitination. Binding of an ERAD substrate to Hrd3 would relieve this inhibition, resulting in Hrd1 activation and degradation of the substrate (dotted line). Hrd1 ubiquitination also leads to Hrd1 degradation, which counteracts substrate degradation (broken lines). Ubp1 reverses autoubiquitination of Hrd1 and returns Hrd1 to the inactive state. Ubp1 activity is attenuated by the UBL domain of the Hrd1-associated component Usa1. See also Figure 4—figure supplement 1.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/50903/elife-50903-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) The degradation of Hrd1-Flag was followed in the indicated strains by cycloheximide-chase experiments. The data are the mean + /- SEM from at least three experiments. (B) The degradation of CPY*-HA was followed in a hrd1Δ strain containing the indicated proteins by cycloheximide-chase experiments. This panel is representative of at least three experiments. (C) Hmg2-non-responder-1-GFP was expressed from a centromeric plasmid under the GPD promoter in a hrd1Δ strain, and its degradation was followed after the addition of cycloheximide. The indicated additional proteins were expressed from centromeric plasmids under their endogenous promoters. Samples were analyzed by flow cytometry after 4 hr of treatment. The number of cells expressing low levels of GFP (dashed line) and does not change during cycloheximide treatment, whereas those highly expressing Hmg2-non-responder-1-GFP changes (solid line). This panel is representative of at least three experiments. (D) As in C but with Hmg2-GFP, using zaragozic acid to stimulate degradation. This panel is representative of at least three experiments.
 
 The co-overexpression of Usa1 and Ubp1 in a hrd3Δ strain had little effect on Hrd1 levels and Hrd1 degradation compared to overexpression of Ubp1 alone (Figure 4B, lanes 5–8 versus 1–4). However, when Usa1 ΔUBL was co-expressed with Ubp1, Hrd1 was strongly stabilized (lanes 9–12), indicating that the UBL domain of Usa1 indeed inhibits Ubp1 activity. In a triple-deletion mutant (hrd3Δubp1Δusa1Δ), Hrd1 was rapidly degraded (Figure 4C, lanes 1–4), but could be stabilized by its partner protein Hrd3 (lanes 5–8) or by increasing deubiquitination through Ubp1 overexpression (lanes 9–12). However, as expected from our model, Usa1 or Usa1 ΔUBL had no effect in the absence of Ubp1 (lanes 17–20 and 21–24). When Ubp1 was expressed from its endogenous promoter in the triple-deletion mutant (hrd3Δubp1Δusa1Δ), the additional expression of Usa1 ΔUBL caused stabilization of Hrd1 (Figure 4D, lanes 9–12), whereas expression of wild-type Usa1 only had a small effect (Figure 4D, lanes 5–8). Collectively, these results support the idea that the UBL domain of Usa1 inhibits the activity of Ubp1.
 
@@ -94,11 +126,469 @@ Although one would expect the function of Ubp1 to be evolutionarily conserved, t
 
 ## Materials and methods
 
-## Yeast strains and plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Saccharomyces cerevisiae)</td>
+      <td>HRD1</td>
+      <td>This study</td>
+      <td>YOL013C</td>
+      <td>Amplified from BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>HRD3</td>
+      <td>This study</td>
+      <td>YLR207W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>USA1</td>
+      <td>This study</td>
+      <td>YML029W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>DER1</td>
+      <td>This study</td>
+      <td>YBR201W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>YUH1</td>
+      <td>This study</td>
+      <td>YJR099W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBP1</td>
+      <td>This study</td>
+      <td>YDL122W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBP2</td>
+      <td>This study</td>
+      <td>YOR124C</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBP3</td>
+      <td>This study</td>
+      <td>YER151C</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBP5</td>
+      <td>This study</td>
+      <td>YER144C</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBP6</td>
+      <td>This study</td>
+      <td>YFR010W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBP7</td>
+      <td>This study</td>
+      <td>YIL156W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBP8</td>
+      <td>This study</td>
+      <td>YMR223W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBP9</td>
+      <td>This study</td>
+      <td>YER098W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBP10</td>
+      <td>This study</td>
+      <td>YNL186W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBP11</td>
+      <td>This study</td>
+      <td>YKR098C</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBP12</td>
+      <td>This study</td>
+      <td>YJL197W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBP13</td>
+      <td>This study</td>
+      <td>YBL067C</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBP14</td>
+      <td>This study</td>
+      <td>YBR058C</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBP15</td>
+      <td>This study</td>
+      <td>YMR304W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>UBP16</td>
+      <td>This study</td>
+      <td>YPL072W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>DOA4</td>
+      <td>This study</td>
+      <td>YDR069C</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>SAD1</td>
+      <td>This study</td>
+      <td>YFR005C</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>OTU1</td>
+      <td>This study</td>
+      <td>YFL044C</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>OTU2</td>
+      <td>This study</td>
+      <td>YHL013C</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>RRI1</td>
+      <td>This study</td>
+      <td>YDL216C</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>RPN11</td>
+      <td>This study</td>
+      <td>YFR004W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>RPN8</td>
+      <td>This study</td>
+      <td>YOR261C</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>ORM2</td>
+      <td>This study</td>
+      <td>YLR350W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>ERG3</td>
+      <td>This study</td>
+      <td>YLR056W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>HMG2</td>
+      <td>This study</td>
+      <td>YLR450W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (S. cerevisiae)</td>
+      <td>PRC1 (CPY)</td>
+      <td>This study</td>
+      <td>YMR297W</td>
+      <td>BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Gene (Homo sapiens)</td>
+      <td>Ubiquitin specific protease 2; Usp2</td>
+      <td>This study</td>
+      <td>AAP36388.1</td>
+      <td>Synthetic gene</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>BY4741</td>
+      <td>GE Dharmacon</td>
+      <td></td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>hrd1Δ</td>
+      <td>GE Dharmacon</td>
+      <td></td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 hrd1::kanR</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>hrd3Δ</td>
+      <td>GE Dharmacon</td>
+      <td></td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 hrd3::kanR</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>usa1Δ</td>
+      <td>GE Dharmacon</td>
+      <td></td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 usa1::kanR</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>der1Δ</td>
+      <td>GE Dharmacon</td>
+      <td></td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 der1::kanR</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>ubp1Δ</td>
+      <td>This study</td>
+      <td></td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 ubp1::kanR</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>yRB057A</td>
+      <td>This study</td>
+      <td></td>
+      <td>MATa his3Δ1 leu2Δ0 MET15 lys2Δ0 ura3Δ0 hrd1::kanR hrd3::kanR</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>yBGP15A</td>
+      <td>This study</td>
+      <td></td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 hrd1::kanR ubp1::kanR</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>yRB0065A</td>
+      <td>This study</td>
+      <td></td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 hrd3::kanR usa1::kanR</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>yRB0126</td>
+      <td>This study</td>
+      <td></td>
+      <td>MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0 hrd3::kanR ubp1::hphNT1</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (S. cerevisiae)</td>
+      <td>yRB0075C</td>
+      <td>This study</td>
+      <td></td>
+      <td>MAT? his3Δ1 leu2Δ0 MET15 ura3Δ0 hrd3::kanR usa1::kanR ubp1::hphNT1</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>CPY*</td>
+      <td>(Finger et al., 1993)</td>
+      <td></td>
+      <td>G255R point mutation in PRC1 (CPY) leading to CPY*</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (S. cerevisiae)</td>
+      <td>GPD promoter</td>
+      <td>This study</td>
+      <td>YGR192C</td>
+      <td>667 basepairs upstream of TDH3 (GPD) gene; BY4741 (genomic DNA)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>THE Anti-DYKDDDK Antibody (mAb, mouse)</td>
+      <td>Genscript</td>
+      <td>A00187</td>
+      <td>1:2000 (5% milk in TBST)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA High Affinity Antibody (mAb, clone 3F10, rat)</td>
+      <td>Roche</td>
+      <td>11867423001</td>
+      <td>1:2000 (5% milk in TBST)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>THE V5 Tag Antibody(mAb, mouse)</td>
+      <td>Genscript</td>
+      <td>A01724</td>
+      <td>1:2500 (5% milk in TBST)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PGK1 (mAb, clone22C5D8, mouse)</td>
+      <td>Invitrogen</td>
+      <td>459250</td>
+      <td>1:1000 (5% milk in TBST)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ubiquitin(mAb, clone P4D1, mouse)</td>
+      <td>Santa Cruz Biotechnologies</td>
+      <td>sc-8017</td>
+      <td>1:500 (5% milk in TBST)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Amersham ECL Rabbit IgG, HRP-linked wholeAb (donkey)</td>
+      <td>GE Healthcare</td>
+      <td>NA934</td>
+      <td>1:4000 (5% milk in TBST)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Amersham ECL Mouse IgG, HRP-linked whole Ab (sheep)</td>
+      <td>GE Healthcare</td>
+      <td>NA931</td>
+      <td>1:4000 (5% milk in TBST)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Amersham ECL Rat IgG, HRP-linked whole antibody (goat)</td>
+      <td>GE Healthcare</td>
+      <td>NA935</td>
+      <td>1:4000 (5% milk in TBST)</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Western Lightning Plus-ECL, Enhanced Chemiluminescence Substrate</td>
+      <td>Perkin-Elmer</td>
+      <td>NEL103E001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Amersham ECL Select Western Blotting Detection Reagent</td>
+      <td>GE Healthcare</td>
+      <td>RPN2235</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>SYTOX Blue Nucleic Acid Stain</td>
+      <td>Invitrogen</td>
+      <td>S11348</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Cycloheximide</td>
+      <td>Calbiochem</td>
+      <td>239763</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Decyl Maltose Neopentyl Glycol (DMNG)</td>
+      <td>Anatrace</td>
+      <td>NG322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Zaragozic Acid A</td>
+      <td>Cayman Chemical</td>
+      <td>17452</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Graphpad Prism 8</td>
+      <td>Graphpad Software LLC.</td>
+      <td></td>
+      <td>version 8.3.0</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>Becton, Dickinson and Company</td>
+      <td></td>
+      <td>Version 10.6.0</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dynabeads His-Tag Isolation and Pulldown</td>
+      <td>Invitrogen</td>
+      <td>10104D</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Anti-V5 Agarose Affinity Gel</td>
+      <td>Millipore</td>
+      <td>A7345</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Yeast strains and plasmids
 
 Deletion strains used in this study were purchased from GE Dharmacon and are derivatives of BY4741 (MATa his3Δ1 leu2Δ0 met15Δ0 ura3Δ0) or BY4742 (MATα his3Δ1 leu2Δ0 lys2Δ0 ura3Δ0) (see Supplementary file 1). The ubp1Δ strain was generated by a transforming a PCR-amplified targeting cassette with the LiAc/PEG methods (Gietz and Schiestl, 2007). Double and triple deletion strains were generated by crossing and sporulation. Genotypes were verified by PCR. Plasmids were constructed using standard restriction cloning or Gibson assembly. All plasmids used in this study were centromeric plasmids (Sikorski and Hieter, 1989) and where indicated, overexpression was driven by the GPD/TDH3 promoter. For a list of plasmids used in this study, see Supplementary file 2.
 
-## Degradation assays
+### Degradation assays
 
 Cycloheximide-chase degradation assays were performed as described previously (Gardner et al., 1998) with the following modifications. Cells were grown to mid-log phase (0.4–0.7 OD600/mL) in synthetic dropout media. The cells were pelleted at 2000 x g for 5 min and resuspended to 2.5 OD600/mL in fresh media. At time ‘0 min’ the culture was supplemented with 50 μg/mL cycloheximide and an aliquot was taken and centrifuged as above. The cell pellet was either flash frozen in liquid N2 or resuspended in lysis buffer. The remaining culture was incubated at 30°C with samples taken as indicated.
 
@@ -106,14 +596,14 @@ Cell pellets were resuspended in lysis buffer (10 mM MOPS, pH 6.8, 1% SDS, 8M ur
 
 Cells expressing GPD-driven Hmg2-GFP or Hmg2-NR1-GFP with the indicated plasmids were grown to mid-log phase in synthetic dropout media. Cells were pelleted and resuspended in synthetic medium and transferred into a 96-well round bottom plate. To follow degradation of Hmg2-NR1-GFP, the medium was supplemented with 50 μg/mL cycloheximide. To induce degradation of Hmg2-GFP, the media was supplemented with 10 μg/mL zaragozic acid (Cayman Chemical). The cells were grown for 4 hr, then pelleted and washed with ice-cold PBS (137 mM NaCl, 2.7 mM KCl, 10 mM Na2HPO4, 1.8 mM KH2PO4, pH 7.4). The washed cells were resuspended at 1 OD600/mL in PBS containing the viability dye Sytox Blue (Invitrogen) at 1 μM. Cells were kept at 4°C prior to flow cytometry using a Bio-Rad ZE5 Cell Analyzer with Everest software. At least ten thousand events were analyzed using forward/side scatter to identify single cells and Sytox Blue fluorescence was used to exclude dead cells. GFP fluorescence was measured from the 488 nm laser with a 509 nm/24 nm bandpass filter set, while Sytox Blue fluorescence was measured from the 405 nm laser with a 460 nm/22 nm bandpass filter set. Data were analyzed and figures were generated using FlowJo V10.6 (FlowJo LLC.). The low-expressing GFP population is present in all traces and is indicated under the dashed lines.
 
-## Detection of Hrd1 ubiquitination in vivo
+### Detection of Hrd1 ubiquitination in vivo
 
 Denaturing pulldowns of Hrd1 were performed as described previously (Baldridge and Rapoport, 2016) with the following modifications. Cells with a centromeric plasmid bearing an endogenous Hrd1 promoter and a Hrd1-His10 were grown to mid-log phase and lysed in 50 mM HEPES pH 7.4, 300 mM KCl, protease inhibitors, 1 mM PMSF, 1.5 µM pepstatin, 8M urea (to prevent additional Hrd1 autoubiquitination), and 5 mM NEM (to inhibit deubiquitinating enzymes). The lysates were centrifuged at 2000 x g for 10 min, and the supernatant was collected and re-centrifuged for 30 min in a Ti45 rotor at 42,000 rpm (RCFavg 138,001). The membranes were solubilized in 50 mM HEPES pH 7.4, 300 mM KCl, protease inhibitors, 1 mM PMSF, 6M urea, 1.5% Triton X-100 final and 25 mM imidazole) for 1 hr at 4°C. His-tag Dynabeads (Life Technologies) were added (0.25 mL per 1,500 OD cells) and incubated for an additional 1 hr. The beads were washed three times with a 30-fold excess buffer. Hrd1-His10 was eluted with buffer including 400 mM imidazole. The samples were analyzed by SDS-PAGE and immunoblotting with anti-Hrd1 and anti-ubiquitin antibodies (clone P4D1, Santa Cruz). Unbound IMAC flow-through was used for a loading control to demonstrate equal material input.
 
-## Immunoprecipitation of Hrd1 and interacting partners
+### Immunoprecipitation of Hrd1 and interacting partners
 
 Cells with a centromeric plasmids bearing a combination of Hrd1-3xFlag, Orm2-3xFlag, and endogenous or GPD driven Ubp1-3xHA,Ubp1-3xV5, or Ubp1-3xV5 variants were grown to mid-log phase, pelleted, washed once with water and flash frozen in liquid nitrogen. Cells were thawed on ice and treated for 10 min with spheroplasting buffer (50 mM HEPES, pH 7.4, 150 mM NaCl, 1M sorbitol) supplemented with 10 mM DTT. Cells were pelleted and washed once with spheroplasting buffer before resuspending in spheroplasting buffer supplemented with 20 µg zymolyase 100T (per 5 OD). Cells were incubated at 30°C for 60 min, then pelleted at 3200 x g for 5 min. The spheroplasts were resuspended in IP buffer (50 mM HEPES, pH 7.4, 150 mM NaCl with freshly added 1 mM PMSF and 3 µM pepstatin A) and lysed with 7–10 strokes of a tight-fitting Dounce homogenizer. Lysed cells were pelleted at 20,000 x g for 20 min. The supernatant was discarded and the pellet (microsome fraction) was resuspended in IP buffer supplemented with 1% Decyl Maltose Neopentyl Glycol (DMNG). Microsomes were solubilized for 1 hr at 4°C, before input samples were taken and 7.5 ODs of solubilized proteins were mixed with 20 µL (40 µL slurry) Anti-V5 Agarose Affinity Gel (Millipore, A7345) and rolled for 2 hr at 4°C. The bound proteins were washed seven times with a 35-fold excess of IP buffer containing 0.1% DMNG and eluted with 2x SDS-PAGE sample buffer. The samples were analyzed by SDS-PAGE and immunoblotting with anti-Flag (THE DYKDDDDK Tag antibody, Genscript) and anti-V5 antibodies (THE V5 Tag Antibody, GenScript) with the inputs loaded at 2%.
 
-## Replication
+### Replication
 
 All experiments in this submission were repeated at least three times with biological replicates from independent yeast transformations.

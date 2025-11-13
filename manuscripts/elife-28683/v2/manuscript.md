@@ -23,7 +23,7 @@
 
 ## Abstract
 
-10.7554/eLife.28683.001 Mutualism is of fundamental importance in ecosystems. Which factors help to keep the relationship mutually beneficial and evolutionarily successful is a central question. We addressed this issue for one of the most significant mutualistic interactions on Earth, which associates plants of the leguminosae family and hundreds of nitrogen (N 2 )-fixing bacterial species. Here we analyze the spatio-temporal dynamics of fixers and non-fixers along the symbiotic process in the Cupriavidus taiwanensis–Mimosa pudica system. N 2 -fixing symbionts progressively outcompete isogenic non-fixers within root nodules, where N 2 -fixation occurs, even when they share the same nodule. Numerical simulations, supported by experimental validation, predict that rare fixers will invade a population dominated by non-fixing bacteria during serial nodulation cycles with a probability that is function of initial inoculum, plant population size and nodulation cycle length. Our findings provide insights into the selective forces and ecological factors that may have driven the spread of the N 2 -fixation mutualistic trait.
+Mutualism is of fundamental importance in ecosystems. Which factors help to keep the relationship mutually beneficial and evolutionarily successful is a central question. We addressed this issue for one of the most significant mutualistic interactions on Earth, which associates plants of the leguminosae family and hundreds of nitrogen (N2)-fixing bacterial species. Here we analyze the spatio-temporal dynamics of fixers and non-fixers along the symbiotic process in the Cupriavidus taiwanensis–Mimosa pudica system. N2-fixing symbionts progressively outcompete isogenic non-fixers within root nodules, where N2-fixation occurs, even when they share the same nodule. Numerical simulations, supported by experimental validation, predict that rare fixers will invade a population dominated by non-fixing bacteria during serial nodulation cycles with a probability that is function of initial inoculum, plant population size and nodulation cycle length. Our findings provide insights into the selective forces and ecological factors that may have driven the spread of the N2-fixation mutualistic trait.
 
 ## Introduction
 
@@ -33,43 +33,51 @@ Rhizobia, the N2-fixing symbionts of legumes, induce the formation of and massiv
 
 ## Results
 
-## Evidence for a spatial and temporal control of mutualism in Mimosa nodules
+### Evidence for a spatial and temporal control of mutualism in Mimosa nodules
 
 During the symbiotic process, most rhizobia enter the legume root via infection threads that ensure colonization of the forming nodule and ultimately release bacteria into nodule cells where differentiated forms called bacteroids fix nitrogen (Batut et al., 2004). Although they induce the formation of indeterminate nodules, it is noteworthy that Cupriavidus taiwanensis symbionts of Mimosa spp. are not terminally differentiated and ca. 20% of bacteroids recovered from nodules, together with bacteria present in infection threads, can resume growth (Marchetti et al., 2011). To evaluate the specific fates of mutualists and non mutualists in plants infected by a mixed population, we monitored the fitness of total nodule bacteria over time following co-inoculation of Mimosa pudica seedlings with a mixture (1/1 ratio, 106 total bacteria/plant) of isogenic N2-fixing and non-fixing strains of C. taiwanensis. Fix+ and Fix- strains only differed by the presence of the nifH gene, encoding the nitrogenase reductase subunit of the nitrogenase enzyme, and of constitutively expressed GFP or mCherry fluorescent genes. For technical reasons (see Materials and methods), nodules were only collected from 14 dpi. Importantly, each nodule was individually analyzed for bacterial fitness by plating, allowing analysis at the nodule and plant individual levels. In these experimental conditions 97% of the nodules were infected by either Fix+ or Fix- bacteria.
 
 We observed a marked difference in the reproductive fitness of Fix+ and Fix- bacteria from the same plant over time, which significantly differed from 21 days post-infection (dpi) and up to 28 fold on average (Figure 1A and Figure 1—figure supplement 1), perhaps because of plant control mechanisms, including sanctions (Kiers et al., 2003) and possibly PFF. A significant difference was also obtained from 28 dpi when analyzing control plants singly-infected with either Fix+ or Fix- strains (Figure 2A). Non-fixers did not proliferate better than fixers even at 14 dpi (Figure 1A) possibly because the metabolic cost paid by bacteria to fix nitrogen in terms of ATP and reducing power is too low to be detected in our experimental conditions, or because plant sanctions/PFF and the metabolic cost of nitrogen fixation equilibrate until sanctions become prominent. The resulting net fitness cost of cooperation, which is the weighted metabolic cost of nitrogen fixation by any form of plant control, thus appeared to be zero or negative, enabling mutualism to spread.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/28683/elife-28683-fig1-v2.jpg)
+
+**Figure 1.:** M. pudica plants were co-inoculated with a mixture of Fix+ and Fix- strains at a 1/1 ratio, using 106 (A) or 1010 bacteria/plant (B). Nodules were individually analyzed by plating their bacterial population (see Figure 1—figure supplement 1). Co-infected nodules represented ca. 3% (A) or 20% (B) of the nodules. (A) The ratio of the mean number of bacteria per Fix+-containing nodule to the mean number of bacteria per Fix-- containing nodule was calculated for each individual plant at each time point (see Figure 1—figure supplement 1) and box plots represent the distribution of these ratios (Figure 1—source data 1). Only single-infected nodules were taken into account in this graph. (B) Box plots represent the distribution of the ratios of Fix+ bacteria to Fix- bacteria in co-infected nodules (Figure 1—source data 2). Central rectangles span the first quartile to the third quartile (that is, the interquartile range or IQR), bold segments inside rectangles show the median, unfilled circles indicate suspected outliers, whiskers above and below the box show either the locations of the minimum and maximum in the absence of suspected outlying data or 1.5 × IQR if an outlier is present. Horizontal dashed lines correspond to ratios equal to 1. The number of plants (A) or nodules (B) analyzed is indicated in brackets. *Significant differences between the number of Fix+ and Fix- bacteria per nodule (p<0.05, multiple comparison test after Kruskal-Wallis (A); p<0.001, after Student t-test with paired data (B).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/28683/elife-28683-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Strains were inoculated in ratio 1/1. M. pudica nodules were individually analyzed. Box plots were constructed as described in Figure 1. All nodules from each plant were analyzed individually (Figure 1—source data 1). The number of nodules analyzed is indicated in brackets.
+
 ![Figure 2.](https://cdn.elifesciences.org/articles/28683/elife-28683-fig2-v2.jpg)
 
-**Figure 2.:** + or Fix- nodule bacteria following single-inoculation of M. pudica.(A) Fix+ (CBM382) or Fix- (CBM2568) C. taiwanensis were inoculated on M. pudica. Box plots represent the distribution of the number of bacteria recovered per nodule on plates. Box plots were constructed as described in Figure 1. R, ratios of the median number of Fix+ bacteria per nodule on the median number of Fix- bacteria per nodule. The number of nodules analyzed at each time point is indicated in brackets. The number of plants analyzed at each time point is indicated in red. Results are from two independent experiments (Figure 2—source data 1). *Significantly different from the number of Fix+ bacteria per nodule (p<0.05 multiple comparison test after Kruskal-Wallis). (B, C) Theoretical reproductive fitness of Fix+ (B) and Fix- bacteria (C) following single-inoculation of M. pudica as compared to experimental data. Dotted lines represent bacterial populations per plant averaged over 200 replicate simulations (Figure 2—source data 2). Box plots represent the distribution of the number of bacteria experimentally recovered per plant. Experimental data are from (A).10.7554/eLife.28683.008Figure 2—source data 1.+ (CBM382) or Fix- (CBM2568) C. taiwanensis.10.7554/eLife.28683.009Figure 2—source data 2.+ and Fix- bacteria following single inoculations of M. pudica.
+**Figure 2.:** (A) Fix+ (CBM382) or Fix- (CBM2568) C. taiwanensis were inoculated on M. pudica. Box plots represent the distribution of the number of bacteria recovered per nodule on plates. Box plots were constructed as described in Figure 1. R, ratios of the median number of Fix+ bacteria per nodule on the median number of Fix- bacteria per nodule. The number of nodules analyzed at each time point is indicated in brackets. The number of plants analyzed at each time point is indicated in red. Results are from two independent experiments (Figure 2—source data 1). *Significantly different from the number of Fix+ bacteria per nodule (p<0.05 multiple comparison test after Kruskal-Wallis). (B, C) Theoretical reproductive fitness of Fix+ (B) and Fix- bacteria (C) following single-inoculation of M. pudica as compared to experimental data. Dotted lines represent bacterial populations per plant averaged over 200 replicate simulations (Figure 2—source data 2). Box plots represent the distribution of the number of bacteria experimentally recovered per plant. Experimental data are from (A).
 
 The differential fitness was not due to a better nodulation competitveness of Fix+ bacteria. The number of nodules formed by each strain was indeed proportional to the inoculum ratio (1/1) throughout the time course (Figure 3), confirming that bacterial nitrogen-fixing ability is not selected at the root entry level (Hahn and Studer, 1986; Westhoek et al., 2017). Yet the number of nodules in nitrogen-starved non-fixing plants (infected with 99% or 100% Fix-) constantly increased over a 42 day period, while this number reached a plateau at ca. 20 dpi in healthy N2-fixing plants (infected with 50% or 100% Fix+) (Figure 4), indicative of a mechanism of autoregulation of nodulation acting at the whole-plant level (Ferguson et al., 2010) and depending on the nitrogen status of the plant (Malik et al., 1987; van Noorden et al., 2016). This difference in time course increases the chance that a rare Fix+ among a Fix- population will form a nodule .
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/28683/elife-28683-fig3-v2.jpg)
 
-**Figure 3.:** + and Fix- bacteria per plant individual.M. pudica plants were co-inoculated with the CBM2700 (Fix+, GFP) and CBM2707 (Fix-, mCherry) strains at a 1/1 ratio. The number of plants analyzed for each time point is indicated in brackets. Boxplots were constructed as described in Figure 1. No significant differences were observed between the number of nodules formed by Fix+ bacteria and Fix- bacteria per plant at the different time points (p>0.05, Student t-test with paired data at each time point or multiple comparison test after Kruskal-Wallis on the whole dataset) (Figure 3—source data 1).10.7554/eLife.28683.011Figure 3—source data 1.+ and Fix- bacteria per plant individual.
+**Figure 3.:** M. pudica plants were co-inoculated with the CBM2700 (Fix+, GFP) and CBM2707 (Fix-, mCherry) strains at a 1/1 ratio. The number of plants analyzed for each time point is indicated in brackets. Boxplots were constructed as described in Figure 1. No significant differences were observed between the number of nodules formed by Fix+ bacteria and Fix- bacteria per plant at the different time points (p>0.05, Student t-test with paired data at each time point or multiple comparison test after Kruskal-Wallis on the whole dataset) (Figure 3—source data 1).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/28683/elife-28683-fig4-v2.jpg)
 
-**Figure 4.:** M. pudica plants were single-inoculated with either CBM832 (Fix+) or CBM2568 (Fix-) or co-inoculated with a mixture of both strains at a 1/1 or 1/99 ratio. First nodules appeared at 5–7 dpi (Figure 4—source data 1).10.7554/eLife.28683.013Figure 4—source data 1.+ (CBM382) and Fix- (CBM2568) C. taiwanensis following single- or co-inoculation of M. pudica.
+**Figure 4.:** M. pudica plants were single-inoculated with either CBM832 (Fix+) or CBM2568 (Fix-) or co-inoculated with a mixture of both strains at a 1/1 or 1/99 ratio. First nodules appeared at 5–7 dpi (Figure 4—source data 1).
 
 To identify the spatial level at which selection applies we first analyzed double occupancy nodules, which were obtained in significant proportion by modifying the plant culture system and increasing the inoculum density by four logs (see Materials and methods). Co-infected nodules contained a similar number of Fix+ and Fix- bacteria at 14 dpi, but on average ca. 80 times more N2-fixing bacteria than non-fixing bacteria at 35 dpi (Figure 1B), indicating that the control occurs at the nodule scale. Previous studies established that bacteroids do not persist in nodule cells of nitrogen-starved plants infected only by non-fixers, leading to premature nodule senescence (Berrabah et al., 2015; Hirsch and Smith, 1987), while they persist in healthy plants singly-infected with fixers. We therefore then analyzed the viability of bacteroids on sections of singly-occupied or double-occupied nodules collected from co-inoculation experiments using propidium iodide (PI), which stains dead cells (Virta et al., 1998). Bacteroid viability in Fix+-occupied nodules remained stable from 14 to 35 dpi (Figure 5D). By contrast, bacteroids in the nitrogen-fixing zone of Fix--occupied nodules started losing viability at 16–21 dpi and were all dead (PI-stained) at 35 dpi (Figure 5E). Electron microscopy confirmed signs of nodule cell and bacterial degeneration in Fix--occupied nodules at 19 dpi (Figure 6). Co-infected nodules showed clear sectoring, with infected plant cells in one part filled with Fix+ strains and in the other part filled with Fix- strains (Figure 5FGHI). We never observed co-infected nodule cells. While at 14 dpi both strains were alive (Figure 5G), at 35 dpi only Fix- bacteroids were PI-stained confirming that Fix+ and Fix- intracellular bacteria have distinct fates within the same nodule (Figure 5HI). The ca. 5 × 106 bacteria recovered at 35 dpi from nodules infected with only Fix- bacteria may thus be bacteria colonizing the infection threads and the infection zone.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/28683/elife-28683-fig5-v2.jpg)
 
-**Figure 5.:** + and Fix- bacteroids.M. pudica were co-inoculated with Fix+ and Fix- C. taiwanensis at a 1/1 ratio and sections of nodules collected at 14 dpi (ABFG), 16 dpi (C) or 35 dpi (DEHI) were observed under bright field (panels 1) or fluorescent microscopy (panels 2 and 3), and after PI staining (panels with an *). Panels with the same letters represent the same nodule section. (F3), magnification of (F2) visualized by confocal microscopy. (A) and (D), sections of nodules infected with a GFP-labeled Fix+ strain. (B) (C) and (E), sections of nodule infected with a GFP-labeled Fix- strain. (F), nodule co-infected with a GFP-labeled Fix+ and a mCherry-labeled Fix- strain. (G) and (H), nodules co-infected with a GFP-labeled Fix- and an unlabeled Fix+ strain. (I), nodules co-infected with a GFP-labeled Fix+ and an unlabeled Fix- strain. The white and yellow dotted lines in (GHI) delimit the areas occupied by the Fix- and Fix+ strains in a co-infected nodule, respectively. Note that neither the Fix+ (D3) nor the Fix- bacteroids (B3G3) are red-labeled by PI staining at 14 dpi whereas a few cells are PI-stained in the Fix--occupied nodule at 16 dpi ([C3], arrows), and Fix- are mostly PI-labeled (dead) at 35 dpi (E3H3I3). Note that bacteria of the infection zone are still alive at 35 dpi (arrow, E2E3). Note that nodule cells filled with Fix- are browner than nodule cells filled with Fix+ (G1H1I1). Scale bars correspond to 100 µm except for F3 (30 µm).
+**Figure 5.:** M. pudica were co-inoculated with Fix+ and Fix- C. taiwanensis at a 1/1 ratio and sections of nodules collected at 14 dpi (ABFG), 16 dpi (C) or 35 dpi (DEHI) were observed under bright field (panels 1) or fluorescent microscopy (panels 2 and 3), and after PI staining (panels with an *). Panels with the same letters represent the same nodule section. (F3), magnification of (F2) visualized by confocal microscopy. (A) and (D), sections of nodules infected with a GFP-labeled Fix+ strain. (B) (C) and (E), sections of nodule infected with a GFP-labeled Fix- strain. (F), nodule co-infected with a GFP-labeled Fix+ and a mCherry-labeled Fix- strain. (G) and (H), nodules co-infected with a GFP-labeled Fix- and an unlabeled Fix+ strain. (I), nodules co-infected with a GFP-labeled Fix+ and an unlabeled Fix- strain. The white and yellow dotted lines in (GHI) delimit the areas occupied by the Fix- and Fix+ strains in a co-infected nodule, respectively. Note that neither the Fix+ (D3) nor the Fix- bacteroids (B3G3) are red-labeled by PI staining at 14 dpi whereas a few cells are PI-stained in the Fix--occupied nodule at 16 dpi ([C3], arrows), and Fix- are mostly PI-labeled (dead) at 35 dpi (E3H3I3). Note that bacteria of the infection zone are still alive at 35 dpi (arrow, E2E3). Note that nodule cells filled with Fix- are browner than nodule cells filled with Fix+ (G1H1I1). Scale bars correspond to 100 µm except for F3 (30 µm).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/28683/elife-28683-fig6-v2.jpg)
 
-**Figure 6.:** +- and Fix--occupied nodules.M. pudica plants were co-inoculated with Fix+ (CBM2708, mCherry) and Fix- (CBM2568, unlabeled) C. taiwanensis at a 1/1 ratio. Nodules collected at 19 dpi (ABCDE) were sorted for mCherry expression under fluorescence microscopy and used for electron microscopy observation. Degenerated nodule cells (*) were observed in Fix--occupied nodules (BDE) but not in Fix+-occupied nodules (AC). (C) and (D) represent magnification of the zones delimitated by a black dashed rectangle in (A) and (B) respectively. (E) magnification of the white rectangle in (D) showing degenerated bacteria (arrows). Scale bars represent 20 µm (ABC), 10 µm (D) and 2 µm (E).
+**Figure 6.:** M. pudica plants were co-inoculated with Fix+ (CBM2708, mCherry) and Fix- (CBM2568, unlabeled) C. taiwanensis at a 1/1 ratio. Nodules collected at 19 dpi (ABCDE) were sorted for mCherry expression under fluorescence microscopy and used for electron microscopy observation. Degenerated nodule cells (*) were observed in Fix--occupied nodules (BDE) but not in Fix+-occupied nodules (AC). (C) and (D) represent magnification of the zones delimitated by a black dashed rectangle in (A) and (B) respectively. (E) magnification of the white rectangle in (D) showing degenerated bacteria (arrows). Scale bars represent 20 µm (ABC), 10 µm (D) and 2 µm (E).
 
 In conclusion we provide evidence for differential spatio-temporal dynamics of N2-fixing and non-fixing partners during the symbiotic process, highlighting the importance of considering temporal variations when studying the evolution of cooperative interactions (Barker and Bronstein, 2016). We established that the control of mutualism (i) acts at the nodule cell scale, (ii) occurs relatively early, ca. 16–21 days after inoculation when the wild-type nitrogenase is fully active in Fix+ bacteria (Figure 7) and (iii) leads to up a ca. 80 fold relative increase in mutualistic partners.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/28683/elife-28683-fig7-v2.jpg)
 
-**Figure 7.:** 2-fixing M. pudica nodules.Plants were inoculated with C. taiwanensis CBM832 (Fix+), and nitrogenase activity measured using the acetylene reduction assay (ARA) (Figure 7—source data 1). Two negative controls, i.e. tubes containing only the acetylene substrate and plants inoculated with C. taiwanensis CBM2568 (Fix-), were included. In these cases, boxplots correspond to data from all time points. *, Significantly different from the negative controls (p<0.05 after multiple comparison test of Kruskal-Wallis).10.7554/eLife.28683.017Figure 7—source data 1.C. taiwanensis Fix+ (CBM832).
+**Figure 7.:** Plants were inoculated with C. taiwanensis CBM832 (Fix+), and nitrogenase activity measured using the acetylene reduction assay (ARA) (Figure 7—source data 1). Two negative controls, i.e. tubes containing only the acetylene substrate and plants inoculated with C. taiwanensis CBM2568 (Fix-), were included. In these cases, boxplots correspond to data from all time points. *, Significantly different from the negative controls (p<0.05 after multiple comparison test of Kruskal-Wallis).
 
-## Eco-evolutionary dynamics of N2-fixers and non-fixers through serial nodulation cycles
+### Eco-evolutionary dynamics of N2-fixers and non-fixers through serial nodulation cycles
 
 Next, we addressed the question of whether mutualism control will allow a minority Fix+ subpopulation to invade the symbiotic population.
 
@@ -77,9 +85,105 @@ We first used our experimental data to develop a stochastic mathematical model q
 
 ![Figure 8.](https://cdn.elifesciences.org/articles/28683/elife-28683-fig8-v2.jpg)
 
-**Figure 8.:** + and Fix- bacteria following co- inoculation of M. pudica (ratio 1/100).The proportion of Fix+ clones in nodules was experimentally measured and simulated over 49 days, following co-inoculation of 20 plants. Experimental data are shown as black triangles (Figure 8—source data 1). Black error bars represent standard deviation from 2 to 3 replicates. The results from 100 replicate simulations are shown as grey dots and boxplots (Figure 8—source data 2).10.7554/eLife.28683.019Figure 8—source data 1.+ and Fix- bacteria following co- inoculation of M. pudica (ratio 1/100) over 49 days.10.7554/eLife.28683.020Figure 8—source data 2.+ and Fix- bacteria following co- inoculation of M. pudica (ratio 1/100) over 49 days.
+**Figure 8.:** The proportion of Fix+ clones in nodules was experimentally measured and simulated over 49 days, following co-inoculation of 20 plants. Experimental data are shown as black triangles (Figure 8—source data 1). Black error bars represent standard deviation from 2 to 3 replicates. The results from 100 replicate simulations are shown as grey dots and boxplots (Figure 8—source data 2).
+
+**Table 1.**
+ Model parameters
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Abbreviation</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Size of each pool of plants*</td>
+      <td>Pool</td>
+      <td>Variable (1–1000)</td>
+    </tr>
+    <tr>
+      <td>Number of replicates*</td>
+      <td>Rep</td>
+      <td>Variable (5 or 100)</td>
+    </tr>
+    <tr>
+      <td>Length of each cycle*</td>
+      <td>Days</td>
+      <td>Variable (14-49)</td>
+    </tr>
+    <tr>
+      <td>Number of cycles*</td>
+      <td>Cyc</td>
+      <td>Variable (4 or 10)</td>
+    </tr>
+    <tr>
+      <td>Initial proportion of Fix+ cells*</td>
+      <td>x</td>
+      <td>Variable (1 or 0.1)</td>
+    </tr>
+    <tr>
+      <td>Maximum number of new nodules/plant/day†</td>
+      <td>λmax</td>
+      <td>0.44</td>
+    </tr>
+    <tr>
+      <td>Coefficient for the auto-regulation of nodulation in nodulation kinetics†</td>
+      <td>a1</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>Coefficient for time-decay in nodulation kinetics†</td>
+      <td>a2</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>Lag for time-decay in nodulation kinetics†</td>
+      <td>a3</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Growth rate of bacteria within nodule†</td>
+      <td>r</td>
+      <td>1.95</td>
+    </tr>
+    <tr>
+      <td>Fitness cost of nitrogen fixation‡</td>
+      <td>c</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Sanctions for Fix-‡</td>
+      <td>s</td>
+      <td>1.65</td>
+    </tr>
+    <tr>
+      <td>Day at which additional sanctions begin‡</td>
+      <td>ds</td>
+      <td>17</td>
+    </tr>
+    <tr>
+      <td>Nodule carrying capacity‡</td>
+      <td>K</td>
+      <td>1.4 × 108</td>
+    </tr>
+  </tbody>
+</table>
+
+_*parameters varied in the simulations† experimentally measured parameters‡parameters inferred from experimental data_
 
 We then used this model to explore how plant population size and the length of inoculation cycles impact on the dynamics of C. taiwanensis populations during serial cycles of inoculation of M. pudica plants and re-isolation of bacteria from nodules. Starting with a fixed proportion of Fix+ bacteria (1% or 0.1%) in the inoculum, we varied the number of inoculated plants from 1 to 100 (or 1 to 1000) and the length of nodulation cycles (time from plant inoculation to nodule bacteria harvesting) from 14 to 49 days, which is shorter than the lifespan of a nodule in nature. We found that larger plant pools and longer cycles progressively reduced extinction probabilities and increased the proportion of Fix+ in the nodule bacterial population (Figure 9A and Figure 9—figure supplement 1). For example, the model predicted that using an initial inoculum of 1% Fix+, 4 cycles of 42 days with pools of 20 plants were sufficient to yield more than 85% of Fix+ bacteria in all replicates where Fix+ populations avoided extinction (89 times out of 100 replicates in Figure 9A). Smaller plant pools or shorter cycles all yielded higher probabilities of extinction and decreased proportions of Fix+ bacteria. An initially lower Fix+ proportion (0.1%) could be compensated for by a higher plant population size and/or a longer cycle length (Figure 9—figure supplement 1). We analyzed in detail the dynamics of Fix+ subpopulations over 10 cycles in a situation where the cycle length had a major impact on the evolutionary outcome (20 plants) (Figure 9A) and plotted the proportion of Fix+ bacteria recovered after each cycle, for cycles ranging from 14 to 49 days (Figure 9B). We observed that, in the vast majority of cases, the fate of Fix+ populations is already determined after the first cycle: these populations are either bound to extinction (with a probability indicated in Figure 9A) or to a gradual increase in frequency that ultimately leads to fixation. This result holds true for all cycle lengths except 14 days, where population dynamics is dominated by drift due to the equivalent fitness of Fix- and Fix+ clones (Figure 1A). A key factor controlling the early bifurcation between extinction and fixation of Fix+ population is the probability that a Fix+ bacterium forms a nodule during the first cycle, which depends on both the size of plant pools and the length of nodulation cycles.
+
+![Figure 9.](https://cdn.elifesciences.org/articles/28683/elife-28683-fig9-v2.jpg)
+
+**Figure 9.:** Model simulations were performed with an initial proportion of 1% Fix+ in the bacterial population inoculated to a pool of plants. The length of each cycle and the number of plants per pool varied as indicated in the legend. (A) Final proportion of Fix+ clones after four cycles (Figure 9—source data 1). Boxplots represent the distribution of the final proportion of Fix+ clones from 100 simulations. The length of inoculation cycles ranged from 14 to 49 days and the number of plants per pool from 1 to 100. Numbers underneath each boxplot indicate the number of replicate simulations where Fix+ sub-populations became extinct after four cycles. (B) Increase in the proportion of Fix+ clones along 10 inoculation cycles of 14, 21, 28, 35, 42 or 49 days (Figure 9—source data 2). The number of plants per pool was 20. Representative trajectories of 5 replicate pools are shown in each case.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/28683/elife-28683-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Model simulations were performed for four cycles with an initial proportion of 0.1% Fix+ in the bacterial population inoculated to a pool of plants of sizes ranging from 1 to 1000 plants. The length of each cycle and the number of plants per pool varied as indicated in the legend. Numbers underneath each boxplot indicate the number of replicates (out of 100) where Fix+ sub-populations became extinct after four cycles (Figure 9—source data 3).
 
 Understanding the influence of plant pool size is straightforward. Very few nodules are produced on each plant, creating a bottleneck in bacterial population size at each nodulation cycle. Whatever the cycle length, larger numbers of plants per pool increase the likelihood that at least one Fix+ clone is sampled from the rhizospheric population, giving Fix+ subpopulations an opportunity to increase in frequency and avoid extinction in the next cycle (Figure 9A and Figure 9—figure supplement 1). Under longer cycles, extinction probability decreases (Figure 9AB) since more nodules are produced (Figure 4) and the size of Fix+ populations increases at a faster rate (Figure 9B) as a result of a decrease in Fix- fitness in older nodules (Figure 1A). The combined action of these two factors act on the inoculum for next cycle, generating an eco-evolutionary feedback.
 
@@ -87,7 +191,7 @@ To assess the predictions of the model experimentally, we performed serial inocu
 
 ![Figure 10.](https://cdn.elifesciences.org/articles/28683/elife-28683-fig10-v2.jpg)
 
-**Figure 10.:** + bacteria over 4 cycles of 35 (A) or 21 (B) days: simulations and experimental validation.The proportion of Fix+ clones over four inoculation cycles was simulated and measured experimentally. Simulations and experiment were performed with an initial proportion of Fix+ clones of 1% and pools of 20 plants. Experiments were performed with an inoculum of 5 × 103 Fix+/5 × 105 Fix- C. taiwanensis per plant. The results from 100 replicate simulations are shown as grey dots and boxplots (Figure 10—source data 1). Experimental data are shown as black triangles (Figure 10—source data 2).10.7554/eLife.28683.028Figure 10—source data 1.+ bacteria over 4 cycles of 35 or 21 days.10.7554/eLife.28683.029Figure 10—source data 2.+ and Fix- bacteria over 4 cycles of 35 or 21 days.
+**Figure 10.:** The proportion of Fix+ clones over four inoculation cycles was simulated and measured experimentally. Simulations and experiment were performed with an initial proportion of Fix+ clones of 1% and pools of 20 plants. Experiments were performed with an inoculum of 5 × 103 Fix+/5 × 105 Fix- C. taiwanensis per plant. The results from 100 replicate simulations are shown as grey dots and boxplots (Figure 10—source data 1). Experimental data are shown as black triangles (Figure 10—source data 2).
 
 ## Discussion
 
@@ -103,13 +207,140 @@ An emerging trend in fundamental and applied plant microbiology is to select upo
 
 ## Materials and methods
 
-## Bacterial strains and growth conditions
+### Bacterial strains and growth conditions
 
 Strains and plasmids used in this study are listed in Table 2.
 
+**Table 2.**
+ Strains and plasmids used in this study
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Bacterium</th>
+      <th>Strain</th>
+      <th>Relevant characteristics</th>
+      <th>Reference/source</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E. coli</td>
+      <td>DH5α</td>
+      <td>F recA lacZM15</td>
+      <td>Bethesda research laboratory</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>DH5α λpir</td>
+      <td>F recA lacZM15 λpir</td>
+      <td>HP Schweizer</td>
+    </tr>
+    <tr>
+      <td>C. taiwanensis</td>
+      <td>LMG19424</td>
+      <td>Wild-type strain isolated from Mimosa pudica in Taiwan</td>
+      <td>(Chen et al., 2001)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CBM832</td>
+      <td>LMG19424 derivative resistant to Streptomycin, StrR</td>
+      <td>M. Hynes</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CBM2568</td>
+      <td>CBM832 deleted in nifH, StrR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CBM2700</td>
+      <td>CBM832 carrying a Pps-GFP fusion downstream glmS, StrR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CBM2701</td>
+      <td>CBM2568 carrying a Pps-GFP fusion downstream glmS, StrR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CBM2707</td>
+      <td>CBM2568 carrying a Pps-mCherry fusion downstream glmS, StrR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>CBM2708</td>
+      <td>CBM832 carrying a Pps-mCherry fusion downstream glmS, StrR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td>Plasmids</td>
+      <td>Name</td>
+      <td>Relevant characteristics</td>
+      <td>Reference/source</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pGPI-SceI</td>
+      <td>oriR6K, mob+, carries a I-SceI site, TriR</td>
+      <td>(Flannagan et al., 2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pDAI-SceI</td>
+      <td>oripBBR1, mob+, carries the I-SceI gene, TetR</td>
+      <td>(Flannagan et al., 2008)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pRCK-Pps-GFP</td>
+      <td>Plasmid carrying the psbA promoter region fused to GFP, KanR</td>
+      <td>M. Valls</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pRCK-Pps-mCherry</td>
+      <td>Plasmid carrying the psbA promoter region fused to mCherry, KanR</td>
+      <td>M. Valls</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pCBM156</td>
+      <td>pGPI-SceI carrying the nifH 5’ and 3’ regions, TriR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pCBM161</td>
+      <td>pGPI-SceI carrying the glmS-Ralta_A0206 intergenic region interrupted by a Pps-GFP fusion, TriR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pCBM162</td>
+      <td>pGPI-SceI carrying the glmS-Ralta_A0206 intergenic region interrupted by a Pps-mCherry fusion, TriR</td>
+      <td>This study</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>pRK2013</td>
+      <td>Helper plasmid, KanR</td>
+      <td>(Figurski and Helinski, 1979)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Str, spreptomycin; Tri, trimethoprim; Tet, tetracycline; Kan, kanamycin._
+
 C. taiwanensis strains were grown at 28°C on TY medium supplemented with 6 mM CaCl2 and 200 µg/ml streptomycin. E. coli strains were grown at 37°C on LB medium and antibiotics were used at the following concentrations: kanamycin 25 µg/ml, trimethoprim 100 µg/ml, tetracycline 10 µg/ml. For in vitro competition experiments, strains were pre-cultured in TY medium, mixed in equal proportion then co-inoculated to a 100 ml culture in TY medium. Bacteria were plated every 2 hr during the exponential phase, at the entry of stationary phase and 15 hr after the entry into the stationary phase. Plated bacteria were grown for 48 hr at 28°C then green and red bacteria were counted using a fluorescence stereo zoom microscope (Axiozoom V16, Zeiss).
 
-## Mutant construction
+### Mutant construction
 
 Mutant and labeled strains of C. taiwanensis were constructed using the mutagenesis system developed by Flannagan et al. (Flannagan et al., 2008) involving the suicide plasmid pGPI-SceI carrying an I-SceI recognition site and the pDAI-SceI replicative plasmid expressing the I-SceI nuclease. To construct the unmarked C. taiwanensis nifH mutant, regions upstream and downstream nifH were amplified with the oCBM1821-oCBM2362 and oCBM1822-oCBM2363 primer pairs using GoTaq DNA polymerase (Promega). The two PCR products were digested with XbaI-BamHI and BamHI-EcoRI respectively and cloned into the pGPI-SceI plasmid digested by XbaI and EcoRI. Ligation products were transformed into a DH5α λpir E. coli strain. The resulting plasmid was transferred into C. taiwanensis CBM832 by triparental mating using pRK2013 as helper plasmid. Transconjugants that have integrated the plasmid by single crossing over were selected on streptomycin and trimethoprim and verified by PCR using the oCBM1824-oCBM2363 and oCBM1825-oCBM2362 primer pairs. Then we introduced the pDAI-SceI replicative plasmid into these strains by conjugation and selection on tetracyclin. Expression of the I-SceI nuclease causes a double strand break into the inserted plasmid and promotes DNA recombination. Mutants deleted in nifH were screened by trimethoprim sensitivity and verified by PCR using the oCBM1824-oCBM1825 pair of primers. Mutants were then cultivated on unselective TY medium. Tetracycline sensitive colonies which have lost the pDAI-SceI plasmid were selected.
 
@@ -117,7 +348,7 @@ The Pps-GFP and Pps-mCherry fusions were inserted into the wild-type and nifH mu
 
 Oligonucleotide sequences used for genetic constructions are provided in Supplementary file 1.
 
-## Plant tests
+### Plant tests
 
 Mimosa pudica seeds were of Australian origin (B and T World Seed, Paguignan, France) and were sterilized as described (Chen et al., 2003). Seedlings were cultivated in Gibson tubes (2 M. pudica plantlets/tube) as previously described (Marchetti et al., 2014). To increase the frequency of co-infection, plants were grown on 12 cm2 plates (three plants per plate) containing slanting nitrogen-free Fahraeus agar medium for 3 days at 28°C. Roots were covered with a sterile, gas-permeable, and transparent plastic film (BioFolie 25; Sartorius AG, Vivascience, Bedminster, NJ, U.S.A.). For single-strain inoculation experiments, each plant in Gibson tubes was inoculated with 5.105 bacteria either CBM832 (wild-type) or its isogenic nifH mutant, CBM2568. For co-inoculation experiments in Gibson tubes, plants were inoculated with the two isogenic strains CBM2700 (wild-type, GFP labeled) and CBM2707 (nifH, mCherry labeled) at ratio 1/1 (5.105 bacteria of each strain per plant) or 1/100 (5.103 bacteria of CBM2700 and 5.105 bacteria of CBM2707 per plant). For co-inoculation experiments in plates, plants were inoculated with 1010 bacteria of each strain per plant.
 
@@ -127,15 +358,15 @@ For nodulation kinetics, the number of nodules formed on 20 plants grown in Gibs
 
 For serial inoculation-nodulation cycles on M. pudica plants, 10 Gibson tubes of plants were inoculated with CBM2700 and CBM2707 in 1/100 ratio as described above. 35 days after inoculation, all nodules were collected, surface-sterilized and crushed together. The nodule crush was used to inoculate a new set of 10 tubes of plants with 50 µl of a 1/10 dilution of the nodule crush per plant. At each cycle, dilutions of the nodule crush were spread on plates, incubated 2 days at 28°C and colonies were counted under a fluorescence stereo zoom microscope.
 
-## Cytological analyses
+### Cytological analyses
 
 The viability of nodule bacteria was estimated using propidium iodide staining at a concentration of 20 mM in DMSO (Molecular Probes, Fisher scientific, Oregon) on 55/58 µm nodule sections. For each experiment, a dozen nodules were individually analyzed at 14, 16, 17, 21, 28 and 35 dpi. For electron microscopy analysis, nodules were fixed in glutaraldehyde (2.5% in phosphate buffer 0.1 M [pH 7.4]), osmium treated, dehydrated in an alcohol series, and embedded in Epon 812. Semithin nodule sections were observed by brightfield microscopy after staining in 0.1% aqueous toluidine blue solution and observed under a Zeiss Axiophot light microscope. Ultrathin sections were stained with uranyl acetate and observed with a TEM Hitachi HT7700.
 
-## Acetylene reduction assays
+### Acetylene reduction assays
 
 M. pudica plants were inoculated with the wild-type strain of C. taiwanensis CBM832. At different time points, plants were removed from the culture Gibson tube and placed in an airtight tube and incubated with 1 ml of acetylene for 4 hr. 100 µl of gas were then injected into a gas chromatograph (Agilent GC7820). The area of the ethylene peak was measured and compared to an ethylene standard of known concentration. Ethylene background was estimated by analyzing empty tubes incubated with the same amount of acetylene.
 
-## Mathematical model and simulations
+### Mathematical model and simulations
 
 The model aimed at simulating nodulation dynamics during single or repeated inoculation-nodulation cycles. First we parameterized the population dynamics during the symbiosis process. Then we simulated repeated nodulation cycles varying the following parameters: (i) the Fix+/Fix- ratio in the initial inoculum, (ii) the number of inoculated plants, and (iii) the cycle length. The model ran on a pool of plants (of given, variable size) from which nodules were collected and mixed together after each inoculation cycle. For each time-step (1 day) after inoculation, the number of new nodules formed on each plant was randomly drawn from a Poisson distribution of parameter λ(t, nod+t), which is itself a function of time t and of the number of nodules already present on the plant nod+t at time t. The maximal number of nodules that could potentially be formed per day per plant was set to λmax. Changing the value of parameter λ depending on the number of Fix+nodules already present on the plant simulated the autoregulation of nodulation process; this was done by subtracting the factor a1 × nod+t from λmax. Lastly, to allow for some ‘aging’ process that would decrease the rate of nodulation with time (even for plants inoculated only with Fix- bacteria), we incorporated a time-decay coefficient: a2 × (t- a3), meaning that a reduction in the rate of nodulation occurred at a rate a2 when t > a3. This time-decay factor was set to 0 when t < a3. Therefore, the parameter of the Poisson distribution controlling the rate at which new nodules are formed was given by: λ(t, nod+t) = λmax - a1 × nod+t for t < a3 and by: λ(t, nod+t) = λmax - a1 × nod+t - a2 × (t- a3) for t > a3. Since nodules are persistent once formed, we further set: λ(t, nod+t)≥0. Experimental evidence indicated that the number of inoculated bacteria did not affect nodulation kinetics as long as the total inoculum remains above 103 bacteria per plant. These conditions were met in all experiments described in this work. Therefore, we did not explicitly take inoculum size into consideration in the simulations, and restricted the applicability of our model to cases where inoculum was above this threshold value.
 

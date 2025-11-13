@@ -12,9 +12,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03taz7m60 Department of Chemistry, Bridge Institute, USC Michelson Center for Convergent Bioscience, University of Southern California Los Angeles United States
-2. https://ror.org/03efmqc40 School of Molecular Sciences, Arizona State University Tempe United States
-3. https://ror.org/03taz7m60 Department of Biological Sciences, Bridge Institute, USC Michelson Center for Convergent Bioscience, University of Southern California Los Angeles United States
+1. Department of Chemistry, Bridge Institute, USC Michelson Center for Convergent Bioscience, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
+2. School of Molecular Sciences, Arizona State University Tempe United States ([ROR:03efmqc40](https://ror.org/03efmqc40))
+3. Department of Biological Sciences, Bridge Institute, USC Michelson Center for Convergent Bioscience, University of Southern California Los Angeles United States ([ROR:03taz7m60](https://ror.org/03taz7m60))
 
 † Corresponding author
 
@@ -32,17 +32,31 @@ One attractive strategy is to exploit higher order electric field effects which 
 
 Pancreatic β-cells are responsible for secreting insulin in a tightly regulated process that is key to maintaining glucose homeostasis. Insulin vesicles undergo a complex functional maturation process that is required for proper secretion of insulin and this process is dysregulated in diabetes (Suckale and Solimena, 2010). Immature insulin vesicles act as a sorting compartment (Feng and Arvan, 2003; Huang and Arvan, 1994) and mature into two distinct pools of functional vesicles within the cell: the readily releasable pool and the reserve pool (Boland et al., 2017; Orci, 1985; Orci et al., 1986; Dean, 1973; Figure 1A). The heterogeneity among subpopulations of insulin vesicles (Hou et al., 2009; Michael et al., 2006; Zhang et al., 2020) likely arises from the varying stages of the maturation process. This accounts for modifications of insulin vesicle membrane proteins, and variances in their age, mobility, and localization within the cell (Suckale and Solimena, 2010; Hao et al., 2005; Halban, 1982; Gold et al., 1982). However, the associated biochemical constituents of insulin vesicles have remained elusive in the absence of sensitive isolation approaches. The importance of insulin vesicles in glucose homeostasis has led several groups to attempt to isolate and characterize the insulin vesicles (Thurmond, 2007; Hutton et al., 1982). While these studies and follow-up proteomics analysis of the isolated vesicles Schvartz et al., 2012; Li et al., 2018; Brunner et al., 2007; Hickey et al., 2009 have provided insights into the biochemistry of these vesicles, there’s very little overlap in protein IDs associated with these organelles from different studies (Figure 1B). Thus, there is a need for more robust isolation methods that can reproducibly differentiate between the heterogeneous subpopulations of insulin vesicles, among other organelles, and allow for their downstream characterization.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/74989/elife-74989-fig1-v1.jpg)
+
+**Figure 1.:** (A) Insulin vesicle formation and maturation in a pancreatic β-cell. Newly synthesized insulin is packed inside secretory vesicles which mature to store crystalline insulin in vesicles until secretion is stimulated through different signaling pathways. (B) Four published insulin vesicle proteomics studies (Schvartz et al., 2012; Li et al., 2018; Brunner et al., 2007; Hickey et al., 2009) aimed to identify the proteome of the heterogenous populations of secretory vesicles in INS-1E cells with only five proteins identified consistently. (C) Separation of insulin vesicles using a DC-iDEP device. Differential and density gradient centrifugation were used to enrich each sample for insulin vesicle populations. Samples were then immunolabeled and introduced into DC-iDEP device for high-resolution separation. Fluorescently labeled particles trapped near various gates in the channel are biophysically different subpopulations with varied EKMr values. The gates were constricted by increasing sizes of paired triangles, forming channel widths of 73 μm to 25 μm from inlet to the outlet. The different gates created $E→$ and $▽‖E→‖$ distributions for EKMr values.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74989/elife-74989-fig1-figsupp1-v1.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74989/elife-74989-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Fractions of the density column were screened for insulin content in the enzyme linked immunosorbent assay (ELISA) assay. (B) Western blotting of the density column fractions revealed high concentrations of insulin vesicle marker synaptotagmin IX in fractions with high insulin content as well as the presence of endoplasmic reticulum (ER) and mitochondria contaminants as indicated by organelle markers SEC61 and cytochrome c, respectively, in the same fractions. Raw blot in Figure 1—figure supplement 2—source data 1 and 2. (C) Dynamic light scattering (DLS) was performed on fractions of interest to validate the presence of particles of 150–200 nm in radius, corresponding to radii of insulin vesicles.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/74989/elife-74989-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Fluorescence confocal microscopy maximum projection image of enriched insulin vesicles. (B) Transmission electron microscopy (TEM) image of enriched insulin vesicles negatively stained with Nano-W. The diameters of these particles are characteristic of insulin vesicles. (C) Cryo-electron microscopy (cryo-EM) image of enriched insulin vesicles. Scale bars, 10 µm (A), 500 nm (B), 50 nm (C).
+
 In this study, a new scanning voltage DC-iDEP separation strategy has been applied to immunolabeled insulin vesicles of the INS-1E insulinoma cells and has been shown to separate the full range of insulin vesicle subpopulations with improved resolution within multiple ranges of biophysical parameters (Figure 1C). We demonstrate that glucose treatment, which has been shown to influence the maturity or molecular content (White et al., 2020; Loconte et al., 2022), affects the biophysical characteristics associated with the vesicle subpopulations captured within our DC-iDEP device. This method allows discovery of subpopulations with distinct biophysical properties among insulin vesicles from untreated cells (n-insulin vesicles) and 25 mM glucose-treated cells (g-insulin vesicles). Our observations are consistent with previous studies where a pronounced shift in the molecular density of the insulin vesicles was noted under the two conditions (White et al., 2020; Loconte et al., 2022). This study substantiates the sensitivity of DC-iDEP separation technique in resolving subpopulations of insulin vesicles, among other organelles, and opens the avenue for numerous studies of the biochemical constituents where complex and heterogeneous populations of organelles are of interest.
 
 ## Results
 
-## Analysis of enriched insulin vesicle samples post fractionation
+### Analysis of enriched insulin vesicle samples post fractionation
 
 The INS-1E cells used in these studies were capable of insulin secretion in response to increasing concentrations of glucose (Figure 1—figure supplement 1). Isolated membrane fractions from differential and density gradient centrifugations were analyzed through enzyme linked immunosorbent assay (ELISA), western blotting (WB), dynamic light scattering (DLS), confocal microscopy, and electron microscopy (EM). ELISAs identified that lower fractions of the density column (9–12) contained the highest insulin content (Figure 1—figure supplement 2A), the same fractions shown to be enriched in the insulin vesicle marker, synaptotagmin IX, by WB (Figure 1—figure supplement 2B). DLS indicated that these fractions contained particles of 150–200 nm radius, which corresponds to the known range of insulin vesicles radii (Olofsson et al., 2002; Greider et al., 1969). Although the WB revealed that the final enriched vesicle sample included some contaminants from unwanted organelles, such as the ER (Figure 1—figure supplement 2B), this will not confound the analysis of insulin vesicles in the iDEP device as the fluorescent labeling was targeted only at insulin vesicles.
 
 To verify that the insulin vesicles were intact prior to DC-iDEP, we imaged a modified INS-1E cell line that contains a human insulin and green fluorescent protein-tagged C peptide (hPro-CpepSfGFP) (Haataja et al., 2013). This GFP tag allowed for quick visual verification of intact vesicles using fluorescence confocal microscopy. We observed distinct puncta rather than a diffuse GFP signal which indicated that the vesicles were intact and not ruptured. Further analysis of isolated vesicles was done using EM. We observed intact vesicles with the expected size and shape using both transmission electron microscopy (TEM) and cryo-electron microscopy (cryo-EM) (Figure 1—figure supplement 3).
 
-## Introduction of DC-iDEP as a discovery and quantification tool for insulin vesicle subpopulations
+### Introduction of DC-iDEP as a discovery and quantification tool for insulin vesicle subpopulations
 
 Enriched vesicle samples from INS-1E cells were subjected to analysis using DC-iDEP after labeling with insulin vesicle marker synaptotagmin IX (Schvartz et al., 2012; Brunner et al., 2007), which was confirmed to colocalize with insulin in fluorescence microscopy imaging (Figure 2). The separation system was operated in a discovery or scanning mode by first applying a high voltage (2100 V, empirically determined, Figure 3) such that all particles were prevented from entering the first gate, because DEP forces exceed EK forces. The voltage was then lowered incrementally (300 V for each step) allowing various subpopulations to enter the separation zone and be sorted along the device according to their specific EKMr values (Figure 3). A bolus forms at a gate, corresponding to an EKMr value that is a result of a balance between DEP and EK forces on each particle and reflects a complex set of biological, chemical, and biophysical properties of the vesicles (Jones et al., 2015; Hilton and Hayes, 2019; Crowther et al., 2019; Liu and Hayes, 2020). The fluorescence intensity was captured for each gate over a full range of voltages (1800–600 V), such that the largest EKMr values are probed with the higher applied voltage (Figure 4).
 
@@ -56,17 +70,17 @@ Enriched vesicle samples from INS-1E cells were subjected to analysis using DC-i
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/74989/elife-74989-fig4-v1.jpg)
 
-**Figure 4.:** Fluorescent intensities of captured n- and g-insulin vesicles with different EKMr values were recorded at each gate. Each data point reflects fluorescent intensities recorded at three subsequent gates with the same EKMr values, averaged out over biologically replicated experiments and normalized over all signals recorded at a given voltage. (A) Full profile of the sample’s biophysical distribution was recorded at 1800 V. (B–E) Insulin vesicle subpopulations were separated at subsequent applied voltages of 1500, 1200, 900, and 600 V. Values are mean ± SEM (n=3 for n-vesicles or 4 for g-vesicles for biologically independent experiments) (*p<0.05 using ANOVA with Bonferroni post hoc multiple comparison correction). Raw data in Figure 4—source data 1.Figure 4—source data 1.Figure 4.
+**Figure 4.:** Fluorescent intensities of captured n- and g-insulin vesicles with different EKMr values were recorded at each gate. Each data point reflects fluorescent intensities recorded at three subsequent gates with the same EKMr values, averaged out over biologically replicated experiments and normalized over all signals recorded at a given voltage. (A) Full profile of the sample’s biophysical distribution was recorded at 1800 V. (B–E) Insulin vesicle subpopulations were separated at subsequent applied voltages of 1500, 1200, 900, and 600 V. Values are mean ± SEM (n=3 for n-vesicles or 4 for g-vesicles for biologically independent experiments) (*p<0.05 using ANOVA with Bonferroni post hoc multiple comparison correction). Raw data in Figure 4—source data 1.
 
-## Biophysical subpopulations of vesicles from untreated INS-1E cells
+### Biophysical subpopulations of vesicles from untreated INS-1E cells
 
 The distribution of fluorescently labeled n-insulin vesicles captured at each gate formed a characteristic arc (Figure 1C), indicating a well-operating and consistent system. Higher voltages provide a broader dynamic range of EKMr values for capturing a wider range of particles, while lower voltages provide detailed distribution of particles based on their associated EKMr values. At an applied voltage of 1800 V, particles were sensed at EKMr values below 1.5×1010 V/m2 in patterns of overlapping subpopulations (Figure 4A, blue circles). These overlapping features begin to spread out with an applied voltage of 1500 V. At incrementally lower settings of applied voltages (1200, 900, and 600 V), distinctive patterns become identifiable (Figure 4B–E). Notable and discernible features of bioparticle distribution are apparent around 1.2×1010 and 1.8×1010 V/m2 at an applied voltage of 1200 V (Figure 4C). Lowering the voltage to 900 V, and redistribution of bioparticles based on adapted properties of the channel, reveals a similar but attenuated feature of the distribution around 1.2×1010 V/m2 (Figure 4D), whereas particles with EKMr values greater than 1.5×1010 V/m2 leave the channel at this voltage. At this voltage, redistribution of particles, previously retained in overlapping patterns at 1200 V, forms a distinct peak around 5–6×109 V/m2 (Figure 4D). Further lowering the voltage to 600 V shows similar patterns of particle distribution around 5–6×109 V/m2, as well as distinctive patterns around 3–4×109 V/m2 (Figure 4E), while leaving out populations with EKMr values higher than 1.0×1010 V/m2.
 
-## Biophysical subpopulations of vesicles from glucose-stimulated INS-1E cells
+### Biophysical subpopulations of vesicles from glucose-stimulated INS-1E cells
 
 Insulin vesicles obtained from 25 mM glucose-treated INS-1E cells (g-insulin vesicles) were studied with the same method used for the untreated cells (Figure 4, yellow squares). Consistent with the vesicles from untreated cells, patterns of primarily overlapping subpopulations were detectable at a voltage of 1800 V. Distribution of particles was observed at values up to 2.3×1010 V/m2 (compared to a maximum value of 1.5×1010 V/m2 for the untreated populations) (Figure 4A), which suggests that these vesicles have a broader range of properties than the population from the untreated cells. The first evidence of a distinct distribution feature was captured around 7–8×109 V/m2 when the voltage was lowered to 1500 V (Figure 4B). Decreasing the voltage to 1200 V and subsequent particle redistribution in the channel revealed a distribution pattern with discernible features around 7–8×109 V/m2, like those observed at 1500 V, as well as a distinct peak around 1.1×1010 V/m2 (Figure 4C). Further lowering the voltage to 900 V resulted in a unique distribution pattern with discernible features around 1.1×1010 V/m2 (Figure 4D), similar to 1200 V, and 8×109 V/m2 (Figure 4D), previously observed at 1500 and 1200 V (Figure 4B and C). Another feature of this distribution pattern was a peak around 4×109 V/m2 (Figure 4D). Ultimately, decreasing the voltage to 600 V revealed a distribution pattern with features around 4×109 and 8×109 V/m2 (Figure 4E), like those observed at higher voltages, leaving out patterns that were observed at EKMr values higher than 1.0×1010 V/m2. This distinct distribution pattern, although consistent with distribution patterns at higher voltages, featured stretched-out peaks, consistent with a smaller and more refined range of EKMr values assigned throughout the channel.
 
-## Comparison of n- and g-insulin vesicle separation patterns within the iDEP device
+### Comparison of n- and g-insulin vesicle separation patterns within the iDEP device
 
 Visual inspection of the collected data revealed generally similar patterns of vesicles collected at specific EKMr values (Figure 4). However, at 1200 V we achieved adequate separation of vesicle populations to discern unique populations of vesicles from cells treated with glucose compared to no treatment. Using a two-way ANOVA, we found a statistically significant interaction between the effect of treatment on vesicles collected at each EKMr value for data collected only at 1200 V (F(8, 45)=3.61, p=0.003). A Bonferroni post hoc test revealed a significant difference in the intensity or quantity of vesicles collected between treated and untreated samples at 1.10×109 V/m2 (p=0.0249), 5.35×109 V/m2 (p=0.0469), 7.45×109 V/m2 (p=0.0369). These differences reflect a shift in the populations of insulin vesicles upon glucose stimulation.
 
@@ -86,21 +100,21 @@ In essence, the current work introduces DC-iDEP in a scanning mode as a powerful
 
 No statistical methods were used to predetermine sample size. The experiments were not randomized, and investigators were not blinded to allocation during experiments and outcome assessment.
 
-## Cell culture
+### Cell culture
 
 INS-1E cells (Addex Bio C0018009; RRID: CVCL_0351) were cultured according to the supplier’s protocol. Briefly, cells were seeded in RPMI 1640 media (modified to contain 2 mM L-glutamine; 10 mM HEPES pH 7.2, 1 mM sodium pyruvate, 2 g/L glucose, and 1.5 g/L sodium bicarbonate, 50 µM 2-mercaptoethanol, 100 U/mL penicillin, and 100 µg/mL streptomycin; sterile filtered through 0.22 µm filter) supplemented with 10% fetal bovine serum (FBS) and grown to 80% confluency. Cells were plated at a density of 105 cells/cm2 in a 24-well plate for the glucose sensitivity assay and incubated at 37°C with 5% CO2 in growth media for 4–5 days. Cells were pretreated at 60–80% confluency with Krebs-Ringer bicarbonate HEPES (KRBH) buffer (135 mM NaCl, 3.6 mM KCl, 5 mM NaHCO3, 0.5 mM NaH2PO4, 0.5 mM MgCl2, 1.5 mM CaCl2, 10 mM HEPES, pH 7.4, and 0.1% bovine serum albumin [BSA]; made fresh within 7 days of use) free of glucose and incubated at 37°C with 5% CO2 for 30 min. They were then stimulated for 30 min at 37°C using KRBH buffers containing 1.1, 5.6, 8.4, 11.1, 16.7, and 25 mM glucose, in the presence of house-made protease inhibitor (PI) cocktail (0.5 M AEBSF, 1 mM E-64, 1.13 mM leupeptin, and 151.36 μM aprotinin). KRBH buffer was removed and saved from cells for downstream analysis. Insulin secretion in response to increasing concentrations of glucose was confirmed in an ELISA (Mercodia 10-1250-01) following the manufacturer’s manual (Figure 1—figure supplement 1). For each biological replica, cells were plated at a density of 4×104 cells/cm2 in a five-layer cell chamber (VWR 76045-402) to yield enough material for completing the experiment. All cell stacks were at least 95% viable after the harvest with 0.05% trypsin. For glucose treatment, near 80% confluent cells were gently rinsed with dialyzed phosphate-buffered saline (PBS) twice and starved in a KRBH buffer with no glucose for 30 min, followed by a 30 min stimulation of insulin release by KRBH buffer supplemented with 25 mM glucose. Cells were then harvested by mild trypsinization.
 
-## Colocalization of synaptotagmin IX and insulin vesicles
+### Colocalization of synaptotagmin IX and insulin vesicles
 
 Cells were grown on ibidi 8 well high ibiTreat slides (80806-96), precoated with poly-L-lysine. Cells were fixed with 4% ice-cold PFA for 10 min, and then stained with antibody cocktail (Mouse anti-insulin antibody [Cell Signaling Technology #8138], 1:100; Rabbit anti-synaptotagmin IX [Thermo Fisher Scientific PA5-44987; RRID: AB_2610517], 1:100) in 0.5% BSA, 0.2% saponin, 1% FBS of PBS buffer for 2 hr at room temperature (RT). After three washes with PBST for 10 min, cells were incubated for 1 hr with secondary antibody cocktail (Goat anti-Rabbit IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 488 [Invitrogen A-11034] 1:100; Goat anti-Mouse IgG (H+L) Highly Cross-Adsorbed Secondary Antibody, Alexa Fluor 647 [Invitrogen A-21236], 1:100). Cells were then mounted in ProLong Glass Antifade Mountant with NucBlue Stain (Thermo Fisher Scientific P36981) and cured for 24 hr before imaging.
 
 A Leica Mica microhub was used for confocal imaging. Image acquisition was performed using 63×/1.2NA water immersion objective, using 888×742 format, with 0.04 μm pixel size, and pinhole diameter automatically set. The signal was collected with 359, 499, and 650 nm excitations and 461, 520, 668 nm emissions for nuclei, insulin, and synaptotagmin IX by HyD FS detector, respectively. The images were deconvoluted by LAS X, lightning module. The refraction index was set to 1.52 for processing. 20–25 planes were collected with a Z-step size of 0.16 µm, and a maximum intensity projection was produced.
 
-## Insulin secretory vesicle enrichment
+### Insulin secretory vesicle enrichment
 
 Following trypsinization, all the steps were performed at 4°C. Cells were gently washed twice with PBS, followed by Dounce homogenization of the cells with 20 strokes in homogenization buffer (HB) (0.3 M sucrose, 10 mM MES, 1 mM EGTA, 1 mM MgSO4, pH 6.3) supplemented with house-made PI cocktail (0.5 M AEBSF, 1 mM E-64, 1.13 mM leupeptin, and 151.36 μM aprotinin). Cell debris was collected by centrifugation at 600 × g for 10 min and re-homogenized as described above to lyse the remaining intact cells, followed by a second spin at 600 × g. Supernatants were pooled and centrifuged at 5400 × g for 15 min to remove mitochondria, ER, and other subcellular compartments of similar density. The pellet was discarded, and the supernatant was centrifuged at 35,000 × g for 30 min to sediment insulin vesicles, among other contaminants, yielding up to ~5 µg of dry material per every million cells. This pellet was resuspended in ~450 μL HB and loaded on a density gradient column formed by layering decreasing densities of OptiPrep density media (Sigma-Aldrich D1556) and HB in 0.9 mL fractions of 40%, 35%, 30%, 25%, and 20% OptiPrep in an open-top thin-wall polypropylene tube (Beckman 326819). The density column was then spun in an SW55i Beckman rotor of an ultracentrifuge at 160,000 × g for 8 hr to fractionate the insulin vesicle-containing population. Insulin vesicle subpopulations were isolated in fractions of 400 µL, and ELISA and WB were used to identify the fractions most enriched in insulin. A similar dilution was applied to all the fractions. The manufacturer’s manual was followed for ELISA (Mercodia 10-1250-01) (Figure 1—figure supplement 2A). For WB, fraction samples were mixed with 4X NuPAGE LDS sample buffer (Invitrogen NP0007), loaded on a 15-well NuPAGE 4–12% bis-tris gel (Invitrogen NP0323PK2) and run in a mini-gel tank (Life Technologies A25977) at 200 V for 30 min (Bio-Rad 1645050). Protein was then transferred to a PVDF membrane using iBlot 2 Transfer Stacks (Invitrogen IB24002) in iBlot 2 dry blotting device (Invitrogen IB21001). The membrane was blocked using 5% BSA, then cut according to marker protein size and incubated with antibodies against marker proteins for mitochondria (Cytochrome c Antibody; Novus Biologicals NB100-56503), ER (SEC61B Polyclonal Antibody; Life Technologies PA3015), and insulin vesicles (synaptotagmin IX; Thermo Fisher Scientific PA5-44987; RRID: AB_2610517) at RT for 2–5 hr. Membranes were then washed with 0.1% Tween supplemented PBS (PBST) twice and incubated with the secondary antibody (anti-rabbit IgG, anti-mouse IgG) at RT for 1 hr. Membranes were washed with PBST two to three times and bands were visualized upon addition of SigmaFast BCIP/NBT tablets (Sigma B5655) (Figure 1—figure supplement 2B). Fractions containing the highest insulin levels and high concentration of the vesicle marker synaptotagmin IX were regarded as insulin vesicle samples and were further tested for DLS using Wyatt Technology’s Mobius to confirm the size distribution of particles corresponding to the insulin vesicle diameter, reportedly 200–500 nm. Data was analyzed in DYNAMICS and manually corrected against the control (HB) (Figure 1—figure supplement 2C). Insulin vesicle fractions confirmed to have the expected insulin vesicle diameter by DLS were then pooled together and spun down at 35,000 × g for 15 min to sediment the insulin vesicles. The pellet obtained from this step was used for immunolabeling of insulin vesicles.
 
-## Verification of intact isolated insulin vesicles
+### Verification of intact isolated insulin vesicles
 
 Fluorescent confocal microscopy was used to verify that enriched insulin vesicles were intact. Suspended insulin vesicles were imaged using a 63× water objective on 0.6-mm-thick coverslips on a Mica (Leica Microsystems). The signal was collected with an excitation wavelength of 488 nm and emission wavelength of 509 nm. Images were deconvoluted by LAS X, lightning module. The refractive index was set to 1.33 for processing.
 
@@ -108,38 +122,68 @@ Negative stain EM was used to evaluate if the isolated insulin vesicles were int
 
 To further validate the integrity of the insulin vesicles isolated, they were applied onto EM grids (Ted Pella Lacey Carbon, 200 mesh, TH, Gold) at 4°C and 100% humidity for cryo-EM imaging. Excess buffer was blotted for 2 s before grids were plunge-frozen in liquid ethane using a Vitrobot Mark IV (Thermo Fisher Scientific). Grids were imaged under cryogenic conditions using a 200 kV Glacios Cryo TEM equipped with a Falcon 4 detector (Thermo Fisher Scientific) or a 300 kV Krios G3i equipped with a Gatan K3 direct detection camera (Thermo Fisher Scientific).
 
-## Immunolabeling of insulin vesicles
+### Immunolabeling of insulin vesicles
 
 The pellet was resuspended in HB and incubated with 5–10 μg of anti-synaptotagmin IX (Thermo Fisher Scientific PA5-44987; RRID:AB_2610517; 1:50–1:100) overnight to tag an insulin vesicle marker. This primary antibody was then fluorescently labeled by 2–4 hr incubation with 5–10 μg of Alexa 568-conjugated secondary antibody (Invitrogen A-11011; RRID:AB_143157; 1:50–1:100) (Figure 1). Insulin vesicles were washed with HB three times to remove the excess antibody and were finally resuspended in a low conductivity buffer (LCHB; 0.3 M sucrose, 5 mM MES, pH 6.3), which is compatible with dielectrophoresis studies.
 
-## Device fabrication
+### Device fabrication
 
 The design and fabrication methods of the separation device were described in prior publications (Greider et al., 1969). The device contains a 27-gate sawtooth channel with a depth of approximately 20 μm and a length of 3.5 cm from inlet to outlet (Figure 1C). The distance between two paired triangle tips (gates) decreases from 73 to 25 μm in the channel. The gate size decreases approximately 5 µm after every three repeats. Direct current was applied to the device between the inlet and outlet. The potentials were between 0 and 1800 V for testing.
 
 The microfluidic devices were fabricated by standard soft lithographic technique as described previously (Staton et al., 2010). The design of the channel was created by AutoCAD (Autodesk, Inc, San Rafael, CA, USA) and was used for fabricating a photomask. The channel was created by exposing AZ P4620-positive photoresist (AZ Electronic Materials, Branchburg, NJ, USA) on Si wafer CEM388SS (Shin-Etsu MicroSi, Inc, Phoenix, AZ, USA) by contact lithography. Extra materials were removed from the Si wafer. A weight of 22 g of polydimethylsiloxane (PDMS, Sylgard 184, Dow/Corning, Midland, MI, USA) was used to fabricate four channels simultaneously. The PDMS mixture was placed on the Si wafer template and left to stand for 30 min to allow bubbles to dissipate, and then it was baked for 1 hr at a temperature of 80°C. Holes 2.5 mm in diameter were punched for inlet and outlet reservoirs. Each channel was capped with a glass microscope slide to fabricate the enclosed channels after cleaning and activation by plasma cleaner (Harrick Plasma, Ithaca, NY, USA) with a voltage of 50 kV.
 
-## Electric field simulations
+### Electric field simulations
 
-Finite element modeling (COMSOL, Inc, Burlington, MA, USA) of the distribution of the electric field in the microchannel was performed as previously detailed (Staton et al., 2010). The AC/DC module was used to interrogate the E→, ∇|E→|2, and ∇|E→|E2⋅E→ in an accurately scaled 2D model of the microchannel.
+Finite element modeling (COMSOL, Inc, Burlington, MA, USA) of the distribution of the electric field in the microchannel was performed as previously detailed (Staton et al., 2010). The AC/DC module was used to interrogate the $E→$, $∇|E→|^{2}$, and $\frac{∇|E→|}{E^{2}}⋅E→$ in an accurately scaled 2D model of the microchannel.
 
-## DC-iDEP
+### DC-iDEP
 
 The separation channel was treated with 5% (wt/vol) BSA for 15 min followed by a wash with LCHB. A volume of 15 μL of the insulin vesicle sample was introduced to the device from the inlet. This sample fraction contains particles, ~75% of which have radii characteristic of insulin vesicle as apparent from DLS experiments (Figure 1—figure supplement 2C). The volume in each reservoir was maintained with LCHB to prevent pressure-induced flow. Direct current was applied at 600, 900, 1200, 1500, and 1800 V between the inlet and outlet and particles were driven through the channel by the EK force experienced.
 
-## Imaging of vesicles during separation
+### Imaging of vesicles during separation
 
 Images and recordings were acquired using an Olympus IX70 inverted microscope with 4×, NA 0.16, and 20×, NA 0.40, objectives. The 20× objective was used to inspect the channel to confirm that the device was properly formed. The 4× objective was used in recording the intensity of the insulin vesicle signal shown in Figure 1. A mercury short arc lamp (H30102 w/2, OSRAM) and a triple band pass cube (Olympus, Center Valley, PA, USA) were used for sample illumination and detection (excitation: 400/15-495/15-570/25 nm; dichroic: 410-510-590 nm; emission: 460/20-530/30-625/50 nm). Fluorescent intensities of immunolabeled insulin vesicles were recorded using the 4× objective by a LightWise Allegro camera (LW-AL-CMV12000, USB3, 0059-0737-B, Imaging Solutions Group) after the voltage had been applied 90 s. Images were recorded from three to four biological replicates at each gate (27 total gates) for any given voltage. Images were further processed in ImageJ (NIH, freeware). The intensity at each gate was recorded along with the intensity of a nearby open area of the channel (image intensity background), which was subtracted from the intensity at each gate to adjust for any variation in illumination intensity. The data for each applied voltage value was normalized to the highest intensity within that dataset.
 
-## Theory
+### Theory
 
 The forces exerted on bioparticles in the microfluidic device in the presence of direct current include DEP and EK forces. Separation of subpopulations is achieved based on the different magnitude of the forces each bioparticle experiences, related to the properties of the particles, including their radius, conductivity, and zeta potential.
 
-The EK mobility, μEK, and velocity, υ→EK, are described as:μEK=μEP+μEOFυEK=μEKE→
+The EK mobility, $\mu_{EK}$, and velocity, $υ→_{EK}$, are described as:
 
-where  μEP is the electrophoretic (EP) mobility and  μEOF is the electro-osmotic flow mobility. The DEP mobility, μDEP, and velocity,  ν→DEP, can be expressed as:μDEP=εmr2fCM3ην→DEP=μDEP▽|E→|2
+$$
+\mu_{EK}=\mu_{EP}+\mu_{EOF}
+$$
+
+
+
+$$
+υ_{EK}=\mu_{EK}E→
+$$
+
+where  $\mu_{EP}$ is the electrophoretic (EP) mobility and  $\mu_{EOF}$ is the electro-osmotic flow mobility. The DEP mobility, μDEP, and velocity,  $ν→_{DEP}$, can be expressed as:
+
+$$
+\mu_{DEP}=\frac{\epsilon_{m}r^{2}f_{CM}}{3η}
+$$
+
+
+
+$$
+ν→_{DEP}=\mu_{DEP}▽|E→|^{2}
+$$
 
 where r is the radius of the particle, fCM is the Clausius-Mossotti factor, εm is the dielectric constant of the solution, and η is the viscosity.
 
-A combination of biophysical properties of the particles, such as insulin vesicles, determines the location where they will be captured in a microfluidic device. Capture occurs when the EK velocity of the particle is equal to that of DEP. The condition is:j→⋅E→=0▽|E→|2E2⋅E→≥μEKμDEP
+A combination of biophysical properties of the particles, such as insulin vesicles, determines the location where they will be captured in a microfluidic device. Capture occurs when the EK velocity of the particle is equal to that of DEP. The condition is:
 
-where E→  is the electric field intensity, j→ is the particle flux, and ∇|E→| is the gradient of the electric field. The ratio of EK to DEP mobilities (EKMr, µEKµDEP) can be used to characterize the biophysical properties of different subpopulations (Liu et al., 2019). The EKMr of an insulin vesicle is larger than ▽|E→|2E2⋅E→1 of the gates which it has passed through and is smaller/equal to ▽|E→|2E2⋅E→2 of the gates where it is captured. In this way, insulin vesicles are separated in the microfluidic channel, thus measuring the EKMr values for the insulin vesicles.
+$$
+j→⋅E→=0
+$$
+
+
+
+$$
+\frac{▽|E→|^{2}}{E^{2}}⋅E→\geq\frac{\mu_{EK}}{\mu_{DEP}}
+$$
+
+where $E→$  is the electric field intensity, $j→$ is the particle flux, and $∇|E→|$ is the gradient of the electric field. The ratio of EK to DEP mobilities (EKMr, $\frac{µ_{EK}}{µ_{DEP}}$) can be used to characterize the biophysical properties of different subpopulations (Liu et al., 2019). The EKMr of an insulin vesicle is larger than $\frac{▽|E→|^{2}}{E^{2}}⋅E→_{1}$ of the gates which it has passed through and is smaller/equal to $\frac{▽|E→|^{2}}{E^{2}}⋅E→_{2}$ of the gates where it is captured. In this way, insulin vesicles are separated in the microfluidic channel, thus measuring the EKMr values for the insulin vesicles.

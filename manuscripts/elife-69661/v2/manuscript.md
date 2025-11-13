@@ -41,69 +41,310 @@ Here, we performed CITE-Seq—Cellular Indexing of Transcriptomes and Epitopes b
 
 ## Materials and methods
 
-## Subjects and sample collection
+### Subjects and sample collection
 
 All individual subject data such as age, sex, and comorbidities can be found in Supplementary file 1. This study was part of the ELDER-BIOME project (clinicaltrials.gov identifier NCT02928367) approved by the medical ethical committee of the Amsterdam UMC—location AMC. Written informed consent was obtained from all participants or their legal representatives. In the context of the ELDER-BIOME project, trained research physicians screened patients older than 18 years admitted between October 2018 and June 2020 to the Amsterdam UMC, Flevohospital, or BovenIJ hospital in the Netherlands. Patients were included if they were admitted to the ward and met all of the following criteria: clinical suspicion of an acute infection of the respiratory tract, defined as the presence of at least one respiratory symptom (new cough or sputum production, chest pain, dyspnea, tachypnea, abnormal lung examination, or respiratory failure) and one systemic symptom (documented fever or hypothermia, leukocytosis or leukopenia), and an evident new or progressive infiltrate, consolidation or pleural effusion on chest X-ray or computed tomography scan. Patients were excluded if there was a clinical suspicion of aspiration pneumonia or hospital-associated pneumonia, or if CAP was not the main reason for admission. Patients were excluded from this study if they were severely immunocompromised by either disease or medication. All COVID-19 patients had reverse transcription (RT-PCR)-confirmed SARS-CoV-2 infection, in combination with a CORADS CT-score of 5 (De Smet et al., 2021). Heparin anticoagulated blood was obtained within 48 hr of hospital admission. Age- and sex-matched subjects without an infection were included as controls.
 
-## PBMC isolation and storage
+### PBMC isolation and storage
 
 For all patients and controls, heparin anticoagulated whole-blood was processed within 4 hr of sampling. PBMCs were separated by density gradient centrifugation using Ficoll-Paque Plus medium (GE Healthcare Life sciences, Little Chalfont, UK) and washed twice, first with cold phosphate-buffered saline (PBS) and then with cold PBS supplemented with 0.5% sterile endotoxin-free bovine serum albumin (BSA) (Divbio Science Europe, Breda, the Netherlands). PBMCs were resuspended in PBS containing 0.5% BSA and 2 mM EDTA and the number of PBMCs was determined using a Coulter Counter (Beckman Coulter, Woerden, the Netherlands). PBMCs were resuspended in Iscove's modified Dulbecco's medium containing 20% filter-sterilized fetal calf serum and pen/strep, after which an equal part of the same medium containing 20% dimethyl sulfoxide was slowly added while continuously stirring and working on ice. 3–5 million PBMCs were viably stored in 1.8 ml cryogenic vials (Corning #430388), which were slowly brought to −80°C. After 24–72 hr, the cells were transferred to liquid nitrogen storage until further analysis.
 
-## Sorting and staining
+### Sorting and staining
 
 After PBMCs were thawed, the Fixable Viability Dye Kit (eBioscience, San Diego, CA) was used to assess cell viability by FACS analysis (>90% in all samples). 500,000 viable singlet-events were sorted per sample using a Sony SH800 Cell Sorter (Sony Biotechnology, San Jose, CA). The sorted cells were incubated with Fc blocker (CD16/CD32, eBioscience) for 10 min, after which each sample was incubated with TotalSeq Hashtag antibody tags to enable multiplexing and subsequent deconvoluting. After Hashtag staining, the cells were pooled into four pools of five samples, each sample contributing equally to their respective pool. The cells were counted manually by light microscopy and Neubauer chambers. Each pooled sample was then incubated for 30 min with our TotalSeq oligo-conjugated antibody panel for later surface protein marker quantification. An overview of all antibodies that were used in the study is shown in Supplementary file 2.
 
-## Single-cell library generation
+### Single-cell library generation
 
 Libraries were generated using the Chromium Single Cell 5′ Library and Gel Bead Kit v1.1 (10x Genomics, Pleasanton, CA) following the manufacturer’s instructions. In short, pooled cells were loaded aiming the capture of 10,000 cells per pool. Libraries were generated according to standard protocol (Chromium Next GEM Single Cell V(D)J Reagent Kits v1.1 rev E). The amplified mRNA and antibody-derived tags were divided by size and sequenced separately.
 
-## Sequencing
+### Sequencing
 
 Samples were sequenced using a Hiseq4000 150PE mode. Each position from the 10× chip was loaded into 1 HiSeq 4000 lane. All the four antibody-derived libraries were pooled together and sequenced in 1 HiSeq4000 lane.
 
-## mRNA, hashtags, and antibody alignment
+### mRNA, hashtags, and antibody alignment
 
 All the libraries were aligned using CellRanger 3.1 (10x Genomics). For the hashtags and antibody tags, we inputted their sequences as provided by BioLegend (San Diego, CA) and tag structure as informed on the Cellranger website.
 
-## Cell deconvolution
+### Cell deconvolution
 
 To deconvolute the cells belonging to each sample we used the R package Seurat (v3) (Stuart et al., 2019). The outputs derived from CellRanger were used to create two separate objects (one with the transcriptome alignment and one with the antibody plus hashtags [HTO] alignment). Initial objects were created using the function ‘Read10X’. We filtered both objects based on the cell barcode to keep only cells that were identified in both the transcriptome and in the antibody alignments. After this cell filtering, we used the function ‘CreateSeuratObject’ to create a transcriptome-based Seurat object. The antibody-derived data was filtered to maintain only the hashtag counts; later it was appended as a specific assay using the ‘CreateAssayObject’ function. Antibody reads were normalized using the CLR method. For cell demultiplexing, we used the function ‘HTODemux’ with the parameters ‘init=9’, ‘nsamples=10,000’, and ‘positivie quantile’ ranging between 0.999 and 0.9999999 per each sample, in order to maximize the number of singlets detected. Individual single cells were finally filtered based on their assigned ‘HTO_classification.global’=‘Singlet’.
 
-## Antibody quantification and normalization
+### Antibody quantification and normalization
 
 Antibody data was normalized using the Seurat function ‘NormalizeData’ with the parameters ‘normalization.method’=‘CLR’ and ‘margin’=‘2’, to indicate a normalization across cells.
 
-## Quality control
+### Quality control
 
 The cells were filtered based on number of features (nfeature_RNA), number of genes (nCount_RNA), and percentage of mitochondrial reads (percent.mt) using Seurat ‘subset(object, subset=nCount_RNA>1000 and nCount_RNA<10,000 and nFeature_RNA>200 and percent.mt<20)’. An overview of the median number of genes per sample is depicted in Supplementary file 3.
 
-## Data scaling, normalization, and cell cycle correction
+### Data scaling, normalization, and cell cycle correction
 
 We calculated cell cycle scores as following (‘CellCycleScoring(Healthy_object_Cycle), s.features=s.genes, g2m.features=g2m.genes, set.ident=TRUE’) using a list of S phase and G2M phase genes preloaded in Seurat. The cells were then scaled and normalized using the function ‘SCTransform(object, vars.to.regress=c(‘nCount_RNA’, ‘percent.mt’, ‘S.Score’, ‘G2M.Score’)).
 
-## Clustering and visualization
+### Clustering and visualization
 
 Principal components for each set of cells as shown in individual figures were identified using the ‘RunPCA’ function. Cells were then further processed for clustering and visualization using the Seurat functions ‘FindNeighbors’, ‘FindClusters’, and ‘RunUMAP’. The number of principal components used as input was determined by using the ‘ElbowPlot’ function and identifying the number of the PCs which explain most of the data variance.
 
-## Differential expression analysis
+### Differential expression analysis
 
 Differential expression analysis was performed using the functions ‘FindAllMarkers’ or ‘FindMarkers’ and the following parameters: ‘min.pct=0.25, logfc.threshold=0.25, assay=‘SCT’’.
 
-## List of software used
+### List of software used
 
 CellRanger 3.1; R version 3.6.3 (2020-02-29), FlowJo V10.7, the R packages: Seurat v3, corrplot, dplyr, Matrix, cowplot, rstatix, ggplot2; Adobe Illustrator 2021.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
 All statistical analyses were performed using R version 3.6.3. Enrichment analysis was done by first generating contingency tables with the cell distributions per cluster. Chi-squares for the contingency tables were calculated (‘chisq<-chisq.test(table)’, the residuals rounded ‘round(chisq$residuals, 4)’) and correlation plots generated ‘corrplot(chisq$residuals, is.cor=FALSE, col=rev(brewer.pal(n=8, name=‘RdBu’)), tl.cex=1, cl.pos=‘r’, cl.ratio=1, cl.length=10)’ with the graphical parameters shown adjusted per cluster. Comparisons with more than two residuals of difference at least were considered biologically relevant. In the box and whisker plots data was represented with a median line and a box indicating the interquartile range, with individual data points shown (Figures 1h, 2h, and 4h). Significance was defined as p<0.05. Statistical significance was determined using either the two-sided Wilcoxon rank-sum test (Figure 1h) or the two-sided Kruskal-Wallis test with post hoc pairwise Dunn’s test with Benjamini-Hochberg (BH) p-value adjustment (Figures 2h and 4h). All gene expression analyses were corrected for multiple testing using the BH method, with significance defined as an adjusted p<0.05.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/69661/elife-69661-fig1-v2.jpg)
+
+**Figure 1.:** (a) Experimental overview: PBMCs from a matched cohort of hospitalized patients with CAP caused by SARS-CoV-2 (COVID-19), CAP caused by Influenza A or other pathogens, and non-infectious controls, were isolated and stained with a panel of oligonucleotide-tagged antibodies. Single-cell mRNA and surface protein expression were subsequently measured on a 10x Genomics platform. (b, c) UMAPs depicting the clusters identified by the single-cell transcriptomic analysis of PBMCs from control subjects and patients with COVID-19, each dot representing a single cell. In the first UMAP (b), cells are colored by cell type cluster, whereas in the second UMAP (c), cells are colored by donor group. See also Figure 1—figure supplement 1. (d) Correlation plot depicting cluster enrichment in controls and COVID-19 patients. Dot size proportional to Pearson’s residual of the chi-squared test (i.e., reflecting the difference between the observed and expected proportion), while the color represents the degree of association from Pearson’s chi-squared residuals (red means a positive association, blue means a negative association). (e) Heatmap showing the expression of canonical genes and the top differentially expressed genes (DEGs) derived from comparing the CD8 EM and CD8 EMRA-like cell clusters (adjusted p<0.05). The heatmap also shows the expression of these genes in the other identified T and NK cell clusters. See also Figure 1—figure supplement 2. (f) Graph depicting the DEGs identified when comparing cells from COVID-19 patients and controls within the NK cell cluster. The X-axis depicts the average log fold change and the Y-axis depicts the percentage point difference between the proportion of cells expressing the gene in the COVID-19 group minus the proportion of cells expressing the gene in the control group. All depicted DEGs are statistically significant after adjusting for multiple testing (Benjamini-Hochberg). (g) Bar plot showing Gene Ontology pathway analysis of genes upregulated in NK cells from patients with COVID-19 (relative to controls) identified in the analysis in panel (g). The X-axis shows the Benjamini-Hochberg adjusted −log10 p-value from the enrichment score analysis. (h) Box and whisker plots showing the enrichment of the type I interferon pathway in all cell subsets, split between COVID-19 patients and controls. The Y-axis depicts the enrichment score. Statistical significance was determined using the two-sided Wilcoxon rank-sum test: *p<0.05, **p<0.01. CAP, community-acquired pneumonia; NK, natural killer; PBMC, peripheral blood mononuclear cell; UMAP, Uniform Manifold Approximation and Projection.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/69661/elife-69661-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Heatmap depicting mRNA expression of genes identified via differential expression analysis comparing the clusters identified by the single-cell transcriptomic analysis of PBMCs from control subjects and COVID-19 patients. (b) Heatmap depicting surface protein expression of genes identified via differential expression analysis of protein markers comparing all cell clusters identified in panel (a). (c) UMAPs depicting the clusters identified by the single-cell transcriptomic analysis of PBMCs from control subjects and COVID-19 patients, where each dot represents a single cell with the color corresponding to the normalized expression of each respective surface protein marker. (d) Scatterplot depicting CD27 and CD45RA surface protein expression for each T cell cluster. (e) Stacked bar plots depicting the distribution of cell clusters per individual donor. The height of each rectangle represents the proportion of that cluster within each individual, whereas the surface area of each rectangle represents the proportion of the total number of cells from all donors combined. PBMC, peripheral blood mononuclear cell.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/69661/elife-69661-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Heatmap depicting normalized mRNA expression of genes identified via differential expression analysis comparing CD8 EM and EMRA-like T cells (adjusted p<0.05) as depicted in Figure 1E. The heatmap also shows the expression of these genes in the other identified T and NK cell clusters. (b) Heatmap depicting normalized mRNA expression of genes identified via differential expression analysis comparing NK cells to EMRA-like T cells (adjusted p<0.05). The heatmap also shows the expression of these genes in the other identified T and NK cell clusters. (c) Barplot depicting Gene Ontology pathway analysis of the upregulated genes identified in the analysis of panel (b). The X-axis shows the Benjamini-Hochberg adjusted −log10 p-value from the enrichment score analysis.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/69661/elife-69661-fig2-v2.jpg)
+
+**Figure 2.:** (a, b) UMAPs depicting the clusters identified by the single-cell transcriptomic analysis of PBMCs from controls, CAP-flu, and CAP-other patients, where each dot represents a single cell. In the first UMAP (a), cells are colored by cell type cluster, whereas in the second UMAP (b), cells are colored by donor group. See also Figure 2—figure supplement 1. (c) Correlation plot depicting cluster enrichment in controls, CAP-flu, and CAP-other patients. Dot size proportional to Pearson’s residual of the chi-squared test (i.e., reflecting the difference between the observed and expected proportion), while the color represents the degree of association from Pearson’s chi-squared residuals (red means a positive association, blue means a negative association). (c) Heatmap showing the expression of canonical genes and the top differentially expressed genes (DEGs) derived from comparing the CD8 EM and CD8 EMRA-like cell clusters (adjusted p<0.05). The heatmap also shows the expression of these genes in the other identified T and NK cell clusters. See also Figure 2—figure supplement 2. (e) Density plots showing the surface protein expression of CD38, CD33, CD11b, and CD11c per myeloid cell cluster. (f) Graph depicting the DEGs in the classical monocyte cluster when comparing CAP-flu patients versus controls. The X-axis depicts the average log fold change and the Y-axis depicts the percentage point difference between the proportion of cells expressing the gene in the CAP-flu group minus the proportion of cells expressing the gene in the control group. All depicted DEGs are statistically significant after adjusting for multiple testing (Benjamini-Hochberg [BH]). (g) Bar plot showing Gene Ontology pathway analysis of downregulated genes identified in the analysis in panel (g). The X-axis shows the BH adjusted −log10 p-value from the enrichment score analysis. (h) Boxplots depicting the downregulation of the MHC class II protein complex transcriptional pathway in naive B cells, memory B cells, classical monocytes, and non-classical monocytes clusters, split between controls, CAP-flu, and CAP-other patients. Statistical significance was determined using the two-sided Kruskal-Wallis test with post hoc pairwise Dunn’s test: *BH-adjusted p<0.05. (i) Density plot showing the normalized surface protein expression of HLA-DR on cells in naive B cells, memory B cells, classical monocytes, and non-classical monocytes clusters, split between controls, CAP-flu, and CAP-other patients. CAP, community-acquired pneumonia; NK, natural killer; PBMC, peripheral blood mononuclear cell; UMAP, Uniform Manifold Approximation and Projection.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/69661/elife-69661-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Heatmap depicting mRNA expression of genes identified via differential expression analysis comparing the clusters identified by the single-cell transcriptomic analysis of PBMCs from control subjects, CAP-flu, and CAP-other patients. (b) Heatmap depicting surface protein expression of genes identified via differential expression analysis of protein markers comparing all cell clusters identified in panel (a). (C) UMAPs depicting the clusters identified by the single-cell transcriptomic analysis of PBMCs from control subjects, CAP-flu, and CAP-other patients, where each dot represents a single cell with the color corresponding to the normalized expression of each respective surface protein marker. (d) Stacked bar plots depicting the distribution of cell clusters per individual donor. The height of each rectangle represents the proportion of that cluster within each individual, whereas the surface area of each rectangle represents the proportion of the total number of cells from all donors combined. CAP, community-acquired pneumonia; PBMC, peripheral blood mononuclear cell; UMAP, Uniform Manifold Approximation and Projection.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/69661/elife-69661-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a, b) Dot plot depicting the differentially expressed genes (adjusted p<0.05) between PBMCs from CAP-flu patients and control subjects present in the CD8 EMRA-like cell cluster (a) or NK cell cluster (b). (c, d) Dot plot depicting the differentially expressed genes (adjusted p<0.05) between PBMCs from CAP-other patients versus control subjects present in the activated T cell cluster (c) or NK cell cluster (d). In panels (a–d), the X-axis depicts the average log fold change and Y-axis depicts the percentage point difference between the proportion of cells expressing the gene in the CAP-other or CAP-flu group minus the proportion of cells expressing the gene in the control group. (e) Scatterplot depicting CD14 and CD16 normalized surface protein expression for each monocyte cluster and dendritic cells. (f) Volcano plot depicting the average log fold change gene expression between classical and non-classical monocytes on the X-axis and the −log10 of the Benjamini-Hochberg adjusted p-value on the Y-axis. Only genes with an adjusted p-value<0.05 and log fold change>0.25 are depicted. Red dots represent genes upregulated in classical monocytes, blue dots represent genes upregulated in non-classical monocytes. (g, h) Bar plots depicting Gene Ontology pathways enriched from the differentially expressed classical monocyte genes (g) and non-classical monocyte genes (h) identified in the analysis in panel (f). The X-axis shows the Benjamini-Hochberg adjusted −log10 p-value from the enrichment score analysis. CAP, community-acquired pneumonia; NK, natural killer; PBMC, peripheral blood mononuclear cell.
+
 ## Results
 
-## Patient characteristics and clinical outcomes
+### Patient characteristics and clinical outcomes
 
 We profiled PBMCs from eight patients hospitalized for CAP caused by SARS-CoV-2 (henceforth referred to as COVID-19), eight patients hospitalized for CAP caused by either Influenza A or other pathogens (all sampled before the start of the COVID-19 pandemic), and four non-infectious control subjects visiting the outpatient clinic without signs of acute infection (Table 1 for summary data, Supplementary file 1 for individual patient data). We matched the groups for age, sex, and—the patients—for disease severity using the Modified Early Warning Score (Churpek et al., 2017; Subbe et al., 2001). Samples from patients were obtained within 48 hr of admission to the general hospital ward, none of the patients received systemic corticosteroid therapy prior to sampling. Patients with COVID-19 reported a longer duration of symptoms prior to hospital admission. Lymphocyte counts were reduced in both patient groups but not significantly different, whereas neutrophil counts were significantly higher in patients with non-COVID-19 CAP. All patients classified as COVID-19 had a positive PCR for SARS-CoV-2. In the patients without COVID-19, three had a positive PCR for Influenza A—one of whom also had a positive blood culture for Streptococcus pneumoniae—and one patient had a positive sputum culture for Haemophilus influenzae. In subsequent analyses, we refer to the three patients infected with Influenza A as CAP-flu, and the remaining five patients as CAP-other. None of the patients were admitted to the intensive care unit (ICU) during their hospital stay, one patient with COVID-19 died in the hospital as a result of the disease.
 
-## Highly cytotoxic CD8 EMRA-like T cells and type I interferon-stimulated NK cells characterize COVID-19 patients
+**Table 1.**
+ Clinical characteristics and disease course.ACE = angiotensin-converting enzyme; AT-II = angiotensin II; CAP = community-acquired pneumonia; CURB-65 = confusion, blood urea nitrogen, respiratory rate, blood pressure, age 65 or older; COPD = chronic obstructive pulmonary disease; qSOFA = quick sequential organ failure assessment score.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>COVID-19 (n=8)</th>
+      <th>CAP* (n=8)</th>
+      <th>Controls (n=4)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age (years)</td>
+      <td>66.9 (9.4)</td>
+      <td>70.9 (14.3)</td>
+      <td>72.2 (1.7)</td>
+    </tr>
+    <tr>
+      <td>Sex (male)</td>
+      <td>5</td>
+      <td>5</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Body mass index</td>
+      <td>32.8 (6.5)</td>
+      <td>23.8 (7.6)</td>
+      <td>25.7 (4.9)</td>
+    </tr>
+    <tr>
+      <td>Race (white/black)</td>
+      <td>4/4</td>
+      <td>7/1</td>
+      <td>4/0</td>
+    </tr>
+    <tr>
+      <td>Chronic comorbidities</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>COPD</td>
+      <td>0</td>
+      <td>3</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Asthma</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Hypertension</td>
+      <td>4</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>History of myocardial infarction</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>History of stroke</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Diabetes mellitus, type 2</td>
+      <td>3</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Chronic kidney disease</td>
+      <td>0</td>
+      <td>1</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Chronic medications</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Inhaled corticosteroids</td>
+      <td>0</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Low-dose oral corticosteroids†</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>ACE-inhibitor/AT-II antagonist</td>
+      <td>4</td>
+      <td>3</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Statins</td>
+      <td>3</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Platelet aggregation inhibitors</td>
+      <td>2</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>Laboratory tests</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Platelets (×109/L)</td>
+      <td>284 (112)</td>
+      <td>294 (85)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Leukocytes (×109/L)</td>
+      <td>5.7 [2.6, 7.2]</td>
+      <td>13.9 [6.0, 19.5]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Neutrophils (×109/L)</td>
+      <td>4.4 [1.5, 5.8]</td>
+      <td>11.7 [5.3, 17.9]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Lymphocytes (×109/L)</td>
+      <td>0.8 [0.4, 1.5]</td>
+      <td>1.1 [0.5, 3.1]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Severity scores‡</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Modified Early Warning Score</td>
+      <td>3.5 [1.0, 5.0]</td>
+      <td>3.5 [2.0, 6.0]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Pneumonia Severity Index</td>
+      <td>3.0 [2.0, 4.0]</td>
+      <td>3.5 [1.0, 5.0]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CURB-65</td>
+      <td>1.0 [0.0, 2.0]</td>
+      <td>1.0 [0.0, 3.0]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>qSOFA</td>
+      <td>1.0 [0.0, 1.0]</td>
+      <td>1.0 [0.0, 1.0]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Disease course</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Symptoms to admission (days)</td>
+      <td>10.0 [2.0, 14.0]</td>
+      <td>3.5 [2.0, 9.0]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hospital length of stay (days)</td>
+      <td>3.5 [1.0, 6.0]</td>
+      <td>3.0 [2.0, 8.0]</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>28 day mortality</td>
+      <td>1</td>
+      <td>0</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_Continuous data are presented as mean (standard deviation) or median (range). Categorical data are presented as counts.* Caused by either Influenza A, bacterial, or unknown pathogens.† Corticosteroids<7.5mg prednisolone/day.‡ Measured upon presentation to the emergency department._
+
+### Highly cytotoxic CD8 EMRA-like T cells and type I interferon-stimulated NK cells characterize COVID-19 patients
 
 An overview of the experimental setup is depicted in Figure 1a. Post quality control, we analyzed 16,192 cells from all profiled samples. Throughout this study, we infer disease-specific effects in part by examining the transcriptional states of cell clusters that are proportionally expanded within a disease group. We evaluated proportional differences in cell clusters between groups with the Pearson’s residual of the chi-squared test, in which comparisons with more than two residuals of difference were considered biologically relevant. All gene expression analyses were corrected for multiple testing using the BH method, with significance defined throughout as an adjusted p<0.05.
 
@@ -115,13 +356,13 @@ In all T and NK cell clusters, we examined the expression of canonical genes and
 
 We next examined the top DEGs between the CD8 EMRA-like T cell and NK cell clusters. The NK cell cluster was enriched in genes corresponding to type I and, to a lesser extent, type II interferon signaling pathways (Figure 1—figure supplement 2b,c). We then compared the expression levels of genes within the NK cell cluster between patients with COVID-19 and control subjects (Figure 1f) and discovered marked upregulation of pathways related to a type I interferon response and other antiviral responses in patients with COVID-19 (Biological Process Gene Ontology pathway analysis; Figure 1g). Transposing this NK cell cluster-derived type I interferon response signature to the other cell clusters revealed a broad pattern of type I interferon responses across all clusters, statistically significant in several clusters, including NK cells (two-sided Wilcoxon rank-sum test p<0.05; Figure 1h). Taken together, when compared with matched non-infectious controls, patients with COVID-19 exhibited a marked proportional increase in CD8 EMRA-like T cells and type I interferon-stimulated NK cells, both with high cytotoxic potential.
 
-## Differential composition of lymphoid cells in patients with CAP-flu and patients with CAP-other
+### Differential composition of lymphoid cells in patients with CAP-flu and patients with CAP-other
 
 We next investigated the immune features of patients with CAP caused by Influenza A (CAP-flu) or other pathogens (CAP-other), as compared with matched non-infectious controls. UMAP dimensionality reduction revealed 13 clusters of cells (Figure 2a,c; and Figure 2—figure supplement 1a–c for top DEGs and surface protein expression). Akin to what we observed in patients with COVID-19, patients with CAP-flu showed a proportional increase of CD8 EMRA-like T cell and NK cell clusters (Figure 2b,c; cluster distribution per subject in Figure 2—figure supplement 1d). Patients with CAP-other had higher levels of the CD8 EM and naïve T cell clusters (Figure 2c). Both CAP-flu and CAP-other patients showed a decrease in memory B cells when compared with control subjects (Figure 2c).
 
 To elucidate the transcriptional states of the differentially expanded T cell subsets between CAP-flu and CAP-other patients, we examined the top DEGs between CD8 EM T and CD8 EMRA-like cells (Figure 2d): among the top upregulated genes in the CD8 EM-cluster, we identified GZMK and genes related to MHC class II (HLD-DRB1 and CD74). CD8 EMRA-like T cells were characterized by genes related to cytotoxicity and activation signals, such as GNLY, GZMB, TYROBP, and FGFBP, which were also highly expressed by NK cells. We observed few specific gene differences in EMRA-like T cells and NK cells from patients with CAP-flu and CAP-other when compared with controls (Figure 2—figure supplement 2a–d). Thus, patients with CAP-flu harbored higher proportions of activated and cytotoxic CD8 EMRA-like T cells and NK cells, while the lymphocyte composition in patients with CAP was characterized by higher proportions of the CD8 EM and naïve T cell clusters.
 
-## Classical monocytes from patients with CAP-flu show concurrent signs of inflammation and immune suppression
+### Classical monocytes from patients with CAP-flu show concurrent signs of inflammation and immune suppression
 
 We next focused on monocytes, because specific clusters were positively associated with either CAP-flu or CAP-other. Patients with CAP-flu exhibited a clear increase in classical monocytes when compared with patients with CAP-other and control subjects (Figure 2b,c). The proportional increase in the intermediate monocyte cluster in CAP-flu is unlikely to represent a disease-specific process, as these cells were almost entirely derived from one patient (Figure 2—figure supplement 1d). Patients with CAP-other demonstrated a clear increase in non-classical monocytes, contributing nearly all cells in this cluster (Figure 2b and Figure 2—figure supplement 1d). Low absolute dendritic cell (DC) counts precluded a valid comparison between disease states.
 
@@ -129,11 +370,23 @@ To further explore the myeloid cell clusters that were differentially expanded b
 
 As cell numbers within the classical monocyte cluster were higher among patients with CAP-flu (Figure 2c), we examined DEGs within this cluster between CAP-flu and control subjects (Figure 2f). Classical monocytes from patients with CAP-flu displayed upregulation of a variety of genes involved in pro-inflammatory processes, such as EGR-1 (Pang et al., 2020), FKB5 (Zannas et al., 2019), and AREG (Zaiss et al., 2015). Classical monocytes also transcribed several genes encoding for the S100 protein family, such as S100A4, S100A8, S100A9, and S100A12, which were recently implicated in COVID-19 (Ren et al., 2021). Strikingly, we observed a concurrent substantially reduced expression of genes related to MHC class II (Figure 2f), a quintessential feature of sepsis-induced immune suppression that has been associated with secondary infections and long-term mortality (Hotchkiss et al., 2013; Venet and Monneret, 2018). Gene Ontology enrichment of these downregulated genes confirmed downregulation of pathways related to antigen presentation (Figure 2g) and this pattern was also visible—albeit to a lesser extent and not statistically significant—in non-classical monocytes from patients with CAP-flu and classical monocytes from patients with CAP-other (two-sided Kruskal-Wallis test with post hoc Dunn’s test BH-adjusted p<0.05 for CAP-flu vs. control in classical monocytes; Figure 2h). Reduced HLA-DR expression on the cell surface of classical monocytes in patients with CAP-flu confirmed this transcriptional pattern at the protein level (Figure 2i). Taken together, we report clearly diverging monocyte compositions in patients with CAP-flu and CAP-other, with classical monocytes in CAP-flu expressing pro-inflammatory genes while simultaneously showing immune suppressive features.
 
-## Divergent composition of major immune cell types in patients with COVID-19, CAP-flu, and CAP-other
+### Divergent composition of major immune cell types in patients with COVID-19, CAP-flu, and CAP-other
 
 Next, we directly compared COVID-19, CAP-flu, and CAP-other to delineate the shared and unique immune features between these disease groups. UMAP dimensionality reduction of all cells of these groups revealed 15 clusters of myeloid and lymphoid cells (the full UMAP of all identified clusters, the distribution per individual patient, and the DEGs and proteins between all clusters are depicted in Figure 3—figure supplements 1 and 2). To create an overview of the differences in immune composition between disease states, we first grouped these clusters into metaclusters representing the major cell types: T cells, NK cells, B cells, monocytes, and platelets (Figure 3a–c; canonical genes and lineage-defining surface markers in Figure 3d and e, respectively). Comparing the proportional composition of immune cells between diseases revealed a significant expansion of NK cells in COVID-19, an expansion of monocytes in CAP-flu, and an overall expansion of T cells in CAP-other (Figure 3c). Proportions of B cells were comparable between the groups. As we previously noted reduced HLA-DR surface protein expression in classical monocytes of patients with CAP-flu, we compared the expression of this protein in all monocytes between the three disease states (Figure 3f). Overall monocyte HLA-DR surface protein expression in COVID-19 was on par with CAP-flu, and lower than in CAP-other.
 
-## Differences in transcriptional signature between COVID-19 and CAP-flu in T and NK cells
+![Figure 3.](https://cdn.elifesciences.org/articles/69661/elife-69661-fig3-v2.jpg)
+
+**Figure 3.:** (a, b) UMAPs depicting the metaclusters identified by the single-cell transcriptomic analysis of PBMCs from controls, COVID-19, CAP-flu, and CAP-other patients, where each dot represents a single cell. In the first UMAP (a), cells are colored by cell type cluster, whereas in the second UMAP (b), cells are colored by donor group. (c) Correlation plot depicting metacluster enrichment in COVID-19, CAP-flu, or CAP-other patients. Dot size proportional to Pearson’s residual of the chi-squared test (i.e., reflecting the difference between the observed and expected proportion), while the color represents the degree of association from Pearson’s chi-squared residuals (red means a positive association, blue means a negative association). (d) Dot plot showing canonical genes per identified metacluster. Color indicates the normalized level of expression, while the dot size is proportional to the percentage of cells per cluster expressing the canonical gene. (e) Heatmap showing the expression of lineage-defining protein surface markers per metacluster. (f) Density plot showing the normalized surface protein expression of HLA-DR on the monocyte lineage, split between COVID-19, CAP-flu, and CAP-other patients. CAP, community-acquired pneumonia; UMAP, Uniform Manifold Approximation and Projection.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/69661/elife-69661-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (a) UMAP depicting all 15 clusters identified by the single-cell transcriptomic analysis of PBMCs from COVID-19, CAP-flu, and CAP-other patients, where each dot represents a single cell with each color corresponding to a specific cell type cluster. (b) Stacked bar plots depicting the distribution of cell clusters per individual donor. The height of each rectangle represents the proportion of that cluster within each individual, whereas the surface area of each rectangle represents the proportion of the total number of cells from all donors combined. (c) Correlation plot depicting cluster enrichment in COVID-19, CAP-flu, or CAP-other patients. Dot size proportional to Pearson’s residual of the chi-squared test (i.e., reflecting the difference between the observed and expected proportion), while the color represents the degree of association from Pearson’s chi-squared residuals (red means a positive association, blue means a negative association).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/69661/elife-69661-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Heatmap depicting normalized mRNA expression of genes identified via differential expression analysis comparing all 15 cell clusters identified by the single-cell transcriptomic analysis of PBMCs from COVID-19, CAP-flu, and CAP-other patients. (b) Heatmap depicting surface protein expression identified via differential expression analysis of protein markers comparing all 15 cell clusters identified by the single-cell transcriptomic analysis of PBMCs from COVID-19, CAP-flu, and CAP-other patients. (c) UMAPs depicting the clusters identified by the single-cell transcriptomic analysis of PBMCs from COVID-19, CAP-flu, and CAP-other patients, where each dot represents a single cell with the color corresponding to the normalized expression of each respective surface protein marker. CAP, community-acquired pneumonia; PBMC, peripheral blood mononuclear cell; UMAP, Uniform Manifold Approximation and Projection.
+
+### Differences in transcriptional signature between COVID-19 and CAP-flu in T and NK cells
 
 To ascertain differences in the T and NK cell compositions between COVID-19, CAP-flu, and CAP-other, we further examined clusters within these metaclusters (Figure 4a; see Figure 3—figure supplement 1a for full UMAP of all identified clusters, and Figure 3—figure supplement 1b for clusters per individual patient). We observed fewer cells in the naive CD4/CD8 T cell cluster in COVID-19 and CAP-flu as compared with CAP-other, whereas the CD8 EMRA-like 2 T cell cluster was clearly expanded in CAP-flu (Figure 4b; see Figure 3—figure supplement 1c for the correlation plot of all identified clusters). Patients with CAP-other exhibited a proportional increase of CD8 EM T cells and had the most naive T cells.
 
@@ -145,7 +398,7 @@ To infer functional differences in T cell subsets, we looked at the top DEGs bet
 
 In line with high GNLY expression in the EMRA-like 2 T cell cluster expanded in CAP-flu, we found a higher proportion of granulysin+ NK cells in CAP-flu, whereas the other (granulysin negative) NK cell cluster was highest in COVID-19 (Figure 4b,c). Interestingly, the NK cell cluster expanded in COVID-19 expressed higher levels of the interferon-stimulated gene IFITM3 (Figure 4d) than the cluster expanded in CAP-flu. This high expression was even more apparent when comparing cells within the granulysin+ NK cell cluster between patients with COVID-19 and CAP-flu (Figure 4d). Gene Ontology enrichment of the genes upregulated in granulysin+ NK cells from patients with COVID-19 exposed a clear type I interferon response (Figure 4f). When comparing this pathway between disease groups in all T and NK cell clusters, we found this pronounced type I interferon signature among virtually all clusters in patients with COVID-19, particularly in the EMRA-like T cell clusters and both NK cell clusters (Figure 4g,h, statistically significant in the CD8 EMRA-like 2 and granulysin+ NK cell clusters, two-sided Kruskal-Wallis test with post hoc Dunn’s test BH-adjusted p<0.05). To summarize, while both groups of patients with known viral infections exhibited high proportions of circulating NK cells and activated (EMRA-like) CD8 T cells when compared with CAP-other, COVID-19 was distinguished from other etiologies of CAP by a pronounced type I interferon signaling transcriptional signature.
 
-## Distinctive monocyte subsets from patients with COVID-19, CAP-flu, and CAP-other
+### Distinctive monocyte subsets from patients with COVID-19, CAP-flu, and CAP-other
 
 Next, we focused on the differences in monocyte clusters between COVID-19, CAP-flu, and CAP-other (Figure 5a; Figure 3—figure supplement 1a–c). Classical monocytes were proportionally expanded in both CAP groups, albeit primarily in patients with CAP-flu (Figure 5b). The intermediate monocyte cluster was prominently expanded in patients with COVID-19, whereas the non-classical monocyte cluster showed a clear expansion in the CAP-other patients.
 
@@ -156,6 +409,41 @@ Next, we focused on the differences in monocyte clusters between COVID-19, CAP-f
 To explore the transcriptional states of the diverging monocyte compositions in disease states, we looked at the top DEGs between the monocyte clusters, and the pathways related to the upregulated genes within each cluster (Figure 5c–f). In classical monocytes (proportionally higher in patients with CAP-flu) the majority of upregulated genes was related to ribosomes and viral transcription (Figure 5c,d). The intermediate monocytes (consistently present in COVID-19) were characterized by a pronounced antiviral, interferon-driven response, as illustrated by the upregulation of both interferon-inducible and stimulated genes (IFI6, IFI27, IFI44L, and ISG15, SIGLEC1; Figure 5c,e). The high expression of APOBEC3A and MX1, involved in restricting viral activity in monocytes through RNA editing (Sharma et al., 2015; Verhelst et al., 2012), underlined this increased antiviral potential. The upregulated DEGs of the non-classical monocyte cluster (predominantly present in CAP-other) were more heterogeneous: they expressed genes involved in MHC class II antigen-presenting, Fc receptors (FCGR3A and FCER1G), the complement system (C1QA and CFD), and multiple genes associated with cell activation (AIF1, LST1, and SMIM25; Figure 5c,f).
 
 An overview of NK cell, T cell, and monocyte differences between COVID-19, CAP-flu, and CAP-other is shown in Table 2.
+
+**Table 2.**
+ Overview of proportionally increased cell clusters and transcriptional characteristics in the direct comparison between COVID-19, CAP-flu, and CAP-other.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>COVID-19</th>
+      <th>CAP-flu</th>
+      <th>CAP-other</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NK cells</td>
+      <td>Granulysin+ NK cells ↑ higher type I interferon response than CAP-flu NK cells high IFITM3 expression</td>
+      <td>Granulysin+ NK cells ↑↑ higher AREG expression than COVID-19</td>
+      <td>Low numbers of NK cells</td>
+    </tr>
+    <tr>
+      <td>T cells</td>
+      <td>CD8 EMRA-like 2 ↑ cytotoxicity, activation and inflammation</td>
+      <td>CD8 EMRA-like 2 ↑↑ cytotoxicity, activation and inflammation</td>
+      <td>Naive CD4/CD8 not activated CD8 EM less activated than EMRA-like 1 and 2 clusters</td>
+    </tr>
+    <tr>
+      <td>Monocytes</td>
+      <td>Intermediate monocytes high type I interferon response, increased antiviral potential</td>
+      <td>Classical monocytes ribosomal and viral transcription genes</td>
+      <td>Non-classical monocytes heterogenous gene expression</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Discussion
 

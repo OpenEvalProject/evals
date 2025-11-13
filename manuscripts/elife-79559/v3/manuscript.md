@@ -6,8 +6,8 @@
 
 ### Affiliations
 
-1. https://ror.org/02vm5rt34 Departments of Biomedical Engineering, Computer Science, and Psychology, Vanderbilt University Nashville United States
-2. https://ror.org/013sk6x84 Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States
+1. Departments of Biomedical Engineering, Computer Science, and Psychology, Vanderbilt University Nashville United States ([ROR:02vm5rt34](https://ror.org/02vm5rt34))
+2. Janelia Research Campus, Howard Hughes Medical Institute Ashburn United States ([ROR:013sk6x84](https://ror.org/013sk6x84))
 
 † Corresponding author
 
@@ -27,7 +27,54 @@ I suggest that studies can reduce this problem in three main ways. First, they c
 
 Much of the following discussion stresses the importance of unambiguous definitions. Accordingly, Table 1 defines the use of several potentially ambiguous technical terms.
 
-## General definitions
+**Table 1.**
+ Definitions of terms.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Term</th>
+      <th>Definition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Principle of parsimony (Occam’s razor)</td>
+      <td>An assertion that all else being equal, models with fewer redundant features are likely to be truer than rival models (Baker, 2022). This assertion reflects an objective preference for parsimony rather than a subjective preference for simplicity or elegance. In this way, and contrary to misconception, the principle of parsimony does not imply that reality, or its truest models, are simple or elegant.</td>
+    </tr>
+    <tr>
+      <td>Trueness (bias)</td>
+      <td>Distance between expected and true estimates of model parameters (ISO, 1994). True values of model parameters are typically inaccessible, and trueness (bias) can therefore be defined only in relative terms. The principle of parsimony asserts that all else being equal, models with fewer redundant features have truer (less biased) parameter estimates relative to rival models.</td>
+    </tr>
+    <tr>
+      <td>Precision (variance)</td>
+      <td>Expected distance between repeated estimates of model parameters (ISO, 1994). Precision (variance) does not require knowledge of the true values of model parameters and can therefore be defined in absolute terms. The problem of irreplicable results (Ioannidis, 2005) is primarily a problem of precision (variance).</td>
+    </tr>
+    <tr>
+      <td>Circular analysis</td>
+      <td>An analysis that first tests a model in a way that almost invariably accepts the model and then accepts the model on the basis of this test. This definition includes circular analyses of knowledge that accept overspecified models or redundant (less true) explanations. It also includes circular analyses of noise that accept overfitted models or irreplicable (less precise) explanations (Kriegeskorte et al., 2009).</td>
+    </tr>
+    <tr>
+      <td>Neural circuits or brain networks</td>
+      <td>Groups of connected neurons or brain regions that mediate function. This definition does not intend to make analogies between groups of neurons or brain regions, and electronic circuits or artificial neural networks (Rubinov, 2015).</td>
+    </tr>
+    <tr>
+      <td>Function</td>
+      <td>Behavior and other action that helps animals to survive and reproduce (Roux, 2014). This definition excludes physiological phenomena that lack such useful action.</td>
+    </tr>
+    <tr>
+      <td>Structure</td>
+      <td>Anatomical or physiological organization. This definition encompasses all physiological phenomena, including phenomena that lack known function.</td>
+    </tr>
+    <tr>
+      <td>Development</td>
+      <td>Formation of structure before and after birth. This definition includes plasticity and therefore encompasses learning and memory.</td>
+    </tr>
+  </tbody>
+</table>
+
+### General definitions
 
 Analyses of complex datasets are vulnerable to distortions by extraneous features. Such distortions may include corruption by noise or confounding by existing knowledge. Statistical science, machine learning, and other fields have developed rigorous tests to mitigate the risk of these distortions. Analyses of complex datasets that neglect such tests, however, will almost invariably be distorted by extraneous features to some extent.
 
@@ -35,7 +82,7 @@ These distortions can generally lead to inflated agreement between model and dat
 
 This work describes analyses that neglect to test speculative models against existing knowledge and that consequently accept overspecified models and redundant explanations. This section first defines the nature of this problem and then outlines a general solution.
 
-## Toy analogy
+#### Toy analogy
 
 We can get an intuition for the problem with a toy analysis of a biological image (Figure 1a). The image is ambiguous, but our existing biological knowledge tells us that it most likely shows a duck — specifically a male duck doing a head-throw, its signature courting move. Sometimes our analyses may neglect such knowledge. This neglect will not make knowledge disappear. Instead, it will inflate the importance of hypotheses redundant with this knowledge.
 
@@ -45,7 +92,7 @@ We can get an intuition for the problem with a toy analysis of a biological imag
 
 We may propose, for example, that the image shows a skvader, a type of winged hare (Figure 1b). Our existing knowledge makes this hypothesis redundant — ducks doing head-throws almost always look like skvaders. Our neglect of this knowledge, however, can make the hypothesis seem important. We may accept the hypothesis on the basis of this perceived importance. This acceptance, however, will lead to redundant explanations. We will implicitly “double dip” or explain the same image twice — first as a duck and second as a skvader.
 
-## Circular analysis
+#### Circular analysis
 
 We can define the problem more formally with three types of models.
 
@@ -63,7 +110,7 @@ In our example, we do not test cosmicity against existing knowledge with which i
 
 This problem extends to the acceptance of many, potentially countless, speculative models against the same strawman model. Such acceptance implicitly proposes the simultaneous importance of many, potentially countless, redundant features. Moreover, the circular acceptance of one speculative model after another can give an impression of progress even as it leads to stagnation.
 
-## Unified analysis
+#### Unified analysis
 
 A general solution to this problem centers on significance tests of speculative features against benchmark models (Figure 2). These tests represent unified analyses of existing knowledge and proposed discovery. They form controlled experiments that test the importance of one feature by controlling for the effects of all known confounding features (Sibbald and Roland, 1998; Box 2). They also form a type of severe (model) selection within Mayo’s framework of severe testing (Mayo and Spanos, 2011; Mayo, 2018; Appendix 2). Finally, they parallel controls for model overfitting (Kriegeskorte et al., 2009; Appendix 3).
 
@@ -83,11 +130,11 @@ In our cosmicity example, we can do this analysis in three steps. First, we can 
 
 As we discussed above, cosmicity is likely to be redundant with our existing knowledge. This likely redundancy suggests that our result is unlikely to be statistically significant. In this context, a finding of statistical significance can serve as genuine evidence for the importance of cosmicity and, by extension, for the importance of cosmic dynamics to brain function.
 
-## Specific examples
+### Specific examples
 
 Previous work has noted that circular analyses of noise can be “hard to understand, imagine, or predict” and “when it’s hard to see how, it can still be happening” (Kriegeskorte et al., 2009). This section shows that circular analyses of knowledge can often be similarly inconspicuous. It first describes possible examples of these analyses in systems neuroscience and probable examples in network neuroscience. It then walks through the details of the problem with a toy analysis. It finally estimates the prevalence of the problem in the network-neuroscience literature.
 
-## Possible circular analyses of knowledge
+#### Possible circular analyses of knowledge
 
 Systems neuroscience broadly studies the structure and function of interacting groups of neurons or brain regions. The field variously terms these groups assemblies, populations, circuits, systems, or networks. It has acquired considerable, albeit somewhat scattered, knowledge about the structure and function of these groups. It has also proposed many speculative hypotheses that seek to transcend this existing knowledge.
 
@@ -109,7 +156,7 @@ Circular analyses and redundant explanations. Tests against strawman models ofte
 
 Individually, these analyses accept simple or elegant models. Collectively, however, they may accept a needlessly complicated model that assumes the simultaneous importance of several redundant features.
 
-## Probable circular analyses of knowledge
+#### Probable circular analyses of knowledge
 
 Many parts of systems neuroscience, such as the study of vision, lack well-defined benchmark models or the ability to test speculative models against these benchmarks. These limitations make it hard to show the presence of circular analyses of knowledge, even when they exist.
 
@@ -141,7 +188,7 @@ Strawman models. Studies of small worlds, cores/clubs, and controllability use a
 
 Circular analyses and redundant explanations. Tests of small worlds, cores/clubs, and controllability against strawman models will almost invariably accept the importance of these speculative features. Separately, these tests cannot reject the importance of benchmark features with which these speculative features are redundant. It follows that these circular analyses implicitly explain the same aspects of network structure twice: first as a basic benchmark feature, and second as a redundant speculative feature. Individually, these analyses accept simple or elegant models. Collectively, however, they accept a needlessly complicated model that assumes the simultaneous importance of sensory-motor modules, highly connected association nodes, small worlds, cores/clubs, and controllability.
 
-## Walkthrough circular analysis of knowledge
+#### Walkthrough circular analysis of knowledge
 
 We can show the details of this problem with a walkthrough analysis of a toy cortical network. This network has an accentuated transition from clustered to distributed cortical connectivity (Figure 4a–b, left). We can propose a speculative model of this network that centers on a toy feature of a controllable core. This hybrid feature represents a core of cortical regions whose activity can be induced with relatively little stimulation. Theory suggests that this controllable core may support a stable state of cortical activity and thus play an important role in cortical function. Despite these considerations, the existence and importance of this feature remain speculative without tests against a benchmark model.
 
@@ -153,7 +200,7 @@ We can test this feature against a benchmark model in three steps. First, we can
 
 Separately, we can test the significance of a controllable core against a strawman model. (Figure 4c). In our analysis, the strawman-model statistic is 2.72 [2.62, 2.88]. The corresponding effect size of 0.30 [0.14, 0.40] and p<0.01 (Figure 4c, right) suggest a rejection of this strawman model. This rejection is circular because the strawman model excludes the benchmark feature with which the controllable core is redundant.
 
-## Prevalence of probable circular analyses of knowledge
+#### Prevalence of probable circular analyses of knowledge
 
 I quantified the fraction and number of probable circular analyses of knowledge in the network-neuroscience literature. I did this by evaluating network-neuroscience studies published during five recent years in ten journals. Appendix 4 describes the details of this evaluation.
 
@@ -163,17 +210,93 @@ I did not try to assess the effects of this problem on individual results. These
 
 To facilitate these efforts, I created a semi-automated analysis pipeline that downloads and curates all published studies that match some specified search criteria (Appendix 4). The curation includes the extraction of the Methods and Results sections and the highlighting of possible descriptions of benchmark, speculative, or strawman models. This basic curation cannot replace the careful evaluation of individual articles, but it may help to make such an evaluation standardized and more objective.
 
-## Speculative evidence
+### Speculative evidence
 
 The commonness of circular analyses of knowledge may reflect, in part, the intuitive importance of many speculative models. This importance often rests on the misleading suggestiveness of speculative evidence. The ability to spot such evidence can help to shift the focus from speculative intuitions to rigorous tests and, in this way, alleviate much of this problem in the literature.
 
 This section discusses how suggestive terminology, suggestive structure, and suggestive narratives can all falsely signal the importance of speculative features. This discussion aligns with similar perspectives in neuroscience (Krakauer et al., 2017), machine learning (Lipton and Steinhardt, 2019), and psychology (Yarkoni, 2020).
 
-## Suggestive terminology: Deepities
+#### Suggestive terminology: Deepities
 
 The term deepity denotes a word or phrase that has two distinct meanings (Dennett, 2013). The first meaning is direct and undisputed but bland, while the second is profound but indirect and speculative. Deepities do damage when they lead us to conflate the two meanings and, in this way, make speculative or redundant features seem well-supported.
 
 Many bedrock terms or ideas in systems neuroscience are deepities because they conflate facts with speculations (Table 2). Here, we can show this conflation using three especially consequential terms: function, emergence, and significance. We can do so using a toy example of “lub-dub” heart sounds, features that arise as byproducts of turbulent blood flow.
+
+**Table 2.**
+ Example deepities.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Deepity</th>
+      <th>Direct meaning</th>
+      <th>Implicit allusion</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Neural computation (Churchland and Sejnowski, 2016)</td>
+      <td>Transformation of sensory input to behavioral output.</td>
+      <td>Computer-like transformation of sensory input to behavioral output.</td>
+    </tr>
+    <tr>
+      <td>Neural representation, code, or information (Baker et al., 2022; Brette, 2019; Nizami, 2019)</td>
+      <td>Patterns of neuronal activity that correlate with, or change in response to, sensory input.</td>
+      <td>Internal representations or encodings of information about the external world.</td>
+    </tr>
+    <tr>
+      <td>Neural networks (Bowers et al., 2022)</td>
+      <td>Artificial neural networks (machine-learning models).</td>
+      <td>Biological neural networks.</td>
+    </tr>
+    <tr>
+      <td>Necessity and sufficiency (Yoshihara and Yoshihara, 2018)</td>
+      <td>The induction or suppression of behavior through stimulation or inhibition of neural substrate.</td>
+      <td>Logical equivalence between behavior and neural substrate.</td>
+    </tr>
+    <tr>
+      <td>Functional connectivity (Reid et al., 2019)</td>
+      <td>Correlated neural activity.</td>
+      <td>Neural connectivity that causes function.</td>
+    </tr>
+    <tr>
+      <td>Complexity (Merker et al., 2022)</td>
+      <td>Patterns of neural structure that are neither ordered nor disordered.</td>
+      <td>Patterns of neural structure that are fundamentally important.</td>
+    </tr>
+    <tr>
+      <td>Motifs</td>
+      <td>Repeating patterns of brain-network connectivity.</td>
+      <td>Motifs of neural computation.</td>
+    </tr>
+    <tr>
+      <td>Efficiency</td>
+      <td>Communication between pairs of brain nodes via algorithmic sequences of connections.</td>
+      <td>Efficiency of neural communication.</td>
+    </tr>
+    <tr>
+      <td>Modularity</td>
+      <td>Propensity of brain networks to be divided into clusters.</td>
+      <td>Propensity of brain networks to be robust or evolvable.</td>
+    </tr>
+    <tr>
+      <td>Flexibility</td>
+      <td>Propensity for brain nodes to dynamically switch their cluster affiliations.</td>
+      <td>Propensity for cognitive flexibility.</td>
+    </tr>
+    <tr>
+      <td>The brain is a network, like many other natural and synthetic systems.</td>
+      <td>The brain consists of connected elements, like many other natural and synthetic systems.</td>
+      <td>The brain shares functional network principles with many natural and synthetic systems.</td>
+    </tr>
+    <tr>
+      <td>Brain disorders are disconnection syndromes.</td>
+      <td>Brain disorders are correlated with brain-network abnormalities.</td>
+      <td>Brain disorders are caused by brain-network abnormalities.</td>
+    </tr>
+  </tbody>
+</table>
 
 First, function can denote physiological activity and also signal functional utility (Roux, 2014). The conflation of these two meanings may falsely attribute utility to all physiological phenomena. The heart pumps blood and makes lub-dub sounds, but only one of these actions is useful.
 
@@ -183,7 +306,7 @@ Third, significance can denote the rejection of a null hypothesis and also signa
 
 Collectively, the use of deepities can make speculative features seem useful or important. Moreover, the ability to fall back on the direct meanings of deepities in response to criticism, and to promote their implicit allusions at other times, can make deepities easy to defend and thus hard to eliminate. (This defense of deepities is known as “motte and bailey”, by analogy with a defense of a medieval castle [Shackel, 2005]. The motte is a hill with a tower — it is easily defensible but not particularly enjoyable to spend time in. The bailey is an outside court — it is enjoyable but not particularly defensible. The motte-and-bailey defense denotes a retreat to the motte in response to attacks and enjoyment of the bailey during more peaceful times.)
 
-## Suggestive structure: Spandrels
+#### Suggestive structure: Spandrels
 
 In architecture, spandrels denote triangular spaces of building arches (Figure 5a). These spaces arise as byproducts of the contours of the arch, but their intricate decoration may suggest that they have important (decorative) function. In biology, spandrels are phenotypes that have intricate and similarly suggestive structure (Gould and Lewontin, 1979). For example, the intricate structure of turbulent lub-dub flow, and the ability of this flow to predict heart activity and physical exertion, may all suggest that lub-dub sounds play an important role in heart function. The intricate structure and predictive success of many features in systems neuroscience may likewise suggest that these features play an important role in brain function (Figure 5b–c).
 
@@ -193,13 +316,52 @@ In architecture, spandrels denote triangular spaces of building arches (Figure 5
 
 The concept of spandrels helps to show the value of tests against benchmark models. For example, the lack of a benchmark model of vision makes it difficult to test the significance of internal representations against visuo-motor interactions (Figure 5b). This difficulty can make the existence and importance of internal representations inconclusive. Such inconclusiveness, in turn, may help to explain the vigorous and unsettled debates over the nature of this and other speculative features in systems neuroscience (Langdon et al., 2023; Sohal, 2016; Destexhe and Touboul, 2021). By contrast, well-defined benchmark models of cortical networks make it relatively easy to show the redundancy of cores or clubs against these models (Figure 5c). This ease may help explain the lack of comparable debates over the nature of these and other redundant features in network neuroscience (Liao et al., 2017; Sporns, 2018; Pasqualetti et al., 2019).
 
-## Suggestive narratives: Just-so stories
+#### Suggestive narratives: Just-so stories
 
 Just-so stories in biology are intriguing but speculative narratives that suggest the presence of theoretically elegant or optimal biological function (Gould, 1978; Bowers and Davis, 2012). A just-so-story may suggest, for example, that heart sounds exist to warn of overexertion and thus help minimize energy expenditure. Just-so stories can be difficult to falsify because it is often easy to reexplain some evident non-optimality as a globally optimal tradeoff between competing objectives (Gould and Lewontin, 1979). Table 3 shows examples of such stories in the recent systems-neuroscience literature.
 
+**Table 3.**
+ Example stories.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Concept</th>
+      <th>Initial narrative of optimality</th>
+      <th>Evidence of suboptimality (strong but unviable null model)</th>
+      <th>Restoration of optimality through the inclusion of an ad hoc tradeoff</th>
+      <th>Alternative benchmark narrative (strong and viable null model)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Criticality (Fontenele et al., 2019; Wilting and Priesemann, 2019; Nanda et al., 2023)</td>
+      <td>Brain activity always and exactly balances between order and disorder. This allows it to optimize information transmission and storage.</td>
+      <td>Brain activity does not always or exactly balance between order and disorder.</td>
+      <td>Brain activity optimizes the tradeoffs between the benefits of criticality and the competing benefits of flexibility or stability.</td>
+      <td>Brain activity avoids the extremes of overinhibition and overexcitation and is not optimal over and above this avoidance-of-extremes baseline.</td>
+    </tr>
+    <tr>
+      <td>Predictive coding (Sun and Firestone, 2020; Van de Cruys et al., 2020; Seth et al., 2020; Cao, 2020)</td>
+      <td>Brain activity aims to optimally predict incoming sensory input.</td>
+      <td>Brain activity optimally predicts sensory input in dark and quiet spaces. Despite this, animals tend not to seek out such spaces.</td>
+      <td>Brain activity aims to optimize the tradeoffs between predictions that are accurate and predictions that are motivational.</td>
+      <td>Brain activity reacts to sensory input but does not aim to optimally predict this input.</td>
+    </tr>
+    <tr>
+      <td>Wiring minimization (Markov et al., 2013; Bullmore and Sporns, 2012; Rubinov, 2016)</td>
+      <td>Brain-network structure globally minimizes wiring cost and therefore optimizes wiring economy.</td>
+      <td>Brain-network structure does not globally minimize wiring cost.</td>
+      <td>Brain-network structure optimizes the tradeoffs between wiring cost and communication efficiency.</td>
+      <td>Brain networks have long connections that enable specific sensory-motor function but do not optimize global communication.</td>
+    </tr>
+  </tbody>
+</table>
+
 The difficulty of falsifying just-so stories also helps to show the value of tests against benchmark models. Assertions of suboptimality form strong but unviable null models (Table 3, third column). Acceptance of these models, in other words, does not offer a viable alternative explanation to replace the original narrative. Without such a viable alternative, it becomes easy to hold on to the original narrative, typically by introducing an ad hoc tradeoff that restores optimality (Table 3, fourth column). This process may help to explain why just-so stories can hold sway in the field long after they are rejected against strong null models. By contrast, benchmark models form strong and viable null models (Table 3, fifth column). The acceptance of these models offers viable alternative explanations of brain function and, in this way, makes it easier to eliminate the original narrative (Appendix 2).
 
-## Stagnation and progress
+### Stagnation and progress
 
 The commonness of circular analyses of knowledge can help explain a seeming disconnect between the fast pace of everyday discovery and the slow pace of real progress. Cobb, 2020 described the nature of this disconnect in neuroscience:
 
@@ -211,11 +373,11 @@ In contrast to particle physics, benchmark models are often ill-defined in more 
 
 Systems neuroscience probably lies somewhere between particle physics and social science. Some parts of the field, such as network neuroscience, are sufficiently circumscribed to allow tests of new models against well-delineated benchmark models. To be clear, it is unlikely that the field can converge on benchmark models that resemble the Standard Model or even remotely approach the explanatory success of this model. Despite these limitations, the adoption of routine tests against benchmark models can help place the field on a rigorous foundation and in this way facilitate real progress.
 
-## Practical details
+### Practical details
 
 This section describes the practical details of testing new models against benchmark models. It first describes steps to integrate existing knowledge into benchmark models. It then discusses methods to sample data from benchmark-model distributions. It finally proposes practical steps to establish a culture of rigorous tests.
 
-## Integrating knowledge
+#### Integrating knowledge
 
 Benchmark models should include all aspects of important existing knowledge about some phenomenon of interest. The need to include all knowledge reflects not dogma but the objective importance of control for all known confounding explanations. This need parallels the need to control for all aspects of the noise in tests on independent data (Appendix 3) or the need to control for all confounding explanations in randomized controlled trials (Box 2).
 
@@ -229,15 +391,74 @@ We know, for example, that other body systems use effective but often inelegant 
 
 **Figure 6.:** (a) Conserved rostrocaudal (nose-to-tail, left panels) and dorsoventral (back-to-belly, right panels) patterns of neural gene expression in developing flies and mice. Matching colors denote homologous genes. Gene names not shown. (b) Conserved gross organization of regional modules in adult flies and mice. Note that, relative to flies, the organization of (a) expressed neural genes and (b) visual, auditory, and olfactory modules in mice is inverted dorsoventrally. This is a known developmental quirk (Held, 2017). (c) Similarities in the motion-detection circuits of flies and mice. R1–R6 photoreceptors in flies, and cone photoreceptors in mice, convert light into neural activity. Each photoreceptor has a distinct receptive field that responds to spatially distinct light stimuli. Parallel ON and OFF pathways in both animals extract motion signals from this activity. These pathways start with L1/L2 lamina monopolar cells in flies, and directly with photoreceptors in mice. Cells in the ON pathway depolarize, and cells in the OFF pathway repolarize, in response to increased visual input. Moreover, distinct cells within each pathway may respond to input on fast or slow timescales. T4/T5 interneurons in flies, and starburst amacrine interneurons (SACs) in mice, detect motion in each pathway by integrating fast and slow responses associated with specific receptive fields. Finally, lobular plate tangential cells (LPTCs) in flies, and ON-OFF direction-selective ganglion cells (DSGCs) in mice, recombine motion signals from the ON and OFF pathways. +/− denote excitation/inhibition, and yellow arrows denote four directions of motion. (d) Proposed homologies between the action-selection circuits of flies and mice. The alignment emphasizes the shared function of individual areas and of excitatory or modulatory (blue), inhibitory (red), dopaminergic (black), and descending (green) projections. In flies, action selection centers on the central complex. The central complex includes the protocerebral bridge (PB), the fan-shaped body (FB), and the ellipsoid body (EB). In mice, action selection centers on the basal ganglia. The basal ganglia include the striatum (ST) and the external and internal globus pallidi (GPe and GPi). The central complex receives direct projections from sensory areas, the intermediate and inferior lateral protocerebra (IMP and ILP). It also receives direct projections from an association area, the superior medial protocerebrum (SMP). Finally, it receives indirect projections, via the SMP, from a learning area, the mushroom body (MB). Correspondingly, the basal ganglia receive direct projections from sensory and association areas in the cortex and indirect projections, via association cortex, from learning areas (the amygdala and hippocampus, Am and Hp). The central complex projects to the ventral cord via the lateral accessory lobes (LAL) and the motor ventrolateral protocerebra (VLP). Similarly, the basal ganglia project to the spinal cord via the thalamus and the motor cortex. Finally, in both cases, dopamine plays an important modulatory role. It acts via PPL1 and PPM3 neurons in flies, and via the substantia nigra pars compacta (SNc) in mice. Note also that the gall (not shown) may be a fly homolog of the mouse suprathalamic nucleus (STN, Fiore et al., 2015). Panel (a) is reproduced from Figure 1 of Bailly et al., 2013. Panel (b) is adapted from Figure 1b of Rubinov, 2016. Panel (c) is reproduced from Figure 5 of Borst and Helmstaedter, 2015. Panel (d) is adapted from Figure 2 of Strausfeld and Hirth, 2013.
 
-## Defining models
+#### Defining models
 
 Models of the phenomena. Benchmark models of relatively simple or circumscribed phenomena can sometimes take the form of parametric equations. In neuroscience, perhaps the best-known example of such a benchmark model is the Hodgkin-Huxley model of the action potential (Hodgkin and Huxley, 1952). By contrast, benchmark models of complex or expansive phenomena, such as whole-brain networks, are often hard to express in parametric form. These models can instead be defined pragmatically on the basis of benchmark features in empirical data (Table 4). Such data-driven definitions can resemble dimensionality reduction (Cunningham and Ghahramani, 2015) and force studies to formalize the often-vague theoretical concepts as quantifiable model features.
+
+**Table 4.**
+ Example features and statistics.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Model feature</th>
+      <th>Example statistic</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sensory-motor interactions</td>
+      <td>Connectivity and activity statistics of functional circuits.</td>
+    </tr>
+    <tr>
+      <td>Excitation/inhibition balance</td>
+      <td>1/f power-spectral slopes (Gao et al., 2017).</td>
+    </tr>
+    <tr>
+      <td>Node connectivity</td>
+      <td>Degree-distribution statistics (Clauset et al., 2009).</td>
+    </tr>
+    <tr>
+      <td>Network clusters</td>
+      <td>Within-module densities (Fortunato, 2010).</td>
+    </tr>
+    <tr>
+      <td>Tuning representations</td>
+      <td>Tuning-curve statistics (Kriegeskorte and Wei, 2021).</td>
+    </tr>
+    <tr>
+      <td>Manifold representations</td>
+      <td>Persistent-homology barcodes (Ghrist, 2008).</td>
+    </tr>
+    <tr>
+      <td>Oscillations</td>
+      <td>Frequency-specific amplitudes and phases (Donoghue et al., 2020).</td>
+    </tr>
+    <tr>
+      <td>Criticality</td>
+      <td>Avalanche exponents (Sethna et al., 2001).</td>
+    </tr>
+    <tr>
+      <td>Small worlds</td>
+      <td>Small-world statistics (Bassett and Bullmore, 2017).</td>
+    </tr>
+    <tr>
+      <td>Cores/clubs</td>
+      <td>Within-core densities (Csermely et al., 2013).</td>
+    </tr>
+    <tr>
+      <td>Network controllability</td>
+      <td>Network-controllability statistics (Pasqualetti et al., 2014).</td>
+    </tr>
+  </tbody>
+</table>
 
 Many applied or clinical fields seek to explain the nature of altered brain development, structure, or function. Formulation of benchmark models is equally important in these fields. Benchmark models of altered phenomena should correspondingly be defined in terms of altered, rather than absolute, values of empirical features. For example, benchmark models of neuropsychiatric disorders could be defined in terms of altered development and structure that coherently delineate specific patient populations (Insel and Cuthbert, 2015; Hampel et al., 2023).
 
 Models of the data. In practice, benchmark models should also include features that represent data limitations or biases. For example, limitations of neural-activity data may include acquisition artifacts, physiological confounders and indirectness of neural-activity markers (Hillman, 2014; Wei et al., 2020). The inclusion of these data features in benchmark models can help to mitigate their confounding effects. The interactions of these features with other aspects of the signal, however, makes it ultimately impossible to fully eliminate these effects (Appendix 3).
 
-## Sampling data
+#### Sampling data
 
 Tests against benchmark models rest on the ability to sample data from benchmark-model distributions. This sampling should ideally be unbiased: the data samples should match the model statistics but be maximally random otherwise. Unbiased sampling allows us to make valid statistical inferences. For example, the opinions of an unbiased sample of people allow us to make valid statistical inferences about the opinions of the whole population.
 
@@ -251,17 +472,52 @@ General sampling methods comprise two broad types. The first type of general sam
 
 The second type of general sampling typically uses statistical inference methods, such as the principle of maximum entropy. It first defines and fits parametric data distributions and then randomly draws data samples from these distributions (Squartini and Garlaschelli, 2011). In contrast to other sampling methods, this approach preserves the benchmark statistics in the population average but not necessarily in each individual data sample. Fully unbiased sampling with this approach is often intractable for large datasets. Assumptions of independence can make this sampling tractable for many benchmark models but likely at the expense of considerable bias (Cimini et al., 2019).
 
-## Making progress
+#### Making progress
 
 The importance of tests against benchmark models reflects the broader importance of scientific progress. In modern science, the notion of progress is intertwined with the concept of impact. Formally, impact often denotes the number of papers and citations. Implicitly, impact signals real progress. Circular analyses of knowledge enable speculative and redundant results that can lead to many intriguing, replicable, and highly cited papers. Such papers satisfy the formal meaning of impact even as they fail to make real progress (Lawrence, 2007; Alberts, 2013).
 
 Tests against benchmark models can help to align the formal and intuitive definitions of impact. A narrow perspective on genuine impact could equate impact with direct revisions of benchmark models. A broader and more realistic perspective can also emphasize advances that indirectly facilitate revisions of benchmark models (Table 5).
 
+**Table 5.**
+ Examples of impactful advances.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Advance</th>
+      <th>Nature of impact</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Discoveries</td>
+      <td>Revisions of benchmark models (typically rare).</td>
+    </tr>
+    <tr>
+      <td>Null results</td>
+      <td>Rejections of previously promising speculative models.</td>
+    </tr>
+    <tr>
+      <td>Exploratory advances</td>
+      <td>Formulations of newly promising speculative models.</td>
+    </tr>
+    <tr>
+      <td>Conceptual advances</td>
+      <td>Discoveries of explanatory gaps that enable exploratory advances.</td>
+    </tr>
+    <tr>
+      <td>Methodological advances</td>
+      <td>Improvements in data or analysis that support all the other advances.</td>
+    </tr>
+  </tbody>
+</table>
+
 Separately, the adoption of benchmarking best practices from predictive modeling fields, including machine learning (Weber et al., 2019; Mangul et al., 2019; Mitchell et al., 2019; Kapoor and Narayanan, 2023), can help facilitate progress in explanatory modeling. The following list describes three important examples of these practices:
 
 Together, this change in focus can help motivate systems neuroscientists to carefully formulate new models and to rigorously test these models against benchmark models. Such testing can lead to a welcome decrease in publications of speculative and redundant results. And collectively, the resulting alignment of formal and intuitive definitions of impact can give the field a better chance to make real progress.
 
-## Concluding recommendations
+### Concluding recommendations
 
 Circular analyses of noise, and the resulting problem of irreplicable results, form a known impediment to progress in systems neuroscience. This work described that circular analyses of knowledge, and the resulting problem of redundant results, form a less-well known but similarly serious impediment. This concluding section summarizes my overall suggestions for resolving this problem. Appendix 6 discusses objections to some of these suggestions.
 

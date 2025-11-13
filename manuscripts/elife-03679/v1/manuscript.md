@@ -14,7 +14,7 @@
 
 ## Abstract
 
-10.7554/eLife.03679.001 Lethal mutagenesis has emerged as a novel potential therapeutic approach to treat viral infections. Several studies have demonstrated that increases in the high mutation rates inherent to RNA viruses lead to viral extinction in cell culture, but evidence during infections in vivo is limited. In this study, we show that the broad-range antiviral nucleoside favipiravir reduces viral load in vivo by exerting antiviral mutagenesis in a mouse model for norovirus infection. Increased mutation frequencies were observed in samples from treated mice and were accompanied with lower or in some cases undetectable levels of infectious virus in faeces and tissues. Viral RNA isolated from treated animals showed reduced infectivity, a feature of populations approaching extinction during antiviral mutagenesis. These results suggest that favipiravir can induce norovirus mutagenesis in vivo, which in some cases leads to virus extinction, providing a proof-of-principle for the use of favipiravir derivatives or mutagenic nucleosides in the clinical treatment of noroviruses. DOI: http://dx.doi.org/10.7554/eLife.03679.001
+Lethal mutagenesis has emerged as a novel potential therapeutic approach to treat viral infections. Several studies have demonstrated that increases in the high mutation rates inherent to RNA viruses lead to viral extinction in cell culture, but evidence during infections in vivo is limited. In this study, we show that the broad-range antiviral nucleoside favipiravir reduces viral load in vivo by exerting antiviral mutagenesis in a mouse model for norovirus infection. Increased mutation frequencies were observed in samples from treated mice and were accompanied with lower or in some cases undetectable levels of infectious virus in faeces and tissues. Viral RNA isolated from treated animals showed reduced infectivity, a feature of populations approaching extinction during antiviral mutagenesis. These results suggest that favipiravir can induce norovirus mutagenesis in vivo, which in some cases leads to virus extinction, providing a proof-of-principle for the use of favipiravir derivatives or mutagenic nucleosides in the clinical treatment of noroviruses.
 
 ## Introduction
 
@@ -30,81 +30,172 @@ With the aim of demonstrating lethal mutagenesis as a conceivable approach to tr
 
 ## Results
 
-## Ribavirin and favipiravir inhibit norovirus replication in cell culture
+### Ribavirin and favipiravir inhibit norovirus replication in cell culture
 
 To investigate whether ribavirin and favipiravir elicit any antiviral activity on norovirus replication, we employed two different murine norovirus (MNV) strains, MNV-1 and MNV-3. MNV-1 was the first MNV strain isolated as the causative agent of a fatal infection in Stat1−/− mice (Karst et al., 2003). Later studies identified many other MNV strains, including MNV-3, wide spread in different mice laboratory colonies (Hsu et al., 2006; Thackray et al., 2007; Barron et al., 2011). MNV is used as a model to study norovirus replication and pathogenesis and has facilitated a better understanding of the norovirus life cycle (Wobus et al., 2006). MNV-1 efficiently replicates in cell culture although it shows limited virulence in wild-type mice. In contrast, MNV-3 typically produces lower yields in tissue culture, yet establishes long-term persistent infections in wild-type mice, being detected for at least 8 months after inoculation (Arias et al., 2012a; McFadden et al., 2013). Previous studies demonstrated that ribavirin and favipiravir elicit antiviral activity against MNV-1 and human norovirus (HuNoV) replicon in cell culture (Chang and George, 2007; Rocha-Pereira et al., 2012). However, the mechanism of action and their utility in vivo have not been described.
 
-The treatment of RAW264.7 cells infected with MNV (MOI of 0.01 TCID50/cell) with ribavirin or favipiravir resulted in significant reductions in virus yields, reaching up to a 3-log
+The treatment of RAW264.7 cells infected with MNV (MOI of 0.01 TCID50/cell) with ribavirin or favipiravir resulted in significant reductions in virus yields, reaching up to a 3-log10 decrease for ribavirin and a 4-log10 for favipiravir (Figure 1). A decrease in cell viability was observed when cells were treated with high concentration of ribavirin, although this reduction never exceeded 50%. In contrast, no significant decrease in cell viability was observed in cells treated with favipiravir (Figure 1—figure supplement 1).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/03679/elife-03679-fig1-v1.jpg)
 
-**Figure 1.:** (A) MNV-1 and MNV-3 viral yields obtained after infection of confluent monolayers of RAW264.7 cells in the absence (white bars) or presence of 200 (light grey), 400 (dark grey), or 800 μM ribavirin (black). MNV was inoculated at an MOI of 0.01 TCID50/cell and infections were allowed to proceed for 24 hr when cultures were freeze-thawed for virus release. (B) MNV-1 and MNV-3 viral yields obtained after infection of confluent monolayers of RAW264.7 cells in the absence (white bars) or presence of 200 (light grey), 400 (dark grey), or 800 μM favipiravir (black). MNV was inoculated at an MOI of 0.01 TCID50/cell and infections were allowed to proceed for 24 hr. Statistically significant differences are represented (p < 0.05, *; p < 0.01, **; p < 0.001, ***; 2-way ANOVA test). (C and D) Kinetics of MNV-1 and MNV-3 infection in the presence of ribavirin or favipiravir. Confluent monolayers of RAW264.7 cells were infected with MNV-1 (C) or MNV-3 (D) at an MOI of 5 TCID50/cell. Infected cell cultures were treated with 200 μM ribavirin (RBV) or favipiravir (FPV) as explained in ‘Materials and methods’. Replication kinetics of MNV-1 and MNV-3 in untreated infected cells are shown in parallel (DMEM). Every time point is the average of three biological replicates (±SD).DOI: http://dx.doi.org/10.7554/eLife.03679.003
+**Figure 1.:** (A) MNV-1 and MNV-3 viral yields obtained after infection of confluent monolayers of RAW264.7 cells in the absence (white bars) or presence of 200 (light grey), 400 (dark grey), or 800 μM ribavirin (black). MNV was inoculated at an MOI of 0.01 TCID50/cell and infections were allowed to proceed for 24 hr when cultures were freeze-thawed for virus release. (B) MNV-1 and MNV-3 viral yields obtained after infection of confluent monolayers of RAW264.7 cells in the absence (white bars) or presence of 200 (light grey), 400 (dark grey), or 800 μM favipiravir (black). MNV was inoculated at an MOI of 0.01 TCID50/cell and infections were allowed to proceed for 24 hr. Statistically significant differences are represented (p < 0.05, *; p < 0.01, **; p < 0.001, ***; 2-way ANOVA test). (C and D) Kinetics of MNV-1 and MNV-3 infection in the presence of ribavirin or favipiravir. Confluent monolayers of RAW264.7 cells were infected with MNV-1 (C) or MNV-3 (D) at an MOI of 5 TCID50/cell. Infected cell cultures were treated with 200 μM ribavirin (RBV) or favipiravir (FPV) as explained in ‘Materials and methods’. Replication kinetics of MNV-1 and MNV-3 in untreated infected cells are shown in parallel (DMEM). Every time point is the average of three biological replicates (±SD).
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/03679/elife-03679-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** (A) Ribavirin toxicity upon RAW264.7 cells was scored using both trypan blue, which measures the proportion of dead cells, and CellTiter-Blue Cell Viability Assay (Promega), which accounts for living active cells. (B) Favipiravir toxicity was determined by CellTiter-Blue Cell Viability Assay (Promega).DOI: http://dx.doi.org/10.7554/eLife.03679.004
+**Figure 1—figure supplement 1.:** (A) Ribavirin toxicity upon RAW264.7 cells was scored using both trypan blue, which measures the proportion of dead cells, and CellTiter-Blue Cell Viability Assay (Promega), which accounts for living active cells. (B) Favipiravir toxicity was determined by CellTiter-Blue Cell Viability Assay (Promega).
 
 To further investigate the mechanism of inhibition, we determined the effect of ribavirin and favipiravir upon MNV replication in single-cycle replication kinetics carried out by infecting RAW264.7 cells at high MOI. Favipiravir inhibition occurred in a gradual manner, with the greatest reduction in virus titre being observed at later time points (Figure 1C,D). This result is suggestive of a cumulative antiviral activity often observed with increasing number of mutations in viral genomes during successive rounds of replication. In contrast, ribavirin inhibited norovirus replication from an early time point (8 hr), suggesting a different mechanism of action, an additional antiviral activity relative to favipiravir, or potentially due to a different mutational spectrum activity elicited by these two compounds. However, it is alternatively possible that the delayed inhibition shown by favipiravir compared to ribavirin reflects the fact that it takes several more steps to convert favipiravir to the active form (Furuta et al., 2005). To investigate this possibility, we repeated the kinetics by incubating the cells overnight with favipiravir before infection to facilitate favipiravir conversion into favipiravir-triphosphate. No major differences were observed with cells pre-incubated during 1 hr or overnight with favipiravir (data not shown), which suggests that ribavirin might be a more potent inhibitor of viral RNA replication. To confirm this possibility, we determined the viral RNA synthesis kinetics for MNV-3 in the presence of both compounds and confirmed that ribavirin inhibits viral RNA synthesis from an early time post-infection, while the effects of favipiravir are only observed at later time points (data not shown).
 
-## Ribavirin and favipiravir are mutagenic for MNV and cause decreased infectivity
+### Ribavirin and favipiravir are mutagenic for MNV and cause decreased infectivity
 
-Although ribavirin and favipiravir cause increased mutagenesis in several RNA viruses (
+Although ribavirin and favipiravir cause increased mutagenesis in several RNA viruses (Graci and Cameron, 2006; Moreno et al., 2011; Baranovich et al., 2013), the mechanism of antiviral activity against noroviruses is not known. To determine whether ribavirin and favipiravir treatment resulted in greater mutation frequencies, we carried out sequence analysis of individual molecular clones isolated from populations subjected to 4 passages in the presence of either 200 μM ribavirin or favipiravir. We found that both compounds caused significant increases in the mutation frequencies of replicating virus. Ribavirin treatment resulted in a ∼threefold increase while favipiravir led to a five to sixfold increase in the number of mutations per nucleotide (Figure 2). Importantly, alterations in the transition frequency patterns were also observed. Ribavirin treatment resulted in greater proportion of G to A and C to U transitions than in untreated virus populations, while favipiravir led to a slight increase in A to G and U to C transition rates (Table 1). These alterations are in agreement with those observed for other viruses treated with the same compounds (Agudo et al., 2010; Levi et al., 2010; Baranovich et al., 2013; Ortega-Prieto et al., 2013).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/03679/elife-03679-fig2-v1.jpg)
 
-**Figure 2.:** Mutation frequencies are represented as the average number of mutations found every 10,000 nucleotides sequenced in MNV-1 and MNV-3 populations after 4 passages in RAW264.7 cells in the absence or presence of 200 μM ribavirin (RBV) or favipiravir (FPV) (p < 0.05, *; p < 0.001, ***, Mann–Whitney U test).DOI: http://dx.doi.org/10.7554/eLife.03679.005
+**Figure 2.:** Mutation frequencies are represented as the average number of mutations found every 10,000 nucleotides sequenced in MNV-1 and MNV-3 populations after 4 passages in RAW264.7 cells in the absence or presence of 200 μM ribavirin (RBV) or favipiravir (FPV) (p < 0.05, *; p < 0.001, ***, Mann–Whitney U test).
 
-A signature feature for error catastrophe in virus populations subjected to mutagenesis is a decrease in virus specific infectivity (
+**Table 1.**
+ Mutation type distribution in MNV populations treated with ribavirin and favipiravir
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2">Untreated</th>
+      <th colspan="2">Ribavirin</th>
+      <th colspan="2">Favipiravir</th>
+    </tr>
+    <tr>
+      <th></th>
+      <th>MNV-1</th>
+      <th>MNV-3</th>
+      <th>MNV-1</th>
+      <th>MNV-3</th>
+      <th>MNV-1</th>
+      <th>MNV-3</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>A → G</td>
+      <td>4</td>
+      <td>4</td>
+      <td>1</td>
+      <td>3</td>
+      <td>9</td>
+      <td>5</td>
+    </tr>
+    <tr>
+      <td>U → C</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>3</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>G → A</td>
+      <td>0</td>
+      <td>2</td>
+      <td>5</td>
+      <td>2</td>
+      <td>2</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>C → U</td>
+      <td>4</td>
+      <td>1</td>
+      <td>4</td>
+      <td>4</td>
+      <td>0</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Transversions</td>
+      <td>1</td>
+      <td>3</td>
+      <td>1</td>
+      <td>2</td>
+      <td>1</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Deletions</td>
+      <td>1</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Total nucleotides sequenced*</td>
+      <td>63,395</td>
+      <td>65,822</td>
+      <td>23,358</td>
+      <td>20,243</td>
+      <td>12,488</td>
+      <td>16,003</td>
+    </tr>
+  </tbody>
+</table>
+
+_*Total number of nucleotides sequenced in each different untreated or treated population analysed.Proportion of different types of mutations observed in untreated, or ribavirin- or favipiravir-treated MNV populations._
+
+A signature feature for error catastrophe in virus populations subjected to mutagenesis is a decrease in virus specific infectivity (González-López et al., 2005; Grande-Pérez et al., 2005; Perales et al., 2009). To investigate whether these compounds reduced the infectivity of treated norovirus populations, we serially passaged MNV in the presence of either ribavirin or favipiravir (Figure 3, Figure 4, respectively). In both cases, lower virus titres and encapsidated viral RNA levels were observed during passage in cell culture. After 5 passages, virus titres for MNV-1 treated with 400 μM favipiravir, and MNV-3 treated with either 400 μM ribavirin or favipiravir were close to or below the detection limit, indicating that ribavirin and favipiravir can cause lethal mutagenesis of MNV. We confirmed that MNV-3 was extinguished after 5 passages in the presence of 400 μM favipiravir, by three consecutive blind passages in RAW264.7 cells in the absence of the drug. The specific infectivity, a measure of the ratio of infectious virus per encapsidated genome, was consistently reduced during passages in the presence of favipiravir for both MNV strains. However, treatment with ribavirin resulted in decreased specific infectivity only for MNV-3 treated with the highest concentration (400 μM). This suggests that the lower mutagenic activity exhibited by ribavirin (Figure 2) is responsible for this limited effect on specific infectivity. MNV-3 was more sensitive to favipiravir and ribavirin than MNV-1 (Figures 3 and 4), although this difference could not be associated with significant variations in the mutation frequency values between these strains during infections in treated or untreated cells (Figure 2). This different behaviour may be related to the observation that MNV-3 has lower fitness than MNV-1 (compare virus titre yields for untreated infections in Figures 1, 3 and 4) which can result in a greater sensitivity to mutagenesis, as previously reported for other viruses (Sierra et al., 2000; Pariente et al., 2001). Confirming this possibility, a tissue culture-adapted MNV-3 population (18 serial passages in cell culture) responded similarly to MNV-1 when treated with 400 μM ribavirin (data not shown).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/03679/elife-03679-fig3-v1.jpg)
 
-**Figure 3.:** MNV-1 (A, B, C) and MNV-3 (D, E, F) were serially passaged in the absence (white circles) or presence of 200 (grey triangles) or 400 μM ribavirin (black squares). Virus was inoculated at an MOI of 0.1 TCID50/cell in passage 1. Subsequent passages were carried out with 200 μl (1/10 vol) of neat virus recovered from the previous passage. The different graphs show the resulting virus titres (A and D), genome copy equivalents (B and E), and the resulting specific infectivity determined for encapsidated genomes (C and F). Specific infectivity values were calculated as the number of infectious viruses (TCID50 units) found in 109 genome copies from data obtained in A, B, D, and E. To calculate the number of genome copy equivalents, non-encapsidated genomes were removed before RNA extraction by micrococcal nuclease treatment.DOI: http://dx.doi.org/10.7554/eLife.03679.007
+**Figure 3.:** MNV-1 (A, B, C) and MNV-3 (D, E, F) were serially passaged in the absence (white circles) or presence of 200 (grey triangles) or 400 μM ribavirin (black squares). Virus was inoculated at an MOI of 0.1 TCID50/cell in passage 1. Subsequent passages were carried out with 200 μl (1/10 vol) of neat virus recovered from the previous passage. The different graphs show the resulting virus titres (A and D), genome copy equivalents (B and E), and the resulting specific infectivity determined for encapsidated genomes (C and F). Specific infectivity values were calculated as the number of infectious viruses (TCID50 units) found in 109 genome copies from data obtained in A, B, D, and E. To calculate the number of genome copy equivalents, non-encapsidated genomes were removed before RNA extraction by micrococcal nuclease treatment.
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/03679/elife-03679-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** RAW264.7 cells were infected with MNV-1 or MNV-3 recovered after 5 passages in the absence (untreated) or presence of ribavirin (200 or 400 μM) with the exception of 400 μM ribavirin-treated MNV-3 where passage 2 was used due to insufficient virus titres in subsequent passages. Infections were performed at an MOI of 0.01. After adsorption (1 hr at 37°C), virus inoculum was removed and complete media added to infected cultures. Infected cells were then incubated as mentioned in ‘Materials and methods’ for a total of 17 hr before freezing.DOI: http://dx.doi.org/10.7554/eLife.03679.008
+**Figure 3—figure supplement 1.:** RAW264.7 cells were infected with MNV-1 or MNV-3 recovered after 5 passages in the absence (untreated) or presence of ribavirin (200 or 400 μM) with the exception of 400 μM ribavirin-treated MNV-3 where passage 2 was used due to insufficient virus titres in subsequent passages. Infections were performed at an MOI of 0.01. After adsorption (1 hr at 37°C), virus inoculum was removed and complete media added to infected cultures. Infected cells were then incubated as mentioned in ‘Materials and methods’ for a total of 17 hr before freezing.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/03679/elife-03679-fig4-v1.jpg)
 
-**Figure 4.:** MNV-1 (A, B, C) and MNV-3 (D, E, F) were serially passaged in the absence (white circles), or presence of 200 (grey triangles) or 400 μM favipiravir (black squares). Passage 1 infections were carried out at an MOI of 0.1 TCID50/cell. Subsequent passages were carried out with 200 μl (1/10 vol) of neat virus recovered from the previous passage. The different graphs show the resulting virus titres (A and D), genome copy equivalents (B and E), and the resulting specific infectivity determined for encapsidated genomes (C and F). Specific infectivity values were calculated as the number of infectious viruses (TCID50 units) found in 109 genome copies from data obtained in A, B, D, and E. To calculate the number of genome copy equivalents, non-encapsidated genomes were removed before RNA extraction by micrococcal nuclease treatment. The arrow in D indicates virus extinction confirmed by the absence of infectious virus and viral RNA (qPCR) after three serial passages in the absence of favipiravir.DOI: http://dx.doi.org/10.7554/eLife.03679.009
+**Figure 4.:** MNV-1 (A, B, C) and MNV-3 (D, E, F) were serially passaged in the absence (white circles), or presence of 200 (grey triangles) or 400 μM favipiravir (black squares). Passage 1 infections were carried out at an MOI of 0.1 TCID50/cell. Subsequent passages were carried out with 200 μl (1/10 vol) of neat virus recovered from the previous passage. The different graphs show the resulting virus titres (A and D), genome copy equivalents (B and E), and the resulting specific infectivity determined for encapsidated genomes (C and F). Specific infectivity values were calculated as the number of infectious viruses (TCID50 units) found in 109 genome copies from data obtained in A, B, D, and E. To calculate the number of genome copy equivalents, non-encapsidated genomes were removed before RNA extraction by micrococcal nuclease treatment. The arrow in D indicates virus extinction confirmed by the absence of infectious virus and viral RNA (qPCR) after three serial passages in the absence of favipiravir.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/03679/elife-03679-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** RAW264.7 cells were infected with MNV-1 or MNV-3 recovered after 5 passages in the absence (untreated) or presence of favipiravir (200 μM) Infections were performed at an MOI of 0.01. After adsorption (1 hr at 37°C), virus inoculum was removed and complete media added to infected cultures. Infected cells were then incubated as mentioned in ‘Materials and methods’ for a total of 17 hr before freezing.DOI: http://dx.doi.org/10.7554/eLife.03679.010
+**Figure 4—figure supplement 1.:** RAW264.7 cells were infected with MNV-1 or MNV-3 recovered after 5 passages in the absence (untreated) or presence of favipiravir (200 μM) Infections were performed at an MOI of 0.01. After adsorption (1 hr at 37°C), virus inoculum was removed and complete media added to infected cultures. Infected cells were then incubated as mentioned in ‘Materials and methods’ for a total of 17 hr before freezing.
 
 To further investigate the effect of mutagenesis on virus fitness, RAW264.7 cells were infected with virus obtained after 5 passages in the presence of ribavirin or favipiravir (Figures 3 and 4) at the same MOI (0.01 TCID50/cell). Viral populations previously subjected to either favipiravir or ribavirin mutagenic treatment resulted in decreased virus titres, in agreement with a loss of infectivity as a consequence of mutagenesis (Figure 3—figure supplement 1, Figure 4—figure supplement 1).
 
-## Favipiravir reduces the levels of infectious MNV in the faeces of persistently infected mice
+### Favipiravir reduces the levels of infectious MNV in the faeces of persistently infected mice
 
-The efficacy of ribavirin and favipiravir as antiviral compounds in vivo was next investigated in C57BL/6 mice persistently infected with MNV-3. Animals were infected 4 weeks before the beginning of the treatment to allow the establishment of a persistent infection. In a preliminary experiment (
+The efficacy of ribavirin and favipiravir as antiviral compounds in vivo was next investigated in C57BL/6 mice persistently infected with MNV-3. Animals were infected 4 weeks before the beginning of the treatment to allow the establishment of a persistent infection. In a preliminary experiment (Figure 5—figure supplement 1), we found that all the animals treated with favipiravir had lower virus titres (5/5) in their faeces while only 2 out of 5 animals treated with ribavirin had consistently lower titres (Figure 5—figure supplement 1). This suggests that favipiravir is more efficient than ribavirin in the control of norovirus replication in vivo, in agreement with data obtained in tissue culture. Hence, we conducted further experiments to determine whether favipiravir can drive lethal mutagenesis of MNV-3 during persistent infection in mice. With this aim, we treated mice persistently infected with MNV-3 with either placebo or 600 mg/kg/day of favipiravir for 8 weeks (Figure 5). Favipiravir was effective in the control of persistent norovirus replication in vivo with decreased virus titres and RNA levels in faeces observed (Figures 5 and 6) at very beginning of the treatment (day 1) and throughout the entire treatment period (day 53). A predicted half-life of 31 days is calculated for virus clearance in favipiravir-treated mice in contrast with 122 days in the untreated group (p = 0.0064, log-rank test; Figure 5B).
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/03679/elife-03679-fig5-v1.jpg)
 
-**Figure 5.:** Two groups of ten 4–5-week old C57BL/6 male mice were oral gavage-infected with 104 TCID50 units of MNV-3. 4 weeks after virus inoculation, persistently infected animals were subjected to treatment with either 300 mg/kg animal of favipiravir twice a day (FPV) or with buffer (Control) for 8 weeks. From day 35 onwards, there are nine animals instead of 10 in the favipiravir-treated group (due to the accidental death of one mouse during dosing). (A) Virus titres in faeces of animals untreated or treated with favipiravir. Virus titres were determined by TCID50 assays of faecal samples supernatant previously resuspended at 100 mg/ml in PBS (p < 0.05, *; p < 0.01, **; p < 0.001, ***; 2-way ANOVA test). A dashed line indicates the limit of detection (3.02 Log10 TCID50/g stool). (B) Virus titres in caecum and colon of animals after 53 days of treatment with favipiravir. Virus titres were determined by TCID50 assays of homogenates of caecum and colon resuspended in DMEM at a concentration of 30 mg/ml (p < 0.05, *; 2-way ANOVA test). (C) Reduced positive shedding in animals treated with favipiravir. The percentage of animals shedding detectable virus titre along time, based on A, decreases faster in animals treated with favipiravir than in untreated animals (p = 0.0064, log-rank test).DOI: http://dx.doi.org/10.7554/eLife.03679.011
+**Figure 5.:** Two groups of ten 4–5-week old C57BL/6 male mice were oral gavage-infected with 104 TCID50 units of MNV-3. 4 weeks after virus inoculation, persistently infected animals were subjected to treatment with either 300 mg/kg animal of favipiravir twice a day (FPV) or with buffer (Control) for 8 weeks. From day 35 onwards, there are nine animals instead of 10 in the favipiravir-treated group (due to the accidental death of one mouse during dosing). (A) Virus titres in faeces of animals untreated or treated with favipiravir. Virus titres were determined by TCID50 assays of faecal samples supernatant previously resuspended at 100 mg/ml in PBS (p < 0.05, *; p < 0.01, **; p < 0.001, ***; 2-way ANOVA test). A dashed line indicates the limit of detection (3.02 Log10 TCID50/g stool). (B) Virus titres in caecum and colon of animals after 53 days of treatment with favipiravir. Virus titres were determined by TCID50 assays of homogenates of caecum and colon resuspended in DMEM at a concentration of 30 mg/ml (p < 0.05, *; 2-way ANOVA test). (C) Reduced positive shedding in animals treated with favipiravir. The percentage of animals shedding detectable virus titre along time, based on A, decreases faster in animals treated with favipiravir than in untreated animals (p = 0.0064, log-rank test).
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/03679/elife-03679-fig5-figsupp1-v1.jpg)
 
-**Figure 5—figure supplement 1.:** 4–5-week old male C57BL/6 mice were oral gavage-infected with 104 TCID50 units of MNV-3. 4 weeks after infection, animals underwent daily treatment with mutagenic compounds for a total of 18 days (day 0 to day 17), with the exception of days 6 and 13 when the animals were not treated. Animals were dosed by oral gavage with 8 mg/day (3 animals) or 16 mg/day (2 animals) of either ribavirin or favipiravir for 12 days. Afterwards, the animals were treated with 16 mg/day of the same drug for six additional days. Virus titres obtained in faecal samples isolated 4 days before treatment began (−4) and after 2 and 18 days of treatment (***; p < 0.001, 2-way ANOVA test).DOI: http://dx.doi.org/10.7554/eLife.03679.012
+**Figure 5—figure supplement 1.:** 4–5-week old male C57BL/6 mice were oral gavage-infected with 104 TCID50 units of MNV-3. 4 weeks after infection, animals underwent daily treatment with mutagenic compounds for a total of 18 days (day 0 to day 17), with the exception of days 6 and 13 when the animals were not treated. Animals were dosed by oral gavage with 8 mg/day (3 animals) or 16 mg/day (2 animals) of either ribavirin or favipiravir for 12 days. Afterwards, the animals were treated with 16 mg/day of the same drug for six additional days. Virus titres obtained in faecal samples isolated 4 days before treatment began (−4) and after 2 and 18 days of treatment (***; p < 0.001, 2-way ANOVA test).
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/03679/elife-03679-fig5-figsupp2-v1.jpg)
 
-**Figure 5—figure supplement 2.:** Virus titres obtained after blind passage infection in RAW264.7 cells of faeces, caecum, and colon homogenates obtained from animals at treatment day 53 (Figure 5A,B). An arrow indicates samples from the same three animals that remained negative after blind passage, indicating extinction. These samples remained negative by TCID50 assay and qPCR after three consecutive blind passages.DOI: http://dx.doi.org/10.7554/eLife.03679.013
+**Figure 5—figure supplement 2.:** Virus titres obtained after blind passage infection in RAW264.7 cells of faeces, caecum, and colon homogenates obtained from animals at treatment day 53 (Figure 5A,B). An arrow indicates samples from the same three animals that remained negative after blind passage, indicating extinction. These samples remained negative by TCID50 assay and qPCR after three consecutive blind passages.
 
 ![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/03679/elife-03679-fig5-figsupp3-v1.jpg)
 
-**Figure 5—figure supplement 3.:** Faecal virus samples obtained from untreated or treated mice during 53 days were amplified by blind passage in RAW264.7 cells and treated with favipiravir to examine the possible presence of resistance.DOI: http://dx.doi.org/10.7554/eLife.03679.014
+**Figure 5—figure supplement 3.:** Faecal virus samples obtained from untreated or treated mice during 53 days were amplified by blind passage in RAW264.7 cells and treated with favipiravir to examine the possible presence of resistance.
 
 ![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/03679/elife-03679-fig5-figsupp4-v1.jpg)
 
-**Figure 5—figure supplement 4.:** They are represented animal weights before (−5) and during the treatment with placebo or favipiravir (*; p < 0.05; 2-way ANOVA test).DOI: http://dx.doi.org/10.7554/eLife.03679.015
+**Figure 5—figure supplement 4.:** They are represented animal weights before (−5) and during the treatment with placebo or favipiravir (*; p < 0.05; 2-way ANOVA test).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/03679/elife-03679-fig6-v1.jpg)
 
-**Figure 6.:** Two groups of ten male C57BL/6 mice of 4–5-weeks were oral gavage-infected with 104 TCID50 units of MNV-3. 4 weeks after virus inoculation, persistently infected animals were subjected to treatment with either 300 mg/kg animal of favipiravir twice a day (FPV) or with buffer (Control) for 8 weeks. At day 53, there are nine animals instead of ten in favipiravir-treated group due to the accidental death of one mouse during dosing. A dashed line indicates the limit of detection (102 genome copy equivalent per mg of stool). (A) Viral genome copy equivalents isolated in faecal samples (p < 0.05, *; p < 0.01, **; p < 0.001, ***; 2-way ANOVA test). Viral RNA extracted was then reverse transcribed and quantitated as described in ‘Materials and methods’. (B) Viral genome copy equivalents isolated in caecum and colon (p < 0.05, *; 2-way ANOVA test).DOI: http://dx.doi.org/10.7554/eLife.03679.016
+**Figure 6.:** Two groups of ten male C57BL/6 mice of 4–5-weeks were oral gavage-infected with 104 TCID50 units of MNV-3. 4 weeks after virus inoculation, persistently infected animals were subjected to treatment with either 300 mg/kg animal of favipiravir twice a day (FPV) or with buffer (Control) for 8 weeks. At day 53, there are nine animals instead of ten in favipiravir-treated group due to the accidental death of one mouse during dosing. A dashed line indicates the limit of detection (102 genome copy equivalent per mg of stool). (A) Viral genome copy equivalents isolated in faecal samples (p < 0.05, *; p < 0.01, **; p < 0.001, ***; 2-way ANOVA test). Viral RNA extracted was then reverse transcribed and quantitated as described in ‘Materials and methods’. (B) Viral genome copy equivalents isolated in caecum and colon (p < 0.05, *; 2-way ANOVA test).
 
 ![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/03679/elife-03679-fig6-figsupp1-v1.jpg)
 
-**Figure 6—figure supplement 1.:** Viral RNA was extracted and reverse transcribed as described in ‘Materials and methods’ (Arias et al., 2012a). Standard curve was obtained with known amounts of in vitro transcribed MNV-3 RNA (102 to 105 genome equivalents) that were PCR amplified after reverse transcription. (A) RT-PCR amplification of faecal samples isolated from animals treated during 53 days with favipiravir or placebo. RNA isolated in 50 μg of faeces was RT-PCR amplified and agarose-gel resolved as explained above. (B) RT-PCR amplification of RNA extracted from colon samples isolated from animals treated for 8 weeks with favipiravir or placebo. 50 ng of RNA isolated from different animal colon tissues were RT-PCR amplified as explained above.DOI: http://dx.doi.org/10.7554/eLife.03679.017
+**Figure 6—figure supplement 1.:** Viral RNA was extracted and reverse transcribed as described in ‘Materials and methods’ (Arias et al., 2012a). Standard curve was obtained with known amounts of in vitro transcribed MNV-3 RNA (102 to 105 genome equivalents) that were PCR amplified after reverse transcription. (A) RT-PCR amplification of faecal samples isolated from animals treated during 53 days with favipiravir or placebo. RNA isolated in 50 μg of faeces was RT-PCR amplified and agarose-gel resolved as explained above. (B) RT-PCR amplification of RNA extracted from colon samples isolated from animals treated for 8 weeks with favipiravir or placebo. 50 ng of RNA isolated from different animal colon tissues were RT-PCR amplified as explained above.
 
 After 53 days of treatment with favipiravir, infectious virus titres were undetectable in the faeces of 7 out of 9 animals, while only 2 out of 10 animals had undetectable titres in the control group, suggesting that the infections were cleared as a result of favipiravir treatment (Figure 5A,C). Similar results were obtained when homogenates of caecum and colon collected at the end-point (day 53) were analysed for the presence of MNV (Figure 5B). To confirm whether these samples were negative, we carried out a blind passage in RAW264.7 cells. We confirmed that three treated animals were negative for all the samples analysed (faeces, caecum, and colon) while the remaining treated and untreated animals (6 and 10 respectively) were positive for MNV (Figure 5—figure supplement 2). All these three animal samples remained negative by titration and qPCR after 3 passages in the absence of favipiravir. These results suggest that favipiravir has assisted in clearing the infection in 33% of treated mice.
 
@@ -112,19 +203,19 @@ To investigate whether favipiravir treatment in vivo resulted in the selection o
 
 Quantification of MNV RNA in faecal samples also showed lower viral levels in treated mice than in control animals for the duration of the study (Figure 6). The same three animals that were negative for MNV-3 above showed viral RNA levels in faeces below the detection limit after 53 days of treatment, determined both by RT-qPCR (Figure 6), and RT-PCR followed by agarose gel analysis (Figure 6—figure supplement 1), while all placebo-treated animals showed high levels of viral RNA. Quantification of viral RNA extracted from caecum and colon, the major tissues for virus replication during persistent infections (Arias et al., 2012a), also confirmed that viral RNA could not be detected in these three treated mice that contain no amplifiable infectious virus in faeces and tissues, further supporting that virus infection was cleared in these animals (Figure 6).
 
-## Favipiravir induces increased error frequencies in norovirus replication in vivo
+### Favipiravir induces increased error frequencies in norovirus replication in vivo
 
-To clarify if favipiravir antiviral activity observed in vivo was associated with mutagenesis, we examined the mutation frequency of viral populations shed in the faeces of five different animals in each group. The mutation frequencies found in virus samples from favipiravir-treated animals were greater than in placebo-treated mice with an average of a 2.9-fold increase relative to control animals being observed (
+To clarify if favipiravir antiviral activity observed in vivo was associated with mutagenesis, we examined the mutation frequency of viral populations shed in the faeces of five different animals in each group. The mutation frequencies found in virus samples from favipiravir-treated animals were greater than in placebo-treated mice with an average of a 2.9-fold increase relative to control animals being observed (Figure 7A). We also determined the mutation frequencies in three samples isolated from ribavirin-treated animals in the preliminary experiment, and they were similar to those observed for placebo-treated animals (4.0 ± 2.2 vs 3.6 ± 1.4 substitutions per 10,000 nucleotides sequenced, respectively). These results suggest that the antiviral activity observed for favipiravir in vivo is linked to mutagenesis, and the clearance of infection in some of these animals is the consequence of lethal mutagenesis of persistently replicating virus.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/03679/elife-03679-fig7-v1.jpg)
 
-**Figure 7.:** (A) Mutation frequency in virus isolated in faecal samples. Every value in the graph represents the virus mutation frequency in a different animal faecal sample after 18 days of treatment. Mutation frequencies are represented as the average number of nucleotide substitutions found in every 10,000 nucleotides sequenced. (0.001 < p < 0.05, **; t test). (B) Decreased infectivity in viral RNA isolated from favipiravir-treated animals. Viral RNA isolated from placebo and favipiravir-treated animal faecal samples was quantified and 2 × 105 genome copy equivalents were lipofected in semiconfluent BHK-21 cell monolayers. At 24 hr post-transfection, cells were freeze-thawed and the resulting virus yields determined by TCID50 assays in RAW264.7 cells. They are represented as the virus titres obtained per 106 genome copies isolated from the faeces of infected animals before treatment (day 0) and at treatment days 7 and 18. (C) MNV recovered from favipiravir-treated animals shows reduced replication yields. Virus isolated from animal faeces treated with favipiravir were first amplified in RAW264.7 cells allowing virus replication for 24 hr. Recovered viruses were titrated and 0.01 TCID50 units/cell applied to new RAW264.7 cell monolayers. Virus infections were collected at 8 hr post-infection and the cultures freeze-thawed to release infectious virus (**; p < 0.01; t test).DOI: http://dx.doi.org/10.7554/eLife.03679.018
+**Figure 7.:** (A) Mutation frequency in virus isolated in faecal samples. Every value in the graph represents the virus mutation frequency in a different animal faecal sample after 18 days of treatment. Mutation frequencies are represented as the average number of nucleotide substitutions found in every 10,000 nucleotides sequenced. (0.001 < p < 0.05, **; t test). (B) Decreased infectivity in viral RNA isolated from favipiravir-treated animals. Viral RNA isolated from placebo and favipiravir-treated animal faecal samples was quantified and 2 × 105 genome copy equivalents were lipofected in semiconfluent BHK-21 cell monolayers. At 24 hr post-transfection, cells were freeze-thawed and the resulting virus yields determined by TCID50 assays in RAW264.7 cells. They are represented as the virus titres obtained per 106 genome copies isolated from the faeces of infected animals before treatment (day 0) and at treatment days 7 and 18. (C) MNV recovered from favipiravir-treated animals shows reduced replication yields. Virus isolated from animal faeces treated with favipiravir were first amplified in RAW264.7 cells allowing virus replication for 24 hr. Recovered viruses were titrated and 0.01 TCID50 units/cell applied to new RAW264.7 cell monolayers. Virus infections were collected at 8 hr post-infection and the cultures freeze-thawed to release infectious virus (**; p < 0.01; t test).
 
 ![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/03679/elife-03679-fig7-figsupp1-v1.jpg)
 
-**Figure 7—figure supplement 1.:** 4–5-week old male C57BL/6 mice were oral gavage-infected with 104 TCID50 units of MNV-3. 4 weeks after infection, animals underwent daily treatment with mutagenic compounds during a total of 18 days (day 0 to day 17) with the exception of days 6 and 13 when the animals were not treated. Animals were dosed by oral gavage with 8 mg/day (3 animals) or 16 mg/day (2 animals) of either ribavirin or favipiravir for 12 days. Afterwards, the animals were treated with 16 mg/day of the same drug for six additional days. Viral RNA isolated from placebo-, ribavirin-, and favipiravir-treated animal faecal samples were quantified and 5 × 104 genome copy equivalents lipofected in semiconfluent BHK-21 cell monolayers. At 24 hr post-transfection cells were freeze-thawed and resulting virus yields determined by TCID50 assays in RAW264.7 cells. They are represented the infectivity values for RNA samples isolated from faeces collected at day 18.DOI: http://dx.doi.org/10.7554/eLife.03679.019
+**Figure 7—figure supplement 1.:** 4–5-week old male C57BL/6 mice were oral gavage-infected with 104 TCID50 units of MNV-3. 4 weeks after infection, animals underwent daily treatment with mutagenic compounds during a total of 18 days (day 0 to day 17) with the exception of days 6 and 13 when the animals were not treated. Animals were dosed by oral gavage with 8 mg/day (3 animals) or 16 mg/day (2 animals) of either ribavirin or favipiravir for 12 days. Afterwards, the animals were treated with 16 mg/day of the same drug for six additional days. Viral RNA isolated from placebo-, ribavirin-, and favipiravir-treated animal faecal samples were quantified and 5 × 104 genome copy equivalents lipofected in semiconfluent BHK-21 cell monolayers. At 24 hr post-transfection cells were freeze-thawed and resulting virus yields determined by TCID50 assays in RAW264.7 cells. They are represented the infectivity values for RNA samples isolated from faeces collected at day 18.
 
-## Decreased specific infectivity and fitness in favipiravir treated populations in vivo
+### Decreased specific infectivity and fitness in favipiravir treated populations in vivo
 
 To investigate whether favipiravir-induced mutagenesis in vivo resulted in decreased infectivity of viral populations, we firstly isolated and quantified viral RNA from faeces at various times during the treatment of animals with favipiravir and used an equivalent genome copy number to transfect BHK-21 cells (Figure 7B). BHK-21 cells support MNV replication but not virus (re)infection, resulting in a single round of replication for the transfected genomes and a better correlation between infectious genome units and virus titre. Thus, this approach provides an indirect measure of viral genome specific infectivity, as only viable genomes will result in the recovery of infectious virus. Viral titres recovered were consistently lower in samples obtained from favipiravir-treated animals than in placebo-treated animals (Figure 7B), suggesting decreased specific infectivity as a consequence of increased mutagenesis. Virus titres for genomes isolated from ribavirin-treated animals showed no significant difference with untreated animals (Figure 7—figure supplement 1).
 
@@ -144,27 +235,27 @@ Recent evidence suggests that the combination of a mutagenic compound with a cla
 
 ## Materials and methods
 
-## Ethics
+### Ethics
 
 Studies with mice were performed in the Department of Pathology BSU Unit (PCD 80/2802) after ethical review by the University of Cambridge Review Panel and subsequent approval by the UK Home Office (PPL70/7689). All animal procedures and care conformed strictly to the UK Home Office Guidelines under The Animals (Scientific Procedures) Act 1986.
 
-## Cells, infections, and reverse genetics recovery of viruses
+### Cells, infections, and reverse genetics recovery of viruses
 
 Procedures for the cultivation of cells and MNV infections have been previously described (Arias et al., 2012a). Murine leukaemia macrophage cells RAW264.7 were used for the propagation and titration (TCID50 assay) of murine norovirus 1 and 3 (MNV-1 and MNV-3) used in this study. Baby hamster kidney cells (BHK-21) were used for the determination of infectivity in viral genomes isolated from animal samples. All the different cell lines were cultured in Dulbecco's modified Eagle medium (DMEM) with 10% FCS, 100 U/ml penicillin, and 100 mg/ml streptomycin (complete DMEM) and maintained at 37°C with 10% CO2. MNV-1 and MNV-3 strains used in this study were obtained after reverse genetics recovery of infectious virus as previously described (Arias et al., 2012b). Recovered viruses were then subjected to two consecutive passages in RAW264.7 cells. The resulting population was titrated and used as a passage 0 stock.
 
-## Cell culture infections in the presence of mutagenic compounds
+### Cell culture infections in the presence of mutagenic compounds
 
 RAW264.7 cells were grown until they formed confluent monolayers (∼2 × 106 cells in 35 mm diameter dish). Supernatant was then removed and replaced by 1 ml of complete DMEM containing either 200, 400, or 800 μM ribavirin or favipiravir and the cells were incubated for two additional hours at 37°C and 10% CO2. Cells were inoculated with 200 μl of virus at the multiplicity of infection (MOI) indicated and incubated for 1 hr at 37°C and 10% CO2. Supernatants were removed, cells washed to eliminate unattached virus, and 2 ml of fresh media containing ribavirin or favipiravir were added to each well. Cell cultures were collected at 24 hr post-infection and virus released through two consecutive freeze–thaw cycles.
 
 For experiments involving serial passage of virus populations in the presence of favipiravir or ribavirin, passage 1 cells were infected at an MOI of 0.01 TCID50/cell with MNV-1 or MNV-3. In subsequent passages, 200 μl of neat virus from the previous passage (1/10 of total virus) were applied to a new monolayer of cells.
 
-## Viral RNA extraction, RT-PCR amplification, quantitative PCR, and mutation frequency analysis of virus populations
+### Viral RNA extraction, RT-PCR amplification, quantitative PCR, and mutation frequency analysis of virus populations
 
 Viral RNA was extracted from 100 μl of viral samples, either supernatant from lysed infected cultures or PBS-resuspended faeces from animals, using EconoSpin columns (Epoch, Missouri City, TX), following protocols provided by the manufacturer. Viral RNA was quantified using a two-step qPCR approach following protocols described previously (Arias et al., 2012a).
 
 For the calculation of mutation frequency in any virus population, we have followed protocols previously described (Beaucourt et al., 2011). Briefly, 4 μl of purified RNA were reverse-transcribed in 20 μl final volume using SuperScript III (Roche, Switzerland) as indicated by the manufacturer. 3 μl of cDNA were then PCR amplified using high fidelity KOD polymerase (Toyobo) using primers spanning genomic positions 3734 to 3770 and 6074 to 6034 in MNV-1 and 3734 to 3770 and 5738 to 5711 in MNV-3. PCR products were purified with EconoSpin columns (Epoch) and directly ligated in plasmid PCR Blunt using Zero Blunt PCR cloning kit (Life Technologies, Carlsbad, CA). Positive Escherichia coli colonies were identified by PCR screening with primers flanking the vector-cloning site and GoTaq polymerase (Promega, Madison, WI). The resultant PCR products corresponding to individual MNV cDNA clones were sequenced and the mutation frequency in each population calculated.
 
-## Animal infections and antiviral treatment
+### Animal infections and antiviral treatment
 
 4–5-week old male C57BL/6 mice were orally infected with 104 TCID50 units of MNV-3 as previously described (Arias et al., 2012a). After 4 weeks, persistently infected animals were subjected once or twice daily to oral gavage treatment with ribavirin, favipiravir, or placebo. Ribavirin was dissolved in PBS before inoculation into animals, while favipiravir was resuspended in 0.5% carboxyl methyl cellulose (CMC) in PBS. For the preliminary experiment (Figure 5—figure supplement 1), animals were treated once or twice a day with 8 mg of ribavirin or favipiravir (∼300 or 600 mg/kg animal/day) for 18 days. For the larger experiment (10 mice per group) (Figures 5 and 6), animals were treated with 300 mg/kg animal favipiravir twice a day (600 mg/kg animal/day) for 8 weeks. Control animals were treated with 0.5% CMC in PBS. Faecal samples were collected at different time points along the treatment period and the presence of infectious particles and viral RNA determined. Animals were sacrificed after the 8-week treatment period and caecum and colon tissues collected to analyse the presence of viral RNA.
 

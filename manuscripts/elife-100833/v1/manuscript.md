@@ -6,7 +6,7 @@
 
 ### Affiliations
 
-1. https://ror.org/00py81415 Department of Neurobiology, Duke University School of Medicine Durham United States
+1. Department of Neurobiology, Duke University School of Medicine Durham United States ([ROR:00py81415](https://ror.org/00py81415))
 
 † Corresponding author
 

@@ -46,11 +46,166 @@ Here, we used a metapopulation framework to model and isolate the population-lev
 
 ## Results
 
-## Distribution of bacterial pathogens and antibiotic use in a hospital network
+### Distribution of bacterial pathogens and antibiotic use in a hospital network
 
 We analyzed pathogen isolation incidence in clinical samples, antibiotic use, and patient transfers in 357 hospital wards from the region of Lyon, France. Data for all three measures were collected during the same period from October 2016 to September 2017. The hospital network contained a total of 4,685 beds. The median ward size was 12 beds (interquartile range, 5 to 20).
 
 Ward-level data were aggregated from 13,915 infection episodes, defined as ward admissions with ≥1 clinical sample positive for E. coli or one of the so-called ESKAPE pathogens (Enterococcus faecium, Staphylococcus aureus, Klebsiella pneumoniae, Acinetobacter baumannii, Pseudomonas aeruginosa and Enterobacter cloacae complex), collectively termed ESKAPE2 (Table 1). Pathogens were grouped into species-resistance pattern combinations, namely 3rd-generation cephalosporin (3GC)-resistant E. coli, E. cloacae complex and K. pneumoniae, carbapenem-resistant E. coli, E. cloacae complex, K. pneumoniae, P. aeruginosa and A. baumannii, vancomycin-resistant E. faecium and methicillin-resistant S. aureus (MRSA). Pathogen variants not falling into these resistance groups were collectively referred to as the less-resistant variants (Table 1). The median yearly incidence of infection episodes per ward was 24 (interquartile range, 7 to 55).
+
+**Table 1.**
+ Distribution of ESKAPE2 pathogen infection episodes in 357 hospital wards.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Species</th>
+      <th>Resistance profile</th>
+      <th>Acronym</th>
+      <th>No. of episodes (%), n = 13,915</th>
+      <th>No. of wards (%), n = 357</th>
+      <th>Concentration indexa (%) (95% CI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E. coli</td>
+      <td>Susceptible to 3GC and carbapenems</td>
+      <td>EC</td>
+      <td>6,303 (45.3)</td>
+      <td>328 (91.9)</td>
+      <td>0.6 (0.6, 0.7)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3GC-resistant</td>
+      <td>3GCREC</td>
+      <td>737 (5.3)</td>
+      <td>207 (58.0)</td>
+      <td>0.7 (0.6, 0.8)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Carbapenem-resistant</td>
+      <td>CREC</td>
+      <td>24 (0.2)</td>
+      <td>24 (5.6)</td>
+      <td>1.4 (0.0, 3.9)</td>
+    </tr>
+    <tr>
+      <td>K. pneumoniae</td>
+      <td>Susceptible to 3GC and carbapenems</td>
+      <td>KP</td>
+      <td>1,133 (8.1)</td>
+      <td>249 (69.7)</td>
+      <td>0.7 (0.6, 0.8)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>3GC-resistant</td>
+      <td>3GCRKP</td>
+      <td>530 (3.8)</td>
+      <td>175 (49.0)</td>
+      <td>0.9 (0.7, 1.0)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Carbapenem-resistant</td>
+      <td>CRKP</td>
+      <td>43 (0.3)</td>
+      <td>32 (9.0)</td>
+      <td>1.7 (0.0, 3.5)</td>
+    </tr>
+    <tr>
+      <td rowspan="3">E. cloacae complex</td>
+      <td>Susceptible to 3GC and carbapenems</td>
+      <td>EB</td>
+      <td>277 (2.0)</td>
+      <td>140 (39.2)</td>
+      <td>1.0 (0.7, 1.3)</td>
+    </tr>
+    <tr>
+      <td>3GC-resistant</td>
+      <td>3GCREB</td>
+      <td>212 (1.5)</td>
+      <td>116 (32.5)</td>
+      <td>0.8 (0.5, 1.0)</td>
+    </tr>
+    <tr>
+      <td>Carbapenem-resistant</td>
+      <td>CREB</td>
+      <td>102 (0.7)</td>
+      <td>74 (20.7)</td>
+      <td>0.7 (0.3, 1.1)</td>
+    </tr>
+    <tr>
+      <td>P. aeruginosa</td>
+      <td>Carbapenem-susceptible</td>
+      <td>PA</td>
+      <td>1,076 (7.7)</td>
+      <td>231 (64.7)</td>
+      <td>0.8 (0.7, 0.9)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Carbapenem-resistant</td>
+      <td>CRPA</td>
+      <td>444 (3.2)</td>
+      <td>148 (41.5)</td>
+      <td>1.5 (1.2, 1.7)</td>
+    </tr>
+    <tr>
+      <td>A. baumannii</td>
+      <td>Carbapenem-susceptible</td>
+      <td>AB</td>
+      <td>96 (0.7)</td>
+      <td>61 (17.1)</td>
+      <td>1.3 (0.5, 2.1)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Carbapenem-resistant</td>
+      <td>CRAB</td>
+      <td>12 (0.1)</td>
+      <td>10 (2.8)</td>
+      <td>3.0 (0.0, 9.8)</td>
+    </tr>
+    <tr>
+      <td>E. faecium</td>
+      <td>Vancomycin-susceptible</td>
+      <td>EF</td>
+      <td>503 (3.6)</td>
+      <td>133 (27.3)</td>
+      <td>1.4 (1.2, 1.6)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Vancomycin-resistant</td>
+      <td>VREF</td>
+      <td>7 (&lt;0.1)</td>
+      <td>7 (2.0)</td>
+      <td>0.0 (0.0, 9.6)</td>
+    </tr>
+    <tr>
+      <td>S. aureus</td>
+      <td>Methicillin-susceptible</td>
+      <td>SA</td>
+      <td>2,113 (15.2)</td>
+      <td>273 (76.5)</td>
+      <td>1.1 (1.0, 1.1)</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Methicillin-resistant</td>
+      <td>MRSA</td>
+      <td>303 (2.2)</td>
+      <td>151 (42.3)</td>
+      <td>0.7 (0.5, 0.9)</td>
+    </tr>
+  </tbody>
+</table>
+
+_NOTE. aThe concentration index estimates the probability that two episodes taken at random occurred in the same ward. Here we report the concentration index as a percent (0–100%). 3GC, 3rd-generation cephalosporins._
 
 Infection episodes most frequently involved the less-resistant variants, especially E. coli, which were also found in the largest number of wards (Table 1 and Figure 1—figure supplement 1). Resistant variants were consistently less frequent than their less-resistant counterparts in all species (Figure 1—figure supplement 1). In enterobacteria (E. coli, K. pneumoniae and E. cloacae), carbapenem-resistant variants were consistently less frequent than 3GC-resistant variants. Infections with vancomycin-resistant E. faecium and carbapenem-resistant A. baumannii were exceptional, with seven and twelve episodes respectively (Table 1).
 
@@ -58,7 +213,111 @@ To estimate the degree of concentration of each variant in the network, we calcu
 
 Over the same period (October 2016 to September 2017), antibiotics were prescribed in 86.3% of wards (Table 2), with a total consumption of 125.7 defined daily doses per year per bed (ddd/y/b). Antibiotics usually suspected to select for AMR in the selected variants were grouped into 11 classes (Table 2). Antibiotics with comparatively rare use (e.g., rifampicin) were excluded. The distribution of antibiotic use in the network was analyzed using the concentration index described above, here representing the probability that two random drug doses were delivered in the same ward. Antibiotic use was diffuse, with concentration indices < 4%, ranging from 0.8% for cefotaxime-ceftriaxone and fluoroquinolones to 3.6% for oxacillin.
 
-## Antibiotic use and connectivity predict the incidence of drug-resistant infections
+**Table 2.**
+ Distribution of the use of 11 antibiotics in 357 hospital wards.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Antibiotics</th>
+      <th>Acronym</th>
+      <th>Prescription volume in ddd/y (%)</th>
+      <th>No. of wards (%), n = 357</th>
+      <th>Concentration indexa (%), (95% CI)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Amoxicillin</td>
+      <td>AMX</td>
+      <td>141,293 (24.0)</td>
+      <td>252 (70.6)</td>
+      <td>1.8 (1.7, 1.8)</td>
+    </tr>
+    <tr>
+      <td>Coamoxiclav</td>
+      <td>AMC</td>
+      <td>78,072 (13.3)</td>
+      <td>247 (69.3)</td>
+      <td>1.0 (0.9, 1.0)</td>
+    </tr>
+    <tr>
+      <td>First- and second- generation cephalosporins</td>
+      <td>1GC/2GC</td>
+      <td>12,915 (2.2)</td>
+      <td>191 (53.5)</td>
+      <td>1.2 (1.1, 1.3)</td>
+    </tr>
+    <tr>
+      <td>Non-antipseudomonal 3GCs, cefotaxime and ceftriaxone</td>
+      <td>CTX/CRO</td>
+      <td>53,406 (9.1)</td>
+      <td>259 (72.5)</td>
+      <td>0.8 (0.8, 0.9)</td>
+    </tr>
+    <tr>
+      <td>Antipseudomonal 3GCs, ceftazidime and cefepime</td>
+      <td>CTZ/FEP</td>
+      <td>29,204 (5.0)</td>
+      <td>184 (51.5)</td>
+      <td>1.9 (1.8, 1.9)</td>
+    </tr>
+    <tr>
+      <td>Piperacillin-tazobactam</td>
+      <td>TZP</td>
+      <td>27,593 (4.7)</td>
+      <td>198 (55.5)</td>
+      <td>1.9 (1.7, 1.9)</td>
+    </tr>
+    <tr>
+      <td>Carbapenems</td>
+      <td>IPM/MEM</td>
+      <td>25,093 (4.3)</td>
+      <td>204 (57.1)</td>
+      <td>1.5 (1.4, 1.6)</td>
+    </tr>
+    <tr>
+      <td>Oxacillin</td>
+      <td>OXA</td>
+      <td>12,374 (2.1)</td>
+      <td>143 (40.1)</td>
+      <td>3.6 (3.1, 3.7)</td>
+    </tr>
+    <tr>
+      <td>Vancomycin and teicoplanin</td>
+      <td>VAN/TEC</td>
+      <td>25,376 (4.3)</td>
+      <td>206 (57.7)</td>
+      <td>1.5 (1.4, 1.5)</td>
+    </tr>
+    <tr>
+      <td>Fluoroquinolones</td>
+      <td>FQ</td>
+      <td>52,549 (8.9)</td>
+      <td>249 (69.7)</td>
+      <td>0.8 (0.8, 0.8)</td>
+    </tr>
+    <tr>
+      <td>Aminoglycosides</td>
+      <td>AMIN</td>
+      <td>12,745 (2.2)</td>
+      <td>207 (58.0)</td>
+      <td>1.9 (1.5, 1.9)</td>
+    </tr>
+    <tr>
+      <td>All antibioticsb</td>
+      <td>-</td>
+      <td>589,014 (100)</td>
+      <td>308 (86.3)</td>
+      <td>0.8 (0.8, 0.8)</td>
+    </tr>
+  </tbody>
+</table>
+
+_NOTE. aThe concentration index estimates the probability that two antibiotic ddds taken at random were prescribed in the same ward. Here we report the concentration index as a percent (0–100%). bTotal consumption of systemic-use antibiotics (ATC class J01) including those not considered in the 11 specific drug groups. 3GC, 3rd-generation cephalosporin; ddd, defined daily dose._
+
+### Antibiotic use and connectivity predict the incidence of drug-resistant infections
 
 We used multivariable generalized linear models (GLMs) within the metapopulation framework to disentangle the influences of antibiotic pressure, connectivity, ward size, and ward type on the incidence of infections with the selected pathogens and their resistant variants.
 
@@ -70,11 +329,37 @@ We also considered that the distribution of infections across wards was a source
 
 The incidence of each pathogen variant was modeled in a separate multivariable quasi-Poisson GLM (Figure 1). In these GLMs, global antibiotic use was associated with infection incidence in seven pathogen variants independent of connectivity, ward size, and ward type (Figure 1), including five resistant variants (3GC-resistant E. coli, 3GC-resistant K. pneumoniae, carbapenem-resistant K. pneumoniae, 3GC-resistant E. cloacae, and carbapenem-resistant E. cloacae) and two less-resistant variants (P. aeruginosa and E. faecium). The largest effect size was found in carbapenem-resistant K. pneumoniae, in which every doubling of antibiotic use predicted a 47% increase in incidence (95% confidence interval, 19% to 90%).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig1-v2.jpg)
+
+**Figure 1.:** Shown are the predicted percent changes in incidence (points) with 95% confidence interval (bars) for each variant in each ward (n = 357) for every doubling of antibiotic use, connectivity (estimated no. of patients infected with the same variant entering the ward), ward size (no. of beds), and ward type. All models were multivariable quasi-Poisson regressions that included the incidence control covariate (see Materials and methods). Models involving A. baumannii and E. faecium, which exhibited larger 95% confidence intervals due to smaller incidence of the resistant variants, are shown with separate scales (panel b) for readability. In models of CREC, CRAB, and VREF incidence, small sample size in at least one ward category prevented the inclusion of ward type as a covariate and the estimation of the coefficient, marked as ‘not determined’. Variant acronyms are listed in Table 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig1-figsupp1-v2.jpg)
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Boxes denote variables and arrows denote assumed causal relationships, from cause to effect. In the assumed model, the infection distribution variable opens a biasing path between antibiotic use (the exposure) and the incidence of infections with the pathogen variant of interest (the outcome). The infection distribution is an unrepresentable variable which cannot be directly adjusted for, but which might be represented by proxy variables (see Materials and methods). To define these proxy variables, we assume that ward type, size, and the incidence control value capture much of the variability of the unrepresentable infection distribution. Under this assumption, these measured variables are used as a proxy adjustment set to control for confounding by the infection distribution. Of note, the infection distribution influences the volume of antibiotic prescriptions, and antibiotic use also influences infections by altering the population structure of pathogens. Thus, the causal link between the infection distribution and antibiotic use is (possibly) bidirectional. However, the bidirectional link between antibiotic use and infection distribution does not prevent the identification of the causal effect under the assumption that the proxy adjustment set is valid.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** R² and 95% confidence intervals (in parentheses) were obtained using simple linear regression on log2-transformed data.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** R² and 95% confidence intervals (in parentheses) were obtained using simple linear regression on log2-transformed data.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** R² and 95% confidence intervals (in parentheses) were obtained using simple linear regression on log2-transformed data.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** R² and 95% confidence intervals (in parentheses) were obtained using simple linear regression on log2-transformed data. .
+
 Connectivity predicted a higher incidence in all variants of P. aeruginosa and E. faecium, with a stronger effect size in the resistant variants (11.5 and 43.7%, respectively) compared to their less-resistant counterparts (6.1 and 15.3%). A significant association with connectivity was also found for the less-resistant E. coli, although with a much smaller effect size (2.6%).
 
 Ward characteristics only weakly predicted infection incidence compared to antibiotic use and connectivity. Ward type, or patient fragility, predicted incidence in several variants, although with large uncertainty margins. Interestingly, associations of incidence with intensive care and blood cancer units were negative (in E. coli, 3GC-resistant E. coli, 3GC-resistant E. cloacae, and MRSA) while associations with progressive care units were positive (in 3GC-resistant K. pneumoniae and P. aeruginosa). Ward size did not predict incidence in any variant.
 
-## Do associations between antibiotic use and resistance represent AMR selection?
+### Do associations between antibiotic use and resistance represent AMR selection?
 
 The metapopulation models illustrated in Figure 1 identified positive associations between total antibiotic use in hospital wards and increased incidences of infections with the more resistant variants of several species. Yet, a correlation with AMR does not necessarily establish a selective role of antibiotics. For instance, a high incidence of resistant infections in a ward can increase antibiotic use through prolonged or combined therapies (Schechner et al., 2013). Conversely, the prescription of antibiotics always inactive against a variant is unlikely to be motivated by this variant’s incidence and such antibiotics are more likely to provide a direct benefit to the resistant variant. Based on this rationale, we propose stringent criteria to identify whether an association between the use of an antibiotic and the incidence of a variant possibly reflects AMR selection (hereafter, possibly selective associations; see Materials and methods). Under the hypothesis that antibiotic use is either a consequence of AMR or spuriously correlated with AMR, the strength of an association between the use of an antibiotic and the incidence of a variant should not depend on whether the association fulfills the criteria for possible selection.
 
@@ -82,9 +367,9 @@ To test this hypothesis, we identified possibly selective associations in our da
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig2-v2.jpg)
 
-**Figure 2.:** 2 pathogen variants.Shown are the predicted percent changes in incidence (points) with 95% confidence interval (bars) for each variant in each ward (n = 357) for every doubling in the consumption volume of 11 antibiotic groups, based on multivariable quasi-Poisson regression models of the incidence of each variant in each ward (n = 357) that included the connectivity and incidence control covariates (see Materials and methods). Associations classified as possibly selective (n = 19) are indicated by a ‘PS’ mark. Models involving A. baumannii and E. faecium, which exhibited larger 95% confidence intervals due to smaller incidence of the resistant variants, are shown with separate scales (panel b) for readability. (c), possibly selective associations had higher coefficients compared to other associations. The center line indicates the median; box limits indicate the upper and lower quartiles; whiskers indicate the 1.5x interquartile range; points indicate the individual coefficients. **p<0.01, two-sided Mann–Whitney U-test. Acronyms of pathogen variants and antibiotics are listed in Tables 1 and 2, respectively.
+**Figure 2.:** Shown are the predicted percent changes in incidence (points) with 95% confidence interval (bars) for each variant in each ward (n = 357) for every doubling in the consumption volume of 11 antibiotic groups, based on multivariable quasi-Poisson regression models of the incidence of each variant in each ward (n = 357) that included the connectivity and incidence control covariates (see Materials and methods). Associations classified as possibly selective (n = 19) are indicated by a ‘PS’ mark. Models involving A. baumannii and E. faecium, which exhibited larger 95% confidence intervals due to smaller incidence of the resistant variants, are shown with separate scales (panel b) for readability. (c), possibly selective associations had higher coefficients compared to other associations. The center line indicates the median; box limits indicate the upper and lower quartiles; whiskers indicate the 1.5x interquartile range; points indicate the individual coefficients. **p<0.01, two-sided Mann–Whitney U-test. Acronyms of pathogen variants and antibiotics are listed in Tables 1 and 2, respectively.
 
-## Quantifying the drivers of resistance to first-line sepsis therapy
+### Quantifying the drivers of resistance to first-line sepsis therapy
 
 From a clinical standpoint, the most immediate consequence of AMR is the failure to control sepsis with empirical antibiotics, mainly carbapenems and the non-antipseudomonal 3GCs cefotaxime and ceftriaxone. Because such failure can equally result from acquired or intrinsic resistance, the incidence of intrinsically resistant pathogens such as E. faecium is of equal clinical importance as that of pathogen variants with acquired resistance mechanisms. To examine the impact of antibiotics on both intrinsic and acquired resistance, we modeled the cumulative incidence of infections with 3GC- and/or carbapenem-resistant variants of the selected pathogens (see Materials and methods).
 
@@ -92,9 +377,98 @@ In these models, antibiotic use was the strongest predictor of the incidence of 
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/54795/elife-54795-fig3-v2.jpg)
 
-**Figure 3.:** rd-generation cepalosporin- or carbapenem-resistant ESKAPE2 pathogen variants.(a) Predicted percent change in incidence (points) with the 95% confidence interval (bars) of all 3GCR and CR infections for every doubling of antibiotic use, connectivity (estimated no. of patients infected with the same variant entering the ward), ward size (no. of beds); and ward type, based on quasi-Poisson regression models of the pooled incidence of 3GCR and CR infections in each ward (n = 357) that included the incidence control covariate (see Materials and methods). (b) Predicted incidence and 95% confidence bands of infections with 3GCR and CR pathogen variants depending on the consumption of CTX/CRO, IPM/MEM, and TZP, in models that included connectivity, the incidence control, and the consumption of 8 other antibiotic groups as covariates. (c) Consumption patterns of CTX/CRO, IPM/MEM, and TZP per ward in the hospital network. Variants classified as 3GCR were 3GCREC, 3GCRKP, CRKP, 3GCREB, CREB, PA, CRPA, AB, CRAB, EF, VREF, and MRSA; the CR category included CREC, CRKP, CREB, CRPA, CRAB, EF, VREF, and MRSA. Acronyms of pathogen variants and antibiotics are listed in Tables 1 and 2, respectively.
+**Figure 3.:** (a) Predicted percent change in incidence (points) with the 95% confidence interval (bars) of all 3GCR and CR infections for every doubling of antibiotic use, connectivity (estimated no. of patients infected with the same variant entering the ward), ward size (no. of beds); and ward type, based on quasi-Poisson regression models of the pooled incidence of 3GCR and CR infections in each ward (n = 357) that included the incidence control covariate (see Materials and methods). (b) Predicted incidence and 95% confidence bands of infections with 3GCR and CR pathogen variants depending on the consumption of CTX/CRO, IPM/MEM, and TZP, in models that included connectivity, the incidence control, and the consumption of 8 other antibiotic groups as covariates. (c) Consumption patterns of CTX/CRO, IPM/MEM, and TZP per ward in the hospital network. Variants classified as 3GCR were 3GCREC, 3GCRKP, CRKP, 3GCREB, CREB, PA, CRPA, AB, CRAB, EF, VREF, and MRSA; the CR category included CREC, CRKP, CREB, CRPA, CRAB, EF, VREF, and MRSA. Acronyms of pathogen variants and antibiotics are listed in Tables 1 and 2, respectively.
 
 To identify the antibiotics whose use was most strongly associated with global carbapenem and cefotaxime-ceftriaxone resistance, we examined the effect of replacing the total antibiotic use in our models with individual antibiotic classes, similar to Figure 2 models. Besides the consumption of cefotaxime-ceftriaxone and carbapenems, the consumption of piperacillin-tazobactam was a strong predictor of the incidence of both 3GC- or carbapenem-resistant infections (Table 3). To visualize the independent associations of incidence with the use of cefotaxime-ceftriaxone, carbapenems and piperacillin-tazobactam, we plotted the average ward-level infection incidence predicted by variations in the consumption volumes in models including the connectivity and incidence control covariates (Figure 3b). The incidence of 3GC-resistant infections was predicted by the consumption of cefotaxime-ceftriaxone (4.8% increase, 95% CI, 1.5 to 8.2%) but not carbapenems (1.4% increase, 95% CI, −1.7 to 4.6%). In the same vein, the use of carbapenems, but not 3GCs, predicted the incidence of carbapenem-resistant infections, although with a wide uncertainty margin (5.1% increase, 95% CI, −0.6 to 11.1%). Strikingly, the use of piperacillin-tazobactam predicted the incidence of both 3GC-resistant (5.9% increase, 95% CI, 2.9 to 9.0%) and carbapenem-resistant infections (10.3% increase, 95% CI, 5.0 to 16.0%). In both models, the amplitude of the piperacillin-tazobactam coefficient outweighed those of all other antibiotics (Table 3). Overall, these results indicate a specific association of cefotaxime-ceftriaxone and, to a slightly lesser extent, carbapenem use with resistance to the same antibiotic group, but not other groups, and identify a major role of piperacillin-tazobactam consumption in predicting the incidence of both 3GC- and carbapenem-resistant infections. To propose a unified ranking of the population-level impact of antibiotics on 3GC and carbapenem resistance, a final model was constructed by pooling all 3GC- and carbapenem-resistant variants together (Table 3). In this model, piperacillin-tazobactam and cefotaxime-ceftriaxone had the largest positive coefficients while 1GC/2GC and coamoxiclav had the largest negative coefficients (Table 3).
+
+**Table 3.**
+ Associations between the consumption volume of 11 antibiotics and the cumulative incidence of 3GC- and/or carbapenem-resistant infections in 357 wards.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3">Predicted percent change in incidence (95% CI) per doubling of consumption volume</th>
+    </tr>
+    <tr>
+      <th>Antibiotics</th>
+      <th>3GCR incidence model</th>
+      <th>CR incidence model</th>
+      <th>3GCR or CR incidence model</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TZP</td>
+      <td>5.9 (2.9, 9.0)</td>
+      <td>10.3 (5.0, 16.0)</td>
+      <td>6.1 (3.1, 9.2)</td>
+    </tr>
+    <tr>
+      <td>CTX/CRO</td>
+      <td>4.8 (1.5, 8.2)</td>
+      <td>1.8 (-3.7, 7.6)</td>
+      <td>4.6 (1.4, 8.0)</td>
+    </tr>
+    <tr>
+      <td>AMX</td>
+      <td>2.7 (-1.5, 7.0)</td>
+      <td>3.6 (-3.4, 11.2)</td>
+      <td>2.7 (-1.4, 7.0)</td>
+    </tr>
+    <tr>
+      <td>CTZ/FEP</td>
+      <td>1.7 (-1.0, 4.5)</td>
+      <td>3.3 (-1.5, 8.3)</td>
+      <td>1.6 (-1.1, 4.4)</td>
+    </tr>
+    <tr>
+      <td>IPM/MEM</td>
+      <td>1.4 (-1.8, 4.7)</td>
+      <td>5.1 (-0.6, 11.1)</td>
+      <td>1.5 (-1.6, 4.8)</td>
+    </tr>
+    <tr>
+      <td>FQ</td>
+      <td>0.5 (-1.9, 2.9)</td>
+      <td>−1.2 (-5.2, 3.0)</td>
+      <td>0.4 (-1.9, 2.8)</td>
+    </tr>
+    <tr>
+      <td>OXA</td>
+      <td>−0.6 (-2.2, 1.1)</td>
+      <td>−2.0 (-4.6, 0.7)</td>
+      <td>−0.6 (-2.2, 1.0)</td>
+    </tr>
+    <tr>
+      <td>AMIN</td>
+      <td>−1.7 (-4.3, 0.9)</td>
+      <td>−1.1 (-5.4, 3.6)</td>
+      <td>−1.7 (-4.3, 0.9)</td>
+    </tr>
+    <tr>
+      <td>VAN/TEC</td>
+      <td>−2.3 (-4.9, 0.4)</td>
+      <td>−3.8 (-8.3, 0.9)</td>
+      <td>−2.3 (-4.9, 0.5)</td>
+    </tr>
+    <tr>
+      <td>1GC/2GC</td>
+      <td>−2.1 (-4.0,–0.2)</td>
+      <td>−2.3 (-5.4, 1.0)</td>
+      <td>−2.1 (-4.0,–0.3)</td>
+    </tr>
+    <tr>
+      <td>AMC</td>
+      <td>−4.1 (-7.0,–1.1)</td>
+      <td>−5.8 (-10.6,–0.7)</td>
+      <td>−4.1 (-7.0,–1.1)</td>
+    </tr>
+  </tbody>
+</table>
+
+_NOTE. a Percent change was estimated from multivariable quasi-Poisson regression models that included the connectivity and the incidence control covariates (see Materials and methods). 3GCR, 3rd-generation cephalosporins-resistant infections; CR, carbapenem-resistant infections. Acronyms of antibiotics are listed in Table 2._
 
 ## Discussion
 
@@ -116,29 +490,55 @@ To conclude, the modeling of the incidence of infections with seven major bacter
 
 ## Materials and methods
 
-## Data collection and compilation
+### Data collection and compilation
 
 We obtained data on infection incidence from the information system of the Institut des Agents Infectieux, the clinical microbiology laboratory of the Hospices Civils de Lyon, a group of university hospitals serving the Greater Lyon urban area (~1.4 million inhabitants) of France. For each ward from October 1st, 2016 to September 30th, 2017, we extracted the number of clinical samples, after exclusion of screening samples, positive for at least one of the ESKAPE2 species (as determined using Vitek MS MALDI-ToF identification, bioMérieux), falling into one of the resistance variant categories defined in Table 1. Resistance was based on available results for susceptibility to, where applicable, ceftriaxone, cefotaxime, ceftazidime, cefepime, imipenem, meropenem, oxacillin, and vancomycin. Samples were deduplicated per patient, ward, and pathogen variant, so that only the first sample positive for the same variant in the same ward was considered for each patient. Patients positive for multiple variants and/or sampled from multiple wards were considered as multiple, distinct infection episodes. Antibiotic use in defined daily doses (ddd) of all systemic antibacterial drugs (ATC classification term J01), as well as of specific (groups of) molecules defined in Table 2, were extracted from the pharmacy department information system. For each pair of wards, the number of patient transfers was extracted from the hospital information system along with, for each ward, the number of beds, the type of medical activity and the number of patient admissions. Because of the aggregated nature of the data, informed consent was not sought, in accordance with French regulations. Our main response variable was the number of patients per ward infected with each pathogen variant, expressed as incidence over 1y.
 
-## Controlling for microbiological sampling patterns
+### Controlling for microbiological sampling patterns
 
 The estimation of a causal effect between antibiotic use and the incidence of infections with a given pathogen variant is biased by variations in the distribution of infections across wards, because this distribution influences both antibiotic prescriptions and microbiological sampling efforts. A causal network representation of this situation is shown in Figure 1—figure supplement 2. The distribution of infections is difficult to determine and to represent as a model covariate, preventing its direct inclusion in our models. To circumvent this issue, the unrepresentable distribution of infections was replaced with a proxy variable that we called the incidence control, designed to capture variations of microbiological sampling frequencies and of the sampled anatomic sites (e.g. urinary vs. respiratory tract) across wards. Of note, ward size and type were also assumed to correlate with the infection distribution and to contribute to the proxy adjustment. However, the inclusion of ward size and type had a negligible impact on model fit compared to the incidence control value, suggesting that this latter variable captures most of the signal.
 
 The incidence control was defined as the expected incidence of a pathogen variant explained by microbiological sampling alone, under the assumption that the pathogen incidence is conditionally independent of the ward given the sampled anatomic site. Anatomic sites were assigned to seven site groups, namely, skin and soft tissues, respiratory tract, urinary tract, digestive tract, vascular access devices, sterile sites (such as cerebrospinal fluid and peripheral blood cultures) and other sites.
 
-The incidence control was computed as follows for each pathogen variant in each ward. In this section, wards are indexed by i=1,…, 357, groups of anatomical sites are indexed by j=1, …,7, and pathogen variants are indexed by k=1,…,17. For conciseness, we introduce the special case k=0 to denote a sample not positive for any of the considered pathogen variants. Contrary to the incidence calculation described in the previous section, all samples were considered without deduplication to account for how repeated sampling increases the likelihood of pathogen detection.
+The incidence control was computed as follows for each pathogen variant in each ward. In this section, wards are indexed by $i=1,…,357$, groups of anatomical sites are indexed by $j=1,…,7$, and pathogen variants are indexed by $k=1,…,17$. For conciseness, we introduce the special case $k=0$ to denote a sample not positive for any of the considered pathogen variants. Contrary to the incidence calculation described in the previous section, all samples were considered without deduplication to account for how repeated sampling increases the likelihood of pathogen detection.
 
-First, for each pathogen variant k and group of anatomic sites j, we computed the average probability of variant detection aggregated for all wards in the network asPVariant=kSite=j=∑i=1357NVariant=k, Site=j, Ward=i∑i=1357NWard=i, Site=jwhere NVariant=k, Site=j, Ward=i is the number of samples in ward i taken from site j positive for the variant k (or, if k=0, negative for all variants) and the denominator denotes all samples taken irrespective of their result. For simplicity, we assumed independence between the pathogen variants isolated from a same sample and between samples collected from a same patient. Of note, most patients (n = 22,646 / 26,064; 86.9%) were sampled only once.
+First, for each pathogen variant $k$ and group of anatomic sites $j$, we computed the average probability of variant detection aggregated for all wards in the network as
 
-To account for repeated sampling, we considered the probability that M samples from a site j in a patient remained negative for pathogen variant k,P(Variant≠k|M,Site=j)= [1−P(Variant=k|Site=j)]M.
+$$
+PVariant=kSite=j=\frac{\sumi=1357NVariant=k,Site=j,Ward=i}{\sumi=1357NWard=i,Site=j}
+$$
 
-Sampling from multiple sites was represented using the vector notation M={M1,…,M7} to denote the respective numbers of samples taken from site groups 1 to 7. For instance, M={1,0,2,0,0,0,0} denotes 1 skin or soft tissue sample and 2 urinary samples. Using this notation, the probability that all samples from all sites remained negative is,P(Variant≠k|M)=∏j=17P(Variant≠k|Mj,Site=j),and the probability that at least one sample was positive for variant k is,PVariant=kM=1-PVariant≠kM.
+where $NVariant=k,Site=j,Ward=i$ is the number of samples in ward $i$ taken from site $j$ positive for the variant $k$ (or, if $k=0$, negative for all variants) and the denominator denotes all samples taken irrespective of their result. For simplicity, we assumed independence between the pathogen variants isolated from a same sample and between samples collected from a same patient. Of note, most patients (n = 22,646 / 26,064; 86.9%) were sampled only once.
 
-This relationship was used to calculate the expected incidence of variant k, that is the number of patients with at least one sample positive for k, by considering in each ward i the number N(i,M) of patients with the same number of samples from each site M and the probability of being tested positive given M. The expected incidence of variant k in ward i was then defined as,N(Variant=k|Ward=i)=∑M∈ΩN(i,M)×P(Variant=k|M)where Ω denotes the set of possible sample combinations.
+To account for repeated sampling, we considered the probability that $M$ samples from a site $j$ in a patient remained negative for pathogen variant $k$,
+
+$$
+P(Variant\neqk|M,Site=j)= [1−P(Variant=k|Site=j)]^{M}.
+$$
+
+Sampling from multiple sites was represented using the vector notation $M={M_{1},…,M_{7}}$ to denote the respective numbers of samples taken from site groups 1 to 7. For instance, $M={1,0,2,0,0,0,0}$ denotes 1 skin or soft tissue sample and 2 urinary samples. Using this notation, the probability that all samples from all sites remained negative is,
+
+$$
+P(Variant\neqk|M)=\prodj=17P(Variant\neqk|M_{j},Site=j),
+$$
+
+and the probability that at least one sample was positive for variant $k$ is,
+
+$$
+PVariant=kM=1-PVariant\neqkM.
+$$
+
+This relationship was used to calculate the expected incidence of variant $k$, that is the number of patients with at least one sample positive for $k$, by considering in each ward $i$ the number $N(i,M)$ of patients with the same number of samples from each site $M$ and the probability of being tested positive given $M$. The expected incidence of variant $k$ in ward $i$ was then defined as,
+
+$$
+N(Variant=k|Ward=i)=\sumM\inΩN(i,M)\timesP(Variant=k|M)
+$$
+
+where $Ω$ denotes the set of possible sample combinations.
 
 Clearly, variations in the incidence control value between wards depend only on the number and sites of microbiological samples taken, thus reflecting the incidence and types of bacterial infections at ward-level independent of between-ward variations of pathogen community structure. Under our assumption that the incidence control is a valid proxy to the unrepresentable distribution of infections in each ward, the incidence control should correlate both with antibiotic use and the incidence of infections. Bivariate analyses confirmed that the incidence control correlated with the observed cumulative incidence of all bacteria (R²=0.96, 95% CI, 0.95 to 0.96, Figure 1—figure supplement 3) and, to a lesser extent, with the total antibiotic use (R²=0.34, 95% CI, 0.25 to 0.40, Figure 1—figure supplement 4). These correlations remained substantial for most pathogen variants and specific antibiotics. The incidence control was added as an adjustment covariate in all models predicting infection incidence. The adjusted models, thus, predicted the incidence of infections in excess of what would be expected based on variations in sampling intensity alone.
 
-## Connectivity and other ward characteristics
+### Connectivity and other ward characteristics
 
 In ecology, habitat quality refers to the resources and conditions that allow individuals and populations to persist in a location (Hall et al., 1997), such as food or cover from predators (Johnson, 2005). We described the habitat quality of hospital wards for bacterial pathogens using explanatory variables adapted from Hanski’s metapopulation models (Hanski, 1998; Hanski, 1994), namely patch size and connectivity, along with additional variables capturing patient fragility and antibiotic selection pressure. We considered each ward within the hospital system as a distinct habitat patch, i. We used the number of beds both as a measure of patch size (capturing the number of patients available for colonization) and as a proxy for contact opportunities between patients within the same ward.
 
@@ -146,24 +546,30 @@ The connectivity estimate was implemented as a proxy to the unobservable number 
 
 Along with size and connectivity, wards were characterized by ward type based on patient fragility, and antibiotic consumption. Ward type was coded as a categorical variable with the following three levels: general wards, intermediate (progressive) care units, and intensive care and blood cancer units. Antibiotic use was normalized by dividing by the number of beds in each ward and expressed in ddd/bed/y.
 
-## Statistical analysis
+### Statistical analysis
 
 The statistical unit was the individual ward (n = 357) in all analyses. We used the asymptotic Simpson index (Simpson, 1949), also known as the Hunter-Gaston index (Hunter and Gaston, 1988), to determine the probability that two random isolates of a given variant were isolated in the same ward or that two random doses of a given antibiotic were delivered in the same ward. The index is defined as [∑ni (ni-1)]/[N (N-1)] where ni is the number of infection episodes (or antibiotic doses) detected (or delivered) in ward i and Ni = ∑ni is the total number of infection episodes (or antibiotic doses). In ecology, the Simpson index is typically used to measure biodiversity by estimating the probability that two individuals from a sample belong to the same species (Simpson, 1949). Here, we use this index to examine the distribution of sampling locations relative to the taxa, measuring the probability that two infection episodes occur, or two antibiotic doses are consumed, in the same ward. Hence, we used the term ‘concentration index’ to avoid confusion with a diversity measure. The iNext R package was used to determine bootstrap-based 95% confidence intervals of the concentration index (Hsieh et al., 2016).
 
-Models of infection incidence were constructed using multivariable quasi-Poisson regression of the formE(Incidence |x)=exp⁡(Intercept+β1x1+β2x2+…), Var(Incidence)=θ E(Incidence |x)where E(⋅) denotes expectation, x is the vector of predictors, such as antibiotic consumptions, the β’s are model coefficients, Var(⋅) denotes variance and θ is the overdispersion parameter of the quasi-Poisson model. The overdispersion parameter is used to relax the Poisson assumption of equality of the expectation and variance of the response variable. We used the quasi-Poisson distribution because we found evidence of both under- and overdispersion, as evidenced by fitted quasi-Poisson dispersion parameters ranging from 0.24 (strong underdispersion, found for carbapenem-resistant A. baumannii in Figure 1 model) to 2.5 (moderate overdispersion, found for less-resistant E. faecium) (Supplementary file 1 Table 1b). We favored the quasi-Poisson model over the alternative, negative binomial model because the latter gives greater weight to smaller sites, whereas the former gives greater weight to the larger sites (Ver Hoef and Boveng, 2007). In our application, greater weight should be given to wards with greater incidence rather than to those with less.
+Models of infection incidence were constructed using multivariable quasi-Poisson regression of the form
+
+$$
+E(Incidence |x)=exp⁡(Intercept+\beta_{1}x_{1}+\beta_{2}x_{2}+…), Var(Incidence)=\theta E(Incidence |x)
+$$
+
+where $E(⋅)$ denotes expectation, $x$ is the vector of predictors, such as antibiotic consumptions, the $\beta$’s are model coefficients, $Var(⋅)$ denotes variance and $\theta$ is the overdispersion parameter of the quasi-Poisson model. The overdispersion parameter is used to relax the Poisson assumption of equality of the expectation and variance of the response variable. We used the quasi-Poisson distribution because we found evidence of both under- and overdispersion, as evidenced by fitted quasi-Poisson dispersion parameters ranging from 0.24 (strong underdispersion, found for carbapenem-resistant A. baumannii in Figure 1 model) to 2.5 (moderate overdispersion, found for less-resistant E. faecium) (Supplementary file 1 Table 1b). We favored the quasi-Poisson model over the alternative, negative binomial model because the latter gives greater weight to smaller sites, whereas the former gives greater weight to the larger sites (Ver Hoef and Boveng, 2007). In our application, greater weight should be given to wards with greater incidence rather than to those with less.
 
 We constructed a model for each variant. The response variable was the deduplicated patient counts. All non-categorical explanatory variables including the incidence control, ward size, connectivity and antibiotic use were log2-transformed before further analyses. To avoid negative infinity values from this transformation, all zeroes were first converted to half the minimum non-zero value. This transformation was associated with better model fit (using the model structure of Figure 1), in terms of Akaike information criterion (with Poisson distribution), compared with: (1) replacing zeroes with the minimum non-zero value before taking logs; (2) adding one to zero values before taking logs; or (3) avoiding log transformation. The log2 transformed data were used for all subsequent analyses.
 
-To ease interpretation of model coefficients, we converted the raw coefficients β^ from all models to percent changes in infection incidence, equal to 100×(eβ^ -1). All analyses used R software version 3.6.0.
+To ease interpretation of model coefficients, we converted the raw coefficients $\beta^$ from all models to percent changes in infection incidence, equal to $100\times(e^{\beta^}-1)$. All analyses used R software version 3.6.0.
 
-## Possibly selective associations between antibiotic use and resistance
+### Possibly selective associations between antibiotic use and resistance
 
 We examined criteria to identify a priori possibly selective associations between antibiotic use and resistance. The criteria were based on medical and biological considerations, namely, that antibiotics inactive against a variant are unlikely to be prescribed in response to this variant’s prevalence; and that antibiotics are most likely to select for a variant when resistance provides a specific advantage, hence, when the variant is not resistant to more potent antibiotics (e.g., CTX/CRO is more likely to select for PA than for CRPA in which carbapenem resistance provides no additional benefit under CTX/CRO pressure). This rationale led to the following criteria: (1) the variant is always resistant to the antibiotics of interest; (2) the variant is not resistant to antibiotics more potent (in terms of spectrum or efficacy) than the antibiotics of interest; and (3) the antibiotics of interest can be plausibly used against the variant in empirical therapy. A total of 19 associations fulfilled the criteria for possibly selective associations: 3GCREC with CTX/CRO; CREC with IPM/MEM; KP with AMX; 3GCRKP with CTX/CRO; CRKP with IPM/MEM; EB with AMC; C3GREB with CTX/CRO and TZP; CREB with IPM/MEM; PA with CTX/CRO; CRPA with IPM/MEM; SA with AMX; MRSA with C1G/C2G, OXA and AMC; AB with CTX/CRO; CRAB with IPM/MEM; EF with CTX/CRO; and VREF with VAN/TEC. Of note, the associations not fulfilling the criteria for possible selection can be interpreted as negative controls in our models, and their coefficients are expected to be distributed around zero (null distribution) in the absence of residual confounding. In line with this interpretation, the coefficients of most of the negative control associations followed a near-zero-centered distribution (Figure 2c), suggesting that residual confounding was negligible in the adjusted models.
 
-## Pooled analysis of CTX/CRO- and IPM/MEM-resistant variants
+### Pooled analysis of CTX/CRO- and IPM/MEM-resistant variants
 
 To model the cumulative incidences of 3GC- and carbapenem-resistant infections, pathogen variants were pooled into resistance categories. When resistance to CTX/CRO or IPM/MEM was not determined by design (such as 3GC resistance in 3GCREC) or by intrinsic resistance (such as 3GC resistance in E. faecium), variants were classified as resistant when the proportion of resistance in our setting was above 80%. This less-stringent resistance criterion, compared to the criterion used to determine possibly selective associations, was chosen to avoid the exclusion of variants that are mostly resistant to an antibiotic group, which would bias pooled analyses. Applying the 80% threshold for the proportion of resistance led to classifying CRKP and CREB as 3GC-resistant (91% and 93% 3GC resistance, respectively) but not CREC (61% 3GC resistance); and EF and VREF as carbapenem-resistant (84 and 100% carbapenem resistance, respectively, inferred from ampicillin resistance [Weinstein, 2001]). Overall, the 3GCR category included 3GCREC, 3GCRKP, CRKP, 3GCREB, CREB, PA, CRPA, AB, CRAB, EF, VREF, and MRSA; and the CR category included CREC, CRKP, CREB, CRPA, CRAB, EF, VREF, and MRSA.
 
-## Data and software code availability
+### Data and software code availability
 
 All data and software code that support the findings of this study are available at: Shapiro, 2020, https://github.com/rasigadelab/metapop (copy archived at https://github.com/elifesciences-publications/metapop).

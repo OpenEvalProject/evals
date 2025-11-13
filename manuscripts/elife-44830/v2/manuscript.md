@@ -25,7 +25,7 @@
 
 ## Abstract
 
-10.7554/eLife.44830.001 Adult neurogenesis in the olfactory bulb (OB) is considered as a competition in which neurons scramble during a critical selection period for integration and survival. Moreover, newborn neurons are thought to replace pre-existing ones that die. Despite indirect evidence supporting this model, systematic in vivo observations are still scarce. We used two-photon in vivo imaging to study neuronal integration and survival. We show that loss of new neurons in the OB after arrival at terminal positions occurs only at low levels. Moreover, long-term observations showed that no substantial cell death occurred at later stages. Neuronal death was induced by standard doses of thymidine analogs, but disappeared when low doses were used. Finally, we demonstrate that the OB grows throughout life. This shows that neuronal selection during OB-neurogenesis does not occur after neurons reached stable positions. Moreover, this suggests that OB neurogenesis does not represent neuronal turnover but lifelong neuronal addition.
+Adult neurogenesis in the olfactory bulb (OB) is considered as a competition in which neurons scramble during a critical selection period for integration and survival. Moreover, newborn neurons are thought to replace pre-existing ones that die. Despite indirect evidence supporting this model, systematic in vivo observations are still scarce. We used two-photon in vivo imaging to study neuronal integration and survival. We show that loss of new neurons in the OB after arrival at terminal positions occurs only at low levels. Moreover, long-term observations showed that no substantial cell death occurred at later stages. Neuronal death was induced by standard doses of thymidine analogs, but disappeared when low doses were used. Finally, we demonstrate that the OB grows throughout life. This shows that neuronal selection during OB-neurogenesis does not occur after neurons reached stable positions. Moreover, this suggests that OB neurogenesis does not represent neuronal turnover but lifelong neuronal addition.
 
 ## Introduction
 
@@ -45,23 +45,55 @@ Here, we combined genetic birthdating and lineage tracing with long term in vivo
 
 ## Results
 
-## Long-term in vivo imaging of postnatal and adult born OB neurons
+### Long-term in vivo imaging of postnatal and adult born OB neurons
 
 We used two-photon imaging to directly study the integration and survival of perinatal and adult born OB neurons at high spatial and temporal resolution in the living animal. We first focused on the perinatal period, when most OB interneurons are generated (Batista-Brito et al., 2008). Postnatal in vivo brain electroporation of the dorsal ventricular zone targets stem cell populations that generate neurons for the superficial layers of the OB (Figure 1a,b; de Chevigny et al., 2012b), which can be reliably reached by two-photon microscopy (Adam and Mizrahi, 2011). We used this dorsal targeting approach to introduce a CRE-expression plasmid into R26-RFP reporter mice (Figure 1a). Three weeks later, OB-labeled neurons comprised a mixed population of 6% tyrosine hydroxylase expressing dopaminergic/GABAergic neurons, 12% calretinin positive purely GABAergic neurons, 22% other GABAergic PGN (Figure 1b) and 60% mostly superficially positioned granule cells (GC).
+
+![Figure 1.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig1-v2.jpg)
+
+**Figure 1.:** (a) Induction protocols and imaging timeline. In perinatal animals, a CRE-expression plasmid was introduced in the dorsal neural stem cell compartment of Rosa-RFP mice using postnatal electroporation. To label neurons in adults, Nestin-CreERT2 animals were bred to Rosa-RFP mice and induced with tamoxifen at 2 months of age. Thin skull preparation was routinely performed one-week post induction. A weekly imaging scheme was implemented over the critical period and up to 5 months. (b) Postnatal in vivo brain electroporation at P1-P4 leads at three wpi to the appearance of various interneuron types, including TH and CR expressing subtypes, in the superficial GCL and the GL layers of the OB. (c) In vivo microscopy setup. Mice were imaged with the head fixed to the two-photon microscope. Animals could move on a treadmill but rarely did so during imaging sessions. Thin skull preparation allowed high-resolution imaging on a weekly basis. (d) Example of an image Z-stack showing 25 individually identified neurons from 3, 5, and 8 weeks after CRE electroporation. Note that neurons 14 and 17 are lost (circles) while several neurons are added (arrowheads). (e, f, g) High-resolution images of weekly observations of three groups of neurons highlighted in d. Cell substructures, dendrites and minor cell displacements can be followed over time. Scale bar: 200 μm in b, 50 μm in d, 30 μm in e, f, g.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Immunostaining for the microglial marker iba1 demonstrates the absence of a detectable microglia reaction at 1 day post-surgery. (b) Comparison of GFAP staining in the OB. Control and window carrying OB are indistinguishable at 1 week post-surgery. (c) Immunostaining for the microglial marker iba1 demonstrates the absence of a detectable microglia reaction at 1 week post-surgery. Scale bar: 10 μm in a, 50 μm in b,c.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (a) XZ projection of the OB showing that the PGL, EPL and the superficial GCL can be reached through a thin skull preparation. (b) Example of Z-projection identifying individual granule neurons between 3 and 10 weeks post induction in perinatal mice. The first cohort is numbered. Additional neurons of later cohorts appeared in the observation window over successive imaging sessions (arrowheads). Scale bar: 50 μm in a, 30 μm b.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** Scale bar: 50 μm in a, 20 μm b.
 
 An adaptation of the reinforced thin skull method allowed for frequent and long-term imaging of awake mice while perturbing the physiology of the OB only minimally (Drew et al., 2010). In agreement with previous observations (Xu et al., 2007), there was no detectable astroglia reaction or accumulation of microglia after thinning and window implantation (Figure 1—figure supplement 1).
 
 Three weeks after electroporation, when skull growth was sufficiently advanced, thin-skull preparation was performed and populations of individually identified neurons in the glomerular layer (GL; Figure 1d–g) and the granule cell layer (GCL, Figure 1—figure supplement 2) were imaged in awake animals at high resolution over the following weeks and months. All analyzed neurons were individually identified in Z-stacks (Video 1) based on relative position and morphology. Neurons were numbered and revisited weekly over the next months (Figure 1d–f; Video 1; Figure 1—figure supplement 3a,b). After identification of the first cohort, smaller numbers of additional neurons appeared permanently in the observation window as a consequence of ongoing neurogenesis (arrowheads in Figure 1d, 5wpi). These were also numbered and followed and used for long-term analyses (Figure 6). Neurons in the observation field showed stable relative positions over time (Figure 1d); however, in some cases, minor positional adjustment were observed that could be followed over subsequent imaging sessions (Figure 1d,f). Generally, resolution was sufficient to observe even minor changes in dendritic organization of neurons over time (see neuron no. 7 in Figure 1d,f).
 
-## In vivo observation of perinatally born neurons
+![Video 1.](https://cdn.elifesciences.org/articles/44830/elife-44830-video1.mp4.jpg)
+
+**Video 1.:** This stack was the basis for the projection presented in Figure 1d.
+
+### In vivo observation of perinatally born neurons
 
 Based on this direct and systematic imaging approach, we first focused on perinatally born neurons survival during the proposed critical selection period, thus until 8 weeks after their generation at the ventricles (Mandairon et al., 2006). Neurons that were present during the first observation time point (3 weeks after electroporation of the respective stem cells) were followed over the next 5 weeks. Among 755 periglomerular neurons (PGN) in 11 mice only 5.1% were lost over the proposed critical period (Figure 2a, see circles for lost cells no. 14 and 17 in Figure 1d,g). The percentage of lost neurons was very similar between individual animals and was independent of the density of labeled cells in the observation window (between 18 and 100 neurons; Figure 2a).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig2-v2.jpg)
+
+**Figure 2.:** (a) Tracing of perinatally induced timed neuron first cohorts (755 neurons) in 11 mice from 3 to 8 wpi. (b) Tracing of perinatally induced first cohorts of granule cells (178 cells in six mice) during the proposed critical period. (c) Tracing of the first cohort of periglomerular neurons in eight adult animals (538 neurons) after induction with tamoxifen injection at 2 months.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (a, b) Coronal section through the OB of an adult Nestin-Cre-ERT2/Rosa-RFP mouse 6 weeks after tamoxifen injection at 2 months of age stained for the OB neuron subtype markers TH and Calretinin. (c, d) Seven days post induction (dpi) large amounts of OB neurons in the OB express the immature neuronal marker doublecortin (dcx). At 14 dpi individual cells in the GCL still express dcx. Scale bar: 300 μm in a, 30 μm in c, 10 μm in d.
+
 Next, we investigated newborn granule cells (GCs) in the underlying GCL in six mice with particularly high-quality and stable window preparations (Figure 1—figure supplement 2). Out of 178 RFP positive neurons observed between 3 and 8 weeks after their birth not a single cell disappeared over the subsequent imaging sessions (Figure 2b). We conclude that perinatally generated OB interneurons in both, the GL and the GCL are rarely eliminated after arrival in terminal positions.
 
-## In vivo observation of adult born neurons
+### In vivo observation of adult born neurons
 
 We then investigated the stability of adult born neurons during the critical selection period. First, we focused on PGN that can be reliably imaged after thin skull preparation. As in vivo electroporation is inefficient in adult mice, we crossed the Rosa-RFP line with Nestin Cre-ERT2 mice (Lagace et al., 2007) and induced a heterogeneous cohort of labeled newborn neurons by tamoxifen injection at 2 months of age (Ninkovic et al., 2007) (Figure 2—figure supplement 1a,b). One week after induction virtually all RFP-positive cells in the RMS and about 30% in the OB layers expressed the immature neuron marker doublecortin (Figure 2—figure supplement 1c,d). Reinforced thin skull preparation was routinely performed at 1 week post-induction (wpi). Weekly observations of individually identified PGN in the GL were performed as described above (Video 2, Figure 1—figure supplement 3c,d). Analyses of 538 periglomerular neurons of the first cohort in eight animals showed that only 1.5% disappeared over the 7 weeks period after their first identification (Figure 2c).
+
+![Video 2.](https://cdn.elifesciences.org/articles/44830/elife-44830-video2.mp4.jpg)
+
+**Video 2.:** This stack was the basis for the projection presented in Extended Data Figure 1—figure supplement 3.
 
 Finally, we investigated the survival of adult born granule neurons after their arrival in the OB. To access this deeply positioned and densely packed cell population, we used a cranial window preparation in Nestin Cre-ERT2/Rosa-RFP mice. We observed 101 adult born neurons in nine animals (Figure 3a,b,c). During the 8 weeks observation window, six neurons disappeared (5,9%). In addition, we labeled adult born granule cells with an injection of a tomato-expressing lentivirus into the RMS (Figure 3d; Wallace et al., 2017). Tracing of 48 adult-born GCs in 19 fields of view from three mice led to the identification of only a single cell that disappeared (2.1%; Figure 3e) during the 7 weeks observation period. Thus, overall under physiological conditions cell loss in adult born OB neurons during the proposed critical selection period was very low, comparable to the findings for perinatally born neurons.
 
@@ -77,7 +109,7 @@ Next we asked if neuron loss could be detected in non-physiological situations. 
 
 In conclusion, under physiological conditions newly born neurons in the perinatal and adult OB show little cell loss after arrival in the OB. However, significant cell loss during this observation period was found after blocking sensory input, demonstrating that cell death could be detected with our approach.
 
-## Dose dependent toxicity of thymidine analogs
+### Dose dependent toxicity of thymidine analogs
 
 The above findings were at odds with the existence of a critical period for survival during which, under normal conditions, about half of the adult born neurons are removed from the OB by cell death (Mandairon et al., 2006; Mouret et al., 2008; Petreanu and Alvarez-Buylla, 2002; Winner et al., 2002; Yamaguchi and Mori, 2005). This concept is to a large extent based on tracing of timed cohorts of newborn neurons using the integration of thymidine analogs, most often BrdU, into the DNA of dividing cells. To investigate if these differences were due to our particular experimental conditions we first repeated such pulse chase studies using commonly used doses of BrdU and following established protocols (Mandairon et al., 2006; Mouret et al., 2008; Whitman and Greer, 2007). Indeed, using four i.p. injections of 50 mg/kg BrdU every 2 hr into adult mice, we found an approximately 40% loss of labeled neurons in the OB between 2 and 6 weeks in the GL as well as in the GCL (Figure 5ab). As in our direct imaging approach, we focused on the dorsal aspect of the OB, we investigated if in this region BrdU-positive cells showed a different behavior than in the rest of the structure. BrdU+ cell number in the dorsal OB showed the same 40% loss that was found in the entire bulb (Figure 5b).
 
@@ -97,7 +129,7 @@ Next, we investigated the distribution of total CC3-positive cells in the OB lay
 
 In conclusion, the above results, showing that lineage tracing by high doses of thymidine analogs is associated with cell loss in the OB, point to toxicity of such DNA modifying agents. Moreover, the finding that at low EdU doses cell loss in the OB during the proposed critical selection period is notdetected represents an independent confirmation of our in vivo imaging based findings.
 
-## Neuronal addition in the OB
+### Neuronal addition in the OB
 
 Neurogenesis in the OB is considered to be a turnover system in which new neurons replace older ones, leading to a relatively stable size of the structure (Imayoshi et al., 2008; Petreanu and Alvarez-Buylla, 2002). In such a scenario cell loss has to be expected. As we did not observe considerable cell death during early stages in the OB, we asked if neurons disappear at later stages. Continuous long-term observations of perinatally generated PGN and GC provided no evidence for sustained cell loss after the initial 8 weeks time window (Figure 6a,b). The same stability of the labeled population was evident when adult generated GC or PGN were observed for up to 24 weeks after their generation (Figure 6c,d). Moreover, as CRE-induced recombination in Nestin-CRE-ERT2 mice occurs often at the stem cell level (Imayoshi et al., 2008), recombined stem cells continued to generate new neurons. In agreement, additional adult born neurons permanently appeared in the observation window (Figure 6e), leading to a more than doubling of the neuron population of adult generated PGN over an observation period of six months (Figure 6f).
 
@@ -109,7 +141,17 @@ How does the OB deal with this permanent addition of neurons in the absence of c
 
 First, we asked if a volume increase in the OB could be detected directly in the living brain during in vivo imaging experiments. We found that over time slightly larger image frames were necessary to accommodate the same group of neurons in our Z-maximum projections of the GCL and GL (Figure 1d; Figure 3a; Figure 1—figure supplement 2b). Using our systematic imaging approach, we quantified local changes in OB volume over time by measuring distance between individually identified neurons. Indeed, volumetric analysis of inter-neuronal space between groups of four neurons in X, Y, Z (thus an irregular pyramid) demonstrated that distance between neurons increased steadily between 2 and 5 months (Figures 7a,b and 4 animals at each time point), strongly indicating continuous OB growth.
 
+![Figure 7.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig7-v2.jpg)
+
+**Figure 7.:** (a) Example of volumetric analysis of inter-neuronal space between individually identified neurons in vivo (groups of four neurons in X,Y,Z; thus an irregular pyramid). (b) Quantification inter-neuronal space shows that distances between identified neurons increase in adult animals. (c) Reconstruction of an adult OB and part of the cortex based on 3-D light sheet imaging. (d) Comparison of 2- and 12-month-old OBs reconstructed from lightsheet images. (e) Quantification of volume increase in OBs from 1 to 12 months, normalized to 2 months. (f) Quantification of volume increase in OB sublayers from 1 to 12 months, normalized to 2 months. Volume increase affects both, the GL and the GCL. (g) Quantification of the volume of the forebrain at 2, 6 and 12 months, normalized to 2 months. Forebrain size over time does not change. (h) Examples of GCL cell density based on TOPRO-3 nuclear staining in whole, cleared OBs of 2- and 6-month-old mice. (i) Quantification of cell density from 1 to 12 months. Cell density is constant over the observation period. Scale bar: 800 μm in a,b. 40 μm in f, 50 μm in h.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/44830/elife-44830-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (a) Repartition of OB layers (GL, EPL, GCL) with increasing age. Although the volume of all layers increases with time their ratio remains constant. (b) Coronal section through the OB of a 6-month-old C57Bl6 stained for the astrocytic marker S100b, the microglial marker iba1 and the nucleus with DAPI. (c) Quantification of astrocytic and microglial density between 2 and 6 months. Astrocyte density is significantly decreased (p=0,006) while microglia density is constant. Scale bar: 200 μm in b.
+
 Second, we used light sheet microscopy on CUBIC-treated (Susaki et al., 2014) brains to investigate the structure and volume of the whole adult mouse OB. Volumetric analysis based on 3D reconstructions of cleared OBs (Figure 7c,d and Video 3) revealed a steady increase in OB size leading to a significant 44% enlargement of the structure from 2 to 12 months (Figure 7d,e). This volume increase affected equally the granule and the glomerular layers (Figure 7f) in the absence of obvious changes in layer repartition (Figure 7—figure supplement 1a). During the same interval, total forebrain volume was unchanged (Figure 7g).
+
+![Video 3.](https://cdn.elifesciences.org/articles/44830/elife-44830-video3.mp4.jpg)
 
 Next, we investigated the evolution of cell density in the more homogeneous granule cell layer using cleared brain tissues. To count all cells in the GCL, we stained nuclei with the fluorescent marker TOPRO3. Quantification revealed that the density of nuclei was highly stable at all observed time points (Figure 7h,i) while the density of astrocytes decreased and microglia density was unchanged (Figure 7—figure supplement 1a, b and c).
 
@@ -149,23 +191,23 @@ Finally, neuronal selection at the level of integration has been proposed to und
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 All mice were treated according to protocols approved by the French Ethical Committee (#5223–2016042717181477 v2). Mice were group housed in regular cages under standard conditions, with up to five mice per cage on a 12 hr light–dark cycle. 2 months old C57Bl6 males were used for BrdU and edU pulse chase experiments. Rosa-RFP mice (Ai14, Rosa26-CAG-tdTomato; Madisen et al., 2010) were obtained from the Jackson laboratory and used on a mixed C57Bl6/CD1 background. For lightsheet experiments, 1, 2, 4,6 and 12 months old male C57Bl6 were obtained from Janvier labs. Nestin-CreERT2 mice were obtained from Amelia Eisch (Lagace et al., 2007) and crossed with Rosa-RFP mice. Male and female Nestin-CreERT2 X rosa-RFP mice were used between 2- and 3-month old at the time of surgery.
 
-## In vivo labeling of neurons
+### In vivo labeling of neurons
 
 In vivo electroporation was performed as previously described (Boutin et al., 2008). Briefly, 1-day-old pups were anaesthetized by hypothermia and 1 μl of a pCAG-CRE) plasmid (Platel et al., 2010) at 4 μg/μl) was injected in the lateral ventricle. Electrical pulses were applied to target the dorsal V-SVZ.
 
 In adult Nestin-CreERT2 X rosa-RFP mice, RFP expression was induced by tamoxifen injection (Sigma-Aldrich; intraperitoneal; dissolved in 10% EtOH/90% sunflower oil) at 100 mg/kg per day for 2 days.
 
-## Surgical preparation
+### Surgical preparation
 
 Implantation of an observation window was performed as previously described (Drew et al., 2010) but with minor modifications. Briefly, mice were anaesthetized by intraperitoneal (ip.) injection of ketamine/xylazine (125/12,5 mg/kg). Dexaméthasone (0.2 mg/kg) and buprenorphine (0.3 mg/mL) were injected subcutaneously and lidocaine was applied locally onto the skull. The pinch withdrawal reflex was monitored throughout the surgery, and additional anesthesia was applied if needed. Carprofen (5 mg/kg) was injected ip. after the surgery. A steel bar was added during this step to allow fixation of the animal to the microscope. The skull overlying the OB was carefully thinned with a sterile scalpel blade until a thickness of 10–20 μm was reached. A thin layer of cyanoacrylate (superglu3, Loctite) was applied and a 3-mm round coverslip was apposed and sealed with dental cement (superbond, GACD). A first microscopic observation was performed on these anesthetized mice.
 
 For olfactory sensory deprivation, a silicone tube was inserted (Intramedic; 0,5 mm diameter, 3 mm long) into one naris and sealed with cyanoacrylate glue (Cummings et al., 1997). Efficiency of occlusion was checked the following day and before each imaging session. At the end of the experiment, immunostaining against tyrosine hydroxylase was performed to confirm the efficiency of occlusion.
 
-## In vivo two-photon imaging
+### In vivo two-photon imaging
 
 We used a Zeiss LSM 7MP two-photon microscope modified to allow animal positioning under a 20X water immersion objective (1.0 NA, 1.7 mm wd) and coupled to a femtosecond pulsed infrared tunable laser (Mai-Tai, SpectraPhysics). After two-photon excitation, epifluorescence signals were collected and separated by dichroic mirrors and filters on four independent non-descanned detectors (NDD). Images were acquired using an excitation wavelength of 950 nm. RFP was first collected between 605–678. In addition, we collected an additional RFP signal between 560 and 590 that was voluntarily saturated to allow a better identification of subcellular structures like dendrites.
 
@@ -173,40 +215,40 @@ In general, image acquisition lasted about 10 min. Mice could potentially move o
 
 On consecutive observation, the same field of view was localized based on the geometric motifs of groups of neurons and specific morphological features of individual cells. Between 18 and 179 neurons were imaged initially every week for the first 8 weeks and further imaged at irregular intervals for up to 22 weeks. Images of 606 × 606 μm were acquired at 0.59 μm/pixel resolution in the xy dimension and 2 μm/frame in the z dimension to a maximal depths of 400 μm.
 
-## In vivo imaging of adult born GCs labeled with a lentivirus
+### In vivo imaging of adult born GCs labeled with a lentivirus
 
 See Wallace et al. (2017) for cranial window, virus, and imaging. Briefly, 250 nL of undiluted virus (1:1 mixture of lenti-syn-tTAad and lenti-TRE-dTomato-T2A-GCaMP6s) was injected bilaterally at each of two depths to target the RMS (coordinates from bregma: A + 3.3, L ± 0.82, from the brain surface: V-2.9 and −2.7). The virus was locally produced and the viral titer was not measured. Supplementary file 1 in the Wallace et al. (2017) shows an example of the injection site in a sagittal slice and demonstrates that the virus does not diffuse into the bulb at the volume and titer we used. All cells in the present analysis were labeled with the tdTomato-GCaMP6s version of the lentivirus.
 
 Analysis: Z stacks taken with a 1 or 2 µm z-step were used for tracking cells over weeks. Maximum intensity projections were created and annotated manually in ImageJ and cross-referenced with z-stacks to confirm that the dendritic structure and location of a cell allowed unambiguous identification. Each line in 3C represents cells tracked for different lengths of time, and multiple lines may correspond to a single field of view. For example, this imaged field of view corresponds to the two lines representing three cells tracked over time, with one line ending at 5 weeks and one ending at 7 weeks (due to the final z stack not extending deep enough to include the first 3 cells). The newcomers arrived at different times, so they have different lines. For example, some of the cells with asterisks arrived at 3 weeks and others arrived at 4 weeks. Incoming cells not marked with asterisks had cell bodies that either were not fully included within the z stack or we were not able to track them for more than one imaging session and so were not quantified.
 
-## Chronic in vivo imaging analysis
+### Chronic in vivo imaging analysis
 
 Quantitative analyses were performed on raw image stacks using FIJI software (Schindelin et al., 2012). All neurons identified on the first image were assigned a number using ImageJ overlay. Based on morphology and relative position each neuron was individually numbered and tracked on the successive weekly images (see Figure 1—figure supplement 3b,d). After identification of the first cohort, smaller numbers of additional neurons appeared permanently in the observation window as a consequence of ongoing neurogenesis in the stem cell compartment (arrowhead in Figure 1d, 5wpi). These were numbered and followed like the first cohort. Results were summarized in Microsoft Excel. Occasionally neurons located at the border of an image were placed outside of the imaged field in one of the following sessions. These cells were excluded from further analyses. Animals showing an evident degradation of the imaging window were excluded from further imaging sessions.
 
 For the analyses of the distance between neurons (Figure 7ab), we measured over time the volume between four neurons (three neurons in the same plane and another neuron in a different plane) using FIJI. We measured two pyramids (i.e. eight neurons) per animal in four animals from 2 to 5 months.
 
-## Quantification of Brdu and EdU pulse chase experiments
+### Quantification of Brdu and EdU pulse chase experiments
 
 BrdU (Sigma) was injected ip. 4 times at 50 mg/kg body weight every 2 hr. EdU (Sigma) was injected 4 times at 1, 5 or 50 mg/kg body weight every 2 hr. Staining was performed as described previously (de Chevigny et al., 2012a). For the dose of 1 mg/kg of edu, the labeling protocol was repeated to increase the intensity of the staining. This was not necessary for the dose of 5 mg/kg. Stainings were done on 50 μm floating vibratome sections. Images were taken either using a fluorescence microscope (Axioplan2, ApoTome system, Zeiss, Germany) or a laser confocal scanning microscope (LSM880, Zeiss, Germany). Conditions were blinded to the experimenter. Labeling at 2 and 6 weeks were performed on the same day. Three to five OB sections were randomly chosen in five animals per condition. Stack of 6 to 15 images were performed every 2 um over the whole surface of the OB slice. The number of BrdU/EdU-positive cells in the glomerular layer and granule cell layer were quantified in three dimension using FIJI software and Imaris software. The results were divided by the volume of the region to give a density of labeled cells per mm3. The mean per animal is represented in Figure 5 and used for statistical tests.
 
-## Quantification of cleaved-Caspase three immunostaining
+### Quantification of cleaved-Caspase three immunostaining
 
 We used the same methods as explained in the previous section to measure the density of cleaved caspase3-positive cells. Quantification was performed in 15 animals (5 animals 2 weeks after 5 mg/kg EdU injection, 5 animals 2 weeks after 50 mg/kg EdU injection, 5 animals 6 weeks after 50 mg/kg EdU injection).
 
-## Light-sheet microscopy
+### Light-sheet microscopy
 
 To render brains transparent we followed the Cubic protocol (Susaki et al., 2014). Briefly, brains where incubated in Cubic1 solution for 10 days at 37°C using gentle agitation. After clearing, brains were incubated for 1 day in the red nuclear dye TOPRO3 (1/1000) in PBS, 0.01% Tween 20, 0.01% sodium Azide at 37°C. The brains were then re-incubated for 3 hr in Cubic1 solution and subsequently placed in Cubic2 solution for 2 days at 37°C. Timing of all steps was carefully monitored.
 
 We used a lightsheet Z1 microscope (Zeiss) with a 5x/0.16NA objective to image the transparized OB and UltraMicroscope II (LaVision BioTec) with LWDO 2x/0.14NA for whole brain imaging. OB layers were easily distinguishable using the nuclear staining of the TOPRO3. The OB was imaged every 5.9 μm in Z with a xy pixel dimension of 2.5 μm and the whole brain with 30 µm steps in Z and a xy resolution of 3.03 µm, respectively. We used Imaris software (Bitplane, Germany) for reconstruction of the total volume based on the nuclear TOPRO3 staining. To determine total forebrain size we measured the entire volume from the caudal end on the OB to the caudal end of the neocortex. All measurements were normalized to the mean obtained on 2-month-old brains.
 
-## Measurement of cell density
+### Measurement of cell density
 
 We measured cell density in the granule cell layer by imaging the same transparized brain with the two-photon microscope used for in vivo imaging to obtain a better resolution. We acquired Z stacks of 200 μm with 2 μm resolution in Z and 0.3 μm in xy in the central part of the OB. These images were first de-noised in Fiji using a 3D mean filter. Then the volumetric density of nuclei was quantified using Imaris software: We use the cell detection module to detect nuclei in the granule cell layer. We used 4 μm as a seed point value to split the connected objects.
 
-## Immunohistochemistry
+### Immunohistochemistry
 
 Stainings were done on 50 μm floating vibratome sections as described before (Tiveron et al., 2016). Primary antibodies: GFP (rabbit IgG, Life technologies,1 1:1000 or chicken Ig, AVES, 1:1000), Calretinin (mouse IgG1, Synaptic Systems; 1:2000), Tyrosine Hydroxylase (chicken Ig, AVES; 1:1000), IBA1 (life technologies, 1:500), GFAP (life technologies, 1:500), cleaved-caspase3 (Cell Signaling Technology: #9662, 1:500). Secondary antibodies were purchased from Life Technologies. Before mounting, cell nuclei were stained with Hoechst 33258 or TOPRO3. Optical images were taken either using a fluorescence microscope (Axioplan2, ApoTome system, Zeiss, Germany) or a laser confocal scanning microscope (LSM880, Zeiss, Germany).
 
-## Statistical analyses
+### Statistical analyses
 
 All data are presented as mean ± s.e.m. Statistical comparisons were performed using Matlab software (Mathworks) or R. In box plot representation, center line represents the median; box limits, upper and lower quartiles; whiskers, outliers). All statistical tests were two-tailed. Threshold for significance was set at p=0.05. For occlusion experiments (Figure 2g) we used a Wilcoxon Rank-sum test (p=0,0357). For Brdu and Edu pulse chase experiment (Figure 3), we used a Wilcoxon Rank-sum test (*p<0,05, **p<0,01, ***p<0,001). For quantification of the volume of the OB and the volume of the layers, we used a wilcoxon ranksum test for each comparison (six comparison) and adjusted the p-value threshold for multiple comparisons using Bonferroni (*p<0,0083, **p<0,00167, ***p<0,000167). For the quantification of the increase of size during in vivo imaging experiments (Figure 5i), we used a Friedman rank sum test followed with a post hoc test in the Matlab software (between 2 and 5 months **p<0.01).

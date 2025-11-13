@@ -54,21 +54,27 @@ Concerning prospection, previous studies have observed an EFT effect on DD, such
 
 ## Results
 
-## DD rates
+### DD rates
 
 Preliminary fits of the hyperbolic function SV = 1/(1+kD), with SV = subjective value (expressed as a fraction of the delayed amount) and D = delay (in days), to individual participants’ data using a nonlinear least-squares algorithm (implemented in Statistica Statsoft) revealed that subjective preferences were not equally well characterized by hyperbolic functions in the Standard and EFT conditions. This was especially apparent in vmPFC patients in the EFT condition whose discounting curves were not always monotonically decreasing (see Figure 3, and Figure 3—figure supplement 1 for individual patients’ discounting curves).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/67387/elife-67387-fig3-v1.jpg)
+
+**Figure 3.:** Lines represent choices averaged across both reward amounts (data points available in the source data file: Figure 3—source data 1).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/67387/elife-67387-fig3-figsupp1-v1.jpg)
 
 The degree to which participants discounted delayed rewards (DD rate), therefore, was measured using the area under the curve (AuC), a theoretically neutral, normalized measure of DD that does not depend on theoretical models regarding the shape of the discounting curve (Myerson et al., 2001). Figure 4 displays the AuC by participant group and condition, as well as individual participants’ data. An ANOVA on AuCs with Group (vmPFC patients, healthy controls), Condition (Standard, EFT), and Reward magnitude (small, large) as factors revealed an effect of Reward magnitude (F1,51 = 13.17, p = 0.0007, partial η2 = 0.20), qualified by a Group × Reward magnitude interaction (F1,51 = 9.49, p = 0.003, partial η2 = 0.16). Fisher post hoc tests showed that healthy controls discounted large rewards less steeply than small rewards (i.e., magnitude effect; p < 0.0001), whereas vmPFC patients discounted large and small rewards at similar rates (p = 0.76). Relatedly, vmPFC patients showed steeper DD than controls for the large rewards (p = 0.04), but not for the small rewards (p = 0.67). Crucially, there was a significant effect of Condition (F1,51 = 54.33, p < 0.0001, partial η2 = 0.52), indicating that both healthy controls and vmPFC patients had reduced DD rates in the EFT compared to the Standard condition (EFT effect). There were no other significant effects (p > 0.07 in all cases). In particular, the Group × Condition interaction was not significant (F1,51 = 2.18, p = 0.14, partial η2 = 0.04).
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/67387/elife-67387-fig4-v1.jpg)
 
-**Figure 4.:** The figure reports individual participants’ data. Empty symbols denote ventromedial prefrontal cortex (vmPFC) patients with brain damage touching the lateral prefrontal cortex. *p < 0.05 (data points available in the source data file: Figure 4—source data 1).Figure 4—source data 1.Figure 4.
+**Figure 4.:** The figure reports individual participants’ data. Empty symbols denote ventromedial prefrontal cortex (vmPFC) patients with brain damage touching the lateral prefrontal cortex. *p < 0.05 (data points available in the source data file: Figure 4—source data 1).
 
 Although the ANOVA failed to reveal a significant Group × Condition interaction, a limitation of classical statistical analyses like ANOVA is that they do not directly assess the evidence for the null hypothesis, which in this case is that there is no difference in the EFT effect between vmPFC patients and controls. We therefore used a Bayesian approach, which, unlike classical null hypothesis significance testing, can directly compare the evidence for the null hypothesis with the evidence for the alternative hypothesis (Wagenmakers et al., 2018). Bayesian-independent samples t-tests were conducted on the EFT effect between vmPFC patients and controls (AuCEFT condition – AuCStandard condition, collapsing across reward magnitudes; vmPFC patients: M = 0.17, SD = 0.21; controls: M = 0.26, SD = 0.17) using the JASP software (Wagenmakers et al., 2018). The results show a Bayes factor of 0.738. This value, which compares the likelihood of the alternative hypothesis to the likelihood of the null hypothesis given the present data, represents what Jeffreys, 1961 termed anecdotal evidence in favor of the null hypothesis. It may be contrasted with the Bayes factor for the group difference in the magnitude effect (AuCLarge reward – AuCSmall reward, collapsing across the Standard and EFT condition; vmPFC patients: M = 0.01, SD = 0.10; controls: 0.14, SD = 0.13), which equals 11.52, representing strong evidence for the alternative hypothesis and against the null (Jeffreys, 1961).
 
 Because previous work has attributed the magnitude effect to processing in the lateral prefrontal cortex (Ballard et al., 2017; Ballard et al., 2018), we re-ran the previous ANOVA excluding patients with damage touching the lateral prefrontal cortex (N = 4) to assure that they were not driving our results. We confirmed our findings. Again, the ANOVA yielded a Reward magnitude effect (F1,47 = 4.80, p = 0.03, partial η2 = 0.09), and, importantly, a Group × Reward magnitude interaction that was even stronger than in the original ANOVA (F1,47 = 13.32, p = 0.0006, partial η2 = 0.22), indicating that controls (0.53 vs. 0.39; p < 0.0001), but not vmPFC patients (0.36 vs. 0.40; p = 0.43), discounted large rewards less than small rewards. Note that the magnitude effect was even smaller in patients with damage confined to the vmPFC than in patients with additional damage to the lateral prefrontal cortex (−0.04 vs. 0.10; t(10) = −2.60; p = 0.03), confirming that the lack of a magnitude effect in vmPFC patients was not driven by damage extending beyond vmPFC (Figure 4). As in the original ANOVA, there was a main effect of Condition (F1,47 = 33.84, p = 0.000001, partial η2 = 0.42), and no Group × Condition interaction (F1,47 = 2.89, p = 0.095, partial η2 = 0.05), confirming reduced DD rates in the EFT compared to the Standard condition in both vmPFC patients and controls. There were no other significant effects (all p’s > 0.23).
 
-## Consistency of preference
+### Consistency of preference
 
 One possible reason for the poor fit of the hyperbolic function to vmPFC patients’ discounting data in the EFT condition is that the data were not monotonically decreasing (Figure 3). To directly assess this possibility, we counted the number of ‘inconsistent preferences’, that is, data points in which the subjective value of a future outcome (amount = R) at a given delay (R2) was greater than that at the preceding delay (R1) by more than 10% of the amount of the future outcome (i.e., R2 > R1 + R/10, as recommended by Johnson and Bickel, 2008; Sellitto et al., 2010). An ANOVA on the number of inconsistent preferences with Group, Condition, and Reward magnitude as factors revealed a significant Group × Condition interaction (F1,51 = 5.01, p = 0.03, partial η2 = 0.09). Post hoc tests indicated that whereas in the Standard condition the number of inconsistent preferences in vmPFC patients did not differ from that of healthy controls (0.75 vs. 0.94; p = 0.31), replicating previous findings (Sellitto et al., 2010), in the EFT condition vmPFC patients showed more inconsistent preferences than controls (1.12 vs. 0.61; p = 0.007). There were no other significant effects (all p’s > 0.13).
 
@@ -100,19 +106,295 @@ To conclude, the present findings reveal different mechanisms governing DD behav
 
 ## Materials and methods
 
-## Participants
+### Participants
 
 Twelve patients with lesions to vmPFC (8 males; mean age = 57.41 years, SD = 8.20, range = 49–76; mean education = 13.41 years, SD = 3.67; range = 8–20; see Table 1 for individual patients’ demographic and clinical data) and 41 healthy controls (35 males; mean age = 61.09 years, SD = 6.58, range = 49–78; mean education = 13.19 years, SD = 2.82, range = 8–20), matched to patients in age (t51 = 1.61; p = 0.11), education (t51 = −0.22; p = 0.82), and gender balance (χ2 = 2.12; p = 0.14), were recruited at the Centre for Studies and Research in Cognitive Neuroscience, Cesena, Italy, and at Baycrest Health Sciences, Toronto, Canada. Patients were selected on the basis of the location of their lesion evident on MRI or computerized tomography (CT) scans (see Figure 1) and were tested at least 12 months post-lesion (see Appendix 1 for additional information on patients’ recruitment). The lesions of vmPFC patients resulted from rupture of an aneurysm of the anterior communicating artery (in 11 cases) and from stroke of the anterior cerebral artery (in one case). Lesions were bilateral in 10 cases and left-lateralized in the remaining two cases. All participants were screened for any neurological or psychiatric diagnoses likely to affect cognition or interfere with participation. They gave informed consent to participate in the study, which was approved by the ethical committees of the University of Bologna, the Regional Health Service of Emilia Romagna, Baycrest Health Sciences, and York University, and in line with the Declaration of Helsinki (International Committee Of Medical Journal, 1991).
 
-## Lesion analysis
+**Table 1.**
+ vmPFC patients’ demographic and clinical data.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>vmPFC patient</th>
+      <th>Age (y)</th>
+      <th>Edu (y)</th>
+      <th>Sex (y)</th>
+      <th>Time since lesion (y)</th>
+      <th>EFT Int (z score)</th>
+      <th>EFT Ext (z score)</th>
+      <th>PF</th>
+      <th>LF</th>
+      <th>DS</th>
+      <th>LL Imm</th>
+      <th>LL Del</th>
+      <th>ROCF copy</th>
+      <th>ROCF recall</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>P1 (I)</td>
+      <td>55</td>
+      <td>13</td>
+      <td>M</td>
+      <td>4</td>
+      <td>−1.42</td>
+      <td>0.58</td>
+      <td>21%</td>
+      <td>23%</td>
+      <td>34%</td>
+      <td>14%</td>
+      <td>17%</td>
+      <td>100%</td>
+      <td>50%</td>
+    </tr>
+    <tr>
+      <td>P2 (I)</td>
+      <td>46</td>
+      <td>13</td>
+      <td>M</td>
+      <td>7</td>
+      <td>−1.54</td>
+      <td>−1.44</td>
+      <td>38%</td>
+      <td>7%</td>
+      <td>49%</td>
+      <td>12%</td>
+      <td>8%</td>
+      <td>100%</td>
+      <td>41%</td>
+    </tr>
+    <tr>
+      <td>P3 (I)</td>
+      <td>56</td>
+      <td>8</td>
+      <td>M</td>
+      <td>13</td>
+      <td>−1.43</td>
+      <td>−0.73</td>
+      <td>42%</td>
+      <td>16%</td>
+      <td>23%</td>
+      <td>0.43%</td>
+      <td>3%</td>
+      <td>25%</td>
+      <td>2%</td>
+    </tr>
+    <tr>
+      <td>P4 (I)</td>
+      <td>57</td>
+      <td>8</td>
+      <td>M</td>
+      <td>7</td>
+      <td>−1.57</td>
+      <td>−0.28</td>
+      <td>42%</td>
+      <td>31%</td>
+      <td>23%</td>
+      <td>7%</td>
+      <td>12%</td>
+      <td>89%</td>
+      <td>27%</td>
+    </tr>
+    <tr>
+      <td>P5 (C)</td>
+      <td>58</td>
+      <td>15</td>
+      <td>F</td>
+      <td>8</td>
+      <td>–</td>
+      <td>–</td>
+      <td>82%</td>
+      <td>35%</td>
+      <td>18%</td>
+      <td>1%</td>
+      <td>0.02%</td>
+      <td>2%</td>
+      <td>13%</td>
+    </tr>
+    <tr>
+      <td>P6 (C)</td>
+      <td>76</td>
+      <td>16</td>
+      <td>F</td>
+      <td>5</td>
+      <td>0.20</td>
+      <td>−0.86</td>
+      <td>55%</td>
+      <td>40%</td>
+      <td>80%</td>
+      <td>81%</td>
+      <td>50%</td>
+      <td>67%</td>
+      <td>62%</td>
+    </tr>
+    <tr>
+      <td>P7 (C)</td>
+      <td>54</td>
+      <td>13</td>
+      <td>F</td>
+      <td>2</td>
+      <td>−2.27</td>
+      <td>−1.64</td>
+      <td>58%</td>
+      <td>30%</td>
+      <td>59%</td>
+      <td>2%</td>
+      <td>2–3%</td>
+      <td>8%</td>
+      <td>42%</td>
+    </tr>
+    <tr>
+      <td>P8 (C)</td>
+      <td>65</td>
+      <td>18</td>
+      <td>M</td>
+      <td>4</td>
+      <td>−1.93</td>
+      <td>−1.00</td>
+      <td>45%</td>
+      <td>2%</td>
+      <td>39%</td>
+      <td>8%</td>
+      <td>7%</td>
+      <td>22%</td>
+      <td>18%</td>
+    </tr>
+    <tr>
+      <td>P9 (C)</td>
+      <td>56</td>
+      <td>20</td>
+      <td>M</td>
+      <td>4</td>
+      <td>−2.24</td>
+      <td>−1.24</td>
+      <td>47%</td>
+      <td>-</td>
+      <td>39%</td>
+      <td>1%</td>
+      <td>0.7%</td>
+      <td>68%</td>
+      <td>1%</td>
+    </tr>
+    <tr>
+      <td>P10 (C)</td>
+      <td>51</td>
+      <td>10</td>
+      <td>M</td>
+      <td>8</td>
+      <td>–</td>
+      <td>–</td>
+      <td>45%</td>
+      <td>20%</td>
+      <td>59%</td>
+      <td>4%</td>
+      <td>0.7%</td>
+      <td>84%</td>
+      <td>13%</td>
+    </tr>
+    <tr>
+      <td>P11 (C)</td>
+      <td>66</td>
+      <td>15</td>
+      <td>F</td>
+      <td>1</td>
+      <td>−1.73</td>
+      <td>−1.41</td>
+      <td>47%</td>
+      <td>55%</td>
+      <td>39%</td>
+      <td>1%</td>
+      <td>1%</td>
+      <td>70%</td>
+      <td>2%</td>
+    </tr>
+    <tr>
+      <td>P12 (C)</td>
+      <td>49</td>
+      <td>12</td>
+      <td>M</td>
+      <td>5</td>
+      <td>−1.89</td>
+      <td>0.95</td>
+      <td>86%</td>
+      <td>50%</td>
+      <td>39%</td>
+      <td>1%</td>
+      <td>0.03%</td>
+      <td>58%</td>
+      <td>0.7%</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: (I) = patient tested in Italy; (C) = patient tested in Canada; M = male; F = female; Edu = education; y = years; vmPFC = ventromedial prefrontal cortex; EFT Int = internal details at the Crovitz episodic future thinking task; EFT Ext = external details at the Crovitz episodic future thinking task; PF = premorbid functioning, based on the full-scale IQ at Wechsler Abbreviated Scale of Intelligence (WAIS–IV; Wechsler, 2009) for Canadian patients P7, P9, P12, on the Wechsler test of adult reading (WTAR; Holdnack, 2001) for Canadian patients P6 and P11, on the National Adult Reading Test (NART) (Paolo and Ryan, 1992) for Canadian patients P5, P8, and P10, and on the Raven Standard Progressive Matrices (SPM) for all Italian patients (Spinnler and Tognoni, 1987); LF = letter fluency (Spinnler and Tognoni, 1987; Spreen and Strauss, 1998); DS = digit span (forward); LL Imm = list learning immediate recall, LL Del = list learning delayed recall, assessed with the Buschke–Fuld Test (Buschke and Fuld, 1974; Spinnler and Tognoni, 1987) in Italian patients, and with the California Verbal Learning Test-II (Woods et al., 2006) in Canadian vmPFC patients; ROCF = Rey–Osterrieth Complex Figure (Spinnler and Tognoni, 1987; Spreen and Strauss, 1998). For PF, LF, DS, LL, and ROCF, we report percentile scores. Dashes indicate missing data._
+
+### Lesion analysis
 
 Individual vmPFC lesions were manually drawn by a highly trained neuroscientist directly on each slice of the normalized T1-weighted template MRI scan from the Montreal Neurological Institute using MRIcro software (Rorden and Brett, 2000), based on the most recent MRI or CT scan available. This manual procedure combines segmentation (identification of lesion boundaries) and registration (to a standard template) into a single step, with no additional transformation required (Kimberg et al., 2007). Included patients had lesions mainly affecting Brodmann areas (BAs) 10, 11, 32, 24, and 25, with the region of maximal overlap occurring in BAs 11 (M = 12.50 cc, SD = 10.79), 10 (M = 5.70 cc, SD = 6.46), and 32 (M = 3.71 cc, SD = 3.64) (Figure 1). Four patients had minimal damage to the lateral prefrontal cortex (BAs 9, 46, 47), but this constituted ~ 5% of their lesion volume, while their vmPFC lesions were on average 10 times larger. Two patients had damage to visual cortex (BAs 17, 18, 19, 37) that constituted ~ 41% and ~ 32% of their lesion volume. These patients did not have visual problems precluding their participation in the study. They attained normal scores on the copy of the Rey–Osterrieth Complex Figure (percentile scores: 66 and 68; Spreen and Strauss, 1998) and on the Wechsler Test of Adult Reading (percentile scores: 55 and 47; Holdnack, 2001), and proved able to inspect and comprehend a practice trial of the DD task.
 
-## Cognitive profile
+### Cognitive profile
 
 The general cognitive functioning of vmPFC patients was preserved in all cases. Patients’ performance on standardized tests of executive function and short-term memory was also within the normal range in most cases (mean percentile > 5), whereas long-term memory, as assessed with a list-learning task, was weak in 7 of the 12 patients (see Table 1 for individual patients’ neuropsychological data). Moreover, most vmPFC patients showed deficits in episodic remembering and EFT, as assessed with the Galton–Crovitz cue-word test, a long-standing method for eliciting autobiographical memories (Crovitz and Schiffman, 1974), later adapted to the assessment of EFT (Addis et al., 2008; see Appendix 1 for a detailed description of testing procedures in Italy and in Canada). Table 2 reports the mean number of internal and external details for past and future events produced by vmPFC patients tested in Italy and in Canada and their controls. The results of the Italian patients (a subset of those included in Bertossi et al., 2016b) were contrasted with those of the 11 healthy controls from the same study (all males; Bertossi et al., 2016b), who were age-matched to the patients (vmPFC patients: M = 47.75, SD = 5.25; healthy controls: M = 41.63, SD = 11.89, t13 = −0.97, p = 0.34). The results of the Canadian patients (unpublished) were contrasted with those of 18 healthy controls (10 males; a subset of those included in Kwan et al., 2016) age-matched to the patients (vmPFC patients: M = 61.00, SD = 9.83; healthy controls: M = 67.94, SD = 13.57, t22 = 1.15, p = 0.26). As for the Italian sample, an ANOVA on the details produced with Group (vmPFC patients, healthy controls), Time (past, future), and Detail (internal, external) as factors showed a significant effect of Time (F1,13 = 14.66, p = 0.002, partial η2 = 0.53), such that all participants produced more details for past than future events (18.19 vs. 15.37). There were also significant effects of Group (F1,13 = 6.16, p = 0.02, partial η2 = 0.32) and Detail (F1,13 = 9.14, p = 0.009, partial η2 = 0.41), qualified by a Group × Detail interaction (F1,13 = 8.99, p = 0.01, partial η2 = 0.40). Post hoc Fisher tests showed that vmPFC patients produced fewer internal details (11.45 vs. 25.51; p = 0.004) but a similar number of external details than controls (11.39 vs. 11.96; p = 0.89). No other effect was significant (p > 0.31 in all cases). The same ANOVA on the Canadian sample revealed an effect of Group (F1,22 = 17.76, p = 0.0003, partial η2 = 0.44), qualified by a significant Group × Detail interaction (F1,22 = 4.72, p = 0.04, partial η2 = 0.18), again indicating that vmPFC patients produced fewer internal details (10.63 vs. 31.78; p = 0.0003) but a similar number of external details than controls (16.79 vs. 25.65; p = 0.09). No other effect was significant (p > 0.32 in all cases). These findings indicate that the previously reported vmPFC patients’ impairment in episodic remembering and EFT (Bertossi et al., 2016b; Bertossi et al., 2017; Verfaellie et al., 2019) also applies to the patients tested here.
 
-## DD task
+**Table 2.**
+ Mean number of internal and external details for past and future events at the Galton–Crovitz cue-word task.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Past events</th>
+      <th></th>
+      <th>Future events</th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Internal details</td>
+      <td>External details</td>
+      <td>Internal details</td>
+      <td>External details</td>
+    </tr>
+    <tr>
+      <td>Italian vmPFC patients</td>
+      <td>13.20 (3.96)</td>
+      <td>13.15 (5.74)</td>
+      <td>9.69 (0.68)</td>
+      <td>9.63 (3.79)</td>
+    </tr>
+    <tr>
+      <td>Italian healthy controls</td>
+      <td>27.84 (10.08)</td>
+      <td>12.19 (3.38)</td>
+      <td>23.17 (9.05)</td>
+      <td>11.73 (4.48)</td>
+    </tr>
+    <tr>
+      <td>Canadian vmPFC patients</td>
+      <td>11.51 (8.07)</td>
+      <td>17.88 (8.62)</td>
+      <td>9.75 (10.43)</td>
+      <td>15.70 (10.21)</td>
+    </tr>
+    <tr>
+      <td>Canadian healthy controls</td>
+      <td>35.34 (9.53)</td>
+      <td>26.09 (12.47)</td>
+      <td>28.22 (11.24)</td>
+      <td>25.21 (10.96)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: Values in parenthesis are standard deviations._
+
+### DD task
 
 Participants completed a DD task under Standard and EFT conditions. In the Standard condition, over a series of trials, participants viewed pairs of monetary amounts and were asked to make hypothetical choices between an immediate reward and a larger reward available after a delay. For each of two delayed amounts (small magnitude: €80/$100; large magnitude: €1500/$2000), participants were asked to make a block of six choices at each of seven delays (1 week, 1 month, 3 months, 6 months, 1 year, 3 years, and 10 years before receiving the reward), with the resulting 14 blocks pertaining to the different reward amounts and delays presented in random order. Thus, participants made 84 choices in total (2 reward amounts × 7 delays × 6 choices).
 
@@ -122,12 +404,12 @@ The DD task in the EFT condition proceeded as in the Standard condition (i.e., w
 
 The Standard, uncued version of the task provided a baseline for measuring the effect of future cueing on DD and was run first. The EFT condition was run at least 1 month after the Standard condition. The experimental conditions were administered in this fashion to avoid carryover effects of the EFT condition, which would likely contaminate the baseline condition (for a similar approach, see Palombo et al., 2015; Kwan et al., 2015). A growing body of research indicates EFT is an effective strategy to reduce DD (reviewed in Rung and Madden, 2018; Bulley and Schacter, 2020), and, as such, it is expected to have carryover effects. Therefore, participants undergoing an EFT condition first might continue to engage in EFT while making choices in the following Standard condition, especially vmPFC patients who are subject to perseveration.
 
-## Assessment of DD rates
+### Assessment of DD rates
 
 Preliminary fits of the hyperbolic function SV = 1/(1+kD), with SV = subjective value (expressed as a fraction of the delayed amount) and D = delay (in days), to individual participants’ data using a nonlinear least-squares algorithm (implemented in Statistica Statsoft) revealed that subjective preferences were not equally well characterized by hyperbolic functions in the Standard and EFT conditions, especially in vmPFC patients, whose discounting curves in the EFT condition were not always monotonically decreasing (see Figure 3 and Figure 3—figure supplement 1). An ANOVA on R2 values with Group (vmPFC patients, healthy controls), Condition (Standard, EFT), and Reward magnitude (small, large) as factors confirmed a significant effect of Condition (F1,51 = 7.20, p = 0.009, partial η2 = 0.12) reflecting the fact that R2 values were lower in the EFT condition than in the Standard condition (0.54 vs. 0.64). The Group × Condition interaction, which just failed to reach statistical significance (F1,51 = 3.99, p = 0.050, partial η2 = 0.07), suggests that the effect of Condition was driven by vmPFC patients (healthy controls: 0.62 vs. 0.58; vmPFC patients: 0.72 vs. 0.41). No other effects were significant (all p’s > 0.09).
 
 Given that subjective preferences were not equally well characterized by hyperbolic functions in the Standard and EFT conditions across groups, the degree to which participants discounted delayed rewards (DD rate) was quantified using the AuC, a measure of DD that does not depend on theoretical assumptions on the shape of the discounting curve (Myerson et al., 2001). Delays and subjective values were normalized. Each delay was expressed as a proportion of maximum delay (120 months) and subjective values were expressed as a proportion of the delayed values. The normalized delays were then plotted on the x axis and the normalized subjective values on the y axis as a function of delay to construct a discounting curve. Vertical lines were drawn from each x value to the curve, subdividing the AuC into a series of trapezoids. The area of each trapezoid was calculated as (x2− x1)(y1 + y2)/2, where x1 and x2 are successive delays, and y1 and y2 are the subjective values associated with those delays (Myerson et al., 2001). The AuC is the sum of the areas of all the trapezoids. The AuC varies between 0 (maximally steep discounting) and 1 (no discounting). The smaller the AuC, the steeper the DD, and the more participants were inclined to choose smaller-immediate rewards over larger-delayed rewards.
 
-## Statistical analyses
+### Statistical analyses
 
 Measures of interest were entered in repeated-measures ANOVAs with Group (vmPFC patients, healthy controls) as the between-subject factor and Condition (Standard, EFT) and Reward magnitude (small, large) as within-subject factors (see Source data 1). Post hoc analyses were conducted with the Fisher test. We report results significant at p < 0.05, two-tailed, and partial η2 as measure of effect size.

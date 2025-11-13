@@ -21,11 +21,23 @@
 
 ## Abstract
 
-10.7554/eLife.45345.001 The major coat proteins of dsDNA tailed phages (order Caudovirales ) and herpesviruses form capsids by a mechanism that includes active packaging of the dsDNA genome into a precursor procapsid, followed by expansion and stabilization of the capsid. These viruses have evolved diverse strategies to fortify their capsids, such as non-covalent binding of auxiliary ‘decoration’ (Dec) proteins. The Dec protein from the P22-like phage L has a highly unusual binding strategy that distinguishes between nearly identical three-fold and quasi-three-fold sites of the icosahedral capsid. Cryo-electron microscopy and three-dimensional image reconstruction were employed to determine the structure of native phage L particles. NMR was used to determine the structure/dynamics of Dec in solution. The NMR structure and the cryo-EM density envelope were combined to build a model of the capsid-bound Dec trimer. Key regions that modulate the binding interface were verified by site-directed mutagenesis.
+The major coat proteins of dsDNA tailed phages (order Caudovirales) and herpesviruses form capsids by a mechanism that includes active packaging of the dsDNA genome into a precursor procapsid, followed by expansion and stabilization of the capsid. These viruses have evolved diverse strategies to fortify their capsids, such as non-covalent binding of auxiliary ‘decoration’ (Dec) proteins. The Dec protein from the P22-like phage L has a highly unusual binding strategy that distinguishes between nearly identical three-fold and quasi-three-fold sites of the icosahedral capsid. Cryo-electron microscopy and three-dimensional image reconstruction were employed to determine the structure of native phage L particles. NMR was used to determine the structure/dynamics of Dec in solution. The NMR structure and the cryo-EM density envelope were combined to build a model of the capsid-bound Dec trimer. Key regions that modulate the binding interface were verified by site-directed mutagenesis.
 
 ## Introduction
 
 Viral icosahedral capsids are formed from multiple copies of a single or a few types of highly structurally-conserved coat proteins that encapsidate the genome (Bamford et al., 2005). The minimum number of subunits needed to build an icosahedral capsid is 60 coat proteins, and the result is a T = 1 icosahedral geometry. There is a direct correlation between genome size and T-number for dsDNA containing phages. Building a bigger capsid necessitates the use of more coat protein subunits, and requires that chemically identical proteins assemble into capsid sites with different ‘quasi-equivalent’ conformations (Caspar and Klug, 1962). For example, in many of the well-studied double stranded DNA (dsDNA) containing phages of the order Caudovirales, the capsids use a T = 7 geometry (see Figure 1A). These use 11 vertices formed by coat protein pentons and an additional 60 hexons to create the capsid. The 12th vertex breaks the icosahedral symmetry and is occupied by a portal complex to which a tail that specifies host binding is attached. Estimates predict that 1031 viruses are in Earth’s biosphere (Bergh et al., 1989; Wommack and Colwell, 2000), with dsDNA containing bacteriophages being the most abundant. These phages have an immense diversity in terms of size and complexity. The ubiquitous HK97-like fold is the building block for virtually all dsDNA containing phages and allows for enormous versatility in icosahedral geometry, that can lead to differences in biophysical properties (Hua et al., 2017). To withstand environmental stresses and the internal pressure that amasses as a result of dsDNA genome packaging, some dsDNA phages encode additional ‘decoration’ proteins that bind to the exterior of their capsids and stabilize the virions. How various decoration proteins recognize and bind to specific sites on capsids with different icosahedral geometries is, however, still poorly understood.
+
+![Figure 1.](https://cdn.elifesciences.org/articles/45345/elife-45345-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of a T = 7 icosahedral capsid overlaid with a black icosahedral cage. The different symmetry axes are marked; two-fold by a black oval, five-fold by a black pentagon, and icosahedral three-fold by a black triangle. Magenta circles highlight quasi three-fold binding sites between hexamers on one icosahedral facet. The magenta quasi three-folds are the preferred binding sites for Dec. Green circles highlight additional quasi three-fold sites between hexons and pentons surrounding one vertex, to which Dec has never been observed to bind. (B) Segmented electron density for a capsid-bound Dec trimer shown in a top-down view. (C) Enlarged view of an asymmetric unit showing coat subunits color coded according to chains A-G, where the coat density is segmented away from the Dec trimer. Additionally, an enlarged area is shown highlighting a region of the spine helix to show the goodness of fit of the coat protein homology model.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45345/elife-45345-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Representative micrograph of frozen hydrated phage L particles. (B) FSC curve with FSC0.143 cutoff shown with a dashed line. The red arrow points out the estimated global resolution of the map at 4.2 Å according to the ‘gold standard’ method (Henderson et al., 2012). (C) Phage L surface rendered view, colored accorded to local resolution with an octant of the virion removed to show the internal genome organization. The color bar indicates resolution in Å.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/45345/elife-45345-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Single coat protein monomer color-coded according to domain boundaries (N-arm in red, P-domain in green, E-loop in yellow, A-domain in cyan, and I-domain in magenta). (B) 1/8th of the capsid used for modeling with coat protein segmentation is colored in grey and the Dec segmentation is colored in lavender. Note the map is rotated to peer down a icosahedral three-fold axis in the center of the area that was modeled to emphasize the lack of Dec density at this location.
 
 The tight packing of the dsDNA genomes into the virions of many phages and herpesviruses creates enormous internal pressure (10–60 atm) within the capsids, resulting in high-energy states that prime the particles for infection, and facilitate delivery of the majority of the viral genomes into the hosts (Evilevitch, 2018; Kellermayer et al., 2018; Bauer et al., 2013; Bauer et al., 2015; Sharma et al., 2017; Gelbart and Knobler, 2009; Grayson et al., 2007; Kindt et al., 2001). Phages have evolved diverse strategies to strengthen their capsids against the internal pressures resulting from genome packaging. In the well-studied phage HK97, the coat proteins form covalent crosslinks (Popa et al., 1991) with neighboring subunits, thereby creating a unique ‘chain mail’ lattice (Wikoff et al., 1998; Duda, 1998). By contrast in some other phages, a separately expressed auxilliary ‘decoration’ protein (sometimes called ‘cementing’ protein) functions as a molecular staple to stabilize the mature capsids. The essential phage λ decoration protein gpD stabilizes its capsid (Sternberg and Weisberg, 1977; Imber et al., 1980) and binds at all possible binding sites between capsomers, including positions at both icosahedral and local three-fold symmetry axes (Dokland and Murialdo, 1993; Lander et al., 2008; Yang et al., 2008). Other related phages do not utilize covalent crosslinks for stability, or auxillary decoration proteins. Instead, these capsids rely entirely on stabilizing interactions between protein subunits. For example, a portion of the coat protein called the ‘P-loop’ can create stabilizing interactions with neighboring capsid subunits around three-fold symmetry axes in the absense of auxiliary decoration proteins for many diverse phages (Parent et al., 2010; Chen et al., 2011; Spilman et al., 2011; Parent et al., 2012a; Parent et al., 2014).
 
@@ -37,19 +49,331 @@ Defining the mechanisms by which different decoration proteins, such as gpD and 
 
 ## Results
 
-## Cryo-EM structure of phage L at near-atomic resolution
+### Cryo-EM structure of phage L at near-atomic resolution
 
 As a first step toward understanding the mechanism by which Dec binds to phage L, we determined the structure of native phage L capsids using cryo-EM (Figure 1 and Figure 1—figure supplement 1). Local resolution analysis (Cardone et al., 2013) shows that some areas of the map are better resolved than others, including the capsid proteins and the base of the Dec trimer, whereas the distal end of Dec is at much lower resolution (Figure 1—figure supplement 1C). Both the overall protein structure, as well as the specific contact points for attachment of Dec trimers to the coat protein subunits are clearly discernable near quasi-three-fold symmetry axes between hexons. As anticipated from previous studies (Tang et al., 2006; Parent et al., 2012b), Dec very sparsely occupied icosahedral three-fold symmetry sites in phage L virions (data not shown), with only a hint of very weak density observed at these positions and no Dec occupancy at the alternative quasi-three-fold sites between hexons and pentons (Figure 1A). Segmentation of the Dec density from the virion density map for subsequent analysis was performed using UCSF Chimera’s Segger (Pintilie et al., 2010) (Figure 1B,C).
 
-## Structures of the phage L coat lattice and capsid-bound Dec trimer
+### Structures of the phage L coat lattice and capsid-bound Dec trimer
 
 As an initial guide for accurately fitting the phage L coat protein into the cryo-EM density, we used the most recent 3.3 Å-resolution structure of phage P22 coat protein (PDB ID: 5UU5; Hryc et al., 2017), since phage L and phage P22 are highly homologous, differing at only four positions of their 430 amino acid coat proteins (Tang et al., 2006). Upon initial docking, we found small discrepancies between the phage L capsid cryo-EM density and the P22 coat protein asymmetric unit structure. Therefore, to optimally fit the cryo-EM density we refined the phage L asymmetric unit where each capsid protein was allowed to move independently in the cryo-EM density envelope using the program Phenix (Table 1). The phage L capsid protein subunit domains (Figure 1—figure supplement 2) are named as defined for P22 coat protein (Hryc et al., 2017; Rizzo et al., 2014). The four amino acid sequence differences between phage L and P22 coat proteins were accounted for during modeling and are not near the Dec binding interface (see Video 1). The R101H difference is within the spine helix pointing towards the capsid interior, I154L is located in the A-domain toward the hexamer center, M267L is in the I-domain, adjacent to but not interacting with Dec, and A276T in also located in the I-domain but on the distal end pointing toward the center of the hexamer (Figure 1—figure supplement 2). Overall, there were only very minor differences between the optimally fit P22 and phage L capsid lattices. The phage L coat protein (Cα backbone) deviated from those in the P22 structure (PDB 5UU5) by about 1 Å for the hexamer and 1.5 Å for the penton unit, which is in the range of what may be expected for structures of homologous proteins (Eyrich et al., 2001).
 
+**Table 1.**
+ Cryo-EM data collection and model refinement statistics.
+
+
+<table>
+  <tbody>
+    <tr>
+      <td colspan="3">Data collection</td>
+    </tr>
+    <tr>
+      <td colspan="2">EM equipment</td>
+      <td>FEI Titan Krios</td>
+    </tr>
+    <tr>
+      <td colspan="2">Voltage (kV)</td>
+      <td>300</td>
+    </tr>
+    <tr>
+      <td colspan="2">Detector</td>
+      <td>DE-20</td>
+    </tr>
+    <tr>
+      <td colspan="2">Pixel size (Å)</td>
+      <td>1.26</td>
+    </tr>
+    <tr>
+      <td colspan="2">Electron Dose (e-/Å2)</td>
+      <td>27</td>
+    </tr>
+    <tr>
+      <td colspan="2">Defocus range (μm)</td>
+      <td>0.35–2.49</td>
+    </tr>
+    <tr>
+      <td colspan="3">Reconstruction</td>
+    </tr>
+    <tr>
+      <td colspan="2">Software</td>
+      <td>AUTO3DEM</td>
+    </tr>
+    <tr>
+      <td colspan="2">Number of particles</td>
+      <td>7879</td>
+    </tr>
+    <tr>
+      <td colspan="2">Symmetry</td>
+      <td>532</td>
+    </tr>
+    <tr>
+      <td colspan="2">Map resolution (Å) at FSC = 0.143</td>
+      <td>4.2</td>
+    </tr>
+    <tr>
+      <td colspan="3">Model building and Refinement</td>
+    </tr>
+    <tr>
+      <td colspan="2">Software</td>
+      <td>COOT, Phenix</td>
+    </tr>
+    <tr>
+      <td>Model Statistics and Validation</td>
+      <td>Coat</td>
+      <td>Dec</td>
+    </tr>
+    <tr>
+      <td>No. protein chains in ASU</td>
+      <td>7</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>No. residues per protein</td>
+      <td>430</td>
+      <td>134</td>
+    </tr>
+    <tr>
+      <td>Model resolution (Å) at FSC = 0.5</td>
+      <td>4.30</td>
+      <td>5.80</td>
+    </tr>
+    <tr>
+      <td>Cross-correlation coefficient (CC)</td>
+      <td>0.61</td>
+      <td>0.40</td>
+    </tr>
+    <tr>
+      <td>MolProbity Score</td>
+      <td>2.21</td>
+      <td>1.93</td>
+    </tr>
+    <tr>
+      <td>Clashscore</td>
+      <td>2.20</td>
+      <td>0.87</td>
+    </tr>
+    <tr>
+      <td colspan="3">R.m.s. deviations</td>
+    </tr>
+    <tr>
+      <td>Bond length (Å)</td>
+      <td>0.021</td>
+      <td>0.018</td>
+    </tr>
+    <tr>
+      <td>Bond angle (˚)</td>
+      <td>2.62</td>
+      <td>2.21</td>
+    </tr>
+    <tr>
+      <td>Preferred</td>
+      <td>92.42</td>
+      <td>77.53</td>
+    </tr>
+    <tr>
+      <td>Allowed</td>
+      <td>5.41</td>
+      <td>13.69</td>
+    </tr>
+    <tr>
+      <td>Outlier</td>
+      <td>2.17</td>
+      <td>8.59</td>
+    </tr>
+  </tbody>
+</table>
+
+![Video 1.](https://cdn.elifesciences.org/articles/45345/elife-45345-video1.mp4.jpg)
+
+**Video 1.:** A single segmented Dec density is shown in lavender, and coat protein subunits that comprise the binding interface are shown as grey ribbons. The amino acid substitutions between phage L and P22 are shown as spheres color-coded to match the protein domains as shown in Figure 1—figure supplement 2: R101H (green), I154L (cyan), A276 and M267 (magenta).
+
 The capsid-bound Dec trimer was previously reported to have a tripod shape with three N-terminal legs interacting with the capsid surface, and a protruding central C-terminal head or stalk based on low-resolution data (Tang et al., 2006; Parent et al., 2012b). Our results agree with the previously published lower resolution structure; however, the higher resolution data for Dec, particularly in the N-terminal region, now allows a detailed analysis of the fold of the protein and interpretation of the binding interface. The trimeric Dec density (one segmented trimer is shown in Figure 1B) is asymmetric and well defined at the quasi-three-fold symmetry axes between hexons (Parent et al., 2012b; Schwarz et al., 2015). The resolution within the Dec density is on average lower than the capsid, likely due to protein flexibility, especially in the C-terminal stalk region (Figure 1—figure supplement 1).
 
-## The NMR structure of the Dec monomer consists of an OB-fold domain and an unfolded C-terminus
+### The NMR structure of the Dec monomer consists of an OB-fold domain and an unfolded C-terminus
 
 To investigate the properties of free Dec in solution, we used NMR to characterize the unassembled protein in the absence of capsids using an acid unfolding protocol of lowering the pH to 2, followed by a refolding step induced by adjusting the pH to four as defined in Newcomer et al. (2018). Subsequent characterization of the protein using size exclusion chromatography, native-gel electrophoresis, and 15N NMR relaxation measurements (Figure 3—figure supplement 1) showed that the unfolding/refolding protocol converts purified Dec from a trimer to partially folded monomers (Newcomer et al., 2018). The high quality of the NMR data enabled us to obtain nearly complete (98%) NMR assignments for the monomeric Dec protein (Newcomer et al., 2018). The NMR structure was determined using the program ARIA 2.3 (Bardiaux et al., 2012), based on the experimental NMR constraints summarized in Table 2. The coordinates of the Dec monomer NMR structure ensemble have been deposited to the PDB under accession number 6E3C.
+
+**Table 2.**
+ Statistics for the top 20 NMR structures of Dec.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Experimental restraints</th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Total number of NMR restraints</td>
+      <td>1009</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total number of NOE distance restraints</td>
+      <td>767</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ambiguous</td>
+      <td>73</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Unambiguous</td>
+      <td>694</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Long range (|i-j| &gt; 4)</td>
+      <td>124</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Medium range (|i-j|)≤4)</td>
+      <td>93</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequential (|i-j|)=1)</td>
+      <td>281</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Intra-residue NOEs</td>
+      <td>269</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Total number of dihedral restraints</td>
+      <td>174</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>φ/ ψ</td>
+      <td>127</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>χ1</td>
+      <td>47</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Hydrogen bond restraints (34*2)</td>
+      <td>68</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RMSD from experimental restraints*</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>NOE distance (Å)</td>
+      <td>0.054 ± 0.003</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Dihedral (°)</td>
+      <td>0.42 ± 0.14</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RMSD from ideal geometry</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Bonds (Å)</td>
+      <td>0.0042 ± 0.0001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Angles (°)</td>
+      <td>0.55 ± 0.02</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Improper angles (°)</td>
+      <td>1.68 ± 0.12</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>EL-J (kcal/mol)</td>
+      <td>- 316 ± 44</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>RMSD from mean NMR structure</td>
+      <td>Backbone†</td>
+      <td>All Heavy Atoms</td>
+    </tr>
+    <tr>
+      <td>Entire protein 1–134 (Å)</td>
+      <td>&gt;9.5</td>
+      <td>&gt;9.5</td>
+    </tr>
+    <tr>
+      <td>Folded regions 12–86 (Å)</td>
+      <td>1.33 ± 0.21</td>
+      <td>1.95 ± 0.32</td>
+    </tr>
+    <tr>
+      <td>OB-fold 18–77 (Å)</td>
+      <td>1.08 ± 0.18</td>
+      <td>1.66 ± 0.25</td>
+    </tr>
+    <tr>
+      <td>OB-fold 2o structure‡ (Å)</td>
+      <td>0.84 ± 0.15</td>
+      <td>1.57 ± 0.31</td>
+    </tr>
+    <tr>
+      <td>Procheck Ramachandran Plot Statistics§</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Most favored (%)</td>
+      <td>89.1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Additionally allowed (%)</td>
+      <td>10.9</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Generously allowed (%)</td>
+      <td>0.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Disallowed (%)</td>
+      <td>0.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Quality Z Scores from PSVSe</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Procheck (ϕ,ψ)</td>
+      <td>−2.64</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Molprobity Clash</td>
+      <td>−1.19</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+_* Structures had no NOE violations > 0.5 Å nor dihedral violations > 5 degrees.† Atoms: Cα, N, C, O.‡ Calculated over residues in the OB-fold portion: 21–32 (β1), 35–40 (β2), 47–50 (β3), 52–59 (αOB), 63–68 (β4), 73–77 (β5), a total of 41 amino acids.§ Calculated with the PSVS server (http://psvs-1_5-dev.nesg.org) using only the folded parts of Dec (residues 12–89)._
 
 The N-terminal domain of the Dec monomer has an OB-fold motif (Figure 2). The final NMR structure (Figure 2A) is close to an initial NMR model calculated with the program CS-ROSETTA (Shen et al., 2009), based on the assigned NMR chemical shifts in combination with template-based modeling (Figure 3—figure supplement 2). The backbone (Cα, C’, N, O) RMSD is 2.3 Å over the folded parts of the structure (residues 12–89) between the NMR structure and the CS-Rosetta model. Submission of the NMR Dec monomer structure to the DALI server (Holm and Rosenström, 2010) identified about 80 matches to proteins that contain similar OB-fold domain structures. The strongest of these is a portion (residues 117–174) of chain E of the 40S ribosomal protein SA (PDB code 4KZX-E). This superposed on the Dec NMR structure with a Cα RMSD of 3.5 Å over 61 residues, supporting our interpretation that the structure of the Dec N-terminus is in the family of OB-fold motifs.
 
@@ -63,7 +387,23 @@ As with many OB-fold proteins (Guardino et al., 2009), Dec has additional non-co
 
 To further characterize Dec, we analyzed the dynamics of the monomeric protein using NMR 15N-relaxation data in terms of the ‘Model-Free’ formalism (Figure 3—figure supplement 1). The local backbone mobility of the Dec monomers is summarized in Figure 3. The N-terminus from residues 1–11 and the C-terminus from residues 90–134 have small S2 order parameters characteristic of unfolded protein segments (Figure 3A, Video 2). The random coil chemical shifts of these regions (Newcomer et al., 2018) and the lack of long-range NOEs, are also consistent with these segments being unstructured in the Dec monomers. Small and intermediate S2 values indicative of increased flexibility on the ps-ns timescales are also seen at sites within the folded globular portion of Dec (Figure 3A). Information on motions within slower µs-ms timescales can be garnered from exchange contributions to R2 transverse relaxation (R2EX parameters). The sites with the largest R2EX contributions are similar to those with low S2 order parameters, in particular loops L23, L45 and the region surrounding the loop L3α (purple and red in Figure 3B). The sites within the folded portion of the Dec monomers with the largest flexibility based on S2 and R2EX values are shown in Figure 3C and D, respectively.
 
-## Homology modeling of phage-bound Dec suggests a trimeric β-helix motif forms the C-terminal spike
+![Figure 3.](https://cdn.elifesciences.org/articles/45345/elife-45345-fig3-v1.jpg)
+
+**Figure 3.:** (A) S2 order parameters describing the amplitude of fast motions on the ps-ns timescale. Rigid (S2 >0.65), moderately flexible (0.65 ≥ S2>0.55), and highly flexible (0.55 ≥ S2) sites are indicated by black, purple, and red symbols respectively. The secondary structure of Dec is given at the top of panel A. (B) Contributions to R2 relaxation from slow conformational exchange on the µs-ms timescale. Amide protons with moderate R2ex values smaller than 3 Hz are shown in purple, those with large contributions above 3 Hz in red. The S2 and R2ex parameters were obtained from a Model-Free analysis (Lipari and Szabo, 1982) of 15N R1, R2, and 1H-15N NOE relaxation data for Dec (Figure 3—figure supplement 1) using the program TENSOR 2.0 (Dosset et al., 2000). In (C) and (D) the S2 and R2ex values are mapped onto the NMR structure ensembles for Dec. Residues 1–10 and 90–134 which are unfolded and thus have the lowest S2 values, are not shown in the structures.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45345/elife-45345-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) R1, (B) R2, (C) 1H-15N NOE. All data were recorded at 800 MHz, with a sample temperature of 33°C. The secondary structure of Dec, derived from its NMR structure, is indicated at the top of the first panel. The average R2 and R1 values for the folded portions of Dec are about 13 Hz and 1.4 Hz, respectively. For comparison, a Dec trimer with the expected theoretical MW of 43 KDa should have R2 and R1 values near 50 Hz and 0.4 Hz, respectively (Kumar et al., 2018). Thus, the 15N relaxation data for Dec samples subjected to our unfolding/refolding protocol are more consistent with a 14.4 KDa Dec monomer than a trimer. Similarly, the Model-Free analysis of the 15N relaxation data gives an optimum global correlation time for isotropic rotational diffusion of 7.4 ns, consistent with a Dec monomer. For a 43 KDa trimer the value of the correlation time should be about 21 ns.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/45345/elife-45345-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** (A) The lowest energy model based on the assigned NMR chemical shifts of Dec (Newcomer et al., 2018) has an OB-fold topology. Only residues 10–88 were included in the CS-ROSETTA simulations (Shen et al., 2009), since the program predicted that residues 1–9 and 89–134 are disordered, based on the assigned NMR chemical shifts. The 5-stranded, Greek Key β-barrel OB-fold motif (Murzin, 1993) is formed from a β1-b3 meander (light blue) and a β4-β5 hairpin (yellow), with an α-helix (green) intervening between strands β3 and β4. (B) Graph showing convergence of the CS-ROSETTA simulations. The statistics indicated that the CS-ROSETTA simulations did not fully converge. In spite of this, nine of the top 10 lowest energy structures had an OB-fold structure with an average RMSD of 2.5 Å to the structure shown in (A).
+
+![Video 2.](https://cdn.elifesciences.org/articles/45345/elife-45345-video2.mp4.jpg)
+
+**Video 2.:** To illustrate the precision of the structure all 20 members of the NMR ensemble are shown. The movie then flips through the 20 individual NMR structures to show the differences in precision between the structured OB-fold component, and the unstructured N- (yellow) and C-termini (orange). In the second half of the movie, the N- and C-termini are not shown to better illustrate differences in structural definition of the OB-fold component.
+
+### Homology modeling of phage-bound Dec suggests a trimeric β-helix motif forms the C-terminal spike
 
 The NMR structure of Dec revealed an OB-fold for the N-terminal portion of the protein; however, the C-terminal portion was unstructured for the monomer in solution. As we previously observed (Parent et al., 2012b), the N-terminal domain forms the legs of the Dec ‘tripod’ that are bound to the capsid, and the C-terminal region forms its protruding central stalk. The ordered N-terminal domain was not sufficient to fill the entire density within the cryo-EM map. Moreover, fitting the structured N-terminal OB-fold region of the protein into the density showed little or no inter-subunit trimer contacts from the first 77 residues of Dec. Thus, the C-terminus of Dec, evident as a spike in cryo-EM maps of capsid-bound Dec (Parent et al., 2012b), becomes ordered either upon Dec trimerization or capsid binding.
 
@@ -73,7 +413,7 @@ We used a combination of the NMR structure and homology modeling to build a mode
 
 **Figure 4.:** (A) Side B) top-down, and C) bottom-up views of the Dec trimer model fit into the cryo-EM density map with individual chains colored magenta, cyan, and green.
 
-## Mutagenesis of P22 coat protein and Dec reveals key residues that modulate binding
+### Mutagenesis of P22 coat protein and Dec reveals key residues that modulate binding
 
 The OB-fold of Dec, as determined by NMR, fits the cryo-EM map of the ‘tripod’ legs in the native phage L virion very well (Figure 4). This allowed us to fit models of several coat protein subunits and Dec to analyze the Dec-coat protein binding interface. The resolution of the coat protein in the cryo-EM map in this region was sufficient to fit some bulky side chains. Furthermore, the NMR structure allowed us to make predictions regarding the side chain orientation of Dec residues that potentially bind to coat protein. Analysis of the binding interface revealed several residues in close contact between the phage L coat protein and Dec that appear to be important for binding. Therefore, we tested our models using site-directed mutagenesis of phage P22 coat protein. P22 is a very well-established model system with a variety of molecular tools readily available (Teschke and Parent, 2010). Previous work has shown that P22 and phage L behave similarly (Gilcrease et al., 2005; Tang et al., 2006; Parent et al., 2012b) and all the amino acid substitutions found in phage L have even been identified occasionally in P22 stocks as phenotypically silent mutations (Teschke lab, unpublished data). Lastly, as Dec bound to P22 is a widely used system for a variety of nanomaterials applications (Sharma et al., 2017; Schwarz et al., 2015; McCoy et al., 2018), identifying key residues that contribute to Dec interactions with P22 is highly useful for practical applications. Therefore, we felt it reasonable to use the established genetics of P22 as a model for the native phage L for our mutagenesis studies.
 
@@ -82,6 +422,10 @@ Previous work suggested that Dec binding to P22 capsids is driven primarily thro
 ![Figure 5.](https://cdn.elifesciences.org/articles/45345/elife-45345-fig5-v1.jpg)
 
 **Figure 5.:** (A) Coat protein subunits depicted as ribbon diagrams around a quasi three-fold axis Dec-binding site. Three coat subunits directly surrounding a quasi three-fold axis are shown in light grey, and three neighboring coat proteins are shown in black. Residues selected for mutagenesis are shown as spheres. (B) Normalized binding data of the ratio of variant coat protein bound to WT Dec, color-coded to match the corresponding residues in panel A. (C) Portions of Dec highlighting the OB-fold (residues 10–77) shown as ribbons, with each monomer a different shade of blue. Residues selected for mutagenesis are shown as spheres. (D) Enlarged side view of the Dec cryo-EM density with the OB-fold (residues 10–77) from one monomer shown as a ribbon, with the two different capsid-binding sites indicated. (E) Normalized binding data of the ratio of WT coat protein bound to variant Dec, and color-coded to match the corresponding residues in panels C and D.
+
+![Video 3.](https://cdn.elifesciences.org/articles/45345/elife-45345-video3.mp4.jpg)
+
+**Video 3.:** View of the binding interactions between Dec and coat protein at a quasi-three-fold symmetry axis. Coat protein is shown in grey density and Dec is shown in lavender. Six coat subunits are fit within this density and three Dec OB-fold domains from the NMR structure were fit to the Dec density. Individual protein chains are shown are ribbons; amino acid sites that were chosen for mutagenesis are shown as spheres, and color coded to match the data in Figure 5 of the main text.
 
 Coat proteins occupying different local conformations (as a result of the quasi-equivalent capsid lattice) contribute different residues to the binding interface (Figure 5A, Video 3). For example, residues E81, P82, and R299 from the coat protein subunits that form the quasi-three-fold symmetry axes (grey subunits in Figure 5) contact Dec from one subunit, whereas residues P322 and E323 contact Dec from adjacent and overlapping coat protein subunits (black subunits in Figure 5). To assess the role that specific Dec residues play in capsid binding, we also made five single amino acid substitutions in recombinant Dec protein: K30D, Y31A, Y49E, Y71A, and E73R (see Materials and methods). Modified Dec proteins were added to mature WT phage particles, complexes were purified using CsCl gradients, and relative amount of each Dec protein bound to virions was quantitated. The global secondary structure of all Dec variants was indistinguishable from the WT protein by circular dichroism. Furthermore, native gel experiments performed as described previously (Newcomer et al., 2018) showed that all Dec variants assemble as trimers in solution. Therefore, any changes in Dec occupancy in the variants are likely due to a disruption of the binding interface, rather than protein folding defects.
 
@@ -93,7 +437,7 @@ We also tested our hypothesis by making substitutions in coat protein residues t
 
 ## Discussion
 
-## Decoration proteins employ a variety of binding schemes to adhere to phage capsids
+### Decoration proteins employ a variety of binding schemes to adhere to phage capsids
 
 For dsDNA tailed phages and related viruses, decoration proteins can occupy the capsid lattice in several different positions. Some decoration proteins bind capsids at the center of hexamers including those of phages T4, T5, RB49, and Sf13 through Sf19, (Vernhes et al., 2017; Doore et al., 2018; Sathaliyawala et al., 2010; Fokine et al., 2011). Other decoration proteins bind the edges of hexamers as exemplified by gp17 in phage N4 (Choi et al., 2008). Finally, there are decoration proteins that bind the capsid in areas between capsomers such as gpD in λ, gp56 in phage TW1, Soc in phage T4, gp87 in phage P74-26, and Dec in phage L (Lander et al., 2008; Tang et al., 2006; Wang et al., 2018; Qin et al., 2010; Stone et al., 2018). In all the aforementioned cases, the decoration proteins are added after capsid assembly. Conversely, the herpesvirus heterotrimeric triplex protein decorates the outside of the capsid and is also essential during capsid assembly (Zhou et al., 1994; Heming et al., 2017). For the majority of these examples, all possible quasi-equivalent binding sites on the lattice are occupied by the decoration proteins. By contrast, in phage L, Dec uniquely binds at one type of symmetry axis with high affinity: the quasi-three-fold sites between hexamers (Figure 1A).
 
@@ -105,11 +449,11 @@ How might Dec discriminate between the different three-fold sites on phage L? Fi
 
 **Figure 6.:** The topology of six coat protein subunits surrounding the different three-fold positions were compared using the Match tool in Chimera. The quasi three-fold site between coat protein hexamers that binds a Dec trimer was chosen as the reference structure and aligned to the three-fold site between a pentamer and neighboring hexamers (dark blue) that does not bind Dec. The cartoon schematic shows the location of residue E81 with a small magenta circle on three coat protein subunits that comprise the Dec binding interface (label ‘A’ designates the specific coat protein subunit used for anchoring the structures in Chimera). The relative displacement of E81 in subunits labeled ‘1’ or ‘2’ when in an icosahedral three-fold or the quasi three-fold surrounding pentamers was measured and the distances are shown in the table. A side view of the quasi three-fold site between hexamers that binds Dec (light blue) with the quasi three-fold site between a penatmer and neighboring hexamers (dark blue) is shown as a ribbon diagram. The box shows an enlarged and tilted view of the binding interface with residue E81 shown as spheres. Additionally, the Dec density is shown in lavender at the position of the quasi three-fold site between hexamers.
 
-## Dec has a novel architecture
+### Dec has a novel architecture
 
 In dsDNA-containing tailed phages, previously studied decoration proteins for which atomic-resolution structures are known have three basic types of protein folds. Decoration proteins such as phage T5’s pb10 and T4’s hoc, have an overall Ig domain fold (Vernhes et al., 2017; Fokine et al., 2011). A second, more common type of decoration protein, exemplified by phage lambda’s gpD, P74-26’s gp87, phage 21’s SHP, and TW1 gp56, have similar polypeptide folds and form a symmetric trimer with an N-terminal β-tulip domain and an α/β subdomain that binds and stabilizes capsids through hydrophobic interfaces (Stone et al., 2018; Lambert et al., 2017). Additionally, some decoration proteins are known to bind the center of hexamers, as exemplified by protein Psu in phage P4 (Isaksen et al., 1993; Dokland et al., 1993; Banerjee et al., 2012). Our work shows that Dec represents a fourth type of decoration protein fold (Figure 7), the OB-fold, as well as a different capsid-binding mechanism that discriminates between quasi three-fold capsid-binding sites between pentamers and hexamers, and the icosahedral three-fold sites. To our knowledge, Dec represents the first occurrence of an OB-fold structure in a virus decoration/cementing protein. Dec may have additional functions besides capsid stabilization. For example, Dec could play a role in cell adhesion. Preliminary evidence suggests that Dec might bind to target cells, presumably through carbohydrate moieties emanating from the target cell surfaces (Teschke lab, unpublished data). From a structural point of view, both the OB-fold part of Dec and the C-terminal beta-helix could be carbohydrate-binding motifs. However, future work will be needed to fully explore and validate this hypothesis. If Dec plays a role in cell surface binding, 60 Dec trimers rather than the saturating 140 must be sufficient for this function.
 
-## Dec binds phage L capsids with an unusual strategy
+### Dec binds phage L capsids with an unusual strategy
 
 Crystal structures for gpD (Yang et al., 2000), gp87 (Stone et al., 2018), and SHP (Forrer et al., 2004) lack resolution for several N-terminal residues, indicating that these regions are flexible when these decoration proteins are not associated with capsids. Cryo-EM maps of gpD in native phage λ show that the N-terminus becomes highly ordered when gpD is in a bound conformation, and that the N-terminus is the major part of the capsid-binding mechanism as the N-terminus forms a stabilizing β-sheet with strands supplied from the capsid protein (Lander et al., 2008). Like gpD, the N-terminus of the Dec monomer is disordered in solution as shown here by NMR. However, unlike gpD, our data indicates that the Dec N-terminus remains rather flexible in the capsid-bound form since there is (1) no cryo-EM density that is attributable to the first 10 residues, (2) our previous cryo-EM data show the N-terminus of Dec can be labeled with large cargo such as nanogold beads that are rather flexibly bound to the capsid (Parent et al., 2012b), and (3) deletion of the first 11 residues of Dec does not affect capsid binding affinity (Schwarz et al., 2015). When we compare the phage L Dec binding motif to the capsid stabilization mechanism in HK97, we see that the residues that control Dec binding occupy similar spatial positions as the HK97 crosslinking residues that crosslink to form the lattice ‘chainmail’, suggesting that stabilization at this type of interface is crucial to capsid stability.
 
@@ -117,27 +461,289 @@ Furthermore, comparison of Dec to the β-tulip family of decoration proteins hig
 
 ## Materials and methods
 
-## Strains and media
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Salmonella enterica)</td>
+      <td>DB7136 (Salmonella enterica serovar Typhimurium; used to purify phages)</td>
+      <td>PMID: 15743953</td>
+      <td></td>
+      <td>Host for phages P22 and L</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Escherichia coli)</td>
+      <td>BL21/DE3/pLysS (Escherichia  coli; used for protein purification)</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>Protein expression system</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Phage P22)</td>
+      <td>Phage P22 (P22 5-am N114)</td>
+      <td>PMID: 4773026</td>
+      <td></td>
+      <td>Phage, clear plaque mutant</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Phage L)</td>
+      <td>Phage L</td>
+      <td>PMID: 15743953</td>
+      <td></td>
+      <td>Phage, clear plaque mutant</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pMS11 (plasmid-coat protein; used in binding assays)</td>
+      <td>PMID: 24126914</td>
+      <td></td>
+      <td>Plasmid for coat protein complementation</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDec (plasmid-Dec protein; used in binding assays)</td>
+      <td>PMID: 22575828</td>
+      <td></td>
+      <td>Plasmid for Dec protein purification-C-terminal his tag</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pDec-NMR (plasmid- Dec protein; used in NMR experiments)</td>
+      <td>PMID: 30109462</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Primers-coat protein mutants: E81R (gtaaacatgggaccgccggataacgacttcttccagttgcg); P82S (gcggtaaacatgggagagtccgataacgacttcttccagttgcg); R299E (gcgactttctccgtagtcgaagttgttgacggtactcatgttg); P322S (gatgtttccctgtcttccgagcagcgtgcctacgccaacgtt); E323R (gatgtttccctgtctccgcgccagcgtgcctacgccaacgtt)</td>
+      <td>IDT</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence- based reagent</td>
+      <td>Primers-Dec protein mutants: K30D (gtgtctgcgcttccgattaaagctatcgagtacgctaatgacgg); Y31A (tgtctgcgcttccgattaaagctatcaaagccgctaatgacgga); Y49E (ggcccgtatgctgaccaggagatgtcagcgcaaacagtagcc); Y71A (ggatatctgttccggagccaggccggcgagctgctctatatgagc); E73R (ggatatctgttccggagccagtacggcaggctgctctatatgagc)</td>
+      <td>IDT</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quikchange</td>
+      <td>Agilent</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mini prep kits</td>
+      <td>Qiagen</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Compound, chemical or drug</td>
+      <td>Isopropyl β-D-1-thiogalactopyranoside</td>
+      <td>GoldBio</td>
+      <td></td>
+      <td>Protein expression</td>
+    </tr>
+    <tr>
+      <td>Compound, chemical or drug</td>
+      <td>Ampicillin</td>
+      <td>Amresco</td>
+      <td></td>
+      <td>Selection media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>LB (broth and agar)</td>
+      <td>Invitrogen</td>
+      <td></td>
+      <td>Media</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>15N- Ammonium Chloride</td>
+      <td>Cambridge Isotope Laboratories</td>
+      <td></td>
+      <td>Isotopic labeling</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Deuterium Oxide (99.8%)</td>
+      <td>Sigma Aldrich</td>
+      <td></td>
+      <td>Isotopic labeling</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>13C6 Glucose</td>
+      <td>Cambridge Isotope Laboratories</td>
+      <td></td>
+      <td>Isotopic labeling</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>D-Glucose-13C6,1,2,3,4,5,6,6-d7</td>
+      <td>Cambridge Isotope Laboratories</td>
+      <td></td>
+      <td>Isotopic labeling</td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Quantifoil R2/2</td>
+      <td>Ted Pella</td>
+      <td></td>
+      <td>Cryo-EM support film</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Leginon</td>
+      <td>PMID: 11121305</td>
+      <td>RRID:SCR_016731</td>
+      <td>Cryo-EM data collection</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SerialEM</td>
+      <td>PMID: 16182563</td>
+      <td></td>
+      <td>Cryo-EM data collection</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>auto3dem</td>
+      <td>PMID: 17029842</td>
+      <td></td>
+      <td>Cryo-EM 3D reconstruction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RobEM</td>
+      <td>Timothy S Baker's lab, UCSD</td>
+      <td></td>
+      <td>Cryo-EM 3D reconstruction</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Phenix</td>
+      <td>PMID: 29872004</td>
+      <td>RRID:SCR_014224</td>
+      <td>Cryo-EM map fitting and analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>PMID: 15264254</td>
+      <td>RRID:SCR_004097</td>
+      <td>cryo-EM image visualization</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NAMD</td>
+      <td>PMID: 16222654</td>
+      <td>RRID:SCR_014894</td>
+      <td>Homology modeling</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CHARMM</td>
+      <td>PMID: 19444816</td>
+      <td>RRID:SCR_014892</td>
+      <td>Homology modeling</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>MMTSB Tool Set</td>
+      <td>PMID: 15099834</td>
+      <td></td>
+      <td>Homology modeling</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ccpNmr analysis</td>
+      <td>PMID: 15815974</td>
+      <td>RRID:SCR_016983</td>
+      <td>NMR data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Aria</td>
+      <td>PMID: 17121777</td>
+      <td></td>
+      <td>NMR data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CS-ROSETTA</td>
+      <td>PMID: 19034676</td>
+      <td>RRID:SCR_015701</td>
+      <td>NMR data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TALOS-N</td>
+      <td>PMID: 23728592</td>
+      <td></td>
+      <td>NMR data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Tensor-2</td>
+      <td>PMID: 10718609</td>
+      <td></td>
+      <td>NMR data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Dali</td>
+      <td>PMID: 20457744</td>
+      <td>RRID:SCR_013433</td>
+      <td>NMR data analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NMRbox</td>
+      <td>PMID: 28445744</td>
+      <td>RRID:SCR_014827</td>
+      <td>NMR data analysis</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and media
 
 Phage L, its bacterial host, and purification procedures to produce high-titer stocks were previously described (Gilcrease et al., 2005; Tang et al., 2006). Stocks were stored in a 10 mM Tris (pH 7.6) and 10 mM MgCl2 buffer. LB Miller broth and LB agar (Invitrogen) were used for all experiments.
 
-## Purification of P22 phage with various coat proteins
+### Purification of P22 phage with various coat proteins
 
 Salmonella enterica serovar Typhimurium strain DB7136 (leuA414am, hisC525am, su0), expressing P22 coat protein from mutant pMS11 plasmids, were infected with P22 phage carrying amber mutations in gene five to stop production of phage-encoded coat protein as described previously (Suhanovsky and Teschke, 2013). This P22 strain also carried the c1-7 allele to prevent lysogeny. The resulting phages containing amino acid substitutions in coat protein were purified using standard protocols (Gilcrease et al., 2005; Parent et al., 2012b).
 
-## Site-directed mutagenesis of P22 coat protein and phage L Dec protein
+### Site-directed mutagenesis of P22 coat protein and phage L Dec protein
 
 The plasmid pMS11 was mutated using Quikchange protocols as described previously (D'Lima and Teschke, 2015) to generate plasmids that express coat protein containing the following substitutions: E81R, P82S, R299E, P322S, E323R, E81R:E323R. All plasmids were AmpR (100 μg/mL) and IPTG inducible (1 mM). Sequences were confirmed at the RSTF Genomics Core at Michigan State University. Plasmid pDec was mutated using Quikchange protocols, and was used to express wild type and variant Dec, each with a C-terminal histidine tag. Phage P22 purification (Gilcrease et al., 2005; Parent et al., 2012b) and binding assays were performed as described (Tang et al., 2006; Parent et al., 2012b). To measure binding, purified Dec was added to P22 phages made with WT or variant coat proteins. Free Dec was separated from Dec bound to P22 particles by cesium chloride density gradient sedimentation as previously described (Gilcrease et al., 2005; Tang et al., 2006). Bands containing P22 were TCA-precipitated, and analyzed by SDS-PAGE. Coomassie-stained gel bands corresponding to P22 coat protein and Dec were quantitated and normalized to the ratio found in native P22 particles when bound with Dec. All binding experiments were repeated two to four times. Representative data are shown.
 
-## Cryo-EM imaging
+### Cryo-EM imaging
 
 Aliquots (~5 μL) of phage L virions were vitrified and examined using published procedures (Baker et al., 1999). Briefly, this involved applying samples to Quantifoil R2/2 holey grids that had been plasma cleaned for ~20 s in a Fischione model 1020 plasma cleaner. Grids were then blotted with Whatman filter paper for ~5 s, and plunged into liquid ethane. Samples were pre-screened for concentraton and purification quality in a JEOL JEM-2200FS TEM using a Gatan 914 specimen holder, using standard low-dose conditions as controlled by SerialEM (Mastronarde, 2005). High-resoluiton imaging on an FEI Titan Krios was performed at Florida State University. Micrographs were recorded on a Direct Electron DE-20 camera wth a capture rate of 25 frames per second using a total of 53 frames, and a final dose of ~27 e/Å2 at a final pixel size of 1.26 Å. Movie correction was performed using the Direct Electron software package, v2.7.1 (Wang et al., 2014) on entire frames.
 
-## 3D image reconstructions of icosahedral particles
+### 3D image reconstructions of icosahedral particles
 
 Micrographs exhibiting minimal astigmatism were selected for further processing. The objective lens defocus settings used to record each data set ranged 0.35 to 2.49 μm. In total, the final reconstruction used 7879 of the best particles from 494 images. The program RobEM (http://cryoEM.ucsd.edu/programs.shtm) was used to estimate micrograph defocus and astigmatism, extract individual phage L particles, and to preprocess the images. 150 particle images were used as input to the random-model computation procedure to generate an initial 3D density map at ~25 Å resolution (Yan et al., 2007a). Each map was then used to initiate determination and refinement of particle orientations and origins for the complete set of images using the current version of AUTO3DEM (v4.01.07) (Yan et al., 2007b). Phases of the particle structure factor data were corrected to compensate for the effects caused by the microscope contrast-transfer function, as described (Bowman et al., 2002). The Fourier Shell Correlation (FSC0.5) ‘gold standard’ criterion was used to estimate the resolution of the final 3D reconstructions (Pintilie et al., 2016). The global resolution of the entire virion density map was determined to be 4.2 Å, without applying a mask. Local resolution was estimated as previously described (Cardone et al., 2013). Map segmentation was performed using the Segger tool in Chimera (Goddard et al., 2007). Phenix was used for autosharpening, atomic model fitting, and map validation for the segmented coat and Dec densities (Afonine et al., 2018). A portion of the native phage L capsid map (segmented coat and Dec density) has been deposited in the EMDB database (accession number EMD-9392). Graphical representations were generated using the UCSF Chimera visualization software package (Goddard et al., 2007).
 
-## NMR characterization of the structure and dynamics of monomeric Dec
+### NMR characterization of the structure and dynamics of monomeric Dec
 
 Samples of recombinant Dec enriched in 15N, 13C and 2H isotopes for NMR studies were expressed in E. coli and purified as described (Newcomer et al., 2018). To obtain samples suitable for NMR, 0.3 to 0.5 mM Dec was unfolded to pH 2 for 20 min, followed by refolding to pH 4.0 in 20 mM sodium acetate buffer containing 50 mM NaCl and 1 mM EDTA. The acid-unfolding/refolding procedure converted Dec to a monomer as monitored by native gel electrophoresis, size exclusion chromatography and 15N relaxation data (Newcomer et al., 2018). All NMR data were collected for samples held at a temperature of 33°C. Virtually complete NMR assignments for monomeric Dec (>98% of backbone resonances) were obtained using a suite of 3D NMR experiments (Newcomer et al., 2018) and have been deposited in the Biological Magnetic Resonance Bank (http://www.bmrb.wisc.edu/) with the accession number 27435.
 
@@ -145,7 +751,7 @@ NMR structures for Dec were calculated with the program ARIA v. 2.3.1 (Bardiaux 
 
 Backbone dynamics of Dec were characterized using 15N NMR R1, R2, and 1H-15N NOE relaxation data recorded at 800 MHz. R1 rates were obtained using interleaved relaxation delays of 0.05, 0.13, 0.21, 0.49, 0.57, 0.71 and 0.99 s. R2 rates were determined using interleaved relaxation delays of 0.01, 0.03, 0.05, 0.07, 0.09, 0.11, and 0.15 s. A 2 s pre-acquisition delay was used for recovery to thermal equilibrium. 1H-15N NOE values were determined from the ratio of crosspeak intensities in a spectrum for which the proton signals were saturated for 2.5 s and a control spectrum in which the saturation period was replaced by a pre-acquisition delay of equivalent length. The processing and analysis of relaxation parameters was done according to published protocols (Alexandrescu and Shortle, 1994). Model-free analyses (Lipari and Szabo, 1982) of the 15N relaxation data were performed with the program Tensor2 (Dosset et al., 2000), yielding an optimal global isotropic rotational correlation time of 7.4 ns.
 
-## Flexible fitting of coat protein and Dec into the cryo-EM map
+### Flexible fitting of coat protein and Dec into the cryo-EM map
 
 Initial structures of the capsid proteins were built via homology modeling based on the available structure for P22 (PDB ID 5UU5; Hryc et al., 2017). Using the symmetry operations in the PDB structure, 1/8th of the capsid was constructed to cover the entire cryo-EM density map for phage L. To obtain an initial structure, the entire capsid complex was fitted via rigid-body docking to the density map using UCSF Chimera (Goddard et al., 2007).
 

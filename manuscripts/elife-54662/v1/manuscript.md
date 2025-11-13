@@ -17,7 +17,7 @@
 
 ## Abstract
 
-We associate small numbers with the left and large numbers with the right side of space. Recent evidence from human newborns and non-human animals has challenged the primary role assigned to culture, in determining this spatial numerical association (SNA). Nevertheless, the effect of individual spatial biases has not been considered in previous research. Here, we tested the effect of numerical magnitude in SNA and we controlled for itablendividual biases. We trained 3-day-old chicks ( Gallus gallus ) on a given numerical magnitude (5). Then chicks could choose between two identical, left or right, stimuli both representing either 2, 8, or 5 elements. We computed the percentage of Left-sided Choice (LC). Numerical magnitude, but not individual lateral bias, explained LC: LC2 vs . 2>LC5 vs . 5>LC8 vs . 8. These findings suggest that SNA originates from pre-linguistic precursors, and pave the way to the investigation of the neural correlates of the number space association.
+We associate small numbers with the left and large numbers with the right side of space. Recent evidence from human newborns and non-human animals has challenged the primary role assigned to culture, in determining this spatial numerical association (SNA). Nevertheless, the effect of individual spatial biases has not been considered in previous research. Here, we tested the effect of numerical magnitude in SNA and we controlled for itablendividual biases. We trained 3-day-old chicks (Gallus gallus) on a given numerical magnitude (5). Then chicks could choose between two identical, left or right, stimuli both representing either 2, 8, or 5 elements. We computed the percentage of Left-sided Choice (LC). Numerical magnitude, but not individual lateral bias, explained LC: LC2 vs. 2>LC5 vs. 5>LC8 vs. 8. These findings suggest that SNA originates from pre-linguistic precursors, and pave the way to the investigation of the neural correlates of the number space association.
 
 ## Introduction
 
@@ -39,7 +39,7 @@ For each experiment, we calculated the percentage of trials in which the chick c
 
 We conducted Bayes factor analyses using the version 0.9.12–4.2 of the Bayes Factor package in R, and using the default parameter values and JASP 0.11.1. We used the classification by Lee and Wagenmakers, 2013 to interpret Bayes factor (BF). We conducted frequentist analyses using JASP 0.11.1.
 
-## Experiment 1
+### Experiment 1
 
 We first considered the effect of Order and Test on the percentage of Left-sided Choices (LC; Figure 1A; Source data 1). Against the ‘Intercept only’ model, the Bayesian ANOVA(BfANOVA) produced an extreme evidence in favor of a Test effect (BF >100), (repeated measures Anova: F(2,44)=36.375; p<0.01, η2 = 0.423); but no effect of Order (BF = 0.263), (repeated measures Anova: F(1,44) = 0.336; p=0.714, η2 = 0.004), (Source data 2).
 
@@ -51,9 +51,174 @@ We then tested the equality constraints of our model by comparing the unconstrai
 
 For what concerns the Number Bias, we firstly computed the SNB and the LNB, then we compared each Number Bias with the null = 0. T-test Bayes factor analysis yielded a very strong evidence in favor of the Number Bias for SNB, (BF = 49.037; One sample t test: t(23)=-3.922; p<0.001, Cohen’s d = −0.801), (Source data 3) and an extreme evidence in favor of the Number Bias for LNB (BF >100; One sample t test: t(23)=4.872; p<0.001, Cohen’s d = 0.994) (Source data 4). For what concerns the side of circumnavigation, we did not find any consistent evidence for each numerical magnitude: 2 vs. 2 (BF = 0.301; X2 = 0.403; p=0.525, Phi = 0.058); 5 vs. 5 (BF = 3.314; X2 = 5.444; p=0.020, Phi = 0.213); 8 vs. 8 (BF = 0.249; X2 = 0.062; p=0.804, Phi = 0.023), see Table 1, Experiment 1; (Source data 5).
 
+**Table 1.**
+ Data and results concerning the side of circumnavigation for each panel in all test conditions of both experiments (Source data 5).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="10">Experiment 1</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="2"></td>
+      <td colspan="2">Left panel</td>
+      <td colspan="2">Right panel</td>
+      <td rowspan="2">BF</td>
+      <td rowspan="2">X2</td>
+      <td rowspan="2">P</td>
+      <td rowspan="2">Phi</td>
+    </tr>
+    <tr>
+      <td>Test</td>
+      <td>Side</td>
+      <td>Left</td>
+      <td>Right</td>
+      <td>Left</td>
+      <td>Right</td>
+    </tr>
+    <tr>
+      <td>51</td>
+      <td>35</td>
+      <td>18</td>
+      <td>16</td>
+      <td rowspan="2">0.301</td>
+      <td rowspan="2">0.403</td>
+      <td rowspan="2">0.525</td>
+      <td rowspan="2">0.058</td>
+      <td rowspan="2">2 vs. 2</td>
+      <td>Count</td>
+    </tr>
+    <tr>
+      <td>59.302</td>
+      <td>40.698</td>
+      <td>52.941</td>
+      <td>47.059</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td>41</td>
+      <td>22</td>
+      <td>25</td>
+      <td>32</td>
+      <td rowspan="2">3.314</td>
+      <td rowspan="2">5.444</td>
+      <td rowspan="2">0.020</td>
+      <td rowspan="2">0.213</td>
+      <td rowspan="2">5 vs. 5</td>
+      <td>Count</td>
+    </tr>
+    <tr>
+      <td>65.079</td>
+      <td>34.921</td>
+      <td>43.860</td>
+      <td>56.140</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td>21</td>
+      <td>13</td>
+      <td>51</td>
+      <td>35</td>
+      <td rowspan="2">0.249</td>
+      <td rowspan="2">0.062</td>
+      <td rowspan="2">0.804</td>
+      <td rowspan="2">0.023</td>
+      <td rowspan="2">8 vs. 8</td>
+      <td>Count</td>
+    </tr>
+    <tr>
+      <td>61.765</td>
+      <td>38.235</td>
+      <td>59.302</td>
+      <td>40.698</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td colspan="10">Experiment 2</td>
+    </tr>
+    <tr>
+      <td colspan="2"></td>
+      <td colspan="2">Left Panel</td>
+      <td colspan="2">Right Panel</td>
+      <td rowspan="2">BF</td>
+      <td rowspan="2">X2</td>
+      <td rowspan="2">p</td>
+      <td rowspan="2">Phi</td>
+    </tr>
+    <tr>
+      <td>Test</td>
+      <td>Side</td>
+      <td>Left</td>
+      <td>Right</td>
+      <td>Left</td>
+      <td>Right</td>
+    </tr>
+    <tr>
+      <td>62</td>
+      <td>22</td>
+      <td>20</td>
+      <td>16</td>
+      <td rowspan="2">1.512</td>
+      <td rowspan="2">3.880</td>
+      <td rowspan="2">0.049</td>
+      <td rowspan="2">0.180</td>
+      <td rowspan="2">2 vs. 2</td>
+      <td>Count</td>
+    </tr>
+    <tr>
+      <td>73.810</td>
+      <td>26.190</td>
+      <td>55.556</td>
+      <td>44.444</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td>36</td>
+      <td>25</td>
+      <td>34</td>
+      <td>25</td>
+      <td rowspan="2">0.224</td>
+      <td rowspan="2">0.024</td>
+      <td rowspan="2">0.877</td>
+      <td rowspan="2">0.014</td>
+      <td rowspan="2">5 vs. 5</td>
+      <td>Count</td>
+    </tr>
+    <tr>
+      <td>58.333</td>
+      <td>41.667</td>
+      <td>57.626</td>
+      <td>42.373</td>
+      <td>%</td>
+    </tr>
+    <tr>
+      <td>24</td>
+      <td>16</td>
+      <td>23</td>
+      <td>57</td>
+      <td rowspan="2">49.104</td>
+      <td rowspan="2">10.930</td>
+      <td rowspan="2">&lt;0.001</td>
+      <td rowspan="2">0.302</td>
+      <td rowspan="2">8 vs. 8</td>
+      <td>Count</td>
+    </tr>
+    <tr>
+      <td>60</td>
+      <td>40</td>
+      <td>28.750</td>
+      <td>71.250</td>
+      <td>%</td>
+    </tr>
+  </tbody>
+</table>
+
 On the basis of these analyses we concluded that chicks’ performance is affected by the number magnitude of elements faced at test.
 
-## Experiment 2
+### Experiment 2
 
 We first considered the percentage of Left Choices (LC), separately for each test (Figure 1B; Source data 6). The BFANOVA against the ‘Intercept only’ model produced an extreme evidence in favor of a Test effect (BF = 1470.58; repeated measures Anova: F(2,44) = 16.736; p<0.001, η2 = 0.277); but no effect of Order (BF = 0.249; repeated measures Anova: F(2,44)=4.388; p=0.018, η2 = 0.073) (Source data 7). Frequentist analyses confirmed that: LC_5 vs. 5 did not statistically differ from chance: mean = 50.833, SD = 23.575, t(23) = 0.173, p=0.863, Cohen's d = 0.05; LC_2 vs. 2 was significantly larger than chance: mean = 70.000, SD = 26.375, t(23) = 3.715, p<0.001, Cohen's d = 1.072), and that LC_8 vs. 8 was significantly smaller than chance: mean = 33.333, SD = 24.077, t(23) = −3.391, p<0.001, Cohen's d = 0.979.
 
@@ -75,13 +240,13 @@ One important issue is the adaptive significance, if any, of a directional numbe
 
 ## Materials and methods
 
-## Subjects
+### Subjects
 
 Subjects were forty-eight domestic chicks (Gallus gallus), Ross 308 Broiler (Aviagen). Twenty-four subjects took part in Experiment 1, and the other 24 took part in Experiment 2. We obtained chicks weekly from a local commercial hatchery (Agricola Berica, Montegalda, Vicenza, Italy).
 
 All procedures chicks underwent are summarized in Table 2. On arrival, the chicks were a few-hours old. They were immediately housed in standard metal cages (28 cm × 32 cm × 40 cm), with food and water available ad libitum in transparent glass jars (5 cm in diameter, 5 cm high), and placed at the corners of the cages. Food and water were placed randomly, one jar per corner, and their position was changed daily. Each cage was illuminated by fluorescent lamps (36 W) located 45 cm above it. Temperature and humidity were constantly monitored and maintained respectively at 28–31°C and 68%. Twice a day we fed chicks with some mealworms (Tenebrio molitor larvae) as these were used as food reinforcement during training. We reared chicks in these conditions from the morning of arrival (from 11 a.m.) to the morning (8 a.m.) of Day 3, when the food jars were removed while water was left available. Two hours later (10 a.m.) birds underwent shaping, in which they learnt to circumnavigate a panel located in the center of the experimental apparatus. At the end of shaping each chick was placed back in its rearing cage and, two hours later, it underwent training. Immediately after the end of training the chick underwent Test 1. When the first test was over, the chick was placed back in its rearing cage for one hour, before entering a second session of training and, immediately after it, Test 2. At the end of Test 2, each chick was placed back in its rearing cage for about an hour, then the third training started, and, immediately thereafter, Test 3. At the end of all tests, chicks were caged in social groups of three birds, with food and water available ad libitum. A few hours later they were donated to local farmers.
 
-## Apparatus
+### Apparatus
 
 During training and test sessions we used the same experimental apparatus. This was located in a room adjacent to the rearing room. In the experimental room, temperature and humidity were controlled and maintained, respectively, at 25°C and 70%. Lighting was provided by four 58 W lamps, placed on the ceiling, 194 cm above the basement of the experimental apparatus.
 
@@ -95,7 +260,7 @@ A transparent removable partition (10 cm ×20 cm) positioned at about 10 cm fro
 
 During training we used a single panel, located in the center of the apparatus, directly in front of the starting area and 40 cm away from it (see Figure 2A). During testing, we used two identical panels, spaced 30 cm apart, and located symmetrically one on the right side and one on the left side with respect to the main vertex (see Figure 2B). A partition, on the opposite side of the starting area separated the far side of the apparatus in two symmetrical sectors, facilitating the scoring of chicks’ choices.
 
-## Stimuli
+### Stimuli
 
 Training and test stimuli consisted of static 2D images. The stimuli depicted a number of red squares, printed on identical white rectangular boards (11.5 cm ×9 cm). On each trial a stimulus (during training) and a pair of stimuli (during testing) were placed on the panel(s).
 
@@ -103,13 +268,64 @@ The training stimuli depicted five red squares (1 cm ×1 cm). To prevent the ch
 
 The test stimuli depicted either of 2, 5 or 8 identical red squares. Five different test stimuli, differing from one another in the spatial arrangement of the squares, were produced for the 2 vs. 2, 5 vs. 5, and 8 vs. 8 test. For each test stimulus we printed two identical copies. To the specific purpose of this study we designed the stimuli on the basis of those used in Experiment 1 of our previous study (Rugani et al., 2015a).
 
-## Shaping and training
+### Shaping and training
 
 On the morning of Day 3 (i.e., the testing day) each chick underwent shaping, in which it was acquainted with feeding in the apparatus. A single panel was in place, and a mealworm was placed between the starting area and the panel. The chick was at first placed within the arena, in the starting area, without the confining partition, for a couple of minutes. During this time the chick was free to move around and get accustomed to the novel environment. In five subsequent trials we offered the chick a small mealworm (or a piece of a mealworm). In the first shaping trial, the mealworm was positioned closer to the starting area, while in the fifth shaping trial the mealworm was closer to the panel. Then chicks had to learn to search for food behind the panel. In this phase the chick was confined within the starting area. A plastic mealworm, which looked similar to a real one, was placed in front of the panel and then it was progressively moved (by a very fine thread handled and slowly dragged by the experimenter) behind the panel. Then the chick was released in the arena and could search for food, located behind the panel where an edible mealworm had been positioned. At the end of shaping, the chick confidently moved from the starting area and walked behind the screen to eat the reward.
 
 Then chicks underwent training. On each training trial a stimulus was placed on the panel. The chick was confined in the starting area for five seconds and then it was released in the arena. The chick had one minute to circumnavigate the panel and to reach the reward. The training was over once the chick had circumnavigated the panel on 20 consecutive trials. In all training trials chicks received a food reinforcement. Previous studies, in which we used a procedure similar to this, have shown that after having found the food behind a panel depicting a certain number stimulus for a few times, the chicks learn to identify the panel by the number depicted on it (Rugani et al., 2013; Rugani et al., 2014). Overall, depending on the chick behavior, the training phase lasted from 10 to 20 min. Chicks that showed little interest in the food reinforcement (i.e., poor mealworm-following or eating behavior) in this phase, were discarded from the study: this occurred in about 25% of cases; these chicks are not included in the final sample. All chicks that completed the training phase moved on to the test session. Before the second and the third test, each chick underwent a training session identical to the first one.
 
-## Test
+**Table 2.**
+ Outline of the experimental procedures.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      <th>Procedures</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Day 1, morning</td>
+      <td>Arrival and housing in standard conditions</td>
+    </tr>
+    <tr>
+      <td>Day 2, all day</td>
+      <td>Standard rearing conditions – no procedures</td>
+    </tr>
+    <tr>
+      <td rowspan="9">Day 3, from early morning to mid afternoon</td>
+      <td>Removal of Food jars (2 hr before shaping)</td>
+    </tr>
+    <tr>
+      <td>Shaping – followed by 2 hr rest</td>
+    </tr>
+    <tr>
+      <td>Training Session 1</td>
+    </tr>
+    <tr>
+      <td>Test 1 – followed by 1 hr rest</td>
+    </tr>
+    <tr>
+      <td>Training Session 2</td>
+    </tr>
+    <tr>
+      <td>Test 2 – followed by 1 hr rest</td>
+    </tr>
+    <tr>
+      <td>Training Session 3</td>
+    </tr>
+    <tr>
+      <td>Test 3</td>
+    </tr>
+    <tr>
+      <td>Social housing – end of procedures</td>
+    </tr>
+  </tbody>
+</table>
+
+### Test
 
 This phase comprised three tests (2 vs. 2; 8 vs. 8; 5 vs. 5), each of them consisted of five trials. Test trials were never reinforced (i.e., chicks did not find any food reward behind the panels). On each test trial, chicks were firstly placed into the starting area, behind the transparent partition for about five seconds. Inside the arena, the two identical stimuli had been already positioned on the two new (left and right) panels, and were fully visible to the confined chick. Then the chick was released by lifting the transparent partition, and it was free to walk within the arena. As soon as the chick had circumnavigated one of the two panels, the trial was considered over. Only one choice was allowed and was scored per trial. A choice was defined as when the head and at least ¾ of the chick’s body had entered the area behind one of the two panels (beyond the side edges). At the end of each trial, the chick was moved in the opaque box outside of the apparatus, where it remained for about 15 s, during which time, the experimenter prepared the experimental setting for the following trial. On each trial the panels were shifted and the stimuli were changed. As soon as the new stimuli were in place, the chick was positioned back into the starting area, and the whole procedure was repeated.
 

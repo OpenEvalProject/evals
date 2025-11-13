@@ -44,21 +44,161 @@ We present a new, spatially explicit, agent-based model representing benthic com
 
 **Figure 2.:** Large white arrows define the ordering of processes and black arrows show the direction of data transfer; dashed black arrows are optional processes (not activated for the analyses we present here). The order of occurrence of coral reproduction, bleaching, and colony dislodgement and fragmentation is imposed to simulate recruitment failure due to the occurrence of a disturbance prior to reproduction. The intensity of waves and cyclones is expressed as a dimensionless dislodgment mechanical threshold; thermal stress is expressed in degree-heating weeks.
 
+**Table 1.**
+ The 11 functional traits we used to implement ecological processes in the model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Traits</th>
+      <th>Related processes and details</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Age at maturity (yr)</td>
+      <td>The minimum age required for a coral colony to reproduce (Appendix 2: §7.2.1.1.a)</td>
+    </tr>
+    <tr>
+      <td>Aggressiveness (0 to 100)</td>
+      <td>Spatial direct competition for space between coral species; the trait is only used for species not considered in the Precoda et al., 2017 study on probability of species-pair interactions (Appendix 1: §1.2)</td>
+    </tr>
+    <tr>
+      <td>Colony max diameter (cm)</td>
+      <td>Initial colony size distributions (Appendix 2: §5.2.2); colony fecundity (for the species with small colonies; Appendix 2: §7.2.1.1.b); bleaching (Appendix 2: §7.4.2.1; Appendix 4); colony vegetative growth (to define maximum planar area; Appendix 2: §7.5.1)</td>
+    </tr>
+    <tr>
+      <td>Corallite area (cm2)</td>
+      <td>Colony fecundity (Appendix 2: §7.2.1.1.b); bleaching (Appendix 2: §7.4.2.1; Appendix 4)</td>
+    </tr>
+    <tr>
+      <td>Egg diameter (mm)</td>
+      <td>Time to motility of coral larvae (§7.2.1.1.d)</td>
+    </tr>
+    <tr>
+      <td>Polyp fecundity</td>
+      <td>Colony fecundity (Appendix 2: §7.2.1.1.b)</td>
+    </tr>
+    <tr>
+      <td>Growth form</td>
+      <td>Formation of reef rugosity (Appendix 2: §7.1.2.2); colony fecundity (Appendix 2: §7.2.1.1.b); dislodgement (Appendix 2: §7.3.1.2); spatial competition (overtopping; Appendix 2: §7.5)</td>
+    </tr>
+    <tr>
+      <td>Growth rate (mm.yr−1)</td>
+      <td>Bleaching (Appendix 2: §7.4.2.1; Appendix 4); vegetative growth (Appendix 2: §7.5.1)</td>
+    </tr>
+    <tr>
+      <td>Mode of larval development</td>
+      <td>Coral reproduction (Appendix 2: §7.2.1.1.a)</td>
+    </tr>
+    <tr>
+      <td>Microscopic reduced scattering coefficient (µS,m, mm−1)</td>
+      <td>Bleaching (Appendix 2: §7.4.2.1; Appendix 4)</td>
+    </tr>
+    <tr>
+      <td>Sexual system</td>
+      <td>Colony fecundity (Appendix 2: §7.2.1.1.b)</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Empirical data and models we used to implement ecological processes in the model.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Processes/variables</th>
+      <th>Comments</th>
+      <th>References</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Colony size (initialization)</td>
+      <td>We used colony size distributions measured for eleven species and maximum colony diameter to define colony size distributions for each species (Appendix 2: §5.2.2)</td>
+      <td>E. H. Meesters and R. P. M. Bak, personal communication, May 2017</td>
+    </tr>
+    <tr>
+      <td>Herbivorous fish density supported by the reef rugosity</td>
+      <td>We used an empirical model to determine the density of herbivore fish present in the reef as a function of reef rugosity (Appendix 2: §7.1.2.2)</td>
+      <td>Bozec et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Grazing intensity due to herbivorous fish density</td>
+      <td>We defined a model using empirical data to determine the surface of the reef grazed as a function of herbivorous fish density (Appendix 2: §7.1.2.2)</td>
+      <td>Williams and Polunin, 2001</td>
+    </tr>
+    <tr>
+      <td>Polyp maturity in colonies</td>
+      <td>We defined a model from models established empirically to determine the proportion of mature polyps in a colony as a function of colony planar area using data for eight species (Appendix 2: §7.2.1.1.b)</td>
+      <td>Álvarez-Noriega et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Larval competency</td>
+      <td>We used a model established empirically to determine time to motility of coral larvae as a function of egg diameter (Appendix 2: §7.2.1.1.d)</td>
+      <td>Figueiredo et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Larval retention</td>
+      <td>We used models established empirically to determine the proportion of competent larvae remaining in the reef as a function of time to motility and water retention time (Appendix 2: §7.2.1.1.d)</td>
+      <td>Figueiredo et al., 2013</td>
+    </tr>
+    <tr>
+      <td>Larval competency loss</td>
+      <td>We defined a model from models established empirically to determine the proportion of external competent larvae settling on the focal reef as a function of the distance travelled (Appendix 2: §7.2.1.2.b)</td>
+      <td>Connolly and Baird, 2010</td>
+    </tr>
+    <tr>
+      <td>Larval post-settlement survival</td>
+      <td>We defined a model using empirical data to determine the proportion of surviving settled larvae as a function of time (Appendix 2: §7.2.1.3.b)</td>
+      <td>Ritson-Williams et al., 2016</td>
+    </tr>
+    <tr>
+      <td>Colony dislodgement</td>
+      <td>We used models established empirically to determine if a colony is dislodged as a function of colony growth form, planar area and the intensity of the hydrodynamic disturbance (Appendix 2: §7.3.1.2.a)</td>
+      <td>Madin and Connolly, 2006</td>
+    </tr>
+    <tr>
+      <td>Survival of dislodged branching colonies</td>
+      <td>We defined a model using a model established empirically to determine the proportion of a dislodged branching colony that survives dislodgement (Appendix 2: §7.3.1.2.b)</td>
+      <td>Highsmith et al., 1980</td>
+    </tr>
+    <tr>
+      <td>Coral bleaching</td>
+      <td>We used the empirically established bleaching-response index to determine species bleaching susceptibility from functional traits (Appendix 2: §7.4.2; Appendix 4)</td>
+      <td>Swain et al., 2016b</td>
+    </tr>
+    <tr>
+      <td>Coral competition</td>
+      <td>We used species-pair probabilities of interaction outcomes established from mix-effect models and a review of empirical data (Appendix 2: §7.5.2.2.a)</td>
+      <td>Precoda et al., 2017</td>
+    </tr>
+    <tr>
+      <td>Coral-algae competition</td>
+      <td>We defined probabilities of interaction outcomes using proportions of interaction won and lost between coral species and the different functional group of algae implemented measured experimentally (Appendix 2: §7.5.3)</td>
+      <td>Brown et al. (2017) and K. T. Brown, personal communication, October 2017</td>
+    </tr>
+  </tbody>
+</table>
+
 ## Materials and methods
 
-## Sources and software
+### Sources and software
 
 We collected coral-trait data from coraltraits.org (Madin et al., 2016a) and other resources from the peer-reviewed literature (Appendix 1). We systematically verified and corrected coral-species nomenclature using the World Register of Marine Species as a reference. We used R (version 3.5.0, R Development Core Team, 2017) to manipulate datasets, for statistical analyses, and to manage model simulations. We developed the model with the open-source, Java object-oriented programming language Repast Simphony 2.5.0 (North et al., 2013). We launched simulations using the R package rrepast 0.7.0 (García and Rodríguez-Patón, 2016) and rJava 0.9–10 (Urbanek, 2018). We used the R package missForest 1.4 (Stekhoven and Bühlmann, 2012) to impute missing trait data. We included phylogenetic information as a predictor using Huang and Roy (2015) phylogenetic supertrees to improve predictions; we manipulated the supertrees using the R packages ape 5.0 (Paradis and Schliep, 2019) and phytools 0.5–38 (Revell, 2012) (Appendix 1). We defined coral bleaching probabilities using the R packages MuMIn 1.40.0 (Bartón, 2017), betareg 3.1–0 (Cribari-Neto and Zeileis, 2010), lme4 1.1–15 (Bates et al., 2015), and lmtest 0.9–35 (Zeileis and Hothorn, 2002) (Appendix 4). For the global sensitivity analysis, we drew a Latin hypercube sample from the parameter space using the randomLHS function from the R package lhs 0.16 (Carnell, 2018), and we measured the influence of parameters on different response variables by fitting boosted regression trees using the gbm.step function from the R package dismo 1.1–4 (Hijmans et al., 2017).
 
-## Model description
+### Model description
 
 We provide here a brief description of the model following the Overview, Design concepts, and Details protocol (Grimm et al., 2020; Grimm et al., 2010; Grimm et al., 2006). A complete protocol that contains all the details about parameterization and process implementation along with a review of the supporting literature is available in Appendices 2 and 4.
 
-## Purpose and patterns
+#### Purpose and patterns
 
 The purpose of the model is to predict coral population dynamics as a function of hydrodynamic (i.e. waves and cyclones) and thermal disturbances, grazing pressure, larval connectivity, sedimentation (i.e. sand import and export), interspecific competitive interactions, and benthic community diversity (species richness and functional diversity). Time series defining disturbance regimes, sand cover and the diversity and number of external coral larvae are imposed and need to be defined before launching simulations. The grazing regime is imposed but can also be determined by activating the feedback process linking reef rugosity (created by colonies) to herbivore fish density to grazing pressure. Patterns in species cover, colony size distributions, recruitment rates and rugosity are used to understand the model’s dynamics and its accuracy.
 
-## Entities, state variables, and scales
+#### Entities, state variables, and scales
 
 The model consists of grid-cell agents each representing 1 cm2, so that the benthic community is represented at a scale of organization smaller than the colony (equivalent to that of a polyp, although polyp size varies among species by several orders of magnitude) (Figure 1). During a simulation, an agent can be temporally part of a coral colony (798 species), a patch of algae (i.e. macroalgae, allopathic macroalgae, Halimeda spp., turf, articulated coralline algae or crustose coralline algae), sand, or bare substratum. Each agent is characterized by 33 variables that describe where the agent is in space (its position is fixed), its species identity (i.e. one of the 798 coral species or six functional groups of algae) and related functional characteristics, its age, the colony’s planar area and identification number, if it is bleached or was grazed recently, et cetera (Appendix 2—table 1). Coral colonies and patches of algae are entities composed of multiple agents sharing the same variable values (except for their spatial coordinates) and changing their state simultaneously during certain processes. For instance, dislodgement is simulated by converting all the agents forming the dislodged colony into barren ground; a turf algae overgrowing a colony is simulated by converting the coral agents constituting the overgrown part into turf, but conserving the information about the colony (i.e. identification number, size, species, growth form).
 
@@ -66,13 +206,13 @@ The size of the reef and the length of a time step are changeable. We defined a 
 
 The model estimates three-dimensional colony surface areas using geometric formulae (Appendix 2—table 5) to determine the number of larvae produced in each colony (Appendix 2: §7.2.1.1), and (optionally) the rugosity of the reef (Appendix 2: §7.1.2.2). The model also accounts for colony and algae heights in overtopping processes (Appendix 2: §7.5.2.2 and §7.5.3.2). Algae have constant heights and colony heights equal to the radius of the colony planar area, assuming the latter is circular (Appendix 2—table 18).
 
-## Process overview and scheduling
+#### Process overview and scheduling
 
 Each time step includes the following consecutive processes: (i) grazing—patches of agents are randomly selected and grazed until a certain proportion of the reef is reached, (ii) coral reproduction—locally and regionally produced larvae attempt to settle, (iii) thermal disturbance, which, if triggered, eventually causes colonies to bleach and/or die; (iv) dislodgement and fragmentation—the effect of waves and cyclones on certain colonies, (v) growth—each living agent, selected in a random order, attempts to convert its neighbouring agents within a certain radius to its own state, (vi) sedimentation—barren ground agents are converted to sand and vice versa until the desired sand cover is reached, (vii) algae invasion—the remaining ungrazed, barren-ground agents are converted into algae agents (Figure 2) (note that the process differs from species invasion). The order at which processes iii, iv, and v happen must be defined beforehand.
 
 During each time step, the model exports response variables: the cover of each benthic group (coral, algae, and sand), the planar area of each colony present per species, the number of recruited coral larvae m−2 species−1, and the reef rugosity (in cases when rugosity-grazing feedback is activated). The first two variables are collected after processes iii, iv, and vii, and the third and fourth variable after process vii. There are six variables imported each time step; their values respectively determine the cover to be grazed, the intensity of waves or cyclone, and of thermal stress, the number of external larvae m−2 entering the reef, the order that reproduction, bleaching, and wave or cyclone events happen, and the cover of sand to be achieved. We present a complete schedule that includes additional model-related processes in Appendix 2: §3.
 
-## Design concepts
+#### Design concepts
 
 Basic principles: the model combines agent-based, trait-based, and demographic approaches to simulate coral reef community dynamics in imposed environmental scenarios. The model captures fundamental principles in ecology: (i) biodiversity influences ecosystem resilience and (ii) functioning, (iii) disturbance regimes filter species and mediate interspecific competition, (iv) interspecific functional differences (or strategies) mediate competitive exclusion and coexistence, and (v) source-sink dynamics regulate species coexistence in metacommunities.
 
@@ -86,45 +226,45 @@ Collectives: Collective behaviour of agents happens when a colony is (i) dislodg
 
 Observation: Four types of data are collected during a simulation: (i) percentage cover of each taxon, (ii) number of recruits for each coral species m−2, (iii) planar area of each colony species−1, and (iv) optionally, the rugosity created by the coral colonies (Figure 2).
 
-## Initialization
+#### Initialization
 
 The initial composition of the benthic community (i.e. the cover of coral species, algae, barren ground, and sand) is defined by the user and is imported from a comma-delimited text file. The space is filled first by creating circular coral colonies randomly in space. The colony diameters are drawn from skewed distributions that we defined using empirical data (E. H. Meesters and R. P. M. Bak, personal communication, May 2017) and as a function of the trait colony maximum diameter. Circular patches of algae (314 cm2) are then created and the remaining agents are converted into barren ground and sand (Appendix 2: §5).
 
-## Input data
+#### Input data
 
 Predefined time series (recorded in the text files) of input data are used to define the environmental context of the reef (Figure 2). At each time step, the model imports values for the corresponding period of the (i) surface grazed (%), (ii) number of external larvae settling, (iii) intensity of waves of cyclones (in dislodgement mechanical threshold, a dimensionless measure of the mechanical threshold imposed by waves and cyclones), (vi) thermal stress intensity (in degree-heating weeks), and (v) sand cover (%).
 
-## Submodels
+#### Submodels
 
-## Grazing
+##### Grazing
 
 The reef is grazed by randomly selecting circular patches of agents (29 cm2) until a certain percentage cover is reached. The cover to reach can be either exclusively imposed (imported from a file) or it can result from the rugosity that coral colonies create if the rugosity-grazing feedback process is activated. We used the empirically established Bozec et al. (2013) model to determine herbivorous fish density from reef rugosity and data from Williams and Polunin (2001) to estimate grazing pressure from herbivorous fish density (Appendix 2: §7.1).
 
-## Reproduction and recruitment
+##### Reproduction and recruitment
 
 Coral larvae locally produced and arriving from the regional pool attempt to settle in the reef at a random location. The number of larvae produced locally for each species depends on species traits (i.e. polyp fecundity, corallite area, growth form, sexual system)—we used geometric formulae from McWilliam et al. (2018b) to calculate colony surface area from planar area—and the distribution of colony planar areas in their population—we used models from Álvarez-Noriega et al. (2016) to determine the proportion of fecund polyps in colonies as a function of planar area. We used models from Figueiredo et al. (2013) to determine the proportion of spawned eggs remaining in the reef from water retention time and egg diameter—species producing larger eggs also produce larvae having a greater time to motility and a higher chance of being exported outside the reef. Species with a brooding mode of larval development release larvae ready to settle and are not affected by water retention time (Appendix 2: §7.2.1.1). The number of external larvae arriving at the reef can either be defined beforehand and imported from a file, or is calculated as a function of the connectivity imposed—we used the models of Connolly and Baird (2010) to determine the proportion of alive and competent larvae as a function of distance travelled (Appendix 2: §7.2.1.2). Larvae have a chance of settling successfully on barren ground, crustose coralline algae, and dead coral agents. We used data from Ritson-Williams et al. (2016) to define the proportion of settled larvae surviving the duration represented by a time step (Appendix 2: §7.2.1.3). Algae recruit at the end of a time step by filling up the remaining available space (i.e. ungrazed barren ground and dead coral agents) (Appendix 2: §7.2.2).
 
-## Wave and cyclone damage
+##### Wave and cyclone damage
 
 We modelled colony dislodgment using colony shape factor from Madin and Connolly (2006), which is compared for each colony to the intensity of the disturbance (expressed as dislodgement mechanical threshold). We implemented branching-colony fragmentation by modifying the relationship between fragment size and survival established by Highsmith et al. (1980). We defined our own models to simulate the effect on the algae community because no relationships have been established empirically (Appendix 2: §7.3).
 
-## Bleaching
+##### Bleaching
 
 We first defined a species-specific index of bleaching susceptibility using bleaching-resistance traits and the bleaching response index from Swain et al. (2016b). We then used this index to establish species-specific logistic bleaching responses as a function of the intensity of the thermal stress (in degree heating-week) using data from Eakin et al. (2010). Finally, we defined a bleaching-induced mortality logistic-response model (Appendix 2: §7.4; Appendix 4).
 
-## Growth and spatial competition
+##### Growth and spatial competition
 
 Coral and algae agents on the edge of their colony or patch attempt to convert neighbouring agents within a certain radius. The size of the radius depends on the species growth rate and the state of the neighbouring agents—we simulated the effect of direct competition with a living agent on growth rate by reducing the length of the radius. We used competitive outcome probabilities from Precoda et al. (2017) to simulate between coral interactions (we used the trait aggressiveness if the species were not present in their list; see Appendix 1) (Appendix 2: §7.5.2). Branching and plating colonies can also overtop other colonies and algae. We used empirical estimates of competitive outcome probability to simulate competition between coral and algae (Brown et al., 2017; K. T. Brown, personal communication, October 2017; Appendix 2: §7.5.3). We considered algal functional groups as equal competitors and therefore they cannot overgrow each other, except for crustose coralline algae, which is a weaker competitor (Appendix 2: §7.5.4).
 
-## Model calibration
+### Model calibration
 
 Here, we provide a short description of the calibration. All details are presented in Appendix 3.
 
-## Study sites and related data
+#### Study sites and related data
 
 We used data collected between November 2001 and July 2011 in three sites located in Martinique in the Caribbean: Fond Boucher (14° 39′ 21.07″ N, 61° 09′ 38.98″ W), Pointe Borgnesse (14° 26′ 48.74″ N, 60° 54′ 12.72″ W), and Ilet à Rats (14° 40′ 58.04″ N, 60° 54′ 1.18″ W). The data were collected biannually (once per dry and wet seasons) by the Observatoire du Milieu Marin Martiniquais (OMMM) for the program Initiative Française pour les REcifs COralliens (IFRECOR). These data describe the benthic, macroinvertebrate, and fish communities at the species or genus levels, as well as sand cover for each site and at each sampling time (Appendix 3—figure 1, 2). We downloaded values of degree-heating weeks for the corresponding location from the US National Oceanic and Atmospheric Administration data server ERDDAP (Environmental Research Division's Data Access Program; coastwatch.pfeg.noaa.gov/erddap) (Appendix 3—figure 3). We identified cyclone tracks using the National Oceanic and Atmospheric Administration Historical Hurricane Tracks website (coast.noaa.gov/hurricanes).
 
-## Definition of the environmental context
+#### Definition of the environmental context
 
 We modelled thermal stress by inputting at each time step the maximum degree-heating week value found for the corresponding period. We represented the intensity of hydrodynamic regimes by inputting values of the dislodgement mechanical threshold (Madin and Connolly, 2006). We imposed a constant value in the absence of cyclone and a lower value when Hurricane Dean affected the reefs in August 2007 (its intensity changed from Category 1 to 2 while passing over Martinique). We chose threshold values arbitrarily considering wave exposure and cyclone intensity. Because of this uncertainty, we defined three different hydrodynamic regimes that we included in the calibration procedure for each site (Appendix 3—figure 5).
 
@@ -132,13 +272,13 @@ To estimate the percentage of the reef grazed at each time step, we first define
 
 The model adjusts the amount of sand cover (i.e. by removing or adding sand patches) at each time step according to the observed cover measured in each site (Appendix 3—figure 4). Having no information about larval connectivity at the three sites, we set the number of larvae m−2to 700 during each reproductive time period (i.e. once a year). This number corresponds to our estimate of competent larvae arriving on a hypothetical reef 20 km from an upstream reef having a 50% coral cover (Appendix 2: §7.2.1.2). The number is realistic considering that the distance separating the three sites from other coral communities is lower, but the average coral cover in the French West Indies is on average <40% (Wilkinson, 2008).
 
-## General procedure
+#### General procedure
 
 We calibrated the model for each site independently. We selected 12 parameters, for which we defined between two to five potential values (Appendix 3—table 1). We defined an algorithm to explore the parameter space optimally. The algorithm first selects the centroid, the most extreme values, and the values situated at mid-distance between the centroid and the extremes. A simulation with each parameter value is launched and replicated five times. We measured the fit between the empirical and simulated cover time series using an objective function. The objective function measures the performance of a given run by calculating the Euclidian distance between the empirical and simulated cover time series (averaged over five replicates), averaged over all the taxa (Appendix 3: §3.2). Performance is thus a positive value, with smaller values indicating higher performance (lower difference between simulated and empirical values). The algorithm then selects the 10 runs providing the best performance and generates for each of them the five closest (using Gower’s distance metric; Gower, 1971) and untested parameter combinations. The algorithm then launches these new simulations and repeats the procedure once more.
 
 To compare the performance of model runs to a null expectation, we generated a null distribution of performance values for each empirical dataset by randomizing cover values within each row and calculating the distance from the original datasets.
 
-## Hierarchically structured validation
+### Hierarchically structured validation
 
 Models are often validated by comparing outputs of a single level of organization (i.e. individual, population, community) to equivalent empirical datasets (individual species coverages in our case), but this approach only examines lower dimensionality for more complex models. Following the recommendation of Kubicek et al. (2015), and aligned with the approach of pattern-oriented modeling (Grimm et al., 2005), we used a hierarchical approach to assess whether the different processes implemented in our model—starting from the those occurring at the lowest scales, to those affecting the entire system—produce ecologically realistic patterns by comparing them to expectations formulated a priori. We based several of the expectations using the classification of life-history strategies of Grime (1977) into competitive, stress-tolerant and ruderal (CSR) (or weedy) functional groups—﻿a classification which was adapted to corals (Darling et al., 2012). This ‘CSR’ classification is independent from the effect, resistance and recovery trait classification that Carturan et al. (2018) adapted to corals, and which we used to select the traits to implement in the model.
 
@@ -146,7 +286,7 @@ We assessed the following processes of our model: (i) we expected colony lateral
 
 Because we expected the community dynamics to depend on species-specific trait differences, we did procedures iii, iv, and v with two different communities, each composed of a competitive, a ruderal, and a stress-tolerant species, originating from the Eastern Pacific and Western Atlantic, respectively. Note that our goal was not to use suites of species that accurately reflect the taxonomic composition of particular reefs or species pools, but rather to select species based on their functional trait attributes. Although we refer to species by name, the names themselves therefore matter less than their functionality. It is well known that reefs with different biogeographic or evolutionary histories host species that are functionally similar (McWilliam et al., 2018b). All details are in Appendix 5.
 
-## Global sensitivity analysis
+### Global sensitivity analysis
 
 Our goal was to estimate the sensitivity of the predicted dynamics of the model to parameter variation during a process of recovery after a strong pulse disturbance. We constructed a global sensitivity analysis for 10 of the calibrated parameters and six additional parameters with high uncertainty (Appendix 6—table 1). For each parameter, we defined a range around the value(s) calibrated (for the 10 parameters considered in the calibration) or the value used in the simulations (for the six additional parameters). These parameters are all continuous but vary in their type (i.e. probabilities, ratio, heights, sub-model coefficients). We defined their respective ranges considering parameter uncertainty, realistic boundaries, and what values might improve the model performance based on model calibration and hierarchically structured validation. We did the procedure for each site independently because certain parameters were calibrated on different values between sites and because the coral communities differ.
 
@@ -158,7 +298,7 @@ We estimated the relative importance of the parameters selected on each response
 
 ## Results
 
-## Model calibration
+### Model calibration
 
 Model performance (the Euclidian distance between the empirical and simulated cover time series averaged over all taxa) varies between 28 and 10 (lower values = better performance), and were all lower than the lower 95% confidence bound of the random distribution (Appendix 3—figure 9). This shows that, despite the model’s complexity and parameter uncertainty, the model outputs population dynamics closer to the empirical data compared to random. The best performance values converged toward 10 among the three sites (i.e. minimum ± standard error: 10.93 ± 3.677, 10.89 ± 2.872, 10.39 ± 3.119 for Fond Boucher, Pointe Borgnesse and Ilet à Rats, respectively).
 
@@ -170,19 +310,19 @@ With the combination of parameter estimates yielding the best fit, the model pro
 
 The simulated cover of algae also closely mimics the empirical data for most algal groups (Figure 3; Appendix 3—figure 14; Appendix 3—figure 15). The difference of percentage cover is the highest for turf and reaches a maximum of 29, 22% and 24% for Fond Boucher, Pointe Borgnesse and Ilet à Rats, respectively. These percentages are high compared to other groups or taxa, but this can be explained partially by the high variance in algal turf cover observed at the reefs. Turf cover generally fluctuates by >20%, a pattern that our model was able to reproduce at all three sites (Figure 3; Appendix 3—figure 14; Appendix 3—figure 15). Notably, crustose coralline algae are systematically less abundant in the simulated reefs compared to the observed data, a phenomenon we attempted to correct in the calibration procedure (Appendix 3: §3.3). Finally, the model could not reproduce the high cover of Halimeda spp. observed at Ilet à Rats (Figure 3) compared to the other sites. See Appendix 3 for more detailed results and discussion regarding the between-site comparison.
 
-## Hierarchically structured validation
+### Hierarchically structured validation
 
 The hierarchically structured validation shows that the model produces ecologically realistic population dynamics under different environmental conditions. Here, we provide a summary of the results, but a more-complete description and explanation are available in Appendix 5.
 
-## Growth
+#### Growth
 
 Coral colonies grew ipso facto at their species-specific growth rate at low population density. However, as space filled up, colonies began constraining each other spatially and their growth rates decreased until eventual stasis (Appendix 5—figure 4).
 
-## Recruitment
+#### Recruitment
 
 For a single coral population, the different patterns of recruitment observed among three functionally distinct species (Appendix 5—figure 6) results from the interaction of several factors: (i) individual colony fecundity determined by its planar area, species-specific polyp fecundity, corallite area (polyp size), growth form, sexual system, and mode of larval development; (ii) the distribution of colony size in the population, which depends on maximum colony diameter; and (iii) the amount of surface available for larval settlement. Weedy (Agaricia tenuifolia) and stress-tolerant species (Echinophyllia orpheensis) produced bell-shape recruitment patterns (Appendix 5—figure 8). Recruitment rate was initially low because populations were composed of small, low-fecundity colonies, but the rate increased as colonies grew and became more fertile (Appendix 5—figure 8). Recruitment subsequently decreased as space became saturated. In contrast, recruitment rate for competitive species (Acropora gemmifera) was initially high and only decreased as cover occupancy increased. This pattern is essentially due to a higher vegetative growth rate associated with a population initially composed of fewer but larger, more fecund colonies (Appendix 5—figure 8).
 
-## Disturbance intensity
+#### Disturbance intensity
 
 In both the Western Atlantic and Eastern Pacific communities (we compared the two functionally distinct coral communities in the rest of the analysis), the competitive species dominated the coral community under low wave exposure (Appendix 5—figure 10, 11, 14). The success of the competitive species was due mainly to two interacting processes—with a higher vegetative growth rate, competitive species (i) overcame free space before other species, and (ii) enhanced recruitment by achieving large colony size rapidly. Higher wave exposure reduced the cover of competitive species because colonies were dislodged at a certain colony size, which reduced recruitment rate and provided other species with more available space to grow and recruit.
 
@@ -190,13 +330,13 @@ In the Western Atlantic community, increased availability of space favoured the 
 
 Population(s) recovered to pre-disturbance cover after only one year, regardless of the intensity of the event. This recovery is faster than most dynamics observed in real reef systems and arises because we imposed a constant and high number of larvae (7000 m−2) coming from the regional pool. In reality, larval supplies are reduced because a strong bleaching disturbance would also affect the surrounding reefs (Hughes et al., 2019). Another reason for this outcome was that recruitment preceded growth in the model (Figure 2), which inflated the former process because more space was available for settlement.
 
-## Larval connectivity
+#### Larval connectivity
 
 Low larval connectivity influenced the two coral communities differently (Appendix 5: §5). In the Western Atlantic, the weedy species thrived under zero to moderate larval input (0, 66, 700 larvae m−2) while the other two species went locally extinct (Appendix 5—figure 17). The weedy species produced ready-to-settle larvae twice a year, while the other two species reproduced annually and only a portion of their larvae were able to settle because of their time to motility (Appendix 2: §7.2.1.1.d). In contrast, the stress-tolerant species dominated in the Eastern Pacific community (Appendix 5—figure 18) due to its higher wave-resistance compared to the other two branching species.
 
 Under the highest larval connectivity (7000 and 35,000 larvae m−2), the competitive species dominated in both communities, principally because of their higher growth rates, spawning mode of reproduction, and their capacity to overtop smaller colonies.
 
-## Grazing
+#### Grazing
 
 Population dynamics were similar between the two communities (Appendix 5—figure 20, 25). The total coral cover corresponded approximately to the imposed percentage of reef grazed, and the remaining ungrazed part of the reef was occupied by algae (also, ungrazed coral agents potentially exist). We observed no hysteresis because we did not implement feedback processes. Turf dominated the algae community in all simulated grazing regimes, despite having the highest palatability among algae (Appendix 2—table 3). The success of turf was due to its much higher growth rate compared to other algae (Appendix 2—table 19).
 
@@ -204,7 +344,7 @@ Coral recruitment rates at the steady state were the highest under medium grazin
 
 Under higher grazing pressures (70% and 90%), there were more coral-coral and fewer coral-algae interactions, which changed coral species dominance. The Western Atlantic community was dominated by the weedy species, followed by the stress-tolerant species and the competitive species was competitively excluded, mainly because of its lower aggressiveness and highest vulnerability to waves (Appendix 5—figure 10). In the Eastern Pacific community, the stress-tolerant species dominated the coral community and slowly outcompeted the other two species mainly because of its much higher wave resistance (Appendix 5—figure 27).
 
-## Global sensitivity analysis
+### Global sensitivity analysis
 
 The parameters that had the most important effects on the response variables (i.e. total coral cover, Pielou’s evenness, difference cover, coral species richness and the number of coral recruits m−2, all measured 10.5 years after the disturbance) were growth rate reduction interaction (the reduction of lateral growth rate of an organism overgrowing another one) and otherProportions (coefficient controlling the number of larvae produced locally), followed by probabilities for larvae to settle on different substrata, and the probabilities of algal grazing. The remaining 10 parameters did not have an important influence on any of the five response variables (Appendix 6—figure 1).
 
@@ -250,6 +390,6 @@ The model we present here is suitable for simulating the local response of benth
 
 Minimalist models of coral reef systems (e.g. differential equation systems) have generally been developed to simulate the response of state variables to different processes (i.e. pulse and press disturbances, feedback processes) (Weijerman et al., 2015). Our model, while developed for the same objectives, provides the possibility to represent realistic benthic diversity and its effect on community dynamics. Comparing the results of our model to those obtained from minimalist models would help establish the degree to which ecological details are necessary.
 
-## Conclusion
+### Conclusion
 
 We have constructed a dynamic and customizable model that allows coral species richness and functional diversity to be manipulated independently. The model combines trait-based, demographic, and agent-based approaches to implement many ecological processes that drive coral reef dynamics. Its structure is flexible, and more processes, traits and taxa can be incorporated, provided the data are available. To that end, we highlighted several knowledge gaps that impede the modelling of important details or components of coral reef ecosystems. Our model can be used as a platform for virtual experiments aimed at testing hypotheses about the effects of species identity and diversity on ecosystem functioning, and about the effects of functional redundancy and response diversity on resilience.

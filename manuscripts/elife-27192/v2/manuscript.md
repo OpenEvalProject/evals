@@ -20,7 +20,7 @@
 
 ## Abstract
 
-10.7554/eLife.27192.001 Postnatal development of skeletal muscle is a highly dynamic period of tissue remodeling. Here, we used RNA-seq to identify transcriptome changes from late embryonic to adult mouse muscle and demonstrate that alternative splicing developmental transitions impact muscle physiology. The first 2 weeks after birth are particularly dynamic for differential gene expression and alternative splicing transitions, and calcium-handling functions are significantly enriched among genes that undergo alternative splicing. We focused on the postnatal splicing transitions of the three calcineurin A genes, calcium-dependent phosphatases that regulate multiple aspects of muscle biology. Redirected splicing of calcineurin A to the fetal isoforms in adult muscle and in differentiated C2C12 slows the timing of muscle relaxation, promotes nuclear localization of calcineurin target Nfatc3, and/or affects expression of Nfatc transcription targets. The results demonstrate a previously unknown specificity of calcineurin isoforms as well as the broader impact of alternative splicing during muscle postnatal development.
+Postnatal development of skeletal muscle is a highly dynamic period of tissue remodeling. Here, we used RNA-seq to identify transcriptome changes from late embryonic to adult mouse muscle and demonstrate that alternative splicing developmental transitions impact muscle physiology. The first 2 weeks after birth are particularly dynamic for differential gene expression and alternative splicing transitions, and calcium-handling functions are significantly enriched among genes that undergo alternative splicing. We focused on the postnatal splicing transitions of the three calcineurin A genes, calcium-dependent phosphatases that regulate multiple aspects of muscle biology. Redirected splicing of calcineurin A to the fetal isoforms in adult muscle and in differentiated C2C12 slows the timing of muscle relaxation, promotes nuclear localization of calcineurin target Nfatc3, and/or affects expression of Nfatc transcription targets. The results demonstrate a previously unknown specificity of calcineurin isoforms as well as the broader impact of alternative splicing during muscle postnatal development.
 
 ## Introduction
 
@@ -36,11 +36,101 @@ We performed a systematic analysis of genome-wide gene expression and alternativ
 
 ## Results
 
-## Transcriptome changes predominate within the first 2 weeks of postnatal skeletal muscle development
+### Transcriptome changes predominate within the first 2 weeks of postnatal skeletal muscle development
 
 To identify changes in gene expression and alternative splicing during postnatal skeletal muscle development, we performed RNA-seq using RNA from gastrocnemius muscle at E18.5, PN2, PN14, 28, and adult (22 weeks) including a biological replicate for PN14. Males were used for all time points except E18.5 for which both male and female animals were used. We obtained >160 million 100 bp paired end reads per sample with at least 92% of reads mapping to the mouse genome (Table 1). The PN14 biological replicates revealed strong correlations for both gene expression and alternative splicing indicating high levels of reproducibility (r2 = 0.99 and 0.90, respectively, Figure 1A and B). Splicing transitions predicted by RNA-seq were validated by RT-PCR by comparing the change in percent spliced in (∆PSI) identified by RNA-seq and by RT-PCR between PN2 and PN28 (r2 = 0.80, Figure 1C–E). The overall results indicate that our RNA-seq data reflects the transcriptome changes occurring in vivo during postnatal skeletal muscle development.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/27192/elife-27192-fig1-v2.jpg)
+
+**Figure 1.:** (A and B) Biological replicates for PN14 were compared to analyze variation in gene expression (A) and alternative splicing (B) using Cufflinks and MISO, respectively. (C) RT-PCR to quantitate splicing use primers that anneal to the constitutive exons flanking an alternative exon, displayed on the UCSC Genome Browser (above) to determine the percent spliced in (PSI). (D) RT-PCR splice products for alternative splicing events comparing PN2 to PN28. (E) Plot comparing PN2 to PN28 RNA-seq ΔPSI values and ΔPSI values obtained by RT-PCR.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/27192/elife-27192-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Genes for activated satellite cells (Pax7, Myf5, Cdg15) had little or undetectable expression. In contrast, genes expressed in myofibers (Myog, Des, Myh4) are readily detected.
+
+**Table 1.**
+ Mouse tissue samples used for RNA-seq.Samples were pooled for E18.5 and PN2 to obtain sufficient quantities of RNA.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample</th>
+      <th>Tissue</th>
+      <th>Age</th>
+      <th>Sex</th>
+      <th># of mice</th>
+      <th>Mapped reads</th>
+      <th>% mapped</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>E18.5</td>
+      <td>Gastrocnemius</td>
+      <td>E18.5</td>
+      <td>M/F</td>
+      <td>21</td>
+      <td>377,538,308</td>
+      <td>93.00%</td>
+    </tr>
+    <tr>
+      <td>PN2</td>
+      <td>Gastrocnemius</td>
+      <td>PN2</td>
+      <td>M</td>
+      <td>6</td>
+      <td>381,045,805</td>
+      <td>92.20%</td>
+    </tr>
+    <tr>
+      <td>PN14 Replicate #1</td>
+      <td>Gastrocnemius</td>
+      <td>PN14</td>
+      <td>M</td>
+      <td>1</td>
+      <td>321,001,586</td>
+      <td>92.60%</td>
+    </tr>
+    <tr>
+      <td>PN14 Replicate #2</td>
+      <td>Gastrocnemius</td>
+      <td>PN14</td>
+      <td>M</td>
+      <td>1</td>
+      <td>379,096,597</td>
+      <td>93.20%</td>
+    </tr>
+    <tr>
+      <td>PN28</td>
+      <td>Gastrocnemius</td>
+      <td>PN28</td>
+      <td>M</td>
+      <td>1</td>
+      <td>377,248,209</td>
+      <td>93.30%</td>
+    </tr>
+    <tr>
+      <td>Adult</td>
+      <td>Gastrocnemius</td>
+      <td>22 weeks</td>
+      <td>M</td>
+      <td>1</td>
+      <td>381,729,569</td>
+      <td>93.50%</td>
+    </tr>
+  </tbody>
+</table>
+
 We identified 4417 genes showing differential expression (±2.0 fold change) and 721 events showing differential splicing (ΔPSI of ±15%) comparing E18.5 to adult skeletal muscle (samples from Table 1). For both gene expression and alternative splicing, the interval between PN2 and PN14 was the most dynamic time period with regard to the numbers of genes undergoing transitions. The analysis is affected by the differences in interval length between times points (E18.5 to PN2 vs. PN28 to adult) but even after correcting for differences in interval duration, the largest number of genes change expression between PN2 and PN14 (Figure 2—figure supplement 1A). From E18.5 to adult time points, 56% of differential gene expression changes occurred between PN2 and PN14 (3315 genes) while expression of 636 genes (11%) changed between PN14 and PN28, 481 genes (8%) changed in gene expression from E18.5 to PN2 and 1496 genes (25%) changed expression between PN28 and adult (Figure 2A).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/27192/elife-27192-fig2-v2.jpg)
+
+**Figure 2.:** (A) Genes with ≥2.0 fold increase or decrease in expression between E18.5-PN2, PN2-PN14, PN14-PN28 and PN28-Adult (Table 1). (B) Alternative splicing events with ΔPSI ≥± 15% between E18.5-PN2, PN2-PN14, PN14-PN28 and PN28-Adult. Decreased indicates more skipping of a splicing event during development, and increased indicates more inclusion of an alternative splicing event during development. (C) Heat map of alternative splicing transitions between four time intervals. Most gene expression and splicing transitions occur between PN2 and PN14. (D) Splicing patterns of events with 15% ΔPSI or greater between PN2 and PN14. (E) Venn diagram of genes with gene expression changes (2.0-fold or greater) compared to alternative splicing transitions (15% ΔPSI or greater) between PN2 and PN14. (F) Conservation of splicing transitions during mouse and human skeletal muscle development. The ∆PSI between PN2 to PN28 mouse gastrocnemius samples were compared to the ∆PSI between gestation week 22 to adult human skeletal muscle by RT-PCR. Events showing a 15% ΔPSI or greater in the same direction in mouse and human samples were scored as conserved (indicated by C).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/27192/elife-27192-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Differential gene expression changes standardized to the number of days in the time interval. (B) Heat map of differential gene expression of genes (left) with alternative splicing (right) between four intervals. The gene list is aligned in the heat maps for differential expression and alternative splicing, the latter is reproduced from Figure 2C. Largest changes are denoted by the darkest colors of yellow (decreased) or blue (increased). White indicates unchanged.
 
 The numbers of proliferating satellite cells decrease during early postnatal skeletal muscle development such that a portion of the transcriptome changes are likely to reflect changes in cell population rather than transitions within established myofibers. The RNA-seq data show that the expression of markers of activated satellite cells is relatively low even at PN2 while the changes in expression of myofiber markers (Myog, Des, and Myh4) are robust (Figure 1—figure supplement 1). These results are consistent with the contention that the dynamic transcriptome changes reflect transitions within established myofibers with minimal contributions from a changing satellite cell population.
 
@@ -50,7 +140,7 @@ While there are large numbers of transitions for both alternative splicing and g
 
 To determine the level of conservation of validated splicing transitions, we performed RT-PCR using RNA from PN2 and PN28 mouse skeletal muscle and human skeletal muscle RNA from 22 weeks gestation and adult. The alternative splicing events selected to test for conservation in humans were enriched for cassette exons found in calcium-handling genes since this functional category was strongly enriched (see below). Alternative splicing events were considered to be conserved if both the mouse and human had a ΔPSI of 15% or greater in the same direction. Of the 17 splicing events tested, 11 (65%) underwent a transition that was conserved (Figure 2F). Since all 11 events involved cassette exons that inserted or removed in-frame peptides, the results suggest that the different protein isoforms that result from the alternative splicing transitions have conserved physiological functions.
 
-## In-frame alternative exons predominate in the ORF while out-of-frame alternative exons contain coding and untranslated regions
+### In-frame alternative exons predominate in the ORF while out-of-frame alternative exons contain coding and untranslated regions
 
 To determine the impact of alternative splicing on the protein isoforms expressed during postnatal development, we examined the distribution of cassette alternative exons within the spliced mRNAs and the effect of regulated splicing on the reading frame. For alternative exons with a ΔPSI of 15% or greater from PN2 to PN28 and in genes that contain at least three constitutive exons (223 exons), the relative position of the alternative exon along the length of mRNA was determined by dividing the exon number of the alternative exon by the total number of exons then multiplying by 100 to derive the exon order relative to the mRNA 5’ end (percent from the 5’ end). Alternative exons were also separated based on whether or not they are a multiple of three nucleotides since the latter change the reading frame. Alternative exons that are a multiple of three were predominantly found to maintain the ORF (129 exons of 135 considered) causing either an internal insertion or deletion of amino acids (Figure 3A and B). Six exons either created translation start or stop codons or altered the 5’ UTR. Alternative exons that are not a multiple of three (88 exons) were enriched near the 5’ or 3’ ends of the mRNA either exclusively within the UTRs (22 exons) or affecting the ORF to produce alternative N- or C-termini (66 exons) (Figure 3C and D). Therefore, the majority of alternative splicing transitions produce fetal and adult protein isoforms differing by internal peptide segments. Less common, but still prevalent, are transitions that produce different N- or C-termini. The least common are alternative exons that affect untranslated regions without affecting the reading frame.
 
@@ -58,7 +148,7 @@ To determine the impact of alternative splicing on the protein isoforms expresse
 
 **Figure 3.:** The graphs display the number of genes and the relative position of the alternative cassette exon from the 5’ end of the spliced mRNA. The relative exon position is expressed as the percent of the total number of exons. The alternative exons analyzed (223 exons) have a ΔPSI of 15% or greater from PN2 to PN28 and contain at least three constitutive exons. (A) In-frame alternative exons that maintain the reading frame. Colors indicate whether the alternative exon contains a translational stop codon (red), start codon (green), only 3’ UTR sequence (yellow), only 5’ UTR sequence (blue), or if the exon is within the open reading frame (gray). (B) Representation of potential protein-coding consequences of in-frame alternative exons. (C) Out of frame alternative exons that shift the reading frame. (D) Representation of potential protein-coding consequences of alternative exons that are a non-multiple of three.
 
-## Genes that undergo postnatal splicing transitions during skeletal muscle development are enriched for calcium handling functions
+### Genes that undergo postnatal splicing transitions during skeletal muscle development are enriched for calcium handling functions
 
 Ingenuity analysis of genes that undergo changes in gene expression and alternative splicing between PN2 and PN28 identified essentially non-overlapping functional categories (Figure 4). Specifically, genes that undergo differential expression were enriched for associations with mitochondrial function while alternative splicing transitions were enriched for genes associated with calcium handling, endocytosis, and cell junction categories (Figure 4A and B). Although calcium-related categories included 90 genes for both gene expression and alternative splicing (75 for gene expression, 21 for alternative splicing), only six genes were found to have significant expression and splicing changes. Table 2 lists the calcium handling genes that undergo ∆PSI ≥ 15 point change in alternative splicing between PN2 and PN28. Calcium handling is critical to striated muscle contractility and homeostasis and our results indicate that a large fraction of calcium handling genes undergo splicing transitions that affect the coding potential of these genes (Table 2 and Figure 5). These results suggest an important role for alternative splicing transitions from fetal to adult isoforms in calcium handling genes during postnatal skeletal muscle development.
 
@@ -70,25 +160,270 @@ Ingenuity analysis of genes that undergo changes in gene expression and alternat
 
 **Figure 5.:** Diagram of calcium handling genes that are expressed in skeletal muscle. Genes with 15% or greater ΔPSI from PN2 to PN28 are underlined and include members of several calcium channels: NCX (sodium calcium exchanger), PMCA (plasma membrane Ca2+-ATPase), SERCA (sarco/endoplasmic reticulum Ca2+-ATPase), and RYR (ryanodine receptor); triadin (Trdn) which associates with Ryr1, junctin (Asph) and FKBP12 (Fkbp1a). Signaling cascades that are affected by alternative splicing include Ca2+/camodulin (CaM)-dependent calcineurin (CaN) and calmodulin-dependent protein kinase II (CamkII) along with the downstream transcription factor NFATC. NFATC and transcription factors (TFs) regulated by CamkII activate genes for hypertrophy and fiber type specification.
 
-## CELF and MBNL proteins regulate distinct sets of calcium handling genes
+**Table 2.**
+ Calcium handling genes with alternative splicing transitions during skeletal muscle development.Listed are calcium-handling genes from the GO analysis (Figure 3). The ΔPSI from PN2 to PN28 are displayed along with the size of alternative exon, effect on the reading frame, the relative location of the exon, and predicted protein-coding consequence.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Gene symbol</th>
+      <th>Gene</th>
+      <th>ΔPSI</th>
+      <th>Size of exon (bp)</th>
+      <th>In frame?</th>
+      <th>Alt. exon position</th>
+      <th>Effect on coding</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Atp2a1</td>
+      <td>ATPase, Ca ++ transporting, cardiac muscle, fast twitch</td>
+      <td>97</td>
+      <td>42</td>
+      <td>Y</td>
+      <td>22 of 23</td>
+      <td>C-term.</td>
+    </tr>
+    <tr>
+      <td>Atp2a3</td>
+      <td>ATPase, Ca ++ transporting, ubiquitous</td>
+      <td>20</td>
+      <td>73</td>
+      <td>N</td>
+      <td>21 of 22</td>
+      <td>C-term.</td>
+    </tr>
+    <tr>
+      <td>Atp2b3</td>
+      <td>ATPase, Ca ++ transporting, plasma membrane</td>
+      <td>−42</td>
+      <td>154</td>
+      <td>N</td>
+      <td>21 of 22</td>
+      <td>C-term.</td>
+    </tr>
+    <tr>
+      <td>Cacna1s</td>
+      <td>Calcium channel, voltage-dependent, L type, alpha 1S subunit</td>
+      <td>50</td>
+      <td>57</td>
+      <td>Y</td>
+      <td>29 of 44</td>
+      <td>Insertion</td>
+    </tr>
+    <tr>
+      <td>Cacna2d1</td>
+      <td>Calcium channel, voltage-dependent, alpha 2/delta subunit 1</td>
+      <td>53</td>
+      <td>57</td>
+      <td>Y</td>
+      <td>19 of 39</td>
+      <td>Insertion</td>
+    </tr>
+    <tr>
+      <td>Calu</td>
+      <td>Calumenin</td>
+      <td>−27</td>
+      <td>194</td>
+      <td>Y</td>
+      <td>three of 7</td>
+      <td>Mutually exclusive</td>
+    </tr>
+    <tr>
+      <td>Camk2b</td>
+      <td>Calcium/calmodulin-dependent protein kinase II beta</td>
+      <td>62</td>
+      <td>129</td>
+      <td>Y</td>
+      <td>13 of 17</td>
+      <td>Insertion</td>
+    </tr>
+    <tr>
+      <td>Camk2d</td>
+      <td>Calcium/calmodulin-dependent protein kinase II delta</td>
+      <td>34</td>
+      <td>89</td>
+      <td>N</td>
+      <td>19 of 20</td>
+      <td>C-term.</td>
+    </tr>
+    <tr>
+      <td>Camsap1</td>
+      <td>Calmodulin regulated spectrin-associated protein 1</td>
+      <td>25</td>
+      <td>33</td>
+      <td>Y</td>
+      <td>five of 18</td>
+      <td>Insertion</td>
+    </tr>
+    <tr>
+      <td>Cask</td>
+      <td>Calcium/calmodulin-dependent serine protein kinase</td>
+      <td>−44</td>
+      <td>69</td>
+      <td>Y</td>
+      <td>14 of 21</td>
+      <td>Deletion</td>
+    </tr>
+    <tr>
+      <td>Chrne</td>
+      <td>Cholinergic receptor, nicotinic, epsilon (muscle)</td>
+      <td>−18</td>
+      <td>107</td>
+      <td>N</td>
+      <td>5 of 12</td>
+      <td>Change of a.a.</td>
+    </tr>
+    <tr>
+      <td>Kcnn1</td>
+      <td>Potassium intermediate/small conductance calcium-activated channel, subfamily N, member 1</td>
+      <td>−35</td>
+      <td>111</td>
+      <td>Y</td>
+      <td>6 of 10</td>
+      <td>Deletion</td>
+    </tr>
+    <tr>
+      <td>Mef2d</td>
+      <td>Myocyte enhancer factor 2D</td>
+      <td>−31</td>
+      <td>138</td>
+      <td>Y</td>
+      <td>4 of 12</td>
+      <td>Mutually exclusive</td>
+    </tr>
+    <tr>
+      <td>Nfatc3</td>
+      <td>Nuclear factor of activated T-cells, cytoplasmic, calcineruin-dependent 3</td>
+      <td>20</td>
+      <td>104</td>
+      <td>N</td>
+      <td>10 of 11</td>
+      <td>C-term.</td>
+    </tr>
+    <tr>
+      <td>Ppp3ca</td>
+      <td>Protein phosphatase 3, catalytic subunit, alpha isozyme (calcineurin Aα)</td>
+      <td>30</td>
+      <td>30</td>
+      <td>Y</td>
+      <td>13 of 14</td>
+      <td>Insertion</td>
+    </tr>
+    <tr>
+      <td>Ppp3cb</td>
+      <td>Protein phosphatase 3, catalytic subunit, beta isozyme (calcineurin Aβ)</td>
+      <td>25</td>
+      <td>27</td>
+      <td>Y</td>
+      <td>11 of 15</td>
+      <td>Insertion</td>
+    </tr>
+    <tr>
+      <td>Ppp3cb</td>
+      <td>Protein phosphatase 3, catalytic subunit, beta isozyme (calcineurin Aβ)</td>
+      <td>16</td>
+      <td>30</td>
+      <td>Y</td>
+      <td>14 of 15</td>
+      <td>Insertion</td>
+    </tr>
+    <tr>
+      <td>Ppp3cc</td>
+      <td>Protein phosphatase 3, catalytic subunit, gamma isozyme (calcineurin Aγ)</td>
+      <td>49</td>
+      <td>27</td>
+      <td>Y</td>
+      <td>11 of 15</td>
+      <td>Insertion</td>
+    </tr>
+    <tr>
+      <td>Ryr1</td>
+      <td>Ryanodine receptor 1 (skeletal)</td>
+      <td>39</td>
+      <td>18</td>
+      <td>Y</td>
+      <td>83 of 106</td>
+      <td>Insertion</td>
+    </tr>
+    <tr>
+      <td>Tnnt3</td>
+      <td>Troponin T type 3 (skeletal, fast)</td>
+      <td>22</td>
+      <td>41</td>
+      <td>Y</td>
+      <td>16 of 17</td>
+      <td>Mutually exclusive</td>
+    </tr>
+    <tr>
+      <td>Trdn</td>
+      <td>Triadin</td>
+      <td>18</td>
+      <td>60</td>
+      <td>Y</td>
+      <td>9 of 36</td>
+      <td>Insertion</td>
+    </tr>
+  </tbody>
+</table>
+
+### CELF and MBNL proteins regulate distinct sets of calcium handling genes
 
 CELF and MBNL proteins are involved in alternative splicing transitions during normal developmental and in skeletal muscle disease (Giudice et al., 2014; Kalsotra et al., 2008; Lin et al., 2006; Konieczny et al., 2014; Dasgupta and Ladd, 2012). Of the six Celf paralogs and three Mbnl paralogs in mice, Celf1, Celf2, Mbnl1, and Mbnl2 are expressed in postnatal and adult skeletal muscle and therefore comprise the totality of CELF and MBNL activities during postnatal development. Western blot analysis of protein expression during postnatal development of gastrocnemius muscle demonstrated that Celf1, Celf2, and Mbnl2 protein levels decrease dramatically between PN7 and PN14 (Figure 6A). Mbnl1 protein expression is also reduced after PN7. Published results indicate that Mbnl1 undergoes translocation to the nucleus during mouse postnatal skeletal muscle development (Lin et al., 2006) that is likely to increase its effects on its splicing targets. The dramatic changes in expression of CELF and MBNL proteins during the first 2 weeks after birth show a strong correlation with a particularly dynamic period of splicing change and differential protein expression of these two families of splicing regulators.
 
+![Figure 6.](https://cdn.elifesciences.org/articles/27192/elife-27192-fig6-v2.jpg)
+
+**Figure 6.:** (A) Western blot of Celf1, Celf2, Mbnl1, and Mbnl2 during gastrocnemius postnatal development. **All E18.5 samples are from hindlimb (HL) except Celf1 blot which is E18.5 gastrocnemius. Ponceau S and α sarcomeric actinin serve as loading markers. (B) Comparing PSI of control mice (MDAFrtTA + dox) and human CELF1 overexpressing mice (MDAFrtTA/TRECUGBP1 + dox) (C57BL6/DBA;FVB). (C) Comparing PSI of wild type and Mbnl1 KO mice, Mbnl1ΔE3/ΔE3 (FVB). Single asterisk (*) denotes p<0.05 using student T-test, n = 3 mice per group. Displayed are mean with SD bars.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/27192/elife-27192-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Western blots of hCELF1 overexpressing mice compared to controls (MDAFrtTA/TRECUGBP1 + dox and MDAFrtTA +dox) and Mbnl1 KO mice (Mbnl1+/+, Mbnl1ΔE3/+, and Mbnl1ΔE3/ΔE3) validating protein level changes. (B) Heat map of ΔPSI between PN2 and PN28 in wild type FVB gastrocnemius; between control mice (MDAFrtTA +dox) and hCELF1 overexpressing adult mice (MDAFrtTA/TRECUGBP1 + dox) (C57BL6/DBA;FVB) quadriceps; and between adult Mbnl1+/+ and Mbnl1ΔE3/ΔE3 (FVB) quadriceps.
+
 To determine whether changes in Celf1 and Mbnl1 protein levels affect postnatally regulated alternative exons, we analyzed splicing of genes with postnatal splicing transitions in mouse skeletal muscle from our previously published skeletal muscle-specific tetracycline-inducible transgenic mice induced to overexpress human (h)CELF1 in adult animals (MDAFrtTA/TRECUGBP1 + dox vs. control MDAFrtTA +dox) and from adult Mbnl1 knock out mice (Mbnl1ΔE3/ΔE3 vs. control Mbnl1+/+) (Figure 6B–C and Figure 6—figure supplement 1) (Ward et al., 2010; Kanadia et al., 2003). hCELF1 protein expression in induced bitransgenic gastrocnemius muscle was approximately 8-fold above endogenous levels as previously published (Ward et al., 2010) and Mbnl1 protein was not detected in Mbnl1ΔE3/ΔE3 gastrocnemius used for RNA isolation (Figure 6—figure supplement 1A). Overexpression of hCELF1 and loss of Mbnl1 produced six and nine significant splicing changes, respectively (15 genes affected of the 18 tested). The 15 splicing events affected by either hCELF1 overexpression or loss of Mbnl1 reverted toward the splicing pattern observed in fetal muscle (Figure 6—figure supplement 1B) consistent with a response to a loss of CELF1 and a gain of MBNL1 activity during postnatal development. Only two genes, Prkca and Ppp3cc responded to both gain of hCELF1 and loss of endogenous Mbnl1. These results indicate that CELF and MBNL proteins are important contributors to regulated splicing within genes involved in calcium handling during postnatal skeletal muscle development.
 
-## All three calcineurin A genes undergo fetal to adult protein isoform transitions during postnatal development
+### All three calcineurin A genes undergo fetal to adult protein isoform transitions during postnatal development
 
 To determine the functional consequences of postnatal splicing transitions, we focused on the calcineurin A genes (Ppp3ca, Ppp3cb, and Ppp3c). Calcineurin is a calcium sensitive phosphatase affecting fiber type in skeletal muscle by dephosphorylating Nuclear Factor of Activated T-cells component (NFATC) proteins leading to NFATC nuclear translocation and NFATC-mediated transcriptional activation of a select subset of genes. It is a heterodimer containing a catalytic subunit, calcineurin A, and regulatory subunit, calcineurin B. All three calcineurin A paralogs expressed in skeletal muscle show postnatal splicing transitions with a ΔPSI of at least 15% (Table 2, Figure 5, and Figure 7A) while the two calcineurin B genes do not (data not shown). The functional consequences for the calcineurin A splicing events have not been characterized.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/27192/elife-27192-fig7-v2.jpg)
+
+**Figure 7.:** (A) UCSC Genome Browser displays of calcineurin A alternative exons (Ppp3ca ex13, Ppp3cb ex10a, Ppp3cb ex13, and Ppp3cc ex10a) side-by-side with RT-PCR of RNA from PN2 and PN28. (B) RT-PCR comparing inclusion of calcineurin A alternative exons in diverse adult tissues (BioChain tissue array mRNA).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/27192/elife-27192-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) The protein sequences of the three mouse calcineurin A paralogs are aligned. (B) Diagrams aligning calcineurin A mRNAs and proteins showing relative positions of known protein domains and alternatively spliced regions. (C) RT-PCR of calcineurin A exons during postnatal development of muscle groups with differing fiber type contributions: gastrocnemius (blue), soleus (purple), and flexor digitorum brevis (yellow). Gastrocnemius contains 6%, soleus contains 37%, and FDB contains 13% slow fiber type (type I)(Katz et al., 2010; Close, 1972). N = 3 adult mice or three pooled litters for PN9. Displayed are mean with SD bars.
 
 Ppp3cb and Ppp3cc each have a homologous 27 base pair alternative exon 10a with in-frame insertions encoding peptide segments with low-sequence identity (Figure 7—figure supplement 1A). Ppp3ca does not have a protein sequence equivalent to exon 10a. Ppp3ca and Ppp3cb each have an alternatively spliced 30 base pair exon 13 encoding nearly identical amino acid sequences (Figure 7—figure supplement 1A). Exon 13 for Ppp3cc is constitutively included and encodes a peptide sequence that is 40% and 50% identical to Ppp3ca and Ppp3cb, respectively (Figure 7—figure supplement 1A). All four alternative exons have increased inclusion during postnatal development. In addition, exons 10a of Ppp3cb and Ppp3cc are included specifically in adult skeletal muscle while exons 13 of Ppp3ca and Ppp3cb are included in other adult tissues including heart, testis, and brain (Figure 7B).
 
 Calcineurin A contains a calcineurin B binding domain, calmodulin binding domain, phosphatase domain, and an auto-inhibitory domain (Al-Shanti and Stewart, 2009). Alternative exons 10a of Ppp3cb and Ppp3cc are adjacent to and upstream of the calmodulin-binding domain, and exons 13 of Ppp3ca and Ppp3cb are adjacent to and upstream of the auto-inhibitory domain (Figure 7—figure supplement 1B). These positions suggest a potential effect on the functions of these domains. In addition, the conservation of the postnatal transitions between mouse and human suggests that the isoform transition is functionally relevant to tissue remodeling during the fetal to adult transition (Figure 2F). Inclusion of calcineurin A alternative exons during postnatal development is not strongly affected by fiber type since the splicing transitions are similar between gastrocnemius and soleus muscles, which have different proportions of fast and slow fiber muscles (Figure 7—figure supplement 1C).
 
-## Re-directed calcineurin A splicing reveals an isoform-specific effect on Nfatc3 activation
+### Re-directed calcineurin A splicing reveals an isoform-specific effect on Nfatc3 activation
 
 To determine the specific effects of calcineurin A redirected splicing on downstream signaling, we used the mouse C2C12 myogenic cell line. C2C12 cells transition from proliferative myoblasts to fused myotubes upon withdrawal of growth factors. Differentiating C2C12 cultures reproduce the developmental inclusion of exons 13 of Ppp3cb and Ppp3ca but not Ppp3cc and only weak inclusion of exons 10a of Ppp3cb and Ppp3cc (Figure 8—figure supplement 1A). We used morpholino antisense oligonucleotides (ASO) to redirect splicing of exons 13 of Ppp3cb and Ppp3ca through C2C12 differentiation (Figure 8A). Immunofluorescence staining was then used to determine the effects on NFATC family members that are expressed in differentiated myotubes. Nfatc3 protein showed significantly increased nuclear localization in myotubes with calcineurin A redirected splicing while Nfatc1 localization was unchanged (Figure 8B, Figure 8—figure supplement 1B). Nfatc2 mRNA levels are very low in differentiated C2C12 based on our RNA-seq analysis (Singh et al., 2014) and immunofluorescence staining showed no clear change in signal from myotube nuclei (Figure 8B, Figure 8—figure supplement 1B). The Nfatc3 immunofluorescence signal was validated by knockdown in C2C12 myotubes (Figure 8—figure supplement 1C). These results demonstrate that expression of the endogenous fetal isoforms of Ppp3ca and Ppp3cc is sufficient to activate translocation of one of the three Nfatc proteins, Nfatc3.
 
+![Figure 8.](https://cdn.elifesciences.org/articles/27192/elife-27192-fig8-v2.jpg)
+
+**Figure 8.:** (A) RT-PCR of redirected splicing of calcineurin A events in differentiated C2C12 cells. Two of the four calcineurin A splicing events are present in C2C12. For calcineurin A ASO, 9 μM Ppp3ca ex13 3’ss and 15 μM Ppp3cb ex13 5’ss morphlinos were delivered, and for control ASO, 24 μM standard control morpholino were delivered. (B) Immunofluorescence of Nfatc3 in differentiated C2C12 after morpholino delivery. (C) mRNA levels of Nfatc targets after knockdown of Nfatc3 in differentiated C2C12 cells. Relative mRNA levels are standardized to Mrps7 mRNA levels; single asterisk (*) denotes p<0.05 significance by student T-test, n = 3 biological replicates. Displayed are mean with SD bars.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/27192/elife-27192-fig8-figsupp1-v2.jpg)
+
+**Figure 8—figure supplement 1.:** (A) PSI for calcineurin A splicing events from undifferentiated (U) and days in after differentiation media was added days 1 through 4 (D1, D2, D3, D4). (B) Localization of Nfatc1 and Nfatc2 by immunofluorescence in differentiated C2C12 with ASOs. (C) Knockdown of Nfatc3 using silencer siRNAs to confirm signal of Nfatc3 antibody.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/27192/elife-27192-fig8-figsupp2-v2.jpg)
+
+**Figure 8—figure supplement 2.:** (A) Morpholino sequences used for redirected splicing. (B) Primers used for splicing, genotyping, and mRNA levels.
+
 To determine the physiological impact of the calcineurin A splicing transitions in adult skeletal muscle, we used ASOs delivered into the FDB foot pad muscle to redirect all four calcineurin A exons to the fetal splicing pattern of exon skipping. This approach allows testing the functions of specific endogenous protein isoforms without changing the overall expression level. We found that the efficiency of redirected splicing remains high for at least 4 weeks and 3 weeks provides sufficient time for the muscle to recover from the ASO delivery procedure (Giudice et al., 2016a). Three weeks after delivery of redirecting ASOs or non-targeting control ASOs, redirected splicing was assayed by RT-PCR and all four exons were found to have undergone a nearly complete switch to the fetal pattern while non-targeting ASOs had no effect (Figure 9A and B). Four non-targeted developmental splicing events were assayed (Atp2a1, Cacna1s, Prkca, Ppp1r12b) and none showed significant differences following ASO injection, demonstrating the absence of non-specific effects (Figure 9B).
+
+![Figure 9.](https://cdn.elifesciences.org/articles/27192/elife-27192-fig9-v2.jpg)
+
+**Figure 9.:** (A) Confirmation of redirected splicing in adult FDB muscle by RT-PCR. ASO morpholinos were administered to the FDB muscle (Figure 8—figure supplement 2). (B) RT-PCR of targeted (calcineurin A) and control (Atp2a1, Cacna1s, Prkca, and Ppp1r12b) splicing events. Single asterisk (*) denotes p<0.05, *** denotes p<0.001, and n.s. denotes no statistical difference by student T-test, n = 4 mice per group. Displayed are mean with SD bars. (C) Force and calcium analysis after twitch stimulus. Peak force and half relaxation time were measured for force and peak calcium for calcium. Single asterisk (*) denotes p<0.05 significance by student T-test, n = 3–4 mice per group. Displayed are mean with SD bars. (D) Force and calcium analysis after tetanus stimuli. Peak force and half relaxation time were measured for force and peak calcium for calcium. Single asterisk (*) denotes p<0.05 significance by student T-test, n = 3–4 mice per group. Displayed are mean with SD bars. (E) Relative mRNA levels of mRNAs from Nfatc target genes in FDB muscle by RT-PCR. Single asterisk (*) denotes p<0.05 and marked are transcriptional targets nearing significance by student T-test, n = 3 mice per group. Displayed are mean with SD bars.
+
+![Figure 9—figure supplement 1.](https://cdn.elifesciences.org/articles/27192/elife-27192-fig9-figsupp1-v2.jpg)
+
+**Figure 9—figure supplement 1.:** Displayed are mean with SD bars.
 
 To assess physiological changes from redirected calcineurin A splicing, we measured parameters of force generation and calcium handling in FDB muscle bundles three weeks after ASO delivery. Redirected splicing resulted in a significant prolongation of twitch half relaxation time and a strong trend toward increased peak twitch force and peak calcium, although these changes did not reach statistical significance (Figure 9C). There was no difference in twitch time to peak force or calcium for a twitch (Figure 9—figure supplement 1). Following peak tetanic stimulation (150 Hz), we also found a significant prolongation of the half relaxation time and a trend toward increased tetanic peak force and peak calcium (Figure 9D) (see Discussion).
 
@@ -108,46 +443,46 @@ A growing number of global RNA-seq analyses are revealing the extent to which co
 
 ## Materials and methods
 
-## Animals
+### Animals
 
 Skeletal muscle tissues were isolated from FVB wild type, MDAFrtTA/TRECUGBP1, and Mbnl1ΔE3/ΔE3 mice. We followed NIH guidelines for use and care of laboratory animals approved by Baylor College of Medicine Institutional Animal Care and Use Committee.
 
-## Skeletal muscle isolation and RNA extraction
+### Skeletal muscle isolation and RNA extraction
 
 Animals were anesthetized and euthanized either by decapitation (neonatal) or cervical dislocation (older than PN10), and gastrocnemius muscles were removed. Sex determination for animals PN7 and younger was confirmed by PCR using primers to Actin and Sry genes (sequences in Figure 8—figure supplement 2). Tissue samples were flash frozen with liquid nitrogen. Total RNA was prepared using the RNeasy fibrous tissue mini kit (Qiagen).
 
-## RNA-seq
+### RNA-seq
 
 Illumina TruSeq protocols were used to prepare libraries using total RNA (2 ug) from gastrocnemius of E18.5, PN2, PN14, PN28, and 22-week (adult) animals. The cDNA was created using the fragmented 3’-poly(A)-selected portion of total RNA and random primers. To generate the libraries, the blunt ended fragments of cDNA were attached to adenosine to the 3’-end and ligated with unique adapters to the ends. The ligated products were amplified by PCR for 15 cycles. Libraries were quantified and fragment size assessed by the NanoDrop spectrophotometer and Agilent Bioanalyzer, respectively. The libraries were amplified by qPCR to determine the concentration of adapter-ligated fragments using a Bio-Rad iCycler iQ Real-Time PCR Detection System and a KAPA Library Quant Kit. The library (11 pM) was loaded onto a flow cell and amplified by bridge amplification using Illumina cBot equipment. On a HiSeq Sequencing system, a paired-end 100-cycle run was used to sequence the flow cell.
 
-## Computational processing and bioinformatics of RNA-seq data
+### Computational processing and bioinformatics of RNA-seq data
 
 For the RNA-seq alignment, paired-end RNA-seq reads were aligned to the mouse genome (mm9) using TopHat 2.0.5 (Trapnell et al., 2009). For the differential gene expression analysis, RSEM was used to count the number of fragments mapped into RefSeq gene models, and edgeR was used to call differentially expressed genes with a false discovery rate less than 0.05 (RSEM: accurate transcript quantification from RNA-Seq data with or without a reference genome) (Trapnell et al., 2010; Robinson et al., 2010). Gene expression was quantified by FPKM. For differential alternative splicing analysis, isoform levels (PSI) and Bayes factors (BI) were measured by MISO (Katz et al., 2010) with ∆PSI >= 0.1 and BI >= 10. For both differential gene expression and alternative splicing analysis, data were analyzed through the use of QIAGEN’s Ingenuity Pathway Analysis (IPA, QIAGEN Redwood City, www.qiagen.com/ingenuity).
 
-## Alternative splicing validations and human conservation by RT-PCR
+### Alternative splicing validations and human conservation by RT-PCR
 
 Human skeletal muscle RNA samples were obtained for fetal 22 week (BioChain [R1244171-50]) and adult (Clontech [636534]). Various adult mouse tissue total RNA samples (muscle, heart, uterus, testis, liver, kidney, and brain) were obtained from BioChain. For mouse and human RNAs, 2.5 ug of RNA was used for reverse transcription (RT). RT was performed by High Capacity cDNA RT Kit (Applied Biosystem) followed by PCR (GoTaq DNA Polymerase, Promega). RT-PCR products were separated by 6% PAGE. PCR reactions involved: 95°C for 3 min, 25–30 cycles of 95°C for 45 s, 55°C for 45 s, 72°C for 45 s, and 72°C for 5 min. RNA-seq data was used identify alternatively splicing regions and primers (Sigma) that anneal to the constitutive flanking exons were designed. Primers are listed in Figure 8—figure supplement 2. Ethidium bromide-stained RT-PCR bands were quantified by Kodak Gel logic 2000 and Carestream Software. PSI values were calculated by densitometry using the equation: PSI = 100 X [Inclusion band/(Inclusion band +Skipping band)]. RT-PCRs were repeated by at least two technical replicates.
 
-## Western blotting
+### Western blotting
 
 FVB wild-type gastrocnemius tissues were lysed in HEPES-sucrose buffer (10 mM HEPES pH 7.4, 0.32 M sucrose, 1 mM EDTA and protease inhibitors) using Bullet blender (Next Advance) and SDS (final concentration of 1%) was added before sonication (3 min at 75 V for 30 s on and 30 s off). The samples were centrifuged for 10 min at 12,000 rpm at 4°C. Supernatants were transferred to new tubes, and samples were diluted in loading buffer (100 mM Tris-HCl pH 6.8, 4% SDS, 0.2% bromophenol blue, 20% glycerol, 200 mM β-mercaptoethanol) then boiled for 3 min. Pierce Compat-able BCA protein assay kit (Thermo Scientific) was used to quantify protein concentration after the addition of loading buffer. For each sample 40 μg of protein was loaded into a 10% SDS-PAGE gel. Proteins were transferred to membranes and blocked with 5% milk/0.1% Tween-PBS buffer for 1 hr, washed, and incubated overnight at 4°C with 5% milk/Tween-PBS buffer diluted primary antibodies: mouse monoclonal anti-CELF1 clone 3B1 (1:1000), CELF2 (Santa Cruz Biotechnology [sc-47731]−1:1000), Mbnl1 (LifeSpan Biosciences [LS-C30810]−1:1000), Mbnl2 (Santa Cruz Biotechnology [sc-136167]−1:1000), rabbit polyclonal anti-sarcomeric α-actinin (Abcam #ab72592-1:2,000). CELF1 and CELF2 monoclonal antibodies were conjugated to HRP using Abnova Peroxidase Labeling Kit – NH2. Non-conjugated primary antibodies were incubated the following day for 1 hr at room temperature with secondary antibodies: goat anti-mouse IgG light chain-specific HRP conjugated (Jackson Immunoresearch [#115-035-174]−1:10000) and goat anti-rabbit IgG HRP conjugated (Invitrogen, [#621234]−1:5000). Super Signal West Pico Chemilumiescent Substrate kit (Thermo Scientific) was used for developing.
 
-## ASO injection in vivo
+### ASO injection in vivo
 
 Animal protocols were approved by IACUC at Baylor College of Medicine. FVB wild-type adult mice were anesthetized by isoflurane in a chamber and moved to a nose cone for injections. First, the FDB muscle was pretreated with hyaluronidase (0.5 mg/ml, 10 μl) injected subcutaneously. After 2 hr, morpholino ASOs (80 μg Ppp3ca ex13 3’ss, 20 μg Ppp3cb ex10a 3’ss, 20 μg Ppp3cb ex13 5’ss, and 80 μg Ppp3cc ex 10a 3’ss or 200 μg of standard control, 15 μl) (Gene-Tools, sequence in Figure 8—figure supplement 2) were injected followed by electroporation. Electroporation parameters were 150 V, 20 s duration, no delay, 1 Hz, train 0.5, and duration 400. Mice were assayed for splicing redirection by RT-PCR and other downstream assays 3 weeks after injection.
 
-## In vitro calcium and force assays
+### In vitro calcium and force assays
 
 FDB lateral and medial muscle bundles were dissected away leaving the central muscle bundle and tendon. The central muscle bundle tendon was attached to a fixed hook and the other to a force transducer. The muscle was placed in physiological saline solution, continuously gassed with 95% O2/5% CO2 at 25°C, and loaded with 5 µM Fura 4 F AM (Invitrogen). After 30 min, samples were rinsed with fresh solution and then allowed to de-esterify for 30 min. The optimal muscle length (Lo) and voltage (Vmax) were adjusted to induce maximum twitch force. Twitch and tetanic force were measured at 1 and 150 Hz with pulse and train durations of 0.5 and 250 ms, respectively. Fura 4 F AM excitation (360/380 nm) and emission (510 nm) were monitored simultaneously with force-frequency characteristics. After stimulation, muscle length was measured and fiber bundles were trimmed of excess muscle and connective tissue, blotted dry, and weighed. Muscle weight and Lo were used to estimate cross sectional area and to calculate absolute forces expressed as N/cm2 (Close, 1972). To determine intracellular calcium changes during FDB stimulation, the 360/380 nm ratio was calculated.
 
-## Cell culture
+### Cell culture
 
 C2C12 cells were maintained in DMEM with 10% FBS in six-well tissue culture plates. To differentiate cells, cultures were grown to 100% confluency, and media was changed to DMEM with 2% horse serum. To redirect splicing in C2C12, 9–15 μM morpholinos were delivered by Endo-Porter (Gene-Tools) at 50% confluency. Morpholinos and Endo-Porter were added to differentiation media after cells reached 100% confluency. Differentiated C2C12 myotubes were collected at day 4. For one biological replicate, three separate wells of control ASO and calcineurin ASOs (total of six wells) were collected for downstream experiments. Cell culture experiments were performed in at least three biological replicates.
 
-## Immunofluorescence
+### Immunofluorescence
 
 Undifferentiated or differentiated C2C12 cells were grown in six-well tissue culture plates containing glass coverslips. Cells were fixed with 4% paraformaldehyde in PBS for 15 min at room temperature. Fixed cells were washed with PBS 2x and permeabilized using 0.2% triton-X in PBS for 10 min. Cells were then blocked in 5% BSA in PBS at room temperature for 1 hr and incubated overnight in primary antibody in 5% BSA in PBS at 4°C. The cells were washed 3x with PBS followed by Alexa Fluor-conjugated secondary antibody incubation for 1 hr, washed 3x with PBS, DAPI stained for 5 min, and washed 3x with PBS. Deconvolution microscopy was performed by GE Healthcare Inverted Deconvolution/Image Restoration Microscope.
 
-## Statistics
+### Statistics
 
 For statistical analysis, at least three samples were pooled together to determine average and variance. Error bars represent the standard deviation, and student T-test was used determine significant with p>0.05. With sample size indicated in figure legends, it was confirmed experimental sample size gave at least power of 0.80 with an α of 0.05. Biological replicates refer to individual mice or separate wells for cell culture. Technical replicates refer to RT-PCR replicates from the same cDNA or RNA.

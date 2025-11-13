@@ -36,11 +36,425 @@ In recent years, a class of methods called Remove Unwanted Variation (RUV) has b
 
 ## Results
 
-## Batch effects include protein expression differences
+### Batch effects include protein expression differences
 
 A known source of unwanted variation in CyTOF datasets is the time-drift in signal intensity (Finck et al., 2013). However, there can also be variation due to differences across batches in antibody conjugates or other reagents, as well as operators, machines and laboratories. To exhibit some of the batch effects that can arise with CyTOF within one lab, we conducted an experiment using samples replicated across batches. Replicated samples allow us to assess intra-site reproducibility and systematic differences due to technical variation.
 
 We created a dataset based on 24 samples in total, consisting of peripheral blood mononuclear cell (PBMC) samples from three patients with chronic lymphocytic leukaemia (CLL) and PBMC from nine healthy controls (HC), each replicated across two batches of 12 samples (Table 1). All samples were stained with a 31-antibody panel targeting 19 lineage (Table 2) and 12 functional proteins (Table 3) that were previously validated (Teh et al., 2020). After processing the data (Methods), we applied an arcsinh-transformation defined as arcsinh (intensity/5) in all that follows.
+
+**Table 1.**
+ Samples descriptions.The first column indicates the sample id, the second the patient condition, either healthy controls (HC) or chronic lymphocytic leukaemia (CLL), the third column indicates the patient id and the last indicates the batch number, 1 or 2.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Sample Id</th>
+      <th>Condition</th>
+      <th>Patient Id</th>
+      <th>Batch</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>HC1_B1</td>
+      <td>HC</td>
+      <td>VBDR996</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>HC2_B1</td>
+      <td>HC</td>
+      <td>VBDR1089</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>HC3_B1</td>
+      <td>HC</td>
+      <td>VBDR1090</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>HC4_B1</td>
+      <td>HC</td>
+      <td>VDBR1098</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>HC5_B1</td>
+      <td>HC</td>
+      <td>VDBR1108</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>HC6_B1</td>
+      <td>HC</td>
+      <td>VDBR1103</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>HC7_B1</td>
+      <td>HC</td>
+      <td>VDBR1105</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>HC8_B1</td>
+      <td>HC</td>
+      <td>VDBR1107</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>HC9_B1</td>
+      <td>HC</td>
+      <td>VBDR1111</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CLL1_B1</td>
+      <td>CLL</td>
+      <td>DG33-01</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CLL2_B1</td>
+      <td>CLL</td>
+      <td>DG23-01</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>CLL3_B1</td>
+      <td>CLL</td>
+      <td>DG27-01</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>HC1_B2</td>
+      <td>HC</td>
+      <td>VBDR996</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>HC2_B2</td>
+      <td>HC</td>
+      <td>VBDR1089</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>HC3_B2</td>
+      <td>HC</td>
+      <td>VBDR1090</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>HC4_B2</td>
+      <td>HC</td>
+      <td>VDBR1098</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>HC5_B2</td>
+      <td>HC</td>
+      <td>VDBR1108</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>HC6_B2</td>
+      <td>HC</td>
+      <td>VDBR1103</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>HC7_B2</td>
+      <td>HC</td>
+      <td>VDBR1105</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>HC8_B2</td>
+      <td>HC</td>
+      <td>VDBR1107</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>HC9_B2</td>
+      <td>HC</td>
+      <td>VBDR1111</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>CLL1_B2</td>
+      <td>CLL</td>
+      <td>DG33-01</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>CLL2_B2</td>
+      <td>CLL</td>
+      <td>DG23-01</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <td>CLL3_B2</td>
+      <td>CLL</td>
+      <td>DG27-01</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 2.**
+ Lineage surface proteins selected.The first column indicates the transition element isotope (mass number, element name), the second column indicates the antigen selected, and the last two columns indicate the clone name and vendor.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Metal</th>
+      <th>Lineage (surface) protein antibody</th>
+      <th>Clone</th>
+      <th>Vendor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>89 Y</td>
+      <td>CD45</td>
+      <td>HI30</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>115 In</td>
+      <td>HLA-DR</td>
+      <td>L243</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>140 Ce</td>
+      <td>CD27</td>
+      <td>M-T271</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>141 Pr</td>
+      <td>CD235a/b</td>
+      <td>HIR2</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>142 Nd</td>
+      <td>CD19</td>
+      <td>HIB19</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>143 Nd</td>
+      <td>CD5</td>
+      <td>UCHT2</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>144 Nd</td>
+      <td>CD38</td>
+      <td>HIT2</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>145 Nd</td>
+      <td>CD4</td>
+      <td>RPA-T4</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>146 Nd</td>
+      <td>CD8</td>
+      <td>RPA-T8</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>147 Sm</td>
+      <td>CD20</td>
+      <td>H1</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>148 Nd</td>
+      <td>CD16</td>
+      <td>3G8</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>151 Eu</td>
+      <td>CD123</td>
+      <td>6H6</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>155 Gd</td>
+      <td>CD56</td>
+      <td>B159</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>156 Gd</td>
+      <td>CD14</td>
+      <td>HCD56</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>159 Tb</td>
+      <td>CD11c</td>
+      <td>Bu15</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>169 Tm</td>
+      <td>CD45RA</td>
+      <td>HI100</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>170 Er</td>
+      <td>CD3</td>
+      <td>UCHT1</td>
+      <td>BioLegend</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>171 Yb</td>
+      <td>CD66</td>
+      <td>CD66a-B1.1</td>
+      <td>DVS</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>209 Bi</td>
+      <td>CD61</td>
+      <td>VI-PL2</td>
+      <td>DVS</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Set of intracellular functional proteins selected.The first column transition element isotope (mass number, element name), the second column indicates the antigen selected, and the last two columns indicate the clone name and vendor.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Metal</th>
+      <th>Functional (intracellular) protein antibody</th>
+      <th>Clone</th>
+      <th>Vendor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>140 Ce</td>
+      <td>BAK</td>
+      <td>7D10</td>
+      <td>WEHI</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>153 Eu</td>
+      <td>Bcl-xL</td>
+      <td>E18</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>154 Sm</td>
+      <td>Bax</td>
+      <td>1B4</td>
+      <td>WEHI</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>157 Gd</td>
+      <td>Bcl-2</td>
+      <td>100</td>
+      <td>WEHI</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>160 Gd</td>
+      <td>Mcl-1</td>
+      <td>Y37</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>161 Dy</td>
+      <td>cMyc</td>
+      <td>D84C12</td>
+      <td>CST</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>163 Dy</td>
+      <td>BFL-1</td>
+      <td>SP435</td>
+      <td>Abcam</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>165 Ho</td>
+      <td>Bim</td>
+      <td>3C5</td>
+      <td>WEHI</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>166 Er</td>
+      <td>pRb [S807/811]</td>
+      <td>J112-906</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>172 Yb</td>
+      <td>BCLW</td>
+      <td>16H12</td>
+      <td>WEHI</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>173 Yb</td>
+      <td>cCaspase3</td>
+      <td>C92-605</td>
+      <td>BD</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>174 Yb</td>
+      <td>p53</td>
+      <td>7F5</td>
+      <td>CST</td>
+    </tr>
+  </tbody>
+</table>
 
 The first class of diagnostic plots we use is based on median protein expression. The multi-dimensional scaling (MDS) plot (Figure 1A) computed using median protein expression from all cells in each sample as described in Crowell HL et al., 2017 and Nowicka et al., 2017, shows the dissimilarities between samples. The first dimension (MDS1) separates the CLL from the HC samples well. The second dimension (MDS2) shows the batch differences, with samples that originate from batch one placed at the bottom of the plot and samples from batch two at the top of the plot. This distinction clearly reveals that the protein expression measured in the samples is affected by batch. We also carried out hierarchical clustering on the median expression across all cells in the samples of the 19 lineage proteins and 12 functional proteins detected, to highlight the proteins driving the observed clustering of samples (columns) and proteins (rows) in the heatmap (Figure 1B). As with the MDS plot, a grouping of samples by condition and by batch is observed.
 
@@ -50,15 +464,43 @@ The first class of diagnostic plots we use is based on median protein expression
 
 We next examined the magnitude of the batch-to-batch differences in the distributions of the protein expression across replicates, as our second class of diagnostic plots. We observed that batch effects not only affect each protein differently (Figure 2—figure supplement 1) but also each sample differently (Figure 2—figure supplement 1). To assess the importance of the variation found between samples replicated across batches, we compared them to expected, biologically relevant differences within a single batch. To do this, we used another dataset of a replicated sample from one index patient with CLL, and samples from six other patients with CLL. The one sample from the index patient with CLL was replicated across eight different CyTOF batches, resulting in eight replicated CLL datasets. We compared the variation in these datasets with that from six other patients with CLL processed in a single CyTOF batch. We focussed on expression of BCL-2, an archetypal pro-survival protein that is greatly upregulated in CLL cells compared to their normal B cell counterparts, yet still exhibits variation in CLL cells among patients (Majid et al., 2008). We found that the variation in the distributions of the BCL-2 expression from a single sample across batches (Figure 2A) is comparable to that observed in the BCL-2 expression for the six patients at screening from a single CyTOF batch (Figure 2B). We conclude that batch effects due to unwanted variation can occur over a range comparable to that due to actual biological changes among patients (Figure 2A–B). An important repercussion in this example is that the impacts of treatments on distinct CLL cellular phenotypes would not be confidently detected without correcting for batch effects.
 
-## Batch effects affect cell subpopulations differently
+![Figure 2.](https://cdn.elifesciences.org/articles/59630/elife-59630-fig2-v2.jpg)
+
+**Figure 2.:** (A) Distributions of BCL-2 expression in one sample from one treated CLL cancer patient, replicated across 8 CyTOF batches, coloured by batch. (B) Distributions of BCL-2 expression in one sample from each of 6 different CLL cancer patients at screening, processed in a single CyTOF batch, coloured by patient.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/59630/elife-59630-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Lineage protein expression distributions for the sample CLL2 across batches, before normalisation. (B) Same as (A) with functional proteins. (C) Lineage protein expression distributions for the sample HC1 across batches, before normalisation. (D) Same as (C) with functional proteins.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/59630/elife-59630-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Lineage protein expression distributions for the CLL2 sample across batches, after CytofRUV normalisation. (B) Same as (A) with functional proteins. (C) Lineage protein expression distributions for the sample HC1 across batches, after CytofRUV normalisation. (D) Same as (C) with functional proteins.
+
+### Batch effects affect cell subpopulations differently
 
 To assess how batch effects affect cell subpopulations, we used our first dataset of samples from 3 patients with CLL and 9 PBMC healthy controls (HC). We partitioned the entire collection of cells into clusters using FlowSOM as described in Nowicka et al., 2017, which appeared among the fastest and best performing clustering approaches for CyTOF data (Weber and Robinson, 2016). In all 24 samples, we carried out this clustering using the 19 lineage proteins to identify 20 cell clusters (Figure 3A and Figure 3—figure supplement 1). We performed the clustering using different numbers of clusters, and the choice of 20 clusters was determined based on the biological interpretation of the cell subpopulations found. Here we refer to clusters as cell subpopulations, although in some cases the clustering method might produce clusters that do not necessarily correspond to homogeneous cell subpopulations. The third class of diagnostic plots we display are based on the clustering results. We used t-Distributed Stochastic Neighbor Embedding (t-SNE) as described in Crowell HL et al., 2017 and Nowicka et al., 2017 to give a 2D representation of the single-cell data, with the positions of cells reflecting their proximity in high-dimensional space. It was then possible to visualise the impact of batch differences on cell subtypes identification in the datasets by examining the t-SNE plot coloured by cluster (Figure 3A), which assumed different distributions across the replicate CyTOF runs. Additionally, we highlighted the batch effect by overlaying the predominant CLL cell subpopulation (cluster 9) coloured by batch (Figure 3B). The distinct positions of these clusters on the second dimension (t-SNE2) suggested that substantial unwanted variation was altering cell population measures across the two batches.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59630/elife-59630-fig3-v2.jpg)
+
+**Figure 3.:** (A) Cell clustering identification. t-SNE plot based on the arcsinh-transformed expression of the 19 lineage proteins in the cells. For display purposes, 2000 cells were randomly selected from each of the samples. Cells are coloured according to the 20 clusters obtained using FlowSOM clustering stratified by batch 1 (left) or 2 (right) of the corresponding replicated sample. (B) Same as in (A) selecting only cluster 9 cells but coloured by the batch 1 or 2 of the corresponding replicated sample. (C) Same as in (A) but after CytofRUV normalisation with k = 5. (D) Same as in (B) but after CytofRUV normalisation with k = 5. (E) Linear discriminant analysis applied to data on two cell types from the same sample replicated across two batches, with shape indicating cell type and colour indicating batch. (F) Cluster proportions. Barplot of the relative abundance (percentage) of the cells in clusters 2, 6 and 7 by batch.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59630/elife-59630-fig3-figsupp1-v2.jpg)
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/59630/elife-59630-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Before and (B) After CytofRUV normalisation with k = 5.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/59630/elife-59630-fig3-figsupp3-v2.jpg)
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/59630/elife-59630-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** (A) ΔΔ differences were computed on the 3 replicated CLL samples within the main CLL cluster. (B) ΔΔ differences were computed on the 9 replicated HC samples within the main HC cluster.
 
 To optimise the dimensionality reduction and visualise the extent to which discrete subsets of cells are separated from each other in the 31-dimensional space, we performed a linear discriminant analysis (LDA) on four subsets of cells: the predominant CLL cell subpopulation (cluster 9) and CD8 killer cell subpopulation (cluster 2) identified in the study from batches 1 and batch 2. The first dimension (LD1) separates the cell types well, while the second dimension (LD2) embodies batch differences: cells that originate from batch one are located at the top of the plot while cells from batch two are at the bottom of the plot (Figure 3E).
 
 CyTOF has the unique ability to provide a deeper understanding of the molecular changes induced by targeted therapies at the single-cell level and how their efficacy is influenced by cancer heterogeneity. However, the assessment of patient heterogeneity and its correlation with the clinical outcome necessitates a reliable detection of changes in protein expression across patients. As such, we compared the median expression of BCL-2 for the 3 patients with CCL in the main CLL cluster nine and found that the variation from a single sample across batches is higher than that observed in the BCL-2 median expression across patients (Figure 3—figure supplement 2A). To overcome this limitation, the assessment of heterogeneity of patients with CLL requires a correction for batch effects that would remove this unwanted variation.
 
-## Batch effects can induce differences in cell subpopulation abundances
+### Batch effects can induce differences in cell subpopulation abundances
 
 In CyTOF studies, the analysis of cell subpopulation abundances as well as that of protein expression can be used to identify sets of proteins that are associated with response to a treatment. Comparing the proportions of inferred cell types across different drug treatments highlights the subpopulations that change across experimental conditions. To assess whether batch differences affect cell subpopulation abundances, we compared the cluster frequencies across replicates. We detected a noticeable difference in the proportions of CLL cancer cells (cluster 2, cluster 6 and cluster 7) among cells that originate from the batch one compared to those from batch 2 (Figure 3F). Our R-Shiny application can also be used to visualise the cluster proportions across samples, and is our fourth class of diagnostic plots (Figure 4). Such variation in cell subpopulation abundance is important when batches have markedly different proportions. We need to be able to identify changes in subpopulation abundance which are due to biology and not to unwanted variation between samples.
 
@@ -68,33 +510,57 @@ In CyTOF studies, the analysis of cell subpopulation abundances as well as that 
 
 In summary, we examined the reproducibility of samples replicated across batches. To facilitate the identification of batch effects across replicates, we developed an R-Shiny application that produces the four diagnostic plots previously mentioned: Median Protein Expression, Protein Expression Distributions, Clustering Results and Cluster Proportions. We found that batch differences affect not only the protein expression levels, but also the cluster proportions. Such differences are problematic in large-scale studies with multiple patients, cell types and treatments, as they compromise the detection of biologically important changes. The integration of datasets from multiple CyTOF batches is therefore an important challenge to be addressed.
 
-## Using CytofRUV to remove batch effects in CyTOF data
+### Using CytofRUV to remove batch effects in CyTOF data
 
 To integrate data from multiple CyTOF batches, we have developed a normalisation method that removes batch effects in CyTOF data. In order to estimate and adjust for such unwanted variation, CytofRUV exploits the concept of pseudo-replicates (here cells) in the RUV-III method that has been successfully applied to the Nanostring nCounter gene expression platform (Molania et al., 2019) and to single-cell RNA-seq data (Lin et al., 2019). We cluster using FlowSOM, and we assume that at least one cluster in the replicated samples is shared across the batches. We then consider the cells of clusters shared across the batches to be pseudo-replicates (see Methods). To adjust for batch effects, CytofRUV begins by averaging protein values across pseudo-replicates, and then forms residuals. This leads to an estimate of one aspect of the unwanted variation (α) on each protein, which in turn is used to estimate the other aspect (W) of the unwanted variation on each cell. Finally, those estimates are combined into an estimate of the unwanted variation (Wα), and that is subtracted from the data. The dimension (k) of the unwanted variation also needs to be determined. To find a good value for k, we repeat the analysis with different values of k and then evaluate the quality of each result using our diagnostic plots and the corresponding summary statistics.
 
 We first used CytofRUV on data from the 12 samples replicated across two batches, using two samples as our known replicated reference samples. Specifically, we used HC1 for the HC samples and CLL2 for the CLL samples, defining all cells from those samples in any given cluster to be pseudo-replicates. Assuming that all 20 clusters have cells from HC1 and CLL2 in both batches, any differences in protein expression between cells within the cluster but in different batches will represent unwanted variation. We summarized the performance of our CytofRUV normalisation method on all the CLL samples using three metrics and compare them with the corresponding ones for BatchAdjust (Schuyler et al., 2019) and CytoNorm (Van Gassen et al., 2019).
 
-## CytofRUV reduces batch effects from protein expression
+### CytofRUV reduces batch effects from protein expression
 
 To assess the quality of the our CytofRUV normalisation, we first compared the distributions of proteins across the two batches for the designated replicated reference samples. We found that, for all the proteins, these distributions become more similar across batches (Figure 2—figure supplement 1, Figure 2—figure supplement 2). Also, we observed that the variation in the median expression of BCL-2 for the 3 patients with CLL in the main CLL cluster is reduced compared to that observed in the BCL-2 median expression across patients (Figure 3—figure supplement 2B). We also observed a decrease in the batch effects both on the t-SNE plots (Figure 3C and D) and in the linear discriminant analysis (Figure 3—figure supplement 3). To quantify the batch differences between these pairs of distributions, we computed the Earth Movers Distance (EMD) as described in Van Gassen et al., 2019 for all the proteins and all CLL and HC samples for both the original dataset and the normalised datasets (Figure 5A and D). For only the CytofRUV normalisation, we also computed the EMD by cluster for all proteins to assess the reduction in batch differences within cluster compared to the raw data, where batch effects are affecting protein distributions within cluster differently (Figure 5—figure supplement 1). For all CLL samples, CytofRUV gave the lowest EMD for all values of k = 5,10 and 15, not only compared to the raw data but also compared to both BatchAdjust and CytoNorm (Figure 5A). Similarly, CytofRUV also gave the lowest EMD for 7 out of 9 HC samples compared to both BatchAdjust and CytoNorm (Figure 5D).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/59630/elife-59630-fig5-v2.jpg)
+
+**Figure 5.:** In all panels, the colour indicates either the raw data or the method used for normalisation. (A) Boxplots of the Earth Movers Distances (EMD) between paired protein expression distributions across batches for each CLL sample. (B) Hellinger distances between paired cluster proportions across batches for each CLL sample. (C) Mean Silhouette scores computed for all CLL samples on the cluster types (bio) on the x-axis and on batch (batch) on the y-axis. (D) Same as (A) for the HC samples. (E) Same as (B) for the HC samples. (F) Silhouette scores computed for all HC samples on the cluster types (bio) on the x-axis and on batch (batch) on the y-axis.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59630/elife-59630-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) EMD for lineage proteins by cluster before (black) and after (blue) CytofRUV normalisation (blue). (B) Same as (A), with functional proteins.
+
 Altogether EMD revealed that CytofRUV is the method with the optimal reduction in batch differences from protein expression for 11 out of 12 samples. CytoNorm gave the lower EMD when compared with BatchAdjust for 7 out of 12 samples (Figure 5A and D).
 
-## CytofRUV makes the cell subpopulation proportions more consistent across batches
+### CytofRUV makes the cell subpopulation proportions more consistent across batches
 
 The proportions of the different cell subpopulations in replicates in different batches should be consistent. This consistency among the replicates ensures that a differential analysis of their abundances will confidently detect robust cellular changes across experimental conditions. To assess how well CytofRUV corrects for differences in cluster proportions across batches, we computed the Hellinger distance (see Methods) between the paired cluster proportions of all replicated samples. For the HC samples, CytofNorm gave the lowest Hellinger distances for 4 samples out of 9 compared to both CytofRUV and BatchAdjust. Two remaining samples are the ones where CytofRUV is able to make those proportions more consistent across replicates (Figure 5E). For all the CLL samples, the lowest Hellinger distances are found for the normalisation with CytofRUV methods (Figure 5B). Overall CytofRUV is able to adjust the cluster proportions and make them consistent across replicates to a greater extent than is achieved by the two others methods. CytoNorm also performs well in adjusting those proportions, while BatchAjust generally leads to Hellinger distances similar to those in the raw data (Figure 5B and E).
 
-## Effective removal of unwanted variation leads to a better separation of cell subpopulations
+### Effective removal of unwanted variation leads to a better separation of cell subpopulations
 
 To evaluate whether CytofRUV not only removes batch effects but preserves biology, we compare the cell-to-cell variation within clusters in relation to between clusters. We do this by computing Silhouette scores (see Methods), which are a combined measure of the degree of separation of cells within clusters and that between clusters. We compute two Silhouette scores sbiology and sbatch, based on the cell subpopulations defined by the clusters, and batch grouping, respectively. A normalisation method that successfully removes batch effects should lead to adjusted data with a small sbatch score, while one which preserves or enhances the biology should have high value of sbiology, at least as high as that before adjustment. To assess this aspect of the performance of normalisation methods, we combine the sbiology for clusters with sbatch for the batches in a single plot (Figure 5C and F). When the raw data are found at the bottom left corner of the plot and a normalisation method is found at the top right corner of the plot, this indicates that the method has successfully removed batch effects and preserved or enhanced the biology. According to the mean Silhouette scores of the CLL samples (Figure 5C), CytofRUV with k = 5 gives the best results, not only enhancing the biology i.e. cell sub-type definition across replicates (also on t-SNE plots Figure 3C and D), but also removing the batch effects. For most of the HC samples, sbatch is similar for all methods and in a few samples sbatch is higher than in the raw data for all methods (Figure 5F). Using CytofRUV with k = 5 for the HC samples, we also obtained a higher sbiology for 8 out of the 9 HC samples (Figure 5F) compared to the two other methods.
 
-## CytofRUV removes batch effects across multiple batches in two other datasets
+### CytofRUV removes batch effects across multiple batches in two other datasets
 
 To expand our analysis, we also tested all methods on two other datasets containing replicate reference samples across multiple batches, taken from those used in Schuyler et al., 2019 and in CytoNorm (Van Gassen et al., 2019).
 
 The first dataset (Schuyler et al., 2019) is from peripheral whole blood samples from a single healthy donor, processed at one time to include unstimulated and stimulated conditions (Lipopolysaccharide LPS+ and Resiquimod R848-), and aliquoted into 12 batches. We carried out the normalisation of all samples using BatchAdjust as explained in Schuyler et al., 2019. For CytofRUV and CytoNorm, we used all the stimulated samples as replicated reference samples and identified 20 clusters with FlowSOM. CytofRUV used all clusters to define pseudo-replicates.
 
 Our R-Shiny application can also be used to assess the ability of a normalisation method to correct for batch effects. Using our fourth diagnostic plot, we can visualise the ability of CytofRUV with k = 10 to remove batch effects in cluster proportions across 12 batches (Figure 6C) compared to that in the raw data (Figure 6A). We also summarized the performance of all three methods using the same three metrics (Figure 6—figure supplement 1). Again, we observed the ability of CytoNorm to correct for differences in cluster proportions in stimulated samples where the lowest Hellinger distances are found (Figure 6—figure supplement 1B), and in unstimulated samples (Figure 6—figure supplement 1E), followed by CytofRUV with overall lower distances than BatchAdjust. Likewise, we confirmed that, overall, CytofRUV gave lower EMD for both the stimulated (Figure 6—figure supplement 1A) and unstimulated samples (Figure 6—figure supplement 1D) compared to the two other methods, which in some cases have some cases higher EMD than those of the raw data. Again we observed improved Silhouette scores for CytofRUV compared with BatchAdjust and CytoNorm, which have higher sbatch (Figure 6—figure supplement 1C).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/59630/elife-59630-fig6-v2.jpg)
+
+**Figure 6.:** (A) Barplot of proportions of clusters across 28 samples from the BatchAdjust dataset (Schuyler et al., 2019) before normalisation, by samples and coloured by cluster. Vertical black boxes contain the same sample (Stimulated or Unstimulated) replicated across 14 batches. (B) Protein expression distribution from the CytoNorm dataset (Van Gassen et al., 2019) before normalisation of all cells from the stimulated samples across 10 batches and coloured by batch. (C) Same as (A) but after CytofRUV normalisation with k = 10. (D) Same as (B) but after CytofRUV normalisation with k = 5.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/59630/elife-59630-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** In all panels, the colour indicates either the raw data or the method used for normalisation. (A) Boxplots of the Earth Movers Distance (EMD) between paired protein expression distributions for each batch’s stimulated sample compared to that in the first batch. (B) Hellinger distances between paired cell subpopulation proportions for each batch’s stimulated sample compared to that in the first batch. (C) Mean Silhouette scores computed for all stimulated and unstimulated samples with those for cell subpopulations (bio) on the x-axis and for batch (batch) on the y-axis. (D) Same as (A) for the unstimulated samples. (E) Same as (B) for the unstimulated samples.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/59630/elife-59630-fig6-figsupp2-v2.jpg)
+
+**Figure 6—figure supplement 2.:** In all panels, the colour indicates either the raw data or the method used for normalisation. (A) Boxplots of the Earth Movers Distance (EMD) between paired protein expression distributions for each batch’s stimulated sample across compared to that in the first batch. (B) Hellinger distances between paired cell subpopulation proportions for each batch’s stimulated sample compared to that in the first batch. (C) Mean Silhouette scores computed for all stimulated and unstimulated samples with those for cell subpopulations (bio) on the x-axis and for batch (batch) on the y-axis. (D) Same as (A) for the unstimulated samples. (E) Same as (B) for the unstimulated samples.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/59630/elife-59630-fig6-figsupp3-v2.jpg)
+
+**Figure 6—figure supplement 3.:** In all panels, the colour indicates either the raw data or the method used for normalisation. (A) Boxplots of the Earth Movers Distance (EMD) between paired protein expression distributions for each batch’s stimulated sample across compared to that in the first batch. (B) Hellinger distances between paired cell subpopulation proportions for each batch’s stimulated sample compared to that in the first batch. (C) Mean Silhouette scores computed for all stimulated and unstimulated samples with those for cell subpopulations (bio) on the x-axis and for batch (batch) on the y-axis. (D) Same as (A) for the unstimulated samples. (E) Same as (B) for the unstimulated samples.
 
 The second dataset (Van Gassen et al., 2019) comes from the FlowRepository FR-FCM-Z247 which is the validation cohort of an immunoprofiling study of women during pregnancy used in CytoNorm (Van Gassen et al., 2019). The samples we analyse come from the blood of one healthy donor which was replicated across 10 separately barcoded plates (i.e. batches). Each batch contained unstimulated cells and cells stimulated with both Interferon α and LPS. Each stimulated and unstimulated sample was duplicated (referred to as sample 1 and sample 2), giving four samples per plate. To assess the limitations of the three normalisation methods, we carried out two analyses. The first normalisation was only carried out on samples two using the stimulated samples two as replicate reference samples, while the second normalisation was done on samples 1 and 2 using both the stimulated and unstimulated samples one as reference samples. We performed CytoNorm as explained in Van Gassen et al., 2019 and identified 25 clusters with FlowSOM and we used all clusters to define pseudo-replicates for CytofRUV.
 
@@ -138,66 +604,74 @@ In summary, we proposed here a computational algorithm called CytofRUV that effe
 
 ## Materials and methods
 
-## CytofRUV
+### CytofRUV
 
-To remove the unwanted variation across multiple datasets and batches, we used fastRUV-III as previously described (Lin et al., 2019; Molania et al., 2019). Briefly, the data are first standardised before being fitted to the RUV-III model underlying all RUV analyses:Yij=Xiβj+Wiαj+ εij
+To remove the unwanted variation across multiple datasets and batches, we used fastRUV-III as previously described (Lin et al., 2019; Molania et al., 2019). Briefly, the data are first standardised before being fitted to the RUV-III model underlying all RUV analyses:
 
-Here, Yij is the standardised expression value (arcsinh(intensity/5)) for protein j in a cell i with i=1,…, m and j=1,…, n, of m cells and n proteins. The standardisation is to have zero mean and unit standard deviation across all cells for all protein measurements.
+$$
+Y_{ij}=X_{i}\beta_{j}+W_{i}\alpha_{j}+\epsilon_{ij}
+$$
 
-Xi represents the factors of interest for the sample giving cell i. Wi represents the unwanted factors for that cell. The dimension of the unwanted factors is being denoted by k, αj represents the coefficient of Wi for protein j in a cell i and εij  is noise, typically εij ~ N(0, σj2).
+Here, $Y_{ij}$ is the standardised expression value (arcsinh(intensity/5)) for protein j in a cell i with $i=1,…,mandj=1,…,n$, of m cells and n proteins. The standardisation is to have zero mean and unit standard deviation across all cells for all protein measurements.
 
-The data are normalised in six steps. First, all the data are clustered, typically using FlowSOM, although other clustering methods can be used. Second, group of cells are defined to be pseudo-replicates if they belong to the same subpopulation (i.e. cluster) but are in different batches, which can be done either on specific clusters or on all clusters. Third, cell-level residuals are computed by averaging all the protein measurements across those pseudo-replicates, and subtracting these averages from each measurement on each cell. In essence, differences of measurements on pseudo-replicates are considered as unwanted variation. The quantities αj are then estimated from the singular value decomposition (SVD) of the m x n matrix of these residuals. Next the k-vectors of Wi for the cells are then estimated using all proteins as 'negative controls'. Finally, the estimates of Wi and αj  are multiplied to get an estimate of Wiαj,  which is then subtracted from the Yij to get the final adjusted data. Full details and a discussion of key issues can be found in Lin et al., 2019 and Molania et al., 2019.
+$X_{i}$ represents the factors of interest for the sample giving cell i. $W_{i}$ represents the unwanted factors for that cell. The dimension of the unwanted factors is being denoted by k$,\alpha_{j}$ represents the coefficient of $W_{i}$ for protein j in a cell i and $\epsilon_{ij}$ is noise, typically $\epsilon_{ij}~$N(0, σj2).
 
-## BatchAdjust
+The data are normalised in six steps. First, all the data are clustered, typically using FlowSOM, although other clustering methods can be used. Second, group of cells are defined to be pseudo-replicates if they belong to the same subpopulation (i.e. cluster) but are in different batches, which can be done either on specific clusters or on all clusters. Third, cell-level residuals are computed by averaging all the protein measurements across those pseudo-replicates, and subtracting these averages from each measurement on each cell. In essence, differences of measurements on pseudo-replicates are considered as unwanted variation. The quantities $\alpha_{j}$ are then estimated from the singular value decomposition (SVD) of the m x n matrix of these residuals. Next the k-vectors of $W_{i}$ for the cells are then estimated using all proteins as 'negative controls'. Finally, the estimates of $W_{i}$ and $\alpha_{j}$ are multiplied to get an estimate of $W_{i}\alpha_{j},$ which is then subtracted from the $Y_{ij}$ to get the final adjusted data. Full details and a discussion of key issues can be found in Lin et al., 2019 and Molania et al., 2019.
+
+### BatchAdjust
 
 For all the datasets, BatchAdjust was performed using the R code and usage instructions as described in Schuyler et al., 2019. We used the option of scaling the 95th percentiles with no transformation applied to the data before adjustment.
 
-## CytoNorm
+### CytoNorm
 
 CytoNorm was performed as described in Van Gassen et al., 2019 following the two steps provided in the R library CytoNorm to normalise the data.
 
-## Earth Movers Distance
+### Earth Movers Distance
 
 To quantify the similarity of protein expression distributions across batches, we computed the Earth Movers Distance, also called the Wasserstein metric, as described in Van Gassen et al., 2019. Briefly, the data are binned and we computed the pairwise EMDs across batches for the distribution of every protein over all cells as well as over the cells in each cluster. This was done for both the original dataset and the normalised datasets.
 
-## Hellinger distance
+### Hellinger distance
 
-To quantify the differences between cluster proportions across batches, we computed the Hellinger distances between the proportions found in samples replicated across different batches. This distance is defined for two probability p=(pi) and q=(qi) by H(p,q), where  H(p,q)2=12∑i=1n(pi- qi)2.
+To quantify the differences between cluster proportions across batches, we computed the Hellinger distances between the proportions found in samples replicated across different batches. This distance is defined for two probability $p=(p_{i})$ and $q=(q_{i})$ by $H(p,q)$, where $H(p,q)^{2}=\frac{1}{2}\sumi=1n(\sqrt{p_{i}}-\sqrt{q_{i}})^{2}.$
 
 We computed these distances for both the original and the normalised datasets.
 
-## Silhouette scores
+### Silhouette scores
 
-To assess the extent to which the data are grouped based on the batch effects as opposed to biological signals, we computed batch and biology Silhouette scores. Given a partitioning of all cells into groups, if ai  denote the average Euclidean distance of the protein expression between the cell i and all other cells in the group to which cell i is assigned, and bi is the minimum of the average distance between the cell i and any cells in other groups not containing cell i, then the silhouette coefficient of cell i is calculated assi=bi-aimax⁡{bi,ai}
+To assess the extent to which the data are grouped based on the batch effects as opposed to biological signals, we computed batch and biology Silhouette scores. Given a partitioning of all cells into groups, if $a_{i}$ denote the average Euclidean distance of the protein expression between the cell i and all other cells in the group to which cell i is assigned, and $b_{i}$ is the minimum of the average distance between the cell i and any cells in other groups not containing cell i, then the silhouette coefficient of cell i is calculated as
+
+$$
+si=\frac{b_{i}-a_{i}}{max⁡{b_{i},a_{i}}}
+$$
 
 The average of the silhouette values across cells using a particular grouping is called the silhouette score for that grouping. Silhouette score ranges from −1 to +one where positive values (bi is high and ai is low) indicate that cells are well matched to their own group. In this way, we computed the silhouette score sbatch based on the batches as groups and the silhouette score sbiology based on the grouping of the cells by subpopulation (i.e. clusters).
 
 sbiology is used to quantify the cell-to-cell variation within cell subpopulations compared to other subpopulations. Negative values mean that the data might be mis-clustered as it is more similar to a neighbouring cluster. For example, if two different biological relevant clusters would be merged into a single cluster, sbiology will reflect this merging with a lower sbiology value.
 
-## Differential analysis
+### Differential analysis
 
 To perform a differential analysis of the cluster abundances across batches, we used diffcyt with the default method 'diffcyt-DA-edgeR' and default parameters with batch as the factor of interest for the differential tests. We performed this analysis both on the data before and after normalisation and calculated the number of significant detected clusters at 10% false discovery rate as described in the diffcyt workflow.
 
-As the differential expression of proteins could not be performed with too few replicates, as with a t-test, we computed the medians Mm,b for each marker m and each batch b across the 12 paired samples in a given cluster. We then computed the difference of medians between batches Δ=Mm,2 − Mm,1 across the 12 paired samples. We computed those differences ∆raw on the data before and Δnorm after normalisation and then plotted the difference of those values, that is ΔΔ=Δraw−Δnorm in Figure 3—figure supplement 4.
+As the differential expression of proteins could not be performed with too few replicates, as with a t-test, we computed the medians Mm,b for each marker m and each batch b across the 12 paired samples in a given cluster. We then computed the difference of medians between batches $Δ=M_{m,2} − M_{m,1}$ across the 12 paired samples. We computed those differences $\Deltaraw$ on the data before and $Δnorm$ after normalisation and then plotted the difference of those values, that is $ΔΔ=Δraw−Δnorm$ in Figure 3—figure supplement 4.
 
-## R package CytofRUV
+### R package CytofRUV
 
 Our algorithm is implemented in the R package ‘CytofRUV’ and is available at:(www.github.com/mtrussart/CytofRUV) (Trussart, 2020). Installation and R code usage instructions for both the R package and the R-Shiny application can be found on the GitHub page. Users are required to provide: the FCS files from all samples in the study, a metadata file containing the details of each sample and a panel file containing the details of all proteins used in the study. The R-Shiny application allows the user to explore the data and identify batch effects across replicates using the diagnostic plots previously mentioned: Median Protein Expression, Protein Expression Distributions, Clustering Results and Cluster Proportions using samples replicated across batches. It can be explored on all the data or on a subsample of the data. The normalize_data function allow the user to adjust for batch effects with parameter settings for the CytofRUV algorithm, such as which replicated samples to use and the value of k. The pipeline and scripts used to generate the results described in this manuscript is also available in the supplementary data.
 
-## PBMC samples from patient and healthy donor
+### PBMC samples from patient and healthy donor
 
 Blood was obtained from healthy donors (via the Victorian Donor Blood Registry) and patients with CLL (via the Royal Melbourne Hospital, Australia). All patients consented under Melbourne Health HREC 2016.305 and samples were analysed under HREC 2016.066. PBMCs were isolated using standard Ficoll-based methods and cryopreserved.
 
-## Mass cytometry
+### Mass cytometry
 
 Cells were thawed and stained for viability with cisplatin. Cells were then fixed with paraformaldehyde (PFA: Electron Microscopy Sciences, Hatfield, PA, USA) to a final concentration of 1.6% for 10 min at room temperature. Cells were pelleted and washed once with cell staining medium (CSM, PBS with 0.5% BSA and 0.02% sodium azide) to remove residual PFA and stored at −80°C.
 
 Cells were barcoded using 20-plex palladium barcoding according to manufacturer’s instructions (Fluidigm, South San Francisco, CA, USA). Following barcoding, cells were pelleted and washed once with cell staining medium (PBS with 0.5% BSA and 0.02% sodium azide) to remove residual PFA. Cells were stained with CD16/CD32 for 10 min and surface antibodies (Table 2) for 30 min at room temperature. Cells were permeabilized with 4°C methanol for 10 min. Cells were washed three times with CSM and stained with intracellular antibodies (Table 2) for 30 min at room temperature. Cells were washed with CSM, then stained with 125 nm 191Ir/193Ir DNA intercalator (Fluidigm, South San Francisco, CA, USA) in PBS with 1.6% PFA at 4°C overnight. Cells were washed once with CSM, washed three times with double-distilled water and filtered to remove aggregates and resuspended with EQ normalisation beads immediately before analysis using a Helios mass cytometer (Fluidigm, South San Francisco, CA, USA). Throughout the analysis, cells were maintained at 4°C and introduced at a constant rate of ~300 cells/sec.
 
-## Processing data for mass cytometry
+### Processing data for mass cytometry
 
 Data concatenation, normalisation and debarcoding are done using the R Catalyst package merging the two batches (RUV_1B and RUV3B) when applying the Finck normalisation. The R script used to generate this preprocessing (CytofRUV_preprocessing_dataset.R) is also available in the supplementary data.
 
-## Flow repository
+### Flow repository
 
 The FCS files from this study are available at flow repository ID FR-FCM-Z2L2.

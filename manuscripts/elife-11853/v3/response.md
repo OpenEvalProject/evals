@@ -65,9 +65,7 @@ We have performed an unbiased comparative analysis of the similarly and differen
 
 We thank the reviewer for this comment. As suggested, we have repeated the ATP measurements using primary hepatocytes obtained from E19.5 and P2 livers (n=4 per time point per group). We have performed trypan blue exclusion test to quantify the number and percentage of viable cells. We observed a ~20% reduction in the number of viable primary Ppara-/-hepatocytes as compared with the WT hepatocytes at both time points, despite that these two groups were simultaneously extracted using the same procedure (see Author response image 1, left panel). We subsequently normalized ATP production to the number of viable cells and found that ATP production in Ppara-/-hepatocytes was ~40-50% of the levels measured in both prenatal and postnatal WT controls (Figure 3E or Author response image 1, right panel). We have reported the new data in the Results (subsection “PPARα Controls the Prenatal Lipid Catabolic Machiner”, last paragraph).
 
-and Ppara-/- hepatocytes is not related to differences in fatty acid oxidation.10.7554/eLife.11853.020Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.11853.020
-
-DOI: http://dx.doi.org/10.7554/eLife.11853.020
+and Ppara-/- hepatocytes is not related to differences in fatty acid oxidation.10.7554/eLife.11853.020Author response image 1.
 
 4) Please explain why palmitate and etomoxir do not have any influence on oxygen consumption in either Ppara+/+ or Ppara-/- hepatocytes. The lack of effect of etomoxir on oxygen consumption in Ppara+/+ hepatocytes suggests that the difference in oxygen consumption between Ppara+/+and Ppara-/- hepatocytes is notrelated to differences in fatty acid oxidation.
 

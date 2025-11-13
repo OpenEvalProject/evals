@@ -16,7 +16,7 @@
 
 ## Abstract
 
-Proper function and repair of the digestive system are vital to most animals. Deciphering the mechanisms involved in these processes requires an atlas of gene expression and cell types. Here, we applied laser-capture microdissection (LCM) and RNA-seq to characterize the intestinal transcriptome of Schmidtea mediterranea , a planarian flatworm that can regenerate all organs, including the gut. We identified hundreds of genes with intestinal expression undetected by previous approaches. Systematic analyses revealed extensive conservation of digestive physiology and cell types with other animals, including humans. Furthermore, spatial LCM enabled us to uncover previously unappreciated regionalization of gene expression in the planarian intestine along the medio-lateral axis, especially among intestinal goblet cells. Finally, we identified two intestine-enriched transcription factors that specifically regulate regeneration (hedgehog signaling effector gli-1 ) or maintenance ( RREB2 ) of goblet cells. Altogether, this work provides resources for further investigation of mechanisms involved in gastrointestinal function, repair and regeneration.
+Proper function and repair of the digestive system are vital to most animals. Deciphering the mechanisms involved in these processes requires an atlas of gene expression and cell types. Here, we applied laser-capture microdissection (LCM) and RNA-seq to characterize the intestinal transcriptome of Schmidtea mediterranea, a planarian flatworm that can regenerate all organs, including the gut. We identified hundreds of genes with intestinal expression undetected by previous approaches. Systematic analyses revealed extensive conservation of digestive physiology and cell types with other animals, including humans. Furthermore, spatial LCM enabled us to uncover previously unappreciated regionalization of gene expression in the planarian intestine along the medio-lateral axis, especially among intestinal goblet cells. Finally, we identified two intestine-enriched transcription factors that specifically regulate regeneration (hedgehog signaling effector gli-1) or maintenance (RREB2) of goblet cells. Altogether, this work provides resources for further investigation of mechanisms involved in gastrointestinal function, repair and regeneration.
 
 ## Introduction
 
@@ -38,11 +38,23 @@ Here, we report the application of LCM for expression profiling of the planarian
 
 ## Results
 
-## Application of laser-capture microdissection to recover RNA from the planarian intestine
+### Application of laser-capture microdissection to recover RNA from the planarian intestine
 
 Successful application of laser microdissection requires identification of sample preparation conditions that balance the need to extract high-quality total RNA with preservation of specimen morphology and the ability to identify tissues or cells of interest. Fixation of whole planarians requires an initial step to relax/kill animals and remove mucus, followed by fixation (Forsthoefel et al., 2014; Ross et al., 2015). We tested three commonly used relaxation/mucus-removal treatments and two fixatives (formaldehyde and methacarn), separately and together, using short treatment times in order to minimize potential deleterious effects on RNA (Figure 1—figure supplement 1A). None of the relaxation treatments detrimentally affected RNA quality, but methacarn (a precipitating fixative) enabled much better RNA recovery than formaldehyde (a cross-linking fixative) (Figure 1—figure supplement 1A–B). Next, we assessed how mucus removal affected morphology and staining of cryosections taken from methacarn-fixed planarians, again using a rapid protocol to minimize RNA degradation (Figure 1—figure supplement 1C). For all three mucus-removal methods, Eosin Y alone or with Hematoxylin enabled superior demarcation of the intestine, as compared to Hematoxylin alone (Figure 1—figure supplement 1C). For preservation of morphology, magnesium relaxation was superior; NAc and HCl treatment caused tearing and detachment of intestine from the slide (Figure 1—figure supplement 1C). Finally, we assessed RNA integrity from laser-microdissected intestine and non-intestine from magnesium-treated, methacarn-fixed tissue (Figure 1A–B and Figure 1—figure supplement 1D), stained only with Eosin Y to further minimize processing time (Figure 1—figure supplement 1C). Although additional freezing, cryosectioning, staining, and drying steps required for LCM caused a modest decrease in RNA integrity relative to whole animals (compare Figure 1—figure supplement 1A with 1D), prominent 18S/28S rRNA peaks (which co-migrate in planarians, as in some other invertebrates [Ishikawa, 1977; Matz, 2002; Winnebeck et al., 2010; Asai et al., 2015; Figure 1—figure supplement 1D]) indicated that the combination of magnesium-induced relaxation, brief methacarn fixation, and rapid Eosin Y staining were suitable for LCM and extraction of RNA of sufficient quality for RNA-Seq.
 
-## Identification of intestine-enriched transcripts and mediolateral expression domains
+![Figure 1.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic of microdissection workflow. Planarians were fixed and cryosectioned, then sections were stained with Eosin Y. Medial intestine, lateral intestine, and non-intestine tissue were then laser captured, followed by RNA extraction and RNA-Seq. (B) Images of an eosin-stained section as tissue is progressively removed (left) and captured (right), yielding three samples with medial intestine, lateral intestine, and non-intestinal tissue. (C) Pie chart of RNA-Seq results: of 28,069 total transcripts, 13,136 were detected. Of these, 1844 were upregulated significantly in either medial or lateral intestine. (D) Venn diagram showing overlap of medially and laterally enriched intestinal transcripts. (E) Schematic of the number of transcripts with enrichment in medial or lateral intestine, expressed as a ratio of Fold Changes (FC) in each region. Dark green, FC-medial/FC-lateral > 2 x. Green, FC-medial/FC-lateral = 1.5x-2x. Dark blue, FC-medial/FC-lateral = 1x-1.5x. Blue, FC-lateral/FC-medial = 1x-1.5x. Orange, FC-lateral/FC-medial = 1.5x-2x. Dark orange, FC-lateral/FC-medial > 2 x. (F) Examples of transcripts expressed in the intestine (WISH) in medial (top), mediolateral (middle), and lateral (bottom) regions. Color outlines correspond to the color bar in panel F. Detailed numerical data and gene ID information are available in Supplementary file 1 and in Results. Scale bars, 100 μm (B), 200 μm (F).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (A) RNA yields (left table) and Bioanalyzer/TapeStation analysis of RNA integrity (right panels) from whole planarian samples (15 planarians,~20–25 mg total tissue) treated as shown. As in some other invertebrates (Ishikawa, 1977; Matz, 2002; Winnebeck et al., 2010; Asai et al., 2015), heat denaturation prior to analysis causes 28S rRNA to co-migrate as two bands with 18S rRNA (indicated with red arrows). Samples are representative of at least three independent replicates. RNA from FA-fixed samples had low yields and low 260/280 ratios. (B) Analysis of degraded RNA from FA-fixed samples using high-sensitivity (HS) TapeStation kit (for low concentration samples). Degradation of rRNA is indicated with red arrows. (C) Hematoxylin and Eosin Y labeling of transverse (cross) cryosections from methacarn-fixed planarians. Yellow arrows indicate intestine labeling in magnesium-treated samples. Orange arrows indicate compromised intestinal morphology in HCl- and NAc-treated samples. Boxed regions for Eosin Y-labeled sections are magnified to the right. (D) RNA yields (left table) and HS TapeStation analysis of RNA integrity (right panels) for all LCM samples used in this study (BR, biological replicates, 16–20 tissue sections per replicate). TapeStation lanes (middle panel) were assembled from multiple runs. Intensity plots (right panel) for BR1 are representative of other replicates. Mg, MgCl2 treatment. HCl, 2% HCl treatment. NAc, 7.5% N-Acetyl-L-Cysteine treatment. FA, 4% formaldehyde fixation. MCN, methacarn fixation. Scale bars: 100 μm (C).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Whole-mount in situ hybridizations performed during this study, organized by mediolateral ratio. 144/162 total in situs conducted are shown (18 omissions were due to very low or no detectable expression; helz2/dd_12219 was detected only in peripharyngeal cells). Each image also shows the phagocyte enrichment value (Log2FC), as well as the Uniprot best hit ID and the Dresden v6 Transcriptome GeneID (dd_Smed_v6). Several transcripts are named to be consistent with previous publications (hnf-4/dd_1694, PTF1A/dd_6869, gli-1/dd_7470, slc22a6/dd_1159), with human Uniprot IDs used in our comparison to the Human Protein Atlas (sult1c4/dd_7766, tdo2/dd_3550), or to distinguish paralogs (apob-1/dd_636, apob-2/dd_194). Detailed gene ID information is available in Supplementary file 1. Scale bars, 200 μm.
+
+### Identification of intestine-enriched transcripts and mediolateral expression domains
 
 Using our optimized conditions, we laser microdissected intestinal and non-intestinal tissue from four individual planarians (biological replicates) (Figure 1A–B and Figure 1—figure supplement 1D). For this study, we isolated tissue from the anterior of the animal (rostral to the pharynx, planarians' centrally located feeding organ), where intestinal tissue is more abundant. We microdissected tissue from medial and lateral intestine separately, since the intestine ramifies into secondary, tertiary, and quaternary branches along the mediolateral axis, but whether gene expression varies along this axis has not been addressed systematically. We then extracted total RNA, conducted RNA-Seq, and identified transcripts that were preferentially expressed in intestinal vs. non-intestinal tissue (Figure 1C–F and Supplementary files 1 and 2).
 
@@ -50,9 +62,17 @@ Altogether, we detected 13,136 of 28,069 transcripts in the reference transcript
 
 We validated RNA-Seq results using whole-mount in situ hybridization (WISH) to test expression in fixed, uninjured planarians (Umesono et al., 1997; Pearson et al., 2009; King and Newmark, 2013; Figure 1F and Figure 1—figure supplement 2). 143/162 transcripts (~88%) had detectable expression in the intestine (Figure 1—figure supplement 2 and Supplementary file 1). Most transcripts were expressed uniformly throughout the intestine (e.g. ATPase H+-transporting accessory protein 2 (atp6ap2), cytochrome P450 2B19 (cyp2b19), cytochrome P450 2A6 (cyp2a6), and prosaposin (psap); Figure 1F, blue borders, and Figure 1—figure supplement 2). By contrast, transcripts predicted by RNA-Seq to be most enriched (>1.5X) in medial intestine branches (e.g. carboxypeptidase A2 (cpa2), rapunzel 4 (rpz4), and gastric triacylglycerol lipase (lipf), green borders, Figure 1F) or lateral intestine branches (e.g. a carboxypeptidase homolog (ct14378), serine peptidase inhibitor Kunitz type 3 (spint3), and a novel gene (‘novel’), orange borders, Figure 1F) were indeed expressed at higher levels in these regions. Additionally, although we did not explicitly compare anterior and posterior gene expression, we also discovered anteriorly (a C-type lectin (Zgc:171670/dd_79), Figure 1—figure supplement 2) and posteriorly (lysosomal acid lipase (lipa/dd_122), Figure 1—figure supplement 2) enriched transcripts, consistent with the influence of anteroposterior polarity cues on intestinal morphology (Gurley et al., 2008; Petersen and Reddien, 2008; Iglesias et al., 2008; Reuter et al., 2015; Thi-Kim Vu et al., 2015; Stückemann et al., 2017). In summary, using LCM together with RNA-Seq identified >1800 intestine-enriched transcripts, and revealed previously unappreciated regional gene expression domains in the intestine.
 
-## Identification of genes expressed by three distinct intestinal cell types
+### Identification of genes expressed by three distinct intestinal cell types
 
 Previously, we identified genes preferentially expressed by intestinal phagocytes (Forsthoefel et al., 2012). To distinguish transcripts expressed by phagocytes and other intestinal cell types, such as goblet cells (Ishii, 1965; Garcia-Corrales and Gamo, 1986; Garcia-Corrales and Gamo, 1988), we directly compared log2 fold-change values for 1317 transcripts represented in our sorted phagocyte data (Forsthoefel et al., 2012) as well as laser-microdissected intestinal tissue (this study) (Figures 2A, C and E, and Figure 2—source data 1). 900/1,317 transcripts were significantly upregulated in both phagocytes and laser-microdissected intestine (Figure 2A). We analyzed expression of 82 of these transcripts using WISH (Figure 2B, Supplementary file 1, and Figure 1—figure supplement 2). As expected, the majority (74/82) of these transcripts, which included previously identified intestinal markers hnf-4 and nkx2.2 (Wagner et al., 2011; Forsthoefel et al., 2012; Garcia-Fernàndez et al., 1993), displayed uniform, ubiquitous expression throughout the intestine, consistent with enrichment in phagocytes (Figure 2B and Figure 1—figure supplement 2).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig2-v1.jpg)
+
+**Figure 2.:** (A) Log2 fold-changes for laser-microdissected medial (left) and lateral (right) intestinal tissue (relative to non-intestinal tissue) are plotted on the x-axis, while log2 fold-changes for sorted/purified intestinal phagocytes (compared to all other cell types) are plotted on the y-axis. Transcripts in the upper right quadrant (colorized according to the legend in Figure 1 and at the bottom of this figure) are expressed preferentially in laser-captured intestine (fold-change >2, FDR-adjusted p value<0.01) and preferentially in sorted phagocytes (fold-change >2, FDR-adjusted p value<0.05) (phagocytes: ‘high’). Most of these transcripts are not medially or laterally enriched in LCM transcriptomes. (B) Whole-mount in situ hybridizations on uninjured planarians showing examples of expression patterns for transcripts in (A). Borders are colorized according to the mediolateral legend in Figure 1 and at the bottom of the figure. Expression patterns are mostly uniform and ubiquitous in the intestine, consistent with phagocyte-specific expression, with the exception of fhl3 (top left), which is medially enriched. (C) Plots as in (A), but with colorized transcripts expressed preferentially in laser-captured intestine, but not significantly up- or down-regulated in sorted phagocytes (FDR-adjusted p value>0.05) (phagocytes: ‘moderate’). Some of these transcripts are medially or laterally enriched in LCM transcriptomes. (D) Examples of gene expression for transcripts in (C). A variety of intestine expression patterns is observed. (E) Plots as in (A), with transcripts in the lower right quadrant enriched in laser-microdissected intestine, but significantly downregulated (fold-change <2, FDR-adjusted p value<0.05) in sorted phagocytes relative to non-phagocytes (phagocytes: ‘low’). Many of these transcripts are enriched in medial or lateral LCM transcriptomes. (F) Examples of gene expression patterns for transcripts in (E). A majority of these transcripts are enriched in goblet or basal cells, sometimes in medial or lateral subpopulations. Detailed gene ID information and numerical data are available in Supplementary file 1, Figure 2—source data 1, and in Results. Scale bars, 200 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A–C) Transcripts with WISH patterns indicating enrichment in phagocytes (A), goblet-like cells (B), or basal cells (C), mapped onto plots of phagocyte (y-axis) vs. LCM medial/lateral (x-axis) fold-change expression (log2FC). (D–F) Transcripts found to be highly enriched in phagocytes (‘enterocytes’) (D), goblet cells (E), or basal cells (‘outer intestinal cells’) in Fincher et al. (2018), mapped onto phagocyte vs. LCM intestine expression plots. (G–H) Transcripts found to be highly enriched in phagocytes (G) or goblet cells (H) in Plass et al. (2018), mapped onto phagocyte vs. LCM intestine expression plots (basal cells were not described). Detailed numerical data are available in Supplementary file 1 and Figure 2—source data 1.
 
 358 intestine-enriched transcripts were not significantly up- or down-regulated in phagocytes (Figure 2C, Figure 1—figure supplement 2, and Supplementary file 1). WISH analysis suggested these transcripts are enriched in multiple intestinal cell types (Figure 2D). Some transcripts in this group were expressed ubiquitously throughout the intestine (ral guanine nucleotide dissociation stimulator-like 1 (rgl1) and family with sequence similarity 21 member C (fam21c), a homolog of WASH complex subunit 2, Figure 2D), suggesting expression in phagocytes, possibly in addition to other cell types. However, others were expressed in a distinct subset of less abundant intestinal cells (peptidase inhibitor 16 (pi16) and serine peptidase inhibitor, Kunitz type 3 (spint3), Figure 2D). These transcripts are enriched in goblet cells, since their WISH expression pattern is highly similar to labeling of this subpopulation by lectins (Zayas et al., 2010), antibodies (Ross et al., 2015; Reuter et al., 2015; Bueno et al., 1997), and other recently identified transcripts (Fincher et al., 2018; Plass et al., 2018; Reuter et al., 2015). A third set of transcripts was enriched in basal regions of the intestine (zgc:172053, a homolog of human C-type lectin collectin-10, and calmodulin-3 (calm3), Figure 2D). This pattern resembles that of a planarian gli-family transcription factor (Rink et al., 2009) and several solute carrier-family transporters (Thi-Kim Vu et al., 2015), and indicates expression by ‘outer intestinal cells’ (which we refer to as ‘basal cells’ because of their proximity to the basal region of phagocytes) that were also recently identified in a large-scale, single-cell sequencing effort (Fincher et al., 2018).
 
@@ -60,9 +80,17 @@ Finally, 59 intestine-enriched transcripts were significantly downregulated in p
 
 Overall, validation by WISH identified 91 transcripts with a ubiquitous intestinal expression pattern; nearly all of these were upregulated in our sorted phagocyte data (Figure 1—figure supplement 2 and Figure 2—figure supplement 1A). By contrast, most of the 25 validated goblet-cell-enriched transcripts (Figure 2—figure supplement 1B) and 25 basal-cell-enriched transcripts (Figure 2—figure supplement 1C) were not upregulated in sorted phagocytes. We have made all WISH expression patterns and RNA-Seq data available in an interactive website, https://plangut.omrf.org.
 
-## Multiple cell types and novel subtypes reside in the planarian intestine
+### Multiple cell types and novel subtypes reside in the planarian intestine
 
 To further characterize intestinal cell types and subtypes, we used fluorescence in situ hybridization (FISH) to investigate co-expression of intestine-enriched transcripts. First, we verified the existence of three distinct cell types, using highly expressed phagocyte, goblet, and basal-specific markers (Figure 3A–C). Expression of the most phagocyte-enriched transcript, cathepsin La (ctsla), was ubiquitous throughout intestinal branches, but did not overlap with npc2, a goblet-cell-enriched mRNA (Figure 3A), or with slc22a6, a basally enriched transcript (Figure 3B). Goblet cell-enriched npc2 was expressed by cells with minimal slc22a6 expression (Figure 3C), further reinforcing that npc2+ goblet cells are distinct from ctsla+ phagocytes as well as slc22a6+ basal cells. Additional markers validated the distinct identity of these cell types (Figure 3—figure supplement 1A–B). We also found that slc22a6+ basal cells were distinct from visceral muscle fibers that surround intestinal branches, occupying basal regions around digestive cells (Kobayashi et al., 1998; Orii et al., 2002), consistent with another study (Scimone et al., 2018; Figure 3D–E). Thus, slc22a6+ cells represent a novel cell type in the intestine that is distinct from visceral muscles, phagocytes, and goblet cells, and that has, to our knowledge, not been described by numerous previous histological and ultrastructural studies. Our data independently confirm the identification of this cell type in a recent single-cell sequencing effort (Fincher et al., 2018).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig3-v1.jpg)
+
+**Figure 3.:** (A) Confocal images of npc2 (green) and ctsla (magenta) in situ hybridization. Left to right, whole animal (yellow box indicates magnified region in right panels), zoomed area in green, magenta, and merge (yellow arrow indicates profile line in right-most panel), and a graph showing pixel intensity in each color from tail to head of the yellow profile arrow. ctsla is the top phagocyte-specific gene in the phagocyte microarray dataset, while npc2 is enriched in goblet cells. (B) slc22a6 (green) and ctsla (magenta). slc22a6 mRNA is restricted to the basal region of the intestine, and shows minimal overlap with the phagocyte marker ctsla. The white box represents the cropped region shown below with DAPI labeling nuclei, indicating that these riboprobes label distinct cells. (C) npc2 (green) and slc22a6 (magenta). npc2 is enriched in goblet cells while slc22a6 is enriched in basal cells, with minimal overlapping signal. (D) troponin I 4 (tni-4, green) (Witchley et al., 2013) and slc22a6 (magenta). tni-4 is expressed by visceral muscles, while slc22a6 is found in basal cells. (E) Anti-muscle antibody (6G10, green) and slc22a6 (magenta). Detailed gene ID information is available in Supplementary file 1 and in Results. Scale bars, whole animals 200 μm; magnified images, 10 µm, magnified crop of basal cell (B), 2 µm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Phagocyte-enriched genes ctsl.1 and apob-2 (green), in combination with a phagocyte, goblet, or basal marker shown in Figure 5 (magenta). Yellow box indicates magnified region. White arrows indicate regions of considerable overlapping expression, while yellow arrows indicate regions of minimal overlap. (B) si:dkey-241 (green) is enriched in a subset of slc22a6-positive basal cells. (C) gaa (green) is expressed in both goblet cells (high) and phagocytes (moderate), but is largely absent in basal cells. (D) oys is expressed in both phagocytes and basal cells. Detailed gene ID information is available in Supplementary file 1. Scale bars, whole animals 200 μm; magnified images, 10 µm.
 
 Using additional markers, we also characterized previously unappreciated heterogeneity in gene expression amongst both goblet and basal cells. These included a subpopulation of goblet cells restricted to medial regions of the intestine, mainly localized to primary branches (Figure 4A and C), and a lateral subpopulation within secondary, tertiary, and quaternary branches (Figure 4B–C). Only rarely did goblet cells in these medial and lateral domains co-mingle, or co-express both markers at the mediolateral boundaries between primary and secondary branches (Figure 4C). We also identified subpopulations of basal cells in lateral regions of the intestine (Figure 4D and Figure 3—figure supplement 1B). Finally, we also identified transcripts expressed by multiple cell types in different combinations and levels (Figure 4E–G and Figure 3—figure supplement 1C–D), illustrating the complexity of gene expression even in a tissue with relatively few cell types.
 
@@ -70,7 +98,7 @@ Using additional markers, we also characterized previously unappreciated heterog
 
 **Figure 4.:** (A) Confocal images of cg7631 (green) and pi16 (magenta) in situ hybridization. Left to right, whole animal (yellow box indicates magnified region in right panels), zoomed area in green, magenta, and merge (yellow arrow indicates profile line in right-most panel), and a graph showing pixel intensity in each color from tail to head of the yellow profile arrow. cg7631 is enriched in medial goblet cells, while pi16 is found in all goblet cells. (B) spint3 (green) and npc2 (magenta). spint3 is enriched in the lateral goblet cell population, while npc2 is expressed by all goblet cells. (C) cg7631 (green) and spint3 (magenta). cg7631 is enriched in medial goblet cells; spint3 is enriched in lateral goblet cells. Only rarely do these two markers label the same cell, indicated with a white arrow. (D) zgc:172053 (green) and slc22a6 (magenta). zgc:172053 is enriched in a subset of basal cells, while slc22a6 is more ubiquitously enriched in most basal cells. (E) slc22a6 (green) and fabp7 (magenta). slc22a6 is a basally enriched gene, while fabp7 is expressed by both basal cells and more apical cells (phagocytes). Blue arrows indicate apical gene expression where slc22a6 is absent. (F) ctsla (green) and fabp7 (magenta). ctsla expression is enriched in phagocytes, while fabp7 is found in both phagocytes and basal cells. (G) npc2 (green) and fabp7 (magenta). npc2 is enriched in goblet cells, and overlaps minimally with fabp7 in phagocytes and basal cells. Detailed gene ID information is available in Supplementary file 1 and in Results. Scale bars, whole animals 200 μm; magnified images, 10 µm.
 
-## Laser capture substantially increases resolution of the global intestinal transcriptome
+### Laser capture substantially increases resolution of the global intestinal transcriptome
 
 We also compared transcript enrichment in phagocytes/enterocytes, goblet cells, and basal cells/outer intestinal cells reported in three recent single-cell RNA-Seq (scRNA-Seq) analyses of planarian cells (Fincher et al., 2018; Plass et al., 2018; Swapna et al., 2018). There was considerable agreement between our verified in situ expression patterns and cell-type enrichment predicted by scRNA-Seq studies, although we did identify numerous additional cell-type-specific transcripts (Figure 5A). In addition, phagocyte-, goblet-, and basal-cell-specific transcripts from scRNA-Seq studies mapped to similar quadrants in our phagocyte vs. laser-captured intestine plots (Figure 2—figure supplement 1D–H). Similarly, the majority of phagocyte-enriched transcripts detected in our earlier study (Forsthoefel et al., 2012) were also enriched in laser-captured intestine (Figure 5B).
 
@@ -80,11 +108,27 @@ We also compared transcript enrichment in phagocytes/enterocytes, goblet cells, 
 
 Furthermore, we identified 809 intestine-enriched transcripts that single-cell studies did not find to be enriched in the intestine (or for some, any planarian cell type) (Figure 5C). Using WISH, we validated intestine enrichment for 22/28 of these mRNAs (Figure 5D–H), including transcripts with a uniform/phagocyte-like expression pattern (Figure 5D), and others with expression in goblet and basal cells (Figure 5E–F). We also note that over 1000 intestine-enriched transcripts in scRNA-Seq studies were not included in our LCM-generated transcriptome (Figure 5C). However, the vast majority (>80%) of these were enriched in multiple cell types (Fincher et al., 2018; Plass et al., 2018; Supplementary file 2), suggesting considerable expression in non-intestinal tissue, consistent with our data. The incomplete overlap between various scRNA-Seq studies and our results could be explained, in part, by different log-fold enrichment criteria used to identify cell-type-specific transcripts. However, the detection of transcripts exclusively enriched in laser-captured intestine suggests that expression profiling of laser-captured bulk tissue is more sensitive than current single-cell profiling approaches, and that LCM may be a preferable method for assessing tissue-specific gene expression when single-cell resolution is not required.
 
-## Diverse digestive physiology genes are expressed in the planarian intestine
+### Diverse digestive physiology genes are expressed in the planarian intestine
 
 In order to globally characterize functional classes of genes expressed in the planarian intestine, we assigned Gene Ontology (GO) Biological Process (BP) terms to planarian transcripts based on homology to human, mouse, zebrafish, Drosophila, and C. elegans genes, and then identified over-represented terms among intestine-enriched transcripts (Figure 6, Figure 6—source data 1A, and Supplementary file 3). Highly represented terms fell broadly into seven groups (Figure 6), all of which are related to the intestine’s roles in digestion, nutrient storage and distribution, as well as innate immunity. Metabolic processes were among the most highly represented: hundreds of transcripts were predicted to regulate catabolism, biosynthesis, and transport of a variety of macromolecules (e.g. lipids and carbohydrates) and small molecules (e.g. amino acids and ions) (Supplementary file 3A). Hundreds of upregulated transcripts were also predicted to regulate molecular transport, vesicular trafficking, and organelle-based import and export (Figure 6—figure supplement 3A). These included over 70 members of the solute carrier family of transmembrane transporters (Supplementary file 3B), reinforcing the intestine’s central role in metabolite transport, and also suggesting a potential role supporting the excretory system in maintaining extracellular solute concentration (Thi-Kim Vu et al., 2015; Andrikou et al., 2019). Enriched regulators of vesicular trafficking also included nearly 30 Ras-related Rab GTPase proteins (Supplementary file 3C). Among regulators of organelle and cellular physiology, transcripts predicted to coordinate phagosome, endosome, and lysosome physiology were among the most highly represented (Supplementary file 3A). These included several vacuolar protein sorting-associated protein (vps) homologs required for lysosome tethering to late endosomes and autophagosomes (Spang, 2016), and homologs of the autophagy-related proteins atg3 and atg7, ubiquitin ligases that are required for autophagosome formation during nutrient starvation (Komatsu et al., 2005; Sou et al., 2008), and which may contribute to planarians’ ability to survive extended fasting (Felix et al., 2019). As in our previous study of phagocyte expression (Forsthoefel et al., 2012), here we also identified many intestine-enriched genes predicted to regulate cell shape, motility, polarity, and adhesion, including numerous cytoskeletal regulators, regulators of interactions with extracellular matrix, and partitioning defective 6 (pard6b), which we previously demonstrated was required for planarian intestinal remodeling (Forsthoefel et al., 2012; Supplementary file 3A). Finally, transcripts predicted to regulate responses to stress, microorganisms, and other stimuli were also intestine enriched (Figure 6). Prominent among these were regulators of innate immunity, including over 30 tumor necrosis factor receptor-associated factor homologs (TRAFs), a family of adaptor proteins that is expanded in S. mediterranea (Swapna et al., 2018) and function as effectors of receptor signaling in innate and adaptive immunity (Xie, 2013; Arnold et al., 2016; Supplementary file 3D). Notably, 62 intestine-enriched transcripts (from this study) were previously found to be upregulated in response to shifting planarians from recirculating to static culture conditions, which causes microbiome dysbiosis (Arnold et al., 2016; Figure 6—figure supplement 1A and Figure 6—source data 2A). Further supporting a role for the intestine in innate immunity and/or inflammatory responses, homologs of 99 S. mediterranea intestine-enriched transcripts were also upregulated by ingestion of pathogenic bacteria in Dugesia japonica, a related planarian species (Abnave et al., 2014; Figure 6—figure supplement 1B and Figure 6—source data 2B).
 
-## Analysis of mediolaterally enriched transcripts reveals potential goblet cell roles
+![Figure 6.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig6-v1.jpg)
+
+**Figure 6.:** (A) Biological process Gene Ontology terms significantly over-represented in intestine-enriched transcripts. Bubble size indicates fold enrichment relative to all transcripts detected in laser-captured tissue, while position on the x-axis indicates FDR-adjusted significance. Numbers in parentheses indicate the number of intestine-enriched transcripts annotated with each term. Detailed numerical data are in Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Intestine-enriched transcripts detected by LCM (pink) compared to S. mediterranea transcripts that were up- or downregulated upon transfer of planarians from continuous flow to static culture in Arnold et al. (2016) (blue). (B) S. mediterranea intestine-enriched transcripts detected by LCM (pink) compared to D. japonica homologous transcripts that were upregulated in response to L. pneumophila or S. aureus infections in Abnave et al. (2014) (blue). Detailed numerical data are available in Figure 6—source data 2.
+
+![Figure 6—figure supplement 2.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig6-figsupp2-v1.jpg)
+
+**Figure 6—figure supplement 2.:** (A) GO term enrichment for phagocyte-, goblet-, and basal-cell-enriched transcripts identified in Fincher et al. (2018). (B) Pie chart showing the ratio of transcripts with higher fold changes in laser-captured medial and lateral intestinal tissue. (C) Venn diagram showing the number of Biological Process GO terms enriched for medial, lateral, or both groups of transcripts. (D) Examples of GO terms over-represented only in medial and lateral transcripts. (E) Examples of GO term enrichment for only the most medially and laterally enriched transcripts. Detailed numerical data are available in Figure 6—source data 1.
+
+![Figure 6—figure supplement 3.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig6-figsupp3-v1.jpg)
+
+**Figure 6—figure supplement 3.:** (A) Whole-mount in situ hybridizations for medially enriched transcripts carboxypeptidase A2 (cpa2), gastric triacylglycerol lipase (lipf), kallikrein-13 (klk13), and peptidoglycan recognition protein LB (pgrp-lb). (B) Expression patterns for laterally enriched transcripts nidogen-2 (nid2), a predicted regulator of extracellular matrix organization, and Kunitz-type protease inhibitor 3 (spint3), a predicted secreted serine protease inhibitor. (C) Neuroendocrine convertase 1 (pcsk1) mRNA expression. WISH, top left. dFISH, top right and magnified views (yellow box). pcsk1 (green) co-expression with the pan-goblet marker npc2 (magenta) demonstrates pcsk1 is expressed in goblet cells as well as peripharyngeal secretory cells. (D) Expression of three mucin-like genes in secretory cells surrounding the pharynx (muc-like-1/dd_Smed_v6_17988_0_1, muc-like-2/dd_18786_0_1, and muc-like-3/dd_21309_0_1), and mAb 2C11 labeling peripharyngeal secretory cells and their projections into the pharynx (magenta) (bottom row). Detailed gene ID information is available in Supplementary file 1 and Supplementary file 3. Scale bars: whole animals 200 μm; magnified images (B), 10 µm.
+
+### Analysis of mediolaterally enriched transcripts reveals potential goblet cell roles
 
 In order to understand whether putative functional roles above are performed by specific intestinal cell types or domains, we also analyzed GO term over-representation among transcripts enriched in scRNA-Seq data (Fincher et al., 2018), and in laser-captured medial and lateral intestinal tissue. Most functional categories predicted by LCM transcript analysis (Figure 6) were also enriched among phagocyte scRNA-Seq transcripts (Figure 6—figure supplement 2A and Figure 6—source data 1B–D). Furthermore, GO analysis suggested that basal cells may play a significant role in metabolism and energy processing, and that goblet cells may influence extracellular matrix organization and play specialized roles in lipid metabolism (Figure 6—figure supplement 2A and Figure 6—source data 1B–D).
 
@@ -92,21 +136,49 @@ Analysis of biological process GO term enrichment among all 1221 medial and 623 
 
 Analysis of expression in situ supported these predictions (Figure 6—figure supplement 3A–D). For example, in support of previous suggestions that goblet cells promote luminal digestion (Arnold, 1909; Pedersen, 1961; Jennings, 1962), we identified several goblet-enriched transcripts predicted to encode secreted regulators of protein catabolism (pancreatic carboxypeptidase A2) and triglyceride catabolism (lipase F/gastric triacylglycerol lipase) (Figure 6—figure supplement 3A). Second, we also identified three goblet-enriched kallikreins (klk) (Figure 6—figure supplement 3A and Figure 1—figure supplement 2), secreted proteases whose mammalian homologs produce vasoactive plasma kinin, but also hydrolyze extracellular matrix molecules, growth factors, hormone proteins, and antimicrobial peptides in numerous tissues (Prassas et al., 2015). Kallikreins are expressed by goblet cells in rat, cat, and mouse intestines (Schachter et al., 1986; Grün et al., 2016), and have been implicated in inflammatory bowel disease and gastrointestinal cancers (Stadnicki, 2011; Kontos et al., 2013), suggesting additional conservation of planarian goblet cell physiology. Third, goblet cells express peptidoglycan recognition protein (pgrp-1b) (Figure 6—figure supplement 3A), whose vertebrate and invertebrate homologs modulate innate immune signaling and play direct bactericidal roles (Kurata, 2014; Dziarski and Gupta, 2018), suggesting goblet cells may coordinate immune responses and/or regulate microbiome composition. Consistent with this idea, a second planarian paralog, pgrp-1e (Figure 1—figure supplement 2), is upregulated in the intestine (but not restricted to goblet cells) in response to Pseudomonas infection (Arnold et al., 2016). Fourth, a homolog of prohormone convertase (pcsk1) is enriched in goblet cells, as well as peripharyngeal cells surrounding the pharynx (Figure 6—figure supplement 3C). Prohormone convertases (PCs) cleave neuropeptide and peptide hormone preproteins to generate bioactive peptides. In both vertebrates and invertebrates, PCs function in neurons, but also in endocrine cell types such as pancreatic islet cells and digestive tract enteroendocrine cells, where they regulate glucose levels, energy homeostasis, and appetite (Grün et al., 2016; Pauls et al., 2014; Stijnen et al., 2016). Although another planarian pcsk paralog, Smed-pc2, processes neuropeptides required for germline development (Collins et al., 2010), to our knowledge, no intestine-enriched prohormones have been reported. Nonetheless, pcsk1 expression suggests goblet cells may play an enteroendocrine-like role, as in other organisms. Finally, we were surprised to find that genes encoding planarian homologs of gel-forming mucins (which we identified in separate bioinformatic searches) were expressed not by goblet cells, but by peripharyngeal cells that send projections into the pharynx (Forsthoefel et al., 2014; Figure 6—figure supplement 3D). While additional goblet-enriched proteins with mucin-like roles might exist (Bocchinfuso et al., 2012; Syed et al., 2008), these expression patterns suggest that some planarian gel-forming mucin proteins are delivered to the intestinal lumen through the pharynx, and indicate a possible difference between planarian and vertebrate intestinal goblet cells (Birchenough et al., 2015; Chang et al., 1994; Johansson et al., 2011).
 
-## Evolutionary conservation of human digestive organ gene expression
+### Evolutionary conservation of human digestive organ gene expression
 
 Further illustrating the conservation of physiological roles, we found that the intestine expresses numerous homologs of transcripts that are enriched in human GI tissues (Figure 7A–E, Supplementary file 4, and Figure 7—source data 1). To make this comparison, we conducted reciprocal best homology (RBH) searches (Bork et al., 1998; Tatusov et al., 1997) to identify 5583 planarian transcripts encoding predicted open reading frames (ORFs) with high homology to ORFs in UniProt human transcripts (The UniProt Consortium, 2018), and vice versa (Figure 7A–B). Of these, we then identified 5561 transcripts (including 699 gut-enriched transcripts) with human transcripts represented in the Human Protein Atlas (Figure 7B–C), in which transcripts whose unique or highly enriched tissue-specific expression defines 32 human tissues or organs (Uhlén et al., 2015). Next, we calculated the percentage of all (5,561) and gut-enriched (699) RBH transcripts that were enriched in human tissues (Figure 7D), then expressed these percentages as a fold-enrichment ratio (planarian intestine vs. non-intestine) to estimate similarity between the planarian intestine transcriptome and the transcriptomes of human tissues (Figure 7E).
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig7-v1.jpg)
 
-**Figure 7.:** (A) 5583 S. mediterranea and Homo sapiens UniProt transcripts hit each other in reciprocal TBLASTX queries. (B) 5561/5583 human UniProt RBH homologs of planarian transcripts were present in the Human Protein Atlas. (C) 699/5561 RBH homologs were enriched in the planarian intestine. (D) Enrichment of RBH homologs in human tissues. The first number in parentheses is the number of planarian intestine-enriched RBH homologs (of 699) and the second number in parentheses is the number of all RBH homologs (of 5561) for each human tissue. Histogram bars represent percentage of planarian transcripts with RBH homologs enriched in human tissues. For example, 19/699 (2.72%) UniProt RBH homologs of planarian intestine-enriched transcripts were tissue-enriched, tissue-enhanced, or group-enriched in the duodenum, while only 41/5561 (0.74%) of all UniProt RBH homologs of planarian transcripts were similarly enriched. (E) Fold enrichment (planarian intestine/non-intestine) of RBH homologs for each human tissue. Histogram bars were calculated as a ratio of percentages in panel D. For example, 2.72% of 699 planarian intestinal RBH homologs and 0.74% of all 5561 planarian RBH homologs were enriched in the duodenum, yielding fold enrichment of 2.72/0.74 = 3.68X. Detailed numerical data are available in Figure 7—source data 1.Figure 7—source data 1.(F7SD1-A) Human tissue enrichment for 699 human RBH homologs of planarian transcripts enriched in the planarian intestine. Data from Uhlén et al. (2015) reprinted with permission from AAAS. (F7SD1-B) Human tissue enrichment for all 5561 human RBH homologs of planarian transcripts. Data from Uhlén et al. (2015) reprinted with permission from AAAS. (F7SD1-C) Summary of tissue-specific enrichment for human RBH homologs of planarian transcripts. (F7SD1-D) Global summary of group enriched, tissue enriched, and tissue enhanced transcripts for human RBH homologs of planarian transcripts. (F7SD1-E) Best TBLASTX hits for planarian vs. human transcripts. (F7SD1-F) Best TBLASTX hits for human vs. planarian transcripts (reciprocal BLAST). (F7SD1-G) 5583 planarian transcripts with human RBH homologs. (F7SD1-H) 700 intestine-enriched planarian transcripts with human RBH homologs.
+**Figure 7.:** (A) 5583 S. mediterranea and Homo sapiens UniProt transcripts hit each other in reciprocal TBLASTX queries. (B) 5561/5583 human UniProt RBH homologs of planarian transcripts were present in the Human Protein Atlas. (C) 699/5561 RBH homologs were enriched in the planarian intestine. (D) Enrichment of RBH homologs in human tissues. The first number in parentheses is the number of planarian intestine-enriched RBH homologs (of 699) and the second number in parentheses is the number of all RBH homologs (of 5561) for each human tissue. Histogram bars represent percentage of planarian transcripts with RBH homologs enriched in human tissues. For example, 19/699 (2.72%) UniProt RBH homologs of planarian intestine-enriched transcripts were tissue-enriched, tissue-enhanced, or group-enriched in the duodenum, while only 41/5561 (0.74%) of all UniProt RBH homologs of planarian transcripts were similarly enriched. (E) Fold enrichment (planarian intestine/non-intestine) of RBH homologs for each human tissue. Histogram bars were calculated as a ratio of percentages in panel D. For example, 2.72% of 699 planarian intestinal RBH homologs and 0.74% of all 5561 planarian RBH homologs were enriched in the duodenum, yielding fold enrichment of 2.72/0.74 = 3.68X. Detailed numerical data are available in Figure 7—source data 1.
 
 Strikingly, four of the five tissues to which the planarian intestine was most similar are involved in digestion (duodenum, small intestine, and gallbladder) or energy storage/metabolism (liver) (Figure 7E). The intestine was also similar to other human digestive tissues (esophagus, colon, and rectum), as well as kidney, possibly suggesting a role supporting the planarian protonephridial system in filtration or processing of extracellular solutes (Figure 7E; Thi-Kim Vu et al., 2015; Rink et al., 2011; Scimone et al., 2011). Duodenum- and small intestine-enriched RBH transcripts included predicted regulators of endodermal specification, bile transport, lipid metabolism, and glucose transport (Supplementary file 4). In addition, RBH homologs enriched in liver included several predicted regulators of glucose, amino acid, lipid, and xenobiotic compound metabolism (Supplementary file 4). These observations reinforce the evolutionary conservation of intestinal gene expression and indicate that physiological roles performed by multiple human digestive organs are consolidated in the planarian intestine.
 
-## Intestine-enriched transcription factors regulate goblet cell differentiation and maintenance
+### Intestine-enriched transcription factors regulate goblet cell differentiation and maintenance
 
 Definition of the intestinal transcriptome enables identification of genes required for regeneration and functions of distinct intestinal cell types. Here, to initiate this effort, we focused on goblet cells, which expressed the majority of medially and laterally enriched transcripts we identified (Supplementary file 1, Figure 1—figure supplement 2). Ultrastructurally, planarian goblet cells possess numerous large proteinaceous granules and abundant rough endoplasmic reticulum (Willier et al., 1925; Ishii, 1965; Garcia-Corrales and Gamo, 1986; Pascolini and Gargiulo, 1975), resembling mammalian goblet cells that produce a protective mucous barrier and mount innate immune responses (Birchenough et al., 2015; Dalton, 1952; Freeman, 1966; McCauley and Guasch, 2015; Knoop and Newberry, 2018). However, although numerous markers and reagents have been identified that label planarian goblet cells (Fincher et al., 2018; Plass et al., 2018; Ross et al., 2015; Reuter et al., 2015; Zayas et al., 2010; Bueno et al., 1997), to our knowledge, genes required for goblet cell differentiation, maintenance, or physiological roles have not been reported. Initially, we used RNAi to assess the roles of 16 of the most medial and 8 of the most lateral goblet-enriched transcripts (Supplementary file 5A-B). However, we did not observe failure to feed, decreased viability, or defects in blastema formation, even after 8 weeks of knockdown (feeding 1x/week) (Supplementary file 5A-B). This might be due to functional redundancy, since multiple lipases, carboxypeptidases, and kallikriens are expressed by goblet cells. Alternatively, other intestinal cell types might play overlapping roles with respect to some functions.
 
 Reasoning that transcription factors (TFs) would regulate goblet cell generation and/or maintenance, we next focused on transcripts encoding 22 intestine-enriched TFs, only 10 of which were previously known to be enriched in intestinal cells (Supplementary file 5C). Using FISH, we validated expression of all but one of these TFs in the intestine (Figure 8—figure supplement 1). In a dsRNA-mediated RNA interference screen to specifically assess goblet cell regeneration, we found that knockdown of three TFs dramatically reduced expression of a goblet cell marker in regenerating head, trunk, and tail fragments (Figure 8A–B, Figure 8—figure supplement 2, and Supplementary file 5C). Knockdown of mediator of RNA polymerase II transcription subunit 21 (med 21) reduced goblet cells and blastema formation (Supplementary file 5C), but also caused severe disruption of intestinal integrity in our previous study (Forsthoefel et al., 2012). This suggested a non-goblet-cell-specific role, and we did not investigate med21 further. Knockdown of a second transcription factor, gli-1 (a transducer of hedgehog signaling [Rink et al., 2009; Glazer et al., 2010]), caused failure of goblet cells to regenerate at the midline of the new anterior branch in amputated tail fragments regenerating a new head (Figure 8A–B, Supplementary file 5C, and Figure 8—figure supplement 2A). In addition, goblet cells were less abundant in pre-existing regions of the intestine, particularly in lateral intestinal branches (Figure 8A–B, Figure 8—figure supplement 2A–C). Regeneration of goblet cells was also reduced in new tail branches of gli-1(RNAi) head fragments (Figure 8—figure supplement 2B) and in anterior and posterior branches in gli-1(RNAi) trunk fragments (Figure 8—figure supplement 2C). These effects on goblet cells were specific, since phagocytes (Figure 8A, Figure 8—figure supplement 2A–C) and basal cells (Figure 8B) regenerated normally. Although we infrequently observed smaller posterior blastemas characteristic of reduced hedgehog signaling (Rink et al., 2009; Glazer et al., 2010; Yazawa et al., 2009), phagocytes regenerated normally in this region (Figure 8—figure supplement 2C).
+
+![Figure 8.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig8-v1.jpg)
+
+**Figure 8.:** (A) In 7 day tail regenerates, gli-1 knockdown dramatically reduces goblet cells (npc2+) at the midline in regenerating intestine (yellow arrow), while RREB2 knockdown reduces goblet cells in old tissue (yellow arrow). Phagocytes (ctsla+) appear normal in all conditions. Both gli-1(RNAi) and RREB2(RNAi) also reduce goblet cells in lateral branches. (B) Basal cells (slc22a+) are unaffected in gli-1(RNAi) and RREB2(RNAi) regenerates, while goblet cells are reduced similar to A. (C) In uninjured animals, gli-1 RNAi causes moderate goblet cell loss, while RREB2 RNAi results in severe goblet cell loss. (D) Phenotypes in gli-1(RNAi) and RREB2(RNAi) planarians during six dsRNA feedings (once per week). Animals refuse food and undergo lysis and death with increasing frequency over the RNAi time course. Total sample size was n ≥ 55 for each condition; data were pooled from three independent biological replicates of n ≥ 18 each. (E) DAPI labeling of tail regenerates shown in B. White arrows indicate normal regeneration of new brain and pharynx. Animals in A, B, and E were fed dsRNA eight times (twice per week), starved 7 days, amputated, then fixed 7 days later. Animals in C and D were fed dsRNA six times (once per week), starved 7 days, then fixed for FISH. Detailed gene ID and RNAi phenotype information is available in Supplementary file 1, Supplementary file 5, and Figure 8—source data 1A. Scale bars, 200 μm.
+
+![Figure 8—figure supplement 1.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig8-figsupp1-v1.jpg)
+
+**Figure 8—figure supplement 1.:** Fluorescent in situ hybridization expression patterns of 22 intestine-enriched transcription factors identified in the laser capture dataset. Organized by dd_Smed_v6 ID in ascending order. Detailed gene ID information is available in Supplementary file 1 and Supplementary file 5. Scale bars, 100 μm.
+
+![Figure 8—figure supplement 2.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig8-figsupp2-v1.jpg)
+
+**Figure 8—figure supplement 2.:** Yellow arrows indicate regions of reduced or missing goblet cells. (A) Expression of a second, additional pan-goblet cell marker, pi16, in 7 day tail regenerates, showing dramatic reduction in goblet cell numbers (arrows). (B) npc2 expression in 7 day regenerate heads, indicating severe reduction of goblet cells in gli-1 and RREB2 knockdowns (arrows). (C) Trunk fragments also show goblet cell loss. gli-1 RNAi causes missing or reduced npc2 expression in blastema regions, while RREB2 reduces npc2 labeling in pre-existing intestine (arrows). Detailed gene ID information is available in Supplementary file 1. Scale bars, 200 μm.
+
+![Figure 8—figure supplement 3.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig8-figsupp3-v1.jpg)
+
+**Figure 8—figure supplement 3.:** (A) Uninjured animals showing the expression of cg7631 (medial goblet) and spint3 (lateral goblet) in control, gli-1, or RREB2 knockdown animals. gli-1(RNAi) animals preferentially lose lateral goblet cells. RREB2(RNAi) animals lose both goblet cell subtypes, although more lateral cells remain compared to gli-1 knockdown. (B) 7 day tail regenerates with medial and lateral goblet cells labeled in control, gli-1, or RREB2 knockdowns. gli-1 RNAi again reduces lateral goblet cells throughout the fragment, as well as medial populations in the anterior regenerating intestine, while RREB2(RNAi) regenerates lack all goblet cells in pre-injury intestine (e.g. posterior in tail fragments). Detailed gene ID information is available in Supplementary file 1. Scale bars, 200 μm.
+
+![Figure 8—figure supplement 4.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig8-figsupp4-v1.jpg)
+
+**Figure 8—figure supplement 4.:** (A) Global expression of gli-1 in uninjured animals, along with images of mRNA expression in phagocytes (ctsla), basal cells (slc22a6), goblet cells (npc2), and muscle cells (tni-4). (B) Expression of RREB2 in uninjured animals, along with mRNA co-localization with the same phagocyte, basal, goblet, and muscle cell markers as in A. Detailed gene ID information is available in Supplementary file 1. Scale bars, whole animals and tails 200 µm magnified images, 10 µm; digital zooms, 5 µm.
+
+![Figure 8—figure supplement 5.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig8-figsupp5-v1.jpg)
+
+**Figure 8—figure supplement 5.:** (A) Control RNAi regenerates with normal numbers of goblet cells. (B) Lhx2b RNAi reduces numbers of goblet cells in pre-existing tissue, but not in the blastema. (C) PTF1A RNAi mildly reduces levels of lateral goblet cells. All in situ hybridizations to detect npc2-positive goblet cells (green). Detailed gene ID information is available in Supplementary file 1 and Supplementary file 5. Scale bars, 200 μm.
+
+![Figure 8—figure supplement 6.](https://cdn.elifesciences.org/articles/52613/elife-52613-fig8-figsupp6-v1.jpg)
+
+**Figure 8—figure supplement 6.:** (A) Example images of viability phenotypes observed during dsRNA feeding. Scale bars, 500 µm. (B) Area measurements immediately before the first dsRNA feeding and seven days after the fifth dsRNA feedings (one feeding per week). No significant differences were observed between pre-treatment area sizes (n = 20 individuals at the beginning of N = 3 independent experiments for a total of n = 60 each). Modest, but insignificant differences were observed between 5x fed control (n = 57) and 5x fed gli-1 (n = 41, adj. p=0.8825), and between 5x fed control and 5x fed RREB2 (n = 36, adj. p=0.0986) (one-way ANOVA with Dunnett's T3 multiple comparisons test). Non-eating animals and dead animals were not included in final size analysis. (C) Length measurements from the same animals in (B) before and after dsRNA feeding. No significant differences were observed between the pretreat control, gli-1, and RREB2 animals, or between the 5x fed control and experiments (5x fed control vs 5x fed gli-1, adj. p=0.9364; 5x fed control vs. 5x fed RREB2, adj. p=0.2710) (one-way ANOVA with Dunnett's T3 multiple comparisons test). Thick dashed line indicates the median, the thin dashed lines indicate the upper and lower quartiles. Detailed numerical data are available in Figure 8—source data 1B.
 
 By contrast to the gli-1 phenotype, goblet cells appeared to differentiate normally in regenerating intestine upon knockdown of a third TF, ras-responsive element binding protein 2 (RREB2), including at the midline of anterior intestinal branches in tail fragments (Figure 8A–B; Figure 8—figure supplement 2A), in posterior branches in head fragments (Figure 8—figure supplement 2B), and in both anterior and posterior branches in trunk fragments (Figure 8—figure supplement 2C). However, in tail and trunk regenerates, new goblet cells were largely restricted to the midline/primary branches (Figure 8A–B, Figure 8—figure supplement 2A and C), and were less abundant in posterior branches of head fragments (Figure 8—figure supplement 2B). Furthermore, in pre-existing intestinal regions (especially lateral branches), goblet cell numbers were dramatically reduced or even completely absent. These included the posterior of tail fragments (Figure 8A–B; Figure 8—figure supplement 2A), the anterior of head fragments (Figure 8—figure supplement 2B), and central regions of trunk fragments (Figure 8—figure supplement 2C). As with gli-1, phagocytes and basal cells were unaffected (Figure 8A–B; Figure 8—figure supplement 2A–C). Together, these results suggest that gli-1 regulates neoblast fate specification and/or differentiation of neoblast progeny into goblet cells in new intestinal branches, while RREB2 may control maintenance or survival of goblet cells after they initially differentiate. For both knockdowns, the reduction of goblet cells in lateral and pre-existing primary branches could be a consequence of reduced differentiation (gli-1) or maintenance/survival (RREB2) in these regions prior to amputation, during regeneration, or both.
 
@@ -116,7 +188,7 @@ Taken together, these results suggest that, in uninjured animals undergoing norm
 
 Despite their specific effects on goblet cells, neither gli-1 nor RREB2 mRNAs are specifically enriched in this cell type. In fact, gli-1, which was previously shown to be expressed by intestine-associated cells (Rink et al., 2009; Currie et al., 2016), was most highly enriched in phagocytes, basal cells, and intestine-associated muscle cells (visceral muscle), but was also expressed at lower levels in some goblet cells (Figure 8—figure supplement 4A). RREB2 was enriched in goblet cells and basal cells, but expression was also observed in some phagocytes and intestine-associated muscle (Figure 8—figure supplement 4B). Intriguingly, we found that knockdown of two other TFs, 48 related 1 (fer1) (also called pancreas transcription factor one subunit alpha or PTF1A [Fincher et al., 2018]), and LIM homeobox 2 (lhx2b), also modestly reduced goblet cells in pre-existing branches (Figure 8—figure supplement 5A–C and Supplementary file 5). mRNAs encoding these TFs are enriched in basal regions of the intestine (Figure 6—figure supplement 1). In addition, single-cell transcriptome data suggest PTF1A expression is elevated in differentiating neoblast progeny in the basal cell lineage (Fincher et al., 2018), and PTF1A also reduces basal intestinal cell numbers (Fincher et al., 2018). Thus, although our data support a role for gli-1 and RREB2 in goblet cells and/or their precursors, they also raise the possibility that basal cells (and possibly phagocytes or muscle cells) may non-autonomously influence goblet cell differentiation and/or survival.
 
-## Goblet cell reduction compromises feeding behavior and viability
+### Goblet cell reduction compromises feeding behavior and viability
 
 We asked whether goblet cell depletion affected planarian viability, behavior, or regeneration. Over a 6 week dsRNA feeding regimen, some uninjured gli-1(RNAi) and RREB2(RNAi) planarians refused food and failed to eat after 4–5 weeks (Figure 8D). In both gli-1(RNAi) and RREB2(RNAi) animals, some animals eventually lysed, curled, or died (Figure 8—figure supplement 6A), suggesting that goblet cells are required for viability. Additionally, we observed a modest (but insignificant) decrease in animal size (Figure 8—figure supplement 6B–C) in RREB2(RNAi) planarians relative to controls. Interestingly, we only observed feeding failure and other phenotypes in animals fed the dsRNA/liver mix 1x/week (every 7 days) for 6 weeks; animals that were fed 2x/week (every 3–4 days), but still six times, did not refuse to eat, lyse, curl, or die (not shown). This suggests that goblet cells may regulate hunger (or other aspects of digestive physiology) primarily in starved animals, consistent with expression of prohormone convertase (Figure 6—figure supplement 3C), above. Next, to assess regeneration, we amputated planarians fed 2x/week for eight feedings, in order to eliminate the influence of feeding failure on possible regeneration phenotypes. In both gli-1(RNAi) and RREB2(RNAi) regenerates, goblet cell depletion was robust (Figure 8A–B), but neither gene was required more generally for regeneration (with the infrequent exception of reduced posterior blastemas in gli-1(RNAi) regenerates, mentioned above), as the brain (Figure 8E), pharynx (Figure 8E), other intestinal cell types (Figure 8A–B), and new intestinal branches (Figure 8A–B) all regenerated without noticeable defects. Together, these results suggest that goblet cells are broadly dispensable for regeneration, and that their primary role may be to regulate appetite or other aspects of intestinal physiology that contribute to viability. Alternatively, it is possible that functions in other cell types may underlie the gli-1 and RREB2 feeding and viability phenotypes. In addition, some goblet cell functions may be required only when planarians are challenged by stresses like bacterial infection or extended starvation, possibilities that will require further investigation.
 
@@ -138,11 +210,245 @@ Regeneration of digestive organs is not well understood. Development of a robust
 
 ## Materials and methods
 
-## Planarian maintenance and care
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Schmidtea mediterranea)</td>
+      <td>Asexual clonal line CIW4 of Schmidtea mediterranea</td>
+      <td>PMID:12421706</td>
+      <td>RRID:NCBITaxon:79327</td>
+      <td>All animals used in this study</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBluescript II SK(+) (plasmid)</td>
+      <td>Agilent Technologies</td>
+      <td>Cat:212205</td>
+      <td>For cloning from ESTs</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pJC53.2 (plasmid)</td>
+      <td>PMID:20967238</td>
+      <td>RRID:Addgene_26536</td>
+      <td>For cloning</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>(mouse, monoclonal) Muscle antibody 6G10</td>
+      <td>doi:10.1186/s12861-014-0050-9</td>
+      <td></td>
+      <td>Used at 1:2000</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Formaldehyde</td>
+      <td>EMD Millipore</td>
+      <td>Cat:FX0410-5</td>
+      <td>Used at 4% in 1xPBS</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Platinium Taq</td>
+      <td>Invitrogen</td>
+      <td>Cat:10966026</td>
+      <td>For PCR</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Trizol</td>
+      <td>Invitrogen</td>
+      <td>Cat:15596026</td>
+      <td>Used for RNA extraction</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>RNAseZAP</td>
+      <td>Invitrogen</td>
+      <td>Cat:AM9780</td>
+      <td>For LCM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mayer’s Hematoxylin</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat:MHS16-500ML</td>
+      <td>For LCM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alcoholic Eosin Y</td>
+      <td>Sigma Aldrich</td>
+      <td>Cat:HT110116-500ML</td>
+      <td>For LCM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>RNA Screen Tape</td>
+      <td>Agilent</td>
+      <td>Cat:5067–5576</td>
+      <td>Used to verify RNA quality</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PicoPure RNA Isolation Kit</td>
+      <td>Arcturus</td>
+      <td>Cat:12204–1</td>
+      <td>For LCM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quantseq 3’ mRNA Library Prep Kit FWD</td>
+      <td>Lexogen</td>
+      <td>Cat:K01596</td>
+      <td>For RNA-seq</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript Kit</td>
+      <td>Bio-Rad</td>
+      <td>Cat:1708891</td>
+      <td>For cDNA synth</td>
+    </tr>
+    <tr>
+      <td>other</td>
+      <td>PEN membrane slides</td>
+      <td>Leica</td>
+      <td>Cat:11505158</td>
+      <td>For LCM</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bestus Bioinformaticus Duk</td>
+      <td>DOE Joint Genome Institute</td>
+      <td>RRID:SCR_016969</td>
+      <td>RNAseq read trimming</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FastQC</td>
+      <td>Babraham Institute</td>
+      <td>RRID:SCR_014583</td>
+      <td>RNAseq quality check</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Bowtie2</td>
+      <td>DOI:10.1038/nmeth.1923</td>
+      <td></td>
+      <td>RNAseq transcript mapping</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Samtools v1.3</td>
+      <td>PMID:19505943</td>
+      <td>RRID:SCR_002105</td>
+      <td>RNAseq processing</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>edgeR v3.8.6</td>
+      <td>PMID:19910308</td>
+      <td>RRID:SCR_012802</td>
+      <td>RNAseq differential expression</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>TBLASTX</td>
+      <td>U.S. National Library of Medicine</td>
+      <td>RRID:SCR_011823</td>
+      <td>For Human gene comparison</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BLASTX</td>
+      <td>U.S. National Library of Medicine</td>
+      <td>RRID:SCR_001653</td>
+      <td>Homology searches</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>BiNGO</td>
+      <td>PMID:15972284</td>
+      <td>RRID:SCR_005736</td>
+      <td>Gene Ontology</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NCBI ORFinder</td>
+      <td>U.S. National Library of Medicine</td>
+      <td>RRID:SCR_016643</td>
+      <td>For ORF identification</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>NCBI CD-Search</td>
+      <td>U.S. National Library of Medicine</td>
+      <td></td>
+      <td>For mucin domain search</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pfam 31.0</td>
+      <td>DOI:10.1093/nar/gkv1344</td>
+      <td>RRID:SCR_004726</td>
+      <td>For mucin domain search</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SMART</td>
+      <td>DOI: 10.1093/nar/gkx922</td>
+      <td>RRID:SCR_005026</td>
+      <td>For mucin domain search</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Zen (version 11.0.3.190 2012-SP2)</td>
+      <td>Zeiss</td>
+      <td>RRID:SCR_013672</td>
+      <td>For microscope images</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ (1.51 k)</td>
+      <td>DOI:10.1038/nmeth.2089</td>
+      <td>RRID:SCR_002285</td>
+      <td>For area and length analysis</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R Studio (1.2.1335)</td>
+      <td>RStudio, Inc</td>
+      <td>RRID:SCR_000432</td>
+      <td>For bioinformatics</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism (v8.3.0)</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td>Graphing</td>
+    </tr>
+  </tbody>
+</table>
+
+### Planarian maintenance and care
 
 Asexual Schmidtea mediterranea (clonal line CIW4, RRID:NCBITaxon:79327) (Sánchez Alvarado et al., 2002) were maintained in 0.5 g/L Instant Ocean salts with 0.0167 g/L sodium bicarbonate dissolved in Type I water (Roberts-Galbraith and Newmark, 2013), and fed with beef liver paste. For all experiments, planarians were starved seven days prior to fixation. For LCM, planarians were 6–9 mm in length. For WISH and FISH, planarians were 2–4 mm in length. All animals were randomly selected from large (300–500 animals) pools, with the exception that animals with blastemas (e.g. those that had recently fissioned) were excluded.
 
-## Optimization of planarian fixation for RNA extraction and histology
+### Optimization of planarian fixation for RNA extraction and histology
 
 Planarians were relaxed in 0.66 M MgCl2 or treated with 7.5% N-acetyl-L-cysteine or 2% HCl (ice-cold) for 1 min to remove mucus as described (Forsthoefel et al., 2014). Planarians were fixed in 4% formaldehyde/1X PBS, or methacarn (6 mL methanol, 3 mL chloroform, 1 mL glacial acetic acid) for 10 min at room temperature as described (Forsthoefel et al., 2014). Formaldehyde-fixed samples were washed three times (5 min each) in 1X PBS. Methacarn-fixed samples were first rinsed three times in methanol, then rehydrated in 1:1 methanol:PBS for 5 min, followed by three washes (5 min each) in PBS. For analysis of RNA integrity, 5–10 planarians were immediately homogenized in Trizol, and RNA was extracted using two chloroform extractions and high-salt precipitation buffer according to the manufacturer’s instructions. RNA samples were analyzed using Agilent RNA ScreenTape on an Agilent TapeStation 2200 according to the manufacturer’s protocol.
 
@@ -158,23 +464,23 @@ For combined Hematoxylin and Eosin Y staining: 70% ethanol (20 dips); DEPC-treat
 
 The entire staining protocol was completed in less than 5 min. Slides were air dried for 5 min, then stored in plastic slide boxes on dry ice for 2–4 hr before LCM. Although we tested overnight storage at −80°C, we found that section morphology and RNA quality were best when conducting all steps, from fixation to LCM, on the same day.
 
-## Laser-capture microdissection and RNA extraction
+### Laser-capture microdissection and RNA extraction
 
 Stained PEN slides were removed from dry ice and immediately immersed for 30 s in ice-cold 100% ethanol, then room temperature 100% ethanol to minimize condensation/rehydration of sections and maintain RNAse inactivation during warming. Slides were then air dried for 2–3 min, and mounted in a Leica LMD7 laser microdissection microscope. Samples were dissected at 10X magnification using the following parameters: Power-30; Aperture-20; Speed-5; Specimen Balance-1; Head Current-100%; Pulse Frequency-392 Hz. Regions were dissected into empty RNAse-free 0.5 mL microcentrifuge caps (Axygen PCR-05-C). We separately captured medial intestine, lateral intestine, and non-intestine regions from all sections (8-10) per slide within 45–50 min. After capture, 20 μL Buffer XB (Arcturus PicoPure RNA Isolation Kit 12204–1) was added to captured tissue, then tubes were immediately frozen on dry ice and stored at −80°C prior to RNA extraction.
 
 For RNA extraction, samples were thawed for 5 min at room temperature. Next, tissue from two tubes/slides (16–20 sections from the same planarian) was pooled for each biological replicate, incubated at 42°C for 30 min, and RNA was extracted using the Arcturus PicoPure RNA Isolation Kit following the manufacturer’s instructions. 40–400 ng of total RNA was obtained from each sample, measured using a Denovix UV Spectrophotometer. RNA quality was analyzed using Agilent HS RNA ScreenTape on an Agilent TapeStation 2200 according to the manufacturer’s protocol.
 
-## Library preparation and RNA sequencing
+### Library preparation and RNA sequencing
 
 Concentration of RNA was ascertained using a Thermo Fisher Qubit fluorometer. RNA quality was verified using the Agilent Tapestation. Libraries were generated using the Lexogen Quantseq 3’ mRNA Library Prep Kit according to the manufacturer’s protocol, with 5 ng total RNA input for each sample. Briefly, first-strand cDNA was generated using 5’-tagged poly-T oligomer primers. Following RNase digestion, second strand cDNA was generated using 5’-tagged random primers. A subsequent PCR step with additional primers added the complete adapter sequence to the initial 5’ tags, added unique indices for demultiplexing of samples, and amplified the library. Final libraries for each sample were assayed on the Agilent Tapestation for appropriate size and quantity. Libraries were then pooled in equimolar amounts as ascertained by fluorometric analysis. Final pools were quantified using qPCR on a Roche LightCycler 480 instrument with Kapa Biosystems Illumina Library Quantification reagents. Sequencing was performed using custom primers on an Illumina Nextseq 500 instrument with High Output chemistry and 75 bp single-ended reads.
 
-## Short-read mapping and gene-expression analysis
+### Short-read mapping and gene-expression analysis
 
 Adapters and low quality reads were trimmed from fastq sequence files with BBDuk (https://sourceforge.net/projects/bbmap/, RRID:SCR_016969) using Lexogen data analysis recommendations (https://www.lexogen.com/quantseq-data-analysis/): k = 13 ktrim = r forcetrimleft = 11 useshortkmers = t mink = 5 qtrim = t trimq = 10 minlength = 20. Sequence quality was assessed before and after trimming using FastQC (RRID:SCR_014583) (Andrews, 2010). Reads were then mapped to a version of the de novo dd_Smed_v6 transcriptome (Brandl et al., 2016) restricted to 28,069 unique transcripts (i.e., those transcripts whose identifiers ended with the suffix ‘_1’) using Bowtie2 (v2.3.1) (Langmead and Salzberg, 2012) with default settings. Resulting SAM files were converted to BAM files, sorted, and indexed using Samtools (v1.3, RRID:SCR_002105) (Li et al., 2009). Raw read counts per transcript were then generated for each BAM file using the ‘idxtats’ command in Samtools, and consolidated into a single Excel spreadsheet.
 
 The resulting read counts matrix was imported into R (RRID:SCR_000432), then analyzed in edgeR v3.8.6 (RRID:SCR_012802) (Robinson et al., 2010). First, all transcripts with counts per million (CPM) <1 in 4/12 samples (e.g. lowly expressed transcripts) were excluded from further analysis (13,136/28,069 transcripts were retained). Next, after recalculation of library size, samples were normalized using trimmed mean of M-values (TMM) method, followed by calculation of common, trended, and tagwise dispersions. Finally, differentially expressed transcripts in intestinal vs. non-intestinal samples were determined using the generalized linear model (GLM) likelihood ratio test. 1911 transcripts had a fold-change of more than 2 (logFC >1) and an FDR-adjusted p value < 0.01 in either medial or lateral intestine, relative to non-intestinal tissue. We further limited to 1844 transcripts with a minimum transcripts-per-million (TPM) of 2 in 4 of any eight intestinal biological replicates (medial or lateral), since transcripts with lower expression values were at the lower limit of detection by ISH, and their removal also modestly increased the robustness of LCM vs. phagocyte analysis.
 
-## Human protein atlas comparison
+### Human protein atlas comparison
 
 We queried (TBLASTX, RRID:SCR_011823) 28,069 unique dd_Smed_v6 nucleotide sequences against 20,726 nucleotide sequences in the human reference proteome downloaded from UniProt (www.uniprot.org) (Release 2017_12, 20-Dec-2017). 13,362 dd_Smed_v6 transcripts hit human sequences (7309 unique) with E-value ≤1×10−3. These human sequences were then used to conduct reciprocal TBLASTX queries against dd_Smed_v6 transcripts: 7220 hit 5808 unique dd_Smed_v6 sequences with E-value ≤1×10−3. In total, 5583 dd_Smed_v6 transcripts had reciprocal best hits (RBHs) in the human proteome, with >94% having E-value ≤1×10−10 in either direction. Of 1844 intestine-enriched transcripts, 701 had RBHs in the human proteome.
 
@@ -182,52 +488,52 @@ Next, using RBH UniProt Accession numbers, we extracted RNA-Seq tissue enrichmen
 
 TBLASTX queries were conducted using NCBI BLAST+ standalone suite. Extraction and analysis of tissue enrichment data from HPA was conducted in R and Excel.
 
-## Gene Ontology annotation, nomenclature, and analysis
+### Gene Ontology annotation, nomenclature, and analysis
 
 BLASTX (RRID:SCR_001653) homology searches of UniProtKB protein sequences for H. sapiens, M. musculus, D. rerio, D. melanogaster, and C. elegans were conducted using all 28,069 unique transcripts in the ‘dd_Smed_v6’ transcriptome in PlanMine as queries. In all figures, gene names/abbreviations are based on the best (lowest E-value) UniProt homolog, except: (1) genes were named after the best human homolog for HPA analysis; and (2) we used Smed nomenclature when genes (or paralogs) were previously named by us or others, including hnf-4/dd_1694_0_1 (43), nkx2.2/dd_2716_0_1 (34), gata4/5/6/dd_4075_0_1 (43), apob-1/dd_636_0_1 [DJF, unpublished], apob-2/dd_194_0_1 [DJF, unpublished], slc22a6/dd_1159_0_1 (75), gli-1/dd_7470_0_1 (82), and RREB2/dd_10103_0_1 (134). Biological Process GO terms (also obtained from UniProtKB) from the top hit for each species (with E-value ≤1×10−5) were assigned to each dd_Smed_v6 transcript. 9344 of 28,069 total transcripts and 1379 of 1844 intestine-enriched transcripts were annotated with GO terms. Enrichment for specific terms among all intestine-enriched transcripts, medially enriched transcripts, or laterally enriched transcripts was then evaluated with BiNGO (RRID:SCR_005736) (Maere et al., 2005). Regional transcript enrichment was calculated as a ratio of fold changes in medial and lateral intestinal tissue: transcripts were considered to be medially enriched if FCmedial/FClateral > 1 (1221 transcripts), or laterally enriched if FCmedial/FClateral < 1 (623 transcripts). All 13,136 (of 28,069) transcripts detected in our experiment (above) were used as a background set, and hypergeometric testing with a Benjamini and Hochberg False Discovery Rate (FDR) of 0.05 was considered significant. We additionally restricted our summarization to terms that were annotated to more than one percent of transcripts that received annotations in each group: 1379/1844 intestine-enriched transcripts, 924/1221 medially enriched transcripts, or 455/623 laterally enriched transcripts.
 
-## Comparison to gene sets involved in innate immunity
+### Comparison to gene sets involved in innate immunity
 
 1456 Dugesia japonica transcripts upregulated in response to either L. pneumophila or S. aureus infection (Abnave et al., 2014) were queried (TBLASTX) against 28,069 dd_Smed_v6_unique transcripts. 981 dd_smed_v6 transcripts hit with evalues < 1e-03. After removing duplicate hits, 783 transcripts remained. 701/783 transcripts were present in the full 13,136 LCM dataset; 99/783 were intestine-enriched.
 
 30,021 SMED_20140614 transcripts were mapped to 28,069 dd_smed_v6_unique transcripts, generating 22,889 dd_smed_v6_unique hits with evalues < 1e-03. After removing duplicates, 19,338 transcripts remained. 741/19,338 transcripts were up- or down-regulated in planarians shifted to static culture (Arnold et al., 2016). 447/741 transcripts were present in the full 13,136 LCM dataset, and 62 were intestine-enriched.
 
-## Comparison to gene expression in sorted phagocytes
+### Comparison to gene expression in sorted phagocytes
 
 28,069 unique dd_Smed_v6 transcripts were blasted (BLASTN) against 11,589 ESTs and assembled contigs from the ‘SmedESTs3’ collection (Zayas et al., 2005), which were used in microarray-based analysis of gene expression in sorted phagocytes (Forsthoefel et al., 2012). 7927 hit with length >100 bp, >90% base identity, and E-value less than 1 × 10−50. Of these, 6919 of 13,136 Smed_v6 transcripts detected in LCM samples mapped to unique Smed_ESTs3 contigs or ESTs with detectable expression in the sorted phagocyte data set. 2626/6919 transcripts had FDR-adjusted p values < 0.01 for logFC in either medial or lateral intestine (vs. non-intestine, LCM data in this study), and 1498/2626 had FDR-adjusted p values < 0.05 for logFC in sorted phagocytes (vs. all other cells) (phagocyte data in Forsthoefel et al., 2012). 1317/2626 had logFC >1 in either medial or lateral intestine. In the sorted phagocyte data, 900/1317 had a fold-change >0 and FDR-adjusted p value < 0.05 (‘high’ in phagocytes), 358/1317 had an FDR-adjusted p value > 0.05 (‘moderate’ in phagocytes), and 59/1317 had a fold-change <0 and FDR-adjusted p value < 0.05 (‘low’ in phagocytes). For Figure 5B, we identified 1067/1514 phagocyte-enriched transcripts with corresponding dd_Smed_v6 transcripts, including some with logFC 0.6–1, as in the original study (Forsthoefel et al., 2012).
 
-## Comparison to gene expression in single-cell transcriptomes
+### Comparison to gene expression in single-cell transcriptomes
 
 We utilized data from gene expression analysis of single planarian cells from two recent studies (Fincher et al., 2018; Plass et al., 2018) to identify dd_Smed_v6 transcripts enriched in specific intestinal cell types that were also represented in our 1844 intestine-enriched transcripts (this study) and phagocyte expression data (Forsthoefel et al., 2012; Figure 2—figure supplement 1). For comparison to Fincher et al. (2018), we identified 391 phagocyte-enriched transcripts (subcluster four or ‘enterocytes’ in Table S2 (intestine); Fincher et al., 2018), 21 goblet-enriched transcripts (subcluster eight in Fincher et al., 2018), and 30 basal-enriched transcripts (subcluster eight or ‘outer intestinal cells’ in Fincher et al., 2018); transcripts found in other intestinal subclusters were excluded. For comparison to Plass et al. (2018), we identified 92 phagocyte-enriched (but not goblet-enriched) transcripts and 27 goblet cell-enriched (but not phagocyte-enriched) transcripts that were also represented in our 1844 intestine-enriched transcripts and phagocyte expression data. For global comparison of transcripts enriched in laser captured intestine (Figure 5), we included all transcripts enriched in intestinal cell types (and intestinal precursors) in single cell studies (Fincher et al., 2018; Plass et al., 2018; Swapna et al., 2018), without regard to cell type or enrichment in non-intestinal cell types. For comparison to Swapna et al. (2018) data, BLASTN was used to identify dd_Smed_v6 transcripts orthologous to ‘SmedASXL’ transcripts (with >95% identity and length >100 bp).
 
-## Gene cloning and expressed sequence tags
+### Gene cloning and expressed sequence tags
 
 Total RNA was extracted from planarians using Trizol with two chloroform extractions and high salt precipitation. After DNAse digestion, cDNA was synthesized using the iScript Kit (Bio-Rad 1708891). Genes were amplified by PCR with Platinum Taq (Invitrogen 10966026) using primers listed in Supplementary file 1. Amplicons were cloned into pJC53.2 (RRID:Addgene_26536) digested with Eam1105I as described (Collins et al., 2010) and sequenced to verify clone identity and orientation. For some genes, expressed sequence tags (ESTs) in pBluescript II SK(+) were utilized (Zayas et al., 2005), also listed in Supplementary file 1.
 
-## In situ hybridization and immunofluorescence
+### In situ hybridization and immunofluorescence
 
 In situ hybridizations were performed as described (King and Newmark, 2013), with the following adjustments: NAc (7.5%) treatment was for 15 min; 4% formaldehyde fixation was for 15 min; and animals were bleached for 3 hr. Samples were pre-incubated with tyramide solution without H2O2 for 10 min, then spiked with H2O2 (.0003% final concentration), then developed for 10 min. Immmunofluorescence with mAb 6G10 after FISH was conducted as described (Ross et al., 2015), using 1x PBS, 0.3% Trition-X100, 0.6% IgG-free BSA, 0.45% fish gelatin as the blocking buffer (Forsthoefel et al., 2014). Images are representative of two independent in situ hybridizations on 4–6 animals per experiment.
 
-## Mucin identification
+### Mucin identification
 
 S. mediterranea mucin-like genes in PlanMine (Brandl et al., 2016) and SmedGD2.0 (20) were identified by TBLASTN searches with human refseq_protein and UniProt mucin sequences. Planarian sequences were translated with NCBI ORFinder (https://www.ncbi.nlm.nih.gov/orffinder/, RRID:SCR_016643), and domain searches were conducted using NCBI CD-Search (https://www.ncbi.nlm.nih.gov/Structure/cdd/cdd.shtml) (Marchler-Bauer et al., 2015), Pfam 31.0 (https://pfam.xfam.org, RRID:SCR_004726) (Finn et al., 2016), and SMART (http://smart.embl-heidelberg.de, RRID:SCR_005026) (Letunic and Bork, 2018). Three planarian sequences were identified that encoded three N-terminal von Willebrand factor D domains and two or more N-terminal cysteine-rich and trypsin-inhibitor-like cysteine-rich domains characteristic of human mucins (e.g. MUC-2, MUC-5AC) (Lang et al., 2007; Lang et al., 2016), but not von Willebrand factor A or Thrombospondin type I repeats found in closely related proteins (e.g. SCO-spondin). Planarian mucin-like genes identified using this approach are: Smed-muc-like-1 (dd_Smed_v6_17988_0_1/SMED30009111), Smed-muc-like-2 (dd_Smed_v6_18786_0_1/SMED30002668), and Smed-muc-like-3 (dd_Smed_v6_21309_0_1/dd_Smed_v6_38233_0_1/dd_Smed_35076_0_1/SMED30006765).
 
-## Identification of intestine-enriched transcription factors and RNA interference
+### Identification of intestine-enriched transcription factors and RNA interference
 
 Putative transcription factors were identified by extracting intestine-enriched transcripts with ‘DNA’ and/or ‘transcription’ Biological Process and Molecular Function GO terms, then verifying that the best Uniprot homologs regulated transcription in published experimental evidence. Smed-gli-1 has been previously studied (Rink et al., 2009). Smed-RREB2 was most homologous to another planarian zinc finger protein, Smed-RREBP1 (134). However, we used the more common ‘RREB’ abbreviation (rather than ‘RREBP’) for the second planarian paralog.
 
 RNAi experiments were conducted as described (Rouhana et al., 2013) by mixing one microgram of in vitro-synthesized dsRNA with 1 μL of food coloring, 8 μL of water, and 40 μL of 2:1 liver:water homogenate. For the primary regeneration screen, 10 animals were fed three times over 6 days, amputated 4–5 days after the last feeding, then fixed 6 days post amputation. For further analysis of gli-1(RNAi) and RREB2(RNAi) phenotypes in uninjured animals, planarians were fed 1X/week for 6 weeks or 2X/week for 3 weeks (six feedings total). gli-1(RNAi) and RREB2(RNAi) animals were scored as ‘non-eaters’ if they refused food on two successive days (7 and 8 days after the previous feeding), and were removed the experiment. Non-eating and/or curling animals were excluded from FISH analysis. For experiments in regenerates, animals were fed 2X/week for 4 weeks (eight feedings total). egfp dsRNA (Forsthoefel et al., 2012) was used as the negative control in all experiments.
 
-## Image collection
+### Image collection
 
 Confocal images were collected on a Zeiss 710 Confocal microscope, with the following settings: two tracks were used, one with both 405/445 (excitation/emission nm, blue) and 565/650 (red), and the other with only 501/540 (green) to minimize bleed-through between channels. Detector gains were adjusted so that no pixels were saturated. Digital offset was set to 0 or −1, to ensure that most pixel intensities were non-zero, with averaging set to 2. Whole animals were captured with a single z-plane (5 µm section) with a 10x objective, tiled, and stitched in Zen (version 11.0.3.190, 2012-SP2, RRID:SCR_013672). Magnified regions were captured with a 63x Oil immersion objective and a z-stack (50–100 slices, 0.31 µm/slice) was collected from the tail and/or head of the animal. In some cases, after imaging min/max or linear best fit adjustments were made in Zen to improve contrast of final images. Profile graphs represent raw, unadjusted pixel intensity values from a single optical section.
 
 WISH images were collected on a Zeiss Stemi 508 with an Axiocam 105 color camera, an Olympus SZX12 dissection microscope with an Axiocam MRc color camera, or a Zeiss Axio Zoom.V16 with an Axiocam 105 camera. In some cases, brightness and/or contrast were adjusted in photoshop to improve signal contrast.
 
-## Quantification of animal area and length for gli-1 and RREB2 knockdown animals
+### Quantification of animal area and length for gli-1 and RREB2 knockdown animals
 
 Animals were separated into 35 mm x 10 mm petri dishes in groups of two, and imaged on a Zeiss Stemi 508 prior to the first dsRNA feeding, then again seven days after the fifth feeding (animals were fed once per week). For area, images were processed with ImageJ (RRID:SCR_002285) (Schneider et al., 2012) by first applying an Auto Threshold, using method = Intermodes, Huang, or Triangles with ‘White objects on black background’ selected, to highlight the planarian. Analyze Particles was then run, with size = 600000–10000000 µm2, and ‘Display results’ and ‘Include holes’ selected. For length, a straight line was drawn manually from the tip of the head to the tip of the tail and then Measure was used to obtain the length. Numerical data were analyzed and plots generated in GraphPad Prism v8.3.0 (RRID:SCR_002798).
 
-## Ethics statement
+### Ethics statement
 
 No vertebrate organisms were used in this study.

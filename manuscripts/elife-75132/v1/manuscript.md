@@ -17,10 +17,10 @@
 
 ### Affiliations
 
-1. https://ror.org/000e0be47 Department of Medicine, Division of Endocrinology, Metabolism and Molecular Medicine, Northwestern University Feinberg School of Medicine Chicago United States
-2. https://ror.org/03cxys317 Division of Endocrinology, Metabolism, Hematological Science and Therapeutics, Department of Bio-Signal Analysis, Yamaguchi University, Graduate School of Medicine, 1-1-1 Yamaguchi Japan
-3. https://ror.org/00t8bew53 Ionis Pharmaceuticals, Inc Carlsbad United States
-4. https://ror.org/0160cpw27 Department of Pharmacology, Alberta Diabetes Institute, University of Alberta Edmonton, AB Canada
+1. Department of Medicine, Division of Endocrinology, Metabolism and Molecular Medicine, Northwestern University Feinberg School of Medicine Chicago United States ([ROR:000e0be47](https://ror.org/000e0be47))
+2. Division of Endocrinology, Metabolism, Hematological Science and Therapeutics, Department of Bio-Signal Analysis, Yamaguchi University, Graduate School of Medicine, 1-1-1 Yamaguchi Japan ([ROR:03cxys317](https://ror.org/03cxys317))
+3. Ionis Pharmaceuticals, Inc Carlsbad United States ([ROR:00t8bew53](https://ror.org/00t8bew53))
+4. Department of Pharmacology, Alberta Diabetes Institute, University of Alberta Edmonton, AB Canada ([ROR:0160cpw27](https://ror.org/0160cpw27))
 
 † Corresponding author
 
@@ -36,33 +36,61 @@ Here, we developed a high-throughput small-molecule screen to identify insulinot
 
 ## Results
 
-## High-throughput screen for chemical modulators of insulin secretion in circadian mutant β-cell
+### High-throughput screen for chemical modulators of insulin secretion in circadian mutant β-cell
 
 Based upon our finding that circadian genes regulate β-cell function, we developed a chemical genetic screen to identify pathways that enhance glucose-coupled insulin secretion in a cell-based model of circadian β-cell failure (Figure 1A). We previously showed that clonal Bmal1-/- Beta-TC-6 β-cell lines recapitulate the secretory defects observed in primary clock-deficient islets (Marcheva et al., 2010; Perelis et al., 2015; Marcheva et al., 2020). We next generated stable WT and Bmal1-/- β-cell lines with a luciferase readout for insulin secretion using an insulin-NanoLuciferase (NanoLuc)-expressing lentivirus (Figure 1B). We validated the direct correspondence between insulin-NanoLuc bioluminescence and levels of peptide secretion under increasing physiological concentrations of glucose (2–20 mM; R2 = 0.8937; Figure 1C). We further confirmed impaired insulin secretion by reduced bioluminescence in Bmal1-/- compared to WT β-cell lines expressing insulin-NanoLuc in response to stimulatory concentrations of glucose (20 mM), potassium chloride, forskolin, and the phosphodiesterase inhibitor 3-isobutyl-1-methylxanthine (IBMX) (Figure 1D). We also validated the use of the DAG mimetic phorbol 12-myristate 13-acetate (PMA) as a positive control for the screen (Figure 1D–F; Perelis et al., 2015). A feasibility test with a Z'-factor score of 0.69 indicated a significant separation between the distribution of bioluminescent signal from the positive (10 μM PMA + 20 mM glucose) and negative (20 mM glucose) controls, suggesting that the assay provides a suitable platform for a high-throughput screen (Figure 1F; Zhang et al., 1999).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/75132/elife-75132-fig1-v1.jpg)
 
-**Figure 1.:** (A) Flow chart of ‘phenotype’-driven cell-based genetic screening platform to identify molecules and pathways that enhance insulin secretion during circadian β-cell failure. (B) Schematic of insulin-NanoLuciferase (NanoLuc) fusion construct, with bioluminescence detected in the supernatant as a proxy for insulin secretion. (C) Correlation between insulin-NanoLuc bioluminescence and insulin values measured by ELISA in response to a range of glucose concentrations (2–20 mM; R2 = 0.8937). (D) Insulin-NanoLuc bioluminescence following 1 hr exposure to 20 mM glucose, 30 mM KCl, and 20 mM glucose plus 2.5 µM forskolin, 500 µM 3-isobutyl-1-methylxanthine (IBMX), or 10 µM phorbol 12-myristate 13-acetate (PMA) in WT and Bmal1 insulin-NanoLuc Beta-TC-6 cells (n = 3–10 experimental repeats/condition). (-/-E) Drug screen design. Insulin-NanoLuc-expressing Beta-TC-6 Bmal1 cells were plated in nine 384-well plates prior to exposure to 10 µM of each of the 2640 compounds from the Spectrum Collection in combination with 20 mM glucose. Negative (20 mM glucose alone) and positive (20 mM glucose plus 10 µM PMA) controls were included on each plate. (-/-F) Drug screen feasibility test comparing negative (20 mM glucose only) and positive (20 mM glucose plus PMA) controls (n = 3 experimental repeats) (Z'-factor = 0.69). All values represent mean ± SEM. *p<0.05, ***p<0.001.
+**Figure 1.:** (A) Flow chart of ‘phenotype’-driven cell-based genetic screening platform to identify molecules and pathways that enhance insulin secretion during circadian β-cell failure. (B) Schematic of insulin-NanoLuciferase (NanoLuc) fusion construct, with bioluminescence detected in the supernatant as a proxy for insulin secretion. (C) Correlation between insulin-NanoLuc bioluminescence and insulin values measured by ELISA in response to a range of glucose concentrations (2–20 mM; R2 = 0.8937). (D) Insulin-NanoLuc bioluminescence following 1 hr exposure to 20 mM glucose, 30 mM KCl, and 20 mM glucose plus 2.5 µM forskolin, 500 µM 3-isobutyl-1-methylxanthine (IBMX), or 10 µM phorbol 12-myristate 13-acetate (PMA) in WT and Bmal1-/- insulin-NanoLuc Beta-TC-6 cells (n = 3–10 experimental repeats/condition). (E) Drug screen design. Insulin-NanoLuc-expressing Beta-TC-6 Bmal1-/- cells were plated in nine 384-well plates prior to exposure to 10 µM of each of the 2640 compounds from the Spectrum Collection in combination with 20 mM glucose. Negative (20 mM glucose alone) and positive (20 mM glucose plus 10 µM PMA) controls were included on each plate. (F) Drug screen feasibility test comparing negative (20 mM glucose only) and positive (20 mM glucose plus PMA) controls (n = 3 experimental repeats) (Z'-factor = 0.69). All values represent mean ± SEM. *p<0.05, ***p<0.001.
 
-## Identification and validation of high-throughput screen lead compounds in murine islets at high and low glucose concentrations
+### Identification and validation of high-throughput screen lead compounds in murine islets at high and low glucose concentrations
 
 We next used insulin-NanoLuc-expressing Bmal1-/- β-cell lines to screen 2640 drugs and drug-like molecules from the Spectrum Collection (MicroSource Discovery Systems, Inc, New Milford, CT) to identify compounds that enhance insulin secretion (Figure 1E). Insulin-NanoLuc-expressing Bmal1-/- Beta-TC-6 cells were plated at 40,000 cells/well in a total of nine 384-well plates, incubated for 3 days, and then treated for 1 hr with either (i) 20 mM glucose alone (negative control that elicits reduced insulin secretion in Bmal1-/- cells), (ii) 20 mM glucose plus 10 μM of one of the 2640 compounds, or (iii) 20 mM glucose plus 10 μM PMA (positive control known to enhance insulin secretion in both Bmal1-/- mouse islets and Beta-TC-6 cells) (Perelis et al., 2015). Luciferase intensity from the supernatant was measured following exposure to NanoGlo Luciferase Assay Substrate (Figure 1E).
 
 We initially identified 19 hit compounds that both significantly enhanced insulin secretion and elicited a response of greater than 3 standard deviations from the mean (Z-score > 3) with more than a 1.25-fold increase, exceeding the upper 99% confidence interval of the negative control (Figure 2A, Figure 2—figure supplement 1A, Supplementary file 1). Of these, seven were excluded from further analysis because of reported toxic effects or lack of availability of the compound (Figure 2—figure supplement 1A). The remaining 12 hit compounds mediate activity of ligand-gated cell surface receptors and ion channels that stimulate second messenger signaling cascades (Figure 2B and C; Gaulton et al., 2010; Carrano et al., 2017). Of these, four target ion channels (tacrine hydrochloride, suloctidil, dyclonine hydrochloride, and IVM) (Figure 2B and C; Karlsson and Ahrén, 1992; Chatelain et al., 1984; Khanna et al., 2011; Chen and Kubo, 2018; Freeman et al., 1988; de Gaetano et al., 1976; Kornhuber et al., 2008; Sahdeo et al., 2014; Roghani et al., 1999; Ikeda, 2003). Five target seven-transmembrane G-protein coupled receptors (GPCRs) that signal through phospholipase C (PLC) and diacylglycerol (DAG) to activate insulin secretion and β-cell gene transcription (benzalkonium chloride, carbachol, isoetharine mesylate, pipamperone, and IVM) (Figure 2B and C; Chen and Kubo, 2018; Higashijima et al., 1990; Rinne et al., 2015; Bierman, 1983; Van Craenenbroeck et al., 2006; Nagata et al., 2019; Ratajewski et al., 2015; Ohtani et al., 2011). Similar to the hit compounds of our screen, our previous results showed that carbachol, a muscarinic Gq-coupled receptor agonist, and the DAG mimetic PMA rescue insulin secretion in Bmal1-/- islets (Perelis et al., 2015). Four additional hit compounds act as acetylcholinesterase inhibitors, promoting enhanced glucose-dependent insulin secretion in response to acetylcholine through the muscarinic GPCRs, as well as the ionotropic nicotinic acetylcholine receptors (tyrothricin, tomatine, carbachol, and tacrine hydrochloride) (Figure 2B and C; Changeux et al., 1969; Milner et al., 2011; Rosenberry et al., 2008; Marco and Carreiras, 2003; Lang and Staiger, 2016; Shih et al., 2009). One compound has been shown to promote insulin secretion by inhibition of the mitochondrial protein tyrosine phosphatase PTPM1 (alexidine hydrochloride) (Figure 2B and C; Doughty-Shenton et al., 2010; Nath et al., 2015), and another likely affects β-cell function by signaling through the mineralocorticoid receptor (deoxycorticosterone) (Figure 2B and C; Lu et al., 2006). Finally, in addition to ion channels and GPCRs, the macrolide IVM has also been shown to signal in micromolar concentrations though several ionotropic receptors, including purinergic, GABAergic, and glycine receptors, as well as through the farnesoid X nuclear receptor (Chen and Kubo, 2018; Dawson et al., 2000; Soltani et al., 2011).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/75132/elife-75132-fig2-v1.jpg)
+
+**Figure 2.:** (A) Significant Z-scores (>3 standard deviations) and fold changes (>1.25-fold increase) for all 2640 screened compounds, with hit compounds indicated in blue. (B) Top 12 hit compounds identified from screen with a fold increase > 1.25 and a Z-score > 3, which were selected for further analysis. Known functions and published molecular pathways targeted by these compounds are indicated. (C) Model of potential mechanisms of action of the top 12 hit compounds to affect insulin secretion in the β-cell. (D) Glucose-responsive insulin secretion by ELISA at 2 mM and 20 mM glucose in WT mouse islets following exposure to four lead candidate compounds (n = 3–11 mice/compound). (E) Ivermectin (IVM) dose-response curve (n = 6–8 experimental repeats/dose), ranging from 0.078 µM to 80 µM IVM, in insulin-NanoLuciferase-expressing Beta-TC-6 cells. Shaded area represents 95% confidence intervals for the LOESS curve. All values represent mean ± SEM. **p<0.01, ***p<0.001.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/75132/elife-75132-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Compound exclusion flow chart delineating exclusion criteria and numbers of compounds excluded at each validation step. (B) Hit compound validation at concentrations of 10 and 100 µM in Bmal1-/- insulin-NanoLuciferase cells (n = 3/compound). All values represent mean ± SEM. *p<0.05, **p<0.01, ***p<0.001.
+
 10 of these 12 hit compounds were not considered for further analysis because of either the high dose required to achieve insulin secretion (Figure 2—figure supplement 1B) or because they augmented insulin release in low basal glucose (2 mM) in intact WT mouse primary islets (Figure 2D). One of the remaining compounds induces hepatotoxicity after prolonged use (tacrine hydrochloride) (Galisteo et al., 2000). We therefore focused our attention on IVM due to its dose-dependent enhancement of GSIS in insulin-NanoLuc-expressing Beta-TC-6 cells, as well as its robust rescue of insulin secretion in Bmal1-/- islets (Figure 2D and E).
 
-## Lead compound ivermectin regulates glucose-stimulated calcium flux and insulin exocytosis in Bmal1 mutant islets
+### Lead compound ivermectin regulates glucose-stimulated calcium flux and insulin exocytosis in Bmal1 mutant islets
 
 To test whether IVM drives GSIS in β-cell lines and primary mouse islets, we first assessed the impact of both acute treatment (1 hr) and overnight exposure (24 hr) with 10 μM IVM on the ability of WT β-cells and mouse islets to secrete insulin (Figure 3A, Figure 3—figure supplement 1A). Consistent with our initial bioluminescence assay, we observed that IVM enhanced insulin secretion in a glucose-dependent manner following both 1 hr IVM exposure and 24 hr pretreatment with IVM in β-cell lines and WT mouse islets, suggesting that both acute and longer-term exposure to IVM enhance β-cell function (Figure 3A, Figure 3—figure supplement 1A). Since there was not a significant increase in insulin secretion with overnight (approximately twofold) compared to acute (~1.5–1.6-fold) IVM exposure, further analysis of IVM as a potentiator of insulin secretion was performed only with acute treatment.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/75132/elife-75132-fig3-v1.jpg)
+
+**Figure 3.:** (A) Insulin secretion (expressed as % content) assessed by ELISA at 2 mM and 20 mM glucose in WT mouse islets in response to 1 hr 10 µM IVM treatment or 24 hr 10 µM IVM pretreatment (n = 5 mice). Data was analyzed by two-way ANOVA and false discovery rate (FDR) correction for multiple testing. (B) Insulin secretion as assessed by ELISA from islets isolated from 8-month-old pancreas-specific Bmal1 knockout and Bmal1flx/flx mice in the presence or absence of 10 µM IVM (n = 10–11 mice/genotype). (C) Perifusion analysis of insulin secretion in islets from pancreas-specific Bmal1 knockout (PdxCre;Bmal1flx/flx) and Bmal1flx/flx mice in response to 10 µM IVM in the presence of 20 mM glucose (n = 3 mice/genotype). (D) Insulin secretion as assessed by ELISA from islets isolated from 9- to 12-month-old male Cry1-/-;Cry2-/- knockout and Cry1+/-;Cry2+/- heterozygous control mice in the presence or absence of ± µM IVM (n = 4 mice/genotype). (E) Capacitance measurements in β-cells from PdxCre;Bmal1flx/flx and Bmal1flx/flx mouse islets treated with 10 µM IVM (n = 4–5 mice/genotype, 5–16 cells per mouse). Asterisks denote significance between PdxCre;Bmal1flx/flx and PdxCre;Bmal1flx/flx + IVM; plus symbols denote significance between Bmal1flx/flx and PdxCre;Bmal1flx/flx for all depolarization numbers indicated. */+ p<0.05. (F) Capacitance measurements in β-cells from human islets treated with 10 µM IVM (n = 3 donors, 7–11 cells per donor). Capacitance and calcium data were analyzed by two-way repeated-measures ANOVA with Bonferroni correction for multiple testing. All values represent mean ± SEM. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/75132/elife-75132-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Insulin-NanoLuciferase (insulin-Nano-Luc) bioluminescence at 0 mM and 20 mM glucose in WT Beta-TC-6 cells in response to 1 hr 10 µM IVM treatment or 24 hr 10 µM IVM pretreatment (n = 5 experiments, 3–24 experimental repeats/experiment). Data was analyzed by two-way ANOVA and false discovery rate (FDR) correction for multiple testing. (B) Ratiometric determination of intracellular Ca2+ using Fura2-AM dye in WT Beta-TC-6 cells stimulated in the presence or absence of 10 µM IVM (n = 3 experimental repeats/condition). (C) Insulin secretion in pseudoislets from WT insulin-NanoLuc-expressing Beta-TC-6 cells in response to 10 µM IVM and 5 µM isradipine (isr) (n = 3–8 experiments, 3–16 experimental repeats/experiment). p-Values were determined by Tukey’s multiple comparison tests following one-way ANOVA. (D) Ratiometric determination of intracellular Ca2+ using Fura2-AM dye in WT Beta-TC-6 cells stimulated with IVM or isr (n = 3–8 experiments, 4–16 experimental repeats/experiment). (E) Perifusion analysis of insulin secretion from WT insulin-NanoLuc pseudoislets in response to 10 µM IVM in the presence of 20 mM glucose (n = 6 experimental repeats/condition). (F) Glucose levels at the indicated time points following an intraperitoneal injection of glucose (2 g/kg body weight) at ZT2 after 14 days of daily intraperitoneal injections with 1.3 mg/kg body weight of IVM (n = 8 mice/genotype). Glucose levels were analyzed by two-way repeated-measures ANOVA with Bonferroni multiple testing. (G) Insulin secretion as assessed by ELISA from islets isolated from 4-month-old Akita mice in the presence or absence of 10 μM IVM (n = 5–6 mice/genotype). All values represent mean ± SEM. **p<0.01, ***p<0.001.
 
 Chemical energy from ATP generated by glucose metabolism within the β-cell triggers closure of the sulfonylurea-linked potassium channel, depolarization of the plasma membrane, and opening of voltage-gated calcium channels, leading to stimulus-secretion coupling. To assess the mechanism of IVM-induced insulin secretion, we next monitored real-time calcium influx using ratiometric fluorescence imaging in WT β-cells in the presence of both glucose and IVM. We observed an immediate and robust glucose-stimulated intracellular calcium response within 2 min of IVM stimulation (p<0.05) (Figure 3—figure supplement 1B). Importantly, this effect was only observed in the presence of high glucose, consistent with results of our initial NanoLuc 384-well plate screening and subsequent ELISA-based analyses of GSIS. In contrast, the Ca2+ channel inhibitor isradipine completely suppressed Ca2+ influx and insulin secretion (Figure 3—figure supplement 1C and D; Berjukow et al., 2000). To determine whether increased calcium influx corresponded with productive insulin release following IVM treatment, we used a dynamic perifusion system to directly measure NanoLuc activity in eluates harvested from IVM-treated β-cells every 2 min over the course of 30 min following stimulation with either 20 mM glucose or 20 mM glucose plus 10 µM IVM (Figure 3—figure supplement 1E). IVM significantly increased insulin release during the initial burst of secretion within the first 12 min post-stimulation (p<0.05) and continued to enhance insulin secretion during the remainder of the stimulation period (12–30 min), consistent with continuous release of reserve insulin granules (Rorsman and Renström, 2003).
 
 Since our cell-based studies indicated that IVM stimulates GSIS within immortalized β-cell lines, we next sought to determine whether IVM restores insulin secretion in the context of circadian disruption within primary islets, which are composed of multiple hormone-releasing cell types (Arrojo E Drigo et al., 2020). To test this idea, we administered IVM to mouse islets isolated from pancreas-specific Bmal1-/- mice, revealing a 3.3-fold elevation of GSIS following exposure to the drug in the Bmal1 mutant islets (Figure 3B). Furthermore, perifusion experiments in islets from Bmal1 mutant mice revealed that IVM significantly increased insulin release during both the initial burst of secretion (first 12 min post-stimulation) and during the sustained release (12–30 min) in both WT and Bmal1 mutant islets (Figure 3C). Additionally, we observed a similar 2.9-fold increase in GSIS following administration of IVM to islets isolated from an independent mouse model of circadian disruption (Cry1-/-;Cry2-/- mice) (Figure 3D), suggesting that IVM ameliorates secretory defects caused by disruption of the circadian clock network. To determine if IVM can improve glucose homeostasis in diabetic animals, we next tested the effects of chronic IVM administration in the well-characterized C57BL/6-Ins2Akita/J Akita model of β-cell failure (Yoshioka et al., 1997). Daily intraperitoneal IVM (1.3 mg/kg body weight) was administered to Akita mice over a 14-day period (Jin et al., 2013), terminating in assessment of glucose tolerance and ex vivo GSIS. Treatment with IVM significantly improved glucose tolerance and augmented glucose-stimulated insulin release from islets isolated from these mice (Figure 3—figure supplement 1F and G). Given that our prior genomic and cell physiological studies have localized the β-cell defect in circadian mutant mice to impaired insulin exocytosis (Marcheva et al., 2020), and as IVM augmented insulin secretion in Bmal1 mutant islets, we next sought to determine whether IVM might enhance depolarization-induced exocytosis using electrophysiological analyses (Fu et al., 2019). We assessed cumulative capacitance, a measure of increased cell surface area as insulin granules fuse to the plasma membrane, in β-cells from islets of control and pancreas-specific Bmal1 mutant mice, as well as from human cadaveric islets. While Bmal1 mutant cells displayed reduced rates of exocytosis following direct depolarization (as indicated by reduced capacitance), 10 µM IVM treatment rescued the defect in Bmal1 mutant cells, increasing cumulative capacitance from 11.0 to 20.7 fF/pF after 10 consecutive depolarization steps (Figure 3E). IVM treatment also enhanced cumulative capacitance in human β-cells from 17.9 to 39.7 fF/pF (Figure 3F). Together, these data show that IVM augments β-cell early calcium influx in a glucose-dependent manner to promote increased vesicle fusion and release.
 
-## Purinergic receptor P2Y1 mediates IVM-induced insulin exocytosis
+### Purinergic receptor P2Y1 mediates IVM-induced insulin exocytosis
 
 Several of the predicted targets of the insulinotropic compounds from our screen, including IVM, involve second-messenger signaling, raising the possibility that circadian disruption may be overcome by augmenting hormonal or metabolic factors that promote peptide exocytosis. IVM is a readily absorbable and potent derivative of avermectin B1 that allosterically regulates several different types of cell surface receptors, including purinergic and GABA receptors, as well as nuclear transcription factors such as the farnesoid X receptor (FXR) (Jin et al., 2013; Khakh et al., 1999; González Canga et al., 2008; Estrada-Mondragon and Lynch, 2015). Since IVM augments insulin secretion in Bmal1-/- cells, we hypothesized that the expression of putative IVM targets may be reduced during circadian disruption. We first identified the purinergic receptor P2Y1 (P2ry1) as the most highly expressed putative IVM target in wild-type β-cells (Figure 4A). We then observed that P2ry1 was one of the most highly downregulated targets in Bmal1-/- cells, with mRNA expression levels reduced by ~3.1-fold (adjusted p=10–55; Figure 4A, Figure 4—figure supplement 1A; GSE146916). We found decreased levels and loss in rhythmicity of P2ry1 in synchronized Bmal1-/- pseudoislets (Figure 4—figure supplement 1B). BMAL1 chromatin immunoprecipitation-sequencing in Beta-TC-6 cells further revealed enrichment of BMAL1 chromatin binding within enhancer regions 266–41 kb upstream of the P2ry1 gene transcription start site (GSE69889; Figure 4A, Figure 4—figure supplement 1A). Finally, analysis of RNA-sequencing data from human islets (SRA accession ERP017126) indicates that P2RY1 expression is enriched within β-cells among hormone-secreting cell types, with little to no detectable expression in the glucagon-secreting α cells (Figure 4—figure supplement 1C; Segerstolpe et al., 2016). Together, these data reveal direct rhythmic control of the P2ry1 gene by the β-cell circadian clock.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/75132/elife-75132-fig4-v1.jpg)
+
+**Figure 4.:** (A) Venn diagram of BMAL1 binding sites identified by ChIP-sequencing overlapping with differentially expressed genes identified by RNA-sequencing in Bmal1-/-β-cell line compared to control cell line (top). Browser tracks and bar graph showing decreased expression of P2ry1 gene in Bmal1-/- cells compared to controls. BMAL1 binding sites upstream of the P2ry1 gene are also indicated (bottom). (B) Bioluminescence from WT insulin-NanoLuciferase pseudoislets in response to 10 µM IVM and/or 10 µM of the P2Y1 antagonist MRS2179 (n = 3–8 experiments, 3–15 experimental repeats/experiment). (C) Ratiometric determination of intracellular Ca2+ using Fura2-AM dye in WT Beta-TC-6 cells stimulated in the presence or absence of 10 µM IVM (n = 3–7 experiments, 4–19 experimental repeats/experiment). (D) Insulin secretion by ELISA in pseudoislets from P2ry1 KOs and control WT and Bmal1-/- Beta-TC-6 cells (n = 4 experiments, two experimental repeats/experiment). p-Values were determined by Tukey’s multiple comparison tests following two-way ANOVA. (E) First two principal components (PC1 and PC2) following unbiased principal component analysis (PCA) of DESeq2 normalized counts in WT, WT + IVM, P2yr1 KO, and P2yr1 KO cells (n = 4 per group). (F) Mean log2-transformed DESeq2-normalized counts in WT, WT + IVM, P2yr1 KO, and P2yr1 KO cells (n = 4 per group) at differentially expressed (1.5-fold, adjusted p-value<0.05) transcripts identified between WT and WT + IVM treated cells. All values represent mean ± SEM. *p<0.05, **p<0.01, ***p<0.001.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/75132/elife-75132-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (A) mRNA abundance (transcripts per million [TPM]) in WT β-cells (left), DESeq2-adjusted p-values from differential expression analysis in Bmal1-/- versus WT β-cells (middle left), fold change in expression in Bmal1-/- versus WT β-cells (middle right), and presence or absence of an annotated BMAL1 binding site near genes of putative ivermectin (IVM) targets (right). (B) Rhythmic expression of P2ry1 gene in synchronized pseudoislets from WT Beta-TC-6 cells as assessed by quantitative real-time PCR (n = 3) (false discovery rate (FDR)-adjusted p-value<0.05). (C) Uniform manifold approximation and projection (UMAP) clustering analysis of single-cell expression values in single human islet cells isolated from type 2 diabetic and healthy subjects highlights distinct transcriptional profiles of β, α, δ, and γ cells marked by high levels of insulin (INS), glucagon (GCG), somatostatin (SST), or pancreatic polypeptide (PPY) mRNA, respectively. P2RY1 expression is enriched in β and δ cells, and grossly excluded from α and γ cells.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/75132/elife-75132-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** (A) Quantitative real-time PCR screening for disruption of P2ry1 gene expression (n = 3–4/genotype) (top). Decreased P2Y1 receptor protein expression by Western blot in WT and Bmal1-/- Beta-TC-6 cells after genetic disruption (bottom). (B) Loss of effect of IVM on gene expression in P2ry1 mutant β-cells identified by RNA-sequencing (n = 4/genotype/condition). Dots represent values that exceed 1.5-fold of the interquartile range. All values represent mean ± SEM. *p<0.05, **p<0.01, ***p<0.001. See Figure 4—figure supplement 2—source data 1 and Figure 4—figure supplement 2—source data 2.
 
 Based upon evidence that IVM targets purinergic receptors (Weng et al., 2008; Priel and Silberberg, 2004; Bowler et al., 2003; Hansen et al., 2008), that the predominant purinergic receptor on β-cells is P2Y1, and that BMAL1 specifically controls P2ry1 amongst the purinergic receptor family in the β-cell (Figure 4A, Figure 4—figure supplement 1A and B), we sought to test the functional role of the P2Y1 receptor in the insulinotropic action of IVM. Pharmacological inhibition of P2Y1 using a subtype-specific inhibitor, the nucleotide analog MRS2179, in the presence of both high glucose and 10 μM IVM resulted in a 52% reduction in insulin secretion by bioluminescence and a reduction in calcium influx to levels similar to those observed during high glucose alone, as assessed by Fura2-AM ratiometric determination of intracellular calcium (Figure 4B and C). In addition to evidence that pharmacological blockade of P2Y1 receptor signaling attenuates IVM activity, we also tested the requirement of P2Y1 receptor signaling following CRISPR-Cas9-mediated knockout of the P2Y1 receptor in both WT and Bmal1-/-β-cells (Figure 4—figure supplement 2A). While IVM enhanced GSIS in WT and Bmal1-/-β-cells 1.6- and 1.8-fold, respectively, IVM did not significantly enhance GSIS in cells lacking the P2Y1 receptor (Figure 4D). Similar to the pharmacological findings with the P2Y1 antagonist MRS2179, these results demonstrate a requirement for P2Y1 in IVM-induced GSIS.
 
@@ -78,74 +106,644 @@ The study of transcriptional rhythms across the 24 hr circadian cycle has previo
 
 ## Materials and methods
 
-## Reagents
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Mus musculus)</td>
+      <td>Bmal1</td>
+      <td>NCBI</td>
+      <td>Gene ID: 11865</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Cry1</td>
+      <td>NCBI</td>
+      <td>Gene ID: 12952</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>Cry2</td>
+      <td>NCBI</td>
+      <td>Gene ID: 12953</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Gene (M. musculus)</td>
+      <td>P2ry1</td>
+      <td>NCBI</td>
+      <td>Gene ID: 18441</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain (M. musculus), strain background (C57BL6J)</td>
+      <td>PdxCre;Bmal1flx/flx</td>
+      <td>PMID:20562852</td>
+      <td>PdxCre;Bmal1flx/flx</td>
+      <td>Pancreas-specific Bmal1 mutant mice</td>
+    </tr>
+    <tr>
+      <td>Strain (M. musculus), strain background (C57BL6J)</td>
+      <td>Cry1-/-;Cry2-/-</td>
+      <td>PMID:10518585</td>
+      <td>Cry1-/-;Cry2-/-</td>
+      <td>Whole-body Cry1 and Cry2 double knockout mice</td>
+    </tr>
+    <tr>
+      <td>Strain (M. musculus), strain background (C57BL6J)</td>
+      <td>C57BL/6-Ins2Akita/J</td>
+      <td>Jackson Laboratory</td>
+      <td>3548</td>
+      <td>Spontaneous mutation in the insulin two gene leads to incorrect folding of the insulin proteinMonogenic mouse model for type 1 diabetes.</td>
+    </tr>
+    <tr>
+      <td>Biological sample (M. musculus)</td>
+      <td>Primary pancreatic islets</td>
+      <td>Northwestern University</td>
+      <td></td>
+      <td>Freshly isolated from mice</td>
+    </tr>
+    <tr>
+      <td>Biological sample (Homo sapiens)</td>
+      <td>Primary pancreatic islets</td>
+      <td>Alberta Diabetes Institute Islet-Core</td>
+      <td>https://www.isletcore.ca (R224, R225, R226)</td>
+      <td>Freshly isolated from nondiabetic donors</td>
+    </tr>
+    <tr>
+      <td>Cell line (H. sapiens)</td>
+      <td>HEK293T</td>
+      <td>ATCC</td>
+      <td>CRL-11268</td>
+      <td>Kidney cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Beta-TC-6</td>
+      <td>ATCC</td>
+      <td>CRL-11506</td>
+      <td>Pancreatic β-cells</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Bmal1-/- Beta-TC-6</td>
+      <td>PMID:21686102</td>
+      <td>Bmal1-/- Beta-TC-6</td>
+      <td>Pancreatic β-cells, mutant for Bmal1</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Insulin-NanoLuc-expressing Beta-TC-6</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Pancreatic β-cells, expressing Proinsulin-NanoLuc luminescent reporter</td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculus)</td>
+      <td>Insulin-NanoLuc-expressing Bmal1-/- Beta-TC-6</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Pancreatic β-cells, mutant for Bmal1, expressing Proinsulin-NanoLuc luminescent reporter</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>P2Y1 CRISPR/Cas9 KO plasmid</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-422095</td>
+      <td>Pool of three plasmids, encoding the Cas9 nuclease and a P2Y1-specific 20 nt guide RNA, targeting exon 1 of the mouse P2ry1 gene</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>P2Y1 HDR plasmid</td>
+      <td>Santa Cruz Biotechnology</td>
+      <td>sc-422095-HDR</td>
+      <td>Pool of 2–3 plasmids, containing puromycin resistance gene and HDR templates, corresponding to the P2Y1 CRISPR/Cas9 KO plasmid cut sites</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Proinsulin-NanoLuc in pLX304 lentivirus packaging plasmid</td>
+      <td>Addgene</td>
+      <td>62057</td>
+      <td>Luminescent reporter of insulin secretion, mouse synthetic Ins2 insert</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV-VSV-G</td>
+      <td>Addgene</td>
+      <td>8454</td>
+      <td>Envelope vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pCMV delta R8.2</td>
+      <td>Addgene</td>
+      <td>12263</td>
+      <td>Packaging vector</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Spectrum Collection</td>
+      <td>MicroSource Discovery Systems, Inc</td>
+      <td></td>
+      <td>Small-molecule compound library, which consists of 2640 known drugs and drug-like molecules</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ivermectin</td>
+      <td>Tocris</td>
+      <td>1260</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>(+)-Bicuculline</td>
+      <td>Tocris</td>
+      <td>130</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MRS2179 tetrasodium salt</td>
+      <td>Tocris</td>
+      <td>900</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isradipine</td>
+      <td>Cayman Chemical Company</td>
+      <td>17536</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Phorbol 12-myristate 13-acetate (PMA)</td>
+      <td>Sigma-Aldrich</td>
+      <td>P1585</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Carbamoylcholine chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>C4382-1G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Forskolin</td>
+      <td>Sigma-Aldrich</td>
+      <td>F3917-10MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>D-Glucose</td>
+      <td>Sigma-Aldrich</td>
+      <td>G7528-250G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Potassium chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>P-5405</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>3-Isobutyl-1-methylxanthine</td>
+      <td>Sigma-Aldrich</td>
+      <td>I7018-250mg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tyrothricin</td>
+      <td>Sigma-Aldrich</td>
+      <td>T3000000</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Alexidine hydrochloride</td>
+      <td>Cayman Chemical Company</td>
+      <td>13876</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Benzalkonium chloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>12060-5G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Suloctidil</td>
+      <td>MicroSource Discovery Systems, Inc</td>
+      <td>01501153</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tomatine</td>
+      <td>MicroSource Discovery Systems, Inc</td>
+      <td>01504079</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Isoetharine mesylate</td>
+      <td>MicroSource Discovery Systems, Inc</td>
+      <td>01505977</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tacrine hydrochloride</td>
+      <td>MicroSource Discovery Systems, Inc</td>
+      <td>02300104</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pipamperone</td>
+      <td>MicroSource Discovery Systems, Inc</td>
+      <td>01505690</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dyclonine hydrochloride</td>
+      <td>MicroSource Discovery Systems, Inc</td>
+      <td>01500268</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Desoxycorticosterone acetate</td>
+      <td>MicroSource Discovery Systems, Inc</td>
+      <td>00300029</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Puromycin dihydrochloride</td>
+      <td>Sigma-Aldrich</td>
+      <td>P8833-25MG</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Collagenase P</td>
+      <td>Sigma-Aldrich</td>
+      <td>C7657-100mg</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Biocoll</td>
+      <td>Millipore</td>
+      <td>L6155</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2-Hydroxypropyl-b-cyclodextrin</td>
+      <td>Sigma-Aldrich</td>
+      <td>H107-5G</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fura-2</td>
+      <td>Invitrogen</td>
+      <td>F1201</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pluronic F-127</td>
+      <td>Invitrogen</td>
+      <td>P3000MP</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Penicillin-streptomycin</td>
+      <td>Gibco</td>
+      <td>15-140-122</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>L-glutamine</td>
+      <td>Gibco</td>
+      <td>25-030-081</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Lipofectamine 3000</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>L3000015</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NanoGlo Luciferase Assay Substrate</td>
+      <td>Promega</td>
+      <td>N1110</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Ultra Sensitive Mouse Insulin ELISA Kit</td>
+      <td>Crystal Chem Inc</td>
+      <td>90080</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Autokit Glucose</td>
+      <td>Wako-Fujifilm</td>
+      <td>997-03001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Direct-zol RNA Microprep kit</td>
+      <td>Zymo Research</td>
+      <td>R2062</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>High Capacity cDNA Reverse Transcription Kit</td>
+      <td>Applied Biosystems</td>
+      <td>4368813</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iTaq Universal SYBR Green Supermix</td>
+      <td>Applied Biosystems</td>
+      <td>1725125</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Ultra Directional RNA Library Prep Kit for Illumina</td>
+      <td>New England Biolabs</td>
+      <td>E7760L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NEBNext Library Quant Kit for Illumina</td>
+      <td>New England Biolabs</td>
+      <td>E7630L</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Quick Start Bradford Protein Assay</td>
+      <td>Bio-Rad</td>
+      <td>500-0116</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>β-actin F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5′-TGCTCTGGCTCCTAGCACCATGAAGATCAA-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>β-actin R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5′-AAACGCAGCTCAGTAACAGTCCGCCTAGAA-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P2ry1 F</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5′-TTATGTCAGCGTGCTGGTGT-3′</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>P2ry1 R</td>
+      <td>This paper</td>
+      <td>PCR primers</td>
+      <td>5′-ACGTGGTGTCATAGCAGGTG-3′</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-P2Y1, mouse monoclonal</td>
+      <td>Santa Cruz</td>
+      <td>sc-377324</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-β-ACTIN, rabbit monoclonal</td>
+      <td>Cell Signaling</td>
+      <td>CST 4970</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>STAR</td>
+      <td>PMID:23104886</td>
+      <td>RRID:SCR_004463</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RSEM</td>
+      <td>PMID:21816040</td>
+      <td>RRID:SCR_013027</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2 package in R</td>
+      <td>PMID:25516281</td>
+      <td>RRID:SCR_015687</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Pheatmap package in R</td>
+      <td></td>
+      <td>RRID:SCR_016418</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>GraphPad</td>
+      <td>RRID:SCR_002798</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>SRA-Toolkit</td>
+      <td>https://trace.ncbi.nlm.nih.gov/Traces/sra/sra.cgi?view=software</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Seurat in package in R</td>
+      <td>PMID:34062119</td>
+      <td>RRID:SCR_007322</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>JTK_Cycle</td>
+      <td>PMID:20876817</td>
+      <td>RRID:SCR_017962</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Dulbecco’s modified Eagle’s medium</td>
+      <td>Gibco</td>
+      <td>90-013-pb</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Fetal bovine serum</td>
+      <td>Bio-Techne</td>
+      <td>S11550</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>RIPA buffer</td>
+      <td>Sigma-Aldrich</td>
+      <td>R0278-50ML</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Tri Reagent</td>
+      <td>Molecular Research Center, Inc</td>
+      <td>NC9277980</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Complete Mini EDTA-Free Protease Inhibitor</td>
+      <td>Roche</td>
+      <td>4693159001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>PhoStop</td>
+      <td>Roche</td>
+      <td>4906837001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Nitrocellulose membranes</td>
+      <td>Bio-Rad</td>
+      <td>1620112</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Reagents
 
 IVM, (+)-bicuculline, and MRS2179 tetrasodium salt were obtained from Tocris (R&D Systems, Inc, Minneapolis, MN). Isradipine and alexidine hydrochloride were purchased from Cayman Chemical Company (Ann Arbor, MI). PMA, carbamoylcholine chloride (carbachol), forskolin, tyrothricin, and benzalkonium chloride were obtained from Sigma-Aldrich (St. Louis, MO). Suloctidil, tomatine, isoetharine mesylate, tacrine hydrochloride, pipamperone, dyclonine hydrochloride, and desoxycorticosterone acetate were purchased from MicroSource Discovery Systems, Inc.
 
-## Animals
+### Animals
 
 Male WT C57BL6J mice and C57BL/6-Ins2Akita/J mice were purchased from the Jackson Laboratory (Bar Harbor, ME). PdxCre;Bmal1flx/flx and Cry1-/-;Cry2-/- mice were produced and maintained on C57BL6J background at the Northwestern University Center for Comparative Medicine (Protocols IS00000466, IS00003253, IS00008732, IS0005838) (Peek et al., 2013; Vitaterna et al., 1999). Unless otherwise stated, animals were maintained on a 12:12 light:dark cycle and allowed free access to water and regular chow. All animal care and use procedures were conducted in accordance with regulation of the Institutional Animal Care and Use Committee at Northwestern University.
 
-## Cell culture
+### Cell culture
 
 Beta-TC-6 cells were obtained from ATCC (Manassas, VA) (CRL-11506), and Bmal1-/- Beta-TC-6 β-cell lines were previously derived as described (Marcheva et al., 2020). Cells were cultured in Dulbecco’s modified Eagle’s medium (DMEM; Gibco, Aramillo, TX) supplemented with 15% fetal bovine serum (Bio-Techne, Minneapolis, MN), 1% penicillin-streptomycin (Gibco), and 1% L-glutamine (Gibco) at 37°C with 5% CO2. Culture medium was exchanged every 2–3 days. All cells used in experiments were at <15 passages. Cells were routinely checked for mycoplasma contamination.
 
-## Generation of WT and Bmal1-/- Beta-TC-6 cells stably expressing insulin-NanoLuc
+### Generation of WT and Bmal1-/- Beta-TC-6 cells stably expressing insulin-NanoLuc
 
 We used the proinsulin-NanoLuc plasmid (David Altshuler, Addgene plasmid #62057, proinsulin-NanoLuc in pLX304) to provide a low-cost, scalable, and rapid method to detect insulin secretion. The gene encoding NanoLuc was cloned into the C-peptide portion of mouse proinsulin such that cleavage within insulin vesicles by pH-sensitive prohormone convertase results in the co-secretion of NanoLuc with endogenous insulin in a stimulus-dependent manner (Burns et al., 2015). The pLX304 lentivirus packaging plasmid containing the proinsulin-NanoLuc construct was transfected into HEK293T (ATCC CRL-11268) cells with pCMV-VSVG (envelope vector, Addgene plasmid #8454) and pCMV delta R8.2 (packaging vector, Addgene plasmid #12263). Supernatant containing lentivirus particles was harvested 48 hr after transfection. Beta-TC-6 and Bmal1-/- Beta-TC-6 cells were infected with insulin-NanoLuc lentivirus, and stably expressing cells were selected by treating with puromycin (2 µg/ml, 2 days).
 
-## CRISPR-mediated P2ry1 deletion in WT and Bmal1-/- Beta-TC-6 cells
+### CRISPR-mediated P2ry1 deletion in WT and Bmal1-/- Beta-TC-6 cells
 
 Exon 1 of the mouse P2yr1 gene was deleted in WT and Bmal1-/- Beta-TC-6 cells by CRISPR-Cas9 and homology-directed repair (HDR). Cells were co-transfected with guide RNA, P2Y1 CRISPR/Cas9 KO, and P2Y1 HDR plasmids (Santa Cruz Biotechnology, Dallas, TX, sc-422095 and sc-422095-HDR) by Lipofectamine 3000 (Thermo Fisher Scientific, Amarillo, TX). The locations of the three sites targeted for ablation by the P2Y1 CRISPR/Cas9 KO plasmids are indicated in Figure 4A. After 48 hr of transfection, stably integrated clones were selected for puromycin resistance (puromycin dihydrochloride, Sigma-Aldrich). RNA and protein were extracted from these colonies, and P2ry1 expression was assessed by qPCR and Western blot.
 
-## High-throughput screen for drugs to restore insulin secretion in Bmal1-/- β-cells and insulin secretion assays
+### High-throughput screen for drugs to restore insulin secretion in Bmal1-/- β-cells and insulin secretion assays
 
 The Spectrum Collection small-molecule compound library (MicroSource Discovery Systems, Inc), which consists of 2640 known drugs and drug-like molecules, was screened for compounds that augment insulin secretion in Bmal1-/- Beta-TC-6 cells. Insulin-NanoLuc-expressing Bmal1-/- Beta-TC-6 cells (40,000 cells/well) were placed into 384-well plates and cultured for 3 days at 37°C and 5% CO2. The cells were washed once and incubated in KRB buffer containing 0 mM glucose for 1 hr. Then, KRB buffer containing 20 mM glucose in addition to the small molecules (10 µM) were added, and the cells were incubated for 1 hr. As a negative control, 16 wells received KRB buffer with only 20 mM glucose, which fails to elicit appropriate insulin secretion in Bmal1-/- cells, and as a positive control, 16 wells received KRB buffer containing 20 mM glucose and 10 μM PMA, which is known to induce insulin secretion in both Bmal1-/- mouse islets and Beta-TC-6 cells (Perelis et al., 2015). After 1 hr, the supernatant was collected and centrifuged at 500 × g for 30 min. The supernatant was transferred into a fresh 384-well assay plate containing NanoGlo Luciferase Assay Substrate (Promega, Madison, WI), and luciferase intensity was measured by EnSpire Plate Reader (PerkinElmer, Waltham, MA) within 30 min. All liquids for the high-throughput screen were dispensed using Tecan Fluent Automated Liquid Handling Platform (Tecan, Mannedorf, Switzerland) at the High-Throughput Analysis Laboratory at Northwestern University. Screen feasibility was determined by calculating Z'-factor using the following formula: Z'-factor = 1–3(σp + σn)/(μp - μn) (where σp is the standard deviation of positive control [20 mM glucose + PMA], σn is the standard deviation of negative control [20 mM glucose only], μp is the mean intensity of positive control, and μn is the mean intensity of the negative control) (Zhang et al., 1999).
 
-## Determination of hit compounds
+### Determination of hit compounds
 
 Z-scores are a measure of how many standard deviations above or below the population mean a raw score is. Z-scores for luciferase intensities produced by screened compounds were calculated from the following formula: z = (X – μ)/σ (where z is the Z-score, X is the luciferase intensity of the compounds, μ is the intensity of negative control [20 mM glucose], and σ is the standard deviation of negative control). A row-based correction factor was applied to all luciferase readings to adjust for logarithmic signal decay. Hit compounds were defined as those that elicited a response of greater than 3 standard deviations from the mean (Z-score > 3) and more than 1.25-fold increase compared to negative control, which is the cutoff for ~10% chance of the observation occurring by random chance. Validated hit compounds that augmented insulin secretion at low drug dose were considered lead compounds.
 
-## Insulin secretion assays in pancreatic islets, pseudoislets, and cell lines
+### Insulin secretion assays in pancreatic islets, pseudoislets, and cell lines
 
 Mouse pancreatic islets were isolated via bile duct collagenase digestion (Collagenase P, Sigma) and Biocoll (Millipore) gradient separation and left to recover overnight at 37°C in RPMI 1640 with 10% FBS, 1% L-glutamine, and 1% penicillin/streptomycin. For insulin release assays, duplicates of five equally sized islets per mouse were statically incubated in Krebs-Ringer Buffer (KRB) at 2 mM glucose for 1 hr and then stimulated for 1 hr at 37°C with 2 mM or 20 mM glucose in the presence or absence of 10 μM of each compound. Supernatant was collected and assayed for insulin content by ELISA (Crystal Chem Inc, Elk Grove Village, IL). Islets were then sonicated in acid-ethanol solution and solubilized overnight at 4°C before assaying total insulin content by ELISA. For insulin release assays from pseudoislets, 3 × 106 cells were plated for 3 days in 60 mm suspension dishes and allowed to form pseudoislets for 2–3 days. Glucose-responsive insulin secretion was performed as described above using 10 pseudoislets per sample and a basal glucose level of 0 mM glucose instead of 2 mM (Marcheva et al., 2020). For secretion from insulin-NanoLuc cell lines, 1 × 105 cells were cultured on poly-L-lysine-coated 96 well plates for 2–3 days, starved for 1 hr in 0 mM glucose KRB, then stimulated with indicated compounds and/or receptor antagonists for 1 hr in conjunction with 0 mM basal glucose or 20 mM stimulatory glucose conditions. Luciferase intensity after addition of NanoGlo to supernatant was measured by Cytation3 Plate Reader (BioTek, Winooski, VT).
 
-## Perifusion of primary islets and pseudoislets
+### Perifusion of primary islets and pseudoislets
 
 Primary islets from PdxCre;Bmal1flx/flx and Bmal1flx/flx mice were isolated as described above and left to recover overnight. Perifusion of 100 islets per mouse per treatment was performed using a Biorep Technologies Perifusion System Model PERI-4.2 with a rate of 100 μl/min KRB (0.1% BSA). After 1 hr of preincubation and equilibration at a rate of 100 μl/min with 2 mM glucose KRB, islets were perifused for 10 min with 2 mM glucose KRB, followed by perifusion for 30 min with 20 mM glucose or 20 mM glucose plus IVM. Perifusate was collected in 96-well plates, and insulin secreted was analyzed via ELISA. Perifusion of insulin-NanoLuc pseudoislets was performed in an identical manner using 0 mM glucose KRB instead of 2 mM glucose KRB. Pseudoislet perifusate was analyzed for NanoLuc activity using NanoGlo Luciferase Assay Substrate (Promega) as per the manual instructions.
 
-## In vivo ivermectin treatment and glucose measurements
+### In vivo ivermectin treatment and glucose measurements
 
 Mice were injected intraperitoneally for 14 days with 1.3 mg/kg body weight of IVM, which was dissolved in 40% w/v 2-hydroxypropyl-β-cyclodextrin (Sigma-Aldrich) (Jin et al., 2013). At the end of IVM treatment, mice were fasted for 14 hr and glucose tolerance tests were performed at ZT2 following intraperitoneal glucose injection at 2 g/kg body weight. Plasma glucose levels were measured by enzymatic assay (Autokit Glucose, Wako-Fujifilm, Cincinnati, OH).
 
-## Synchronization, RNA isolation, and qPCR mRNA quantification
+### Synchronization, RNA isolation, and qPCR mRNA quantification
 
 Where indicated, circadian synchronization was performed using 200 WT pseudoislets by first exposing cells to 10 μM forskolin for 1 hr, followed by transfer to normal media and RNA collection every 4 hr 24–44 hr following forskolin synchronization pulse. RNA was extracted from Beta-TC-6 cells and pseudoislets using Tri Reagent (Molecular Research Center, Inc, Cincinnati, OH) and frozen at −80°C. RNA was purified according to the manufacturer’s protocol using the Direct-zol RNA Microprep kit (Zymo Research, Irvine, CA) with DNase digestion. cDNAs were then synthesized using the High Capacity cDNA Reverse Transcription Kit (Applied Biosystems, Amarillo, TX). Quantitative real-time PCR analysis was performed with SYBR Green Master Mix (Applied Biosystems) and analyzed using a Touch CFX384 Real-Time PCR Detection System (Bio-Rad, Hercules, CA). Target gene expression levels were normalized to β-actin and set relative to control conditions using the comparative CT method. Primer sequences for qPCR are as follows: β-actin forward: 5'-TGCTCTGGCTCCTAGCACCATGAAGATCAA-3', reverse: 5'-AAACGCAGCTCAGTAACAGTCCGCCTAGAA-3'; P2ry1 forward: 5'- TTATGTCAGCGTGCTGGTGT-3', reverse: 5'-ACGTGGTGTCATAGCAGGTG-3'.
 
-## RNA-sequencing and analysis
+### RNA-sequencing and analysis
 
 Following RNA isolation (described above), RNA quality was assessed using a Bioanalyzer (Agilent, Santa Clara, CA), and sequencing libraries were constructed using a NEBNext Ultra Directional RNA Library Prep Kit for Illumina (New England Biolabs, Ipswich, MA, E7420L) according to the manufacturer’s instructions. Libraries were quantified using a NEBNext Library Quant Kit for Illumina (New England Biolabs, E7630L) and sequenced on an Illumina NextSeq 500 instrument using 42 bp paired-end reads. For differential expression analysis, RNA raw sequence reads were aligned to the reference genome (mm10) using STAR version 2.7.2b, and raw and transcripts per million (TPM) count values determined using RSEM version 1.3.3. Differentially expressed RNAs were identified by a false discovery rate (FDR)-adjusted p-value<0.05 and a fold change > 1.5 using DESeq2 version 1.32.0 in R 4.1.0. Heatmaps were generated using the pheatmap package in R. Raw mRNA sequencing data and gene abundance measurements have been deposited in the Gene Expression Omnibus under accession GSE186469.
 
-## Intracellular calcium determination
+### Intracellular calcium determination
 
 Beta-TC-6 cells were plated at a density of 100,000 cells per well in black 96-well plates with clear bottoms and cultured overnight at 37°C and 5% CO2. Cells were then washed with BSA-free KRB buffer with no glucose and loaded with 5 μM Fura-2 (Invitrogen, Amarillo, TX) and 0.04% Pluronic F-127 (Invitrogen) for 30 min at 37°C. Following a wash with BSA-free KRB, Fura-2 intensity was measured after stimulation with either glucose alone or glucose plus the indicated compounds. Cells were alternately excited with 340 nm and 380 nm wavelength light, and the emitted light was detected at 510 nm using a Cytation 3 Cell Imaging Multi-Mode Reader (BioTek) at sequential 30 s intervals. Raw fluorescence data were exported to Microsoft Excel and expressed as the 340/380 ratio for each well.
 
-## Human islet studies and ethics statement
+### Human islet studies and ethics statement
 
 Human islet isolations and human islet cell biology experiments approved by the University of Alberta Human Research Ethics Board (approval identifiers: Pro00013094; Pro00001754) were performed at the Alberta Diabetes Institute Islet-Core according to the methods deposited in the protocols.io repository (Isolation of Human Pancreatic Islets of Langerhans for Research V.3, 2021). Organ donation was coordinated by the appropriate regional organ procurement organization, including obtaining written next-of-kin consent for use of donor organs in this study. Donor organs were deidentified by the organ procurement organization prior to shipment to the Alberta Diabetes Institute Islet-Core, and no identifying donor information was made available to the research team. A total of three nondiabetic (ND) donors were examined in this study. Full details of donor information, organ processing, and quality control information can be assessed with donor number (donors R224, R225, and R226 in this study) at https://www.isletcore.ca.
 
-## Patch-clamp electrophysiology in human and mouse islets
+### Patch-clamp electrophysiology in human and mouse islets
 
 Patch-clamp measurement of exocytic responses in mouse β-cells was performed as previously described (Marcheva et al., 2020). Dispersed human islets were cultured in low glucose (5.5 mM) DMEM media (supplemented with L-glutamine, 110 mg/l sodium pyruvate, 10% FBS, and 100 U/ml penicillin/streptomycin) in 35 mm culture dishes overnight. On the day of patch-clamp measurements, human or mouse islet cells were preincubated in extracellular solution at 1 mM glucose for 1 hr and capacitance was measured at 10 mM glucose with DMSO or 10 µM IVM as previously described (Marcheva et al., 2020). Mouse β-cells were identified by cell size and by half-maximal inactivation of Na+ currents near –90 mV, and human β-cells were identified by immunostaining for positive insulin, following the experiment as described (Fu et al., 2019). Data analysis was performed using GraphPad Prism (v8.0c). Comparison of multiple groups was done by one- or two-way ANOVA, followed by Bonferroni or Tukey’s post test. Data are expressed as means ± SEM, where p<0.05 is considered significant.
 
-## Single-cell RNA-seq analysis
+### Single-cell RNA-seq analysis
 
 Sequencing data from the study under SRA accession ERP017126 (Segerstolpe et al., 2016) were downloaded and converted to fastq files using the commands ‘prefetch’ followed by ‘fastq-dump’ through the sra-toolkit (v2.10.5). Each individual cell was aligned and transcript abundance quantified using RSEM with Hg38 (GRCh38.p12) as a reference. Raw single-cell expression count values were imported into RStudio for analysis using Seurat (Hao et al., 2021). Following low-quality cell removal, normalized expression values were used in uniform manifold approximation and projection (UMAP) dimensional reduction analyses to cluster distinct cell types. The R script, raw count tables, and parameters of these analyses are made publicly available under the Gene Expression Omnibus accession GSE186469.
 
-## Western blotting
+### Western blotting
 
 Beta-TC-6 cells lysates were isolated by treating cell pellets with RIPA buffer (Sigma-Aldrich) supplemented with 1× protease and 1× phosphatase inhibitors (Roche, Basel, Switzerland). Protein levels were quantified using Quick Start Bradford Protein Assay, and protein extracts were subject to SDS-PAGE gel electrophoresis and transferred to nitrocellulose membranes (Bio-Rad). Primary antibodies used were anti-P2Y1 (Santa Cruz, sc-377324) and anti-β-actin (Cell Signaling, Danvers, MA, CST 4970).
 
-## Statistical analysis
+### Statistical analysis
 
 Results were expressed as mean ± SEM unless otherwise noted. Information on sample size, genotype, and p values is provided within each figure and figure legend. Statistical significance of capacitance, Fura2, and perifusion data was performed using a two-way ANOVA or mixed effects model (for datasets with missing values) with repeated measures followed by multiple comparison tests using a Bonferroni p-value adjustment via Prism (v9.2.0). Statistical analysis was performed by unpaired two-tailed Student’s t-test unless otherwise indicated. p<0.05 was considered statistically significant. JTK_Cycle (v3) was used to determine rhythmicity in qPCR data using a period length of 24 hr and considering a Benjamini–Hochberg (BH)-adjusted p-value<0.05 as statistically rhythmic (Hughes et al., 2010).

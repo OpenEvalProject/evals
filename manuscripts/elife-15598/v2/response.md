@@ -24,9 +24,7 @@ Nanosecond timescale conformational changes across the distances observed here (
 
 With this in mind, the rapid relaxation to the lower energy ADP-bound state (with no energy barrier to cross) is unsurprising. This observation is supported by simulation data collected where the system was run with ATP present, which was then ‘hydrolysed’ to ADP. In this case, significant channel closing was not seen within 100 ns of simulation data (data not included), implying the actual speed of conformational changes is slower.
 
-We have set up and run simulations in apo conditions, as per the referee’s suggestion (two repeats, Author response image 1). These show a rapid closing of the LG, but to a lesser degree than for ADP.10.7554/eLife.15598.025Author Response Image 1.DOI: http://dx.doi.org/10.7554/eLife.15598.025
-
-DOI: http://dx.doi.org/10.7554/eLife.15598.025
+We have set up and run simulations in apo conditions, as per the referee’s suggestion (two repeats, Author response image 1). These show a rapid closing of the LG, but to a lesser degree than for ADP.10.7554/eLife.15598.025Author Response Image 1.
 
 This supports the idea that the input structure is not at an energy minimum. However, the exact conformational change is unlikely to have direct physiological relevance: the apo state is transient and would not normally follow the ATP-bound state. As such, we prefer not to include this data in the paper itself.
 

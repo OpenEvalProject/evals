@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.26487.001 Targeting conserved and essential processes is a successful strategy to combat enemies. Remarkably, the clinically important Staphylococcus aureus pathogenicity islands (SaPIs) use this tactic to spread in nature. SaPIs reside passively in the host chromosome, under the control of the SaPI-encoded master repressor, Stl. It has been assumed that SaPI de-repression is effected by specific phage proteins that bind to Stl, initiating the SaPI cycle. Different SaPIs encode different Stl repressors, so each targets a specific phage protein for its de-repression. Broadening this narrow vision, we report here that SaPIs ensure their promiscuous transfer by targeting conserved phage mechanisms. This is accomplished because the SaPI Stl repressors have acquired different domains to interact with unrelated proteins, encoded by different phages, but in all cases performing the same conserved function. This elegant strategy allows intra- and inter-generic SaPI transfer, highlighting these elements as one of nature’s most fascinating subcellular parasites.
+Targeting conserved and essential processes is a successful strategy to combat enemies. Remarkably, the clinically important Staphylococcus aureus pathogenicity islands (SaPIs) use this tactic to spread in nature. SaPIs reside passively in the host chromosome, under the control of the SaPI-encoded master repressor, Stl. It has been assumed that SaPI de-repression is effected by specific phage proteins that bind to Stl, initiating the SaPI cycle. Different SaPIs encode different Stl repressors, so each targets a specific phage protein for its de-repression. Broadening this narrow vision, we report here that SaPIs ensure their promiscuous transfer by targeting conserved phage mechanisms. This is accomplished because the SaPI Stl repressors have acquired different domains to interact with unrelated proteins, encoded by different phages, but in all cases performing the same conserved function. This elegant strategy allows intra- and inter-generic SaPI transfer, highlighting these elements as one of nature’s most fascinating subcellular parasites.
 
 ## Introduction
 
@@ -40,25 +40,49 @@ Here we set out to answer all these questions and have demonstrated that it is m
 
 ## Results
 
-## The SaPIbov1 Stl repressor interacts with the ϕO11 dimeric Dut protein
+### The SaPIbov1 Stl repressor interacts with the ϕO11 dimeric Dut protein
 
 What is the mechanism by which the SaPIbov1 repressor interacts with apparently unrelated proteins? Obviously, and since the trimeric and dimeric Duts perform the same biological function, the most likely scenario would be the existence of a conserved domain in the phage-encoded proteins that would be recognised by the SaPIbov1 coded Stl repressor. The structure of the phage 80α and ϕ11 coded Duts has recently been solved (Leveles et al., 2013; Tormo-Más et al., 2013). Moreover, in-depth structural, genetic and biochemical studies have demonstrated that the trimeric Dut domains IV, V and VI are involved in SaPIbov1 Stl recognition (Maiques et al., 2016; Tormo-Más et al., 2010, 2013). To know whether similar domains are present in the dimeric Duts, we initially addressed the following question: does the SaPIbov1 Stl interact just with the ϕNM1 dimeric Dut or can it interact with other phage coded dimeric Duts? To solve this question, we analysed the ϕO11 dimeric Dut. As occurred with the trimeric Duts (Tormo-Más et al., 2010), the dimeric ϕNM1 and ϕO11 Duts are basically identical except in a divergent central region (Figure 1—figure supplement 1). Interestingly, the ϕO11 dimeric Dut also induces the SaPIbov1 and SaPIbov5 cycles (Figure 1A). Note that SaPIbov5 was also included in these studies because it encodes the same Stl repressor as SaPIbov1, with both islands being induced by the same helper phages (Carpena et al., 2016; Viana et al., 2010). Expression of the ϕO11 dimeric Dut (from the Pcad promoter in expression vector pCN51) in a SaPIbov1 or SaPIbov5 positive strain demonstrated that this protein is sufficient to induce the SaPI cycles. Thus, when overexpressed, the cloned ϕO11 dimeric dut induced SaPIbov1 and SaPIbov5 excision and replication (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/26487/elife-26487-fig1-v2.jpg)
+
+**Figure 1.:** (A) SaPIbov1 and SaPIbov5 excision and replication following induction of the cloned ϕO11 dut gene. Strains JP6774 and JP11634, containing SaPIbov1 and SaPIbov5 respectively, were complemented with a plasmid expressing the 3xFLAG-tagged ϕO11 dimeric Dut. Samples were isolated at 0’ or 3 hr after induction with 0.5 μM CdCl2 and Southern blots were performed using a probe for the SaPIbov1/SaPIbov5 integrase. The upper band is ‘bulk’ DNA, including chromosomal, phage, and replicating SaPI. CCC indicates covalently closed circular SaPI DNA. In these experiments, as no helper phage was present, the excised and replicating SaPI DNA appears as part of the bulk DNA or as CCC molecules, rather than the linear monomers that are seen following helper phage-mediated induction and packaging. (B) Derepression of str transcription by ϕO11 Dut expression. The diagram represents a schematic of a blaZ transcriptional fusion generated in pJP674. β-lactamase assays were performed on strains containing pJP674 together with a pCN51-derived plasmid expressing the ϕO11 Dut (JP14818) or the empty pCN51 control (JP15105). Samples were taken after 5 hr in the absence or following induction with 5 μM Cadmium. All data is the result of five independent experiments. Error bars represent SEM. A 2-way ANOVA with Sidak's multiple comparisons test was performed to compare mean differences within rows. Adjusted p values were as follows: ϕO11 = 0.0004***, pCN51 = 0.9579ns. ns, not significant. (C) Affinity chromatography of the ϕO11 Dut for the His-tagged SaPIbov1 Stl. Strains were induced with 10 mM isopropyl-β-d-thiogalactoside (IPTG) and samples taken at 3 hr. Cells were disrupted and expressing proteins were applied to a Ni2+ column and eluted. Lane 2, elution fraction for His6-StlSaPIbov1 and DutΦO11 (JP14832). Lane 1, corresponding elution fraction for StlSaPIbov1 and DutΦO11 (JP14833, no His6-tag). Proteins were confirmed by Mass Spectrometry analysis.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/26487/elife-26487-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Colours indicate relative sequence conservation at each position, with red being most conserved and violet being least (adapted from alignment generated by PRALINE).
+
 In all 3 characterised SaPIs (SaPI1, SaPIbov1 and SaPIbov2), Stl blocks SaPI induction by binding to the SaPI stl-str divergent region, blocking transcription of most of the SaPI genes. SaPI de-repression occurs after a direct protein-protein interaction between the cognate phage inducer and the SaPI coded Stl repressor (Tormo-Más et al., 2010). To test if the mechanism involving the ϕO11 dimeric Dut in SaPIbov1 induction matches with that previously reported for the other SaPIs, we first demonstrated that ϕO11 Dut induces xis expression, which normally is repressed by Stl. This was confirmed using plasmid pJP674, which carries a β-lactamase reporter gene fused to xis, downstream of str and the StlSaPIbov1-repressed str promoter, and also encodes StlSaPIbov1 (see Figure 1B). The cloned ϕO11 dut gene was introduced on vector pCN51 and expression was tested in the presence or absence of an inducing concentration of CdCl2. Induction of ϕO11 dut strongly increased β-lactamase expression from the str promoter (Figure 1B). Moreover, the predicted protein–protein interaction between the ϕO11 Dut and the StlSaPIbov1 repressor was confirmed by co-expression and affinity purification of His6-StlSaPIbov1 and untagged ϕO11 Dut proteins. It was possible to co-purify a complex between His6-StlSaPIbov1 and ϕO11 Dut (Figure 1C). The identity of each of these bands was confirmed by amino acid sequencing and mass spectrometry. We conclude from these results that dimeric ϕO11 Dut induces the SaPI cycle using the same mechanism described for the unrelated trimeric Dut proteins. Moreover, and although this is not the scope of this study, these results also involve the dimeric Duts in SaPI signalling.
 
-## The SaPIbov1 Stl repressor has different interacting domains
+### The SaPIbov1 Stl repressor has different interacting domains
 
 It is predicted that dimeric and trimeric Duts acquire a completely unrelated fold (Penadés et al., 2013). However, since both dimeric and trimeric Duts perform the same enzymatic activity, we hypothesised that these proteins could have conserved domains responsible for the interaction with Stl. To test this hypothesis, and since the structure of the staphylococcal phage-encoded dimeric Duts remains unsolved, the structure of the dimeric ϕO11 Dut in complex with the nonhydrolyzable dUTP analog α,β-imido-dUTP (dUPNPP) and Mg2+ was determined at 2.1 Å resolution (Supplementary file 1). The crystal structure showed 2 molecules in the asymmetric unit organized as a homodimer (Figure 2). The structure shows that ϕO11 is an all-helix protein composed of only seven α-helices (α1, residues 7–23; α2, 29–47; α3 61–82; α4, 86–98; α5, 104–108; α6, 110–121 and α7, 127–141) per protomer. Interestingly, the ϕO11 dimeric Dut has a ‘compact’ conformation compared to counterparts in other organisms (which encompass ten or more α-helices) (Figure 2 and Figure 2—figure supplement 1). Nevertheless, the ϕO11 protomer presents the characteristic structural core of dimeric Duts composed of four helices (α1-α3 and α7 in ϕO11) that conforms the active centre where the nucleotide binds (Figure 2). In the ϕO11 dimer both active centres are oriented towards the same molecule face, forming a long channel that accommodates two molecules of dUPNPP. The rest of the protomer is placed on the opposite molecule face (residues 83–138), which corresponds to the divergent region in phage-encoded dimeric Duts but also adopts a helical fold (helices α4-α6 in ϕO11) (Figure 2 and Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/26487/elife-26487-fig2-v2.jpg)
+
+**Figure 2.:** (A) Cartoon representation the ϕO11 Dut dimer (protomer in blue and yellow). The secondary structural elements are numbered. A molecule of dUMPPNP and two Mg ions represented in stick and sphere, respectively, occupy the active centre of each protomer. Two orthogonal views of the dimer are shown. (B) Close view of ϕO11 Dut active centre. The substrate dUPNPP is represented in stick with carbon atoms in magenta. The residues interacting with the substrate are labelled and represented in stick with carbon atoms coloured according to the protomer to which they correspond. Nitrogen, oxygen, phosphorus atoms are coloured in dark blue, red and orange, respectively. The Mg ions are represented as green spheres.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/26487/elife-26487-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Cartoon representation of protomers from ϕO11 and Leishmania major (PDB2YAY) dimeric Duts. The four helices defining the conserved structural core that generate the nucleotide-binding site in these dimeric Duts are coloured in magenta and the corresponding secondary structural elements are labelled in ϕO11. The variable regions in the dimeric Duts are coloured in green. The nucleotides bound in the active centres are represented in sticks. (B) Two orthogonal views of the superimposed ϕO11 (blue) and L. major (yellow) protomers showing the similar spatial disposition of the conserved structural core. (C) Two orthogonal views of the ϕO11 dimer (one protomer in cartoon and the other in surface) showing that the conserved structural core (coloured in magenta) is oriented in the same face of the molecule forming the active centres where two molecules of nucleotide are accommodated (shown in stick representation). The opposite face of the molecule is occupied by the variable protein regions (coloured in green).
 
 Since in the trimeric Duts the motifs IV, V and VI are essential for interaction with the Stl repressor (Maiques et al., 2016; Tormo-Más et al., 2013), we looked for the presence of structural elements with similar topology in the dimeric Dut. As could be anticipated by the difference in folding between the trimeric (all-beta) and dimeric (all-alpha) proteins, none of these motifs are present in the ϕO11 Dut (Figures 2 and 3). In the trimeric Duts, these three motifs place together surrounding the nucleotide in the active centre (Figure 3), thus we wondered whether the Stl recognition site was generated spatially by the disposition of specific residues provided by these three motifs rather than by the motifs themselves. To check this possibility we spatially compared the active sites of both types of Duts by superimposing the nucleotide-binding sites of the trimeric 80α and dimeric ϕO11 phagic Duts (Figure 3). As was previously observed in the comparison of the active centres from other dimeric and trimeric Duts (Harkiolaki et al., 2004), the way of dUTP recognition and binding is completely different in both Dut types, not only in the orientation of the plane of the uracil moiety, which showed a relative rotation of more than 75°, but also in the disposition of the phosphates. In trimeric Duts, the α-phosphates acquire a gauche catalytic-competent geometry (Kovári et al., 2008) meanwhile a trans conformation is observed in the dimeric ϕO11 Dut (Figure 3). Furthermore, the β and γ phosphates differ in their relative disposition, chelating a single divalent metal in the trimerics, versus two in the dimerics (Hemsworth et al., 2013) (Figures 2 and 3). Therefore, the active centres in both types of enzymes show divergent architecture and, consequently, the spatial disposition of the residues surrounding the nucleotides, including those provided by motif IV, V and VI, is completely different. Taken together, these results strongly suggest that the SaPIbov1 Stl repressor has different interacting domains/ways to recognise the unrelated trimeric and dimeric Duts.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/26487/elife-26487-fig3-v2.jpg)
 
-**Figure 3.:** S. aureus phagic Duts present completely different folding.(A) Cartoon representation of ϕO11 dimeric Dut (protomers coloured in blue and yellow) and 80α trimeric Dut (PDB 3ZEZ; protomers coloured in blue, yellow and pink) showing the difference in folding between dimeric (all-alpha) and trimeric (all-beta) Duts. The dUPNPP molecules in the active centres are represented in stick and the Mg ions as spheres. For clarity only one dUPNPP molecule is shown in the trimeric structure. The structural motifs implicated in Stl recognition for trimeric Duts (Maiques et al., 2016; Tormo-Más et al., 2013) are labelled and coloured in cyan, magenta and red for motif IV, V and VI, respectively. (B) Superimposition of dUPNPP molecules in the active centres of ϕO11 (green tones) and 80α (orange tones) shows that the bound nucleotide molecules acquire different conformations (stick representation), including the disposition of the Mg ions (sphere representation), and that the spatial arrangement of the structural elements conforming each active centre is essentially different. No structural element equivalent to the Stl binding motifs of 80α (coloured as in A) is observed in ϕO11.
+**Figure 3.:** (A) Cartoon representation of ϕO11 dimeric Dut (protomers coloured in blue and yellow) and 80α trimeric Dut (PDB 3ZEZ; protomers coloured in blue, yellow and pink) showing the difference in folding between dimeric (all-alpha) and trimeric (all-beta) Duts. The dUPNPP molecules in the active centres are represented in stick and the Mg ions as spheres. For clarity only one dUPNPP molecule is shown in the trimeric structure. The structural motifs implicated in Stl recognition for trimeric Duts (Maiques et al., 2016; Tormo-Más et al., 2013) are labelled and coloured in cyan, magenta and red for motif IV, V and VI, respectively. (B) Superimposition of dUPNPP molecules in the active centres of ϕO11 (green tones) and 80α (orange tones) shows that the bound nucleotide molecules acquire different conformations (stick representation), including the disposition of the Mg ions (sphere representation), and that the spatial arrangement of the structural elements conforming each active centre is essentially different. No structural element equivalent to the Stl binding motifs of 80α (coloured as in A) is observed in ϕO11.
 
 To go further with these analyses, we generated a set of deletional mutants in the SaPIbov1 Stl repressor, with the idea that some of these mutants would specifically affect the interaction of the SaPIbov1 Stl repressor with one of the Dut types under study, but not with the other. Sequence analysis and in silico modelling indicates that SaPIbov1 Stl is mainly an α-helical protein composed of a N-terminal HTH DNA-binding domain (residues 1–80) and C-terminal portion of unknown function that seems to be conformed of two domains connected by a region of low complexity (residues 167–179) (Figure 4—figure supplement 1 and Supplementary file 2; [Nyíri et al., 2015]). Thus, we generated Stl deletional variants lacking the N-terminal DNA binding domain (residues 1–86; StlΔHTH) or the most C-terminal subdomain (residues 176–267; StlΔCter) (Figure 4—figure supplement 1). Unfortunately, these mutants couldn’t be analysed in vivo, since the generated Stl mutant repressors had lost the capacity to block the SaPI cycle. To solve that problem, we expressed the different Stl mutants in E. coli, and analysed in vitro their capacity to interact with the different Duts. Interestingly, deletion of the N-terminal DNA-binding domain abolished the interaction with the trimeric ϕ11 but not with the dimeric ϕO11 Dut. Conversely, the elimination of the C-terminal subdomain impairs the binding to the dimeric but not to the trimeric Dut (Figure 4A). Moreover, it has been shown the interaction with the Stl repressor inhibits the dUTPase activity of both dimeric and trimeric Duts (Hill and Dokland, 2016; Szabó et al., 2014). Here we have confirmed this inhibitory activity for the ϕ11 and ϕO11 Duts with the full-length Stl protein (Figure 4B). Furthermore, and in agreement with the binding capacity shown by the Stl deletional variants, StlΔHTH inhibits the dUTPase activity of dimeric but not trimeric Duts, while StlΔCter has the opposite capacity (Figure 4B). The fact that the SaPIbov1 Stl has particular regions for interacting with the trimeric and dimeric Duts supports the idea that the SaPIbov1 Stl repressor has evolved distinct ways to specifically interact with the dimeric or trimeric Duts.
 
-## The phage 80α encoded Sak recombinase is the inducer for SaPI2
+![Figure 4.](https://cdn.elifesciences.org/articles/26487/elife-26487-fig4-v2.jpg)
+
+**Figure 4.:** (A) Native gel mobility shift assays were used to test the binding capacity of ϕO11 dimeric and ϕ11 trimeric Duts with full-length and truncated versions of Stl. The appearance of bands with alternated migration with respect to the individual proteins (labelled by asterisk) indicates formation of a complex. (B) dUTPase activity for ϕO11 and ϕ11 was measured by malachite green assay in the presence and the absence of Stl variants. The reaction time-course is represented as the development of green colour (measured at 630 nm). Results are representative of three independent experiments.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/26487/elife-26487-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Cartoon representation of SaPIbov1 Stl models produced by Phyre2 and I-Tasser servers. Both servers predict models with high α helical content that can be divided in to a N-terminal HTH domain (pink) and a C-terminal portion (light and dark blue) separated by a region of low complexity (magenta) as is predicted by the Metadisorder server. (B) Based on these predictions, two deletional Stl constructs were designed: StlΔHTH, lacking the N-terminal HTH domain, and StlΔCter lacking the C-terminal portion after the predicted disorder region.
+
+### The phage 80α encoded Sak recombinase is the inducer for SaPI2
 
 We next addressed the question of whether the previous phenomenon was exclusive to SaPIbov1. To do that, we initially tried to identify the phage 80α inducer for SaPI2, a SaPI frequently responsible for the clinically relevant menstrual toxic shock syndrome (TSS; Subedi et al., 2007). Since SaPIs severely interfere with helper phage reproduction, a classical strategy used to identify non-essential SaPI inducers is to generate spontaneous phage mutants that are able to form plaques in the presence of the SaPIs. This strategy selects for phage mutants that have lost the ability to mobilise the islands because of mutations they carry in the SaPI inducer genes. These mutations usually generate non-functional proteins that have also lost their capacity to relieve Stl-mediated repression (Frígols et al., 2015; Tormo-Más et al., 2010). After many attempts, we obtained only a single spontaneous 80α phage mutant which was able to form plaques on S. aureus strain RN4220 containing SaPI2, suggesting that the SaPI2 inducer is absolutely essential for the phage cycle even in laboratory conditions. In this mutant the 3’ region of the 80α ORF16 has been lost. Translation of this mutated gene generates a chimeric protein fused with the single strand binding protein (Ssb; 80α ORF17; Figure 5—figure supplement 1). Since in this mutant phage the ssb gene (including its ribosomal binding site) is unaffected and can be transcribed and translated independently of the chimeric structure, this result suggests that ORF16 is the SaPI2 inducer.
 
@@ -66,17 +90,37 @@ The 80α ORF16 protein belongs to the Sak family of single strand annealing prot
 
 Expression of the 80α sak (ORF16) gene (from the Pcad promoter in expression vector pCN51) in a SaPI2 positive strain demonstrated that Sak is sufficient to induce this SaPI. Thus, when overexpressed, the cloned sak (but not the chimeric Sak-Ssb protein) induced SaPI2 excision and replication (Figure 5). As the protein levels produced from these constructs are comparable (Figure 5), this result clearly shows that although expressed, the chimeric protein has lost its capacity to induce SaPI2. Moreover, and to confirm that the mechanism involving Sak in SaPI2 induction matches with that previously reported for the other SaPIs, we demonstrated that 80α Sak induces expression of the SaPI2 Stl repressed genes. This was confirmed using plasmid pJP1977, which carries a β-lactamase reporter gene fused to xis, downstream of str and the StlSaPI2-repressed str promoter, and also encodes StlSaPI2 (see Figure 6A). The cloned sak gene was introduced on vector pCN51 and expression was tested in the presence or absence of an inducing concentration of CdCl2. Induction of sak, but not the chimeric sak-ssb, strongly increased β-lactamase expression from the str promoter (Figure 6A). Moreover, the predicted protein–protein interaction between Sak and the StlSaPI2 repressor was confirmed by co-expression and affinity purification of His6-StlSaPI2 and untagged Sak proteins. It was possible to co-purify a complex between His6-StlSaPI2 and Sak (Figure 6B), whereas untagged Sak alone did not bind to the resin. The chimeric Sak-Ssb, which does not derepress SaPI2 (Figure 6A), did not co-purify with His6-StlSaPI2, confirming the specificity of the His6-StlSaPI2::Sak interaction. The identity of each of these bands was confirmed by amino acid sequencing and mass spectrometry.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/26487/elife-26487-fig5-v2.jpg)
+
+**Figure 5.:** A non-lysogenic derivative of strain RN4220 Δspa carrying SaPI2 was complemented with plasmids expressing different 3xFLAG-tagged SSAP proteins. One millilitre of each culture (optical density (OD)540nm=0.3) was collected 3 hr after treatment with 5 μM CdCl2 and used to prepare standard mini-lysates, which were resolved on a 0.7% agarose gel, Southern blotted and probed for SaPI2 DNA. The upper band is ‘bulk’ DNA, including chromosomal, phage, and replicating SaPI. CCC indicates covalently closed circular SaPI2 DNA. In these experiments, as no helper phage was present, the excised and replicating SaPI DNA appears as part of the bulk DNA or as CCC molecules, rather than the linear monomers that are seen following helper phage-mediated induction and packaging. The lower panel is a western blot probed with antibody to the FLAG-tag carried by the SSAP proteins. sak: 80α ORF16; sak4: ϕ52A ORF16; erf: ϕSLT ORF17; redβ: ϕN315 ORF SA1794; chi: chimeric 80α sak-ssb; pCN51: empty vector.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/26487/elife-26487-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Top: sequence of the ORF16 coded protein. The C-terminal part of the protein that is lost in the chimeric protein is highlighted in bold. Middle: Sequence of the Ssb (ORF17) protein. Bottom: Sequence of the chimeric protein. In red is shown the novel sequence generated as a consequence of the mutation, that serves to link the ORF16 and ORF17 encoded proteins.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/26487/elife-26487-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** The 5’ regions of phages 80α (NC_009526), ϕ80 (DQ908929), ϕ52A (AY954965), ϕSLT (AB045978) and ϕN315 (NC_004740) are shown. Yellow: integrase (int); black: regulatory module; blue: ssap genes; red: ssb genes; grey: other genes.
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/26487/elife-26487-fig5-figsupp3-v2.jpg)
+
+**Figure 5—figure supplement 3.:** Colours indicate relative sequence conservation at each position, with red being most conserved and violet being least (adapted from alignment generated by PRALINE).
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/26487/elife-26487-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Colours indicate relative sequence conservation at each position, with red being most conserved and violet being least (adapted from alignment generated by PRALINE).
+
 ![Figure 6.](https://cdn.elifesciences.org/articles/26487/elife-26487-fig6-v2.jpg)
 
-**Figure 6.:** (A) Derepression of str transcription by ssap expression. Top, schematic representation of the blaZ transcriptional fusion generated in plasmid pJP1977. Bottom, strains containing pJP1977- and pCN51-derivative plasmids expressing the different SSAPs under study were assayed for β-lactamase activity in the absence of or 3 hr after induction with 5 μM CdCl2. Samples were normalized for total cell mass. Experiment data is in triplicate. Error bars represent SEM. A 2-way ANOVA with Sidak's multiple comparisons test was performed to compare mean differences within rows. Adjusted p values were as follows: Sak = 0.0001***, Sak4 = 0.0001***, Erf = 0.0001***, Redβ=0.0001***, chimera = 0.999ns. ns, not significant. (B) Affinity chromatography of 80α Sak (ORF16) using His6–StlSaPI2. E. coli strain expressing the pair was isopropyl-β-D-thiogalactoside (IPTG)-induced and, after disruption of the cells, the expressed proteins were applied to a Ni2+ agarose column and eluted. The presence of the different proteins was monitored in the elute fraction (E) by Coomassie staining. M: molecular weight marker. (C) Bacterial adenylate cyclase-based two-hybrid (BACTH) analysis. Spots in each row represent three independent colonies. Plasmid combinations are indicated in the right columns. Bottom, quantification of the BACTH analysis after 2 hr of IPTG (5 mM) induction. Experiment data is in triplicate. Error bars represent SEM. A 1-way ANOVA with Sidak's multiple comparisons test was performed to compare mean differences within rows. Adjusted p values were as follows; Sak = 0.0221*, Sak4 = 0.0030**, Erf = 0.0158*, Redβ=0.0014**, chimera (Chim) = 0.1980ns. ns, not significant.10.7554/eLife.26487.017Figure 6—source data 1.10.7554/eLife.26487.018Figure 6—source data 2.
+**Figure 6.:** (A) Derepression of str transcription by ssap expression. Top, schematic representation of the blaZ transcriptional fusion generated in plasmid pJP1977. Bottom, strains containing pJP1977- and pCN51-derivative plasmids expressing the different SSAPs under study were assayed for β-lactamase activity in the absence of or 3 hr after induction with 5 μM CdCl2. Samples were normalized for total cell mass. Experiment data is in triplicate. Error bars represent SEM. A 2-way ANOVA with Sidak's multiple comparisons test was performed to compare mean differences within rows. Adjusted p values were as follows: Sak = 0.0001***, Sak4 = 0.0001***, Erf = 0.0001***, Redβ=0.0001***, chimera = 0.999ns. ns, not significant. (B) Affinity chromatography of 80α Sak (ORF16) using His6–StlSaPI2. E. coli strain expressing the pair was isopropyl-β-D-thiogalactoside (IPTG)-induced and, after disruption of the cells, the expressed proteins were applied to a Ni2+ agarose column and eluted. The presence of the different proteins was monitored in the elute fraction (E) by Coomassie staining. M: molecular weight marker. (C) Bacterial adenylate cyclase-based two-hybrid (BACTH) analysis. Spots in each row represent three independent colonies. Plasmid combinations are indicated in the right columns. Bottom, quantification of the BACTH analysis after 2 hr of IPTG (5 mM) induction. Experiment data is in triplicate. Error bars represent SEM. A 1-way ANOVA with Sidak's multiple comparisons test was performed to compare mean differences within rows. Adjusted p values were as follows; Sak = 0.0221*, Sak4 = 0.0030**, Erf = 0.0158*, Redβ=0.0014**, chimera (Chim) = 0.1980ns. ns, not significant.
 
-## The Sak4 recombinase also induces SaPI2
+### The Sak4 recombinase also induces SaPI2
 
 Next, and based on the fact that both dimeric and trimeric Duts induce SaPIbov1, we explored the possibility that the SaPI2 Stl repressor could also target different phage proteins, significantly increasing the capacity of SaPI2 to be induced and transferred. Interestingly, phages ϕ80 and ϕ52A can also induce the SaPI2 cycle (Ram et al., 2014), although none of them encodes a 80α Sak protein. To test the possibility that SaPI2 was targeting another protein, we tried to identify the SaPI2 inducer in phages ϕ80 and ϕ52A by generating spontaneous phage mutants that can grow in the presence of the island. After many attempts, we did not get any phage mutants capable of forming plaques in a SaPI2 positive strain, suggesting that the SaPI2 inducers are also essential for the biology of these phages, even in laboratory conditions. In view of this result, and bearing in mind that both the dimeric and trimeric Duts have the same biological (enzymatic) function for the phage, we hypothesised that the ϕ80 or ϕ52A SaPI2 inducers would be functionally related to the 80α Sak protein. Since the S. aureus phages display synteny, we speculated that the genes located in the same genome position as the 80α sak gene would be essential for the phage, would have a recombinase function, and would encode for the SaPI2 inducer. While phages ϕ80 and ϕ52A do not contain an orf homologue to 80α sak, all three phages encode identifiable ssb genes, which in the case of the 80α phage is located downstream of the sak gene (Figure 5—figure supplement 2). Thus, we analysed the possibility that the genes upstream of ssb were the SaPI2 inducers. Both ϕ80 and ϕ52A phages carried an identical gene, named ORF13 in phage ϕ80 and ORF16 in phage ϕ52A, which encodes a non-related protein to the 80α Sak (Figure 5—figure supplement 3). This protein belongs to a distinct family of SSAPs, Sak4 (Lopes et al., 2010). While Sak4 and Sak are not homologous in sequence (Figure 5—figure supplement 3), we have recently demonstrated that they are both SSAPs (recombinases) performing a similar function in their cognate phages (Neamah et al., 2017).
 
 The results above support the hypothesis proposing that unrelated proteins performing the same function for the phages could all act as inducers for a specific SaPI. Thus, expression of the ϕ80 and ϕ52A Sak4 proteins in a SaPI2 positive strain demonstrated that they are sufficient to induce the SaPI2 cycle (Figure 5). Moreover, expression of the sak4 genes strongly increased β-lactamase expression from the Stl-repressed str promoter (Figure 6A). Since expression of the ϕ52A Sak4 protein in E. coli generated an insoluble protein which aggregates, we couldn’t co-purify a complex between His6-StlSaPI2 and untagged ϕ52A Sak4. However, a two-hybrid assay confirmed the strong interaction between both the ϕ52A Sak4 recombinase and the SaPI2 Stl repressor and between the 80α Sak protein and the SaPI2 Stl pair (used here as a control; Figure 6C), confirming that the phage Sak4 protein is a bona fide SaPI2 inducer.
 
-## Unrelated phage-encoded recombinases induce SaPI2
+### Unrelated phage-encoded recombinases induce SaPI2
 
 Since SaPI2 superimposes a high cost for the phage, it could be possible that staphylococcal phages would initially avoid this interference by encoding additional SSAPs, unrelated to Sak or Sak4. In turn, and if the hypothesis we propose here is correct, it could also be possible that the SaPI repressor would evolve to target these new phage encoded recombinase proteins. In silico scrutiny looking at the genes located upstream of the ssb genes revealed that staphylococcal phages encode at least 4 distant SSAP families, including Erf, Redβ, and the aforementioned Sak and Sak4 (Supplementary file 3). All the staphylococcal phages encode one SSAP, in accordance with the fact that these proteins are essential for the phage (Neamah et al., 2017). To test the possibility that these other unrelated recombinases also induced SaPI2, we characterised in detail those present in phages ϕSLT (ORF 17) and ϕN315 (SA1794), which belong to the Erf and Redβ families of SSAPs, respectively, and have completely different sequences (Figure 5—figure supplement 4). We selected phage ϕSLT because it is clinically relevant, encoding the Panton-Valentine leukocidin (PVL) toxin. Applying the same methodology and strategies previously used to characterise Sak and Sak4, our results confirm that: (i) the expression of the ϕSLT Erf and ϕN315 Redβ proteins is sufficient to induce the SaPI2 cycle (Figure 5); (ii) expression of these recombinases prevents Stl from binding to the SaPI2 stl-str divergent region (Figure 6A) and (iii) the two-hybrid assay confirmed the interaction between the SaPI2 Stl repressor and the Erf and Redβ recombinases (Figure 6C).
 
@@ -86,17 +130,145 @@ Finally, since the existence of different interacting domains in the Stl repress
 
 **Figure 7.:** Cartoon representation of 3D structures of 80α, ϕSLT, ϕ52A and ϕN315 phage recombinases generated by I-Tasser and Phyre2. Alpha helices, beta strands and loops are coloured in cyan, magenta and orange, respectively. The experimental structures of RecA from E. coli (PDB 2REC) proposed as structural homolog of the ϕ52A recombinase, and the human Rad52 recombinases (1H2I) proposed as structural homolog of 80α, ϕSLT, and ϕN315 recombinases are also presented for folding comparison.
 
-## Pirating conserved phage processes supports inter-specific SaPI transfer
+### Pirating conserved phage processes supports inter-specific SaPI transfer
 
 Both we and others have previously demonstrated that the SaPIs can be inter- and intra-generically transferred (Chen and Novick, 2009; Chen et al., 2015; Maiques et al., 2007). Although this process occurs at astonishingly high frequencies in the lab, its impact in nature remains unsolved. The fact that the mechanisms involved in the life cycle of the phages are conserved among species raised an interesting possibility: by targeting conserved phage processes SaPI-like elements would be successfully spread and maintained in nature. To test this hypothesis, we searched for SaPIbov1 and SaPI2 Stl homologs in the database. Different SaPIbov1 Stl homologs were identified in PICI elements present in S. aureus, Staphylococcus hominis, Staphylococcus haemolyticus, Staphylococcus lugdunensis, Staphylococcus saprophyticus and Staphylococcus simulans. SaPI2 Stl homologs were also identified in many different Staphylococci, including Staphylococcus argenteus, Staphylococcus caprae, S. lugdunensis, Staphylococcus epidermidis, S. haemolyticus, S. simulans, Staphylococcus xylosus and Staphylococcus capitis, as well as in PICI from other Gram-positive bacteria, including Bacillus decisifrondis or Streptococcus pyogenes. Supplementary files 5A and B delineate characteristics of the different PICI elements and the identity among the different Stl repressors encoded by the Staphylococci PICIs, respectively. Of note is the fact that some islands, present in different species, encode identical Stl repressors, suggesting inter-species transfer. This was the case for SaPIbov1 (S. aureus) and SlCIVISLISI_25 (S. lugdunensis), both encoding the SaPIbov1 repressor, and SaPI2 (S. aureus), SarCISJTUF21285 (S. argenteus), ScCIM23864:W1 (S. caprae) and SlCIFDAARGOS_141 (S. lugdunensis), all encoding the SaPI2 Stl.
 
 To test if these Stl repressors interact with the SaPIbov1 or SaPI2 inducers, we used the aforementioned strategy to generate a set of plasmids in which the divergent str/str-xis region of the PICIs was fused to a β-lactamase reporter gene. These derivatives were generated for the PICIs encoding the most distantly related Stl repressors: ShoCI794_SEPI (S. hominis) and ShaCI51-48 (S. haemolyticus), encoding a SaPIbov1 Stl homolog, and ShaCI137133 (S. haemolyticus), SeCINIHLM095 (S. epidermidis) and SsCIUMC-CNS-990 (S. simulans) carrying a SaPI2 Stl homolog. Next, the capacity of the dimeric ϕO11 or trimeric ϕ11 Duts (for the SaPIbov1-like Stl repressors), or the ability of the different SSAPs (for the SaPI2-like Stl repressors) to induce the PICI cycle was tested by introducing the pCN51 derivatives expressing the different SaPI inducers in the strains carrying the reporter plasmids. Remarkably, both the dimeric ϕO11 and trimeric ϕ11 Duts induced β-lactamase expression from the Stl-repressed str promoters present in the ShoCI794_SEPI and ShaCI51-48 islands (Table 1), suggesting that the Stl repressors encoded in all these islands have a common origin.
 
+**Table 1.**
+ Dimeric and trimeric dUTPases induce PICIs from other species encoding SaPIbov1-like Stl repressorsa.Table 1—source data 1.β-lactamase assay data and statistical analysis for the SaPIbov1 Stl homologues.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="3"></th>
+      <th colspan="4">Phage Duts</th>
+    </tr>
+    <tr>
+      <th colspan="2">Dimeric</th>
+      <th colspan="2">Trimeric</th>
+    </tr>
+    <tr>
+      <th>ϕNM1 S. aureus</th>
+      <th>ϕO11 S. aureus</th>
+      <th>ϕIPLA6 S. epidermidis</th>
+      <th>ϕ11 S. aureus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PICIs</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SaPIbov1</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>ShoCI794_SEPI</td>
+      <td>++</td>
+      <td>++</td>
+      <td>++</td>
+      <td>+++</td>
+    </tr>
+    <tr>
+      <td>ShaCI51-48</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+      <td>+</td>
+    </tr>
+  </tbody>
+</table>
+
+_aResults are from 5 independent β-lactamase/Nitrocefin assay experiments, using the dual plasmid system described in the text. Levels of induction were based on the calculated units/ml with the following ranges: (-): no induction, <1 Units/ml; (+): low induction, 1–5 Units/ml; (++): moderate induction, 5–10 Units/ml; (+++): high induction, >10 Units/ml. A 2-way ANOVA with Sidak's multiple comparisons test was performed to compare mean differences within rows. The differences observed among the +,++or +++ samples, compared with the controls or the - samples, were in all cases statistically significant (p<0.05)._
+
 Even more interesting were the results obtained with the SaPI2 Stl homologs (Table 2). All the islands were induced by at least one of the recombinases, although the distribution was not as uniform as with the Duts. Thus, the 80α coded Sak induced SaPI2, SeCINIHLM095 and ShaCI137133, but not ScCIUMC-CNS-990 (Table 2). The chimeric 80α Sak-Ssb protein induced none, supporting that the different PICI coded Stl repressors are structurally related (Table 2). Interestingly, the ϕ52A coded Sak4 recombinase induced SaPI2 and ScCIUMC-CNS-990, while the ϕSLT Erf recombinase induced SaPI2 and SeCINIHLM095. Finally, the ϕN315 coded Redβ recombinase uniquely induced SaPI2, but not the other islands (Table 2). Taken together, including the previous results with the SaPIbov1 Stl mutants, these results strongly support the idea that although originally related, the different Stl repressors have evolved different domains to interact with the phage-coded inducers.
+
+**Table 2.**
+ Unrelated SSAPs differentially induce PICIs from other species encoding SaPI2-like Stl repressorsa.Table 2—source data 1.β-lactamase assay data and statistical analysis for the SaPI2 Stl homologues.
+
+
+<table>
+  <thead>
+    <tr>
+      <th rowspan="2"></th>
+      <th></th>
+      <th></th>
+      <th colspan="3">SSAPs</th>
+      <th></th>
+    </tr>
+    <tr>
+      <th>Sak (80α) S. aureus</th>
+      <th>Chimera (80α) S. aureus</th>
+      <th>Sak (PH15) S. epidermidis</th>
+      <th>Sak4 (52A) S. aureus</th>
+      <th>Erf (SLT) S. aureus</th>
+      <th>Redβ (N315) S. aureus</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>PICIs</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SaPI2</td>
+      <td>++</td>
+      <td>-</td>
+      <td>++</td>
+      <td>+++</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>SeCINIHLM095</td>
+      <td>++</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>ShaCI137133</td>
+      <td>++</td>
+      <td>-</td>
+      <td>++</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>ScCIUMC-CNS990</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>+++</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
+
+_aResults are from 3 independent β-lactamase/Nitrocefin assay experiments, using the dual plasmid system described in the text. Levels of induction were based on the calculated units/ml with the following ranges: (-): no induction, <1 Units/ml; (+): low induction, 1–5 Units/ml; (++): moderate induction, 5–10 Units/ml; (+++): high induction,>10 Units/ml. A 2-way ANOVA with Sidak's multiple comparisons test was performed to compare mean differences within rows. The differences observed among the +,++or +++ samples, compared with the controls or the - samples, were in all cases statistically significant (p<0.05)._
 
 It is striking how the SaPIs have evolved an elegant tactic to be highly transferred both intra- and inter-generically. However, and in the case of the inter-generic transfer of the elements, to be completely effective this strategy requires that the phages infecting the new SaPI-recipient species encode the conserved SaPI inducers. To test this, we analysed the presence of SaPIbov1 or SaPI2 inducing genes in a subset of staphylococcal phages infecting species other than S. aureus. As shown in Supplementary file 6, we were able to identify homologs to the previously characterised SaPIbov1 or SaPI2 inducer in all the analysed phages, although with different degrees of identity among the members of the distinct families. Next, and to support the idea that once the inter-species transfer occurs the PICI can be maintained in the new recipient species, we tested whether the Dut encoded in the S. epidermidis phage IPLA6, or the recombinase encoded in S. epidermidis phage PH15, were capable of inducing the cycle of the different PICI elements encoding SaPIbov1 or SaPI2 Stl homologs. That was the case, and the behaviour of the S. epidermidis IPLA6 trimeric Dut was identical to that observed for the trimeric ϕ11 Dut (Table 1), while the functioning of the ϕPH15 Sak recombinase was indistinguishable from that observed with the homologue S. aureus 80α coded Sak (Table 2). In summary, our results confirm the idea that the PICIs have established a fascinating parasitic strategy that may allow their promiscuous transfer and widespread maintenance in nature.
 
-## Inter-species PICI transfer occurs in nature
+### Inter-species PICI transfer occurs in nature
 
 The fact that some islands present in different species encode identical proteins (including not just the Stl repressors as demonstrated here but also other PICI proteins) strongly supports the idea that some ancestral elements were horizontally transferred among species. In the different species these elements probably evolved independently, trying to adapt to the new cognate host. Our previous results, however, suggest that by pirating conserved phage mechanisms this inter-species transit probably occurs constantly in nature. To test that possibility, we scrutinised the genome databases looking for identical PICIs present in different staphylococcal species. We initiated this analysis by comparing the genomes of those PICIs encoding identical Stl proteins. Highlighting the versatility of these elements and the successful strategy they use to spread in nature, our analysis revealed that the ScCIM23864:W1 (S. caprae) and SlCIFDAARGOS_141 (S. lugdunensis) elements are identical (just 3 mismatches over 13,847 nt; Supplementary file 7).
 
@@ -114,11 +286,11 @@ Since the discovery of the SaPIs, it has gradually become apparent that prophage
 
 ## Materials and methods
 
-## Bacterial strains and growth conditions
+### Bacterial strains and growth conditions
 
 The bacterial strains used in this study are listed in Supplementary file 8A. S. aureus was grown in Tryptic soy broth (TSB) or on Tryptic soy agar plates. E. coli was grown in LB broth or on LB agar plates. Antibiotic selection was used where appropriate. Preparation and analysis of phage lysates was performed essentially as previously described (Ubeda et al., 2008).
 
-## DNA methods
+### DNA methods
 
 General DNA manipulations were performed using standard procedures. Plasmid constructs used in this study (Supplementary file 8B) were generated by cloning PCR products obtained with oligonucleotide primers, listed in Supplementary file 8C.
 
@@ -126,27 +298,27 @@ Detection probes for SaPI DNA in Southern blots were generated by PCR using prim
 
 ϕO11 dut was cloned into pET28a vector (Novagen) using primers listed in Supplementary file 8C. Plasmids pETNKI-StlΔHTH and pETNKI-StlΔCter for expression of Stl deletional variants were produced using plasmid pETNKI-Stl as template (Maiques et al., 2016). pETNKI-StlΔCter plasmid expressing Stl residues from 1 to 176 was generated by site direct mutagenesis introducing a stop codon in pETNKI-Stl after Lys176 using the Stl_M1-K176_Fw and Stl_M1-K176_Rv primers and Q5 Site-Directed Mutagenesis Kit (NEB). pETNKI-StlΔHTH plasmid expressing Stl residues from 87 to 267 was generated by PCR-amplifying the encoding region with the primers Stl_T87-N267_Fw and Stl_T87-N267_Rv. The Ligation-Independent Cloning (LIC) system (Savitsky et al., 2010) was used to clone the PCR fragment into the pETNKI-his-SUMO3-LIC plasmid (kindly supplied by Patrick Celie, NKI Protein facility) previously digested with a KpnI (Fermentas). All clones were sequenced at the IBV Core Sequencing facility or by Eurofins MWG Operon.
 
-## Southern and western blot sample preparation
+### Southern and western blot sample preparation
 
 Samples were taken at times 0’ and 3 hr following plasmid induction and pelleted. The samples were re-suspended in 50 μl lysis buffer (47.5 μl TES-Sucrose and 2.5 μl lysostaphin [12.5 μg ml-1]) and incubated at 37°C for 1 hr. For the Southern blot analysis, 55 μl of SDS 2% proteinase K buffer (47.25 μl H2O, 5.25 μl SDS 20%, 2.5 μl proteinase K [20 mg ml-1]) was added before incubation at 55°C for 30 min. Samples were vortexed for 1 hr with 11 μl of 10x loading dye. Cycles of incubation in dry ice and ethanol, then at 65°C were performed. Samples were run on 0.7% agarose gel at 25V overnight. DNA was transferred to a membrane and exposed using a DIG-labelled probe and anti-DIG antibody, before washing and visualisation.
 
 Preparation of S. aureus samples for western blot was performed by re-suspending pellets in 200 μl digestion/lysis buffer (50 mM Tris-HCl, 20 mM MgCl2, 30% w/v raffinose) plus 1 μl of lysostaphin (12.5 μg ml-1), mixed briefly, and incubated at 37°C for 1 hr. 2X Laemmli sample buffer (Bio-Rad, 2-mercaptoethanol added) was added to the samples, which were heated at 95°C for 10 min, put on ice for 5 min and fast touch centrifuged. Samples were run on SDS-PAGE gels (15% Acrylamide, Bio-Rad 30% Acrylamide/Bis Solution) before transferring to a PVDF transfer membrane (Thermo Scientific, 0.2 μM) using standard methods. Western blot assays were performed using anti-Flag antibody probes (Monoclonal ANTI-FLAG M2-Peroxidase (HRP) antibody, Sigma-Aldrich) as per the protocol supplied by the manufacturer.
 
-## Two-hybrid assay
+### Two-hybrid assay
 
 The two-hybrid assay for protein-protein interaction was done as described previously (Battesti and Bouveret, 2012) using two compatible plasmids; pUT18c expressing T18 fusion with the individual recombinases, and pKNT25 expressing the T25 fusion with the StlSaPI2. Both plasmids were co-transformed into E. coli BTH101 for the Bacterial Adenylate Cyclase Two Hybrid (BACTH) system and plated on LB +Ampicillin and Kanamycin + X gal as an indicator. After incubation at 30°C for 24 hr (early reaction) and 48 hr (late reaction), the protein-protein interaction was detected by a colour change. Blue colonies represent an interaction between the two clones, while white/yellow colonies are negative for any interaction.
 
 For quantification of the BACTH analysis, overnight cultures were diluted 1/100 and grown to mid-log before induction with 5 mM IPTG. After 2 hr, 2 ml of culture was sampled and pelleted, before resuspension in the same volume of Z buffer (0.06M Na2HPO4.7H2O, 0.04M NaH2PO4.H2O, 0.01M KCl, 0.001M MgSO4, 0.05M β-mercaptoethanol, pH 7.0). The OD600 was recorded and cells were permeabilized with chloroform and 0.1% SDS. The assay reaction was started using ONPG (o-nitrophenyl-β-D-galactoside, 4 mg/ml), and vortexed and incubated at 30°C until yellow. The reaction was stopped using Na2CO3 and the reaction time recorded. Samples were spun down and the OD420 and OD550 were recorded. Miller Units were calculated as follows, where T is time of reaction (minutes) and V is the volume of culture used in the assay (ml): Miller Units = 1000 x (OD420 - 1.75 x OD550) / (T xV x OD600).
 
-## Enzyme assays
+### Enzyme assays
 
 For the β-Lactamase assays, cells were obtained at 0.2–0.3 OD540 and at 5 hr post-induction with/without 5 μM CdCl2. β-Lactamase assays, using nitrocefin as substrate, were performed as described (Tormo-Más et al., 2010), using a ELx808 microplate reader (BioTek). An adjustment was made in reading time, with plates read every 20 s for 30 mins. β-Lactamase units/ml are defined as [(slope)(Vd)]/[(Em)(l)(s)]. Slope is the ∆absorbance/hour, V is the volume of the reaction, d is the dilution factor, Em is the millimolar extinction coefficient for the nitrocefin (20,500 M−1 cm−1 at 486 nm), l is the path length (cm), and s is the sample amount. dUTPase activity was measured by Malachite Green assay as previously described (Maiques et al., 2016). Briefly, Dut (30 nM) alone or in presence of a 5X molar ratio (monomer) of Stl (full length or truncated versions) was incubated overnight at 4°C in Stl buffer (400 mM NaCl; 75 mM Hepes7.5; 5 mM MgCl2). The experiment was carried out at 25°C and started by the addition of dUTP (10 μM final concentration).
 
-## Statistical analyses
+### Statistical analyses
 
 As indicated in the figure legends either a two-way ANOVA comparison with Sidak’s adjustment for multiple comparisons was conducted or a one-way ANOVA, as appropriate. All analysis was done using Graphpad Prism 6 software.
 
-## Protein expression and purification
+### Protein expression and purification
 
 Trimeric ϕ11 Dut and Stl were expressed and purified as previously described (Maiques et al., 2016). StlΔCter was purified following an identical protocol as for the Stl full-length protein. StlΔHTH was produced from E. coli BL21 (DE3) (Novagen) cultures harbouring the pETNKI-StlΔHTH plasmid. The culture was grown at 37°C in LB medium supplemented with 33 μg/ml kanamycin up to an OD600 of 0.5–0.6, and then protein expression was induced with 0.1 mM isopropyl-β-D thiogalactopyranoside (IPTG) at 20°C for 16 hr. After induced cells were harvested by centrifugation at 4°C for 30 min at 3500 × g, the cell pellet was resuspended in buffer A (75 mM HEPES pH 7.5, 400 mM NaCl and 5 mM MgCl2) supplemented with 1 mM PMSF and sonicated. A soluble fraction was obtained after centrifugation at 16 000 × g for 40 min, and it was loaded on a pre-equilibrated His Trap HP column (GE Healthcare). After washing with 10 column volumes of buffer A, the protein was eluted by adding buffer A supplemented with 500 mM imidazole. The eluted protein was digested for His-SUMO3 tag removal using SENP2 protease at a molar ratio 1:50 (protease:eluted protein) for 16 hr at 4°C with slow shaking. After digestion, the sample was loaded one more time into the pre-equilibrated His Trap HP column to remove the His-SUMO3 tag and SENP2 protease from the Stl protein. Fractions were analysed by SDS-PAGE and those fractions with purest digested Stl protein were selected, concentrated and stored at −80°C.
 
@@ -154,18 +326,18 @@ His-tagged dimeric ϕO11 Dut was overexpressed in E. coli BL21 (DE3) (Novagen) h
 
 Mass Spectrometry analyses were performed at the proteomics facility of SCSIE, University of Valencia.
 
-## ϕO11 Dut crystallization and data collection
+### ϕO11 Dut crystallization and data collection
 
 ϕO11 Dut protein in complex with dUPNPP protein was crystallized using the sitting drop method in the Crystallogenesis facility of IBV. ϕO11 (at 10 mg/ml) was incubated with 0.5 mM dUPNPP (2-Deoxyuridine-5-[(α,β)-imido]triphosphate; Jena Biosciences) and 5 mM MgCl2 during 8 hr at 4°C and sitting drops were set up at 21°C. The best crystals were obtained using 0.2 M magnesium chloride, 0.1 M Tris-HCl pH8.5, 20% PEG 8000 as liquor mother. Crystals were frozen in liquid nitrogen respecting crystallization condition, increasing the cryobuffer to 35% PEG 8000 concentration for the diffraction process. Diffraction data was collected from single crystals at 100 K on ALBA (Barcelona, Spain) and DLS (Didcot, UK) synchrotrons and processed and reduced with Mosflm (Powell et al., 2013) and Aimless (Evans and Murshudov, 2013) programs from the CCP4 suite (Winn et al., 2011). The data-collection statistics for the best data sets used in structure determination are shown in Supplementary file 3.
 
-## ϕO11 Dut–dUPNPP structure determination
+### ϕO11 Dut–dUPNPP structure determination
 
 Protein structure was solved by molecular replacement with Phaser (McCoy et al., 2007) and an edited PDB of the dimeric Dut from phage ϕDI as a model (5MYD). Based on sequence homology between ϕO11 and ϕDI Duts (70% identity), we excluded amino acids 82–140, corresponding to the divergent regions present in the phage dimeric Duts, from the starting model. This decision was made in order to reduce the imposition of any initial structural conformation to this variable region. Iterative refinement, rebuilding and validation steps were done using programs Coot (Emsley et al., 2010) and Phenix (Adams et al., 2010). The final model includes two Dut molecules (amino acids sequence 4–160 and 3–158) forming one dimer in an asymmetric unit with one dUPNPP molecule and two Mg ions bound at each of the two active centres. The final structure has good geometry as indicated by the Ramachandran plots (any residue in the disallowed region). A summary of structure refinement statistics is shown in Supplementary file 3.
 
-## Native gel mobility shift assay
+### Native gel mobility shift assay
 
 Purified proteins were mixed at 40 μM 1:1 molar ratio in a buffer A (final volume 18 μl) and incubated at 4°C overnight. Samples were loaded into an 8% polyacrylamide gel and electrophoresis was performed at 4°C. Native gels were stained with coomassie brilliant blue.
 
-## In silico protein modelling and structure comparison
+### In silico protein modelling and structure comparison
 
 The 3D homology model of 80α, ϕSLT, 52A and ϕN315 SSAPs, and SaPIbov1 Stl were constructed using I-Tasser (default mode) (Yang et al., 2015) and Phyre2 (intensive mode) (Kelley et al., 2015) servers (Supplementary files 2A, B and 4). Intrinsic protein disorder was predicted by the meta-server Metadisorder (Kozlowski and Bujnicki, 2012).

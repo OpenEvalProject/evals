@@ -14,11 +14,11 @@
 
 ### Affiliations
 
-1. https://ror.org/01aj84f44 Interdisciplinary Nanoscience Center (iNANO), Aarhus University Aarhus Denmark
-2. https://ror.org/01zgy1s35 Institute for Medical Microbiology, Virology and Hygiene, University Medical Centre Hamburg-Eppendorf Hamburg Germany
-3. https://ror.org/01aj84f44 Department of Chemistry, Aarhus University Aarhus C Denmark
-4. https://ror.org/04dkp9463 Van ‘t Hoff Institute of Molecular Sciences, University of Amsterdam Amsterdam Netherlands
-5. https://ror.org/01aj84f44 Department of Biology, Aarhus University Aarhus C Denmark
+1. Interdisciplinary Nanoscience Center (iNANO), Aarhus University Aarhus Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
+2. Institute for Medical Microbiology, Virology and Hygiene, University Medical Centre Hamburg-Eppendorf Hamburg Germany ([ROR:01zgy1s35](https://ror.org/01zgy1s35))
+3. Department of Chemistry, Aarhus University Aarhus C Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
+4. Van ‘t Hoff Institute of Molecular Sciences, University of Amsterdam Amsterdam Netherlands ([ROR:04dkp9463](https://ror.org/04dkp9463))
+5. Department of Biology, Aarhus University Aarhus C Denmark ([ROR:01aj84f44](https://ror.org/01aj84f44))
 
 † Corresponding author
 
@@ -34,7 +34,7 @@ Staphylococci, particularly Staphylococcus aureus and Staphylococcus epidermidis
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig1-v2.jpg)
 
-**Figure 1.:** A), its ligand fibronectin (B and C), and our hypothesis of selective binding of Embp to the fibrillated form of fibronectin via a multivalent interaction (D).(A) Embp consists of 50 fibronectin (Fn)-binding repeats (10 F-repeats and 40 FG-repeats). (B) The structure of Fn. Embp binds to FN12 of the Fn type III (highlighted in yellow). (C) Representation of globular and fibrillated Fn. Fn is a dimer held together by two disulfide brides, and interactions between FN(III)11–14 on one Fn and FN(III)1–4 on the other Fn. In fibrillated Fn, these domains are exposed. (D) Hypothesis for Embp’s interaction with Fn on surfaces and in solution. (A) has been adapted from Figure 1 in Büttner et al., 2020. (B) has been adapted from Figure 4A in Büttner et al., 2020.
+**Figure 1.:** (A) Embp consists of 50 fibronectin (Fn)-binding repeats (10 F-repeats and 40 FG-repeats). (B) The structure of Fn. Embp binds to FN12 of the Fn type III (highlighted in yellow). (C) Representation of globular and fibrillated Fn. Fn is a dimer held together by two disulfide brides, and interactions between FN(III)11–14 on one Fn and FN(III)1–4 on the other Fn. In fibrillated Fn, these domains are exposed. (D) Hypothesis for Embp’s interaction with Fn on surfaces and in solution. (A) has been adapted from Figure 1 in Büttner et al., 2020. (B) has been adapted from Figure 4A in Büttner et al., 2020.
 
 The Fn deposition can occur around implants (Wolfram et al., 2004) and offer a site for bacterial attachment. We wondered how bacteria like S. epidermidis can colonize implant surfaces by interacting with adsorbed Fn when the same protein is also abundant in a soluble form in blood. Presumably, Fn-binding proteins on the bacterial cell surface become occupied with soluble Fn before being able to interact with Fn on the implant surface. The aim of this study was to determine how pathogens overcome this dilemma and bind to host proteins on tissue or implant surfaces while ignoring soluble forms of the same protein. Understanding the pathogens’ ability to selectively colonize implant surfaces reveals conceptual mechanisms for how pathogens control their location and fate in the host.
 
@@ -44,41 +44,149 @@ Using a model system of polymer-coated surfaces that facilitate Fn adsorption in
 
 ## Results
 
-## Embp does not interact with soluble Fn
+### Embp does not interact with soluble Fn
 
 We hypothesized that Embp selectively binds to fibrillated Fn, which would allow the bacteria to colonize surfaces via Fn without being blocked by soluble Fn in the bloodstream (Figure 1D). To study the interaction between Embp and Fn, we expressed Embp fusion proteins comprised of either 5 F-repeats (Embp_5F) or 9 FG-repeats (Embp_9FG), each fused to the native export signal and anticipated C-terminal cell wall anchor region (Büttner et al., 2020), in the surrogate host Staphylococcus carnosus TM300, which has no other mechanisms for attachment to Fn. The full-length Embp is too large to clone into a surrogate host, and it was therefore not possible to investigate the full-length Embp protein. However, expression of the two different Embp fragments allowed us to study their interactions individually. The presence of Embp fragments on the cell surface was verified by immunofluorescence staining (Figure 2—figure supplement 1).
 
 Neither F- nor FG-repeats facilitated adsorption of soluble fluorescently conjugated Fn to the surface of S. carnosus (Figure 2). The native Embp expressed by S. epidermidis did not bind soluble Fn either (Figure 2), concluding that Embp does not interact with Fn in its soluble, globular conformation.
 
-## Embp interacts exclusively with fibrillated Fn
+![Figure 2.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig2-v2.jpg)
+
+**Figure 2.:** Interaction of soluble Fn with Staphylococcus epidermidis 1585Pxyl/tet embp overexpressing Embp or Staphylococcus carnosus TM300 expressing recombinant Embp (5F- or 9 FG-repeats) was detected by fluorescence microscopy. Staphylococcus aureus was used as positive control. Bacteria were stained with SYTO 9 (depicted as red), and Fn bound to the cell surface was detected by immunolabeling, using anti-Fn mouse IgG primary antibody, and anti-mouse IgG conjugated with Alexa Fluor 635 as secondary antibody (depicted as green). Top panel shows overlay of bacteria (red) and Fn (green). Bottom panel shows Fn only (green). Scale bar = 10 μm.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Bacteria were stained with SYTO 9 (red), and recombinant Embp was labeled with anti-Embp antibodies followed by anti-rabbit secondary IgG conjugated with Alexa Fluor 635 (green). Scale bar = 10 μm. (A) Overlay of bacteria (red) and Embp (green), (B) Embp only (green) of S. carnosus 5F. (C) Overlay of bacteria (red) and Embp (green), (D) Embp only (green) of S. carnosus wildtype (negative control).
+
+### Embp interacts exclusively with fibrillated Fn
 
 In order to further investigate Embp’s interaction with Fn in different conformations, we produced a model system in which Fn was adsorbed to a surface in either the globular or fibrillated conformation. Previous research had shown that Fn fibrillates when adsorbed on surfaces coated with poly(ethyl acrylate) (PEA), while it remains globular on poly(methyl acrylate) (PMA) (Llopis-Hernández et al., 2016; Rico et al., 2009; Salmerón-Sánchez et al., 2011). The two polymer coatings have similar physicochemical properties, but the ethyl side group of PEA provides sufficient mobility of the adsorbed protein to facilitate fibrillation (Bieniek et al., 2019; Guerra et al., 2010). The presence of polymer coatings was confirmed by AFM (Figure 3—figure supplement 1) and X-ray photoelectron spectroscopy (XPS) (Figure 3—figure supplements 2 and 3).
 
 Upon adsorption to the polymer coating, Fn spontaneously organized into a fibrillated network on PEA while remaining globular on PMA (Figure 3A and B). In order to ascribe any differences in adhesion to the conformation and not the amount of Fn, we analyzed the quantity of protein on the two surfaces. XPS analysis determined that the amount of adsorbed protein was similar on the two polymer surfaces (Figure 3C and D, and Table 1). The XPS survey scan and high-resolution C1s XPS plots are shown in Figure 3—figure supplements 2 and 3. The conformational differences of adsorbed Fn on the two coatings was corroborated by Fourier transform infrared (FTIR) spectra, in which the peak positions indicate that Fn adsorbed to PMA adopts a mostly antiparallel β-sheet type secondary structure (Barth and Zscherp, 2002), similar to the globular, solution-state spectrum, while Fn on PEA adopts a more extended parallel β-sheet type structure (Figure 3E, Figure 3—figure supplements 4 and 5).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig3-v2.jpg)
+
+**Figure 3.:** Atomic force microscopy (AFM) imaging shows the structure of adsorbed Fn on (A) PEA and (B) PMA (xy-scale bar (black)=500 nm, height scale bar (color)=115 nm). X-ray photoelectron spectroscopy (XPS) analysis of the samples shows similar chemical composition of Fn adsorbed to (C) PEA and (D) PMA, indicating that two polymer surfaces are both covered by Fn. (E) Fourier transform infrared (FTIR) spectral shape and intensity confirms that Fn adsorbed to PMA is similar to Fn in solution.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Atomic force microscopy (AFM) images (bottom panel) of PMA- and PEA-coated glass surfaces were acquired in phosphate buffered saline (PBS). The xy-scale bar (black) is 1 μm and z-scale bar (in color) is 26 nm for PMA and 16 nm for PMA.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** XPS survey spectra of poly(ethyl acrylate) (PEA) and poly(methyl acrylate) (PMA) polymer with either phosphate buffered saline (PBS) added or fibronectin. The survey scans allow for the determination of the elements present at the sample surface.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** Bottom: Spectra of only poly(ethyl acrylate) (PEA) or poly(methyl acrylate) (PMA) polymer incubated with phosphate buffered saline (PBS). Top: Spectra of PEA and PMA polymer incubated with PBS and fibronectin (Fn). The C1s high-resolution spectrum has peaks at 285.0, 286.5, 288.0, and 289.0 eV assigned to the C-C, C-O, N, or S, the C=O in a protein, and the C=O in a polymer, respectively.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig3-figsupp4-v2.jpg)
+
+**Figure 3—figure supplement 4.:** The raw spectra show that the scattering is different for all four samples, because the spectra are offset with respect to each other. This is expected for the current sample, as the polymer layers scatter the IR light in a not fully reproducible manner. To demonstrate that the presence of protein can already be seen with minimal data processing, the spectra are vertically shifted so as to obtain 0 OD at 1700 cm–1 to show that also the sample thicknesses are not identical, as can be seen by the small intensity difference of the combination of v2 + the libration mode of D2O at 1555 cm–1. Now also the minute amount of protein absorption in the amide-I region can be appreciated (see inset), with more high-frequency absorption in the poly(methyl acrylate) (PMA) case, and more low-frequency absorption in the poly(ethyl acrylate) (PEA) case, although care must be taken with drawing direct conclusions from this as one first has to correct for the sample thicknesses (as can be seen from intensities of the 1555 cm–1 mode). Looking at the 1733 cm–1 polymer ester mode, one can now see that the incubation with fibronectin (Fn) and subsequent rinsing with d-PBS removed a small amount of polymer, reducing the polymer thickness. When overlapping the post-incubation spectra to the pre-incubation spectra on the ester peak intensity (panel c), it becomes apparent that in the PEA case, 12% of the polymer layer is lost, and in the PMA case only 3%. Finally, matching the intensity of the ester peak in all spectra to the peak intensity in the pre-incubation PEA spectrum indicates a factor ~7 between the amount of PEA and the PMA present at the samples (panel d).
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig3-figsupp5-v2.jpg)
+
+**Figure 3—figure supplement 5.:** A more accurate way to determine the relative amount of polymer-ester absorption, optimizing the overlap between the polymer ester peaks the pre- and post-incubation samples using a least-square fit with the offset and scaling factor as the fit parameters (instead of matching the intensities at 1700 and 1730 cm–1 as done in Figure 3—figure supplement 4d). In Figure 3—figure supplement 5, the result of such a least-square fit of the polymer ester peak is given before (a) and after incubation (b) with 20 μg ml−1 Fn. In this procedure, performed with a home-written Python script, the difference between two spectra is minimized with a constant offset c and a scaling factor m, that is: spectrum1(ν) – (m * spectrum2(ν)+c). The constant offset will reflect differences in the scattering, while m reflects the factor between the number of infrared (IR) oscillators (when looking at the same, isolated) peak. When performing this procedure only in the 1700–1760 cm–1 region both before and after the incubations, and subtracting the PMA spectra from the PEA spectra, we find factors of 5.3 and 6.4, respectively, that is, there are approximately six times as many ester groups present in the PEA case, as compared to the PMA case.
+
+**Table 1.**
+ X-ray photoelectron spectroscopy (XPS) survey spectrum atomic percent compositions for polymer poly(ethyl acrylate) (PEA) and poly(methyl acrylate) (PMA) and either phosphate buffered saline (PBS) or PBS with fibronectin (Fn).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Element</th>
+      <th>PEA PBS [%]</th>
+      <th>PEA Fn [%]</th>
+      <th>PMA PBS [%]</th>
+      <th>PMA Fn [%]</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>C1s</td>
+      <td>79.5 (1.0)</td>
+      <td>55.8 (1.0)</td>
+      <td>21.4 (1.4)</td>
+      <td>67.4 (3.8)</td>
+    </tr>
+    <tr>
+      <td>O1s</td>
+      <td>19.6 (1.0)</td>
+      <td>27.0 (1.1)</td>
+      <td>55.5 (1.2)</td>
+      <td>21.4 (1.3)</td>
+    </tr>
+    <tr>
+      <td>N1s</td>
+      <td>n.d.</td>
+      <td>8.3 (0.4)</td>
+      <td>n.d.</td>
+      <td>7.7 (1.5)</td>
+    </tr>
+    <tr>
+      <td>Si2p</td>
+      <td>0.9 (0.4)</td>
+      <td>0.1 (0.1)</td>
+      <td>19.8 (0.8)</td>
+      <td>0.2 (0.2)</td>
+    </tr>
+    <tr>
+      <td>Na1s</td>
+      <td>n.d.</td>
+      <td>3.6 (0.1)</td>
+      <td>3.2 (0.7)</td>
+      <td>1.9 (0.6)</td>
+    </tr>
+    <tr>
+      <td>Cl2p</td>
+      <td>n.d.</td>
+      <td>2.5 (0.3)</td>
+      <td>0.1 (0.1)</td>
+      <td>1.4 (0.3)</td>
+    </tr>
+    <tr>
+      <td>P2p</td>
+      <td>n.d.</td>
+      <td>2.7 (0.1)</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+    <tr>
+      <td>K2p</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note: not detectable (n.d.); (.)=standard deviation; [%]=atomic percent (sample mean, n=3)._
+
 After validating the model system, Embp-mediated bacterial attachment to fibrillated and globular Fn was measured using a flow cell system where the number of attached bacteria was counted by microscopy. Very few bacteria attached to the polymer coatings in the absence of Fn, and only fibrillated Fn stimulated attachment of S. carnosus expressing Embp_5F or Embp_9FG (Figure 4A). Fn consists of two nearly identical subunits linked by a pair of disulfide bonds at the C terminal (Kar et al., 1993). Each subunit consists of three domains: F1, F2, and F3 (Potts and Campbell, 1996). The globular and compact conformation of Fn is sustained by intramolecular electrostatic interactions between F1 1st-5th, F3 2nd-3rd, and F3 12th-14th repeat (Johnson et al., 1999; Maurer et al., 2015). Binding sites in these regions remain buried in the globular conformation; however, upon fibrillation on a surface or tissue interface, these binding sites become exposed (Klotzsch et al., 2009). Since Embp only binds to fibrillated Fn, we hypothesize that it interacts with epitopes that are buried in the globular conformation, but become exposed when Fn fibrillates. Indeed, it was previously reported that S. epidermidis binds near the C terminal of Fn (Arciola et al., 2003), and studies of recombinant Fn verified the interaction between Embp and the 12th repeat of the F3 domain (Christner et al., 2010). This repeat may be one of several interaction points and has not been confirmed in full-length Fn adsorbed in its natural conformation. To test the interaction between the 12th repeat of the F3 domain and the Fn-binding F- and FG-repeats, we repeated cell adhesion analysis on Fn-coated PEA after blocking the C-terminal heparin-binding domain II (F3 12th-14th repeat) with antibody sc-18827. Control samples were blocked with antibody F0916 specific for the F3 5th repeat (Figure 4). Blocking the F3 12th-14th repeat decreased the adherence of S. carnosus by approximately 62% for Embp_5F and 64% for Embp_9FG (Figure 4), supporting that Embp interacts with this subdomain. As the adherence was not completely abolished by blocking the Fn-binding site, we cannot exclude the possibility that Embp interacts with other epitopes in Fn. However, the F3 12th-14th repeat is of major significance.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig4-v2.jpg)
 
-**Figure 4.:** Staphylococcus carnosus TM300 expressing either F- (panel A) or FG-repeats (panel B) were passed through flow cells for 2 hr before enumeration of attached cells by microscopy. Adsorption of Fn only promoted attachment on poly(ethyl acrylate) (PEA)-coated surfaces where Fn fibrillated. Blocking of Fn at FnIII 12th-14th by specific antibodies (Antibody 1) resulted in decreased bacterial attachment, which indicates that Embp binds to this domain. Blocking of Fn at a different domain (FnIII 5th, Antibody 2) was included as a control for non-specific blocking of Fn by the antibodies. This antibody had no effect on bacterial attachment. p-Values are indicated (two-tailed t-test).Figure 4—source data 1.
+**Figure 4.:** Staphylococcus carnosus TM300 expressing either F- (panel A) or FG-repeats (panel B) were passed through flow cells for 2 hr before enumeration of attached cells by microscopy. Adsorption of Fn only promoted attachment on poly(ethyl acrylate) (PEA)-coated surfaces where Fn fibrillated. Blocking of Fn at FnIII 12th-14th by specific antibodies (Antibody 1) resulted in decreased bacterial attachment, which indicates that Embp binds to this domain. Blocking of Fn at a different domain (FnIII 5th, Antibody 2) was included as a control for non-specific blocking of Fn by the antibodies. This antibody had no effect on bacterial attachment. p-Values are indicated (two-tailed t-test).
 
-## F and FG modules attach to Fn
+### F and FG modules attach to Fn
 
 After learning that Embp interacts exclusively with fibrillated Fn, we probed the strength of this interaction by single-cell atomic force spectroscopy. Single S. carnosus expressing Embp_5F or Embp_9FG were attached to colloidal AFM probes, approached to an Fn-coated PMA or PEA surface with controlled force, and then retracted to detect the force needed to detach the cell from the surface. As expected, the force-distance curves obtained from these experiments show that both F and FG fragments bind to fibrillated but not to globular Fn. The average maximum adhesion force between S. carnosus and surfaces with fibrillated Fn was 1.19±0.21 and 1.16±0.18 nN, respectively, for S. carnosus expressing Embp_5F or Embp_9FG (Figure 5). In contrast, the corresponding adhesion force to surfaces with globular Fn was only 0.16±0.09 and 0.12±0.04 nN. The adhesion force and the shape of the force-distance curves reflect multiple binding events between the cell and the Fn-coated surface. The multiple binding events could either be due to multiple Embp fragments on the cell surface interacting with Fn or multiple interactions between a single Embp fragment and Fn.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig5-v2.jpg)
 
-**Figure 5.:** Single Staphylococcus carnosus cells expressing either F- or FG-repeats were immobilized on a colloidal atomic force microscopy (AFM) cantilever, and force-distance curves were measured by approaching and retracting the cantilever to surfaces with fibrillated or globular Fn. Adhesion events are recognized as negative peaks on the force axis below the horizontal baseline.Figure 5—source data 1.
+**Figure 5.:** Single Staphylococcus carnosus cells expressing either F- or FG-repeats were immobilized on a colloidal atomic force microscopy (AFM) cantilever, and force-distance curves were measured by approaching and retracting the cantilever to surfaces with fibrillated or globular Fn. Adhesion events are recognized as negative peaks on the force axis below the horizontal baseline.
 
-## Embp binds to fibrillated Fn in a Velcro-like manner
+### Embp binds to fibrillated Fn in a Velcro-like manner
 
 Embp contains 50 Fn-binding repeats, and it must be costly for S. epidermidis to produce this enormous 1 MDa protein. How might S. epidermidis benefit from the many repetitive binding domains? We hypothesize that multivalent interactions can occur if the ligand for this giant adhesin is fibrillated, resulting in presentation of multiple binding domains in close proximity. Such multivalent binding would work like Velcro, as many weak binding events result in strong attachment. Such a Velcro effect could provide adhesion forces strong enough to attach S. epidermidis to Fn via a single Embp protein. To investigate this hypothesis, we expressed and purified rEmbp fragments that contained 1, 4, and 15 repeats of FG-repeats, attached them to an AFM cantilever using 6× His-NTA interaction, and quantified their interaction with Fn by SMFS. In agreement with previous experiments, the FG-repeat did not interact with the globular form of Fn (Figure 6). The interaction force of a 1 or 4 FG-repeat with fibrillated Fn was also insufficient to be detected. However, the interaction force of 15 FG-repeats was 432±48 pN with fibrillated Fn, confirming the value of multidomain interaction with the fibrillated ligand (Figure 6).
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig6-v2.jpg)
 
-**Figure 6.:** Recombinant extracellular matrix-binding protein (Embp) consisting of either 1 (A), 4 (B), or 15 (C) FG-repeats was tethered to a chemically modified silicon probe trough 6× His-NTA interaction. Force-distance curves were measured toward fibrillated Fn on poly(ethyl acrylate) (PEA) and globular Fn on poly(methyl acrylate) (PMA).Figure 6—source data 1.
+**Figure 6.:** Recombinant extracellular matrix-binding protein (Embp) consisting of either 1 (A), 4 (B), or 15 (C) FG-repeats was tethered to a chemically modified silicon probe trough 6× His-NTA interaction. Force-distance curves were measured toward fibrillated Fn on poly(ethyl acrylate) (PEA) and globular Fn on poly(methyl acrylate) (PMA).
 
-## Embp is necessary for attachment under high flow
+### Embp is necessary for attachment under high flow
 
 In our investigating of the interaction mechanism between Embp and Fn, we used fusion proteins that contained only a few of the F- or FG-repeats displayed on the surface of S. carnosus which has no other adhesive proteins. However, S. epidermidis has many other cell wall anchored adhesins, and the key to understanding Embp’s role in S. epidermidis’ pathogenicity therefore lies in understanding the circumstances under which Embp-producing S. epidermidis strains have an advantage. If oriented perpendicular to the cell surface, Embp could potentially stretch several hundred nm from the cell surface. We measured the hydrodynamic radius of S. epidermidis overexpressing Embp, and confirmed that it was significantly larger than for S. epidermidis lacking Embp (2.3±0.4 μm vs. 1.3±0.2 μm, two-tailed t-test, n=3, p=0.02).
 
@@ -86,7 +194,7 @@ We speculated that Embp would be more effective than other adhesins when S. epid
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/76164/elife-76164-fig7-v2.jpg)
 
-**Figure 7.:** Attachment to poly(ethyl acrylate) (PEA) +/-Fn was quantified for Staphylococcus epidermidis overexpressing (circles) or lacking (triangles) Embp at high flow (gray symbols, left y axis) and low flow (white symbols, right y axis). Expression of Embp led to a 20% increase in attachment at low flow (two-tailed t-test, unequal variance, p=0.03). At high flow, only the Embp-expressing strain could attach (two-tailed t-test, p=0,0009). Black bars show sample mean.Figure 7—source data 1.
+**Figure 7.:** Attachment to poly(ethyl acrylate) (PEA) +/-Fn was quantified for Staphylococcus epidermidis overexpressing (circles) or lacking (triangles) Embp at high flow (gray symbols, left y axis) and low flow (white symbols, right y axis). Expression of Embp led to a 20% increase in attachment at low flow (two-tailed t-test, unequal variance, p=0.03). At high flow, only the Embp-expressing strain could attach (two-tailed t-test, p=0,0009). Black bars show sample mean.
 
 ## Discussion
 
@@ -110,39 +218,196 @@ Previously published studies have shown that the binding force of some bacteria 
 
 ## Materials and methods
 
-## Bacterial strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, Strain backgroundStaphylococcus epidermidis</td>
+      <td>1585 WT</td>
+      <td>PMID:15752207</td>
+      <td>ATCC12228</td>
+      <td>Clinical isolate</td>
+    </tr>
+    <tr>
+      <td>Genetic reagentStaphylococcus epidermidis</td>
+      <td>1585Pxyl/tet embp</td>
+      <td>PMID:19943904</td>
+      <td></td>
+      <td>Expresses Embp from inducible promotor</td>
+    </tr>
+    <tr>
+      <td>Genetic reagentStaphylococcus epidermidis</td>
+      <td>Δembp</td>
+      <td>PMID:33082256</td>
+      <td></td>
+      <td>Deficient of Embp</td>
+    </tr>
+    <tr>
+      <td>Genetic reagentStaphylococcus carnosus</td>
+      <td>TM300 × pEmbp_5F</td>
+      <td>PMID:33082256</td>
+      <td></td>
+      <td>Recombinant Embp fragment (5 F-repeats) expressed in surrogate host</td>
+    </tr>
+    <tr>
+      <td>Genetic reagentStaphylococcus carnosus</td>
+      <td>TM300 × pEmbp_9FG</td>
+      <td>PMID:33082256</td>
+      <td></td>
+      <td>Recombinant Embp fragment (9 FG-repeats) expressed in surrogate host</td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>Fibronectin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog # F0895</td>
+      <td>0.1% solution isolated from human plasma</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Embp2588 IgG (rabbit polyclonal)</td>
+      <td>Rhode labPMID:19943904</td>
+      <td></td>
+      <td>(1:200)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-rabbit IgG conjugated with Alexa Fluor 635 (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Catalog # A31577</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human Fn IgG (FNIII 12–14) (mouse monoclonal)</td>
+      <td>Santa Cruz Biotech</td>
+      <td>Catalog # sc-18827</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-human Fn IgG (FNIII 5th) (Mouse monoclonal)</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog #F0916</td>
+      <td>(1:100)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG conjugated with Alexa Fluor 635 (goat polyclonal)</td>
+      <td>Invitrogen</td>
+      <td>Catalog #A31574</td>
+      <td>(1:300)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Goat serum</td>
+      <td>Invitrogen</td>
+      <td>Catalog # 31873</td>
+      <td>Blocking buffer</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ethyl acrylate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog #E9706-1L</td>
+      <td>Monomer for generating PEA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Methyl acrylate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog #M27301-1L</td>
+      <td>Monomer for generating PMA</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Benzoin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog #B8633</td>
+      <td>Initiator for the polymerization</td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Phusion High-Fidelity PCR Kit</td>
+      <td>New England Biolabs</td>
+      <td>Catalog #E0553S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>GenElute PCR Clean-Up Kit</td>
+      <td>Sigma-Aldrich</td>
+      <td>Catalog #NA1020</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>Gibson assembly ligation master mix</td>
+      <td>New England Biolabs</td>
+      <td>Catalog #E5510S</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay, kit</td>
+      <td>GeneJET Plasmid Miniprep Kit</td>
+      <td>Thermo Scientific</td>
+      <td>Catalog #K0702</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>SYTO-9</td>
+      <td>Invitrogen</td>
+      <td>Catalog #S34854</td>
+      <td>DNA-binding fluorescent stain</td>
+    </tr>
+  </tbody>
+</table>
+
+### Bacterial strains
 
 S. epidermidis 1585 WT is a clinical isolate obtained from Rhode lab in UKE, Hamburg. S. epidermidis 1585Pxyl/tet embp expresses Embp from an inducible promotor and was used for to ensure that Embp was expressed because the regulation of the native promotor is not well described. S. epidermidis Δembp is a null mutant lacking Embp. Recombinant expression of F- or FG-repeats in the surrogate host S. carnosus was used to study the interaction of Embp modules without the interference from other adhesins. S. carnosus TM300 × pEmbp_5F expresses rEmbp consisting of 5 F-repeats, and S. carnosus TM300 × pEmbp_9FG expresses rEmbp consisting of 9 FG-repeats. All strains were generated previously in the Rhode lab (Büttner et al., 2020).
 
-## Immunofluorescence of Embp fusion protein
+### Immunofluorescence of Embp fusion protein
 
 Expression of Embp fusion protein in a non-adhesive surrogate host was critical for studying the interaction of Embp without interfering interactions from other adhesive proteins on the surface of S. epidermidis. We therefore started out by confirming the presence of Embp fragments on the surface of the surrogate host. S. carnosus TM300 WT, and S. carnosus TM300 × pEmbp_5F were grown overnight in brain heart infusion (BHI) broth with 10 μg ml–1 chloramphenicol (Sigma-Aldrich, Germany). Expression of Embp fragments in the mutant strains was induced with 200 ng ml –1 anhydrotetracycline (AHT) after diluting the culture 100 times in BHI. Cells were grown for 6 hr at 37°C in a shaking incubator with 180 rpm until the 600 nm optical density (OD600) reached approximately 1. Cells were harvested by centrifugation (4000× g or 10 min) and resuspended in phosphate buffered saline (PBS). A droplet of the resuspended cells was placed on a SuperFrost Ultra Plus slides (Invitrogen, Waltham, MA) for 45 min to allow the bacteria to adsorb. After washing off unbound cells, the bacteria were fixed with 4% paraformaldehyde for 30 min at room temperature and washed twice with PBS. Samples were blocked with 5% goat serum (Invitrogen, Waltham, MA) for 45 min, washed, incubated with anti-Embp2588 IgG antibodies (Christner et al., 2010) diluted 1:200 in blocking buffer at room temperature for 1 hr, washed three times, and then incubated with the secondary antibody (anti-rabbit IgG conjugated with Alexa Fluor 635, Invitrogen, Waltham, MA) diluted 1:300 in blocking buffer for 1 hr at room temperature. Cells were then washed three times and stained with 10 µM SYTO 9 (Invitrogen, Waltham, MA) in PBS for 10 min, washed three times, and visualized by confocal laser scanning microscopy (CLSM) (LSM700, Zeiss, Germany) using 488 excitation for SYTO 9, and 639 nm excitation Alexa Fluor 635 conjugated antibody, and a 63× Plan-Apochromat N/A 1.4 objective.
 
-## Interaction of Embp with soluble Fn
+### Interaction of Embp with soluble Fn
 
 We first investigated if S. epidermidis or a surrogate host expressing Embp fragments interacted with soluble Fn in its globular conformation. S. aureus 29213 WT (positive control for soluble Fn binding) S. epidermidis 1585 WT, S. epidermidis 1585Δembp (Embp knockout), were grown in BHI without antibiotics. S. epidermidis 1585Pxyl/tet embp (Embp overexpressed) was grown in BHI with 5 μg ml–1 erythromycin, S. carnosus TM300 × pEmbp_5F (5 F-repeats) and S. carnosus TM300 × pEmbp_9FG (9 FG-repeats) were grown in BHI with 10 μg ml–1 chloramphenicol. Expression of Embp, F- and FG-repeats in the mutant strains was induced with 200 ng ml –1 AHT after diluting the culture 100 times in BHI. Cells were grown for 6 hr at 37°C in a shaking incubator with 180 rpm until reaching OD600 of approximately 1. Cells were harvested by centrifugation (4000× g for 10 min) and resuspended in PBS. A droplet of the resuspended cells was immobilized on a SuperFrost Ultra Plus slides (Invitrogen, Waltham, MA) for 45 min to allow the bacteria to adsorb. The unabsorbed cells were removed by washing with PBS, and the adsorbed cells were then blocked with 3% BSA for 45 min. Cells were then incubated with 100 µg ml–1 Fn in PBS (Sigma-Aldrich, F0895) for 60 min at room temperature. The unbound Fn was removed by washing three times with PBS. The samples were then fixed with 4% paraformaldehyde for 30 min at room temperature. Immunolabeling was then performed as described above, anti-Fn mouse IgG (Sigma-Aldrich) diluted 1:100 in blocking buffer and the secondary antibody (anti-mouse IgG conjugated with Alexa Fluor 635, Goat IgG – Invitrogen) diluted 1:300 in blocking buffer. Cells were stained and prepared for imaging as described above.
 
-## Preparation of polymer-coated surfaces
+### Preparation of polymer-coated surfaces
 
 Quantification of interaction forces between Embp and Fn in its globular or fibrillated form would require that Fn was immobilized to a surface. We used a previously published model system (Guerra et al., 2010; Rico et al., 2009) to generate Fn-coated surfaces that displayed Fn in these two conformations, while the physicochemical properties of the underlying surface were very similar, namely PEA and PMA. Polymers of ethyl acrylate and methyl acrylate were synthesized from their monomers (99% pure, Sigma-Aldrich, Germany) using radical polymerization. Benzoin (98% pure, Sigma-Aldrich, Germany) was used as a photoinitiator with 1 wt % for PEA and 0.35 wt % for PMA. The polymerization reaction was allowed in Schlenk flasks exposing to ultraviolet light (portable UV lamp with light of 390–410 nm) up to the limited conversion of monomers (2 hr). Polymers were then dried to constant weight in a vacuum oven at 60°C for 12 hr. Both polymers were solubilized in toluene (99.8% pure, Sigma-Aldrich) to concentration of 6% w/v for PEA and 2.5% w/v for PMA. Two hours sonication in an ultrasonic bath at room temperature was used to make the polymer soluble. Glass slides (76 × 26 mm, Hounisen) were cleaned with sonication in ultrasonic bath for 15 min in acetone, ethanol, and Milli-Q water respectively, and then dried under nitrogen flow. A thin film of polymer solution was coated on clean slides using spin-coater (Laurell Technologies) with acceleration and velocity of 1000 rpm for 30 s. The spin-coated films were degassed in a desiccator for 30 min under vacuum and then put in a vacuum oven at 60°C for 2 hr to remove toluene.
 
-## Fn adsorption to PMA and PEA
+### Fn adsorption to PMA and PEA
 
 A hydrophobic marker (PAP pen – Sigma-Aldrich) was used to draw a small circle (around 0.5 cm square area) on the spin-coated slides. Fn from human plasma (Sigma-Aldrich, F0895) was dissolved in PBS at concentration of 20 µg ml–1 and 100 μl sample was adsorbed on each slide for 1 hr at room temperature.
 
-## AFM for imaging of Fn adsorbed to PMA and PEA
+### AFM for imaging of Fn adsorbed to PMA and PEA
 
 Experiments were conducted on three replicate samples with JPK Nanowizard IV (JPK, Germany) using HQ: CSC38/No Al (MikroMasch, San Jose, CA) and TR400PSA (Asylum Research, Santa Barbara, CA) cantilevers. We used the fluid mode of operation to visualize Fn adsorbed to PEA and PMA without introducing artifacts from sample drying. The operating environment was controlled in a closed liquid chamber at 21°C with minimal evaporation. The operation parameters were set to optimize resolution with minimum possible damage or artifact from contaminations on the tip. Typically, scans were started with a large scan area of minimum 10 × 10 µm² with a rather low scan resolution of 64 × 64 pixels and a high scan rate >1 Hz. Once an area of interest was identified, a higher resolution image 256 × 256 or 512 × 512 pixels of a smaller scan are was acquired at lower scan speeds (<1 Hz). The acquired data was processed using Gwyddion open software (http://gwyddion.net/) for necessary corrections of tilt, etc.
 
-## XPS of Fn adsorbed to PEA and PMA
+### XPS of Fn adsorbed to PEA and PMA
 
 A 100 μl of Fn (20 µg ml–1) was adsorbed on a polymer spin-coated 1 × 1 cm2 glass slides (these slides were cut manually in the chemistry lab workshop) for 1 hr, and samples were then washed three times with Milli-Q water and dried under N2 flow. The chemical composition of the adsorbed layer was analyzed with a Kratos AXIS Ultra DLD instrument equipped with a monochromatic Al Kα X-ray source (hν=1486.6 eV). All spectra were collected in electrostatic mode at a take-off angle of 55° (angle between the sample surface plane and the axis of the analyzer lens). The spectra were collected at new spots on the sample (n=3, 1 replicate) and were charge corrected to the C1s aliphatic carbon binding energy at 285.0 eV, and a linear background was subtracted for all peak areas quantifications. Analyzer pass energy of 160 eV was used for compositional survey scans of C1s, O1s, N1s, Na1s, Si2p, Cl2p, P2p, and K2p. High-resolution scans of C1s and N1s elements were collected at an analyzer pass energy of 20 eV. Compositions and fits of the high-resolution scans were produced in CasaXPS. The data is presented in a table as an average and standard deviation of the three sample spots.
 
-## FTIR analysis of Fn adsorbed to PEA and PMA
+### FTIR analysis of Fn adsorbed to PEA and PMA
 
 FTIR measurements were performed on a Bruker Vertex v70 with 128 scans per spectrum and a 7 mm diameter beam spot. The concentration of Fn (20 µg ml–1) results in very small IR absorbances of the polymer layers, therefore, the spectra of stacks of eight coated CaF2 windows were measured simultaneously. For this, eight spin-coated CaF2 window surfaces with PMA and PEA were incubated for 1 hr with the 20 µg ml–1 Fn solution in PBS prepared in D2O (d-PBS hereafter), after rinsing the surfaces with d-PBS and placed four sets of windows (spaced by 25 µm Teflon spacers that were filled by d-PBS, with the polymer and protein-coated sides submerged in the d-PBS) in a custom-made IR cell. The incubated sample spectra were background-corrected by subtracting the spectra of the same neat d-PBS loaded windows. Before subtraction, we (i) corrected for small differences in the overall transmission of the protein and background samples (due to e.g. small differences in the amount of scattering of the IR beam, which can become significant with eight consecutive windows) by subtracting the absorption at 7500 cm–1, and (ii) corrected for small differences in the exact water layer thickness by scaling the spectra using a spectrally isolated absorption band of the D2O (the v1 + v2 combination band of the solvent’s OD bending and stretching mode 1 at 3840 cm–1) to determine the scaling factor. But there is no reason to assume that the water and polymer layers thicknesses are related. Therefore, the resulting background-corrected amide-I (1600–1700 cm–1) PEA + Fn spectrum (Figure 3) still contains a tail of the 1733 cm–1 ester peak, which is absent in the resulting PMA + Fn spectrum. This is (i) because there is approximately six times more PEA present than PMA (as indicated by a least-square fit that minimized the total intensity of the subtraction of the PMA from the PEA background spectra in the 1700–1760 cm–1 region, see Figure 3—figure supplements 4 and 5), and (ii) because the Fn incubation results in a slight loss of polymer, which is impossible to compensate for well by subtraction of the polymer spectra, because the 1733 cm–1 ester peak shape is affected by the presence of the protein (see Figure 3—figure supplement 4d). The broadening of this peak by Fn incubation is probably because the ester groups in contact with the protein are slightly shifted with respect to the more buried ester groups that are not changed by the protein adsorption, resulting in two subpeaks that are slightly offset in frequency. Even though the PMA layer appears to be thinner and/or less dense, it will probably still be composed of many monolayers (as indicated by the XPS measurements), so this difference in thickness is not expected to affect the protein’s interfacial behavior.
 
-## Quantification of bacterial attachment under flow
+### Quantification of bacterial attachment under flow
 
 Ibidi sticky-slide VI 0.4 chambers (Ibidi, Germany) were glued to polymer-coated glass by using an equivalent mixture of silicon (DOWSIL 732 – Dow corning) and UV activating glue (Loctite 3106 Light Cure Adhesive). After flow cell assembly, 50 μl of Fn (20 µg ml–1) dissolved in PBS was injected to the channel of a flow cell and allow to adsorb statically for 1 hr at room temperature. The unbound Fn was removed by a flow of PBS (6 ml hr–1) using a syringe pump (Harvard Apparatus, Holliston, MA) for 15 min. Bacterial cells were subcultured from an overnight culture and grown for 6 hrs at 37°C and 180 rpm, harvested by centrifugation (4000× g for 10 min), and resuspended in PBS to an OD600 of 0.1. The cell suspension was flowed through the flow cell chamber at 3 ml hr–1 for 2 hr at room temperature. The unbound cells were washed with PBS at 9 ml hr–1 for 30 min. Attached bacteria were visualized by brightfield microscopy (Zeiss Axiovert A100, 20× objective) and counted. A minimum of five images were acquired per replicate, and a minimum of 200 cells were counted per replicate. Three replicate samples were analyzed, and individually grown bacterial cultures were used on each replicate.
 
@@ -150,18 +415,92 @@ The first experiment compared attachment of S. carnosus TM300 × pEmbp_5F and S.
 
 The final experiment addressing attachment under flow compared the attachment of S. epidermidis 1585 Pxyl/tet embp and S. epidermidis Δembp. The strains were inoculated from single colonies into BHI broth (amended with 5 μg ml‒1 erythromycin and 200 ng ml–1 AHT for the Pxyl/tet embp strain) and grown overnight at 37°C, 180 rpm, harvested by centrifugation, and resuspended in PBS to OD600=0.3, transferred to the syringe pump and passed through the flow cells at either 1 or 18 ml min–1 flow rate for 1 hr followed by a 30 min PBS washing step of 6 or 36 ml min–1, respectively. Attached cells were imaged by brightfield microscopy and by CLSM after staining with 20× SYBR Green II (Sigma-Aldrich).
 
-## Hydrodynamic radius
+### Hydrodynamic radius
 
 S. epidermidis 1585 Pxyl/tet embp and S. epidermidis Δembp were prepared as described above, transferred to cuvettes and analyzed by dynamic light scattering (Folded Capillary Zeta Cell, Malvern, PA). Measurements of surface charge and cell diameter were carried out using Zetasizer Nano (Malvern Panalytical) on three replicate samples prepared from individually grown overnight cultures.
 
-## Single-cell force spectroscopy
+### Single-cell force spectroscopy
 
 SCFS measurements were conducted on Fn adsorbed in its globular conformation to PMA or its fibrillated conformation to PEA. For SCFS measurement, colloidal probes with 10 µm glass beads (SHOCON-BSG-B-5, Applied NanoStructures Inc, Mountain View, CA) were selected and coated by polymerizing a dopamine solution of 4 mg ml–1 dopamine hydrochloride (99%, Sigma-Aldrich, H8502) in 10 mM Tris-HCl buffer at pH 8.5, and then calibrated in situ for single-cell attachment. S. carnosus TM300 expressing 5 F- and 9 FG-repeats were subcultured from overnight cultures and incubated for 6 hr in fresh media, harvested and resuspended in PBS as described above. A 100 µl drop of this solution was placed on a glass slide and incubated for 10 min, after which the unadsorbed bacteria were removed by rinsing with PBS. A colloidal probe was immersed and positioned on top of a single cell with the help of inverted optical microscope. The probe was made to contact a single cell for 5 min then retracted after the cell attachment. Once a cell was picked up (confirmed by optical microscopy), the substrate was changed to Fn-coated surfaces and SCFS was executed. The acquired force-distance plots were processed using the Nanowizard’s (JPK, Germany) own processing software. Experiments were conducted on two replicate samples (minimum 20 replicate force curves on each).
 
-## Cloning and purification of F- and FG-repeats
+### Cloning and purification of F- and FG-repeats
 
 Genomic DNA was extracted from S. epidermidis 1585 WT strain using the Qiagen DNA kit (Qiagen, Hilden, Germany) by following the instructions of the manufacturer. The only exception made in the kit protocol was that cells were lysed with 15 U of lysostaphin, which was added to buffer P1. The nucleotide sequence of 1, 4, and 15 repeats of the FG-repeats was amplified from genomic DNA using primers (Table 2) with Phusion High-Fidelity PCR Kit (NEB – E0553S). The PCR products were purified with GenElute PCR Clean-Up Kit (Sigma-Aldrich NA1020). The expression vector pET302/NT-His was digested with EcoR1 restriction enzyme (NEB R0101S) and run on a 1.5% agarose gel. The digested vector was purified from the gel using the GenElute Gel Extraction Kit (Sigma-Aldrich NA1111). The purified PCR product of each rEmbp was ligated with the digested vector in a ratio of 3:1 using the Gibson assembly ligation matrix mix (NEB E5510S). Each ligation reaction was incubated for 1 hr at 50°C. The ligated products were transformed into the chemically competent Escherichia coli strain (Top10). The colony PCR was performed with REDTaq ReadyMix (Sigma-Aldrich R2523) using the T7 promoter primer as forward and the T7 terminator primer as the reverse. Cells from each selected colony were grown overnight in LB with 100 μg ml–1 ampicillin, and a plasmid miniprep was prepared using GeneJET Plasmid Miniprep Kit (Thermo Scientific K0702). Plasmids were sequenced with both T7 promoter and terminator primers by the Eurofins A/S (Hamburg, Germany). The plasmid of each Embp construct was transformed into an expression system (chemically competent E. coli, BL21-DE3). A single colony of the transformants was used to inoculate 2 l of LB with 100 μg ml–1 ampicillin until the OD600 of 0.6. For the overexpression, cells were induced with 1 M IPTG, and incubated for 16 hr on 28°C in shaking incubator at 180 rpm. Cells were harvested and lysed in binding buffer with sonication (30% amplitude, 15 s off, 15 s on) for 3 min on ice. After centrifugation, the supernatant was filtered with a 0.22 μm syringe filter and run on a nickel-nitrilotriacetic acid (Ni-NTA) column using ÄKTA Purifier-10 purification system. The column was washed with 5–8 column volumes, and the fusion proteins Embp was then eluted in fractions using elution buffer. Fractions of each rEmbp were pooled, concentrated with Amicon Ultra centrifugal filter tubes with a cut-off 3 kDa (Millipore Sigma UFC9003). Proteins were further purified with (HiTrap Q FF) column by anion exchange (IEX) chromatography using IEX binding and elution buffer, followed by size exclusion chromatography (SEC) with column (Superdex 200 Increase 10/300 GL) using MES buffer on ÄKTA Purifier-10 purification system. After each column, the elution fractions were run on SDS-PAGE to check the purification quality. Buffers used for rEmbp purification are listed in Table 3.
 
-## Single-molecule force spectroscopy
+**Table 2.**
+ Primers for recombinant Embp (rEmbp) cloning into pET302/NT-His.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Primer</th>
+      <th>Sequence (5′ to 3´)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>FG forward</td>
+      <td>AGAAGGAGATATACATATGCATCATCATCATCATCACGTGGAATTCGAAAACC TGTATTTTCAGGGCGGAGATCAAAAACTTCAAGATG</td>
+    </tr>
+    <tr>
+      <td>1 FG reverse</td>
+      <td>TCCGATTATACCTAGGCTCGAATATCATCGATCTCGAGCGGAATTCTTAATGA AGATTTTGTTCAGC</td>
+    </tr>
+    <tr>
+      <td>4 FG reverse</td>
+      <td>TCCGATTATACCTAGGCTCGAATATCATCGATCTCGAGCGGAATTCTTAATGT AAACTTTCTCTAGC</td>
+    </tr>
+    <tr>
+      <td>15 FG reverse</td>
+      <td>TCCGATTATACCTAGGCTCGAATATCATCGATCTCGAGCGGAATTCTTAATT TAACGATGTTTCTGC</td>
+    </tr>
+    <tr>
+      <td>T7 Promotor</td>
+      <td>TAATACGACTCACTATAGGG</td>
+    </tr>
+    <tr>
+      <td>T7 Terminator</td>
+      <td>GCTAGTTATTGCTCAGCGG</td>
+    </tr>
+  </tbody>
+</table>
+
+**Table 3.**
+ Buffer used for recombinant Embp (rEmbp) purification.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Buffer name</th>
+      <th>Composition</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Binding/lysis</td>
+      <td>50 mM K2PO4, 500 mM NaCl, 400 mM imidazole, pH 7.4</td>
+    </tr>
+    <tr>
+      <td>Ni-NTA elution</td>
+      <td>50 mM K2PO4, 500 mM NaCl, 40 mM imidazole, pH 7.4</td>
+    </tr>
+    <tr>
+      <td>IEX binding</td>
+      <td>20 mM Bis-Tris propane, pH 6.0</td>
+    </tr>
+    <tr>
+      <td>IEX elution</td>
+      <td>20 mM Bis-Tris propane, 1 M NaCl, pH 6.0</td>
+    </tr>
+    <tr>
+      <td>SEC</td>
+      <td>50 mM MES, 150 mM NaCl, pH 6.0</td>
+    </tr>
+  </tbody>
+</table>
+
+### Single-molecule force spectroscopy
 
 SMFS measurements, similar to SCFS, conducted on Fn adsorbed to either PEA and PMA. For the SMFS experiments, the probes were prepared by attaching rEmbp fragments of various lengths with the use of 6× His-NTA interaction. The procedure was similar to that of Obataya et al., 2005. In short, silicon probes were cleaned with ozone, and UV light then kept in one to one isopropyl alcohol and ethanol mixture overnight. Tips were rinsed in deionized water and air-dried, after which they were functionalized with 2% (3-mercaptopropyl) trimethoxysilane in EtOH for 30 min. Probes were then exposed to maleimide-C3-NTA in 50% DMF/100 mM Tris-HCl (pH7.5±0.1) overnight. Ten mM NiCl2 was used to chelate the NTA groups on the tip, which was then dipped in bovine serum albumin (1 mg ml–1 in PBS) to passivate the surface. The attachment of 6× His-tagged rEmbp fragments with 1, 4, or 15 repeating units of Fn-binding repeats was completed by 1 hr incubation of respective samples at room temperature. After a probe for each repeating unit was prepared, force-distance curves were collected on three replicate samples and processed, as mentioned above.

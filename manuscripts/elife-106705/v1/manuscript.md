@@ -11,7 +11,7 @@
 
 ### Affiliations
 
-1. https://ror.org/03hsf0573 ReForm Lab, College of William & Mary Williamsburg United States
+1. ReForm Lab, College of William & Mary Williamsburg United States ([ROR:03hsf0573](https://ror.org/03hsf0573))
 
 † Corresponding author
 

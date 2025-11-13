@@ -11,8 +11,8 @@
 
 ### Affiliations
 
-1. https://ror.org/01keh0577 Department of Physiology and Cell Biology, University of Nevada, Reno School of Medicine Reno United States
-2. https://ror.org/05f950310 Laboratory of Auditory Neurophysiology, Medical School, Campus Gasthuisberg, University of Leuven Leuven Belgium
+1. Department of Physiology and Cell Biology, University of Nevada, Reno School of Medicine Reno United States ([ROR:01keh0577](https://ror.org/01keh0577))
+2. Laboratory of Auditory Neurophysiology, Medical School, Campus Gasthuisberg, University of Leuven Leuven Belgium ([ROR:05f950310](https://ror.org/05f950310))
 
 † Corresponding author
 
@@ -32,13 +32,45 @@ We found that SGNs respond to minute mechanical displacement. Motivated by this 
 
 ## Results
 
-## Mouse auditory neurons respond to stepped mechanical stimulation
+### Mouse auditory neurons respond to stepped mechanical stimulation
 
 Figure 1a shows the responses of adult mouse SGNs subjected to two different bath solution flow rates (0.5 and 3 ml/min). The neural activity at the highest flow rate is much larger and reflects the monotonously increasing relationship that saturates at 8 ml/min (Figure 1—figure supplement 1). In a small number of neurons (6 out of 110), increasing the flow rate produced a suppressive response (Figure 1—figure supplement 1). SGN terminals are unmyelinated (Kim and Rutherford, 2016; Liberman, 1982). We inferred that the SGN terminals could undergo minute displacement, subject to OCM (Chen et al., 2011; Jawadi et al., 2016; Karavitaki and Mountain, 2007), raising the possibility of a direct mechanical pathway affecting AN responses in addition to synaptic transmission. To stimulate the unmyelinated dendritic terminals in vitro, SGNs were cultured on a polydimethylsiloxane (PDMS) substrate (Cheng et al., 2010). We displaced a single dendrite by substrate indentation on this platform, using a fire-polished glass pipette driven by a piezoelectric actuator (Sd, inset Figure 1b). Dendrite-substrate displacement evoked membrane depolarization and APs at the recording patch electrode (R, inset Figure 1b). Soma-substrate or direct soma displacement was used for extended recordings and voltage(V)-clamp experiments. In both stimulation configurations, rectangular or ramp displacements evoked either a subthreshold membrane depolarization or APs, depending on the amplitude or ramp velocity (slew rate) (Figure 1b, c). When SGNs were interrogated with stepped mechanical displacement, 12 out of 32 neurons showed an increase in firing rate. In contrast, in some SGNs, including those with spontaneous activity (n = 10), an increase in mechanical displacement amplitude induced a suppressive response. In 10 out of 32 SGNs, interrogation with stepped mechanical displacement did not affect the AP firing rate (Figure 1—figure supplement 2).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/74948/elife-74948-fig1-v2.jpg)
+
+**Figure 1.:** (a) Responses of 8-week-old basal spiral ganglion neuron (SGN) to bath solution flow rate shown with colored bars (3 ml/min, magenta; 0.5 ml/min, green). Vrest = –62 mV. (b) Mechanical displacement (20 ms rectangular-pulse injection) of apical SGN soma, subthreshold (0.15 μm, red), and threshold (0.4 μm, blue) responses. Arrow indicates pulse initiation. Inset depicts the patch-clamp recording electrode (R) and stimulating probe (piezoelectric actuator represented as spring), placed ~180o from the patch electrode at the soma (Ss) or on the substrate to stimulate dendrites (Sd). (c) Responses of basal SGN to dendrite-substrate ramp-displacement at slew rates (μm/ms) 0.1 (red), 0.5 (purple), and 1.0 (blue). Arrow indicates the time of pulse initiation. Action potential (AP) latency increased as the slew rate decreased rate, 1 μm/ms, latency = 4 ± 0.1 ms; 0.5 μm/ms = 6 ± 0.2 ms (n = 14). The corresponding phase plots (dV/dt versus V) of the responses are shown next to the traces. (d) Current traces from displacement-clamp (X = 0–1.2 μm, step size ΔX = ~0.24 μm) recordings at a holding voltage of –70 mV. Data are obtained from apical SGNs; for basal SGNs data, see S2. (e) Summary data of displacement-response relationship of IMA represented as channel open probability (Po) as a function of displacement, fitted by a single Boltzmann function. Data are from apical (▲) and basal (□) SGNs. The one-half-maximum displacements (X0.5) are indicated by the vertical dashed lines (X0.5 = 0.42 ± 0.01 μm (apical SGNs) and 0.35 ± 0.01 μm (basal SGNs), n = 14 for both). (f) Average I-V relationship of MA currents. Inset shows traces of IMA evoked at different holding voltages (−90 to 90 mV, ΔV = 30 mV, X = 0.4 μm). The regression line indicates a reversal potential of the MA current (EMA) of –1.4 ± 2.1 mV (cumulative data from apical SGNs, n = 17). The whole-cell conductance derived from the regression line is 3.2 ± 0.2 nS (n = 17). (g) APs from basal SGN evoked in response to 0.8 μm displacement of neurite substrate (first black trace; Vrest = –59 mV; dashed line = 0 mV). Effect of 1 μM GsMTx4 (middle gray trace) and partial recovery after washout (last black trace; n = 5). (h) Dose-response relationship of IMA as function of blocker GsMTx4, IC50 = 0.9 ± 0.2 μM (n = 4). Numbers of SGNs at different concentrations of GsMTx4 are shown in brackets. Inset shows IMA in response to a 0.3 μm displacement at –70 mV holding voltage (gray trace is 1 μM GsMTx4; black trace is control).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/74948/elife-74948-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Summary data from four 8-week-old SGNs showing changes in normalized spike rate at different bath solution flow rates. The normalized spike rate saturated at ~8 ml/min. (b) Cumulative binomial distribution of the mechanical threshold (mean cell-body displacement in μm) to elicit action potentials (APs) in mechanically sensitive SGNs. Three distinct peaks were observed: 0.24 ± 0.01, n = 85 (blue); 0.51 ± 0.01, n = 164 (black); and 0.95 ± 0.02, n = 56 (red). (c) A membrane response of an 8-week-old apical SGN at a current injection of 0.2 nA and perfusion flow rates of 3 and 6 ml/min. The shift from slow (3 ml/min) to fast (6 ml/min) rate caused membrane hyperpolarization and reduced spike activity.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/74948/elife-74948-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Representative current-clamp responses evoked by current injection and combined mechanical displacement (blue) were applied in soma displacement (1 μm). (a) Shown is an example of a basal SGN response injected with a 0.2 nA current alone (left panel) to invoke firing responses, which were subsided despite maintained current injection. When both stimuli are applied simultaneously (right panel), the firing rate increases. Note that the spike activity halted before ending the mechanical displacement. Vrest shifted by ~8 mV in depolarizing direction, in the right trace, which may account for the spike amplitude reduction. The firing rate increased in many (~38%; 12 out of 32 SGNs) adapting neurons when the current injection was combined with mechanical displacement. (b) In spontaneously active SGNs, gradual increase (0–0.7 μm; see lower panels) in dendritic substrate displacement resulted in reduced spike rate (31%; 10 out of 32 SGNs). (c) For this non-adapting basal neuron, the firing rate remained unchanged (~31%; 10 out of 32 SGNs). (d) Summary data, showing the response properties of SGNs to current alone and combined current and mechanical displacement (indicated). Data are grouped into SGN subgroups in which paired current and mechanical displacement resulted in increased (black symbols), reduced (blue), and unaltered (red) spike frequencies.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/74948/elife-74948-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Current traces (dark gray) in response to ~215 ms mechanical stimulus steps of ~0.28 μm increments in SGNs from the basal cochlear turn in the mouse. The holding potential was –70 mV. The solid black lines represent the double exponential fits for the current decay kinetics. (b) Summary data of the decay time constant (τ) as a function of displacement for (X) for currents recorded from SGNs from apical (n = 17) and basal (n = 15) cochleae. (c) Shown is the average I-V relationship of mechanically activated (MA) currents evoked at different membrane potentials (−90 to 90 mV), using ~0.4 μm displacement. The regression line indicates an MA current reversal potential (EMA) of –2.7 ± 2.1 mV (n = 13). The inset shows an example of representative MA current (IMA) traces with membrane voltages stepped in 30 mV increments, from –90 to 90 mV.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/74948/elife-74948-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Response properties (from left to right: fast, medium, and slow adapting) of three different chinchilla spiral ganglion neurons (SGNs) to 0.2 nA square pulse injection (upper panel, green) and 0.3 μm soma displacement (lower panel, magenta). Note that the responses to mechanical displacement and current injection differed greatly. (b) Current traces of an SGN soma (apical cochlear turn) in response to displacement-clamp stimuli from 0 to 1.2 μm in ~0.24 μm, at a holding potential of –70 mV. (c) Displacement-response relationship of apical SGNs (n = 9), same as Figure 1e, but for chinchilla; X0.5 is 0.49 ± 0.05 μm (vertical dashed line). (d) Average I-V relationship of MA currents. Holding voltages range from –90 to 90 mV in increments of 30 mV; the inset shows IMA traces at different holding voltages for a soma displacement of 0.4 μm. The regression line through the data points indicates an EMA of 8.1 ± 5.5 mV (n = 5) and a whole-cell conductance of 1.4 ± 0.6 nS (n = 5).
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/74948/elife-74948-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** (a) Response properties of a 6-week-old mouse vestibular neuron to square pulse mechanical displacements. The magnitudes of the displacement at the soma are indicated. The dotted line denotes 0 mV, and the resting membrane potential (Vrest) is indicated. The inset shows the inward current generated from the same neuron in voltage-clamp mode at –70 mV holding voltage. (b) Summary data of displacement-response relationship of IMA represented as channel open probability (Po) as a displacement function, fitted by a two-state Boltzmann function. The one-half-maximum displacements (X0.5) were 1.37 ± 0.10 μm and 2.60 ± 0.97 (n = 7). Inset shows example traces elicited in a mouse vestibular neuron. (c) Eight-week-old vestibular neurons were injected with sinusoidal current with 0.2 nA peak-to-peak amplitude and varying frequencies (in Hz, 1, 10, 100, and 1000). (d) Mechanical displacements were applied to the same cell using similar oscillatory frequencies with a peak-to-peak amplitude of ~0.9 μm to elicit action potentials (APs). Only rates at 1 and 10 Hz sufficed to elicit spikes.
+
+![Figure 1—figure supplement 6.](https://cdn.elifesciences.org/articles/74948/elife-74948-fig1-figsupp6-v2.jpg)
+
+**Figure 1—figure supplement 6.:** (a) Membrane voltage responses to the cell-body displacement, from apical (left panel) and basal (right panel) cochlear neurons. As indicated, the amplitude and duration of soma displacement were in the form of rectangular steps. The amplitude and duration for the left panel (apical SGN) were as follows (in μm and ms), 2 and 0.5 (black); 0.5 and 3 (red); 0.4 and 3.5 (blue); 0.25 and 4 (green). The amplitude and duration for the right panel (basal SGN) were as follows (in μm and ms), 1 and 0.5 (black); 0.5 and 3 (red); 0.4 and 3.5 (blue); 0.25 and 4 (green). (b) A plot of mean rheobase using soma displacement of apical and basal neurons and their respective chronaxie indicated in red and blue dashed lines. The inset shows the mean rheobase displacement of dendritic substrate for SGNs from the cochlea’s apex and the base. (c) Family of action potentials (APs) evoked using step displacement (0.5 μm) and varying slew rates, indicated by color codes. The differences in latency of AP initiation are visible. (d) The plot shows the relation between AP latency and the slew rate of mechanical displacement (n = 5). AP latency using the indirect movement of dendrites through substrate displacement at varying slew rates for four SGNs is plotted as inset.
+
+![Figure 1—figure supplement 7.](https://cdn.elifesciences.org/articles/74948/elife-74948-fig1-figsupp7-v2.jpg)
+
+**Figure 1—figure supplement 7.:** (a) Characteristic apical SGN stimulated with 0.5 μm mechanical displacement at 50 Hz. Subsequent traces below show the responses with 0.7 and 0.9 μm sine wave displacements at 50 Hz. (b) Another apical SGN presented with 0.5 mm mechanical displacement at 100 Hz and increased stimulus amplitudes. The data represent SGNs that elicit increasing action potentials (APs) frequency with increasing mechanical displacement amplitude (b) and ones that show peak firing at specific displacement amplitude (a). (c–d) Summary data of the two sets of SGNs, showing the relationship between displacement amplitude, spike frequency (SF; in solid symbols), and vector strength (VS; in open symbols). Each symbol represents a different SGN (c) n = 4; (d n = 6). (e) Exemplary three different basal SGN stimulated with constant displacement (0.6 μm) at 1, 10, and 100 Hz. When presented with a constant displacement, neurons appeared to respond at a narrow frequency range (1–100 Hz), contrasting to current injection (1–1000 Hz) (f). (g) Summary data show the relationship between displacement or current frequency, SF (in solid circles), and VS (in open circles). Each symbol represents a different SGN (n = 6). Data from the current injection are represented with star symbols (n = 5).
+
 From a holding potential (Vh) of –70 mV, displacement evoked current (IMA) (Figure 1d). The IMA amplitude ranged from 100 to 700 pA (426 ± 85 pA; n = 95). The IMA shows a bi-exponential decay over time with a fast (τ1) and slow (τ2) time constant. For IMA elicited with a 1.12 μm displacement, τ1 and τ2 were 3.6 ± 2.6 and 24 ± 5.7 ms (n = 17) for apical neurons, and 2.1 ± 1.1 and 17.0 ± 4.8 ms (n = 15) for basal neurons (Figure 1—figure supplement 3), respectively. The displacement-response relationships of these apical and basal neurons (Figure 1e), expressed as a channel open probability (Po), were fitted with a single Boltzmann function (black curves). The half-maximal activation displacements (X0.5) were 0.42 ± 0.01 μm (n = 14) and 0.35 ± 0.01 μm (n = 14) for IMA from apical and basal neurons, respectively (Figure 1e). Varying Vh and using a constant displacement (~0.4 μm) yielded IMA with a linear I-V relationship and a reversal potential (EMA) ~0 mV (–1.4 ± 2.1 mV; n = 17), which is consistent with a non-selective cationic conductance (Figure 1f). The IMA in SGNs was sensitive to an externally applied MA channel blocker, GsMTx4 (Bae et al., 2011). Application of 1 μM GsMTx4 decreased the current amplitude by ~52% (52 ± 8%, n = 5; Figure 1h inset). The half-maximal inhibitory concentration (IC50) obtained from the dose-response curve was 0.9 ± 0.2 μM (n = 4; Figure 1h). Additionally, 1 μM GsMTx4 completely abolished the dendrite displacement-evoked APs, which was partially reversible after washout (Figure 1g).
 
-## Response properties of chinchilla auditory and mouse vestibular neurons to stepped and sinusoidal mechanical stimulation
+### Response properties of chinchilla auditory and mouse vestibular neurons to stepped and sinusoidal mechanical stimulation
 
 If the mechanosensory features of the SGNs are fundamental to auditory information coding, we would expect the phenomena to transcend species differences. Auditory neurons’ mechanical sensitivity was not restricted to the mouse: adult chinchilla SGNs were similarly, but not identically, responsive to mechanical stimulation, validating the potential physiological relevance across species. Shown are exemplary APs from chinchilla SGNs in response to the soma’s current injection and mechanical stimulation (Figure 1—figure supplement 4). The current elicited with mechanical displacement from –70 mV Vh, and the summary of the corresponding displacement-response relationship was also fitted with a single Boltzmann function with X0.5 of 0.49 ± 0.05 (n = 9; Figure 1—figure supplement 4). The I-V relationship from chinchilla SGN IMA produced EMA = –8.1 ± 5.5 mV; n = 5 (Figure 1—figure supplement 4). The results suggest that IMA in chinchilla SGNs share features with those observed in the mouse.
 
@@ -48,21 +80,835 @@ SGNs show a variety of responses to current injection. Current-evoked responses 
 
 We used sinusoidal mechanical displacement as a proxy for in vitro sound stimulation at different frequencies, recording from mouse SGNs, and the responses were also variable (Figure 1—figure supplement 7). AP firing increased with increasing amplitude of mechanical stimulation (Figure 1—figure supplement 7) and was phase-locked. In some SGNs (4 out of 11), the responses were attenuated with larger mechanical displacement. A train of varying frequencies of mechanical stimulation, in decade steps, shows the SGNs responded to and are phase-locked to specific frequencies up to 100 Hz, but responses were absent at 1000 Hz. In contrast, the response properties of SGNs reached 1000 Hz sinusoidal current injection. Responses to current injection were broader than mechanical stimulation (Figure 1, Figure 1—figure supplement 7).
 
-## Amplitude and phase of combined current and mechanical sinusoidal stimulation affect response rate and timing
+### Amplitude and phase of combined current and mechanical sinusoidal stimulation affect response rate and timing
 
 Because sound waves are converted into mechanical vibrations transmitted via the middle ear to the cochlea, which converts them into neural signals, the question arises whether the mechanical responses shown here play a role in hearing. As AN fibers traverse different compartments of the OC (osseous spiral lamina, basilar membrane) to innervate IHC, they lose their myelin sheath at the habenula perforata (Morrison et al., 1975; Figure 2a). The unmyelinated terminal is subject to sound-evoked displacement or pressure changes. Direct examination of potential synergistic or antagonistic effects between neurotransmission and mechanical signaling at or near the AN synaptic terminal is currently not technically possible; however, the interaction of their proxies of current injection and substrate vibration can be examined. We applied sinusoidal currents and mechanical displacements to produce more physiological stimuli that mimic sound-evoked neurotransmission and movement (see Materials and methods).
 
+![Figure 2.](https://cdn.elifesciences.org/articles/74948/elife-74948-fig2-v2.jpg)
+
+**Figure 2.:** (a) (Upper panel) Shown is a schematic diagram of the SGN and projections to inner hair cells (IHCs) and outer hair cells (OHCs). The myelinated and unmyelinated segments and nerve fibers are indicated. The heminode, the action potential (AP) initiation site, is labeled. (Lower panel) Horizontal section of whole-mount intact SGNs and HCs of a 5-week-old mouse cochlea, showing neuron (in red, anti-TUJ1) and myelin (in cyan, anti-myelin basic protein). The white dashed line shows the expected location of the basilar membrane. HCs are in green (anti-Myo7a). Note that the nerve terminals are devoid of myelin. Scale bar = 20 μm. (b) (Upper panel) Voltage response to combined subthreshold sinusoidal mechanical displacement (in magenta; 50 Hz, 0.1 μm, ~ 2 s) and subthreshold sinusoidal current injection (in green, 50 Hz, 0.05-nA, ~ 2 s), delivered in-phase. Current injection and mechanical displacement overlapped for ~1 s. Combined subthreshold mechanical and current stimulation evoked APs. (Lower panel) We show conditions similar to the upper panel, but subthreshold current injection preceded subthreshold mechanical displacement here. Subthreshold stimuli, when paired, became suprathreshold. (c–d) Spike rate, normalized to maximum, as a function of displacement (c), and current injection (d). The leading stimulus was primed with a subthreshold sinusoidal current or displacement, respectively. (e–f) The extent of sensitivity to current and displacement is represented as a plot of the half-maximum displacement (X0.5) and half-maximum current (I0.5) as a function of current and displacement. The slopes of the corresponding linear plots were, –1.4 μm/nA (n = 5) (e) and –0.5 nA/μm (n = 5) (f). (g) (Upper panel) Slowly adapting SGN response to 0.2 nA injection at 100 Hz, overlapping with a pre-determined threshold (0.3 μm displacement at 100 Hz) mechanical stimulus. For this example, the vector strength (VS) transitioned from 0.82 to 0.98 upon combined (current plus mechanical displacement) stimulation (see Table 1 for summary data). (Lower panel) Moderately adapting SGN, stimulated with the same stimuli as the upper panel, transitioned from VS of 0.72–0.82 (Table 1). (h) (Upper and lower panels) Stimulation of fast-adapting SGN in response to 100 Hz, a 0.3 μm displacement superimposed with 100 Hz 0.2 nA current injection. For the examples shown, the VS transitioned from unmeasurable to 0.94 for the upper panel and 0.9 for the lower panel. (i–j) A summary of VS changes when either current or displacement is used as a primer for concurrent stimulation (Figure 1, Table 1, Figure 1—figure supplement 7).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/74948/elife-74948-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Bath perfusion of GsMTx4 (1 μM), decreased facilitation, and spike timing resulting in reduced vector strength (VS) of the response to the simultaneous application of 100 Hz mechanical displacement (0.3 μm, blue) and current injection (0.2 nA, red) in an 8-week-old spiral ganglion neurons (SGN).
+
 We find that the two stimulus modalities interact: mechanical and current stimuli, which are subthreshold and can be suprathreshold when combined (Figure 2b). Since the exact relationship in amplitude and phase between synaptic events and the mechanical displacement or deformation hypothesized to affect the afferent dendrite is unknown, we explored different amplitude (Figure 2) and phase (Figure 3) relationships between current and mechanical stimulation. First, the interaction was determined using in-phase stimulation: SGNs were primed with sustained subthreshold current, and the displacement-response relationship was tested. The mechanical responsiveness increased with increased current injection, shifting the rate curves to lower displacement values (Figure 2c). Increasing subthreshold mechanical displacement moved the rate curves to lower current values (Figure 2d). The X0.5 derived from Figure 2c as a current priming function has a linear relationship, with a slope of –1.4 μm/nA (Figure 2e). As a function of priming mechanical displacement, the converse half-maximum current (I0.5; Figure 2d) also shows a linear relationship, with a slope of –0.5 nA/μm (Figure 2f). These orderly interactions between intrinsic mechanical responsiveness and electrical activity suggest that the increase in mechanical displacement with increasing sound intensity could have a monotonic effect on the spike rate.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/74948/elife-74948-fig3-v2.jpg)
+
+**Figure 3.:** (a) SGN response properties and corresponding cycle histograms generated by simultaneous sinusoidal mechanical subthreshold displacement (0.1 μm, 50 Hz; magenta) and sinusoidal current injection (0.2 nA, 50 Hz; green). The relative phase angle of the two stimuli was at 0o. The amplitude criterion of a valid action potential (AP) was 0 mV (dashed line). (b, c) The cycle histograms transitioned to two peaks and back to one peak as the amplitude of mechanical displacement increased to 0.2 μm (b) and 0.3 μm (c). (d–g) Response properties and corresponding cycle histograms for the same SGN as in (a–c), but using different relative phase angles (0°, 90°, 180°, 225°) between mechanical displacement (0.15 μm) and current injection (0.3 nA). At 180° and 225° phase angles, two peaks are evident in the cycle histograms shown in the panels below. (h) Polar plot summarizing data averaged over three stimulus repetitions derived from the SGN illustrated in d–g. The angular scale specifies the phase lead of the current relative to the mechanical stimulus and the two data points at each of the eight angles plotted are derived from data as shown in individual panels d–g: average rate is shown in blue and is normalized to its maximum (listed in Table 3); VS is shown in red. The data are summarized with a vector (resultant of vectorial addition of data at eight angles) whose magnitude and angle are shown with thick and thin solid lines, respectively, using the same color code. The close angular alignment of the red and blue lines shows that a high firing rate is accompanied by strong phase locking, and vice versa that peak-splitting is associated with low firing rates. (i–l) Phase angle-dependent response reduction (180o), and suppression (270o) during combined stimulation for a different neuron. (m) A polar plot as in h but for the neuron illustrated in (i–l). Data for the polar plots spike rates, magnitude and phase of resultant vectors, and statistics are provided in Table 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/74948/elife-74948-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Shown are voltage responses of chinchilla SGNs evoked with sinusoidal (15 Hz) mechanical displacement (0.7 μm, in blue) combined with sinusoidal (15 Hz) current injection (0.25 nA, in red) at four different relative phase angles (a–d, 0°, 45°, 180°, 225°, respectively). Two action potentials were elicited per cycle for most cycles, which was the case for all four relative phase angles tested. A s seen in (a and b) the second cycle yielded three action potentials (purple arrows) for the 0°, and 45o relative phased angles (insets).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/74948/elife-74948-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (a) Response properties of chinchilla SGNs to sinusoidal current injection (50 Hz, amplitude, 0.2 nA) and cell-body sinusoidal mechanical displacement (50 Hz; amplitude, 0.3 μm), and overlap of the two stimuli at ~90o phase angle. (b) Cycle histograms of the same neuron for four relative phase angles, showing single-mode distributions with small changes in the response phase. (c) Example of chinchilla SGN exhibiting peak-splitting in the cycle histogram during combined cell-body mechanical displacement and current injection using 50 Hz sinusoidal stimuli. (d) Cycle histograms with two modes were obtained at 90o and 180o phase angles.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/74948/elife-74948-fig3-figsupp3-v2.jpg)
+
+**Figure 3—figure supplement 3.:** (a–c) Polar plots for three neurons in which a full circle of relative phase angles was tested. Conventions as in Figure 3h and m. Magnitude and phase of resultant vectors and a maximal number of spikes and statistical significance are listed in Table 3. All polar plots differed significantly from uniform distributions. (d) The relationship between spike rate and VS for all tests, including incomplete datasets. Symbols with circles indicate complete measurement series (n = 5) (0°–315° in steps of 45°) with different colors indicating different experiments. Square symbols are from incomplete phase sets (n = 6, containing three or four phase measurements). The spike rates are normalized to the maximum within each series. The dashed line indicates unity, and the black line is the least-square fit, with R the Pearson correlation.
 
 The effect of combined stimulation on phase locking was studied with in-phase sinusoidal current and mechanical displacement overlapped for ~2 s. Figure 2g (upper panel) shows a slowly adapting SGN response to current stimulation (6-week-old basal SGN) with a firing rate of 36 ± 5 spikes/s, which increased to 50 ± 3 spikes/s (n = 9; p = 0.01) upon paired mechanical stimulation applied to the soma. Synchronization between stimulus and response was measured with vector strength (VS) (Goldberg and Brown, 1969): VS to the 100 Hz current injection alone was 0.82 ± 0.05 and increased with paired stimulation to 0.98 ± 0.01 (n = 9; p = 0.01). For the moderately adapting SGN (Figure 2g lower panel; 5-week-old apical SGN), the VS increased from 0.72 ± 0.06 to 0.82 ± 0.07 (n = 8; p = 0.04) after paired stimulation. The converse paradigm, where mechanical stimulation preceded combined current and mechanical stimulation, is illustrated for two fast-adapting SGNs. They showed a significantly increased AP firing rate when the two stimuli overlapped (Figure 2h), with high VS values (0.94 and 0.9). For this set of experiments (28 SGNs) in which the pre-paired stimulation yielded non-zero VS (see Materials and methods), 21 SGNs (75%) showed a significant increase in VS (p < 0.05). In the remaining 7 SGNs (25%), the VS was reduced (Figure 2i–j, shown in green symbol and line). The summary data show that combined current and mechanical stimulation tended to alter the VS, suggesting the two stimuli interact to shape the response properties of SGNs (Figure 2i–j; Table 1). When the response to mechanical stimulation was reduced by application of GsMTx4 (1 μM), dual current and displacement-responses resulted in a reduced VS (Figure 2—figure supplement 1, Table 2).
 
+**Table 1.**
+ Summary of changes in spike rate I and VS using in-phase current and mechanical stimulations.The significance level of VS is given in the column with p-values obtained with the Rayleigh test for uniformity (Mardia, 1972).
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SGN</th>
+      <th colspan="2">Current (I)R (spike/s) VS</th>
+      <th>Rayleigh p</th>
+      <th colspan="2">Mech stim (X)R (spike/s) VS</th>
+      <th>Rayleigh p</th>
+      <th colspan="2">I + XR (spike/s) VS</th>
+      <th>Rayleigh p</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>13830002</td>
+      <td>0.5</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>40</td>
+      <td>0.96</td>
+      <td>0.0013</td>
+    </tr>
+    <tr>
+      <td>13830003</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>40</td>
+      <td>0.91</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>13903009</td>
+      <td>50</td>
+      <td>0.97</td>
+      <td>0.01</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>74</td>
+      <td>0.95</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>13903030</td>
+      <td>7.5</td>
+      <td>0.98</td>
+      <td>0.02</td>
+      <td>2.5</td>
+      <td>0.14</td>
+      <td>0.11</td>
+      <td>95</td>
+      <td>0.94</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>13903043</td>
+      <td>21</td>
+      <td>0.96</td>
+      <td>0.01</td>
+      <td>14</td>
+      <td>0.95</td>
+      <td>0.02</td>
+      <td>99</td>
+      <td>0.99</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>13903044</td>
+      <td>11.5</td>
+      <td>0.95</td>
+      <td>0.01</td>
+      <td>51</td>
+      <td>0.98</td>
+      <td>0.01</td>
+      <td>100</td>
+      <td>0.99</td>
+      <td>0.0086</td>
+    </tr>
+    <tr>
+      <td>13903029</td>
+      <td>23</td>
+      <td>0.94</td>
+      <td>0.04</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>89</td>
+      <td>0.96</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>13903010</td>
+      <td>49</td>
+      <td>0.98</td>
+      <td>0.01</td>
+      <td>0.5</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>69</td>
+      <td>0.94</td>
+      <td>0.0012</td>
+    </tr>
+    <tr>
+      <td>13903058</td>
+      <td>45</td>
+      <td>0.98</td>
+      <td>0.01</td>
+      <td>12</td>
+      <td>0.97</td>
+      <td>0.02</td>
+      <td>96</td>
+      <td>0.97</td>
+      <td>0.0003</td>
+    </tr>
+    <tr>
+      <td>13903059</td>
+      <td>24.5</td>
+      <td>0.94</td>
+      <td>0.03</td>
+      <td>50.5</td>
+      <td>0.98</td>
+      <td>0.01</td>
+      <td>92</td>
+      <td>0.96</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>13904007</td>
+      <td>0.5</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99.5</td>
+      <td>0.99</td>
+      <td>0.009</td>
+    </tr>
+    <tr>
+      <td>13904008</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>22.5</td>
+      <td>0.94</td>
+      <td>0.03</td>
+      <td>100</td>
+      <td>0.997</td>
+      <td>0.0001</td>
+    </tr>
+    <tr>
+      <td>13904023</td>
+      <td>1.5</td>
+      <td>0.15</td>
+      <td>0.43</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>99.5</td>
+      <td>0.99</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>13904024</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>100</td>
+      <td>0.96</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>13904037</td>
+      <td>2</td>
+      <td>0.1</td>
+      <td>0.67</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>55</td>
+      <td>0.89</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>13904038</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>2.5</td>
+      <td>0.15</td>
+      <td>0.32</td>
+      <td>50.5</td>
+      <td>0.995</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>13909008</td>
+      <td>0.5</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>64</td>
+      <td>0.96</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>13909009</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>1.5</td>
+      <td>0.12</td>
+      <td>0.52</td>
+      <td>62</td>
+      <td>0.96</td>
+      <td>0.013</td>
+    </tr>
+    <tr>
+      <td>13909024</td>
+      <td>36</td>
+      <td>0.87</td>
+      <td>0.02</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>50</td>
+      <td>0.98</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>13909025</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0.5</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>50.5</td>
+      <td>0.95</td>
+      <td>0.012</td>
+    </tr>
+    <tr>
+      <td>13909040</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>16</td>
+      <td>0.94</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>13909041</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>13</td>
+      <td>0.75</td>
+      <td>0.052</td>
+    </tr>
+    <tr>
+      <td>13913008*</td>
+      <td>45.5</td>
+      <td>0.72</td>
+      <td>0.04</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>43</td>
+      <td>0.82</td>
+      <td>0.036</td>
+    </tr>
+    <tr>
+      <td>13913009*</td>
+      <td>35</td>
+      <td>0.87</td>
+      <td>0.03</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>50.5</td>
+      <td>0.9</td>
+      <td>0.027</td>
+    </tr>
+    <tr>
+      <td>14900012*</td>
+      <td>18</td>
+      <td>0.76</td>
+      <td>0.02</td>
+      <td>3</td>
+      <td>0.15</td>
+      <td>0.34</td>
+      <td>64.5</td>
+      <td>0.95</td>
+      <td>0.011</td>
+    </tr>
+    <tr>
+      <td>14903018*</td>
+      <td>0.5</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>5</td>
+      <td>0.2</td>
+      <td>0.36</td>
+      <td>31.5</td>
+      <td>0.87</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>14903021*</td>
+      <td>1.5</td>
+      <td>0.1</td>
+      <td>0.25</td>
+      <td>0.5</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>45.5</td>
+      <td>0.91</td>
+      <td>0.010</td>
+    </tr>
+    <tr>
+      <td>14903083</td>
+      <td>32.5</td>
+      <td>0.68</td>
+      <td>0.02</td>
+      <td>0.5</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>44.5</td>
+      <td>0.83</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>15800101</td>
+      <td>0.5</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>3</td>
+      <td>0.1</td>
+      <td>0.31</td>
+      <td>72.5</td>
+      <td>0.96</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>15800110</td>
+      <td>56</td>
+      <td>0.95</td>
+      <td>0.01</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>62</td>
+      <td>0.93</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>15800099</td>
+      <td>32</td>
+      <td>0.94</td>
+      <td>0.02</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>70.5</td>
+      <td>0.96</td>
+      <td>0.041</td>
+    </tr>
+    <tr>
+      <td>15810007</td>
+      <td>56</td>
+      <td>0.98</td>
+      <td>0.01</td>
+      <td>3.5</td>
+      <td>0.2</td>
+      <td>0.14</td>
+      <td>58</td>
+      <td>0.97</td>
+      <td>0.020</td>
+    </tr>
+    <tr>
+      <td>15800291</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>5</td>
+      <td>0.25</td>
+      <td>0.08</td>
+      <td>94.5</td>
+      <td>0.99</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>15800292</td>
+      <td>0.5</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>3</td>
+      <td>0.10</td>
+      <td>0.56</td>
+      <td>56.5</td>
+      <td>0.92</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <td>15800293</td>
+      <td>3</td>
+      <td>0.15</td>
+      <td>0.09</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>95.5</td>
+      <td>0.99</td>
+      <td>0.0001</td>
+    </tr>
+    <tr>
+      <td>15800295</td>
+      <td>2.5</td>
+      <td>0.1</td>
+      <td>0.27</td>
+      <td>3</td>
+      <td>0.1</td>
+      <td>0.53</td>
+      <td>68.5</td>
+      <td>0.89</td>
+      <td>0.004</td>
+    </tr>
+    <tr>
+      <td>15800301</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>8</td>
+      <td>0.3</td>
+      <td>0.18</td>
+      <td>46.5</td>
+      <td>0.96</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>15800308</td>
+      <td>48</td>
+      <td>0.87</td>
+      <td>0.02</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>92</td>
+      <td>0.98</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>15800319</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>7</td>
+      <td>0.25</td>
+      <td>0.11</td>
+      <td>89.5</td>
+      <td>0.94</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>15800320</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>5</td>
+      <td>0.3</td>
+      <td>0.11</td>
+      <td>49.5</td>
+      <td>0.91</td>
+      <td>0.003</td>
+    </tr>
+    <tr>
+      <td>15800401</td>
+      <td>16.5</td>
+      <td>0.71</td>
+      <td>0.02</td>
+      <td>17</td>
+      <td>0.55</td>
+      <td>0.03</td>
+      <td>56.5</td>
+      <td>0.89</td>
+      <td>0.021</td>
+    </tr>
+    <tr>
+      <td>15800402</td>
+      <td>7</td>
+      <td>0.25</td>
+      <td>0.05</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>42.5</td>
+      <td>0.91</td>
+      <td>0.025</td>
+    </tr>
+    <tr>
+      <td>15800511</td>
+      <td>3</td>
+      <td>0.1</td>
+      <td>0.18</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>40</td>
+      <td>0.94</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>15800513</td>
+      <td>5</td>
+      <td>0.2</td>
+      <td>0.09</td>
+      <td>6</td>
+      <td>0.14</td>
+      <td>0.17</td>
+      <td>52</td>
+      <td>0.94</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <td>15800515</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>94.5</td>
+      <td>0.98</td>
+      <td>0.003</td>
+      <td>89.5</td>
+      <td>0.99</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>16900101</td>
+      <td>0</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>97.5</td>
+      <td>0.95</td>
+      <td>0.01</td>
+      <td>99.5</td>
+      <td>0.998</td>
+      <td>0.002</td>
+    </tr>
+    <tr>
+      <td>16900107</td>
+      <td>5</td>
+      <td>0.2</td>
+      <td>0.05</td>
+      <td>3</td>
+      <td>0.1</td>
+      <td>0.21</td>
+      <td>75.5</td>
+      <td>0.96</td>
+      <td>0.001</td>
+    </tr>
+    <tr>
+      <td>16900111</td>
+      <td>9</td>
+      <td>0.3</td>
+      <td>0.05</td>
+      <td>5</td>
+      <td>0.15</td>
+      <td>0.11</td>
+      <td>98</td>
+      <td>0.995</td>
+      <td>0.007</td>
+    </tr>
+    <tr>
+      <td>16900123</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>6</td>
+      <td>0.12</td>
+      <td>0.24</td>
+      <td>72.5</td>
+      <td>0.96</td>
+      <td>0.0002</td>
+    </tr>
+    <tr>
+      <td>16900127</td>
+      <td>19</td>
+      <td>0.74</td>
+      <td>0.01</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>92</td>
+      <td>0.95</td>
+      <td>0.008</td>
+    </tr>
+    <tr>
+      <td>16900131</td>
+      <td>9</td>
+      <td>0.25</td>
+      <td>0.03</td>
+      <td>1</td>
+      <td>NA</td>
+      <td>NA</td>
+      <td>45.5</td>
+      <td>0.75</td>
+      <td>0.037</td>
+    </tr>
+    <tr>
+      <td>16900139</td>
+      <td>5</td>
+      <td>0.2</td>
+      <td>0.12</td>
+      <td>4</td>
+      <td>0.1</td>
+      <td>0.67</td>
+      <td>56</td>
+      <td>0.9</td>
+      <td>0.009</td>
+    </tr>
+  </tbody>
+</table>
+
+_SGN = spiral ganglion neuron, R (spike rate) = spike/s, VS = vector strength, * substrate dendrite displacement, NA = not applicable._
+
+**Table 2.**
+ Effects of GsMTx4 on spike rate (R) and VS.The significance level of VS is given in the column with p-values obtained with the Rayleigh test for uniformity on the effects of GsMTx4.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SGN</th>
+      <th colspan="2">Current (I)R (spike/s) VS</th>
+      <th colspan="2">Mech stim (X)R (spike/s) VS</th>
+      <th colspan="2">I + XR (spike/s) VS</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>19830002GsMTx4</td>
+      <td>33</td>
+      <td>0.150.15</td>
+      <td>1.50</td>
+      <td>0.1NA</td>
+      <td>415</td>
+      <td>0.900.24</td>
+    </tr>
+    <tr>
+      <td>19830002GsMTx4</td>
+      <td>45.549.5</td>
+      <td>0.740.75</td>
+      <td>10</td>
+      <td>NANA</td>
+      <td>4842</td>
+      <td>0.860.72</td>
+    </tr>
+    <tr>
+      <td>19830043GsMTx4</td>
+      <td>911</td>
+      <td>0.620.62</td>
+      <td>50</td>
+      <td>0.3NA</td>
+      <td>3113</td>
+      <td>0.890.58</td>
+    </tr>
+    <tr>
+      <td>19830059GsMTx4</td>
+      <td>75</td>
+      <td>0.380.37</td>
+      <td>140</td>
+      <td>0.64NA</td>
+      <td>4511</td>
+      <td>0.890.37</td>
+    </tr>
+  </tbody>
+</table>
+
+_SGN = spiral ganglion neuron, R (spike rate) = spike/s, VS = vector strength, NA = not applicable._
+
 Because it is plausible that the amplitude and the phase of displacement of the IHC stereociliary bundle vary relative to the mechanical events affecting SGN dendrites, depending on sound parameters, the effects of sinusoidal displacement, and current injection at different phase angles and amplitudes were tested. The top row of Figure 3a–c shows SGN responses to combined mechanical (magenta) and current (green) stimulation – the 50 Hz stimuli are in-phase but are changed in relative amplitude by increasing the displacement amplitude in steps of 0.1 μm. In this figure, the response as a function of post-stimulus time is shown as well as a cycle histogram (firing as a function of stimulus phase) to its right (Figure 3a–c) or below (Figure 3d–g and i–k). Combining subthreshold (0.1 μm) mechanical stimulation with a suprathreshold (0.2 nA) current triggered a highly phase-locked response, as illustrated by the cycle histogram (Figure 3a, right panel), which shows that the vast majority of spikes occurred over a very narrow range of phase angles. An increase of the mechanical stimulus amplitude to 0.2 μm causes spikes to appear at a different phase, giving rise to a second peak in the cycle histogram, reminiscent of the in vivo phenomenon of peak-splitting (Kiang and Moxon, 1972; Liberman and Kiang, 1984). With a further increase in amplitude to 0.3 μm, the cycle histogram is again unimodal (Figure 3c). Peak-splitting with paired mechanical-current stimulation was also observed in chinchilla SGNs (Figure 3—figure supplements 1–2). On rare occasions (2 out of 48 SGNs), 3 APs were evoked per cycle, as shown for a chinchilla SGN (Figure 3—figure supplement 1). To test the effect of the relative phase of the mechanical stimulus, it was changed in 45o increments with respect to the current while measuring response rate and phase, illustrated for two neurons in Figure 3d–h and i–m. Peak-splitting could be observed at some phase angles (Figure 3f, g and k) and not at others (Figure 3d, i and j, Figure 3—figure supplement 1). Phase angles between mechanical and current stimuli that resulted in peak-splitting also resulted in lower spike rates. We illustrated and quantified with polar graphs showing VS (red) and spike rate (blue, normalized to the maximum rate for each fiber) for each increasing phase lead of the current stimulus relative to the mechanical stimulation (Figure 3h and m, Figure 3—figure supplement 2). Because a drop in VS necessarily accompanies peak-splitting, the latter’s occurrence is reflected in reduced VS values. For example, for in-phase current and mechanical stimulation (Figure 3d, 0°), high firing rate, and VS are obtained, resulting in values near 1 (Figure 3h: blue and red lines touch outer, solid circle of magnitude 1). However, firing rate and VS are lower for angles where peak-splitting is observed, for example, at 180° (Figure 3f) and particularly 225° (Figure 3g): for these phase angles, the polar plot shows lower values of both rate (blue) and VS (red). To quantify this trend, we computed a normalized resultant vector for each polar plot, which summarizes the trend of rate and VS when the relative phase between current and mechanical stimulation is varied. The magnitude and angle of the resultant vector are indicated with thick and thin solid lines, respectively (Figure 3h and m, see Table 3 for values and statistics). In stark resemblance to observations in vivo, there was a decrease in spike rate at the phase angles where peak-splitting occurred, illustrated by the alignment in resultant vectors for rate and VS (Figure 3h and m, Figure 3—figure supplement 2: red and blue lines). In vivo, this phenomenon has been called ‘Nelson’s notch’ (Kiang and Moxon, 1972; Liberman and Kiang, 1984), which had not been recapitulated in vitro. This decrease could result in spike rates lower than those elicited by the single-stimulus conditions, for example, in Figure 3l, the spike rate during overlap is lower than due to current injection only. Thus, paired stimuli can not only generate a monotonic increase in spike rate (Figure 2c–f) but can also cause response suppression. Further examples of the correlation between spike rate and VS are shown in Figure 3—figure supplement 3 from series of measurements with relative phase between current and mechanical stimuli as the independent variable.
 
-## AN responses in the absence of synaptic transmission
+**Table 3.**
+ Summary data for polar plots of Figure 3 and Figure 3—figure supplement 3.The header of the vertical columns provides a reference to the relevant figure panel. The top four datalines are for the polar plots based on spike rate. First line gives the maximum number of spikes, to which the rate plot was normalized. The second and third lines give the angle and magnitude of the resultant vector. Last line indicates level of significance (Rayleigh test of uniformity). The bottom three datalines give corresponding values based on measurement of phase locking.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th>Figure 3m</th>
+      <th>Figure 3—figure supplement 3a</th>
+      <th>Figure 3—figure supplement 3b</th>
+      <th>Figure 3—figure supplement 3c</th>
+    </tr>
+    <tr>
+      <th colspan="6">Polar plot spike rate</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Max #spikes</td>
+      <td>147</td>
+      <td>150</td>
+      <td>210</td>
+      <td>278</td>
+      <td>150</td>
+    </tr>
+    <tr>
+      <td>Angle resultant</td>
+      <td>49.1</td>
+      <td>79.6</td>
+      <td>352.6</td>
+      <td>69.1</td>
+      <td>297.4</td>
+    </tr>
+    <tr>
+      <td>Magnitude resultant</td>
+      <td>0.15</td>
+      <td>0.21</td>
+      <td>0.19</td>
+      <td>0.23</td>
+      <td>0.22</td>
+    </tr>
+    <tr>
+      <td>p-Value Rayleigh test</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+    </tr>
+    <tr>
+      <td colspan="6">Polar plot phase locking</td>
+    </tr>
+    <tr>
+      <td>Angle resultant</td>
+      <td>54.1</td>
+      <td>81.5</td>
+      <td>3.0</td>
+      <td>81.9</td>
+      <td>307.0</td>
+    </tr>
+    <tr>
+      <td>Magnitude resultant</td>
+      <td>0.08</td>
+      <td>0.18</td>
+      <td>0.12</td>
+      <td>0.17</td>
+      <td>0.20</td>
+    </tr>
+    <tr>
+      <td>p-Value Rayleigh test</td>
+      <td>0.003</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+      <td>&lt;0.001</td>
+    </tr>
+  </tbody>
+</table>
+
+### AN responses in the absence of synaptic transmission
 
 To examine whether AN fibers are influenced directly by mechanical displacement in vivo, we administered synaptic transmission blockers through the cochlear round window (RW) while recording from single fibers. Reports have shown two response regions in frequency tuning curves: a ‘tip’ of sharp tuning observed at low sound levels, and a ‘tail’ of coarse tuning (usually below the CF) at high sound levels (Kiang et al., 1986). These two regions are differentially vulnerable to experimental manipulations (Kiang et al., 1986). The inherent mechanical sensitivity of AN fibers demonstrated in vitro is observed for substrate motion at sub-micrometer displacements (<100 nm, e.g., Figure 2c). But note that temporal effects can occur at subthreshold displacements, that is, that do not trigger spikes themselves (e.g., Figure 3). Cochlear displacements of this magnitude have been measured in vivo, particularly toward the cochlear apex and at high sound pressure levels (SPLs), where frequency tuning is poor (Cooper and Rhode, 1995; Lee et al., 2015; Lee et al., 2016a). The in vitro results show interactive effects of current injection and mechanical stimulation (Figures 2 and 3), so it is difficult to predict the response that would remain when one modality (synaptically evoked spiking) is abolished. Nevertheless, the expectation is that in vivo, in the presence of synaptic blockers, some degree of response will persist at high SPLs, both in normal and in traumatized cochleae. In contrast, if direct mechanical effects on AN dendrites have no role in responses to acoustic stimuli, synaptic blockers are expected to weaken all responses of a single fiber, irrespective of stimulus frequency.
 
 We first characterized frequency tuning in single AN fibers during one or more electrode penetrations through the AN, recorded at the internal auditory meatus. After a sample of frequency tuning curves was obtained (Figure 4a), sufficient to record a frequency tuning profile as a function of recording depth, NBQX was applied through the RW. NBQX is a competitive antagonist of the ionotropic glutamate receptor, which blocks HC-AN synaptic transmission (Grant et al., 2010). The AN recording was then resumed with the same micropipette, left in situ during drug injection. NBQX application progressively decreased spontaneous- (Figure 4d) and sound-evoked (Figure 4b) spiking activity. Because these recordings are inherently blind, AN fibers without spontaneous activity can be detected only using brief high-intensity sound ‘search’ stimuli (see Materials and methods). Figure 4a–b shows tuning curves recorded before and after NBQX administration. Notably, after NBQX application and at low recording depths, fibers were excitable only at high SPLs. Tuning in these fibers was broad and shallow, with the lowest thresholds at low frequencies (Figure 4c). We surmised that these responses persisted due to the AN’s mechanical sensitivity. Interpretation of the response is hampered by the difficulty of knowing to what frequency range the fibers were tuned before applying the blocker. Because the high-threshold, coarsely tuned responses were observed at recording depths where, pre-NBQX, neurons were tuned to high frequencies, it can be reasonably inferred that these responses originated from fibers innervating the cochlear base. Fibers recorded at depths >250 µm were tuned to a restricted frequency range near 0.5–1 kHz, both pre- and post-drug applications (Figure 4c). Limited intra-cochlear diffusion of the drug likely accounts for lesser drug effects at these CFs (Sadreev et al., 2019; Verschooten et al., 2015).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/74948/elife-74948-fig4-v2.jpg)
+
+**Figure 4.:** (a–b) Frequency threshold tuning curves of AN fibers from a single chinchilla, obtained at different recording depths in the nerve, before (blue) and after (red) round window application of 2,3-dihydroxy-6-nitro-7-sulfamoyl-benzo[f]quinoxaline (NBQX). Each curve shows the threshold (in dB sound pressure level [SPL]) of a single AN fiber over a range of frequencies: the curves are anchored to the y-axis (recording depth) by the small black horizontal bar at 80 dB SPL. The dB scale in a applies to all traces in (a,b). Dashed lines are sometimes used to disambiguate traces. After applying NBQX, frequency tuning vanishes at the shallow recording depths (toward the bottom of a and b), where high-frequency fibers were found before applying NBQX. Fibers tuned to lower frequencies, found at greater depth (toward the top of a and b), are less affected, likely due to limited diffusion of NBQX to the apical turns. (c) Characteristic frequencies (CFs) as a function of recording depth (frequency of lowest threshold) before and after application of NBQX in the same cochlea. In the initial recording sessions, before the application of NBQX (blue symbols), high CFs dominate at shallow recording depths, while at depths >250 µm CFs are between 0.5 and 1 kHz. After the application of NBQX (red symbols), the lowest thresholds of superficial fibers are predominantly at low frequencies (<1 kHz). (d) Spontaneous rates as a function of recording depth. Formatting as in c. (e) The effect of NBQX on repeated measurement of a threshold tuning curve of AN fiber 2 (ANF2) recorded initially (red dashed: CF = 3.2 kHz) and after several minutes (red solid: CF = 630 Hz), compared to a tuning curve of a fiber (ANF1) with comparable CF recorded before NBQX application (blue). (f) Same as in (e) but for a different AN fiber (ANF3): CF changed from 3 to 0.9 kHz. (g) Monitoring of the mechanical cochlear state during the experiment in (e and f) at two relevant frequencies, using Distortion Product OtoAcoustic Emissions (DPOAEs) and compound receptor potentials (cochlear microphonic, CM). Amplitudes of DPOAEs are shown in dB SPL; CM amplitudes are in dB and are normalized to the level measured before application of NBQX (measurements 1–2). CM and DPOAEs are relatively stable after the NBQX injection but vanish postmortem. The measurement noise floors (dash-dotted lines) are stable over the entire experiment.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/74948/elife-74948-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Layout as for Figure 4, but using the Ca2+ channel blocker nimodipine. Data from chinchilla.
 
 While the data in Figure 4a and b are consistent with previous reports showing differences in the vulnerability of low- and high-threshold components of AN threshold curves, two fibers shown in Figure 4e and f provide a more direct indication that high-threshold, bowl-shaped tuning originated from basally located AN fibers. In these two fibers, the ‘tip’ but not the ‘tail’ region of the tuning curve disappeared during repeated measurement, such that only a bowl-shaped high-threshold response to low-frequency tones remained. For reference, Figure 4e and f shows the tuning curve of a fiber with CF of 3.4 kHz (blue, spontaneous rate of 8.7 spikes/s) recorded at 519 µm depth before NBQX application; the other curves (Figure 4e and f, red) were obtained post-NBQX. The dashed red curve in Figure 4e is the tuning curve of a fiber recorded at a similar depth (508 µm) after the NBQX application. It reveals a tip at 3.2 kHz (spontaneous rate of 15.3 spikes/s) with an elevated threshold and little separation between the threshold at the tip and tail. Presumably, the tuning curve before drug application was similar in shape to that of the fiber recorded at this depth pre-NBQX (blue curve). A second, subsequent measurement of the same fiber (solid red line, Figure 4e) shows a curve that is consistent with the initial tail but with the tip further attenuated. A similar progression was measured for a second fiber (Figure 4f), measured at a greater depth (652 µm, initial spontaneous rate = 23.3 spikes/s), and it showed a similar pattern of a tip near 3 kHz, which subsequently disappeared with a broad bowl-shaped curve remaining in a follow-up measurement (spontaneous rate = 15.9 spike/s). Combined, these data (Figure 4a–f) reveal a difference in vulnerability between the nerve fiber’s tip and tail, consistent with different activation modes in the two response regions. Blocking of synaptic transmission would be expected to affect thresholds independent of sound frequency.
 
@@ -82,7 +928,7 @@ The in vitro recordings were made using soma and dendritic substrate displacemen
 
 The findings from this report provide evidence for AN intrinsic mechanical sensitivity. If the AN’s presynaptic nerve endings directly sense sound-mediated OCM, then the distinctive classical role of the AN as a primary neuron requires reevaluation. Moreover, the findings are in keeping with the emerging evidence that primary afferent neurons, such as visual retinal ganglion cells and DRG neurons, utilize melanopsin and mechanosensitive channels, respectively, to modulate sensory processing (Coste et al., 2010; Hattar et al., 2002).
 
-## Mechanical sensitivity of auditory neurons in vitro
+### Mechanical sensitivity of auditory neurons in vitro
 
 The present study’s data show that SGN cell-body or dendrite displacement activates a membrane conductance with a reversal potential ~0 mV, suggesting a nonspecific cationic current. The displacement-induced current and membrane depolarization sensitivity to GsMTx4 block (Bae et al., 2011) further indicates that SGNs express mechanically sensitive channels. It was not the aim of this study to identify the specific candidate mechanically sensitive pathway; however, several nonspecific cationic channels such as the transient receptor potential type 3 (TRPC3) (Phan et al., 2010), vanilloid I (TRPV1) (Zheng et al., 2003), and polycystine (TRPP2) (Takumida and Anniko, 2010) membrane proteins have been identified in SGN. Other putative mechanically gated ion channels in SGNs can be derived from the library of single-neuron RNA-sequence analyses (Shrestha et al., 2018; Sun et al., 2018). These mechanically gated channels include Piezo-1 and Piezo-2, identified in HCs and other cochlear cell types (Beurg and Fettiplace, 2017; Corns and Marcotti, 2016; Shrestha et al., 2018). We detected SGN nerve terminal positive reactivity toward TRPV4 (Figure 5) and other TRP channels (Table 4). Null mutation of Piezo-2 in mice decreases the sensitivity of auditory brainstem responses by ~20 dB. It is unlikely that Piezo-2-mediated currents in HCs account for the auditory phenotype seen in the null-mutant mouse. The Piezo-2-mediated current in HC declines during development and may be functionally insignificant after hearing (Beurg and Fettiplace, 2017). The identity of the well-studied, pore-forming mechanically gated channel in HCs remains unknown (Giese et al., 2017; Qiu and Müller, 2018). If SGNs utilize a distinct mechanically gated channel, a search for the gene and protein may include emerging single-cell transcriptomic and phenotypic analyses of mouse models, awaiting future studies.
 
@@ -90,13 +936,56 @@ The present study’s data show that SGN cell-body or dendrite displacement acti
 
 **Figure 5.:** Positive reactivity of SGN nerve terminals to TRPV4 antibody (green). Reaction at the cell body (soma) was low. Table 4 provides a summary of TRP channels tested and a qualitative evaluation. Scale bar low magnification (left panel = 30 μm), high magnification (right panel = 5 μm).
 
+**Table 4.**
+ Expression of transient response potential (TRP) channel in spiral ganglion neuron (SGN) soma and nerve terminals.The table shows a summary of immunofluorescent detection of TRP channels at SGN cell body (soma) and nerve terminals.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Channel</th>
+      <th>Soma</th>
+      <th>Nerve terminals</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>TRPA1</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>TRPC3</td>
+      <td>-</td>
+      <td>++</td>
+    </tr>
+    <tr>
+      <td>TRPC6</td>
+      <td>++</td>
+      <td>+</td>
+    </tr>
+    <tr>
+      <td>TRPV1</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>TRPV4</td>
+      <td>+</td>
+      <td>+++</td>
+    </tr>
+  </tbody>
+</table>
+
+_- = no reactivity.+, ++, and +++ , = low, medium, and high reactivity, respectively._
+
 Some conditions of combined (current + displacement) stimulation (Figure 3—figure supplement 2) and even of displacement by itself (Figure 1—figure supplements 1; 2 and 6) caused suppression of spike rate of SGNs. While the data presented here cannot directly address the underlying mechanism for how two inwardly directed currents (EPSC and IMA) yield suppressive effects, reasonable explanations can be considered. Recent reports have shown that besides voltage dependence, outward K+ channels such as Kv1.1/1.2 and Kv7 are modulated by mechanical stimuli (Hao et al., 2013; Perez-Flores et al., 2020), whereby the channel’s voltage sensitivity is enhanced (Long et al., 2005). Kv1 and Kv7 channels are members of the cadre of outward K+ channels that dominates the type I afferent AN membrane (Lv et al., 2010; Mo et al., 2002; Wang et al., 2013). If the magnitude of outward K+ currents enhanced by mechanical displacement exceeds the mechanically activated inward currents, the resulting outcome would be membrane repolarization, which would suppress AN activity, consistent with the current results.
 
 The suppression of AN fibers’ spiking is a known phenomenon in vivo and has been observed under two conditions. First, a sound can suppress the response to another sound (‘two-tone suppression’) (Sachs and Kiang, 1968). While this is partly grounded in cochlear mechanical vibration, it remains unclear whether other mechanisms contribute (Robles and Ruggero, 2001; Versteegh and van der Heijden, 2013). Second, suppression of spiking can occur even in response to single, low-frequency tones of increasing intensity. Such stimuli trigger responses with an increasing number of spikes that are phase-locked at a preferred stimulus phase, but at sound levels of 80–90 dB SPL, a set of associated changes abruptly occur: firing rate drops over a narrow range of intensities (‘Nelson’s notch’) (Kiang and Moxon, 1972; Liberman and Kiang, 1984), and this is accompanied by a change in phase locking toward multiple preferred phases (peak-splitting). At higher intensities, the response returns to a high spike rate and monophasic phase locking, albeit at values that differ from those at lower intensities. One functional consequence is increased coding of envelope fluctuations at high sound levels (Joris and Yin, 1992). Peak-splitting suggests an interaction of two pathways with different growth functions, which sum at the level of the AN (Kiang, 1990; Kiang et al., 1986). We observed phenomenologically similar events in vitro when combining sinusoidal current injection and displacement at varying relative phases. Some combinations generated peak-splitting, accompanied by decreases in firing rate (Figure 3—figure supplement 2). These findings suggest that the mechanical sensitivity of SGNs should be considered a possible factor in the suppressive and peak-splitting phenomena observed in vivo.
 
 Technical limitations restricted in vitro experiments to much lower frequencies (by about a factor of 10) than those at which peak-splitting is typically studied in vivo. Note that peak-splitting becomes more prevalent and occurs over a broader range of sound levels when the sound frequency is lowered to values similar to those used here in vitro (Oshima and Strelioff, 1983; Ronken, 1986; Ruggero and Rich, 1983). We surmise that mechanical displacement or deformation of SGN dendrites affects their response to sound over a broad range of frequencies, but with a bias toward low frequencies. Moreover, mechanical effects are bound to occur at a particular phase relationship relative to the synaptic drive on the same dendrite, and that relationship likely varies with stimulus frequency and possibly also with the cochlear longitudinal location. The relative magnitude and phase of synaptic versus mechanical stimulation would determine the phase and probability of spiking.
 
-## Mutually interacting elements of neurotransmission and mechanical activation at the first auditory synapse
+### Mutually interacting elements of neurotransmission and mechanical activation at the first auditory synapse
 
 Besides the complexities in phase locking that AN fibers show in vivo in response to simple tones, complexities in frequency tuning are observed as well: both sets of phenomena point to the existence of multiple components driving AN responses (Kiang, 1990; Kiang et al., 1986; Kiang and Moxon, 1972; Liberman and Kiang, 1984). In the cat, the species in which this was first and most extensively described, a characterization in terms of two components was proposed, with one component dominating at low sound levels and a second component at high sound levels (Kiang, 1990; Liberman and Kiang, 1984). Similar phenomena, particularly regarding phase locking, have been reported in other species but were not always restricted to high sound levels. The source of these components is controversial but has been sought at the level of cochlear mechanics or HCs, not the AN (Cai and Geisler, 1996; Cheatham and Dallos, 1998; Cody and Mountain, 1989; Dallos, 1985; Heil and Peterson, 2019; Kiang, 1990; Liberman and Kiang, 1984; Nam and Guinan, 2016; Nam and Guinan, 2018; Ruggero and Rich, 1983; Ruggero et al., 1986; Russell and Kössl, 1992).
 
@@ -106,7 +995,7 @@ Suppose neurotransmitter release-mediated EPSCs are the sole driver of AN respon
 
 It may be argued that bi-modal neurotransmitter release properties perhaps explain the two components of AN tuning curves. Under certain conditions, IHC synaptic release mechanisms may consist of two distinct modes (Grant et al., 2010), observed at steady state and which contribute to spontaneous APs in afferent fibers. Suppose the two modes of synaptic transmission represent the two components of the AN tuning curve, again. In that case, NBQX and Ca2+ channel blockers are expected to affect both components (Glowatzki and Fuchs, 2002; Grant et al., 2010), which is not what we observed: NBQX and Ca2+ channel blockers suppressed the sharp-frequency tip at the CF, with a remaining response showing very coarse tuning (Figure 4, Figure 4—figure supplement 1). Thus, it is unlikely that the biphasic modes of transmitter release mechanisms, or, for that matter, any synaptic or presynaptic mechanisms, account for the differential effect of blockers on the low- and high-threshold components of the AN tuning curve. We propose, therefore, that the element of the tuning curve that remains impervious to the synaptic transmission block is driven mainly by the mechanical activation of the AN. Nonspecific blockers of mechanically gated ion channels, such as Gd3+ (Ranade et al., 2015), cannot be used to suppress SGN mechanical sensitivity selectively. Moreover, diffusional constraints for large molecular-weight channel blockers (e.g., GsMTx4) also preclude in vivo selective blocking of SGN mechanical sensitivity.
 
-## Mechanical sensitivity of auditory neurons in vivo
+### Mechanical sensitivity of auditory neurons in vivo
 
 The in vivo approach faced experimental constraints. Unavoidably, blind recording from the nerve trunk biases against neurons lacking spontaneous activity and low-threshold responses. The most severe experimental deficiency is the diffusion of blockers through long and narrow membrane-bound spaces to reach the IHCs and dendritic endings of SGNs. The observation that apical neurons tuned to low frequencies were invariably less affected than neurons innervating more basal parts of the cochlea suggests that the drugs delivered through the RW did not always reach the HC-AN synapse at more apical locations. Diffusional limits also prevented the use of larger molecules, such as GsMTx4 (Sadreev et al., 2019; Verschooten et al., 2015).
 
@@ -118,35 +1007,35 @@ Although the thresholds of substrate displacement needed to trigger spiking in v
 
 All in vivo experiments were performed under a protocol approved by the University of Leuven’s animal ethics committee complying with the European Communities Council Directive (86/609/EEC). At the University of Nevada, Reno (UNR), experiments were performed according to the Institutional Animal Care and Use Committee guidelines of UNR. In vitro experiments were performed using mice and chinchilla. Equal numbers of adult male and female mice and chinchillas were used (when odd numbers were reported, the females outnumbered males). In vivo experiments were performed on adult wild-type chinchilla (Chinchilla lanigera) of both sexes, free from a middle ear infection and weighing between 200 and 400 g.
 
-## Cell culture
+### Cell culture
 
 SGNs were isolated from 5- to 8-week-old C57BL/6J mice (20–30 g) (Jackson Laboratory) and 1- to 2-month-old chinchilla (200–300 g) as described previously (Lee et al., 2016b). The age range for mice was selected since the C57 strain shows an early hearing loss (Spongr et al., 1997). The apical and basal cochlea SGNs were dissociated using a combination of enzymatic and mechanical procedures. The neurons were maintained in culture for 2–5 days. Animals were euthanized, and the temporal bones were removed in a solution containing Minimum Essential Medium with HBSS (Invitrogen), 0.2 g/l kynurenic acid, 10 mM MgCl2, 2% fetal bovine serum (v/v), and 6 g/l glucose. The central spiral ganglion tissue was dissected and split into three equal segments: apical, middle, and basal, across the modiolar axis, as described previously (Glowatzki and Fuchs, 2002). The middle turn was discarded, and the apical and basal tissues were digested separately in an enzyme mixture containing 1 mg/ml collagenase type I and 1 mg/ml DNase at 37°C for 20 min. We performed a series of gentle trituration and centrifugation in 0.45 M sucrose. The cell pellets were reconstituted in 900 μl of culture medium (Neurobasal-A, supplemented with 2% B27 (v/v), 0.5 mM L-glutamine, and 100 U/ml penicillin; Invitrogen), and filtered through a 40 μm cell strainer for cell culture and electrophysiological experiments. For adequate voltage-clamp and satisfactory electrophysiological experiments, we cultured SGNs for ~24–48 hr to allow Schwann cells’ detachment from neuronal membrane surfaces.
 
 Chinchillas were purchased from Moulton Chinchilla Ranch (Rochester, MN). Chinchilla SGNs were isolated using a protocol similar to that employed for mice. The tendency for neuronal culture from the chinchilla to profusely generate glial cells was high. We inhibited glial-cell proliferation using 20 μM cytosine arabinoside (AraC; Sigma) (Schwieger et al., 2016). Electrophysiological experiments were performed at room temperature (RT; 21–22°C). Reagents were obtained from Sigma Aldrich unless otherwise specified.
 
-## Electrophysiology
+### Electrophysiology
 
 Experiments were performed in standard whole-cell recording mode using an Axopatch 200B amplifier (Axon Instruments). For voltage-clamp recordings patch pipettes had resistance of 2–3 MΩ when filled with an internal solution consisting of (in mM): 70 CsCl, 55 NMGCl, 10 HEPES, 10 EGTA, 1 CaCl2, 1 MgCl2, 5 MgATP, and 0.5 Na2GTP (pH adjusted to 7.3 with CsOH). The extracellular solution consisted of (in mM): 130 NaCl, 3 KCl, 1 MgCl2, 10 HEPES, 2.5 CaCl2, 10 glucose, and 2 CsCl (pH was adjusted to 7.3 using NaOH). For current-clamp recordings, pipettes were filled with a solution consisting of (in mM) 134 KCl, 10 HEPES, 10 EGTA, 1 CaCl2, 1 MgCl2, and 5 MgATP and 0.5 Na2GTP (pH 7.3 with KOH). Currents were sampled at 20–50 kHz and filtered at 2–5 kHz. Voltage offsets introduced by liquid junction potentials (2.2 ± 1.2 mV [n = 45]) were not corrected. Leak currents before mechanical stimulations were subtracted offline from the current traces and were <20 pA. Recordings with leak currents greater than 20 pA were discarded. A stock solution of 10 mM GsMTx4 (CSBio; Menlo Park, CA) was prepared in water.
 
-## Mechanical stimulation
+### Mechanical stimulation
 
 Mechanical stimulation was achieved using a fire-polished and sylgard-coated glass pipette (tip diameter ~1 μm), positioned at ~180° to the recording electrode. The probe’s movement toward the cell was driven by a piezoelectric crystal micro stage (E660 LVPZT Controller/Amplifier; Physik Instruments). The stimulating probe was typically positioned close to the cell body without visible membrane deformation. The stimulation probe had a velocity <20 μm/ms during the ramp segment of the command for forwarding motion, and the stimulus was applied for a duration, as stated in each experiment. We assessed mechanical sensitivity using a series of mechanical steps in ~0.14 μm increments applied every 10–20 s, which allowed for the full recovery of mechanosensitive currents between steps. IMA were recorded at a holding potential of –70 mV. For instantaneous I-V relationship recordings, voltage steps were applied 8 s before the mechanical stimulation from holding potentials ranging from –90 to 90 mV.
 
 SGNs were cultured on a PDMS substrate treated with poly-D-lysine (0.5 mg/ml) and laminin (10 mg/ml) to test for the mechanosensitivity of nerve endings. A single neurite can be stretched by substrate indentation on this platform without contacting the neurite (Figure 1b inset). The whole-cell patch-clamp recording was used to examine the electrical response to neurite stretching conducted with our direct approach of indentation of a PDMS substrate at a location adjacent to the neurite with a pipette. To study the neurons’ firing response to time variation with simultaneous sine wave current and mechanical stimulation, the mechanical stimulus phase was shifted in 45° steps from 0 to 315° relative to the current. Positive voltage to the actuator corresponds to downward displacement. Technical limitations restricted in vitro experiments sinusoidal mechanical stimulation to ~100 Hz and current injection to ~1000 Hz.
 
-## Cryosection
+### Cryosection
 
 The temporal bones were removed and fixed in 4% paraformaldehyde in phosphate-buffered saline (PBS) for 1.5 hr at 4°C. The temporal bones were decalcified by incubation in 10% EDTA at 4°C for 3–5 days. The EDTA solution was changed daily. The bones were then embedded in the OCT compound for cryostat sectioning. The sections of 10 μm thickness were washed in PBS, and nonspecific binding was blocked with 1% bovine serum albumin (BSA) and 10% goat serum in PBS plus 0.1% Triton X-100 (PBST) for 1 hr. The primary antibodies, chicken anti-Tuj1 (Abcam), mouse anti-myelin basic protein (Abcam), rabbit anti-Myo7a (Proteus Biosciences, Inc), mouse anti-Tuj1 (Abcam), rabbit anti-TRPA1 (Abcam), TRPC3 (Novus Biologicals), TRPC6 (Abcam), TRPV1 (Novus Biologicals), TRPV4 (Abcam), were incubated overnight at 4°C. After incubating the primary antibodies, the slides were washed three times with PBST and incubated with secondary antibodies for 1.5 hr at RT in the dark. We used Alexa Fluor 647-conjugated goat anti-mouse and Cy3-conjugated goat anti-chicken, Alexa Fluor 488-conjugated goat anti-rabbit, Alexa Fluor 568-conjugated goat anti-mouse (Jackson ImmunoResearch Labs) in a dilution of 1:500. Other markers used were phalloidin-Fluor 647 (Abcam) for F-actin and DAPI (Sigma) for nuclear stain. The slides were then examined under a confocal microscope (LSM 510, Zeiss).
 
-## Data analysis
+### Data analysis
 
 Data analyses were performed offline using pClamp8 (Axon Instruments) and Origin software (Microcal Software, Northampton, MA). Statistical analysis was performed using a paired or unpaired t-test, with significance at p < 0.05. The peak IMA for each step displacement was expressed in channel-open probability (po) and plotted against displacement (X). The relationship was fitted with a one-state Boltzmann equation po = 1/[1 + ez(X – X0.5)/(kT)] to obtain channel gating force, z, and the displacement at 50% open probability (X0.5), and T is temperature. For a two-state Boltzmann function po = 1/([1 + eza(X – X0.5a)/(kT)] + 1/[1 + ezb(X – X0.5b)/(kT)]). The dose-response relationships were described with a logistic function; (Ii – If)/(1 + [C]/[C0.5])p + If. Ii and If are the initial and final magnitudes, [C] is the drug’s concentration with [IC0.5] its half-blocking concentration, and p is the Hill coefficient. The decay phases of the IMA were fitted by a bi-exponential decay function of the form: y(t) = A1 * exp(−t/τ1) + A2 * exp(−t/τ2) + Ass, where t is time, τ is the time constant of decay of IMA, A1 and A2 are the amplitudes of the decaying current components, and Ass is the amplitude of the steady-state, non-inactivating component of the total IMA. The strength of phase locking was quantified as VS, which is the ratio of the period histogram’s fundamental frequency component to the average firing rate (Goldberg and Brown, 1969). Also known as the synchronization index, the VS varies from VS = 0 for a flat histogram with no phase locking to VS = 1 for a histogram indicating perfect phase locking. Statistical significance of the VS was assessed by Rayleigh statistics (Mardia, 1972), using a criterion of p < 0.05; values of VS failing this criterion were discarded. Data are presented as mean ± SD (standard deviation).
 
-## Surgical preparation for in vivo experiments
+### Surgical preparation for in vivo experiments
 
 In chinchillas, anesthesia was initiated by intramuscular (im) injection of a ketamine-xylazine mixture and was maintained with ketamine and diazepam, titrated according to vital signs and reflexes. In cats, induction was with a 1:3 mixture of ketamine and acepromazine and maintenance with intravenous infusion of pentobarbital. The animal was placed on a feedback-controlled heating pad in a double-walled sound-proof room. A tracheotomy was performed, and the respiration rate and end-tidal CO2 were continuously monitored. The acoustic system was placed in the external auditory meatus and calibrated with a probe microphone. The AN was accessed via a traditional posterior fossa approach in which a small portion of the lateral cerebellum was aspirated. The tympanic bulla on the recording side was opened to visualize the cochlear RW for cochlear potential measurements and blockers’ administration. Details of our procedures are available elsewhere (Bremen and Joris, 2013; Louage et al., 2006).
 
-## Acoustic stimulation and recording
+### Acoustic stimulation and recording
 
 Acoustic stimulation and acquisition of signals utilized custom software to control digital hardware (RX6, Tucker-Davis Technologies, Alachua, FL). Stimuli were compensated for the transfer function of the acoustic system. Acoustic stimuli were delivered through dynamic phones. For CM and DPOAE recordings, analog signals were recorded (RX6) and analyzed offline (MATLAB, MathWorks, Natick, MA). CM recordings were obtained with a silver ball electrode near the RW. The reference and ground wire electrodes from the differential amplifier were placed in the skin next to the ear canal and in the neck’s nape, respectively. The signal was amplified with a differential amplifier (RS560, Stanford Research Systems), recorded (RX8, Tucker-Davis Technologies, Alachua, FL), stored on a computer, and processed with custom software in MATLAB. The CM was obtained for different stimulus frequencies (2, 3, 4, 6, 8, 10, 12 kHz) and was spectrally calculated from the difference of the evoked responses (divided by 2) to alternating pure tones. DPOAE responses were recorded and stored using the same microphone and acquisition system for the acoustic calibration. The primaries (F1 and F2, duration 700 ms, repetition interval 800 ms) were generated with separate acoustic actuators to minimize actuator distortion products. The frequency ratio (F2/F1) and amplitude levels (L1, L2) of the primaries were fixed to a ratio of 1.21 and 65 (L1) and 55 (L2) dB SPL, respectively. DPOAEs were quantified as the sound pressure of the returning 2F1-F2 cubic difference distortion product.
 

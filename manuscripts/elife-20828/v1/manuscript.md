@@ -17,25 +17,25 @@
 
 ## Abstract
 
-10.7554/eLife.20828.001 Non-muscle cell contractility is critical for tissues to adopt shape changes. Although, the non-muscle myosin II holoenzyme (myosin) is a molecular motor that powers contraction of actin cytoskeleton networks, recent studies have questioned the importance of myosin motor activity cell and tissue shape changes. Here, combining the biochemical analysis of enzymatic and motile properties for purified myosin mutants with in vivo measurements of apical constriction for the same mutants, we show that in vivo constriction rate scales with myosin motor activity. We show that so-called phosphomimetic mutants of the Drosophila regulatory light chain (RLC) do not mimic the phosphorylated RLC state in vitro. The defect in the myosin motor activity in these mutants is evident in developing Drosophila embryos where tissue recoil following laser ablation is decreased compared to wild-type tissue. Overall, our data highlights that myosin activity is required for rapid cell contraction and tissue folding in developing Drosophila embryos. DOI: http://dx.doi.org/10.7554/eLife.20828.001
+Non-muscle cell contractility is critical for tissues to adopt shape changes. Although, the non-muscle myosin II holoenzyme (myosin) is a molecular motor that powers contraction of actin cytoskeleton networks, recent studies have questioned the importance of myosin motor activity cell and tissue shape changes. Here, combining the biochemical analysis of enzymatic and motile properties for purified myosin mutants with in vivo measurements of apical constriction for the same mutants, we show that in vivo constriction rate scales with myosin motor activity. We show that so-called phosphomimetic mutants of the Drosophila regulatory light chain (RLC) do not mimic the phosphorylated RLC state in vitro. The defect in the myosin motor activity in these mutants is evident in developing Drosophila embryos where tissue recoil following laser ablation is decreased compared to wild-type tissue. Overall, our data highlights that myosin activity is required for rapid cell contraction and tissue folding in developing Drosophila embryos.
 
 ## Introduction
 
 During the development of an organism, tissues are sculpted into different three-dimensional forms. Cell shape changes and cell movements drive these tissue-scale transformations. The molecular motor non-muscle myosin II (myosin) is thought to be important for many of these events; however, the underlying mechanism is not understood.
 
-Myosin is a hexamer composed of two myosin heavy chains, two regulatory light chains (RLCs), and two essential light chains (ELCs) (
+Myosin is a hexamer composed of two myosin heavy chains, two regulatory light chains (RLCs), and two essential light chains (ELCs) (Figure 1A). The motor domain at the N-terminus of the myosin heavy chain binds actin filaments in an ATP-dependent manner. The motor domain catalyzes the hydrolysis of ATP to power the translocation of actin filaments, a function referred to as motor activity. The light chains bind to the central neck domain of the myosin heavy chain and have structural and regulatory functions (Heissler and Sellers, 2014). The C-terminal tail of the myosin heavy chain associates with the tails of other myosin heavy chains and promotes the assembly into bipolar filaments. Work done using smooth muscle myosin and mammalian non-muscle myosin have demonstrated that phosphorylation of the RLC at conserved Serine and Threonine sites (Figure 1B, Serine-19 and Threonine-18) activates myosin motor activity, enhances the affinity of myosin for actin, and promotes myosin filament assembly (Heissler and Sellers, 2016). The bipolar myosin filaments promote the sliding of antiparallel actin filaments relative to one another resulting in contraction of an actin network. Myosin light chain kinase (MLCK), Rho-associated protein kinase (ROCK), and Citron kinase are known to activate myosin through direct phosphorylation of the RLC, primarily on Serine-19 (Amano et al., 1996; Heissler and Sellers, 2014; Pearson et al., 1984; Yamashiro et al., 2003). In Drosophila, the importance of myosin light chain phosphorylation has been shown through genetic studies (Jordan and Karess, 1997; Lee and Treisman, 2004; Mizuno et al., 2002; Ong et al., 2010; Winter et al., 2001). However, it has not been biochemically demonstrated that Drosophila myosin motor activity and filament assembly is regulated by RLC phosphorylation or whether the extent of activation is similar to that of mammalian systems.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/20828/elife-20828-fig1-v1.jpg)
 
-**Figure 1.:** (A) Domain organization of the myosin heavy chain and myosin fragments used to study the biochemical properties of myosin. The top panel shows the myosin hexamer composed of two myosin heavy chains (green), two ELCs (light blue) and two RLCs (gray). The myosin motor domain, the light chain binding neck and the tail domain of the heavy chain are indicated. The bottom panel shows the double headed HMM fragment. The rational for the different myosin fragments lies in the different biochemical properties: Full-length myosin forms filaments, sediments at high speed and can be used in the in vitro motility assay. The HMM fragment is soluble under physiological salt concentrations and suitable to study kinetic properties, the interaction with actin, and regulatory properties including RLC phosphorylation. (B) Multiple sequence alignment of RLCs from different model organisms and RLC mutants. (Top) Sequence alignment showing the high degree of conservation between RLCs from different model organisms. Identical amino acids are colored brown. The primary phosphorylation site of MLCK corresponds to Serine-21 (orange), the secondary phosphorylation site to Threonine-20 (yellow) of the Drosophila RLC. (Bottom) Alignment showing the mutant RLCs used in this study and the respective amino acid substitutions at the sites corresponding to Threonine-20 and Serine-21 of the Drosophila RLC. Alanine replacements are shown in blue, Glutamate replacements in red. Alanine replacement in RLC-AA is expected to mimic the unphosphorylated RLC state, Glutamate replacement in RLC-EE the di-phosphorylated RLC state. RLC-AE is expected to mimic the mono-phosphorylated RLC state that is independent from upstream regulation, whereas RLC-AS and RLC-TA are phosphorylatable and coupled to upstream signaling in vitro and in vivo. Abbreviations used: Mm: Mus musculus, Myl9 (NP_742116.1): Rn: Rattus norvegicus, Myl9 (XP_006235463.1); Hs: Homo sapiens, Myl9 (CAG33124.1); Xl: Xenopus laevis, Myl9 (NP_001087016.1); Dr: Danio rerio, Myl9b (NP_998377.1); Dm: Drosophila melanogaster, Sqh (NP_511057.1). (C) Actin-activated ATP hydrolysis rate of RLC-TS and RLC mutants. Gray bars indicate the ATP hydrolysis rate at an actin concentration of 100 µM in the absence of RLC phosphorylation. Orange bars indicate the ATP hydrolysis rate at an actin concentration of 100 µM after RLC phosphorylation with MLCK, also indicated by a lowercase p. Note that the myosin activity in these assays are even lower than shown since direct actin-mediated hydrolysis of ATP likely accounts for a substantial portion of the ATPase of the unphosphorylated and mutant samples. (D) In vitro motility assay using RLC-TS and RLC mutants. No significant movement was observed for RLC-TS in the absence of MLCK phosphorylation and RLC-AA. n = 47–227 tracked filaments per RLC mutant. The data were corrected for the stage drift. (E) Actin cosedimentation assays of RLC-TS and RLC-AE, supernatants (S) and pellets (P) from mixtures of myosin, actin, and ATP as indicated. In the absence of actin, RLC-TS and RLC-AE remain in the supernatant. Binding of RLC-TS and RLC-AE to actin in the absence of ATP results in pelleting of the actomyosin complex. The presence of ATP disassembles the actomyosin complex and myosin mostly remains in the supernatant. The sedimentation of actin is independent of ATP. Soluble HMM fragments were used in this assay since myosin filaments sediment under the assay conditions. Red numbers indicate lanes.DOI: http://dx.doi.org/10.7554/eLife.20828.002
+**Figure 1.:** (A) Domain organization of the myosin heavy chain and myosin fragments used to study the biochemical properties of myosin. The top panel shows the myosin hexamer composed of two myosin heavy chains (green), two ELCs (light blue) and two RLCs (gray). The myosin motor domain, the light chain binding neck and the tail domain of the heavy chain are indicated. The bottom panel shows the double headed HMM fragment. The rational for the different myosin fragments lies in the different biochemical properties: Full-length myosin forms filaments, sediments at high speed and can be used in the in vitro motility assay. The HMM fragment is soluble under physiological salt concentrations and suitable to study kinetic properties, the interaction with actin, and regulatory properties including RLC phosphorylation. (B) Multiple sequence alignment of RLCs from different model organisms and RLC mutants. (Top) Sequence alignment showing the high degree of conservation between RLCs from different model organisms. Identical amino acids are colored brown. The primary phosphorylation site of MLCK corresponds to Serine-21 (orange), the secondary phosphorylation site to Threonine-20 (yellow) of the Drosophila RLC. (Bottom) Alignment showing the mutant RLCs used in this study and the respective amino acid substitutions at the sites corresponding to Threonine-20 and Serine-21 of the Drosophila RLC. Alanine replacements are shown in blue, Glutamate replacements in red. Alanine replacement in RLC-AA is expected to mimic the unphosphorylated RLC state, Glutamate replacement in RLC-EE the di-phosphorylated RLC state. RLC-AE is expected to mimic the mono-phosphorylated RLC state that is independent from upstream regulation, whereas RLC-AS and RLC-TA are phosphorylatable and coupled to upstream signaling in vitro and in vivo. Abbreviations used: Mm: Mus musculus, Myl9 (NP_742116.1): Rn: Rattus norvegicus, Myl9 (XP_006235463.1); Hs: Homo sapiens, Myl9 (CAG33124.1); Xl: Xenopus laevis, Myl9 (NP_001087016.1); Dr: Danio rerio, Myl9b (NP_998377.1); Dm: Drosophila melanogaster, Sqh (NP_511057.1). (C) Actin-activated ATP hydrolysis rate of RLC-TS and RLC mutants. Gray bars indicate the ATP hydrolysis rate at an actin concentration of 100 µM in the absence of RLC phosphorylation. Orange bars indicate the ATP hydrolysis rate at an actin concentration of 100 µM after RLC phosphorylation with MLCK, also indicated by a lowercase p. Note that the myosin activity in these assays are even lower than shown since direct actin-mediated hydrolysis of ATP likely accounts for a substantial portion of the ATPase of the unphosphorylated and mutant samples. (D) In vitro motility assay using RLC-TS and RLC mutants. No significant movement was observed for RLC-TS in the absence of MLCK phosphorylation and RLC-AA. n = 47–227 tracked filaments per RLC mutant. The data were corrected for the stage drift. (E) Actin cosedimentation assays of RLC-TS and RLC-AE, supernatants (S) and pellets (P) from mixtures of myosin, actin, and ATP as indicated. In the absence of actin, RLC-TS and RLC-AE remain in the supernatant. Binding of RLC-TS and RLC-AE to actin in the absence of ATP results in pelleting of the actomyosin complex. The presence of ATP disassembles the actomyosin complex and myosin mostly remains in the supernatant. The sedimentation of actin is independent of ATP. Soluble HMM fragments were used in this assay since myosin filaments sediment under the assay conditions. Red numbers indicate lanes.
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/20828/elife-20828-fig1-figsupp1-v1.jpg)
 
-**Figure 1—figure supplement 1.:** Drosophila myosin (A) PageBlue-stained 4–12% Bis-Tris gel showing recombinant HMM (160 kDa) and full-length (228 kDa) RLC-TS or RLC mutants.RLC and mutant RLC (19 kDa) and the ELC (16 kDa) bind in a 1:1 stoichiometry to the myosin heavy chain, indicating that mutant RLCs bind with a similar affinity as RLC-TS. Data shown for RLC-AS HMM and full-length proteins are from different gels. (B–F) HPLC-mass spectrometry to detect phosphorylation events on the intact RLC. Each panel shows the deconvoluted mass spectrum of control RLC mutant (no MLCK, gray spectrum) at the top and RLC mutant after addition of MLCK (bottom, orange spectrum). A mass increase of 80 Da (HPO3 = 80 Da) corresponds to a single phosphorylation event. RLC-TS (B) can be phosphorylated by MLCK at two sites corresponding to Threonine-20 and Serine-21, RLC-AS (C) can be phosphorylated at one site corresponding to Serine-21, and RLC-TA (D) at one site corresponding to Threonine-20. No phosphorylation events are detectable for RLC-AA (E), RLC-AE (F), and RLC-EE (G) in agreement with the absence of phosphorylation sites.DOI: http://dx.doi.org/10.7554/eLife.20828.003
+**Figure 1—figure supplement 1.:** RLC and mutant RLC (19 kDa) and the ELC (16 kDa) bind in a 1:1 stoichiometry to the myosin heavy chain, indicating that mutant RLCs bind with a similar affinity as RLC-TS. Data shown for RLC-AS HMM and full-length proteins are from different gels. (B–F) HPLC-mass spectrometry to detect phosphorylation events on the intact RLC. Each panel shows the deconvoluted mass spectrum of control RLC mutant (no MLCK, gray spectrum) at the top and RLC mutant after addition of MLCK (bottom, orange spectrum). A mass increase of 80 Da (HPO3 = 80 Da) corresponds to a single phosphorylation event. RLC-TS (B) can be phosphorylated by MLCK at two sites corresponding to Threonine-20 and Serine-21, RLC-AS (C) can be phosphorylated at one site corresponding to Serine-21, and RLC-TA (D) at one site corresponding to Threonine-20. No phosphorylation events are detectable for RLC-AA (E), RLC-AE (F), and RLC-EE (G) in agreement with the absence of phosphorylation sites.
 
 ![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/20828/elife-20828-fig1-figsupp2-v1.jpg)
 
-**Figure 1—figure supplement 2.:** A) and RLC mutants (B–F).The dependence of steady-state ATP hydrolysis rate is plotted as a function of actin in the concentration range up to 100 µM. Data sets corresponding to the ATP hydrolysis rates in the absence of MLCK are shown in gray. Data sets corresponding to the ATP hydrolysis rates after RLC phosphorylation by MLCK are shown in orange.DOI: http://dx.doi.org/10.7554/eLife.20828.004
+**Figure 1—figure supplement 2.:** The dependence of steady-state ATP hydrolysis rate is plotted as a function of actin in the concentration range up to 100 µM. Data sets corresponding to the ATP hydrolysis rates in the absence of MLCK are shown in gray. Data sets corresponding to the ATP hydrolysis rates after RLC phosphorylation by MLCK are shown in orange.
 
 Recent evidence has suggested that myosin motor activity is not essential for actin network contraction in some cases, but that myosin’s main role is to function as an actin filament crosslinker (Ma et al., 2012). Actin filament crosslinking could drive contraction in the absence of motor activity, if linked to actin network disassembly (Sun et al., 2010). It was suggested that myosin motor activity is not required for apical constriction in epithelial cells of the neural tube, but that instead actin depolymerization was required for epithelial folding (Escuin et al., 2015). In addition, it was recently suggested that apical constriction during Drosophila dorsal closure results from cell volume reduction as opposed to myosin motor activity (Saias et al., 2015). Thus, an important question is whether myosin motor activity has a role during apical constriction and tissue folding.
 
@@ -45,13 +45,165 @@ Defining the importance of myosin motor activity requires mutants with precisely
 
 ## Results
 
-## RLC mutants have reduced motor activity
+### RLC mutants have reduced motor activity
 
 A prerequisite to systematically test the requirement of myosin motor activity during epithelial morphogenesis in Drosophila is to integrate in vitro and in vivo studies. Our approach included the preparation of wild-type myosin and RLC mutant myosins in sufficient amounts to biochemically characterize their kinetic, regulatory, and structural properties. This characterization of mutants with defined biochemical properties allows the precise interpretation of in vivo mutant phenotypes.
 
 We first recombinantly overproduced and purified the heavy meromyosin (HMM) fragment and full-length Drosophila myosin in Sf9 insect cells (Figure 1A, Figure 1—figure supplement 1A). Hereafter, the myosin holoenzyme with bound RLC is referred to as RLC-TS, where the phosphorylatable Threonine at position 20 and Serine at position 21 of the RLC are indicated (Figure 1B). Both sites are highly conserved between RLCs from higher eukaryotic myosins and their phosphorylation is expected to have an activating effect on the motor activity of Drosophila myosin (Figure 1B) (Heissler and Manstein, 2013, 2016; Jordan and Karess, 1997).
 
-To test whether phosphorylation of Threonine-20 and/or Serine-21 is a regulatory mechanism for Drosophila myosin, we examined the ability of MLCK to phosphorylate the RLC (Figure 1—figure supplement 1B) and used the actin-activated ATP hydrolysis rate under steady-state conditions as a readout for motor activity. The basal ATP hydrolysis rate (kbasal) in the absence of actin was ~0.01 s−1 for RLC-TS, which is comparable to the rates of mammalian myosin isoforms (Table 1) (Kim et al., 2005; Kovács et al., 2004b). Actin marginally activated the ATP hydrolysis rate of RLC-TS in the absence of RLC phosphorylation. RLC phosphorylation potently activated myosin motor activity to a maximum ATP hydrolysis rate (kcat) of 1.23 ± 0.07 s−1 with an apparent actin affinity (Kapp) of 38.9 ± 7.32 µM (Table 2 and Figure 1—figure supplement 2A). This result demonstrates that Drosophila myosin is regulated by RLC phosphorylation and that the effect of RLC phosphorylation in Drosophila is quantitatively similar to myosins from higher eukaryotes (Heissler and Manstein, 2013).10.7554/eLife.20828.005Table 1.Comparison of the steady-state kinetic parameters between phosphorylated Drosophila and mammalian myosins.DOI: http://dx.doi.org/10.7554/eLife.20828.005ParameterDm myosin II*Hs myosin IIA‡Hs myosin IIB ‡†Mm myosin IIC ‡†kbasal (s−1)0.01 ± 0.001 0.021 ± 0.003 <0.004 <0.004 kcat (s−1)1.23 ± 0.07 0.45 ± 0.03 0.17 ± 0.04 0.18 ± 0.04 Kapp (µM)38.9 ± 7.32 9 ± 2 3.4 ± 1.8 4.2 ± 1.1 kcat/Kapp (µM−1·s−1)~0.03 ~0.05 ~0.05 ~0.04 Abbreviations used: Dm: Drosophila melanogaster; Hs: Homo sapiens; Mm: Mus musculus.*From this study.†From Kim et al. (2005).‡From Kovács et al. (2004a).10.7554/eLife.20828.006Table 2.Steady-state ATP hydrolysis rates of RLC-TS and RLC mutants.DOI: http://dx.doi.org/10.7554/eLife.20828.006RLC kbasal (s−1) s.d. k100 (s−1) s.d. RLC-TS0.0130.0070.120.03RLC-TS 0.010 0.001 0.82 0.01 RLC-AS0.0240.0050.150.02RLC-AS 0.024 0.008 0.81 0.04 RLC-TA0.0090.0020.120.01RLC-TA 0.008 0.002 0.37 0.01 RLC-AA0.0140.0060.160.03RLC-AA 0.012 0.002 0.23 0.02 RLC-AE0.0100.0020.210.03RLC-AE 0.009 0.002 0.23 0.01 RLC-EE0.0110.0070.190.01RLC-EE 0.010 0.002 0.22 0.01 The actin-activated ATPase activity was measured at 25°C, as described under ‘Materials and methods’. Treatment of RLC with MLCK is indicated by bold print. For comparison, kbasal the steady-state ATPase activity in the absence of actin filaments, and k100, the steady-state ATPase activity at 100 µM actin filaments, are listed.
+To test whether phosphorylation of Threonine-20 and/or Serine-21 is a regulatory mechanism for Drosophila myosin, we examined the ability of MLCK to phosphorylate the RLC (Figure 1—figure supplement 1B) and used the actin-activated ATP hydrolysis rate under steady-state conditions as a readout for motor activity. The basal ATP hydrolysis rate (kbasal) in the absence of actin was ~0.01 s−1 for RLC-TS, which is comparable to the rates of mammalian myosin isoforms (Table 1) (Kim et al., 2005; Kovács et al., 2004b). Actin marginally activated the ATP hydrolysis rate of RLC-TS in the absence of RLC phosphorylation. RLC phosphorylation potently activated myosin motor activity to a maximum ATP hydrolysis rate (kcat) of 1.23 ± 0.07 s−1 with an apparent actin affinity (Kapp) of 38.9 ± 7.32 µM (Table 2 and Figure 1—figure supplement 2A). This result demonstrates that Drosophila myosin is regulated by RLC phosphorylation and that the effect of RLC phosphorylation in Drosophila is quantitatively similar to myosins from higher eukaryotes (Heissler and Manstein, 2013).
+
+**Table 1.**
+ Comparison of the steady-state kinetic parameters between phosphorylated Drosophila and mammalian myosins.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Dm myosin II*</th>
+      <th>Hs myosin IIA‡</th>
+      <th>Hs myosin IIB ‡†</th>
+      <th>Mm myosin IIC ‡†</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>kbasal (s−1)</td>
+      <td>0.01 ± 0.001</td>
+      <td>0.021 ± 0.003</td>
+      <td>&lt;0.004</td>
+      <td>&lt;0.004</td>
+    </tr>
+    <tr>
+      <td>kcat (s−1)</td>
+      <td>1.23 ± 0.07</td>
+      <td>0.45 ± 0.03</td>
+      <td>0.17 ± 0.04</td>
+      <td>0.18 ± 0.04</td>
+    </tr>
+    <tr>
+      <td>Kapp (µM)</td>
+      <td>38.9 ± 7.32</td>
+      <td>9 ± 2</td>
+      <td>3.4 ± 1.8</td>
+      <td>4.2 ± 1.1</td>
+    </tr>
+    <tr>
+      <td>kcat/Kapp (µM−1·s−1)</td>
+      <td>~0.03</td>
+      <td>~0.05</td>
+      <td>~0.05</td>
+      <td>~0.04</td>
+    </tr>
+  </tbody>
+</table>
+
+_Abbreviations used: Dm: Drosophila melanogaster; Hs: Homo sapiens; Mm: Mus musculus.*From this study.†From Kim et al. (2005).‡From Kovács et al. (2004a)._
+
+**Table 2.**
+ Steady-state ATP hydrolysis rates of RLC-TS and RLC mutants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>RLC</th>
+      <th>kbasal (s−1)</th>
+      <th>s.d.</th>
+      <th>k100 (s−1)</th>
+      <th>s.d.</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RLC-TS</td>
+      <td>0.013</td>
+      <td>0.007</td>
+      <td>0.12</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>RLC-TS</td>
+      <td>0.010</td>
+      <td>0.001</td>
+      <td>0.82</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>RLC-AS</td>
+      <td>0.024</td>
+      <td>0.005</td>
+      <td>0.15</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>RLC-AS</td>
+      <td>0.024</td>
+      <td>0.008</td>
+      <td>0.81</td>
+      <td>0.04</td>
+    </tr>
+    <tr>
+      <td>RLC-TA</td>
+      <td>0.009</td>
+      <td>0.002</td>
+      <td>0.12</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>RLC-TA</td>
+      <td>0.008</td>
+      <td>0.002</td>
+      <td>0.37</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>RLC-AA</td>
+      <td>0.014</td>
+      <td>0.006</td>
+      <td>0.16</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>RLC-AA</td>
+      <td>0.012</td>
+      <td>0.002</td>
+      <td>0.23</td>
+      <td>0.02</td>
+    </tr>
+    <tr>
+      <td>RLC-AE</td>
+      <td>0.010</td>
+      <td>0.002</td>
+      <td>0.21</td>
+      <td>0.03</td>
+    </tr>
+    <tr>
+      <td>RLC-AE</td>
+      <td>0.009</td>
+      <td>0.002</td>
+      <td>0.23</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>RLC-EE</td>
+      <td>0.011</td>
+      <td>0.007</td>
+      <td>0.19</td>
+      <td>0.01</td>
+    </tr>
+    <tr>
+      <td>RLC-EE</td>
+      <td>0.010</td>
+      <td>0.002</td>
+      <td>0.22</td>
+      <td>0.01</td>
+    </tr>
+  </tbody>
+</table>
+
+_The actin-activated ATPase activity was measured at 25°C, as described under ‘Materials and methods’. Treatment of RLC with MLCK is indicated by bold print. For comparison, kbasal the steady-state ATPase activity in the absence of actin filaments, and k100, the steady-state ATPase activity at 100 µM actin filaments, are listed._
 
 Next, we generated the RLC mutants RLC-AS, RLC-TA, RLC-AA, RLC-AE, and RLC-EE (Figure 1B). Rationale for the design of these mutants, which are routinely used in the Drosophila system, is that they have been assumed to represent the unphosphorylated, mono- or di-phosphorylated RLC states (Jordan and Karess, 1997; Kasza et al., 2014; Munjal et al., 2015; Rauskolb et al., 2014; Royou et al., 2002; Vasquez et al., 2014; Winter et al., 2001). We tested the ability of MLCK to phosphorylate RLC mutants. We found that RLC-AS and RLC-TA can each be phosphorylated by MLCK at only one site, either Serine-21 or Threonine-20, respectively (Figure 1—figure supplement 1C,D). RLC-AA, RLC-AE, and RLC-EE were all unresponsive to MLCK treatment (Figure 1—figure supplement 1E–G). Thus, these mutants create a systematic series of myosins with motor activities that are either coupled (RLC-TA and RLC-AS) or uncoupled (RLC-AA, RLC-AE, and RLC-EE) from upstream signaling. This set of mutants also allowed us to individually determine the importance of phosphorylation of Threonine-20 and Serine-21 on myosin motor function.
 
@@ -59,49 +211,97 @@ Similar to RLC-TS, all RLC mutants have a low kbasal of ~0.01–0.02 s−1 (Tab
 
 The almost linear dependence of the ATP hydrolysis rates of all RLC mutants on actin in the concentration range up to 100 µM (Figure 1—figure supplement 2) shows that both, the kcat and the Kapp are not experimentally accessible. The direct comparison of the ATP hydrolysis rates of RLC-TS and RLC mutants at 100 µM actin (k100), the highest actin concentration used in the assay, shows that phosphorylation results in a ~6–7 fold activation for RLC-TS and RLC-AS versus a ~3 fold activation for RLC-TA, respectively (Figure 1C and Table 2). Surprisingly, RLC-AE and RLC-EE display a k100 that was similar to that of RLC-AA and only 27–28% of the motor activity of phosphorylated RLC-TS (Figure 1C, Figure 1—figure supplement 2D–F, Table 2). This result demonstrates that neither RLC-AE nor RLC-EE successfully mimic RLC phosphorylation at Serine-21.
 
-To test the functional activity of purified RLC-TS and RLC mutants, we performed an in vitro motility assay to measure the speed at which the motors translocate actin filaments across the surface of a coverslip. No significant movement was detected for RLC-TS in the absence of phosphorylation, consistent with myosin being in an inactive, weak actin-binding state. Phosphorylation of RLC-TS by MLCK resulted in movement of actin filaments at ~250 nm s−1, which is slightly higher than that of human myosin IIA (Figure 1D and Table 3) (Cuda et al., 1997). No obvious directed actin filament movement was observed for RLC-AA, consistent with this mutant mimicking the unphosphorylated RLC state. Phosphorylated RLC-AS moved actin filaments at 50% of the rate of phosphorylated RLC-TS and phosphorylated RLC-TA moved actin filaments at only 10% of the rate of phosphorylated RLC-TS. These results are consistent with Serine-21 being the primary phosphorylation site (Figure 1D and Figure 1—figure supplement 2). Both, RLC-AE and RLC-EE translocated actin filaments, demonstrating that these mutants exhibit some level of constitutive functional activity; however, translocation speeds of actin filaments by RLC-AE and RLC-EE were only about 30% of that of phosphorylated RLC-TS, indicating a functional deficit for these mutants (Figure 1D). Though neither unphosphorylated RLC-TS nor RLC-AA translocated actin filaments in the in vitro motility assay, both motors tethered actin filaments to the surface indicating that unphosphorylated Drosophila myosin still binds actin weakly as occurs with mammalian unphosphorylated myosins, suggesting that bipolar filaments containing these myosins could cross-link or tether actin filaments (Cuda et al., 1997).10.7554/eLife.20828.007Table 3.Comparison of Drosophila and mammalian myosin filament dimensions.DOI: http://dx.doi.org/10.7554/eLife.20828.007ParameterDm myosin-II*,†Hs myosin IIA‡Hs myosin IIB‡Hs myosin IIC‡Mean number of myosins per filament12.8 ± 4.5* 14.9 ± 3†293014Mean bare zone length (nm)194 ± 21* 204 ± 19†167 ± 19 166 ± 16 219 ± 13 Filament length (nm)312 ± 25*301 ± 24 323 ± 24 293 ± 33 Sliding velocity (nm·s−1)247 ± 37 82§n.d.n.d.*From this study.†From Kiehart and Feghali (1986).‡From Billington et al. (2013).§From Cuda et al. (1997).
+To test the functional activity of purified RLC-TS and RLC mutants, we performed an in vitro motility assay to measure the speed at which the motors translocate actin filaments across the surface of a coverslip. No significant movement was detected for RLC-TS in the absence of phosphorylation, consistent with myosin being in an inactive, weak actin-binding state. Phosphorylation of RLC-TS by MLCK resulted in movement of actin filaments at ~250 nm s−1, which is slightly higher than that of human myosin IIA (Figure 1D and Table 3) (Cuda et al., 1997). No obvious directed actin filament movement was observed for RLC-AA, consistent with this mutant mimicking the unphosphorylated RLC state. Phosphorylated RLC-AS moved actin filaments at 50% of the rate of phosphorylated RLC-TS and phosphorylated RLC-TA moved actin filaments at only 10% of the rate of phosphorylated RLC-TS. These results are consistent with Serine-21 being the primary phosphorylation site (Figure 1D and Figure 1—figure supplement 2). Both, RLC-AE and RLC-EE translocated actin filaments, demonstrating that these mutants exhibit some level of constitutive functional activity; however, translocation speeds of actin filaments by RLC-AE and RLC-EE were only about 30% of that of phosphorylated RLC-TS, indicating a functional deficit for these mutants (Figure 1D). Though neither unphosphorylated RLC-TS nor RLC-AA translocated actin filaments in the in vitro motility assay, both motors tethered actin filaments to the surface indicating that unphosphorylated Drosophila myosin still binds actin weakly as occurs with mammalian unphosphorylated myosins, suggesting that bipolar filaments containing these myosins could cross-link or tether actin filaments (Cuda et al., 1997).
+
+**Table 3.**
+ Comparison of Drosophila and mammalian myosin filament dimensions.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Parameter</th>
+      <th>Dm myosin-II*,†</th>
+      <th>Hs myosin IIA‡</th>
+      <th>Hs myosin IIB‡</th>
+      <th>Hs myosin IIC‡</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Mean number of myosins per filament</td>
+      <td>12.8 ± 4.5* 14.9 ± 3†</td>
+      <td>29</td>
+      <td>30</td>
+      <td>14</td>
+    </tr>
+    <tr>
+      <td>Mean bare zone length (nm)</td>
+      <td>194 ± 21* 204 ± 19†</td>
+      <td>167 ± 19</td>
+      <td>166 ± 16</td>
+      <td>219 ± 13</td>
+    </tr>
+    <tr>
+      <td>Filament length (nm)</td>
+      <td>312 ± 25*</td>
+      <td>301 ± 24</td>
+      <td>323 ± 24</td>
+      <td>293 ± 33</td>
+    </tr>
+    <tr>
+      <td>Sliding velocity (nm·s−1)</td>
+      <td>247 ± 37</td>
+      <td>82§</td>
+      <td>n.d.</td>
+      <td>n.d.</td>
+    </tr>
+  </tbody>
+</table>
+
+_*From this study.†From Kiehart and Feghali (1986).‡From Billington et al. (2013).§From Cuda et al. (1997)._
 
 To determine if the RLC-AE mutant drastically changes the myosin kinetic pathway, we performed an actin co-sedimentation assay to determine whether the mutant myosin binds to actin in a nucleotide-dependent manner. Actin is sedimented by high centrifugal forces regardless of the ATP concentration (lanes 13–16). Neither RLC-TS nor RLC-AE alone sediment without actin (lanes 1,2 and 7,8). When mixed with actin both RLC-TS and RLC-AE bind and sediment in the absence, but not the presence of ATP (lanes 3–6, 9–12). This suggests that RLC-TS and RLC-AE still cycle through strongly- and weakly-actin bound states during the kinetic cycle. Together, these results indicate that RLC-TS and RLC mutants likely use the same kinetic pathway, but that RLC-AE and RLC-EE do not fully recapitulate the behavior of myosin bearing wild type RLC. The RLC-AA mutant mimics the known functions of unphosphorylated RLC-TS in that it does not move actin in the in vitro motility assay, but does tether actin to the surface.
 
-## RLC mutants can form bipolar filaments
+### RLC mutants can form bipolar filaments
 
-Because myosin assembly into bipolar filaments is critical for both motor-dependent and motor-independent functions, such as translocation and crosslinking of actin filaments, we examined the ability of recombinant RLC-TS and RLC mutants to assemble into filaments. Electron micrographs show that RLC-TS and RLC mutants form small bipolar filaments, with a length of 312 ± 25 nm and a width of 7.4 ± 1.3 nm that consist of 12.8 ± 4.5 myosin molecules (
+Because myosin assembly into bipolar filaments is critical for both motor-dependent and motor-independent functions, such as translocation and crosslinking of actin filaments, we examined the ability of recombinant RLC-TS and RLC mutants to assemble into filaments. Electron micrographs show that RLC-TS and RLC mutants form small bipolar filaments, with a length of 312 ± 25 nm and a width of 7.4 ± 1.3 nm that consist of 12.8 ± 4.5 myosin molecules (Figure 2). The appearance of the filaments is similar to the rotary shadowed images of myosin purified from Drosophila cells and those formed by mammalian myosin IIC (Table 3) (Billington et al., 2013; Kiehart and Feghali, 1986).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/20828/elife-20828-fig2-v1.jpg)
 
-**Figure 2.:** RLC-TS and RLC mutants form predominantly filaments in the absence of ATP (−ATP) and disassemble into the 10S conformation in the presence of ATP (+ATP). Phosphorylation of Threonine-20 or Serine-21, indicated +ATP/MLCK, stabilize the filaments in the presence of ATP. Scale bar = 100 nm.DOI: http://dx.doi.org/10.7554/eLife.20828.008
+**Figure 2.:** RLC-TS and RLC mutants form predominantly filaments in the absence of ATP (−ATP) and disassemble into the 10S conformation in the presence of ATP (+ATP). Phosphorylation of Threonine-20 or Serine-21, indicated +ATP/MLCK, stabilize the filaments in the presence of ATP. Scale bar = 100 nm.
 
 We also revealed that full-length RLC-TS is in a two-state equilibrium, which involves a compact folded (10S) conformation and assembled filaments. The equilibrium is shifted from the filamentous form to the 10S conformation in the presence of ATP when the RLC is not phosphorylated (Figure 2). Similar to RLC-TS, all RLC mutants form filaments in the absence of ATP and disassemble into the 10S conformation in the presence of ATP (Figure 2). As occurs with mammalian myosin II paralogs, phosphorylated RLC-TS remains predominantly filamentous in the presence of ATP demonstrating a dual effect of phosphorylation; activation of the ATPase activity and stabilization of the filament structure (28). Phosphorylation also stabilizes filaments of RLC-AS and RLC-TA in the presence of ATP. If RLC-AE and RLC-EE were faithfully mimicking the phosphorylated RLC state, they should also remain predominantly filamentous in ATP in vitro at these protein concentrations; instead, addition of ATP to RLC-AA, RLC-AE and RLC-EE results in depolymerization of the myosin filaments. These results demonstrate that the RLC-AS and the RLC-TA mutants exhibit phosphoregulation by upstream kinases similar to RLC-TS (Figure 2). The concentration of myosin in Drosophila cells is on the order of 0.5 µM, which favors the filamentous form and thus making it likely that all RLC mutants form filaments in vivo (Kiehart and Feghali, 1986; Vasquez et al., 2014). However, the assembly of RLC-AE and RLC-EE mutants in cells would not be governed by kinases. Thus, these RLC phosphomutants are not only uncoupled from the control of signal transduction pathways that regulate myosin phosphorylation, but also display motor defects. These properties together prohibit RLC-AE and RLC-EE from being good models for phosphorylated myosin.
 
-## RLC-TA and RLC-AE exhibit reduced tissue tension in vivo
+### RLC-TA and RLC-AE exhibit reduced tissue tension in vivo
 
-We and others have constructed RLC mutants in
+We and others have constructed RLC mutants in Drosophila that affect the Threonine-20 and Serine-21 phosphorylation sites (Jordan and Karess, 1997; Kasza et al., 2014; Vasquez et al., 2014). Our mutant light chains are fused to GFP and expressed from the endogenous RLC promoter in a mutant background that reduces the expression of endogenous RLC-TS. We have quantified that there is 90% RLC mutant transgene expression and 10% endogenous RLC-TS in our experimental setup (Vasquez et al., 2014). To determine whether tissues expressing RLC mutants exhibit normal levels of apical myosin, we imaged pairs of embryos side-by-side, one RLC-TS and one RLC mutant, to compare apical myosin levels under identical imaging conditions (Figure 3A). Using this method, we demonstrated that the final apical myosin intensity in folding tissues was similar between RLC-TS and RLC mutant embryos (Figure 3A,B). These side-by-side comparisons of apical myosin levels, and our previous results where we showed that the RLC-AA mutant localized apically (23), demonstrate that neither full myosin motor activity nor targeted phosphorylation is required for apical myosin localization.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/20828/elife-20828-fig3-v1.jpg)
 
-**Figure 3.:** (A–B) Myosin intensity in pair of embryos expressing RLC-TS and RLC-TA (A) or RLC-TS and RLC-AE (B) are comparable. The images represent embryos mounted side-by-side and imaged at the same time to compare myosin intensity under identical imaging conditions. Plots (right) show the peak mean intensity profile of myosin signal along a horizontal line spanning each embryo. Scale bars = 10 µm. (C) Initial wound recoil is less pronounced in tissues expressing RLC mutants than in RLC-TS tissue. Time-lapse images of embryos expressing indicated RLC mutant. Between time 0 s and 1.3 s an 8.5 μm incision in the tissue was made, indicated by the vertical yellow line. Scale bars = 5 µm. (D) Mean displacement of wound edge following tissue ablation (n = 15 RLC-TS embryos, n = 11 RLC-TA embryos, n = 10 RLC-AE embryos). Shaded area is +/− one standard deviation. (E) Initial recoil velocity is higher in RLC-TS tissue. The initial recoil velocity was calculated by fitting the displacement to a Kelvin-Voigt model and taking the derivative of the fit at time zero. Central line in box plot is the median, the box edges are the 25th and 75th percentiles, and the whiskers represent the distribution minima and maxima (n = 14 RLC-TS embryos, n = 10 RLC-TA embryos, n = 9 RLC-AE embryos).DOI: http://dx.doi.org/10.7554/eLife.20828.009
+**Figure 3.:** (A–B) Myosin intensity in pair of embryos expressing RLC-TS and RLC-TA (A) or RLC-TS and RLC-AE (B) are comparable. The images represent embryos mounted side-by-side and imaged at the same time to compare myosin intensity under identical imaging conditions. Plots (right) show the peak mean intensity profile of myosin signal along a horizontal line spanning each embryo. Scale bars = 10 µm. (C) Initial wound recoil is less pronounced in tissues expressing RLC mutants than in RLC-TS tissue. Time-lapse images of embryos expressing indicated RLC mutant. Between time 0 s and 1.3 s an 8.5 μm incision in the tissue was made, indicated by the vertical yellow line. Scale bars = 5 µm. (D) Mean displacement of wound edge following tissue ablation (n = 15 RLC-TS embryos, n = 11 RLC-TA embryos, n = 10 RLC-AE embryos). Shaded area is +/− one standard deviation. (E) Initial recoil velocity is higher in RLC-TS tissue. The initial recoil velocity was calculated by fitting the displacement to a Kelvin-Voigt model and taking the derivative of the fit at time zero. Central line in box plot is the median, the box edges are the 25th and 75th percentiles, and the whiskers represent the distribution minima and maxima (n = 14 RLC-TS embryos, n = 10 RLC-TA embryos, n = 9 RLC-AE embryos).
 
 ![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/20828/elife-20828-fig3-figsupp1-v1.jpg)
 
-**Figure 3—figure supplement 1.:** RLC-TS and RLC mutant do not exhibit clear differences in viscoelastic properties.Exponents (α) of power laws fit (A) and time decay constants (τ) of Kelvin-Voigt fits (B) to displacements of wound edges after tissue ablation are not significantly different between RLC-TS, RLC-TA and RLC-AE tissues. Box-and-whisker plots display the median (central line), 25th and 75th percentiles (box edges), and the most extreme data points not considered outliers (whiskers) (n = 14 RLC-TS embryos, n = 10 RLC-TA embryos, n = 9 RLC-AE embryos).DOI: http://dx.doi.org/10.7554/eLife.20828.010
+**Figure 3—figure supplement 1.:** Exponents (α) of power laws fit (A) and time decay constants (τ) of Kelvin-Voigt fits (B) to displacements of wound edges after tissue ablation are not significantly different between RLC-TS, RLC-TA and RLC-AE tissues. Box-and-whisker plots display the median (central line), 25th and 75th percentiles (box edges), and the most extreme data points not considered outliers (whiskers) (n = 14 RLC-TS embryos, n = 10 RLC-TA embryos, n = 9 RLC-AE embryos).
 
 If the RLC-AE and RLC-EE mutants faithfully mimicked the phosphorylated RLC state in vivo, these so-called phosphomimetic mutants might be expected to result in increased tension relative to RLC-TS embryos. In our in vivo studies, we focused our analysis on the RLC-AE mutant, because the RLC-EE mutant often results in altered embryo shape, likely due to defects in oogenesis (Vasquez et al., 2014). Laser-cutting techniques have been used to infer the levels of tension in epithelial tissues (Fernandez-Gonzalez et al., 2009; Fischer et al., 2014; Hutson et al., 2003; Ma et al., 2009; Mayer et al., 2010). In response to a laser cut, the tissue adjacent to the incision will exhibit quick recoil away from the cut, followed by slower movement away from the cut site before the wound begins to heal and close. The initial rapid displacement of surrounding tissue, the initial recoil velocity, is proportional to the tension in the tissue just prior to the cut, assuming constant tissue viscosity (Ma et al., 2009) (see Materials and methods). Therefore, we compared the initial recoil velocity after tissue cutting in wild-type (RLC-TS) and RLC mutant embryos.
 
 During ventral furrow formation in the developing Drosophila embryo, tension is highest along the anterior-posterior axis of the furrow (Martin et al., 2010). To infer tension in various RLC mutants, we made 8.5 μm long cuts across the width of the furrow at equivalently staged embryos and tracked the displacement of the wound edge along the anterior-posterior axis (Figure 3C,D). We calculated the initial recoil velocity (see Materials and methods) and found that tissues expressing either RLC-TA or RLC-AE display lower initial recoil velocities than RLC-TS tissues, suggesting that RLC mutant tissues generate less tension than RLC-TS tissues (Figure 3D,E). Note that this interpretation assumes that viscous drag is not different between tissues of mutant and RLC-TS embryos. Previously, altering the level of myosin phosphorylation was proposed to alter the viscoelastic properties of a tissue, as measured by a change in the exponent used when fitting the data to a power law (Fischer et al., 2014). We found that the mean power law exponent values for RLC-TS, RLC-TA and RLC-AE were 0.3, 0.3 and 0.4, respectively (Figure 3—figure supplement 1A). Differences between the power law exponents of RLC-TS, RLC-TA, and RLC-AE embryos were not significant (Figure 3—figure supplement 1A). Furthermore, we determined the time decay constants calculated from fitting recoil distance to a Kelvin-Voigt model, which are proportional to the ratio of the viscosity coefficient of the tissue to its stiffness. In agreement with power law exponents, differences between time decay constants of RLC-TS, RLC-TA, and RLC-AE embryos were not significant (Figure 3—figure supplement 1B). We suggest that the 3-fold decrease in initial recoil velocity in the RLC-AE mutant reflects decreased tension for the following reasons: (I) The power law exponent and time decay constant are similar between RLC-TS and RLC-AE, suggesting similar viscoelastic properties; (II) Myosin levels are similar between RLC-TS and RLC-AE; (III) The RLC-AE mutant can still interact with actin, suggesting that there is not necessarily a difference in the amount of actomyosin present in the tissue; and (IV) RLC-AE exhibited a reduced maximal recoil distance (Figure 3D), which is also consistent with decreased tissue tension. We conclude that myosin motor activity is important to generate epithelial tension during ventral furrow formation.
 
-## Apical constriction rate scales with the measured in vitro myosin motor activity
+### Apical constriction rate scales with the measured in vitro myosin motor activity
 
 Understanding the contribution of the myosin motor to in vivo tissue folding requires having biochemically defined mutants or inhibitors that affect myosin motor activity. Drosophila myosin is insensitive to blebbistatin, a widely-used myosin inhibitor (Heissler et al., 2015; Straight et al., 2003), which has limited tests of in vivo myosin function to genetic disruptions or dominant negative approaches that do not specifically disrupt motor activity (Franke et al., 2005). Furthermore, inhibition of ROCK, a kinase that phosphorylates the RLC, completely disrupts myosin localization and does not distinguish between myosin motor and crosslinking functions (Royou et al., 2002). Although RLC-EE enables some rock mutant flies to survive to adulthood (Winter et al., 2001), apical constriction, tissue extension, and collective cell migration defects of rock mutants or ROCK inhibition are not suppressed by expressing the RLC-EE allele, suggesting that ROCK could have other important functional targets besides myosin or that RLC-EE does not mimic the phosphorylated state (Aranjuez et al., 2016; Kasza et al., 2014; Munjal et al., 2015; Vasquez et al., 2014). The in vivo effects of RLC-AA have already been reported (Vasquez et al., 2014). These mutants have defects in cellularization, which precedes tissue folding (Vasquez et al., 2014; Xue and Sokac, 2016). It is likely that the RLC-AA mutant is not able to oligomerize at all, in contrast to RLC-AE and RLC-EE, which form aggregates with heavy chain in vivo (Vasquez et al., 2014). In addition, because we demonstrated that RLC-AS, RLC-TA, and RLC-AE have variable deficits in motor activity that define an allelic series in vitro, these mutants were ideal to assess the in vivo roles of myosin motor activity during apical constriction.
 
-To test the functional consequence of reducing myosin motor activity, we examined whether the
+To test the functional consequence of reducing myosin motor activity, we examined whether the RLC-AE, RLC-TA, and RLC-AS mutants constrict cells as well as RLC-TS. Because (I) there is great heterogeneity in the timing and rate of myosin accumulation between different cells and (II) the rate of myosin accumulation, as measured with apical RLC::GFP intensity, is correlated with the degree of constriction (Xie and Martin, 2015), the direct comparison of different RLC alleles required normalization for differences in myosin accumulation rates. To identify instances of rapid cellular constriction, we first smoothed signals for apical area and mean myosin intensity and calculated instantaneous rates for each time point. To normalize for differences in myosin accumulation rates, we identified times of rapid myosin intensity increase and selected time periods where myosin accumulated at a given rate (i.e. one to two standard deviations above the mean rate for RLC-TS cells). We calculated and compared constriction rates at these instances. Thus, we determined whether the same rate of apical myosin accumulation results in equivalent constriction rates in embryos expressing RLC mutants when compared to RLC-TS. We found that the mean constriction rate for cells in RLC-AS was 74% of that of RLC-TS cells (Figure 4A). This defect was consistent with the lower RLC-AS ATPase activity at intermediate actin concentrations and the lower actin gliding velocity of the RLC-AS mutant (Figure 1D and Figure 1—figure supplement 2B). We found that cells expressing RLC-TA or RLC-AE constricted with mean rates that were 60% and 47% of RLC-TS cells, respectively (Figure 4A). The greater defect of the RLC-TA mutant, compared to RLC-AS was consistent with the Serine-21 site being the primary site responsible for myosin motor activation in Drosophila myosin, similar to mammalian myosins (Bresnick et al., 1995; Heissler and Manstein, 2013; Ikebe, 1989). Furthermore, on average, cells expressing RLC-AE constricted slower than those expressing RLC-TA (Figure 4C, Figure 4—figure supplement 1). Taking our in vivo and in vitro measurements of myosin activity, there is a relationship between myosin motor activity and constriction rate (Figure 4B). On the tissue-scale, the slower constriction is associated with a delay in tissue folding and sealing. The RLC-AE mutant, which had the greatest defect in motor activity, exhibited the slowest tissue folding behavior, with minimal folding occurring even 9 min after myosin first appeared (Figure 4C). The RLC-AS and RLC-TA mutants exhibited tissue folding at intermediate rates, folding over, but failing to seal after 9 min, a time in which RLC-TS is fully sealed (Figure 4C). Furthermore, the amount of time it takes the mean apical area to decrease to 50% of the starting apical area recapitulates the previously observed pattern: the RLC-AE mutant takes longest time (10.4 min) to reach 50% of the initial mean apical area, while the RLC-AS and RLC-TA mutants take an intermediate amounts of time (7.0 min and 7.4 min, respectively) relative to the wild-type RLC-TS (6.8 min) (Figure 4—figure supplement 1). Overall, our results show that the apical constriction rate and tissue folding rate scales with the myosin motor activity.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/20828/elife-20828-fig4-v1.jpg)
 
-**Figure 4.:** (A) RLC-AS, RLC-TA, and RLC-AE cells generate weaker constrictions than RLC-TS cells. Central line in box plot is the median, the box edges are the 25th and 75th percentiles, and the whiskers represent the distribution minima and maxima, not considered outliers; outliers are plotted individually (n = 338 constriction instances identified from 138 cells from two embryos for RLC-TS; n = 311 constriction instances identified 152 cells from three embryos for RLC-AS; n = 630 constriction instances identified from 268 cells from three embryos for RLC-TA; n = 265 constriction instances identified from 187 cells from three embryos for RLC-AE). (B) Constriction rate corresponds with actin-activated ATPase activity. Bars represent the standard deviation of the measurements. (C) Tissue invagination and apical constriction is slower in the RLC-TA mutant and slowest in the RLC-AE mutant. Time-lapse images are representative tissues from embryos expressing the indicated RLC mutant and Membrane::Cherry (membrane). Schematics illustrate plane images were acquired in. Scale bars = 10 μm.DOI: http://dx.doi.org/10.7554/eLife.20828.011
+**Figure 4.:** (A) RLC-AS, RLC-TA, and RLC-AE cells generate weaker constrictions than RLC-TS cells. Central line in box plot is the median, the box edges are the 25th and 75th percentiles, and the whiskers represent the distribution minima and maxima, not considered outliers; outliers are plotted individually (n = 338 constriction instances identified from 138 cells from two embryos for RLC-TS; n = 311 constriction instances identified 152 cells from three embryos for RLC-AS; n = 630 constriction instances identified from 268 cells from three embryos for RLC-TA; n = 265 constriction instances identified from 187 cells from three embryos for RLC-AE). (B) Constriction rate corresponds with actin-activated ATPase activity. Bars represent the standard deviation of the measurements. (C) Tissue invagination and apical constriction is slower in the RLC-TA mutant and slowest in the RLC-AE mutant. Time-lapse images are representative tissues from embryos expressing the indicated RLC mutant and Membrane::Cherry (membrane). Schematics illustrate plane images were acquired in. Scale bars = 10 μm.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/20828/elife-20828-fig4-figsupp1-v1.jpg)
 
-**Figure 4—figure supplement 1.:** (A) Aligned mean apical area over time for representative embryos. (B) Time it takes for tissue contraction to 50% the starting mean apical area (A0). RLC-AE tissue constricts slowest compared to wild-type RLC-TS. Additionally, on average, RLC-TA constricts slower than RLC-AS.DOI: http://dx.doi.org/10.7554/eLife.20828.012
+**Figure 4—figure supplement 1.:** (A) Aligned mean apical area over time for representative embryos. (B) Time it takes for tissue contraction to 50% the starting mean apical area (A0). RLC-AE tissue constricts slowest compared to wild-type RLC-TS. Additionally, on average, RLC-TA constricts slower than RLC-AS.
 
 ## Discussion
 
@@ -115,65 +315,161 @@ This study demonstrates that these RLC phosphomutants define an allelic series t
 
 ## Materials and methods
 
-## Recombinant overproduction and purification of Drosophila myosin and other proteins
+### Recombinant overproduction and purification of Drosophila myosin and other proteins
 
 cDNA constructs encoding N-terminally Halo-tagged full-length Drosophila myosin (amino acids 1–1971, accession number NP_001014553.1) and the HMM construct comprising amino acids 1–1363 were generated with standard cloning techniques. A polycistronic vector comprising the genes for Sqh (accession number NP_001284930.1) and Mlc-c (accession number NP_511049.1) was used for the expression of both light chain genes. Mutations of the cDNA at sites corresponding to amino acids Threonine-20 and Serine-21 of the RLC were made using the Quickchange XL kit (Agilent Technologies) to create the RLC mutants RLC-AA, RLC-AE, RLC-AS, RLC-EE, RLC-TA, and RLC-AS according to Figure 1B. Transposition, the generation of recombinant baculoviruses, protein production and purification were performed as described previously via Flag affinity chromatography (Heissler et al., 2015) with minor modifications. HMM was further purified to electrophoretic homogeneity with size exclusion chromatography on a HiLoad 16/600 Superdex 200 pg column (GE Healthcare). Full-length myosin was dialyzed in low salt buffer containing 10 mM MOPS pH 7.2, 25 mM NaCl, 0.1 mM EGTA, 3 mM NaN3, 5 mM MgCl2, and 2 mM DTT, concentrated by low speed centrifugation (4000xg, 15 min) and dissolved in 10 mM MOPS pH 7.2, 0.1 mM EGTA, 3 mM NaN3, 500 mM NaCl, and 1 mM DTT. Actin was prepared from rabbit skeletal muscle acetone powder (Pel-Freez Biologicals) as described previously (Heissler et al., 2015). Rabbit smooth muscle MLCK and rat calmodulin were recombinantly overproduced in Sf9 insect cells and E.coli and purified as described (Wang et al., 2000).
 
-## HPLC-mass spectrometry
+### HPLC-mass spectrometry
 
 RLC-TS and RLC mutant HMMs (1–2.5 µM) were phosphorylated overnight in buffer containing 10 mM MOPS pH 7.3, 150 mM KCl, 5 mM MgCl2, 0.2 mM CaCl2, 0.1 mM EGTA, 1 mM DTT, 0.1 µM CaM, 0.2 mM ATP, 10 µg/mL MLCK, and 1x phosphatase inhibitor cocktail PhosSTOP (Roche, Indianapolis, IN) at 4°C. The conditions favor phosphorylation of both Threonine-20 and Serine-21 on RLC-TS whereas shorter incubation times favor phosphorylation of only Serine-21. MLCK was omitted for the unphosphorylated controls. A volume of 5–8 µl of the proteins was injected into a reverse phase HPLC (Agilent 1100 series HPLC, Agilent Technologies) with a Zorbax 300 SB-C18 (2.1×50 mm, 3.5 M, Agilent Technologies) and introduced into the mass spectrometer as described (Apffel et al., 1995; Taggart et al., 2000). Positive ion Electrospray Ionization (ESI) mass spectra for intact protein were obtained with an Agilent 6224 mass spectrometer equipped with an ESI interface and a time-of-flight (TOF) mass detector (Agilent Technologies). Mass spectra were analyzed and deconvoluted using MassHunter version B.06.00 (Agilent Technologies) software.
 
-## ATPase activity and in vitro motility assay
+### ATPase activity and in vitro motility assay
 
 Basal and actin-activated ATPase activities of HMM were determined using an NADH-linked assay as described previously (Heissler et al., 2015) at 25°C in buffer containing 10 mM MOPS (pH 7.0), 50 mM NaCl, 2 mM MgCl2, 2 mM ATP, 0.15 mM EGTA, 40 units/mL lactate dehydrogenase, 200 units/mL pyruvate kinase, 1 mM phosphoenolpyruvate, 0.2 mM NADH and varying concentrations of filamentous actin (0–100 µM). Myosin HMM was phosphorylated at room temperature for a minimum of 30 min prior to the assay by the addition of 0.2 mM ATP, 0.2 mM CaCl2, 0.1 µM CaM, and 10 µg/mL MLCK. To determine the kinetic constant kcat and Kapp experimental data sets were fit to the Michaelis-Menten equation using Origin 8.5 (OriginLab). The reported data represent the means and s.e. from at least four separate experiments. The in vitro motility assay was performed as described previously with full-length myosin in the presence or absence of MLCK phosphorylation (Jana et al., 2009).
 
-## Actin-sedimentation assay
+### Actin-sedimentation assay
 
 0.7 µM RLC-TS and RLC-AE HMM were incubated with 10 µM filamentous actin under nucleotide-free conditions or in the presence of 1 mM ATP in buffer containing 10 mM MOPS pH 7.3, 100 mM NaCl, 2 mM MgCl2, 0.1 mM EGTA, 3 mM NaN3 and 1 mM DTT for 30 min at room temperature. Samples only containing RLC-TS, RLC-AE or filamentous actin were used as a control to access the sedimentation behavior. The samples were centrifuged (100,000xg, 30 min, 4°C) in a Beckman Optima MAX-XP. Supernatant and pellet fractions were separated and supplemented to an equivalent volume with loading buffer and 15 µl analyzed on a 4–12% Bis-Tris gel (Life Technologies). The gel was stained with PageBlue (Fermentas) and scanned on an Odyssey system (LiCor).
 
-## Electron microscopy
+### Electron microscopy
 
 Myosin was diluted to 100 nM in buffer containing 150 mM NaCl, 10 mM MOPS, 0.1 mM EGTA, 2 mM MgCl2 (pH 7.0), (supplemented with 100 μM ATP where required). Samples were applied to the grid immediately after dilution. 3 μl of sample was applied to UV treated, carbon-coated copper grid and stained with 1% uranyl acetate. Micrographs were recorded on a JEOL 1200EX II microscope using an AMT XR-60 CCD camera, operating at 80.0 kV room temperature. Catalase crystals were used as a size calibration standard.
 
-## Fly stocks and genetics
+### Fly stocks and genetics
 
-Fly stocks used in this study are listed in Table 4. sqh is the Drosophila gene for the myosin RLC. Briefly, we used sqh-XX::GFP alone and sqh-XX::GFP recombined with Gap43::mCherry (a plasma membrane) mutant stocks crossed into the sqh1 hypomorph background, generated in Vasquez et al. (2014). Germline clones were generated using the FLP-DFS technique by heat shocking mutant/ovoD larvae for 2 hr at 37°C for 3–4 d (Chou and Perrimon, 1992). Briefly, sqh1 FRT/FM7; sqh-XX::GFP/CyO females were crossed to ovoD FRT/Y; hsFlp males, the resulting larvae were heat shocked, and sqh1 FRT/ovoD FRT; sqh-XX::GFP/hsFlp females were crossed to OreR to collect embryos that resulted from sqh1 mutant germline clones and also express sqh-XX::GFP. Throughout the manuscript, the notation distinguishes between recombinant RLC mutant protein and embryos expressing the RLC mutants by using normal (RLC-TS) versus italic (RLC-TS) type, respectively.10.7554/eLife.20828.013Table 4.Fly stocks.DOI: http://dx.doi.org/10.7554/eLife.20828.013Genotype Source RRID for associated stocks or alleles* Oregon-R-C (wild type) 2RRID: FBst0000005ovoD1FRT101/Y; hsFLP-38/hsFLP-38 2ovoD1 RRID: FBst0001813sqh1FRT101/FM7; P{w+sqh-TS::GFP}attP1/CyO 1sqh1 sqh-TS RRID: FBal0016066RRID: FBal0298052sqh1FRT101/FM7; P{w+sqh-AS::GFP}attP1/CyO 1sqh1 sqh-AS RRID: FBal0016066RRID: FBal0298055sqh1FRT101/FM7; P{w+sqh-TA::GFP}attP1/CyO 1sqh1 sqh-TA RRID: FBal0016066RRID: FBal0298054sqh1FRT101/FM7; P{w+sqh-AE::GFP}attP1/CyO 1sqh1 sqh-AE RRID: FBal0016066RRID: FBal0298057sqh1FRT101/FM7; P{w+sqh-TS::GFP}attP1 P{w+Gap43::mCherry}attP40/CyO 1sqh1 sqh-TS Gap43 RRID: FBal0016066RRID: FBal0298052RRID: FBtp0087760sqh1FRT101/FM7; P{w+sqh-AS::GFP}attP1 P{w+Gap43::mCherry}attP40/CyO 3sqh1 sqh-AS Gap43 RRID: FBal0016066RRID: FBal0298055RRID: FBtp0087760sqh1FRT101/FM7; P{w+sqh-TA::GFP}attP1 P{w+Gap43::mCherry}attP40/CyO 1sqh1 sqh-TA Gap43 RRID: FBal0016066RRID: FBal0298054RRID: FBtp0087760sqh1FRT101/FM7; P{w+sqh-AE::GFP}attP1 P{w+Gap43::mCherry}attP40/CyO 1sqh1 sqh-AE Gap43 RRID: FBal0016066RRID: FBal0298057RRID: FBtp0087760sqh-XX = sqh promoter and ORF with site-directed mutagenesis at Threonine-20 and Serine-21 as noted in Figure 1B (spaghetti squash, sqh is the Drosophila RLC gene name).Gap43 = sqh promoter with N-terminal 20 amino acids of rat Gap43 gene which contains a myristoylation sequence (Martin et al., 2010).*FlyBase IDs (RRID: SCR_006549)Sources: (1) From Vasquez et al. (2014); (2) Bloomington Drosophila Stock Center; (3) This study;
+Fly stocks used in this study are listed in Table 4. sqh is the Drosophila gene for the myosin RLC. Briefly, we used sqh-XX::GFP alone and sqh-XX::GFP recombined with Gap43::mCherry (a plasma membrane) mutant stocks crossed into the sqh1 hypomorph background, generated in Vasquez et al. (2014). Germline clones were generated using the FLP-DFS technique by heat shocking mutant/ovoD larvae for 2 hr at 37°C for 3–4 d (Chou and Perrimon, 1992). Briefly, sqh1 FRT/FM7; sqh-XX::GFP/CyO females were crossed to ovoD FRT/Y; hsFlp males, the resulting larvae were heat shocked, and sqh1 FRT/ovoD FRT; sqh-XX::GFP/hsFlp females were crossed to OreR to collect embryos that resulted from sqh1 mutant germline clones and also express sqh-XX::GFP. Throughout the manuscript, the notation distinguishes between recombinant RLC mutant protein and embryos expressing the RLC mutants by using normal (RLC-TS) versus italic (RLC-TS) type, respectively.
 
-## Time-lapse imaging
+**Table 4.**
+ Fly stocks.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Genotype</th>
+      <th>Source</th>
+      <th colspan="2">RRID for associated stocks or alleles*</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Oregon-R-C (wild type)</td>
+      <td>2</td>
+      <td></td>
+      <td>RRID: FBst0000005</td>
+    </tr>
+    <tr>
+      <td>ovoD1FRT101/Y; hsFLP-38/hsFLP-38</td>
+      <td>2</td>
+      <td>ovoD1</td>
+      <td>RRID: FBst0001813</td>
+    </tr>
+    <tr>
+      <td>sqh1FRT101/FM7; P{w+sqh-TS::GFP}attP1/CyO</td>
+      <td>1</td>
+      <td>sqh1 sqh-TS</td>
+      <td>RRID: FBal0016066RRID: FBal0298052</td>
+    </tr>
+    <tr>
+      <td>sqh1FRT101/FM7; P{w+sqh-AS::GFP}attP1/CyO</td>
+      <td>1</td>
+      <td>sqh1 sqh-AS</td>
+      <td>RRID: FBal0016066RRID: FBal0298055</td>
+    </tr>
+    <tr>
+      <td>sqh1FRT101/FM7; P{w+sqh-TA::GFP}attP1/CyO</td>
+      <td>1</td>
+      <td>sqh1 sqh-TA</td>
+      <td>RRID: FBal0016066RRID: FBal0298054</td>
+    </tr>
+    <tr>
+      <td>sqh1FRT101/FM7; P{w+sqh-AE::GFP}attP1/CyO</td>
+      <td>1</td>
+      <td>sqh1 sqh-AE</td>
+      <td>RRID: FBal0016066RRID: FBal0298057</td>
+    </tr>
+    <tr>
+      <td>sqh1FRT101/FM7; P{w+sqh-TS::GFP}attP1 P{w+Gap43::mCherry}attP40/CyO</td>
+      <td>1</td>
+      <td>sqh1 sqh-TS Gap43</td>
+      <td>RRID: FBal0016066RRID: FBal0298052RRID: FBtp0087760</td>
+    </tr>
+    <tr>
+      <td>sqh1FRT101/FM7; P{w+sqh-AS::GFP}attP1 P{w+Gap43::mCherry}attP40/CyO</td>
+      <td>3</td>
+      <td>sqh1 sqh-AS Gap43</td>
+      <td>RRID: FBal0016066RRID: FBal0298055RRID: FBtp0087760</td>
+    </tr>
+    <tr>
+      <td>sqh1FRT101/FM7; P{w+sqh-TA::GFP}attP1 P{w+Gap43::mCherry}attP40/CyO</td>
+      <td>1</td>
+      <td>sqh1 sqh-TA Gap43</td>
+      <td>RRID: FBal0016066RRID: FBal0298054RRID: FBtp0087760</td>
+    </tr>
+    <tr>
+      <td>sqh1FRT101/FM7; P{w+sqh-AE::GFP}attP1 P{w+Gap43::mCherry}attP40/CyO</td>
+      <td>1</td>
+      <td>sqh1 sqh-AE Gap43</td>
+      <td>RRID: FBal0016066RRID: FBal0298057RRID: FBtp0087760</td>
+    </tr>
+  </tbody>
+</table>
+
+_sqh-XX = sqh promoter and ORF with site-directed mutagenesis at Threonine-20 and Serine-21 as noted in Figure 1B (spaghetti squash, sqh is the Drosophila RLC gene name).Gap43 = sqh promoter with N-terminal 20 amino acids of rat Gap43 gene which contains a myristoylation sequence (Martin et al., 2010).*FlyBase IDs (RRID: SCR_006549)Sources: (1) From Vasquez et al. (2014); (2) Bloomington Drosophila Stock Center; (3) This study;_
+
+### Time-lapse imaging
 
 Embryos were dechorionated in 50% bleach, mounted ventral side upon a slide coated with ‘embryo glue’ (double-sided tape soaked in heptane). No. 1.5 coverslips were used as spacers and a No. 1 coverslip was used as a cover to create a chamber for the embryo. The chamber was filled with Halocarbon 27 oil. All imaging occurred at room temperature on a Zeiss LSM 710 confocal microscope with a 40x/1.2 Apochromat water objective (Figure 3C and Figure 4) or 20X/1.0 Apochromat water objective (Figure 3A and B). Argon ion and 561 nm diode lasers were used for excitation. The band-pass selected for GFP was ~488–558 nm and for mCherry was ~573–696 nm. All images were acquired using Zen (Zeiss) software. For Figure 3A and Figure 3B, embryos of indicated genotype were mounted side-by-side on the same slide and imaged at the same time.
 
-## Tissue-cutting
+### Tissue-cutting
 
 Ablations were performed using a Chameleon Ultra II femtosecond pulsed-IR laser (set at 800 nm and 24% intensity) attached to a Zeiss LSM710 with a 40X water immersion objective. To perform ablations, the laser was targeted to a region of interest (8.5 µm line). Image stacks were collected every 1.3 s.
 
-## Image analysis
+### Image analysis
 
 Images were processed using Fiji (RRID:SCR_002285), and MATLAB (Mathworks, RRID:SCR_001622).
 
-## Myosin intensity profile of side-by-side embryos
+#### Myosin intensity profile of side-by-side embryos
 
 In Fiji, a Gaussian filter (σ = 1) was applied to all images and a maximum projection was made of all z-slices. A mean intensity profile of the myosin signal along 33 μm of the length of the furrow over a region that extended across the width of both embryos was calculated. The time of the peak myosin intensity for each embryo was determined and the mean intensity profile for each was plotted in Figure 3A and B.
 
-## Tissue-cutting analysis
+#### Tissue-cutting analysis
 
-In Fiji, for each ablation experiment, a Gaussian filter (σ = 0.7) was applied to all images and a maximum projection was made of both z-slices. Kymographs were taken along the center 4.25 µm of the laser incision. The image was converted to binary mode and a maximum projection was made from these kymographs. Images were imported into MATLAB, the built-in function bwmorph was used to remove outlier points. The distance between the wound edges was calculated for each time point. The displacement was this distance divided by two. The initial recoil velocity was calculated by fitting the displacement to a Kelvin-Voigt model of tissue displacement using the MATLAB build in function lsqcurvefit (Equation 1).(1)x(t) = Tς(1−eςtη)
+In Fiji, for each ablation experiment, a Gaussian filter (σ = 0.7) was applied to all images and a maximum projection was made of both z-slices. Kymographs were taken along the center 4.25 µm of the laser incision. The image was converted to binary mode and a maximum projection was made from these kymographs. Images were imported into MATLAB, the built-in function bwmorph was used to remove outlier points. The distance between the wound edges was calculated for each time point. The displacement was this distance divided by two. The initial recoil velocity was calculated by fitting the displacement to a Kelvin-Voigt model of tissue displacement using the MATLAB build in function lsqcurvefit (Equation 1).
 
-Where t indicates time, x(t) is the displacement of the wound edge, T is the tensile force in the tissue prior to the cut, ζ is the stiffness of the spring, and η is the viscous coefficient of the dashpot. Only fits with R-squared values greater than 50% were used in the subsequent calculations of initial recoil velocity. The initial recoil velocity (v0) is described by the derivative of the displacement at time zero, which is the tension over the viscous coefficient of the dashpot (Equation 2). The time decay constant (τ) is the viscous coefficient of the dashpot over the stiffness of the spring (Equation 3)(2)v0= dx(0)dt = Tη(3)τ= ηζ
+$$
+x(t) = \frac{T}{ς}(1−e^{\frac{ςt}{η}})
+$$
 
-Displacement curves were fit to a power law function (Equation 4).(4)x(t)= βxα
+Where t indicates time, x(t) is the displacement of the wound edge, T is the tensile force in the tissue prior to the cut, ζ is the stiffness of the spring, and η is the viscous coefficient of the dashpot. Only fits with R-squared values greater than 50% were used in the subsequent calculations of initial recoil velocity. The initial recoil velocity (v0) is described by the derivative of the displacement at time zero, which is the tension over the viscous coefficient of the dashpot (Equation 2). The time decay constant (τ) is the viscous coefficient of the dashpot over the stiffness of the spring (Equation 3)
+
+$$
+v_{0}= \frac{dx(0)}{dt} = \frac{T}{η}
+$$
+
+
+
+$$
+\tau= \frac{η}{ζ}
+$$
+
+Displacement curves were fit to a power law function (Equation 4).
+
+$$
+x(t)= \betax^{\alpha}
+$$
 
 The exponent (α) of the power law gives a measurement of the viscoelastic properties of the cut tissues (Fabry et al., 2001; Fischer et al., 2014). Only fits with R-squared values greater than 50% were used.
 
-## Constriction rate analysis
+#### Constriction rate analysis
 
 We used custom MATLAB software, EDGE (Embryo Development Geometry Explorer) (Gelbart et al., 2012) to segment images for quantification of apical area and myosin intensities. Segmented cell membranes were ~1 µm below the myosin signal. Embryos were aligned in time using the mean apical area signals of each embryo and choosing the time when the tissue begins to constrict. The myosin signal was pre-processed to remove cytoplasmic myosin by only using the maximum intensity z-projection for the two highest myosin intensity values that were greater than 2.5 standard deviations above the mean cytoplasmic myosin intensity. A Gaussian filter (σ = 0.5) was applied to this signal. To identify instances of rapid cellular constriction (Figure 4A), we first smoothed signals for apical area and mean myosin intensity and calculated instantaneous rates for each time point. Instances of rapid myosin intensity increases were identified as instances where the myosin accumulation rate was between one and two standard deviations above the mean rate for all control cells (RLC-TS). The constriction rate was calculated at these instances. To identify the amount of time it took the mean apical area of an embryo to decrease to 50% its starting area, we first aligned the mean apical areas of the embryos to each other by matching when the mean area starts to decrease. The initial apical area (A0) is defined as the mean area 2 min before this rapid decrease, 0 min in Figure 4—figure supplement 1A for all representative embryos. We then determined the amount of time it took for the mean apical area to decrease to 50% of A0.
 
-## Statistics
+### Statistics
 
 All statistics were performed in MATLAB. P-values were calculated using the built-in ranksum function, which performs the Mann-Whitney U test.
 
-## Download
+### Download
 
 EDGE source code is available at: https://github.com/mgelbart/embryo-development-geometry-explorer
 

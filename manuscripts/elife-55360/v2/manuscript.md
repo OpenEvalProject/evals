@@ -20,7 +20,7 @@
 
 ## Abstract
 
-The β-catenin transcriptional coregulator is involved in various biological and pathological processes; however, its requirements in hematopoietic cells remain controversial. We re-targeted the Ctnnb1 gene locus to generate a true β-catenin-null mutant mouse strain. Ablation of β-catenin alone, or in combination with its homologue γ-catenin, did not affect thymocyte maturation, survival or proliferation. Deficiency in β/γ-catenin did not detectably affect differentiation of CD4 + T follicular helper cells or that of effector and memory CD8 + cytotoxic cells in response to acute viral infection. In an MLL-AF9 AML mouse model, genetic deletion of β-catenin, or even all four Tcf/Lef family transcription factors that interact with β-catenin, did not affect AML onset in primary recipients, or the ability of leukemic stem cells (LSCs) in propagating AML in secondary recipients. Our data thus clarify on a long-standing controversy and indicate that β-catenin is dispensable for T cells and AML LSCs.
+The β-catenin transcriptional coregulator is involved in various biological and pathological processes; however, its requirements in hematopoietic cells remain controversial. We re-targeted the Ctnnb1 gene locus to generate a true β-catenin-null mutant mouse strain. Ablation of β-catenin alone, or in combination with its homologue γ-catenin, did not affect thymocyte maturation, survival or proliferation. Deficiency in β/γ-catenin did not detectably affect differentiation of CD4+T follicular helper cells or that of effector and memory CD8+ cytotoxic cells in response to acute viral infection. In an MLL-AF9 AML mouse model, genetic deletion of β-catenin, or even all four Tcf/Lef family transcription factors that interact with β-catenin, did not affect AML onset in primary recipients, or the ability of leukemic stem cells (LSCs) in propagating AML in secondary recipients. Our data thus clarify on a long-standing controversy and indicate that β-catenin is dispensable for T cells and AML LSCs.
 
 ## Introduction
 
@@ -34,6 +34,30 @@ One notable observation is that both Ctnnb1-targeted strains used in previous st
 
 We previously obtained the Ctnnb1 exons 2–6 floxed model (Brault et al., 2001). We aimed to ablate β-catenin protein in all hematopoietic cells using Vav-Cre, but found accumulation of a truncated form of β-catenin protein of approximately 40 kDa in bone marrow (BM) cells (Figure 1—figure supplement 1), consistent with a previous report (Jeannet et al., 2008). To achieve complete ablation of β-catenin protein, we re-targeted the Ctnnb1 gene locus by inserting LoxP sites into introns 1 and 14, respectively (Figure 1A) so that a Cre recombinase removes 13 of a total of 15 Ctnnb1 exons. The resulting Ctnnb1-floxed mice were crossed with a strain that expresses Cre recombinase and estrogen receptor fusion protein (Cre-ERT2) in the ubiquitously expressed Rosa26 locus (Guo et al., 2007a). We maintained a single Rosa26Cre-ERT2 allele in all mice used in this study (referred to as CreER+ for simplicity), so as to avoid dose-dependent effects by tamoxifen and/or Cre. Lineage-negative BM cells and peripheral T cells from CreER+Ctnnb1fl/fl mice were cultured in vitro with tamoxifen or its carrier solvent, DMSO, and immunoblotting validated effective ablation of β-catenin protein without generating truncated form(s) (Figure 1B). A band of 50 kDa was detected in both tamoxifen- and DMSO-treated T cells, which was considered non-specific because its size was larger than the truncated β-catenin protein resulting from translation from downstream exons (compare with Figure 1—figure supplement 1). These analyses validate that the new targeting strategy can generate a true β-catenin null mutation.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/55360/elife-55360-fig1-v2.jpg)
+
+**Figure 1.:** (A) Targeting strategy to generate β-catenin null mutant mouse strain. All Ctnnb1 exons are shown, with red triangles denoting LoxP sites and red arrows denoting genotyping primers. Shown in the lower panel is partial Ctnnb1 transcript with blue arrows marking RT-PCR primers. (B) Ex vivo β-catenin ablation. Lineage-negative BM cells and splenic CD3+ T cells were isolated from CreER+Ctnnb1fl/fl mice and cultured with DMSO or tamoxifen followed by immunoblotting for β-catenin and β-actin with the latter as equal loading control. (C) Experimental design for generation of BM chimeras and analysis. (D) In vivo β-catenin ablation. BM chimeras reconstituted with WT or CreER+Ctnnb1fl/fl BM cells were treated with tamoxifen as in C). CD45.2+ total thymocytes, TCRβ+ splenocytes, or total BM cells were sorted and immunoblotted for β-catenin and β-actin. Data from two independent experiments are shown. In (B and D), the 50 kDa band that appeared in some blots are considered non-specific reactivity to the anti-β-catenin antibody. Refer to Figure 1—figure supplement 1 for size comparison with a truncated β-catenin protein produced from Ctnnb1 exons 2–6-targeted allele. (E) Thymic cellularity. WT, CreER+Ctnnb1fl/fl, or CreER+Ctnnb1fl/flJupfl/fl BM chimeras were treated with tamoxifen as in C), and CD45.2+ thymocytes were enumerated. (F) Detection of thymic maturation stages. CD45.2+ thymocytes were surface-stained with biotinylated lineage markers (minus CD3ε) to exclude non-T cells, and with CD4 and CD8 to identify DN, DP, CD4+ and CD8+ subsets. (G) Detection of DN subsets. CD45.2+ DN thymocytes were surface-stained with CD44 and CD25 to identify DN1 to DN4 subsets. In panels (E–G), values in representative contour plots denote percentages, and bar graphs are cumulative data of means ± s.d. from ≥3 experiments. None of the parameters was statistically significant among the groups as determined by one-way ANOVA, and thus unmarked for clarity.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/55360/elife-55360-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Ctnnb1 exons 2–6 was previously targeted by R Kelmer and colleagues (Brault VR et al, Development 128, 1253, 2001, Stock No. 004152, the Jackson Laboratory), and referred to as RK-Ctnnb1-floxed mice. Bone marrow cells from Vav-Cre+ RK-Ctnnb1fl/fl and WT mice were immunoblotted with anti-β-catenin (Clone 14, BD Transduction Laboratories). A truncated β-catenin protein of approximately 40 kDa was detected in Vav-Cre+ RK-Ctnnb1fl/fl but not WT cells. Other two bands present in both WT and Vav-Cre+ RK-Ctnnb1fl/fl cells are considered non-specific.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/55360/elife-55360-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** CreER+Ctnnb1fl/fl and CreER+Ctnnb1+/+ mice were treated with Tamoxifen on four consecutive days, and the survival curve is shown.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/55360/elife-55360-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) Detection of deletion efficiency of Ctnnb1 locus on genomic DNA level. BM chimeras reconstituted with WT or CreER+Ctnnb1fl/fl BM cells were treated with tamoxifen as in Figure 1C. Genomic DNA (gDNA) was isolated from sorted CD45.2+ BM cells, and DNA segments in the Ctnnb1 locus were detected with indicated primer sets (as in Figure 1A) by quantitative PCR. Lef1 gene locus was detected to normalize quantity of genomic DNA input. (B) Detection of deletion efficiency of Ctnnb1 transcripts. Total RNA was isolated from sorted CD45.2+ BM cells, and Ctnnb1 transcript was detected with the indicated primers (as in Figure 1A) by quantitative RT-PCR. Hprt transcript was detected to normalize quantity of total RNA input. Data are means ± s.d. (n = 3 from two experiments). Similar results were obtained from sorted CD45.2+ total thymocytes and splenic T cells (not shown). ***, p<0.001 by Student’s t-test.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/55360/elife-55360-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** (A) Diagram showing the conditionally targeted Jup allele. All Jup exons are shown, with red triangles denoting LoxP sites and red arrows denoting genotyping primers. Shown in the lower panel is partial Jup transcript with blue arrows marking RT-PCR primers. (B) Detection of deletion efficiency of the Jup locus on genomic DNA level. BM chimeras reconstituted with WT or CreER+Ctnnb1fl/flJupfl/fl BM cells were treated with tamoxifen as in Figure 1C. Genomic DNA (gDNA) was isolated from sorted CD45.2+ BM cells, and DNA segments in the Jup locus were detected with indicated primer sets in A) by quantitative PCR. Lef1 gene locus was detected to normalize quantity of genomic DNA input. (C) Detection of deletion efficiency of Ctnnb1 and Jup transcripts. Total RNA was isolated from CD45.2+ BM cells sorted as in B), and Ctnnb1 and Jup transcripts were detected with the indicated primers (Figure 1A and panel A) in this supplement) by quantitative RT-PCR. Hprt transcript was detected to normalize quantity of total RNA input. Jup detection, marked with a red box, was displayed on a smaller y-axis scale to demonstrate deletion efficiency upon tamoxifen induction. Data are means ±s.d. (n = 3 from two experiments). Similar results were obtained from sorted CD45.2+ total thymocytes (not shown). (D) In vivo γ-catenin ablation. In the left panel, CD45.2+ BM cells were sorted as in B) and immunoblotted for γ-catenin, where no γ-catenin-specific band was detected. In the right panel, WT or CreER+Ctnnb1fl/flJupfl/fl mice were treated directly with tamoxifen for four consecutive days, and on day 5, hepatocytes were immunoblotted for γ-catenin.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/55360/elife-55360-fig1-figsupp5-v2.jpg)
+
+**Figure 1—figure supplement 5.:** WT, CreER+Ctnnb1fl/fl, or CreER+Ctnnb1fl/flJupfl/fl BM chimeras were treated with tamoxifen as in Figure 1C. CD45.2+ thymic subsets were intracellularly stained for Ki67 to detect thymocyte proliferation (A), or stained for active Caspase-3/7 to detect thymocyte apoptosis (B). Data are means ±s.d. from ≥3 experiments. None of the parameters was statistically significant among the groups as determined by one-way ANOVA, and thus unmarked for clarity.
+
 When the whole mice were treated with tamoxifen in vivo for four consecutive days, however, CreER+Ctnnb1fl/fl mice exhibited morbidity within 10 days, while CreER+Ctnnb1+/+ mice remained healthy (Figure 1—figure supplement 2), indicating ablating β-catenin in multiple organs may have severely compromised vital functions. To specifically address the function of β-catenin in hematopoietic cells, we transplanted BM cells from CD45.2+ CreER+Ctnnb1+/+ (WT) or CreER+Ctnnb1fl/fl mice into irradiated CD45.1+ recipients (Figure 1C). After ≥6 weeks when the BM chimeras were stably established, treatment of the recipients with the same tamoxifen regimen did not cause lethality (not shown). Effective ablation of β-catenin was observed in sorted CD45.2+CreER+Ctnnb1fl/fl thymocytes, splenic T cells, and total BM cells (Figure 1D). We further determined the efficacy of deleting floxed exons in genomic DNAs, where the PCR products from F1 and R1 primers were detected from the WT Ctnnb1 allele (Figure 1A), but were barely detectable in sorted CD45.2+ BM cells from tamoxifen-treated CreER+Ctnnb1fl/fl recipients (Figure 1—figure supplement 3A). On the other hand, PCR products from the F1 and R2 primer combination were only detected after the intervening exons were deleted (Figure 1—figure supplement 3A). Effective deletion of Ctnnb1 transcripts was also validated by RT-PCR using primer 13F (complementary to the deleted exon 13) in combination with primer 15R (complementary to undeleted exon 15) (Figure 1—figure supplement 3B). These characterizations further validated that null mutation of β-catenin is achieved in vivo in all hematopoietic cells in the BM chimeras.
 
 To directly address the functional redundancy between β-catenin and its homologue γ-catenin (encoded by Jup), we crossed the Jupfl/fl strain (Demireva et al., 2011) with CreER+Ctnnb1fl/fl mice to produce CreER+Ctnnb1fl/flJupfl/fl mice and generated BM chimeras as in Figure 1C. Excision of the floxed Jup exons 3–5 after tamoxifen treatment was validated in genomic DNAs from sorted CD45.2+ BM cells with similar strategy as above (Figure 1—figure supplement 4A). The PCR products from Jup F1 and R1 primers detected from the WT Jup allele in WT cells were greatly diminished in tamoxifen-treated CreER+Ctnnb1fl/flJupfl/fl cells, while PCR products from Jup F1 and R2 primer combination were only detected in the latter (Figure 1—figure supplement 4B). On the mRNA level, Jup transcripts were only one fiftieth as abundant as Ctnnb1 transcripts in WT cells, but both Jup and Ctnnb1 transcripts were effectively deleted in tamoxifen-treated CreER+Ctnnb1fl/flJupfl/fl BM cells (Figure 1—figure supplement 4C). Consistent with low Jup transcript abundance, detection of γ-catenin protein in WT or targeted BM cells proved to be challenging; however, γ-catenin protein was readily detectable in WT hepatocytes and was greatly diminished in hepatocytes in tamoxifen-treated CreER+Ctnnb1fl/flJupfl/fl mice (non-BM chimeras, Figure 1—figure supplement 4D). These analyses validated effective ablation of γ-catenin in our experimental system.
@@ -44,11 +68,21 @@ In response to acute viral infections, antigen-specific mature CD4+ and CD8+ T c
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/55360/elife-55360-fig2-v2.jpg)
 
-**Figure 2.:** BM chimeras were established and treated with tamoxifen as in Figure 1C, and infected with LCMV. The infected mice were analyzed on eight dpi for effector (A–D) and ≥40 dpi for memory phase responses (E, F). (A) Detection of CXCR5+SLAMlo TFH and CXCR5–SLAMhi TH1 cells in CD45.2+ CD44hiCD62L– activated CD4+ splenocytes on eight dpi by cell surface staining. (B) Detection of CXCR5+Bcl6+ GC-TFH cells in CD45.2+ CD44hiCD62L– activated CD4+ splenocytes on eight dpi by intranuclear staining. (C) Detection of IFN-γ and/or TNF-α-producing cells in CD45.2+CD8+ splenocytes on eight dpi by intracellular staining after 5 hr incubation with GP33 peptides. (D) Detection of granzyme B expression in CD45.2+ CD11ahi activated CD8+ splenocytes on eight dpi by intracellular staining. Values in half-stacked histograms denote geometric mean fluorescence intensity (gMFI). (E) Detection of CXCR5+ memory TFH cells in CD45.2+CD44hi antigen-experienced CD4+ splenocytes on ≥40 dpi by cell surface staining. (F) Detection of IFN-γ and/or TNF-α-producing memory CD8+ T cells in CD45.2+CD8+ splenocytes on ≥40 dpi by intracellular staining after 5 hr incubation with GP33 peptides. In all panels, values in representative contour plots denote percentages, and cumulative data are means ± s.d. from two experiments. *, p<0.05 by Student’s t-test; all other unmarked parameters were not statistically significant among the groups as determined by one-way ANOVA (A–D) or Student’s t-test (E, F).Figure 2—source data 1.Figure 2A–F, to document frequency of antigen-specific Tfh cells (A, B) and CD8 T cells (C), expression of Granzyme B in CD8 T cells (D) at the effector response phase, and the frequency of antigen-specific Tfh cells (E) and CD8 T cells (F) at the memory phase.
+**Figure 2.:** BM chimeras were established and treated with tamoxifen as in Figure 1C, and infected with LCMV. The infected mice were analyzed on eight dpi for effector (A–D) and ≥40 dpi for memory phase responses (E, F). (A) Detection of CXCR5+SLAMlo TFH and CXCR5–SLAMhi TH1 cells in CD45.2+ CD44hiCD62L– activated CD4+ splenocytes on eight dpi by cell surface staining. (B) Detection of CXCR5+Bcl6+ GC-TFH cells in CD45.2+ CD44hiCD62L– activated CD4+ splenocytes on eight dpi by intranuclear staining. (C) Detection of IFN-γ and/or TNF-α-producing cells in CD45.2+CD8+ splenocytes on eight dpi by intracellular staining after 5 hr incubation with GP33 peptides. (D) Detection of granzyme B expression in CD45.2+ CD11ahi activated CD8+ splenocytes on eight dpi by intracellular staining. Values in half-stacked histograms denote geometric mean fluorescence intensity (gMFI). (E) Detection of CXCR5+ memory TFH cells in CD45.2+CD44hi antigen-experienced CD4+ splenocytes on ≥40 dpi by cell surface staining. (F) Detection of IFN-γ and/or TNF-α-producing memory CD8+ T cells in CD45.2+CD8+ splenocytes on ≥40 dpi by intracellular staining after 5 hr incubation with GP33 peptides. In all panels, values in representative contour plots denote percentages, and cumulative data are means ± s.d. from two experiments. *, p<0.05 by Student’s t-test; all other unmarked parameters were not statistically significant among the groups as determined by one-way ANOVA (A–D) or Student’s t-test (E, F).
 
 After the peak responses that resolve acute infections, a fraction of antigen-specific T cells persists as memory T cells (Martin and Badovinac, 2014). Tcf1 is expressed in long and short isoforms with the former having the capacity of interacting with β-catenin through its N-terminal domain (Staal et al., 2008; Xue and Zhao, 2012). Previously we ablated the Tcf1 long isoform, which led to profound reduction of memory TH1 and TFH cells (Gullicksrud et al., 2017). Tcf1 is also required for memory CD8+ T cells (Jeannet et al., 2010; Zhou et al., 2010). To determine if β-catenin and γ-catenin are required for memory T cells, we analyzed the infected BM chimeras at ≥40 dpi. During 15–16 and 30–31 dpi, we added two rounds of tamoxifen treatment to the LCMV-infected BM chimeras, so as to prevent rebound of undeleted cells and ensure persistent deletion of β/γ-catenin proteins. CXCR5+ memory TFH cells were detected at similar frequency in WT and β/γ-catenin-null BM chimeras (Figure 2E). GP33-specific memory CD8+ T cells were not diminished in β/γ-catenin-null BM chimeras and preserved similar capacity of producing TNF-α (Figure 2F). Collectively, loss of β-catenin and γ-catenin did not detectably affect T cell responses at either effector or memory phase.
 
 β-catenin ablation using previously Ctnnb1-targeted models did not show potent impact on maintenance of HSCs (Ruiz-Herguido et al., 2012; Zhao et al., 2007). Consistent with these observations, null mutation of β-catenin alone or both β/γ-catenin did not affect BM cellularity (Figure 3A), or the frequency of Lin–Sca1+c-Kit+ (LSK) cells, in which HSCs were enriched (Figure 3B). HSCs with long-term repopulation capacity, as marked by CD150+CD48– phenotype, were detected at similar frequency among all genotypes (Figure 3B), suggesting that loss of β/γ-catenin did not perturb HSC homeostasis.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/55360/elife-55360-fig3-v2.jpg)
+
+**Figure 3.:** (A–B) BM chimeras were established and treated with tamoxifen as in Figure 1C, and analyzed for CD45.2+ BM cellularity (A), LSKs and HSCs by cell surface staining (B). Values in representative contour plots (B) denote percentages, and cumulative data on frequency of LSKs or HSCs are means ± s.d. from two experiments. None of the parameters was statistically significant among the groups as determined by one-way ANOVA. (C) Experimental design for modeling AML initiation and propagation in mice. After initial tamoxifen (Tam) treatments for four consecutive days, the 1o recipients and 2o recipients were subjected to recurring Tam treatment for three consecutive days at 4 week intervals to ensure long-term elimination of targeted proteins from the floxed alleles. For 1o recipients, MLL-AF9 retrovirus-infected Lin–BM cells containing 104 GFP+Lin–cKit+ cells were transplanted. For 2o recipients, 103 LSCs were sorted from 1o recipients at 4 weeks after initial transplantation and then transplanted. GOI, gene of interest. (D) Complete deletion of β-catenin in AML cells as determined by immunoblotting of sorted CD45.2+GFP+Mac1+ BM cells from 1o recipients on day 28 after BM transplantation, where WT and Ctnnb1-floxed cells were subjected to two rounds of tamoxifen treatment. (E) Kaplan-Meier survival curves of 1o and 2o recipients of WT or β-catenin-deficient LSCs. Data are pooled from two independent experiments. ns, not statistically significant as determined by log-rank test. (F) Longitudinal tracking of CD45.2+GFP+Mac1+ AML leukemic cells in PBCs of 2o recipients. For week 8, the surviving recipients were analyzed. Data from two independent experiments were displayed separately because modest differences were observed in kinetics of leukemic cell expansion at week 4. These differences did not affect recipient survival (see E). **, p<0.01; ***, p<0.001 by Student’s t-test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/55360/elife-55360-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Mac1 and Gr.1 were excluded from lineage markers so that Mac1 expression can be independently assessed. It is of note that Mac1hi cells have the LSC capacity to propagate AMLs upon transplantation, but with modestly prolonged latency (not shown).
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/55360/elife-55360-fig3-figsupp2-v2.jpg)
 
 Unlike HSCs, AML LSCs have been reported to critically depend on β-catenin using the MLL-AF9 or MLL-ENL mouse models (Wang et al., 2010; Yeung et al., 2010). To reappraise this requirement with our new animal model, we used the same MLL-AF9 AML model by retroviral delivery of the fusion protein (co-expressed with GFP) into Lin– BM cells from tamoxifen-treated CreER+ WT or CreER+Ctnnb1fl/fl BM chimeras (Figure 3C). The MLL-AF9-GFP-infected Lin– BM cells were then transplanted into CD45.1+ primary (1o) recipients (Figure 3C). Because tamoxifen-mediated target gene ablation may not achieve 100% deletion efficiency in all cells, rare non-deleted cells could have growth advantage over β-catenin-deficient cells, especially in long-term studies such as LSC serial transplantation. To eliminate potential outgrowth of the rare non-deleted cells, we took the approach of recurring tamoxifen treatments at a standardized interval. Our optimizing experiments found that following the initial 4 doses of tamoxifen administration, 3 doses of tamoxifen delivery at 4 week intervals sustained elimination of β-catenin protein in Ctnnb1-targeted cells with minimal impact on hematopoietic cellularity. The efficacy of this regimen was validated by immunoblotting for β-catenin in CD45.2+GFP+Mac1+ AML cells in the BM of 1o recipients (Figure 3D). The 1o recipients in both groups showed similar rate of survival (Figure 3E), suggesting that β-catenin null mutation did not affect the onset of AML.
 
@@ -58,7 +92,7 @@ To further substantiate the unexpected lack of impact on AML LSCs by null mutati
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/55360/elife-55360-fig4-v2.jpg)
 
-**Figure 4.:** (A) Targeting strategy for Tcf7l1 gene locus. Yellow boxes denote exons, with exon numbers marked on top. Exon six is flanked with two LoxP sites (marked with red triangles). The LacZ/Neo cassette flanked by Frt Sites (cyan wedges) was removed with Flippase in germline-transmitted mice. (B) In vivo ablation of Tcf/Lef proteins. CreER+ WT, Tcf1/Lef1 dKO, and Tcf3/4 dKO mice were treated with tamoxifen for four consecutive days. Three days later, total thymocytes were intracellularly stained for Tcf1 and Lef1 in Tcf1/Lef1 dKO and control mice, and values denote geometric mean fluorescent intensity in representative half-stacked histograms (left panels). Total thymocytes were immunoblotted for Tcf4 protein in Tcf3/4 and control mice (right panel). (C) Validation of efficient deletion of targeted Tcf7l1 and Tcf7l2 exons in hematopoietic stem/progenitor cells. CreER+Tcf-qKO and WT mice were treated with tamoxifen for four consecutive days, and two days later, Flt3–LSK cells, which were enriched in both long-term and short-term HSCs, were sort-purified and analyzed by quantitative RT-PCR. Relative expression of Tcf7l1 and Tcf7l2 was determined by normalizing to Hprt, and shown as means ± s.d. (n = 5). NRD, not reliably detected. (D) Thymic cellularity. CreER+ WT, Tcf1/Lef1 dKO, Tcf3/4 dKO, and Tcf-qKO mice were treated with tamoxifen as in B), and thymocytes were enumerated. (E) Detection of thymic maturation stages. Thymocytes were surface-stained with biotinylated lineage markers (minus CD3ε) to exclude non-T cells, and with CD4 and CD8 to identify DN, DP, CD4+ and CD8+ subsets. (F) Detection of DN subsets. DN thymocytes were surface-stained with CD44 and CD25 to identify DN1 to DN4 subsets. Note that deletion of Tcf1 and Lef1, as in Tcf1/Lef1 dKO and Tcf-qKO mice, caused premature, modest upregulation of CD25 in a portion of DN1 cells, and the gate was adjusted accordingly to demarcate DN1 and DN2 subsets. Data in D–F are means ±s.d. from ≥2 experiments. Statistical significance for multiple groups was first assessed by one-way ANOVA, and that for indicated pair comparison was determined with Tukey’s correction. *, p<0.05; **, p<0.01; ***, p<0.001; ns, not statistically significant. In F), n = 2 for Tcf1/Lef1 dKO, and thus no p values are shown. (G) Kaplan-Meier survival curves of 1o and 2o recipients of WT or Tcf-qKO LSCs. Data are pooled from two independent experiments. ns, not statistically significant as determined by log-rank test. (H) Longitudinal tracking of CD45.2+GFP+Mac1+ AML leukemic cells in PBCs of 2o recipients. For week 8, the surviving recipients were analyzed. Data from two independent experiments were displayed separately because modest differences were observed in kinetics of leukemic cell expansion at week 4. These differences did not affect recipient survival (see G). ns, not statistically significant as determined by Student’s t-test.Figure 4—source data 1.Figure 4D–H, to document thymic cellularity (D), frequency of thymocyte subsets at different developmental stages (E, F), and leukemia burden in peripheral blood of AML receipt mice (G).
+**Figure 4.:** (A) Targeting strategy for Tcf7l1 gene locus. Yellow boxes denote exons, with exon numbers marked on top. Exon six is flanked with two LoxP sites (marked with red triangles). The LacZ/Neo cassette flanked by Frt Sites (cyan wedges) was removed with Flippase in germline-transmitted mice. (B) In vivo ablation of Tcf/Lef proteins. CreER+ WT, Tcf1/Lef1 dKO, and Tcf3/4 dKO mice were treated with tamoxifen for four consecutive days. Three days later, total thymocytes were intracellularly stained for Tcf1 and Lef1 in Tcf1/Lef1 dKO and control mice, and values denote geometric mean fluorescent intensity in representative half-stacked histograms (left panels). Total thymocytes were immunoblotted for Tcf4 protein in Tcf3/4 and control mice (right panel). (C) Validation of efficient deletion of targeted Tcf7l1 and Tcf7l2 exons in hematopoietic stem/progenitor cells. CreER+Tcf-qKO and WT mice were treated with tamoxifen for four consecutive days, and two days later, Flt3–LSK cells, which were enriched in both long-term and short-term HSCs, were sort-purified and analyzed by quantitative RT-PCR. Relative expression of Tcf7l1 and Tcf7l2 was determined by normalizing to Hprt, and shown as means ± s.d. (n = 5). NRD, not reliably detected. (D) Thymic cellularity. CreER+ WT, Tcf1/Lef1 dKO, Tcf3/4 dKO, and Tcf-qKO mice were treated with tamoxifen as in B), and thymocytes were enumerated. (E) Detection of thymic maturation stages. Thymocytes were surface-stained with biotinylated lineage markers (minus CD3ε) to exclude non-T cells, and with CD4 and CD8 to identify DN, DP, CD4+ and CD8+ subsets. (F) Detection of DN subsets. DN thymocytes were surface-stained with CD44 and CD25 to identify DN1 to DN4 subsets. Note that deletion of Tcf1 and Lef1, as in Tcf1/Lef1 dKO and Tcf-qKO mice, caused premature, modest upregulation of CD25 in a portion of DN1 cells, and the gate was adjusted accordingly to demarcate DN1 and DN2 subsets. Data in D–F are means ±s.d. from ≥2 experiments. Statistical significance for multiple groups was first assessed by one-way ANOVA, and that for indicated pair comparison was determined with Tukey’s correction. *, p<0.05; **, p<0.01; ***, p<0.001; ns, not statistically significant. In F), n = 2 for Tcf1/Lef1 dKO, and thus no p values are shown. (G) Kaplan-Meier survival curves of 1o and 2o recipients of WT or Tcf-qKO LSCs. Data are pooled from two independent experiments. ns, not statistically significant as determined by log-rank test. (H) Longitudinal tracking of CD45.2+GFP+Mac1+ AML leukemic cells in PBCs of 2o recipients. For week 8, the surviving recipients were analyzed. Data from two independent experiments were displayed separately because modest differences were observed in kinetics of leukemic cell expansion at week 4. These differences did not affect recipient survival (see G). ns, not statistically significant as determined by Student’s t-test.
 
 Given the demonstrated efficacy of ablating Tcf/Lef factors in hematopoietic cells, we extended our studies to investigate their requirement in AML LSCs. We used Lin– BM cells from tamoxifen-treated CreER+ WT or CreER+Tcf-qKO mice directly for the AML studies, without establishing BM chimeras. The 1o recipients of MLL-AF9-infected Tcf-qKO BM cells showed similar survival rate as those of WT BM cells (Figure 4G), indicating ablation of all four Tcf/Lef TFs did not affect AML onset. In addition, WT and Tcf-qKO AML LSCs isolated from the 1o recipients showed similar capacity of propagating AML leukemic cells in PBCs in 2o recipients (Figure 4H), resulting in similar survival rate of the 2o recipients (Figure 4G). Collectively, our data do not support an essential requirement for Tcf/Lef and β-catenin proteins in AML LSCs. It is of note that the lack of impact on AML LSCs by ablating Tcf/Lef TFs or β-catenin was not due to technical issues, because we have used the same protocol to demonstrate that 1) constitutive activation of non-canonical NF-κB pathway (Xiu et al., 2018) or 2) genetic ablation of Groucho/TLE corepressors (to be described elsewhere) impairs AML LSC self-renewal.
 
@@ -68,42 +102,185 @@ It is surprising that ablation of neither β-catenin nor Tcf/Lef TFs affected LS
 
 ## Materials and methods
 
-## Animals and generation of BM chimeras
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID:IMSR_ JAX:000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>Ctnnb1fl/fl</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Ctnnb1 exons 2–14 floxed. Send reagent request to haihui.xue@hmh-cdi.org</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>Jup1fl/fl</td>
+      <td>PMID:22036570</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>Tcf7fl/fl</td>
+      <td>PMID:24836425</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>Lef1fl/fl</td>
+      <td>PMID:23103132</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>Tcf7l1fl/fl</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Tcf7l1 Exonsix floxed. Send reagent request to haihui.xue@hmh-cdi.org</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (Mus. musculus)</td>
+      <td>Tcf7l2fl/fl</td>
+      <td>PMID:21383188</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (virus)</td>
+      <td>Lymphocytic choriomeningitis virus Armstrong strain E-350</td>
+      <td>ATCC</td>
+      <td>VR-1271</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-β-catenin (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat. No. 610154 Clone 14</td>
+      <td>IB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>anti-γ-catenin (Mouse monoclonal)</td>
+      <td>BD Biosciences</td>
+      <td>Cat. No. 610253 Clone 15</td>
+      <td>IB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Tcf4 (Rabbit monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat. No. 2565 Clone C9B9</td>
+      <td>IB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>MLL-AF9-GFP plasmid</td>
+      <td>PMID:17463288</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>4-hydroxy-tamoxifen</td>
+      <td>Millipore-Sigma</td>
+      <td>Cat. No. T176</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tamoxifen</td>
+      <td>Millipore-Sigma</td>
+      <td>Cat. No. T5648</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Vybrant FAM caspase-3/7 assay kit</td>
+      <td>Invitrogen</td>
+      <td>Cat. No. V35118</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>QuantiTect Reverse Transcription Kit</td>
+      <td>Qiagen</td>
+      <td>Cat. No. 205313</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo</td>
+      <td>https://www.flowjo.com</td>
+      <td>RRID:SCR_008520</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GraphPad Prism</td>
+      <td>http://www.graphpad.com/</td>
+      <td>SCR_015807</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Animals and generation of BM chimeras
 
 Ctnnb1fl/fl and Tcf7l1fl/fl mice were generated in this study. The following mouse strains were previously described, Ctnnb1-exons 2–6 floxed strain (Stock No. 004152, the Jackson Laboratory) (Brault et al., 2001), Jupfl/fl (Demireva et al., 2011), Tcf7fl/fl (Steinke et al., 2014), Lef1fl/fl (Yu et al., 2012b), Tcf7l2fl/fl (Angus-Hill et al., 2011), and Rosa26Cre-ERT2/+ (Guo et al., 2007a). Transplantation of BM cells was performed as previously reported (Li et al., 2017; Yu et al., 2012a). All mouse experiments were performed under protocols approved by the Institutional Animal Use and Care Committee of the University of Iowa (Protocol No. 8021178) and Center for Discovery and Innovation, Hackensack University Medical Center (Protocol No. 276.00).
 
-## Conditional targeting of the Ctnnb1 locus
+### Conditional targeting of the Ctnnb1 locus
 
 The Ctnnb1fl/fl mice were generated using Clustered Regularly Interspaced Short Palindromic Repeats (CRISPR) technology by Applied StemCell Inc. In brief, two LoxP cassettes were inserted into introns 1 and 14, flanking exons 2 to 14 of the Ctnnb1 locus (Figure 1A). A mixture containing active guide RNA molecules (gRNA) and Cas-9 protein was injected into the cytoplasm of C57BL/6J (B6) embryo. The gRNA sequence for intron 1 is 5’- ACTGCTCTGACTTCACCCGAggg, that for intron 14 is 5’- CTATCATCACTCTATCCCAGagg. The pups born from the microinjection were screened by PCR and further confirmed by sequencing. Germline-transmitted F1 progeny was crossed with Cre-expressing strains for further analysis. For genotyping, the following primers were used to amplify genomic DNA: F1, 5’-CTGCTTACAGTGTGAGACACC; R1, 5’- CCAGTACTGCTCTGACTTCAC; and R2, 5’- CTGCCTGTCACAGATCAGATG. The combination of F1 and R1 detected Ctnnb1 WT allele at 144 bp, and Ctnnb1-floxed allele at 178 bp, and the combination of F1 and R2 detected Ctnnb1-deleted allele at 218 bp. For detection of the Ctnnb1 transcripts in RT-PCR, the following primers were used: Ex13F, 5’-GTCCTATTCCGAATGTCTGAGG; Ex15R, 5’-GGCCAGCTGATTGCTATCAC.
 
-## Verification of conditional deletion of the Jup locus
+### Verification of conditional deletion of the Jup locus
 
 For detecting deletion of Jup-floxed exons on genomic DNA level, the following primers were used: F1, 5’- CTTCTGGGATCTCAGGAGTGTAC; R1, 5’- GTCATGTGCTAGCCCAGTCTAAG; and R2, 5’- TCACAGCCACTACCACTGAC. The combination of F1 and R1 detected Jup-floxed allele at 250 bp, and the combination of F1 and R2 detected Jup-deleted allele at approximately 280 bp. For detection of the Jup transcripts in RT-PCR, the following primers were used: Ex5F, 5’- AGACGGGCTGCAGAAGATG; Ex6R, 5’- GGGCTTGTTGCTAGGACAC.
 
-## Conditional targeting of the Tcf7l1 locus
+### Conditional targeting of the Tcf7l1 locus
 
 The Tcf7l1-floxed embryonic stem (ES) cells were generated by the European Conditional Mouse Mutagenesis Program (EUCOMM), currently part of the International Knockout Mouse Consortium (IKMC) (Figure 4A). The allele is designated as Tcf7l1tm1a(EUCOMM)Wtsi (http://www.informatics.jax.org/allele/MGI:4432867). Microinjection of ES cells was performed at the Wellcome Trust Sanger Institute (UK), and germline-transmitted mice were bred with Flippase recombinase (expressed in the Rosa26 locus, Jackson Laboratory, Stock No. 003946) to remove the LacZ/Neomycin cassette flanked by FRT sites. For genotyping of the resulting Tcf7l1fl/+ allele, the following primers were used to amplify genomic DNA: 5’-AGCAACCAAATGAAGGCTCAC and 5’-CTGCTGCCCCTCTTTTCATC, which detects Tcf7l1 WT allele at 335 bp, and Tcf7l1-floxed allele at 424 bp, and Tcf7l1-deleted allele at 562 bp. Effective ablation of Tcf3 protein in Tcf7l1fl/fl mice was demonstrated by an independent study using the same ES cell-derived allele (Mašek et al., 2016). We also confirmed efficient CreER-mediated deletion of the floxed exon six in Tcf7l1 transcripts in BM Flt3–LSKs by RT-PCR using the following primer sets: 5’-TCACCTACAGCAACGACCAC and 5’-TACGGTGACAGCTCAGATGG, with the latter complementary to the targeted exon 6 (Figure 4C). Deletion of the floxed exon one in Tcf7l2 transcripts by CreER was confirmed in BM Flt3–LSKs by RT-PCR using 5’-ATGTCAAGTCCTCGCTGGTC and 5’-CCCTTAAAGAGCCCTCCATC primers, with the former complementary to the targeted exon 1 (Figure 4C).
 
-## Induced target gene deletion by tamoxifen treatment
+### Induced target gene deletion by tamoxifen treatment
 
 For ex vivo treatment, lineage-depleted BM cells from CreER+WT or CreER+Ctnnb1fl/fl mice were cultured in IMDM medium supplemented with 15% fetal bovine serum (FBS), 20 ng/ml thrombopoietin (TPO), and 50 ng/ml stem cell factor (SCF). Positively selected CD3+ T cells were cultured in RPMI-1640 medium supplemented with 10% FBS, 50 ng/ml IL-7, and 50 ng/ml IL-15. On second day of culture, 4-hydroxy-tamoxifen (T176, Millipore-Sigma) was added to a final concentration of 250 nM, and cells were harvested 3–5 days later for immunoblotting. For in vivo treatment, the mice were administered with tamoxifen (T5648, Millipore-Sigma) at 0.2 mg/g body weight via oral gavage for four consecutive days, as illustrated in Figure 1C. For long-term studies including serial transplantation of AML LSCs, the mice were given 3-day treatment every 4 weeks till the experimental endpoints, as illustrated in Figure 3C.
 
-## Immunoblotting
+### Immunoblotting
 
 Cell lysates were prepared from sorted CD45.2+ thymocytes, splenic T cells, BM cells, or GFP+Mac1+ AML cells, resolved on SDS-PAGE, followed by immunoblotting with anti-β-catenin (Clone 14/Beta-Catenin, Cat. No. 610154, mouse monoclonal, BD Transduction Laboratories), with anti-β-actin (clone I-19, Santa Cruz Biotechnology) detection as control for equal loading. Thymocytes, BM and liver cells were detected with anti-γ-catenin (Cat. No. 610253, BD Biosciences) or anti-Tcf4 (C9B9, Cell Signaling Technologies).
 
-## Flow cytometry and cell sorting
+### Flow cytometry and cell sorting
 
 Single cell suspension was prepared from thymus, spleen, and BM and surface-stained as previously described (Li et al., 2018; Shao et al., 2019). All fluorochrome-conjugated antibodies were from eBiosciences/ThermoFisher Scientific. The antibodies and their clone numbers are TCRβ (H57-597), CD4 (RM4-5), CD8α (53–6.7), CD25 (PC61.5), CD44 (IM7), anti-IFN-γ (XMG1.2), anti-TNFα (MP6-XT22), anti-Icos (C398.4A), CD45.2 (104), Sca1(D7), c-Kit (2B8), CD48 (HM48.1), CD16/CD32 (93), Mac1 (M1/70), CD62L (MEL-14), and Streptavidin (eBiosciences Cat. No. 48-4317-82). For lineage markers, the following biotinylated antibodies were used: B220 (RA3-6B2), CD3ε (145–2 C11), γδTCR (GL3), NK1.1 (PK136), CD11c (N418), Gr-1 (RB6-8C5), Mac1 (M1/70), and TER-119 (TER-119). CXCR5 (L138D7) and SLAM (TC15-12F12.2) are from BioLegend and used in single step staining for TFH cells. For detection of Bcl6 (K112-91) and Ki67 (B56, both from BD Biosciences), Tcf1 (C63D9) and Lef1 (C12A5) and corresponding isotype control (rabbit mAb IgG DA1E, all from Cell Signaling Technologies), surface-stained cells were fixed and permeabilized with the Foxp3/Transcription Factor Staining Buffer Set (eBiosciences/ThermoFisher Scientific), followed by incubation with corresponding fluorochrome-conjugated antibodies. Active Caspsase-3/7 was detected using the Vybrant FAM caspase-3/7 assay kit (Invitrogen/Life Technologies) as described (Li et al., 2018). Peptide-stimulated cytokine production and detection by intracellular staining were as described (Zhao et al., 2010). Anti-human granzyme B (FGB12) and corresponding isotype control were from Invitrogen/ThermoFisher Scientific. Data were collected on FACSVerse (BD Biosciences) and analyzed with FlowJo software (Version X, TreeStar). For cell sorting, surface-stained cells were sorted on BD FACSAria II or FACSAria Fusion cell sorter.
 
-## Viral infection
+### Viral infection
 
 BM chimeric mice were infected intraperitoneally (i.p) with 2 × 105 PFU of LCMV-Armstrong strain to elicit acute viral infection (Li et al., 2018; Shao et al., 2019). Splenocytes were harvested from the infected mice at eight dpi or ≥40 dpi to characterize mature CD4+/CD8+ T cell responses at the effector and memory phases, respectively.
 
-## AML mouse model and LSC secondary transplantation
+### AML mouse model and LSC secondary transplantation
 
 The AML mouse model was established following similar protocol in our previous CML/AML studies (Li et al., 2017; Xiu et al., 2018; Yu et al., 2012a). In brief, Lin– BM cells (either from CreER+Ctnnb1fl/fl BM chimeras or directly from CreER+Tcf-qKO mice, all treated with tamoxifen) were infected with MLL-AF9-GFP retrovirus. The infected cells containing 1 × 104 GFP+c-Kit+ cells were transplanted into lethally irradiated congenic mice along with 2 × 105 CD45.1+ protector BM cells. The primary recipients were treated with tamoxifen during days 25–27 after BM transplantation, and one day later, the BM cells were harvested and sorted for CD45.2+ AML LSCs following the gating strategy outlined in Figure 3—figure supplement 1. One thousand of AML LSCs were mixed with 2 × 105 CD45.1+ protector BM cells and transplanted into secondary recipients, followed by tracking CD45.2+GFP+Mac1+ AML leukemia burden in PBCs. Both primary and secondary recipients were subjected to repeated rounds of tamoxifen treatment for three consecutive days by the end of every 4 weeks, and monitored for survival.
 
-## Statistical analysis
+### Statistical analysis
 
 For comparison between two experimental groups, Student’s t-test was used, with a two-tailed distribution assuming equal sample variance. For multiple group comparisons, one-way ANOVA was used to determine whether any of the differences between the means are statistically significant. As post hoc correction, Tukey’s test was used to determine statistically significance between two groups of interest. Comparison of AML mouse survival among different experimental groups was determined by log-rank test using Prism8 software. Statistical parameters, including numbers of samples or recipient mice analyzed (n), descriptive statistics (means and standard deviation) are reported in the figures and figure legends. P values equal to or more than 0.05 are considered not statistically significant (marked as ‘ns’ or unmarked for clarity). P values of less than 0.05 are considered statistically significant, the following asterisk marks are used to indicate the level of significance: *, p<0.05; **, p<0.01; ***, p<0.001.

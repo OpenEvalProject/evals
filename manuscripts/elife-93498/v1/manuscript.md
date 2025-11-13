@@ -8,8 +8,8 @@
 
 ### Affiliations
 
-1. https://ror.org/05csn2x06 Department of Synapse and Network Development, Netherlands Institute for Neuroscience Amsterdam Netherlands
-2. https://ror.org/008xxew50 Department of Functional Genomics, Center for Neurogenomics and Cognitive Research, VU University Amsterdam Amsterdam Netherlands
+1. Department of Synapse and Network Development, Netherlands Institute for Neuroscience Amsterdam Netherlands ([ROR:05csn2x06](https://ror.org/05csn2x06))
+2. Department of Functional Genomics, Center for Neurogenomics and Cognitive Research, VU University Amsterdam Amsterdam Netherlands ([ROR:008xxew50](https://ror.org/008xxew50))
 
 † Corresponding author
 
@@ -31,7 +31,7 @@ We found that the number of functional synapses and the frequency of transmissio
 
 ## Results
 
-## Mapping synaptic inputs onto spine and shaft synapses
+### Mapping synaptic inputs onto spine and shaft synapses
 
 To visualize the activity and spatial organization of functional excitatory synapses in the developing mouse primary visual cortex, we imaged spontaneously occurring synaptic calcium transients in apical dendrites of pyramidal cells in L2/3 using the calcium indicator GCaMP6s in neonatal mice (Figure 1A). We combined resonant scanning and piezo-driven z-positioning to image a large area of the dendritic tree of individual neurons (Figure 1B). Calcium transients at individual synapses reflecting synaptic transmission (Jia et al., 2010; Takahashi et al., 2012; Winnubst et al., 2015) allowed us to map synaptic inputs across 12 dendritic areas from 11 mice at ages between postnatal days 8–13, the day before eye opening. Together, these dendrites hosted 354 functional synapses, which produced 3440 synaptic transmission events. We recorded these neurons in voltage-clamp configuration to measure barrages of synaptic currents arriving at the soma simultaneously with individual synaptic transmission events monitored by calcium imaging (Figure 1C).
 
@@ -41,7 +41,31 @@ To visualize the activity and spatial organization of functional excitatory syna
 
 In the mature cortex, most excitatory synapses of pyramidal neurons are located on spines (Berry and Nedivi, 2017; Kasai et al., 2021; Moyer and Zuo, 2018). Spines provide some chemical and electrical isolation from the dendrite’s shaft and produce clearly detectable calcium signals evoked by presynaptic inputs (Figure 2A). However, during development, many cortical synapses are formed directly onto the shaft (Miller and Peters, 1981; Wildenberg et al., 2023), where synaptic calcium transients are masked by calcium influx triggered by back-propagating action potentials. Therefore, we prevented action potential firing by recording layer 2/3 pyramidal neurons in voltage-clamp mode during imaging and the intracellular sodium channel blocker QX314 in the patch-pipette. The holding potential was set to –30 mV to facilitate calcium influx through NMDA receptors (Jia et al., 2010; Takahashi et al., 2012; Winnubst et al., 2015). In this configuration, we could image local calcium transients at both spine and shaft synapses (Figure 2A and B, see ‘Methods’ for details and potential caveats) and map all functional excitatory synaptic inputs onto these dendrites across space and time (Figure 2C, Figure 2—figure supplements 1–5).
 
-## Synaptic inputs increase rapidly during the second postnatal week
+![Figure 2.](https://cdn.elifesciences.org/articles/93498/elife-93498-fig2-v1.jpg)
+
+**Figure 2.:** (A) Synaptic transmission in a spine of a layer 2/3 pyramidal neuron at P9. (B) Synaptic transmission at two neighboring shaft synapses of the neuron shown in (A). (C) Schematic representation of the synaptic inputs of the neuron shown in (A) and (B). Left: all functional synapses are labeled as individual discs. Yellow and blue discs represent spine and shaft synapses, respectively. The disc diameter indicates the observed transmission frequency at each synapse. Right: schematic representation of synaptic transmission across time in the same dendrite. Dots represent individual synaptic transmission events.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/93498/elife-93498-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** Each synapse is represented as a disc whose size and color indicate transmission frequency and local co-activity, respectively. D1–D12 are each dendrite’s identifier. The scale bar applies to all images.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/93498/elife-93498-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Y-axes show synaptic position along dendrites. White and gray shaded areas represent individual dendritic segments. Each synaptic transmission event is shown as a disc in yellow (spines) or blue (shaft synapses). Disc size indicates the relative amplitude of each event (z-scored for each synapse). Bar plots on the right show the number of transmission events detected at each synapse. Individual dendrites are shown in the same sequence as in Figure 2—figure supplement 1.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/93498/elife-93498-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** Composite of the DSred channel (gray) and the GCaMP6s channel (green) after switching the holding potential to –30 mV of a layer 2/3 pyramidal neuron at P8 (D1). The depolarization triggers a transient calcium increase in the patched neuron, which labels its dendrites (green) clearly above the background (gray processes).
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/93498/elife-93498-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** Synaptic calcium transients in a dendrite of a layer 2/3 pyramidal neuron at P13 (D12). Top: occurrence of synaptic calcium transients in the dendritic stretch shown on the left. Stippled lines indicate the position of several transients. Bottom: spatial representation of the events shown above at the time points indicated by the gray bars. Circles on the right indicate ROIs selected based on the calcium transients shown here.
+
+![Figure 2—figure supplement 5.](https://cdn.elifesciences.org/articles/93498/elife-93498-fig2-figsupp5-v1.jpg)
+
+**Figure 2—figure supplement 5.:** (A) Dendrite of a layer 2/3 pyramidal neuron at P9 (D3). Left: arrows indicate the positions of a spine (yellow) and a shaft synapse (blue). Middle: xy- and xz/yz views show the dendritic segments around these synapses acquired in a z-stack before the here shown time-lapse recording. The arrowheads point to the same synapses as in the left panel. Right: synaptic transmission events at these synapses. (B) Dendrite of a layer 2/3 pyramidal neuron at P8 (D1). The arrow points to a putative spine synapse located in the axis of the dendritic shaft. xy- and yz views show the dendritic segment around this synapse acquired in a z-stack before the here shown time-lapse recording. The arrowheads points to a putative spine below the dendrite in the image plane. Right: synaptic transmission event at this synapse.
+
+### Synaptic inputs increase rapidly during the second postnatal week
 
 Previous electron microscopy studies revealed that synapses form at the highest rate during the second postnatal week in rodent sensory cortex (Blue and Parnavelas, 1983; De Felipe et al., 1997; Wildenberg et al., 2023); however, the course of functional synapse development in vivo has not been investigated yet. In line with these previous EM studies, we report here that the density of functional synapses increased significantly between P8 and P13 (Figure 3A and B). The frequency of synaptic transmission at individual synapses increased as well (Figure 3C). Hence, the number of synaptic transmission events in a given dendrite was higher by P12/13 (n = 6 dendrites) compared to the beginning of the second postnatal week (P8–10; n = 6 dendrites; Figure 3D). While the percentage of spine synapses was slightly higher in older dendrites, there was no significant relationship between age and the percentage of spine synapses across the sampled dendrites (Figure 3E). This is in line with previous observations that spine development is maximal after P14 (summarized in Lohmann and Kessels, 2014).
 
@@ -57,7 +81,7 @@ Next, we investigated when individual synapses were activated in relation to the
 
 **Figure 4.:** (A) Synaptic transmission events (dots) at individual synapses and synaptic currents recorded simultaneously from the soma (black trace) in a layer 2/3 neuron at P10 (D6). Top: dendritic location of synapses that are active during two example barrages. Colors represent the amplitude of individual synaptic transmission events. Gray dots show synapses that were inactive during the respective barrages. Most synaptic transmission events occurred during barrages of somatic currents. (B) The number of barrages did not change significantly during the observed developmental period. Each dot represents the mean from one experiment. The light gray area indicates the 95% confidence interval as in all following regression plots. (C) The total charge transferred during barrages of synaptic currents showed a trend toward increases with age. (D) The number of synaptic transmission events observed during individual barrages increased with age. (E) The number of synaptic transmission events correlated linearly with the total charge transferred of barrages during which they occurred. Each data point shows the mean number of synaptic transmission events per barrage for geometrically binned barrage sizes. (F) The amplitude of synaptic transmission events at a given synapse correlated with the total charge transferred, suggesting that more than one vesicle was released per synapse during larger barrages. Each data point shows the mean amplitude (z-scored across all events of each synapse) per barrage for geometrically binned barrage sizes.
 
-## Synapses are spatially organized along developing dendrites
+### Synapses are spatially organized along developing dendrites
 
 In the mature mouse visual cortex, synaptic inputs are functionally clustered along layer 2/3 dendrites, such that neighboring synapses frequently have similar receptive fields (Iacaruso et al., 2017). During development, synaptic inputs are already clustered before eye opening (Winnubst et al., 2015). Therefore, we explored here the developmental trajectory of dendritic input organization in general and synaptic clustering in particular. First, we noticed – mostly in young neurons – that some dendritic segments contained several synapses, whereas other segments were essentially devoid of active synapses (Figure 5A). To determine whether synapse distribution along the imaged dendrites was indeed patterned rather than random, we compared the distances between each synapse and its nearest distal and proximal neighbors with distances that were estimated after randomly shuffling synaptic locations along the dendrite. We found that the observed inter-synapse distance distribution differed significantly from randomized distributions in younger dendrites (P8–P10; Figure 5B). In contrast, in older dendrites (P12–P13) synapse distribution was indistinguishable from randomized distributions. We concluded that in younger dendrites synapses accumulated in specific dendritic segments, and that with development the entire dendritic surface became covered by synapses more evenly.
 
@@ -67,7 +91,7 @@ In the mature mouse visual cortex, synaptic inputs are functionally clustered al
 
 Our finding that the distribution of transmission frequencies of individual synapses showed an extended tail (Figure 3F) made us wonder whether those synapses with high transmission frequencies showed any particular spatial distribution as well. We defined high-activity synapses as those in the top 20 activity percentile for each age. In line with our previous observation that spine synapses showed higher transmission rates than shaft synapses (Figure 3G), we found that the majority (76%) of high-activity synapses were located on spines. Furthermore, we observed that highly active synapses occurred frequently near each other (Figure 5C). Therefore, we tested whether there was a relationship between the activity level of a given synapse and the distance to its nearest high-activity neighbor. We discovered that synapses that were located within 10 µm from a high-activity synapse were more active than synapses that were more distant to a high-activity synapse (Figure 5D). In fact, neighbors of high-activity synapses were significantly more active than those with larger distances from high-activity synapses (Figure 5E) and this relationship was highly consistent across all ages (Figure 5F).
 
-## Synaptic inputs are organized in functional domains
+### Synaptic inputs are organized in functional domains
 
 Having established that high-activity synapses were often surrounded by other high-activity synapses, we defined dendritic segments that contain high-activity synapses and their neighbors as dendritic domains (Figure 6A). Synapses that showed normal activity levels (i.e. non-high-activity synapses) were assigned to domains when they were 10 µm or less away from a high-activity synapse. High-activity synapses that were within 10 µm of each other were assigned to the same domain, whereas those that were farther away from each other were assigned to separate domains.
 
@@ -81,7 +105,7 @@ To relate dendritic domains (i.e. segments surrounding high-activity synapses) t
 
 This finding raised the question whether dendritic domains are also functionally distinct from each other such that patterns of synaptic inputs received by one domain differed from the patterns received by the other domains on the same dendrite. To address this possibility, we quantified the co-activity of individual synapses with synapses from within their domain and compared that with their co-activity with synapses from other domains. We found that the co-activity within domains was consistently higher than the co-activity between synapses from different domains across all imaged dendrites (Figure 6G and H). These results demonstrate that synapses with similar input patterns emerge in distinct dendritic domains. Furthermore, they suggest that clustered synaptic inputs in the mouse visual cortex (Iacaruso et al., 2017; Wilson et al., 2016; Winnubst et al., 2015) are confined to developmentally emerging distinct dendritic domains and do not represent a smooth gradient of input patterns along the dendrite.
 
-## Local synaptic synchronicity correlates with synaptic activity changes
+### Local synaptic synchronicity correlates with synaptic activity changes
 
 We then asked how uniform synaptic inputs became sorted into domains. Since we had discovered previously that local co-activity drives plasticity to cluster neighboring synapses (Niculescu et al., 2018; Winnubst et al., 2015) and found here that the synapses within domains were more synchronized with their neighbors than the synapses located outside domains (Figure 6F), we examined whether co-activity of neighboring synapses within domains predicted changes in their activity levels. To quantify changes in activity over time, we determined the Mann–Kendall score (Hussain and Mahmud, 2019) for each synapse. This score is positive for monotonic increases, negative for decreases, and zero in the absence of changes. Thus, synapses that increased in transmission frequency across recordings of an experiment yielded positive scores, those that underwent synaptic depression (i.e., decreased in transmission frequency) yielded negative scores, and those that maintained activity levels scored at zero (Figure 7A). We found that the Mann–Kendall score was more negative outside than inside domains, indicating that on average synapses outside domains tended to decrease in activity over time, whereas those inside domains showed a more positive activity trajectory (Figure 7B). Next, we compared each synapse’s Mann–Kendall score of synaptic plasticity with its local co-activity within 10 µm proximally and distally along the dendrite and revealed a significant positive correlation (Figure 7A and C), demonstrating that synapses that were synchronized with their neighbors became stabilized or more active compared to those that were out of sync with their neighbors.
 
@@ -105,37 +129,37 @@ Together, patterned spontaneous activity can be sufficient to sort synaptic inpu
 
 ## Methods
 
-## Animals
+### Animals
 
 All experimental procedures were approved by the Institutional Animal Care and Use Committee of the Royal Netherlands Academy of Arts and Sciences. We used 11 C57BL/6J mouse pups between P8 and P13.
 
-## Plasmids
+### Plasmids
 
 For in utero electroporation, GCaMP6s (Addgene plasmid 40753; Douglas Kim; Chen et al., 2013) was cloned into pCAGGS and used in combination with DsRed Express in pCAGGS (Winnubst et al., 2015, gift from Christiaan Levelt). Cells co-expressed the fluorescent protein DsRed for somatic targeting and structural information.
 
-## In utero electroporation
+### In utero electroporation
 
 Constructs were introduced through in utero electroporation at E16.5. Pyramidal neurons in layer 2/3 of the visual cortex were transfected with GCaMP6s (2 mg/ml) and DsRed (0.5–2 mg/ml) at E16.5 using in utero electroporation (Winnubst et al., 2015). Pregnant mice were anesthetized with isoflurane and a small incision (1.5–2 cm) was made in the abdominal wall. The uterine horns were removed from the abdomen, and DNA (1 µl) was injected into the lateral ventricle of embryos using a sharp glass pipette. Voltage pulses (five square wave pulses, 30 V, 50 ms duration, 950 ms interval, custom-built electroporator) were delivered across the brain with tweezer electrodes covered in conductive gel. Uterine horns were rinsed with warm saline solution and carefully returned to the abdomen, after which the muscle and skin were sutured.
 
-## In vivo electrophysiology and calcium imaging
+### In vivo electrophysiology and calcium imaging
 
 The surgery and stabilization for the in vivo calcium imaging experiments were performed as described previously (Siegel et al., 2012; Winnubst et al., 2015). Animals were anesthetized with 2% isoflurane, which was reduced to 0.7–1% after surgery. We previously reported that although this low level of anesthesia does reduce the frequency of spontaneous network events, relative to that seen in awake animals, it does not change the basic properties of spontaneous network activity, such as participation rates and event amplitudes (Siegel et al., 2012). Furthermore, we found previously that synaptic inputs are organized very similarly in vivo under light anesthesia and in slice cultures (Winnubst et al., 2015). Together, these observations indicate that the activity patterns investigated here are not or only slightly affected by low-level anesthesia. Glass electrodes (4.5–6 MΩ) were fluorescently coated with BSA-Alexa 594 to allow targeted whole-cell recordings (Sasaki et al., 2012) of layer 2/3 neurons located in V1, based on published coordinates (Paxinos et al., 1991) and our previous experience (Leighton et al., 2021). To visualize synaptic inputs, action potentials were blocked with QX314 in the intracellular solution (120 mM CsMeSO3, 8 mM NaCl, 15 mM CsCl2, 10 mM TEA-Cl, 10 mM HEPES, 5 mM QX-314 bromide, 4 mM MgATP, and 0.3 mM Na-GTP; Takahashi et al., 2012; Winnubst et al., 2015). Currents were recorded in voltage-clamp mode at 10 kHz and filtered at 3 kHz (Multiclamp 700b; Molecular Devices). To facilitate the detection of synaptic calcium transients, neurons were depolarized to –30 mV to increase NMDA receptor activation (Takahashi et al., 2012; Winnubst et al., 2015). When switching to –30 mV, the baseline fluorescence of the patched neurons increased, but not of the neighboring neurons, allowing unequivocal identification of all dendrites in the imaged volume that belonged to the patched neuron (Figure 2—figure supplement 3). No correction was made for the liquid junction potential. Barrages were identified as fast-rising inward currents of at least 10 pA, followed by a return to baseline, which consisted of multiple synaptic currents and were separated by at least 3 s.
 
-## Image acquisition
+### Image acquisition
 
 In vivo calcium imaging was performed on a Nikon (A1R-MP) with a 0.8/16× water-immersion objective and a Ti:Sapphire laser (Chameleon II, Coherent). Dendrites were imaged at 5–15 Hz with a pixel size of 0.32 µm in single planes or small stacks with planes spaced 1.5–2 µm. We recorded the movement signal of the scan mirrors to synchronize calcium imaging and electrophysiology.
 
-## Image processing
+### Image processing
 
 To remove drift and movement artifacts from each recording, we performed drift correction using NoRMCorre (Pnevmatikakis and Giovannucci, 2017). Each recording was aligned to the first recording in the series to remove any movements between recording sessions. Delta-F stacks were made using the average fluorescence per pixel as baseline. Local synaptic calcium transients were clearly detectable in the delta-F stacks.
 
 Regions of interest (ROIs), representing putative synapses, were hand-drawn using ImageJ (NIH) at sites where spines were visible and at clearly observed activity sites (Figure 2—figure supplement 4). Finally, all remaining dendritic segments were filled with ROIs to ensure that no sites were missed. Putative synaptic transmission events were automatically identified across all ROIs as mean fluorescence increases that were at least twofold higher than the noise level. These putative signals were then manually reviewed using the full image recordings. Signals were rejected if they were shorter than two frames or coincided with movement. Furthermore, we ensured that there was a clearly visible local maximum at the location of the synapse and that it was stable for the duration of the signal. Automated transient detection and further data processing were performed using custom-made MATLAB (MathWorks) and Python software (Python Software Foundation; Leighton et al., 2023).
 
-## Identification of spine and shaft synapses
+### Identification of spine and shaft synapses
 
 We identified spine and shaft synapses as follows. Synaptic calcium transients that occurred in small appendages from the dendrite were defined as transmission events at spine synapses (e.g., Figure 2A, Figure 2—figure supplement 5A). Synaptic calcium transients located in the center of the dendrite, but at sites that showed small, sharply confined areas of increased fluorescence and where 3D reconstructions suggested that a spine may be located above or below the dendrite in the z-dimension were defined as spine transmission events as well (e.g., Figure 2—figure supplement 5B). Synaptic calcium transients that occurred in the center of ‘smooth’ dendritic stretches (without clearly defined spots of increased brightness) were identified as transmission events at shaft synapses (e.g., Figure 2B, Figure 2—figure supplement 5A). Since the z-resolution of two-photon microscopy is lower in the z-dimension than in xy, we may have misidentified spine synapses as shaft synapses in a few cases.
 
-## Statistical analysis
+### Statistical analysis
 
 One dendrite was imaged from each animal except once, when two dendrites were imaged in a single cell in a P12 animal. We used only synaptic sites that were active with a transmission frequency of at least 0.03 per minute. We tested whether the localization of functional synapses was structured or random along the dendrite. To establish randomized distributions of synapse positions, we first assigned ‘empty’ positions between the positions of actual functional synapses such that the entire imaged dendrite was covered with real or empty positions at the typical minimal inter-synapse distance (4 ± 1 µm). Next we determined all pair-wise distances between all synapses and all empty locations along dendrites using the Shortest Path with Obstacle Avoidance function of MATLAB. Then we shuffled all functional synapses across the real and empty positions randomly. For each shuffle and the observed localizations, we determined the distances of each synapse to its nearest proximal and distal neighbors. Finally, we compared the results of 100 shuffles with the observed distribution using a Kolmogorov–Smirnov test.
 

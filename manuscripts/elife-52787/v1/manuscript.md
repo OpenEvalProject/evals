@@ -36,27 +36,75 @@ Here we present a comprehensive analysis of soil invertebrate biodiversity acros
 
 ## Results
 
-## Overall community composition
+### Overall community composition
 
 We detected a total of 11,284 operational taxonomic units (OTUs), of which 4549 (40.3%) were identified as terrestrial invertebrates. The remainder were identified as protists (37.6%), fungi (14.9%), non-terrestrial metazoans (5%), bacteria (1.7%), and plants (0.5%). The terrestrial invertebrate OTUs mostly belonged to the phylum Arthropoda (2,626 OTUs, among which insects were most common), followed by Rotifera (772 OTUs), Nematoda (656 OTUs), Mollusca (219 OTUs), Annelida (204 OTUs), Platyhelminthes (44 OTUs), Tardigrada (22 OTUs), Gastrotricha (four OTUs), and Onychophora (two OTUs) (Appendix 1—figures 1 and 2).
 
 Non-metric MDS ordinations showed clear differences between overall invertebrate community composition in samples from different land-use categories (Figure 1). Natural forest samples formed a distinct cluster with no overlap with any other land-use categories. Samples from the other four land-use categories overlapped, with planted forest communities most similar to those from low-producing grassland followed by high-producing grassland communities, and least similar to those from perennial cropland. Similar trends were observed when only Arthropoda, Mollusca, Nematoda, or Rotifera OTUs were included, whereas Annelida OTUs showed less distinction between land-use categories. PERMANOVA tests for composition differences among different land-use categories detected a significant difference based on the overall invertebrate community (F4,61 = 1.804, p≤0.001), and based on each of the main phyla detected (Annelida, Arthropoda, Mollusca, Nematoda and Rotifera; F4,44-61 = 1.447–2.288, p≤0.001; Figure 1—source data 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/52787/elife-52787-fig1-v1.jpg)
+
+**Figure 1.:** Non-metric MDS ordinations showing differences in the composition of soil invertebrate communities detected by DNA metabarcoding in five land-use categories, for overall communities, and for individual phyla with ≥ 100 OTUs. Ordinations are based on binary Jaccard distances.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/52787/elife-52787-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Boxplots of multivariate sample dispersion of soil invertebrate communities detected by DNA metabarcoding in five land-use categories, for overall soil invertebrate communities, and for individual phyla with > = 100 OTUs. Letters indicate significantly differing land-use categories according to post-hoc Tukey HSD tests, for groups with significant ANOVA differences.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/52787/elife-52787-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** Boxplots of pairwise beta diversity of soil invertebrate communities detected by DNA metabarcoding in five land-use categories, for overall soil invertebrate communities, and for individual phyla with > = 100 OTUs. Letters indicate significantly differing land-use categories according to post-hoc Tukey HSD tests, for groups with significant ANOVA differences.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/52787/elife-52787-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** Boxplots of pairwise phylogenetic beta diversity (UniFrac distance) of soil invertebrate communities detected by DNA metabarcoding in five land-use categories, for overall soil invertebrate communities, and for individual phyla with > = 100 OTUs. Letters indicate significantly differing land-use categories according to post-hoc Tukey HSD tests, for groups with significant ANOVA differences.
+
 To test for homogenisation effects of land use on soil invertebrate communities we compared multivariate heterogeneity/homogeneity of sample dispersions, mean pairwise beta diversity, and mean pairwise phylogenetic beta diversity, between land-use categories. For overall invertebrate communities, each of these measures differed significantly among land uses (F4, 61-442 = 3.59–14.99, p≤0.011), being highest in natural forest sites and lowest in grassland and/or cropland sites (Figure 1—source data 1B; Figure 1—figure supplements 1–3). Similar trends were observed for Arthropoda and Nematoda communities based on all three measures, and for Annelida and Mollusca communities based on phylogenetic beta diversity and multivariate heterogeneity of sample dispersions, whereas Rotifera communities showed different patterns.
 
 A heatmap based on the 1000 most relatively abundant terrestrial invertebrate OTUs detected suggested that low-producing grassland, high-producing grassland, and perennial cropland samples each had relatively consistent assemblages of abundant OTUs, both within and between each land-use category, whereas planted forest samples, and especially natural forest samples, each had more distinctive assemblages of abundant OTUs (Figure 2 and Figure 2—figure supplement 1). In particular, most of the natural forest samples had a subset of abundant OTUs that were not detected in any other sample.
 
-## Overall invertebrate biodiversity differences among land-use categories
+![Figure 2.](https://cdn.elifesciences.org/articles/52787/elife-52787-fig2-v1.jpg)
+
+**Figure 2.:** The proportional abundance and distribution among samples and five land-use categories of the 1000 most proportionally abundant soil invertebrate OTUs detected by DNA metabarcoding, showing that natural forest sites have more heterogeneous assemblages of soil invertebrate OTUs than agricultural sites. Samples are ordered on the x-axis by land-use category and increasing latitude.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/52787/elife-52787-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** The proportional abundance and distribution among samples and five land-use categories of the 1000 most proportionally abundant soil invertebrate OTUs detected by DNA metabarcoding, showing that natural forest sites have more heterogeneous assemblages of soil invertebrate OTUs than agricultural sites. The data is the same as in Figure 2, but the samples are ordered on the x-axis by OTU compositional similarity.
+
+### Overall invertebrate biodiversity differences among land-use categories
 
 All biodiversity metrics (except for mean pairwise distance) showed a general trend of declining overall invertebrate biodiversity (i.e. the biodiversity of the entire invertebrate community) from forested and/or low-producing grassland sites to high-producing grassland and/or perennial cropland sites (Figures 3 and 4). Rarity and phylogenetic rarity metrics showed the largest and most consistent land-use-related biodiversity declines, with the highest mean values in natural forest sites followed by planted forest sites and low-producing grassland sites, and high-producing grassland sites, and lowest values in perennial cropland sites. Removing species found in only a single site did not substantially change these trends (Appendix 1—figures 3–5). Significant differences between mean biodiversity of overall invertebrate communities in different land-use categories were detected according to richness, rarity, phylogenetic diversity, phylogenetic rarity, and phylogenetic diversity and rarity SES metrics (F4,64 = 3.56 to 17.986, p = 0.012 to <0.001), but not effective species numbers, mean pairwise distance, or mean pairwise distance SES metrics (Figure 3—source data 1A; Figure 4—source data 1A). ANOVA tests of derived land-use rank trends provided similar results, with significant trends identified for all metrics except for mean pairwise distance and mean pairwise distance SES (F1,67 = 4.66–31.94, p = 0.034 to <0.001; Appendix 1—table 1).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/52787/elife-52787-fig3-v1.jpg)
+
+**Figure 3.:** The biodiversity of soil invertebrate communities detected by DNA metabarcoding declines from forested to agricultural sites according to most metrics, with the clearest declines shown by rarity metrics. Diamonds and whiskers represent mean values ± standard errors, with individual data points represented by circles. ANOVA test statistics and trend splines are shown for cases with statistically significant biodiversity differences among land-use categories, with letters indicating differences between land-use categories detected by post-hoc Tukey HSD tests.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/52787/elife-52787-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** The biodiversity of most soil arthropod groups detected by DNA metabarcoding declines from natural forest to agricultural sites, with the most consistent patterns among groups shown by rarity metrics. ‘Other insects’ consists of all insect orders other than Coleoptera, Diptera, Hemiptera, Hymenoptera, and Lepidoptera. ‘Non-mites’ consist of Araneae, Opiliones, and Pseudoscorpiones. Diamonds and whiskers represent mean values ± standard errors, with individual data points represented by circles. ANOVA test statistics and trend splines are shown for cases with statistically significant biodiversity differences among land-use categories, with letters indicating differences between land-use categories detected by post-hoc Tukey HSD tests.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/52787/elife-52787-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** The biodiversity of most non-arthropod soil invertebrate phyla detected by DNA metabarcoding tends to decline from natural forest to agricultural sites, although less clearly than for arthropod groups. Diamonds and whiskers represent mean values ± standard errors, with individual data points represented by circles. ANOVA test statistics and trend splines are shown for cases with statistically significant biodiversity differences among land-use categories, with letters indicating differences between land-use categories detected by post-hoc Tukey HSD tests.
+
 The mean rarity of overall invertebrate communities was significantly lower in all four other land uses compared with natural forest (t23-27 = −31.6 to −62.4, P.adj = 0.03 to <0.001). Similarly, the mean phylogenetic rarity of overall invertebrate communities was significantly lower in all four other land-use categories compared with natural forest (t23-27 = −3.34 to −6.90, P.adj = 0.043 to <0.001), and in perennial cropland compared with planted forest (t24 = −3.55, P.adj = 0.046). In contrast, the mean richness and phylogenetic diversity of overall invertebrate communities were similar in natural forest, planted forest, and low-producing grassland samples, and significantly lower in perennial cropland compared with natural forest (t23 = −78.3, P.adj = 0.023, and t23 = −14.6, P.adj = 0.008, respectively) and compared with low-producing grassland (t23 = −84.2, P.adj = 0.012, and t23 = −13.3, P.adj = 0.019, respectively; Figure 3). Mean phylogenetic diversity SES was significantly lower in low-producing grassland compared with natural forest (t23-27 = −2.20, P.adj = 0.048), but did not otherwise differ between land-use categories, while phylogenetic rarity SES differences between land-use categories matched those based on non-SES phylogenetic rarity (t23-27 = −3.68 to −8.61, P.adj = 0.031 to <0.001; Figure 4).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/52787/elife-52787-fig4-v1.jpg)
+
+**Figure 4.:** Phylogenetic biodiversity SES estimates for soil invertebrate communities detected by DNA metabarcoding tend to decline from natural forest to agricultural sites, with the clearest decline shown by phylogenetic rarity SES. Diamonds and whiskers represent mean values ± standard errors, with individual data points represented by circles. ANOVA test statistics and trend splines are shown for cases with statistically significant biodiversity differences among land-use categories, with letters indicating differences between land-use categories detected by post-hoc Tukey HSD tests.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/52787/elife-52787-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Phylogenetic endemism SES of soil arthropod groups detected by DNA metabarcoding consistently declines from natural forest to agricultural sites, but phylogenetic diversity SES and mean pairwise distance SES do not. ‘Non-mites’ consist of Araneae, Opiliones, and Pseudoscorpiones. ‘Other insects’ consists of all insect orders other than Coleoptera, Diptera, Hemiptera, Hymenoptera, and Lepidoptera. Diamonds and whiskers represent mean values ± standard errors, with individual data points represented by circles. ANOVA test statistics and trend splines are shown for cases with statistically significant biodiversity differences among land-use categories, with letters indicating differences between land-use categories detected by post-hoc Tukey HSD tests.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/52787/elife-52787-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Phylogenetic endemism SES of most non-arthropod soil invertebrate phyla detected by DNA metabarcoding declines from natural forest to agricultural sites, but phylogenetic diversity SES and mean pairwise distance SES do not. Diamonds and whiskers represent mean values ± standard errors, with individual data points represented by circles. ANOVA test statistics and trend splines are shown for cases with statistically significant biodiversity differences among land-use categories, with letters indicating differences between land-use categories detected by post-hoc Tukey HSD tests.
 
 A mixed-model ANOVA test for effects of derived land-use rank, land-use category, and taxonomic group effects showed that derived land-use rank and taxonomic group (and interactions) were the most consistently significant predictors of the diversity metrics (F1-16 = 7.74 to 32.14, p = 0.007 to <0.001; Appendix 1—table 2). The further addition of land-use category to models already containing derived land-use rank did not explain additional variation for effective species, rarity, phylogenetic rarity and mean pairwise distance, but did for richness and phylogenetic diversity (in the form of significant interactions between land-use category and taxonomic group; F48 = 1.41 and 1.82, p = 0.037 and <0.001).
 
 Most environmental variables showed clear land use-related trends of increasing or decreasing values in the order of natural forest, planted forest, low-producing grassland, high-producing grassland, and perennial cropland (Appendix 1—figure 6). An ANOVA test of spatial attributes (latitude and altitude) plus land-use category showed latitude had no effect on overall soil invertebrate biodiversity according to any metric, whereas altitude had significant effects on biodiversity of all metrics except for mean pairwise distance (F1 = 9.41 to 22.33, p = 0.003 to <0.001). In addition to altitude, land-use category had a significant effect only on rarity and phylogenetic rarity metrics (F1 = 4.40 and 4.60, p = 0.003 and 002; Appendix 1—table 3). The first three components of a PCA incorporating latitude, altitude, and soil chemistry variables explained 70.25% of variance. According to an ANOVA test of these three PCA components plus land-use category, the first component had significant effects on the rarity, phylogenetic diversity and phylogenetic rarity of the overall soil invertebrate biodiversity (F1 = 4.79 to 15.25, p = 0.032 to <0.001), and the second component on the former three metrics plus richness (F1 = 7.00 to 10.24, p = 0.010 to 0.002). The third component did not have a significant effect on any of the metrics. The addition of land-use category to these models explained further variation for richness, rarity, and phylogenetic rarity metrics only (F4 = 2.71 to 4.72, p = 0.038 to 0.006; Appendix 1—table 4), indicating that there was some confounding between the environmental PCAs and land-use category.
 
-## Biodiversity differences among invertebrate taxa
+### Biodiversity differences among invertebrate taxa
 
 Biodiversity metrics for the main insect orders (Coleoptera, Diptera, Hymenoptera, Lepidoptera, Hemiptera, and all other insects), other arthropod taxa (Collembola, mites, non-mite Arachnida, Malacostraca, myriapods), and non-arthropod phyla (Annelida, Mollusca, Nematoda, Platyhelminthes, Rotifera, and Tardigrada) that were detected showed a general trend of declining biodiversity from forested to agricultural sites. Rarity, phylogenetic diversity, and phylogenetic rarity patterns were most consistent among different taxonomic groups (Appendix 1—figures 7–12), while land-use trends were most clear and consistent across taxonomic groups according to rarity and phylogenetic rarity (Figure 3—figure supplements 1 and 2). ANOVA tests detected significant differences among land-use categories for ten of the 17 taxonomic groups based on rarity (all insect groups, non-mites, Annelida, Nematoda, and Platyhelminthes; F4 = 2.60 to 13.26, p = 0.048 to <0.001); nine groups based both on phylogenetic rarity (all insect groups except Hemiptera, mites and non-mites, Annelida, and Platyhelminthes; F4 = 2.74 to 11.07, p = 0.036 to <0.001) and phylogenetic diversity (all insect groups, Annelida, Mollusca, and Nematoda; F4 = 3.14 to 6.41, p = 0.047 to <0.001); eight groups based on richness (all insect groups, Nematoda, and Platyhelminthes; F4 = 2.55 to 6.32, p = 0.048 to <0.001); five groups based on effective species numbers (Diptera, Hymenoptera, Lepidoptera, mites, and Annelida; F4 = 2.73 to 4.36, p = 0.037 to 0.004); and three groups based on mean pairwise distance differences (Hymenoptera, mites, and Rotifera; F4 = 3.53 to 6.24, p = 0.012 to <0.001; Figure 3—source data 1B). Tests of derived land-use rank trends for each metric and taxonomic group provided concordant results, with the same groups (with few exceptions) showing significant trends for each metric (Appendix 1—table 5).
 
@@ -68,7 +116,7 @@ Non-parametric bootstrapping of ANOVA sum of squares values for the (non-SES) bi
 
 **Figure 5.:** The proportions of sample variation (sum of squares) explained by land use were estimated for different biodiversity metrics by non-parametric bootstrapping, based on the combinations of biodiversity metric and soil invertebrate taxonomic group for which significant land-use differences were detected by ANOVA tests. Observed mean values and 95% confidence interval limits are indicated by orange and blue vertical bars, respectively.
 
-## Phylogenetic biodiversity metric SES differences among taxa
+### Phylogenetic biodiversity metric SES differences among taxa
 
 Patterns of phylogenetic rarity SES values among land-use categories were more consistent across taxonomic groups, and with their corresponding non-SES metric patterns, than patterns of phylogenetic diversity SES and mean pairwise distance SES values (Figure 4—figure supplements 1 and 2). ANOVA tests detected significant differences among land-use categories for 11 of the 17 taxonomic groups based on phylogenetic rarity SES (Collembola, Coleoptera, Diptera, Lepidoptera, other insects, mites and non-mites, Annelida, Mollusca, Nematoda, and Rotifera; F4 = 3.10 to 8.91, p = 0.022 to <0.001), six groups based on phylogenetic diversity SES (Hymenoptera, Lepidoptera, mites, Malacostraca, Nematoda, and Rotifera; F4 = 2.76 to 7.39, p = 0.035 to <0.001); and four groups based on mean pairwise distance SES (Lepidoptera, mites, Malacostraca, and Rotifera; F4 = 4.40 to 11.28, p = 0.016 to <0.001; Figure 4—source data 1B). All of the 11 taxonomic groups with significant phylogenetic rarity SES differences showed a consistent pattern of declining rarity from natural forest to planted forest to agricultural land-use categories. Post-hoc Tukey HSD tests detected significantly higher phylogenetic rarity SES values in natural forest (for 11 groups) and in planted forest (for four groups) compared with at least two of the agricultural land-use categories in each case (t22-28 = −1.73 to −3.77, P.adj = 0.047 to <0.001). In contrast, only two groups (mites and Rotifera) showed this pattern based on either phylogenetic diversity SES (t22-28 = −1.52 to −3.15, P.adj = 0.031 to <0.001) or mean pairwise distance SES values (t22-28 = −1.83 to −2.89, P.adj = 0.047 to <0.001). Otherwise, Lepidoptera phylogenetic diversity SES values were significantly lower in both planted forest and high-producing grassland compared with both natural forest and perennial cropland (t21-27 = −1.07 to −1.44, P.adj = 0.035 to 0.004), whereas Hymenoptera, Malacostraca and Nematoda phylogenetic diversity SES values were higher in one or more of the anthropogenic land use categories compared with natural forest (t3-28 = 1.46 to 2.87, P.adj = 0.020 to 0.005). Patterns of mean pairwise distance SES values across land use categories and taxonomic groups closely matched those observed for phylogenetic diversity SES values (except significant differences among land-use categories were not detected for Hymenoptera or Nematoda).
 
@@ -80,7 +128,7 @@ Rare species include not only habitat specialists, but also transient and condit
 
 Phylogenetic diversity – and especially phylogenetic rarity – explained larger proportions of land-use variance across taxa than their non-phylogenetic counterparts, and phylogenetic rarity was overall the most sensitive metric to land-use differences. Phylogenetic metrics incorporate evolutionary and functional aspects of biodiversity (Faith, 1992; Faith, 2015; Mazel et al., 2018). New Zealand has a long history of geographic isolation and glaciation, reflected by the presence of many deeply divergent invertebrate lineages (Buckley et al., 2015; Trewick et al., 2011). The high levels of invertebrate phylogenetic rarity in natural forest sites likely reflects assemblages of long-present soil invertebrates that are highly adapted to these habitats, but ill-suited to the modified land-use types included in the study. These trends might differ in regions with greater connectivity, longer-term agriculture, and different geological history. Phylogenetic diversity SES and mean pairwise distance SES values showed different evidence of land-use effects compared with their non-SES counterparts, suggesting, for example, that Lepidoptera, mite and Rotifera communities are less dispersed, suggesting loss of lineages, in agricultural sites compared with forest habitats. In contrast, Malacostraca communities appear to be under-dispersed in natural forest sites, and to gain lineages due to anthropogenic land use. Phylogenetic rarity SES values further support the finding of consistently reduced rarity in agricultural sites, independent of species richness effects. Together, these observations indicate that phylogenetic information provides additional insights into soil invertebrate biodiversity patterns, as has been observed for other groups (González-Orozco et al., 2015; Mishler et al., 2014).
 
-## Land-use impacts
+### Land-use impacts
 
 The low beta diversity, heterogeneity, and rarity values detected in agricultural sites, and the overlap of samples from these sites in MDS ordinations, together strongly imply that these habitats tend to have relatively similar assemblages of species across locations. Agricultural practices have effects at a wide range of scales, from local-scale use of chemical fertilisers and pesticides to landscape-scale habitat simplification (Tscharntke et al., 2005). Together these factors lead to homogenisation of communities and functions among sites, in which specialists in diverse natural communities are replaced by a smaller number of generalists that thrive in anthropogenic habitats (Börschig et al., 2013; Clavel et al., 2011; Gámez-Virués et al., 2015; McKinney and Lockwood, 1999; Smart et al., 2006).
 
@@ -92,7 +140,7 @@ While rarity and phylogenetic rarity metrics showed the most consistent response
 
 Overall, our results suggest pervasive impacts of agricultural land use upon soil invertebrate communities, with likely adverse consequences for ecosystem services. This adds to widespread evidence of declines in invertebrate biomass and diversity in response to anthropogenic land-use change and habitat loss (Attwood et al., 2008; Hallmann et al., 2017; Hendrickx et al., 2007; Powney et al., 2019), and suggests that efforts to conserve and restore soil invertebrate communities may be needed.
 
-## Conservation implications
+### Conservation implications
 
 Invertebrates tend to be neglected by conservation initiatives, due to the challenges of determining their identities, functions, and distributions (Leandro et al., 2017). Indirect preservation of communities via flagship or umbrella species protection schemes tends to be ineffective (Andelman and Fagan, 2000; Oberprieler et al., 2019; Schuldt and Assmann, 2010), and similarly, biomonitoring based on individual species is problematic. By allowing the efficient assessment of invertebrate community composition and distribution across large spatial scales, DNA metabarcoding methods may enable more informative biomonitoring and improved targeting of conservation initiatives based on multiple invertebrate taxa, if not entire invertebrate communities. While rarity and phylogenetic rarity were the most informative metrics of community change in this case, it is likely that consideration of these alongside richness and phylogenetic measures of diversity would provide the most comprehensive information for purposes such as biomonitoring and conservation planning (Fleishman et al., 2006). Our results suggest that conserving a network of sites with high invertebrate diversity and rarity would preserve a diverse assemblage of species, communities, and functional traits, thus providing resilience of communities and ecosystem processes to environmental changes (Balvanera et al., 2006; Yachi and Loreau, 1999). While diversity and rarity was typically highest in our natural forest sites (of which many are protected), certain grassland and cropland sites with unusually high rarity values (outliers on Figure 3) might be logical targets for further investigation and potential incorporation into conservation initiatives.
 
@@ -100,27 +148,100 @@ In conclusion, our analysis of soil invertebrate biodiversity across land-use ca
 
 ## Materials and methods
 
-## Sample collection
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>mICOIintF</td>
+      <td>DOI:10.1186/1742-9994-10-34</td>
+      <td></td>
+      <td>GGWACWGGWTGAACWGTWTAYCCYCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>HCO2198</td>
+      <td>PMID:7881515</td>
+      <td></td>
+      <td>TAAACTTCAGGGTGACCAAAAAATCA</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>NucleoSpin Tissue kit</td>
+      <td>Macherey-Nagel</td>
+      <td>740741.4</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>cutadapt</td>
+      <td>https://github.com/marcelm/cutadapt</td>
+      <td>v 1.11</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>USEARCH</td>
+      <td>https://www.drive5.com/usearch/</td>
+      <td>v 9.0.2132_i86linux32</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>VSEARCH</td>
+      <td>https://github.com/torognes/vsearch</td>
+      <td>v 2.4.0</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>R</td>
+      <td>https://www.r-project.org/</td>
+      <td>v 3.52</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>phylo.endemism</td>
+      <td>https://davidnipperess.blogspot.com/2012/07/phyloendemism-r-function-for.html</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Sample collection
 
 Soil invertebrate communities were sampled from a total of 75 sites distributed across five different major land-use categories throughout New Zealand (Figure 6), during dry weather between November 2014 and March 2015. The five land-use categories (natural forest, planted forest, low-producing grassland, high-producing grassland, and perennial cropland) represent differing states of anthropogenic modification (Figure 6—source data 1). The site locations were selected from a nationwide 8 km grid used for regular monitoring of native species and pests. For each land-use category, 15 replicate sites were randomly selected from the nationwide monitoring grid, excluding any that were >1000 m altitude and ensuring they were distributed across the length of New Zealand (Makiola et al., 2019). At each site, a 20 m × 20 m plot was established according to a standardised protocol (Hurst and Allen, 2007). Twenty-four soil cores were collected within each plot on a regular grid (min 3.54 m distance between cores) to a depth of 15 cm using a sterile corer (5.08 cm diameter), following Wood et al. (2017). Surface litter was removed prior to coring. The 24 soil cores were pooled together, homogenised, and stored at 4°C until laboratory processing. Invertebrates were extracted from a one-litre subsample of homogenised soil material from each site using Berlese-Tullgren funnels and stored in ethanol until DNA extraction.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/52787/elife-52787-fig6-v1.jpg)
 
-**Figure 6.:** Site locations were randomly selected from a nationwide 8 km grid used for regular monitoring of native species and pests, excluding any that were >1000 m altitude and ensuring they were distributed throughout New Zealand. X- and y-axes represent longitude and latitude, respectively.Figure 6—source data 1.
+**Figure 6.:** Site locations were randomly selected from a nationwide 8 km grid used for regular monitoring of native species and pests, excluding any that were >1000 m altitude and ensuring they were distributed throughout New Zealand. X- and y-axes represent longitude and latitude, respectively.
 
 The altitude and latitude of plots were determined from topographic maps. Soil chemistry variables (pH, C, N, C:N ratio, Olsen P, Total P, Ca, Mg, K, Na, cation exchange capacity, base saturation) were determined for each plot according to Orwin et al. (2016) and Wood et al. (2017).
 
-## Molecular laboratory procedures
+### Molecular laboratory procedures
 
 Bulk invertebrate concentrates were centrifuged for three minutes at 2,500 rpm (1258 rcf), after which ethanol was removed until <5 ml remained. The concentrates were then transferred into 5 ml tubes and homogenised with eight steel balls in a bead mill operated at 15 Hz for six intervals of 20 s each. A 1.5 ml aliquot of homogenised invertebrate concentrate from each sample was removed into a 1.5 ml microtube and centrifuged for one minute at 13,000 rpm (11,337 rcf), after which any ethanol was removed. The pelleted material was resuspended in purified water, re-centrifuged as before, then resuspended in 200 µl digestion buffer (10 mM Tris buffer, 10 mM NaCl, 5 mM CaCl2, 2.5 mM EDTA, 2% SDS, 0.04 M dithiothreitol, and 0.1 M proteinase K) with vortexing, and incubated overnight at 56 °C with shaking at 450 rpm (Campos and Gilbert, 2012). DNA was extracted from the digested samples using a Macherey-Nagel NucleoSpin Tissue kit (MACHEREY-NAGEL GmbH and Co. KG, Düren, Germany), omitting sample lysis steps but otherwise according to the manufacturer’s directions, with a JANUS workstation laboratory robot (PerkinElmer, Waltham, MA, USA). The DNA concentration was quantified in each extract using an Invitrogen Quant-iT PicoGreen dsDNA quantitation assay kit (Thermo Fisher Scientific, Waltham, MA USA), and standardised across samples to 3 ng/µl.
 
 COI barcodes were amplified by PCR from each sample using metazoan-targeted primers mICOIintF (5'-GGWACWGGWTGAACWGTWTAYCCYCC-3') (Leray et al., 2013) and HCO2198 (5'-TAAACTTCAGGGTGACCAAAAAATCA-3') (Folmer et al., 1994), which were respectively modified at their 5' ends with the linker sequences 5'-TCGTCGGCAGCGTC-3' and 5'-GTCTCGTGGGCTCGG-3'. PCRs were carried out in 20 µl volumes, containing 200 nM of the forward and reverse COI primers, 0.2 mM of each dNTP, 1.5 mM MgCl2, 2 µg rabbit serum albumin, 0.5 U KAPA Plant 3G enzyme (Kapa Biosystems, Wilmington, MA, USA), and 2 µl (6 ng) DNA template. The PCR amplification protocol was 95 °C for 3 min; 35 cycles of 95 °C for 20 s, 52 °C for 15 s, and 72 °C for 30 s; and 1 min at 72 °C. Illumina sequencing adapters and sample-specific barcodes were added to the COI amplicons in a second round of PCR, carried out in 25 µl volumes containing the same reagents and concentrations as the first PCR, except for Illumina-tagged sequencing adaptors instead of COI primers, and 2 µl of the first PCR amplicon as template. The second-round PCR amplification protocol was 95 °C for 3 min; five cycles of 95 °C for 20 s, 54 °C for 15 s, and 72 °C for 30 s; and 1 min at 72 °C. The resulting libraries were purified and size-selected using a Pippin Prep system (Sage Science, Beverly, MA, USA), to remove primer dimers and high molecular weight DNA, quantified, pooled, and sequenced on an Illumina MiSeq system with a 2 × 250 sequencing kit at the Australian Genome Research Facility Ltd.
 
-## Bioinformatic processing
+### Bioinformatic processing
 
 Demultiplexed forward and reverse DNA reads were merged and relabelled by sample using USEARCH (Edgar, 2013). Linker sequences and primers were trimmed from the merged sequences using cutadapt (Martin, 2011). The trimmed sequences were quality filtered to remove any with >1 maximum expected errors and dereplicated using VSEARCH (Rognes et al., 2016). Non-singleton sequences (i.e. those represented by at least two identical sequences) were clustered into OTUs at a sequence identity threshold of 97% and simultaneously filtered for chimeras using the UPARSE algorithm in USEARCH (Edgar, 2013). OTU abundance was inferred by mapping the trimmed sequences back to the OTU centroid sequences at a sequence identity threshold of 97%. The OTUs were assigned a taxonomic identity using the RDP Naïve Bayesian classifier (Wang et al., 2007) in combination with an RDP-formatted animal mitochondrial COI sequence database (Porter and Hajibabaei, 2018), which includes bacterial, fungal, and protist COI sequences to enable the detection of non-metazoan OTUs. We excluded any OTUs that were not identified as belonging to an expected terrestrial invertebrate phylum.
 
-## Biodiversity analyses and statistics
+### Biodiversity analyses and statistics
 
 Data analyses were carried out using R version 3.5.1 (R Development Core Team, 2016) and RStudio (RStudio team, 2015). Extraction blanks, negative and positive controls were examined for contamination. Tag jumping (Schnell et al., 2015) was accounted for by using a regression of contaminant abundances versus the maximum of total abundances in all other samples, after which the coefficient estimate for the 90th quantile regression was used to subtract that many sequences from the abundances of all OTUs (Makiola et al., 2019).
 

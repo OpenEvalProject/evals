@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.30127.001 The twin-arginine translocase (Tat) transports folded proteins across the bacterial cytoplasmic membrane and the plant thylakoid membrane. The Tat translocation site is formed by substrate-triggered oligomerization of the protein TatA. Walther and co-workers have proposed a structural model for the TatA oligomer in which TatA monomers self-assemble using electrostatic ‘charge zippers’ ( Cell (2013) 132: 15945). This model was supported by in vitro analysis of the oligomeric state of TatA variants containing charge-inverting substitutions. Here we have used live cell assays of TatA assembly and function in Escherichia coli to re-assess the roles of the charged residues of TatA. Our results do not support the charge zipper model. Instead, we observe that substitutions of charged residues located in the TatA amphipathic helix lock TatA in an assembled state, suggesting that these charged residues play a critical role in the protein translocation step that follows TatA assembly.
+The twin-arginine translocase (Tat) transports folded proteins across the bacterial cytoplasmic membrane and the plant thylakoid membrane. The Tat translocation site is formed by substrate-triggered oligomerization of the protein TatA. Walther and co-workers have proposed a structural model for the TatA oligomer in which TatA monomers self-assemble using electrostatic ‘charge zippers’ (Cell (2013) 132: 15945). This model was supported by in vitro analysis of the oligomeric state of TatA variants containing charge-inverting substitutions. Here we have used live cell assays of TatA assembly and function in Escherichia coli to re-assess the roles of the charged residues of TatA. Our results do not support the charge zipper model. Instead, we observe that substitutions of charged residues located in the TatA amphipathic helix lock TatA in an assembled state, suggesting that these charged residues play a critical role in the protein translocation step that follows TatA assembly.
 
 ## Introduction
 
@@ -33,7 +33,7 @@ To experimentally test key predictions of the charge zipper model, Walther and c
 
 ## Results
 
-## Analysis of Tat transport activity in strains lacking one or more charge zipper pairs
+### Analysis of Tat transport activity in strains lacking one or more charge zipper pairs
 
 The predicted salt bridge pairs of E. coli TatA are shown in Figure 1A (Walther et al., 2013). We examined the four potential salt bridge pairs where both partners are in the functionally essential first 50 residues of TatA (Lee et al., 2002; Warren et al., 2009). Because amino acid substitutions which prevent translocase assembly should also block transport we examined the Tat transport activity of variants at these target salt bridges.
 
@@ -49,9 +49,17 @@ We next examined the consequence of simultaneously removing the three potential 
 
 Immunoblotting confirmed that each variant analysed was present in the membrane at a comparable level to the wild-type TatA protein (Figure 2D).
 
-## Direct observation of TatA assembly in charge zipper mutants
+### Direct observation of TatA assembly in charge zipper mutants
 
 We used live cell imaging of a previously described TatA-YFP fusion to directly test the ability of the TatA charge zipper variants to undergo substrate-induced oligomerization (Alcock et al., 2013). In resting cells the TatA-YFP fusion is present in the dispersed state, visualised as a halo of fluorescence (Figure 3). Overproduction of the Tat substrate CueO drives assembly of TatA-YFP oligomers which appear as bright, mobile fluorescent spots. If the proton motive force (PMF) is abolished by addition of the protonophore carbonyl cyanide m-chlorophenyl hydrazone (CCCP), the TatA oligomers dissociate and fluorescence reverts to the peripheral halo.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/30127/elife-30127-fig3-v2.jpg)
+
+**Figure 3.:** Representative fluorescence images of TatA-YFP in E. coli cells. A tatA-yfp fusion was expressed from the chromosome in three different backgrounds: ELV16 λAry which contains all other tat genes (designated AyBCE), JARV16 λAry which lacks tatE (designated AyBC), or DADE λAry which possesses no other tat genes (designated Ay). The TatA-YFP variant produced is indicated to the left of the panels, where WT is the parental protein and KKK is a D45K/D46K/E47K variant. Where indicated, CueO was overproduced from plasmid pQE80-CueO by adding IPTG to early exponential phase cultures for 30 min prior to imaging (+CueO columns). 50 μM CCCP was subsequently added, as indicated (+CCCP column), and the cells incubated for 30–45 min prior to imaging. Scale bar = 1 μm.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/30127/elife-30127-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Immunoblot of membranes isolated from the strains used in panel (B) and in Figure 3, probed with TatA antibodies (upper panels) or antibodies against TatB and TatC (lower panels). (B) Representative fluorescence images of strains ELV16 λAry EDD (AyEDDBCE), JARV16 λAry EDD (AyEDDBC), and MΔABC λAry EDD (AyEDDE). The scaling used to display these images differs from that employed in Figure 3 and uses 1000 a.u. as the minimum (black) and 4000 a.u. as the maximum (white).
 
 We found that all our charge zipper variants were able to assemble into fluorescent foci (Figure 3). While those charge zipper substitutions that retained significant Tat activity (K49D and K52D) fully replicated the TatA-YFP oligomerization behaviour of the wild-type protein, those charge zipper variants which had very low transport activity (D31K and KKK) remained in the assembled state in all conditions tested. Thus, whilst TatA oligomerization is possible in the low activity variants the assembly/disassembly cycle is perturbed.
 
@@ -69,28 +77,416 @@ Our in vivo observations cast considerable doubt on the charge zipper model as a
 
 ## Materials and methods
 
-## Strains and plasmids
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>strain, strain background (Escherichia coli)</td>
+      <td>MC4100</td>
+      <td>Casadaban and Cohen, 1979</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>MC1061</td>
+      <td>Casadaban and Cohen, 1980</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>J1M1</td>
+      <td>Sargent et al., 1998</td>
+      <td></td>
+      <td>MC4100 ΔtatE</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>JARV16</td>
+      <td>Sargent et al., 1999</td>
+      <td></td>
+      <td>MC4100 ΔtatA ΔtatE</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>ELV16</td>
+      <td>Sargent et al., 1999</td>
+      <td></td>
+      <td>MC4100 ΔtatA</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>DADE</td>
+      <td>Wexler et al., 2000</td>
+      <td></td>
+      <td>MC4100 ΔtatABCD ΔtatE</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>MΔABC</td>
+      <td>Alcock et al., 2013</td>
+      <td></td>
+      <td>MC4100 ΔtatABC::apra</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>JARV16 λA D31K</td>
+      <td>This paper</td>
+      <td></td>
+      <td>JARV16 attB::PtatAtatAD31K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>JARV16 λA K49D</td>
+      <td>This paper</td>
+      <td></td>
+      <td>JARV16 attB::PtatAtatAK49D (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>JARV16 λA D31K/K49D</td>
+      <td>This paper</td>
+      <td></td>
+      <td>JARV16 attB::PtatAtatAD31K,K49D (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>JARV16 λA K52D</td>
+      <td>This paper</td>
+      <td></td>
+      <td>JARV16 attB::PtatAtatAK52D (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>JARV16 λA D31K/K52D</td>
+      <td>This paper</td>
+      <td></td>
+      <td>JARV16 attB::PtatAtatAD31K,K52D (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>JARV16 λA EDD</td>
+      <td>This paper</td>
+      <td></td>
+      <td>JARV16 attB::PtatAtatAK37E,K40D,K41D (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>JARV16 λA KKK</td>
+      <td>This paper</td>
+      <td></td>
+      <td>JARV16 attB::PtatAtatAD45K,D46K,E47K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>JARV16 λA EDD/KKK</td>
+      <td>This paper</td>
+      <td></td>
+      <td>JARV16 attB::PtatAtatAK37E,K40D,K41D,D45K,D46K,E47K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>JARV16 λAry</td>
+      <td>This paper</td>
+      <td></td>
+      <td>JARV16 attB::PtatAtatA-EAK-eyfpA206K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>JARV16 λAry D31K</td>
+      <td>This paper</td>
+      <td></td>
+      <td>JARV16 attB::PtatAtatAD31K-EAK-eyfpA206K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>JARV16 λAry K49D</td>
+      <td>This paper</td>
+      <td></td>
+      <td>JARV16 attB::PtatAtatAK49D-EAK-eyfpA206K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>JARV16 λAry K52D</td>
+      <td>This paper</td>
+      <td></td>
+      <td>JARV16 attB::PtatAtatAK52D-EAK-eyfpA206K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>JARV16 λAry EDD</td>
+      <td>This paper</td>
+      <td></td>
+      <td>JARV16 attB::PtatAtatA K37E,K40D,K41D-EAK-eyfpA206K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>JARV16 λAry KKK</td>
+      <td>This paper</td>
+      <td></td>
+      <td>JARV16 attB::PtatAtatA D45K,D46K,E47K-EAK-eyfpA206K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>ELV16 λAry D31K</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ELV16 attB::PtatAtatAD31K-EAK-eyfpA206K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>ELV16 λAry K49D</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ELV16 attB::PtatAtatAK49D-EAK-eyfpA206K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>ELV16 λAry K52D</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ELV16 attB::PtatAtatAK52D-EAK-eyfpA206K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>ELV16 λAry EDD</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ELV16 attB::PtatAtatA K37E,K40D,K41D- EAK-eyfpA206K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>ELV16 λAry KKK</td>
+      <td>This paper</td>
+      <td></td>
+      <td>ELV16 attB::PtatAtatA D45K,D46K,E47K-EAK-eyfpA206K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>DADE λAry D31K</td>
+      <td>This paper</td>
+      <td></td>
+      <td>DADE attB::PtatAtatAD31K-EAK-eyfpA206K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>DADE λAry K49D</td>
+      <td>This paper</td>
+      <td></td>
+      <td>DADE attB::PtatAtatAK49D-EAK-eyfpA206K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>DADE λAry K52D</td>
+      <td>This paper</td>
+      <td></td>
+      <td>DADE attB::PtatAtatAK52D-EAK-eyfpA206K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>DADE λAry KKK</td>
+      <td>This paper</td>
+      <td></td>
+      <td>DADE attB::PtatAtatA D45K,D46K,E47K-EAK-eyfpA206K (kanr)</td>
+    </tr>
+    <tr>
+      <td>strain, strain background (E. coli)</td>
+      <td>MΔABC λAry EDD</td>
+      <td>This paper</td>
+      <td></td>
+      <td>MC4100 ΔtatABC::apra attB::PtatAtatA K37E,K40D,K41D-EAK-eyfpA206K (kanr)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-CueO</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Rabbit poly clonal against CueO mature domain. Affinity purified (1:200)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-DnaK</td>
+      <td>Abcam</td>
+      <td>Abcam ab69617; Clone 8E2/2</td>
+      <td>Mouse monoclonal (1:20000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-TatA</td>
+      <td>Alcock et al., 2016</td>
+      <td></td>
+      <td>Rabbit polyclonal against TatA soluble domain (1:5000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-TatB</td>
+      <td>Alcock et al., 2016</td>
+      <td></td>
+      <td>Rabbit polyclonal against TatB C-terminal peptide. Affinity purified (1:400)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>anti-TatC</td>
+      <td>Alcock et al., 2016</td>
+      <td></td>
+      <td>Rabbit polyclonal against TatC C-terminal peptide. Affinity purified (1:1000)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pQE80-CueO</td>
+      <td>Leake et al., 2008</td>
+      <td></td>
+      <td>Synthesis of E. coli CueO with a C-terminal his6 tag</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pKSUniA</td>
+      <td>Koch et al., 2012</td>
+      <td></td>
+      <td>pBluescript-based vector carrying PtatA-tatA</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pBSTatAry</td>
+      <td>Alcock et al., 2013</td>
+      <td></td>
+      <td>pBluescript-based vector carrying PtatA-tatA-EAK-eyfpA206K</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pRS552</td>
+      <td>Simons et al., 1987</td>
+      <td></td>
+      <td>Shuttle vector for integration of DNA at the E. coli phage lambda attachment site (attB)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>λRS45</td>
+      <td>Simons et al., 1987</td>
+      <td></td>
+      <td>Phage for integration of DNA at the E. coli phage lambda attachment site (attB)</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>TatA D31K F</td>
+      <td>Sigma-Aldrich, St. Louis, Missouri</td>
+      <td></td>
+      <td>Oligonucleotide GGCTCCATCGGTTCCAAACTTGGTGCGTCGATC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>TatA D31K R</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Oligonucleotide GATCGACGCACCAAGTTTGGAACCGATGGAGCC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>TatA K49D F</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Oligonucleotide CAATGAGCGATGATGAACCAGATCAGGATAAAACCAGTCAGG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>TatA K49D R</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Oligonucleotide CCTGACTGGTTTTATCCTGATCTGGTTCATCATCGCTCATTG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>TatA K52D F</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Oligonucleotide GAACCAAAGCAGGATGATACCAGTCAGGATGCTG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>TatA K52D R</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Oligonucleotide CAGCATCCTGACTGGTATCATCCTGCTTTGGTTC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>TatA EDD F</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Oligonucleotide CTTGGTGCGTCGATCGAAGGCTTTGATGATGCAATGAGCGATGATG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>TatA EDD R</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Oligonucleotide CATCATCGCTCATTGCATCATCAAAGCCTTCGATCGACGCACCAAG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>TatA KKK F</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Oligonucleotide GCTTTAAAAAAGCAATGAGCAAAAAGAAACCAAAGCAGGATAAAACC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>TatA KKK R</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Oligonucleotide GGTTTTATCCTGCTTTGGTTTCTTTTTGCTCATTGCTTTTTTAAAGC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>TatA zip2 F</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Oligonucleotide CTTGGTGCGTCGATCGAAGGCTTTGATGATGCAATGAGCAAAAAG</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>TatA zip2 R</td>
+      <td>Sigma-Aldrich</td>
+      <td></td>
+      <td>Oligonucleotide CTTTTTGCTCATTGCATCATCAAAGCCTTCGATCGACGCACCAAG</td>
+    </tr>
+  </tbody>
+</table>
+
+### Strains and plasmids
 
 All strains, plasmids, oligonucleotides, and antibodies used in this study are listed in the Key Resources Table. Codon changes were carried out using the Quikchange method (Agilent, Santa Clara, California) with plasmid pKSUniA (for tatA mutants) or plasmid pBSTatAry (for tatA-yfp mutants) as the template. The mutated alleles were moved into plasmid pRS552 by restriction cloning with BamHI and EcoRI. An overnight culture of MC1061 cells transformed with the pRS552 construct of interest was mixed with phage λRS45 and the resulting phage lysate used to infect the MC4100-derivative background strain. Colonies were assessed for the presence of the desired gene insert by screening for kanamycin-resistance and for the absence of pRS552 by ampicillin-sensitivity. The constructed strains were further validated by amplification of the tat and attB loci, and by sequencing the PCR product amplified from the attB locus.
 
 Unless otherwise indicated, cells were cultured in LB medium (Sambrook and Russell, 2001) at 37°C in a shaking incubator with the following antibiotic concentrations: ampicillin (100 μg /ml), kanamycin (50 μg/ml).
 
-## CueO export assay
+### CueO export assay
 
 Overnight cultures of cells freshly transformed with plasmid pQE80-CueO were diluted 1:40 into fresh medium, then incubated for 1h30 at 37°C, with 1 mM IPTG added after 45 min of growth. Cells were harvested by centrifugation and resuspended in 10 mM Tris.Cl, 150 mM NaCl, pH 7.3 with cell densities normalized according to OD600nm. Equal volumes of the cell suspensions were then centrifuged, and the cell pellets resuspended in 400 μl SET buffer (17.12% sucrose (w/v), 3 mM EDTA, 10 mM Tris.Cl, pH 7.3). 133 μl lysozyme (3 mg/ml in water) and 400 μl ice-cold water were immediately added. Samples were incubated for 20 min at 37°C, and spheroplasts were separated from the released periplasm by centrifugation. Samples were analyzed by immunoblotting for CueO and DnaK. The data presented are representative of at least three independent experiments.
 
-## Anoxic growth on TMAO
+### Anoxic growth on TMAO
 
 Three biological replicates of each strain were grown overnight aerobically in LB. 250 μl of each preculture was used to inoculate 29 ml LB containing 0.4% TMAO (w/v) and 0.5% glycerol (v/v) in a 30 ml universal tube. Cultures were incubated at 37°C without shaking.
 
-## SDS sensitivity assay
+### SDS sensitivity assay
 
 An overnight pre-culture of each strain was diluted 1:37.5 into fresh LB and incubated for 1–2 hr at 37°C. The OD600nm of each culture was normalised to 0.125 and serial ten-fold dilutions were then spotted on to a series of LB-agar plates containing different concentrations of SDS. The plates were incubated overnight at 37°C. The data presented are representative of at least three independent experiments.
 
-## Isolation of membranes for immunoblot analysis
+### Isolation of membranes for immunoblot analysis
 
 Logarithmic phase cell cultures were centrifuged, and cells were suspended in buffer A (50 mM Tris.Cl, 150 mM NaCl, pH 7.4) containing 0.2 mg/ml lysozyme. Cells were lysed by sonication, cell debris was removed by centrifugation (10 min at 3750 x g) and membranes were isolated by ultracentrifugation (1 hr at 100,000 x g). Membranes were resuspended in buffer A, and their concentrations were measured and normalized using the DC assay (Bio-Rad, Hercules, California).
 
-## Fluorescence microscopy
+### Fluorescence microscopy
 
 Cells for microscopy were grown in LB, washed in M9/glucose medium (Sambrook and Russell, 2001), and immobilised on a tunnel slide using poly-L-lysine as previously described (Alcock et al., 2013). Cells were imaged using an inverted fluorescence microscope in HiLo configuration by excitation with a 532 nm laser. Emitted fluorescence was filtered through a dichroic and a 550 nm LP emission filter as described previously (Alcock et al., 2013; Huang et al., 2017). Image stacks averaged over 40 ms were scaled to display 1500 arbitrary units (a.u.) as the minimum (black) and 7500 a.u. as the maximum (white), unless otherwise noted, and were exported as PNG files. Cell imaging panels show exemplar data from at least three independent cultures examined on different days.

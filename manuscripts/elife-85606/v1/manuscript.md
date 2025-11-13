@@ -7,9 +7,9 @@
 
 ### Affiliations
 
-1. https://ror.org/03pv69j64 Cancer Research UK Beatson Institute Glasgow United Kingdom
-2. https://ror.org/00vtgdb53 School of Cancer Sciences, University of Glasgow Glasgow United Kingdom
-3. https://ror.org/01nrxwf90 MRC Centre for Inflammation Research, The Queen’s Medical Research Institute, University of Edinburgh Edinburgh United Kingdom
+1. Cancer Research UK Beatson Institute Glasgow United Kingdom ([ROR:03pv69j64](https://ror.org/03pv69j64))
+2. School of Cancer Sciences, University of Glasgow Glasgow United Kingdom ([ROR:00vtgdb53](https://ror.org/00vtgdb53))
+3. MRC Centre for Inflammation Research, The Queen’s Medical Research Institute, University of Edinburgh Edinburgh United Kingdom ([ROR:01nrxwf90](https://ror.org/01nrxwf90))
 
 † Corresponding author
 

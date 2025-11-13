@@ -30,7 +30,7 @@
 
 ## Abstract
 
-10.7554/eLife.45057.001 Non-segmented negative-strand RNA viruses, such as measles, ebola and Newcastle disease viruses (NDV), encapsidate viral genomic RNAs into helical nucleocapsids, which serve as the template for viral replication and transcription. Here, the clam-shaped nucleocapsid structure, where the NDV viral genome is sequestered, was determined at 4.8 Å resolution by cryo-electron microscopy. The clam-shaped structure is composed of two single-turn spirals packed in a back-to-back mode. This tightly packed structure functions as a seed for the assembly of a nucleocapsid from both directions, facilitating the growth of double-headed filaments with two separate RNA strings inside. Disruption of this structure by mutations in its loop interface yielded a single-headed unfunctional filament.
+Non-segmented negative-strand RNA viruses, such as measles, ebola and Newcastle disease viruses (NDV), encapsidate viral genomic RNAs into helical nucleocapsids, which serve as the template for viral replication and transcription. Here, the clam-shaped nucleocapsid structure, where the NDV viral genome is sequestered, was determined at 4.8 Å resolution by cryo-electron microscopy. The clam-shaped structure is composed of two single-turn spirals packed in a back-to-back mode. This tightly packed structure functions as a seed for the assembly of a nucleocapsid from both directions, facilitating the growth of double-headed filaments with two separate RNA strings inside. Disruption of this structure by mutations in its loop interface yielded a single-headed unfunctional filament.
 
 ## Introduction
 
@@ -42,37 +42,97 @@ Detailed structural analyses have shown that measles RNP filaments exhibit more 
 
 ## Results
 
-## Clam-shaped NDV nucleocapsid
+### Clam-shaped NDV nucleocapsid
 
 Following previous reports (Guryanov et al., 2015; Peng et al., 2016), the NDV N was expressed in an Escherichia coli system and pure protein was obtained after tandem affinity and gel-filtration chromatography. The N was found to be of high purity in SDS-PAGE, with an absorbance of A260/A280 of ∼1.1, suggesting the presence of RNA-bound N (Figure 1—figure supplement 1A). Under negative-stain EM, purified N exhibited round-shaped structures with a small portion of double-headed filaments of different lengths (Figure 1—figure supplement 1B), which are similar to the nucleocapsids of measles that are expressed in Sf21 insect cells (Jensen et al., 2011), of sendai virus in mammalian cells (Buchholz et al., 1993) and of hendra virus in E. coli (Communie et al., 2013). Those two kinds of assemblies were further separated with continuous sucrose-gradient ultracentrifugation. The separated round-shaped sample was quite homogenous with a diameter of ∼200 Å and was used for subsequent structure determination (Figure 1A).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/45057/elife-45057-fig1-v2.jpg)
+
+**Figure 1.:** (A) The images show negative-stain EM micrographs of the round-shaped structures (top image, upper fraction) and filaments (bottom image, lower fraction) after sucrose-gradient centrifugation (close-ups of the boxed areas are shown on the right). (B) Various views of the 3D reconstruction of the clam-shaped structure of N from the upper fraction. The C2 symmetry axis enforced during reconstruction is indicated in the center view (middle). The NTD, CTD and RNA are colored in pink, green and gold, respectively. (C) Atomic model of the clam-shaped structure of N shown from the same view as in (B) and using the same color code. The two 5′ ends of the enwrapped RNA and the seam between them are labeled in the middle view.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/45057/elife-45057-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) The size-exclusion chromatography and SDS-PAGE profile of NDV N. The retention volume of N was ~47 ml and the A260/A280 of N was around 1.1. N from the SDS-PAGE gel was of high purity. (B) Negative-stain image of N after gel filtration (enlarged view of negative stain image in Figure 3D). Round-shaped structures are visible with a small portion of filaments of different lengths. (C) A typical cryo-EM micrograph and its Fast Fourier Transform (FFT). The micrograph was taken under a Titan Krios G2 microscope equipped with Gatan K2 summit camera and was motion corrected. Representative particles in different orientations are indicated with dashed black squares. Qβ virus-like particles for improving orientation distribution are shown in the red circle. The direct FFT of the micrograph shows the highest signal frequency at 4.6 Å or higher. (D) Eight typical two-dimensional (2D) classes show a wide range of angular orientations. (E) Three-dimensional (3D) classification of N.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/45057/elife-45057-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A, B) 3D structures after refinement without C2 (A) or with C2 (B) symmetry. The pseudoatomic structures of N and poly-Uracil (poly-U) are docked into the EM map. Two views are shown and the seam is indicated using dashed lines. Dust has not been removed. (C) Angular distribution of the clam-shaped structure with C2 symmetry. The major angular distribution peak and the respective structures are shown. (D) Fourier shell correlation (FSC) curves of clam-shaped structures with or without C2 symmetry, unmasked or masked (masking-effect-corrected FSC) based on 0.143 criteria. The structure with masked C2 symmetry was selected for the following analysis. (E) Local resolution analysis with Resmap shows an overall resolution of ~5 Å. The seam position is indicated with a dashed line in the middle view. The resolution gradually declines from the protomers furthest away from the seam to the protomers closest to the seam (right).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/45057/elife-45057-fig1-figsupp3-v2.jpg)
+
+**Figure 1—figure supplement 3.:** (A) The domain organization of NDV N. The NTD and CTD are illustrated in pink and green, respectively. The carboxyl tail is unresolved in the 3D structure and is boxed by a dashed line. (B) Homology modeling of NDV N using a subunit of the PIV5 nucleocapsid (gray) as the template. (C) Docking of one N and poly-U pair into the clam-shaped EM map with RNA shown in gold. (D) Comparison between NDV N in an active state and Nipah N in an inactive state (gray). The transition is of a rotation of the CTD by 24°. (E) Horizontal packing among neighboring N. Each N interacts with its neighboring N with its N-arm and C-arm (boxed in red). (F) RNA enwrapped in the clam-shaped structure and the zoomed-in protomer and RNA. (G) Electrostatic potential distribution of one protomer at pH 7.4. The cleft between the NTD and the CTD is positively charged and binds negatively charged RNA.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/45057/elife-45057-fig1-figsupp4-v2.jpg)
+
+**Figure 1—figure supplement 4.:** The N–RNA complexes are double-headed and the clam-like cores are labeled with arrows.
+
 The cryo-electron microscopy (cryo-EM) images for the round-shaped samples were collected and the single particle analysis was carried out. Two-dimensional (2D) and three-dimensional (3D) classification results showed a clam-shaped rigid body with some flexible extensions (Figure 1—figure supplement 1C–E). Further 3D refinement resolved the clam-shaped structure to 6.4 Å resolution and showed obvious C2 symmetry in the rigid body. The C2 symmetry was then applied to improve the resolution, yielding an overall 4.8 Å resolution of the core structure (Figure 1B, Figure 1—figure supplement 2A–E and Video 1). Each protomer was easily recognized from the reconstruction. Those protomers furthest from the seam were better resolved while those closer to the seam were of lower resolution (Figure 1—figure supplement 2E). However, an atomic resolution structure of NDV N was still missing. Homolog modeling on NDV N, based on the 40% sequence identity of N between NDV and Parainfluenza virus 5 (PIV5) (Alayyoubi et al., 2015), resulted the subunit N model and the model was flexibly docked into the EM density map (Figure 1C, Figure 1—figure supplement 3A,B). The docked model fits the EM density well with only minor modification, and resulted in a reliable initial model of NDV N.
+
+![Video 1.](https://cdn.elifesciences.org/articles/45057/elife-45057-video1.mp4.jpg)
 
 The whole reconstruction revealed a clam-shaped structure with the symmetry axis perpendicular to the spiral axis, where two single-turn spirals pack in a back-to-back manner (Figure 1B,C). In each single-turn spiral, there are around 13 N molecules per turn, and each N uses its N-arm (residues 2–34) and its C-arm (residues 370–398) to interact horizontally with a neighboring N for domain exchange contact (Figure 1C and Figure 1—figure supplement 3C and E), as reported in previous ring structures (Alayyoubi et al., 2015; Albertini et al., 2006; Green et al., 2006; Tawar et al., 2009). More specifically, in a NDV clam-shaped structure, Ni uses the N-arm to interact with the Ni-1 CTD and the C-arm to make extensive contact with the Ni+1 CTD tip, forming an exceedingly stable structure (Figure 1—figure supplement 3C–E). Different from the ring structure of PIV5 N (Alayyoubi et al., 2015), the add-on N shifts upward by ~4.6 Å, which drives NDV N to form a single-turn spiral instead (Video 2).
 
+![Video 2.](https://cdn.elifesciences.org/articles/45057/elife-45057-video2.mp4.jpg)
+
 Endogenous RNA from E. coli can be traced in the EM map. Limited by resolution, poly-Uracil (poly-U) was modeled into the EM map to mimic cellular RNA. In the clam-shaped structure, the RNA follows a relaxed helical pattern and orients outside the N molecule, being more similar to the RSV nucleocapsid than to that of rhabdovirus or vesicular stomatitis virus (Figure 1—figure supplement 3E, Video 3) (Albertini et al., 2006; Green et al., 2006; Tawar et al., 2009). The external RNA is deeply buried in the interdomain cleft between the NTD and the CTD, following the ‘rule of six’ with alternating three-base-in and three-base out conformation (Figure 1—figure supplement 3F) (Calain and Roux, 1993; Kolakofsky et al., 1998). Six nucleotides are covered by one N, and there will be 78 nucleotides per single-turn spiral (Figure 1—figure supplement 3F). On the basis of nucleocapsid structural similarity between NDV and the measles virus, the RNA in NDV is estimated to be left-handed with the 5′ end of RNA, which would be first replicated and enwrapped by N immediately after synthesis, lying inside (as labeled in Figure 1B and C) (Gutsche et al., 2015).
+
+![Video 3.](https://cdn.elifesciences.org/articles/45057/elife-45057-video3.mp4.jpg)
 
 Of particular note is an obvious seam between the two single-turn spirals, which disconnects two RNA molecules (Figure 1B,C). The separation between the two 5′ ends of the RNAs is ~6 nm and the bending angle of these ends is approximately 120°, which blocks the continuity of the RNA because it is impossible for one RNA to span two back-to-back spirals. Thus, the clam-shaped structure is not an integrated helix at all, but rather is composed of two spirals self-capping each other in a back-to-back mode. To confirm whether the NDV nucleocapsid is packed using this mode in vivo, the negative-stain EM images of highly polymeric RNPs extracted from Newcastle disease virus were obtained. Interestingly, the images showed a filamentous assembly of the genomic RNA with the clam-like structure, similar to that observed in the resolved structure (Figure 1—figure supplement 4).
 
-## Double-headed filament derived from clam-shaped nucleocapsid
+### Double-headed filament derived from clam-shaped nucleocapsid
 
 Importantly, decreasing threshold values to show more EM densities with or without C2 symmetry revealed that each single-turn spiral had the potential to grow further into a longer filament following a helical trajectory (Figure 1—figure supplement 2A,B). The pseudo-model of N could be docked into extra densities following the helical trajectory without any structural conflicts. Iteratively adding N protein in such manner to both single-turn spirals would yield a longer helix with double heads (Video 4).
 
+![Video 4.](https://cdn.elifesciences.org/articles/45057/elife-45057-video4.mp4.jpg)
+
 To verify this, the filaments fraction after ultracentrifugation was examined with cryo-EM. Almost every filament had double heads derived from one clam-shaped structure (Figure 2A). Owing to the heterogeneity of the double-headed filaments, their structures could not be directly resolved via the single particle reconstruction approach. Consequently, the filament was split into two parts for structural analysis: the clam-shaped core and the helical part (Figure 2A,B). For the former, 2608 clam-shaped particles truncated from double-headed filaments yielded a 14.0 Å resolution structure (Figure 2—figure supplement 1A). The overall shape of the core fitted very well with the 4.8 Å clam-shaped structure (Figure 2B and Figure 2—figure supplement 1B). The distinctive back-to-back packing mode and the seam between two single-turn spirals were clearly recognizable, suggesting that the clam-shaped core acts as the seed for filament growth (Figure 2D).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/45057/elife-45057-fig2-v2.jpg)
+
+**Figure 2.:** (A) Representative cryo-EM micrograph of the N filament from the lower fraction. One typical double-headed filament was selected, magnified and colored in blue (helical structure) and red (clam-shaped core). (B) 3D reconstructions of the helical structure (top) and the clam-shaped core (bottom). The 4.8 Å clam-shaped structure is docked into the clam-shaped core in the filament. (C) Combination of both helical filaments and the clam-shaped core yields the whole double-headed filament. The position of the clam-shaped core in the composite structure is delineated by the dashed line. (D) Atomic model of the double-headed filament shows the position of the clam-shaped core (dashed line). Corresponding 5′ and 3′ ends from the same RNA are labeled in red and blue. (E) The two helixes in one double-headed filament are of unequal length. The length of each helix is defined as the distance between the helix tip and the center of the clam-shaped core in the cartoon. The length measurements and the RNA direction from 5′ to 3′ are given.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/45057/elife-45057-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) FSC curves of the helical part and the clam-shaped core based on 0.143 criteria. The final resolutions for the helical part and the clam-shaped core are estimated at 15 Å and 14 Å, respectively. (B) Matching between typical 2D classes (top row) and the respective projections (bottom row, low-pass filtered to 10 Å) of the atomic model of double-headed filaments. (C) Length statistics of two single spirals in one double-headed filament. The length is defined as the distance between the core center and the tip of a single spiral.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/45057/elife-45057-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Typical cryo-EM micrograph of the NLoop (enlarged view of Figure 3C). Two representative round-shaped particles were selected (circled) and one 2D averaged class is shown in the top right corner, with 13 protomers recognized. One single-headed filament is marked in the rectangular box and used in further analysis. (B) Power spectrum and 2D classification analysis of a single-headed filament. A single-headed filament is divided into head, middle and tail parts (left), 2D classes of which are shown (middle). Power spectrum analysis of selected filament clearly indicates a 1/60 Å layer line (right). (C) 3D reconstruction of a single-headed filament and the respective pseudo-atomic model. (D) 3D projection of pseudo-atomic model of (C) after a 15 Å low-pass filter with sharp herringbone shape.
 
 The helical part of the filament was reconstructed at 15.0 Å resolution (Figure 2B and Figure 2—figure supplement 1A). Like the clam-shaped structure, the helix was composed of 13 protomers per turn, with an outer diameter of ∼200 Å, in agreement with the pseudo-atomic model. The helical pitch varied by ~60 Å, which provided flexibility for the helical nucleocapsids to fit into the crowded virus. Thus, the clam-shaped structure was perfectly compatible with the helical filament and could further grow into a helical filament (Figure 2C,D). Following the direction of RNAs in the clam-shaped structure, the 5′ ends of the RNAs of the double-headed filament were depicted similar to those of the clam-shaped structure (Figure 1C and Figure 2C,D).
 
 Interestingly, the lengths of the two helixes in around 90% of the back-to-back spirals were not equal and one helix was obviously longer than the other one in the raw images (Figure 2A and Figure 2—figure supplement 1C). The statistics showed that the shorter helix had an average length of ~14 nm with fewer than two helical turns, while the average length of the longer one was doubled to ~34 nm (Figure 2E), although the factors that determine the length difference are uncertain.
 
-## The clam-shaped nucleocapsid affects the function of the viral genome
+### The clam-shaped nucleocapsid affects the function of the viral genome
 
 In the clam-shaped structure or in the derived double-headed filament, the self-capping interface came from loops (residues 114–120) of vertically adjacent N in the clam-shaped core. Distance analysis of the residues in the loop suggested that hydrogen bonds may exist between two pairs of Glysin119 and Arginine117 residues (Figure 3A,B). The Loop114–120 region was involved only in the assembly of the clam-shaped core but not in the helical assembly of the double-headed filament. All of the residues in Loop114–120 were mutated to Alanine to check whether the mutations affected the clam-shaped assembly. The mutated N (NLoop) was purified using the same protocol as that used for NWT and yielded filaments that were an average of 50 nm longer than those of NWT. A zoomed-in view of the NLoop filaments clearly showed a single-headed, herringbone-like filament instead of a double-headed assembly from 2D classification (Figure 3C and Figure 2—figure supplement 2). Direct fast fourier transformation (FFT) analysis of one single-headed NLoop filament showed clean diffraction bands with ~1/60 Å intervals, and the 3D reconstruction of NLoop showed a helical structure that was similar to the single-turn spiral of the double-headed NWT. The evidence suggests that Loop114–120 has no influence on helical assembly but has a crucial role in clam-shaped structure formation (Figure 2—figure supplement 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/45057/elife-45057-fig3-v2.jpg)
+
+**Figure 3.:** (A) Loop pairs from the vertically adjacent N form the self-capping interface in the clam-shaped structure. Five loop pairs furthest from the seam are shown. Colors are as in Figure 1. (B) View of one loop pair of the clam-shaped structure. Seven residues (114–120) in the upper loop are labeled and the lower loop is docked into the EM density. (C) Raw micrograph of a single-headed helix from the NLoop and the 2D classification of the filament tip (circled). Zoomed-in view of selected raw filaments (examples in dashed boxes) with two typical 2D classes on the tip shown. (D) NWT was able to form double-headed filaments and functioned well in the minigenome assay. The retention volume of NWT in gel filtration chromatography was ~47 ml (left) and the negative-stain image of this fraction consisted of a clam-shaped structure and filaments was zoomed in (middle). NWT exhibited strong fluorescence signals in a minigenome assay in BSR-T7/5 cells (right). (E) The NLoop formed filaments but was not functional in a minigenome assay. The retention volume of the NLoop was ~47 ml, close to NWT (left). Negative-stain EM showed more filaments than NWT (middle). However, there was no fluorescence signal in the minigenome assay (right).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/45057/elife-45057-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Six N proteins including NWT, N∆C-arm∆C-tail, N∆C-tail, N∆N-arm∆C-arm∆C-tail, N∆N-arm and NLoop were subjected to gel filtration chromatography (left), negative stain EM (middle) and minigenome analyses (right). The negative stain image of NWT was cropped from Figure 1—figure supplement 1B for convenient comparation.
+
 To further investigate whether the Loop114–120 is functionally relevant in vivo, minigenome analyses of several N mutants (Figure 3D,E and Figure 3—figure supplement 1) were performed. The N-arm and the C-arm had been proven previously to be critical for the assembly of N (Buchholz et al., 1993; Kho et al., 2003) and the truncations of N∆N-arm, N∆N-arm∆C-arm∆C-tail and N∆C-arm∆C-tail disabled or heavily affected the assembly to higher ordered structure that was enabled by NWT, NLoop and N∆C-tail, as shown by size-exclusion chromatography and negative-stain EM images (Figure 3D,E and Figure 3—figure supplement 1). RNA synthesis was fully functional in the presence of wild type N (NWT), but truncation mutants lacking the N-arm (N∆N-arm), the N-arm or the C-arm/C-tail (N∆C-arm∆C-tail and N∆N-arm∆C-arm∆C-tail) were all nonfunctional and lost the ability to express the GFP reporter. Surprisingly, the N∆C-tail were partially functional according to the weak fluorescence signals observed in the minigenome assay. Although the mutation of NLoop could form longer single-headed filaments as mentioned above, it showed a negative result in the fluorescence assay (Figure 3D,E and Figure 3—figure supplement 1 ). RNA replication, transcription or translation was not successful in the minigenome assay of the NLoop, indicating that the clam-shaped structure is critical for the expression of the GFP reporter gene.
 
-## The clam-shaped nucleocapsid is resistant to nuclease
+### The clam-shaped nucleocapsid is resistant to nuclease
 
 The detailed structural analysis showed that the single-headed filament from NLoop exposed the RNP 5′ end to the environment, whereas the double-headed filament from NWT enabled intermolecular self-capping to cover its sensitive 5′ end. (Figure 4A,B). To test the sensitivity of the RNP 5′ end to protease, elastase was incubated with double-headed or single-headed filament samples. The SDS-PAGE gel showed a ~40-kDa band with some smears from elastase-digested NWT (Figure 4C). Peptide mapping of the 40-kDa band via Mass Spectrum showed a residue range of 33 to 361, which suggested that the cleaving site was in the loop in the C-arm (Figure 4D and Figure 4—figure supplement 1A). For the single-headed filament from NLoop with the 5′ end exposed, an obvious difference was that the 40-kDa band was found to be further digested to 30 kDa from the N-arm after elastase treatment, based on the SDS-PAGE and Mass Spectrum results, which strongly indicates that there is another cleavage site in the NTD loop regions.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/45057/elife-45057-fig4-v2.jpg)
+
+**Figure 4.:** (A) An atomic model of an NWT double-headed filament from different views shows reciprocal capping between two single-headed spirals. Colors as in Figure 1. One single-headed spiral is highlighted by the black line and labeled ‘capping’. (B) An atomic model of an NLoop single-headed filament from different views with no cap and with the 5′ end of its RNA exposed. The supposed capping spiral, marked by the dashed line, is missing from the single-headed filament. (C) SDS-PAGE gels of NWT and NLoop after elastase digestion. There was a ~40-kDa main band with some smears in the elastase-digested NWT assay (left), while elastase cut the NLoop to form a ~30-kDa band (right). (D) Mass spectrum results identified peptides drawn on the atomic structure of N, indicating one additional cutting site on NLoop (gold scissors). The common regions mapped by Mass Spectrum in NWT and NLoop are colored in blue, and the unique region checked in NWT is shown in red. Five peptides were identified from the 40-kDa band of NWT and marked on the N atomic structure, leaving the CTD loops as the cutting site. Only four peptides were identified from the 30-kDa band of NLoop and marked on N atomic structure. Given the reduced molecular weight and the missing NTD peptide, another cutting site should exist within NTD. (E) Comparison of RNase A digesting NWT and NLoop at different timepoints. Both the clam-shaped structures and the filaments are counted. The numbers of oligomers in NWT and NLoop at 0 s are normalized to 100%. At 180 s, almost 100% disassembly of nucleocapsid was seen in NLoop whereas over 25% of filaments remained in NWT. (F) A cartoon depicts the hypothetical full protection provided to the viral RNA genome by NWT via the self-capping clam-shaped structure. When the clam-shaped structure is broken, nuclease is able to access the RNA 5’ end and can digest the whole RNA strand.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/45057/elife-45057-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Peptides identified via Mass Spectrum are marked. Similar identified peptides, including residues 207–222, 229–237, 240–260, 353-361 in both NWT and NLoop, are colored in blue. The peculiar identified peptides 33–85 in NWT are colored in red. The gold scissors indicate the possible proteolytic sites. (B) Negative-stain EM images of RNase A digestion on NWT and NLoop. Typical micrographs of NWT and NLoop at different timepoints are presented.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/45057/elife-45057-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** (A) C-tail density is boosted by lowering the density threshold of the 3D structure without C2 symmetry. Two bulks of cone-like density (violet) emerge near the end of the docked CTD (green). Both side view (left) and top view (right) are provided for better visualization of the C-tail. (B) A typical 2D averaged class (left) shows the extra density assigned to the C-tail in the 3D structure, and this 2D-averaged class is colored in violet and yellow (right).
 
 In addition, the influence of nuclease on RNA genome stability was tested. RNase A was added to the solutions containing NWT or NLoop filaments to check the digestion result of the assemblies. The results showed that NLoop was more sensitive to RNase A than that of NWT after 180 s exposure (Figure 4—figure supplement 1B). The statistical results showed that almost all of the NLoop samples were completely disassembled whereas over 25% of the NWT filaments remained intact (Figure 4E). Meanwhile, the NWT rather than the NLoop contained RNA with an absorbance of A260/A280 of ∼0.9, whereas that of NLoop was ∼0.6. The enzyme digestion analysis showed that NWT, rather than NLoop, was resistant to the digestion of nuclease and protease, from which it could be hypothesized that the NLoop exposed its RNP 5′ end without the self-capping protection, and was exposed to protease and became accessible by nuclease. Through self-capping, N can protect the viral genome not only from side attack but also from both ends.
 
@@ -90,27 +150,135 @@ NDV infects many domestic and wild avian species, severely impacting the poultry
 
 ## Materials and methods
 
-## Plasmid construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gene (Newcastle disease virus)</td>
+      <td>NDV N</td>
+      <td>Sangon Biotech Company</td>
+      <td>GenBank ID: HM063424.1</td>
+      <td>Synthetic gene</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (E. coli)</td>
+      <td>BL21 (DE3) Star competent cells</td>
+      <td>ThermoFisher Scientific</td>
+      <td>C6010-03</td>
+      <td>Cells for protein expression</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (Newcastle disease virus)</td>
+      <td>LaSota</td>
+      <td>China Veterinary Culture Collection Center</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (hamster)</td>
+      <td>BSR-T7/5</td>
+      <td>PMID: 9847328</td>
+      <td></td>
+      <td>Gift from Zhigao Bu's lab from Harbin Veterinary Research Institute, Chinese Academy of Agricultural Sciences</td>
+    </tr>
+    <tr>
+      <td>Chemicalcompound, drug</td>
+      <td>elastase</td>
+      <td>SIGMA</td>
+      <td>E8140-1UN</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemicalcompound, drug</td>
+      <td>RNase A</td>
+      <td>Promega</td>
+      <td>A7973</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION 1.4</td>
+      <td>PMID: 23000701</td>
+      <td></td>
+      <td>https://www3.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>RELION 2.0</td>
+      <td>PMID: 27845625</td>
+      <td></td>
+      <td>https://www3.mrc-lmb.cam.ac.uk/relion/index.php?title=Main_Page</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>UCSF Chimera</td>
+      <td>http://plato.cgl.ucsf.edu/chimera/</td>
+      <td>RRID:SCR_004097</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Coot</td>
+      <td>PMID: 20383002</td>
+      <td>RRID:SCR_014222</td>
+      <td>http://www2.mrc-lmb.cam.ac.uk/personal/pemsley/coot/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>PHENIX</td>
+      <td>PMID: 22505256</td>
+      <td>RRID:SCR_014224</td>
+      <td>https://www.phenix-online.org/</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ</td>
+      <td>http://imagej.nih.gov/ij/</td>
+      <td>RRID: SCR_003070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Crystal structure of the paramyxovirus parainfluenza virus 5 nucleoprotein–RNA complex</td>
+      <td>PMID: 25831513</td>
+      <td>PDB: 4XJN</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmid construction
 
 The nucleoprotein (N) gene of the Newcastle disease virus (NDV) (GenBank ID: HM063424.1) was synthesized by the Sangon Biotech Company (China). The gene was cloned into the pMCSG7 vector with a N-terminal 6 × His tag and a C-terminal 8 × His tag (Stols et al., 2002). The transition mutation of amino acids 114–120 to Ala and the truncations caused by deleting the N-arm (residues 1–33), C-tail (residues 399–489), C-arm and C-tail (371-489), as well as combinations of the N-arm, C-arm and C-tail (1–33 and 371–489) of N gene, were also cloned into the pMCSG7 vector and designed as NLoop, N∆N-arm, N∆C-tail, N∆C-arm∆C-tail and N∆N-arm∆C-arm∆C-tail, respectively. All of the recombinant plasmids with target genes were sequenced to verify their sequences.
 
-## Protein expression and purification
+### Protein expression and purification
 
 NDV N and its derived mutants were expressed in Escherichia coli BL21(DE3) cells and purified using tandem affinity and gel filtration columns. In detail, the cells were grown in LB media at 37°C until the OD600 nm reached 0.6. The target protein was induced at 16°C for an extra 20 hr with the final concentration of IPTG (isopropyl-B-D-1-thiogalactopyranoside) at 0.1 mM. The cells were harvested by centrifugation at 4680 g for 20 min to obtain the sediments. The pellets were resuspended in PBS buffer (137 mM NaCl, 2.7 mM KCl, 50 mM Na2HPO4, and 10 mM KH2PO4 (pH 7.4)) and disrupted with microfluidizer. Cell debris was removed by centrifugation at 38,900 g for 50 min. The clarified supernatant was loaded onto a 5 ml nickel-nitrilotriacetic acid (Ni-NTA) resin gravity column (Qiagen), which was preequilibrated with PBS buffer. The column was washed with 50 ml PBS buffer containing 20 mM imidazole followed by a 100 mM imidazole wash. Finally, the protein was eluted using PBS buffer containing 500 mM imidazole. The proteins with His-tags were concentrated and loaded onto a Superdex G200 size-exclusion chromatography column (120 ml, GE Healthcare Life Sciences, USA) preequilibrated with TRIS buffer at pH 8.0 (20 mM Tris-HCl, 150 mM NaCl and 2 mM DTT). The target proteins with endogenous RNA were collected for the following experiments.
 
 The samples obtained above were loaded onto the top of a continuous 10% to 30% (w/v) sucrose gradient in the same TRIS buffer and centrifuged for 6 hr at 16 × 104 g and 4°C with an SW40 rotor (Beckman). The samples were collected by puncturing the tube and dialyzing in the TRIS buffer.
 
-## Negative stain EM
+### Negative stain EM
 
 Grids of N or its mutants for negative-stain EM were prepared as described previously (Ohi et al., 2004). Specifically, 4 μl of samples (0.15 mg/ml) were applied to glow-discharged EM grids covered by a thin layer of continuous carbon film and stained with 2% (w/v) uranyl acetate. Negatively stained grids were imaged on a Tecnai Spirit 120 microscope (Thermo Fisher Scientific, USA) operating at 120 kV. Images were recorded at a magnification of ×43,000 and a defocus set to −2 μm, using a 4K × 4K scintillator-based charge-coupled device camera (UltraScan 4000, Gatan, USA).
 
-## Cryo-EM data collection
+### Cryo-EM data collection
 
 To prevent sample aggregation, the N-RNA sample was diluted to 0.65 mg/ml containing 0.018 mg/ml Qβ virus-like particles. A 4 μl sample was applied to a glow-discharged holey carbon grid (Quantifoil, R1.2/1.3, Ted Pella) with a thin layer of continuous carbon film. The grids were blotted using a Vitrobot Mark IV (Thermo Fisher Scientific, USA) with 5 s blotting time, force level of 2 at 100% humidity and 4°C and then immediately plunged into liquid ethane cooled by liquid nitrogen.
 
 The micrographs of the clam-shaped structure samples were recorded on a 300 kV Titan Krios G2 electron microscope equipped with Cs corrector (Thermo Fisher Scientific, USA) and a K2 Summit direct electron detector (Gatan, USA), which was used in counting mode with a pixel size of 1.35 Å. Each movie was exposed for 7.6 s and dose-fractioned into 38 frames with 0.2 s for each frame, generating a total dose of ~41 e-/A2 on the samples. Defocus values during data collection varied from −1.5 μm to −3 μm. All the images were collected under the SerialEM automated data collection software package (Mastronarde, 2005). The micrographs of the filament samples were collected on a 200 kV Talos F200C electron microscope (Thermo Fisher Scientific, USA) equipped with a DE20 Summit direct electron detector (DE, USA) in counting mode with a pixel size of 1.582 Å. Each movie was exposed for 40 s and contained 32 frames, generating a total dose of ~41e-/A2 on the samples. Defocus values for the date collection varied from −1.5 μm to −3 μm. All the images were collected by utilizing the SerialEM automated data collection software package (Mastronarde, 2005).
 
-## Cryo-EM data processing and 3D reconstruction
+### Cryo-EM data processing and 3D reconstruction
 
 A total of 3200 micrographs were used for the clam-shaped structure determination. Before further image processing, the images were aligned and summed with MotionCorr software (Li et al., 2013) and the CTF parameters of each image were determined by CTFFIND3 (Mindell and Grigorieff, 2003). The single-particle analysis and reconstruction was mainly executed in Relion1.4 (Scheres, 2012) and Relion 2.0 (Kimanius et al., 2016). First of all, the particles were picked automatically by Gautomatch and bad particles were excluded by manual selection and reference-free two-dimensional (2D) classification, with 167,588 particles selected for further processing. The initial model was produced by EMAN2 using typical 2D classes with different orientations (Tang et al., 2007). The initial model was lowpass-filtered to 60 Å to limit reference bias during three-dimensional (3D) classification and later refinement. No symmetry was applied in the 3D classification process, and one of the three classes with a better structure feature was selected for further 3D auto-refinement. A 3D map with an overall resolution of 6.4 Å was obtained without symmetry by 3D refinement of the cleaned-up 75,290 particles. Then, a soft mask was applied to avoid the influence of the spreading map on the alignment. Meanwhile, the C2 symmetry was also applied and the final resolution was improved to 4.8 Å with the gold-standard Fourier Shell correlation (FSC) 0.143 criteria. The map was filtered and sharpened during a Relion post-processing session and the local resolution was estimated with Resmap (Kucukelbir et al., 2014).
 
@@ -118,36 +286,36 @@ Double-headed filaments were divided into two parts for structure determination:
 
 The direct FFT analysis of a single-headed filament was performed with the EMAN2 software package (Tang et al., 2007). In total, 6333 segments of the single-headed filament samples were manually picked and the helical reconstruction was performed in Relion 2.0 (Kimanius et al., 2016).
 
-## Model building and validation
+### Model building and validation
 
 The homology model of N and RNA were generated by Modeller (Eswar et al., 2008) using the crystal structure of parainfluenza virus 5 (PDB accession number 4XJN) as the template. Then the pseudo-atomic model of N was flexibly docked into the protomer furthest from the seam in the EM density map with Rosetta software (Das and Baker, 2008). The extra density excluding N was assigned as RNA enwrapped between NTD and CTD and docked using poly-Uracils due to the uncertain sequence of RNA in Coot (Emsley et al., 2010). The model refinement on an N with six Uracils was carried out using secondary structure restraints to maintain proper stereochemistry in Phenix.refine(v1.12) (Afonine et al., 2012). The model was further optimized manually for better local density fitting using Coot (Emsley et al., 2010). To prevent overfitting, TLS refinement and weight optimization were used to improve overfitting across a wide range of resolutions. Ramachandran outliers were corrected semi-automatically in Coot, and MolProbity statistics were computed to ensure proper stereochemistry. The model of the N was validated by computing a Fourier shell correlation (FSC)slush with the density map. The revised atomic NDV N and poly-Uracils were duplicated and docked as a rigid body to the other protomers using UCSF Chimera software (Pettersen et al., 2004).
 
-## Elastase and RNase A enzymatic assay
+### Elastase and RNase A enzymatic assay
 
 Elastase and RNase A were selected to test the susceptibility of the NWT and NLoop samples. A mixture of 40 μl Tris buffer at pH 8.0 (20 mM Tris-HCl, 150 mM NaCl and 2 mM DTT) containing NWT or NLoop (0.15 mg/ml) and 0.275 mg/ml of RNase A was incubated at 37°C and sampled after90 s for negative-stain EM. Forty-five images were captured at ×49,000 magnification for each grid and the number of either clam-shaped structures or filaments was counted at different digestion timepoints.
 
 NWT or NLoop (0.15 mg/ml) in TRIS buffer was incubated with 0.1 mg/ml chymotrypsin-like elastase at 37 °C and sampled every 30 min for SDS-PAGE analysis.
 
-## Statistical analysis
+### Statistical analysis
 
 For double-headed filaments, the distance between the helix tip and the clam-shaped core were measured using ImageJ software. A total of 1371 filaments from 169 raw micrographs were statistically counted to calculate the averaged length of the filaments and the percentage of filaments with unequal length of single spiral.
 
 In nuclease and elastase cleavage assay, the number of particles of both clam-shaped structures and filaments of NWT and NLoop were counted at different timepoints such as 0 s, 90 s and 180 s. A total of 120 micrographs were statistically counted.
 
-## MALDI-TOF-MS analysis
+### MALDI-TOF-MS analysis
 
 The samples of NLoop and NWT after chymotrypsin-like elastase digestion were resolved by SDS PAGE. The resulting gel bands were reduced with 10 mM dithiotreitol in 25 mM NH4HCO3 at 56°C for 60 min and alkylated by 55 mM iodacetamide in 25 mM NH4HCO3 in the dark for 45 min at room temperature. The gel pieces were washed with 40 μl of 25 mM NH4HCO3 for 5 min following the addition of 40 μl acetonitrile and then incubated for 15 min. After the gel pieces were dried in Speedvac for 15 min, proteins were digested with trypsin (100 ng for each band) in 25 mM NH4HCO3 overnight at 37°C. The samples of NLoop and NWT after trypsin treatment were excised for Ultraflextreme matrix-assisted laser desorption ionization time-of-flight/time-of-flight mass spectrometer (MALDI-TOF/TOF-MS) assay. MALDI data processing was performed by the Peptide Mass Fingerprint method (www.matrixscience.com) using the SwissProt database.
 
-## NDV minigenome assay for the assembly mechanism of the N–RNA complex in vivo
+### NDV minigenome assay for the assembly mechanism of the N–RNA complex in vivo
 
 NDV minigenome p-LGT and three helper plasmids pCI-N, pCI-P and pCI-L from the NDV strain ZJ1 were constructed by Zhang et al. (2005). BSR-T7/5 cells stably expressing the phage T7 RNA polymerase, which were developed by Buchholz et al. (1999), were donated by Dr. Zhigao Bu (Harbin Veterinary Institute, China). The cells were maintained in DMEM (Gibco) supplemented with 10% fetal calf serum (FCS) and 1 mg/ml G418, as previously reported (Peeters et al., 2000).
 
 Different mutant and truncated versions of N were cloned into the pCI-neo plasmid (Promega) and designated the names NLoop, N∆N-arm, N∆C-tail, N∆C-arm∆C-tail and N∆N-arm∆C-arm∆C-tail, respectively. The co-transfection was performed with minigenome and helper plasmids as reported previously (Peeters et al., 2000; Zhang et al., 2005). Briefly, the minigenome p-LGT (3 μg), pCI-P (1.5 μg), pCI-L (1.5 μg), with each different N expression plasmid (3 μg), including wild type pCI-N and pCI-N mutants, were cotransfected into BSR-T7/5 cells expressing T7 RNA polymerase. One co-transfection, in which the N expression plasmid was replaced by vector pCI-neo was also conducted as the negative control. The transfection reagent was PolyJet reagent and the transfection procedure was carried out according to the manufacturer’s protocol. At 96 hr posttransfection, the GFP fluorescence of different samples was observed by fluorescence microscopy.
 
-## Ribonucleoprotein complex isolation from NDV strain LaSota
+### Ribonucleoprotein complex isolation from NDV strain LaSota
 
 NDV strain LaSota was propagated in 9-day-old specific-pathogen-free (SPF) embryonated chicken eggs at 37°C for 96 hr. The infected allantoic fluid was collected and centrifuged at 4320 g for 30 min to remove the cell debris. The supernatants were then subjected to pelleting through a 20% sucrose cushion at 38,900 g for 2 hr at 4°C. The pellets were resuspended in PBS buffer (pH 7.4) in the presence of the EDTA-free protease inhibitor cocktail complete from Roche Diagnostics, and lysed by five cycles of freezing and thawing (in liquid nitrogen and at 37°C, respectively) (Schoehn et al., 2004). The NDV lysate was loaded onto the top of a continuous 10% to 30% (w/v) sucrose gradient in PBS buffer (pH 7.4) and centrifuged for 6 hr at 16 × 104 g and 4°C with the SW40 rotor (Beckman). The samples were collected by puncturing the tube and dialyzing in PBS buffer. The presence of the N-RNA complex was verified by negative-stain EM.
 
-## Data availability
+### Data availability
 
 The cryo-EM density map of clam-shaped structure was deposited in the Electron Microscopy Data Bank (EMDB) with the accession number EMD-9793. The atom coordinates of the single N subunit with six uracils were deposited in the Protein Data Bank (PDB) with the PDB ID 6JC3.

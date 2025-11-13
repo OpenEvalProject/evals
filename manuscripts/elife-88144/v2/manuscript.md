@@ -14,10 +14,10 @@
 
 ### Affiliations
 
-1. https://ror.org/00za53h95 Department of Materials Science and Engineering, Institute for NanoBioTechnology, and Program in Molecular Biophysics, Johns Hopkins University Baltimore United States
-2. https://ror.org/02j46qs45 Department of Biology, Faculty of Medicine, Masaryk University Brno Czech Republic
-3. https://ror.org/032h9wv69 Institute of Animal Physiology and Genetics of the CAS Brno Czech Republic
-4. https://ror.org/027v97282 International Clinical Research Center, St. Anne's University Hospital Brno Czech Republic
+1. Department of Materials Science and Engineering, Institute for NanoBioTechnology, and Program in Molecular Biophysics, Johns Hopkins University Baltimore United States ([ROR:00za53h95](https://ror.org/00za53h95))
+2. Department of Biology, Faculty of Medicine, Masaryk University Brno Czech Republic ([ROR:02j46qs45](https://ror.org/02j46qs45))
+3. Institute of Animal Physiology and Genetics of the CAS Brno Czech Republic ([ROR:032h9wv69](https://ror.org/032h9wv69))
+4. International Clinical Research Center, St. Anne's University Hospital Brno Czech Republic ([ROR:027v97282](https://ror.org/027v97282))
 
 † Corresponding author
 
@@ -35,15 +35,15 @@ Experiments involving genetic ablation of FGF4, FGF8, and FGF9 have led to disti
 
 ## Results
 
-## Differences in FGF-induced activation of the ERK pathway in cultured chondrocytes
+### Differences in FGF-induced activation of the ERK pathway in cultured chondrocytes
 
 To investigate whether FGF4, FGF8, and FGF9 induce differential signaling via FGFR1c (referred to as FGFR1 here), we used rat chondrosarcoma (RCS) chondrocytes, an immortal chondrocyte cell line used to model proliferating chondrocytes in the developing limb (Fafilek et al., 2018). By western blot, the RCS cells express detectable amounts of both FGFR1 and FGFR2 (Figure 1A). While FGFR3 and FGFR4 cannot be detected by western blotting, transcripts for FGFR3 and FGFR4 can be found by qPCR. To create an RCS variant that expresses FGFR1 only, CRISPR/Cas9 was used to disrupt the endogenous FGFR2, FGFR3, and FGFR4 genes in RCS cells (Kimura et al., 2021) to generate cells expressing only the endogenous FGFR1 (RCSFgfr1). As a control, we used CRISPR/Cas9 to disrupt all endogenous FGFR genes in RCS cells (Figure 1A; RCS Fgfr1–4 null). The RCSFgfr1 cells were treated with FGF4, FGF8, and FGF9 for up to 1 hr. The activation of the RAS-ERK MAP kinase pathway, which represents the major downstream signaling FGFR module, was monitored by western blot (Figure 1B, Figure 1—source data 5). FGF4, FGF8, and FGF9 showed significant differences in FGFR1-mediated activation of ERK, with FGF4 inducing the strongest signal, compared to weaker signals detected in cells treated with FGF8 and FGF9. To investigate the dynamics of ERK activation in further detail, we used a genetic reporter of ERK activity. Briefly, the RCSFgfr1 cells were transfected with the transcriptional reporter pKrox24 (Gudernova et al., 2017), engineered to induce the expression of eGFP upon ERK pathway activation. The pKrox signal was monitored for 48 hr by automated widefield microscopy. Significant differences in pKrox24 transactivation were found, with FGF4 inducing the strongest signal, in both magnitude and duration, compared to FGF9 and FGF8. Significant differences were also observed between FGF8 and FGF9-induced ERK activation (Figure 1C, Figure 1—source data 6). These experiments showed that the three FGF ligands induce differential activation of ERK in RCS chondrocytes, consistent with the genetic ablation experiments (Mariani et al., 2008), and prompted studies into the mechanism behind these differences.
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/88144/elife-88144-fig1-v2.jpg)
 
-**Figure 1.:** (A) Expression of FGFR1 and FGFR2 in wild-type rat chondrosarcoma (RCS) cells, RCS cells null for FGFR1–4, and RCS cells expressing only endogenous FGFR1 (RCSFgfr1). Actin serves as a loading control; n, number of biologically independent experiments. (B) RCSFgfr1 cells were treated with FGF4, FGF8, and FGF9 for indicated times and ERK phosphorylation (pErk) was monitored by western blot. Vinculin serves as a loading control. pErk signal was quantified and graphed (right) as relative values compared to the 10’ FGF4 stimulation; data show average and SEM of six biologically independent experiments. (C) RCSFgfr1 expressing the pKrox(MapERK)d1EGFP reporter were treated with FGF4, FGF8, and FGF9 and pKrox24 transactivation was monitored for 48 hr.Figure 1—source data 1.Figure 1A.Figure 1—source data 2.Figure 1A and original western blots.Figure 1—source data 3.Figure 1B.Figure 1—source data 4.Figure 1B and original western blots.Figure 1—source data 5.Figure 1B.Figure 1—source data 6.Figure 1C.
+**Figure 1.:** (A) Expression of FGFR1 and FGFR2 in wild-type rat chondrosarcoma (RCS) cells, RCS cells null for FGFR1–4, and RCS cells expressing only endogenous FGFR1 (RCSFgfr1). Actin serves as a loading control; n, number of biologically independent experiments. (B) RCSFgfr1 cells were treated with FGF4, FGF8, and FGF9 for indicated times and ERK phosphorylation (pErk) was monitored by western blot. Vinculin serves as a loading control. pErk signal was quantified and graphed (right) as relative values compared to the 10’ FGF4 stimulation; data show average and SEM of six biologically independent experiments. (C) RCSFgfr1 expressing the pKrox(MapERK)d1EGFP reporter were treated with FGF4, FGF8, and FGF9 and pKrox24 transactivation was monitored for 48 hr.
 
-## Differences in FGF-induced FGFR1 oligomerization
+### Differences in FGF-induced FGFR1 oligomerization
 
 While most RTKs signal as dimers, it has been reported that under some conditions RTKs can form oligomers with different signaling capabilities (Singh et al., 2018). Therefore, we considered the possibility that FGF4, FGF8, and FGF9 promote the formation of different types of FGFR1 oligomers in the plasma membrane. We thus assessed the association state of FGFR1, labeled with YFP, using fluorescence intensity fluctuations (FIF) spectrometry. The fluorophores were attached to the C-terminus of FGFR1 via a GGS flexible linker; this attachment has been used before and has been shown to not affect function (Sarabipour and Hristova, 2016). The FIF experiments utilized 293T cells stably transfected with FGFR1-YFP.
 
@@ -51,11 +51,11 @@ FIF calculates molecular brightness of the YFP-tagged receptors in small regions
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/88144/elife-88144-fig2-v2.jpg)
 
-**Figure 2.:** (A) Brightness distributions shown on the linear scale. Brightness scales with the oligomer size. Linker for activation of T-cells (LAT) (gray) is a monomer control, TrkA+130 nM nerve growth factor (NGF) (black) is a dimer control. EphA2 bound to ephrinA1-Fc (brown) is an oligomer control. All distributions are scaled to a maximum of 1. (B) Distributions of log(brightness). Points represent the experimental FIF data, and the solid lines are the best-fit Gaussians. (C) Means of the best-fit Gaussians and the standard errors of the mean. Each data set is derived from at least 100 cells in three biologically independent experiments.Figure 2—source data 1.
+**Figure 2.:** (A) Brightness distributions shown on the linear scale. Brightness scales with the oligomer size. Linker for activation of T-cells (LAT) (gray) is a monomer control, TrkA+130 nM nerve growth factor (NGF) (black) is a dimer control. EphA2 bound to ephrinA1-Fc (brown) is an oligomer control. All distributions are scaled to a maximum of 1. (B) Distributions of log(brightness). Points represent the experimental FIF data, and the solid lines are the best-fit Gaussians. (C) Means of the best-fit Gaussians and the standard errors of the mean. Each data set is derived from at least 100 cells in three biologically independent experiments.
 
 Next, we performed FIF experiments in the presence of FGF4, FGF8, and FGF9. The FGFs were added at high concentrations (130 nM), which exceed the reported FGF binding constants (in the ~nM range) (Roghani et al., 1994; Gleizes et al., 1995) such that all FGFR1 molecules are FGF-bound. The brightness distributions in the presence of the FGFs are shown in Figure 2A (Figure 2—source data 1). We see that the brightness distributions recorded in the presence of FGF8 (green) and FGF9 (blue) overlap with the distribution for the dimer control, while the distribution for FGF4 (orange) appears shifted to higher brightness. In fact, these data fall between the dimer control and the large oligomer control (EphrinA1+ephrinA1-Fc) (Singh et al., 2018; Seiradake et al., 2013; Seiradake et al., 2010; Nikolov et al., 2014). This brightness distribution suggests that the average oligomer size may be increased beyond a dimer in the presence of FGF4. We analyzed the likelihood of this possibility using a statistical test. Since the distributions of molecular brightness are log-normal, we analyzed the corresponding log(brightness) distributions which are Gaussian (Figure 2B). The parameters of the Gaussian distributions and the standard errors were calculated and used in a Z-test. Results, shown in Figure 2, show that there are statistically significant differences (Z>2, Anderson et al., 2001) between the FGFR1 brightness distribution in the FGF4 case and the distribution for the dimer control (TrkA+NGF). Likewise, there are statistically significant differences between the FGFR1+FGF4 brightness distribution, on one hand, and the FGFR1+FGF8 and FGFR1+FGF9 brightness distributions, on the other (Z>2). Further, the distributions measured for FGFR1+FGF8 and FGFR1+FGF9 are the same as the dimer control distribution. This analysis suggests that while FGF8-bound and FGF9-bound FGFR1 forms dimers, FGF4 binding may promote the formation of higher order FGFR1 oligomers.
 
-## Differences in FGFR1 phosphorylation dose-response curves
+### Differences in FGFR1 phosphorylation dose-response curves
 
 Next, we studied FGFR1 signaling in response to FGF4, FGF8, and FGF9 using quantitative western blotting. In particular, we acquired FGFR1 dose-response curves while varying the concentrations of FGF4, FGF8, or FGF9 over a broad range. As we sought mechanistic interpretation of the results, we used the same 293T cell line used in the FIF experiments, since the FGFR1 expression and the FGFR1 oligomer size in the cell line are known.
 
@@ -63,7 +63,7 @@ The cells were incubated with FGFs for 20 min at 37°C, after which the cells we
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/88144/elife-88144-fig3-v2.jpg)
 
-**Figure 3.:** (A) Sample western blots for Y653/4 FGFR1 phosphorylation and FRS2 phosphorylation in response to FGF4, FGF8, and FGF9. (B) An example blot used for data scaling, where samples with maximum phosphorylation in response to FGF4, FGF8, and FGF9 are re-run on the same gel. (C) Dose-response curves from the western blot experiments. The points represent the averaged data, mean ± SEM, while the solid lines are the best-fit rectangular hyperbolic curves. Fit parameters are shown in Table 1. Data are from three to five biologically independent experiments.Figure 3—source data 1.Figure 3A and B.Figure 3—source data 2.Figure 3A and B and original western blots.Figure 3—source data 3.Figure 3—source data 4.Figure 3—source data 5.Figure 3—source data 6.Figure 3—source data 7.
+**Figure 3.:** (A) Sample western blots for Y653/4 FGFR1 phosphorylation and FRS2 phosphorylation in response to FGF4, FGF8, and FGF9. (B) An example blot used for data scaling, where samples with maximum phosphorylation in response to FGF4, FGF8, and FGF9 are re-run on the same gel. (C) Dose-response curves from the western blot experiments. The points represent the averaged data, mean ± SEM, while the solid lines are the best-fit rectangular hyperbolic curves. Fit parameters are shown in Table 1. Data are from three to five biologically independent experiments.
 
 Figure 3C reveals unexpected differences in the shape of the dose-response curves. While the FGF8 and FGF9 dose-response curves appear sigmoidal when plotted on a semi-log scale, as expected for a rectangular hyperbolic curve (Equation 1), FGF4 exhibits an increase in phosphorylation up to 2.6 nM, followed by a marked decrease in phosphorylation for all studied responses with further increasing FGF4 concentration.
 
@@ -73,11 +73,11 @@ We next considered the possibility that the shape of the FGF4 dose-response curv
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/88144/elife-88144-fig4-v2.jpg)
 
-**Figure 4.:** (A) Phosphorylation time course of Y653/654 at high ligand concentration (130 nM). (B) Phosphorylation time course of Y653/654 at low ligand concentration (2.6 nM). (C) Phosphorylation time course of FRS2 at high ligand concentration (130 nM). (D) Phosphorylation time course of FRS2 at low ligand concentration (2.6 nM). Shown are means and standard errors of replicates from three biologically independent experiments.Figure 4—source data 1.Figure 4.
+**Figure 4.:** (A) Phosphorylation time course of Y653/654 at high ligand concentration (130 nM). (B) Phosphorylation time course of Y653/654 at low ligand concentration (2.6 nM). (C) Phosphorylation time course of FRS2 at high ligand concentration (130 nM). (D) Phosphorylation time course of FRS2 at low ligand concentration (2.6 nM). Shown are means and standard errors of replicates from three biologically independent experiments.
 
 Another possible explanation for the shape difference in the dose-response curves could be that the FGF4-stabilized FGFR1 oligomers, observed in the FIF experiments at high FGF4 concentration (Figure 2), are less active than the FGFR1 dimers. To gain further insights into FGF4-induced FGFR1 oligomerization, we performed FIF experiments in the presence of 2.6 nM FGF4, which corresponds to the peak of Y653/654 phosphorylation in the FGF4 dose-response curve. The brightness distribution at 2.6 nM FGF4, shown in Figure 2, lies between the monomer control and the dimer control. The Z-test analysis shows that the 2.6 nM FGF4 brightness distribution is significantly different from both the monomer and dimer control distributions, as well as from the distribution observed in the presence of high FGF4 concentration. Thus, at low FGF4 concentration, FGFR1 exists primarily in monomeric and dimeric states, while higher FGF4 concentrations (>2.6 nM FGF4) induce the formation of FGFR1 oligomers. The increase in phosphorylation at low FGF4 concentration can therefore be associated with FGFR1 dimers, while the subsequent phosphorylation decrease could be correlated with the appearance of oligomers in addition to dimers. Therefore, the assumption that FGFR1 oligomers are less active than FGFR1 dimers could provide an explanation for the observed shape of the FGF4 dose-response curves.
 
-## Differences in phosphorylation potencies and efficacies, and demonstration of ligand bias
+### Differences in phosphorylation potencies and efficacies, and demonstration of ligand bias
 
 We next analyzed the dose-response curves in Figure 3C to determine the potencies and the efficacies of FGF4, FGF8, and FGF9. These two parameters were determined as optimal fit parameters in the context of rectangular hyperbolic dose-response curves (see Equation 1), as done in the G-protein coupled receptor (GPCR) literature (Rajagopal et al., 2011; Kenakin and Christopoulos, 2013; Kenakin, 2016). The efficacy (Etop in Equation 1) is the highest possible response that can be achieved for a ligand, typically at high ligand concentration. The potency (EC50 in Equation 1), on the other hand, is the ligand concentration that produces 50% of the maximal possible response for a given ligand. A highly potent ligand will evoke a certain response at low concentrations, while a ligand of lower potency will evoke the same response at much higher concentration.
 
@@ -85,13 +85,244 @@ The fitting of the FGF4 dose-response curves presented a particular challenge, a
 
 The best fits for all dose-response curves are shown in Figure 3C with the solid lines. The best-fit values of Etop and EC50 for all studied responses are shown in Table 1. FGF4 exhibits the highest potency, followed by either FGF8 or FGF9, dependent of the particular response. FGF8 exhibits the highest efficacy, followed by either FGF4 or FGF9, dependent of the particular response. In most cases, FGF8 is a full agonist, while FGF9 and FGF4 are partial agonists. However, FGF4 and FGF8 appear to be both full agonists when FRS2 phosphorylation is probed (see Table 1 and Figure 3C).
 
+**Table 1.**
+ Best-fit parameters for dose-response curves in Figures 3 and 5.EC50 is the potency of the ligand, and Etop is the efficacy (see Equation 1).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">pY653/4</th>
+      <th colspan="3">PLCγ</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>EC50, M</td>
+      <td>Etop</td>
+      <td></td>
+      <td>EC50, M</td>
+      <td>Etop</td>
+    </tr>
+    <tr>
+      <td>FGF4</td>
+      <td>4.77E-10±0.42E-10</td>
+      <td>0.95±0.03</td>
+      <td>FGF4</td>
+      <td>7.98E-11±2.15E-11</td>
+      <td>0.80±0.04</td>
+    </tr>
+    <tr>
+      <td>FGF8</td>
+      <td>1.04E-8±0.23E-8</td>
+      <td>1.11±0.07</td>
+      <td>FGF8</td>
+      <td>1.05E-9±0.23E-9</td>
+      <td>0.99±0.03</td>
+    </tr>
+    <tr>
+      <td>FGF9</td>
+      <td>2.09E-9±0.31E-9</td>
+      <td>0.70±0.02</td>
+      <td>FGF9</td>
+      <td>2.05E-10±0.40E-10</td>
+      <td>0.62±0.02</td>
+    </tr>
+    <tr>
+      <td colspan="3">pY766</td>
+      <td colspan="3">pFRS2</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>EC50, M</td>
+      <td>Etop</td>
+      <td></td>
+      <td>EC50, M</td>
+      <td>Etop</td>
+    </tr>
+    <tr>
+      <td>FGF4</td>
+      <td>5.84E-10±1.26E-10</td>
+      <td>0.76±0.05</td>
+      <td>FGF4</td>
+      <td>3.42E-10±0.70E-10</td>
+      <td>0.94±0.06</td>
+    </tr>
+    <tr>
+      <td>FGF8</td>
+      <td>1.42E-8±0.25E-8</td>
+      <td>1.16±0.07</td>
+      <td>FGF8</td>
+      <td>1.62E-9±0.29E-9</td>
+      <td>0.98±0.03</td>
+    </tr>
+    <tr>
+      <td>FGF9</td>
+      <td>1.94E-9±0.71E-9</td>
+      <td>0.56±0.05</td>
+      <td>FGF9</td>
+      <td>1.65E-9±0.15E-9</td>
+      <td>0.52±0.01</td>
+    </tr>
+    <tr>
+      <td colspan="3">FGFR1 Downregulation</td>
+      <td colspan="3">Growth arrest</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>EC50, M</td>
+      <td>Etop</td>
+      <td></td>
+      <td>EC50, M</td>
+      <td>Etop</td>
+    </tr>
+    <tr>
+      <td>FGF4</td>
+      <td>7.34E-10±4.54E-10</td>
+      <td>0.27±0.04</td>
+      <td>FGF4</td>
+      <td>2.59E-12±1.1E-13</td>
+      <td>0.99±0.00</td>
+    </tr>
+    <tr>
+      <td>FGF8</td>
+      <td>1.39E-8±0.39E-8</td>
+      <td>0.63±0.05</td>
+      <td>FGF8</td>
+      <td>1.60E-9±2.3E-10</td>
+      <td>1.14±0.04</td>
+    </tr>
+    <tr>
+      <td>FGF9</td>
+      <td>6.80E-9±2.08E-9</td>
+      <td>0.42±0.02</td>
+      <td>FGF9</td>
+      <td>5.89E-11±8.5E-12</td>
+      <td>0.95±0.00</td>
+    </tr>
+    <tr>
+      <td colspan="3">Collagen type 2 loss</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>EC50, M</td>
+      <td>Etop</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FGF4</td>
+      <td>1.24E-11±2.79E-12</td>
+      <td>1.02±0.01</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FGF8</td>
+      <td>8.51E-11±2.86E-11</td>
+      <td>0.77±0.03</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>FGF9</td>
+      <td>5.67E-11±2.89E-11</td>
+      <td>0.86±0.06</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
 The results in Table 1 show that the rank-ordering of the different ligands is different when different responses are probed, which is indicative of ligand bias. ‘Biased agonism’ or ‘ligand bias’ is the ability of different ligands to differentially activate different signaling pathways downstream of the same receptor (Gundry et al., 2017). Ligand bias reflects not just quantitative differences in downstream signaling, but a fundamental difference between the signaling responses to different ligands (Kenakin, 2019; Ehlert, 2018). To determine if bias exists or not, we calculate bias coefficients using Equation 2. Each bias coefficient, shown in Table 2, compares two responses and two ligands and reveals whether a response is preferentially engaged by one of the ligands (β≠0) or whether both responses are activated similarly by both ligands (β=0). We refer to the entire set of coefficients as a ‘bias map’.
+
+**Table 2.**
+ Calculated bias coefficients using Equation 2.Gray shading indicates statistical significance between either FGF4 or FGF9 and the reference ligand FGF8 (see Supplementary file 4 for p-values).
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">β</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>4v8</td>
+      <td>9v8</td>
+    </tr>
+    <tr>
+      <td>pY653/4 vs pY766</td>
+      <td>–0.07±0.16</td>
+      <td>0.05±0.15</td>
+    </tr>
+    <tr>
+      <td>pY653/4 vs PLCγ</td>
+      <td>–0.24±0.18</td>
+      <td>0.01±0.14</td>
+    </tr>
+    <tr>
+      <td>pY653/4 vs pFRS2</td>
+      <td>–0.61±0.16</td>
+      <td>–0.78±0.12</td>
+    </tr>
+    <tr>
+      <td>pY766 vs pPLCγ</td>
+      <td>–0.18±0.19</td>
+      <td>–0.04±0.17</td>
+    </tr>
+    <tr>
+      <td>pY766 vs pFRS2</td>
+      <td>–0.54±0.17</td>
+      <td>–0.83±0.16</td>
+    </tr>
+    <tr>
+      <td>pPLCγ vs pFRS2</td>
+      <td>–0.37±0.20</td>
+      <td>–0.79±0.13</td>
+    </tr>
+    <tr>
+      <td>pY653/4 vs downregulation</td>
+      <td>–0.36±0.26</td>
+      <td>–0.36±0.16</td>
+    </tr>
+    <tr>
+      <td>pY766 vs downregulation</td>
+      <td>–0.29±0.27</td>
+      <td>–0.41±0.19</td>
+    </tr>
+    <tr>
+      <td>pPLCγ vs downregulation</td>
+      <td>–0.12±0.28</td>
+      <td>–0.37±0.16</td>
+    </tr>
+    <tr>
+      <td>pFRS2 vs downregulation</td>
+      <td>0.25±0.27</td>
+      <td>0.42±0.15</td>
+    </tr>
+    <tr>
+      <td>Collagen loss vs growth arrest</td>
+      <td>–1.77±0.20</td>
+      <td>–1.13±0.18</td>
+    </tr>
+  </tbody>
+</table>
 
 We assessed statistical significance of the differences in bias coefficients for each pair of responses using ANOVA as described in Materials and methods. The results of the statistical analysis are shown in Table 2, where gray shading indicates statistical significance between either FGF4 or FGF9, on one hand, and the reference ligand FGF8, on the other. We see no statistical significance between FGF4 and FGF9 (Supplementary file 4).
 
 Based on the ANOVA, we conclude that FGF8 is biased toward phosphorylation of FRS2, against phosphorylation of Y653/654 and Y766, and against PLCγ activation, as compared to FGF9. Furthermore, FGF8 is biased toward phosphorylation of FRS2 and against phosphorylation of Y653/654 and Y766, as compared to FGF4.
 
-## Phosphorylation time courses cannot explain the existence of ligand bias
+### Phosphorylation time courses cannot explain the existence of ligand bias
 
 Previously, it has been suggested that ligand bias may arise due to differences in the time courses of phosphorylation (Freed et al., 2017; Kiyatkin et al., 2020). We therefore sought to compare the phosphorylation of the activation loop tyrosines Y653/654 and FRS2 over time. We chose these two particular responses because FGF8 is biased toward FRS2 and against Y653/654 FGFR1 phosphorylation, when compared to FGF4 and FGF9 (Table 2). Thus, we complemented the Y653/654 phosphorylation time course in Figure 4A; Figure 4—source data 1, acquired at high concentration (130 nM FGF), with kinetics measurements of Y653/654 phosphorylation at low (2.6 nM) FGF concentration, as well as FRS2 phosphorylation at low (2.6 nM) and high (130 nM ligand) FGF concentrations. Three independent time courses were acquired for each ligand-receptor pair, and the results were averaged. Data, scaled such that the maximal phosphorylation is set to 1, are shown in Figure 4B–D.
 
@@ -99,11 +330,19 @@ We observe differences in the time courses of Y653/654 and FRS2 phosphorylation.
 
 When comparing the time courses of FGFR1 phosphorylation, in every panel of Figure 4; Figure 4—source data 1, we do not see discernable differences in the time course of FGF8-induced phosphorylation, as compared to FGF4 or FGF9. Thus, the time course of phosphorylation alone cannot identify FGF8 as a biased ligand, when compared to FGF4 or FGF9.
 
-## Differences in cellular responses and demonstration of functional bias
+### Differences in cellular responses and demonstration of functional bias
 
 Biased signaling manifests itself in different cellular responses, which can be cell-specific (Kenakin, 2019). We therefore investigated if 293T cells expressing FGFR1 respond differently when stimulated with FGF8 and FGF9. The effects of these two biased FGFs can be directly compared at high concentration as their phosphorylation responses come to a plateau (Figure 3). We compared FGFR1 clearance from the plasma membrane due to FGF-induced uptake, cell apoptosis, and cell viability for the 293T cells used in the western blotting experiments. These cellular responses have been previously reported to occur downstream of FGFR1 activation (Tomlinson et al., 2009; Xie et al., 2020; Xian et al., 2007).
 
 To study FGFR1 endocytosis, we measured the decrease in FGFR1-YFP concentration in the plasma membrane in response to a 2 min treatment of 130 nM of FGF8 or FGF9. After fixation, the plasma membranes in contact with the substrate were imaged on a confocal microscope, and the fluorescence intensities for hundreds of cells stimulated with either FGF8, FGF9, or no ligand were recorded. The average fluorescence intensities for the three groups, from three independent experiments, are shown in Figure 5A; Figure 5—source data 1. We observed a decrease in fluorescence, corresponding to a decrease in plasma membrane concentration of FGFR1-YFP in response to FGF8, as compared to FGF9 and no ligand. This effect was statistically significant by ANOVA (p<0.05). On the other hand, there were no statistically significant differences in FGFR1-YFP membrane concentrations between the FGF9-treated and control groups. These results indicate that FGF8 is more efficient at inducing FGFR1 removal from the plasma membrane immediately after ligand addition, as compared to FGF9. However, the total FGFR1 expression was not affected by a 2 min treatment with ligand (Figure 5—figure supplement 1), consistent with the expectation that the FGF8-induced decrease in FGFR1 plasma membrane concentration in Figure 5A reflects enhanced internalization that precedes degradation.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/88144/elife-88144-fig5-v2.jpg)
+
+**Figure 5.:** (A) FGFR1 concentration in the plasma membrane of HEK 293T cells at t=2 min following ligand addition for FGF8, FGF9, and no ligand control. (B) HEK 293T cell viability after ligand exposure and 6 days of starvation for varying ligand concentrations. (C) Apoptosis of HEK 293T cells under starvation conditions, exposed to varying concentrations of FGF8 and FGF9. Results are summarized in Supplementary file 5. (D) RCSFgfr1 cells were treated with FGF4, FGF8, and FGF9 for 48 hr, and the levels of collagen type 2 were determined by western blot. Actin serves as a loading control. (E) Dose-response curves describing collagen type 2 loss. (F) Dose-response curves for growth arrest of RCSFgfr1 cells after 72 hr, in response to FGF4, FGF8, and FGF9. Data are from at least three biologically independent experiments.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/88144/elife-88144-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Shown are results for three different biologically independent samples in the absence of ligand, three samples that have been treated with FGF8 for 2 min, and three samples that have been treated with FGF9 for 2 min. All the expressions are the same.
 
 We next sought to measure and compare the relative amounts of live FGFR1-expressing 293T cells after stimulation with FGF and after 6 days of starvation, using an MTT assay. The read-out as a function of FGF concentration is shown in Figure 5B; Figure 5—source data 1, revealing a modest decrease in cell viability with increasing concentration for both FGF8 and FGF9. Data were fitted to linear functions, and the slopes were compared using a t-test. Results show that there is a significant difference in cell viability when cells are stimulated with FGF8, as compared to FGF9 (p<0.015). Further, the effects of the two ligands are significant when compared to the case of no FGF.
 
@@ -115,7 +354,7 @@ The dose-response curves were fitted using Equation 1 and the EC50 and Etop valu
 
 The bias coefficients are reported in Table 2. FGF8 is strongly biased toward collagen loss and against growth arrest, when compared to FGF4 and FGF9. The effect is highly significant (Supplementary file 4).
 
-## Structural determinants behind FGFR1 biased signaling
+### Structural determinants behind FGFR1 biased signaling
 
 We sought possible structural determinants behind the observed FGF bias. For GPCRs, it is now well established that different GPCR ligands stabilize different receptor conformations, where each of the conformations has a preference for a subset of downstream signaling molecules (either G proteins or arrestins) (Kahsai et al., 2011; Liu et al., 2012; Kufareva et al., 2017; Zheng et al., 2017; Wacker et al., 2013). We therefore asked if structural differences in the FGF4, FGF8, and FGF9-bound FGFR1 dimers may explain bias for FGF8, as compared to FGF4 and FGF9.
 
@@ -127,7 +366,7 @@ Figure 6A, left (Figure 6—source data 1, Figure 6—source data 2, Figure 6—
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/88144/elife-88144-fig6-v2.jpg)
 
-**Figure 6.:** (A and B) Förster resonance energy transfer (FRET) data for ECTM-FGFR1-YFP and ECTM-FGFR1-mCherry in the presence of saturating FGF4 (orange), FGF8 (green), or FGF9 (blue) concentrations. (A) Measured FRET efficiencies versus total receptor (ECTM-FGFR1-YFP + ECTM-FGFR1-mCherry) concentrations and measured donor (ECTM-FGFR1-YFP) concentrations versus acceptor (ECTM-FGFR1-YFP) concentrations in single vesicles. (B) Histograms of single-vesicle intrinsic FRET values. Intrinsic FRET is a measure of the separation between the fluorescent proteins. Different intrinsic FRET values were measured for FGF8 and FGF4/FGF9. (C) Graphical representation of experimental results showing that in the presence of FGF8 the transmembrane (TM) C-termini are positioned further apart from each other, as compared to the cases of FGF4 and FGF9.Figure 6—source data 1.Figure 6—source data 2.Figure 6—source data 3.
+**Figure 6.:** (A and B) Förster resonance energy transfer (FRET) data for ECTM-FGFR1-YFP and ECTM-FGFR1-mCherry in the presence of saturating FGF4 (orange), FGF8 (green), or FGF9 (blue) concentrations. (A) Measured FRET efficiencies versus total receptor (ECTM-FGFR1-YFP + ECTM-FGFR1-mCherry) concentrations and measured donor (ECTM-FGFR1-YFP) concentrations versus acceptor (ECTM-FGFR1-YFP) concentrations in single vesicles. (B) Histograms of single-vesicle intrinsic FRET values. Intrinsic FRET is a measure of the separation between the fluorescent proteins. Different intrinsic FRET values were measured for FGF8 and FGF4/FGF9. (C) Graphical representation of experimental results showing that in the presence of FGF8 the transmembrane (TM) C-termini are positioned further apart from each other, as compared to the cases of FGF4 and FGF9.
 
 We see that the FRET efficiencies in Figure 6A do not depend on the concentration, over a broad receptor expression range, indicative of constitutive FGFR1 association in the presence of FGF4, FGF8, and FGF9. In this case, the FRET efficiency depends only on (i) the fraction of acceptor-labeled FGFR1, which is directly calculated from the data in Figure 6A and (ii) the so-called intrinsic FRET, a structural parameter which depends on the positioning and dynamics of the fluorophores (Chen et al., 2010a). An intrinsic FRET value was calculated for each vesicle from the data in Figure 6A using Equation 5. The values were binned to generate a histogram and are shown in Figure 6B; . These histograms were fitted with Gaussians, yielding intrinsic FRET values of 0.54±0.01, 0.42±0.01, and 0.52±0.01, for the cases of FGF4, FGF8, and FGF9, respectively. Thus, intrinsic FRET is lower for FGF8-bound ECTM FGFR1, as compared to FGF4 and FGF9-bound ECTM FGFR1. Since the fluorescent proteins were attached directly to the TM domains via flexible linkers, the measured differences in intrinsic FRET reflect differences in the separation of the C-termini of the TM domains in the presence of FGF8, compared to FGF4 and FGF9. Thus, the FGFR1 TM domains self-associate in different manner when FGF8 is bound, as compared to the cases when FGF4 or FGF9 are bound.
 
@@ -157,94 +396,413 @@ All 58 RTKs have been implicated in many growth disorders and cancers (Lemmon an
 
 ## Materials and methods
 
-## Cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Fgfr1 (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>9740</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Fgfr2 (rabbit polyclonal)</td>
+      <td>Santa Cruz</td>
+      <td>sc122</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Collagen 2 (rabbit polyclonal)</td>
+      <td>Cedarlane</td>
+      <td>CL50241AP</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Actin (mouse monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>3700</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Vinculin (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>13901</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>pERK (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>9101</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Y653/654 (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>3471S</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pY766 FGFR1 (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>2544S</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pFRS2 (rabbit monoclonal)</td>
+      <td>Cell Signaling</td>
+      <td>3861S</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-pPLCγ (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>2821S</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PLCγ (rabbit polyclonal)</td>
+      <td>Cell Signaling</td>
+      <td>2822S</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-V5 (mouse monocolonal)</td>
+      <td>Invitrogen</td>
+      <td>46-0705</td>
+      <td>(1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody (secondary)</td>
+      <td>Anti-rabbit</td>
+      <td>Promega</td>
+      <td>W4011</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Antibody (secondary)</td>
+      <td>Anti-mouse</td>
+      <td>Millipore Sigma</td>
+      <td>A6782</td>
+      <td>(1:10,000)</td>
+    </tr>
+    <tr>
+      <td>Cell line (Homo sapiens)</td>
+      <td>HEK 293T FGFR1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Stable cell line developed and maintained by Hristova lab, identity authenticated by SRT profiling, negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Cell line (Rattus norvegicus)</td>
+      <td>RCS WT</td>
+      <td>PMID:749928</td>
+      <td></td>
+      <td>A gift from Benoit de Crombrugghe</td>
+    </tr>
+    <tr>
+      <td>Cell line (Rattus norvegicus)</td>
+      <td>RCS Fgfr1-4 null</td>
+      <td>PMID:33952673</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (Rattus norvegicus)</td>
+      <td>RCSFgfr1</td>
+      <td>This paper</td>
+      <td></td>
+      <td>Progenitors: Fgfr3/4 KO RCS cells from Carmine Settembre, identity authenticated by SRT profiling, negative for mycoplasma</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>2× Laemmli Buffer</td>
+      <td>Bio-Rad</td>
+      <td>1610737</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Tris/Gly/SDS running buffer</td>
+      <td>Bio-Rad</td>
+      <td>1610732</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Transfer buffer</td>
+      <td>Bio-Rad</td>
+      <td>1610734</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Fugene HD</td>
+      <td>Promega</td>
+      <td>E2311</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bio-Rad Mini-Protean TGX precast gels</td>
+      <td>Bio-Rad</td>
+      <td>4561026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>PVDF membranes</td>
+      <td>Bio-Rad</td>
+      <td>1620177</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>West Femto Supersignal</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>1706435</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Bio-Rad Magic Red Caspase 3-7 kit</td>
+      <td>Bio-Rad</td>
+      <td>ICT 935</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>MTT Cell Proliferation Assay Kit</td>
+      <td>Cell BioLabs</td>
+      <td>CBS-252</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Other</td>
+      <td>Iblot 2 Gel Transfer Device</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>IB21001</td>
+      <td>Equipment for transfer</td>
+    </tr>
+    <tr>
+      <td>Gene (Rattus norvegicus)</td>
+      <td>Fgfr1</td>
+      <td>Ensembl</td>
+      <td>Ensembl:ENSRNOG00000016050</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FGF4</td>
+      <td>R&amp;D Systems</td>
+      <td>235-F4-025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant protein</td>
+      <td>FGF8</td>
+      <td>R&amp;D Systems</td>
+      <td>423-F8-025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Peptide, recombinant Protein</td>
+      <td>FGF9</td>
+      <td>R&amp;D Systems</td>
+      <td>273-F9-025</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FGFR1-ECTM-eYFP (plasmid)</td>
+      <td>PMID:26725515</td>
+      <td></td>
+      <td>YFP-Dr M. Betenbaugh, FGFR1 in pRK5- Dr M Mohammadi, into pcDNA3.1 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>FGFR1-ECTM-mCherry (plasmid)</td>
+      <td>PMID:26725515</td>
+      <td></td>
+      <td>pRSET-mCherry- Dr R.Tsien, FGFR1 in pRK5- Dr M Mohammadi, into pcDNA3.1 vector</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pKrox(MapERK)d1EGFP</td>
+      <td>This paper</td>
+      <td>Addgene plasmid #214912</td>
+      <td>Progenitors: pKrox24(MapErk)DsRed (PMID:28199182), pTR01F (PMID:24376882), d1EGFP (PMID:16508309), PCR of mEgr1 3’UTR</td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>FIF software</td>
+      <td>PMID:31110281</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Mathematica</td>
+      <td>Wolfram</td>
+      <td>13</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software</td>
+      <td>Prism</td>
+      <td>GraphPad</td>
+      <td>9.2.0</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Cell culture
 
 Human embryonic kidney cells (HEK 293T), stably transfected with FGFR1-YFP, and RCSFgfr1 cells were grown in Dulbecco’s modified eagle medium (DMEM; Thermo Fisher, PN 31600034) with 10% fetal bovine serum supplemented with 3.5 g of glucose and 1.5 g of sodium bicarbonate at 37°C and 5% CO2. Chinese hamster ovarian (CHO) cells were grown in DMEM with 10% fetal bovine serum supplemented with 0.8 g of glucose, 1.5 g of sodium bicarbonate, and 1% NEAA at 37°C and 5% CO2. The RCS Fgfr1–4 null cells were prepared by Crispr/Cas9-mediated inactivation of Fgfr1, Fgfr2, Fgfr3, and Fgfr4 loci (Kimura et al., 2021). RCSFgfr1 cells were prepared by Crispr/Cas9-mediated inactivation of Fgfr2 in Fgfr3/4 double knock-out RCS cells (a gift from Carmine Settembre).
 
-## FIF spectrometry
+### FIF spectrometry
 
 HEK 293T cells, stably transfected with FGFR1-YFP, were seeded on collagen-coated, glass-bottom Petri dishes (MatTek, P35GCOL-1.5-14-C) and allowed to grow to ~70% confluency at 37°C and 5% CO2. Cells were grown in DMEM with 10% fetal bovine serum, supplemented with 3.5 g of glucose and 1.5 g of sodium bicarbonate. Cells were rinsed with 70% swelling media (1:9 serum-free media, diH2O, 25 mM HEPES), and then swelled in 70% swelling media plus ligand for ~5 min before imaging. This treatment minimizes the ruffles in the plasma membrane and prevents endocytosis (Rauch and Farge, 2000; Sinha et al., 2011).
 
-The plasma membranes facing the support were imaged on a TCS SP8 confocal microscope using a photon counting detector. Images were analyzed using the FIF software (Stoneman et al., 2019). Briefly, the membrane was divided into 15×15 pixel regions of interest and the molecular brightness, ε, of each region was calculated as:ε=σ2I-1
+The plasma membranes facing the support were imaged on a TCS SP8 confocal microscope using a photon counting detector. Images were analyzed using the FIF software (Stoneman et al., 2019). Briefly, the membrane was divided into 15×15 pixel regions of interest and the molecular brightness, ε, of each region was calculated as:
+
+$$
+\epsilon=\frac{\sigma^{2}}{I}-1
+$$
 
 where 〈I〉 is the center of the Gaussian distribution and σ2 is the variance in each segment. The brightness values from thousands of regions of interest were binned and histogrammed. The histograms were then normalized to 1.
 
-Since the molecular brightness distribution is log-normal, the values of log(brightness) were histogrammed and fit to a Gaussian function: normalizedcounts=a∗e−(θ−m)22s2
+Since the molecular brightness distribution is log-normal, the values of log(brightness) were histogrammed and fit to a Gaussian function:
+
+$$
+normalizedcounts=a∗e^{\frac{−(\theta−m)^{2}}{2s^{2}}}
+$$
 
 Here, θ represents the log of the brightness, m is the mean of the Gaussian, s is the standard deviation of the Gaussian, and a is a constant. The best-fit Gaussian parameters are shown in Supplementary file 1.
 
-In order to determine whether the distributions were the same or different, a Z-statistics analysis was used, where the Z value is given by: Z=m1-m2q12+q22
+In order to determine whether the distributions were the same or different, a Z-statistics analysis was used, where the Z value is given by:
+
+$$
+Z=\frac{m_{1}-m_{2}}{\sqrt{q_{1}^{2}+q_{2}^{2}}}
+$$
 
 Here, m1 and m2 represent the two means of the Gaussians being compared, and q1 and q2 are the standard deviations for each Gaussian divided by the square root of the number of cells analyzed. A minimum of 100 cells were analyzed for each data set.
 
 A Z value of less than 2 means that the data sets are within 2 standard deviations of the mean and are therefore the same, while a Z value greater than 2 means that the two data sets are different (Anderson et al., 2001). Calculated Z values can be found in Supplementary file 2.
 
-## Western blots
+### Western blots
 
 HEK 293T cells stably expressing FGFR1 were seeded in equal volumes into 12-well plates and allowed to grow to ~70–90% confluency, while changing the media after 48 hr. The full media was aspirated and replaced with DMEM without fetal bovine serum. Varying amounts of ligands (R&D Systems; FGF4, #235-F4-025; FGF8, #423-F8-025, and FGF9, # 273-F9-025) were added to each well to create a ligand concentration gradient. Cells were incubated with the ligands at 37°C and 5% CO2 for 20 min and then immediately placed on ice. Media was aspirated and cells were immediately lysed with 2× Laemmli Buffer (Bio-Rad 1610737)+5% BME. Lysates were moved to clean Eppendorf tubes and vortexed for 10 s intervals six times over the course of 5–10 min, staying on ice in the interim. Lysates were centrifuged, boiled at 98°C for 10 min, and then immediately placed on ice until cool. Lysates were then centrifuged again and stored at –20°C for later use. Lysates were thawed on ice and vortexed immediately prior to loading onto gel. Gels were run on ice at 140 V for 3 hr using Bio-Rad Mini-Protean TGX precast gels in 1× Tris/Gly/SDS running buffer (Bio-Rad #1610732). Gels were then equilibrated with transfer buffer (Bio-Rad #1610734) supplemented with 20% methanol for 10 min. Transfer was performed using the Iblot 2 Gel Transfer Device (Thermo Fisher #IB21001) and nitrocellulose packs (Thermo Fisher IB23001). Nitrocellulose membranes were removed and replaced with PVDF membranes (Bio-Rad #1620177) that had been activated in 100% methanol, all other steps were as prescribed by Thermo Fisher. Transfers were done at 25 V for 7 min. Following transfer, membranes were immediately trimmed and placed in either 5% non-fat milk or 5% BSA in 1× TBS supplemented with 1% Tween (Sigma #P1379) (TBST) depending on the primary antibody used. Blocking was accomplished on a rocker for 1–2 hr at room temperature. Membranes were rinsed 2× with TBST and then primary antibody was added at a 1:1000 dilution. Primary antibodies (Cell Signaling: anti-Y653/654 #3471S, anti-FGFR1 #9740S, anti-pY766 FGFR1, #2544, anti-Actin #3700, anti-pERK1/2 #9101, anti-pFRS2 #3861S, anti-pPLCγ #2821S, anti-PLCγ #2822S, anti-Vinculin #13901; Santa Cruz: anti-FGFR2 #sc122; Cedarlane: anti-collagen 2 #CL50241AP; Invitrogen: anti-V5 #46-0705) were incubated with the membrane overnight at 4°C on a rocker. The primary antibody was removed and the membrane was washed with TBST three times for 5–15 min. The secondary antibody (Promega: anti-rabbit #W4011; Sigma: anti-mouse #A6782) was added at a dilution of 1:10,000 and allowed to incubate on a rocker at room temperature for 1–2 hr. The secondary antibody was removed and the membrane was washed with TBST 3× for 5–15 min. The membrane was incubated with chemiluminescent solution (Thermo Fisher Scientific West Femto Supersignal, #1706435) and imaged on a Bio-Rad Gel-Doc XRS+.
 
 Blot images were stored digitally. The intensity of each band was quantified using ImageJ.
 
-## Scaling of phosphorylation western blot data
+### Scaling of phosphorylation western blot data
 
 To identify and quantify bias, the phosphorylation dose-response curves for the three ligands have to be globally scaled such that the efficacy of the full agonist is set to 1, and the efficacies of the partial agonist are scaled accordingly. Below, we present the protocol. Steps 1 through 3 are used in the literature to scale the individual dose-response curves. Steps 4 through 6 implement the global scaling.
 
-## Scaling of FGFR1 and collagen abundance gels
+### Scaling of FGFR1 and collagen abundance gels
 
 In this case, the band intensities at zero ligand are the highest and they are set to 1; the rest are scaled accordingly. Results from at least three independent samples are averaged. Then, 1 is subtracted from all the data and the sign is inverted to obtain loss of abundance dose-response curves.
 
-## Fitting of dose-response curves
+### Fitting of dose-response curves
 
-The scaled dose-response curves were fitted to a rectangular hyperbolic (Hill equation with n=1) given by: (1)response=x*Etopx+EC50
+The scaled dose-response curves were fitted to a rectangular hyperbolic (Hill equation with n=1) given by:
+
+$$
+response=\frac{x*E_{top}}{x+EC_{50}}
+$$
 
 Here, [x] represents the concentration of ligand, while Etop corresponds to the plateau at high ligand concentrations and EC50 corresponds to the ligand concentration value at which 50% of Etop is achieved.
 
 To fit the data to Equation 1, we truncated each dose-response curve at the highest ligand concentration that is within 10% of the maximum y value. This took into account that the average y value error is between 5% and 10%. The data was fit in Mathematica with the NonlinearModelFit function using the Levenberg-Marquardt minimization method, while allowing for a maximum of 100,000 iterations. The errors of the fit were weighted as the inverse of the square of the error.
 
-## Calculation of bias coefficients
+### Calculation of bias coefficients
 
-To calculate bias coefficients, FGF8 was chosen as the reference ligand. Bias coefficients, β, for FGF4 and FGF9 were calculated using Equation 2. (2)β4,9=Log((Etop,1EC50,1∗EC50,2Etop,2)4,9∗(EC50,1Etop,1∗Etop,2EC50.2)8)
+To calculate bias coefficients, FGF8 was chosen as the reference ligand. Bias coefficients, β, for FGF4 and FGF9 were calculated using Equation 2.
+
+$$
+\beta_{4,9}=Log((\frac{E_{top,1}}{EC_{50,1}}∗\frac{EC_{50,2}}{E_{top,2}})_{4,9}∗(\frac{EC_{50,1}}{E_{top,1}}∗\frac{E_{top,2}}{EC_{50.2}})_{8})
+$$
 
 Standard errors of β were calculated using the standard errors of EC50 and Etop, as determined from the fit in Equation 1, using the functional approach for multi-variable functions (Hughes and Hase, 2010).
 
-To compare bias coefficients for the three ligands and determine statistical significance in a three-way comparison, we follow the protocol in Karl et al., 2020, re-writing Equation 2 as: (3)β4,9=β`4,9-β`8
+To compare bias coefficients for the three ligands and determine statistical significance in a three-way comparison, we follow the protocol in Karl et al., 2020, re-writing Equation 2 as:
 
-where β’ is calculated in Equation 4. (4)β4,8,9′=Log(Etop,1EC50,1∗EC50,2Etop,2)4,8,9
+$$
+\beta_{4,9}=\beta`_{4,9}-\beta`_{8}
+$$
+
+where β’ is calculated in Equation 4.
+
+$$
+\beta_{4,8,9}^{′}=Log(\frac{E_{top,1}}{EC_{50,1}}∗\frac{EC_{50,2}}{E_{top,2}})_{4,8,9}
+$$
 
 Standard errors of β’ were calculated using the standard errors of EC50 and Etop using the functional approach for multi-variable functions (Hughes and Hase, 2010). The β’ values and their corresponding errors are reported in Supplementary file 3.
 
 Statistical significance of the differences between β’ values were calculated with a one-way ANOVA using the multi-variable analysis option in Prism. The data that were inputted were the mean, SEM, and n, the number of points contributing to the fit. In Figure 3, n=9 for FGF4, n=10 for FGF8, and n=7 for FGF9. The calculated p-values are shown in Supplementary file 4.
 
-## FRET measurements
+### FRET measurements
 
 CHO cells were seeded into tissue culture-treated six-well plates at a density of 2*104 cells/well. 24 hr later, the cells were co-transfected with FGFR1-ECTM-eYFP and FGFR1-ECTM-mCherry using Fugene HD (Promega # E2311) according to the manufacturer’s instructions. ECTM constructs included the entire EC domain and TM domain up to residue 402, followed by a (GGS)5 flexible linker and the fluorophore (Sarabipour and Hristova, 2016). The amount of DNA as well as the donor to acceptor ratio of the DNA added was varied to achieve a wide range of donor and acceptor expressions (Sarabipour et al., 2015).
 
 Cells were vesiculated ~24 hr after transfection as described previously (Del Piccolo et al., 2012). Briefly, the cells were rinsed 2 × with 30% PBS and then incubated for 13 hr at 37°C and 5% CO2 in a chloride salt buffer. Vesicles were then transferred to four-well glass-bottomed chamber slides for imaging on a Nikon confocal microscope with a 60× objective to capture images of the equatorial cross-sections of the vesicles in three channels: donor (eYFP), acceptor (mCherry), and FRET (Sarabipour et al., 2016). FRET was measured following the QI-FRET protocol (Sarabipour et al., 2015; Chen et al., 2010a), which yields the donor concentration, the acceptor concentration, and the FRET efficiency in each vesicle. The microscope was calibrated using solutions of fluorescent protein of known concentration, so that the fluorescence intensity could be directly correlated to fluorophore concentration.
 
-In the case of constitutive dimers at high ligand concentration, when FRET does not depend on receptor concentration, the measured FRET and the intrinsic FRET are connected as follows King et al., 2016:(5)E~=ExA
+In the case of constitutive dimers at high ligand concentration, when FRET does not depend on receptor concentration, the measured FRET and the intrinsic FRET are connected as follows King et al., 2016:
 
-Here, xA is the acceptor fraction, which is measured in each vesicle, along with the FRET efficiency, E. Equation 5 allows us to directly determine the value of the intrinsic FRET, Ẽ, in each vesicle. The dependence of the intrinsic FRET, Ẽ, on the distance between the fluorescent proteins in the dimer, d, is given by Equation 6.(6)E~=11+(dRO)6
+$$
+E~=\frac{E}{x_{A}}
+$$
+
+Here, xA is the acceptor fraction, which is measured in each vesicle, along with the FRET efficiency, E. Equation 5 allows us to directly determine the value of the intrinsic FRET, Ẽ, in each vesicle. The dependence of the intrinsic FRET, Ẽ, on the distance between the fluorescent proteins in the dimer, d, is given by Equation 6.
+
+$$
+E~=\frac{1}{1+(\frac{d}{R_{O}})^{6}}
+$$
 
 Here, Ro is the Förster radius of the FRET pair. For eYFP and mCherry, R0 is 53.1 Å (Chen et al., 2010a; Chen et al., 2010b). This equation assumes free rotation of the fluorescent proteins. This assumption can be justified because the fluorescent proteins are attached via flexible linkers.
 
-## Ligand-induced FGFR1 removal from the plasma membrane
+### Ligand-induced FGFR1 removal from the plasma membrane
 
 FGFR1 downregulation in the plasma membrane was assayed by measuring the FGFR1 membrane concentration before and 2 min after ligand addition. FGFR1-YFP in the plasma membrane in contact with the substrate was imaged in a TCS SP8 confocal microscope, and FGFR1-YFP fluorescence per unit membrane area was quantified. HEK 293T cells, stably transfected with FGFR1-YFP, were seeded on collagen-coated, glass-bottom Petri dishes (MatTek, P35GCOL-1.5-14-C) and allowed to grow to ~70% confluency at 37°C and 5% CO2. Cells were rinsed with serum-free media and exposed to 130 nM of either FGF8 or FGF9 or no ligand and incubated at 37°C and 5% CO2 for 2 min. The cells were fixed in a solution of 4% formaldehyde in PBS for 20 min at room temperature. Samples were stored at 4°C prior to imaging. A minimum of 100 cells per condition were imaged, in three independent experiments. The receptor concentration in the membrane of each cell was quantified using the FIF software (Stoneman et al., 2019), and results for all analyzed cells per condition were averaged.
 
-## Viability assays
+### Viability assays
 
 Cell viability was monitored using a MTT Cell Proliferation Assay Kit (Cell BioLabs, #CBS-252). HEK 293T cells, stably transfected with FGFR1-YFP, were seeded in 96-well plates and allowed to grow to ~70% confluency. Media was aspirated and replaced with serum-free media and with varying concentrations of ligand. After ligand addition, cells were kept at 37°C and 5% CO2 for 6 days. Viability was measured according to the manufacturer’s protocol. Briefly, CytoSelect MTT Cell Proliferation Assay Reagent was added directly to the cell media. After 3 hr of incubation at 37°C and 5% CO2, the cells were lysed with detergent and kept at room temperature for 2 hr. The absorbance was measured on a Synergy H4 plate reader at 555 nm.
 
-## Apoptosis assays
+### Apoptosis assays
 
 Apoptosis was probed using the Bio-Rad Magic Red Caspase 3-7 kit (Bio-Rad, ICT 935). HEK 293T cells stably expressing FGFR1-YFP were seeded in 96-well plates and allowed to grow to ~70% confluency. Media was aspirated and replaced with serum-free media with the Magic Red staining solution and varying concentrations of ligand. After ligand treatment the cells were placed in the incubator at 37°C and 5% CO2 for 6 days. The fluorescence of the cleaved substrate (Cresyl Violet) was measured on a Synergy H4 plate reader. The excitation wavelength was 592 nm. Emission was measured at 628 nm.
 
-## ERK activation, cell count, and collagen expression experiments in RCSFgfr1 cells
+### ERK activation, cell count, and collagen expression experiments in RCSFgfr1 cells
 
 The pKrox(MapERK)d1EGFP reporter was stably expressed in RCSFgfr1 cells using the piggyBac transposase. Activation of the pKrox(MapERK)d1EGFP reporter in RCSFgfr1 cells was measured using an automated incubation microscope BioStation CT (Nikon, Tokyo, Japan). Phase contrast and fluorescence signal images were automatically acquired every 1 hr during a 48 hr time period. Fluorescence of the reporter was then processed and analyzed with the Nikon BioStation CT software.
 
 For the growth arrest assay, the RCS cells were treated with 1 µg/ml heparin and FGF ligands for 3 days. Cell numbers were determined by counting (Beckman-Coulter). For collagen type 2 expression, the RCS cells were treated with 1 µg/ml heparin and FGF ligands for 48 hr. Collagen type 2 expression was measured by western blotting.
 
-## Materials availability statement
+### Materials availability statement
 
 Cell lines created for this work are available upon request.

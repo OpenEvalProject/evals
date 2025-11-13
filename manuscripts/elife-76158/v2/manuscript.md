@@ -13,12 +13,12 @@
 
 ### Affiliations
 
-1. https://ror.org/0172mzb45 WIN Centre, University of Oxford Oxford United Kingdom
-2. https://ror.org/02jx3x895 Institute of Cognitive Neuroscience, University College London London United Kingdom
-3. https://ror.org/013meh722 Medical Research Council Cognition and Brain Sciences Unit (CBU), University of Cambridge Cambridge United Kingdom
-4. https://ror.org/0220mzb33 Department of Psychosis Studies, Institute of Psychiatry, Psychology & Neuroscience, King's College London London United Kingdom
-5. https://ror.org/0172mzb45 Wellcome Trust Centre for Neuroimaging, University College London London United Kingdom
-6. https://ror.org/04389kb95 Queen Mary’s Hospital London United Kingdom
+1. WIN Centre, University of Oxford Oxford United Kingdom ([ROR:0172mzb45](https://ror.org/0172mzb45))
+2. Institute of Cognitive Neuroscience, University College London London United Kingdom ([ROR:02jx3x895](https://ror.org/02jx3x895))
+3. Medical Research Council Cognition and Brain Sciences Unit (CBU), University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
+4. Department of Psychosis Studies, Institute of Psychiatry, Psychology & Neuroscience, King's College London London United Kingdom ([ROR:0220mzb33](https://ror.org/0220mzb33))
+5. Wellcome Trust Centre for Neuroimaging, University College London London United Kingdom ([ROR:0172mzb45](https://ror.org/0172mzb45))
+6. Queen Mary’s Hospital London United Kingdom ([ROR:04389kb95](https://ror.org/04389kb95))
 
 † Corresponding author
 
@@ -44,7 +44,7 @@ We found that, in line with Penfield’s original description, facial topography
 
 ## Results
 
-## The cortical neighbour of the hand representation is the forehead
+### The cortical neighbour of the hand representation is the forehead
 
 We first visualised the average group activity resulting from active movements with each of the facial parts (versus rest), within a broad sensorimotor mask. When looking at gross facial organisation at the group-level, we found qualitatively similar activity maps across groups (see Figure 1), highlighting a robust somatotopy of the face with preserved symmetry across the two hemispheres. These facial maps also indicate an upright orientation of the face in S1, with the forehead located closest to the hand area, followed by the nose, lips, and the tongue located laterally, across all groups. The facial somatotopy presented here therefore suggests that the hand’s cortical neighbour is the forehead (or upper-face), highlighting the need to reassess the often-cited, traditional lip-to-hand marker of cortical remapping in amputees and one-handers. However, conclusions based on threshold-dependant group averages may be misleading as they ignore inter-individual differences.
 
@@ -52,53 +52,81 @@ We first visualised the average group activity resulting from active movements w
 
 **Figure 1.:** Group average activity for the forehead (red), nose (yellow), lips (blue) and tongue (green) movements, contrasted to rest, in the (A) deprived/non-dominant and (B) intact/dominant hemisphere of controls (n=22), amputees (n=17), and one-handers (n=21). All clusters were created using a threshold-free cluster enhancement procedure with a sensorimotor pre-threshold mask (defined using the Harvard Cortical Atlas; outlined in darker grey), and thresholded at p<0.01. The hand and face regions of interest (ROIs) are outlined in purple and orange respectively, and the central sulcus is denoted with a white arrow.
 
-## One-handers, but not amputees, show lip remapping in the deprived cortex based on univariate topographic mapping
+### One-handers, but not amputees, show lip remapping in the deprived cortex based on univariate topographic mapping
 
 To account for inter-individual differences in functional topography and brain topology, we calculated for each participant a winner-takes-all map across facial parts within a (combined) hand and face S1 region of interest (ROI). Focusing on the centre of gravity (CoG) of the lips cluster, we first explored changes in the cortical (geodesic) distance between the lips and an anatomical landmark (~1 cm lateral to the hand knob) of amputees and controls. Here we found no statistically significant main effects or group x hemisphere interaction (F(1,36)=0.019, p=0.890, n2p=0.001, BF10=0.297; controlled for brain size volume; Figure 2B), indicating that the lip area in amputees is not located differently to that of controls. We also measured the proportion of the deprived hand ROI occupied by the lip-winner surface area (relative to the intact hand area; Laterality index). We did not find a significant remapping of the lips (i.e., greater surface coverage) in the missing hand ROI for amputees when compared to controls (U=141.000, p=0.197, rb = 0.246, BF10=0.579; Figure 2C) or to zero (W=91.000, p=0.245, rb=0.338, BF10=0.472; Figure 2C), though here the Bayes Factors did not provide conclusive evidence. Together, these results suggest, contrary to popular theories on brain plasticity in amputees (Flor et al., 2006), that the lips do not remap into the deprived hand area. We next compared the lips laterality index between those individuals who reported suffering from PLP (n=11) and those who no longer experienced chronic PLP (n=6) and found no significant differences (U=27.000, p=0.295, rb = 0.182, BF10=0.629).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/76158/elife-76158-fig2-v2.jpg)
 
-**Figure 2.:** (A) Group-level consistency map for the lips clusters resulting from the individual winner-takes-all maps in the S1 ROI (defined by combining the hand and face areas). The colour gradient represents participant agreement for the lips ‘winning’ that particular voxel, relative to other face movements. Please note that the individual-participant winner-takes-all maps are minimally thresholded, and thus produce an inherently different spatial distribution relative to the group contrast maps presented in Figure 1. The hand ROI is outlined in purple and central sulcus denoted by the white arrow. (B) Cortical geodesic distances from the lip CoG to the anatomical landmark (~1 cm lateral to the hand knob) are plotted for amputees (n=17), controls (n=22), and one-handers (n=21). Distances in the intact/dominant hemisphere are plotted in light blue, and distances in the deprived/non-dominant hemisphere are plotted in darker blue (in amputees and one-handers/controls, respectively). Positive distances indicate the lips CoG is located medial to the anatomical landmark, and negative distances indicate the lips CoG is located lateral to that landmark. The anatomical landmark itself equates to a geodesic distance of zero. For main effects of comparison between amputees and one-handers versus controls, see Figure 2—source data 1–2. (C) Laterality indices for the proportion of surface area coverage of the lips in the hand ROI for all groups (amputees, controls and one-handers). Positive values indicate greater surface area coverage in the deprived/non-dominant hemisphere relative to the intact/dominant hemisphere (in amputees and one-handers/controls, respectively), and negative values reflect greater surface area coverage in the intact/dominant hemisphere relative to the deprived/non-dominant hemisphere. Standard error bars and all individual data-points are plotted in grey and uncorrected for brain size. Amputees with PLP (yes/no) are plotted in orange. ** p<0.01; coloured asterisk’s indicate values are significantly different from zero.Figure 2—source data 1.Figure 2—source data 2.Figure 2—source data 3.Figure 2—source data 4.
+**Figure 2.:** (A) Group-level consistency map for the lips clusters resulting from the individual winner-takes-all maps in the S1 ROI (defined by combining the hand and face areas). The colour gradient represents participant agreement for the lips ‘winning’ that particular voxel, relative to other face movements. Please note that the individual-participant winner-takes-all maps are minimally thresholded, and thus produce an inherently different spatial distribution relative to the group contrast maps presented in Figure 1. The hand ROI is outlined in purple and central sulcus denoted by the white arrow. (B) Cortical geodesic distances from the lip CoG to the anatomical landmark (~1 cm lateral to the hand knob) are plotted for amputees (n=17), controls (n=22), and one-handers (n=21). Distances in the intact/dominant hemisphere are plotted in light blue, and distances in the deprived/non-dominant hemisphere are plotted in darker blue (in amputees and one-handers/controls, respectively). Positive distances indicate the lips CoG is located medial to the anatomical landmark, and negative distances indicate the lips CoG is located lateral to that landmark. The anatomical landmark itself equates to a geodesic distance of zero. For main effects of comparison between amputees and one-handers versus controls, see Figure 2—source data 1–2. (C) Laterality indices for the proportion of surface area coverage of the lips in the hand ROI for all groups (amputees, controls and one-handers). Positive values indicate greater surface area coverage in the deprived/non-dominant hemisphere relative to the intact/dominant hemisphere (in amputees and one-handers/controls, respectively), and negative values reflect greater surface area coverage in the intact/dominant hemisphere relative to the deprived/non-dominant hemisphere. Standard error bars and all individual data-points are plotted in grey and uncorrected for brain size. Amputees with PLP (yes/no) are plotted in orange. ** p<0.01; coloured asterisk’s indicate values are significantly different from zero.
 
 When visualising the average lip activity within the one-handers group, however, we did note a slight qualitative shift in the location, and spread, of the lip activity within the deprived hemisphere (Figure 1A). This is further supported by a visible shift of the one-handers lip-winner consistency map towards the deprived hand area (Figure 2A). These qualitative changes in the lip representation resulted in a significant group x hemisphere interaction for the lips cortical distance to the anatomical landmark in one-handers and controls (F(1,40)=4.352, p=0.043, n2p=0.098; controlling for brain size; Figure 2B). Confirmatory comparisons indicated no statistically significant shifts of the lip CoG in the deprived hemisphere when compared to the controls non-dominant hemisphere (t(40)=-1.178, p=0.246,~d = −0.395, ~BF10=0.148; corrected alpha = 0.025; uncorrected p-values reported; Figure 2B). Although when compared to their intact hemisphere, shorter distances from the lips to the hand area were found in the deprived hemisphere of one-handers (t(40)=-3.374, p=0.002,~d = −0.621), indicating evidence for lip remapping. These shifts in the deprived hemisphere were also reflected in significantly greater surface area coverage of the lips in the hand ROI when compared to controls (t(41)==-2.762, p=0.009, d=−0.843; Figure 2C), which was significantly different from zero (W=1098.000, p=0.006, rb = 0.426). This converging evidence of lip remapping is in line with previous work in one-handers (Hahamy et al., 2017; Amoruso et al., 2021).
 
-## One-handers, and to a lesser extent also amputees, show forehead remapping away from the hand area in the deprived cortex
+### One-handers, and to a lesser extent also amputees, show forehead remapping away from the hand area in the deprived cortex
 
 As we note a qualitative upright orientation of the face (see Figure 1), the question remains as to whether the neighbour to the hand – the forehead – would reorganise after limb loss in amputees, as hypothesised by traditional theories (Flor et al., 2006). Again, we found no significant evidence for cortical remapping of the neighbouring forehead in amputees when assessing changes in cortical distances (group x hemisphere: F(1,36)=1.338, p=0.255, n2p=0.036, BF10=0.695; controlled for brain size volume; Figure 3B). But a significant difference was found for reduced forehead surface area coverage in the deprived hand ROI when compared to controls (t(37)=2.236, p=0.031, d=0.722; Figure 3C). Interestingly, the direction of this effect indicates less, not more, remapping of the forehead in the deprived hand ROI of amputees. However, note that this decrease of surface area coverage was not significantly different from zero (t(16)=-1.86, p=0.082, d=−0.451, BF10=1.012; Figure 3C). When comparing the forehead laterality index for amputees with and without PLP, no significant differences were found (t(15)=-0.729, p=0.761, d=−0.370, BF10=0.291). Taken together, these results suggest that if remapping of the cortical neighbour – the forehead – does occur, this occurs away from the hand area, and is not related to PLP.
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/76158/elife-76158-fig3-v2.jpg)
 
-**Figure 3.:** All annotations are as in Figure 2. For main effects of cortical geodesic distance comparison between amputees and one-handers versus controls, see Figure 3—source data 1–2. Distances in the intact/dominant hemisphere are plotted in pink and deprived/non-dominant hemisphere in red. (B) # p<0.05; * p<0.025 (corrected alpha); (C) * p<0.05; ** p<0.01; *** p<0.001; coloured asterisk’s indicate values are significantly different from zero.Figure 3—source data 1.Figure 3—source data 2.Figure 3—source data 3.Figure 3—source data 4.
+**Figure 3.:** All annotations are as in Figure 2. For main effects of cortical geodesic distance comparison between amputees and one-handers versus controls, see Figure 3—source data 1–2. Distances in the intact/dominant hemisphere are plotted in pink and deprived/non-dominant hemisphere in red. (B) # p<0.05; * p<0.025 (corrected alpha); (C) * p<0.05; ** p<0.01; *** p<0.001; coloured asterisk’s indicate values are significantly different from zero.
 
 When looking at the one-handers group we did find significant evidence of forehead remapping with a group x hemisphere interaction (F(1,40)=7.437, p=0.009, n2p=0.157; controlled for brain size volume; Figure 3B). Confirmatory comparisons indicated a positive trend for shorter distances of the foreheads’ CoG to the anatomical landmark in the deprived hemisphere when compared to their intact hemisphere (t(40)=2.085, p=0.043,~d = 0.435,~BF10=1.18; corrected alpha = 0.025; trend defined as p<.05; uncorrected p-values reported) and significantly shorter distances when compared to the controls non-dominant hemisphere (t(40)=2.580, p=0.014,~d = 0.774). As the forehead’s CoG tended to be located above the anatomical landmark (see Figure 3A), these results indicate a significant shift of forehead activity away from the deprived hand ROI. This is further supported by a significant decrease of surface area coverage for the forehead in the deprived hand ROI when compared to controls (t(41)=3.676, p<.001, d=1.122), which was significantly different from zero (t(20)=-3.57, p=0.002, d=−0.779; Figure 3C). Remapping of the cortical neighbour in one-handers, therefore, manifests in a shifting away of the upper-face from the deprived hand area, possibly due to increases in activity of other facial movements, for example lips.
 
-## Tongue movements produce different topographic maps across groups
+### Tongue movements produce different topographic maps across groups
 
 We also assessed changes in the tongue representation, which is not an immediate neighbour to the hand in S1 (Figure 4A). We did find evidence for significant shifts in the tongue’s CoG towards the anatomical landmark in amputees when compared to controls (group x hemisphere: F(1,36)=4.859, p=0.034, n2p=0.119; controlled for brain size volume; Figure 4B). Confirmatory comparisons indicated significantly shorter distances in the deprived hemisphere of amputees when compared to their intact hemisphere (t(36)=-2.595, p=0.014,~d = 0.678) but not to the controls non-dominant hemisphere (t(36)=1.690, p=0.100,~d = 0.454,~BF10=1.211; corrected alpha = 0.025; uncorrected p-values reported). The tongue showed only a trend for greater surface area coverage in the deprived hand ROI of amputees when compared to controls (t(37)=-2.011, p=0.052, d=−0.650, BF10=1.48; Figure 4C), and tended to be different to zero (t(16)=-1.93, p=0.072, d=−0.467). As tongue remapping is not reflected consistently across analyses, and due to the lack of pre-existing hypotheses, this preliminary result should be interpreted with caution. However, it does indicate that some level of cortical remapping may occur in amputees after limb loss.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/76158/elife-76158-fig4-v2.jpg)
 
-**Figure 4.:** Distances in the intact hemisphere are plotted in light green and distances in the deprived hemisphere in dark green. For main effects of cortical geodesic distance comparison between amputees and one-handers versus controls, see Figure 4—source data 1–2. (B) * p<0.025 (corrected alpha); *** p<0.001; (C) # p<0.1; * p<0.05; coloured asterisk’s indicate values are significantly different from zero. All other annotations are as in Figure 2.Figure 4—source data 1.Figure 4—source data 2.Figure 4—source data 3.Figure 4—source data 4.
+**Figure 4.:** Distances in the intact hemisphere are plotted in light green and distances in the deprived hemisphere in dark green. For main effects of cortical geodesic distance comparison between amputees and one-handers versus controls, see Figure 4—source data 1–2. (B) * p<0.025 (corrected alpha); *** p<0.001; (C) # p<0.1; * p<0.05; coloured asterisk’s indicate values are significantly different from zero. All other annotations are as in Figure 2.
 
 We next explored whether this trend for an increase in tongue activity within the deprived hand ROI, as captured by the laterality index of amputees, was related to PLP (Figure 4C), and found a non-significant difference (U=28.000, p=0.325, rb = 0.152, BF10=0.589). These results suggest, along with an inconclusive Bayes Factor, that amputees with PLP may not report greater instances of tongue remapping, when compared to amputees without PLP.
 
 When repeating the same analysis in one-handers, we also found a significant group x hemisphere interaction (F(1,40)=8.536, p=0.006, n2p=0.176; controlled for brain size volume; Figure 4B) for the cortical distance between the tongue’s CoG and the anatomical landmark. Confirmatory comparisons indicated significantly shorter distances to the anatomical landmark in the deprived hemisphere compared to the intact hemisphere (t(40)=-3.794, p<.001, ~d = −0.677), as well as when compared to the controls’ non-dominant hemisphere (t(40)=-2.380, p=0.022, ~d = −0.751). This was also reflected in greater surface area coverage of the tongue in the deprived hand ROI (see Figure 4A) that was significantly different from zero (W=162.000, p=0.035, rb = 0.543) and from controls (t(41)=-2.534, p=0.015, d=−0.773; Figure 4C). These results suggest that cortical remapping in one-handers extends to tongue movements.
 
-## Nose movements produce similar topographic maps across groups
+### Nose movements produce similar topographic maps across groups
 
 Similar analyses were performed to assess changes in the nose representation (see Appendix 1—figure 1). We did not find evidence for either CoG shifts (p values ≥ 0.829, BF10 ≤0.337) nor differences in surface area coverage (p values ≥ 0.174, BF10 ≤0.664) in both amputees and one-handers compared to controls (see Appendix 1—figure 1). These results suggest that the nose representation remains unaffected in both amputees and one-handers, with conclusive Bayes Factors for one-handers indicating evidence for the null.
 
-## Amputees’ topographic maps are more similar to the maps of controls than of one-handers
+### Amputees’ topographic maps are more similar to the maps of controls than of one-handers
 
 Finally, we wanted to investigate whether amputees’ facial maps in the deprived hemisphere were more similar to those of controls or to one-handers. To provide a summary measure of univariate facial maps, we performed a Jaccard similarity analysis. This analysis quantifies the degree of similarity (0=no overlap between maps, 1=full overlap) between the map of each amputee and those of each individual in the controls or one-handers group respectively. A linear mixed model was used to compare the complete face map (including each of the facial sub-parts, see Methods). Results showed a significant group x hemisphere interaction (F(1,240.0)=7.70, p=0.006; controlled for age; Figure 5), indicating that amputees’ maps showed different similarity values to controls’ and one-handers’ depending on the hemisphere. Post-hoc comparisons (corrected alpha = 0.025; uncorrected p-values reported) revealed significantly higher similarity to controls’ than to one-handers’ maps in the deprived hemisphere (t(240)=-3.892, p<.001). Amputees’ maps also showed higher similarity to controls’ maps in the deprived relative to the intact hemisphere (t(240)=2.991, p=0.003). Amputees, therefore, displayed greater similarity of facial somatotopy in the deprived hemisphere to controls, suggesting again fewer evidence for cortical remapping in amputees.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/76158/elife-76158-fig5-v2.jpg)
+
+**Figure 5.:** Similarity values indicate greater (towards 1) or reduced (towards 0) similarity between amputees’ winner-takes-all maps (n=17) and those of controls (n=22; pink dots) or one-handers (n=21; purple dots), respectively. Results indicated significantly increased similarity to controls in the deprived hemisphere compared to one-handers’ maps in the deprived hemisphere or to controls’ maps in the intact hemisphere. For main effects and interaction, see Figure 5—source data 1. Means are plotted by the crosses, with standard error of the mean plotted along with individual data points. ** p<0.01, *** p<0.001. For reference, the intervals corresponding to the average intra-group similarities (+/-standard error) are represented by bands in the background (controls in grey, amputees in pink, and one-handers in purple). See Figure 5—figure supplements 1–2 for follow-up Jaccard analyses.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/76158/elife-76158-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** All annotations are as in Figure 5. Each colour corresponds either to an inter-group comparison (lighter colours) or to an intra-group comparison (darker colours). See the legend for group comparisons.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/76158/elife-76158-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** All annotations are as in Figure 5. Similarity values indicate greater (towards 1) or reduced (towards 0) similarity between controls’ winner-takes-all maps (n=22) and those of one-handers (n=21; light grey dots) or amputees (n=17; dark grey dots) respectively. * p<0.006 (corrected alpha), *** p<0.001. Note that similar results were obtained (if anything stronger) when excluding the outlier (for the nose).
+
 However, it is important to note that the high intra-group similarity observed for controls (e.g. how similar controls’ maps are to other controls’ maps; grey bands in Figure 5) in the deprived hemisphere, could inflate the enhanced similarity to controls observed for amputees (see Figure 5—figure supplement 1 to see all inter- and intra-group comparisons. Related to this we also observed that (i) one-handers also show an enhanced similarity to controls in the deprived hemisphere, and that (ii) even if lower than controls, amputees and one-handers show similar intra-group similarity in the deprived hemisphere). To account for this potential bias, we calculated the similarity between controls’ maps (highly consistent across themselves) relative to amputees and one-handers respectively. Results showed a significant group x hemisphere x face-parts interaction (F(3,315.0)=2.876, p=0.036; controlled for age; see Figure 5—figure supplement 2). Follow-up comparisons (corrected alpha = 0.006; uncorrected p-values reported) revealed that lip-winner maps of controls were significantly more similar to amputees’ than to one-handers’ lip maps in the deprived hemisphere (t(315)=2.854, p=0.005). Conversely, controls’ tongue-winner maps in the deprived hemisphere were significantly more similar to one-handers’ maps than to amputees’ maps (t(315)=-2.883, p=0.004). Finally, controls’ forehead-winner maps in the intact hemisphere were also significantly more similar to one-handers’ maps than to amputees’ maps (t(315)=-3.576, p<.001). Altogether, these results confirm our previous quantification of univariate changes, with greater remapping of the lips in one-handers and if anything, remapping of the tongue in amputees.
 
-## Brain decoding in the deprived hand area reveals stable facial representational pattern for amputees, and increased facial information in one-handers
+### Brain decoding in the deprived hand area reveals stable facial representational pattern for amputees, and increased facial information in one-handers
 
 The analyses described above focused on the topographic relationship of the four facial parts, but cortical remapping could potentially manifest subtly, without disrupting the spatial distribution of the face representation. RSA identifies statistical (dis)similarities across activity patterns, providing a more sensitive measure of representational changes (Diedrichsen et al., 2018).
 
 When looking at face-face pairwise dissimilarity in the hand ROI across all three groups, we found a non-significant group x hemisphere x face-face interaction (F(10,627.0)=0.572, p=0.837; controlled for age; Figure 6), suggesting a similar representational structure of the face across hemispheres and groups. However, when we looked at the average amount of facial information within the hand ROI, we did find a significant group x hemisphere interaction (F(2,627.0)=14.544, p<.001), indicating potential differences in facial information content. Post-hoc comparisons (corrected alpha = 0.01; uncorrected p-values reported) exploring this effect reported significantly greater dissimilarity between facial-part representations in the deprived hemisphere of amputees (M=0.214; SE = 0.021; t(627.0)=−4.401, p<.001) and one-handers (M=0.273; SE = 0.018; t(627.0)=−5.668, p<.001), when compared to their respective intact hemisphere (amputees: M=0.152; SE = 0.0205; one-handers: M=0.202; SE = 0.018). When comparing to the controls’ non-dominant hemisphere, we only found significantly greater facial information in the one-handers' deprived hand area (t(72.8)=−3.297, p=0.002) and a non-significant effect for amputees (t(71.7)=−0.828, p=0.411). We note that the effects observed in amputees may be influenced by reduced facial information in the intact hand (M=0.152, SE = 0.021; controls: M=0.207, SE = 0.017). While facial information in the deprived hand area was increased in one-handers compared with amputees, this effect did not survive our correction for multiple comparisons (t(70.7)=−2.117, p=0.038). Similar, though weaker, results were obtained in M1 hand ROI (see Figure 6—figure supplement 1 and Figure 6—source data 2). These results are in line with our univariate analyses, which demonstrate significant cortical remapping of facial parts in the one-handers group. In addition, these results indicate that there may be inter-hemispheric changes in facial information in the intact hand ROI of amputees, although this latter result awaits further confirmation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/76158/elife-76158-fig6-v2.jpg)
+
+**Figure 6.:** (A) Representational Dissimilarity Matrices (RDMs) for amputees (n=17), controls (n=22), and one-handers (n=21). Greater dissimilarity between activity patterns for the chosen pairwise comparison indicates more information for that facial part within the hand area. Smaller dissimilarity values of facial activity patterns indicate a reduced ability to discriminate between the chosen movements in the hand area. (B) Multi-dimensional scaling plots for each group, which projects the RDM distances into a lower dimensional space. Here, the distances between each marker reflects the dissimilarity, with more similar activity patterns represented closer together, and more distinct activity patterns positioned further away. Forehead movements are plotted in red, with the nose in yellow, lips blue and tongue green, and the standard error is plotted around each data point. Please note, a different scale was used compared to the face ROI (Figure 7). For main effects and interaction for face-face pairwise distances in hand ROI see Figure 6—source data 1. For a similar analysis in M1 see Figure 6—figure supplement 1 and Figure 6—source data 2.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/76158/elife-76158-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A) Representational Dissimilarity Matrices (RDMs) for amputees (n=17), controls (n=22), and one-handers (n=21). Results are similar to that in S1 (group x hemisphere interaction: F(2,627.0)=7.553, p<0.001), with significantly greater dissimilarity between facial-part representations in the deprived hemisphere of amputees (M=0.214; SE = 0.0193; t(627.0)=3.9633, p<0.001) and one-handers (M=0.243; SE = 0.0170; t(627.0)=3.8525, p<0.001), when compared to their respective intact hemisphere (amputees: M=0.157; SE = 0.0193; one-handers: M=0.193; SE = 0.0170; corrected alpha = 0.0125; uncorrected p-values reported). When comparing to controls non-dominant hemisphere (M=0.192; SE = 0.0163), we did not find any significant differences in both one-handers (t(77.4)=2.1656, p=0.033) and amputees (t(75.9)=0.8371, p=0.405). (B) Multi-dimensional scaling plots for each group, which projects the RDM distances into a lower dimensional space. All annotations are as denoted in Figure 6B.
+
+![Figure 7.](https://cdn.elifesciences.org/articles/76158/elife-76158-fig7-v2.jpg)
+
+**Figure 7.:** All annotations are as in Figure 6. For main effects and interaction for face-face pairwise distances in face ROI see Figure 7—source data 1. For a similar analysis in M1 see Figure 7—figure supplement 1 and Figure 7—source data 2.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/76158/elife-76158-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Representational Dissimilarity Matrices (RDMs) for amputees (n=17), controls (n=22) and one-handers (n=21). Results are similar to that in S1 with a non-significant group x hemisphere x face-face interaction (F(10,627.0)=0.2969, p=0.982; controlled for age). However, we did find a significant group x hemisphere interaction (F(2,627.0)=4.3429, p=0.013), arising from lower facial information content in the intact (M=0.557; SE = 0.0305) compared to the deprived (M=0.597; SE = 0.0305) face ROI in amputees, but this difference did not survive our correction for multiple comparisons (t(627.0)=2.22199, p=0.027; corrected alpha = 0.0125; trend defined as p<0.025; uncorrected p-values reported). Between-hemisphere differences were non-significant when looking at the one-hander group (deprived: M=0.536; SE = 0.0268; intact: M=0.567; SE = 0.0268; t(627.0)=−1.93153, p=0.054). Non-significant differences were also found when comparing the deprived face ROI in amputees (t(67.2)=−0.00525, p=0.996) and one-handers (t(68.0)=−1.64705, p=0.104) to the controls non-dominant hemisphere (M=0.597; SE = 0.0257). We also found a significant group x face-face (F(10,627.0)=0.1934, p=0.038) interaction suggesting that the information content for each movement (regardless of hemisphere) differed across groups. This interaction arose from significantly smaller forehead-lips distances for one-handers compared to controls (t(125)=-2.625, p=0.010), but this effect did not survive correction for multiple comparisons (corrected alpha = 0.004). (B) All annotations are as denoted in Figure 7B.
 
 For completeness, we also looked at facial activity patterns (i.e. face-face pairwise dissimilarities) within the face ROI across all three groups. Here we found non-significant differences for a group x hemisphere x face-face interaction (F(10,627.0)=0.136, p=0.999) and group x hemisphere (F(2,627.0)=0.626, p=0.535), suggesting a similar representational pattern of facial activity, that is facial information content, across hemispheres and groups (Figure 7). See Figure 7—figure supplement 1 and Figure 7—source data 2 for a similar analysis performed in M1 face ROI.
 
@@ -122,35 +150,670 @@ To conclude, both our univariate and multivariate analyses found consistent evid
 
 ## Materials and methods
 
-## Participants
+### Participants
 
-Seventeen individuals with acquired unilateral upper-limb amputation (age; M=53.71, SE = 2.69, women; n=4, missing right hand; n=9), twenty-one individuals with unilateral congenital transverse arrest (age; M=42.67, SE = 3.04, women; n=13, missing right hand; n=8) and twenty-two two-handed controls (age; M=45.55, SE = 2.02, women; n=10, left-handers; n=6) were recruited (see Table 1 for full details). Two additional amputees who were recruited for the study did not participate in the scanning session due to MRI safety concerns, and further recruitment was stalled due to Covid-19 restrictions. The proportion of participants with intact/dominant right hand, as well as gender, were matched across groups (χ2(2)=2.674, p=0.263; χ2(2)=5.593, p=0.061). While significant differences between groups were observed for age (H(2)=7.689, p=.021), post-hoc comparisons confirmed non-significant differences between amputees and one-handers relative to controls. Age covariates were therefore only included in statistical analyses when direct comparisons between amputees and one-handers were carried out. Procedures were in accordance with NHS National Research Ethics Service approval (18/LO/0474), and written informed consent was obtained.
+Seventeen individuals with acquired unilateral upper-limb amputation (age; M=53.71, SE = 2.69, women; n=4, missing right hand; n=9), twenty-one individuals with unilateral congenital transverse arrest (age; M=42.67, SE = 3.04, women; n=13, missing right hand; n=8) and twenty-two two-handed controls (age; M=45.55, SE = 2.02, women; n=10, left-handers; n=6) were recruited (see Table 1 for full details). Two additional amputees who were recruited for the study did not participate in the scanning session due to MRI safety concerns, and further recruitment was stalled due to Covid-19 restrictions. The proportion of participants with intact/dominant right hand, as well as gender, were matched across groups ($χ^{2}$(2)=2.674, p=0.263; $χ^{2}$(2)=5.593, p=0.061). While significant differences between groups were observed for age (H(2)=7.689, p=.021), post-hoc comparisons confirmed non-significant differences between amputees and one-handers relative to controls. Age covariates were therefore only included in statistical analyses when direct comparisons between amputees and one-handers were carried out. Procedures were in accordance with NHS National Research Ethics Service approval (18/LO/0474), and written informed consent was obtained.
 
-## Phantom sensations rating
+**Table 1.**
+ Demographic details for amputees (A01-17) and congenital one-handers (C01-21).Level of limb deficiency is as follows: 1=limb loss above elbow (transhumeral), 2=limb loss below elbow (transradial); L=left, R=right; PLS & PLP frequency: 0=no sensation or pain, 1=once or less per month, 2=several times per month, 3=once a week, 4=daily, 5=all the time. *PLP intensity rating was on average. PLS = phantom limb sensations; PLP = phantom limb pain.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Participants</th>
+      <th>Age</th>
+      <th>Gender</th>
+      <th>Handedness (prior to amputation for amputees)</th>
+      <th>Affected limb</th>
+      <th>Level of limb deficiency</th>
+      <th>Years since amputation</th>
+      <th>PLS intensity</th>
+      <th>PLS frequency</th>
+      <th>Chronic PLS</th>
+      <th>PLP intensity</th>
+      <th>PLP frequency</th>
+      <th>Chronic PLP</th>
+      <th>Cause of amputation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>AA01</td>
+      <td>60</td>
+      <td>M</td>
+      <td>R</td>
+      <td>R</td>
+      <td>2</td>
+      <td>43</td>
+      <td>100</td>
+      <td>5</td>
+      <td>100</td>
+      <td>60</td>
+      <td>5</td>
+      <td>60</td>
+      <td>Trauma</td>
+    </tr>
+    <tr>
+      <td>AA02</td>
+      <td>34</td>
+      <td>M</td>
+      <td>R</td>
+      <td>R</td>
+      <td>1</td>
+      <td>3</td>
+      <td>50</td>
+      <td>2.5</td>
+      <td>14.6</td>
+      <td>70*</td>
+      <td>2</td>
+      <td>17.5*</td>
+      <td>Trauma</td>
+    </tr>
+    <tr>
+      <td>AA03</td>
+      <td>58</td>
+      <td>M</td>
+      <td>R</td>
+      <td>R</td>
+      <td>1</td>
+      <td>33</td>
+      <td>90</td>
+      <td>5</td>
+      <td>90</td>
+      <td>100</td>
+      <td>1</td>
+      <td>20</td>
+      <td>Trauma</td>
+    </tr>
+    <tr>
+      <td>AA04</td>
+      <td>59</td>
+      <td>M</td>
+      <td>R</td>
+      <td>L</td>
+      <td>2</td>
+      <td>16</td>
+      <td>40</td>
+      <td>1</td>
+      <td>8</td>
+      <td>0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>Trauma</td>
+    </tr>
+    <tr>
+      <td>AA05</td>
+      <td>54</td>
+      <td>M</td>
+      <td>A</td>
+      <td>L</td>
+      <td>1</td>
+      <td>36</td>
+      <td>100</td>
+      <td>5</td>
+      <td>100</td>
+      <td>80</td>
+      <td>4</td>
+      <td>40</td>
+      <td>Trauma</td>
+    </tr>
+    <tr>
+      <td>AA06</td>
+      <td>47</td>
+      <td>F</td>
+      <td>R</td>
+      <td>L</td>
+      <td>2</td>
+      <td>18</td>
+      <td>80</td>
+      <td>4</td>
+      <td>40</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Electrocution</td>
+    </tr>
+    <tr>
+      <td>AA08</td>
+      <td>40</td>
+      <td>F</td>
+      <td>R</td>
+      <td>R</td>
+      <td>1</td>
+      <td>10</td>
+      <td>40</td>
+      <td>3</td>
+      <td>13.3</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Trauma</td>
+    </tr>
+    <tr>
+      <td>AA09</td>
+      <td>47</td>
+      <td>M</td>
+      <td>R</td>
+      <td>R</td>
+      <td>2</td>
+      <td>5</td>
+      <td>70</td>
+      <td>4</td>
+      <td>35</td>
+      <td>10</td>
+      <td>4</td>
+      <td>5</td>
+      <td>Trauma</td>
+    </tr>
+    <tr>
+      <td>AA10</td>
+      <td>53</td>
+      <td>M</td>
+      <td>R</td>
+      <td>L</td>
+      <td>2</td>
+      <td>34</td>
+      <td>20</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Trauma</td>
+    </tr>
+    <tr>
+      <td>AA11</td>
+      <td>56</td>
+      <td>F</td>
+      <td>L</td>
+      <td>L</td>
+      <td>1</td>
+      <td>12</td>
+      <td>90</td>
+      <td>5</td>
+      <td>90</td>
+      <td>80</td>
+      <td>5</td>
+      <td>80</td>
+      <td>Tumour</td>
+    </tr>
+    <tr>
+      <td>AA12</td>
+      <td>66</td>
+      <td>M</td>
+      <td>R</td>
+      <td>R</td>
+      <td>1</td>
+      <td>38</td>
+      <td>60</td>
+      <td>5</td>
+      <td>60</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Trauma</td>
+    </tr>
+    <tr>
+      <td>AA13</td>
+      <td>65</td>
+      <td>F</td>
+      <td>L</td>
+      <td>L</td>
+      <td>1</td>
+      <td>10</td>
+      <td>90</td>
+      <td>5</td>
+      <td>90</td>
+      <td>80</td>
+      <td>4</td>
+      <td>40</td>
+      <td>Trauma</td>
+    </tr>
+    <tr>
+      <td>AA14</td>
+      <td>66</td>
+      <td>M</td>
+      <td>R</td>
+      <td>L</td>
+      <td>1</td>
+      <td>35</td>
+      <td>80</td>
+      <td>2</td>
+      <td>20</td>
+      <td>100</td>
+      <td>2</td>
+      <td>25</td>
+      <td>Trauma</td>
+    </tr>
+    <tr>
+      <td>AA16</td>
+      <td>64</td>
+      <td>M</td>
+      <td>R</td>
+      <td>R</td>
+      <td>1</td>
+      <td>18</td>
+      <td>75</td>
+      <td>5</td>
+      <td>75</td>
+      <td>65</td>
+      <td>5</td>
+      <td>65</td>
+      <td>Trauma</td>
+    </tr>
+    <tr>
+      <td>AA17</td>
+      <td>65</td>
+      <td>M</td>
+      <td>R</td>
+      <td>R</td>
+      <td>1</td>
+      <td>8</td>
+      <td>70</td>
+      <td>5</td>
+      <td>70</td>
+      <td>0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>Trauma</td>
+    </tr>
+    <tr>
+      <td>AA18</td>
+      <td>48</td>
+      <td>M</td>
+      <td>R</td>
+      <td>R</td>
+      <td>1</td>
+      <td>23</td>
+      <td>85</td>
+      <td>5</td>
+      <td>85</td>
+      <td>65</td>
+      <td>5</td>
+      <td>65</td>
+      <td>Trauma</td>
+    </tr>
+    <tr>
+      <td>AA19</td>
+      <td>31</td>
+      <td>M</td>
+      <td>R</td>
+      <td>L</td>
+      <td>2</td>
+      <td>14</td>
+      <td>30</td>
+      <td>5</td>
+      <td>30</td>
+      <td>25</td>
+      <td>1</td>
+      <td>5</td>
+      <td>Trauma</td>
+    </tr>
+    <tr>
+      <td>CA01</td>
+      <td>32</td>
+      <td>F</td>
+      <td>R</td>
+      <td>L</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA02</td>
+      <td>32</td>
+      <td>F</td>
+      <td>R</td>
+      <td>L</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA03</td>
+      <td>35</td>
+      <td>M</td>
+      <td>R</td>
+      <td>L</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA04</td>
+      <td>48</td>
+      <td>M</td>
+      <td>R</td>
+      <td>L</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA05</td>
+      <td>22</td>
+      <td>F</td>
+      <td>L</td>
+      <td>R</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA06</td>
+      <td>54</td>
+      <td>F</td>
+      <td>R</td>
+      <td>L</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA07</td>
+      <td>56</td>
+      <td>F</td>
+      <td>L</td>
+      <td>R</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA08</td>
+      <td>53</td>
+      <td>M</td>
+      <td>R</td>
+      <td>L</td>
+      <td>1</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA09</td>
+      <td>54</td>
+      <td>F</td>
+      <td>R</td>
+      <td>L</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA10</td>
+      <td>58</td>
+      <td>M</td>
+      <td>L</td>
+      <td>R</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA11</td>
+      <td>22</td>
+      <td>M</td>
+      <td>R</td>
+      <td>L</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA12</td>
+      <td>30</td>
+      <td>F</td>
+      <td>R</td>
+      <td>L</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA13</td>
+      <td>24</td>
+      <td>M</td>
+      <td>L</td>
+      <td>R</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA14</td>
+      <td>33</td>
+      <td>F</td>
+      <td>L</td>
+      <td>R</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA15</td>
+      <td>39</td>
+      <td>F</td>
+      <td>L</td>
+      <td>R</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA16</td>
+      <td>55</td>
+      <td>F</td>
+      <td>R</td>
+      <td>L</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA17</td>
+      <td>67</td>
+      <td>F</td>
+      <td>L</td>
+      <td>R</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA18</td>
+      <td>30</td>
+      <td>F</td>
+      <td>L</td>
+      <td>R</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA19</td>
+      <td>43</td>
+      <td>M</td>
+      <td>R</td>
+      <td>L</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA20</td>
+      <td>63</td>
+      <td>M</td>
+      <td>R</td>
+      <td>L</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>CA21</td>
+      <td>46</td>
+      <td>F</td>
+      <td>R</td>
+      <td>L</td>
+      <td>2</td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Phantom sensations rating
 
 Amputees were asked to rate the frequency of PLP experience within the last year. They also rated the intensity of their worst PLP experience during the last week (or in a typical week involving PLP; 0=no pain, 100=worst pain imaginable). A chronic measure of PLP was calculated by dividing the worst PLP intensity in the last week by PLP frequency (1=all the time, 2=daily, 3=once a week, 4=several times per month, 5=once or less per month). This approach which takes into account the chronic aspect of PLP has been used successfully before (Makin et al., 2015; Makin et al., 2013b; Kikkert et al., 2018; Draganski et al., 2006; Lyu et al., 2016; Kikkert et al., 2016; Kikkert et al., 2017), and has high inter-session reliability (Kikkert et al., 2018). We also asked amputees about the vividness and frequency of non-painful phantom sensations (see Table 1).
 
-## Functional MRI sensorimotor task
+### Functional MRI sensorimotor task
 
 We used a facial active motor paradigm, where participants were visually instructed to move their forehead, nose, lips or tongue. This paradigm was chosen because it enabled bilateral activation of S1 simultaneously, allowing us to directly compare activity patterns between the two hemispheres (see Appendix 1—figure 2 for validation of the active paradigm and Discussion for other considerations). Participants were also instructed to move their left and right thumb (amputees were asked to flex/extend their phantom thumb to the best of their ability; one-handers were asked to imagine such movement), resulting in 6 conditions. Since the way one-handers performed the missing thumb condition could not be controlled (e.g., visual or motor imagery), this condition was not considered for analysis. Baseline (i.e. rest) was included as a 7th condition. Specific instructions involved: raising eyebrows (forehead), flaring nostrils (nose), puckering lips (lips), tapping tongue to the roof of the mouth (tongue), flexing and extending (thumb). The protocol comprised of 8 s blocks, with each condition repeated 4 times per run (5 times for baseline), over 3 functional runs. Before entering the scanner, participants practised each movement with the experimenter to ensure that the movement could be executed and to standardise each movement across participants (e.g. specificity and pace). Performance during scanning was visually monitored online with the use of an eye-tracker camera and an experimenter dedicated to this task. Note that multiple participants reported during the experimenter briefing that they could not successfully flare their nostrils, and were therefore instructed to attempt moving their nose in the scanner.
 
-## MRI data acquisition
+### MRI data acquisition
 
 Functional and anatomical MRI data were obtained using a 3 Tesla Prisma MRI scanner (Siemens, Erlangen, Germany) with a 32-channel head coil. Anatomical data was acquired using a T1-weighted sequence (MPRAGE), with the following parameters: TR = 2530ms; TE = 3.34ms; flip angle = 7°; voxel size = 1 mm isotropic resolution. Functional data based on the blood oxygenation level dependant (BOLD) signal were acquired using a multiband T2*-weighted pulse sequence, with a between-slice acceleration factor of 4 and no in-slice acceleration (TR = 1450ms; TE = 35ms; flip angle = 70°; voxel size = 2 mm isotropic resolution; imaging matrix = 106 x 106; FOV = 212 mm). 72 slices were oriented in the transversal plane. A total of 172 whole-brain volumes for each of the three runs were collected per participant. Field-maps were acquired for field unwarping.
 
-## MRI pre-processing
+### MRI pre-processing
 
 Functional data was first pre-processed using FSL-FEAT (version 6.00). Pre-processing included motion correction using MCFLIRT (Jenkinson et al., 2002), brain extraction using BET (Smith, 2002), temporal high-pass filtering with a cut-off of 119 s and spatial smoothing using a Gaussian kernel with a FWHM of 3 mm. Field maps were used for distortion correction of functional data.
 
 For each participant, we calculated a midspace between the three functional runs, that is the average space in which the images are minimally reorientated. Each functional run was then aligned to the midspace and registered to structural images (within-subject) using FMRIB’s Linear Image Registration Tool (FLIRT), and optimised using Boundary-Based Registration (Greve and Fischl, 2009). Where specified, functional and structural data were transformed to MNI152 space using FMRIB’s Nonlinear Registration Tool (FNRIT Andersson et al., 2010).
 
-## Functional MRI analysis
+### Functional MRI analysis
 
 Time-series statistical analysis was carried out using FMRIB’s Improved Linear Model (FILM). Task-based statistical parametric maps were computed by applying a voxel-based General Linear Model (GLM), as implemented in FEAT. The design was composed of 6 explanatory variables for each movement, convolved with a double-gamma hemodynamic response function (Friston et al., 1998), and its temporal derivative. The six motion parameters were included as regressors of no interest. Motion outliers (>0.9 mm) of large movements between volumes were included as additional regressors of no interest at the individual level (of total n volumes per group: amputees: 0.36%; controls: 0.36%; one-handers: 0.42%). For our main comparisons 6 contrasts were set up, corresponding to the facial movements’ (forehead, nose, lips, tongue, and left/right thumb) relative to rest.
 
 The estimates from the three functional runs were then averaged voxel-wise using a fixed effects model in participants structural space, with a cluster forming z-threshold of 2.3 and family-wise error corrected cluster significance threshold of p<0.05. Each estimates’ average was masked prior to cluster formation with a sensorimotor mask, defined as the precentral and postcentral gyrus from the Harvard Cortical Atlas. The sensorimotor mask was registered to the individuals structural scan using an inversion of the nonlinear registration by FNIRT. All functional MRI analysis was carried in individual’s native anatomical space.
 
-## Regions of Interest (ROI) definition
+### Regions of Interest (ROI) definition
 
 Facial topography and remapping were studied using anatomical ROIs for the hand and face areas in S1. Although the primary motor cortex (M1) and S1 are expected to activate during facial movement we primarily focused on S1 remapping due to the traditional focus in the maladaptive plasticity literature on S1 representational shifts (Flor et al., 2006). Furthermore, M1 topography tends to be less well-defined (Schieber, 2001; Graziano and Aflalo, 2007), and so characterisation of typical facial topography may be more apparent in S1. Nevertheless, we wish to note that due to the proximity of S1 to M1, it is possible that marginal contribution from M1 may have affected our S1 activity profiles.
 
@@ -162,37 +825,45 @@ Firstly, S1 was defined on the average surface using probabilistic cytoarchitect
 
 Structural T1-weighted images were then used to reconstruct pial and white-grey matter surfaces using Freesurfer (version 7.1.1) at the individual level. The hand and lateral ROIs were then projected into individual brains via the reconstructed individual anatomical surfaces. As the secondary somatosensory cortex (S2) contains a crude somatotopy (Ruben et al., 2001), the lateral ROI was further trimmed in participant’s structural space by removing the overlap with S2. S2 was defined in MNI152 space using the Juelich Histological Atlas (Wiech et al., 2014). The S2 ROI was registered to participants’ structural space using an inversion of the nonlinear registration carried about by FNIRT. The remaining lateral ROI with the overlap from S2 removed was used as the face ROI for all univariate analyses. We note that due to the probabilistic nature of these masks, there could be some marginal contribution from S2 in our estimated face area.
 
-## Winner-takes-all approach
+### Winner-takes-all approach
 
 To characterise S1 facial topography, the hand and face ROIs were combined to produce an overall S1 ROI (minus the medial region), and a winner-takes-all approach was used (Figure 8B). For each participant, thresholded z-statistics averaged across the three functional runs were assigned to one of four face parts (forehead, nose, lips, tongue), dependent on which facial movement relatively showed maximal activity within the S1 ROI. Face-winners (i.e. the output of the winner-takes-all) were then projected to the individual’s anatomical surface. Note that we excluded the thumb, which covered ~66% of the deprived hand ROI surface area in amputees and controls (see Appendix 1—figure 3). This allowed us to align our analysis with previous research, and to draw comparisons of facial somatotopy across all groups (one-handers do not have a phantom limb, and therefore we cannot probe the ‘missing’ hand representation directly). All subsequent analyses at the individual’s anatomical surface level were computed using Connectome Workbench (v1.4.2).
 
-## Cortical distance analysis
+### Cortical distance analysis
 
 To assess possible shifts in facial representations towards the hand area, the centre-of-gravity (CoG) of each face-winner map was calculated in each hemisphere. The CoG was weighted by cluster size meaning that in the event of multiple clusters contributing to the calculation of a single CoG for a face-winner map, the voxels in the larger cluster are overweighted relative to those in the smaller clusters. The geodesic cortical distance between each movement’s CoG and a predefined cortical anchor was computed. The cortical anchor was defined as the midpoint of the lateral border of the hand ROI (see Figure 8B). This anatomical landmark was drawn manually for each participant, the midpoint calculated, and both were visually confirmed by a second experimenter. The geodesic distance was assigned a negative value if the movement’s CoG was located below the hand border (i.e. laterally).
 
-## Surface area calculation
+### Surface area calculation
 
-To assess possible remapping into the hand area, a secondary winner-takes-all analysis was restricted to the hand ROI only. The surface area coverage (mm2) for each face-winner were computed on the individual anatomical inflated surface. We next calculated the proportion of the hand ROI occupied by each face part by dividing each face-winner’s surface area by the total hand ROI surface area for each individual. From the resulting percentages, we produced a laterality index for each movement with the following formula:(1)laterality index= (deprivedm-intactm)(∑deprivedm , intactm)
+To assess possible remapping into the hand area, a secondary winner-takes-all analysis was restricted to the hand ROI only. The surface area coverage (mm2) for each face-winner were computed on the individual anatomical inflated surface. We next calculated the proportion of the hand ROI occupied by each face part by dividing each face-winner’s surface area by the total hand ROI surface area for each individual. From the resulting percentages, we produced a laterality index for each movement with the following formula:
+
+$$
+laterality index= \frac{(deprived_{m}-intact_{m})}{(\sumdeprived_{m }, intact_{m})}
+$$
 
 whereby deprivedm and intactm represent the percentage of surface area coverage for the facial movement m, respectively in the deprived and intact hemisphere. A subsequent laterality index of +1 indicates greater surface area coverage of that movement within the deprived hemisphere (or the hemisphere contralateral to the non-dominant hand in controls), whereas a value of 0 represents an equal balance of surface area coverage across both hemispheres. Note that this approach characterises cortical remapping in relation to the intact hemisphere and has been used in numerous previous studies on amputees (Flor et al., 1995; Birbaumer et al., 1997; Grüsser et al., 2001; Foell et al., 2014). It assumes that the intact hemisphere reflects baseline (i.e., that it is truly ‘intact’), which may not be the case due to inter-hemisphere plasticity and/or homeostatic mechanisms (Muret and Makin, 2021; Valyear et al., 2020; Philip and Frey, 2014) and so also we compared our results to the control group.
 
-## Jaccard analysis of similarity
+### Jaccard analysis of similarity
 
-To quantify the degree of similarity (0=no overlap between maps; 1=full overlap) between winner-takes-all maps across groups, we performed a Jaccard analysis of similarity between amputees’ maps and those of controls and one-handers, respectively. For each face part winner map, the degree of similarity was calculated as follows (illustrated between amputees and controls):(2)Jaccard similarity= |amputeexm ∩ controlym||amputeexm ∪ controlym|
+To quantify the degree of similarity (0=no overlap between maps; 1=full overlap) between winner-takes-all maps across groups, we performed a Jaccard analysis of similarity between amputees’ maps and those of controls and one-handers, respectively. For each face part winner map, the degree of similarity was calculated as follows (illustrated between amputees and controls):
+
+$$
+Jaccard similarity= \frac{|amputee_{xm} ∩ control_{ym}|}{|amputee_{xm} ∪ control_{ym}|}
+$$
 
 whereby amputeexm and controlym represent the winner-takes-all maps of the facial movement m of a given participant amputee x and control y. For each amputee, the similarity across the 22 controls and 21 one-handers respectively was averaged. The same approach was used to compare the other groups. For intra-group similarity, the participant analysed was excluded from the rest of its group to avoid comparing it to itself.
 
-## Group-level visualisations
+### Group-level visualisations
 
 Prior to group-level visualisations, participant information regarding hand dominance (controls) and deprived hemisphere (one-handed participants) were used to sagittal-flip raw pre-processed data, such that the brain activity corresponding to the non-dominant/missing hand is always represented in the left hemisphere (note that a similar proportion of participants were flipped across groups). Group-level statistical parameter maps were then created with a threshold-free cluster enhancement (TFCE) approach using FSL’s Randomise tool (Winkler et al., 2014). TFCE is a nonparametric, permutation-based method for cluster formation, and has been shown to demonstrate improved sensitivity when compared to typical thresholding methods (Smith and Nichols, 2009). Group activity mixed-effect maps were calculated for each fixed-effect (i.e. averaged across the three functional runs) parameter estimate of a face movement (forehead, nose, lips, tongue) contrasted to baseline. Prior to permutation (n=5000), parameter estimates were masked with a sensorimotor mask, defined as the precentral and postcentral gyrus from the Harvard Cortical Atlas. A family-wise error correction of p<0.05 and variance smoothing of 5 mm (as recommended for datasets with less than 20 participants) were used. Resulting clusters were thresholded at p<0.01 and projected to a group cortical surface (Glasser et al., 2016) using Connectome Workbench (v1.4.2), and activity is visualised in Brodmann Areas 1, 2, 3 a, 3b, and 4.
 
 As well as activity maps, we also visualised the winner-takes-all output at the group-level. Here the ‘winners’ for each face movement within the S1 ROI (the hand and face region combined) in MNI152 space were concatenated into a single volume per group to produce a consistency map for the individual movements (i.e. how many participants maximally activated the same voxel when moving a given facial part). Resulting consistency maps were then projected to a group cortical surface (Glasser et al., 2016) using Connectome Workbench (v1.4.2) for visualisation only.
 
-## Multivariate representational analysis
+### Multivariate representational analysis
 
 Representational Similarity Analysis (RSA Nili et al., 2014) was used to assess the multivariate relationship between activity patterns generated by each face part. RSA was conducted in the hand and face ROIs to explore possible remapping across representational features between groups. To ensure the selectivity of the hand and face areas, the ROIs used for univariate analyses were each further trimmed medially by ~1 cm, creating a 1 cm gap between the hand and face ROIs. For each participant, parameter estimates for the four facial movements (forehead, nose, lips and tongue) and the contralateral thumb (for controls and amputees only) were extracted from all voxels within the chosen ROI, as well as residuals from each runs’ first-level analysis (three runs in total). Multidimensional noise normalisation was used to increase reliability of distance estimates (noisier voxels are down-weighted), based on the voxel’s covariance matrix calculated from the GLM residuals. Dissimilarity between resulting facial activity patterns were then measured pairwise using cross-validated Mahalanobis distances (Walther et al., 2016). Due to cross-validation, the expected value of the distance is zero if two patterns are not statistically different from each other. Distances significantly different from zero indicate the two representational patterns are different; negative distances indicate noise. Larger distances for movement pairs therefore suggest greater discriminative ability for the chosen ROI. The resulting six unique inter-facial representational distances (10 unique distances when including the thumb for controls and amputees only) were characterised in a representation dissimilarity matrix (RDM). Multidimensional scaling (MDS) was also used to project the higher-dimensional RDM into lower-dimensional space, whilst preserving inter-facial dissimilarity, for visualisation purposes only. Analysis was conducted on an adapted version of the RSA Toolbox in MATLAB (Nili et al., 2014), customised for FSL (Wesselink and Maimon-Mor, 2018).
 
-## Statistical analyses
+### Statistical analyses
 
 All statistical analyses were carried out using JASP (Version 0.14). Outliers were classified as +/-3 standard deviations to the mean. We chose to not remove outliers in our analyses and checked that the significance and direction of the results did not change if identified outliers were removed (see below for number of outliers). When appropriate, univariate analyses was compared using parametric statistics. To assess normality for parametric tests, Shapiro-Wilk tests were run on residuals in combination with inspection of Q-Q plots and reporting of Levene’s Test for Equality of Variances. Where stated, non-parametric test statistics are reported where the assumption of normality has been violated. Analysis of Variance (ANOVA) was used to explore group differences to controls in cortical distances (n=1 outlier for forehead in controls; n=1 outlier for tongue in controls). Each mixed ANOVA had a between-subject factor of Group (Controls x Amputees; Controls x One-handers) and a repeated-measures factor of Hemisphere (Intact/Dominant x Deprived/Non-dominant), and was run separately for each facial movement (forehead, nose, lips and tongue). We controlled for brain size volume when comparing cortical distances between groups. Post-hoc comparisons were conducted with a Bonferroni correction for multiple comparisons (reported corrected alpha and uncorrected p-values in text). Due to issues relating to integration of the correction for brain size in follow-up analyses, both the effect size (noted as ~d) and Bayes factor (noted as ~BF10) in the post-hoc t-tests were not accounting for brain size. If assumptions of normality were violated, the difference between cortical distances in the intact and deprived hemisphere were calculated, and the group difference between one-handed groups and controls was computed using a Mann-Whitney U test. Resulting statistics are reported alongside the mixed ANOVA output. Independent t-tests were used to calculate laterality indices group differences (no outliers identified across groups). We reported the corresponding Bayes Factor (BF10), defined as the relative support for the alternative hypothesis, for non-significant interactions and post-hoc comparisons. While it is generally agreed that it is difficult to establish a cut-off for what consists sufficient evidence, we used the threshold of BF <1/3 as sufficient evidence in support of the null, consistent with others in the field (Wetzels et al., 2011; Dienes, 2014) (though see Kass and Raftery, 1995). The Cauchy prior width was set at 0.707 (JASP’s default). To investigate whether remapping measures were related to PLP, we used a one-tailed Mann-Whitney U tests to compare laterality indices of amputees with (n=11) and without PLP (n=6) for relevant facial parts, under the hypothesis that PLP should result in greater remapping (see Appendix 1—figure 4 for the analogous analysis for the cortical geodesic distances).
 

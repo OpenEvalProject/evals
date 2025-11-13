@@ -16,7 +16,7 @@
 
 ## Abstract
 
-10.7554/eLife.04180.001 The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of 50 papers in the field of cancer biology published between 2010 and 2012. This Registered Report describes the proposed replication plan of key experiments from ‘Melanoma genome sequencing reveals frequent PREX2 mutations’ by Berger and colleagues, published in Nature in 2012 ( Berger et al., 2012 ). The key experiments that will be replicated are those reported in Figure 3B and Supplementary Figure S6. In these experiments, Berger and colleagues show that somatic PREX2 mutations identified through whole-genome sequencing of human melanoma can contribute to enhanced lethality of tumor xenografts in nude mice (Figure 3B, S6B, and S6C; Berger et al., 2012 ). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange , and the results of the replications will be published by eLife . DOI: http://dx.doi.org/10.7554/eLife.04180.001
+The Reproducibility Project: Cancer Biology seeks to address growing concerns about reproducibility in scientific research by conducting replications of 50 papers in the field of cancer biology published between 2010 and 2012. This Registered Report describes the proposed replication plan of key experiments from ‘Melanoma genome sequencing reveals frequent PREX2 mutations’ by Berger and colleagues, published in Nature in 2012 (Berger et al., 2012). The key experiments that will be replicated are those reported in Figure 3B and Supplementary Figure S6. In these experiments, Berger and colleagues show that somatic PREX2 mutations identified through whole-genome sequencing of human melanoma can contribute to enhanced lethality of tumor xenografts in nude mice (Figure 3B, S6B, and S6C; Berger et al., 2012). The Reproducibility Project: Cancer Biology is a collaboration between the Center for Open Science and Science Exchange, and the results of the replications will be published by eLife.
 
 ## Introduction
 
@@ -32,116 +32,728 @@ There is some debate over which mutations observed in various melanoma samples a
 
 Unless otherwise noted, all protocol information was derived from the original paper, references from the original paper, or information obtained directly from the authors.
 
-## Protocol 1: generation of NRASG12D melanocyte cells expressing various mutated forms of PREX2
+### Protocol 1: generation of NRASG12D melanocyte cells expressing various mutated forms of PREX2
 
 This protocol describes the generation of pMEL/hTERT/CDK4(R24C)/p53DD/NRASG12D (NRASG12D) melanocytes that stably express various mutated forms of PREX2. This protocol details the production of lentivirus for each mutated PREX2 isoform, as well as the viral transduction of melanocytes, and selection for stable-expressing lines using antibiotic resistance.
 
-## Sampling
+#### Sampling
 
 Outline of experimental endpoints:At the end of this protocol, we will have generated NRASG12D melanocytes overexpressing the following protein products:GFP vector (control)WT PREX2 (control)PREX2 Q1430* (Truncation mutation)PREX2 G844D (Substitution mutation)
 
-## Materials and reagents
+#### Materials and reagents
 
-ReagentTypeManufacturerCatalog #CommentsGenElute Endotoxin-freePlasmid Maxiprep KitReagentSigmaPLEX15-1KTThis kit replaces the Qiagen Endo-free Maxiprep kit used by the original authorspMD2-Gag/PolViral packaging vectorN/AN/AReagent being provided by original authorspMD2 VSVGViral packaging vectorN/AN/AReagent being provided by original authorsRSV REVViral packaging vectorN/AN/AReagent being provided by original authorsGFPExpression constructN/AN/AReagent being provided by original authorsWild-type PREX2Expression constructN/AN/AReagent being provided by original authorsPREX2 Q1430*Expression constructN/AN/AReagent being provided by original authorsPREX2 G844DExpression constructN/AN/AReagent being provided by original authorsHEK293T cellsCell lineATCCCRL-3216Replaces original cells from Life TechnologiesNRASG12D melanocytesCell lineN/AN/AReagent being provided by original authorsSequencing primersOligosSequences provided by original authors; specific brand information will be left up to the discretion of the replicating lab and recorded laterSequencing reagentsReagentSpecific brand information will be left up to the discretion of the replicating lab and recorded later10 cm tissue culture dishes (plastic)LabwareCorning (Sigma-Aldrich)CLS430167Original brand not specified10 cm tissue culture dishes (glass)LabwareCorning (Sigma-Aldrich)CLS70165101Additional reagent not used in original studyFetal bovine serum (FBS)Cell culture reagentSigma-AldrichF0392Replaces Invitrogen cat. no. 26400-036 used in original studyDulbecco's Modified Eagle's Medium (DMEM) – high glucoseCell culture reagentSigma-AldrichD6429Replaces Invitrogen cat. no. 11995-065 used in original studyLipofectamine 2000Transfection reagentLife Technologies52887OptiMEM-1 reduced serum mediumCell culture reagentLife Technologies31985-070Ham's F10 mediumCell culture reagentSigma-AldrichN6908Replaces Invitrogen cat. no. 11550-043 used in original studyFetal bovine serum (FBS); heat inactivatedCell culture reagentSigma-AldrichF4135Replaces Invitrogen cat. no. 10082-147 used in original studyPenicillin–Streptomycin solution (100x) stabilizedCell culture reagentSigma-AldrichP4333Replaces Invitrogen cat. no. 15140-122 used in original study6 cm tissue culture dishesLabwareCorning (Sigma-Aldrich)CLS430166Original brand not specifiedHexadimethrine bromide (Polybrene)Cell culture reagentSigma-Aldrich107689Original brand not specifiedBlasticidin S, hydrochlorideAntibioticEMD-Millipore203350Original brand not specifiedTRI reagentReagentSigma-AldrichT9424Additional reagent not used in original studySuperScript III First-Strand Synthesis SystemcDNA synthesisLife Technologies18080-051Additional reagent not used in original studyNuclease-Free Water (not DEPC treated)ReagentLife TechnologiesAM9930Additional reagent not used in original studyRNase AWAY (spray)ReagentFisher21-402-178Additional reagent not used in original study
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Type</th>
+      <th>Manufacturer</th>
+      <th>Catalog #</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>GenElute Endotoxin-freePlasmid Maxiprep Kit</td>
+      <td>Reagent</td>
+      <td>Sigma</td>
+      <td>PLEX15-1KT</td>
+      <td>This kit replaces the Qiagen Endo-free Maxiprep kit used by the original authors</td>
+    </tr>
+    <tr>
+      <td>pMD2-Gag/Pol</td>
+      <td>Viral packaging vector</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Reagent being provided by original authors</td>
+    </tr>
+    <tr>
+      <td>pMD2 VSVG</td>
+      <td>Viral packaging vector</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Reagent being provided by original authors</td>
+    </tr>
+    <tr>
+      <td>RSV REV</td>
+      <td>Viral packaging vector</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Reagent being provided by original authors</td>
+    </tr>
+    <tr>
+      <td>GFP</td>
+      <td>Expression construct</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Reagent being provided by original authors</td>
+    </tr>
+    <tr>
+      <td>Wild-type PREX2</td>
+      <td>Expression construct</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Reagent being provided by original authors</td>
+    </tr>
+    <tr>
+      <td>PREX2 Q1430*</td>
+      <td>Expression construct</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Reagent being provided by original authors</td>
+    </tr>
+    <tr>
+      <td>PREX2 G844D</td>
+      <td>Expression construct</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Reagent being provided by original authors</td>
+    </tr>
+    <tr>
+      <td>HEK293T cells</td>
+      <td>Cell line</td>
+      <td>ATCC</td>
+      <td>CRL-3216</td>
+      <td>Replaces original cells from Life Technologies</td>
+    </tr>
+    <tr>
+      <td>NRASG12D melanocytes</td>
+      <td>Cell line</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>Reagent being provided by original authors</td>
+    </tr>
+    <tr>
+      <td>Sequencing primers</td>
+      <td>Oligos</td>
+      <td colspan="3">Sequences provided by original authors; specific brand information will be left up to the discretion of the replicating lab and recorded later</td>
+    </tr>
+    <tr>
+      <td>Sequencing reagents</td>
+      <td>Reagent</td>
+      <td colspan="3">Specific brand information will be left up to the discretion of the replicating lab and recorded later</td>
+    </tr>
+    <tr>
+      <td>10 cm tissue culture dishes (plastic)</td>
+      <td>Labware</td>
+      <td>Corning (Sigma-Aldrich)</td>
+      <td>CLS430167</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>10 cm tissue culture dishes (glass)</td>
+      <td>Labware</td>
+      <td>Corning (Sigma-Aldrich)</td>
+      <td>CLS70165101</td>
+      <td>Additional reagent not used in original study</td>
+    </tr>
+    <tr>
+      <td>Fetal bovine serum (FBS)</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>F0392</td>
+      <td>Replaces Invitrogen cat. no. 26400-036 used in original study</td>
+    </tr>
+    <tr>
+      <td>Dulbecco's Modified Eagle's Medium (DMEM) – high glucose</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>D6429</td>
+      <td>Replaces Invitrogen cat. no. 11995-065 used in original study</td>
+    </tr>
+    <tr>
+      <td>Lipofectamine 2000</td>
+      <td>Transfection reagent</td>
+      <td>Life Technologies</td>
+      <td>52887</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>OptiMEM-1 reduced serum medium</td>
+      <td>Cell culture reagent</td>
+      <td>Life Technologies</td>
+      <td>31985-070</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ham's F10 medium</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>N6908</td>
+      <td>Replaces Invitrogen cat. no. 11550-043 used in original study</td>
+    </tr>
+    <tr>
+      <td>Fetal bovine serum (FBS); heat inactivated</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>F4135</td>
+      <td>Replaces Invitrogen cat. no. 10082-147 used in original study</td>
+    </tr>
+    <tr>
+      <td>Penicillin–Streptomycin solution (100x) stabilized</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>P4333</td>
+      <td>Replaces Invitrogen cat. no. 15140-122 used in original study</td>
+    </tr>
+    <tr>
+      <td>6 cm tissue culture dishes</td>
+      <td>Labware</td>
+      <td>Corning (Sigma-Aldrich)</td>
+      <td>CLS430166</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Hexadimethrine bromide (Polybrene)</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>107689</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Blasticidin S, hydrochloride</td>
+      <td>Antibiotic</td>
+      <td>EMD-Millipore</td>
+      <td>203350</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>TRI reagent</td>
+      <td>Reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>T9424</td>
+      <td>Additional reagent not used in original study</td>
+    </tr>
+    <tr>
+      <td>SuperScript III First-Strand Synthesis System</td>
+      <td>cDNA synthesis</td>
+      <td>Life Technologies</td>
+      <td>18080-051</td>
+      <td>Additional reagent not used in original study</td>
+    </tr>
+    <tr>
+      <td>Nuclease-Free Water (not DEPC treated)</td>
+      <td>Reagent</td>
+      <td>Life Technologies</td>
+      <td>AM9930</td>
+      <td>Additional reagent not used in original study</td>
+    </tr>
+    <tr>
+      <td>RNase AWAY (spray)</td>
+      <td>Reagent</td>
+      <td>Fisher</td>
+      <td>21-402-178</td>
+      <td>Additional reagent not used in original study</td>
+    </tr>
+  </tbody>
+</table>
 
-## Procedure
+#### Procedure
 
 Note: all cell lines will be sent for STR profiling and mycoplasma testing.Grow and prepare endotoxin-free plasmid constructs according to the manufacturer's protocol for the GenElute Endotoxin-free Plasmid Maxiprep Kit.A. Viral packaging vectors:i. pMD2-Gag/Pol (∼25 µg DNA needed for production of 4 viruses)ii. pMD2 VSVG (∼15 µg DNA needed for production of 4 viruses)iii. RSV REV (∼17 µg DNA needed for production of 4 viruses)B. PREX2 expression vectors:i. GFP vector (∼15 µg DNA needed for virus production)ii. WT PREX2 (∼15 µg DNA needed for virus production)iii. PREX2 Q1430* (∼15 µg DNA needed for virus production)iv. PREX2 G844D (∼15 µg DNA needed for virus production)Sequence PREX2 plasmids to confirm identity and run on gel to confirm vector integrity. Use the following sequencing primers:A. CMV forward: CGCAAATGGGCGGTAGGCGTGB. prex2a-1 forward: ACTGAAATGCTAATGTGTGGC. prex2a-2 forward: CCTTTTTACTCCAGTGATAAGAGATD. prex2a-3 forward: AGTACAGGCGGCCAACGAAGE. prex2a-4 forward: ATCACAACCATGGCGGCCCCTTF. prex2a-5 forward: GTAGGCTACTCCTGGCTCTTG. prex2a-6 forward: AGCTGCCTGTGCAAACACAGH. prex2a-7 reverse: GACTTCCTTCTGCTTGATATI. prex2a-8 reverse: TGCTGGTGAAGGAGGCGATGJ. prex2a-9 reverse: AGAGAATTTAGGCTGGTACAK. prex2a-10 reverse: ATCCCTTTTCTACCAACTTTL. prex2a-11 reverse: CTTGCTCCATTCCTAATTTTM. prex2a-12 reverse: CCTTCTCATGGTTACTACAATATTCN. V5 reverse: ACCGAGGAGAGGGTTAGGGATUsing the same primers as above, sequence the endogenous PREX2 gene from cDNA derived from untransfected pMEL/hTERT/CDK4(R24C)/p53DD/NRASG12D melanocytes.A. Melanocytes should be maintained in Ham's F10 medium supplemented with 10% heat inactivated FBS and 1% penicillin/streptomycin at 37°C with 5% CO2.B. Isolate total RNA using TRI reagent, and generate cDNA as described in the manufacturer's protocol for SuperScript III cDNA synthesis kit, using OligoDT primers to enrich for mRNA.C. Use gene-specific primers to sequence the length of the PREX2 gene to determine endogenous mutational status.On Day 1 of viral production, plate 6 × 106 HEK293T cells in a 10 cm plate. Plate one 10-cm plate for each virus you wish to package (total of 4 plates needed).A. HEK293T cells should be maintained in DMEM supplemented with 10% FBS at 37°C with 5% CO2.B. Note: high titer lentivirus is best packaged in early passage, healthy 293T cells. Avoid continuous growth to/from confluence. Routinely split 293T when culture approaches 80% confluence.On Day 2, create the transfection master mix: (Tube #1)A. Create a master mix (for the number of transfections being conducted) of Lipofectamine and OptiMEM.i. Each transfection will require 30 µl of Lipofectamine diluted in 720 µl of OptiMEM. Allow mixture to incubate for 5 min at RT.For each virus, assemble DNA, packaging vectors, and OptiMEM in a 1.5 ml centrifuge tube (Tube #2)A. Plasmid DNA = 10.0 µgB. Packaging vectori. pMD2 Gag/Pol = 5.0 µgii. pRESREV = 2.5 µgiii. pMD2 VSVG = 3.0 µgC. Bring volume to 750 µl with OptiMEM.Combine Tube #1 (Lipofectamine/OptiMEM) with Tube #2 (DNA/packaging vector/OptiMEM). After combining, mix by pipetting and allow the mixture to incubate for 20 min at RT.A. While incubating, ‘gently’ aspirate growth medium from HEK293T cells and pipette 8 ml of OptiMEM to each plate.B. Add 1.5 ml of transfection mixture to the plate (pipetting directly into the media) and place into the 37°C incubator.C. Allow minimum 6–8 hr for transfection. After transfection completion, remove OptiMEM media and refresh HEK293T plates with 10 ml of growth media (again pipetting gently onto the side of the plate).On Day 4 (48 hr post-transfection) and 5 (72 hr post-transfection), collect virus by removing medium and filtering through a 0.45-µm filter into a 50 ml conical tube. Pool fractions from both the days. After the two collections, there is a total of 20 ml of virus. Immediately after collection/filtration (for both time points), put the virus on ice and then transfer to 4°C for short-term or −80°C for long-term storage.Infect pMEL/hTERT/CDK4(R24C)/p53DD/NRASG12D melanocytes with virus to generate stable cells lines.A. Day 1: seed NRASG12D cells at 50% confluence in 6 cm plates.i. Melanocytes should be maintained in Ham's F10 medium supplemented with 10% heat inactivated FBS and 1% penicillin/streptomycin at 37°C with 5% CO2.B. Day 2: remove media and replace with 3 ml of viral supernatant containing 8 µg/ml polybrene.i. Incubate cells for 24 hr.C. Day 3: remove viral media and replace with fresh growth media.D. Day 4: replace growth media with fresh media containing 5 µg/ml Blastocidin.E. Days 4–9: select cells for ∼5 days, confirming that a plate of non-transduced NRASG12D cells is negatively selected in parallel.F. Day 9: remove Blastocidin media and expand cells into fresh growth media. Collect entire population of transduced cells for further analysis.
 
-## Deliverables
+#### Deliverables
 
 Data to be collected:Sequencing information and gel-verification of PREX2 plasmids cloned into the pLenti6.3/V5 vectorMycoplasma testing of NRASG12D melanocytesSTR profile of NRASG12D melanocytesSample delivered for further analysis:NRASG12D melanocytes stably expressing PREX2 mutant isoforms for further analysis (Protocols 2 and 3).
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
 Statistical analysis of the Replication Data:Not applicable.
 
-## Known differences from the original study
+#### Known differences from the original study
 
 This replication is only generating stable melanocyte lines for GFP, wild-type PREX2, PREX2 Q1430*, and PREX2 G844D. The original study also included several other PREX2 mutants, including PREX2 K278*, E824*, P948S, and G106E. This replication will include the additional step of sequencing the endogenous PREX2 gene in the NRASG12D melanocyte cell line to determine its mutational status. All known differences in reagents and supplies are listed in the materials and reagents section above, with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The cell line used in this experiment will undergo STR profiling to confirm its identity and will be sent for mycoplasma testing to ensure there is no contamination. PREX2 expression constructs obtained from the original authors will be verified for sequence identity and DNA integrity. The endogenous mutational status of PREX2 in NRASG12D melanocytes will be assessed. All data obtained from the experiment will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/jvpnw/).
 
-## Protocol 2: confirming ectopic expression of PREX2 mutant isoforms by Western blot
+### Protocol 2: confirming ectopic expression of PREX2 mutant isoforms by Western blot
 
 This protocol investigates the expression levels of mutant PREX2 isoforms in virally transduced NRASG12D melanocytes that were generated in Protocol 1. This protocol uses an anti-V5 antibody to recognize tagged forms of wild-type and mutant PREX2 (as well as the GFP control), thus verifying the successful lentiviral transduction of expression constructs and providing information about ectopic protein expression levels (as was demonstrated in Figure 6A). Membranes will also be probed with anti-α-tubulin to provide normalized values of relative protein expression. Three original cell lines produced by the original authors will also be included so that protein expression levels can be compared between the two studies.
 
-## Sampling
+#### Sampling
 
 The original data presented is qualitative and this prevents power calculations being performed a priori to determine sample size (number of biological replicates). Instead, we will be including three cell lines originally derived by the authors and analyzing these cell lines in parallel to the newly derived cell lines from Protocol 1.Three separate lysates will be prepared from each cell line:GFP vector stable NRASG12D cells (control)Previously generated PREX2 Q1430* stable NRASG12D cells (control from original study authors)Previously generated PREX2 G844D stable NRASG12D cells (control from original study authors)Previously generated WT PREX2 stable NRASG12D cells (control from original study authors)PREX2 WT stable NRASG12D cells (from Protocol 1)PREX2 Q1430* stable NRASG12D cells (from Protocol 1)PREX2 G844D stable NRASG12D cells (from Protocol 1)Blots will be probed with the following antibodies:1. Anti-V5 tag2. Anti-PREX23. Anti-alpha tubulin
 
-## Materials and reagents
+#### Materials and reagents
 
-ReagentTypeManufacturerCatalog #CommentsNRASG12D melanocytes expressing GFPCell lineProduced in Protocol 1NRASG12D melanocytes expressing WT PREX2Cell lineProduced in Protocol 1NRASG12D melanocytes expressing PREX2 Q1430*Cell lineProduced in Protocol 1NRASG12D melanocytes expressing G844DCell lineProduced in Protocol 1NRASG12D melanocytes expressing WT PREX2Cell lineObtained from original authorsNRASG12D melanocytes expressing PREX2 Q1430*Cell lineObtained from original authorsNRASG12D melanocytes expressing G844DCell lineObtained from original authorsHam’s F10 mediumCell culture reagentSigma-AldrichN6908Replaces Invitrogen cat. no. 11550-043 used in original studyFetal bovine serum (FBS); heat inactivatedCell culture reagentSigma-AldrichF4135Replaces Invitrogen cat. no. 10082-147 used in original studyPenicillin–streptomycin solution (100x) stabilizedCell culture reagentSigma-AldrichP4333Replaces Invitrogen cat. no. 15140-122 used in original studyIGEPAL CA-630(NP-40 substitute)ReagentSigma-AldrichI8896Replaces US Biological cat. no. N3500 used in original studyPhenylmethanesulfonyl fluoride (PMSF)ReagentSigma-Aldrich78,830Replaces Pierce cat. no. 36978 used in original studyProtease inhibitor cocktail (mammalian)ReagentSigma-AldrichP8340Replaces Roche cat. no. 11836153001 used in original studyPhosphatase inhibitor cocktail 2ReagentSigma-AldrichP5726Replaces Roche cat. no. 04906837001 used in original studyCoomassie (Bradford) Protein Assay KitReagentThermo-Fisher (Pierce)PI-23200Original brand not specifiedBCA Protein Assay KitReagentThermo-Fisher (Pierce)23227Original brand not specified10-cm tissue culture dishesLabwareCorning (Sigma-Aldrich)CLS430167Original brand not specifiedNovex 4-12% Tris-Glycine, Mini, 1.0 mm, 12-wellReagentLife TechnologiesEC60352Novex Tris-Glycine SDS Running Buffer (10X)ReagentLife TechnologiesLC2675Original brand not specifiedNovex Tris-Glycine SDS Sample Buffer (2X)ReagentLife TechnologiesLC2676Original brand not specifiedNuPAGE® Sample Reducing Agent (10X)ReagentLife TechnologiesNP0009Original brand not specifiedECL DualVue Western Markers (15 to 150 kDa)ReagentSigma-AldrichGERPN810Original brand not specifiedBLUEeye prestained protein ladderReagentSigma-Aldrich94964Original brand not specifiedNitrocellulose membraneReagentBioRad162-0113Original brand not specifiedPonceau S solutionReagentSigma-AldrichP7170Original brand not specifiedMouse anti-V5 tagAntibodyInvitrogen451098Mouse anti-α-tubulin, clone DM1AAntibodySigma-AldrichT9026Mouse anti-PREX2AntibodyAbcamAb169027Additional reagent not used in original studyHorse anti-mouse IgG, HRP-linked antibodyAntibodyCell Signaling Technologies (CST)7076Tris Buffered Saline (TBS)ReagentSigma-AldrichT5912Replaces Fisher cat. no. BP2471-1 used in original studyTween 20ReagentSigma-AldrichP1379Original brand not specifiedECL Prime Western Blotting Detection ReagentReagentSigma-Aldrich (GE Healthcare)GERPN2236Replaces Pierce cat. no. 34075 used in original study
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Type</th>
+      <th>Manufacturer</th>
+      <th>Catalog #</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NRASG12D melanocytes expressing GFP</td>
+      <td>Cell line</td>
+      <td colspan="3">Produced in Protocol 1</td>
+    </tr>
+    <tr>
+      <td>NRASG12D melanocytes expressing WT PREX2</td>
+      <td>Cell line</td>
+      <td colspan="3">Produced in Protocol 1</td>
+    </tr>
+    <tr>
+      <td>NRASG12D melanocytes expressing PREX2 Q1430*</td>
+      <td>Cell line</td>
+      <td colspan="3">Produced in Protocol 1</td>
+    </tr>
+    <tr>
+      <td>NRASG12D melanocytes expressing G844D</td>
+      <td>Cell line</td>
+      <td colspan="3">Produced in Protocol 1</td>
+    </tr>
+    <tr>
+      <td>NRASG12D melanocytes expressing WT PREX2</td>
+      <td>Cell line</td>
+      <td colspan="3">Obtained from original authors</td>
+    </tr>
+    <tr>
+      <td>NRASG12D melanocytes expressing PREX2 Q1430*</td>
+      <td>Cell line</td>
+      <td colspan="3">Obtained from original authors</td>
+    </tr>
+    <tr>
+      <td>NRASG12D melanocytes expressing G844D</td>
+      <td>Cell line</td>
+      <td colspan="3">Obtained from original authors</td>
+    </tr>
+    <tr>
+      <td>Ham’s F10 medium</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>N6908</td>
+      <td>Replaces Invitrogen cat. no. 11550-043 used in original study</td>
+    </tr>
+    <tr>
+      <td>Fetal bovine serum (FBS); heat inactivated</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>F4135</td>
+      <td>Replaces Invitrogen cat. no. 10082-147 used in original study</td>
+    </tr>
+    <tr>
+      <td>Penicillin–streptomycin solution (100x) stabilized</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>P4333</td>
+      <td>Replaces Invitrogen cat. no. 15140-122 used in original study</td>
+    </tr>
+    <tr>
+      <td>IGEPAL CA-630(NP-40 substitute)</td>
+      <td>Reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>I8896</td>
+      <td>Replaces US Biological cat. no. N3500 used in original study</td>
+    </tr>
+    <tr>
+      <td>Phenylmethanesulfonyl fluoride (PMSF)</td>
+      <td>Reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>78,830</td>
+      <td>Replaces Pierce cat. no. 36978 used in original study</td>
+    </tr>
+    <tr>
+      <td>Protease inhibitor cocktail (mammalian)</td>
+      <td>Reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>P8340</td>
+      <td>Replaces Roche cat. no. 11836153001 used in original study</td>
+    </tr>
+    <tr>
+      <td>Phosphatase inhibitor cocktail 2</td>
+      <td>Reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>P5726</td>
+      <td>Replaces Roche cat. no. 04906837001 used in original study</td>
+    </tr>
+    <tr>
+      <td>Coomassie (Bradford) Protein Assay Kit</td>
+      <td>Reagent</td>
+      <td>Thermo-Fisher (Pierce)</td>
+      <td>PI-23200</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>BCA Protein Assay Kit</td>
+      <td>Reagent</td>
+      <td>Thermo-Fisher (Pierce)</td>
+      <td>23227</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>10-cm tissue culture dishes</td>
+      <td>Labware</td>
+      <td>Corning (Sigma-Aldrich)</td>
+      <td>CLS430167</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Novex 4-12% Tris-Glycine, Mini, 1.0 mm, 12-well</td>
+      <td>Reagent</td>
+      <td>Life Technologies</td>
+      <td>EC60352</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Novex Tris-Glycine SDS Running Buffer (10X)</td>
+      <td>Reagent</td>
+      <td>Life Technologies</td>
+      <td>LC2675</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Novex Tris-Glycine SDS Sample Buffer (2X)</td>
+      <td>Reagent</td>
+      <td>Life Technologies</td>
+      <td>LC2676</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>NuPAGE® Sample Reducing Agent (10X)</td>
+      <td>Reagent</td>
+      <td>Life Technologies</td>
+      <td>NP0009</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>ECL DualVue Western Markers (15 to 150 kDa)</td>
+      <td>Reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>GERPN810</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>BLUEeye prestained protein ladder</td>
+      <td>Reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>94964</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Nitrocellulose membrane</td>
+      <td>Reagent</td>
+      <td>BioRad</td>
+      <td>162-0113</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Ponceau S solution</td>
+      <td>Reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>P7170</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Mouse anti-V5 tag</td>
+      <td>Antibody</td>
+      <td>Invitrogen</td>
+      <td>451098</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mouse anti-α-tubulin, clone DM1A</td>
+      <td>Antibody</td>
+      <td>Sigma-Aldrich</td>
+      <td>T9026</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Mouse anti-PREX2</td>
+      <td>Antibody</td>
+      <td>Abcam</td>
+      <td>Ab169027</td>
+      <td>Additional reagent not used in original study</td>
+    </tr>
+    <tr>
+      <td>Horse anti-mouse IgG, HRP-linked antibody</td>
+      <td>Antibody</td>
+      <td>Cell Signaling Technologies (CST)</td>
+      <td>7076</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tris Buffered Saline (TBS)</td>
+      <td>Reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>T5912</td>
+      <td>Replaces Fisher cat. no. BP2471-1 used in original study</td>
+    </tr>
+    <tr>
+      <td>Tween 20</td>
+      <td>Reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>P1379</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>ECL Prime Western Blotting Detection Reagent</td>
+      <td>Reagent</td>
+      <td>Sigma-Aldrich (GE Healthcare)</td>
+      <td>GERPN2236</td>
+      <td>Replaces Pierce cat. no. 34075 used in original study</td>
+    </tr>
+  </tbody>
+</table>
 
-## Procedure
+#### Procedure
 
 Maintain NRASG12D melanocyte lines in Ham's F10 medium with 10% heat inactivated FBS and 1% penicillin/streptomycin at 37°C with 5% CO2.Subculture the four cell lines onto three 10-cm plates each, for a total of 12 plates. These plates constitute replicates for each cell line for eventual quantitation of protein expression. Allow cells to grow to log phase.Place 10 cm plates of log-phase growing cells on ice. Use a cell-scraper to scrape cells (on ice) into a microcentrifuge tube. Add 250 µl of lysis buffer per 10 cm plate.A. Lysis buffer = 20 mM Tris–HCl, pH 8.0, 150 mM NaCl, 2 mM EDTA, 1% NP40, 1 mM PMSF, 1× protease inhibitor cocktail, and 1× phosphatase inhibitor.B. Prepare three separate lysates for each cell line (one lysate scraped from each plate).Incubate cells in lysis buffer for 20 min at RT. Centrifuge lysate for 15 min at 14,000 rpm at 4°C. Transfer supernatant to a fresh tube, then add 2× sample loading buffer containing reducing agent.Load lysate onto a pre-cast polyacrylamide 4–12% Tris–glycine gel with molecular weight ladder.A. Quantify lysate total protein concentration.B. Load 30–50 µg of total protein per well.Perform electrophoresis in standard Tris–glycine–SDS running buffer.Transfer the gel onto a nitrocellulose membrane.A. Transfer buffer = 25 mM Tris–HCl, 192 mM glycine, 20% methanol.B. Use standard wet-transfer for 1–2 hr; PREX2 is a relatively large protein (runs about 160 kDa).C. Following protein transfer, stain the membrane with Ponceau-S in order to detect protein levels. Scan image of stained membrane before washing.Block membrane in 5% milk in 1× TBS with 0.1% Tween-20 (TBS-T) overnight at 4°C on an orbital shaker.Incubate membranes with primary antibody overnight at 4°C on an orbital shaker. Dilute primary antibodies in 5% bovine serum albumin in TBS-T containing 0.05% sodium azide.A. Mouse anti-V5; dilute at 1:5000.B. Mouse anti-PREX2; use at 1 µg/ml, according to the manufacturer's instructions.Wash membranes six times for 10 min each with TBS-T at room temperature (RT).Incubate membranes with secondary antibody for 40 min at RT on an orbital shaker. Dilute secondary antibody in 5% milk in TBS-T.A. Horse anti-mouse IgG; dilute at 1:2000Wash membranes six times for 10 min each with TBS-T at RT.Detect chemiluminescent signal with ECL Prime Western blotting detection reagent, according to the manufacturer's instructions.Strip blots for 15 min in 0.2 M NaOH, then wash membranes six times for 10 min each with TBS-T at RT.Block membranes in 5% milk in TBS-T for 1 hr at RT on an orbital shaker.Repeat steps 9–13 for anti-α-tubulin primary antibody. Dilute primary antibody at 1:5000. Use same secondary antibody (at same dilution) as above.Quantify density of bands and normalize against α-tubulin.
 
-## Deliverables
+#### Deliverables
 
 Data to be collected:Images of probed membranes (full images with ladder)Scanned images of Ponceau-stained membranes, post-transferDensitometric analyses of normalized bands, presented in a bar graph showing standard deviation across replicates for each cell line
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
 Statistical analysis of the Replication Data:Means and standard deviations will be computed across replicates for each cell line.We will perform a 2-way ANOVA (2 × 3 factorial analysis), comparing expression levels of the three PREX2 variants and the two cell-line cohorts (the originally-derived cell lines and the newly-derived cell lines from Protocol 1). This analysis will test two parameters: a) whether the original and replication values are different and b) if the three PREX2 variants are different. Because our hypothesis is that they are all the same, no individual follow-up tests are needed.
 
-## Known differences from the original study
+#### Known differences from the original study
 
 This replication is only analyzing protein expression from cell lines engineered to express GFP, wild-type PREX2, PREX2 Q1430*, and PREX2 G844D. The original study also included several other PREX2 mutants, including PREX2 K278*, E824*, P948S, and G106E. This replication includes an antibody probing for PREX2, so that we can better determine its endogenous expression level. Additionally, we are also testing protein expression in the original PREX2 cells lines derived by the original authors, so that we can compare expression levels between the original lines and the replication lines. All known differences in reagents and supplies are listed in the materials and reagents section above, with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The endogenous expression of PREX2 will be assessed in cell lines not overexpressing PREX2 variants. An image of Ponceau-stained membranes (post-transfer) will be included to verify successful protein transfer. All of the raw data, including the image files and quantified bands from the Western blot, will be uploaded to the project page on the OSF (https://osf.io/jvpnw/) and made publically available. This experiment is also the quality control for the other replication protocols as it assesses the levels of ectopic PREX2 variant expression in the utilized cell lines.
 
-## Protocol 3: generation of tumor xenografts expressing mutated forms of PREX2
+### Protocol 3: generation of tumor xenografts expressing mutated forms of PREX2
 
 This protocol assesses the propensity of ectopically expressed PREX2 mutations to accelerate tumor formation of immortalized human melanocytes in vivo. This protocol utilizes stably transfected NRASG12D human melanocyte lines that were previously generated and analyzed in Protocols 1 and 2. The melanocytic lines are transplanted into immunodeficient mice alongside control melanocytes expressing wild-type PREX2 or GFP (green fluorescent protein). Tumor growth is assessed for 16 weeks, and tumor-free survival is monitored, as depicted in Figure 3B, S6B. Further, confirmatory staining and analysis of tumor tissue will be completed, as depicted in Figure 6C.
 
-## Sampling
+#### Sampling
 
 These experiments will utilize 7, 8, or 14 mice per treatment group, for a total power of ≥80%.See Power calculations section for detailsOutline of experimental conditions:NCR-NUDE female mice injected subcutaneously with:GFP-vector stable NRASG12D melanocytes (control)○ n = 14PREX2 WT stable NRASG12D melanocytes (control)○ n = 7PREX2 Q1430* NRASG12D melanocytes○ n = 8PREX2 G844D NRASG12D melanocytes○ n = 14
 
-## Materials and reagents
+#### Materials and reagents
 
-ReagentTypeManufacturerCatalog #CommentsNRASG12D melanocytes expressing GFPCell lineProduced in Protocol 1NRASG12D melanocytes expressing WT PREX2Cell lineProduced in Protocol 1NRASG12D melanocytes expressing PREX2 Q1430*Cell lineProduced in Protocol 1NRASG12D melanocytes expressing G844DCell lineProduced in Protocol 1Ham’s F10 mediumCell culture reagentSigma-AldrichN6908Replaces Invitrogen cat. no. 11550-043 used in original studyHanks’ balanced salt solution, with sodium bicarbonate, without phenol red, calcium chloride, and magnesium sulfateCell culture reagentSigma-AldrichH6648Original brand not specifiedMatrigel Matrix High Concentration (HC), phenol red-freeCell culture reagentCorning354262Original catalog number not specifiedFetal bovine serum (FBS); heat inactivatedCell culture reagentSigma-AldrichF4135Replaces Invitrogen cat. no. 10082-147 used in original studyPenicillin–streptomycin solution (100x) stabilizedCell culture reagentSigma-AldrichP4333Replaces Invitrogen cat. no. 15140-122 used in original study1 mL syringe; 26 G x 5/8 needle (single-use)LabwareBD Biosciences309597Original brand not specifiedNCR-NUDE mice(homozygous; NCRNU-F)Mouse lineTaconicNCRNU-FCarazzi’s HaematoxylinIHC StainSpecific brand information will be left up to the discretion of the replicating lab and recorded laterEosinIHC StainPermountMounting medium
+<table>
+  <thead>
+    <tr>
+      <th>Reagent</th>
+      <th>Type</th>
+      <th>Manufacturer</th>
+      <th>Catalog #</th>
+      <th>Comments</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>NRASG12D melanocytes expressing GFP</td>
+      <td>Cell line</td>
+      <td colspan="3">Produced in Protocol 1</td>
+    </tr>
+    <tr>
+      <td>NRASG12D melanocytes expressing WT PREX2</td>
+      <td>Cell line</td>
+      <td colspan="3">Produced in Protocol 1</td>
+    </tr>
+    <tr>
+      <td>NRASG12D melanocytes expressing PREX2 Q1430*</td>
+      <td>Cell line</td>
+      <td colspan="3">Produced in Protocol 1</td>
+    </tr>
+    <tr>
+      <td>NRASG12D melanocytes expressing G844D</td>
+      <td>Cell line</td>
+      <td colspan="3">Produced in Protocol 1</td>
+    </tr>
+    <tr>
+      <td>Ham’s F10 medium</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>N6908</td>
+      <td>Replaces Invitrogen cat. no. 11550-043 used in original study</td>
+    </tr>
+    <tr>
+      <td>Hanks’ balanced salt solution, with sodium bicarbonate, without phenol red, calcium chloride, and magnesium sulfate</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>H6648</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>Matrigel Matrix High Concentration (HC), phenol red-free</td>
+      <td>Cell culture reagent</td>
+      <td>Corning</td>
+      <td>354262</td>
+      <td>Original catalog number not specified</td>
+    </tr>
+    <tr>
+      <td>Fetal bovine serum (FBS); heat inactivated</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>F4135</td>
+      <td>Replaces Invitrogen cat. no. 10082-147 used in original study</td>
+    </tr>
+    <tr>
+      <td>Penicillin–streptomycin solution (100x) stabilized</td>
+      <td>Cell culture reagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>P4333</td>
+      <td>Replaces Invitrogen cat. no. 15140-122 used in original study</td>
+    </tr>
+    <tr>
+      <td>1 mL syringe; 26 G x 5/8 needle (single-use)</td>
+      <td>Labware</td>
+      <td>BD Biosciences</td>
+      <td>309597</td>
+      <td>Original brand not specified</td>
+    </tr>
+    <tr>
+      <td>NCR-NUDE mice(homozygous; NCRNU-F)</td>
+      <td>Mouse line</td>
+      <td>Taconic</td>
+      <td>NCRNU-F</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Carazzi’s Haematoxylin</td>
+      <td>IHC Stain</td>
+      <td rowspan="3" colspan="3">Specific brand information will be left up to the discretion of the replicating lab and recorded later</td>
+    </tr>
+    <tr>
+      <td>Eosin</td>
+      <td>IHC Stain</td>
+    </tr>
+    <tr>
+      <td>Permount</td>
+      <td>Mounting medium</td>
+    </tr>
+  </tbody>
+</table>
 
-## Procedure
+#### Procedure
 
 Maintain NRASG12D cell lines in Ham's F10 medium with 10% heat inactivated FBS and 1% penicillin/streptomycin at 37°C with 5% CO2.Resuspend 1 × 106 cells in a 1:1 ratio of Matrigel and Hanks’ balanced salt solution and keep on ice. The final injection volume should be 100 µl.Subcutaneously inject 1 × 106 cells with a 26-gauge needle and insulin syringe into 6- to 8-week old female NCR-NUDE mice.A. Mice were housed per IACUC regulations, in barrier housing with standard chow and 12 hr light/dark cycles.B. Anesthetize mice with isofluorane prior to injection.C. Inject mice subcutaneously on the flank.Monitor mice three times a week for tumor development for 16 weeks.A. Record date when visible tumor is detected.Measure tumor volume once weekly.A. Measure tumor in two directions with calipers. Calculate tumor volume as (length × width2)/2.Track survival of mice for 16 weeks, recording dates of euthanasia.A. Sacrifice mice when tumor volume reaches 1.5 cm3 or if mice become moribund or cachectic.B. Sacrifice any surviving mice at the end of the study.Upon euthanasia, harvest and process tumor tissue for further analysis.A. Harvest one representative tumor per mouse group (total of 4 tumors).B. Fix tissues in 10% neutral buffered formalin for 24 hr.C. Dehydrate tissues through graded alcohols and clear in xylene.D. Infiltrate with, and then embed, tissues in paraffin and section into 5-µm sections.E. Mount sections onto positively charged slides.Stain tumor section with H&E (total: 1 stained section per tumor = 4 stained sections).A. Perform H&E staining by hand using the following procedure:i. Deparaffinize sections twice in xylene, then rehydrate through graded alcohols (95%, 70%, 50% ETOH) to water.ii. Stain sections with Carazzi's hematoxylin, then rinse slides in water.iii. Stain sections with eosin.iv. Dehydrate sections through graded alcohols (50%, 70%, 90%) and then place in xylene.v. Apply coverslips to slides with Permount and store slides at room temperature.Blindly image stained sections and have images blindly analyzed by a Board Certified Veterinary Pathologist to verify the tumor composition of the tissue sections.
 
-## Data to be collected
+#### Data to be collected
 
 Deliverables:Mouse health records (age, time to tumor detection, tumor incidence, date of euthanasia, and cause of termination)Raw and calculated tumor volume measurements for each date/mouseKaplan–Meier curves generated for tumor-free survival of each mouse lineImages of H&E stained tumor sections and pathology report. (compare to Figure 6C)Pathologist's report of tissue section evaluation
 
-## Confirmatory analysis plan
+#### Confirmatory analysis plan
 
 This replication attempt will perform the statistical analyses listed below, compute the effects sizes, compare them against the reported effect size in the original paper, and use a meta-analytic approach to combine the original and replication effects, which will be presented as a Forest plot.Statistical analysis of the Replication Data:Comparison of Kaplan–Meier survival curves tracking tumor incidence using Bonferroni’s correction for multiple comparisons.The authors originally examined the Kaplan–Meier curves for PREX2 mutants and compared the endpoint values of the mutant curves to the endpoint values of the wild-type PREX2 curve using an unpaired two-tailed t-test. We will replicate their t-tests but also compare the entire survival curves (each mutant curve vs both wild-type and GFP control) using the log-rank Mantel–Cox test with Bonferroni’s alpha correction, which we believe is a more appropriate statistical approach.Comparison of tumor growth ratesWe will measure tumor growth rates across all mouse cohorts over the length of the study. These data were collected but not reported or analyzed in the original study. We will plot growth curves for each treatment group and use area under the curve analysis to calculate the mean and std. error. We will then use the means, std. error, and n to perform a 1-way ANOVA. Further, we will perform corrected t-tests (Bonferroni correction) to perform pairwise comparisons between PREX2 mutants and either GFP or wild-type controls.
 
-## Known differences from the original study
+#### Known differences from the original study
 
 This replication is only generating and analyzing xenografts based on the stable melanocyte lines for GFP, wild-type PREX2, PREX2 Q1430*, and PREX2 G844D. The original study also generated and analyzed tumor xenografts using other PREX2 mutant-expressing melanocyte lines, including PREX2 K278*, E824*, P948S, and G106E. In order to sufficiently power all experiments and achieve the necessary number of events for Kaplan–Meier analysis, the duration of this replication will be extended from 9 weeks in the original paper to 16 weeks in the replication. All known differences in reagents and supplies are listed in the materials and reagents section above, with the originally used item listed in the comments section. All differences have the same capabilities as the original and are not expected to alter the experimental design.
 
-## Provisions for quality control
+#### Provisions for quality control
 
 The genetic integrity, mycoplasma-free purity, and levels of exogenous expression of each NrasG12V melanocyte line used in this experiment have been previously validated in Protocols 1 and 2. All mice will be handled and housed in accordance with the Institutional Animal Care and Use Committee (IACUC). All data obtained from the experiment—raw data, data analysis, control data, and quality control data—will be made publicly available, either in the published manuscript or as an open access dataset available on the Open Science Framework (https://osf.io/82nfe/)
 
-## Power calculations
+### Power calculations
 
-## Protocol 3
+#### Protocol 3
 
-## Summary of original data
+##### Summary of original data
 
-Figure 3B. Kaplan–Meier survival curvesMedian survivalHazards ratio [to WT]Hazards ratio [to GFP]NWT PREX2N/AN/AN/A10GFPN/AN/AN/A10PREX2 Q1430*5 weeks0.087580.124310PREX2 G844D5 weeks0.12960.195210
+<table>
+  <thead>
+    <tr>
+      <th>Figure 3B. Kaplan–Meier survival curves</th>
+      <th>Median survival</th>
+      <th>Hazards ratio [to WT]</th>
+      <th>Hazards ratio [to GFP]</th>
+      <th>N</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>WT PREX2</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>GFP</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>N/A</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>PREX2 Q1430*</td>
+      <td>5 weeks</td>
+      <td>0.08758</td>
+      <td>0.1243</td>
+      <td>10</td>
+    </tr>
+    <tr>
+      <td>PREX2 G844D</td>
+      <td>5 weeks</td>
+      <td>0.1296</td>
+      <td>0.1952</td>
+      <td>10</td>
+    </tr>
+  </tbody>
+</table>
 
 Note: Mantel–Haenszel hazard ratios were generated in Graphpad Prism v. 6.0 following analysis of Kaplan–Meier curves with the log-rank (Mantel–Cox) test using the Mantel–Haenszel method.
 
-## Test family
+##### Test family
 
 Log-rank (Mantel–Cox) test with Bonferroni alpha correction for multiple comparisons
 
-## Power calculations
+##### Power calculations
 
-Performed with the Sample Size Calculator hosted by the Clinical & Translational Science Institute (CTSI) at the University of California–San Francisco (http://www.sample-size.net/sample-size-survival-analysis/) (Rubinstein et al., 1981; Schoenfeld, 1983)To account for multiple comparisons, a corrected alpha value of 0.0125 [0.05/4] was used in determining power calculations.Experiment durationA Priori powerTotal events needed (WT or GFP)Estimated sample size (WT or GFP)Total events needed (PREX2 mutants)Estimated sample size (PREX2 mutant)Q1430* vs WT16 weeks≥80%1767G844D vs WT16 weeks≥80%161112Q1430* vs GFP16 weeks≥80%31478G844D vs GFP16 weeks≥80%4141214
+Performed with the Sample Size Calculator hosted by the Clinical & Translational Science Institute (CTSI) at the University of California–San Francisco (http://www.sample-size.net/sample-size-survival-analysis/) (Rubinstein et al., 1981; Schoenfeld, 1983)To account for multiple comparisons, a corrected alpha value of 0.0125 [0.05/4] was used in determining power calculations.
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Experiment duration</th>
+      <th>A Priori power</th>
+      <th>Total events needed (WT or GFP)</th>
+      <th>Estimated sample size (WT or GFP)</th>
+      <th>Total events needed (PREX2 mutants)</th>
+      <th>Estimated sample size (PREX2 mutant)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Q1430* vs WT</td>
+      <td>16 weeks</td>
+      <td>≥80%</td>
+      <td>1</td>
+      <td>7</td>
+      <td>6</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <td>G844D vs WT</td>
+      <td>16 weeks</td>
+      <td>≥80%</td>
+      <td>1</td>
+      <td>6</td>
+      <td>11</td>
+      <td>12</td>
+    </tr>
+    <tr>
+      <td>Q1430* vs GFP</td>
+      <td>16 weeks</td>
+      <td>≥80%</td>
+      <td>3</td>
+      <td>14</td>
+      <td>7</td>
+      <td>8</td>
+    </tr>
+    <tr>
+      <td>G844D vs GFP</td>
+      <td>16 weeks</td>
+      <td>≥80%</td>
+      <td>4</td>
+      <td>14</td>
+      <td>12</td>
+      <td>14</td>
+    </tr>
+  </tbody>
+</table>

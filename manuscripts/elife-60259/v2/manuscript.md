@@ -19,7 +19,7 @@
 
 ## Abstract
 
-Vitamin B12 is an essential micronutrient that functions in two metabolic pathways: the canonical propionate breakdown pathway and the methionine/S-adenosylmethionine (Met/SAM) cycle. In Caenorhabditis elegans, low vitamin B12, or genetic perturbation of the canonical propionate breakdown pathway results in propionate accumulation and the transcriptional activation of a propionate shunt pathway. This propionate-dependent mechanism requires nhr-10 and is referred to as ‘B12-mechanism-I’. Here, we report that vitamin B12 represses the expression of Met/SAM cycle genes by a propionate-independent mechanism we refer to as ‘B12-mechanism-II’. This mechanism is activated by perturbations in the Met/SAM cycle, genetically or due to low dietary vitamin B12. B12-mechanism-II requires nhr-114 to activate Met/SAM cycle gene expression, the vitamin B12 transporter, pmp-5 , and adjust influx and efflux of the cycle by activating msra-1 and repressing cbs-1 , respectively. Taken together, Met/SAM cycle activity is sensed and transcriptionally adjusted to be in a tight metabolic regime.
+Vitamin B12 is an essential micronutrient that functions in two metabolic pathways: the canonical propionate breakdown pathway and the methionine/S-adenosylmethionine (Met/SAM) cycle. In Caenorhabditis elegans, low vitamin B12, or genetic perturbation of the canonical propionate breakdown pathway results in propionate accumulation and the transcriptional activation of a propionate shunt pathway. This propionate-dependent mechanism requires nhr-10 and is referred to as ‘B12-mechanism-I’. Here, we report that vitamin B12 represses the expression of Met/SAM cycle genes by a propionate-independent mechanism we refer to as ‘B12-mechanism-II’. This mechanism is activated by perturbations in the Met/SAM cycle, genetically or due to low dietary vitamin B12. B12-mechanism-II requires nhr-114 to activate Met/SAM cycle gene expression, the vitamin B12 transporter, pmp-5, and adjust influx and efflux of the cycle by activating msra-1 and repressing cbs-1, respectively. Taken together, Met/SAM cycle activity is sensed and transcriptionally adjusted to be in a tight metabolic regime.
 
 ## Introduction
 
@@ -27,19 +27,31 @@ Metabolism lies at the heart of most cellular and organismal processes. Anabolic
 
 Vitamin B12 is an essential cofactor for two metabolic enzymes: methylmalonyl-CoA mutase and methionine synthase. Methylmalonyl-coenzyme A mutase (EC 5.4.99.2) catalyzes the third step in the breakdown of the short-chain fatty acid propionate, while methionine synthase (EC 2.1.1.13) converts homocysteine into methionine in the Methionine/S-adenosylmethionine (Met/SAM) cycle (Figure 1A). The Met/SAM cycle is part of one-carbon metabolism, which also includes folate metabolism and parts of purine and thymine biosynthesis (Ducker and Rabinowitz, 2017). The one-carbon cycle produces many important building blocks for cellular growth and repair, including nucleotides and SAM, the major methyl donor of the cell. SAM is critical for the synthesis of phosphatidylcholine, an important component of cellular membranes, as well as for the methylation of DNA, RNA, and histones (Ye et al., 2017). Both vitamin B12-dependent metabolic pathways have been well studied at the biochemical level; however, little is known about how these pathways are regulated transcriptionally.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig1-v2.jpg)
+
+**Figure 1.:** (A) Cartoon of vitamin B12-related metabolic pathways in C. elegans. CDP –cytidine 5’-diphosphocholine; DHF – dihydrofolate; 3-HP – 3-hydroxypropionate; 5,10-meTHF – 5,10-methylenetetrahydrofolate; 5-meTHF – 5-methyltetrahydrofolate; 10-fTFH –10-formyltetrahydrofolate; BCKDH – branched-chain α-ketoacid dehydrogenase complex; MM-CoA – methylmalonyl-coenzyme A; *MUT – human methylmalonyl-coenzyme A mutase; *MS – human methionine synthase; MSA – malonic semialdehyde; SAH – S-adenosylhomocysteine; SAM – S-adenosylmethionine; THF – tetrahydrofolate; FFL – feed forward loop. Dashed arrows indicate multiple reaction steps. (B) Fluorescence microscopy images of Pacdh-1::GFP reporter animals in wild type and ∆nhr-10 mutant background with different supplements as indicated. Insets show brightfield images. (C) RNA-seq data of acdh-1 mRNA with and without 20 nM vitamin B12 in wild type and ∆nhr-10 mutant animals (Bulcha et al., 2019). Datapoints show each biological replicate and the bar represents the mean. TPM – transcripts per million. p adjusted values are provided in Supplementary file 1. (D) Cartoon illustrating two mechanisms of gene regulation by low vitamin B12 dietary conditions.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** Insets show brightfield images.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** GFP intensity measurements of fluorescent images shown in Figure 1B.
+
 The nematode Caenorhabditis elegans is a highly tractable model for studying the relationships between diet, disease, and metabolism (Yilmaz and Walhout, 2014; Zhang et al., 2017). C. elegans is a bacterivore that can thrive on both high and low vitamin B12 diets (MacNeil et al., 2013; Watson et al., 2013; Watson et al., 2014). We previously discovered that perturbations of the canonical propionate breakdown pathway, either genetically or by low dietary vitamin B12, results in the transcriptional activation of five genes comprising an alternative propionate breakdown pathway, or propionate shunt (Figure 1A, Watson et al., 2016). Activation of the propionate shunt occurs only with sustained propionate accumulation and absolutely depends on the nuclear hormone receptor (NHR) nhr-10 (Bulcha et al., 2019). nhr-10 functions together with nhr-68 in a type one coherent feedforward loop known as a persistence detector (Bulcha et al., 2019). We refer to the regulation of gene expression by accumulation of propionate due to low vitamin B12 dietary conditions as ‘B12-mechanism-I’.
 
 Here, we report that vitamin B12 represses the expression of Met/SAM cycle genes by a propionate-independent mechanism we refer to as ‘B12-mechanism-II’. We find that B12-mechanism-II is activated upon perturbation of the Met/SAM cycle, either genetically or nutritionally, due to low dietary vitamin B12. This mechanism requires another NHR, nhr-114, which responds to low levels of SAM. B12-mechanism-II not only activates Met/SAM cycle gene expression, it also activates the expression of the vitamin B12 transporter pmp-5 and the methionine sulfoxide reductase msra-1, and represses the expression of the cystathionine beta synthase cbs-1. The regulation of the latter two genes increases influx and reduces efflux of the Met/SAM cycle, respectively. These findings indicate that low Met/SAM cycle activity is sensed and transcriptionally adjusted to be maintained in a tightly controlled regime. Taken together, in C. elegans the genetic or nutritional perturbation of the two vitamin B12-dependent pathways is sensed by two transcriptional mechanisms via different NHRs. These mechanisms likely provide the animal with metabolic adaptation to develop and thrive on different bacterial diets in the wild.
 
 ## Results
 
-## Low dietary vitamin B12 activates two transcriptional mechanisms
+### Low dietary vitamin B12 activates two transcriptional mechanisms
 
 As in humans, vitamin B12 acts as a cofactor in two C. elegans pathways: the canonical propionate breakdown pathway and the Met/SAM cycle, which is part of one-carbon metabolism (Figure 1A). These pathways are connected because homocysteine can be converted into cystathionine by the cystathionine beta synthase CBS-1, which after conversion into alpha-ketobutyrate is converted into propionyl-CoA. When flux through the canonical propionate breakdown pathway is perturbed, either genetically or nutritionally, that is, when dietary vitamin B12 is low, a set of genes comprising an alternative propionate breakdown pathway or propionate shunt is transcriptionally activated (Macneil and Walhout, 2013; Watson et al., 2013; Watson et al., 2014; Watson et al., 2016). Low vitamin B12 results in an accumulation of propionate, which, when sustained, activates a gene regulatory network circuit known as a type one coherent feedforward loop with an AND-logic gate composed of two transcription factors, nhr-10 and nhr-68 (Bulcha et al., 2019). The first gene in the propionate shunt, acdh-1, acts as a control point: its expression is induced several hundred fold when vitamin B12 is limiting (Macneil and Walhout, 2013; Watson et al., 2013; Watson et al., 2014; Watson et al., 2016).
 
 We have previously used transgenic animals expressing the green fluorescent protein (GFP) under the control of the acdh-1 promoter as a vitamin B12 sensor (Arda et al., 2010; MacNeil et al., 2013; Watson et al., 2014). In these Pacdh-1::GFP animals, GFP expression is high throughout the intestine on an E. coli OP50 diet, which is low in vitamin B12, and GFP expression is very low on a Comamonas aquatica DA1877 diet that is high in vitamin B12 (MacNeil et al., 2013; Watson et al., 2014). Low GFP expression resulting from vitamin B12 supplementation to the E. coli OP50 diet can be overcome by addition of propionate (Figure 1B, Figure 1—figure supplements 1 and 2; Bulcha et al., 2019). The activation of acdh-1 expression in response to accumulating propionate is completely dependent on nhr-10 (Figure 1B, Figure 1—figure supplements 1 and 2; Bulcha et al., 2019). Interestingly, we found that while GFP levels are reduced in the anterior intestine, there is still remaining GFP expression in the posterior intestine in Pacdh-1::GFP transgenic animals lacking nhr-10 (Figure 1B, Figure 1—figure supplements 1 and 2). Since nhr-10 is absolutely required to mediate the activation of acdh-1 by propionate, this means that there is another, propionate-independent mechanism of activation. Importantly, the residual GFP expression in Pacdh-1::GFP; Δnhr-10 was completely repressed by the supplementation of vitamin B12 (Figure 1B, Figure 1—figure supplements 1 and 2). This result was confirmed by inspecting our previously published RNA-seq data: in Δnhr-10 animals there is residual endogenous acdh-1 expression which is eliminated by the addition of vitamin B12 (Figure 1C, Supplementary file 1; Bulcha et al., 2019). These results demonstrate that there is another mechanism by which low vitamin B12 activates gene expression that is independent of propionate accumulation, which occurs when flux through the canonical propionate breakdown pathway is perturbed. We refer to the activation of gene expression in response to canonical propionate breakdown perturbation as ‘B12-mechanism-I’ and the other, propionate-independent mechanism as ‘B12-mechanism-II’ (Figure 1D).
 
-## Met/SAM cycle perturbations activate B12-mechanism-II
+### Met/SAM cycle perturbations activate B12-mechanism-II
 
 To determine the mechanism by which ‘B12-mechanism-II’ is activated, we used the Pacdh-1::GFP vitamin B12 sensor in the Δnhr-10 mutant background, which cannot respond to B12-mechanism-I. We first performed a forward genetic screen using ethyl methanesulfonate (EMS) to find mutations that activate GFP expression in Pacdh-1::GFP;Δnhr-10 animals in the presence of vitamin B12 (Figure 2A). We screened ~8000 genomes and identified 27 mutants, 16 of which were viable and produced GFP-expressing offspring. Seven of these mutants were backcrossed with the Pacdh-1::GFP;∆nhr-10 parent strain. Single-nucleotide polymorphism mapping and whole genome sequencing revealed mutations in metr-1, mtrr-1, sams-1, mthf-1, and pmp-5 (Figure 2B). The first four genes encode enzymes that function directly in the Met/SAM cycle (Figure 1A). metr-1 is the single ortholog of human methionine synthase; mtrr-1 is the ortholog of MTRR that encodes methionine synthase reductase; sams-1 is orthologous to human MAT1A and encodes a SAM synthase; and mthf-1 is the ortholog of human MTHFR that encodes methylenetetrahydrofolate reductase. We also found mutations in pmp-5, an ortholog of human ABCD4, which encodes a vitamin B12 transporter (Coelho et al., 2012).
 
@@ -49,7 +61,7 @@ To determine the mechanism by which ‘B12-mechanism-II’ is activated, we used
 
 Next, we performed a reverse genetic RNAi screen using a library of predicted metabolic genes in Pacdh-1::GFP;Δnhr-10 animals fed E. coli HT115 bacteria (the bacterial diet used for RNAi experiments) supplemented with vitamin B12 (Figure 2C). In these animals, GFP expression is off and we looked for those RNAi knockdowns that activated GFP expression in the presence of vitamin B12. Out of more than 1400 genes tested, RNAi of only five genes resulted in activation of GFP expression: metr-1, mtrr-1, sams-1, mthf-1, and mel-32 (Figure 2D). Four of these genes were also found in the forward genetic screen (Figure 2B). The fifth gene, mel-32, also functions in one-carbon metabolism (Figure 1A). It is an ortholog of human SHMT1 and encodes serine hydroxymethyltransferase that converts serine into glycine thereby producing 5,10-methylenetetrahydrofolate (5,10-meTHF), the precursor of 5-meTHF, which donates a methyl group in the reaction catalyzed by METR-1 (Figure 1A). These results show that genetic perturbations in Met/SAM cycle genes activate B12-mechanism-II, even in the presence of vitamin B12. This indicates that reduced activity of the Met/SAM cycle, either due to genetic perturbations or as a result of low dietary vitamin B12 activates B12-mechanism-II (Figure 2E). Therefore, genetic perturbations in either pathway that uses vitamin B12 as a cofactor activate the vitamin B12 sensor.
 
-## B12-mechanism-II activates Met/SAM cycle gene expression in response to Met/SAM cycle perturbations
+### B12-mechanism-II activates Met/SAM cycle gene expression in response to Met/SAM cycle perturbations
 
 To ask what other genes are activated by B12-mechanism-II, we performed RNA-seq using four Met/SAM cycle mutants identified in the forward genetic screen. All strains were supplemented with vitamin B12 and gene expression profiles of the Met/SAM cycle mutants were compared to the parental Pacdh-1::GFP;∆nhr-10 strain. We found a set of 110 genes that are upregulated in all four Met/SAM cycle mutants, and a smaller set of 11 genes that are downregulated (Figure 3A, Supplementary file 2). Importantly, endogenous acdh-1 was upregulated in each of the Met/SAM cycle mutants, validating the results obtained with the Pacdh-1::GFP vitamin B12 sensor (Supplementary file 2). Remarkably, we found that most Met/SAM cycle genes are significantly upregulated in each of the Met/SAM cycle mutants, and one of them, mel-32, was significantly increased in three of the four mutants (the fourth mutant just missing the selected statistical threshold) (Figure 3B, Supplementary file 2).
 
@@ -59,17 +71,61 @@ To ask what other genes are activated by B12-mechanism-II, we performed RNA-seq 
 
 The finding that Met/SAM cycle genes are transcriptionally activated in response to genetic Met/SAM cycle perturbations implies that these genes may also be activated by low vitamin B12. Indeed, inspection of our previously published RNA-seq data (Bulcha et al., 2019) revealed that expression of Met/SAM cycle genes is repressed by vitamin B12 (Figure 3C, Supplementary file 1). In contrast to propionate shunt genes, however, Met/SAM cycle genes are not induced in response to propionate supplementation, nor are these genes affected in nhr-10 or nhr-68 mutants, which are the mediators of the propionate response (B12-mechanism-I, Figure 3D, Supplementary file 1). Therefore, Met/SAM cycle gene expression is activated by B12-mechanism-II in response to either genetic or nutritional (low vitamin B12) perturbations in the Met/SAM cycle (Figure 3E).
 
-## nhr-114 mediates Met/SAM cycle activation in response to low Met/SAM cycle flux
+### nhr-114 mediates Met/SAM cycle activation in response to low Met/SAM cycle flux
 
 How do perturbations in the Met/SAM cycle activate B12-mechanism-II? There are two components to this question: (1) which TF(s), and (2) which metabolite(s) mediate Met/SAM cycle gene induction? We first focused on identifying the TF(s) involved in B12-mechanism-II. Previously, we identified more than 40 TFs that activate the Pacdh-1::GFP vitamin B12 sensor in wild type animals (MacNeil et al., 2015). Subsequently, we found that only a subset of these TFs are involved in B12-mechanism-I, most specifically nhr-10 and nhr-68 (Bulcha et al., 2019). To identify TFs involved in B12-mechanism-II, we performed RNAi of all TFs that regulate the acdh-1 promoter (MacNeil et al., 2015; Bulcha et al., 2019) in Pacdh-1::GFP;∆nhr-10 animals harboring mutations in Met/SAM genes. As mentioned above, these animals express moderate levels of GFP in response to the activation of B12-mechanism-II by Met/SAM cycle mutations. RNAi of several TFs reduced GFP expression, including elt-2, nhr-23, cdc-5L, lin-26, sbp-1, and nhr-114 (Figure 4A, Figure 4—figure supplement 1). Most of these TFs function at a high level in the intestinal gene regulatory network, elicit gross physiological phenotypes when knocked down, and are also involved in B12-mechanism-I (MacNeil et al., 2015; Bulcha et al., 2019). For instance, elt-2 is a master regulator that is required for the intestinal expression of most if not all genes and is therefore not specific (McGhee et al., 2009; MacNeil et al., 2015). The TFs nhr-23 and lin-26 were not found to be involved in B12-mechanism-I and could therefore potentially be involved in B12-mechanism-II. However, RNAi of these TFs causes severe developmental delay across all strains and thus their contribution could be less specific (Figure 4—figure supplement 1). Only nhr-114 RNAi, which we previously found not to be involved in B12-mechanism-I, specifically repressed GFP expression in the nhr-10 deletion mutant background (Figure 4A, Figure 4—figure supplements 2 and 3; Bulcha et al., 2019). This indicates that nhr-114 mediates the response to B12-mechanism-II. Interestingly, nhr-114 RNAi greatly slowed development in Met/SAM cycle mutants but not in the parental strain (Figure 4A, inset, Figure 4—figure supplement 2, insets). This indicates that combined nhr-114 and Met/SAM cycle perturbations produce a synthetic sick phenotype and points to the functional importance of nhr-114 in Met/SAM cycle metabolism.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig4-v2.jpg)
+
+**Figure 4.:** (A) nhr-114 RNAi reduces GFP expression in Pacdh-1::GFP;∆nhr-10 animals harboring Met/SAM cycle gene mutations. Insets show brightfield images. (B) ∆nhr-114 mutant growth and fertility phenotypes are rescued by vitamin B12, methionine or choline supplementation. Difference in exposure time is indicated in yellow. (C) Quantification of body size of wild type and ∆nhr-114 mutant animals that are untreated or supplemented with either vitamin B12, methionine, or choline. Trial two is shown in Figure 4—figure supplement 4. Statistical significance was determined by the Kruskal-Wallis test with post hoc comparison using Dunn’s multiple comparison test. (D) Bar graphs of Met/SAM cycle gene expression by RNA-seq in Pacdh-1::GFP, Pacdh-1::GFP;∆metr-1 and Pacdh-1::GFP;∆nhr-10;metr-1(ww52) animals treated with vector control or nhr-114 RNAi. Datapoints show each biological replicate and the bar represents the mean. TPM – transcripts per million. p adjusted values are provided in Supplementary file 3. (E) Pie chart showing portion of genes upregulated by Met/SAM cycle perturbation that are nhr-114 dependent. (F) Cartoon illustrating the requirement of nhr-114 in B12-mechanism-II.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Some TF RNAi experiments were diluted with vector control RNAi to circumvent strong deleterious phenotypes. Dilution ratios of clone to vector by volume are indicated per clone. Insets show brightfield images.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig4-figsupp2-v2.jpg)
+
+**Figure 4—figure supplement 2.:** Insets show brightfield images.
+
+![Figure 4—figure supplement 3.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig4-figsupp3-v2.jpg)
+
+![Figure 4—figure supplement 4.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig4-figsupp4-v2.jpg)
+
+![Figure 4—figure supplement 5.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig4-figsupp5-v2.jpg)
+
+**Figure 4—figure supplement 5.:** Datapoints show each biological replicate and bar represents the mean.
 
 Previously, it has been reported that nhr-114 loss-of-function mutants develop slowly and are sterile when fed a diet of E. coli OP50 bacteria, while they grow faster and are fertile on a diet of E. coli HT115 (Gracida and Eckmann, 2013). E. coli HT115 bacteria are thought to contain higher levels of vitamin B12 than E. coli OP50 cells (Watson et al., 2014; Revtovich et al., 2019). Therefore, we asked whether Δnhr-114 mutant phenotypes could be rescued by vitamin B12 supplementation. Indeed, we found that both sterility and slow development of Δnhr-114 mutants fed E. coli OP50 could be rescued by supplementation of vitamin B12 (Figure 4B and C, Figure 4—figure supplement 4).
 
 The Met/SAM cycle generates SAM, the major methyl donor of the cell that is critical for the synthesis of phosphatidylcholine (Ye et al., 2017; Figure 1A). It has previously been shown that perturbation of sams-1, which converts methionine into SAM (Figure 1A), leads to a strong reduction in fecundity and large changes in gene expression (Li et al., 2011; Ding et al., 2015). Importantly, these phenotypes can be rescued by supplementation of choline, which supports an alternative route to phosphatidylcholine biosynthesis (Walker et al., 2011; Figure 1A). Therefore, in C. elegans, the primary biological function of the Met/SAM cycle is to produce methyl donors that facilitate the synthesis of phosphatidylcholine. We found that the Δnhr-114 mutant phenotypes can also be rescued by either methionine or choline supplementation (Figure 4B and C, Figure 4—figure supplement 4). Although Gracida and Eckmann did not find that methionine rescued nhr-114 RNAi knock down animals, it is possible this was due to methodological differences. For example, they added bulk L-amino acids and at only one concentration. The actual concentration of ingested methionine might have been masked by other amino acids or was simply too low to provide an observable rescue (Gracida and Eckmann, 2013). Rescue of nhr-114 mutant phenotypes by choline and methionine support the hypothesis that low levels of phosphatidylcholine are the underlying cause of the Δnhr-114 mutant phenotypes on low vitamin B12 diets, when B12-mechanism-II cannot activate Met/SAM cycle gene expression. This result provides further support for the functional involvement of nhr-114 in the Met/SAM cycle, and leads to the prediction that nhr-114 activates Met/SAM cycle gene expression in response to genetic or nutritional perturbation of the cycle’s activity. To directly test this prediction, we performed RNA-seq on Pacdh-1::GFP and Pacdh-1::GFP;Δnhr-10;metr-1(ww52) animals supplemented with vitamin B12 and subjected to nhr-114 or vector control RNAi. We also included Pacdh-1::GFP;Δmetr-1 animals, which have wild type nhr-10. We found that Met/SAM cycle genes are robustly induced in both metr-1 mutants, recapitulating our earlier observation (Figures 4D and 3B, Figure 4—figure supplement 5, Supplementary files 3 and 2). Importantly, we found that this induction is absolutely dependent on nhr-114 (Figure 4D, Figure 4—figure supplement 5, Supplementary file 3). Overall, the induction of 32 of the 110 genes that are upregulated by Met/SAM cycle perturbations requires nhr-114 (Figure 4E). These genes are candidate modulators of Met/SAM cycle function. Interestingly, in the presence of vitamin B12, basal Met/SAM cycle gene expression is not affected by nhr-114 RNAi (Figure 4D, Figure 4—figure supplement 5, Supplementary file 3). Together with the observation that nhr-114 and Met/SAM cycle perturbations produce a synthetic sick phenotype (Figure 4A, Figure 4—figure supplement 2), this indicates that nhr-114 is specifically involved in B12-mechanism-II, which is activated when the activity of the cycle is hampered. Taken together, perturbations in the Met/SAM cycle elicited either by low dietary vitamin B12 or by genetic perturbations activate Met/SAM cycle gene expression by B12-mechanism-II, which requires the function of nhr-114 (Figure 4F).
 
-## Methionine and choline supplementation suppress B12-Mechanism-II
+### Methionine and choline supplementation suppress B12-Mechanism-II
 
 Which metabolites are involved in the activation of B12-mechanism-II? To start addressing this question, we first performed targeted metabolomics by gas chromatography-mass spectrometry (GC-MS) on animals fed a vitamin B12-deplete E. coli OP50 diet with or without supplementation of vitamin B12. The enhanced activity of the Met/SAM cycle in the presence of supplemented vitamin B12 is apparent because methionine levels increase, while homocysteine levels decrease (Figure 5A). 3-hydroxypropionate levels are also dramatically decreased by vitamin B12 supplementation, because propionate is preferentially degraded by the canonical propionate breakdown pathway (Figure 5A; Watson et al., 2016). We reasoned that either low methionine, low SAM, low phosphatidylcholine or high homocysteine could activate B12-mechanism-II when activity of the Met/SAM cycle is perturbed.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig5-v2.jpg)
+
+**Figure 5.:** (A) Box plots showing GC-MS data from wild type animals fed E. coli OP50 with or without supplemented 64 nM vitamin B12. Statistical significance determined by two-tailed t-test. 3-HP – 3-hydroxypropionate. (B) cbs-1 RNAi reduces GFP expression in Pacdh-1::GFP;∆nhr-10 and Pacdh-1::GFP;∆nhr-10 mutants harboring Met/SAM cycle gene mutations. (C) Methionine or choline supplementation represses GFP expression in Pacdh-1::GFP;∆nhr-10 animals. Insets show brightfield images. (D) Methionine or choline supplementation represses GFP expression in Pacdh-1::GFP;∆nhr-10;metr-1(ww52) and Pacdh-1::GFP;∆nhr-10;mthf-1(ww50) animals, while choline but not methionine supplementation represses GFP expression in Pacdh-1::GFP;∆nhr-10;sams-1(ww51) animals. This experiment was performed without vitamin B12 supplementation. (E) GC-MS quantification of methionine levels in Met/SAM cycle mutants and in the parental strain. Statistical significance was determined using one-way ANOVA with post-hoc comparison using Dunnett’s T3 test. (F) RNA-seq data of pmt-2 expression in each of the datasets. PA – propionic acid; X axis labels match legend in panel E. Datapoints show each biological replicate and the bar represents the mean. TPM – transcripts per million. p adjusted values are provided in Supplementary files 1, 2 and 4. (G) pmt-2 RNAi suppresses GPF expression in Pacdh-1::GFP;∆nhr-10 animals. pmt-2 RNAi experiments were diluted with vector control RNAi to circumvent strong deleterious phenotypes. (H) Bar graphs of RNA-seq data showing Met/SAM cycle gene expression in wild type and ∆nhr-114 animals with and without methionine supplementation. p adjusted values are provided in Supplementary file 4. (I) Cartoon illustrating B12-mechanism-II whereby low vitamin B12 reduces Met/SAM cycle activity, leading to the depletion of SAM and the activation of met/SAM cycle gene expression mediated by nhr-114.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** Insets are brightfield images.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig5-figsupp2-v2.jpg)
+
+![Figure 5—figure supplement 3.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig5-figsupp3-v2.jpg)
+
+![Figure 5—figure supplement 4.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig5-figsupp4-v2.jpg)
+
+**Figure 5—figure supplement 4.:** Datapoints show each biological replicate and bar represents the mean.
+
+![Figure 5—figure supplement 5.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig5-figsupp5-v2.jpg)
+
+**Figure 5—figure supplement 5.:** Dilutions by volume of pmt-2 RNAi with vector control are indicated. Insets show brightfield images.
+
+![Figure 5—figure supplement 6.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig5-figsupp6-v2.jpg)
+
+![Figure 5—figure supplement 7.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig5-figsupp7-v2.jpg)
 
 We first tested the possibility that the accumulation of homocysteine in Met/SAM cycle mutants may activate B12-mechanism-II. In C. elegans, RNAi of cbs-1 causes the accumulation of homocysteine (Vozdek et al., 2012). Therefore, we reasoned that, if homocysteine accumulation activates B12-mechanism-II, RNAi of cbs-1, should increase GFP expression in the Pacdh-1::GFP vitamin B12 sensor. Remarkably, however, we found the opposite: RNAi of cbs-1 repressed GFP expression in Pacdh-1::GFP;∆nhr-10 animals but not in the Met/SAM cycle mutants (Figure 5B, Figure 5—figure supplements 1 and 2). This indicates that a build-up of homocysteine is not the metabolic mechanism that activates B12-mechanism-II. The repression of GFP expression by cbs-1 RNAi in Pacdh-1::GFP;∆nhr-10 animals could be explained by a decrease in the conversion of homocysteine into cystathionine and an increase in the conversion into methionine resulting in support of Met/SAM cycle activity (Figure 1A). In sum, B12-mechanism-II is not activated by a build-up of homocysteine.
 
@@ -79,9 +135,17 @@ To distinguish between the possibilities of low SAM or low phosphatidylcholine a
 
 Next, we asked whether nhr-114 is required for the transcriptional response to low SAM. Since SAM is not stable and may not be easily absorbed by C. elegans, we used methionine supplementation, which supports SAM synthesis, except in sams-1 mutant animals. We performed RNA-seq in wild type and Δnhr-114 mutant animals with or without methionine supplementation and found that Met/SAM cycle genes are repressed by methionine supplementation in wild type, but not Δnhr-114 mutant animals (Figure 5H, Figure 5—figure supplement 7, Supplementary file 4). Therefore, low SAM levels due to vitamin B12 depletion activate B12-mechanism-II in an nhr-114-dependent manner (Figure 5I).
 
-## B12-mechanism-II activates influx and represses efflux of the Met/SAM cycle
+### B12-mechanism-II activates influx and represses efflux of the Met/SAM cycle
 
 Some of the most strongly regulated vitamin B12-repressed genes include msra-1 and pmp-5 (Figure 6A and B, Supplementary file 1; Bulcha et al., 2019). In the forward genetic screen, we identified a mutation in pmp-5 that activates the Pacdh-1::GFP transgene in ∆nhr-10 mutant animals in the presence of supplemented vitamin B12. As mentioned above, pmp-5 is an ortholog of human ABCD4, which encodes a vitamin B12 transporter (Coelho et al., 2012). Thus, increased B12 transport may be used by the animal as a mechanism to increase Met/SAM cycle activity. msra-1 encodes methionine sulfoxide reductase that reduces methionine sulfoxide to methionine (Figure 1A). This gene provides an entry point into the Met/SAM cycle by increasing levels of methionine. This observation prompted us to hypothesize that perturbation of Met/SAM cycle activity, either by low dietary vitamin B12 or by genetic perturbations in the cycle, may activate the expression of these genes. Indeed, both genes are induced in the Met/SAM cycle mutants (Figure 6A and B, Supplementary file 2). Further, both genes are repressed by methionine supplementation, in an nhr-114-dependent manner (Figure 6A and B, Supplementary file 4). As a putative transporter of vitamin B12 from the lysosome to the cytosol, pmp-5 is also important for vitamin B12-mechanism-I. Indeed, pmp-5 is upregulated in response to propionate supplementation, and is also regulated by nhr-10 and nhr-68 (Figure 6B, Supplementary file 1). We also noticed that the expression level changes of cbs-1 are opposite of those of msra-1 and pmp-5: cbs-1 is activated by vitamin B12, repressed in Met/SAM cycle mutants, and activated by methionine in an nhr-114-dependent manner (Figure 6C, Figure 6—figure supplement 1, Supplementary files 1, 2 and 4). As mentioned above, cbs-1 encodes cystathionine beta synthase, which converts homocysteine into cystathionine (Figure 1A). Reduced cbs-1 expression upon Met/SAM cycle perturbations would therefore likely prevent carbon efflux. Finally, nhr-114 expression itself is repressed by both vitamin B12 and methionine and activated by perturbations in Met/SAM cycle genes (Figure 6D, Supplementary files 1, 2 and 4). This suggests that nhr-114 activates its own expression, similarly as the auto-activation of nhr-68 in response to propionate accumulation (Bulcha et al., 2019). nhr-114 expression is not under the control of B12-mechanism-I because it does not change when propionate is supplemented or when nhr-10 is deleted. However, nhr-114 is mildly repressed in Δnhr-68 mutants. This suggests that there may be some crosstalk between the two B12 mechanisms (Figure 6D; Bulcha et al., 2019). Taken together, B12-mechanism-II is employed when Met/SAM cycle activity is perturbed to increase Met/SAM cycle gene expression as well as Met/SAM cycle activity and influx, and to decrease Met/SAM cycle efflux (Figure 7).
+
+![Figure 6.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig6-v2.jpg)
+
+**Figure 6.:** (A, B, C) RNA-seq data from each of the experiments for msra-1 (A), pmp-5 (B), cbs-1 (C) and nhr-114 (D). Datapoints show each biological replicate and the bar represents the mean. TPM – transcripts per million. p adjusted values are provided in Supplementary files 1, 2 and 4.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** Datapoints show each biological replicate and bar represents the mean.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/60259/elife-60259-fig7-v2.jpg)
 
@@ -103,35 +167,325 @@ Taken together, we have uncovered a second mechanism of gene regulation by vitam
 
 ## Materials and methods
 
-## C. elegans strains
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Strain, strain background (Caenorhabditis elegans)</td>
+      <td>N2; wild type</td>
+      <td>Wormbase</td>
+      <td>RRID:WB-STRAIN: WBStrain00000001</td>
+      <td>Laboratory reference strain/wild type</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>TM4695; ∆nhr-10</td>
+      <td>• Wormbase</td>
+      <td>Wormbase ID: WBVar00253059</td>
+      <td>Genotype: nhr-10(tm4695) III</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>VC1527; ∆nhr-68</td>
+      <td>Wormbase</td>
+      <td>RRID:WB-STRAIN: WBStrain00036665</td>
+      <td>Genotype: nhr-68(gk708) V</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>VL749; Pacdh-1::GFP</td>
+      <td>Wormbase</td>
+      <td>RRID:WB-STRAIN: WBStrain00040155</td>
+      <td>Genotype: wwIs24[Pacdh-1::GFP;unc-119(+)]</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>VL868; ‘Pacdh-1::GFP;∆nhr-10’</td>
+      <td>PMID:23540701</td>
+      <td></td>
+      <td>Genotype: wwIs24[Pacdh-1::GFP; unc-119(+)];nhr-10(tm4695)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>VL1127; ‘Pacdh-1::GFP;∆nhr-114’</td>
+      <td>PMID:26430702</td>
+      <td></td>
+      <td>Genotype: wwIs24[Pacdh-1::GFP;unc-119(+)];nhr-114(gk849)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>VL1102; ‘Pacdh-1::GFP;∆metr-1’</td>
+      <td>PMID:23540702</td>
+      <td></td>
+      <td>Genotype: wwIs24[Pacdh-1::GFP;unc-119(+)];metr-1(ok521)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>VL1115; ‘Pacdh-1::GFP;∆sams-1’</td>
+      <td>PMID:23540702</td>
+      <td></td>
+      <td>Genotype: wwIs24[Pacdh-1::GFP;unc-119(+)];sams-1(ok2946)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>CB4856</td>
+      <td>Wormbase</td>
+      <td>RRID:WB-STRAIN: WBStrain00004602</td>
+      <td>Wild isolate</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>VL1199; ‘Pacdh-1::GFP;∆nhr-10;mthf-1(ww50)’</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods, Genotype: wwIs24[Pacdh-1::GFP;unc-119(+)];nhr-10(tm4695);mthf-1(ww50)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>VL1200; ‘Pacdh-1::GFP;∆nhr-10;sams-1(ww51)’</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods, Genotype: wwIs24[Pacdh-1:: GFP;unc-119(+)];nhr-10(tm4695);sams-1(ww51)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>VL1201; ‘Pacdh-1::GFP;∆nhr-10;metr-1(ww52)’</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods, Genotype: wwIs24[Pacdh-1::GFP;unc-119(+)];nhr-10(tm4695);metr-1(ww52)</td>
+    </tr>
+    <tr>
+      <td>Strain, strain background (C. elegans)</td>
+      <td>VL1205; ‘Pacdh-1::GFP;∆nhr-10;mtrr-1(ww56)’</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See Materials and methods, Genotype:wwIs24[Pacdh-1::GFP;unc-119(+)];nhr-10(tm4695);mtrr-1(ww56)</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_act-1_F</td>
+      <td>PMID:23540702</td>
+      <td>qPCR primers</td>
+      <td>ctcttgccccatcaaccatg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_act-1_R</td>
+      <td>PMID:23540702</td>
+      <td>qPCR primers</td>
+      <td>cttgcttggagatccacatc</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_ama-1_F</td>
+      <td>PMID:23540702</td>
+      <td>qPCR primers</td>
+      <td>agtgccgagattgaaggaga</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_ama-1_R</td>
+      <td>PMID:23540702</td>
+      <td>qPCR primers</td>
+      <td>gtattgcatgttacctttttcaacg</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_metr-1_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>Used for qRT-PCR as described in methods, GGAGCAGCTACTGGTAGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_metr-1_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>Used for qRT-PCR as described in methods, CACAGATGGCGAAATTGAGAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_mtrr-1_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>Used for qRT-PCR as described in methods, TACGTTCTTCTCGGTCTCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_mtrr-1_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>Used for qRT-PCR as described in methods, AGAGCTGTCAGTTGTTTGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_sams-1_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>Used for qRT-PCR as described in methods, ATTATCAAGGAGCTCGACCT</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_sams-1_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>Used for qRT-PCR as described in methods, ATGGGAACTCAGAGTGACC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_ahcy-1_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>Used for qRT-PCR as described in methods, CGATTGCGAGATTGACGTC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_ahcy-1_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>Used for qRT-PCR as described in methods, GTGTAACGGTCAACCTGTG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_mel-32_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>Used for qRT-PCR as described in methods, TGACTCATGGATTCTTCACCC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_mel-32_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>Used for qRT-PCR as described in methods, GATCAACCTTGTATGGAAGAGAC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_mthf-1_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>Used for qRT-PCR as described in methods, GTTGAGACCGATGAGAATGC</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_mthf-1_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>Used for qRT-PCR as described in methods, TTCATAATGCTTTGGTGACCAG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_pmt-2_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>Used for qRT-PCR as described in methods, TTCATGTCGAAGTTTACCCA</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_pmt-2_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>Used for qRT-PCR as described in methods, GTCCTTCTCGATGTATCCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_cbs-1_F</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>Used for qRT-PCR as described in methods, GAAGCTAGAGTATCTCAATATTGCG</td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>q_cbs-1_R</td>
+      <td>This paper</td>
+      <td>qPCR primers</td>
+      <td>Used for qRT-PCR as described in methods, CCAATCTCTTCAGCAAACTGG</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>CloudMap</td>
+      <td>PMID:23051646</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DolphinNext</td>
+      <td>PMID:32306927</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>DESeq2</td>
+      <td>PMID:25516281</td>
+      <td>RRID:SCR_01568</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>WormFinder.m</td>
+      <td>This paper</td>
+      <td></td>
+      <td>See methods, Available on github: https://github.com/shiaway/wormFinder/blob/master/wormFinder.m</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>GETprime</td>
+      <td>PMID:21917859</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>fiji/imageJ</td>
+      <td>PMID:22743772</td>
+      <td>RRID:SCR_002285</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### C. elegans strains
 
 Animals were maintained on nematode growth media (NGM) as described (Brenner, 1974) with the following modifications. Soy peptone (Thomas Scientific) was used in place of bactopeptone and 0.64 nM vitamin B12 was added to maintain strains. N2 (Bristol) was used as the wild type strain. Animals were fed a diet of E. coli OP50 unless otherwise noted. The wwIs24[Pacdh-1::GFP + unc-119(+)] (VL749) strain was described previously (Arda et al., 2010; MacNeil et al., 2013). nhr-114(gk849), metr-1(ok521), and sams-1(ok 2946) were retrieved from the C. elegans Gene Knock-out Consortium (CGC), and nhr-10(tm4695) was obtained from the National Bioresource Project, Japan. All mutant strains were backcrossed three times with N2 wild type animals and crossed with VL749 prior to use in experiments. VL868 [wwIs24[Pacdh-1::GFP + unc-119(+)];nhr-10(tm4695)], VL1127 [wwIs24[Pacdh-1::GFP + unc-119(+)];nhr-114(gk849)], VL1102 [wwIs24[Pacdh-1::GFP + unc-119(+)];metr-1(ok521)], and VL1115 [wwIs24[Pacdh-1::GFP + unc-119(+)];sams-1(ok2946)] are referred to in the text as ∆nhr-10, ∆nhr-114, ∆metr-1 and ∆sams-1 respectively. C. elegans strain CB4856 (Hawaiian) strain was obtained from the CGC.
 
-## Bacterial strains
+### Bacterial strains
 
 E. coli OP50 and E. coli HT115 were obtained from the CGC and grown from single colony to saturation overnight in Luria-Bertani Broth (LB) at 37°C, shaking at 200 rpm. E. coli HT115 carrying RNAi plasmids were maintained on 50 µg/mL ampicillin.
 
-## GFP intensity measurement using image analysis
+### GFP intensity measurement using image analysis
 
 Raw images were analyzed using Fiji/ImageJ (v1.53, Schindelin et al., 2012). Animals in brightfield images were outlined manually using the selection tool. Measurements of area, integrated density and mean gray value were redirected to the same animal in the corresponding fluorescent image. Several surrounding background measurements were also selected, and their mean gray values were averaged. Corrected total fluorescence was calculated by subtracting the product of the object’s area and the mean gray value of the background from the object’s integrated density as described previously (McCloy et al., 2014).
 
-## EMS screen
+### EMS screen
 
 The EMS mutagenesis protocol was adapted from Jorgensen and Mango, 2002. Pacdh-1::GFP;nhr-10(tm4695) animals were treated with 50 mM ethyl methanesulfonate (EMS, Sigma) for four hours and then washed five times with M9 buffer. Mutagenized animals were allowed to recover on NGM agar plates seeded with E. coli OP50, and 200 animals were picked and transferred to NGM agar plates containing 20 nM vitamin B12. F2 animals were screened for the presence of GFP. At least 8000 haploid genomes were screened, and 27 homozygous mutants were selected, 16 of which remained viable.
 
-## Mutant mapping
+### Mutant mapping
 
 Chromosome assignment was done by crossing EMS mutants into the CB4856 (Hawaiian) strain. Separate pools of GFP positive and GFP negative F2 animals were mapped using single-nucleotide polymorphisms as described (Davis et al., 2005).
 
-## Whole genome sequencing
+### Whole genome sequencing
 
 Mutant strains ww50, ww51, ww52, ww53, ww54, ww55, and ww56 were backcrossed four to five times to the VL868 [wwIs24[Pacdh-1::GFP + unc-119(+)];nhr-10(tm4695)] parental strain prior to sequencing. Genomic DNA was prepared by phenol-chloroform extraction and ethanol precipitation. Fragmentation was carried out on a Covaris sonicator E220 and 300–400 bp size fragments were collected using AMPure beads. Libraries were prepared and barcoded using the Kapa hyper prep kit (KK8500). Samples were sequenced at the core facility of the University of Massachusetts Medical school on an Illumina HiSeq4000 using 50 bp paired-end reads. After filtering out low-quality reads, 300 million reads were recovered resulting in an 18X average coverage of the genome. Reads were mapped to the C. elegans reference genome version WS220 and analyzed using the CloudMap pipeline (Minevich et al., 2012) where mismatches were compared to the parental strain as well as to the other sequenced mutants. Variants with unique mismatches were validated by restriction fragment length polymorphism PCR (RFLP) and sanger sequencing.
 
-## RNAi screen
+### RNAi screen
 
 RNAi screening was carried out as described (Conte et al., 2015). Briefly, RNAi clones were cultured in 96 well deep-well dishes in LB containing 50 µg/ml ampicillin and grown to log-phase at 37°C. Clone cultures were concentrated to 20-fold in M9 buffer and 10 µL was plated onto a well of a 96-well plate containing NGM agar with 2 mM Isopropyl β- d-1-thiogalactopyranoside (IPTG, Fisher Scientific). Plates were dried and stored at room temperature. The next day approximately 15–20 synchronized L1 animals per well were plated, followed by incubation at 20°C. Plates were screened 72 hr later. The metabolic gene RNAi screen using VL868 [wwIs24[Pacdh-1::GFP + unc-119(+)];nhr-10(tm4695)] animals was performed twice. The TF RNAi screen using the Met/SAM cycle mutants generated by EMS was performed six times. All final hits were sequence-verified and retested on 35 mm NGM agar plates with approximately 200 animals per condition.
 
-## Expression profiling by RNA-seq
+### Expression profiling by RNA-seq
 
 Animals were treated with NaOH-buffered bleach, L1 arrested and plated onto NGM plates supplemented with 20 nM vitamin B12 and fed E. coli OP50. 400 late L4/early young adult animals were picked into M9 buffer, washed three times and flash frozen in liquid nitrogen. Total RNA was extracted using TRIzol (ThermoFisher), followed by DNase I (NEB) treatment and purified using the Direct-zol RNA mini-prep kit (Zymo research). RNA quality was verified by agarose gel electrophoresis and expression of known genes were measured via qRT-PCR for quality control. Two biological replicates were sequenced by BGI on the BGISEQ-500 next generation sequencer platform using 100 bp paired-end reads. A minimum of approximately 40 million reads was obtained per sample. Raw reads were processed on the DolphinNext RSEM v1.2.28 pipeline revision 7 (Yukselen et al., 2020). In brief, the reads were mapped by bowtie2 to genome version c_elegans.PRJNA13758 (WormBase WS271), and then passed to RSEM for estimation of TPM and read counts. Default parameters were used for both bowtie2 and RSEM.
 
@@ -141,14 +495,14 @@ The libraries were first demultiplexed by a homemade python script, and adapter 
 
 The RNA-sequencing data files were deposited in the NCBI Gene Expression Omnibus (GEO) under the following accession numbers:
 
-## Expression profiling by qRT-PCR
+### Expression profiling by qRT-PCR
 
 Animals were grown and harvested, and RNA was extracted as described for the RNA-seq experiments. qRT-PCR was performed as described previously (Bulcha et al., 2019). cDNA was reverse transcribed from total RNA using oligo(dT) 12–18 primer (Invitrogen) and Mu-MLV Reverse Transcriptase (NEB). qPCR primers were designed using the GETprime database (Gubelmann et al., 2011). qPCR reactions were carried out in technical triplicate using the StepOnePlus Real-Time PCR system (Applied Biosystems) and Fast Sybr Green Master Mix (ThermoFisher Scientific). Relative mRNA transcript abundance was calculated using the ∆∆CT method (Schmittgen and Livak, 2008) and normalized to the geometric mean of ama-1 and act-1 levels.
 
-## Body size measurement
+### Body size measurement
 
 Approximately 100 synchronized L1 animals were plated across four wells of a 48-well plate per condition. L4 animals were collected and washed three times in 0.03% sodium azide and transferred to a 96-well plate. Excess liquid was removed, and plates were rested for an hour to allow animals to settle and straighten. Pictures were taken using an Evos Cell Imaging System microscope and image processing was done using a MATLAB (MathWorks) script named ‘wormFinder.m’ written in-house and made available at the following link: https://github.com/shiaway/wormFinder/blob/master/wormFinder.m (Ponomarova and Giese, 2020)
 
-## Gas chromatography-mass spectrometry
+### Gas chromatography-mass spectrometry
 
 For Figure 5A, gravid adults were harvested from liquid S media cultures supplemented with or without 64 nM vitamin B12 and fed concentrated E. coli OP50. For Figure 5E, gravid adults were harvested from NGM agar plates treated with 64 nM vitamin B12 and seeded with E. coli OP50. Animals were washed in 0.9% saline until the solution was clear and then twice more (3–6 times total). Metabolites were extracted and analyzed as described previously (Na et al., 2018). Briefly, 50 µL of a semi-soft pellet of animals was transferred to a 2 mL FastPrep tube (MP Biomedicals) and flash frozen with liquid nitrogen. Metabolites were extracted in 80% cold methanol. Acid-washed micro glass beads (Sigma) and a FastPrep-24 5G homogenizer (MP Biomedicals) were used to disrupt animal bodies. After settling, supernatant was transferred to glass vials (Sigma) and dried by speed-vac overnight. MeOX-MSTFA derivatized samples were analyzed on an Agilent 7890B/5977B single quadrupole GC-MS equipped with an HP-5ms Ultra Inert capillary column (30 m × 0.25 mm×0.25 μm) using the same method as described (Na et al., 2018).

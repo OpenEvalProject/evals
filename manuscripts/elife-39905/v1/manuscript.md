@@ -38,7 +38,7 @@
 
 ## Abstract
 
-10.7554/eLife.39905.001 Osteoarthritis is characterized by articular cartilage breakdown, and emerging evidence suggests that dysregulated innate immunity is likely involved. Here, we performed proteomic, transcriptomic, and electron microscopic analyses to demonstrate that mast cells are aberrantly activated in human and murine osteoarthritic joint tissues. Using genetic models of mast cell deficiency, we demonstrate that lack of mast cells attenuates osteoarthritis in mice. Using genetic and pharmacologic approaches, we show that the IgE/FcεRI/Syk signaling axis is critical for the development of osteoarthritis. We find that mast cell-derived tryptase induces inflammation, chondrocyte apoptosis, and cartilage breakdown. Our findings demonstrate a central role for IgE-dependent mast cell activation in the pathogenesis of osteoarthritis, suggesting that targeting mast cells could provide therapeutic benefit in human osteoarthritis. Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed ( see decision letter ).
+Osteoarthritis is characterized by articular cartilage breakdown, and emerging evidence suggests that dysregulated innate immunity is likely involved. Here, we performed proteomic, transcriptomic, and electron microscopic analyses to demonstrate that mast cells are aberrantly activated in human and murine osteoarthritic joint tissues. Using genetic models of mast cell deficiency, we demonstrate that lack of mast cells attenuates osteoarthritis in mice. Using genetic and pharmacologic approaches, we show that the IgE/FcεRI/Syk signaling axis is critical for the development of osteoarthritis. We find that mast cell-derived tryptase induces inflammation, chondrocyte apoptosis, and cartilage breakdown. Our findings demonstrate a central role for IgE-dependent mast cell activation in the pathogenesis of osteoarthritis, suggesting that targeting mast cells could provide therapeutic benefit in human osteoarthritis.Editorial note: This article has been through an editorial process in which the authors decide how to respond to the issues raised during peer review. The Reviewing Editor's assessment is that all the issues have been addressed (see decision letter).
 
 ## Introduction
 
@@ -50,37 +50,101 @@ Several studies have documented the presence of mast cells and their mediators i
 
 ## Results
 
-## Enhanced mast cell tryptase release, degranulation, and activation in osteoarthritis
+### Enhanced mast cell tryptase release, degranulation, and activation in osteoarthritis
 
 Guided by knowledge that mast cells are present in osteoarthritic synovium (Buckley et al., 1998; de Lange-Brokaar et al., 2016; Lee et al., 2013), we analyzed synovial fluids for the mast cell-specific product, tryptase. We compared tryptase levels in the synovial fluids from individuals with osteoarthritis with those from non-osteoarthritis controls with prior joint trauma >6 months prior to sample collection but no radiographic osteoarthritis. Using Tosyl-Gly-Pro-Lys-pNA-based quantification, we found significantly elevated levels of catalytically active tryptase in synovial fluids from individuals with osteoarthritis as compared to non-osteoarthritis controls (Figure 1a). We also directly visualized mast cell degranulation in osteoarthritis by performing immuno-electron microscopy on synovial tissue sections stained with gold particle-labeled anti-tryptase antibody. Mast cells exhibiting features including tryptase-containing granule matrices located outside of the plasma membrane and/or fusion of granule and plasma membranes were identified as actively degranulating or degranulated (Figure 1b). We found significantly increased percentages of degranulated mast cells in osteoarthritic synovial linings compared to those from non-osteoarthritic joints (Figure 1c). Immuno-electron microscopy of these sections with a gold-labeled isotype-matched control antibody did not result in positive staining of mast cells (Figure 1—figure supplement 1), confirming the specificity of the anti-tryptase staining of mast cells. Nevertheless, anti-tryptase staining of osteoarthritic and non-osteoarthritic synovial linings revealed no significant differences between the numbers of mast cells present in these samples (Figure 1—figure supplement 2). Together, these findings demonstrate that mast cells are actively degranulating to release tryptase in osteoarthritic joints.
 
+![Figure 1.](https://cdn.elifesciences.org/articles/39905/elife-39905-fig1-v1.jpg)
+
+**Figure 1.:** (a) Tosyl-Gly-Pro-Lys-pNA-based quantification of active tryptase in synovial fluids from individuals with osteoarthritis (OA; n = 35) and from individuals with prior joint trauma but no radiographic osteoarthritis (PT non-OA; n = 16). Bars represent mean ± s.d. **p≤0.01 by Mann-Whitney test, and results are representative of the results of three independent experiments performed using two independent sample sets. (b) Representative transmission electron microscopy images of osteoarthritic and non-osteoarthritic synovial tissue sections immuno-labeled with a gold-conjugated anti-tryptase antibody. Left panels: A quiescent mast cell with many cytoplasmic granules exhibiting strong immunoreactivity for tryptase and an intact plasma membrane (black arrowheads) in non-osteoarthritic synovial lining (Non-OA). Right panels: A degranulated mast cell exhibiting an exteriorized granule matrix with tryptase immunoreactivity (red arrowhead) in an osteoarthritic synovial lining (OA). There is also some other tryptase immunoreactivity apparent outside of this cell (blue arrowheads), likely derived from exteriorized granule matrices. Lower panels are higher magnification (8000×) images of area shown in blue box in the corresponding upper panels (1500×). (c) Percentage of degranulated mast cells in synovial tissues obtained from individuals with osteoarthritis (n = 5) and non-osteoarthritis (n = 5). Intact and degranulated mast cells were counted by an examiner blinded to sample group assignment. Data are mean ± s.d. **p<0.01 by Student’s t-test, and are representative of three independent experiments using independent sample sets.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/39905/elife-39905-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Representative TEM images of an osteoarthritic synovial lining following immuno-labelling with gold-conjugated isotype-matched control antibody (isotype-matched control for the anti-tryptase antibody in Figure 1b). Presented are a representative 2,500× magnification image (left panel), and an 8,000× magnification image of the area demarcated by the red box (right panel).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/39905/elife-39905-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) Synovial tissue samples from osteoarthritis (OA) and post-trauma non-OA joints were stained with anti-tryptase antibody to identify mast cells (representative images are provided). (b) Quantification of the number of tryptase+ mast cells per high powered field in each synovial sample. The mean % of total synoviocytes for each synovial sample is displayed. Statistical comparison of the OA vs. PT, Non-OA groups were performed using Student’s t test (NS = non-significant).
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/39905/elife-39905-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** (a) Unsupervised hierarchical cluster analysis of microarray-based gene expression profiles in synovial membranes derived from individuals with early- or end-stage osteoarthritis or healthy synovium (downloaded from NCBI Gene Expression Omnibus, accession code GSE32317), with analyses limited to genes related to mast cell development, survival, function, and activation. (b) Supervised hierarchical cluster analyses of gene expression profiles in microarray datasets from synovial membranes of individuals with early- or end-stage osteoarthritis and healthy control synovium using a set of genes restricted to mast cell differentiation, chemotaxis, and function. Scale represents Z-scores.
+
 We also analyzed the gene expression of mast cell-related surface receptors, chemoattractants, and degranulation products in synovial membranes from individuals with early- or end-stage osteoarthritis and from healthy synovium. Unsupervised clustering of genes involved in mast cell survival, function or activation revealed two main clusters – osteoarthritis and healthy comparator synovium – with a statistically-significant broad upregulation of mast cell-related genes in the osteoarthritic relative to healthy synovium (Figure 1—figure supplement 2a). Supervised clustering of genes grouped based on their known function and segregated by disease stage of osteoarthritis revealed that genes involved in mast cell proliferation and survival (e.g., KIT and IL3RA), protease processing and/or stabilization (e.g., SRGN and CTSB), and Fc receptor subunits (e.g., FCER1A and FCER1G) were significantly upregulated in the synovium of both early- and end-stage osteoarthritis compared to the healthy synovium (Figure 1—figure supplement 2b). Further, the expression of genes encoding pre-formed mediators such as proteases (e.g., tryptase-encoding genes TPSAB1, TPSB2 and TPSD1) were likewise upregulated in osteoarthritic as compared to healthy synovial membranes (Figure 1—figure supplement 2b). These findings suggest that mast cells are transcriptionally active in osteoarthritic synovial tissues.
 
-## Genetic elimination or pharmacologic inhibition of mast cells attenuates osteoarthritis
+### Genetic elimination or pharmacologic inhibition of mast cells attenuates osteoarthritis
 
 To evaluate whether mast cells directly participate in the pathogenesis of osteoarthritis, we surgically induced osteoarthritis through destabilization of the medial meniscus (DMM) (Glasson et al., 2007; Loeser et al., 2013) in mice lacking mast cells. We used two distinct mouse models of mast cell deficiency: 1) C57BL/6J-KitW-sh/W-sh (KitW-sh/W-sh) mice (Grimbaldeston et al., 2005), which have a large gene inversion that results in reduced expression of c-kit, the receptor for the major mast cell growth factor stem cell factor, and 2) Cpa3-Cre;Mcl-1fl/fl (Hello Kitty) mice, a c-kit-independent model of mast cell deficiency (Reber et al., 2012). Deficiency of mast cells in either model conferred significant protection against osteoarthritis-related pathologies (Figure 2a–d, Figure 2—figure supplement 1, and Figure 2—figure supplement 2). Twenty weeks after DMM surgery, cartilage loss, osteophyte formation, and synovitis were significantly reduced in KitW-sh/W-sh mice compared to their age-matched, mast cell-sufficient littermate controls (C57BL/6J mice) (Figure 2a–d, Figure 2—figure supplement 2). We validated this observation in the Cpa3-Cre;Mcl-1fl/fl mice, which also developed less severe cartilage loss, osteophyte formation, and synovitis 20 weeks after DMM surgery (Figure 2—figure supplement 1).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/39905/elife-39905-fig2-v1.jpg)
+
+**Figure 2.:** (a–d) Cartilage degradation in medial regions of stifle joints from C57BL/6J mast cell-sufficient mice (Wild-type +PBS; n = 7), mast cell-deficient mice (KitW-sh/W-sh + PBS; n = 5), and mast cell-deficient mice engrafted with BMCMCs (KitW-sh/W-sh + BMCMCs; n = 5) 20 weeks after DMM surgery. Representative Safranin-O-stained sections of medial regions of stifle joints from these mice are shown (a); arrowheads show severe cartilage loss. Cartilage degradation (b), osteophyte formation (c), and synovitis (d) in medial regions of stifle joints from these mice are quantified. (e–h) Cartilage degradation in medial regions of stifle joints from C57BL/6J mice subjected to DMM surgery and then treated by oral gavage with vehicle (n = 8) or imatinib 100 mg/kg/d (n = 6) for 12 weeks. Representative Safranin-O stained medial stifle joint sections from these mice are shown (e); arrowheads show severe cartilage loss. Cartilage degeneration (f), osteophyte formation (g), and synovitis (h) in medial regions of stifle joints from these mice are quantified. Symbols represent scores from individual mice. Bars denote mean ± s.d. *p≤0.05, **p≤0.01, by multiple comparisons one-way ANOVA. Scale bars, 200 μm. Scoring of joint pathologies was done by an investigator blinded to the experimental groups. Results are representative of three independent experiments for imatinib treatment, and two independent experiments for KitW-sh/W-sh deficient mice. PBS, phosphate-buffered saline; BMCMCs, bone marrow-derived cultured mast cells; DMM, destabilization of the medical meniscus.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/39905/elife-39905-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a-d) Cartilage degradation in medial regions of stifle joints from Cpa3-Cre;Mcl1+/+ mast cell-sufficient mice (Cpa3-Cre;Mcl1+/+ + PBS; n=6), cKit-independent (Cpa3-Cre;Mcl1fl/fl) mast cell-deficient mice (Cpa3-Cre;Mcl1fl/fl + PBS; n=7), and Cpa3-Cre;Mcl1fl/fl mice engrafted with BMCMCs (Cpa3-Cre;Mcl1fl/fl + BMCMCs; n=8) 20 weeks after DMM surgery. Representative safranin-O-stained sections of medial regions of stifle joints from these mice are shown (a); arrowheads show severe cartilage loss. Cartilage degradation (b), osteophyte formation (c), and synovitis (d) in medial regions of stifle joints from these mice are quantified. Symbols represent scores from individual mice. Bars denote mean ± s.d. *P≤0.05, **P≤0.01 by multiple comparisons one-way ANOVA. Scale bars, 200μm. Scoring of joint pathologies was done by two investigators blinded to experimental groups. Data are representative of two independent experiments with similar results. PBS, phosphate-buffered saline; BMCMCs, bone marrow-derived cultured mast cells; DMM, destabilization of the medial meniscus.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/39905/elife-39905-fig2-figsupp2-v1.jpg)
+
+**Figure 2—figure supplement 2.:** Representative H&E-stained knee joint of stifle joints from C57BL/6J mast cell-sufficient mice (wild-type + PBS), mast cell-deficient mice (KitW-sh/W-sh + PBS), and mast cell-deficient mice engrafted with BMCMCs (KitW-sh/W-sh + BMCMCs) 20 weeks after DMM surgery. Open arrows indicate synovial inflammation or synovial thickening, yellow arrow indicates osteophyte. Scale bars, 200μm. *P ≤0.05 by Student’s t test.
+
+![Figure 2—figure supplement 3.](https://cdn.elifesciences.org/articles/39905/elife-39905-fig2-figsupp3-v1.jpg)
+
+**Figure 2—figure supplement 3.:** (a) Representative toluidine blue stained sections of stifle joints from c-kit-dependent mast cell-deficient KitW-sh/W-sh mice (KitW-sh/W-sh + PBS), c-kit-dependent mast cell-deficient mice engrafted with BMCMCs (KitW-sh/W-sh + BMCMCs), and C57BL/6J mast cell-sufficient mice (Wild-type + PBS). Mast cells (red arrows in high magnification images) were present in mast cell-sufficient controls (Wild-type + PBS, left panels) and mast cell-engrafted mice (KitW-sh/W-sh + BMCMCs, right panels), but not in the mast cell-deficient mice (KitW-sh/W-sh + PBS, middle panels). (b) Quantification of toluidine blue-stained mast cells in (a). (c) Representative toluidine blue staining of stifle joint sections from c-kit-independent (Cpa3-Cre;Mcl1fl/fl) mast cell-deficient mice (Cpa3-Cre;Mcl1fl/fl + PBS), Cpa3-Cre;Mcl1fl/fl mice engrafted with BMCMCs (Cpa3-Cre;Mcl1fl/fl + BMCMCs), and Cpa3-Cre;Mcl1+/+ mast cell-sufficient control mice (Cpa3-Cre;Mcl1+/+ + PBS). Mast cells (red arrows in high magnification images) were present in mast cell-sufficient controls (Cpa3-Cre;Mcl1+/+ + PBS, left panels) and mast cell-engrafted mice (Cpa3-Cre;Mcl1fl/fl + BMCMCs, right panels), but not in the mast cell-deficient mice (Cpa3-Cre;Mcl1fl/fl + PBS, middle panels). (d) Quantification of toluidine blue-stained mast cells in (c). (e) To further characterize Cpa3-Cre;Mcl1fl/fl mice that developed cartilage degeneration (Figure 2—figure supplement 1b), anti-tryptase antibody staining was performed on sections of the affected joints. Tryptase-positive mast cells (red arrows) were identified in the joints of most Cpa3-Cre;Mcl1fl/fl mice that developed osteoarthritis. Scale bars are 200μm for the lower magnification images (upper panels), and 50 μm for the higher magnification images (lower panels). DMM, destabilization of the medial meniscus. Statistical comparisons were performed using Tukey’s multiple comparison test (*P <0.05, **P < 0.01). PBS, phosphate-buffered saline. BMCMCs, bone marrow-derived cultured mast cells.
+
+![Figure 2—figure supplement 4.](https://cdn.elifesciences.org/articles/39905/elife-39905-fig2-figsupp4-v1.jpg)
+
+**Figure 2—figure supplement 4.:** (a) Representative H&E-stained knee joint of stifle joints from C57BL/6J mice treated with vehicle or imatinib for 12 weeks following DMM surgery. (b) Representative immunohistochemical staining with anti-tryptase antibodies of stifle joints from C57BL/6J mice treated with vehicle or imatinib. Black arrows indicate tryptase+ (brown) mast cells. (c) Quantification of tryptase-positive cells in high power field images from knees of mice described in (b). Scale bars, 200μm. *P ≤0.05 by Student’s t test.
 
 Mast cell-deficient KitW-sh/W-sh and Cpa3-Cre;Mcl-1fl/fl mice have phenotypic abnormalities in addition to their mast cell deficiencies. For example, KitW-sh/W-sh mice have increased levels of circulating neutrophils and basophils, while Cpa3-Cre;Mcl-1fl/fl mice have reduced numbers of basophils (Lilla et al., 2011; Reber et al., 2012; Tsai et al., 2005). To ascertain whether the reduction in osteoarthritis-related pathology in KitW-sh/W-sh and Cpa3-Cre;Mcl-1fl/fl mice was in fact due to the absence of mast cells, we engrafted bone marrow-derived mast cells into KitW-sh/W-sh and Cpa3-Cre;Mcl-1fl/fl mice to generate mast cell-sufficient mice. Toluidine blue staining confirmed the presence of mast cells within synovium derived from C57BL/6J and Cpa3-Cre;Mcl-1+/+control mice and within the synovium of mast cell-engrafted mice, whereas no mast cells were detected in most mast cell-deficient mice (Figure 2—figure supplement 3a and c). Quantification of toluidine blue-stained mast cells in the synovium derived from these mice demonstrated significant reductions in mast cell numbers in the synovium of KitW-sh/W-sh and Cpa3-Cre;Mcl-1fl/fl mice as compared to the C57BL/6J and Cpa3-Cre;Mcl-1+/+control mice and the mast cell-engrafted mice (Figure 2—figure supplement 3b and d). Mast cell engraftment reversed the relative protection conferred by mast cell deficiency; that is, there was no overt difference in the degree of cartilage degradation (Figure 2a and b, Figure 2—figure supplement 1a and b), osteophyte formation (Figure 2c, Figure 2—figure supplement 1c, and Figure 2—figure supplement 2), or synovitis (Figure 2d, Figure 2—figure supplement 1d, and Figure 2—figure supplement 2) between mast cell-sufficient control mice and the corresponding mast cell-engrafted genetically mast cell-deficient mice 20 weeks after DMM. Given that several of the Cpa3-Cre;Mcl-1fl/fl mice developed osteoarthritis (Figure 2—figure supplement 1b) and the Cpa3-Cre;Mcl-1fl/fl mast cell deficiency is known to be incompletely penetrant with the presence of residual mast cells observed in certain organs and mice (Lilla et al., 2011; Reber et al., 2012; Tsai et al., 2005), we performed additional anti-tryptase immunostaining of the joint tissues from the Cpa3-Cre;Mcl-1fl/fl mice that developed osteoarthritis following DMM to more comprehensively characterize these mice and their stifle joints for mast cell deficiency. In the Cpa3-Cre;Mcl-1fl/fl mice that developed osteoarthritis, we observed peri-articular tryptase-positive mast cells suggesting that incomplete mast cell deficiency contributed to their development of osteoarthritis (Figure 2—figure supplement 3e). Together, these findings demonstrate that mast cells promote inflammation and cartilage damage in this mouse model of osteoarthritis.
 
 To complement the genetic studies we determined whether pharmacological inhibition with imatinib mesylate (imatinib), a drug that potently inhibits several receptor tyrosine kinases, including c-kit (Juurikivi et al., 2005), a crucial factor for mast cell growth and survival, would be effective in limiting the development of osteoarthritis in wild-type mice. Compared with vehicle-treated mice, treatment with imatinib for 12 weeks following DMM significantly attenuated cartilage degradation (Figure 2e and f), osteophyte formation (Figure 2g, Figure 2—figure supplement 4a), and synovitis (Figure 2h, Figure 2—figure supplement 4a) associated with DMM-induced murine osteoarthritis. Furthermore, immunostaining with anti-tryptase revealed that the total number of mast cells in joints of imatinib-treated mice was significantly less than that in vehicle-treated mice (Figure 2—figure supplement 4b and c).
 
-## Mast cell-derived tryptases promote osteoarthritis-associated pathology
+### Mast cell-derived tryptases promote osteoarthritis-associated pathology
 
 Having established a pathogenic role for mast cells in osteoarthritis and because levels of the activated form of mast cell-derived tryptase are significantly elevated in the synovial fluids of individuals with osteoarthritis, a finding in agreement with previous reports (Nakano et al., 2007), we next investigated mechanisms by which tryptase might promote the pathogenesis of osteoarthritis. We first tested whether selectively inhibiting the protease activity of tryptase with APC366 (Cairns, 2005) – an oral, selective tryptase small-molecule inhibitor previously used to alleviate allergic, inflammatory and fibrotic responses in multiple mouse models (Lu et al., 2014; Matos et al., 2013; Sevigny et al., 2011) - could effectively attenuate the progression and/or severity of osteoarthritis in mice. We found that following DMM, treatment with APC366 for 12 weeks significantly reduced cartilage damage (Figure 3a and b), osteophyte formation (Figure 3c, Figure 3—figure supplement 1) and synovitis (Figure 3d, Figure 3—figure supplement 1) compared to control mice treated with vehicle, suggesting that tryptase inhibition can prevent the development of osteoarthritis in mice. We, additionally, measured the expression of pro-inflammatory and degradative mediators known to be produced by mast cells in DMM joints following treatment with the tryptase inhibitor APC366. Six-weeks after DMM, transcriptional expression of multiple mediators including IL-1β, IL-6, IL-8, CCL2, CCL5, ADAMTS4 and MMP3 was significantly reduced in DMM synovial tissues derived from APC366-treated as compared to vehicle-treated mice (Figure 3e).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/39905/elife-39905-fig3-v1.jpg)
+
+**Figure 3.:** (a–e) Cartilage degradation in medial regions of stifle joints from C57BL/6J mice subjected to DMM surgery and then treated orally with the tryptase inhibitor APC366 5 mg/kg/d (n = 5) or vehicle (n = 7) for 12 weeks. Representative safranin-O stained medial stifle joint sections from these mice are shown (a); arrowheads show severe cartilage loss. Cartilage degeneration (b), osteophyte formation (c), and synovitis (d) in medial regions of stifle joints from these mice are quantified. Scoring of joint pathologies were done by two investigators blinded to experimental groups. Data are representative of three independent experiments. Symbols represent scores from individual mice. Bars are the mean ± s.d. for each group. *p≤0.05, **p≤0.01, by Mann Whitney test. Scale bars, 200 μm. (e) Relative mRNA expression of pro-inflammatory/degradative enzyme genes in mouse stifle joints. (f) Relative mRNA expression of inflammatory/degradative enzyme genes in osteoarthritic synovial fibroblasts treated for 24 hr with 0.2 μg/ml tryptase with or without 100 μM APC366. (g–h) Quantification of IL1β (g) and IFNγ (h) secretion by synovial fibroblasts stimulated for 24 hr. (i) Flow cytometric quantification of Ki-67 +synovial fibroblasts treated with media or 0.2 μg/ml tryptase with or without 100 μM APC366 for 72 hr. (j) Western blot analysis of total ERK1/2, phosphorylated ERK1/2 (p-ERK1/2), and β-actin in primary osteoarthritic synovial fibroblasts treated with media or 0.2 μg/ml tryptase for 72 hr. (k) Ratio of densitometry of p-ERK1/2:ERK1/2 bands from western blot in (j) Data in (f–i) are mean ± s.d. of triplicate values. *p≤0.05, **p≤0.01 by Student’s t test. Results are representative of three independent experiments using samples from independent donors.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/39905/elife-39905-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Representative H&E-stained knee joint sections from C57BL/6J mice treated orally with vehicle (PBS), or the tryptase inhibitor APC366 5 mg/Kg/day every day for 12 weeks following DMM surgery. Osteophytes (yellow arrows) and synovial thickening (open arrows) were prominent in vehicle-treated controls, but not in the APC366-treated mice. Scale bars, 200μm.
+
 As tryptase has been shown to promote pathogenic properties in human rheumatoid arthritis-derived synovial fibroblasts (Xue et al., 2012), we examined whether tryptase could also induce pro-inflammatory and proliferative responses in primary synovial fibroblasts derived from remnant osteoarthritic joint tissue. Indeed, tryptase significantly increased the expression of the pro-inflammatory cytokine IL-1β and degradative enzymes MMP3 and ADAMTS4 (Figure 3f), increased the secretion of cytokines IL-1β (Figure 3g), IFNγ (Figure 3h), and increased synovial fibroblast proliferation in vitro, as demonstrated by increased expression of the activation marker Ki-67 by fibroblasts (Figure 3i). In vitro treatment of synovial fibroblasts with tryptase also promoted phosphorylation of Erk1/2, indicating that tryptase can activate pro-inflammatory signaling pathways in synovial fibroblasts (Figure 3j and k). Further, in vitro inhibition of tryptase activity with APC366 abrogated the pro-inflammatory and proliferative responses of synovial fibroblasts (Figure 3f–i).
 
-## IgE deficiency attenuates osteoarthritis-associated pathology in mice
+### IgE deficiency attenuates osteoarthritis-associated pathology in mice
 
 While mast cells can be activated by a wide range of stimuli, IgE mediates mast cell degranulation and release of biologically active mediators through cross-linking of the high affinity IgE receptor, FcεRI (Galli and Tsai, 2012; Gilfillan and Tkaczyk, 2006). We hypothesized that IgE might mediate mast cell activation in osteoarthritis. To determine the potential role of IgE in the pathogenesis of osteoarthritis, we subjected IgE-deficient (Igh7-/-) mice and IgE-sufficient littermate controls (Igh7+/+) to DMM. Twenty weeks after DMM surgery, IgE-deficient mice exhibited markedly diminished cartilage damage (Figure 4a and b), osteophyte formation (Figure 4c, Figure 4—figure supplement 1a), and synovitis (Figure 4d, Figure 4—figure supplement 1a).
 
+![Figure 4.](https://cdn.elifesciences.org/articles/39905/elife-39905-fig4-v1.jpg)
+
+**Figure 4.:** (a–d) Cartilage degradation in medial regions of stifle joints from C57BL/6J IgE-deficient (Igh7-/-, n = 7) and IgE-sufficient (Igh7+/+, n = 6) mice 20 weeks after DMM surgery. Representative safranin-O stained medial stifle joint sections from these mice are shown (a); arrowheads show severe cartilage loss. Quantification of cartilage degradation (b), osteophyte formation (c), and synovitis (d). (e–h) Cartilage degradation in medial regions of stifle joints from C57BL/6J mice subjected to DMM surgery and then treated i.p. with anti-IgE antibody (n = 6) or isotype-matched control antibody (n = 7) 2.5 mg/kg twice per week for 12 weeks. Representative Safranin-O stained medial stifle joint sections from these mice are shown (e); arrowheads show severe cartilage loss. Cartilage degeneration (f), osteophyte formation (g), and synovitis (h) in medial regions of stifle joints from these mice are quantified. Symbols represent scores from individual mice. Bars denote mean ± s.d. *p≤0.05, **p≤0.01, by Mann Whitney test. Scale bars, 200 μm. Scoring of joint pathologies was performed by an investigator blinded to experimental groups. Data are representative of two independent experiments with similar results.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/39905/elife-39905-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Representative H&E-stained knee joint sections from IgE-sufficient (Igh-7+/+) and IgE-deficient (Igh-7-/-) mice 20 weeks after DMM surgery. (b) Representative H&E-stained knee joint sections from C57BL/6J mice administered with isotype control (IgG1κ), or anti-IgE (2.5 mg/Kg/day) antibodies twice a week for 12 weeks following DMM surgery. Yellow arrows show osteophyte and open arrows show synovial thickening or synovitis. Scale bars, 200μm.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/39905/elife-39905-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Quantification of mast cells by toluidine blue staining of joint tissue derived from IgE-sufficient (Igh-7+/+) and IgE-deficient (Igh-7-/-) mice 20 weeks following surgical DMM from Figure 4a. Statistical comparisons were performed using Student’s t test (*P <0.05).
+
 To extend this observation, we treated mice with an anti-IgE neutralizing antibody that prevented IgE binding to FcεRI for 12 weeks following DMM surgery. Compared with isotype control-treated mice, treatment with anti-IgE antibody significantly attenuated cartilage degradation (Figure 4e and f), osteophyte formation (Figure 4g, Figure 4—figure supplement 1b), and synovitis (Figure 4h, Figure 4—figure supplement 1b). Together, these studies demonstrate that IgE plays a crucial role in promoting the pathogenesis of murine osteoarthritis.
 
-## IgE signaling through FcεRI promotes pathogenesis of osteoarthritis
+### IgE signaling through FcεRI promotes pathogenesis of osteoarthritis
 
 FcεRI, which is highly expressed on mast cells and basophils, is a tetrameric receptor comprising one α-chain that binds IgE, one β-chain that is a signal amplifier, and two γ-chains that initiate signaling via the spleen tyrosine kinase (Syk). To further define a role for FcεRI in the pathogenesis of osteoarthritis, we performed DMM surgeries in mice deficient in FcεRIα (Fcer1a-/-). We found that mice deficient in FcεRIα, which as a consequence cannot transduce IgE signals, were significantly protected against osteoarthritic development as compared to wild-type controls (Figure 5a). Twenty weeks after DMM, FcεRIα-deficient mice developed significantly less cartilage damage (Figure 5b), osteophyte formation (Figure 5c, Figure 5—figure supplement 1a), and synovitis (Figure 5d, Figure 5—figure supplement 1a).
 
 Given the central role for the tyrosine kinase Syk in FcεRI-mediated signaling, we evaluated whether pharmacologic inhibition of Syk using the potent and selective small molecule inhibitor PRT062607 (Coffey et al., 2017; Spurgeon et al., 2013) could ameliorate development of murine osteoarthritis. Treatment of mice with PRT062607 for 12 weeks following DMM markedly reduced the development and/or severity of osteoarthritis compared to vehicle-treated mice (Figure 5e). Inhibition of Syk by PRT062607 resulted in decreased cartilage damage (Figure 5f), osteophyte formation (Figure 5g, Figure 5—figure supplement 1b), and synovitis (Figure 5h and Figure 5—figure supplement 1b) relative to vehicle treatment. We used qPCR to analyze the levels of mRNAs encoding pro-inflammatory cytokines and degradative enzymes known to be produced by mast cells. Six-weeks following DMM, transcriptional expression of multiple pro-inflammatory cytokines and proteases including IL-1β, IL-6, CCL2, ADAMTS4 and MMP13 were significantly reduced in DMM joint tissues derived from mice treated with the Syk-inhibitor PRT062607 as compared to vehicle (Figure 5i). Together, these data suggest that the IgE/FcεRI/Syk axis mediates mast cell activation and degranulation and is a key pathogenic mechanism of osteoarthritis.
+
+![Figure 5.](https://cdn.elifesciences.org/articles/39905/elife-39905-fig5-v1.jpg)
+
+**Figure 5.:** (a–d) Cartilage degradation in medial regions of stifle joints from C57BL/6J FcεRIα-sufficient (Fcer1a+/+,n = 8) and FcεRIα-deficient (Fcer1a-/-,n = 8) mice 20 weeks after DMM surgery. Representative safranin-O stained medial stifle joint sections from these mice are shown; arrowheads show severe cartilage loss. Cartilage degradation (b), osteophyte formation (c), and synovitis (d) in medial regions of stifle joints from these mice are quantified. Symbols represent scores from individual mice. Bars denote mean ± s.d. *p≤0.05, **p≤0.01, by Mann Whitney test. Scale bars, 200 μm. Scoring of joint pathologies was done by two investigators blinded to experimental groups. Data are representative of two independent experiments with similar results. DMM, destabilization of the medical meniscus. (e–h) Cartilage degradation in medial regions of stifle joints from C57BL/6J mice subjected to DMM surgery and then orally with vehicle (n = 6) or 75 mg/Kg/day of the Syk inhibitor PRT062607 (n = 7), for 12 weeks. Representative Safranin-O stained medial stifle joint sections from these mice are shown (e); arrowheads show severe cartilage loss. Cartilage degeneration (f), osteophyte formation (g), and synovitis (h) in medial regions of stifle joints from these mice are quantified. Symbols represent scores from individual mice. Bars denote mean ± s.d., **p≤0.01, by Mann Whitney test. Scale bars, 200 μm. Scoring of joint pathologies was done by two investigators blinded to experimental groups. (i) Relative mRNA expression of pro-inflammatory/degradative enzyme genes in mouse stifle joints. Data are representative of two independent experiments with similar results. DMM, destabilization of the medical meniscus.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/39905/elife-39905-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a) Representative H&E-stained knee joint sections from Fcer1a-sufficient (Fcer1a+/+) and Fcer1a-deficient (Fcer1a-/-) mice 20 weeks after DMM surgery. (b) Representative H&E-stained knee joint sections from C57BL/6J mice treated orally with vehicle (PBS), or the Syk inhibitor PRT062607 (75 mg/Kg/day) every day for 12 weeks following DMM surgery. Osteophytes (yellow arrows) and synovial thickening (open arrows) were prominent in vehicle-treated controls, but not in the PRT062607-treated mice. Scale bars, 200μm.
 
 ## Discussion
 
@@ -112,54 +176,169 @@ We propose a model wherein IgE-mediated mast cell activation via FcεRI and Syk�
 
 ## Materials and methods
 
-## Human samples
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>KitW-sh/W-sh</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No. 012861</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cpa3-Cre;Mcl-1fl/fl</td>
+      <td>Lilla et al., 2011</td>
+      <td></td>
+      <td>Dr. Stephen Galli (Stanford University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Cpa3-Cre;Mcl-1+/+</td>
+      <td>Lilla et al., 2011</td>
+      <td></td>
+      <td>Dr. Stephen Galli (Stanford University)</td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Fcer1a-/-</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No.10512</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>C57BL/6J</td>
+      <td>The Jackson Laboratory</td>
+      <td>Stock No. 000664</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Mast Cell Tryptase antibody</td>
+      <td>Abcam</td>
+      <td>catalog #:ab2378 clone: AA1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Mouse IgG1, kappa Isotype Control</td>
+      <td>Crown Biosciences</td>
+      <td>catalog #: c0005</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Phospho-p44/42 MAPK (Erk1/2) (Thr202/Tyr204) Antibody</td>
+      <td>Cell signaling</td>
+      <td>catalog #: 9101</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>p44/42 MAPK (Erk1/2) Antibody</td>
+      <td>Cell signaling</td>
+      <td>catalog #: 4695</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-beta actin antibody</td>
+      <td>Abcam</td>
+      <td>catalog #: Ab8227</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Mast Cell Degranulation Assay Kit,</td>
+      <td>Millipore</td>
+      <td>catalog #: IMM001</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>imatinib mesylate</td>
+      <td>LC Laboratories</td>
+      <td>catalog #: I-5508</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>APC366</td>
+      <td>Tocris</td>
+      <td>catalog #: 2511</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>PRT062607</td>
+      <td>Synnovator</td>
+      <td>catalog #: 1370261-97-4</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Human samples
 
 All human samples were obtained and studied under protocols that included written informed consent and consent to publish and that were approved by the Stanford University Institutional Review Board (IRB) (approval #3780) and the University of Padova IRB (approval #39872). Osteoarthritic synovial membranes were obtained at the time of total joint replacement from individuals with end-stage osteoarthritis at the VA Palo Alto Health Care System. Synovial fluids were obtained from individuals with varying degrees of osteoarthritis severity as assessed by K-L score. Synovial membranes and synovial fluids from individuals undergoing arthroscopic anterior cruciate ligament reconstruction surgery who had no arthroscopic evidence of articular cartilage loss were used as controls.
 
-## Transmission electron microscopy (TEM) analysis of human synovium
+### Transmission electron microscopy (TEM) analysis of human synovium
 
 Synovial membranes from five osteoarthritic knees and five non-osteoarthritic control knees with prior joint trauma >6 months ago but no radiographic osteoarthritis were analyzed, and after staining with immuno-gold labeled anti-tryptase (Abcam, clone AA1) or isotype-matched control antibody the entire post-etch-embedded section for each sample was scanned by TEM. The number of mast cells and degranulated mast cells was determined by an examiner blinded to the experimental group of each sample. Mast cells were identified based on the presence of electron dense granules containing gold-labelled tryptase particles. Degranulation was determined by assessment of fusion of granule plasma membranes, fusion of granule membranes with cell membranes, exteriorization of granules, and presence of tryptase particles outside the exteriorized granule. The percent of degranulating mast cells per total mast cells was calculated for each sample. Multiple independent experiments were performed, and representative images and results are presented.
 
-## Detailed methods
+#### Detailed methods
 
 Synovial lining tissue was fixed in Karnovsky’s fixative containing 2% glutaraldehyde and 4% paraformaldehyde in 0.1 M sodium cacodylate. After an initial ~30 min fixation, the specimens were cut into ~1 mm3 pieces and returned to fresh fixative for 16–24 hr at 4°C. The specimens were washed with 100 mM cacodylate buffer, fixed with 1% osmium tetroxide for 1 hr, washed with excess distilled water then en bloc stained with 1% aqueous uranyl acetate overnight at 4°C. Samples were then dehydrated in a series of ethanol washes, propylene oxide, and embedded in resin. We picked up 75–90 nm sections on formvar/Carbon-coated slot Cu grids, stained them for 30 s in 3.5% uranyl acetate in 50% acetone followed by staining them in 0.2% lead citrate for 3 min. Post-embedding immunolabelling was carried out by micro etching in 10% periodic acid, followed by treatment with 10% sodium meta-periodate. Sections were blocked and stained with anti-human mast cell tryptase antibody (Abcam, clone AA1), or an isotype-matched IgG1 control antibody (Abcam), followed by incubation with a goat anti-mouse antibody conjugated with 10 nm Gold particles (British Biocell). Sections were then observed in a JEOL JEM-1400 120kV transmission electron microscope (JEOL USA) and images captured using a Gatan Orius 4k × 4 k digital camera.
 
-## Measurement of active tryptase in synovial fluids
+### Measurement of active tryptase in synovial fluids
 
 Levels of active tryptase were measured with the tosyl-gly-pro-lys-pNA substrate assay (Mast Cell Degranulation Assay Kit, Millipore) according to the manufacturer's protocols.
 
-## Analysis of mast cell-related gene expression
+### Analysis of mast cell-related gene expression
 
 We downloaded publicly available data from the US National Center for Biotechnology Information Gene Expression Omnibus (NCBI GEO accession codes GSE32317) comparing gene expression profiles of synovial membranes obtained from patients with early- or end-stage osteoarthritis and from individuals with prior joint trauma >6 months ago but no radiographic osteoarthritis (annotated as ‘healthy’ in the online dataset). All microarray analyses were restricted to putative mast cell- and mast cell activation-related genes. Unsupervised and supervised hierarchical clustering analyses were performed on the microarray data by using Cluster and TreeView software. Significance Analysis of Microarrays (SAM) analyses were used for determining statistical significance with a q-value cutoff set at 0.05. Paired or unpaired student’s t-tests were employed where appropriate and p<0.05 was considered statistically significant.
 
-## Surgical induction of osteoarthritis in mice
+### Surgical induction of osteoarthritis in mice
 
 This study was performed in accordance with the recommendations in the Guide for the Care and Use of Laboratory Animals of the National Institutes of Health. All mouse studies were performed under protocols approved by the Stanford University Administrative Panel on Laboratory Animal Care (APLAC approval # 9942) and VA Palo Alto Health Care System Institutional Animal Care and Use Committees (IACUC approvals #ROW1552 and #ROW1755). Littermate controls were used for Cpa3-Cre;Mcl-1fl/fl (B6-Cpa3-Cre;Mcl-1+/+), Igh7-/- (Igh7+/+), and Fcer1a-/- (Fcer1a+/+). A fully congenic KitW-sh/W-sh mouse strain on a C57BL6/J genetic background (Stock No. 012861) and age-matched C57BL/6J (Stock No. 000664) were obtained from The Jackson Laboratory. Destabilization of the medial meniscus (DMM) was performed as described previously (Glasson et al., 2007; Raghu et al., 2017). Five to eight mice were used per experimental arm based on power calculations performed using the PS Power and Sample Size Calculations software program (W.D. Dupont and W.D. Plummer, Department of Biostatistics, Vanderbilt University; Version 2.1.3.0).
 
-## Mast cell engraftment studies
+### Mast cell engraftment studies
 
 To generate mast cell-engrafted mice, we injected 4-week-old, male, mast-cell deficient KitW-sh/W-sh mice and Cpa3-Cre;Mcl-1fl/fl (Hello Kitty) mice intravenously (i.v.) with 107 wild-type bone marrow-derived cultured mast cells (BMCMCs; generated as previously described [Grimbaldeston et al., 2005]), and 8 weeks later with 106 BMCMCs intra-articularly (i.a.) into the stifle joints. Age-matched mast cell-deficient littermate mice injected both i.v. and i.a. with PBS (KitW-sh/W-sh + PBS or Cpa3-Cre;Mcl-1fl/fl +PBS) and mast cell-sufficient mice injected both i.v. and i.a. with PBS (C57BL/6J + PBS or B6-Cpa3-Cre;Mcl-1+/+ + PBS) were used as controls. DMM was then performed at 16 weeks of age. Mast cell engraftment was assessed by toluidine blue staining of stifle joint sections from mice sacrificed 20 weeks after DMM.
 
-## Pharmacologic treatment of murine osteoarthritis
+### Pharmacologic treatment of murine osteoarthritis
 
 Twenty-week-old wild-type C57BL/6J mice were randomized by cage to receive vehicle (water), 100 mg/kg/day imatinib mesylate (LC laboratories) or 5 mg/kg/day APC366 (Tocris) divided between two daily doses or 75 mg/Kg/day PRT062607 (synnovator) once daily by oral gavage for 12 weeks (beginning 24 hr after DMM surgery). Two of eight mice treated with 100 mg/kg/day imatinib were excluded from analyses due to inadequate histology. Similarly, for anti-IgE treatment, twenty-week-old wild-type C57BL/6J mice were administered 2.5 mg/Kg mouse anti-IgE antibody or IgG1κ isotype (Crown Biosciences) i.p. twice a week for 12 weeks. Mouse anti-mouse IgE was made using the sequences derived from the rat hybridoma (R1E4) that specifically binds to the region of mouse IgE known to bind FcεRI (Ota et al., 2009). Mice were sacrificed 12 weeks after DMM for histologic assessment of osteoarthritic development.
 
-## Histologic assessment of osteoarthritic development in mice
+### Histologic assessment of osteoarthritic development in mice
 
 Stifle joints were harvested 12 or 20 weeks after DMM and fixed in 10% neutral buffered formalin followed by decalcification in formic acid for 48 hr. Joints were then embedded in paraffin, and 6 μm sections cut from three separate levels of the joint and stained with Safranin-O for assessment of cartilage damage; H and E for assessment of synovial thickening (synovitis) and osteophyte formation; and toluidine blue for the assessment of mast cells. Cartilage degeneration, synovitis, and osteophyte formation were evaluated by two blinded observers using a modified version of a described scoring system (Kamekura et al., 2005) as we previously described (Wang et al., 2011). In brief: Cartilage degeneration was calculated by depth of cartilage degeneration (score of 0–4)×width of cartilage degeneration (with a score of 1 meaning one-third of the surface area, a score of 2 meaning two-thirds of the surface area, and a score of 3 meaning the whole surface area) in each third of the femoral-medial and tibial-medial condyles. The scores for the six regions were then summed. Synovitis scores were calculated as previously described (Blom et al., 2004): 0, no changes compared to normal joints; 1, thickening of the synovial lining and some influx of inflammatory cells; 2, thickening of the synovial lining and intermediate influx of inflammatory cells; and 3, profound thickening of the synovial lining (more than four cell layers) and maximal observed influx of inflammatory cells. Scores for synovitis were recorded for the femoral-medial and the tibial-medial condyles, and the scores for the two regions summed. Osteophyte formation was scored according to a previously described scoring system (Kamekura et al., 2005): 0, none; 1, formation of cartilage-like tissues; 2, increase of cartilaginous matrix; 3, endochondral ossification. Mast cells were quantified by a blinded examiner who determined the number of toluidine blue-positive mast cells per high power field of the joint sections.
 
-## Immunohistochemical staining of murine joint sections for tryptase
+### Immunohistochemical staining of murine joint sections for tryptase
 
 Synovial sections were fixed, decalcified, blocked, and stained with a biotinylated anti-tryptase antibody (Abcam, clone AA1), followed by avidin-HRP, then TMB substrate, and microscopy performed to determine if tryptase-positive mast cells were present.
 
-## In vitro tryptase stimulation assays
+### In vitro tryptase stimulation assays
 
 Primary synovial fibroblasts were derived from synovium of individuals with end-stage osteoarthritis by enzymatic digestion with 2 mg/ml Collagenase Type IV for 24 hr at 37°C. Passage 3 (P3) fibroblasts were serum starved overnight in 1% fetal bovine serum and then stimulated with media alone (Alpha MEM) or with 0.2 μg/ml tryptase in the presence or absence of 100 μM of the tryptase-selective inhibitor APC366. Their mRNA was isolated, and mRNA levels of pro-inflammatory mediators were measured by qPCR and normalized to those of 18 s. Taqman probes were obtained from Applied Biosystems. Proinflammatory cytokine and chemokine secretion was measured by multiplexed, fluorescent bead-based immunoassay (Luminex) by using the human cytokine 27-plex assay (Bio-Rad). For analysis of Erk activation, 103 primary synovial fibroblasts were stimulated with media alone (Alpha MEM) or with 1 μg/ml tryptase for 30 min and then lysates were run on SDS PAGE gel and western blot analysis was performed with anti-Erk1/2, anti-phosphoErk1/2 or anti-β-actin antibodies.
 
-## Statistics
+### Statistics
 
 For analyses involving a single comparison, statistical comparisons were performed using either a two-tailed Student’s t test or Mann-Whitney U test following tests for variance homogeneity. Multiple comparisons were performed using a one-way analysis of variance (ANOVA) followed by Dunnett’s post-hoc test.
 
-## Study approval
+### Study approval
 
 All human samples were obtained under protocols approved by the Stanford Institutional Review Board (IRB) or the University of Padova IRB, and written informed consent was received from participants prior to inclusion in the study. Participants were identified by numbers, never by name, in this study. All mouse breeding and osteoarthritis studies were performed under protocols approved by the Stanford Committee of Animal Research and in accordance with National Institutes of Health guidelines.

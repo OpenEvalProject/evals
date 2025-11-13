@@ -21,7 +21,7 @@
 
 ## Abstract
 
-Serotonin receptors (5-HT 3A R) play a crucial role in regulating gut movement, and are the principal target of setrons, a class of high-affinity competitive antagonists, used in the management of nausea and vomiting associated with radiation and chemotherapies. Structural insights into setron-binding poses and their inhibitory mechanisms are just beginning to emerge. Here, we present high-resolution cryo-EM structures of full-length 5-HT 3A R in complex with palonosetron, ondansetron, and alosetron. Molecular dynamic simulations of these structures embedded in a fully-hydrated lipid environment assessed the stability of ligand-binding poses and drug-target interactions over time. Together with simulation results of apo- and serotonin-bound 5-HT 3A R, the study reveals a distinct interaction fingerprint between the various setrons and binding-pocket residues that may underlie their diverse affinities. In addition, varying degrees of conformational change in the setron-5-HT 3A R structures, throughout the channel and particularly along the channel activation pathway, suggests a novel mechanism of competitive inhibition.
+Serotonin receptors (5-HT3AR) play a crucial role in regulating gut movement, and are the principal target of setrons, a class of high-affinity competitive antagonists, used in the management of nausea and vomiting associated with radiation and chemotherapies. Structural insights into setron-binding poses and their inhibitory mechanisms are just beginning to emerge. Here, we present high-resolution cryo-EM structures of full-length 5-HT3AR in complex with palonosetron, ondansetron, and alosetron. Molecular dynamic simulations of these structures embedded in a fully-hydrated lipid environment assessed the stability of ligand-binding poses and drug-target interactions over time. Together with simulation results of apo- and serotonin-bound 5-HT3AR, the study reveals a distinct interaction fingerprint between the various setrons and binding-pocket residues that may underlie their diverse affinities. In addition, varying degrees of conformational change in the setron-5-HT3AR structures, throughout the channel and particularly along the channel activation pathway, suggests a novel mechanism of competitive inhibition.
 
 ## Introduction
 
@@ -35,13 +35,37 @@ In the present study, we have solved cryo-EM structures of the full-length 5-HT3
 
 ## Results and discussion
 
-## Cryo-EM structures of setron-5-HT3AR complexes
+### Cryo-EM structures of setron-5-HT3AR complexes
 
 Structures of the full-length 5-HT3AR in complex with setrons were solved by single-particle cryo-EM. Detergent solubilized 5-HT3AR was incubated with 100 µM of palonosetron, ondansetron, or alosetron for 1 hr prior to vitrification on cryo-EM grids. Iterative classifications and C5 symmetry-imposed refinement produced a final three-dimensional reconstruction at a nominal resolution of 3.3 Å for 5-HT3AR-Palono (with 91,163 particles), 3.0 Å for 5-HT3AR-Ondan (67,333 particles), and 2.9 Å for 5-HT3AR-Alo (42,065 particles) (Figure 1—figure supplement 1a and b). The local resolution of the map was estimated using ResMap and in the range of 2.5–3.5 Å for each of these reconstructions (Figure 1—figure supplement 1c). Structural models were built using refined maps containing density for the entire extracellular domain (ECD), transmembrane domain (TMD), and the structured regions of the intracellular domain (ICD) (Figure 1a and Figure 1—figure supplement 2). Overall, each of the setron-bound 5-HT3AR complexes has an architecture similar to previously solved 5-HT3A receptors (Polovinkin et al., 2018; Hassaine et al., 2014; Basak et al., 2018a; Basak et al., 2018b). Three sets of peripheral protrusions corresponding to N-linked glycans are bound to the Asn82, Asn148, and Asn164 in each subunit (Figure 1a, right). A strong, unambiguous density is seen at each of the intersubunit interfaces, corresponding to individual setrons (Figure 1b). Besides this site, no additional densities for setrons were found under these conditions, although there have been predictions that palonosetron may act as both an orthosteric and allosteric ligand (Del Cadia et al., 2013).
 
-## Ligand-Receptor interactions
+![Figure 1.](https://cdn.elifesciences.org/articles/57870/elife-57870-fig1-v2.jpg)
+
+**Figure 1.:** (a) Three-dimensional reconstruction of 5-HT3AR-Alo at 2.92 Å resolution (left) and the corresponding structural model (right) that shows the overall architecture consisting of the extracellular domain (ECD), transmembrane domain (TMD), and structural regions of the intracellular domain (ICD). The alosetron density is shown in deep olive color and the three sets of glycans are shown as stick representation. Arrow points toward the setron density. Solid line denotes putative membrane limits. (b) Extracellular view of 5-HT3AR-Alo (left), 5-HT3AR-Ondan (middle), and 5-HT3AR-Palono (right) maps sliced at the neurotransmitter-binding site. In each case, the five molecules of respective setrons are highlighted in colors. Chemical structures of setrons are shown above.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/57870/elife-57870-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (a) For 5-HT3AR-Ondan (left), 5-HT3AR-Palono (middle), and 5-HT3AR-Alo (right) structures, gold standard Fourier Shell Correlation (FSC) curves generated by comparing two independent half maps produced during refinement in RELION. Horizontal dotted line represents the FSC threshold at 0.143. Nominal resolution of setron-bound 5-HT3AR at FSC0.143 of unmasked (red FSC curve) and masked (blue FSC curve) maps are indicated by arrow. (b) Model and Cryo-EM map correlation indicates no model bias in 5-HT3AR. (c) Side-view of setron-5-HT3AR maps colored based on the local resolution.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/57870/elife-57870-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** Validation of Loop C modelling in the setron-5-HT3AR maps (top). Residues are represented in stick and densities are shown in blue mesh. Loop C meshes are contoured as follows: 5-HT3AR-Ondan (left) at 6 σ, 5-HT3AR-Palono (middle) at 7 σ, and 5-HT3AR-Alo (right) at 6 σ. Cryo-EM densities are shown for the M2 helices (bottom; two subunits are shown for clarity). Contour level of the mesh for 5-HT3AR-Ondan (left), 5-HT3AR-Palono (middle), and 5-HT3AR-Alo are each at 5σ.
+
+### Ligand-Receptor interactions
 
 The map quality was particularly good at the ligand-binding site allowing us to model sidechains and the setron orientation. Setrons bind within the canonical neurotransmitter-binding pocket and are lined by residues from Loops A, B, and C on the principal (+) subunit and Loops D, E, and F from the complementary (-) subunit (Figure 2 and Figure 2—figure supplement 1). Residues within 4 Å of setron include Asn101 in Loop A, Trp156 in Loop B, Phe199, and Tyr207 in Loop C, Trp63 and Arg65 in Loop D, and Tyr126 in Loop E. These residues are strictly conserved, and perturbations at each of these positions impact efficacy of setrons and serotonin (Yan et al., 1999; Duffy et al., 2012; Thompson et al., 2005). In each setron-5-HT3AR complex, the essential pharmacophore of the setron is placed in a similar orientation: the basic amine is at the deep-end of the pocket in the principal subunit; the defining aromatic moiety interacts with residues in the complementary subunit; and the carbonyl-based linker, between the two groups, is essentially coplanar with the aromatic ring.
+
+![Figure 2.](https://cdn.elifesciences.org/articles/57870/elife-57870-fig2-v2.jpg)
+
+**Figure 2.:** (a) Cryo-EM density for the setrons, located at the canonical neurotransmitter-binding site. The map is contoured at 9σ (5-HT3AR-Grani) (Basak et al., 2019); 8.5σ (5-HT3AR-Palono); 7σ (5-HT3AR-Ondan); 6σ (5-HT3AR-Alo). The binding site lies at the interface of the principal (colored) and the complementary (gray) subunits. The binding-site residues are shown in stick representation with residues from the principal subunit labeled in black and those from the complementary subunit in magenta. From top to bottom: 5-HT3AR-Grani, 5-HT3AR-Palono, 5-HT3AR-Ondan, and 5-HT3AR-Alo. (b) LigPlot analysis of setron-5-HT3AR interactions. Most interactions with the setron are hydrophobic in nature (shown by red arch with spikes). Putative hydrogen bond between Trp156 and alosetron is shown as a green dotted line.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/57870/elife-57870-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** The binding-site interactions are calculated by LigPlot. Surface and stick representation of residues which are interacting with setron. Residues from the principal subunit are labeled in black and those from the complementary subunit in magenta. Surface shown in gray represents hydrophobic interactions. The polar surface around nitrogen and oxygen are colored in blue and red, respectively. The hydrogen bond between Trp156 and alosetron is shown as a dotted line.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/57870/elife-57870-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (a) The density map around the binding-site residues contoured at 9σ. (b) A close-up, side-view of the subunit-interface reveals extensive interactions between residues on the complementary subunit. Side chains which are within 4 Å distance are marked by dotted line.
 
 The basic amine of the setron is in a bicyclic ring in granisetron and palonosetron, and a diazole ring in ondansetron and alosetron. The amine is within 4 Å of Trp156 (Loop B), Tyr207 (Loop C), Trp63 (Loop D) and Tyr126 (Loop E), and is likely to be involved in polar interactions with these residues. In particular, the carbonyl oxygen of Trp156 is close to the amine group of setron, and in the 5-HT3AR-Alo, it forms a hydrogen bond with the amine group in the diazole ring. The relative orientation of the tertiary nitrogen and Trp156 is conducive for a cation-pi interaction, as seen in the AChBP-5-HT3 chimera structure (Kesters et al., 2013). A similar interaction is also predicted for the primary amine group of serotonin (Beene et al., 2002). The aromatic end of the molecule is an indazole in granisetron, isoquinoline in palonosetron, carbazole in ondansetron, and pyridoindole in alosetron. It is oriented toward the complementary subunit, and lies parallel to the membrane. In this orientation, the aromatic moiety is stabilized by a number of hydrophobic interactions with Ile44, Trp63, Tyr64, Ile201, and Tyr126 (shown by gray color in surface representation Figure 2—figure supplement 1). The setron molecule is within 4–5 Å and potentially makes π-π interactions (edge-to-face or face-to-face) with Trp63, Tyr126, Trp156, and Tyr207. These interactions are also consistent with our MD simulations (discussed below). While most interactions with setrons observed in these structures are apolar in nature, it is to be noted that water molecules were not modeled into the structures. Interactions mediated through water molecules are inferred from MD simulations (discussed below). In addition, the planar aromatic rings lie beneath Arg65, and are in close proximity to the positively charged nitrogen in the guanidinium group of Arg65, revealing a potential cation-pi interaction (Figure 2—figure supplement 2). This interaction was also observed in the AChBP-5-HT3 chimera (Kesters et al., 2013) and 5-HT3AR-Grani structures (Basak et al., 2019). As previously noted in 5-HT3AR-Grani, the setron position causes reorientation of Arg65 (β2 strand or Loop D) and Trp168 (β8-β9; Loop F) (Basak et al., 2019). Earlier reports also predicted large orientational differences for Trp168 when the binding site was occupied by agonist or antagonist (Thompson et al., 2006). In this position, Arg65 is in a network of interactions involving Asp42 (β1), Try126 (β6), Trp168 (β8-β9; Loop F), Arg169 (β8-β9; Loop F), and Asp177 (β8-β9; Loop F) (Figure 2—figure supplement 2b). Glu102 (Loop A) which is in the vicinity of the ligand-binding site is in a hydrogen-bond network with Thr133 and Ala134 carbonyl (β6 strand). Interestingly, both of these networks are also present in serotonin-bound 5-HT3AR, but absent in 5-HT3AR-Apo, indicating the ligand-induced formation of the interaction network (Basak et al., 2018a; Basak et al., 2018b).
 
@@ -49,17 +73,37 @@ To understand the dynamics of ligand-receptor interactions, 100 ns MD simulation
 
 To assess the stability of each ligand binding-pose modeled from cryo-EM density, we quantified the root mean square deviation (RMSD) of each pose relative to its starting conformation, assessed for each subunit independently every 500 ps of each ligand-5HT3AR 100 ns simulation for a total of 200 simulation frames (Figure 3a). We also quantified the average RMSD of each pose relative to its starting conformation by averaging over 1000 simulation snapshots (200 frames sampled every 500 ps for each of the five subunits treated as replicates) extracted from the 100 ns simulations for each ligand-5HT3AR complex. Among the ligands studied, the serotonin molecule exhibited considerable fluctuations (RMSD up to 5.4 Å with an average value of 1.9 Å, across five subunits) within the binding pocket. In contrast, most setron molecules maintained a low RMSD (RMSD average values of 1.1 Å, 1.0 Å, and 1.1 Å for granisetron, ondansetron, and alosetron, respectively), with palonosetron demonstrating the largest RMSD (1.9 Å) among all the simulated setrons (Figure 3a). During the simulation, the palonosetron’s bicyclic ring displayed fluctuation and positional reorientation. In these orientations, palonosetron had distinct interactions with binding-site residues, in particular with Asn101 in the ‘down’ position and Trp156 in the ‘up’ position (Figure 3b and c). A recently reported structure of 5-HT3AR in complex with palonosetron (published during revision of this manuscript) shows an overall similar conformation of the protein as seen here (Figure 3—figure supplement 1; Zarkadas et al., 2020). Interestingly, the bicyclic ring orientation reported in this structure is similar to that captured in our MD simulations.
 
+![Figure 3.](https://cdn.elifesciences.org/articles/57870/elife-57870-fig3-v2.jpg)
+
+**Figure 3.:** (a) Time evolution of root mean square deviation (RMSD) of setrons’ and serotonin’s heavy atoms relative to their initial cryo-EM conformations of 5-HT3AR for each protomer subunit. (b) Representative views of various palonosetron orientations during the 100 ns simulation. When the tertiary amine nitrogen in the bicyclic ring is pointing up, it interacts with the carbonyl oxygen of Trp156 and when it points down, it interacts with carbonyl oxygen of Asn101 side chain. (c) Time evolution of Root Mean Square Deviation (RMSD) of the bicyclic ring to its initial cryo-EM position.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/57870/elife-57870-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** Top and side-views of aligned 5-HT3AR-Palono and 6Y1Z (Zarkadas et al., 2020) structures. The ECD from two adjacent subunits are shown with the principal subunit in color. The palonosetron molecule in the structures is shown in stick representation. A zoomed-in view of palonosetron in the two structures is shown in the inset.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/57870/elife-57870-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** Molecular interactions between setron and 5-HT3AR in 5-HT3AR-Grani, 5-HT3AR-Palono, 5-HT3AR-Ondan, 5-HT3AR-Alo and between serotonin and 5-HT3AR in 5-HT3AR-Serotonin structures during MD simulation. 5-HT3AR-setron interaction fingerprints were derived for each ligand-protein complex by averaging across each protomer chain from 100 ns MD simulations. Interactions were assessed between ligand and protein and reported for those that had an average probability above 10%. Nine interaction types were calculated: apolar (hydrophobic), face-to-face aromatic (Aro_F2F), edge-to-face aromatic (Aro_E2F), hydrogen bond with the protein as hydrogen-bond donor (Hbond_ProD), hydrogen bond with the protein as hydrogen- bond acceptor (Hbond_ProA), electrostatic with the protein positively charged (Elec_ProP), electrostatic with the protein negatively charged (Elec_ProN), one-water-mediated and two-water-mediated hydrogen-bond interactions (Hbond_1Wat and Hbond_2Wat). Electrostatic interactions with positively charged protein residues (Elec_ProP) were not found in any of our studied setron-bound 5-HT3AR simulations.
+
 To evaluate the types of interactions that these ligands maintained with protein residues during MD simulation, we calculated 5-HT3AR-ligand interaction fingerprints (see figure legend or methods for full interaction type definitions) averaged across each protomer in the complex (Figure 3—figure supplement 2). In the 5-HT3AR-Serotonin simulations, the indole ring of serotonin makes pi-pi stacking interactions (edge-to-face or face-to-face) with key aromatic residues Trp63, Tyr126, and Trp156, and Tyr207. Among these only interactions with Trp156 and Tyr126 occur with probability larger than 50%. Mutations to each of these aromatic position affects serotonin-binding and is reflected in increase in EC50 for activation (Beene et al., 2002; Spier and Lummis, 2000; Beene et al., 2004). The indole nitrogen of serotonin forms water-mediated interactions with Asp42 and Arg169, albeit with a 25% probability whereas the ligand’s hydroxyl group forms a hydrogen-bond with the amine nitrogen of Trp156 with a 50% probability. The indole nitrogen is also involved in an extended water network with Glu173 on Loop F, particularly in simulation frames where Loop F orients toward serotonin where this network is sampled as a two water -mediated hydrogen bond interaction. The primary amine nitrogen in serotonin makes multiple water-mediated interactions with the side chains of Glu209 and Thr154, and occasionally with Asn101 (less than 25% of the simulation time). In addition, serotonin forms relatively stable apolar interactions (>50% probability) with Ile44, Phe199, and Ile201.
 
 The structural fingerprint analysis shows that all setrons form a number of very stable (probability >75%), mostly apolar, interactions with the following residues: Asp42, Val43, Ile44, Trp63, Tyr64, Arg65, Tyr126, and Trp156. While interactions between serotonin and residues Ile44, Trp63, Arg65, Tyr126, and Trp156 occurred with similar probability, those with Val43 and Tyr64 did not form at all and those with Asp42 were reduced, albeit complemented by hydrogen bond and water-mediated interactions. In 5-HT3AR-Grani, the bicyclic nitrogen makes water-mediated hydrogen bonds with the sidechains of Thr154, Ser155, and Glu209. The indazole nitrogen occasionally interacts with Asp202 through a water-mediated hydrogen bond. Reduced affinity for granisetron is noted upon mutations at these positions (Yan et al., 1999) and notably W63A, W156A, and Y207A do not bind granisetron. In 5-HT3AR-Palono, the tertiary amine on the ligand’s bicyclic ring makes water-mediated and direct polar contacts with the backbone oxygen of Trp156 or the sidechain of Asn101 depending on the orientation of bicyclic ring. The carbonyl group of the isoquinoline moiety interacts with the amine nitrogen of Trp156 and carbonyl oxygen of Tyr64 through a water molecule. Mutations of Trp156 or Tyr64 cause large or small increases of palonosetron-induced inhibition, respectively (Price et al., 2016; Del Cadia et al., 2013; Beene et al., 2002). Interestingly, while N101Q preserves palonosetron-induced inhibition similar to wild-type receptor, a mutation to N101A (no H-bond with side chain) increases the potency of palonosetron (Price et al., 2016). Palonosetron forms an apolar interaction with Arg169 with higher probability compared to the other ligands, potentially due to palonosetron’s pose forming weak interactions with loop C in favor of loop F. In 5-HT3AR-Ondan, the ondansetron molecule forms highly probable edge-to-face stacking interactions with Tyr126 and Tyr207. The secondary nitrogen on the diazole ring forms a hydrogen-bond interaction with Glu209 through a water molecule. These water-mediated interactions are also occasionally seen with Thr154 and Asn101. In 5-HT3AR-Alo, one of the secondary amine nitrogen on the diazole ring forms a water-mediated hydrogen-bond interaction with the carbonyl oxygen of Trp156. The amide oxygen of Trp156 forms a water-mediated hydrogen-bond contact with the amine group of the ligand’s imidazole. The backbone oxygen of Tyr64 interacts with the carbonyl group of the ligand’s pyridoindole ring through a water molecule. Interestingly, water-mediated interactions with Glu209 are absent in the alosetron fingerprint when compared to the ondansetron, granisetron, and serotonin fingerprints.
 
 It is to be noted that many of the ligand-receptor interactions identified as important by the MD simulations are not directly evident from the Cryo-EM structures particularly since many of these interactions are mediated through water molecules (not modeled in the structural coordinates). In addition, MD simulation captures several transient interactions arising from side-chain flexibility and drug mobility within the pocket.
 
-## Conformation of loop C
+### Conformation of loop C
 
 We previously showed that instead of being in a 5-HT3AR-Apo like conformation, 5-HT3AR-Grani revealed a counter-clockwise twist of beta strands in the ECD leading to a small inward movement of Loop C (connecting β9-β10 strands) closing-in on granisetron (Basak et al., 2019). The Loop C conformation has been correlated to the agonistic nature of the ligand in the binding site. The AChBP-ligand complexes have shown that agonist binding induces a ‘closure’ of Loop C, capping the ligand-binding site (Hansen et al., 2005). The 5-HT3AR and other pLGIC structures solved thus far, in the apo and agonist-bound states, also follow this general trend (Polovinkin et al., 2018; Basak et al., 2018a; Basak et al., 2018b; Du et al., 2015; Kumar et al., 2020). This conformational change may be part of a conserved pLGIC mechanism that couples ligand binding to channel opening through the ECD-TMD interfacial loops. However, studies have shown that unliganded pLGIC gating kinetics remain unaffected by Loop C truncation (Purohit and Auerbach, 2013), raising ambiguity over the role of Loop C closure in channel opening. Antagonist-bound AChBP structures show that Loop C further extended outward (Hansen et al., 2005), while partial agonists seem to induce partial Loop C closure but not to the level achieved by agonists (Hibbs et al., 2009), suggesting a correlation between the degree of Loop C closure and the level of agonism. However, in the crystal structure of AChBP in complex with antagonist dihydro-β-erythroidine, Loop C appears to move inward (Shahsavar et al., 2012).
 
 In comparison to the 5-HT3AR-Apo structure, Loop C adopts varying degrees of an inward conformation, and in the 5-HT3AR-Alo structure the orientation is similar to 5-HT3AR-serotonin (Basak et al., 2019; Figure 4a). The twisting inward movement does not pertain to Loop C alone, but it is also shared by adjoining β7, β9 and β10 strands forming the outer-sheets of the β-sandwich core, with notable deviations from the corresponding regions in the 5-HT3AR-Apo structure (Figure 4b). In contrast, only minimal changes are observed in the β-strands of the inner sheets (β1, β2, β6) (Figure 4b and c). These conformational changes approach those seen in the 5-HT3AR-Serotonin structure (Basak et al., 2018b). Although these results appear to diverge from the classical view that competitive antagonists either cause steric hindrance to agonist binding or evoke structural changes that are opposite to those caused by agonist, they are generally consistent with previous findings from dynamics studies in pLGIC using voltage-clamp fluorometry (VCF). In VCF, ligand-induced conformational changes and channel function are simultaneously monitored. When reporter-groups were introduced in Loop C of 5-HT3AR, similar fluorescence changes were recorded from binding either serotonin or setrons (Munro et al., 2019). In GlyR, both glycine (agonist) and strychnine (a competitive antagonist) produced identical fluorescence responses from labels in certain regions of Loop C (Pless and Lynch, 2009), and a similar trend was also observed in ρ1GABAR (Chang and Weiss, 2002). These findings implied that the local structural changes induced by these ligands were indiscriminate to the functional response from the channel. Overall, these findings underscore the complexity of Loop C movement and its role in coupling channel opening. Interestingly, the inner β-sheet regions (particularly Loop E, contributing to the binding pocket from the complementary subunit) undergo distinct movements depending on the nature of the bound ligand in GlyR, 5-HT3AR, and GABAAR (Munro et al., 2019; Pless and Lynch, 2009; Chang and Weiss, 2002; Muroi et al., 2006) suggesting that this region maybe a better reporter for ligand discrimination.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/57870/elife-57870-fig4-v2.jpg)
+
+**Figure 4.:** (a) Global alignment of 5-HT3AR-Apo, 5-HT3AR-State1 (serotonin-bound), 5-HT3AR-Grani, 5-HT3AR-Palono, 5-HT3AR-Ondan, and 5-HT3AR-Alo structures. With respect to 5-HT3AR-Apo, the serotonin- and setron- bound conformations reveal an inward positioning of Loop C (shown by arrow). (b) Relative displacement of the inner β-strands seen from a side-view (left panel) and the outer β-strands seen from the top (right panel). Arrows indicate the direction of movement. (c) Pentameric assembly of setron- and serotonin-bound structures were aligned to Apo-5-HT3AR. A cubic spline interpolation was then done to smoothly connect cα displacement for each structure and mapped by short cylinders, whose diameters are equivalent to the displacement at that position compared to Apo-5-HT3AR. The color was also scaled to the same value using the color map shown. The analysis was done in Matlab v2019a (Mathworks, Natick MA).
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/57870/elife-57870-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Time evolution of loop C RMSD evaluated by quantifying the distance of Cα, carbonyl carbon, and backbone nitrogen atoms of residues Ser200 to Asn205 relative to their initial cryo-EM conformations separated by protomer chain. (b) Time evolution of loop C custom dihedral (defined as a dihedral drawn from Cα atoms of residues Ala208, Phe199, Glu198, and Ile203). Loop C is oriented away from the binding site when this dihedral is measured to be large and is oriented toward the binding site when this dihedral is low or negative.
 
 Some of the differences in ligand-receptor interaction fingerprints across the different systems, particularly those involving residues Tyr207, Phe199, and Glu209 arise from differential positioning of Loop C. To characterize the flexibility of Loop C in the liganded and unliganded states of 5-HT3AR, we monitored two structural parameters during the MD simulation runs. First, we assessed the RMSD of Loop C for each protomer in each 5-HT3AR simulation by evaluating the distances of Cα, carbonyl carbon, and backbone nitrogen atoms of residues Ser200 through Asn205 with respect to their initial cryo-EM conformations (Figure 4—figure supplement 1a). Second, we defined a custom dihedral formed by the Cα atoms of residues Ala208, Phe199, Glu198, and Ile203 that measured the orientation of the loop relative to the complementary subunit binding site (Figure 4—figure supplement 1b). This dihedral was defined in such a way that a large angle would denote that the loop is oriented away from the binding site and small or negative angles indicate that the loop is oriented toward the binding site. Comparing these two parameters across the different systems suggest that Loop C is stable in its initial cryo-EM conformation in the case of 5-HT3AR-Alo and 5-HT3AR-Serotonin simulations where it predominantly adopts a ‘closed’ conformation. In other setron complexes, Loop C is observed to switch to an alternate ‘open’ conformation where it extends away from the binding-site surface. In comparison to all the ligand-bound structures, Loop C exhibited a much larger flexibility in 5-HT3AR-Apo as evidenced by large RMSD values and a wide-range of dihedral angles. These multiple Loop C ‘opening’ and ‘closing’ events in the 5-HT3AR-Apo structure contrasts ligand-bound states of the channel and suggest that the presence of a ligand in the binding-site forces the loop C to remain ‘closed’. Such enhanced flexibility in the unliganded state of 5-HT3AR has also been reported in a previous 20 μs simulation study (Guros et al., 2020).
 
@@ -73,53 +117,194 @@ To further investigate the motion of Loop C between the ‘closed’ cryo-EM str
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/57870/elife-57870-fig6-v2.jpg)
 
-**Figure 6.:** (a) Time evolution of the minimum distance between side-chain polar atoms of Arg65 and Asp202 throughout 100 ns simulations. A 4 Å distance threshold is shown as a red dashed line to denote a generous cutoff for H-bond interactions between these residues. (b) MD snapshot that show the Arg65-Asp202 interaction. (c) Dose-response curve for serotonin activation measured by TEVC recordings (at −60 mV) for WT 5-HT3AR and R65A expressed in oocytes. The EC50, the Hill coefficient (nH), and the number of independent oocyte experiments are: WT (EC50: 2.70 ± 0.09 μM; nH: 2.3 ± 0.17; n: 3) and R65A (EC50: 13.79 ± 0.50 μM; nH: 4.4 ± 0.59; n: 4) (Basak et al., 2019) (d) Functional analysis of Arg65. Currents were elicited in response to serotonin (concentrations used near EC50 values WT- 2 μM, and R65A- 10 μM) with and without co-application of setrons. Dotted arrows show the extent of setron inhibition in each case. (e) A plot of the ratio of peak current in the presence of setron to peak current in the absence of setron is shown for WT and R65A. Data are shown as mean ± s.d (n is indicated in parenthesis). Significance at p=0.01 (***) and p=0.05 (**) calculated by two sample t-test for wild type and R65A.Figure 6—source data 1.Figure 6c and e.
+**Figure 6.:** (a) Time evolution of the minimum distance between side-chain polar atoms of Arg65 and Asp202 throughout 100 ns simulations. A 4 Å distance threshold is shown as a red dashed line to denote a generous cutoff for H-bond interactions between these residues. (b) MD snapshot that show the Arg65-Asp202 interaction. (c) Dose-response curve for serotonin activation measured by TEVC recordings (at −60 mV) for WT 5-HT3AR and R65A expressed in oocytes. The EC50, the Hill coefficient (nH), and the number of independent oocyte experiments are: WT (EC50: 2.70 ± 0.09 μM; nH: 2.3 ± 0.17; n: 3) and R65A (EC50: 13.79 ± 0.50 μM; nH: 4.4 ± 0.59; n: 4) (Basak et al., 2019) (d) Functional analysis of Arg65. Currents were elicited in response to serotonin (concentrations used near EC50 values WT- 2 μM, and R65A- 10 μM) with and without co-application of setrons. Dotted arrows show the extent of setron inhibition in each case. (e) A plot of the ratio of peak current in the presence of setron to peak current in the absence of setron is shown for WT and R65A. Data are shown as mean ± s.d (n is indicated in parenthesis). Significance at p=0.01 (***) and p=0.05 (**) calculated by two sample t-test for wild type and R65A.
 
 Our MD simulations suggest that Arg65 may have a differential effect on the binding of various setrons. In agreement, mutations at the Arg65 position in human 5-HT3AR abolish granisetron binding but tropisetron binding is only reduced (Ruepp et al., 2017). To further assess the role of Arg65 in binding various setrons, we measured the extent of inhibition of serotonin-induced currents. Since for competitive antagonists the extent of inhibition depends on agonist concentration, the serotonin concentration in each case was kept close to the EC50 value for wild type (2 μM) and R65A (10 μM) (Figure 6c). Granisetron and palonosetron inhibition was measured at 1 nM; ondansetron and alosetron inhibition was measured at 0.1 nM (these concentrations were chosen to achieve a 50% inhibition for wild type upon co-application with serotonin) (Figure 6d and e). Of note, co-application of setron in some cases has ~100 fold lower effect than pre-application due to slow on-rates (Lummis and Thompson, 2013). Mutational perturbation at Arg65 has a significant effect on inhibition by each setron, albeit to varying extents. While revealing a functional effect on serotonin and setron binding, the R65A mutational studies do not provide conclusive evidence for differential effects of various setrons. We think that R65 plays a role in concert with neighboring residues. Additional mutagenesis and combination of mutations may be needed to understand the proposed mechanism better.
 
-## Conformational differences along the ion permeation pathway
+### Conformational differences along the ion permeation pathway
 
 Analysis of the ion permeation pathway along the pore axis shows a slight constriction in the middle of the ECD lined by residues Lys108 and Asp105 in the β4-β5 loop. The Asp105 position is conserved among most cation-selective pLGICs and mutations at this position affect single-channel conductance and open probability in pLGICs (Livesey et al., 2011; Sine et al., 2010; Chakrapani et al., 2003). The ECD constriction is narrower in the 5-HT3AR-Apo structure and widens in the serotonin-bound structures. 5-HT3AR-setron structures show varying extents of widening at this position. However, previous studies assessing permeation of water molecules and of ions with imposed membrane potential have shown that this constriction point does not impede ion permeation in the 5-HT3AR-Apo and 5-HT3AR-Serotonin structures (Basak et al., 2018b). Conformational changes are also present in the TMD and may arise from small twisting movements in the ECD. Interestingly, in each of the 5-HT3AR-setrons structures, the pore-lining M2 helices are positioned away from the central axis, and are in a more-expanded conformation than in the 5-HT3AR-Apo structure (Figure 7a). At positions Val264 (13′), Leu260 (9′), Ser253 (2′), and Glu250 (−1′), the pore radii in 5-HT3AR-setron structures are larger than in the 5-HT3AR-Apo structure. However, in all these structures, the pore is constricted to below the hydrated Na+ radii (Marcus, 1988; Figure 7b).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/57870/elife-57870-fig7-v2.jpg)
+
+**Figure 7.:** (a) Ion conduction pathway predicted by HOLE (Smart et al., 1996). Models are shown in cartoon representation. Only two subunits are shown for clarity. The locations of pore constrictions are shown as sticks. (b) The pore radius is plotted as a function of distance along the pore axis. The dotted line indicates the approximate radius of a hydrated Na+ ion which is estimated at 2.76 Å (right) (Marcus, 1988).
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/57870/elife-57870-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** Unrestrained simulation for each structure is performed in POPC bilayer for 100 ns. The mean radius of ion permeation pathway is calculated for each of the equidistant simulation frame by HOLE program (Smart et al., 1996). The gray plot represents the standard deviations of all the frames.
+
+![Figure 7—figure supplement 2.](https://cdn.elifesciences.org/articles/57870/elife-57870-fig7-figsupp2-v2.jpg)
+
+**Figure 7—figure supplement 2.:** Clustal ω sequence alignment of mouse 5HT3AR subunit and human 5HT3A-E subunits. Key binding-site residues at the neurotransmitter-binding site which interact with setrons and serotonin are highlighted in gray (principal) and magenta (complementary). Dotted line above the 5HT3A-mouse subunit indicates the signal sequence. Position of Trp156 and Arg65 are indicated by asterisk. Residue numbering for the sequence is based on mouse 5-HT3AR PDBID: 6BE1 (Basak et al., 2018a).
 
 Local dynamics of the permeation pathway were monitored during the aforementioned 100 ns MD simulations of 5-HT3AR-Apo, 5-HT3AR-Serotonin, and each of the 5-HT3AR-setron structures embedded in a POPC membrane encased in water and 150 mM NaCl (Figure 7—figure supplement 1). As expected, no major changes to the overall pore profile of the channel were observed during simulations, which were carried out in the absence of positional restraints. The side-chain movements of the residues lining the permeation pathway caused only slight fluctuations of the pore radius as shown by the standard deviations from across eight equidistant simulation frames for each system. Most notably, in each case, the pore remained constricted at the Leu260 (9′) to under 2.3 Å (below the hydrated Na+ radius). As also reported in earlier simulation studies, the Leu260 (9′) position is the major barrier in the TMD to ion permeation in the 5-HT3AR-Apo and 5-HT3AR-Serotonin structures (Basak et al., 2018b). While there are small conformational changes in the ICD, the post-M3 loop occludes the lateral portals at the interface of the TMD and ICD which are predicted to be the ion exit paths. The extent of occlusion is similar to that seen in the 5-HT3AR-Apo structure (Basak et al., 2018a) suggesting that the ICD exits are closed in these conformations. Interestingly, in muscle-type nAChR, the ICD portals appear to be open even in the Apo conformation, highlighting the mechanistic differences among pLGIC members (Rahman et al., 2020). Overall, these analyses suggest that although there are different extents of conformational changes in the 5-HT3AR-setron structures that lie between those of 5-HT3AR-Apo and 5-HT3AR-Serotonin, each of these structures appears to be non-conducting to ions.
 
 A limitation of these standard, shorter MD simulation timescales is that dynamic transitions between multiple states or allostery between ligand-binding at the ECD and pore-opening at the TMD are not expected to be captured during runs. The purpose of these simulations was to verify ligand stability in the pocket and the overall stability of the cryo-EM conformation rather than ligand-induced conformational rearrangements. Future studies with enhanced MD simulations may provide insights into transitions between different conformational states and the mechanistic details of coupling across domains.
 
-## Setron-binding sites in heteromeric 5-HT3R
+### Setron-binding sites in heteromeric 5-HT3R
 
 We further explored the question of whether setrons discriminate between homomeric 5-HT3AR and the heteromeric assemblies of subunit A in combination with either B, C, D, or E subunits. Among the different heteromeric 5-HT3R assemblies, the most studied is the 5-HT3ABR. A sequence alignment of mouse and human 5-HT3R subunits (Figure 7—figure supplement 2) shows that two key residues that interact with serotonin and setrons, Trp156 (on the principal side) and Arg65 (on the complementary side), are present exclusively in subunit A. This suggests that the setron- binding site may be limited to A-A interfaces both in the 5-HT3AR homomeric and heteromeric assemblies. A similar conclusion has also been drawn from earlier studies that have shown that setrons do not significantly differ in potency between 5-HT3AR and 5-HT3ABR, and that mutations to binding-site residues in subunit A had more dramatic effects on antagonist-binding affinity and an increased serotonin EC50 than mutations to equivalent positions in subunit B (Del Cadia et al., 2013; Lochner and Lummis, 2010).
 
-## Summary
+### Summary
 
 A comprehensive structural analysis of multiple high-resolution structures of setron-bound 5- HT3AR complexes reveal several features of competitive antagonism that were not fully evident from the previous structural findings. Serotonin binds within a partially solvent-exposed cavity at the subunit interface and elicits Loop C closure and twisting of the β-strands within the ECD. The setron-binding pocket, while involving overlapping residues, extends further into the complementary subunit. Setron-binding evokes varying degrees of Loop C closure and in some cases, almost to the same degree as in the serotonin-bound state. The Loop C movements are associated with varying degrees of structural changes in the inner and outer β-strands that translate to small changes in the pore-lining M2 helices. Overall, setrons stabilize 5-HT3AR conformational states that are non-conductive, but appear to lie between the apo and serotonin-bound states. These findings therefore suggest that competitive antagonism in 5-HT3AR, and potentially in other pLGIC, may involve stabilizing intermediates along the activation pathway. With new emerging uses of setrons to treat psychiatric disorders, inflammation, substance abuse, and Alzheimer’s disease, these studies lay the foundation for the design of novel therapeutics that may have higher treatment efficacy and potentially fewer off-target effects.
 
 ## Materials and methods
 
-## Electrophysiological measurements in oocytes
+### Electrophysiological measurements in oocytes
 
 Mouse 5-HT3AR gene (purchased from GenScript) and mutant genes were inserted into pTLN plasmid. The plasmids were linearized with MluI restriction enzyme by digesting overnight at 37°C. The mMessage mMachine kit (Ambion) was used to make mRNA as per the manufacturer’s protocol and cleanup using RNAeasy kit (Qiagen). 3–10 ng of mRNA was injected into X. laevis oocytes (stages V–VI), and incubated for 2–5 days, after which current recordings were performed. Water injected oocytes were used as a control to verify that no endogenous currents were present. Female X. laevis were purchased from Nasco and kindly provided by W. F. Boron. The Institutional Animal Care and Use Committee (IACUC) of Case Western Reserve University approved the animal experimental procedures. Oocytes were maintained in OR3 medium (GIBCO-BRL Leibovitz medium containing glutamate, 500 units each of penicillin and streptomycin, pH adjusted to 7.5, osmolarity adjusted to 197 mOsm) at 18°C. Warner Instruments Oocyte Clamp OC-725 was used to perform two-electrode voltage-clamp experiments at a holding potential of −60 mV. Currents were sampled and digitized at 500 Hz with a Digidata 1332A. Clampfit 10.2 (Molecular Devices) was used to analyze experimental data. Perfusion solution consisted of 96 mM NaCl, 2 mM KCl, 1.8 mM CaCl2, 1 mM MgCl2, and 5 mM HEPES (pH 7.4, osmolarity adjusted to 195 mOsM) was used at a flow rate of 6 ml/min. Chemical reagents (serotonin hydrochloride, alosetron hydrochloride, ondansetron hydrochloride, and palonosetron hydrochloride) were purchased from Sigma-Aldrich.
 
-## Full-length 5-HT3AR cloning and transfection
+### Full-length 5-HT3AR cloning and transfection
 
 The mouse 5-HT3AR (NCBI Reference Sequence: NM_001099644.1) gene was codon-optimized for Spodoptera frugiperda (Sf9) cells and purchased from GenScript. The construct consists of the 5-HT3AR gene along with a C-terminal 1D4-tag (MacKenzie et al., 1984) and four strep-tags (WSHPQFEK) at the N terminus, each separated by a linker sequence (GGGSGGGSGGGS) and followed by a TEV-cleavage sequence (ENLYFQG). Sf9 cells (Expression System) were grown in ESF921 medium (Expression Systems) at 28°C without CO2 exchange and in absence of antibiotics. Cellfectin II reagent (Invitrogen) was used for transfection of recombinant 5-HT3AR bacmid DNA into sub-confluent Sf9 cells. After 72 hr of transfection, the progeny 1 (P1) recombinant baculoviruses were obtained by collecting the cell culture supernatant. The P1 was then used to infect Sf9 cells which produced P2 viruses, and subsequently P3 viruses from the P2 virus stock. The P3 viruses were used for recombinant protein expression.
 
-## 5-HT3AR expression and purification
+### 5-HT3AR expression and purification
 
 Sf9 cells were grown to approximately 2.5 × 106 per ml followed by infection with P3 viruses. After 72 hr post-infection, the cells were centrifuged at 8,000 g for 20 min at 4°C to separate the supernatant from the pellet. The cell pellet was resuspended in 20 mM Tris-HCl, pH 7.5, 36.5 mM sucrose supplemented with 1% protease inhibitor cocktail (Sigma-Aldrich). Cells were sonicated on ice. Non-lysed cells were pelleted down by centrifugation (3,000 g for 15 min) and the supernatant was collected. The membrane fraction was separated by ultracentrifugation (167,000 x g for 1 hr) and solubilized in 50 mM Tris pH 7.5, 500 mM NaCl, 10% glycerol, 0.5% protease inhibitor and 1% C12E9 for 2 hr at 4°C. Non-solubilized material was removed by ultracentrifugation (167,000 x g for 15 min). The solubilized membrane proteins containing 5-HT3A receptors were bound with 1D4 beads pre-equilibrated with 20 mM HEPES pH 8.0, 150 mM NaCl and 0.01% C12E9 for 2 hr at 4°C. The non-bound proteins were removed by washing beads with 100 column volumes of 20 mM HEPES pH 8.0, 150 mM NaCl, and 0.01% C12E9 (buffer A). The protein was then eluted with 3 mg/ml 1D4 peptide (TETSQVAPA) which is solubilized in buffer A. Eluted protein was deglycosylated with PNGase F (NEB) by incubating 5 units of the enzyme per 1 μg of protein for 2 hr at 37°C under gentle agitation. Deglycosylated protein was then purified using a Superose six column (GE healthcare) equilibrated with buffer A. Purified protein was concentrated to 2–3 mg/ml using 50 kDa MWCO Millipore filters (Amicon) for cryo-EM studies.
 
-## Cryo-EM sample preparation and data acquisition
+### Cryo-EM sample preparation and data acquisition
 
 5-HT3AR protein (~2.5 mg/ml) was filtered and incubated with 100 μM drugs (Alosetron, Ondansetron, and Palonosetron) for 1 hr. Fluorinated Fos-choline-8 (Anatrace) was added to the protein sample to a final concentration of 3 mM. The protein was then blotted onto Cu 300 mesh Quantifoil 1.2/1.3 grids (Quantifoil Micro Tools) two times with 3.5 μl sample each time, and the grids were plunge frozen immediately into liquid ethane using a Vitrobot (FEI). The grids were imaged using a 300 kV FEI Titan Krios G3i microscope equipped with a Gatan K3 direct electron detector camera. Movies containing ~50 frames were collected at 105,000 × magnification (set on microscope) in super-resolution mode with a physical pixel size of 0.848 Å/pixel, dose per frame 1 e-/Å (Gilmore et al., 2018). Defocus values of the images ranged from −1.0 to −2.5 µm (input range setting for data collection) as per the automated imaging software SerialEM (Mastronarde, 2005).
 
-## Image processing
+### Image processing
 
 MotionCor2 (Zheng et al., 2017) was used to correct beam-induced motion using a B-factor of 150 pixels (Gilmore et al., 2018). Super-resolution images were binned (2 × 2) in Fourier space, making a final pixel size of 0.848 Å. Entire data processing was conducted in RELION 3.1 (Fernandez-Leiro and Scheres, 2017). CTF of the motion-corrected micrographs were estimated using Gctf software (Mindell and Grigorieff, 2003). Auto-picked particles from total micrographs (Table 1) from individual datasets (each drug) were subjected to 2D classification to remove suboptimal particles. An initial 3D reference model was generated from the 5-HT3AR-apo cryo-EM structure (RCSB Protein Data Bank code (PDB ID): 6BE1). The model was low-pass filtered at 60 Å using EMAN2 (Tang et al., 2007). Iterative 3D classifications, 3D auto-refinements, and Bayesian polishing generated density model of Alosetron, Ondansetron and Palonosetron bound 5-HT3AR with 42, 065 particles, 67, 333 particles, and 91,163 particles, respectively. During 3D classifications each of the classes was investigated carefully and particles appeared to belong to a single conformation. Per-particle contrast transfer function (CTF) refinement and beam tilt correction were applied followed by a final 3D-autorefinement. A soft mask was generated in RELION and used during the post-processing step, which resulted in an overall resolution of 3.32 Å, 3.06 Å, and 2.92 Å for, 5-HT3AR-Palono, 5-HT3AR-Ondan, and 5-HT3AR-Alo respectively (calculated based on the gold-standard Fourier shell coefficient (FSC) = 0.143 criterion, Table 1). B-factor estimation and map sharpening were performed in the post-processing step in RELION. The ResMap program was used to calculate local resolutions (Kucukelbir et al., 2014).
 
-## 5-HT3AR model building
+**Table 1.**
+ Cryo-EM data collection/processing.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>5-HT3A-Alosetron (EMDB-21511; PDB-6W1J)</th>
+      <th>5-HT3A-Ondansetron (EMDB-21512; PDB-6W1M)</th>
+      <th>5-HT3A-Palonosetron (EMDB-21518; PDB-6W1Y)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Data collection and processing</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Magnification</td>
+      <td colspan="3">105,000x</td>
+    </tr>
+    <tr>
+      <td>Voltage (kV)</td>
+      <td colspan="3">300</td>
+    </tr>
+    <tr>
+      <td>Data collection mode</td>
+      <td colspan="3">Super-resolution</td>
+    </tr>
+    <tr>
+      <td>Electron exposure (e–/Å2)</td>
+      <td colspan="3">50</td>
+    </tr>
+    <tr>
+      <td>Defocus range (μm)</td>
+      <td colspan="3">−1.2 to −2.5</td>
+    </tr>
+    <tr>
+      <td>Physical Pixel size (Å/pixel)</td>
+      <td colspan="3">0.848</td>
+    </tr>
+    <tr>
+      <td>Symmetry-imposed</td>
+      <td colspan="3">C5</td>
+    </tr>
+    <tr>
+      <td>Initial particle images (no.)</td>
+      <td>568,452</td>
+      <td>449,628</td>
+      <td>1,114,542</td>
+    </tr>
+    <tr>
+      <td>Final particle images (no.)</td>
+      <td>42,065</td>
+      <td>67,333</td>
+      <td>91,163</td>
+    </tr>
+    <tr>
+      <td>Map resolution (unmasked, Å) at FSC143</td>
+      <td>3.2</td>
+      <td>3.4</td>
+      <td>3.7</td>
+    </tr>
+    <tr>
+      <td>Map resolution (masked, Å) at FSC143</td>
+      <td>2.92</td>
+      <td>3.06</td>
+      <td>3.32</td>
+    </tr>
+    <tr>
+      <td>Map resolution range (Local resolution)</td>
+      <td>2.5–4.5</td>
+      <td>2.5–4.5</td>
+      <td>2.5–4.5</td>
+    </tr>
+    <tr>
+      <td>Refinement</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Initial model used (PDB code)</td>
+      <td>6BE1</td>
+      <td>6BE1</td>
+      <td>6BE1</td>
+    </tr>
+    <tr>
+      <td>Map sharpening B-factor (Å2)</td>
+      <td>−30</td>
+      <td>−30</td>
+      <td>−70</td>
+    </tr>
+    <tr>
+      <td>Model composition Non-hydrogen atoms Protein residue numbers Ligand atoms</td>
+      <td>16,861 393 586</td>
+      <td>16,885 394 585</td>
+      <td>16,885 394 585</td>
+    </tr>
+    <tr>
+      <td>B-factors (Å2) Protein Ligand</td>
+      <td>101.61 103.61</td>
+      <td>115.04 100.96</td>
+      <td>132.89 116.04</td>
+    </tr>
+    <tr>
+      <td>R.m.s. deviations Bond lengths (Å) Bond angles (°)</td>
+      <td>0.008 0.910</td>
+      <td>0.008 0.991</td>
+      <td>0.009 1.069</td>
+    </tr>
+    <tr>
+      <td>Validation MolProbity score Clashscore Poor rotamers (%)</td>
+      <td>1.38 (97th Percentile) 2.22 (99th Percentile) 0.82</td>
+      <td>1.48 (96th Percentile) 3.19 (97th Percentile) 0.27</td>
+      <td>1.41 (97th Percentile) 2.53 (98th Percentile) 0.82</td>
+    </tr>
+    <tr>
+      <td>Ramachandran plot Favored (%) Allowed (%) Disallowed (%)</td>
+      <td>94.40 5.60 0.00</td>
+      <td>94.62 5.38 0.00</td>
+      <td>94.62 5.38 0.00</td>
+    </tr>
+  </tbody>
+</table>
+
+### 5-HT3AR model building
 
 The final refined models have clear density of residues Thr7–Leu335 and Leu397–Ser462. The unobserved density at the region of (336–396) is comprised of an unstructured loop which links the amphipathic MX helix and the MA helix. The 5-HT3AR-apo cryo-EM structure (PDB ID: 6BE1) was used as an initial model and refined against its EM-derived map using PHENIX software package (Adams et al., 2002), using rigid body, local grid, NCS, and gradient minimization parameters. COOT is used for manual model building (Emsley and Cowtan, 2004). Real space refinement in PHENIX yielded the final model with a final model to map cross-correlation coefficient of 0.834 (5-HT3AR-Palono), 0.846 (5-HT3AR-Ondan), and 0.848 (5-HT3AR-Alo). Stereochemical properties of the model were validated by Molprobity (Chen et al., 2010). The pore profile was calculated using the HOLE program (Smart et al., 1996). Figures were prepared using PyMOL v.2.0.4 (Schrödinger, LLC).
 
-## MD simulation setup, protocol, and analysis
+### MD simulation setup, protocol, and analysis
 
 The cryo-EM-derived structures of 5-HT3AR in the apo conformation or bound to palonosetron, alosetron, ondansetron, or serotonin were prepared for MD simulations with the Protein Prep Wizard in the Schrödinger scientific software suite 2019–2 using default settings (Small-Molecule Drug Discovery Suite 2019–2, Schrödinger, LLC, New York, NY, 2019). This protocol adds missing hydrogen atoms to the initial protein-ligand complex. After the initial preparatory steps and protonation assignment of side chains, a brief restrained energy minimization in vacuo using the OPLS3 force field (Harder et al., 2016) was carried out to finalize system setup for each protein-ligand complex. Each setron-5-HT3AR complex was then embedded into a POPC bilayer using the Membrane Builder tool of the CHARMM-GUI webserver (Jo et al., 2008). The system was then solvated with TIP3P water, and 150 mM NaCl was added to the simulation system by replacing random water molecules. Excess sodium ions were added to neutralize the charge of each protein-ligand complex. The resulting simulation systems had initial dimensions of ~130 × 130×207 Å3 and consisted of the unliganded 5-HT3AR pentamer, or the pentamer bound to the setron or serotonin at each 5-HT3AR subunit,~400 POPC molecules,~83,000 water molecules,~240 sodium ions, and ~220 chloride ions, for a total of ~330,000–346,000 atoms. Throughout this work we reference data from our previously published simulation of granisetron-bound 5-HT3AR (Basak et al., 2019) in comparison to these three new setron-bound 5-HT3AR complexes, as well as the 5-HT3AR-serotonin complex and the 5-HT3AR-Apo structure.
 
@@ -129,6 +314,6 @@ MD simulations were run using GROMACS 2018.6 (Berendsen et al., 1995) software 
 
 Trajectory analyses were performed using a combination of Visual Molecular Dynamics (VMD) (Humphrey et al., 1996) and the GROMACS analysis toolkit (Van Der Spoel et al., 2005) over equidistant frames of our production simulations using a 500 ps stride. In particular, all RMSD measurements and Loop C orientations were obtained after aligning simulation frames onto the coordinates of the initial cryo-EM structure by comparing Cα atoms in the helices and β-sheets of the ECD. RMSD calculations were assessed for each ligand by evaluating the difference in heavy atoms of the ligands between each simulation frame and the initial cryo-EM structure conformation. Similarly, Loop C RMSD’s were calculated by comparing the Cα, backbone carbonyl carbon, and backbone nitrogen atoms of residues Ser200 through Asn205 relative to their conformation in the initial cryo-EM resolved structures. To measure the orientation of Loop C, we defined a custom Loop C dihedral as being drawn between the alpha carbons of residues Ala208, Phe199, Glu198, and Ile203. To determine whether Loop C adopted a ‘closed’ or ‘open’ conformation we evaluated the distance between the Arg65 and Asp202 side chains, measured by a minimum distance of their respective polar side-chain atoms for each analyzed simulation frame. To evaluate how well solvated the setron-binding sites were throughout our simulations, we counted the number of water oxygen atoms within 3 Å of any setron atoms for each simulation frame averaged across all five subunits. Structural interaction fingerprints were calculated with an in-house python script that monitored 5-HT3AR interactions with each setron. Specifically, for each residue of 5-HT3AR, ligand-protein interactions with both sidechain and backbone heavy atoms were calculated as a 9-bit representation based on the following 9 types of interactions: apolar (van der Waals), face-to-face aromatic, edge-to-face aromatic, hydrogen-bond interactions with the protein either as a donor or acceptor, electrostatic with either the protein acting as a positive or negative charge, one-water-mediated hydrogen bond, and two-water-mediated hydrogen bonds. A distance cutoff of 4.5 Å was used to identify apolar interactions between two non-polar atoms (carbon atoms), while a cutoff of 4 Å was used to evaluate aromatic and electrostatic interactions. Interaction probabilities were averaged across simulation frames as well as across all five 5-HT3AR binding sites and errors for each interaction type were estimated using a two-state Markov model, sampling the transition matrix posterior distribution using standard Dirichlet priors for the transition probabilities (Trendelkamp-Schroer et al., 2015). Pore radii of 5-HT3AR systems were assessed over equidistant simulation frames with a stride of 12.5 ns using HOLE (Smart et al., 1996).
 
-## Data availability accession numbers
+### Data availability accession numbers
 
 The coordinates of the 5-HT3AR-setron structures and the corresponding Cryo-EM maps have been deposited in wwPDB and EMDB with the following accession numbers. PDB ID: 6W1Y; EMBD ID: EMD-21518 for 5-HT3AR-Palono, PDB ID: 6W1M; EMBD ID: EMD-21512 for 5-HT3AR-Ondan and PDB ID: 6W1J; EMBD ID: EMD-21511 for 5-HT3AR-Alo.

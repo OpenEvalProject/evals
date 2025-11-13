@@ -15,7 +15,7 @@
 
 ## Abstract
 
-10.7554/eLife.46808.001 Most AAA+ remodeling motors denature proteins by pulling on the peptide termini of folded substrates, but it is not well-understood how motors produce grip when resisting a folded domain. Here, at single amino-acid resolution, we identify the determinants of grip by measuring how substrate tail sequences alter the unfolding activity of the unfoldase-protease ClpXP. The seven amino acids abutting a stable substrate domain are key, with residues 2–6 forming a core that contributes most significantly to grip. ClpX grips large hydrophobic and aromatic side chains strongly and small, polar, or charged side chains weakly. Multiple side chains interact with pore loops synergistically to strengthen grip. In combination with recent structures, our results support a mechanism in which unfolding grip is primarily mediated by non-specific van der Waal’s interactions between core side chains of the substrate tail and a subset of YVG loops at the top of the ClpX axial pore.
+Most AAA+ remodeling motors denature proteins by pulling on the peptide termini of folded substrates, but it is not well-understood how motors produce grip when resisting a folded domain. Here, at single amino-acid resolution, we identify the determinants of grip by measuring how substrate tail sequences alter the unfolding activity of the unfoldase-protease ClpXP. The seven amino acids abutting a stable substrate domain are key, with residues 2–6 forming a core that contributes most significantly to grip. ClpX grips large hydrophobic and aromatic side chains strongly and small, polar, or charged side chains weakly. Multiple side chains interact with pore loops synergistically to strengthen grip. In combination with recent structures, our results support a mechanism in which unfolding grip is primarily mediated by non-specific van der Waal’s interactions between core side chains of the substrate tail and a subset of YVG loops at the top of the ClpX axial pore.
 
 ## Introduction
 
@@ -31,7 +31,7 @@ Here, we use green fluorescent protein (GFP) reporter substrates to interrogate 
 
 ## Results
 
-## Substrate design and degradation assays
+### Substrate design and degradation assays
 
 To probe grip during substrate unfolding, we used Aequorea victoria GFP, as its native structure is highly kinetically stable, unfolding is rate limiting for ClpXP degradation of GFP-ssrA, and the pathway of mechanical unfolding of GFP-ssrA by ClpXP is well characterized (Maillard et al., 2011; Kim et al., 2000; Nager et al., 2011). In our substrates, we truncated GFP at Ile-229, the last amino acid that makes extensive native contacts in multiple crystal structures (Ormö et al., 1996; Yang et al., 1996), and added a 12-residue cassette of variable sequence followed by a partial ssrA degron to allow recognition by ClpXP (Figure 1A). Given the length of the axial pore (~35 Å; Glynn et al., 2009), we reasoned that ClpX should only interact with residues within the cassette region during GFP unfolding.
 
@@ -39,21 +39,585 @@ To probe grip during substrate unfolding, we used Aequorea victoria GFP, as its 
 
 **Figure 1.:** (A) Starting at the N terminus, substrates contained residues 1–229 of A.victoria GFP (PDB 1GFL, Yang et al., 1996), a cassette with 12 variable residues, and a partial ssrA degron. (B) Method for measuring intracellular degradation of substrates by ClpXΔN/ClpP. (C) Cellular fluorescence depends upon ClpXΔN/ClpP expression and cassette sequence (listed in Table 1). (D) Fraction intracellular degradation for substrates bearing different cassettes. (E) Fits of the substrate dependence of degradation in vitro to a hyperbolic Michaelis-Menten equation. (F) Vmax values for different substrates. In panels, C–F, values represent averages (± S.D.) of three biological replicates.
 
+**Table 1.**
+ Degradation of variable-tail substrates in the bacterial cytoplasm.Sequences of all substrate tails tested and the extent of degradation by ClpXΔNP in E. coli after 35 min. For substrates tested in multiple panels, the value presented is from the panel in which they first appear. Values are the average of three biological replicates ± S.D.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Substrate</th>
+      <th>Variable tail sequence</th>
+      <th>Fraction degraded in vivo</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gly12</td>
+      <td>GGGG GGGG GGGG</td>
+      <td>0.20 ± 0.05</td>
+    </tr>
+    <tr>
+      <td>GA</td>
+      <td>AGAG GGAG AGGA</td>
+      <td>0.88 ± 0.07</td>
+    </tr>
+    <tr>
+      <td>Titin</td>
+      <td>HLGL IEVE KPLY</td>
+      <td>0.78 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>Basic</td>
+      <td>GKGR GKGR GKGR</td>
+      <td>0.83 ± 0.05</td>
+    </tr>
+    <tr>
+      <td>Acidic</td>
+      <td>GEGD GEGD GEGD</td>
+      <td>0.96 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>LYV2-4</td>
+      <td>GLYV GGGG GGGG</td>
+      <td>0.82 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>LYV4-6</td>
+      <td>GGGL YVGG GGGG</td>
+      <td>0.83 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>LYV6-8</td>
+      <td>GGGG GLYV GGGG</td>
+      <td>0.65 ± 0.08</td>
+    </tr>
+    <tr>
+      <td>LYV8-10</td>
+      <td>GGGG GGGL YVGG</td>
+      <td>0.23 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>LYV10-12</td>
+      <td>GGGG GGGG GLYV</td>
+      <td>0.2 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Tyr1</td>
+      <td>YGGG GGGG GGGG</td>
+      <td>0.3 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Tyr2</td>
+      <td>GYGG GGGG GGGG</td>
+      <td>0.49 ± 0.08</td>
+    </tr>
+    <tr>
+      <td>Tyr3</td>
+      <td>GGYG GGGG GGGG</td>
+      <td>0.80 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>Tyr4</td>
+      <td>GGGY GGGG GGGG</td>
+      <td>0.80 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>Tyr5</td>
+      <td>GGGG YGGG GGGG</td>
+      <td>0.8 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Tyr6</td>
+      <td>GGGG GYGG GGGG</td>
+      <td>0.4 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Tyr7</td>
+      <td>GGGG GGYG GGGG</td>
+      <td>0.32 ± 0.05</td>
+    </tr>
+    <tr>
+      <td>Tyr8</td>
+      <td>GGGG GGGY GGGG</td>
+      <td>0.20 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>Ala4</td>
+      <td>GGGA GGGG GGGG</td>
+      <td>0.28 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>Arg4</td>
+      <td>GGGR GGGG GGGG</td>
+      <td>0.39 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>Asn4</td>
+      <td>GGGN GGGG GGGG</td>
+      <td>0.23 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>Asp4</td>
+      <td>GGGD GGGG GGGG</td>
+      <td>0.20 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>Cys4</td>
+      <td>GGGC GGGG GGGG</td>
+      <td>0.35 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>Glu4</td>
+      <td>GGGE GGGG GGGG</td>
+      <td>0.27 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>Gln4</td>
+      <td>GGGQ GGGG GGGG</td>
+      <td>0.41 ± 0.04</td>
+    </tr>
+    <tr>
+      <td>His4</td>
+      <td>GGGH GGGG GGGG</td>
+      <td>0.26 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>Ile4</td>
+      <td>GGGI GGGG GGGG</td>
+      <td>0.78 ± 0.05</td>
+    </tr>
+    <tr>
+      <td>Leu4</td>
+      <td>GGGL GGGG GGGG</td>
+      <td>0.7 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Lys4</td>
+      <td>GGGK GGGG GGGG</td>
+      <td>0.36 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>Met4</td>
+      <td>GGGM GGGG GGGG</td>
+      <td>0.6 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>Phe4</td>
+      <td>GGGF GGGG GGGG</td>
+      <td>0.7 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Pro4</td>
+      <td>GGGP GGGG GGGG</td>
+      <td>0.19 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>Ser4</td>
+      <td>GGGS GGGG GGGG</td>
+      <td>0.24 ± 0.04</td>
+    </tr>
+    <tr>
+      <td>Thr4</td>
+      <td>GGGT GGGG GGGG</td>
+      <td>0.24 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>Trp4</td>
+      <td>GGGW GGGG GGGG</td>
+      <td>0.5 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Val4</td>
+      <td>GGGV GGGG GGGG</td>
+      <td>0.7 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Ala1</td>
+      <td>AGGG GGGG GGGG</td>
+      <td>0.41 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>Ala1 + 4</td>
+      <td>AGGA GGGG GGGG</td>
+      <td>0.84 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>Ala2 + 4</td>
+      <td>GAGA GGGG GGGG</td>
+      <td>0.88 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>Ala3 + 4</td>
+      <td>GGAA GGGG GGGG</td>
+      <td>0.88 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>Ala4 + 5</td>
+      <td>GGGA AGGG GGGG</td>
+      <td>0.87 ± 0.02</td>
+    </tr>
+    <tr>
+      <td>Ala4 + 6</td>
+      <td>GGGA GAGG GGGG</td>
+      <td>0.7 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Ala4 + 7</td>
+      <td>GGGA GGAG GGGG</td>
+      <td>0.51 ± 0.09</td>
+    </tr>
+    <tr>
+      <td>Ala4 + 8</td>
+      <td>GGGA GGGA GGGG</td>
+      <td>0.31 ± 0.04</td>
+    </tr>
+    <tr>
+      <td>Ala4 + 9</td>
+      <td>GGGA GGGG AGGG</td>
+      <td>0.24 ± 0.07</td>
+    </tr>
+    <tr>
+      <td>Ala4 + 10</td>
+      <td>GGGA GGGG GAGG</td>
+      <td>0.29 ± 0.07</td>
+    </tr>
+    <tr>
+      <td>Ala4 + 11</td>
+      <td>GGGA GGGG GGAG</td>
+      <td>0.33 ± 0.06</td>
+    </tr>
+    <tr>
+      <td>Ala4 + 12</td>
+      <td>GGGA GGGG GGGA</td>
+      <td>0.31 ± 0.04</td>
+    </tr>
+  </tbody>
+</table>
+
 For studies of intracellular degradation, we used an E. coli B strain, which lacks the AAA+ Lon protease; deleted the chromosomal copies of clpP, clpX, and clpA, as ClpAP can also degrade ssrA-tagged substrates (Gottesman et al., 1998; Farrell et al., 2005); and placed genes encoding ClpX∆N and ClpP on a plasmid under arabinose-inducible control (Figure 1B; Guzman et al., 1995). Despite lacking a family-specific N-terminal domain, ClpXΔN supports ClpP-degradation of ssrA-tagged substrates as well as wild-type ClpX but does not interact with many other cellular substrates and adaptors (Singh et al., 2001; Wojtyra et al., 2003; Flynn et al., 2003; Martin et al., 2005). GFP substrates were cloned under transcriptional control of a constitutive ProD promoter (Figure 1B; Davis et al., 2011). To control for ClpXP-independent degradation, we used a pBAD plasmid isogenic to the clpP/clpX∆N vector but lacking these genes (Figure 1B). To determine the extent of intracellular GFP degradation, we measured GFP fluorescence after arabinose induction and growth for 35 min.
 
 We first used this system to characterize substrates with different high or low complexity sequences in the 12-residue cassette. Substrate expression levels were sensitive to the cassette sequence, possibly because of effects on mRNA stability or translation, varying by as much as 7-fold (Figure 1C). To control for differences in expression when measuring degradation of different substrates, we normalized measurements in the strain expressing ClpXΔNP to a strain lacking it (Figure 1D, Table 1). In these experiments, low-complexity tails rich in acidic or basic residues promoted GFP degradation at levels comparable to a high-complexity sequence derived from the human titinI27 domain or a sequence of interspersed glycines and alanines (called GA). By contrast, a cassette sequence of twelve glycines (called Gly12) resulted in poor degradation.
 
 We purified N-terminally His6-tagged variants of these substrates and performed Michaelis-Menten analysis of steady-state ClpXΔNP degradation in vitro (Figure 1E). Degradation with the Gly12 cassette was too slow to measure, but the GA and acidic cassettes promoted degradation with Vmax values similar to the titin sequence (Figure 1F, Table 2). The basic cassette sequence resulted in an intermediate rate of maximal degradation.
 
+**Table 2.**
+ Degradation of purified variable-tail substrates in vitro.Fitted parameters from Michaelis-Menten analysis of substrate degradation by ClpXΔNP. No fit – substrate degradation too slow to be accurately fit. Values are the average of three biological replicates ± S.D.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Substrate</th>
+      <th>Vmax (min−1 hex−1)</th>
+      <th>KM (μM)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Gly12</td>
+      <td>No fit</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>GA</td>
+      <td>2.4 ± 0.1</td>
+      <td>1.7 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Titin</td>
+      <td>2.3 ± 0.2</td>
+      <td>1.1 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Basic</td>
+      <td>1.1 ± 0.1</td>
+      <td>1.4 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Acidic</td>
+      <td>2.7 ± 0.3</td>
+      <td>1.9 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>Tyr1</td>
+      <td>No fit</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tyr2</td>
+      <td>0.10 ± 0.03</td>
+      <td>0.7 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>Tyr3</td>
+      <td>0.7 ± 0.2</td>
+      <td>1.3 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>Tyr4</td>
+      <td>1.7 ± 0.1</td>
+      <td>1.9 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>Tyr5</td>
+      <td>1.1 ± 0.1</td>
+      <td>1.2 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Tyr6</td>
+      <td>0.08 ± 0.02</td>
+      <td>0.7 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>Tyr7</td>
+      <td>No fit</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Tyr8</td>
+      <td>No fit</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ala4</td>
+      <td>0.13 ± 0.06</td>
+      <td>1.6 ± 0.8</td>
+    </tr>
+    <tr>
+      <td>Arg4</td>
+      <td>0.4 ± 0.1</td>
+      <td>1.8 ± 0.4</td>
+    </tr>
+    <tr>
+      <td>Asn4</td>
+      <td>No fit</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Asp4</td>
+      <td>No fit</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cys4</td>
+      <td>0.16 ± 0.04</td>
+      <td>0.9 ± 0.4</td>
+    </tr>
+    <tr>
+      <td>Glu4</td>
+      <td>0.11 ± 0.06</td>
+      <td>1.1 ± 0.6</td>
+    </tr>
+    <tr>
+      <td>Gln4</td>
+      <td>0.40 ± 0.07</td>
+      <td>1.8 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>Ile4</td>
+      <td>1.4 ± 0.3</td>
+      <td>2.2 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>Leu4</td>
+      <td>1.3 ± 0.1</td>
+      <td>2.0 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>Lys4</td>
+      <td>0.3 ± 0.1</td>
+      <td>2.0 ± 0.7</td>
+    </tr>
+    <tr>
+      <td>Met4</td>
+      <td>1.3 ± 0.1</td>
+      <td>2.1 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>Phe4</td>
+      <td>1.4 ± 0.2</td>
+      <td>2.5 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>Pro4</td>
+      <td>No fit</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Ser4</td>
+      <td>No fit</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Thr4</td>
+      <td>0.10 ± 0.02</td>
+      <td>2.0 ± 0.6</td>
+    </tr>
+    <tr>
+      <td>Trp4</td>
+      <td>0.48 ± 0.03</td>
+      <td>1.4 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Val4</td>
+      <td>1.7 ± 0.2</td>
+      <td>2.2 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>Ala1</td>
+      <td>0.19 ± 0.04</td>
+      <td>1.8 ± 0.8</td>
+    </tr>
+    <tr>
+      <td>Ala1 + 4</td>
+      <td>2.3 ± 0.2</td>
+      <td>2.2 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Ala3 + 4</td>
+      <td>2.4 ± 0.1</td>
+      <td>2.1 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Ala4 + 5</td>
+      <td>1.7 ± 0.2</td>
+      <td>1.5 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Ala4 + 7</td>
+      <td>0.38 ± 0.09</td>
+      <td>0.8 ± 0.2</td>
+    </tr>
+    <tr>
+      <td>Ala4 + 9</td>
+      <td>0.09 ± 0.04</td>
+      <td>0.5 ± 0.3</td>
+    </tr>
+    <tr>
+      <td>Tyr1 + 4</td>
+      <td>1.5 ± 0.1</td>
+      <td>1.2 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Tyr2 + 4</td>
+      <td>2.1 ± 0.1</td>
+      <td>1.1 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Tyr3 + 4</td>
+      <td>1.2 ± 0.1</td>
+      <td>2.4 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Tyr4 + 5</td>
+      <td>1.4 ± 0.2</td>
+      <td>1.2 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Tyr4 + 6</td>
+      <td>2.4 ± 0.2</td>
+      <td>1.2 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Tyr4 + 7</td>
+      <td>1.0 ± 0.1</td>
+      <td>0.67 ± 0.05</td>
+    </tr>
+    <tr>
+      <td>Tyr4 + 8</td>
+      <td>2.0 ± 0.3</td>
+      <td>0.92 ± 0.06</td>
+    </tr>
+    <tr>
+      <td>Tyr1 + 3</td>
+      <td>1.4 ± 0.1</td>
+      <td>0.9 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Tyr2 + 3</td>
+      <td>0.81 ± 0.03</td>
+      <td>1.1 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Tyr3 + 5</td>
+      <td>0.7 ± 0.1</td>
+      <td>0.43 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>Tyr3 + 6</td>
+      <td>1.1 ± 0.1</td>
+      <td>0.62 ± 0.05</td>
+    </tr>
+    <tr>
+      <td>Tyr3 + 7</td>
+      <td>0.97 ± 0.08</td>
+      <td>0.61 ± 0.03</td>
+    </tr>
+    <tr>
+      <td>Tyr3 + 8</td>
+      <td>0.49 ± 0.07</td>
+      <td>0.39 ± 0.06</td>
+    </tr>
+    <tr>
+      <td>Val1 + 4</td>
+      <td>2.3 ± 0.1</td>
+      <td>1.6 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Val2 + 4</td>
+      <td>1.8 ± 0.1</td>
+      <td>1.2 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Val3 + 4</td>
+      <td>1.6 ± 0.1</td>
+      <td>1.1 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Val4 + 5</td>
+      <td>2.1 ± 0.1</td>
+      <td>1.5 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Val4 + 6</td>
+      <td>1.4 ± 0.1</td>
+      <td>1.1 ± 0.1</td>
+    </tr>
+    <tr>
+      <td>Val4 + 7</td>
+      <td>1.3 ± 0.1</td>
+      <td>0.93 ± 0.01</td>
+    </tr>
+    <tr>
+      <td>Val4 + 8</td>
+      <td>1.0 ± 0.1</td>
+      <td>0.88 ± 0.06</td>
+    </tr>
+  </tbody>
+</table>
+
 The differences between our results in vivo and in vitro suggest that the endpoint assay in vivo has an upper limit and cannot differentiate rates once the pool of cellular GFP has been degraded. About 20% of the Gly12 substrate appeared to be degraded in vivo, whereas no degradation was seen in vitro. Maturation of the GFP chromophore lags protein folding (Reid and Flynn, 1997), and thus degradation of immature non-fluorescent GFP would not be detected in our cellular assay. It is possible that solutes or macromolecular crowding in the cell enhance ClpXP activity or make GFP easier to unfold. Nevertheless, 12 consecutive glycines inhibit ClpXP unfolding/degradation of GFP both in vivo and in vitro, whereas other low-complexity sequences do not.
 
-## A small stretch of tail residues mediates unfolding grip
+### A small stretch of tail residues mediates unfolding grip
 
 We substituted amino acids in the Gly12 cassette to identify residues/positions that might improve ClpX grip and thus rates of unfolding and degradation. We first positioned a three-residue Leu-Tyr-Val (LYV) sequence in a sliding window across an otherwise poly-Gly cassette (Figure 2A). This tripeptide sequence was selected because its residues are large and hydrophobic, unlike the surrounding Gly residues. Placing the LYV sequence at positions 2–4, 4–6, or 6–8 (numbered relative to the last residue of the folded domain) improved GFP degradation to levels similar to the GA substrate, whereas this tripeptide at positions 8–10 and 10–12 had no substantial effect relative to the Gly12 parent (Figure 2A, Table 1). These results suggest that ClpX grips side chains within the first eight residues of the substrate tail during unfolding.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/46808/elife-46808-fig2-v2.jpg)
+
+**Figure 2.:** (A) Fraction intracellular degradation for substrates with tails containing LYV tripeptides in otherwise all-glycine cassettes. Gly12 and GA substrates were included as internal controls. (B) Fraction intracellular degradation for substrates with tails containing one tyrosine (Y) in otherwise all-glycine cassettes. Gly12 and GA substrates were included as internal controls. (C) Vmax values from Michaelis-Menten analysis of degradation of purified substrates with single-tyrosine cassettes. (D) Rates of ATP hydrolysis by ClpXΔN (0.1 μM hexamer) in the presence of ClpP (0.3 μM 14-mer) in the absence (–) or presence of different substrates (15 μM monomer). (E) ATP cost of degrading substrates with single-tyrosine cassettes. Note that the Y-axis is logarithmic. In all panels, values represent averages (± S.D.) of three biological replicates.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/46808/elife-46808-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** Values are the average of three biological replicates ± S.D. None of the substrates exhibited a substantial increase in KM, indicating that differences in degradation rates result from differences in grip rather than in initial substrate recognition.
+
+![Figure 2—figure supplement 2.](https://cdn.elifesciences.org/articles/46808/elife-46808-fig2-figsupp2-v2.jpg)
+
+**Figure 2—figure supplement 2.:** (A) Rates of ATP hydrolysis by ClpXΔN (0.1 μM hexamer) in the presence of ClpP (0.3 μM 14-mer) in the absence (–) or presence of different substrates (15 μM monomer). (B) ATP cost of degrading substrates. In both panels, values represent averages (± S.D.) of three biological replicates.
+
 To examine the contributions of individual residues to grip, we constructed another panel of substrates in which a single Tyr residue was placed at each of the first eight tail positions in otherwise all-glycine cassettes (Figure 2B). We then tested degradation in vivo. Substrates with a single Tyr at positions 3, 4, and 5 were efficiently degraded, a Tyr at position 2 supported an intermediate level of degradation, and Tyr side chains at other cassette positions supported degradation similar to the Gly12 parent (Figure 2B, Table 1). Thus, four residues appear to contribute the most important grip contacts during unfolding, with tail positions 3–5 being most significant. When we measured degradation of purified substrates in vitro (Figure 2C, Table 2), single Tyr side chains at positions 2–6 facilitated GFP degradation, with the experimental Vmax values forming a roughly normal distribution centered around position 4. Again, Tyr side chains at positions 3–5 were most important, Tyr residues at the flanking 2 and 6 positions had small effects, and Tyr side chains at positions 1, 7, or 8 had no discernable effect. Importantly, changing the position of the Tyr side chain altered the maximal rate of unfolding/degradation without substantially affecting KM for degradation or the ability of substrate to stimulate ATP hydrolysis (Figure 2D, Figure 2—figure supplements 1–2, Figure 2—source data 1). As a result, substrates that were degraded slowly also exhibited a high ATP cost for degradation (Figure 2E). In combination, these results support a model in which ClpX preferentially grips the side chains of residues at positions 3–5 during GFP unfolding. Moreover, gripping a single Tyr side chain at one of these positions is sufficient for robust unfolding and degradation of GFP.
 
-## Side-chain grip preferences
+### Side-chain grip preferences
 
 Next, we exploited this system to determine how different types of side chains affect ClpX grip. We constructed substrates in which each of the remaining 18 natural amino acids was placed at position 4 of a cassette with glycines at the other 11 positions. These substrates exhibited a wide range of susceptibility to ClpXP degradation in E. coli (Figure 3A, Table 1). In general, tails containing an aromatic or large/branched hydrophobic side chain (Tyr, Phe, Val, Ile, Leu, or Met) promoted the most efficient unfolding and degradation, whereas small and/or polar side chains were least efficient. The inhibitory effects of polarity and charge on grip were most obvious for side chains with similar shapes. For example, Val was one of the best side chains for grip, whereas the isosteric Thr side chain was very poor (Figure 3B). Similarly, a polar Gln side chain resulted in better grip than an isosteric but negatively charged Glu side chain (Figure 3B).
 
@@ -65,9 +629,17 @@ We also determined steady-state kinetic parameters for degradation of a subset o
 
 Again, Val supported much better degradation than Thr, and Gln promoted significantly faster degradation than Glu in degradation assays in vitro (Figure 3E). Further, Ser failed to support GFP degradation while both Ala and Cys facilitated low-level degradation (Figure 3E). The Ala-4, Ser-4, Cys-4, Thr-4, Val-4, Glu-4, and Gln-4 substrates at concentrations of 15 µM stimulated the rate of ClpX ATP hydrolysis ~3–4 fold compared to the absence of substrate (Figure 2—figure supplement 2, Figure 2—source data 1). Thus, each substrate binds ClpX well at this concentration, supporting a model in which the large differences in maximal degradation arise from poor grip caused, at least in part, by differences in side-chain charge and polarity. The maximal degradation rates for these substrates (Figure 3E) were inversely correlated with their energetic efficiencies of degradation (Figure 3F), indicating that poor grip results in non-productive ATP hydrolysis.
 
-## Synergistic side-chain interactions promote GFP unfolding
+### Synergistic side-chain interactions promote GFP unfolding
 
 Placing a single alanine at cassette position four with glycines at the remaining positions resulted in only marginally better degradation than the Gly12 substrate (Figure 3A and C). By contrast, the GA cassette – with alanines at positions 1, 3, 7, 9, and 12 – supported efficient degradation (Figure 1D and F), despite the fact that positions 1, 7, 9, and 12 do not seem to be important determinants of grip (Figure 4A). This discrepancy suggested that synergistic interactions between the ClpX pore and multiple side chains might allow substantially better grip. To test this model, we constructed a panel of substrates with one alanine at position 4 and a second alanine at position 1, 2, 3, 5, 6, 7, 8, 9, 10, 11, or 12 (Figure 4B). In our cellular assay, alanines at cassette positions 1/4, 2/4, 3/4, and 4/5 supported robust degradation, alanines at positions 4/6 and 4/7 facilitated moderate degradation, and alanines at positions 4/8, 4/9, 4/10, 4/11 and 4/12 were little better than the single alanine at position 4 (Figure 4B). A single Ala at position 1 supported slightly better degradation in vivo than a single Ala at position 4, but the Ala-1/4 substrate was degraded more efficiently (Figure 4C). This difference was more pronounced in assays of degradation in vitro (Figure 4D, Table 2). Indeed, Vmax for degradation of the Ala-1/4 substrate (2.3 ± 0.2 min−1) was more that 10-fold greater than Vmax for the Ala-1 substrate (0.19 ± 0.04 min−1) or Ala-4 substrate (0.13 ± 0.06 min−1). The non-additivity of these Vmax values provides direct evidence for synergy in grip.
+
+![Figure 4.](https://cdn.elifesciences.org/articles/46808/elife-46808-fig4-v2.jpg)
+
+**Figure 4.:** (A) GA and Ala-4 cassette sequences. A heatmap of Vmax values from Figure 2C is overlaid to show contribution of single tyrosine residues as each tail position. (B) Fraction intracellular degradation of substrates with one alanine at tail-position 4 and a second alanine at a variable position in otherwise all-glycine cassettes. (C) Comparison of intracellular degradation for a subset of substrates, including Ala-1. (D) Vmax values from Michaelis-Menten analysis of degradation of purified substrates. (E and F) Michaelis-Menten Vmax values for purified substrates with one tyrosine (E) or valine (F) at tail-position four and a second tyrosine (E) or valine (F) at each tail position in otherwise all-glycine cassettes. Overlaid dashed lines indicate degradation rate for the parental Tyr-4 (E) or Val-4 (F) substrates. In all panels, values represent averages (± S.D.) of three biological replicates.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/46808/elife-46808-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** Vmax values for degradation from Michaelis-Menten analysis of purified substrates with one tyrosine at tail-position three and a second tyrosine at a variable position in otherwise all-glycine cassettes.Relative degradation for substrate tails with a single Tyr residue at position 3 or 4 indicated by dashed lines. Values represent averages (± S.D.) of three biological replicates.
 
 Because the pore loops of ClpX and other AAA+ motors interact with every other substrate residue in cryo-EM structures (Monroe et al., 2017; Gates et al., 2017; Puchades et al., 2017; de la Peña et al., 2018; Majumder et al., 2019; Dong et al., 2019; White et al., 2018), we investigated whether a similar spacing of large side chains enhances grip. We designed panels of substrates with either Tyr or Val fixed at tail position 4 and a second residue of the same type at positions 1, 2, 3, 5, 6, 7, or 8 in an otherwise all-Gly cassette (Figure 4E and F). Among the Tyr substrates, the Tyr-2/4, Tyr-4/6, and Tyr-4/8 substrates promoted faster GFP degradation than the parental Tyr-4 substrate, whereas the other substrates exhibited similar or slower degradation (Table 2; Figure 4E). It is noteworthy that although the effect of multiple residues was irrelevant for the Ala-4/8 substrate (Figure 4B), the Tyr-4/8 substrate was gripped well, suggesting that spacing of Tyr in multiples of two may allow ClpX to grip substrate in a preferred conformation. Among the Val substrates, Val-1/4 and Val-4/5 facilitated slightly faster GFP degradation than the parental Val-4 substrate, Val-2/4 and Val-3/4 were degraded at similar rates to Val-4, and Val-4/6, Val-4/7, and Val-4/8 were degraded slightly slower (Figure 4F; Table 2). As the pattern of degradation rates for the branched Val residue (Figure 4F) is more similar to Ala (Figure 4B and D) than the aromatic Tyr (Figure 4E), it is possible that the ClpX pore-1 loops interact with aromatic residues somewhat differently from non-aromatic residues.
 
@@ -101,23 +673,93 @@ ClpXP contains just two types of subunits, whereas the 26S proteasome consists o
 
 ## Materials and methods
 
-## Plasmid and strain construction
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cell line (Escherichia coli)</td>
+      <td>E. coli T7 Express ΔclpA ΔclpP ΔclpX</td>
+      <td>this paper</td>
+      <td></td>
+      <td>E. coli strain lacking the ClpA, ClpP, and ClpX genes. progenitor: E. coli T7 Express (New England Biolabs #C2566)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pT7 ClpXΔN(plasmid)</td>
+      <td>Martin et al., 2005</td>
+      <td></td>
+      <td>N-terminally His6-tagged ClpXΔN (residues 62–424) for overexpression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pT7 ClpP (plasmid)</td>
+      <td>Kim et al., 2000</td>
+      <td></td>
+      <td>C-terminally His6-tagged ClpP for overexpression</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBAD ClpP/ClpXΔN(plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>for inducible polycistronic expression of ClpP and ClpXΔN(residues 62–424) for cytoplasmic GFP degradation assays. Progenitor: pBAD (Guzman et al., 1995; jb.177.14.4121–4130.199)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pBAD null (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>control plasmid for cytoplasmic GFP degradation assays. Progenitor: pBAD (Guzman et al., 1995)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>ProD GFP Gly12 ssrA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>for constitutive expression of GFP (residues 1–229) substrates with a 12xGly cassette and partial ssrA (GSENYALAA). All other substrates are derivatives of this construct with different variable cassette sequences. Progenitor: ProD Gemini (Davis et al., 2011; nar/gkq81)</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>pT7 GFP Gly12 ssrA (plasmid)</td>
+      <td>this paper</td>
+      <td></td>
+      <td>for overexpression of N-terminally His6-tagged GFP (1-229) substrates with a 12xGly cassette and partial ssrA (GSENYALAA). All other substrates are derivatives of this construct with different variable cassette sequences.</td>
+    </tr>
+  </tbody>
+</table>
+
+### Plasmid and strain construction
 
 An expression plasmid containing E. coli ClpP and E. coli ClpXΔN was constructed by cloning ClpP into the open reading frame downstream of the pBAD promoter in pBAD18 (Guzman et al., 1995). A second ribosome binding site (5’-CAAGGAGAATAACG-3’) and the ClpX∆N coding sequence (residues 62–424) was added downstream of the ClpP stop codon to produce a polycistronic expression construct. GFP substrates for cytoplasmic degradation assays were cloned downstream of the constitutive insulated ProD promoter in pSB3C5 (Davis et al., 2011). His6-GFP substrates for purification were cloned into a pET4b derivative downstream of the pT7 promoter. For all substrates, the 12-residue variable cassette was encoded on an oligonucleotide and introduced upstream of a partial ssrA degron (Gly-Ser-Glu-Asn-Tyr-Ala-Leu-Ala-Ala) using PCR mutagenesis. The seven C-terminal residues of this degron are identical to those of the ssrA tag, but we removed the N-terminal part of the ssrA tag to preclude potential SspB inhibition (Hersch et al., 2004).
 
 T7 Express ΔclpA ΔclpP ΔclpX was generated from the E. coli strain T7 Express (New England Biolabs). The bicistronic clpP–clpX locus was removed by using lambda red recombineering (Yu et al., 2000) to replace the locus with an FRT-KanR cassette, which was subsequently removed by FLP recombinase expression. ClpA::FRT-KanR was then transduced into this strain with P1 phage from a ClpA::FRT-KanR strain in the Keio collection (Baba et al., 2006), and the resistance marker was again removed with FLP recombinase. Modification of the correct loci was verified by PCR at each step in strain construction.
 
-## Protein expression and purification
+### Protein expression and purification
 
 His6-GFP-cassette-ssrA constructs were expressed as described (Kim et al., 2000) and purified by Ni-NTA affinity, Source 15Q anion exchange, and Superdex 200 size-exclusion chromatography. Purified substrates were assessed to be >99% pure by SDS-PAGE and were stored in 25 mM HEPES-KOH (pH 7.5), 150 mM KCl, 10% glycerol, and 500 μM dithiothreitol.
 
-## Degradation assays in vivo
+### Degradation assays in vivo
 
-The ProD-GFP plasmid encoding each substrate was transformed into T7 Express ΔclpA ΔclpP ΔclpX cells carrying either pBAD18(ClpP/ClpXΔN) or pBAD18(null). After overnight growth at 30°C on LB agar plates supplemented with 100 μg/mL ampicillin and 34 μg/mL chloramphenicol, single colonies were picked into 5 mL of the same medium and antibiotics and cultures were grown overnight at 30°C. At the start of degradation assays, 50 µL of culture of either the ClpP/ClpXΔN expression strain or the null control strain for each substrate was inoculated into fresh 5 mL LB plus antibiotics and grown at 37°C to OD600 0.7–1.0. The cultures were then centrifuged; resuspended at OD600 1.2 in fresh media plus antibiotics; and 500 μL was added to 1 mL of fresh media plus antibiotics supplemented with 120 mM L-arabinose, for a final concentration of 80 mM L-arabinose and OD600 of 0.4. After 35 min of growth at 37°C, 1 mL of culture was removed, centrifuged, and resuspended in 600 μL of phosphate buffered saline (pH 7.4). Three 150 μL technical replicates of resuspended cells were transferred to wells of a clear-bottom black 96-well plate (Greiner). Both the GFP fluorescence of the cell resuspension (excitation 467 nm, emission 511 nm) and the optical density (absorbance 600 nm) were measured on a SpectraMax M5 plate reader (Molecular Devices). The GFP fluorescence for each ClpX∆NP sample and control sample was divided by the measured cell density to give normalized flprotease and flcontrol values respectively. Fraction degraded was calculated as:1−(flprotease/flcontrol)
+The ProD-GFP plasmid encoding each substrate was transformed into T7 Express ΔclpA ΔclpP ΔclpX cells carrying either pBAD18(ClpP/ClpXΔN) or pBAD18(null). After overnight growth at 30°C on LB agar plates supplemented with 100 μg/mL ampicillin and 34 μg/mL chloramphenicol, single colonies were picked into 5 mL of the same medium and antibiotics and cultures were grown overnight at 30°C. At the start of degradation assays, 50 µL of culture of either the ClpP/ClpXΔN expression strain or the null control strain for each substrate was inoculated into fresh 5 mL LB plus antibiotics and grown at 37°C to OD600 0.7–1.0. The cultures were then centrifuged; resuspended at OD600 1.2 in fresh media plus antibiotics; and 500 μL was added to 1 mL of fresh media plus antibiotics supplemented with 120 mM L-arabinose, for a final concentration of 80 mM L-arabinose and OD600 of 0.4. After 35 min of growth at 37°C, 1 mL of culture was removed, centrifuged, and resuspended in 600 μL of phosphate buffered saline (pH 7.4). Three 150 μL technical replicates of resuspended cells were transferred to wells of a clear-bottom black 96-well plate (Greiner). Both the GFP fluorescence of the cell resuspension (excitation 467 nm, emission 511 nm) and the optical density (absorbance 600 nm) were measured on a SpectraMax M5 plate reader (Molecular Devices). The GFP fluorescence for each ClpX∆NP sample and control sample was divided by the measured cell density to give normalized flprotease and flcontrol values respectively. Fraction degraded was calculated as:
+
+$$
+1−(fl_{protease}/fl_{control})
+$$
 
 Each degradation assay was performed independently in multiple biological replicates, and the calculated value of fraction degraded was averaged across biological replicates. No obvious outliers were observed, and all values were included in the subsequent analysis.
 
-## Biochemical assays in vitro
+### Biochemical assays in vitro
 
 Degradation assays were performed at 37°C in 25 mM HEPES-KOH (pH 7.5), 5 mM MgCl2, 200 mM KCl, 10% glycerol, with 0.1 μM ClpX∆N (hexamer), 0.3 μM ClpP (14-mer), 5 mM ATP, 32 mM creatine phosphate (Roche), and 0.08 mg/mL creatine kinase (Millipore-Sigma). For the Thr-4 substrate, assays were performed with 0.5 μM ClpX∆N (hexamer) and 1.5 μM ClpP (14-mer) to measure degradation rates more accurately and facilitate comparison with substrates that were degraded more rapidly. Degradation rates were measured by decrease in fluorescence (excitation 467 nm; emission 511 nm) in 20 μL reactions on a SpectraMax M5 plate reader. To control for signal loss from photobleaching, a parallel set of reactions was measured for each substrate without ClpX∆N or ClpP, and changes in GFP fluorescence in this experiment were subtracted from those in the degradation reaction. Each measurement included three technical replicates measured together in parallel, and the average values of these replicates were fit to a hyperbolic equation to determine KM and Vmax. Three independently-conducted biological replicates were performed in this manner for each substrate to determine average values (± S.D.) for KM and Vmax. No obvious outliers were observed, and all values were included in the subsequent analysis.
 

@@ -20,15 +20,15 @@
 
 ### Affiliations
 
-1. https://ror.org/01cwqze88 Center for Human Immunology, National Institutes of Health Bethesda United States
-2. https://ror.org/01cwqze88 Medical Virology Section, Laboratory of Infectious Diseases, National Institutes of Health Bethesda United States
-3. https://ror.org/01cwqze88 Multiscale Systems Biology Section, Laboratory of Immune System Biology, National Institutes of Health Bethesda United States
+1. Center for Human Immunology, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+2. Medical Virology Section, Laboratory of Infectious Diseases, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
+3. Multiscale Systems Biology Section, Laboratory of Immune System Biology, National Institutes of Health Bethesda United States ([ROR:01cwqze88](https://ror.org/01cwqze88))
 
 † Corresponding author
 
 ## Abstract
 
-Both sex and prior exposure to pathogens are known to influence responses to immune challenges, but their combined effects are not well established in humans, particularly in early innate responses critical for shaping subsequent outcomes. We employed systems immunology approaches to study responses to a replication-defective, herpes simplex virus (HSV) 2 vaccine in men and women either naive or previously exposed to HSV. Blood transcriptomic and cell population profiling showed substantial changes on day 1 after vaccination, but the responses depended on sex and whether the vaccinee was naive or previously exposed to HSV. The magnitude of early transcriptional responses was greatest in HSV naive women where type I interferon (IFN) signatures were prominent and associated negatively with vaccine-induced neutralizing antibody titers, suggesting that a strong early antiviral response reduced the uptake of this replication-defective virus vaccine. While HSV seronegative vaccine recipients had upregulation of gene sets in type I IFN (IFN-α/β) responses, HSV2 seropositive vaccine recipients tended to have responses focused more on type II IFN (IFN-γ) genes. These results together show that prior exposure and sex interact to shape early innate responses that then impact subsequent adaptive immune phenotypes. Intramural Research Program of the NIH, the National Institute of Allergy and Infectious Diseases, and other institutes supporting the Trans-NIH Center for Human Immunology, Autoimmunity, and Inflammation. The vaccine trial was supported through a clinical trial agreement between the National Institute of Allergy and Infectious Diseases and Sanofi Pasteur. Clinical trial number: NCT01915212.
+Background:Both sex and prior exposure to pathogens are known to influence responses to immune challenges, but their combined effects are not well established in humans, particularly in early innate responses critical for shaping subsequent outcomes.Methods:We employed systems immunology approaches to study responses to a replication-defective, herpes simplex virus (HSV) 2 vaccine in men and women either naive or previously exposed to HSV.Results:Blood transcriptomic and cell population profiling showed substantial changes on day 1 after vaccination, but the responses depended on sex and whether the vaccinee was naive or previously exposed to HSV. The magnitude of early transcriptional responses was greatest in HSV naive women where type I interferon (IFN) signatures were prominent and associated negatively with vaccine-induced neutralizing antibody titers, suggesting that a strong early antiviral response reduced the uptake of this replication-defective virus vaccine. While HSV seronegative vaccine recipients had upregulation of gene sets in type I IFN (IFN-α/β) responses, HSV2 seropositive vaccine recipients tended to have responses focused more on type II IFN (IFN-γ) genes.Conclusions:These results together show that prior exposure and sex interact to shape early innate responses that then impact subsequent adaptive immune phenotypes.Funding:Intramural Research Program of the NIH, the National Institute of Allergy and Infectious Diseases, and other institutes supporting the Trans-NIH Center for Human Immunology, Autoimmunity, and Inflammation. The vaccine trial was supported through a clinical trial agreement between the National Institute of Allergy and Infectious Diseases and Sanofi Pasteur. Clinical trial number: NCT01915212.
 
 ## Introduction
 
@@ -42,35 +42,43 @@ We characterized immune responses longitudinally by analyzing blood transcriptom
 
 ## Materials and methods
 
-## Vaccine recipients and study design
+### Vaccine recipients and study design
 
 All HSV529 vaccine recipients signed informed consent for a protocol (clinicaltrials.gov ID: NCT01915212) approved by the National Institute of Allergy and Infectious Diseases Institutional Review Board (Dropulic et al., 2019). The HSV529 vaccine was manufactured by Sanofi Pasteur. Peripheral blood was obtained at various timepoints and PBMCs were isolated by separation with Ficoll-Paque PLUS and cryopreserved. A web tool for visualization of experimental designs was used to summarize the samples and assays available at sampled timepoints (Cheung and CHI Consortium, 2020).
 
-## RNA sequencing
+### RNA sequencing
 
 Fresh PBMCs were collected and lysed in TRIzol (Thermo Fisher, Waltham, MA), and total RNA was isolated and purified with an miRNeasy kit (Qiagen, Hilden, Germany). All blood samples at different timepoints from the same subject were processed together. RNA quality and quantity were estimated using Nanodrop (Thermo Scientific, Wilmington, DE) and Agilent 2100 Bioanalyzer (Agilent Technologies, Palo Alto, CA). Before sequencing analysis, all samples were batched according to their age, sex, race, and immunization status, but assayed blindly. Two reference samples were simultaneously processed with the vaccine study samples in each batch. Stranded cDNA sequencing libraries were generated with a TruSeq Stranded mRNA Library Prep Kit (Illumina, San Diego, CA) following the manufacturer’s instructions. Briefly, 500 ng of total RNA was used for mRNA selection. After the reverse transcription to first strand cDNA, strand information was maintained with dUTP during second strand synthesis. A single nucleotide (containing adenine) was added to the dsDNA fragments and the products were ligated to an adapter. The products were then purified and amplified by PCR to create the final cDNA library. The library was qualified with an Agilent Bioanalyzer and quantified with a Qubit 2.0 fluorometer. The cluster generation and pair-end (2 × 75 bp) sequencing were performed on an Illumina HiSeq 3000. Up to 96 barcoded samples were pooled for one single run, which yielded at least 30 M passed filter paired reads per sample. Sequencing results were demultiplexed and converted to FASTQ format using Illumina bcl2fastq software. The sequencing reads were adapter and quality trimmed and then aligned to the human genome using STAR software, and read counts determined with HTSeqCount software. Raw read counts were normalized using the DESeq2, LIMMA packages, and R software.
 
-## Cells and flow cytometry
+### Cells and flow cytometry
 
 Viable PBMCs were isolated and cryopreserved according to Center for Human Immunology (CHI) protocols (https://chi.niaid.nih.gov/web/new/our-research/sop.html). High parameter flow cytometry was performed using the Human Immunology Project Consortium (HIPC) panels as previously described (Maecker et al., 2012; Finak et al., 2016; Langweiler and McCoy, 2019). Briefly, 4 parallel 10-color panels with a total of 26 unique markers enabled detection of 70 subsets of PBMCs represented as a fraction of their parent population (Supplementary file 1A, B).
 
 Staining was performed using dedicated lyophilized antibody plates for each of compensation, fluorescence-minus-one controls, and study sample staining (all BD Biosciences). Sample staining plates included up to 10 study samples in addition to control PBMCs from a healthy donor, and staining was preceded by an additional incubation with LIVE/DEAD Fixable Blue Dead Cell Stain (Thermo Fisher Scientific). Acquisition was performed with a Becton Dickinson LSRFortessa, using DIVA 8 software, acquiring 250,000 cells for each sample. Subsequent analysis to determine population frequencies used FlowJo version 9.6.2. Compensation performed with unstained cells and Becton Dickinson compensation beads was used to aid acquisition monitoring. Subsequently a final compensation matrix was calculated using FlowJo during postacquisition analysis.
 
-## Statistics and computational analysis
+### Statistics and computational analysis
 
 Batching of samples, quality control filtering, and statistical analyses were performed using R/Bioconductor as well as R-Shiny web tools similar to those previously published (Cheung et al., 2017; Cheung, 2023, copy archived at swh:1:rev:5480d6351a4740b56297f2470b24402bd1b676b9). Longitudinal changes in flow cytometry populations were evaluated by Wilcoxon’s signed-rank paired test, and p values were corrected for multiple comparisons using the Benjamini–Hochberg method, using an R webtool. For transcriptomic responses the most significantly responding genes were initially identified using Bioconductor package DESeq2 and then responses were further analyzed using linear models for microarray data (LIMMA) (Smyth, 2004; Love et al., 2014). Low expressed genes were removed and day 1 expression after subtraction of baseline values were used to fit models based on log counts per million, with an interaction term included when comparing the effect of sex between groups based on prior exposure. The tmod package in R was used for blood transcription module (BTM) analysis (Zyla et al., 2019). Each BTM is a set of genes which has been shown to show coherent expression across many biological samples in conditions including in vivo responses to interventions such as vaccines (Bar-Joseph et al., 2003; Chaussabel and Baldwin, 2014). BTM analysis can used to identify significant enrichment of a set of foreground genes, in predefined transcriptional modules compared against a reference set. The hypergeometric test devised in tmodHGtest was used to calculate enrichments and p values employing Benjamini–Hochberg correction for multiple sampling. All the statistical analyses and graphical presentations were performed in R. Gene set variation analysis (GSVA) was used to quantify subject-level variation in signatures of interest (Zyla et al., 2019; Hänzelmann et al., 2013).
 
-## Reactions to HSV529 vaccination
+### Reactions to HSV529 vaccination
 
 Solicited systemic and local reactions to vaccine were graded based on a toxicity table as reported previously (Dropulic et al., 2019). Severity of disease, represented by aggregate symptom scores, wase determined by multiplying the severity of each symptom by the number of days it persisted. Welch’s unpaired t-test was used to determine statistically significant differences (two-tailed p < 0.05) in aggregate symptom scores between women and men after each vaccine dose.
 
 ## Results
 
-## Vaccination strategy and study design
+### Vaccination strategy and study design
 
 Sixty subjects who comprised three groups based on their HSV serostatus prior to vaccination were studied: HSV1−/HSV2−, HSV1+/HSV2−, and HSV1±/HSV2+ (Dropulic et al., 2019). The three groups each consisted of 20 volunteers who received intramuscular injection with either HSV529 vaccine (15 participants) or placebo (5 participants), and 50% of the vaccine recipients were women. The mean age of vaccine recipients was 31 years (range 21–40) and did not differ significantly between the groups defined by serology and sex. The vaccine regimen consisted of three vaccinations and peripheral blood samples were obtained on the day before each of these vaccinations, and at follow-up timepoints for all 60 subjects (Figure 1A). Bulk RNA-seq was performed at nine timepoints and flow cytometry at seven timepoints including the day of each vaccination, 1 day after the first vaccination, and 7 days after each of the three vaccinations. Measurements were also obtained for neutralizing antibody titers to HSV, complete blood count tests, and adverse reactions to the vaccination at various timepoints (Figure 1A).
 
-## Prior exposure and sex are associated with the kinetics of the antibody response and adverse events induced by vaccination
+![Figure 1.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig1-v1.jpg)
+
+**Figure 1.:** (A) Schematic outline of the vaccination strategy and study design. Each subject was randomized to receive three vaccinations with HSV529 or saline placebo on days 0, 30, and 180. Timepoints are marked at which blood was obtained for immune phenotyping assays, or when adverse events were scored. (B, C) Changes in HSV2 neutralizing antibody titer over time are shown for HSV529 vaccine recipients, plotted separately for subjects with no prior exposure to herpes simplex virus (HSV) (HSV1−/HSV2−) or for HSV1 seropositive subjects (HSV1+/HSV2−). Subjects are shown classified by sex and as slow or fast responders to vaccination based on the increase in HSV2 neutralizing titer by day 30. Rapid responders were defined by an increase in neutralizing antibody responses at day 30 for subjects who were HSV1−/HSV2− before vaccination. In subjects HSV1+/HSV2− prior to vaccination, in whom an increase in neutralizing antibody responses was observed by day 30 for most individuals, rapid responders were a distinct group marked by higher titer responses compared to slow responders at day 30. Significant changes are indicated for men and women separately (*p < 0.05, ***p < 0.001).
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** Aggregate systemic (A, C, E) and local (B, D, F) symptom scores for the first 7 days after each dose are shown for HSV529 in recipients which were HSV1−/HSV2− (A, B), HSV1+/HSV2− (C, D), or HSV1±/HSV2+ (E, F). Long black horizontal lines indicate means and short red or blue horizontal lines are standard errors, each data point is a different vaccine recipient, and *p < 0.05. Aggregate symptom scores were determined by multiplying the severity of each symptom by the number of days it persisted and adding the values for each of the first 7 days after each dose of vaccine.
+
+### Prior exposure and sex are associated with the kinetics of the antibody response and adverse events induced by vaccination
 
 The HSV529 vaccine induced increases in HSV-specific antibody titers in most recipients (Dropulic et al., 2019). These responses were most prominent in HSV1−/HSV2− vaccine recipients, while in subjects previously exposed to HSV the vaccine responses were more modest particularly at later timepoints. Kinetic analysis of the profiles of HSV2 neutralizing antibody titers showed clear differences based on prior exposure to HSV. In subjects who were HSV1−/HSV2− before vaccination, neutralizing antibody responses peaked at 1 month after the third dose of vaccine at day 210 (Wilcoxon’s signed-rank paired test, p < 0.05), and antibody titers declined significantly by day 360 regardless of sex (p < 0.001) (Figure 1B). In contrast, individuals seropositive for HSV1 prior to vaccination showed neutralizing antibody responses that peaked at day 60 or earlier for the majority of subjects (Figure 1C). Neutralizing antibodies were only tested at day 0 and 210 in HSV2+ vaccine recipients, so for this group kinetics of the response could not be assessed.
 
@@ -78,29 +86,308 @@ Effects of sex were observed particularly when focusing on kinetics of the neutr
 
 Evaluation of adverse events observed in this cohort also indicated effects of both serostatus and sex. HSV1−/HSV2− women reported more systemic and local reactions to the vaccine than men. About 65% of HSV529 recipients had systemic reactions to the vaccine (compared with ~55% of placebo recipients), while ~90% of HSV529 recipients had local injection site reactions (compared with ~50% of placebo recipients) (Dropulic et al., 2019). Analysis of sex-specific differences in HSV1−/HSV2− vaccine recipients showed that women were more likely to have more severe systemic reactions within the first 7 days of the first dose of vaccine than men (Welch’s unpaired t-test, p = 0.015) and more severe local reactions within the first 7 days of the second dose of vaccine (p = 0.017) (Figure 1—figure supplement 1). However, differences in systemic or local reactions were not noted between women and men in the HSV1+/HSV2− or HSV1±/HSV2+ groups. Together, these results demonstrate that both sex and prior exposure to HSV1 markedly affect the response to this vaccine with HSV1−/HSV2− women showing the most robust early responses marked by a more rapid induction of HSV2 neutralizing antibody, and a higher frequency of adverse events.
 
-## The magnitude of the response to vaccination is greatest at day one after the first vaccine dose
+### The magnitude of the response to vaccination is greatest at day one after the first vaccine dose
 
 For all 60 subjects, peripheral blood bulk RNA-seq and high parameter flow cytometry measurements were analyzed from seven matched timepoints, and at two further timepoints for RNA-seq (Figure 1A). Initially all subjects that received HSV529 were combined to identify genes differentially expressed longitudinally in response to vaccination, and gene set enrichment analysis was performed using BTMs to identify the highest responding biological pathways (Figure 2A, B; Subramanian et al., 2005; Li et al., 2014). Many of the responses previously observed in other vaccine studies were detected (Nakaya et al., 2011; Tsang et al., 2014; Querec et al., 2009; Kazmin et al., 2017). Inflammatory and IFN pathways, dendritic cell, T cell, and B cell responses were all detected at day 1 after the first vaccination. Cell cycling, T cell, and B cell responses were observed at day 7 after the first vaccination. A timepoint of 7 days after vaccination was chosen for analysis of the subsequent doses, and although after the first vaccine dose the magnitude of changes was reduced at the individual gene level, in terms of gene set enrichments the changes for subsequent doses resembled those after the first dose, particularly for dose 3. The individual genes most significantly upregulated on day 1 after the first dose of vaccine included those encoding IFN-induced proteins and Fc receptors (Supplementary file 1C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig2-v1.jpg)
+
+**Figure 2.:** (A) Transcriptomic phenotypes of PBMCs were characterized by RNA-seq and responses for all HSV529 recipients were defined by comparing observations at day 1 or 7 to day 0 (day of the first vaccination dose), and for subsequent doses by comparing between the day of the second or third vaccination dose and timepoints 7 days later (days 37 and 187). Functions represented by the genes differentially expressed were assessed by enrichment of blood transcription modules (BTMs), and all significantly enriched modules are shown (FDR adjusted p < 0.05) with plotted size and color indicating the normalized effect size and significance, respectively, for enrichments. (B) Volcano plots show the changes in individual genes for all HSV529 recipients, with significantly differentially expressed genes colored red (FDR adjusted p < 0.05), and the most significantly differentially expressed genes labeled. Note that the scale of the y axes differ between the days that were analyzed. (C) Flow cytometry was used to quantify the frequencies of 70 PBMC populations for all HSV529 recipients. Examples of populations that showed significant changes at either day 1 or 7 after the first vaccine dose compared to day 0 are shown (FDR adjusted p < 0.05). (D) Changes in gene expression between days 0 and 1 were next determined separately for subjects that received HSV529 and differed in their status in terms of prior exposure to HSV, or that received placebo and in which all groups of prior exposure were combined (y-axis). Jaccard index values and statistical significance, indicated by plotted size and color, respectively, are shown for overlap of these expression changes with the differentially expressed genes reported in previous studies of vaccine responses at day 1 to influenza (Tsang et al., 2014) and in two studies of yellow fever (x-axis) (Gaucher et al., 2008; Querec et al., 2009).
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Network analysis of the pathways enriched in overlap between herpes simplex virus (HSV) seronegative HSV529 recipients and yellow fever vaccine recipients (Gaucher et al., 2008; Querec et al., 2009). The color intensity and size of nodes increase with the significance and size of enriched gene sets, respectively. Edge intensity increases with the number of overlapping genes, and type I interferon (IFN)-related gene sets are highlighted in red. (B) A similar network analysis for pathways enriched in overlap between HSV2 seropositive HSV529 recipients and influenza vaccine recipients, with IFN-γ-related gene sets highlighted in red.
 
 Multi-parameter flow cytometry quantified 70 cell populations which were compared for the same timepoints as the transcriptomic analysis, for all subjects combined. Cell population changes occurring across broad lineages were observed as expected for vaccine responses (Figure 2C and Supplementary file 1D). Monocyte and NK cell frequencies significantly increased at day 1 after the first dose of vaccine, whereas the Th1 subset decreased, possibly reflecting polarization of the vaccine response. T follicular helper cells, T cells, and B cells were all significantly expanded by day 7 consistent with an activated adaptive response. Plasmablasts, defined as CD19+ CD20− CD27+ CD38high (Perez-Andres et al., 2010), were significantly expanded at both days 1 and 7 (Wilcoxon’s signed-rank paired test with Benjamini–Hochberg correction for multiple comparisons, p < 0.05) (Figure 2C). Although this analysis combined all subjects, the remarkably early rise in plasmablasts after vaccination may be related to the particularly rapid neutralizing antibody response to vaccination in HSV seronegative women described above.
 
 The number of genes showing significant changes (FDR corrected p < 0.05) in response to vaccination was higher at 1 day after the first dose of vaccine than at later timepoints and after subsequent vaccine doses (Figure 2B). This was also true for the changes in cell populations and might be expected for a replication-defective vaccine which presents antigens to the immune system immediately after vaccination, but is not amplified over time like a replication-competent attenuated virus or vector-based vaccine. Therefore, we further focused analyses on day 1 after the first dose of vaccine, to investigate how subjects differing in sex or prior exposure vary in their responses to HSV529 vaccination.
 
-## Innate responses to HSV529 that differ based on prior exposure resemble differences between innate responses to yellow fever and influenza vaccinations
+### Innate responses to HSV529 that differ based on prior exposure resemble differences between innate responses to yellow fever and influenza vaccinations
 
 We analyzed the differentially expressed genes (DEGs) observed after HSV529 vaccination to investigate the transcriptomic responses which were associated with prior exposure to HSV. We compared day 1 DEGs in each of the three HSV serogroups that received HSV529 vaccine, with the early transcriptomic responses that have been previously reported in recipients of either yellow fever or influenza vaccines (Tsang et al., 2014; Gaucher et al., 2008; Querec et al., 2009). In the previous studies, yellow fever is a pathogen for which vaccine recipients had no prior exposure, whereas all subjects receiving the influenza vaccine were expected to have some degree of immunity due to prior influenza infection and vaccine exposure. Jaccard index values, reflecting the size of the intersection relative to the size of the union for two sample sets, were determined to quantify the overlap in day 1 transcriptomic responses to these different vaccines (Figure 2D). DEGs in HSV seronegative HSV529 recipients were strikingly similar to those seen in yellow fever vaccine recipients (p < 1 × 10−90, Jaccard index >0.35). In contrast, DEGs in both HSV seropositive groups were more similar to those seen in influenza vaccine recipients (p < 1 × 10−30, Jaccard index >0.13). Thus, transcriptomic responses observed in HSV naive and seropositive subjects mirror the responses to yellow fever and influenza vaccine recipients, respectively. This indicates that the effect of prior HSV exposure on response to HSV529 is consistent with differences observed between the early responses to vaccines for other pathogens that represent either naive responses or those mounted by individuals with existing adaptive immunity.
 
 Network analysis of pathways that were enriched in overlap between HSV seronegative HSV529 recipients and yellow fever vaccine recipients, showed central roles for gene sets involved in type I IFN (IFN-α/β) and antiviral innate responses (Figure 2—figure supplement 1A). In contrast, network analysis of pathways that were enriched in overlap between HSV2 seropositive HSV529 recipients and influenza vaccine recipients, showed a more heterogenous pattern of relatedness that included type II IFN (IFN-γ) and IL-12 responses (Figure 2—figure supplement 1B). The 20 most significantly upregulated genes for HSV529 recipients in each of the 3 HSV serogroups emphasize the similarities in the two HSV2 seropositive groups and how different they are from the seronegative group (Table 1). GBP1, WARS, and IRF1, which are upregulated predominantly by IFN-γ (Megger et al., 2017; Sen et al., 2018) were among the genes most significantly upregulated in both of the HSV seropositive groups studied, while MX1 and ISG15, which are upregulated primarily by IFN-α (Megger et al., 2017; Taylor et al., 1996), were among the most significantly upregulated genes in HSV seronegative subjects.
 
+**Table 1.**
+ Twenty most significantly upregulated genes at day 1 for HSV529 recipients divided into three groups based on prior exposure to herpes simplex virus (HSV).Changes in expression compared to day 0 were analyzed using Bioconductor package DESeq2, with log 2 fold changes reported and p values corrected for multiple comparisons. Genes marked in red are present in both HSV1+/HSV2− and HSV1±/HSV2+, but not HSV1−/HSV2− subjects.
+
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="3">HSV1−/HSV2−</th>
+      <th colspan="3">HSV1+/HSV2−</th>
+      <th colspan="3">HSV1±/HSV2+</th>
+    </tr>
+    <tr>
+      <th>Gene</th>
+      <th>Fold change</th>
+      <th>p adjusted</th>
+      <th>Gene</th>
+      <th>Fold change</th>
+      <th>p adjusted</th>
+      <th>Gene</th>
+      <th>Fold change</th>
+      <th>p adjusted</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>MX1</td>
+      <td>1.95</td>
+      <td>7.02 × 10−31</td>
+      <td>GBP2</td>
+      <td>1.14</td>
+      <td>1.36 × 10−20</td>
+      <td>ANKRD22</td>
+      <td>5.44</td>
+      <td>4.37 × 10−44</td>
+    </tr>
+    <tr>
+      <td>EIF2AK2</td>
+      <td>1.28</td>
+      <td>3.99 × 10−28</td>
+      <td>GBP1</td>
+      <td>2.06</td>
+      <td>2.60 × 10−19</td>
+      <td>GBP5</td>
+      <td>1.94</td>
+      <td>6.39 × 10−41</td>
+    </tr>
+    <tr>
+      <td>IFI44</td>
+      <td>2.01</td>
+      <td>3.99 × 10−28</td>
+      <td>PSTPIP2</td>
+      <td>0.98</td>
+      <td>4.27 × 10−18</td>
+      <td>WARS</td>
+      <td>2.19</td>
+      <td>2.03 × 10−40</td>
+    </tr>
+    <tr>
+      <td>ISG15</td>
+      <td>2.10</td>
+      <td>3.99 × 10−28</td>
+      <td>ANKRD22</td>
+      <td>3.54</td>
+      <td>7.25 × 10−18</td>
+      <td>ETV7</td>
+      <td>4.12</td>
+      <td>5.08 × 10−40</td>
+    </tr>
+    <tr>
+      <td>IFI6</td>
+      <td>2.26</td>
+      <td>4.94 × 10−28</td>
+      <td>FCGR1B</td>
+      <td>2.32</td>
+      <td>4.39 × 10−17</td>
+      <td>GBP1</td>
+      <td>2.86</td>
+      <td>1.64 × 10−39</td>
+    </tr>
+    <tr>
+      <td>HERC5</td>
+      <td>1.66</td>
+      <td>3.52 × 10−27</td>
+      <td>WARS</td>
+      <td>1.44</td>
+      <td>9.49 × 10−17</td>
+      <td>GBP4</td>
+      <td>1.86</td>
+      <td>1.93 × 10−38</td>
+    </tr>
+    <tr>
+      <td>OAS3</td>
+      <td>1.95</td>
+      <td>3.52 × 10−27</td>
+      <td>GBP4</td>
+      <td>1.24</td>
+      <td>2.28 × 10−16</td>
+      <td>IDO1</td>
+      <td>4.02</td>
+      <td>4.50 × 10−38</td>
+    </tr>
+    <tr>
+      <td>CMPK2</td>
+      <td>2.12</td>
+      <td>5.75 × 10−27</td>
+      <td>LAP3</td>
+      <td>1.54</td>
+      <td>2.28 × 10−16</td>
+      <td>CD274</td>
+      <td>1.72</td>
+      <td>2.16 × 10−37</td>
+    </tr>
+    <tr>
+      <td>HERC6</td>
+      <td>1.02</td>
+      <td>5.75 × 10−27</td>
+      <td>GBP5</td>
+      <td>1.24</td>
+      <td>3.51 × 10−16</td>
+      <td>LAP3</td>
+      <td>2.26</td>
+      <td>7.50 × 10−37</td>
+    </tr>
+    <tr>
+      <td>IFI44L</td>
+      <td>2.68</td>
+      <td>1.52 × 10−26</td>
+      <td>GBP1P1</td>
+      <td>3.09</td>
+      <td>5.37 × 10−16</td>
+      <td>GBP2</td>
+      <td>1.46</td>
+      <td>1.71 × 10−36</td>
+    </tr>
+    <tr>
+      <td>LAMP3</td>
+      <td>1.94</td>
+      <td>2.86 × 10−26</td>
+      <td>FCGR1A</td>
+      <td>2.05</td>
+      <td>7.64 × 10−16</td>
+      <td>GBP1P1</td>
+      <td>4.40</td>
+      <td>6.42 × 10−34</td>
+    </tr>
+    <tr>
+      <td>IFIT1</td>
+      <td>2.92</td>
+      <td>1.39 × 10−25</td>
+      <td>STAT1</td>
+      <td>1.37</td>
+      <td>1.27 × 10−15</td>
+      <td>VAMP5</td>
+      <td>1.63</td>
+      <td>6.16 × 10−33</td>
+    </tr>
+    <tr>
+      <td>IFIT2</td>
+      <td>2.41</td>
+      <td>5.10 × 10−25</td>
+      <td>APOL4</td>
+      <td>3.12</td>
+      <td>2.45 × 10−15</td>
+      <td>CXCL10</td>
+      <td>4.50</td>
+      <td>1.98 × 10−32</td>
+    </tr>
+    <tr>
+      <td>SPATS2L</td>
+      <td>1.32</td>
+      <td>6.94 × 10−25</td>
+      <td>PSME2</td>
+      <td>0.84</td>
+      <td>3.67 × 10−15</td>
+      <td>FCGR1B</td>
+      <td>3.10</td>
+      <td>1.98 × 10−32</td>
+    </tr>
+    <tr>
+      <td>USP18</td>
+      <td>1.89</td>
+      <td>1.30 × 10−24</td>
+      <td>FCGR1C</td>
+      <td>2.55</td>
+      <td>5.59 × 10−14</td>
+      <td>SERPING1</td>
+      <td>3.79</td>
+      <td>2.05 × 10−32</td>
+    </tr>
+    <tr>
+      <td>PARP12</td>
+      <td>0.72</td>
+      <td>1.86 × 10−24</td>
+      <td>IRF1</td>
+      <td>0.89</td>
+      <td>1.52 × 10−13</td>
+      <td>PSME2</td>
+      <td>1.20</td>
+      <td>2.41 × 10−32</td>
+    </tr>
+    <tr>
+      <td>RSAD2</td>
+      <td>2.29</td>
+      <td>1.86 × 10−24</td>
+      <td>APOL2</td>
+      <td>0.64</td>
+      <td>2.19 × 10−13</td>
+      <td>BATF2</td>
+      <td>3.81</td>
+      <td>2.58 × 10−32</td>
+    </tr>
+    <tr>
+      <td>TRIM22</td>
+      <td>0.78</td>
+      <td>2.45 × 10−24</td>
+      <td>PARP9</td>
+      <td>1.14</td>
+      <td>3.14 × 10−13</td>
+      <td>IRF1</td>
+      <td>1.34</td>
+      <td>3.16 × 10−32</td>
+    </tr>
+    <tr>
+      <td>HELZ2</td>
+      <td>1.16</td>
+      <td>2.23 × 10−23</td>
+      <td>APOL3</td>
+      <td>0.55</td>
+      <td>3.89 × 10−13</td>
+      <td>APOL3</td>
+      <td>0.83</td>
+      <td>7.00 × 10−32</td>
+    </tr>
+    <tr>
+      <td>MX2</td>
+      <td>1.25</td>
+      <td>5.10 × 10−23</td>
+      <td>SAMD4A</td>
+      <td>1.24</td>
+      <td>3.89 × 10−13</td>
+      <td>SAMD4A</td>
+      <td>1.86</td>
+      <td>1.74 × 10−31</td>
+    </tr>
+  </tbody>
+</table>
+
 There were also differences based on prior exposure to HSV in the cell population responses quantified by flow cytometry. HSV1−/HSV2− vaccine recipients had significant changes in numbers of activated B cells, Th1, Tc1, and Tc17 cells on day 1, while these cell types were not significantly altered in HSV1+/HSV2− or HSV1±/HSV2+ vaccine recipients (Supplementary file 1E). This is consistent with the more robust responses in HSV naive subjects, but it was unexpected that adaptive lymphocyte populations would be activated as early as day 1. However, some cellular responses such as increases in activated NK cells were significantly increased on day 1 in vaccine recipients regardless of their HSV serostatus prior to vaccination. Although naive and memory B cells were monitored these were not among the populations observed to be significantly different, even at day 7, when either HSV1−/HSV2− or HSV seropositive vaccine recipients were analyzed separately (Supplementary file 1F).
 
-## Gene expression responses associated with sex differ significantly between subjects previously naive or exposed to HSV
+### Gene expression responses associated with sex differ significantly between subjects previously naive or exposed to HSV
 
 We next analyzed the transcriptomic changes after HSV529 vaccination to investigate responses associated with sex. Sex had showed a notable effect of faster neutralizing antibody responses in women compared to men within the HSV seronegative group (Figure 1B). We hypothesized that differences in early innate responses had contributed to this effect, so we compared transcriptomic responses at day 1 between men and women who were HSV1−/HSV2− prior to vaccination, using LIMMA Smyth, 2004 followed by ranking of genes by the fold change in expression between sexes to analyze enrichment of BTMs (Li et al., 2014). Multiple pathways showed significant enrichment with modules including IFN responses, monocytes, and dendritic cell activation which were all upregulated in women, and T cell responses which were increased more in men (FDR adjusted p < 0.05) (Figure 3A and Figure 3—figure supplement 1). The IFN and antiviral sensing module showed strong enrichment and for each of the six enriched gene sets from this module, all leading-edge genes that drove enrichment are indicated, with the change in expression at day 1 shown for all 15 HSV naive subjects (Figure 3B). Interestingly this revealed some heterogeneity, with most but not all women demonstrating stronger upregulation of IFN responses compared to men within HSV naive vaccine recipients. The prominent increase in the day 1 response of HSV naive women is shown for one example of these leading-edge genes, TLR7, which is of particular interest for these sex-associated effects as this gene is encoded on the X chromosome. This response was also vaccine specific as there were no responses in placebo recipients (Figure 3—figure supplement 2).
 
+![Figure 3.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig3-v1.jpg)
+
+**Figure 3.:** (A) Changes in expression of all genes between days 0 and 1 were compared between men and women for HSV1−/HSV2− subjects, and used to rank genes by fold change for hypergeometric enrichment analysis of blood transcription modules (BTMs). All pathways with significant enrichment in either sex are shown (FDR adjusted p < 0.05), with enrichment score and significance indicated by plotted color and size, respectively. (B) For the interferon and antiviral sensing module, responses of the 40 different leading-edge genes in 6 represented gene sets are shown in rows for the 15 HSV naive subjects in columns. The change in expression at day 1 compared to day 0 is shown with z-scores normalized separately for each of the six gene sets, where red indicates above and blue indicates below mean values.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Six gene sets from the IFN and antiviral sensing module were enriched when comparing sex differences within herpes simplex virus (HSV) naive subjects in day 1 transcriptional responses (Figure 3A). For these enrichments, plots show the fraction of genes included from each set (y-axis) when all genes tested are ranked by decreasing difference when comparing expression in women to men (x-axis), with bars on the x-axis showing the distribution of members of these gene sets as black marks.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Longitudinally monitored TLR expression is plotted for all 60 subjects, colored by sex and separated by herpes simplex virus (HSV) serostatus for vaccine recipients, or with all serogroups combined for placebo recipients.
+
 To further assess whether the day 1 responses associated with sex depended on prior exposure to HSV, responses were next compared between men and women, and between each of the three HSV serogroups. Changes in gene expression associated with sex in each serogroup were used to determine differences between the HSV naive group and each HSV exposed group for every gene. This enabled two parallel enrichment analyses; all BTMs that were enriched and showed greater sex-associated differences in the HSV naive compared to exposed groups are shown (FDR adjusted p < 0.05) (Figure 4A and Figure 4—figure supplement 1). Similar pathways, including IFN responses and dendritic cell activation, were enriched when the effect of sex in HSV naive subjects was compared to its effect in either HSV seropositive group (Figure 4A); these pathways were also similar to those enriched when comparing women to men in HSV1−/HSV2− vaccine recipients (Figure 3A). These results confirm that the effect of sex on transcriptional response to HSV529 vaccination differs significantly between naive and HSV-exposed individuals.
 
-## The transcriptional response in HSV naive women is dominated by IFN responses and correlates negatively with vaccine-induced neutralizing antibody titer
+![Figure 4.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig4-v1.jpg)
+
+**Figure 4.:** (A) Changes in expression of all genes between days 0 and 1 were compared between men and women separately for the three HSV serogroups of subjects based on prior exposure to HSV. For each gene those changes with sex were then used to compute a difference between the HSV naive group and either HSV exposed group (x-axis). These differences were used to rank genes for hypergeometric enrichment analysis of blood transcription modules (BTMs), and all pathways with significant positive enrichment in the HSV naive group are shown (FDR adjusted p < 0.05), with enrichment score and significance indicated by plotted color and size, respectively. (B) Comparison of sex differences between HSV naive and HSV1+/HSV2− subjects identified seven gene sets significantly enriched in the IFN antiviral sensing module. For these seven gene sets, responses of the 33 different leading-edge genes in rows, for all 45 vaccine recipients in columns are shown with the change in expression at day 1 compared to day 0 with z-scores normalized within each gene set, where red indicates above and blue indicates below mean values. (C) Principal component analysis was performed using expression of the 33 leading-edge genes from panel B, at all nine timepoints with RNA-seq data. The first principal component is plotted for all 60 subjects colored by sex and separated by HSV serostatus for vaccine recipients, or with all serogroups combined for placebo recipients. (D) For HSV naive women that were vaccinated, variation in day 1 IFN responses was quantified by gene set variation analysis (GSVA) of the antiviral IFN signature (y-axis), and correlated with HSV2 neutralizing antibody titers observed at day 30 or 60 (x-axis). Pearson coefficient and significance values are shown for the linear correlation in blue, with 95% confidence interval shaded red.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** Seven gene sets from the IFN and antiviral sensing module were enriched when comparing sex differences between herpes simplex virus (HSV) naive and HSV1+/HSV2− subjects in day 1 transcriptional responses (Figure 4A). For these enrichments, plots show the fraction of genes included from each set (y-axis) when all genes tested are ranked by decreasing difference between HSV naive compared to HSV1+/HSV2− subjects for greater expression in women compared to men (x-axis), with bars on the x-axis showing the distribution of members of these gene sets as black marks.
+
+![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/80652/elife-80652-fig4-figsupp2-v1.jpg)
+
+**Figure 4—figure supplement 2.:** Multiple gene sets from the IFN and antiviral sensing module were highly enriched when comparing sex differences between HSV naive and exposed subjects in day 1 transcriptional responses (Figure 4A). For the gene set with most significant enrichment, antiviral IFN signature, variation between individuals was analyzed for correlation with HSV2 neutralizing antibody titers observed for HSV naive women on day 30 (A) and day 60 (B). Here, the next five gene sets based on significance of enrichment in Figure 4A are also analyzed for correlation with HSV2 neutralizing antibody titers. Plots are as described for Figure 4D, and show Pearson coefficients ranging from −0.68 to −0.53, with significance values from p = 0.04 to p = 0.14.
+
+### The transcriptional response in HSV naive women is dominated by IFN responses and correlates negatively with vaccine-induced neutralizing antibody titer
 
 Multiple transcriptional pathways showed enrichment when responses at day 1 were analyzed for a greater effect of sex in HSV naive compared to HSV exposed subjects. These pathways included dendritic cell activation, antigen presentation, monocytes, and neutrophils which were all related to the most significantly enriched module involving IFN antiviral sensing (Figure 4A). Therefore, we next focused within the IFN antiviral sensing module, on the seven component gene sets that were each significantly enriched. Examining the leading-edge genes that drove enrichment of these gene sets in individual vaccine recipients revealed that while many of these genes were induced at day 1 in some men or HSV seropositive women, their trend of increasing expression occurred more frequently and consistently in HSV naive women (Figure 4B). When these leading-edge genes that drove IFN enrichment were used for principal component analysis of all timepoints and subjects studied, the plot of principal component 1 highlights how distinct day 1 IFN responses were for HSV seronegative women (Figure 4C). Thus, the major differences in responses that were shown by women compared to men in the HSV seronegative group, in IFN signatures, were also the major differences when effects of sex were compared between HSV naive and exposed subjects.
 

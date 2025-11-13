@@ -23,9 +23,7 @@ Essential revisions:
 
 We have attempted to reproduced the results shown by Winkler et al. 2012 and found that these conditions (20 mM Tris pH 7.5, 300 mM KCl, 5% glycerol and 1 mM TCEP) repeatedly resulted in poor sample behavior as judged by the higher polydispersity of the eluting complex and multiple ‘shoulders’ when using a >90% pure sample (see Author response image 1). We repeatedly obtained (as also shown in Figure 1D) monodisperse CAF1 and CAF1-H3-H4 complexes in 500 mM NaCl and consistently found that the histone-bound complexes almost elute at the same position as CAF1 alone. Further optimization of the buffer conditions for CAF1 was performed using standard thermofluor assays which can be used to assess sample stability.
 
-Of note, Liu et al. 2012 also analyzed the CAF1 and CAF1-H3-H4 complex by gel filtration in buffer containing 300 mM NaCl and found, in agreement with our results, the two complexes eluting a similar position from the column (Liu et al., 2012). Thus, conditions used by Winkler et al. 2012 appear to adversely affect sample behavior. Any determination of mass and stoichiometry under such non-optimal conditions is of course difficult (see table in Author response image 1).10.7554/eLife.23474.023Author response image 1.DOI: http://dx.doi.org/10.7554/eLife.23474.023
-
-DOI: http://dx.doi.org/10.7554/eLife.23474.023
+Of note, Liu et al. 2012 also analyzed the CAF1 and CAF1-H3-H4 complex by gel filtration in buffer containing 300 mM NaCl and found, in agreement with our results, the two complexes eluting a similar position from the column (Liu et al., 2012). Thus, conditions used by Winkler et al. 2012 appear to adversely affect sample behavior. Any determination of mass and stoichiometry under such non-optimal conditions is of course difficult (see table in Author response image 1).10.7554/eLife.23474.023Author response image 1.
 
 To validate our results, we used methods that allow mass determination independently of shape and matrix interactions such as AUC and native-MS. For both techniques, we used buffer conditions that allowed us to obtain consistent results with the least amount of observed aggregation. Obtaining consistent results with different techniques and buffer conditions supports the validity of our results.
 
@@ -45,9 +43,7 @@ On 6% PAGE gels, the CAF1-DNA complex migrates closed to the well but it is not 
 
 B) The EMSA buffer contained 500 mM NaCl, which is sufficient to break the interaction between most DNA binding domains and their DNA substrate – which may be why no DNA binding is seen for yCAF1T.
 
-To address this comment, we have performed the EMSA with yCAF1T at 20 mM Tris pH 7.5, 100 mM NaCl and 1 mM DTT (buffer conditions used in Zhang et al. 2016 to determine the DNA binding affinity of the isolated winged-helix domain of Cac1). We observed no obvious DNA binding as shown in Author response image 2.10.7554/eLife.23474.024Author response image 2.DOI: http://dx.doi.org/10.7554/eLife.23474.024
-
-DOI: http://dx.doi.org/10.7554/eLife.23474.024
+To address this comment, we have performed the EMSA with yCAF1T at 20 mM Tris pH 7.5, 100 mM NaCl and 1 mM DTT (buffer conditions used in Zhang et al. 2016 to determine the DNA binding affinity of the isolated winged-helix domain of Cac1). We observed no obvious DNA binding as shown in Author response image 2.10.7554/eLife.23474.024Author response image 2.
 
 C) The increase in Hill coefficient for yCAF1U and yCAF1X (Table 4) is not explained in terms of the proposed model.
 
@@ -65,9 +61,7 @@ Visualization of the entire range of the 10bp DNA ladder required a 10% native P
 
 F) In the same experiment the titration is stopped whilst 'binding' of the 20 and 30 bp fragments is still continuing.
 
-We could not detect binding of short (15-30bp) DNA duplexes in our experiments. Only at very high CAF1 concentrations we observed some weak DNA binding. An example is shown below. Thus, while longer DNA substrates provide good CAF1 binding sites, short DNA substrates do not. We think this point is clearly illustrated in Author response image 3.10.7554/eLife.23474.025Author response image 3.DOI: http://dx.doi.org/10.7554/eLife.23474.025
-
-DOI: http://dx.doi.org/10.7554/eLife.23474.025
+We could not detect binding of short (15-30bp) DNA duplexes in our experiments. Only at very high CAF1 concentrations we observed some weak DNA binding. An example is shown below. Thus, while longer DNA substrates provide good CAF1 binding sites, short DNA substrates do not. We think this point is clearly illustrated in Author response image 3.10.7554/eLife.23474.025Author response image 3.
 
 G) Binding is quantified as the disappearance of the free DNA fragments rather than the appearance of a shifted CAF1-DNA complex.
 

@@ -46,19 +46,31 @@ In the present study, we utilized the action of RKIP as a conceptual framework f
 
 ## Results
 
-## RKIP regulates a clinically relevant set of motility-related genes driven by the pro-metastatic transcription factor BACH1
+### RKIP regulates a clinically relevant set of motility-related genes driven by the pro-metastatic transcription factor BACH1
 
 To characterize the mechanism by which RKIP suppresses metastasis, we first analyzed gene expression data from breast cancer patient samples in The Cancer Genome Atlas (TCGA) study. Our analysis revealed that RKIP (PEBP1) expression negatively correlated with genes involved in cell motility (cell leading edge, cell migration, focal adhesion) and kinase-mediated signaling (regulation of GTPase activity, phosphotransferase activity) (Figure 1A). Among the genes most inversely correlated with RKIP was BACH1 (BTB and CNC homology 1), a pro-metastatic, basic leucine zipper transcription factor that is post-translationally inhibited by RKIP via let-7 (Figure 1A; Dangi-Garimella et al., 2009; Yun et al., 2011). To test direct regulation of these motility genes by RKIP, we performed RNA sequencing (RNA-seq) of transcripts in control versus RKIP-expressing xenograft tumors of BM1, a bone-tropic, Ras/B-Raf mutant TNBC cell line derived from MDA-MB-231 (Figure 1—figure supplement 1A,B; Kang et al., 2003). Over 70 of the motility genes as well as BACH1 that inversely correlate with RKIP in patients were also downregulated by RKIP in xenograft tumors, suggesting these genes are transcriptionally regulated by RKIP in TNBC (Figure 1B,C and Figure 1—figure supplement 1C). We validated the differential expression of 15 motility genes previously implicated in metastasis (Qin et al., 2014; Flockhart et al., 2009; Yoeli-Lerner et al., 2005; Amano et al., 2010; Gadea and Blangy, 2014; Riento and Ridley, 2003; Zhang et al., 2017; Yu et al., 2015; Kobayashi et al., 2014) using BM1 xenograft tumors expressing a more robust version of RKIP (S153E mutant) in an independent in vivo study (Figure 1—figure supplement 1D; Dangi-Garimella et al., 2009).
 
+![Figure 1.](https://cdn.elifesciences.org/articles/59696/elife-59696-fig1-v2.jpg)
+
+**Figure 1.:** (A) Left panel: Top 10 genes negatively correlated with RKIP (PEBP1) gene expression in TCGA BRCA samples (provisional, n = 1100), ranked by Spearman correlation coefficient. Right panel: Gene sets enriched in genes negatively correlated with RKIP in TCGA BRCA set. (B) Gene sets commonly enriched in genes negatively correlated with RKIP in TCGA BRCA set and genes downregulated by RKIP in the RNA-seq study. (C) A set of differentially expressed motility genes and BACH1 gene expression in control (n = 7) vs. RKIP-expressing (n = 5) BM1 tumors. (D) qRT-PCR analysis of control (n = 3) and shBACH1-expressing (n = 3) BM1 tumors, demonstrating downregulation of motility gene expression when BACH1 levels are reduced. Student’s t-test, two-tailed. (E) Chromatin immuno-precipitation analysis of BACH1 binding in the promoter regions of the motility genes in BM1 cells. Mean ± s.e.m of three independent experiments. Student’s t-test, one-tailed. NRS, normal rabbit serum (F) Summary diagram showing regulation of BACH1 and motility gene expression by RKIP. For the source data, see Figure 1—source data 1.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/59696/elife-59696-fig1-figsupp1-v2.jpg)
+
+**Figure 1—figure supplement 1.:** (A) Volcano plot highlighting the differentially expressed genes in red, including BACH1, between n = 7 control and n = 5 RKIP-expressing BM1 tumors. FDR cutoff of 0.1. (B) Principle component analysis of n = 7 BM1-control and n = 5 BM1-RKIP tumors used in the RNA-seq analysis. (C) Gene set enrichment analysis by Metascape of genes downregulated (left) and upregulated (right) by RKIP in the RNA-seq data. FDR corrected p-values are ranked in -log(10) scale. Motility and adhesion related genes are highlighted in green. Mitochondria-related gene sets are highlighted in red. (D) A set of differentially expressed motility genes and BACH1 expression determined by qRT-PCR in control BM1 tumors (n = 5) vs. BM1 tumors expressing a more robust version of RKIP (RKIP S153E mutant) (n = 4). This is a second independent in vivo experiment supporting the tumor RNA-seq data presented in A-C. Two-tailed t-test with respect to the control sample. (E) Gene sets commonly enriched in genes positively correlated with RKIP in TCGA BRCA set (provisional set, n = 1100), as well as genes upregulated by RKIP in the RNA-seq analysis.
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/59696/elife-59696-fig1-figsupp2-v2.jpg)
+
+**Figure 1—figure supplement 2.:** (A) Gene sets commonly enriched in genes negatively correlated with RKIP (PEBP1) and positively correlated with BACH1 in TCGA BRCA set, as well as genes downregulated by RKIP in the RNA-seq analysis (upper panel). Gene sets commonly enriched in genes positively correlated with RKIP and negatively correlated with BACH1 in TCGA BRCA set, as well as genes upregulated by RKIP in the RNA-seq analysis (lower panel). (B) BACH1 binding in the promoter region of RKIP target motility genes in ENCODE CHIP-seq data. (C) ChIP-seq analysis of BM1 cells in vitro, showing enrichment of BACH1 binding in proximal or distal regions of the motility gene promoters. HMOX1 gene is a known BACH1 target that is used as a positive control for the ChIP-seq experiment. Red triangles point at the BACH1 binding enrichment site. (D) Expression of RKIP target motility genes in BACH1-deficient BM1 tumors (n = 3) with respect to wild-type tumors (n = 3) in a second independent in vivo experiment supporting the data presented in Figure 1D. Two-tailed student’s t-test, with respect to the control (shCONTROL).
+
 The RNA-seq analysis also revealed upregulation of genes related to mitochondrial metabolism and oxidative phosphorylation in RKIP-expressing BM1 tumors (Figure 1—figure supplement 1C). Moreover, the mitochondrial gene targets of RKIP positively correlated with RKIP, while negatively correlating with BACH1 gene expression in breast cancer patients (Figure 1—figure supplement 1E and Figure 1—figure supplement 2A). Our previous work similarly showed that reducing BACH1 expression in TNBC increased oxidative phosphorylation in mitochondria, mirroring the RKIP phenotype (Lee et al., 2019). This prompted us to investigate whether BACH1 is in part responsible for regulating motility-related gene targets of RKIP as well. Indeed, BACH1 gene expression positively correlates with RKIP-inhibited motility genes in both patient samples and xenograft TNBC tumors (Figure 1—figure supplement 2A). ENCODE and ChIP-seq analysis in BM1 cells shows BACH1 binding to the promoter regions of several motility genes (Figure 1—figure supplement 2B,C; Landt et al., 2012). To confirm that BACH1 transcriptionally regulates metastatic motility-related genes in TNBC cells, we performed qRT-PCR using BM1 xenograft tumors expressing shRNAs against BACH1 in two independent mouse experiments (Figure 1D, Figure 1—figure supplement 2D, Figure 1—source data 1) and ChIP assays in BM1 cells to demonstrate direct BACH1 binding to motility gene promoters (Figure 1E, Figure 1—source data 1). These findings establish BACH1-controlled motility genes as pro-metastatic targets of RKIP and illustrate the clinical relevance of this regulatory system to TNBC patients (Figure 1F).
 
-## RKIP targets multiple kinases in the stress MAPK network
+### RKIP targets multiple kinases in the stress MAPK network
 
 RKIP inhibits the activity of Raf and other kinases in cultured cells (reviewed in Yesilkanal and Rosner, 2018). To identify kinases targeted by RKIP in TNBC tumors, we analyzed changes in kinase expression and activity by MIB-MS analysis (Duncan et al., 2012). To capture and quantify functional kinases in tumors, tumor lysates were exposed to kinase inhibitors covalently linked to Sepharose beads (MIBs) followed by mass spectrometry. Of the 248 captured kinases that were present in both control and RKIP-expressing BM1 tumors from mouse xenografts, RKIP significantly altered the functional capture of 30 kinases (Figure 2A, Figure 2—source data 1). Consistent with its role as a kinase suppressor, RKIP inhibited most of these kinases (23) including the previously identified RKIP target ERK2 (Yeung et al., 1999). The kinases targeted by RKIP were distributed across multiple branches of the kinome tree and not limited to a specific kinase class (Figure 2B).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/59696/elife-59696-fig2-v2.jpg)
 
-**Figure 2.:** (A) Multiplexed inhibitor beads – mass spectrometry (MIB-MS) analysis of n = 5 control and n = 6 RKIP-expressing BM1 tumors, showing 23 kinases with reduced activity and seven kinases with enhanced activity by exogenous RKIP expression. Student’s t-test, p<0.05. (B) Kinome tree displaying the distribution of kinases targeted by RKIP across different families of kinases. Blue: activity reduced by RKIP (n = 23), Red: activity enhanced by RKIP (n = 7). (C) Gene set enrichment analysis of the 23 negatively regulated kinases by Metascape. Stress-induced mitogen activated protein kinase (MAPK) related gene sets are highlighted in red. (D), Ingenuity Pathway Analysis (IPA) of the RKIP target kinases centered around MAPKs p38, JNK, and ERK. (E) Direct protein-protein interaction network and community analysis showing the core of the RKIP kinase network. (F) Diagram summarizing the interactions within the RKIP-regulated stress MAPK network in anisomycin-induced BM1 cells. Kinase interactions are determined by using small molecule inhibitors or siRNAs against the kinases in the network in three or more independent dose-response experiments with similar results (also see Figure 2—source data 2). The TAOK-p38 interaction is observed in cells treated with a cocktail of siRNAs against all three TAOKs (siCombo), whereas TAOK-JNK and TAOK-ERK interactions were observed by siRNAs against TAOK1 and TAOK2, respectively. For the source data, see Figure 2—source data 1.Figure 2—source data 1.Figure 2—source data 2.(A) Western blots from three independent experiments showing the effect of p38i, JNKi, and MEKi on the phosphorylation of known direct targets of p38, JNK, and MEK, respectively. To monitor the substrate phosphorylation of p38, JNK, and MEK under treatment, we chose their known substrates MAPKAPK2, c-Jun, and ERK1/2, respectively. Statistical test was performed by student’s t-test for each dose of the inhibitors with respect to the non-treated control sample. (B) Western blots from three or more independent experiments showing the crosstalk and feedbacks that exist within the BM1 stress-kinase MAPK network. The diagrams on the far left show the specific direct/indirect interaction between two kinase nodes of the network, determined by inhibition of one of the kinases with a small molecule inhibitor or siRNAs and monitoring the activity of the other kinase. For this analysis, we used canonical phosphorylation sites of each kinase that correlate with their activity based on literature. The results of these experiments were used to build the network topology for BM1 cells depicted in Figure 2F.
+**Figure 2.:** (A) Multiplexed inhibitor beads – mass spectrometry (MIB-MS) analysis of n = 5 control and n = 6 RKIP-expressing BM1 tumors, showing 23 kinases with reduced activity and seven kinases with enhanced activity by exogenous RKIP expression. Student’s t-test, p<0.05. (B) Kinome tree displaying the distribution of kinases targeted by RKIP across different families of kinases. Blue: activity reduced by RKIP (n = 23), Red: activity enhanced by RKIP (n = 7). (C) Gene set enrichment analysis of the 23 negatively regulated kinases by Metascape. Stress-induced mitogen activated protein kinase (MAPK) related gene sets are highlighted in red. (D), Ingenuity Pathway Analysis (IPA) of the RKIP target kinases centered around MAPKs p38, JNK, and ERK. (E) Direct protein-protein interaction network and community analysis showing the core of the RKIP kinase network. (F) Diagram summarizing the interactions within the RKIP-regulated stress MAPK network in anisomycin-induced BM1 cells. Kinase interactions are determined by using small molecule inhibitors or siRNAs against the kinases in the network in three or more independent dose-response experiments with similar results (also see Figure 2—source data 2). The TAOK-p38 interaction is observed in cells treated with a cocktail of siRNAs against all three TAOKs (siCombo), whereas TAOK-JNK and TAOK-ERK interactions were observed by siRNAs against TAOK1 and TAOK2, respectively. For the source data, see Figure 2—source data 1.
 
 Functional analysis of the downregulated kinases using Metascape (Tripathi et al., 2015) showed enrichment for stress kinase signaling (Figure 2C). Ingenuity pathway analysis indicated that most of these kinases are functionally related, and the stress MAP kinases (JNK, p38) as well as ERK comprise the core of the network (Figure 2D). Community analysis identified three main protein-protein interaction subnetworks within the extended MAPK family including kinases upstream of p38 (TAOK2, MKK3, MKK6), kinases upstream of JNK (MLK1, MLK3, MKK4); and p70/p90 kinases downstream of MAPKs (MSK1, RSK2, and p70/85 S6K1) (Figure 2E). These results indicate that the three MAPKs (JNK, p38, and ERK) as well as their upstream regulators and downstream effectors comprise the core RKIP-regulated network that drives metastasis in TNBCs.
 
@@ -66,19 +78,35 @@ To understand how RKIP targets the MAPK signaling network, we identified upstrea
 
 To determine the crosstalk between different MAPKs in the RKIP network, we inhibited p38, JNK, or MEK individually using small molecule inhibitors. We initially validated the efficacy of the p38 inhibitor SB203580, the JNK inhibitor SP600125, and the MEK inhibitor Trametinib using endogenous cellular targets MAPKAPK2, c-Jun, and ERK, respectively (Figure 2—source data 2A). Our analysis confirmed extensive crosstalk between different MAPK axes in BM1 cells (summarized in Figure 2F, also see Figure 2—source data 2B). The crosstalk involved both positive and negative feedback (e.g. the JNK-ERK axis and p38-ERK axis) suggesting that the stress kinase network regulated by RKIP is a complex network, and targeting individual MAPKs may be insufficient to mimic RKIP pharmaceutically. These results indicate that, in contrast to the common therapeutic practice of fully inhibiting individual kinases at the maximum-tolerated dose, RKIP functions like a low-dose, non-toxic drug combination that reduces the activity of several key kinases within a driver network to inhibit metastasis (Figure 2F).
 
-## A low-dose four-drug combination reduces MAPK network signaling capacity and suppresses tumor cell invasion without altering growth
+### A low-dose four-drug combination reduces MAPK network signaling capacity and suppresses tumor cell invasion without altering growth
 
 Three aspects of RKIP regulation provide strategic guidance for anti-metastatic therapy. First, as noted above, RKIP suppresses the signaling capacity of multiple kinases within a key driver network, the stress MAPK network. Second, the kinases that are linked to metastasis ranged from high to low functional capture, indicating that the degree of kinase activity does not correlate with metastatic potential (Figure 3A, Figure 3—source data 1). Finally, the effective decrease in kinase capture for RKIP targets was generally less than 30% (Figure 3B, Figure 3—source data 1). We then determined whether we could mimic the action of RKIP using drugs to inhibit MAPK network signaling.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/59696/elife-59696-fig3-v2.jpg)
+
+**Figure 3.:** (A) Heatmap demonstrating the distribution of kinases targeted by RKIP in an activity ranked list of all 248 kinases captured. Top-to-bottom represents high-to-low ranking of MIB-captured kinases in the control cases (n = 7). (B) Percent change in kinase activity induced by RKIP in RKIP-expressing BM1 tumors with respect to the average kinase activity in the control samples. The kinases shown are the same kinases significantly regulated by RKIP according to the MIB-MS data in Figure 2A. (C) Diagram of the network used for modeling and the small molecule inhibitors used in the high-throughput invasion assays for potential drug combinations. (D,) Chemotactic invasion assay showing that the four-drug MAPK inhibitor combination (4D-MAPKi) blocks invasion of human and mouse TNBC cells lines. Graphs represent results from three or more independent experiments as mean ± s.e.m. Two-tailed student’s t-test was used for statistical analysis. (E) 3D proliferation assay showing that 4D-MAPKi does not significantly affect the growth of TNBC cell lines. Growth curves from at least three independent experiments are represented as fold change in confluence with respect to the confluence of the cells at the time of plating, which is set to "1.0" for each experiment. For the statistical test, GraphPad Prism 9.1.0 Software’s mixed effects model (equivalent of two-way repeated measures ANOVA that allows for missing values) was used. (F) 2D proliferation assays showing that 4D-MAPKi is not toxic to immortalized human mammary epithelial cell lines, MCF10A and 184A1. Data depicted as a summary of three independent experiments. Two-way ANOVA test was used for statistical analysis. For the source data, see Figure 3—source data 1 and Figure 3—source data 3.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/59696/elife-59696-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A) Western blots showing p38, JNK, and ERK signaling in BM1 (left), MB436 (middle), and LMB (right) cells treated with 4D-MAPKi, or the dual combinations p38i + JNKi or MEKi + MLKi. The figures are representative of three independent experiments in each cell line. (B) Quantification of the western blots represented in A. Relative p-p38, p-JNK, and p-ERK signal is plotted with respect the non-treated control cells from three independent experiments. Statistical significance between different experimental groups was determined by pair-wise comparison using two-tailed student’s t-test. (C) The heatmaps show the relative average densitometry intensity for p-p38, p-JNK, and p-ERKs from all three independent experiments conducted in each cell line, with respect to the non-treated control sample which is set to 1.
 
 We sought a drug combination that, like RKIP, reduces invasion but not cell growth. We initially assessed combinations of 6 kinase inhibitors that target different nodes in the MAPK signaling network using BM1 cells (Figure 3C). In addition to the MEK, JNK, and p38 inhibitors used above, we also tested the MLK inhibitor URMC-099, the inhibitor CX-4945 (Silmitasertib) that blocks Casein Kinase 2 upstream of p38 and ERK signaling (Isaeva and Mitev, 2011; Sayed et al., 2000; Zhou et al., 2016), and the more broad-based inhibitor SW-538 that blocks kinases in the MAPK network such as TAOK2, Raf1, JNK1, HGK, and GSK3b (Piala et al., 2016). We monitored invasion as well as growth of cancer cells in 3D culture using a high-throughput invasion assay of nuclear-labeled BM1 cells (BM1-NucLight Red). For four drugs (p38i SB203580, JNKi SP600125, MEKi Trametinib, MLKi URMC-099), there was a minimal dose at which the proliferation rates were unaffected while the invasive capabilities of the cells were at least partially blocked (Figure 3—source data 2). We then tested the drugs at these minimal dosages for their combinatorial effect on invasion. Out of all the dual combinations tested, two combinations demonstrated a robust effect on invasion without a significant effect on proliferation: p38i + JNKi and MEKi +MLKi (Figure 3—source data 2, Figure 3—source data 3). Addition of a third inhibitor to these dual combinations did not improve the anti-invasive efficacy, demonstrating that the combined effect of multiple MAPK inhibitors is not necessarily additive (Figure 3—source data 2, Figure 3—source data 3).
 
 A four-drug combination consisting of p38i, JNKi, MEKi, and MLKi (from here on referred to as 4D-MAPKi) was also successful in our initial screen at inhibiting cell invasion across multiple cell lines and stimuli without inhibiting proliferation (Figure 3D,E, Figure 3—source data 2, Figure 3—source data 1,3). 4D-MAPKi consistently inhibited MAPK signaling (p38,JNK,ERK) across three different TNBC cell lines, while the effect of the p38i + JNKi and MEKi +MLKi dual combinations was cell line-dependent (Figure 3—figure supplement 1) Notably, 4D-MAPKi was not toxic to normal human mammary epithelial cell lines MCF10A and 184A1 (Figure 3F, Figure 3—source data 1). These findings suggest that the 4D-MAPKi combination is an effective, well-tolerated anti-invasive therapy that mimics the strategy by which RKIP inhibits the MAPK network.
 
-## The four-drug combination suppresses metastasis, inhibits expression of pro-metastatic motility genes, and increases survival
+### The four-drug combination suppresses metastasis, inhibits expression of pro-metastatic motility genes, and increases survival
 
 We then determined whether 4D-MAPKi blocks metastasis of TNBC tumors in vivo. Using mouse LMB cells in a syngeneic TNBC model, we performed dose-response studies with individual drugs to determine the highest dose at which growth of the primary tumor is unaffected (Figure 4—figure supplement 1A). Based on this analysis, we chose a 4D-MAPKi combination of 10 mg/kg for p38i, JNKi, MLKi, and 0.5 mg/kg for MEKi (1X) for in vivo studies. At the 1X dose, the 4D-MAPKi combination significantly inhibited primary tumor growth in both syngeneic LMB tumors (Figure 4A) and xenograft BM1 tumors (Figure 4B) in a dose-dependent manner without obvious toxicity as all mice retained the same body weight (Figure 4—figure supplement 1B). To mitigate the confounding effect of primary tumor growth on metastasis and maximize metastatic burden, we employed tail-vein or intracardiac injection models of experimental metastasis. Both undiluted (1X) and 50% diluted (0.5X) 4D-MAPKi suppressed metastatic lung colonization in syngeneic LMB tumors in a dose-dependent manner (Figure 4C,D). Treatment of mice with 4D-MAPKi for only 2 days following tumor cell injection still caused significant reduction in the overall metastatic burden ~5 weeks later, suggesting that the inhibitor combination suppresses early steps of metastasis related to invasion and extravasation (Figure 4E). Human BM1 tumors responded better to the 4D-MAPKi treatment than LMB tumors, as even the half dose (0.5X) potently inhibited bone metastasis, the major site of metastasis following cardiac injection of these cells (Yun et al., 2011; Kang et al., 2003; Figure 4F,G). The 4D-MAPKi combination also improved survival of metastatic BM1-bearing mice following a 3-week treatment (Figure 4H). 4D-MAPKi, like RKIP, blocked induction of a significant fraction of both Bach1 and motility genes in syngeneic LMB tumors (Figure 4I). These findings indicate that the low-dose drug combination, 4D-MAPKi, suppresses TNBC metastasis by reducing the signaling capacity of the stress MAPK network that transcriptionally activates metastatic genes, thereby increasing survival.
 
-## Multi-drug combination inhibits different MAPK network topologies
+![Figure 4.](https://cdn.elifesciences.org/articles/59696/elife-59696-fig4-v2.jpg)
+
+**Figure 4.:** (A), Effect of MAPKi treatment on the primary LMB tumor growth. Mean ± s.e.m. of n = 5 biological replicates per experimental group. Two-way ANOVA test. (B) Primary BM1 tumor growth in mice treated with 4D-MAPKi combination for 4 weeks. Mean ± s.e.m of n = 8 control tumors, n = 8 4D-MAPKi(0.5X) treated tumors, and n = 6 4D-MAPKi(1X) treated tumors. Two-way ANOVA test at week 6. (C) 4D-MAPKi combination reduces metastatic tumor burden in the lungs of LMB syngeneic mouse model of TNBC. H&E staining demonstrates the metastatic lesions in cross-sections of the lungs in mice treated with 1X (undiluted, n = 10 biological replicates) 4D-MAPKi, 0.5X (diluted, n = 8) 4D-MAPKi, or the control (vehicle, n = 8). (D) Quantification of the visible metastatic lesions on the lung surface. Mean ± s.e.m, one-way ANOVA test with Dunnett’s correction for multiple testing. (E) Tumor burden in the lungs of LMB syngeneic mice after 2 days (2 doses over 48 hr, on day 0 and day 1) of 4D-MAPKi treatment. Mean ± s.e.m. of n = 10 control tumors and n = 8 MAPKi(1X) treated tumors. Unpaired two-tailed student’s t-test. (F) BM1 metastatic tumor burden in the bones of athymic nude mice treated with 4D-MAPKi at 0.5X and 1X, or control. (G) Quantification of the metastatic burden in (F). Mean ± s.e.m. of n = 10 control, n = 10 diluted 0.5 × 4 D-MAPKi, and n = 9 undiluted 1 × 4 D-MAPKi. Two-tailed student’s t-test. (H) Overall survival of xenograft mice injected with BM1 cells via the intracardiac route after 3 weeks of 4D-MAPKi treatment. Log-rank (Mantel-Cox) test. (I) Expression of Bach1 and motility genes in LMB tumors treated with 4D-MAPKi. Mean ± s.e.m. of n = 5 biological replicates per experimental group. Two-tailed student’s t-test.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/59696/elife-59696-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) Dose-response experiments reveal that p38i, JNKi, and MLKi do not affect primary LMB tumor growth determined by final tumor weight in a syngeneic model at 10 mg/kg/day or lower. MEKi on the other hand, decreases tumor growth in a dose-dependent manner. Red dashed lines indicate the doses chosen to be used in four-drug combination in vivo. Biological replicates are shown as mean ± s.e.m. (B) Comparison of mouse weights before and after MAPKi treatment reveal no overall toxicity to the mice due to drug treatment in syngeneic or xenograft models. Paired t-test. ns: not significant.
+
+### Multi-drug combination inhibits different MAPK network topologies
 
 To understand why the four-drug combination is so effective, we performed further experiments as well as phenomenological (observation-based) modeling of the MAPK network. Characterization of the cross-talk between different MAPKs in the RKIP-regulated network revealed that each of three human or mouse TNBC cell lines has a unique MAPK network topology (compare Figure 2F to Figure 5—figure supplement 1A,B,D). Here, we define topology as interactions between different nodes within the network that could be positive, negative, direct, or indirect. Although these network analyses are not exhaustive, our results illustrate differences in the cellular network topologies. To determine whether environmental stimulus also makes a difference in MAPK network topology, we treated BM1 cells with either anisomycin or serum, and then probed cellular response to the JNK inhibitor (JNKi). JNKi treatment did not significantly inhibit p38 in anisomycin-treated cells, whereas it actually activated p38 under serum conditions (Figure 2F and Figure 5—figure supplement 1C ). These results suggest that MAPK network topology can differ between cell lines, or even within in the same cell line based on stimulus and highlight the importance of considering network topology in determining treatment efficacy.
 
@@ -86,11 +114,31 @@ To understand the effect of low-dose, multi-drug treatment of metastatic cancer,
 
 We utilized the anisomycin-stimulated MAPK network in BM1 cells as the basis for our model (Figure 5A, Network 1). If we modeled the network from other cell lines, the detailed topology would be different but the same general principles apply. We illustrate this point by generating another related MAPK network based on Network one but lacking the positive crosstalk (Figure 5B, Network 2). Comparison of treatment with single MAPK inhibitors (p38i, JNKi or MEKi) to 4D-MAPKi (dose restricted to ≤30% inhibition for each kinase targeted) reveals at least 60% BACH1 suppression for 4D-MAPKi and p38i in Network 1; by contrast, BACH1 levels following JNKi or MEKi treatment were only minimally reduced (Figure 5C). A similar result is obtained for Network 2, although in this case JNKi has no significant effect on BACH1 levels (Figure 5D). These results from our models suggest that, while response to individual inhibitors may vary because of differences in network topology, 4D-MAPKi is more robust in inhibiting network output across different topologies.
 
+![Figure 5.](https://cdn.elifesciences.org/articles/59696/elife-59696-fig5-v2.jpg)
+
+**Figure 5.:** (A), The topology of the stress response of the core MAPK driver network activating BACH1 gene transcription, as output, in BM1 cells. This network topology, termed N1, is composed of multiple kinase signaling pathways responsible for activating BACH1. The nodes of the signaling network, represented by circles, are kinases within the network. The arrows directed toward nodes indicate the inflow from a signal or an active kinase at the upstream node. The product of a node, resulting from the interaction between the upstream signal and downstream kinases, is denoted by arrows leaving the node. The pathways are indicated by black arrows while the crosstalk between different pathways is denoted by blue and green arrows. The non-linear repression of one node by another is represented by the green lines with bars directed toward the repressed component. (B) A hypothetical BACH1 stress response driver network, denoted as N2, that has no crosstalk between its individual pathways. The interpretation of its symbols is the same as in A. (C) Graph depicting predicted downregulation of BACH1 following cell treatment with specific inhibitors relative to maximal stress-induced BACH1 gene transcription in cells with N1. The y axis shows the percentage of maximal BACH1 gene transcription, and the x axis denotes the percent inhibition of each kinase targeted by a drug or drug combo relative to the maximal inhibitor dose (set at 100% inhibition). Relative BACH1 gene transcription in response to p38i, MEKi, JNKi, or the 4D-MAPKi drug combo is indicated in red, blue, green, or purple. (D) Graph depicting predicted downregulation of BACH1 following cell treatment with specific inhibitors relative to maximal stress-induced BACH1 gene transcription in cells with N2. The y axis shows the percentage of maximal BACH1 gene transcription, and the x axis denotes the percent inhibition of each kinase targeted by a drug or drug combo relative to the maximal inhibitor dose (set at 100% inhibition). Relative BACH1 transcription in response to p38i, MEKi, JNKi, or the 4D-MAPKi drug combo is indicated in red, blue, green, or purple. (E–G) Single agent dose-response experiments demonstrating that BACH1 expression is activated by different MAPKs in different cell lines. Orange bars indicate the final dosage of an individual inhibitor used in 4D-MAPKi. (H–J) The network-targeting 4D-MAPKi is able to decrease BACH1 expression across all three cell lines even though BACH1 is regulated by a different set of MAPKs in each cell line. Left panels: Diagrams summarizing BACH1 regulation by MAPKs in each TNBC cell line. Right panels: 4D-MAPKi blocks BACH1 mRNA expression in anisomycin-induced cells. For E-J, the bar-graphs represent three or more independent experiments performed in each cell line, where the BACH1 expression in drug-treated cells is measured with respect to aniso-induced non-treated positive control group. Statistical significance for each dose was determined by student’s t-test with respect to the positive control group. For the source data, see Figure 5—source data 1.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/59696/elife-59696-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) p38-ERK feedback axis in MB436 and LMB cell lines differs from the BM1 topology (compare to Figure 2F). (B) JNK-ERK feedback axis in MB436 and LMB cell lines differs from the BM1 topology (compare to Figure 2F). (C) JNK-p38 feedback axis in BM1 cells under serum induction differs from the BM1 topology under anisomycin induction (compare to Figure 2F). (D) Summary of MAPK topology differences between the three TNBC cell lines tested. Each interaction is representative of three or more independent experiments displayed in A-B.
+
+![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/59696/elife-59696-fig5-figsupp2-v2.jpg)
+
+**Figure 5—figure supplement 2.:** (A) 4D-MAPKi reduces induction of BACH1 protein expression in anisomycin-induced human BM1 and MB436 cells. Western blot images representative of three or more independent experiments in each cell line. Bar graphs (below) represent the densitometry quantification of the independent western blots, plotted with respect to the non-treated control group. Statistical analysis was performed by one-tailed student’s t-test. (B) Quantification of surface lung metastasis in the syngeneic LMB mouse model when the mice were treated with 4D-MAPKi or the four individual MAPK inhibitors. Each dot represents a biological replicate. Statistical significance was determined by two-tailed student’s t-test in a pair-wise fashion between experimental groups.
+
 To test this prediction, we assessed BACH1 gene expression as a measure of network output in the three TNBC cell types with different network topologies. Dose-response studies with individual MAPK inhibitors showed that BACH1 expression can be regulated by either ERK, JNK or p38 in at least one TNBC cell line (Figure 5E–G, Figure 5—source data 1). However, as our model predicted, no single MAPK inhibitor even at maximum dose effectively reduced BACH1 expression across the three cell lines (Figure 5H–J, left panels and Figure 5—source data 1). By contrast, the low-dose 4D-MAPKi combination attenuated BACH1 gene expression in all human and mouse cell lines tested (Figure 5H–J right panels, Figure 5—figure supplement 2A , Figure 5—source data 1). Consistent with the in vitro data for the mouse LMB cell line (Figure 5G,J), both 4D-MAPKi and MEKi treatment significantly reduced metastatic burden in the lungs of mice with orthotopic LMB tumors, while p38i showed no effect (Figure 5—figure supplement 2B). These data indicate that 4D-MAPKi more effectively regulates BACH1 expression across cells with different MAPK network topologies than single high-dose inhibitors.
 
-## Limiting the extent of kinase inhibition at multiple nodes reduces network output and prevents compensatory network activation
+### Limiting the extent of kinase inhibition at multiple nodes reduces network output and prevents compensatory network activation
 
 Maximum tolerated dose regimens can yield promising responses in certain patients. (Gallaher et al., 2018; Duncan et al., 2012; Wong et al., 2019) In terms of our mathematical model, when all pathways are independent and operating at their maximal capacity, reducing or eliminating any one of them restricts the output flow. In this scenario, a single target therapy can potentially be effective at reducing output. However, if flow from the single node is eliminated, then excess flow from the initial functional network could end up activating a different functional network, leading to a compensatory increase in overall output (Seton-Rogers, 2014) (see CKN, compensatory kinase network in Figure 6A). Even a small reduction in the activity of multiple nodes of a given pathway, although insufficient for eliminating the activity of the functional network, would reduce the overall surplus, and hence, the chances for compensatory activation.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/59696/elife-59696-fig6-v2.jpg)
+
+**Figure 6.:** (A) N1 illustrating the case of a treatment (MEKi) targeting node 3 (MEK) and activation of a compensatory kinase network (CKN) linked to upstream node 2 (RAF) (red circle). A comparable diagram can be generated for each upstream node to describe surplus signal activating a distinctive CKN. The percentage of reduction on the activity at a target node because of a treatment dose x is indicated by ξ. This inhibition causes reduction in the flow of product to node 3, denoted by c23=(1−ξMEK)Y2 (see A). (B) Graph depicting surplus signal from RAF as a fraction of the total input signal Σ following treatment by MEKi or 4D-MAPKi of cells with N1. The x axis denotes the percent inhibition of each kinase targeted by inhibitors relative to the maximal inhibitor dose (set at 100% inhibition). The y axis is the fraction of surplus RAF signal generated following drug treatment of cells relative to total input signal. MEKi, red; 4D-MAPKi, blue. (C) Graph depicting surplus kinase signal as a fraction of the total input Σ following treatment by 4D-MAPKi of cells with N1. The surplus is a consequence of the congestion of each direct pathway causing an insufficient absorption of the stress input by the driver network and its redirection toward a compensatory network. The x axis denotes the percent inhibition of each kinase targeted by 4D-MAPKi relative to the maximal inhibitor dose (set at 100% inhibition). The y axis is the fraction of surplus kinase signal generated following 4D-MAPKi treatment of cells relative to total input signal. RAF (surplus from MEKi), red; MLK (surplus from JNKi), blue; TAOK (surplus from p38i), green; and Signal (surplus from MLKi), brown; Total (sum of all surplus signals), black. (D) Dose-response curves showing activation of the compensatory PI3K network, monitored by p-AKT levels, when EGF-induced BM1 cells are treated with increasing doses of MEKi. Mean ± s.e.m. of n = 3 independent experiments. For the source data, see Figure 6—source data 1.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/59696/elife-59696-fig6-figsupp1-v2.jpg)
+
+**Figure 6—figure supplement 1.:** (A and B) Activation of compensatory AKT signaling in BM1 cells treated with 4D-MAPKi (1X) or high-dose MEKi (100 nM) when induced with EGF or serum. Plots demonstrate normalized densitometry analysis of western blots from three independent experiments per induction method. (C) p-ERK and p-AKT signal from syngeneic LMB tumors treated with 4D-MAPKi, demonstrating lack of compensatory AKT activation despite inhibition of ERK signaling. Bar graphs represent the densitometry quantification of the western blot where each dot represents a biological replicate. Statistical analysis was performed by a two-tailed student’s t-test.
 
 To address the role of surplus signal flow following inhibitor treatment, we determined whether different degrees of inhibition of MEK would yield different outcomes with respect to activation of compensatory driver networks. As a model system, we analyzed induction of an epidermal growth factor (EGF) receptor-PI3K feedback loop in response to MEK inhibition of EGF-stimulated BM1 cells. Activation of this compensatory PI3K pathway was previously reported to restrict the efficacy of MEK inhibitors in basal subtypes of breast cancer (Mirzoeva et al., 2009). Following maximal inhibition of MEK in our model, the surplus flow from Raf approaches 30% of the initial input signal that can be funneled to a compensatory kinase network such as PI3K/AKT (Figure 6B). When we modeled 4D-MAPKi, on the other hand, it only diverted ~10% of the incoming stress signal to a compensatory kinase network (CKN) because we restricted MEK/ERK inhibition to less than 30%. This type of analysis, carried out for each of the kinases in the MAPK network, shows that the combined surplus of kinase signal following 4D-MAPKi inhibition approaches 60% (Figure 6C). However, this signal is dissipated among multiple kinases such that the resulting surplus from each kinase is insufficient to activate compensatory networks.
 
@@ -98,13 +146,13 @@ To test these predictions experimentally, we generated dose response curves to a
 
 These experimental and mathematical analyses suggest that effective inhibition can be accomplished by targeting several nodes belonging to different pathways within the same driver network. This will reduce the flow through multiple pathways of the network and its resulting output, decreasing the efficacy of the driver network. Reduction of overall output, however, creates a surplus signal that cannot be accommodated by other kinases within the network and, instead, is directed toward compensatory driver networks. Thus, it is important to keep the overall surplus dissipated among multiple nodes, and the surplus signal from each kinase below the threshold for activation of its compensatory network. Of note, since our goal is to suppress metastasis, this partial inhibition which leaves the growth network largely intact is still effective. Together, these studies suggest that (1) multi-kinase targeting is more effective than single kinase inhibition across different cells and environmental stimuli; and (2) low inhibitor doses are less likely than high inhibitor doses to trigger feedback activation of compensatory networks.
 
-## The BACH1/motility gene axis, targeted by RKIP and 4D-MAPKi, is associated with multiple cancers and metastasis suppressors
+### The BACH1/motility gene axis, targeted by RKIP and 4D-MAPKi, is associated with multiple cancers and metastasis suppressors
 
 To understand the clinical significance of the MAPK network suppressor (RKIP) and the MAPK network output (BACH1 and motility-related genes), we looked at their relative gene expression in the TCGA database. Remarkably, stratifying breast cancer patients by high RKIP (PEBP1) and low BACH1 expression or vice versa reveals a striking inverse association of RKIP with BACH1 and the motility-related genes in ~60% of patients (Figure 7A). These data suggest that the RKIP/BACH1/motility gene axis identifies breast cancer patients who would be therapeutic candidates for 4D-MAPKi treatment. Enrichment of the motility-related target genes identified in the present study extended beyond breast cancer. The same gene families were also inversely correlated with RKIP in other solid TCGA cancer types (Figure 7B,C) including pancreatic, ovarian, lung, head and neck, and colorectal. Of note, in cancers where no correlation to these specific motility-related genes was observed, we noticed a strong correlation to other members of the same gene families (Figure 7C). Finally, expression of other experimentally validated metastasis suppressors (BRMS1, ARGHDIA, NME1, and DRG1) (Zhao et al., 2015) also negatively correlated with motility-related gene sets (Figure 7D,E). These clinical analyses suggest that BACH1-regulated motility-related machinery is a hallmark of metastasis that is targeted by multiple physiological suppressors such as RKIP.
 
 ![Figure 7.](https://cdn.elifesciences.org/articles/59696/elife-59696-fig7-v2.jpg)
 
-**Figure 7.:** BACH1/motility gene axis, targeted by RKIP and 4D-MAPKi, is associated with multiple cancers and metastasis suppressors.(A) Expression of RKIP (PEBP1), BACH1, and the downstream motility genes in each TCGA BRCA patient (n = 1100), grouped by RKIP status. RKIP-high: z-score > 0.5 (n = 274), RKIP-low: z-score < −0.5 (n = 414), Others: −0.5 < z score<0.5 (n = 412). (B) Gene sets enriched with genes negatively correlated with RKIP across multiple TCGA cancer types. (C) Spearman correlation coefficients for BACH1 or motility genes relative to RKIP in TCGA cancers. Coefficient cutoff of −0.3 (coefficients between −0.3 and 0 were colored black). (D) Motility-related gene sets enriched for genes that negatively correlate with the indicated metastasis suppressors, but positively correlate with BACH1 in the TCGA BRCA set. (E) Spearman correlation coefficients for BACH1 or motility genes relative to RKIP (PEBP1) or other metastasis suppressors in TCGA BRCA. Coefficient cutoff of 0.3 in both positive and negative side. Coefficients between −0.3 and 0.3 were colored black. (F) Diagram summarizing the stress MAPK kinase N1 network that regulates metastasis in breast cancer. Stress activates a network of MAPKs that interact via crosstalk. RKIP and the RKIP-mimicking drug combo 4D-MAPKi reduce the signaling capacity of the entire network by targeting multiple nodes. This allows for effective reduction of the metastatic output of the network, measured by the expression of pro-metastatic BACH1 and its target motility genes.
+**Figure 7.:** (A) Expression of RKIP (PEBP1), BACH1, and the downstream motility genes in each TCGA BRCA patient (n = 1100), grouped by RKIP status. RKIP-high: z-score > 0.5 (n = 274), RKIP-low: z-score < −0.5 (n = 414), Others: −0.5 < z score<0.5 (n = 412). (B) Gene sets enriched with genes negatively correlated with RKIP across multiple TCGA cancer types. (C) Spearman correlation coefficients for BACH1 or motility genes relative to RKIP in TCGA cancers. Coefficient cutoff of −0.3 (coefficients between −0.3 and 0 were colored black). (D) Motility-related gene sets enriched for genes that negatively correlate with the indicated metastasis suppressors, but positively correlate with BACH1 in the TCGA BRCA set. (E) Spearman correlation coefficients for BACH1 or motility genes relative to RKIP (PEBP1) or other metastasis suppressors in TCGA BRCA. Coefficient cutoff of 0.3 in both positive and negative side. Coefficients between −0.3 and 0.3 were colored black. (F) Diagram summarizing the stress MAPK kinase N1 network that regulates metastasis in breast cancer. Stress activates a network of MAPKs that interact via crosstalk. RKIP and the RKIP-mimicking drug combo 4D-MAPKi reduce the signaling capacity of the entire network by targeting multiple nodes. This allows for effective reduction of the metastatic output of the network, measured by the expression of pro-metastatic BACH1 and its target motility genes.
 
 Taken together, our results show that stress as an input activates the core MAPK network, leading to induction of BACH1 expression as an output which in turn activates motility-related genes required for invasion and metastasis (Figure 7F). Inhibition of this network by metastasis suppressors such as RKIP or a low-dose four-drug combination effectively restricts expression of invasive genes and reduces the metastatic phenotype.
 
@@ -132,41 +180,41 @@ By first inhibiting metastasis and associated cellular heterogeneity, we anticip
 
 ## Materials and methods
 
-## Cell lines
+### Cell lines
 
 In our studies, we used the human TNBC cell lines BM1 (also known as MDA-MB-231-BM1, BoM1, 1833) and MB436 (also known as MDA-MB-436), the mouse TNBC cell lines LMB (also known as E0771-LMB) and M6C, the immortalized normal mammary epithelial cell lines MCF10A and 184A1, and the human embryonic kidney epithelial cell line 293T. MB436, MCF10A, 184A1, and 293 T cells were received from American Type Culture Collection (ATCC). E0771-LMB (LMB) cells were generated by Robin Anderson (Johnstone et al., 2015). M6C cells were generated by Jeffrey Green (Holzer et al., 2003). BM1 cells were generated by Massagué and colleagues (Kang et al., 2003). BM1, MB436, LMB, and M6C cells were cultured in DMEM media with 10% fetal bovine serum (FBS), penicillin (50 U/ml), and streptomycin (50 µg/ml). MCF10A and 184A1 cells were grown in DMEM/F-12 (50/50) with 10% FBS and penicillin-streptomycin. All cell lines were authenticated by short tandem repeat analysis and used within 15 passages after their arrival in the laboratory. Mycoplasma detection was routinely performed to ensure cells were not infected with mycoplasma using MycoAlert Detection kit (Lonza, LT07-218).
 
-## Small molecule inhibitors
+### Small molecule inhibitors
 
 For in vitro and in vivo studies, JNK inhibitor SP600125, MEK inhibitor Trametinib (GSK1120212), MLK inhibitor URMC-099, and CK2 inhibitor CX-4945 (Silmitasertib) were purchased from APExBIO (A4604, A3018, B4877, A833010, respectively). p38 inhibitor SB203580 was purchased from Selleckchem (Cat No S1076) for the in vitro experiments. For in vivo studies, water soluble SB203580 hydrochloride was purchased from APExBIO (B1285). SW-538 (SW034538) was provided by Elizabeth J. Goldsmith et al.
 
-## Signaling studies in vitro
+### Signaling studies in vitro
 
 In order to study the changes in stress kinase signaling upon stress in the presence of RKIP, or small molecule inhibitors of the MAPKs, cells were plated at sub-confluence. Once they reach roughly 70% confluence, they were starved overnight (16–24 hr) in serum-free media, and then induced with anisomycin (Sigma-Aldrich, Cat No A9789) at 25 ng/ml final concentration or 10% serum for 30 min to activate MAPK pathways. In studies with small molecule inhibitors of the MAPK pathway, all inhibitors were re-suspended in DMSO and used at indicated concentrations. The cells were pre-treated with the inhibitors in serum-free media for 30 min after overnight serum starvation, immediately before induction with anisomycin or serum for 30 min. In this case, the inducing agent was directly added to the pre-treatment media that already had the inhibitors, or the pre-treatment mediate was replaced by fresh media containing the inducer and the inhibitors. This is to ensure the inhibitors are present during induction of the MAPK pathways. Upon induction for 30 min, the cells were washed three time with cold PBS and immediately lysed in RIPA buffer for protein collection.
 
-## Protein isolation and western blots
+### Protein isolation and western blots
 
 Cultured cells were washed with cold PBS and lysed in RIPA buffer with protease inhibitors (Millipore Sigma, 539134) and phosphatase inhibitors (GoldBio, GB-450). Tumor samples were snap-frozen in liquid nitrogen, pulverized, and lysed in RIPA buffer with protease and phosphatase inhibitors. All samples were sonicated three times for 10 s at 35% power and centrifuged at max speed for 15 min at 4°C. Supernatant was collected and the protein concentration was measured using the Bradford assay. All samples were boiled in 6X Laemmli buffer immediately after protein concentration measurement.
 
 For western blots, equal amounts of protein, ranging from 10 µg to 50 µg, across all samples were used. Blots were blocked for 1 hr at ambient temperature with either Odyssey Blocking Buffer (LI-COR Biosciences, 927–40010, diluted 1:1 with PBS) or with 5% FBS in Tris Buffer Saline (TBS) with 0.1% Tween20. Then, blots were incubated with primary antibodies at 4°C over-night, and with secondary antibodies at ambient temperature for 1 hr. Finally, blots were treated with ECL reagent (Pierce ECL Western Blotting Substrate, Thermo Scientific, 32106) when HRP-conjugated secondary antibodies were used and developed under the Chemiluminescence channel of the LI-COR Fc Imaging System. Blots with fluorescent secondary antibodies were imaged under 700 nm or 800 nm channels of LI-COR Fc. Signal intensity was quantified using Image Studio Lite (LI-COR) software.
 
-## Primary antibodies used
+### Primary antibodies used
 
-## Secondary antibodies used
+### Secondary antibodies used
 
-## Transient transfection
+### Transient transfection
 
 Prior to transfection, the cells were plated in six-well plates and grown to ~70% confluence. siRNA vectors were used at a final concentration of 50 nM per well of cells. The vectors were incubated with 10 µl of Lipofectamine 3000 (Invitrogen, L3000-015) in OPTI-MEM media (Gibco, 31985062) for 15–30 min. The DNA-lipid complex was then added onto the cells in a drop-wise fashion. Cells were incubated with the siRNAs for at least 24 hr before harvesting for experimental use. All experiments were performed 24–72 hr post-transfection. All siRNA constructs were purchased from Dharmacon:
 
-## Stable Lenti-viral cell line generation
+### Stable Lenti-viral cell line generation
 
 293 T cells were plated in T-75 plates and were grown to ~70% confluence prior to transfection. 1 hr prior to transfection, the media was replaced with fresh media. Lentiviral vectors were incubated with third-generation viral packaging vectors (pCMV-VSV-G, pMDLg/pRRE, pRSV-Rev) and LT-1 (Mirus, MIR-2305) in OPTI-MEM media for 30 min as described by the provider's instructions. This transfection mix was then added onto the 293 T cells in a drop-wise fashion. Virus containing media was collected 24–48 hr after transfection. Cellular content and debris were removed by centrifugation, and the supernatant was filtered through 0.45 µm PES syringe (Millex, SLHP033RS) to remove any remaining cells in the media. Polybrene was added to the media at the final concentration of 8 ng/ml to facilitate viral transduction of the target cell line. The target cell lines were transduced with the virus-containing media for 24–48 hr. At the end of the transduction period, cells were washed, trypsinized, and re-plated for selection. Transduced cells were exposed to high concentration antibiotic selection (3 µg/ml puromycin) up to 2 weeks (approximately three passages). All lentiviral procedures were carried out following Biosafety Level 3 (BSL3) practices in BSL2 tissue culture hoods according to institutional biosafety rules.
 
-## Boyden chamber invasion assay
+### Boyden chamber invasion assay
 
 Each Boyden chamber membrane (Fisher Scientific, 353097) was coated with a thin layer of BME (200 µl of 0.25 mg/ml stock, or total of 50 µg of BME per membrane) and incubated at 37°C for 1 hr. Cells were trypsinized and centrifuged at 500 x g for 5 min followed by two rounds of PBS washes to remove remaining serum-containing media. Then, the cells were resuspended in serum-free media and diluted to the desired concentration for plating onto the Boyden chambers. Each Boyden chamber received 20,000–100,000 cells in 300 μl serum-free media, depending on the cell line. 10% serum was used as the chemoattractant for these assays. For the experiments testing the effect of MAPK inhibitors on invasion, the cells were resuspended in drug-containing serum-free media immediately. After 16–24 hr, the membranes were stained with Calcein AM (Fisher Scientific, 354217) for 1 hr at 37°C in the dark to stain for live cells. Cells that are in the top chamber were removed from the membrane with a wet cotton swab. Cells in the bottom chamber were dissociated from the membrane by incubating in cell dissociation buffer (Trevigen, Cultrex 3455-096-05) in a shaker at 37°C for 1 hr. Calcein AM signal was measured in Perkin Elmer Victor X3 plate reader as a read-out of invaded cells.
 
-## High-throughput chemotactic invasion assays
+### High-throughput chemotactic invasion assays
 
 For testing anti-invasive drug combinations, IncuCyte ClearView 96-Well Chemotaxis plates (Essen BioScience) were used. A total of 2000 cells per well were embedded in 2 mg/ml BME and plated onto the chemotaxis plate following the manufacturer's instructions. Media containing 2% FBS was used in both top and bottom chambers to maintain cell viability over 72 hr or more. 200 ng/ml human EGF (Bio-Techne, 236-EG-01M) was used as the chemotactic agent in the bottom chamber, and the control wells only had the vehicle for the chemotactic agent.
 
@@ -174,15 +222,15 @@ This assay is more accurate when nuclear-labeled cells are used. Therefore, we g
 
 The chemotaxis module in IncuCyte can accurately count the number of cells in the top chamber and the bottom chamber of the ClearView plates separately. Invasive capability of the cells in the presence of various small molecule inhibitors (SB203580, SP600125, Trametinib, URMC-099, CX-4945, SW-538) was measured as the percentage of cells that moved to the bottom chamber over the period of 72 hr. The formula used for this calculation is (number of cells in the bottom chamber)/(number of cells in the bottom chamber +number of cells in the top chamber) x 100. The total number of cells in the top and bottom chambers is used as a readout of proliferation, which was important for determining drug combinations that blocked invasion without affecting growth properties of the cells.
 
-## Proliferation assays
+### Proliferation assays
 
 For proliferation assays, 1000–20,000 cells (depending on the cell line) were plated in 96-well plates and quantified over 3 days in IncuCyte by measuring confluence in Phase-Contrast images taken every 4 hr. For experiments testing the effect of MAPK inhibitors on proliferation, the cells were plated in 100 µl per well and allowed to adhere overnight. Then, 100 μl growth media containing 2X drug was added directly on top of the initial media.
 
-## 3D cultures
+### 3D cultures
 
 For 3D proliferation experiments, we used Cultrex 3D Basement Membrane Matrix, Reduced Growth Factor (Trevigen, 3445-005-01, Lot No 37353J16, Lot concentration: 15.51 mg/ml, referred to as BME). For all experiments, the cells in growth media (2% FBS) were mixed with BME at a final concentration of 2 mg/ml. For 3D proliferation assays, 100 μl of the cell/BME mixture was dispensed into each well of a 96-well plate. Upon solidification of BME, 100 μl of growth media was added on top of the solidified gel. For experiments where the cells were treated with inhibitors, the inhibitors were prepared in the growth media at 2X of their desired final concentration and added after the gel is solidified to assure 1X final concentration. The growth of the cells was monitored in IncuCyte Zoom or S3 models for the indicated duration of time.
 
-## RNA isolation and qRT-PCR
+### RNA isolation and qRT-PCR
 
 Cells were washed with cold PBS twice and lysed in TRI Reagent (Zymo Research, R2050-1-200). RNA was isolated using Direct-zol RNA MiniPrep (Zymo Research, R2052). 4 µg of total RNA from each sample was converted to cDNA using High-Capacity cDNA Reverse Transcription Kit (Applied Biosystems, 4368813). Primer pairs used for this study are listed below.
 
@@ -190,17 +238,21 @@ List of Human primers used in this study:
 
 List of Mouse primers used in this study:
 
-## Chromatin immunoprecipitation (ChIP)
+### Chromatin immunoprecipitation (ChIP)
 
 BM1 cells were crosslinked with 1% formaldehyde for 10 min at 37°C and quenched with 125 mM glycine for 1 min. Cells were sheared in buffer including 0.1% SDS, 50 mM Tris-HCl (pH 7.6), I mM EDTA (pH8.0), 0.002% Triton X-100, supplemented with PMSF and protease inhibitor. Lysates were sonicated using Bioruptor in total four cycles (30 s on/30 s off each cycle). Sonicated chromatin was incubated with antibody (rabbit polyclonal anti-Bach1 (A1-6)) or normal rabbit serum conjugated with Dynabeads protein A/G for 150 mins at 4°C. Beads were washed twice for five mins each time with RIPA buffer (10 mM Tris-HCl pH7.6, 1 mM EDTA, 0.1% SDS, 0.1% NaDOC, 1% Triton X-100); RIPA buffer supplemented with 0.3M NaCl, LiCl buffer (0.21 M LiCl, 0.5% NP-40, 0.5% NaDOC) and TE buffer plus 0.2% Triton X-100. Next, beads were washed once with TE buffer for five mins. Beads were eluted in buffer including 0.003% SDS, 10 mM Tris-HCl (pH8.0) and 1 mM EDTA (pH 8.0), 0.1 mg/ml Proteinase K for 4 hr at 65°C. ChIP-DNA was purified by AMPure XP. To prepare for ChIP-seq, sonication step was optimized to 30 cycles and confirmed size chromatin fragments between 150 and 300 bp. ChIP-DNA samples were used to prepare DNA library and sequence as described (Sato et al., 2020). ChIP-DNA samples were used to prepare DNA library and sequence as described (Sato et al., 2020).
 
 List of Human primers used for the ChIP assay quantitative RT-PCR:
 
-## Mouse studies
+### Mouse studies
 
 Mice were procured and housed by the Animal Resources Center and handled according to the Institutional Animal Care and Use Committee at the University of Chicago. Athymic nude mice were purchased from Harlan Sprague Dawley and C57Bl/6 mice were purchased from the Jackson Laboratories.
 
-For primary tumor growth experiments, 2 × 106 BM1 cells or 5 × 105 LMB cells were injected orthotopically near the mammary fat pad of athymic nude or C57Bl/6 mice, respectively. Tumor growth was monitored over time by caliper measurements of the width and length of tumors. Tumor volumes were calculated with the formula:volume=π6×width2×length
+For primary tumor growth experiments, 2 × 106 BM1 cells or 5 × 105 LMB cells were injected orthotopically near the mammary fat pad of athymic nude or C57Bl/6 mice, respectively. Tumor growth was monitored over time by caliper measurements of the width and length of tumors. Tumor volumes were calculated with the formula:
+
+$$
+volume=\frac{\pi}{6}\timeswidth^{2}\timeslength
+$$
 
 The mice were sacrificed when the tumors reached approximately 1 cm3.
 
@@ -210,15 +262,15 @@ For the in vivo studies involving MAPK inhibitors and the four-drug MAPKi combin
 
 For the tumor growth experiments with the MAPK inhibitors, tumors were allowed to reach the size 50–100 mm3 size before the MAPKi treatment began. Then, the mice were treated with the respective MAPKi treatment (or the control) for up to 3 weeks. Tumor size was monitored twice a week with a caliper. For the metastasis assays, the tumor cells were treated with the four-drug MAPKi combination at the in vitro doses for 24 hr prior to injections to allow for anti-metastatic reprogramming of the cells. Homing to metastatic tissues upon intracardiac or tail vein injections can take up to 48 hr. To ensure that the reprogrammed tumor cells do not revert back to their untreated state in the circulation, we pre-treated the mice with the MAPKi combination 2–6 hr before tumor cell inoculation as well. After the inoculation, the mice were treated with the inhibitors daily for up to 3 weeks until the experimental endpoints discussed above were reached.
 
-## Histology
+### Histology
 
 Tumor tissues were fixed in 10% formalin upon dissection for 72 hr and then transferred into 70% Ethanol for long-term storage. Mouse lungs were perfused with PBS before formalin fixation step to allow for tissue expansion and high-quality histological analysis. Fixed tissues were embedded in paraffin and sliced into 5 µm sections prior to hematoxylin and eosin (H and E) staining. All tissue processing and staining for this body of work was performed by the University of Chicago Human Tissue Resource Center. For the detection of tissue morphology as well as tumor populations within the lung, lung sections were deparaffinized, immersed in hematoxylin, rinsed in warm distilled water, and treated with eosin. Stained slides were scanned at 10X on a Nikon Eclipse Ti2 Inverted Microscope System.
 
-## MIB-MS analysis
+### MIB-MS analysis
 
 Multiplexed inhibitor beads – mass spectrometry analysis on BM1-VC and BM1-RKIP tumors was conducted as previously described (Duncan et al., 2012). Tumors were grown in athymic nude mice as described previously. Once the tumors reached the size of ~300 mm3 they were isolated, flash-frozen in liquid nitrogen, and shipped to the Johnson Laboratories in Chapel Hill. Preparation of the lysate for the MIB-MS analysis, and the mass spectrometry were all performed as described by Duncan et al.
 
-## RNA-sequencing
+### RNA-sequencing
 
 To compare the transcriptomes of metastatic BM1-VC and non-metastatic BM1-RKIP tumors, 1 × 106 cells were injected orthotopically. When tumors reached approximately 200 mm3 size (about 3 weeks post inoculation), we harvested the tumors and flash-froze them in liquid nitrogen. Tumor samples were pulverized immediately, and lysed in TRI Reagent (Zymo Research, R2050-1-200). RNA was extracted using the Direct-zol RNA MiniPrep Kit (Zymo Research, R2052) following the manufacturer's instructions under RNAse-free conditions. In order to prevent contamination of the RNA samples by genomic DNA, the samples were treated with DNAse-I (Zymo Research, E1011-A) for 15 min at ambient temperature on the RNA extraction column. Total RNA was eluted in RNAse/DNAse-free water (Zymo Research, W1001-30) and submitted to the University of Chicago Genomics Facility for further analysis.
 
@@ -228,100 +280,192 @@ Bioinformatic analysis of the RNA-seq results were all carried out using the web
 
 The raw and processed sequence data are deposited to Gene Expression Omnibus (GEO) with the series accession number GSE128983.
 
-## The Cancer Genome Atlas (TCGA) analysis
+### The Cancer Genome Atlas (TCGA) analysis
 
 For the analysis of patient data, normalized RNA-seq results were accessed through the cBioportal data base (http://www.cbioportal.org/) (Gao et al., 2013). For every TCGA cancer type, the provisional data sets were used for analysis (tagged ‘TCGA, Provisional’ on cBioportal). Lists of genes that correlate with RKIP (PEBP1) and BACH1 were also downloaded directly from cBioportal, as the data base already has these correlation matrices generated for each TCGA cancer type. Oncotype and expression heatmap plots were directly generated by cBioportal. Prior to generation of these plots, z-score threshold of 0.5 was arbitrarily chosen to classify patients into high versus low expressors for a particular gene of interest. For example, if a patient's tumor sample has an RKIP expression level that has a z-score higher than 0.5, then the sample was deemed ‘RKIP-high’, and if the z-score was below −0.5, the sample was deemed ‘RKIP-low’. If the z-score falls within −0.5 and 0.5, then the sample was considered as ‘Intermediate’, or ‘Other’. Both Pearson and Spearman correlations were used in determining gene-gene correlations and a coefficient cut-off of 0.3 was chosen arbitrarily for both correlation metrics.
 
-## Gene set enrichment analyses
+### Gene set enrichment analyses
 
 Functional gene set enrichment analysis of the differentially expressed genes in the RNA-seq data as well as the genes that correlate with RKIP (PEBP1) and BACH1 was performed using the web-based interface of the Metascape software (metascape.org) (Tripathi et al., 2015). For the identification of pathways and processes enriched in the input gene lists, both ‘Gene Ontology’ (GO) and ‘Kyoto Encyclopedia of Genes and Genomes’ (KEGG) categories were considered. A minimum overlap of five genes and an enrichment score of 1.5 were chosen as the enrichment parameters. An adjusted p-value cut-off of 0.05 was chosen as the significance threshold.
 
-## Network model
+### Network model
 
-## Model description
+#### Model description
 
 We propose a coarse-grained framework for devising a new cancer treatment strategy based on cellular reprogramming. The networks governing the cell dynamics involve a plethora of components interacting in a non-linear fashion, and its quantitative description would require, in principle, the construction of a large system of coupled differential equations. That approach is unfeasible because of a lack of detailed knowledge of the parameters and chemical reactions that they govern. Hence, an alternative approach was used to describe the signal flow within the network which drives the transcription of BACH1 by MAPKs under stress assuming a steady state regime.
 
 We consider that a cancer cell has a multiplicity of hierarchically structured driver networks responsible for activation of the stress response genes that promote metastasis. The BACH1 driver network is a primary absorber of the stress signal that, when compromised, may generate a surplus of kinase signal(s) to activate secondary compensatory networks, enabling redundancy of stress processing and response. Our data indicate that the BACH1 driver network is fully operational in all cell lines and that the stress signal strength can induce saturation of the activity of all components of the network.
 
-We model the driver network considering the stress signal as a steady state flow through the network pathways and the kinase nodes. The nodes of the network are labeled accordingly with the kinase that we posit they represent. The inflow of a node i indicates the arrival of the kinase signal(s) into it. The inflow interacts with the kinase node, and the outflow indicates the product of this interaction. Each node has an activity that regulates the inflow of kinase signal(s), and at each node the outflow of products is equal to the inflow of the signal.
+We model the driver network considering the stress signal as a steady state flow through the network pathways and the kinase nodes. The nodes of the network are labeled accordingly with the kinase that we posit they represent. The inflow of a node $i$ indicates the arrival of the kinase signal(s) into it. The inflow interacts with the kinase node, and the outflow indicates the product of this interaction. Each node has an activity that regulates the inflow of kinase signal(s), and at each node the outflow of products is equal to the inflow of the signal.
 
 The treatment targeting a specific node of the network will reduce its activity and, hence, its capacity for consuming the products (signal) from its upstream node. The surplus of products from the upstream nodes may be either redirected within the network or, in the case of saturation of the crosstalk links, be redirected to activate a secondary compensatory network. In the case of the surplus being greater than the threshold of activation of the compensatory network, an alternative system (driver network) will be turned on and the stress response will still be functional and capable of promoting metastasis.
 
-## Signal flow description
+### Signal flow description
 
-Figure 5A shows a phenomenological representation of the BACH1 transcription driver network N1 for the BM1 cell line. The nodes containing a kinase are labeled by an index i=2,…,8 while node 1 indicates the splitting of the stress signal and node 9 denotes the induction of BACH1 transcription as generated by the inflow of upstream kinase signals. The inflow of the i -th node is denoted by Υi while its outflow is Ωi. Since we are considering a conservative network, we have Ωi=Υi, for i=1,…,9. The flow capacity of arrow connecting node i to j is indicated by cij which is a fraction of Υi when the node has more than one outgoing pathway. Hence, a coefficient αi or Ai besides a pathway denotes the fraction of the inflow going through it such that α1+α2+A12=1, and αk+Ak=1 where k=3,…,6. The absence of those coefficients indicate that the outflow equals the inflow. The intensity of the stress signal is denoted by Σ and the degree of activation of transcription of BACH1 caused by this signal is indicated by ϕBACH1. For the case of maximal stress signaling, we have ϕBACH1=Σ. The treatment generates a surplus of products of the functional network denoted by E such that the degree of activation of transcription of BACH1 under treatment is ϕBACH1=Σ−E. The degree of activation of transcription of BACH1 can be rewritten as a fraction of maximal stress; ϕBACH1=1−ϵ. For simplicity we only represent treatment targeting MEK and its effect on generating RAF surplus.
+Figure 5A shows a phenomenological representation of the BACH1 transcription driver network N1 for the BM1 cell line. The nodes containing a kinase are labeled by an index $i=2,…,8$ while node 1 indicates the splitting of the stress signal and node 9 denotes the induction of BACH1 transcription as generated by the inflow of upstream kinase signals. The inflow of the $i$ -th node is denoted by $Υ_{i}$ while its outflow is $Ω_{i}$. Since we are considering a conservative network, we have $Ω_{i}=Υ_{i}$, for $i=1,…,9$. The flow capacity of arrow connecting node $i$ to $j$ is indicated by $c_{ij}$ which is a fraction of $Υ_{i}$ when the node has more than one outgoing pathway. Hence, a coefficient $\alpha_{i}$ or $A_{i}$ besides a pathway denotes the fraction of the inflow going through it such that $\alpha_{1}+\alpha_{2}+A_{12}=1$, and $\alpha_{k}+A_{k}=1$ where $k=3,…,6$. The absence of those coefficients indicate that the outflow equals the inflow. The intensity of the stress signal is denoted by $Σ$ and the degree of activation of transcription of BACH1 caused by this signal is indicated by $ϕ_{BACH1}$. For the case of maximal stress signaling, we have $ϕ_{BACH1}=Σ$. The treatment generates a surplus of products of the functional network denoted by $E$ such that the degree of activation of transcription of BACH1 under treatment is $ϕ_{BACH1}=Σ−E$. The degree of activation of transcription of BACH1 can be rewritten as a fraction of maximal stress; $ϕ_{BACH1}=1−ϵ$. For simplicity we only represent treatment targeting MEK and its effect on generating RAF surplus.
 
-Let us write the formulae for the input flows in fractions of the stress signal Σ.
+Let us write the formulae for the input flows in fractions of the stress signal $Σ$.
 
-We have an input signal being split at node 1 such that Υ1=1 and, since node 1 has three outgoing pathways, we have Ω1=Υ1=α1+α2+A12=1 which implies on:Υ2=α1;Υ5=α2;Υ7=A12.
+We have an input signal being split at node 1 such that $Υ_{1}=1$ and, since node 1 has three outgoing pathways, we have $Ω_{1}=Υ_{1}=\alpha_{1}+\alpha_{2}+A_{12}=1$ which implies on:$Υ_{2}=\alpha_{1}$;$Υ_{5}=\alpha_{2}$;$Υ_{7}=A_{12}$.
 
-Node 2 has one outgoing pathway and generates an outflow Ω2=Υ2 that fully inflows node 3, hence Υ3=Ω2=Ω3. Node 5 has two outgoing pathways, hence Ω5=Υ5=α3Υ5+A3Υ5=α2α3+α2A3 and, similarly, node 7 outflow obeys Ω7=Υ7=A12α4+A12A4.
+Node 2 has one outgoing pathway and generates an outflow $Ω_{2}=Υ_{2}$ that fully inflows node 3, hence $Υ_{3}=Ω_{2}=Ω_{3}$. Node 5 has two outgoing pathways, hence $Ω_{5}=Υ_{5}=\alpha_{3}Υ_{5}+A_{3}Υ_{5}=\alpha_{2}\alpha_{3}+\alpha_{2}A_{3}$ and, similarly, node 7 outflow obeys $Ω_{7}=Υ_{7}=A_{12}\alpha_{4}+A_{12}A_{4}$.
 
-The inflow of node 8 is Υ8=A3Ω5+A4Ω7 such that Ω8=Υ8; the inflow of node 4 becomes Υ4=A5Ω8+Ω3 such that Ω4=Υ4; and the inflow of node 6 is Υ6=A6Ω4+α3Ω5+α4Ω7 such that Ω6=Υ6 ; Ω3, Ω5, and Ω7 are defined above.
+The inflow of node 8 is $Υ_{8}=A_{3}Ω_{5}+A_{4}Ω_{7}$ such that $Ω_{8}=Υ_{8}$; the inflow of node 4 becomes $Υ_{4}=A_{5}Ω_{8}+Ω_{3}$ such that $Ω_{4}=Υ_{4}$; and the inflow of node 6 is $Υ_{6}=A_{6}Ω_{4}+\alpha_{3}Ω_{5}+\alpha_{4}Ω_{7}$ such that $Ω_{6}=Υ_{6}$ ; $Ω_{3}$, $Ω_{5}$, and $Ω_{7}$ are defined above.
 
-The inflow arriving at node 9 is written as Υ9=α6Ω4+α5Ω8+Ω6 such that in the absence of treatment, ϕBACH1=Υ9=1 as it can be verified by direct substitution. Indeed, let us consider Ω8=A3Ω5+A4Ω7, Ω4=A5Ω8+Ω3, and Ω6=A6Ω4+α3Ω5+α4Ω7, such that Υ9 becomes Υ9=α6+A6Ω3+α6A5+A6A5A3+α5A3+α3Ω5+α6A5+A6A5A4+α5A4+α4Ω7. Since αk+Ak=1 for k=3,…,6, we obtain Υ9=Ω3+Ω5+Ω7=Υ2+Υ3+Υ7=1.
+The inflow arriving at node 9 is written as $Υ_{9}=\alpha_{6}Ω_{4}+\alpha_{5}Ω_{8}+Ω_{6}$ such that in the absence of treatment, $ϕ_{BACH1}=Υ_{9}=1$ as it can be verified by direct substitution. Indeed, let us consider $Ω_{8}=A_{3}Ω_{5}+A_{4}Ω_{7}$, $Ω_{4}=A_{5}Ω_{8}+Ω_{3}$, and $Ω_{6}=A_{6}Ω_{4}+\alpha_{3}Ω_{5}+\alpha_{4}Ω_{7}$, such that $Υ_{9}$ becomes $Υ_{9}=\alpha_{6}+A_{6}Ω_{3}+\alpha_{6}A_{5}+A_{6}A_{5}A_{3}+\alpha_{5}A_{3}+\alpha_{3}Ω_{5}+\alpha_{6}A_{5}+A_{6}A_{5}A_{4}+\alpha_{5}A_{4}+\alpha_{4}Ω_{7}$. Since $\alpha_{k}+A_{k}=1$ for $k=3,…,6$, we obtain $Υ_{9}=Ω_{3}+Ω_{5}+Ω_{7}=Υ_{2}+Υ_{3}+Υ_{7}=1$.
 
-The parameters governing the flow of information through the network were chosen based upon experimental results, such that the values of the parameters αk indicate the strength of absorption of the kinase from the upstream node by the current one. For N1, we have:α1=0.2and the complementary flow parameters are A12=1-α1-α2 and Ak=1-αk for k=3,…,6.
+The parameters governing the flow of information through the network were chosen based upon experimental results, such that the values of the parameters $\alpha_{k}$ indicate the strength of absorption of the kinase from the upstream node by the current one. For N1, we have:
+
+$$
+\alpha_{1}=0.2
+$$
+
+and the complementary flow parameters are $A_{12}=1-\alpha_{1}-\alpha_{2}$ and $A_{k}=1-\alpha_{k}$ for $k=3,…,6$.
 
 For N2, we eliminate the crosstalk and the parameters become:
 
-## BACH1 transcription after treatment
+### BACH1 transcription after treatment
 
-We test our approach by analyzing four treatment scenarios using (1) p38i, (2) MEKi, (3) JNKi, and (4) 4D-MAPKi. The reduction in target kinase activity caused by those drugs will be proportional to a function of the drug activity reduction denoted as ξp38, ξMEK, ξJNK, and ξ4D-MAPK=ξp38+ξMEK+ξJNK+ξMLK. That reduction will cause a surplus of kinase signals from the upstream nodes that is proportional to the reduction in the activity of the target node. Hence, the inflow of the target node will be given by 1-ξp38Υ8, 1-ξMEKΥ3, 1-ξJNKΥ6, and 1-ξp38Υ8+ξMEKΥ3+ξJNKΥ6+ξMLKΥ6, where Υi is the inflow to the target without treatment. The total surplus generated by each single drug treatment is ξp38Υ8, ξMEKΥ3, ξJNKΥ6, while for the 4D-MAPKi we assume additive effect as a first approximation which results in ξp38Υ8+ξMEKΥ3+ξJNKΥ6+ξMLKΥ6.
+We test our approach by analyzing four treatment scenarios using (1) p38i, (2) MEKi, (3) JNKi, and (4) 4D-MAPKi. The reduction in target kinase activity caused by those drugs will be proportional to a function of the drug activity reduction denoted as $ξ_{p38}$, $ξ_{MEK}$, $ξ_{JNK}$, and $ξ_{4D-MAPK}=ξ_{p38}+ξ_{MEK}+ξ_{JNK}+ξ_{MLK}$. That reduction will cause a surplus of kinase signals from the upstream nodes that is proportional to the reduction in the activity of the target node. Hence, the inflow of the target node will be given by $1-ξ_{p38}Υ_{8}$, $1-ξ_{MEK}Υ_{3}$, $1-ξ_{JNK}Υ_{6}$, and $1-ξ_{p38}Υ_{8}+ξ_{MEK}Υ_{3}+ξ_{JNK}Υ_{6}+ξ_{MLK}Υ_{6}$, where $Υ_{i}$ is the inflow to the target without treatment. The total surplus generated by each single drug treatment is $ξ_{p38}Υ_{8}$, $ξ_{MEK}Υ_{3}$, $ξ_{JNK}Υ_{6}$, while for the 4D-MAPKi we assume additive effect as a first approximation which results in $ξ_{p38}Υ_{8}+ξ_{MEK}Υ_{3}+ξ_{JNK}Υ_{6}+ξ_{MLK}Υ_{6}$.
 
-We will indicate the fraction of inhibition caused by a given treatment dose by x, since the drug dosage may vary with its specific function. For the drugs targeting nodes p38, MEK, and MLK, we can represent the reduction in BACH1 transcription effectively as a function of a dose x targeting the i-th node:ϕBACH1x=11+Kix,where Ki is a constant set according to the effect of treatment on reducing BACH1 transcription. The latter is assumed to be equal to the inflow Υ9. Then, BACH1 relative transcription after reduction of the activity of node i by a fraction ξiΥi can be written as:ϕBACH1x=1-ξiΥi,where i denotes the node or its corresponding kinase. Hence, we can write the function for the reduction of the node activity as a consequence of drug action as:ξix=Δix1+Kix,where Δi=Ki/Υi, and Υi is the inflow at node i without treatment.
+We will indicate the fraction of inhibition caused by a given treatment dose by $x$, since the drug dosage may vary with its specific function. For the drugs targeting nodes p38, MEK, and MLK, we can represent the reduction in BACH1 transcription effectively as a function of a dose $x$ targeting the $i$-th node:
 
-## Treatment with p38i
+$$
+ϕ_{BACH1}x=\frac{1}{1+K_{i}x},
+$$
 
-BACH1 transcription after this treatment can be approximated for K1=2, such that:ϕBACH1p38ix=11+K1x.
+where $K_{i}$ is a constant set according to the effect of treatment on reducing BACH1 transcription. The latter is assumed to be equal to the inflow $Υ_{9}$. Then, BACH1 relative transcription after reduction of the activity of node $i$ by a fraction $ξ_{i}Υ_{i}$ can be written as:
 
-## Treatment with MEKi
+$$
+ϕ_{BACH1}x=1-ξ_{i}Υ_{i},
+$$
 
-BACH1 transcription after this treatment can be approximated for K2=0.4, such that:ϕBACH1MEKix=11+K2x.
+where $i$ denotes the node or its corresponding kinase. Hence, we can write the function for the reduction of the node activity as a consequence of drug action as:
 
-## Treatment with MLKi
+$$
+ξ_{i}x=\frac{Δ_{i}x}{1+K_{i}x},
+$$
 
-BACH1 transcription after this treatment can be approximated for K4=0.1, such that:ϕBACH1MEKix=11+K4x.
+where $Δ_{i}=K_{i}/Υ_{i}$, and $Υ_{i}$ is the inflow at node $i$ without treatment.
 
-## Treatment with JNKi
+#### Treatment with p38i
 
-The output of BACH1 after this treatment is obtained using a different model because JNK is repressing node 4 and has a compensatory crosstalk with node 8. Hence the activity of those nodes will increase because of reduction of activity of node 6. Let us describe the reduction of the activity of node 4 asΥ4'=Υ41+41+γ1Υ7411+γ2Υ6'4,where the primed symbols indicate the inflows under treatment. Since node 4 is also repressed by node 7, and the network is operating under maximal stress, we assume that node 7 represses node 4 maximally such that node 4 activity remains almost constant even under reduction of the activity of node 6. This is based on assuming that the capacity of the pathways connecting nodes 3 and 8 to node 4 will not be affected by a reduction in activity of node 6, and, hence:Υ4'=Υ4=c34+c84=Ω3+A5Ω8.
+BACH1 transcription after this treatment can be approximated for $K_{1}=2$, such that:
 
-However, the activity of node 8 will be affected by treatment inactivation of JNK redirecting the flow from nodes 5 and 7. Let us assume that the inflow of node 8 coming from nodes 5 and 7 is, respectively, determined by the activity of node 6 accordingly withA3=11+γ3Υ6x4,andA4=11+γ4Υ6x4,where γ3 and γ4 are two arbitrary constants and the activity of node 6 can be written as a function of the drug dosage x targeting it. The treatment targeting node 6 reduces its activity and induces a compensatory flow to pass through node 8 which is assumed to be capable of absorbing only two thirds of the surplus of kinase signals coming from nodes 5 and 7. Therefore, the other one-third of surplus will be redirected toward two compensatory networks, each of them receiving the surplus of one of the kinase signals. Then, the surplus is the difference between the absorption by node 8 without and with treatment, and BACH1 transcription becomesϕBACH1=1+1311+γ3Υ6x4+11+γ4Υ6x4-11+γ3Υ604-11+γ4Υ604,where the factor 13 occurs because we are assuming that node 8 absorbs only two-thirds of the surplus generated by treatment. The inactivation of node 6 by treatment can be described by a functionΥ6x=Υ601+K3x,where K3=0.475628 is an arbitrary constant. We also set the values of the constants γ3=1.520908 and γ4=1.435780 arbitrarily. Our choice enables us to estimate the node activity under treatment as a fraction of its activity without treatment and to obtain a qualitative description of experimental data based on the reduction of BACH1 transcription following treatment. The analysis of BACH1 transcription after treatment is shown in for N1 and N2, respectively.
+$$
+ϕ_{BACH1}^{p38i}x=\frac{1}{1+K_{1}x}.
+$$
 
-## Surplus analysis
+#### Treatment with MEKi
+
+BACH1 transcription after this treatment can be approximated for $K_{2}=0.4$, such that:
+
+$$
+ϕ_{BACH1}^{MEKi}x=\frac{1}{1+K_{2}x}.
+$$
+
+#### Treatment with MLKi
+
+BACH1 transcription after this treatment can be approximated for $K_{4}=0.1$, such that:
+
+$$
+ϕ_{BACH1}^{MEKi}x=\frac{1}{1+K_{4}x}.
+$$
+
+#### Treatment with JNKi
+
+The output of BACH1 after this treatment is obtained using a different model because JNK is repressing node 4 and has a compensatory crosstalk with node 8. Hence the activity of those nodes will increase because of reduction of activity of node 6. Let us describe the reduction of the activity of node 4 as
+
+$$
+Υ_{4}^{'}=Υ_{4}1+\frac{4}{1+\gamma_{1}Υ_{7}^{4}}\frac{1}{1+\gamma_{2}Υ_{6}^{'}^{4}},
+$$
+
+where the primed symbols indicate the inflows under treatment. Since node 4 is also repressed by node 7, and the network is operating under maximal stress, we assume that node 7 represses node 4 maximally such that node 4 activity remains almost constant even under reduction of the activity of node 6. This is based on assuming that the capacity of the pathways connecting nodes 3 and 8 to node 4 will not be affected by a reduction in activity of node 6, and, hence:$Υ_{4}^{'}=Υ_{4}=c_{34}+c_{84}=Ω_{3}+A_{5}Ω_{8}$.
+
+However, the activity of node 8 will be affected by treatment inactivation of JNK redirecting the flow from nodes 5 and 7. Let us assume that the inflow of node 8 coming from nodes 5 and 7 is, respectively, determined by the activity of node 6 accordingly with
+
+$$
+A_{3}=\frac{1}{1+\gamma_{3}Υ_{6}x^{4}},andA_{4}=\frac{1}{1+\gamma_{4}Υ_{6}x^{4}},
+$$
+
+where $\gamma_{3}$ and $\gamma_{4}$ are two arbitrary constants and the activity of node 6 can be written as a function of the drug dosage $x$ targeting it. The treatment targeting node 6 reduces its activity and induces a compensatory flow to pass through node 8 which is assumed to be capable of absorbing only two thirds of the surplus of kinase signals coming from nodes 5 and 7. Therefore, the other one-third of surplus will be redirected toward two compensatory networks, each of them receiving the surplus of one of the kinase signals. Then, the surplus is the difference between the absorption by node 8 without and with treatment, and BACH1 transcription becomes
+
+$$
+ϕ_{BACH1}=1+\frac{1}{3}\frac{1}{1+\gamma_{3}Υ_{6}x^{4}}+\frac{1}{1+\gamma_{4}Υ_{6}x^{4}}-\frac{1}{1+\gamma_{3}Υ_{6}0^{4}}-\frac{1}{1+\gamma_{4}Υ_{6}0^{4}},
+$$
+
+where the factor 13 occurs because we are assuming that node 8 absorbs only two-thirds of the surplus generated by treatment. The inactivation of node 6 by treatment can be described by a function
+
+$$
+Υ_{6}x=\frac{Υ_{6}0}{1+K_{3}x},
+$$
+
+where $K_{3}=0.475628$ is an arbitrary constant. We also set the values of the constants $\gamma_{3}=1.520908$ and $\gamma_{4}=1.435780$ arbitrarily. Our choice enables us to estimate the node activity under treatment as a fraction of its activity without treatment and to obtain a qualitative description of experimental data based on the reduction of BACH1 transcription following treatment. The analysis of BACH1 transcription after treatment is shown in for N1 and N2, respectively.
+
+### Surplus analysis
 
 The surplus for each treatment scenario can be evaluated using the output functions after treatment considering that the reduction of activity of a given kinase generates a surplus that comprises the non-absorbed quantities of kinase signal produced at the upstream nodes.
 
-## Surplus of treatment with MEKi
+#### Surplus of treatment with MEKi
 
-The total surplus of RAF generated by this treatment can be computed from the transcription of BACH1. The surplus of RAF as function of the treatment is denoted by ϵRAFx, such that ϵRAFx=ξMEKxΥ3. Since ξMEKx=Δ2x1+K2x, and Δ2=K2Υ3=K2α1, the surplus of RAF is:ϵRAFx=K2x1+K2x.
+The total surplus of RAF generated by this treatment can be computed from the transcription of BACH1. The surplus of RAF as function of the treatment is denoted by $ϵ_{RAF}x$, such that $ϵ_{RAF}x=ξ_{MEK}xΥ_{3}$. Since $ξ_{MEK}x=\frac{Δ_{2}x}{1+K_{2}x}$, and $Δ_{2}=\frac{K_{2}}{Υ_{3}}=\frac{K_{2}}{\alpha_{1}},$ the surplus of RAF is:
+
+$$
+ϵ_{RAF}x=\frac{K_{2}x}{1+K_{2}x}.
+$$
 
 The RAF surplus from MEKi is depicted in Graph 6B, and the function describing it is the same for the 4D-MAPKi treatment. The validity of the formula for both treatment scenarios is because we are assuming that the nodes of the network are operating at their maximal capacity and the surplus is not redirected within the network unless there is a repressive interaction.
 
-## Surplus of treatment with MLKi
+#### Surplus of treatment with MLKi
 
-This treatment generates a surplus of stress signal which we assume not being redirected within the driver network. Therefore, this signal will be redirected to a compensatory network and its amount is denoted by ϵSIGx, such that ϵSIGx=ξMLKxΥ5. Since ξMLKx=Δ4x1+K4x, and Δ4=K4Υ5=K4α2, the surplus of stress signal is given by:ϵSIGx=K4x1+K4x.
+This treatment generates a surplus of stress signal which we assume not being redirected within the driver network. Therefore, this signal will be redirected to a compensatory network and its amount is denoted by $ϵ_{SIG}x$, such that $ϵ_{SIG}x=ξ_{MLK}xΥ_{5}$. Since $ξ_{MLK}x=\frac{Δ_{4}x}{1+K_{4}x}$, and $Δ_{4}=\frac{K_{4}}{Υ_{5}}=\frac{K_{4}}{\alpha_{2}},$ the surplus of stress signal is given by:
+
+$$
+ϵ_{SIGx}=\frac{K_{4}x}{1+K_{4}x}.
+$$
 
 The signal surplus is shown in Graph 6C for the 4D-MAPKi treatment.
 
-## Surplus of treatment with JNKi and p38i
+#### Surplus of treatment with JNKi and p38i
 
 We compute the surplus generated at nodes 5 and 7 by treatments with JNKi and p38i based on the total surplus that they generate.
 
-## Total surplus of treatment with JNKi
+#### Total surplus of treatment with JNKi
 
-The surplus generated by this treatment is given by one third of the difference between the flow toward node 8 without and with treatment as previously considered when evaluating BACH1 transcription under this treatment. We denote the surplus generated by treatment targeting node 6 as ϵ6x which becomesϵ6=1311+γ3Υ6x4+11+γ4Υ6x4-11+γ3Υ604-11+γ4Υ604.
+The surplus generated by this treatment is given by one third of the difference between the flow toward node 8 without and with treatment as previously considered when evaluating BACH1 transcription under this treatment. We denote the surplus generated by treatment targeting node 6 as $ϵ_{6}x$ which becomes
 
-Note, however, that the outflow from node 5 is also affected by treatment by means of its inactivation by drug MLKi. Hence, we have α2→α2/1+K4x and the inflow of node 6 becomesΥ6x=11+K3xα21+K4xα3+A12α4+α1+α21+K4xA3+A12A4A5A6,where we are rebalancing the inflow of node 6 without treatment, indicated within curly brackets, by its inactivation because of treatment, which is denoted by the term outside the curly brackets. The term within the curly brackets also has the node 5 outflow reduction because of treatment.
+$$
+ϵ_{6}=\frac{1}{3}\frac{1}{1+\gamma_{3}Υ_{6}x^{4}}+\frac{1}{1+\gamma_{4}Υ_{6}x^{4}}-\frac{1}{1+\gamma_{3}Υ_{6}0^{4}}-\frac{1}{1+\gamma_{4}Υ_{6}0^{4}}.
+$$
 
-## Total surplus with treatment with p38i
+Note, however, that the outflow from node 5 is also affected by treatment by means of its inactivation by drug MLKi. Hence, we have $\alpha_{2}→\alpha_{2}/1+K_{4}x$ and the inflow of node 6 becomes
 
-The surplus generated by this treatment is given by the sum of the inflow toward node 8 without treatment plus the redirected flow from node 6 balanced by the reduction of activity of nodes 5 and 8 because of treatment. We can denote the surplus generated by treatment targeting node 8 by ϵ8x such thatϵ8x=K1x1+K1x,where this surplus is the result of the combination of the surplus signals generated by treatment targeting node 6 and node 8 itself.
+$$
+Υ_{6}x=\frac{1}{1+K_{3}x}\frac{\alpha_{2}}{1+K_{4}x}\alpha_{3}+A_{12}\alpha_{4}+\alpha_{1}+\frac{\alpha_{2}}{1+K_{4}x}A_{3}+A_{12}A_{4}A_{5}A_{6},
+$$
 
-The surplus from node 5 can be computed from the sum of the fraction of surplus generated by treatment targeting nodes 6 and 8 where those fractions are proportional to the absorption capacity of each pathway coming from node 5 to nodes 6 or 8. We denote the surplus of node 5 by ϵMLK such that:
+where we are rebalancing the inflow of node 6 without treatment, indicated within curly brackets, by its inactivation because of treatment, which is denoted by the term outside the curly brackets. The term within the curly brackets also has the node 5 outflow reduction because of treatment.
 
-ϵMLK=ϵ6xΓ3x+α4ϵ8x, where,Γ3x=11+γ3Υ6x4.
+#### Total surplus with treatment with p38i
 
-We proceed analogously to compute the surplus of node 7, denoted by ϵTAOK, and obtain:ϵTAOK=ϵ6x1-Γ3x+A4ϵ8x.
+The surplus generated by this treatment is given by the sum of the inflow toward node 8 without treatment plus the redirected flow from node 6 balanced by the reduction of activity of nodes 5 and 8 because of treatment. We can denote the surplus generated by treatment targeting node 8 by $ϵ_{8}x$ such that
+
+$$
+ϵ_{8}x=\frac{K_{1}x}{1+K_{1}x},
+$$
+
+where this surplus is the result of the combination of the surplus signals generated by treatment targeting node 6 and node 8 itself.
+
+The surplus from node 5 can be computed from the sum of the fraction of surplus generated by treatment targeting nodes 6 and 8 where those fractions are proportional to the absorption capacity of each pathway coming from node 5 to nodes 6 or 8. We denote the surplus of node 5 by $ϵ_{MLK}$ such that:
+
+$ϵ_{MLK}=ϵ_{6}xΓ_{3}x+\alpha_{4}ϵ_{8}x,$ where,
+
+$$
+Γ_{3}x=\frac{1}{1+\gamma_{3}Υ_{6}x^{4}}.
+$$
+
+We proceed analogously to compute the surplus of node 7, denoted by $ϵ_{TAOK}$, and obtain:
+
+$$
+ϵ_{TAOK}=ϵ_{6}x1-Γ_{3}x+A_{4}ϵ_{8}x.
+$$

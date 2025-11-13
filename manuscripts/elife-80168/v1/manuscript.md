@@ -20,9 +20,9 @@
 
 ### Affiliations
 
-1. https://ror.org/05a0ya142 Stanley Center for Psychiatric Research, Broad Institute of MIT and Harvard Cambridge United States
-2. https://ror.org/03vek6s52 Department of Stem Cell and Regenerative Biology, Harvard University Cambridge United States
-3. https://ror.org/05a0ya142 Imaging Platform, Broad Institute of MIT and Harvard Cambridge United States
+1. Stanley Center for Psychiatric Research, Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))
+2. Department of Stem Cell and Regenerative Biology, Harvard University Cambridge United States ([ROR:03vek6s52](https://ror.org/03vek6s52))
+3. Imaging Platform, Broad Institute of MIT and Harvard Cambridge United States ([ROR:05a0ya142](https://ror.org/05a0ya142))
 
 † Corresponding author
 
@@ -42,13 +42,37 @@ We therefore devised a fully automated and quantitative high-content synaptic ph
 
 ## Results
 
-## Generation of robust human neuronal cultures for synaptic screening applications
+### Generation of robust human neuronal cultures for synaptic screening applications
 
 To reproducibly generate large batches of human-induced neurons (hNs) from hPSCs, we used a well-described in vitro differentiation protocol based on ectopic expression of Neurogenin 2 (NGN2) combined with developmental patterning using small molecules (Nehme et al., 2018; Zhang et al., 2013). We selected this protocol based on extensive molecular and physiological characterization of these hNs alongside their use in multiple studies of disease-associated genes (Busskamp et al., 2014; Deneault et al., 2018; Lin et al., 2018; Meijer et al., 2019; Nehme et al., 2018; Pak et al., 2015; Yi et al., 2016; Zhang et al., 2013; Zhang et al., 2018) and in the only published genome-wide CRISPRi/CRISPRa screens of in vitro-derived human neurons to date (Tian et al., 2021; Tian et al., 2019). Importantly, studies using these hNs have identified physiological and/or morphological phenotypes upon perturbation of synaptic genes (e.g., NRXN1, SHANK3), which have then been recapitulated using other differentiation paradigms, further validating the accuracy of synaptic phenotypes detected in hNs generated with this protocol (Pak et al., 2015; Yi et al., 2016). Moreover, most neuronal differentiation paradigms in vitro generate heterogeneous cell types at lower throughput (Chambers et al., 2009) however, this protocol produces relatively homogeneous populations of glutamatergic neurons at large scale, making it uniquely suited for screening applications (Nehme et al., 2018; Tian et al., 2021; Tian et al., 2019). Data from our laboratory and others confirm that hNs begin to show electrophysiological activity around day 21 in vitro displaying spontaneous excitatory post-synaptic currents (sEPSCs) and NMDAR-mediated currents (Meijer et al., 2019; Nehme et al., 2018; Susco et al., 2020). However, it is important to note that at this timepoint synapses and synaptic network are still maturing.
 
 To overcome the limitations of lentiviral titer used to transduce NGN2 and to enhance differentiation efficiency, we used a pair of TALENs to stably introduce a doxycycline-inducible NGN2 cassette (Zhang et al., 2013) into the AAVS1 safe harbor locus of the hPSC line H1 to generate a zeocin-resistant doxycycline-inducible NGN2 hPSC line, referred to as iNGN2-hPSC (Figure 1a), similar to the approach used by Meijer et al., 2019. Upon transfection, cells were selected for geneticin resistance and individual clones were isolated, expanded, re-plated for genomic DNA extraction and PCR analysis of the transgene integration, and further analyzed by G-band karyotyping (Figure 1—figure supplement 1). To generate large-scale neuronal preparations essential for screening applications, we then differentiated the iNGN2-hPSCs into hNs as described (Nehme et al., 2018; Figure 1b).
 
-## Establishment of automated pipelines for high-content human presynaptic phenotyping
+![Figure 1.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig1-v1.jpg)
+
+**Figure 1.:** (a) Schematic of stable integration of a doxycycline-responsive NGN2 (iNGN2) cassette into human pluripotent stem cells (hPSCs). TALENs were used to insert iNGN2 into the AAVS1 safe harbor locus of the PPP1R12C gene. (b) Summary of human-induced neuron (hN) protocol. hPSCs are differentiated into neural progenitor like cells using extrinsic inhibition of BMP, SMAD, and Wnt in combination with doxycycline-driven transient ectopic NGN2 expression. Zeocin is used as a selective agent. Neural progenitor-like cells were then incubated with neurotrophins in addition to the anti-mitotic agent floxuridine. hNs are then maintained in neurobasal medium and neurotrophins. (c) Flowchart of the high-content synaptic screening platform. One day after automated seeding of hNs and hpAs (using a liquid handler, day 5 of hN differentiation), a random plate is selected for assessing plating consistency (Columbus script). On day 18, treatments (shown here as small molecules at 3 µM) are administered in triplicate for 72 hr using a liquid handler; two plates are used as sentinel or reference. On day 21, co-cultures are then stained for synaptic markers using the liquid handler and high-content images are acquired using the Opera Phenix (Perkin Elmer). Data are then processed through CellProfiler and Screener to quantify the number and area of SYNAPSIN1 puncta on MAP2-expressing neurites, the area of MAP2-positive neurites, the number of DAPI-positive nuclei, and the density of SYNAPSIN1 puncta on MAP2-expressing neurites (Z-score). (d) Representative images of hNs co-cultured with hpAs and stained for SYNAPSIN1 (red) and MAP2 (green). Cells are counterstained with DAPI (blue). Scale: 100 pixels. Insets: arrows show SYNAPSIN1 puncta localized on MAP2-positive neurites. (e, f) Acceptance criteria for plating consistency. Plating consistency for each batch is determined using a Columbus script by quantifying detected hN nuclei per well (e) as well as the intra-plate covariance (f) of the randomly selected plate on day 6 after hN differentiation. Circles represented the number of neuronal nuclei detected per well from the plates randomly selected on day 6 (one day after seeding the co-culture). Thresholds for inclusion (red dashed lines) are set as above 4000 detected hN nuclei per well and below 12,000 detected hN nuclei per well (e) and a covariance below 8% across the plate (f). n = 1 x 96 well-plate per Batch which corresponds to 60 wells per 96-well plate per Batch. Error bars are shown as mean +/- SEM. (g) Quantification of the density of SYNAPSIN1 puncta on MAP2 neurites after incubation with SYNAPSIN siRNA versus control conditions. n = 6 wells for each condition; ***p<0.0001, ANOVA with Dunnett’s post hoc test. Error bars are shown as SEM.
+
+![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig1-figsupp1-v1.jpg)
+
+**Figure 1—figure supplement 1.:** (a) Design of the PCR genotyping strategy for validation of stable integration of the iNGN2 cassette in the AAVS1 safe harbor locus of the H1 genome. (b) Cytogenetic analysis performed by Cell Line Genetics on iNGN2-hPSCs demonstrating an apparently normal karyotype 46,XY. (c) Example images (left) and quantification (right) of SYNAPSIN1 on MAP2 co-localized with the presynaptic marker synaptophysin (n = 3 wells, 28 fields). (d) Example images (left) and quantification (right) of SYNAPSIN1 on MAP2 co-localized with the postsynaptic marker PSD-95 (n = 3 wells, 16 fields, >10 puncta/field threshold).
+
+![Figure 1—figure supplement 2.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig1-figsupp2-v1.jpg)
+
+**Figure 1—figure supplement 2.:** (a) One day after seeding cells, a random plate among the batch is selected, stained against MAP2, and counterstained with DAPI. Images are acquired through ImageXpress (Molecular Devices) and uploaded to Columbus (PerkinElmer). DAPI projected images are filtered and the hN nuclei identified based on the intensity, morphology, contrast, area, roundness, and MAP2-positive soma. hN nuclei are then counted and the intra-plate covariance is calculated. Acceptance criteria for inclusion of each batch of human co-cultures are set above 4000 hN nuclei detected, and a covariance below 8% as depicted by the gray dashed lines (also shown in Figure 1). (b) Columbus script for assessment of the number of neuronal DAPI-positive nuclei.
+
+![Figure 1—figure supplement 3.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig1-figsupp3-v1.jpg)
+
+**Figure 1—figure supplement 3.:** For each acquired field, 5–8 stacks of MAP2, SYNAPSIN1, and DAPI channels are projected in a single plane before segmentation. A colocalization module then assigns the relationship between the identified SYNAPSIN1 puncta contained within or partly touching the MAP2 neurite objects. The area covered by MAP2 neurites and the number of SYNAPSIN1 puncta on MAP2 neurites from each field are then exported to a *.csv spreadsheet.
+
+![Figure 1—figure supplement 4.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig1-figsupp4-v1.jpg)
+
+**Figure 1—figure supplement 4.:** (a) Schematic of siRNA delivery. hN + hpA co-cultures were untreated or incubated on day 18 with SYNAPSIN1 or control siRNA (1 µM) for 72 hr, stained and processed through the synaptic assay. Scale bar = 100 pixel. (b) Examples of output from CellProfiler showing overlay of SYNAPSIN1 puncta (red) on MAP2-expressing neurites (green) from untreated and SYNAPSIN1 siRNA-treated conditions. (c) Histograms showing the MAP2-positive neurite coverage and the number of DAPI-positive nuclei after incubation with SYNAPSIN1 siRNA versus control conditions. n = 6 wells for each condition; *p<0.05, ANOVA with Dunnett’s post hoc test. (d) Cumulative distribution of the diameter of SYNAPSIN1 puncta.
+
+![Figure 1—figure supplement 5.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig1-figsupp5-v1.jpg)
+
+**Figure 1—figure supplement 5.:** CellProfiler *.csv files (field level) are uploaded with a Genedata parser and filtered through three quality control steps: (i) for each individual field (cross) the area covered by MAP2 must fall within ± 1 standard deviation (σ) to the intra-batch mean (µ) MAP2 coverage (blue crosses represent accepted fields shown within red dashed lines; gray crosses indicated fields that are rejected), (ii) exclusion of the well if ≤4 fields remain following the first quality control step; (iii) exclusion of conditions with one well remaining following the well-level quality control. Data are then imported into Genedata Screener and pattern correction algorithms are leveraged for calculation of Z-score values of the density of SYNAPSIN1 puncta on MAP2 neurites for each condition tested.
+
+### Establishment of automated pipelines for high-content human presynaptic phenotyping
 
 We next developed a novel and scalable platform for automated quantification of presynaptic puncta in hNs co-cultured with human primary astrocytes (hpAs, ScienCell) (Figure 1c). First, because the number and distribution of synapses in a network is critically dependent upon neuronal density (Cullen et al., 2010), we used an automated liquid handling system (Personal Pipettor, Apricot Designs) to maximize pipetting precision and accuracy and reliably dispense batches of post-mitotic hNs and hpAs across the 60 inner wells of each 96-well plate. Upon hN co-culture with hpAs, we observed a dense synaptic network (Figure 1d). We specifically focused on the presynaptic marker SYNAPSIN1, which is crucial for maintenance, translocation, and exocytosis of synaptic vesicle pools, and the cytoskeletal protein MAP2 (microtubule-associated protein 2), which is primarily enriched in perikarya and dendrites (Caceres et al., 1984) in addition to DAPI-expressing nuclei. We then quantified presynaptic puncta, defined as SYNAPSIN1 puncta assembled on MAP2-expressing neuronal dendrites, which are (1) robustly captured in our human cellular models; (2) essential for normal neuronal development with perturbations implicated in disease (Südhof, 2017; Waites and Garner, 2011); (3) a prerequisite for the assembly of postsynaptic machinery (Friedman et al., 2000; Rohrbough et al., 2007; Sanes and Lichtman, 2001); and (4) successfully measured in multiple synaptic screens performed in mouse (Hempel et al., 2011; Spicer et al., 2018), as well as in small-scale synaptic measurements performed using human cellular systems (Chanda et al., 2019; Pak et al., 2015; Yi et al., 2016). SYNAPSIN1 appeared in a discrete punctate staining pattern localized on and along the clearly defined MAP2-expressing neurites (Figure 1d). To enhance the resolution of presynaptic puncta and reduce nonspecific background for high-content imaging, we included glycine and TrueBlack Lipofuscin, key reagents for unmasking epitopes and quenching autofluorescence in our immunocytochemistry protocol.
 
@@ -62,31 +86,87 @@ Third, to convert the field-level analysis generated by ALPAQAS to well- or cond
 
 Collectively, these customized protocols and analysis pipelines establish a novel platform for automated quantification of presynaptic density of hN + hpA co-cultures.
 
-## Primary screening results for 376 small molecules followed by secondary validation reveal six potent small molecules increasing presynaptic density
+### Primary screening results for 376 small molecules followed by secondary validation reveal six potent small molecules increasing presynaptic density
 
 To validate the robustness of our platform and uncover modulators of human synaptogenesis, we next assessed the impact of 376 small molecules from a highly selective inhibitor library (SelleckChem, L3500, Supplementary file 1). Here, small molecules were not selected based on known roles in neuronal or synaptic development, but instead from structurally diverse classes of inhibitors targeting kinases, chromatin modifiers, and cytoskeletal signaling pathways, among others (Supplementary file 1, Figure 2—figure supplement 1). Human co-cultures (hNs + hpAs) were treated with small molecules at a concentration of 3 µM in triplicate for 72 hr starting on day 18 of hN differentiation (Figure 2a). Importantly, 92.94% of the control and treated wells had a Z-score for synaptic density between –2 and +2, underscoring the reliability and robustness of our automated high-content synaptic screening platform (Figure 2—figure supplement 1). Thirteen small molecules (3.46% of the library) did not meet the above quality control requirements and seven (1.86% of the library) reduced the density of SYNAPSIN1 puncta on MAP2 neurites by a Z-score ≤–3 and reduced the area covered by MAP2-positive neurites by a Z-score ≤ –2 (Figure 2a and Figure 2—figure supplement 1); as expected, these small molecules were known to induce apoptosis or catalytic process of autophagy (Boccadoro et al., 2005; Piva et al., 2008; Reddy et al., 2011). Representative examples of the effects of individual small molecules on presynaptic density are shown in Figure 2b.
 
+![Figure 2.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig2-v1.jpg)
+
+**Figure 2.:** (a) Z-score values for the density of SYNAPSIN1 on MAP2-expressing neurites for hN + hpA co-cultures incubated with small molecules in triplicate at 3 µM for 72 hr starting on day 18 of neuronal differentiation (each circle represents the small molecule level aggregate of the replicates). The effects of each individual small molecule were assessed using our in silico pipelines. Small molecules that increased presynaptic density and were selected for further validation are indicated by colored circles. Those in purple are anticarcinogens that reduced presynaptic density and were not selected for further validation. (b) Representative immunofluorescence images and CellProfiler output images (field-level) of human co-cultures treated with either 0.1% DMSO, (+)-JQ1, BI-D1870, I-BET151, Rigosertib, or GSK J4 HCl. Scale bar = 1 µm. Note the increase in SYNAPSIN1 puncta on MAP2-expressing neurites following (+)-JQ1, BI-D1870, and I-BET151 compared to 0.1% DMSO control, and the decrease in SYNPASIN1 puncta following treatment with Rigosertib and GSK J4 HCl.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig2-figsupp1-v1.jpg)
+
+**Figure 2—figure supplement 1.:** (a) Number of small molecules per pathway used in the primary screen. (b, c) Small molecules were screened at 3 µM in triplicate for 72 hr. 13 small molecules did not meet quality control requirements. 92.94% of the control and treated wells had a Z-score for synaptic density between –2 and +2 as depicted by the red dashed lines (b). Values are presented as Z-score of the density of SYNAPSIN1 puncta on MAP2-positive neurites (b, each circle represents either a DMSO or a small molecule treated well) or the area covered by MAP2-expressing neurites (c, each circle represents the aggregate value of the triplicate). Small molecules decreasing the area covered by MAP2-positive neurites are indicated by circles filled in red, and one small molecule increasing the area covered by MAP2-positive neurites is indicated by circle filled in green.
+
 To further validate the top hit classes that increased presynaptic density in our primary screen, we executed secondary dose–response assays with newly purchased reagents. Specifically, we selected three heat-shock protein 90 inhibitors (Luminespib, Ganestespib, and Tanespimycin), three BET inhibitors (I-BET151 and (+)-JQ1 included in the primary screen in addition to Birabresib, which was added to expand the number of independent BET inhibitors queried), two phosphoinositide 3-kinase inhibitors (VS-5584 and TG100-15), two histone deacetylase inhibitors (Tubacin and Belinostat), two HMG CoA reductase inhibitors (Fluvastatin and Lovastatin), an S6 ribosome inhibitor and a ROCK1/ROCK2 inhibitor (BI-D1870 and GSK429286A, respectively), a histamine H1 and an opioid receptor antagonist (Loratadine and Naltrexone, respectively), and a ligand of ubiquitin E3 (Lenalidomide) (Figure 2a and b), for a total of 17 small molecules. We then performed dose–response assays in hN + hpA co-cultures using the automated HP D300e Digital Dispenser (HP, FOL57A) to reliably and randomly dispense at increasing concentrations, nanoliters or microliters of the freshly dissolved small molecules across the 60 inner wells of each 96-well plate, and subsequently quantified synaptic density using our previously described ALPAQAS pipelines (Figure 3a).
+
+![Figure 3.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig3-v1.jpg)
+
+**Figure 3.:** (a) Workflow for the dose–response assay. hN + hpA co-cultures were treated on day 18 with selected small molecules at various concentrations or 0.1% DMSO for 72 hr, stained and processed through the synaptic assay on day 21. Scale bar = 100 pixel. (b–d) Concentration responses for three small molecules (two BET inhibitors [(+)-JQ1, Birabresib] and VS-5584) increasing human presynaptic density (left). The impact on the area covered by MAP2-positive neurites (middle) and toxicity (number of DAPI-positive nuclei; right) are also shown. Data are quantified by percentage of intra-plate control (0.1% DMSO) represented as mean values ± SEM, n = 3 biological replicates, n = 3 technical replicates. *p<0.05, **p<0.01, ***p<0.001; one-way ANOVA with Dunnett’s multiple comparisons test.
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig3-figsupp1-v1.jpg)
+
+**Figure 3—figure supplement 1.:** Human co-cultures were treated on day 18 with 0.1% DMSO or the 17 selected small molecules at various concentrations for 72 hr, stained and processed through the synaptic assay. Dose–response curves show the density of SYNAPSIN1 puncta on MAP2-expressing neurites (same data in histogram format shown in Figure 3—figure supplement 2). Green dots represent the optimal concentration of the chosen small molecules. EC(50) and curves were calculated and drawn using PRISM software. Data are quantified by percentage of intra-plate control (0.1% DMSO) represented as mean values ± SEM, n = 3 biological replicates, n = 3 technical replicates.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig3-figsupp2-v1.jpg)
+
+**Figure 3—figure supplement 2.:** Human co-cultures were treated on day 18 with 0.1% DMSO or the 17 selected small molecules at various concentrations for 72 hr, stained and processed through the synaptic assay. Histograms show the density of SYNAPSIN1 puncta on MAP2-expressing neurites (same data in dose–response curve format shown in Figure 3—figure supplement 1 and for (+)-JQ1, Birabresib, and VS-5584 in Figure 3; all data are included together here for comparison). Data are quantified by percentage of intra-plate control (0.1% DMSO) represented as mean values ± SEM, n = 3 biological replicates, n = 3 technical replicates. *p<0.05; **p<0.01, ***p<0.001; one-way ANOVA with Dunnett’s multiple comparisons test.
+
+![Figure 3—figure supplement 3.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig3-figsupp3-v1.jpg)
+
+**Figure 3—figure supplement 3.:** Human co-cultures were treated on day 18 with 0.1% DMSO or the 17 selected small molecules at various concentrations for 72 hr, stained and processed through the synaptic assay. Histograms show the area covered by MAP2 (same data for (+)-JQ1, Birabresib, and VS-5584 shown in Figure 3; all data are included together here for comparison). Each circle represents the value of one replicate. Data are quantified by percentage of intra-plate control (0.1% DMSO) represented as mean values ± SEM, n = 3 biological replicates, n = 3 technical replicates. *p<0.05, **p<0.01, ***p<0.001; one-way ANOVA with Dunnett’s multiple comparisons test.
+
+![Figure 3—figure supplement 4.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig3-figsupp4-v1.jpg)
+
+**Figure 3—figure supplement 4.:** Human co-cultures were treated on day 18 with 0.1% DMSO or the 17 selected small molecules at various concentrations for 72 hours, stained and processed through the synaptic assay. Histograms show the number of DAPI-positive nuclei (same data for (+)-JQ1, Birabresib, and VS-5584 shown in Figure 3; all data are included together here for comparison). Each circle represents the value of one replicate. Data are quantified by percentage of intra-plate control (0.1% DMSO) represented as mean values ± SEM, n = 3 biological replicates, n = 3 technical replicates. *p<0.05, **p<0.01, ***p<0.001; one-way ANOVA with Dunnett’s multiple comparisons test.
+
+![Figure 3—figure supplement 5.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig3-figsupp5-v1.jpg)
+
+**Figure 3—figure supplement 5.:** hNs were generated using an independent cell line (iNgn2-DS2U human iPSCs), co-cultured with hpAs, treated on day 18 with 0.1% DMSO or selected small molecules at the optimal concentrations for 72 hr, stained and processed through the synaptic assay. Histograms show the density of SYNAPSIN1 puncta on MAP2-positive neurons (left), the area covered by MAP2-expressing neurites (middle), and the number of DAPI-positive nuclei (right). Data are quantified by percentage of intra-plate control (0.1% DMSO) represented as mean values ± SEM, n = 2 biological replicates, n = 8 technical replicates. *p<0.05, **p<0.01, ***p<0.001; one-way ANOVA with Dunnett’s multiple comparisons test. Scale bar = 100 pixel.
 
 We found that 6 out of 17 small molecules tested exhibited a significant dose-dependent increase in presynaptic density compared to DMSO-treated controls (Figure 3 and Figure 3—figure supplements 1 and 2). Notably, all three BET inhibitors ((+)-JQ1, Birabresib, and I-BET151) increased presynaptic density with similar magnitudes of effect (Figure 3b and c and Figure 3—figure supplements 1 and 2). BI-D1870 and GSK429286A also elicited a significant dose–response, indicating that the synaptic connectivity in hNs is modulated through multiple intracellular pathways (Figure 3—figure supplements 1 and 2). Indeed, previous studies have shown that ROCK1/ROCK2 inhibition can enhance synapse formation in rodent models (Swanger et al., 2015), consistent with our results from GSK429286A treatment of hN + hpA co-cultures. Finally, VS-5584, an ATP-competitive Pi3K inhibitor with equivalent potency against all human isoforms (α, β, γ, and δ), drove a concentration-dependent increase in presynaptic density compared to the DMSO-treated wells, but not TG100-15, a selective inhibitor of the γ and δ isoforms (Figure 3d and Figure 3—figure supplement 1), consistent with the preferential immune-cell expression of Pi3Kγ and δ versus the ubiquitous expression patterns of Pi3Kα and β (Winkler et al., 2013). The six validated small molecules showed minimal to no toxicity or effect on neurite outgrowth at lower doses, as assessed by the number of DAPI-positive nuclei detected and the area covered by MAP2-positive neurites (Figure 3b–d and Figure 3—figure supplements 3 and 4).
 
 For subsequent experiments, we determined the optimal dosage of each small molecule in hN + hpA co-cultures based upon (1) a significant increase in synaptic connectivity compared to the DMSO-treated wells; (2) a concentration higher than the EC (50); (3) minimal impact on the area covered by MAP2-positive neurites; and (4) minimal or no toxicity (Figure 3 and Figure 3—figure supplements 1–4). We selected 0.5 µM for (+)-JQ1, 1 µM for Birabresib, 3 µM for I-BET151, VS-5584, and BI-D1870, and 5 µM for GSK429286A as effective concentrations to increase human presynaptic density in hN + hpA co-cultures. We then derived hNs from an independent hPSC line with the same stable, inducible AAVS1 NGN2 integration strategy described above, and confirmed that four out of six small molecules, including all three BET inhibitors, increased presynaptic density in hN + hpA co-cultures at these specific concentrations (Figure 3—figure supplement 5), further validating our previous findings and indicating that the effects of the selected small molecules were generally reproducible across cell lines. Collectively, these analyses highlight the robustness and the sensitivity of our platform to detect modulators of human synaptogenesis.
 
-## Astrocytes are key regulators of human synapse assembly in vitro and response to small molecules
+### Astrocytes are key regulators of human synapse assembly in vitro and response to small molecules
 
 Astrocytes are known to play critical roles in the regulation of neuronal network development (Chung et al., 2015; Perez-Catalan et al., 2021), including the enhancement of presynaptic function (Ullian et al., 2001), and we therefore assessed the necessity of hpAs in mediating the effects of the identified small molecules. This was particularly relevant to assess, given that astrocytes are not standardly included in hN screening strategies. Specifically, we tested the impact of the six validated small molecules described above on presynaptic density in the absence of hpAs. hN monocultures were plated, treated, and analyzed using our established pipelines (Figure 4a). While hN monocultures passed all quality control and thresholding criteria (Figure 4—figure supplement 1), none of the six small molecules elicited a significant increase in presynaptic density in this condition (Figure 4b). As expected, the area covered by MAP2-positive neurites and the number of DAPI-positive nuclei remained unchanged by small molecule treatment (Figure 4c and d), paralleling the hN + hpA co-culture condition (Figure 3). Importantly, we performed experiments with and without hpAs in parallel using experiments with hpAs as a positive control for experiments performed without hpAs. Small molecule treatment also did not significantly affect the level of SYNAPSIN1 protein expression in either the hN monoculture or hN + hpA co-culture conditions as assessed by western blot analysis (Figure 4e and f), indicating that the differences observed between hN monocultures and hN + hpA co-cultures after small molecule addition were more likely due to changes in SYNAPSIN1 protein localization as opposed to overall protein abundance.
 
+![Figure 4.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig4-v1.jpg)
+
+**Figure 4.:** (a) Workflow for small molecule validation in the absence of hpAs. Scale bar = 100 pixel. (b–d) In the absence of hpAs, none of the selected small molecules affected SYNAPSIN1 density of hNs, in contrast to the co-culture condition analyzed in parallel. The area covered by MAP2-positive neurites and cell viability was also not impacted as compared to intra-plate DMSO controls. Error bars are shown as mean +/- SEM. (e) Schematic of the preparation of the immunoblot samples. (f) Representative images of immunoblots and quantification of SYNAPSIN1 normalized to GAPDH and presented as a percentage of DMSO control in both hN alone and hN + hpA co-culture conditions. Note that SYNAPSIN1 protein expression levels were not impacted in any condition. n = 3 biological replicates (f). Error bars are shown as mean +/- SEM.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig4-figsupp1-v1.jpg)
+
+**Figure 4—figure supplement 1.:** (a) Representative image of hN + hpA co-culture and hN alone culture fixed 1 d after plating, stained for MAP2 and counterstained with DAPI. In red, hN DAPI-positive nuclei selected through the Columbus script. Scale = 50 µm. (b) Number of DAPI-positive hN nuclei detected per well and intra-plate covariance for each batch used for the dose–response assays, the small molecule validation, and the hN alone experiments. Acceptance criteria for inclusion of each batch of human co-cultures are set above 4000 hN nuclei detected, and a covariance below 8% as depicted by the gray dashed lines. n = 1 x 96 well-plate per Batch which corresponds to 60 wells per 96-well plate per Batch. Error bars are shown as mean +/- SEM.
+
 The addition of hpAs also had a significant effect on synapse development in the absence of small molecules, including a significant increase in SYNAPSIN1 presynaptic density as well as in the size of individual SYNAPSIN1 puncta with a modest reduction in the area covered by MAP2-positive neurites (Figure 5a–e). Indeed, the addition of hpAs roughly doubled both the density and size of SYNAPSIN1 puncta on MAP2-positive neurites compared with hNs alone (Figure 5c and d). Collectively, our results indicate that hNs can form quantifiable presynaptic puncta that can be reliably captured by our platform in the absence of astrocytes. However, hpAs contributed to the assembly or localization of presynaptic machinery, underscoring the relevance of astrocytes in human synaptic screening applications. hpAs were therefore included in all subsequent experiments.
 
-## Power calculations inform on study design
+![Figure 5.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig5-v1.jpg)
+
+**Figure 5.:** (a, b) Representative immunofluorescence and CellProfiler output images (field-level) of hN monocultures (a) and hN + hpA co-cultures (b). Scale bar = 1 µm. (c–e) Measurements comparing the density of SYNAPSIN1 puncta on MAP2-positive neurites (c), the area covered by individual SYNAPSIN1 puncta (d) and the area covered by MAP2-positive neurites (e) between hN monocultures and hN + hpA co-cultures. Data are represented as mean values ± SEM, n = 3 biological replicates, n = 8 technical replicates (c–e); n > 1000 fields and n > 50,000 SYNAPSIN1 puncta for each condition (c–e). ***p<0.001; Kolmogorov–Smirnov unpaired t-test. (f, g) Power calculations for hN + hPA co-culture (f) and hN monoculture (g) validation experiments at the well level for the hypothesis ‘greater than.’ Cohen’s d and the number of wells analyzed for each experiment following 0.5 uM (+)-JQ1, 3 uM I-BET151, and 1 uM Birabresib treatment are indicated by the dotted lines.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig5-figsupp1-v1.jpg)
+
+**Figure 5—figure supplement 1.:** (a–d) Graphs showing Cohen’s d on the x-axis and different sample sizes on the y-axis, for the primary screen with a hypothesis of ‘greater than’ (a), the primary screen with a hypothesis of ‘less than’ (b), hN + hpA co-cultures at the field level with the hypothesis ‘greater than’ (c), and hN monocultures at the field level with the hypothesis ‘greater than’ (d). Cohen’s d and the number of samples analyzed for each experiment following 0.5 uM (+)-JQ1, 3 uM I-BET151 and 1 uM Birabresib treatment are indicated by the dotted lines.
+
+### Power calculations inform on study design
 
 To more precisely define the power of our assay and gain additional insight into study design, we calculated effect size (Cohen’s d) for our primary screen overall as well as for each small molecule tested, for our hN + hpA co-culture validation experiments, and for our hN monoculture validation experiments (Figure 5f and g, Figure 5—figure supplement 1, Supplementary file 2). For the primary screen, we obtained a Cohen’s d of –0.18, as individual small molecules increased as well as decreased presynaptic density (Figure 5—figure supplement 1, Supplementary file 2). Data for each small molecule included in the primary screen is shown in Supplementary file 2. Notably, both (+)-JQ1 and I-BET151 had very large effect sizes in the primary screen, with a Cohen’s d of 2.914 for (+)-JQ1 and 3.710 for I-BET151 (Supplementary file 2). Consistent with the results of the primary screen, we also noted large effect sizes for each BETi tested in our hN + hpA co-culture validation experiments (Figure 5f and g, Figure 5—figure supplement 1, Supplementary file 2). Here, effect sizes were sufficiently large that the number of replicate fields (n = 47–80) and wells (n = 6–9) analyzed per small molecule could be scaled down in future experiments (Figure 5f and g, Figure 5—figure supplement 1, Supplementary file 2). For our hN monoculture validation experiments, we noted effect sizes in the small to medium range (Figure 5f and g, Figure 5—figure supplement 1, Supplementary file 2). Here, we scaled up the number of fields (n = 404–417) and wells (n = 52) analyzed per small molecule, which was sufficient to achieve 95% power for detecting the small and medium effect sizes of Birabresib and I-BET151 (one-sided power = greater; Figure 5f and g, Figure 5—figure supplement 1, Supplementary file 2). These analyses confirmed that we were well powered to detect the impacts of BETi in both the hN co-culture and monoculture assays; however, the hN monoculture condition required substantially greater scale given the reduced effect sizes. Overall, in order to achieve 95% power (one-sided) to detect small effect sizes (Cohen’s d = 0.2), experiments would require around n = 270 replicates, while medium effect sizes (Cohen’s d = 0.5) would require around n = 43 replicates, and large effect sizes (Cohen’s d = 0.8) would require around n = 17 replicates. In future experiments, small molecules with effect sizes similar to those of the BET inhibitors in the co-culture condition could be readily detected with modest experimental scale as noted above; in order to detect small effect sizes, experiments may require hundreds of replicates.
 
-## Multiple BET inhibitors enhance synaptic gene expression
+### Multiple BET inhibitors enhance synaptic gene expression
 
 Given that BET inhibitors were the most prominent hit class identified in our small molecule screen, with three independent BET inhibitors increasing presynaptic density in two independent hPSC lines, we sought to confirm a role for BET proteins in human synaptic development and further validate the results of our synaptic assay. The BET family of chromatin readers, which includes BRD2, BRD3, BRD4, and BRDT, bind acetylated lysine residues on histone proteins as well as transcription factors to mediate gene expression. Through unbiased screening, (+)-JQ1 was identified as a positive modulator of human neurogenesis (Li et al., 2016). However, in adult mice, BET inhibition through (+)-JQ1 was shown to reduce synaptic gene expression and impair memory consolidation (Korb et al., 2015), while BET inhibition through I-BET858 in mouse primary neurons reportedly led to decreased expression of neuronal differentiation and synaptic genes (Sullivan et al., 2015). Importantly, region-specific differences in response to (+)-JQ1 have been identified in the rodent brain, particularly in the context of dendritic spine density, suggesting that brain cell type may be a major determining factor in the expression of these phenotypes (Wang et al., 2021b). Moreover, a recent study found sex divergent effects of Brd4 on cellular and transcriptional phenotypes in both human and mouse (Kfoury et al., 2021), further supporting the hypothesis that the impacts of BET inhibition are highly context dependent.
 
 We therefore performed global transcriptional analyses on both (+)-JQ1 and Birabresib-treated hN + hpA co-cultures compared with DMSO-treated controls (Figure 6a) to independently assess their roles in synaptic development. (+)-JQ1, Birabresib, or DMSO was added on day 18 in vitro for 72 hr, paralleling the approach used in our small molecule screen. Applying an adjusted p-value cut-off of 0.05 and log2 fold change cut-offs of ≤–1 and ≥ 1, we identified a comparable number of significantly differentially expressed genes (DEGs) after (+)-JQ1 and Birabresib treatment compared to DMSO control (Figure 6b and c, Supplementary files 3 and 4). A majority of DEGs were downregulated after BET inhibition (Figure 6b and c), consistent with the known roles of BET proteins in transcriptional activation, and were also shared between the (+)-JQ1 and Birabresib treatment conditions (n = 2368; Figure 6d). We also observed strong positive correlation in the magnitudes of effect of (+)-JQ1 and Birabresib treatment as attested by the Pearson’s r score of 0.9404 (Figure 6e). Given that both BET inhibitors increased presynaptic density (Figure 3b and c), we focused on the set of DEGs that were shared between (+)-JQ1 and Birabresib treatment conditions for the remainder of our transcriptional analyses. Using ingenuity pathway analysis (IPA), we confirmed that BRD4 (p=1.61 × 10–17), (+)-JQ1 (p=0.000206), and Birabresib (p=4.59 × 10–18) were all strongly predicted to be upstream regulators of the shared DEGs (Figure 6—figure supplement 1). Signaling pathways such as ‘DNA methylation and transcriptional repression’ and ‘axonal guidance’ were enriched in the upregulated DEGs, while signaling pathways such as ‘wound healing’ and ‘neuroinflammation’ enriched in the downregulated DEGs (Figure 6f). We then leveraged SynGO (Koopmans et al., 2019) to specifically analyze synaptic ontology terms, focusing on genes upregulated in both the (+)- JQ1 and Birabresib transcriptional datasets (Figure 6g and h, Supplementary file 5). We found significant enrichment for the terms ‘integral component of postsynaptic membrane’ and ‘postsynaptic membrane’ with modest but significant enrichment for additional presynaptic terms (Figure 6g and h, Supplementary file 5) consistent with a role for BET proteins in the regulation of pre- and postsynaptic genes. Examples of individual pre- and postsynaptic genes upregulated following BET inhibition include the presynaptic cell adhesion molecule Neurexin 3 (NRXN3), the synaptic vesicle gene Amphiphysin (AMPH), the transmembrane Eph receptor ligand Ephrin-B2 (EFNB2) involved in AMPAR stabilization, and the postsynaptic scaffolding factors BAR/IMD Domain Containing Adaptor Protein 2 (BAIAP2) and Homer Scaffold Protein 1 (HOMER1) (Figure 6i). Indeed, (+)-JQ1 and Birabresib treatment each roughly doubled the expression of these pre- and postsynaptic genes. Additionally, western blot analysis revealed that both (+)-JQ1 and Birabresib significantly increased protein expression levels of the postsynaptic scaffolding factors BAIAP2 and Homer1 compared with DMSO-treated control (Figure 6j), paralleling the transcript-level changes.
+
+![Figure 6.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig6-v1.jpg)
+
+**Figure 6.:** (a) Schematic of mRNA-seq experiment using 3–6 replicates per treatment condition. hN + hpA co-cultures were treated with 0.1% DMSO, 0.5 µM (+)-JQ1 or 1 µM Birabresib for 72 hr prior to harvesting. (b, c) Volcano plots for (+)-JQ1 versus DMSO control (b) and Birabresib versus DMSO control (c). Log2 fold change is shown on the x-axis, with the -log10 of the adjusted p-value shown on the y-axis. Positive fold change reflects an increase in the treatment condition relative to DMSO control. Numbers of significantly differentially expressed genes (DEGs) are shown for each condition. (d) Overlap (shown as number of genes) between DEGs identified with (+)-JQ1 treatment (blue) and DEGs identified with Birabresib treatment (green). (e) Scatterplot of the fold change read counts of the genes upregulated by (+)-JQ1 and Birabresib. Note the strong positive Pearson’s r (94%) correlation between transcripts upregulated by (+)-JQ1 and Birabresib. Select gene examples are highlighted in red. (f) Select canonical pathways identified by IPA for DEGs upregulated in both (+)-JQ1 and Birabresib treatment conditions (top) or downregulated in both (+)-JQ1 and Birabresib treatment conditions (bottom). The x-axis shows -log10 of the p-value for each pathway analysis term. (g) SynGO analysis showing the top 5 significantly enriched cellular component and biological process ontology terms identified using all genes upregulated by (+)-JQ1 and Birabresib. The x-axis shows -log10 of the p-value for each ontology term; the top two terms also met a<1% FDR threshold (h) SynGO analysis sunburst representation showing gene counts of the cellular components identified using all genes upregulated by (+)-JQ1 and Birabresib. (i) Graphs of transcript expression values for pre- and post-synaptic genes. Significance was calculated by Benjamini–Hochberg adjusted Wald test as part of the DEseq2 RNA-seq experiment. n=3 biological replicates. (j) Western blot analysis of BAIAP2 and Homer1 protein expression levels following treatment with DMSO, (+)-JQ1, or Birabresib (n = 4 biological replicates). Top, quantification (shown as % of DMSO control); bottom, example blots. For all figure panels, significance is indicated by *p<0.05, **p<0.01, ***p<0.001 relative to controls.
+
+![Figure 6—figure supplement 1.](https://cdn.elifesciences.org/articles/80168/elife-80168-fig6-figsupp1-v1.jpg)
+
+**Figure 6—figure supplement 1.:** (a) DEGs shared between (+)-JQ1 and Birabresib treatment conditions were used as input into ingenuity pathway analysis, and the activation z-scores and p-values of the overlap were quantified. Blue indicates a negative activation z-score (BRD4), and orange indicates a positive activation z-score ((+)-JQ1 and Birabresib). (b) Graphs of transcript expression values for astrocyte-secreted and pro-inflammatory genes in (+)-JQ1 or Birabresib conditions compared to 0.1% DMSO controls. Significance was calculated by Benjamini–Hochberg adjusted Wald test as part of the DEseq2 RNA-seq experiment. ***p<0.001. n>3 biological replicates.
 
 Consistent with the pathway analyses, we also observed modulation of the expression of several astrocyte-secreted factors including upregulation of the anti-inflammatory factor Interleukin 11 (IL11), downregulation of the pro-inflammatory factor Interleukin 6 (IL6), and downregulation of the synapse disassembly factor Secreted Protein Acidic And Cysteine Rich (SPARC) (Figure 6—figure supplement 1). Combined with downregulation of Caspase 1 (CASP1) and Gasdermin D (GSDMD) (Figure 6—figure supplement 1), these results point to a general anti-inflammatory response following BET inhibition. Indeed, CASP1, GSDMD, and IL6 have all previously been shown to be downregulated by (+)-JQ1 treatment, consistent with the known role of BET proteins in promotion of the inflammatory response (Wang et al., 2021b; Zhou et al., 2019). Importantly, changes in gene transcription were again highly concordant between both (+)-JQ1 and Birabresib treatment conditions, with similar magnitudes of effect (Figure 6—figure supplement 1).
 
@@ -110,78 +190,312 @@ There are also several limitations to our approach: (1) our platform was specifi
 
 ## Materials and methods
 
-## Stem cell culture
+**Key resources table**
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>WA01</td>
+      <td>WiCell Research Institute</td>
+      <td>H1</td>
+      <td>Thomson et al., 1998</td>
+    </tr>
+    <tr>
+      <td>cell line (Homo sapiens)</td>
+      <td>Primary astrocytes</td>
+      <td>ScienCell Research Laboratories</td>
+      <td>Cat#1800</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>transfected construct (Homo sapiens)</td>
+      <td>SYNAPSIN1 and control siRNA</td>
+      <td>Accell Dharmacon</td>
+      <td>Cat#A-12362-16-0005 and Cat#K-005000-R1-01</td>
+      <td>transfected construct (Homo sapiens)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-human SYNAPSIN1 (Rabbit polyclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#AB1543 RRID: AB_2200400</td>
+      <td>IF (1:1000) WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-human MAP2 (Chicken polyclonal)</td>
+      <td>Abcam</td>
+      <td>Cat#ab5392 RRID: AB_2138153</td>
+      <td>IF (1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-human SYNAPTOPHYSIN (Mouse monoclonal)</td>
+      <td>Cell Signaling Technology</td>
+      <td>Cat#9020 RRID: AB_2631095</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-human PSD95 (Mouse monoclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#MA1-046 RRID: AB_2092361</td>
+      <td>IF (1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-human GAPDH (Mouse monoclonal)</td>
+      <td>Millipore</td>
+      <td>Cat#MAB374 RRID: AB_2107445</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-human HOMER (Rabbit polyclonal)</td>
+      <td>Synaptic Systems</td>
+      <td>Cat#160003 RRID: AB_887730</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-human BAIAP2 (Rabbit polyclonal)</td>
+      <td>Thermo Fisher Scientific</td>
+      <td>Cat#PA5-30386 RRID: AB_2547860</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>antibody</td>
+      <td>Anti-human COFILIN</td>
+      <td>Abcam</td>
+      <td>Cat#ab42824 RRID: AB_879739</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>recombinant DNA reagent</td>
+      <td>pAAVS1-iNGN2-Zeo (plasmid)</td>
+      <td>This study</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Forward NGN2</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>AGGAAATGGGGGTGTGTCAC</td>
+    </tr>
+    <tr>
+      <td>sequence-based reagent</td>
+      <td>Reverse NGN2</td>
+      <td>This study</td>
+      <td>PCR primers</td>
+      <td>GAGCTCCTCTGGCGATTCTC</td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>DNeasy Blood and tissue kit</td>
+      <td>Qiagen</td>
+      <td>Cat#695004</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>RLTplus Lysis buffer</td>
+      <td>Qiagen</td>
+      <td>Cat#1053393</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>commercial assay or kit</td>
+      <td>RNeasy micro/mini kit</td>
+      <td>Qiagen</td>
+      <td>Cat#74034</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Geneticin</td>
+      <td>Life Technologies</td>
+      <td>Cat#10131035</td>
+      <td>50 µg.mL–1</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>SB431542</td>
+      <td>Tocris</td>
+      <td>Cat#1614</td>
+      <td>10 µM; 5 µM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>XAV939</td>
+      <td>Stemgent</td>
+      <td>Cat#04–00046</td>
+      <td>2 µM; 1 µM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>LDN-193189</td>
+      <td>Stemgent</td>
+      <td>Cat#04–0074</td>
+      <td>100 nM; 50 nM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Doxycycline hyclate</td>
+      <td>SIgma</td>
+      <td>Cat#D9891</td>
+      <td>2 µg.mL–1</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Y27632</td>
+      <td>Stemgent</td>
+      <td>Cat#04–0012</td>
+      <td>5 mM</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Zeocin</td>
+      <td>Invitrogen</td>
+      <td>Cat#46–059</td>
+      <td>1 µg.mL–1</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>BDNF</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#248-BD/CF</td>
+      <td>10 ng.mL–1</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>CTNF</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#257-NT-CF</td>
+      <td>10 ng.mL–1</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>GDNF</td>
+      <td>R&amp;D Systems</td>
+      <td>Cat#212-GD/CF</td>
+      <td>10 ng.mL–1</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Floxuridine</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat#F0503-100MG</td>
+      <td>10 µg.mL–1</td>
+    </tr>
+    <tr>
+      <td>chemical compound, drug</td>
+      <td>Compound library</td>
+      <td>SelleckChem</td>
+      <td>L3500</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>Columbus Acapella</td>
+      <td>Perkin Elmer</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>software, algorithm</td>
+      <td>CellProfiler</td>
+      <td>The Broad Institute</td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Stem cell culture
 
 The XY human ESC line WA01 (H1) and the XY human iPSC line DS2U were commercially obtained from WiCell Research Institute (Thomson et al., 1998; Weick et al., 2013; https://www.wicell.org/). Stem cell culture was carried out as previously described (Hazelbaker et al., 2020; Hazelbaker et al., 2017). In brief, stem cells were grown and maintained in StemFlex medium (Gibco, A3349401) on geltrex precoated plates (Life Technologies, A1413301) under standard conditions (37°C, 5% CO2). Cells were passaged using TrypLE Express (Life Technologies, 12604021). All cell lines underwent QC testing to confirm normal karyotypes, absence of mycoplasma, expression of pluripotency markers, and tri-lineage potential. G-band karyotyping analysis was performed by Cell Line Genetics.
 
-## Generation of inducible NGN2 system
+### Generation of inducible NGN2 system
 
 TALENs (AAVS1-TALEN-L and AAVS1-TALEN-R; Addgene, 59025/59026; González et al., 2014) were used to target the first intron of the constitutively expressed gene PPP1R12C at the AAVS1 locus with the pAAVS1-iNGN2-Zeo plasmid containing TetO-NGN2-P2A-Zeo and CAG-rtTA. In brief, hPSCs were dissociated into single-cell suspension with TrypLE (Gibco, 12604-021). 2.5 × 106 cells were resuspended in 120 µL of R Buffer (Thermo Fisher Scientific, MPK10096) and mixed with 1.5 µg each of AAVS1-TALEN-L and AAVS1-TALEN-R, and 10 µg of pAAVS1-iNGN2-Zeo plasmid. Cells were electroporated using the Neon Transfection electroporation system (Thermo Fisher Scientific, MPK10096) at 1050 V, 30 ms, and 2 pulses, and plated on a 10 cm plate. 24 hr after electroporation and indefinitely, the cells were selected with geneticin (50 µg.mL–1, Life Technologies, 10131035). At the fifth day of selection, 2 × 104 cells were plated on a 10 cm plate for clonal selection. After colony formation, colonies were picked and transferred to a 96-well plate for genomic DNA extraction and PCR analysis of plasmid integration.
 
-## Genomic DNA isolation and genotyping PCR
+### Genomic DNA isolation and genotyping PCR
 
 Genomic DNA (gDNA) from the iNGN2-H1 cell line was extracted from hPSCs with the DNeasy Blood and Tissue kit according to the manufacturer’s instructions (QIAGEN, 69504). PCR of the gDNA was performed with the primer pair forward 5′-AGGAAATGGGGGTGTGTCAC-3′ (in the AAVS1 locus) and reverse 5′- GAGCTCCTCTGGCGATTCTC-3′ (in the NGN2 DNA sequence).
 
-## Human neuron generation
+### Human neuron generation
 
 Human neurons were generated as previously described (Nehme et al., 2018; Zhang et al., 2013). In brief, on day 0, hPSCs were differentiated in N2 medium (500 mL DMEM/F12 [1:1] [Gibco, 11320-033]), 5 mL Glutamax (Gibco, 35050-061), 7.5 mL sucrose (20%, Sigma, S0389), 5 mL N2 supplement B (StemCell Technologies, 07156) supplemented with SB431542 (10 µM, Tocris, 1614), XAV939 (2 µM, Stemgent, 04-00046), and LDN-193189 (100 nM, Stemgent, 04-0074) along with doxycycline hyclate (2 µg.mL–1, Sigma, D9891) and Y27632 (5 mM, Stemgent 04-0012). Day 1 was a step-down of small molecules, where N2 medium was supplemented with SB431542 (5 µM, Tocris, 1614), XAV939 (1 µM, Stemgent, 04-00046), and LDN-193189 (50 nM, Stemgent, 04-0074) with doxycycline hyclate (2 µg.mL–1, Sigma, D9891) and Zeocin (1 µg.mL–1, Invitrogen, 46-059). On day 2, N2 medium was supplemented with doxycycline hyclate (2 µg.mL–1, Sigma, D9891) and Zeocin (1 µg.mL–1, Invitrogen, 46-059). Starting on day 3, cells were maintained in Neurobasal media (500 mL Neurobasal [Gibco, 21103-049], 5 mL Glutamax [Gibco, 35050-061], 7.5 mL Sucrose [20%, Sigma, S0389], 2.5 mL NEAA [Corning, 25-0250 Cl]) supplemented with B27 (50x, Gibco, 17504-044), BDNF, CTNF, GDNF (10 ng.mL–1, R&D Systems 248-BD/CF, 257-NT/CF, and 212-GD/CF) and doxycycline hyclate (2 µg.mL–1, Sigma, D9891). From day 4 to day 5, Neurobasal media was complemented with the antiproliferative agent floxuridine (10 µg.mL–1, Sigma-Aldrich, F0503-100MG).
 
-## Human primary astrocytes
+### Human primary astrocytes
 
 Human primary cortical astrocytes (hpAs) were obtained from ScienCell Research Laboratories (1800) and cultured according to the manufacturer’s instructions.
 
-## mRNA sequencing and analysis
+### mRNA sequencing and analysis
 
 Three to six biological replicates of hN + hpA co-cultures per condition (72 hr DMSO treated, 72 hr (+)-JQ1 treated, 72 hr Birabresib treated) were harvested in RLTplus Lysis buffer (QIAGEN, 1053393). Total RNA was isolated using the RNeasy micro/mini plus kit (QIAGEN, 74034). Libraries were prepared using Roche Kapa mRNA HyperPrep strand-specific sample preparation kits from 200 ng of purified total RNA according to the manufacturer’s protocol using a Beckman Coulter Biomek i7. The finished dsDNA libraries were quantified by Qubit fluorometer and Agilent TapeStation 4200. Uniquely dual-indexed libraries were pooled in equimolar ratio and subjected to shallow sequencing on an Illumina MiSeq to evaluate library quality and pooling balance. The final pool was sequenced on an Illumina NovaSeq 6000 targeting 30 million 100 bp read pairs per library. Sequenced reads were aligned to the UCSC hg19 reference genome assembly and gene counts were quantified using STAR (v2.7.3a) (Dobin et al., 2013). Differential gene expression testing was performed by DESeq2 (v1.22.1) (Love et al., 2014). RNAseq analysis was performed using the VIPER snakemake pipeline (Cornwell et al., 2018). Library preparation, Illumina sequencing, and VIPER workflow were performed by the Dana-Farber Cancer Institute Molecular Biology Core Facilities.
 
-## Automated cell plating
+### Automated cell plating
 
 hNs and hpAs were harvested with Accutase (Innovative Cell Technology, Inc, AT104-500), quenched in Neurobasal media, spun 5 min at 1000 rpm at room temperature (RT), passed through a 40 µm filter, and counted using the Countess Automated Cell Counter (Thermo Fisher Scientific, AMQAX1000). Cells were mixed in NBM media to reach a seeding density of 40,000 neurons.cm–2 and 100,000 astrocytes.cm–2 per well. A liquid handling dispenser (Personal Pipettor, ApricotDesigns) was used to uniformly plate the cell mixture in the geltrex-coated 60-inner wells of 96-well plates (PerkinElmer, CellCarrier-96, 6005558).
 
-## Small molecule dilution and addition
+### Small molecule dilution and addition
 
 The Selleck library (L3500) consisted of 8 × 96-well plates containing 376 small molecules at 10 mM in DMSO (100%). On the day of small molecule addition, the relevant plate was diluted with an automatic liquid handling dispenser (ApricotDesigns, Personal Pipettor). Each diluted plate was screened on the same day, with each small molecule tested against the cell type of interest in three different 96-well plates (in triplicate) at 3 µM.
 
-## siRNA-mediated knockdown
+### siRNA-mediated knockdown
 
 Human SYNAPSIN1 and control siRNA (Accell Dharmacon, A-12362-16-0005 and K-005000-R1-01) were aliquoted (100 µM) and stored at –20°C according to the manufacturer’s recommendations. siRNA (1 µM) in Accell Delivery Media (Accell Dharmacon, B-002222-UB-100) was added to human co-cultures on day 18 of hN differentiation for 72 hr followed by fixation and analysis. Normality was confirmed using the Kolmogorov–Smirnov test.
 
-## Immunocytochemistry
+### Immunocytochemistry
 
 Immunofluorescence was performed using an automatic liquid handling dispenser (ApricotDesigns, Personal Pipettor). Cells were washed abundantly in 1× PBS, fixed for 20 min in PFA (4%, Electron Microscopy Sciences, 15714S) plus Sucrose (4%, Sigma, S0389), washed abundantly in 1× PBS, permeabilized and blocked for 20 min in horse serum (4%, Thermo Fisher, 16050114), Triton X-100 (0.3%, Sigma, T9284), and glycine (0.1 M, Sigma, G7126) in 1× PBS. Primary antibodies were then applied at 4°C overnight in 1× PBS supplemented with horse serum (4%, Thermo Fisher, 16050114). The following synaptic antibodies were used: rabbit anti-human SYNAPSIN1 (1:1000, Millipore, AB1543), chicken anti-human MAP2 (1:1000, Abcam, ab5392), mouse anti-synaptophysin (1:500; 7H12 Cell Signaling Technology, 9020), and mouse anti-PSD-95 (1:500 7E3-1B8 Invitrogen, MA1-046). After abundant washes with Triton X-100 (0.3%, Sigma, T9284) in 1× PBS, cells were exposed for 1 hr at RT to secondary antibodies: goat anti-chicken Alexa Fluor 488 (1:1000, Thermo Fisher, A21131), donkey anti-rabbit Alexa Fluor 555 (1:1000, Thermo Fisher, A31572), goat anti-mouse Alexa Fluor 647 (1:1000, Thermo Fisher), as well as DAPI (1:5000, Thermo Fisher Scientific, D1306) and TrueBlack (1:5000, Biotium, 23007) in 1× PBS supplemented with horse serum (4%, Thermo Fisher, 16050114). Finally, cells were abundantly washed with 1× PBS and stored at 4°C.
 
-## Immunoblotting
+### Immunoblotting
 
 Cell lysates were made from iNGN2-H1 hNs monocultures or from hN + hpA co-cultures (40,000 neurons.cm–2 and 100,000 astrocytes.cm–2 per well) on 6-well plates. Medium was refreshed once per week. Cells were treated with the selected small molecules at the optimal concentration for 72 hr starting on day 18 of hN differentiation. Cells were abundantly washed with PBS 1× before lysis in RIPA buffer (Life Technologies, 89901) supplemented with protease and phosphatase inhibitor (Thermo Scientific, 88669). Before blotting, samples were triturated with repetitive up and down using U-100 Insulin Syringe (B-D, 329461), centrifuged at 10,000 × g for 15 min at 4°C, and the supernatants were collected. Proteins were denatured by boiling at 95°C for 10 min and subjected to a Pierce BCA protein assay (Life Technologies, 23227) for determination of the protein concentration. For each sample, the same amount of total protein extracted (5–10 µg) was loaded and separated by SDS-PAGE. The proteins were then transferred to a PVDF membrane (Bio-Rad, 1704156), blocked in 5% Difco Skim Milk (BD, 232100) in TBS-Tween 20 (1/1000; Sigma-Aldrich, T5912-1L and P9416-50ML) before blotting with the primary antibodies: rabbit anti-human SYNAPSIN1 (1:1000, Millipore, AB1543), rabbit anti-human Homer (1/500, Synaptic Systems, 160003), rabbit anti-human BAIAP2 (1/500, Thermo Fisher Scientific, PA5-30386), and mouse anti-human GAPDH (1:1000, Millipore, MAB374). For visualization, donkey anti-mouse IRDye 800CW (1:5000, LI-COR, 926-32212) and donkey anti-rabbit IRDye 680RD (1:5000, LI-COR, 926-68073) were used before detection with Odyssey DLx imaging system (LI-COR, 9140).
 
-## Image acquisition and analysis paradigms
+### Image acquisition and analysis paradigms
 
-## Plating consistency
+#### Plating consistency
 
 24 hr after co-culture, a random 96-well-plate was fixed and stained. 2 channels (DAPI, MAP2), 4 stacks.field–1, each stack separated by 0.5 µm, 25 fields.well–1, 60 wells.96-well plate–1 were acquired at ×20 (Plan Apo λ, NA 0.75, air objective, Nikon) with a high-content screening confocal microscope (ImageXpress Micro 4, Molecular Devices). Acquired images were transferred and stored on a Columbus (PerkinElmer) server. A Columbus Acapella software (PerkinElmer) algorithm was designed to discriminate hN nuclei from hpA nuclei. DAPI and MAP2 channels of each field were merged in a single plane to create maximum projection images. DAPI projected images were filtered using a Gaussian method and the nuclei population was detected based on the C method (diameter >20 µm). Intensity and morphological properties of each identified nuclei were calculated. Among all nuclei, the hN nuclei were identified according to their intensity, contrast, as well as area, roundness, and distinct MAP2-positive soma (Figure 1—figure supplement 2). This script allowed quantification of the mean number (and the standard deviation) of hNs identified in each well, and the coefficient of variance (%) per plate. Thresholding for plating consistency was set above 4000 hNs per well and a covariance below 8% per plate.
 
-## Synapse detection
+#### Synapse detection
 
 Three channels (DAPI, MAP2, SYNAPSIN1), 5–8 stacks.field–1 at 0.3 µm distance, 12 fields.well–1, 60 wells.96-well plate–1 were acquired with a ×20 objective (NA 1.0, water objective) with a high-content screening confocal microscope (Opera Phenix, PerkinElmer). Image analysis pipelines were built using the open-source CellProfiler 3.1.5 software (https://www.cellprofiler.org/; Carpenter et al., 2006; RRID:SCR_007358). Each of the 12 fields per well were analyzed independently. The first pipeline was designed to merge in a single plane (maximum projection) the 5–8 stacks of the raw image for each channel. The output files generated by the first pipeline were the input files for a second pipeline. The second pipeline was developed to report different features in MAP2 and SYNAPSIN1 channels. First, translational misalignment was corrected by maximizing the mutual information of the DAPI and MAP2 channels. The same alignment measurements obtained from the first two input images were applied for the SYNAPSIN1 channel. Illumination correction functions were created by averaging each pixel intensity of all images from each channel across each plate then smoothing the resulting image with a Gaussian filter and a large filter size of 100 × 100 pixels. A rescale intensity function was used to stretch each image of each channel to the full intensity range (so that the minimum intensity value had an intensity of zero and the maximum had an intensity of 1). The MAP2 pixel intensities were enhanced by a tophat Tubeness filter with a scale of 2 sigma of the Gaussian. Once the lower and upper bounds of the three-class Otsu thresholding method were set for the MAP2 pixel detection, the resulting images were converted into segmented objects. The SYNAPSIN1 pixels were enhanced using a tophat Speckles filter, thresholded using a two-class Otsu method, processed for SYNAPSIN1 puncta identification within an equivalent diameter range of 1–6 pixels, and de-clumped before being converted into segmented objects. A colocalization module then assigned the relationships between the identified SYNAPSIN1 puncta contained within or only partly touching the MAP2 objects. Finally, the area and the number of the synaptic objects were measured and exported to a *.csv spreadsheet. The CellProfiler pipelines are available at https://github.com/mberryer/ALPAQAS (copy archived at Berryer, 2023).
 
-## Data analysis
+### Data analysis
 
-## Quality control
+#### Quality control
 
 The output CellProfiler *.csv files were imported in Genedata Screener. As the *.csv files were loaded, a parameterized parser conducted quality control. The mean and standard deviation of the area covered by MAP2 pixels were calculated across all fields in an inter-plate basis. Fields in which the area covered by MAP2 pixels was outside the range of the inter-plate mean ± standard deviation values were removed. Wells containing fewer than five fields were also excluded. The area and the number of the synaptic objects of the remaining fields were averaged and condensed to well-level before being imported into Genedata Screener to perform relevant calculations.
 
-## Synaptic measurements
+#### Synaptic measurements
 
 We analyzed the area occupied by MAP2-positive neurites and the number, area, and density of SYNAPSIN1 puncta localized on MAP2-positive neurites (respectively AreaOccupied and Count of MAP2PositiveNeurites and SYNAPSIN1PunctaOnMAP2PositiveNeurites in the ALPAQAS pipeline). On a well-basis, density was defined as the number of SYNAPSIN1-positive puncta colocalized on MAP2-positive pixels divided by the area covered by the MAP2 positive pixels. The mean values for number and density were calculated for each well and expressed as a percentage of the intra-plate DMSO control-treated wells. Computed on an intra-plate basis, the Z-score for the value X was defined as the difference between X and the mean value of all DMSO-treated wells, divided by the standard deviation value of all DMSO-treated wells.
 
-## SynGO analysis
+#### SynGO analysis
 
 Individual upregulated DEGs shared between (+)-JQ1 and Birabresib treatment conditions (padj<0.05 and log2FC≥1) were used as input with default settings. All genes with average counts ≥1 in the 0.1% DMSO control conditions were used as the background list (for a total of 11,704 genes).
 
-## Power calculations
+#### Power calculations
 
 Cohen’s d was calculated for each compound compared to DMSO using pooled standard deviation. The statistical power of each compound was calculated from Cohen’s d, number of fields/wells, with alpha 0.05, hypothesis as specified (‘two-sided,’ ‘greater,’ or ‘less’) using the function pwr.norm.test from R package pwr (1.3–0). The number of fields or wells was calculated for increasing Cohen’s d and power, with alpha 0.05, using the function pwr.norm.test from R package pwr (1.3–0). Power plots were generated with ggplot2 (3.3.5).
 
-## Statistical analyses
+### Statistical analyses
 
 All experiments were performed in three biological replicates and three technical replicates, except the small molecule validation experiments were performed in two biological replicates and eight technical replicates and the siRNA experiment was performed in one biological replicate and six technical replicates. Biological replicates refer to independent batches of cells/differentiations, and technical replicates refer to independent wells. For the dose–response, the small molecule validation, the hN monoculture experiments, and the immunoblot quantification, significance was assessed using one-way ANOVA with Dunnett’s multiple comparisons test; *p<0.05, **p<0.01, ***p<0.001. In the hN + hpA co-culture versus hN monoculture experiment, the quantification of the density and the area of the individual SYNAPSIN1 puncta and the area covered by MAP2-positive neurites, the significance was determined by a Kolmogorov–Smirnov unpaired t-test, ***p<0.001. For mRNA-seq analyses, we used an adjusted p-value cutoff of 0.05 and a log2fold change cutoff of ±1. p-Values (or adjusted p-values where relevant) 0.05 were considered statistically significant.

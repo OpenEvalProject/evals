@@ -45,7 +45,7 @@ Here, we show that inhibition of the v-ATPase results in impairment of lysosomal
 
 ## Results
 
-## v-ATPase inhibition triggers hypoxia-inducible factor-mediated response
+### v-ATPase inhibition triggers hypoxia-inducible factor-mediated response
 
 With the goal of identifying signaling events caused by impaired organelle acidification, we analyzed several transcriptome datasets of cells treated with the v-ATPase inhibitor bafilomycin. These datasets include bafilomycin treatment of HeLa cells (GSE16870) (Straud et al., 2010), colon carcinoma cells (GSE47836) (Dürrbaum et al., 2014) and retinal pigment epithelial cells (GSE60570) (Santaguida et al., 2015). We performed multi-dimensional transcriptome analyses in these datasets, aiming at the identification of signaling pathways, networks and transcription factors (Murdoch et al., 2016; Raimundo et al., 2012; Raimundo et al., 2009; Schroeder et al., 2013; Tyynismaa et al., 2010; West et al., 2015; Yambire et al., 2019). We reasoned that those transcription factors (TF) showing similar behavior in the three datasets of bafilomycin-treated cells would be the main regulators of the response to loss of acidification, independently of the cell type. Therefore, we crossed the TF list associated with each dataset, to determine which of those were involved in all three datasets, and found eight common TF, of which seven were predicted as active and one as repressed (Figure 1A). These TF are associated with autophagy (NUPR1), cholesterol homeostasis (SREBF1, SREBF2), hypoxia response (HIF-1α and EPAS1, which is also known as HIF-2α) and diverse stress responses (p53, myc, FoxO3a), and form a highly interconnected network (Figure 1B). To determine which biological processes were associated with these TF, and identify which of them were most upstream, we performed a pathway analysis using Metascape, and found that the most affected processes dealt with cellular response to hypoxia (Figure 1C).
 
@@ -57,11 +57,19 @@ The major coordinator of the cellular response to hypoxia is the transcription f
 
 When the cytoplasmic Fe2+ levels are low, intracellular iron is mobilized by autophagy of ferritin (ferritinophagy) (Mancias et al., 2014) and mitochondria (mitophagy) (Allen et al., 2013; Schiavi et al., 2015), which deliver iron directly to the lysosomes (via autophagosomes). In parallel, transferrin receptor uptake first releases iron in the endosomes, which is then delivered by kiss-and-run to mitochondria (Hamdi et al., 2016) or released to the cytoplasm. In the endosomes/lysosomes, Fe3+ is reduced to Fe2+ by the enzyme STEAP3, and Fe2+ (but not Fe3+) is released to the cytoplasm by DMT1 (SLC11A2) or MCOLN1 (Figure 1G) (Dong et al., 2008; Touret et al., 2003). To test whether vATPase inhibition results in cytoplasmic Fe2+ deficiency due to retention of iron in the lysosomes, we purified lysosomes from fibroblasts using an immunoprecipitation protocol (Abu-Remaileh et al., 2017). The lysosomes obtained from control and bafilomycin-treated fibroblasts showed enrichment in lysosomal proteins (e.g. LAMP1), while mitochondrial (VDAC1, TOM20), endoplasmic reticulum (VAPB), peroxisomal (PEX5) and cytoplasmic proteins (HPRT, GAPDH) were only detected in the input lanes (Figure 1H). Using these purified lysosomes, we measured their total iron content, and found a robust increase in lysosomal iron in the bafilomycin-treated cells (Figure 1I) in agreement with the retention of iron in lysosomes following impaired lysosomal acidification.
 
-## Lysosomal vATPase inhibition causes functional iron deficiency
+### Lysosomal vATPase inhibition causes functional iron deficiency
 
 The cytoplasmic concentration of Fe2+ is controlled by the iron regulatory protein 1 (IRP1), the IRP2 and the ferritinophagy receptor NCOA4 (Mancias et al., 2014; Rouault, 2015). When the levels of cytoplasmic Fe2+ are down, IRP activity mediates a reduction in the expression of the iron storage protein ferritin, and an increase in transferrin receptor leading to extracellular (transferrin-bound) iron uptake (Rouault, 2015).
 
 We first tested if the lower cellular Fe2+ levels when the v-ATPase is inhibited can affect iron homeostasis. We monitored cellular iron homeostasis by measuring the protein levels of ferritin light (FTL1) and heavy chain (FTH1) subunits and the transcript levels of transferrin receptor (TFRC). The lysosomal chelator deferoxamine, was used as positive control given that it retains iron in the lysosome and thus impedes its release to the cytoplasm, thus triggering functional iron deficiency (Doulias et al., 2003; Kurz et al., 2006). As TFRC mRNA has a 3’ iron responsive element, its transcript levels are expected to increase upon iron deficiency. We observed in fibroblasts treated with the v-ATPase inhibitors, bafilomycin and saliphe, increased Tfrc transcript levels and decreased protein amounts of FTL1 and FTH1 (Figure 2). As expected, deferoxamine treatment resulted in increased Tfrc transcript (Figure 2—figure supplement 1A) and decreased protein levels of the ferritin light and heavy chain subunits, FTL1 and FTH1 (Figure 2A). Importantly, the treatment with Deferoxamine does not impact lysosomal function, as assessed by the protein levels of autophagy markers SQSTM1 and LC3B-II (Figure 2—figure supplement 1B). Furthermore, we stained fibroblasts with the probe FerroOrange, which reacts specifically with Fe2+ but not Fe3+, and found that the signal intensity of FerroOrange was sharply decreased in bafilomycin-treated cells (Figure 2B). Notably, iron deficiency elicited by bafilomycin is not a consequence of the concentration employed, as lower concentration yields a similar result (Figure 2—figure supplement 1C). Similarly, chloroquine, a lysosomotrophic weak base, which perturbs lysosomal acidification by dissipating the pH gradient across the lysosomal membrane but not by inhibiting the vATPase, also results in functional iron deficiency (Figure 2—figure supplement 1C).
+
+![Figure 2.](https://cdn.elifesciences.org/articles/51031/elife-51031-fig2-v2.jpg)
+
+**Figure 2.:** (A) Increased Tfrc transcript levels in 500 nM Baf- and 500 nM Sal-treated mouse embryonic fibroblasts relative to untreated fibroblasts. Western blot showing decreased FTH1 and FTL1 protein levels in Baf- and Sal-treated fibroblasts (n = 6). GAPDH is used as loading control. Tfrc expression is depicted as bars representing mean ± SEM, n = 6; shown as black dots. p value is determined by the Welch’s one-way ANOVA as differences between untreated group, and Baf- and Sal-treatments. (B) Representative images of FerroOrange staining of cytoplasmic labile iron pools in control, 500 nM Baf-treated and 500 nM Baf-treated fibroblasts with 150 µM iron citrate supplementation. Note the reduced staining in Baf-treated fibroblasts relative to the other conditions. (C) mRNA levels of Tfrc in control, 500 nM Baf-treated and 500 nM Baf-treated fibroblasts with 150 µM iron citrate supplementation (left) or in control, 500 nM Sal-treated and 500 nM Sal-treated fibroblasts with 150 µM iron citrate supplementation (right) for 24 hr. Bar graphs depict mean ± SEM of four independent experimental measures (shown as black dots). p values represent Welch’s one-way ANOVA with Dunnett’s correction for multiple comparisons, estimated as differences between Baf- or Sal-treated cells and other experimental groups. (D) Whole cell immunoblots of HIF-1α and FTH1 in fibroblasts treated with 500 nM Baf or 500 nM Baf + 150 µM iron citrate (left) or with 500 nM Sal and 500 nM Sal + 150 µM iron citrate (n = 4). GAPDH is used as loading control. (E) Transcript levels of HIF-1α target genes in fibroblasts treated with 500 nM Baf or with 500 nM Baf + 150 µM iron citrate. The mean ± SEM of four biological replicates (black dots) is shown. p-values are determined by Welch’s one-way ANOVA with Dunnett’s correction for multiple comparisons (all experimental groups compared to Baf-treated cells). (F–G) Gaa KO fibroblasts display impaired lysosomal acidification. Representative spinning-disk microscopy images for Gaa WT and Gaa KO MEFs co-stained with Dextran-Oregon Green 488 and Dextran-TMRM are shown with Baftreatment in Gaa WT used as a positive control for impaired acidification. Scale bar 2 µm. (G) Quantification of the intensity of Dextran-Oregon Green in Dextran-TMRM positive punta shows increased Dextran-Oregon Green intensity in Gaa KO fibroblasts and in Baf-treated Gaa WT fibroblasts. Bar graphs depict mean ± SEM, n = 3 independent experiments, with 50 cells per condition from each experiment. ***p<0.001, determined by the unpaired two-tailed t-test with Welch’s correction (H) Increased Tfrc expression (left) in Gaa-/- fibroblasts (n = 6, depicted as black dots). p value is determined by the unpaired two-tailed t-test with Welch’s correction. Whole cell immunoblots of FTL1 and HIF-1α (right) in Gaa-/- fibroblasts (n = 6). GAPDH is used as loading control. (I) Total, ferrous and ferric iron concentrations in fibroblasts prepared from Gaa-/- and their wild type littermate controls. Results are summarized as mean ± SEM of experimental measures shown as black dots. Differences between means shown as actual p values are determined by the unpaired two-tailed t-test with Welch’s correction.
+
+![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/51031/elife-51031-fig2-figsupp1-v2.jpg)
+
+**Figure 2—figure supplement 1.:** (A) Increased Tfrc mRNA levels in fibroblasts treated with lysosomal iron chelator, Dfo (300 µM) for 24 hr. Bar graphs represent mean ± SEM for six independent experimental measures (shown as black dots). p-value is unpaired two-tailed t-test with Welch’s correction. (B) Immunoblots of SQSTM1 and LC3B in 500 nM Baf- and 500 nM Sal-treated fibroblasts (n = 6). 300 µM Dfo is used as positive control for the independence of impaired lysosomal iron efflux on defective autophagy. GAPDH is used as loading control. (C) Increased Tfrc mRNA levels in fibroblasts treated with either vehicle control, 50 µM Chloroquine (CQ) or 50 nM Baf for 24 hr (left). Bar graphs represent mean ± SEM for four independent experimental measures (shown as black dots). p value is Welch’s one-way ANOVA with all experimental groups compared to vehicle control treated cells. Multiple test corrections were by the Dunnett’s method. Immunoblots of HIF-1α, FTH1 and FTL1 with GAPDH as loading control in whole cell lysates prepared from fibroblasts treated for 24 hr with either vehicle control, 50 µM Chloroquine (CQ) or 50 nM Baf (right). Blots are representative of n = 4 biological replicates. (D) Expression level of HIF-1a target genes in 500 nM Sal- and 500 nM Sal-treated fibroblasts with 150 µM iron citrate supplementation. p values are estimated as Welch’s one-way ANOVA with all experimental groups compared to Sal-treated cells. Multiple test corrections were by the Dunnett’s method. (E) Tfrc mRNA levels in fibroblasts with siRNA mediated silencing of Atp6v1h subunit of the vATPase (left). Relative Tfrc expression is shown as bars representing mean ± SEM, n = 6 biological replicates (black dots). p value is determined by the Welch’s one-way ANOVA followed by Dunnett’s correction for multiple comparisons of all groups to the siCtrl group. Efficient knockdown is shown as immunoblot of ATP6V1H (right). Immunoblots of HIF-1α, FTH1, FTL1 with GAPDH as loading control are also shown for n = 3 biological samples in fibroblasts with Atp6v1h knockdown. (F–G) Silencing of Atp6v1h in fibroblasts results in impaired lysosomal acidification. Representative spinning-disk microscopy images for siCtrl and siAtp6v1h fibroblasts were co-stained with Dextran-Oregon Green 488 and Dextran-TMRM with Baf treatment in siCtrl cells used as a positive control for impaired acidification. Scale bar 2 µm. (G) Quantification of the intensity of Dextran-Oregon Green in Dextran-TMRM positive punta shows increased Dextran-Oregon Green intensity in Atp6v1h knockdown fibroblasts and in Baf-treated siCtrl fibroblasts. Bar graphs depict mean ± SEM, n = 3 independent experiments, with 20 cells per condition from each experiment. ***p<0.001, determined by the unpaired two-tailed t-test with Welch’s correction (H) Expression level of HIF-1a target genes following Atp6v1h knockdown in fibroblasts. p values are estimated as Welch’s one-way ANOVA with all experimental groups compared to siCtrl cells. Multiple test corrections were by the Dunnett’s method.
 
 Because the iron-deficiency response caused by v-ATPase inhibition is due to retention of iron in the lysosome, we supplemented the growth medium with Fe-citrate, which allows iron to be imported through transporters in the plasma membrane (Ofer et al., 1981), thus bypassing the endolysosomal pathway. When fibroblasts are treated simultaneously with v-ATPase inhibitors and Fe-citrate, the iron-deficiency response is deactivated, as assessed by the transcript levels of Tfrc (Figure 2C). To ensure that his effect was specifically due to Fe, Na-citrate was used as control. This result underscores that the iron homeostatic response is regulated by the cytoplasmic iron levels (Rouault, 2015), and that retention of iron in the lysosome triggers cytoplasmic iron deficiency, which can be resolved by iron import independently of the endolysosomal pathway.
 
@@ -75,9 +83,21 @@ To test whether other lysosomal defects which impair lysosomal acidification wou
 
 Altogether, these results show that v-ATPase inhibition results in decreased cytoplasmic Fe2+, which impairs the hydroxylation-mediated degradation of HIF-1α and culminates in the accumulation and activation of this transcription factor.
 
-## Mitochondrial biogenesis and function require iron
+### Mitochondrial biogenesis and function require iron
 
 Having shown that endolysosomal acidification is required for Fe2+ release from endo/lysosomes to the cytoplasm, we sought to test if mitochondrial iron content was also affected. We loaded the cells with the probe Mito-FerroGreen, which localizes to mitochondria and reacts specifically with Fe2+. The cells treated with bafilomycin showed a robust decrease in Mito-FerroGreen signal (Figure 3A). This effect was ablated in the presence of Fe-citrate (Figure 3A). This result shows that supply of iron to mitochondria is also impaired when the v-ATPase is inhibited, and that mitochondria seem to be able to uptake iron from cytoplasm when the endolysosomal pathway is ineffective.
+
+![Figure 3.](https://cdn.elifesciences.org/articles/51031/elife-51031-fig3-v2.jpg)
+
+**Figure 3.:** (A) Representative image Mito-FerroGreen staining of mitochondrial labile iron pools in control, 500 nM Baf- and 500 nM Baf + 150 µM Fe-citrate treated fibroblasts. Note the barely detectable labile iron levels in mitochondria of Baf-treated fibroblasts. (B–C) Mitochondrial oxygen consumption rates (OCR) in 500 nM Baf- and 500 nM Baf-treated fibroblasts with 150 µM iron citrate supplementation (B) or in 500 nM Sal- and 500 nM Sal-treated fibroblasts with 150 µM iron citrate supplementation (C). Results represent mean ± SEM, three independent experimental replicates. Each experimental replicate is calculated from the average of 8 technical replicates. ***p<0.001, Welch’s one-way ANOVA with Dunnett’s correction for multiple comparison (all experimental groups compared to Baf- or Sal-treated cells). (D) Western blot of whole cell extracts showing ATP5A, UQCRC2, mtCO1, SDHB and NDUFSB in control, 500 nM Baf- and 500 nM Sal-treated fibroblasts (n = 6). 300 µM Dfo is used as positive control for iron deficiency. Note the reduction of mitochondrial proteins in treated cells relative to controls. GAPDH is used as loading control. (E) Representative images of fibroblasts transfected with GFP-Mito and treated with 500 nM Baf for 24 hr to show the mitochondrial network. Note the prevalent mitochondrial fragmentation in Baf-treated fibroblasts. Number of cells is shown as black dots per condition in bars representing mean ± SEM of mitochondrial perimeter from three independent experiments. p value is estimated by the Mann-Whitney U-test. Scale bar, 10 µm. (F) Transcript levels of nuclear-encoded mitochondrial genes in 500 nM Baf-treated fibroblasts. Bars depict mean ± SEM of six independent experimental measures. *p<0.05; **p<0.01; ***p<0.001, unpaired two-tailed t-test with Welch’s correction. (G) Transcript levels of nuclear-encoded mitochondrial genes in 500 nM Baf-treated fibroblasts and 500 nM Baf-treated fibroblasts with150µM iron citrate supplementation. Results are shown as mean ± SEM, n = 8. *p<0.05; **p<0.01; ***p<0.001, Welch’s one-way ANOVA with multiple test corrections made by the Dunnett’s method. All comparisons were made between Baf-treated cells and other experimental conditions. (H) Mitochondrial superoxide levels in 500 nM Baf- and 500 nM Baf-treated fibroblasts with 150 µM iron citrate supplementation. Differences are depicted as mean fluorescent intensities of the superoxide-sensitive and mitochondrial-targeted dye, Mitosox. Error bars represent SEM of three independent experimental measures (black dots). p value is Welch’s one-way ANOVA with Dunnett’s correction for multiple corrections (all conditions compared to Baf-treated cells).
+
+![Figure 3—figure supplement 1.](https://cdn.elifesciences.org/articles/51031/elife-51031-fig3-figsupp1-v2.jpg)
+
+**Figure 3—figure supplement 1.:** (A–C) Mitochondrial OCR in 500 nM Baf- and 500 nM Sal-treated fibroblasts (A), in fibroblasts treated with either vehicle, 50 µM Chloroquine or 50 nM Baf (B) and in 300 µM Dfo-treated fibroblasts (C). Note the seemingly lack of mitochondrial respiration in Dfo-treated fibroblasts. Results represent mean ± SEM, n = 3. Each experimental replicate is calculated from the average of 12 technical replicates. ***p<0.001, Welch’s one-way ANOVA with Dunnett’s correction for multiple comparisons (A, B) and unpaired two-tailed t-test with Welch’s correction (C). (D) 150 µM iron citrate supplementation rescues the barely detected mitochondrial OCR in 300 µM Dfo-treated fibroblasts. Experimental points represent mean ± SEM, n = 3. Each experimental replicate is calculated from the average of 8 technical replicates. ***p<0.001, Welch’s one-way ANOVA with Dunnett’s correction for multiple comparisons with all experimental groups compared to Dfo-treated cells. (E) Immunoblots of whole cell extracts showing ATP5A, UQCRC2, mtCO1, SDHB, NDUFB8, TOM20 and VDAC1 in fibroblasts treated for 24 hr with either vehicle, 50 µM Chloroquine or 50 nM Baf. GAPDH is used as loading control, n = 4 biological replicates. (F) Immunoblots showing reduced TOM20 and VDAC1 protein levels in fibroblasts treated with 500 nM Baf and 500 nM Sal (n = 6). 300 µM Dfo is used as positive control for iron deficiency and GAPDH is used as loading control. (G) Reduced levels of nuclear-encoded mitochondrial transcripts in fibroblasts treated for 24 hr 50 nM Baf. Results are shown as bar graphs representing mean ± SEM of four independent experimental replicates. *p<0.05; **p<0.01; ***p<0.001, unpaired two-tailed t-test with Welch’s correction. (H) Mitochondrial biogenesis is repressed in 500 nM Sal-treated fibroblasts as assessed by the reduced transcript levels of nuclear-encoded mitochondrial genes following 24 hr of treatment with Sal. Results are shown as bar graphs representing mean ± SEM of six independent experimental replicates. *p<0.05; **p<0.01; ***p<0.001, unpaired two-tailed t-test with Welch’s correction. (I) 150 µM iron citrate supplementation in 500 nM Sal-treated fibroblasts, partially rescues the decreased expression of nuclear-encoded mitochondrial genes in fibroblasts treated with Sal alone. Bars depict mean ± SEM, n = 8. *p<0.05; **p<0.01; Welch’s one-way ANOVA with Dunnett’s correction for multiple comparisons. All conditions are compared to the Sal alone treatment group. (J) Immunoblots of whole cell extracts showing ATP5A, UQCRC2, mtCO1, SDHB and NDUFB8 in 500 nM Baf-treated cells and in 150 µM iron citrate supplemented-Baf treated fibroblasts (n = 3). Note the rescue of the decreased levels of mitochondrial proteins (NDUFB8, SDHB and mtCO1) following iron supplementation in Baf-treated cells. GAPDH is used as loading control. (K–L) 150 µM iron citrate supplementation rescues Baf-induced increase in the levels of reactive of oxygen species (DCF) and in the levels of lipid peroxidation (Bodipy C11). Results are depicted representative histograms of three independent experimental replicates and quantifications are shown as mean ± SEM. p values are determined by the Welch’s one-way ANOVA with Dunnett’s correction for multiple comparisons to Baf-treated fibroblasts.
+
+![Figure 3—figure supplement 2.](https://cdn.elifesciences.org/articles/51031/elife-51031-fig3-figsupp2-v2.jpg)
+
+**Figure 3—figure supplement 2.:** (A) Mitochondrial OCR in fibroblasts with siRNA mediated silencing of Atp6v1h. Results represent mean ± SEM, n = 3. Each experimental replicate is calculated from the average of 16 technical replicates. ***p<0.001, Welch’s one-way ANOVA with Dunnett’s correction for multiple comparisons. (B) Immunoblots of whole cell extracts showing ATP6V1H, ATP5A, UQCRC2, mtCO1, SDHB, and NDUFB8, Atp6v1h knockdown fibroblasts. GAPDH is used as loading control, n = 3 independent experiments. (C) Mitochondrial biogenesis is repressed in fibroblasts with Atp6v1h silencing as assessed by the expression of nuclear-encoded mitochondrial genes. Results are shown as bar graphs representing mean ± SEM of six independent experimental replicates. **p<0.01; ***p<0.001, Welch’s one-way ANOVA with Dunnett’s correction for multiple comparisons. Mean differences compared between siCtrl and the other experimental groups. (D) Expression levels of Mcoln1 (left) and Slc11a2 (right) in siRNA-mediated knockdown of Slc11a2 in Mcoln1-/- mouse embryonic fibroblast and their wild type control fibroblasts. Bars represent mean ± SEM, n = 6 biological replicates. ***p<0.0001, unpaired two-tailed t-test with Welch’s correction. (E) Tfrc mRNA levels in Mcoln1 WT and KO fibroblasts with siRNA-mediated silencing of Slc11a2 (left). Relative Tfrc expression is shown as bars representing mean ± SEM, n = 6 biological replicates. ***p<0.001, determined by the Welch’s one-way ANOVA followed by Dunnett’s correction for multiple comparisons of all groups to the Mcoln1 WT siCtrl group. Immunoblots of HIF-1α, FTH1, FTL1 with GAPDH as loading control in Mcoln1 WT and KO fibroblasts with siRNA-mediated silencing of Slc11a2 are also shown for n = 3 biological samples (right). (F) Mitochondrial OCR in Mcoln1 WT and KO fibroblasts with Slc11a2 knockdown. Results represent mean ± SEM, n = 3. Each experimental replicate is calculated from the average of 9 technical replicates. ***p<0.001, Welch’s one-way ANOVA with Dunnett’s correction for multiple comparisons (G) Immunoblots of ATP5A, UQCRC2, mtCO1 AND SDHB in lysates prepared from Mcoln1 WT and KO fibroblasts with siRNA-mediated knockdown of Slc11a2. GAPDH is used as loading, n = 3 independent experiments. (H) Reduced levels of nuclear-encoded mitochondrial transcripts in either Mcoln1 KO fibroblasts, Slc11a2 knockdown fibroblasts or both. Results are shown as bar graphs representing mean ± SEM of six independent experimental replicates. *p<0.05; **p<0.01; ***p<0.001, determined by the Welch’s one-way ANOVA followed by Dunnett’s correction for multiple comparisons of all groups to the Mcoln1 WT siCtrl group.
 
 Mitochondria are a key component of Fe-S cluster synthesis, which is essential for the proper function of the respiratory chain. To assess if mitochondrial function was impacted by the decrease in Fe2+, we performed real-time respirometry, which monitors O2 consumption in real-time as a proxy for mitochondrial respiratory chain activity. We observed that fibroblasts treated with either v-ATPase inhibitor bafilomycin or saliphe showed a robust decrease in mitochondrial O2 consumption (Figure 3—figure supplement 1A). A similar result was obtained when perturbing lysosomal acidification using a lower concentration of bafilomycin, or using chloroquine (Figure 3—figure supplement 1B). Interestingly, treatment of fibroblasts with the lysosomal iron chelator deferoxamine resulted in virtual absence of mitochondrial respiratory chain activity (Figure 3—figure supplement 1C). Notably, supplementation of the medium with Fe-citrate was sufficient to return mitochondrial respiratory chain activity to normal levels in cells treated with bafilomycin (Figure 3B), saliphe (Figure 3C) or with deferoxamine (Figure 3—figure supplement 1D).
 
@@ -91,33 +111,175 @@ We then set to test whether the cells with genetic perturbation of lysosomal aci
 
 Because retention of iron, due to impaired lysosomal acidification, triggers iron deficiency and mitochondrial dysfunction, we sought to test if the removal of lysosomal iron exporters, independently of acidification, could recapitulate the phenotype. Iron can be released from the lysosomes by DMT1 (SLC11A2) or MCOLN1 (Dong et al., 2008; Touret et al., 2003). Therefore, we used fibroblasts obtained from Mcoln1-KO mice (and WT littermates), and silenced Slc11a2 using siRNA. We confirmed the efficiency of Slc11a2 silencing by qPCR (Figure 3—figure supplement 2D). The individual loss of Mcoln1 or Slc11a2, as well as the simultaneous loss of both, triggered an increase in the transcript levels of Tfrc (Figure 3—figure supplement 2E) and a decrease in the protein levels of FTL1 (Figure 3—figure supplement 2F). Mitochondrial respiration was robustly inhibited in the absence of Mcoln1 and/or Slc11a2 (Figure 3—figure supplement 2F), which was underscored by the decrease in the protein levels (Figure 3—figure supplement 2G) and transcript levels of OXPHOS subunits (Figure 3—figure supplement 2H). Altogether, these results show that iron retention in the lysosome results in functional iron deficiency and decreased mitochondrial biogenesis and function.
 
-## Lysosomal Fe2+ efflux is required for cell proliferation in a mitochondrial respiratory chain-dependent manner
+### Lysosomal Fe2+ efflux is required for cell proliferation in a mitochondrial respiratory chain-dependent manner
 
 Given the importance of iron to many cellular processes, we tested whether iron-deficiency induced by v-ATPase inhibition could affect cell proliferation. We observed that fibroblasts treated with vehicle control proliferate, while both bafilomycin (Figure 4A) and saliphe treatments (Figure 4B) resulted not only in halting of cell proliferation but also in cell death (the number of cells decreases during the treatment). The treatment with saliphe has slightly lower impact on cell death than with bafilomycin (Figure 4B). Remarkably, the supplementation of the medium with Fe-citrate during v-ATPase inhibition restores cellular proliferation (Figure 4C). Similar results were observed in fibroblasts treated with the iron chelator deferoxamine (Figure 4—figure supplement 1A–B).
+
+![Figure 4.](https://cdn.elifesciences.org/articles/51031/elife-51031-fig4-v2.jpg)
+
+**Figure 4.:** (A–B) 500 nM Baf-treated (A) and 500 nM Sal-treated (B) fibroblasts display about 4- to 8-fold increase in cell death with time of treatment, relative to untreated fibroblasts, which show progressive cell proliferation. Results are presented as mean ± SEM, n = 4 experimental replicates with each experimental replicate being the average of technical triplicates. ***p<0.001, unpaired two-tailed t-test with Welch’s correction (C) 150 µM iron citrate supplementation rescues cell death in fibroblasts upon treatment with 500 nM Baf or Sal. Bars and error bars represent mean ± SEM of log2 fold change in cell number of experimental conditions. Black dots indicate individual experimental measurements. ***p<0.001, Welch’s one-way ANOVA with Dunnett’s correction for multiple comparisons. All conditions compared to fibroblasts treated with either Baf or Sal alone. (D–E) 20 µM Antimycin treatment for 48 hr abolishes the rescue of cell death following iron supplementation in 500 nM Baf-treated (C) or 500 nM Sal-treated (D) fibroblasts. Bar graphs represent mean ± SEM of three independent experimental measures (black dots). ***p<0.001, Two-way ANOVA with Sidak correction for multiple comparisons. (F) Whole cell immunoblot of cleaved PARP and cleaved caspase-3 levels shows that Baf-induced cell death is non-apoptotic (n = 3). 1 µM Staurosporine treatment for 4 hr is used as positive control for caspase-3 dependent apoptotic cell death. GAPDH is used as loading control. (G–H) Inhibitors of apoptosis (G) and ferroptosis (H) show no observed effects on 500 nM Baf or Sal-induced cell death in fibroblasts following 48 hr of treatment. Results show mean ± SEM, n = 4. *p<0.5; ns p>0.05, Welch’s one-way ANOVA with Dunnett’s correction for multiple comparisons to treatment with Baf or Sal alone. 20 uM zVAD or 5 µM Ferrostatin were used. (I–K) 300 µM Dfo treatment in neurons results in more than 2-fold increase in the expression of Tnfa (I), increased expression of regulators of interferon gene expression (J) and increased transcript levels of interferon-stimulated genes (K). Results show mean ± SEM of six independent experiments. **p<0.01; ***p<0.001, unpaired two-tailed t-test with Welch’s correction.
+
+![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/51031/elife-51031-fig4-figsupp1-v2.jpg)
+
+**Figure 4—figure supplement 1.:** (A) 300 µM Dfo-treated fibroblasts show time dependent increase in cell death of up to about sixteen-fold after 48 hr of treatment. Data points are mean ± SEM, n = 4. ***p<0.001, unpaired t-test with Welch’s correction (B) 150 µM Iron citrate supplementation rescues cell death following 300 µM Dfo treatment in fibroblasts. Bar graphs and error bars represent mean ± SEM of log2 fold change in cell number of experimental conditions. Black dots indicate individual experimental measures. ***p<0.001, Welch’s one-way ANOVA with Dunnett’s correction for multiple comparisons. Mean differences compared between Dfo alone treatments and the other experimental groups. (C) 20 µM Antimycin treatment abrogates the rescue of cell death following iron supplementation in Dfo-treated fibroblasts. Results are summarized at mean ± SEM, n = 3 (depicted as black dots). ***p<0.001; Two-way ANOVA with Sidak correction of for multiple comparisons. (D) Caspase 3-independent cell death in 500 nM Sal-treated fibroblasts shown by whole cell immunoblots of cleaved PARP and cleaved caspase three levels in Sal-treated cells (n = 3). 1 µM Staurosporine treatment for 4 hr is used as positive for caspase 3-dependent cell death. GAPDH is used as loading control. (E) 5 µM Nec-1s, metabolically stable RIPK1 inhibitor, has no observable effects on cell death induced by 500 nM Baf treatment in fibroblasts for 48 hr. Results show mean ± SEM of 6 experimental replicates. ns p>0.05, Welch’s one-way ANOVA with Dunnett’s correction of multiple comparisons. Baf alone treated group compared with all other treatment conditions. (F) 5 µM Ferrostatin treatment abrogates 10 µM Erastin-induced cell death in fibroblasts. Treatments were carried out for 48 hr. Bar graphs represent mean ± SEM, n = 4 (black dots). ***p<0.001, Welch’s one-way ANOVA with Dunnett’s correction for multiple comparisons (all groups compared to cells treated with erastin alone).
 
 Because iron supplementation in the presence of v-ATPase inhibitors also improved mitochondrial function, we tested if the mitochondrial respiratory chain activity was necessary for the recovery in cell viability and proliferation. The addition of the mitochondrial respiratory chain complex III inhibitor antimycin A to bafilomycin-treated iron-supplemented fibroblasts ablated the recovery in cell viability conferred by the iron supplementation (Figure 4D). A similar result was observed in saliphe-treated (Figure 4E) and in deferoxamine-treated fibroblasts (Figure 4—figure supplement 1C).
 
 Next, we sought to characterize the cell death phenotype in response to v-ATPase inhibition. We first looked for apoptotic markers such as cleaved (active) caspase three and cleaved PARP (caspase three substrate). We could not detect either cleaved caspase-3 or cleaved PARP in bafilomycin- (Figure 4F) or saliphe-treated fibroblasts (Figure 4—figure supplement 1D), despite they were readily detectable in cells treated with the apoptosis inducer staurosporine. Accordingly, pan-caspase inhibitor ZVAD had no attenuating effect on cell death in bafilomycin- or saliphe-treated fibroblasts (Figure 4G), further supporting that the cell death in these conditions is not apoptotic. We then tested if the cell death induced by v-ATPase inhibition was sensitive to necrostatin (inhibitor of necrosis) or to ferrostatin (inhibitor of ferroptosis). Necrostatin-1s, which can decrease necroptotic cell death by inhibiting RIP1 kinase, had no effect on the cell death caused by v-ATPase inhibition (Figure 4—figure supplement 1E). Ferrostatin, an inhibitor of ferroptosis, also had no effect on v-ATPase inhibition-induced cell death (Figure 4H), despite it effectively inhibited cell death triggered by the ferroptosis inducer erastin (Figure 4—figure supplement 1F). Therefore, v-ATPase inhibition triggers caspase-independent, RIP1K-independent, ferrostatin-unrelated cell death. These results are consistent with the previously reported caspase-independent bafilomycin-induced cell death (Yan et al., 2016). In agreement with this finding, the analysis of the three transcriptome datasets of bafilomycin-treated cells that were used in Figure 1 ranks necrosis (and not apoptosis) as the top cell death mechanism (Supplementary files 1–3 tables S1-S3).
 
-## Iron deficiency triggers cell-autonomous inflammatory gene expression
+### Iron deficiency triggers cell-autonomous inflammatory gene expression
 
 The occurrence of non-apoptotic cell death is often associated with triggering of sterile inflammatory responses (Rock and Kono, 2008; Weinlich et al., 2017). To test if iron deficiency is sufficient to trigger immune responses, we treated mouse primary cortical neurons with deferoxamine, and monitored the expression of pro-inflammatory cytokines and interferon-stimulated genes, which are typically increased during inflammatory responses. We first observed the expression of tumor necrosis α (Tnfa) and found a robust increase in its transcript levels in deferoxamine-treated primary neurons (Figure 4I). We then measured the transcript levels of innate immune regulators such as Tlr9, Myd88, Irf7, Stat1 and Stat2, which were all robustly up-regulated in deferoxamine-treated cortical neurons (Figure 4J). Accordingly, the expression of other downstream interferon-stimulated genes such as Cxcl10, Isg15, Ifit1, Ifit3 and Ifi44 was also strongly induced in deferoxamine-treated neurons (Figure 4K). We have not tested the effect of bafilomycin or saliphe treatment in the primary neurons because these v-ATPase inhibitors would not just inhibit lysosomal function but also synaptic vesicle recycling (Farsi et al., 2018), and therefore trigger a number of events that are unrelated to iron homeostasis alone. These results underscore that unavailability of cytoplasmic iron is sufficient to trigger inflammatory signaling and cell death.
 
-## Iron deficiency is prevalent in the brain of an in vivo model of impaired lysosomal acidification
+### Iron deficiency is prevalent in the brain of an in vivo model of impaired lysosomal acidification
 
 Given the pro-inflammatory nature of Fe-deficiency caused by lysosomal v-ATPase inhibition, we sought to test the system in vivo, using a mouse model lacking Gaa (Gaa-KO), as described above. Absence of Gaa impairs the acidification of a large proportion of lysosomes, and fibroblasts obtained from these mice show iron deficiency and HIF-1α accumulation (see Figure 1F–I). The Gaa-KO mice show a predominantly muscular phenotype, albeit with a later disease onset when compared to human patients with Gaa loss-of-function mutations (Raben et al., 1998). Nevertheless, the mice present severe motor symptoms with onset around 14 months, and so we assessed them at earlier time points (6 and 12 months) to avoid this confounding factor. We focused on the brain of the Gaa-KO mice, as loss of lysosomal acidification has been observed in association with neurodegenerative diseases (Lie and Nixon, 2019). Furthermore, it has been shown that the muscular phenotype of the Gaa-KO mice can be rescued by re-expression of Gaa in the motor neurons (Lee et al., 2018; Todd et al., 2015; Turner et al., 2016), illustrating that lysosomal function is relevant in neuronal cell populations. First, we tested if the cortex of the Gaa-KO mice showed signs of iron deficiency. We observed a robust increase in the transcript levels of Tfrc in the cortex of 6- and 12-month-old mice (Figure 5A). Ferritin light chain protein levels were down-regulated both at 6- and 12 months (Figure 5B). Together, these results document an iron deficiency response in Gaa-KO brain. To further probe the functional consequences of iron-deficiency in the Gaa-KO brain, we also tested if HIF-1α was accumulating, by western blot, and found an increase in its levels in Gaa-KO cortex both at 6- and 12 months (Figure 5C). Furthermore, mitochondrial iron availability was also affected, as the activity of complex IV, which is dependent on Fe, was decreased in Gaa-KO cortex (Figure 5D), while the activity of complex V (loading control) was similar between WT and KO mice (Figure 5D). The decrease in complex IV activity (cytochrome c oxidase, COX) occurs despite the protein levels of the subunit COX1 were similar between WT and KO both in whole cell extracts (Figure 5—figure supplement 1A) and in mitochondrial extracts from mouse cortices (Figure 5—figure supplement 1B).
 
+![Figure 5.](https://cdn.elifesciences.org/articles/51031/elife-51031-fig5-v2.jpg)
+
+**Figure 5.:** (A) Tfrc mRNA levels in the cortex of 6 and 12 month old Gaa-/- mice and their wild type littermate controls. Black dots represent sample size (n) in each group. p values are unpaired two-tailed t-tests with Welch’s correction. Bars are depicted as mean ± SEM. (B) Western blot of FTL1 and GAPDH as loading control from cortical tissue lysates of 6 and 12 month old Gaa+/+ and Gaa-/- mice (n = 4 mice per group). (C) HIF-1α immunoblots with GAPDH as loading control from cortical tissue lysates of 6 and 12 month old Gaa+/+ and Gaa-/- mice (n = 4 mice per group). (D) Activity staining of native respiratory chain complex IV of mitochondria purified from cortices of 6 month old mice (n = 3; depicted as black dots). Complex V activity staining is used as loading control. The difference between activities (mean ± SEM) of groups is determined by the unpaired two-tailed t-test with Welch’s correction. (E) MRS reveals significant changes in metabolite concentrations in Gaa-/- mice in vivo. MRS (STEAM, TR/TE/TM = 6000/10/10 ms, 256 averages, (2.0 mm)3 volume-of-interest centered on the striatum) of 6 month old (upper row) and 12 month old (lower row) wild type (right column) and Gaa-/- mice (left column) in vivo, as summarized in Table 1, processed with a 1 Hz line broadening. GPC+PCh = Choline containing compounds, tCr = total creatine, ↑=significant signal intensity increases, ↓=significant signal intensity decreases. *p<0.05; **p<0.01, Mann-Whitney’s U-test. (F) Graphs depicted as mean ± SEM of n = 8 mice per group (6 months) or five mice per group (12 months) show decreased concentration of total choline-containing compounds in Gaa-/- mice in vivo. p values indicate the Mann-Whitney’s U-test.
+
+![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/51031/elife-51031-fig5-figsupp1-v2.jpg)
+
+**Figure 5—figure supplement 1.:** (A) Immunoblots of COX1 in whole cortical lysates of Gaa WT and KO mice at 6 months of age. GAPDH is used as loading control (n = 8). (B) Western blots of COX in mitochondria purified from Gaa WT and KO mouse cortices at 6 months of of age. ATP5A is used as loading control (n = 5). (C) PLP and MBP immunoblots from whole cortical lysates of 6 month old Gaa-/- mice and their wild type littermates (n = 8). GAPDH is used as loading control. (D) MRI (RF-spoiled 3D FLASH, TR/TE = 22/7.7 ms, flip angle 10°, fat suppression 90°, 117 µm isotropic resolution) of the brain of a 6-month-old wild-type and (left column) a 6-month-old Gaa-/-mouse (right column). Images are acquired from the mid-sagittal section, the sagittal section 2.4 mm from the midline, a coronal section showing the anterior commissure, and a horizontal section. They show the volume- as well as the region-of-interest used for the evaluation of the striatum (squares), the cerebral cortex (polygon), and the thalamus.
+
 We then performed in vivo magnetic resonance spectroscopy (MRS) and imaging in the mice at 6 and 12 months of age (Figure 5E and Figure 5—figure supplement 1D), to assess if the perturbations in iron homeostasis were widespread or in discrete brain regions. For this, we analyzed the thalamus, striatum and cerebral cortex, and in all three regions we found a decrease in the T2 relaxation time of water protons (Table 1), which is highly correlated with reduced labile iron pool levels (Vymazal et al., 1993). Interestingly, we also observed by MRS, reduced levels of choline-containing compounds, which may be due slow turnover of phosphatidylcholine, further suggesting impaired myelination (Figure 5E–F and Supplementary file 4).
+
+**Table 1.**
+ Relaxation times of water protons and Magnetization Transfer ratios determined by MRI (related to Figure 5).
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th></th>
+      <th colspan="2">6 months</th>
+      <th></th>
+      <th colspan="2">12 months</th>
+    </tr>
+    <tr>
+      <th>Background</th>
+      <th></th>
+      <th>Wild type</th>
+      <th>Gaa(-/-)</th>
+      <th></th>
+      <th>Wild type</th>
+      <th>Gaa(-/-)</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>n</td>
+      <td></td>
+      <td>n = 8</td>
+      <td>n = 8</td>
+      <td></td>
+      <td>n = 5</td>
+      <td>n = 5</td>
+    </tr>
+    <tr>
+      <td colspan="7">T1 (s)</td>
+    </tr>
+    <tr>
+      <td>Cerebral Cortex</td>
+      <td></td>
+      <td>1.67 ± 0.07</td>
+      <td>1.67 ± 0.07</td>
+      <td></td>
+      <td>1.65 ± 0.05</td>
+      <td>1.62 ± 0.09</td>
+    </tr>
+    <tr>
+      <td>Striatum</td>
+      <td></td>
+      <td>1.62 ± 0.05</td>
+      <td>1.64 ± 0.07</td>
+      <td></td>
+      <td>1.62 ± 0.03</td>
+      <td>1.58 ± 0.06</td>
+    </tr>
+    <tr>
+      <td>Thalamus</td>
+      <td></td>
+      <td>1.49 ± 0.03</td>
+      <td>1.52 ± 0.09</td>
+      <td></td>
+      <td>1.50 ± 0.04</td>
+      <td>1.46 ± 0.03</td>
+    </tr>
+    <tr>
+      <td colspan="7">T2 (ms)</td>
+    </tr>
+    <tr>
+      <td>Cerebral Cortex</td>
+      <td></td>
+      <td>40.3 ± 0.5</td>
+      <td>38.3 ± 0.8***</td>
+      <td></td>
+      <td>39.8 ± 0.7</td>
+      <td>37.9 ± 0.5*</td>
+    </tr>
+    <tr>
+      <td>Striatum</td>
+      <td></td>
+      <td>39.7 ± 1.0</td>
+      <td>37.3 ± 0.8**</td>
+      <td></td>
+      <td>38.5 ± 0.6</td>
+      <td>36.7 ± 0.7*</td>
+    </tr>
+    <tr>
+      <td>Thalamus</td>
+      <td></td>
+      <td>38.4 ± 1.0</td>
+      <td>35.9 ± 1.1**</td>
+      <td></td>
+      <td>37.2 ± 0.3</td>
+      <td>36.2 ± 0.8</td>
+    </tr>
+    <tr>
+      <td colspan="7">Magnetization Transfer Ratio (%)</td>
+    </tr>
+    <tr>
+      <td>Cerebral Cortex</td>
+      <td></td>
+      <td>7.5 ± 1.7</td>
+      <td>7.0 ± 1.7</td>
+      <td></td>
+      <td>7.8 ± 0.9</td>
+      <td>8.4 ± 0.6</td>
+    </tr>
+    <tr>
+      <td>Striatum</td>
+      <td></td>
+      <td>9.9 ± 0.7</td>
+      <td>9.0 ± 0.8*</td>
+      <td></td>
+      <td>9.8 ± 0.6</td>
+      <td>10.0 ± 0.9</td>
+    </tr>
+    <tr>
+      <td>Thalamus</td>
+      <td></td>
+      <td>12.5 ± 1.6</td>
+      <td>11.9 ± 1.9</td>
+      <td></td>
+      <td>12.9 ± 2.0</td>
+      <td>13.0 ± 0.9</td>
+    </tr>
+  </tbody>
+</table>
 
 We therefore tested whether myelination (which is also a Fe-dependent process) was affected in the Gaa-KO cortex. We observed that the abundance of myelination-related proteins such as proteolipid protein (PLP) and myelin basic protein (MBP) was decreased in Gaa-KO cortical homogenates (Figure 5—figure supplement 1C). Altogether, these results show that the Gaa-KO brain is iron-deficient, with consequences for HIF signaling, mitochondrial function and myelination.
 
-## Gaa-KO brain shows prevalent inflammation at early presymptomatic stages
+### Gaa-KO brain shows prevalent inflammation at early presymptomatic stages
 
 Having shown that the Gaa-KO brain presents functional iron deficiency akin to what was observed in cultured Gaa-KO fibroblasts, as well as in fibroblasts treated with v-ATPase inhibitors or fibroblasts with genetic silencing of vATPase subunits, we sought to determine if we could detect inflammatory signatures in the Gaa-KO mouse cortex. In order to have an unbiased approach, we performed RNA sequencing of WT (n = 5) and Gaa-KO (n = 5) 12 month-old cortices. We identified 1779 differentially expressed genes (adjusted p value < 0.05; fold change >2.0), of which 996 were up-regulated and 783 were down-regulated in Gaa-KO cortices. The differential gene list fully segregates WT and KO samples in hierarchical clustering (Figure 6A). The most significantly changed transcripts were Gaa (as expected) and several proteins related to immune responses, particularly complement activation, macrophage infiltration and genes induced by interferon signaling (Figure 6B). Accordingly, several pathways related to inflammation were found enriched in the Gaa-KO dataset (Figure 6C). We then determined which upstream regulators (specifically, transcription factors) were affected in the Gaa-KO cortex, and found that the interferon regulatory factors Irf7 and Irf3 were predicted as the two most active transcription factors (Figure 6D). Thus, we focused on the target genes of Irf7, and using the Gaa-KO cortex transcriptome data we observed that 17 out of 20 Irf7 targets in the Gaa-KO brain were robustly up-regulated (Figure 6E). Altogether, these results show in an unbiased manner that the 12 month old cortex of the Gaa-KO mouse presents a robust inflammatory signature involving Irf7 signaling.
 
 ![Figure 6.](https://cdn.elifesciences.org/articles/51031/elife-51031-fig6-v2.jpg)
 
-**Figure 6.:** Gaa-/- mice.(A) Hierarchical clustering of the brain samples of Gaa- and WT mice at 12 months of age. (-/-B) Volcano plot of the transcripts detected in the RNAseq analysis, highlighting those that were considered as differentially expressed genes (adjusted p value < 0.05, and fold-change >2). Some of the transcripts with the lowest p value between WT and KO are highlighted in the plot. (C) Results of the pathway analysis showing the pathways most enriched in the differentially expressed gene list of the Gaa-KO/WT cortex dataset. The pathways related to inflammation are highlighted in red. (D) Transcription factors predicted to be significantly active or repressed in the cortex of 12 month old Gaa mice compared to WT. The z-score is represented (positive z-score, predicted activation; negative z-score, predicted repression). (-/-E) Transcript levels of Irf7 targets recognized in the Gaadataset by Ingenuity Pathway Analysis. The targets are color-coded (red indicates higher expression in -/-Gaamice, green represents lower expression), showing that the vast majority is up-regulated, in agreement with the predicted activation of -/-Irf7. (F) Transcript levels of interferon-stimulated genes and their regulators in the cortices of 2 month, 6 month and 12 month old Gaa-/- mice and their wild type littermate controls. Number of mice per group is displayed as black dots in bars, which represent mean ± SEM. *p<0.05; **p<0.01; ***p<0.001, unpaired two-tailed t-test with Welch’s correction. (G) Whole cortical tissue immunoblots of increased GFAP levels and GAPDH as loading control in 6- and 12 month old wild type and Gaa-/- mice (n = 4 mice per group). (H) Representative images of GFAP (green) in the cortex of 6 month old Gaa-/- mice and their wild type littermate controls. Scale bar, 20 µm. Quantifications on the right show the increased number of GFAP-positive cells in the cortices of Gaa-/- mice (n = 3 mice per group) depicted as bars denoting mean ± SEM. p value is estimated from an unpaired two-tailed t-test with Welch’s correction.
+**Figure 6.:** (A) Hierarchical clustering of the brain samples of Gaa-/-- and WT mice at 12 months of age. (B) Volcano plot of the transcripts detected in the RNAseq analysis, highlighting those that were considered as differentially expressed genes (adjusted p value < 0.05, and fold-change >2). Some of the transcripts with the lowest p value between WT and KO are highlighted in the plot. (C) Results of the pathway analysis showing the pathways most enriched in the differentially expressed gene list of the Gaa-KO/WT cortex dataset. The pathways related to inflammation are highlighted in red. (D) Transcription factors predicted to be significantly active or repressed in the cortex of 12 month old Gaa-/- mice compared to WT. The z-score is represented (positive z-score, predicted activation; negative z-score, predicted repression). (E) Transcript levels of Irf7 targets recognized in the Gaa-/-dataset by Ingenuity Pathway Analysis. The targets are color-coded (red indicates higher expression in Gaa-/-mice, green represents lower expression), showing that the vast majority is up-regulated, in agreement with the predicted activation of Irf7. (F) Transcript levels of interferon-stimulated genes and their regulators in the cortices of 2 month, 6 month and 12 month old Gaa-/- mice and their wild type littermate controls. Number of mice per group is displayed as black dots in bars, which represent mean ± SEM. *p<0.05; **p<0.01; ***p<0.001, unpaired two-tailed t-test with Welch’s correction. (G) Whole cortical tissue immunoblots of increased GFAP levels and GAPDH as loading control in 6- and 12 month old wild type and Gaa-/- mice (n = 4 mice per group). (H) Representative images of GFAP (green) in the cortex of 6 month old Gaa-/- mice and their wild type littermate controls. Scale bar, 20 µm. Quantifications on the right show the increased number of GFAP-positive cells in the cortices of Gaa-/- mice (n = 3 mice per group) depicted as bars denoting mean ± SEM. p value is estimated from an unpaired two-tailed t-test with Welch’s correction.
 
 Next, we tested if the inflammatory signature in the Gaa-KO cortex can be detected at earlier ages. We measured by qPCR the transcript levels of several transcripts regulated by Irf7, most of which were up-regulated in the Gaa-KO brain at 2, 6 and 12 months of age (Figure 6F). The exception was Stat1, which was up-regulated only at 12 months.
 
@@ -125,9 +287,17 @@ Glial activation is a typical marker of brain inflammation, and can be assessed 
 
 Altogether, these results show that the brain of GAA-KO exhibits increased inflammatory and interferon signatures and enrichment of innate immune cells detectable already at 2 months of age.
 
-## Iron deficiency perturbs mtDNA homeostasis in vivo
+### Iron deficiency perturbs mtDNA homeostasis in vivo
 
 Mitochondrial malfunction has been shown to be a contributor to inflammatory reactions (West and Shadel, 2017). In particular, imbalance in mtDNA homeostasis is a robust trigger of type I interferon responses (West et al., 2015). Therefore, we sought to test if iron deficiency, which we showed to be sufficient to trigger inflammation in cultured neurons (see Figure 4I–K), was associated with mtDNA perturbation in vivo. First, we measured mtDNA copy number in the Gaa-KO cortex. We observed a reduction in mtDNA of about 20% in newborn mice, 25% at 2 months, and a robust decrease of ~50–60% in 6- and 12 month old Gaa-KO cortices (Figure 7A). Notably, the protein levels of TFAM, a key protein for mtDNA replication, transcription and maintenance, were reduced by ~50% in the 6 month-old Gaa-KO cortex (Figure 7B). This decrease is akin to the loss of TFAM and mtDNA observed in Tfam heterozygous knockout mice, in which mtDNA instability was shown to trigger interferon signaling (West et al., 2015). The decrease in TFAM protein levels cannot be explained only by decreased transcription, since Tfam transcript levels are only 20% down in the Gaa-KO brain (Figure 7—figure supplement 1A).
+
+![Figure 7.](https://cdn.elifesciences.org/articles/51031/elife-51031-fig7-v2.jpg)
+
+**Figure 7.:** (A) Age-dependent decline in relative mtDNA copy number levels in the cortex of Gaa-/- mice from 0 to 12 months of age. Number of mice per group is depicted as dots in bars which denote mean ± SEM. *p<0.05; **p<0.01; ***p<0.001, unpaired two-tailed t-test with Welch’s correction. (B) Western blot showing reduced TFAM and GAPDH as loading control in the cortex of Gaa-/- mice and their wild type littermate controls (n = 8 mice per group). (C–D) Iron supplementation rescues mtDNA copy number defects in Gaa-/- fibroblasts (C) and in the cortex of 2 month old Gaa-/- mice (D). Results are summarized as mean ± SEM of n = 3 independent measures in Gaa-/- fibroblasts and n = 6 mice per group indicated as black dots for 2 month old Gaa-/- mice. *p<0.05; ***p<0.001, Welch’s one-way ANOVA test with Dunnett’s correction for multiple comparisons. All conditions compared to the untreated Gaa-/- fibroblasts (C) or Gaa-/- mice fed standard chow (D). (E) Iron supplementation as iron-enriched chow dampens the increased expression of innate immune response genes in Gaa-/- mice at 2 months of age. This result is depicted as a Heatmap for n = 6 mice per group, in which blue denotes decreased expression of interferon-stimulated genes relative to white (no change or baseline) and red denotes increased expression. Note the dampening of the hot red in Gaa-/- on standard chow relative to the cohort of Gaa-/- mice on iron-enriched chow. (F) Immunoblot of GFAP and TNFα in the cortices of Gaa-/- mice and their wild type littermate controls fed standard or iron-enriched chow for 2 months (n = 3). Note the reduction in GFAP and TNFα protein amounts following iron supplementation in Gaa-/- mice. GAPDH is used as loading control (G) Iron-enriched diet restores increased levels of cytokine and chemokines to control levels in the cortices of 2 month old Gaa-/- mice. Cytokines are increased in Gaa-/- mice fed standard chow, and are barely detectable in Gaa-/- mice fed iron-enriched diet or their wild type littermate controls. Levels of cytokines and chemokines are shown as mean ± SEM (n = 3 mice per group, black dots) and p values represent Brown-Forsythe’s one-way ANOVA tests estimated as differences between Gaa-/- mice on standard chow and all other experimental groups. (H) Mouse gait analysis shows rescue of stride length following 2 months of iron supplementation in Gaa-/- mice. Data is presented as mean ± SEM. Each experimental data point (hollow circles) represents stride length measured on all four limbs of each animal. 13–19 animals per group were used. p value is determined by the Welch’s one-way ANOVA followed by Dunnett’s correction for multiple comparisons of all groups to Gaa-/- mice fed standard diet.
+
+![Figure 7—figure supplement 1.](https://cdn.elifesciences.org/articles/51031/elife-51031-fig7-figsupp1-v2.jpg)
+
+**Figure 7—figure supplement 1.:** (A) Transcript levels of mtDNA maintenance and transcription genes in Gaa-/- mice and their wild type littermates. Graphs represent mean ± SEM, n = 8 mice per group. ***p<0.001; ns p>0.05, unpaired two-tailed t-test with Welch’s correction. (B–C) mtDNA copy number levels in 300 µM Dfo-treated fibroblasts (B) and neurons (C). Results are summarized as mean ± SEM of four independent experiments (depicted as black dots). p values are estimated as unpaired two-tailed t-test with Welch’s correction. (D) Irp1-/- and Irp2-/- fibroblasts show reduced mtDNA copy number levels. Bars represent mean ± SEM, n = 4 (black dots). p value, Welch’s one-way ANOVA with Dunnett’s correction for multiple comparisons made to WT group. (E) mtDNA copy number decline in Gaa-/- fibroblasts relative to WT. Results are shown as mean ± SEM, n = 6 (black dots). p value is the unpaired two-tailed t-test with Welch’s correction. (F) Whole cell immunoblots of TFAM in Gaa-/- fibroblasts and their WT controls (n = 4). GAPDH is used as a loading control. (G) Iron-enriched diet restores increased levels of cytokine and chemokines to control levels in the cortices of 2 month old Gaa-/- mice. Cytokines are increased in Gaa-/- mice fed standard chow, and are barely detectable in Gaa-/- mice fed iron-enriched diet or their wild type littermate controls. Levels of cytokines and chemokines are shown as mean ± SEM (n = 3 mice per group, black dots) and p values represent Brown-Forsythe’s one-way ANOVA tests estimated as differences between Gaa-/- mice on standard chow and all other experimental groups (H) Representative image of cytokine array blots (n = 3) per group quantified and presented as graphs in Figure 7G and Figure 7—figure supplement 1G.
 
 We then turned to clonal cells to test if the loss of mtDNA observed in vivo could be triggered in cells by iron deficiency. We first measured mtDNA copy number in WT fibroblasts treated with the lysosomal iron chelator deferoxamine, and observed a reduction of ~40% in mtDNA (Figure 7—figure supplement 1B). A similar result was obtained by deferoxamine treatment of primary cortical neurons (Figure 7—figure supplement 1C).
 
@@ -137,7 +307,7 @@ mtDNA synthesis relies on dNTPs imported from the cytoplasmic dNTP pool (Copelan
 
 Having shown that mtDNA levels can be rescued in iron-deficient cells by Fe-citrate supplementation in the medium, we sought to test if the same principle was valid in vivo. Therefore, we tested if increasing the concentration of iron in the diet would avoid loss of mtDNA in vivo, as well as ameliorate the downstream consequences of iron-deficiency in Gaa-KO mice. The change in iron levels in the diet is most efficient when it occurs at weaning. Thus, upon separating the litters from the mothers (at post-natal day 21), we gave the weaned mice an iron-enriched diet (500 mg Fe/Kg) or a control diet (179 mg Fe/Kg). We followed the mice until they were two months of age, and measured mtDNA copy number in the cortex. While the GAA-KO mice treated with the control Na-citrate diet showed a ~ 20% decrease in mtDNA in cortex relative to the WT littermates, the Gaa-KO cohort fed iron-enriched chow had mtDNA copy number similar to the WT mice (Figure 7D). This result shows that the mitochondrial phenotype of young Gaa-KO mice can be rescued by increasing the levels of dietary iron.
 
-## Dietary iron supplementation corrects inflammation in the Gaa-KO brain
+### Dietary iron supplementation corrects inflammation in the Gaa-KO brain
 
 The rescue of mtDNA levels in Gaa-KO brain by using a Fe-enriched diet encouraged us to test if other parameters responding to iron deficiency would also be corrected, in particular inflammation. So, we analyzed the transcript levels of interferon-stimulated genes and those of their regulators in the cortex of 2 month old mice in Fe-enriched or control diet, and observed that in the iron-supplemented Gaa-KO mice the inflammatory response was ablated (Figure 7E). Furthermore, we observed that the protein levels of GFAP and of the inflammatory mediator TNFα were also decreased by the iron-supplementation in the Gaa-KO cortex (Figure 7F).
 
@@ -165,37 +335,607 @@ This manuscript presents a novel role of mitochondria-lysosome crosstalk in the 
 
 ## Materials and methods
 
-## Experimental model and subject details
+**Key resources table**
 
-## Mice
+
+<table>
+  <thead>
+    <tr>
+      <th>Reagent type (species) or resource</th>
+      <th>Designation</th>
+      <th>Source or reference</th>
+      <th>Identifiers</th>
+      <th>Additional information</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATP5B</td>
+      <td>Self-made</td>
+      <td>PRAB4826</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-ATP6V1H</td>
+      <td>Abcam</td>
+      <td>Cat# Ab187706</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-COX1</td>
+      <td>Self-made</td>
+      <td>PRAB2035</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cleaved caspase 3</td>
+      <td>Cell signaling</td>
+      <td>RRID: AB_2070042</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-cleaved PARP</td>
+      <td>Cell signaling</td>
+      <td>RRID: AB_10699459</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-FTH1</td>
+      <td>Cell signaling</td>
+      <td>RRID: AB_1903974</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Ferritin light chain</td>
+      <td>Abcam</td>
+      <td>RRID: AB_1523609</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GAPDH</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID: AB_796208</td>
+      <td>WB (1:10000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-GFAP</td>
+      <td>Abcam</td>
+      <td>RRID: AB_305808</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HA</td>
+      <td>Abcam</td>
+      <td>RRID:AB_301017</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HIF-1 alpha</td>
+      <td>Novus</td>
+      <td>RRID: AB_10000663</td>
+      <td>WB (1:500)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-HPRT</td>
+      <td>Abcam</td>
+      <td>RRID: AB_297217</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LAMP1</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID:AB_477157</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-LC3B</td>
+      <td>Cell signaling</td>
+      <td>RRID: AB_2137707</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-MBP</td>
+      <td>MPI-EM Goettingen</td>
+      <td>Klaus-Armin Nave</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-Total Rodent OXPHOS Cocktail</td>
+      <td>Abcam</td>
+      <td>RRID: AB_2629281</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PEX5</td>
+      <td>Sigma-Aldrich</td>
+      <td>RRID:AB_10673419</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-PLP</td>
+      <td>MPI-EM Goettingen</td>
+      <td>Klaus-Armin Nave</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-SQSTM1</td>
+      <td>Abcam</td>
+      <td>RRID: AB_945626</td>
+      <td>WB (1:8000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mtTFA</td>
+      <td>Abcam</td>
+      <td>RRID: AB_2651017</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TNFα</td>
+      <td>Abcam</td>
+      <td>Cat# Ab183218</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-TOM20</td>
+      <td>Proteintech Group</td>
+      <td>RRID: AB_2207530</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VAPB</td>
+      <td>Bethyl Laboratories</td>
+      <td>RRID:AB_2780841</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VDAC1</td>
+      <td>Abcam</td>
+      <td>RRID: AB_443084</td>
+      <td>WB (1:2000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-VHL</td>
+      <td>Santa Cruz</td>
+      <td>RRID: AB_2215955</td>
+      <td>WB (1:1000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anti-mouse IgG</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID: AB_2307392</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Antibody</td>
+      <td>Anit-rabbit IgG</td>
+      <td>Jackson Laboratory</td>
+      <td>RRID: AB_2307391</td>
+      <td>WB (1:4000)</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Antimycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# A8674</td>
+      <td>1 µM, 20 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bafilomycin</td>
+      <td>Santa Cruz</td>
+      <td>Cat# sc-201550</td>
+      <td>500 nM, 50 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Bodipy581/591 C11</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# D3861</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Deferoxamine mesylate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# D9533</td>
+      <td>300 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dimethyl 2-oxoglutarate</td>
+      <td>Th. Geyer GmbH</td>
+      <td>Cat# 349631</td>
+      <td>5 mM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran Oregon Green 488</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# D7170</td>
+      <td>0.4 mg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Dextran Tetramethylrhodamine</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# D1817</td>
+      <td>1 mg/mL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Erastin</td>
+      <td>Cayman Chemical</td>
+      <td>Cat# 17754</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FCCP</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# C2920</td>
+      <td>2 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Mito-FerroGreen</td>
+      <td>Dojindo Laboratories</td>
+      <td>Cat# M489</td>
+      <td>5 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>FerroOrange</td>
+      <td>Goryo Chemical</td>
+      <td>Cat# GC904</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ferrostatin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# SML0583</td>
+      <td>5 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>H2DCF-DA</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# D399</td>
+      <td>10 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Ferric citrate</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# F3388</td>
+      <td>150 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine RNAiMAX Reagent</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 13778–150</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Lipofectamine 2000</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# 11668–019</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>MitoSox Red Mitochondrial Superoxide indicator</td>
+      <td>Thermo Fisher</td>
+      <td>Cat# M36008</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Necrostatin-1s</td>
+      <td>Abcam</td>
+      <td>Cat# Ab221984</td>
+      <td>5 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Oligomycin</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# O4876</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Pierce anti-HA Magnetic Beads</td>
+      <td>Thermo Scientific</td>
+      <td>Cat# 88836</td>
+      <td>200 µL</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Rotenone</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# R8875</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Saliphenylhalamide</td>
+      <td>Omm Scientific Inc</td>
+      <td>Donald R. Stewart</td>
+      <td>500 nM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>Staurosporine</td>
+      <td>LC Laboratories</td>
+      <td>Cat# S-9300</td>
+      <td>1 µM</td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>TriReagent</td>
+      <td>Sigma-Aldrich</td>
+      <td>Cat# T9424</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Chemical compound, drug</td>
+      <td>z-VAD</td>
+      <td>InVivoGen</td>
+      <td>Cat# tlrl-vad</td>
+      <td>20 µM</td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Iron assay Kit</td>
+      <td>Abcam</td>
+      <td>Cat# Ab83366</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Crystal RNA Mini Kit</td>
+      <td>BioLab Products</td>
+      <td>Cat# 31-010-404</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Luna Universal qPCR Master Mix</td>
+      <td>New England Biolabs</td>
+      <td>Cat# M3003E</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>iScript cDNA Synthesis Kit</td>
+      <td>Bio-Rad</td>
+      <td>Cat# 170–8891</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Proteome Profiler Mouse Cytokine Array Kit, Panel A</td>
+      <td>R and D Systems</td>
+      <td>Cat# ARY006</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Cell Titer-Glo Luminiscence Cell Viability Assay</td>
+      <td>Promega</td>
+      <td>Cat# G7572</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Commercial assay or kit</td>
+      <td>Seahorse XFe Cell Mito Stress Test Kit</td>
+      <td>Agilent</td>
+      <td>Cat# 103015–100</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculsus)</td>
+      <td>Murine embryonic fibroblast (wild type)</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculsus)</td>
+      <td>Gaa-/- murine embryonic fibroblasts</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculsus)</td>
+      <td>Primary cortical neurons</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculsus)</td>
+      <td>Irp1-/- and Irp2-/- murine embryonic fibroblasts</td>
+      <td>Israel Institute of technology</td>
+      <td>Esther Meyron-Holtz</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculsus)</td>
+      <td>Tmem192-3xHA murine embryonic fibroblasts</td>
+      <td>This paper</td>
+      <td>N/A</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Cell line (M. musculsus)</td>
+      <td>Mcoln1-/- murine embryonic fibroblasts</td>
+      <td>Ludwig Maximillians- University, Munich</td>
+      <td>Christian Grimm</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Genetic reagent (M. musculus)</td>
+      <td>Mouse: B6;129-GaatmRabn/J</td>
+      <td>Jackson Laboratory</td>
+      <td>JAX: 004154</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Sequence-based reagent</td>
+      <td>qPCR primer sequences</td>
+      <td>Integrated DNA technologies</td>
+      <td>This paper (N/A)</td>
+      <td>Sequences inSupplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pAcGFP1-Mito</td>
+      <td>Clontech</td>
+      <td>Cat# 632432</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Recombinant DNA reagent</td>
+      <td>Plasmid: pLJC5-Tmem192-3xHA</td>
+      <td>Addgene</td>
+      <td>Cat# 102930</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Transfected reagent (M. musculus)</td>
+      <td>siRNA to Atp6v1h</td>
+      <td>Integrated DNA technologies</td>
+      <td>This paper (N/A)</td>
+      <td>Sequences inSupplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Transfected reagent (M. musculus)</td>
+      <td>siRNA to Slc11a2</td>
+      <td>Integrated DNA technologies</td>
+      <td>This paper (N/A)</td>
+      <td>Sequences in Supplementary file 5</td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Metascape</td>
+      <td>Zhou et al., 2019</td>
+      <td>http://metascape. org/gp/index. html#/main/step1</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Prism version 8.0</td>
+      <td>GraphPad Software Inc</td>
+      <td>https://www.graphpad.com/scientific-software/prism/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>ImageJ version 1.51j8</td>
+      <td>NIH</td>
+      <td>https://imagej.nih.gov/ij/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Ingenuity Pathway Analysis</td>
+      <td>Qiagen Bioinformatics</td>
+      <td>https://www.qiagenbioinformatics.com/products/ingenuity-pathway-analysis/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Partek Genomics Suite Analysis Software</td>
+      <td>Partek Inc</td>
+      <td>http://www.partek.com/partek-genomics-suite/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Wave Desktop software</td>
+      <td>Agilent</td>
+      <td>https://www.agilent.com/en/products/cell-analysis/software-download-for-wave-desktop</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>Digigait Imaging and Analysis software</td>
+      <td>Mouse Specifics Inc</td>
+      <td>https://mousespecifics.com/digigait/</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Software, algorithm</td>
+      <td>FlowJo v10</td>
+      <td>Tree Star Inc</td>
+      <td>https://www.flowjo.com/solutions/flowjo/downloads</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+### Experimental model and subject details
+
+#### Mice
 
 The Gaa-/- mice (B6:GaatmRbn/J) used in this study were purchased from the stock of The Jackson Laboratory, bred and housed under standard pathogen-free conditions at the animal facility of the European Neuroscience Institute with access to food and water ad libitum. All animal experiments were carried out in accordance with the European guidelines for animal welfare and were approved by the Lower Saxony Landesamt fur Verbraucherschutz and Lebensmittelsicherheit (LAVES) registration number 15–883. Except for iron-enriched chow experiments in which mixed sex cohorts were used at 2 months of age, all other experiments were performed on only male cohorts at 0, 2, 6 and 12 months of age. Regular chow contains 179 mg Fe/Kg, and the iron-enriched chow contains 500 mg Fe/Kg. The iron-enriched and control diet were purchased from Brogaarden (Denmark).
 
-## Cell lines and primary cultures
+#### Cell lines and primary cultures
 
 Murine embryonic fibroblasts (MEFs) were prepared in-house from Gaa-/- mice and their wildtype littermate controls. MEFs from wild type, Irp1-/- and Irp2-/- mice were obtained from the Technion-Israel Institute of Technology (Esther Meyron Holtz). All these lines were cultured in Dulbecco’s modified Eagle’s medium with high glucose (Gibco) supplemented with 10% fetal bovine serum (FBS) and 1% Penicillin/Streptomycin at 37°C and 5% CO2, in a humidified incubator, unless otherwise stated. Mycoplasma testing was routinely carried ou as described (Murdoch et al., 2016), and cell lines tested negative. Wild type C57BL/6J P0 pups were used to prepare primary cortical cultures as previously described (Ferguson et al., 2007). Briefly, mouse cortices were dissected under sterile conditions and digested in freshly prepared, warm enzyme solution (1.5 mM cysteine, 20 U/mL papain, 0.75 mM EDTA, 1.5 mM CaCl2 and 10 ul/mL DNase) in HBSS medium for 30 min at 37°C on a shaker. The enzyme solution was replaced with plating medium (Neurobasal medium supplemented with 5% FBS, 1% glutamax, 2% B27 supplement and 0.5% Penicillin/Streptomycin) for 5 min. Neuronal tissue was washed in HBSS medium and cultured in plating medium for 12 hr at 37°C and 5% CO2, in a humidified incubator. The plating medium was replaced with neuronal medium (as plating medium without 5% FBS) and neurons were cultured under standard growth conditions (37°C and 5% CO2) in a humidified incubator. All neuronal experiments were carried out with neurons at DIV 14. For transient siRNA-mediated silencing of Slc11a2 or Atp6v1h, MEFs were seeded and cultured for 24 hr prior to transfection under normal growth conditions. The medium was replaced with fresh growth medium. siRNA constructs along with scrambled non-targeting control and Lipofectamine RNAiMAX reagent were diluted separately in OptiMEM reduced serum medium according to supplier’s instructions, mixed and incubated for five minutes at room temperature. The optimized siRNA-Lipofectamine mix was added dropwise to cells, incubated for 72 hr, and harvested for subsequent assays.
 
-## Generation of stable 3XHA-tagged Tmem192 cell line
+#### Generation of stable 3XHA-tagged Tmem192 cell line
 
 Lentiviral suspensions were obtained by lipofectamine-mediated transfection of HEK293T packaging cells with an optimized mix of envelope and packaging plasmids, and pLJC5-Tmem192- 3xHA (a kind gift from David Sabatini, Addgene 102930). Following manufacturer’s instructions, lentiviral vectors were concentrated using the Lenti-X concentrator. Mouse embryonic fibroblasts were transduced with concentrated viral suspension supplemented with 8 ug/ml Polybrene and cells with puromycin resistance were selected and polyclonally expanded. Overexpression efficiency was confirmed by anti-HA immunoblots of whole cells lysates.
 
-## Behavior experiments
+#### Behavior experiments
 
 Mouse behavior experiments were performed as detailed in Rostosky and Milosevic (2018). In brief, ventral plane videography for gait analysis was performed on Gaa-/- mice and their wild type littermate controls fed standard or iron-enriched chow for 2 months using Digigait instrumentation at a speed of 40cms−1. For each group 13–19 male mice were used for behavior experiments. Results were analyzed with software from Mouse Specifics according to the manufacturer’s protocol and differences were determined by the Welch’s one-way ANOVA test with Dunnett’s correction for multiple comparison to Gaa-/- mice fed standard diet.
 
-## Cell culture drug treatments
+#### Cell culture drug treatments
 
 All experiments involving drug treatments or iron supplementation in cells were carried out in MEFs prepared from wild type C57BL/6J mice under the standard growth conditions stated above (see ‘Cell lines and primary cultures’) unless otherwise stated. Briefly, following seeding and overnight incubation, cells were washed with warm PBS and treated for 24 hr with growth medium containing final concentrations of 0.5 µM bafilomycin, 0.5 µM saliphenylhalamide or 300 µM deferroxamine. Experiments involving iron supplementation were carried out for 48 hr with a final concentration 150 µM Fe-citrate (or Na-citrate as control) in growth medium. For each experiment, the used concentration of drugs is stated in the corresponding figure legends including dimethyl-ketoglutarate (5 mM), zVAD (20 µM), Ferrostatin (5 µM), Erastin (10 µM), Antimycin (20 µM) and Necrostatin-1s (5 µM).
 
-## Cell viability and cell death assay
+#### Cell viability and cell death assay
 
 Cell viability or death was determined using the Cell Titer Glo Luminiscence cell viability assay (Promega) following manufacturer’s instructions. Briefly 8000 fibroblasts per well were cultured in 200 uL of DMEM high glucose medium supplemented with 10% FBS and 1% Penicillin/Streptomycin as at least technical triplicates for each treatment in a 96-well plate. Following overnight culture, the initial number of cells prior to treatment was determined from five untreated wells. MEFs were then treated with the indicated drugs as described in each experimental condition for 24 hr or 48 hr in 100 uL of medium. Prior to cell number measurements, plates and reagents were equilibrated to room temperature. 100 uL of Cell Titer Glo reagent (Promega) was added to each well, mixed and the luminescence after 10 min of incubation was read in a microplate reader (Synergy H1, Biotek). Cell viability was determined from a standard calibration curve and reported as log2 fold change of cell numbers relative to that at the initial time point prior to treatment. Proliferation of cells is shown as positive log2 fold change while cell death is depicted as negative log2 fold change.
 
-## Mouse brain sample preparation
+#### Mouse brain sample preparation
 
 For all biochemical and q-RT-PCR experiments, mouse tissues were harvested, snap frozen in liquid nitrogen and stored at −80°C. Briefly, mice were anesthesized with isofluorane and euthanized by cervical dislocation. Mouse brain was dissected into cortices, hippocampi and rest of brain, rinsed in PBS, transferred into tubes and snap frozen in liquid nitrogen. These samples were frozen at −80°C until processed for each experiment accordingly. For Immunohistochemical assays, mice were anethesized by peritoneal injection with 40 mg/mL chloral hydrate in PBS and perfused with 100 U/mL heparin followed by cold 4% para-formaldehyde (PFA) in PBS. Harvested brains were post-fixed overnight in 4% PFA at 4°C, slowly dehydrated in 12–18% gradients of sucrose solutions and embedded in OCT (Tissue Tek) in a cryomold, frozen in isopentane set in liquid nitrogen and stored at −80°C.
 
-## Fluorescence microscopy and image analysis
+#### Fluorescence microscopy and image analysis
 
 To determine cytoplasmic and mitochondrial labile iron levels by microscopy, MEFs were seeded in poly-L-lysine coated coverslips in 12-well plates, treated with bafilomycin for 24 hr and loaded with FerroOrange and Mito-FerroGreen respectively. Live cell imaging of cells was performed with a Nikon/Perkin Elmer Ultra VIEW VoX system (Perkin Elmer).
 
@@ -203,60 +943,60 @@ Mitochondrial morphology of bafilomycin-treated cells was assessed as described 
 
 Frozen brain tissue as prepared before see ‘Mouse brain sample preparation’ above were used for Immunohistochemical assays to determine GFAP levels. In brief, 10 µM thick sagittal brain sections were cut with a cryostat, post-fixed and permeabilized with 0.1% Triton X-100. Immunofluorescence of the sections was performed as described (Milosevic et al., 2011). Image analysis was carried out as detailed in Fonseca et al. (2019) using ImageJ software version 1.51j8.
 
-## Assessment of lysosomal acidification
+#### Assessment of lysosomal acidification
 
 Lysosomal pH was assessed as decribed (Fernandez-Mosquera et al., 2019). Briefly, we loaded MEFs with two dextran molecules, one labeled with Oregon Green (488) and the other with Tetramethylrhodamine (TMRM). The emission at 488 nm is quenched under acidic pH. The cells were incubated with dextrans in full medium during 6 hr, after which the dextrans were removed, the cells washed twice in PBS, and incubated in full medium overnight. The images were collected from live cells in imaging buffer in the next morning, using Spinning Disk confocal microscopy. The red channel was used to generate a mask on which the intensity of the green channel was measured. The intensity was then normalized to the area of the mask. WT fibroblasts treated with bafilomycin were used as positive control for loss of lysosomal acidification.
 
-## Isolation of lysosomes
+#### Isolation of lysosomes
 
 Lysosomes were purified by the LysoIP method as described in Abu-Remaileh et al. (2017). Briefly 3xHA-tagged Tmem192 mouse embryonic fibroblasts were treated for 24 hr with or without 50 nM Baf. The medium was aspirated, and cells were washed twice with warm PBS, scraped into ice-cold KPBS (136 mM KCl, 10 mM KH2PO4, pH 7.25 adjusted with KOH) and centrifuged at 1000xg for 2 min at 4°C. 200 uL of anti-HA magnetic beads for each experimental condition were washed 3 times in 1 mL KPBS. The subsequent steps were carried out in the cold room. The cell pellets were resuspended in 1 mL KPBS, and 200 uL of the suspension was collected into separate tubes for whole cell extracts. The rest of the cell suspension was transferred into a 2 mL Dounce homogenizer and homogenized gently with 35 strokes while avoiding trapping air bubbles. The homogenate was centrifuged at 1000xg at 4°C for 2 min. The supernatant was carefully transferred into the tubes containing the pre-washed anti-HA magnetic beads and incubated for 10 min at 4°C on a rotator shaker. Immunoprecipitates were carefully washed three times in 1mLKPBS on a MagnaRack. Purified lysosomes were used for iron measurements or lysed for immunoblotting.
 
-## Isolation of cortical mitochondria
+#### Isolation of cortical mitochondria
 
 Mouse cortices were harvested and mitochondria were purified from the tissues as described in Lazarou et al. (2007). In brief, tissues were Dounce homogenized on ice in homogenization buffer (300 mM Trehalose, 10 mM KCl, 10 mM HEPES pH 7.4 supplemented freshly with 0.2% BSA and protease/phosphatase inhibitor cocktail), centrifuged twice at 700xg for 10 min at 4°C to pellet tissue debris and nuclear fractions. The supernatant was centrifuged at 11000xg for 15 min at 4°C to separate the mitochondria.
 
-## Blue native (BN) –PAGE and complex IV activity staining
+#### Blue native (BN) –PAGE and complex IV activity staining
 
 Isolated mitochondria were solubilized in buffer containing 1% digitonin and protein complexes were separated by BN-PAGE as previously described (Wittig and Schägger, 2005). For native complex IV activity staining, gels were equilibrated in 50 mM Potassium phosphate buffer (pH 7.4) and stained at 30°C with complex IV activity staining buffer (50 mM KPi pH 7.4, 0.5 mg/mL diaminobenzidine (DAB) and 1 mg/mL reduced cytochrome c) until the brown oxidized DAB stains were visible. The intensity of DAB stain (complex IV activity) was quantified with Imagequant TL (GE Healthcare Life Sciences). For native complex V activity staining, gels were equilibrated in 35 mM Tris, 220 mM Glycine (pH 8.3) and stained at 30°C in assay buffer (35 mM Tris, 220 mM glycine, 14 mM MgSO4, 0.2% Pb(NO3)2, 8 mm ATP (pH 8.3)).
 
-## Immunoblotting
+#### Immunoblotting
 
 Whole cell extracts of cultured MEFs or lysosomal extracts from purified lysosomes were lysed in 1.5% n-dodesylmaltoside (Roth) in PBS supplemented with protease and phosphatase inhibitor cocktail (Thermo Fisher Scientific) as described (Fernandez-Mosquera et al., 2019). For brain (cortical) lysates, snap frozen and ground tissues were lysed in RIPA buffer (50 mM Tris pH 8.0, 150 mM NaCl, 1% Triton X, 0.5% sodium deoxycholate and 0.1% SDS) freshly supplemented with protease and phosphatase inhibitor cocktail. Protein concentrations of whole cell extracts and tissue lysates were determined using a Bradford Protein assay (Bio-Rad). 50 μg of sample proteins per well were subjected to SDS-PAGE and transferred to polyvinylidene fluoride (PVDF) membranes (Amersham, Life Technologies). Membranes were blocked in 5% Milk in TBS tween and probed with the following primary antibodies: HIF-1 alpha (Novus), GAPDH (Sigma-Aldrich),SQSTM1 (Abcam), ATP6V1H (Abcam), VAPB (Bethyl), PEX5 (Sigma), anti-HA (Abcam), LAMP1 (Sigma Aldrich), (LC3B (Cell signaling), mtTFA (Abcam), Total rodent OXPHOS cocktail (Abcam), TNFα (Abcam), cleaved caspase 3 (Cell signaling), cleaved PARP (Cell signaling), GFAP (Abcam), PLP and MBP (Kind gift of K-A Nave, MPI-EM), FTH1 (Cell signaling), Ferritin light chain (Abcam), TOM20 (Proteintech), VDAC1 (Abcam), VHL (Santa Cruz) and self-made rabbit polyclonal antibodies to COX1 and ATP5B. HRP-conjugated secondary antibodies against mouse and rabbit IgGs (The Jackson Laboratory) were used. Band densitometric quantifications were determined using Image J software version 1.51j8.
 
-## Mitochondrial respiration measurements
+#### Mitochondrial respiration measurements
 
 Mitochondrial oxygen consumption rate (OCR) was measured in fibroblasts using the XF96 Extracellular Flux analyzer (Seahorse Bioscience) as described (Yambire et al., 2019). Briefly, cells were seeded at 20000 cells per well in XF96 cell culture multi-well plates and cultured overnight under standard conditions stated previously (see ‘Cell lines and primary cultures’ above). Cells were then treated with the indicated drugs for 24 hr while XF96 cartridges were incubated overnight in XF calibrant at 37°C in a non-CO2 incubator. Prior to OCR measurements, the growth medium containing the indicated treatments of cells was exchanged with XF medium containing 1 µg/mL Hoechst dye, stained for 10 min to determine cell numbers, and subsequently incubated at 37°C in a non-CO2 incubator for 1 hr. For OCR profiles, 1 uM Oligomycin, 2 uM FCCP and 1 uM mix of Rotenone and Antimycin loaded into corresponding microwells in the XF96cartridge plate. Following equilibration of sensor cartridges, XF96 cell culture plate was loaded into the XF96 Extracellular Flux analyzer at 37°C and OCR was measured after cycles of mixing and acquiring data (basal) or inhibitor injection, mixing and data acquisition. Results were analyzed by the WAVE desktop software (Agilent) and normalized to the number of cells determined prior to assay.
 
-## Quantitative RT-PCR
+#### Quantitative RT-PCR
 
 RNA from MEFs was extracted using the Crystal RNA mini Kit (Biolab,). For tissue RNA extraction, the TriReagent (Sigma, T9424) was used according to supplier instructions. RNA concentration and quality were determined using Nanodrop (PeqLab) and cDNA was synthesized with the iScript cDNA synthesis kit (Bio-Rad) following manufacturer’s protocol. Each 9 μl reaction for q-RT-PCR was made of 4 μl diluted cDNA, 0.25 μl of each primer (from 25 μM stock) and 4.5 μl of Luna Universal Master Mix (New England Biolabs). The q-RT-PCR reactions were run on the QuantStudio 6 Flex Real-Time PCR system (Applied Biosystems). qPCR results were analyzed using the ΔΔCt method relative to the mean of housekeeping genes (Rps12, Hprt and Gapdh). Relative values for mtDNA and nDNA genes were used to generate mtDNA copy number levels per nuclear genome. Each biological data point represents the average of at least technical triplicates.
 
-## mtDNA copy number analysis
+#### mtDNA copy number analysis
 
 To measure relative mtDNA copy number levels, total DNA was isolated from cultured MEFs or tissues as described previously in Cotney et al. (2007). Briefly, cells or tissues were lysed in 500 µL DNA extraction buffer (50 mM Tris-HCl pH 8.5, 0.25% SDS, 1 mM EDTA pH 8.0, 5 mM DTT) by boiling for 10 min. Samples were cooled to room temperature and incubated with 100 µg RNAse A for 3 hr at 37°C followed by incubation with 100 µg of Proteinase K at 55°C overnight. After Proteinase K digestion, samples were boiled at 95°C, allowed to cool to room temperature and the DNA concentration determined using Nanodrop (Peqlab). Diluted DNA samples were used along with mtDNA and nuclear DNA primers for qPCR as described above to determine relative mtDNA levels per genome.
 
-## Flow cytometry
+#### Flow cytometry
 
 Measurements of mitochondrial superoxide levels, lipid peroxidation and cellular reactive oxygen species (ROS) levels were determined using MitoSox Red Superoxide indicator, Bodipy581/591 C11 and H2DCFDA (Thermo Fisher Scientific) respectively. Briefly, following treatments of cultured MEFs with indicated drugs for 24 hr, fibroblasts were washed in prewarmed PBS and loaded with either 1 µM MitoSox, 1 µM Bodipy581/591 C11 or 10 µM H2DCFDA during 30 min in the dark. Control cells were treated with H2O2 (5 mM) or Antimycin (20 µM) for 20 min as positive controls for increased levels of mitochondrial superoxides, lipid peroxidation or ROS. The mean fluorescent intensities corresponding to steady state levels of mitochondrial superoxides (Mitosox), lipid peroxidation (Bodipy581/591 C11) or ROS levels (H2DCFDA) were determined by flow cytometry (FACs Canto II, BD Biosciences). Data were collected from 20,000 cells and results were analyzed by FlowJo vX.0.7 (Tree Star Inc).
 
-## Measurement of cellular or lysosomal iron levels
+#### Measurement of cellular or lysosomal iron levels
 
 Determination of cellular total, ferric and ferrous iron levels were carried out using the Iron assay Kit (Abcam) according to manufacturer’s instructions. Previously cultured and bafilomycin-treated MEFs were washed in prewarmed PBS, scraped into ice-cold PBS and pelleted at 1000xg for 5 min. Cell pellets or purified lysosomes were homogenized in assay buffer on ice using a Dounce homogenizer, centrifuged at 16000xg for 10 min and the supernatant collected for the iron assay. 25 µL of samples were made up to 100 µL in a 96-well plate with assay buffer, and incubated for 30 min at 37°C with 5 µL iron reducer (for total iron) or assay buffer (for ferrous iron) along with standards. 100 µL of iron probe was added to each reaction, mixed and incubated for a further 1 hr at 37°C in the dark. The absorbance at 593 nm, which corresponds to the iron levels, was determined using a microplate reader (Synergy H1, Biotek). Iron concentrations were calculated from the standard curve and normalized to the amount of protein for each sample, determined by the Bradford protein assay. The average of technical triplicates was used for each biological sample.
 
-## Magnetic resonance spectroscopy (MRS) and magnetic resonance imaging (MRI)
+#### Magnetic resonance spectroscopy (MRS) and magnetic resonance imaging (MRI)
 
 Mice underwent MRS, T1, T2, and MTR measurements of the cerebral cortex, striatum, and thalamus at 37°C. After induction of anaesthesia by intraperitoneal injection of ketamine (100 mg/kg b.w.) and xylazine (10 mg/kg b.w.), animals were intubated with a purpose-built polyethylene endotracheal tube (0.58 mm inner diameter, 0.96 mm outer diameter) and artificially ventilated using an animal respirator (TSE, Bad Homberg, Germany) with a respiratory rate of 25 breaths per minute and an estimated tidal volume of 0.35 ml under 0.5% isoflurane as previously described (Watanabe et al., 2016). The animals were then placed in a prone position on a purpose-built palate holder equipped with an adjustable nose cone. Respiratory movement of the abdomen as well as rectal temperature were monitored by a unit supplied by the manufacturer (Bruker Biospin MRI GmbH, Ettlingen, Germany). At 9.4 T (Bruker Biospin MRI GmbH, Ettlingen, Germany), localized proton MRS (STEAM, TR/TE/TM = 6000/10/10 ms) was performed with the use of a birdcage resonator (inner diameter 70 mm) and a saddle-shaped quadrature surface coil (both Bruker Biospin MRI GmbH, Ettlingen, Germany) on anesthetized mice as previously described (Watanabe et al., 2016). Shimming of the B0 field was carried out by FASTMAP (Gruetter, 1993). A (20 mm)3 volume-of-interest was centered on the right striatum (squares in Figure 4—figure supplement 1D). Water saturation was accomplished by means of three Gaussian-shaped CHESS radiofrequency (RF) pulses (90°−90°−180°), each of which with a duration of 7.83 ms and a bandwidth of 350 Hz. Overall duration of the CHESS module was 147 ms. Each CHESS pulse was followed by an associated spoiler gradient and a 37 ms outer volume saturation module covering a range of 3 mm around the volume-of-interest without gap. Metabolite quantification involved spectral evaluation by LCModel (Provencher, 1993) and calibration with brain water concentration of 79% (Duarte et al., 2014), for which the unsuppressed water proton signal served as internal reference. Metabolites with Cramer-Rao lower bounds above 20% were excluded from further analysis. Relaxation times and magnetization transfer ratios are determined in selected regions of the brain. T2 relaxation times of water protons were determined by a multi-echo spin-echo MRI (TR/TE = 2500/10–123 ms). T1 relaxation times were determined with the use of a spin-echo saturation recovery sequence and 7 TR values from 0.15 to 6 s. For measurements of the magnetization transfer ratio, an off-resonance Gaussian-shaped RF pulse with a frequency offset of −3.6 kHz, duration of 8.5 ms, and a flip angle of 128° was incorporated into a spin density-weighted gradient-echo MRI sequence (RF-spoiled 3D FLASH, TR/TE = 19/4.2 ms, flip angle 5°, measuring time 97 s) at a resolution of 200 × 200 × 400 µm3. The duration and power of the off-resonance pulse was optimized to observe the transfer of saturation from non-water protons to water protons in brain of mice in vivo (Natt et al., 2003; Watanabe et al., 2012). For the evaluation of MRI signal intensities, square-shaped regions of interest with were selected in a standardized manner in the cerebral cortex (98 pixels), the striatum (100 pixels), and the thalamus (61 pixels) (Figure 4—figure supplement 1D). The analysis followed a strategy previously developed for intraindividual comparisons of MR images obtained after manganese administration (Watanabe et al., 2004). Volumetric assessments were obtained by analyzing proton-density-weighted images (RF-spoiled 3D FLASH, TR/TE = 22/7.7 ms, flip angle 10°, fat suppression 90°, 117 µm isotropic resolution, measuring time 12 min, Figure 4—figure supplement 1D) using software provided by the manufacturer (Paravision 5.0, Bruker Biospin, Ettlingen, Germany). After manually outlining the whole brain and the ventricular spaces in individual sections, respective areas were calculated (in mm2), summed and multiplied by the section thickness. Significant differences between two groups of data were determined by Mann-Whitney´s U-test.
 
-## Cytokine measurements
+#### Cytokine measurements
 
 Brain tissue cytokine levels were measured using the Mouse cytokine array Panel A (R and D Systems) following protocols described by the manufacturer. Briefly cortices from Gaa-/- mice mice and their wild type littermate controls, fed iron-enriched or standard chow for 2 months were harvested, snap frozen in liquid nitrogen and ground using a tissue grinder. Tissues were lysed in RIPA buffer and spun at 10000xg for 5 min. The supernatants were collected and their protein concentrations determined by the BCA protein assay (Thermo Fisher Scientific). Nitrocellulose membranes containing capture antibodies were blocked in array buffer 6 for 1 hr. Samples were prepared by diluting 1 mg of tissue lysates in 500 µL array buffer 4 containing 15 µL Detection antibody cocktail and made up to 1.5 mL with array buffer 6. Block buffer on membranes was replaced with prepared samples. Following overnight incubation at 40C, membranes were washed three times in wash buffer for 10 min each, incubated for 30 min with Strepatavidin-HRP on a rocking platform, washed three more times and incubated for 1 min with the Chemi Reagent mix. Membranes were developed onto X-ray films by a chemiluminiscence developer (AGFA) and the pixel density (using ImageJ) of each spot representing the level of the corresponding cytokine determined and normalized to that of the average of reference spots.
 
-## Quantification and statistical analysis
+### Quantification and statistical analysis
 
-## Statistical analysis
+#### Statistical analysis
 
 All statistical analyses were carried out using Prism version 8.0 software. Unless otherwise stated in figure legends, to compare means between two groups, a two-tailed unpaired t-test with Welch’s correction was used for normally distributed data. Non-parametric, two-group means were compared by a two-tailed Mann-Whitney test. Welch’s one-way ANOVA, followed by Dunnett’s test for multiple comparisons was performed for multi-group (at least three) comparisons. For data on cytokine array experiments, the Brown-Forsythe’s one-way ANOVA test was used given the identical values in at least one of the coconditions. Measures were summarized as graphs displaying mean ± SEM, of at least three independent biological replicates. Means of control samples are typically centered at one (or 100%) to ensure easier comparisons unless otherwise noted. Estimated p values are either stated as the actual values or denoted by *p<0.05; **p<0.01; ***p<0.001. Differences were only considered as statistically significant when the p value was less than 0.05.
 
-## Data and software availability
+#### Data and software availability
 
 The microarray and RNA sequencing data analysis was performed using Partek Software Suite. Microarray data analysis was performed as described in Raimundo et al. (2009), using RMA normalization. RNAseq data was aligned to the reference genome mm10 by the BowTie algorithm, and the transcripts were quantified using the ‘mm10 - Ensembl Transcripts release 95’ as reference. For differential expression analysis, Bonferroni multi-test correction was applied, and adjusted p-value<0.05 was considered significant. Ingenuity Pathway Analysis was used for assessment of transcription factor activity, as described in Yambire et al. (2019). The RNAseq data generated in this study from the Gaa-KO and WT cortices is deposited in Gene Expression Omnibus under the serial number GSE134704.

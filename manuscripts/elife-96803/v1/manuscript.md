@@ -7,8 +7,8 @@
 
 ### Affiliations
 
-1. https://ror.org/055bpw879 MRC Cognition and Brain Sciences Unit, University of Cambridge Cambridge United Kingdom
-2. https://ror.org/013meh722 Department of Psychiatry, University of Cambridge Cambridge United Kingdom
+1. MRC Cognition and Brain Sciences Unit, University of Cambridge Cambridge United Kingdom ([ROR:055bpw879](https://ror.org/055bpw879))
+2. Department of Psychiatry, University of Cambridge Cambridge United Kingdom ([ROR:013meh722](https://ror.org/013meh722))
 
 † Corresponding author
 
@@ -34,9 +34,212 @@ Next, we pre-registered a follow-up experiment to directly investigate how circa
 
 ## Results
 
-## Sample characteristics
+### Sample characteristics
 
 Nine hundred and ninety-four participants completed all study components (i.e., demographic questions, effort-expenditure task, self-report questionnaires). After exclusion (see Methods 4.1.5), 958 participants were included in our analyses. We used a stratified recruitment approach to ensure our sample was representative of the UK population in age, sex, and history of psychiatric disorder (Dercon et al., 2024; McManus et al., 2016; Office of National Statistics, 2016); mean questionnaire-based measures were comparable to previous general population studies (Table 1).
+
+**Table 1.**
+ Demographic characteristics and descriptive questionnaire measures in the included sample and excluded participants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Included</th>
+      <th>Excluded</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Cohort size (%)</td>
+      <td>958 (96.4%)</td>
+      <td>36 (3.62%)</td>
+    </tr>
+    <tr>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age, mean (SD; range)</td>
+      <td>45.00 (15.01; 18–79)</td>
+      <td>47.90 (13.60; 20–70)</td>
+    </tr>
+    <tr>
+      <td>Gender, number (%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Male (%)</td>
+      <td>470 (49.06)</td>
+      <td>12 (33.33)</td>
+    </tr>
+    <tr>
+      <td>Female (%)</td>
+      <td>484 (50.52)</td>
+      <td>24 (66.67)</td>
+    </tr>
+    <tr>
+      <td>Non-binary (%)</td>
+      <td>4 (0.42)</td>
+      <td>0 (0.0)</td>
+    </tr>
+    <tr>
+      <td>Ethnicity, number (%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>White (%)</td>
+      <td>852 (88.94)</td>
+      <td>28 (77.78)</td>
+    </tr>
+    <tr>
+      <td>Asian (%)</td>
+      <td>53 (5.53)</td>
+      <td>4 (11.1)</td>
+    </tr>
+    <tr>
+      <td>Black (%)</td>
+      <td>27 (2.82)</td>
+      <td>3 (8.33)</td>
+    </tr>
+    <tr>
+      <td>Mixed (%)</td>
+      <td>18 (1.88)</td>
+      <td>1 (2.78)</td>
+    </tr>
+    <tr>
+      <td>Other (%)</td>
+      <td>8 (0.84)</td>
+      <td>0 (0.0)</td>
+    </tr>
+    <tr>
+      <td>SES (/9), median (IQR)</td>
+      <td>5 (4–6)</td>
+      <td>5 (4–6)</td>
+    </tr>
+    <tr>
+      <td>Psychiatric comorbidities</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Current or past, number (%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Any (%)</td>
+      <td>264 (27.60)</td>
+      <td>5 (13.90)</td>
+    </tr>
+    <tr>
+      <td>Major depressive disorder (%)</td>
+      <td>94 (9.81)</td>
+      <td>1 (2.78)</td>
+    </tr>
+    <tr>
+      <td>Generalized or social anxiety disorder (%)</td>
+      <td>195 (20.35)</td>
+      <td>2 (5.56)</td>
+    </tr>
+    <tr>
+      <td>Current antidepressant use, number (%)</td>
+      <td>151 (15.80)</td>
+      <td>5 (13.9)</td>
+    </tr>
+    <tr>
+      <td>Task metrics</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Testing time, number (%)</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Morning testing (8:00–11:59; %)</td>
+      <td>492 (51.40)</td>
+      <td>19 (52.80)</td>
+    </tr>
+    <tr>
+      <td>Evening testing (18:00–21:59; %)</td>
+      <td>458 (47.80)</td>
+      <td>17 (47.2)</td>
+    </tr>
+    <tr>
+      <td>Time taken (min), mean (SD; range)</td>
+      <td>33.13 (9.63; 22–151)</td>
+      <td>37.06 (15.30; 26–105)</td>
+    </tr>
+    <tr>
+      <td>Mean clicking calibration, mean (SD; range)</td>
+      <td>60.6 (16.10, 8–206)</td>
+      <td>74.10 (123.00, 0–721)</td>
+    </tr>
+    <tr>
+      <td>Psychiatric questionnaire measures</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SHAPS, mean (SD; range)</td>
+      <td>9.15 (6.28; 0–36)</td>
+      <td>10.90 (6.97; 1–33)</td>
+    </tr>
+    <tr>
+      <td>DARS, mean (SD; range)</td>
+      <td>54.50 (9.18, 17–68)</td>
+      <td>53.70 (9.77, 36–68)</td>
+    </tr>
+    <tr>
+      <td>AES, mean (SD; range)</td>
+      <td>55.70 (9.42; 25–72)</td>
+      <td>55.10 (9.51; 37–71)</td>
+    </tr>
+    <tr>
+      <td>M.I.N.I., current MDD (%)</td>
+      <td>56 (5.85)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Circadian questionnaire measures</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>MEQ, mean (SD; range)</td>
+      <td>52.80 (10.6, 18–81)</td>
+      <td>52.08 (7.87, 34–71)</td>
+    </tr>
+    <tr>
+      <td>MCTQ, mean time in min (SD; range)</td>
+      <td>03:56 (89 min; 00:14–11:05)</td>
+      <td>04:03 (87 min; 01:05–09:05)</td>
+    </tr>
+    <tr>
+      <td>Metabolic questionnaire measures</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>BMI, mean (SD; range)</td>
+      <td>26.90 (6.29, 15.20–63.30)</td>
+      <td>27.02 (5.77, 19.10–46.90)</td>
+    </tr>
+    <tr>
+      <td>FINDRISC, mean (SD; range)</td>
+      <td>7.46 (5.09, 0–25)</td>
+      <td>8.56 (5.26, 0–22)</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. SES, subjective socioeconomic status; IQR, interquartile range; SHAPS, Snaith Hamilton pleasure scale; DARS, Dimensional Anhedonia Rating Scale; AES, Apathy Evaluation Scale; M.I.N.I., Mini-International Neuropsychiatric Interview; MDD, major depressive disorder; MEQ, Morningness–Eveningness questionnaire; MCTQ, Munich Chronotype Questionnaire; BMI, body mass index; FINDRISC, Finish Diabetes Risk Score._
 
 Questionnaire sum scores highly correlated within groupings of questionnaires targeting psychiatric symptoms, chronobiology, and metabolic health. We also found significant correlations between some, but not all, questionnaires (Figure 1).
 
@@ -44,9 +247,9 @@ Questionnaire sum scores highly correlated within groupings of questionnaires ta
 
 **Figure 1.:** Correlations between questionnaire sum scores for the Snaith Hamilton Pleasure Scale (SHAPS), the Dimensional Anhedonia Rating Scale (DARS), the Apathy Evaluation Scale (AES), Morningness–Eveningness Questionnaire (MEQ), Munich Chronotype Questionnaire (MCTQ), body mass index (BMI), and the Finish Diabetes Risk Score (FINDRISC) (n=958). Asterisks indicate significance: *p < 0.05, **p < 0.01, ***p < 0.001 (not accounting for multiple comparisons). Note that sum scores for the AES and the DARS have been transformed such that increasing scores can be interpreted as higher symptom severity, in line with the SHAPS. Sum scores of the MEQ have been transformed such that higher scores indicate higher eveningness, in line with the MCTQ.
 
-## Effort-expenditure task
+### Effort-expenditure task
 
-In this novel, online effort-expenditure task (Figure 2A, B), subjects were given a series of challenges associated with varying levels of effort and reward. By weighing up efforts against rewards, they decide whether to accept or reject challenges. We first use model-agnostic analyses to replicate effects of effort discounting (i.e., devaluation of reward with increasing effort). Next, we took a computational modelling approach to fit economic decision-making models to the task data (Figure 3A–D). The models posit efforts and rewards are joined into a subjective value (SV), weighed by individual effort (βE)\begin{document}$\left (\beta _{E} \right)$\end{document} and reward sensitivity (βR)\begin{document}$\left(\beta _{R} \right) $\end{document} parameters. The subjective value is then integrated with an individual bias to accept effortful challenges for reward (α) parameter to guide decision-making. Specifically, this acceptance bias parameter determines the range at which subjective values are translated to acceptance probabilities: the same subjective value will translate to a higher acceptance probability the higher the acceptance bias.
+In this novel, online effort-expenditure task (Figure 2A, B), subjects were given a series of challenges associated with varying levels of effort and reward. By weighing up efforts against rewards, they decide whether to accept or reject challenges. We first use model-agnostic analyses to replicate effects of effort discounting (i.e., devaluation of reward with increasing effort). Next, we took a computational modelling approach to fit economic decision-making models to the task data (Figure 3A–D). The models posit efforts and rewards are joined into a subjective value (SV), weighed by individual effort $(\beta_{E})$ and reward sensitivity $(\beta_{R})$ parameters. The subjective value is then integrated with an individual bias to accept effortful challenges for reward (α) parameter to guide decision-making. Specifically, this acceptance bias parameter determines the range at which subjective values are translated to acceptance probabilities: the same subjective value will translate to a higher acceptance probability the higher the acceptance bias.
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/96803/elife-96803-fig2-v1.jpg)
 
@@ -54,9 +257,9 @@ In this novel, online effort-expenditure task (Figure 2A, B), subjects were give
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/96803/elife-96803-fig3-v1.jpg)
 
-**Figure 3.:** (A) Economic decision-making models posit that efforts and rewards are joined into a subjective value (SV), weighed by individual effort () and βE\begin{document}$\beta _{E}$\end{document}reward sensitivity () parameters. The SV is then integrated with an acceptance bias parameter and translated to decision-making. (βR\begin{document}$\beta _{R}$\end{document}B, C) The model suggests that SV decreases as effort increases and increases as reward increases. The magnitude of this relationship depends on the individual effort and reward sensitivity parameters. (D) The acceptance bias parameter acts as an intercept to the softmax function, thereby changing the relationship between SV and acceptance probability. (E) Model comparison based on leave-out-out information criterion (LOOIC; lower is better) and expected log posterior density (ELPD; higher is better). Error bars indicate standard errors (n = 958). (F) Posterior predictive checks for the full parabolic model, comparing observed versus model-predicted subject-wise acceptance proportions across effort levels (left) and reward levels (right). Error bars indicate 95% highest density intervals (n = 958).
+**Figure 3.:** (A) Economic decision-making models posit that efforts and rewards are joined into a subjective value (SV), weighed by individual effort ($\beta_{E}$) and reward sensitivity ($\beta_{R}$) parameters. The SV is then integrated with an acceptance bias parameter and translated to decision-making. (B, C) The model suggests that SV decreases as effort increases and increases as reward increases. The magnitude of this relationship depends on the individual effort and reward sensitivity parameters. (D) The acceptance bias parameter acts as an intercept to the softmax function, thereby changing the relationship between SV and acceptance probability. (E) Model comparison based on leave-out-out information criterion (LOOIC; lower is better) and expected log posterior density (ELPD; higher is better). Error bars indicate standard errors (n = 958). (F) Posterior predictive checks for the full parabolic model, comparing observed versus model-predicted subject-wise acceptance proportions across effort levels (left) and reward levels (right). Error bars indicate 95% highest density intervals (n = 958).
 
-## Replication of model-agnostic effects
+### Replication of model-agnostic effects
 
 The proportion of accepted trials for each effort–reward combination is plotted in Figure 2C. In line with our pre-registered hypotheses, we found significant main effects for effort (F(1,14367) = 4961.07, p < 0.0001) and reward (F(1,14367) = 3037.91, p < 0.001), and a significant interaction between the two (F(1,14367) = 1703.24, p < 0.001). In post hoc ANOVAs, effort effects remained significant at all reward levels (all p < 0.001) and reward effects remained significant at all effort levels (all p < 0.001). The development of offered effort and reward levels across trials is shown in Figure 2D; this shows that as participants generally tend to accept challenges rather than reject them, the implemented staircasing procedure develops towards higher effort and lover reward challenges.
 
@@ -64,19 +267,19 @@ The mean success rate of accepted challenges across participants was high (M = 9
 
 Subjects were engaged with the task, shown by a high rate of challenge acceptance (M = 76.80%, SD = 15.20, range = 15.60–100%) and moderate-to-good enjoyment ratings (M = 2.56, SD = 0.92; on a 0–4 scale). Qualitative data of subjects describing their decision-making process during the task further confirmed high engagement (see Appendix 3).
 
-## Computational modelling
+#### Computational modelling
 
-A model space of nine models was considered, varying in the implemented parameter and cost function (see Mathematical definition of the model space for mathematical definitions of all models). Prior to model fitting, parameter recovery confirmed all models yield meaningful parameter estimates (Model validation). All models showed good convergence (effective sample size (ESS) >4223; R-hats <1.002 for all estimates). Model comparison by out-of-sample predictive accuracy identified the model implementing three parameters (acceptance bias α, reward sensitivity βR\begin{document}$\beta _{R}$\end{document}, and effort sensitivity βE\begin{document}$\beta _{E}$\end{document}), with a parabolic cost function (subsequently referred to as the full parabolic model) as the winning model (leave-one-out information criterion [LOOIC; lower is better] = 29,734.8; expected log posterior density [ELPD; higher is better] = –14,867.4; Figure 3E). This was in line with our pre-registered hypotheses. Predictive validity of the full parabolic model was validated with posterior predictive checks, showing excellent accordance between observed and model-predicted choice data (across effort levels: R2 = 0.95, across reward levels: R2 = 0.94; Figure 3F).
+A model space of nine models was considered, varying in the implemented parameter and cost function (see Mathematical definition of the model space for mathematical definitions of all models). Prior to model fitting, parameter recovery confirmed all models yield meaningful parameter estimates (Model validation). All models showed good convergence (effective sample size (ESS) >4223; R-hats <1.002 for all estimates). Model comparison by out-of-sample predictive accuracy identified the model implementing three parameters (acceptance bias α, reward sensitivity $\beta_{R}$, and effort sensitivity $\beta_{E}$), with a parabolic cost function (subsequently referred to as the full parabolic model) as the winning model (leave-one-out information criterion [LOOIC; lower is better] = 29,734.8; expected log posterior density [ELPD; higher is better] = –14,867.4; Figure 3E). This was in line with our pre-registered hypotheses. Predictive validity of the full parabolic model was validated with posterior predictive checks, showing excellent accordance between observed and model-predicted choice data (across effort levels: R2 = 0.95, across reward levels: R2 = 0.94; Figure 3F).
 
-## Test–retest reliability
+#### Test–retest reliability
 
 We validated the task in a smaller in-person sample (N = 30, tested twice ~7 days apart, holding time-of-day at testing constant) to assess test–retest reliability of parameter estimates, showing moderate to excellent reliability for all parameters (i.e., all intraclass correlation coefficients > 0.4, all p < 0.01). Parameter estimates from modelling the data at one session predicted subjects’ choices at the other session better than chance and better than group-level parameters predictions (all p < 0.01) (Mkrtchian et al., 2023) (full details reported in Appendix 2).
 
-## Transdiagnostic analysis: questionnaire measures predict effort-based decision-making
+### Transdiagnostic analysis: questionnaire measures predict effort-based decision-making
 
 We used partial least squares (PLS) regression to relate individual-level mean posterior parameter values resulting from the model fitting of the full parabolic model to the questionnaire measures. To explore individual effects post hoc, we followed up on effects found in the PLS regression using Bayesian generalized linear models (GLMs), controlling for age and gender.
 
-## Acceptance bias
+#### Acceptance bias
 
 The acceptance bias was best predicted by a model with one component, with its highest factor loadings from psychiatric measures increasing values indicate symptom severity; SHAPS Snaith et al., 1995: –0.665; Apathy Evaluation Scale [AES] Marin et al., 1991: –0.588; Dimensional Anhedonia Rating Scale [DARS] Rizvi et al., 2015: –0.487. Weaker loadings were found for circadian measures higher values indicate later chronotype; Mornigness–Eveningness Questionnaire [MEQ] Horne and Ostberg, 1976: –0.262; Munich Chronotype Questionnaire [MCTQ] Roenneberg et al., 2003: –0.117 and metabolic measures higher values indicate higher metabolic risk; body mass index [BMI]: –0.115; Finnish Type-2 Diabetes Risk Score questionnaire [FINDRISC] Lindström and Tuomilehto, 2003: –0.068. Permutation testing indicated the predictive value of the resulting component (with factor loadings described above) was significant out-of-sample (root-mean-squared error [RMSE] = 0.203, p = 0.001).
 
@@ -86,47 +289,192 @@ Bayesian GLMs confirmed evidence for psychiatric questionnaire measures predicti
 
 **Figure 4.:** (A) Visualizations of associations between the acceptance bias task parameter and the Snaith–Hamilton Pleasure Scale (SHAPS), the Dimensional Anhedonia Rating Scale (DARS) (Rizvi et al., 2015), and the Apathy Evaluation Scale (AES) (Marin et al., 1991). (B, C) Comparison of acceptance bias (left) and effort sensitivity (right) between a sample of participants meeting criteria for current major depressive disorder (MDD; purple, upper) on the the Mini-International Neuropsychiatric Interview 7.0.1 (M.I.N.I) (Lecrubier et al., 1997) and age- and gender-matched controls (yellow, lower).
 
-## Effort sensitivity
+#### Effort sensitivity
 
 For effort sensitivity, the intercept-only model outperformed models incorporating questionnaire predictors based on RMSE.
 
-## Reward sensitivity
+#### Reward sensitivity
 
 For reward sensitivity, the intercept-only model outperformed models incorporating questionnaire predictors based on RMSE. This result was not in line with our pre-registered expectations.
 
-## Questionnaire measures predict model-agnostic task measures
+#### Questionnaire measures predict model-agnostic task measures
 
 Both SHAPS (M = −0.07; 95% HDI = [−0.12,–0.03]) and AES (M = −0.05; 95% HDI = [−0.10,–0.002]) sum scores could predict the proportion of accepted trials averaged across effort and reward levels (Appendix 3—figure 1).
 
-## Diagnostic analysis: depressed and healthy subjects differ in effort-based decision-making
+### Diagnostic analysis: depressed and healthy subjects differ in effort-based decision-making
 
 In an exploratory analysis, we compared a sample of N = 56 participants that met criteria for current major depressive disorder (MDD), to 56 healthy controls (HC), matched by age (MDD: M = 37.07; HC: M = 37.09, p = 0.99) and gender (MDD: 31 female, 23 male, 2 non-binary; HC: 32 female, 22 male, 2 non-binary; p = 0.98). Effort-discounting effects were confirmed in both groups. For both groups, model fitting and comparison identified the full parabolic model as the best-fitting model. We used age- and gender-controlled Bayesian GLMs to compare individual-level mean posterior parameter values between groups.
 
-## Acceptance bias
+#### Acceptance bias
 
 As in our transdiagnostic analyses of continuous neuropsychiatric measures (see Transdiagnostic analysis: questionnaire measures predict effort-based decision-making), we found evidence for a lower acceptance bias parameter in the MDD group compared to HCs (M = −0.111, 95% HDI=[−0.20,–0.03]) (Figure 4B). This result confirmed our pre-registered hypothesis.
 
-## Effort sensitivity
+#### Effort sensitivity
 
 Unlike our transdiagnostic analyses, we also found evidence for lower effort sensitivity in the MDD group compared to HCs (M = −0.111, 95% HDI = [–0.22,–0.01]) (Figure 4C).
 
-## Reward sensitivity
+#### Reward sensitivity
 
 There was no evidence for a group difference in reward sensitivity (95% HDI = [–0.07,0.11]), as in our transdiagnostic analyses.
 
-## Circadian measures affect effort-based decision-making
+### Circadian measures affect effort-based decision-making
 
 Due to our hypothesized interaction between circadian preference and time-of-day, testing was conducted in two specified time windows: morning (08:00–11:59) and evening (18:00–21:59), resulting in a binary time-of-day measure (morning vs. evening testing). A total of 492 participants completed the study in the morning testing window and 458 in the evening testing window. We used the two chronotype questionnaires to identify two established circadian phenotypes: ‘early’ or ‘late’ chronotype (see Investigating circadian effects), behavioural categories indicating underlying chronobiological differences (Jones et al., 2019; Horne and Ostberg, 1976; Roenneberg et al., 2003). These classifications result in four subsample groups, with 89 early chronotypes (morning testing: n = 63; evening testing: n = 26) and 75 late chronotypes (morning testing: n = 20; evening testing: n = 55).
 
 Bayesian GLMs, controlling for age and gender, predicting task parameters by time-of-day and chronotype showed effects of chronotype on reward sensitivity (i.e., those with a late chronotype had a higher reward sensitivity; M = 0.325, 95% HDI = [0.19,0.46]) and acceptance bias (higher acceptance bias in early chronotypes; M = −0.248, 95% HDI = [–0.37,–0.11]), as well as an interaction between chronotype and time-of-day on acceptance bias (M = 0.309, 95% HDI = [0.15,0.48]).
 
-## Additional pre-registered data collection
+#### Additional pre-registered data collection
 
 As these analyses rely on unevenly distributed subsamples, we conducted an additional, pre-registered data collection to replicate and extend these findings (https://osf.io/y4fbe). We screened participants for their chronotype and then invited early chronotypes to take part in our study in the evening testing window, and late chronotypes in the morning testing window (see Additional data collection).
 
 Using our pre-registered Bayesian stopping rule, we tested 13 early chronotype participants and 20 late chronotype participants. The data were then combined with the data from our main data collection, resulting in a full sample of n = 197 participants that was used for subsequent chronotype analyses (see Table 2 for sample characteristics and statistical significance of differences).
 
-## Acceptance bias
+**Table 2.**
+ Demographic characteristics and descriptive questionnaire measures in the early and late chronotype participants.
+
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Early chronotype</th>
+      <th>Late chronotype</th>
+      <th>Significance</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sample size (%)</td>
+      <td>102 (51.78%)</td>
+      <td>95 (48.22%)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Demographics</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Age, mean (SD; range)</td>
+      <td>51.80 (14.10; 20–78)</td>
+      <td>35.80 (14.40; 19–68)</td>
+      <td>p &lt; 0.001</td>
+    </tr>
+    <tr>
+      <td>Gender, number (%)</td>
+      <td></td>
+      <td></td>
+      <td>p &lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>Male</td>
+      <td>42 (41.18)</td>
+      <td>55 (57.89)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Female</td>
+      <td>60 (58.82)</td>
+      <td>40 (42.11)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Testing time</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Start testing time, number (%)</td>
+      <td></td>
+      <td></td>
+      <td>p &lt; 0.01</td>
+    </tr>
+    <tr>
+      <td>Morning testing (8:00–11:59)</td>
+      <td>63 (31.98)</td>
+      <td>38 (19.29)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Evening testing (18:00–21:59)</td>
+      <td>39 (19.80)</td>
+      <td>57 (28.93)</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Psychiatric comorbidities</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Current or past, number (%)</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Any</td>
+      <td>22 (21.60)</td>
+      <td>40 (42.10)</td>
+      <td>p &lt; 0.01</td>
+    </tr>
+    <tr>
+      <td>Major depressive disorder</td>
+      <td>4 (3.92)</td>
+      <td>22 (23.16)</td>
+      <td>p &lt; 0.001</td>
+    </tr>
+    <tr>
+      <td>Generalized or social anxiety disorder</td>
+      <td>18 (17.65)</td>
+      <td>24 (25.26)</td>
+      <td>p = 0.258</td>
+    </tr>
+    <tr>
+      <td>Current antidepressant use, number (%)</td>
+      <td>9 (8.82)</td>
+      <td>26 (27.40)</td>
+      <td>p &lt; 0.1</td>
+    </tr>
+    <tr>
+      <td>Psychiatric questionnaire measures</td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>SHAPS, mean (SD; range)</td>
+      <td>9.65 (6.38)</td>
+      <td>11.80 (5.92)</td>
+      <td>p &lt; 0.05</td>
+    </tr>
+    <tr>
+      <td>DARS, mean (SD; range)</td>
+      <td>54.00 (9.37)</td>
+      <td>52.70 (9.39)</td>
+      <td>p = 0.322</td>
+    </tr>
+    <tr>
+      <td>AES, mean (SD; range)</td>
+      <td>56.00 (9.72)</td>
+      <td>50.60 (10.10)</td>
+      <td>p &lt; 0.001</td>
+    </tr>
+    <tr>
+      <td>M.I.N.I., current MDD (%)</td>
+      <td>3 (2.94)</td>
+      <td>15 (15.79)</td>
+      <td>p &lt; 0.01</td>
+    </tr>
+  </tbody>
+</table>
+
+_Note. SES, subjective socioeconomic status; IQR, interquartile range; SHAPS, Snaith–Hamilton Pleasure Scale; DARS, Dimensional Anhedonia Rating Scale; AES, Apathy Evaluation Scale; M.I.N.I., Mini-International Neuropsychiatric Interview; MDD, major depressive disorder; MEQ, Morningness–Eveningness Questionnaire; MCTQ, Munich Chronotype Questionnaire; BMI, body mass index; FINDRISC, Finish Diabeted Risc Score._
+
+#### Acceptance bias
 
 Late chronotypes showed a lower acceptance bias than early chronotypes (M = −0.11, 95% HDI = [–0.22,–0.02])—comparable to effects of transdiagnostic measures of apathy and anhedonia, as well as diagnostic criteria for depression. Crucially, we found acceptance bias was modulated by an interaction between chronotype and time-of-day (M = 0.19, 95% HDI = [0.05,0.33]): post hoc GLMs in each chronotype group showed this was driven by a time-of-day effect within late, rather than early, chronotype participants (M = 0.12, 95% HDI = [0.02,0.22], such that late chronotype participants showed a lower acceptance bias in the morning testing sessions, and a higher acceptance bias in the evening testing sessions; early chronotype: 95% HDI = [–0.16,0.04]) (Figure 5A). These results of a main effect and an interaction effect of chronotype on acceptance bias confirmed our pre-registered hypothesis.
 
@@ -134,9 +482,9 @@ Late chronotypes showed a lower acceptance bias than early chronotypes (M = −0
 
 **Figure 5.:** (A) Effect of chronotype and time-of-day on reward sensitivity parameter estimates. (B) Effect of chronotype and time-of-day on acceptance bias parameter estimates.
 
-## Neuropsychiatric symptoms and circadian measures have separable effects on acceptance bias
+### Neuropsychiatric symptoms and circadian measures have separable effects on acceptance bias
 
-## Acceptance bias
+#### Acceptance bias
 
 Exploratory analyses testing for the effects of neuropsychiatric questionnaires on acceptance bias in the subsamples of early and late chronotypes confirmed the predictive value of the SHAPS (M = −0.24, 95% HDI = [–0.42,–0.06]), the DARS (M = −0.16, 95% HDI = [–0.31,–0.01]), and the AES (M = −0.18, 95% HDI = [–0.32,–0.02]) on acceptance bias.
 
@@ -146,11 +494,11 @@ Repeating these steps with the DARS, the main effect of the DARS is found numeri
 
 For the AES, the main effect of the AES is found (M = −0.19, 95% HDI = [–0.35,–0.04]). For the main effect of chronotype, the 95% narrowly includes 0 (M = −0.10, 95% HDI = [–0.21, 0.002]), while the interaction effect of chronotype and time-of-day (M = 0.20, 95% HDI = [0.07,0.34]) on acceptance bias remains. Model comparison identifies the model including the AES and circadian measures as the best model, followed by the model including only the AES.
 
-## Effort sensitivity
+#### Effort sensitivity
 
 We found no evidence for circadian or time-of-day effects on effort sensitivity (chronotype main effect: 95% HDI = [–0.06,0.18], time-of-day main effect: 95% HDI = [–0.08,0.13]).
 
-## Reward sensitivity
+#### Reward sensitivity
 
 Participants with an early chronotype had a lower reward sensitivity parameter than those with a late chronotype (M = 0.27, 95% HDI = [0.16,0.38]). We found no effect of time-of-day on reward sensitivity (95% HDI = [–0.09,0.11]) (Figure 5B). These results were in line with our pre-registered hypotheses .
 
@@ -192,17 +540,17 @@ Circadian rhythm and neuropsychiatric syndromes may affect motivation via parall
 
 ## Materials and methods
 
-## Study protocol
+### Study protocol
 
 After providing demographics and basic medical history, subjects completed an effort-expenditure task, followed by a battery of self-report questionnaires. The study was coded in JavaScript, using Phaser v.3.50.0 for the task and jsPsych (de Leeuw, 2015) for questionnaires. All experimental materials are publicly available at https://doi.org/10.5281/zenodo.15068968.
 
-## Recruitment
+#### Recruitment
 
 We recruited participants using Prolific (Palan and Schitter, 2018), in September 2022. Data were collected on weekdays, in specified daily time windows (morning testing: 08:00–11:59; evening testing: 18:00–21:59). To sample participants broadly representative of the UK population in age, sex, and history of psychiatric disorder, we implemented a previously described procedure (Dercon et al., 2024) using Prolific pre-screeners to obtain batches of participants aimed to match target numbers calculated based on UK population data.
 
 Nine hundred and ninety-four participants completed all components and were paid a fixed rate of £6. A bonus of £10 was paid to ten participants. Subjects were told they could increase their chances of winning the bonus by engaging well with the study (e.g., reading questions carefully, following task instructions).
 
-## Effort-expenditure task
+#### Effort-expenditure task
 
 We developed a new effort-expenditure task that allowed us to assess effort-based decision-making in a remote setting; this task was also tested in-person to assess test–retest reliability. To increase engagement, we gamified the task to take place in an underwater setting and each challenge is framed as a race in which an octopus catches a shrimp. The task structure is shown in Figure 2A and the trial-level structure in Figure 2B.
 
@@ -214,11 +562,11 @@ The main task took a binary-choice design: In each trial, participants accepted 
 
 Subjects completed 64 trials, split into four blocks of 16 trials. For each subject, trial-by-trial presentation of effort–reward combinations were made semi-adaptively by 16 randomly interleaved staircases. Each of the 16 possible offers (4 effort levels × 4 reward levels) served as the starting point of one of the 16 staircase. Within each staircase, after a subject accepted a challenge, the next trial’s offer on that staircase was adjusted (by increasing effort or decreasing reward). After a subject rejected a challenge, the next offer on that staircase was adjusted by decreasing effort or increasing reward. This ensured subjects received each effort–reward combination at least once (as each participant completed all 16 staircases), while individualizing trial presentation to maximize the trials’ informative value. Therefore, in practice, even in the case of a subject rejecing all offers (and hence the staircasing procedures always adapting by decreasing effort or increasing reward), the full range of effort–reward combinations will be represented in the task across the startingpoints of all staircases (and therefore before adaption takeplace).
 
-## Self-report questionnaires
+#### Self-report questionnaires
 
 Subjects completed a questionnaire battery assessing mental and physical health, presented in a randomized order. We assessed anhedonia using the SHAPS (Snaith et al., 1995), as well as the DARS (Rizvi et al., 2015). Apathy was assessed with the AES (Marin et al., 1991). Additionally, we screened participants for meeting diagnostic criteria for current, past, or recurrent MDD using the Mini-International Neuropsychiatric Interview (M.I.N.I.) (Lecrubier et al., 1997). Two questionnaires targeted circadian rhythm: the MEQ (Horne and Ostberg, 1976) and the MCTQ (Rizvi et al., 2015). Metabolic health was assessed by collecting self-reported height and weight, used to calculate BMI. Additionally, the FINDRISC (Lindström and Tuomilehto, 2003) was used to calculate individual risk scores for metabolic disease. Finally, the International Physical Activity Questionnaire (IPAQ) (Craig et al., 2003) was included for exploratory investigations of physical activity.
 
-## Compliance checks and exclusion criteria
+#### Compliance checks and exclusion criteria
 
 All exclusion criteria were pre-registered. Participants were excluded when reporting a severe neurological condition (n = 14) or English proficiency below B2 (i.e., good command/working knowledge; n = 2).
 
@@ -226,35 +574,43 @@ To check compliance with the questionnaires, four catch questions were presented
 
 As task-based exclusion criteria, subjects rejecting all offers were excluded (n = 0). Participants had to have a clicking calibration score of at least seven, as values below would lead to challenges with just one mouse-click (n = 4). Subjects showing a large difference between minimum and maximum clicking speed (i.e., >3 SD) during calibration trials were excluded, as a misestimation of the calibration reference is likely (n = 3). Finally, subjects showing a large change in their clicking capacity (i.e., >3 SD) pre- to post-task were excluded, as it can be assumed the applied calibration was not valid during the task (n = 1). We also asked two open-answer questions after completion of the main task to monitor participants’ self-reported task strategies as a way of assessing rule adherence.
 
-## Analyses of effort-expenditure task data
+### Analyses of effort-expenditure task data
 
-## Model-agnostic analyses
+#### Model-agnostic analyses
 
 Using the proportion of accepted challenges as the dependent variable, we investigated main effects of effort and reward levels and their interaction, using a repeated measures ANOVA of repeated measures. This approach accommodates the unbalanced design resulting from the implemented staircasing procedure.
 
-## Model-based analyses
+#### Model-based analyses
 
-## Model space
+##### Model space
 
-To model effort-based decision-making, we considered a model space of nine models. All models are variations of the economic decision-theory model, consisting of two basic equations. First, a cost function transforms costs and rewards associated with an action into a subjective value (SV):(1)SV=(βR⋅R)−(βE⋅E)\begin{document}$$\displaystyle SV=\left (\beta _{R}\cdot R\right)- \left (\beta _{E}\cdot E\right)$$\end{document}
+To model effort-based decision-making, we considered a model space of nine models. All models are variations of the economic decision-theory model, consisting of two basic equations. First, a cost function transforms costs and rewards associated with an action into a subjective value (SV):
 
-with βR\begin{document}$\beta _{R}$\end{document} and βE\begin{document}$\beta _{E}$\end{document} for reward and effort sensitivity, and R\begin{document}$R$\end{document} and E\begin{document}$E$\end{document} for reward and effort. Higher effort and reward sensitivity mean the SV is more strongly influenced by changes in effort and reward, respectively (Figure 3B, C). Hence, low effort and reward sensitivity mean the SV, and with that decision-making, is less guided by effort and reward offers, as would be in random decision-making.
+$$
+SV=(\beta_{R}⋅R)−(\beta_{E}⋅E)
+$$
 
-This SV is then transformed to an acceptance probability by a softmax function:(2)p(accept)=11+e−(α+SV)\begin{document}$$\displaystyle p\left (accept\right)=\frac{1}{1+e^{- \left (\alpha +SV\right)}}$$\end{document}
+with $\beta_{R}$ and $\beta_{E}$ for reward and effort sensitivity, and $R$ and $E$ for reward and effort. Higher effort and reward sensitivity mean the SV is more strongly influenced by changes in effort and reward, respectively (Figure 3B, C). Hence, low effort and reward sensitivity mean the SV, and with that decision-making, is less guided by effort and reward offers, as would be in random decision-making.
 
-with p(accept)\begin{document}$p\left (accept\right)$\end{document} for the predicted acceptance probability and α\begin{document}$\alpha $\end{document} for the intercept representing acceptance bias. A high acceptance bias means a subject has a bias, or tendency, to accept rather than reject effortful offers for reward (Figure 3D).
+This SV is then transformed to an acceptance probability by a softmax function:
 
-The models differed in two aspects. First, inclusion or exclusion of the free parameters reward sensitivity (βR)\begin{document}$\left (\beta _{R}\right)$\end{document} and acceptance bias (α)\begin{document}$\left (\alpha \right)$\end{document}. Second, the form of the cost function, which used either a linear function (proportional discounting at all effort levels), a parabolic function (increases at higher effort levels are discounted over-proportionally), or an exponential function (increases at lower effort-lower levels are discounted over-proportionally). See Mathematical definition of the model space for mathematical definitions of all models.
+$$
+p(accept)=\frac{1}{1+e^{−(\alpha+SV)}}
+$$
 
-## Model fitting, checks, and comparisons
+with $p(accept)$ for the predicted acceptance probability and $\alpha$ for the intercept representing acceptance bias. A high acceptance bias means a subject has a bias, or tendency, to accept rather than reject effortful offers for reward (Figure 3D).
+
+The models differed in two aspects. First, inclusion or exclusion of the free parameters reward sensitivity $(\beta_{R})$ and acceptance bias $(\alpha)$. Second, the form of the cost function, which used either a linear function (proportional discounting at all effort levels), a parabolic function (increases at higher effort levels are discounted over-proportionally), or an exponential function (increases at lower effort-lower levels are discounted over-proportionally). See Mathematical definition of the model space for mathematical definitions of all models.
+
+##### Model fitting, checks, and comparisons
 
 We took a hierarchical Bayesian approach to model fitting (Ahn et al., 2011), implemented with the CmdStan R interface (Stan Development Team, 2021), with Stan code adapted from hBayesDM (Ahn et al., 2017). Prior to model fitting, effort and reward levels were standardized for computational ease. All models were fit using Markov-Chain Monte Carlo (MCMC), with 2000 warm-up iterations and 6000 sampling iterations, by four chains. Model convergence and chain mixing were checked using numerical diagnostics of ESS and split R-hats, and by visually inspecting trace plots. We conducted parameter recoveries for all models, confirming their ability to meaningfully recover known parameters. Model performance was compared based on out-of-sample predictive accuracy using the LOOIC (lower is better) and ELPD (higher is better). The winning model was validated using posterior predictive checks, comparing model predictions to subject-wise observed choices.
 
-## Test–retest reliability
+### Test–retest reliability
 
 We conducted an in-person study to validate the effort-expenditure task and assess the test–retest reliability of our computational modelling parameters. A sample of N = 30 participants was recruited and tested in two sessions, about 1 week apart. Test–retest reliability of task parameters was assessed by intra-class correlation coefficients, Pearson’s correlation coefficients (estimated both after model fitting and by embedding a correlation matrix into the model fitting procedure), and by testing the predictive accuracy of parameter estimates across sessions. See Appendix 2 for full methods and results.
 
-## Linking model parameters to outcome measures
+### Linking model parameters to outcome measures
 
 To aid interpretability and comparability of effects, task parameters and questionnaire outcome measures were standardized to be between zero and one. Questionnaire measures resulting from the DARS, AES, and MEQ were additionally transformed to be interpretable with the same directionality within questionnaire groupings (i.e., for all psychiatric measures higher values are interpreted as higher symptom severity, for all circadian measures higher values are interpreted as later chronotype).
 
@@ -262,22 +618,22 @@ To investigate associations between effort-based decision-making and self-report
 
 To follow up on relationships suggested by the PLS regression, we performed Bayesian GLMs, adjusting for age and gender (male or female, imputing natal sex for non-binary participants, given low numbers).
 
-## Comparing depressed and healthy subjects
+### Comparing depressed and healthy subjects
 
 We compared participants meeting criteria for a current MDD based on the M.I.N.I. (Lecrubier et al., 1997), to a subset of age- and gender-matched healthy controls (HCs, participants that did not meet criteria for current MDD). For computational sparsity, we only fit the three best-fitting models from the full sample. Models were fit separately to the MDD and HC groups, using the same methods and parameters described above. Bayesian GLMs were used to quantify evidence for associations between individual-level modelling parameters and group status. As we could not be certain whether we would obtain a large enough sample size of subjects meeting criteria for MDD, these analyses were exploratory.
 
-## Investigating circadian effects
+### Investigating circadian effects
 
 We used the two circadian rhythm questionnaires to determine participants’ chronotypes. Early chronotype was defined as meeting criteria for ‘morning types’ on the MEQ (MEQ sum score > 58) (Horne and Ostberg, 1976) and having a midpoint of sleep on free days before 02:30 (Roenneberg et al., 2019). Late chronotype was defined as meeting criteria for ‘evening types’ on the MEQ (MEQ sum score <42) and having a midpoint of sleep on free days after 05:30. Subjects not falling into either category are categorized as intermediate chronotypes and were not included in these analyses.
 
 We used Bayesian age- and gender-controlled GLMs to investigate effects of chronotype, time-of-day (morning- vs. evening-testing), and their interaction on subject-wise mean task parameters estimates.
 
-## Additional data collection
+#### Additional data collection
 
 To improve the precision of estimated circadian effects on task parameters, we increased our sample size by conducting an additional pre-registered data collection (https://osf.io/y4fbe). We implemented a screening study comprising the MEQ (Horne and Ostberg, 1976) and MCTQ (Roenneberg et al., 2003). Taking the chronotyping approach described above, subjects with an early or late chronotype were identified. Early chronotypes were invited to take part in our study in the evening, late chronotypes in the morning.
 
 We implemented a Bayesian stopping rule to inform our data collection process, taking the following steps. First, participants were screened in batches of 250, and eligible participants were invited to the study session. Next, data resulting from this additional data collection was joined with data resulting from the main data collection and Bayesian GLMs were re-run, as described above. If our precision target of any 95% HDI reaching a maximum width 0.20 was met, we stopped data collection. Was the precision target not met, we returned to step one, and another batch of 250 participants was screened. In any case, data collection would be terminated once 200 eligible participants had completed the main study session.
 
-## Differentiating between the effects of neuropsychiatric symptoms and circadian measures on acceptance bias
+### Differentiating between the effects of neuropsychiatric symptoms and circadian measures on acceptance bias
 
 To investigate how the effects of neuropsychiatric symptoms on acceptance bias (see Acceptance bias) relate to effects of chronotype and time-of-day on acceptance bias we conducted exploratory analyses. In the subsamples of participants with an early or late chronotype (including additionally collected data), we first ran Bayesian GLMs with neuropsychiatric questionnaire scores (SHAPS, DARS, and AES, respectively) predicting acceptance bias, controlling for age and gender. We next added an interaction term of chronotype and time-of-day into the GLMs, testing how this changes previously observed neuropsychiatric and circadian effects on acceptance bias. Finally, we conducted a model comparison using LOO, comparing between acceptance bias predicted by a neuropsychiatric questionnaire, acceptance bias predicted by chronotype and time-of-day, and acceptance bias predicted by a neuropsychiatric questionnaire and time-of-day (for each neuropsychiatric questionnaire, and controlling for age and gender).

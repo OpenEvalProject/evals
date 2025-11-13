@@ -24,7 +24,7 @@
 
 ## Abstract
 
-10.7554/eLife.14770.001 To understand complex regulatory processes in multicellular organisms, it is critical to be able to quantitatively analyze protein movement and protein-protein interactions in time and space. During Arabidopsis development, the intercellular movement of SHORTROOT (SHR) and subsequent interaction with its downstream target SCARECROW (SCR) control root patterning and cell fate specification. However, quantitative information about the spatio-temporal dynamics of SHR movement and SHR-SCR interaction is currently unavailable. Here, we quantify parameters including SHR mobility, oligomeric state, and association with SCR using a combination of Fluorescent Correlation Spectroscopy (FCS) techniques. We then incorporate these parameters into a mathematical model of SHR and SCR, which shows that SHR reaches a steady state in minutes, while SCR and the SHR-SCR complex reach a steady-state between 18 and 24 hr. Our model reveals the timing of SHR and SCR dynamics and allows us to understand how protein movement and protein-protein stoichiometry contribute to development. DOI: http://dx.doi.org/10.7554/eLife.14770.001
+To understand complex regulatory processes in multicellular organisms, it is critical to be able to quantitatively analyze protein movement and protein-protein interactions in time and space. During Arabidopsis development, the intercellular movement of SHORTROOT (SHR) and subsequent interaction with its downstream target SCARECROW (SCR) control root patterning and cell fate specification. However, quantitative information about the spatio-temporal dynamics of SHR movement and SHR-SCR interaction is currently unavailable. Here, we quantify parameters including SHR mobility, oligomeric state, and association with SCR using a combination of Fluorescent Correlation Spectroscopy (FCS) techniques. We then incorporate these parameters into a mathematical model of SHR and SCR, which shows that SHR reaches a steady state in minutes, while SCR and the SHR-SCR complex reach a steady-state between 18 and 24 hr. Our model reveals the timing of SHR and SCR dynamics and allows us to understand how protein movement and protein-protein stoichiometry contribute to development.
 
 ## Introduction
 
@@ -36,83 +36,163 @@ New imaging tools that enable parameter quantification and acquisition of in viv
 
 ## Results
 
-## Protein movement quantified using raster image correlation spectroscopy (RICS)
+### Protein movement quantified using raster image correlation spectroscopy (RICS)
 
-A key parameter in biological models is molecular diffusion, which is frequently estimated based on published measurements from single cell organisms (
+A key parameter in biological models is molecular diffusion, which is frequently estimated based on published measurements from single cell organisms (Spiller et al., 2010). In order to measure protein movement in a multicellular organism such as Arabidopsis, we used Raster Image Correlation Spectroscopy (RICS), which returns an autocorrelation function (ACF) by correlating fluorescence intensity fluctuations in pixels in an image over time and space. The diffusion coefficient (DC) is then calculated by fitting the ACF with a diffusion model (Figure 1). Since the fit of the diffusion model depends on the choice of imaging parameters, such as pixel size and pixel dwell time, we first set these parameters by performing RICS analysis on Green Fluorescent Protein (GFP) driven by the CaMV 35S constitutive promoter (35S:GFP) (Table 1, see Materials and methods). In the Arabidopsis root, the resulting DC for free GFP was 6.33 ± 0.37 μm2/s (n = 34 for different cells, including vascular, endodermal, and QC cells) (Figure 1—figure supplement 1). We obtained similar diffusion coefficients using two different confocal microscopes (Zeiss 780 and Zeiss 710).
 
 ![Figure 1.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig1-v2.jpg)
 
-**Figure 1.:** shr2.(a) Schematic showing image acquisition and RICS analysis. (Left) A time series of 100 frames (time points) acquired using predetermined imaging parameters (Table 1). (Middle) Autocorrelation function (ACF) calculated from the time series. Red represents a high ACF value, blue represents a low ACF value. (Right) Fit of the ACF to a Gaussian diffusion model to calculate the diffusion coefficient. (b–d) Representative images of SHR:SHR-GFP in shr2 taken in regions containing the vasculature and endodermis (b), endodermis only (c), vasculature and QC (d). Cell walls are marked in red using propidium iodide (PI). Below each image is its ACF fit using the Gaussian model and the calculated diffusion coefficient for that representative image. (d) 128x128 pixel region of interest (ROI) used for RICS (white frame). (e) Bar graph showing average diffusion coefficients of 35S:GFP (n = 34), SHR:SHR-GFP in shr2 (n = 40) for vasculature and endodermis, n = 19 for endodermis, n = 20 for vasculature and QC) and SHR:SHR-GFP in SCRi (vasculature and endodermis, n = 14). Groups that have different symbols are significantly different from each other and from the 35S:GFP line (Wilcoxon with Steel-Dwass, p<0.05). Error bars are s.e.m. Source data is provided in Figure 1—source data 1–4 .DOI: http://dx.doi.org/10.7554/eLife.14770.00310.7554/eLife.14770.004Figure 1—source data 1.DOI: http://dx.doi.org/10.7554/eLife.14770.00410.7554/eLife.14770.005Figure 1—source data 2.shr2 line obtained using RICS with the Zeiss 780 and Zeiss 710 instruments.DOI: http://dx.doi.org/10.7554/eLife.14770.00510.7554/eLife.14770.006Figure 1—source data 3.DOI: http://dx.doi.org/10.7554/eLife.14770.00610.7554/eLife.14770.007Figure 1—source data 4.DOI: http://dx.doi.org/10.7554/eLife.14770.007
+**Figure 1.:** (a) Schematic showing image acquisition and RICS analysis. (Left) A time series of 100 frames (time points) acquired using predetermined imaging parameters (Table 1). (Middle) Autocorrelation function (ACF) calculated from the time series. Red represents a high ACF value, blue represents a low ACF value. (Right) Fit of the ACF to a Gaussian diffusion model to calculate the diffusion coefficient. (b–d) Representative images of SHR:SHR-GFP in shr2 taken in regions containing the vasculature and endodermis (b), endodermis only (c), vasculature and QC (d). Cell walls are marked in red using propidium iodide (PI). Below each image is its ACF fit using the Gaussian model and the calculated diffusion coefficient for that representative image. (d) 128x128 pixel region of interest (ROI) used for RICS (white frame). (e) Bar graph showing average diffusion coefficients of 35S:GFP (n = 34), SHR:SHR-GFP in shr2 (n = 40) for vasculature and endodermis, n = 19 for endodermis, n = 20 for vasculature and QC) and SHR:SHR-GFP in SCRi (vasculature and endodermis, n = 14). Groups that have different symbols are significantly different from each other and from the 35S:GFP line (Wilcoxon with Steel-Dwass, p<0.05). Error bars are s.e.m. Source data is provided in Figure 1—source data 1–4 .
 
 ![Figure 1—figure supplement 1.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig1-figsupp1-v2.jpg)
 
-**Figure 1—figure supplement 1.:** (a) Region of interest of 35S:GFP in vasculature cells. (b) Autocorrelation function (ACF) calculated using RICS. Red represents a high ACF value, blue represents a low ACF value. (c) Fit of diffusion model and calculation of diffusion coefficient from the ACF. Residuals of fit are shown at top of graph.DOI: http://dx.doi.org/10.7554/eLife.14770.008
+**Figure 1—figure supplement 1.:** (a) Region of interest of 35S:GFP in vasculature cells. (b) Autocorrelation function (ACF) calculated using RICS. Red represents a high ACF value, blue represents a low ACF value. (c) Fit of diffusion model and calculation of diffusion coefficient from the ACF. Residuals of fit are shown at top of graph.
+
+**Table 1.**
+ Recommended imaging conditions for RICS and N&B.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Method</th>
+      <th>Pixel size (μm)</th>
+      <th>Pixel dwell time (μs)</th>
+      <th>Line scan time (ms)</th>
+      <th>Number of frames</th>
+      <th>Image size</th>
+      <th>Laser intensity</th>
+      <th colspan="2">Gain</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>RICS</td>
+      <td>0.05 to 0.1</td>
+      <td>12.61 or 25.21</td>
+      <td>7.56 or 15.13</td>
+      <td>50 to 100</td>
+      <td>256x256</td>
+      <td>1.0% to 4.0%</td>
+      <td colspan="2">800 to 1000</td>
+    </tr>
+    <tr>
+      <td>N&amp;B</td>
+      <td>0.1</td>
+      <td>12.61 or 25.21</td>
+      <td>7.56 or 15.13</td>
+      <td>50 to 100</td>
+      <td>256x256</td>
+      <td>1.0% to 12%</td>
+      <td>800 to 1000</td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
 
 We next used RICS to determine if the DC of SHR differs between the vasculature, where it is produced, and the endodermis and QC, where it moves and interacts with SCR (Heidstra et al., 2004; Cui et al., 2007; Long et al., 2015). To this end, we used a SHR:SHR-GFP translational fusion, which complements the shr2 mutant phenotype (SHR:SHR-GFP in shr2) (Nakajima et al., 2001). Our RICS analysis showed that SHR moves at a rate of 2.45 ± 0.26 μm2/s (n = 40) and 1.73 ± 0.15 µm2/s (n = 16) within a population of vascular and endodermal cells and vascular and QC cells, respectively (Figure 1). Notably, in a population of only endodermal cells, SHR moves at a significantly slower rate (1.29 ± 0.14 μm2/s n = 19, Wilcoxon with Steel-Dwass, p = 0.0303) (Figure 1). To investigate whether the reduction in SHR movement in the endodermis may be due to its interaction SCR (Cui et al., 2007; Levesque et al., 2006; Sozzani et al., 2010; Moreno-Risueno et al., 2015), we measured the DC of SHR in a SCR RNAi (SCRi) line (SHR:SHR-GFP in SCRi) (Cui et al., 2007). In this line, in which the levels of SCR are reduced, SHR diffusion in populations of only endodermal cells was similar to that in populations of vascular and endodermal cells (2.40 ± 0.29 μm2/s, n = 14, Wilcoxon with Steel-Dwass, p = 0.9337) (Figure 1). Overall, our RICS data are in agreement with genetic and molecular data that show SHR movement is restricted by SCR (Heidstra et al., 2004; Cui et al., 2007; Long et al., 2015). Most importantly, our RICS data provide a precise quantification of how SHR diffusion is affected by the presence of SCR.
 
-## The direction of protein movement determined using pair correlation function (pCF) analysis
+### The direction of protein movement determined using pair correlation function (pCF) analysis
 
-An open question is whether SHR moves unidirectionally, only from the inner to the outer cell layers, or in a bidirectional fashion. The former would be consistent with an active transport mechanism from the vasculature into the endodermis. To detect the route of intercellular movement of SHR between the vasculature and endodermis as well as between the endodermis and cortex, we used pair correlation function (pCF) analysis on line scans (
+An open question is whether SHR moves unidirectionally, only from the inner to the outer cell layers, or in a bidirectional fashion. The former would be consistent with an active transport mechanism from the vasculature into the endodermis. To detect the route of intercellular movement of SHR between the vasculature and endodermis as well as between the endodermis and cortex, we used pair correlation function (pCF) analysis on line scans (Figure 2). We used pCF to measure the directionality of movement by correlating pixels that are separated by a specific pixel distance (Hinde and Cardarelli, 2011). To account for differences in cell size, as well as cell wall orientation within our images, we used three different distances: 5 pixels, 7 pixels, and 9 pixels. Generally, the pCF analysis returns a carpet, or heatmap, that shows the fluorescence correlation over time (y-axis) and space (x-axis). If proteins move across the cell wall, there is an arch that represents the delay in movement. If proteins are unable to cross the barrier, the arch is absent (Hinde et al., 2010) (Figure 2) (see Materials and methods). Thus, we performed a binary analysis on each carpet to determine the movement of SHR between cells by looking at the presence, or absence, of these arches. Specifically, we recorded a 1 if the carpet showed an arch and a 0 if no arch was present (Figure 2). We took the average of these values from the different pixel distances (5, 7, and 9) to represent one biological replicate. We then calculated the protein Movement Index (MI), which is the average of all biological replicates (Figure 2). As a positive control, we acquired pCF data for 35SGFP, which had a MI = 0.71 ± 0.07 (n = 15). As a negative control we used 3xGFP, which was shown to restrict free GFP movement in roots (Kim et al., 2005). To this end, we drove the 3xGFP using a root vasculature promoter (TMO5:3xGFP, Schlereth et al., 2010) which had a MI = 0.26 ± 0.05 (n = 19) (Figure 2—figure supplement 1).
 
 ![Figure 2.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig2-v2.jpg)
 
-**Figure 2.:** (a) Schematic of image acquisition and pCF analysis. (Left) Line scans acquired using predetermined imaging conditions (Table 1). Carpets of the forward (middle) and reverse (right) pCF analysis. The orange arch indicates delayed movement, while the absence of an arch (green lines) indicates no movement. (b) pCF analysis of SHR:SHR-GFP in shr2. Cell walls are marked with PI. Lines indicate the laser path going across the vasculature, endodermis, and cortex. pCF carpets for each direction are shown. Orange arches indicate movement. (c) pCF analysis of SHR:SHR-GFP in SCRi. Cell walls are marked with PI. Lines indicate the laser path across the vasculature, endodermis, the extra layer, and the cortex. pCF carpets for each direction are shown. Orange arches indicate movement. (d) Bar graph showing average movement index of 35S:GFP (n = 15), TMO5:3xGFP (n = 19), SCR:SCR-GFP (n = 14), SHR:SHR-GFP in shr2 (n = 20) between vasculature and endodermis, n = 22 between endodermis and cortex), and SHR:SHR-GFP in SCRi (n = 14 between vasculature and endodermis, n = 17 between endodermis and cortex). Stars denote groups that are different from TMO5:3xGFP, crosses indicate groups that are different from 35S:GFP (Wilcoxon with Steel-Dwass, p<0.05). Error bars are s.e.m. Source data is provided in Figure 2—source data 1 and 2.DOI: http://dx.doi.org/10.7554/eLife.14770.01010.7554/eLife.14770.011Figure 2—source data 1.shr2, and SHR:SHR-GFP in SCRi lines.DOI: http://dx.doi.org/10.7554/eLife.14770.01110.7554/eLife.14770.012Figure 2—source data 2.DOI: http://dx.doi.org/10.7554/eLife.14770.012
+**Figure 2.:** (a) Schematic of image acquisition and pCF analysis. (Left) Line scans acquired using predetermined imaging conditions (Table 1). Carpets of the forward (middle) and reverse (right) pCF analysis. The orange arch indicates delayed movement, while the absence of an arch (green lines) indicates no movement. (b) pCF analysis of SHR:SHR-GFP in shr2. Cell walls are marked with PI. Lines indicate the laser path going across the vasculature, endodermis, and cortex. pCF carpets for each direction are shown. Orange arches indicate movement. (c) pCF analysis of SHR:SHR-GFP in SCRi. Cell walls are marked with PI. Lines indicate the laser path across the vasculature, endodermis, the extra layer, and the cortex. pCF carpets for each direction are shown. Orange arches indicate movement. (d) Bar graph showing average movement index of 35S:GFP (n = 15), TMO5:3xGFP (n = 19), SCR:SCR-GFP (n = 14), SHR:SHR-GFP in shr2 (n = 20) between vasculature and endodermis, n = 22 between endodermis and cortex), and SHR:SHR-GFP in SCRi (n = 14 between vasculature and endodermis, n = 17 between endodermis and cortex). Stars denote groups that are different from TMO5:3xGFP, crosses indicate groups that are different from 35S:GFP (Wilcoxon with Steel-Dwass, p<0.05). Error bars are s.e.m. Source data is provided in Figure 2—source data 1 and 2.
 
 ![Figure 2—figure supplement 1.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig2-figsupp1-v2.jpg)
 
-**Figure 2—figure supplement 1.:** (a) pCF analysis of 35S:GFP in vasculature cells. Cell walls are marked with PI. Orange arches indicate movement. (b) pCF analysis of TMO5:3xGFP in vasculature cells. Cell walls are marked with PI. Green lines indicate no movement. (c) pCF analysis of SCR:SCR-GFP in endodermal and cortical cells. Cell walls are marked with PI. Orange arches indicate movement. Green lines indicate no movement.DOI: http://dx.doi.org/10.7554/eLife.14770.013
+**Figure 2—figure supplement 1.:** (a) pCF analysis of 35S:GFP in vasculature cells. Cell walls are marked with PI. Orange arches indicate movement. (b) pCF analysis of TMO5:3xGFP in vasculature cells. Cell walls are marked with PI. Green lines indicate no movement. (c) pCF analysis of SCR:SCR-GFP in endodermal and cortical cells. Cell walls are marked with PI. Orange arches indicate movement. Green lines indicate no movement.
 
 We then used pCF to measure SHR movement across the vasculature, endodermis, and cortex. We found that SHR moves from the vasculature to the endodermis (MI = 0.58 ± 0.03, n = 20, Wilcoxon with Steel-Dwass, p = 0.6356), consistent with previous experimental data (Helariutta et al., 2000; Nakajima et al., 2001) (Figure 2). However, from the endodermis back to the vasculature, the MI of SHR was significantly lower than the MI of free GFP (MI = 0.36 ± 0.07, n = 20, Wilcoxon with Steel-Dwass, p = 0.0368) and not significantly different from the MI of the 3xGFP (Wilcoxon rank-sum test, p = 0.5974), suggesting that SHR is unable to move back to the vasculature (Figure 2). In addition, we found that SHR moves bidirectionally between the endodermis and cortex, as the MI is not significantly different from that of free GFP (MI = 0.61 ± 0.06 from endodermis to cortex, MI = 0.53 ± 0.06 from cortex to endodermis, n = 20, Wilcoxon with Steel-Dwass, p = 0.9524 and p = 0.3909 respectively).
 
 Given that our RICS analysis showed that the presence of SCR reduces SHR mobility in the endodermis, we measured SHR intercellular movement with pCF in the absence of SCR. Accordingly, we performed a pCF analysis using SHR:SHR-GFP in the SCRi line. Line scan measurements were taken across vascular, endodermal, and cortical cells as well as across the extra layer between the endodermis and cortex which is a direct consequence of the RNAi reduction of SCR (Cui et al., 2007). We not only observed SHR movement from the vasculature to the endodermis with a MI = 0.66 ± 0.07 (n = 14) but also from the endodermis back to the vasculature with a MI = 0.78 ± 0.09 (n = 14) (Figure 2). Since the MI for SHR:SHR-GFP in SCRi in both directions is not significantly different from the MI for 35S:GFP (Wilcoxon rank-sum test, p = 0.9553 for endo to vasc, p = 0.9999 for vasc to endo) it suggests that movement is unrestricted in both directions (Figure 2). Similarly, we found that SHR is still able to move bidirectionally between the endodermis and cortex (MI = 0.61 ± 0.05 from endodermis to cortex, MI = 0.59 ± 0.07 from cortex to endodermis, n = 17, Wilcoxon with Steel-Dwass, p = 0.9997 and p = 0.5510 respectively). These results suggest that the presence of SCR prevents SHR movement specifically from the endodermis back to the vasculature while it does not affect the movement between the endodermis and cortex. To determine if SCR can move with SHR from the endodermis to the cortex, we used pCF on the SCR:SCR-GFP. Our results show that SCR does not move between the endodermis and the cortex, as the MI in either direction is significantly lower than that of 35S:GFP (MI = 0.31 ± 0.08 from endodermis to cortex, MI = 0.31 ± 0.07 from cortex to endodermis, n = 14, Wilcoxon with Steel-Dwass, p = 0.0236 and p = 0.0054 respectively). Taken together, our pCF results provide information about the directionality of SHR movement and indicate that SCR restricts SHR movement from the endodermis to the vasculature.
 
-## Protein oligomeric state determined by number and brightness (N&B) analysis
+### Protein oligomeric state determined by number and brightness (N&B) analysis
 
-Stoichiometry is an important feature of protein complexes, as some transcription factors must form higher order complexes in order to function (
+Stoichiometry is an important feature of protein complexes, as some transcription factors must form higher order complexes in order to function (Nakashima et al., 2012; Sornaraj et al., 2016). We used the Number and Brightness technique (N and B), which relies on the RICS image acquisition, to investigate the oligomeric state of the SHR protein in different root cell types. We used the average fluorescence intensity, and the variance in fluorescence, to determine the brightness of particles and their number in an image (Digman et al., 2008; 2009a) (Figure 3, see Materials and methods). In order to use N&B to measure SHR oligomeric state, we first obtained the brightness of the autofluorescence (immobile fraction) and of monomeric GFP protein. We used roots expressing 35SGFP to calculate the S-factor, an imaging parameter that shifts the brightness of the image, such that the immobile fraction has a brightness value of 1 (Digman et al., 2008). In addition, we used the 35S:GFP line to measure the brightness of monomeric GFP protein (Figure 3 and Table 2) (see Materials and methods).
 
 ![Figure 3.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig3-v2.jpg)
 
-**Figure 3.:** (a) Schematic of image acquisition and N&B analysis. (Left) Image acquisition for N&B is the same as for RICS analysis. (Middle) The mean and variance of intensity used to calculate the brightness and number of particles. (Right) The background brightness (red) set to 1 by adjusting the S-factor (Table 2). The monomer (blue) positioned at the predetermined brightness of monomeric GFP (Table 2). Homodimer (green) particles shown to be twice as bright as the monomer. (b, c, d) 35S:GFP used to determine the molecular brightness of monomeric GFP (b, e, h) Region of interest selected for N&B analysis of 35S:GFP, SHR:SHR-GFP in shr2, and SHR:SHR-GFP in SCRi. Cell walls are marked with PI. Note that the extra layer in (h) is a result of the SCRi background. (c, f, i) Brightness vs intensity for 35S:GFP, SHR:SHR-GFP in shr2, and SHR:SHR-GFP in SCRi. The red, blue, green boxes indicate the autofluorescence (B = 1), monomer (B = ε = 0.28 ± 0.01) and homodimer (B = 2*ε), respectively. (d, g, j) Color-coding of the brightness for 35S:GFP, SHR:SHR-GFP in shr2, and SHR:SHR-GFP in SCRi. Red, blue, and green represent background (autofluorescence), monomer, and homodimer, respectively. (k) Bar graph showing average percent of SHR homodimer for SHR:SHR-GFP in vascular cells (n = 40), SHR:SHR-GFP in endodermal cells (n = 19), and SHR:SHR-GFP in SCRi (n = 14). Error bars are s.e.m. Star denotes sample that is significantly different from the other two (Wilcoxon with Steel-Dwass, p<0.05). Source data is provided in Figure 3—source data 1–3.DOI: http://dx.doi.org/10.7554/eLife.14770.01410.7554/eLife.14770.015Figure 3—source data 1.shr2 line obtained using N&B with the Zeiss 780 and Zeiss 710 instruments.DOI: http://dx.doi.org/10.7554/eLife.14770.01510.7554/eLife.14770.016Figure 3—source data 2.DOI: http://dx.doi.org/10.7554/eLife.14770.01610.7554/eLife.14770.017Figure 3—source data 3.DOI: http://dx.doi.org/10.7554/eLife.14770.017
+**Figure 3.:** (a) Schematic of image acquisition and N&B analysis. (Left) Image acquisition for N&B is the same as for RICS analysis. (Middle) The mean and variance of intensity used to calculate the brightness and number of particles. (Right) The background brightness (red) set to 1 by adjusting the S-factor (Table 2). The monomer (blue) positioned at the predetermined brightness of monomeric GFP (Table 2). Homodimer (green) particles shown to be twice as bright as the monomer. (b, c, d) 35S:GFP used to determine the molecular brightness of monomeric GFP (b, e, h) Region of interest selected for N&B analysis of 35S:GFP, SHR:SHR-GFP in shr2, and SHR:SHR-GFP in SCRi. Cell walls are marked with PI. Note that the extra layer in (h) is a result of the SCRi background. (c, f, i) Brightness vs intensity for 35S:GFP, SHR:SHR-GFP in shr2, and SHR:SHR-GFP in SCRi. The red, blue, green boxes indicate the autofluorescence (B = 1), monomer (B = ε = 0.28 ± 0.01) and homodimer (B = 2*ε), respectively. (d, g, j) Color-coding of the brightness for 35S:GFP, SHR:SHR-GFP in shr2, and SHR:SHR-GFP in SCRi. Red, blue, and green represent background (autofluorescence), monomer, and homodimer, respectively. (k) Bar graph showing average percent of SHR homodimer for SHR:SHR-GFP in vascular cells (n = 40), SHR:SHR-GFP in endodermal cells (n = 19), and SHR:SHR-GFP in SCRi (n = 14). Error bars are s.e.m. Star denotes sample that is significantly different from the other two (Wilcoxon with Steel-Dwass, p<0.05). Source data is provided in Figure 3—source data 1–3.
+
+**Table 2.**
+ N and B parameters for SimFCS software analysis. SEM is given.Table 2—source data 1.Monomeric brightness of 35S:GFP line obtained using N&B with the Zeiss 780 and Zeiss 710 instruments.Table 2—source data 2.S-factor of the 35S:GFP background line obtained using N&B with the Zeiss 780 and Zeiss 710 instruments.Table 2—source data 3.S-factor of the UBQ10:mCherry background line and monomeric brightness of UBQ10:mCherry line obtained using N&B with the Zeiss 780 instrument.
+
+
+<table>
+  <thead>
+    <tr>
+      <th>Confocal model and objective</th>
+      <th>S-factor (green channel)</th>
+      <th>S-factor (red channel)</th>
+      <th>Monomer brightness (green channel) (counts/pixel dwell/molecule)</th>
+      <th>Monomer brightness (red channel) (counts/pixel dwell/molecule)</th>
+      <th>Cursor size</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>LSM 780, 40 x 1.2 NA water</td>
+      <td>1.34 ± 0.02 (n = 17)</td>
+      <td>1.00 ± 0.01 (n = 24)</td>
+      <td>0.28 ± 0.01 (n = 13)</td>
+      <td>0.34 ± 0.02 (n = 7)</td>
+      <td>42 ± 0.69 (n = 13)</td>
+    </tr>
+    <tr>
+      <td>LSM 710, 40 x 1.2 NA and 63 x 1.2 NA water</td>
+      <td>0.92 ± 0.004 (n = 20)</td>
+      <td>N/A*</td>
+      <td>0.24 ± 0.01 (n = 20)</td>
+      <td>N/A*</td>
+      <td>50 (n = 20)</td>
+    </tr>
+    <tr>
+      <td colspan="6">Source data is provided in Figure 2—source data 1 (Monomer brightness for green channel and cursor size); Table 2—source data 2 (S-factor, green channel); and Table 2—source data 3 (Monomer brightness and S-factor, red channel) *Red channel data was not collected on the LSM 710</td>
+    </tr>
+  </tbody>
+</table>
 
 After calibration, we used N&B on SHR:SHR-GFP to determine the oligomeric state of SHR in different cell types. Our results indicated that SHR exists primarily as a monomer in the vasculature, given that SHR homodimer formation was only 2.6% ± 0.3% in these cells (Figure 3). Notably, SHR monomeric proteins are observed in both the nuclei and in the cytoplasm of vasculature cells. By contrast, in the nuclei of the endodermis, there are significantly more SHR homodimers present (7.5% ± 0.9% homodimer, Wilcoxon with Steel-Dwass, p<0.0001) (Figure 3). Moreover, in the endodermis SHR is present at very low levels outside of the nuclei (Figure 3). To further understand the differences in SHR oligomeric state, we determined if the homodimer of SHR present in the endodermis could be affected by the presence of SCR. Therefore, we performed N&B on SHR:SHR-GFP in the SCRi line and observed that SHR is mainly found as a monomer in the endodermis (1.9% ± 0.4% homodimer, Wilcoxon with Steel-Dwass, p = 0.2546), indicating that SCR influences the oligomeric composition of SHR (Figure 3). These N&B results provide a quantitative assessment of SHR’s oligomeric states and their distribution in the vasculature and endodermis.
 
-## Stoichiometry of the SHR-SCR complex
+### Stoichiometry of the SHR-SCR complex
 
-The N&B analysis revealed that SHR exists both as a monomer and as a homodimer in the endodermis. We next asked if both the monomer and homodimer are able to form a complex with SCR. To test this hypothesis, we performed cross-N&B, which can determine the stoichiometry of the SHR-SCR complex. Cross N&B requires that each protein be tagged with a different fluorophore. The analysis then determines which proteins are in a complex by calculating the cross-correlation between the two channels at each pixel (
+The N&B analysis revealed that SHR exists both as a monomer and as a homodimer in the endodermis. We next asked if both the monomer and homodimer are able to form a complex with SCR. To test this hypothesis, we performed cross-N&B, which can determine the stoichiometry of the SHR-SCR complex. Cross N&B requires that each protein be tagged with a different fluorophore. The analysis then determines which proteins are in a complex by calculating the cross-correlation between the two channels at each pixel (Figure 4, see Materials and methods). Accordingly, we generated a transgenic line containing both SHR and SCR tagged with different fluorophores (SHR:SHR-GFP & SCR:SCR-mCherry) (Figure 4—figure supplement 1). We reasoned that SCR may also exist in higher oligomeric states, which would increase the possible binding ratio of the SHR-SCR complex; therefore we first used N&B on SCR:SCR-mCherry to determine the oligomeric state of SCR. Initially, we determined the S-factor and brightness of monomeric mCherry protein in the root (UBQ10:mCherry) as we did for the monomeric 35SGFP protein (Figure 4—figure supplement 2 and Table 2). In the SCR:SCR-mCherry line, we detected mostly monomers with 4.7% ± 0.5% of homodimers (Figure 4). We tested the oligomeric state of SCR using a SCR:SCR-GFP fusion protein (Figure 4—figure supplement 2), as it was shown that the type of fluorescent tag can change the behavior of a protein and its aggregation (Brown et al., 2008). We found that the SCR:SCR-GFP line had 5.4% ± 0.7% of homodimers, which is similar to the SCR:SCR-mCherry line (Figure 4—source data 1). Therefore, when performing the cross-N&B analysis, we considered the possibility that the homodimer of SCR could be part of the SHR-SCR complex.
 
 ![Figure 4.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig4-v2.jpg)
 
-**Figure 4.:** (a) Schematic of cross N&B analysis. (Left) A double-tagged line used for imaging. The B1 (GFP brightness) vs B2 (mCherry brightness) graph is used to select the region for cross-correlation. (Middle) The brightness cross-correlation (Bcc) used to determine GFP pixels that cross-correlate with mCherry pixels. (Right) Stoichiometry plot that displays the protein complexes detected in the image. (b) Expression of SHR:SHR-GFP/SCR:SCR-mCherry marker line in root endodermis. (c) Bcc vs B1 graph for SHR. The blue and green boxes represent the SHR monomer and homodimer, respectively, that form a complex with SCR. (d) Color-coding of the cross brightness of the SHR:SHR-GFP/SCR:SCR-mCherry line. Blue represents SHR monomer binding SCR monomer, while green represents SHR homodimer binding SCR monomer. (e) Stoichiometry histogram from cross N&B analysis. The orange line at (1,1) represents a high proportion of monomeric SHR bound to monomeric SCR (84.77% ± 1.58%), while the green line at (2,1) represents a lower proportion of homodimeric SHR bound to monomeric SCR (15.23% ± 1.58%). (f) Bar graph showing average percentages of the 1:1 and 2:1 SHR-SCR complex (n = 17). Error bars are s.e.m. Source data is provided in Figure 4—source data 1 and 2.DOI: http://dx.doi.org/10.7554/eLife.14770.02210.7554/eLife.14770.023Figure 4—source data 1.DOI: http://dx.doi.org/10.7554/eLife.14770.02310.7554/eLife.14770.024Figure 4—source data 2.DOI: http://dx.doi.org/10.7554/eLife.14770.024
+**Figure 4.:** (a) Schematic of cross N&B analysis. (Left) A double-tagged line used for imaging. The B1 (GFP brightness) vs B2 (mCherry brightness) graph is used to select the region for cross-correlation. (Middle) The brightness cross-correlation (Bcc) used to determine GFP pixels that cross-correlate with mCherry pixels. (Right) Stoichiometry plot that displays the protein complexes detected in the image. (b) Expression of SHR:SHR-GFP/SCR:SCR-mCherry marker line in root endodermis. (c) Bcc vs B1 graph for SHR. The blue and green boxes represent the SHR monomer and homodimer, respectively, that form a complex with SCR. (d) Color-coding of the cross brightness of the SHR:SHR-GFP/SCR:SCR-mCherry line. Blue represents SHR monomer binding SCR monomer, while green represents SHR homodimer binding SCR monomer. (e) Stoichiometry histogram from cross N&B analysis. The orange line at (1,1) represents a high proportion of monomeric SHR bound to monomeric SCR (84.77% ± 1.58%), while the green line at (2,1) represents a lower proportion of homodimeric SHR bound to monomeric SCR (15.23% ± 1.58%). (f) Bar graph showing average percentages of the 1:1 and 2:1 SHR-SCR complex (n = 17). Error bars are s.e.m. Source data is provided in Figure 4—source data 1 and 2.
 
 ![Figure 4—figure supplement 1.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig4-figsupp1-v2.jpg)
 
-**Figure 4—figure supplement 1.:** Inset: Red (SCR:SCR-mCherry), green (SHR:SHR-GFP), BF, and merged channels.DOI: http://dx.doi.org/10.7554/eLife.14770.025
+**Figure 4—figure supplement 1.:** Inset: Red (SCR:SCR-mCherry), green (SHR:SHR-GFP), BF, and merged channels.
 
 ![Figure 4—figure supplement 2.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig4-figsupp2-v2.jpg)
 
-**Figure 4—figure supplement 2.:** (a, d, g) Region of interest of UBQ10:mCherry, SCR:SCR-mCherry, and SCR:SCR-GFP in the root. Both SCR:SCR-mCherry (d) and SCR:SCR-GFP (g) are shown in the endodermis. (b, e, h) (b, e, h) Brightness (B) vs intensity graphs for UBQ10:mCherry, SCR:SCR-mCherry, and SCR:SCR-GFP. The red, blue, and green boxes indicate the autofluorescence (B=1), monomer (B1 =  = 0.28 ± 0.01 for GFP; B2 = ε1 = 0.34 ± 0.02 for mCherry) and homodimer (B1 = 2*monomeric B1 for GFP; B2 = 2*monomeric B2 for mCherry) (ε2Table 2). (c, f, i) Color-coding of the distribution of the brightness of UBQ10:mCherry, SCR:SCR-mCherry, and SCR:SCR-GFP. Red, blue, and green represent autofluorescence, monomer, and homodimer respectively.DOI: http://dx.doi.org/10.7554/eLife.14770.026
+**Figure 4—figure supplement 2.:** (a, d, g) Region of interest of UBQ10:mCherry, SCR:SCR-mCherry, and SCR:SCR-GFP in the root. Both SCR:SCR-mCherry (d) and SCR:SCR-GFP (g) are shown in the endodermis. (b, e, h) (b, e, h) Brightness (B) vs intensity graphs for UBQ10:mCherry, SCR:SCR-mCherry, and SCR:SCR-GFP. The red, blue, and green boxes indicate the autofluorescence (B=1), monomer (B1 = $\epsilon_{1}$ = 0.28 ± 0.01 for GFP; B2 = $\epsilon_{2}$ = 0.34 ± 0.02 for mCherry) and homodimer (B1 = 2*monomeric B1 for GFP; B2 = 2*monomeric B2 for mCherry) (Table 2). (c, f, i) Color-coding of the distribution of the brightness of UBQ10:mCherry, SCR:SCR-mCherry, and SCR:SCR-GFP. Red, blue, and green represent autofluorescence, monomer, and homodimer respectively.
 
 After analyzing the SHR:SHR-GFP and SCR:SCR-mCherry separately, we performed cross-N&B on the SHR:SHR-GFP/SCR:SCR-mCherry line to determine the stoichiometry of the complex. The cross-N&B analysis returns a stoichiometry diagram that represents the proportion of different complexes (Figure 4). We found that both the monomer and the homodimer of SHR bind the monomer of SCR, suggesting that SHR and SCR bind with a 1:1 and 2:1 stoichiometry (Figure 4). We were not able to detect any complexes that contain the homodimer of SCR. Additionally, we determined that 84.8% ± 1.6% of the SHR-SCR complexes have 1:1 stoichiometry while 15.2% ± 1.6% have 2:1 stoichiometry (Figure 4). Our cross N&B results reveal that both the monomer and homodimer of SHR are able to bind the monomer of SCR, while the homodimer of SCR does not seem to be part of this complex.
 
-## A mathematical model of SHR and SCR dynamics
+### A mathematical model of SHR and SCR dynamics
 
 SHR and SCR dynamics have been previously modeled in the endodermis, but this model did not take into account either the intercellular movement of SHR or the stoichiometry of the SHR-SCR complex (Cruz-Ramırez et al., 2012). After experimentally determining the rate of SHR movement, SHR oligomeric state, and the binding ratio of the SHR-SCR complex, we sought to incorporate this information into a mathematical model of SHR and SCR, with the goal of determining how protein movement and stoichiometry affect SHR and SCR dynamics. Therefore, we constructed a compartmental model that only measures SHR, SCR, and the SHR-SCR complex in both the vasculature and the endodermis (see Materials and methods).
 
 After constructing the model, we performed a sensitivity analysis to determine the most influential parameters. We chose to use Sobol indices to measure how sensitive the model is to each parameter (Sobol, 2001; see Materials and methods). Briefly, the total Sobol effects index measures how much the model outcome varies as the parameters are changed. If small changes in the parameter values cause large changes in the model outcome, then that parameter is more influential. Using this measure, we found that the rate of movement of SHR from the vasculature to the endodermis (a1) and from the endodermis to the vasculature (a2) are both highly influential parameters (Figure 5—figure supplement 1). Thus, this suggests that SHR movement is a key component of the model that greatly influences the dynamics of SHR in the endodermis.
 
-Next, we sought to use the model, in conjunction with our experimentally determined diffusion coefficients, to (i) simulate SHR and SCR dynamics in the endodermis, and (ii) estimate values for the other parameters. Most of the parameter values were chosen based on the previous mathematical model (
+Next, we sought to use the model, in conjunction with our experimentally determined diffusion coefficients, to (i) simulate SHR and SCR dynamics in the endodermis, and (ii) estimate values for the other parameters. Most of the parameter values were chosen based on the previous mathematical model (Cruz-Ramírez et al., 2012). However, since this model did not account for different oligomeric states of SHR we estimated some of the parameters using the N&B data (Supplementary file 3; see Materials and methods). Our mathematical model predicts that SHR reaches a steady state in the vasculature and endodermis in a matter of minutes. The levels of SCR increase greatly in the first 3 hr, which is supported by data that show that SCR expression in a SHR inducible system is significant after 3 hr (Sozzani et al, 2010). While the 1:1 SHR-SCR complex increases greatly in the first 3 hr, the 2:1 complex does not form until after 9 hr. This is because the SHR homodimer does not form until about 9 hr into the simulation (Figure 5). We reasoned that this is a plausible scenario because SCR should exceed 60% of steady-state levels to trigger homodimer formation (see Materials and methods). Finally, the entire system reaches a steady-state between 18 and 24 hr (Figure 5). This suggests that cell division occurs once SCR and the SHR-SCR complexes reach their steady state values.
 
 ![Figure 5.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig5-v2.jpg)
 
-**Figure 5.:** (a, b, c) Model simulations of wild type showing how (a) SCR and the 1:1 SHR-SCR complex greatly increase in the first 3 hr, (b) SHR homodimer and the 2:1 SHR-SCR complex do not form until around 9 hr, (c) the entire system reaches a steady state between 18–24 hr. (d) Model simulations of SCR RNAi showing a reduction in SHR homodimer, SCR, 1:1 SHR-SCR complex, and 2:1 SHR-SCR complex levels after 24 hr. The model outcomes show SHR in the vasculature (black), SHR monomer in the endodermis (solid blue), SHR homodimer (dashed blue), SCR (red), 1:1 SHR-SCR complex (solid green), and 2:1 SHR-SCR complex (dashed green). Parameter values and initial conditions are given in Supplementary file 3. Source data is provided in Figure 5—source data 1 and 2.DOI: http://dx.doi.org/10.7554/eLife.14770.02710.7554/eLife.14770.028Figure 5—source data 1.DOI: http://dx.doi.org/10.7554/eLife.14770.02810.7554/eLife.14770.029Figure 5—source data 2.DOI: http://dx.doi.org/10.7554/eLife.14770.029
+**Figure 5.:** (a, b, c) Model simulations of wild type showing how (a) SCR and the 1:1 SHR-SCR complex greatly increase in the first 3 hr, (b) SHR homodimer and the 2:1 SHR-SCR complex do not form until around 9 hr, (c) the entire system reaches a steady state between 18–24 hr. (d) Model simulations of SCR RNAi showing a reduction in SHR homodimer, SCR, 1:1 SHR-SCR complex, and 2:1 SHR-SCR complex levels after 24 hr. The model outcomes show SHR in the vasculature (black), SHR monomer in the endodermis (solid blue), SHR homodimer (dashed blue), SCR (red), 1:1 SHR-SCR complex (solid green), and 2:1 SHR-SCR complex (dashed green). Parameter values and initial conditions are given in Supplementary file 3. Source data is provided in Figure 5—source data 1 and 2.
 
 ![Figure 5—figure supplement 1.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig5-figsupp1-v2.jpg)
 
-**Figure 5—figure supplement 1.:** Bar graphs showing average Sobol total indices (n = 10) for SHR in vasculature (a), SHR monomer in endodermis (b), SHR homodimer (c), SCR (d), 1:1 SHR-SCR complex (e), and 2:1 SHR-SCR complex (f). Indices were normalized to mean 0, variance 1 before averaging. Bars represent s.e.m. Stars denote parameters that have significantly higher total effects indices (Wilcoxon with Steel-Dwass, p<0.10). Source data is provided in Figure 5—source data 1.DOI: http://dx.doi.org/10.7554/eLife.14770.030
+**Figure 5—figure supplement 1.:** Bar graphs showing average Sobol total indices (n = 10) for SHR in vasculature (a), SHR monomer in endodermis (b), SHR homodimer (c), SCR (d), 1:1 SHR-SCR complex (e), and 2:1 SHR-SCR complex (f). Indices were normalized to mean 0, variance 1 before averaging. Bars represent s.e.m. Stars denote parameters that have significantly higher total effects indices (Wilcoxon with Steel-Dwass, p<0.10). Source data is provided in Figure 5—source data 1.
 
 ![Figure 5—figure supplement 2.](https://cdn.elifesciences.org/articles/14770/elife-14770-fig5-figsupp2-v2.jpg)
 
-**Figure 5—figure supplement 2.:** k parameter in mathematical model.2kis the rate of SHR homodimer formation and depends on the concentration of SCR. Once SCR passes a critical value (2 C0 = 360), SHR homodimer formation switches on. The homodimer formation rate has a maximum value of L = 0.5.DOI: http://dx.doi.org/10.7554/eLife.14770.031
+**Figure 5—figure supplement 2.:** k2 is the rate of SHR homodimer formation and depends on the concentration of SCR. Once SCR passes a critical value (C0 = 360), SHR homodimer formation switches on. The homodimer formation rate has a maximum value of L = 0.5.
 
 In addition to simulating what happens in wild type, we also wanted to observe how decreasing SCR affects the model dynamics and how it reflects our pCF and N&B data. Accordingly, in the SCRi model, SHR movement is bidirectional and no SHR homodimer forms (see Materials and methods). In this model, we assume that SCR levels are maintained at below 60% of wild type levels as in agreement with previous experimental data (Cui et al, 2007). At these lower levels of SCR, we observe that the steady-state value of the 1:1 SHR-SCR complex is reduced by half (Figure 5). In addition, we observe that SHR homodimers do not form as seen in the N&B analysis (Figure 3). Since SHR homodimers do not form, the 2:1 SHR-SCR complex does not exist (Figure 5). These results suggest that the extra layer in the SCRi line could form due to a reduction in the levels of the SHR-SCR complex. However, there are still other unknown factors that could contribute to the formation of the extra layer.
 
@@ -130,19 +210,19 @@ By using our experimentally determined parameters in a mathematical model, we we
 
 ## Materials and methods
 
-## Plant material and growth conditions
+### Plant material and growth conditions
 
 Prior to plating, Arabidopsis seeds were dry sterilized using 50% bleach and 1.5 ml of HCl for at least 1 hr, imbibed with 500–700 μL of sterile water, and vernalized for 2 days at 4°C in complete dark. After vernalization, seeds were plated on 1x MS (Murashige and Skooge) media supplemented with 1% sucrose and grown vertically at 22°C in long day conditions (16 hr light/8 hr dark). Seedlings were 5 days old when imaged. The 35SGFP, SHR:SHR-GFP in shr2, SCR:SCR-GFP in scr4, SHR:SHR-GFP in SCRi, and TMO5:3xGFP lines are described in (Ruiz et al., 1998; Nakajima et al., 2001; Cui et al., 2007; Sabatini et al., 2003; Schlereth et al, 2010). For the SCR:SCR-mCherry construct, the coding sequence (CDS) of the mCherry fluorescent protein (Goedhart et al., 2007) was amplified using primers with flanking attB sites: mCherry-R2R3 F: 5’-GGGGACAGCTTTCTTGTACAAAGTGGCTATGGTGAGCAAGGGCGAGGAG-3’ and mCherry -R2R3 R: 5’-GGGGACAACTTTGTATAATAAAGTTGCTTACTCACTTGTACAGCTCGTCCATGCC-3 and recombined into pGEMTeasyR2R3 vector by Gateway BP reaction. SCR coding sequence in pDONR221-derived entry clones was previously described (Welch et al., 2007). The root expression vector was created using endogenous SCR promoter in pH7m34GW binary vectors by multiple Gateway LR reactions as described (Long et al., 2015).
 
-## Statistical analysis
+### Statistical analysis
 
 We performed all statistical analyses using the Wilcoxon rank-sum test with Steel-Dwass for multiple comparisons at significance level α = 0.05. We chose the Wilcoxon test as not all of our data are normally distributed (Shapiro-Wilk Goodness of Fit test, p<0.0001, Supplementary file 1). In addition, the Wilcoxon test adjusts for our sample sizes, which were unequal between groups. The Steel-Dwass test is used after the Wilcoxon test to perform pairwise comparisons. All statistical analyses were performed using JMP software (http://www.jmp.com).
 
-## Point spread function (PSF) measurement
+### Point spread function (PSF) measurement
 
 The Point Spread Function (PSF) measures the radius of the laser beam and is experimentally measured in order to perform Raster Image Correlation Spectroscopy (RICS) analysis (Rigler et al., 1993). The PSF was measured for each objective and each confocal microscope used for image acquisition. To calibrate the PSF for our objective lens, we performed RICS on free EGFP in an aqueous solution. While we determined the PSF using free EGFP in solution, it is possible that the PSF varies depending on the cell or tissue we are imaging. However, the exact value of the PSF is not as important for these scanning FCS techniques as it is for single-point FCS since the scanning techniques measure the time a molecule takes to go from one pixel to the next (Digman et al., 2005b; Petrasek and Schwille, 2008). Thus we made the assumption that the PSF determined using the EGFP solution is an accurate estimation of the true PSF. Accordingly, raster images of a solution of 0.6 µM EGFP were acquired using commercial CLSMs, including the Zeiss 780 and 710 (Zeiss Inc, Germany). We determined the PSF by fitting the autocorrelation function (ACF) to the intensity fluctuations of free EGFP in aqueous solution, obtained from the raster images, while fixing the known EGFP diffusion coefficient of 78 μm2/s (Chen et al., 2002). The ACF then returned the experimental PSF beam waist (Supplementary file 2). We found that the PSF measurement was different for different objectives (Supplementary file 2).
 
-## Raster image correlation spectroscopy (RICS)
+### Raster image correlation spectroscopy (RICS)
 
 RICS is a technique that has been developed to determine the rate of movement (either passive diffusion or regulated movement) of fluorescently-labeled particles in a small volume (i.e femtoliter volume of the PSF). In particular, RICS can be used to determine the rate of movement of a GFP-labeled protein, such as SHR:SHR-GFP. During a RICS measurement, the laser performs a raster scan across a selected region of interest. The raster scan involves scanning from left to right across a set number of pixels and then retracing, without backtracking across the already imaged pixels, to perform the next line below. The scanning is repeated for multiple consecutive lines until a 256x256 pixel frame is created, and then starts over again to obtain between 50 to 100 time points. Because each pixel is collected at a different time, and we know where each pixel is located, there is spatial and temporal information included in each individual image (Figure 1). This spatio-temporal information can be used to extract the diffusion coefficient of a population of molecules using the RICS algorithm, which has two steps: (1) background subtraction and (2) image correlation. The background subtraction removes stationary and slow-moving objects so that the image autocorrelation only detects the dynamics of diffusing species (Digman et al., 2005a) while the image correlation compares each pixel to its adjacent pixel in both the x and y direction.
 
@@ -154,37 +234,75 @@ It is possible for artifacts to occur in the ACF due to slow, mobile structures 
 
 The ACF was calculated using the PSF of the beam (Supplementary file 2) and the other parameters that were set before imaging (Table 1). The only unknown parameters in the ACF function were DC, the diffusion coefficient of the particles, and G(0), which is inversely proportional to the number of molecules present. The diffusion coefficient returned by the software was the value that best fits the data (see SimFCS Software Analysis).
 
-## Pair correlation function
+### Pair correlation function
 
 Pair correlation function (pCF) is a technique that allows us to measure the movement of a protein along a line. To do this, we scanned a 32 pixel line through a region of interest in the root. The region of interest was chosen such that 2–3 cells are contained within the frame. To visualize cell walls, we used propidium iodide (PI), which causes the walls to fluoresce red when excited with the 488 nm emission line of an argon laser. In our images, the line scans across the middle of the frame, and the sample was positioned such that the line does not scan directly over a cell wall. Additionally, the line was placed towards the middle of the cell so that movement in both the nucleus and cytoplasm can be measured. The imaging area was cropped such that the edges of the line overlap exactly with the outer cell walls. Once the imaging area was cropped, a reference image was taken to check for image movement. The selected 32 pixel line was then rapidly scanned 2 × 105 times at a pixel dwell time of 12.61 µs. Note that the pixel size was not set as a constant, but rather changed for each image depending on the position of the line scan and the size of the cells analyzed. As soon as the line scan finished, another reference image was taken to check if the root had moved during imaging. If the reference images suggested that the root had moved during imaging, then that line scan was not used for analysis.
 
-The pair correlation function (pCF) for two points at a distance δr as a function of the delay time τ is calculated using Equation (1):(1)G(τ,δr)=⟨F(t,0).F(t+τ,δr)⟩⟨F(t,0)⟩⟨F(t,δr)⟩−1,
+The pair correlation function (pCF) for two points at a distance δr as a function of the delay time τ is calculated using Equation (1):
+
+$$
+G(\tau,\deltar)=\frac{⟨F(t,0).F(t+\tau,\deltar)⟩}{⟨F(t,0)⟩⟨F(t,\deltar)⟩}−1,
+$$
 
 where F(t,0) is the fluctuation in fluorescence intensity at pixel 0 and F(t+τ,δr) is the fluctuation in fluorescence intensity at some other pixel position (δr) at different time delays (τ) (Hinde et al., 2010; Hinde et al., 2011; Digman and Gratton, 2009b). The result of the pCF analysis is a carpet, or heatmap, that displays the correlation in fluorescence over time (y-axis) and space (x-axis). Molecules that move across a barrier display a characteristic ‘arch’ pattern in the pCF carpet output, whereas molecules that do not move across the barrier do not (Hinde et al., 2010) (Figure 2). Since the delay time recovered by the pair correlation function analysis is variable, we performed a binary analysis on the pCF carpets to look for movement (presence of an arch pattern) or no movement (no arch) (see SimFCS Software Analysis).
 
-## Number and brightness (N&B)
+### Number and brightness (N&B)
 
 N&B is used to determine the number (N) and brightness (B) of particles in a volume, which allows us to determine the amount of aggregation of particles. This is useful in determining the oligomeric state of GFP- and mCherry-labeled proteins such as SHR:SHR-GFP, SCR:SCR-GFP, and SCR:SCR-mCherry. A time course of raster-scanned images was obtained using the confocal microscope (see RICS). Certain imaging parameters had to be determined so that the pixels were not under or over sampled (see RICS). In addition, lines expressing monomeric forms of GFP (35S:GFP) and mCherry (UBQ10:mCherry) were used to set the background fluorescence and to measure monomer brightness (see SimFCS Software Analysis).
 
-We obtained both the mean and the variance of the intensity distribution at each pixel in order to determine the number (N) and brightness (B) of the particles. The mean, <k>, and the variance, σ2, of the intensity distribution are given by Equations 2 and 3:(2)<k> =∑i=1KkiK(3)σ2=∑i=1K(ki−<k>)2K
+We obtained both the mean and the variance of the intensity distribution at each pixel in order to determine the number (N) and brightness (B) of the particles. The mean, <k>, and the variance, σ2, of the intensity distribution are given by Equations 2 and 3:
 
-where K is the number of time points and ki is the fluorescence counts for time point i. The number and brightness of the particles can be determined from the mean and variance of the intensity distribution alone due to the assumption that the occupation of particles follows a Poisson distribution (Digman et al., 2008). Using moment analysis (Qian and Elson, 2000), the apparent number (N) and apparent brightness (B) of the particles are defined in Equations 4 and 5.(4)N= <k>2σ2(5)B= σ2<k>
+$$
+<k> =\frac{\sumi=1Kk_{i}}{K}
+$$
+
+
+
+$$
+\sigma^{2}=\frac{\sumi=1K(k_{i}−<k>)^{2}}{K}
+$$
+
+where K is the number of time points and ki is the fluorescence counts for time point i. The number and brightness of the particles can be determined from the mean and variance of the intensity distribution alone due to the assumption that the occupation of particles follows a Poisson distribution (Digman et al., 2008). Using moment analysis (Qian and Elson, 2000), the apparent number (N) and apparent brightness (B) of the particles are defined in Equations 4 and 5.
+
+$$
+N= \frac{<k>^{2}}{\sigma^{2}}
+$$
+
+
+
+$$
+B= \frac{\sigma^{2}}{<k>}
+$$
 
 Note that if the average intensity is fixed and the variance increases, B increases but N decreases. This is because fewer, larger particles cause greater intensity fluctuations as the laser scans than many small particles. The true number of particles, n, and the true brightness, ε, can be calculated from N and B respectively. However, the apparent brightness B is used for the software analysis (see SimFCS Software Analysis).
 
-## Cross number and brightness (Cross N&B)
+### Cross number and brightness (Cross N&B)
 
-Cross N&B follows the same theory as N&B but involves two particles that are marked with different fluorescent proteins (Digman et al., 2009b). Thus, Cross N&B is used to determine the binding ratio of a protein-protein interaction. We specifically use Cross N&B to look at the stoichiometry of the SHR-SCR complex using the SHR:SHR-GFP/SCR:SCR-mCherry line. The apparent number of particles, N, and the apparent brightness, B, were calculated for the green and the red channels separately (see N&B). The cross-variance, σcc2, is defined in Equation 6:(6)σcc2= ∑i=1K(Gi−<G>)(Ri− <R>)K
+Cross N&B follows the same theory as N&B but involves two particles that are marked with different fluorescent proteins (Digman et al., 2009b). Thus, Cross N&B is used to determine the binding ratio of a protein-protein interaction. We specifically use Cross N&B to look at the stoichiometry of the SHR-SCR complex using the SHR:SHR-GFP/SCR:SCR-mCherry line. The apparent number of particles, N, and the apparent brightness, B, were calculated for the green and the red channels separately (see N&B). The cross-variance, $\sigma_{cc}^{2}$, is defined in Equation 6:
 
-where Gi and Ri are the pixel intensities in the green and red channels, respectively, at time i, and <G> and <R> are the mean intensities of the green and red channels. When the cross-variance is zero, the fluctuations in the two channels are independent. When the cross-variance is positive or negative, the two channels are correlated or anti-correlated, respectively. The cross-brightness, BCC, and the cross-number, NCC, are defined in Equations 7 and 8.(7)Bcc= σcc2<G><R>(8)Ncc= <G><R>σcc2
+$$
+\sigma_{cc}^{2}= \frac{\sumi=1K(G_{i}−<G>)(R_{i}− <R>)}{K}
+$$
+
+where Gi and Ri are the pixel intensities in the green and red channels, respectively, at time i, and <G> and <R> are the mean intensities of the green and red channels. When the cross-variance is zero, the fluctuations in the two channels are independent. When the cross-variance is positive or negative, the two channels are correlated or anti-correlated, respectively. The cross-brightness, BCC, and the cross-number, NCC, are defined in Equations 7 and 8.
+
+$$
+B_{cc}= \frac{\sigma_{cc}^{2}}{\sqrt{<G><R>}}
+$$
+
+
+
+$$
+N_{cc}= \frac{<G><R>}{\sigma_{cc}^{2}}
+$$
 
 To determine the stoichiometry of a protein-protein complex, the brightness of each protein was compared to the cross-brightness at each pixel (Digman et al., 2009b). A large, positive cross-brightness indicates that the two proteins bind at that pixel in the image. The brightness of each protein in the complex determines the stoichiometry (see SimFCS Software Analysis).
 
-## SimFCS software analysis
+### SimFCS software analysis
 
 The SimFCS Software (Digman et al., 2005a), developed at the Laboratory for Fluorescence Dynamics (www.lfd.uci.edu), is used to perform RICS, pCF, N&B, and Cross N&B analysis on raster or line scans obtained using a confocal microscope. For the RICS analysis, the software can reduce the region of interest (ROI) from 256x256 pixels to 128 × 128 pixels in order to obtain a more enriched cell population. For example, we used this feature to obtain QC-enriched populations (Figure 1). After selecting the ROI to use, the software uses the moving average (see RICS) to eliminate any artifacts from immobile fractions. Then, the software fits the RICS-ACF using the imaging parameters provided (Table 1) and returns the diffusion coefficient of the protein. The diffusion coefficient returned results in the ACF curve that best fits the data (Figure 1). Goodness of fit was determined by comparing the residuals to the amplitude of the ACF. We only kept images where the maximum value of the ACF was three fold larger than the greatest residual in order for the RICS analysis to be reliable (Figure 1). Images that had residuals larger than this threshold generally had low laser intensity or sample movement were not used for analysis.
 
-For pCF, the line scan file was loaded as a 32 pixel by 2 × 105 pixel image where the x axis represents position along the line and the y axis represents time. When there was photobleaching in the sample, we eliminated some of the frames acquired at later time points. A period average of 800 frames was then applied so that trends in the fluorescence carpet are easier to see. The carpet is displayed as a gradient, with red corresponding to high correlation and blue corresponding to low correlation. Next, the autocorrelation of each of the 32 pixels in the line scan was calculated using a moving average of 200 frames. The resulting image was a 32 column image where each of the columns represented the autocorrelation value of that pixel. At this step, the 32 columns were aligned with the reference image to determine the pixel location of the cell wall. The location of the cell wall was then used as the column distance (δr) in order to calculate the pCF. The software calculated the pCF by correlating pixels that are δr apart, moving from left to right. The pCF in the opposite direction was then calculated by correlating pixels from right to left, instead of left to right. To account for the fact that the cell wall is not straight, the pCF was calculated using pixel distances of 5, 7, and 9. Given that there is heterogeneity in the cell size and cell wall orientation in the root, we would not capture differences by using only one pixel distance. Finally, the color scale of the pCF was adjusted such that high correlation is represented as red, low correlation is represented as blue, and no correlation is black.
+For pCF, the line scan file was loaded as a 32 pixel by 2 × 105 pixel image where the x axis represents position along the line and the y axis represents time. When there was photobleaching in the sample, we eliminated some of the frames acquired at later time points. A period average of 800 frames was then applied so that trends in the fluorescence carpet are easier to see. The carpet is displayed as a gradient, with red corresponding to high correlation and blue corresponding to low correlation. Next, the autocorrelation of each of the 32 pixels in the line scan was calculated using a moving average of 200 frames. The resulting image was a 32 column image where each of the columns represented the autocorrelation value of that pixel. At this step, the 32 columns were aligned with the reference image to determine the pixel location of the cell wall. The location of the cell wall was then used as the column distance ($\deltar)$ in order to calculate the pCF. The software calculated the pCF by correlating pixels that are $\deltar$ apart, moving from left to right. The pCF in the opposite direction was then calculated by correlating pixels from right to left, instead of left to right. To account for the fact that the cell wall is not straight, the pCF was calculated using pixel distances of 5, 7, and 9. Given that there is heterogeneity in the cell size and cell wall orientation in the root, we would not capture differences by using only one pixel distance. Finally, the color scale of the pCF was adjusted such that high correlation is represented as red, low correlation is represented as blue, and no correlation is black.
 
 N&B analysis was applied to the same data set as RICS. First, we calibrated the software using a monomeric form of the fluorescent proteins, namely, 35S:GFP and UBQ10:mCherry. Images were taken of A. thaliana roots expressing 35S:GFP and UBQ10:mCherry that contained and did not contain the background (background refers to a region of the image that does not contain the root) using the same experimental settings as the RICS analysis (Figure 3). RICS analysis was run on the images to ensure a good ACF fit. Then, N&B analysis was first run on the background images. The software plots the brightness versus the intensity of each pixel. Since the intensity is not used in the N&B calculation, the exact values of the intensity for each fluorophore do not matter. Background images have two distinct populations representing the monomer and the background. The background brightness was standardized by setting the S-factor parameter such that the background population is centered at B = 1 (Figure 3). This ensured that the brightness of the monomer was calibrated for the detector output. Since background brightness can vary between microscopes and laser or detector settings, the S-factor was calculated for each microscope and experimental set-up (Table 2).
 
@@ -194,41 +312,133 @@ The quality of acquired data for N&B analysis of GFP- and mCherry-labeled protei
 
 For Cross N&B using images that contain both GFP- and mCherry-labeled protein, the B1-B2 channel was used to determine the pixels in the green channel that were positively correlated with the red channel. The cursor was positioned in the area of the B1-B2 channel that corresponded to where the GFP and mCherry monomers are located. The cursor was then expanded to include any higher oligomeric states that are present, and that area was set as the correlation area (Figure 4). Once the correlation area was set, the Brightness cross correlation (Bcc) channel was used to determine the brightness of the green and red channels at each of the correlated pixels (Digman et al, 2009b). The software highlighted the mCherry pixels that correlated with the GFP pixels using a green curve. The percentage of each complex stoichiometry (1:1, 2:1, etc) was then calculated by overlaying cursors on GFP monomer, mCherry monomer, GFP homodimer, and mCherry homodimer. As in N&B analysis, the percentage was computed by dividing the pixels in the 1:1 complex by the total number of fluorescent pixels (1:1 plus 2:1). Finally, the software returned a stoichiometry plot that displayed the most likely stoichiometry of the protein-protein complex (Figure 4).
 
-## Mathematical model formulation
+### Mathematical model formulation
 
 We constructed a mathematical model that incorporated our experimentally determined parameters and simulated SHR and SCR dynamics in the root. Our model assumed that transcription and translation happens quickly. Because of this, we modeled transcription and protein movement terms in the same equation. Additionally, we assumed that all proteins have linear degradation terms.
 
 First, we developed a model reflecting wild type conditions (Model 1). We modeled six different variables: SHR in the vasculature (Sv), SHR monomer in the endodermis (Se), SHR homodimer in the endodermis (S2e), SCR in the endodermis (C), 1:1 SHR-SCR complex in the endodermis (SC), and 2:1 SHR-SCR complex in the endodermis (S2C). The model consisted of six ordinary differential equations (ODEs) that measure how each of the variables changes over time.
 
-We assumed that SHR is constantly produced at rate k1 as there is no information on upstream regulators of SHR. Since our pCF analysis showed that SHR only moves from the vasculature to the endodermis, possibly through an active transport mechanism (Gallagher et al., 2004; Sena et al., 2004; Gallagher and Benfey, 2009), we modeled the movement of SHR using an active transport term, where a1is the active transport rate. We defined a1 as the experimentally determined diffusion coefficient (D1) divided by the area of a vasculature cell (A1). We measured the area of vascular cells (n = 19) using ImageJ, and averaged them to determine A1 (Supplementary file 3). Although the diffusion coefficient returned by RICS is from a population of vascular and endodermal cells, we assumed that it is a good approximation of SHR movement between one vascular and one endodermal cell. We included a second active transport term for movement in the reverse direction, from the endodermis to the vasculature, where a2is the active transport rate. However, based on the pCF analysis, a2 = 0 since normally there is no bidirectional movement. Adding linear degradation gave us the equation for the change in SHR in the vasculature over time.dSvdt=k1−a1Sv+a2Se−d1Sva1= D1A1, a2=0
+We assumed that SHR is constantly produced at rate k1 as there is no information on upstream regulators of SHR. Since our pCF analysis showed that SHR only moves from the vasculature to the endodermis, possibly through an active transport mechanism (Gallagher et al., 2004; Sena et al., 2004; Gallagher and Benfey, 2009), we modeled the movement of SHR using an active transport term, where a1is the active transport rate. We defined a1 as the experimentally determined diffusion coefficient (D1) divided by the area of a vasculature cell (A1). We measured the area of vascular cells (n = 19) using ImageJ, and averaged them to determine A1 (Supplementary file 3). Although the diffusion coefficient returned by RICS is from a population of vascular and endodermal cells, we assumed that it is a good approximation of SHR movement between one vascular and one endodermal cell. We included a second active transport term for movement in the reverse direction, from the endodermis to the vasculature, where a2is the active transport rate. However, based on the pCF analysis, a2 = 0 since normally there is no bidirectional movement. Adding linear degradation gave us the equation for the change in SHR in the vasculature over time.
 
-Given that SHR is not produced in the endodermis, there is no production term in the equation. Thus, the only SHR present in the endodermis is the SHR that moves from the vasculature. This leads to the equation for the change in SHR monomer in the endodermis over time.dSedt=a1Sv−a2Se−d2Sea2=0
+$$
+\frac{dS_{v}}{dt}=k_{1}−a_{1}S_{v}+a_{2}S_{e}−d_{1}S_{v}
+$$
 
-The SHR homodimer forms from two SHR monomers. Our N&B analysis revealed that SHR homodimer does not form in a SCRi line. This suggested that the homodimer formation rate, k2, should depend on the concentration of SCR. To account for this, we modeled k2 as a logistic function of the concentration of SCR. Once the SCR concentration reaches a critical value C0, k2 will increase at rate k until it reaches a maximum value of L (Figure 5—figure supplement 2). We chose values for C0, k, and L based on the N&B data (see Parameter Estimation). Thus, the equation for the change in SHR homodimer over time isdS2edt=k2(C)Se2−d3S2ek2(C)= L1+e−k(C−C0).
 
-Unlike the other variables, SCR production is not a linear term but rather a Hill equation. This structure was chosen because it has been shown that the SHR-SCR complex activates SCR expression (Cui et al, 2007). We assumed that both the 1:1 and 2:1 SHR-SCR complexes can activate SCR. In addition, SCR has been shown to autoregulate itself (Cui et al, 2007; Moreno-Risueno et al, 2015). Therefore, the change in SCR over time is expressed as:dCdt=k3(K1D2C+K1DSC+S2CK1D2K2D+K1DK2DSv+K1D2C+K1DSC+S2C)−d4C.
 
-Finally, our N&B analysis revealed that both the monomer and homodimer of SHR can bind SCR and form a complex. The final two equations in our model measure the change in these complexes over time.dSCdt=k4SeC−d5SCdS2Cdt=k5S2eC−d6S2C
+$$
+a_{1}= \frac{D_{1}}{A_{1}}, a_{2}=0
+$$
 
-In addition to the wild type model, we constructed a model that simulates SCRi (Model 2). Our pCF analysis revealed that SHR movement in the SCRi line is bidirectional, so now a2 is defined as the experimentally determined diffusion coefficient (D2) divided by the area of an endodermal cell (A2). We determined the average area of endodermal cells by averaging the area of representative cells (n = 19) as we did for vascular cells (Supplementary file 3). Since it had been shown that a 60% reduction of SCR is required to produce the mutant layer, we assumed that SCR concentrations are maintained below 60% and that the change in SCR over time is zero (Cui et al., 2007).dSvdt=k1−a1Sv+a2Se−d1SvdSedt=a1Sv−a2Se−d2SedS2edt=k2(C)Se2−d3S2edCdt=0dSCdt=k4SeC−d5SCdS2Cdt=k5S2eC−d6S2Ca1= D1A1, a2= D2A2, k2(C)= L1+e−k(C−C0)
+Given that SHR is not produced in the endodermis, there is no production term in the equation. Thus, the only SHR present in the endodermis is the SHR that moves from the vasculature. This leads to the equation for the change in SHR monomer in the endodermis over time.
 
-## Sensitivity analysis
+$$
+\frac{dS_{e}}{dt}=a_{1}S_{v}−a_{2}S_{e}−d_{2}S_{e}
+$$
+
+
+
+$$
+a_{2}=0
+$$
+
+The SHR homodimer forms from two SHR monomers. Our N&B analysis revealed that SHR homodimer does not form in a SCRi line. This suggested that the homodimer formation rate, k2, should depend on the concentration of SCR. To account for this, we modeled k2 as a logistic function of the concentration of SCR. Once the SCR concentration reaches a critical value C0, k2 will increase at rate k until it reaches a maximum value of L (Figure 5—figure supplement 2). We chose values for C0, k, and L based on the N&B data (see Parameter Estimation). Thus, the equation for the change in SHR homodimer over time is
+
+$$
+\frac{dS_{2e}}{dt}=k_{2}(C)S_{e}^{2}−d_{3}S_{2e}
+$$
+
+
+
+$$
+k_{2}(C)= \frac{L}{1+e^{−k(C−C_{0})}}.
+$$
+
+Unlike the other variables, SCR production is not a linear term but rather a Hill equation. This structure was chosen because it has been shown that the SHR-SCR complex activates SCR expression (Cui et al, 2007). We assumed that both the 1:1 and 2:1 SHR-SCR complexes can activate SCR. In addition, SCR has been shown to autoregulate itself (Cui et al, 2007; Moreno-Risueno et al, 2015). Therefore, the change in SCR over time is expressed as:
+
+$$
+\frac{dC}{dt}=k_{3}(\frac{K_{1D}^{2}C+K_{1D}SC+S_{2}C}{K_{1D}^{2}K_{2D}+K_{1D}K_{2D}S_{v}+K_{1D}^{2}C+K_{1D}SC+S_{2}C})−d_{4}C.
+$$
+
+Finally, our N&B analysis revealed that both the monomer and homodimer of SHR can bind SCR and form a complex. The final two equations in our model measure the change in these complexes over time.
+
+$$
+\frac{dSC}{dt}=k_{4}S_{e}C−d_{5}SC
+$$
+
+
+
+$$
+\frac{dS_{2}C}{dt}=k_{5}S_{2e}C−d_{6}S_{2}C
+$$
+
+In addition to the wild type model, we constructed a model that simulates SCRi (Model 2). Our pCF analysis revealed that SHR movement in the SCRi line is bidirectional, so now a2 is defined as the experimentally determined diffusion coefficient (D2) divided by the area of an endodermal cell (A2). We determined the average area of endodermal cells by averaging the area of representative cells (n = 19) as we did for vascular cells (Supplementary file 3). Since it had been shown that a 60% reduction of SCR is required to produce the mutant layer, we assumed that SCR concentrations are maintained below 60% and that the change in SCR over time is zero (Cui et al., 2007).
+
+$$
+\frac{dS_{v}}{dt}=k_{1}−a_{1}S_{v}+a_{2}S_{e}−d_{1}S_{v}
+$$
+
+
+
+$$
+\frac{dS_{e}}{dt}=a_{1}S_{v}−a_{2}S_{e}−d_{2}S_{e}
+$$
+
+
+
+$$
+\frac{dS_{2e}}{dt}=k_{2}(C)S_{e}^{2}−d_{3}S_{2e}
+$$
+
+
+
+$$
+\frac{dC}{dt}=0
+$$
+
+
+
+$$
+\frac{dSC}{dt}=k_{4}S_{e}C−d_{5}SC
+$$
+
+
+
+$$
+\frac{dS_{2}C}{dt}=k_{5}S_{2e}C−d_{6}S_{2}C
+$$
+
+
+
+$$
+a_{1}= \frac{D_{1}}{A_{1}}, a_{2}= \frac{D_{2}}{A_{2}}, k_{2}(C)= \frac{L}{1+e^{−k(C−C_{0})}}
+$$
+
+### Sensitivity analysis
 
 The sensitivity analysis was performed to determine the most influential parameters in our model. Notably, we reasoned that small changes in highly influential parameters could result in large changes in the model outcome. In addition, it has been shown that parameter estimation can become more computationally complex and produce more uncertainty in the parameter values as the number of estimated parameters increases (Smith, 2014). Therefore, we focused on estimating only the most influential parameters. We chose to use Sobol decomposition to measure how sensitive the model is to a particular parameter (Sobol, 2001). Sobol decomposition is a variance-based method, meaning that the sensitivity of the model to a parameter is quantified by calculating the variance in the model outcome. In addition, Sobol decomposition is a global sensitivity method, so we are exploring the entire parameter space in order to determine the most influential parameters (Smith, 2014).
 
 Since the Sobol decomposition allows us to calculate numerous Sobol indices, we chose to use the total effects index to measure sensitivity in our model. Accordingly, the total effects index takes into account how sensitive the model is to a single parameter as well as combinations of more than one parameter. Thus, by using the total-effects index, we take into account any parameter interactions in our model.
 
-To calculate the Sobol total effects index, we rewrote model 1 in the form Y=f(X1,X2,…,X15) where the Xi represent the 15 parameters. Y is the model outcome, which in this case must be a scalar. The ODE solution is a set of values over time, so the solution must be numerically integrated to obtain a single, constant value (Smith, 2014). Consequently, the total effects index for parameter i, STi, is defined asSTi=EX~i(VXi(Y|X~i))V(Y)        (1)
+To calculate the Sobol total effects index, we rewrote model 1 in the form $Y=f(X_{1},X_{2},…,X_{15})$ where the Xi represent the 15 parameters. Y is the model outcome, which in this case must be a scalar. The ODE solution is a set of values over time, so the solution must be numerically integrated to obtain a single, constant value (Smith, 2014). Consequently, the total effects index for parameter i, STi, is defined as
+
+$$
+S_{Ti}=\frac{E_{X_{~i}}(V_{X_{i}}(Y|X_{~i}))}{V(Y)}        (1)
+$$
 
 where E( ) denotes the expected value, V( ) denotes the variance, and X~i is the vector of parameters without the ith parameter value. The numerator represents the expected variance in the model if all factors except Xi are fixed. If this term is very large, then that means that Xi contributes greatly to variance in the model: in other words, Xi is an influential parameter. We divided by the variance in the model outcome so that the value of the total index is normalized across different outcomes (Saltelli et al, 2010; Sobol, 2001).
 
 We calculated the index for each parameter using Monte Carlo evaluations and built two matrices A and B, which are 1000 rows by 15 columns. Each row represented a random draw of all 15 parameters from the parameter space (Supplementary file 3). For each parameter i = 1,2,…,15, we constructed a third matrix C that was identical to A except that the ith column of A was replaced with the ith column of B. Model 1 was then evaluated for all 1000 rows. When we evaluated the ODE, we obtained 6 different outcomes: one for each variable we measured. To understand how each parameter affects all of the different variables we calculated the total effects index for each variable separately.
 
-After evaluating the model, we numerically integrated the solution to obtain a constant value. The result is a 1000 by 6 matrix, where each row represents a model evaluation and each column represents one of the variables (SHR in the vasculature, SHR monomer, etc). We then used each column to evaluate (1), giving us the total effects index for parameter i with respect to each of the variables. Since the numerator of (1) cannot be computed exactly, we estimated it using one of the most accurate estimators,EX~i(VXi(Y|X~i))≈12N∑j=1N(f(A)j−f(C)j)2,
+After evaluating the model, we numerically integrated the solution to obtain a constant value. The result is a 1000 by 6 matrix, where each row represents a model evaluation and each column represents one of the variables (SHR in the vasculature, SHR monomer, etc). We then used each column to evaluate (1), giving us the total effects index for parameter i with respect to each of the variables. Since the numerator of (1) cannot be computed exactly, we estimated it using one of the most accurate estimators,
+
+$$
+E_{X_{~i}}(V_{X_{i}}(Y|X_{~i}))≈\frac{1}{2N}\sumj=1N(f(A)_{j}−f(C)_{j})^{2},
+$$
 
 where N is the number of Monte Carlo iterations (in our case, N = 1000) (Saltelli et al., 2010). Finally, we repeated the entire process 10 times to obtain technical replicates (Supplementary file 4). We used the Wilcoxon test with the Steel-Dwass test for multiple comparisons at significance level α = 0.1 to determine parameters that are significantly more influential.
 
-## Parameter estimation
+### Parameter estimation
 
 For the initial model simulations, we derived most of the model parameters from the previous model of SHR and SCR in the CEI (Supplementary file 3). It has been shown that the mutant layer in the SCRi line occurs when the concentration of SCR drops to 60% of WT levels (Cui et al., 2007). Therefore, for the homodimer formation term k2, we chose C0 to be 60% of the steady-state value of SCR. By choosing this value, the homodimer will not form until the concentration of SCR is above 60%. Additionally, we chose k = 0.1 so that homodimer formation occurs rapidly after SCR passes the threshold (Supplementary file 3). We expected that our model would have high levels of SHR monomer and 1:1 complex relative to the levels of SHR homodimer and 2:1 complex as shown by our N&B data. However, using these parameters, we were unable to replicate these results.
 
